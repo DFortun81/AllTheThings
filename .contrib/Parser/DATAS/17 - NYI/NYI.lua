@@ -31,7 +31,39 @@ _.NeverImplemented =
 	i(105642, {	-- Tusks of Mannoroth [Mythic Warforged]
 		["description"] = "|CFFFF0000If you had this item drop in SoO please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well. Tag: 105642",
 	}),
-	tier(SL_TIER, {	-- Items that might get added after 9.0.5. If you are sure the item won't be added, please put it into the correct section
+	tier(SL_TIER, {	-- Items that might get added after 9.1.5. If you are sure the item won't be added, please put it into the correct section
+		-- Holiday Stuff 9.1.5
+		i(188698),	-- Eagger Basket (Noblegarden Quest?)
+		i(188694),	-- Spring Florist's Pouch (Noblegarden)
+		i(188701),	-- Fire Festival Batons (Midsummer)
+		i(188699),	-- Insulated Dancing Insoles (Midsummer)
+		i(188695),	-- Summer Cranial Skillet (Midsummer)
+		i(188680),	-- Winter Veil Chorus Book (Winter Veil)
+		i(187422),	-- Rockin' Rollin' Racer Customizer 19.9.3 (Winter Veil)
+		i(187560),	-- Shine and Pine (Winter Veil)
+		ach(15181),	-- Rock n' Roll
+		ach(15313),	-- Rockin' Rollin' Racer
+		-- Trial of Style 9.1.5 Items added
+		i(188240),	-- Augur's Walkers
+		i(188246),	-- Bloodbathed Slippers
+		i(188247),	-- Boots of the Blightbelcher
+		i(188242),	-- Cleric's Sabatons
+		i(188245),	-- Cold Cage Moccasins
+		i(188237),	-- Conjuror's Slippers
+		i(188251),	-- Corrupted Cleats
+		i(188249),	-- Freezing Footguards
+		i(188239),	-- Keeper's Strides
+		i(188236),	-- Patroller's Footwear
+		i(188250),	-- Pustule Prancers
+		i(188248),	-- Searing Stompers
+		i(188243),	-- Shadow-Stitched Stalkers
+		i(188241),	-- Stalker's Treads
+		i(188238),	-- Thief's Footpads
+		i(188244),	-- Virulent Gravetreaders
+		-- Unknown (Maybe Trial of Style?)
+		i(187914),	-- Captain Noteo's Unused Eye Patch
+		-- Unknown
+		i(187861),	-- Magical Seeds
 		-- Set added in 9.1.0
 		-- Night Fae -- of the Twilight Grove -- Korthia Dailies? tracking quest should be 63596
 		i(186500),	-- Ensemble: Garb of the Twilight Grove
