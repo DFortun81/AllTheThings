@@ -26,7 +26,7 @@ local L = app.L;
 	L.RACE_LOCKED = "种族锁定";
 	L.PLEASE_REPORT_MESSAGE = ": 请把错误报告给ATT Discord的#errors! 谢谢!";
 	L.NOT_AVAILABLE_IN_PL = "在个人拾取中不可用.";
-	L.MARKS_OF_HONOR_DESC = "荣耀印记必须在弹出窗口中查看才能看到所有正常的'包含'内容.\n(在聊天中输入'/att '然后Shift-点击链接的物品)\n\n|cFFfe040fAfter purchasing and using an ensemble, relogging & a forced ATT refresh (in this order)\nmay be required to register all the items correctly.|r";	-- TODO
+	L.MARKS_OF_HONOR_DESC = "荣耀印记必须在弹出窗口中查看才能看到所有正常的'包含'内容.\n(在聊天中输入'/att '然后Shift-点击链接的物品)\n\n|cFFfe040fAfter purchasing and using an ensemble, relogging & a forced ATT refresh (in this order)\nmay be required to register all the items correctly.|r";	--TODO
 	--TODO: L.ITEM_GIVES_REP = "Provides Reputation with '";
 	L.COST = "花费";
 	L.COST_DESC = "这里面包含了获得或购买这个物品所需要的物品";
@@ -245,7 +245,7 @@ local L = app.L;
 		-- Mod Title
 			L.MODE = "模式";
 			L.TITLE_COMPLETIONIST = "完美主义 ";
-			L.TITLE_UNIQUE_APPEARANCE = "独特外观 ";	-- TODO: Unique
+			L.TITLE_UNIQUE_APPEARANCE = "独特外观 ";	--TODO: Unique
 			L.TITLE_DEBUG = "调试 ";
 			L.TITLE_ACCOUNT = "|cff00AB00战网|R ";
 			L.TITLE_MAIN_ONLY = " (仅自己)";
@@ -256,7 +256,7 @@ local L = app.L;
 			L.TITLE_LEVEL = "等级 ";
 			L._BETA_LABEL = " |cff4AA7FF[测试]|R";
 
-		L.GENERAL_TAB = "常规";
+		L.GENERAL_LABEL = "常规";
 		--TODO: L.MERCH_BUTTON_LABEL = "Merch";
 		L.TWITCH_BUTTON_TOOLTIP = "单击按钮复制URL到我的Twitch频道.\n\n可以在我直播的时候问问题, 我会尽力回答!";
 		L.DISCORD_BUTTON_TOOLTIP = "单击按钮复制URL到All The Things Discord.\n\n可以与其他收藏家分享进步/挫折!";
@@ -265,15 +265,15 @@ local L = app.L;
 		--TODO: L.MODE_EXPLAIN_LABEL = "|cffFFFFFFWhat you collect is summarized here. Enable all |cffADD8E6colored options|cffFFFFFF to unlock |cffADD8E6Insane Mode|cffFFFFFF.";
 		L.DEBUG_MODE = "|Cffff0000调试模式|r (显示所有)";
 		L.DEBUG_MODE_TOOLTIP = "就字面意思... 游戏中的所有事情. PERIOD. DOT. 是的, 所有的一切. 即使是不可收藏的事物, 如袋子、消耗品、试剂等也会出现在列表中. (甚至你自己! 不, 是真的. 看.)\n\n这仅用于调试目的. 不用于完成追踪.\n\n此模式绕过所有过滤, 包括不可获得的.";
-		-- TODO: L.COMPLETIONIST_MODE = "|CFFADD8E6完美主义|r (来源)";	-- +Sources
+		--TODO: L.COMPLETIONIST_MODE = "|CFFADD8E6完美主义|r (来源)";	-- +Sources
 		L.COMPLETIONIST_MODE_TOOLTIP = "启用该模式, 只有当特定物品已被解锁为给定外观时才将物品视为已收集.\n\n这意味着你需要收集物品的每一个共享外观.\n\n注意: 默认情况下一旦你收集了共享来源, 游戏就会停止告诉你未收集的物品, 这将确保未收集的物品会被追踪.";
-		-- TODO: L.I_ONLY_CARE_ABOUT_MY_MAIN = "我只关心我自己"	-- Main Only
+		--TODO: L.I_ONLY_CARE_ABOUT_MY_MAIN = "我只关心我自己"	-- Main Only
 		L.MAIN_ONLY_MODE_TOOLTIP = "如果你还想让att*假装*你赢得了所有未被其他种族或职业锁定的共享外观, 请启用此设置.\n\n例如, 如果你从ICC收集了一个仅限猎人使用的物品, 并且在没有职业/种族限制的情况下, 有一个来自副本的共享外观, 那么ATT将*假装*你也获得了该外观来源.\n\n注意: 以这种方式解锁时, 切换到其他种族/职业将错误地报告你已经获得了尚未为新角色收集的外观来源.";
 		L.ACCOUNT_MODE = "|Cff00ab00战网模式|r (所有角色)"; -- "Cff00AB00Account Mode
 		L.ACCOUNT_MODE_TOOLTIP = "如果要追踪所有角色的所有内容, 而不考虑职业和种族筛选, 请启用此设置.\n\n不可获得过滤仍然适用.";
-		L.FACTION_MODE = "仅当前阵营";	-- TODO: Faction Only
+		L.FACTION_MODE = "仅当前阵营";	--TODO: Faction Only
 		L.FACTION_MODE_TOOLTIP = "如果你想只看到你当前阵营的种族和职业的战网模式数据, 请开启此设置.";
-		-- TODO: L.PRECISION_SLIDER = "百分比精确度";	-- Precision Level
+		--TODO: L.PRECISION_SLIDER = "百分比精确度";	-- Precision Level
 		L.PRECISION_SLIDER_TOOLTIP = '使用此选项可自定义百分比计算中所需的精度级别.\n\n默认: 2';
 		L.MINIMAP_SLIDER = "迷你地图按钮尺寸";
 		L.MINIMAP_SLIDER_TOOLTIP = '使用此选项可自定义迷你地图按钮的大小.\n\n默认: 36';
@@ -291,7 +291,7 @@ local L = app.L;
 		L.HEIRLOOMS_CHECKBOX_TOOLTIP = "启用此选项可追踪你是否已解锁传家宝及其各自的升级级别.\n\n具有相关外观的传家宝将通过外观过滤进行过滤. (关闭外观仍将显示传家宝本身)\n\n一些出现史诗品质的商品也有助于提升声望，可以通过声望过滤进行过滤.";
 		L.HEIRLOOMS_UPGRADES_CHECKBOX = "|cffADD8E6+升级";
 		L.HEIRLOOMS_UPGRADES_CHECKBOX_TOOLTIP = "启用此选项可专门追踪单个传家宝升级的收集情况.\n\n我们都知道暴雪就是喜欢消耗你的金币和灵魂， 所以用这个切换来追踪你的金币.";
-		L.ILLUSIONS_CHECKBOX = "|cffADD8E6"..WEAPON_ENCHANTMENT;	-- TODO: make it plural
+		L.ILLUSIONS_CHECKBOX = "|cffADD8E6"..WEAPON_ENCHANTMENT;	--TODO: make it plural
 		L.ILLUSIONS_CHECKBOX_TOOLTIP = "启用此选项以追踪幻象.\n\n这些看起来很酷的幻化效果, 你可以应用到你的武器上!\n\n注意: 你不是一个幻象, 尽管所有的夜之子都这么认为.\n\n默认情况下的追踪战网范围.";
 		L.MOUNTS_CHECKBOX_TOOLTIP = "启用此选项以追踪坐骑.\n\n你可以骑着它们去比跑步更快的地方. 谁知道!\n\n默认情况下的追踪战网范围.";
 		L.MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t |cffADD8E6乐谱/自拍滤镜";	-- Music Rolls / Selfie Filters
@@ -321,11 +321,11 @@ local L = app.L;
 		L.SHOW_REPEATABLE_THINGS_CHECKBOX_TOOLTIP = "如果要将可重复的每日, 每周和每年任务视为可收集, 请启用此选项. 它们将像常规的收藏任务一样出现在列表中.\n\n注意: 这不是用来一直使用的, 但如果你在一个你已经完成的区域内做了一组日常且需要提醒你那里有什么, 你可以用这个来查看它们.";
 		L.FIRST_TIME_CHECKBOX = "仅第一次";
 		L.FIRST_TIME_CHECKBOX_TOOLTIP = "如果你希望将每天, 每周, 每年和世界范围内重复执行的任务视为已完成(至少完成一次), 而忽略先前已重置的任务, 则启用此选项.\n\n注意: 先前完成的可重复任务仅在你通过插件激活完成任务的情况下存储, 并且如果从WTF文件夹中删除了插件数据, 则数据将丢失.";
-		-- TODO: L.FILTER_THINGS_BY_LEVEL_CHECKBOX = "按等级筛选事物";	-- |cffADD8E6No Level Restrictions
-		-- TODO: L.FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP = "如果只想查看当前级别角色可用的事物, 请启用此设置.\n\n注意: 这对新战网特别有用.";	-- Enable this setting if you want to see content available regardless of player level.\n\nNOTE: Disabling this is especially useful on Starter Accounts.
+		--TODO: L.FILTER_THINGS_BY_LEVEL_CHECKBOX = "按等级筛选事物";	-- |cffADD8E6No Level Restrictions
+		--TODO: L.FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP = "如果只想查看当前级别角色可用的事物, 请启用此设置.\n\n注意: 这对新战网特别有用.";	-- Enable this setting if you want to see content available regardless of player level.\n\nNOTE: Disabling this is especially useful on Starter Accounts.
 		L.SHOW_BOE_CHECKBOX = "|cffADD8E6BoE/BoA物品";
-		-- TODO: L.SHOW_BOE_CHECKBOX_TOOLTIP = "如果要隐藏BoE/BoA物品, 请启用此设置.\n\n当你尝试为角色完成经典旧世并且不想专门用于可以在小号或拍卖行上放置的物品时, 此设置非常有用.\n\n即: 不要因为毁灭之锤而扰乱你的思绪.";	-- "Enable this setting if you want to show Bind-on-Equip/Account items.\n\nDisabling this setting is useful for when you are trying to finish a Classic Dungeon for a character and don't want to farm specifically for items that can be farmed on alts or on the Auction House.\n\nIE: Don't lose your mind grinding for Pendulum of Doom.";
-		-- TODO: L.SHOW_PVP_CHECKBOX_TOOLTIP = "如果你想隐藏任何'可能'需要在游戏中进行PVP互动的内容, 请启用此设置.";	-- Enable this setting if you want to show content which 'may' require Player vs. Player interactions within the game.
+		--TODO: L.SHOW_BOE_CHECKBOX_TOOLTIP = "如果要隐藏BoE/BoA物品, 请启用此设置.\n\n当你尝试为角色完成经典旧世并且不想专门用于可以在小号或拍卖行上放置的物品时, 此设置非常有用.\n\n即: 不要因为毁灭之锤而扰乱你的思绪.";	-- "Enable this setting if you want to show Bind-on-Equip/Account items.\n\nDisabling this setting is useful for when you are trying to finish a Classic Dungeon for a character and don't want to farm specifically for items that can be farmed on alts or on the Auction House.\n\nIE: Don't lose your mind grinding for Pendulum of Doom.";
+		--TODO: L.SHOW_PVP_CHECKBOX_TOOLTIP = "如果你想隐藏任何'可能'需要在游戏中进行PVP互动的内容, 请启用此设置.";	-- Enable this setting if you want to show content which 'may' require Player vs. Player interactions within the game.
 		--TODO: L.SHOW_PET_BATTLES_CHECKBOX_TOOLTIP = "Enable this setting if you want to show content which requires Pet Battles within the game.";
 		L.IGNORE_FILTERS_FOR_BOES_CHECKBOX = "忽略BoE/BoA的筛选";
 		L.IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP = "如果要忽略BOEBoE/BoA物品的装备、武器、种族、等级或职业要求, 请启用此设置.\n\n如果你正试图通过拍卖行扫描收集你的物品, 此模式可能对你有用.";
@@ -342,55 +342,45 @@ local L = app.L;
 		--TODO: L.BEHAVIOR_LABEL = "List Behavior";
 
 	-- Account Wide Checkboxes
-		L.ACCOUNT_WIDE = "战网范围";
-		L.ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = "成就追踪通常是在整个战网范围内进行的, 但有一些特定职业和种族的专属成就, 你无法在你的主账号上获得.";
-		L.ACCOUNT_WIDE_TRANSMOG_TOOLTIP = "幻象外观仅在战网范围内进行追踪, 无法禁用.";
-		L.ACCOUNT_WIDE_AZERITE_ESSENCES_TOOLTIP = "艾泽里特精华在技术上不能在整个战网内收集和使用, 但如果你只关心收集你的主角色那么你可能更喜欢在整个战网上追踪它们.";
-		L.ACCOUNT_WIDE_FLIGHT_PATHS_TOOLTIP = "飞行路径追踪对每个角色都非常有用, 但是你真的想要在所有50个角色上收集它们吗?";
-		L.ACCOUNT_WIDE_FOLLOWERS_TOOLTIP = "随从通常是每个角色的, 但是你真的想以每周1个的速度在一个角色上收集243个随从吗?\n\n我想不行, 好好先生.";
-		L.ACCOUNT_WIDE_HEIRLOOMS_TOOLTIP = "追踪战网范围的传家宝.";
-		L.ACCOUNT_WIDE_MUSIC_ROLLS_SELFIE_FILTERS_TOOLTIP = "在暴雪的数据库中通常不会在战网范围内跟踪“音乐卷轴和自拍过滤器”，但是我们可以做到这一点.\n\n注意: 你只能使用自动点唱机玩具播放音乐或使用你在当前角色上收集的自拍相机玩具自拍.";	-- Music Rolls & Selfie Filters are not normally tracked account wide in Blizzard's database, but we can do that.\n\nNOTE: You can only play Music Rolls using the Jukebox Toy or snap a selfie with your S.E.L.F.I.E Camera Toy that you have collected on your current character.
-		L.ACCOUNT_WIDE_QUESTS_TOOLTIP = "任务完成通常是每个角色的, 但是如果任何一个角色完成了特定的任务, 这个任务就会被认为是完成了.";
-		L.ACCOUNT_WIDE_RECIPES_TOOLTIP = "在暴雪的数据库中, 图纸通常不会被战网范围追踪, 但我们可以这样做.\n\n在一个角色上不可能收集到所有的东西, 所以有了这个, 你就可以赋予你的小号和他们的专业以意义.";
-		L.ACCOUNT_WIDE_REPUTATIONS_TOOLTIP = "声望的成就现在会在暴雪的数据库中追踪战网范围, 所以开启这个功能可能是个好主意.";
-		--TODO: L.ACCOUNT_WIDE_RUNEFORGELEGENDARIES_TOOLTIP = "Not sure this will help at all for collection... enjoy moving at least one character of every class through every Covenant and Renown progression...";
-		L.ACCOUNT_WIDE_SOULBINDCONDUITS_TOOLTIP = "启用此功能后如果至少有一个角色学会了灵魂羁绊的导灵器, 则将所有角色的灵魂羁绊的导灵器视为收集.";
-		L.ACCOUNT_WIDE_TITLES_TOOLTIP = "大多数头衔都是在战网范围内进行追踪, 但是魔兽世界中一些著名的头衔被锁定在赢得他们的角色上.\n\n如果你不关心这个并希望看到那些标记为收藏的头衔是你的小号, 请切换此选项.";
+		--TODO: translate "Track Account-wide" part
+		L.ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = "|cff00AB00Track Account-wide|R\n\n成就追踪通常是在整个战网范围内进行的, 但有一些特定职业和种族的专属成就, 你无法在你的主账号上获得.";
+		L.ACCOUNT_WIDE_AZERITE_ESSENCES_TOOLTIP = "|cff00AB00Track Account-wide|R\n\n艾泽里特精华在技术上不能在整个战网内收集和使用, 但如果你只关心收集你的主角色那么你可能更喜欢在整个战网上追踪它们.";
+		L.ACCOUNT_WIDE_FLIGHT_PATHS_TOOLTIP = "|cff00AB00Track Account-wide|R\n\n飞行路径追踪对每个角色都非常有用, 但是你真的想要在所有50个角色上收集它们吗?";
+		L.ACCOUNT_WIDE_FOLLOWERS_TOOLTIP = "|cff00AB00Track Account-wide|R\n\n随从通常是每个角色的, 但是你真的想以每周1个的速度在一个角色上收集243个随从吗?\n\n我想不行, 好好先生.";
+		L.ACCOUNT_WIDE_MUSIC_ROLLS_SELFIE_FILTERS_TOOLTIP = "|cff00AB00Track Account-wide|R\n\n在暴雪的数据库中通常不会在战网范围内跟踪“音乐卷轴和自拍过滤器”，但是我们可以做到这一点.\n\n注意: 你只能使用自动点唱机玩具播放音乐或使用你在当前角色上收集的自拍相机玩具自拍.";	-- Music Rolls & Selfie Filters are not normally tracked account wide in Blizzard's database, but we can do that.\n\nNOTE: You can only play Music Rolls using the Jukebox Toy or snap a selfie with your S.E.L.F.I.E Camera Toy that you have collected on your current character.
+		L.ACCOUNT_WIDE_QUESTS_TOOLTIP = "|cff00AB00Track Account-wide|R\n\n任务完成通常是每个角色的, 但是如果任何一个角色完成了特定的任务, 这个任务就会被认为是完成了.";
+		L.ACCOUNT_WIDE_RECIPES_TOOLTIP = "|cff00AB00Track Account-wide|R\n\n在暴雪的数据库中, 图纸通常不会被战网范围追踪, 但我们可以这样做.\n\n在一个角色上不可能收集到所有的东西, 所以有了这个, 你就可以赋予你的小号和他们的专业以意义.";
+		L.ACCOUNT_WIDE_REPUTATIONS_TOOLTIP = "|cff00AB00Track Account-wide|R\n\n声望的成就现在会在暴雪的数据库中追踪战网范围, 所以开启这个功能可能是个好主意.";
+		--TODO: L.ACCOUNT_WIDE_RUNEFORGELEGENDARIES_TOOLTIP = "|cff00AB00Track Account-wide|R\n\nNot sure this will help at all for collection... enjoy moving at least one character of every class through every Covenant and Renown progression...";
+		L.ACCOUNT_WIDE_SOULBINDCONDUITS_TOOLTIP = "|cff00AB00Track Account-wide|R\n\n启用此功能后如果至少有一个角色学会了灵魂羁绊的导灵器, 则将所有角色的灵魂羁绊的导灵器视为收集.";
+		L.ACCOUNT_WIDE_TITLES_TOOLTIP = "|cff00AB00Track Account-wide|R\n\n大多数头衔都是在战网范围内进行追踪, 但是魔兽世界中一些著名的头衔被锁定在赢得他们的角色上.\n\n如果你不关心这个并希望看到那些标记为收藏的头衔是你的小号, 请切换此选项.";
 
 	-- Filters tab
-		L.FILTERS_TAB = "过滤";
-		L.ITEM_FILTER_LABEL = "装备 / 武器过滤";
+		--TODO: L.ITEM_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if you are in |Cff00AB00Account Mode|cffFFFFFF, even if the option is disabled.|r";
 		L.CLASS_DEFAULTS_BUTTON = "职业默认";
 		L.CLASS_DEFAULTS_BUTTON_TOOLTIP = "单击此按钮可将所有过滤重置为职业默认.\n\n注意: 只能打开可为职业收集的过滤.";
-		L.ALL_BUTTON = "所有";
-		L.ALL_BUTTON_TOOLTIP = "单击此按钮一次启用所有设备过滤.";
-		L.UNCHECK_ALL_BUTTON = "取消所有";
-		L.UNCHECK_ALL_BUTTON_TOOLTIP = "单击此按钮一次禁用所有设备过滤.";
-		L.CUSTOM_FILTERS_LABEL = "自动过滤";
-		L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|CFFFFFFFF这些过滤是根据你当前的角色自动应用的, 但可以通过勾选来覆盖, 让你看到你的角色目前不能收集的其他东西.\n在战网或调试模式下无论如何选择, 这些过滤都不会被启用.|r";
+		L.ALL_BUTTON_TOOLTIP = "单击此按钮一次启用所有设备过滤.";	--TODO: Click this button to enable all options at once.
+		L.UNCHECK_ALL_BUTTON_TOOLTIP = "单击此按钮一次禁用所有设备过滤.";	--TODO: Click this button to disable all options at once.
+		L.CUSTOM_FILTERS_LABEL = "自动过滤";	--TODO: Automated
+		--TODO: L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|CFFFFFFFF这些过滤是根据你当前的角色自动应用的, 但可以通过勾选来覆盖, 让你看到你的角色目前不能收集的其他东西.\n在战网或调试模式下无论如何选择, 这些过滤都不会被启用.|r";	-- |cffFFFFFFThis content is always shown if it is available to your current character or if you are in |Cff00AB00Account Mode|cffFFFFFF, even if the option is disabled.|r
 		L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "启用此设置可强行显示%s内容, 即使该内容对当前角色不可用.";
 
 	-- Unobtainables tab
 		L.UNOBTAINABLES_TAB = "不可获得";
-		L.SEASONAL_LABEL = "节日 (选择隐藏)";
-		L.SEASONAL_ENABLE = "过滤节日物品";
-		L.SEASONAL_ALL = "切换所有节日";
-		L.UNOBTAINALBE_LABEL = "无法获得 (选择隐藏)";
-		L.UNOBTAINABLE_ENABLE = "过滤不可获得的物品";
-		L.UNOBTAINABLE_ALL = "切换所有不可获得";
-		L.NO_CHANCE_LABEL = "没有机会";
-		L.NO_CHANCE_ALL = "切换所有 \"没有机会\"";
-		L.HIGH_CHENCE_LABEL = "很大机会";
-		L.HIGH_CHANCE_ALL = "切换所有 \"很大机会\"";
+		L.SEASONAL_LABEL = "节日";
+		L.SEASONAL_ALL = "|cffECBC21切换所有节日";
+		L.UNOBTAINABLE_LABEL = "无法获得";
+		L.UNOBTAINABLE_ALL = "|cffECBC21切换所有不可获得";
+		L.NO_CHANCE_ALL = "|cffECBC21切换所有 \"没有机会\"";
+		L.HIGH_CHANCE_ALL = "|cffECBC21切换所有 \"很大机会\"";
 
 	-- Interface tab
-		L.INTERFACE_TAB = "接口";
 		L.TOOLTIP_LABEL = "鼠标提示";
-		L.ENABLE_TOOLTIP_INFORMATION_CHECKBOX = "|CFFADD8E6启用鼠标提示|r";
+		L.ENABLE_TOOLTIP_INFORMATION_CHECKBOX = "启用鼠标提示";
 		L.ENABLE_TOOLTIP_INFORMATION_CHECKBOX_TOOLTIP = "如果希望在鼠标提示中查看ATT提供的信息, 请启用此选项. 这包括其他玩家发送的物品链接, 在拍卖行、在地下城助手、在你的包里、在世界、在NPC等等.\n\n如果你关闭了这个功能, 就会严重降低你快速判断是否需要击杀BOSS或学习外观的能力.\n\n我们建议你保持此设置.";
 		L.DISPLAY_IN_COMBAT_CHECKBOX = "在战斗中";
 		L.DISPLAY_IN_COMBAT_CHECKBOX_TOOLTIP = "如果要在战斗中呈现鼠标提示信息, 请启用此选项.\n\n如果你正在同你的公会进行史诗/大秘境活动, 你可能应该关闭这个设置以尽可能节省性能.\n\n当你在单刷时它可以很有用, 可以立即知道你需要从BOSS那里得到什么.";
-		--TODO: L.TOOLTIP_MOD_LABEL = "With Modifier";
+		--TODO: L.TOOLTIP_MOD_LABEL = "Modifier";
 		L.TOOLTIP_MOD_NONE = "无";
 		--TODO: L.TOOLTIP_MOD_SHIFT = "Shift";
 		--TODO: L.TOOLTIP_MOD_CTRL = "Ctrl";
@@ -403,7 +393,7 @@ local L = app.L;
 		L.COORDINATES_CHECKBOX = "坐标";
 		L.COORDINATES_CHECKBOX_TOOLTIP = "如果你想在迷你列表中的条目上悬停时在鼠标提示中看到坐标, 请启用此选项.";
 		L.DESCRIPTIONS_CHECKBOX = "说明";
-		L.DESCRIPTIONS_CHECKBOX_TOOLTIP = "启用该选项以在鼠标提示中显示描述. 这可能包括地下城日志提供的描述性文字, 或者贡献者认为有必要添加的自定义描述.\n\n你可能想保持这个开启";	-- TODO: Part about Dungeon descriptions was removed, update it
+		L.DESCRIPTIONS_CHECKBOX_TOOLTIP = "启用该选项以在鼠标提示中显示描述. 这可能包括地下城日志提供的描述性文字, 或者贡献者认为有必要添加的自定义描述.\n\n你可能想保持这个开启";	--TODO: Part about Dungeon descriptions was removed, update it
 		--TODO: L.LORE_CHECKBOX = "Lore";
 		--TODO: L.LORE_CHECKBOX_TOOLTIP = "Enable this option to show lore within the tooltip. This may include the descriptive text supplied by the Dungeon Journal or for flavor by a Contributor.";
 		L.KNOWN_BY_CHECKBOX = "已知";
@@ -412,7 +402,7 @@ local L = app.L;
 		L.SHOW_MODELS_CHECKBOX_TOOLTIP = "启用此选项可在预览中显示模型而不是鼠标提示上的图标.\n\n此选项可帮助你识别稀有生物或商人的模样. 因为这个原因你可能想保持这个开启.";
 		L.SHARED_APPEARANCES_CHECKBOX = "共享外观";
 		L.SHARED_APPEARANCES_CHECKBOX_TOOLTIP = "启用该选项可以在鼠标提示中看到外观相似的物品.\n\n注意: 不符合装备类型的物品会显示在列表中. 这是为了帮助你判断收藏进度.\n\n如果你对此感到困惑, 从ATT v1.5.0开始, 你可以右键点击物品, 打开物品和它的共享外观, 进入它们自己的独立迷你列表.";
-		L.INCLUDE_ORIGINAL_CHECKBOX = "包括原始来源";
+		L.INCLUDE_ORIGINAL_CHECKBOX = "包括原始来源";	--TODO: Original Source
 		L.INCLUDE_ORIGINAL_CHECKBOX_TOOLTIP = "如果你真的喜欢在鼠标提示中的共享外观列表中看到原始来源信息, 请启用此选项.";
 		L.ONLY_RELEVANT_CHECKBOX = "仅相关";
 		L.ONLY_RELEVANT_CHECKBOX_TOOLTIP = "如果你只想看到你的角色可以解锁的共享外观, 请启用此选项.\n\n注意: 我们建议你保持这个关闭, 因为了解一个物品的解锁要求可以帮助识别为什么一个物品没有被收集.";
@@ -430,7 +420,7 @@ local L = app.L;
 		L.LOCATIONS_SLIDER_TOOLTIP = '使用该功能可以自定义鼠标提示中显示的来源位置数量.\n\n注意: 这也会根据其他来源的多少来显示"X"个数量, 如果这个总数等于显示的元素总数, 那么就会简单地显示最后一个来源.\n\n默认: 5';
 		L.COMPLETED_SOURCES_CHECKBOX = "对已完成";
 		L.COMPLETED_SOURCES_CHECKBOX_TOOLTIP = "如果你想在鼠标提示中看到已完成的来源位置, 请启用此选项.\n\n举个例子, 如果你在灰谷完成了任务\"巴斯兰的头发\", 当你鼠标悬停在埃凡纳·寂语身上时, 他的鼠标提示就不会再显示这个任务了.";
-		--TODO: L.DROP_CHANCES_CHECKBOX = "Show Drop Chances";
+		--TODO: L.DROP_CHANCES_CHECKBOX = "Drop Chances";
 		--TODO: L.DROP_CHANCES_CHECKBOX_TOOLTIP = "Enable this option to calculate various drop chance information in the tooltip for an item in an ATT window.\nThis can be helpful for knowing which Loot Spec should be used when Bonus Rolling for an item.";
 		L.FOR_CREATURES_CHECKBOX = "对生物";
 		L.FOR_CREATURES_CHECKBOX_TOOLTIP = "如果你想查看生物的来源位置, 请启用此选项.";
@@ -438,9 +428,8 @@ local L = app.L;
 		L.FOR_THINGS_CHECKBOX_TOOLTIP = "如果你想查看事物的源位置, 请启用此选项.";
 		L.FOR_UNSORTED_CHECKBOX = "对未分类";
 		L.FOR_UNSORTED_CHECKBOX_TOOLTIP = "如果你想查看尚未完全输入数据库的来源位置, 请启用此选项.";
-		L.WITH_WRAPPING_CHECKBOX = "允许来源换行";
+		L.WITH_WRAPPING_CHECKBOX = "允许来源换行";	--TODO: Allow Wrapping
 		L.WITH_WRAPPING_CHECKBOX_TOOLTIP = "启用此选项允许来源在鼠标提示中换行.\n这将确保鼠标提示不会超过必要的宽度, 但不幸的是在许多情况下来源信息会变得更加难以阅读.";
-		L.MISC_LABEL = "其他";
 		L.SHOW_REMAINING_CHECKBOX = "显示剩余事物";
 		L.SHOW_REMAINING_CHECKBOX_TOOLTIP = "如果你想查看剩余事物数量而不是总进度, 请启用此选项.";
 		L.PERCENTAGES_CHECKBOX = "显示完成百分比";
@@ -449,11 +438,11 @@ local L = app.L;
 		L.MORE_COLORS_CHECKBOX_TOOLTIP = "如果你想看到使用更多的颜色来帮助区分列表中事物的附加条件, 请启用此选项(比如职业颜色, 阵营颜色等.)";
 		L.TOOLTIP_HELP_CHECKBOX = "显示鼠标提示帮助";
 		L.TOOLTIP_HELP_CHECKBOX_TOOLTIP = "如果你想在ATT窗口鼠标提示中看到帮助信息, 即显示ATT窗口功能的各种键/点击组合, 请启用此选项.\n如果你已经知道所有的键/点击组合, 你可能希望节省工具提示空间并禁用此选项.";
-		L.SIZING_LABEL = "比例";
 		L.MAIN_LIST_SLIDER_LABEL = "主列表比例";
 		L.MAIN_LIST_SCALE_TOOLTIP = '使用此功能可以自定义主列表的比例.\n\n默认: 1';
-		L.MINI_LIST_SLIDER_LABEL = "迷你/其他列表比例";
+		L.MINI_LIST_SLIDER_LABEL = "迷你列表比例";
 		L.MINI_LIST_SCALE_TOOLTIP = '使用此功能可以自定义所有迷你和小列表的比例.\n\n默认: 1';
+		--TODO: L.ADDITIONAL_LABEL = "Additional Information";
 
 	-- Features tab
 		L.FEATURES_TAB = "功能";
@@ -494,8 +483,8 @@ local L = app.L;
 
 	-- About tab
 		L.ABOUT = "关于";
-		L.ABOUT_1 = " |CFFFFFFFF是一个收集追踪插件, 告诉你在哪里以及如何获得游戏中的所有事物! 在我们的Discord上有一个庞大的用户社区(链接在底部), 你可以在这里提出问题、提交建议以及报告错误或丢失的物品. 如果你发现了一些可收藏的事物或没有记录, 你可以在Discord上告诉我们, 或者对于更懂技术的人来说, 我们有一个Git, 你可以直接贡献给我们.\n\n虽然我们力求完美, 但每个补丁都会有很多事物加入到游戏中, 所以如果我们可能遗漏了一些事物, 请理解我们是一个试图跟上变化以及自己收集事物的小团队 :D\n\n欢迎在直播的时候向我提问, 即使不是直接与ATT相关的问题, 我也会尽力回答(常见的WoW插件编程也行).\n\n- |r|Cffff8000Crieve|CFFFFFFFF\n\nPS: 下载ATT怀旧服版本!\n\n是的, 我打算玩WoW怀旧服, 但在全职工作和开发两个版本的插件, 不会有太多的时间去打团.\n\n不，ATT不是将图标放在背包图标上的插件. 那个是CanIMogIt和Caerdon Wardrobe!\n\n即将推出的比较收藏的网站.|r";	-- TODO: add TBC Classic here and add "For online collection comparing check out DataForAzeroth.com from shoogen!"
-		L.ABOUT_2 = "其他贡献者: |CFFFFFFFF(加入团队顺序)\nDaktar, Lucetia, Slumber, Gold, Avella, Aiue, Dead Serious, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Mogwai, Heallie, Eckhardt, Boohyaka, Sadidorf, Sanctuari, Molkree, Runawaynow, Braghe, Myrhial, Darkal和其他ATT Discord的人们!\n\n特别鸣谢AmiYuy (CanIMogIt)和Caerdon (Caerdon Wardrobe).|r  ";	-- TODO: change to "in no particular order"
+		L.ABOUT_1 = " |CFFFFFFFF是一个收集追踪插件, 告诉你在哪里以及如何获得游戏中的所有事物! 在我们的Discord上有一个庞大的用户社区(链接在底部), 你可以在这里提出问题、提交建议以及报告错误或丢失的物品. 如果你发现了一些可收藏的事物或没有记录, 你可以在Discord上告诉我们, 或者对于更懂技术的人来说, 我们有一个Git, 你可以直接贡献给我们.\n\n虽然我们力求完美, 但每个补丁都会有很多事物加入到游戏中, 所以如果我们可能遗漏了一些事物, 请理解我们是一个试图跟上变化以及自己收集事物的小团队 :D\n\n欢迎在直播的时候向我提问, 即使不是直接与ATT相关的问题, 我也会尽力回答(常见的WoW插件编程也行).\n\n- |r|Cffff8000Crieve|CFFFFFFFF\n\nPS: 下载ATT怀旧服版本!\n\n是的, 我打算玩WoW怀旧服, 但在全职工作和开发两个版本的插件, 不会有太多的时间去打团.\n\n不，ATT不是将图标放在背包图标上的插件. 那个是CanIMogIt和Caerdon Wardrobe!\n\n即将推出的比较收藏的网站.|r";	--TODO: add TBC Classic here and add "For online collection comparing check out DataForAzeroth.com from shoogen!"
+		L.ABOUT_2 = "其他贡献者: |CFFFFFFFF(加入团队顺序)\nDaktar, Lucetia, Slumber, Gold, Avella, Aiue, Dead Serious, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Mogwai, Heallie, Eckhardt, Boohyaka, Sadidorf, Sanctuari, Molkree, Runawaynow, Braghe, Myrhial, Darkal和其他ATT Discord的人们!\n\n特别鸣谢AmiYuy (CanIMogIt)和Caerdon (Caerdon Wardrobe).|r  ";	--TODO: change to "in no particular order"
 		L.ABOUT_3 = "\n|CFFFFFFFF你绝对应该下载他们的插件，以便在你的背包里的物品上获得收集图标!|r";
 
 	-- Binding Localizations 按键设置
@@ -615,9 +604,9 @@ for key,value in pairs({
 	--TODO: ["25 Player"] = "25M",
 	--TODO: ["25 Player (Heroic)"] = "25M (H)",
 	--TODO: ["Emissary Quests"] = "Emissary",
-	["世界任务"] = "世界任务",	-- ["World Quests"] = "WQ"	-- TODO: they are the same, so can be removed or shortened to WQ?
+	["世界任务"] = "世界任务",	-- ["World Quests"] = "WQ"	--TODO: they are the same, so can be removed or shortened to WQ?
 	--TODO: ["WoW Anniversary"] = "Anniversary",
-	["盟约:"] = "盟约:",	-- ["Covenant:"] = "Cov:"	-- TODO: they are the same, so can be removed or shortened to WQ?
+	["盟约:"] = "盟约:",	-- ["Covenant:"] = "Cov:"	--TODO: they are the same, so can be removed or shortened to WQ?
 })
 do a[key] = value; end
 if GetLocale() == "zhTW" then
@@ -694,7 +683,7 @@ for key,value in pairs({
 		--TODO: [-86] = "Library",
 		--TODO: [-87] = "Armory",
 		--TODO: [-88] = "Cathedral",
-	-- TODO: Garrison Note: These will be changed into a new class soon(TM)
+	--TODO: Garrison Note: These will be changed into a new class soon(TM)
 		--[-99] = select(2,C_Garrison.GetBuildingInfo(65)),			-- Stables
 		[-99] = "建筑",												-- Buildings
 	-- Alliance [Swaps based on faction ONLY after a reloadui]
@@ -3005,7 +2994,7 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
--- TODO:
+--TODO:
 local a = L.UNOBTAINABLE_ITEM_REASONS;
 for key,value in pairs({
 	-- Seasonal Filters
@@ -3032,11 +3021,7 @@ do a[key] = value; end
 
 local a = L.CUSTOM_COLLECTS_REASONS;
 for key,value in pairs({
-	["NPE"] = { "|cff5bc41d新玩家体验|r", "只有新角色可以收集这个" },
-	["SL_SKIP"] = { "|cff76879c跳过暗影国度|r", "只有选择跳过暗影国度故事线的角色才能收集这个" },
-	["SL_COV_KYR"] = { "|cFF516bfe格里恩盟约|r" },
-	["SL_COV_NEC"] = { "|cFF40bf40通灵领主盟约|r" },
-	["SL_COV_NFA"] = { "|cFFA330C9法夜盟约|r" },
-	["SL_COV_VEN"] = { "|cFFfe040f温西尔盟约|r" },
+	["NPE"] = { icon = "|T"..("Interface\\Icons\\achievement_newplayerexperience.blp")..":0|t", color = "ff5bc41d", text = "新玩家体验", desc = "只有新角色可以收集这个." },
+	["SL_SKIP"] = { icon = "|T"..app.asset("Expansion_SL")..":0|t", color = "ff76879c", text = "跳过暗影国度", desc = "只有选择跳过暗影国度故事线的角色才能收集这个." },
 })
 do a[key] = value; end

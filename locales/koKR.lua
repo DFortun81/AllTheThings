@@ -254,7 +254,7 @@ local L = app.L;
 			--TODO: L.TITLE_LEVEL = "Level ";
 			--TODO: L._BETA_LABEL = " |cff4AA7FF[Beta]|R";
 
-		--TODO: L.GENERAL_TAB = "General";
+		--TODO: L.GENERAL_LABEL = "General";
 		--TODO: L.MERCH_BUTTON_LABEL = "Merch";
 		--TODO: L.TWITCH_BUTTON_TOOLTIP = "Click this button to copy the URL to get to my Twitch Channel.\n\nYou can ask questions while I'm streaming and I will try my best to answer them!";
 		--TODO: L.DISCORD_BUTTON_TOOLTIP = "Click this button to copy the URL to get to the All The Things Discord server.\n\nYou can share your progress/frustrations with other collectors!";
@@ -289,7 +289,7 @@ local L = app.L;
 		--TODO: L.HEIRLOOMS_CHECKBOX_TOOLTIP = "Enable this option to track whether you have unlocked an Heirloom and its respective Upgrade Levels.\n\nHeirlooms that have an associated Appearance are filtered via the Appearances filter. (turning off appearances will still show the Heirloom itself)\n\nSome items that appear with heirloom quality also help boost reputations and can be filtered via the Reputations filter.";
 		--TODO: L.HEIRLOOMS_UPGRADES_CHECKBOX = "|cffADD8E6+Upgrades";
 		--TODO: L.HEIRLOOMS_UPGRADES_CHECKBOX_TOOLTIP = "Enable this option to specifically track collection of individual Heirloom Upgrades.\n\nWe all know Blizzard just loves to drain your gold and your soul, so keep track of that with this toggle.";
-		L.ILLUSIONS_CHECKBOX = "|cffADD8E6"..WEAPON_ENCHANTMENT;	-- TODO: make it plural
+		L.ILLUSIONS_CHECKBOX = "|cffADD8E6"..WEAPON_ENCHANTMENT;	--TODO: make it plural
 		--TODO: L.ILLUSIONS_CHECKBOX_TOOLTIP = "Enable this option to track illusions.\n\nThese are really cool-looking transmog effects you can apply to your weapons!\n\nNOTE: You are not an illusion, despite what all the Nightborne think.\n\nTracked Account Wide by Default.";
 		--TODO: L.MOUNTS_CHECKBOX_TOOLTIP = "Enable this option to track mounts.\n\nYou can ride these to go places faster than when running. Who knew!\n\nTracked Account Wide by Default.";
 		--TODO: L.MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t |cffADD8E6Music Rolls / Selfie Filters";
@@ -340,55 +340,44 @@ local L = app.L;
 		--TODO: L.BEHAVIOR_LABEL = "List Behavior";
 
 	-- Account Wide Checkboxes
-		--TODO: L.ACCOUNT_WIDE = "Account Wide";
-		--TODO: L.ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = "Achievement tracking is usually account wide, but there are a number of achievements exclusive to specific classes and races that you can't get on your main.";
-		--TODO: L.ACCOUNT_WIDE_TRANSMOG_TOOLTIP = "Transmog appearances are only tracked account wide and cannot be disabled.";
-		--TODO: L.ACCOUNT_WIDE_AZERITE_ESSENCES_TOOLTIP = "Azerite Essences cannot technically be collected and used account-wide, but if you only care about collecting them on your main character then you may prefer tracking them account-wide.";
-		--TODO: L.ACCOUNT_WIDE_FLIGHT_PATHS_TOOLTIP = "Flight Paths tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?";
-		--TODO: L.ACCOUNT_WIDE_FOLLOWERS_TOOLTIP = "Followers are typically per character, but do you really want to have to collect 243 Garrison Inn Followers on one character at a rate of 1 per week?\n\nI think not, good sir.";
-		--TODO: L.ACCOUNT_WIDE_HEIRLOOMS_TOOLTIP = "Heirlooms are tracked account wide.";
-		--TODO: L.ACCOUNT_WIDE_MUSIC_ROLLS_SELFIE_FILTERS_TOOLTIP = "Music Rolls & Selfie Filters are not normally tracked account wide in Blizzard's database, but we can do that.\n\nNOTE: You can only play Music Rolls using the Jukebox Toy or snap a selfie with your S.E.L.F.I.E Camera Toy that you have collected on your current character.";
-		--TODO: L.ACCOUNT_WIDE_QUESTS_TOOLTIP = "Quest completion is typically per Character, but this will consider a Quest as completed if ANY Character has completed that specific Quest.";
-		--TODO: L.ACCOUNT_WIDE_RECIPES_TOOLTIP = "Recipes are not normally tracked account wide in Blizzard's database, but we can do that.\n\nIt is impossible to collect them all on one character, so with this, you can give your alts and their professions meaning.";
-		--TODO: L.ACCOUNT_WIDE_REPUTATIONS_TOOLTIP = "Reputations are now tracked account wide in Blizzard's database for achievements, so turning this on may be a good idea.";
-		--TODO: L.ACCOUNT_WIDE_RUNEFORGELEGENDARIES_TOOLTIP = "Not sure this will help at all for collection... enjoy moving at least one character of every class through every Covenant and Renown progression...";
-		--TODO: L.ACCOUNT_WIDE_SOULBINDCONDUITS_TOOLTIP = "Enable this to consider a Soulbind Conduit as collected for all characters if at least one character has learned it.";
-		--TODO: L.ACCOUNT_WIDE_TITLES_TOOLTIP = "Most titles are tracked account wide, but some prestigious titles in WoW are locked to the character that earned them.\n\nToggle this if you don't care about that and want to see those titles marked Collected for your alts.";
+		--TODO: L.ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = "|cff00AB00Track Account-wide|R\n\nAchievement tracking is usually account wide, but there are a number of achievements exclusive to specific classes and races that you can't get on your main.";
+		--TODO: L.ACCOUNT_WIDE_AZERITE_ESSENCES_TOOLTIP = "|cff00AB00Track Account-wide|R\n\nAzerite Essences cannot technically be collected and used account-wide, but if you only care about collecting them on your main character then you may prefer tracking them account-wide.";
+		--TODO: L.ACCOUNT_WIDE_FLIGHT_PATHS_TOOLTIP = "|cff00AB00Track Account-wide|R\n\nFlight Paths tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?";
+		--TODO: L.ACCOUNT_WIDE_FOLLOWERS_TOOLTIP = "|cff00AB00Track Account-wide|R\n\nFollowers are typically per character, but do you really want to have to collect 243 Garrison Inn Followers on one character at a rate of 1 per week?\n\nI think not, good sir.";
+		--TODO: L.ACCOUNT_WIDE_MUSIC_ROLLS_SELFIE_FILTERS_TOOLTIP = "|cff00AB00Track Account-wide|R\n\nMusic Rolls & Selfie Filters are not normally tracked account wide in Blizzard's database, but we can do that.\n\nNOTE: You can only play Music Rolls using the Jukebox Toy or snap a selfie with your S.E.L.F.I.E Camera Toy that you have collected on your current character.";
+		--TODO: L.ACCOUNT_WIDE_QUESTS_TOOLTIP = "|cff00AB00Track Account-wide|R\n\nQuest completion is typically per Character, but this will consider a Quest as completed if ANY Character has completed that specific Quest.";
+		--TODO: L.ACCOUNT_WIDE_RECIPES_TOOLTIP = "|cff00AB00Track Account-wide|R\n\nRecipes are not normally tracked account wide in Blizzard's database, but we can do that.\n\nIt is impossible to collect them all on one character, so with this, you can give your alts and their professions meaning.";
+		--TODO: L.ACCOUNT_WIDE_REPUTATIONS_TOOLTIP = "|cff00AB00Track Account-wide|R\n\nReputations are now tracked account wide in Blizzard's database for achievements, so turning this on may be a good idea.";
+		--TODO: L.ACCOUNT_WIDE_RUNEFORGELEGENDARIES_TOOLTIP = "|cff00AB00Track Account-wide|R\n\nNot sure this will help at all for collection... enjoy moving at least one character of every class through every Covenant and Renown progression...";
+		--TODO: L.ACCOUNT_WIDE_SOULBINDCONDUITS_TOOLTIP = "|cff00AB00Track Account-wide|R\n\nEnable this to consider a Soulbind Conduit as collected for all characters if at least one character has learned it.";
+		--TODO: L.ACCOUNT_WIDE_TITLES_TOOLTIP = "|cff00AB00Track Account-wide|R\n\nMost titles are tracked account wide, but some prestigious titles in WoW are locked to the character that earned them.\n\nToggle this if you don't care about that and want to see those titles marked Collected for your alts.";
 
 	-- Filters tab
-		--TODO: L.FILTERS_TAB = "Filters";
-		--TODO: L.ITEM_FILTER_LABEL = "Armor / Weapon Filters";
+		--TODO: L.ITEM_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if you are in |Cff00AB00Account Mode|cffFFFFFF, even if the option is disabled.|r";
 		--TODO: L.CLASS_DEFAULTS_BUTTON = "Class Defaults";
 		--TODO: L.CLASS_DEFAULTS_BUTTON_TOOLTIP = "Click this button to reset all of the filters to your class defaults.\n\nNOTE: Only filters that are collectible for your class can be turned on.";
-		--TODO: L.ALL_BUTTON = "All";
-		--TODO: L.ALL_BUTTON_TOOLTIP = "Click this button to enable all equipment filters at once.";
-		--TODO: L.UNCHECK_ALL_BUTTON = "Uncheck All";
-		--TODO: L.UNCHECK_ALL_BUTTON_TOOLTIP = "Click this button to disable all equipment filters at once.";
-		--TODO: L.CUSTOM_FILTERS_LABEL = "Automatic Filters";
-		--TODO: L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|CFFFFFFFFThese filters are automatically applied based on your current character, but may be overridden by being checked, allowing you to see additional Things your character cannot currently collect.\nNone of these filters are ever enabled in Account or Debug modes regardless of the selections below.|r";
+		--TODO: L.ALL_BUTTON_TOOLTIP = "Click this button to enable all options at once.";
+		--TODO: L.UNCHECK_ALL_BUTTON_TOOLTIP = "Click this button to disable all options at once.";
+		--TODO: L.CUSTOM_FILTERS_LABEL = "Automated";
+		--TODO: L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if it is available to your current character or if you are in |Cff00AB00Account Mode|cffFFFFFF, even if the option is disabled.|r";
 		--TODO: L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Enable this setting to forcibly show %s content even if it is not available to the current character.";
 
 	-- Unobtainables tab
 		--TODO: L.UNOBTAINABLES_TAB = "Unobtainables";
-		--TODO: L.SEASONAL_LABEL = "Seasonal (Check to hide)";
-		--TODO: L.SEASONAL_ENABLE = "Filter Seasonal Items";
-		--TODO: L.SEASONAL_ALL = "Toggle All Seasonal";
-		--TODO: L.UNOBTAINALBE_LABEL = "Unobtainable (Check to hide)";
-		--TODO: L.UNOBTAINABLE_ENABLE = "Filter Unobtainable Items";
-		--TODO: L.UNOBTAINABLE_ALL = "Toggle All Unobtainable";
-		--TODO: L.NO_CHANCE_LABEL = "No Chance";
-		--TODO: L.NO_CHANCE_ALL = "Toggle All \"No Chance\"";
-		--TODO: L.HIGH_CHENCE_LABEL = "High Chance";
-		--TODO: L.HIGH_CHANCE_ALL = "Toggle All \"High Chance\"";
+		--TODO: L.SEASONAL_LABEL = "Seasonal";
+		--TODO: L.SEASONAL_ALL = "|cffECBC21Show All Seasonal";
+		--TODO: L.UNOBTAINABLE_LABEL = "Unobtainable";
+		--TODO: L.UNOBTAINABLE_ALL = "|cffECBC21Show All Unobtainable";
+		--TODO: L.NO_CHANCE_ALL = "|cffECBC21Show All \"No Chance\"";
+		--TODO: L.HIGH_CHANCE_ALL = "|cffECBC21Show All \"High Chance\"";
 
 	-- Interface tab
-		--TODO: L.INTERFACE_TAB = "Interface";
 		--TODO: L.TOOLTIP_LABEL = "Tooltips";
-		--TODO: L.ENABLE_TOOLTIP_INFORMATION_CHECKBOX = "|CFFADD8E6Tooltip Integrations|r";
+		--TODO: L.ENABLE_TOOLTIP_INFORMATION_CHECKBOX = "Tooltip Integrations";
 		--TODO: L.ENABLE_TOOLTIP_INFORMATION_CHECKBOX_TOOLTIP = "Enable this option if you want to see the information provided by ATT in external tooltips. This includes item links sent by other players, in the auction house, in the dungeon journal, in your bags, in the world, on NPCs, etc.\n\nIf you turn this feature off, you are seriously reducing your ability to quickly determine if you need to kill a mob or learn an appearance.\n\nWe recommend you keep this setting on.";
 		--TODO: L.DISPLAY_IN_COMBAT_CHECKBOX = "In Combat";
 		--TODO: L.DISPLAY_IN_COMBAT_CHECKBOX_TOOLTIP = "Enable this option if you want to render tooltip information while you are in combat.\n\nIf you are raiding with your Mythic/Mythic+ Guild, you should probably turn this setting off to save as much performance as you can.\n\nIt can be useful while you are soloing old content to immediately know what you need from a boss.";
-		--TODO: L.TOOLTIP_MOD_LABEL = "With Modifier";
+		--TODO: L.TOOLTIP_MOD_LABEL = "Modifier";
 		--TODO: L.TOOLTIP_MOD_NONE = "None";
 		--TODO: L.TOOLTIP_MOD_SHIFT = "Shift";
 		--TODO: L.TOOLTIP_MOD_CTRL = "Ctrl";
@@ -410,7 +399,7 @@ local L = app.L;
 		--TODO: L.SHOW_MODELS_CHECKBOX_TOOLTIP = "Enable this option to show models within a preview instead of the icon on the tooltip.\n\nThis option may assist you in identifying what a Rare Spawn or Vendor looks like. It might be a good idea to keep this turned on for that reason.";
 		--TODO: L.SHARED_APPEARANCES_CHECKBOX = "Shared Appearances";
 		--TODO: L.SHARED_APPEARANCES_CHECKBOX_TOOLTIP = "Enable this option to see items that share a similar appearance in the tooltip.\n\nNOTE: Items that do not match the armor type are displayed in the list. This is to help you diagnose the Collection progress.\n\nIf you are ever confused by this, as of ATT v1.5.0, you can Right Click the item to open the item and its Shared Appearances into their own standalone Mini List.";
-		--TODO: L.INCLUDE_ORIGINAL_CHECKBOX = "Include Original Source";
+		--TODO: L.INCLUDE_ORIGINAL_CHECKBOX = "Original Source";
 		--TODO: L.INCLUDE_ORIGINAL_CHECKBOX_TOOLTIP = "Enable this option if you actually liked seeing the original source info within the Shared Appearances list in the tooltip.";
 		--TODO: L.ONLY_RELEVANT_CHECKBOX = "Only Relevant";
 		--TODO: L.ONLY_RELEVANT_CHECKBOX_TOOLTIP = "Enable this option if you only want to see shared appearances that your character can unlock.\n\nNOTE: We recommend you keep this off as knowing the unlock requirements for an item can be helpful in identifying why an item is Not Collected.";
@@ -428,7 +417,7 @@ local L = app.L;
 		--TODO: L.LOCATIONS_SLIDER_TOOLTIP = 'Use this to customize the number of source locations to show in the tooltip.\n\nNOTE: This will also show "X" number of other sources based on how many, if that total is equivalent to the total number of displayed elements, then that will simply display the last source.\n\nDefault: 5';
 		--TODO: L.COMPLETED_SOURCES_CHECKBOX = "For Completed";
 		--TODO: L.COMPLETED_SOURCES_CHECKBOX_TOOLTIP = "Enable this option if you want to see completed source locations in the tooltip.\n\nAs an example, if you complete the quest \"Bathran's Hair\" in Ashenvale, the tooltip for Evenar Stillwhisper will no longer show that quest when hovering over him.";
-		--TODO: L.DROP_CHANCES_CHECKBOX = "Show Drop Chances";
+		--TODO: L.DROP_CHANCES_CHECKBOX = "Drop Chances";
 		--TODO: L.DROP_CHANCES_CHECKBOX_TOOLTIP = "Enable this option to calculate various drop chance information in the tooltip for an item in an ATT window.\nThis can be helpful for knowing which Loot Spec should be used when Bonus Rolling for an item.";
 		--TODO: L.FOR_CREATURES_CHECKBOX = "For Creatures";
 		--TODO: L.FOR_CREATURES_CHECKBOX_TOOLTIP = "Enable this option if you want to see Source Locations for Creatures.";
@@ -436,22 +425,21 @@ local L = app.L;
 		--TODO: L.FOR_THINGS_CHECKBOX_TOOLTIP = "Enable this option if you want to see Source Locations for Things.";
 		--TODO: L.FOR_UNSORTED_CHECKBOX = "For Unsorted";
 		--TODO: L.FOR_UNSORTED_CHECKBOX_TOOLTIP = "Enable this option if you want to see Source Locations which have not been fully sourced into the database.";
-		--TODO: L.WITH_WRAPPING_CHECKBOX = "Allow Source Wrapping",
+		--TODO: L.WITH_WRAPPING_CHECKBOX = "Allow Wrapping",
 		--TODO: L.WITH_WRAPPING_CHECKBOX_TOOLTIP = "Enable this option to allow the Source lines to wrap within the tooltip.\nThis will ensure that the tooltips do not grow wider than necessary, but will unfortunately make the Source information harder to read in many situations.",
-		--TODO: L.MISC_LABEL = "Miscellaneous";
 		--TODO: L.SHOW_REMAINING_CHECKBOX = "Show Remaining Things";
 		--TODO: L.SHOW_REMAINING_CHECKBOX_TOOLTIP = "Enable this option if you want to see the number of items remaining instead of the progress over total.";
 		--TODO: L.PERCENTAGES_CHECKBOX = "Show Percentage Completion";
 		--TODO: L.PERCENTAGES_CHECKBOX_TOOLTIP = "Enable this option if you want to see the percent completion of each row.\n\nColoring of groups by completion is unaffected.";
-		--TODO: L.MORE_COLORS_CHECKBOX = "Use More Colors!";
+		--TODO: L.MORE_COLORS_CHECKBOX = "Show Colors";
 		--TODO: L.MORE_COLORS_CHECKBOX_TOOLTIP = "Enable this option if you want to see more colors utilized to help distinguish additional conditions for Things in lists (i.e. class colors, faction colors, etc.)";
 		--TODO: L.TOOLTIP_HELP_CHECKBOX = "Show Tooltip Help";
 		--TODO: L.TOOLTIP_HELP_CHECKBOX_TOOLTIP = "Enable this option if you want to see the help info in ATT window tooltips which indicates various key/click combinations for ATT window functionality.\nIf you already know all of the key/click combinations, you may want to save tooltip space and disable this option.";
-		--TODO: L.SIZING_LABEL = "Scale";
 		--TODO: L.MAIN_LIST_SLIDER_LABEL = "Main List Scale";
 		--TODO: L.MAIN_LIST_SCALE_TOOLTIP = 'Use this to customize the scale of the Main List.\n\nDefault: 1';
-		--TODO: L.MINI_LIST_SLIDER_LABEL = "Mini/Other List Scale";
+		--TODO: L.MINI_LIST_SLIDER_LABEL = "Mini Lists Scale";
 		--TODO: L.MINI_LIST_SCALE_TOOLTIP = 'Use this to customize the scale of all Mini and Bitty Lists.\n\nDefault: 1';
+		--TODO: L.ADDITIONAL_LABEL = "Additional Information";
 
 	-- Features tab
 		--TODO: L.FEATURES_TAB = "Features";
@@ -650,7 +638,7 @@ for key,value in pairs({
 		--TODO: [-86] = "Library",
 		--TODO: [-87] = "Armory",
 		--TODO: [-88] = "Cathedral",
-	-- TODO: Garrison Note: These will be changed into a new class soon(TM)
+	--TODO: Garrison Note: These will be changed into a new class soon(TM)
 		--[-99] = select(2,C_Garrison.GetBuildingInfo(65)),			-- Stables
 		--TODO: [-99] = "Buildings",
 	-- Alliance [Swaps based on faction ONLY after a reloadui]
@@ -2949,7 +2937,7 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
--- TODO:
+--TODO:
 local a = L.UNOBTAINABLE_ITEM_REASONS;
 for key,value in pairs({
 	-- Seasonal Filters
@@ -2974,14 +2962,10 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
--- TODO:
+--TODO:
 local a = L.CUSTOM_COLLECTS_REASONS;
 for key,value in pairs({
-	["NPE"] = { "|cff5bc41dNew Player Experience|r", "Only a New Character can Collect this" },
-	["SL_SKIP"] = { "|cff76879cShadowlands Skip|r", "Only a Character who chose to skip the Shadowlands Storyline can Collect this" },
-	["SL_COV_KYR"] = { "|cFF516bfeKyrian Covenant|r" },
-	["SL_COV_NEC"] = { "|cFF40bf40Necrolord Covenant|r" },
-	["SL_COV_NFA"] = { "|cFFA330C9Night Fae Covenant|r" },
-	["SL_COV_VEN"] = { "|cFFfe040fVenthyr Covenant|r" },
+	["NPE"] = { icon = "|T"..("Interface\\Icons\\achievement_newplayerexperience.blp")..":0|t", color = "ff5bc41d", text = "New Player Experience", desc = "Only a New Character can Collect this." },
+	["SL_SKIP"] = { icon = "|T"..app.asset("Expansion_SL")..":0|t", color = "ff76879c", text = "Threads of Fate", desc = "Only a Character who chose to skip the Shadowlands Storyline can Collect this." },
 })
 do a[key] = value; end

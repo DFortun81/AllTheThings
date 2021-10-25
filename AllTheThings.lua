@@ -4115,10 +4115,11 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					-- If this group has customCollect requirements, list them for clarity
 					if group.customCollect then
 						for i,c in ipairs(group.customCollect) do
+							local icon_color_str = L["CUSTOM_COLLECTS_REASONS"][c]["icon"].." |c"..L["CUSTOM_COLLECTS_REASONS"][c]["color"]..L["CUSTOM_COLLECTS_REASONS"][c]["text"];
 							if i > 1 then
-								right = L["CUSTOM_COLLECTS_REASONS"][c][1] .. " / " .. right;
+								right = icon_color_str .. " / " .. right;
 							else
-								right = L["CUSTOM_COLLECTS_REASONS"][c][1] .. "  " .. right;
+								right = icon_color_str .. "  " .. right;
 							end
 						end
 					end
@@ -14477,10 +14478,11 @@ RowOnEnter = function (self)
 			local requires = L["REQUIRES"];
 			for i,c in ipairs(reference.customCollect) do
 				customCollectEx = L["CUSTOM_COLLECTS_REASONS"][c];
+				local icon_color_str = (customCollectEx["icon"].." |c"..customCollectEx["color"]..customCollectEx["text"] or"[MISSING_LOCALE_KEY]");
 				if not app.CurrentCharacter.CustomCollects[c] then
-					GameTooltip:AddDoubleLine("|cffc20000" .. requires .. ":|r " .. (customCollectEx[1] or "[MISSING_LOCALE_KEY]"), customCollectEx[2] or "");
+					GameTooltip:AddDoubleLine("|cffc20000" .. requires .. ":|r " .. icon_color_str, customCollectEx["desc"] or "");
 				else
-					GameTooltip:AddDoubleLine(requires .. ": " .. (customCollectEx[1] or "[MISSING_LOCALE_KEY]"), customCollectEx[2] or "");
+					GameTooltip:AddDoubleLine(requires .. ": " .. icon_color_str, customCollectEx["desc"] or "");
 				end
 			end
 		end
@@ -15207,7 +15209,7 @@ function app:GetDataCache()
 			db.sourceIgnored = true;
 			tinsert(g, db);
 		end
-		
+
 		-- Toys
 		if app.Categories.Toys then
 			db = {};
@@ -15493,8 +15495,8 @@ function app:GetDataCache()
 			return db;
 		end)());
 		--]]
-		
-		
+
+
 		--[[
 		-- More attempts at dynamically built sections.
 		-- Titles
@@ -15505,7 +15507,7 @@ function app:GetDataCache()
 		titlesCategory.text = PAPERDOLL_SIDEBAR_TITLES;
 		titlesCategory.icon = app.asset("Category_Titles");
 		table.insert(g, titlesCategory);
-		
+
 		-- Toys
 		local toyCategory = {};
 		toyCategory.g = {};
@@ -15515,7 +15517,7 @@ function app:GetDataCache()
 		toyCategory.icon = app.asset("Category_ToyBox");
 		table.insert(g, toyCategory);
 		]]--
-		
+
 		-- Track Deaths!
 		tinsert(g, app:CreateDeathClass());
 
@@ -15600,7 +15602,7 @@ function app:GetDataCache()
 		BuildGroups(allData, allData.g);
 		app:GetWindow("Unsorted").data = allData;
 		CacheFields(allData);
-		
+
 		local buildCategoryEntry = function(self, headers, searchResults, inst)
 			local header = self;
 			for j,o in ipairs(searchResults) do
@@ -15636,7 +15638,7 @@ function app:GetDataCache()
 								end
 							end
 						end
-						
+
 						if GetRelativeValue(o, "isHolidayCategory") then
 							header = headers[-3];
 							if not header then
@@ -15735,7 +15737,7 @@ function app:GetDataCache()
 			tinsert(inst.parent.g, inst);
 			return inst;
 		end
-		
+
 		-- Update Faction data.
 		--[[
 		-- TODO: Make a dynamic Factions section. It works, but we have one already, so we don't need it.
@@ -15812,7 +15814,7 @@ function app:GetDataCache()
 		flightPathsCategory:OnUpdate();
 		-- Needed for externally updating only this group when collecting a flight path since the records are not cached
 		app.FlightPathsCategory = flightPathsCategory;
-		
+
 		-- Update Title data.
 		if titlesCategory then
 			titlesCategory.OnUpdate = function(self)
@@ -15846,7 +15848,7 @@ function app:GetDataCache()
 			end
 			titlesCategory:OnUpdate();
 		end
-		
+
 		-- Update Toy data.
 		if toyCategory then
 			toyCategory.OnUpdate = function(self)

@@ -269,7 +269,7 @@ app.L = {
 				["TITLE_LEVEL"] = "Level ";
 				["_BETA_LABEL"] = " |cff4AA7FF[Beta]|R";
 
-	["GENERAL_TAB"] = "General";
+	["GENERAL_LABEL"] = "General";
 	["TWITCH_BUTTON_LABEL"] = "Twitch";
 	["DISCORD_BUTTON_LABEL"] = "Discord";
 	["PATREON_BUTTON_LABEL"] = "Patreon";
@@ -372,13 +372,10 @@ app.L = {
 	["BEHAVIOR_LABEL"] = "List Behavior";
 
 	-- Account Wide Checkboxes
-	["ACCOUNT_WIDE"] = "Account";
 	["ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP"] = "|cff00AB00Track Account-wide|R\n\nAchievement tracking is usually account wide, but there are a number of achievements exclusive to specific classes and races that you can't get on your main.";
-	--["ACCOUNT_WIDE_TRANSMOG_TOOLTIP"] = "Transmog appearances are only tracked account wide and cannot be disabled.";
 	["ACCOUNT_WIDE_AZERITE_ESSENCES_TOOLTIP"] = "|cff00AB00Track Account-wide|R\n\nAzerite Essences cannot technically be collected and used account-wide, but if you only care about collecting them on your main character then you may prefer tracking them account-wide.";
 	["ACCOUNT_WIDE_FLIGHT_PATHS_TOOLTIP"] = "|cff00AB00Track Account-wide|R\n\nFlight Paths tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?";
 	["ACCOUNT_WIDE_FOLLOWERS_TOOLTIP"] = "|cff00AB00Track Account-wide|R\n\nFollowers are typically per character, but do you really want to have to collect 243 Garrison Inn Followers on one character at a rate of 1 per week?\n\nI think not, good sir.";
-	--["ACCOUNT_WIDE_HEIRLOOMS_TOOLTIP"] = "Heirlooms are tracked account wide.";
 	["ACCOUNT_WIDE_MUSIC_ROLLS_SELFIE_FILTERS_TOOLTIP"] = "|cff00AB00Track Account-wide|R\n\nMusic Rolls & Selfie Filters are not normally tracked account wide in Blizzard's database, but we can do that.\n\nNOTE: You can only play Music Rolls using the Jukebox Toy or snap a selfie with your S.E.L.F.I.E Camera Toy that you have collected on your current character.";
 	["ACCOUNT_WIDE_QUESTS_TOOLTIP"] = "|cff00AB00Track Account-wide|R\n\nQuest completion is typically per Character, but this will consider a Quest as completed if ANY Character has completed that specific Quest.";
 	["ACCOUNT_WIDE_RECIPES_TOOLTIP"] = "|cff00AB00Track Account-wide|R\n\nRecipes are not normally tracked account wide in Blizzard's database, but we can do that.\n\nIt is impossible to collect them all on one character, so with this, you can give your alts and their professions meaning.";
@@ -388,44 +385,30 @@ app.L = {
 	["ACCOUNT_WIDE_TITLES_TOOLTIP"] = "|cff00AB00Track Account-wide|R\n\nMost titles are tracked account wide, but some prestigious titles in WoW are locked to the character that earned them.\n\nToggle this if you don't care about that and want to see those titles marked Collected for your alts.";
 
 	-- Filters tab
-	["FILTERS_TAB"] = "Filters";
-	["ITEM_FILTER_LABEL"] = "Weapons & Armor";
+	["FILTERS_TAB"] = FILTERS;
+	["ITEM_FILTER_LABEL"] = AUCTION_CATEGORY_WEAPONS.." & "..ARMOR;
 	["ITEM_EXPLAIN_LABEL"] = "|cffFFFFFFThis content is always shown if you are in |Cff00AB00Account Mode|cffFFFFFF, even if the option is disabled.|r";
-	["GENERAL_FILTERS_LABEL"] = "General";
-	["UNCOLLECTABLE_FILTERS_LABEL"] = "Uncollectable";
 	["CLASS_DEFAULTS_BUTTON"] = "Class Defaults";
 	["CLASS_DEFAULTS_BUTTON_TOOLTIP"] = "Click this button to reset all of the filters to your class defaults.\n\nNOTE: Only filters that are collectible for your class can be turned on.";
-	["ALL_BUTTON"] = "All";
+	["ALL_BUTTON"] = ALL;
 	["ALL_BUTTON_TOOLTIP"] = "Click this button to enable all options at once.";
-	["UNCHECK_ALL_BUTTON"] = "None";
+	["UNCHECK_ALL_BUTTON"] = NONE;
 	["UNCHECK_ALL_BUTTON_TOOLTIP"] = "Click this button to disable all options at once.";
 	["CUSTOM_FILTERS_LABEL"] = "Automated";
 	["CUSTOM_FILTERS_EXPLAIN_LABEL"] = "|cffFFFFFFThis content is always shown if it is available to your current character or if you are in |Cff00AB00Account Mode|cffFFFFFF, even if the option is disabled.|r";
 	["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"] = "Enable this setting to forcibly show %s content even if it is not available to the current character.";
 
-	["SETTINGS_CUSTOM_COLLECTS_REASONS"] = {
-		["NPE"] = { "|T"..("Interface\\Icons\\achievement_newplayerexperience.blp")..":0|t New Player Experience", "Only a New Character can Collect this" },
-		["SL_SKIP"] = { "|T"..app.asset("Expansion_SL")..":0|t Threads of Fate", "Only a Character who chose to skip the Shadowlands Storyline can Collect this" },
-		["SL_COV_KYR"] = { "|T"..("Interface\\Icons\\ui_sigil_kyrian.blp")..":0|t |cffADD8E6Kyrian Covenant|r" },
-		["SL_COV_NEC"] = { "|T"..("Interface\\Icons\\ui_sigil_necrolord.blp")..":0|t |cffADD8E6Necrolord Covenant|r" },
-		["SL_COV_NFA"] = { "|T"..("Interface\\Icons\\ui_sigil_nightfae.blp")..":0|t |cffADD8E6Night Fae Covenant|r" },
-		["SL_COV_VEN"] = { "|T"..("Interface\\Icons\\ui_sigil_venthyr.blp")..":0|t |cffADD8E6Venthyr Covenant|r" },
-	};
 	-- Unobtainables tab
 	["UNOBTAINABLES_TAB"] = "Unobtainables";
 	["SEASONAL_LABEL"] = "Seasonal";
-	--["SEASONAL_ENABLE"] = "Filter Seasonal Items";
 	["SEASONAL_ALL"] = "|cffECBC21Show All Seasonal";
 	["UNOBTAINABLE_LABEL"] = "Unobtainable";
-	--["UNOBTAINABLE_ENABLE"] = "Filter Unobtainable Items";
 	["UNOBTAINABLE_ALL"] = "|cffECBC21Show All Unobtainable";
-	--["NO_CHANCE_LABEL"] = "No Chance";
 	["NO_CHANCE_ALL"] = "|cffECBC21Show All \"No Chance\"";
-	--["HIGH_CHANCE_LABEL"] = "High Chance";
 	["HIGH_CHANCE_ALL"] = "|cffECBC21Show All \"High Chance\"";
 
 	-- Interface tab
-	["INTERFACE_TAB"] = "Interface";
+	["INTERFACE_TAB"] = UIOPTIONS_MENU;
 	["TOOLTIP_LABEL"] = "Tooltips";
 	["ENABLE_TOOLTIP_INFORMATION_CHECKBOX"] = "Tooltip Integrations";
 	["ENABLE_TOOLTIP_INFORMATION_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the information provided by ATT in external tooltips. This includes item links sent by other players, in the auction house, in the dungeon journal, in your bags, in the world, on NPCs, etc.\n\nIf you turn this feature off, you are seriously reducing your ability to quickly determine if you need to kill a mob or learn an appearance.\n\nWe recommend you keep this setting on.";
@@ -481,7 +464,6 @@ app.L = {
 	["FOR_UNSORTED_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see Source Locations which have not been fully sourced into the database.";
 	["WITH_WRAPPING_CHECKBOX"] = "Allow Wrapping",
 	["WITH_WRAPPING_CHECKBOX_TOOLTIP"] = "Enable this option to allow the Source lines to wrap within the tooltip.\nThis will ensure that the tooltips do not grow wider than necessary, but will unfortunately make the Source information harder to read in many situations.",
-	--["MISC_LABEL"] = "Miscellaneous";
 	["SHOW_REMAINING_CHECKBOX"] = "Show Remaining Things";
 	["SHOW_REMAINING_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the number of items remaining instead of the progress over total.";
 	["PERCENTAGES_CHECKBOX"] = "Show Percentage Completion";
@@ -490,7 +472,6 @@ app.L = {
 	["MORE_COLORS_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see more colors utilized to help distinguish additional conditions for Things in lists (i.e. class colors, faction colors, etc.)";
 	["TOOLTIP_HELP_CHECKBOX"] = "Show Tooltip Help";
 	["TOOLTIP_HELP_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the help info in ATT window tooltips which indicates various key/click combinations for ATT window functionality.\nIf you already know all of the key/click combinations, you may want to save tooltip space and disable this option.";
-	--["SIZING_LABEL"] = "Scale";
 	["MAIN_LIST_SLIDER_LABEL"] = "Main List Scale";
 	["MAIN_LIST_SCALE_TOOLTIP"] = 'Use this to customize the scale of the Main List.\n\nDefault: 1';
 	["MINI_LIST_SLIDER_LABEL"] = "Mini Lists Scale";
@@ -2416,11 +2397,11 @@ app.L = {
 	};
 
 	["CUSTOM_COLLECTS_REASONS"] = {
-		["NPE"] = { "|cff5bc41dNew Player Experience|r", "Only a New Character can Collect this" },
-		["SL_SKIP"] = { "|cff76879cThreads of Fate|r", "Only a Character who chose to skip the Shadowlands Storyline can Collect this" },
-		["SL_COV_KYR"] = { "|cFF516bfeKyrian Covenant|r" },
-		["SL_COV_NEC"] = { "|cFF40bf40Necrolord Covenant|r" },
-		["SL_COV_NFA"] = { "|cFFA330C9Night Fae Covenant|r" },
-		["SL_COV_VEN"] = { "|cFFfe040fVenthyr Covenant|r" },
+		["NPE"] = { icon = "|T"..("Interface\\Icons\\achievement_newplayerexperience.blp")..":0|t", color = "ff5bc41d", text = "New Player Experience", desc = "Only a New Character can Collect this." },
+		["SL_SKIP"] = { icon = "|T"..app.asset("Expansion_SL")..":0|t", color = "ff76879c", text = "Threads of Fate", desc = "Only a Character who chose to skip the Shadowlands Storyline can Collect this." },
+		["SL_COV_KYR"] = { icon = "|T"..("Interface\\Icons\\ui_sigil_kyrian.blp")..":0|t", color = "ff516bfe", text = GetSpellInfo(321076) },
+		["SL_COV_NEC"] = { icon = "|T"..("Interface\\Icons\\ui_sigil_necrolord.blp")..":0|t", color = "ff40bf40", text = GetSpellInfo(321078) },
+		["SL_COV_NFA"] = { icon = "|T"..("Interface\\Icons\\ui_sigil_nightfae.blp")..":0|t", color = "ffA330C9", text = GetSpellInfo(321077) },
+		["SL_COV_VEN"] = { icon = "|T"..("Interface\\Icons\\ui_sigil_venthyr.blp")..":0|t", color = "fffe040f", text = GetSpellInfo(321079) },
 	};
 };
