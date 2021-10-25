@@ -1,8 +1,8 @@
------------------------------------------------------
---     W O R L D   E V E N T S   M O D U L E       --
------------------------------------------------------
+--------------------------------------------
+--     H O L I D A Y S  M O D U L E       --
+--------------------------------------------
 
-_.WorldEvents =
+_.Holidays =
 {
 	n(-62, {	-- Stranglethorn Fishing Extravaganza
 		["description"] = "Winners all get Master Angler of Azeroth which is needed for the meta-achievement Accomplished Angler.\n\nAll winners can choose between any of the prizes. The fishing rod and toy no longer seem to be limited to the First Place winner in Patch 7.1.5.",
