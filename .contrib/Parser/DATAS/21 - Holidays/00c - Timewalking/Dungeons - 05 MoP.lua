@@ -1,6 +1,6 @@
 
 -- #if AFTER 7.1.5.23360
-root("WorldEvents", d(24, {  -- Timewalking
+root("Holidays", d(24, {  -- Timewalking
 	tier(MOP_TIER, {
 		-- ["lvl"] = 71,
 		["g"] = {

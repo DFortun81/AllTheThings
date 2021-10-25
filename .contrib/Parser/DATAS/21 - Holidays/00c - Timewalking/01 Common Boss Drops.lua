@@ -1,6 +1,6 @@
------------------------------------------------------
---     W O R L D   E V E N T S   M O D U L E       --
------------------------------------------------------
+--------------------------------------------
+--     H O L I D A Y S  M O D U L E       --
+--------------------------------------------
 
 local InfiniteTimereaver =
 {
@@ -19,5 +19,5 @@ local InfiniteTimereaver =
 -- Post Processors
 table.insert(POST_PROCESSING_FUNCTIONS, function()
 	print("Assigning mapID and creatureIDs for Infinite Timereaver...");
-	_.WorldEvents = InfiniteTimereaver;
+	_.Holidays = InfiniteTimereaver;
 end);
