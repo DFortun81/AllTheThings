@@ -479,7 +479,7 @@ app.L = {
 	["ADDITIONAL_LABEL"] = "Additional Information";
 
 	-- Features tab
-	["FEATURES_TAB"] = "Features";
+	["FEATURES_TAB"] = FEATURES_LABEL;
 	["MINIMAP_LABEL"] = "Minimap Button";
 	["MODULES_LABEL"] = "Modules & Mini Lists";
 	["REPORTING_LABEL"] = "Reporting";

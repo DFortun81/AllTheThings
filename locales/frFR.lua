@@ -441,9 +441,10 @@ local L = app.L;
 		--TODO: L.ADDITIONAL_LABEL = "Additional Information";
 
 	-- Features tab
-		--TODO: L.FEATURES_TAB = "Features";
+		--TODO: L.MINIMAP_LABEL = "Minimap Button";
 		--TODO: L.MODULES_LABEL = "Modules & Mini Lists";
-		--TODO: L.ADHOC_UPDATES_CHECKBOX = "Use Ad-Hoc Window Updates";
+		--TODO: L.REPORTING_LABEL = "Reporting";
+		--TODO: L.ADHOC_UPDATES_CHECKBOX = "Ad-Hoc Window Updates";
 		--TODO: L.ADHOC_UPDATES_CHECKBOX_TOOLTIP = "Enable this option if you want only visible ATT windows to be updated.\n\nThis can greatly reduce loading times and prevent large framerate spikes in some situations.";
 		--TODO: L.SKIP_CUTSCENES_CHECKBOX = "Automatically Skip Cutscenes";
 		--TODO: L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to automatically skip all cutscenes on your behalf.";
@@ -459,13 +460,13 @@ local L = app.L;
 		--TODO: L.AUTO_RAID_ASSISTANT_CHECKBOX_TOOLTIP = "Enable this option if you want to see an alternative group/party/raid settings manager called the 'Raid Assistant'. The list will automatically update whenever group settings change.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Raid Assistant\n\nShortcut Command: /attra";
 		--TODO: L.AUTO_WQ_LIST_CHECKBOX = "Automatically Open the World Quests List";
 		--TODO: L.AUTO_WQ_LIST_CHECKBOX_TOOLTIP = "Enable this option if you want the 'World Quests' list to appear automatically. The list will automatically update whenever you switch zones.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle World Quests List\n\nShortcut Command: /attwq";
-		--TODO: L.CURRENCIES_IN_WQ_CHECKBOX = "Allow Collectible Cost Groups";
+		--TODO: L.CURRENCIES_IN_WQ_CHECKBOX = "Show Collectible Cost Groups";
 		--TODO: L.CURRENCIES_IN_WQ_CHECKBOX_TOOLTIP = "Enable this option if you want to allow Items/Currencies which are used to purchase collectible Things to be considered collectible and show under dynamically-populated Quests.";
 		--TODO: L.AUCTION_TAB_CHECKBOX = "Show the Auction House Module Tab";
 		--TODO: L.AUCTION_TAB_CHECKBOX_TOOLTIP = "Enable this option if you want to see the Auction House Module provided with ATT.\n\nSome addons are naughty and modify this frame extensively. ATT doesn't always play nice with those toys.";
 		--TODO: L.SORT_BY_PROGRESS_CHECKBOX = "Sort By Progress";
 		--TODO: L.SORT_BY_PROGRESS_CHECKBOX_TOOLTIP = "Enable this option if you want the 'Sort' operation (Shift + Right Click) to sort by the total progress of each group (instead of by Name)";
-		--TODO: L.QUEST_CHAIN_NESTED_CHECKBOX = "Nested Quest Chain Requirements";
+		--TODO: L.QUEST_CHAIN_NESTED_CHECKBOX = "Show Nested Quest Chains";
 		--TODO: L.QUEST_CHAIN_NESTED_CHECKBOX_TOOLTIP = "Enable this option if you want the Quest Chain Requirements (Right-Click on Quest) window to show required Quests as sub-groups of their following Quests, i.e. they must be completed from the inside out.\n\nThis is useful to not miss Breadcrumb Quests and should be used primarily for Quest completion in mind.\n\nOtherwise, Quest Chain Requirements will be displayed in a top-down list, with the earliest available Quest at the very top.";
 		--TODO: L.CELEBRATIONS_LABEL = "Celebrations & Sound Effects";
 		--TODO: L.MASTER_AUDIO_CHECKBOX = "Use the Master Audio Channel";
@@ -476,6 +477,8 @@ local L = app.L;
 		--TODO: L.WARN_REMOVED_CHECKBOX_TOOLTIP = "Enable this option if you want to hear a warning sound effect when you accidentally sell back or trade an item that granted you an appearance that would cause you to lose that appearance from your collection.\n\nThis can be extremely helpful if you vendor an item with a purchase timer. The addon will tell you that you've made a mistake.";
 		--TODO: L.SCREENSHOT_COLLECTED_CHECKBOX = "Collected Things Trigger a Screenshot";
 		--TODO: L.SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP = "Enable this option if you want to take a screenshot for every Thing you collect.";
+		--TODO: L.CHAT_COMMANDS_LABEL = "Chat Commands";
+		--TODO: L.CHAT_COMMANDS_TEXT = "/att |cffFFFFFFor|R /things |cffFFFFFFor|R /allthethings\n|cffFFFFFFOpens the Main List.\n\n|R/att mini |cffFFFFFFor|R /attmini\n|cffFFFFFFOpens the Mini List.\n\n|R/att bounty\n|cffFFFFFFOpens a list of bugged or unconfirmed items that need testing.\n\n|R/att ra |cffFFFFFFor|R /attra\n|cffFFFFFFOpens the Raid Assistant.\n\n|R/att wq |cffFFFFFFor|R /attwq\n|cffFFFFFFOpens the World Quests List.\n\n|R/att item:1234 |cffFFFFFFor|R /att [Item Link]\n|cffFFFFFFOpens a window with shared appearances. Also works with other things, such as|R quest:1234|cffFFFFFF, |Rnpcid:1234|cffFFFFFF, |Rmapid:1234|cffFFFFFF or |Rrecipeid:1234|cffFFFFFF.\n\n|R/att random |cffFFFFFFor|R /attrandom |cffFFFFFFor|R /attran\n|cffFFFFFFOpens the Random List.\n\n|R/att unsorted\n|cffFFFFFFOpens a list of unsourced items. Best opened in Debug Mode.\n\n|R/rl\n|cffFFFFFFReload your WoW interface.|R";
 
 	-- About tab
 		--TODO: L.ABOUT = "About";

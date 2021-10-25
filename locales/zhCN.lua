@@ -445,9 +445,10 @@ local L = app.L;
 		--TODO: L.ADDITIONAL_LABEL = "Additional Information";
 
 	-- Features tab
-		L.FEATURES_TAB = "功能";
+		--TODO: L.MINIMAP_LABEL = "Minimap Button";
 		L.MODULES_LABEL = "模块和迷你列表";
-		L.ADHOC_UPDATES_CHECKBOX = "使用临时窗口更新";
+		--TODO: L.REPORTING_LABEL = "Reporting";
+		L.ADHOC_UPDATES_CHECKBOX = "使用临时窗口更新";	--TODO: Ad-Hoc Window Updates
 		L.ADHOC_UPDATES_CHECKBOX_TOOLTIP = "如果你想只更新可见的ATT窗口请启用此选项.\n\n这可以大大减少加载时间并防止在某些情况下出现疯狂掉帧.";
 		L.SKIP_CUTSCENES_CHECKBOX = "自动跳过场景动画";
 		L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP = "如果想让ATT代表你自动跳过所有场景动画请启用此选项.";
@@ -463,13 +464,13 @@ local L = app.L;
 		L.AUTO_RAID_ASSISTANT_CHECKBOX_TOOLTIP = "如果你想看到一个名为'团本助手'替代组/队伍/团队设置管理器请启用此选项. 每当队伍设置改变时列表会自动更新.\n\n你也可以将此设置绑定到一个键上.\n\n按键设置 -> 插件 -> ALL THE THINGS -> 打开/关闭团本助手\n\n快捷命令: /attra";
 		L.AUTO_WQ_LIST_CHECKBOX = "自动打开世界任务列表";
 		L.AUTO_WQ_LIST_CHECKBOX_TOOLTIP = "如果你想让'世界任务'列表自动出现请启用此选项. 每当你切换区域时列表将自动更新.\n\n你也可以将此设置绑定到一个键上.\n\n按键设置 -> 插件 -> ALL THE THINGS -> 打开/关闭世界任务列表\n\n快捷命令: /attwq";
-		--TODO: L.CURRENCIES_IN_WQ_CHECKBOX = "Allow Collectible Cost Groups";
+		--TODO: L.CURRENCIES_IN_WQ_CHECKBOX = "Show Collectible Cost Groups";
 		--TODO: L.CURRENCIES_IN_WQ_CHECKBOX_TOOLTIP = "Enable this option if you want to allow Items/Currencies which are used to purchase collectible Things to be considered collectible and show under dynamically-populated Quests.";
 		L.AUCTION_TAB_CHECKBOX = "显示拍卖行模块标签";
 		L.AUCTION_TAB_CHECKBOX_TOOLTIP = "如果你想查看ATT提供的拍卖行模块请启用此选项.\n\n一些插件很调皮会大量修改这个框架. ATT并不总是和那些玩具玩得很好.";
 		L.SORT_BY_PROGRESS_CHECKBOX = "按进度排序";
 		L.SORT_BY_PROGRESS_CHECKBOX_TOOLTIP = "如果你希望'排序'操作(Shift+右键)按每个组的总进度排序(而不是按名称)请启用此选项";
-		L.QUEST_CHAIN_NESTED_CHECKBOX = "嵌套任务链要求";
+		L.QUEST_CHAIN_NESTED_CHECKBOX = "嵌套任务链要求";	--TODO: Show Nested Quest Chains
 		L.QUEST_CHAIN_NESTED_CHECKBOX_TOOLTIP = "如果你想让任务链要求(右键点击任务)窗口将所需任务显示为其后续任务的子组, 即它们必须从内到外完成, 请启用此选项.\n\n这一点很有用, 不会错过个别任务, 应该主要用于完成任务的考虑.\n\n否则任务链要求将以自上而下的方式显示, 最早的任务在最上面.";
 		L.CELEBRATIONS_LABEL = "庆祝和音效";
 		L.MASTER_AUDIO_CHECKBOX = "使用主音频通道";
@@ -480,6 +481,8 @@ local L = app.L;
 		L.WARN_REMOVED_CHECKBOX_TOOLTIP = "如果你想在你不小心卖掉或交易一个给予你外观的物品从而导致收藏中失去该外观时听到警告的声音效果, 请启用这个选项.\n\n如果你的商品有购买计时这可能非常有用. 该插件会告诉你你犯了一个错误.";
 		L.SCREENSHOT_COLLECTED_CHECKBOX = "收集物品后触发截图";
 		L.SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP = "如果你想为你收集的每件物品进行截图请启用此选项.";
+		--TODO: L.CHAT_COMMANDS_LABEL = "Chat Commands";
+		--TODO: L.CHAT_COMMANDS_TEXT = "/att |cffFFFFFFor|R /things |cffFFFFFFor|R /allthethings\n|cffFFFFFFOpens the Main List.\n\n|R/att mini |cffFFFFFFor|R /attmini\n|cffFFFFFFOpens the Mini List.\n\n|R/att bounty\n|cffFFFFFFOpens a list of bugged or unconfirmed items that need testing.\n\n|R/att ra |cffFFFFFFor|R /attra\n|cffFFFFFFOpens the Raid Assistant.\n\n|R/att wq |cffFFFFFFor|R /attwq\n|cffFFFFFFOpens the World Quests List.\n\n|R/att item:1234 |cffFFFFFFor|R /att [Item Link]\n|cffFFFFFFOpens a window with shared appearances. Also works with other things, such as|R quest:1234|cffFFFFFF, |Rnpcid:1234|cffFFFFFF, |Rmapid:1234|cffFFFFFF or |Rrecipeid:1234|cffFFFFFF.\n\n|R/att random |cffFFFFFFor|R /attrandom |cffFFFFFFor|R /attran\n|cffFFFFFFOpens the Random List.\n\n|R/att unsorted\n|cffFFFFFFOpens a list of unsourced items. Best opened in Debug Mode.\n\n|R/rl\n|cffFFFFFFReload your WoW interface.|R";
 
 	-- About tab
 		L.ABOUT = "关于";
@@ -3022,6 +3025,6 @@ do a[key] = value; end
 local a = L.CUSTOM_COLLECTS_REASONS;
 for key,value in pairs({
 	["NPE"] = { icon = "|T"..("Interface\\Icons\\achievement_newplayerexperience.blp")..":0|t", color = "ff5bc41d", text = "新玩家体验", desc = "只有新角色可以收集这个." },
-	["SL_SKIP"] = { icon = "|T"..app.asset("Expansion_SL")..":0|t", color = "ff76879c", text = "跳过暗影国度", desc = "只有选择跳过暗影国度故事线的角色才能收集这个." },
+	["SL_SKIP"] = { icon = "|T"..app.asset("Expansion_SL")..":0|t", color = "ff76879c", text = "跳过暗影国度", desc = "只有选择跳过暗影国度故事线的角色才能收集这个." },	--TODO: text: Threads of Fate
 })
 do a[key] = value; end
