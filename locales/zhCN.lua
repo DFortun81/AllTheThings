@@ -1624,8 +1624,8 @@ for key, value in pairs({
 	[232250] = "派普斯埋藏的补给品",	-- Pippers' Buried Supplies
 	[232251] = "派普斯埋藏的补给品",	-- Pippers' Buried Supplies
 	[232252] = "派普斯埋藏的补给品",	-- Pippers' Buried Supplies
-	--TODO: [232397] = "Bulletin Board",	-- Bulletin Board
-	--TODO: [232400] = "Bulletin Board",	-- Bulletin Board
+	[232397] = "布告牌",	-- Bulletin Board	--TODO: manually translated
+	[232400] = "布告牌",	-- Bulletin Board	--TODO: manually translated
 	[232406] = "冒险者的包裹",	-- Adventurer's Pack
 	[232416] = "指令板",	-- Command Board
 	--TODO: [232458] = "Nizzix's Chest",	-- Nizzix's Chest
@@ -1953,8 +1953,8 @@ for key, value in pairs({
 	--TODO: [241712] = "Ironbeard's Treasure",	-- Ironbeard's Treasure
 	[241713] = "格兰诺克之眼",	-- The Eye of Grannok
 	[241714] = "隐藏的铁海宝藏",	-- Stashed Iron Sea Booty
-	--TODO: [241715] = "Stashed Iron Sea Booty",	-- Stashed Iron Sea Booty
-	--TODO: [241716] = "Stashed Iron Sea Booty",	-- Stashed Iron Sea Booty
+	[241715] = "隐藏的铁海宝藏",	-- Stashed Iron Sea Booty	--TODO: manually translated
+	[241716] = "隐藏的铁海宝藏",	-- Stashed Iron Sea Booty	--TODO: manually translated
 	[241717] = "闪闪发光的宝箱",	-- Glimmering Treasure Chest
 	[241726] = "魔石矿脉",	-- Leystone Deposit
 	[241742] = "茨兹克的书",	-- Book of Zyzzix
