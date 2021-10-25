@@ -5,7 +5,7 @@ root("WorldEvents", d(24, {  -- Timewalking
 		-- ["lvl"] = 71,
 		["g"] = {
 			-- #if AFTER 8.2.5.31958
-			inst(78, {	-- Firelands
+			inst_tw(78, {	-- Firelands
 				["isRaid"] = true,
 				["g"] = {
 					n(COMMON_BOSS_DROPS, {
@@ -265,7 +265,7 @@ root("WorldEvents", d(24, {  -- Timewalking
 				},
 			}),
 			-- #endif
-			inst(184, {	-- End Time
+			inst_tw(184, {	-- End Time
 				n(COMMON_BOSS_DROPS, {
 					["crs"] = {
 						54431,	-- Echo of Baine
@@ -327,7 +327,7 @@ root("WorldEvents", d(24, {  -- Timewalking
 					i(133420),	-- Arrow of Time
 				})),
 			}),
-			inst(71, {	-- Grim Batol
+			inst_tw(71, {	-- Grim Batol
 				cr(39625, e(131, {	-- General Umbriss
 					i(133283),	-- Modgud's Blade
 					i(133285),	-- Wildhammer Riding Helm
@@ -369,7 +369,7 @@ root("WorldEvents", d(24, {  -- Timewalking
 					i(133300),	-- Mark of Khardros
 				})),
 			}),
-			inst(69, {	-- Lost City of the Tol'vir
+			inst_tw(69, {	-- Lost City of the Tol'vir
 				e(117, {	-- General Husam
 					["crs"] = { 44577 },	-- General Husam
 					["g"] = {
@@ -432,7 +432,7 @@ root("WorldEvents", d(24, {  -- Timewalking
 					},
 				}),
 			}),
-			inst(67, {	-- The Stonecore
+			inst_tw(67, {	-- The Stonecore
 				cr(43438, e(110, {	-- Corborus
 					i(133375),	-- Crackling Geode Mace
 					i(133207),	-- Fist of Pained Senses
@@ -475,7 +475,7 @@ root("WorldEvents", d(24, {  -- Timewalking
 					i(133222),	-- Magnetite Mirror
 				})),
 			}),
-			inst(68, {	-- The Vortex Pinnacle
+			inst_tw(68, {	-- The Vortex Pinnacle
 				cr(43878, e(114, {	-- Grand Vizier Ertan
 					i(133233),	-- Biting Wind
 					i(133234),	-- Headcover of Fog
@@ -512,7 +512,7 @@ root("WorldEvents", d(24, {  -- Timewalking
 					i(133246),	-- Heart of Thunder
 				})),
 			}),
-			inst(65, {	-- Throne of the Tides
+			inst_tw(65, {	-- Throne of the Tides
 				cr(40586, e(101, {	-- Lady Naz'jar
 					i(133179),	-- Lightning Whelk Axe
 					i(133367),	-- Barnacled Shell Buckler

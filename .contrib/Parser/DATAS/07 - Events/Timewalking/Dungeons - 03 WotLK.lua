@@ -5,7 +5,7 @@ root("WorldEvents", d(24, {  -- Timewalking
 		-- ["lvl"] = 71,
 		["g"] = {
 			-- #if AFTER 7.3.5.25600
-			inst(759, {	-- Ulduar
+			inst_tw(759, {	-- Ulduar
 				["isRaid"] = true,
 				["g"] = {
 					n(ZONE_DROPS, {
@@ -494,7 +494,7 @@ root("WorldEvents", d(24, {  -- Timewalking
 				},
 			}),
 			-- #endif
-			inst(271, {	-- Ahn'kahet: The Old Kingdom
+			inst_tw(271, {	-- Ahn'kahet: The Old Kingdom
 				cr(29309, e(580, {	-- Elder Nadox
 					i(127607),	-- Blade of Nadox
 					i(127619),	-- Brood Plague Helmet
@@ -547,7 +547,7 @@ root("WorldEvents", d(24, {  -- Timewalking
 					i(127629),	-- Greaves of Ancient Evil
 				})),
 			}),
-			inst(274, {	-- Gundrak
+			inst_tw(274, {	-- Gundrak
 				cr(29304, e(592, {	-- Slad'ran
 					i(127527),	-- Witch Doctor's Wildstaff
 					i(127538),	-- Wand of Sseratus
@@ -600,7 +600,7 @@ root("WorldEvents", d(24, {  -- Timewalking
 					i(127550),	-- Offering of Sacrifice
 				})),
 			}),
-			inst(275, {	-- Halls of Lightning
+			inst_tw(275, {	-- Halls of Lightning
 				cr(28586, e(597, {	-- General Bjarngrim
 					i(127504),	-- Iron Dwarf Smith Pauldrons
 					i(127506),	-- Traditionally Dyed Handguards
@@ -634,7 +634,7 @@ root("WorldEvents", d(24, {  -- Timewalking
 					i(127522),	-- Woven Bracae Leggings
 				})),
 			}),
-			inst(278, {	-- Pit of Saron
+			inst_tw(278, {	-- Pit of Saron
 				cr(36494, e(608, {	-- Forgemaster Garfrost
 					i(133486),	-- Garfrost's Two-Ton Hammer
 					i(133485),	-- Unspeakable Secret
@@ -667,7 +667,7 @@ root("WorldEvents", d(24, {  -- Timewalking
 					i(133499),	-- Shaggy Wyrmleather Leggings
 				}))
 			}),
-			inst(281, {	-- The Nexus
+			inst_tw(281, {	-- The Nexus
 				a(cr(26798, e(833, {	-- Commander Stoutbeard
 					i(127568),	-- Glacier Sharpened Vileblade [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
 					i(127603),	-- Cloak of the Enemy [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
@@ -729,7 +729,7 @@ root("WorldEvents", d(24, {  -- Timewalking
 					i(127595),	-- Dragon Slayer's Sabatons
 				})),
 			}),
-			inst(286, {	-- Utgarde Pinnacle
+			inst_tw(286, {	-- Utgarde Pinnacle
 				cr(26668, e(641, {	-- Svala Sorrowgrave
 					i(127458),	-- Ritualistic Arthame
 					i(127459),	-- Brazier Igniter

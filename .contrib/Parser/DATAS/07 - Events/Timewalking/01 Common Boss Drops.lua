@@ -6,7 +6,7 @@ local InfiniteTimereaver =
 {
 	d(24, {  -- Timewalking
 		n(COMMON_BOSS_DROPS, {
-			["maps"] = TIMEWALKING_DUNGEON_MAP_IDS,
+			["u"] = TIMEWALKING,
 			["g"] = {
 				i(133543, {	-- Reins of the Infinite Timereaver
 					["crs"] = TIMEWALKING_DUNGEON_CREATURE_IDS,
@@ -15,7 +15,6 @@ local InfiniteTimereaver =
 		}),
 	}),
 };
-_.WorldEvents = InfiniteTimereaver;
 
 -- Post Processors
 table.insert(POST_PROCESSING_FUNCTIONS, function()

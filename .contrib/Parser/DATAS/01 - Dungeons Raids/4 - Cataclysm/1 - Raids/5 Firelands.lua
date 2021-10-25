@@ -802,9 +802,7 @@ _.Instances = { tier(CATA_TIER, {
 			-- #if AFTER 8.2.5.31958
 			d(24, {	-- Timewalking
 				["sym"] = {	-- link in Timewalking content
-					{ "select", "instanceID", 78 },		-- select this instance
-					{ "isnt", "coords" },				-- only the main entry of the instance contains the coords field
-					{ "pop" },							-- pop the instance header
+					{"sub", "tw_instance", 78 },	-- this instance version of timewalking
 				},
 			}),
 			-- #endif

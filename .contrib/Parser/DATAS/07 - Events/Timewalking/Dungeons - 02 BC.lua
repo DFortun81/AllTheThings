@@ -5,7 +5,7 @@ root("WorldEvents", d(24, {  -- Timewalking
 		-- ["lvl"] = 71,
 		["g"] = {
 			-- #if AFTER 7.2.5.23910
-			inst(751, {	-- The Black Temple
+			inst_tw(751, {	-- The Black Temple
 				["isRaid"] = true,
 				["g"] = {
 					cr(22887, e(1582, {	-- High Warlord Naj'entus
@@ -183,7 +183,7 @@ root("WorldEvents", d(24, {  -- Timewalking
 				},
 			}),
 			-- #endif
-			inst(249, {	-- Magisters' Terrace
+			inst_tw(249, {	-- Magisters' Terrace
 				n(COMMON_BOSS_DROPS, {
 					i(35275, {	-- Orb of Sin'dorei
 						["crs"] = {
@@ -265,7 +265,7 @@ root("WorldEvents", d(24, {  -- Timewalking
 					},
 				}),
 			}),
-			inst(250, {	-- Mana Tombs
+			inst_tw(250, {	-- Mana Tombs
 				e(534, {	-- Pandemonius
 					["creatureID"] = 18341,
 					["groups"] = {
@@ -346,7 +346,7 @@ root("WorldEvents", d(24, {  -- Timewalking
 					},
 				}),
 			}),
-			inst(254, {	-- The Arcatraz
+			inst_tw(254, {	-- The Arcatraz
 				e(548, {	-- Zereketh the Unbound
 					["creatureID"] = 20870,
 					["groups"] = {
@@ -399,7 +399,7 @@ root("WorldEvents", d(24, {  -- Timewalking
 					},
 				}),
 			}),
-			inst(255, {	-- The Black Morass
+			inst_tw(255, {	-- The Black Morass
 				e(552, {	-- Chrono Lord Deja
 					["creatureID"] = 17879,
 					["groups"] = {
@@ -462,7 +462,7 @@ root("WorldEvents", d(24, {  -- Timewalking
 					},
 				}),
 			}),
-			inst(259, {	-- The Shattered Halls
+			inst_tw(259, {	-- The Shattered Halls
 				e(566, {	-- Grand Warlock Nethekurse
 					["creatureID"] = 16807,
 					["groups"] = {
@@ -514,7 +514,7 @@ root("WorldEvents", d(24, {  -- Timewalking
 					},
 				}),
 			}),
-			inst(260, {	-- The Slave Pens
+			inst_tw(260, {	-- The Slave Pens
 				e(570, {	-- Mennu the Betrayer
 					["creatureID"] = 17941,
 					["groups"] = {

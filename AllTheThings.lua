@@ -2856,12 +2856,24 @@ subroutines = {
 			{"is", "itemID"},	-- Only Items
 		}
 	end,
+	-- TW Instance
+	["tw_instance"] = function(instanceID)
+		return  {
+			{"select", "itemID", 133543},			-- Infinite Timereaver
+			{"postprocess"},						-- de-duplicate
+			{"push", "headerID", -1},				-- Push into 'Common Boss Drops' header
+			{"finalize"},							-- capture current results
+			{"select", "instanceID", instanceID},	-- select this instance
+			{"where", "u", 1016},					-- only the instance which is marked as TIMEWALKING
+			{"pop"},								-- pop the instance header
+		}
+	end,
 	-- Wod Dungeon
 	["common_wod_dungeon_drop"] = function(difficultyID, headerID)
 		return {
 			{"select", "headerID", -23},				-- Common Dungeon Drops
 			{"pop"},									-- Discard the Header and acquire all of their children.
-			{"where", "difficultyID", difficultyID},	-- Normal/Heroic/Mythic/Timewalking
+			{"where", "difficultyID", difficultyID},	-- Normal/Heroic/Mythic/Timewajust 	jsutlking
 			{"pop"},									-- Discard the Diffculty Header and acquire all of their children.
 			{"where", "headerID", headerID},			-- Head/Shoulder/Chest/Legs/Feet/Wrist/Hands/Waist
 			{"pop"},									-- Discard the Header and acquire all of their children.
@@ -2871,7 +2883,7 @@ subroutines = {
 	["common_wod_dungeon_drop_tw"] = function(difficultyID, headerID)
 		return {
 			{"select", "headerID", -23},				-- Common Dungeon Drops
-			{"isnt", "description"},					-- Not normal Common Drops
+			{"where", "u", 1016 },						-- only the Common Dungeon Drops which is marked as TIMEWALKING
 			{"pop"},									-- Discard the Header and acquire all of their children.
 			{"where", "headerID", headerID},			-- Head/Shoulder/Chest/Legs/Feet/Wrist/Hands/Waist
 			{"pop"},									-- Discard the Header and acquire all of their children.
@@ -2908,7 +2920,7 @@ ResolveSymbolicLink = function(o)
 		local searchResults, finalized = {}, {};
 		for j,sym in ipairs(o.sym) do
 			local cmd = sym[1];
-			-- if app.DEBUG_PRINT then print("Resolving Symbolic Link '",cmd,"' with [",sym[2],"] & [",sym[3],"] for",o.key,o.key and o[o.key]) end
+			-- if app.DEBUG_PRINT then print("sym: '",cmd,"' with [",sym[2],"] & [",sym[3],"] for",o.key,o.key and o[o.key]) end
 			if cmd == "select" then
 				-- Instruction to search the full database for something.
 				local cache = app.SearchForField(sym[2], sym[3]);
@@ -3223,10 +3235,10 @@ ResolveSymbolicLink = function(o)
 				-- if somehow the symlink pulls in the same item as used as the source of the symlink, then 'pop' that item
 				if s == o or (s.itemID and s.g and s.key == o.key and s[s.key] == o[o.key]) then
 					for _,g in ipairs(s.g) do
-						tinsert(finalized, g);
+						tinsert(finalized, FillSymLinks(g));
 					end
 				else
-					tinsert(finalized, s);
+					tinsert(finalized, FillSymLinks(s));
 				end
 			end
 		end

@@ -4,7 +4,7 @@ root("WorldEvents", d(24, {  -- Timewalking
 	tier(MOP_TIER, {
 		-- ["lvl"] = 71,
 		["g"] = {
-			inst(303, {	-- Gate of the Setting Sun
+			inst_tw(303, {	-- Gate of the Setting Sun
 				cr(56906, e(655, {	-- Saboteur Kip'tilak
 					i(144018),	-- Fallout-Filtering Hood
 					i(144102),	-- Pendant of Precise Timing
@@ -40,7 +40,7 @@ root("WorldEvents", d(24, {  -- Timewalking
 					i(143984),	-- Treads of Fixation
 				})),
 			}),
-			inst(321, {	-- Mogu'shan Palace
+			inst_tw(321, {	-- Mogu'shan Palace
 				e(708, {	-- Trial of the King (Ming the Cunning; 61442 Kuai the Brute, 61445 Haiyan the Unstoppable)
 					["crs"] = {
 						61445,	-- Haiyan the Unstoppable
@@ -82,7 +82,7 @@ root("WorldEvents", d(24, {  -- Timewalking
 					},
 				}),
 			}),
-			inst(312, {	-- Shado-Pan Monastery
+			inst_tw(312, {	-- Shado-Pan Monastery
 				cr(56747, e(673, {	-- Gu Cloudstrike
 					i(144127),	-- Cloudstrike Pendant
 					i(143961),	-- Azure Serpent Chestguard
@@ -118,7 +118,7 @@ root("WorldEvents", d(24, {  -- Timewalking
 					i(144132),	-- Seal of Hateful Meditation
 				})),
 			}),
-			inst(324, {	-- Siege of Niuzao Temple
+			inst_tw(324, {	-- Siege of Niuzao Temple
 				cr(61567, e(693, {	-- Vizier Jin'bak
 					i(144022),	-- Hood of Viridian Residue
 					i(144162),	-- Engraved Amber Pendant
@@ -154,7 +154,7 @@ root("WorldEvents", d(24, {  -- Timewalking
 					i(143997),	-- Anchoring Sabatons
 				})),
 			}),
-			inst(302, {	-- Stormstout Brewery
+			inst_tw(302, {	-- Stormstout Brewery
 				cr(56637, e(668, {	-- Ook-Ook
 					i(144084),	-- Ook's Hozen Slicer
 					i(143957),	-- Nimbletoe Chestguard
@@ -183,7 +183,7 @@ root("WorldEvents", d(24, {  -- Timewalking
 					i(144122),	-- Carbonic Carbuncle
 				})),
 			}),
-			inst(313, {	-- Temple of the Jade Serpent
+			inst_tw(313, {	-- Temple of the Jade Serpent
 				cr(56448, e(672, {	-- Wise Mari
 					i(144017),	-- Waterburst Helm
 					i(144111),	-- Wind-Soaked

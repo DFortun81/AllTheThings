@@ -894,9 +894,7 @@ _.Instances = { tier(WOTLK_TIER, {
 			-- #if AFTER 7.3.5.25600
 			d(24, {	-- Timewalking
 				["sym"] = {	-- link in Timewalking content
-					{ "select", "instanceID", 759 },	-- select this instance
-					{ "isnt", "coords" },				-- only the main entry of the instance contains the coords field
-					{ "pop" },							-- pop the instance header
+					{"sub", "tw_instance", 759 },	-- this instance version of timewalking
 				},
 			}),
 			-- #endif

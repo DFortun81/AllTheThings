@@ -1013,15 +1013,6 @@ _.Instances = {
 						i(109777),	-- Unsullied Signet
 					})),
 				}),
-				-- #if AFTER 8.1.5.29701
-				d(24, {	-- Timewalking
-					["sym"] = {	-- link in Timewalking content
-						{ "select", "headerID", -23 },
-						{ "isnt", "description" },
-						{ "pop" },
-					},
-				}),
-				-- #endif
 			},
 		}),
 	}),

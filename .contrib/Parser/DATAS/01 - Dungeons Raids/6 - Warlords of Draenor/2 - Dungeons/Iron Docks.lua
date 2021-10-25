@@ -226,9 +226,7 @@ _.Instances = { tier(WOD_TIER, {
 			-- #if AFTER 8.1.5.29701
 			d(24, {	-- Timewalking
 				["sym"] = {	-- link in Timewalking content
-					{ "select", "instanceID", 558 },	-- select this instance
-					{ "isnt", "coords" },				-- only the main entry of the instance contains the coords field
-					{ "pop" },							-- pop the instance header
+					{"sub", "tw_instance", 558 },	-- this instance version of timewalking
 				},
 			}),
 			-- #endif

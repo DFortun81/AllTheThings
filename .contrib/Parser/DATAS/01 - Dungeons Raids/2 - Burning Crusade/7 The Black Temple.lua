@@ -413,9 +413,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 				["u"] = LEGION_PHASE_ONE,
 				-- #endif
 				["sym"] = {	-- link in Timewalking content
-					{ "select", "instanceID", 751 },	-- select this instance
-					{ "isnt", "coords" },				-- only the main entry of the instance contains the coords field
-					{ "pop" },							-- pop the instance header
+					{"sub", "tw_instance", 751 },	-- this instance version of timewalking
 				},
 			}),
 			-- #endif
