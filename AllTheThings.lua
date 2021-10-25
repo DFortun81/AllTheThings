@@ -7738,13 +7738,21 @@ end
 local cache = app.CreateCache("factionID");
 local function CacheFactionInfo(t)
 	local _t, id = cache.GetCached(t);
-	local name, description = GetFactionInfoByID(id);
+	local name, lore = GetFactionInfoByID(id);
 	_t.name = name or (t.creatureID and NPCNameFromID[t.creatureID]) or (FACTION .. " #" .. id);
-	_t.description = description or L["FACTION_SPECIFIC_REP"];
+	if lore then
+		_t.lore = lore;
+	else
+		_t.description = L["FACTION_SPECIFIC_REP"];
+	end
 	if t.isFriend then
 		local friendship = select(5, GetFriendshipReputation(id));
 		if friendship then
-		 	_t.description = _t.description.."\n\n"..friendship;
+			if _t.lore then
+		 		_t.lore = _t.lore.."\n\n"..friendship;
+			else
+		 		_t.lore = friendship;
+			end
 		 end
 	end
 end
@@ -7755,6 +7763,10 @@ end
 local function default_description(t)
 	CacheFactionInfo(t);
 	return cache.GetCachedField(t, "description");
+end
+local function default_lore(t)
+	CacheFactionInfo(t);
+	return cache.GetCachedField(t, "lore");
 end
 local fields = {
 	["key"] = function(t)
@@ -7768,6 +7780,9 @@ local fields = {
 	end,
 	["description"] = function(t)
 		return cache.GetCachedField(t, "description", default_description);
+	end,
+	["lore"] = function(t)
+		return cache.GetCachedField(t, "lore", default_lore);
 	end,
 	["icon"] = function(t)
 		return t.achievementID and select(10, GetAchievementInfo(t.achievementID))
