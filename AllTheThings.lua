@@ -14676,21 +14676,20 @@ RowOnEnter = function (self)
 		end
 
 		-- ROW DEBUGGING
+		-- GameTooltip:AddDoubleLine("Self",tostring(reference));
+		-- GameTooltip:AddLine("-- Ref Fields:");
+		-- for key,val in pairs(reference) do
+		-- 	GameTooltip:AddDoubleLine(key,tostring(val));
+		-- end
 		-- local fields = {
 		-- 	"__type",
-
-		-- 	"collectible",
-		-- 	"collected",
-		-- 	"collectibleAsCost",
-		-- 	"collectedAsCost",
-		-- 	"nmc",
-		-- 	"nmr",
 		-- };
-
+		-- GameTooltip:AddLine("-- Extra Fields:");
 		-- for _,key in ipairs(fields) do
 		-- 	GameTooltip:AddDoubleLine(key,tostring(reference[key]));
 		-- end
 		-- GameTooltip:AddDoubleLine("Row Indent",tostring(CalculateRowIndent(reference)));
+		-- END DEBUGGING
 
 		-- print("OnRowEnter-Show");
 		GameTooltip.MiscFieldsComplete = true;
