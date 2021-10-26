@@ -184,51 +184,13 @@ _.Instances = { tier(MOP_TIER, {
 					}),
 				},
 			}),
+			-- #if AFTER 7.1.5.23360
 			d(24, {	-- Timewalking
-				["lvl"] = 91,
-				["g"] = {
-					e(708, {	-- Trial of the King (Ming the Cunning; 61442 Kuai the Brute, 61445 Haiyan the Unstoppable)
-						["crs"] = {
-							61445,	-- Haiyan the Unstoppable
-							61442,	-- Kuai the Brute
-							61444,	-- Ming the Cunning
-						},
-						["g"] = {
-							i(144020),	-- Crest of the Clan Lords
-							i(144021),	-- Meteoric Greathelm
-							i(144144),	-- Whirling Dervish Choker
-							i(144145),	-- Conflagrating Gloves
-							i(144143),	-- Hurricane Belt
-						},
-					}),
-					e(690, {	-- Gekkan
-						["crs"] = { 61243 },	-- Gekkan
-						["g"] = {
-							i(144148),	-- Claws of Gekkan
-							i(144147),	-- Cloak of Cleansing Flames
-							i(144149),	-- Hexxer's Lethargic Gloves
-							i(143992),	-- Glintrok Sollerets
-							i(144146),	-- Iron Protector Talisman
-						},
-					}),
-					e(698, {	-- Xin the Weaponmaster
-						["crs"] = { 61398 },	-- Xin the Weaponmaster
-						["g"] = {
-							i(144150),	-- Ghostheart
-							i(144214),	-- Mogu'Dar, Blade of the Thousand Slaves
-							i(144154),	-- Firescribe Dagger
-							i(144155),	-- Firescribe Dagger
-							i(143995),	-- Regal Silk Shoulderpads
-							i(143956),	-- Mind's Eye Breastplate
-							i(144153),	-- Groundshaker Bracer
-							i(144151),	-- Axebreaker Gauntlets
-							i(143993),	-- Boots of Plummeting Death
-							i(143994),	-- Soulbinder Treads
-							i(144152),	-- Blade Trap Signet
-						},
-					}),
+				["sym"] = {	-- link in Timewalking content
+					{"sub", "tw_instance", 321 },	-- this instance version of timewalking
 				},
 			}),
+			-- #endif
 		},
 	}),
 })};

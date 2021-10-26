@@ -1,9 +1,9 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-_.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
-	n(-420, {	-- Tier 0.5 Sets
-		["description"] = "The Dungeon Set 2 class sets, commonly referred to as Tier 0.5, are obtained by completing a long quest chain to upgrade the first set available as drops in end game dungeons into stronger versions of themselves. In current WoW, these sets are covetted by Collectors as the quest chain was completely removed from the game with Cataclysm. In WoW Classic, you should finish this quest chain on all of your characters before then!",
+root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
+	bubbleDown({ ["timeline"] = { "removed 4.0.3" } }, n(-420, {	-- Tier 0.5 Sets
+		["lore"] = "The Dungeon Set 2 class sets, commonly referred to as Tier 0.5, are obtained by completing a long quest chain to upgrade the first set available as drops in end game dungeons into stronger versions of themselves. In current WoW, these sets are covetted by Collectors as the quest chain was completely removed from the game with Cataclysm. In WoW Classic, you should finish this quest chain on all of your characters before then!",
 		["groups"] = {
 			cl(DRUID, {
 				q(8905,	{	-- An Earnest Proposition [ALLIANCE]
@@ -11,7 +11,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
 					["cost"] = {
-						{ "i", 21928, 15 },	-- Winterspring Blood Sample
 						{ "i", 16714, 1 },	-- Wildheart Bracers
 						{ "g", 200000 },	-- 20g
 					},
@@ -19,6 +18,9 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
+						objective(1, {	-- 0/15 Winterspring Blood Sample
+							["provider"] = { "i", 21928 },	-- Winterspring Blood Sample
+						}),
 						i(22108),	-- Feralheart Bracers
 					},
 				}),
@@ -27,7 +29,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					["maps"] = { SILITHUS, SCHOLOMANCE, STRATHOLME },
 					["cost"] = {
-						{ "i", 22381, 15 },	-- Silithus Venom Sample
 						{ "i", 16714, 1 },	-- Wildheart Bracers
 						{ "g", 200000 },	-- 20g
 					},
@@ -35,6 +36,9 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
+						objective(1, {	-- 0/15 Silithus Venom Sample
+							["provider"] = { "i", 22381 },	-- Silithus Venom Sample
+						}),
 						i(22108),	-- Feralheart Bracers
 					},
 				}),
@@ -46,7 +50,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["classes"] = { DRUID },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
-						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
 						{ "i", 16715, 1 },	-- Wildheart Boots
 						{ "i", 16719, 1 },	-- Wildheart Kilt
 						{ "i", 16718, 1 },	-- Wildheart Spaulders
@@ -66,7 +69,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["classes"] = { DRUID },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
-						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
 						{ "i", 16715, 1 },	-- Wildheart Boots
 						{ "i", 16719, 1 },	-- Wildheart Kilt
 						{ "i", 16718, 1 },	-- Wildheart Spaulders
@@ -153,7 +155,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["maps"] = { WINTERSPRING, BLACKROCK_SPIRE, STRATHOLME },
 					["cost"] = {
-						{ "i", 21928, 15 },	-- Winterspring Blood Sample
 						{ "i", 16681, 1 },	-- Beaststalker's Bindings
 						{ "g", 200000 },	-- 20g
 					},
@@ -161,6 +162,9 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
+						objective(1, {	-- 0/15 Winterspring Blood Sample
+							["provider"] = { "i", 21928 },	-- Winterspring Blood Sample
+						}),
 						i(22011),	-- Beastmaster's Bindings
 					},
 				}),
@@ -169,7 +173,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					["maps"] = { SILITHUS, BLACKROCK_SPIRE, STRATHOLME },
 					["cost"] = {
-						{ "i", 22381, 15 },	-- Silithus Venom Sample
 						{ "i", 16681, 1 },	-- Beaststalker's Bindings
 						{ "g", 200000 },	-- 20g
 					},
@@ -177,6 +180,9 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
+						objective(1, {	-- 0/15 Silithus Venom Sample
+							["provider"] = { "i", 22381 },	-- Silithus Venom Sample
+						}),
 						i(22011),	-- Beastmaster's Bindings
 					},
 				}),
@@ -188,7 +194,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["classes"] = { HUNTER },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
-						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
 						{ "i", 16675, 1 },	-- Beaststalker's Boots
 						{ "i", 16678, 1 },	-- Beaststalker's Pants
 						{ "i", 16679, 1 },	-- Beaststalker's Mantle
@@ -208,7 +213,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["classes"] = { HUNTER },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
-						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
 						{ "i", 16675, 1 },	-- Beaststalker's Boots
 						{ "i", 16678, 1 },	-- Beaststalker's Pants
 						{ "i", 16679, 1 },	-- Beaststalker's Mantle
@@ -295,7 +299,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["maps"] = { WINTERSPRING, BLACKROCK_SPIRE },
 					["cost"] = {
-						{ "i", 21928, 15 },	-- Winterspring Blood Sample
 						{ "i", 16683, 1 },	-- Magister's Bindings
 						{ "g", 200000 },	-- 20g
 					},
@@ -303,6 +306,9 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
+						objective(1, {	-- 0/15 Winterspring Blood Sample
+							["provider"] = { "i", 21928 },	-- Winterspring Blood Sample
+						}),
 						i(22063),	-- Sorcerer's Bindings
 					},
 				}),
@@ -311,7 +317,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					["maps"] = { SILITHUS, BLACKROCK_SPIRE },
 					["cost"] = {
-						{ "i", 22381, 15 },	-- Silithus Venom Sample
 						{ "i", 16683, 1 },	-- Magister's Bindings
 						{ "g", 200000 },	-- 20g
 					},
@@ -319,6 +324,9 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
+						objective(1, {	-- 0/15 Silithus Venom Sample
+							["provider"] = { "i", 22381 },	-- Silithus Venom Sample
+						}),
 						i(22063),	-- Sorcerer's Bindings
 					},
 				}),
@@ -330,7 +338,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["classes"] = { MAGE },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
-						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
 						{ "i", 16682, 1 },	-- Magister's Boots
 						{ "i", 16687, 1 },	-- Magister's Leggings
 						{ "i", 16689, 1 },	-- Magister's Mantle
@@ -350,7 +357,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
-						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
 						{ "i", 16682, 1 },	-- Magister's Boots
 						{ "i", 16687, 1 },	-- Magister's Leggings
 						{ "i", 16689, 1 },	-- Magister's Mantle
@@ -437,7 +443,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["maps"] = { WINTERSPRING, SCHOLOMANCE },
 					["cost"] = {
-						{ "i", 21928, 15 },	-- Winterspring Blood Sample
 						{ "i", 16722, 1 },	-- Lightforge Bracers
 						{ "g", 200000 },	-- 20g
 					},
@@ -445,6 +450,9 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
+						objective(1, {	-- 0/15 Winterspring Blood Sample
+							["provider"] = { "i", 21928 },	-- Winterspring Blood Sample
+						}),
 						i(22088),	-- Soulforge Bracers
 					},
 				}),
@@ -453,7 +461,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					["maps"] = { SILITHUS, BLACKROCK_SPIRE },
 					["cost"] = {
-						{ "i", 22381, 15 },	-- Silithus Venom Sample
 						{ "i", 16722, 1 },	-- Lightforge Bracers
 						{ "g", 200000 },	-- 20g
 					},
@@ -464,6 +471,9 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					-- #endif
 					["lvl"] = 58,
 					["groups"] = {
+						objective(1, {	-- 0/15 Silithus Venom Sample
+							["provider"] = { "i", 22381 },	-- Silithus Venom Sample
+						}),
 						i(22088),	-- Soulforge Bracers
 					},
 				}),
@@ -475,7 +485,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
-						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
 						{ "i", 16725, 1 },	-- Lightforge Boots
 						{ "i", 16728, 1 },	-- Lightforge Legplates
 						{ "i", 16729, 1 },	-- Lightforge Spaulders
@@ -495,7 +504,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["classes"] = { PALADIN },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
-						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
 						{ "i", 16725, 1 },	-- Lightforge Boots
 						{ "i", 16728, 1 },	-- Lightforge Legplates
 						{ "i", 16729, 1 },	-- Lightforge Spaulders
@@ -588,7 +596,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["maps"] = { WINTERSPRING, STRATHOLME },
 					["cost"] = {
-						{ "i", 21928, 15 },	-- Winterspring Blood Sample
 						{ "i", 16697, 1 },	-- Devout Bracers
 						{ "g", 200000 },	-- 20g
 					},
@@ -596,6 +603,9 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
+						objective(1, {	-- 0/15 Winterspring Blood Sample
+							["provider"] = { "i", 21928 },	-- Winterspring Blood Sample
+						}),
 						i(22079),	-- Virtuous Bracers
 					},
 				}),
@@ -604,7 +614,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					["maps"] = { SILITHUS, STRATHOLME },
 					["cost"] = {
-						{ "i", 22381, 15 },	-- Silithus Venom Sample
 						{ "i", 16697, 1 },	-- Devout Bracers
 						{ "g", 200000 },	-- 20g
 					},
@@ -612,6 +621,9 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
+						objective(1, {	-- 0/15 Silithus Venom Sample
+							["provider"] = { "i", 22381 },	-- Silithus Venom Sample
+						}),
 						i(22079),	-- Virtuous Bracers
 					},
 				}),
@@ -623,7 +635,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["classes"] = { PRIEST },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
-						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
 						{ "i", 16691, 1 },	-- Devout Sandals
 						{ "i", 16694, 1 },	-- Devout Skirt
 						{ "i", 16695, 1 },	-- Devout Mantle
@@ -643,7 +654,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["classes"] = { PRIEST },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
-						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
 						{ "i", 16691, 1 },	-- Devout Sandals
 						{ "i", 16694, 1 },	-- Devout Skirt
 						{ "i", 16695, 1 },	-- Devout Mantle
@@ -730,7 +740,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
 					["cost"] = {
-						{ "i", 21928, 15 },	-- Winterspring Blood Sample
 						{ "i", 16710, 1 },	-- Shadowcraft Bracers
 						{ "g", 200000 },	-- 20g
 					},
@@ -738,6 +747,9 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
+						objective(1, {	-- 0/15 Winterspring Blood Sample
+							["provider"] = { "i", 21928 },	-- Winterspring Blood Sample
+						}),
 						i(22004),	-- Darkmantle Bracers
 					},
 				}),
@@ -746,7 +758,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					["maps"] = { SILITHUS, SCHOLOMANCE, STRATHOLME },
 					["cost"] = {
-						{ "i", 22381, 15 },	-- Silithus Venom Sample
 						{ "i", 16710, 1 },	-- Shadowcraft Bracers
 						{ "g", 200000 },	-- 20g
 					},
@@ -754,6 +765,9 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
+						objective(1, {	-- 0/15 Silithus Venom Sample
+							["provider"] = { "i", 22381 },	-- Silithus Venom Sample
+						}),
 						i(22004),	-- Darkmantle Bracers
 					},
 				}),
@@ -765,7 +779,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["classes"] = { ROGUE },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
-						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
 						{ "i", 16711, 1 },	-- Shadowcraft Boots
 						{ "i", 16709, 1 },	-- Shadowcraft Pants
 						{ "i", 16708, 1 },	-- Shadowcraft Spaulders
@@ -785,7 +798,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
-						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
 						{ "i", 16711, 1 },	-- Shadowcraft Boots
 						{ "i", 16709, 1 },	-- Shadowcraft Pants
 						{ "i", 16708, 1 },	-- Shadowcraft Spaulders
@@ -872,7 +884,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
 					["cost"] = {
-						{ "i", 21928, 15 },	-- Winterspring Blood Sample
 						{ "i", 16671, 1 },	-- Bindings of Elements
 						{ "g", 200000 },	-- 20g
 					},
@@ -883,6 +894,9 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					-- #endif
 					["lvl"] = 58,
 					["groups"] = {
+						objective(1, {	-- 0/15 Winterspring Blood Sample
+							["provider"] = { "i", 21928 },	-- Winterspring Blood Sample
+						}),
 						i(22095),	-- Bindings of The Five Thunders
 					},
 				}),
@@ -891,7 +905,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					["maps"] = { SILITHUS, SCHOLOMANCE, STRATHOLME },
 					["cost"] = {
-						{ "i", 22381, 15 },	-- Silithus Venom Sample
 						{ "i", 16671, 1 },	-- Bindings of Elements
 						{ "g", 200000 },	-- 20g
 					},
@@ -899,6 +912,9 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
+						objective(1, {	-- 0/15 Silithus Venom Sample
+							["provider"] = { "i", 22381 },	-- Silithus Venom Sample
+						}),
 						i(22095),	-- Bindings of The Five Thunders
 					},
 				}),
@@ -910,7 +926,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["classes"] = { SHAMAN },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
-						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
 						{ "i", 16670, 1 },	-- Boots of Elements
 						{ "i", 16668, 1 },	-- Kilt of Elements
 						{ "i", 16669, 1 },	-- Pauldrons of Elements
@@ -933,7 +948,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
-						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
 						{ "i", 16670, 1 },	-- Boots of Elements
 						{ "i", 16668, 1 },	-- Kilt of Elements
 						{ "i", 16669, 1 },	-- Pauldrons of Elements
@@ -1026,7 +1040,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["maps"] = { WINTERSPRING, BLACKROCK_SPIRE },
 					["cost"] = {
-						{ "i", 21928, 15 },	-- Winterspring Blood Sample
 						{ "i", 16703, 1 },	-- Dreadmist Bracers
 						{ "g", 200000 },	-- 20g
 					},
@@ -1034,6 +1047,9 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
+						objective(1, {	-- 0/15 Winterspring Blood Sample
+							["provider"] = { "i", 21928 },	-- Winterspring Blood Sample
+						}),
 						i(22071),	-- Deathmist Bracers
 					},
 				}),
@@ -1042,7 +1058,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					["maps"] = { SILITHUS, BLACKROCK_SPIRE },
 					["cost"] = {
-						{ "i", 22381, 15 },	-- Silithus Venom Sample
 						{ "i", 16703, 1 },	-- Dreadmist Bracers
 						{ "g", 200000 },	-- 20g
 					},
@@ -1050,6 +1065,9 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
+						objective(1, {	-- 0/15 Silithus Venom Sample
+							["provider"] = { "i", 22381 },	-- Silithus Venom Sample
+						}),
 						i(22071),	-- Deathmist Bracers
 					},
 				}),
@@ -1061,7 +1079,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["classes"] = { WARLOCK },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
-						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
 						{ "i", 16704, 1 },	-- Dreadmist Sandals
 						{ "i", 16699, 1 },	-- Dreadmist Leggings
 						{ "i", 16701, 1 },	-- Dreadmist Mantle
@@ -1081,7 +1098,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
-						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
 						{ "i", 16704, 1 },	-- Dreadmist Sandals
 						{ "i", 16699, 1 },	-- Dreadmist Leggings
 						{ "i", 16701, 1 },	-- Dreadmist Mantle
@@ -1168,7 +1184,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["maps"] = { WINTERSPRING, BLACKROCK_SPIRE },
 					["cost"] = {
-						{ "i", 21928, 15 },	-- Winterspring Blood Sample
 						{ "i", 16735, 1 },	-- Bracers of Valor
 						{ "g", 200000 },	-- 20g
 					},
@@ -1176,6 +1191,9 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
+						objective(1, {	-- 0/15 Winterspring Blood Sample
+							["provider"] = { "i", 21928 },	-- Winterspring Blood Sample
+						}),
 						i(21996),	-- Bracers of Heroism
 					},
 				}),
@@ -1184,7 +1202,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					["maps"] = { SILITHUS, BLACKROCK_SPIRE },
 					["cost"] = {
-						{ "i", 22381, 15 },	-- Silithus Venom Sample
 						{ "i", 16735, 1 },	-- Bracers of Valor
 						{ "g", 200000 },	-- 20g
 					},
@@ -1192,6 +1209,9 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
+						objective(1, {	-- 0/15 Silithus Venom Sample
+							["provider"] = { "i", 22381 },	-- Silithus Venom Sample
+						}),
 						i(21996),	-- Bracers of Heroism
 					},
 				}),
@@ -1203,7 +1223,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
-						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
 						{ "i", 16734, 1 },	-- Boots of Valor
 						{ "i", 16732, 1 },	-- Legplates of Valor
 						{ "i", 16733, 1 },	-- Spaulders of Valor
@@ -1223,7 +1242,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
-						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
 						{ "i", 16734, 1 },	-- Boots of Valor
 						{ "i", 16732, 1 },	-- Legplates of Valor
 						{ "i", 16733, 1 },	-- Spaulders of Valor
@@ -1310,17 +1328,13 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["sourceQuest"] = 8924,	-- Hunting for Ectoplasm
 					["coord"] = { 52.4, 27.2, TANARIS },
 					["maps"] = { BURNING_STEPPES },
-					["cost"] = {
-						{ "i", 21938, 1 },	-- Magma Core
-					},
 					["lvl"] = 58,
 					["groups"] = {
-						{
-							["itemID"] = 21938,	-- Magma Core
-							["questID"] = 8925,	-- A Portable Power Source
-							["cr"] = 16043,	-- Magma Lord Bokk
+						objective(1, {	-- 0/1 Magma Core
+							["provider"] = { "i", 21938 },	-- Magma Core
 							["coord"] = { 36.0, 56.4, BURNING_STEPPES },
-						},
+							["cr"] = 16043,	-- Magma Lord Bokk
+						}),
 					},
 				}),
 				q(8928, {	-- A Shifty Merchant
@@ -1385,6 +1399,24 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					},
 					["lvl"] = 58,
 				}),
+				q(9030, {	-- Anthion's Parting Words
+					["qg"] = 16013,	-- Deliana
+					["altQuests"] = {
+						8951,	-- Anthion's Parting Words [ALLIANCE]
+						8952,	-- Anthion's Parting Words [ALLIANCE]
+						8953,	-- Anthion's Parting Words [ALLIANCE]
+						8954,	-- Anthion's Parting Words [ALLIANCE]
+						8955,	-- Anthion's Parting Words [ALLIANCE]
+						8956,	-- Anthion's Parting Words [ALLIANCE]
+						8958,	-- Anthion's Parting Words [ALLIANCE]
+						8959,	-- Anthion's Parting Words [ALLIANCE]
+						10496,	-- Anthion's Parting Words [ALLIANCE]
+					},
+					["coord"] = { 43.53, 52.64, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 58,
+				}),
 				q(8947, {	-- Anthion's Strange Request
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 8946,	-- Proof of Life
@@ -1433,24 +1465,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					},
 					["lvl"] = 58,
 				}),
-				q(9030, {	-- Anthion's Parting Words [ALLIANCE]
-					["qg"] = 16013,	-- Deliana
-					["altQuests"] = {
-						8951,	-- Anthion's Parting Words [ALLIANCE]
-						8952,	-- Anthion's Parting Words [ALLIANCE]
-						8953,	-- Anthion's Parting Words [ALLIANCE]
-						8954,	-- Anthion's Parting Words [ALLIANCE]
-						8955,	-- Anthion's Parting Words [ALLIANCE]
-						8956,	-- Anthion's Parting Words [ALLIANCE]
-						8958,	-- Anthion's Parting Words [ALLIANCE]
-						8959,	-- Anthion's Parting Words [ALLIANCE]
-						10496,	-- Anthion's Parting Words [ALLIANCE]
-					},
-					["coord"] = { 43.53, 52.64, IRONFORGE },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-					["lvl"] = 58,
-				}),
 				q(9032, {	-- Bodley's Unfortunate Fate [HORDE]
 					["qg"] = 16012,	-- Mokvar
 					["sourceQuests"] = {
@@ -1480,9 +1494,13 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["classes"] = { WARRIOR, MAGE },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-						{ "i", 22226, 1 },	-- Druidical Remains
 					},
 					["lvl"] = 58,
+					["groups"] = {
+						objective(1, {	-- 0/1 Druidical Remains
+							["provider"] = { "i", 22226 },	-- Druidical Remains
+						}),
+					},
 				}),
 				q(8963, {	-- Components of Importance [WARLOCK, DRUID]
 					["qg"] = 16033,	-- Bodley
@@ -1491,9 +1509,13 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["classes"] = { WARLOCK, DRUID },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-						{ "i", 22227, 1 },	-- Starbreeze Village Relic
 					},
 					["lvl"] = 58,
+					["groups"] = {
+						objective(1, {	-- 0/1 Starbreeze Village Relic
+							["provider"] = { "i", 22227 },	-- Starbreeze Village Relic
+						}),
+					},
 				}),
 				q(8964, {	-- Components of Importance [HUNTER, ROGUE]
 					["qg"] = 16033,	-- Bodley
@@ -1502,9 +1524,13 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["classes"] = { HUNTER, ROGUE },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-						{ "i", 22228, 1 },	-- Brilliant Sword of Zealotry
 					},
 					["lvl"] = 58,
+					["groups"] = {
+						objective(1, {	-- 0/1 Brilliant Sword of Zealotry
+							["provider"] = { "i", 22228 },	-- Brilliant Sword of Zealotry
+						}),
+					},
 				}),
 				q(8965, {	-- Components of Importance [PALADIN, PRIEST, SHAMAN]
 					["qg"] = 16033,	-- Bodley
@@ -1513,9 +1539,13 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["classes"] = { PALADIN, PRIEST, SHAMAN },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-						{ "i", 22229, 1 },	-- Soul Ashes of the Banished
 					},
 					["lvl"] = 58,
+					["groups"] = {
+						objective(1, {	-- 0/1 Soul Ashes of the Banished
+							["provider"] = { "i", 22229 },	-- Soul Ashes of the Banished
+						}),
+					},
 				}),
 				q(8945, {	-- Dead Man's Plea
 					["qg"] = 16016,	-- Anthion Harmon
@@ -1534,11 +1564,11 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16032,	-- Falrin Treeshaper
 					["sourceQuest"] = 8948,	-- Anthion's Old Friend
 					["maps"] = { DIRE_MAUL, BLACKROCK_SPIRE },
-					["cost"] = {
-						{ "i", 21982, 25 },	-- Ogre Warbeads
-					},
 					["lvl"] = 58,
 					["groups"] = {
+						objective(1, {	-- 0/25 Ogre Warbeads
+							["provider"] = { "i", 21982 },	-- Ogre Warbeads
+						}),
 						i(22150),	-- Beads of Ogre Might
 						i(22149),	-- Beads of Ogre Mojo
 					},
@@ -1554,23 +1584,56 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["maps"] = { BLACKROCK_MOUNTAIN, BLACKROCK_SPIRE },
 					["cost"] = {
 						{ "i", 22048, 1 },	-- Lord Valthalak's Amulet
-						{ "i", 22138, 40 },	-- Blackrock Bracer
 						{ "i", 13512, 1 },	-- Flask of Supreme Power
 					},
 					["lvl"] = 58,
+					["groups"] = {
+						objective(1, {	-- 0/40 Blackrock Bracer
+							["provider"] = { "i", 22138 },	-- Blackrock Bracer
+						}),
+					},
 				}),
 				q(8924, {	-- Hunting for Ectoplasm
 					["qg"] = 16014,	-- Mux Manascrambler
 					["sourceQuest"] = 8921,	-- The Ectoplasmic Distiller
 					["coord"] = { 52.4, 27.2, TANARIS },
 					["maps"] = { EASTERN_PLAGUELANDS, SILITHUS, WINTERSPRING },
-					["cost"] = {
-						{ "i", 21946, 1 },	-- Ectoplasmic Distiller
-						{ "i", 21936, 12 },	-- Frozen Ectoplasm
-						{ "i", 21937, 12 },	-- Scorched Ectoplasm
-						{ "i", 21935, 12 },	-- Stable Ectoplasm
-					},
 					["lvl"] = 58,
+					["groups"] = {
+						objective(1, {	-- 0/12 Scorched Ectoplasm
+							["provider"] = { "i", 21937 },	-- Scorched Ectoplasm
+							["crs"] = {
+								12178,	-- Tortured Druid
+								12179,	-- Tortured Sentinel
+							},
+							["cost"] = {
+								{ "i", 21946, 1 },	-- Ectoplasmic Distiller
+							},
+						}),
+						objective(2, {	-- 0/12 Frozen Ectoplasm
+							["provider"] = { "i", 21936 },	-- Frozen Ectoplasm
+							["crs"] = {
+								7524,	-- Anguished Highborne
+								7523,	-- Suffering Highborne
+							},
+							["cost"] = {
+								{ "i", 21946, 1 },	-- Ectoplasmic Distiller
+							},
+						}),
+						objective(3, {	-- 0/12 Stable Ectoplasm
+							["provider"] = { "i", 21935 },	-- Stable Ectoplasm
+							["crs"] = {
+								8542,	-- Death Singer
+								8539,	-- Eyeless Watcher
+								8541,	-- Hate Shrieker
+								8540,	-- Torn Screamer
+								8538,	-- Unseen Servant
+							},
+							["cost"] = {
+								{ "i", 21946, 1 },	-- Ectoplasmic Distiller
+							},
+						}),
+					},
 				}),
 				q(8970, {	-- I See Alcaz Island In Your Future...
 					["qg"] = 16033,	-- Bodley
@@ -1581,10 +1644,12 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 						8969,	-- The Left Piece of Lord Valthalak's Amulet [PALADIN, PRIEST, SHAMAN]
 					},
 					["maps"] = { BLACKROCK_MOUNTAIN, DUSTWALLOW_MARSH },
-					["cost"] = {
-						{ "i", 22094, 20 },	-- Bloodkelp
-					},
 					["lvl"] = 58,
+					["groups"] = {
+						objective(1, {	-- 0/20 Bloodkelp
+							["provider"] = { "i", 22094 },	-- Bloodkelp
+						}),
+					},
 				}),
 				q(8929, {	-- In Search of Anthion [ALLIANCE]
 					["qg"] = 16013,	-- Deliana
@@ -1644,10 +1709,12 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["classes"] = { WARRIOR, ROGUE },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-						{ "i", 22227, 1 },	-- Starbreeze Village Relic
 					},
 					["lvl"] = 58,
 					["groups"] = {
+						objective(1, {	-- 0/1 Starbreeze Village Relic
+							["provider"] = { "i", 22227 },	-- Starbreeze Village Relic
+						}),
 						i(22192),	-- Bloodkelp Elixir of Dodging
 						i(22193),	-- Bloodkelp Elixir of Resistance
 					},
@@ -1655,14 +1722,16 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 				q(8986, {	-- More Components of Importance [DRUID, PALADIN, SHAMAN]
 					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8970,	-- I See Alcaz Island In Your Future...
-					["maps"] = { BLACKROCK_MOUNTAIN },
+					["maps"] = { BLACKROCK_MOUNTAIN, SILITHUS },
 					["classes"] = { DRUID, PALADIN, SHAMAN },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-						{ "i", 22226, 1 },	-- Druidical Remains
 					},
 					["lvl"] = 58,
 					["groups"] = {
+						objective(1, {	-- 0/1 Druidical Remains
+							["provider"] = { "i", 22226 },	-- Druidical Remains
+						}),
 						i(22192),	-- Bloodkelp Elixir of Dodging
 						i(22193),	-- Bloodkelp Elixir of Resistance
 					},
@@ -1670,14 +1739,16 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 				q(8987, {	-- More Components of Importance [PRIEST, MAGE]
 					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8970,	-- I See Alcaz Island In Your Future...
-					["maps"] = { BLACKROCK_MOUNTAIN },
+					["maps"] = { BLACKROCK_MOUNTAIN, EASTERN_PLAGUELANDS },
 					["classes"] = { PRIEST, MAGE },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-						{ "i", 22228, 1 },	-- Brilliant Sword of Zealotry
 					},
 					["lvl"] = 58,
 					["groups"] = {
+						objective(1, {	-- 0/1 Brilliant Sword of Zealotry
+							["provider"] = { "i", 22228 },	-- Brilliant Sword of Zealotry
+						}),
 						i(22192),	-- Bloodkelp Elixir of Dodging
 						i(22193),	-- Bloodkelp Elixir of Resistance
 					},
@@ -1685,14 +1756,16 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 				q(8988, {	-- More Components of Importance [HUNTER, WARLOCK]
 					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8970,	-- I See Alcaz Island In Your Future...
-					["maps"] = { BLACKROCK_MOUNTAIN },
+					["maps"] = { BLACKROCK_MOUNTAIN, HILLSBRAD_FOOTHILLS },
 					["classes"] = { HUNTER, WARLOCK },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-						{ "i", 22229, 1 },	-- Soul Ashes of the Banished
 					},
 					["lvl"] = 58,
 					["groups"] = {
+						objective(1, {	-- 0/1 Soul Ashes of the Banished
+							["provider"] = { "i", 22229 },	-- Soul Ashes of the Banished
+						}),
 						i(22192),	-- Bloodkelp Elixir of Dodging
 						i(22193),	-- Bloodkelp Elixir of Resistance
 					},
@@ -1745,11 +1818,14 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16032,	-- Falrin Treeshaper
 					["sourceQuest"] = 8950,	-- The Instigator's Enchantment
 					["maps"] = { DIRE_MAUL, BLACKROCK_DEPTHS },
-					["cost"] = {
-						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
-					},
 					["lvl"] = 58,
 					["groups"] = {
+						objective(1, {	-- Theldren's Team Defeated
+							["provider"] = { "i", 21986 },	-- Banner of Provocation
+						}),
+						objective(2, {	-- Top Piece of Lord Valthalak's Amulet
+							["provider"] = { "i", 22047 },	-- Top Piece of Lord Valthalak's Amulet
+						}),
 						{
 							["itemID"] = 21986,	-- Banner of Provocation
 							["description"] = "Long after Classic is over, you can use this item to summon Unobtainable bosses and earn quite a bit of gold doing so for Transmog and other purposes. Save this item forever.",
@@ -1768,11 +1844,13 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 						{ "i", 16006, 1 },	-- Delicate Arcanite Converter
 						{ "i", 16203, 4 },	-- Greater Eternal Essence
 						{ "i", 13423, 10 },	-- Stonescale Oil
-						{ "i", 22338, 25 },	-- Volcanic Ash
 						{ "g", 400000 },	-- 40g
 					},
 					["lvl"] = 58,
 					["groups"] = {
+						objective(4, {	-- 0/25 Volcanic Ash
+							["provider"] = { "i", 22338 },	-- Volcanic Ash
+						}),
 						i(22320),	-- Mux's Quality Goods
 					},
 				}),
@@ -1781,121 +1859,173 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["sourceQuest"] = 8949,	-- Falrin's Vendetta
 					["maps"] = { DIRE_MAUL },
 					["cost"] = {
-						{ "i", 22224, 1 },	-- Jeering Spectre's Essence
 						{ "i", 20520, 4 },	-- Dark Rune
 						{ "i", 14344, 8 },	-- Large Brilliant Shard
 					},
 					["lvl"] = 58,
+					["groups"] = {
+						objective(1, {	-- 0/1 Jeering Spectre's Essence
+							["provider"] = { "i", 22224 },	-- Jeering Spectre's Essence
+						}),
+					},
 				}),
 				q(8966, {	-- The Left Piece of Lord Valthalak's Amulet [WARRIOR, MAGE]
 					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8962,	-- Components of Importance [WARRIOR, MAGE]
 					["maps"] = { BLACKROCK_MOUNTAIN, BLACKROCK_SPIRE },
 					["classes"] = { WARRIOR, MAGE },
-					["cr"] = 16080,	-- Mor Grayhoof
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-						{ "i", 21984, 1 },	-- Left Piece of Lord Valthalak's Amulet
 						{ "i", 22049, 1 },	-- Brazier of Beckoning [Mor Grayhoof]
 					},
 					["lvl"] = 58,
+					["groups"] = {
+						objective(1, {	-- 0/1 Mor Grayhoof slain
+							["provider"] = { "n", 16080 },	-- Mor Grayhoof
+						}),
+						objective(2, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
+							["provider"] = { "i", 21984 },	-- Left Piece of Lord Valthalak's Amulet
+						}),
+					},
 				}),
 				q(8967, {	-- The Left Piece of Lord Valthalak's Amulet [WARLOCK, DRUID]
 					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8963,	-- Components of Importance [WARLOCK, DRUID]
 					["maps"] = { BLACKROCK_MOUNTAIN, DIRE_MAUL },
 					["classes"] = { WARLOCK, DRUID },
-					["cr"] = 16097,	-- Isalien
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-						{ "i", 21984, 1 },	-- Left Piece of Lord Valthalak's Amulet
 						{ "i", 22050, 1 },	-- Brazier of Beckoning [Isalien]
 					},
 					["lvl"] = 58,
+					["groups"] = {
+						objective(1, {	-- 0/1 Isalien slain
+							["provider"] = { "n", 16097 },	-- Isalien
+						}),
+						objective(2, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
+							["provider"] = { "i", 21984 },	-- Left Piece of Lord Valthalak's Amulet
+						}),
+					},
 				}),
 				q(8968, {	-- The Left Piece of Lord Valthalak's Amulet [HUNTER, ROGUE]
 					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8964,	-- Components of Importance [HUNTER, ROGUE]
 					["maps"] = { BLACKROCK_MOUNTAIN, STRATHOLME },
 					["classes"] = { HUNTER, ROGUE },
-					["crs"] = {
-						16101,	-- Jarien
-						16102,	-- Sothos
-					},
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-						{ "i", 21984, 1 },	-- Left Piece of Lord Valthalak's Amulet
 						{ "i", 22051, 1 },	-- Brazier of Beckoning [Jarien and Sothos]
 					},
 					["lvl"] = 58,
+					["groups"] = {
+						objective(1, {	-- 0/1 Jarien slain
+							["provider"] = { "n", 16101 },	-- Jarien
+						}),
+						objective(2, {	-- 0/1 Sothos slain
+							["provider"] = { "n", 16102 },	-- Sothos
+						}),
+						objective(3, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
+							["provider"] = { "i", 21984 },	-- Left Piece of Lord Valthalak's Amulet
+						}),
+					},
 				}),
 				q(8969, {	-- The Left Piece of Lord Valthalak's Amulet [PALADIN, PRIEST, SHAMAN]
 					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8965,	-- Components of Importance [PALADIN, PRIEST, SHAMAN]
 					["maps"] = { BLACKROCK_MOUNTAIN, SCHOLOMANCE },
 					["classes"] = { PALADIN, PRIEST, SHAMAN },
-					["cr"] = 16118,	-- Kormok
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-						{ "i", 21984, 1 },	-- Left Piece of Lord Valthalak's Amulet
 						{ "i", 22052, 1 },	-- Brazier of Beckoning [Kormok]
 					},
 					["lvl"] = 58,
+					["groups"] = {
+						objective(1, {	-- 0/1 Kormok slain
+							["provider"] = { "n", 16101 },	-- Kormok
+						}),
+						objective(2, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
+							["provider"] = { "i", 21984 },	-- Left Piece of Lord Valthalak's Amulet
+						}),
+					},
 				}),
 				q(8990, {	-- The Right Piece of Lord Valthalak's Amulet [WARRIOR, ROGUE]
 					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8985,	-- More Components of Importance [WARRIOR, ROGUE]
 					["maps"] = { BLACKROCK_MOUNTAIN, WINTERSPRING },
 					["classes"] = { WARRIOR, ROGUE },
-					["cr"] = 16097,	-- Isalien
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-						{ "i", 22048, 1 },	-- Lord Valthalak's Amulet
 						{ "i", 22050, 1 },	-- Brazier of Beckoning [Isalien]
 					},
 					["lvl"] = 58,
+					["groups"] = {
+						objective(1, {	-- 0/1 Isalien slain
+							["provider"] = { "n", 16101 },	-- Isalien
+						}),
+						objective(2, {	-- 0/1 Lord Valthalak's Amulet
+							["provider"] = { "i", 22048 },	-- Lord Valthalak's Amulet
+						}),
+					},
 				}),
 				q(8989, {	-- The Right Piece of Lord Valthalak's Amulet [DRUID, PALADIN, SHAMAN]
 					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8986,	-- More Components of Importance [DRUID, PALADIN, SHAMAN]
 					["maps"] = { BLACKROCK_MOUNTAIN },
 					["classes"] = { DRUID, PALADIN, SHAMAN },
-					["cr"] = 16080,	-- Mor Grayhoof
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-						{ "i", 22048, 1 },	-- Lord Valthalak's Amulet
 						{ "i", 22049, 1 },	-- Brazier of Beckoning [Mor Grayhoof]
 					},
 					["lvl"] = 58,
+					["groups"] = {
+						objective(1, {	-- 0/1 Mor Grayhoof slain
+							["provider"] = { "n", 16080 },	-- Mor Grayhoof
+						}),
+						objective(2, {	-- 0/1 Lord Valthalak's Amulet
+							["provider"] = { "i", 22048 },	-- Lord Valthalak's Amulet
+						}),
+					},
 				}),
 				q(8991, {	-- The Right Piece of Lord Valthalak's Amulet [PRIEST, MAGE]
 					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8987,	-- More Components of Importance [PRIEST, MAGE]
 					["maps"] = { BLACKROCK_MOUNTAIN },
 					["classes"] = { PRIEST, MAGE },
-					["crs"] = {
-						16101,	-- Jarien
-						16102,	-- Sothos
-					},
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-						{ "i", 22048, 1 },	-- Lord Valthalak's Amulet
 						{ "i", 22051, 1 },	-- Brazier of Beckoning [Jarien & Sothos]
 					},
 					["lvl"] = 58,
+					["groups"] = {
+						objective(1, {	-- 0/1 Jarien slain
+							["provider"] = { "n", 16101 },	-- Jarien
+						}),
+						objective(2, {	-- 0/1 Sothos slain
+							["provider"] = { "n", 16102 },	-- Sothos
+						}),
+						objective(3, {	-- 0/1 Lord Valthalak's Amulet
+							["provider"] = { "i", 22048 },	-- Lord Valthalak's Amulet
+						}),
+					},
 				}),
 				q(8992, {	-- The Right Piece of Lord Valthalak's Amulet [HUNTER, WARLOCK]
 					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8988,	-- More Components of Importance [HUNTER, WARLOCK]
 					["maps"] = { BLACKROCK_MOUNTAIN },
 					["classes"] = { HUNTER, WARLOCK },
-					["cr"] = 16118,	-- Kormok
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-						{ "i", 22048, 1 },	-- Lord Valthalak's Amulet
 						{ "i", 22052, 1 },	-- Brazier of Beckoning [Kormok]
 					},
 					["lvl"] = 58,
+					["groups"] = {
+						objective(1, {	-- 0/1 Kormok slain
+							["provider"] = { "n", 16101 },	-- Kormok
+						}),
+						objective(2, {	-- 0/1 Lord Valthalak's Amulet
+							["provider"] = { "i", 22048 },	-- Lord Valthalak's Amulet
+						}),
+					},
 				}),
 				q(8961, {	-- Three Kings of Flame
 					["qg"] = 16033,	-- Bodley
@@ -1906,12 +2036,22 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["maps"] = { BLACKROCK_MOUNTAIN, BLACKROCK_DEPTHS, BLACKROCK_SPIRE, EASTERN_PLAGUELANDS, SILITHUS, WESTERN_PLAGUELANDS, TIRISFAL_GLADES },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-						{ "i", 22014, 1 },	-- Hallowed Brazier
-						{ "i", 21989, 1 },	-- Cinder of Cynders
-						{ "i", 21988, 1 },	-- Ember of Emberseer
-						{ "i", 21987, 1 },	-- Incendicite of Incendius
 					},
 					["lvl"] = 58,
+					["groups"] = {
+						objective(1, {	-- 0/1 Incendicite of Incendius
+							["provider"] = { "i", 21987 },	-- Incendicite of Incendius
+						}),
+						objective(2, {	-- 0/1 Ember of Emberseer
+							["provider"] = { "i", 21988 },	-- Ember of Emberseer
+						}),
+						objective(3, {	-- 0/1 Cinder of Cynders
+							["provider"] = { "i", 21989 },	-- Cinder of Cynders
+						}),
+						objective(4, {	-- 0/1 Hallowed Brazier
+							["provider"] = { "i", 22014 },	-- Hallowed Brazier
+						}),
+					},
 				}),
 			}),
 			n(REWARDS, {
@@ -1924,5 +2064,5 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 				}),
 			}),
 		},
-	}),
-}))};
+	})),
+})));

@@ -223,68 +223,13 @@ _.Instances = { tier(WOD_TIER, {
 					},
 				}),
 			}),
+			-- #if AFTER 8.1.5.29701
 			d(24, {	-- Timewalking
-				["lvl"] = 50,
-				["g"] = {
-					e(1235, {	-- Fleshrender Nok'gar
-						["crs"] = {
-							81297,	-- Dreadfang
-							81305,	-- Fleshrender Nok'gar
-						},
-						["sym"] = {
-							{"sub", "common_wod_dungeon_drop", 24, CHEST},
-							{"sub", "common_wod_dungeon_drop", 24, FINGER},
-						},
-						["g"] = {
-							i(110055),	-- Gutwrench Goreaxe
-							i(110002),	-- Fleshrender's Meathook
-						},
-					}),
-					e(1236, {	-- Grimrail Enforcers
-						["crs"] = {
-							80816,	-- Ahri'ok Dugru
-							80805,	-- Makogg Emberblade
-							80808,	-- Neesa Nox
-						},
-						["sym"] = {
-							{"sub", "common_wod_dungeon_drop", 24, HEAD},
-							{"sub", "common_wod_dungeon_drop", 24, NECK},
-						},
-						["g"] = {
-							i(110056),	-- Black Iron Sniper Rifle
-							i(110017),	-- Enforcer's Stun Grenade
-						},
-					}),
-					e(1237, {	-- Oshir
-						["crs"] = { 79852 },	-- Oshir
-						["sym"] = {
-							{"sub", "common_wod_dungeon_drop", 24, WRIST},
-							{"sub", "common_wod_dungeon_drop", 24, WAIST},
-						},
-						["g"] = {
-							i(110057),	-- Mindbreaker Scepter
-							i(109997),	-- Kihra's Adrenaline Injector
-						},
-					}),
-					e(1238, {	-- Skulloc
-						["crs"] = {
-							83613,	-- Koramar
-							83612,	-- Skulloc
-							83616,	-- Zoggosh
-						},
-						["sym"] = {
-							{"sub", "common_wod_dungeon_drop", 24, SHOULDER},
-							{"sub", "common_wod_dungeon_drop", 24, HANDS},
-							{"sub", "common_wod_dungeon_drop", 24, LEGS},
-						},
-						["g"] = {
-							i(110059),	-- Chasmwrench Docking Hook
-							i(110058),	-- Bloodied Hand of Woe
-							i(110060),	-- Painbringer's Crystal
-						},
-					}),
+				["sym"] = {	-- link in Timewalking content
+					{"sub", "tw_instance", 558 },	-- this instance version of timewalking
 				},
 			}),
+			-- #endif
 		},
 	}),
 })};

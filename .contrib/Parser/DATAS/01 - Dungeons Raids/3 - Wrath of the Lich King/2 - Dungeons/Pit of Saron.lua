@@ -256,42 +256,13 @@ _.Instances = { tier(WOTLK_TIER, {
 					})),
 				},
 			}),
+			-- #if AFTER 6.2.3.20601
 			d(24, {	-- Timewalking
-				["lvl"] = 81,
-				["g"] = {
-					cr(36494, e(608, {	-- Forgemaster Garfrost
-						i(133486),	-- Garfrost's Two-Ton Hammer
-						i(133485),	-- Unspeakable Secret
-						i(133488),	-- Polished Mirror Helm
-						i(133501),	-- Skeleton Lord's Cranium
-						i(133508),	-- Shroud of Rime
-						i(133490),	-- Flayer's Black Belt
-						i(133489),	-- Ice-Steeped Sandals
-						i(133487),	-- Ring of Carnelian and Bone
-					})),
-					cr(36476, e(609, {	-- Ick and Krick
-						i(133491),	-- Krick's Beetle Stabber
-						i(133517),	-- Saronite-Studded Shoulderguards
-						i(133493),	-- Wristguards of Subterranean Moss
-						i(133492),	-- Bent Gold Belt
-						i(133494),	-- Scabrous Zombie Leather Belt
-						i(133495),	-- Black Dragonskin Breeches
-						i(133504),	-- Rimewoven Silks
-						i(133496),	-- Purloined Wedding Ring
-					})),
-					cr(36658, e(610, {	-- Scourgelord Tyrannus
-						i(133497),	-- Rimebane Rifle
-						i(133503),	-- Protector of Frigid Souls
-						i(133506),	-- Horns of the Spurned Val'kyr
-						i(133500),	-- Painfully Sharp Choker
-						i(133505),	-- Cloak of the Fallen Cardinal
-						i(133507),	-- Palebone Robes
-						i(133498),	-- Scourgelord's Frigid Chestplate
-						i(133502),	-- Gondria's Spectral Bracer
-						i(133499),	-- Shaggy Wyrmleather Leggings
-					}))
+				["sym"] = {	-- link in Timewalking content
+					{"sub", "tw_instance", 278 },	-- this instance version of timewalking
 				},
 			}),
+			-- #endif
 		},
 	}),
 })};

@@ -997,7 +997,7 @@ settings.merch = f;
 ------------------------------------------
 local line;
 (function()
-local tab = settings:CreateTab(L["GENERAL_TAB"]);
+local tab = settings:CreateTab(L["GENERAL_LABEL"]);
 tab:SetPoint("TOPLEFT", settings.logo, "BOTTOMRIGHT", -20, 0);
 line = settings:CreateTexture(nil, "ARTWORK");
 line:SetPoint("LEFT", settings, "LEFT", 4, 0);
@@ -1022,7 +1022,7 @@ scrollbar:SetScript("OnValueChanged", OnScrollBarValueChanged);
 scrollbar.back = scrollbar:CreateTexture(nil, "BACKGROUND");
 scrollbar.back:SetColorTexture(0,0,0,0.4)
 scrollbar.back:SetAllPoints(scrollbar);
-scrollbar:SetMinMaxValues(0, 40); -- Adding more max value to the scrollbar is what controls the vertical size.
+scrollbar:SetMinMaxValues(0, 43); -- Adding more max value to the scrollbar is what controls the vertical size.
 scrollbar:SetValueStep(1);
 scrollbar.CurrentValue = 0;
 scrollbar:SetWidth(16);
@@ -2361,18 +2361,18 @@ local GeneralFiltersLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNorm
 GeneralFiltersLabel:SetPoint("TOP", ItemFiltersLabel, "TOP", 0, 0);
 GeneralFiltersLabel:SetPoint("LEFT", settings, "RIGHT", -290, 0);
 GeneralFiltersLabel:SetJustifyH("LEFT");
-GeneralFiltersLabel:SetText(L["GENERAL_FILTERS_LABEL"]);
+GeneralFiltersLabel:SetText(L["GENERAL_LABEL"]);
 GeneralFiltersLabel:Show();
 table.insert(settings.MostRecentTab.objects, GeneralFiltersLabel);
 
-local HideBoEItemsCheckBox = child:CreateCheckBox(L["HIDE_BOE_CHECKBOX"],
+local HideBoEItemsCheckBox = child:CreateCheckBox(L["SHOW_BOE_CHECKBOX"],
 function(self)
 	self:SetChecked(not settings:Get("Hide:BoEs")); -- 'not' = inversed :D
 end,
 function(self)
 	settings:SetHideBOEItems(not self:GetChecked()); -- 'not' = inversed :D
 end);
-HideBoEItemsCheckBox:SetATTTooltip(L["HIDE_BOE_CHECKBOX_TOOLTIP"]);
+HideBoEItemsCheckBox:SetATTTooltip(L["SHOW_BOE_CHECKBOX_TOOLTIP"]);
 HideBoEItemsCheckBox:SetPoint("TOPLEFT", GeneralFiltersLabel, "BOTTOMLEFT", -2, 0);
 
 local IgnoreFiltersForBoEsCheckBox = child:CreateCheckBox(L["IGNORE_FILTERS_FOR_BOES_CHECKBOX"],
@@ -2422,7 +2422,7 @@ end);
 HidePetBattlesCheckBox:SetATTTooltip(L["SHOW_PET_BATTLES_CHECKBOX_TOOLTIP"]);
 HidePetBattlesCheckBox:SetPoint("TOPLEFT", FilterThingsByLevelCheckBox, "BOTTOMLEFT", 0, 4);
 
-local HidePvPItemsCheckBox = child:CreateCheckBox(L["HIDE_PVP_CHECKBOX"],
+local HidePvPItemsCheckBox = child:CreateCheckBox(L["SHOW_PVP_CHECKBOX"],
 function(self)
 	self:SetChecked(not settings:Get("Hide:PvP")); -- 'not' = inversed :D
 	if settings:Get("DebugMode") then
@@ -2437,7 +2437,7 @@ function(self)
 	settings:Set("Hide:PvP", not self:GetChecked()); -- 'not' = inversed :D
 	settings:UpdateMode(1);
 end);
-HidePvPItemsCheckBox:SetATTTooltip(L["HIDE_PVP_CHECKBOX_TOOLTIP"]);
+HidePvPItemsCheckBox:SetATTTooltip(L["SHOW_PVP_CHECKBOX_TOOLTIP"]);
 HidePvPItemsCheckBox:SetPoint("TOPLEFT", HidePetBattlesCheckBox, "BOTTOMLEFT", 0, 4);
 
 local CustomCollectFilterLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
@@ -2470,7 +2470,9 @@ CustomCollectFilterExplainLabel.OnRefresh = function(self)
 	end
 end;
 
-local NPE_CheckBox = child:CreateCheckBox(L["SETTINGS_CUSTOM_COLLECTS_REASONS"]["NPE"][1],
+local reason = L["CUSTOM_COLLECTS_REASONS"]["NPE"]
+local text = reason["icon"].." "..reason["text"]
+local NPE_CheckBox = child:CreateCheckBox(text,
 function(self)
 	self:SetChecked(settings:GetFilter("CC:NPE"));
 	if settings:Get("AccountMode") then
@@ -2485,10 +2487,12 @@ function(self)
 	settings:SetFilter("CC:NPE", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-NPE_CheckBox:SetATTTooltip(string.format(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"], L["CUSTOM_COLLECTS_REASONS"]["NPE"][1]));
+NPE_CheckBox:SetATTTooltip(reason["desc"]);
 NPE_CheckBox:SetPoint("TOPLEFT", CustomCollectFilterExplainLabel, "BOTTOMLEFT", -2, -2);
 
-local SL_SKIP_CheckBox = child:CreateCheckBox(L["SETTINGS_CUSTOM_COLLECTS_REASONS"]["SL_SKIP"][1],
+reason = L["CUSTOM_COLLECTS_REASONS"]["SL_SKIP"]
+text = reason["icon"].." "..reason["text"]
+local SL_SKIP_CheckBox = child:CreateCheckBox(text,
 function(self)
 	self:SetChecked(settings:GetFilter("CC:SL_SKIP"));
 	if settings:Get("AccountMode") then
@@ -2503,10 +2507,13 @@ function(self)
 	settings:SetFilter("CC:SL_SKIP", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-SL_SKIP_CheckBox:SetATTTooltip(string.format(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"], L["CUSTOM_COLLECTS_REASONS"]["SL_SKIP"][1]));
+SL_SKIP_CheckBox:SetATTTooltip(reason["desc"]);
 SL_SKIP_CheckBox:SetPoint("TOPLEFT", NPE_CheckBox, "BOTTOMLEFT", 0, 4);
 
-local SL_COV_KYR_CheckBox = child:CreateCheckBox(L["SETTINGS_CUSTOM_COLLECTS_REASONS"]["SL_COV_KYR"][1],
+local insane_color = "|cffADD8E6"
+reason = L["CUSTOM_COLLECTS_REASONS"]["SL_COV_KYR"]
+text = reason["icon"].." "..insane_color..reason["text"].."|r"
+local SL_COV_KYR_CheckBox = child:CreateCheckBox(text,
 function(self)
 	self:SetChecked(settings:GetFilter("CC:SL_COV_KYR"));
 	if settings:Get("AccountMode") then
@@ -2521,10 +2528,12 @@ function(self)
 	settings:SetFilter("CC:SL_COV_KYR", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-SL_COV_KYR_CheckBox:SetATTTooltip(string.format(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"], L["CUSTOM_COLLECTS_REASONS"]["SL_COV_KYR"][1]));
+SL_COV_KYR_CheckBox:SetATTTooltip(string.format(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"], text));
 SL_COV_KYR_CheckBox:SetPoint("TOPLEFT", SL_SKIP_CheckBox, "BOTTOMLEFT", 0, 4);
 
-local SL_COV_NEC_CheckBox = child:CreateCheckBox(L["SETTINGS_CUSTOM_COLLECTS_REASONS"]["SL_COV_NEC"][1],
+reason = L["CUSTOM_COLLECTS_REASONS"]["SL_COV_NEC"]
+text = reason["icon"].." "..insane_color..reason["text"].."|r"
+local SL_COV_NEC_CheckBox = child:CreateCheckBox(text,
 function(self)
 	self:SetChecked(settings:GetFilter("CC:SL_COV_NEC"));
 	if settings:Get("AccountMode") then
@@ -2539,10 +2548,12 @@ function(self)
 	settings:SetFilter("CC:SL_COV_NEC", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-SL_COV_NEC_CheckBox:SetATTTooltip(string.format(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"], L["CUSTOM_COLLECTS_REASONS"]["SL_COV_NEC"][1]));
+SL_COV_NEC_CheckBox:SetATTTooltip(string.format(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"], text));
 SL_COV_NEC_CheckBox:SetPoint("TOPLEFT", SL_COV_KYR_CheckBox, "BOTTOMLEFT", 0, 4);
 
-local SL_COV_NFA_CheckBox = child:CreateCheckBox(L["SETTINGS_CUSTOM_COLLECTS_REASONS"]["SL_COV_NFA"][1],
+reason = L["CUSTOM_COLLECTS_REASONS"]["SL_COV_NFA"]
+text = reason["icon"].." "..insane_color..reason["text"].."|r"
+local SL_COV_NFA_CheckBox = child:CreateCheckBox(text,
 function(self)
 	self:SetChecked(settings:GetFilter("CC:SL_COV_NFA"));
 	if settings:Get("AccountMode") then
@@ -2557,10 +2568,12 @@ function(self)
 	settings:SetFilter("CC:SL_COV_NFA", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-SL_COV_NFA_CheckBox:SetATTTooltip(string.format(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"], L["CUSTOM_COLLECTS_REASONS"]["SL_COV_NFA"][1]));
+SL_COV_NFA_CheckBox:SetATTTooltip(string.format(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"], text));
 SL_COV_NFA_CheckBox:SetPoint("TOPLEFT", SL_COV_NEC_CheckBox, "BOTTOMLEFT", 0, 4);
 
-local SL_COV_VEN_CheckBox = child:CreateCheckBox(L["SETTINGS_CUSTOM_COLLECTS_REASONS"]["SL_COV_VEN"][1],
+reason = L["CUSTOM_COLLECTS_REASONS"]["SL_COV_VEN"]
+text = reason["icon"].." "..insane_color..reason["text"].."|r"
+local SL_COV_VEN_CheckBox = child:CreateCheckBox(text,
 function(self)
 	self:SetChecked(settings:GetFilter("CC:SL_COV_VEN"));
 	if settings:Get("AccountMode") then
@@ -2575,11 +2588,11 @@ function(self)
 	settings:SetFilter("CC:SL_COV_VEN", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-SL_COV_VEN_CheckBox:SetATTTooltip(string.format(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"], L["CUSTOM_COLLECTS_REASONS"]["SL_COV_VEN"][1]));
+SL_COV_VEN_CheckBox:SetATTTooltip(string.format(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"], text));
 SL_COV_VEN_CheckBox:SetPoint("TOPLEFT", SL_COV_NFA_CheckBox, "BOTTOMLEFT", 0, 4);
 
 -- local customCollects, ccCheckbox = L["CUSTOM_COLLECTS_REASONS"];
--- local customLabels = L["SETTINGS_CUSTOM_COLLECTS_REASONS"];
+-- local customLabels = L["CUSTOM_COLLECTS_REASONS"];
 -- local previousCheckbox = CustomCollectFilterExplainLabel;
 -- local xInitalOffset, yInitialOffset, inital = -2, -2, true;
 -- for i,cc in ipairs({"NPE","SL_SKIP","SL_COV_KYR","SL_COV_NEC","SL_COV_NFA","SL_COV_VEN"}) do
@@ -3316,7 +3329,7 @@ table.insert(settings.MostRecentTab.objects, LocationsSlider);
 settings.LocationsSlider = LocationsSlider;
 LocationsSlider.tooltipText = L["LOCATIONS_SLIDER_TOOLTIP"];
 LocationsSlider:SetOrientation('HORIZONTAL');
-LocationsSlider:SetWidth(150);
+LocationsSlider:SetWidth(140);
 LocationsSlider:SetHeight(20);
 LocationsSlider:SetValueStep(1);
 LocationsSlider:SetMinMaxValues(1, 40);

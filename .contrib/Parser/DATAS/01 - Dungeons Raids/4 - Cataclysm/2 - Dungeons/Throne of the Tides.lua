@@ -177,51 +177,13 @@ _.Instances = { tier(CATA_TIER, {
 					})),
 				},
 			}),
+			-- #if AFTER 6.2.3.20601
 			d(24, {	-- Timewalking
-				["lvl"] = 86,
-				["groups"] = {
-					cr(40586, e(101, {	-- Lady Naz'jar
-						i(133179),	-- Lightning Whelk Axe
-						i(133367),	-- Barnacled Shell Buckler
-						i(133182),	-- Aurelian Mitre
-						i(133358),	-- Old One Eye's Cowl
-						i(133359),	-- Ironshell Pendant
-						i(133180),	-- Periwinkle Cloak
-						i(133181),	-- Wrasse Handwraps
-						i(133205),	-- Alpheus Legguards
-						i(133183),	-- Entwined Nereis
-					})),
-					cr(40765, e(102, {	-- Commander Ulthok
-						i(133184),	-- Cerith Spire Staff
-						i(133203),	-- Barnacle Pendant
-						i(133186),	-- Caridean Epaulettes
-						i(133185),	-- Harp Shell Pauldrons
-						i(133188),	-- Eagle Ray Cloak
-						i(133187),	-- Chromis Chestpiece
-						i(133204),	-- Ring of the Great Whale
-					})),
-					cr(40788, e(103, {	-- Mindbender Ghur'sha
-						i(133200),	-- Bioluminescent Lamp
-						i(133191),	-- Anomuran Helm
-						i(133360),	-- Stonespeaker's Spare Cinch
-						i(133190),	-- Decapod Slippers
-						i(133189),	-- Anthia's Ring
-						i(133192),	-- Porcelain Crab
-					})),
-					cr(44566, e(104, {	-- Ozumat
-						i(133196),	-- Whitefin Axe
-						i(133199),	-- Pipefish Cord
-						i(133202),	-- Abalone Plate Armor
-						i(133193),	-- Wentletrap Vest
-						i(133198),	-- Mnemiopsis Gloves
-						i(133368),	-- Salty Shell-Studded Girdle
-						i(133195),	-- Triton Legplates
-						i(133194),	-- Nautilus Ring
-						i(133197),	-- Might of the Ocean
-						i(133201),	-- Sea Star
-					})),
+				["sym"] = {	-- link in Timewalking content
+					{"sub", "tw_instance", 65 },	-- this instance version of timewalking
 				},
 			}),
+			-- #endif
 		},
 	}),
 })};

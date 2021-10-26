@@ -175,46 +175,13 @@ _.Instances = { tier(CATA_TIER, {
 					})),
 				},
 			}),
-			d(24,  {	-- Timewalking
-				["lvl"] = 86,
-				["groups"] = {
-					cr(43878, e(114, {	-- Grand Vizier Ertan
-						i(133233),	-- Biting Wind
-						i(133234),	-- Headcover of Fog
-						i(133361),	-- Choker of Stolen Thunder
-						i(133369),	-- Ionized Choker
-						i(133236),	-- Red Sky Pendant
-						i(133235),	-- Fallen Snow Shoulderguards
-						i(133232),	-- Stratosphere Belt
-						i(133252),	-- Rainsong
-					})),
-					cr(43873, e(115, {	-- Altairus
-						i(63040),	-- Reins of the Drake of the North Wind (MOUNT!)
-						i(133371),	-- Thundercleaver Axe
-						i(133240),	-- Axe of the Eclipse
-						i(133251),	-- Thundercall
-						i(133238),	-- Amulet of Tender Breath
-						i(133237),	-- Mantle of Bestilled Winds
-						i(133362),	-- Billowing Skydrape
-						i(133239),	-- Hail-Strung Belt
-						i(133253),	-- Darksky Treads
-						i(133370),	-- Sandals of the West Wind
-						i(133241),	-- Skyshard Ring
-					})),
-					cr(43875, e(116, {	-- Asaad, Caliph of Zephyrs
-						i(133242),	-- Lightningflash	--Note!! Possible removal in 8.0 need confirmed reports
-						i(133249),	-- Lunar Halo
-						i(133245),	-- Billowing Cape
-						i(133247),	-- Shadow of Perfect Bliss
-						i(133244),	-- Gloves of Haze
-						i(133250),	-- Leggings of Iridescent Clouds
-						i(133243),	-- Legguards of Winnowing Wind
-						i(133372),	-- Ion-Cage Signet
-						i(133248),	-- Ring of Frozen Rain
-						i(133246),	-- Heart of Thunder
-					})),
+			-- #if AFTER 6.2.3.20601
+			d(24, {	-- Timewalking
+				["sym"] = {	-- link in Timewalking content
+					{"sub", "tw_instance", 68 },	-- this instance version of timewalking
 				},
 			}),
+			-- #endif
 		},
 	}),
 })};

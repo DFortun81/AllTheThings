@@ -2082,6 +2082,12 @@ _.ExpansionFeatures =
 												}),
 											},
 										}),
+										i(187133, {	-- Bewitching Little Hat
+											["cost"] = { { "c", 1820, 25 } },	-- 25x Infused Ruby
+											["g"] = {
+												q(64340),	-- Bewitching
+											},
+										}),
 										i(181517, {	-- Building: Dredger Pool
 											["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
 											["g"] = {

@@ -1,6 +1,6 @@
 
 -- #if AFTER 9.1.5
-root("WorldEvents", d(24, {  -- Timewalking
+root("Holidays", d(24, {  -- Timewalking
 	tier(LEGION_TIER, {
 		-- ["lvl"] = 71,
 		["g"] = {

@@ -133,75 +133,287 @@ _.Craftables = { tier(CLASSIC_TIER, {
 		}),
 	}),
 	prof(BLACKSMITHING, {
+		-- #if BEFORE TBC
+		prof(9788, {	-- Armorsmith
+			["description"] = "These items can only be crafted by Blacksmiths who have completed the Art of the Armorsmith quest chain.",
+			["groups"] = {
+				category(218, {	-- Helms
+					applyclassicphase(PHASE_THREE, i(19148)),	-- Dark Iron Helm
+					applyclassicphase(PHASE_THREE, i(12620, {	-- Enchanted Thorium Helm
+						["timeline"] = { "removed 4.0.1" },
+					})),
+					i(12636),	-- Helm of the Great Chief
+					i(12640),	-- Lionheart Helm
+					i(12633),	-- Whitesoul Helm
+				}),
+				category(219, {	-- Shoulders
+					i(16988),	-- Fiery Chain Shoulders
+				}),
+				category(222, {	-- Bracers
+					i(17014),	-- Dark Iron Bracers
+				}),
+				category(221, {	-- Gauntlets
+					applyclassicphase(PHASE_THREE, i(19164)),	-- Dark Iron Gauntlets
+					i(12631, {	-- Fiery Plate Gauntlets
+						["timeline"] = { "removed 4.0.3" },
+					}),
+					i(12632),	-- Storm Gauntlets
+					i(12639),	-- Stronghold Gauntlets
+					i(7938, {	-- Truesilver Gauntlets
+						["timeline"] = { "removed 4.0.1" },
+					}),
+				}),
+				category(220, {	-- Chest
+					i(11604),	-- Dark Iron Plate
+					i(12628, {	-- Demon Forged Breastplate
+						["timeline"] = { "removed 4.0.3" },
+					}),
+					applyclassicphase(PHASE_THREE, i(12618, {	-- Enchanted Thorium Breastplate
+						["timeline"] = { "removed 4.0.1" },
+					})),
+					i(12641),	-- Invulnerable Mail
+					i(7939, {	-- Truesilver Breastplate
+						["timeline"] = { "removed 4.0.3" },
+					}),
+					i(12624),	-- Wildthorn Mail
+				}),
+				category(223, {	-- Belts
+					i(16989),	-- Fiery Chain Girdle
+				}),
+				category(224, {	-- Legs
+					i(17013),	-- Dark Iron Leggings
+					applyclassicphase(PHASE_THREE, i(12619, {	-- Enchanted Thorium Leggings
+						["timeline"] = { "removed 4.0.3" },
+					})),
+					applyclassicphase(PHASE_FIVE, i(22385)),	-- Titanic Leggings
+				}),
+				category(225, {	-- Boots
+					applyclassicphase(PHASE_FOUR, i(20039)),	-- Dark Iron Boots
+				}),
+			},
+		}),
+		prof(9787, {	-- Weaponsmith
+			["description"] = "These items can only be crafted by Blacksmiths who have completed the Way of the Weaponsmith quest chain.",
+			["groups"] = {
+				prof(17041, {	-- Master Axesmith
+					["description"] = "These items can only be crafted by Master Axesmith specialized Weaponsmiths.",
+					["groups"] = {
+						i(12798),	-- Annihilator
+						i(12784),	-- Arcanite Reaper
+						i(17016),	-- Dark Iron Destroyer
+						i(12774),	-- Dawn's Edge
+						i(19169),	-- Nightfall
+					},
+				}),
+				prof(17040, {	-- Master Hammersmith
+					["description"] = "These items can only be crafted by Master Hammersmith specialized Weaponsmiths.",
+					["groups"] = {
+						applyclassicphase(PHASE_THREE, i(19170)),	-- Ebon Hand
+						i(12776, {	-- Enchanted Battlehammer
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(12796),	-- Hammer of the Titans
+						i(12794, {	-- Masterwork Stormhammer
+							["timeline"] = { "removed 6.0.2" },
+						}),
+						applyclassicphase(PHASE_FIVE, i(22384)),	-- Persuader
+						i(12781),	-- Serenity
+					},
+				}),
+				prof(17039, {	-- Master Swordsmith
+					["description"] = "These items can only be crafted by Master Swordsmith specialized Weaponsmiths.",
+					["groups"] = {
+						i(12790, {	-- Arcanite Champion
+							["timeline"] = {
+								"added 1.11.1.5462",
+								"removed 4.0.1.13287",
+								"added 7.1.5.23360",
+							},
+						}),
+						applyclassicphase(PHASE_THREE, i(19168)),	-- Blackguard
+						i(12777, {	-- Blazing Rapier
+							["timeline"] = {
+								"added 1.11.1.5462",
+								"removed 4.0.1.13287",
+								"added 7.1.5.23360",
+							},
+						}),
+						i(12782),	-- Corruption
+						i(17015),	-- Dark Iron Reaver
+						i(12797),	-- Frostguard
+						applyclassicphase(PHASE_FIVE, i(22383)),	-- Sageblade
+					},
+				}),
+				category(227, {	-- Weapons
+					["description"] = "These can be crafted by any Weaponsmith.",
+					["groups"] = {
+						applyclassicphase(PHASE_THREE, i(19166)),	-- Black Amnesty
+						applyclassicphase(PHASE_THREE, i(19167)),	-- Blackfury
+						i(7959, {	-- Blight
+							["timeline"] = {
+								"added 1.11.1.5462",
+								"removed 4.0.1.13287",
+								"added 7.1.5.23360",
+							},
+						}),
+						i(11608),	-- Dark Iron Pulverizer
+						i(11607),	-- Dark Iron Sunderer
+						i(12783),	-- Heartseeker
+						i(7961),	-- Phantom Blade
+						i(7954, {	-- The Shatterer
+							["timeline"] = { "removed 4.0.2" },
+						}),
+						i(7960, {	-- Truesilver Champion
+							["timeline"] = { "removed 4.0.2" },
+						}),
+					},
+				}),
+			},
+		}),
+		-- #endif
+		category(215, {	-- Materials
+			i(16206, {	-- Arcanite Rod
+				["timeline"] = { "removed 5.0.1" },
+			}),
+			i(3478),	-- Coarse Grinding Stone
+			i(12644),	-- Dense Grinding Stone
+			i(11128, {	-- Golden Rod
+				["timeline"] = { "removed 5.0.1" },
+			}),
+			i(3486),	-- Heavy Grinding Stone
+			i(9060),	-- Inlaid Mithril Cylinder
+			i(7071),	-- Iron Buckle
+			i(3470),	-- Rough Grinding Stone
+			i(6338, {	-- Silver Rod
+				["timeline"] = { "removed 5.0.1" },
+			}),
+			i(7966),	-- Solid Grinding Stone
+			i(11144, {	-- Truesilver Rod
+				["timeline"] = { "removed 5.0.1" },
+			}),
+		}),
+		category(216, {	-- Weapon Mods
+			i(2863),	-- Coarse Sharpening Stone
+			i(3240),	-- Coarse Weightstone
+			i(12404),	-- Dense Sharpening Stone
+			i(12643),	-- Dense Weightstone
+			i(18262),	-- Elemental Sharpening Stone
+			i(2871),	-- Heavy Sharpening Stone
+			i(3241),	-- Heavy Weightstone
+			i(6043),	-- Iron Counterweight
+			i(2862),	-- Rough Sharpening Stone
+			i(3239),	-- Rough Weightstone
+			i(7964),	-- Solid Sharpening Stone
+			i(7965),	-- Solid Weightstone
+			i(6041),	-- Steel Weapon Chain
+		}),
+		category(217, {	-- Armor Mods
+			i(6042),	-- Iron Shield Spike
+			i(7967),	-- Mithril Shield Spike
+			i(7969),	-- Mithril Spurs
+			i(12645),	-- Thorium Shield Spike
+		}),
 		filter(20, {	-- Daggers
 			i(3848),	-- Big Bronze Knife
-			i(19166),	-- Black Amnesty
+			-- #if AFTER TBC
+			applyclassicphase(PHASE_THREE, i(19166)),	-- Black Amnesty
+			-- #endif
+			i(7166),	-- Copper Dagger
 			i(3490),	-- Deadly Bronze Poniard
 			i(7947),	-- Ebon Shiv
 			i(12259),	-- Glinting Steel Dagger
+			-- #if AFTER TBC
 			i(12783),	-- Heartseeker
+			-- #endif
 			i(5540),	-- Pearl-Handled Dagger
 			i(12260),	-- Searing Golden Blade
 		}),
 		filter(21, {	-- 1H Axes
+			-- #if AFTER TBC
 			i(12798),	-- Annihilator
+			-- #endif
 			i(7942),	-- Blue Glittering Axe
 			i(2849),	-- Bronze Axe
+			i(2845),	-- Copper Axe
+			-- #if AFTER TBC
 			i(12774),	-- Dawn's Edge
 			i(17016),	-- Dark Iron Destroyer
+			-- #endif
 			i(17704),	-- Edge of Winter
 			i(7941),	-- Heavy Mithril Axe
 			i(12773),	-- Ornate Thorium Handaxe
 			i(3489),	-- Thick War Axe
 		}),
 		filter(22, {	-- 2H Axes
+			-- #if AFTER TBC
 			i(12784),	-- Arcanite Reaper
+			-- #endif
+			-- #if AFTER 7.1.5.23360
 			i(12769, {	-- Bleakwood Hew
 				["timeline"] = {
 					"created 1.11.1.5462",	-- Was originally never implemented.
 					"added 7.1.5.23360",
 				},
 			}),
+			-- #endif
 			i(7958),	-- Bronze Battle Axe
 			i(3488),	-- Copper Battle Axe
+			-- #if AFTER TBC
 			i(11607),	-- Dark Iron Sunderer
+			-- #endif
 			i(12775),	-- Huge Thorium Battleaxe
 			i(3855),	-- Massive Iron Axe
+			-- #if AFTER TBC
 			i(19169),	-- Nightfall
+			-- #endif
 			i(3856),	-- Shadow Crescent Axe
 		}),
 		filter(23, {	-- 1H Maces
 			i(7945),	-- Big Black Mace
 			i(2848),	-- Bronze Mace
-			i(19170),	-- Ebon Hand
+			i(2844),	-- Copper Mace
+			-- #if AFTER TBC
+			applyclassicphase(PHASE_THREE, i(19170)),	-- Ebon Hand
+			-- #endif
 			i(3491),	-- Heavy Bronze Mace
 			i(5541),	-- Iridescent Hammer
+			-- #if AFTER TBC
 			i(12794, {	-- Masterwork Stormhammer
-				["u"] = REMOVED_FROM_GAME,
+				["timeline"] = { "removed 6.0.2" },
 			}),
+			-- #endif
 			i(3492),	-- Mighty Iron Hammer
-			i(22384),	-- Persuader
+			-- #if AFTER TBC
+			applyclassicphase(PHASE_FIVE, i(22384)),	-- Persuader
+			-- #endif
 			i(7946),	-- Runed Mithril Hammer
+			-- #if AFTER TBC
 			i(12781),	-- Serenity
 			i(7954, {	-- The Shatterer
-				["u"] = REMOVED_FROM_GAME,
+				["timeline"] = { "removed 4.0.2" },
 			}),
+			-- #endif
 			i(12792),	-- Volcanic Hammer
 		}),
 		filter(24, {	-- 2H Maces
 			i(7956),	-- Bronze Warhammer
+			-- #if AFTER TBC
 			i(11608),	-- Dark Iron Pulverizer
 			i(12776, {	-- Enchanted Battlehammer
-				["u"] = REMOVED_FROM_GAME,
+				["timeline"] = { "removed 4.0.3" },
 			}),
+			-- #endif
 			i(3852),	-- Golden Iron Destroyer
+			-- #if AFTER TBC
 			i(12796),	-- Hammer of the Titans
+			-- #endif
 			i(6214),	-- Heavy Copper Maul
 			i(3851),	-- Solid Iron Maul
 			i(17193),	-- Sulfuron Hammer
 		}),
 		filter(25, {	-- 1H Swords
-			i(19168),	-- Blackguard
+			-- #if AFTER TBC
+			applyclassicphase(PHASE_THREE, i(19168)),	-- Blackguard
 			i(12777, {	-- Blazing Rapier
 				["timeline"] = {
 					"added 1.11.1.5462",
@@ -209,13 +421,20 @@ _.Craftables = { tier(CLASSIC_TIER, {
 					"added 7.1.5.23360",
 				},
 			}),
+			-- #endif
 			i(2850),	-- Bronze Shortsword
+			i(2847),	-- Copper Shortsword
+			-- #if AFTER TBC
 			i(17015),	-- Dark Iron Reaver
+			-- #endif
 			i(7944),	-- Dazzling Mithril Rapier
+			-- #if AFTER TBC
 			i(12797),	-- Frostguard
+			-- #endif
 			i(3849),	-- Hardened Iron Shortsword
 			i(33791),	-- Heavy Copper Longsword
 			i(3850),	-- Jade Serpentblade
+			-- #if AFTER TBC
 			i(30071, {	-- Light Earthforged Blade
 				["timeline"] = {
 					"added 2.0.1.6180",
@@ -224,10 +443,12 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				},
 			}),
 			i(7961),	-- Phantom Blade
-			i(22383),	-- Sageblade
+			applyclassicphase(PHASE_FIVE, i(22383)),	-- Sageblade
+			-- #endif
 			i(7943),	-- Wicked Mithril Blade
 		}),
 		filter(26, {	-- 2H Swords
+			-- #if AFTER TBC
 			i(12790, {	-- Arcanite Champion
 				["timeline"] = {
 					"added 1.11.1.5462",
@@ -235,17 +456,34 @@ _.Craftables = { tier(CLASSIC_TIER, {
 					"added 7.1.5.23360",
 				},
 			}),
+			-- #endif
 			i(7957),	-- Bronze Greatsword
+			i(7955),	-- Copper Claymore
+			-- #if AFTER TBC
 			i(12782),	-- Corruption
+			-- #endif
 			i(3854),	-- Frost Tiger Blade
 			i(3487),	-- Heavy Copper Broadsword
 			i(3853),	-- Moonsteel Broadsword
+			-- #if AFTER TBC
 			i(7960, {	-- Truesilver Champion
-				["u"] = REMOVED_FROM_GAME,
+				["timeline"] = { "removed 4.0.2" },
+			}),
+			-- #endif
+		}),
+		-- #if AFTER 7.1.5.23360
+		filter(34, {	-- Fist Weapons
+			i(12795, {	-- Blood Talon
+				["timeline"] = {
+					"created 1.12.1.6898",	-- Was originally never implemented.
+					"added 7.1.5.23360",
+				},
 			}),
 		}),
+		-- #endif
+		-- #if AFTER TBC
 		filter(29, {	-- Polearms
-			i(19167),	-- Blackfury
+			applyclassicphase(PHASE_THREE, i(19167)),	-- Blackfury
 			i(7959, {	-- Blight
 				["timeline"] = {
 					"added 1.11.1.5462",
@@ -253,188 +491,255 @@ _.Craftables = { tier(CLASSIC_TIER, {
 					"added 7.1.5.23360",
 				},
 			}),
+			-- #if AFTER 7.1.5.23360
 			i(12802, {	-- Darkspear
 				["timeline"] = {
 					"created 1.12.1.6898",	-- Was originally never implemented.
 					"added 7.1.5.23360",
 				},
 			}),
+			-- #endif
 		}),
-		filter(8, {		-- Shield
-			i(22198),	-- Jagged Obsidian Shield
+		-- #endif
+		filter(8, {		-- Shields
+			applyclassicphase(PHASE_FIVE, i(22198)),	-- Jagged Obsidian Shield
 		}),
-		n(HEAD, {
+		-- #if BEFORE MOP
+		filter(26, {	-- Thrown
+			applyclassicphase(TBC_PHASE_ONE, i(29203, {	-- Enchanted Thorium Blades
+				["timeline"] = {
+					"added 2.0.1.10000",
+					"removed 5.0.4.10000"
+				},
+			})),
+			applyclassicphase(TBC_PHASE_ONE, i(29201, {	-- Thick Bronze Darts
+				["timeline"] = {
+					"added 2.0.1.10000",
+					"removed 5.0.4.10000"
+				},
+			})),
+			applyclassicphase(TBC_PHASE_ONE, i(29202, {	-- Whirling Steel Axes
+				["timeline"] = {
+					"added 2.0.1.10000",
+					"removed 5.0.4.10000"
+				},
+			})),
+		}),
+		-- #endif
+		category(218, {	-- Helms
 			i(7915),	-- Barbaric Iron Helm
-			i(19148),	-- Dark Iron Helm
-			i(20551),	-- Darkrune Helm
-			i(12620, {	-- Enchanted Thorium Helm
-				["u"] = REMOVED_FROM_GAME,
-			}),
+			-- #if AFTER TBC
+			applyclassicphase(PHASE_THREE, i(19148)),	-- Dark Iron Helm
+			-- #endif
+			applyclassicphase(PHASE_FOUR, i(20551)),	-- Darkrune Helm
+			-- #if AFTER TBC
+			applyclassicphase(PHASE_THREE, i(12620, {	-- Enchanted Thorium Helm
+				["timeline"] = { "removed 4.0.1" },
+			})),
+			-- #endif
 			i(3837),	-- Golden Scale Coif
 			i(3836),	-- Green Iron Helm
 			i(7934),	-- Heavy Mithril Helm
+			-- #if AFTER TBC
 			i(12636),	-- Helm of the Great Chief
+			-- #endif
 			i(12427),	-- Imperial Plate Helm
+			-- #if AFTER TBC
 			i(12640),	-- Lionheart Helm
+			-- #endif
 			i(7931),	-- Mithril Coif
 			i(7937, {	-- Ornate Mithril Helm
-				["u"] = REMOVED_FROM_GAME,
+				["timeline"] = { "removed 4.0.1" },
 			}),
 			i(12417),	-- Radiant Circlet
 			i(12612),	-- Runic Plate Helm
 			i(7922),	-- Steel Plate Helm
 			i(12410),	-- Thorium Helm
+			-- #if AFTER TBC
 			i(12633),	-- Whitesoul Helm
+			-- #endif
 		}),
-		n(SHOULDER, {
+		category(219, {	-- Shoulders
 			i(7913),	-- Barbaric Iron Shoulders
-			i(19691, {	-- Bloodsoul Shoulders
-				["u"] = REMOVED_FROM_GAME,
-			}),
+			applyclassicphase(PHASE_FOUR, i(19691, {	-- Bloodsoul Shoulders
+				["timeline"] = { "removed 4.0.3" },
+			})),
 			i(11605),	-- Dark Iron Shoulders
-			i(19695, {	-- Darksoul Shoulders
-				["u"] = REMOVED_FROM_GAME,
-			}),
-			i(12625),	-- Dawnbringer Shoulders
+			applyclassicphase(PHASE_FOUR, i(19695, {	-- Darksoul Shoulders
+				["timeline"] = { "removed 4.0.3" },
+			})),
+			-- #if AFTER TBC
+			applyclassicphase(TBC_PHASE_ONE, i(12625)),	-- Dawnbringer Shoulders
 			i(16988),	-- Fiery Chain Shoulders
+			-- #endif
 			i(3841),	-- Golden Scale Shoulders
 			i(3840),	-- Green Iron Shoulders
 			i(7918),	-- Heavy Mithril Shoulder
 			i(12428),	-- Imperial Plate Shoulders
 			i(7932),	-- Mithril Scale Shoulders
 			i(7928, {	-- Ornate Mithril Shoulder
-				["u"] = REMOVED_FROM_GAME,
+				["timeline"] = { "removed 4.0.1" },
 			}),
 			i(3480),	-- Rough Bronze Shoulders
 			i(12610),	-- Runic Plate Shoulders
 			i(3481),	-- Silvered Bronze Shoulders
 		}),
-		n(CHEST, {
+		category(220, {	-- Chest
 			i(7914),	-- Barbaric Iron Breastplate
-			i(163964),	-- Barbaric Iron Hauberk
-			i(19690, {	-- Bloodsoul Breastplate
-				["u"] = REMOVED_FROM_GAME,
+			i(163964, {	-- Barbaric Iron Hauberk
+				["timeline"] = { "added 8.0.1" },
 			}),
+			applyclassicphase(PHASE_FOUR, i(19690, {	-- Bloodsoul Breastplate
+				["timeline"] = { "removed 4.0.3" },
+			})),
 			i(3471),	-- Copper Chain Vest
+			i(11606),	-- Dark Iron Mail / Dark Iron Plate
+			-- #if AFTER TBC
 			i(11604),	-- Dark Iron Plate
-			i(11606),	-- Dark Iron Plate
-			i(20550),	-- Darkrune Breastplate
-			i(19693, {	-- Darksoul Breastplate
-				["u"] = REMOVED_FROM_GAME,
-			}),
+			-- #endif
+			applyclassicphase(PHASE_FOUR, i(20550)),	-- Darkrune Breastplate
+			applyclassicphase(PHASE_FOUR, i(19693, {	-- Darksoul Breastplate
+				["timeline"] = { "removed 4.0.3" },
+			})),
+			-- #if AFTER TBC
 			i(12628, {	-- Demon Forged Breastplate
-				["u"] = REMOVED_FROM_GAME,
+				["timeline"] = { "removed 4.0.3" },
 			}),
-			i(12618, {	-- Enchanted Thorium Breastplate
-				["u"] = REMOVED_FROM_GAME,
-			}),
+			applyclassicphase(PHASE_THREE, i(12618, {	-- Enchanted Thorium Breastplate
+				["timeline"] = { "removed 4.0.1" },
+			})),
+			-- #endif
 			i(3845),	-- Golden Scale Cuirass
 			i(3844),	-- Green Iron Hauberk
 			i(7930),	-- Heavy Mithril Breastplate
-			i(22669, {	-- Icebane Breastplate
-				["u"] = REMOVED_FROM_GAME,
-			}),
+			applyclassicphase(PHASE_SIX, i(22669, {	-- Icebane Breastplate
+				["timeline"] = { "removed 3.0.1" },
+			})),
 			i(12422),	-- Imperial Plate Chest
+			-- #if AFTER TBC
 			i(12641),	-- Invulnerable Mail
+			-- #endif
 			i(6731),	-- Ironforge Breastplate
-			i(22762),	-- Ironvine Breastplate
-			i(22191),	-- Obsidian Plate Tunic
+			applyclassicphase(PHASE_FIVE_CATCH_UP, i(22762)),	-- Ironvine Breastplate
+			applyclassicphase(PHASE_FIVE, i(22191)),	-- Obsidian Mail Tunic
 			i(7935, {	-- Ornate Mithril Breastplate
-				["u"] = REMOVED_FROM_GAME,
+				["timeline"] = { "removed 4.0.1" },
 			}),
 			i(12415),	-- Radiant Breastplate
 			i(2866),	-- Rough Bronze Cuirass
 			i(2864),	-- Runed Copper Breastplate
+			i(10421),	-- Rough Copper Vest
 			i(12613, {	-- Runic Breastplate
-				["u"] = REMOVED_FROM_GAME,
+				["timeline"] = { "removed 4.0.3" },
 			}),
 			i(2870),	-- Shining Silver Breastplate
 			i(2869),	-- Silvered Bronze Breastplate
 			i(7963),	-- Steel Breastplate
-			i(22196),	-- Thick Obsidian Breastplate
+			applyclassicphase(PHASE_FIVE, i(22196)),	-- Thick Obsidian Breastplate
 			i(12405),	-- Thorium Armor
+			-- #if AFTER TBC
 			i(7939, {	-- Truesilver Breastplate
-				["u"] = REMOVED_FROM_GAME,
+				["timeline"] = { "removed 4.0.3" },
 			}),
 			i(12624),	-- Wildthorn Mail
+			-- #endif
 		}),
-		n(HANDS, {
-			i(7917),	-- Barbaric Iron Gloves
-			i(22194),	-- Black Grasp of the Destroyer
-			i(19692, {	-- Bloodsoul Gauntlets
-				["u"] = REMOVED_FROM_GAME,
-			}),
-			i(19164),	-- Dark Iron Gauntlets
-			i(20549),	-- Darkrune Gauntlets
-			i(12631, {	-- Fiery Plate Gauntlets
-				["u"] = REMOVED_FROM_GAME,
-			}),
-			i(3474),	-- Gemmed Copper Gauntlets
-			i(19057),	-- Gloves of the Dawn
-			i(9366, {	-- Golden Scale Gauntlets
-				["u"] = REMOVED_FROM_GAME,
-			}),
-			i(3485),	-- Green Iron Gauntlets
-			i(7919),	-- Heavy Mithril Gauntlet
-			i(22670, {	-- Icebane Gauntlets
-				["u"] = REMOVED_FROM_GAME,
-			}),
-			i(22763),	-- Ironvine Gloves
-			i(7927, {	-- Ornate Mithril Gloves
-				["u"] = REMOVED_FROM_GAME,
-			}),
-			i(12418),	-- Radiant Gloves
-			i(3472),	-- Runed Copper Gauntlets
-			i(3483),	-- Silvered Bronze Gauntlets
-			i(12632),	-- Storm Gauntlets
-			i(12639),	-- Stronghold Gauntlets
-			i(7938, {	-- Truesilver Gauntlets
-				["u"] = REMOVED_FROM_GAME,
-			}),
-		}),
-		n(WRIST, {
+		category(222, {	-- Bracers
+			i(2853),	-- Copper Bracers
+			-- #if AFTER TBC
 			i(17014),	-- Dark Iron Bracers
+			-- #endif
 			i(6040),	-- Golden Scale Bracers
 			i(3835),	-- Green Iron Bracers
-			i(22671, {	-- Icebane Bracers
-				["u"] = REMOVED_FROM_GAME,
-			}),
+			applyclassicphase(PHASE_SIX, i(22671, {	-- Icebane Bracers
+				["timeline"] = { "removed 3.0.1" },
+			})),
 			i(12425),	-- Imperial Plate Bracers
 			i(7924),	-- Mithril Scale Bracers
 			i(2868),	-- Patterned Bronze Bracers
 			i(2854),	-- Runed Copper Bracers
 			i(12408),	-- Thorium Bracers
 		}),
-		n(WAIST, {
+		category(221, {	-- Gauntlets
+			i(7917),	-- Barbaric Iron Gloves
+			applyclassicphase(PHASE_FIVE, i(22194)),	-- Black Grasp of the Destroyer
+			applyclassicphase(PHASE_FOUR, i(19692, {	-- Bloodsoul Gauntlets
+				["timeline"] = { "removed 4.0.3" },
+			})),
+			-- #if AFTER TBC
+			applyclassicphase(PHASE_THREE, i(19164)),	-- Dark Iron Gauntlets
+			-- #endif
+			applyclassicphase(PHASE_FOUR, i(20549)),	-- Darkrune Gauntlets
+			-- #if AFTER TBC
+			i(12631, {	-- Fiery Plate Gauntlets
+				["timeline"] = { "removed 4.0.3" },
+			}),
+			-- #endif
+			i(3474),	-- Gemmed Copper Gauntlets
+			applyclassicphase(PHASE_THREE, i(19057)),	-- Gloves of the Dawn
+			i(9366, {	-- Golden Scale Gauntlets
+				["timeline"] = { "removed 4.0.1" },
+			}),
+			i(3485),	-- Green Iron Gauntlets
+			i(7919),	-- Heavy Mithril Gauntlet
+			applyclassicphase(PHASE_SIX, i(22670, {	-- Icebane Gauntlets
+				["timeline"] = { "removed 3.0.1" },
+			})),
+			applyclassicphase(PHASE_FIVE_CATCH_UP, i(22763, {	-- Ironvine Gloves
+				["timeline"] = { "removed 4.0.3" },
+			})),
+			i(7927, {	-- Ornate Mithril Gloves
+				["timeline"] = { "removed 4.0.1" },
+			}),
+			i(12418),	-- Radiant Gloves
+			i(3472),	-- Runed Copper Gauntlets
+			i(3483),	-- Silvered Bronze Gauntlets
+			-- #if AFTER TBC
+			i(12632),	-- Storm Gauntlets
+			i(12639),	-- Stronghold Gauntlets
+			i(7938, {	-- Truesilver Gauntlets
+				["timeline"] = { "removed 4.0.1" },
+			}),
+			-- #endif
+		}),
+		category(223, {	-- Belts
+			i(2851),	-- Copper Chain Belt
+			-- #if AFTER TBC
 			i(16989),	-- Fiery Chain Girdle
-			i(19051),	-- Girdle of the Dawn
-			i(22197),	-- Heavy Obsidian Belt
-			i(19043),	-- Heavy Timbermaw Belt
+			-- #endif
+			applyclassicphase(PHASE_THREE, i(19051)),	-- Girdle of the Dawn
+			applyclassicphase(PHASE_FIVE, i(22197)),	-- Heavy Obsidian Belt
+			applyclassicphase(PHASE_THREE, i(19043)),	-- Heavy Timbermaw Belt
 			i(12424),	-- Imperial Plate Belt
-			i(22764),	-- Ironvine Belt
-			i(22195),	-- Light Obsidian Belt
+			applyclassicphase(PHASE_FIVE_CATCH_UP, i(22764)),	-- Ironvine Belt
+			applyclassicphase(PHASE_FIVE, i(22195)),	-- Light Obsidian Belt
 			i(12416),	-- Radiant Belt
 			i(2857),	-- Runed Copper Belt
 			i(12406),	-- Thorium Belt
 		}),
-		n(LEGS, {
+		category(224, {	-- Legs
+			i(2852),	-- Copper Chain Pants
+			-- #if AFTER TBC
 			i(17013),	-- Dark Iron Leggings
-			i(19694, {	-- Darksoul Leggings
-				["u"] = REMOVED_FROM_GAME,
-			}),
-			i(12619, {	-- Enchanted Thorium Leggings
-				["u"] = REMOVED_FROM_GAME,
-			}),
+			-- #endif
+			applyclassicphase(PHASE_FOUR, i(19694, {	-- Darksoul Leggings
+				["timeline"] = { "removed 4.0.3" },
+			})),
+			-- #if AFTER TBC
+			applyclassicphase(PHASE_THREE, i(12619, {	-- Enchanted Thorium Leggings
+				["timeline"] = { "removed 4.0.3" },
+			})),
+			-- #endif
 			i(3843),	-- Golden Scale Leggings
 			i(3842),	-- Green Iron Leggings
 			i(7921),	-- Heavy Mithril Pants
 			i(12429),	-- Imperial Plate Leggings
 			i(7920),	-- Mithril Scale Pants
 			i(7929, {	-- Orcish War Leggings
-				["u"] = REMOVED_FROM_GAME,
+				["timeline"] = { "removed 4.0.3" },
 			}),
 			i(7926, {	-- Ornate Mithril Pants
-				["u"] = REMOVED_FROM_GAME,
+				["timeline"] = { "removed 4.0.1" },
 			}),
 			i(12420),	-- Radiant Leggings
 			i(2865),	-- Rough Bronze Leggings
@@ -442,18 +747,23 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(12614),	-- Runic Plate Leggings
 			i(10423),	-- Silvered Bronze Leggings
 			i(12414),	-- Thorium Leggings
-			i(22385),	-- Titanic Leggings
+			-- #if AFTER TBC
+			applyclassicphase(PHASE_FIVE, i(22385)),	-- Titanic Leggings
+			-- #endif
 		}),
-		n(FEET, {
+		category(225, {	-- Boots
 			i(7916),	-- Barbaric Iron Boots
-			i(20039),	-- Dark Iron Boots
+			i(3469),	-- Copper Chain Boots
+			-- #if AFTER TBC
+			applyclassicphase(PHASE_FOUR, i(20039)),	-- Dark Iron Boots
+			-- #endif
 			i(3847),	-- Golden Scale Boots
 			i(3484),	-- Green Iron Boots
 			i(7933),	-- Heavy Mithril Boots
-			i(19048),	-- Heavy Timbermaw Boots
+			applyclassicphase(PHASE_THREE, i(19048)),	-- Heavy Timbermaw Boots
 			i(12426),	-- Imperial Plate Boots
 			i(7936, {	-- Ornate Mithril Boots
-				["u"] = REMOVED_FROM_GAME,
+				["timeline"] = { "removed 4.0.1" },
 			}),
 			i(3846),	-- Polished Steel Boots
 			i(12419),	-- Radiant Boots
@@ -462,26 +772,12 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(3482),	-- Silvered Bronze Boots
 			i(12409),	-- Thorium Boots
 		}),
-		-- #if BEFORE MOP
-		i(29203, {	-- Enchanted Thorium Blades
-			["timeline"] = {
-				"added 2.0.1.10000",
-				"removed 5.0.4.10000"
-			},
+		category(228, {	-- Skeleton Keys
+			i(15872),	-- Arcanite Skeleton Key
+			i(15870),	-- Golden Skeleton Key
+			i(15869),	-- Silver Skeleton Key
+			i(15871),	-- Truesilver Skeleton Key
 		}),
-		i(29201, {	-- Thick Bronze Darts
-			["timeline"] = {
-				"added 2.0.1.10000",
-				"removed 5.0.4.10000"
-			},
-		}),
-		i(29202, {	-- Whirling Steel Axes
-			["timeline"] = {
-				"added 2.0.1.10000",
-				"removed 5.0.4.10000"
-			},
-		}),
-		-- #endif
 	}),
 	prof(COOKING, {
 		category(63, {	-- Everyday Cooking
@@ -695,6 +991,8 @@ _.Craftables = { tier(CLASSIC_TIER, {
 					i(10720),	-- Gnomish Net-o-Matic Projector
 					i(10724),	-- Gnomish Rocket Boots
 					i(10716),	-- Gnomish Shrink Ray
+					i(18986),	-- Ultrasafe Transporter: Gadgetzan
+					i(18660),	-- World Enlarger
 				}),
 				category(185, {	-- Goggles
 					i(10545, {	-- Gnomish Goggles
@@ -705,10 +1003,6 @@ _.Craftables = { tier(CLASSIC_TIER, {
 					i(10713, {	-- Plans: Inlaid Mithril Cylinder
 						["description"] = "This recipe is crafted by Gnomish Engineers and given to Blacksmiths to learn so that the Blacksmith can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask a Gnomish Engineer to craft it for you.",
 					}),
-				}),
-				filter(102, {	-- Toys
-					i(18986),	-- Ultrasafe Transporter: Gadgetzan
-					i(18660),	-- World Enlarger
 				}),
 			},
 		}),
@@ -723,6 +1017,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				}),
 				-- #endif
 				category(188, {	-- Devices
+					i(18984),	-- Dimensional Ripper - Everlook
 					i(10543, {	-- Goblin Construction Helmet
 						["requireSkill"] = 20222,	-- Goblin Engineering (BOP - Required)
 					}),
@@ -747,9 +1042,6 @@ _.Craftables = { tier(CLASSIC_TIER, {
 					i(10644, {	-- Recipe: Goblin Rocket Fuel (Engineers make the recipe for alchemists)
 						["description"] = "This recipe is crafted by Goblin Engineers and given to Alchemists to learn so that the Alchemist can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask a Goblin Engineer to craft it for you.",
 					}),
-				}),
-				filter(102, {	-- Toys
-					i(18984),	-- Dimensional Ripper - Everlook
 				}),
 			},
 		}),
@@ -804,6 +1096,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(10518),	-- Parachute Cloak
 			i(6712),	-- Practice Lock
 			i(15846),	-- Salt Shaker
+			i(17716),	-- Snowmaster 9000
 			applyclassicphase(TBC_PHASE_ONE, i(22728)),	-- Steam Tonk Controller
 			i(4366),	-- Target Dummy
 			i(18639),	-- Ultra-Flash Shadow Reflector
@@ -931,9 +1224,21 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(6219),	-- Arclight Spanner
 			i(10498),	-- Gyromatic Micro-Adjustor
 		}),
-		filter(102, {	-- Toys
-			i(17716),	-- Snowmaster 9000
-		}),
+	}),
+	prof(FIRST_AID, {
+		i(1251),	-- Linen Bandage
+		i(2581),	-- Heavy Linen Bandage
+		i(6452),	-- Anti-Venom
+		i(3530),	-- Wool Bandage
+		i(3531),	-- Heavy Wool Bandage
+		i(6453),	-- Strong Anti-Venom
+		i(6450),	-- Silk Bandage
+		i(6451),	-- Heavy Silk Bandage
+		i(8544),	-- Mageweave Bandage
+		i(8545),	-- Heavy Mageweave Bandage
+		i(14529),	-- Runecloth Bandage
+		i(14530),	-- Heavy Runecloth Bandage
+		i(19440),	-- Powerful Anti-Venom
 	}),
 	prof(FISHING, {
 		filter(23, {	-- 1H Maces
@@ -954,8 +1259,6 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			}),
 		}),
 		filter(1, {		-- Held in Off-hand
-			i(34486),	-- Old Crafty
-			i(34484),	-- Old Ironjaw
 			i(6292),	-- 10 Pound Mud Snapper
 			i(6294),	-- 12 Pound Mud Snapper
 			i(6295),	-- 15 Pound Mud Snapper
@@ -1071,6 +1374,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(3819),	-- Wintersbite [Herbalism 195]
 		},
 	}),
+	-- #if AFTER WRATH
 	prof(INSCRIPTION, {
 		filter(111, {	-- Glyphs
 			i(89868, {	-- Glyph of the Cheetah
@@ -1078,25 +1382,13 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				["classes"] = { DRUID },
 			}),
 		}),
-		n(-491, {	-- Tarot Cards
+		category(106, {	-- Tarot Cards
 			i(44161, {	-- Arcane Tarot
 				i(44165),	-- Ace of Mages
 				i(44144),	-- Two of Mages
 				i(44145),	-- Three of Mages
 				i(44146),	-- Four of Mages
 				i(44147),	-- Five of Mages
-			}),
-			i(19228, {	-- Beasts Deck
-				["cost"] = {
-					{ "i", 19227, 1 },	-- Ace of Beasts
-					{ "i", 19230, 1 },	-- Two of Beasts
-					{ "i", 19231, 1 },	-- Three of Beasts
-					{ "i", 19232, 1 },	-- Four of Beasts
-					{ "i", 19233, 1 },	-- Five of Beasts
-					{ "i", 19234, 1 },	-- Six of Beasts
-					{ "i", 19235, 1 },	-- Seven of Beasts
-					{ "i", 19236, 1 },	-- Eight of Beasts
-				},
 			}),
 			i(44316, {	-- Darkmoon Card
 				i(19227),	-- Ace of Beasts
@@ -1132,59 +1424,10 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				i(19264),	-- Seven of Warlords
 				i(19265),	-- Eight of Warlords
 			}),
-			i(44158, {	-- Demons Deck
-				["cost"] = {
-					{ "i", 44143, 1 },	-- Ace of Demons
-					{ "i", 44154, 1 },	-- Two of Demons
-					{ "i", 44155, 1 },	-- Three of Demons
-					{ "i", 44156, 1 },	-- Four of Demons
-					{ "i", 44157, 1 },	-- Five of Demons
-				},
-			}),
-			i(19267, {	-- Elementals Deck
-				["cost"] = {
-					{ "i", 19268, 1 },	-- Ace of Elementals
-					{ "i", 19269, 1 },	-- Two of Elementals
-					{ "i", 19270, 1 },	-- Three of Elementals
-					{ "i", 19271, 1 },	-- Four of Elementals
-					{ "i", 19272, 1 },	-- Five of Elementals
-					{ "i", 19273, 1 },	-- Six of Elementals
-					{ "i", 19274, 1 },	-- Seven of Elementals
-					{ "i", 19275, 1 },	-- Eight of Elementals
-				},
-			}),
-			i(44148, {	-- Mages Deck
-				["cost"] = {
-					{ "i", 44165, 1 },	-- Ace of Mages
-					{ "i", 44144, 1 },	-- Two of Mages
-					{ "i", 44145, 1 },	-- Three of Mages
-					{ "i", 44146, 1 },	-- Four of Mages
-					{ "i", 44147, 1 },	-- Five of Mages
-				},
-			}),
 			i(37168, {	-- Mysterious Tarot
 				i(37140),	-- Ace of Rogues
 				i(37143),	-- Two of Rogues
 				i(37156),	-- Three of Rogues
-			}),
-			i(19277, {	-- Portals Deck
-				["cost"] = {
-					{ "i", 19276, 1 },	-- Ace of Portals
-					{ "i", 19278, 1 },	-- Two of Portals
-					{ "i", 19279, 1 },	-- Three of Portals
-					{ "i", 19280, 1 },	-- Four of Portals
-					{ "i", 19281, 1 },	-- Five of Portals
-					{ "i", 19282, 1 },	-- Six of Portals
-					{ "i", 19283, 1 },	-- Seven of Portals
-					{ "i", 19284, 1 },	-- Eight of Portals
-				},
-			}),
-			i(37163, {	-- Rogues Deck
-				["cost"] = {
-					{ "i", 37140, 1 },	-- Ace of Rogues
-					{ "i", 37143, 1 },	-- Two of Rogues
-					{ "i", 37156, 1 },	-- Three of Rogues
-				},
 			}),
 			i(44163, {	-- Shadowy Tarot
 				i(44143),	-- Ace of Demons
@@ -1199,26 +1442,6 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				i(37159),	-- Three of Swords
 				i(37160),	-- Four of Swords
 			}),
-			i(37164, {	-- Swords Deck
-				["cost"] = {
-					{ "i", 37145, 1 },	-- Ace of Swords
-					{ "i", 37147, 1 },	-- Two of Swords
-					{ "i", 37159, 1 },	-- Three of Swords
-					{ "i", 37160, 1 },	-- Four of Swords
-				},
-			}),
-			i(19257, {	-- Warlords Deck
-				["cost"] = {
-					{ "i", 19258, 1 },	-- Ace of Warlords
-					{ "i", 19259, 1 },	-- Two of Warlords
-					{ "i", 19260, 1 },	-- Three of Warlords
-					{ "i", 19261, 1 },	-- Four of Warlords
-					{ "i", 19262, 1 },	-- Five of Warlords
-					{ "i", 19263, 1 },	-- Six of Warlords
-					{ "i", 19264, 1 },	-- Seven of Warlords
-					{ "i", 19265, 1 },	-- Eight of Warlords
-				},
-			}),
 		}),
 		filter(1, {	-- Off-hand
 			i(43661),	-- Book of Stars
@@ -1232,35 +1455,9 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(43654),	-- Tome of the Dawn
 		}),
 	}),
+	-- #endif
+	-- #if AFTER TBC
 	prof(JEWELCRAFTING, {
-		filter(34, {	-- Fist Weapons
-			i(20954),	-- Heavy Iron Knuckles
-		}),
-		n(HEAD, {
-			i(21774),	-- Emerald Crown of Destruction
-			i(20832),	-- Moonsoul Crown
-			i(20969),	-- Ruby Crown of Restoration
-		}),
-		filter(51, {	-- Neck
-			i(20830),	-- Amulet of the Moon
-			i(45627),	-- Amulet of Truesight
-			i(21755),	-- Aquamarine Pendant of the Warrior
-			i(20909),	-- Barbaric Iron Collar
-			i(30419),	-- Brilliant Necklace
-			i(31154),	-- Bronze Torc
-			i(20967),	-- Citrine Pendant of Golden Healing
-			i(20831),	-- Heavy Golden Necklace of Battle
-			i(20966),	-- Jade Pendant of Blasting
-			i(21791),	-- Living Emerald Pendant
-			i(25438),	-- Malachite Pendant
-			i(21792),	-- Necklace of the Diamond Tower
-			i(21766),	-- Opal Necklace of Impact
-			i(21934),	-- Ornate Tigerseye Necklace
-			i(20950),	-- Pendant of the Agate Shield
-			i(21764),	-- Ruby Pendant of Fire
-			i(21790),	-- Sapphire Pendant of Winter Night
-			i(21933),	-- Thick Bronze Necklace
-		}),
 		filter(52, {	-- Finger
 			i(20964),	-- Aquamarine Signet
 			i(20958),	-- Blazing Citrine Ring
@@ -1297,6 +1494,39 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(20833),	-- Wicked Moonstone Ring
 			i(21931),	-- Woven Copper Ring
 		}),
+		filter(51, {	-- Neck
+			i(20830),	-- Amulet of the Moon
+			applyclassicphase(WRATH_PHASE_ONE, i(45627, {	-- Amulet of Truesight
+				["timeline"] = { "added 3.1.0.9614" },
+			})),
+			i(21755),	-- Aquamarine Pendant of the Warrior
+			i(20909),	-- Barbaric Iron Collar
+			i(30419),	-- Brilliant Necklace
+			i(31154),	-- Bronze Torc
+			i(20967),	-- Citrine Pendant of Golden Healing
+			i(20831),	-- Heavy Golden Necklace of Battle
+			i(20966),	-- Jade Pendant of Blasting
+			i(21791),	-- Living Emerald Pendant
+			i(25438),	-- Malachite Pendant
+			i(21792),	-- Necklace of the Diamond Tower
+			i(21766),	-- Opal Necklace of Impact
+			i(21934),	-- Ornate Tigerseye Necklace
+			i(20950),	-- Pendant of the Agate Shield
+			i(21764),	-- Ruby Pendant of Fire
+			i(21790),	-- Sapphire Pendant of Winter Night
+			i(21933),	-- Thick Bronze Necklace
+		}),
+		category(168, {	-- Materials
+			i(20817),	-- Bronze Setting
+			i(20816),	-- Delicate Copper Wire
+			i(20963),	-- Mithril Filigree
+			i(21752),	-- Thorium Setting
+		}),
+		category(167, {	-- Crowns
+			i(21774),	-- Emerald Crown of Destruction
+			i(20832),	-- Moonsoul Crown
+			i(20969),	-- Ruby Crown of Restoration
+		}),
 		filter(53, {	-- Trinket
 			i(21784),	-- Figurine - Black Diamond Crab
 			i(21758),	-- Figurine - Black Pearl Panther
@@ -1308,258 +1538,616 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(21763),	-- Figurine - Truesilver Boar
 			i(21760),	-- Figurine - Truesilver Crab
 		}),
-	}),
-	prof(LEATHERWORKING, {
-		filter(113, {	-- Bags
-			un(REMOVED_FROM_GAME, i(7372)),	-- Heavy Leather Ammo Pouch
-			un(REMOVED_FROM_GAME, i(7371)),	-- Heavy Quiver
-			i(34482),	-- Leatherworker's Satchel
-			un(REMOVED_FROM_GAME, i(8217)),	-- Quickdraw Quiver
-			un(REMOVED_FROM_GAME, i(8218)),	-- Thick Leather Ammo Pouch
+		filter(34, {	-- Fist Weapons
+			i(20954),	-- Heavy Iron Knuckles
 		}),
-		n(BACK, {
-			un(REMOVED_FROM_GAME, i(18509)),	-- Chromatic Cloak
-			un(REMOVED_FROM_GAME, i(6466)),		-- Deviate Scale Cloak
-			un(REMOVED_FROM_GAME, i(18510)),	-- Hide of the Wild
-			un(REMOVED_FROM_GAME, i(18511)),	-- Shifting Cloak
-			un(REMOVED_FROM_GAME, i(8215)),		-- Wild Leather Cloak
+		filter(50, {	-- Miscellaneous
+			i(25880),	-- Coarse Stone Statue
+			i(25883),	-- Dense Stone Statue
+			i(25881),	-- Heavy Stone Statue
+			i(25498),	-- Rough Stone Statue
+			i(25882),	-- Solid Stone Statue
+		}),
+	}),
+	-- #endif
+	prof(LEATHERWORKING, {
+		-- #if BEFORE TBC
+		prof(10656, {	-- Dragonscale Leatherworking
+			["description"] = "These items can only be crafted by Leatherworkers who have completed the associated quest.",
+			["groups"] = {
+				category(252, {	-- Shoulders
+					i(15051),	-- Black Dragonscale Shoulders
+					i(15049, {	-- Blue Dragonscale Shoulders
+						["timeline"] = { "removed 4.0.3" },
+					}),
+				}),
+				category(253, {	-- Chest
+					i(15050),	-- Black Dragonscale Breastplate
+					i(15048, {	-- Blue Dragonscale Breastplate
+						["timeline"] = { "removed 4.0.3" },
+					}),
+					i(8367),	-- Dragonscale Breastplate
+					applyclassicphase(PHASE_FOUR, i(20380, {	-- Dreamscale Breastplate
+						-- #if AFTER 4.0.3
+						["description"] = "While this recipe is still available, the mats required to craft it are not.",
+						["timeline"] = { "removed 4.0.3" },
+						-- #endif
+					})),
+					i(15045),	-- Green Dragonscale Breastplate
+					i(15047, {	-- Red Dragonscale Breastplate
+						["timeline"] = { "removed 6.0.2" },
+					}),
+				}),
+				category(255, {	-- Gloves
+					applyclassicphase(PHASE_THREE, i(19157)),	-- Chromatic Gauntlets
+					i(8347, {	-- Dragonscale Gauntlets
+						["timeline"] = { "removed 4.0.3" },
+					}),
+					i(20296),	-- Green Dragonscale Gauntlets
+				}),
+				category(257, {	-- Pants
+					i(15052),	-- Black Dragonscale Leggings
+					i(20295),	-- Blue Dragonscale Leggings
+					i(15046),	-- Green Dragonscale Leggings
+				}),
+				category(258, {	-- Boots
+					i(16984),	-- Black Dragonscale Boots
+				}),
+				category(259, {	-- Cloaks
+					applyclassicphase(PHASE_ONE_DIREMAUL, i(18509, {	-- Chromatic Cloak
+						["timeline"] = { "removed 4.0.3" },
+					})),
+				}),
+			},
+		}),
+		prof(10658, {	-- Elemental Leatherworking
+			["description"] = "These items can only be crafted by Leatherworkers who have completed the associated quest.",
+			["groups"] = {
+				category(251, {	-- Helms
+					i(8348),	-- Helm of Fire
+					i(16983),	-- Molten Helm
+				}),
+				category(252, {	-- Shoulders
+					i(15061),	-- Living Shoulders
+					i(15058),	-- Stormshroud Shoulders
+					i(15055),	-- Volcanic Shoulders
+				}),
+				category(253, {	-- Chest
+					i(15059, {	-- Living Breastplate
+						["timeline"] = { "removed 4.0.3" },
+					}),
+					i(15056),	-- Stormshroud Armor
+					i(15053),	-- Volcanic Breastplate
+				}),
+				category(255, {	-- Gloves
+					i(8346),	-- Gauntlets of the Sea
+					i(21278),	-- Stormshroud Gloves
+				}),
+				category(256, {	-- Belts
+					applyclassicphase(PHASE_THREE, i(19163)),	-- Molten Belt
+				}),
+				category(257, {	-- Pants
+					i(15060, {	-- Living Leggings
+						["timeline"] = { "removed 4.0.3" },
+					}),
+					i(15057),	-- Stormshroud Pants
+					i(15054, {	-- Volcanic Leggings
+						["timeline"] = { "removed 4.0.3" },
+					}),
+				}),
+				category(259, {	-- Cloaks
+					applyclassicphase(PHASE_ONE_DIREMAUL, i(18511, {	-- Shifting Cloak
+						["timeline"] = { "removed 4.0.3" },
+					})),
+				}),
+			},
+		}),
+		prof(10660, {	-- Tribal Leatherworking
+			["description"] = "These items can only be crafted by Leatherworkers who have completed the associated quest.",
+			["groups"] = {
+				category(251, {	-- Helms
+					i(8345, {	-- Wolfshead Helm
+						["timeline"] = { "removed 4.0.3" },
+					}),
+				}),
+				category(252, {	-- Shoulders
+					i(15067),	-- Ironfeather Shoulders
+				}),
+				category(253, {	-- Chest
+					i(15075),	-- Chimeric Vest
+					i(8349),	-- Feathered Breastplate
+					i(15068, {	-- Frostsaber Tunic
+						["timeline"] = { "removed 4.0.3" },
+					}),
+					i(15066, {	-- Ironfeather Breastplate
+						["timeline"] = { "removed 4.0.3" },
+					}),
+					i(15064),	-- Warbear Harness
+				}),
+				category(255, {	-- Gloves
+					i(15074, {	-- Chimeric Gloves
+						["timeline"] = { "removed 4.0.3" },
+					}),
+					i(15063),	-- Devilsaur Gauntlets
+					i(15070, {	-- Frostsaber Gloves
+						["timeline"] = { "removed 4.0.3" },
+					}),
+				}),
+				category(256, {	-- Belts
+					applyclassicphase(PHASE_THREE, i(19162)),	-- Corehound Belt
+				}),
+				category(257, {	-- Pants
+					i(15072),	-- Chimeric Leggings
+					i(15062),	-- Devilsaur Leggings
+					i(15069, {	-- Frostsaber Leggings
+						["timeline"] = { "removed 4.0.3" },
+					}),
+					i(15065),	-- Warbear Woolies
+				}),
+				category(258, {	-- Boots
+					i(15073),	-- Chimeric Boots
+					i(16982),	-- Corehound Boots
+					i(15071),	-- Frostsaber Boots
+				}),
+				category(259, {	-- Cloaks
+					applyclassicphase(PHASE_ONE_DIREMAUL, i(18510, {	-- Hide of the Wild
+						["timeline"] = { "removed 4.0.3" },
+					})),
+				}),
+			},
+		}),
+		-- #endif
+		category(247, {	-- Materials
+			i(4236),	-- Cured Heavy Hide
+			i(4231),	-- Cured Light Hide
+			i(4233),	-- Cured Medium Hide
+			i(15407),	-- Cured Rugged Hide
+			i(8172),	-- Cured Thick Hide
+			applyclassicphase(PHASE_ONE_DIREMAUL, i(18258)),	-- Gordok Ogre Suit
+			i(4234),	-- Heavy Leather
+			i(2318),	-- Light Leather
+			i(2319),	-- Medium Leather
+			i(8170),	-- Rugged Leather
+			i(4304),	-- Thick Leather
+		}),
+		category(249, {	-- Armor Kits
+			i(18251),	-- Core Armor Kit
+			i(4265),	-- Heavy Armor Kit
+			i(2304),	-- Light Armor Kit
+			i(2313),	-- Medium Armor Kit
+			i(15564),	-- Rugged Armor Kit
+			i(8173),	-- Thick Armor Kit
+		}),
+		category(250, {	-- Bags
+			i(7372, {	-- Heavy Leather Ammo Pouch
+				["timeline"] = { "removed 4.0.1.13287" },
+			}),
+			i(7371, {	-- Heavy Quiver
+				["timeline"] = { "removed 4.0.1.13287" },
+			}),
+			i(5081),	-- Kodo Hide Bag
+			i(7278, {	-- Light Leather Quiver
+				["timeline"] = { "removed 4.0.1.13287" },
+			}),
+			i(8217, {	-- Quickdraw Quiver
+				["timeline"] = { "removed 4.0.1.13287" },
+			}),
+			i(7279, {	-- Small Leather Ammo Pouch
+				["timeline"] = { "removed 4.0.1.13287" },
+			}),
+			i(8218, {	-- Thick Leather Ammo Pouch
+				["timeline"] = { "removed 4.0.1.13287" },
+			}),
+		}),
+		category(188, {	-- Devices
+			i(18662),	-- Heavy Leather Ball
+		}),
+		category(259, {	-- Cloaks
 			i(8216),	-- Big Voodoo Cloak
 			i(7283),	-- Black Whelp Cloak
+			-- #if AFTER TBC
+			applyclassicphase(PHASE_ONE_DIREMAUL, i(18509, {	-- Chromatic Cloak
+				["timeline"] = { "removed 4.0.3" },
+			})),
+			-- #endif
 			i(2316),	-- Dark Leather Cloak
+			i(6466, {	-- Deviate Scale Cloak
+				["timeline"] = { "removed 4.0.3" },
+			}),
 			i(2310),	-- Embossed Leather Cloak
 			i(2308),	-- Fine Leather Cloak
 			i(7377),	-- Frost Leather Cloak
 			i(5965),	-- Guardian Cloak
+			i(7276),	-- Handstitched Leather Cloak
+			-- #if AFTER TBC
+			applyclassicphase(PHASE_ONE_DIREMAUL, i(18510, {	-- Hide of the Wild
+				["timeline"] = { "removed 4.0.3" },
+			})),
+			-- #endif
 			i(3719),	-- Hillman's Cloak
 			i(15138),	-- Onyxia Scale Cloak
+			-- #if AFTER TBC
+			applyclassicphase(PHASE_ONE_DIREMAUL, i(18511, {	-- Shifting Cloak
+				["timeline"] = { "removed 4.0.3" },
+			})),
+			-- #endif
+			i(8215, {	-- Wild Leather Cloak
+				["timeline"] = { "removed 4.0.3" },
+			}),
 		}),
-		n(-44, {	-- Leather
-			n(HEAD, {
-				i(22759),	-- Bramblewood Helm
+		filter(5, {	-- Leather
+			category(251, {	-- Helms
+				i(8201),	-- Big Voodoo Mask
+				applyclassicphase(PHASE_FIVE_CATCH_UP, i(22759)),	-- Bramblewood Helm
+				i(8174),	-- Comfortable Leather Hat
+				-- #if AFTER TBC
+				i(8348),	-- Helm of Fire
 				i(16983),	-- Molten Helm
+				-- #endif
+				i(8176),	-- Nightscape Headband
 				i(15094),	-- Runic Leather Headband (Trainable now, old Pattern id 15756 used to teach this.)
 				i(15086),	-- Wicked Leather Headband (Trainable now, old Pattern id 15744 used to teach this.)
-				i(8348),	-- Helm of Fire
-				un(REMOVED_FROM_GAME, i(8345)),		-- Wolfshead Helm
-				un(REMOVED_FROM_GAME, i(8214)),		-- Wild Leather Helmet
-				i(8201),	-- Big Voodoo Mask
-				i(8176),	-- Nightscape Headband
-				i(8174),	-- Comfortable Leather Hat
+				i(8214, {	-- Wild Leather Helmet
+					["timeline"] = { "removed 4.0.3" },
+				}),
+				-- #if AFTER TBC
+				i(8345, {	-- Wolfshead Helm
+					["timeline"] = { "removed 4.0.3" },
+				}),
+				-- #endif
 			}),
-			n(SHOULDER, {
-				un(REMOVED_FROM_GAME, i(19689)),	-- Blood Tiger Shoulders
-				i(15058),	-- Stormshroud Shoulders
-				i(15055),	-- Volcanic Shoulders
-				i(19058),	-- Golden Mantle of the Dawn
-				i(15061),	-- Living Shoulders
-				i(15096),	-- Runic Leather Shoulders (Trainable now, old Pattern id 15777 used to teach this.)
-				i(15067),	-- Ironfeather Shoulders
-				un(REMOVED_FROM_GAME, i(8210)),		-- Wild Leather Shoulders
-				i(8192),	-- Nightscape Shoulders
+			category(252, {	-- Shoulder
 				i(5964),	-- Barbaric Shoulders
+				applyclassicphase(PHASE_FOUR, i(19689, {	-- Blood Tiger Shoulders
+					["timeline"] = { "removed 4.0.3" },
+				})),
 				i(4252),	-- Dark Leather Shoulders
 				i(7352),	-- Earthen Leather Shoulders
+				applyclassicphase(PHASE_THREE, i(19058)),	-- Golden Mantle of the Dawn
 				i(4251),	-- Hillman's Shoulders
+				-- #if AFTER TBC
+				i(15067),	-- Ironfeather Shoulders
+				i(15061),	-- Living Shoulders
+				-- #endif
+				i(8192),	-- Nightscape Shoulders
+				i(15096),	-- Runic Leather Shoulders (Trainable now, old Pattern id 15777 used to teach this.)
+				-- #if AFTER TBC
+				i(15058),	-- Stormshroud Shoulders
+				i(15055),	-- Volcanic Shoulders
+				-- #endif
+				i(8210, {	-- Wild Leather Shoulders
+					["timeline"] = { "removed 4.0.3" },
+				}),
 			}),
-			n(CHEST, {
-				un(REMOVED_FROM_GAME, i(22661)),	-- Polar Tunic
-				un(REMOVED_FROM_GAME, i(19688)),	-- Blood Tiger Breastplate
-				un(REMOVED_FROM_GAME, i(19685)),	-- Primal Batskin Jerkin
-				un(REMOVED_FROM_GAME, i(15059)),	-- Living Breastplate
-				i(15090),	-- Runic Leather Armor (Trainable now, old Pattern id 15776 used to teach this.)
-				i(15085),	-- Wicked Leather Armor (Trainable now, old Pattern id 15773 used to teach this.)
-				un(REMOVED_FROM_GAME, i(15066)),	-- Ironfeather Breastplate
-				i(15056),	-- Stormshroud Armor
+			category(253, {	-- Chest
+				i(5739),	-- Barbaric Harness
+				i(8200),	-- Big Voodoo Robe
+				i(20575),	-- Black Whelp Tunic
+				applyclassicphase(PHASE_FOUR, i(19688, {	-- Blood Tiger Breastplate
+					["timeline"] = { "removed 4.0.3" },
+				})),
+				-- #if AFTER TBC
 				i(15075),	-- Chimeric Vest
+				-- #endif
+				i(2317),	-- Dark Leather Tunic
+				i(7374),	-- Dusky Leather Armor
+				i(2300),	-- Embossed Leather Vest
+				-- #if AFTER TBC
+				i(8349),	-- Feathered Breastplate
+				-- #endif
+				i(4243),	-- Fine Leather Tunic
+				-- #if AFTER TBC
+				i(15068, {	-- Frostsaber Tunic
+					["timeline"] = { "removed 4.0.3" },
+				}),
+				-- #endif
+				i(4255),	-- Green Leather Armor
+				i(7375),	-- Green Whelp Armor
+				i(4256),	-- Guardian Armor
+				i(5957),	-- Handstitched Leather Vest
+				i(4244),	-- Hillman's Leather Vest
+				-- #if AFTER TBC
+				i(15066, {	-- Ironfeather Breastplate
+					["timeline"] = { "removed 4.0.3" },
+				}),
+				i(15059, {	-- Living Breastplate
+					["timeline"] = { "removed 4.0.3" },
+				}),
+				-- #endif
+				i(6709),	-- Moonglow Vest
+				i(5781),	-- Murloc Scale Breastplate
+				i(8175),	-- Nightscape Tunic
+				applyclassicphase(PHASE_SIX, i(22661, {	-- Polar Tunic
+					["timeline"] = { "removed 3.0.1" },
+				})),
+				applyclassicphase(PHASE_FOUR, i(19685, {	-- Primal Batskin Jerkin
+					["timeline"] = { "removed 4.0.3" },
+				})),
+				{
+					["itemID"] = 4455,	-- Raptor Hide Harness (Horde only)
+					["races"] = HORDE_ONLY,
+				},
+				i(15090),	-- Runic Leather Armor (Trainable now, old Pattern id 15776 used to teach this.)
+				-- #if AFTER TBC
+				i(15056),	-- Stormshroud Armor
+				-- #endif
+				i(5782),	-- Thick Murloc Armor
+				i(2314),	-- Toughened Leather Armor
+				-- #if AFTER TBC
 				i(15053),	-- Volcanic Breastplate
 				i(15064),	-- Warbear Harness
-				un(REMOVED_FROM_GAME, i(15068)),	-- Frostsaber Tunic
-				i(8349),	-- Feathered Breastplate
-				un(REMOVED_FROM_GAME, i(8211)),		-- Wild Leather Vest
-				i(8200),	-- Big Voodoo Robe
-				i(8175),	-- Nightscape Tunic
-				i(5739),	-- Barbaric Harness
-				i(7375),	-- Green Whelp Armor
-				i(7374),	-- Dusky Leather Armor
-				i(4256),	-- Guardian Armor
-				i(5782),	-- Thick Murloc Armor
-				i(4455),	-- Raptor Hide Harness
-				i(4255),	-- Green Leather Armor
-				i(2314),	-- Toughened Leather Armor
-				i(5781),	-- Murloc Scale Breastplate
-				i(2317),	-- Dark Leather Tunic
-				i(4244),	-- Hillman's Leather Vest
-				i(20575),	-- Black Whelp Tunic
-				i(6709),	-- Moonglow Vest
-				i(4243),	-- Fine Leather Tunic
+				-- #endif
 				i(2311),	-- White Leather Jerkin
-				i(2300),	-- Embossed Leather Vest
+				i(15085),	-- Wicked Leather Armor (Trainable now, old Pattern id 15773 used to teach this.)
+				i(8211, {	-- Wild Leather Vest
+					["timeline"] = { "removed 4.0.3" },
+				}),
 			}),
-			n(WRIST, {
-				un(REMOVED_FROM_GAME, i(22663)),	-- Polar Bracers
-				un(REMOVED_FROM_GAME, i(19687)),	-- Primal Batskin Bracers
-				i(15092),	-- Runic Leather Bracers (Trainable now, old Pattern id 15739 used to teach this.)
-				i(15084),	-- Wicked Leather Bracers (Trainable now, old Pattern id 15728 used to teach this.)
-				i(4260),	-- Guardian Leather Bracers
-				i(7386),	-- Green Whelp Bracers
-				i(5783),	-- Murloc Scale Bracers
+			category(254, {	-- Bracers
+				i(18948),	-- Barbaric Bracers
 				i(7378),	-- Dusky Bracers
 				i(4259),	-- Green Leather Bracers
-				i(18948),	-- Barbaric Bracers
+				i(7386),	-- Green Whelp Bracers
+				i(4260),	-- Guardian Leather Bracers
+				i(7277),	-- Handstitched Leather Bracers
 				i(7281),	-- Light Leather Bracers
+				i(5783),	-- Murloc Scale Bracers
+				applyclassicphase(PHASE_SIX, i(22663, {	-- Polar Bracers
+					["timeline"] = { "removed 3.0.1" },
+				})),
+				applyclassicphase(PHASE_FOUR, i(19687, {	-- Primal Batskin Bracers
+					["timeline"] = { "removed 4.0.3" },
+				})),
+				i(15092),	-- Runic Leather Bracers (Trainable now, old Pattern id 15739 used to teach this.)
+				i(15084),	-- Wicked Leather Bracers (Trainable now, old Pattern id 15728 used to teach this.)
 			}),
-			n(HANDS, {
-				i(19049),	-- Timbermaw Brawlers
-				un(REMOVED_FROM_GAME, i(22662)),	-- Polar Gloves
-				un(REMOVED_FROM_GAME, i(19686)),	-- Primal Batskin Gloves
-				un(REMOVED_FROM_GAME, i(15070)),	-- Frostsaber Gloves
-				i(15063),	-- Devilsaur Gauntlets
-				i(21278),	-- Stormshroud Gloves
-				i(15091),	-- Runic Leather Gauntlets (Trainable now, old Pattern id 15731 used to teach this.)
-				i(15083),	-- Wicked Leather Gauntlets (Trainable now, old Pattern id 15725 used to teach this.)
-				un(REMOVED_FROM_GAME, i(15074)),	-- Chimeric Gloves
-				i(8346),	-- Gauntlets of the Sea
-				i(18238),	-- Shadowskin Gloves
-				un(FEAST_OF_WINTER_VEIL, i(17721)),	-- Gloves of the Greatfather
-				i(5966),	-- Guardian Gloves
-				i(4247),	-- Hillman's Leather Gloves
-				i(7359),	-- Heavy Earthen Gloves
+			category(255, {	-- Gloves
 				i(4254),	-- Barbaric Gloves
-				i(7358),	-- Pilferer's Gloves
-				i(4253),	-- Toughened Leather Gloves
+				-- #if AFTER TBC
+				i(15074, {	-- Chimeric Gloves
+					["timeline"] = { "removed 4.0.3" },
+				}),
+				-- #endif
 				i(4248),	-- Dark Leather Gloves
-				i(7285),	-- Nimble Leather Gloves
-				i(7284),	-- Red Whelp Gloves
-				i(7349),	-- Herbalist's Gloves
-				un(REMOVED_FROM_GAME, i(6467)),		-- Deviate Scale Gloves
-				i(2312),	-- Fine Leather Gloves
+				i(6467, {	-- Deviate Scale Gloves
+					["timeline"] = { "removed 4.0.3" },
+				}),
+				-- #if AFTER TBC
+				i(15063),	-- Devilsaur Gauntlets
+				-- #endif
 				i(4239),	-- Embossed Leather Gloves
-			}),
-			n(WAIST, {
-				un(REMOVED_FROM_GAME, i(18504)),	-- Girdle of Insight
-					i(22761),	-- Bramblewood Belt
-					i(19163),	-- Molten Belt
-					i(19162),	-- Corehound Belt
-					i(19149),	-- Lava Belt
-					i(15088),	-- Wicked Leather Belt (Trainable now, old Pattern id 15768 used to teach this.)
-					i(19044),	-- Might of the Timbermaw
-					i(15093),	-- Runic Leather Belt (Trainable now, old Pattern id 15745 used to teach this.)
-					i(4264),	-- Barbaric Belt
-					i(7387),	-- Dusky Belt
-					i(4262),	-- Gem-Studded Leather Belt
-					i(4258),	-- Guardian Belt
-					a(i(4456)),	-- Raptor Hide Belt (Alliance only)
-					i(4257),	-- Green Leather Belt
-					i(4249),	-- Dark Leather Belt
-					i(4250),	-- Hillman's Belt
-					un(REMOVED_FROM_GAME, i(6468)),		-- Deviate Scale Belt
-					i(5780),	-- Murloc Scale Belt
-					i(4246),	-- Fine Leather Belt
+				i(2312),	-- Fine Leather Gloves
+				-- #if AFTER TBC
+				i(15070, {	-- Frostsaber Gloves
+					["timeline"] = { "removed 4.0.3" },
 				}),
-			n(LEGS, {
-				i(15095),	-- Runic Leather Pants (Trainable now, old Pattern id 15765 used to teach this.)
-				i(15062),	-- Devilsaur Leggings
-				un(REMOVED_FROM_GAME, i(15069)),	-- Frostsaber Leggings
-				i(15065),	-- Warbear Woolies
-				i(15087),	-- Wicked Leather Pants (Trainable now, old Pattern id 15757 used to teach this.)
-				un(REMOVED_FROM_GAME, i(15060)),	-- Living Leggings
-				i(15072),	-- Chimeric Leggings
-				i(15057),	-- Stormshroud Pants
-				un(REMOVED_FROM_GAME, i(15054)),	-- Volcanic Leggings
-				un(REMOVED_FROM_GAME, i(8212)),		-- Wild Leather Leggings
-				i(8202),	-- Big Voodoo Pants
-				i(8193),	-- Nightscape Pants
+				i(8346),	-- Gauntlets of the Sea
+				-- #endif
+				applyholiday(FEAST_OF_WINTER_VEIL, i(17721)),	-- Gloves of the Greatfather
+				i(5966),	-- Guardian Gloves
+				i(7359),	-- Heavy Earthen Gloves
+				i(7349),	-- Herbalist's Gloves
+				i(4247),	-- Hillman's Leather Gloves
+				i(7285),	-- Nimble Leather Gloves
+				i(7358),	-- Pilferer's Gloves
+				applyclassicphase(PHASE_SIX, i(22662, {	-- Polar Gloves
+					["timeline"] = { "removed 3.0.1" },
+				})),
+				applyclassicphase(PHASE_FOUR, i(19686, {	-- Primal Batskin Gloves
+					["timeline"] = { "removed 4.0.3" },
+				})),
+				i(7284),	-- Red Whelp Gloves
+				i(15091),	-- Runic Leather Gauntlets (Trainable now, old Pattern id 15731 used to teach this.)
+				i(18238),	-- Shadowskin Gloves
+				-- #if AFTER TBC
+				i(21278),	-- Stormshroud Gloves
+				-- #endif
+				applyclassicphase(PHASE_THREE, i(19049)),	-- Timbermaw Brawlers
+				i(4253),	-- Toughened Leather Gloves
+				i(15083),	-- Wicked Leather Gauntlets (Trainable now, old Pattern id 15725 used to teach this.)
+			}),
+			category(256, {	-- Belts
+				i(4264),	-- Barbaric Belt
+				applyclassicphase(PHASE_FIVE_CATCH_UP, i(22761)),	-- Bramblewood Belt
+				-- #if AFTER TBC
+				applyclassicphase(PHASE_THREE, i(19162)),	-- Corehound Belt
+				-- #endif
+				i(4249),	-- Dark Leather Belt
+				i(6468, {	-- Deviate Scale Belt
+					["timeline"] = { "removed 4.0.3" },
+				}),
+				i(7387),	-- Dusky Belt
+				i(4246),	-- Fine Leather Belt
+				i(4262),	-- Gem-Studded Leather Belt
+				applyclassicphase(PHASE_ONE_DIREMAUL, i(18504, {	-- Girdle of Insight
+					["timeline"] = { "removed 4.0.3" },
+				})),
+				i(4257),	-- Green Leather Belt
+				i(4258),	-- Guardian Belt
+				i(4237),	-- Handstitched Leather Belt
+				i(4250),	-- Hillman's Belt
+				applyclassicphase(PHASE_THREE, i(19149)),	-- Lava Belt
+				applyclassicphase(PHASE_THREE, i(19044)),	-- Might of the Timbermaw
+				-- #if AFTER TBC
+				applyclassicphase(PHASE_THREE, i(19163)),	-- Molten Belt
+				-- #endif
+				i(5780),	-- Murloc Scale Belt
+				{
+					["itemID"] = 4456,	-- Raptor Hide Belt (Alliance only)
+					["races"] = ALLIANCE_ONLY,
+				},
+				i(15093),	-- Runic Leather Belt (Trainable now, old Pattern id 15745 used to teach this.)
+				i(15088),	-- Wicked Leather Belt (Trainable now, old Pattern id 15768 used to teach this.)
+			}),
+			category(257, {	-- Pants
 				i(5963),	-- Barbaric Leggings
-				i(7373),	-- Dusky Leather Leggings
-				i(5962),	-- Guardian Pants
+				i(8202),	-- Big Voodoo Pants
+				-- #if AFTER TBC
+				i(15072),	-- Chimeric Leggings
+				-- #endif
 				i(5961),	-- Dark Leather Pants
-				i(5958),	-- Fine Leather Pants
-				i(7282),	-- Light Leather Pants
+				-- #if AFTER TBC
+				i(15062),	-- Devilsaur Leggings
+				-- #endif
+				i(7373),	-- Dusky Leather Leggings
 				i(4242),	-- Embossed Leather Pants
+				i(5958),	-- Fine Leather Pants
+				-- #if AFTER TBC
+				i(15069, {	-- Frostsaber Leggings
+					["timeline"] = { "removed 4.0.3" },
+				}),
+				-- #endif
+				i(5962),	-- Guardian Pants
+				i(2303),	-- Handstitched Leather Pants
+				i(7282),	-- Light Leather Pants
+				-- #if AFTER TBC
+				i(15060, {	-- Living Leggings
+					["timeline"] = { "removed 4.0.3" },
+				}),
+				-- #endif
+				i(8193),	-- Nightscape Pants
 				i(7280),	-- Rugged Leather Pants
-				i(29970, {	-- Wildfeather Leggings
-					["timeline"] = { "added 2.0.1.6180" },
+				i(15095),	-- Runic Leather Pants (Trainable now, old Pattern id 15765 used to teach this.)
+				-- #if AFTER TBC
+				i(15057),	-- Stormshroud Pants
+				i(15054, {	-- Volcanic Leggings
+					["timeline"] = { "removed 4.0.3" },
+				}),
+				i(15065),	-- Warbear Woolies
+				-- #endif
+				i(15087),	-- Wicked Leather Pants (Trainable now, old Pattern id 15757 used to teach this.)
+				i(8212, {	-- Wild Leather Leggings
+					["timeline"] = { "removed 4.0.3" },
 				}),
 			}),
-			n(FEET, {
-				i(22760),	-- Bramblewood Boots
-				i(16982),	-- Corehound Boots
-				un(REMOVED_FROM_GAME, i(18506)),	-- Mongoose Boots
-				i(19052),	-- Dawn Treaders
+			category(258, {	-- Boots
+				applyclassicphase(PHASE_FIVE_CATCH_UP, i(22760)),	-- Bramblewood Boots
+				-- #if AFTER TBC
 				i(15073),	-- Chimeric Boots
+				i(16982),	-- Corehound Boots
+				-- #endif
+				i(2315),	-- Dark Leather Boots
+				applyclassicphase(PHASE_THREE, i(19052)),	-- Dawn Treaders
+				i(7390),	-- Dusky Boots
+				i(2309),	-- Embossed Leather Boots
+				i(2307),	-- Fine Leather Boots
+				-- #if AFTER TBC
 				i(15071),	-- Frostsaber Boots
-				un(REMOVED_FROM_GAME, i(8213)),		-- Wild Leather Boots
+				-- #endif
+				i(2302),	-- Handstitched Leather Boots
+				applyclassicphase(PHASE_ONE_DIREMAUL, i(18506, {	-- Mongoose Boots
+					["timeline"] = { "removed 4.0.3" },
+				})),
 				i(8197),	-- Nightscape Boots
 				i(7391),	-- Swift Boots
-				i(7390),	-- Dusky Boots
-				i(2315),	-- Dark Leather Boots
-				i(2307),	-- Fine Leather Boots
-				i(2309),	-- Embossed Leather Boots
+				i(8213, {	-- Wild Leather Boots
+					["timeline"] = { "removed 4.0.3" },
+				})
 			}),
 		}),
-		n(-45, {	-- Mail
-			n(HEAD, {
+		filter(6, {	-- Mail
+			category(251, {	-- Helms
 				i(15080),	-- Heavy Scorpid Helm
 				i(8208),	-- Tough Scorpid Helm
 				i(8191),	-- Turtle Scale Helm
 			}),
-			n(SHOULDER, {
-				un(REMOVED_FROM_GAME, i(15049)),	-- Blue Dragonscale Shoulders
+			category(252, {	-- Shoulder
+				-- #if AFTER TBC
 				i(15051),	-- Black Dragonscale Shoulders
-				un(REMOVED_FROM_GAME, i(15081)),	-- Heavy Scorpid Shoulders
+				i(15049, {	-- Blue Dragonscale Shoulders
+					["timeline"] = { "removed 4.0.3" },
+				}),
+				-- #endif
+				i(15081, {	-- Heavy Scorpid Shoulders
+					["timeline"] = { "removed 4.0.3", "added 5.0.4", "removed 6.0.2" },
+				}),
 				i(8207),	-- Tough Scorpid Shoulders
 			}),
-			n(CHEST, {
-				un(NEVER_IMPLEMENTED, i(15141)),	-- Onyxia Scale Breastplate (never made it out of Beta)
-				i(20479),	-- Spitfire Breastplate
-				i(20478),	-- Sandstalker Breastplate
-				un(REMOVED_FROM_GAME, i(20380, {	-- Dreamscale Breastplate
-					["description"] = "While this recipe is still available, the mats required to craft it are not",
-				})),
-				un(REMOVED_FROM_GAME, i(22664)),	-- Icy Scale Breastplate
-				un(REMOVED_FROM_GAME, i(15047)),	-- Red Dragonscale Breastplate
-				un(REMOVED_FROM_GAME, i(15048)),	-- Blue Dragonscale Breastplate
+			category(253, {	-- Chest
+				-- #if AFTER TBC
 				i(15050),	-- Black Dragonscale Breastplate
-				i(15045),	-- Green Dragonscale Breastplate
-				un(REMOVED_FROM_GAME, i(15076)),	-- Heavy Scorpid Vest
+				i(15048, {	-- Blue Dragonscale Breastplate
+					["timeline"] = { "removed 4.0.3" },
+				}),
 				i(8367),	-- Dragonscale Breastplate
+				applyclassicphase(PHASE_FOUR, i(20380, {	-- Dreamscale Breastplate
+					-- #if AFTER 4.0.3
+					["description"] = "While this recipe is still available, the mats required to craft it are not.",
+					["timeline"] = { "removed 4.0.3" },
+					-- #endif
+				})),
+				i(15045),	-- Green Dragonscale Breastplate
+				-- #endif
+				i(15076, {	-- Heavy Scorpid Vest
+					["timeline"] = { "removed 4.0.3" },
+				}),
+				applyclassicphase(PHASE_SIX, i(22664, {	-- Icy Scale Breastplate
+					["timeline"] = { "removed 3.0.1" },
+				})),
+				-- #if AFTER TBC
+				i(15047, {	-- Red Dragonscale Breastplate
+					["timeline"] = { "removed 6.0.2" },
+				}),
+				-- #endif
+				applyclassicphase(PHASE_FOUR, i(20478)),	-- Sandstalker Breastplate
+				applyclassicphase(PHASE_FOUR, i(20479)),	-- Spitfire Breastplate
 				i(8203),	-- Tough Scorpid Breastplate
 				i(8189),	-- Turtle Scale Breastplate
 			}),
-			n(WRIST, {
-				un(REMOVED_FROM_GAME, i(22665)),	-- Icy Scale Bracers
-				un(REMOVED_FROM_GAME, i(18508)),	-- Swift Flight Bracers
-				i(20481),	-- Spitfire Bracers
-				i(20476),	-- Sandstalker Bracers
+			category(254, {	-- Bracers
 				i(15077),	-- Heavy Scorpid Bracers
+				applyclassicphase(PHASE_SIX, i(22665, {	-- Icy Scale Bracers
+					["timeline"] = { "removed 3.0.1" },
+				})),
+				applyclassicphase(PHASE_FOUR, i(20476)),	-- Sandstalker Bracers
+				applyclassicphase(PHASE_FOUR, i(20481)),	-- Spitfire Bracers
+				applyclassicphase(PHASE_ONE_DIREMAUL, i(18508, {	-- Swift Flight Bracers
+					["timeline"] = { "removed 4.0.3" },
+				})),
 				i(8205),	-- Tough Scorpid Bracers
 				i(8198),	-- Turtle Scale Bracers
 			}),
-			n(HANDS, {
-				i(19157),	-- Chromatic Gauntlets
-				un(REMOVED_FROM_GAME, i(22666)),	-- Icy Scale Gauntlets
-				i(20480),	-- Spitfire Gauntlets
-				i(20477),	-- Sandstalker Gauntlets
-				un(REMOVED_FROM_GAME, i(15078)),	-- Heavy Scorpid Gauntlets
+			category(255, {	-- Gloves
+				-- #if AFTER TBC
+				applyclassicphase(PHASE_THREE, i(19157)),	-- Chromatic Gauntlets
+				i(8347, {	-- Dragonscale Gauntlets
+					["timeline"] = { "removed 4.0.3" },
+				}),
+				-- #endif
+				i(7348),	-- Fletcher's Gloves
+				-- #if AFTER TBC
 				i(20296),	-- Green Dragonscale Gauntlets
-				un(REMOVED_FROM_GAME, i(8347)),		-- Dragonscale Gauntlets
+				-- #endif
+				i(15078, {	-- Heavy Scorpid Gauntlets
+					["timeline"] = { "removed 4.0.3" },
+				}),
+				applyclassicphase(PHASE_SIX, i(22666, {	-- Icy Scale Gauntlets
+					["timeline"] = { "removed 3.0.1" },
+				})),
+				applyclassicphase(PHASE_FOUR, i(20477)),	-- Sandstalker Gauntlets
+				applyclassicphase(PHASE_FOUR, i(20480)),	-- Spitfire Gauntlets
 				i(8204),	-- Tough Scorpid Gloves
 				i(8187),	-- Turtle Scale Gloves
-				i(7348),	-- Fletcher's Gloves
 			}),
-			n(WAIST, {
+			category(256, {	-- Belts
 				i(15082),	-- Heavy Scorpid Belt
 			}),
-			n(LEGS, {
+			category(257, {	-- Pants
+				-- #if AFTER TBC
 				i(15052),	-- Black Dragonscale Leggings
 				i(20295),	-- Blue Dragonscale Leggings
-				un(REMOVED_FROM_GAME, i(15079)),	-- Heavy Scorpid Leggings
 				i(15046),	-- Green Dragonscale Leggings
+				-- #endif
+				i(15079, {	-- Heavy Scorpid Leggings
+					["timeline"] = { "removed 4.0.3" },
+				}),
 				i(8206),	-- Tough Scorpid Leggings
 				i(8185),	-- Turtle Scale Leggings
 			}),
-			n(FEET, {
+			category(258, {	-- Boots
+				-- #if AFTER TBC
 				i(16984),	-- Black Dragonscale Boots
+				-- #endif
 				i(8209),	-- Tough Scorpid Boots
 			}),
 		}),
@@ -1657,13 +2245,23 @@ _.Craftables = { tier(CLASSIC_TIER, {
 		},
 	}),
 	prof(TAILORING, {
-		filter(113, {	-- Bags
+		category(230, {	-- Materials
+			i(2996),	-- Bolt of Linen Cloth
+			i(4339),	-- Bolt of Mageweave
+			i(14048),	-- Bolt of Runecloth
+			i(4305),	-- Bolt of Silk Cloth
+			i(2997),	-- Bolt of Woolen Cloth
+			applyclassicphase(PHASE_ONE_DIREMAUL, i(18258)),	-- Gordok Ogre Suit
+			i(14342),	-- Mooncloth
+		}),
+		category(233, {	-- Bags
+			applyclassicphase(PHASE_FIVE, i(22249)),	-- Big Bag of Enchantment
 			i(5765),	-- Black Silk Pack
 			i(14156),	-- Bottomless Bag
-			i(22251),	-- Cenarion Herb Bag
+			applyclassicphase(PHASE_FIVE, i(22251)),	-- Cenarion Herb Bag
 			i(21342),	-- Core Felcloth Bag
 			i(22246),	-- Enchanted Mageweave Pouch
-			i(22248),	-- Enchanted Runecloth Bag
+			applyclassicphase(PHASE_FIVE, i(22248)),	-- Enchanted Runecloth Bag
 			i(21341),	-- Felcloth Bag
 			i(5764),	-- Green Silk Pack
 			i(4241),	-- Green Woolen Bag
@@ -1674,23 +2272,58 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(10051),	-- Red Mageweave Bag
 			i(5763),	-- Red Woolen Bag
 			i(14046),	-- Runecloth Bag
+			applyclassicphase(PHASE_FIVE, i(22252)),	-- Satchel of Cenarius
 			i(4245),	-- Small Silk Pack
 			i(21340),	-- Soul Pouch
 			i(4240),	-- Woolen Bag
 		}),
-		n(CHEST, {
-			un(REMOVED_FROM_GAME, i(19682)),	-- Bloodvine Vest
-			un(REMOVED_FROM_GAME, i(22652)),	-- Glacial Vest
-			i(14153, {	-- Robe of the Void
-				["timeline"] = {
-					"added 1.11.1.5462",
-					"removed 5.0.4.15890",
-				},
+		category(234, {	-- Hats & Hoods
+			i(10030),	-- Admiral's Hat
+			i(7048),	-- Azure Silk Hood
+			i(10024),	-- Black Mageweave Headband
+			i(10041),	-- Dreamweave Circlet
+			i(4322),	-- Enchanter's Cowl
+			i(14111),	-- Felcloth Hood
+			i(14140),	-- Mooncloth Circlet
+			i(10033),	-- Red Mageweave Headband
+			i(13866),	-- Runecloth Headband
+			i(4323),	-- Shadow Hood
+			i(10025, {	-- Shadoweave Mask
+				-- #if AFTER 7.3.0
+				["description"] = "Required for the |cff3399ffLucid Nightmare|r riddle mount.",
+				-- #endif
+				["timeline"] = { "removed 4.0.3", "added 7.3.0" },
 			}),
+			i(7050),	-- Silk Headband
+			applyclassicphase(PHASE_FIVE_CATCH_UP, i(22757)),	-- Sylvan Crown
+			i(10008),	-- White Bandit Mask
+			i(14130),	-- Wizardweave Turban
+		}),
+		category(235, {	-- Shoulders
+			applyclassicphase(PHASE_THREE, i(19059)),	-- Argent Shoulders
+			i(7060),	-- Azure Shoulders
+			i(10027),	-- Black Mageweave Shoulders
+			i(7059),	-- Crimson Silk Shoulders
+			i(4314),	-- Double-stitched Woolen Shoulders
+			i(14112),	-- Felcloth Shoulders
+			i(16980),	-- Flarecore Mantle
+			i(7057),	-- Green Silken Shoulders
+			applyclassicphase(PHASE_THREE, i(19050)),	-- Mantle of the Timbermaw
+			i(14139),	-- Mooncloth Shoulders
+			i(10029),	-- Red Mageweave Shoulders
+			i(4315),	-- Reinforced Woolen Shoulders
+			i(13867),	-- Runecloth Shoulders
+			i(10028),	-- Shadoweave Shoulders
+			applyclassicphase(PHASE_FIVE_CATCH_UP, i(22758)),	-- Sylvan Shoulders
+		}),
+		category(236, {	-- Robes & Tunics
 			i(4324),	-- Azure Silk Vest
 			i(2578),	-- Barbaric Linen Vest
 			i(10001),	-- Black Mageweave Robe
 			i(9998),	-- Black Mageweave Vest
+			applyclassicphase(PHASE_FOUR, i(19682, {	-- Bloodvine Vest
+				["timeline"] = { "removed 4.0.3" },
+			})),
 			i(6242),	-- Blue Linen Robe
 			i(6240),	-- Blue Linen Vest
 			i(6263),	-- Blue Overalls
@@ -1703,10 +2336,15 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(10021),	-- Dreamweave Vest
 			i(7051),	-- Earthen Vest
 			i(14106),	-- Felcloth Robe
+			i(21154),	-- Festival Dress
+			i(21542),	-- Festival Suit
 			i(19156),	-- Flarecore Robe
 			i(13868),	-- Frostweave Robe
 			i(13869),	-- Frostweave Tunic
 			i(14141),	-- Ghostweave Vest
+			applyclassicphase(PHASE_SIX, i(22652, {	-- Glacial Vest
+				["timeline"] = { "removed 3.0.1" },
+			})),
 			i(2585),	-- Gray Woolen Robe
 			i(6264),	-- Greater Adept's Robe
 			i(7065),	-- Green Silk Armor
@@ -1719,98 +2357,89 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(10007),	-- Red Mageweave Vest
 			i(7054),	-- Robe of Power
 			i(14152),	-- Robe of the Archmage
-			i(14136),	-- Robe of Winter Night
-			i(5770),	-- Robes of Arcana
+			i(14153, {	-- Robe of the Void
+				["timeline"] = { "removed 5.0.4.15890" },
+			}),
+			i(14136, {	-- Robe of Winter Night
+				["timeline"] = { "removed 4.0.3", "added 8.1.5" },
+			}),
+			i(5770, {	-- Robes of Arcana
+				["timeline"] = { "removed 4.0.3", "added 8.1.5" },
+			}),
 			i(13858),	-- Runecloth Robe
 			i(13857),	-- Runecloth Tunic
 			i(10004),	-- Shadoweave Robe
-			i(22756),	-- Sylvan Vest
+			i(10053),	-- Simple Black Dress
+			i(6786),	-- Simple Dress
+			applyclassicphase(PHASE_FIVE_CATCH_UP, i(22756)),	-- Sylvan Vest
 			i(14154),	-- Truefaith Vestments
+			i(10036),	-- Tuxedo Jacket
 			i(6241),	-- White Linen Robe
+			i(10040),	-- White Wedding Dress
+			i(6787),	-- White Woolen Dress
 			i(14128),	-- Wizardweave Robe
 		}),
-		n(BACK, {
-			un(REMOVED_FROM_GAME, i(22658)),	-- Glacial Cloak
-			i(7053),	-- Azure Silk Cloak
-			i(14103),	-- Brightcloth Cloak
-			i(14044),	-- Cindercloth Cloak
-			i(14134),	-- Cloak of Fire
-			i(18413),	-- Cloak of Warding
-			i(7056),	-- Crimson Silk Cloak
-			i(22660),	-- Gaea's Embrace
-			i(4311),	-- Heavy Woolen Cloak
-			i(4327),	-- Icy Cloak
-			i(4326),	-- Long Silken Cloak
-			i(5542),	-- Pearl-Clasped Cloak
-			i(2580),	-- Reinforced Linen Cape
-			i(13860),	-- Runecloth Cloak
+		category(237, {	-- Bracers
+			i(18263),	-- Flarecore Wraps
+			applyclassicphase(PHASE_SIX, i(22655, {	-- Glacial Wrists
+				["timeline"] = { "removed 3.0.1" },
+			})),
+			i(4308),	-- Green Linen Bracers
 		}),
-		n(FEET, {
-			un(REMOVED_FROM_GAME, i(19684)),	-- Bloodvine Boots
-			i(19056),	-- Argent Boots
-			i(10026),	-- Black Mageweave Boots
-			i(4325),	-- Boots of the Enchanter
-			i(10044),	-- Cindercloth Boots
-			i(14108),	-- Felcloth Boots
-			i(2569),	-- Linen Boots
-			i(15802),	-- Mooncloth Boots
-			i(4313),	-- Red Woolen Boots
-			i(13864),	-- Runecloth Boots
-			i(20537),	-- Runed Stygian Boots
-			i(10031),	-- Shadoweave Boots
-			i(4312),	-- Soft-Soled Linen Boots
-			i(4321),	-- Spider Silk Slippers
-			i(4320),	-- Spidersilk Boots
-			i(2583),	-- Woolen Boots
-		}),
-		n(HANDS, {
-			un(REMOVED_FROM_GAME, i(22654)),	-- Glacial Gloves
+		category(239, {	-- Gloves
 			i(4319),	-- Azure Silk Gloves
 			i(10003),	-- Black Mageweave Gloves
 			i(14101),	-- Brightcloth Gloves
 			i(14043),	-- Cindercloth Gloves
 			i(7064),	-- Crimson Silk Gloves
 			i(10019),	-- Dreamweave Gloves
-			i(18407),	-- Felcloth Gloves
+			applyclassicphase(PHASE_ONE_DIREMAUL, i(18407, {	-- Felcloth Gloves
+				["timeline"] = { "removed 4.0.3", "added 8.1.5" },
+			})),
 			i(16979),	-- Flarecore Gloves
 			i(13870),	-- Frostweave Gloves
 			i(14142),	-- Ghostweave Gloves
+			applyclassicphase(PHASE_SIX, i(22654, {	-- Glacial Gloves
+				["timeline"] = { "removed 3.0.1" },
+			})),
 			i(4318),	-- Gloves of Meditation
 			i(14146),	-- Gloves of Spell Mastery
 			i(7047),	-- Hands of Darkness
 			i(4307),	-- Heavy Linen Gloves
 			i(4310),	-- Heavy Woolen Gloves
-			i(18408),	-- Inferno Gloves
-			i(18409),	-- Mooncloth Gloves
+			applyclassicphase(PHASE_ONE_DIREMAUL, i(18408, {	-- Inferno Gloves
+				["timeline"] = { "removed 4.0.3", "added 8.1.5" },
+			})),
+			applyclassicphase(PHASE_ONE_DIREMAUL, i(18409, {	-- Mooncloth Gloves
+				["timeline"] = { "removed 4.0.3", "added 8.1.5" },
+			})),
 			i(4331),	-- Phoenix Gloves
 			i(10018),	-- Red Mageweave Gloves
 			i(13863),	-- Runecloth Gloves
 			i(10023),	-- Shadoweave Gloves
 			i(7049),	-- Truefaith Gloves
 		}),
-		n(HEAD, {
-			i(10030),	-- Admiral's Hat
-			i(7048),	-- Azure Silk Hood
-			i(10024),	-- Black Mageweave Headband
-			i(10041),	-- Dreamweave Circlet
-			i(4322),	-- Enchanter's Cowl
-			i(14111),	-- Felcloth Hood
-			i(14140),	-- Mooncloth Circlet
-			i(10033),	-- Red Mageweave Headband
-			i(13866),	-- Runecloth Headband
-			i(4323),	-- Shadow Hood
-			i(10025, {	-- Shadoweave Mask
-				["description"] = "Required for the |cff3399ffLucid Nightmare|r riddle mount.",
-			}),
-			i(7050),	-- Silk Headband
-			i(22757),	-- Sylvan Crown
-			i(10008),	-- White Bandit Mask
-			i(14130),	-- Wizardweave Turban
+		category(238, {	-- Belts
+			i(7052),	-- Azure Silk Belt
+			applyclassicphase(PHASE_ONE_DIREMAUL, i(18405, {	-- Belt of the Archmage
+				["timeline"] = { "removed 4.0.3", "added 8.1.5" },
+			})),
+			i(7055),	-- Crimson Silk Belt
+			i(7061),	-- Earthen Silk Belt
+			i(14143),	-- Ghostweave Belt
+			i(7026),	-- Linen Belt
+			i(13856),	-- Runecloth Belt
+			applyclassicphase(PHASE_FOUR, i(20539)),	-- Runed Stygian Belt
+			i(4328),	-- Spider Belt
+			i(4329),	-- Star Belt
+			applyclassicphase(PHASE_THREE, i(19047)),	-- Wisdom of the Timbermaw
 		}),
-		n(LEGS, {
-			un(REMOVED_FROM_GAME, i(19683)),	-- Bloodvine Leggings
+		category(240, {	-- Pants
 			i(7046),	-- Azure Silk Pants
 			i(9999),	-- Black Mageweave Leggings
+			applyclassicphase(PHASE_FOUR, i(19683, {	-- Bloodvine Leggings
+				["timeline"] = { "removed 4.0.3" },
+			})),
 			i(14104),	-- Brightcloth Pants
 			i(4343),	-- Brown Linen Pants
 			i(14045),	-- Cindercloth Pants
@@ -1826,12 +2455,57 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(4317),	-- Phoenix Pants
 			i(10009),	-- Red Mageweave Pants
 			i(13865),	-- Runecloth Pants
-			i(20538),	-- Runed Stygian Leggings
+			applyclassicphase(PHASE_FOUR, i(20538)),	-- Runed Stygian Leggings
 			i(10002),	-- Shadoweave Pants
 			i(10047),	-- Simple Kilt
+			i(10045),	-- Simple Linen Pants
+			i(10035),	-- Tuxedo Pants
 			i(14132),	-- Wizardweave Leggings
 		}),
-		n(-324, {	-- Shirts
+		category(241, {	-- Boots
+			applyclassicphase(PHASE_THREE, i(19056)),	-- Argent Boots
+			i(10026),	-- Black Mageweave Boots
+			applyclassicphase(PHASE_FOUR, i(19684, {	-- Bloodvine Boots
+				["timeline"] = { "removed 4.0.3" },
+			})),
+			i(4325),	-- Boots of the Enchanter
+			i(10044),	-- Cindercloth Boots
+			i(14108),	-- Felcloth Boots
+			i(2569),	-- Linen Boots
+			i(15802),	-- Mooncloth Boots
+			i(4313),	-- Red Woolen Boots
+			i(13864),	-- Runecloth Boots
+			applyclassicphase(PHASE_FOUR, i(20537)),	-- Runed Stygian Boots
+			i(10031),	-- Shadoweave Boots
+			i(10046),	-- Simple Linen Boots
+			i(4312),	-- Soft-Soled Linen Boots
+			i(4321),	-- Spider Silk Slippers
+			i(4320),	-- Spidersilk Boots
+			i(2583),	-- Woolen Boots
+		}),
+		category(242, {	-- Cloaks
+			i(7053),	-- Azure Silk Cloak
+			i(14103),	-- Brightcloth Cloak
+			i(14044),	-- Cindercloth Cloak
+			i(14134),	-- Cloak of Fire
+			applyclassicphase(PHASE_ONE_DIREMAUL, i(18413, {	-- Cloak of Warding
+				["timeline"] = { "removed 4.0.3", "added 8.1.5" },
+			})),
+			i(7056),	-- Crimson Silk Cloak
+			applyclassicphase(PHASE_FIVE_CATCH_UP, i(22660)),	-- Gaea's Embrace
+			applyclassicphase(PHASE_SIX, i(22658, {	-- Glacial Cloak
+				["timeline"] = { "removed 3.0.1" },
+			})),
+			i(4311),	-- Heavy Woolen Cloak
+			i(4327),	-- Icy Cloak
+			i(2570),	-- Linen Cloak
+			i(4326),	-- Long Silken Cloak
+			i(5542),	-- Pearl-Clasped Cloak
+			i(2580),	-- Reinforced Linen Cape
+			i(13860),	-- Runecloth Cloak
+			i(2584),	-- Woolen Cape
+		}),
+		category(243, {	-- Shirts
 			i(4336),	-- Black Swashbuckler's Shirt
 			i(2577),	-- Blue Linen Shirt
 			i(4332),	-- Bright Yellow Shirt
@@ -1855,47 +2529,37 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(2576),	-- White Linen Shirt
 			i(6795),	-- White Swashbuckler's Shirt
 		}),
-		n(SHOULDER, {
-			i(19059),	-- Argent Shoulders
-			i(7060),	-- Azure Shoulders
-			i(10027),	-- Black Mageweave Shoulders
-			i(7059),	-- Crimson Silk Shoulders
-			i(4314),	-- Double-stitched Woolen Shoulders
-			i(14112),	-- Felcloth Shoulders
-			i(16980),	-- Flarecore Mantle
-			i(7057),	-- Green Silken Shoulders
-			i(19050),	-- Mantle of the Timbermaw
-			i(14139),	-- Mooncloth Shoulders
-			i(10029),	-- Red Mageweave Shoulders
-			i(4315),	-- Reinforced Woolen Shoulders
-			i(13867),	-- Runecloth Shoulders
-			i(10028),	-- Shadoweave Shoulders
-			i(22758),	-- Sylvan Shoulders
-		}),
-		n(WAIST, {
-			i(7052),	-- Azure Silk Belt
-			i(18405),	-- Belt of the Archmage
-			i(7055),	-- Crimson Silk Belt
-			i(7061),	-- Earthen Silk Belt
-			i(14143),	-- Ghostweave Belt
-			i(13856),	-- Runecloth Belt
-			i(20539),	-- Runed Stygian Belt
-			i(4328),	-- Spider Belt
-			i(4329),	-- Star Belt
-			i(19047),	-- Wisdom of the Timbermaw
-		}),
-		n(WRIST, {
-			un(REMOVED_FROM_GAME, i(22655)),	-- Glacial Wrists
-			i(18263),	-- Flarecore Wraps
-			i(4308),	-- Green Linen Bracers
-		}),
 	}),
 })};
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	prof(BLACKSMITHING, {
+		-- #if BEFORE 7.1.5.23360
+		i(12769, {	-- Bleakwood Hew
+			["timeline"] = {
+				"created 1.11.1.5462",	-- Was originally never implemented.
+				"added 7.1.5.23360",
+			},
+		}),
+		i(12795, {	-- Blood Talon
+			["timeline"] = {
+				"created 1.12.1.6898",	-- Was originally never implemented.
+				"added 7.1.5.23360",
+			},
+		}),
+		i(12802, {	-- Darkspear
+			["timeline"] = {
+				"created 1.12.1.6898",	-- Was originally never implemented.
+				"added 7.1.5.23360",
+			},
+		}),
+		-- #endif
+		-- #if BEFORE TBC
+		i(12625),	-- Dawnbringer Shoulders
+		-- #endif
+		i(2867),	-- Rough Bronze Bracers (crafted by NYI pattern) (prof)
+	}),
 	prof(LEATHERWORKING, {
 		i(8195),	-- Nightscape Cloak	(Pattern never actually went live)
-	}),
-	prof(BLACKSMITHING, {
-		i(2867),	-- Rough Bronze Bracers (crafted by NYI pattern) (prof)
+		i(15141),	-- Onyxia Scale Breastplate
 	}),
 });

@@ -254,6 +254,11 @@ _.Factions =
 		faction(2439),	-- The Avowed
 		faction(2445, {	-- The Ember Court (Venthyr)
 			["customCollect"] = { "SL_COV_VEN" },
+			["crs"] = { 165399 },	-- Lord Garridan (when selecting Guests for Ember Court)
+			["maps"] = {
+				REVENDRETH,
+				1644,	-- Ember Court (scenario)
+			},
 			["g"] = sharedData({ ["customCollect"] = { "SL_COV_VEN" } },{
 				faction(2450),	-- Alexandros Mograine
 				faction(2446),	-- Baroness Vashj

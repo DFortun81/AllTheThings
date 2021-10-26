@@ -362,9 +362,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			-- #if AFTER 6.2.3.20601
 			d(24, {	-- Timewalking
 				["sym"] = {	-- link in Timewalking content
-					{ "select", "instanceID", 254 },	-- select this instance
-					{ "isnt", "coords" },				-- only the main entry of the instance contains the coords field
-					{ "pop" },							-- pop the instance header
+					{"sub", "tw_instance", 254 },	-- this instance version of timewalking
 				},
 			}),
 			-- #endif

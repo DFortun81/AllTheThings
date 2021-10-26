@@ -1688,13 +1688,11 @@ _.HiddenQuestTriggers = {
 		q(38042),	-- Max-level Choice Tracker: Tanaan 6.2 - Zeth'Gol (A)
 		q(38041),	-- Max-level Choice Tracker: Tanaan 6.2 - Zeth'Gol (H)
 		q(33069),	-- REUSEME (after killing Supreme Lord Kazzak and using Bonus Roll)
+		q(39416),	-- Skoller's Bag o' Squirrel Treats - after talking to Skoller and getting his toy (Skoller's Bag of Squirrel Treats)
 		q(37887),	-- Tanaan Garrison Max-level Choice Tracker: ANY CHOICE MADE (A)
 		q(37892),	-- Tanaan Garrison Max-level Choice Tracker: ANY CHOICE MADE (H)
 		q(37969),	-- Tanaan Jungle - Tracking Quest - Vol'mar Built - JMC
 		q(38433),	-- Tanaan Jungle - Tracking Quest - Lion's Watch Built - JMC
-		q(38760),	-- Treasure: Captain's Booty 1
-		q(38761),	-- Treasure: Captain's Booty 2
-		q(38762),	-- Treasure: Captain's Booty 3
 
 		--	DUNGEONS & RAIDS
 		q(35960),	-- Auchindoun Reward Quest

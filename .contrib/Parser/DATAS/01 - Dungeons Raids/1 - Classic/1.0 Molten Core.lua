@@ -3,8 +3,8 @@
 -----------------------------------------------------
 local REMOVED_WITH_CATA = { "added 1.0.1.10000", "removed 4.0.3.10000" };
 local REMOVED_WITH_WRATH = { "added 1.0.1.10000", "removed 3.0.8.10000" };
-_.Instances = { tier(CLASSIC_TIER, {
-	inst(741, {	-- Molten Core
+root("Instances", tier(CLASSIC_TIER, {
+	inst(741, { 	-- Molten Core
 		["lore"] = "The Molten Core was created during the War of the Three Hammers more than 300 years ago. Near the end of the war, Thaurissan, the leader of the Dark Iron Dwarves, sought to summon a powerful fire elemental to defeat the combined forces of the Bronzebeard and Wildhammer clans. He was more successful than he could have imagined, as he released Ragnaros the Firelord from millennia of captivity under the Redridge Mountains.\n\nRagnaros destroyed the city of Thaurissan and created the volcano of Blackrock Mountain. He dwells there to this day with his elemental servants and the enslaved remnants of the Dark Iron dwarf clan. The burning lake where Ragnaros lies sleeping acts as a rift connecting to the plane of fire, allowing the malicious elementals to pass through.",
 		["mapID"] = MOLTEN_CORE,
 		["coord"] = { 54.18, 83.25, BLACKROCK_MOUNTAIN },
@@ -12,12 +12,11 @@ _.Instances = { tier(CLASSIC_TIER, {
 		["sourceQuest"] = 7848,	-- Attunement to the Core
 		-- #endif
 		["sharedLockout"] = 1,
-		["crs"] = { 14387 },	-- Lothos Riftwaker
 		["isRaid"] = true,
 		["lvl"] = lvlsquish(50, 25, 50),
 		["groups"] = {
 			n(FACTIONS, {
-				faction(749, {	-- Hydraxian Waterlords
+				faction(749, { 	-- Hydraxian Waterlords
 					["qg"] = 13278,	-- Duke Hydraxis
 					["coord"] = { 79.2, 73.6, AZSHARA },
 				}),
@@ -54,13 +53,15 @@ _.Instances = { tier(CLASSIC_TIER, {
 					["description"] = "Complete this quest to be able to quickly teleport to Molten Core by simply talking to Lothos.",
 					-- #else
 					["description"] = "This quest is no longer required to enter Molten Core - you can now speak to Lothos and have him transport you inside without doing the attunement.",
-					["coord"] = { 54.2, 83.3, BLACKROCK_MOUNTAIN },
 					-- #endif
+					["coord"] = { 54.2, 83.3, BLACKROCK_MOUNTAIN },
 					["maps"] = { BLACKROCK_DEPTHS },
-					["cost"] = {
-						{ "i", 18412, 1 },	-- Core Fragment
-					},
 					["lvl"] = 55,
+					["groups"] = {
+						objective(1, {	-- 0/1 Core Fragment
+							["provider"] = { "i", 18412 },	-- Core Fragment
+						}),
+					},
 				}),
 				q(7785, {	-- Examine the Vessel
 					["qg"] = 14347,	-- Highlord Demitrian
@@ -86,32 +87,52 @@ _.Instances = { tier(CLASSIC_TIER, {
 					},
 					["coord"] = { 79.2, 73.6, AZSHARA },
 					["maps"] = { BLACKROCK_SPIRE },
-					["cost"] = {
-						{ "i", 17322, 1 },	-- Eye of the Emberseer
-					},
 					["lvl"] = 55,
+					["groups"] = {
+						objective(1, {	-- 0/1 Eye of the Emberseer
+							["provider"] = { "i", 17322 },	-- Eye of the Emberseer
+						}),
+					},
 				})),
 				q(6824, bubbleDown({ ["timeline"] = REMOVED_WITH_WRATH }, {	-- Hands of the Enemy
 					["qg"] = 13278,	-- Duke Hydraxis
 					["sourceQuest"] = 6823,	-- Agent of Hydraxis
 					["coord"] = { 79.2, 73.6, AZSHARA },
-					["cost"] = {
-						{ "i", 17331, 1 },	-- Hand of Gehennas
-						{ "i", 17329, 1 },	-- Hand of Lucifron
-						{ "i", 17332, 1 },	-- Hand of Shazzrah
-						{ "i", 17330, 1 },	-- Hand of Sulfuron
-					},
 					["lvl"] = 55,
+					["groups"] = {
+						objective(1, {	-- 0/1 Hand of Shazzrah
+							["provider"] = { "i", 17332 },	-- Hand of Shazzrah
+						}),
+						objective(2, {	-- 0/1 Hand of Lucifron
+							["provider"] = { "i", 17329 },	-- Hand of Lucifron
+						}),
+						objective(3, {	-- 0/1 Hand of Gehennas
+							["provider"] = { "i", 17331 },	-- Hand of Gehennas
+						}),
+						objective(4, {	-- 0/1 Hand of Sulfuron
+							["provider"] = { "i", 17330 },	-- Hand of Sulfuron
+						}),
+					},
 				})),
 				q(6804, bubbleDown({ ["timeline"] = REMOVED_WITH_WRATH }, {	-- Poisoned Water
 					["qg"] = 13278,	-- Duke Hydraxis
 					["coord"] = { 79.2, 73.6, AZSHARA },
 					["maps"] = { EASTERN_PLAGUELANDS },
-					["cost"] = {
-						{ "i", 17310, 1 },	-- Aspect of Neptulon
-						{ "i", 17309, 12 },	-- Discordant Bracers
-					},
 					["lvl"] = 55,
+					["groups"] = {
+						objective(1, {	-- 0/12 Discordant Bracers
+							["provider"] = { "i", 17309 },	-- Discordant Bracers
+							["cost"] = {
+								{ "i", 17310, 1 },	-- Aspect of Neptulon
+							},
+							["crs"] = {
+								8521,	-- Blighted Horror
+								8519,	-- Blighted Surge
+								8522,	-- Plague Monstrosity
+								8520,	-- Plague Ravager
+							},
+						}),
+					},
 				})),
 				q(7787, {	-- Rise, Thunderfury!
 					["qg"] = 14347,	-- Highlord Demitrian
@@ -132,6 +153,14 @@ _.Instances = { tier(CLASSIC_TIER, {
 					["coord"] = { 79.2, 73.6, AZSHARA },
 					["maps"] = { SILITHUS },
 					["lvl"] = 55,
+					["groups"] = {
+						objective(1, {	-- 0/15 Dust Stormer slain
+							["provider"] = { "n", 11744 },	-- Dust Stormer
+						}),
+						objective(2, {	-- 0/15 Desert Rumbler slain
+							["provider"] = { "n", 11746 },	-- Desert Rumbler
+						}),
+					},
 				})),
 				q(7632, bubbleDown({ ["timeline"] = REMOVED_WITH_CATA }, {	-- The Ancient Leaf
 					["qg"] = 14524,	-- Vartrus the Ancient
@@ -148,6 +177,20 @@ _.Instances = { tier(CLASSIC_TIER, {
 					["sourceQuest"] = 6821,	-- Eye of the Emberseer
 					["coord"] = { 79.2, 73.6, AZSHARA },
 					["lvl"] = 55,
+					["groups"] = {
+						objective(1, {	-- 0/1 Molten Giant slain
+							["provider"] = { "n", 11658 },	-- Molten Giant
+						}),
+						objective(2, {	-- 0/1 Firelord slain
+							["provider"] = { "n", 11668 },	-- Firelord
+						}),
+						objective(3, {	-- 0/1 Ancient Core Hound slain
+							["provider"] = { "n", 11673 },	-- Ancient Core Hound
+						}),
+						objective(4, {	-- 0/1 Lava Surger slain
+							["provider"] = { "n", 12101 },	-- Lava Surger
+						}),
+					},
 				})),
 				q(7786, {	-- Thunderaan the Windseeker
 					["qg"] = 14347,	-- Highlord Demitrian
@@ -159,14 +202,28 @@ _.Instances = { tier(CLASSIC_TIER, {
 					["coord"] = { 21.7, 8.6, SILITHUS },
 					-- #endif
 					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
+					-- #if NOT ANYCLASSIC
 					["cost"] = {
 						{ "i", 17771, 10 },	-- Elementium Bar x10
 						{ "i", 18563, 1 },	-- Bindings of the Windseeker [Left]
 						{ "i", 18564, 1 },	-- Bindings of the Windseeker [Right]
 						{ "i", 19017, 1 },	-- Essence of the Firelord
 					},
+					-- #endif
 					["lvl"] = 60,
 					["groups"] = {
+						objective(1, {	-- 0/10 Elementium Bar
+							["provider"] = { "i", 17771 },	-- Elementium Bar
+						}),
+						objective(2, {	-- 0/1 Essence of the Firelord
+							["provider"] = { "i", 19017 },	-- Essence of the Firelord
+						}),
+						objective(3, {	-- 0/1 Bindings of the Windseeker [Left]
+							["provider"] = { "i", 18563 },	-- Bindings of the Windseeker [Left]
+						}),
+						objective(4, {	-- 0/1 Bindings of the Windseeker [Right]
+							["provider"] = { "i", 18564 },	-- Bindings of the Windseeker [Right]
+						}),
 						n(14435, {	-- Prince Thunderaan <The Wind Seeker>
 							["description"] = "This is a 40-man raid boss.",
 							-- #if ANYCLASSIC
@@ -197,13 +254,12 @@ _.Instances = { tier(CLASSIC_TIER, {
 				}),
 			}),
 			n(ZONE_DROPS, {
-				i(20951, {	-- Narain's Scrying Goggles
+				applyclassicphase(PHASE_FIVE, i(20951, {	-- Narain's Scrying Goggles
+					-- #if BEFORE CATA
 					["description"] = "For this to drop, you must be on the Scrying Goggles? No Problem! quest.",
-					["timeline"] = REMOVED_WITH_CATA,
-					-- #if ANYCLASSIC
-					["u"] = PHASE_FIVE,
 					-- #endif
-				}),
+					["timeline"] = REMOVED_WITH_CATA,
+				})),
 				i(16802),	-- Arcanist Belt (Mage)
 				i(16799),	-- Arcanist Bindings (Mage)
 				i(16864),	-- Belt of Might (Warrior)
@@ -587,7 +643,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 						["timeline"] = REMOVED_WITH_CATA,
 						["classes"] = { PRIEST },
 					}),
-					i(18803),	-- Hyperthermically Insulated Lava Dredger
+					i(18803),	-- Hyperthermically Insulated Lava Dredger / Finkle's Lava Dredger
 					i(18805),	-- Core Hound Tooth
 					i(19139),	-- Fireguard Shoulders
 					i(18810),	-- Wild Growth Spaulders
@@ -653,4 +709,4 @@ _.Instances = { tier(CLASSIC_TIER, {
 			}),
 		},
 	}),
-})};
+}));

@@ -7,20 +7,20 @@ local JEWELCRAFTING_PATTERNS = {
 	-- #if BEFORE CATA
 	i(28596),	-- Design: Bright Blood Garnet [TBC] / Design: Delicate Blood Garnet [Cata+]
 	-- #endif
-	-- #if AFTER CATA
+	-- #if BEFORE CATA
 	i(23130),	-- Design: Brilliant Blood Garnet [Cata+] / Design: Teardrop Blood Garnet (TBC)
 	-- #endif
 	-- #if AFTER CATA
 	i(23148),	-- Design: Brilliant Blood Garnet [Cata+] / Design: Brilliant Golden Draenite [TBC]
 	-- #endif
-	-- #if AFTER CATA
+	-- #if BEFORE CATA
 	i(23148),	-- Design: Brilliant Golden Draenite [TBC] / Design: Brilliant Blood Garnet [Cata+]
 	-- #endif
 	-- #if AFTER CATA
 	i(28596),	-- Design: Delicate Blood Garnet [Cata+] / Design: Bright Blood Garnet [TBC]
 	-- #endif
 	i(23137),	-- Design: Glinting Flame Spessarite [TBC] / Design: Glinting Shadow Draenite [CATA+]
-	-- #if AFTER CATA
+	-- #if BEFORE CATA
 	i(23144),	-- Design: Glowing Shadow Draenite [TBC] / Design: Timeless Shadow Draenite [Cata+]
 	-- #endif
 	i(23135),	-- Design: Inscribed Flame Spessarite (Both)

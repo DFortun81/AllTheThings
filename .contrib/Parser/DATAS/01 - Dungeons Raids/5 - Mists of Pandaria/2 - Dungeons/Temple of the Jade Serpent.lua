@@ -173,45 +173,13 @@ _.Instances = { tier(MOP_TIER, {
 					})),
 				},
 			}),
+			-- #if AFTER 7.1.5.23360
 			d(24, {	-- Timewalking
-				["lvl"] = 91,
-				["g"] = {
-					cr(56448, e(672, {	-- Wise Mari
-						i(144017),	-- Waterburst Helm
-						i(144111),	-- Wind-Soaked
-						i(143960),	-- Riverbed Chestguard
-						i(143973),	-- Treads of Corrupted Water
-						i(144112),	-- Crystallized Droplet
-					})),
-					cr(56843, e(664, {	-- Lorewalker Stonestep
-						i(144081),	-- Girdle of Endemic Anger
-						i(144083),	-- Sunheart Waistband
-						i(143987),	-- Leggings of Whispered Dreams
-						i(143974),	-- Stonestep Boots
-						i(144113),	-- Windswept Pages
-					})),
-					cr(56732, e(658, {	-- Liu Flameheart
-						i(144090),	-- Firebelcher Hand Cannon
-						i(143971),	-- Serpentstrike Shoulderpads
-						i(144094),	-- Cape of Entaglement
-						i(143988),	-- Flameheart Sandals
-						i(144114),	-- Signet of Dancing Jade
-					})),
-					cr(56439, e(335, {	-- Sha of Doubt
-						i(144093),	-- Staff of Trembling Will
-						i(144086),	-- Dubious Handaxe
-						i(144216),	-- Je'lyu, Spirit of the Serpent
-						i(144117),	-- Mindbreaker Pendant
-						i(143972),	-- Doubtridden Shoulderguards
-						i(143970),	-- Neverdare Shoulders
-						i(144115),	-- Cloak of Failing Will
-						i(143959),	-- Chestguard of Despair
-						i(144091),	-- Hopecrusher Gauntlets
-						i(144118),	-- Paralyzing Gloves
-						i(144116),	-- Binding of Broken Dreams
-					})),
+				["sym"] = {	-- link in Timewalking content
+					{"sub", "tw_instance", 313 },	-- this instance version of timewalking
 				},
 			}),
+			-- #endif
 		},
 	}),
 })};

@@ -1,9 +1,8 @@
------------------------------------------------------
---     W O R L D   E V E N T S   M O D U L E       --
------------------------------------------------------
+--------------------------------------------
+--     H O L I D A Y S  M O D U L E       --
+--------------------------------------------
 
--- TODO: Add quests that were removed, but kept (Quests)
-_.WorldEvents =
+_.Holidays =
 {
 	m(407, {	-- Darkmoon Island
 		n(QUESTS, {
@@ -25,207 +24,6 @@ _.WorldEvents =
 				["g"] = {
 					i(126949, {	-- Returning Champion
 						["sourceQuests"] = { 29761 },	-- Master Pit Fighter
-					}),
-				},
-			}),
-			cat(773, {	-- Trinkets (Decks)
-				["icon"] = "Interface\\Icons\\inv_misc_ticket_tarot_twistingnether_01",
-				["g"] = {
-					q(7906,  {	-- Darkmoon Cards - Beast (NYI?)
-						["u"] = NEVER_IMPLEMENTED,
-					}),
-					q(7907,  {	-- Darkmoon Beast Deck
-						["repeatable"] = true,
-						["provider"] = { "i", 19228 },	-- Beasts Deck
-						["coord"] = { 51.9, 60.9, 407 },
-						["lvl"] = 60,
-						["g"] = {
-							i(19288),	-- Darkmoon Card: Blue Dragon
-						},
-					}),
-					i(31890, {	-- Blessings Deck
-						q(10938, {	-- Darkmoon Blessings Deck
-							["repeatable"] = true,
-							["provider"] = { "n", 14847 },	-- Professor Thaddeus
-							["coord"] = { 51.9, 60.9, 407 },
-							["lvl"] = 70,
-							["g"] = {
-								i(31856),	-- Darkmoon Card: Crusade
-							},
-						}),
-					}),
-					q(13325, {	-- Darkmoon Chaos Deck
-						["repeatable"] = true,
-						["provider"] = { "n", 14847 },	-- Professor Thaddeus
-						["coord"] = { 51.9, 60.9, 407 },
-						["lvl"] = 80,
-						["g"] = {
-							i(42989),	-- Darkmoon Card: Berserker!
-						},
-					}),
-					q(30449, {	-- Darkmoon Crane Deck
-						["repeatable"] = true,
-						["provider"] = { "n", 14847 },	-- Professor Thaddeus
-						["coord"] = { 51.9, 60.9, 407 },
-						["lvl"] = 90,
-						["g"] = {
-							i(79330),	-- Relic of Chi-Ji
-						},
-					}),
-					q(27667, {	-- Darkmoon Earthquake Deck
-						["repeatable"] = true,
-						["provider"] = { "n", 14847 },	-- Professor Thaddeus
-						["coord"] = { 51.9, 60.9, 407 },
-						["lvl"] = 85,
-						["g"] = {
-							i(62048),	-- Darkmoon Card: Earthquake
-						},
-					}),
-					q(7929,  {	-- Darkmoon Elementals Deck
-						["repeatable"] = true,
-						["provider"] = { "i", 19267 },	-- Elementals Deck
-						["coord"] = { 51.9, 60.9, 407 },
-						["lvl"] = 60,
-						["g"] = {
-							i(19289),	-- Darkmoon Card: Maelstrom
-						},
-					}),
-					i(31907, {	-- Furies Deck
-						q(10940, {	-- Darkmoon Furies Deck
-							["repeatable"] = true,
-							["provider"] = { "n", 14847 },	-- Professor Thaddeus
-							["coord"] = { 51.9, 60.9, 407 },
-							["lvl"] = 70,
-							["g"] = {
-								i(31858),	-- Darkmoon Card: Vengeance
-							},
-						}),
-					}),
-					q(27665, {	-- Darkmoon Hurricane Deck
-						["repeatable"] = true,
-						["provider"] = { "n", 14847 },	-- Professor Thaddeus
-						["coord"] = { 51.9, 60.9, 407 },
-						["lvl"] = 85,
-						["g"] = {
-							i(62051),	-- Darkmoon Card: Hurricane
-							i(62049),	-- Darkmoon Card: Hurricane
-						},
-					}),
-					i(31914, {	-- Lunacy Deck
-						q(10941, {	-- Darkmoon Lunacy Deck
-							["repeatable"] = true,
-							["provider"] = { "n", 14847 },	-- Professor Thaddeus
-							["coord"] = { 51.9, 60.9, 407 },
-							["lvl"] = 70,
-							["g"] = {
-								i(31859),	-- Darkmoon Card: Madness
-							},
-						}),
-					}),
-					q(13326, {	-- Darkmoon Nobles Deck
-						["repeatable"] = true,
-						["provider"] = { "n", 14847 },	-- Professor Thaddeus
-						["coord"] = { 51.9, 60.9, 407 },
-						["lvl"] = 80,
-						["g"] = {
-							i(44253),	-- Darkmoon Card: Greatness
-							i(44255),	-- Darkmoon Card: Greatness
-							i(42987),	-- Darkmoon Card: Greatness
-							i(44254),	-- Darkmoon Card: Greatness
-						},
-					}),
-					q(30450, {	-- Darkmoon Ox Deck
-						["repeatable"] = true,
-						["provider"] = { "n", 14847 },	-- Professor Thaddeus
-						["coord"] = { 51.9, 60.9, 407 },
-						["lvl"] = 90,
-						["g"] = {
-							i(79329),	-- Relic of Niuzao
-						},
-					}),
-					q(7927,  {	-- Darkmoon Portals Deck
-						["repeatable"] = true,
-						["provider"] = { "i", 19277 },	-- Portals Deck
-						["coord"] = { 51.9, 60.9, 407 },
-						["lvl"] = 60,
-						["g"] = {
-							i(19290),	-- Darkmoon Card: Twisting Nether
-						},
-					}),
-					q(13324, {	-- Darkmoon Prisms Deck
-						["repeatable"] = true,
-						["provider"] = { "n", 14847 },	-- Professor Thaddeus
-						["coord"] = { 51.9, 60.9, 407 },
-						["lvl"] = 80,
-						["g"] = {
-							i(42988),	-- Darkmoon Card: Illusion
-						},
-					}),
-					q(30451, {	-- Darkmoon Serpent Deck
-						["repeatable"] = true,
-						["provider"] = { "n", 14847 },	-- Professor Thaddeus
-						["coord"] = { 51.9, 60.9, 407 },
-						["lvl"] = 90,
-						["g"] = {
-							i(79331),	-- Relic of Yu'lon
-						},
-					}),
-					i(31891, {	-- Storms Deck
-						q(10939, {	-- Darkmoon Storms Deck
-							["repeatable"] = true,
-							["provider"] = { "n", 14847 },	-- Professor Thaddeus
-							["coord"] = { 51.9, 60.9, 407 },
-							["lvl"] = 70,
-							["g"] = {
-								i(31857),	-- Darkmoon Card: Wrath
-							},
-						}),
-					}),
-					q(30452, {	-- Darkmoon Tiger Deck
-						["repeatable"] = true,
-						["provider"] = { "n", 14847 },	-- Professor Thaddeus
-						["coord"] = { 51.9, 60.9, 407 },
-						["lvl"] = 90,
-						["g"] = {
-							i(79328),	-- Relic of Xuen (Agility)
-							i(79327),	-- Relic of Xuen (Strength)
-						},
-					}),
-					q(27666, {	-- Darkmoon Tsunami Deck
-						["repeatable"] = true,
-						["provider"] = { "n", 14847 },	-- Professor Thaddeus
-						["coord"] = { 51.9, 60.9, 407 },
-						["lvl"] = 85,
-						["g"] = {
-							i(62050),	-- Darkmoon Card: Tsunami
-						},
-					}),
-					q(13327, {	-- Darkmoon Undeath Deck
-						["repeatable"] = true,
-						["provider"] = { "n", 14847 },	-- Professor Thaddeus
-						["coord"] = { 51.9, 60.9, 407 },
-						["lvl"] = 80,
-						["g"] = {
-							i(42990),	-- Darkmoon Card: Death
-						},
-					}),
-					q(27664, {	-- Darkmoon Volcanic Deck
-						["repeatable"] = true,
-						["provider"] = { "n", 14847 },	-- Professor Thaddeus
-						["coord"] = { 51.9, 60.9, 407 },
-						["lvl"] = 85,
-						["g"] = {
-							i(62047),	-- Darkmoon Card: Volcano
-						},
-					}),
-					q(7928,  {	-- Darkmoon Warlords Deck
-						["repeatable"] = true,
-						["provider"] = { "i", 19257 },	-- Warlords Deck
-						["coord"] = { 51.9, 60.9, 407 },
-						["lvl"] = 60,
-						["g"] = {
-							i(19287),	-- Darkmoon Card: Heroism
-						},
 					}),
 				},
 			}),
@@ -510,6 +308,251 @@ _.WorldEvents =
 					i(19182),	-- Tattered Darkmoon Faire Prize Ticket
 				},
 			}),
+			applyclassicphase(PHASE_THREE, q(7907, {	-- Darkmoon Beast Deck
+				["providers"] = {
+					{ "i", 19228 },	-- Beasts Deck
+					{ "n", 14847 },	-- Professor Thaddeus
+				},
+				["coord"] = { 51.9, 60.9, 407 },
+				["repeatable"] = true,
+				["lvl"] = 60,
+				["g"] = {
+					i(19288),	-- Darkmoon Card: Blue Dragon
+				},
+			})),
+			applyclassicphase(TBC_PHASE_THREE, q(10938, {	-- Darkmoon Blessings Deck
+				["providers"] = {
+					{ "i", 31890 },	-- Blessings Deck
+					{ "n", 14847 },	-- Professor Thaddeus
+				},
+				["coord"] = { 51.9, 60.9, 407 },
+				["repeatable"] = true,
+				["lvl"] = 70,
+				["g"] = {
+					i(31856),	-- Darkmoon Card: Crusade
+				},
+			})),
+			applyclassicphase(WRATH_PHASE_ONE, q(13325, {	-- Darkmoon Chaos Deck
+				["providers"] = {
+					{ "i", 44276 },	-- Chaos Deck
+					{ "n", 14847 },	-- Professor Thaddeus
+				},
+				["coord"] = { 51.9, 60.9, 407 },
+				["repeatable"] = true,
+				["lvl"] = 80,
+				["g"] = {
+					i(42989),	-- Darkmoon Card: Berserker!
+				},
+			})),
+			q(30449, {	-- Darkmoon Crane Deck
+				["providers"] = {
+					{ "i", 79325 },	-- Crane Deck
+					{ "n", 14847 },	-- Professor Thaddeus
+				},
+				["coord"] = { 51.9, 60.9, 407 },
+				["repeatable"] = true,
+				["lvl"] = 90,
+				["g"] = {
+					i(79330),	-- Relic of Chi-Ji
+				},
+			}),
+			q(27667, {	-- Darkmoon Earthquake Deck
+				["providers"] = {
+					{ "i", 62046 },	-- Earthquake Deck
+					{ "n", 14847 },	-- Professor Thaddeus
+				},
+				["coord"] = { 51.9, 60.9, 407 },
+				["repeatable"] = true,
+				["lvl"] = 85,
+				["g"] = {
+					i(62048),	-- Darkmoon Card: Earthquake
+				},
+			}),
+			applyclassicphase(PHASE_THREE, q(7929,  {	-- Darkmoon Elementals Deck
+				["providers"] = {
+					{ "i", 19267 },	-- Elementals Deck
+					{ "n", 14847 },	-- Professor Thaddeus
+				},
+				["coord"] = { 51.9, 60.9, 407 },
+				["repeatable"] = true,
+				["lvl"] = 60,
+				["g"] = {
+					i(19289),	-- Darkmoon Card: Maelstrom
+				},
+			})),
+			applyclassicphase(TBC_PHASE_THREE, q(10940, {	-- Darkmoon Furies Deck
+				["providers"] = {
+					{ "i", 31907 },	-- Furies Deck
+					{ "n", 14847 },	-- Professor Thaddeus
+				},
+				["coord"] = { 51.9, 60.9, 407 },
+				["repeatable"] = true,
+				["lvl"] = 70,
+				["g"] = {
+					i(31858),	-- Darkmoon Card: Vengeance
+				},
+			})),
+			q(27665, {	-- Darkmoon Hurricane Deck
+				["providers"] = {
+					{ "i", 62045 },	-- Hurricane Deck
+					{ "n", 14847 },	-- Professor Thaddeus
+				},
+				["coord"] = { 51.9, 60.9, 407 },
+				["repeatable"] = true,
+				["lvl"] = 85,
+				["g"] = {
+					i(62051),	-- Darkmoon Card: Hurricane
+					i(62049),	-- Darkmoon Card: Hurricane
+				},
+			}),
+			applyclassicphase(TBC_PHASE_THREE, q(10941, {	-- Darkmoon Lunacy Deck
+				["providers"] = {
+					{ "i", 31914 },	-- Lunacy Deck
+					{ "n", 14847 },	-- Professor Thaddeus
+				},
+				["coord"] = { 51.9, 60.9, 407 },
+				["repeatable"] = true,
+				["lvl"] = 70,
+				["g"] = {
+					i(31859),	-- Darkmoon Card: Madness
+				},
+			})),
+			q(13326, {	-- Darkmoon Nobles Deck
+				["providers"] = {
+					{ "i", 44326 },	-- Nobles Deck
+					{ "n", 14847 },	-- Professor Thaddeus
+				},
+				["coord"] = { 51.9, 60.9, 407 },
+				["repeatable"] = true,
+				["lvl"] = 80,
+				["g"] = {
+					i(44253),	-- Darkmoon Card: Greatness
+					i(44255),	-- Darkmoon Card: Greatness
+					i(42987),	-- Darkmoon Card: Greatness
+					i(44254),	-- Darkmoon Card: Greatness
+				},
+			}),
+			q(30450, {	-- Darkmoon Ox Deck
+				["providers"] = {
+					{ "i", 79324 },	-- Ox Deck
+					{ "n", 14847 },	-- Professor Thaddeus
+				},
+				["coord"] = { 51.9, 60.9, 407 },
+				["repeatable"] = true,
+				["lvl"] = 90,
+				["g"] = {
+					i(79329),	-- Relic of Niuzao
+				},
+			}),
+			applyclassicphase(PHASE_THREE, q(7927,  {	-- Darkmoon Portals Deck
+				["providers"] = {
+					{ "i", 19277 },	-- Portals Deck
+					{ "n", 14847 },	-- Professor Thaddeus
+				},
+				["coord"] = { 51.9, 60.9, 407 },
+				["repeatable"] = true,
+				["lvl"] = 60,
+				["g"] = {
+					i(19290),	-- Darkmoon Card: Twisting Nether
+				},
+			})),
+			q(13324, {	-- Darkmoon Prisms Deck
+				["providers"] = {
+					{ "i", 44259 },	-- Prisms Deck
+					{ "n", 14847 },	-- Professor Thaddeus
+				},
+				["coord"] = { 51.9, 60.9, 407 },
+				["repeatable"] = true,
+				["lvl"] = 80,
+				["g"] = {
+					i(42988),	-- Darkmoon Card: Illusion
+				},
+			}),
+			q(30451, {	-- Darkmoon Serpent Deck
+				["providers"] = {
+					{ "i", 79326 },	-- Serpent Deck
+					{ "n", 14847 },	-- Professor Thaddeus
+				},
+				["coord"] = { 51.9, 60.9, 407 },
+				["repeatable"] = true,
+				["lvl"] = 90,
+				["g"] = {
+					i(79331),	-- Relic of Yu'lon
+				},
+			}),
+			applyclassicphase(TBC_PHASE_THREE, q(10939, {	-- Darkmoon Storms Deck
+				["providers"] = {
+					{ "i", 31891 },	-- Storms Deck
+					{ "n", 14847 },	-- Professor Thaddeus
+				},
+				["coord"] = { 51.9, 60.9, 407 },
+				["repeatable"] = true,
+				["lvl"] = 70,
+				["g"] = {
+					i(31857),	-- Darkmoon Card: Wrath
+				},
+			})),
+			q(30452, {	-- Darkmoon Tiger Deck
+				["providers"] = {
+					{ "i", 79323 },	-- Tiger Deck
+					{ "n", 14847 },	-- Professor Thaddeus
+				},
+				["coord"] = { 51.9, 60.9, 407 },
+				["repeatable"] = true,
+				["lvl"] = 90,
+				["g"] = {
+					i(79328),	-- Relic of Xuen (Agility)
+					i(79327),	-- Relic of Xuen (Strength)
+				},
+			}),
+			q(27666, {	-- Darkmoon Tsunami Deck
+				["providers"] = {
+					{ "i", 62044 },	-- Tsunami Deck
+					{ "n", 14847 },	-- Professor Thaddeus
+				},
+				["coord"] = { 51.9, 60.9, 407 },
+				["repeatable"] = true,
+				["lvl"] = 85,
+				["g"] = {
+					i(62050),	-- Darkmoon Card: Tsunami
+				},
+			}),
+			q(13327, {	-- Darkmoon Undeath Deck
+				["providers"] = {
+					{ "i", 44294 },	-- Undeath Deck
+					{ "n", 14847 },	-- Professor Thaddeus
+				},
+				["coord"] = { 51.9, 60.9, 407 },
+				["repeatable"] = true,
+				["lvl"] = 80,
+				["g"] = {
+					i(42990),	-- Darkmoon Card: Death
+				},
+			}),
+			q(27664, {	-- Darkmoon Volcanic Deck
+				["providers"] = {
+					{ "i", 62021 },	-- Volcanic Deck
+					{ "n", 14847 },	-- Professor Thaddeus
+				},
+				["coord"] = { 51.9, 60.9, 407 },
+				["repeatable"] = true,
+				["lvl"] = 85,
+				["g"] = {
+					i(62047),	-- Darkmoon Card: Volcano
+				},
+			}),
+			applyclassicphase(PHASE_THREE, q(7928,  {	-- Darkmoon Warlords Deck
+				["providers"] = {
+					{ "i", 19257 },	-- Warlords Deck
+					{ "n", 14847 },	-- Professor Thaddeus
+				},
+				["coord"] = { 51.9, 60.9, 407 },
+				["repeatable"] = true,
+				["lvl"] = 60,
+				["g"] = {
+					i(19287),	-- Darkmoon Card: Heroism
+				},
+			})),
 			q(13311, {	-- Demons Deck
 				["provider"] = { "i", 44158 },	-- Demons Deck
 				["repeatable"] = true,
@@ -1198,6 +1241,7 @@ _.WorldEvents =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
+		q(7906),	-- Darkmoon Cards - Beast (NYI?)
 		q(11334),	-- He Shoots, He Scores!
 		q(11345),	-- Prizes for Pellets
 		q(29601),	-- The Darkmoon Field Guide

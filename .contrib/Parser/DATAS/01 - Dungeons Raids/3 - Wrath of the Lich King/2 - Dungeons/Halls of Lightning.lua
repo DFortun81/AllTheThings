@@ -307,43 +307,13 @@ _.Instances = { tier(WOTLK_TIER, {
 					})),
 				},
 			}),
-			d(24,  {	-- Timewalking
-				["lvl"] = 81,
-				["groups"] = {
-					cr(28586, e(597, {	-- General Bjarngrim
-						i(127504),	-- Iron Dwarf Smith Pauldrons
-						i(127506),	-- Traditionally Dyed Handguards
-						i(127507),	-- The General's Steel Girdle
-						i(127505),	-- Patroller's War-Kilt
-						i(127526),	-- Awakened Handguards (Dropped on 9th December for me during TW - Gold)
-					})),
-					cr(28587, e(598, {	-- Volkhan
-						i(127525),	-- Helm of the Lightning Halls
-						i(127508),	-- Shroud of Reverberation
-						i(127511),	-- Giant-Hair Woven Gloves
-						i(127510),	-- Belt of Vivacity
-						i(127507),	-- The General's Steel Girdle
-						i(127509),	-- Slag Footguards
-					})),
-					cr(28546, e(599, {	-- Ionar
-						i(127519),	-- Ornate Woolen Stola
-						i(127514),	-- Charged-Bolt Grips
-						i(127513),	-- Cord of Swirling Winds
-						i(127515),	-- Skywall Striders
-						i(127512),	-- Winged Talisman
-					})),
-					cr(28923, e(600, {	-- Loken
-						i(127520),	-- Colossal Skull-Clad Cleaver
-						i(127516),	-- Lightning Giant Staff
-						i(127524),	-- Librarian's Paper Cutter
-						i(127517),	-- Planetary Helm
-						i(127521),	-- Advanced Tooled-Leather Bands
-						i(127518),	-- Flowing Sash of Order
-						i(127523),	-- Mail Girdle of the Audient Earth
-						i(127522),	-- Woven Bracae Leggings
-					})),
+			-- #if AFTER 6.2.3.20601
+			d(24, {	-- Timewalking
+				["sym"] = {	-- link in Timewalking content
+					{"sub", "tw_instance", 275 },	-- this instance version of timewalking
 				},
 			}),
+			-- #endif
 		},
 	}),
 })};

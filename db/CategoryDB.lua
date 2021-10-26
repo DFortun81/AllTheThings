@@ -2,6 +2,7 @@
 --   C A T E G O R Y   D A T A B A S E   M O D U L E   --
 ---------------------------------------------------------
 select(2, ...).CategoryNames = {
+	[3] = "Tarot Decks",
 	[58] = "Holiday Cooking",
 	[63] = "Everyday Cooking",
 	[64] = "Way of the Grill",
@@ -776,6 +777,7 @@ select(2, ...).CategoryNames = {
 	[1538] = "Bags",
 };
 select(2, ...).CategoryIcons = {
+	[3] = "Interface/Icons/Inv_misc_ticket_tarot_portal_01",
 	[58] = "Interface/Icons/INV_Misc_Food_62",
 	[63] = "Interface/Icons/INV_Misc_Food_12",
 	[64] = "Interface/Icons/achievement_cooking_masterofthegrill",

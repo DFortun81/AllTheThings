@@ -147,38 +147,13 @@ _.Instances = { tier(MOP_TIER, {
 					})),
 				},
 			}),
+			-- #if AFTER 7.1.5.23360
 			d(24, {	-- Timewalking
-				["lvl"] = 91,
-				["g"] = {
-					cr(56637, e(668, {	-- Ook-Ook
-						i(144084),	-- Ook's Hozen Slicer
-						i(143957),	-- Nimbletoe Chestguard
-						i(144087),	-- Bracers of Displaced Air
-						i(143989),	-- Barreldodger Boots
-						i(144119),	-- Empty Fruit Barrel
-					})),
-					cr(56717, e(669, {	-- Hoptallus
-						i(144092),	-- Bottle of Potent Potables
-						i(144121),	-- Cloak of Hidden Flasks
-						i(144088),	-- Bubble-Breaker Bracers
-						i(144120),	-- Belt of Brazen Inebriation
-						i(143975),	-- Hopping Mad Leggings
-					})),
-					cr(59479, e(670, {	-- Yan-Zhu the Uncasked
-						i(144124),	-- Wort Stirring Rod
-						i(144085),	-- Gao's Keg Tapper
-						i(144217),	-- Inelava, Spirit of Inebriation
-						i(144089),	-- Yan-Zhu's Pressure Valve
-						i(143969),	-- Fizzy Spaulders
-						i(143958),	-- Uncasked Chestguard
-						i(144082),	-- Fermenting Belt
-						i(143976),	-- Sudsy Legplates
-						i(144125),	-- Alemental Seal
-						i(144123),	-- Lime-Rimmed Signet
-						i(144122),	-- Carbonic Carbuncle
-					})),
+				["sym"] = {	-- link in Timewalking content
+					{"sub", "tw_instance", 302 },	-- this instance version of timewalking
 				},
 			}),
+			-- #endif
 		},
 	}),
 })};

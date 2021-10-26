@@ -195,56 +195,13 @@ _.Instances = { tier(WOD_TIER, {
 					},
 				}),
 			}),
+			-- #if AFTER 8.1.5.29701
 			d(24, {	-- Timewalking
-				["lvl"] = 50,
-				["g"] = {
-					e(888, {	-- Slave Watcher Crushto
-						["crs"] = { 74787 },	-- Slave Watcher Crushto
-						["sym"] = {
-							{"sub", "common_wod_dungeon_drop", 24, WRIST},
-							{"sub", "common_wod_dungeon_drop", 24, LEGS},
-						},
-						["g"] = {
-							i(110040),	-- Crushto's Neck Separator
-							i(110000),	-- Crushto's Runic Alarm
-						},
-					}),
-					e(893, {	-- Magmolatus
-						["crs"] = {
-							74366,	-- Forgemaster Gog'duh
-							74475,	-- Magmolatus
-						},
-						["sym"] = {
-							{"sub", "common_wod_dungeon_drop", 24, CHEST},
-							{"sub", "common_wod_dungeon_drop", 24, HANDS},
-						},
-					}),
-					e(887, {	-- Roltall
-						["crs"] = { 75786 },	-- Roltall
-						["sym"] = {
-							{"sub", "common_wod_dungeon_drop", 24, BACK},
-							{"sub", "common_wod_dungeon_drop", 24, FEET},
-						},
-						["g"] = {
-							i(110041),	-- Roltall's Brutal Crescent
-							i(110015),	-- Toria's Unseeing Eye
-						},
-					}),
-					e(889, {	-- Gug'rokk
-						["crs"] = { 74790 },	-- Gug'rokk
-						["sym"] = {
-							{"sub", "common_wod_dungeon_drop", 24, HEAD},
-							{"sub", "common_wod_dungeon_drop", 24, SHOULDER},
-							{"sub", "common_wod_dungeon_drop", 24, FINGER},
-						},
-						["g"] = {
-							i(110042),	-- Gug'rokk's Smasher
-							i(110044),	-- Ogre Dinner Plate
-							i(110043),	-- Gug'rokk's Grandmother
-						},
-					}),
+				["sym"] = {	-- link in Timewalking content
+					{"sub", "tw_instance", 385 },	-- this instance version of timewalking
 				},
 			}),
+			-- #endif
 		},
 	}),
 })};
