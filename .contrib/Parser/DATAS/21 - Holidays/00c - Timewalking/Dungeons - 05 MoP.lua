@@ -82,6 +82,72 @@ root("Holidays", d(24, {  -- Timewalking
 					},
 				}),
 			}),
+			inst_tw(246, bubbleDown({ ["timeline"] = { "added 9.1.5", }},{	-- Scholomance
+				e(659,   {	-- Instructor Chillheart
+					["crs"] = {
+						58633,	-- Instructor Chillheart
+						58664,	-- Instructor Chillheart's Phylactery
+					},
+					["g"] = {
+						i(144201),	-- Gravetouch Greatsword
+						i(144180),	-- Anarchist's Pendant
+						i(143967),	-- Breastplate of Wracking Souls
+						i(144200),	-- Shadow Puppet Bracers
+						i(144202),	-- Icewrath Belt
+					},
+				}),
+				e(663,   {	-- Jandice Barov
+					["crs"] = { 59184 },	-- Jandice Barov
+					["g"] = {
+						i(144207),	-- Metanoia Shield
+						i(144029),	-- Barovian Ritual Hood
+						i(144208),	-- Phantasmal Drape
+						i(144012),	-- Ghostwoven Legguards
+						i(144013),	-- Wraithplate Treads
+					},
+				}),
+				e(665,   {	-- Rattlegore
+					["crs"] = { 59153 },	-- Rattlegore
+					["g"] = {
+						i(144011),	-- Bone Golem Boots
+						i(144204),	-- Deadwalker Bracers
+						i(144203),	-- Goresoaked Headreaper
+						i(144205),	-- Necromantic Wand
+						i(144206),	-- Rattling Gloves
+						i(144015),	-- Vigorsteel Spaulders
+					},
+				}),
+				n(59369, {	-- Doctor Theolen Krastinov
+					["description"] = "This is a rare that is not always present.",
+					["g"] = {
+						i(88566),	-- Krastinov's Bag of Horrors
+					},
+				}),
+				e(666,   {	-- Lilian Voss
+					["crs"] = { 58722 },	-- Lilian Voss
+					["g"] = {
+						i(144030),	-- Soulburner Crown
+						i(144181),	-- Necklace of the Dark Blaze
+						i(143968),	-- Shivbreaker Vest
+						i(144209),	-- Dark Blaze Gauntlets
+						i(144014),	-- Leggings of Unleashed Anguish
+					},
+				}),
+				e(684, {	-- Darkmaster Gandling
+					["crs"] = { 59080 },	-- Darkmaster Gandling
+					["g"] = {
+						i(144212),	-- Gloves of Explosive Pain
+						i(144211),	-- Headmaster's Will
+						i(144213),	-- Incineration Belt
+						i(144161),	-- Lessons of the Darkmaster
+						i(144159),	-- Price of Progress
+						i(144160),	-- Searing Words
+						i(144016),	-- Shoulderguards of Painful Lessons
+						i(144210),	-- Tombstone Gauntlets
+						i(144015),	-- Vigorsteel Spaulders
+					},
+				}),
+			})),
 			inst_tw(312, {	-- Shado-Pan Monastery
 				cr(56747, e(673, {	-- Gu Cloudstrike
 					i(144127),	-- Cloudstrike Pendant
@@ -118,7 +184,7 @@ root("Holidays", d(24, {  -- Timewalking
 					i(144132),	-- Seal of Hateful Meditation
 				})),
 			}),
-			inst_tw(324, {	-- Siege of Niuzao Temple
+			inst_tw(324, bubbleDown({ ["timeline"] = { "added 6.2.3.20601", "removed 9.1.5", }},{	-- Siege of Niuzao Temple
 				cr(61567, e(693, {	-- Vizier Jin'bak
 					i(144022),	-- Hood of Viridian Residue
 					i(144162),	-- Engraved Amber Pendant
@@ -153,7 +219,7 @@ root("Holidays", d(24, {  -- Timewalking
 					i(144000),	-- Airbender Sandals
 					i(143997),	-- Anchoring Sabatons
 				})),
-			}),
+			})),
 			inst_tw(302, {	-- Stormstout Brewery
 				cr(56637, e(668, {	-- Ook-Ook
 					i(144084),	-- Ook's Hozen Slicer

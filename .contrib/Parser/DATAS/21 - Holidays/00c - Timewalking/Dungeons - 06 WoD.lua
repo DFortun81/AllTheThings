@@ -360,7 +360,49 @@ root("Holidays", d(24, {  -- Timewalking
 					},
 				}),
 			}),
-			inst_tw(558, {	-- Iron Docks
+			inst_tw(536, bubbleDown({ ["timeline"] = { "added 9.1.5", }},{	-- Grimrail Depot
+				e(1138, {	-- Rocketspark and Borka
+					["crs"] = {
+						77816,	-- Borka the Brute
+						77803,	-- Railmaster Rocketspark
+					},
+					["sym"] = {
+						{"sub", "common_wod_dungeon_drop_tw", 23, WAIST},
+						{"sub", "common_wod_dungeon_drop_tw", 23, FINGER},
+					},
+					["g"] = {
+						i(110051),	-- Overseer's Final Word
+					},
+				}),
+				e(1163, {	-- Nitrogg Thundertower
+					["crs"] = {
+						79548,	-- Assault Cannon
+						79545,	-- Nitrogg Thundertower
+					},
+					["sym"] = {
+						{"sub", "common_wod_dungeon_drop_tw", 23, NECK},
+						{"sub", "common_wod_dungeon_drop_tw", 23, CHEST},
+					},
+					["g"] = {
+						i(110052),	-- Scepter of Brutality
+						i(109996),	-- Thundertower's Targeting Reticle
+					},
+				}),
+				e(1133, {	-- Skylord Tovra
+					["crs"] = { 80005 },	-- Skylord Tovra
+					["sym"] = {
+						{"sub", "common_wod_dungeon_drop_tw", 23, WRIST},
+						{"sub", "common_wod_dungeon_drop_tw", 23, HANDS},
+						{"sub", "common_wod_dungeon_drop_tw", 23, LEGS},
+					},
+					["g"] = {
+						i(110054),	-- Thunderlord Flamestaff
+						i(110053),	-- Arrowbreaker Greatshield
+						i(110001),	-- Tovra's Lightning Repository
+					},
+				}),
+			})),
+			inst_tw(558, bubbleDown({ ["timeline"] = { "added 6.2.3.20601", "removed 9.1.5", }},{	-- Iron Docks
 				e(1235, {	-- Fleshrender Nok'gar
 					["crs"] = {
 						81297,	-- Dreadfang
@@ -418,7 +460,7 @@ root("Holidays", d(24, {  -- Timewalking
 						i(110060),	-- Painbringer's Crystal
 					},
 				}),
-			}),
+			})),
 			inst_tw(537, {	-- Shadowmoon Burial Grounds
 				e(1139, {	-- Sadana Bloodfury
 					["crs"] = { 75509 },

@@ -125,6 +125,13 @@ _.Instances = { tier(MOP_TIER, {
 					}),
 				},
 			}),
+			-- #if AFTER 9.1.5
+			d(24, {	-- Timewalking
+				["sym"] = {	-- link in Timewalking content
+					{"sub", "tw_instance", 246 },	-- this instance version of timewalking
+				},
+			}),
+			-- #endif
 		},
 	}),
 })};

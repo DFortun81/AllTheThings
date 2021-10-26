@@ -494,7 +494,7 @@ root("Holidays", d(24, {  -- Timewalking
 				},
 			}),
 			-- #endif
-			inst_tw(271, {	-- Ahn'kahet: The Old Kingdom
+			inst_tw(271, bubbleDown({ ["timeline"] = { "added 6.2.3.20601", "removed 9.1.5", }},{	-- Ahn'kahet: The Old Kingdom
 				cr(29309, e(580, {	-- Elder Nadox
 					i(127607),	-- Blade of Nadox
 					i(127619),	-- Brood Plague Helmet
@@ -546,7 +546,42 @@ root("Holidays", d(24, {  -- Timewalking
 					i(127632),	-- Skirt of the Old Kingdom
 					i(127629),	-- Greaves of Ancient Evil
 				})),
-			}),
+			})),
+			inst_tw(272, bubbleDown({ ["timeline"] = { "added 9.1.5", }},{	-- Azjol-Nerub
+				cr(28684, e(585, {	-- Krik'thir the Gatewatcher
+					i(35655),	-- Cobweb Machete
+					i(37216),	-- Facade Shield of Glyphs
+					i(157582),	-- Nerubian Mantle
+					i(37219),	-- Custodian's Chestpiece
+					i(37217),	-- Golden Limb Bands
+					i(35656),	-- Aura Focused Gauntlets
+					i(35657),	-- Exquisite Spider-Silk Footwraps
+					i(37218),	-- Stone-Worn Footwraps
+				})),
+				cr(28921, e(586, {	-- Hadronox
+					i(35658),	-- Life-Staff of the Web Lair
+					i(35660),	-- Spinneret Epaulets
+					i(37222),	-- Egg Sac Robes
+					i(37230),	-- Grotto Mist Gloves
+					i(157581),	-- Skittering Gauntlets
+					i(37221),	-- Hollowed Mandibles Legplates
+					i(35659),	-- Treads of Aspiring Heights
+					i(37220),	-- Essence of Gossamer
+				})),
+				cr(29120, e(587, {	-- Anub'arak
+					i(37235),	-- Crypt Lord's Deft Blade
+					i(37238),	-- Rod of the Fallen Monarch
+					i(37237),	-- Chitin Shell Greathelm
+					i(37236),	-- Insect Vestments
+					i(37240),	-- Flamebeard's Bracers
+					i(37241),	-- Ancient Aligned Girdle
+					i(35663),	-- Charmed Silken Cord
+					i(37242),	-- Sash of the Servant
+					i(35662),	-- Wing Cover Girdle
+					i(37232),	-- Ring of the Traitor King
+					i(35661),	-- Signet of Arachnathid Command
+				})),
+			})),
 			inst_tw(274, {	-- Gundrak
 				cr(29304, e(592, {	-- Slad'ran
 					i(127527),	-- Witch Doctor's Wildstaff
@@ -634,7 +669,7 @@ root("Holidays", d(24, {  -- Timewalking
 					i(127522),	-- Woven Bracae Leggings
 				})),
 			}),
-			inst_tw(278, {	-- Pit of Saron
+			inst_tw(278, bubbleDown({ ["timeline"] = { "added 6.2.3.20601", "removed 9.1.5", }},{	-- Pit of Saron
 				cr(36494, e(608, {	-- Forgemaster Garfrost
 					i(133486),	-- Garfrost's Two-Ton Hammer
 					i(133485),	-- Unspeakable Secret
@@ -666,7 +701,50 @@ root("Holidays", d(24, {  -- Timewalking
 					i(133502),	-- Gondria's Spectral Bracer
 					i(133499),	-- Shaggy Wyrmleather Leggings
 				}))
-			}),
+			})),
+			inst_tw(280, bubbleDown({ ["timeline"] = { "added 9.1.5", }},{	-- The Forge of Souls
+				cr(36497, e(615, {	-- Brojahm
+					i(50316),	-- Papa's Brand New Bag
+					i(50317),	-- Papa's New Bag
+					i(49783),	-- Lucky Old Sun
+					i(50191),	-- Nighttime
+					i(50197),	-- Eyes of Bewilderment
+					i(50196),	-- Love's Prisoner
+					i(49785),	-- Bewildering Shoulderpads
+					i(50193),	-- Very Fashionable Shoulders
+					i(49786),	-- Robes of the Cheating Heart
+					i(49787),	-- Seven Stormy Mornings
+					i(49788),	-- Cold Sweat Grips
+					i(50194),	-- Weeping Gauntlets
+					i(49784),	-- Minister's Number One Legplates
+				})),
+				cr(36502, e(616, {	-- Devourer of Souls
+					i(49790),	-- Blood Boil Lancet
+					i(49793),	-- Tower of the Mouldering Corpse
+					i(50203),	-- Blood Weeper
+					i(49789),	-- Heartshiver
+					i(50210),	-- Seethe
+					i(50206),	-- Frayed Scoundrel's Cap
+					i(50214),	-- Helm of the Spirit Shock
+					i(50211),	-- Arcane Loops of Anger
+					i(49799),	-- Coil of Missing Gems
+					i(50208),	-- Pauldrons of the Souleater
+					i(49792),	-- Accursed Crawling Cape
+					i(49791),	-- Lost Reliquary Chestguard
+					i(50213),	-- Mord'rethar Robes
+					i(49797),	-- Brace Guards of the Starless Night
+					i(50209),	-- Essence of Suffering
+					i(50212),	-- Essence of Desire
+					i(49796),	-- Essence of Anger
+					i(49794),	-- Legplates of Frozen Granite
+					i(50207),	-- Black Spire Sabatons
+					i(50215),	-- Recovered Reliquary Boots
+					i(49795),	-- Sollerets of Suffering
+					i(49798),	-- Soul Screaming Boots
+					i(49800),	-- Spiteful Signet
+					i(50198),	-- Needle-Encrusted Scorpion
+				})),
+			})),
 			inst_tw(281, {	-- The Nexus
 				a(cr(26798, e(833, {	-- Commander Stoutbeard
 					i(127568),	-- Glacier Sharpened Vileblade [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
@@ -729,7 +807,42 @@ root("Holidays", d(24, {  -- Timewalking
 					i(127595),	-- Dragon Slayer's Sabatons
 				})),
 			}),
-			inst_tw(286, {	-- Utgarde Pinnacle
+			inst_tw(285, bubbleDown({ ["timeline"] = { "added 9.1.5", }},{	-- Utgarde Keep
+				cr(23953, e(638, {	-- Prince Keleseth <The San'layn>
+					i(37179),	-- Infantry Assault Blade
+					i(35570),	-- Keleseth's Blade of Evocation
+					i(37177),	-- Wand of the San'layn
+					i(37180),	-- Battlemap Hide Helm
+					i(35572),	-- Reinforced Velvet Helm
+					i(35571),	-- Dragon Stabler's Gauntlets
+					i(37178),	-- Strategist's Belt
+				})),
+				cr(24200, e(639, {	-- Skarvald the Constructor and Dalronn the Controller
+					i(35573),	-- Arm Blade of Augelmir
+					i(37181),	-- Dagger of Betrayal
+					i(157555),	-- Constructor's Worklight
+					i(37182),	-- Helmet of the Constructor
+					i(35574),	-- Chestplate of the Northern Lights
+					i(37184),	-- Dalronn's Jerkin
+					i(35575),	-- Skarvald's Dragonskin Habergeon
+					i(37183),	-- Bindings of the Tunneler
+				})),
+				cr(23954, e(640, {	-- Ingvar the Plunderer
+					i(41793),	-- Design: Fierce Monarch Topaz
+					i(37190),	-- Enraged Feral Staff
+					i(35576),	-- Ingvar's Monolithic Cleaver
+					i(37191),	-- Drake-Mounted Crossbow
+					i(37188),	-- Plunderer's Helmet
+					i(35578),	-- Overlaid Chain Spaulders
+					i(37194),	-- Sharp-Barbed Leather Belt
+					i(37189),	-- Breeches of the Caller
+					i(35577),	-- Holistic Patchwork Breeches
+					i(37193),	-- Staggering Legplates
+					i(37192),	-- Annhylde's Ring
+					i(37186),	-- Unsmashable Heavy Band
+				})),
+			})),
+			inst_tw(286, bubbleDown({ ["timeline"] = { "added 6.2.3.20601", "removed 9.1.5", }},{	-- Utgarde Pinnacle
 				cr(26668, e(641, {	-- Svala Sorrowgrave
 					i(127458),	-- Ritualistic Arthame
 					i(127459),	-- Brazier Igniter
@@ -784,7 +897,7 @@ root("Holidays", d(24, {  -- Timewalking
 					i(127493),	-- Meteorite Whetstone
 					i(127474),	-- Vestige of Haldor
 				})),
-			}),
+			})),
 		},
 	}),
 }));

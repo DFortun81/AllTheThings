@@ -265,6 +265,50 @@ root("Holidays", d(24, {  -- Timewalking
 				},
 			}),
 			-- #endif
+			inst_tw(66, bubbleDown({ ["timeline"] = { "added 9.1.5", }},{	-- Blackrock Caverns
+				cr(39665, e(105, {	-- Rom'ogg Boncrusher
+					i(56312),	-- Torturer's Mercy
+					i(56314),	-- Shield of the Iron Maiden
+					i(56311),	-- Inquisition Robes
+					i(56313),	-- Manacles of Pain
+					i(157608),	-- Groundrumble Boots
+					i(56310),	-- Skullcracker Ring
+				})),
+				cr(39679, e(106, {	-- Corla, Herald of Twilight
+					i(56296),	-- Corla's Baton
+					i(56298),	-- Renouncer's Cowl
+					i(56297),	-- Armbands of Change
+					i(56299),	-- Signet of Transformation
+					i(56295),	-- Grace of the Herald
+				})),
+				cr(39698, e(107, {	-- Karsh Steelbender
+					i(56302),	-- Steelbender's Masterpiece
+					i(56300),	-- Quicksilver Amulet
+					i(56304),	-- Burned Gatherings
+					i(157610),	-- Heat-Shielded Tunic
+					i(56301),	-- Bracers of Cooled Anger
+					i(56303),	-- Heat Wave Leggings
+				})),
+				cr(39700, e(108, {	-- Beauty
+					i(56306),	-- Beauty's Favorite Bone
+					i(56308),	-- Beauty's Plate
+					i(157607),	-- Gently Gnawed Hauberk
+					i(56305),	-- Beauty's Silken Ribbon
+					i(56309),	-- Beauty's Chew Toy
+					i(56307),	-- Kibble
+				})),
+				cr(39705, e(109, {	-- Ascendent Lord Obsidius
+					i(56317),	-- Amber Messenger
+					i(56322),	-- Crepuscular Shield
+					i(56321),	-- Willowy Crown
+					i(56319),	-- Carrier Wave Pendant
+					i(56324),	-- Kyrstel Mantle
+					i(56318),	-- Raz's Pauldrons
+					i(56315),	-- Twitching Shadows
+					i(56323),	-- Clutches of Dying Light
+					i(56320),	-- Witching Hourglass
+				})),
+			})),
 			inst_tw(184, {	-- End Time
 				n(COMMON_BOSS_DROPS, {
 					["crs"] = {
@@ -327,7 +371,7 @@ root("Holidays", d(24, {  -- Timewalking
 					i(133420),	-- Arrow of Time
 				})),
 			}),
-			inst_tw(71, {	-- Grim Batol
+			inst_tw(71, bubbleDown({ ["timeline"] = { "added 6.2.3.20601", "removed 9.1.5", }},{	-- Grim Batol
 				cr(39625, e(131, {	-- General Umbriss
 					i(133283),	-- Modgud's Blade
 					i(133285),	-- Wildhammer Riding Helm
@@ -368,7 +412,7 @@ root("Holidays", d(24, {  -- Timewalking
 					i(133305),	-- Corrupted Egg Shell
 					i(133300),	-- Mark of Khardros
 				})),
-			}),
+			})),
 			inst_tw(69, {	-- Lost City of the Tol'vir
 				e(117, {	-- General Husam
 					["crs"] = { 44577 },	-- General Husam
