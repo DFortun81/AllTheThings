@@ -2491,6 +2491,8 @@ local function FillSymLinks(group, recursive)
 	end
 	if group.sym then
 		NestObjects(group, ResolveSymbolicLink(group));
+		-- make sure this group doesn't waste time getting resolved again somehow
+		group.sym = app.EmptyTable;
 	end
 	-- if app.DEBUG_PRINT == group then app.DEBUG_PRINT = nil; end
 	return group;

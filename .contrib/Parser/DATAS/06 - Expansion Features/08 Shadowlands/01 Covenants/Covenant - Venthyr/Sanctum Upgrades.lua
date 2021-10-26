@@ -2654,6 +2654,8 @@ _.HiddenQuestTriggers = {
 		-- Misc.
 			q(61919),	-- unflagged when completing Restock: Exploratory Meals (62094)
 			q(62524),	-- triggered at end of Ember Court (Vashj/Koryan/Choofa/Stonehead)
+			q(62521),	-- completed 'Safe/Humble' criteria for It's Certainly Never Boring
+			q(62523),	-- completed 'Safe/Humble' criteria for It's Certainly Never Boring
 			q(62525),	-- completed 'Relaxing' criteria for It's Certainly Never Boring
 			q(62526),	-- completed 'Exciting' criteria for It's Certainly Never Boring
 			-- q(59689),	-- Completed at the end, was unlocking Generous Gift and Protective Braziers for the Court Favors achievement.
