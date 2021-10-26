@@ -89,7 +89,7 @@ _.Zones =
 					},
 				}),
 				n(182864, {	-- Au'Dara
-					["description"] = "Next to the flightmaster",
+					["description"] = "Next to the flightmaster.",
 					["coord"] = { 59.7, 70.6, ORIBOS },
 					["g"] = {
 						i(188198, {	-- Travlers Anima Cache
@@ -147,7 +147,7 @@ _.Zones =
 								{"select", "instanceID", 1194},			-- Tazavesh, the Veiled Market
 								{"select", "instanceID", 1187},			-- Theater of Pain
 								{"select", "instanceID", 1188},			-- De Other Side
-								
+
 								{"pop"},								-- Discard the Instance Headers and acquire all of their children.
 								{"where", "difficultyID", 23},			-- Select only the Mythic Difficulty Headers.
 								{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.

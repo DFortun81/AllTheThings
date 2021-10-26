@@ -25,8 +25,14 @@ _.ExpansionFeatures =
 					q(62424, {	-- Crane Soul
 						["provider"] = { "i", 182168 },	-- Crane Soul
 					}),
+					q(64990, {	-- Cricket Soul
+						["provider"] = { "i", 187871 },	-- Cricket Soul
+					}),
 					q(63607, {	-- Direhorn Soul
 						["provider"] = { "i", 185051 },	-- Direhorn Soul
+					}),
+					q(65021, {	-- Eagle Soul
+						["provider"] = { "i", 187901 },	-- Eagle Soul
 					}),
 					q(62428, {	-- Equine Soul
 						["provider"] = { "i", 182172 },	-- Equine Soul
@@ -60,6 +66,12 @@ _.ExpansionFeatures =
 					q(62432, {	-- Owlcat Soul
 						["provider"] = { "i", 182177 },	-- Owlcat Soul
 						["crs"] = { 175732 },	-- Sylvanas Windrunner
+					}),
+					q(64992, {	-- Prairie Dog Soul
+						["provider"] = { "i", 187873 },	-- Prairie Dog Soul
+					}),
+					q(65009, {	-- Ram Soul
+						["provider"] = { "i", 187881 },	-- Ram Soul
 					}),
 					q(62433, {	-- Raptor Soul
 						["provider"] = { "i", 182178 },	-- Raptor Soul
@@ -109,33 +121,7 @@ _.ExpansionFeatures =
 					q(63603, {	-- Yak Soul
 						["provider"] = { "i", 185047 },	-- Yak Soul
 					}),
-					-- PTR 9.0.5
-					-- Has no source
-					--[[
-					q(63609, {	-- Kodo Soul
-						["provider"] = { "i", 185053 },	-- Kodo Soul
-					}),
-					q(63610, {	-- Mammoth Soul
-						["provider"] = { "i", 185054 },	-- Mammoth Soul
-					}),
-					q(63604, {	-- Shoveltusk Soul
-						["provider"] = { "i", 185048 },	-- Shoveltusk Soul
-					}),
 					--]]
-					-- PTR 9.1.5
-					-- Has Source
-					q(64990, {	-- Cricket Soul
-						["provider"] = { "i", 187871 },	-- Cricket Soul
-					}),
-					q(65021, {	-- Eagle Soul
-						["provider"] = { "i", 187901 },	-- Eagle Soul
-					}),
-					q(64992, {	-- Prairie Dog Soul
-						["provider"] = { "i", 187873 },	-- Prairie Dog Soul
-					}),
-					q(65009, {	-- Ram Soul
-						["provider"] = { "i", 187881 },	-- Ram Soul
-					}),
 					-- Has no source
 					--[[
 					q(65010, {	-- Alpaca Soul
@@ -165,6 +151,12 @@ _.ExpansionFeatures =
 					q(65023, {	-- Jormungar Soul
 						["provider"] = { "i", 187903 },	-- Jormungar Soul
 					}),
+					q(63609, {	-- Kodo Soul
+						["provider"] = { "i", 185053 },	-- Kodo Soul
+					}),
+					q(63610, {	-- Mammoth Soul
+						["provider"] = { "i", 185054 },	-- Mammoth Soul
+					}),
 					q(64959, {	-- Otter Soul
 						["provider"] = { "i", 187818 },	-- Otter Soul
 					}),
@@ -179,6 +171,9 @@ _.ExpansionFeatures =
 					}),
 					q(64995, {	-- Saurid Soul
 						["provider"] = { "i", 187878 },	-- Saurid Soul
+					}),
+					q(63604, {	-- Shoveltusk Soul
+						["provider"] = { "i", 185048 },	-- Shoveltusk Soul
 					}),
 					q(64988, {	-- Snake Soul
 						["provider"] = { "i", 187862 },	-- Snake Soul

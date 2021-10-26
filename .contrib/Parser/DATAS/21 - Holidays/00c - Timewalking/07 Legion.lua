@@ -14,7 +14,7 @@ _.WorldEvents =
 				},
 			}),
 			n(-10048, {	-- Mage Tower
-				["description"] = "tbd",
+				["description"] = "tbd",	--TODO:
 				["g"] = {
 					n(ACHIEVEMENTS, {
 						ach(15309),	-- A Towering Success
@@ -222,7 +222,7 @@ _.WorldEvents =
 							i(124124),	-- Blood of Sargeras
 						}),
 						i(146943),	-- Court of Farondis Insignia
-						i(146942),	-- Dreamweaver Insignia 
+						i(146942),	-- Dreamweaver Insignia
 						i(146944),	-- Highmountain Insignia
 						i(146941),	-- Valarjar Insignia
 						i(146945),	-- Wardens Insignia

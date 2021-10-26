@@ -921,6 +921,11 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 60.1, 27.5, KORTHIA },
 				}),
+				q(65266, {	-- Lost Research
+					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+					["coord"] = { 62.8, 22.6, KORTHIA },
+					["isWeekly"] = true,
+				}),
 				q(63937, {	-- Nasty, Big, Pointy Teeth
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178805 },	-- Emeni
@@ -947,6 +952,18 @@ _.Zones =
 					["g"] = {
 						ach(15056),		-- Friend of Bloop
 					},
+				}),
+				q(65020, {	-- Practical Application
+					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+					["coord"] = { 62.8, 22.6, KORTHIA },
+				}),
+				q(65145, {	-- Relic Clues
+					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+					["coord"] = { 62.8, 22.6, KORTHIA },
+				}),
+				q(65146, {	-- Relic Hunter
+					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+					["coord"] = { 62.8, 22.6, KORTHIA },
 				}),
 				q(63954, {	-- Sealed Secrets
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
@@ -983,25 +1000,6 @@ _.Zones =
 					["provider"] = { "n", 178839 },	-- Dreamweaver
 					["isDaily"] = true,
 					["coord"] = { 61.4, 21.4, KORTHIA },
-				}),
-			
-			-- ptr 9.1.5
-				q(65020, {	-- Practical Application
-					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-					["coord"] = { 62.8, 22.6, KORTHIA },
-				}),
-				q(65266, {	-- Lost Research
-					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-					["coord"] = { 62.8, 22.6, KORTHIA },
-					["isWeekly"] = true,
-				}),
-				q(65145, {	-- Relic Clues
-					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-					["coord"] = { 62.8, 22.6, KORTHIA },
-				}),
-				q(65146, {	-- Relic Hunter
-					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-					["coord"] = { 62.8, 22.6, KORTHIA },
 				}),
 			}),
 		}),
