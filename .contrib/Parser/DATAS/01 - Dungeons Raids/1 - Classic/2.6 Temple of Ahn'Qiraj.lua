@@ -6,10 +6,10 @@ local ANACHRONOS_COORD = { 41.6, 49.8, CAVERNS_OF_TIME };
 -- #else
 local ANACHRONOS_COORD = { 65, 50, TANARIS };
 -- #endif
-_.Instances = { tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
+root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 	inst(744, {	-- Temple of Ahn'Qiraj
 		["lore"] = "Dark whispers ride on the winds of Silithus desert. An old god stirs in his wretched lair and the entire world shall soon be the target of his wrath.\n\nAfter thousands of years of slumber, the old god, C'thun has awakened and is quickly regenerating his power. Once he has reached full potential nothing will be able to stop him. The dragons that so humbly sacrificed themselves so long ago to imprison C'thun are weakened or enslaved in the temple, so the charge of protecting the land falls to other heroes.\n\nHeroes must enter Temple of Ahn'Qiraj, challenge C'thun's most wicked servants, and slay a god. The road will not be easy and it is wrought with peril at every turn. Will the heroes turn back now or face C'thun in his mighty lair and put an end to him once and for all?",
-		["coord"] = { 46.76, 7.53, AHNQIRAJ_THE_FALLEN_KINGDOM },	-- Temple of Ahn'Qiraj
+		["coord"] = { 46.76, 7.53, AHNQIRAJ_THE_FALLEN_KINGDOM },
 		["maps"] = {
 			TEMPLE_OF_AHNQIRAJ,	-- The Temple Gates
 			319,	-- The Hive Undergrounds
@@ -677,12 +677,12 @@ _.Instances = { tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["provider"] = { "i", 21221 },	-- Eye of C'Thun
 				}),
 				q(8789, {	-- Imperial Qiraji Armaments
-					["qg"] = 15380,		-- Arygos
-					["repeatable"] = true,
+					["qg"] = 15380,	-- Arygos
 					["cost"] = {
 						{ "i", 21232, 1 },	-- Imperial Qiraji Armaments
 						{ "i", 18562, 3 },	-- Elementium Ore
 					},
+					["repeatable"] = true,
 					["groups"] = {
 						i(21242),	-- Blessed Qiraji War Axe
 						i(21272),	-- Blessed Qiraji Musket
@@ -691,12 +691,12 @@ _.Instances = { tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					},
 				}),
 				q(8790, {	-- Imperial Qiraji Regalia
-					["qg"] = 15378,		-- Quest Giver: Merithra of the Dream
-					["repeatable"] = true,
+					["qg"] = 15378,	-- Merithra of the Dream
 					["cost"] = {
 						{ "i", 21237, 1 },	-- Imperial Qiraji Regalia
 						{ "i", 18562, 3 },	-- Elementium Ore
 					},
+					["repeatable"] = true,
 					["groups"] = {
 						i(21273),	-- Blessed Qiraji Acolyte Staff
 						i(21275),	-- Blessed Qiraji Augur Staff
@@ -712,32 +712,34 @@ _.Instances = { tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 				q(8595, {	-- Mortal Champions
 					["qg"] = 15503,	-- Kandrostrasz
 					["sourceQuest"] = 8579,	-- Mortal Champions
-					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 21229, 1 },	-- Qiraji Lord's Insignia
 					},
+					["repeatable"] = true,
 				}),
 				q(8784, {	-- Secrets of the Qiraji
 					["qg"] = 15503,	-- Kandrostrasz
-					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 21230, 1 },	-- Ancient Qiraji Artifact
 					},
+					["repeatable"] = true,
 				}),
 				q(8766, {	-- The Changing of Paths - Conqueror No More
 					["qg"] = 15192,	-- Anachronos
 					["sourceQuest"] = 8756,	-- The Qiraji Conqueror
 					["minReputation"] = { 910, EXALTED },	-- Brood of Nozdormu, Exalted.
 					["coord"] = ANACHRONOS_COORD,
-					["repeatable"] = true,
 					["cost"] = {
-						{ "i", 21205, 1 },	-- Signet Ring of the Bronze Dragonflight
 						{ "i", 20864, 15 },	-- Bone Scarab
 						{ "i", 20865, 15 },	-- Ivory Scarab
 						{ "i", 20858, 15 },	-- Stone Scarab
 					},
+					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
+						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight
+							["provider"] = { "i", 21205 },	-- Signet Ring of the Bronze Dragonflight
+						}),
 						i(21200),	-- Signet Ring of the Bronze Dragonflight
 						i(21210),	-- Signet Ring of the Bronze Dragonflight
 					},
@@ -747,15 +749,17 @@ _.Instances = { tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["sourceQuest"] = 8761,	-- The Grand Invoker
 					["minReputation"] = { 910, EXALTED },	-- Brood of Nozdormu, Exalted.
 					["coord"] = ANACHRONOS_COORD,
-					["repeatable"] = true,
 					["cost"] = {
-						{ "i", 21210, 1 },	-- Signet Ring of the Bronze Dragonflight
 						{ "i", 20861, 15 },	-- Bronze Scarab
 						{ "i", 20862, 15 },	-- Crystal Scarab
 						{ "i", 20863, 15 },	-- Clay Scarab
 					},
+					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
+						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight
+							["provider"] = { "i", 21210 },	-- Signet Ring of the Bronze Dragonflight
+						}),
 						i(21200),	-- Signet Ring of the Bronze Dragonflight
 						i(21205),	-- Signet Ring of the Bronze Dragonflight
 					},
@@ -765,15 +769,17 @@ _.Instances = { tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["sourceQuest"] = 8751,	-- The Protector of Kalimdor
 					["minReputation"] = { 910, EXALTED },	-- Brood of Nozdormu, Exalted.
 					["coord"] = ANACHRONOS_COORD,
-					["repeatable"] = true,
 					["cost"] = {
-						{ "i", 21200, 1 },	-- Signet Ring of the Bronze Dragonflight
 						{ "i", 20858, 15 },	-- Stone Scarab
 						{ "i", 20859, 15 },	-- Gold Scarab
 						{ "i", 20860, 15 },	-- Silver Scarab
 					},
+					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
+						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight
+							["provider"] = { "i", 21200 },	-- Signet Ring of the Bronze Dragonflight
+						}),
 						i(21210),	-- Signet Ring of the Bronze Dragonflight
 						i(21205),	-- Signet Ring of the Bronze Dragonflight
 					},
@@ -1212,9 +1218,7 @@ _.Instances = { tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					},
 				}),
 				applyclassicphase(CATA_PHASE_ONE, i(76402, {	-- Greater Scarab Coffer Key
-					["timeline"] = {
-						"added 4.3.0.15005"
-					},
+					["timeline"] = { "added 4.3.0.15005" },
 					["crs"] = {
 						15516,	-- Battleguard Sartura
 						15727,	-- C'Thun
@@ -1283,9 +1287,7 @@ _.Instances = { tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					i(21706),	-- Boots of the Unwavering Will
 					i(21707),	-- Ring of Swarming Thought
 					applyclassicphase(MOP_PHASE_ONE, i(93041, {	-- Jewel of Maddening Whispers (Pet)
-						["timeline"] = {
-							"added 5.1.0.16309",
-						},
+						["timeline"] = { "added 5.1.0.16309" },
 					})),
 				},
 			}),
@@ -1417,9 +1419,7 @@ _.Instances = { tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						["timeline"] = { "removed 5.0.4.10000" },
 					}),
 					applyclassicphase(MOP_PHASE_ONE, i(93039, {	-- Viscidus Globule (Pet)
-						["timeline"] = {
-							"added 5.1.0.16309",
-						},
+						["timeline"] = { "added 5.1.0.16309" },
 					})),
 				},
 			}),
@@ -1449,9 +1449,7 @@ _.Instances = { tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					i(21600),	-- Boots of Epiphany
 					i(21601),	-- Ring of Emperor Vek'lor
 					applyclassicphase(MOP_PHASE_ONE, i(93040, {	-- Anubisath Idol (Pet)
-						["timeline"] = {
-							"added 5.1.0.16309",
-						},
+						["timeline"] = { "added 5.1.0.16309" },
 					})),
 				}),
 				n(15275, {	-- Emperor Vek'nilash
@@ -1509,4 +1507,4 @@ _.Instances = { tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 			}),
 		},
 	}),
-}))};
+})));
