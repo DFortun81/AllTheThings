@@ -4896,12 +4896,14 @@ fieldConverters = {
 		end
 	end,
 	["coord"] = function(group, value)
-		if group.key ~= "instanceID"  then
+		-- don't cache mapID from coord for anything which is inside an Instance
+		if not GetRelativeField(group, "key", "instanceID") then
 			if value[3] then cacheMapID(group, value[3], true); end
 		end
 	end,
 	["coords"] = function(group, value)
-		if group.key ~= "instanceID"  then
+		-- don't cache mapID from coord for anything which is inside an Instance
+		if not GetRelativeField(group, "key", "instanceID") then
 			for _,coord in ipairs(value) do
 				if coord[3] then cacheMapID(group, coord[3], true); end
 			end
