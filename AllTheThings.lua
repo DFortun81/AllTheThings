@@ -1322,6 +1322,7 @@ app.MergeSkipFields = {
 	["g"] = true,
 	["u"] = true,
 	["pvp"] = true,
+	["pb"] = true,
 };
 -- Fields on a Thing which are specific to where the Thing is Sourced or displayed in a ATT window
 app.SourceSpecificFields = {
