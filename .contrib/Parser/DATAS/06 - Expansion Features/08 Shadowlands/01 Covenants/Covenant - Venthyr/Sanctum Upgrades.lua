@@ -1429,6 +1429,12 @@ _.ExpansionFeatures =
 										}),
 									},
 								}),
+								q(64340, {	-- Bewitching
+									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
+									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["provider"] = { "n", 172854 },	-- Dredger Butler
+									["cost"] = { { "i", 187133, 1 } },	-- 1x Bewitching Little Hat
+								}),
 								q(62178, {	-- Black Muck Dye
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
@@ -2084,9 +2090,6 @@ _.ExpansionFeatures =
 										}),
 										i(187133, {	-- Bewitching Little Hat
 											["cost"] = { { "c", 1820, 25 } },	-- 25x Infused Ruby
-											["g"] = {
-												q(64340),	-- Bewitching
-											},
 										}),
 										i(181517, {	-- Building: Dredger Pool
 											["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
