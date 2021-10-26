@@ -20,8 +20,8 @@ _.Holidays = {
 					i(50446),	-- Toxic Wasteling
 					i(50741),	-- Vile Fumigator's Mask
 					i(50471),	-- The Heartbreaker
-					i(50250, {	-- Big Love Rocket
-						ach(4627),	-- Big Love Rocket
+					i(50250, {	-- X-45 Heartbreaker
+						ach(4627),	-- X-45 Heartbreaker
 					}),
 				}),
 

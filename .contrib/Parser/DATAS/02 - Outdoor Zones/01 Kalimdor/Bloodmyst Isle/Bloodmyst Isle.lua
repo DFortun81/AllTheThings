@@ -603,7 +603,7 @@ _.Zones =
 						},
 					}),
 					q(9648, {	-- Maatparm Mushroom Menagerie
-						["qg"] = 17663,	-- Maatparm of Mac'Aree
+						["qg"] = 17663,	-- Maatparm
 						["coord"] = { 56.4, 56.8, BLOODMYST_ISLE },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(10, 1, 10),
@@ -1144,8 +1144,8 @@ _.Zones =
 						["lvl"] = lvlsquish(18, 1, 18),
 					}),
 					q(9649, {	-- Ysera's Tears
-						["qg"] = 17663,	-- Maatparm of Mac'Aree
-						["sourceQuest"] = 9648,	-- Mac'Aree Mushroom Menagerie
+						["qg"] = 17663,	-- Maatparm
+						["sourceQuest"] = 9648,	-- Eredath Mushroom Menagerie
 						["coord"] = { 56.4, 56.8, BLOODMYST_ISLE },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(15, 1, 15),

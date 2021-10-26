@@ -6,12 +6,12 @@ _.Instances = { tier(LEGION_TIER, {
 	inst(945, {	-- Seat of the Triumvirate
 		["lvl"] = 110,
 		["mapID"] = 903,
-		["coord"] = { 22.2, 55.9, 882 },	-- Mac'Aree
+		["coord"] = { 22.2, 55.9, 882 },	-- Eredath
 		["g"] = {
 			n(QUESTS, {
 				i(152204, {	-- Glowing Key Fragment
 					["questID"] = 48230,	-- Fragment of the Past
-					["maps"] = { 882 },	-- Mac'Aree
+					["maps"] = { 882 },	-- Eredath
 					["crs"] = {
 						122316,	-- Saprish
 						126152,	-- General Zah'd
@@ -139,7 +139,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(151315),	-- Bracers of Dark Binding
 					i(151329),	-- Breastplate of the Dark Touch
 					i(151300),	-- Handwraps of the Ascended
-					i(151308),	-- Mac'Aree Seal of Nobility
+					i(151308),	-- Eredath Seal of Nobility
 					i(151331),	-- Pauldrons of the Broken
 					i(151304),	-- Subjugator's Leggings
 					i(151320),	-- Void-Coated Stompers
@@ -211,7 +211,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(151315),	-- Bracers of Dark Binding
 					i(151329),	-- Breastplate of the Dark Touch
 					i(151300),	-- Handwraps of the Ascended
-					i(151308),	-- Mac'Aree Seal of Nobility
+					i(151308),	-- Eredath Seal of Nobility
 					i(151331),	-- Pauldrons of the Broken
 					i(151304),	-- Subjugator's Leggings
 					i(151320),	-- Void-Coated Stompers

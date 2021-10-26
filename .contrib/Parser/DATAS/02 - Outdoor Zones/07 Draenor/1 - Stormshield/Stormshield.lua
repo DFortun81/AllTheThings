@@ -1735,7 +1735,7 @@ _.Zones =
 								})),
 							}),
 						}),
-						n(128756, {	-- Crafticus Mindbender
+						n(128756, {	-- Magister Langley
 							["coord"] = { 54.8, 16.8, STORMSHIELD },
 							["g"] = {
 								i(114126),	-- Disposable Pocket Flying Machine

@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(905, {	-- Argus
-		m(882, {	-- Mac'Aree
+		m(882, {	-- Eredath
 			n(TREASURES, {
 				o(273301, {	-- Ancient Eredar Cache
 					["isDaily"] = true,
@@ -38,13 +38,13 @@ _.Zones =
 						i(153288),	-- Forgotten Conservatory Robes
 						i(153275),	-- Forgotten Conservatory Slippers
 						i(153277),	-- Forgotten Conservatory Wristwraps
-						i(153336),	-- Mac'Aree Lightseeker's Armguards
-						i(153332),	-- Mac'Aree Lightseeker's Chestpiece
-						i(153335),	-- Mac'Aree Lightseeker's Handguards
-						i(153331),	-- Mac'Aree Lightseeker's Helmet
-						i(153334),	-- Mac'Aree Lightseeker's Spaulders
-						i(153337),	-- Mac'Aree Lightseeker's Treads
-						i(153333),	-- Mac'Aree Lightseeker's Waistplate
+						i(153336),	-- Eredath Lightseeker's Armguards
+						i(153332),	-- Eredath Lightseeker's Chestpiece
+						i(153335),	-- Eredath Lightseeker's Handguards
+						i(153331),	-- Eredath Lightseeker's Helmet
+						i(153334),	-- Eredath Lightseeker's Spaulders
+						i(153337),	-- Eredath Lightseeker's Treads
+						i(153333),	-- Eredath Lightseeker's Waistplate
 					},
 				}),
 				o(273407, {	-- Ancient Eredar Cache
@@ -71,12 +71,12 @@ _.Zones =
 						i(153270),	-- Forgotten Conservatory Sash* — confirmed on Discord
 						i(153275),	-- Forgotten Conservatory Slippers
 						i(153277),	-- Forgotten Conservatory Wristwraps*
-						i(153332),	-- Mac'Aree Lightseeker's Chestpiece
-						i(153330),	-- Mac'Aree Lightseeker's Greaves
-						i(153335),	-- Mac'Aree Lightseeker's Handguards
-						i(153334),	-- Mac'Aree Lightseeker's Spaulders
-						i(153337),	-- Mac'Aree Lightseeker's Treads
-						i(153333),	-- Mac'Aree Lightseeker's Waistplate
+						i(153332),	-- Eredath Lightseeker's Chestpiece
+						i(153330),	-- Eredath Lightseeker's Greaves
+						i(153335),	-- Eredath Lightseeker's Handguards
+						i(153334),	-- Eredath Lightseeker's Spaulders
+						i(153337),	-- Eredath Lightseeker's Treads
+						i(153333),	-- Eredath Lightseeker's Waistplate
 					},
 				}),
 				o(273412, {	-- Ancient Eredar Cache
@@ -121,11 +121,11 @@ _.Zones =
 						i(153270),	-- Forgotten Conservatory Sash
 						i(153275),	-- Forgotten Conservatory Slippers
 						i(153277),	-- Forgotten Conservatory Wristwraps
-						i(153336),	-- Mac'Aree Lightseeker's Armguards
-						i(153332),	-- Mac'Aree Lightseeker's Chestpiece
-						i(153331),	-- Mac'Aree Lightseeker's Helmet
-						i(153337),	-- Mac'Aree Lightseeker's Treads
-						i(153333),	-- Mac'Aree Lightseeker's Waistplate
+						i(153336),	-- Eredath Lightseeker's Armguards
+						i(153332),	-- Eredath Lightseeker's Chestpiece
+						i(153331),	-- Eredath Lightseeker's Helmet
+						i(153337),	-- Eredath Lightseeker's Treads
+						i(153333),	-- Eredath Lightseeker's Waistplate
 					},
 				}),
 				o(273414, {	-- Ancient Eredar Cache
@@ -169,14 +169,14 @@ _.Zones =
 						i(153273),	-- Forgotten Conservatory Leggings
 						i(153288),	-- Forgotten Conservatory Robes
 						i(153275),	-- Forgotten Conservatory Slippers
-						i(153336),	-- Mac'Aree Lightseeker's Armguards
-						i(153332),	-- Mac'Aree Lightseeker's Chestpiece
-						i(153330),	-- Mac'Aree Lightseeker's Greaves
-						i(153335),	-- Mac'Aree Lightseeker's Handguards
-						i(153331),	-- Mac'Aree Lightseeker's Helmet
-						i(153334),	-- Mac'Aree Lightseeker's Spaulders
-						i(153337),	-- Mac'Aree Lightseeker's Treads* — confirmed on Discord
-						i(153333),	-- Mac'Aree Lightseeker's Waistplate
+						i(153336),	-- Eredath Lightseeker's Armguards
+						i(153332),	-- Eredath Lightseeker's Chestpiece
+						i(153330),	-- Eredath Lightseeker's Greaves
+						i(153335),	-- Eredath Lightseeker's Handguards
+						i(153331),	-- Eredath Lightseeker's Helmet
+						i(153334),	-- Eredath Lightseeker's Spaulders
+						i(153337),	-- Eredath Lightseeker's Treads* — confirmed on Discord
+						i(153333),	-- Eredath Lightseeker's Waistplate
 					},
 				}),
 				o(273415, {	-- Ancient Eredar Cache
@@ -209,12 +209,12 @@ _.Zones =
 						i(153273),	-- Forgotten Conservatory Leggings
 						i(153275),	-- Forgotten Conservatory Slippers
 						i(153277),	-- Forgotten Conservatory Wristwraps
-						i(153336),	-- Mac'Aree Lightseeker's Armguards
-						i(153332),	-- Mac'Aree Lightseeker's Chestpiece
-						i(153330),	-- Mac'Aree Lightseeker's Greaves
-						i(153335),	-- Mac'Aree Lightseeker's Handguards
-						i(153331),	-- Mac'Aree Lightseeker's Helmet
-						i(153337),	-- Mac'Aree Lightseeker's Treads
+						i(153336),	-- Eredath Lightseeker's Armguards
+						i(153332),	-- Eredath Lightseeker's Chestpiece
+						i(153330),	-- Eredath Lightseeker's Greaves
+						i(153335),	-- Eredath Lightseeker's Handguards
+						i(153331),	-- Eredath Lightseeker's Helmet
+						i(153337),	-- Eredath Lightseeker's Treads
 					},
 				}),
 				o(273439, {	-- Ancient Eredar Cache
@@ -244,14 +244,14 @@ _.Zones =
 						i(153288),	-- Forgotten Conservatory Robes*
 						i(153275),	-- Forgotten Conservatory Slippers
 						i(153277),	-- Forgotten Conservatory Wristwraps
-						i(153336),	-- Mac'Aree Lightseeker's Armguards
-						i(153332),	-- Mac'Aree Lightseeker's Chestpiece
-						i(153330),	-- Mac'Aree Lightseeker's Greaves
-						i(153335),	-- Mac'Aree Lightseeker's Handguards
-						i(153331),	-- Mac'Aree Lightseeker's Helmet
-						i(153334),	-- Mac'Aree Lightseeker's Spaulders
-						i(153337),	-- Mac'Aree Lightseeker's Treads
-						i(153333),	-- Mac'Aree Lightseeker's Waistplate
+						i(153336),	-- Eredath Lightseeker's Armguards
+						i(153332),	-- Eredath Lightseeker's Chestpiece
+						i(153330),	-- Eredath Lightseeker's Greaves
+						i(153335),	-- Eredath Lightseeker's Handguards
+						i(153331),	-- Eredath Lightseeker's Helmet
+						i(153334),	-- Eredath Lightseeker's Spaulders
+						i(153337),	-- Eredath Lightseeker's Treads
+						i(153333),	-- Eredath Lightseeker's Waistplate
 					},
 				}),
 			}),

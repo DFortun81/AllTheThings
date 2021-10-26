@@ -46,7 +46,7 @@ _.Zones =
 				q(12823, {	-- A Flawless Plan
 					["provider"] = { "n", 29432 },	-- Gino
 					["coord"] = { 50.0, 81.7, THE_STORM_PEAKS },
-					["sourceQuests"] = { 12821 },	-- Opening the Backdoor
+					["sourceQuests"] = { 12821 },	-- Cell Block Tango
 				}),
 				q(12976, {	-- A Monument to the Fallen
 					["provider"] = { "n", 30105 },	-- King Jokkum
@@ -185,7 +185,7 @@ _.Zones =
 				q(12856, {	-- Cold Hearted
 					["provider"] = { "n", 29592 },	-- Brijana
 					["coord"] = { 53.1, 65.7, THE_STORM_PEAKS },
-					["sourceQuests"] = { 12851 },	-- Going Bearback
+					["sourceQuests"] = { 12851 },	-- Bearly Hanging On
 				}),
 				q(12860, {	-- Data Mining (A)
 					["races"] = ALLIANCE_ONLY,
@@ -365,7 +365,7 @@ _.Zones =
 					["description"] = "Use Brann's Communicator to pick this quest up.",
 					["sourceQuest"] = 12928,	-- Norgannon's Shell
 				}),
-				q(12851, {	-- Going Bearback
+				q(12851, {	-- Bearly Hanging On
 					["provider"] = { "n", 29592 },	-- Brijana
 					["coord"] = { 53.1, 65.7, THE_STORM_PEAKS },
 					["sourceQuests"] = { 12972 },	-- You'll Need a Bear
@@ -402,7 +402,7 @@ _.Zones =
 				q(12822, {	-- Know No Fear
 					["provider"] = { "n", 29428 },	-- Ricket
 					["coord"] = { 40.9, 85.3, THE_STORM_PEAKS },
-					["sourceQuests"] = { 12821 },	-- Opening the Backdoor
+					["sourceQuests"] = { 12821 },	-- Cell Block Tango
 				}),
 				q(13010, {	-- Krolmir, Hammer of Storms
 					["provider"] = { "n", 29445 },	-- Thorim
@@ -484,7 +484,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 12863 },	-- Offering Thanks
 				}),
-				q(12987, {	-- Mounting Hodir's Helm
+				q(12987, {	-- Placing Hodir's Helm
 					["sourceQuests"] = { 12985 },	-- Forging A Head
 					["coord"] = { 63.2, 63.2, THE_STORM_PEAKS },
 					["provider"] = { "n", 30127 },	-- Njormeld
@@ -556,7 +556,7 @@ _.Zones =
 						{ 43.4, 75.2, THE_STORM_PEAKS },
 					},
 				}),
-				q(12821, {	-- Opening the Backdoor
+				q(12821, {	-- Cell Block Tango
 					["provider"] = { "n", 29428 },	-- Ricket
 					["coord"] = { 40.9, 85.3, THE_STORM_PEAKS },
 					["sourceQuests"] = {
@@ -600,7 +600,7 @@ _.Zones =
 					["isDaily"] = true,
 					-- this quest appeared for me after turning in "the brother's bronzebeard," which was the last quest i did for its criteria + the overall zone.  i'm not sure if the quest itself is a prerequisite or if it's based on reputation, because i also hit friendly with alliance vanguard when turning it in.  some wowhead comments said it had different requirements, so i'm not sure what to put for SQ or a description.
 				}),
-				q(13001, {	-- Raising Hodir's Spear
+				q(13001, {	-- Forging Hodir's Spear
 					["coord"] = { 64.8, 59.1, THE_STORM_PEAKS },
 					["minReputation"] = { 1119, HONORED },
 					["provider"] = { "n", 30252 },	-- Lorekeeper Randvir

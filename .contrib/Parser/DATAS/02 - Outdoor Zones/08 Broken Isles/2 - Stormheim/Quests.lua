@@ -1129,7 +1129,7 @@ _.Zones =
 				q(46002),	-- The Legion Assault - Viewed
 				q(40608),	-- The Mark
 				q(38685),	-- The Nameless King
-				q(41168),	-- The Purple Hills of Mac'Aree
+				q(41168),	-- The Purple Hills of Eredath
 				q(41170),	-- The Relic Renewed
 				q(45406),	-- The Storm's Fury
 				q(40143),	-- Unfinished Treatise on the Properties of Stormscale

@@ -1418,7 +1418,7 @@ _.HiddenQuestTriggers = {
 		--	RAIDS
 		q(32752),	-- Dark Animus Dead (killed Dark Animus on heroic in ToT)
 		q(32750),	-- Durumu Dead (killed Durumu on normal in ToT)
-		q(32755),	-- Empyreal Queens Dead (killed Twin Consorts in ToT)
+		q(32755),	-- Empyreal Queens Dead (killed Twin Empyreans in ToT)
 		q(32745),	-- Horridon Dead (killed Horridon on normal in ToT)
 		q(32754),	-- Iron Qon Dead (killed Iron Qon on normal in ToT)
 		q(32749),	-- Ji'kun Dead (killed Ji'kun on normal in ToT)
@@ -2314,8 +2314,8 @@ _.HiddenQuestTriggers = {
 		q(46990),	-- Assault Treasure — opened Small Treasure Chest in Highmountain (44.2, 40.4)
 		q(43196),	-- Treasure 056 - Weeping Bluffs — stormheim treasure in cave, entrance at 32.6, 47.8
 		q(40601),	-- 7.0 Highmountain - Vignette - Pinerock Basin - Highmountain Beastmaster See Treasure (JLW) — looting treasure after Arru
-		q(49264),	-- opening a Void-Seeped Cache in Mac'Aree
-		q(48361),	-- opening a Void-Seeped Cache in Mac'Aree
+		q(49264),	-- opening a Void-Seeped Cache in Eredath
+		q(48361),	-- opening a Void-Seeped Cache in Eredath
 
 		--	Deaths of Chromie scenario
 		q(48032),	-- FLAG - Hyjal Scene Seen - immediately upon entering Hyjal

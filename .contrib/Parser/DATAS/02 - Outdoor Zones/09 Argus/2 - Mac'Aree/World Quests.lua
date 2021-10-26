@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(905, {	-- Argus
-		m(882, {	-- Mac'Aree
+		m(882, {	-- Eredath
 			n(WORLD_QUESTS, {
 				q(48729, {	-- Ataxon
 					["isWorldQuest"] = true,
@@ -175,7 +175,7 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 45 },
 				}),
-				q(48100, {	-- The Defense of Mac'Aree
+				q(48100, {	-- The Defense of Eredath
 					["isWorldQuest"] = true,
 					["lvl"] = { 45 },
 				}),

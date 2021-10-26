@@ -11,7 +11,7 @@ _.Zones =
 				["maps"] = {
 					885,	-- Antoran Wastes
 					830,	-- Krokuun
-					882,	-- Mac'Aree
+					882,	-- Eredath
 					833,	-- Nath'raxas Spire
 				},
 				["g"] = {
@@ -122,7 +122,7 @@ _.Zones =
 					}),
 					i(152733, {	-- Unsullied Trinket
 						i(153172),	-- Doomed Exarch's Memento
-						i(152783),	-- Mac'Aree Focusing Amethyst
+						i(152783),	-- Eredath Focusing Amethyst
 						i(152781),	-- Unblemished Sigil of Argus
 						i(152782),	-- Venerable Triad Statuette
 					}),

@@ -89,12 +89,12 @@ _.Zones =
 							["coord"] = { 66.1, 61.4, THE_STORM_PEAKS },
 							["repeatable"] = true,
 						}),
-						q(13011, {	-- Jormuttar is Soo Fat...
+						q(13011, {	-- Culling Jorcuttar
 							["minReputation"] = { 1119, FRIENDLY },
 							["coord"] = { 65.3, 60.1, THE_STORM_PEAKS },
 							["provider"] = { "n", 30105 },	-- King Jokkum
 						}),
-						q(13006, {	-- Polishing the Helm
+						q(13006, {	-- A Viscious Cleaning
 						--	["minReputation"] = -- Unknown reputation requirement
 							["sourceQuests"] = { 12987 },	-- Mounting Hodir's Helm
 							["isDaily"]	= true,
@@ -112,7 +112,7 @@ _.Zones =
 							["sourceQuests"] = { 13420 },	-- Source Quest: Everfrost
 							["repeatable"]	= true,
 						}),
-						q(12977, {	-- Blowing Hodir's Horn
+						q(12977, {	-- Hodir's Call
 						--	["minReputation"] = ,	-- unsure of reputation requirement
 							["sourceQuests"] = { 12976 },	-- A Monument to the Fallen
 							["isDaily"]	= true,
@@ -138,7 +138,7 @@ _.Zones =
 							["coord"] = { 63.5, 59.7, THE_STORM_PEAKS },
 							["provider"] = { "n", 30294 },		-- Quest Giver: Frostworg Denmother
 						}),
-						q(13003, {	-- Thrusting Hodir's Spear
+						q(13003, {	-- How to Slay Your Dragon
 							["minReputation"] = { 1119, HONORED },
 							["sourceQuests"] = { 13001 },	-- Raising Hodir's Spear
 							["isDaily"]	= true,

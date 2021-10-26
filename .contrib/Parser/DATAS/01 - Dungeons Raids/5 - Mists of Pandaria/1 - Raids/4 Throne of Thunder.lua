@@ -556,7 +556,7 @@ _.Instances = { tier(MOP_TIER, {
 									i(95785),	-- Ro'shak's Remembrance
 								},
 							})),
-							cr(68905, e(829, {	-- Twin Consorts
+							cr(68905, e(829, {	-- Twin Empyreans
 								["crs"] = {
 									68904,	-- Suen <Mistress of Anger>
 									68905,	-- Lu'lin <Mistress of Solitude>
@@ -1131,7 +1131,7 @@ _.Instances = { tier(MOP_TIER, {
 							}),
 						},
 					})),
-					cr(68905, e(829, {	-- Twin Consorts (Lu'lin)
+					cr(68905, e(829, {	-- Twin Empyreans (Lu'lin)
 						["crs"] = {
 							68904,	-- Suen <Mistress of Anger>
 							68905,	-- Lu'lin <Mistress of Solitude>
@@ -1751,7 +1751,7 @@ _.Instances = { tier(MOP_TIER, {
 							}),
 						},
 					})),
-					cr(68905, e(829, {	-- Twin Consorts (Lu'lin)
+					cr(68905, e(829, {	-- Twin Empyreans (Lu'lin)
 						["crs"] = {
 							68904,	-- Suen <Mistress of Anger>
 							68905,	-- Lu'lin <Mistress of Solitude>
@@ -1760,7 +1760,7 @@ _.Instances = { tier(MOP_TIER, {
 							{	-- From Dusk 'til Dawn
 								["achievementID"] = 8086,	-- From Dusk 'til Dawn
 							},
-							ach(8066),	-- Heroic: Twin Consorts
+							ach(8066),	-- Heroic: Twin Empyreans
 							i(96624),	-- Helm of the Crackling Conqueror
 							i(96625),	-- Helm of the Crackling Protector
 							i(96623),	-- Helm of the Crackling Vanquisher

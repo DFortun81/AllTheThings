@@ -222,7 +222,7 @@ _.Zones =
 						})),
 					},
 				}),
-				q(24705, {	-- Damsels Were Made to be Saved
+				q(24705, {	-- Town Dwellers Were Made to be Saved
 					["providers"] = {
 						{ "n", 38255 },	-- Maximillian of Northshire
 						{ "n", 38237 },	-- Maximillian of Northshire
@@ -650,7 +650,7 @@ _.Zones =
 						{ "n", 38237 },	-- Maximillian of Northshire
 					},
 					["sourceQuests"] = {
-						24705,	-- Damsels Were Made to be Saved
+						24705,	-- Town Dwellers Were Made to be Saved
 						24704,	-- The Evil Dragons of Un'Goro Crater
 					},
 				}),

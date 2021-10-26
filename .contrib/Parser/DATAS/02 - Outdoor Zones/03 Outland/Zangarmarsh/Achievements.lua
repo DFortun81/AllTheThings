@@ -27,7 +27,7 @@ _.Zones =
 						["sourceQuests"] = {
 							9899,	-- A Job Undone
 							9772,	-- Jyoba's Report
-							9898,	-- Nothin' Says Lovin' Like a Big Stinger
+							9898,	-- The Respect of Another
 							9769,	-- There's No Explanation for Fashion
 						},
 					}),

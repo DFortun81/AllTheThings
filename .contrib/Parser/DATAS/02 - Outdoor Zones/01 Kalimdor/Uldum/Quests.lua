@@ -121,7 +121,7 @@ _.Zones =
 						27511,	-- The Thrill of Discovery
 					},
 				}),
-				q(28352, {	-- Camel Tow
+				q(28352, {	-- Camelraderie
 					["provider"] = { "n", 48431 },	-- Sullah
 					["coord"] = { 29.6, 21.8, 249 },
 					["sourceQuest"] = 28274,	-- Two Tents
@@ -162,7 +162,7 @@ _.Zones =
 				q(27187, {	-- Do the World a Favor
 					["provider"] = { "n", 45202 },	-- Mangy Hyena
 					["sourceQuest"] = 27141,	-- Harrison Jones
-					["description"] = "This quest is auto-accepted when you kill a Mangy Hyena after accepting Just the Tip or Field Work."
+					["description"] = "This quest is auto-accepted when you kill a Mangy Hyena after accepting A Strange Disc or Field Work."
 				}),
 				q(27926, {	-- Eastern Hospitality
 					["provider"] = { "n", 47670 },	-- Belloc Brightblade
@@ -215,7 +215,7 @@ _.Zones =
 					["coord"] = { 64.6, 28.6, 249 },
 					["sourceQuests"] = {
 						28112,	-- Escape From the Lost City
-						27141,	-- Premature Explosionation
+						27141,	-- Exploding Through
 					},
 				}),
 				q(28497, {	-- Fire From the Sky
@@ -356,14 +356,14 @@ _.Zones =
 						46126,	-- Turquoise Scarab
 					},
 				}),
-				q(27176, {	-- Just the Tip
+				q(27176, {	-- A Strange Disc
 					["coord"] = { 64.8, 29.5, 249 },
 					["model"] = 243678,
 					["modelScale"] = 30,
 					["provider"] = { "o", 205266 },	-- Elaborate Disc
 					["sourceQuests"] = {
 						28112,	-- Escape From the Lost City
-						27141,	-- Premature Explosionation
+						27141,	-- Exploding Through
 					},
 					["g"] = {
 						i(65889),	-- Shardfinder Hood
@@ -459,8 +459,8 @@ _.Zones =
 					["provider"] = { "n", 45180 },	-- Harrison Jones
 					["coord"] = { 64.5, 28.5, 249 },
 					["sourceQuests"] = {
-						27176,	-- Just the Tip
-						27179,	-- Field Work	-- first pass: did this first. Do "Just the Tip" first next time
+						27176,	-- A Strange Disc
+						27179,	-- Field Work	-- first pass: did this first. Do "A Strange Disc" first next time
 					},
 				}),
 				q(28201, {	-- Ploughshares to Swords
@@ -468,7 +468,7 @@ _.Zones =
 					["coord"] = { 58.8, 46.1, 249 },
 					["sourceQuest"] = 27631,	-- The High Commander's Vote
 				}),
-				q(27141, {	-- Premature Explosionation
+				q(27141, {	-- Exploding Through
 					["provider"] = { "n", 44860 },	-- Harrison Jones
 					["coord"] = { 64.3, 22.3, 249 },
 					["sourceQuest"] = 27993,	-- Take it to 'Em!

@@ -16,7 +16,7 @@ _.Zones =
 						crit(56, {	-- Admiral Rel'var
 							["achievementID"] = 12078,	-- Commander of Argus
 						}),
-						i(153324),	-- Mac'Aree Vigilant's Bastion
+						i(153324),	-- Eredath Vigilant's Bastion
 						i(152883),	-- Zealous Felslinger's Boots
 						i(152889),	-- Zealous Felslinger's Cuffs
 						i(152888),	-- Zealous Felslinger's Epaulets

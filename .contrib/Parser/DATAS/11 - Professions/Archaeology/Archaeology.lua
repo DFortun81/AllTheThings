@@ -233,8 +233,8 @@ profession(ARCHAEOLOGY, {
 					}),
 				},
 			}),
-			-- Purple Hills of Mac'Aree
-			q(41168, {	-- The Purple Hills of Mac'Aree
+			-- Purple Hills of Eredath
+			q(41168, {	-- The Purple Hills of Eredath
 				["provider"] = { "n", 103484 },	-- Brann Bronzebeard
 				["isWeekly"] = true,
 				["coord"] = { 61.8, 87.9, VALSHARAH },
@@ -244,10 +244,10 @@ profession(ARCHAEOLOGY, {
 				["provider"] = { "n", 103484 },	-- Brann Bronzebeard
 				["isWeekly"] = true,
 				["coord"] = { 61.8, 87.9, VALSHARAH },
-				["sourceQuest"] = 41168,	-- The Purple Hills of Mac'Aree
+				["sourceQuest"] = 41168,	-- The Purple Hills of Eredath
 				["g"] = {
-					i(131732),	-- Purple Hills of Mac'Aree
-					crit(12, {	-- Purple Hills of Mac'Aree
+					i(131732),	-- Purple Hills of Eredath
+					crit(12, {	-- Purple Hills of Eredath
 						["achievementID"] = 10603,	-- A Keen Eye
 					}),
 				},

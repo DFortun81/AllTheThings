@@ -1430,7 +1430,7 @@ _.Zones =
 					["sourceQuest"] = 11679,	-- Reforging the Key
 				}),
 				q(11642, {	-- Tank Ain't Gonna Fix Itself
-					["provider"] = { "n", 25329 },	-- Gorge the Corpsegrinder
+					["provider"] = { "n", 25329 },	-- Annihilator Grek'lor
 					["coord"] = { 32.2, 54.0, BOREAN_TUNDRA },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 11636,	-- Magic Carpet Ride
@@ -1677,15 +1677,15 @@ _.Zones =
 					},
 				}),
 				q(11652, {	-- The Plains of Nasam
-					["provider"] = { "n", 25329 },	-- Gorge the Corpsegrinder
+					["provider"] = { "n", 25329 },	-- Annihilator Grek'lor
 					["coord"] = { 32.2, 54.0, BOREAN_TUNDRA },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 11651,	-- Tanks a lot...
 					["g"] = {
-						i(37276),	-- Gorge's Loungewear
+						i(37276),	-- Grek'lor's Loungewear
 						i(37325),	-- Warsong Scout Spaulders
 						i(37446),	-- Tank Commander's Treads
-						i(37476),	-- Gorge's Breastplate of Bloodrage
+						i(37476),	-- Grek'lor's Breastplate of Bloodrage
 					},
 				}),
 				q(11893, {	-- The Power of the Elements

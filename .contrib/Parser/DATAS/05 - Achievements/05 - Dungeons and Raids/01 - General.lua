@@ -620,7 +620,7 @@ _.Achievements =
 				crit(8),		-- Heroic: Primordius
 				crit(9),		-- Heroic: Dark Animus
 				crit(10),		-- Heroic: Iron Qon
-				crit(11),		-- Heroic: Twin Consorts
+				crit(11),		-- Heroic: Twin Empyreans
 				crit(12),		-- Lightning Overload
 				crit(13),		-- Cretaceous Collector
 				crit(14),		-- Cage Match

@@ -674,7 +674,7 @@ _.PVP =
 					}),
 				}),
 				n(VENDORS, {
-					n(80882, {	-- Crafticus Mindbender <Stormshield Quartermaster>
+					n(80882, {	-- Tomas Riogain <Stormshield Quartermaster>
 						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 44.2, 74.0, 1478 },
 						["races"] = ALLIANCE_ONLY,
