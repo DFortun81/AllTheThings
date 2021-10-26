@@ -104,6 +104,11 @@ _.Mounts =
 		}),
 		i(79802),		-- Jade Cloud Serpent
 		i(159146),		-- Kua'fon's Harness
+		mount(363613, {	-- Lightforged Ruinstrider
+			["classes"] = { PALADIN },
+			["races"] = { LIGHTFORGED },
+			["timeline"] = { "added 9.1.5" },
+		}),
 		i(137573),		-- Llothien Prowler
 		i(182589),		-- Loyal Gorger
 		i(161330, {		-- Mag'har Direwolf [Mag'har Orc Quest Chain]
