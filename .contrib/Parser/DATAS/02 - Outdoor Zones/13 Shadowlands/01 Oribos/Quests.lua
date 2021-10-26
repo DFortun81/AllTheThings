@@ -57,6 +57,41 @@ _.Zones =
 						["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 						["coord"] = { 34.7, 55.7, ORIBOS },	-- Ring of Fates
 					}),
+					q(65033, {	-- Observing Victory
+						["description"] = "This is only available while leveling",
+						["provider"] = { "n", 174922 },	-- Strategist Zo'rak
+						["isDaily"] = true,
+						["coord"] = { 34.7, 56.5, ORIBOS },
+						["lvl"] = { 50, 59 },
+						["sym"] = {
+							{"select", "mapID", BASTION },
+							{"pop"},
+							{"where", "headerID", ZONE_REWARDS },
+							{"pop"},
+							{"finalize"},
+							
+							{"select", "mapID", MALDRAXXUS },
+							{"pop"},
+							{"where", "headerID", ZONE_REWARDS },
+							{"pop"},
+							{"finalize"},
+							
+							{"select", "mapID", ARDENWEALD },
+							{"pop"},
+							{"where", "headerID", ZONE_REWARDS },
+							{"pop"},
+							{"finalize"},
+							
+							{"select", "mapID", REVENDRETH },
+							{"pop"},
+							{"where", "headerID", ZONE_REWARDS },
+							{"pop"},
+							{"finalize"},
+							
+							{"merge"},
+							{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", },
+						},
+					}),
 					q(62285, {	-- Observing War
 						["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 						["isWeekly"] = true,
