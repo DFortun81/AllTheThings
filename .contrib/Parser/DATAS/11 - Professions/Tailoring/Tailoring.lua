@@ -3269,28 +3269,31 @@ profession(TAILORING, {
 		-- #endif
 		{
 			["name"] = "Battle Standards",
-			["description"] = "Talk to your Garrison Follower to learn these. If they do not immediately cache, try relogging and then talking to them again.\n\n - Crieve",
 			["categoryID"] = 400,
 			["groups"] = {
 				{
 					["name"] = "Fearsome Battle Standard",
 					["races"] = ALLIANCE_ONLY,
 					["recipeID"] = 176314,
+					["u"] = 15,
 				},
 				{
 					["name"] = "Fearsome Battle Standard",
 					["races"] = HORDE_ONLY,
 					["recipeID"] = 176316,
+					["u"] = 15,
 				},
 				{
 					["name"] = "Inspiring Battle Standard",
 					["races"] = HORDE_ONLY,
 					["recipeID"] = 176315,
+					["u"] = 15,
 				},
 				{
 					["name"] = "Inspiring Battle Standard",
 					["races"] = ALLIANCE_ONLY,
 					["recipeID"] = 176313,
+					["u"] = 15,
 				},
 			},
 		},

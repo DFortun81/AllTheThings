@@ -8261,7 +8261,7 @@ local fields = {
 		end
 		if app.AccountWideRecipes and ATTAccountWideData.Buildings[t.buildingID] then return 2; end
 	end,
-	["description"] = function(t)
+	["lore"] = function(t)
 		return select(5, C_Garrison_GetBuildingInfo(t.buildingID));
 	end,
 	["icon"] = function(t)
