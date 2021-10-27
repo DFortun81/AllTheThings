@@ -1,8 +1,7 @@
 -- #if AFTER 9.1.5
 root("Holidays", d(24, {  -- Timewalking
 	tier(LEGION_TIER, {
-		-- TODO: copy TW instance content in 9.1.5
-		inst(740, {	-- Black Rook Hold
+		inst_tw(740, {	-- Black Rook Hold
 			e(1518, {	-- Amalgam of Souls
 				["cr"] = 98542,	-- Amalgam of Souls
 				["g"] = {
@@ -69,7 +68,7 @@ root("Holidays", d(24, {  -- Timewalking
 				},
 			}),
 		}),
-		inst(800, {	-- Court of Stars
+		inst_tw(800, {	-- Court of Stars
 			e(1718, {	-- Patrol Captain Gerdo
 				["cr"] = 104215,	-- Patrol Captain Gerdo
 				["g"] = {
@@ -121,7 +120,7 @@ root("Holidays", d(24, {  -- Timewalking
 				},
 			}),
 		}),
-		inst(762, {	-- Darkheart Thicket
+		inst_tw(762, {	-- Darkheart Thicket
 			e(1654, {	-- Archdruid Glaidalis
 				["cr"] = 96512,	-- Archdruid Glaidalis
 				["g"] = {
@@ -188,7 +187,7 @@ root("Holidays", d(24, {  -- Timewalking
 				},
 			}),
 		}),
-		inst(716, {	-- Eye of Azshara
+		inst_tw(716, {	-- Eye of Azshara
 			e(1480, {	-- Warlord Parjesh
 				["cr"] = 91784,	-- Warlord Parjesh
 				["g"] = {
@@ -262,7 +261,7 @@ root("Holidays", d(24, {  -- Timewalking
 				},
 			}),
 		}),
-		inst(767, {	-- Neltharion's Lair
+		inst_tw(767, {	-- Neltharion's Lair
 			e(1662, {	-- Rokmora
 				["cr"] = 91003,	-- Rokmora
 				["g"] = {
@@ -325,7 +324,7 @@ root("Holidays", d(24, {  -- Timewalking
 				},
 			}),
 		}),
-		inst(707, {	-- Vault of the Wardens
+		inst_tw(707, {	-- Vault of the Wardens
 			e(1467, {	-- Tirathon Saltheril
 				["cr"] = 95885,	-- Tirathon Saltheril
 				["g"] = {

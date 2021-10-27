@@ -181,7 +181,7 @@ root("Holidays", d(24, {  -- Timewalking
 				i(144132),	-- Seal of Hateful Meditation
 			})),
 		}),
-		inst_tw(324, bubbleDown({ ["timeline"] = { "added 6.2.3.20601", "removed 9.1.5", }},{	-- Siege of Niuzao Temple
+		inst_tw(324, bubbleDown({ ["timeline"] = { "added 7.1.5.23360", "removed 9.1.5", }},{	-- Siege of Niuzao Temple
 			cr(61567, e(693, {	-- Vizier Jin'bak
 				i(144022),	-- Hood of Viridian Residue
 				i(144162),	-- Engraved Amber Pendant

@@ -399,7 +399,7 @@ root("Holidays", d(24, {  -- Timewalking
 				},
 			}),
 		})),
-		inst_tw(558, bubbleDown({ ["timeline"] = { "added 6.2.3.20601", "removed 9.1.5", }},{	-- Iron Docks
+		inst_tw(558, bubbleDown({ ["timeline"] = { "added 8.1.5.29701", "removed 9.1.5", }},{	-- Iron Docks
 			e(1235, {	-- Fleshrender Nok'gar
 				["crs"] = {
 					81297,	-- Dreadfang

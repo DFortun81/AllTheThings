@@ -247,9 +247,7 @@ _.Instances = { tier(LEGION_TIER, {
 			-- #if AFTER 9.1.5
 			d(24, {	-- Timewalking
 				["sym"] = {	-- link in Timewalking content
-					{ "select", "instanceID", 762 },	-- select this instance
-					{ "isnt", "coords" },				-- only the main entry of the instance contains the coords field
-					{ "pop" },							-- pop the instance header
+					{"sub", "tw_instance", 762 },	-- this instance version of timewalking
 				},
 			}),
 			-- #endif
