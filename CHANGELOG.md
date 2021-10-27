@@ -1,7 +1,7 @@
 # AllTheThings
 
-## [SL-2.5.0-beta](https://github.com/DFortun81/AllTheThings/tree/SL-2.5.0-beta) (2021-10-25)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.4.9...SL-2.5.0-beta) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [SL-2.5.0](https://github.com/DFortun81/AllTheThings/tree/SL-2.5.0) (2021-10-28)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.4.9...SL-2.5.0) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
 ### Highlights of this update
 
@@ -47,6 +47,8 @@ Mainly it is to make the life of contributors easier but a couple of user facing
 - Added NYI tags to some WoD craftables which now exist post 9.0 but have never been obtained. 1 other one is still actually obtainable, so yea...
 - Some Hallow's End adjustments (mainly Candy Bucket coordinates).
 - Automatic Faction descriptions are now considered 'Lore'.
+- Garrison Building information in tooltips is now considered 'Lore'.
+- Different profession things from Garrisons moved from Professions to Garrisons.
 - Other fixes.
 
 ### Future
