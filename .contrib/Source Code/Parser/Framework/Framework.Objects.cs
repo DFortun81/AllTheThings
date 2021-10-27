@@ -1454,6 +1454,7 @@ namespace ATT
                     case "ignoreSource":
                     case "hideText":
                     case "ordered":
+                    case "sort":
                         {
                             item[field] = Convert.ToBoolean(value);
                             break;
