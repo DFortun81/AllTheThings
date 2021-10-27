@@ -701,7 +701,7 @@ profession(BLACKSMITHING, {
 							["recipeID"] = 16983--[[Serenity]]
 						},
 						{	-- Volcanic Hammer
-							["recipeID"] = 16984--[[Volcanic Hammer]]
+							["recipeID"] = 16984,--[[Volcanic Hammer]]
 							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Blazing Rapier
