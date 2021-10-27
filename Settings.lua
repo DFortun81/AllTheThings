@@ -2625,7 +2625,7 @@ SeasonalFiltersLabel:SetPoint("TOP", settings.equipfilterdefault, "BOTTOM", 0, -
 
 -- Stuff to order the Holidays manually
 local unobtainables = L["UNOBTAINABLE_ITEM_REASONS"];
-local holidayOrder = { 1012, 1016, 1015, 1014, 1007, 1006, 1010, 1001, 1008, 1005, 1011, 1000, 1004, 1002, 1017, 1013, 1003 };
+local holidayOrder = { 1012, 1015, 1016, 1014, 1007, 1006, 1010, 1001, 1008, 1005, 1011, 1000, 1004, 1002, 1017, 1013, 1003 };
 
 local SeasonalAllCheckBox = child:CreateCheckBox(L["SEASONAL_ALL"],
 function(self)
