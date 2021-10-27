@@ -1404,7 +1404,7 @@ _.Zones =
 					},
 				}),
 				q(30059, {	-- The Moth Rebellion
-					["sourceQuests"] = { 32035 },	-- Got Silk?
+					-- ["sourceQuests"] = {  },	-- TODO?
 					["coord"] = { 63.5, 58.4, VALLEY_OF_THE_FOUR_WINDS },
 					["provider"] = { "n", 57424 },	-- Journeyman Chu
 				}),
