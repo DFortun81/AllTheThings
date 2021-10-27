@@ -1438,7 +1438,7 @@ _.PVP =
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", -10041, -675, PVP_GLADIATOR, 1 },
-								{"select", "itemID", 84985 },	-- Malevolent Gladiator's Armplates of Alacrity
+							--	{"select", "itemID", 84985 },	-- Malevolent Gladiator's Armplates of Alacrity -- 25/10.2021 Sha/DK Only
 								{"select", "itemID", 84950 },	-- Malevolent Gladiator's Girdle of Prowess
 								{"select", "itemID", 84822 },	-- Malevolent Gladiator's Warboots of Alacrity
 								{"select", "itemID", 91659 },	-- Malevolent Gladiator's Armplates of Alacrity
