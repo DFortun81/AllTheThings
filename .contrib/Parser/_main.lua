@@ -1099,9 +1099,7 @@ end
 garrisonBuilding = function(id, t)						-- Create a GARRISON BUILDING Object
 	return struct("buildingID", id, t);
 end
-gb = function(id, t)									-- Create a GARRISON BUILDING Object (Alternative)
-	return struct("buildingID", id, t);
-end
+gb = garrisonBuilding;									-- Create a GARRISON BUILDING Object (Alternative)
 garrisonTalent = function(id, t)						-- Create a GARRISON TALENT Object
 	return struct("talentID", id, t);
 end
