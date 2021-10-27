@@ -393,7 +393,9 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				["timeline"] = { "removed 4.0.2" },
 			}),
 			-- #endif
-			i(12792),	-- Volcanic Hammer
+			i(12792, {	-- Volcanic Hammer
+				["timeline"] = { "removed 4.0.2" },
+			}),
 		}),
 		filter(24, {	-- 2H Maces
 			i(7956),	-- Bronze Warhammer
