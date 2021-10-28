@@ -658,6 +658,30 @@ _.ExpansionFeatures =
 							},
 							["isDaily"] = true,
 						}),
+						q(39020, {	-- A Burning Path Through Time
+							["provider"] = { "n", 94870 },	-- Seer Kazal
+							["coord"] = { 41.8, 46.8, FROSTWALL },
+							["isWeekly"] = true,
+							["u"] = REMOVED_FROM_GAME,
+							["g"] = {
+								i(127853),	-- Iron Fleet Treasure Chest
+							},
+						}),
+						q(39040, {	-- A Call to Battle
+							["provider"] = { "n", 94870 },	-- Seer Kazal
+							["coord"] = { 41.8, 46.8, FROSTWALL },
+							["isWeekly"] = true,
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						q(39021, {	-- A Frozen Path Through Time
+							["provider"] = { "n", 94870 },	-- Seer Kazal
+							["coord"] = { 41.8, 46.8, FROSTWALL },
+							["isWeekly"] = true,
+							["u"] = REMOVED_FROM_GAME,
+							["g"] = {
+								i(127853),	-- Iron Fleet Treasure Chest
+							},
+						}),
 						q(40792, {	-- A Shattered Path Through Time
 							["provider"] = { "n", 94870 },	-- Seer Kazal
 							["coord"] = { 41.8, 46.8, FROSTWALL },
@@ -1023,6 +1047,15 @@ _.ExpansionFeatures =
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 34775,	-- Mission Probable
 						}),
+						q(39034, {	-- Emissary of War
+							["provider"] = { "n", 94870 },	-- Seer Kazal
+							["coord"] = { 41.8, 46.8, FROSTWALL },
+							["isWeekly"] = true,
+							["u"] = REMOVED_FROM_GAME,
+							["g"] = {
+								i(127853),	-- Iron Fleet Treasure Chest
+							},
+						}),
 						q(36136, {	-- Garrison Campaign: Awakening
 							["provider"] = { "n", 78487 },	-- Rokhan
 							["races"] = HORDE_ONLY,
@@ -1187,6 +1220,12 @@ _.ExpansionFeatures =
 							["coord"] = { 45.4, 50.4, FROSTWALL },
 							["races"] = HORDE_ONLY,
 						}),
+						q(39041, {	-- The Arena Calls
+							["provider"] = { "n", 94870 },	-- Seer Kazal
+							["coord"] = { 41.8, 46.8, FROSTWALL },
+							["isWeekly"] = true,
+							["u"] = REMOVED_FROM_GAME,
+						}),
 						q(35058, {	-- The Mysterious Flask
 							["requireSkill"] = ALCHEMY,
 							["provider"] = { "i", 112566 },	-- Mysterious Flask
@@ -1204,6 +1243,21 @@ _.ExpansionFeatures =
 								{ "o", 232416 },	-- Command Board lvl 1
 								{ "o", 233291 },	-- Command Board lvl 2
 								{ "o", 237022 },	-- Command Board lvl 3
+							},
+						}),
+						q(39033, {	-- The Time to Strike
+							["provider"] = { "n", 94870 },	-- Seer Kazal
+							["coord"] = { 41.8, 46.8, FROSTWALL },
+							["isWeekly"] = true,
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						q(39042, {	-- The Very Best
+							["provider"] = { "n", 94870 },	-- Seer Kazal
+							["coord"] = { 41.8, 46.8, FROSTWALL },
+							["isWeekly"] = true,
+							["u"] = REMOVED_FROM_GAME,
+							["g"] = {
+								i(122457),	-- Ultimate Battle-Training Stone
 							},
 						}),
 						q(35154, {	-- Things Are Not Goren Our Way

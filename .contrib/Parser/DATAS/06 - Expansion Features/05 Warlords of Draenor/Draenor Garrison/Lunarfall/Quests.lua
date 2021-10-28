@@ -486,6 +486,30 @@ _.ExpansionFeatures =
 							},
 							["isDaily"] = true,
 						}),
+						q(39020, {	-- A Burning Path Through Time
+							["provider"] = { "n", 94870 },	-- Seer Kazal
+							["coord"] = { 33.6, 37.6, LUNARFALL },
+							["isWeekly"] = true,
+							["u"] = REMOVED_FROM_GAME,
+							["g"] = {
+								i(127853),	-- Iron Fleet Treasure Chest
+							},
+						}),
+						q(39040, {	-- A Call to Battle
+							["provider"] = { "n", 94870 },	-- Seer Kazal
+							["coord"] = { 33.6, 37.6, LUNARFALL },
+							["isWeekly"] = true,
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						q(39021, {	-- A Frozen Path Through Time
+							["provider"] = { "n", 94870 },	-- Seer Kazal
+							["coord"] = { 33.6, 37.6, LUNARFALL },
+							["isWeekly"] = true,
+							["u"] = REMOVED_FROM_GAME,
+							["g"] = {
+								i(127853),	-- Iron Fleet Treasure Chest
+							},
+						}),
 						q(33075, {	-- A Hero's Welcome
 							["sourceQuests"] = { 34692 },	-- Delegating on Draenor
 							["provider"] = { "n", 80568 },	-- Yrel
@@ -870,6 +894,15 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 79953 },	-- Lieutenant Thorn
 							["races"] = ALLIANCE_ONLY,
 						}),
+						q(39034, {	-- Emissary of War
+							["provider"] = { "n", 94870 },	-- Seer Kazal
+							["coord"] = { 33.6, 37.6, LUNARFALL },
+							["isWeekly"] = true,
+							["u"] = REMOVED_FROM_GAME,
+							["g"] = {
+								i(127853),	-- Iron Fleet Treasure Chest
+							},
+						}),
 						q(34586, {	-- Establish Your Garrison
 							["sourceQuests"] = { 34585 },	-- Quakefist
 							["coord"] = { 32.7, 34.0, LUNARFALL },
@@ -1133,6 +1166,12 @@ _.ExpansionFeatures =
 								36606,	-- News From Nagrand (Lieutenant Willem)
 							},
 						}),
+						q(39041, {	-- The Arena Calls
+							["provider"] = { "n", 94870 },	-- Seer Kazal
+							["coord"] = { 33.6, 37.6, LUNARFALL },
+							["isWeekly"] = true,
+							["u"] = REMOVED_FROM_GAME,
+						}),
 						q(34676, {	-- The Critical Path
 							["coord"] = { 42.8, 45.2, LUNARFALL },
 							["races"] = ALLIANCE_ONLY,
@@ -1166,6 +1205,21 @@ _.ExpansionFeatures =
 							["u"] = REMOVED_FROM_GAME, -- There is no Bulletin Board anymore, only heroes calls
 							["isBreadcrumb"] = true,
 							["provider"] = { "o", 232397 },	-- Bulletin Board
+						}),
+						q(39033, {	-- The Time to Strike
+							["provider"] = { "n", 94870 },	-- Seer Kazal
+							["coord"] = { 33.6, 37.6, LUNARFALL },
+							["isWeekly"] = true,
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						q(39042, {	-- The Very Best
+							["provider"] = { "n", 94870 },	-- Seer Kazal
+							["coord"] = { 33.6, 37.6, LUNARFALL },
+							["isWeekly"] = true,
+							["u"] = REMOVED_FROM_GAME,
+							["g"] = {
+								i(122457),	-- Ultimate Battle-Training Stone
+							},
 						}),
 						q(35343, {	-- The Young Alchemist
 							["coord"] = { 47.2, 45.8, LUNARFALL },
@@ -1264,7 +1318,7 @@ _.ExpansionFeatures =
 							["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 							["coord"] = { 34.6, 32.7, LUNARFALL },
 							["isDaily"] = true,
-						}),
+						}),	
 					},
 				}),
 			}),

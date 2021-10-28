@@ -941,6 +941,7 @@ select(2, ...).ObjectNames = {
 	[241280] = "Treasure Chest",
 	[241433] = "Forgotten Sack",
 	[241434] = "Lodged Hunting Spear",
+	[241449] = "Blackfang Island Cache",
 	[241450] = "Crystallized Fel Spike",
 	[241504] = "Polished Crystal",
 	[241518] = "Small Treasure Chest",

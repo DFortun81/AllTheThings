@@ -1009,6 +1009,8 @@ _.NeverImplemented =
 			q(38170),	-- Legion 100-109 H
 			q(38173),	-- Legion 100-109 H
 			q(38174),	-- Legion 100-109 H
+			q(38245),	-- Lots of Ore
+			q(38244),	-- More Ore
 			q(37752),	-- Pet Battles Active
 			q(37972),	-- Pet Battles Not Active
 			q(37974),	-- Pet Battles Not Active
@@ -1016,6 +1018,8 @@ _.NeverImplemented =
 			q(37750),	-- Professions Active
 			q(38240),	-- Raid Active
 			q(37753),	-- Relic Hunter Active
+			q(38291),	-- Some Dust
+			q(38282),	-- Some Dust
 			q(38114),	-- TBC 60-69
 			q(38125),	-- TBC 60-69
 			q(38136),	-- TBC 60-69
