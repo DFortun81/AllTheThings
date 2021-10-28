@@ -1150,7 +1150,7 @@ for key, value in pairs({
 	[186426] = "通缉布告",	-- Wanted Poster
 	--TODO: [186585] = "Dragonskin Scroll",	-- Dragonskin Scroll
 	--TODO: [186881] = "Dark Iron Sabotage Plans",	-- Dark Iron Sabotage Plans
-	[186887] = "巨大的南瓜灯",	-- Large Jack-o'-Lantern	--TODO: This was manually translated
+	[186887] = "大南瓜灯",	-- Large Jack-o'-Lantern	--TODO: This was taken from tbc Wowhead
 	[187273] = "可疑的蹄印",	-- Suspicious Hoofprint
 	[187559] = "部落篝火",	-- Horde Bonfire
 	[187564] = "联盟篝火",	-- Alliance Bonfire
