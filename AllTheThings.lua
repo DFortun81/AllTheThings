@@ -1952,6 +1952,7 @@ local PrintQuestInfo = function(questID, new, info)
 					"lvl:"..app.Level,
 					"mapID:"..mapID,
 					"coord:"..coord,
+					"ver:"..app.Version,
 
 					"```",	-- discord fancy box
 					-- TODO: put more info in here as it will be copy-paste into Discord
@@ -1995,6 +1996,7 @@ local PrintQuestInfo = function(questID, new, info)
 						"lvl:"..app.Level,
 						"mapID:"..mapID,
 						"coord:"..coord,
+						"ver:"..app.Version,
 
 						"```",	-- discord fancy box
 						-- TODO: put more info in here as it will be copy-paste into Discord
@@ -2029,6 +2031,7 @@ local PrintQuestInfo = function(questID, new, info)
 						"lvl:"..app.Level,
 						"mapID:"..mapID,
 						"coord:"..coord,
+						"ver:"..app.Version,
 
 						"```",	-- discord fancy box
 						-- TODO: put more info in here as it will be copy-paste into Discord
