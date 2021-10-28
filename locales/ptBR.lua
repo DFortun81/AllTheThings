@@ -1864,6 +1864,7 @@ for key,value in pairs({
 	[241280] = "Baú do Tesouro",	-- Treasure Chest
 	[241433] = "Saco Esquecido",	-- Forgotten Sack
 	[241434] = "Lança de Caça Alojada",	-- Lodged Hunting Spear
+	[241449] = "Tesouro da Ilha Presanegra",	-- Blackfang Island Cache
 	[241450] = "Espeto Vil Cristalizado",	-- Crystallized Fel Spike
 	[241504] = "Cristal Polido",	-- Polished Crystal
 	[241518] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest

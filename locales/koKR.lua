@@ -1863,6 +1863,7 @@ for key,value in pairs({
 	[241280] = "보물 상자",	-- Treasure Chest
 	[241433] = "잊혀진 자루",	-- Forgotten Sack
 	[241434] = "꽂힌 사냥용 창",	-- Lodged Hunting Spear
+	--TODO: [241449] = "Blackfang Island Cache",	-- Blackfang Island Cache
 	--TODO: [241450] = "Crystallized Fel Spike",	-- Crystallized Fel Spike
 	[241504] = "연마한 수정",	-- Polished Crystal
 	[241518] = "작은 보물 상자",	-- Small Treasure Chest
