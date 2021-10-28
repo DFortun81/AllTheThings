@@ -34,6 +34,7 @@ Mainly it is to make the life of contributors easier but a couple of user facing
 ### Notable changes:
 
 - The missing/wrongly marked as never implemented Quest report dialog now contains more and fancier information! Please be sure to click the chat link of the missing quest to include additional information to the Discord :)
+- Added a report dialog if the character accepts/completes a quest which does not meet the current filters in ATT
 - Ad-Hoc Window updates are no longer in beta.
 - Fixed ATT thinking any Spell tooltip was a Recipe (i.e. fixed Talent/spec tooltips showing collection status).
 - Goblin/Gnomish Engineering recipes should retain their specialization requirements in all places now.
@@ -49,6 +50,7 @@ Mainly it is to make the life of contributors easier but a couple of user facing
 - Automatic Faction descriptions are now considered 'Lore'.
 - Garrison Building information in tooltips is now considered 'Lore'.
 - Different profession things from Garrisons moved from Professions to Garrisons.
+- Horde/Allience Garrison content is in the process of deduplication.
 - Other fixes.
 
 ### Future

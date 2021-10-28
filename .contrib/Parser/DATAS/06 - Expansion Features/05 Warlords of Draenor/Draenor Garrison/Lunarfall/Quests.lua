@@ -532,7 +532,7 @@ _.ExpansionFeatures =
 							["g"] = {
 								i(127853),	-- Iron Fleet Treasure Chest
 							},
-						}),	
+						}),
 						q(38259, {	-- All Hands on Deck
 							["provider"] = { "n", 92219 },	-- King Varian Wrynn
 							["coord"] = { 32.0, 31.9, LUNARFALL },
@@ -1318,7 +1318,7 @@ _.ExpansionFeatures =
 							["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 							["coord"] = { 34.6, 32.7, LUNARFALL },
 							["isDaily"] = true,
-						}),	
+						}),
 					},
 				}),
 			}),
