@@ -282,6 +282,7 @@ local L = app.L;
 		--TODO: L.GENERAL_THINGS_LABEL = "General Things";
 		--TODO: L.EXPANSION_THINGS_LABEL = "Expansion Things";
 		--TODO: L.EXTRA_THINGS_LABEL = "Additional Things";
+		--TODO: L.STRANGER_THINGS_LABEL = "Stranger Things";
 		L.ACHIEVEMENTS_CHECKBOX_TOOLTIP = "启用此选项可追踪成就.";
 		L.TMOG_CHECKBOX_TOOLTIP = "启用此选项可追踪外观获取.\n\n注意: 禁用此选项也会禁用所有采集逻辑, 你可以使用此切换来防止在执行重要组内容时出现延迟, 请牢记, 重新启用后将需要进行计算.\n\n默认情况下追踪战网范围.";
 		L.AZERITE_ESSENCES_CHECKBOX_TOOLTIP = "启用此选项以追踪艾泽里特精华.\n\n默认情况下每个角色都会被追踪.";

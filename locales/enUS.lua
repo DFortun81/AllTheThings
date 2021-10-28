@@ -299,6 +299,7 @@ app.L = {
 	["GENERAL_THINGS_LABEL"] = "General Things";
 	["EXPANSION_THINGS_LABEL"] = "Expansion Things";
 	["EXTRA_THINGS_LABEL"] = "Additional Things";
+	["STRANGER_THINGS_LABEL"] = "Stranger Things";
 	["ACHIEVEMENTS_CHECKBOX"] = "|cffADD8E6"..ACHIEVEMENTS;
 	["ACHIEVEMENTS_CHECKBOX_TOOLTIP"] = "Enable this option to track achievements.";
 	["TMOG_CHECKBOX"] = "|cffADD8E6"..WARDROBE;

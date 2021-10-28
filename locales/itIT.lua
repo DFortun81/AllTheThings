@@ -280,6 +280,7 @@ local L = app.L;
 		--TODO: L.GENERAL_THINGS_LABEL = "General Things";
 		--TODO: L.EXPANSION_THINGS_LABEL = "Expansion Things";
 		--TODO: L.EXTRA_THINGS_LABEL = "Additional Things";
+		--TODO: L.STRANGER_THINGS_LABEL = "Stranger Things";
 		--TODO: L.ACHIEVEMENTS_CHECKBOX_TOOLTIP = "Enable this option to track achievements.";
 		--TODO: L.TMOG_CHECKBOX_TOOLTIP = "Enable this option to track appearance acquisition.\n\nNOTE: Disabling this option also disables all fanfares and acquisition logic.  You can use this toggle as a way to prevent lag spikes while doing important group content, but bear in mind the computation will need to occur once re-enabled.\n\nTracked Account Wide by Default.";
 		--TODO: L.AZERITE_ESSENCES_CHECKBOX_TOOLTIP = "Enable this option to track Azerite Essences.\n\nTracked per character by default.";
