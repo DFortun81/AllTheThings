@@ -224,6 +224,7 @@ app.L = {
 	["ADHOC_UNIQUE_COLLECTED_INFO"] = "This Item is Unique-Collected but failed to be detected due to missing Blizzard API information.\n\nIt will be fixed after the next Force-Refresh.";
 	["REQUIRES_PVP"] = "|CFF00FFDEThis Thing requires Player vs Player activities or a currency related to those activities.|r";
 	["REQUIRES_PETBATTLES"] = "|CFF00FFDEThis Thing requires Pet Battling.|r";
+	["REPORT_INACCURATE_QUEST"] = "Wrong Quest Info! (Click to Report)";
 
 	-- Item Filter Window
 	["ITEM_FILTER_TEXT"] = "Item Filters";

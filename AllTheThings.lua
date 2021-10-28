@@ -1918,6 +1918,14 @@ local PrintQuestInfo = function(questID, new, info)
 	if app.IsReady and app.Settings:GetTooltipSetting("Report:CompletedQuests") then
 		local searchResults = app.SearchForField("questID", questID);
 		local id = questID;
+		local questChange;
+		if new == true then
+			questChange = "accepted";
+		elseif new == false then
+			questChange = "unflagged";
+		else
+			questChange = "completed";
+		end
 		if not searchResults or #searchResults <= 0 or GetRelativeField(searchResults[1], "text", L["UNSORTED_1"]) then
 			questID = questID .. " (Not in ATT " .. app.Version .. ")";
 			-- Linkify the output
@@ -1925,7 +1933,7 @@ local PrintQuestInfo = function(questID, new, info)
 			questID = app:Linkify(questID, "ff5c6c", "dialog:" .. popupID);
 			local coord;
 			local mapID = app.GetCurrentMapID();
-			local position = C_Map.GetPlayerMapPosition(mapID, "player")
+			local position = C_Map.GetPlayerMapPosition(mapID, "player");
 			if position then
 				local x,y = position:GetXY();
 				x = math.floor(x * 1000) / 10;
@@ -1934,10 +1942,11 @@ local PrintQuestInfo = function(questID, new, info)
 			end
 			app:SetupReportDialog(popupID, "Missing Quest: " .. id,
 				{
-					"**missing-quest:"..questID.."**",
+					"**missing-quest:"..id.."**",
 
 					"```",	-- discord fancy box
 
+					questChange,
 					"race:"..app.RaceID,
 					"class:"..app.ClassIndex,
 					"lvl:"..app.Level,
@@ -1952,21 +1961,22 @@ local PrintQuestInfo = function(questID, new, info)
 			if app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
 				return true;
 			end
+			local questRef = searchResults[1];
 			-- tack on an 'HQT' tag if ATT thinks this QuestID is a Hidden Quest Trigger
 			-- (sometimes 'real' quests are triggered complete when other 'real' quests are turned in and contribs may consider them HQT if not yet sourced
 			-- so when a quest flagged as HQT is accepted/completed directly, it will be more noticable of being incorrectly sourced
-			if GetRelativeField(searchResults[1], "text", L["HIDDEN_QUEST_TRIGGERS"]) then
+			if GetRelativeField(questRef, "text", L["HIDDEN_QUEST_TRIGGERS"]) then
 				questID = questID .. " [HQT]";
 				-- Linkify the output
 				questID = app:Linkify(questID, "7aff92", "search:questID:" .. id);
-			elseif GetRelativeField(searchResults[1], "text", L["NEVER_IMPLEMENTED"]) then
+			elseif GetRelativeField(questRef, "text", L["NEVER_IMPLEMENTED"]) then
 				questID = questID .. " (Not in ATT " .. app.Version .. " [NYI])";
 				-- Linkify the output
 				local popupID = "quest-" .. id;
 				questID = app:Linkify(questID, "ff5c6c", "dialog:" .. popupID);
 				local coord;
 				local mapID = app.GetCurrentMapID();
-				local position = C_Map.GetPlayerMapPosition(mapID, "player")
+				local position = C_Map.GetPlayerMapPosition(mapID, "player");
 				if position then
 					local x,y = position:GetXY();
 					x = math.floor(x * 1000) / 10;
@@ -1975,10 +1985,11 @@ local PrintQuestInfo = function(questID, new, info)
 				end
 				app:SetupReportDialog(popupID, "NYI Quest: " .. id,
 					{
-						"**nyi-quest:"..questID.."**",
+						"**nyi-quest:"..id.."**",
 
 						"```",	-- discord fancy box
 
+						questChange,
 						"race:"..app.RaceID,
 						"class:"..app.ClassIndex,
 						"lvl:"..app.Level,
@@ -1993,14 +2004,42 @@ local PrintQuestInfo = function(questID, new, info)
 				-- Linkify the output
 				questID = app:Linkify(questID, "149bfd", "search:questID:" .. id);
 			end
+			-- This quest doesn't meet the filter for this character, then ask to report in chat
+			-- TODO: change filtering technique so we can do app.CharacterFilter(questRef) to bypass any Account filtering active
+			if not app.GroupFilter(questRef) then
+				local popupID = "quest-filter-" .. id;
+				local coord;
+				local mapID = app.GetCurrentMapID();
+				local position = C_Map.GetPlayerMapPosition(mapID, "player");
+				if position then
+					local x,y = position:GetXY();
+					x = math.floor(x * 1000) / 10;
+					y = math.floor(y * 1000) / 10;
+					coord = x..","..y;
+				end
+				if app:SetupReportDialog(popupID, "Inaccurate Quest Info: " .. id,
+					{
+						"**inaccurate-quest-info:"..id.."**",
+
+						"```",	-- discord fancy box
+
+						questChange,
+						"race:"..app.RaceID,
+						"class:"..app.ClassIndex,
+						"lvl:"..app.Level,
+						"mapID:"..mapID,
+						"coord:"..coord,
+
+						"```",	-- discord fancy box
+						-- TODO: put more info in here as it will be copy-paste into Discord
+					}
+				) then
+					local reportMsg = app:Linkify(L["REPORT_INACCURATE_QUEST"], "f7b531", "dialog:" .. popupID);
+					Callback(app.print, reportMsg);
+				end
+			end
 		end
-		if new == true then
-			print("Quest accepted " .. questID .. (info or ""));
-		elseif new == false then
-			print("Quest unflagged " .. questID .. (info or ""));
-		else
-			print("Quest completed " .. questID .. (info or ""));
-		end
+		print("Quest",questChange,questID,(info or ""));
 	end
 end
 local DirtyQuests = {};
@@ -20075,6 +20114,7 @@ end
 			-- print("Setup PopupID",id)
 			-- app.PrintTable(popupID);
 			app.popups[id] = popupID;
+			return true;
 		end
 	end
 
