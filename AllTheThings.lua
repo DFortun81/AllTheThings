@@ -2008,7 +2008,7 @@ local PrintQuestInfo = function(questID, new, info)
 			end
 			-- This quest doesn't meet the filter for this character, then ask to report in chat
 			-- TODO: change filtering technique so we can do app.CharacterFilter(questRef) to bypass any Account filtering active
-			if not app.GroupFilter(questRef) then
+			if questChange == "accepted" and not app.GroupFilter(questRef) then
 				local popupID = "quest-filter-" .. id;
 				local coord;
 				local mapID = app.GetCurrentMapID();
