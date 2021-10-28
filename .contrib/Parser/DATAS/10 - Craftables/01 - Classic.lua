@@ -473,16 +473,6 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			}),
 			-- #endif
 		}),
-		-- #if AFTER 7.1.5.23360
-		filter(34, {	-- Fist Weapons
-			i(12795, {	-- Blood Talon
-				["timeline"] = {
-					"created 1.12.1.6898",	-- Was originally never implemented.
-					"added 7.1.5.23360",
-				},
-			}),
-		}),
-		-- #endif
 		-- #if AFTER TBC
 		filter(29, {	-- Polearms
 			applyclassicphase(PHASE_THREE, i(19167)),	-- Blackfury
@@ -2542,12 +2532,11 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				"added 7.1.5.23360",
 			},
 		}),
+		-- #endif
 		i(12795, {	-- Blood Talon
-			["timeline"] = {
-				"created 1.12.1.6898",	-- Was originally never implemented.
-				"added 7.1.5.23360",
-			},
+			["timeline"] = { "created 1.12.1.6898" },
 		}),
+		-- #if BEFORE 7.1.5.23360
 		i(12802, {	-- Darkspear
 			["timeline"] = {
 				"created 1.12.1.6898",	-- Was originally never implemented.
