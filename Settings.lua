@@ -1803,29 +1803,25 @@ RuneforgeLegendariesAccountWideCheckBox:SetCheckedTexture("Interface\\AddOns\\Al
 RuneforgeLegendariesAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_RUNEFORGELEGENDARIES_TOOLTIP"]);
 RuneforgeLegendariesAccountWideCheckBox:SetPoint("RIGHT", RuneforgeLegendariesCheckBox, "LEFT", 4, 0);
 
+local ExtraThingsLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+ExtraThingsLabel:SetPoint("TOP", ModeExplainLabel, "BOTTOM", 0, -2);
+ExtraThingsLabel:SetPoint("LEFT", settings, "RIGHT", -290, 0);
+ExtraThingsLabel:SetJustifyH("LEFT");
+ExtraThingsLabel:SetText(L["EXTRA_THINGS_LABEL"]);
+ExtraThingsLabel:Show();
+table.insert(settings.MostRecentTab.objects, ExtraThingsLabel);
 -- Halloween Easter Egg
-local ExtraThingsText = L["EXTRA_THINGS_LABEL"];
-function StrangerThings()
+ExtraThingsLabel.OnRefresh = function(self)
     C_Calendar.OpenCalendar();
     local date = C_DateAndTime.GetCurrentCalendarTime();
     local numEvents = C_Calendar.GetNumDayEvents(0, date.monthDay);
     for i=1, numEvents do
         local event = C_Calendar.GetHolidayInfo(0, date.monthDay, i);
         if event.texture == 235461 then -- Non-localised way to detect specific holiday, I hope?
-            ExtraThingsText = L["STRANGER_THINGS_LABEL"];
+            self:SetText(L["STRANGER_THINGS_LABEL"]);
         end
     end
-
-end
-StrangerThings();
-
-local ExtraThingsLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-ExtraThingsLabel:SetPoint("TOP", ModeExplainLabel, "BOTTOM", 0, -2);
-ExtraThingsLabel:SetPoint("LEFT", settings, "RIGHT", -290, 0);
-ExtraThingsLabel:SetJustifyH("LEFT");
-ExtraThingsLabel:SetText(ExtraThingsText);
-ExtraThingsLabel:Show();
-table.insert(settings.MostRecentTab.objects, ExtraThingsLabel);
+end;
 
 local DebugModeCheckBox = child:CreateCheckBox(L["DEBUG_MODE"],
 function(self)
