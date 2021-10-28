@@ -1355,6 +1355,7 @@ app.SourceSpecificFields = {
 	end,
 -- Simple boolean
 	["pvp"] = true,
+	["pb"] = true,
 };
 -- merges the properties of the t group into the g group, making sure not to alter the filterability of the group
 local MergeProperties = function(g, t, noReplace)
