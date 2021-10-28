@@ -34,6 +34,7 @@ _.ExpansionFeatures =
 						crit(1),	-- Master Relic Hunter
 					},
 				}),
+				petbattle(ach(9264)),	-- Draenor Pet Brawler
 				a(ach(9101,  {	-- Even More Plots (A)
 					a(ach(9100)),		-- More Plots (A)
 				})),
