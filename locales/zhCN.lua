@@ -25,6 +25,7 @@ local L = app.L;
 	L["REQUIRES"] = "要求" -- Requires
 	L.RACE_LOCKED = "种族锁定";
 	L.PLEASE_REPORT_MESSAGE = ": 请把错误报告给ATT Discord的#errors! 谢谢!";
+	--TODO: L.REPORT_TIP = "\n(Ctrl+C to copy multiline report to your clipboard)";
 	L.NOT_AVAILABLE_IN_PL = "在个人拾取中不可用.";
 	L.MARKS_OF_HONOR_DESC = "荣耀印记必须在弹出窗口中查看才能看到所有正常的'包含'内容.\n(在聊天中输入'/att '然后Shift-点击链接的物品)\n\n|cFFfe040fAfter purchasing and using an ensemble, relogging & a forced ATT refresh (in this order)\nmay be required to register all the items correctly.|r";	--TODO
 	--TODO: L.ITEM_GIVES_REP = "Provides Reputation with '";
