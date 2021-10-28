@@ -1864,6 +1864,7 @@ for key,value in pairs({
 	[241280] = "Schatztruhe",	-- Treasure Chest
 	[241433] = "Vergessener Sack",	-- Forgotten Sack
 	[241434] = "Verkeilter Jagdspeer",	-- Lodged Hunting Spear
+	[241449] = "Schatz der Schwarzfanginsel",	-- Blackfang Island Cache
 	[241450] = "Kristallisierter Teufelsstachel",	-- Crystallized Fel Spike
 	[241504] = "Polierter Kristall",	-- Polished Crystal
 	[241518] = "Kleine Schatztruhe",	-- Small Treasure Chest

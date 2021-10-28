@@ -1851,6 +1851,7 @@ for key,value in pairs({
 	[241280] = "Сундук с сокровищами",	-- Treasure Chest
 	[241433] = "Забытый мешок",	-- Forgotten Sack
 	[241434] = "Застрявшее охотничье копье",	-- Lodged Hunting Spear
+	[241449] = "Островные припасы племени Черного Клыка",	-- Blackfang Island Cache
 	[241450] = "Кристаллический шип Скверны",	-- Crystallized Fel Spike
 	[241504] = "Отполированный кристалл",	-- Polished Crystal
 	[241518] = "Маленький сундук с сокровищами",	-- Small Treasure Chest

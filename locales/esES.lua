@@ -1867,6 +1867,7 @@ for key,value in pairs({
 	[241280] = "Arqueta",	-- Treasure Chest
 	[241433] = "Saco olvidado",	-- Forgotten Sack
 	[241434] = "Lanza de caza atascada",	-- Lodged Hunting Spear
+	[241449] = "Alijo de la Isla Colmillo Negro",	-- Blackfang Island Cache
 	[241450] = "Púa vil cristalizada",	-- Crystallized Fel Spike
 	[241504] = "Cristal pulido",	-- Polished Crystal
 	[241518] = "Arqueta pequeña",	-- Small Treasure Chest

@@ -1920,6 +1920,7 @@ for key, value in pairs({
 	[241280] = "宝箱",	-- Treasure Chest
 	--TODO: [241433] = "Forgotten Sack",	-- Forgotten Sack
 	--TODO: [241434] = "Lodged Hunting Spear",	-- Lodged Hunting Spear
+	[241449] = "黑齿岛宝箱",	-- Blackfang Island Cache
 	[241450] = "晶化邪能尖刺",	-- Crystallized Fel Spike
 	[241504] = "抛光水晶",	-- Polished Crystal
 	[241518] = "小宝箱",	-- Small Treasure Chest

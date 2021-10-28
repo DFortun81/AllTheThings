@@ -1863,6 +1863,7 @@ for key,value in pairs({
 	[241280] = "Cassa del Tesoro",	-- Treasure Chest
 	[241433] = "Sacca Dimenticata",	-- Forgotten Sack
 	[241434] = "Lancia da Caccia Impiantata",	-- Lodged Hunting Spear
+	[241449] = "Cassa dell'Isola degli Artiglionero",	-- Blackfang Island Cache
 	[241450] = "Vilspina Cristallizzata",	-- Crystallized Fel Spike
 	[241504] = "Cristallo Lucidato",	-- Polished Crystal
 	[241518] = "Cassa del Tesoro Piccola",	-- Small Treasure Chest

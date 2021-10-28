@@ -1863,6 +1863,7 @@ for key,value in pairs({
 	[241280] = "Coffre au trésor",	-- Treasure Chest
 	[241433] = "Sac oublié",	-- Forgotten Sack
 	[241434] = "Lance de chasse plantée",	-- Lodged Hunting Spear
+	[241449] = "Cache de l’île des Crocs-Noirs",	-- Blackfang Island Cache
 	[241450] = "Pointe gangrenée cristallisée",	-- Crystallized Fel Spike
 	[241504] = "Cristal poli",	-- Polished Crystal
 	[241518] = "Petit coffre au trésor",	-- Small Treasure Chest
