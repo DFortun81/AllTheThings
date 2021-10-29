@@ -128,6 +128,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					["sourceQuest"] = 7633,	-- An Introduction
 					["description"] = "You must defeat the 4 demons listed below by yourself with no pet in order to complete this quest.",
 					["coord"] = { 47, 24.48, FELWOOD },
+					["maps"] = { UNGORO_CRATER, BURNING_STEPPES, SILITHUS, WINTERSPRING },
 					["classes"] = { HUNTER },
 					["lvl"] = lvlsquish(60, 30, 60),
 					["cost"] = {
