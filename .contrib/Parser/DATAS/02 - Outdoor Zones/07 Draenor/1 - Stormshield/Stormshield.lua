@@ -32,42 +32,63 @@ _.Zones =
 						["coord"] = { 52.0, 63.6, STORMSHIELD },
 						["isDaily"] = true,
 						["u"] = REMOVED_FROM_GAME,
+						["g"] = {
+							i(127831),	-- Challenger's Strongbox
+						},
 					}),
 					q(37277, {	-- A Worthy Challenge: High Sage Viryx
 						["provider"] = { "n", 88155 },	-- Challenger Savina
 						["coord"] = { 52.0, 63.6, STORMSHIELD },
 						["isDaily"] = true,
 						["u"] = REMOVED_FROM_GAME,
+						["g"] = {
+							i(127831),	-- Challenger's Strongbox
+						},
 					}),
 					q(37275, {	-- A Worthy Challenge: Ner'zhul
 						["provider"] = { "n", 88155 },	-- Challenger Savina
 						["coord"] = { 52.0, 63.6, STORMSHIELD },
 						["isDaily"] = true,
 						["u"] = REMOVED_FROM_GAME,
+						["g"] = {
+							i(127831),	-- Challenger's Strongbox
+						},
 					}),
 					q(37274, {	-- A Worthy Challenge: Skullok, Son of Gruul
 						["provider"] = { "n", 88155 },	-- Challenger Savina
 						["coord"] = { 52.0, 63.6, STORMSHIELD },
 						["isDaily"] = true,
 						["u"] = REMOVED_FROM_GAME,
+						["g"] = {
+							i(127831),	-- Challenger's Strongbox
+						},
 					}),
 					q(37273, {	-- A Worthy Challenge: Skylord Tovra
 						["provider"] = { "n", 88155 },	-- Challenger Savina
 						["coord"] = { 52.0, 63.6, STORMSHIELD },
 						["isDaily"] = true,
 						["u"] = REMOVED_FROM_GAME,
+						["g"] = {
+							i(127831),	-- Challenger's Strongbox
+						},
 					}),
 					q(37279, {	-- A Worthy Challenge: Warlord Zaela
 						["provider"] = { "n", 88155 },	-- Challenger Savina
 						["coord"] = { 52.0, 63.6, STORMSHIELD },
 						["isDaily"] = true,
 						["u"] = REMOVED_FROM_GAME,
+						["g"] = {
+							i(127831),	-- Challenger's Strongbox
+						},
 					}),
 					q(37278, {	-- A Worthy Challenge: Yalnu
 						["provider"] = { "n", 88155 },	-- Challenger Savina
 						["coord"] = { 52.0, 63.6, STORMSHIELD },
 						["isDaily"] = true,
 						["u"] = REMOVED_FROM_GAME,
+						["g"] = {
+							i(127831),	-- Challenger's Strongbox
+						},
 					}),
 					q(36633, {	-- Delvar Ironfist
 						["provider"] = { "n", 86084 },	-- Delvar Ironfist

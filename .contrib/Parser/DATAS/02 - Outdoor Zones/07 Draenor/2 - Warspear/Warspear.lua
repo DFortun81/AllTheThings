@@ -27,42 +27,63 @@ _.Zones =
 						["coord"] = { 65.3, 59.3, WARSPEAR },
 						["isDaily"] = true,
 						["u"] = REMOVED_FROM_GAME,
+						["g"] = {
+							i(127831),	-- Challenger's Strongbox
+						},
 					}),
 					q(37264, {	-- A Worthy Challenge: High Sage Viryx
 						["provider"] = { "n", 88161 },	-- Challenger Sunforge
 						["coord"] = { 65.3, 59.3, WARSPEAR },
 						["isDaily"] = true,
 						["u"] = REMOVED_FROM_GAME,
+						["g"] = {
+							i(127831),	-- Challenger's Strongbox
+						},
 					}),
 					q(37263, {	-- A Worthy Challenge: Ner'zhul
 						["provider"] = { "n", 88161 },	-- Challenger Sunforge
 						["coord"] = { 65.3, 59.3, WARSPEAR },
 						["isDaily"] = true,
 						["u"] = REMOVED_FROM_GAME,
+						["g"] = {
+							i(127831),	-- Challenger's Strongbox
+						},
 					}),
 					q(37262, {	-- A Worthy Challenge: Skullok, Son of Gruul
 						["provider"] = { "n", 88161 },	-- Challenger Sunforge
 						["coord"] = { 65.3, 59.3, WARSPEAR },
 						["isDaily"] = true,
 						["u"] = REMOVED_FROM_GAME,
+						["g"] = {
+							i(127831),	-- Challenger's Strongbox
+						},
 					}),
 					q(37261, {	-- A Worthy Challenge: Skylord Tovra
 						["provider"] = { "n", 88161 },	-- Challenger Sunforge
 						["coord"] = { 65.3, 59.3, WARSPEAR },
 						["isDaily"] = true,
 						["u"] = REMOVED_FROM_GAME,
+						["g"] = {
+							i(127831),	-- Challenger's Strongbox
+						},
 					}),
 					q(37266, {	-- A Worthy Challenge: Warlord Zaela
 						["provider"] = { "n", 88161 },	-- Challenger Sunforge
 						["coord"] = { 65.3, 59.3, WARSPEAR },
 						["isDaily"] = true,
 						["u"] = REMOVED_FROM_GAME,
+						["g"] = {
+							i(127831),	-- Challenger's Strongbox
+						},
 					}),
 					q(37265, {	-- A Worthy Challenge: Yalnu
 						["provider"] = { "n", 88161 },	-- Challenger Sunforge
 						["coord"] = { 65.3, 59.3, WARSPEAR },
 						["isDaily"] = true,
 						["u"] = REMOVED_FROM_GAME,
+						["g"] = {
+							i(127831),	-- Challenger's Strongbox
+						},
 					}),
 					q(36709, {	-- Burning Beauty
 						["provider"] = { "n", 86312 },	-- Lieutenant Kragil

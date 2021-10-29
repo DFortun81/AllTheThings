@@ -970,6 +970,14 @@ _.NeverImplemented =
 			q(37602),	-- Abrogator Stones
 			q(37603),	-- Abrogator Stones
 			q(37604),	-- Abrogator Stones
+			q(37478),	-- Amphitheater of Annihilation
+			q(37169),	-- Apexis Guardian Ziri'ak
+			q(37476),	-- Ashmaul Burial Grounds
+			q(37474),	-- Basics First
+			q(37299),	-- Bonus Objective: Kill Stormshield Priests
+			q(37298),	-- Bonus Objective: Kill Warspear Priests
+			q(37514),	-- Breakers Invasion!! BETA
+			q(37477),	-- Brute's Rise
 			q(37605),	-- Elemental Runes
 			q(37606),	-- Elemental Runes
 			q(37607),	-- Elemental Runes
@@ -980,14 +988,6 @@ _.NeverImplemented =
 			q(37612),	-- Elemental Runes
 			q(37613),	-- Elemental Runes
 			q(37614),	-- Elemental Runes
-			q(37478),	-- Amphitheater of Annihilation
-			q(37169),	-- Apexis Guardian Ziri'ak
-			q(37476),	-- Ashmaul Burial Grounds
-			q(37474),	-- Basics First
-			q(37299),	-- Bonus Objective: Kill Stormshield Priests
-			q(37298),	-- Bonus Objective: Kill Warspear Priests
-			q(37514),	-- Breakers Invasion!! BETA
-			q(37477),	-- Brute's Rise
 			q(35757),	-- Extendable Wand
 			q(35864),	-- Garrison Defense Bot
 			q(35830),	-- Immaculate Statue
