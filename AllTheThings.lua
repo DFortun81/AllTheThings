@@ -337,7 +337,7 @@ local sortByTextSafely = function(a, b)
 end;
 -- Performs table.concat(tbl, sep, i, j) on the given table, but uses the specified field of table values if provided,
 -- with a default fallback value if the field does not exist on the table entry
-app.TableConcat = function (tbl, field, def, sep, i, j)
+app.TableConcat = function(tbl, field, def, sep, i, j)
 	if tbl then
 		if field then
 			local tblvals, tinsert = {}, tinsert;
@@ -350,6 +350,20 @@ app.TableConcat = function (tbl, field, def, sep, i, j)
 		end
 	end
 	return "";
+end
+-- Allows efficiently appending the content of multiple arrays (in sequence) onto the end of the provided array, or new empty array
+app.ArrayAppend = function(a1, ...)
+	a1 = a1 or {};
+	if ... then
+		local i = #a1 + 1;
+		for _,a in ipairs({...}) do
+			for ai=1,#a do
+				a1[i] = a[ai];
+				i = i + 1;
+			end
+		end
+	end
+	return a1;
 end
 
 -- Data Lib
@@ -2576,7 +2590,7 @@ subroutines = {
 			{"where", "classID", classID },	-- Select all the class header.
 			{"pop"},	-- Discard the class header and acquire the children.
 			{"is", "itemID"},
-			{"is", "f"},	-- If it has a filterID, keep it, otherwise throw it away.
+			{"is", "s"},	-- If it has a sourceID, keep it, otherwise throw it away.
 		};
 	end,
 	["pvp_set_faction_ensemble"] = function(headerID1, headerID2, headerID3, headerID4, classID)
@@ -2592,7 +2606,7 @@ subroutines = {
 			{"where", "classID", classID },	-- Select all the class header.
 			{"pop"},	-- Discard the class header and acquire the children.
 			{"is", "itemID"},
-			{"is", "f"},	-- If it has a filterID, keep it, otherwise throw it away.
+			{"is", "s"},	-- If it has a sourceID, keep it, otherwise throw it away.
 		};
 	end,
 	-- Weapons
@@ -2607,7 +2621,7 @@ subroutines = {
 			{"where", "headerID", -319 },	-- Select the "Weapons" header.
 			{"pop"},	-- Discard the class header and acquire the children.
 			{"is", "itemID"},
-			{"is", "f"},	-- If it has a filterID, keep it, otherwise throw it away.
+			{"is", "s"},	-- If it has a sourceID, keep it, otherwise throw it away.
 		};
 	end,
 	["pvp_weapons_faction_ensemble"] = function(headerID1, headerID2, headerID3, headerID4)
@@ -2623,7 +2637,7 @@ subroutines = {
 			{"where", "headerID", -319 },	-- Select the "Weapons" header.
 			{"pop"},	-- Discard the class header and acquire the children.
 			{"is", "itemID"},
-			{"is", "f"},	-- If it has a filterID, keep it, otherwise throw it away.
+			{"is", "s"},	-- If it has a sourceID, keep it, otherwise throw it away.
 		};
 	end,
 	-- Island Expeditions Sets
@@ -2946,6 +2960,8 @@ subroutines = {
 		}
 	end,
 };
+-- Allows efficiently appending the content of multiple arrays (in sequence) onto the end of the provided array, or new empty array
+local ArrayAppend = app.ArrayAppend;
 local function Resolve_Extract(results, group, field)
 	if group.g then
 		for _,o in ipairs(group.g) do
@@ -2958,6 +2974,17 @@ local function Resolve_Extract(results, group, field)
 	elseif group[field] then
 		tinsert(results, group);
 	end
+	return results;
+end
+-- Pops the provided group, returning the results from the combined 'g' and 'sym' properties of the group
+local function Resolve_Pop(group)
+	local results = {};
+	-- insert raw things from this group
+	if group.g then
+		ArrayAppend(results, group.g);
+	end
+	-- insert symlinked things from this group
+	ArrayAppend(results, ResolveSymbolicLink(group));
 	return results;
 end
 ResolveSymbolicLink = function(o)
@@ -2974,7 +3001,7 @@ ResolveSymbolicLink = function(o)
 					for _,s in ipairs(cache) do
 						-- if finding itself in the cache, don't try to resolve itself
 						if s ~= o and (s.key ~= o.key or s[s.key] ~= o[o.key]) then
-							tinsert(searchResults, FillSymLinks(s));
+							tinsert(searchResults, s);
 						end
 					end
 				else
@@ -3003,12 +3030,8 @@ ResolveSymbolicLink = function(o)
 				if o.key and o[o.key] then
 					local cache = app.SearchForField(o.key, o[o.key]);
 					if cache then
-						for _,group in ipairs(cache) do
-							if group.g then
-								for _,s in ipairs(group.g) do
-									tinsert(searchResults, FillSymLinks(s));
-								end
-							end
+						for _,s in ipairs(cache) do
+							ArrayAppend(searchResults, Resolve_Pop(s));
 						end
 					end
 				end
@@ -3016,12 +3039,8 @@ ResolveSymbolicLink = function(o)
 				-- Instruction to "pop" all of the group values up one level.
 				local orig = searchResults;
 				searchResults = {};
-				for k,s in ipairs(orig) do
-					if s.g then
-						for l,t in ipairs(s.g) do
-							tinsert(searchResults, t);
-						end
-					end
+				for _,s in ipairs(orig) do
+					ArrayAppend(searchResults, Resolve_Pop(s));
 				end
 			elseif cmd == "push" then
 				-- Instruction to "push" all of the group values into an object as specified
@@ -3153,15 +3172,11 @@ ResolveSymbolicLink = function(o)
 				end
 			elseif cmd == "finalize" then
 				-- Instruction to finalize the current search results and prevent additional queries from affecting this selection.
-				for k,s in ipairs(searchResults) do
-					tinsert(finalized, s);
-				end
+				ArrayAppend(finalized, searchResults);
 				wipe(searchResults);
 			elseif cmd == "merge" then
 				-- Instruction to take all of the finalized and non-finalized search results and merge them back in to the processing queue.
-				for k,s in ipairs(searchResults) do
-					tinsert(finalized, s);
-				end
+				ArrayAppend(finalized, searchResults);
 				searchResults = finalized;
 				finalized = {};
 			elseif cmd == "postprocess" then
@@ -3237,12 +3252,7 @@ ResolveSymbolicLink = function(o)
 					table.remove(args, 1);
 					local commands = subroutine(unpack(args));
 					if commands then
-						local results = ResolveSymbolicLink(setmetatable({sym=commands}, {__index=o}));
-						if results then
-							for k,s in ipairs(results) do
-								tinsert(searchResults, s);
-							end
-						end
+						ArrayAppend(searchResults, ResolveSymbolicLink(setmetatable({sym=commands}, {__index=o})));
 					end
 				else
 					print("Could not find subroutine", sym[2]);
@@ -3260,12 +3270,7 @@ ResolveSymbolicLink = function(o)
 						table.remove(args, 1);
 						local commands = subroutine(unpack(args));
 						if commands then
-							local results = ResolveSymbolicLink(setmetatable({sym=commands}, {__index=o}));
-							if results then
-								for k,s in ipairs(results) do
-									tinsert(searchResults, s);
-								end
-							end
+							ArrayAppend(searchResults, ResolveSymbolicLink(setmetatable({sym=commands}, {__index=o})));
 						end
 					end
 				else
@@ -3277,14 +3282,15 @@ ResolveSymbolicLink = function(o)
 
 		-- If we have any pending finalizations to make, then merge them into the finalized table. [Equivalent to a "finalize" instruction]
 		if #searchResults > 0 then
-			for k,s in ipairs(searchResults) do
-				-- if somehow the symlink pulls in the same item as used as the source of the symlink, then 'pop' that item
-				if s == o or (s.itemID and s.g and s.key == o.key and s[s.key] == o[o.key]) then
-					for _,g in ipairs(s.g) do
-						tinsert(finalized, FillSymLinks(g));
-					end
+			for _,s in ipairs(searchResults) do
+				-- if somehow the symlink pulls in the same item as used as the source of the symlink, then skip putting it in the final group
+				if s == o or (s.hash and s.hash == o.hash) then
+					print("Symlink pulled itself into final group!",o.key,o.key and o[o.key])
+					-- for _,g in ipairs(Resolve_Pop(s)) do
+					-- 	tinsert(finalized, g);
+					-- end
 				else
-					tinsert(finalized, FillSymLinks(s));
+					tinsert(finalized, s);
 				end
 			end
 		end
@@ -3295,6 +3301,10 @@ ResolveSymbolicLink = function(o)
 			local cloned = {};
 			MergeObjects(cloned, finalized, true);
 			-- if app.DEBUG_PRINT then print("Symbolic Link for", o.key,o.key and o[o.key], "contains", #cloned, "values after filtering.") end
+			-- if any symlinks are left at the lowest level, go ahead and fill them
+			for _,s in ipairs(cloned) do
+				FillSymLinks(s);
+			end
 			return cloned;
 		else
 			-- if app.DEBUG_PRINT then print("Symbolic Link for ", o.key, " ",o.key and o[o.key], " contained no values after filtering.") end
