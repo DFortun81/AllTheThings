@@ -545,7 +545,7 @@ for key,value in pairs({
 	["Анторус, Пылающий Трон"] = "Анторус";	-- ["Antorus, the Burning Throne"] = "Antorus"
 	["Expansion Pre"] = "Препатч";
 	["Особый контент"] = "ОК";
-	["Подземелья и рейды"] = "П и Р";
+	[GROUP_FINDER] = "П и Р";	-- ["Dungeons & Raids"] = "D&R"
 	["Cataclysm"] = "Ката";
 	["Темные Земли"] = "ТЗ",
 	["Player vs Player"] = "ПвП";

@@ -548,11 +548,10 @@ local L = app.L;
 
 local a = L.ABBREVIATIONS;
 for key,value in pairs({
-		["Dungeons & Schlachtzüge"] = "D&S",	-- ["Dungeons & Raids"] 
 		["Antorus, der Brennende Thron"] = "Antorus",	-- ["Antorus, the Burning Throne"] = "Antorus"
 		--TODO: ["Expansion Pre"] = "Pre",
 		--TODO: ["Expansion Features"] = "EF",
-		--TODO: [GROUP_FINDER] = "D&R",	-- ["Dungeons & Raids"] = "D&R"
+		[GROUP_FINDER] = "D&S",	-- ["Dungeons & Raids"] = "D&R"
 		--TODO: ["The Burning Crusade"] = "BC",
 		--TODO: ["Burning Crusade"] = "BC",
 		--TODO: ["The BC"] = "BC",
