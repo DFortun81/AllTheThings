@@ -368,7 +368,7 @@ _.NeverImplemented =
 		q(46256),	-- X Treasures Found, 1 Challenge Attempted
 		q(46255),	-- X Unstable Portals Disrupted, 1 World Boss Defeated
 	}),
-	
+
 	n(-9981, {	-- Draenor
 		n(QUESTS, {
 			-- 6.0.1
@@ -522,8 +522,8 @@ _.NeverImplemented =
 			q(37199),	-- Garrison Visitor: Sappy
 			q(34669),	-- Gather Lumber
 			q(33400),	-- General Problems
-			q(35788),	-- Gold Victory
-			q(37307),	-- Gold Victory
+			q(35788, {["_drop"] = { "g" }}),	-- Gold Victory
+			q(37307, {["_drop"] = { "g" }}),	-- Gold Victory
 			q(34771),	-- Good Stuff
 			q(33968),	-- Goren Boss Kill and Collect
 			q(33875),	-- Goren, Goren, Gone!
@@ -961,13 +961,13 @@ _.NeverImplemented =
 			q(34308),	-- <UNUSED>
 			q(34317),	-- <UNUSED>
 			q(34623),	-- <UNUSED>
-			
+
 			-- 6.0.2
 			q(37333),	-- LFGDungeons - Draenor - Heroic Random - 1st
 			q(37334),	-- LFGDungeons - Draenor - Heroic Random - Nth
 			q(37335),	-- LFGDungeons - Draenor - Normal Random - 1st
 			q(37336),	-- LFGDungeons - Draenor - Normal Random - Nth
-			
+
 			-- 6.1.0
 			q(35256),	-- A Heart Unbroken
 			q(37751),	-- Bounties Active
@@ -1043,9 +1043,9 @@ _.NeverImplemented =
 			q(38157),	-- WOD 90-99
 			q(38168),	-- WOD 90-99
 			q(38007),	-- zzOldEMPTY TEST
-			
+
 			-- 6.1.2 - no NYI quests
-			
+
 			-- 6.2.0
 			q(38592),	-- 6.2 Tanaan Max-level Choice Reward Summary: Group
 			q(38594),	-- 6.2 Tanaan Max-level Choice Reward Summary: Group
@@ -1113,7 +1113,7 @@ _.NeverImplemented =
 			q(38221),	-- UNUSED
 			q(38261),	-- UNUSED
 			q(38022),	-- [DEPRECATED]Assault on the Temple of Sha'naar
-			
+
 			-- 6.2.1
 			q(39292),	-- Ashran Dominance
 			q(38260),	-- Beachhead
@@ -1123,7 +1123,7 @@ _.NeverImplemented =
 			q(36572),	-- Tangleheart Return
 			q(36661),	-- The Power of the Red
 			q(38855),	-- zzDEPRECATEDzz Fighting on the Front
-			
+
 			-- 6.2.2
 			q(39052),	-- Blueprints Are Important
 			q(40395),	-- LFGDungeons - Timewalking "Heroic" Random - Nth
@@ -1133,7 +1133,7 @@ _.NeverImplemented =
 			q(33911),	-- No Draenei Left Behind
 			q(34120),	-- The Shard of Shadows
 			q(39714),	-- Where Are the Children?
-			
+
 			-- 6.2.3
 			q(40829),	-- LFGDungeons - Draenor 6.2 - Raid Finder - 1st
 		}),
