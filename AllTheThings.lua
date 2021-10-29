@@ -5838,10 +5838,16 @@ local function SortGroup(group, sortType, row, recur, conditionField)
 			if sortType == "name" then
 				local txtA, txtB;
 				insertionSort(group.g, function(a, b)
-					txtA = a and string.lower(tostring(a.name or a.text)) or "";
-					txtB = b and string.lower(tostring(b.name or b.text)) or "";
-					if txtA then
-						if txtB then return txtA < txtB; end
+					-- equivalent raid status, then compare name
+					if a.isRaid == b.isRaid then
+						txtA = a and string.lower(tostring(a.name or a.text)) or "";
+						txtB = b and string.lower(tostring(b.name or b.text)) or "";
+						if txtA then
+							if txtB then return txtA < txtB; end
+							return true;
+						end
+					-- otherwise return priority on raid status
+					elseif a.isRaid then
 						return true;
 					end
 					return false;
@@ -16629,6 +16635,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				SortGroup(self.data, "name", nil, true, "sort");
 
 				-- Move all "isRaid" entries to the top of the list.
+				-- TODO: wonder why this stopped working...
 				if results.g then
 					local top = {};
 					for i=#results.g,1,-1 do
