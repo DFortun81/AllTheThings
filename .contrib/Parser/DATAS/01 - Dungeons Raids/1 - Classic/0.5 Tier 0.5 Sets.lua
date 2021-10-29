@@ -1941,7 +1941,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["lvl"] = 58,
 					["groups"] = {
 						objective(1, {	-- 0/1 Kormok slain
-							["provider"] = { "n", 16101 },	-- Kormok
+							["provider"] = { "n", 16118 },	-- Kormok
 						}),
 						objective(2, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
 							["provider"] = { "i", 21984 },	-- Left Piece of Lord Valthalak's Amulet
@@ -2020,7 +2020,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["lvl"] = 58,
 					["groups"] = {
 						objective(1, {	-- 0/1 Kormok slain
-							["provider"] = { "n", 16101 },	-- Kormok
+							["provider"] = { "n", 16118 },	-- Kormok
 						}),
 						objective(2, {	-- 0/1 Lord Valthalak's Amulet
 							["provider"] = { "i", 22048 },	-- Lord Valthalak's Amulet
