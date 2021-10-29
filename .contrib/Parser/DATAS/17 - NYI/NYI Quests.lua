@@ -963,10 +963,84 @@ _.NeverImplemented =
 			q(34623),	-- <UNUSED>
 
 			-- 6.0.2
+			q(37598),	-- Abrogator Stones
+			q(37599),	-- Abrogator Stones
+			q(37600),	-- Abrogator Stones
+			q(37601),	-- Abrogator Stones
+			q(37602),	-- Abrogator Stones
+			q(37603),	-- Abrogator Stones
+			q(37604),	-- Abrogator Stones
+			q(37605),	-- Elemental Runes
+			q(37606),	-- Elemental Runes
+			q(37607),	-- Elemental Runes
+			q(37608),	-- Elemental Runes
+			q(37609),	-- Elemental Runes
+			q(37610),	-- Elemental Runes
+			q(37611),	-- Elemental Runes
+			q(37612),	-- Elemental Runes
+			q(37613),	-- Elemental Runes
+			q(37614),	-- Elemental Runes
+			q(37478),	-- Amphitheater of Annihilation
+			q(37169),	-- Apexis Guardian Ziri'ak
+			q(37476),	-- Ashmaul Burial Grounds
+			q(37474),	-- Basics First
+			q(37299),	-- Bonus Objective: Kill Stormshield Priests
+			q(37298),	-- Bonus Objective: Kill Warspear Priests
+			q(37514),	-- Breakers Invasion!! BETA
+			q(37477),	-- Brute's Rise
+			q(35757),	-- Extendable Wand
+			q(35864),	-- Garrison Defense Bot
+			q(35830),	-- Immaculate Statue
+			q(37567),	-- Interact with Dudebro
+			q(37297),	-- Kill Jeron Emberfall
+			q(37295),	-- Kill Rylai Crestfall
 			q(37333),	-- LFGDungeons - Draenor - Heroic Random - 1st
 			q(37334),	-- LFGDungeons - Draenor - Heroic Random - Nth
 			q(37335),	-- LFGDungeons - Draenor - Normal Random - 1st
 			q(37336),	-- LFGDungeons - Draenor - Normal Random - Nth
+			q(37248),	-- Mastering the Menagerie
+			q(37475),	-- Molten Quarry
+			q(37513),	-- Ogres Invasion! BETA
+			q(35832),	-- Priceless Gryphon Figurine
+			q(37512),	-- Primals Invasion! BETA
+			q(35806),	-- Rugged Knapsack
+			q(37681),	-- Short-Supply Reward
+			q(37682),	-- Short-Supply Reward
+			q(37683),	-- Short-Supply Reward
+			q(37684),	-- Short-Supply Reward
+			q(37597),	-- Talk to Testie
+			q(37515),	-- The Iron Horde Approaches... BETA
+			q(37508),	-- Tracking Event: Stacking the Deck
+			q(37509),	-- Tracking Event: Stacking the Deck
+			q(37423),	-- Tracking Quest
+			q(37424),	-- Tracking Quest
+			q(37425),	-- Tracking Quest
+			q(37426),	-- Tracking Quest
+			q(37427),	-- Tracking Quest
+			q(37428),	-- Tracking Quest
+			q(37429),	-- Tracking Quest
+			q(37430),	-- Tracking Quest
+			q(37431),	-- Tracking Quest
+			q(37432),	-- Tracking Quest
+			q(37531),	-- Tracking - See Closed Chest
+			q(36343),	-- UNUSED
+			q(37539),	-- UNUSED
+			q(37471),	-- Vignette: Dahrok Boneshatter
+			q(37650),	-- Vignette: Iron Horde Caravan
+			q(37408),	-- Vignette: Lernaea
+			q(37389),	-- Vignette: Ug'lok the Frozen
+			q(37584),	-- Your Second Alchemy Work Order
+			q(37587),	-- Your Second Blacksmithing Work Order
+			q(37589),	-- Your Second Enchanting Work Order
+			q(37590),	-- Your Second Engineering Work Order
+			q(37591),	-- Your Second Inscription Work Order
+			q(37595),	-- Your Second Inscription Work Order
+			q(37592),	-- Your Second Jewelcrafting Work Order
+			q(37593),	-- Your Second Leatherworking Work Order
+			q(37594),	-- Your Second Tailoring Work Order
+
+			-- 6.0.3
+			q(33466),	-- Rally the Artificers
 
 			-- 6.1.0
 			q(35256),	-- A Heart Unbroken
@@ -1043,6 +1117,8 @@ _.NeverImplemented =
 			q(38157),	-- WOD 90-99
 			q(38168),	-- WOD 90-99
 			q(38007),	-- zzOldEMPTY TEST
+
+			-- 6.1.1 - no NYI quests
 
 			-- 6.1.2 - no NYI quests
 

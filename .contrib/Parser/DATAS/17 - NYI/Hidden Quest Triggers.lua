@@ -971,11 +971,13 @@ _.HiddenQuestTriggers = {
 		q(35391),	-- Silence the Call - completed with quest 35083
 		q(35392),	-- The Nether Approaches - completed with quest 35087
 		q(36501),	-- Iron Horde Invasion - completed with quest 36498
+		q(36635),	-- Your First Work Order - completed with quest 35168 & 37569
 		q(37185),	-- A Personal Summons - completed with quest 28790 & 28825
 		q(37189),	-- A Personal Summons - completed with quest 28825
 		q(37190),	-- Iron Horde Invasion - completed with quest 36499
 		q(37196),	-- Iron Horde Invasion - completed with quest 36498
 		q(37441),	-- Solanian's Belongings - completed with quest 37443
+		q(37564),	-- Your First Blacksmithing Work Order	-- completed with quest 35168 & 37569
 		q(37667),	-- Building for Professions - completed with quest 36100 & 37669
 		q(45405),	-- Breaching the Sanctum - completed with quest 44719
 		q(51845),	-- Storm's End - completed with quest 50824
