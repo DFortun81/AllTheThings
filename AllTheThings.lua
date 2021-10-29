@@ -1930,6 +1930,35 @@ local function GetFixedItemSpecInfo(itemID)
 end
 
 -- Quest Completion Lib
+-- Builds a table to be used in the SetupReportDialog to display text which is copied into Discord for player reports
+app.BuildDiscordQuestInfoTable = function(id, infoText, questChange)
+	local coord;
+	local mapID = app.GetCurrentMapID();
+	local position = mapID and C_Map.GetPlayerMapPosition(mapID, "player");
+	if position then
+		local x,y = position:GetXY();
+		x = math.floor(x * 1000) / 10;
+		y = math.floor(y * 1000) / 10;
+		coord = x..","..y;
+	end
+	return
+	{
+		"**"..(infoText or "quest-info")..":"..id.."**",
+
+		"```",	-- discord fancy box
+
+		questChange,
+		"race:"..app.RaceID,
+		"class:"..app.ClassIndex,
+		"lvl:"..app.Level,
+		"mapID:"..mapID,
+		coord and ("coord:"..coord) or "coord:??",
+		"ver:"..app.Version,
+
+		"```",	-- discord fancy box
+		-- TODO: put more info in here as it will be copy-paste into Discord
+	};
+end
 local PrintQuestInfo = function(questID, new, info)
 	if app.IsReady and app.Settings:GetTooltipSetting("Report:CompletedQuests") then
 		local searchResults = app.SearchForField("questID", questID);
@@ -1947,32 +1976,8 @@ local PrintQuestInfo = function(questID, new, info)
 			-- Linkify the output
 			local popupID = "quest-" .. id;
 			questID = app:Linkify(questID, "ff5c6c", "dialog:" .. popupID);
-			local coord;
-			local mapID = app.GetCurrentMapID();
-			local position = C_Map.GetPlayerMapPosition(mapID, "player");
-			if position then
-				local x,y = position:GetXY();
-				x = math.floor(x * 1000) / 10;
-				y = math.floor(y * 1000) / 10;
-				coord = x..","..y;
-			end
 			app:SetupReportDialog(popupID, "Missing Quest: " .. id,
-				{
-					"**missing-quest:"..id.."**",
-
-					"```",	-- discord fancy box
-
-					questChange,
-					"race:"..app.RaceID,
-					"class:"..app.ClassIndex,
-					"lvl:"..app.Level,
-					"mapID:"..mapID,
-					"coord:"..coord,
-					"ver:"..app.Version,
-
-					"```",	-- discord fancy box
-					-- TODO: put more info in here as it will be copy-paste into Discord
-				}
+				app.BuildDiscordQuestInfoTable(id, "missing-quest", questChange)
 			);
 		else
 			if app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
@@ -1991,32 +1996,8 @@ local PrintQuestInfo = function(questID, new, info)
 				-- Linkify the output
 				local popupID = "quest-" .. id;
 				questID = app:Linkify(questID, "ff5c6c", "dialog:" .. popupID);
-				local coord;
-				local mapID = app.GetCurrentMapID();
-				local position = C_Map.GetPlayerMapPosition(mapID, "player");
-				if position then
-					local x,y = position:GetXY();
-					x = math.floor(x * 1000) / 10;
-					y = math.floor(y * 1000) / 10;
-					coord = x..","..y;
-				end
 				app:SetupReportDialog(popupID, "NYI Quest: " .. id,
-					{
-						"**nyi-quest:"..id.."**",
-
-						"```",	-- discord fancy box
-
-						questChange,
-						"race:"..app.RaceID,
-						"class:"..app.ClassIndex,
-						"lvl:"..app.Level,
-						"mapID:"..mapID,
-						"coord:"..coord,
-						"ver:"..app.Version,
-
-						"```",	-- discord fancy box
-						-- TODO: put more info in here as it will be copy-paste into Discord
-					}
+					app.BuildDiscordQuestInfoTable(id, "nyi-quest", questChange)
 				);
 			else
 				-- Linkify the output
@@ -2030,32 +2011,8 @@ local PrintQuestInfo = function(questID, new, info)
 					and app.RaceRequirementFilter(questRef)
 					and app.RequireCustomCollectFilter(questRef)) then
 				local popupID = "quest-filter-" .. id;
-				local coord;
-				local mapID = app.GetCurrentMapID();
-				local position = mapID and C_Map.GetPlayerMapPosition(mapID, "player");
-				if position then
-					local x,y = position:GetXY();
-					x = math.floor(x * 1000) / 10;
-					y = math.floor(y * 1000) / 10;
-					coord = x..","..y;
-				end
 				if app:SetupReportDialog(popupID, "Inaccurate Quest Info: " .. id,
-					{
-						"**inaccurate-quest-info:"..id.."**",
-
-						"```",	-- discord fancy box
-
-						questChange,
-						"race:"..app.RaceID,
-						"class:"..app.ClassIndex,
-						"lvl:"..app.Level,
-						"mapID:"..mapID,
-						coord and ("coord:"..coord) or "coord:??",
-						"ver:"..app.Version,
-
-						"```",	-- discord fancy box
-						-- TODO: put more info in here as it will be copy-paste into Discord
-					}
+					app.BuildDiscordQuestInfoTable(id, "inaccurate-quest", questChange)
 				) then
 					local reportMsg = app:Linkify(L["REPORT_INACCURATE_QUEST"], "f7b531", "dialog:" .. popupID);
 					Callback(app.print, reportMsg);
