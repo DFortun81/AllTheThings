@@ -3026,12 +3026,12 @@ ResolveSymbolicLink = function(o)
 					tinsert(searchResults, o.parent);
 				end
 			elseif cmd == "fill" then
-				-- Instruction to fill with identical content cached elsewhere for this group
+				-- Instruction to fill with identical content cached elsewhere for this group (no symlinks)
 				if o.key and o[o.key] then
 					local cache = app.SearchForField(o.key, o[o.key]);
 					if cache then
 						for _,s in ipairs(cache) do
-							ArrayAppend(searchResults, Resolve_Pop(s));
+							ArrayAppend(searchResults, s.g);
 						end
 					end
 				end
