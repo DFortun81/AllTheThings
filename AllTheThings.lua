@@ -4797,14 +4797,23 @@ local cacheCreatureID = function(group, npcID)
 		CacheField(group, "creatureID", npcID);
 	end
 end
-local cacheMapID = function(group, mapID, skipNest)
-	if (currentMaps[mapID] or 0) == 0 then
-		if not skipNest then currentMaps[mapID] = 1; end
+-- special map cache function, will only cache a group for the mapID if the current hierarchy has not already been cached in this map
+-- level doesn't matter and will be reported in chat for 'mapID' and 'maps' being multiply-nested
+local cacheMapID = function(group, mapID, coords)
+	if not currentMaps[mapID] then
+		-- track the group which was first cached for this map within the hierarchy
+		currentMaps[mapID] = group;
 		CacheField(group, "mapID", mapID);
-	elseif not skipNest then
-		print("multi-nested map",mapID,currentMaps[mapID],group.key,group.key and group[group.key])
-		currentMaps[mapID] = currentMaps[mapID] + 1;
+	elseif not coords then
+		print("multi-nested map",mapID,group.key,group.key and group[group.key]);
 	end
+	-- if (currentMaps[mapID] or 0) == 0 then
+	-- 	currentMaps[mapID] = 1;
+	-- 	CacheField(group, "mapID", mapID);
+	-- elseif not nestOnce then
+	-- 	print("multi-nested map",mapID,currentMaps[mapID],group.key,group.key and group[group.key])
+	-- 	currentMaps[mapID] = currentMaps[mapID] + 1;
+	-- end
 end
 local cacheObjectID = function(group, objectID)
 	-- WARNING: DEV ONLY START
@@ -4996,14 +5005,24 @@ fieldConverters = {
 		end
 	end,
 };
-local uncacheMap = function(mapID)
-	currentMaps[mapID] = (currentMaps[mapID] or 0) - 1;
-end;
+local uncacheMap = function(group, mapID)
+	if mapID and currentMaps[mapID] == group then
+		currentMaps[mapID] = nil;
+	end
+end
 local mapKeyUncachers = {
 	["mapID"] = uncacheMap,
-	["maps"] = function(maps)
+	["coord"] = function(group, coord)
+		uncacheMap(group, coord[3]);
+	end,
+	["maps"] = function(group, maps)
 		for _,mapID in ipairs(maps) do
-			uncacheMap(mapID);
+			uncacheMap(group, mapID);
+		end
+	end,
+	["coords"] = function(group, coords)
+		for _,coord in ipairs(coords) do
+			uncacheMap(group, coord[3]);
 		end
 	end,
 };
@@ -5037,7 +5056,7 @@ CacheFields = function(group)
 	-- clear currentMapIDs used by this group
 	if mapKeys then
 		for key,value in pairs(mapKeys) do
-			rawget(mapKeyUncachers, key)(value);
+			rawget(mapKeyUncachers, key)(group, value);
 		end
 	end
 end
