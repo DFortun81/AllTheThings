@@ -1337,6 +1337,7 @@ app.MergeSkipFields = {
 	["u"] = true,
 	["pvp"] = true,
 	["pb"] = true,
+	["requireSkill"] = true,
 };
 -- Fields on a Thing which are specific to where the Thing is Sourced or displayed in a ATT window
 app.SourceSpecificFields = {
@@ -1370,6 +1371,7 @@ app.SourceSpecificFields = {
 -- Simple boolean
 	["pvp"] = true,
 	["pb"] = true,
+	["requireSkill"] = true,
 };
 -- merges the properties of the t group into the g group, making sure not to alter the filterability of the group
 local MergeProperties = function(g, t, noReplace)
