@@ -2024,11 +2024,15 @@ local PrintQuestInfo = function(questID, new, info)
 			end
 			-- This quest doesn't meet the filter for this character, then ask to report in chat
 			-- TODO: change filtering technique so we can do app.CharacterFilter(questRef) to bypass any Account filtering active
-			if questChange == "accepted" and not app.GroupFilter(questRef) then
+			if questChange == "accepted" and
+				not (app.RequiredSkillFilter(questRef)
+					and app.ClassRequirementFilter(questRef)
+					and app.RaceRequirementFilter(questRef)
+					and app.RequireCustomCollectFilter(questRef)) then
 				local popupID = "quest-filter-" .. id;
 				local coord;
 				local mapID = app.GetCurrentMapID();
-				local position = C_Map.GetPlayerMapPosition(mapID, "player");
+				local position = mapID and C_Map.GetPlayerMapPosition(mapID, "player");
 				if position then
 					local x,y = position:GetXY();
 					x = math.floor(x * 1000) / 10;
@@ -2046,7 +2050,7 @@ local PrintQuestInfo = function(questID, new, info)
 						"class:"..app.ClassIndex,
 						"lvl:"..app.Level,
 						"mapID:"..mapID,
-						"coord:"..coord,
+						coord and ("coord:"..coord) or "coord:??",
 						"ver:"..app.Version,
 
 						"```",	-- discord fancy box
