@@ -634,7 +634,6 @@ _.NeverImplemented =
 			q(33521),	-- Save Auchenai Caretakers
 			q(32982),	-- Scavengers of Flame
 			q(36060),	-- Seal of Tempered Fate: Apexis Crystals
-			q(36057),	-- Sealing Fate: Honor
 			q(35720),	-- Seamless Breastplate
 			q(37268),	-- Shadowmoon Invasion! BETA
 			q(37269),	-- Shadowmoon Invasion! BETA
@@ -1128,7 +1127,6 @@ _.NeverImplemented =
 			q(37888),	-- 6.2 Tanaan Max-level Choice Reward Summary: Solo
 			q(37947),	-- 6.2 Tanaan Max-level Choice Reward Summary: Solo
 			q(39147),	-- 6.2 Tanaan - PTR - Unlock Tanaan Debug
-			q(39107),	-- An Even Bigga Score
 			q(39294),	-- Ashran Dominance
 			q(39520),	-- Ashran Dominance
 			q(39522),	-- Ashran Dominance

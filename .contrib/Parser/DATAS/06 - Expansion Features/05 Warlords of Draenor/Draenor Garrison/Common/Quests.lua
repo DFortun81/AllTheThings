@@ -1453,6 +1453,26 @@ _.ExpansionFeatures =
 						currency(823),	-- Apexis Crystal x1000
 					},
 				}),
+				q(38929, {	-- Battle Hardened
+					["provider"] = { "n", 94870 },	-- Seer Kazal
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 33.6, 37.6, LUNARFALL },
+					["isWeekly"] = true,
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						i(126924),	-- Champion's Strongbox
+					},
+				}),
+				q(38927, {	-- Battle Hardened
+					["provider"] = { "n", 94870 },	-- Seer Kazal
+					["races"] = HORDE_ONLY,
+					["coord"] = { 41.8, 46.8, FROSTWALL },
+					["isWeekly"] = true,
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						i(126924),	-- Champion's Strongbox
+					},
+				}),
 				q(36684, {	-- Battle in Ashran
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,

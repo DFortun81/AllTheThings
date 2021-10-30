@@ -625,6 +625,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34379,	-- Den of Wolves
 				}),
+				q(37204, {	-- Rekindling an Old Flame
+					["provider"] = { "n", 87971 },	-- Firaga
+					["coord"] = { 74.8, 30.0, FROSTFIRE_RIDGE },
+					["isDaily"] = true,
+				}),
 				q(33493, {	-- Return to the Pack
 					["provider"] = { "n", 72940 },	-- Frostwolf Champion
 					["races"] = HORDE_ONLY,

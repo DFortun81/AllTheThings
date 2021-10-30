@@ -108,6 +108,20 @@ _.Zones =
 						["cost"] = { { "c", 823, 500 }, },	-- 500x Apexis Crystal
 						["lvl"] = 100,
 					}),
+					q(37458, {	-- Sealing Fate: Extended Honor
+						["sourceQuests"] = { 36057 },	-- Sealing Fate: Honor
+						["providers"] = {
+							{ "n", 87391 },	-- Fate-Twister Seress
+							{ "n", 88570 },	-- Fate-Twister Tiklal
+						},
+						["isWeekly"] = true,
+						["coords"] = {
+							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
+							{ 64.6, 62.0, WARSPEAR },	-- Horde
+						},
+						["cost"] = { { "c", 1792, 1000 }, },	-- 1000x Honor
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(36056, {	-- Sealing Fate: Garrison Resources
 						["providers"] = {
 							{ "n", 87391 },	-- Fate-Twister Seress
@@ -148,6 +162,19 @@ _.Zones =
 						["cost"] = { { "c", 823, 1000 }, },	-- 1,000x Apexis Crystal
 						["lvl"] = 100,
 					}),
+					q(36057, {	-- Sealing Fate: Honor
+						["providers"] = {
+							{ "n", 87391 },	-- Fate-Twister Seress
+							{ "n", 88570 },	-- Fate-Twister Tiklal
+						},
+						["isWeekly"] = true,
+						["coords"] = {
+							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
+							{ 64.6, 62.0, WARSPEAR },	-- Horde
+						},
+						["cost"] = { { "c", 1792, 500 }, },	-- 500x Honor
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(37455, {	-- Sealing Fate: Immense Fortune of Gold
 						["sourceQuests"] = { 37454 },	-- Sealing Fate: Piles of Gold
 						["providers"] = {
@@ -161,6 +188,20 @@ _.Zones =
 						},
 						["cost"] = 20000000,	-- 2,000g
 						["lvl"] = 100,
+					}),
+					q(37459, {	-- Sealing Fate: Monumental Honor
+						["sourceQuests"] = { 37458 },	-- Sealing Fate: Extended Honor
+						["providers"] = {
+							{ "n", 87391 },	-- Fate-Twister Seress
+							{ "n", 88570 },	-- Fate-Twister Tiklal
+						},
+						["isWeekly"] = true,
+						["coords"] = {
+							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
+							{ 64.6, 62.0, WARSPEAR },	-- Horde
+						},
+						["cost"] = { { "c", 1792, 2000 }, },	-- 2000x Honor
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(37453, {	-- Sealing Fate: Mountain of Apexis Crystals
 						["sourceQuests"] = { 37452 },	-- Sealing Fate: Heap of Apexis Crystals
