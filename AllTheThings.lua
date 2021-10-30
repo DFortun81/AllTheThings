@@ -2926,16 +2926,12 @@ subroutines = {
 -- Allows efficiently appending the content of multiple arrays (in sequence) onto the end of the provided array, or new empty array
 local ArrayAppend = app.ArrayAppend;
 local function Resolve_Extract(results, group, field)
-	if group.g then
-		for _,o in ipairs(group.g) do
-			if o[field] then
-				tinsert(results, o);
-			else
-				Resolve_Extract(results, o);
-			end
-		end
-	elseif group[field] then
+	if group[field] then
 		tinsert(results, group);
+	elseif group.g then
+		for _,o in ipairs(group.g) do
+			Resolve_Extract(results, o, field);
+		end
 	end
 	return results;
 end
