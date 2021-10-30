@@ -187,7 +187,6 @@ local L = app.L;
 	--TODO: L.PROFESSION_LIST_DESC = "Open your professions to cache them.";
 	--TODO: L.CACHED_RECIPES_1 = "Cached ";
 	--TODO: L.CACHED_RECIPES_2 = " known recipes!";
-	--TODO: L.WORLD_QUESTS = "World Quests";
 	--TODO: L.WORLD_QUESTS_DESC = "These are World Quests and other time-limited Things that are currently available somewhere. Go get 'em!";
 	--TODO: L.QUESTS_DESC = "Shows all possible QuestID's in the game in ascending numeric order.";
 	--TODO: L.UPDATE_WORLD_QUESTS = "Update World Quests Now";
@@ -575,7 +574,7 @@ for key,value in pairs({
 		--TODO: ["25 Player"] = "25M",
 		--TODO: ["25 Player (Heroic)"] = "25M (H)",
 		--TODO: ["Emissary Quests"] = "Emissary",
-		--TODO: ["World Quests"] = "WQ",
+		--TODO: [TRACKER_HEADER_WORLD_QUESTS] = "WQ",	-- ["World Quests"] = "WQ"
 		--TODO: ["WoW Anniversary"] = "Anniversary",
 		--TODO: ["Covenant:"] = "Cov:",
 })

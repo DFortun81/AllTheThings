@@ -189,7 +189,6 @@ local L = app.L;
 	L.PROFESSION_LIST_DESC = "打开你的专业来缓存它们.";
 	L.CACHED_RECIPES_1 = "缓存 ";
 	L.CACHED_RECIPES_2 = " 已知配方!";
-	L.WORLD_QUESTS = "世界任务";
 	L.WORLD_QUESTS_DESC = "这些都是世界任务和其他有时间限制的事物, 目前可以在某个地方获得. 去得到他们!";
 	L.QUESTS_DESC = "按数字升序显示游戏中所有可能的QuestID.";
 	L.UPDATE_WORLD_QUESTS = "立即更新世界任务";
@@ -609,7 +608,7 @@ for key,value in pairs({
 	--TODO: ["25 Player"] = "25M",
 	--TODO: ["25 Player (Heroic)"] = "25M (H)",
 	--TODO: ["Emissary Quests"] = "Emissary",
-	["世界任务"] = "世界任务",	-- ["World Quests"] = "WQ"	--TODO: they are the same, so can be removed or shortened to WQ?
+	--TODO: [TRACKER_HEADER_WORLD_QUESTS] = "WQ",	-- ["World Quests"] = "WQ"
 	--TODO: ["WoW Anniversary"] = "Anniversary",
 	["盟约:"] = "盟约:",	-- ["Covenant:"] = "Cov:"	--TODO: they are the same, so can be removed or shortened to WQ?
 })
