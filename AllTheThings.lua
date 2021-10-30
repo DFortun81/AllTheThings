@@ -5068,20 +5068,24 @@ app.SearchForField = SearchForField;
 -- This method performs the SearchForField logic, but then verifies that ONLY the specific matching object is returned
 app.SearchForObject = function(field, id)
 	local fcache = SearchForField(field, id);
-	if fcache and #fcache > 0 then
+	if fcache then
 		-- find a filter-match object first
-		local fcacheObj, firstMatch;
+		local fcacheObj, firstMatch, fieldMatch;
 		for i=1,#fcache,1 do
 			fcacheObj = fcache[i];
-			if fcacheObj.key == field and fcacheObj[field] == id then
-				firstMatch = firstMatch or fcacheObj;
-				if app.RecursiveGroupRequirementsFilter(fcacheObj) then
-					return fcacheObj;
+			if fcacheObj[field] == id then
+				if fcacheObj.key == field then
+					firstMatch = firstMatch or fcacheObj;
+					if app.RecursiveGroupRequirementsFilter(fcacheObj) then
+						return fcacheObj;
+					end
+				else
+					fieldMatch = fieldMatch or fcacheObj;
 				end
 			end
 		end
 		-- otherwise just find the first matching object
-		return firstMatch;
+		return firstMatch or fieldMatch or nil;
 	end
 end
 -- This method performs the SearchForField logic and returns a single version of the specific object by merging together all sources of the object
@@ -15219,7 +15223,7 @@ function app:GetDataCache()
 			db.icon = app.asset("Category_InGameShop");
 			tinsert(g, db);
 		end
-		
+
 		-- Black Market
 		if app.Categories.BlackMarket then
 			db = {};
