@@ -24,6 +24,6 @@ root("WorldEvents", n(SIXTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_G
 })));
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
-		q(60215),	-- Doomwalkin' Has Come Knockin'
+		q(60215),	-- Doomwalkin' Has Come Knockin' Probably for 17th anniversary
 	}),
 });
