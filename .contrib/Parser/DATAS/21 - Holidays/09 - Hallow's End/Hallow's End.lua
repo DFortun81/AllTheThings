@@ -1702,15 +1702,15 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 				i(33292, {	-- Hallowed Helm
 					["timeline"] = { "added 2.2.2.7318" },
 				}),
-				i(33176, {	-- Flying Broom
-					["timeline"] = { "added 2.2.2.7318", "removed 4.2.2" },
-				}),
 				i(37011, {	-- Magic Broom
 					["timeline"] = { "added 2.4.3.8600" },
 				}),
 				-- #endif
 				-- #if NOT ANYCLASSIC
 				-- #if BEFORE LEGION
+				i(33176, {	-- Flying Broom
+					["timeline"] = { "added 2.2.2.7318", "removed 4.2.2" },
+				}),
 				i(33182, {	-- Swift Flying Broom
 					["timeline"] = { "added 2.0.1", "removed 2.4.3" },
 				}),
@@ -4095,9 +4095,18 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, { {
 	-- #endif
 	["groups"] = {
 		-- #if ANYCLASSIC
-		i(33183),	-- Old Magic Broom
-		i(33182),	-- Swift Flying Broom
-		i(33184),	-- Swift Magic Broom
+		i(33176, {	-- Flying Broom
+			["timeline"] = { "created 2.2.2.7318" },
+		}),
+		i(33182, {	-- Swift Flying Broom
+			["timeline"] = { "created 2.0.1" },
+		}),
+		i(33184, {	-- Swift Magic Broom
+			["timeline"] = { "created 2.0.1" },
+		}),
+		i(33183, {	-- Old Magic Broom
+			["timeline"] = { "created 2.0.1" },
+		}),
 		-- #endif
 		i(33957),	-- Witches Band (unused version)
 		i(33958),	-- The Horseman's Signet Ring (unused version)
