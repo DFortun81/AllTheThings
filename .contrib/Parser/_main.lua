@@ -528,6 +528,7 @@ SL_TIER = 9;
 -- Unobtainable Filters
 NEVER_IMPLEMENTED = 1;
 REMOVED_FROM_GAME = 2;
+BLACK_MARKET = 9;
 BLIZZARD_BALANCE = 35;
 
 -- Classic Phases

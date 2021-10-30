@@ -66,9 +66,7 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(5863)),		-- WoW's 7th Anniversary
 			un(REMOVED_FROM_GAME, ach(6131)),		-- WoW's 8th Anniversary
 			un(REMOVED_FROM_GAME, ach(7853)),		-- WoW's 9th Anniversary
-			un(REMOVED_FROM_GAME, ach(8820, {		-- WoW's 10th Anniversary
-				i(115301),	-- Molten Corgi
-			})),
+			un(REMOVED_FROM_GAME, ach(8820)),		-- WoW's 10th Anniversary
 			un(REMOVED_FROM_GAME, ach(10058)),		-- WoW's 11th Anniversary
 			un(REMOVED_FROM_GAME, ach(10741)),		-- WoW's 12th Anniversary
 			un(REMOVED_FROM_GAME, ach(11848)),		-- WoW's 13th Anniversary

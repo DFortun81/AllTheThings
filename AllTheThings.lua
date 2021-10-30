@@ -15155,7 +15155,7 @@ function app:GetDataCache()
 			db.lvl = 3; -- Must be 3 to train (used to be 5 pre-scale)
 			db.expanded = false;
 			db.text = SHOW_PET_BATTLES_ON_MAP_TEXT; -- Pet Battles
-			db.icon = app.asset("Category_PetBattles")
+			db.icon = app.asset("Category_PetBattles");
 			tinsert(g, db);
 		end
 
@@ -15217,6 +15217,16 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.text = BATTLE_PET_SOURCE_10;
 			db.icon = app.asset("Category_InGameShop");
+			tinsert(g, db);
+		end
+		
+		-- Black Market
+		if app.Categories.BlackMarket then
+			db = {};
+			db.g = app.Categories.BlackMarket;
+			db.expanded = false;
+			db.text = BLACK_MARKET_AUCTION_HOUSE;
+			db.icon = app.asset("Interface_Vendor"); -- Temporary
 			tinsert(g, db);
 		end
 

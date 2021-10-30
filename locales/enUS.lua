@@ -1398,6 +1398,21 @@ app.L = {
 		[-4189] = "Interface\\Icons\\achievement_legionpvptier4",							-- Instance Item Sets, PvP
 		[-4191] = "Interface\\Icons\\Achievement_PVP_Legion08",
 		[-5350] = "Interface\\Icons\\ability_bossmagistrix_timewarp1",						-- Class Trial Item Sets
+		-- WoW Anniversary
+		[-5353] = "Interface\\Icons\\inv_misc_celebrationcake_01",							-- 4th Anniversary
+		[-5354] = "Interface\\Icons\\inv_misc_celebrationcake_01",							-- 5th Anniversary
+		[-5355] = "Interface\\Icons\\inv_misc_celebrationcake_01",							-- 6th Anniversary
+		[-5356] = "Interface\\Icons\\inv_misc_celebrationcake_01",							-- 7th Anniversary
+		[-5357] = "Interface\\Icons\\inv_misc_celebrationcake_01",							-- 8th Anniversary
+		[-5358] = "Interface\\Icons\\inv_misc_celebrationcake_01",							-- 9th Anniversary
+		[-5359] = "Interface\\Icons\\inv_misc_celebrationcake_01",							-- 10th Anniversary
+		[-5360] = "Interface\\Icons\\inv_misc_celebrationcake_01",							-- 11th Anniversary
+		[-5361] = "Interface\\Icons\\inv_misc_celebrationcake_01",							-- 12th Anniversary
+		[-5362] = "Interface\\Icons\\inv_misc_celebrationcake_01",							-- 13th Anniversary
+		[-5363] = "Interface\\Icons\\inv_misc_celebrationcake_01",							-- 14th Anniversary
+		[-5364] = "Interface\\Icons\\inv_misc_celebrationcake_01",							-- 15th Anniversary
+		[-5365] = "Interface\\Icons\\inv_misc_celebrationcake_01",							-- 16th Anniversary
+		--
 		[-6013] = app.asset("Category_Factions"),											-- Faction
 		[-6014] = "Interface\\Icons\\Spell_Arcane_PortalUnderCity",							-- Cities
 		[-7776] = "Interface\\Icons\\INV_Helm_Cloth_Holiday_Christmas_A_03",				-- Winter Revelers (for Winter Veil)

@@ -4,15 +4,10 @@
 
 _.WorldEvents =
 {
-	n(-5353, {	-- 4th Anniversary
-		["icon"] = "Interface\\Icons\\inv_misc_celebrationcake_01",
-		["g"] = {
-			ach(2398, {	-- 4th Anniversary
-				["u"] = REMOVED_FROM_GAME,
-			}),
-			n(MAILBOX, bubbleDown({ ["u"] = REMOVED_FROM_GAME, }, {
-				i(44819),	-- Baby Blizzard Bear
-			})),
-		},
-	}),
+	n(-5353, bubbleDown({ ["u"] = REMOVED_FROM_GAME, }, {	-- 4th Anniversary
+		ach(2398),	-- 4th Anniversary
+		n(MAILBOX, {
+			i(44819),	-- Baby Blizzard Bear (PET!)
+		}),
+	})),
 };
