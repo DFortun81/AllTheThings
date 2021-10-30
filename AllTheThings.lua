@@ -455,20 +455,28 @@ local function ReturnFalse()
 	return false;
 end
 -- Returns an object which contains no data, but can return values from an overrides table, and be loaded/created when a specific field is attempted to be referenced
--- i.e. Create a data group which contains no information but will attempt to populate itself when the 'text' field is referenced
+-- i.e. Create a data group which contains no information but will attempt to populate itself when [loadField] is referenced
 app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
 	local dlo, o;
 	local params = {...};
-	local loader = {
+	local loader;
+	loader = {
 		__index = function(t, key)
 			-- override for the object
-			if overrides and (overrides[key] ~= nil) then
-				return overrides[key];
+			local override = overrides and overrides[key];
+			if override ~= nil then
+				-- overrides can also be a function which will execute once the object has been created
+				if o and type(override) == "function" then
+					return override(o, key);
+				else
+					return override;
+				end
 			-- existing object, then reference the respective key
 			elseif o then
 				return o[key];
 			end
 
+			-- load the object if it matches the load field
 			if key == loadField then
 				o = objFunc(unpack(params));
 				return o[key];
