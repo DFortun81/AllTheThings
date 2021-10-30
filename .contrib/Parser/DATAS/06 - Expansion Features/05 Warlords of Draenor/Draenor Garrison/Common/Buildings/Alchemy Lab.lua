@@ -21,11 +21,24 @@ _.ExpansionFeatures =
 							["provider"] = { "i", 113103 },	-- Mysterious Flask
 							["races"] = ALLIANCE_ONLY,
 						}),
+						q(35058, {	-- The Mysterious Flask
+							["requireSkill"] = ALCHEMY,
+							["provider"] = { "i", 112566 },	-- Mysterious Flask
+							["races"] = HORDE_ONLY,
+						}),
 						q(35343, {	-- The Young Alchemist
 							["sourceQuests"] = { 35342 },	-- The Mysterious Flask
 							["requireSkill"] = ALCHEMY,
 							["provider"] = { "n", 82466 },	-- Aenir
+							["coord"] = { 47.2, 45.8, LUNARFALL },
 							["races"] = ALLIANCE_ONLY,
+						}),
+						q(35103, {	-- The Alchemist
+							["sourceQuests"] = { 35058 },	-- The Mysterious Flask
+							["requireSkill"] = ALCHEMY,
+							["provider"] = { "n", 81166 },	-- Refugee Lo'nash
+							["coord"] = { 45.4, 50.4, FROSTWALL },
+							["races"] = HORDE_ONLY,
 						}),
 						q(36641, {	-- Your First Alchemy Work Order
 							["provider"] = { "n", 77363 },	-- Mary Kearie

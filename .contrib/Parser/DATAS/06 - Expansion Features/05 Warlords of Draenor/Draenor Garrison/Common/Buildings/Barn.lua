@@ -29,6 +29,10 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 85048 },	-- Farmer Lok'lub
 							["races"] = HORDE_ONLY,
 						}),
+						q(36272, {	-- Feeding An Army
+							["provider"] = { "n", 84524 },	-- Homer Stonefield
+							["races"] = ALLIANCE_ONLY,
+						}),
 						q(36344, {	-- Feeding An Army
 							["provider"] = { "n", 85048 },	-- Farmer Lok'lub
 							["races"] = HORDE_ONLY,

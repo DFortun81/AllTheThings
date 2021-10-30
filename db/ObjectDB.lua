@@ -621,6 +621,7 @@ select(2, ...).ObjectNames = {
 	[230611] = "Pale Loot Sack",
 	[230643] = "Teroclaw Nest",
 	[230664] = "The Crystal Blade of Torvath",
+	[230865] = "List of Ingredients",
 	[230909] = "Forgotten Supplies",
 	[231063] = "Lady Sena's Materials Stash",
 	[231064] = "Lady Sena's Other Materials Stash",
