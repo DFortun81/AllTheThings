@@ -18146,12 +18146,16 @@ customWindowUpdates["Quests"] = function(self, force, got)
 			["visible"] = true,
 			["expanded"] = true,
 			["indent"] = 0,
-			["back"] = 1,
 		};
 
 		-- add a bunch of raw, delay-loaded quests in order into the window
 		local groupCount = self.Limit / self.PartitionSize - 1;
-		local g, overrides = {}, {visible=true};
+		local g, overrides = {}, {
+			visible = true,
+			back = function(o, key)
+				return o._missing and 1 or 0;
+			end,
+		};
 		local partition, partitionStart, partitionGroups;
 		local dlo = app.DelayLoadedObject;
 		for j=0,groupCount,1 do
