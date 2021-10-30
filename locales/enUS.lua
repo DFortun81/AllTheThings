@@ -1412,7 +1412,7 @@ app.L = {
 		[-5363] = "Interface\\Icons\\inv_misc_celebrationcake_01",							-- 14th Anniversary
 		[-5364] = "Interface\\Icons\\inv_misc_celebrationcake_01",							-- 15th Anniversary
 		[-5365] = "Interface\\Icons\\inv_misc_celebrationcake_01",							-- 16th Anniversary
-		--[-5366] = "Interface\\Icons\\inv_misc_celebrationcake_01",							-- 17th Anniversary
+		[-5366] = "Interface\\Icons\\inv_misc_celebrationcake_01",							-- 17th Anniversary
 		--
 		[-6013] = app.asset("Category_Factions"),											-- Faction
 		[-6014] = "Interface\\Icons\\Spell_Arcane_PortalUnderCity",							-- Cities
@@ -2164,7 +2164,7 @@ app.L = {
 		[-5363] = select(2,GetAchievementInfo(12827)),							-- 14th Anniversary
 		[-5364] = select(2,GetAchievementInfo(13917)),							-- 15th Anniversary
 		[-5365] = select(2,GetAchievementInfo(14271)),							-- 16th Anniversary
-		--[-5366] = select(2,GetAchievementInfo( )),							-- 17th Anniversary
+		[-5366] = select(2,GetAchievementInfo(14942)),							-- 17th Anniversary
 
 		[-6013] = FACTION,														-- Faction
 		[-6014] = BUG_CATEGORY4,												-- Cities
