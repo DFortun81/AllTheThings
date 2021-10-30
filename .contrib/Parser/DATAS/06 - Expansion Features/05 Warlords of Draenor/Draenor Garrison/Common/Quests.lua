@@ -556,6 +556,9 @@ _.ExpansionFeatures =
 						["coord"] = { 34.1, 32.6, LUNARFALL },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
+							i(123975, {	-- Greater Bounty Spoils
+								["sym"] = { { "fill" } },	-- simply fill this item
+							}),
 							q(39255, {	-- Amphitheater of the Eternal
 								["isWeekly"] = true,
 								["races"] = ALLIANCE_ONLY,
@@ -743,6 +746,9 @@ _.ExpansionFeatures =
 						["coord"] = { 40.2, 56.7, FROSTWALL },
 						["races"] = HORDE_ONLY,
 						["g"] = {
+							i(123975, {	-- Greater Bounty Spoils
+								["sym"] = { { "fill" } },	-- simply fill this item
+							}),
 							q(39227, {	-- Amphitheater of the Eternal
 								["isWeekly"] = true,
 								["races"] = HORDE_ONLY,
