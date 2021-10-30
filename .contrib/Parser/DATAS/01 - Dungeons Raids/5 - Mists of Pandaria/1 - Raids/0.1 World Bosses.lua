@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(MOP_TIER, {
-	n(-7, {	-- World Bosses
+	n(WORLD_BOSSES, {
 		["isRaid"] = true,
 		["lvl"] = 80,
 		["g"] = {

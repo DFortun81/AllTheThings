@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(SL_TIER, {
-	n(-7, {	-- World Bosses
+	n(WORLD_BOSSES, {
 		["isRaid"] = true,
 		["modID"] = 14,
 		["lvl"] = { 60 },

@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
-	n(-7, {	-- World Bosses
+	n(WORLD_BOSSES, {
 		["isRaid"] = true,
 		["groups"] = {
 			n(18728, {	-- Doom Lord Kazzak

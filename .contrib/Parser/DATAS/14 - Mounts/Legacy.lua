@@ -117,7 +117,7 @@ _.Mounts =
 			un(REMOVED_FROM_GAME, i(33809)),	-- Amani War Bear
 		})),
 		un(REMOVED_FROM_GAME, ach(9550, {	-- Boldly, You Sought the Power of Ragnaros
-			un(9, i(115484)),	-- Core Hound Chain
+			un(BLACK_MARKET, i(115484)),	-- Core Hound Chain
 		})),
 		i(142403, {			-- Brawler's Burly Basilisk
 			["u"] = REMOVED_FROM_GAME, -- unobtainable as of BFA prepatch

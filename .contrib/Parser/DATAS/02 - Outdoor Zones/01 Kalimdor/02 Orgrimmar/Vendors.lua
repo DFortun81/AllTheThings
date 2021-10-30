@@ -1335,6 +1335,19 @@ _.Zones =
 						}),
 					},
 				}),
+				n(110035, {	-- Historian Ju'pa
+					["u"] = WOW_ANNIVERSARY,
+					["coord"] = { 36.6, 74.6, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "headerID", FIFTEENTH_ANNIVERSARY },	-- Select WoW's 15th Anniversary
+						{"pop"},										-- Discard Header and aquire their children
+						{"where", "headerID", VENDORS },				-- Select Vendors
+						{"pop"},										-- Discard Header and aquire their children
+						{"where", "npcID", 158061},						-- Select Historian Ma'di
+						{"pop"},										-- Discard Header and aquire their children
+					},
+				}),
 				n(46556,  {	-- Jamus'Vaz <Valor Quartermaster>
 					["coord"] = { 48.6, 71.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
