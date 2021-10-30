@@ -1689,7 +1689,17 @@ namespace ATT
 
                             // Convert the input into something more usable.
                             var newcoord = new List<object>();
-                            foreach (var entry in newList) newcoord.Add(Convert.ToSingle(entry));
+                            try
+                            {
+                                foreach (var entry in newList) newcoord.Add(Convert.ToSingle(entry));
+                            }
+                            catch
+                            {
+                                Console.WriteLine("Ignoring 'coord' with improper format.");
+                                Console.WriteLine(MiniJSON.Json.Serialize(value));
+                                Console.ReadLine();
+                                return;
+                            }
 
                             // Attempt to get the old list data.
                             if (item.TryGetValue("coords", out object coordsRef) && coordsRef is List<object> coords)
