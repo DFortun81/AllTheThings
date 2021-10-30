@@ -9,12 +9,12 @@ _.ExpansionFeatures =
 			n(BUILDINGS, {
 				garrisonBuilding(138, {	-- Lumber Mill (rank 1: 40, rank 2: 41, rank 3: 138)
 					n(ACHIEVEMENTS, {
-						ach(9078, {	-- Choppin' Even More Logs (Alliance) (100)
-							title(259),		-- the Commandojack
-						}),
-						ach(9080, {	-- Choppin' Even More Logs (Horde) (100)
-							title(258),		-- Timber Lord
-						}),
+						a(ach(9078, {	-- Choppin' Even More Logs (Alliance) (100)
+							a(title(259)),		-- the Commandojack
+						})),
+						h(ach(9080, {	-- Choppin' Even More Logs (Horde) (100)
+							h(title(258)),		-- Timber Lord
+						})),
 						ach(9077, {		-- Choppin' Some More Logs (50)
 							title(257),		-- Lumberjack
 						}),
