@@ -21,7 +21,7 @@ _.ExpansionFeatures =
 						}),
 						n(QUESTS, {
 							q(36848, {	-- Ogre Waygates
-								["costs"] = { { "i", 117491, 25 } },	-- x25 Ogre Waystone
+								["cost"] = { { "i", 117491, 25 } },	-- x25 Ogre Waystone
 								["providers"] = {
 									{ "n", 77367 },	-- Archmage Kem (A)
 									{ "n", 79836 },	-- Gez'la (H)
