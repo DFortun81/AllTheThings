@@ -306,7 +306,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 						un(REMOVED_FROM_GAME, i(14632)),	-- Necropile Leggings
 						un(REMOVED_FROM_GAME, i(14633)),	-- Necropile Mantle
 						un(REMOVED_FROM_GAME, i(14626)),	-- Necropile Robe
-						un(9, i(14617)),	-- Sawbones Shirt
+						un(BLACK_MARKET, i(14617)),	-- Sawbones Shirt
 						un(REMOVED_FROM_GAME, i(18684)),	-- Dimly Opalescent Ring
 					}),
 					n(10901, {	-- Lorekeeper Polkelt

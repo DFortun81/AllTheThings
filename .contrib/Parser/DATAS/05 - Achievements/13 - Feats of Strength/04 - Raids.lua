@@ -61,7 +61,7 @@ _.Achievements =
 			ach(5839, {								-- Dragonwrath, Tarecgosa's Rest
 				["classes"] = { PRIEST, SHAMAN, MAGE, WARLOCK, MONK, DRUID },
 			}),
-			un(9, ach(11744)),						-- Drop Dead, Gorgeous
+			un(BLACK_MARKET, ach(11744)),						-- Drop Dead, Gorgeous
 			ach(6181, {								-- Fangs of the Father
 				["classes"] = { ROGUE },
 			}),

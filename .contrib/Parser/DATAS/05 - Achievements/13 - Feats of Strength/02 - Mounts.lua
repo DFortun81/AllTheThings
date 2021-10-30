@@ -97,9 +97,9 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(886, {	-- Swift Nether Drake
 				un(REMOVED_FROM_GAME, i(30609)),	-- Swift Nether Drake
 			})),
-			un(9, ach(881)),	-- Swift Razzashi Raptor
+			un(BLACK_MARKET, ach(881)),	-- Swift Razzashi Raptor
 			ach(884),			-- Swift White Hawkstrider
-			un(9, ach(880)),	-- Swift Zulian Tiger
+			un(BLACK_MARKET, ach(880)),	-- Swift Zulian Tiger
 			un(HALLOWS_END, ach(980)),	-- The Horseman's Reins
 			un(REMOVED_FROM_GAME, ach(8678, {	-- Tyrannical Gladiator's Cloud Serpent
 				un(REMOVED_FROM_GAME, i(104325)),	-- Tyrannical Gladiator's Cloud Serpent

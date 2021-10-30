@@ -296,7 +296,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22418)),	-- Dreadnaught Helmet
+									un(BLACK_MARKET, i(22418)),	-- Dreadnaught Helmet
 								},
 							},
 							{
@@ -306,7 +306,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22419)),	-- Dreadnaught Pauldrons
+									un(BLACK_MARKET, i(22419)),	-- Dreadnaught Pauldrons
 								},
 							},
 							{
@@ -316,7 +316,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22416)),	-- Dreadnaught Breastplate
+									un(BLACK_MARKET, i(22416)),	-- Dreadnaught Breastplate
 								},
 							},
 							{
@@ -326,7 +326,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22423)),	-- Dreadnaught Bracers
+									un(BLACK_MARKET, i(22423)),	-- Dreadnaught Bracers
 								},
 							},
 							{
@@ -336,7 +336,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22421)),	-- Dreadnaught Gauntlets
+									un(BLACK_MARKET, i(22421)),	-- Dreadnaught Gauntlets
 								},
 							},
 							{
@@ -346,7 +346,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22422)),	-- Dreadnaught Waistguard
+									un(BLACK_MARKET, i(22422)),	-- Dreadnaught Waistguard
 								},
 							},
 							{
@@ -356,7 +356,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22417)),	-- Dreadnaught Legplates
+									un(BLACK_MARKET, i(22417)),	-- Dreadnaught Legplates
 								},
 							},
 							{
@@ -366,7 +366,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22420)),	-- Dreadnaught Sabatons
+									un(BLACK_MARKET, i(22420)),	-- Dreadnaught Sabatons
 								},
 							},
 						}),
@@ -378,7 +378,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16115 },	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22428)),	-- Redemption Headpiece
+									un(BLACK_MARKET, i(22428)),	-- Redemption Headpiece
 								},
 							},
 							{
@@ -388,7 +388,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16115 },	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22429)),	-- Redemption Spaulders
+									un(BLACK_MARKET, i(22429)),	-- Redemption Spaulders
 								},
 							},
 							{
@@ -398,7 +398,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16115 },	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22424)),	-- Redemption Wristguards
+									un(BLACK_MARKET, i(22424)),	-- Redemption Wristguards
 								},
 							},
 							{
@@ -408,7 +408,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16115 },	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22426)),	-- Redemption Handguards
+									un(BLACK_MARKET, i(22426)),	-- Redemption Handguards
 								},
 							},
 							{
@@ -418,7 +418,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16115 },	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22425)),	-- Redemption Tunic
+									un(BLACK_MARKET, i(22425)),	-- Redemption Tunic
 								},
 							},
 							{
@@ -428,7 +428,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16115 },	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22431)),	-- Redemption Girdle
+									un(BLACK_MARKET, i(22431)),	-- Redemption Girdle
 								},
 							},
 							{
@@ -438,7 +438,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16115 },	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22427)),	-- Redemption Legguards
+									un(BLACK_MARKET, i(22427)),	-- Redemption Legguards
 								},
 							},
 							{
@@ -448,7 +448,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16115 },	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22430)),	-- Redemption Boots
+									un(BLACK_MARKET, i(22430)),	-- Redemption Boots
 								},
 							},
 						}),
@@ -460,7 +460,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16132 },	-- Huntsman Leopold <The Scarlet Crusade>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22438)),	-- Cryptstalker Headpiece
+									un(BLACK_MARKET, i(22438)),	-- Cryptstalker Headpiece
 								},
 							},
 							{
@@ -470,7 +470,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16132 },	-- Huntsman Leopold <The Scarlet Crusade>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22439)),	-- Cryptstalker Spaulders
+									un(BLACK_MARKET, i(22439)),	-- Cryptstalker Spaulders
 								},
 							},
 							{
@@ -480,7 +480,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16132 },	-- Huntsman Leopold <The Scarlet Crusade>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22436)),	-- Cryptstalker Tunic
+									un(BLACK_MARKET, i(22436)),	-- Cryptstalker Tunic
 								},
 							},
 							{
@@ -490,7 +490,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16132 },	-- Huntsman Leopold <The Scarlet Crusade>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22443)),	-- Cryptstalker Wristguards
+									un(BLACK_MARKET, i(22443)),	-- Cryptstalker Wristguards
 								},
 							},
 							{
@@ -500,7 +500,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16132 },	-- Huntsman Leopold <The Scarlet Crusade>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22441)),	-- Cryptstalker Handguards
+									un(BLACK_MARKET, i(22441)),	-- Cryptstalker Handguards
 								},
 							},
 							{
@@ -510,7 +510,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16132 },	-- Huntsman Leopold <The Scarlet Crusade>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22442)),	-- Cryptstalker Girdle
+									un(BLACK_MARKET, i(22442)),	-- Cryptstalker Girdle
 								},
 							},
 							{
@@ -520,7 +520,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16132 },	-- Huntsman Leopold <The Scarlet Crusade>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22437)),	-- Cryptstalker Legguards
+									un(BLACK_MARKET, i(22437)),	-- Cryptstalker Legguards
 								},
 							},
 							{
@@ -530,7 +530,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16132 },	-- Huntsman Leopold <The Scarlet Crusade>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22440)),	-- Cryptstalker Boots
+									un(BLACK_MARKET, i(22440)),	-- Cryptstalker Boots
 								},
 							},
 						}),
@@ -542,7 +542,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16131 },	-- Rohan the Assassin <The Scarlet Crusade>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22478)),	-- Bonescythe Helmet
+									un(BLACK_MARKET, i(22478)),	-- Bonescythe Helmet
 								},
 							},
 							{
@@ -552,7 +552,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16131 },	-- Rohan the Assassin <The Scarlet Crusade>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22479)),	-- Bonescythe Pauldrons
+									un(BLACK_MARKET, i(22479)),	-- Bonescythe Pauldrons
 								},
 							},
 							{
@@ -562,7 +562,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16131 },	-- Rohan the Assassin <The Scarlet Crusade>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22476)),	-- Bonescythe Breastplate
+									un(BLACK_MARKET, i(22476)),	-- Bonescythe Breastplate
 								},
 							},
 							{
@@ -572,7 +572,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16131 },	-- Rohan the Assassin <The Scarlet Crusade>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22483)),	-- Bonescythe Bracers
+									un(BLACK_MARKET, i(22483)),	-- Bonescythe Bracers
 								},
 							},
 							{
@@ -582,7 +582,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16131 },	-- Rohan the Assassin <The Scarlet Crusade>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22481)),	-- Bonescythe Gauntlets
+									un(BLACK_MARKET, i(22481)),	-- Bonescythe Gauntlets
 								},
 							},
 							{
@@ -592,7 +592,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16131 },	-- Rohan the Assassin <The Scarlet Crusade>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22482)),	-- Bonescythe Waistguard
+									un(BLACK_MARKET, i(22482)),	-- Bonescythe Waistguard
 								},
 							},
 							{
@@ -602,7 +602,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16131 },	-- Rohan the Assassin <The Scarlet Crusade>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22477)),	-- Bonescythe Legplates
+									un(BLACK_MARKET, i(22477)),	-- Bonescythe Legplates
 								},
 							},
 							{
@@ -612,7 +612,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16131 },	-- Rohan the Assassin <The Scarlet Crusade>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22480)),	-- Bonescythe Sabatons
+									un(BLACK_MARKET, i(22480)),	-- Bonescythe Sabatons
 								},
 							},
 						}),
@@ -624,7 +624,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16113 },	-- Father Inigo Montoy <Brotherhood of the Light>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22514)),	-- Circlet of Faith
+									un(BLACK_MARKET, i(22514)),	-- Circlet of Faith
 								},
 							},
 							{
@@ -634,7 +634,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16113 },	-- Father Inigo Montoy <Brotherhood of the Light>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22515)),	-- Shoulderpads of Faith
+									un(BLACK_MARKET, i(22515)),	-- Shoulderpads of Faith
 								},
 							},
 							{
@@ -644,7 +644,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16113 },	-- Father Inigo Montoy <Brotherhood of the Light>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22512)),	-- Robe of Faith
+									un(BLACK_MARKET, i(22512)),	-- Robe of Faith
 								},
 							},
 							{
@@ -654,7 +654,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16113 },	-- Father Inigo Montoy <Brotherhood of the Light>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22519)),	-- Bindings of Faith
+									un(BLACK_MARKET, i(22519)),	-- Bindings of Faith
 								},
 							},
 							{
@@ -664,7 +664,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16113 },	-- Father Inigo Montoy <Brotherhood of the Light>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22517)),	-- Gloves of Faith
+									un(BLACK_MARKET, i(22517)),	-- Gloves of Faith
 								},
 							},
 							{
@@ -674,7 +674,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16113 },	-- Father Inigo Montoy <Brotherhood of the Light>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22518)),	-- Belt of Faith
+									un(BLACK_MARKET, i(22518)),	-- Belt of Faith
 								},
 							},
 							{
@@ -684,7 +684,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16113 },	-- Father Inigo Montoy <Brotherhood of the Light>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22513)),	-- Leggings of Faith
+									un(BLACK_MARKET, i(22513)),	-- Leggings of Faith
 								},
 							},
 							{
@@ -694,7 +694,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16113 },	-- Father Inigo Montoy <Brotherhood of the Light>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22516)),	-- Sandals of Faith
+									un(BLACK_MARKET, i(22516)),	-- Sandals of Faith
 								},
 							},
 						}),
@@ -706,7 +706,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16134 },	-- Rimblat Earthshatter <The Earthen Ring>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22466)),	-- Earthshatter Headpiece
+									un(BLACK_MARKET, i(22466)),	-- Earthshatter Headpiece
 								},
 							},
 							{
@@ -716,7 +716,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16134 },	-- Rimblat Earthshatter <The Earthen Ring>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22467)),	-- Earthshatter Spaulders
+									un(BLACK_MARKET, i(22467)),	-- Earthshatter Spaulders
 								},
 							},
 							{
@@ -726,7 +726,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16134 },	-- Rimblat Earthshatter <The Earthen Ring>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22464)),	-- Earthshatter Tunic
+									un(BLACK_MARKET, i(22464)),	-- Earthshatter Tunic
 								},
 							},
 							{
@@ -736,7 +736,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16134 },	-- Rimblat Earthshatter <The Earthen Ring>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22471)),	-- Earthshatter Wristguards
+									un(BLACK_MARKET, i(22471)),	-- Earthshatter Wristguards
 								},
 							},
 							{
@@ -746,7 +746,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16134 },	-- Rimblat Earthshatter <The Earthen Ring>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22469)),	-- Earthshatter Handguards
+									un(BLACK_MARKET, i(22469)),	-- Earthshatter Handguards
 								},
 							},
 							{
@@ -756,7 +756,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16134 },	-- Rimblat Earthshatter <The Earthen Ring>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22470)),	-- Earthshatter Girdle
+									un(BLACK_MARKET, i(22470)),	-- Earthshatter Girdle
 								},
 							},
 							{
@@ -766,7 +766,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16134 },	-- Rimblat Earthshatter <The Earthen Ring>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22465)),	-- Earthshatter Legguards
+									un(BLACK_MARKET, i(22465)),	-- Earthshatter Legguards
 								},
 							},
 							{
@@ -776,7 +776,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16134 },	-- Rimblat Earthshatter <The Earthen Ring>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22468)),	-- Earthshatter Boots
+									un(BLACK_MARKET, i(22468)),	-- Earthshatter Boots
 								},
 							},
 						}),
@@ -788,7 +788,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos <Brotherhood of the Light>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22498)),	-- Frostfire Circlet
+									un(BLACK_MARKET, i(22498)),	-- Frostfire Circlet
 								},
 							},
 							{
@@ -798,7 +798,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos <Brotherhood of the Light>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22499)),	-- Frostfire Shoulderpads
+									un(BLACK_MARKET, i(22499)),	-- Frostfire Shoulderpads
 								},
 							},
 							{
@@ -808,7 +808,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos <Brotherhood of the Light>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22496)),	-- Frostfire Robe
+									un(BLACK_MARKET, i(22496)),	-- Frostfire Robe
 								},
 							},
 							{
@@ -818,7 +818,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos <Brotherhood of the Light>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22503)),	-- Frostfire Bindings
+									un(BLACK_MARKET, i(22503)),	-- Frostfire Bindings
 								},
 							},
 							{
@@ -828,7 +828,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos <Brotherhood of the Light>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22501)),	-- Frostfire Gloves
+									un(BLACK_MARKET, i(22501)),	-- Frostfire Gloves
 								},
 							},
 							{
@@ -838,7 +838,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos <Brotherhood of the Light>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22502)),	-- Frostfire Belt
+									un(BLACK_MARKET, i(22502)),	-- Frostfire Belt
 								},
 							},
 							{
@@ -848,7 +848,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos <Brotherhood of the Light>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22497)),	-- Frostfire Leggings
+									un(BLACK_MARKET, i(22497)),	-- Frostfire Leggings
 								},
 							},
 							{
@@ -858,7 +858,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos <Brotherhood of the Light>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22500)),	-- Frostfire Sandals
+									un(BLACK_MARKET, i(22500)),	-- Frostfire Sandals
 								},
 							},
 						}),
@@ -870,7 +870,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16133 },	-- Mataus the Wrathcaster <The Scarlet Crusade>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22506)),	-- Plagueheart Circlet
+									un(BLACK_MARKET, i(22506)),	-- Plagueheart Circlet
 								},
 							},
 							{
@@ -880,7 +880,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16133 },	-- Mataus the Wrathcaster <The Scarlet Crusade>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22507)),	-- Plagueheart Shoulderpads
+									un(BLACK_MARKET, i(22507)),	-- Plagueheart Shoulderpads
 								},
 							},
 							{
@@ -890,7 +890,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16133 },	-- Mataus the Wrathcaster <The Scarlet Crusade>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22504)),	-- Plagueheart Robe
+									un(BLACK_MARKET, i(22504)),	-- Plagueheart Robe
 								},
 							},
 							{
@@ -900,7 +900,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16133 },	-- Mataus the Wrathcaster <The Scarlet Crusade>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22511)),	-- Plagueheart Bindings
+									un(BLACK_MARKET, i(22511)),	-- Plagueheart Bindings
 								},
 							},
 							{
@@ -910,7 +910,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16133 },	-- Mataus the Wrathcaster <The Scarlet Crusade>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22509)),	-- Plagueheart Gloves
+									un(BLACK_MARKET, i(22509)),	-- Plagueheart Gloves
 								},
 							},
 							{
@@ -920,7 +920,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16133 },	-- Mataus the Wrathcaster <The Scarlet Crusade>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22510)),	-- Plagueheart Belt
+									un(BLACK_MARKET, i(22510)),	-- Plagueheart Belt
 								},
 							},
 							{
@@ -930,7 +930,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16133 },	-- Mataus the Wrathcaster <The Scarlet Crusade>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22505)),	-- Plagueheart Leggings
+									un(BLACK_MARKET, i(22505)),	-- Plagueheart Leggings
 								},
 							},
 							{
@@ -940,7 +940,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16133 },	-- Mataus the Wrathcaster <The Scarlet Crusade>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22508)),	-- Plagueheart Sandals
+									un(BLACK_MARKET, i(22508)),	-- Plagueheart Sandals
 								},
 							},
 						}),
@@ -952,7 +952,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16135 },	-- Rayne <Cenarion Circle>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22490)),	-- Dreamwalker Headpiece
+									un(BLACK_MARKET, i(22490)),	-- Dreamwalker Headpiece
 								},
 							},
 							{
@@ -962,7 +962,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16135 },	-- Rayne <Cenarion Circle>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22491)),	-- Dreamwalker Spaulders
+									un(BLACK_MARKET, i(22491)),	-- Dreamwalker Spaulders
 								},
 							},
 							{
@@ -972,7 +972,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16135 },	-- Rayne <Cenarion Circle>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22488)),	-- Dreamwalker Tunic
+									un(BLACK_MARKET, i(22488)),	-- Dreamwalker Tunic
 								},
 							},
 							{
@@ -982,7 +982,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16135 },	-- Rayne <Cenarion Circle>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22495)),	-- Dreamwalker Wristguards
+									un(BLACK_MARKET, i(22495)),	-- Dreamwalker Wristguards
 								},
 							},
 							{
@@ -992,7 +992,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16135 },	-- Rayne <Cenarion Circle>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22493)),	-- Dreamwalker Handguards
+									un(BLACK_MARKET, i(22493)),	-- Dreamwalker Handguards
 								},
 							},
 							{
@@ -1002,7 +1002,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16135 },	-- Rayne <Cenarion Circle>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22494)),	-- Dreamwalker Girdle
+									un(BLACK_MARKET, i(22494)),	-- Dreamwalker Girdle
 								},
 							},
 							{
@@ -1012,7 +1012,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16135 },	-- Rayne <Cenarion Circle>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22489)),	-- Dreamwalker Legguards
+									un(BLACK_MARKET, i(22489)),	-- Dreamwalker Legguards
 								},
 							},
 							{
@@ -1022,7 +1022,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["provider"] = { "n", 16135 },	-- Rayne <Cenarion Circle>
 								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(9, i(22492)),	-- Dreamwalker Boots
+									un(BLACK_MARKET, i(22492)),	-- Dreamwalker Boots
 								},
 							},
 						}),
