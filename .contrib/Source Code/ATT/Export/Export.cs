@@ -56,10 +56,10 @@ namespace ATT
             ObjectData.Create("titleID",            "title",        "_.CreateTitle", "f");
             ObjectData.Create("currencyID",         "cu",           "_.CreateCurrencyClass", "f");
             ObjectData.Create<ItemData>("itemID",   "i",            "_.CreateItem");
-            ObjectData.Create<SpellData>("spellID", "sp",           "_.CreateSpell");
             ObjectData.Create("factionID",          "faction",      "_.CreateFaction", "f");
-            ObjectData.Create<QuestData>("questID", "q",            "_.CreateQuest", "f");
             ObjectData.Create("achID",              "ach",          "_.CreateAchievement", "f", "modID");
+            ObjectData.Create<SpellData>("spellID", "sp",           "_.CreateSpell");
+            ObjectData.Create<QuestData>("questID", "q",            "_.CreateQuest", "f");
             ObjectData.Create("tierID",             "t",            "_.CreateTier", "f");
             ObjectData.Create("professionID",       "prof",         "_.CreateProfession", "requireSkill", "modID");
             ObjectData.Create("vignetteID",         "v",            "_.CreateVignette", "f");
