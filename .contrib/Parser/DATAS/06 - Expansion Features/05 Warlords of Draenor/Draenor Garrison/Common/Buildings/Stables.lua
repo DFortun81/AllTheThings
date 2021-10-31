@@ -10,7 +10,7 @@ _.ExpansionFeatures =
 				garrisonBuilding(67,  {	-- Stables (rank 1: 65, rank 2: 66, rank 3: 67)
 					n(ACHIEVEMENTS, {	-- Achievements
 						-- TODO: add sourceQuests to the criteria, or use _quests ?
-						ach(9539, {	-- Advanced Husbandry (Alliance)
+						a(ach(9539, {	-- Advanced Husbandry (Alliance)
 							i(116668),		-- Armored Frostboar
 							crit(1),		-- Maimclaw Killed
 							crit(2),		-- Beast-Lasher Killed
@@ -18,8 +18,8 @@ _.ExpansionFeatures =
 							crit(4),		-- Thundercall Killed
 							crit(5),		-- Ironbore Killed
 							crit(6),		-- Karak Killed
-						}),
-						ach(9705, {	-- Advanced Husbandry (Horde)
+						})),
+						h(ach(9705, {	-- Advanced Husbandry (Horde)
 							i(116668),		-- Armored Frostboar
 							crit(1),		-- Maimclaw Killed
 							crit(2),		-- Beast-Lasher Killed
@@ -27,7 +27,7 @@ _.ExpansionFeatures =
 							crit(4),		-- Thundercall Killed
 							crit(5),		-- Ironbore Killed
 							crit(6),		-- Karak Killed
-						}),
+						})),
 						ach(9526, {	-- Master of Mounts
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 							["g"] = {
@@ -48,7 +48,7 @@ _.ExpansionFeatures =
 								}),
 							},
 						}),
-						ach(9540, {	-- The Stable Master (Alliance)
+						a(ach(9540, {	-- The Stable Master (Alliance)
 							i(116781),		-- Armored Frostwolf
 							title(277),		-- Stable Master
 							crit(1),		-- Maimclaw Killed
@@ -57,8 +57,8 @@ _.ExpansionFeatures =
 							crit(4),		-- Thundercall Killed
 							crit(5),		-- Ironbore Killed
 							crit(6),		-- Karak Killed
-						}),
-						ach(9706, {	-- The Stable Master (Horde)
+						})),
+						h(ach(9706, {	-- The Stable Master (Horde)
 							i(116781),		-- Armored Frostwolf
 							title(277),		-- Stable Master
 							crit(1),		-- Maimclaw Killed
@@ -67,7 +67,7 @@ _.ExpansionFeatures =
 							crit(4),		-- Thundercall Killed
 							crit(5),		-- Ironbore Killed
 							crit(6),		-- Karak Killed
-						}),
+						})),
 					}),
 					n(QUESTS, sharedData({ ["_drop"] = { "isDaily" } },{
 						-- Alliance
