@@ -579,6 +579,7 @@ app.L = {
 	["EXPANSION_ID"] = "Expansion ID";
 	["FILTER_ID"] = "Filter ID";
 	["FOLLOWER_ID"] = "Follower ID";
+	["ILLUSION_ID"] = "Illusion ID";
 	["INSTANCE_ID"] = "Instance ID";
 	["ITEM_ID"] = "Item ID";
 	["FACTION_ID"] = "Faction ID";
@@ -595,7 +596,6 @@ app.L = {
 	["SPELL_ID"] = "Spell ID";
 	["TITLE_ID"] = "Title ID";
 	["TOY_ID"] = "Toy ID";
-	["ILLUSION_ID"] = "Illusion ID";
 	["VISUAL_ID"] = "Visual ID";
 	["iLvl"] = "iLvl";
 
