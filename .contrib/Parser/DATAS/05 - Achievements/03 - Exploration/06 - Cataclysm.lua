@@ -5,7 +5,7 @@
 _.Achievements =
 {
 	n(-9957, {	-- Exploration
-		n(-9979, {	-- Cataclysm
+		n(CATA_HEADER, {
 			ach(5753, {	-- Cataclysmically Delicious
 				crit(1),	-- Baked Rockfish
 				crit(2),	-- Basilisk Liverdog

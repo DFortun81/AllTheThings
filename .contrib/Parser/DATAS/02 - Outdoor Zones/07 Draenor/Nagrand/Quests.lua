@@ -1508,7 +1508,7 @@ _.HiddenQuestTriggers = {
 	q(36906),	-- Ogre Waygate
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-9981, {	-- Draenor
+	n(WOD_HEADER, {
 		n(QUESTS, {
 			q(38204),	-- Assault on the Gorian Proving Grounds (A)
 			q(38205),	-- Assault on the Gorian Proving Grounds (H)

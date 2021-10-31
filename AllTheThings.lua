@@ -15234,7 +15234,7 @@ function app:GetDataCache()
 
 		-- Black Market
 		if app.Categories.BlackMarket then
-			db = {};
+			db = app.CreateNPC(-94);
 			db.g = app.Categories.BlackMarket;
 			db.expanded = false;
 			db.text = BLACK_MARKET_AUCTION_HOUSE;

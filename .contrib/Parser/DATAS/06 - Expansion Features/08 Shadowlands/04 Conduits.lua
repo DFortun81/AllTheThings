@@ -322,7 +322,7 @@ _.ExpansionFeatures =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-10100, {	-- Shadowlands
+	n(SL_HEADER, {
 		n(CONDUITS, {
 			i(179000),	-- [PH] Potency Conduit - Death Knight - Blood - Potency Trait 1
 			i(179027),	-- [PH] Potency Conduit - Death Knight - Blood - Potency Trait 2

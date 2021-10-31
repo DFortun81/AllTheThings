@@ -2356,7 +2356,7 @@ _.ExpansionFeatures =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-9982, {	-- Legion
+	n(LEGION_HEADER, {
 		n(-10067, {	-- Artifacts
 			n(WEAPONS, {
 				i(137661),	-- Truthguard

@@ -13,7 +13,7 @@ TODO:
 _.Achievements =
 {
 	n(-9961, {	-- Reputation
-		n(-9979, {	-- Cataclysm
+		n(CATA_HEADER, {
 			ach(5827, {	-- Avengers of Hyjal
 				title(188),	-- <Name>, Avenger of Hyjal
 			}),

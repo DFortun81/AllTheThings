@@ -785,8 +785,3 @@ _.HiddenQuestTriggers = {
 	-- q(64439),	-- Carriage Crusher / Traitor Balthier
 	q(64701),	-- Stolen Anima Supplies 2nd trigger ?
 };
-
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-10100, {	-- Shadowlands
-	}),
-});

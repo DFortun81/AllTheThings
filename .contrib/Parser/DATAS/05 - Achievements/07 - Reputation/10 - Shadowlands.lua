@@ -5,7 +5,7 @@
 _.Achievements =
 {
 	n(-9961, {	-- Reputation
-		n(-10100, {	-- Shadowlands
+		n(SL_HEADER, {
 			ach(15059),		-- Death's Advance
 			ach(14315, {	-- Shadowlands Diplomat
 				ach(14335),	-- The Ascended

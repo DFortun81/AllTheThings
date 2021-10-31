@@ -104,7 +104,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(-9981, {	-- Draenor
+				n(WOD_HEADER, {
 					["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 					["g"] = {
 						q(53590, {	-- Elemental Plateau

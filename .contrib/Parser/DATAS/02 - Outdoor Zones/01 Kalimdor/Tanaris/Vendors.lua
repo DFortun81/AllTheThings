@@ -143,7 +143,7 @@ _.Zones =
 							i(146641, {	--  Arsenal: Vicious Gladiator's Weapons
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_weapons_ensemble", -9979, -672, PVP_GLADIATOR },
+									{"sub", "pvp_weapons_ensemble", CATA_HEADER, -672, PVP_GLADIATOR },
 									{"exclude", "itemID", 146641 },	-- Exclude itself to stop duplicating
 								},
 							}),
@@ -245,7 +245,7 @@ _.Zones =
 							i(146523, {	-- Ensemble: Vicious Gladiator's Dreadplate Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -672, PVP_GLADIATOR, 6 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -672, PVP_GLADIATOR, 6 },
 									{"select", "itemID", 60523 },	-- Vicious Gladiator's Armplates of Proficiency
 									{"select", "itemID", 60508 },	-- Vicious Gladiator's Girdle of Cruelty
 									{"select", "itemID", 60509 },	-- Vicious Gladiator's Warboots of Cruelty
@@ -272,7 +272,7 @@ _.Zones =
 							i(146521, {	-- Ensemble: Vicious Gladiator's Dragonhide Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -672, PVP_GLADIATOR, 11 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -672, PVP_GLADIATOR, 11 },
 									{"select", "itemID", 60582 },	-- Vicious Gladiator's Bindings of Meditation
 									{"select", "itemID", 60611 },	-- Vicious Gladiator's Bindings of Prowess
 									{"select", "itemID", 60583 },	-- Vicious Gladiator's Belt of Cruelty
@@ -332,7 +332,7 @@ _.Zones =
 							i(146519, {	-- Ensemble: Vicious Gladiator's Chain Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -672, PVP_GLADIATOR, 3 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -672, PVP_GLADIATOR, 3 },
 									{"select", "itemID", 60565 },	-- Vicious Gladiator's Wristguards of Accuracy
 									{"select", "itemID", 60559 },	-- Vicious Gladiator's Wristguards of Alacrity
 									{"select", "itemID", 60564 },	-- Vicious Gladiator's Links of Accuracy
@@ -362,7 +362,7 @@ _.Zones =
 							i(146537, {	-- Ensemble: Vicious Gladiator's Silk Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -672, PVP_GLADIATOR, 8 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -672, PVP_GLADIATOR, 8 },
 									{"select", "itemID", 60628 },	-- Vicious Gladiator's Cuffs of Accuracy
 									{"select", "itemID", 60612 },	-- Vicious Gladiator's Cord of Cruelty
 									{"select", "itemID", 60613 },	-- Vicious Gladiator's Treads of Cruelty
@@ -389,7 +389,7 @@ _.Zones =
 							i(146535, {	-- Ensemble: Vicious Gladiator's Scaled Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -672, PVP_GLADIATOR, 2 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -672, PVP_GLADIATOR, 2 },
 									{"select", "itemID", 60541 },	-- Vicious Gladiator's Bracers of Meditation
 									{"select", "itemID", 60520 },	-- Vicious Gladiator's Bracers of Prowess
 									{"select", "itemID", 60505 },	-- Vicious Gladiator's Clasp of Cruelty
@@ -434,7 +434,7 @@ _.Zones =
 							i(146533, {	-- Ensemble: Vicious Gladiator's Satin Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -672, PVP_GLADIATOR, 5 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -672, PVP_GLADIATOR, 5 },
 									{"select", "itemID", 60635 },	-- Vicious Gladiator's Cuffs of Meditation
 									{"select", "itemID", 60637 },	-- Vicious Gladiator's Cord of Meditation
 									{"select", "itemID", 60636 },	-- Vicious Gladiator's Treads of Meditation
@@ -476,7 +476,7 @@ _.Zones =
 							i(146527, {	-- Ensemble: Vicious Gladiator's Leather Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -672, PVP_GLADIATOR, 4 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -672, PVP_GLADIATOR, 4 },
 									{"select", "itemID", 60591 },	-- Vicious Gladiator's Armwraps of Accuracy
 									{"select", "itemID", 60594 },	-- Vicious Gladiator's Armwraps of Alacrity
 									{"select", "itemID", 60589 },	-- Vicious Gladiator's Waistband of Accuracy
@@ -506,7 +506,7 @@ _.Zones =
 							i(146531, {	-- Ensemble: Vicious Gladiator's Ringmail Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -672, PVP_GLADIATOR, 7 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -672, PVP_GLADIATOR, 7 },
 									{"select", "itemID", 60535 },	-- Vicious Gladiator's Armbands of Meditation
 									{"select", "itemID", 60569 },	-- Vicious Gladiator's Armbands of Prowess
 									{"select", "itemID", 60536 },	-- Vicious Gladiator's Waistguard of Cruelty
@@ -566,7 +566,7 @@ _.Zones =
 							i(146525, {	-- Ensemble: Vicious Gladiator's Felweave Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -672, PVP_GLADIATOR, 9 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -672, PVP_GLADIATOR, 9 },
 									{"select", "itemID", 60634 },	-- Vicious Gladiator's Cuffs of Prowess
 									{"select", "itemID", 60626 },	-- Vicious Gladiator's Cord of Accuracy
 									{"select", "itemID", 60630 },	-- Vicious Gladiator's Treads of Alacrity
@@ -593,7 +593,7 @@ _.Zones =
 							i(146529, {	-- Ensemble: Vicious Gladiator's Plate Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -672, PVP_GLADIATOR, 1 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -672, PVP_GLADIATOR, 1 },
 									{"select", "itemID", 60512 },	-- Vicious Gladiator's Armplates of Alacrity
 									{"select", "itemID", 60521 },	-- Vicious Gladiator's Girdle of Prowess
 									{"select", "itemID", 60513 },	-- Vicious Gladiator's Warboots of Alacrity
@@ -798,7 +798,7 @@ _.Zones =
 							i(146639, {	-- Arsenal: Cataclysmic Gladiator's Weapons
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_weapons_ensemble", -9979, -674, PVP_GLADIATOR },
+									{"sub", "pvp_weapons_ensemble", CATA_HEADER, -674, PVP_GLADIATOR },
 									{"exclude", "itemID", 146639 },	-- Exclude itself to stop duplicating
 								},
 							}),
@@ -900,7 +900,7 @@ _.Zones =
 							i(146443, {	-- Ensemble: Cataclysmic Gladiator's Dreadplate Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -674, PVP_GLADIATOR, 6 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -674, PVP_GLADIATOR, 6 },
 									{"select", "itemID", 73551 },	-- Cataclysmic Gladiator's Armplates of Proficiency
 									{"select", "itemID", 73555 },	-- Cataclysmic Gladiator's Girdle of Cruelty
 									{"select", "itemID", 73553 },	-- Cataclysmic Gladiator's Warboots of Cruelty
@@ -927,7 +927,7 @@ _.Zones =
 							i(146441, {	-- Ensemble: Cataclysmic Gladiator's Dragonhide Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -674, PVP_GLADIATOR, 11 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -674, PVP_GLADIATOR, 11 },
 									{"select", "itemID", 73608 },	-- Cataclysmic Gladiator's Bindings of Meditation
 									{"select", "itemID", 73600 },	-- Cataclysmic Gladiator's Bindings of Prowess
 									{"select", "itemID", 73602 },	-- Cataclysmic Gladiator's Belt of Cruelty
@@ -987,7 +987,7 @@ _.Zones =
 							i(146439, {	-- Ensemble: Cataclysmic Gladiator's Chain Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -674, PVP_GLADIATOR, 3 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -674, PVP_GLADIATOR, 3 },
 									{"select", "itemID", 73585 },	-- Cataclysmic Gladiator's Wristguards of Accuracy
 									{"select", "itemID", 73586 },	-- Cataclysmic Gladiator's Wristguards of Alacrity
 									{"select", "itemID", 73589 },	-- Cataclysmic Gladiator's Links of Accuracy
@@ -1017,7 +1017,7 @@ _.Zones =
 							i(146457, {	-- Ensemble: Cataclysmic Gladiator's Silk Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -674, PVP_GLADIATOR, 8 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -674, PVP_GLADIATOR, 8 },
 									{"select", "itemID", 73632 },	-- Cataclysmic Gladiator's Cuffs of Prowess
 									{"select", "itemID", 73639 },	-- Cataclysmic Gladiator's Cord of Cruelty
 									{"select", "itemID", 73636 },	-- Cataclysmic Gladiator's Treads of Cruelty
@@ -1044,7 +1044,7 @@ _.Zones =
 							i(146455, {	-- Ensemble: Cataclysmic Gladiator's Scaled Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -674, PVP_GLADIATOR, 2 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -674, PVP_GLADIATOR, 2 },
 									{"select", "itemID", 73561 },	-- Cataclysmic Gladiator's Bracers of Meditation
 									{"select", "itemID", 73562 },	-- Cataclysmic Gladiator's Bracers of Prowess
 									{"select", "itemID", 73566 },	-- Cataclysmic Gladiator's Clasp of Cruelty
@@ -1092,7 +1092,7 @@ _.Zones =
 							i(146453, {	-- Ensemble: Cataclysmic Gladiator's Satin Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -674, PVP_GLADIATOR, 5 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -674, PVP_GLADIATOR, 5 },
 									{"select", "itemID", 73631 },	-- Cataclysmic Gladiator's Cuffs of Meditation
 									{"select", "itemID", 73637 },	-- Cataclysmic Gladiator's Cord of Meditation
 									{"select", "itemID", 73634 },	-- Cataclysmic Gladiator's Treads of Meditation
@@ -1134,7 +1134,7 @@ _.Zones =
 							i(146447, {	-- Ensemble: Cataclysmic Gladiator's Leather Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -674, PVP_GLADIATOR, 4 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -674, PVP_GLADIATOR, 4 },
 									{"select", "itemID", 73528 },	-- Cataclysmic Gladiator's Armwraps of Accuracy
 									{"select", "itemID", 73529 },	-- Cataclysmic Gladiator's Armwraps of Alacrity
 									{"select", "itemID", 73532 },	-- Cataclysmic Gladiator's Waistband of Accuracy
@@ -1164,7 +1164,7 @@ _.Zones =
 							i(146451, {	-- Ensemble: Cataclysmic Gladiator's Ringmail Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -674, PVP_GLADIATOR, 7 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -674, PVP_GLADIATOR, 7 },
 									{"select", "itemID", 73518 },	-- Cataclysmic Gladiator's Armbands of Meditation
 									{"select", "itemID", 73519 },	-- Cataclysmic Gladiator's Armbands of Prowess
 									{"select", "itemID", 73507 },	-- Cataclysmic Gladiator's Waistguard of Cruelty
@@ -1224,7 +1224,7 @@ _.Zones =
 							i(146445, {	-- Ensemble: Cataclysmic Gladiator's Felweave Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -674, PVP_GLADIATOR, 9 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -674, PVP_GLADIATOR, 9 },
 									{"select", "itemID", 73633 },	-- Cataclysmic Gladiator's Cuffs of Accuracy
 									{"select", "itemID", 73638 },	-- Cataclysmic Gladiator's Cord of Accuracy
 									{"select", "itemID", 73635 },	-- Cataclysmic Gladiator's Treads of Alacrity
@@ -1251,7 +1251,7 @@ _.Zones =
 							i(146449, {	-- Ensemble: Cataclysmic Gladiator's Plate Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -674, PVP_GLADIATOR, 1 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -674, PVP_GLADIATOR, 1 },
 									{"select", "itemID", 73550 },	-- Cataclysmic Gladiator's Armplates of Alacrity
 									{"select", "itemID", 73554 },	-- Cataclysmic Gladiator's Girdle of Prowess
 									{"select", "itemID", 73552 },	-- Cataclysmic Gladiator's Warboots of Alacrity
@@ -1498,7 +1498,7 @@ _.Zones =
 							i(146640, {	-- Arsenal: Ruthless Gladiator's Weapons
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_weapons_ensemble", -9979, -673, PVP_GLADIATOR },
+									{"sub", "pvp_weapons_ensemble", CATA_HEADER, -673, PVP_GLADIATOR },
 									{"exclude", "itemID", 146640 },	-- Exclude itself to stop duplicating
 								},
 							}),
@@ -1600,7 +1600,7 @@ _.Zones =
 							i(146503, {	-- Ensemble: Ruthless Gladiator's Dreadplate Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -673, PVP_GLADIATOR, 6 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -673, PVP_GLADIATOR, 6 },
 									{"select", "itemID", 70327 },	-- Ruthless Gladiator's Armplates of Proficiency
 									{"select", "itemID", 70320 },	-- Ruthless Gladiator's Girdle of Cruelty
 									{"select", "itemID", 70321 },	-- Ruthless Gladiator's Warboots of Cruelty
@@ -1635,7 +1635,7 @@ _.Zones =
 							i(146501, {	-- Ensemble: Ruthless Gladiator's Dragonhide Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -673, PVP_GLADIATOR, 11 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -673, PVP_GLADIATOR, 11 },
 									{"select", "itemID", 70345 },	-- Ruthless Gladiator's Bindings of Meditation
 									{"select", "itemID", 70359 },	-- Ruthless Gladiator's Bindings of Prowess
 									{"select", "itemID", 70346 },	-- Ruthless Gladiator's Belt of Cruelty
@@ -1716,7 +1716,7 @@ _.Zones =
 							i(146499, {	-- Ensemble: Ruthless Gladiator's Chain Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -673, PVP_GLADIATOR, 3 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -673, PVP_GLADIATOR, 3 },
 									{"select", "itemID", 70340 },	-- Ruthless Gladiator's Wristguards of Accuracy
 									{"select", "itemID", 70338 },	-- Ruthless Gladiator's Wristguards of Alacrity
 									{"select", "itemID", 70339 },	-- Ruthless Gladiator's Links of Accuracy
@@ -1757,7 +1757,7 @@ _.Zones =
 							i(146517, {	-- Ensemble: Ruthless Gladiator's Silk Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -673, PVP_GLADIATOR, 8 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -673, PVP_GLADIATOR, 8 },
 									{"select", "itemID", 70365 },	-- Ruthless Gladiator's Cuffs of Prowess
 									{"select", "itemID", 70360 },	-- Ruthless Gladiator's Cord of Cruelty
 									{"select", "itemID", 70361 },	-- Ruthless Gladiator's Treads of Cruelty
@@ -1793,7 +1793,7 @@ _.Zones =
 							i(146515, {	-- Ensemble: Ruthless Gladiator's Scaled Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -673, PVP_GLADIATOR, 2 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -673, PVP_GLADIATOR, 2 },
 									{"select", "itemID", 70334 },	-- Ruthless Gladiator's Bracers of Meditation
 									{"select", "itemID", 70325 },	-- Ruthless Gladiator's Bracers of Prowess
 									{"select", "itemID", 70319 },	-- Ruthless Gladiator's Clasp of Cruelty
@@ -1854,7 +1854,7 @@ _.Zones =
 							i(146513, {	-- Ensemble: Ruthless Gladiator's Satin Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -673, PVP_GLADIATOR, 5 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -673, PVP_GLADIATOR, 5 },
 									{"select", "itemID", 70366 },	-- Ruthless Gladiator's Cuffs of Meditation
 									{"select", "itemID", 70368 },	-- Ruthless Gladiator's Cord of Meditation
 									{"select", "itemID", 70367 },	-- Ruthless Gladiator's Treads of Meditation
@@ -1909,7 +1909,7 @@ _.Zones =
 							i(146507, {	-- Ensemble: Ruthless Gladiator's Leather Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -673, PVP_GLADIATOR, 4 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -673, PVP_GLADIATOR, 4 },
 									{"select", "itemID", 70350 },	-- Ruthless Gladiator's Armwraps of Accuracy
 									{"select", "itemID", 70352 },	-- Ruthless Gladiator's Armwraps of Alacrity
 									{"select", "itemID", 70349 },	-- Ruthless Gladiator's Waistband of Accuracy
@@ -1950,7 +1950,7 @@ _.Zones =
 							i(146511, {	-- Ensemble: Ruthless Gladiator's Ringmail Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -673, PVP_GLADIATOR, 7 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -673, PVP_GLADIATOR, 7 },
 									{"select", "itemID", 70330 },	-- Ruthless Gladiator's Armbands of Meditation
 									{"select", "itemID", 70342 },	-- Ruthless Gladiator's Armbands of Prowess
 									{"select", "itemID", 70331 },	-- Ruthless Gladiator's Waistguard of Cruelty
@@ -2031,7 +2031,7 @@ _.Zones =
 							i(146505, {	-- Ensemble: Ruthless Gladiator's Felweave Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -673, PVP_GLADIATOR, 9 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -673, PVP_GLADIATOR, 9 },
 									{"select", "itemID", 70363 },	-- Ruthless Gladiator's Cuffs of Accuracy
 									{"select", "itemID", 70362 },	-- Ruthless Gladiator's Cord of Accuracy
 									{"select", "itemID", 70364 },	-- Ruthless Gladiator's Treads of Alacrity
@@ -2066,7 +2066,7 @@ _.Zones =
 							i(146509, {	-- Ensemble: Ruthless Gladiator's Plate Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -673, PVP_GLADIATOR, 1 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -673, PVP_GLADIATOR, 1 },
 									{"select", "itemID", 70322 },	-- Ruthless Gladiator's Armplates of Alacrity
 									{"select", "itemID", 70326 },	-- Ruthless Gladiator's Girdle of Prowess
 									{"select", "itemID", 70323 },	-- Ruthless Gladiator's Warboots of Alacrity
@@ -2271,7 +2271,7 @@ _.Zones =
 							i(146423, {	-- Ensemble: Bloodthirsty Gladiator's Dreadplate Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -672, -9983, 6 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -672, -9983, 6 },
 									{"select", "itemID", 64684 },	-- Bloodthirsty Gladiator's Armplates of Proficiency
 									{"select", "itemID", 64753 },	-- Bloodthirsty Gladiator's Girdle of Cruelty
 									{"select", "itemID", 64870 },	-- Bloodthirsty Gladiator's Warboots of Cruelty
@@ -2306,7 +2306,7 @@ _.Zones =
 							i(146421, {	-- Ensemble: Bloodthirsty Gladiator's Dragonhide Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -672, -9983, 11 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -672, -9983, 11 },
 									{"select", "itemID", 64698 },	-- Bloodthirsty Gladiator's Bindings of Meditation
 									{"select", "itemID", 64699 },	-- Bloodthirsty Gladiator's Bindings of Prowess
 									{"select", "itemID", 64696 },	-- Bloodthirsty Gladiator's Belt of Cruelty
@@ -2387,7 +2387,7 @@ _.Zones =
 							i(146419, {	-- Ensemble: Bloodthirsty Gladiator's Chain Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -672, -9983, 3 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -672, -9983, 3 },
 									{"select", "itemID", 64872 },	-- Bloodthirsty Gladiator's Wristguards of Accuracy
 									{"select", "itemID", 64873 },	-- Bloodthirsty Gladiator's Wristguards of Alacrity
 									{"select", "itemID", 64781 },	-- Bloodthirsty Gladiator's Links of Accuracy
@@ -2428,7 +2428,7 @@ _.Zones =
 							i(146437, {	-- Ensemble: Bloodthirsty Gladiator's Silk Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -672, -9983, 8 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -672, -9983, 8 },
 									{"select", "itemID", 64723 },	-- Bloodthirsty Gladiator's Cuffs of Accuracy
 									{"select", "itemID", 64721 },	-- Bloodthirsty Gladiator's Cord of Cruelty
 									{"select", "itemID", 64863 },	-- Bloodthirsty Gladiator's Treads of Cruelty
@@ -2463,7 +2463,7 @@ _.Zones =
 							i(146435, {	-- Ensemble: Bloodthirsty Gladiator's Scaled Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -672, -9983, 2 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -672, -9983, 2 },
 									{"select", "itemID", 64704 },	-- Bloodthirsty Gladiator's Bracers of Meditation
 									{"select", "itemID", 64705 },	-- Bloodthirsty Gladiator's Bracers of Prowess
 									{"select", "itemID", 64715 },	-- Bloodthirsty Gladiator's Clasp of Cruelty
@@ -2524,7 +2524,7 @@ _.Zones =
 							i(146433, {	-- Ensemble: Bloodthirsty Gladiator's Satin Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -672, -9983, 5 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -672, -9983, 5 },
 									{"select", "itemID", 64724 },	-- Bloodthirsty Gladiator's Cuffs of Meditation
 									{"select", "itemID", 64722 },	-- Bloodthirsty Gladiator's Cord of Meditation
 									{"select", "itemID", 64864 },	-- Bloodthirsty Gladiator's Treads of Meditation
@@ -2579,7 +2579,7 @@ _.Zones =
 							i(146427, {	-- Ensemble: Bloodthirsty Gladiator's Leather Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -672, -9983, 4 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -672, -9983, 4 },
 									{"select", "itemID", 64685 },	-- Bloodthirsty Gladiator's Armwraps of Accuracy
 									{"select", "itemID", 64686 },	-- Bloodthirsty Gladiator's Armwraps of Alacrity
 									{"select", "itemID", 64865 },	-- Bloodthirsty Gladiator's Waistband of Accuracy
@@ -2620,7 +2620,7 @@ _.Zones =
 							i(146431, {	-- Ensemble: Bloodthirsty Gladiator's Ringmail Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -672, -9983, 7 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -672, -9983, 7 },
 									{"select", "itemID", 64681 },	-- Bloodthirsty Gladiator's Armbands of Meditation
 									{"select", "itemID", 64682 },	-- Bloodthirsty Gladiator's Armbands of Prowess
 									{"select", "itemID", 64867 },	-- Bloodthirsty Gladiator's Waistguard of Cruelty
@@ -2701,7 +2701,7 @@ _.Zones =
 							i(146425, {	-- Ensemble: Bloodthirsty Gladiator's Felweave Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -672, -9983, 9 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -672, -9983, 9 },
 									{"select", "itemID", 64725 },	-- Bloodthirsty Gladiator's Cuffs of Prowess
 									{"select", "itemID", 64720 },	-- Bloodthirsty Gladiator's Cord of Accuracy
 									{"select", "itemID", 64862 },	-- Bloodthirsty Gladiator's Treads of Alacrity
@@ -2736,7 +2736,7 @@ _.Zones =
 							i(146429, {	-- Ensemble: Bloodthirsty Gladiator's Plate Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -672, -9983, 1 },
+									{"sub", "pvp_set_ensemble", CATA_HEADER, -672, -9983, 1 },
 									{"select", "itemID", 64683 },	-- Bloodthirsty Gladiator's Armplates of Alacrity
 									{"select", "itemID", 64754 },	-- Bloodthirsty Gladiator's Girdle of Prowess
 									{"select", "itemID", 64869 },	-- Bloodthirsty Gladiator's Warboots of Alacrity

@@ -5,7 +5,7 @@
 _.Achievements =
 {
 	n(QUESTS, {
-		n(-9979, {	-- Cataclysm
+		n(CATA_HEADER, {
 			a(ach(5318)),	-- 20,000 Leagues Under the Sea (Vashj'ir) (Alliance)
 			h(ach(5319)),	-- 20,000 Leagues Under the Sea (Vashj'ir) (Horde)
 			ach(4959),		-- Beware of the 'Unbeatable?' Pterodactyl (Mount Hyjal)

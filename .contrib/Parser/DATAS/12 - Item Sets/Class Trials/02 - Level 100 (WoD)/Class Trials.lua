@@ -377,7 +377,7 @@ _.GearSets =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-9981, {	-- Draenor
+	n(WOD_HEADER, {
 		n(-5350, {	-- Class Trial Item Sets
 			cl(PRIEST, {
 				-- added 6.2.2/Confirmed

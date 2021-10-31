@@ -13,7 +13,7 @@ TODO:
 _.Achievements =
 {
 	n(-9961, {	-- Reputation
-		n(-9982, {	-- Legion
+		n(LEGION_HEADER, {
 			ach(11796),		-- Armies of Legionfall
 			ach(10672, {	-- Broken Isles Diplomat
 				crit(1),		-- Court of Farondis

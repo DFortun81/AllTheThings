@@ -1446,7 +1446,7 @@ _.HiddenQuestTriggers = {
 	q(63634),	-- learning Ensemble: Court Inquisitor's Vestments
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-10100, {	-- Shadowlands
+	n(SL_HEADER, {
 		n(-949, {	-- Venthyr
 			n(-163, {	-- Armor
 				n(-43, {	-- Cloth

@@ -894,7 +894,7 @@ _.Instances = { tier(CATA_TIER, {
 	}),
 })};
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-9979, {	-- Cataclysm
+	n(CATA_HEADER, {
 		inst(187, {	-- Dragon Soul
 			i(78499),	-- Bones of the Damned
 			i(78503),	-- Shining Carapace of Glory

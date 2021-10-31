@@ -19,7 +19,7 @@ _.Zones =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-9981, {	-- Draenor
+	n(WOD_HEADER, {
 		n(-163, {	-- Armor
 			n(BACK, {
 				i(117494),	-- Windfang Drape

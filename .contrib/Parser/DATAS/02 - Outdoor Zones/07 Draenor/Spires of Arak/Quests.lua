@@ -1289,7 +1289,7 @@ _.HiddenQuestTriggers = {
 	q(36364),	-- Spires - Treasure 041 - Toxicfang Venom
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-9981, {	-- Draenor
+	n(WOD_HEADER, {
 		n(WEAPONS, {
 			i(114946),	-- Admiral Taylor's Spellguard
 		}),

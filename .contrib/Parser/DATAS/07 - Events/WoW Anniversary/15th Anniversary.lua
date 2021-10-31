@@ -794,7 +794,7 @@ root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 							},
 						}),
 					}),
-					n(-10014, {	-- Wrath of the Lich King
+					n(WRATH_HEADER, {
 						e(1605, {	-- Heigan the Unclean
 							["cr"] = 15936,	-- Heigan the Unclean
 							["g"] = {
@@ -1083,7 +1083,7 @@ root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 							},
 						}),
 					}),
-					n(-9979,  {	-- Cataclysm
+					n(CATA_HEADER,  {
 						e(167, {	-- Cho'gall
 							["cr"] = 43324,
 							["g"] = {

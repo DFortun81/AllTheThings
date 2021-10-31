@@ -1564,7 +1564,7 @@ _.HiddenQuestTriggers = {
 	q(63627),	-- learning Ensemble: Marileth's Assistant's Vestments
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-10100, {	-- Shadowlands
+	n(SL_HEADER, {
 		n(-920, {	-- Necrolord
 			n(-163, {	-- Armor
 				n(-43, {	-- Cloth

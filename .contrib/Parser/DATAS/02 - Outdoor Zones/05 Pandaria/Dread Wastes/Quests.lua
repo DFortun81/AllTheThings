@@ -1160,7 +1160,7 @@ _.Zones =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-10041, {	-- Mists of Pandaria
+	n(MOP_HEADER, {	-- Mists of Pandaria
 		n(WEAPONS, {
 			i(84085),	-- Dreadwaste Meditation Staff
 			i(84086),	-- Dreadwaste Diviner's Rod

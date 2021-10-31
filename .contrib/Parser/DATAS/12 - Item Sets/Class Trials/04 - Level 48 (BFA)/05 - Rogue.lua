@@ -31,7 +31,7 @@ _.GearSets =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-9982, {	-- Legion
+	n(LEGION_HEADER, {
 		n(-5350, {	-- Class Trial Item Sets
 			cl(ROGUE, {
 				-- added 7.2.5/No Info

@@ -810,7 +810,7 @@ _.Instances = { tier(CATA_TIER, {
 	}),
 })};
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-9979, {	-- Cataclysm
+	n(CATA_HEADER, {
 		inst(78, {	-- Firelands
 			i(71570),	-- Bracers of Forked Lightning
 			i(71400),	-- Girdle of the Indomitable Flame

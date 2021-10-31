@@ -543,7 +543,7 @@ _.Zones =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-9979, {	-- Cataclysm
+	n(CATA_HEADER, {
 		n(WEAPONS, {
 			i(52969),	-- Heartache Dagger	-- 52965 got added
 		}),

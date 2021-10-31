@@ -5,7 +5,7 @@
 _.Achievements =
 {
 	n(QUESTS, {
-		n(-10100, {	-- Shadowlands
+		n(SL_HEADER, {
 			ach(14672, {	-- A Bit of This, A Bit of That
 			--	["_quests"] = { 60475 },	-- We'll Workshop It
 				["description"] = "Can currently be completed in one appearance of the World Quest by converting the Party to a Raid after collecting the 10 supplies, and talking to all 6 NPCs.",

@@ -1274,7 +1274,7 @@ _.Zones =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-9981, {	-- Draenor
+	n(WOD_HEADER, {
 		n(-163, {	-- Armor
 			n(-43, {	-- Cloth
 				i(106163),	-- Frostwolf Wind-Talker Robe

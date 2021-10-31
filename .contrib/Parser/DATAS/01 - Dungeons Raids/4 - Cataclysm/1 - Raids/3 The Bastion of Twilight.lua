@@ -249,7 +249,7 @@ _.Instances = { tier(CATA_TIER, {
 	}),
 })};
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-9979, {	-- Cataclysm
+	n(CATA_HEADER, {
 		inst(72, {	-- The Bastion of Twilight
 			i(65099),	-- Tsanga's Helm
 		}),

@@ -2045,7 +2045,7 @@ _.Zones =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-9979, {	-- Cataclysm
+	n(CATA_HEADER, {
 		n(-163, {	-- Armor
 			f(51,	{	-- Neck
 				i(49314),	-- Sparkling Onyxia Tooth Pendant

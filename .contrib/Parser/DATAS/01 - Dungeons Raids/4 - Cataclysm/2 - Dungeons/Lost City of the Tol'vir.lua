@@ -246,7 +246,7 @@ _.Instances = { tier(CATA_TIER, {
 	}),
 })};
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-9979, {	-- Cataclysm
+	n(CATA_HEADER, {
 		inst(69, {	-- Lost City of the Tol'vir
 			i(56405),	-- Oasis Bracers (Lost City)
 		}),

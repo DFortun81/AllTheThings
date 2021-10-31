@@ -2127,7 +2127,7 @@ _.HiddenQuestTriggers = {
 	--q(37673),	-- Short-Supply Reward, Triggered when killing Tarlna the Ageless (side note: accompanied by Pepe
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-9981, {	-- Draenor
+	n(WOD_HEADER, {
 		n(WEAPONS, {
 			i(119408),	-- Foereaver Polearm [This version wasn't added]
 		}),

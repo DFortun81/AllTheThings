@@ -3578,7 +3578,7 @@ _.Instances = { tier(MOP_TIER, {
 	}),
 })};
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-10041, {
+	n(MOP_HEADER, {
 		inst(369, {	-- Siege of Orgrimmar
 			i(104986),	-- Unrepentant Heels
 			i(102312),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Boss X Loot X - Agi DPS Trinket (5)

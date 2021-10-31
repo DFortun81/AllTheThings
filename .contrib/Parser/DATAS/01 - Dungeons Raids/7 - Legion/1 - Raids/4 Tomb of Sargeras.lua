@@ -1434,7 +1434,7 @@ _.Instances = { tier(LEGION_TIER, {
 	}),
 })};
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-9982, {	-- Legion
+	n(LEGION_HEADER, {
 		inst(875, {	-- Tomb of Sargeras
 			i(147036),	-- Fel-Stippled Legguards		(removed Beta)
 			i(147058),	-- Chaos-Calming Wristguards	(removed Beta)

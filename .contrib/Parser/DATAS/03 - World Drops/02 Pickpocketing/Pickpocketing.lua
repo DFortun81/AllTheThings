@@ -5,7 +5,7 @@
 _.WorldDrops =
 {
 	spell(921, {	-- Pickpocketing
-		n(-9981, {	-- Draenor
+		n(WOD_HEADER, {
 			q(39107, {	-- An Even Bigga Score
 				["provider"] = { "n", 83006 },	-- Griftah
 				["classes"] = { ROGUE },
@@ -36,7 +36,7 @@ _.WorldDrops =
 			i(113008),	-- Glowing Ancestral Idol: 20 coins
 			i(113007),	-- Magma-Infused War Beads: 20 coins
 		}),
-		n(-9982, {	-- Legion
+		n(LEGION_HEADER, {
 			i(151165),	-- Verbellin Tourbillion Chronometer	20000
 			i(151164),	-- Sparkling Sin'dorei Signet	10000
 			i(151163),	-- Locket of Magical Memories	5000

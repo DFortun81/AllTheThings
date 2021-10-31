@@ -25,7 +25,7 @@ _.GearSets =
 	}), --]]
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-10052, {	-- Battle for Azeroth
+	n(BFA_HEADER, {
 		n(-5350, {	-- Class Trial Item Sets
 			cl(WARLOCK, {
 				-- added 8.2.5/No Info
@@ -33,7 +33,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-	n(-10100, {	-- Shadowlands
+	n(SL_HEADER, {
 		n(-5350, {	-- Class Trial Item Sets
 			cl(WARLOCK, {
 				-- added 9.0.1/No Info

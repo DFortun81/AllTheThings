@@ -402,7 +402,7 @@ _.GearSets =
 						}),
 					}),
 				}),
-				n(-9981, {	-- Warlords of Draenor. This gear is awarded if you use your lv90 boost after 6.0.1
+				n(WOD_HEADER, {	-- This gear is awarded if you use your lv90 boost after 6.0.1
 					cl(PRIEST, {
 						n(-9915, {	-- Disc / Holy
 							i(117230),	-- Communal Staff
@@ -804,7 +804,7 @@ _.GearSets =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-9981, {	-- Draenor
+	n(WOD_HEADER, {
 		n(-5350, {	-- Class Trial Item Sets
 			cl(PRIEST, {
 				-- added 6.0.2/No Info

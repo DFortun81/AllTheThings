@@ -668,7 +668,7 @@ _.ExpansionFeatures =
 };
 
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-9981, {	-- Draenor
+	n(WOD_HEADER, {
 		n(-299, {	-- Missions
 			n(-163, {	-- Armor
 				n(-43, {	-- Cloth

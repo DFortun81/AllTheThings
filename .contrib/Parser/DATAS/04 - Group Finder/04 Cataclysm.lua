@@ -120,7 +120,7 @@ _.GroupFinder =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-9979, {	-- Cataclysm
+	n(CATA_HEADER, {
 		n(-163, {	-- Armor
 			n(-44, {	-- Leather
 				i(113710),	-- Ravaged Leather Leggings

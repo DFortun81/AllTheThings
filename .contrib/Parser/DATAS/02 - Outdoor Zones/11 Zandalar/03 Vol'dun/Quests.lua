@@ -1549,7 +1549,7 @@ _.HiddenQuestTriggers = {
 	q(54525),	-- looting Loose Parts from the bridge elites during the Vol'dun incursion, as Horde (the associated WQ wasn't up, not sure if that makes a difference)
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-10052, {	-- Battle for Azeroth
+	n(BFA_HEADER, {
 		n(-163, {	-- Armor
 			n(-44, {	-- Leather
 				i(161277),	-- Scorching Sands Britches

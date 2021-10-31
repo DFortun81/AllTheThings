@@ -27,7 +27,7 @@ _.GearSets =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-9982, {	-- Legion
+	n(LEGION_HEADER, {
 		n(-5350, {	-- Class Trial Item Sets
 			cl(DEMONHUNTER, {
 				-- added 7.2.5/Confirmed
@@ -52,7 +52,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-	n(-10052, {	-- Battle for Azeroth
+	n(BFA_HEADER, {
 		n(-5350, {	-- Class Trial Item Sets
 			cl(DEMONHUNTER, {
 				-- added 8.0.1/Confirmed

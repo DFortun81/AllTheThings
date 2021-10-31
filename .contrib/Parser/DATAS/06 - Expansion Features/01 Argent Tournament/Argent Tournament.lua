@@ -1980,7 +1980,7 @@ _.ExpansionFeatures =
 					-- We have a different Vendor with the same PvP Items in Dalaran listed. Both of them sell the Furious Gladiator Items for Gold.
 					-- For sake of numbers we use Symlink on the 2nd NPC. First NPC under Outdoor>Northrend>Dalaran>Factions
 					["sym"] = {
-						{"sub", "pvp_gear_base", -10014, -669, PVP_GLADIATOR },	-- Furious Gladiator: Season 6 Gladiator Gear
+						{"sub", "pvp_gear_base", WRATH_HEADER, -669, PVP_GLADIATOR },	-- Furious Gladiator: Season 6 Gladiator Gear
 						{"pop"},	-- Discard the Set header and acquire the children.
 						{"exclude", "headerID", WEAPONS, BACK, WRIST, WAIST, FEET, NECK, FINGER, -386 },	-- Exclude Weapon, Back, Wrist, Waist, Feet Neck, Finger and Trinkets
 					},
@@ -3017,7 +3017,7 @@ _.ExpansionFeatures =
 					-- We have a different Vendor with the same PvP Items in Dalaran listed. Both of them sell the Furious Gladiator Items for Gold.
 					-- For sake of numbers we use Symlink on the 2nd NPC. First NPC under Outdoor>Northrend>Dalaran>Factions
 					["sym"] = {
-						{"sub", "pvp_gear_base", -10014, -669, PVP_GLADIATOR },	-- Furious Gladiator: Season 6 Gladiator Gear
+						{"sub", "pvp_gear_base", WRATH_HEADER, -669, PVP_GLADIATOR },	-- Furious Gladiator: Season 6 Gladiator Gear
 						{"pop"},	-- Discard the Set header and acquire the children.
 						{"exclude", "headerID", WEAPONS, BACK, WRIST, WAIST, FEET, NECK, FINGER, -386 },	-- Exclude Weapon, Back, Wrist, Waist, Feet Neck, Finger and Trinkets
 					},

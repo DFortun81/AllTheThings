@@ -1551,7 +1551,7 @@ _.HiddenQuestTriggers = {
 	q(63602),	-- learning Ensemble: Devoted Aspirant's Regalia
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-10100, {	-- Shadowlands
+	n(SL_HEADER, {
 		n(-939, {	-- Kyrian
 			n(-163, {	-- Armor
 				n(-45, {	-- Mail

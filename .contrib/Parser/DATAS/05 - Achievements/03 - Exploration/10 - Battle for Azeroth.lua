@@ -5,7 +5,7 @@
 _.Achievements =
 {
 	n(-9957, {	-- Exploration
-		n(-10052, {	-- Battle for Azeroth
+		n(BFA_HEADER, {
 			ach(13711),	-- A Fistful of Manapearls
 			ach(13036, {	-- A Loa of a Tale
 				crit(1),		-- Tales of de Loa: Akunda

@@ -5,7 +5,7 @@
 _.Achievements =
 {
 	n(QUESTS, {
-		n(-9981, {	-- Draenor
+		n(WOD_HEADER, {
 			ach(9437),		-- A Demidos of Reality (Socrethar's Rise)
 			ach(9433),		-- A-VOID-ance (Shadowmoon Enclave)
 			ach(9678, {		-- Ancient No More (Everbloom Wilds)
