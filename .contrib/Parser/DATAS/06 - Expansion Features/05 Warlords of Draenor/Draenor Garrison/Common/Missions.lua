@@ -125,7 +125,7 @@ _.ExpansionFeatures =
 							["sym"] = {{"select", "instanceID", 457}, {"pop"}, {"where", "difficultyID", 16 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 2, 3, 4, 5, 6, 7, 51, 52, 53 }, {"not", "b", 2 }},
 						}),
 						i(114108, {	-- Tormented Armament
-							["description"] = "You must have level 94 active followers in order to get missions that reward this token.",
+							["description"] = "You must have level 34 active followers in order to get missions that reward this token.",
 							["g"] = {
 								i(115303),	-- Tormented Axe
 								i(115306),	-- Tormented Dagger
@@ -138,7 +138,7 @@ _.ExpansionFeatures =
 							},
 						}),
 						i(114098, {	-- Tormented Hood
-							["description"] = "You must have level 92 active followers in order to get missions that reward this token.",
+							["description"] = "You must have level 32 active followers in order to get missions that reward this token.",
 							["g"] = {
 								i(114326),	-- Mantisweave Hood
 								i(114327),	-- Shadow-Gorged Hood
@@ -147,7 +147,7 @@ _.ExpansionFeatures =
 							},
 						}),
 						i(114100, {	-- Tormented Spaulders
-							["description"] = "You must have level 99 active followers in order to get missions that reward this token.",
+							["description"] = "You must have level 39 active followers in order to get missions that reward this token.",
 							["g"] = {
 								i(114334),	-- Mantisweave Mantle
 								i(114335),	-- Shadow-Gorged Spaulders
@@ -156,7 +156,7 @@ _.ExpansionFeatures =
 							},
 						}),
 						i(114094, {	-- Tormented Bracers
-							["description"] = "You must have level 95 active followers in order to get missions that reward this token.",
+							["description"] = "You must have level 35 active followers in order to get missions that reward this token.",
 							["g"] = {
 								i(114310),	-- Mantisweave Bracers
 								i(114311),	-- Shadow-Gorged Bracers
@@ -165,7 +165,7 @@ _.ExpansionFeatures =
 							},
 						}),
 						i(114097, {	-- Tormented Gauntlets
-							["description"] = "You must have level 97 active followers in order to get missions that reward this token.",
+							["description"] = "You must have level 37 active followers in order to get missions that reward this token.",
 							["g"] = {
 								i(114322),	-- Mantisweave Gloves
 								i(114323),	-- Shadow-Gorged Gauntlets
@@ -174,7 +174,7 @@ _.ExpansionFeatures =
 							},
 						}),
 						i(114101, {	-- Tormented Girdle
-							["description"] = "You must have level 91 active followers in order to get missions that reward this token.",
+							["description"] = "You must have level 31 active followers in order to get missions that reward this token.",
 							["g"] = {
 								i(114338),	-- Mantisweave Cord
 								i(114339),	-- Shadow-Gorged Belt
@@ -183,7 +183,7 @@ _.ExpansionFeatures =
 							},
 						}),
 						i(114099, {	-- Tormented Leggings
-							["description"] = "You must have level 96 active followers in order to get missions that reward this token.",
+							["description"] = "You must have level 36 active followers in order to get missions that reward this token.",
 							["g"] = {
 								i(114330),	-- Mantisweave Trousers
 								i(114331),	-- Shadow-Gorged Legguards
@@ -192,7 +192,7 @@ _.ExpansionFeatures =
 							},
 						}),
 						i(114096, {	-- Tormented Treads
-							["description"] = "You must have level 93 active followers in order to get missions that reward this token.",
+							["description"] = "You must have level 33 active followers in order to get missions that reward this token.",
 							["g"] = {
 								i(114318),	-- Mantisweave Sandals
 								i(114319),	-- Shadow-Gorged Boots
@@ -210,213 +210,215 @@ _.ExpansionFeatures =
 						-- tormented gear above is based on varying follower levels, so it makes sense for each to have a separate description
 						-- munificent, turbulent, and grandiose tokens below are each in their own bracket
 						-- maybe group each category under one header instead of having the same description on each token?
-						i(114109, {	-- Munificent Armament
-							["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
-							["g"] = {
-								i(115311),	-- Munificent Axe
-								i(115314),	-- Munificent Dagger
-								i(115312),	-- Munificent Greataxe
-								i(115313),	-- Munificent Longbow
-								i(115316),	-- Munificent Polearm
-								i(115318),	-- Munificent Scepter
-								i(115317),	-- Munificent Spire
-								i(115315),	-- Munificent Warmace
-							},
-						}),
-						i(114066, {	-- Munificent Choker
-							["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
-							["g"] = {
-								i(114417),	-- Choker of Averted Doom
-								i(114416),	-- Goldleaf Bloom
-								i(114415),	-- Gorget of Whirling Blades
-								i(114418),	-- Ripcurrent Chain
-								i(114419),	-- Torq of Noble Primacy
-							},
-						}),
-						i(114063, {	-- Munificent Spaulders
-							["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
-							["g"] = {
-								i(114395),	-- Mantle of Hooded Nightmares
-								i(114396),	-- Spaulders of Falling Leaves
-								i(114397),	-- Element-Binder Spaulders
-								i(114398),	-- Shoulderguard of Grievous Storms
-							},
-						}),
-						i(114058, {	-- Munificent Robes
-							["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
-							["g"] = {
-								i(114378),	-- Robes of Hooded Nightmares
-								i(114375),	-- Chestguard of Falling Leaves
-								i(114376),	-- Element-Binder Chestguard
-								i(114377),	-- Brestplate of Grievous Storms
-							},
-						}),
-						i(114057, {	-- Munificent Bracers
-							["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
-							["g"] = {
-								i(114371),	-- Bracers of Hooded Nightmares
-								i(114372),	-- Bracers of Falling Leaves
-								i(114373),	-- Element-Binder Bracers
-								i(114374),	-- Bracers of Grievous Storms
-							},
-						}),
-						i(114059, {	-- Munificent Treads
-							["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
-							["g"] = {
-								i(114379),	-- Sandals of Hooded Nightmares
-								i(114380),	-- Boots of Falling Leaves
-								i(114381),	-- Element-Binder Boots
-								i(114382),	-- Greaves of Grievous Storms
-							},
-						}),
-						i(114068, {	-- Munificent Trinket
-							["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
-							["g"] = {
-								i(114430),	-- Munificent Bonds of Fury
-								i(114429),	-- Munificent Censer of Tranquility
-								i(114427),	-- Munificent Emblem of Terror
-								i(114428),	-- Munificent Orb of Ice
-								i(114431),	-- Munificent Soul of Compassion
-							},
-						}),
-						i(114110, {	-- Turbulent Armament
-							["description"] = "You must have level 100 active followers that are upgraded to 615 ilvl in order to get missions that reward Turbulent tokens.",
-							["g"] = {
-								i(115319),	-- Turbulent Axe
-								i(115322),	-- Turbulent Dagger
-								i(115320),	-- Turbulent Greataxe
-								i(115321),	-- Turbulent Longboww
-								i(115324),	-- Turbulent Polearm
-								i(115326),	-- Turbulent Scepter
-								i(115325),	-- Turbulent Spire
-								i(115323),	-- Turbulent Warmace
-							},
-						}),
-						i(114078, {	-- Turbulent Choker
-							["description"] = "You must have level 100 active followers that are upgraded to 615 ilvl in order to get missions that reward Turbulent tokens.",
-							["g"] = {
-								i(114477),	-- Arcane Master's Chain
-								i(114476),	-- Beastminder Cabochon
-								i(114480),	-- Chainwrecker Gorget
-								i(114479),	-- Rageflame Choker
-								i(114478),	-- Torq of Soothing Waters
-							},
-						}),
-						i(114075, {	-- Turbulent Spaulders
-							["description"] = "You must have level 100 active followers that are upgraded to 615 ilvl in order to get missions that reward Turbulent tokens.",
-							["g"] = {
-								i(114456),	-- Firelash Mantle
-								i(114457),	-- Spireflame Spaulders
-								i(114458),	-- Spaulders of Elemental Torment
-								i(114459),	-- Shoulderguard of Vaulted Skies
-							},
-						}),
-						i(114070, {	-- Turbulent Robes
-							["description"] = "You must have level 100 active followers that are upgraded to 615 ilvl in order to get missions that reward Turbulent tokens.",
-							["g"] = {
-								i(114439),	-- Firelash Robes
-								i(114436),	-- Spireflame Chestguard
-								i(114437),	-- Chestguard of Elemental Torment
-								i(114438),	-- Breastplate of Vaulted Skies
-							},
-						}),
-						i(114069, {	-- Turbulent Bracers
-							["description"] = "You must have level 100 active followers that are upgraded to 615 ilvl in order to get missions that reward Turbulent tokens.",
-							["g"] = {
-								i(114432),	-- Firelash Bracers
-								i(114433),	-- Spireflame Bracers
-								i(114434),	-- Bracers of Elemental Torment
-								i(114435),	-- Bracers of Vaulted Skies
-							},
-						}),
-						i(114071, {	-- Turbulent Treads
-							["description"] = "You must have level 100 active followers that are upgraded to 615 ilvl in order to get missions that reward Turbulent tokens.",
-							["g"] = {
-								i(114440),	-- Firelash Sandls
-								i(114441),	-- Spireflame Boots
-								i(114442),	-- Boots of Elemental Torment
-								i(114443),	-- Greaves of Vaulted Skies
-							},
-						}),
-						i(114080, {	-- Turbulent Trinket
-							["description"] = "You must have level 100 active followers that are upgraded to 615 ilvl in order to get missions that reward Turbulent tokens.",
-							["g"] = {
-								i(114491),	-- Turbulent Emblem
-								i(114489),	-- Turbulent Focusing Crystal
-								i(114490),	-- Turbulent Relic of Mendacity
-								i(114492),	-- Turbulent Seal of Defiance
-								i(114488),	-- Turbulent Vial of Toxin
-							},
-						}),
-						i(114112, {	-- Grandiose Armament
-							["description"] = "You must have level 100 active followers that are upgraded to 630 ilvl in order to get missions that reward Grandiose tokens.",
-							["g"] = {
-								i(115327),	-- Grandiose Axe
-								i(115330),	-- Grandiose Dagger
-								i(115328),	-- Grandiose Greataxe
-								i(115329),	-- Grandiose Longbow
-								i(115332),	-- Grandiose Polearm
-								i(115334),	-- Grandiose Scepter
-								i(115333),	-- Grandiose Spire
-								i(115331),	-- Grandiose Warmace
-							},
-						}),
-						i(114086, {	-- Grandiose Choker
-							["description"] = "You must have level 100 active followers that are upgraded to 630 ilvl in order to get missions that reward Grandiose tokens.",
-							["g"] = {
-								i(114538),	-- Bleak Temple Choker
-								i(114539),	-- Dreamsleep Locket
-								i(114537),	-- Gorefeather Pendant
-								i(114541),	-- Lightbender Locket
-								i(114540),	-- Spirewalker's Chain
-							},
-						}),
-						i(114085, {	-- Grandiose Spaulders
-							["description"] = "You must have level 100 active followers that are upgraded to 630 ilvl in order to get missions that reward Grandiose tokens.",
-							["g"] = {
-								i(114520),	-- Crazed Bomber's Shoulderguard
-								i(114517),	-- Mantle of Volatile Ice
-								i(114518),	-- Spaulders of Determined Resolve
-								i(114519),	-- Undying Spaulders
-							},
-						}),
-						i(114083, {	-- Grandiose Robes
-							["description"] = "You must have level 100 active followers that are upgraded to 630 ilvl in order to get missions that reward Grandiose tokens.",
-							["g"] = {
-								i(114497),	-- Chestguard of Determined Resolve
-								i(114499),	-- Crazed Bomber's Breastplate
-								i(114500),	-- Robes of Volatile Ice
-								i(114498),	-- Undying Chestguard
-							},
-						}),
-						i(114082, {	-- Grandiose Bracers
-							["description"] = "You must have level 100 active followers that are upgraded to 630 ilvl in order to get missions that reward Grandiose tokens.",
-							["g"] = {
-								i(114494),	-- Bracers of Determined Resolve
-								i(114493),	-- Bracers of Volatile Ice
-								i(114496),	-- Crazed Bomber's Bracers
-								i(114495),	-- Undying Bracers
-							},
-						}),
-						i(114084, {	-- Grandiose Treads
-							["description"] = "You must have level 100 active followers that are upgraded to 630 ilvl in order to get missions that reward Grandiose tokens.",
-							["g"] = {
-								i(114502),	-- Boots of Determined Resolve
-								i(114504),	-- Crazed Bomber's Greaves
-								i(114501),	-- Sandals of Volatile Ice
-								i(114503),	-- Undying Boots
-							},
-						}),
-						i(114087, {	-- Grandiose Trinket
-							["description"] = "You must have level 100 active followers that are upgraded to 630 ilvl in order to get missions that reward Grandiose tokens.",
-							["g"] = {
-								i(114552),	-- Grandiose Carnage
-								i(114549),	-- Grandiose Plans
-								i(114550),	-- Grandiose Power
-								i(114551),	-- Grandiose Prescience
-								i(114553),	-- Grandiose Resistance
-							},
-						}),
+						n(-493, bubbleDown({ ["u"] = 45, ["description"] = "If you obtain this item, please report to the ATT Discord with screenshots of the item and level/ilvl of followers", },{	-- Broken Mission Loot
+							i(114109, {	-- Munificent Armament
+								--["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
+								["g"] = {
+									i(115311),	-- Munificent Axe
+									i(115314),	-- Munificent Dagger
+									i(115312),	-- Munificent Greataxe
+									i(115313),	-- Munificent Longbow
+									i(115316),	-- Munificent Polearm
+									i(115318),	-- Munificent Scepter
+									i(115317),	-- Munificent Spire
+									i(115315),	-- Munificent Warmace
+								},
+							}),
+							i(114066, {	-- Munificent Choker
+								--["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
+								["g"] = {
+									i(114417),	-- Choker of Averted Doom
+									i(114416),	-- Goldleaf Bloom
+									i(114415),	-- Gorget of Whirling Blades
+									i(114418),	-- Ripcurrent Chain
+									i(114419),	-- Torq of Noble Primacy
+								},
+							}),
+							i(114063, {	-- Munificent Spaulders
+								--["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
+								["g"] = {
+									i(114395),	-- Mantle of Hooded Nightmares
+									i(114396),	-- Spaulders of Falling Leaves
+									i(114397),	-- Element-Binder Spaulders
+									i(114398),	-- Shoulderguard of Grievous Storms
+								},
+							}),
+							i(114058, {	-- Munificent Robes
+								--["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
+								["g"] = {
+									i(114378),	-- Robes of Hooded Nightmares
+									i(114375),	-- Chestguard of Falling Leaves
+									i(114376),	-- Element-Binder Chestguard
+									i(114377),	-- Brestplate of Grievous Storms
+								},
+							}),
+							i(114057, {	-- Munificent Bracers
+								--["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
+								["g"] = {
+									i(114371),	-- Bracers of Hooded Nightmares
+									i(114372),	-- Bracers of Falling Leaves
+									i(114373),	-- Element-Binder Bracers
+									i(114374),	-- Bracers of Grievous Storms
+								},
+							}),
+							i(114059, {	-- Munificent Treads
+								--["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
+								["g"] = {
+									i(114379),	-- Sandals of Hooded Nightmares
+									i(114380),	-- Boots of Falling Leaves
+									i(114381),	-- Element-Binder Boots
+									i(114382),	-- Greaves of Grievous Storms
+								},
+							}),
+							i(114068, {	-- Munificent Trinket
+								--["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
+								["g"] = {
+									i(114430),	-- Munificent Bonds of Fury
+									i(114429),	-- Munificent Censer of Tranquility
+									i(114427),	-- Munificent Emblem of Terror
+									i(114428),	-- Munificent Orb of Ice
+									i(114431),	-- Munificent Soul of Compassion
+								},
+							}),
+							i(114110, {	-- Turbulent Armament
+								--["description"] = "You must have level 100 active followers that are upgraded to 615 ilvl in order to get missions that reward Turbulent tokens.",
+								["g"] = {
+									i(115319),	-- Turbulent Axe
+									i(115322),	-- Turbulent Dagger
+									i(115320),	-- Turbulent Greataxe
+									i(115321),	-- Turbulent Longboww
+									i(115324),	-- Turbulent Polearm
+									i(115326),	-- Turbulent Scepter
+									i(115325),	-- Turbulent Spire
+									i(115323),	-- Turbulent Warmace
+								},
+							}),
+							i(114078, {	-- Turbulent Choker
+								--["description"] = "You must have level 100 active followers that are upgraded to 615 ilvl in order to get missions that reward Turbulent tokens.",
+								["g"] = {
+									i(114477),	-- Arcane Master's Chain
+									i(114476),	-- Beastminder Cabochon
+									i(114480),	-- Chainwrecker Gorget
+									i(114479),	-- Rageflame Choker
+									i(114478),	-- Torq of Soothing Waters
+								},
+							}),
+							i(114075, {	-- Turbulent Spaulders
+								--["description"] = "You must have level 100 active followers that are upgraded to 615 ilvl in order to get missions that reward Turbulent tokens.",
+								["g"] = {
+									i(114456),	-- Firelash Mantle
+									i(114457),	-- Spireflame Spaulders
+									i(114458),	-- Spaulders of Elemental Torment
+									i(114459),	-- Shoulderguard of Vaulted Skies
+								},
+							}),
+							i(114070, {	-- Turbulent Robes
+								--["description"] = "You must have level 100 active followers that are upgraded to 615 ilvl in order to get missions that reward Turbulent tokens.",
+								["g"] = {
+									i(114439),	-- Firelash Robes
+									i(114436),	-- Spireflame Chestguard
+									i(114437),	-- Chestguard of Elemental Torment
+									i(114438),	-- Breastplate of Vaulted Skies
+								},
+							}),
+							i(114069, {	-- Turbulent Bracers
+								--["description"] = "You must have level 100 active followers that are upgraded to 615 ilvl in order to get missions that reward Turbulent tokens.",
+								["g"] = {
+									i(114432),	-- Firelash Bracers
+									i(114433),	-- Spireflame Bracers
+									i(114434),	-- Bracers of Elemental Torment
+									i(114435),	-- Bracers of Vaulted Skies
+								},
+							}),
+							i(114071, {	-- Turbulent Treads
+								--["description"] = "You must have level 100 active followers that are upgraded to 615 ilvl in order to get missions that reward Turbulent tokens.",
+								["g"] = {
+									i(114440),	-- Firelash Sandls
+									i(114441),	-- Spireflame Boots
+									i(114442),	-- Boots of Elemental Torment
+									i(114443),	-- Greaves of Vaulted Skies
+								},
+							}),
+							i(114080, {	-- Turbulent Trinket
+								--["description"] = "You must have level 100 active followers that are upgraded to 615 ilvl in order to get missions that reward Turbulent tokens.",
+								["g"] = {
+									i(114491),	-- Turbulent Emblem
+									i(114489),	-- Turbulent Focusing Crystal
+									i(114490),	-- Turbulent Relic of Mendacity
+									i(114492),	-- Turbulent Seal of Defiance
+									i(114488),	-- Turbulent Vial of Toxin
+								},
+							}),
+							i(114112, {	-- Grandiose Armament
+								--["description"] = "You must have level 100 active followers that are upgraded to 630 ilvl in order to get missions that reward Grandiose tokens.",
+								["g"] = {
+									i(115327),	-- Grandiose Axe
+									i(115330),	-- Grandiose Dagger
+									i(115328),	-- Grandiose Greataxe
+									i(115329),	-- Grandiose Longbow
+									i(115332),	-- Grandiose Polearm
+									i(115334),	-- Grandiose Scepter
+									i(115333),	-- Grandiose Spire
+									i(115331),	-- Grandiose Warmace
+								},
+							}),
+							i(114086, {	-- Grandiose Choker
+								--["description"] = "You must have level 100 active followers that are upgraded to 630 ilvl in order to get missions that reward Grandiose tokens.",
+								["g"] = {
+									i(114538),	-- Bleak Temple Choker
+									i(114539),	-- Dreamsleep Locket
+									i(114537),	-- Gorefeather Pendant
+									i(114541),	-- Lightbender Locket
+									i(114540),	-- Spirewalker's Chain
+								},
+							}),
+							i(114085, {	-- Grandiose Spaulders
+								--["description"] = "You must have level 100 active followers that are upgraded to 630 ilvl in order to get missions that reward Grandiose tokens.",
+								["g"] = {
+									i(114520),	-- Crazed Bomber's Shoulderguard
+									i(114517),	-- Mantle of Volatile Ice
+									i(114518),	-- Spaulders of Determined Resolve
+									i(114519),	-- Undying Spaulders
+								},
+							}),
+							i(114083, {	-- Grandiose Robes
+								--["description"] = "You must have level 100 active followers that are upgraded to 630 ilvl in order to get missions that reward Grandiose tokens.",
+								["g"] = {
+									i(114497),	-- Chestguard of Determined Resolve
+									i(114499),	-- Crazed Bomber's Breastplate
+									i(114500),	-- Robes of Volatile Ice
+									i(114498),	-- Undying Chestguard
+								},
+							}),
+							i(114082, {	-- Grandiose Bracers
+								--["description"] = "You must have level 100 active followers that are upgraded to 630 ilvl in order to get missions that reward Grandiose tokens.",
+								["g"] = {
+									i(114494),	-- Bracers of Determined Resolve
+									i(114493),	-- Bracers of Volatile Ice
+									i(114496),	-- Crazed Bomber's Bracers
+									i(114495),	-- Undying Bracers
+								},
+							}),
+							i(114084, {	-- Grandiose Treads
+								--["description"] = "You must have level 100 active followers that are upgraded to 630 ilvl in order to get missions that reward Grandiose tokens.",
+								["g"] = {
+									i(114502),	-- Boots of Determined Resolve
+									i(114504),	-- Crazed Bomber's Greaves
+									i(114501),	-- Sandals of Volatile Ice
+									i(114503),	-- Undying Boots
+								},
+							}),
+							i(114087, {	-- Grandiose Trinket
+								--["description"] = "You must have level 100 active followers that are upgraded to 630 ilvl in order to get missions that reward Grandiose tokens.",
+								["g"] = {
+									i(114552),	-- Grandiose Carnage
+									i(114549),	-- Grandiose Plans
+									i(114550),	-- Grandiose Power
+									i(114551),	-- Grandiose Prescience
+									i(114553),	-- Grandiose Resistance
+								},
+							}),
+						})),
 						i(114052, {	-- Gleaming Ring
 							i(112800),	-- Bloodbone Ring
 							i(112799),	-- Loop of Vile Lesions

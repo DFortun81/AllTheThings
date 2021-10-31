@@ -1445,3 +1445,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 	}),
 });
+_.HiddenQuestTriggers = {
+	--q(48084),	-- Tracking Quest (KJ first kill?) or glyph of ember shards
+};

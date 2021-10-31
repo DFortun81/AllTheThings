@@ -3591,3 +3591,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 	}),
 });
+_.HiddenQuestTriggers = {
+	q(33345),	-- Dark Shaman Weekly Attempt
+};

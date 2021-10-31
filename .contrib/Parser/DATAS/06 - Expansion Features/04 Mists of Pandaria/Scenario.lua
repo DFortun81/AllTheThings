@@ -54,6 +54,7 @@ _.ExpansionFeatures =
 						i(92864),	-- Cordwoven Sandals
 						i(92863),	-- Cordwoven Shoulderpads
 						i(92862),	-- Cordwoven Wristwraps
+						i(92840),	-- Danio-Scale Gauntlets			- 22 Oct 2021 Confirmed
 						i(92837),	-- Earthstriker Belt
 						i(92836),	-- Earthstriker Bracers
 						i(92835),	-- Earthstriker Gauntlets
@@ -357,3 +358,102 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10041, {
+		n(-10059, {	-- Pandaren Scenario
+			n(-163, {	-- Armor
+				n(-43, {	-- Cloth
+					i(93068),	-- Yak Wool Robe
+					i(93069),	-- Yak Wool Sandals
+					i(93070),	-- Yak Wool Handwraps
+					i(93072),	-- Yak Wool Leggings
+					i(93073),	-- Yak Wool Shoulderpads
+					i(93074),	-- Yak Wool Cord
+					i(93075),	-- Yak Wool Wristwraps
+					i(93104),	-- Brewfather Sandals
+					i(93105),	-- Brewfather Handwraps
+					i(93106),	-- Brewfather Cowl
+					i(93107),	-- Brewfather Leggings
+					i(93108),	-- Brewfather Shoulderpads
+					i(93109),	-- Brewfather Cord
+				}),
+				n(-44, {	-- Leather
+					i(93049),	-- Mogubreaker Jerkin
+					i(93050),	-- Mogubreaker Boots
+					i(93051),	-- Mogubreaker Gloves
+					i(93053),	-- Mogubreaker Britches
+					i(93055),	-- Mogubreaker Waistband
+					i(93056),	-- Mogubreaker Bindings
+					i(93078),	-- Hozen-Stitched Jerkin
+					i(93081),	-- Hozen-Stitched Hood
+					i(93082),	-- Hozen-Stitched Britches
+					i(93083),	-- Hozen-Stitched Shoulders
+					i(93084),	-- Hozen-Stitched Waistband
+				}),
+				n(-45, {	-- Mail
+					i(89460),	-- Scarshell Belt
+					i(89461),	-- Scarshell Bracers
+					i(89462),	-- Scarshell Gauntlets
+					i(89464),	-- Scarshell Helm
+					i(89466),	-- Scarshell Spaulders
+					i(89467),	-- Scarshell Vest
+					i(92838),	-- Danio-Scale Belt
+					i(92839),	-- Danio-Scale Bracers
+					i(92841),	-- Danio-Scale Greaves
+					i(92842),	-- Danio-Scale Helm
+					i(92843),	-- Danio-Scale Legguards
+					i(92844),	-- Danio-Scale Spaulders
+					i(92845),	-- Danio-Scale Vest
+					i(93057),	-- Stormshaper Vest
+					i(93058),	-- Stormshaper Greaves
+					i(93059),	-- Stormshaper Gauntlets
+					i(93061),	-- Stormshaper Legguards
+					i(93062),	-- Stormshaper Spaulders
+					i(93063),	-- Stormshaper Belt
+					i(93064),	-- Stormshaper Bracers
+					i(93086),	-- Swashbuckling Vest
+					i(93087),	-- Swashbuckling Greaves
+					i(93088),	-- Swashbuckling Gauntlets
+					i(93089),	-- Swashbuckling Helm
+					i(93090),	-- Swashbuckling Legguards
+					i(93091),	-- Swashbuckling Spaulders
+					i(93093),	-- Swashbuckling Bracers
+				}),
+				n(-46, {	-- Plate
+					i(89444),	-- Mogu-Wrought Breastplate
+					i(89445),	-- Mogu-Wrought Gauntlets
+					i(89446),	-- Mogu-Wrought Girdle
+					i(89451),	-- Mogu-Wrought Vambraces
+					i(92822),	-- Jinyu-Forged Breastplate
+					i(92823),	-- Jinyu-Forged Gauntlets
+					i(92824),	-- Jinyu-Forged Girdle
+					i(92825),	-- Jinyu-Forged Helm
+					i(92826),	-- Jinyu-Forged Legplates
+					i(92827),	-- Jinyu-Forged Pauldrons
+					i(92828),	-- Jinyu-Forged Sabatons
+					i(92829),	-- Jinyu-Forged Vambraces
+					i(93094),	-- Yaungolian Breastplate
+					i(93095),	-- Yaungolian Sabatons
+					i(93096),	-- Yaungolian Gauntlets
+					i(93097),	-- Yaungolian Helm
+					i(93098),	-- Yaungolian Legplates
+					i(93099),	-- Yaungolian Pauldrons
+					i(93100),	-- Yaungolian Girdle
+					i(93101),	-- Yaungolian Vambraces
+					i(93115),	-- Lightning Rod Breastplate
+					i(93116),	-- Lightning Rod Sabatons
+					i(93117),	-- Lightning Rod Gauntlets
+					i(93118),	-- Lightning Rod Helm
+					i(93120),	-- Lightning Rod Pauldrons
+					i(93121),	-- Lightning Rod Girdle
+				}),
+				n(BACK, {
+					i(93113),	-- Lightning Rod Drape
+				}),
+				n(WEAPONS, {
+					i(93145),	-- Scavenged Pandaren Sword
+				}),
+			}),
+		}),
+	}),
+});

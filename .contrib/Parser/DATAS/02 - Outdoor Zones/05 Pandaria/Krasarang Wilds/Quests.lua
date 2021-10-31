@@ -154,7 +154,7 @@ _.Zones =
 
 				q(30352, {	-- Crane Mastery
 					["provider"] = { "n", 58779 },	-- Daggle Bombstrider
-					["coord"] = { 70.8, 21.0, KRASARANG_WILDS },
+					["coord"] = { 67.6, 25.6, KRASARANG_WILDS },
 				}),
 
 
@@ -166,7 +166,7 @@ _.Zones =
 				q(31262, {	-- Crane Mastery: Needlebeak
 					["sourceQuests"] = { 30352 },	-- Crane Mastery
 					["provider"] = { "n", 58779 },	-- Daggle Bombstrider
-					["coord"] = { 70.9, 21.0, KRASARANG_WILDS },
+					["coord"] = { 67.6, 25.6, KRASARANG_WILDS },
 					["g"] = {
 						i(88052),	-- Nayeli Waistband
 						i(88051),	-- Mortbreath Waistband
@@ -421,7 +421,7 @@ _.Zones =
 
 				q(30353, {	-- Profit Mastery
 					["provider"] = { "n", 58779 },	-- Daggle Bombstrider
-					["coord"] = { 70.8, 21.0, KRASARANG_WILDS },
+					["coord"] = { 67.6, 25.6, KRASARANG_WILDS },
 					["g"] = {
 						i(81494),	-- Nayeli Gloves
 						i(81495),	-- Mortbreath Gloves
@@ -444,7 +444,7 @@ _.Zones =
 				q(31260, {	-- Profit Mastery: Chasheen
 					["sourceQuests"] = { 30353 },	-- Profit Mastery
 					["provider"] = { "n", 58779 },	-- Daggle Bombstrider
-					["coord"] = { 70.9, 21.0, KRASARANG_WILDS },
+					["coord"] = { 67.6, 25.6, KRASARANG_WILDS },
 				}),
 
 
@@ -634,7 +634,7 @@ _.Zones =
 				q(30344, {	-- The Lost Dynasty
 					["sourceQuests"] = { 30274 },	-- The Arcanic Oubliette
 					["provider"] = { "n", 58745 },	-- Lorekeeper Vaeldrin
-					["coord"] = { 70.6, 28.5, KRASARANG_WILDS },
+					["coord"] = { 50.9, 31.7, KRASARANG_WILDS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(81522),	-- Ring of the Pools of Youth

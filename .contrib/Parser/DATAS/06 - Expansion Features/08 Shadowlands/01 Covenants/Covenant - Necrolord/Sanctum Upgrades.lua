@@ -1058,6 +1058,10 @@ _.HiddenQuestTriggers = {
 	q(63099),	-- Opening 184589, Bag of Potions from Atticus
 	--q(62535),	-- Unknown doing dailies from abom
 	q(60873),	-- Buying Bag of Sin Stones (180442) from Atticus
+-- Enchants
+	q(61187),	-- Enchant from rank 3 anima conductor (spellid=335042)
+	--q(61185),	-- Enchant from rank 3 anima conductor (spellid=335040)
+	--q(61186),	-- Enchant from rank 3 anima conductor (spellid=335041)
 
 -- Stitched Set (armor-type agnostic it seems by slot rewarded)
 	q(63392),	-- Gloves (182502) / Stranglers (182493)

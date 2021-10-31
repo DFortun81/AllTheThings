@@ -1022,7 +1022,6 @@ _.Zones =
 				q(42286),	-- Houndmaster Stroxis
 				q(40136),	-- Immaculate Stonehide Leather
 				q(42376),	-- Inquisitor Tivos
-				q(43957),	-- Jade Darkhaven
 				q(43815),	-- Karthax
 				q(39989),	-- Keepers of the Hammer
 				q(41193),	-- Laying to Rest
@@ -1083,6 +1082,7 @@ _.Zones =
 _.HiddenQuestTriggers = {
 	--q(40473),	-- Tracking Quest - Highmountain Treasure Chest
 	--q(44352),	-- Tracking Quest - Highmountain Treasure Chest (UNderwater Cave) (All Chests seems to have a QuestID attached already...)
+	q(43957),	-- Jade Darkhaven
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {

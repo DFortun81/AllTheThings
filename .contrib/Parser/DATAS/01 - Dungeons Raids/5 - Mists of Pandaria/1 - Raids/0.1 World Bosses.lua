@@ -37,6 +37,7 @@ _.Instances = { tier(MOP_TIER, {
 						i(95979),	-- Columnbreaker Stompers [Crieve got November 24, 2018 on stream]
 						i(95966),	-- Deeproot Treads
 						i(95963),	-- Silentflame Sandals
+						i(95968),	-- Vaultwalker Sabatons
 						i(94295),	-- Primal Egg
 						i(44984),	-- Ammen Vale Lashling
 						i(54436),	-- Blue Clockwork Rocket Bot
