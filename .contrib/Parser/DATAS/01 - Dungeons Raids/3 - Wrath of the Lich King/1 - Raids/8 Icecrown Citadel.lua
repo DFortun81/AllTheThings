@@ -1204,7 +1204,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						i(50992),	-- Waistband of Despair
 					},
 					["sym"] = {
-						{"sub", "pvp_gear_base", WRATH_HEADER, -670, PVP_GLADIATOR },	-- Relentless Gladiator: Season 7 Gladiator Gear
+						{"sub", "pvp_gear_base", WRATH_HEADER, SEASON_RELENTLESS, PVP_GLADIATOR },
 						{"pop"},	-- Discard the Set header and acquire the children.
 						{"exclude", "headerID", NECK, FINGER, -386, BACK, WRIST, WAIST, FEET, WEAPONS },	-- Exclude Neck, Finger, Trinkets, Back, Wrist, Waist, Feet and Weapons
 					},

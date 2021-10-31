@@ -4,7 +4,7 @@
 
 _.PVP =
 {
-	pvp(n(-9983, {	-- Honor
+	pvp(n(PVP_HONOR, {
 		ach(12893, {	-- Honor Level 5
 			i(142380, {	-- Dutiful Gruntling
 				["races"] = HORDE_ONLY,

@@ -16,7 +16,7 @@ local honorLevel50 = {};
 local honorLevel80 = {};
 _.PVP =
 {
-	n(-9983, {	-- Honor
+	n(PVP_HONOR, {
 		ach(12894, { ["groups"] = honorLevel10 }),	-- Honor Level 10
 		ach(12902, { ["groups"] = honorLevel30 }),	-- Honor Level 30
 		ach(12904, { ["groups"] = honorLevel50 }),	-- Honor Level 50

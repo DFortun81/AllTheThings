@@ -8,37 +8,37 @@ _.Achievements =
 	-- Exception: Combatant (Listed 5 times)
 	n(-9969, {	-- Feats of Strength
 		pvp(n(PVP, {
-			n(SEASON_MERCILESS, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Merciless Gladiator: Burning Crusade Season 2
+			n(SEASON_MERCILESS, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 				ach(418, {	-- Merciless Gladiator: Burning Crusade Season 2
 					title(37),	-- Merciless Gladiator <Name>
 				}),
 			})),
-			n(SEASON_VENGEFUL, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Vengeful Gladiator: Burning Crusade Season 3
+			n(SEASON_VENGEFUL, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 				ach(419, {	-- Vengeful Gladiator: Burning Crusade Season 3
 					title(40),	-- Vengeful Gladiator <Name>
 				}),
 			})),
-			n(SEASON_BRUTAL, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Brutal Gladiator: Burning Crusade Season 4
+			n(SEASON_BRUTAL, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 				ach(420, {	-- Brutal Gladiator: Burning Crusade Season 4
 					title(49),	-- Brutal Gladiator <Name>
 				}),
 			})),
-			n(-668, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Deadly Gladiator: Wrath of the Lich King Season 1
+			n(SEASON_DEADLY, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 				ach(3336, {	-- Deadly Gladiator: Wrath of the Lich King Season 1
 					title(56),	-- Deadly Gladiator <Name>
 				}),
 			})),
-			n(-669, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Furious Gladiator: Wrath of the Lich King Season 2
+			n(SEASON_FURIOUS, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 				ach(3436, {	-- Furious Gladiator: Wrath of the Lich King Season 2
 					title(132),	-- Furious Gladiator <Name>
 				}),
 			})),
-			n(-670, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Relentless Gladiator: Wrath of the Lich King Season 3
+			n(SEASON_RELENTLESS, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 				ach(3758, {	-- Relentless Gladiator: Wrath of the Lich King Season 3
 					title(134),	-- Relentless Gladiator <Name>
 				}),
 			})),
-			n(-671, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Wrathful Gladiator: Wrath of the Lich King Season  4
+			n(SEASON_WRATHFUL, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 				ach(4599, {	-- Wrathful Gladiator: Wrath of the Lich King Season  4
 					title(142),	-- Wrathful Gladiator <Name>
 				}),

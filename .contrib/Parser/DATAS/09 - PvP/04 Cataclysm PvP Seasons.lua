@@ -419,13 +419,13 @@ _.PVP =
 			},
 		}),
 		n(-672, {	-- Vicious Gladiator: Season 9
-			n(-9983, {	-- Honor Gear
+			n(PVP_HONOR, {	-- Honor Gear
 				cl(DEATHKNIGHT, {
 					i(146423, {	-- Ensemble: Bloodthirsty Gladiator's Dreadplate Armor
 						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", CATA_HEADER, -672, -9983, 6 },
+							{"sub", "pvp_set_ensemble", CATA_HEADER, -672, PVP_HONOR, 6 },
 							{"select", "itemID", 64684 },	-- Bloodthirsty Gladiator's Armplates of Proficiency
 							{"select", "itemID", 64753 },	-- Bloodthirsty Gladiator's Girdle of Cruelty
 							{"select", "itemID", 64870 },	-- Bloodthirsty Gladiator's Warboots of Cruelty
@@ -471,7 +471,7 @@ _.PVP =
 						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", CATA_HEADER, -672, -9983, 11 },
+							{"sub", "pvp_set_ensemble", CATA_HEADER, -672, PVP_HONOR, 11 },
 							{"select", "itemID", 64698 },	-- Bloodthirsty Gladiator's Bindings of Meditation
 							{"select", "itemID", 64699 },	-- Bloodthirsty Gladiator's Bindings of Prowess
 							{"select", "itemID", 64696 },	-- Bloodthirsty Gladiator's Belt of Cruelty
@@ -576,7 +576,7 @@ _.PVP =
 						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", CATA_HEADER, -672, -9983, 3 },
+							{"sub", "pvp_set_ensemble", CATA_HEADER, -672, PVP_HONOR, 3 },
 							{"select", "itemID", 64872 },	-- Bloodthirsty Gladiator's Wristguards of Accuracy
 							{"select", "itemID", 64873 },	-- Bloodthirsty Gladiator's Wristguards of Alacrity
 							{"select", "itemID", 64781 },	-- Bloodthirsty Gladiator's Links of Accuracy
@@ -631,7 +631,7 @@ _.PVP =
 						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", CATA_HEADER, -672, -9983, 8 },
+							{"sub", "pvp_set_ensemble", CATA_HEADER, -672, PVP_HONOR, 8 },
 							{"select", "itemID", 64723 },	-- Bloodthirsty Gladiator's Cuffs of Accuracy
 							{"select", "itemID", 64721 },	-- Bloodthirsty Gladiator's Cord of Cruelty
 							{"select", "itemID", 64863 },	-- Bloodthirsty Gladiator's Treads of Cruelty
@@ -687,7 +687,7 @@ _.PVP =
 						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", CATA_HEADER, -672, -9983, 2 },
+							{"sub", "pvp_set_ensemble", CATA_HEADER, -672, PVP_HONOR, 2 },
 							{"select", "itemID", 64704 },	-- Bloodthirsty Gladiator's Bracers of Meditation
 							{"select", "itemID", 64705 },	-- Bloodthirsty Gladiator's Bracers of Prowess
 							{"select", "itemID", 64715 },	-- Bloodthirsty Gladiator's Clasp of Cruelty
@@ -767,7 +767,7 @@ _.PVP =
 						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", CATA_HEADER, -672, -9983, 5 },
+							{"sub", "pvp_set_ensemble", CATA_HEADER, -672, PVP_HONOR, 5 },
 							{"select", "itemID", 64724 },	-- Bloodthirsty Gladiator's Cuffs of Meditation
 							{"select", "itemID", 64722 },	-- Bloodthirsty Gladiator's Cord of Meditation
 							{"select", "itemID", 64864 },	-- Bloodthirsty Gladiator's Treads of Meditation
@@ -838,7 +838,7 @@ _.PVP =
 						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", CATA_HEADER, -672, -9983, 4 },
+							{"sub", "pvp_set_ensemble", CATA_HEADER, -672, PVP_HONOR, 4 },
 							{"select", "itemID", 64685 },	-- Bloodthirsty Gladiator's Armwraps of Accuracy
 							{"select", "itemID", 64686 },	-- Bloodthirsty Gladiator's Armwraps of Alacrity
 							{"select", "itemID", 64865 },	-- Bloodthirsty Gladiator's Waistband of Accuracy
@@ -893,7 +893,7 @@ _.PVP =
 						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", CATA_HEADER, -672, -9983, 7 },
+							{"sub", "pvp_set_ensemble", CATA_HEADER, -672, PVP_HONOR, 7 },
 							{"select", "itemID", 64681 },	-- Bloodthirsty Gladiator's Armbands of Meditation
 							{"select", "itemID", 64682 },	-- Bloodthirsty Gladiator's Armbands of Prowess
 							{"select", "itemID", 64867 },	-- Bloodthirsty Gladiator's Waistguard of Cruelty
@@ -998,7 +998,7 @@ _.PVP =
 						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", CATA_HEADER, -672, -9983, 9 },
+							{"sub", "pvp_set_ensemble", CATA_HEADER, -672, PVP_HONOR, 9 },
 							{"select", "itemID", 64725 },	-- Bloodthirsty Gladiator's Cuffs of Prowess
 							{"select", "itemID", 64720 },	-- Bloodthirsty Gladiator's Cord of Accuracy
 							{"select", "itemID", 64862 },	-- Bloodthirsty Gladiator's Treads of Alacrity
@@ -1044,7 +1044,7 @@ _.PVP =
 						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", CATA_HEADER, -672, -9983, 1 },
+							{"sub", "pvp_set_ensemble", CATA_HEADER, -672, PVP_HONOR, 1 },
 							{"select", "itemID", 64683 },	-- Bloodthirsty Gladiator's Armplates of Alacrity
 							{"select", "itemID", 64754 },	-- Bloodthirsty Gladiator's Girdle of Prowess
 							{"select", "itemID", 64869 },	-- Bloodthirsty Gladiator's Warboots of Alacrity

@@ -1881,7 +1881,7 @@ _.Zones =
 							i(138715, {	-- Ensemble: Dreadful Gladiator's Dreadplate Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", MOP_HEADER, -675, -9983, 6 },
+									{"sub", "pvp_set_ensemble", MOP_HEADER, -675, PVP_HONOR, 6 },
 									{"select", "itemID", 84438 },	-- Dreadful Gladiator's Armplates of Proficiency
 									{"select", "itemID", 84434 },	-- Dreadful Gladiator's Girdle of Accuracy
 									{"select", "itemID", 84436 },	-- Dreadful Gladiator's Warboots of Cruelty
@@ -1908,7 +1908,7 @@ _.Zones =
 							i(138719, {	-- Ensemble: Dreadful Gladiator's Dragonhide Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", MOP_HEADER, -675, -9983, 11 },
+									{"sub", "pvp_set_ensemble", MOP_HEADER, -675, PVP_HONOR, 11 },
 									{"select", "itemID", 84384 },	-- Dreadful Gladiator's Bindings of Meditation
 									{"select", "itemID", 84392 },	-- Dreadful Gladiator's Bindings of Prowess
 									{"select", "itemID", 84390 },	-- Dreadful Gladiator's Belt of Cruelty
@@ -1968,7 +1968,7 @@ _.Zones =
 							i(138718, {	-- Ensemble: Dreadful Gladiator's Chain Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", MOP_HEADER, -675, -9983, 3 },
+									{"sub", "pvp_set_ensemble", MOP_HEADER, -675, PVP_HONOR, 3 },
 									{"select", "itemID", 84407 },	-- Dreadful Gladiator's Wristguards of Accuracy
 									{"select", "itemID", 84406 },	-- Dreadful Gladiator's Wristguards of Alacrity
 									{"select", "itemID", 84403 },	-- Dreadful Gladiator's Links of Accuracy
@@ -1998,7 +1998,7 @@ _.Zones =
 							i(138722, {	-- Ensemble: Dreadful Gladiator's Silk Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", MOP_HEADER, -675, -9983, 8 },
+									{"sub", "pvp_set_ensemble", MOP_HEADER, -675, PVP_HONOR, 8 },
 									{"select", "itemID", 84360 },	-- Dreadful Gladiator's Cuffs of Prowess
 									{"select", "itemID", 84353 },	-- Dreadful Gladiator's Cord of Cruelty
 									{"select", "itemID", 84356 },	-- Dreadful Gladiator's Treads of Cruelty
@@ -2025,7 +2025,7 @@ _.Zones =
 							i(138720, {	-- Ensemble: Dreadful Gladiator's Ironskin Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", MOP_HEADER, -675, -9983, 10 },
+									{"sub", "pvp_set_ensemble", MOP_HEADER, -675, PVP_HONOR, 10 },
 									{"select", "itemID", 84461 },	-- Dreadful Gladiator's Armwraps of Accuracy
 									{"select", "itemID", 84456 },	-- Dreadful Gladiator's Waistband of Cruelty
 									{"select", "itemID", 84459 },	-- Dreadful Gladiator's Boots of Alacrity
@@ -2067,7 +2067,7 @@ _.Zones =
 							i(138716, {	-- Ensemble: Dreadful Gladiator's Scaled Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", MOP_HEADER, -675, -9983, 2 },
+									{"sub", "pvp_set_ensemble", MOP_HEADER, -675, PVP_HONOR, 2 },
 									{"select", "itemID", 84428 },	-- Dreadful Gladiator's Bracers of Meditation
 									{"select", "itemID", 84427 },	-- Dreadful Gladiator's Bracers of Prowess
 									{"select", "itemID", 84423 },	-- Dreadful Gladiator's Clasp of Cruelty
@@ -2112,7 +2112,7 @@ _.Zones =
 							i(138723, {	-- Ensemble: Dreadful Gladiator's Satin Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", MOP_HEADER, -675, -9983, 5 },
+									{"sub", "pvp_set_ensemble", MOP_HEADER, -675, PVP_HONOR, 5 },
 									{"select", "itemID", 84361 },	-- Dreadful Gladiator's Cuffs of Meditation
 									{"select", "itemID", 84355 },	-- Dreadful Gladiator's Cord of Meditation
 									{"select", "itemID", 84358 },	-- Dreadful Gladiator's Treads of Meditation
@@ -2154,7 +2154,7 @@ _.Zones =
 							i(138721, {	-- Ensemble: Dreadful Gladiator's Leather Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", MOP_HEADER, -675, -9983, 4 },
+									{"sub", "pvp_set_ensemble", MOP_HEADER, -675, PVP_HONOR, 4 },
 									{"select", "itemID", 84460 },	-- Dreadful Gladiator's Armwraps of Alacrity
 									{"select", "itemID", 84457 },	-- Dreadful Gladiator's Waistband of Accuracy
 									{"select", "itemID", 84458 },	-- Dreadful Gladiator's Boots of Cruelty
@@ -2181,7 +2181,7 @@ _.Zones =
 							i(138717, {	-- Ensemble: Dreadful Gladiator's Ringmail Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", MOP_HEADER, -675, -9983, 7 },
+									{"sub", "pvp_set_ensemble", MOP_HEADER, -675, PVP_HONOR, 7 },
 									{"select", "itemID", 84471 },	-- Dreadful Gladiator's Armbands of Meditation
 									{"select", "itemID", 84470 },	-- Dreadful Gladiator's Armbands of Prowess
 									{"select", "itemID", 84482 },	-- Dreadful Gladiator's Waistguard of Cruelty
@@ -2241,7 +2241,7 @@ _.Zones =
 							i(138724, {	-- Ensemble: Dreadful Gladiator's Felweave Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", MOP_HEADER, -675, -9983, 9 },
+									{"sub", "pvp_set_ensemble", MOP_HEADER, -675, PVP_HONOR, 9 },
 									{"select", "itemID", 84359 },	-- Dreadful Gladiator's Cuffs of Accuracy
 									{"select", "itemID", 84354 },	-- Dreadful Gladiator's Cord of Accuracy
 									{"select", "itemID", 84357 },	-- Dreadful Gladiator's Treads of Alacrity
@@ -2268,7 +2268,7 @@ _.Zones =
 							i(138714, {	-- Ensemble: Dreadful Gladiator's Plate Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", MOP_HEADER, -675, -9983, 1 },
+									{"sub", "pvp_set_ensemble", MOP_HEADER, -675, PVP_HONOR, 1 },
 									{"select", "itemID", 84439 },	-- Dreadful Gladiator's Armplates of Alacrity
 									{"select", "itemID", 84435 },	-- Dreadful Gladiator's Girdle of Prowess
 									{"select", "itemID", 84437 },	-- Dreadful Gladiator's Warboots of Alacrity

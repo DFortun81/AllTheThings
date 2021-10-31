@@ -483,7 +483,7 @@ _.Zones =
 					["coord"] = { 74.7, 68.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"sub", "pvp_gear_base", CATA_HEADER, -672, -9983 },
+						{"sub", "pvp_gear_base", CATA_HEADER, -672, PVP_HONOR },
 						{"pop"},	-- Discard the Set header and acquire the children.
 					},
 				}),

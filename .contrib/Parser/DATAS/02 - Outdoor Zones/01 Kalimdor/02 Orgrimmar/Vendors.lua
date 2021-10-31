@@ -2551,7 +2551,7 @@ _.Zones =
 					["itemID"] = 137642,	-- Mark of Honor
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						{"sub", "pvp_gear_base", CATA_HEADER, -672, -9983 },
+						{"sub", "pvp_gear_base", CATA_HEADER, -672, PVP_HONOR },
 						{"pop"},	-- Discard the Set header and acquire the children.
 					},
 				}),
