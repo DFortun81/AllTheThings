@@ -332,8 +332,11 @@ _.Zones =
 						i(129069),	-- Stalker Collar Bracers
 					},
 				}),
+				n(109641, {	-- Arcanor Prime
+					["questID"] = 45494,
+				--	["coord"] = { , , AZSUNA },
+				}),
 --[[ TODO:
---				n(109641, {	-- Arcanor Prime }),
 --				n(101596, {	-- Charfeather }),
 --				n(108255, {	-- Coura, Mistress of Arcana }),
 --				n(109702, {	-- Deepclaw }),

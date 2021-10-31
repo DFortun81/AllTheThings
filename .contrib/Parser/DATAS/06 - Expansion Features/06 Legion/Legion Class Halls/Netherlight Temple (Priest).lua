@@ -14,23 +14,6 @@ _.ExpansionFeatures =
 						n(-10067, {	-- Artifact Quests
 							i(141332, {	-- The Annals of Light and Shadow
 								["description"] = "Obtain 12 of these books to complete the set and receive the Discipline Priest Hidden Artifact Appearance.\n\nStart with Volume VI and Archivist Inkforge in your Order Hall.",
-								-- ["maps"] = {	-- TODO: review
-								-- 	AZSUNA,
-								-- 	751,		-- Black Rook Hold
-								-- 	LEGION_DALARAN,
-								-- 	LEGION_THE_UNDERBELLY,
-								-- 	629,		-- Aegwynn's Gallery (Dalaran)
-								-- 	DRAGONBLIGHT,	-- New Hearthglen
-								-- 	SCARLET_MONASTERY,	-- Scarlet Halls
-								-- 	SCHOLOMANCE,
-								-- 	477,		-- Scholomance
-								-- 	478,		-- Scholomance
-								-- 	479,		-- Scholomance
-								-- 	STORMHEIM,
-								-- 	SURAMAR,
-								-- 	431, 432,	-- Scarlet Halls
-								-- 	KARAZHAN, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366,	-- Karazhan
-								-- },
 								["g"] = {
 									q(44342, {	-- Volume VI
 										["name"] = "|cFFFFFFFFVolume VI|r | Archivist Inkforge in the class order hall.",

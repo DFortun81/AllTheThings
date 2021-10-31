@@ -33,7 +33,7 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 43697 },	-- Warriors of Light
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-							["coord"] = { 72.6, 25.8, BROKEN_SHORE },
+							["coord"] = { 72.6, 25.8, 24 },
 						}),
 						q(45566, {	-- A Knight's Belongings
 							["sourceQuests"] = { 45565 },	-- Further Training
@@ -103,9 +103,7 @@ _.ExpansionFeatures =
 							["classes"] = { PALADIN },
 							["provider"] = { "o", 252232 },	-- Aponi's Libram
 							["coord"] = { 66.2, 26.1, AZSUNA },
-							["maps"] = {
-								748,	-- Niskara
-							},
+							["maps"] = { 748 },	-- Niskara
 						}),
 						q(43487, {	-- Assault on Violet Hold: The Fel Lexicon
 							["sourceQuests"] = { 43486 },	-- Cracking the Codex
@@ -327,6 +325,12 @@ _.ExpansionFeatures =
 						}),
 						q(45975, {	-- Investigate the Broken Shore
 							["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
+						}),
+						q(45143, {	-- Judgement Awaits
+							["sourceQuests"] = { 47137 },	-- Champions of Legionfall
+							["classes"] = { PALADIN },
+							["provider"] = { "n", 90249 },	-- Lady Liadrin
+							["coord"] = { 50.3, 74.1, 24 },
 						}),
 						q(42771, {	-- Keeping the Peace
 							["sourceQuests"] = { 42770 },	-- Seeking Guidance
