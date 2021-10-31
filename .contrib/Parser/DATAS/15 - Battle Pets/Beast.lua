@@ -33,7 +33,9 @@ _.BattlePets =
 			p(1884),	-- Baby Elderhorn
 			p(2551),	-- Baby Stonehide
 			p(2537),	-- Baby Zandalari Raptor
-			p(156),		-- Bananas
+			p(156, {		-- Bananas
+				["u"] = BLIZZARD_BALANCE,
+			}),
 			p(2047),	-- Ban-Fu, Cub of Ban-Lu
 			p(2123),	-- Bile Larva
 			p(75),		-- Black Kingsnake
@@ -73,7 +75,9 @@ _.BattlePets =
 			p(634),		-- Crystal Spider
 			p(1809),	-- Crystalline Broodling
 			p(3108),	-- Curious Purrkin
-			p(2780),	-- Daisy
+			p(2780, {	-- Daisy
+				["u"] = BLIZZARD_BALANCE,
+			}),
 			p(343),		-- Darkmoon Cub
 			p(330),		-- Darkmoon Monkey
 			p(508),		-- Darkshore Cub

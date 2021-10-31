@@ -39,13 +39,13 @@ _.InGameShop =
 	n(-162, {	-- Pets
 		un(BLIZZARD_BALANCE, i(106240)),			-- Alterac Brew-Pup
 		un(BLIZZARD_BALANCE, i(118516)),			-- Argi
-		battlepet(156),							-- Bananas (currently free in SL; change to BLIZZARD_BALANCE after the promotion ends)
+		un(BLIZZARD_BALANCE, battlepet(156)),		-- Bananas
 		un(BLIZZARD_BALANCE, i(98550)),				-- Blossoming Ancient
 		un(BLIZZARD_BALANCE, i(128424)),			-- Brightpaw
 		un(BLIZZARD_BALANCE, i(160588)),			-- Cap'n Crackers
 		un(REMOVED_FROM_GAME, i(70099)),			-- Cenarion Hatchling
 		un(BLIZZARD_BALANCE, i(92707)),				-- Cinder Kitten
-		battlepet(2780),							-- Daisy (currently free in SL; change to BLIZZARD_BALANCE after the promotion ends)
+		un(BLIZZARD_BALANCE, battlepet(2780)),		-- Daisy
 		un(BLIZZARD_BALANCE, battlepet(2623)),		-- Dottie (no in-game item)
 		un(REMOVED_FROM_GAME, i(69847)),			-- Guardian Cub (Original Version which was bound for 24h)
 		un(REMOVED_FROM_GAME, i(72068)),			-- Guardian Cub
