@@ -23,6 +23,7 @@ local L = app.L;
 	--TODO: L.REQUIRES = "Requires";
 	--TODO: L.RACE_LOCKED = "Race Locked";
 	--TODO: L.PLEASE_REPORT_MESSAGE = ": Please report this to the ATT Discord in #errors! Thanks!";
+	--TODO: L.REPORT_TIP = "\n(Ctrl+C to copy multiline report to your clipboard)";
 	--TODO: L.NOT_AVAILABLE_IN_PL = "Not available in Personal Loot.";
 	--TODO: L.MARKS_OF_HONOR_DESC = "Marks of Honor must be viewed in a Popout window to see all of the normal 'Contains' content.\n(Type '/att ' in chat then Shift-Click to link the item)\n\n|cFFfe040fAfter purchasing and using an ensemble, relogging & a forced ATT refresh (in this order)\nmay be required to register all the items correctly.|r";
 	--TODO: L.ITEM_GIVES_REP = "Provides Reputation with '";
@@ -186,7 +187,6 @@ local L = app.L;
 	--TODO: L.PROFESSION_LIST_DESC = "Open your professions to cache them.";
 	--TODO: L.CACHED_RECIPES_1 = "Cached ";
 	--TODO: L.CACHED_RECIPES_2 = " known recipes!";
-	--TODO: L.WORLD_QUESTS = "World Quests";
 	--TODO: L.WORLD_QUESTS_DESC = "These are World Quests and other time-limited Things that are currently available somewhere. Go get 'em!";
 	--TODO: L.QUESTS_DESC = "Shows all possible QuestID's in the game in ascending numeric order.";
 	--TODO: L.UPDATE_WORLD_QUESTS = "Update World Quests Now";
@@ -279,6 +279,7 @@ local L = app.L;
 		--TODO: L.GENERAL_THINGS_LABEL = "General Things";
 		--TODO: L.EXPANSION_THINGS_LABEL = "Expansion Things";
 		--TODO: L.EXTRA_THINGS_LABEL = "Additional Things";
+		--TODO: L.STRANGER_THINGS_LABEL = "Stranger Things";
 		--TODO: L.ACHIEVEMENTS_CHECKBOX_TOOLTIP = "Enable this option to track achievements.";
 		--TODO: L.TMOG_CHECKBOX_TOOLTIP = "Enable this option to track appearance acquisition.\n\nNOTE: Disabling this option also disables all fanfares and acquisition logic.  You can use this toggle as a way to prevent lag spikes while doing important group content, but bear in mind the computation will need to occur once re-enabled.\n\nTracked Account Wide by Default.";
 		--TODO: L.AZERITE_ESSENCES_CHECKBOX_TOOLTIP = "Enable this option to track Azerite Essences.\n\nTracked per character by default.";
@@ -573,7 +574,7 @@ for key,value in pairs({
 		--TODO: ["25 Player"] = "25M",
 		--TODO: ["25 Player (Heroic)"] = "25M (H)",
 		--TODO: ["Emissary Quests"] = "Emissary",
-		--TODO: ["World Quests"] = "WQ",
+		--TODO: [TRACKER_HEADER_WORLD_QUESTS] = "WQ",	-- ["World Quests"] = "WQ"
 		--TODO: ["WoW Anniversary"] = "Anniversary",
 		--TODO: ["Covenant:"] = "Cov:",
 })
@@ -1865,6 +1866,7 @@ for key,value in pairs({
 	[241280] = "Arqueta",	-- Treasure Chest
 	[241433] = "Saco olvidado",	-- Forgotten Sack
 	[241434] = "Lanza de caza atascada",	-- Lodged Hunting Spear
+	[241449] = "Alijo de la Isla Colmillo Negro",	-- Blackfang Island Cache
 	[241450] = "Púa vil cristalizada",	-- Crystallized Fel Spike
 	[241504] = "Cristal pulido",	-- Polished Crystal
 	[241518] = "Arqueta pequeña",	-- Small Treasure Chest

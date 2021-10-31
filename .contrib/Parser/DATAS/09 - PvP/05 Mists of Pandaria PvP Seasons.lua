@@ -1438,7 +1438,7 @@ _.PVP =
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", -10041, -675, PVP_GLADIATOR, 1 },
-								{"select", "itemID", 84985 },	-- Malevolent Gladiator's Armplates of Alacrity
+							--	{"select", "itemID", 84985 },	-- Malevolent Gladiator's Armplates of Alacrity -- 25/10.2021 Sha/DK Only
 								{"select", "itemID", 84950 },	-- Malevolent Gladiator's Girdle of Prowess
 								{"select", "itemID", 84822 },	-- Malevolent Gladiator's Warboots of Alacrity
 								{"select", "itemID", 91659 },	-- Malevolent Gladiator's Armplates of Alacrity
@@ -6376,24 +6376,22 @@ _.PVP =
 							i(100397),	-- Grievous Gladiator's Warboots of Cruelty
 						}),
 						f(51,	{	-- Neck
-							-- From BMAH
-							un(9, i(100504)),	-- Grievous Gladiator's Choker of Accuracy
-							un(9, i(100503)),	-- Grievous Gladiator's Choker of Proficiency
-							un(9, i(100198)),	-- Grievous Gladiator's Necklace of Proficiency
-							un(9, i(100199)),	-- Grievous Gladiator's Necklace of Prowess
-							un(9, i(100232)),	-- Grievous Gladiator's Pendant of Alacrity
-							un(9, i(100231)),	-- Grievous Gladiator's Pendant of Cruelty
-							un(9, i(100233)),	-- Grievous Gladiator's Pendant of Meditation
+							un(BLACK_MARKET, i(100504)),	-- Grievous Gladiator's Choker of Accuracy
+							un(BLACK_MARKET, i(100503)),	-- Grievous Gladiator's Choker of Proficiency
+							un(BLACK_MARKET, i(100198)),	-- Grievous Gladiator's Necklace of Proficiency
+							un(BLACK_MARKET, i(100199)),	-- Grievous Gladiator's Necklace of Prowess
+							un(BLACK_MARKET, i(100232)),	-- Grievous Gladiator's Pendant of Alacrity
+							un(BLACK_MARKET, i(100231)),	-- Grievous Gladiator's Pendant of Cruelty
+							un(BLACK_MARKET, i(100233)),	-- Grievous Gladiator's Pendant of Meditation
 						}),
 						f(52,	{	-- Finger
-							-- From BMAH
-							un(9, i(100235)),	-- Grievous Gladiator's Band of Accuracy
-							un(9, i(100234)),	-- Grievous Gladiator's Band of Cruelty
-							un(9, i(100236)),	-- Grievous Gladiator's Band of Meditation
-							un(9, i(100202)),	-- Grievous Gladiator's Ring of Accuracy
-							un(9, i(100201)),	-- Grievous Gladiator's Ring of Cruelty
-							un(9, i(100507)),	-- Grievous Gladiator's Signet of Accuracy
-							un(9, i(100506)),	-- Grievous Gladiator's Signet of Cruelty
+							un(BLACK_MARKET, i(100235)),	-- Grievous Gladiator's Band of Accuracy
+							un(BLACK_MARKET, i(100234)),	-- Grievous Gladiator's Band of Cruelty
+							un(BLACK_MARKET, i(100236)),	-- Grievous Gladiator's Band of Meditation
+							un(BLACK_MARKET, i(100202)),	-- Grievous Gladiator's Ring of Accuracy
+							un(BLACK_MARKET, i(100201)),	-- Grievous Gladiator's Ring of Cruelty
+							un(BLACK_MARKET, i(100507)),	-- Grievous Gladiator's Signet of Accuracy
+							un(BLACK_MARKET, i(100506)),	-- Grievous Gladiator's Signet of Cruelty
 						}),
 						f(53,	{	-- Trinket
 							un(REMOVED_FROM_GAME, i(100195)),	-- Grievous Gladiator's Badge of Conquest
@@ -7871,24 +7869,22 @@ _.PVP =
 							i(100644),	-- Grievous Gladiator's Warboots of Cruelty
 						}),
 						f(51,	{	-- Neck
-							-- From BMAH
-							un(9, i(100584)),	-- Grievous Gladiator's Choker of Accuracy
-							un(9, i(100695)),	-- Grievous Gladiator's Choker of Proficiency
-							un(9, i(100624)),	-- Grievous Gladiator's Necklace of Proficiency
-							un(9, i(100625)),	-- Grievous Gladiator's Necklace of Prowess
-							un(9, i(100703)),	-- Grievous Gladiator's Pendant of Alacrity
-							un(9, i(100719)),	-- Grievous Gladiator's Pendant of Cruelty
-							un(9, i(100682)),	-- Grievous Gladiator's Pendant of Meditation
+							un(BLACK_MARKET, i(100584)),	-- Grievous Gladiator's Choker of Accuracy
+							un(BLACK_MARKET, i(100695)),	-- Grievous Gladiator's Choker of Proficiency
+							un(BLACK_MARKET, i(100624)),	-- Grievous Gladiator's Necklace of Proficiency
+							un(BLACK_MARKET, i(100625)),	-- Grievous Gladiator's Necklace of Prowess
+							un(BLACK_MARKET, i(100703)),	-- Grievous Gladiator's Pendant of Alacrity
+							un(BLACK_MARKET, i(100719)),	-- Grievous Gladiator's Pendant of Cruelty
+							un(BLACK_MARKET, i(100682)),	-- Grievous Gladiator's Pendant of Meditation
 						}),
 						f(52,	{	-- Finger
-							-- From BMAH
-							un(9, i(100593)),	-- Grievous Gladiator's Band of Accuracy
-							un(9, i(100620)),	-- Grievous Gladiator's Band of Cruelty
-							un(9, i(100704)),	-- Grievous Gladiator's Band of Meditation
-							un(9, i(100629)),	-- Grievous Gladiator's Ring of Accuracy
-							un(9, i(100587)),	-- Grievous Gladiator's Ring of Cruelty
-							un(9, i(100692)),	-- Grievous Gladiator's Signet of Accuracy
-							un(9, i(100647)),	-- Grievous Gladiator's Signet of Cruelty
+							un(BLACK_MARKET, i(100593)),	-- Grievous Gladiator's Band of Accuracy
+							un(BLACK_MARKET, i(100620)),	-- Grievous Gladiator's Band of Cruelty
+							un(BLACK_MARKET, i(100704)),	-- Grievous Gladiator's Band of Meditation
+							un(BLACK_MARKET, i(100629)),	-- Grievous Gladiator's Ring of Accuracy
+							un(BLACK_MARKET, i(100587)),	-- Grievous Gladiator's Ring of Cruelty
+							un(BLACK_MARKET, i(100692)),	-- Grievous Gladiator's Signet of Accuracy
+							un(BLACK_MARKET, i(100647)),	-- Grievous Gladiator's Signet of Cruelty
 						}),
 						f(53,	{	-- Trinket
 							un(REMOVED_FROM_GAME, i(100603)),	-- Grievous Gladiator's Badge of Conquest

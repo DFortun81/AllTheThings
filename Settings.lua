@@ -1810,6 +1810,18 @@ ExtraThingsLabel:SetJustifyH("LEFT");
 ExtraThingsLabel:SetText(L["EXTRA_THINGS_LABEL"]);
 ExtraThingsLabel:Show();
 table.insert(settings.MostRecentTab.objects, ExtraThingsLabel);
+-- Halloween Easter Egg
+ExtraThingsLabel.OnRefresh = function(self)
+    C_Calendar.OpenCalendar();
+    local date = C_DateAndTime.GetCurrentCalendarTime();
+    local numEvents = C_Calendar.GetNumDayEvents(0, date.monthDay);
+    for i=1, numEvents do
+        local event = C_Calendar.GetHolidayInfo(0, date.monthDay, i);
+        if event.texture == 235461 then -- Non-localised way to detect specific holiday, I hope?
+            self:SetText(L["STRANGER_THINGS_LABEL"]);
+        end
+    end
+end;
 
 local DebugModeCheckBox = child:CreateCheckBox(L["DEBUG_MODE"],
 function(self)
@@ -2625,7 +2637,7 @@ SeasonalFiltersLabel:SetPoint("TOP", settings.equipfilterdefault, "BOTTOM", 0, -
 
 -- Stuff to order the Holidays manually
 local unobtainables = L["UNOBTAINABLE_ITEM_REASONS"];
-local holidayOrder = { 1012, 1016, 1015, 1014, 1007, 1006, 1010, 1001, 1008, 1005, 1011, 1000, 1004, 1002, 1017, 1013, 1003 };
+local holidayOrder = { 1012, 1015, 1016, 1014, 1007, 1006, 1010, 1001, 1008, 1005, 1011, 1000, 1004, 1002, 1017, 1013, 1003 };
 
 local SeasonalAllCheckBox = child:CreateCheckBox(L["SEASONAL_ALL"],
 function(self)

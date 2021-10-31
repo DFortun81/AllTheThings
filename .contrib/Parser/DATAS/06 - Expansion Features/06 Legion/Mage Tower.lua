@@ -2,21 +2,22 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
+-- #if BEFORE BFA
+local MageTowerFilter = {["u"] = 41};
+-- #else
+local MageTowerFilter =
+{["timeline"] = {
+	"added 7.2.0",
+	"removed 8.0.1",
+},};
+-- #endif
+
 _.ExpansionFeatures =
 {
-	tier(LEGION_TIER, {
+	tier(LEGION_TIER, bubbleDown(MageTowerFilter, {
 		n(-10048, {	-- Mage Tower
 			["description"] = "The Mage Tower Challenges were solo encounters designed for all of the 36 talent specializations in the game during Legion. They were designed to be challenging, but beatable. Access to these challenges was removed with the BFA Prepatch, 8.0.1.\n\nCongratulations to everyone that worked really hard attempting to collect all of these appearances!\n\n - Crieve (31/36)",
-			-- #if BEFORE BFA
-			["u"] = 41,	-- Mage Tower Appearances
-			["g"] = bubbleDown({["u"] = 41}, {	-- Mage Tower Appearances
-			-- #else
-			["timeline"] = {
-				"added 7.2.0",
-				"removed 8.0.1",
-			},
-			["g"] = bubbleDown({["timeline"] = { "added 7.2.0", "removed 8.0.1", },}, {
-			-- #endif
+			["g"] = {
 				q(46065, {	-- An Impossible Foe
 					["classes"] = {
 						DEATHKNIGHT,	-- Unholy
@@ -252,7 +253,7 @@ _.ExpansionFeatures =
 						}),
 					},
 				}),
-			}),
+			},
 		}),
-	}),
+	})),
 };

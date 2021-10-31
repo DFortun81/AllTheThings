@@ -701,8 +701,8 @@ profession(BLACKSMITHING, {
 							["recipeID"] = 16983--[[Serenity]]
 						},
 						{	-- Volcanic Hammer
-							["recipeID"] = 16984--[[Volcanic Hammer]]
-							-- Recipe drop from Volchan is either removed or extremely low chance since Cata, leaving as is for now but recipe does now show in the profession window now.
+							["recipeID"] = 16984,--[[Volcanic Hammer]]
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Blazing Rapier
 							["recipeID"] = 16978--[[Blazing Rapier]]

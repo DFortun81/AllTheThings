@@ -390,6 +390,20 @@ _.PVP =
 							}),
 						},
 					}),
+					q(37483, {	-- Captian's Whistle (A)
+						["repeatable"] = true,
+						["provider"] = { "n", 84173 },	-- Commander Anne Dunworthy
+						["coord"] = { 44.6, 74.0, 1478 },
+						["races"] = ALLIANCE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(37484, {	-- Captian's Whistle (H)
+						["repeatable"] = true,
+						["provider"] = { "n", 84473 },	-- General Ushet Wolfbarger
+						["coord"] = { 45.0, 27.8, 1478 },
+						["races"] = HORDE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(39096, {	-- Slay Them All! (A)
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,

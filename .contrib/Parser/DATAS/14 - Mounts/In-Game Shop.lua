@@ -25,6 +25,7 @@ _.Mounts =
 		un(BLIZZARD_BALANCE, i(156564)),		-- Shu-zen, the Divine Sentinel
 		un(BLIZZARD_BALANCE, mount(308078)),	-- Squeakers, the Trickster
 		un(BLIZZARD_BALANCE, mount(326390)),	-- Steamscale Incinerator
+		un(BLIZZARD_BALANCE, mount(317177)),	-- Sunwarmed Purrkin
 		un(REMOVED_FROM_GAME, i(92724)),			-- Swift Windsteed
 		un(BLIZZARD_BALANCE, i(166776)),		-- Sylverian Dreamer
 		un(BLIZZARD_BALANCE, i(160589)),		-- The Dreadwake

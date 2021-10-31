@@ -803,7 +803,7 @@ _.HiddenQuestTriggers = {
 		q(63549),	-- Sinister Gladiator's Arsenal (Horde)
 		q(63550),	-- Sinister Aspirant's Arsenal (Alliance)
 		q(63551),	-- Sinister Aspirant's Arsenal (Horde)
-		
+
 		-- PvP Assassin
 		q(63389),	-- Killed and looted Horde Assasin(as Alliance obviously)
 		q(63390),	-- Killed and looted Horde Assasin(as Alliance obviously)
@@ -929,7 +929,7 @@ _.HiddenQuestTriggers = {
 		q(57839),	-- Totems lvl 5
 
 		q(58572),	-- playing console game, remembthon something
-		
+
 		--------------------
 		--   NYI QUESTS   --
 		--------------------
@@ -971,11 +971,13 @@ _.HiddenQuestTriggers = {
 		q(35391),	-- Silence the Call - completed with quest 35083
 		q(35392),	-- The Nether Approaches - completed with quest 35087
 		q(36501),	-- Iron Horde Invasion - completed with quest 36498
+		q(36635),	-- Your First Work Order - completed with quest 35168 & 37569
 		q(37185),	-- A Personal Summons - completed with quest 28790 & 28825
 		q(37189),	-- A Personal Summons - completed with quest 28825
 		q(37190),	-- Iron Horde Invasion - completed with quest 36499
 		q(37196),	-- Iron Horde Invasion - completed with quest 36498
 		q(37441),	-- Solanian's Belongings - completed with quest 37443
+		q(37564),	-- Your First Blacksmithing Work Order - completed with quest 35168 & 37569
 		q(37667),	-- Building for Professions - completed with quest 36100 & 37669
 		q(45405),	-- Breaching the Sanctum - completed with quest 44719
 		q(51845),	-- Storm's End - completed with quest 50824
@@ -3996,7 +3998,6 @@ _.HiddenQuestTriggers = {
 		q(62513),	-- triggered when Ember Court ended, Week 6 (Droman Aliothe and Sika as guests and they were elated)
 		q(62517),	-- triggered when Ember Court ended, Week 6 (Droman Aliothe and Sika as guests and they were elated)
 		q(62528),	-- triggered when Ember Court Ended, i give up on tracking weeks, but had Kleia+Pelagos and Cryptkeeper Kassir as guests and they were Elated.  no previous K+P/Cryptkeeper quests triggered
-		q(62523),	-- triggered when Ember Court Ended, had Kleia+Pelagos/Cryptkeeper Kassir as guests, both Elated, both hit Friend
 		q(62508),	-- Ember Court End - (Alexandros Mograine:Elated / Droman Aliothe: Uncomfortable / Sika: Elated - got Alexandros Mograine criteria for People Pleaser + Be Our Guest, possibly that, since i'd done ECs with the other 2 before)
 		q(62520),	-- Ember Court End - (Alexandros Mograine:Elated / Droman Aliothe: Uncomfortable / Sika: Elated - got Alexandros Mograine criteria for People Pleaser + Be Our Guest, possibly that, since i'd done ECs with the other 2 before)
 		q(62490),	-- Ember Court End - (Droman Aliothe:Elated / Cryptkeeper Kassir:Elated / Polemarch Adrestes:Elated / The Countess:Elated)

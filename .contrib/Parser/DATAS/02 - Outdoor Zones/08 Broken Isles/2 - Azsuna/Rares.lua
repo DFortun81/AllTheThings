@@ -104,6 +104,10 @@ _.Zones =
 						i(129073),	-- Bitterbrine's Signet Ring
 					},
 				}),
+				n(109677, {	-- Chief Treasurer Jabrill
+					["questID"] = 45491,
+					["coord"] = { 58.9, 76.6, AZSUNA },
+				 }),
 				n(107266, {	-- Commander Soraax
 					["u"] = REMOVED_FROM_GAME,	-- as of 8.3, no sign of him or his world quest for a very long time
 					["questID"] = 44673,
@@ -328,10 +332,12 @@ _.Zones =
 						i(129069),	-- Stalker Collar Bracers
 					},
 				}),
+				n(109641, {	-- Arcanor Prime
+					["questID"] = 45494,
+				--	["coord"] = { , , AZSUNA },
+				}),
 --[[ TODO:
---				n(109641, {	-- Arcanor Prime }),
 --				n(101596, {	-- Charfeather }),
---				n(109677, {	-- Chief Treasurer Jabrill }),
 --				n(108255, {	-- Coura, Mistress of Arcana }),
 --				n(109702, {	-- Deepclaw }),
 --				n(109584, {	-- Fjordun }),

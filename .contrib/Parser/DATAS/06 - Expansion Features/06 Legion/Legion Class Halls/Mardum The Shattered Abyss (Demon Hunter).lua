@@ -530,7 +530,6 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 42787 },	-- Deal With it Personally
 							["provider"] = { "n", 108782 },	-- Belath Dawnblade
 							["coord"] = { 57.6, 53.3, 720 },
-							["lvl"] = 110,
 						}),
 						q(42594, {	-- Move Like No Other
 							["sourceQuests"] = { 42593 },	-- The Arcane Way
@@ -647,21 +646,18 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 108576 },	-- Malace Shade
 							["classes"] = { DEMONHUNTER },
 							["coord"] = { 64.9, 59.0, STORMHEIM },
-							["lvl"] = 110,
 						}),
 						q(42738, {	-- Rune Ruination: Runelord Ragnar
 							["sourceQuests"] = { 42736 },	-- Rune Ruination (must be in log)
 							["provider"] = { "o", 251220 },	-- Ragnar's Runestone
 							["classes"] = { DEMONHUNTER },
 							["coord"] = { 64.9, 58.9, STORMHEIM },
-							["lvl"] = 110,
 						}),
 						q(42739, {	-- Rune Ruination: Runesage Floki
 							["sourceQuests"] = { 42736 },	-- Rune Ruination (must be in log)
 							["provider"] = { "o", 251221 },	-- Floki's Runestone
 							["classes"] = { DEMONHUNTER },
 							["coord"] = { 64.9, 58.9, STORMHEIM },
-							["lvl"] = 110,
 						}),
 						q(42737, {	-- Rune Ruination: Runeskeld Rollo
 							["sourceQuests"] = { 42736 },	-- Rune Ruination (must be in log)
@@ -669,7 +665,6 @@ _.ExpansionFeatures =
 							["provider"] = { "o", 251218 },	-- Rollo's Runestone
 							["classes"] = { DEMONHUNTER },
 							["coord"] = { 64.9, 58.9, STORMHEIM },
-							["lvl"] = 110,
 						}),
 						q(45330, {	-- Scouting Party
 							["classes"] = { DEMONHUNTER },
@@ -715,7 +710,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 108576 },	-- Malace Shade
 							["classes"] = { DEMONHUNTER },
 							["coord"] = { 64.9, 58.9, STORMHEIM },
-							["lvl"] = 110,
 						}),
 						q(45301, {	-- Taking Charge
 							["classes"] = { DEMONHUNTER },
@@ -884,13 +878,11 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 42749 },	-- Strange Bedfellows
 							["classes"] = { DEMONHUNTER },
 							["maps"] = { STORMHEIM },
-							["lvl"] = 110,
 						}),
 						q(42753, {	-- Vault of the Wardens: Vault Break-In (not sure why there are 2 versions, but they complete each other)
 							["sourceQuests"] = { 42749 },	-- Strange Bedfellows
 							["classes"] = { DEMONHUNTER },
 							["maps"] = { STORMHEIM },
-							["lvl"] = 110,
 						}),
 						q(41863, {	-- Vengeance Will Be Ours (Altruis)
 							["coord"] = { 74.9, 49.0, LEGION_DALARAN },

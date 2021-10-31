@@ -141,16 +141,6 @@ _.Zones =
 						follower(179),	-- Weaponsmith Na'Shra
 					},
 				}),
-				q(34461, {	-- Build Your Barracks
-					["coord"] = { 52.4, 53.3, FROSTWALL },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 78466 },	-- Gazlowe
-					["sourceQuests"] = {
-						34823,	-- The Ogron Live?
-						34824,	-- What We Got
-						34822,	-- What We Need
-					},
-				}),
 				q(34073, {	-- Burn Them Down
 					["provider"] = { "n", 77210 },	-- Scout Ruk'Gan
 					["coord"] = { 82.6, 69.8, FROSTFIRE_RIDGE },
@@ -273,12 +263,6 @@ _.Zones =
 					["sourceQuest"] = 33826,	-- Where's My Wolf?!
 					["races"] = HORDE_ONLY,
 				}),
-				q(34378, {	-- Establish Your Garrison
-					["coord"] = { 51.2, 39.6, FROSTWALL },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 78466 },	-- Gazlowe
-					["sourceQuest"] = 34765,	-- The Den of Skog
-				}),
 				q(34230, {	-- Eye Need That
 					["provider"] = { "n", 72874 },	-- Archmage Khadgar
 					["coord"] = { 31.7, 11.8, FROSTFIRE_RIDGE },
@@ -296,22 +280,6 @@ _.Zones =
 					["provider"] = { "n", 77998 },	-- Molthron
 					["coord"] = { 43.5, 15.5, FROSTFIRE_RIDGE },
 					["sourceQuest"] = 34321,	-- Ashes of the Past
-				}),
-				q(34364, {	-- For the Horde!
-					["coord"] = { 51.2, 43.2, FROSTWALL },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 70859 },	-- Thrall
-					["sourceQuest"] = 34402,	-- of Wolves and  Warriors
-					["g"] = {
-						i(111540),	-- Frostwolf Augury Staff
-						i(111539),	-- Frostwolf Boot Knife
-						i(111536),	-- Frostwolf Cleaver
-						i(111537),	-- Frostwolf Greataxe
-						i(111535),	-- Frostwolf Hand Axe
-						i(111538),	-- Frostwolf Hunting Crossbow
-						i(111541),	-- Frostwolf Mountaineering Stick
-						i(111542),	-- Frostwolf Wind-Talker Cudgel
-					},
 				}),
 				q(33807, {	-- Free Our Brothers and Sisters
 					["coord"] = { 21.7, 56.3, FROSTFIRE_RIDGE },
@@ -656,6 +624,11 @@ _.Zones =
 					["coord"] = { 20.7, 57.9, FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34379,	-- Den of Wolves
+				}),
+				q(37204, {	-- Rekindling an Old Flame
+					["provider"] = { "n", 87971 },	-- Firaga
+					["coord"] = { 74.8, 30.0, FROSTFIRE_RIDGE },
+					["isDaily"] = true,
 				}),
 				q(33493, {	-- Return to the Pack
 					["provider"] = { "n", 72940 },	-- Frostwolf Champion

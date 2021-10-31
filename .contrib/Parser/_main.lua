@@ -458,6 +458,7 @@ WEAPONS = -319;
 
 -- D&R
 COMMON_BOSS_DROPS = -1;
+WORLD_BOSSES = -7;
 
 -- Pet
 PET_BATTLE = -796;
@@ -487,6 +488,21 @@ LEGENDARIES = -364;
 -- Special
 MAILBOX = -297;
 PROMOTIONS = -31;
+
+-- Anniversary
+FOURTH_ANNIVERSARY = -5353;
+FIFTH_ANNIVERSARY = -5354;
+SIXTH_ANNIVERSARY = -5355;
+SEVENTH_ANNIVERSARY = -5356;
+EIGTHT_ANNIVERSARY = -5357;
+NINTH_ANNIVERSARY = -5358;
+TENTH_ANNIVERSARY = -5359;
+ELEVENTH_ANNIVERSARY = -5360;
+TWELFTH_ANNIVERSARY = -5361;
+THIRTEENTH_ANNIVERSARY = -5362;
+FOURTEENTH_ANNIVERSARY = -5363;
+FIFTEENTH_ANNIVERSARY = -5364;
+SIXTEENTH_ANNIVERSARY = -5365;
 -- End of Custom Headers --
 
 -- Filters
@@ -528,6 +544,7 @@ SL_TIER = 9;
 -- Unobtainable Filters
 NEVER_IMPLEMENTED = 1;
 REMOVED_FROM_GAME = 2;
+BLACK_MARKET = 9;
 BLIZZARD_BALANCE = 35;
 
 -- Classic Phases
@@ -1099,9 +1116,7 @@ end
 garrisonBuilding = function(id, t)						-- Create a GARRISON BUILDING Object
 	return struct("buildingID", id, t);
 end
-gb = function(id, t)									-- Create a GARRISON BUILDING Object (Alternative)
-	return struct("buildingID", id, t);
-end
+gb = garrisonBuilding;									-- Create a GARRISON BUILDING Object (Alternative)
 garrisonTalent = function(id, t)						-- Create a GARRISON TALENT Object
 	return struct("talentID", id, t);
 end

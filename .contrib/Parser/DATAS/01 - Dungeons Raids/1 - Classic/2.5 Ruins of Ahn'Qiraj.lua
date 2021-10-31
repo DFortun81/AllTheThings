@@ -10,14 +10,10 @@ local KEYL_LOCATION = { 59.4, 14.0, AHNQIRAJ_THE_FALLEN_KINGDOM };
 local WARDEN_LOCATION = { 59.4, 14.0, AHNQIRAJ_THE_FALLEN_KINGDOM };
 local WINDCALLER_LOCATION = { 59.4, 14.0, AHNQIRAJ_THE_FALLEN_KINGDOM };
 -- #endif
-_.Instances = { tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
+root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 	inst(743, {	-- Ruins of Ahn'Qiraj
 		["lore"] = "Deep within the deserts of Silithus lies an ancient and powerful race of beings known as the Qiraji. One thousand years ago, the Night Elves and Bronze Dragonflight combined their considerable powers to seal the Qiraji behind the scarab wall with the help of the children of some of the aspects. This is remembered as the \"War of the Shifting Sands\".\n\nRecently it was discovered that some of the Qiraji were finding ways past the wall. Anachronos, the bronze dragon, helped the adventurers of Azeroth open the Scarab Wall to prevent more incursions. The mortal races have now banded together to confront the evil Qiraji in their own land. A champion has opened the gate and the Horde and Alliance have driven the armies of the Qiraji back into the ruins in retreat. It now falls to heroes to delve into the lair of the Qiraji and put an end to their masters once and for all",
-		-- #if AFTER CATA
-		["coord"] = { 58.93, 14.26, AHNQIRAJ_THE_FALLEN_KINGDOM },	-- Ruins of Ahn'Qiraj
-		-- #else
-		-- TODO: Add a coordinate for Classic.
-		-- #endif
+		["coord"] = { 58.93, 14.26, AHNQIRAJ_THE_FALLEN_KINGDOM },
 		["mapID"] = RUINS_OF_AHNQIRAJ,
 		["sharedLockout"] = 1,
 		["isRaid"] = true,
@@ -863,12 +859,8 @@ _.Instances = { tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					},
 				}),
 				-- Key (Post 4.3 Only!)
-				i(76401, {	-- Scarab Coffer Key
-					-- #if ANYCLASSIC
-					["u"] = CATA_PHASE_ONE,
-					-- #else
+				applyclassicphase(CATA_PHASE_ONE, i(76401, {	-- Scarab Coffer Key
 					["timeline"] = { "added 4.3.0.15005" },
-					-- #endif
 					["crs"] = {
 						15369,	-- Ayamiss the Hunter
 						15370,	-- Buru the Gorger
@@ -877,7 +869,7 @@ _.Instances = { tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						15340,	-- Moam
 						15339,	-- Ossirian the Unscarred
 					},
-				}),
+				})),
 			}),
 			o(180691, {	-- Scarab Coffer
 				["description"] = "These can be found along the walls of the instance and require a coffer key to open.",
@@ -1025,4 +1017,4 @@ _.Instances = { tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 			}),
 		},
 	}),
-}))};
+})));

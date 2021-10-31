@@ -9,7 +9,7 @@ local THE_EYE_OF_SHADOW = i(18665, {	-- The Eye of Shadow
 	["classes"] = { PRIEST },
 });
 root("Instances", tier(CLASSIC_TIER, {
-	n(-7, {	-- World Bosses
+	n(WORLD_BOSSES, {
 		["isRaid"] = true,
 		["lvl"] = 60,
 		["groups"] = {

@@ -18,6 +18,13 @@ _.Zones =
 					["questID"] = 39469,
 					["coord"] = { 65.9, 85.0, TANAAN_JUNGLE },
 				}),
+				o(241449, {	-- Blackfang Island Cache
+					["questID"] = 38601,
+					["coord"] = { 61.1, 75.8, TANAAN_JUNGLE },
+					["g"] = {
+						currency(824),	-- Garrison Resources
+					},
+				}),
 				o(241835, {	-- Bleeding Hollow Mushroom Stash
 					["questID"] = 38809,
 					["coords"] = {

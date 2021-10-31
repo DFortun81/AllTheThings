@@ -1,7 +1,15 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-
+-- #if BEFORE BFA
+local MageTowerFilter = {["u"] = 41};
+-- #else
+local MageTowerFilter =
+{["timeline"] = {
+	"added 7.2.0",
+	"removed 8.0.1",
+},};
+-- #endif
 local honorLevel10 = {};
 local honorLevel30 = {};
 local honorLevel50 = {};
@@ -128,13 +136,17 @@ local ChallengeAppearance = function(icon, t)
 			header.displayID = icon;
 		end
 	end
-	header.groups = bubbleDown({["u"] = 41}, header.groups);
+	header.groups = bubbleDown(MageTowerFilter, header.groups);
 	if header.model then
 		print("Artifacts no longer support model!");
 		print(header.model);
 		header.model = nil;
 	end
+	-- #if BEFORE BFA
 	header.u = 41;
+	-- #else
+	header.u = 2;
+	-- #endif
 	return header;
 end;
 local HiddenAppearance = function(icon, t)

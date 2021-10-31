@@ -616,7 +616,7 @@ _.ExpansionFeatures =
 							["coord"] = { 32.3, 43.3, 709 },	-- The Wandering Isle
 						}),
 						q(46343, {	-- The Trail of Ban-Lu
-							["sourceQuests"] = { 46342 },	-- Return ot the Broken Peak
+							["sourceQuests"] = { 46342 },	-- Return to the Broken Peak
 							["provider"] = { "n", 120722 },	-- Master Bu
 							["classes"] = { MONK },
 							["coord"] = { 47.3, 41.7, KUN_LAI_SUMMIT },

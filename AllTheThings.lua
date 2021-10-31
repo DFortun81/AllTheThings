@@ -337,7 +337,7 @@ local sortByTextSafely = function(a, b)
 end;
 -- Performs table.concat(tbl, sep, i, j) on the given table, but uses the specified field of table values if provided,
 -- with a default fallback value if the field does not exist on the table entry
-app.TableConcat = function (tbl, field, def, sep, i, j)
+app.TableConcat = function(tbl, field, def, sep, i, j)
 	if tbl then
 		if field then
 			local tblvals, tinsert = {}, tinsert;
@@ -350,6 +350,20 @@ app.TableConcat = function (tbl, field, def, sep, i, j)
 		end
 	end
 	return "";
+end
+-- Allows efficiently appending the content of multiple arrays (in sequence) onto the end of the provided array, or new empty array
+app.ArrayAppend = function(a1, ...)
+	a1 = a1 or {};
+	if ... then
+		local i = #a1 + 1;
+		for _,a in ipairs({...}) do
+			for ai=1,#a do
+				a1[i] = a[ai];
+				i = i + 1;
+			end
+		end
+	end
+	return a1;
 end
 
 -- Data Lib
@@ -441,20 +455,28 @@ local function ReturnFalse()
 	return false;
 end
 -- Returns an object which contains no data, but can return values from an overrides table, and be loaded/created when a specific field is attempted to be referenced
--- i.e. Create a data group which contains no information but will attempt to populate itself when the 'text' field is referenced
+-- i.e. Create a data group which contains no information but will attempt to populate itself when [loadField] is referenced
 app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
 	local dlo, o;
 	local params = {...};
-	local loader = {
+	local loader;
+	loader = {
 		__index = function(t, key)
 			-- override for the object
-			if overrides and (overrides[key] ~= nil) then
-				return overrides[key];
+			local override = overrides and overrides[key];
+			if override ~= nil then
+				-- overrides can also be a function which will execute once the object has been created
+				if o and type(override) == "function" then
+					return override(o, key);
+				else
+					return override;
+				end
 			-- existing object, then reference the respective key
 			elseif o then
 				return o[key];
 			end
 
+			-- load the object if it matches the load field
 			if key == loadField then
 				o = objFunc(unpack(params));
 				return o[key];
@@ -1322,6 +1344,8 @@ app.MergeSkipFields = {
 	["g"] = true,
 	["u"] = true,
 	["pvp"] = true,
+	["pb"] = true,
+	["requireSkill"] = true,
 };
 -- Fields on a Thing which are specific to where the Thing is Sourced or displayed in a ATT window
 app.SourceSpecificFields = {
@@ -1354,6 +1378,8 @@ app.SourceSpecificFields = {
 	end,
 -- Simple boolean
 	["pvp"] = true,
+	["pb"] = true,
+	["requireSkill"] = true,
 };
 -- merges the properties of the t group into the g group, making sure not to alter the filterability of the group
 local MergeProperties = function(g, t, noReplace)
@@ -1912,93 +1938,96 @@ local function GetFixedItemSpecInfo(itemID)
 end
 
 -- Quest Completion Lib
+-- Builds a table to be used in the SetupReportDialog to display text which is copied into Discord for player reports
+app.BuildDiscordQuestInfoTable = function(id, infoText, questChange)
+	local coord;
+	local mapID = app.GetCurrentMapID();
+	local position = mapID and C_Map.GetPlayerMapPosition(mapID, "player");
+	if position then
+		local x,y = position:GetXY();
+		x = math.floor(x * 1000) / 10;
+		y = math.floor(y * 1000) / 10;
+		coord = x..","..y;
+	end
+	return
+	{
+		"**"..(infoText or "quest-info")..":"..id.."**",
+
+		"```",	-- discord fancy box
+
+		questChange,
+		"race:"..app.RaceID,
+		"class:"..app.ClassIndex,
+		"lvl:"..app.Level,
+		"mapID:"..mapID,
+		coord and ("coord:"..coord) or "coord:??",
+		"ver:"..app.Version,
+
+		"```",	-- discord fancy box
+		-- TODO: put more info in here as it will be copy-paste into Discord
+	};
+end
 local PrintQuestInfo = function(questID, new, info)
 	if app.IsReady and app.Settings:GetTooltipSetting("Report:CompletedQuests") then
 		local searchResults = app.SearchForField("questID", questID);
 		local id = questID;
+		local questChange;
+		if new == true then
+			questChange = "accepted";
+		elseif new == false then
+			questChange = "unflagged";
+		else
+			questChange = "completed";
+		end
 		if not searchResults or #searchResults <= 0 or GetRelativeField(searchResults[1], "text", L["UNSORTED_1"]) then
 			questID = questID .. " (Not in ATT " .. app.Version .. ")";
 			-- Linkify the output
 			local popupID = "quest-" .. id;
 			questID = app:Linkify(questID, "ff5c6c", "dialog:" .. popupID);
-			local coord;
-			local mapID = app.GetCurrentMapID();
-			local position = C_Map.GetPlayerMapPosition(mapID, "player")
-			if position then
-				local x,y = position:GetXY();
-				x = math.floor(x * 1000) / 10;
-				y = math.floor(y * 1000) / 10;
-				coord = x..","..y;
-			end
 			app:SetupReportDialog(popupID, "Missing Quest: " .. id,
-				{
-					"**missing-quest:"..questID.."**",
-
-					"```",	-- discord fancy box
-
-					"race:"..app.RaceID,
-					"class:"..app.ClassIndex,
-					"lvl:"..app.Level,
-					"mapID:"..mapID,
-					"coord:"..coord,
-
-					"```",	-- discord fancy box
-					-- TODO: put more info in here as it will be copy-paste into Discord
-				}
+				app.BuildDiscordQuestInfoTable(id, "missing-quest", questChange)
 			);
 		else
 			if app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
 				return true;
 			end
+			local questRef = searchResults[1];
 			-- tack on an 'HQT' tag if ATT thinks this QuestID is a Hidden Quest Trigger
 			-- (sometimes 'real' quests are triggered complete when other 'real' quests are turned in and contribs may consider them HQT if not yet sourced
 			-- so when a quest flagged as HQT is accepted/completed directly, it will be more noticable of being incorrectly sourced
-			if GetRelativeField(searchResults[1], "text", L["HIDDEN_QUEST_TRIGGERS"]) then
+			if GetRelativeField(questRef, "text", L["HIDDEN_QUEST_TRIGGERS"]) then
 				questID = questID .. " [HQT]";
 				-- Linkify the output
 				questID = app:Linkify(questID, "7aff92", "search:questID:" .. id);
-			elseif GetRelativeField(searchResults[1], "text", L["NEVER_IMPLEMENTED"]) then
+			elseif GetRelativeField(questRef, "text", L["NEVER_IMPLEMENTED"]) then
 				questID = questID .. " (Not in ATT " .. app.Version .. " [NYI])";
 				-- Linkify the output
 				local popupID = "quest-" .. id;
 				questID = app:Linkify(questID, "ff5c6c", "dialog:" .. popupID);
-				local coord;
-				local mapID = app.GetCurrentMapID();
-				local position = C_Map.GetPlayerMapPosition(mapID, "player")
-				if position then
-					local x,y = position:GetXY();
-					x = math.floor(x * 1000) / 10;
-					y = math.floor(y * 1000) / 10;
-					coord = x..","..y;
-				end
 				app:SetupReportDialog(popupID, "NYI Quest: " .. id,
-					{
-						"**nyi-quest:"..questID.."**",
-
-						"```",	-- discord fancy box
-
-						"race:"..app.RaceID,
-						"class:"..app.ClassIndex,
-						"lvl:"..app.Level,
-						"mapID:"..mapID,
-						"coord:"..coord,
-
-						"```",	-- discord fancy box
-						-- TODO: put more info in here as it will be copy-paste into Discord
-					}
+					app.BuildDiscordQuestInfoTable(id, "nyi-quest", questChange)
 				);
 			else
 				-- Linkify the output
 				questID = app:Linkify(questID, "149bfd", "search:questID:" .. id);
 			end
+			-- This quest doesn't meet the filter for this character, then ask to report in chat
+			-- TODO: change filtering technique so we can do app.CharacterFilter(questRef) to bypass any Account filtering active
+			if questChange == "accepted" and
+				not (app.RequiredSkillFilter(questRef)
+					and app.ClassRequirementFilter(questRef)
+					and app.RaceRequirementFilter(questRef)
+					and app.RequireCustomCollectFilter(questRef)) then
+				local popupID = "quest-filter-" .. id;
+				if app:SetupReportDialog(popupID, "Inaccurate Quest Info: " .. id,
+					app.BuildDiscordQuestInfoTable(id, "inaccurate-quest", questChange)
+				) then
+					local reportMsg = app:Linkify(L["REPORT_INACCURATE_QUEST"], "f7b531", "dialog:" .. popupID);
+					Callback(app.print, reportMsg);
+				end
+			end
 		end
-		if new == true then
-			print("Quest accepted " .. questID .. (info or ""));
-		elseif new == false then
-			print("Quest unflagged " .. questID .. (info or ""));
-		else
-			print("Quest completed " .. questID .. (info or ""));
-		end
+		print("Quest",questChange,questID,(info or ""));
 	end
 end
 local DirtyQuests = {};
@@ -2491,6 +2520,8 @@ local function FillSymLinks(group, recursive)
 	end
 	if group.sym then
 		NestObjects(group, ResolveSymbolicLink(group));
+		-- make sure this group doesn't waste time getting resolved again somehow
+		group.sym = app.EmptyTable;
 	end
 	-- if app.DEBUG_PRINT == group then app.DEBUG_PRINT = nil; end
 	return group;
@@ -2530,7 +2561,7 @@ subroutines = {
 			{"where", "classID", classID },	-- Select all the class header.
 			{"pop"},	-- Discard the class header and acquire the children.
 			{"is", "itemID"},
-			{"is", "f"},	-- If it has a filterID, keep it, otherwise throw it away.
+			{"is", "s"},	-- If it has a sourceID, keep it, otherwise throw it away.
 		};
 	end,
 	["pvp_set_faction_ensemble"] = function(headerID1, headerID2, headerID3, headerID4, classID)
@@ -2546,7 +2577,7 @@ subroutines = {
 			{"where", "classID", classID },	-- Select all the class header.
 			{"pop"},	-- Discard the class header and acquire the children.
 			{"is", "itemID"},
-			{"is", "f"},	-- If it has a filterID, keep it, otherwise throw it away.
+			{"is", "s"},	-- If it has a sourceID, keep it, otherwise throw it away.
 		};
 	end,
 	-- Weapons
@@ -2561,7 +2592,7 @@ subroutines = {
 			{"where", "headerID", -319 },	-- Select the "Weapons" header.
 			{"pop"},	-- Discard the class header and acquire the children.
 			{"is", "itemID"},
-			{"is", "f"},	-- If it has a filterID, keep it, otherwise throw it away.
+			{"is", "s"},	-- If it has a sourceID, keep it, otherwise throw it away.
 		};
 	end,
 	["pvp_weapons_faction_ensemble"] = function(headerID1, headerID2, headerID3, headerID4)
@@ -2577,7 +2608,7 @@ subroutines = {
 			{"where", "headerID", -319 },	-- Select the "Weapons" header.
 			{"pop"},	-- Discard the class header and acquire the children.
 			{"is", "itemID"},
-			{"is", "f"},	-- If it has a filterID, keep it, otherwise throw it away.
+			{"is", "s"},	-- If it has a sourceID, keep it, otherwise throw it away.
 		};
 	end,
 	-- Island Expeditions Sets
@@ -2909,18 +2940,27 @@ subroutines = {
 		}
 	end,
 };
+-- Allows efficiently appending the content of multiple arrays (in sequence) onto the end of the provided array, or new empty array
+local ArrayAppend = app.ArrayAppend;
 local function Resolve_Extract(results, group, field)
-	if group.g then
-		for _,o in ipairs(group.g) do
-			if o[field] then
-				tinsert(results, o);
-			else
-				Resolve_Extract(results, o);
-			end
-		end
-	elseif group[field] then
+	if group[field] then
 		tinsert(results, group);
+	elseif group.g then
+		for _,o in ipairs(group.g) do
+			Resolve_Extract(results, o, field);
+		end
 	end
+	return results;
+end
+-- Pops the provided group, returning the results from the combined 'g' and 'sym' properties of the group
+local function Resolve_Pop(group)
+	local results = {};
+	-- insert raw things from this group
+	if group.g then
+		ArrayAppend(results, group.g);
+	end
+	-- insert symlinked things from this group
+	ArrayAppend(results, ResolveSymbolicLink(group));
 	return results;
 end
 ResolveSymbolicLink = function(o)
@@ -2937,7 +2977,7 @@ ResolveSymbolicLink = function(o)
 					for _,s in ipairs(cache) do
 						-- if finding itself in the cache, don't try to resolve itself
 						if s ~= o and (s.key ~= o.key or s[s.key] ~= o[o.key]) then
-							tinsert(searchResults, FillSymLinks(s));
+							tinsert(searchResults, s);
 						end
 					end
 				else
@@ -2962,16 +3002,12 @@ ResolveSymbolicLink = function(o)
 					tinsert(searchResults, o.parent);
 				end
 			elseif cmd == "fill" then
-				-- Instruction to fill with identical content cached elsewhere for this group
+				-- Instruction to fill with identical content cached elsewhere for this group (no symlinks)
 				if o.key and o[o.key] then
 					local cache = app.SearchForField(o.key, o[o.key]);
 					if cache then
-						for _,group in ipairs(cache) do
-							if group.g then
-								for _,s in ipairs(group.g) do
-									tinsert(searchResults, FillSymLinks(s));
-								end
-							end
+						for _,s in ipairs(cache) do
+							ArrayAppend(searchResults, s.g);
 						end
 					end
 				end
@@ -2979,12 +3015,8 @@ ResolveSymbolicLink = function(o)
 				-- Instruction to "pop" all of the group values up one level.
 				local orig = searchResults;
 				searchResults = {};
-				for k,s in ipairs(orig) do
-					if s.g then
-						for l,t in ipairs(s.g) do
-							tinsert(searchResults, t);
-						end
-					end
+				for _,s in ipairs(orig) do
+					ArrayAppend(searchResults, Resolve_Pop(s));
 				end
 			elseif cmd == "push" then
 				-- Instruction to "push" all of the group values into an object as specified
@@ -3116,15 +3148,11 @@ ResolveSymbolicLink = function(o)
 				end
 			elseif cmd == "finalize" then
 				-- Instruction to finalize the current search results and prevent additional queries from affecting this selection.
-				for k,s in ipairs(searchResults) do
-					tinsert(finalized, s);
-				end
+				ArrayAppend(finalized, searchResults);
 				wipe(searchResults);
 			elseif cmd == "merge" then
 				-- Instruction to take all of the finalized and non-finalized search results and merge them back in to the processing queue.
-				for k,s in ipairs(searchResults) do
-					tinsert(finalized, s);
-				end
+				ArrayAppend(finalized, searchResults);
 				searchResults = finalized;
 				finalized = {};
 			elseif cmd == "postprocess" then
@@ -3200,12 +3228,7 @@ ResolveSymbolicLink = function(o)
 					table.remove(args, 1);
 					local commands = subroutine(unpack(args));
 					if commands then
-						local results = ResolveSymbolicLink(setmetatable({sym=commands}, {__index=o}));
-						if results then
-							for k,s in ipairs(results) do
-								tinsert(searchResults, s);
-							end
-						end
+						ArrayAppend(searchResults, ResolveSymbolicLink(setmetatable({sym=commands}, {__index=o})));
 					end
 				else
 					print("Could not find subroutine", sym[2]);
@@ -3223,12 +3246,7 @@ ResolveSymbolicLink = function(o)
 						table.remove(args, 1);
 						local commands = subroutine(unpack(args));
 						if commands then
-							local results = ResolveSymbolicLink(setmetatable({sym=commands}, {__index=o}));
-							if results then
-								for k,s in ipairs(results) do
-									tinsert(searchResults, s);
-								end
-							end
+							ArrayAppend(searchResults, ResolveSymbolicLink(setmetatable({sym=commands}, {__index=o})));
 						end
 					end
 				else
@@ -3240,14 +3258,15 @@ ResolveSymbolicLink = function(o)
 
 		-- If we have any pending finalizations to make, then merge them into the finalized table. [Equivalent to a "finalize" instruction]
 		if #searchResults > 0 then
-			for k,s in ipairs(searchResults) do
-				-- if somehow the symlink pulls in the same item as used as the source of the symlink, then 'pop' that item
-				if s == o or (s.itemID and s.g and s.key == o.key and s[s.key] == o[o.key]) then
-					for _,g in ipairs(s.g) do
-						tinsert(finalized, FillSymLinks(g));
-					end
+			for _,s in ipairs(searchResults) do
+				-- if somehow the symlink pulls in the same item as used as the source of the symlink, then skip putting it in the final group
+				if s == o or (s.hash and s.hash == o.hash) then
+					print("Symlink pulled itself into final group!",o.key,o.key and o[o.key])
+					-- for _,g in ipairs(Resolve_Pop(s)) do
+					-- 	tinsert(finalized, g);
+					-- end
 				else
-					tinsert(finalized, FillSymLinks(s));
+					tinsert(finalized, s);
 				end
 			end
 		end
@@ -3258,6 +3277,10 @@ ResolveSymbolicLink = function(o)
 			local cloned = {};
 			MergeObjects(cloned, finalized, true);
 			-- if app.DEBUG_PRINT then print("Symbolic Link for", o.key,o.key and o[o.key], "contains", #cloned, "values after filtering.") end
+			-- if any symlinks are left at the lowest level, go ahead and fill them
+			for _,s in ipairs(cloned) do
+				FillSymLinks(s);
+			end
 			return cloned;
 		else
 			-- if app.DEBUG_PRINT then print("Symbolic Link for ", o.key, " ",o.key and o[o.key], " contained no values after filtering.") end
@@ -4748,14 +4771,23 @@ local cacheCreatureID = function(group, npcID)
 		CacheField(group, "creatureID", npcID);
 	end
 end
-local cacheMapID = function(group, mapID, skipNest)
-	if (currentMaps[mapID] or 0) == 0 then
-		if not skipNest then currentMaps[mapID] = 1; end
+-- special map cache function, will only cache a group for the mapID if the current hierarchy has not already been cached in this map
+-- level doesn't matter and will be reported in chat for 'mapID' and 'maps' being multiply-nested
+local cacheMapID = function(group, mapID, coords)
+	if not currentMaps[mapID] then
+		-- track the group which was first cached for this map within the hierarchy
+		currentMaps[mapID] = group;
 		CacheField(group, "mapID", mapID);
-	elseif not skipNest then
-		print("multi-nested map",mapID,currentMaps[mapID],group.key,group.key and group[group.key])
-		currentMaps[mapID] = currentMaps[mapID] + 1;
+	elseif not coords then
+		print("multi-nested map",mapID,group.key,group.key and group[group.key]);
 	end
+	-- if (currentMaps[mapID] or 0) == 0 then
+	-- 	currentMaps[mapID] = 1;
+	-- 	CacheField(group, "mapID", mapID);
+	-- elseif not nestOnce then
+	-- 	print("multi-nested map",mapID,currentMaps[mapID],group.key,group.key and group[group.key])
+	-- 	currentMaps[mapID] = currentMaps[mapID] + 1;
+	-- end
 end
 local cacheObjectID = function(group, objectID)
 	-- WARNING: DEV ONLY START
@@ -4903,12 +4935,14 @@ fieldConverters = {
 		end
 	end,
 	["coord"] = function(group, value)
-		if group.key ~= "instanceID"  then
+		-- don't cache mapID from coord for anything which is inside an Instance
+		if not GetRelativeField(group, "key", "instanceID") then
 			if value[3] then cacheMapID(group, value[3], true); end
 		end
 	end,
 	["coords"] = function(group, value)
-		if group.key ~= "instanceID"  then
+		-- don't cache mapID from coord for anything which is inside an Instance
+		if not GetRelativeField(group, "key", "instanceID") then
 			for _,coord in ipairs(value) do
 				if coord[3] then cacheMapID(group, coord[3], true); end
 			end
@@ -4945,14 +4979,24 @@ fieldConverters = {
 		end
 	end,
 };
-local uncacheMap = function(mapID)
-	currentMaps[mapID] = (currentMaps[mapID] or 0) - 1;
-end;
+local uncacheMap = function(group, mapID)
+	if mapID and currentMaps[mapID] == group then
+		currentMaps[mapID] = nil;
+	end
+end
 local mapKeyUncachers = {
 	["mapID"] = uncacheMap,
-	["maps"] = function(maps)
+	["coord"] = function(group, coord)
+		uncacheMap(group, coord[3]);
+	end,
+	["maps"] = function(group, maps)
 		for _,mapID in ipairs(maps) do
-			uncacheMap(mapID);
+			uncacheMap(group, mapID);
+		end
+	end,
+	["coords"] = function(group, coords)
+		for _,coord in ipairs(coords) do
+			uncacheMap(group, coord[3]);
 		end
 	end,
 };
@@ -4986,7 +5030,7 @@ CacheFields = function(group)
 	-- clear currentMapIDs used by this group
 	if mapKeys then
 		for key,value in pairs(mapKeys) do
-			rawget(mapKeyUncachers, key)(value);
+			rawget(mapKeyUncachers, key)(group, value);
 		end
 	end
 end
@@ -5041,20 +5085,24 @@ app.SearchForField = SearchForField;
 -- This method performs the SearchForField logic, but then verifies that ONLY the specific matching object is returned
 app.SearchForObject = function(field, id)
 	local fcache = SearchForField(field, id);
-	if fcache and #fcache > 0 then
+	if fcache then
 		-- find a filter-match object first
-		local fcacheObj, firstMatch;
+		local fcacheObj, firstMatch, fieldMatch;
 		for i=1,#fcache,1 do
 			fcacheObj = fcache[i];
-			if fcacheObj.key == field and fcacheObj[field] == id then
-				firstMatch = firstMatch or fcacheObj;
-				if app.RecursiveGroupRequirementsFilter(fcacheObj) then
-					return fcacheObj;
+			if fcacheObj[field] == id then
+				if fcacheObj.key == field then
+					firstMatch = firstMatch or fcacheObj;
+					if app.RecursiveGroupRequirementsFilter(fcacheObj) then
+						return fcacheObj;
+					end
+				else
+					fieldMatch = fieldMatch or fcacheObj;
 				end
 			end
 		end
 		-- otherwise just find the first matching object
-		return firstMatch;
+		return firstMatch or fieldMatch or nil;
 	end
 end
 -- This method performs the SearchForField logic and returns a single version of the specific object by merging together all sources of the object
@@ -5789,10 +5837,16 @@ local function SortGroup(group, sortType, row, recur, conditionField)
 			if sortType == "name" then
 				local txtA, txtB;
 				insertionSort(group.g, function(a, b)
-					txtA = a and string.lower(tostring(a.name or a.text)) or "";
-					txtB = b and string.lower(tostring(b.name or b.text)) or "";
-					if txtA then
-						if txtB then return txtA < txtB; end
+					-- equivalent raid status, then compare name
+					if a.isRaid == b.isRaid then
+						txtA = a and string.lower(tostring(a.name or a.text)) or "";
+						txtB = b and string.lower(tostring(b.name or b.text)) or "";
+						if txtA then
+							if txtB then return txtA < txtB; end
+							return true;
+						end
+					-- otherwise return priority on raid status
+					elseif a.isRaid then
 						return true;
 					end
 					return false;
@@ -8265,7 +8319,7 @@ local fields = {
 		end
 		if app.AccountWideRecipes and ATTAccountWideData.Buildings[t.buildingID] then return 2; end
 	end,
-	["description"] = function(t)
+	["lore"] = function(t)
 		return select(5, C_Garrison_GetBuildingInfo(t.buildingID));
 	end,
 	["icon"] = function(t)
@@ -14683,21 +14737,20 @@ RowOnEnter = function (self)
 		end
 
 		-- ROW DEBUGGING
+		-- GameTooltip:AddDoubleLine("Self",tostring(reference));
+		-- GameTooltip:AddLine("-- Ref Fields:");
+		-- for key,val in pairs(reference) do
+		-- 	GameTooltip:AddDoubleLine(key,tostring(val));
+		-- end
 		-- local fields = {
 		-- 	"__type",
-
-		-- 	"collectible",
-		-- 	"collected",
-		-- 	"collectibleAsCost",
-		-- 	"collectedAsCost",
-		-- 	"nmc",
-		-- 	"nmr",
 		-- };
-
+		-- GameTooltip:AddLine("-- Extra Fields:");
 		-- for _,key in ipairs(fields) do
 		-- 	GameTooltip:AddDoubleLine(key,tostring(reference[key]));
 		-- end
 		-- GameTooltip:AddDoubleLine("Row Indent",tostring(CalculateRowIndent(reference)));
+		-- END DEBUGGING
 
 		-- print("OnRowEnter-Show");
 		GameTooltip.MiscFieldsComplete = true;
@@ -15126,7 +15179,7 @@ function app:GetDataCache()
 			db.lvl = 3; -- Must be 3 to train (used to be 5 pre-scale)
 			db.expanded = false;
 			db.text = SHOW_PET_BATTLES_ON_MAP_TEXT; -- Pet Battles
-			db.icon = app.asset("Category_PetBattles")
+			db.icon = app.asset("Category_PetBattles");
 			tinsert(g, db);
 		end
 
@@ -15188,6 +15241,16 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.text = BATTLE_PET_SOURCE_10;
 			db.icon = app.asset("Category_InGameShop");
+			tinsert(g, db);
+		end
+
+		-- Black Market
+		if app.Categories.BlackMarket then
+			db = {};
+			db.g = app.Categories.BlackMarket;
+			db.expanded = false;
+			db.text = BLACK_MARKET_AUCTION_HOUSE;
+			db.icon = app.asset("Interface_Vendor"); -- Temporary
 			tinsert(g, db);
 		end
 
@@ -16377,6 +16440,9 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				header.g = { group };
 				header.sort = true;
 				header.collectible = false;
+				-- header groups in minilist shouldn't be attached to some random other source location
+				-- since they will be comprised of groups from many different source locations
+				header.sourceParent = nil;
 				return header;
 			else
 				return { g = { group }, ["sort"] = true, ["collectible"] = false, };
@@ -16581,6 +16647,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				SortGroup(self.data, "name", nil, true, "sort");
 
 				-- Move all "isRaid" entries to the top of the list.
+				-- TODO: wonder why this stopped working...
 				if results.g then
 					local top = {};
 					for i=#results.g,1,-1 do
@@ -18091,12 +18158,16 @@ customWindowUpdates["Quests"] = function(self, force, got)
 			["visible"] = true,
 			["expanded"] = true,
 			["indent"] = 0,
-			["back"] = 1,
 		};
 
 		-- add a bunch of raw, delay-loaded quests in order into the window
 		local groupCount = self.Limit / self.PartitionSize - 1;
-		local g, overrides = {}, {visible=true};
+		local g, overrides = {}, {
+			visible = true,
+			back = function(o, key)
+				return o._missing and 1 or 0;
+			end,
+		};
 		local partition, partitionStart, partitionGroups;
 		local dlo = app.DelayLoadedObject;
 		for j=0,groupCount,1 do
@@ -20079,6 +20150,7 @@ end
 			-- print("Setup PopupID",id)
 			-- app.PrintTable(popupID);
 			app.popups[id] = popupID;
+			return true;
 		end
 	end
 

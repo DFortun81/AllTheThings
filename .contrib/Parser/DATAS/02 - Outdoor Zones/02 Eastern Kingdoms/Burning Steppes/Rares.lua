@@ -105,7 +105,12 @@ _.Zones =
 						{ 22.6, 41.8, BURNING_STEPPES },
 					},
 					["g"] = {
-						i(12828),	-- Plans: Volcanic Hammer [May no longer drop after Cata or extremely rare, no recent reports as of 2018 and recipe is no longer in the blacksmithing profession window.]
+						i(12828, {	-- Plans: Volcanic Hammer 
+							["timeline"] = {
+								"added 1.0.0",
+								"removed 7.3.5",
+							},
+						}),
 					},
 				}),
 			}),

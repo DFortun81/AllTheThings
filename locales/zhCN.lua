@@ -25,6 +25,7 @@ local L = app.L;
 	L["REQUIRES"] = "要求" -- Requires
 	L.RACE_LOCKED = "种族锁定";
 	L.PLEASE_REPORT_MESSAGE = ": 请把错误报告给ATT Discord的#errors! 谢谢!";
+	--TODO: L.REPORT_TIP = "\n(Ctrl+C to copy multiline report to your clipboard)";
 	L.NOT_AVAILABLE_IN_PL = "在个人拾取中不可用.";
 	L.MARKS_OF_HONOR_DESC = "荣耀印记必须在弹出窗口中查看才能看到所有正常的'包含'内容.\n(在聊天中输入'/att '然后Shift-点击链接的物品)\n\n|cFFfe040fAfter purchasing and using an ensemble, relogging & a forced ATT refresh (in this order)\nmay be required to register all the items correctly.|r";	--TODO
 	--TODO: L.ITEM_GIVES_REP = "Provides Reputation with '";
@@ -188,7 +189,6 @@ local L = app.L;
 	L.PROFESSION_LIST_DESC = "打开你的专业来缓存它们.";
 	L.CACHED_RECIPES_1 = "缓存 ";
 	L.CACHED_RECIPES_2 = " 已知配方!";
-	L.WORLD_QUESTS = "世界任务";
 	L.WORLD_QUESTS_DESC = "这些都是世界任务和其他有时间限制的事物, 目前可以在某个地方获得. 去得到他们!";
 	L.QUESTS_DESC = "按数字升序显示游戏中所有可能的QuestID.";
 	L.UPDATE_WORLD_QUESTS = "立即更新世界任务";
@@ -281,6 +281,7 @@ local L = app.L;
 		--TODO: L.GENERAL_THINGS_LABEL = "General Things";
 		--TODO: L.EXPANSION_THINGS_LABEL = "Expansion Things";
 		--TODO: L.EXTRA_THINGS_LABEL = "Additional Things";
+		--TODO: L.STRANGER_THINGS_LABEL = "Stranger Things";
 		L.ACHIEVEMENTS_CHECKBOX_TOOLTIP = "启用此选项可追踪成就.";
 		L.TMOG_CHECKBOX_TOOLTIP = "启用此选项可追踪外观获取.\n\n注意: 禁用此选项也会禁用所有采集逻辑, 你可以使用此切换来防止在执行重要组内容时出现延迟, 请牢记, 重新启用后将需要进行计算.\n\n默认情况下追踪战网范围.";
 		L.AZERITE_ESSENCES_CHECKBOX_TOOLTIP = "启用此选项以追踪艾泽里特精华.\n\n默认情况下每个角色都会被追踪.";
@@ -607,7 +608,7 @@ for key,value in pairs({
 	--TODO: ["25 Player"] = "25M",
 	--TODO: ["25 Player (Heroic)"] = "25M (H)",
 	--TODO: ["Emissary Quests"] = "Emissary",
-	["世界任务"] = "世界任务",	-- ["World Quests"] = "WQ"	--TODO: they are the same, so can be removed or shortened to WQ?
+	--TODO: [TRACKER_HEADER_WORLD_QUESTS] = "WQ",	-- ["World Quests"] = "WQ"
 	--TODO: ["WoW Anniversary"] = "Anniversary",
 	["盟约:"] = "盟约:",	-- ["Covenant:"] = "Cov:"	--TODO: they are the same, so can be removed or shortened to WQ?
 })
@@ -1148,7 +1149,7 @@ for key, value in pairs({
 	[186426] = "通缉布告",	-- Wanted Poster
 	--TODO: [186585] = "Dragonskin Scroll",	-- Dragonskin Scroll
 	--TODO: [186881] = "Dark Iron Sabotage Plans",	-- Dark Iron Sabotage Plans
-	[186887] = "巨大的南瓜灯",	-- Large Jack-o'-Lantern	--TODO: This was manually translated
+	[186887] = "大南瓜灯",	-- Large Jack-o'-Lantern	--TODO: This was taken from tbc Wowhead
 	[187273] = "可疑的蹄印",	-- Suspicious Hoofprint
 	[187559] = "部落篝火",	-- Horde Bonfire
 	[187564] = "联盟篝火",	-- Alliance Bonfire
@@ -1918,6 +1919,7 @@ for key, value in pairs({
 	[241280] = "宝箱",	-- Treasure Chest
 	--TODO: [241433] = "Forgotten Sack",	-- Forgotten Sack
 	--TODO: [241434] = "Lodged Hunting Spear",	-- Lodged Hunting Spear
+	[241449] = "黑齿岛宝箱",	-- Blackfang Island Cache
 	[241450] = "晶化邪能尖刺",	-- Crystallized Fel Spike
 	[241504] = "抛光水晶",	-- Polished Crystal
 	[241518] = "小宝箱",	-- Small Treasure Chest

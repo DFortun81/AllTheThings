@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(LEGION_TIER, {
-	n(-7, {	-- World Bosses
+	n(WORLD_BOSSES, {
 		["isRaid"] = true,
 		["modID"] = 3,
 		["lvl"] = 110,

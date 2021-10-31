@@ -368,7 +368,7 @@ _.NeverImplemented =
 		q(46256),	-- X Treasures Found, 1 Challenge Attempted
 		q(46255),	-- X Unstable Portals Disrupted, 1 World Boss Defeated
 	}),
-	
+
 	n(-9981, {	-- Draenor
 		n(QUESTS, {
 			-- 6.0.1
@@ -522,8 +522,8 @@ _.NeverImplemented =
 			q(37199),	-- Garrison Visitor: Sappy
 			q(34669),	-- Gather Lumber
 			q(33400),	-- General Problems
-			q(35788),	-- Gold Victory
-			q(37307),	-- Gold Victory
+			q(35788, {["_drop"] = { "g" }}),	-- Gold Victory
+			q(37307, {["_drop"] = { "g" }}),	-- Gold Victory
 			q(34771),	-- Good Stuff
 			q(33968),	-- Goren Boss Kill and Collect
 			q(33875),	-- Goren, Goren, Gone!
@@ -634,7 +634,6 @@ _.NeverImplemented =
 			q(33521),	-- Save Auchenai Caretakers
 			q(32982),	-- Scavengers of Flame
 			q(36060),	-- Seal of Tempered Fate: Apexis Crystals
-			q(36057),	-- Sealing Fate: Honor
 			q(35720),	-- Seamless Breastplate
 			q(37268),	-- Shadowmoon Invasion! BETA
 			q(37269),	-- Shadowmoon Invasion! BETA
@@ -961,13 +960,87 @@ _.NeverImplemented =
 			q(34308),	-- <UNUSED>
 			q(34317),	-- <UNUSED>
 			q(34623),	-- <UNUSED>
-			
+
 			-- 6.0.2
+			q(37598),	-- Abrogator Stones
+			q(37599),	-- Abrogator Stones
+			q(37600),	-- Abrogator Stones
+			q(37601),	-- Abrogator Stones
+			q(37602),	-- Abrogator Stones
+			q(37603),	-- Abrogator Stones
+			q(37604),	-- Abrogator Stones
+			q(37478),	-- Amphitheater of Annihilation
+			q(37169),	-- Apexis Guardian Ziri'ak
+			q(37476),	-- Ashmaul Burial Grounds
+			q(37474),	-- Basics First
+			q(37299),	-- Bonus Objective: Kill Stormshield Priests
+			q(37298),	-- Bonus Objective: Kill Warspear Priests
+			q(37514),	-- Breakers Invasion!! BETA
+			q(37477),	-- Brute's Rise
+			q(37605),	-- Elemental Runes
+			q(37606),	-- Elemental Runes
+			q(37607),	-- Elemental Runes
+			q(37608),	-- Elemental Runes
+			q(37609),	-- Elemental Runes
+			q(37610),	-- Elemental Runes
+			q(37611),	-- Elemental Runes
+			q(37612),	-- Elemental Runes
+			q(37613),	-- Elemental Runes
+			q(37614),	-- Elemental Runes
+			q(35757),	-- Extendable Wand
+			q(35864),	-- Garrison Defense Bot
+			q(35830),	-- Immaculate Statue
+			q(37567),	-- Interact with Dudebro
+			q(37297),	-- Kill Jeron Emberfall
+			q(37295),	-- Kill Rylai Crestfall
 			q(37333),	-- LFGDungeons - Draenor - Heroic Random - 1st
 			q(37334),	-- LFGDungeons - Draenor - Heroic Random - Nth
 			q(37335),	-- LFGDungeons - Draenor - Normal Random - 1st
 			q(37336),	-- LFGDungeons - Draenor - Normal Random - Nth
-			
+			q(37248),	-- Mastering the Menagerie
+			q(37475),	-- Molten Quarry
+			q(37513),	-- Ogres Invasion! BETA
+			q(35832),	-- Priceless Gryphon Figurine
+			q(37512),	-- Primals Invasion! BETA
+			q(35806),	-- Rugged Knapsack
+			q(37681),	-- Short-Supply Reward
+			q(37682),	-- Short-Supply Reward
+			q(37683),	-- Short-Supply Reward
+			q(37684),	-- Short-Supply Reward
+			q(37597),	-- Talk to Testie
+			q(37515),	-- The Iron Horde Approaches... BETA
+			q(37508),	-- Tracking Event: Stacking the Deck
+			q(37509),	-- Tracking Event: Stacking the Deck
+			q(37423),	-- Tracking Quest
+			q(37424),	-- Tracking Quest
+			q(37425),	-- Tracking Quest
+			q(37426),	-- Tracking Quest
+			q(37427),	-- Tracking Quest
+			q(37428),	-- Tracking Quest
+			q(37429),	-- Tracking Quest
+			q(37430),	-- Tracking Quest
+			q(37431),	-- Tracking Quest
+			q(37432),	-- Tracking Quest
+			q(37531),	-- Tracking - See Closed Chest
+			q(36343),	-- UNUSED
+			q(37539),	-- UNUSED
+			q(37471),	-- Vignette: Dahrok Boneshatter
+			q(37650),	-- Vignette: Iron Horde Caravan
+			q(37408),	-- Vignette: Lernaea
+			q(37389),	-- Vignette: Ug'lok the Frozen
+			q(37584),	-- Your Second Alchemy Work Order
+			q(37587),	-- Your Second Blacksmithing Work Order
+			q(37589),	-- Your Second Enchanting Work Order
+			q(37590),	-- Your Second Engineering Work Order
+			q(37591),	-- Your Second Inscription Work Order
+			q(37595),	-- Your Second Inscription Work Order
+			q(37592),	-- Your Second Jewelcrafting Work Order
+			q(37593),	-- Your Second Leatherworking Work Order
+			q(37594),	-- Your Second Tailoring Work Order
+
+			-- 6.0.3
+			q(33466),	-- Rally the Artificers
+
 			-- 6.1.0
 			q(35256),	-- A Heart Unbroken
 			q(37751),	-- Bounties Active
@@ -1009,6 +1082,8 @@ _.NeverImplemented =
 			q(38170),	-- Legion 100-109 H
 			q(38173),	-- Legion 100-109 H
 			q(38174),	-- Legion 100-109 H
+			q(38245),	-- Lots of Ore
+			q(38244),	-- More Ore
 			q(37752),	-- Pet Battles Active
 			q(37972),	-- Pet Battles Not Active
 			q(37974),	-- Pet Battles Not Active
@@ -1016,6 +1091,8 @@ _.NeverImplemented =
 			q(37750),	-- Professions Active
 			q(38240),	-- Raid Active
 			q(37753),	-- Relic Hunter Active
+			q(38291),	-- Some Dust
+			q(38282),	-- Some Dust
 			q(38114),	-- TBC 60-69
 			q(38125),	-- TBC 60-69
 			q(38136),	-- TBC 60-69
@@ -1039,16 +1116,17 @@ _.NeverImplemented =
 			q(38157),	-- WOD 90-99
 			q(38168),	-- WOD 90-99
 			q(38007),	-- zzOldEMPTY TEST
-			
+
+			-- 6.1.1 - no NYI quests
+
 			-- 6.1.2 - no NYI quests
-			
+
 			-- 6.2.0
 			q(38592),	-- 6.2 Tanaan Max-level Choice Reward Summary: Group
 			q(38594),	-- 6.2 Tanaan Max-level Choice Reward Summary: Group
 			q(37888),	-- 6.2 Tanaan Max-level Choice Reward Summary: Solo
 			q(37947),	-- 6.2 Tanaan Max-level Choice Reward Summary: Solo
 			q(39147),	-- 6.2 Tanaan - PTR - Unlock Tanaan Debug
-			q(39107),	-- An Even Bigga Score
 			q(39294),	-- Ashran Dominance
 			q(39520),	-- Ashran Dominance
 			q(39522),	-- Ashran Dominance
@@ -1109,7 +1187,7 @@ _.NeverImplemented =
 			q(38221),	-- UNUSED
 			q(38261),	-- UNUSED
 			q(38022),	-- [DEPRECATED]Assault on the Temple of Sha'naar
-			
+
 			-- 6.2.1
 			q(39292),	-- Ashran Dominance
 			q(38260),	-- Beachhead
@@ -1119,7 +1197,7 @@ _.NeverImplemented =
 			q(36572),	-- Tangleheart Return
 			q(36661),	-- The Power of the Red
 			q(38855),	-- zzDEPRECATEDzz Fighting on the Front
-			
+
 			-- 6.2.2
 			q(39052),	-- Blueprints Are Important
 			q(40395),	-- LFGDungeons - Timewalking "Heroic" Random - Nth
@@ -1129,7 +1207,7 @@ _.NeverImplemented =
 			q(33911),	-- No Draenei Left Behind
 			q(34120),	-- The Shard of Shadows
 			q(39714),	-- Where Are the Children?
-			
+
 			-- 6.2.3
 			q(40829),	-- LFGDungeons - Draenor 6.2 - Raid Finder - 1st
 		}),

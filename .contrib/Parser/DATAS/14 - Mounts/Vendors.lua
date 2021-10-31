@@ -310,7 +310,7 @@ _.Mounts =
 		i(186487, {	-- Maldraxxian Corpsefly
 			["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant only
 		}),
-		un(9, i(163042)),	-- Mighty Caravan Brutosaur
+		un(BLACK_MARKET, i(163042)),	-- Mighty Caravan Brutosaur
 		i(116768),	-- Mosshide Riverwallow
 		i(73838),	-- Mountain Horse
 		i(143637, {	-- Netherlord's Brimstone Wrathsteed (Warlock)

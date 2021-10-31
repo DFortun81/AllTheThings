@@ -18,7 +18,9 @@ _.Zones =
 					},
 				}),
 				ach(9533),	-- Breaker of Chains (Bloodmaul Stronghold)
-				ach(9537),	-- By Fire Be... Merged? (Magnarok)
+				ach(9537, {	-- By Fire Be... Merged? (Magnarok)
+					["sourceQuest"] = 37204,	-- Rekindling an Old Flame
+				}),
 				ach(9534),	-- Delectable Ogre Delicacies (Bloodmaul Stronghold)
 				ach(9606, {	-- Frostfire Fridge
 					["races"] = HORDE_ONLY,

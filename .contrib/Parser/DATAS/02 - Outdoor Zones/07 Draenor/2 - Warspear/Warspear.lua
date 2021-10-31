@@ -22,6 +22,69 @@ _.Zones =
 					}),
 				}),
 				n(QUESTS, {
+					q(37260, {	-- A Worthy Challenge: Gug'rokk
+						["provider"] = { "n", 88161 },	-- Challenger Sunforge
+						["coord"] = { 65.3, 59.3, WARSPEAR },
+						["isDaily"] = true,
+						["u"] = REMOVED_FROM_GAME,
+						["g"] = {
+							i(127831),	-- Challenger's Strongbox
+						},
+					}),
+					q(37264, {	-- A Worthy Challenge: High Sage Viryx
+						["provider"] = { "n", 88161 },	-- Challenger Sunforge
+						["coord"] = { 65.3, 59.3, WARSPEAR },
+						["isDaily"] = true,
+						["u"] = REMOVED_FROM_GAME,
+						["g"] = {
+							i(127831),	-- Challenger's Strongbox
+						},
+					}),
+					q(37263, {	-- A Worthy Challenge: Ner'zhul
+						["provider"] = { "n", 88161 },	-- Challenger Sunforge
+						["coord"] = { 65.3, 59.3, WARSPEAR },
+						["isDaily"] = true,
+						["u"] = REMOVED_FROM_GAME,
+						["g"] = {
+							i(127831),	-- Challenger's Strongbox
+						},
+					}),
+					q(37262, {	-- A Worthy Challenge: Skullok, Son of Gruul
+						["provider"] = { "n", 88161 },	-- Challenger Sunforge
+						["coord"] = { 65.3, 59.3, WARSPEAR },
+						["isDaily"] = true,
+						["u"] = REMOVED_FROM_GAME,
+						["g"] = {
+							i(127831),	-- Challenger's Strongbox
+						},
+					}),
+					q(37261, {	-- A Worthy Challenge: Skylord Tovra
+						["provider"] = { "n", 88161 },	-- Challenger Sunforge
+						["coord"] = { 65.3, 59.3, WARSPEAR },
+						["isDaily"] = true,
+						["u"] = REMOVED_FROM_GAME,
+						["g"] = {
+							i(127831),	-- Challenger's Strongbox
+						},
+					}),
+					q(37266, {	-- A Worthy Challenge: Warlord Zaela
+						["provider"] = { "n", 88161 },	-- Challenger Sunforge
+						["coord"] = { 65.3, 59.3, WARSPEAR },
+						["isDaily"] = true,
+						["u"] = REMOVED_FROM_GAME,
+						["g"] = {
+							i(127831),	-- Challenger's Strongbox
+						},
+					}),
+					q(37265, {	-- A Worthy Challenge: Yalnu
+						["provider"] = { "n", 88161 },	-- Challenger Sunforge
+						["coord"] = { 65.3, 59.3, WARSPEAR },
+						["isDaily"] = true,
+						["u"] = REMOVED_FROM_GAME,
+						["g"] = {
+							i(127831),	-- Challenger's Strongbox
+						},
+					}),
 					q(36709, {	-- Burning Beauty
 						["provider"] = { "n", 86312 },	-- Lieutenant Kragil
 						["coord"] = { 44.1, 45.4, WARSPEAR },
@@ -44,6 +107,20 @@ _.Zones =
 						},
 						["cost"] = { { "c", 823, 500 }, },	-- 500x Apexis Crystal
 						["lvl"] = 100,
+					}),
+					q(37458, {	-- Sealing Fate: Extended Honor
+						["sourceQuests"] = { 36057 },	-- Sealing Fate: Honor
+						["providers"] = {
+							{ "n", 87391 },	-- Fate-Twister Seress
+							{ "n", 88570 },	-- Fate-Twister Tiklal
+						},
+						["isWeekly"] = true,
+						["coords"] = {
+							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
+							{ 64.6, 62.0, WARSPEAR },	-- Horde
+						},
+						["cost"] = { { "c", 1792, 1000 }, },	-- 1000x Honor
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(36056, {	-- Sealing Fate: Garrison Resources
 						["providers"] = {
@@ -85,6 +162,19 @@ _.Zones =
 						["cost"] = { { "c", 823, 1000 }, },	-- 1,000x Apexis Crystal
 						["lvl"] = 100,
 					}),
+					q(36057, {	-- Sealing Fate: Honor
+						["providers"] = {
+							{ "n", 87391 },	-- Fate-Twister Seress
+							{ "n", 88570 },	-- Fate-Twister Tiklal
+						},
+						["isWeekly"] = true,
+						["coords"] = {
+							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
+							{ 64.6, 62.0, WARSPEAR },	-- Horde
+						},
+						["cost"] = { { "c", 1792, 500 }, },	-- 500x Honor
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(37455, {	-- Sealing Fate: Immense Fortune of Gold
 						["sourceQuests"] = { 37454 },	-- Sealing Fate: Piles of Gold
 						["providers"] = {
@@ -98,6 +188,20 @@ _.Zones =
 						},
 						["cost"] = 20000000,	-- 2,000g
 						["lvl"] = 100,
+					}),
+					q(37459, {	-- Sealing Fate: Monumental Honor
+						["sourceQuests"] = { 37458 },	-- Sealing Fate: Extended Honor
+						["providers"] = {
+							{ "n", 87391 },	-- Fate-Twister Seress
+							{ "n", 88570 },	-- Fate-Twister Tiklal
+						},
+						["isWeekly"] = true,
+						["coords"] = {
+							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
+							{ 64.6, 62.0, WARSPEAR },	-- Horde
+						},
+						["cost"] = { { "c", 1792, 2000 }, },	-- 2000x Honor
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(37453, {	-- Sealing Fate: Mountain of Apexis Crystals
 						["sourceQuests"] = { 37452 },	-- Sealing Fate: Heap of Apexis Crystals

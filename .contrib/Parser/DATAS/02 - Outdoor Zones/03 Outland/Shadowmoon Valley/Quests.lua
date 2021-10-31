@@ -199,7 +199,6 @@ _.Zones =
 				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11049, {	-- The Great Netherwing Egg Hunt
 					["provider"] = { "n", 23141 },	-- Yarzill the Merc
 					["sourceQuests"] = { 11019 },	-- Your Friend on the Inside
-					["repeatable"] = true,
 					["coord"] = { 65.9, 86.4, SHADOWMOON_VALLEY },
 				})),
 				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11050, {	-- Accepting All Eggs

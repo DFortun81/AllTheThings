@@ -1102,7 +1102,6 @@ _.Zones =
 				q(38785),	-- Living Leystone Sample
 				q(38774),	-- Lost Ettin
 				q(38422),	-- Makrura Wave Event
-				q(42735),	-- Malace in Vrykul Land
 				q(40613),	-- Maw of Souls: Retrieving the Svalnguard
 				q(39944),	-- Mysterious Messages
 				q(44116),	-- Mystery at Citrine Bay

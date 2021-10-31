@@ -117,7 +117,7 @@ _.Mounts =
 			un(REMOVED_FROM_GAME, i(33809)),	-- Amani War Bear
 		})),
 		un(REMOVED_FROM_GAME, ach(9550, {	-- Boldly, You Sought the Power of Ragnaros
-			un(9, i(115484)),	-- Core Hound Chain
+			un(BLACK_MARKET, i(115484)),	-- Core Hound Chain
 		})),
 		i(142403, {			-- Brawler's Burly Basilisk
 			["u"] = REMOVED_FROM_GAME, -- unobtainable as of BFA prepatch
@@ -151,7 +151,7 @@ _.Mounts =
 		un(REMOVED_FROM_GAME, ach(2137, {	-- Glory of the Raider (10 Player) Pre 3.1
 			["description"] = "Completed prior to patch 3.1 awarded the mount.",
 			["g"] = {
-				un(9, i(44175)),	-- Reins of the Plagued Proto-Drake
+				un(REMOVED_FROM_GAME, i(44175)),	-- Reins of the Plagued Proto-Drake
 			},
 		})),
 		un(REMOVED_FROM_GAME, ach(879, {	-- Old School Ride
@@ -174,10 +174,10 @@ _.Mounts =
 			un(REMOVED_FROM_GAME, i(21176)),	-- Black Qiraji Resonating Crystal
 		})),
 		un(REMOVED_FROM_GAME, ach(881, {	-- Swift Razzashi Raptor
-			un(9, i(19872)),	-- Swift Razzashi Raptor
+			un(BLACK_MARKET, i(19872)),	-- Swift Razzashi Raptor
 		})),
 		un(REMOVED_FROM_GAME, ach(880, {	-- Swift Zulian Tiger
-			un(9, i(19902)),	-- Swift Zulian Tiger
+			un(BLACK_MARKET, i(19902)),	-- Swift Zulian Tiger
 		})),
 		un(REMOVED_FROM_GAME, ach(9496, {	-- Warlord's Deathwheel
 			un(REMOVED_FROM_GAME, i(116788)),	-- Warlord's Deathwheel

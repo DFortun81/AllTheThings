@@ -228,7 +228,6 @@ _.Zones =
 				q(48883, {	-- Big Gulls Won't Die
 					["provider"] = { "n", 127558 },	-- Art Hughie
 					["coord"] = { 71.7, 50.4, DRUSTVAR },
-					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48880, 48904 },	-- Mean Gulls & Take the Bait
 					["g"] = {
 						i(155459),	-- Anglin' Art's Sandals
@@ -596,7 +595,6 @@ _.Zones =
 				q(48882, {	-- I Like Fish Guts and I Cannot Lie
 					["provider"] = { "o", 276513 },	-- Intact Mudfish
 					["coord"] = { 70.7, 50.8, DRUSTVAR },
-					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48880 },	-- Mean Gulls (must be ON quest for this one to appear)
 				}),
 				o(292523, {	-- Heartsbane Grimoire
@@ -700,7 +698,6 @@ _.Zones =
 				q(48880, {	-- Mean Gulls
 					["provider"] = { "n", 127558 },	-- Art Hughie
 					["coord"] = { 71.7, 50.4, DRUSTVAR },
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(48792, {	-- Menace to Society
 					["provider"] = { "n", 127015 },	-- Thaddeus "Gramps" Rifthold
@@ -1086,7 +1083,6 @@ _.Zones =
 				q(48904, {	-- Take the Bait
 					["provider"] = { "n", 127558 },	-- Art Hughie
 					["coord"] = { 71.7, 50.4, DRUSTVAR },
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(48986, {	-- Take the High Road
 					["provider"] = { "n", 127715 },	-- Lucille Waycrest
@@ -1258,7 +1254,6 @@ _.Zones =
 				q(48881, {	-- The Reel Deal
 					["provider"] = { "o", 276515 },	-- Fishing Rod
 					["coord"] = { 71.1, 52.3, DRUSTVAR },
-					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48880 },	-- Mean Gulls (must be ON quest for this one to appear)
 					["groups"] = {
 						i(152868, {	-- Anglin' Art's Mudfish Bait

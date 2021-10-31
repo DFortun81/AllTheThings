@@ -1219,7 +1219,8 @@ _.Zones =
 					["provider"] = { "n", 63778 },	-- Messenger Grummle
 				}),
 				q(38936, {	-- The Road to Kun-Lai (Adventure guide)
-					["u"] = REMOVED_FROM_GAME,
+					["isBreadcrumb"] = true,
+					["description"] = "This quest needs to be accepted from the 'Adventure Guide'.",
 				}),
 				q(31254, {	-- The Road to Kun-Lai
 					["races"] = ALLIANCE_ONLY,

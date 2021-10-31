@@ -6,6 +6,21 @@ _.WorldDrops =
 {
 	spell(921, {	-- Pickpocketing
 		n(-9981, {	-- Draenor
+			q(39107, {	-- An Even Bigga Score
+				["provider"] = { "n", 83006 },	-- Griftah
+				["classes"] = { ROGUE },
+				["isWeekly"] = true,
+			}),
+			q(37284, {	-- Da Big Score
+				["provider"] = { "n", 83006 },	-- Griftah
+				["classes"] = { ROGUE },
+				["isWeekly"] = true,
+			}),
+			q(37285, {	-- If You're Sure
+				["provider"] = { "n", 83006 },	-- Griftah
+				["classes"] = { ROGUE },
+				["isWeekly"] = true,
+			}),
 			i(112995),	-- Slimy Ring: 2 coins
 			i(112996),	-- Glistening Ring: 3 coins
 			i(112997),	-- Emerald Ring: 4 coins

@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(WOD_TIER, {
-	n(-7, {	-- World Bosses
+	n(WORLD_BOSSES, {
 		["isRaid"] = true,
 		["lvl"] = 100,
 		["g"] = {
