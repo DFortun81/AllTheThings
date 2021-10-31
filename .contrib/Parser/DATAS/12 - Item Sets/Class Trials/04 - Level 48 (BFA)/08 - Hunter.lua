@@ -4,8 +4,8 @@
 
 _.GearSets =
 {
-	n(-5350, {	-- Class Trial Item Sets
-		n(-154, {	-- Level 48
+	n(CLASS_TRIAL, {
+		n(LEVEL_FOURTY_EIGHT, {
 			cl(HUNTER, {
 				i(160439, {	-- Adventurer's Footlocker
 					i(153813),	-- Trailseeker Shotgun
@@ -32,7 +32,7 @@ _.GearSets =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(LEGION_HEADER, {
-		n(-5350, {	-- Class Trial Item Sets
+		n(CLASS_TRIAL, {
 			cl(HUNTER, {
 				-- added 7.2.5/Confirmed
 				i(150642),	-- Trailseeker Spaulders

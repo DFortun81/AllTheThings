@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	tier(SL_TIER, {
-		n(-929, {	-- Night Fae
+		n(NIGHT_FAE, {
 			["g"] = {
 				n(QUESTS, sharedData({
 					["customCollect"] = { "SL_COV_NFA", },	-- Night Fae

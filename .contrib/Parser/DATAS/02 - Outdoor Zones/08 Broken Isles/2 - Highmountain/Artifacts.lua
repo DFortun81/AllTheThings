@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(BROKEN_ISLES, {
 		m(HIGHMOUNTAIN, {
-			n(-10067, {	-- Artifacts
+			n(ARTIFACTS, {
 				n(-159, {	-- Daily Event Roll
 					["lvl"] = 110,
 					["classes"] = { WARRIOR },

@@ -4,8 +4,8 @@
 
 _.GearSets =
 {
-	n(-5350, {	-- Class Trial Item Sets
-		n(-154, {	-- Level 48
+	n(CLASS_TRIAL, {
+		n(LEVEL_FOURTY_EIGHT, {
 			cl(DEMONHUNTER, {
 				i(154737),	-- Illidari Blindfold
 				i(154747),	-- Illidari Chain
@@ -28,7 +28,7 @@ _.GearSets =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(LEGION_HEADER, {
-		n(-5350, {	-- Class Trial Item Sets
+		n(CLASS_TRIAL, {
 			cl(DEMONHUNTER, {
 				-- added 7.2.5/Confirmed
 				i(150715),	-- Illidari Warglaive
@@ -53,7 +53,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 	}),
 	n(BFA_HEADER, {
-		n(-5350, {	-- Class Trial Item Sets
+		n(CLASS_TRIAL, {
 			cl(DEMONHUNTER, {
 				-- added 8.0.1/Confirmed
 				i(164760),	-- Illidari Warglaives (Lv100 boosted gear)

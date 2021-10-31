@@ -4,8 +4,8 @@
 
 _.GearSets =
 {
-	n(-5350, {	-- Class Trial Item Sets
-		n(-154, {	-- Level 48
+	n(CLASS_TRIAL, {
+		n(LEVEL_FOURTY_EIGHT, {
 			cl(MONK, {
 				n(-9933, bubbleDown({["u"] = REMOVED_FROM_GAME}, {	-- Mistweaver [Crieve's Monk "Meditarp".]
 					i(153847),	-- Mistdancer Hood
@@ -55,7 +55,7 @@ _.GearSets =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(LEGION_HEADER, {
-		n(-5350, {	-- Class Trial Item Sets
+		n(CLASS_TRIAL, {
 			cl(MONK, {
 				-- added 7.2.5/No Info
 				i(150653),	-- Mistdancer Vest

@@ -95,7 +95,7 @@ _.Zones =
 						i(175069, {	-- Theater Ticket
 							["cost"] = 2000,	-- 2 silver
 						}),
-						n(-929, sharedData({["customCollect"] = { "SL_COV_NFA" }},{	-- Night Fae
+						n(NIGHT_FAE, sharedData({["customCollect"] = { "SL_COV_NFA" }},{
 							i(182662, {	-- Leafadore
 								["cost"] = { { "i", 163036, 250 } },
 							}),

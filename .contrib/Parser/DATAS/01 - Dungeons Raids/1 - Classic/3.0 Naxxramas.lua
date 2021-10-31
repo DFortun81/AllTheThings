@@ -15,7 +15,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 				["u"] = REMOVED_FROM_GAME,
 				["sourceQuest"] = 9121,	-- The Dread Citadel - Naxxramas [Honored]
 				["groups"] = {
-					n(-10066, {	-- Legendary Questline
+					n(LEGENDARY_QUESTLINE, {
 						["classes"] = { PRIEST, MAGE, WARLOCK, DRUID },
 						["title"] = "Atiesh, Greatstaff of the Guardian",
 						["icon"] = "Interface\\Icons\\INV_Staff_Medivh",

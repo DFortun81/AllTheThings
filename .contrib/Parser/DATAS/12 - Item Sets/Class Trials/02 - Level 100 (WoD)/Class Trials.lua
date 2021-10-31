@@ -4,8 +4,8 @@
 
 _.GearSets =
 {
-	n(-5350, {	-- Class Trial Item Sets
-		n(-138, {	-- Level 100
+	n(CLASS_TRIAL, {
+		n(LEVEL_HUNDRED, {
 			["description"] = "These were obtained by creating a Level 100 Class Trial (WoD) for each class and specialization.",
 			["lvl"] = 100,
 			["groups"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
@@ -378,7 +378,7 @@ _.GearSets =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(WOD_HEADER, {
-		n(-5350, {	-- Class Trial Item Sets
+		n(CLASS_TRIAL, {
 			cl(PRIEST, {
 				-- added 6.2.2/Confirmed
 				i(129404),	-- Communal Stave

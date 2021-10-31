@@ -348,7 +348,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 				},
 			}),
-			n(-10066, {	-- Legendary Questline
+			n(LEGENDARY_QUESTLINE, {
 				["description"] = "These quests can only be completed on 25-Man Normal or Heroic difficulty.",
 				["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 				["title"] = "Shadowmourne",

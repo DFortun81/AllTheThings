@@ -4,8 +4,8 @@
 
 _.GearSets =
 {
-	n(-5350, {	-- Class Trial Item Sets
-		n(-155, bubbleDown({["u"] = BLIZZARD_BALANCE}, {	-- Level 50 (Old Level 120)
+	n(CLASS_TRIAL, {
+		n(LEVEL_FIFTY, bubbleDown({["u"] = BLIZZARD_BALANCE}, {
 			cl(PALADIN, {
 				i(171988, {	-- Adventurer's Footlocker
 					i(170676),	-- Sunsoul Bulwark
@@ -58,7 +58,7 @@ _.GearSets =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(BFA_HEADER, {
-		n(-5350, {	-- Class Trial Item Sets
+		n(CLASS_TRIAL, {
 			cl(PALADIN, {
 				-- added 8.2.5/Confirmed
 				i(170674),	-- Sunsoul Shield
@@ -69,7 +69,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 	}),
 	n(SL_HEADER, {
-		n(-5350, {	-- Class Trial Item Sets
+		n(CLASS_TRIAL, {
 			cl(PALADIN, {
 				-- added 9.0.1/No Info
 				i(180717),	-- Sunsoul Shield

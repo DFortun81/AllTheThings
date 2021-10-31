@@ -4,8 +4,8 @@
 
 _.GearSets =
 {
-	n(-5350, {	-- Class Trial Item Sets
-		n(-154, {	-- Level 48
+	n(CLASS_TRIAL, {
+		n(LEVEL_FOURTY_EIGHT, {
 			cl(MAGE, {
 				i(153830),	-- Mountainsage Staff	*LA0207
 				i(153822),	-- Mountainsage Hood	*LA0207
@@ -28,7 +28,7 @@ _.GearSets =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(LEGION_HEADER, {
-		n(-5350, {	-- Class Trial Item Sets
+		n(CLASS_TRIAL, {
 			cl(MAGE, {
 				-- added 7.2.5/Confirmed
 				i(150651),	-- Mountainsage Cord

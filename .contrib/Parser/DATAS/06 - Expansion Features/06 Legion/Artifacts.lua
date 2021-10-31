@@ -168,7 +168,7 @@ _.ExpansionFeatures =
 -----------------------------------------------------
 {
 	tier(LEGION_TIER, {
-		n(-10067, {	-- Artifacts
+		n(ARTIFACTS, {
 			["description"] = "\nPressing |cFFFFD700CTRL + Left Click|r will allow you to preview the appropriate skin and tint.\n\n",
 			["groups"] = {
 				cl(WARRIOR, {
@@ -2357,7 +2357,7 @@ _.ExpansionFeatures =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(LEGION_HEADER, {
-		n(-10067, {	-- Artifacts
+		n(ARTIFACTS, {
 			n(WEAPONS, {
 				i(137661),	-- Truthguard
 				i(136593),	-- Doomhammer Offhand Appearance Record (referenced by actual item)

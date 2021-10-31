@@ -10,7 +10,7 @@ _.Instances = { tier(CATA_TIER, {
 		["lvl"] = 85,
 		["g"] = {
 			ach(5802),	-- Firelands
-			n(-10066, {	-- Legendary Questline
+			n(LEGENDARY_QUESTLINE, {
 				["classes"] = { PRIEST, SHAMAN, MAGE, WARLOCK, DRUID },
 				["title"] = "Dragonwrath, Tarecgosa's Rest",
 				["icon"] = "Interface\\Icons\\Stave_2H_Tarecgosa_E_01StageFinal",

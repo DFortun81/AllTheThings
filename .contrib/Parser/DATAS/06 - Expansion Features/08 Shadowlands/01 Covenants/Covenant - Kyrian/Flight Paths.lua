@@ -8,7 +8,7 @@ _.ExpansionFeatures =
 	tier(SL_TIER, bubbleDown({
 			["customCollect"] = "SL_COV_KYR",	-- Kyrian
 		},{
-		n(-939, {	-- Kyrian
+		n(KYRIAN, {
 			["g"] = {
 				n(FLIGHT_PATHS, {
 					fp(2528, {	-- Bastion, Elysian Hold

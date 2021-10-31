@@ -4,8 +4,8 @@
 
 _.GearSets =
 {
-	n(-5350, {	-- Class Trial Item Sets
-		n(-154, {	-- Level 48
+	n(CLASS_TRIAL, {
+		n(LEVEL_FOURTY_EIGHT, {
 			cl(PRIEST, {
 				i(153934),	-- Communal Staff	*LA0104
 				i(153923),	-- Communal Hood	*LA0104
@@ -28,7 +28,7 @@ _.GearSets =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(LEGION_HEADER, {
-		n(-5350, {	-- Class Trial Item Sets
+		n(CLASS_TRIAL, {
 			cl(PRIEST, {
 				-- added 7.2.5/Confirmed
 				i(150597),	-- Whispering Staff of the Void

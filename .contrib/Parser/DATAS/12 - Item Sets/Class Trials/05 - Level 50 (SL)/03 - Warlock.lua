@@ -3,8 +3,8 @@
 -----------------------------------------------------
 _.GearSets =
 { --[[ -- Disabled for now as a Lv50 Boost provides the Level 48 items. Confirmed by Timum 24.09.2021
-	n(-5350, {	-- Class Trial Item Sets
-		n(-155, bubbleDown({["u"] = BLIZZARD_BALANCE}, {	-- Level 50 (Old Level 120)
+	n(CLASS_TRIAL, {
+		n(LEVEL_FIFTY, bubbleDown({["u"] = BLIZZARD_BALANCE}, {
 			cl(WARLOCK, {
 				i(170742),	-- Felsoul Stave
 				i(170905),	-- Felsoul Cowl
@@ -26,7 +26,7 @@ _.GearSets =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(BFA_HEADER, {
-		n(-5350, {	-- Class Trial Item Sets
+		n(CLASS_TRIAL, {
 			cl(WARLOCK, {
 				-- added 8.2.5/No Info
 				i(170736),	-- Felsoul Medallion
@@ -34,7 +34,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 	}),
 	n(SL_HEADER, {
-		n(-5350, {	-- Class Trial Item Sets
+		n(CLASS_TRIAL, {
 			cl(WARLOCK, {
 				-- added 9.0.1/No Info
 				i(177606),	-- Felsoul Sandals

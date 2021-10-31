@@ -4,8 +4,8 @@
 
 _.GearSets =
 {
-	n(-5350, {	-- Class Trial Item Sets
-		n(-154, {	-- Level 48
+	n(CLASS_TRIAL, {
+		n(LEVEL_FOURTY_EIGHT, {
 			cl(PALADIN, {
 				n(-9942, bubbleDown({["u"] = REMOVED_FROM_GAME}, {	-- Holy
 					i(153879),	-- Sunsoul Headpiece
@@ -67,7 +67,7 @@ _.GearSets =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(LEGION_HEADER, {
-		n(-5350, {	-- Class Trial Item Sets
+		n(CLASS_TRIAL, {
 			cl(PALADIN, {
 				-- added 7.2.5/No Info
 				i(150661),	-- Sunsoul Battleplate

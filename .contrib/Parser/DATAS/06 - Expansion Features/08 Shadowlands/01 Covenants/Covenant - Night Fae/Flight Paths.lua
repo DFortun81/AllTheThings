@@ -8,7 +8,7 @@ _.ExpansionFeatures =
 	tier(SL_TIER, bubbleDown({
 			["customCollect"] = "SL_COV_NFA",	-- Night Fae
 		},{
-		n(-929, {	-- Night Fae
+		n(NIGHT_FAE, {
 			["g"] = {
 				n(FLIGHT_PATHS, {
 					fp(2587, {	-- Ardenweald, Heart of the Forest

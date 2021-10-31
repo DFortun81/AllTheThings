@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	tier(SL_TIER, {
-		n(-920, {	-- Necrolord
+		n(NECROLORD, {
 			["g"] = {
 				n(VENDORS, {
 					n(159238, {	-- Atticus <Supplies & Acquisitions>
@@ -1565,7 +1565,7 @@ _.HiddenQuestTriggers = {
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(SL_HEADER, {
-		n(-920, {	-- Necrolord
+		n(NECROLORD, {
 			n(-163, {	-- Armor
 				n(-43, {	-- Cloth
 					i(179412),	-- 9.0 Covenant - Maldraxxus - Cloth - Head

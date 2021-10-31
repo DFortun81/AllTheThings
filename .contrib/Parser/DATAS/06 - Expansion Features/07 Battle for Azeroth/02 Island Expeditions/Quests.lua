@@ -7,7 +7,7 @@ _.ExpansionFeatures =
 {
 	tier(BFA_TIER, {
 		n(-3338, {	-- Island Expeditions
-			n(-10067, {	-- Artifact
+			n(ARTIFACTS, {
 				n(-227,	{	-- Victory
 					i(169687, {	-- Fragment of Zem'lan's Lost Treasure Map
 						i(169693, {	-- Zem'Lans Lost Treasure Map

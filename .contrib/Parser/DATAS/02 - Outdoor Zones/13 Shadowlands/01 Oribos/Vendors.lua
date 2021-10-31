@@ -76,7 +76,7 @@ _.Zones =
 						i(184218, {	-- Vulgarity Arbiter
 							["cost"] = { { "c", 1816, 1000 } },
 						}),
-						n(-949, sharedData({["customCollect"] = { "SL_COV_VEN" }},{	-- Venthyr
+						n(VENTHYR, sharedData({["customCollect"] = { "SL_COV_VEN" }},{
 							i(180940, {	-- Ebony Crypt Keeper's Mantle
 								["cost"] = { { "c", 1816, 500 } },
 							}),
@@ -133,7 +133,7 @@ _.Zones =
 						i(184742),	-- Rattling Bonefists
 						i(184736),	-- Robe of the March Warden
 						i(184745),	-- Tunic of the March Warden
-						n(-920, sharedData({["customCollect"] = { "SL_COV_NEC" }}, {
+						n(NECROLORD, sharedData({["customCollect"] = { "SL_COV_NEC" }}, {
 							i(181807, {	-- Barbarous Osteowings
 								["cost"] = 5000000, -- 500g
 							}),
@@ -185,7 +185,7 @@ _.Zones =
 						i(184727),	-- Courtier's Shoulderguard
 						i(184755),	-- Reinforced High Collar
 						i(182207),	-- Illusion: Sinsedge
-						n(-949, sharedData({["customCollect"] = { "SL_COV_VEN" }}, {
+						n(VENTHYR, sharedData({["customCollect"] = { "SL_COV_VEN" }}, {
 							i(183708, {	-- Glittering Gold Sinstone Chain
 								["cost"] = { { "c", 1813, 3500 } },
 							}),
@@ -306,7 +306,7 @@ _.Zones =
 						i(184754),	-- Glitterwing Scarf
 						i(184752),	-- Gormscale Leggings
 						i(184753),	-- Tree-Scaler's Britches
-						n(-929, sharedData({["customCollect"] = { "SL_COV_NFA" }}, {
+						n(NIGHT_FAE, sharedData({["customCollect"] = { "SL_COV_NFA" }}, {
 							i(182168, {	-- Crane Soul
 								["cost"] = { { "c", 1813, 1500 } },	-- Reservoir Anima
 							}),
@@ -1325,7 +1325,7 @@ _.Zones =
 							["description"] = "Take this to Acquirer Ta'gosh in Oribos |cffffffff(61.7, 72.3)|r.",
 						}),
 					--	Shadowlands S1 (removed)
-						n(-939, sharedData({
+						n(KYRIAN, sharedData({
 								["customCollect"] = { "SL_COV_KYR" },
 								["u"] = REMOVED_FROM_GAME,
 							}, {
@@ -1372,7 +1372,7 @@ _.Zones =
 								["cost"] = { { "c", 1602, 900 } },
 							}),
 						})),
-						n(-920, sharedData({
+						n(NECROLORD, sharedData({
 								["customCollect"] = { "SL_COV_NEC" },
 								["u"] = REMOVED_FROM_GAME,
 							}, {
@@ -1413,7 +1413,7 @@ _.Zones =
 								["cost"] = { { "c", 1602, 900 } },
 							}),
 						})),
-						n(-929, sharedData({
+						n(NIGHT_FAE, sharedData({
 								["customCollect"] = { "SL_COV_NFA" },
 								["u"] = REMOVED_FROM_GAME,
 							}, {
@@ -1454,7 +1454,7 @@ _.Zones =
 								["cost"] = { { "c", 1602, 1800 } },
 							}),
 						})),
-						n(-949, sharedData({
+						n(VENTHYR, sharedData({
 								["customCollect"] = { "SL_COV_VEN" },
 								["u"] = REMOVED_FROM_GAME,
 							}, {

@@ -4,8 +4,8 @@
 
 _.GearSets =
 {
-	n(-5350, {	-- Class Trial Item Sets
-		n(-137, {	-- Level 90
+	n(CLASS_TRIAL, {
+		n(LEVEL_NINETY, {
 			["description"] = "These were obtained by creating a Level 90 Class Trial (MoP) for each class and specialization.",
 			["lvl"] = 90,
 			["groups"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
@@ -805,7 +805,7 @@ _.GearSets =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(WOD_HEADER, {
-		n(-5350, {	-- Class Trial Item Sets
+		n(CLASS_TRIAL, {
 			cl(PRIEST, {
 				-- added 6.0.2/No Info
 				i(119667),	-- Communal Sandals

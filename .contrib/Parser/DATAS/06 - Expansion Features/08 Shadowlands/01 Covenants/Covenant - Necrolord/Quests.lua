@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	tier(SL_TIER, {
-		n(-920, {	-- Necrolord
+		n(NECROLORD, {
 			["g"] = {
 				n(QUESTS, sharedData({
 					["customCollect"] = { "SL_COV_NEC", },	-- Necrolord

@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	tier(SL_TIER, {
-		n(-939, {	-- Kyrian
+		n(KYRIAN, {
 			["g"] = {
 				n(VENDORS, {
 					n(174937, {	-- Adjutant Galos <Renown Quartermaster>
@@ -1552,7 +1552,7 @@ _.HiddenQuestTriggers = {
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(SL_HEADER, {
-		n(-939, {	-- Kyrian
+		n(KYRIAN, {
 			n(-163, {	-- Armor
 				n(-45, {	-- Mail
 					i(179394),	-- 9.0 Covenant - Bastion - Mail - Base - Head

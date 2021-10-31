@@ -4,8 +4,8 @@
 
 _.GearSets =
 {
-	n(-5350, {	-- Class Trial Item Sets
-		n(-155, bubbleDown({["u"] = BLIZZARD_BALANCE}, {	-- Level 50 (Old Level 120)
+	n(CLASS_TRIAL, {
+		n(LEVEL_FIFTY, bubbleDown({["u"] = BLIZZARD_BALANCE}, {
 			cl(DEMONHUNTER, {
 				i(170941),	-- Illidari Warglaives
 				i(170929),	-- Illidari Blindfold
@@ -27,7 +27,7 @@ _.GearSets =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(BFA_HEADER, {
-		n(-5350, {	-- Class Trial Item Sets
+		n(CLASS_TRIAL, {
 			cl(DEMONHUNTER, {
 				-- added 8.2.5/No Info
 				i(170927),	-- Illidari Shoulders
@@ -39,7 +39,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 	}),
 	n(SL_HEADER, {
-		n(-5350, {	-- Class Trial Item Sets
+		n(CLASS_TRIAL, {
 			cl(DEMONHUNTER, {
 				-- added 9.0.1/No Info
 				i(177568),	-- Illidari Leggings

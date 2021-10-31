@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	tier(SL_TIER, {
-		n(-929, {	-- Night Fae
+		n(NIGHT_FAE, {
 			["customCollect"] = "SL_COV_NFA",	-- Night Fae
 			["maps"] = {
 				THE_TRUNK,	-- Heart of the Forest
@@ -1669,7 +1669,7 @@ _.HiddenQuestTriggers = {
 -- These quests never made it in.
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(SL_HEADER, {
-		n(-929, {	-- Night Fae
+		n(NIGHT_FAE, {
 			n(-163, {	-- Armor
 				n(-43, {	-- Cloth
 					i(179439),	-- 9.0 Covenant - Ardenweald - Cloth - Head

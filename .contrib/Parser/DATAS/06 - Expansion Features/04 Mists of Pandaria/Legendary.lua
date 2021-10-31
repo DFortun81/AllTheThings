@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	tier(MOP_TIER, {
-		n(-10066, {	-- Legendary Questline
+		n(LEGENDARY_QUESTLINE, {
 			["title"] = "The Black Prince",
 			["icon"] = 656543,
 			["isRaid"] = true,

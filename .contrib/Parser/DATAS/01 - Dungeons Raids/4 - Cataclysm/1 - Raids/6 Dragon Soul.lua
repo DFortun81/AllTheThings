@@ -21,7 +21,7 @@ _.Instances = { tier(CATA_TIER, {
 			{ 61.9, 27.2, CAVERNS_OF_TIME },	-- actual raid entrance
 		},
 		["groups"] = {
-			n(-10066, {	-- Legendary Questline
+			n(LEGENDARY_QUESTLINE, {
 				["title"] = "Fangs of the Father",
 				["icon"] = "Interface\\Icons\\ability_backstab",
 				["classes"] = { ROGUE },

@@ -4,8 +4,8 @@
 
 _.GearSets =
 {
-	n(-5350, {	-- Class Trial Item Sets
-		n(-154, {	-- Level 48
+	n(CLASS_TRIAL, {
+		n(LEVEL_FOURTY_EIGHT, {
 			cl(SHAMAN, {
 				n(-9939, {	-- Elemental
 					i(160439, {	-- Adventurer's Footlocker
@@ -73,7 +73,7 @@ _.GearSets =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(LEGION_HEADER, {
-		n(-5350, {	-- Class Trial Item Sets
+		n(CLASS_TRIAL, {
 			cl(SHAMAN, {
 				-- added 7.2.5/No Info
 				i(150685),	-- Streamtalker Tunic

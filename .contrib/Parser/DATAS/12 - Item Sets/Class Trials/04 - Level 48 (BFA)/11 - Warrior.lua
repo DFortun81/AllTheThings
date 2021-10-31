@@ -4,8 +4,8 @@
 
 _.GearSets =
 {
-	n(-5350, {	-- Class Trial Item Sets
-		n(-154, {	-- Level 48
+	n(CLASS_TRIAL, {
+		n(LEVEL_FOURTY_EIGHT, {
 			cl(WARRIOR, {
 				n(-9945, {	-- Arms
 					i(160439, {	-- Adventurer's Footlocker
@@ -51,7 +51,7 @@ _.GearSets =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(LEGION_HEADER, {
-		n(-5350, {	-- Class Trial Item Sets
+		n(CLASS_TRIAL, {
 			cl(WARRIOR, {
 				-- added 7.2.5/No Info
 				i(150701),	-- Oathsworn Breastplate

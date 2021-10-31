@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	tier(SL_TIER, {
-		n(-920, {	-- Necrolord
+		n(NECROLORD, {
 			["g"] = {
 				n(-921, {	-- Sanctum Upgrades
 					n(-923, {	-- Abomination Factory

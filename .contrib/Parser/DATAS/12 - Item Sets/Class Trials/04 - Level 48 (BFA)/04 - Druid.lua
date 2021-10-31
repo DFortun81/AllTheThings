@@ -4,8 +4,8 @@
 
 _.GearSets =
 {
-	n(-5350, {	-- Class Trial Item Sets
-		n(-154, {	-- Level 48
+	n(CLASS_TRIAL, {
+		n(LEVEL_FOURTY_EIGHT, {
 			cl(DRUID, {
 				n(-9926, {	-- Balance
 					i(160439, {	-- Adventurer's Footlocker	*LA0404Balance
@@ -55,7 +55,7 @@ _.GearSets =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(LEGION_HEADER, {
-		n(-5350, {	-- Class Trial Item Sets
+		n(CLASS_TRIAL, {
 			cl(DRUID, {
 				-- added 7.2.5/No Info
 				i(150629),	-- Springrain Tunic

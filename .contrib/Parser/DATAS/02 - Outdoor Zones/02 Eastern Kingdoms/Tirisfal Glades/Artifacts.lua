@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(TIRISFAL_GLADES, {
-			n(-10067, {	-- Artifacts
+			n(ARTIFACTS, {
 				["lvl"] = 98,
 				["g"] = {
 					n(11608, {	-- Bardu Sharpeye

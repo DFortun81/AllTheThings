@@ -10,7 +10,7 @@ _.Zones =
 				n(REWARDS, {
 					["description"] = "These pieces can be rewarded from covenant dailies in Korthia.",
 					["g"] = {
-						n(-929, {	-- Night Fae
+						n(NIGHT_FAE, {
 							["customCollect"] = "SL_COV_NFA",	-- Night Fae
 							["g"] = {
 								-- Night Fae -- of the Twilight Grove -- Korthia Dailies
@@ -26,7 +26,7 @@ _.Zones =
 								i(182180),	-- Stag Soul (Night Fae) [unsure if from specific Quest (63935) or others as well]
 							},
 						}),
-						n(-939, {	-- Kyrian
+						n(KYRIAN, {
 							["customCollect"] = "SL_COV_KYR",	-- Kyrian
 							["g"] = {
 								-- Kyrian -- Foresworn Aspirant's -- Korthia Dailies
@@ -41,7 +41,7 @@ _.Zones =
 								i(184989),	-- Foresworn Aspirant's Wraps
 							},
 						}),
-						n(-920, {	-- Necrolord
+						n(NECROLORD, {
 							["customCollect"] = "SL_COV_NEC",	-- Necrolord
 							["g"] = {
 								-- Necrolord -- Rogue Necromancer's -- Korthia Dailies
@@ -56,7 +56,7 @@ _.Zones =
 								i(185018),	-- Rogue Necromancer's Wraps
 							},
 						}),
-						n(-949, {	-- Venthyr
+						n(VENTHYR, {
 							["customCollect"] = "SL_COV_VEN",	-- Venthyr
 							["g"] = {
 								-- Venthyr -- Radiant Court -- Korthia Dailies?
