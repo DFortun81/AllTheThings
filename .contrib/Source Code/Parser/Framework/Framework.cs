@@ -2069,6 +2069,13 @@ namespace ATT
                         return "achID";
                     }
 
+                case "achCatID":
+                case "achCategoryID":
+                case "achievementCategoryID":
+                    {
+                        return "achievementCategoryID";
+                    }
+
                 case "minRep":
                 case "minReputation":
                     {

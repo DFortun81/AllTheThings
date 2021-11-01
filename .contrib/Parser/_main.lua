@@ -1096,6 +1096,10 @@ ach = function(id, altID, t)							-- Create an ACHIEVEMENT Object
 		return struct("achievementID", id, altID);
 	end
 end
+achcat = function(id, t)								-- Create an ACHIEVEMENT CATEGORY Object
+	return struct("achievementCategoryID", id, t);
+end
+achievementCategory = achcat;
 az = function(id, rank, t)								-- Create a AZERITE ESSENCE Object.
 	if t or type(rank) == "number" then
 		t = struct("azeriteEssenceID", id, t or {});

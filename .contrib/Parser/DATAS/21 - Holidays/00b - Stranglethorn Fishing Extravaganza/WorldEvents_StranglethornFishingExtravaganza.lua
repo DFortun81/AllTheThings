@@ -10,7 +10,13 @@ local DREAD_PIRATE_RING = i(122529, {	-- Dread Pirate Ring
 root("Holidays", applyholiday(STRANGLETHORN_FISHING_EXTRAVAGANZA, {
 	["npcID"] = -62,	-- Stranglethorn Fishing Extravaganza
 	["description"] = "The Stranglethorn Fishing Extravaganza is a weekly fishing event held in Stranglethorn Vale. There is a highly competitive fishing contest and a more casual rare fish turn-in for this event.",
-	["coord"] = { 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
+	["maps"] = {
+		-- #if AFTER CATA
+		THE_CAPE_OF_STRANGLETHORN,
+		-- #else
+		STRANGLETHORN_VALE,
+		-- #endif
+	},
 	["groups"] = {
 		n(ACHIEVEMENTS, {
 			removeclassicphase(ach(306, {	-- Master Angler of Azeroth
@@ -186,16 +192,13 @@ root("Holidays", applyholiday(STRANGLETHORN_FISHING_EXTRAVAGANZA, {
 			}),
 		}),
 		prof(FISHING, {
-			["maps"] = { STRANGLETHORN_VALE, },
-			["groups"] = {
-				o(180248, {	-- School of Tastyfish
-					i(19803),	-- Brownell's Blue Striped Racer
-					i(19806),	-- Dezian Queenfish
-					i(19805),	-- Keefer's Angelfish
-					i(19808),	-- Rockhide Strongfish
-					i(19807),	-- Speckled Tastyfish
-				}),
-			},
+			o(180248, {	-- School of Tastyfish
+				i(19803),	-- Brownell's Blue Striped Racer
+				i(19806),	-- Dezian Queenfish
+				i(19805),	-- Keefer's Angelfish
+				i(19808),	-- Rockhide Strongfish
+				i(19807),	-- Speckled Tastyfish
+			}),
 		}),
 	},
 }));

@@ -6702,6 +6702,9 @@ local fields = {
 		end
 		if app.AccountWideAchievements and ATTAccountWideData.Achievements[t.achievementID] then return 2; end
 	end,
+	["parentCategoryID"] = function(t)
+		return GetAchievementCategory(t.achievementID) or -1;
+	end,
 	["statistic"] = function(t)
 		if GetAchievementNumCriteria(t.achievementID) == 1 then
 			local quantity, reqQuantity = select(4, GetAchievementCriteriaInfo(t.achievementID, 1));
@@ -6732,6 +6735,25 @@ local fields = {
 app.BaseAchievement = app.BaseObjectFields(fields);
 app.CreateAchievement = function(id, t)
 	return setmetatable(constructor(id, t, "achID"), app.BaseAchievement);
+end
+
+local categoryFields = {
+	["key"] = function(t)
+		return "achievementCategoryID";
+	end,
+	["text"] = function(t)
+		return GetCategoryInfo(t.achievementCategoryID);
+	end,
+	["icon"] = function(t)
+		return app.asset("Category_Achievements");
+	end,
+	["parentCategoryID"] = function(t)
+		return select(2, GetCategoryInfo(t.achievementCategoryID)) or -1;
+	end,
+};
+app.BaseAchievementCategory = app.BaseObjectFields(categoryFields);
+app.CreateAchievementCategory = function(id, t)
+	return setmetatable(constructor(id, t, "achievementCategoryID"), app.BaseAchievementCategory);
 end
 
 -- Achievement Criteria Lib
