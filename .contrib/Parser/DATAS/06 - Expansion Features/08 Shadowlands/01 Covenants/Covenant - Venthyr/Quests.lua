@@ -321,6 +321,9 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 59719 },	-- The Court
 						["provider"] = { "n", 172042 },	-- Theotar
 						["coord"] = { 50.3, 18.8, SINFALL_REACHES },
+						["g"] = {
+							follower(1210),	-- Theotar
+						},
 					}),
 					q(58394, {	-- Lady Ouix'Ara
 						["sourceQuests"] = {
@@ -809,6 +812,23 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 164738 },	-- Tenaval
 						["isWeekly"] = true,
 						["coord"] = { 46.0, 28.1, SINFALL_REACHES },
+					}),
+					-- 9.1.5
+					q(65169, {	-- A Stalwart Ally
+						["sourceQuests"] = { 62920 },	-- A Conduit For Change
+						["provider"] = { "n", 161977 },	-- General Draven
+						["coord"]  = { 46.1, 14.9, SINFALL_REACHES },
+						["g"] = {
+							follower(1209),	-- General Draven
+						},
+					}),
+					q(65170, {	-- Kindred Spirits
+						["sourceQuests"] = { 62920 },	-- A Conduit For Change
+						["provider"] = { "n", 161979 },	-- Theotar
+						["coord"]  = { 50.5, 18, SINFALL_REACHES },
+						["g"] = {
+							follower(1210),	-- Theotar
+						},
 					}),
 				})),
 			},
