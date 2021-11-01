@@ -985,6 +985,13 @@ _.HiddenQuestTriggers = {
 	q(64782),	-- Occurred when joining Night Fae/Kyrian in the initial Thread of Fate quest 62000
 	--q(62370),	-- Swapping Cov to NF with NF already R40
 	--q(62384),	-- Swapping Cov to NF with NF already R40
+	-- 9.1.5 Swapping at R80. Flag/Unflag
+	q(65076),	-- Swapping Cov to Kyrian at R80
+	q(65077),	-- Swapping Cov to Venthyr at R80
+	q(65078),	-- Swapping Cov to NF at R80
+	q(65079),	-- Swapping Cov to Necrolord at R80
+	-- 9.1.5?
+	q(62923),	-- Swapped to Venthyr from Necrolord at R80? Probably a old hqt
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {

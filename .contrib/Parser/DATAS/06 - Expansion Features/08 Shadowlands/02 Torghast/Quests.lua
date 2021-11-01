@@ -981,6 +981,10 @@ _.HiddenQuestTriggers = {
 		q(64182),	-- triggered when completing #64174, "Champion: Steadyhands"
 		q(64179),	-- Triggered when completing 64187 Kiaranyka's Search / 64171 Champion: Kiaranyka
 		q(64177),	-- Triggered when completing 64185 Assist Ella With ?/64169 Champion: Ella
+		
+		-- 9.1.5
+		--q(64848), Enter Torghast as lvl 56 NF Druid
+		--q(65308), Enter Torghast as lvl 56 NF Druid
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
