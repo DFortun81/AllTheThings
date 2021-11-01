@@ -5,7 +5,7 @@
 _.Achievements =
 {
 	n(-10055, {	-- Expansion Features
-		n(-9966, {	-- Draenor Garrison
+		n(GARRISONS, {
 			ach(9130),		-- A Rare Friend
 			ach(10174, {	-- Admiral (A)
 				["races"] = ALLIANCE_ONLY,

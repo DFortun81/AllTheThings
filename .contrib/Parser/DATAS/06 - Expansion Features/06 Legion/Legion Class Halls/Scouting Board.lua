@@ -19,7 +19,7 @@ _.ExpansionFeatures =
 						720,	-- Mardum, The Shattered Abyss (Demon Hunter)
 						721,	-- Lower Command Center (Demon Hunter)
 						702,	-- Netherlight Temple (Priest)
-						24,		-- Sanctum of Light (Paladin)
+						LIGHTS_HOPE_CHAPEL,	-- Sanctum of Light (Paladin)
 						695,	-- Skyhold (Warrior)
 						747,	-- The Dreamgrove (Druid)
 						626,	-- The Hall of Shadows (Rogue)

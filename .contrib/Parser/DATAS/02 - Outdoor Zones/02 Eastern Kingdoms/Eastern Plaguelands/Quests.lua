@@ -102,12 +102,12 @@ _.Zones =
 				q(27465, {	-- Argent Call: The Noxious Glade
 					["sourceQuests"] = { 27464 },	-- Argent Call: The Trial of the Crypt
 					["provider"] = { "n", 11034 },	-- Lord Maxwell Tyrosus
-					["coord"] = { 43.3, 87.2, 24 },
+					["coord"] = { 43.3, 87.2, LIGHTS_HOPE_CHAPEL },
 				}),
 				q(27464, {	-- Argent Call: The Trial of the Crypt
 					["sourceQuests"] = { 27463 },	-- A Boyhood Dream
 					["provider"] = { "n", 11034 },	-- Lord Maxwell Tyrosus
-					["coord"] = { 43.3, 87.2, 24 },
+					["coord"] = { 43.3, 87.2, LIGHTS_HOPE_CHAPEL },
 				}),
 				q(27618, {	-- Argent Upheaval
 					["sourceQuests"] = {
@@ -901,7 +901,7 @@ _.Zones =
 				}),
 				q(27459, {	-- The Brotherhood of Light
 					["provider"] = { "n", 11036 },	-- Leonid Barthalomew the Revered
-					["coord"] = { 41.0, 87.9, 24 },
+					["coord"] = { 41.0, 87.9, LIGHTS_HOPE_CHAPEL },
 				}),
 				q(27619, {	-- The Commander
 					["sourceQuests"] = { 27462 },	-- To Take the Barracks
@@ -1112,7 +1112,7 @@ _.Zones =
 				q(27684, {	-- Visitors
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 11034 },	-- Lord Maxwell Tyrosus
-					["coord"] = { 43.3, 87.2, 24 },
+					["coord"] = { 43.3, 87.2, LIGHTS_HOPE_CHAPEL },
 				}),
 				q(27371, {	-- What I Do Best
 					["sourceQuests"] = { 27370 },	-- Tarenar Sunstrike

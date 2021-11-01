@@ -1453,7 +1453,7 @@ _.Zones =
 					["g"] = {
 						q(46343, {	-- The Trail of Ban-Lu
 							["provider"] = { "n", 120722 },	-- Master Bu
-							["sourceQuests"] = { 46342 },	-- Return ot the Broken Peak
+							["sourceQuests"] = { 46342 },	-- Return to the Broken Peak
 						}),
 						q(46344, {	-- Smelly's Luckydo
 							["provider"] = { "n", 120744 },	-- Smelly Mountaintop
