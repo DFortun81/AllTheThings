@@ -186,12 +186,7 @@ root("Holidays", applyholiday(STRANGLETHORN_FISHING_EXTRAVAGANZA, {
 			}),
 		}),
 		prof(FISHING, {
-			["maps"] = {
-				STRANGLETHORN_VALE,
-				-- #if AFTER CATA
-				THE_CAPE_OF_STRANGLETHORN,
-				-- #endif
-			},
+			["maps"] = { STRANGLETHORN_VALE, },
 			["groups"] = {
 				o(180248, {	-- School of Tastyfish
 					i(19803),	-- Brownell's Blue Striped Racer
