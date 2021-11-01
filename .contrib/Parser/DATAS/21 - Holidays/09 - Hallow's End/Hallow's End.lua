@@ -385,7 +385,6 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 	["holidayID"] = 235462,
 	-- #endif
 	["groups"] = {
-		-- #if AFTER WRATH
 		n(ACHIEVEMENTS, {
 			ach(1656, {	-- Hallowed Be Thy Name
 				--[[
@@ -411,9 +410,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 			ach(255),	-- Bring Me The Head of... Oh Wait
 			ach(289),	-- The Savior of Hallow's End
 			ach(981, {	-- That Sparkling Smile
-				["cost"] = {
-					{ "i", 37604, 1	},	-- Tooth Pick
-				},
+				["provider"] = { "i", 37604 },	-- Tooth Pick
 			}),
 			ach(1040, {	-- Rotten Hallow (A)
 				["races"] = ALLIANCE_ONLY,
@@ -487,14 +484,25 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 					["provider"] = { "i", 20414 },	-- Hallowed Wand - Wisp
 				}),
 			}),
-			ach(292, {	-- Sinister Calling
+			removeclassicphase(ach(292, {	-- Sinister Calling
+				-- #if BEFORE WRATH
+				["providers"] = {
+					{ "i", 33154 },	-- Sinister Squashling
+					{ "i", 33292 },	-- Hallowed Helm
+				},
+				["description"] = "Obtain a Sinister Squashling pet and Hallowed Helm.",
+				["OnUpdate"] = [[function(t)
+					t.SetAchievementCollected(t.achievementID, GetItemCount(33292, true) > 0 and GetItemCount(33154, true) > 0);
+				end]],
+				-- #else
 				crit(1, {	-- Sinister Squashling
 					["provider"] = { "i", 33154 },	-- Sinister Squashling
 				}),
 				crit(2, {	-- Hallowed Helm
 					["provider"] = { "i", 33292 },	-- Hallowed Helm
 				}),
-			}),
+				-- #endif
+			})),
 			ach(971, {	-- Tricks and Treats of Azeroth
 				ach(966, {	-- Tricks and Treats of Eastern Kingdoms (A)
 					["races"] = ALLIANCE_ONLY,
@@ -1425,8 +1433,11 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 					}),
 				},
 			}),
+			ach(980, {	-- The Horseman's Reins
+				["provider"] = { "i", 37012 },	-- The Horseman's Reins
+				["timeline"] = { "added 2.0.1" },
+			}),
 		}),
-		-- #endif
 		n(23682, {	-- Headless Horseman
 			-- #if AFTER WRATH
 			["description"] = "You can loot the Loot-Stuffed Filled Pumpkin once a day per character by queueing for the encounter in the Dungeon Finder.",
@@ -1498,9 +1509,6 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 					["groups"] = {
 						i(37012, {	-- The Horseman's Reins
 							["timeline"] = { "added 2.0.1" },
-							["groups"] = {
-								ach(980),	-- The Horseman's Reins
-							},
 						}),
 						i(117356, {	-- The Horseman's Sinister Slicer
 							["timeline"] = { "added 6.0.1.18594" },
@@ -1569,9 +1577,6 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						-- #if BEFORE 6.0.1
 						i(37012, {	-- The Horseman's Reins
 							["timeline"] = { "added 2.0.1" },
-							["groups"] = {
-								ach(980),	-- The Horseman's Reins
-							},
 						}),
 						-- #endif
 						-- Mists of Pandaria
@@ -1606,9 +1611,6 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 				-- #if BEFORE CATA
 				i(37012, {	-- The Horseman's Reins
 					["timeline"] = { "added 2.0.1" },
-					["groups"] = {
-						ach(980),	-- The Horseman's Reins
-					},
 				}),
 				-- #endif
 				-- Legion+
