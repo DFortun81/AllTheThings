@@ -1688,7 +1688,6 @@ _.NeverImplemented =
 		model(43714, i(87793)),		-- Reins of the Jade Water Strider		(Never added in Game)
 		model(51323, i(104011)),	-- Stormcrow							(Never added in Game)
 		i(143752),	-- Sound Test Mount
-		i(37598),	-- Swift Zhevra OLD
 
 		i(44557),	-- Swift Ebonweave Carpet (NOT IN GAME)
 		i(44556),	-- Swift Spellfire Carpet (NOT IN GAME)

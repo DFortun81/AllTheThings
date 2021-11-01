@@ -1,8 +1,7 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
-_.Promotions =
-{
+root("Promotions", {
 	n(-546, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Recruit A Friend
 		ach(1436, {	-- Friends In High Places
 			["timeline"] = { "added 2.4.3.8601" },
@@ -106,8 +105,8 @@ _.Promotions =
 			["timeline"] = { "added 8.2.5.31958" },
 		}),
 	})),
-};
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+});
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(57850),	-- Storied Partnerships
 		q(57852),	-- Dungeon Adventure
@@ -115,4 +114,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
 		}),
 	}),
-});
+	filter(100, {	-- Mounts
+		i(37598),	-- Swift Zhevra OLD
+	}),
+}));
