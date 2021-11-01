@@ -1,8 +1,8 @@
------------------------------------------------------
---     W O R L D   E V E N T S   M O D U L E       --
------------------------------------------------------
+--------------------------------------------
+--     H O L I D A Y S  M O D U L E       --
+--------------------------------------------
 
-_.WorldEvents =
+_.Holidays =
 {
 	d(24, {  -- Timewalking
 		tier(LEGION_TIER, {
@@ -19,16 +19,9 @@ _.WorldEvents =
 					n(ACHIEVEMENTS, {
 						ach(15309),	-- A Towering Success
 						ach(15310, {	-- A Tour of Towers
-							--crit(2, {	-- An Impossible Foe
-								--["classes"] = { }
-							--}),
 							i(188674),	-- Mage-Bound Spelltome (MOUNT!)
 						}),
-						ach(15308, {	-- Tower Overwhelming
-							--crit(9, {	--
-								--["classes"] = { }
-							--}),
-						}),
+						ach(15308), 	-- Tower Overwhelming
 					}),
 					cl(DEATHKNIGHT, {
 						i(188537),	-- Gravewarden Armplates
