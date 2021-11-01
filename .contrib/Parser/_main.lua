@@ -1040,6 +1040,22 @@ end
 lvlsquish = function(originalLvl, shadowlandsLvl, retailLvl)
 	return originalLvl;
 end
+removeclassicphase = function(t)
+	if t then
+		if t.g or t.groups then
+			t.u = nil;
+			bubbleDown(data, t.groups);
+			bubbleDown(data, t.g);
+		elseif isarray(t) then
+			for i,group in ipairs(t) do
+				bubbleDown(data, group);
+			end
+		else
+			t.u = nil;
+		end
+		return t;
+	end
+end
 -- #else
 isanyclassic = function(modifier, data)
 	return data;
@@ -1062,6 +1078,9 @@ lvlsquish = function(originalLvl, shadowlandsLvl, retailLvl)
 	return retailLvl or originalLvl;
 end
 -- #endif
+removeclassicphase = function(t)
+	return t;
+end
 -- #endif
 
 -- SHORTCUTS for Object Class Types

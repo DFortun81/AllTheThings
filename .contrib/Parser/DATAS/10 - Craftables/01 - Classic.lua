@@ -1234,9 +1234,6 @@ _.Craftables = { tier(CLASSIC_TIER, {
 	}),
 	prof(FISHING, {
 		filter(23, {	-- 1H Maces
-			applyholiday(STRANGLETHORN_FISHING_EXTRAVAGANZA, i(19808, {	-- Rockhide Strongfish
-				["description"] = "Can be caught in schools of Tastyfish in Stranglethorn Vale during the Stranglethorn Fishing Extravaganza.",
-			})),
 			i(6360, {	-- Steelscale Crushfish
 				-- #if AFTER CATA
 				["description"] = "Can be caught in Darkmoon Island, Hillsbrad Foothills, Northern Stranglethorn, and Wetlands in open water.",
