@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	tier(SL_TIER, {
-		n(-949, {	-- Venthyr
+		n(VENTHYR, {
 			--	TODO: quest through as Venthyr and unlock Adventures Scouting Map first instead of Mirror Network to test alternative version of "Our True Purpose"
 			-- "Our True Purpose" 59324 no longer shows as a 'valid Quest' from the server (2020-12-04), meaning likely no character has acquired it this week (2) of the expac?
 			-- But it is complete for my main, as well as 62921... /shrug
@@ -1446,8 +1446,8 @@ _.HiddenQuestTriggers = {
 	q(63634),	-- learning Ensemble: Court Inquisitor's Vestments
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-10100, {	-- Shadowlands
-		n(-949, {	-- Venthyr
+	n(SL_HEADER, {
+		n(VENTHYR, {
 			n(-163, {	-- Armor
 				n(-43, {	-- Cloth
 					i(179466),	-- 9.0 Covenant - Revendreth - Cloth - Head

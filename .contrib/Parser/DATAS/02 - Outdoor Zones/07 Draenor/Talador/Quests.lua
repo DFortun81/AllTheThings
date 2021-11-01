@@ -1708,7 +1708,7 @@ _.HiddenQuestTriggers = {
 	q(34113),	-- Vignette: Guy 2 Found (Deathweb Hallow)
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-9981, {	-- Draenor
+	n(WOD_HEADER, {
 		n(QUESTS, {
 			q(34691),	-- Just the Beginning
 			q(34677),	-- NOT USED

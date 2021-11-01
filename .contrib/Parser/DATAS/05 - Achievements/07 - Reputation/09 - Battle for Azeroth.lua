@@ -13,7 +13,7 @@ TODO:
 _.Achievements =
 {
 	n(-9961, {	-- Reputation
-		n(-10052, {	-- Battle for Azeroth
+		n(BFA_HEADER, {
 			ach(12947, {	-- Azerothian Diplomat
 				crit(1),		-- Proudmoore (A) / Zandalari Empire (H)
 				crit(2),		-- Order of Embers (A) / Talanji's Expedition (H)

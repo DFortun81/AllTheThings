@@ -369,7 +369,7 @@ _.NeverImplemented =
 		q(46255),	-- X Unstable Portals Disrupted, 1 World Boss Defeated
 	}),
 
-	n(-9981, {	-- Draenor
+	n(WOD_HEADER, {
 		n(QUESTS, {
 			-- 6.0.1
 			q(33772),	-- 6.0 Invasion Opt-Out

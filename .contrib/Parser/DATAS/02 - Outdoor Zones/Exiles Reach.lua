@@ -1059,7 +1059,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(59969),	-- A Shaman's Duty
 	}),
-	n(-10052, {	-- Battle for Azeroth
+	n(BFA_HEADER, {
 		n(-163, {	-- Armor
 			n(-43, {	-- Cloth
 				i(174795),	-- Expeditionary Cloth Mantle

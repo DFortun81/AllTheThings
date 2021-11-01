@@ -74,6 +74,7 @@ _.HiddenQuestTriggers = {
 		--q(62521),	-- unknown tracking
 		--q(62571),	-- Flying in Maldraxxus
 		--q(62397),	-- Unknown
+		q(48673),	-- Lockout Tracking - Normal - Blood (Popped After completing Invasion Point: Sangua)
 
 		-------------------
 		--    VARIOUS    --
@@ -775,6 +776,10 @@ _.HiddenQuestTriggers = {
 		q(43233),	-- Arsenal: Wild Combatant's Weapons
 		q(43235),	-- Primal Combatant's Arsenal (Alliance)
 		q(43236),	-- Primal Combatant's Arsenal (Horde)
+		q(46005),	-- Tyrannical Gladiator's Arsenal (A)
+		q(46007),	-- Prideful Gladiator's Arsenal (A)
+		q(46019),	-- Grievous Gladiator's Arsenal (A)
+		q(46003),	-- Malevolent Gladiator's Arsenal (A)
 		q(46532),	-- Cataclysmic Gladiator's Arsenal
 		q(46543),	-- Vicious Gladiator's Arsenal
 		q(46554),	-- Ruthless Gladiator's Arsenal

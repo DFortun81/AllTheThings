@@ -1148,7 +1148,7 @@ _.HiddenQuestTriggers = {
 	q(42574),	-- Shaman Shrine - Stormheim Earth 02, coords 65,40
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-9982, {	-- Legion
+	n(LEGION_HEADER, {
 		n(-163, {	-- Armor
 			n(-43, {	-- Cloth
 				i(121507),	-- Runespeaker's Crown

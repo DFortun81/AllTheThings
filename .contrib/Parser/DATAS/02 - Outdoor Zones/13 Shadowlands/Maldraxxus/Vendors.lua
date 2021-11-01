@@ -78,7 +78,7 @@ _.Zones =
 						i(184742),	-- Rattling Bonefists
 						i(184736),	-- Robe of the March Warden
 						i(184745),	-- Tunic of the March Warden
-						n(-920, sharedData({["customCollect"] = { "SL_COV_NEC" }},{	-- Necrolord
+						n(NECROLORD, sharedData({["customCollect"] = { "SL_COV_NEC" }},{
 							i(181807, {	-- Barbarous Osteowings
 								["cost"] = 5000000, -- 500g
 							}),

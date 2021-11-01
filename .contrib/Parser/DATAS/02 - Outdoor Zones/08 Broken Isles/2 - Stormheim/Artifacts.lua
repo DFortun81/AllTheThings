@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(BROKEN_ISLES, {
 		m(STORMHEIM, {
-			n(-10067, {	-- Artifacts
+			n(ARTIFACTS, {
 				q(43560, {	-- Audience with the Windlord
 					["provider"] = { "n", 92218 },	-- Thrymjaris <Mother of the Thorignir>
 					["classes"] = { ROGUE },

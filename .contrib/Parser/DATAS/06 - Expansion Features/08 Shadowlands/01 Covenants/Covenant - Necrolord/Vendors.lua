@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	tier(SL_TIER, {
-		n(-920, {	-- Necrolord
+		n(NECROLORD, {
 			["g"] = {
 				n(VENDORS, {
 					n(159238, {	-- Atticus <Supplies & Acquisitions>
@@ -1564,8 +1564,8 @@ _.HiddenQuestTriggers = {
 	q(63627),	-- learning Ensemble: Marileth's Assistant's Vestments
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-10100, {	-- Shadowlands
-		n(-920, {	-- Necrolord
+	n(SL_HEADER, {
+		n(NECROLORD, {
 			n(-163, {	-- Armor
 				n(-43, {	-- Cloth
 					i(179412),	-- 9.0 Covenant - Maldraxxus - Cloth - Head

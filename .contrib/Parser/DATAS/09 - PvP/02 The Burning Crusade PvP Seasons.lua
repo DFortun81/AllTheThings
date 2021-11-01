@@ -5,7 +5,7 @@
 _.PVP =
 {
 	pvp(n(TBC_HEADER, {
-		n(PRE_SEASON, {	-- (PvP BC & later)
+		n(PRE_SEASON, {
 			["description"] = "These items were available during Burning Crusade as Level 70 Pre-Season 1 rewards in Netherstorm. They cannot be transmogged, not even if you were a High Warlord or Grand Marshall. Replica items were introduced in their place.",
 			["u"] = REMOVED_FROM_GAME,
 			["groups"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
@@ -265,7 +265,7 @@ _.PVP =
 				}),
 			}),
 		}),
-		n(SEASON_GLADIATOR, {	-- Gladiator: Season 1
+		n(SEASON_GLADIATOR, {
 			n(PVP_GLADIATOR, {
 				n(WEAPONS, {
 					i(146651, {	-- Arsenal: Gladiator's Weapons
@@ -1113,7 +1113,7 @@ _.PVP =
 				}),
 			}),
 		}),
-		n(SEASON_MERCILESS, {	-- Merciless Gladiator: Season 2
+		n(SEASON_MERCILESS, {
 			n(PVP_GLADIATOR, {
 				n(WEAPONS, {
 					i(146650, {	-- Arsenal: Merciless Gladiator's Weapons [Horde / Alliance / Tested ] { Note: Contains Gladiator/Merciless Sets }
@@ -1812,7 +1812,7 @@ _.PVP =
 				}),
 			}),
 		}),
-		n(SEASON_VENGEFUL, {	-- Vengeful Gladiator: Season 3
+		n(SEASON_VENGEFUL, {
 			n(PVP_GLADIATOR, {
 				n(WEAPONS, {
 					i(146649, {	-- Arsenal: Vengeful Gladiator's Weapons [ Horde / Alliance / Tested ]
@@ -2515,7 +2515,7 @@ _.PVP =
 				}),
 			}),
 		}),
-		n(SEASON_BRUTAL, {	-- Brutal Gladiator: Season 4
+		n(SEASON_BRUTAL, {
 			n(PVP_GLADIATOR, {
 				n(WEAPONS, {
 					i(146648, {	-- Arsenal: Brutal Gladiator's Weapons [ Horde / Alliance / Tested ]
@@ -2649,7 +2649,7 @@ _.PVP =
 					i(146600, {	-- Ensemble: Brutal Gladiator's Dreadplate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_BRUTAL, PVP_GLADIATOR, 6 },
+							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_BRUTAL, PVP_GLADIATOR, DEATHKNIGHT },
 							{"select", "itemID", 35176 },	-- Guardian's Plate Bracers
 							{"select", "itemID", 35161 },	-- Guardian's Plate Belt
 							{"select", "itemID", 35146 },	-- Guardian's Plate Greaves

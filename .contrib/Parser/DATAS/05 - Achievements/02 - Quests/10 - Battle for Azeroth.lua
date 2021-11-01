@@ -14,7 +14,7 @@ TODO:
 _.Achievements =
 {
 	n(QUESTS, {
-		n(-10052, {	-- Battle for Azeroth
+		n(BFA_HEADER, {
 			a(ach(13026, {	-- 7th Legion Spycatcher
 				["_quests"] = { 50899 },	-- Don't Stalk Me, Troll (A)
 			})),

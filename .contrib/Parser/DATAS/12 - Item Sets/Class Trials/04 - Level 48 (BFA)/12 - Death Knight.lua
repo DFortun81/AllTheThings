@@ -4,8 +4,8 @@
 
 _.GearSets =
 {
-	n(-5350, {	-- Class Trial Item Sets
-		n(-154, {	-- Level 48
+	n(CLASS_TRIAL, {
+		n(LEVEL_FOURTY_EIGHT, {
 			cl(DEATHKNIGHT, {
 				i(160439, {	-- Adventurer's Footlocker
 					i(153726),	-- Heart-Lesion Blade
@@ -30,8 +30,8 @@ _.GearSets =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-9982, {	-- Legion
-		n(-5350, {	-- Class Trial Item Sets
+	n(LEGION_HEADER, {
+		n(CLASS_TRIAL, {
 			cl(DEATHKNIGHT, {
 				-- added 7.2.5/No Info
 				i(150621),	-- Heart-Lesion Breastplate

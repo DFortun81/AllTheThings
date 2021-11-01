@@ -6711,6 +6711,9 @@ local fields = {
 		end
 		if app.AccountWideAchievements and ATTAccountWideData.Achievements[t.achievementID] then return 2; end
 	end,
+	["parentCategoryID"] = function(t)
+		return GetAchievementCategory(t.achievementID) or -1;
+	end,
 	["statistic"] = function(t)
 		if GetAchievementNumCriteria(t.achievementID) == 1 then
 			local quantity, reqQuantity = select(4, GetAchievementCriteriaInfo(t.achievementID, 1));
@@ -6741,6 +6744,25 @@ local fields = {
 app.BaseAchievement = app.BaseObjectFields(fields);
 app.CreateAchievement = function(id, t)
 	return setmetatable(constructor(id, t, "achID"), app.BaseAchievement);
+end
+
+local categoryFields = {
+	["key"] = function(t)
+		return "achievementCategoryID";
+	end,
+	["text"] = function(t)
+		return GetCategoryInfo(t.achievementCategoryID);
+	end,
+	["icon"] = function(t)
+		return app.asset("Category_Achievements");
+	end,
+	["parentCategoryID"] = function(t)
+		return select(2, GetCategoryInfo(t.achievementCategoryID)) or -1;
+	end,
+};
+app.BaseAchievementCategory = app.BaseObjectFields(categoryFields);
+app.CreateAchievementCategory = function(id, t)
+	return setmetatable(constructor(id, t, "achievementCategoryID"), app.BaseAchievementCategory);
 end
 
 -- Achievement Criteria Lib
@@ -14179,18 +14201,27 @@ RowOnEnter = function (self)
 		if reference.providers then
 			local counter = 0;
 			for i,provider in pairs(reference.providers) do
-				local providerType = provider[1]
-				local providerID = provider[2] or 0
-				local providerString = "UNKNOWN"
+				local providerType = provider[1];
+				local providerID = provider[2] or 0;
+				local providerString = UNKNOWN;
 				if providerType == "o" then
-					providerString = app.ObjectNames[providerID] or 'Object #'..providerID
+					providerString = app.ObjectNames[providerID] or reference.text or ("Object: " .. RETRIEVING_DATA)
+					if app.Settings:GetTooltipSetting("objectID") then
+						providerString = providerString .. ' (' .. providerID .. ')';
+					end
 				elseif providerType == "n" then
-					providerString = (providerID > 0 and NPCNameFromID[providerID]) or "Creature #"..providerID
+					providerString = (providerID > 0 and NPCNameFromID[providerID]) or ("Creature: " .. RETRIEVING_DATA)
+					if app.Settings:GetTooltipSetting("creatureID") then
+						providerString = providerString .. ' (' .. providerID .. ')';
+					end
 				elseif providerType == "i" then
-					local name = GetItemInfo(providerID)
-					providerString = name or 'Item #'..providerID
+					local _,name,_,_,_,_,_,_,_,icon = GetItemInfo(providerID);
+					providerString = (icon and ("|T" .. icon .. ":0|t") or "") .. (name or ("Item: " .. RETRIEVING_DATA));
+					if app.Settings:GetTooltipSetting("itemID") then
+						providerString = providerString .. ' (' .. providerID .. ')';
+					end
 				end
-				GameTooltip:AddDoubleLine(counter == 0 and L["PROVIDERS"] or " ", providerString .. ' (' .. providerID .. ')');
+				GameTooltip:AddDoubleLine(counter == 0 and L.PROVIDERS or " ", providerString);
 				counter = counter + 1;
 			end
 		end
@@ -15246,7 +15277,7 @@ function app:GetDataCache()
 
 		-- Black Market
 		if app.Categories.BlackMarket then
-			db = {};
+			db = app.CreateNPC(-94);
 			db.g = app.Categories.BlackMarket;
 			db.expanded = false;
 			db.text = BLACK_MARKET_AUCTION_HOUSE;

@@ -436,9 +436,6 @@ FACTIONS = -6013;
 FACTION_HEADER_NEUTRAL = -9912;
 FACTION_HEADER_ALLIANCE = -9914;
 FACTION_HEADER_HORDE = -9913;
-	-- WoD
-	GARRISONS = -9966;
-	BUILDINGS = -99;
 
 
 -- Slot Categories
@@ -466,6 +463,7 @@ PET_JOURNAL = -797;
 
 -- PvP Headers
 PVP = -9;
+PVP_HONOR = -9983;
 PVP_ASPIRANT = -659;
 PVP_COMBATANT = -660;
 PVP_GLADIATOR = -661;
@@ -477,13 +475,43 @@ SEASON_GLADIATOR = -664;
 SEASON_MERCILESS = -665;
 SEASON_VENGEFUL = -666;
 SEASON_BRUTAL = -667;
+PRE_SEASON_HATEFUL = -657;
+SEASON_DEADLY = -668;
+SEASON_FURIOUS = -669;
+SEASON_RELENTLESS = -670;
+SEASON_WRATHFUL = -671;
 
 -- Expansion Headers
 TBC_HEADER = -10003;
+WRATH_HEADER = -10014;
+CATA_HEADER = -9979;
+MOP_HEADER = -10041;
+WOD_HEADER = -9981;
+LEGION_HEADER = -9982;
+BFA_HEADER = -10052;
+SL_HEADER = -10100;
 
 -- Expansion Features
-CONDUITS = -981;
 LEGENDARIES = -364;
+LEGENDARY_QUESTLINE = -10066;
+	-- WoD
+	GARRISONS = -9966;
+	BUILDINGS = -99;
+	-- Legion
+	ARTIFACTS = -10067;
+	-- SL
+	KYRIAN = -939;
+	NECROLORD = -920;
+	NIGHT_FAE = -929;
+	VENTHYR = -949;
+	CONDUITS = -981;
+
+-- Class Trials
+CLASS_TRIAL = -5350;
+LEVEL_NINETY = -137;
+LEVEL_HUNDRED = -138;
+LEVEL_FOURTY_EIGHT = -154;
+LEVEL_FIFTY = -155;
 
 -- Special
 MAILBOX = -297;
@@ -503,7 +531,10 @@ THIRTEENTH_ANNIVERSARY = -5362;
 FOURTEENTH_ANNIVERSARY = -5363;
 FIFTEENTH_ANNIVERSARY = -5364;
 SIXTEENTH_ANNIVERSARY = -5365;
--- End of Custom Headers --
+SEVENTEENTH_ANNIVERSARY = -5366;
+--------------------------
+--     T H E  E N D     --
+--------------------------
 
 -- Filters
 BATTLE_PETS = 101;
@@ -1009,6 +1040,22 @@ end
 lvlsquish = function(originalLvl, shadowlandsLvl, retailLvl)
 	return originalLvl;
 end
+removeclassicphase = function(t)
+	if t then
+		if t.g or t.groups then
+			t.u = nil;
+			bubbleDown(data, t.groups);
+			bubbleDown(data, t.g);
+		elseif isarray(t) then
+			for i,group in ipairs(t) do
+				bubbleDown(data, group);
+			end
+		else
+			t.u = nil;
+		end
+		return t;
+	end
+end
 -- #else
 isanyclassic = function(modifier, data)
 	return data;
@@ -1031,6 +1078,9 @@ lvlsquish = function(originalLvl, shadowlandsLvl, retailLvl)
 	return retailLvl or originalLvl;
 end
 -- #endif
+removeclassicphase = function(t)
+	return t;
+end
 -- #endif
 
 -- SHORTCUTS for Object Class Types
@@ -1046,6 +1096,10 @@ ach = function(id, altID, t)							-- Create an ACHIEVEMENT Object
 		return struct("achievementID", id, altID);
 	end
 end
+achcat = function(id, t)								-- Create an ACHIEVEMENT CATEGORY Object
+	return struct("achievementCategoryID", id, t);
+end
+achievementCategory = achcat;
 az = function(id, rank, t)								-- Create a AZERITE ESSENCE Object.
 	if t or type(rank) == "number" then
 		t = struct("azeriteEssenceID", id, t or {});

@@ -3764,7 +3764,8 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 				},
 				{
 					["name"] = "Taladite Crystal",
-					["recipeID"] = 170832
+					["recipeID"] = 170832,
+					["u"] = NEVER_IMPLEMENTED,
 				},
 				{
 					["name"] = "Taladite Crystal",

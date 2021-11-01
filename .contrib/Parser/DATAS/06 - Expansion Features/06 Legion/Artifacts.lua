@@ -16,7 +16,7 @@ local honorLevel50 = {};
 local honorLevel80 = {};
 _.PVP =
 {
-	n(-9983, {	-- Honor
+	n(PVP_HONOR, {
 		ach(12894, { ["groups"] = honorLevel10 }),	-- Honor Level 10
 		ach(12902, { ["groups"] = honorLevel30 }),	-- Honor Level 30
 		ach(12904, { ["groups"] = honorLevel50 }),	-- Honor Level 50
@@ -168,7 +168,7 @@ _.ExpansionFeatures =
 -----------------------------------------------------
 {
 	tier(LEGION_TIER, {
-		n(-10067, {	-- Artifacts
+		n(ARTIFACTS, {
 			["description"] = "\nPressing |cFFFFD700CTRL + Left Click|r will allow you to preview the appropriate skin and tint.\n\n",
 			["groups"] = {
 				cl(WARRIOR, {
@@ -2356,8 +2356,8 @@ _.ExpansionFeatures =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-9982, {	-- Legion
-		n(-10067, {	-- Artifacts
+	n(LEGION_HEADER, {
+		n(ARTIFACTS, {
 			n(WEAPONS, {
 				i(137661),	-- Truthguard
 				i(136593),	-- Doomhammer Offhand Appearance Record (referenced by actual item)

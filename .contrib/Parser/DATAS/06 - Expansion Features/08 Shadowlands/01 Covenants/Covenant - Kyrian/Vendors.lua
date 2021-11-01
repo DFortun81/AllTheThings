@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	tier(SL_TIER, {
-		n(-939, {	-- Kyrian
+		n(KYRIAN, {
 			["g"] = {
 				n(VENDORS, {
 					n(174937, {	-- Adjutant Galos <Renown Quartermaster>
@@ -1551,8 +1551,8 @@ _.HiddenQuestTriggers = {
 	q(63602),	-- learning Ensemble: Devoted Aspirant's Regalia
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-10100, {	-- Shadowlands
-		n(-939, {	-- Kyrian
+	n(SL_HEADER, {
+		n(KYRIAN, {
 			n(-163, {	-- Armor
 				n(-45, {	-- Mail
 					i(179394),	-- 9.0 Covenant - Bastion - Mail - Base - Head

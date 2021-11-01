@@ -141,19 +141,37 @@ _.Holidays = { applyholiday(BREWFEST, {
 	["holidayID"] = 235442,
 	-- #endif
 	["groups"] = {
-		-- #if AFTER WRATH
 		n(ACHIEVEMENTS, {
 			ach(3496, {	-- A Brew-FAST Mount
 				["providers"] = {
 					{ "i", 37828 },	-- Great Brewfest Kodo
 					{ "i", 33977 },	-- Swift Brewfest Ram
 				},
+				["timeline"] = { "added 2.0.1" },
+				-- #if BEFORE WRATH
+				["description"] = "Obtain an epic Brewfest mount.",
+				["OnUpdate"] = [[function(t)
+					local collected = false;
+					for i,provider in ipairs(t.providers) do
+						if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
+							collected = true;
+							break;
+						end
+					end
+					t.SetAchievementCollected(t.achievementID, collected);
+				end]],
+				-- #endif
 			}),
 			ach(1260),	-- Almost Blind Luck
-			ach(1293, {	-- Blue Brewfest Stein [Removed]
+			removeclassicphase(ach(1293, {	-- Blue Brewfest Stein [Removed]
 				["provider"] = { "i", 33016 },	-- Blue Brewfest Stein
 				["timeline"] = { "added 2.0.1", "removed 3.0.1" },
-			}),
+				-- #if BEFORE WRATH
+				["OnUpdate"] = [[function(t)
+					t.SetAchievementCollected(t.achievementID, GetItemCount(33016, true) > 0);
+				end]],
+				-- #endif
+			})),
 			ach(2796, {	-- Brew of the Month
 				["providers"] = {
 					{ "i", 37571 },	-- "Brew of the Month" Club Membership Form (newer)
@@ -203,9 +221,15 @@ _.Holidays = { applyholiday(BREWFEST, {
 			}),
 			ach(295),	-- Direbrewfest
 			ach(293),	-- Disturbing the Peace
-			ach(1936, {	-- Does Your Wolpertinger Linger?
+			removeclassicphase(ach(1936, {	-- Does Your Wolpertinger Linger?
 				["provider"] = { "i", 32233 },	-- Wolpertinger's Tankard
-			}),
+				["timeline"] = { "added 2.2.2" },
+				-- #if BEFORE WRATH
+				["OnUpdate"] = [[function(t)
+					t.SetAchievementCollected(t.achievementID, GetItemCount(32233, true) > 0);
+				end]],
+				-- #endif
+			})),
 			ach(1186, {	-- Down With The Dark Iron
 				["timeline"] = { "added 3.0.1", "removed 8.2.0" },
 			}),
@@ -215,12 +239,27 @@ _.Holidays = { applyholiday(BREWFEST, {
 			}),
 			ach(303, {	-- Have Keg, Will Travel
 				["providers"] = {
+					{ "i", 33976 },	-- Brewfest Ram
 					{ "i", 37828 },	-- Great Brewfest Kodo
 					{ "i", 33977 },	-- Swift Brewfest Ram
 					{ "i", 37750 },	-- Fresh Brewfest Hops
 					{ "i", 39476 },	-- Fresh Goblin Brewfest Hops
 					{ "i", 37816 },	-- Preserved Brewfest Hops
 				},
+				["timeline"] = { "added 2.0.1" },
+				-- #if BEFORE WRATH
+				["description"] = "Obtain a Brewfest mount, or transform yours into one using Brewfest Hops.",
+				["OnUpdate"] = [[function(t)
+					local collected = false;
+					for i,provider in ipairs(t.providers) do
+						if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
+							collected = true;
+							break;
+						end
+					end
+					t.SetAchievementCollected(t.achievementID, collected);
+				end]],
+				-- #endif
 			}),
 			ach(1184, {	-- Strange Brew (A)
 				["races"] = ALLIANCE_ONLY,
@@ -317,7 +356,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 				["timeline"] = { "added 2.0.1", "removed 3.0.1" },
 			}),
 		}),
-		-- #endif
 		n(23872, {	-- Coren Direbrew
 			-- #if AFTER 3.0.1
 			["description"] = "You can loot the keg once a day per character by queueing for the encounter in the Dungeon Finder.",

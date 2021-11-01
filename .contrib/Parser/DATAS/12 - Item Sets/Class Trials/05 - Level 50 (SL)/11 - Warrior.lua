@@ -4,8 +4,8 @@
 
 _.GearSets =
 {
-	n(-5350, {	-- Class Trial Item Sets
-		n(-155, bubbleDown({["u"] = BLIZZARD_BALANCE}, {	-- Level 50 (Old Level 120)
+	n(CLASS_TRIAL, {
+		n(LEVEL_FIFTY, bubbleDown({["u"] = BLIZZARD_BALANCE}, {
 			cl(WARRIOR, {
 				i(171988, {	-- Adventurer's Footlocker
 					i(170745),  -- Oathsworn Axe
@@ -32,8 +32,8 @@ _.GearSets =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-10052, {	-- Battle for Azeroth
-		n(-5350, {	-- Class Trial Item Sets
+	n(BFA_HEADER, {
+		n(CLASS_TRIAL, {
 			cl(WARRIOR, {
 				-- added 8.2.5/Confirmed
 				i(170922),	-- Oathsworn Faceguard
@@ -54,8 +54,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-	n(-10100, {	-- Shadowlands
-		n(-5350, {	-- Class Trial Item Sets
+	n(SL_HEADER, {
+		n(CLASS_TRIAL, {
 			cl(WARRIOR, {
 				-- added 9.0.1/No Info
 				i(177615),	-- Oathsworn Sabatons

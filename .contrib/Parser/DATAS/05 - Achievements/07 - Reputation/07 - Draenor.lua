@@ -13,7 +13,7 @@ TODO:
 _.Achievements =
 {
 	n(-9961, {	-- Reputation
-		n(-9981, {	-- Draenor
+		n(WOD_HEADER, {
 			ach(9469),		-- Arakkoa Outcasts
 			ach(9470, {		-- Council of Exarchs
 				["races"] = ALLIANCE_ONLY,

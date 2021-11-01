@@ -1426,6 +1426,13 @@ root("Instances", tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 					{ "i", 19975, 5 },	-- Zulian Mudskunk
 				},
 				["groups"] = {
+					removeclassicphase(ach(560, {	-- Deadliest Catch
+						-- #if BEFORE WRATH
+						["description"] = "Fish up Gahz'ranka in Zul'Gurub using the Mudskunk Lure.\n\nPROTIP: You can get free credit for this achievement on Prepatch if your character has a Mudskunk Lure in its inventory.",
+						["provider"] = { "i", 19974 },	-- Mudskunk Lure
+						["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, GetItemCount(19974, true) > 0); end]],
+						-- #endif
+					})),
 					i(19944),	-- Nat Pagle's Fish Terminator
 					i(19946),	-- Tigule's Harpoon
 					i(19945),	-- Foror's Eyepatch
@@ -1457,6 +1464,13 @@ root("Instances", tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 				i(22637),	-- Primal Hakkari Idol
 			}),
 			n(14834, {	-- Hakkar the Soulflayer
+				removeclassicphase(ach(688, {	-- Zul'Gurub
+					-- #if BEFORE WRATH
+					["description"] = "Defeat Hakkar and deliver his Heart to the Zandalari.",
+					["sourceQuest"] = 8183,	-- The Heart of Hakkar
+					["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(8183)); end]],
+					-- #endif
+				})),
 				i(19802),	-- Heart of Hakkar
 				i(19862),	-- Aegis of the Blood God
 				i(19852),	-- Ancient Hakkari Manslayer

@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	tier(SL_TIER, {
-		n(-939, {	-- Kyrian
+		n(KYRIAN, {
 			["g"] = {
 				n(-902, {	-- Renown
 					["description"] = "These are rewards automatically granted by reaching a specific level of Renown.",

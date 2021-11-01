@@ -296,7 +296,7 @@ _.ExpansionFeatures =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-9982, {	-- Legion
+	n(LEGION_HEADER, {
 		n(LEGENDARIES, {
 			i(138489),	-- Kargath's Sacrified Hands
 		}),

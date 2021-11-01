@@ -11,7 +11,7 @@ _.Instances = { tier(LEGION_TIER, {
 			n(ZONE_DROPS, {
 				i(137726),	-- Schematic: Leystone Buoy
 			}),
-			n(-10067, {	-- Artifacts
+			n(ARTIFACTS, {
 				i(139574, {	-- Coil of the Drowned Queen (shaman appearance)
 					["description"] = "Drops from the first two bosses on any difficulty.",
 					["crs"] = {

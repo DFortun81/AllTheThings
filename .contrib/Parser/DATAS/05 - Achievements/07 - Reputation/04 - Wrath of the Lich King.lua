@@ -13,7 +13,7 @@ TODO:
 _.Achievements =
 {
 	n(-9961, {	-- Reputation
-		n(-10014, {	-- Wrath of the Lich King
+		n(WRATH_HEADER, {
 			ach(950),	-- Frenzyheart Tribe
 			ach(2083),	-- Grand Ice Mammoth
 			ach(2082),	-- Ice Mammoth

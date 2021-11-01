@@ -4,8 +4,8 @@
 
 _.GearSets =
 {
-	n(-5350, {	-- Class Trial Item Sets
-		n(-154, {	-- Level 48
+	n(CLASS_TRIAL, {
+		n(LEVEL_FOURTY_EIGHT, {
 			n(-387,  {	-- Relics
 				["description"] = "These were provided for Boosted 110s to use with their Artifact Weapons.",
 				["groups"] = {

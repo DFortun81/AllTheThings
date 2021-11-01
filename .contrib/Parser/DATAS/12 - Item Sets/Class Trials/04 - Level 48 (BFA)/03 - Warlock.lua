@@ -4,8 +4,8 @@
 
 _.GearSets =
 {
-	n(-5350, {	-- Class Trial Item Sets
-		n(-154, {	-- Level 48
+	n(CLASS_TRIAL, {
+		n(LEVEL_FOURTY_EIGHT, {
 			cl(WARLOCK, {
 				i(154024),	-- Felsoul Stave
 				i(154016),	-- Felsoul Cowl
@@ -27,8 +27,8 @@ _.GearSets =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-9982, {	-- Legion
-		n(-5350, {	-- Class Trial Item Sets
+	n(LEGION_HEADER, {
+		n(CLASS_TRIAL, {
 			cl(WARLOCK, {
 				-- added 7.2.5/No Info
 				i(150693),	-- Felsoul Sandals

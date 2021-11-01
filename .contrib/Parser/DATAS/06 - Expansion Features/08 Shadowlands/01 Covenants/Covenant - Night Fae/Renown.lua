@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	tier(SL_TIER, {
-		n(-929, {	-- Night Fae
+		n(NIGHT_FAE, {
 			["g"] = {
 				n(-902, {	-- Renown
 					["description"] = "These are rewards automatically granted by reaching a specific level of Renown.",

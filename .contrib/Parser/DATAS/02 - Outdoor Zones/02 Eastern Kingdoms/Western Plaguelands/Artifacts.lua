@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(WESTERN_PLAGUELANDS, {
-			n(-10067, {	-- Artifacts
+			n(ARTIFACTS, {
 				["lvl"] = 110,
 				["g"] = {
 					n(11609, {	-- Alexia Ironknife

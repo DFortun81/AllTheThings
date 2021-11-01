@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	tier(SL_TIER, {
-		n(-939, {	-- Kyrian
+		n(KYRIAN, {
 			["g"] = {
 				n(-941, {	-- Sanctum Upgrades
 					n(-915, {	-- Anima Conductor

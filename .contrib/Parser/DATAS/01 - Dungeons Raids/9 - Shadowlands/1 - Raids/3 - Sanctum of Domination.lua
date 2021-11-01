@@ -1264,7 +1264,7 @@ _.Instances = { tier(SL_TIER, {
 	}),
 })};
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-10100, {	-- Shadowlands
+	n(SL_HEADER, {
 		inst(1193, {	-- Sanctum of Domination
 			i(181374),	-- Sylvanas Shadowlands Bow
 		}),

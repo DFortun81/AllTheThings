@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	tier(SL_TIER, {
-		n(-920, {	-- Necrolord
+		n(NECROLORD, {
 			["g"] = {
 				n(ACHIEVEMENTS, {
 					ach(14763),		-- Crypt Couture

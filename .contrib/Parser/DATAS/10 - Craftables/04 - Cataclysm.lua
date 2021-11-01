@@ -639,7 +639,7 @@ _.Craftables =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-10014, {	-- Wrath of the Lich King
+	n(CATA_HEADER, {
 		prof(LEATHERWORKING, {
 			i(56497),	-- Razorshell Gloves
 		}),

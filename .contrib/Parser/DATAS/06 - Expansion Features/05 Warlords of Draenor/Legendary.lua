@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	tier(WOD_TIER, {
-		n(-10066, {	-- Legendary Questline
+		n(LEGENDARY_QUESTLINE, {
 			["title"] = "Darkness Incarnate",
 			["icon"] = 1097305,
 			["isRaid"] = true,

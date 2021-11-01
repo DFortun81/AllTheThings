@@ -4,8 +4,8 @@
 
 _.GearSets =
 {
-	n(-5350, {	-- Class Trial Item Sets
-		n(-137, {	-- Level 90
+	n(CLASS_TRIAL, {
+		n(LEVEL_NINETY, {
 			["description"] = "These were obtained by creating a Level 90 Class Trial (MoP) for each class and specialization.",
 			["lvl"] = 90,
 			["groups"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
@@ -402,7 +402,7 @@ _.GearSets =
 						}),
 					}),
 				}),
-				n(-9981, {	-- Warlords of Draenor. This gear is awarded if you use your lv90 boost after 6.0.1
+				n(WOD_HEADER, {	-- This gear is awarded if you use your lv90 boost after 6.0.1
 					cl(PRIEST, {
 						n(-9915, {	-- Disc / Holy
 							i(117230),	-- Communal Staff
@@ -804,8 +804,8 @@ _.GearSets =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-9981, {	-- Draenor
-		n(-5350, {	-- Class Trial Item Sets
+	n(WOD_HEADER, {
+		n(CLASS_TRIAL, {
 			cl(PRIEST, {
 				-- added 6.0.2/No Info
 				i(119667),	-- Communal Sandals

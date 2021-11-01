@@ -10,7 +10,7 @@ _.Instances = { tier(WOTLK_TIER, {
 		["maps"] = { 148, 149, 150, 151, 152 },
 		["coord"] = { 41.5, 17.9, THE_STORM_PEAKS },
 		["g"] = {
-			n(-10066, {	-- Legendary Questline
+			n(LEGENDARY_QUESTLINE, {
 				["description"] = "Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses of Ulduar. Hard modes have higher drop chances.",
 				["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID },
 				["title"] = "Val'anyr, Hammer of Ancient Kings",
@@ -902,7 +902,7 @@ _.Instances = { tier(WOTLK_TIER, {
 	}),
 })};
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-10014, {
+	n(WRATH_HEADER, {
 		inst(759, {
 			-- Most sets was added 4.0.1
 			cl(DEATHKNIGHT, {

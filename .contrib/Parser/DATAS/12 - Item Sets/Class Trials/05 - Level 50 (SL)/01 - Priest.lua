@@ -4,8 +4,8 @@
 
 _.GearSets =
 {
-	n(-5350, {	-- Class Trial Item Sets
-		n(-155, bubbleDown({["u"] = BLIZZARD_BALANCE}, {	-- Level 50 (Old Level 120)
+	n(CLASS_TRIAL, {
+		n(LEVEL_FIFTY, bubbleDown({["u"] = BLIZZARD_BALANCE}, {
 			cl(PRIEST, {
 				i(170701),	-- Communal Staff	*LA0104
 				i(170857),	-- Communal Hood	*LA0104
@@ -26,8 +26,8 @@ _.GearSets =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-10052, {	-- Battle for Azeroth
-		n(-5350, {	-- Class Trial Item Sets
+	n(BFA_HEADER, {
+		n(CLASS_TRIAL, {
 			cl(PRIEST, {
 				-- added 8.2.5/No Info
 				i(170866),	-- Communal Pants
@@ -50,8 +50,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-	n(-10100, {	-- Shadowlands
-		n(-5350, {	-- Class Trial Item Sets
+	n(SL_HEADER, {
+		n(CLASS_TRIAL, {
 			cl(PRIEST, {
 				-- added 9.0.1/No Info
 				i(177521),	-- Communal Sandals

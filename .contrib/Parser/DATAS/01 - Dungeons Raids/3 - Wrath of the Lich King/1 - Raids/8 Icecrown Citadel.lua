@@ -348,7 +348,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 				},
 			}),
-			n(-10066, {	-- Legendary Questline
+			n(LEGENDARY_QUESTLINE, {
 				["description"] = "These quests can only be completed on 25-Man Normal or Heroic difficulty.",
 				["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 				["title"] = "Shadowmourne",
@@ -1204,7 +1204,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						i(50992),	-- Waistband of Despair
 					},
 					["sym"] = {
-						{"sub", "pvp_gear_base", -10014, -670, PVP_GLADIATOR },	-- Relentless Gladiator: Season 7 Gladiator Gear
+						{"sub", "pvp_gear_base", WRATH_HEADER, SEASON_RELENTLESS, PVP_GLADIATOR },
 						{"pop"},	-- Discard the Set header and acquire the children.
 						{"exclude", "headerID", NECK, FINGER, -386, BACK, WRIST, WAIST, FEET, WEAPONS },	-- Exclude Neck, Finger, Trinkets, Back, Wrist, Waist, Feet and Weapons
 					},
@@ -3898,7 +3898,7 @@ _.Instances = { tier(WOTLK_TIER, {
 	}),
 })};
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-10014, {
+	n(WRATH_HEADER, {
 		inst(758, {
 			-- Most sets was added 4.0.1
 			cl(DEATHKNIGHT, {

@@ -5,7 +5,7 @@
 _.Achievements =
 {
 	n(-9957, {	-- Exploration
-		n(-9981, {	-- Draenor
+		n(WOD_HEADER, {
 			ach(9502, {		-- Draenor Cuisine
 				crit(1),		-- Blackrock Barbecue
 				crit(2),		-- Blackrock Ham

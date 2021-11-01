@@ -5,7 +5,7 @@
 _.Achievements =
 {
 	n(-9957, {	-- Exploration
-		n(-9982, {	-- Legion
+		n(LEGION_HEADER, {
 			ach(11261, {	-- Adventurer of Azsuna
 				crit(1),		-- Valiyaka the Stormbringer
 				crit(2),		-- Horn of the Siren

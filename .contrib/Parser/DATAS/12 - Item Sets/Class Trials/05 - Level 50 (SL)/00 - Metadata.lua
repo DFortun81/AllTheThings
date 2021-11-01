@@ -4,8 +4,8 @@
 
 _.GearSets =
 {
-	n(-5350, {	-- Class Trial Item Sets
-		n(-155, {	-- Level 50 (Old Level 120)
+	n(CLASS_TRIAL, {
+		n(LEVEL_FIFTY, {
 			["description"] = "These are gained by using a Boost of that particular class.  Each class has one default spec.  Shamans and Druids have two specs available and both are needed to 100% each category.",
 			["lvl"] = 50,
 		}),

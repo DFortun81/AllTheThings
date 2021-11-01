@@ -10,7 +10,7 @@ _.Instances = { tier(CATA_TIER, {
 		["lvl"] = 85,
 		["g"] = {
 			ach(5802),	-- Firelands
-			n(-10066, {	-- Legendary Questline
+			n(LEGENDARY_QUESTLINE, {
 				["classes"] = { PRIEST, SHAMAN, MAGE, WARLOCK, DRUID },
 				["title"] = "Dragonwrath, Tarecgosa's Rest",
 				["icon"] = "Interface\\Icons\\Stave_2H_Tarecgosa_E_01StageFinal",
@@ -810,7 +810,7 @@ _.Instances = { tier(CATA_TIER, {
 	}),
 })};
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-9979, {	-- Cataclysm
+	n(CATA_HEADER, {
 		inst(78, {	-- Firelands
 			i(71570),	-- Bracers of Forked Lightning
 			i(71400),	-- Girdle of the Indomitable Flame

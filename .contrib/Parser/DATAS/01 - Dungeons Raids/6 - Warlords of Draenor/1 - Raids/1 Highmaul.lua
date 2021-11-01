@@ -770,7 +770,7 @@ _.Instances = { tier(WOD_TIER, {
 	}),
 })};
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-9981, {	-- Draenor
+	n(WOD_HEADER, {
 		inst(477, {	-- Highmaul
 			i(116207),	-- 6.0 LFR - Highmaul Raid - UNUSED - Leather Belt 1
 			i(116031),	-- 6.0 LFR - Highmaul Raid - UNUSED - Mail Versatile Belt 1

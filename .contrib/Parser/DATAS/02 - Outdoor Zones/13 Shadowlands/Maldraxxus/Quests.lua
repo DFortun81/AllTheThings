@@ -806,7 +806,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(59175),	-- The Eternal Revenge
 		q(58261),	-- What's the Grub
 	}),
-	n(-10100, {	-- Shadowlands
+	n(SL_HEADER, {
 		n(-163, {	-- Armor
 			n(-43, {	-- Cloth
 				i(175512),	-- Corpse-Stitcher's Raiment

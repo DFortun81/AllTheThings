@@ -11,7 +11,7 @@ _.ExpansionFeatures =
 				["mapID"] = 702,	-- Netherlight Temple (Priest)
 				["g"] = {
 					n(QUESTS, {
-						n(-10067, {	-- Artifact Quests
+						n(ARTIFACTS, {
 							i(141332, {	-- The Annals of Light and Shadow
 								["description"] = "Obtain 12 of these books to complete the set and receive the Discipline Priest Hidden Artifact Appearance.\n\nStart with Volume VI and Archivist Inkforge in your Order Hall.",
 								["g"] = {

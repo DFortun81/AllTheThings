@@ -272,7 +272,7 @@ _.Zones =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-10014, {	-- Wrath of the Lich King
+	n(WRATH_HEADER, {
 		n(-163, {	-- Armor
 			f(53,	{	-- Trinket
 				i(44869),	-- Frenzyheart Insignia of Fury

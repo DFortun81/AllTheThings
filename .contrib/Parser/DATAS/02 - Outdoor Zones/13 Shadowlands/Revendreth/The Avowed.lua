@@ -266,7 +266,7 @@ _.Zones =
 									i(184218, {	-- Vulgarity Arbiter
 										["cost"] = { { "c", 1816, 1000 } },
 									}),
-									n(-949, sharedData({["customCollect"] = { "SL_COV_VEN" }},{	-- Venthyr
+									n(VENTHYR, sharedData({["customCollect"] = { "SL_COV_VEN" }},{
 										i(180940, {	-- Ebony Crypt Keeper's Mantle
 											["cost"] = { { "c", 1816, 500 } },
 										}),

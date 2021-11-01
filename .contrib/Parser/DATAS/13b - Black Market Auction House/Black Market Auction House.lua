@@ -244,97 +244,96 @@ root("BlackMarket", bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(38311),	-- Tabard of the Void
 	}),
 	n(-3179, {	-- Tier 3 (Naxxramas - Vanilla)
-		ach(11744, {	-- Drop Dead, Gorgeous
-			gs(355, {	-- Vestments of Faith
-				i(22514),	-- Circlet of Faith
-				i(22515),	-- Shoulderpads of Faith
-				i(22512),	-- Robe of Faith
-				i(22519),	-- Bindings of Faith
-				i(22517),	-- Gloves of Faith
-				i(22518),	-- Belt of Faith
-				i(22513),	-- Leggings of Faith
-				i(22516),	-- Sandals of Faith
-			}),
-			gs(907, {	-- Frostfire Regalia
-				i(22498),	-- Frostfire Circlet
-				i(22499),	-- Frostfire Shoulderpads
-				i(22496),	-- Frostfire Robe
-				i(22503),	-- Frostfire Bindings
-				i(22501),	-- Frostfire Gloves
-				i(22502),	-- Frostfire Belt
-				i(22497),	-- Frostfire Leggings
-				i(22500),	-- Frostfire Sandals
-			}),
-			gs(865, {	-- Plagueheart Raiment
-				i(22506),	-- Plagueheart Circlet
-				i(22507),	-- Plagueheart Shoulderpads
-				i(22504),	-- Plagueheart Robe
-				i(22511),	-- Plagueheart Bindings
-				i(22509),	-- Plagueheart Gloves
-				i(22510),	-- Plagueheart Belt
-				i(22505),	-- Plagueheart Leggings
-				i(22508),	-- Plagueheart Sandals
-			}),
-			gs(924, {	--Dreamwalker Raiment
-				i(22490),	-- Dreamwalker Headpiece
-				i(22491),	-- Dreamwalker Spaulders
-				i(22488),	-- Dreamwalker Tunic
-				i(22495),	-- Dreamwalker Wristguards
-				i(22493),	-- Dreamwalker Handguards
-				i(22494),	-- Dreamwalker Girdle
-				i(22489),	-- Dreamwalker Legguards
-				i(22492),	-- Dreamwalker Boots
-			}),
-			gs(891, {	-- Bonescythe Armor
-				i(22478),	-- Bonescythe Helmet
-				i(22479),	-- Bonescythe Pauldrons
-				i(22476),	-- Bonescythe Breastplate
-				i(22483),	-- Bonescythe Bracers
-				i(22481),	-- Bonescythe Gauntlets
-				i(22482),	-- Bonescythe Waistguard
-				i(22477),	-- Bonescythe Legplates
-				i(22480),	-- Bonescythe Sabatons
-			}),
-			gs(914, {	-- Cryptstalker Armor
-				i(22438),	-- Cryptstalker Headpiece
-				i(22439),	-- Cryptstalker Spaulders
-				i(22436),	-- Cryptstalker Tunic
-				i(22443),	-- Cryptstalker Wristguards
-				i(22441),	-- Cryptstalker Handguards
-				i(22442),	-- Cryptstalker Girdle
-				i(22437),	-- Cryptstalker Legguards
-				i(22440),	-- Cryptstalker Boots
-			}),
-			gs(873, {	-- The Earthshatter
-				i(22466),	-- Earthshatter Headpiece
-				i(22467),	-- Earthshatter Spaulders
-				i(22464),	-- Earthshatter Tunic
-				i(22471),	-- Earthshatter Wristguards
-				i(22469),	-- Earthshatter Handguards
-				i(22470),	-- Earthshatter Girdle
-				i(22465),	-- Earthshatter Legguards
-				i(22468),	-- Earthshatter Boots
-			}),
-			gs(899, {	-- Redemption  Armor
-				i(22428),	-- Redemption Headpiece
-				i(22429),	-- Redemption Spaulders
-				i(22425),	-- Redemption Tunic
-				i(22424),	-- Redemption Wristguards
-				i(22426),	-- Redemption Handguards
-				i(22431),	-- Redemption Girdle
-				i(22427),	-- Redemption Legguards
-				i(22430),	-- Redemption Boots
-			}),
-			gs(850, {	-- Dreadnaught's Battlegear
-				i(22418),	-- Dreadnaught Helmet
-				i(22419),	-- Dreadnaught Pauldrons
-				i(22416),	-- Dreadnaught Breastplate
-				i(22423),	-- Dreadnaught Bracers
-				i(22421),	-- Dreadnaught Gauntlets
-				i(22422),	-- Dreadnaught Waistguard
-				i(22417),	-- Dreadnaught Legplates
-				i(22420),	-- Dreadnaught Sabatons
-			}),
+		ach(11744),	-- Drop Dead, Gorgeous
+		gs(355, {	-- Vestments of Faith
+			i(22514),	-- Circlet of Faith
+			i(22515),	-- Shoulderpads of Faith
+			i(22512),	-- Robe of Faith
+			i(22519),	-- Bindings of Faith
+			i(22517),	-- Gloves of Faith
+			i(22518),	-- Belt of Faith
+			i(22513),	-- Leggings of Faith
+			i(22516),	-- Sandals of Faith
+		}),
+		gs(907, {	-- Frostfire Regalia
+			i(22498),	-- Frostfire Circlet
+			i(22499),	-- Frostfire Shoulderpads
+			i(22496),	-- Frostfire Robe
+			i(22503),	-- Frostfire Bindings
+			i(22501),	-- Frostfire Gloves
+			i(22502),	-- Frostfire Belt
+			i(22497),	-- Frostfire Leggings
+			i(22500),	-- Frostfire Sandals
+		}),
+		gs(865, {	-- Plagueheart Raiment
+			i(22506),	-- Plagueheart Circlet
+			i(22507),	-- Plagueheart Shoulderpads
+			i(22504),	-- Plagueheart Robe
+			i(22511),	-- Plagueheart Bindings
+			i(22509),	-- Plagueheart Gloves
+			i(22510),	-- Plagueheart Belt
+			i(22505),	-- Plagueheart Leggings
+			i(22508),	-- Plagueheart Sandals
+		}),
+		gs(924, {	--Dreamwalker Raiment
+			i(22490),	-- Dreamwalker Headpiece
+			i(22491),	-- Dreamwalker Spaulders
+			i(22488),	-- Dreamwalker Tunic
+			i(22495),	-- Dreamwalker Wristguards
+			i(22493),	-- Dreamwalker Handguards
+			i(22494),	-- Dreamwalker Girdle
+			i(22489),	-- Dreamwalker Legguards
+			i(22492),	-- Dreamwalker Boots
+		}),
+		gs(891, {	-- Bonescythe Armor
+			i(22478),	-- Bonescythe Helmet
+			i(22479),	-- Bonescythe Pauldrons
+			i(22476),	-- Bonescythe Breastplate
+			i(22483),	-- Bonescythe Bracers
+			i(22481),	-- Bonescythe Gauntlets
+			i(22482),	-- Bonescythe Waistguard
+			i(22477),	-- Bonescythe Legplates
+			i(22480),	-- Bonescythe Sabatons
+		}),
+		gs(914, {	-- Cryptstalker Armor
+			i(22438),	-- Cryptstalker Headpiece
+			i(22439),	-- Cryptstalker Spaulders
+			i(22436),	-- Cryptstalker Tunic
+			i(22443),	-- Cryptstalker Wristguards
+			i(22441),	-- Cryptstalker Handguards
+			i(22442),	-- Cryptstalker Girdle
+			i(22437),	-- Cryptstalker Legguards
+			i(22440),	-- Cryptstalker Boots
+		}),
+		gs(873, {	-- The Earthshatter
+			i(22466),	-- Earthshatter Headpiece
+			i(22467),	-- Earthshatter Spaulders
+			i(22464),	-- Earthshatter Tunic
+			i(22471),	-- Earthshatter Wristguards
+			i(22469),	-- Earthshatter Handguards
+			i(22470),	-- Earthshatter Girdle
+			i(22465),	-- Earthshatter Legguards
+			i(22468),	-- Earthshatter Boots
+		}),
+		gs(899, {	-- Redemption  Armor
+			i(22428),	-- Redemption Headpiece
+			i(22429),	-- Redemption Spaulders
+			i(22425),	-- Redemption Tunic
+			i(22424),	-- Redemption Wristguards
+			i(22426),	-- Redemption Handguards
+			i(22431),	-- Redemption Girdle
+			i(22427),	-- Redemption Legguards
+			i(22430),	-- Redemption Boots
+		}),
+		gs(850, {	-- Dreadnaught's Battlegear
+			i(22418),	-- Dreadnaught Helmet
+			i(22419),	-- Dreadnaught Pauldrons
+			i(22416),	-- Dreadnaught Breastplate
+			i(22423),	-- Dreadnaught Bracers
+			i(22421),	-- Dreadnaught Gauntlets
+			i(22422),	-- Dreadnaught Waistguard
+			i(22417),	-- Dreadnaught Legplates
+			i(22420),	-- Dreadnaught Sabatons
 		}),
 	}),
 	n(-161, {	-- Toy

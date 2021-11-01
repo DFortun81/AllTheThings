@@ -5,7 +5,7 @@
 _.Achievements =
 {
 	n(-9957, {	-- Exploration
-		n(-10100, {	-- Shadowlands
+		n(SL_HEADER, {
 			ach(14895, {	-- 'Ghast Five (5 of these criteria)
 				ach(14894),		-- To 'Ghast, Two Curios (2 of these criteria)
 				crit(1),		-- Vessel of Unfortunate Spirits

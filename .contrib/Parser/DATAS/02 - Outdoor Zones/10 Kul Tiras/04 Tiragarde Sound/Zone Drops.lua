@@ -33,7 +33,7 @@ _.Zones =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-10052, {	-- Battle for Azeroth
+	n(BFA_HEADER, {
 		n(WEAPONS, {
 			i(159538),	-- Coldscale Cudgel
 			i(159498),	-- Coldscale Pistol

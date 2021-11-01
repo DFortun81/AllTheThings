@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	tier(SL_TIER, {
-		n(-929, {	-- Night Fae
+		n(NIGHT_FAE, {
 			["g"] = {
 				n(-935, {	-- Sanctum Upgrades
 					n(-915, {	-- Anima Conductor
