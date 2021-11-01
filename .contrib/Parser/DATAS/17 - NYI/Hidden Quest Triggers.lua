@@ -965,6 +965,7 @@ _.HiddenQuestTriggers = {
 		q(31033),	-- Adventurers Wanted: Ragefire Chasm - completed with quest 31034 & 31036 & 31037
 		q(31373),	-- The Order of the Cloud Serpent - completed with quest 32461
 		q(31375),	-- The Order of the Cloud Serpent - completed with quest 32461
+		q(33073),	-- [NOTUSED]Vignette: Ancient Saltsnap Turtle - completed with quest 33070
 		q(34426),	-- Yrel - completed with quest 34478 & 34427
 		q(34435),	-- Find Ga'nar - completed with quest 34434 & 34740
 		q(34438),	-- Regarding Enormous Tanks - completed with quest 34958
@@ -985,8 +986,35 @@ _.HiddenQuestTriggers = {
 		q(37564),	-- Your First Blacksmithing Work Order - completed with quest 35168 & 37569
 		q(37667),	-- Building for Professions - completed with quest 36100 & 37669
 		q(45405),	-- Breaching the Sanctum - completed with quest 44719
+		q(49563),	-- Warchief's Command: Frostfire Ridge! - completed with quest 49545
 		q(51845),	-- Storm's End - completed with quest 50824
+		
+		-- Frostfire Ridge
+		--q(36079),	-- A Hero's Welcome - TODO: figure out from where it gets completed
+		--q(33380),	-- REUSE - TODO: figure out from where it gets completed
+		--q(33407),	-- REUSE - TODO: figure out from where it gets completed
+		--q(35251),	-- The Bounty of Bladespire	- TODO: figure out from where it gets completed
+		--q(34734),	-- The Loyalty of Olin Umberhide - TODO: figure out from where it gets completed
+		--q(37062),	-- Tricks of the Trade - TODO: figure out from where it gets completed
+		
+		-- Gorgrond
+		--q(35431),	-- The Best Poison - TODO: figure out from where it gets completed
+		--q(35653),	-- Wood is Wood - TODO: figure out from where it gets completed
+		
+		-- Shadowmoon Valley
+		--q(39396),	-- NOT USED - TODO: figure out from where it gets completed
+		--q(33267),	-- [Deprecated] - TODO: figure out from where it gets completed
 
+		-- Spires of Arak
+		--q(36796),	-- The Flock's Revenge - TODO: figure out from where it gets completed
+		--q(34565),	-- Tearing Up Talador - TODO: figure out from where it gets completed
+		--q(35340),	-- What Happened Here? - TODO: figure out from where it gets completed
+		
+		-- Talador
+		--q(33923),	-- Demons? In Auchindoun? - TODO: figure out from where it gets completed
+		--q(33974),	-- Dying Wish - TODO: figure out from where it gets completed
+		--q(34570),	-- REUSE - TODO: figure out from where it gets completed
+			
 		-------------------
 		---   CLASSIC   ---
 		-------------------
@@ -1097,47 +1125,6 @@ _.HiddenQuestTriggers = {
 		-------------------
 		--     WOTLK     --
 		-------------------
-		-- Dungeons & Raids
-		q(35489),	-- Ahn'Kahet: The Old Kingdom normal completion
-		q(35490),	-- Ahn'Kahet: The Old Kingdom heroic completion
-		q(35493),	-- Ahn'Kahet: The Old Kingdom bonus objective completed (kill Amanitar, heroic only)
-		q(35497),	-- Azjol-nerub normal completion
-		q(35498),	-- Azjol-nerub heroic completion
-		q(35483),	-- Drak'tharon Keep normal completion
-		q(35484),	-- Drak'tharon Keep heroic completion
-		q(35477),	-- Gundrak bonus objective completion (Kill Ekk the Ferocious)
-		q(35475),	-- Gundrak normal completion
-		q(35476),	-- Gundrak heroic completion
-		q(35456),	-- Halls of Lightning normal completion
-		q(35458),	-- Halls of Lightning heroic completion
-		q(35441),	-- Halls of Reflection normal completion
-		q(35442),	-- Halls of Reflection heroic completion
-		q(35465),	-- Halls of Stone normal completion
-		q(35468),	-- Halls of Stone heroic completion
-		q(35438),	-- Pit of Saron normal completion
-		q(35440),	-- Pit of Saron heroic completion
-		q(35472),	-- The Culling of Stratholme normal completion
-		q(35473),	-- The Culling of Stratholme bonus objective (kill the infinite corruptor)
-		q(35474),	-- The Culling of Stratholme heroic completion (kill Mal'ganis)
-		q(35436),	-- The Forge of Souls normal completion
-		q(35437),	-- The Forge of Souls heroic completion
-		q(35513),	-- The Nexus normal completion
-		q(35514),	-- The Nexus heroic completion
-		q(35515),	-- The Nexus bonus objective complete (kill Commander Stoutbeard)
-		q(35446),	-- The Oculus normal completion
-		q(35447),	-- The Oculus heroic completion
-		q(35478),	-- The Violet Hold normal completion
-		q(35480),	-- The Violet Hold heroic completion
-		q(35950),	-- Trial of the Champion heroic completion) (possibly shared with normal?)
-		q(35502),	-- Utgarde Keep normal completion
-		q(35512),	-- Utgarde Keep heroic completion
-		q(35449),	-- Utgarde Pinnacle normal completion
-		q(35453),	-- Utgarde Pinnacle heroic completion
-		q(24808),	-- Tank Ring Flag
-		q(24809),	-- Healer Ring Flag (doing "A Change of Heart" in ICC and choosing the healer ring
-		q(24810),	-- Melee Ring Flag
-		q(24811),	-- Caster Ring Flag (doing "Choose Your Path" in ICC and choosing crit/haste ring on mage)
-
 		-- Zones
 		q(12845),	-- Dalaran teleport crystal flag
 		q(13700),	-- Argent Tournament - Alliance Champion Marker
@@ -1523,183 +1510,7 @@ _.HiddenQuestTriggers = {
 		q(36426),	-- Dueling Orbs,	-- triggered when completing "Mysterious Ring" (34463)
 		q(35914),	-- Default invasion reward flag during the first garrison invasion as part of Draenor's base intro
 		q(36461),	-- Locating the Lapidarist - NYI version of the quest. seems to be a duplicate
-		q(49563),	-- triggered with "Warchief's Command: Frostfire Ridge!"
-		q(34453),	-- Frostfire Ridge - Tracking Event: Gazlowe Arrived
-		q(34715),	-- Frostfire Ridge - Tracking Flag: Shamanstone Summons - appoach the frostwolf shaman stone in Wor'gol while on "Honor Has Its Rewards" to start the dialog
-		q(33847),	-- Frostfire Ridge - Flag: Seen Ga'nar Rolling Out),	-- triggered going into Chillfang's cave immediately upon getting to Draenor
-		q(33909),	-- Frostfire Ridge - Flag: Seen Ga'nar Rolling Out to Bladespire),	-- triggers shortly after reaching Wor'gol during "Den of Wolves"
-		q(33846),	-- Frostfire Ridge - Flag: Seen Thrall Cyclone),	-- triggers during "These Colors Don't Run"
-		q(33443),	-- Frostfire Ridge - Barrier Destroyed),	-- triggers upon reaching the top of the walkway with rolling fireballs in Bladespire Citadel during "Great Balls of Fire!"
-		q(34510),	-- Frostfire Ridge - Tracking Event: Catapuls 'n' Clefthoof),	-- triggered after riding the wolf down Bladespire Citadel during "Moving In"
-		q(34511),	-- Frostfire Ridge - Tracking Event: Ogre Drag),	-- triggered after riding the wolf down Bladespire Citadel during "Moving In"
-		q(34654),	-- Frostfire Ridge - Tracking Flag: Dagg Found at Daggermaw Ravine),	-- triggers when you open Dagg's cage at 39.6, 28.1
-		q(34312),	-- Frostfire Ridge - The Magma Lord),	-- triggered when Molthron first appears at 43.6, 15.6
-		q(37544),	-- Frostfire Ridge - Garrison Follower: Greatmother Geyah),	-- triggers if you pick Greatmother Geyah during "The Frostwolves Stand Ready"
-		q(37545),	-- Frostfire Ridge - Garrison Follower: Kal'gor the Honorable),	-- triggers if you pick Kal'gor during "The Frostwolves Stand Ready"
-		q(34730),	-- Frostfire Ridge - Garrison Follower: Lokra),	-- triggers if you pick Lokra during "The Frostwolves Stand Ready"
-		q(34329),	-- Frostfire Ridge - Shamanstone: Buffeting Galefury selected. Only procs once
-		q(34330),	-- Frostfire Ridge - Shamanstone: Ogrish Fortitude selected. Only procs once
-		q(34456),	-- Frostfire Ridge - Shamanstone: Spirit of the Wolf. Popped when approaching the Frostwolf shamanstone
-		q(34331),	-- Frostfire Ridge - Shamanstone: Spirit of the Wolf selected. Only procs once
-		q(34332),	-- Frostfire Ridge - Shamanstone: Touched By Fire selected. Only procs once
-		q(34333),	-- Frostfire Ridge - Shamanstone: Touched By Ice selected. Only procs once
-		q(34328),	-- Frostfire Ridge - Shamanstone: Blessing of the WOlf selected. Only procs once
-		q(34506),	-- Frostfire Ridge - Bonus Objective: Kill Grimfrost Ogres - NYI version since the bonus objective was unified into questID 33145
-		q(33914),	-- Frostfire Ridge - Gut Guttra - NYI, possible duplicate
-		q(33264),	-- Frostfire Ridge - A Proper Burial - NYI, possible duplicate
-		q(37652),	-- Frostfire Ridge - Vignette: Jabberjaw, triggers with 37386
-		q(34517),	-- Frostfire Ridge - Vignette: Gargantuan Frostbeak, triggers with 34522 after killing Ug'lok the Frozen
-		q(34519),	-- Frostfire Ridge - Vignette: Brotoculus, triggers with 34522 after killing Ug'lok the Frozen
-		q(36249),	-- Gorgrond - Active Choice: Lumbermill - trigger if the lumbermill is currently active
-		q(36250),	-- Gorgrond - Active Choice: Lumbermill - see 36249
-		q(35064),	-- Gorgrond - Sparring Arena
-		q(36251),	-- Gorgrond - Active Choice: Sparring Arena - triggers if the sparring arena is currently active
-		q(36252),	-- Gorgrond - Active Choice: Sparring Arena - see 36251
-		q(35149),	-- Gorgrond - Sparring Arena - triggers if you choose to build the sparring arena for the first time
-		q(39309),	-- Gorgrond - Arcane Orb
-		q(39310),	-- Gorgrond - Artillery Strike
-		q(39308),	-- Gorgrond - Bodyguard
-		q(34992),	-- Gorgrond - Lumber Mill
-		q(35049),	-- Gorgrond - Lumber Mill
-		q(36619),	-- Gorgrond - Lumber Mill
-		q(39307),	-- Gorgrond - Mechasuit
-		q(36712),	-- Gorgrond - Mill Treasure 1 - triggers when looting the ancient titan chest questID 35701
-		q(35946),	-- Gorgrond - Peckers the Majestic - triggers if you free Peckers from his cage in Kor'gall's Hovel with the sparring arena active (37.3, 70.7)
-		q(36797),	-- Shadowmoon Valley - Founded the garrison
-		q(35626),	-- Shadowmoon Valley - Friend of the Exarchs: Apprentice Artificer Andren selected
-		q(35629),	-- Shadowmoon Valley - Friend of the Exarchs: Vindicator Onaala selected
-		q(35628),	-- Shadowmoon Valley - Friend of the Exarchs: Rangari Chel selected
-		q(33151),	-- Shadowmoon Valley - Saw scout Valdez arrive in Twilight Glade
-		q(37451),	-- Shadowmoon Valley - see Qiana Moonshadow while on "Qiana Moonshadow"
-		q(34600),	-- Shadowmoon Valley - Tracking Quest: Saw Vorka, Rangari Leave
-		q(34622),	-- Shadowmoon Valley - Tracking Quest: Saw Ner'zhul Leave
-		q(33839),	-- Shadowmoon Valley - Tracking Quest: Saw Naaru Purified
-		q(34599),	-- Shadowmoon Valley - Tracking Quest: Saw Yrel Leave Twilight Glade
-		q(36907),	-- Shadowmoon Valley - Tracking Quest: Defense of Karabor - Celebration Finished
-		q(33086),	-- Shadowmoon Valley - Tracking Quest: The Root of Darkness - Stone 1
-		q(33165),	-- Shadowmoon Valley - Tracking Quest: The Root of Darkness - Stone 2
-		q(33167),	-- Shadowmoon Valley - Tracking Quest: The Root of Darkness - Stone 3
-		q(33166),	-- Shadowmoon Valley - Tracking Quest: The Root of Darkness - Stone 4
-		q(34896),	-- Shadowmoon Valley - Tracking Quest: Stealthed Rangari - triggers when approaching Rangari Navra (43.7, 51.7)
-		q(49544),	-- Shadowmoon Valley - After handing in Hero's Call: Shadowmoon Valley! (Draenor)
-		q(35874),	-- Spires of Arak - Apparatus - triggers after finishing "The Ebon Hunter" quest
-		q(36859),	-- Spires of Arak - Deprecated version of "The Howling Crag" bonus objective
-		q(35201),	-- Spires of Arak - Krixel
-		q(37417),	-- Spires of Arak - Feast of the Spires (alliance) - put down by the barkeep if you have the brewery
-		q(37416),	-- Spires of Arak - Feast of the Spires (horde) - put down by the barkeep if you have the brewery
-		q(36111),	-- Spires of Arak - Flight Home
-		q(36112),	-- Spires of Arak - Flight Home
-		q(36577),	-- Spires of Arak - Flying Machine Completed after landing during "Flame On"
-		q(36184),	-- Spires of Arak - Mother Lode - triggers when you accept "The Mother Lode" quest and the crash happens
-		q(37317),	-- Spires of Arak - Talon King Ikiss killed during "The False Talon King"
-		q(35291),	-- Spires of Arak - Trading Post selected (alliance)
-		q(37316),	-- Spires of Arak - Trading Post selected (alliance)
-		q(35284),	-- Spires of Arak - Trading Post selected (horde)
-		q(37314),	-- Spires of Arak - Trading Post selected (horde)
-		q(35290),	-- Spires of Arak - Inn selected (alliance)
-		q(37315),	-- Spires of Arak - Inn selected (alliance)
-		q(35283),	-- Spires of Arak - Inn selected (horde)
-		q(37313),	-- Spires of Arak - Inn selected (horde)
-		q(36798),	-- Spires of Arak - Rooby Roo fed 3x to reveal the treasure
-		q(35028),	-- Spires of Arak - Krikka and Vakora Tracking - triggers during "The Bloodmane" and "Words of the Raven Mother"
-		q(36724),	-- Spires of Arak - Reshad Tracking - triggers after turning in "Call of the Raven Mother"
-		q(34935),	-- Talador - After Wall Greeting. Triggers during "Dropping In" after taking the portal
-		q(34560),	-- Talador - Armory
-		q(34568),	-- Talador - Armory
-		q(37301),	-- Talador - Armory
-		q(37304),	-- Talador - Armory
-		q(34793),	-- Talador - Auchenai Defenders Greeting
-		q(35044),	-- Talador - Cordana Summon. Triggers if you build the arcane sanctum and approach khadgar at the entrance of Zangarra
-		q(34920),	-- Talador - Destroy Ward. Triggers when interacting with the first orb during "Orbs of Power"
-		q(33927),	-- Talador - Draenei Camp Explosion Tracker,	-- triggers when approaching the area for Deceptia's Smoldering Boots
-		q(37300),	-- Talador - Drafting Table Interact. Triggers when you switch buildings in Talador
-		q(34895),	-- Talador - Dropping Bombs Tracking
-		q(34983),	-- Talador - Dropping Bombs Tracking
-		q(35047),	-- Talador - Dropping Bombs Tracking
-		q(36426),	-- Talador - Dueling Orbs
-		q(34220),	-- Talador - Echo of Murmur killed, but not yet looted
-		q(34835),	-- Talador - Gather Energy. Triggers when interacting with an energy orb in Zangarra during "Gathering the Spark"
-		q(34834),	-- Talador - General Commentary. Triggers during "Forming the Scroll" when you interact with the second ancient
-		q(33727),	-- Talador - Heal Up
-		q(34934),	-- Talador - Initial Defenders. Triggers when approaching the gate at Gordal Fortress
-		q(34821),	-- Talador - Khadgar Summon. Triggers when you take the portal to Khadgar's Tower during "Making Acquaintances"
-		q(34906),	-- Talador - Krelas Summoned. Triggers when Krelas is summoned while approaching the arcane gate during "Dropping In"
-		q(34561),	-- Talador - Mage Tower
-		q(34567),	-- Talador - Mage Tower
-		q(37302),	-- Talador - Mage Tower
-		q(37303),	-- Talador - Mage Tower
-		q(35051),	-- Talador - Mage Tower Complete. Triggers when obtaining your follower after "Due Cause to Celebrate"
-		q(34772),	-- Talador - Morkeths Cage
-		q(34946),	-- Talador - Morkurk Greeting
-		q(34904),	-- Talador - Portal Vision. Triggers during "Dropping In" when the portal is summoned to get on the wall
-		q(34833),	-- Talador - Prune Ancient. Triggers during "Forming the Scroll" when you interact with the first ancient
-		q(33732),	-- Talador - Sabotage Siege Weapons
-		q(34969),	-- Talador - Serena Summoned. Triggers when approaching Gordal Fortress and Serena ports in
-		q(33931),	-- Talador - This Is Not a Quest,	-- triggers when you loot Deceptia's Smoldering Boots. Supposedly it shows the map indicator but is silently completed when the explosion happens?
-		q(34857),	-- Talador - Tracking Flag: Orcs Kicked Out of Cave),	-- triggers when going to turn in "Old Friends, New Enemies"
-		q(33645),	-- Talador - Tracking Quest,	-- Iskar's Hired Hand
-		q(34562),	-- Talador - Trigger Teron'gor Defense Spawns),	-- triggers in a cave with Soulbind Nyami at Gul'Rok
-		q(34574),	-- Talador - Unused. Triggered when choosing the Arcane Sanctum
-		q(34101),	-- Talador - Vignette: Aruumel's Worn Mace	-- triggers when looting "Lightbearer"
-		q(34112),	-- Talador - Vignette: Guy 1 Found,	-- triggers breaking a deathweb cocoon in Deathweb Hollow (A)
-		q(34114),	-- Talador - Vignette: Four Friends Found,	-- triggers when all 4 citizens are freed from deathweb cocoons, making the Deathweb Toxin Vial treasure lootable (A)
-		q(34115),	-- Talador - Vignette: Four Friends Found,	-- triggers when all 4 citizens are freed from deathweb cocoons, making the Deathweb Toxin Vial treasure lootable
-		q(34110),	-- Talador - Vignette: Girl 1 Found,	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
-		q(34116),	-- Talador - Vignette: Girl 1 Found,	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
-		q(34111),	-- Talador - Vignette: Girl 2 Found,	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
-		q(34117),	-- Talador - Vignette: Girl 2 Found,	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
-		q(34118),	-- Talador - Vignette: Guy 1 Found,	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
-		q(34119),	-- Talador - Vignette: Guy 2 Found,	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
-		q(34523),	-- Talador - Warlock Speaking to Gul'dan,	-- triggers near Gul'Rok
-		q(34047),	-- Talador - Tuurem Explosion Tracker
-		q(34503),	-- Talador - Screaming Telmor Citizen,	-- triggers in Telmor
-		q(34760),	-- Talador - triggered when looting the Rusted Lockbox. WoWhead lists as a nagrand treasure but that treasure doesn't seem to exist
-		q(35491),	-- Talador - Underseer Bloodmane vignette duplicate flag
 		q(37864),	-- Voidtalon (Pops after the player leaves the scenario.)
-
-		--	TANAAN JUNGLE
-		q(38836),	-- Aktar's Post (Aktar's Post visited)
-		q(39306),	-- Call to Arms (chosen during "Bring the Reinforcements")
-		q(39157),	-- Fel Legendary Pet Tracking Quest 1 — Felsworn Sentry
-		q(39160),	-- Fel Legendary Pet Tracking Quest 2 — Corrupted Thundertail
-		q(39161),	-- Fel Legendary Pet Tracking Quest 3 — Chaos Pup
-		q(39162),	-- Fel Legendary Pet Tracking Quest 4 — Cursed Spirit
-		q(39163),	-- Fel Legendary Pet Tracking Quest 5 — Felfly
-		q(39164),	-- Fel Legendary Pet Tracking Quest 6 — Tainted Maulclaw
-		q(39165),	-- Fel Legendary Pet Tracking Quest 7 — Direflame
-		q(39166),	-- Fel Legendary Pet Tracking Quest 8 — Mirecroak
-		q(39167),	-- Fel Legendary Pet Tracking Quest 9 — Dark Gazer
-		q(39168),	-- Fel Legendary Pet Tracking Quest 10 — Bleakclaw
-		q(39169),	-- Fel Legendary Pet Tracking Quest 11 — Vile Blood of Draenor
-		q(39170),	-- Fel Legendary Pet Tracking Quest 12 — Dreadwalker
-		q(39171),	-- Fel Legendary Pet Tracking Quest 13 — Netherfist
-		q(39172),	-- Fel Legendary Pet Tracking Quest 14 — Skrillix
-		q(39173),	-- Fel Legendary Pet Tracking Quest 15 — Defiled Earth
-		q(39183),	-- FLAG - Immaculate Critical Strike Taladite (learning Immaculate Critical Strike Taladite at an Apexis Gemcutter)
-		q(39184),	-- FLAG - Immaculate Haste Taladite (learning Immaculate Haste Taladite at an Apexis Gemcutter)
-		q(39185),	-- FLAG - Immaculate Mastery Taladite (learning Immaculate Mastery Taladite at an Apexis Gemcutter)
-		q(39186),	-- FLAG - Immaculate Multistrike Taladite (learning Immaculate Multistrike Taladite at an Apexis Gemcutter)
-		q(39187),	-- FLAG - Immaculate Stamina Taladite (learning Immaculate Stamina Taladite at an Apexis Gemcutter)
-		q(37886),	-- Max-level Choice Tracker: Tanaan 6.2 - Ironhold (A)
-		q(37946),	-- Max-level Choice Tracker: Tanaan 6.2 - Ironhold (H)
-		q(38583),	-- Max-Level Choice Tracker: Tanaan 6.2 - Group - Throne of Kil'jaeden (A)
-		q(38584),	-- Max-level Choice Tracker: Tanaan 6.2 - Group - Throne of Kil'jaeden (H)
-		q(37939),	-- Max-level Choice Tracker: Tanaan 6.2 - Ruins of Kra'nak (A)
-		q(38010),	-- Max-level Choice Tracker: Tanaan 6.2 - Ruins of Kra'nak (H)
-		q(37967),	-- Max-level Choice Tracker: Tanaan 6.2 - Temple of Sha'naar (A)
-		q(38021),	-- Max-level Choice Tracker: Tanaan 6.2 - Temple of Sha'naar (H)
-		q(38438),	-- Max-level Choice Tracker: Tanaan 6.2 - The Fel Forge (A)
-		q(38437),	-- Max-level Choice Tracker: Tanaan 6.2 - The Fel Forge (H)
-		q(38039),	-- Max-level CHoice Tracker: Tanaan 6.2 - The Iron Front (A)
-		q(38038),	-- Max-level Choice Tracker: Tanaan 6.2 - The Iron Front (H)
-		q(38042),	-- Max-level Choice Tracker: Tanaan 6.2 - Zeth'Gol (A)
-		q(38041),	-- Max-level Choice Tracker: Tanaan 6.2 - Zeth'Gol (H)
-		q(33069),	-- REUSEME (after killing Supreme Lord Kazzak and using Bonus Roll)
-		q(39416),	-- Skoller's Bag o' Squirrel Treats - after talking to Skoller and getting his toy (Skoller's Bag of Squirrel Treats)
-		q(37887),	-- Tanaan Garrison Max-level Choice Tracker: ANY CHOICE MADE (A)
-		q(37892),	-- Tanaan Garrison Max-level Choice Tracker: ANY CHOICE MADE (H)
-		q(37969),	-- Tanaan Jungle - Tracking Quest - Vol'mar Built - JMC
-		q(38433),	-- Tanaan Jungle - Tracking Quest - Lion's Watch Built - JMC
 
 		--	DUNGEONS & RAIDS
 		q(35960),	-- Auchindoun Reward Quest
@@ -1838,7 +1649,7 @@ _.HiddenQuestTriggers = {
 		--	WORLD BOSSES (probably?  'short-supply reward' is usually a bonus roll)
 		q(37460),	-- Gorgrond - Short-Supply Reward (Drov the Ruiner killed)
 		q(37672),	-- Short-Supply Reward (Rukhmar bonus roll)
-		q(37673),	-- Drov the Ruiner bonus roll
+		q(37673),	-- Drov the Ruiner bonus roll / Triggered when killing Tarlna the Ageless (side note: accompanied by Pepe
 		q(37675),	-- Tarlna the Ageless bonus roll
 		q(39434),	-- Short-Supply Reward / First Rare killed in Tanaan
 		q(39375),	-- Short-Supply Reward / Suspiciously Glowing Chest in Tanaan
@@ -1863,7 +1674,6 @@ _.HiddenQuestTriggers = {
 		q(33961),	-- Frostfire Flowerpicker
 		q(33966),	-- Gorgrond Flowerpicker
 		q(33963),	-- Nagrand Flowerpicker
-		q(33073),	-- [NOTUSED]Vignette: Ancient Saltsnap Turtle
 		q(34872),	-- Prized Repossessions Tracking
 		q(34985),	-- Prized Repossessions Tracking
 		q(34986),	-- Punching Through Tracking

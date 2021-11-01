@@ -478,3 +478,8 @@ _.Instances = { tier(WOTLK_TIER, {
 		},
 	}),
 })};
+_.HiddenQuestTriggers = {
+	n(WOD_HEADER, {
+		q(35950),	-- Trial of the Champion Reward Quest - Normal / Heroic completion
+	}),
+};

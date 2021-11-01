@@ -1505,7 +1505,9 @@ _.Zones =
 	}),
 };
 _.HiddenQuestTriggers = {
-	q(36906),	-- Ogre Waygate
+	n(WOD_HEADER, {
+		q(36906),	-- Ogre Waygate
+	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(WOD_HEADER, {

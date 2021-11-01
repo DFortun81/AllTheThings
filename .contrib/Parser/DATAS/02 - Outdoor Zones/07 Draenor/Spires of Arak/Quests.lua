@@ -1285,19 +1285,36 @@ _.Zones =
 	}),
 };
 _.HiddenQuestTriggers = {
-	q(36885),	-- Ogre Waygate
-	q(36364),	-- Spires - Treasure 041 - Toxicfang Venom
+	n(WOD_HEADER, {
+		q(36885),	-- Spires of Arak - Ogre Waygate
+		q(36364),	-- Spires - Treasure 041 - Toxicfang Venom
+		q(35874),	-- Spires of Arak - Apparatus - triggers after finishing "The Ebon Hunter" quest
+		q(36859),	-- Spires of Arak - Deprecated version of "The Howling Crag" bonus objective
+		q(35201),	-- Spires of Arak - Krixel
+		q(37417),	-- Spires of Arak - Feast of the Spires (alliance) - put down by the barkeep if you have the brewery
+		q(37416),	-- Spires of Arak - Feast of the Spires (horde) - put down by the barkeep if you have the brewery
+		q(36111),	-- Spires of Arak - Flight Home
+		q(36112),	-- Spires of Arak - Flight Home
+		q(36577),	-- Spires of Arak - Flying Machine Completed after landing during "Flame On"
+		q(36184),	-- Spires of Arak - Mother Lode - triggers when you accept "The Mother Lode" quest and the crash happens
+		q(37317),	-- Spires of Arak - Talon King Ikiss killed during "The False Talon King"
+		q(35291),	-- Spires of Arak - Trading Post selected (alliance)
+		q(37316),	-- Spires of Arak - Trading Post selected (alliance)
+		q(35284),	-- Spires of Arak - Trading Post selected (horde)
+		q(37314),	-- Spires of Arak - Trading Post selected (horde)
+		q(35290),	-- Spires of Arak - Inn selected (alliance)
+		q(37315),	-- Spires of Arak - Inn selected (alliance)
+		q(35283),	-- Spires of Arak - Inn selected (horde)
+		q(37313),	-- Spires of Arak - Inn selected (horde)
+		q(36798),	-- Spires of Arak - Rooby Roo fed 3x to reveal the treasure
+		q(35028),	-- Spires of Arak - Krikka and Vakora Tracking - triggers during "The Bloodmane" and "Words of the Raven Mother"
+		q(36724),	-- Spires of Arak - Reshad Tracking - triggers after turning in "Call of the Raven Mother"
+	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(WOD_HEADER, {
 		n(WEAPONS, {
 			i(114946),	-- Admiral Taylor's Spellguard
-		}),
-		n(QUESTS, {
-			-- Quests below are completable somehow (I have them all) -Darkal
-			q(36796),	-- The Flock's Revenge - TODO: figure out from where it gets completed
-			q(34565),	-- Tearing Up Talador - TODO: figure out from where it gets completed
-			q(35340),	-- What Happened Here? - TODO: figure out from where it gets completed
 		}),
 	}),
 });

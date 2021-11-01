@@ -317,3 +317,9 @@ _.Instances = { tier(WOTLK_TIER, {
 		},
 	}),
 })};
+_.HiddenQuestTriggers = {
+	n(WOD_HEADER, {
+		q(35456),	-- Halls of Lightning Reward Quest - Normal completion
+		q(35458),	-- Halls of Lightning Reward Quest - Heroic completion
+	}),
+};

@@ -753,6 +753,52 @@ _.Zones =
 		}),
 	}),
 };
+_.HiddenQuestTriggers = {
+	n(WOD_HEADER, {
+		q(38836),	-- Aktar's Post (Aktar's Post visited)
+		q(39306),	-- Call to Arms (chosen during "Bring the Reinforcements")
+		q(39157),	-- Fel Legendary Pet Tracking Quest 1 — Felsworn Sentry
+		q(39160),	-- Fel Legendary Pet Tracking Quest 2 — Corrupted Thundertail
+		q(39161),	-- Fel Legendary Pet Tracking Quest 3 — Chaos Pup
+		q(39162),	-- Fel Legendary Pet Tracking Quest 4 — Cursed Spirit
+		q(39163),	-- Fel Legendary Pet Tracking Quest 5 — Felfly
+		q(39164),	-- Fel Legendary Pet Tracking Quest 6 — Tainted Maulclaw
+		q(39165),	-- Fel Legendary Pet Tracking Quest 7 — Direflame
+		q(39166),	-- Fel Legendary Pet Tracking Quest 8 — Mirecroak
+		q(39167),	-- Fel Legendary Pet Tracking Quest 9 — Dark Gazer
+		q(39168),	-- Fel Legendary Pet Tracking Quest 10 — Bleakclaw
+		q(39169),	-- Fel Legendary Pet Tracking Quest 11 — Vile Blood of Draenor
+		q(39170),	-- Fel Legendary Pet Tracking Quest 12 — Dreadwalker
+		q(39171),	-- Fel Legendary Pet Tracking Quest 13 — Netherfist
+		q(39172),	-- Fel Legendary Pet Tracking Quest 14 — Skrillix
+		q(39173),	-- Fel Legendary Pet Tracking Quest 15 — Defiled Earth
+		q(39183),	-- FLAG - Immaculate Critical Strike Taladite (learning Immaculate Critical Strike Taladite at an Apexis Gemcutter)
+		q(39184),	-- FLAG - Immaculate Haste Taladite (learning Immaculate Haste Taladite at an Apexis Gemcutter)
+		q(39185),	-- FLAG - Immaculate Mastery Taladite (learning Immaculate Mastery Taladite at an Apexis Gemcutter)
+		q(39186),	-- FLAG - Immaculate Multistrike Taladite (learning Immaculate Multistrike Taladite at an Apexis Gemcutter)
+		q(39187),	-- FLAG - Immaculate Stamina Taladite (learning Immaculate Stamina Taladite at an Apexis Gemcutter)
+		q(37886),	-- Max-level Choice Tracker: Tanaan 6.2 - Ironhold (A)
+		q(37946),	-- Max-level Choice Tracker: Tanaan 6.2 - Ironhold (H)
+		q(38583),	-- Max-Level Choice Tracker: Tanaan 6.2 - Group - Throne of Kil'jaeden (A)
+		q(38584),	-- Max-level Choice Tracker: Tanaan 6.2 - Group - Throne of Kil'jaeden (H)
+		q(37939),	-- Max-level Choice Tracker: Tanaan 6.2 - Ruins of Kra'nak (A)
+		q(38010),	-- Max-level Choice Tracker: Tanaan 6.2 - Ruins of Kra'nak (H)
+		q(37967),	-- Max-level Choice Tracker: Tanaan 6.2 - Temple of Sha'naar (A)
+		q(38021),	-- Max-level Choice Tracker: Tanaan 6.2 - Temple of Sha'naar (H)
+		q(38438),	-- Max-level Choice Tracker: Tanaan 6.2 - The Fel Forge (A)
+		q(38437),	-- Max-level Choice Tracker: Tanaan 6.2 - The Fel Forge (H)
+		q(38039),	-- Max-level CHoice Tracker: Tanaan 6.2 - The Iron Front (A)
+		q(38038),	-- Max-level Choice Tracker: Tanaan 6.2 - The Iron Front (H)
+		q(38042),	-- Max-level Choice Tracker: Tanaan 6.2 - Zeth'Gol (A)
+		q(38041),	-- Max-level Choice Tracker: Tanaan 6.2 - Zeth'Gol (H)
+		q(33069),	-- REUSEME (after killing Supreme Lord Kazzak and using Bonus Roll)
+		q(39416),	-- Skoller's Bag o' Squirrel Treats - after talking to Skoller and getting his toy (Skoller's Bag of Squirrel Treats)
+		q(37887),	-- Tanaan Garrison Max-level Choice Tracker: ANY CHOICE MADE (A)
+		q(37892),	-- Tanaan Garrison Max-level Choice Tracker: ANY CHOICE MADE (H)
+		q(37969),	-- Tanaan Jungle - Tracking Quest - Vol'mar Built - JMC
+		q(38433),	-- Tanaan Jungle - Tracking Quest - Lion's Watch Built - JMC
+	}),
+};
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(WOD_HEADER, {
 		n(QUESTS, {

@@ -209,3 +209,9 @@ _.Instances = { tier(WOTLK_TIER, {
 		},
 	}),
 })};
+_.HiddenQuestTriggers = {
+	n(WOD_HEADER, {
+		q(35436),	-- The Forge of Souls Reward Quest - Normal completion
+		q(35437),	-- The Forge of Souls Reward Quest - Heroic completion
+	}),
+};

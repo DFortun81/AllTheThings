@@ -273,3 +273,9 @@ _.Instances = { tier(WOTLK_TIER, {
 		},
 	}),
 })};
+_.HiddenQuestTriggers = {
+	n(WOD_HEADER, {
+		q(35502),	-- Utgarde Keep Reward Quest - Normal completion
+		q(35512),	-- Utgarde Keep Reward Quest - Heroic completion
+	}),
+};
