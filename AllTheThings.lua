@@ -14189,18 +14189,27 @@ RowOnEnter = function (self)
 		if reference.providers then
 			local counter = 0;
 			for i,provider in pairs(reference.providers) do
-				local providerType = provider[1]
-				local providerID = provider[2] or 0
-				local providerString = "UNKNOWN"
+				local providerType = provider[1];
+				local providerID = provider[2] or 0;
+				local providerString = UNKNOWN;
 				if providerType == "o" then
-					providerString = app.ObjectNames[providerID] or 'Object #'..providerID
+					providerString = app.ObjectNames[providerID] or reference.text or ("Object: " .. RETRIEVING_DATA)
+					if app.Settings:GetTooltipSetting("objectID") then
+						providerString = providerString .. ' (' .. providerID .. ')';
+					end
 				elseif providerType == "n" then
-					providerString = (providerID > 0 and NPCNameFromID[providerID]) or "Creature #"..providerID
+					providerString = (providerID > 0 and NPCNameFromID[providerID]) or ("Creature: " .. RETRIEVING_DATA)
+					if app.Settings:GetTooltipSetting("creatureID") then
+						providerString = providerString .. ' (' .. providerID .. ')';
+					end
 				elseif providerType == "i" then
-					local name = GetItemInfo(providerID)
-					providerString = name or 'Item #'..providerID
+					local _,name,_,_,_,_,_,_,_,icon = GetItemInfo(providerID);
+					providerString = (icon and ("|T" .. icon .. ":0|t") or "") .. (name or ("Item: " .. RETRIEVING_DATA));
+					if app.Settings:GetTooltipSetting("itemID") then
+						providerString = providerString .. ' (' .. providerID .. ')';
+					end
 				end
-				GameTooltip:AddDoubleLine(counter == 0 and L["PROVIDERS"] or " ", providerString .. ' (' .. providerID .. ')');
+				GameTooltip:AddDoubleLine(counter == 0 and L.PROVIDERS or " ", providerString);
 				counter = counter + 1;
 			end
 		end
