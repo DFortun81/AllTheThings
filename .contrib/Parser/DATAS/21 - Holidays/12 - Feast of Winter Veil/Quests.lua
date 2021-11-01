@@ -337,6 +337,7 @@ _.Holidays = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL},
 				["provider"] = { "n", 13418 },	-- Kaymard Copperpinch
 				["sourceQuest"] = 6983,	-- You're a Mean One... (Horde)
 				["races"] = HORDE_ONLY,
+				["isYearly"] = true,
 				["g"] = {
 					i(17726, {	-- Smokywood Pastures Special Gift
 						["g"] = {
@@ -361,7 +362,6 @@ _.Holidays = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL},
 						},
 					}),
 				},
-				["isYearly"] = true,
 			}),
 		}),
 	}),
