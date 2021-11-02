@@ -2170,6 +2170,10 @@ _.ExpansionFeatures =
 											["cost"] = { { "c", 1820, 85 } },
 											["description"] = "This is intended to be purchased on a 'Main' Venthyr character to send to 'Alt' Venthyr characters to get a head-start on Ember Court progress.",
 										}),
+										i(181443, {	-- The Party Herald's Party hat
+											["cost"] = { { "c", 1820, 85 } },	-- 85 Infused Ruby
+											["questID"] = 61459,
+										}),
 									},
 								}),
 							}),
