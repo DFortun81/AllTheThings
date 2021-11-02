@@ -13,7 +13,7 @@ root("Holidays", d(24, {  -- Timewalking
 		n(-23, {
 			["u"] = TIMEWALKING,
 			["g"] = {
-				n(HANDS, sharedData({ ["crs"] = { AUCH, BSM, DOCKS, SBG, SKY, BLOOM }, },{
+				n(HANDS, sharedData({ ["crs"] = { AUCH, BSM, RAIL, DOCKS, SBG, SKY, BLOOM }, },{
 					i(109861),	-- Felflame Grips
 					i(109845),	-- Frost-Touched Gloves
 					i(109847),	-- Lightbinder Gloves
@@ -35,7 +35,7 @@ root("Holidays", d(24, {  -- Timewalking
 					i(109860),	-- Rivet-Sealed Crushers
 					i(109857),	-- Verdant Plate Grips
 				})),
-				n(WAIST, sharedData({ ["crs"] = { AUCH, DOCKS, SBG, SKY, BLOOM }, },{
+				n(WAIST, sharedData({ ["crs"] = { AUCH, RAIL, DOCKS, SBG, SKY, BLOOM }, },{
 					i(109828),	-- Felflame Belt
 					i(109825),	-- Frost-Touched Cord
 					i(109827),	-- Lightbinder Girdle
@@ -57,7 +57,7 @@ root("Holidays", d(24, {  -- Timewalking
 					i(109841),	-- Rivet-Sealed Waistplate
 					i(109838),	-- Verdant Plate Belt
 				})),
-				n(LEGS, sharedData({ ["crs"] = { AUCH, BSM, DOCKS, SKY, BLOOM }, },{
+				n(LEGS, sharedData({ ["crs"] = { AUCH, BSM, RAIL, DOCKS, SKY, BLOOM }, },{
 					i(109808),	-- Felflame Legwraps
 					i(109805),	-- Frost-Touched Legwraps
 					i(109807),	-- Lightbinder Leggings
@@ -79,7 +79,7 @@ root("Holidays", d(24, {  -- Timewalking
 					i(109822),	-- Rivet-Sealed Legplates
 					i(109819),	-- Verdant Plate Legguards
 				})),
-				n(CHEST, sharedData({ ["crs"] = { AUCH, BSM, DOCKS, SBG, BLOOM }, },{
+				n(CHEST, sharedData({ ["crs"] = { AUCH, BSM, RAIL, DOCKS, SBG, BLOOM }, },{
 					i(109903),	-- Felflame Robes
 					i(109900),	-- Frost-Touched Robes
 					i(109902),	-- Lightbinder Robes
@@ -145,7 +145,7 @@ root("Holidays", d(24, {  -- Timewalking
 					i(109989),	-- Rivet-Sealed Casque
 					i(109986),	-- Verdant Plate Crown
 				})),
-				n(WRIST, sharedData({ ["crs"] = { AUCH, BSM, DOCKS, SBG, SKY, BLOOM }, },{
+				n(WRIST, sharedData({ ["crs"] = { AUCH, BSM, RAIL, DOCKS, SBG, SKY, BLOOM }, },{
 					i(109881),	-- Felflame Bracers
 					i(109865),	-- Frost-Touched Wristwraps
 					i(109867),	-- Lightbinder Wristwraps
@@ -211,7 +211,7 @@ root("Holidays", d(24, {  -- Timewalking
 					i(109918),	-- Soot-Scarred Longcloak
 					i(109917),	-- Three-Clefthoof Cape
 				})),
-				n(NECK, sharedData({ ["crs"] = { AUCH, DOCKS, SBG, SKY, BLOOM }, },{
+				n(NECK, sharedData({ ["crs"] = { AUCH, RAIL, DOCKS, SBG, SKY, BLOOM }, },{
 					i(109957),	-- Alc's Pendant of Fiery Dreams
 					i(109962),	-- Bloodmist Pendant
 					i(109959),	-- Chain of Soothing Light
@@ -233,7 +233,7 @@ root("Holidays", d(24, {  -- Timewalking
 					i(109960),	-- Wavesurge Choker
 					i(109953),	-- Windseal Necklace
 				})),
-				n(FINGER, sharedData({ ["crs"] = { BSM, AUCH, DOCKS, SBG, SKY, BLOOM }, },{
+				n(FINGER, sharedData({ ["crs"] = { BSM, RAIL, AUCH, DOCKS, SBG, SKY, BLOOM }, },{
 					i(109779),	-- Ancient Draenic Loop
 					i(109768),	-- Band of Growing Leaves
 					i(109773),	-- Band of Iron Scale

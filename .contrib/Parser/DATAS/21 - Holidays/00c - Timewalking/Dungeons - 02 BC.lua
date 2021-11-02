@@ -482,9 +482,6 @@ root("Holidays", d(24, {  -- Timewalking
 						["timeline"] = { "removed 5.0.4.10000" },
 					}),
 					-- #endif
-					i(73200, {	-- Fel Infusion Rod
-						["timeline"] = { "added 4.3.0.14732" },
-					}),
 				},
 			}),
 			e(556, {	-- Broggok
@@ -515,7 +512,6 @@ root("Holidays", d(24, {  -- Timewalking
 			e(557, {	-- Keli'dan the Breaker
 				["creatureID"] = 17377,
 				["groups"] = {
-					ach(648),	-- The Blood Furnace
 					i(24394),	-- Warsong Howling Axe
 					-- #if AFTER 7.3.5
 					i(27512),	-- The Willbreaker
@@ -563,7 +559,6 @@ root("Holidays", d(24, {  -- Timewalking
 						["timeline"] = { "removed 5.0.4.10000" },
 					}),
 					-- #endif
-					i(28769),	-- The Keystone
 				},
 			}),
 			e(559, {	-- High Botanist Freywinn
@@ -581,7 +576,6 @@ root("Holidays", d(24, {  -- Timewalking
 					i(28318),	-- Obsidian Clodstompers
 					i(28315),	-- Stormreaver Warblades
 					i(23617),	-- Plans: Earthpeace Breastplate
-					i(31744),	-- Botanist's Field Guide
 				},
 			}),
 			e(560, {	-- Thorngrin the Tender
@@ -606,15 +600,11 @@ root("Holidays", d(24, {  -- Timewalking
 					-- #if AFTER 7.3.5
 					i(28349),	-- Tidefury Helm (7.3.5 - Moved from Warp Splinter)
 					-- #endif
-					i(72706, {	-- Rapidly Evolving Frond
-						["timeline"] = { "added 4.3.0.14942" },
-					}),
 				},
 			}),
 			e(562, {	-- Warp Splinter
 				["creatureID"] = 17977,
 				["groups"] = {
-					ach(659),	-- The Botanica
 					i(28370),	-- Bangle of Endless Blessings
 					-- #if BEFORE 7.3.5
 					i(28228),	-- Beast Lord Cuirass (7.3.5 - Moved to High Botanist Freywinn)
@@ -643,7 +633,6 @@ root("Holidays", d(24, {  -- Timewalking
 					-- #endif
 					i(28341),	-- Warpstaff of Arcanum
 					i(24311),	-- Pattern: Whitemend Hood
-					i(31085),	-- Top Shard of the Arcatraz Key
 				},
 			}),
 		})),
@@ -834,7 +823,6 @@ root("Holidays", d(24, {  -- Timewalking
 			e(579, {	-- The Black Stalker
 				["creatureID"] = 17882,
 				["groups"] = {
-					ach(650),	-- Underbog
 					-- #if AFTER 7.3.5
 					i(27769),	-- Endbringer
 					-- #endif
@@ -864,7 +852,6 @@ root("Holidays", d(24, {  -- Timewalking
 					i(27896),	-- Alembic of Infernal Power
 					i(27770),	-- Argussian Compass
 					-- #endif
-					i(24248),	-- Brain of the Black Stalker
 				},
 			}),
 		})),
