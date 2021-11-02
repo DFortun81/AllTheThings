@@ -51,11 +51,10 @@ _.Zones =
 							["questID"] = 64348,
 							["cost"] = { { "c", 1931, 1000 } },	-- 1,000x Catalogued Research
 						}),
-						--[[ does not show on the vendor after first unlocking rep.  uncomment if its visibility is determined by reaching higher rep levels or some other factor
-						i(187136, {	-- Research Report: Careful Examination
-							["cost"] = { { "c", 1931, 4000 } },	-- 4,000x Catalogued Research
+						i(187136, {	-- Research Report: Relic Examination Techniques
+							["questID"] = 64367,
+							["cost"] = { { "c", 1931, 2500 } },	-- 2,500x Catalogued Research
 						}),
-						--]]
 						i(187138, {	-- Research Report: First Alloys
 							["questID"] = 64303,
 							["cost"] = { { "c", 1931, 8000 } },	-- 8,000x Catalogued Research

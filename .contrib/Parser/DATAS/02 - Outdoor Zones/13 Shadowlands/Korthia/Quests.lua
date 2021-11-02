@@ -623,6 +623,11 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 61.7, 24.0, KORTHIA },
 				}),
+				q(65080, {	 -- Anima, Diverted
+					["sourceQuest"] = 65020,	-- Practical Applications
+					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+					["coord"] = { 62.8, 22.6, KORTHIA },
+				}),
 				q(63783, {	-- Anima Reclamation
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178793 },	-- Kael'thas Sunstrider
@@ -954,7 +959,7 @@ _.Zones =
 						ach(15056),		-- Friend of Bloop
 					},
 				}),
-				q(65020, {	-- Practical Application
+				q(65020, {	-- Practical Applications
 					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 					["coord"] = { 62.8, 22.6, KORTHIA },
 				}),
