@@ -331,6 +331,7 @@ pet(29953, 142);	-- Golden Dragonhawk Hatchling
 pet(34518, 170);	-- Golden Pig Coin (Golden Pig)
 pet(169378, 2711);	-- Golden Snorf
 pet(104163, 1332);	-- Gooey Sha-ling
+pet(118518, 1639);	-- Graves
 pet(153056, 2120);	-- Grasping Manifestation
 pet(8500, 68);		-- Great Horned Owl
 pet(163495, 2409);	-- Greatwing Macaw

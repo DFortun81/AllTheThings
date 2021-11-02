@@ -16,7 +16,7 @@ _.Achievements =
 				734,	-- Mage — Hall of the Guardian (1st Floor)
 				735,	-- Mage — Hall of the Guardian (2nd Floor)
 				709,	-- Monk — The Wandering Isle
-				24,		-- Paladin — Sanctum of Light
+				LIGHTS_HOPE_CHAPEL,	-- Paladin — Sanctum of Light
 				702,	-- Priest — Netherlight Temple
 				626,	-- Rogue — The Hall of Shadows
 				726,	-- Shaman — The Heart of Azeroth

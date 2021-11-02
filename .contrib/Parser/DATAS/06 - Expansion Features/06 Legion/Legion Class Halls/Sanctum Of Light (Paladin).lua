@@ -9,7 +9,7 @@ _.ExpansionFeatures =
 			cl(PALADIN, {	-- Sanctum of Light
 				["classes"] = { PALADIN },
 				["maps"] = {
-					24,	-- Light's Hope Chapel
+					LIGHTS_HOPE_CHAPEL,
 				},
 				["g"] = {
 					n(QUESTS, {
@@ -33,7 +33,7 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 43697 },	-- Warriors of Light
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-							["coord"] = { 72.6, 25.8, 24 },
+							["coord"] = { 72.6, 25.8, LIGHTS_HOPE_CHAPEL },
 						}),
 						q(45566, {	-- A Knight's Belongings
 							["sourceQuests"] = { 45565 },	-- Further Training
@@ -48,26 +48,26 @@ _.ExpansionFeatures =
 							},
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
-							["coord"] = { 52.3, 78.1, 24 },
+							["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
 							["maps"] = { 702 },	-- Netherlight Temple
 						}),
 						q(43934, {	-- A New Path
 							["sourceQuests"] = { 43541 },	-- United As One
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 110866 },	-- Delas Moonfang
-							["coord"] = { 48.5, 71.3, 24 },
+							["coord"] = { 48.5, 71.3, LIGHTS_HOPE_CHAPEL },
 						}),
 						q(42866, {	-- A Sign From The Sky
 							["sourceQuests"] = { 42847 },	-- Dark Storms
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-							["coord"] = { 49.8, 72.4, 24 },
+							["coord"] = { 49.8, 72.4, LIGHTS_HOPE_CHAPEL },
 						}),
 						q(39756, {	-- A Sound Plan
 							["sourceQuests"] = { 38933 },	-- Logistical Matters
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
-							["coord"] = { 52.3, 78.1, 24 },
+							["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
 						}),
 						q(38566, {	-- A United Force
 							["sourceQuests"] = {
@@ -76,7 +76,7 @@ _.ExpansionFeatures =
 							},
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 100031 },	-- Lord Maxwell Tyrosus
-							["coord"] = { 63.0, 37.2, 24 },
+							["coord"] = { 63.0, 37.2, LIGHTS_HOPE_CHAPEL },
 						}),
 						q(43491, {	-- Allies of the Light
 							["sourceQuests"] = { 43490 },	-- Aponi's Trail
@@ -96,7 +96,7 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 45143 },	-- Judgment Awaits
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 109102 },	-- Delas Moonfang
-							["coord"] = { 59.1, 32.6, 24 },
+							["coord"] = { 59.1, 32.6, LIGHTS_HOPE_CHAPEL },
 						}),
 						q(43490, {	-- Aponi's Trail
 							["sourceQuests"] = { 43489 },	-- To Felblaze Ingress
@@ -115,7 +115,7 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 43535 },	-- Translation: Danger!
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
-							["coord"] = { 52.3, 78.1, 24 },
+							["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
 						}),
 						q(44220, {	-- Blessing of the Order
 							["u"] = REMOVED_FROM_GAME,
@@ -133,25 +133,25 @@ _.ExpansionFeatures =
 							},
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
-							["coord"] = { 52.3, 78.1, 24 },
+							["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
 						}),
 						q(44063, {	-- Bolstering Your Arsenal
 							["sourceQuests"] = { 39756 },	-- A Sound Plan
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-							["coord"] = { 49.8, 72.4, 24 },
+							["coord"] = { 49.8, 72.4, LIGHTS_HOPE_CHAPEL },
 						}),
 						q(44218, {	-- Champion Armaments
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 110434 },	-- Kristoff
-							["coord"] = { 54.1, 49.8, 24 },
+							["coord"] = { 54.1, 49.8, LIGHTS_HOPE_CHAPEL },
 							["description"] = "Only available if you you have the |cFFFFD700Plowshares to Swords|r order hall upgrade.",
 						}),
 						q(44250, {	-- Champion of the Light
 							["sourceQuests"] = { 38566 },	-- A United Force
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 100196 },	-- Eadric the Pure
-							["coord"] = { 41.4, 61.1, 24 },
+							["coord"] = { 41.4, 61.1, LIGHTS_HOPE_CHAPEL },
 							["g"] = {
 								i(139693),	-- Crown of the Silver Hand
 							},
@@ -160,7 +160,7 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 43541 },	-- United As One
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 90251 },		-- Aponi Brightmane <Sunwalker Chieftain>
-							["coord"] = { 48.3, 72.4, 24 },
+							["coord"] = { 48.3, 72.4, LIGHTS_HOPE_CHAPEL },
 							["g"] = {
 								follower(757),	-- Aponi Brightmane
 							},
@@ -169,7 +169,7 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 43697 },	-- Warriors of Light
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 99997 },		-- Arator the Redeemer
-							["coord"] = { 71.6, 23.7, 24 },
+							["coord"] = { 71.6, 23.7, LIGHTS_HOPE_CHAPEL },
 							["g"] = {
 								follower(758),	-- Arator the Redeemer
 							},
@@ -178,7 +178,7 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 43934 },	-- A New Path
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 113299 },	-- Delas Moonfang
-							["coord"] = { 71.9, 24.4, 24 },
+							["coord"] = { 71.9, 24.4, LIGHTS_HOPE_CHAPEL },
 							["g"] = {
 								follower(756),	-- Delas Moonfang
 							},
@@ -187,7 +187,7 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 42890 },	-- The Codex of Command
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 99995 },	-- Justicar Julia Celeste
-							["coord"] = { 50.2, 72.8, 24 },
+							["coord"] = { 50.2, 72.8, LIGHTS_HOPE_CHAPEL },
 							["g"] = {
 								follower(755),	-- Justicar Julia Celeste
 							},
@@ -196,7 +196,7 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 42846 },	-- The Blood Matriarch
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 92346 },		-- Lady Liadrin <Blood Knight Matriarch>
-							["coord"] = { 38.2, 64.6, 24 },
+							["coord"] = { 38.2, 64.6, LIGHTS_HOPE_CHAPEL },
 							["g"] = {
 								follower(478),	-- Lady Liadrin
 							},
@@ -205,7 +205,7 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 43697 },	-- Warriors of Light
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 109105 },	-- Lothraxion <High Commander>
-							["coord"] = { 73.1, 23.5, 24 },
+							["coord"] = { 73.1, 23.5, LIGHTS_HOPE_CHAPEL },
 							["g"] = {
 								follower(759),	-- Lothraxion
 							},
@@ -225,7 +225,7 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 42890 },	-- The Codex of Command
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 94175 },		-- Vindicator Boros <Triumvirate of the Hand>
-							["coord"] = { 49.3, 71.5, 24 },
+							["coord"] = { 49.3, 71.5, LIGHTS_HOPE_CHAPEL },
 							["g"] = {
 								follower(479),	-- Vindicator Boros
 							},
@@ -240,19 +240,19 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 42120 },	-- The Silver Hand
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-							["coord"] = { 49.8, 72.4, 24 },
+							["coord"] = { 49.8, 72.4, LIGHTS_HOPE_CHAPEL },
 						}),
 						q(43486, {	-- Cracking the Codex
 							["sourceQuests"] = { 42890 },	-- The Codex of Command
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 90251 },	-- Aponi Brightmane
-							["coord"] = { 48.4, 72.8, 24 },
+							["coord"] = { 48.4, 72.8, LIGHTS_HOPE_CHAPEL },
 						}),
 						q(42847, {	-- Dark Storms
 							["sourceQuests"] = { 42846 },	-- The Blood Matriarch
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
-							["coord"] = { 52.3, 78.1, 24 },
+							["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
 						}),
 						q(46259, {	-- Darkbinder Dilemma
 							["sourceQuests"] = { 45890 },	-- Ancestors and Enemies
@@ -267,14 +267,14 @@ _.ExpansionFeatures =
 							},
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
-							["coord"] = { 52.3, 78.1, 24 },
+							["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
 						}),
 						q(49812, {	-- Delas in Dalaran
 							["provider"] = { "n", 90251 },	-- Aponi Brightmane
 							["classes"] = { PALADIN },
 							--["races"] = { BLOODELF, DARKIRONDWARF }, -- Might need confirmation
 							["sourceQuests"] = { 43486 },	-- Cracking the Codex
-							["coord"] = { 48.4, 72.8, 24 },
+							["coord"] = { 48.4, 72.8, LIGHTS_HOPE_CHAPEL },
 							["description"] = "Complete Cracking the Codex (43486) and don't accept the next quest. Go back to Aponi instead.",
 							["isBreadcrumb"] = true,
 						}),
@@ -282,19 +282,19 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 45147 },	-- Felstone Destruction
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 119545 },	-- Nerus Moonfang
-							["coord"] = { 58.9, 31.9, 24 },
+							["coord"] = { 58.9, 31.9, LIGHTS_HOPE_CHAPEL },
 						}),
 						q(44219, {	-- Fate's Blessing
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 112986 },	-- Librarian Lightmorne
-							["coord"] = { 48.9, 76.2, 24 },
+							["coord"] = { 48.9, 76.2, LIGHTS_HOPE_CHAPEL },
 							["description"] = "Only available if you you have the |cFFFFD700Holy Purpose|r order hall upgrade.",
 						}),
 						q(45147, {	-- Felstone Destruction
 							["sourceQuests"] = { 45146 },	-- Runic Reading
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 109102 },	-- Delas Moonfang
-							["coord"] = { 59.1, 32.6, 24 },
+							["coord"] = { 59.1, 32.6, LIGHTS_HOPE_CHAPEL },
 						}),
 						q(39722, {	-- Forging New Strength
 							["u"] = REMOVED_FROM_GAME,
@@ -330,7 +330,7 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 47137 },	-- Champions of Legionfall
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 90249 },	-- Lady Liadrin
-							["coord"] = { 50.3, 74.1, 24 },
+							["coord"] = { 50.3, 74.1, LIGHTS_HOPE_CHAPEL },
 						}),
 						q(42771, {	-- Keeping the Peace
 							["sourceQuests"] = { 42770 },	-- Seeking Guidance
@@ -357,7 +357,7 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 38566 },	-- A United Force
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 100031 },	-- Lord Maxwell Tyrosus
-							["coord"] = { 73.7, 19.6, 24 },
+							["coord"] = { 73.7, 19.6, LIGHTS_HOPE_CHAPEL },
 						}),
 						q(43698, {	-- Lumenstone
 							["sourceQuests"] = {
@@ -366,13 +366,13 @@ _.ExpansionFeatures =
 							},
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
-							["coord"] = { 52.3, 78.1, 24 },
+							["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
 						}),
 						q(42867, {	-- Meeting of the Silver Hand
 							["sourceQuests"] = { 44153 },	-- Light's Charge
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
-							["coord"] = { 52.3, 78.1, 24 },
+							["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
 						}),
 						q(45145, {	-- Moonfang Family Relics
 							["sourceQuests"] = { 46259 },	-- Darkbinder Dilemma
@@ -396,7 +396,7 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 45147 },	-- Felstone Destruction
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 119545 },	-- Nerus Moonfang
-							["coord"] = { 58.9, 31.9, 24 },
+							["coord"] = { 58.9, 31.9, LIGHTS_HOPE_CHAPEL },
 						}),
 						q(45644, {	-- Oh Doloria, My Sweet Doloria
 							["sourceQuests"] = { 45568 },	-- They Stole Excaliberto!
@@ -408,20 +408,20 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 46069 },	-- Worthy of the Title
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
-							["coord"] = { 52.3, 78.1, 24 },
+							["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
 							["cost"] = { { "i", 131746, 1 } },	-- Stonehide Leather Barding
 						}),
 						q(42848, {	-- Recruiting the Troops
 							["sourceQuests"] = { 42847 },	-- Dark Storms
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
-							["coord"] = { 52.3, 78.1, 24 },
+							["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
 						}),
 						q(39696, {	-- Rise, Champions
 							["sourceQuests"] = { 39756 },	-- A Sound Plan
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-							["coord"] = { 49.8, 72.4, 24 },
+							["coord"] = { 49.8, 72.4, LIGHTS_HOPE_CHAPEL },
 							["g"] = {
 								follower(480),	-- Lord Maxwell Tyrosus
 							},
@@ -430,7 +430,7 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 45145 },	-- Moonfang Family Relics
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 109102 },	-- Delas Moonfang
-							["coord"] = { 59.1, 32.6, 24 },
+							["coord"] = { 59.1, 32.6, LIGHTS_HOPE_CHAPEL },
 						}),
 						q(42772, {	-- Sacred Ground
 							["sourceQuests"] = { 42770 },	-- Seeking Guidance
@@ -455,7 +455,7 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 44370 },	-- Completing Your Arsenal
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-							["coord"] = { 49.8, 72.4, 24 },
+							["coord"] = { 49.8, 72.4, LIGHTS_HOPE_CHAPEL },
 						}),
 						q(42017, {	-- Shrine of the Truthguard
 							["sourceQuests"] = { 42005 },	-- The End of the Saga
@@ -467,13 +467,13 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 42890 },	-- The Codex of Command
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
-							["coord"] = { 52.3, 78.1, 24 },
+							["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
 						}),
 						q(45770, {	-- Stirring in the Shadows
 							["sourceQuests"] = { 46074 },	-- Leather to Legendary
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
-							["coord"] = { 52.3, 78.1, 24 },
+							["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
 							["g"] = {
 								i(143502),	-- Highlord's Golden Charger
 							},
@@ -482,13 +482,13 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 42849 },	-- Wrath and Justice
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
-							["coord"] = { 52.3, 78.1, 24 },
+							["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
 						}),
 						q(42846, {	-- The Blood Matriarch
 							["sourceQuests"] = { 39696 },	-- Rise, Champions
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-							["coord"] = { 49.8, 72.4, 24 },
+							["coord"] = { 49.8, 72.4, LIGHTS_HOPE_CHAPEL },
 						}),
 						q(42377, {	-- The Brother's Trail
 							["sourceQuests"] = { 42231 },	-- The Mysterious Paladin
@@ -515,31 +515,31 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 46070 },	-- Preparations Underway
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
-							["coord"] = { 52.3, 78.1, 24 },
+							["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
 						}),
 						q(42885, {	-- The Highlord's Command
 							["sourceQuests"] = { 42919 },	-- The Scion's Legacy
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-							["coord"] = { 50.8, 70.9, 24 },
+							["coord"] = { 50.8, 70.9, LIGHTS_HOPE_CHAPEL },
 						}),
 						q(42966, {	-- The Highlord's Command
 							["sourceQuests"] = { 42919 },	-- The Scion's Legacy
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-							["coord"] = { 50.8, 70.9, 24 },
+							["coord"] = { 50.8, 70.9, LIGHTS_HOPE_CHAPEL },
 						}),
 						q(42967, {	-- The Highlord's Command
 							["sourceQuests"] = { 42919 },	-- The Scion's Legacy
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-							["coord"] = { 50.8, 70.9, 24 },
+							["coord"] = { 50.8, 70.9, LIGHTS_HOPE_CHAPEL },
 						}),
 						q(42968, {	-- The Highlord's Command
 							["sourceQuests"] = { 42919 },	-- The Scion's Legacy
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-							["coord"] = { 50.8, 70.9, 24 },
+							["coord"] = { 50.8, 70.9, LIGHTS_HOPE_CHAPEL },
 						}),
 						q(42773, {	-- The Light Reveals
 							["sourceQuests"] = { 42771 },	-- Keeping the Peace
@@ -557,13 +557,13 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 44063 },	-- Bolstering Your Arsenal
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-							["coord"] = { 49.8, 72.4, 24 },
+							["coord"] = { 49.8, 72.4, LIGHTS_HOPE_CHAPEL },
 						}),
 						q(42919, {	-- The Scion's Legacy
 							["sourceQuests"] = { 42867 },	-- Meeting of the Silver Hand
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-							["coord"] = { 49.8, 72.4, 24 },
+							["coord"] = { 49.8, 72.4, LIGHTS_HOPE_CHAPEL },
 						}),
 						q(38376, {	-- The Search for the Highlord
 							["sourceQuests"] = { 42774 },	-- Hope Prevails
@@ -598,13 +598,13 @@ _.ExpansionFeatures =
 							},
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
-							["coord"] = { 52.3, 78.1, 24 },
+							["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
 						}),
 						q(43489, {	-- To Felblaze Ingress
 							["sourceQuests"] = { 43493 },	-- Black Rook Hold: Lord Ravencrest
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
-							["coord"] = { 52.3, 78.1, 24 },
+							["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
 						}),
 						q(42002, {	-- To Northrend
 							["sourceQuests"] = { 42000 },	-- Seeker of Truth
@@ -628,7 +628,7 @@ _.ExpansionFeatures =
 							},
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
-							["coord"] = { 52.3, 78.1, 24 },
+							["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
 							["g"] = {
 								i(139697),	-- Bindings of the Silver Hand
 							},
@@ -697,7 +697,7 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 42848 },	-- Recruiting the Troops
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
-							["coord"] = { 52.3, 78.1, 24 },
+							["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
 						}),
 					}),
 					n(93787, {	-- Scouting Map

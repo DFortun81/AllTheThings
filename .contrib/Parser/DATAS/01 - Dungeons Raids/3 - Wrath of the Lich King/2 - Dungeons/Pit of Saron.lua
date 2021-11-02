@@ -266,3 +266,9 @@ _.Instances = { tier(WOTLK_TIER, {
 		},
 	}),
 })};
+_.HiddenQuestTriggers = {
+	n(WOD_HEADER, {
+		q(35438),	-- Pit of Saron Reward Quest - Normal completion
+		q(35440),	-- Pit of Saron Reward Quest - Heroic completion
+	}),
+};

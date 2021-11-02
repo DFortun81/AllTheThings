@@ -271,7 +271,8 @@ profession(ENCHANTING, {
 							["recipeID"] = 13887--[[Strength]]
 						},
 						{
-							["recipeID"] = 13841--[[Advanced Mining]]
+							["recipeID"] = 13841,--[[Advanced Mining]]
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{
 							["recipeID"] = 13815--[[Agility]]

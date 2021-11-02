@@ -1273,6 +1273,37 @@ _.Zones =
 		}),
 	}),
 };
+_.HiddenQuestTriggers = {
+	n(WOD_HEADER, {
+		q(36904),	-- Frostfire Ridge - Ogre Waygate - actived Ogre Waygate at 59.6, 47.5
+		q(34453),	-- Frostfire Ridge - Tracking Event: Gazlowe Arrived
+		q(34715),	-- Frostfire Ridge - Tracking Flag: Shamanstone Summons - appoach the frostwolf shaman stone in Wor'gol while on "Honor Has Its Rewards" to start the dialog
+		q(33847),	-- Frostfire Ridge - Flag: Seen Ga'nar Rolling Out),	-- triggered going into Chillfang's cave immediately upon getting to Draenor
+		q(33909),	-- Frostfire Ridge - Flag: Seen Ga'nar Rolling Out to Bladespire),	-- triggers shortly after reaching Wor'gol during "Den of Wolves"
+		q(33846),	-- Frostfire Ridge - Flag: Seen Thrall Cyclone),	-- triggers during "These Colors Don't Run"
+		q(33443),	-- Frostfire Ridge - Barrier Destroyed),	-- triggers upon reaching the top of the walkway with rolling fireballs in Bladespire Citadel during "Great Balls of Fire!"
+		q(34510),	-- Frostfire Ridge - Tracking Event: Catapuls 'n' Clefthoof),	-- triggered after riding the wolf down Bladespire Citadel during "Moving In"
+		q(34511),	-- Frostfire Ridge - Tracking Event: Ogre Drag),	-- triggered after riding the wolf down Bladespire Citadel during "Moving In"
+		q(34654),	-- Frostfire Ridge - Tracking Flag: Dagg Found at Daggermaw Ravine),	-- triggers when you open Dagg's cage at 39.6, 28.1
+		q(34312),	-- Frostfire Ridge - The Magma Lord),	-- triggered when Molthron first appears at 43.6, 15.6
+		q(37544),	-- Frostfire Ridge - Garrison Follower: Greatmother Geyah),	-- triggers if you pick Greatmother Geyah during "The Frostwolves Stand Ready"
+		q(37545),	-- Frostfire Ridge - Garrison Follower: Kal'gor the Honorable),	-- triggers if you pick Kal'gor during "The Frostwolves Stand Ready"
+		q(34730),	-- Frostfire Ridge - Garrison Follower: Lokra),	-- triggers if you pick Lokra during "The Frostwolves Stand Ready"
+		q(34329),	-- Frostfire Ridge - Shamanstone: Buffeting Galefury selected. Only procs once
+		q(34330),	-- Frostfire Ridge - Shamanstone: Ogrish Fortitude selected. Only procs once
+		q(34456),	-- Frostfire Ridge - Shamanstone: Spirit of the Wolf. Popped when approaching the Frostwolf shamanstone
+		q(34331),	-- Frostfire Ridge - Shamanstone: Spirit of the Wolf selected. Only procs once
+		q(34332),	-- Frostfire Ridge - Shamanstone: Touched By Fire selected. Only procs once
+		q(34333),	-- Frostfire Ridge - Shamanstone: Touched By Ice selected. Only procs once
+		q(34328),	-- Frostfire Ridge - Shamanstone: Blessing of the WOlf selected. Only procs once
+		q(34506),	-- Frostfire Ridge - Bonus Objective: Kill Grimfrost Ogres - NYI version since the bonus objective was unified into questID 33145
+		q(33914),	-- Frostfire Ridge - Gut Guttra - NYI, possible duplicate
+		q(33264),	-- Frostfire Ridge - A Proper Burial - NYI, possible duplicate
+		q(37652),	-- Frostfire Ridge - Vignette: Jabberjaw, triggers with 37386
+		q(34517),	-- Frostfire Ridge - Vignette: Gargantuan Frostbeak, triggers with 34522 after killing Ug'lok the Frozen
+		q(34519),	-- Frostfire Ridge - Vignette: Brotoculus, triggers with 34522 after killing Ug'lok the Frozen
+	}),
+};
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(WOD_HEADER, {
 		n(-163, {	-- Armor
@@ -1298,18 +1329,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			q(37625),	-- Assault on Magnarok (A)
 			q(34063),	-- Enemies Above
 			q(34079),	-- Mission Successful
-			q(37062),	-- Tricks of the Trade
 			q(33562),	-- Trophy: Gorg'ak's Obsidian Spines
 			q(35057),	-- Vignette XP reward - Frostfire
-			-- Quests below are completable somehow (I have them all) -Darkal
-			q(36079),	-- A Hero's Welcome - TODO: figure out from where it gets completed
-			q(33380),	-- REUSE - TODO: figure out from where it gets completed
-			q(33407),	-- REUSE - TODO: figure out from where it gets completed
-			q(35251),	-- The Bounty of Bladespire	- TODO: figure out from where it gets completed
-			q(34734),	-- The Loyalty of Olin Umberhide - TODO: figure out from where it gets completed
 		}),
 	}),
 });
-_.HiddenQuestTriggers = {
-	q(36904),	-- Actived Ogre Waygate at 59.6, 47.5
-};

@@ -255,3 +255,9 @@ _.Instances = { tier(WOTLK_TIER, {
 		},
 	}),
 })};
+_.HiddenQuestTriggers = {
+	n(WOD_HEADER, {
+		q(35465),	-- Halls of Stone Reward Quest - Normal completion
+		q(35468),	-- Halls of Stone Reward Quest - Heroic completion
+	}),
+};

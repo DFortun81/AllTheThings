@@ -391,7 +391,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 							i(31089),	-- Chestguard of the Forgotten Conqueror
 							i(31091),	-- Chestguard of the Forgotten Protector
 							i(31090),	-- Chestguard of the Forgotten Vanquisher
-							i(32374),	-- Zhar'doom, Greatstaff ot the Devourer
+							i(32374),	-- Zhar'doom, Greatstaff of the Devourer
 							i(32500),	-- Crystal Spire of Karabor
 							i(32471),	-- Shard of Azzinoth
 							i(32336),	-- Black Bow of the Betrayer

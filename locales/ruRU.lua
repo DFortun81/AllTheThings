@@ -626,8 +626,7 @@ for key,value in pairs({
 		[-87] = "Оружейная",
 		[-88] = "Собор",
 		[-90] = "Элитный",										-- Elite
-	--TODO: Garrison Note: These will be changed into a new class soon(TM)
-		--[-99] = select(2,C_Garrison.GetBuildingInfo(65)),		-- Stables
+	-- Garrisons
 		[-99] = "Строения",
 	-- Alliance [Swaps based on faction ONLY after a reloadui]
 		[-130] = "Сумеречный лес - активен",						-- Duskwood Active
@@ -672,6 +671,8 @@ for key,value in pairs({
 		[-488] = "Трофейный сундук",								-- Daily War Chest
 	-- Tarot Cards
 		[-491] = "Карты таро",										-- Tarot Cards
+	-- Misc
+		[-493] = "Сломанный лут с миссий",							-- Broken Mission Loot
 	-- Blizzard Events and Anniversaries
 		[-520] = "Препатч",											-- Expansion Pre-Launch
 		[-522] = "Wrath of the Lich King: Нашествие зомби",			-- Wrath of the Lich King: Zombie Infestation
@@ -2981,7 +2982,7 @@ for key,value in pairs({
 		-- #if BEFORE BFA
 		-- [41] = {1, "|CFFFF0000Это доступно только игрокам, которые завершили соответствующие испытания артефактов Башни магов и получили базовый внешний вид.|r", "Появления в Башне Магов"},
 		-- #endif
-		[45] = {1, "|CFFFF0000Изменения добычи Blizzard сломали несколько предметов и сделали их недоступными. Накидка Дома Дворян / Теплый плащ Империи Гурубаши (обе награды Эмиссара БФА) и Огом Манглер в настоящее время сломаны, и их необходимо починить.|r", "Сломанная добыча"},
+		[45] = {1, "|CFFFF0000Изменения добычи Blizzard сломали несколько предметов и сделали их недоступными. Накидка Дома Дворян / Теплый плащ Империи Гурубаши (обе награды Эмиссара BfA), Огом Манглер и награды с миссий WoD в настоящее время сломаны, и их необходимо починить.|r", "Сломанная добыча"},
 
 	-- Seasonal Filters
 		[1000] = {4, "|CFF00FFDEДля этого требуется Хмельной фестиваль.|r", "Хмельной фестиваль"},

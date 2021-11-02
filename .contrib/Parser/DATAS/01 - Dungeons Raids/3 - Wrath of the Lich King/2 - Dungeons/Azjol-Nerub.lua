@@ -212,3 +212,9 @@ _.Instances = { tier(WOTLK_TIER, {
 		},
 	}),
 })};
+_.HiddenQuestTriggers = {
+	n(WOD_HEADER, {
+		q(35497),	-- Azjol-Nerub Reward Quest - Normal completion
+		q(35498),	-- Azjol-Nerub Reward Quest - Heroic completion
+	}),
+};

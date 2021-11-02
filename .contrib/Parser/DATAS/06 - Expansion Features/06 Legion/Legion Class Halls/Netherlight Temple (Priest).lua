@@ -180,7 +180,7 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 43397 },	-- United As One
 							["classes"] = { PRIEST },
 							["provider"] = { "n", 111616 },	-- Lady Liadrin
-							["coord"] = { 50.2, 74.1, 24 },	-- Dalaran
+							["coord"] = { 50.2, 74.1, LIGHTS_HOPE_CHAPEL },
 						}),
 						q(43395, {	-- Allies of the Light
 							["sourceQuests"] = { 43394 },	-- Crossing Legion Lines

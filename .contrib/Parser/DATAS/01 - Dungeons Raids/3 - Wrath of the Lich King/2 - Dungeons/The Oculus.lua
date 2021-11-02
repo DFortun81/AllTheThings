@@ -329,3 +329,9 @@ _.Instances = { tier(WOTLK_TIER, {
 		},
 	}),
 })};
+_.HiddenQuestTriggers = {
+	n(WOD_HEADER, {
+		q(35446),	-- The Oculus Reward Quest - Normal completion
+		q(35447),	-- The Oculus Reward Quest - Heroic completion
+	}),
+};
