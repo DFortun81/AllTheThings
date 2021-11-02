@@ -355,8 +355,9 @@ end
 app.ArrayAppend = function(a1, ...)
 	a1 = a1 or {};
 	if ... then
-		local i = #a1 + 1;
-		for _,a in ipairs({...}) do
+		local i, select, a = #a1 + 1, select;
+		for n=1,select("#", ...) do
+			a = select(n, ...);
 			for ai=1,#a do
 				a1[i] = a[ai];
 				i = i + 1;
@@ -2940,7 +2941,6 @@ subroutines = {
 		}
 	end,
 };
--- Allows efficiently appending the content of multiple arrays (in sequence) onto the end of the provided array, or new empty array
 local ArrayAppend = app.ArrayAppend;
 local function Resolve_Extract(results, group, field)
 	if group[field] then
@@ -2974,12 +2974,7 @@ ResolveSymbolicLink = function(o)
 				-- Instruction to search the full database for something.
 				local cache = app.SearchForField(sym[2], sym[3]);
 				if cache then
-					for _,s in ipairs(cache) do
-						-- if finding itself in the cache, don't try to resolve itself
-						if s ~= o and (s.key ~= o.key or s[s.key] ~= o[o.key]) then
-							tinsert(searchResults, s);
-						end
-					end
+					ArrayAppend(searchResults, cache);
 				else
 					print("Failed to select ", sym[2], sym[3]);
 				end
@@ -3128,9 +3123,7 @@ ResolveSymbolicLink = function(o)
 						if s[key] and contains(clone, s[key]) then
 							-- TEMP logic to allow Ensembles to continue working until they get fixed again...
 							if key == "itemID" and s.g and s[key] == o[key] then
-								for _,g in ipairs(s.g) do
-									tinsert(searchResults, g);
-								end
+								ArrayAppend(searchResults, s.g);
 							end
 							table.remove(searchResults, k);
 						end
@@ -3261,10 +3254,7 @@ ResolveSymbolicLink = function(o)
 			for _,s in ipairs(searchResults) do
 				-- if somehow the symlink pulls in the same item as used as the source of the symlink, then skip putting it in the final group
 				if s == o or (s.hash and s.hash == o.hash) then
-					print("Symlink pulled itself into final group!",o.key,o.key and o[o.key])
-					-- for _,g in ipairs(Resolve_Pop(s)) do
-					-- 	tinsert(finalized, g);
-					-- end
+					print("Symlink group pulled itself into final group!",o.key,o.key and o[o.key])
 				else
 					tinsert(finalized, s);
 				end
@@ -4136,7 +4126,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				-- print("#entries",#entries);
 				tinsert(info, { left = L["CONTAINS"] });
 				local containCount, item, group = math.min(app.Settings:GetTooltipSetting("ContainsCount") or 25, #entries);
-				local RecursiveParentField, SearchForObject, Filter = app.RecursiveFirstParentWithField, app.SearchForObject, app.GroupFilter;
+				local RecursiveParentField, SearchForObject = app.RecursiveFirstParentWithField, app.SearchForObject;
 				for i=1,containCount do
 					item = entries[i];
 					group = item.group;
@@ -4187,19 +4177,22 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 								id = id[1];
 								locationGroup = C_Map_GetMapInfo(id);
 								locationName = locationGroup and (locationGroup.name or locationGroup.text);
-							elseif count < 4 then
-								local mapsConcat = {};
-								for i=1,count,1 do
-									tinsert(mapsConcat, C_Map_GetMapInfo(id[i]).name);
-								end
-								locationName = table.concat(mapsConcat, "/");
 							else
-								local mapsConcat = {};
-								for i=1,3,1 do
-									tinsert(mapsConcat, C_Map_GetMapInfo(id[i]).name);
+								local mapsConcat, names, name = {}, {};
+								for i=1,count,1 do
+									name = C_Map_GetMapInfo(id[i]).name;
+									if not names[name] then
+										names[name] = true;
+										tinsert(mapsConcat, name);
+									end
 								end
-								tinsert(mapsConcat, "+++");
-								locationName = table.concat(mapsConcat, "/");
+								-- up to 3 unqiue map names displayed
+								if #mapsConcat < 4 then
+									locationName = app.TableConcat(mapsConcat, nil, nil, "/");
+								else
+									mapsConcat[4] = "+++";
+									locationName = app.TableConcat(mapsConcat, nil, nil, "/", 1, 4);
+								end
 							end
 						else
 							locationGroup = SearchForObject(field, id) or (id and field == "mapID" and C_Map_GetMapInfo(id));
@@ -4733,7 +4726,7 @@ local function CacheField(group, field, value)
 	fieldCache_g = rawget(fieldCache, field);
 	fieldCache_f = rawget(fieldCache_g, value);
 	if fieldCache_f then
-		tinsert(fieldCache_f, group);
+		fieldCache_f[#fieldCache_f + 1] = group;
 	else
 		rawset(fieldCache_g, value, {group});
 	end
@@ -5002,12 +4995,13 @@ local mapKeyUncachers = {
 };
 CacheFields = function(group)
 	-- apparently any 'rawset' on group will break the pairs loop on the group, so we need to copy all the keys first
-	local keys, mapKeys, value, hasG = {};
+	local keys, n, mapKeys, value, hasG = {}, 1;
 	for k,_ in pairs(group) do
 		if k == "g" then
 			hasG = true;
 		else
-			tinsert(keys, k);
+			keys[n] = k;
+			n = n + 1;
 		end
 	end
 	for _,k in ipairs(keys) do
@@ -16409,6 +16403,7 @@ customWindowUpdates["CosmicInfuser"] = function(self, force)
 						while parentMapID do
 							mapInfo = C_Map_GetMapInfo(parentMapID);
 							if mapInfo then
+								-- TODO: add logic to right-click to set the minilist to this mapID, for testing
 								mapObject = { ["mapID"] = parentMapID, ["collectible"] = true, ["g"] = { mapObject } };
 								parentMapID = mapInfo.parentMapID;
 							else
@@ -16676,22 +16671,6 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				end
 				-- and conditionally sort the entire list (sort groups which contain 'mapped' content)
 				SortGroup(self.data, "name", nil, true, "sort");
-
-				-- Move all "isRaid" entries to the top of the list.
-				-- TODO: wonder why this stopped working...
-				if results.g then
-					local top = {};
-					for i=#results.g,1,-1 do
-						local o = results.g[i];
-						if o.isRaid then
-							table.remove(results.g, i);
-							tinsert(top, o);
-						end
-					end
-					for _,o in ipairs(top) do
-						tinsert(results.g, 1, o);
-					end
-				end
 
 				-- Expand all symlinks in the minilist for clarity
 				FillSymLinks(self.data, true);
@@ -17717,8 +17696,8 @@ customWindowUpdates["Random"] = function(self)
 							SearchRecursively(subgroup, field, temp, func);
 						end
 					end
-					if not func or func(group) then
-						if group[field] then tinsert(temp, group); end
+					if group[field] and (not func or func(group)) then
+						tinsert(temp, group);
 					end
 				end
 			end
@@ -17741,8 +17720,8 @@ customWindowUpdates["Random"] = function(self)
 							SearchRecursivelyForValue(subgroup, field, value, temp, func);
 						end
 					end
-					if not func or func(group) then
-						if group[field] and group[field] == value then tinsert(temp, group); end
+					if group[field] and group[field] == value and (not func or func(group)) then
+						tinsert(temp, group);
 					end
 				end
 			end
