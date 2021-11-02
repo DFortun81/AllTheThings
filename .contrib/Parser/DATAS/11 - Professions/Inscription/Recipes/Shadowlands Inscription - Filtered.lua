@@ -67,6 +67,15 @@ profession(INSCRIPTION, {
 						},
 					},
 				},
+				category(786, sharedData({ ["timeline"] = { "added 9.1.5" }},{	-- Glyphs
+					recipe(362412),	-- Glyph of the Wild Mushroom
+					recipe(360542),	-- Mark of the Gloomstalker Dredbat
+					recipe(360885),	-- Mark of the Midnight Runestag
+					recipe(360880),	-- Mark of the Regal Dredbat
+					recipe(360899),	-- Mark of the Sable Ardenmoth
+					recipe(360545),	-- Mark of the Shimmering Ardenmoth
+					recipe(360539),	-- Mark of the Twilight Runestag
+				})),
 				category(1416, {	-- Vantus Runes
 					recipe(311453, {	-- Vantus Rune: Castle Nathria
 						["name"] = "Castle Nathria",
