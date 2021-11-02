@@ -1234,6 +1234,7 @@ app.L = {
 		[-694] = 3949827,																	-- Unchained Gladiator: Shadowlands Season 2
 	-- More PvP Seasons are likely to come dont use IDs here
 	-- Pets
+		[-795] = app.asset("Pet_Dungeon"),													-- Pet Battle Dungeons
 		[-796] = app.asset("Category_PetBattles"),											-- Battle
 		[-797] = 631719,																	-- Journal
 	-- Toys
