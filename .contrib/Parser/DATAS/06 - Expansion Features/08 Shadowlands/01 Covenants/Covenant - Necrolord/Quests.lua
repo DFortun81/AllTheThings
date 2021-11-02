@@ -936,6 +936,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 62848 },	-- Conduits, What Are They For?
 						["provider"] = { "n", 183248 },	-- Construct Attendant
 						["coord"] = { 37.9, 36.2, SEAT_OF_THE_PRIMUS },
+						["timeline"] = { "added 9.1.5" },
 						["g"] = {
 							follower(1263),	-- Emeni
 						},
@@ -944,6 +945,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 62848 },	-- Conduits, What Are They For?
 						["provider"] = { "n", 161905 },	-- Bonesmith Heirmir
 						["coord"] = { 42.8, 31.9, SEAT_OF_THE_PRIMUS },
+						["timeline"] = { "added 9.1.5" },
 						["g"] = {
 							follower(1262),	-- Bonesmith Heirmir
 						},
