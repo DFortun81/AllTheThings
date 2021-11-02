@@ -785,7 +785,7 @@ _.Zones =
 				},
 			}),
 			q(56128, {	-- Drowning the Horde
-				["provider"] = { "n", 154653 },	-- Crafticus Mindbender
+				["provider"] = { "n", 154653 },	-- Tomas Riogain
 				["coord"] = { 38.1, 55.3, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 57010,	-- Harnessing the Power

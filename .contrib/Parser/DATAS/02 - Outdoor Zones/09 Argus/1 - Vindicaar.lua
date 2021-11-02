@@ -11,8 +11,8 @@ _.Zones =
 			["maps"] = {
 				831,	-- Upper Deck [The Vindicaar: Krokuun]
 				832,	-- Lower Deck [The Vindicaar: Krokuun]
-				883,	-- Upper Deck [The Vindicaar: Mac'Aree]
-				884,	-- Lower Deck [The Vindicaar: Mac'Aree]
+				883,	-- Upper Deck [The Vindicaar: Eredath]
+				884,	-- Lower Deck [The Vindicaar: Eredath]
 				-- 886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
 				887,	-- Lower Deck [The Vindicaar: Antoran Wastes]
 				940,	-- Upper Deck [The Vindicaar: LFD]
@@ -173,10 +173,10 @@ _.Zones =
 						["creatureID"] = 123139,	-- Navigation Console
 						["coord"] = { 42.5, 22.8, 831 },	-- Upper Deck [The Vindicaar: Krokuun]
 					}),
-					fp(1977, {	-- Vindicaar, Mac'Aree
-						["description"] = "Vindicaar, Mac'Aree",
+					fp(1977, {	-- Vindicaar, Eredath
+						["description"] = "Vindicaar, Eredath",
 						["creatureID"] = 125461,	-- Navigation Console
-						["coord"] = { 62.7, 49.1, 883 },	-- Upper Deck [The Vindicaar: Mac'Aree]
+						["coord"] = { 62.7, 49.1, 883 },	-- Upper Deck [The Vindicaar: Eredath]
 					}),
 				}),
 				n(QUESTS, {
@@ -312,7 +312,7 @@ _.Zones =
 							i(151571),	-- Lightweave Breeches
 						},
 					}),
-					q(46815, {	-- Mac'Aree, Jewel of Argus
+					q(46815, {	-- Eredath, Jewel of Argus
 						["sourceQuests"] = { 48081 },	-- A Floating Ruin
 						["provider"] = { "n", 128725 },	-- Prophet Velen
 						["coord"] = { 47.4, 24.5, 831 },

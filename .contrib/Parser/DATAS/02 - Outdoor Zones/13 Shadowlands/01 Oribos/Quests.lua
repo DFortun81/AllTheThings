@@ -57,6 +57,41 @@ _.Zones =
 						["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 						["coord"] = { 34.7, 55.7, ORIBOS },	-- Ring of Fates
 					}),
+					q(65033, {	-- Observing Victory
+						["description"] = "This is only available while leveling",
+						["provider"] = { "n", 174922 },	-- Strategist Zo'rak
+						["isDaily"] = true,
+						["coord"] = { 34.7, 56.5, ORIBOS },
+						["lvl"] = { 50, 59 },
+						["sym"] = {
+							{"select", "mapID", BASTION },
+							{"pop"},
+							{"where", "headerID", ZONE_REWARDS },
+							{"pop"},
+							{"finalize"},
+							
+							{"select", "mapID", MALDRAXXUS },
+							{"pop"},
+							{"where", "headerID", ZONE_REWARDS },
+							{"pop"},
+							{"finalize"},
+							
+							{"select", "mapID", ARDENWEALD },
+							{"pop"},
+							{"where", "headerID", ZONE_REWARDS },
+							{"pop"},
+							{"finalize"},
+							
+							{"select", "mapID", REVENDRETH },
+							{"pop"},
+							{"where", "headerID", ZONE_REWARDS },
+							{"pop"},
+							{"finalize"},
+							
+							{"merge"},
+							{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", },
+						},
+					}),
 					q(62285, {	-- Observing War
 						["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 						["isWeekly"] = true,
@@ -926,6 +961,17 @@ _.Zones =
 					["provider"] = { "n", 178908 },	-- Al'dalil
 					["coord"] = { 57.1, 31.1, ORIBOS },	-- Ring of Fates
 				}),
+				-- PTR 9.1.5
+				q(64970, {	-- Timeworn Keystone: The Broken Isle
+					["provider"] = { "n", 178804 },	-- Ta'hsup
+					["coord"] = { 65.2, 35.1, ORIBOS },
+					["repeatable"] = true,
+				}),
+				q(64709, {	-- A Fel Path Through Time
+					["provider"] = { "n", 166307 },	-- Caretaker Kah-Toll
+					["coord"] = { 65, 32.7, ORIBOS },
+					["repeatable"] = true,
+				}),
 			}),
 		}),
 	}),
@@ -939,6 +985,13 @@ _.HiddenQuestTriggers = {
 	q(64782),	-- Occurred when joining Night Fae/Kyrian in the initial Thread of Fate quest 62000
 	--q(62370),	-- Swapping Cov to NF with NF already R40
 	--q(62384),	-- Swapping Cov to NF with NF already R40
+	-- 9.1.5 Swapping at R80. Flag/Unflag
+	q(65076),	-- Swapping Cov to Kyrian at R80
+	q(65077),	-- Swapping Cov to Venthyr at R80
+	q(65078),	-- Swapping Cov to NF at R80
+	q(65079),	-- Swapping Cov to Necrolord at R80
+	-- 9.1.5?
+	q(62923),	-- Swapped to Venthyr from Necrolord at R80? Probably a old hqt
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {

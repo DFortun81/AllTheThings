@@ -214,6 +214,10 @@ _.Zones =
 				i(177799),	-- Stoneborn Shield
 				i(177810),	-- Stonebreaker Mace
 				i(180487),	-- Stonefist's Knuckle Cover
+				i(187930, {	-- Technique: Mark of the Regal Dredbat
+					["description"] = "Drops from Dreadbats in Dominance Keep.",
+					["timeline"] = { "added 9.1.5" },
+				}),
 				i(182705, {	-- Vial of Blue Muck Dye
 				--	may also come from the |cFFFFFFFFDiscarded Vial object that can be found around the muck lakes - only the other itemID version shows up for that now, though|r
 					["description"] = "Drops from mobs or |cFFFFFFFFDiscarded Vials|r in the Dredgewood area (|cFFFFFFFF72.9, 73.5|r).",

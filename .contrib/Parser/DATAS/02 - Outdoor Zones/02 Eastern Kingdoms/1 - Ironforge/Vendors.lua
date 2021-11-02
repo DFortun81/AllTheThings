@@ -189,6 +189,16 @@ _.Zones =
 						i(140773),	-- Eagletalon Spear
 						i(122663),	-- Eternal Amulet of the Redeemed
 						i(122667),	-- Eternal Emberfury Talisman
+						i(187997, {	-- Eternal Heirloom Armor Casing
+							["cost"] = {
+								{ "g", 50000000 },		-- 5000g
+							},
+						}),
+						i(187998, {	-- Eternal Heirloom Scabbard
+							["cost"] = {
+								{ "g", 75000000 },		-- 7500g
+							},
+						}),
 						i(122664),	-- Eternal Horizon Choker
 						i(122662),	-- Eternal Talisman of Evasion
 						i(122668),	-- Eternal Will of the Martyr
@@ -276,6 +286,20 @@ _.Zones =
 								{ "c", 515, 75 },	-- 75x Darkmoon Prize Ticket
 							},
 						}),
+						i(187896),	-- Scouting Map: A Stormstout's Guide to Pandaria (TOY!)
+						i(187897),	-- Scouting Map: Cataclysm's Consequences (TOY!)
+						i(187869),	-- Scouting Map: Into the Shadowlands (TOY!)
+						i(150746, {	-- Scouting Map: Modern Provisioning of the Eastern Kingdoms (TOY!)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						i(150743, {	-- Scouting Map: Surviving Kalimdor (TOY!)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						i(187895),	-- Scouting Map: The Dangers of Draenor (TOY!)
+						i(187899),	-- Scouting Map: The Many Curiosities of Outland (TOY!)
+						i(187900),	-- Scouting Map: The Wonders of Kul Tiras and Zandalar (TOY!)
+						i(187898),	-- Scouting Map: True Cost of the Northrend Campaign (TOY!)
+						i(187875),	-- Scouting Map: United Fronts of the Broken Isles (TOY!)
 						i(122364, {	-- Sharpened Scarlet Kris
 							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
 						}),
@@ -293,9 +317,6 @@ _.Zones =
 						}),
 						i(122372, {	-- Strengthened Stockade Pauldrons
 							["cost"] = { { "i", 137642, 8 }, },	-- 8x Mark of Honor
-						}),
-						i(150743, {	-- Surviving Kalimdor (TOY!)
-							["races"] = ALLIANCE_ONLY,
 						}),
 						i(122361, {	-- Swift Hand of Justice
 							["cost"] = {
@@ -327,9 +348,6 @@ _.Zones =
 							["cost"] = {
 								{ "g", 15000000 },		-- 1,500g
 							},
-						}),
-						i(150746, {	-- To Modernize the Provisions of Azeroth (TOY!)
-							["races"] = ALLIANCE_ONLY,
 						}),
 						i(122366, {	-- Upgraded Dwarven Hand Cannon
 							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor

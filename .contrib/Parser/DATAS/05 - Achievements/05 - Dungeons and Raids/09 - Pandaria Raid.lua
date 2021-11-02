@@ -345,8 +345,8 @@ _.Achievements =
 			{	-- Heroic: Tsulong
 				["achievementID"] = 6732,	-- Heroic: Tsulong
 			},
-			{	-- Heroic: Twin Consorts
-				["achievementID"] = 8066,	-- Heroic: Twin Consorts
+			{	-- Heroic: Twin Empyreans
+				["achievementID"] = 8066,	-- Heroic: Twin Empyreans
 			},
 			{	-- Heroic: Will of the Emperor
 				["achievementID"] = 6724,	-- Heroic: Will of the Emperor
@@ -515,9 +515,9 @@ _.Achievements =
 						["achievementID"] = 8072,	-- Pinnacle of Storms
 						["criteriaID"] = 3,	-- Lei Shen
 					},
-					{	-- Pinnacle of Storms: Twin Consorts
+					{	-- Pinnacle of Storms: Twin Empyreans
 						["achievementID"] = 8072,	-- Pinnacle of Storms
-						["criteriaID"] = 2,	-- Twin Consorts
+						["criteriaID"] = 2,	-- Twin Empyreans
 					},
 				},
 			},

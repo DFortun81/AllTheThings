@@ -955,7 +955,7 @@ _.Zones =
 					["provider"] = { "n", 11035 },	-- Betina Bigglezink
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(5214,  {	-- The Great Fras Siabi
+				q(5214,  {	-- The Great Ezra Grimm
 					["provider"] = { "n", 11033 },	-- Smokey LaRue
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {

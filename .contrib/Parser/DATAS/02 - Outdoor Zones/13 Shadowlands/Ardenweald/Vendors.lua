@@ -57,6 +57,10 @@ _.Zones =
 						i(184754),	-- Glitterwing Scarf
 						i(184752),	-- Gormscale Leggings
 						i(184753),	-- Tree-Scaler's Britches
+						i(187883, {	-- Technique: Mark of the Twilight Runestag
+							["cost"] = 14120000,	-- 1,412g
+							["timeline"] = { "added 9.1.5" },
+						}),
 					},
 				}),
 				n(172634, {	-- Brightgleam
@@ -96,11 +100,19 @@ _.Zones =
 							["cost"] = 2000,	-- 2 silver
 						}),
 						n(NIGHT_FAE, sharedData({["customCollect"] = { "SL_COV_NFA" }},{
+							i(187901, {	-- Eagle Soul
+								["cost"] = { { "c", 1813, 20000 } },
+								["timeline"] = { "added 9.1.5" },
+							}),
 							i(182662, {	-- Leafadore
 								["cost"] = { { "i", 163036, 250 } },
 							}),
 							i(182175, {	-- Moose Soul
 								["cost"] = { { "c", 1813, 1500 } },
+							}),
+							i(187873, {	-- Prairie Dog Soul
+								["cost"] = { { "c", 1813, 10000 } },
+								["timeline"] = { "added 9.1.5" },
 							}),
 							i(181304, {	-- Winterwoven Branches
 								["cost"] = { { "c", 1813, 3500 } },

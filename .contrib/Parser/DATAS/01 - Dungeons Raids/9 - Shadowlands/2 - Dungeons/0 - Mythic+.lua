@@ -37,6 +37,9 @@ _.Instances = { tier(SL_TIER, {
 			ach(15049),			-- Keystone Hero: Spires of Ascension
 			ach(15045),			-- Keystone Hero: The Necrotic Wake
 			ach(15050),			-- Keystone Hero: Theater of Pain
+			ach(15327, {		-- Tormented Hero: Shadowlands Season 2
+				title(451),	-- <Name>, the Tormented Hero
+			}),
 		}),
 		n(-936, {	-- Soulshape Forms
 			i(182173),	-- Hyena Soul

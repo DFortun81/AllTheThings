@@ -85,7 +85,7 @@ _.Instances = { tier(LEGION_TIER, {
 			-- questIDs are here but commented out in case anyone wants to figure out a way to use them in the future.
 			m(921, {	-- Invasion Point: Aurinor
 			--	["questID"] = 48982,	-- Invasion Point: Aurinor
-				["coord"] = { 38.77, 12.42, 882 },	-- Mac'Aree
+				["coord"] = { 38.77, 12.42, 882 },	-- Eredath
 				["icon"] = "Interface\\Icons\\inv_legionadventure",
 				["crs"] = { 125849 },	-- Invasion Point: Aurinor
 				["g"] = {
@@ -95,7 +95,7 @@ _.Instances = { tier(LEGION_TIER, {
 			}),
 			m(922, {	-- Invasion Point: Bonich
 			--	["questID"] = 49099,	-- Invasion Point: Bonich
-				["coord"] = { 70.5, 38.8, 882 },	-- Mac'Aree
+				["coord"] = { 70.5, 38.8, 882 },	-- Eredath
 				["icon"] = "Interface\\Icons\\inv_legionadventure",
 				["crs"] = { 126547 },	-- Invasion Point: Bonich
 				["g"] = {

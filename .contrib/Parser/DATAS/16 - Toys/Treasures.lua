@@ -10,6 +10,7 @@ _.Toys =
 		i(184318),	-- Battlecry of Krexus
 		i(183986),	-- Bondable Sinstone
 		i(183988),	-- Bondable Val'kyr Diadem
+		i(187705),	-- Choofa's Call
 		i(174920),	-- Coifcurl's Close Shave Kit
 		i(184489),	-- Fae Harp
 		i(184490),	-- Fae Pipes

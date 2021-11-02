@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(905, {	-- Argus
-		m(882, {	-- Mac'Aree
+		m(882, {	-- Eredath
 			n(ACHIEVEMENTS, {
 				ach(12074, {	-- Shoot First, Loot Later
 					o(277342, {	-- Augari Goods
@@ -54,7 +54,7 @@ _.Zones =
 							crit(5, {	-- Chest of Ill-Gotten Gains
 								["achievementID"] = 12074,	-- Shoot First, Loot Later
 							}),
-							i(153325),	-- Mac'Aree Vigilant's Redoubt
+							i(153325),	-- Eredath Vigilant's Redoubt
 						},
 					}),
 					o(276228, {	-- Desperate Eredar's Cache

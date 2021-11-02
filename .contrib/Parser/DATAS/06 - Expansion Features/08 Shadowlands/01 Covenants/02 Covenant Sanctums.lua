@@ -35,10 +35,14 @@ _.ExpansionFeatures =
 					ach(14839),		-- Bound to Adventure
 					ach(14834),		-- Bound with Purpose
 					ach(14627),		-- Choosing your Purpose
-					ach(14631, {	-- Champion of the Covenant
-						ach(14628),	-- The Road to Renown
-						ach(14629),	-- Gaining Respect
-						ach(14630),	-- Becoming a Hero
+					ach(15241, {	-- Renowned
+						["timeline"] = { "added 9.1.5" },
+						["g"] = {
+							ach(14628),	-- The Road to Renown
+							ach(14629),	-- Gaining Respect
+							ach(14630),	-- Becoming a Hero
+							ach(14631),	-- Champion of the Covenant
+						},
 					}),
 					ach(14632),		-- Conducting Anima
 					ach(14639),		-- Dedication to the Restoration
@@ -163,6 +167,9 @@ _.ExpansionFeatures =
 						i(181475, {	-- Bounty of the Grovewardens / Ardenweald
 							["description"] = "Rewarded by completing a Calling based in Ardenweald.",
 							["g"] = {
+								i(187840, {	-- Sparkle Wings (TOY!)
+									["timeline"] = { "added 9.1.5" },
+								}),
 							},
 						}),
 						i(181556, {	-- Tribute of the Court / Revendreth
@@ -174,6 +181,9 @@ _.ExpansionFeatures =
 								-- i(181508),	-- Fortifying Ingredients [Monk-Brewmaster] / Source Drop
 								-- i(181740),	-- Evasive Stride [Monk] / Source
 								i(180248),	-- Ambassador's Reserve (Ember Court Bonus Time)
+								i(187512, {	-- Tome of Small Sins (TOY!)
+									["timeline"] = { "added 9.1.5" },
+								}),
 							},
 						}),
 						i(181732, {	-- Tribute of the Ambitious / Maldraxxus
@@ -186,6 +196,9 @@ _.ExpansionFeatures =
 										i(184162),	-- Pestilent Necroray
 									}),
 								}),
+								i(187913, {	-- Apprentice Slimemancer's Boots (TOY!)
+									["timeline"] = { "added 9.1.5" },
+								}),
 								-- i(181435),	-- Calcualted Strikes [Monk-Windwalker] / Source Drop
 								-- i(181462),	-- Coordinated Offensive [Monk] / Source Drop
 								-- i(181742),	-- Walk with the Ox [Monk-Brewmaster] / Source Drop
@@ -197,6 +210,9 @@ _.ExpansionFeatures =
 							["g"] = {
 								-- i(181770),	-- Bone Marrow Hops [Monk] / Source Drop
 								-- i(182138),	-- Mind Devourer [Priest-Shadow]
+								i(187419, {	-- Steward's First Feather (TOY!)
+									["timeline"] = { "added 9.1.5" },
+								}),
 							},
 						}),
 
@@ -204,6 +220,9 @@ _.ExpansionFeatures =
 						i(181476, {	-- Tribute of the Wild Hunt / Ardenweald
 							["description"] = "Rewarded by completing a 'Challenges' Calling based in Ardenweald.",
 							["g"] = {
+								i(187840, {	-- Sparkle Wings (TOY!)
+									["timeline"] = { "added 9.1.5" },
+								}),
 							},
 						}),
 						i(181557, {	-- Favor of the Court / Revendreth
@@ -211,6 +230,9 @@ _.ExpansionFeatures =
 							["g"] = {
 								i(176850),	-- Blank Invitation
 								-- i(182348),	-- Lavish Harvest
+								i(187512, {	-- Tome of Small Sins (TOY!)
+									["timeline"] = { "added 9.1.5" },
+								}),
 							},
 						}),
 						i(181733, {	-- Tribute of the Duty-Bound / Maldraxxus
@@ -223,6 +245,9 @@ _.ExpansionFeatures =
 										i(184162),	-- Pestilent Necroray
 									}),
 								}),
+								i(187913, {	-- Apprentice Slimemancer's Boots (TOY!)
+									["timeline"] = { "added 9.1.5" },
+								}),
 								-- i(181705),	-- Celestial Effervescence
 								-- i(182111),	-- Spiritual Resonance
 							},
@@ -233,6 +258,9 @@ _.ExpansionFeatures =
 								-- i(182145),	-- Heavy Rainfall
 								-- i(181944),	-- Resonant Words
 								-- i(181867),	-- Swift Penitence
+								i(187419, {	-- Steward's First Feather (TOY!)
+									["timeline"] = { "added 9.1.5" },
+								}),
 							},
 						}),
 					},

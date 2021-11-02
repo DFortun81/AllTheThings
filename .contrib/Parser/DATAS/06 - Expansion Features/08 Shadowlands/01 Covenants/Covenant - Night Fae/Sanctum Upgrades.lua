@@ -570,6 +570,9 @@ _.ExpansionFeatures =
 										}),
 									},
 								}),
+								i(187705, {	-- Choofa's Call (TOY!)
+									["timeline"] = { "added 9.1.5" },
+								}),
 							}),
 							n(QUESTS, {
 								q(62447, {	-- A Rare and Unusual Spirit (1)

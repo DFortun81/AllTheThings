@@ -319,7 +319,7 @@ _.Zones =
 						i(131295),	-- Gorat's Spaulders of Satisfaction
 					},
 				}),
-				q(13628, {	-- Got Wood?
+				q(13628, {	-- Got Lumber?
 					["provider"] = { "n", 33284 },	-- Truun
 					["coord"] = { 42.2, 15.2, NORTHERN_BARRENS },
 					["sourceQuest"] = 13621,	-- Gorat's Vengeance

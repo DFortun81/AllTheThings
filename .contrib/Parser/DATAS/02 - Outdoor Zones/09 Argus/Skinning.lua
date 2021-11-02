@@ -11,7 +11,7 @@ _.Zones =
 				["maps"] = {
 					885,	-- Antoran Wastes
 					830,	-- Krokuun
-					882,	-- Mac'Aree
+					882,	-- Eredath
 					833,	-- Nath'raxas Spire
 				},
 				["g"] = {

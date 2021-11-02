@@ -931,6 +931,23 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 177975 },	-- The Primus
 						["coord"] = { 49.7, 51.4, SEAT_OF_THE_PRIMUS },
 					}),
+					-- 9.1.5
+					q(65165, {	-- Soul Support
+						["sourceQuests"] = { 62848 },	-- Conduits, What Are They For?
+						["provider"] = { "n", 183248 },	-- Construct Attendant
+						["coord"] = { 37.9, 36.2, SEAT_OF_THE_PRIMUS },
+						["g"] = {
+							follower(1263),	-- Emeni
+						},
+					}),
+					q(65157, {	-- A Hardened Bond
+						["sourceQuests"] = { 62848 },	-- Conduits, What Are They For?
+						["provider"] = { "n", 161905 },	-- Bonesmith Heirmir
+						["coord"] = { 42.8, 31.9, SEAT_OF_THE_PRIMUS },
+						["g"] = {
+							follower(1262),	-- Bonesmith Heirmir
+						},
+					}),
 				})),
 			},
 		}),

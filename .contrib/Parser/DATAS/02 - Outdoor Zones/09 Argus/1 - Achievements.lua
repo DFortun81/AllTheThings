@@ -9,12 +9,12 @@ _.Zones =
 			["maps"] = {
 				885,	-- Antoran Wastes
 				830,	-- Krokuun
-				882,	-- Mac'Aree
+				882,	-- Eredath
 				833,	-- Nath'raxas Spire
 				831,	-- Upper Deck [The Vindicaar: Krokuun]
 				832,	-- Lower Deck [The Vindicaar: Krokuun]
-				883,	-- Upper Deck [The Vindicaar: Mac'Aree]
-				884,	-- Lower Deck [The Vindicaar: Mac'Aree]
+				883,	-- Upper Deck [The Vindicaar: Eredath]
+				884,	-- Lower Deck [The Vindicaar: Eredath]
 				886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
 				887,	-- Lower Deck [The Vindicaar: Antoran Wastes]
 			},

@@ -69,6 +69,7 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(10537)),		-- Patron of War
 			un(REMOVED_FROM_GAME, ach(11931)),		-- Rides of War
 			un(REMOVED_FROM_GAME, ach(12454)),		-- Salute to Starcraft
+			ach(15323),	-- Sarge's Tale
 			un(REMOVED_FROM_GAME, ach(3536)),		-- The Marine Marine
 			un(REMOVED_FROM_GAME, ach(414)),		-- Tyrael's Hilt
 			un(REMOVED_FROM_GAME, ach(9496, {		-- Warlord's Deathwheel

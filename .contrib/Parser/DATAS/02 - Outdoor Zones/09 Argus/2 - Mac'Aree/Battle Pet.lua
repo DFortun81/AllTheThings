@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(905, {	-- Argus
-		m(882, {	-- Mac'Aree
+		m(882, {	-- Eredath
 			petbattle(filter(BATTLE_PETS, {
 				ach(12088, {	-- Anomalous Animals of Argus
 					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here

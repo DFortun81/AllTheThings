@@ -202,6 +202,13 @@ _.Instances = { tier(WOTLK_TIER, {
 					})),
 				},
 			}),
+			-- #if AFTER 9.1.5
+			d(24, {	-- Timewalking
+				["sym"] = {	-- link in Timewalking content
+					{"sub", "tw_instance", 272 },	-- this instance version of timewalking
+				},
+			}),
+			-- #endif
 		},
 	}),
 })};

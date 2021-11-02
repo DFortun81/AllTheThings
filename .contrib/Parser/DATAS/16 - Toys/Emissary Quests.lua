@@ -5,6 +5,7 @@
 _.Toys =
 {
 	n(EMISSARY_QUESTS, {	-- Paragon Rewards
+		i(187913),	-- Apprentice Slimemancer's Boots
 		i(166877),	-- Azerite Firework Launcher
 		i(166808),	-- Bewitching Tea Set
 		i(166704),	-- Bowl of Glowing Pufferfish
@@ -20,6 +21,9 @@ _.Toys =
 		i(166702),	-- Proudmoore Music Box
 		i(166879),	-- Rallying War Banner
 		i(147843),	-- Sira's Extra Cloak
+		i(187840),	-- Sparkle Wings
+		i(187419),	-- Steward's First Feather
+		i(187512),	-- Tome of Small Sins
 		i(166701),	-- Warbeast Kraal Dinner Bell
 	}),
 };

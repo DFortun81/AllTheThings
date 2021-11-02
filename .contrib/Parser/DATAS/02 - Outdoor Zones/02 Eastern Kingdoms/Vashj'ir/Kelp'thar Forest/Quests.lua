@@ -13,7 +13,7 @@ _.Zones =
 						["coord"] = { 58.3, 48.6, 201 },
 						["sourceQuests"] = { 25670 },	-- DUN-dun-DUN-dun-DUN-dun
 					}),
-					q(25388, {	-- A Case of Crabs
+					q(25388, {	-- Crate of Crab Meat
 						["coord"] = { 49.6, 40.8, 201 },
 						["provider"] = { "o", 202871 },	-- Sunken Crate
 						["sourceQuests"] = { 25587 },	-- Gimme Shelter

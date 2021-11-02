@@ -460,7 +460,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(58, 10, 58),
 				}),
-				q(9898,  {	-- Nothin' Says Lovin' Like a Big Stinger
+				q(9898,  {	-- The Respect of Another
 					["qg"] = 18012,	-- Reavij
 					["sourceQuest"] = 9770,	-- Menacing Marshfangs
 					["coord"] = { 85.0, 54.0, ZANGARMARSH },

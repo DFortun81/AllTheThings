@@ -1116,7 +1116,7 @@ _.Zones =
 				q(13640, {	-- Management Material
 					["provider"] = { "n", 33421 },	-- Gorka
 					["coord"] = { 72.9, 80.4, ASHENVALE },
-					["sourceQuest"] = 13628,	-- Got Wood?
+					["sourceQuest"] = 13628,	-- Got Lumber?
 					["races"] = HORDE_ONLY,
 					["timeline"] = {
 						"added 4.0.3.13277",

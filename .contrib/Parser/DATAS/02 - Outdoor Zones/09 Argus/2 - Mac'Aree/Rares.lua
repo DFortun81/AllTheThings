@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(905, {	-- Argus
-		m(882, {	-- Mac'Aree
+		m(882, {	-- Eredath
 			n(RARES, {
 				n(126887, {	-- Ataxon
 					["altQuests"] = { 48729 },	-- WQ
@@ -281,7 +281,7 @@ _.Zones =
 							["achievementID"] = 12078,	-- Commander of Argus
 						}),
 						i(153183),	-- Barrier Generator [Note: Drop Argus]
-						i(153323),	-- Mac'Aree Vigilant's Crest
+						i(153323),	-- Eredath Vigilant's Crest
 					},
 				}),
 				n(126865, {	-- Vigilant Thanos
@@ -294,7 +294,7 @@ _.Zones =
 							["achievementID"] = 12078,	-- Commander of Argus
 						}),
 						i(153183),	-- Barrier Generator [Note: Drop Argus]
-						i(153322),	-- Mac'Aree Vigilant's Shield
+						i(153322),	-- Eredath Vigilant's Shield
 					},
 				}),
 				n(126852, {	-- Wrangler Kravos

@@ -19,5 +19,16 @@ _.Toys =
 		})),
 		un(REMOVED_FROM_GAME, i(142542)),	-- Tome of Town Portal
 		un(REMOVED_FROM_GAME, i(143543)),	-- Twelve-String Guitar
+		-- 9.1.5
+		i(187958, {	-- PH - Banner of the Opportune
+			["u"] = NEVER_IMPLEMENTED,
+		}),
+		i(187957, {	-- PH - Banner of the Opportune
+			["u"] = NEVER_IMPLEMENTED,
+		}),
+		i(187959, {	-- PH - Banner of the Opportune
+			["u"] = NEVER_IMPLEMENTED,
+		}),
+		i(187834),	-- Tormented Banner of the Opportune
 	}),
 };

@@ -864,6 +864,24 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 162392 },	-- Willowblossom
 						["coord"] = { 44.0, 51.8, ARDENWEALD },
 					}),
+					-- 9.1.5
+					q(65168, {	-- My Wings Are Yours
+						["sourceQuests"] = { 62795 },	-- A Conduit for Good
+						["provider"] = { "n", 183278 },	-- Kleia
+						["coord"] = { 58.7, 36.2, SANCTUM_OF_BINDING },
+						["g"] = {
+							follower(1260),	-- Kleia
+						},
+					}),
+					q(65147, {	-- No Ordinary Steward
+						["sourceQuests"] = { 62795 },	-- A Conduit for Good
+						["provider"] = { "n", 183192 },	-- Mikanikos
+						["coord"] = { 59.5, 37.4, SANCTUM_OF_BINDING },
+						["g"] = {
+							follower(1258),	-- Mikanikos
+						},
+					}),
+						
 				})),
 			},
 		}),

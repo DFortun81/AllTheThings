@@ -186,6 +186,12 @@ _.Zones =
 						}),
 						i(181799),	-- Extra Large Hat
 						i(182702),	-- Phial of Black Muck Dye
+						i(187886, {	-- Technique: Mark of the Gloomstalker Dredbat
+							["cost"] = {
+								{ "i", 171840, 25 },	-- 25xPorous Stone
+							},
+							["timeline"] = { "added 9.1.5" },
+						}),
 					},
 				}),
 			}),

@@ -15,6 +15,7 @@ root("Promotions", bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		["timeline"] = { "added 9.1.0" },
 		["groups"] = {
 			mount(356488),	-- Sarge's Tale
+			ach(15323),	-- Sarge's Tale
 		},
 	}),
 }));

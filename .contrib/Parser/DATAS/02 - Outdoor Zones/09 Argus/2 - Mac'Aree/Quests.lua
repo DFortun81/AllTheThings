@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(905, {	-- Argus
-		m(882, {	-- Mac'Aree
+		m(882, {	-- Eredath
 			n(QUESTS, {
 				q(47220, {	-- A Beacon in the Dark
 					["sourceQuests"] = { 47219 },	-- A Vessel Made Ready
@@ -74,7 +74,7 @@ _.Zones =
 					["coord"] = { 59.5, 50.5, 882 },
 				}),
 				q(46818, {	-- Defenseless and Afraid
-					["sourceQuests"] = { 46815 },	-- Mac'Aree, Jewel of Argus
+					["sourceQuests"] = { 46815 },	-- Eredath, Jewel of Argus
 					["provider"] = { "n", 120533 },	-- Prophet Velen
 					["coord"] = { 54.5, 78.0, 882 },
 				}),
@@ -108,7 +108,7 @@ _.Zones =
 					["coord"] = { 59.5, 50.5, 882 },
 				}),
 				q(46834, {	-- Khazaduum, First of His Name
-					["sourceQuests"] = { 46815 },	-- Mac'Aree, Jewel of Argus
+					["sourceQuests"] = { 46815 },	-- Eredath, Jewel of Argus
 					["provider"] = { "n", 120533 },	-- Prophet Velen
 					["coord"] = { 54.5, 78.0, 882 },
 				}),
@@ -238,5 +238,5 @@ _.Zones =
 	}),
 };
 _.HiddenQuestTriggers = {
-	q(49204),	-- Arriving in Mac'Aree
+	q(49204),	-- Arriving in Eredath
 };

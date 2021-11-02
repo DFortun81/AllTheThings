@@ -1503,7 +1503,6 @@ app.L = {
 
 
 		[-10025] = app.asset("Event_dmf"),											-- Darkmoon Faire
-		[-10026] = "Interface\\Icons\\spell_holy_fistofjustice",					-- Brawler's Guild
 		[-10027] = "Interface\\Icons\\Paladin_Protection",							-- Collect
 		[-10028] = "Interface\\Icons\\Paladin_Protection",							-- Battle
 		[-10029] = "Interface\\Icons\\Paladin_Protection",							-- Level

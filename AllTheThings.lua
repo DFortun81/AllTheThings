@@ -2930,6 +2930,15 @@ subroutines = {
 			{"where", "itemID", itemID},				-- Which Container
 		}
 	end,
+	-- Korthian Armaments
+	["korthian_armaments"] = function(invtyp)
+		return {
+			{"select", "itemID", 187187 },				-- Korthian Armaments
+			{"pop"},									-- Discard the Item Header and acquire all of their children.
+			{"pop"},									-- Discard the Headers and acquire all of their children.
+			{"invtype", invtyp },						-- Only slot-specific
+		}
+	end,
 };
 -- Allows efficiently appending the content of multiple arrays (in sequence) onto the end of the provided array, or new empty array
 local ArrayAppend = app.ArrayAppend;
@@ -9233,13 +9242,15 @@ local armorTextures = {
 	"Interface/ICONS/INV_Icon_HeirloomToken_Armor01",
 	"Interface/ICONS/INV_Icon_HeirloomToken_Armor02",
 	"Interface/ICONS/Inv_leather_draenordungeon_c_01shoulder",
-	"Interface/ICONS/inv_mail_draenorquest90_b_01shoulder"
+	"Interface/ICONS/inv_mail_draenorquest90_b_01shoulder",
+	"Interface/ICONS/inv_leather_warfrontsalliance_c_01_shoulder"
 };
 local weaponTextures = {
 	"Interface/ICONS/INV_Icon_HeirloomToken_Weapon01",
 	"Interface/ICONS/INV_Icon_HeirloomToken_Weapon02",
 	"Interface/ICONS/inv_weapon_shortblade_112",
-	"Interface/ICONS/inv_weapon_shortblade_111"
+	"Interface/ICONS/inv_weapon_shortblade_111",
+	"Interface/ICONS/inv_weapon_shortblade_102",
 };
 local isWeapon = { 20, 29, 28, 21, 22, 23, 24, 25, 26, 50, 57, 34, 35, 27, 33, 32, 31 };
 local fields = {
@@ -9345,12 +9356,14 @@ app.CacheHeirlooms = function()
 
 	-- setup the armor tokens which will contain the upgrades for the heirlooms
 	local armorTokens = {
+		app.CreateItem(187997),	-- Eternal Heirloom Armor Casing
 		app.CreateItem(167731),	-- Battle-Hardened Heirloom Armor Casing
 		app.CreateItem(151614),	-- Weathered Heirloom Armor Casing
 		app.CreateItem(122340),	-- Timeworn Heirloom Armor Casing
 		app.CreateItem(122338),	-- Ancient Heirloom Armor Casing
 	};
 	local weaponTokens = {
+		app.CreateItem(187998),	-- Eternal Heirloom Scabbard
 		app.CreateItem(167732),	-- Battle-Hardened Heirloom Scabbard
 		app.CreateItem(151615),	-- Weathered Heirloom Scabbard
 		app.CreateItem(122341),	-- Timeworn Heirloom Scabbard
@@ -9364,7 +9377,6 @@ app.CacheHeirlooms = function()
 	for i,item in ipairs(weaponTokens) do
 		item.g = {};
 	end
-
 	-- for each cached heirloom, push a copy of itself with respective upgrade level under the respective upgrade token
 	local heirloom, upgrades, isWeapon;
 	local uniques = {};

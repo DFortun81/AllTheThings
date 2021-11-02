@@ -32,6 +32,12 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 164937 },	-- Runecarver
 					["coord"] = { 50.6, 57.2, 1912 },
 				}),
+				q(64850, {	-- Traversing Torghast
+					["provider"] = { "n", 181328 },	-- Ve'nish
+					["coord"] = { 35.5, 46.9, 1627 },
+					["isDaily"] = true,
+					["lvl"] = { 50, 59 },
+				}),
 				q(64210, {	-- The Box of Many Things
 				--	i think it actually might be available earlier?  the quest showed up before i turned in 'in darkness,' picked up while i was in the 'a paladin's soul' scenario.
 				--	'in darkness' doesn't LOOK like a breadcrumb quest (because it doesn't hide 'the box of many things' until after it's turned in, but if 'the box' IS available earlier then your character may get locked out of picking up 'in darkness' if they overlooked it... so it may be a breadcrumb.  i do not knoooooow
@@ -975,6 +981,10 @@ _.HiddenQuestTriggers = {
 		q(64182),	-- triggered when completing #64174, "Champion: Steadyhands"
 		q(64179),	-- Triggered when completing 64187 Kiaranyka's Search / 64171 Champion: Kiaranyka
 		q(64177),	-- Triggered when completing 64185 Assist Ella With ?/64169 Champion: Ella
+		
+		-- 9.1.5
+		--q(64848), Enter Torghast as lvl 56 NF Druid
+		--q(65308), Enter Torghast as lvl 56 NF Druid
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {

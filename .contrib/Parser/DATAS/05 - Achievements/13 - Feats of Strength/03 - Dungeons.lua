@@ -204,6 +204,9 @@ _.Achievements =
 			ach(15078, {	-- Shadowlands Keystone Master: Season Two
 				i(187525),	-- Soultwisted Deathwalker (MOUNT!)
 			}),
+			ach(15327, {	-- Tormented Hero: Shadowlands Season 2
+				title(451),	-- <Name>, the Tormented Hero
+			}),
 		}),
 	}),
 };

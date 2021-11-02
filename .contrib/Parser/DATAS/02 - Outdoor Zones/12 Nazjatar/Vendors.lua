@@ -210,7 +210,7 @@ _.Zones =
 					}),
 				},
 			}),
-			n(154653, {	-- Crafticus Mindbender <Nazjatar PvP Quartermaster>
+			n(154653, {	-- Tomas Riogain <Nazjatar PvP Quartermaster>
 				["coord"] = { 38.1, 55.4, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
