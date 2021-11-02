@@ -143,6 +143,7 @@ _.Holidays = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL},
 				ach(11913),		-- Don't Play With That In The House (2017)
 				ach(12850),		-- At Least You're Being Careful (2018)
 				ach(13927),		-- Crashin' Splashin' (2019)
+				ach(14931),		-- Flying Festivities (2020)
 			}),
 		}),
 	}),

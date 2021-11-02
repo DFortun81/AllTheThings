@@ -29,6 +29,7 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(11395)),		-- Diablo's 20th Anniversary
 			un(WOW_ANNIVERSARY, ach(10335)),		-- Did Someone Say...?
 			un(REMOVED_FROM_GAME, ach(11913)),		-- Don't Play With That In The House
+			un(REMOVED_FROM_GAME, ach(14931)),		-- Flying Festivities
 			un(REMOVED_FROM_GAME, ach(6061)),		-- Gaudy Winter Veil Sweater
 			un(REMOVED_FROM_GAME, ach(4782)),		-- Green Brewfest Stein
 			un(REMOVED_FROM_GAME, ach(11065)),		-- It All Makes Sense Now
