@@ -290,3 +290,9 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		},
 	}),
 })));
+_.HiddenQuestTriggers = {
+	n(WOD_HEADER, {
+		q(35533),	-- The Steamvault Reward Quest - Normal completion
+		q(35534),	-- The Steamvault Reward Quest - Heroic completion
+	}),
+};

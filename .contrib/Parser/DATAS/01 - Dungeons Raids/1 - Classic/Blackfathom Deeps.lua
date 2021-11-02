@@ -413,3 +413,9 @@ _.Instances = { tier(CLASSIC_TIER, {
 		},
 	}),
 })};
+_.HiddenQuestTriggers = {
+	n(WOD_HEADER, {
+		q(35929),	-- Blackfathom Deeps Reward Quest - Normal completion
+		q(35930),	-- Blackfathom Deeps (Bonus) Reward Quest
+	}),
+};

@@ -267,3 +267,9 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	}),
 }));
 -- #endif
+_.HiddenQuestTriggers = {
+	n(WOD_HEADER, {
+		q(35521),	-- The Black Morass Reward Quest - Normal completion
+		q(35522),	-- The Black Morass Reward Quest - Heroic completion
+	}),
+};

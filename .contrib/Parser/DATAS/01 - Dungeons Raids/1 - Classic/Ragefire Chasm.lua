@@ -145,3 +145,8 @@ _.Instances = { tier(CLASSIC_TIER, {
 		},
 	}),
 })};
+_.HiddenQuestTriggers = {
+	n(WOD_HEADER, {
+		q(35287),	-- Ragefire Chasm Reward Quest - Normal completion
+	}),
+};

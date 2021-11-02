@@ -263,3 +263,9 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		},
 	}),
 })));
+_.HiddenQuestTriggers = {
+	n(WOD_HEADER, {
+		q(35528),	-- The Mechanar Reward Quest - Normal completion
+		q(35529),	-- The Mechanar Reward Quest - Heroic completion
+	}),
+};

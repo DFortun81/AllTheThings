@@ -398,3 +398,8 @@ _.Instances = { tier(CLASSIC_TIER, {
 		},
 	}),
 })};
+_.HiddenQuestTriggers = {
+	n(WOD_HEADER, {
+		q(35582),	-- Sunken Temple Reward Quest - Normal completion
+	}),
+};

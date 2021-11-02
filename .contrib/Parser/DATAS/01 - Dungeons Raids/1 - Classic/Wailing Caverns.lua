@@ -145,6 +145,12 @@ _.Instances = { tier(CLASSIC_TIER, {
 		},
 	}),
 })};
+_.HiddenQuestTriggers = {
+	n(WOD_HEADER, {
+		q(35303),	-- Wailing Caverns Reward Quest — Normal completion
+		q(35307),	-- Wailing Caverns Bonus Objective
+	}),
+};
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(26874),	-- Awakening Naralex

@@ -350,3 +350,10 @@ for i,o in ipairs({
 	i(6096),	-- Apprentice's Shirt
 	i(6097),	-- Acolyte's Shirt
 }) do table.insert(THOMAS_YANCE_GROUPS, o); end
+
+_.HiddenQuestTriggers = {
+	n(WOD_HEADER, {
+		q(35542),	-- Old Hillsbrad Foothills Reward Quest - Normal completion
+		q(35543),	-- Old Hillsbrad Foothills Reward Quest - Heroic completion
+	}),
+};

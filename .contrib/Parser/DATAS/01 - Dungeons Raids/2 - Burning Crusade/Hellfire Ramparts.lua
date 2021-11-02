@@ -420,3 +420,9 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		},
 	}),
 })));
+_.HiddenQuestTriggers = {
+	n(WOD_HEADER, {
+		q(35572),	-- Hellfire Ramparts Reward Quest - Normal completion
+		q(35573),	-- Hellfire Ramparts Reward Quest - Heroic completion
+	}),
+};

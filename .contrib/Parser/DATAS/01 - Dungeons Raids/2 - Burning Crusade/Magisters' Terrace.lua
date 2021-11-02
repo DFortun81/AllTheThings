@@ -361,3 +361,9 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	}),
 }));
 -- #endif
+_.HiddenQuestTriggers = {
+	n(WOD_HEADER, {
+		q(35531),	-- Magisters' Terrace Reward Quest - Normal completion
+		q(35532),	-- Magisters' Terrace Reward Quest - Heroic completion
+	}),
+};

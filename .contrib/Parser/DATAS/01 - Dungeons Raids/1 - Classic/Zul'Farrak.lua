@@ -149,3 +149,9 @@ _.Instances = { tier(CLASSIC_TIER, {
 		},
 	}),
 })};
+_.HiddenQuestTriggers = {
+	n(WOD_HEADER, {
+		q(35588),	-- Zul'Farrak Reward Quest - Normal completion
+		q(35589),	-- Zul'Farrak Bonus Reward
+	}),
+};

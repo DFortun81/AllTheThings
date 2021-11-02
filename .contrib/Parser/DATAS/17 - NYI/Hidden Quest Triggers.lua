@@ -1029,49 +1029,6 @@ _.HiddenQuestTriggers = {
 		q(26741),	-- REUSE - Northern Stranglethorn - triggered after completing "The Hunt" (questID 26340)
 		q(236),		-- Fueling the Demolishers (auto-completed removed quest)
 
-		--	DUNGEONS
-		q(35929),	-- Blackfathom Deeps Reward Quest
-		q(35930),	-- Blackfathom Deeps (Bonus) Reward Quest
-		q(35903),	-- Blackrock Depths (Detention Bonus) Reward Quest
-		q(35902),	-- Blackrock Depths (Upper City) Reward Quest
-		q(35899),	-- Blackrock Depths (Detenction Block) reward quest
-		q(35901),	-- Blackrock Depths (Detention Bonus) reward quest
-		q(35904),	-- Blackrock Depths (Everything) reward quest
-		q(35586),	-- Deadmines normal completion
-		q(35890),	-- Dire Maul (Warpwood Quarter) reward quest
-		q(35891),	-- Dire Maul (Capital Gardens) reward quest
-		q(35892),	-- Dire Maul (Gordok Commons) reward quest
-		q(35894),	-- Dire Maul (Bonus) Reward Quest
-		q(35956),	-- Dire Maul (Everything) reward quest
-		q(35601),	-- Gnomeregan Reward Quest - received after killing Mekgineer Thermaplugg
-		q(35602),	-- Gnomeregan Bonus Objective Reward Quest - received after killing Grubbis
-		q(36867),	-- Lower Blackrock Spires Bonus Reward Quest — killing Urok Doomhowl
-		q(35888),	-- Maraudon (Everything) Reward Quest — dungeon completion
-		q(35885),	-- Maraudon (Wicked Grotto) reward quest
-		q(35886),	-- Maraudon (Foulspore Cavern) reward quest
-		q(35887),	-- Maraudon (Earth Song Falls) reward quest
-		q(35889),	-- Maraudon (Bonus) reward quest
-		q(35287),	-- Ragefire Chasm
-		q(35598),	-- Razorfen Downs Reward Quest — dungeon completion
-		q(35615),	-- Razorfen Kraul Reward Quest — dungeon completion
-		q(35606),	-- Scarlet Halls normal completion
-		q(35607),	-- Scarlet Halls normal bonus objective complete (Kill Armsmaster Harlan)
-		q(35612),	-- Scarlet Monastery normal completion
-		q(35305),	-- Shadowfang Keep normal bonus objective comlete
-		q(35304),	-- Shadowfang Keep normal dungeon completion
-		q(35563),	-- Stratholme - Main Gate - Reward Quest
-		q(35564),	-- Stratholme - Main Gate - Bonus Objective Reward Quest
-		q(35575),	-- Stratholme - Service Entrance Bonus Objective Reward Quest
-		q(35574),	-- Stratholme - Service Entrance Reward Quest
-		q(35582),	-- Sunken Temple Reward Quest
-		q(35288),	-- The Stockade
-		q(35605),	-- Uldaman dungeon completion (Kill Archaedas)
-		q(35610),	-- Uldaman bonus objective complete
-		q(35307),	-- Wailing Caverns Bonus Objective
-		q(35303),	-- Wailing Caverns Reward Quest — Naralax awakening ritual complete
-		q(35588),	-- Zul'Farrak Reward Quest — end-of-dungeon reward granted
-		q(35589),	-- Zul'Farrak Bonus Reward
-
 		-------------------
 		---   OUTLAND   ---
 		-------------------
@@ -1082,39 +1039,6 @@ _.HiddenQuestTriggers = {
 		q(12494),	-- FLAG: Riding Training Advertisement
 
 		--	DUNGEONS
-		q(35544),	-- Auchinai Crypts normal completion
-		q(35545),	-- Auchinai Crypts heroic completion
-		q(35572),	-- Hellfire Ramparts normal completion
-		q(35573),	-- Hellfire Ramparts heroic completion
-		q(35531),	-- Magisters' Terrace normal completion
-		q(35532),	-- Magisters' Terrace heroic completion
-		q(35546),	-- Mana Tombs normal completion
-		q(35547),	-- Mana Tombs heroic completion
-		q(35548),	-- Mana-Tombs Bonus Objective (Yor)
-		q(35539),	-- Sethekk Halls normal completion
-		q(35540),	-- Sethekk Halls heroic completion
-		q(35517),	-- Shattered Halls normal completion
-		q(35518),	-- Shattered Halls heroic completion
-		q(35535),	-- The Arcatraz normal completion
-		q(35538),	-- The Arcatraz heroic completion
-		q(35521),	-- The Black Morass normal completion
-		q(35522),	-- The Black Morass heroic completion
-		q(35565),	-- The Blood Furnace normal completion
-		q(35566),	-- The Blood Furnace heroic completion
-		q(35525),	-- The Botanica normal completion
-		q(35526),	-- The Botanica heroic completion
-		q(35542),	-- The Escape From Durnholde normal completion
-		q(35543),	-- The Escape From Durnholde heroic completion
-		q(35528),	-- The Mechanar normal completion
-		q(35529),	-- The Mechanar heroic completion
-		q(35519),	-- The Shadow Labyrinth normal completion
-		q(35520),	-- The Shadow Labyrinth heroic completion
-		q(35561),	-- The Slave Pens normal completion
-		q(35562),	-- The Slave Pens heroic completion
-		q(35533),	-- The Steamvault normal completion
-		q(35534),	-- The Steamvault heroic completion
-		q(35559),	-- The Underbog normal completion
-		q(35560),	-- The Underbog heroic completion
 		q(24887, {	-- LFGDungeons - Burning Crusade - Normal Random - 1st
 			["_drop"] = { "g" },	-- drop Otherworldly Satchel of Helpful Goods
 		}),
@@ -1384,7 +1308,6 @@ _.HiddenQuestTriggers = {
 		q(31628),	-- Scholomance Challenge Mode - Consolation (Nth)
 		q(31649),	-- Scholomance Challenge Mode - Gold Addition (Nth)
 		q(31642),	-- Scholomance Challenge Mode - Silver Addition (Nth)
-		q(35594),	-- Scholomance normal completion
 		q(35595),	-- Scholomance heroic completion
 		q(31632),	-- Shado-Pan Monastery Challenge Mode - Bronze Addition (Nth)
 		q(31625),	-- Shado-Pan Monastery Challenge Mode - Consolation (Nth)
@@ -1536,7 +1459,6 @@ _.HiddenQuestTriggers = {
 		q(34538),	-- Iron Docks Challenge Mode - Gold Addition (Nth)
 		q(34537),	-- Iron Docks Challenge Mode - Silver Addition (Nth)
 		q(35958),	-- Iron Docks Reward Quest
-		q(36866),	-- Lower Blackrock Spire cleared
 		q(34545),	-- Shadowmoon Burial Grounds Challenge Mode - Bronze Addition (Nth)
 		q(34528),	-- Shadowmoon Burial Grounds Challenge Mode - Consolation (Nth)
 		q(34547),	-- Shadowmoon Burial Grounds Challenge Mode - Gold Addition (Nth)

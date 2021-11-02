@@ -351,3 +351,8 @@ _.Instances = { tier(CLASSIC_TIER, {
 		},
 	}),
 })};
+_.HiddenQuestTriggers = {
+	n(WOD_HEADER, {
+		q(35612),	-- Scarlet Monastery Reward Quest - Normal completion
+	}),
+};

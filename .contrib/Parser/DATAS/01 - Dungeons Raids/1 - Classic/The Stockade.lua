@@ -112,6 +112,11 @@ _.Instances = { tier(CLASSIC_TIER, {
 		},
 	}),
 })};
+_.HiddenQuestTriggers = {
+	n(WOD_HEADER, {
+		q(35288),	-- Stockade Reward Quest - Normal completion
+	}),
+};
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-10002, {	-- Classic
 		inst(238, {	-- The Stockade

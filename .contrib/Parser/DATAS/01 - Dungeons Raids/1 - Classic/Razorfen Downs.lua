@@ -253,3 +253,8 @@ _.Instances = { tier(CLASSIC_TIER, {
 		},
 	}),
 })};
+_.HiddenQuestTriggers = {
+	n(WOD_HEADER, {
+		q(35598),	-- Razorfen Downs Reward Quest - Normal completion
+	}),
+};

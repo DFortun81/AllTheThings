@@ -243,3 +243,8 @@ _.Instances = { tier(CLASSIC_TIER, {
 		},
 	}),
 })};
+_.HiddenQuestTriggers = {
+	n(WOD_HEADER, {
+		q(35586),	-- Deadmines Reward Quest - Normal completion
+	}),
+};

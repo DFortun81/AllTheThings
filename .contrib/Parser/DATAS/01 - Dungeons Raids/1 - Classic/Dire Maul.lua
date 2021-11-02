@@ -721,3 +721,12 @@ _.Instances = { tier(CLASSIC_TIER, {
 		},
 	}),
 })};
+_.HiddenQuestTriggers = {
+	n(WOD_HEADER, {
+		q(35890),	-- Dire Maul (Warpwood Quarter) Reward Quest - Normal completion
+		q(35891),	-- Dire Maul (Capital Gardens) Reward Quest - Normal completion
+		q(35892),	-- Dire Maul (Gordok Commons) Reward Quest - Normal completion
+		q(35894),	-- Dire Maul (Bonus) Reward Quest
+		q(35956),	-- Dire Maul (Everything) Reward Quest
+	}),
+};

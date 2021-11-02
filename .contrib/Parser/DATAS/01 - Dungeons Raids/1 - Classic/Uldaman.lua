@@ -497,3 +497,9 @@ _.Instances = { tier(CLASSIC_TIER, {
 		},
 	}),
 })};
+_.HiddenQuestTriggers = {
+	n(WOD_HEADER, {
+		q(35605),	-- Uldaman Reward Quest - Normal completion
+		q(35610),	-- Uldaman Bonus Reward
+	}),
+};

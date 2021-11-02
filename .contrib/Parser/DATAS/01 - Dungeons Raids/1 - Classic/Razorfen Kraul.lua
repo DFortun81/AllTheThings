@@ -309,3 +309,8 @@ _.Instances = { tier(CLASSIC_TIER, {
 		},
 	}),
 })};
+_.HiddenQuestTriggers = {
+	n(WOD_HEADER, {
+		q(35615),	-- Razorfen Kraul Reward Quest - Normal completion
+	}),
+};
