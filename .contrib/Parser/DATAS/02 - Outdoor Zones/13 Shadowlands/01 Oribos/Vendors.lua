@@ -13,7 +13,9 @@ _.Zones =
 						i(180970, {	-- Teregeer Crystal
 							["description"] = "Take this to Ta'ruca in Revendreth |cffffffff(51.1, 78.5)|r.",
 						}),
-						i(186684),	-- Memories of Brigther Times
+						i(186684, {	-- Memories of Brigther Times
+							["collectible"] = false,
+						}),
 						i(188152),	-- Gateway Control Shard
 					},
 				}),
