@@ -88,6 +88,10 @@ _.ExpansionFeatures =
 						["provider"] = { "i", 182176 },	-- Shadowstalker Soul
 						["crs"] = { 168647 },	-- Valfir the Unrelenting
 					}),
+					pvp(q(63604, {	-- Shoveltusk Soul
+						["description"] = "Drops from PvP.",			-- Comp Stomp 2 Nov 2021
+						["provider"] = { "i", 185048 },	-- Shoveltusk Soul
+					})),
 					q(62436, {	-- Shrieker Soul
 						["provider"] = { "i", 182185 },	-- Shrieker Soul
 						["crs"] = { 164501 },	-- Mistcaller
@@ -171,9 +175,6 @@ _.ExpansionFeatures =
 					}),
 					q(64995, {	-- Saurid Soul
 						["provider"] = { "i", 187878 },	-- Saurid Soul
-					}),
-					q(63604, {	-- Shoveltusk Soul
-						["provider"] = { "i", 185048 },	-- Shoveltusk Soul
 					}),
 					q(64988, {	-- Snake Soul
 						["provider"] = { "i", 187862 },	-- Snake Soul
