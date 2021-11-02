@@ -9380,9 +9380,8 @@ app.CacheHeirlooms = function()
 
 			heirloom = app.SearchForObject("itemID", itemID);
 			if heirloom then
-				upgrades = GetDataSubMember("HeirloomUpgradeLevels", itemID) or C_Heirloom_GetHeirloomMaxUpgradeLevel(itemID);
+				upgrades = C_Heirloom_GetHeirloomMaxUpgradeLevel(itemID);
 				if upgrades then
-					SetDataSubMember("HeirloomUpgradeLevels", itemID, upgrades);
 					isWeapon = heirloom.isWeapon;
 
 					local heirloomHeader;
@@ -20508,13 +20507,9 @@ app.events.VARIABLES_LOADED = function()
 		accountWideData.Toys = data;
 	end
 
-	-- Check to see if we have a leftover ItemDB cache
-	GetDataMember("HeirloomUpgradeLevels", {});
-
 	-- Clean up settings
 	local oldsettings = {};
 	for i,key in ipairs({
-		"HeirloomUpgradeLevels",
 		"LocalizedCategoryNames",
 		--"LocalizedFlightPathDB",
 		"LockedWindows",
