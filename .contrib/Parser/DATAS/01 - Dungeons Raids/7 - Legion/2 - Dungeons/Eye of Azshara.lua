@@ -289,7 +289,7 @@ _.Instances = { tier(LEGION_TIER, {
 						i(137379),	-- Tempestbinder's Crystal
 					})),
 				},
-			})
+			}),
 			-- #if AFTER 9.1.5
 			d(24, {	-- Timewalking
 				["sym"] = {	-- link in Timewalking content

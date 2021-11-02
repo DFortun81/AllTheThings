@@ -266,7 +266,7 @@ _.Instances = { tier(LEGION_TIER, {
 						i(137549),	-- Shade of the Vault
 					})),
 				},
-			})
+			}),
 			-- #if AFTER 9.1.5
 			d(24, {	-- Timewalking
 				["sym"] = {	-- link in Timewalking content
