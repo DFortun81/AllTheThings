@@ -646,8 +646,7 @@ for key,value in pairs({
 		--TODO: [-86] = "Library",
 		--TODO: [-87] = "Armory",
 		--TODO: [-88] = "Cathedral",
-	--TODO: Garrison Note: These will be changed into a new class soon(TM)
-		--[-99] = select(2,C_Garrison.GetBuildingInfo(65)),			-- Stables
+	-- Garrisons
 		--TODO: [-99] = "Buildings",
 	-- Alliance [Swaps based on faction ONLY after a reloadui]
 		--TODO: [-130] = DUNGEON_FLOOR_NIGHTMARERAID8.." "..GetSpellInfo(133137),	-- Duskwood Active
@@ -689,6 +688,8 @@ for key,value in pairs({
 		--TODO: [-488] = "War Chest",								-- Daily War Chest
 	-- Tarot Cards
 		--TODO: [-491] = "Tarot Cards",
+	-- Misc
+		--TODO: [-493] = "Broken Mission Loot",						-- Broken Mission Loot
 	-- Blizzard Events and Anniversaries
 		--TODO: [-520] = "Expansion Pre-Launch",					-- Expansion Pre-Launch
 		--TODO: [-522] = EXPANSION_NAME2..": Zombie Infestation",	-- Wrath of the Lich King: Zombie Infestation

@@ -542,6 +542,7 @@ local L = app.L;
 		L["EXPANSION_ID"] = "资料片ID"
 		L["FILTER_ID"] = "滤镜ID"
 		L["FOLLOWER_ID"] = "追随者ID";
+		L["ILLUSION_ID"] = "幻象ID"
 		L["INSTANCE_ID"] = "副本ID"
 		L["ITEM_ID"] = "物品ID"
 		L["FACTION_ID"] = "阵营ID"
@@ -558,7 +559,6 @@ local L = app.L;
 		L["SPELL_ID"] = "法术ID"
 		L["TITLE_ID"] = "头衔ID"
 		L["TOY_ID"] = "玩具ID"
-		L["ILLUSION_ID"] = "幻象ID"
 		L["VISUAL_ID"] = "外观ID"
 		L["iLvl"] = "物品等级"
 
@@ -687,8 +687,7 @@ for key,value in pairs({
 		--TODO: [-86] = "Library",
 		--TODO: [-87] = "Armory",
 		--TODO: [-88] = "Cathedral",
-	--TODO: Garrison Note: These will be changed into a new class soon(TM)
-		--[-99] = select(2,C_Garrison.GetBuildingInfo(65)),			-- Stables
+	-- Garrisons
 		[-99] = "建筑",												-- Buildings
 	-- Alliance [Swaps based on faction ONLY after a reloadui]
 		[-130] = "暮色森林 "..GetSpellInfo(133137),					-- Duskwood Active
@@ -731,6 +730,8 @@ for key,value in pairs({
 		[-488] = "战争宝箱",											-- Daily War Chest
 	-- Tarot Cards
 		[-491] = "塔罗牌",											-- Tarot Cards
+	-- Misc
+		--TODO: [-493] = "Broken Mission Loot",						-- Broken Mission Loot
 	-- Blizzard Events and Anniversaries
 		[-520] = "资料片前夕",										-- Expansion Pre-Launch
 		[-522] = "巫妖王之怒：Zombie Infestation",					-- Wrath of the Lich King: Zombie Infestation

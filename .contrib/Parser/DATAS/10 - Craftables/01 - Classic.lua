@@ -1236,9 +1236,21 @@ _.Craftables = { tier(CLASSIC_TIER, {
 		filter(23, {	-- 1H Maces
 			i(6360, {	-- Steelscale Crushfish
 				-- #if AFTER CATA
-				["description"] = "Can be caught in Darkmoon Island, Hillsbrad Foothills, Northern Stranglethorn, and Wetlands in open water.",
+				["description"] = "Can be caught in Ashenvale, Darkmoon Island, Hillsbrad Foothills, Northern Stranglethorn, and Wetlands in open water.",
+				["maps"] = {
+					ASHENVALE,
+					407,	-- Darkmoon Island
+					HILLSBRAD_FOOTHILLS,
+					NORTHERN_STRANGLETHORN,
+					WETLANDS,
+				},
 				-- #else
-				["description"] = "Can be caught in Hillsbrad Foothills, Stranglethorn Vale and the Wetlands in open water.",
+				["description"] = "Can be caught in Ashenvale, Hillsbrad Foothills, and the Wetlands in open water.",
+				["maps"] = {
+					ASHENVALE,
+					HILLSBRAD_FOOTHILLS,
+					WETLANDS,
+				},
 				-- #endif
 			}),
 		}),

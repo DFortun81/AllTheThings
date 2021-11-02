@@ -279,6 +279,7 @@ _.Zones =
 					["g"] = {
 						i(180393),	-- Depraved Darkblade's Epaulets
 						i(180394),	-- Envy-Laced Leggings
+						i(180386),	-- Herbalist's Pouch
 					},
 				}),
 				o(351543, {	-- Secret Treasure
@@ -420,6 +421,7 @@ _.Zones =
 					--},
 					["g"] = {
 						i(180393),	-- Depraved Darkblade's Epaulets
+						i(180386),	-- Herbalist's Pouch
 					},
 				}),
 			}),

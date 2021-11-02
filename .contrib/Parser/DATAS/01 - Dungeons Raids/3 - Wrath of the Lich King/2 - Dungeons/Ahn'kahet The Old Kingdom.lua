@@ -266,3 +266,10 @@ _.Instances = { tier(WOTLK_TIER, {
 		},
 	}),
 })};
+_.HiddenQuestTriggers = {
+	n(WOD_HEADER, {
+		q(35489),	-- Ahn'kahet: The Old Kingdom Reward Quest - Normal completion
+		q(35490),	-- Ahn'kahet: The Old Kingdom Reward Quest - Heroic completion
+		q(35493),	-- Ahn'kahet: The Old Kingdom Bonus Reward - kill Amanitar (Heroic only)
+	}),
+};
