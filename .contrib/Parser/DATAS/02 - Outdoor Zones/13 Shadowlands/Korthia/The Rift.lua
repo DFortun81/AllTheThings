@@ -128,6 +128,7 @@ _.Zones =
 								179735,	-- Torglluun
 							}
 						}),
+						i(187006),	-- Recipe: Twilight Tea
 					}),
 				},
 			}),

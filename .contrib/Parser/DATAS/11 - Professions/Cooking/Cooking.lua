@@ -2363,7 +2363,11 @@ profession(COOKING, {
 				{
 					["name"] = "Sweet Silvergill Sausages",
 					["recipeID"] = 308425
-				}
+				},
+				{
+					["name"] = "Twilight Tea",
+					["recipeID"] = 354764
+				},
 			}
 		}
 	})),
