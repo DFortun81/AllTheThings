@@ -36,6 +36,7 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 181328 },	-- Ve'nish
 					["coord"] = { 35.5, 46.9, 1627 },
 					["isDaily"] = true,
+					["timeline"] = { "added 9.1.5" },
 					["lvl"] = { 50, 59 },
 				}),
 				q(64210, {	-- The Box of Many Things

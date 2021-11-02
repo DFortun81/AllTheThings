@@ -818,6 +818,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 62920 },	-- A Conduit For Change
 						["provider"] = { "n", 161977 },	-- General Draven
 						["coord"]  = { 46.1, 14.9, SINFALL_REACHES },
+						["timeline"] = { "added 9.1.5" },
 						["g"] = {
 							follower(1209),	-- General Draven
 						},
@@ -826,6 +827,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 62920 },	-- A Conduit For Change
 						["provider"] = { "n", 161979 },	-- Theotar
 						["coord"]  = { 50.5, 18, SINFALL_REACHES },
+						["timeline"] = { "added 9.1.5" },
 						["g"] = {
 							follower(1210),	-- Theotar
 						},

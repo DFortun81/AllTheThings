@@ -869,6 +869,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 62795 },	-- A Conduit for Good
 						["provider"] = { "n", 183278 },	-- Kleia
 						["coord"] = { 58.7, 36.2, SANCTUM_OF_BINDING },
+						["timeline"] = { "added 9.1.5" },
 						["g"] = {
 							follower(1260),	-- Kleia
 						},
@@ -877,6 +878,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 62795 },	-- A Conduit for Good
 						["provider"] = { "n", 183192 },	-- Mikanikos
 						["coord"] = { 59.5, 37.4, SANCTUM_OF_BINDING },
+						["timeline"] = { "added 9.1.5" },
 						["g"] = {
 							follower(1258),	-- Mikanikos
 						},

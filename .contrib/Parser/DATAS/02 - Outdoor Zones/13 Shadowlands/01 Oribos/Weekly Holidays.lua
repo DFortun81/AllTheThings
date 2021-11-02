@@ -81,6 +81,19 @@ _.Zones =
 					["coord"] = { 64.9, 32.7, ORIBOS },
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
+				-- PTR 9.1.5
+				q(64970, {	-- Timeworn Keystone: The Broken Isle
+					["provider"] = { "n", 178804 },	-- Ta'hsup
+					["coord"] = { 65.2, 35.1, ORIBOS },
+					["timeline"] = { "added 9.1.5" },
+					["repeatable"] = true,
+				}),
+				q(64709, {	-- A Fel Path Through Time
+					["provider"] = { "n", 166307 },	-- Caretaker Kah-Toll
+					["coord"] = { 65, 32.7, ORIBOS },
+					["timeline"] = { "added 9.1.5" },
+					["repeatable"] = true,
+				}),
 			}),
 		}),
 	}),

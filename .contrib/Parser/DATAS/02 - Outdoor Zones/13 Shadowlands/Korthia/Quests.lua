@@ -924,6 +924,7 @@ _.Zones =
 				q(65266, {	-- Lost Research
 					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 					["coord"] = { 62.8, 22.6, KORTHIA },
+					["timeline"] = { "added 9.1.5" },
 					["isWeekly"] = true,
 				}),
 				q(63937, {	-- Nasty, Big, Pointy Teeth
@@ -960,10 +961,12 @@ _.Zones =
 				q(65145, {	-- Relic Clues
 					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 					["coord"] = { 62.8, 22.6, KORTHIA },
+					["timeline"] = { "added 9.1.5" },
 				}),
 				q(65146, {	-- Relic Hunter
 					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 					["coord"] = { 62.8, 22.6, KORTHIA },
+					["timeline"] = { "added 9.1.5" },
 				}),
 				q(63954, {	-- Sealed Secrets
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
