@@ -1407,7 +1407,7 @@ for key,value in pairs({
 	[218437] = "Der Fluch und das Schweigen",	-- The Curse and the Silence
 	[218438] = "Das Zeitalter der Hundert Könige",	-- Age of a Hundred Kings
 	[218750] = "Arbeitsaufträge",	-- Work Orders
-	[220641] = "Donnerfürstentruhe",	-- Thunderlord's Cache
+	[220641] = "Donnerfürstentruhe",	-- Thunderlord Cache
 	[220820] = "|cFFFFFFFFSchritt 6:|r Seite 1127",	-- |cFFFFFFFFStep 6:|r Page 1127
 	[220821] = "|cFFFFFFFFSchritt 5:|r Seite 845",	-- |cFFFFFFFFStep 5:|r Page 845
 	[220832] = "Versunkener Schatz",	-- Sunken Treasure

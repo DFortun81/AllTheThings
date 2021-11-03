@@ -1394,7 +1394,7 @@ for key,value in pairs({
 	[218437] = "\"Проклятие и молчание\"",	-- The Curse and the Silence
 	[218438] = "\"Эпоха сотни королей\"",	-- Age of a Hundred Kings
 	[218750] = "Заказы",	-- Work Orders
-	[220641] = "Тайник клана Громоборцев",	-- Thunderlord's Cache
+	[220641] = "Тайник клана Громоборцев",	-- Thunderlord Cache
 	[220820] = "|cFFFFFFFFШаг 6:|r Страница 1127",	-- |cFFFFFFFFStep 6:|r Page 1127
 	[220821] = "|cFFFFFFFFШаг 5:|r Страница 845",	-- |cFFFFFFFFStep 5:|r Page 845
 	[220832] = "Затонувшее сокровище",	-- Sunken Treasure

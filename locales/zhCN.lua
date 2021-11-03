@@ -1463,7 +1463,7 @@ for key, value in pairs({
 	[218437] = "诅咒与沉默",	-- The Curse and the Silence
 	[218438] = "百王时代",	-- Age of a Hundred Kings
 	[218750] = "产品订单",	-- Work Orders
-	--TODO: [220641] = "Thunderlord's Cache",	-- Thunderlord's Cache
+	--TODO: [220641] = "Thunderlord Cache",	-- Thunderlord Cache
 	[220820] = "|cFFFFFFFF第6步:|r 第1127页",	-- |cFFFFFFFFStep 6:|r Page 1127
 	[220821] = "|cFFFFFFFF第5步:|r 第845页",	-- |cFFFFFFFFStep 5:|r Page 845
 	[220832] = "沉没的宝箱",	-- Sunken Treasure
@@ -2643,7 +2643,7 @@ for key, value in pairs({
 	--TODO: [330170] = "Hozen Totem",	-- Hozen Totem
 	--TODO: [330183] = "Irontide Lockbox",	-- Irontide Lockbox
 	[330627] = "危险标志",	-- Danger Sign
-	--TODO: [332220] = "Glowing Arcane Trunk",	-- Glowing Arcane Trunk
+	[332220] = "发光的奥能宝箱",	-- Glowing Arcane Trunk	--TODO: This was manually translated
 	[332568] = "水晶猫咪雕像",	-- Crystalline Cat Figurine
 	[332569] = "水晶猫咪雕像",	-- Crystalline Cat Figurine
 	[332570] = "水晶猫咪雕像",	-- Crystalline Cat Figurine
