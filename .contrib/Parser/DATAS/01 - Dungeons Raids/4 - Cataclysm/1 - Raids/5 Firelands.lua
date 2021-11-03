@@ -38,15 +38,15 @@ _.Instances = { tier(CATA_TIER, {
 						["provider"] = { "n", 53115 },	-- Molten Lord
 						["isBreadcrumb"] = true,    -- for A Legendary Engagement
 					})),
-					a(q(29129, {	-- A Legendary Engagement [A]
-						["description"] = "This is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
-						["provider"] = { "n", 52382 },	-- Ziradormi
-						["sourceQuests"] = { 29453 },	-- Your Time Has Come
-					})),
-					h(q(29132, {	-- A Legendary Engagement [H]
+					h(q(29129, {	-- A Legendary Engagement [H]
 						["description"] = "This is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
 						["provider"] = { "n", 52382 },	-- Ziradormi
 						["sourceQuests"] = { 29452 },	-- Your Time Has Come
+					})),
+					a(q(29132, {	-- A Legendary Engagement [A]
+						["description"] = "This is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
+						["provider"] = { "n", 52382 },	-- Ziradormi
+						["sourceQuests"] = { 29453 },	-- Your Time Has Come
 					})),
 					q(29134, {	-- A Wrinkle in Time
 						["provider"] = { "n", 15192 },	-- Anachronos

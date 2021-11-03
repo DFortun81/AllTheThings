@@ -48,7 +48,7 @@ _.Zones =
 					},
 				}),
 				i(187935, {	-- Technique: Mark of the Midnight Runestag
-					["description"] = "Drops from Runestags.",
+					["cr"] = 165907,	-- Runestag
 					["timeline"] = { "added 9.1.5" },
 				}),
 			}),

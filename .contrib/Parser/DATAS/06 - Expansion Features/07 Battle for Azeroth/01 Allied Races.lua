@@ -1705,3 +1705,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 	}),
 });
+
+_.HiddenQuestTriggers = {
+	q(54868),	-- During Heritage for Taurens in the End
+};

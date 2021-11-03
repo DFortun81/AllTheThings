@@ -62,7 +62,7 @@ _.Zones =
 					},
 				}),
 				n(73171,  {	-- Champion of the Black Flame
-					["description"] = "This rare pats all the way down the pathway from the upper bridge to the lower one.",
+					["description"] = "This rare patrols all the way down the pathway from the upper bridge to the lower one.",
 					["questID"] = 33299,
 					["isDaily"] = true,
 					["coords"] = {

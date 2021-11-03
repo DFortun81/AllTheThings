@@ -130,6 +130,13 @@ _.ExpansionFeatures =
 							i(178882),	-- Prideful Spirit Revendreth(Uncommon)
 						},
 					}),
+					q(65090, {	-- Return More Lost Souls
+						["sourceQuests"] = { 62860 },	-- Return Lost Souls (20 soul version)
+						["provider"] = { "n", 158553 },	-- Flutterby
+						["coord"] = { 33.9, 43.5, ARDENWEALD },
+						["isRepeatable"] = true,
+						["timeline"] = { "added 9.1.5" },
+					}),
 					q(62536, {	-- The Lost of Teldrassil
 						-- TODO: figure out sourceQuests. This quest just randomly showed up for me after daily reset on a Saturday.
 						-- i *think* this requires doing "their new home" and then waiting for a daily (or weekly?) reset.  it was the last campaign quest i did, and the next day (which was a weekly reset day) this quest was there

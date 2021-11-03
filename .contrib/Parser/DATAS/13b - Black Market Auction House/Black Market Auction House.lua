@@ -2,8 +2,14 @@
 --     B L A C K   M A R K E T   M O D U L E       --
 -----------------------------------------------------
 
-root("BlackMarket", bubbleDown({ ["u"] = BLACK_MARKET, },{
-	n(VENDORS, {
+root("BlackMarket", {
+	n(VENDORS, bubbleDown({ 
+			["sym"] = {
+				{"select", "headerID", -94},		-- Select BMAH header
+				{"pop"},							-- Pop the header
+				{"exclude", "headerID", VENDORS },	-- Not the Vendor Header
+			},
+		},{
 		n(142062, {	-- Madam Gosu [Boralus - Alliance]
 			["coord"] = { 56.71, 46.32, BORALUS },
 		}),
@@ -25,7 +31,9 @@ root("BlackMarket", bubbleDown({ ["u"] = BLACK_MARKET, },{
 				{ 37.2, 35.8, LUNARFALL },
 			},
 		}),
-	}),
+	})),
+});
+root("BlackMarket", bubbleDown({ ["u"] = BLACK_MARKET, },{
 	f(113, {	-- Bags
 		i(183634),	-- Papa's Mint Condition Bag (9.1)
 		}),

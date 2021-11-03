@@ -1060,8 +1060,8 @@ _.HiddenQuestTriggers = {
 	q(60873),	-- Buying Bag of Sin Stones (180442) from Atticus
 -- Enchants
 	q(61187),	-- Enchant from rank 3 anima conductor (spellid=335042)
-	--q(61185),	-- Enchant from rank 3 anima conductor (spellid=335040)
-	--q(61186),	-- Enchant from rank 3 anima conductor (spellid=335041)
+	q(61185),	-- Enchant from rank 3 anima conductor (spellid=335040)
+	q(61186),	-- Enchant from rank 3 anima conductor (spellid=335041)
 
 -- Stitched Set (armor-type agnostic it seems by slot rewarded)
 	q(63392),	-- Gloves (182502) / Stranglers (182493)
@@ -1074,6 +1074,7 @@ _.HiddenQuestTriggers = {
 -- Duty-Bound Set
 	q(63404),	-- Gloves Leather
 	q(63409),	-- Waist Cloth
+	q(63402),	-- Conjurers Leggings
 
 -- Anima Conductor
 	q(60774),	-- Theater of Pain (lvl 3)

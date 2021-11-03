@@ -58,12 +58,12 @@ _.Zones =
 						["coord"] = { 34.7, 55.7, ORIBOS },	-- Ring of Fates
 					}),
 					q(65033, {	-- Observing Victory
-						["description"] = "This is only available while leveling",
+						["sourceQuests"] = { 65032 },	-- Battleground Observers
 						["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 						["isDaily"] = true,
 						["coord"] = { 34.7, 56.5, ORIBOS },
-						["lvl"] = { 50, 59 },
 						["timeline"] = { "added 9.1.5" },
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
 						["sym"] = {
 							{"select", "mapID", BASTION },
 							{"pop"},
@@ -98,6 +98,14 @@ _.Zones =
 						["isWeekly"] = true,
 						["coord"] = { 34.7, 56.5, ORIBOS },
 						["_drop"] = { "g" },	-- drop anima trash
+					}),
+					q(65034, {	-- Return to Oribos
+						["sourceQuests"] = { 65033 },	-- Observing Victory
+						["provider"] = { "n", 174922 },	-- Strategist Zo'rak
+						["coord"] = { 34.7, 56.5, ORIBOS },
+						["isBreadcrumb"] = true,
+						["timeline"] = { "added 9.1.5" },
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					}),
 				})),
 				q(60151, {	-- A Doorway Through the Veil
@@ -215,6 +223,13 @@ _.Zones =
 					["sourceQuests"] = { 60148 },	-- No Place for the Living
 					["provider"] = { "n", 167486 },	-- Tal-Inara
 					["coord"] = { 40.5, 65.9, ORIBOS },
+				}),
+				q(65032, {	-- Battleground Observers
+					["provider"] = { "n", 167486 },	-- Tal-Inara
+					["coord"] = { 40.5, 65.9, ORIBOS },
+					["isBreadcrumb"] = true,
+					["timeline"] = { "added 9.1.5" },
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 				}),
 				q(64007, {	-- Charge of the Covenants
 					["sourceQuests"] = { 63665 },	-- Opening to Oribos

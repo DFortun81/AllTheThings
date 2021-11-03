@@ -813,6 +813,13 @@ _.ExpansionFeatures =
 						["isWeekly"] = true,
 						["coord"] = { 46.0, 28.1, SINFALL_REACHES },
 					}),
+					q(65105, {	-- Return More Lost Souls
+						-- ["sourceQuests"] = {  },	-- TODO
+						["provider"] = { "n", 164738 },	-- Tenaval
+						["coord"] = { 46.0, 28.1, SINFALL_REACHES },
+						["isRepeatable"] = true,
+						["timeline"] = { "added 9.1.5" },
+					}),
 					-- 9.1.5
 					q(65169, {	-- A Stalwart Ally
 						["sourceQuests"] = { 62920 },	-- A Conduit For Change
