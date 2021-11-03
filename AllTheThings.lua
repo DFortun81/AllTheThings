@@ -313,7 +313,7 @@ end
 local defaultComparison = function(a,b)
 	return a > b;
 end
-local insertionSort = function(t, compare)
+local function insertionSort(t, compare, nested)
 	if t then
 		if not compare then compare = defaultComparison; end
 		local j;
@@ -322,6 +322,11 @@ local insertionSort = function(t, compare)
 			while j > 1 and compare(t[j], t[j - 1]) do
 				t[j],t[j - 1] = t[j - 1],t[j];
 				j = j - 1;
+			end
+		end
+		if nested then
+			for i=#t,1,-1 do
+				insertionSort(t[i].g, compare, nested);
 			end
 		end
 	end
@@ -15644,6 +15649,12 @@ function app:GetDataCache()
 		toyCategory.icon = app.asset("Category_ToyBox");
 		table.insert(g, toyCategory);
 		]]--
+		
+		-- Achievements (Dynamic!)
+		local achievementsCategory = app.CreateNPC(-4, {});
+		achievementsCategory.expanded = false;
+		achievementsCategory.achievements = {};
+		table.insert(g, achievementsCategory);
 
 		-- Track Deaths!
 		tinsert(g, app:CreateDeathClass());
@@ -15864,7 +15875,100 @@ function app:GetDataCache()
 			tinsert(inst.parent.g, inst);
 			return inst;
 		end
-
+		
+		-- Update Achievement data.
+		local function cacheAchievementData(self, categories, g)
+			if g then
+				for i,o in ipairs(g) do
+					if o.achievementCategoryID then
+						categories[o.achievementCategoryID] = o;
+						if not o.g then
+							o.g = {};
+						else
+							cacheAchievementData(self, categories, o.g);
+						end
+					elseif o.achievementID then
+						self.achievements[o.achievementID] = o;
+					end
+				end
+			end
+		end
+		local function getAchievementCategory(categories, achievementCategoryID)
+			local c = categories[achievementCategoryID];
+			if not c then
+				c = app.CreateAchievementCategory(achievementCategoryID);
+				categories[achievementCategoryID] = c;
+				c.g = {};
+				
+				local p = getAchievementCategory(categories, c.parentCategoryID);
+				if not p.g then p.g = {}; end
+				table.insert(p.g, c);
+				c.parent = p;
+			end
+			return c;
+		end
+		local function achievementSort(a, b)
+			if a.achievementCategoryID then
+				if b.achievementCategoryID then
+					return a.achievementCategoryID < b.achievementCategoryID;
+				end
+				return true;
+			elseif b.achievementCategoryID then
+				return false;
+			end
+			return a.name <= b.name;
+		end;
+		achievementsCategory.OnUpdate = function(self)
+			local categories = {};
+			categories[-1] = self;
+			cacheAchievementData(self, categories, self.g);
+			for i,_ in pairs(fieldCache["achievementID"]) do
+				if not self.achievements[i] then
+					local achievement = app.CreateAchievement(tonumber(i));
+					for j,o in ipairs(_) do
+						for key,value in pairs(o) do rawset(achievement, key, value); end
+						if o.parent and not o.sourceQuests then
+							local questID = GetRelativeValue(o, "questID");
+							if questID then
+								if not achievement.sourceQuests then
+									achievement.sourceQuests = {};
+								end
+								if not contains(achievement.sourceQuests, questID) then
+									tinsert(achievement.sourceQuests, questID);
+								end
+							else
+								local sourceQuests = GetRelativeValue(o, "sourceQuests");
+								if sourceQuests then
+									if not achievement.sourceQuests then
+										achievement.sourceQuests = {};
+										for k,questID in ipairs(sourceQuests) do
+											tinsert(achievement.sourceQuests, questID);
+										end
+									else
+										for k,questID in ipairs(sourceQuests) do
+											if not contains(achievement.sourceQuests, questID) then
+												tinsert(achievement.sourceQuests, questID);
+											end
+										end
+									end
+								end
+							end
+						end
+					end
+					self.achievements[i] = achievement;
+					achievement.progress = nil;
+					achievement.total = nil;
+					achievement.g = nil;
+					achievement.parent = getAchievementCategory(categories, achievement.parentCategoryID);
+					if not achievement.u or achievement.u ~= 1 then
+						tinsert(achievement.parent.g, achievement);
+					end
+				end
+			end
+			insertionSort(self.g, achievementSort, true);
+		end
+		achievementsCategory:OnUpdate();
+		
 		-- Update Faction data.
 		--[[
 		-- TODO: Make a dynamic Factions section. It works, but we have one already, so we don't need it.
