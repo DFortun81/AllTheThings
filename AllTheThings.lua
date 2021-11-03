@@ -21092,6 +21092,7 @@ app.events.TOYS_UPDATED = function(itemID, new)
 	end
 end
 app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
+	-- TODO: change to callback and collect all ID's for processing each callback
 	-- print("TRANSMOG_COLLECTION_SOURCE_ADDED",sourceID)
 	if sourceID then
 		-- Cache the previous state. This will help keep lag under control.
@@ -21110,6 +21111,7 @@ app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
 	end
 end
 app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
+	-- TODO: change to callback and collect all ID's for processing each callback
 	local oldState = sourceID and ATTAccountWideData.Sources[sourceID];
 	if oldState then
 		local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);

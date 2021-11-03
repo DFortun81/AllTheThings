@@ -112,11 +112,13 @@ _.Zones =
 							["cost"] = {
 								{ "g", 50000000 },		-- 5000g
 							},
+							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						i(187998, {	-- Eternal Heirloom Scabbard
 							["cost"] = {
 								{ "g", 75000000 },		-- 7500g
 							},
+							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						i(187869),	-- Scouting Map: Into the Shadowlands (TOY!)
 						i(188673),	-- Timebound Runimations
