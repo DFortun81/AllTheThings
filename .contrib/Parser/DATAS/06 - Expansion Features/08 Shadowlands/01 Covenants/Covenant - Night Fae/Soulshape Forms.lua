@@ -56,6 +56,9 @@ _.ExpansionFeatures =
 					q(64994, {	-- Frog Soul
 						["provider"] = { "i", 187877 },	-- Frog Soul
 					}),
+					q(65008, {	-- Goat Soul
+						["provider"] = { "i", 187880 },	-- Goat Soul
+					}),
 					pvp(q(62426, {	-- Gryphon Soul
 						["description"] = "Drops from rated PvP.",
 						["provider"] = { "i", 182170 },	-- Gryphon Soul
@@ -170,9 +173,6 @@ _.ExpansionFeatures =
 					}),
 					q(65024, {	-- Cloud Serpent Soul
 						["provider"] = { "i", 187904 },	-- Cloud Serpent Soul
-					}),
-					q(65008, {	-- Goat Soul
-						["provider"] = { "i", 187880 },	-- Goat Soul
 					}),
 					q(65023, {	-- Jormungar Soul
 						["provider"] = { "i", 187903 },	-- Jormungar Soul

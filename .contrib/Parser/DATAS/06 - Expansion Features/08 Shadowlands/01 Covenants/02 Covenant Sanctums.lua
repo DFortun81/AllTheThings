@@ -170,6 +170,7 @@ _.ExpansionFeatures =
 								i(187840, {	-- Sparkle Wings (TOY!)
 									["timeline"] = { "added 9.1.5" },
 								}),
+								i(187880),	-- Goat Soul
 							},
 						}),
 						i(181556, {	-- Tribute of the Court / Revendreth
@@ -224,6 +225,7 @@ _.ExpansionFeatures =
 								i(187840, {	-- Sparkle Wings (TOY!)
 									["timeline"] = { "added 9.1.5" },
 								}),
+								i(187880),	-- Goat Soul
 							},
 						}),
 						i(181557, {	-- Favor of the Court / Revendreth
