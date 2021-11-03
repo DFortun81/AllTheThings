@@ -1388,7 +1388,7 @@ _.HiddenQuestTriggers = {
 	q(64638),	-- Sylvanas Windrunner (Normal)?
 	q(64665),	-- Sylvanas Windrunner (Normal)?
 	q(64503),	-- Sylvanas Windrunner (Heroic)
-	-- q( ),	-- Sylvanas Windrunner (Mythic)
+	q(64504),	-- Sylvanas Windrunner (Mythic)
 
 	q(64707),	-- Sylvanas Windrunner Cinematic?
 };
