@@ -1035,6 +1035,7 @@ for key,value in pairs({
 	[179827] = "구인광고/분실물센터/지명수배",	-- Wanted/Missing/Lost & Found	--TODO: This was taken from classic Wowhead
 	[179832] = "하녀 필라클렌처의 화려한 베개",	-- Pillaclencher's Ornate Pillow
 	[180229] = "불길한 흑마술 더미",	-- Jinxed Hoodoo Pile	--TODO: This was taken from classic Wowhead
+	[180248] = "맛둥어 떼",	-- School of Tastyfish
 	--TODO: [180327] = "Brazier of Madness",	-- Brazier of Madness
 	[180366] = "찌그러진 낚시상자",	-- Battered Tackle Box	--TODO: This was taken from classic Wowhead
 	[180368] = "광기의 서판",	-- Tablet of Madness	--TODO: This was taken from classic Wowhead
@@ -1546,6 +1547,7 @@ for key,value in pairs({
 	[230611] = "창백한 오크 전리품 주머니",	-- Pale Loot Sack
 	[230643] = "테로발톱 둥지",	-- Teroclaw Nest
 	[230664] = "토르바스의 수정검",	-- The Crystal Blade of Torvath
+	[230865] = "재료 목록",	-- List of Ingredients
 	[230909] = "잊혀진 보급품",	-- Forgotten Supplies
 	[231063] = "세나 양의 재료 보관함",	-- Lady Sena's Materials Stash
 	[231064] = "세나 양의 기타 재료 보관함",	-- Lady Sena's Other Materials Stash

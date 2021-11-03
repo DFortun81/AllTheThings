@@ -1092,6 +1092,7 @@ for key, value in pairs({
 	[179827] = "通缉/寻物/招领",	-- Wanted/Missing/Lost & Found	--TODO: This was taken from classic Wowhead
 	--TODO: [179832] = "Pillaclencher's Ornate Pillow",	-- Pillaclencher's Ornate Pillow
 	[180229] = "厄运巫毒堆",	-- Jinxed Hoodoo Pile	--TODO: This was taken from classic Wowhead
+	[180248] = "可口鱼",	-- School of Tastyfish	--TODO: This was taken from classic Wowhead
 	--TODO: [180327] = "Brazier of Madness",	-- Brazier of Madness
 	[180366] = "破碎的工具箱",	-- Battered Tackle Box	--TODO: This was taken from classic Wowhead
 	[180368] = "疯狂石板",	-- Tablet of Madness	--TODO: This was taken from classic Wowhead
@@ -1603,6 +1604,7 @@ for key, value in pairs({
 	[230611] = "一袋白鬼战利品",	-- Pale Loot Sack
 	[230643] = "恐爪鸟巢穴",	-- Teroclaw Nest
 	--TODO: [230664] = "The Crystal Blade of Torvath",	-- The Crystal Blade of Torvath
+	[230865] = "原料清单",	-- List of Ingredients
 	[230909] = "被遗忘的补给品",	-- Forgotten Supplies
 	[231063] = "塞娜小姐的物资",	-- Lady Sena's Materials Stash
 	[231064] = "塞娜小姐的备用物资",	-- Lady Sena's Other Materials Stash

@@ -1036,6 +1036,7 @@ for key,value in pairs({
 	[179827] = "Procurados/Desaparecidos/Achados e Perdidos",	-- Wanted/Missing/Lost & Found	--TODO: This was taken from classic Wowhead
 	[179832] = "Travesseiro Ornado da Alma Fada",	-- Pillaclencher's Ornate Pillow
 	[180229] = "Amontoado de Mandingas Azarentas",	-- Jinxed Hoodoo Pile	--TODO: This was taken from classic Wowhead
+	[180248] = "Cardume de Papas-finas",	-- School of Tastyfish
 	--TODO: [180327] = "Brazier of Madness",	-- Brazier of Madness
 	[180366] = "Caixa de Ferramentas Desgastada",	-- Battered Tackle Box	--TODO: This was taken from classic Wowhead
 	[180368] = "Tabuleta da Loucura",	-- Tablet of Madness	--TODO: This was taken from classic Wowhead
@@ -1547,6 +1548,7 @@ for key,value in pairs({
 	[230611] = "Saco de Tesouro Desbotado",	-- Pale Loot Sack
 	[230643] = "Ninho de Terogarra",	-- Teroclaw Nest
 	[230664] = "A Lâmina de Cristal de Torvath",	-- The Crystal Blade of Torvath
+	[230865] = "Lista de Ingredientes",	-- List of Ingredients
 	[230909] = "Suprimentos Esquecidos",	-- Forgotten Supplies
 	[231063] = "Esconderijo dos Materiais da Lady Sena",	-- Lady Sena's Materials Stash
 	[231064] = "Esconderijo de Outros Materiais da Lady Sena",	-- Lady Sena's Other Materials Stash

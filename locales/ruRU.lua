@@ -1023,6 +1023,7 @@ for key,value in pairs({
 	[179827] = "Розыск/Пропал без вести/Найден",	-- Wanted/Missing/Lost & Found
 	[179832] = "Вышитая подушка Крепких Тисков",	-- Pillaclencher's Ornate Pillow
 	[180229] = "Груда зачарованных худу",	-- Jinxed Hoodoo Pile
+	[180248] = "Косяк вкуснорыбы",	-- School of Tastyfish
 	[180327] = "Жаровня Безумия",	-- Brazier of Madness
 	[180366] = "Побитый ящик для рыболовных снастей",	-- Battered Tackle Box
 	[180368] = "Табличка Безумия",	-- Tablet of Madness
@@ -1534,6 +1535,7 @@ for key,value in pairs({
 	[230611] = "Мешок с добычей бледнокожих",	-- Pale Loot Sack
 	[230643] = "Гнездо страхоклюва",	-- Teroclaw Nest
 	[230664] = "Хрустальный клинок Торвата",	-- The Crystal Blade of Torvath
+	[230865] = "Список ингредиентов",	-- List of Ingredients
 	[230909] = "Забытые припасы",	-- Forgotten Supplies
 	[231063] = "Хранилище материалов леди Сены",	-- Lady Sena's Materials Stash
 	[231064] = "Еще одно хранилище материалов леди Сены",	-- Lady Sena's Other Materials Stash

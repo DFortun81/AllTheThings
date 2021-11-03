@@ -1035,6 +1035,7 @@ for key,value in pairs({
 	[179827] = "Avis de recherche / Disparu / Trouvé & Perdu",	-- Wanted/Missing/Lost & Found
 	[179832] = "Oreiller brodé de Pincetaie",	-- Pillaclencher's Ornate Pillow
 	[180229] = "Pile de déchets",	-- Jinxed Hoodoo Pile
+	[180248] = "Banc de courbines",	-- School of Tastyfish
 	--TODO: [180327] = "Brazier of Madness",	-- Brazier of Madness
 	[180366] = "Boîte d'appâts abîmée",	-- Battered Tackle Box
 	[180368] = "Tablette de la folie",	-- Tablet of Madness
@@ -1546,6 +1547,7 @@ for key,value in pairs({
 	[230611] = "Sac de butin de blafard",	-- Pale Loot Sack
 	[230643] = "Nid de terogriffe",	-- Teroclaw Nest
 	[230664] = "La lame de cristal de Torvath",	-- The Crystal Blade of Torvath
+	[230865] = "Liste d’ingrédients",	-- List of Ingredients
 	[230909] = "Fournitures oubliées",	-- Forgotten Supplies
 	[231063] = "Planque de matériaux de dame Sena",	-- Lady Sena's Materials Stash
 	[231064] = "Autre planque de matériaux de dame Sena",	-- Lady Sena's Other Materials Stash
