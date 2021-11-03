@@ -871,7 +871,7 @@ settings.UpdateMode = function(self, doRefresh)
 	else
 		app.AchievementFilter = 13;
 	end
-	if self:Get("Filter:BoEs") then
+	if self:Get("Filter:BoEs") and not self:Get("Hide:BoEs") then
 		app.ItemBindFilter = app.FilterItemBind;
 	else
 		app.ItemBindFilter = app.Filter;
