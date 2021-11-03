@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9964, {	-- Collections
+	achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 		n(-10030, {	-- Toy Box
 			ach(12996, {	-- Toybox Tycoon (400)
 				i(163244),		-- Brutus

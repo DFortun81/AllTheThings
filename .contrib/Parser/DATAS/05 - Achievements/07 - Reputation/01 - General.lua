@@ -4,8 +4,8 @@
 
 _.Achievements =
 {
-	n(-9961, {	-- Reputation
-		n(-9955, {	-- General
+	achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
+		achcat(ACHIEVEMENT_CATEGORY_GENERAL, {
 			ach(12866, {	-- 100 Exalted Reputations
 				i(163982),		-- Pureheart Courser
 				title(379),		-- Esteemed <Name>

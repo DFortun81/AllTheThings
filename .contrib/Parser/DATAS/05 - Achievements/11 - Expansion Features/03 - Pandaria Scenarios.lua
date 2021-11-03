@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-10055, {	-- Expansion Features
+	achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES, {
 		n(-10059, {	-- Pandaria Scenarios
 			ach(7252, {	-- A Brewing Storm
 				["maps"] = { 447 },	-- A Brewing Storm

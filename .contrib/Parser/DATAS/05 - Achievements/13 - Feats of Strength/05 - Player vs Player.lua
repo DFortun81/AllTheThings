@@ -6,8 +6,8 @@ _.Achievements =
 {
 	-- Titles such as Challenger, Rival, Duelist & Gladiator are listed once under PvP>Arena achievements.
 	-- Exception: Combatant (Listed 5 times)
-	n(-9969, {	-- Feats of Strength
-		pvp(n(PVP, {
+	achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
+		pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 			n(SEASON_MERCILESS, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 				ach(418, {	-- Merciless Gladiator: Burning Crusade Season 2
 					title(37),	-- Merciless Gladiator <Name>

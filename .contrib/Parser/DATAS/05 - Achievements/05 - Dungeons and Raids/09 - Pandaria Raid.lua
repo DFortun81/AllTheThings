@@ -5,7 +5,7 @@
 -- TODO: reformat this file
 _.Achievements =
 {
-	n(-9959, {	-- Dungeons & Raids
+	achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 		n(-10009, {	-- Pandaria Raid
 			{	-- A Complete Circuit
 				["achievementID"] = 8090,	-- A Complete Circuit

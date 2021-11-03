@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-10055, {	-- Expansion Features
+	achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES, {
 		n(-10042, {	-- Proving Grounds
 			ach(9577, {	-- Proving Yourself: Endless Damage (Wave 30) (Damage Series)
 				["maps"] = {

@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	pvp(n(PVP, {
+	pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 		n(-9984, {	-- Warsong Gulch
 			["maps"] = {
 				859,	-- Warsong Gulch (brawl?)

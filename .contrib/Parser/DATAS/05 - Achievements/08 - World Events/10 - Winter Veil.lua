@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9962, bubbleDown({["u"] = FEAST_OF_WINTER_VEIL}, {	-- World Events
+	achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, bubbleDown({["u"] = FEAST_OF_WINTER_VEIL}, {
 		holiday(235485, {	-- Winter Veil
 			ach(277),		-- 'Tis the Season
 			ach(1690),		-- A Frosty Shake (Dalaran - NR)

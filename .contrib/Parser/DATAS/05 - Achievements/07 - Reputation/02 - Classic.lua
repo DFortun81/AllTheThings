@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9961, {	-- Reputation
+	achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 		n(-10002, {	-- Classic
 			ach(956),	-- Brood of Nozdormu
 			ach(955),	-- Hydraxian Waterlords

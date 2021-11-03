@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9959, {	-- Dungeons & Raids
+	achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 		n(-10002, {	-- Classic
 			ach(632),	-- Blackfathom Deeps
 			ach(642),	-- Blackrock Depths

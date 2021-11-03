@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9962, bubbleDown({["u"] = MIDSUMMER_FIRE_FESTIVAL}, {	-- World Events
+	achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, bubbleDown({["u"] = MIDSUMMER_FIRE_FESTIVAL}, {
 		holiday(235474, {	-- Midsummer
 			ach(271),	-- Burning Hot Pole Dance
 			ach(1037,  {	-- Desecration of the Alliance

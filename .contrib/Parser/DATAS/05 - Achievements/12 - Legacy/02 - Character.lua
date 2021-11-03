@@ -4,8 +4,8 @@
 
 _.Achievements =
 {
-	n(-9968, {	-- Legacy
-		n(-10051, {	-- Character
+	achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
+		achcat(ACHIEVEMENT_CATEGORY_CHARACTER, {
 			un(REMOVED_FROM_GAME, ach(10765, {	-- Brokenly Epic (ilvl 840)
 				un(REMOVED_FROM_GAME, ach(9708)),	-- Savagely Epic (ilvl 640)
 				un(REMOVED_FROM_GAME, ach(6349)),	-- Mystically Epic (ilvl 476)

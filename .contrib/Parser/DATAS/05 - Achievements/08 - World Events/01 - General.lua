@@ -12,8 +12,8 @@ TODO:
 
 _.Achievements =
 {
-	n(-9962, {	-- World Events
-		n(-9955, {	-- General
+	achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, {
+		achcat(ACHIEVEMENT_CATEGORY_GENERAL, {
 			un(BREWFEST, ach(1683, {	-- Brewmaster
 				title(101),				-- Brewmaster
 				crit(1),				-- The Brewfest Diet

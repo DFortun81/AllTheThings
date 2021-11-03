@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9962, {	-- World Events
+	achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, {
 		n(-10025, {	-- Darkmoon Faire
 			ach(9885, {		-- Ace Tonk Commander
 				i(122122),		-- Darkmoon Tonk Controller

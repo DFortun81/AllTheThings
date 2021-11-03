@@ -4,8 +4,8 @@
 
 _.Achievements =
 {
-	n(-9957, {	-- Exploration
-		n(-9955, {	-- General
+	achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
+		achcat(ACHIEVEMENT_CATEGORY_GENERAL, {
 			ach(12988, {	-- Battle for Azeroth Explorer
 				ach(12556),		-- Explore Tiragarde Sound
 				ach(12557),		-- Explore Drustvar

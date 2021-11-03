@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9962, bubbleDown({["u"] = BREWFEST}, {	-- World Events
+	achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, bubbleDown({["u"] = BREWFEST}, {
 		holiday(235442, {	-- Brewfest
 			ach(1260),		-- Almost Blind Luck
 			ach(2796),		-- Brew of the Month

@@ -5,7 +5,7 @@
 -- TODO: reformat this file
 _.Achievements =
 {
-	n(-9959, {	-- Dungeons & Raids
+	achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 		n(-10010, {	-- Draenor Dungeons
 			{	-- ...They All Fall Down
 				["achievementID"] = 9023,	-- ...They All Fall Down

@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-9959, {	-- Dungeons & Raids
+	achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 		n(-10004, {	-- Lich King Dungeon
 			ach(2153),	-- A Void Dance
 			ach(2155),	-- Abuse the Ooze

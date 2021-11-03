@@ -1,10 +1,9 @@
 --------------------------------------------------
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
-
 _.Achievements =
 {
-	n(-10051, {	-- Character
+	achcat(ACHIEVEMENT_CATEGORY_CHARACTER, {
 		ach(5180, {		-- Breaking The Sound Barrier (Master)
 			ach(891),		-- Giddy Up! (Apprentice)
 			ach(889),		-- Fast and Furious (Journeyman)

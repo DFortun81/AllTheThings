@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-9957, {	-- Exploration
+	achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 		n(-9980, {	-- Pandaria
 			ach(6856, {	-- Ballad of Liu Lang
 				crit(1),	-- The Birthplace of Liu Lang (Valley of the Four Winds)

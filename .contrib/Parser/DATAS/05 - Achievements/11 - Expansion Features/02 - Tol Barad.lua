@@ -5,7 +5,7 @@
 -- TODO: revisit this and update to standards
 _.Achievements =
 {
-	n(-10055, {	-- Expansion Features
+	achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES, {
 		n(-9996, {	-- Tol Barad
 			ach(6108),	-- Alizabal
 			ach(5718, {	-- Just Another Day in Tol Barad (A)

@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-9957, {	-- Exploration
+	achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 		n(BFA_HEADER, {
 			ach(13711),	-- A Fistful of Manapearls
 			ach(13036, {	-- A Loa of a Tale

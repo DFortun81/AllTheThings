@@ -5,7 +5,7 @@
 -- TODO: revisit
 _.Achievements =
 {
-	n(-9960, {	-- Professions
+	achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, {
 		n(-9971, bubbleDown({ ["requireSkill"] = COOKING, }, {	-- Cooking
 			ach(2002,  {	-- 100 Cooking Awards
 				ach(2001),		-- 50 Cooking Awards

@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-9959, {	-- Dungeons & Raids
+	achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 		n(-10053, {	-- Battle Dungeon
 			ach(12726),		-- A Fish Out of Water
 			ach(12490),		-- Alchemical Romance

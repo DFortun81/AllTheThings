@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	pvp(n(PVP, {
+	pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 		n(-10058, {	-- World
 			ach(13429, {	-- Azerfighter
 				["_quests"] = {

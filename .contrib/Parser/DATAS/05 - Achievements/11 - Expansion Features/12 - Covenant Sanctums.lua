@@ -4,9 +4,9 @@
 
 _.Achievements =
 {
-	n(-10055, {	-- Expansion Features
+	achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES, {
 		n(-900, {	-- Covenant Sanctums
-			n(-9955, {	-- General
+			achcat(ACHIEVEMENT_CATEGORY_GENERAL, {
 				-- These are available to all players regardless of covenant
 				ach(14835),		-- A Resolute Bond
 				ach(14636),		-- Adventurer in Chief

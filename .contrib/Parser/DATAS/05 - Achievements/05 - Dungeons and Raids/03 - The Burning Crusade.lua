@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9959, {	-- Dungeons & Raids
+	achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 		n(TBC_HEADER, {
 			ach(666),	-- Auchenai Crypts
 			ach(692),	-- Gruul's Lair

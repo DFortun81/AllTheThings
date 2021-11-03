@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-10055, {	-- Expansion Features
+	achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES, {
 		n(-10070, {	-- Heart of Azeroth
 			ach(13772),	-- Essence Essentials
 			ach(13773),	-- Essence Gains

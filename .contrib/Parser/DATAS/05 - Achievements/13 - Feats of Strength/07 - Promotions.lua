@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-9969, {	-- Feats of Strength
+	achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		n(PROMOTIONS, {
 			un(REMOVED_FROM_GAME, ach(415)),		-- Big Blizzard Bear
 			un(REMOVED_FROM_GAME, ach(11064)),		-- Collector's Edition: Baby Winston

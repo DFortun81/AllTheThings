@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(QUESTS, {
+	achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 		n(-9975, {	-- Eastern Kingdoms
 			ach(5442, {		-- Full Caravan
 				crit(1),		-- Fiona

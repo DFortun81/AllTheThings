@@ -11,7 +11,7 @@ TODO:
 ]]--
 
 _.Achievements = {
-	n(-10055, {	-- Expansion Features
+	achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES, {
 		n(-10057, {	-- War Effort
 			ach(12874, {	-- An Eventful Battle
 				crit(1),	-- Fozruk

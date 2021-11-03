@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9968, {	-- Legacy
+	achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 		n(-10044, {	-- Raids
 			un(REMOVED_FROM_GAME, ach(2919)),	-- A Quick Shave (10 player)
 			un(REMOVED_FROM_GAME, ach(2921)),	-- A Quick Shave (25 player)

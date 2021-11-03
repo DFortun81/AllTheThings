@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-9957, {	-- Exploration
+	achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 		n(SL_HEADER, {
 			ach(14895, {	-- 'Ghast Five (5 of these criteria)
 				ach(14894),		-- To 'Ghast, Two Curios (2 of these criteria)

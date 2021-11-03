@@ -12,8 +12,8 @@ TODO:
 
 _.Achievements =
 {
-	n(-9964, {	-- Collections
-		n(-9955, {	-- General
+	achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
+		achcat(ACHIEVEMENT_CATEGORY_GENERAL, {
 			ach(8728, {	-- Going To Need A Bigger Bag (Timeless Isle)
 				crit(1),	-- Cursed Swabby Helmet
 				crit(2),	-- Warped Warning Sign

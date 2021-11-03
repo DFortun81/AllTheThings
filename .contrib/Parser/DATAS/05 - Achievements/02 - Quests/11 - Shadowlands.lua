@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(QUESTS, {
+	achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 		n(SL_HEADER, {
 			ach(14672, {	-- A Bit of This, A Bit of That
 			--	["_quests"] = { 60475 },	-- We'll Workshop It

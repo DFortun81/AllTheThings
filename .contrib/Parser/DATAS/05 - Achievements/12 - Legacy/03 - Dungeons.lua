@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9968, {	-- Legacy
+	achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 		n(-10043, {	-- Dungeons
 			un(REMOVED_FROM_GAME, ach(8882, {	-- Auchindoun: Gold
 				un(REMOVED_FROM_GAME, ach(8881)),		-- Auchindoun: Silver

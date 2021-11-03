@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-9962, {	-- World Events
+	achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, {
 		d(24, {	-- Timewalking
 			ach(15309),		-- A Towering Success
 			ach(15310, {	-- A Tour of Towers

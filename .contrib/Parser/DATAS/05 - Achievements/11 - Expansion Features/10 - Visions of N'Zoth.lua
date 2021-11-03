@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-10055, {	-- Expansion Features
+	achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES, {
 		n(-10071, {	-- Visions of N'Zoth
 			ach(14173, {	-- A Mountain of Mementos
 				ach(14172),	-- A Monumental Amount of Mementos

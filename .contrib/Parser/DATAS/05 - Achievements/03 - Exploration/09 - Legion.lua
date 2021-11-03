@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-9957, {	-- Exploration
+	achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 		n(LEGION_HEADER, {
 			ach(11261, {	-- Adventurer of Azsuna
 				crit(1),		-- Valiyaka the Stormbringer

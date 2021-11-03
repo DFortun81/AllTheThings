@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9961, {	-- Reputation
+	achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 		n(BFA_HEADER, {
 			ach(12947, {	-- Azerothian Diplomat
 				crit(1),		-- Proudmoore (A) / Zandalari Empire (H)

@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-9961, {	-- Reputation
+	achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 		n(SL_HEADER, {
 			ach(15059),		-- Death's Advance
 			ach(14315, {	-- Shadowlands Diplomat

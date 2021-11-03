@@ -4,8 +4,8 @@
 
 _.Achievements =
 {
-	n(-9968, {	-- Legacy
-		n(-9962, {	-- World Events
+	achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
+		achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, {
 			un(REMOVED_FROM_GAME, ach(1186)),		-- Down With The Dark Iron
 		}),
 	}),

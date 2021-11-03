@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	pvp(n(PVP, {
+	pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 		n(-9991, {	-- Twin Peaks
 			["maps"] = { 206 },	-- Twin Peaks
 			["g"] = {

@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	pvp(n(PVP, {
+	pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 		n(-9987, {	-- Alterac Valley
 			["maps"] = { 91 },	-- Alterac Valley
 			["g"] = {

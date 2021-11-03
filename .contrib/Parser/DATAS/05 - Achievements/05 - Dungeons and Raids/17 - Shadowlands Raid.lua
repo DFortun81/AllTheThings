@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-9959, {	-- Dungeons & Raids
+	achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 		n(-10102, {	-- Shadowlands Raid
 			ach(14293),		-- Blind as a Bat
 			ach(14608),		-- Burning Bright

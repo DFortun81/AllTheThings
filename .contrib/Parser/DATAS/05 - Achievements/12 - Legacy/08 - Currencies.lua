@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9968, {	-- Legacy
+	achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 		n(-10045, {	-- Currencies
 			un(REMOVED_FROM_GAME, ach(5539, {	-- 50,000 Conquest Points
 				un(REMOVED_FROM_GAME, ach(5540)),	-- 25,000 Conquest Points

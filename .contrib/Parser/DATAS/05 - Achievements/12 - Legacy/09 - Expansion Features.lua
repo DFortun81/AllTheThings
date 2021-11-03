@@ -12,8 +12,8 @@ TODO:
 
 _.Achievements =
 {
-	n(-9968, {	-- Legacy
-		n(-10055, {	-- Expansion Features
+	achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
+		achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES, {
 			un(REMOVED_FROM_GAME, ach(11611)),		-- A Challenging Look
 			un(REMOVED_FROM_GAME, ach(12071)),		-- Crucible's Promise
 			un(REMOVED_FROM_GAME, ach(11612)),		-- Fighting with Style: Challenging

@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-9968, {	-- Legacy
+	achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 		n(-304, {	-- Battlegrounds
 			un(REMOVED_FROM_GAME, ach(8360, {	-- Master of Deepwind Gorge
 				ach(8331),	-- Deepwind Gorge Victory

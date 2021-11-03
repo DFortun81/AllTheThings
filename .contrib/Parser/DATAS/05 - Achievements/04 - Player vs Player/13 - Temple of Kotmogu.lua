@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	pvp(n(PVP, {
+	pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 		n(-9993, {	-- Temple of Kotmogu
 			["maps"] = { 417 },
 			["g"] = {

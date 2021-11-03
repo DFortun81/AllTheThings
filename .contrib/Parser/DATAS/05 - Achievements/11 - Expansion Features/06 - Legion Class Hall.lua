@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-10055, {	-- Expansion Features
+	achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES, {
 		n(-9965, {	-- Legion Class Hall
 			["maps"] = {
 				647,	-- Death Knight — Acherus: The Ebon Hold (Upper Level)

@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9959, {	-- Dungeons & Raids
+	achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 		n(-10011, {	-- Draenor Raid
 			ach(8975),		-- A Fungus Among Us
 			ach(9972, {		-- A Race Against Slime

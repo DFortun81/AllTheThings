@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-9963, {	-- Pet Battles
+	achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 		n(-10027, {	-- Collect
 			petbattle(ach(7465)),		-- An Uncommon Find*
 			petbattle(ach(12930, {	-- Battle Safari (Kul Tiras and Zandalar)

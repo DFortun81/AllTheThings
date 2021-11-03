@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9961, {	-- Reputation
+	achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 		n(-9980, {	-- Pandaria
 			ach(8206, {		-- Dominance Offensive
 				["races"] = HORDE_ONLY,

@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(QUESTS, {
+	achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 		n(WOD_HEADER, {
 			ach(9437),		-- A Demidos of Reality (Socrethar's Rise)
 			ach(9433),		-- A-VOID-ance (Shadowmoon Enclave)

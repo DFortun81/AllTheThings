@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-9962, {	-- World Events
+	achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, {
 		holiday(235466, {	-- Pilgrim's Bounty
 			ach(3579, {	-- "FOOD FIGHT!"
 				["u"] = PILGRIMS_BOUNTY,

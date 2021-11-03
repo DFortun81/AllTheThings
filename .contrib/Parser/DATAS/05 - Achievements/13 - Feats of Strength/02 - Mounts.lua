@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-9969, {	-- Feats of Strength
+	achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		n(-10031, {	-- Mounts
 			un(BREWFEST, ach(3496)),	-- A Brew-FAST Mount
 			un(REMOVED_FROM_GAME, ach(430)),	-- Amani War Bear

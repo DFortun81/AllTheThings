@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-9959, {	-- Dungeons & Raids
+	achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 		n(-10101, {	-- Shadowlands Dungeon
 			ach(14284),	-- Breaking Bad
 			ach(14295),	-- Bountiful Harvest

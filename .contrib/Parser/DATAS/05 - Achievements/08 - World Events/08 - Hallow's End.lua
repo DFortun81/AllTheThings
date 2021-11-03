@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9962, bubbleDown({["u"] = HALLOWS_END}, {	-- World Events
+	achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, bubbleDown({["u"] = HALLOWS_END}, {
 		holiday(235462, {	-- Hallow's End
 			ach(10365),	-- A Frightening Friend
 			ach(284,  {	-- A Mask for All Occasions

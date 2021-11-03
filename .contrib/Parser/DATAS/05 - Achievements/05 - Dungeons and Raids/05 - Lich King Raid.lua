@@ -5,7 +5,7 @@
 -- TODO: reformat this file
 _.Achievements =
 {
-	n(-9959, {	-- Dungeons & Raids
+	achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 		n(-10005, {	-- Lich King Raid
 			{	-- A Poke in the Eye (10 player)
 				["achievementID"] = 1869,	-- A Poke in the Eye (10 player)

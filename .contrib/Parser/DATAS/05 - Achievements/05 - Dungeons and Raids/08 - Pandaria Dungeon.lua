@@ -5,7 +5,7 @@
 -- TODO: reformat this file
 _.Achievements =
 {
-	n(-9959, {	-- Dungeons & Raids
+	achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 		n(-10008, {	-- Pandaria Dungeon
 			{	-- And Stay Dead!
 				["achievementID"] = 6929,	-- And Stay Dead!

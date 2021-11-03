@@ -5,7 +5,7 @@
 -- TODO: split into separate faction achievs?
 _.Achievements =
 {
-	n(-9968, {	-- Legacy
+	achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 		n(PVP, {
 			un(REMOVED_FROM_GAME, ach(11468)),		-- Alive for Five
 			un(REMOVED_FROM_GAME, ach(2191)),		-- Ancient Courtyard Protector

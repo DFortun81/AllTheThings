@@ -5,7 +5,7 @@
 -- TODO: reformat this file
 _.Achievements =
 {
-	n(-9959, {	-- Dungeons & Raids
+	achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 		n(-10006, {	-- Cataclysm Dungeon
 			{	-- Acrocalypse Now
 				["achievementID"] = 5291,	-- Acrocalypse Now

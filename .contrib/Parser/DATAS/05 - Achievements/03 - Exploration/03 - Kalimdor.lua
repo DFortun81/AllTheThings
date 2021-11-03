@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-9957, {	-- Exploration
+	achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 		n(-9976, {	-- Kalimdor
 			ach(845, {	-- Explore Ashenvale
 				crit(1),	-- The Zoram Strand

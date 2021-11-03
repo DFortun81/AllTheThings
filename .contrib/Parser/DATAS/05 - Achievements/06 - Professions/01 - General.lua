@@ -12,8 +12,8 @@ TODO:
 
 _.Achievements =
 {
-	n(-9960, {	-- Professions
-		n(-9955, {	-- General
+	achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, {
+		achcat(ACHIEVEMENT_CATEGORY_GENERAL, {
 			ach(9454, {		-- Draenic Seed Collector
 				i(111997),		-- Herb Garden, Level 3 [Blueprints]
 			}),

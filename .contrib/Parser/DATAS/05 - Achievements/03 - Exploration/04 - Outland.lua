@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-9957, {	-- Exploration
+	achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 		n(-9977, {	-- Outland
 			ach(1312, {	-- Bloody Rare
 				crit(1),	-- Ambassador Jerrikar (Shadowmoon Valley)

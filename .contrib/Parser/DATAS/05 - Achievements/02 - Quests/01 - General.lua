@@ -4,8 +4,8 @@
 
 _.Achievements =
 {
-	n(QUESTS, {
-		n(-9955, {	-- General
+	achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
+		achcat(ACHIEVEMENT_CATEGORY_GENERAL, {
 			ach(7411, {		-- 10000 Daily Quests Completed
 				ach(973),		-- 5 Daily Quests Completed
 				ach(974),		-- 50 Daily Quests Completed

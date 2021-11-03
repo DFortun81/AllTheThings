@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	pvp(n(PVP, {
+	pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 		n(-9994, {	-- Deepwind Gorge
 			["maps"] = {
 				519,	-- Deepwind Gorge (old)

@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-9969, {	-- Feats of Strength
+	achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		n(-10047, {	-- Events
 			un(FEAST_OF_WINTER_VEIL, ach(12850)),		-- At Least You're Being Careful
 			un(REMOVED_FROM_GAME, ach(1293)),		-- Blue Brewfest Stein

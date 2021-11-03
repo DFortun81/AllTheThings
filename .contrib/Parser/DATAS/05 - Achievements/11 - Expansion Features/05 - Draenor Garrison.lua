@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-10055, {	-- Expansion Features
+	achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES, {
 		n(GARRISONS, {
 			ach(9130),		-- A Rare Friend
 			ach(10174, {	-- Admiral (A)

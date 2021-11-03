@@ -12,8 +12,8 @@ TODO:
 
 _.Achievements =
 {
-	n(-9959, {	-- Dungeons & Raids
-		n(-9955, {	-- General
+	achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
+		achcat(ACHIEVEMENT_CATEGORY_GENERAL, {
 			ach(12807, {	-- Battle for Azeroth Dungeon Hero
 				crit(1),		-- Heroic: The Temple of Sethraliss
 				crit(2),		-- Heroic: Underrot

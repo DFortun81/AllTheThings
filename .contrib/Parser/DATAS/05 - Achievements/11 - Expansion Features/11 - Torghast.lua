@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-10055, {	-- Expansion Features
+	achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES, {
 		n(-10103, {	-- Torghast
 			ach(15091),		-- A Taste of Perfection
 			ach(15067),		-- Adamant Vaults

@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	pvp(n(PVP, {
+	pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 		n(-9992, {	-- Silvershard Mines
 			["maps"] = { 423 },	-- Silvershard Mines
 			["g"] = {

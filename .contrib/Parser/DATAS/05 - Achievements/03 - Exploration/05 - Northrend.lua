@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-9957, {	-- Exploration
+	achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 		n(-9978, {	-- Northrend
 			ach(1264, {	-- Explore Borean Tundra
 				crit(1),	-- Temple City of En'kilah

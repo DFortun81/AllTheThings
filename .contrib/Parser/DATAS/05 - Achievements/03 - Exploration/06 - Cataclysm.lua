@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-9957, {	-- Exploration
+	achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 		n(CATA_HEADER, {
 			ach(5753, {	-- Cataclysmically Delicious
 				crit(1),	-- Baked Rockfish

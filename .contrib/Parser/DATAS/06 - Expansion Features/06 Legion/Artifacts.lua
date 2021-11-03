@@ -26,7 +26,7 @@ _.PVP =
 local thisSideUpAch = {};
 _.Achievements =
 {
-	n(-9960, {	-- Professions
+	achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, {
 		n(-9974, {	-- Archaeology
 			ach(10603, {	-- A Keen Eye
 				ach(10602, {["groups"] = thisSideUpAch}),		-- This Side Up

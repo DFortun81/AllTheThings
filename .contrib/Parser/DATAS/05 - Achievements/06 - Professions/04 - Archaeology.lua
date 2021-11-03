@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9960, {	-- Professions
+	achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, {
 		n(-9974, {	-- Archaeology
 			ach(10603, {	-- A Keen Eye
 				crit(1),		-- Corrupted Studies

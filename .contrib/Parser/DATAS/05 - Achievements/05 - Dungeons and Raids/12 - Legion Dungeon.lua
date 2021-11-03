@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9959, {	-- Dungeons & Raids
+	achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 		n(-10012, {	-- Legion Dungeon
 			ach(10707),		-- A Specter, Illuminated
 			ach(11769),		-- A Steamy Romance Saga

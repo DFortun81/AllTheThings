@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9961, {	-- Reputation
+	achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 		n(CATA_HEADER, {
 			ach(5827, {	-- Avengers of Hyjal
 				title(188),	-- <Name>, Avenger of Hyjal

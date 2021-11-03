@@ -4,8 +4,8 @@
 
 _.Achievements =
 {
-	n(-9963, {	-- Pet Battles
-		n(-9955, {	-- General
+	achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
+		achcat(ACHIEVEMENT_CATEGORY_GENERAL, {
 			petbattle(ach(8080)),		-- Fabled Pandaren Tamer*
 			petbattle(ach(7908, {		-- I Choose You*
 				i(92744),	-- Heavy Sack of Gold

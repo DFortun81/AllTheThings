@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9961, {	-- Reputation
+	achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 		n(TBC_HEADER, {
 			ach(896),		-- A Quest a  Day Keeps the Ogres at Bay
 			ach(893, {		-- Cenarion War Hippogryph

@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9960, {	-- Professions
+	achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, {
 		n(-9972, {	-- Fishing
 			ach(1561,  {	-- 1000 Fish
 				ach(1560),		-- 500 Fish

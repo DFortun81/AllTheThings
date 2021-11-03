@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9961, {	-- Reputation
+	achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 		n(LEGION_HEADER, {
 			ach(11796),		-- Armies of Legionfall
 			ach(10672, {	-- Broken Isles Diplomat

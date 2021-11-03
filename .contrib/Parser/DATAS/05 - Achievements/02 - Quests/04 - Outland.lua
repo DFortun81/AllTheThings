@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(QUESTS, {
+	achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 		n(-9977, {	-- Outland
 			ach(1276),		-- Blade's Edge Bomberman (Blade's Edge Mountains)
 			ach(1275),		-- Bombs Away (Terokkar Forest)

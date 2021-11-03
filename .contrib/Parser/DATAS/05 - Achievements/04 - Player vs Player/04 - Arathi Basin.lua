@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	pvp(n(PVP, {
+	pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 		n(-9985, {	-- Arathi Basin
 			["maps"] = {
 				-- figure out wtf the rest of these maps are.

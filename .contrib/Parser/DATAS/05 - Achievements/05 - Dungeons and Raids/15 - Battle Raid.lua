@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-9959, {	-- Dungeons & Raids
+	achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 		n(-10054, {	-- Battle Raid
 			ach(13506),		-- A Good Eye-dea
 			ach(13724),		-- A Smack of Jellyfish

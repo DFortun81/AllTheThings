@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	pvp(n(PVP, {
+	pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 		n(-9988, {	-- Isle of Conquest
 			["maps"] = { 169 },	-- Isle of Conquest (normal BG)
 			["g"] = {

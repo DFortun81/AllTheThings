@@ -12,8 +12,8 @@ TODO:
 
 _.Achievements =
 {
-	pvp(n(PVP, {
-		n(-9955, {	-- General
+	pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
+		achcat(ACHIEVEMENT_CATEGORY_GENERAL, {
 			ach(5363, {	-- 250000 Honorable Kills
 				title(184),		-- the Bloodthirsty
 				ach(870, {		-- 100000 Honorable Kills

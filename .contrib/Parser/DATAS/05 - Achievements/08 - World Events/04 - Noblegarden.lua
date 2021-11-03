@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-9962, bubbleDown({ ["u"] = NOBLEGARDEN }, {	-- World Events
+	achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, bubbleDown({ ["u"] = NOBLEGARDEN }, {
 		holiday(235477, {	-- Noblegarden
 			ach(2576),	-- Blushing Bride
 			ach(2418, {	-- Chocoholic

@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(QUESTS, {
+	achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 		n(LEGION_HEADER, {
 			ach(11732, {	-- A Magnificent Contribution (Broken Shore)
 				ach(11731),		-- A Magic Contribution

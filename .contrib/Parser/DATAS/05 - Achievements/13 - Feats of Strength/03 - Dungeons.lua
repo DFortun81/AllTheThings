@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-9969, {	-- Feats of Strength
+	achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		n(-10043, {	-- Dungeons
 			un(REMOVED_FROM_GAME, ach(13079, {		-- Battle for Azeroth Keystone Conqueror: Season One
 				crit(1),	-- Atal'Dazar

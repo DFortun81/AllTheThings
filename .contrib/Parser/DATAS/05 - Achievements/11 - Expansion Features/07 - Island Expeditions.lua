@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-10055, {	-- Expansion Features
+	achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES, {
 		n(-10056, {	-- Island Expeditions
 			["maps"] = {	-- if you add a map here, also add it to the overall islands metadata file!
 				1501,	-- Crestfall

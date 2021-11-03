@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-9957, {	-- Exploration
+	achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 		n(-9975, {	-- Eastern Kingdoms
 			ach(761, {	-- Explore Arathi Highlands
 				crit(1),	-- Circle of West Binding

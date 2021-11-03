@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-9969, {	-- Feats of Strength
+	achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		n(-10044, {	-- Raids
 			un(REMOVED_FROM_GAME, a(ach(4156, {	-- A Tribute to Immortality (Alliance)
 				un(REMOVED_FROM_GAME, a(i(49096))),	-- Crusader's White Warhorse

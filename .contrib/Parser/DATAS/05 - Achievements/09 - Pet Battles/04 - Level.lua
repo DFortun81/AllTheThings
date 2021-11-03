@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9963, {	-- Pet Battles
+	achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 		petbattle(n(-10029, {	-- Level
 			ach(6570, {	-- All Growns Up! (Lvl 25)
 				ach(6569),	-- Old Timer (Lvl 20)

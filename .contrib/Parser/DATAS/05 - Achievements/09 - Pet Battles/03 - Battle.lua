@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9963, {	-- Pet Battles
+	achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 		petbattle(n(-10028, {	-- Battle
 			ach(14881, {	-- Abhorrent Adversaries of the Afterlife
 				i(184512),	-- Winterleaf Spriggan

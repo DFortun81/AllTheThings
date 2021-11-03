@@ -12,8 +12,8 @@ TODO:
 
 _.Achievements =
 {
-	n(-9968, {	-- Legacy
-		n(-9960, {	-- Professions
+	achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
+		achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, {
 			ach(10585, {	-- Fel-Smelter
 				["u"] = REMOVED_FROM_GAME,
 				["g"] = {

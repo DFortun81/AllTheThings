@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	pvp(n(PVP, {
+	pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 		n(-9995, {	-- Wintergrasp
 			ach(1752, {	-- Master of Wintergrasp
 				ach(1722),	-- Archavon the Stone Watcher [10 Man]

@@ -5,8 +5,8 @@
 -- TODO: look into commented out parts
 _.Achievements =
 {
-	n(-9969, {	-- Feats of Strength
-		n(-9955, {	-- General
+	achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
+		achcat(ACHIEVEMENT_CATEGORY_GENERAL, {
 			ach(11137, {	-- A Legendary Campaign
 				crit(1),	-- Death Knight
 				crit(2),	-- Demon Hunter

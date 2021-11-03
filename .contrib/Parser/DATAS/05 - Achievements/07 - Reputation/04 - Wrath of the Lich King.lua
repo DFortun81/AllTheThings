@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9961, {	-- Reputation
+	achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 		n(WRATH_HEADER, {
 			ach(950),	-- Frenzyheart Tribe
 			ach(2083),	-- Grand Ice Mammoth

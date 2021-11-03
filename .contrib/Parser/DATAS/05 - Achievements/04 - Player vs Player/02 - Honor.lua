@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	pvp(n(PVP, {
+	pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 		n(PVP_HONOR, {
 			ach(13703, {	-- Battlefield Master
 				ach(13701),	-- Battlefield Brawler

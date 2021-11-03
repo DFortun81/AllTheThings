@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9961, {	-- Reputation
+	achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 		n(WOD_HEADER, {
 			ach(9469),		-- Arakkoa Outcasts
 			ach(9470, {		-- Council of Exarchs

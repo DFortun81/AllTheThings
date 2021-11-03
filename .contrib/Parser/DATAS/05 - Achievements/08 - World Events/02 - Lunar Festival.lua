@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9962, bubbleDown({["u"] = LUNAR_FESTIVAL}, {	-- World Events
+	achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, bubbleDown({["u"] = LUNAR_FESTIVAL}, {
 		holiday(235471, {	-- Lunar Festival
 			ach(609, {	-- 50 Coins of Ancestry
 				ach(608),	-- 25 Coins of Ancestry

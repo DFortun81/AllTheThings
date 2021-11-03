@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-10055, {	-- Expansion Features
+	achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES, {
 		n(-363, {	-- Argent Tournament{
 			["maps"] = { ICECROWN },
 			["g"] = sharedData({

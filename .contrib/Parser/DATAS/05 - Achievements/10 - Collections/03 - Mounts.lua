@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9964, {	-- Collections
+	achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 		n(-10031, {	-- Mounts
 			ach(12933, {	-- A Horde of Hoofbeats (A, 400 mounts)
 				["races"] = ALLIANCE_ONLY,
