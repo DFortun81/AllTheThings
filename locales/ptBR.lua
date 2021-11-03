@@ -1407,7 +1407,7 @@ for key,value in pairs({
 	[218437] = "Maldição e Silêncio",	-- The Curse and the Silence
 	[218438] = "Era dos Cem Reis",	-- Age of a Hundred Kings
 	[218750] = "Ordens de Serviço",	-- Work Orders
-	[220641] = "Tesouro do Senhor do Trovão",	-- Thunderlord's Cache
+	[220641] = "Tesouro do Senhor do Trovão",	-- Thunderlord Cache
 	[220820] = "|cFFFFFFFFStep 6:|r Página 1127",	-- |cFFFFFFFFStep 6:|r Page 1127
 	[220821] = "|cFFFFFFFFStep 5:|r Página 845",	-- |cFFFFFFFFStep 5:|r Page 845
 	[220832] = "Tesouro afundado",	-- Sunken Treasure
