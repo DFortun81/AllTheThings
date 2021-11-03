@@ -144,6 +144,12 @@ _.Zones =
 					["provider"] = { "n", 177928 },	-- Archivist Roh-Dahl
 					["coord"] = { 39.4, 51.3, KORTHIA },
 				}),
+				q(65080, {	-- Anima, Diverted
+					["sourceQuest"] = 65020,	-- Practical Applications
+					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+					["coord"] = { 62.8, 22.6, KORTHIA },
+					["timeline"] = { "added 9.1.5" },
+				}),
 				q(64560, {	-- Anima Reclamation (intro version)
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance (must be on quest)
 					["provider"] = { "n", 178793 },	-- Kael'thas Sunstrider
@@ -362,6 +368,11 @@ _.Zones =
 					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 					["coord"] = { 62.7, 22.5, KORTHIA },
 				}),
+				q(65020, {	-- Practical Applications
+					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+					["coord"] = { 62.8, 22.6, KORTHIA },
+					["timeline"] = { "added 9.1.5" },
+				}),
 				q(63759, {	-- Redirect the Search
 					["sourceQuests"] = {
 						63757,	-- Looting the Looters
@@ -369,6 +380,11 @@ _.Zones =
 						63758,	-- The Last Place You Look
 					},
 					["provider"] = { "n", 177924 },	-- Caretaker Kah-Than
+				}),
+				q(65145, {	-- Relic Clues
+					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+					["coord"] = { 62.8, 22.6, KORTHIA },
+					["timeline"] = { "added 9.1.5" },
 				}),
 				q(64368, {	-- Relic Efficiency
 					-- no known source quests, would need to reach tier 4 without doing other quests I assume...
@@ -623,11 +639,6 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 61.7, 24.0, KORTHIA },
 				}),
-				q(65080, {	 -- Anima, Diverted
-					["sourceQuest"] = 65020,	-- Practical Applications
-					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-					["coord"] = { 62.8, 22.6, KORTHIA },
-				}),
 				q(63783, {	-- Anima Reclamation
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178793 },	-- Kael'thas Sunstrider
@@ -816,6 +827,12 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 61.3, 21.3, KORTHIA },
 				}),
+				q(65266, {	-- Lost Research
+					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+					["coord"] = { 62.8, 22.6, KORTHIA },
+					["timeline"] = { "added 9.1.5" },
+					["isWeekly"] = true,
+				}),
 				q(63777, {	-- Sealed Secrets
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178845 },	-- Ve'lonu
@@ -926,12 +943,6 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 60.1, 27.5, KORTHIA },
 				}),
-				q(65266, {	-- Lost Research
-					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-					["coord"] = { 62.8, 22.6, KORTHIA },
-					["timeline"] = { "added 9.1.5" },
-					["isWeekly"] = true,
-				}),
 				q(63937, {	-- Nasty, Big, Pointy Teeth
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178805 },	-- Emeni
@@ -958,15 +969,6 @@ _.Zones =
 					["g"] = {
 						ach(15056),		-- Friend of Bloop
 					},
-				}),
-				q(65020, {	-- Practical Applications
-					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-					["coord"] = { 62.8, 22.6, KORTHIA },
-				}),
-				q(65145, {	-- Relic Clues
-					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-					["coord"] = { 62.8, 22.6, KORTHIA },
-					["timeline"] = { "added 9.1.5" },
 				}),
 				q(65146, {	-- Relic Hunter
 					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir

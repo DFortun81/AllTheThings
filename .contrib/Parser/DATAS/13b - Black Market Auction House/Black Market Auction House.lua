@@ -391,10 +391,11 @@ root("BlackMarket", bubbleDown({ ["u"] = BLACK_MARKET, },{
 	i(141006),			-- The First Satyr's Spaulders
 	i(169430, {			--  Unclaimed Black Market Container
 		["sym"] = {
-			{"select", "headerID", -94},	-- Select BMAH header
-			{"pop"},						-- Pop the header
-			{"not", "itemID", 169430 },		-- Remove itself from the final list
-			{"not", "itemID", 141995 },		-- Remove old version from the final list
+			{"select", "headerID", -94},		-- Select BMAH header
+			{"pop"},							-- Pop the header
+			{"exclude", "headerID", VENDORS },	-- Not the Vendor Header
+			{"not", "itemID", 169430 },			-- Remove itself from the final list
+			{"not", "itemID", 141995 },			-- Remove old version from the final list
 		},
 	}),
 	un(REMOVED_FROM_GAME, i(141995)),	-- Unclaimed Black Market Container Pre 8.2.5 (they updated and added new items)

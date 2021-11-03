@@ -106,6 +106,20 @@ _.Zones =
 						i(180727),		-- Shimmermist Runner (MOUNT!)
 					},
 				}),
+				n(181694, {	-- Lost Soul (Cat)
+					["coords"] = {
+						{ 51.83, 69.23, ARDENWEALD },
+						{ 60.0, 55.13, ARDENWEALD },
+						{ 65.08, 36.46, ARDENWEALD },
+						{ 51.21, 31.04, ARDENWEALD },
+						{ 37.59, 36.25, ARDENWEALD },
+						{ 69.85, 27.32, ARDENWEALD },
+					},
+					["description"] = "This soul is found in the crotch of one of the five super trees in Ardenweald. Target and use /soothe on the Lost Soul to receive the quest.",
+					["g"] = {
+						i(187819),	-- Cat Soul
+					},
+				}),
 			}),
 		}),
 	}),

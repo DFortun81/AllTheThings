@@ -237,6 +237,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(185049),	-- Saurolisk Soul (AV)
+				i(187876),	-- Saurolisk Hatchling Soul (AV)
 			}),
 		}),
 	}),

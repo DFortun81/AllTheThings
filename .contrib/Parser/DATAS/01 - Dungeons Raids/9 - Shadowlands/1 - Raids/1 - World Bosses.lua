@@ -64,6 +64,7 @@ _.Instances = { tier(SL_TIER, {
 					i(182442),	-- Veteran's Respite
 					i(181775),	-- Way of the Fae
 					i(183199),	-- Withering Ground
+					i(187882),	-- Alpaca Soul
 				},
 			}),
 			e(2456, {	-- Mor'geth <Tormentor of the Damned>

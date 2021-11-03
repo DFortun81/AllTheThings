@@ -15,13 +15,29 @@ _.ExpansionFeatures =
 			["g"] = {
 				n(-936, sharedData({["customCollect"] = { "SL_COV_NFA" }}, {	-- Soulshape Forms
 					-- TODO: fill in remaining quests that are as yet unknown
+					q(65010, {	-- Alpaca Soul
+						["provider"] = { "i", 187882 },	-- Alpaca Soul
+					}),
 					q(62422, {	-- Ardenmoth Soul
 						["provider"] = { "i", 182165 },	-- Ardenmoth Soul
+					}),
+					q(64961, {	-- Cat Soul
+						["provider"] = { "i", 187819 },	-- Cat Soul
+					}),
+					q(64939, {	-- Choofa/Squirrel Soul
+						["name"] = "Choofa/Squirrel Soul",
+						["icon"] = 645526,
+						["description"] = "Talk to Choofa in the covenant sanctum."
 					}),
 					pvp(q(64651, {	-- Cobra Soul
 						["description"] = "Drops from rated PvP.",
 						["provider"] = { "i", 182167 },	-- Cobra Soul
 					})),
+					q(64938, {	-- Corgi Soul
+						["name"] = "Corgi Soul",
+						["icon"] = 1339013,
+						["description"] = "Emote /pet on the little corgi named Sparkle running around the night fae covenant sanctum.",
+					}),
 					q(62424, {	-- Crane Soul
 						["provider"] = { "i", 182168 },	-- Crane Soul
 					}),
@@ -36,6 +52,9 @@ _.ExpansionFeatures =
 					}),
 					q(62428, {	-- Equine Soul
 						["provider"] = { "i", 182172 },	-- Equine Soul
+					}),
+					q(64994, {	-- Frog Soul
+						["provider"] = { "i", 187877 },	-- Frog Soul
 					}),
 					pvp(q(62426, {	-- Gryphon Soul
 						["description"] = "Drops from rated PvP.",
@@ -67,6 +86,9 @@ _.ExpansionFeatures =
 						["provider"] = { "i", 182177 },	-- Owlcat Soul
 						["crs"] = { 175732 },	-- Sylvanas Windrunner
 					}),
+					q(64989, {	-- Porcupine Soul
+						["provider"] = { "i", 187870 },	-- Porcupine Soul
+					}),
 					q(64992, {	-- Prairie Dog Soul
 						["provider"] = { "i", 187873 },	-- Prairie Dog Soul
 					}),
@@ -83,6 +105,9 @@ _.ExpansionFeatures =
 					}),
 					q(63605, {	-- Saurolisk Soul
 						["provider"] = { "i", 185049 },	-- Saurolisk Soul
+					}),
+					q(64993, {	-- Saurolisk Hatchling Soul
+						["provider"] = { "i", 187876 },	-- Saurolisk Hatchling Soul
 					}),
 					q(62431, {	-- Shadowstalker Soul
 						["provider"] = { "i", 182176 },	-- Shadowstalker Soul
@@ -128,26 +153,17 @@ _.ExpansionFeatures =
 					--]]
 					-- Has no source
 					--[[
-					q(65010, {	-- Alpaca Soul
-						["provider"] = { "i", 187882 },	-- Alpaca Soul
-					}),
 					q(65025, {	-- Boar Soul
 						["provider"] = { "i", 187905 },	-- Boar Soul
 					}),
 					q(64984, {	-- Bunny Soul
 						["provider"] = { "i", 187858 },	-- Bunny Soul
 					}),
-					q(64961, {	-- Cat Soul
-						["provider"] = { "i", 187819 },	-- Cat Soul
-					}),
 					q(64941, {	-- Chicken Soul
 						["provider"] = { "i", 187813 },	-- Chicken Soul
 					}),
 					q(65024, {	-- Cloud Serpent Soul
 						["provider"] = { "i", 187904 },	-- Cloud Serpent Soul
-					}),
-					q(64994, {	-- Frog Soul
-						["provider"] = { "i", 187877 },	-- Frog Soul
 					}),
 					q(65008, {	-- Goat Soul
 						["provider"] = { "i", 187880 },	-- Goat Soul
@@ -167,9 +183,6 @@ _.ExpansionFeatures =
 					q(65026, {	-- Owl Soul
 						["provider"] = { "i", 187906 },	-- Owl Soul
 					}),
-					q(64989, {	-- Porcupine Soul
-						["provider"] = { "i", 187870 },	-- Porcupine Soul
-					}),
 					q(64985, {	-- Rat Soul
 						["provider"] = { "i", 187859 },	-- Rat Soul
 					}),
@@ -178,9 +191,6 @@ _.ExpansionFeatures =
 					}),
 					q(64988, {	-- Snake Soul
 						["provider"] = { "i", 187862 },	-- Snake Soul
-					}),
-					q(64993, {	-- Saurolisk Hatchling Soul
-						["provider"] = { "i", 187876 },	-- Saurolisk Hatchling Soul
 					}),
 					q(65022, {	-- Sporebat Soul
 						["provider"] = { "i", 187902 },	-- Sporebat Soul

@@ -982,6 +982,7 @@ _.HiddenQuestTriggers = {
 	q(65079),	-- Swapping Cov to Necrolord at R80
 	-- 9.1.5?
 	q(62923),	-- Swapped to Venthyr from Necrolord at R80? Probably a old hqt
+	--q(65112),	-- Using Broker Mark of Distinction(188167) Alliance DH NF
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {

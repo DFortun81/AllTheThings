@@ -7,6 +7,12 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(ARDENWEALD, {
 			n(QUESTS, {
+				prof(FISHING, {
+					i(187877, {	-- Frog Soul
+						["description"] = "Fish anywhere in Ardenweald to recieve this soul.",
+						["requireSkill"] = FISHING,
+					}),
+				}),
 				q(58163, {	-- A Desperate Solution
 					["sourceQuests"] = { 58161 },	-- Forest Disappearances
 					["provider"] = { "o", 349515 },	-- Battered Journal

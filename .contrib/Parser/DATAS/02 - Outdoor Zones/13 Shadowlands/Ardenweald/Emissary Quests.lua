@@ -16,6 +16,7 @@ _.Zones =
 						i(180649, {	-- Wild Hunt Supplies
 							i(180635),	-- Hungry Burrower
 							i(183800),	-- Amber Ardenmoth
+							i(187870),	-- Porcupine Soul
 						}),
 					},
 				}),

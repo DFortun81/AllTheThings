@@ -33,5 +33,6 @@ _.Zones =
 _.HiddenQuestTriggers = {
 	q(64286),	-- Paragon of Death's Advance
 	q(64287),	-- Paragon of The Archivists' Codex
+	--q(64670),	-- Paragon of The Archivists' Codex??
 	q(64669),	-- triggered when turning in Supplies from Death's Advance
 };

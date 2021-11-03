@@ -49,17 +49,11 @@ _.NeverImplemented =
 		i(188247),	-- Boots of the Blightbelcher
 		i(188242),	-- Cleric's Sabatons
 		i(188245),	-- Cold Cage Moccasins
-		i(188237),	-- Conjuror's Slippers
 		i(188251),	-- Corrupted Cleats
-		i(188249),	-- Freezing Footguards
 		i(188239),	-- Keeper's Strides
-		i(188236),	-- Patroller's Footwear
 		i(188250),	-- Pustule Prancers
-		i(188248),	-- Searing Stompers
-		i(188243),	-- Shadow-Stitched Stalkers
 		i(188241),	-- Stalker's Treads
 		i(188238),	-- Thief's Footpads
-		i(188244),	-- Virulent Gravetreaders
 		-- Unknown (Maybe Trial of Style?)
 		i(187914),	-- Captain Noteo's Unused Eye Patch
 		-- Unknown
