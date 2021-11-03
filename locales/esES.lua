@@ -1039,6 +1039,7 @@ for key,value in pairs({
 	[179827] = "Se busca/Desaparecido/Objetos perdidos",	-- Wanted/Missing/Lost & Found
 	[179832] = "Almohada ornamentada de Pilaprieta",	-- Pillaclencher's Ornate Pillow
 	[180229] = "Montón hudú maldito",	-- Jinxed Hoodoo Pile
+	[180248] = "Banco de pezricos",	-- School of Tastyfish
 	--TODO: [180327] = "Brazier of Madness",	-- Brazier of Madness
 	[180366] = "Caja de aparejos maltrecha",	-- Battered Tackle Box
 	[180368] = "Tablilla de Locura",	-- Tablet of Madness
@@ -1550,6 +1551,7 @@ for key,value in pairs({
 	[230611] = "Saco de botín de pálido",	-- Pale Loot Sack
 	[230643] = "Nido de garráptero",	-- Teroclaw Nest
 	[230664] = "Espada de cristal de Torvath",	-- The Crystal Blade of Torvath
+	[230865] = "Lista de ingredientes",	-- List of Ingredients
 	[230909] = "Suministros olvidados",	-- Forgotten Supplies
 	[231063] = "Alijo de materiales de lady Sena",	-- Lady Sena's Materials Stash
 	[231064] = "Alijo de otros materiales de lady Sena",	-- Lady Sena's Other Materials Stash
