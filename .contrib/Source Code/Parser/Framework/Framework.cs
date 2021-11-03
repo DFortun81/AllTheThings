@@ -1173,20 +1173,6 @@ namespace ATT
         /// </summary>
         public static void Process()
         {
-            // Go through and merge all of the item species data into the item containers.
-            foreach (var pair in Items.AllItemsWithSpecies)
-            {
-                var item = Items.GetNull(pair.Key);
-                if (item != null) Items.MergeInto(pair.Key, pair.Value, item);
-            }
-
-            // Go through and merge all of the toy data into the item containers.
-            foreach (var pair in Items.AllToys)
-            {
-                var item = Items.GetNull(pair.Key);
-                if (item != null) Items.MergeInto(pair.Key, new Dictionary<string, object> { { "isToy", pair.Value } }, item);
-            }
-
             // Go through all of the items in the database and calculate the Filter ID
             // if the Filter ID is not already assigned. (manual assignment should always override this)
             foreach (var data in Items.AllItems)
@@ -1219,6 +1205,7 @@ namespace ATT
             // Merge the Item Data into the Containers again, this time syncing Item data into nested Item groups
             //Trace.WriteLine("Container Processing #2...");
             MergeItemData = false;
+            AdditionalProcessing();
             foreach (var container in Objects.AllContainers.Values) Process(container, 0, 1);
             //Trace.WriteLine("Container Processing #2 Done.");
 
@@ -1604,6 +1591,26 @@ namespace ATT
                         { "g", unsortedQuests },
                     });
                 }
+            }
+        }
+
+        /// <summary>
+        /// Does additional processing after the first pass of processing has completed
+        /// </summary>
+        private static void AdditionalProcessing()
+        {
+            // Go through and merge all of the item species data into the item containers.
+            foreach (var pair in Items.AllItemsWithSpecies)
+            {
+                var item = Items.GetNull(pair.Key);
+                if (item != null) Items.MergeInto(pair.Key, pair.Value, item);
+            }
+
+            // Go through and merge all of the toy data into the item containers.
+            foreach (var pair in Items.AllToys)
+            {
+                var item = Items.GetNull(pair.Key);
+                if (item != null) Items.MergeInto(pair.Key, new Dictionary<string, object> { { "isToy", pair.Value } }, item);
             }
         }
 
