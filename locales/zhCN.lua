@@ -1308,7 +1308,7 @@ for key, value in pairs({
 	[202975] = "沉没的厕所",	-- Submerged Outhouse
 	[203128] = "破瓶子",	-- Broken Bottle
 	[203134] = "空基座",	-- Empty Pedestal
-	--TODO: [203140] = "Broken Prong",	-- Broken Prong
+	[203140] = "损坏的纳迦三叉齿戟",	-- Broken Prong
 	[203186] = "别进来！",	-- STAY OUT!
 	[203207] = "暗影法典",	-- Codex of Shadows
 	[203301] = "纳迦三叉戟",	-- Naga Tridents
@@ -1556,7 +1556,7 @@ for key, value in pairs({
 	--TODO: [226993] = "Survivalist's Cache",	-- Survivalist's Cache
 	[226994] = "肃霜宝箱",	-- Grimfrost Treasure
 	[226996] = "鬣蜥人残渣",	-- Goren Leftovers
-	--TODO: [227134] = "Iron Horde Cargo Shipment",	-- Iron Horde Cargo Shipment
+	[227134] = "钢铁部落货箱",	-- Iron Horde Cargo Shipment
 	[227504] = "带刺的雷神长矛",	-- Barbed Thunderlord Spear	--TODO: This was manually translated
 	[227527] = "圣光使者",	-- Lightbearer
 	--TODO: [227587] = "Yuuri's Gift",	-- Yuuri's Gift
@@ -2176,7 +2176,7 @@ for key, value in pairs({
 	[252272] = "冒烟的靴子",	-- Smoky Boots	--TODO: This was manually translated
 	--TODO: [252273] = "Box of Throwing Daggers",	-- Box of Throwing Daggers
 	[252277] = "菊花茶",	-- Thistle Tea	--TODO: This was manually translated
-	[252279] = "失窃的神器传说大典",	-- Stolen Tome of Artifact Lore	--TODO: This was manually translated
+	[252279] = "失窃的神器传说大典",	-- Stolen Tome of Artifact Lore
 	--TODO: [252282] = "Sparkling Set of Keys",	-- Sparkling Set of Keys
 	--TODO: [252284] = "Pile of Sticky Bombs",	-- Pile of Sticky Bombs
 	--TODO: [252289] = "Vanishing Powder",	-- Vanishing Powder
@@ -2517,7 +2517,7 @@ for key, value in pairs({
 	[294335] = "腐烂的土豆",	-- Rotten Potato
 	--TODO: [294703] = "Grimmy's Rusty Lockbox",	-- Grimmy's Rusty Lockbox
 	[296479] = "海军统帅的提箱",	-- Lord Admiral's Footlocker
-	[296536] = "沾血的哨兵战刃",	-- Bloodied Sentinel's Glaive	--TODO: This was manually translated
+	[296536] = "沾血的哨兵战刃",	-- Bloodied Sentinel's Glaive
 	[296915] = "德鲁斯特石碑：法阵",	-- Drust Stele: The Circle
 	[296916] = "德鲁斯特石碑：仪式",	-- Drust Stele: The Ritual
 	[296917] = "德鲁斯特石碑：巨树",	-- Drust Stele: The Tree
@@ -2634,7 +2634,7 @@ for key, value in pairs({
 	--TODO: [328343] = "Direbrew Cog",	-- Direbrew Cog
 	--TODO: [328413] = "Hozen Totem",	-- Hozen Totem
 	[329641] = "悬赏：狂小鼠和穴霸",	-- Wanted: Junkbrat and Roadtrogg
-	--TODO: [329783] = "Glowing Arcane Trunk",	-- Glowing Arcane Trunk
+	[329783] = "发光的奥能宝箱",	-- Glowing Arcane Trunk
 	--TODO: [329805] = "Strange Crystal",	-- Strange Crystal
 	[329918] = "野猪人的宝藏",	-- Quilboar Treasures
 	[329919] = "失窃的补给品",	-- Stolen Supplies

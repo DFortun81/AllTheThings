@@ -1406,7 +1406,7 @@ for key,value in pairs({
 	--TODO: [218437] = "The Curse and the Silence",	-- The Curse and the Silence
 	[218438] = "백왕의 시대",	-- Age of a Hundred Kings
 	[218750] = "주문서",	-- Work Orders
-	--TODO: [220641] = "Thunderlord's Cache",	-- Thunderlord's Cache
+	[220641] = "천둥군주 보관함",	-- Thunderlord Cache
 	--TODO: [220820] = "|cFFFFFFFFStep 6:|r Page 1127",	-- |cFFFFFFFFStep 6:|r Page 1127
 	--TODO: [220821] = "|cFFFFFFFFStep 5:|r Page 845",	-- |cFFFFFFFFStep 5:|r Page 845
 	[220832] = "가라앉은 보물",	-- Sunken Treasure
@@ -1658,7 +1658,7 @@ for key,value in pairs({
 	[233593] = "광택나는 서슬니 해골",	-- Polished Saberon Skull
 	[233598] = "정령 족쇄",	-- Elemental Shackles
 	[233611] = "높은망치 해머",	-- Highmaul Sledge
-	--TODO: [233613] = "Telaar Defender Shield",	-- Telaar Defender Shield
+	[233613] = "텔라아르 수호자 방패",	-- Telaar Defender Shield
 	[233618] = "오우거 구슬",	-- Ogre Beads
 	--TODO: [233623] = "Adventurer's Pouch",	-- Adventurer's Pouch
 	[233626] = "회색구렁일족 뼈무덤",	-- Grizzlemaw's Bonepile
@@ -1919,7 +1919,7 @@ for key,value in pairs({
 	[241847] = "사령관의 방패",	-- The Commander's Shield
 	[241848] = "번쩍이는 막대",	-- Dazzling Rod
 	[242242] = "작은 보물 상자",	-- Small Treasure Chest
-	--TODO: [242249] = "Partially Mined Apexis Crystal",	-- Partially Mined Apexis Crystal
+	[242249] = "반쯤 발굴된 에펙시스 수정",	-- Partially Mined Apexis Crystal
 	[242250] = "작은 보물 상자",	-- Small Treasure Chest
 	[242328] = "작은 보물 상자",	-- Small Treasure Chest
 	[242350] = "보물 상자",	-- Treasure Chest
