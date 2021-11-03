@@ -79,6 +79,9 @@ _.ExpansionFeatures =
 					q(62438, {	-- Lupine Soul
 						["provider"] = { "i", 182182 },	-- Lupine Soul
 					}),
+					q(63610, {	-- Mammoth Soul
+						["provider"] = { "i", 185054 },	-- Mammoth Soul
+					}),
 					q(62430, {	-- Moose Soul
 						["provider"] = { "i", 182175 },	-- Moose Soul
 					}),
@@ -120,6 +123,9 @@ _.ExpansionFeatures =
 					q(62436, {	-- Shrieker Soul
 						["provider"] = { "i", 182185 },	-- Shrieker Soul
 						["crs"] = { 164501 },	-- Mistcaller
+					}),
+					q(64988, {	-- Snake Soul
+						["provider"] = { "i", 187862 },	-- Snake Soul
 					}),
 					q(62420, {	-- Snapper Soul
 						["provider"] = { "i", 181313 },	-- Snapper Soul
@@ -174,9 +180,6 @@ _.ExpansionFeatures =
 					q(63609, {	-- Kodo Soul
 						["provider"] = { "i", 185053 },	-- Kodo Soul
 					}),
-					q(63610, {	-- Mammoth Soul
-						["provider"] = { "i", 185054 },	-- Mammoth Soul
-					}),
 					q(64959, {	-- Otter Soul
 						["provider"] = { "i", 187818 },	-- Otter Soul
 					}),
@@ -188,9 +191,6 @@ _.ExpansionFeatures =
 					}),
 					q(64995, {	-- Saurid Soul
 						["provider"] = { "i", 187878 },	-- Saurid Soul
-					}),
-					q(64988, {	-- Snake Soul
-						["provider"] = { "i", 187862 },	-- Snake Soul
 					}),
 					q(65022, {	-- Sporebat Soul
 						["provider"] = { "i", 187902 },	-- Sporebat Soul

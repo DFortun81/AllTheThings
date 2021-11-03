@@ -17,6 +17,7 @@ _.Zones =
 							i(180635),	-- Hungry Burrower
 							i(183800),	-- Amber Ardenmoth
 							i(187870),	-- Porcupine Soul
+							i(185054),	-- Mammoth Soul
 						}),
 					},
 				}),

@@ -184,6 +184,7 @@ _.ExpansionFeatures =
 								i(187512, {	-- Tome of Small Sins (TOY!)
 									["timeline"] = { "added 9.1.5" },
 								}),
+								i(187862),	-- Snake Soul
 							},
 						}),
 						i(181732, {	-- Tribute of the Ambitious / Maldraxxus
@@ -233,6 +234,7 @@ _.ExpansionFeatures =
 								i(187512, {	-- Tome of Small Sins (TOY!)
 									["timeline"] = { "added 9.1.5" },
 								}),
+								i(187862),	-- Snake Soul
 							},
 						}),
 						i(181733, {	-- Tribute of the Duty-Bound / Maldraxxus

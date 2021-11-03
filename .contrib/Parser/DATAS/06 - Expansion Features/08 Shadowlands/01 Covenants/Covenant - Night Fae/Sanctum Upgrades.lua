@@ -568,10 +568,11 @@ _.ExpansionFeatures =
 												{ "i", 176832, 4 },	-- Wildseed Root Grain x4
 											}
 										}),
+										i(187705, {	-- Choofa's Call (TOY!)
+											["description"] = "Please report if you get this toy from another Spirit.",
+											["timeline"] = { "added 9.1.5" },
+										}),
 									},
-								}),
-								i(187705, {	-- Choofa's Call (TOY!)
-									["timeline"] = { "added 9.1.5" },
 								}),
 							}),
 							n(QUESTS, {
