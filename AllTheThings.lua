@@ -15649,7 +15649,7 @@ function app:GetDataCache()
 		toyCategory.icon = app.asset("Category_ToyBox");
 		table.insert(g, toyCategory);
 		]]--
-		
+
 		-- Achievements (Dynamic!)
 		local achievementsCategory = app.CreateNPC(-4, {});
 		achievementsCategory.expanded = false;
@@ -15875,7 +15875,7 @@ function app:GetDataCache()
 			tinsert(inst.parent.g, inst);
 			return inst;
 		end
-		
+
 		-- Update Achievement data.
 		local function cacheAchievementData(self, categories, g)
 			if g then
@@ -15899,7 +15899,7 @@ function app:GetDataCache()
 				c = app.CreateAchievementCategory(achievementCategoryID);
 				categories[achievementCategoryID] = c;
 				c.g = {};
-				
+
 				local p = getAchievementCategory(categories, c.parentCategoryID);
 				if not p.g then p.g = {}; end
 				table.insert(p.g, c);
@@ -15968,7 +15968,7 @@ function app:GetDataCache()
 			insertionSort(self.g, achievementSort, true);
 		end
 		achievementsCategory:OnUpdate();
-		
+
 		-- Update Faction data.
 		--[[
 		-- TODO: Make a dynamic Factions section. It works, but we have one already, so we don't need it.
@@ -16580,6 +16580,8 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		end
 		-- set of keys for headers which can be nested in the minilist automatically, but not as a direct top header
 		local subGroupKeys = {
+			["filterID"] = app.CreateFilter,
+			["professionID"] = app.CreateProfession,
 			["raceID"] = app.CreateRace,
 			["holidayID"] = app.CreateHoliday,
 		};
@@ -16597,6 +16599,8 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			[-228] = "flightPathID",
 		-- HOLIDAY = -3;
 			[-3] = "holidayID",
+		-- PROFESSIONS = -38;
+			[-38] = "professionID",
 		-- QUESTS = -17;
 			[-17] = "questID",
 		-- RARES = -16;
