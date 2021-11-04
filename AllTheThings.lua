@@ -2980,7 +2980,14 @@ ResolveSymbolicLink = function(o)
 				-- Instruction to search the full database for something.
 				local cache = app.SearchForField(sym[2], sym[3]);
 				if cache then
-					ArrayAppend(searchResults, cache);
+					for _,s in ipairs(cache) do
+						if s == o or (s.hash and s.hash == o.hash) then
+							print("symlink selected itself and will be ignored in results!",o.hash);
+						else
+							tinsert(searchResults, s);
+						end
+					end
+					-- ArrayAppend(searchResults, cache);
 				else
 					print("Failed to select ", sym[2], sym[3]);
 				end
