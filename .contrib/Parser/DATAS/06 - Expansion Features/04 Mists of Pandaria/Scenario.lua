@@ -306,10 +306,7 @@ _.ExpansionFeatures =
 						["maps"] = { 523 },	-- Dun Morogh (Blood in the Snow scenario)
 						["g"] = {
 							i(98133, {	-- Greater Cache of Treasures
-								["sym"] = {
-									{"select", "itemID", 98133},	-- Heroic Cache of Treasures
-									{"pop"},
-								},
+								["sym"] = { {"fill"} },
 							}),
 						},
 					}),
@@ -320,10 +317,7 @@ _.ExpansionFeatures =
 						["maps"] = { 520, 521 },	-- Vale of Eternal Blossoms (Dark Heart of Pandaria scenario)
 						["g"] = {
 							i(98133, {	-- Greater Cache of Treasures
-								["sym"] = {
-									{"select", "itemID", 98133},	-- Heroic Cache of Treasures
-									{"pop"},
-								},
+								["sym"] = { {"fill"} },
 							}),
 						},
 					}),
@@ -333,10 +327,7 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							i(98546,  {  -- Bulging Heroic Cache of Treasures
-								["sym"] = {
-									{"select", "itemID", 98546},	-- Heroic Cache of Treasures
-									{"pop"},
-								},
+								["sym"] = { {"fill"} },
 							}),
 						},
 					}),
@@ -346,10 +337,7 @@ _.ExpansionFeatures =
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(98546,  {  -- Bulging Heroic Cache of Treasures
-								["sym"] = {
-									{"select", "itemID", 98546},	-- Heroic Cache of Treasures
-									{"pop"},
-								},
+								["sym"] = { {"fill"} },
 							}),
 						},
 					}),
