@@ -32,6 +32,14 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 164937 },	-- Runecarver
 					["coord"] = { 50.6, 57.2, 1912 },
 				}),
+				q(65035, {	-- Return to Oribos
+					["sourceQuests"] = { 64850 },	-- Traversing Torghast
+					["provider"] = { "n", 181328 },	-- Ve'nish
+					["coord"] = { 35.5, 46.9, 1627 },
+					["isBreadcrumb"] = true,
+					["timeline"] = { "added 9.1.5" },
+					["customCollect"] = "SL_SKIP",
+				}),
 				q(64850, {	-- Traversing Torghast
 					["provider"] = { "n", 181328 },	-- Ve'nish
 					["coord"] = { 35.5, 46.9, 1627 },
@@ -985,7 +993,7 @@ _.HiddenQuestTriggers = {
 		
 		-- 9.1.5
 		--q(64848), Enter Torghast as lvl 56 NF Druid
-		--q(65308), Enter Torghast as lvl 56 NF Druid
+		q(65308), -- Leveling in Torghast
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {

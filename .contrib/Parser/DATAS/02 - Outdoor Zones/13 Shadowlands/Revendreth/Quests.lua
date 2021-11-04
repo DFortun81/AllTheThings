@@ -12,6 +12,9 @@ _.Zones =
 					["provider"] = { "n", 165859 },	-- Dimwiddle
 					["coord"] = { 60.7, 62.5, REVENDRETH },
 				}),
+				q(64963, {	-- A Defector's Request
+					["provider"] = { "i", 187822 },	-- A Defector's Request
+				}),
 				q(59714, {	-- A Fine Vintage
 					["sourceQuests"] = { 59846 },	-- Finders-Keepers, Sinners-Weepers
 					["provider"] = { "n", 165864 },	-- Nadjia the Mistblade

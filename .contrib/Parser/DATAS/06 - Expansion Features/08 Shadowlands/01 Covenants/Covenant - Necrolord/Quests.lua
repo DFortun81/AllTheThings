@@ -950,6 +950,12 @@ _.ExpansionFeatures =
 							follower(1262),	-- Bonesmith Heirmir
 						},
 					}),
+					q(65104, {	-- Return More Lost Souls
+						["sourceQuests"] = { 62866 },	-- Return Lost Souls
+						["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
+						["coord"] = { 46.5, 42.2, SEAT_OF_THE_PRIMUS },
+						["isRepeatable"] = true,
+					}),
 				})),
 			},
 		}),

@@ -90,4 +90,7 @@ _.HiddenQuestTriggers = {
 	q(64444),	-- hitting Renown 67
 	q(63601),	-- learning Ensemble: Aspiring Aspirant
 	q(64445),	-- Renown 76
+	-- 9.1.5 New HQTS
+	q(65107),	-- hitting Renown 15 (Anima instead of Soulkeeper Upgrade)
+	q(65108),	-- hitting Renown 24 (Anima instead of Soulkeeper Upgrade)
 };

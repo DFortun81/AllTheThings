@@ -93,6 +93,6 @@ _.HiddenQuestTriggers = {
 	q(64578),	-- triggered after watching Kael'thas/The Accuser RP
 	q(64454),	-- Renown 76
 	-- 9.1.5 New HQTS
-	--q(65113),	-- hitting Renown 15 (Anima instead of Soulkeeper Upgrade)
-	--q(65114),	-- hitting Renown 24 (Anima instead of Soulkeeper Upgrade)
+	q(65113),	-- hitting Renown 15 (Anima instead of Soulkeeper Upgrade)
+	q(65114),	-- hitting Renown 24 (Anima instead of Soulkeeper Upgrade)
 };

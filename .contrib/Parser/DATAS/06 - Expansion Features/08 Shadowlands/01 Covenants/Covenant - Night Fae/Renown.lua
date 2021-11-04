@@ -86,4 +86,7 @@ _.HiddenQuestTriggers = {
 	q(64450),	-- hitting Renown 67
 	q(63598),	-- learning Ensemble: Garb of Pure Spirit (Renown reward)
 	q(64451),	-- Renown 76
+	-- 9.1.5 New HQTS
+	q(65111),	-- hitting Renown 15 (Anima instead of Soulkeeper Upgrade)
+	q(65112),	-- hitting Renown 24 (Anima instead of Soulkeeper Upgrade)
 };

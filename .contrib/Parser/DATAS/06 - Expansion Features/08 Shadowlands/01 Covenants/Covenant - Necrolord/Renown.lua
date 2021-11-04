@@ -90,4 +90,7 @@ _.HiddenQuestTriggers = {
 	q(64447),	-- hitting Renown 67
 	q(63628),	-- learning Ensemble: Initiate's Necromantle Vestments (Renown reward)
 	q(64448),	-- Renown 76
+	-- 9.1.5 New HQTS
+	q(65109),	-- hitting Renown 15 (Anima instead of Soulkeeper Upgrade)
+	q(65110),	-- hitting Renown 24 (Anima instead of Soulkeeper Upgrade)
 };

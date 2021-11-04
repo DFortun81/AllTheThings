@@ -132,6 +132,10 @@ _.ExpansionFeatures =
 						i(181468),	-- Veiled Augment Rune
 						-- Gear
 						i(185942),	-- Sinheart Choker
+						i(187821, {	-- Bar-Fusan's Hackblade
+							["sourceQuests"] = { 64963 },	-- A Defector's Request
+							["description"] = "Can only spawn after completing the quest |cFFFFD700A Defector's Request'(64963)|r.",
+						}),
 					},
 				}),
 				n(-901, {	-- Covenant Callings

@@ -224,7 +224,15 @@ _.Zones =
 					["provider"] = { "n", 167486 },	-- Tal-Inara
 					["coord"] = { 40.5, 65.9, ORIBOS },
 				}),
+				q(65031, {	-- Battlegrounds
+					["provider"] = { "n", 167486 },	-- Tal-Inara
+					["coord"] = { 40.5, 65.9, ORIBOS },
+					["isBreadcrumb"] = true,
+					["timeline"] = { "added 9.1.5" },
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
+				}),
 				q(65032, {	-- Battleground Observers
+					["sourceQuests"] = { 65031 },	-- Battlegrounds
 					["provider"] = { "n", 167486 },	-- Tal-Inara
 					["coord"] = { 40.5, 65.9, ORIBOS },
 					["isBreadcrumb"] = true,
@@ -464,6 +472,13 @@ _.Zones =
 					["provider"] = { "n", 175829 },	-- Overseer Kah-Sher
 					["coord"] = { 50.5, 62.0, ORIBOS },
 				}),
+				q(64846, {	-- Torghast
+					["provider"] = { "n", 167486 },	-- Tal-Inara
+					["coord"] = { 40.5, 65.9, ORIBOS },
+					["isBreadcrumb"] = true,
+					["timeline"] = { "added 9.1.5" },
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
+				}),
 				q(60139, {	-- Torment Chamber: Jaina
 					["sourceQuests"] = { 62938 },	-- Information for a Price
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
@@ -473,6 +488,14 @@ _.Zones =
 					["sourceQuests"] = { 62969 },	-- Lest the Trail Go Cold
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, ORIBOS },
+				}),
+				q(64849, {	-- Tower of the Damned
+					["sourceQuests"] = { 64846 },	-- Torghast
+					["provider"] = { "n", 167486 },	-- Tal-Inara
+					["coord"] = { 40.5, 65.9, ORIBOS },
+					["isBreadcrumb"] = true,
+					["timeline"] = { "added 9.1.5" },
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 				}),
 				q(60274, {	-- Trading Favors
 					["provider"] = { "n", 156688 },	-- Host Ta'rela
@@ -997,7 +1020,8 @@ _.HiddenQuestTriggers = {
 	q(65079),	-- Swapping Cov to Necrolord at R80
 	-- 9.1.5?
 	q(62923),	-- Swapped to Venthyr from Necrolord at R80? Probably a old hqt
-	--q(65112),	-- Using Broker Mark of Distinction(188167) Alliance DH NF
+	q(65031),	-- Choosing Battlegrounds as leveling
+	q(64848),	-- Choosing Torghast as leveling
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {

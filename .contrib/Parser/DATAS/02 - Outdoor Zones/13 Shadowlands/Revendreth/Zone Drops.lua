@@ -13,6 +13,14 @@ _.Zones =
 					i(180868),	-- Fear's Heartpiercer
 				}),
 				i(179311),	-- Oxxein Lockbox
+				i(187822, {	-- A Defector's Request
+					["description"] = "Requires Chapter 8 of the 9.1 Campaign. Drops from Maldraxxi Defectors",
+					["crs"] = {
+						161180,	-- Maldraxxi Defector
+						163245,	-- Maldraxxi Defector
+						163243,	-- Maldraxxi Defector
+					},
+				}),
 				i(172957, {	-- Atonement Crypt Key
 					["description"] = "Used to open the crypts around |cFFFFFFFF70.1, 55.2|r.",
 					["sourceQuests"] = { 57928 },	-- Atonement Crypt Key
