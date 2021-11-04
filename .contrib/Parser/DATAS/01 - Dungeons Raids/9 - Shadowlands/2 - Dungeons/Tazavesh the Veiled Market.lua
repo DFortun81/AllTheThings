@@ -116,6 +116,13 @@ _.Instances = { tier(SL_TIER, {
 									{ "i", 180533, 1 },	-- 1x Solenium Lockbox
 								},
 							}),
+							i(187859, {	-- Rat Soul
+								["cost"] = {
+									{ "g", 7350000 },	-- 735g
+									{ "i", 179311, 2 },	-- 2x Synvir Lockbox
+									{ "i", 186161, 2 },	-- 2x Stygian Lockbox
+								},
+							}),
 						},
 					}),
 					n(180754, {	-- Questionable Trader <Cartel Ta>

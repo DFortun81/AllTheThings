@@ -24,6 +24,9 @@ _.ExpansionFeatures =
 					q(64961, {	-- Cat Soul
 						["provider"] = { "i", 187819 },	-- Cat Soul
 					}),
+					q(64941, {	-- Chicken Soul
+						["provider"] = { "i", 187813 },	-- Chicken Soul
+					}),
 					q(64939, {	-- Choofa/Squirrel Soul
 						["name"] = "Choofa/Squirrel Soul",
 						["icon"] = 645526,
@@ -88,6 +91,9 @@ _.ExpansionFeatures =
 					q(62430, {	-- Moose Soul
 						["provider"] = { "i", 182175 },	-- Moose Soul
 					}),
+					q(64959, {	-- Otter Soul
+						["provider"] = { "i", 187818 },	-- Otter Soul
+					}),
 					q(62432, {	-- Owlcat Soul
 						["provider"] = { "i", 182177 },	-- Owlcat Soul
 						["crs"] = { 175732 },	-- Sylvanas Windrunner
@@ -105,9 +111,15 @@ _.ExpansionFeatures =
 						["provider"] = { "i", 182178 },	-- Raptor Soul
 						["crs"] = { 169769 },	-- Mueh'zala
 					}),
+					q(64985, {	-- Rat Soul
+						["provider"] = { "i", 187859 },	-- Rat Soul
+					}),
 					q(62434, {	-- Runestag Soul
 						["provider"] = { "i", 182179 },	-- Runestag Soul
 						["crs"] = { 164547 },	-- Mystic Rainbowhorn
+					}),
+					q(64995, {	-- Saurid Soul
+						["provider"] = { "i", 187878 },	-- Saurid Soul
 					}),
 					q(63605, {	-- Saurolisk Soul
 						["provider"] = { "i", 185049 },	-- Saurolisk Soul
@@ -160,39 +172,27 @@ _.ExpansionFeatures =
 						["provider"] = { "i", 185047 },	-- Yak Soul
 					}),
 					--]]
-					-- Has no source
+					-- Has no source (Many suspected to be from TW
 					--[[
-					q(65025, {	-- Boar Soul
+					q(65025, {	-- Boar Soul (WoD?)
 						["provider"] = { "i", 187905 },	-- Boar Soul
 					}),
 					q(64984, {	-- Bunny Soul
 						["provider"] = { "i", 187858 },	-- Bunny Soul
 					}),
-					q(64941, {	-- Chicken Soul
-						["provider"] = { "i", 187813 },	-- Chicken Soul
-					}),
-					q(65024, {	-- Cloud Serpent Soul
+					q(65024, {	-- Cloud Serpent Soul (MoP?)
 						["provider"] = { "i", 187904 },	-- Cloud Serpent Soul
 					}),
-					q(65023, {	-- Jormungar Soul
+					q(65023, {	-- Jormungar Soul (WRATH?)
 						["provider"] = { "i", 187903 },	-- Jormungar Soul
 					}),
-					q(63609, {	-- Kodo Soul
+					q(63609, {	-- Kodo Soul (Cata?)
 						["provider"] = { "i", 185053 },	-- Kodo Soul
 					}),
-					q(64959, {	-- Otter Soul
-						["provider"] = { "i", 187818 },	-- Otter Soul
-					}),
-					q(65026, {	-- Owl Soul
+					q(65026, {	-- Owl Soul (Legion?)
 						["provider"] = { "i", 187906 },	-- Owl Soul
 					}),
-					q(64985, {	-- Rat Soul
-						["provider"] = { "i", 187859 },	-- Rat Soul
-					}),
-					q(64995, {	-- Saurid Soul
-						["provider"] = { "i", 187878 },	-- Saurid Soul
-					}),
-					q(65022, {	-- Sporebat Soul
+					q(65022, {	-- Sporebat Soul (TBC?)
 						["provider"] = { "i", 187902 },	-- Sporebat Soul
 					}),
 					--]]

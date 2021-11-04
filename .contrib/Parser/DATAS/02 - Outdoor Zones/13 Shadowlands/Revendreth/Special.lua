@@ -102,6 +102,13 @@ _.Zones =
 						}),
 					},
 				}),
+				n(181660, {	-- Lost Soul (Chicken)
+					["description"] = "Gather the Spectral Feed, located at 63.75, 61.69 in Revendreth. This has roughly a 60 minute respawn, and is lootable by others shortly after being looted by one player.\nAfter, head to the Lost Soul located at 63.18, 42.76 in Revendreth. Use /chicken on the soul, then use the Spectral Feed from your Bag.\nThe soul may have multiple spawn points, or a separate respawn timer than the Feed, it is unknown. However, you can only see the Soul when you have the Feed in your bags.",
+					["coord"] = { 63.18, 42.76, REVENDRETH },
+					["g"] = {
+						i(187813),	-- Chicken Soul
+					},
+				}),	
 			}),
 		}),
 	}),
