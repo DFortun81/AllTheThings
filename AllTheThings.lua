@@ -331,6 +331,15 @@ local function insertionSort(t, compare, nested)
 		end
 	end
 end
+local sortByNameSafely = function(a, b)
+	if a and a.name then
+		if b and b.name then
+			return a.name <= b.name;
+		end
+		return true;
+	end
+	return false;
+end;
 local sortByTextSafely = function(a, b)
 	if a and a.text then
 		if b and b.text then
@@ -15923,7 +15932,7 @@ function app:GetDataCache()
 			elseif b.achievementCategoryID then
 				return false;
 			end
-			return a.name <= b.name;
+			return sortByNameSafely(a, b);
 		end;
 		achievementsCategory.OnUpdate = function(self)
 			local categories = {};
