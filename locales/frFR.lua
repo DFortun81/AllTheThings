@@ -709,6 +709,7 @@ for key,value in pairs({
 		--TODO: [-551] = "Diablo Collector's Edition",				-- Diablo Collector's Edition
 		--TODO: [-556] = "Arena Tournament",						-- Arena Tournament
 		[-579] = "Passe Porte des ténèbres",						-- Dark Portal Pass
+		[-580] = "The Great Push: Saison 2",						-- The Great Push: Season 2
 	-- PvP Header
 		-- Special Season Tags
 			--TODO: [-655] = "Ensemble Gear", 						-- Ensemble Gear (PvP)

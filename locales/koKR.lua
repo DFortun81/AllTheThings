@@ -709,6 +709,7 @@ for key,value in pairs({
 		--TODO: [-550] = "Starcraft Collector's Edition",			-- Starcraft Collector's Edition
 		--TODO: [-551] = "Diablo Collector's Edition",				-- Diablo Collector's Edition
 		[-579] = "다크 포털 패스",										-- Dark Portal Pass
+		[-580] = "The Great Push 2 시즌이",							-- The Great Push: Season 2
 	-- PvP Header
 		-- Special Season Tags
 			--TODO: [-655] = "Ensemble Gear", 						-- Ensemble Gear (PvP)

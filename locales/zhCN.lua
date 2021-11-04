@@ -762,6 +762,7 @@ for key,value in pairs({
 		[-576] = "星际争霸2：虚空之遗",								-- StarCraft II: Legacy of the Void
 		[-577] = "魔兽电影",											-- Warcraft Movie
 		--TODO: [-579] = "Dark Portal Pass",
+		--TODO: [-580] = "The Great Push: Season 2",				-- The Great Push: Season 2
 	-- PvP Header
 		-- Special Season Tags
 			--TODO: [-655] = "Ensemble Gear", 						-- Ensemble Gear (PvP)
