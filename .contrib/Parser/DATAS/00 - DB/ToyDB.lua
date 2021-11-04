@@ -783,10 +783,10 @@ i(188694);	-- Spring Florist's Pouch
 i(187419);	-- Steward's First Feather
 i(188695);	-- Summer Cranial Skillet
 i(187512);	-- Tome of Small Sins
+i(187834);	-- Tormented Banner of the Opportune
 i(188680);	-- Winter Veil Chorus Book
--- PvP?
+-- NYI?
 i(187958);	-- PH - Banner of the Opportune
 i(187957);	-- PH - Banner of the Opportune
 i(187959);	-- PH - Banner of the Opportune
-i(187834);	-- Tormented Banner of the Opportune
 end)();

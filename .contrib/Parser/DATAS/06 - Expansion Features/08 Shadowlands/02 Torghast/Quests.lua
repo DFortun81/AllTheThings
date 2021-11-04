@@ -37,7 +37,7 @@ _.ExpansionFeatures =
 					["coord"] = { 35.5, 46.9, 1627 },
 					["isDaily"] = true,
 					["timeline"] = { "added 9.1.5" },
-					["lvl"] = { 50, 59 },
+					["customCollect"] = "SL_SKIP",
 				}),
 				q(64210, {	-- The Box of Many Things
 				--	i think it actually might be available earlier?  the quest showed up before i turned in 'in darkness,' picked up while i was in the 'a paladin's soul' scenario.
