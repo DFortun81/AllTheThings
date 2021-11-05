@@ -114,7 +114,13 @@ app.PrintTable = function(t,depth)
 		for k,v in pairs(t) do
 			if type(v) == "table" then
 				print(p,k,":");
-				app.PrintTable(v,depth + 1);
+				if k == "parent" or k == "sourceParent" then
+					print("SKIPPED")
+				elseif k == "g" then
+					print("#",v and #v)
+				else
+					app.PrintTable(v,depth + 1);
+				end
 			else
 				print(p,k,":",tostring(v))
 			end
