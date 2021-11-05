@@ -9008,12 +9008,23 @@ local itemFields = {
 			if t.modItemID and t.modItemID ~= t.itemID then
 				id = t.modItemID;
 				results = app.SearchForField("itemIDAsCost", id);
+				-- if app.DEBUG_PRINT then print("itemIDAsCost.modItemID",id,results and #results) end
 			end
-			-- If no results, search by plain itemID
+			-- If no results, search by itemID + modID only if different
+			if not results then
+				id = GetGroupItemIDWithModID(nil, t.itemID, t.modID);
+				if id ~= t.modItemID then
+					results = app.SearchForField("itemIDAsCost", id);
+					-- if app.DEBUG_PRINT then print("itemIDAsCost.modID",id,results and #results) end
+				end
+			end
+			-- If no results, search by plain itemID only
 			if not results and t.itemID then
 				id = t.itemID;
 				results = app.SearchForField("itemIDAsCost", id);
+				-- if app.DEBUG_PRINT then print("itemIDAsCost.itemID",id,results and #results) end
 			end
+			-- if app.DEBUG_PRINT then print("collectibleAsCost",t.modItemID,results and #results) end
 			if results and #results > 0 then
 				-- setup the costCollectibles initially
 				local costCollectibles, collectible = {};
