@@ -12588,11 +12588,11 @@ app.ActiveItemCollectionHelper = app.CompletionistItemCollectionHelper;
 function app.CompletionistItemRemovalHelper(sourceID, oldState)
 	-- Search ATT for the related sources.
 	local searchResults = SearchForField("s", sourceID);
-	if searchResults and #searchResults > 0 then
+	if searchResults then
 		-- Show the collection message.
 		if app.Settings:GetTooltipSetting("Report:Collected") then
 			local firstMatch = searchResults[1];
-			print(format(L["ITEM_ID_ADDED"], firstMatch.text or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), firstMatch.itemID));
+			print(format(L["ITEM_ID_REMOVED"], firstMatch.text or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), firstMatch.itemID));
 		end
 
 		-- Attempt to cleanly refresh the data.
@@ -12715,7 +12715,7 @@ function app.UniqueModeItemRemovalHelperBase(sourceID, oldState, filter)
 			-- Show the collection message.
 			if app.Settings:GetTooltipSetting("Report:Collected") then
 				local firstMatch = searchResults[1];
-				print(format(L[#unlockedSourceIDs > 0 and "ITEM_ID_ADDED_SHARED" or "ITEM_ID_ADDED"],
+				print(format(L[#unlockedSourceIDs > 0 and "ITEM_ID_REMOVED_SHARED" or "ITEM_ID_REMOVED"],
 					firstMatch.text or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), firstMatch.itemID, #unlockedSourceIDs));
 			end
 		else
@@ -21230,7 +21230,6 @@ app.events.TOYS_UPDATED = function(itemID, new)
 	end
 end
 app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
-	-- TODO: change to callback and collect all ID's for processing each callback
 	-- print("TRANSMOG_COLLECTION_SOURCE_ADDED",sourceID)
 	if sourceID then
 		-- Cache the previous state. This will help keep lag under control.
@@ -21249,7 +21248,7 @@ app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
 	end
 end
 app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
-	-- TODO: change to callback and collect all ID's for processing each callback
+	-- print("TRANSMOG_COLLECTION_SOURCE_REMOVED",sourceID)
 	local oldState = sourceID and ATTAccountWideData.Sources[sourceID];
 	if oldState then
 		local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
