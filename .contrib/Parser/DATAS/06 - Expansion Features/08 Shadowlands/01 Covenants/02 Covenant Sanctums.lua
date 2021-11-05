@@ -67,16 +67,26 @@ _.ExpansionFeatures =
 					["g"] = {
 						-- Follower XP Items
 						i(187413, {	-- Crystalline Memory Repository
-							["timeline"] = { "added 9.1.0.38312" },
+							["timeline"] = { "added 9.1.0.38312", "removed 9.1.5" },
+						}),
+						i(188655, {	-- Crystalline Memory Repository
+							["timeline"] = { "added 9.1.5" },
 						}),
 						i(187414, {	-- Fractal Thoughtbinder
-							["timeline"] = { "added 9.1.0.38312" },
+							["timeline"] = { "added 9.1.0.38312", "removed 9.1.5" },
 						}),
-						i(188650, {	-- Grimoire of Knowledge
+						i(188656, {	-- Fractal Thoughtbinder
 							["timeline"] = { "added 9.1.5" },
 						}),
 						i(187415, {	-- Mind-Expanding Prism
-							["timeline"] = { "added 9.1.0.38312" },
+							["timeline"] = { "added 9.1.0.38312", "removed 9.1.5" },
+						}),
+						i(188657, {	-- Mind-Expanding Prism
+							["timeline"] = { "added 9.1.5" },
+						}),
+						-- Seems odd this one showed up on SL Mission Table... probably a bug as it seems to be a replacement for Legion Follower XP items
+						i(188650, {	-- Grimoire of Knowledge
+							["timeline"] = { "added 9.1.5" },
 						}),
 						-- Mounts
 						i(183617),	-- Chittering Animite
