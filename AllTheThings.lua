@@ -3534,10 +3534,10 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					itemID = tonumber(itemID2);
 					modID = tonumber(linkModID) or 0;
 					if modID == 0 then modID = nil; end
-					bonusID = tonumber(bonusID1) or 3524;
+					bonusID = (tonumber(numBonusIds) or 0) > 0 and tonumber(bonusID1) or 3524;
 					if bonusID == 3524 then bonusID = nil; end
 					paramA = "itemID";
-					paramB = GetGroupItemIDWithModID(nil, itemID, modID, (tonumber(numBonusIds) or 0) > 0 and bonusID1) or itemID;
+					paramB = GetGroupItemIDWithModID(nil, itemID, modID, bonusID) or itemID;
 				end
 				if #group > 0 then
 					for i,j in ipairs(group) do
