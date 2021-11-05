@@ -5305,15 +5305,12 @@ local function UpdateSearchResults(searchResults, verifyCollectible)
 end
 -- Pulls the field search results for the rawID's and passes the results into UpdateSearchResults
 local function UpdateRawIDs(field, ids)
+	-- print("UpdateRawIDs",field,ids and #ids)
 	if ids and #ids > 0 then
-		local groups, search = {};
+		local groups, append, search = {}, app.ArrayAppend;
 		for _,id in ipairs(ids) do
 			search = SearchForField(field, id);
-			if search then
-				for _,thing in ipairs(search) do
-					tinsert(groups, thing);
-				end
-			end
+			append(groups, search);
 		end
 		UpdateSearchResults(groups);
 	end
