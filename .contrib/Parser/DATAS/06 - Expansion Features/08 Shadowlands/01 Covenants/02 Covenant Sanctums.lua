@@ -72,6 +72,9 @@ _.ExpansionFeatures =
 						i(187414, {	-- Fractal Thoughtbinder
 							["timeline"] = { "added 9.1.0.38312" },
 						}),
+						i(188650, {	-- Grimoire of Knowledge
+							["timeline"] = { "added 9.1.5" },
+						}),
 						i(187415, {	-- Mind-Expanding Prism
 							["timeline"] = { "added 9.1.0.38312" },
 						}),
