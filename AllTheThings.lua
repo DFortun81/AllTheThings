@@ -21244,8 +21244,8 @@ app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
 		if oldState ~= 1 then
 			ATTAccountWideData.Sources[sourceID] = 1;
 			app.ActiveItemCollectionHelper(sourceID, oldState);
-			app:PlayFanfare();
-			app:TakeScreenShot();
+			Callback(app.PlayFanfare);
+			Callback(app.TakeScreenShot);
 			wipe(searchCache);
 			SendSocialMessage("S\t" .. sourceID .. "\t" .. oldState .. "\t1");
 		end
@@ -21291,7 +21291,7 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 
 		-- Refresh the Data and Cry!
 		app:RefreshData(false, true);
-		app:PlayRemoveSound();
+		Callback(app.PlayRemoveSound);
 		wipe(searchCache);
 		SendSocialMessage("S\t" .. sourceID .. "\t" .. oldState .. "\t0");
 	end
