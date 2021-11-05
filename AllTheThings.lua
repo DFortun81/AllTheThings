@@ -5267,7 +5267,8 @@ local function SearchForMissingItemNames(group)
 end
 -- Dynamically increments the progress for the parent heirarchy of each collectible search result
 local function UpdateSearchResults(searchResults, verifyCollectible)
-	if searchResults and #searchResults > 0 then
+	-- print("UpdateSearchResults",searchResults and #searchResults,verifyCollectible)
+	if searchResults then
 		-- Ad-hoc update system only needs to pass along updates to the results if the Main list is open
 		-- otherwise it only needs to refresh windows
 		if not app.Settings:GetTooltipSetting("Updates:AdHoc") or app:GetWindow("Prime"):IsVisible() then
@@ -5288,7 +5289,7 @@ local function UpdateSearchResults(searchResults, verifyCollectible)
 					result.marked = nil;
 					-- Every result has a total/progress now
 					-- print("Update self+parent",result.text,"=>",result.parent.text)
-					app.UpdateParentProgress(result);
+					app.UpdateParentProgress(result, 1);
 					-- This is an item that has a relative set of groups
 					if result.g then
 						app.SetGroupVisibility(result.parent, result);
@@ -12468,15 +12469,16 @@ UpdateGroups = function(parent, g, window)
 		end
 	end
 end
-local function UpdateParentProgress(group)
-	group.progress = group.progress + 1;
+local function UpdateParentProgress(group, change)
+	change = change or 1;
+	group.progress = group.progress + change;
 	-- print("new progress",group.progress,group.total,group.text)
 
 	-- Continue on to this object's parent
 	if group.parent and group.visible then
 		-- print("visible",group.text)
 		-- If this is a collected collectible, update the parent.
-		UpdateParentProgress(group.parent);
+		UpdateParentProgress(group.parent, change);
 		-- Set visibility for this group as well
 		SetGroupVisibility(group.parent, group);
 		-- print("visible?",group.visible,group.text)
