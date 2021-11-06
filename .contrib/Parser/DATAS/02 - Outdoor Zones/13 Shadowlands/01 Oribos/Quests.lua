@@ -592,6 +592,7 @@ _.Zones =
 					["description"] = "Will be automatically offered to a character who choses NOT to Skip the Campaign in Shadowlands.",
 					["sourceQuests"] = { 62704 },	-- The Threads of Fate
 					["altQuests"] = { 62713 },	-- Becoming a Skip character will exclude this Quest from being available
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["isBreadcrumb"] = true,
 				}),
 				q(62716, {	-- Re-Introductions
