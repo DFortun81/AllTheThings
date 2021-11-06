@@ -94,8 +94,7 @@ _.ExpansionFeatures =
 					}),
 					n(-905, {	-- Command Table
 						n(-906, {	-- Tier 1: Tactical Insight
-							currency(1819, {	-- Medallion of Service
-							}),
+							currency(1819),	-- Medallion of Service
 							q(57900, {	-- Across the Shadowlands
 								["sourceQuests"] = { 57899 },	-- More Work?
 								["provider"] = { "n", 160389 },	-- Koros
@@ -106,6 +105,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							q(61863, {	-- Adventurer: Apolon
+								["sourceQuests"] = { 57900 },	-- Across the Shadowlands
 								["description"] = "Requires Renown 27.",
 								["provider"] = { "n", 160389 },    -- Koros
 								["coord"] = { 43.8, 40.7, ARCHONS_RISE },
@@ -114,6 +114,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							q(64463, {	-- Adventurer: Auric Spiritguide
+								["sourceQuests"] = { 57900 },	-- Across the Shadowlands
 								["description"] = "Requires Renown 71.",
 								["provider"] = { "n", 160389 },    -- Koros
 								["coord"] = { 43.8, 40.7, ARCHONS_RISE },
@@ -122,6 +123,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							q(61864, {	-- Adventurer: Bron
+								["sourceQuests"] = { 57900 },	-- Across the Shadowlands
 								["description"] = "Requires Renown 33.",
 								["provider"] = { "n", 160389 },    -- Koros
 								["coord"] = { 43.8, 40.7, ARCHONS_RISE },
@@ -130,6 +132,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							q(61862, {	-- Adventurer: Clora
+								["sourceQuests"] = { 57900 },	-- Across the Shadowlands
 								["description"] = "Requires Renown 17.",
 								["provider"] = { "n", 160389 },    -- Koros
 								["coord"] = { 43.8, 40.7, ARCHONS_RISE },
@@ -138,6 +141,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							q(64462, {	-- Adventurer: Cromas the Mystic
+								["sourceQuests"] = { 57900 },	-- Across the Shadowlands
 								["description"] = "Requires Renown 62.",
 								["provider"] = { "n", 160389 },    -- Koros
 								["coord"] = { 43.8, 40.7, ARCHONS_RISE },
@@ -146,6 +150,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							q(61865, {	-- Adventurer: Disciple Kosmas
+								["sourceQuests"] = { 57900 },	-- Across the Shadowlands
 								["description"] = "Requires Renown 38.",
 								["provider"] = { "n", 160389 },    -- Koros
 								["coord"] = { 43.8, 40.7, ARCHONS_RISE },
@@ -154,6 +159,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							q(64461, {	-- Adventurer: Hermestes
+								["sourceQuests"] = { 57900 },	-- Across the Shadowlands
 								["description"] = "Requires Renown 44.",
 								["provider"] = { "n", 160389 },	-- Koros
 								["coord"] = { 43.8, 40.7, ARCHONS_RISE },
@@ -162,7 +168,11 @@ _.ExpansionFeatures =
 								},
 							}),
 							q(61859, {	-- Adventurer: Nemea
-								["sourceQuests"] = { 58103 },    -- Pride or Unit
+								["sourceQuests"] = {
+									58103,	-- Pride or Unit
+									57900,	-- Across the Shadowlands
+								},
+								["altQuests"] = { 61860 },	-- Adenturer: Pelodis
 								["description"] = "Requires Renown 4. Must choose Nemea in the Pride or Unit quest to get this follower.",
 								["provider"] = { "n", 160389 },    -- Koros
 								["coord"] = { 43.8, 40.7, ARCHONS_RISE },
@@ -171,7 +181,11 @@ _.ExpansionFeatures =
 								},
 							}),
 							q(61860, {	-- Adventurer: Pelodis
-								["sourceQuests"] = { 58103 },    -- Pride or Unit
+								["sourceQuests"] = {
+									58103,	-- Pride or Unit
+									57900,	-- Across the Shadowlands
+								},
+								["altQuests"] = { 61859 },	-- Adenturer: Nemea
 								["description"] = "Requires Renown 4. Must choose Pelodis in the Pride or Unit quest to get this follower.",
 								["provider"] = { "n", 160389 },    -- Koros
 								["coord"] = { 43.8, 40.7, ARCHONS_RISE },
@@ -180,6 +194,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							q(61861, {	-- Adventurer: Sika
+								["sourceQuests"] = { 57900 },	-- Across the Shadowlands
 								["description"] = "Requires Renown 12.",
 								["provider"] = { "n", 160389 },    -- Koros
 								["coord"] = { 43.8, 40.7, ARCHONS_RISE },
