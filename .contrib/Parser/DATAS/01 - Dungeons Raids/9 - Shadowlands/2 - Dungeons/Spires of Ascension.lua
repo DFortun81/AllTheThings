@@ -20,18 +20,21 @@ _.Instances = { tier(SL_TIER, {
 					["lvl"] = { 60 },
 					["g"] = {
 						-- spires of ascension (gardens of repose)
-						n(-1433901, {	-- Anima Crystal Shard
+						q(61298, {	-- Anima Crystal Shard
 							["description"] = "After Kin-Tara, behind a lounge chair on the left side of the fountain.",
-							["questID"] = 61298,
+							["name"] = "Anima Crystal Shard",
+							["icon"] = 3528288,
 						}),
-						n(-1433901, {	-- Anima Crystal Shard
+						q(61299, {	-- Anima Crystal Shard
 							["description"] = "After Ventunax, behind the left-hand torch next to the Winged Guardian that will take you to the Font of Fealty.",
-							["questID"] = 61299,
+							["name"] = "Anima Crystal Shard",
+							["icon"] = 3528288,
 						}),
 						-- spires of ascension (font of feality)
-						n(-1433901, {	-- Anima Crystal Shard
+						q(61300, {	-- Anima Crystal Shard
 							["description"] = "Can be collected before or after Oryphrion.  There is a heart-shaped whirlpool in the middle of the room.  The shard is at the top of the heart in the middle.  After the boss, there will be two Winged Guardians on either side of it.",
-							["questID"] = 61300
+							["name"] = "Anima Crystal Shard",
+							["icon"] = 3528288,
 						}),
 					},
 				}),

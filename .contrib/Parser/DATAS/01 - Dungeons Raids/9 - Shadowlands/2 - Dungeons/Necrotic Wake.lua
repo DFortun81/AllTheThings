@@ -18,13 +18,15 @@ _.Instances = { tier(SL_TIER, {
 					["collectible"] = false,
 					["lvl"] = { 60 },
 					["g"] = {
-						n(-1433901, {	-- Anima Crystal Shard
+						q(61296, {	-- Anima Crystal Shard
 							["description"] = "After Blightbone, go up the stairs to the middle platform.  Straight ahead is a large fallen bell.  The shard is behind it on the right-hand side.",
-							["questID"] = 61296,
+							["name"] = "Anima Crystal Shard",
+							["icon"] = 3528288,
 						}),
-						n(-1433901, {	-- Anima Crystal Shard
+						q(61297, {	-- Anima Crystal Shard
 							["description"] = "Before Amarth, at the middle of the top of the final platform is a little outcropping that juts north.  Climb behind the large broken pillar.  Behind it is a small broken pillar, and the shard is behind that.",
-							["questID"] = 61297,
+							["name"] = "Anima Crystal Shard",
+							["icon"] = 3528288,
 						}),
 					},
 				}),

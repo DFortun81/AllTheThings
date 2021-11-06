@@ -1552,8 +1552,6 @@ app.L = {
 		[-10103] = "Interface\\Icons\\Paladin_Protection",							-- The Maw and Torghast
 		[-10105] = 236373,															-- Covenant Assaults
 
-	-- Achieve 14339 Sub-Criteira
-		[-1433901] = 3528288,															-- Anima Crystal Shard
 	--	hopefully temp custom NPCs, these objects do not have data on wowhead atm
 		[-1433951] = "3854020",															-- Broken Mirror
 		[-1433952] = "3854020",															-- Broken Mirror
@@ -2310,8 +2308,6 @@ app.L = {
 		[-10101] = select(1,GetCategoryInfo(15428)),							-- Shadowlands Dungeon
 		[-10102] = select(1,GetCategoryInfo(15438)),							-- Shadowlands Raids
 		[-10103] = select(1,GetCategoryInfo(15440)),							-- The Maw and Torghast
-		-- Achieve 14339 Sub-Criteira
-		[-1433901] = "Anima Crystal Shard",										-- Anima Crystal Shard
 	--	hopefully temp objects, these currently do not have accessible object data on wowhead
 		[-1433951] = "Broken Mirror A-1",										-- Broken Mirror
 		[-1433952] = "Broken Mirror A-2",										-- Broken Mirror
