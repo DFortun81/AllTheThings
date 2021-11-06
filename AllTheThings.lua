@@ -11292,8 +11292,9 @@ local function RefreshQuestCompletionState(questID)
 		QueryCompletedQuests();
 	end
 
+	local completedQuestHelper = app.QuestCompletionHelper;
 	for questID,completed in pairs(DirtyQuests) do
-		app.QuestCompletionHelper(tonumber(questID));
+		completedQuestHelper(tonumber(questID));
 	end
 	wipe(DirtyQuests);
 	wipe(npcQuestsCache);
@@ -12762,12 +12763,28 @@ function app.GetNumberOfItemsUntilNextPercentage(progress, total)
 		end
 	end
 end
+-- A set of quests which indicate a needed refresh to the Custom Collect status of the character
+app.CustomCollectQuests = {
+	[56775] = 1,	-- New Player Experience Starting Quest
+	[59926] = 1,	-- New Player Experience Starting Quest
+	[58911] = 1,	-- New Player Experience Ending Quest
+	[60359] = 1,	-- New Player Experience Ending Quest
+	[62713] = 1,	-- Shadowlands - SL_SKIP (Threads of Fate)
+	[65076] = 1,	-- Shadowlands - Covenant - Kyrian
+	[65077] = 1,	-- Shadowlands - Covenant - Venthyr
+	[65078] = 1,	-- Shadowlands - Covenant - Night Fae
+	[65079] = 1,	-- Shadowlands - Covenant - Necrolord
+};
 function app.QuestCompletionHelper(questID)
 	-- Only increase progress for Quests as Collectible users.
 	if app.CollectibleQuests then
 		-- Search ATT for the related quests.
 		local searchResults = SearchForField("questID", questID);
 		UpdateSearchResults(searchResults, true);
+	end
+	-- Certain quests being completed should trigger a refresh of the Custom Collect status of the character (i.e. Covenant Switches, Threads of Fate, etc.)
+	if app.CustomCollectQuests[questID] then
+		Callback(app.RefreshCustomCollectibility);
 	end
 end
 -- receives a key and a function which returns the value to be set for
