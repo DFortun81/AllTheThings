@@ -128,7 +128,7 @@ _.ExpansionFeatures =
 				q(61421, {	-- Champion: Blisswing [Night Fae]
 					["customCollect"] = "SL_COV_NFA",	-- Night Fae
 					["sourceQuests"] = { 61427 },	-- Blisswing's Rescue
-					["provider"] = { "n", 172244 },	-- Blisswing
+					["provider"] = { "n", 172275 },	-- Blisswing
 					["g"] = {
 						follower(1277),	-- Blisswing
 					},
@@ -160,7 +160,7 @@ _.ExpansionFeatures =
 					-- found in Twisting Corridors
 					["customCollect"] = "SL_COV_NFA",	-- Night Fae
 					["sourceQuests"] = { 61428 },	-- Duskleaf's Revenge
-					["provider"] = { "n", 172259 },	-- Duskleaf
+					["provider"] = { "n", 172238 },	-- Duskleaf
 					["g"] = {
 						follower(1278)	-- Duskleaf
 					},
@@ -424,7 +424,7 @@ _.ExpansionFeatures =
 				q(62229, {	-- Ashraka's Intelligence
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
-					-- ["provider"] = { "n", ??? },	-- TODO: ???
+					["provider"] = { "n", 173750 },	-- Ashraka
 				}),
 				q(64185, {	-- Assist Ella With ?
 					["sourceQuests"] = { 60136 },	-- Into Torghast
@@ -990,7 +990,7 @@ _.HiddenQuestTriggers = {
 		q(64182),	-- triggered when completing #64174, "Champion: Steadyhands"
 		q(64179),	-- Triggered when completing 64187 Kiaranyka's Search / 64171 Champion: Kiaranyka
 		q(64177),	-- Triggered when completing 64185 Assist Ella With ?/64169 Champion: Ella
-		
+
 		-- 9.1.5
 		--q(64848), Enter Torghast as lvl 56 NF Druid
 		q(65308), -- Leveling in Torghast
