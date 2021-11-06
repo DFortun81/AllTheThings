@@ -1,11 +1,11 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
---[[
+
 _.Zones =
 {
 	m(SHADOWLANDS, {
-		m(MALDRAXUS, {
+		m(MALDRAXXUS, {
 			n(SPECIAL, {
 				n(182105, {	-- Mysterious Trashpile
 					["description"] = "Use /bow on the Mysterious Trashpile. (Cave Entrance is 44.59, 65.48).",
@@ -13,9 +13,8 @@ _.Zones =
 					["g"] = {
 						i(187878),	-- Saurid Soul
 					},
-				}),	
+				}),
 			}),
 		}),
 	}),
 };
---]]
