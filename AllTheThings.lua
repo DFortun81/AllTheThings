@@ -2062,6 +2062,7 @@ local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 		end
 		rawset(t, key, value);
 		rawset(DirtyQuests, key, true);
+		rawset(DirtyQuests, "DIRTY", true);
 		ATTAccountWideData.Quests[key] = 1;
 		app.CurrentCharacter.Quests[key] = 1;
 		PrintQuestInfo(key);
@@ -7779,6 +7780,7 @@ end });
 app.FactionIDByName = setmetatable({}, { __index = function(t, name)
 	for i=1,3000,1 do
 		if app.FactionNameByID[i] == name then
+			rawset(t, name, i);
 			return i;
 		end
 	end
@@ -11296,10 +11298,12 @@ local function RefreshQuestCompletionState(questID)
 	for questID,completed in pairs(DirtyQuests) do
 		completedQuestHelper(tonumber(questID));
 	end
+	-- soft update if any quests were even completed to ensure visible changes occur
+	if DirtyQuests.DIRTY then
+		app:UpdateWindows();
+	end
 	wipe(DirtyQuests);
 	wipe(npcQuestsCache);
-	-- soft update to ensure visible changes occur
-	app:UpdateWindows();
 end
 app.RefreshQuestInfo = function(questID)
 	-- print("RefreshQuestInfo",questID)
@@ -12776,15 +12780,17 @@ app.CustomCollectQuests = {
 	[65079] = 1,	-- Shadowlands - Covenant - Necrolord
 };
 function app.QuestCompletionHelper(questID)
-	-- Only increase progress for Quests as Collectible users.
-	if app.CollectibleQuests then
-		-- Search ATT for the related quests.
-		local searchResults = SearchForField("questID", questID);
-		UpdateSearchResults(searchResults, true);
-	end
-	-- Certain quests being completed should trigger a refresh of the Custom Collect status of the character (i.e. Covenant Switches, Threads of Fate, etc.)
-	if app.CustomCollectQuests[questID] then
-		Callback(app.RefreshCustomCollectibility);
+	if questID then
+		-- Only increase progress for Quests as Collectible users.
+		if app.CollectibleQuests then
+			-- Search ATT for the related quests.
+			local searchResults = SearchForField("questID", questID);
+			UpdateSearchResults(searchResults, true);
+		end
+		-- Certain quests being completed should trigger a refresh of the Custom Collect status of the character (i.e. Covenant Switches, Threads of Fate, etc.)
+		if app.CustomCollectQuests[questID] then
+			Callback(app.RefreshCustomCollectibility);
+		end
 	end
 end
 -- receives a key and a function which returns the value to be set for
@@ -20349,6 +20355,7 @@ end)();
 app:RegisterEvent("ADDON_LOADED");
 app:RegisterEvent("BOSS_KILL");
 app:RegisterEvent("CHAT_MSG_ADDON");
+app:RegisterEvent("CRITERIA_UPDATE");
 app:RegisterEvent("PLAYER_ENTERING_WORLD");
 app:RegisterEvent("VARIABLES_LOADED");
 app:RegisterEvent("NEW_PET_ADDED");
@@ -21127,6 +21134,12 @@ app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 			if link then print(format(L["ITEM_ID_ADDED_RANK"], link, itemID, (select(5, C_Heirloom.GetHeirloomInfo(itemID)) or 1))); end
 		end
 	end
+end
+-- Seems to be some sort of hidden tracking for HQTs and other sorts of things...
+app.events.CRITERIA_UPDATE = function(...)
+	-- print("CRITERIA_UPDATE",...)
+	-- sometimes triggers many times at once but refresh quest info is a 1 sec callback threshold
+	app.RefreshQuestInfo();
 end
 app.events.QUEST_TURNED_IN = function(questID)
 	-- print("QUEST_TURNED_IN")
