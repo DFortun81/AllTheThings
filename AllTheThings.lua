@@ -2069,6 +2069,7 @@ local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 	elseif value == false then
 		total = total - 1;
 		rawset(t, "_TOTAL", total);
+		rawset(DirtyQuests, "DIRTY", true);
 		-- no need to actually set the key in the table since it's been marked as incomplete
 		-- and this meta function only triggers on NEW key assignments
 		PrintQuestInfo(key, false);
