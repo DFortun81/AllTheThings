@@ -225,7 +225,7 @@ _.ExpansionFeatures =
 				q(64171, {	-- Champion: Kiaranyka [Kyrian]
 					["customCollect"] = "SL_COV_KYR",	-- Kyrian
 					["sourceQuests"] = { 64187 },	-- Kiaranyka's Search
-					--["provider"] = { "n",  },	-- Kiaranyka (Multiple Ids)
+					["provider"] = { "n", 179667 },	-- Kiaranyka
 					["g"] = {
 						follower(1329),	-- Kiaranyka
 					},
