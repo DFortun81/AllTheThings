@@ -814,10 +814,10 @@ _.ExpansionFeatures =
 						["coord"] = { 46.0, 28.1, SINFALL_REACHES },
 					}),
 					q(65105, {	-- Return More Lost Souls
-						-- ["sourceQuests"] = {  },	-- TODO
+						["sourceQuests"] = { 62869 },	-- Return Lost Souls (20)
 						["provider"] = { "n", 164738 },	-- Tenaval
 						["coord"] = { 46.0, 28.1, SINFALL_REACHES },
-						["isRepeatable"] = true,
+						["repeatable"] = true,
 						["timeline"] = { "added 9.1.5" },
 					}),
 					-- 9.1.5

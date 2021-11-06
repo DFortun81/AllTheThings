@@ -134,7 +134,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 62860 },	-- Return Lost Souls (20 soul version)
 						["provider"] = { "n", 158553 },	-- Flutterby
 						["coord"] = { 33.9, 43.5, ARDENWEALD },
-						["isRepeatable"] = true,
+						["repeatable"] = true,
 						["timeline"] = { "added 9.1.5" },
 					}),
 					q(62536, {	-- The Lost of Teldrassil

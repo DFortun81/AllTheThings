@@ -605,7 +605,7 @@ _.ExpansionFeatures =
 					q(65103, {	-- Return More Lost Souls
 						["sourceQuests"] = { 62863 },	-- Return Lost Souls
 						["provider"] = { "n", 160212 },	-- Soulguide Daelia
-						["isRepeatable"] = true,
+						["repeatable"] = true,
 						["coord"] = { 59.5, 34.2, SANCTUM_OF_BINDING },
 					}),
 					q(62796, {	-- Return to Adrestes
@@ -889,7 +889,6 @@ _.ExpansionFeatures =
 							follower(1258),	-- Mikanikos
 						},
 					}),
-						
 				})),
 			},
 		}),
