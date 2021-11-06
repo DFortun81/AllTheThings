@@ -469,6 +469,7 @@ namespace ATT
                     case "lore":
                     case "name":
                     case "description":
+                    case "rwp":
                         {
                             item[field] = ATT.Export.ToString(value);
                             break;

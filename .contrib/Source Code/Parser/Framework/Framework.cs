@@ -437,6 +437,7 @@ namespace ATT
                 var index = 0;
                 long firstVersion = 0;
                 long lastVersion = 0;
+                long removedPatch = 0;
                 foreach (var entry in timeline)
                 {
                     var commandSplit = Convert.ToString(entry).Split(' ');
@@ -477,6 +478,12 @@ namespace ATT
                         case "removed":
                             {
                                 if (CURRENT_RELEASE_VERSION >= version) removed = 2;
+                                else
+                                {
+                                    // Mark the first patch this was removed on. (the upcoming patch)
+                                    if(removedPatch == 0) removedPatch = version;
+                                    removed = 6;
+                                }
                                 break;
                             }
                         case "blackmarket":
@@ -508,6 +515,11 @@ namespace ATT
                     {
                         // Timewalking re-implemented
                         data["u"] = 1016;
+                    }
+                    else if (removed == 6)
+                    {
+                        // Future Unobtainable
+                        data["rwp"] = removedPatch.ConvertToVersionString(); // "Removed With Patch"
                     }
                     else if (removed == 4)
                     {

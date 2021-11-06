@@ -26,6 +26,25 @@ namespace ATT
         }
 
         /// <summary>
+        /// Convert the version number into a valid version string.
+        /// </summary>
+        /// <param name="version">The version number.</param>
+        /// <returns>The version string.</returns>
+        public static string ConvertToVersionString(this long version)
+        {
+            var s = version.ToString();
+            var leadingZeros = new char[] { '0' };
+            var len = s.Length;
+            var major = s.Substring(0, len - 12).TrimStart(leadingZeros);
+            if (major.Length == 0) major = "0";
+            var minor = s.Substring(len - 12, 3).TrimStart(leadingZeros);
+            if (minor.Length == 0) minor = "0";
+            var patch = s.Substring(len - 9, 3).TrimStart(leadingZeros);
+            if (patch.Length == 0) patch = "0";
+            return $"{major}.{minor}.{patch}";
+        }
+
+        /// <summary>
         /// Get a boolean from the dictionary.
         /// </summary>
         /// <param name="dict">The dictionary.</param>
