@@ -13,7 +13,7 @@ _.ExpansionFeatures =
 					["modID"] = 3,
 					["groups"] = {
 						-- ALLIANCE SET --
-						i(164966),	-- Glade Warden's Glaive
+						un(NEVER_IMPLEMENTED, i(164966)),	-- Glade Warden's Glaive
 						i(166898),	-- Sentinel's Blade
 						i(165628),	-- Sentinel's Branch
 						i(165637),	-- Sentinel's Bulwark

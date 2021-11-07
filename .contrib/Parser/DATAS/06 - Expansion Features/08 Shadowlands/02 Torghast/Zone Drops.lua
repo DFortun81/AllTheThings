@@ -121,6 +121,7 @@ _.ExpansionFeatures =
 						151331,	-- Cellblock Sentinel
 						170418,	-- Goxul the Devourer
 						151329,	-- Warden Skoldus
+						159190,	-- Synod
 					},
 				}),
 				i(187043, {	-- Spiked Citadel Shoulderguards

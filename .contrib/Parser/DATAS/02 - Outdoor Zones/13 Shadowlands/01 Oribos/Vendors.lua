@@ -848,6 +848,7 @@ _.Zones =
 						}),
 						i(178490, {	-- Sinful Aspirant's Barrier
 							["cost"] = { { "c", 1792, 425 } },
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(178478, {	-- Sinful Aspirant's Orb
 							["cost"] = { { "c", 1792, 425 } },

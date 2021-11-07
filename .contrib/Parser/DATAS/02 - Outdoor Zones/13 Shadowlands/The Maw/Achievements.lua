@@ -105,11 +105,13 @@ _.Zones =
 					},
 				}),
 				ach(14742, {	-- Who Sent You?
+					["description"] = "If you have completed |cFFFFD700Focusing the Eye|r, you can still obtain this achievement by killing |cFF883325Mawsworn Blackguard|r in The Maw.",
 					["crs"] = {
 						161856,	-- Assassin <Mawsworn Blackguard>
 						161846,	-- Assassin <Mawsworn Inquisitor>
 						161854,	-- Assassin <Mawsworn Reaver>
 						161849,	-- Assassin <Mawsworn Stalker>
+						183173,	-- Mawsworn Blackguard
 					},
 				}),
 			}),

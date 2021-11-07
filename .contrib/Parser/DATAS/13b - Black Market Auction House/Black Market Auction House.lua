@@ -216,6 +216,7 @@ root("BlackMarket", bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(38050),	-- Soul-Trader Beacon
 		i(49343),	-- Spectral Tiger Cub
 		i(44965),	-- Teldrassil Sproutling Pet
+		i(85513),	-- Thundering Serpent Hatchling
 		i(8499),	-- Tiny Crimson Whelping
 		i(69991),	-- Tiny Sporebat
 		i(44971),	-- Tirisfal Batling Pet

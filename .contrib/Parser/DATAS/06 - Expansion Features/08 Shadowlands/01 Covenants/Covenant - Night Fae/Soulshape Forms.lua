@@ -24,6 +24,12 @@ _.ExpansionFeatures =
 					q(64961, {	-- Cat Soul
 						["provider"] = { "i", 187819 },	-- Cat Soul
 					}),
+					q(64982, {	-- Cat (Fat) Soul
+						["name"] = "Cat (Fat) Soul",
+						["icon"] = 656577,
+						["sourceQuests"] = { 64961 },	-- Cat Soul
+						["description"] = "After obtaining the Cat Soul, grab a |cFFFFFFFFSpectral Feed|r located at |cFFFFFFFF63.75, 61.69|r in Revendreth. Then return to Heart of the Forest with it, and go to the Queen’s Conservatory portal downstairs.\nFind Ma’oh next to the portal and |cFFFFFFFF/meow|r at them. Then use the |cFFFFFFFFSpectral Feed|r from your inventory while targeting them.",
+					}),
 					q(64941, {	-- Chicken Soul
 						["provider"] = { "i", 187813 },	-- Chicken Soul
 					}),
@@ -39,7 +45,7 @@ _.ExpansionFeatures =
 					q(64938, {	-- Corgi Soul
 						["name"] = "Corgi Soul",
 						["icon"] = 1339013,
-						["description"] = "Emote /pet on the little corgi named Sparkle running around the night fae covenant sanctum.",
+						["description"] = "Emote |cFFFFFFFF/pet|r on the little corgi named Sparkle running around the night fae covenant sanctum.",
 					}),
 					q(62424, {	-- Crane Soul
 						["provider"] = { "i", 182168 },	-- Crane Soul
