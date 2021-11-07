@@ -15707,10 +15707,12 @@ function app:GetDataCache()
 		]]--
 
 		-- Achievements (Dynamic!)
+		--[[
 		local achievementsCategory = app.CreateNPC(-4, {});
 		achievementsCategory.expanded = false;
 		achievementsCategory.achievements = {};
 		table.insert(g, achievementsCategory);
+		]]--
 
 		-- Track Deaths!
 		tinsert(g, app:CreateDeathClass());
@@ -15933,6 +15935,7 @@ function app:GetDataCache()
 		end
 
 		-- Update Achievement data.
+		--[[
 		local function cacheAchievementData(self, categories, g)
 			if g then
 				for i,o in ipairs(g) do
@@ -16024,6 +16027,7 @@ function app:GetDataCache()
 			insertionSort(self.g, achievementSort, true);
 		end
 		achievementsCategory:OnUpdate();
+		]]--
 
 		-- Update Faction data.
 		--[[
