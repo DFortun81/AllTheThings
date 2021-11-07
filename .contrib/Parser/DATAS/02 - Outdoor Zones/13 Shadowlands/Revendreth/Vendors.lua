@@ -187,9 +187,7 @@ _.Zones =
 						i(181799),	-- Extra Large Hat
 						i(182702),	-- Phial of Black Muck Dye
 						i(187886, {	-- Technique: Mark of the Gloomstalker Dredbat
-							["cost"] = {
-								{ "i", 171840, 25 },	-- 25xPorous Stone
-							},
+							["description"] = "Sold for 20-30 of a trade good which changes every day. And sometimes it's not even on the vendor!",
 							["timeline"] = { "added 9.1.5" },
 						}),
 					},
