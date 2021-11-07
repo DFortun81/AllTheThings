@@ -2844,7 +2844,7 @@ for key,value in pairs({
 	[368668] = "Tronco di Abominietto",	-- Lil'Abom's Trunk
 	[368772] = "Pergamena con Sigillo",	-- Sigilscored Scroll
 	[368876] = "Scrigno dei Giurafauce",	-- Mawsworn Cache
-	--TODO: [368935] = "Sinfall Screecher Cage",	-- Sinfall Screecher Cage
+	[368935] = "Gabbia dello Stridente di Oblio del Peccato",	-- Sinfall Screecher Cage
 	[368946] = "Ricettacolo d'Animum Rubato",	-- Stolen Anima Vessel
 	[368948] = "Ricettacolo d'Animum Rubato",	-- Stolen Anima Vessel
 	[368949] = "Ricettacolo d'Animum Rubato",	-- Stolen Anima Vessel

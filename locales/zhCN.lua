@@ -1150,7 +1150,7 @@ for key, value in pairs({
 	[186426] = "通缉布告",	-- Wanted Poster
 	--TODO: [186585] = "Dragonskin Scroll",	-- Dragonskin Scroll
 	--TODO: [186881] = "Dark Iron Sabotage Plans",	-- Dark Iron Sabotage Plans
-	[186887] = "大南瓜灯",	-- Large Jack-o'-Lantern	--TODO: This was taken from tbc Wowhead
+	[186887] = "大南瓜灯",	-- Large Jack-o'-Lantern
 	[187273] = "可疑的蹄印",	-- Suspicious Hoofprint
 	[187559] = "部落篝火",	-- Horde Bonfire
 	[187564] = "联盟篝火",	-- Alliance Bonfire
@@ -1437,7 +1437,7 @@ for key, value in pairs({
 	[214338] = "悼念祭品",	-- Offering of Remembrance
 	[214339] = "一箱补给",	-- Chest of Supplies
 	[214340] = "造船说明",	-- Boat-Building Instructions
-	[214403] = "一叠纸张",	-- Stack of Papers	--TODO: This was manually translated
+	[214403] = "一叠纸张",	-- Stack of Papers
 	[214407] = "墨墨的宝箱",	-- Mo-Mo's Treasure Chest
 	[214438] = "古代魔古石板",	-- Ancient Mogu Tablet
 	--TODO: [214439] = "Barrel of Banana Infused Rum",	-- Barrel of Banana Infused Rum
@@ -2170,15 +2170,15 @@ for key, value in pairs({
 	[252263] = "魔网能量",	-- Leyline Feed
 	[252264] = "魔网能量",	-- Leyline Feed
 	--TODO: [252267] = "Large Plundered Sack",	-- Large Plundered Sack
-	[252269] = "一袋战斗药水",	-- Pack of Battle Potions	--TODO: This was manually translated
+	[252269] = "一袋战斗药水",	-- Pack of Battle Potions
 	--TODO: [252270] = "Mysterious Crate",	-- Mysterious Crate
 	[252272] = "冒烟的靴子",	-- Smoky Boots	--TODO: This was manually translated
 	--TODO: [252273] = "Box of Throwing Daggers",	-- Box of Throwing Daggers
-	[252277] = "菊花茶",	-- Thistle Tea	--TODO: This was manually translated
+	[252277] = "菊花茶",	-- Thistle Tea
 	[252279] = "失窃的神器传说大典",	-- Stolen Tome of Artifact Lore
 	--TODO: [252282] = "Sparkling Set of Keys",	-- Sparkling Set of Keys
-	--TODO: [252284] = "Pile of Sticky Bombs",	-- Pile of Sticky Bombs
-	--TODO: [252289] = "Vanishing Powder",	-- Vanishing Powder
+	[252284] = "一堆黏性炸弹",	-- Pile of Sticky Bombs
+	[252289] = "消失粉",	-- Vanishing Powder
 	[252412] = "|cFFFFFFFF第2步:|r 泥土堆",	-- |cFFFFFFFFStep 2:|r Mound of Dirt
 	[252432] = "发光的远古魔力晶簇",	-- Shimmering Ancient Mana Cluster
 	[252434] = "|cFFFFFFFF第12步:|r 饥渴宝珠",	-- |cFFFFFFFFStep 12:|r Hungering Orb X
@@ -2369,7 +2369,7 @@ for key, value in pairs({
 	[279299] = "剧毒封印",	-- Venomous Seal
 	--TODO: [279609] = "Spoils of Pandaria",	-- Spoils of Pandaria
 	[279689] = "丢失的纳兹曼尼宝物",	-- Lost Nazmani Treasure
-	--TODO: [279750] = "Hay Covered Chest",	-- Hay Covered Chest
+	[279750] = "干草覆盖的宝箱",	-- Hay Covered Chest
 	[280504] = "被吞没的宝箱",	-- Swallowed Naga Chest
 	[280522] = "消化了一半的宝物",	-- Partially-Digested Treasure
 	[280576] = "包好的卷轴",	-- Encased Scroll
@@ -2392,7 +2392,7 @@ for key, value in pairs({
 	[281092] = "巫医的珍藏",	-- Witch Doctor's Hoard
 	[281230] = "正式邀请函",	-- Formal Invitation
 	[281348] = "破碎的信件",	-- Crumbling Letter
-	--TODO: [281397] = "Cutwater Treasure Chest",	-- Cutwater Treasure Chest
+	[281397] = "破浪宝箱",	-- Cutwater Treasure Chest
 	[281494] = "冰霜宝箱",	-- Frosty Treasure Chest
 	[281551] = "求助布告",	-- Help Wanted Poster
 	[281583] = "古代圣物",	-- Ancient Reliquary	--TODO: This was manually translated

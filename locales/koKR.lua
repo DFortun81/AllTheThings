@@ -1671,7 +1671,7 @@ for key,value in pairs({
 	[233697] = "서슬니 보관함",	-- Saberon Stash
 	--TODO: [233715] = "Goldtoe's Plunder",	-- Goldtoe's Plunder
 	[233768] = "어슴푸레 빛나는 비약",	-- Pale Elixir
-	--TODO: [233773] = "Bag of Herbs",	-- Bag of Herbs
+	[233773] = "약초 가방",	-- Bag of Herbs
 	[233792] = "돌 무더기",	-- Pile of Rubble
 	[233917] = "비현실성의 다리뼈",	-- Femur of Improbability
 	[233956] = "피투성이 칼",	-- Bloody Blade
