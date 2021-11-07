@@ -905,8 +905,6 @@ for key,value in pairs({
 		--TODO: [-10082] = "Lost Area",
 		--TODO: [-10083] = "Covenant Assaults",						-- Covenant Assaults
 		-- Shadowlands Achievement Header
-			-- Achieve 14339 Sub-Criteira
-				[-1433901] = "Fragmento de cristal de ánima",		-- Anima Crystal Shard
 			--	hopefully temp objects, these currently do not have accessible object data on wowhead
 				[-1433951] = "Espejo roto A-1",						-- Broken Mirror
 				[-1433952] = "Espejo roto A-2",						-- Broken Mirror
