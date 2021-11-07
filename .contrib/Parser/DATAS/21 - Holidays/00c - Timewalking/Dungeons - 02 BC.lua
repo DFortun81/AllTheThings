@@ -463,82 +463,54 @@ root("Holidays", d(24, {  -- Timewalking
 			e(555, {	-- The Maker
 				["creatureID"] = 17381,
 				["groups"] = {
-					i(24384),	-- Diamond-Core Sledgemace
-					-- #if AFTER 7.3.5
-					i(27488),	-- Mage-Collar of the Firestorm
-					-- #endif
-					i(24385),	-- Pendant of Battle-Lust
-					-- #if AFTER 7.3.5
-					i(27485),	-- Embroidered Cape of Mysteries
-					i(27483),	-- Moon-Touched Bands
-					-- #endif
-					i(24387),	-- Ironblade Gauntlets
-					i(24388),	-- Girdle of the Gale Storm
-					-- #if AFTER 7.3.5
-					i(27487),	-- Bloodlord Legplates
-					-- #endif
-					-- #if BEFORE MOP
-					i(24386, {	-- Libram of Saints Departed
-						["timeline"] = { "removed 5.0.4.10000" },
-					}),
-					-- #endif
+					i(188293),	-- Bloodlord Legplates
+					i(188277),	-- Diamond-Core Sledgemace
+					i(188292),	-- Embroidered Cape of Mysteries
+					i(188280),	-- Girdle of the Gale Storm
+					i(188279),	-- Ironblade Gauntlets
+					i(188294),	-- Mage-Collar of the Firestorm
+					i(188291),	-- Moon-Touched Bands
+					i(188278),	-- Pendant of Battle-Lust
 				},
 			}),
 			e(556, {	-- Broggok
 				["creatureID"] = 17380,
 				["groups"] = {
-					i(141063,{	-- Technique: Glyph of the Observer
-						["timeline"] = { "added 7.0.3.22248" },
-					}),
-					-- #if AFTER 7.3.5
-					i(27490),	-- Firebrand Battleaxe
-					-- #endif
-					i(24389),	-- Legion Blunderbuss
-					i(24392),	-- Arcing Bracers
-					-- #if AFTER 7.3.5
-					i(27494),	-- Emerald Eye Bracer (7.3.5 - Moved from Keli'dan the Breaker)
-					i(27489),	-- Virtue Bearer's Vambraces
-					-- #endif
-					i(24393),	-- Bloody Surgeon's Mitts
-					i(24391),	-- Kilt of the Night Strider
-					-- #if AFTER 7.3.5
-					i(27492),	-- Moonchild Leggings
-					i(27848),	-- Embroidered Spellpyre Boots
-					i(27491),	-- Signet of Repose
-					-- #endif
-					i(24390),	-- Auslese's Light Channeler
+					i(188284),	-- Arcing Bracers
+					i(188282),	-- Auslese's Light Channeler
+					i(188285),	-- Bloody Surgeon's Mitts
+					i(188308),	-- Embroidered Spellpyre Boots
+					i(188299),	-- Emerald Eye Bracer
+					i(188296),	-- Firebrand Battleaxe
+					i(188283),	-- Kilt of the Night Strider
+					i(188281),	-- Legion Blunderbuss
+					i(188298),	-- Moonchild Leggings
+					i(188297),	-- Signet of Repose
+					i(188295),	-- Virtue Bearer's Vambraces
 				},
 			}),
 			e(557, {	-- Keli'dan the Breaker
 				["creatureID"] = 17377,
 				["groups"] = {
-					i(24394),	-- Warsong Howling Axe
-					-- #if AFTER 7.3.5
-					i(27512),	-- The Willbreaker
-					i(27507),	-- Adamantine Repeater
-					i(27505),	-- Ruby Helm of the Just
-					i(27495),	-- Soldier's Dog Tags
-					i(29347),	-- Talisman of the Breaker
-					i(32080),	-- Mantle of Shadowy Embrace
-					-- #endif
-					i(24398),	-- Mantle of the Dusk-Dweller
-					i(24397),	-- Raiments of Divine Authority
-					-- #if AFTER 7.3.5
-					i(27506),	-- Robe of Effervescent Light
-					-- #endif
-					i(24396),	-- Vest of Vengeance
-					-- #if AFTER 7.3.5
-					i(28264),	-- Wastewalker Tunic
-					i(27497),	-- Doomplate Gauntlets
-					-- #endif
-					i(24395),	-- Mindfire Waistband
-					-- #if AFTER 7.3.5
-					i(27514),	-- Leggings of the Unrepentant
-					i(27788),	-- Bloodsworn Warboots
-					i(29239),	-- Eaglecrest Warboots
-					i(29245),	-- Wave-Crest Striders
-					i(28121),	-- Icon of Unyielding Courage
-					-- #endif
+					i(188304),	-- Adamantine Repeater
+					i(188307),	-- Bloodsworn Warboots
+					i(188301),	-- Doomplate Gauntlets
+					i(188311),	-- Eaglecrest Warboots
+					i(188309),	-- Icon of Unyielding Courage
+					i(188306),	-- Leggings of the Unrepentant
+					i(188314),	-- Mantle of Shadowy Embrace
+					i(188290),	-- Mantle of the Dusk-Dweller
+					i(188287),	-- Mindfire Waistband
+					i(188289),	-- Raiments of Divine Authority
+					i(188303),	-- Robe of Effervescent Light
+					i(188302),	-- Ruby Helm of the Just
+					i(188300),	-- Soldier's Dog Tags
+					i(188313),	-- Talisman of the Breaker
+					i(188305),	-- The Willbreaker
+					i(188288),	-- Vest of Vengeance
+					i(188286),	-- Warsong Howling Axe
+					i(188310),	-- Wastewalker Tunic
+					i(188312),	-- Wave-Crest Striders
 				},
 			}),
 		})),
@@ -546,93 +518,62 @@ root("Holidays", d(24, {  -- Timewalking
 			e(558, {	-- Commander Sarannis
 				["creatureID"] = 17976,
 				["groups"] = {
-					i(28304),	-- Prismatic Mittens of Mending
-					i(28311),	-- Revenger
-					i(28301),	-- Sarannis' Mystic Sheen
-					i(28306),	-- Towering Mantle of the Hunt
-					-- #if AFTER 7.3.5
-					i(28350),	-- Warhelm of the Bold (7.3.5 - Moved from Warp Splinter)
-					i(28347),	-- Warpscale Leggings (7.3.5 - Moved from Warp Splinter)
-					-- #endif
-					-- #if BEFORE MOP
-					i(28296, {	-- Libram of the Lightbringer
-						["timeline"] = { "removed 5.0.4.10000" },
-					}),
-					-- #endif
+					i(188370),	-- Prismatic Mittens of Mending
+					i(188372),	-- Revenger
+					i(188369),	-- Sarannis' Mystic Sheen
+					i(188371),	-- Towering Mantle of the Hunt
+					i(188394),	-- Warhelm of the Bold
+					i(188391),	-- Warpscale Leggings
 				},
 			}),
 			e(559, {	-- High Botanist Freywinn
 				["creatureID"] = 17975,
 				["groups"] = {
-					i(28316),	-- Aegis of the Sunbird
-					-- #if AFTER 7.3.5
-					i(28228),	-- Beast Lord Cuirass (7.3.5 - Moved from Warp Splinter)
-					-- #endif
-					i(28321),	-- Enchanted Thorium Torque
-					i(28317),	-- Energis Armwraps
-					-- #if AFTER 7.3.5
-					i(28348),	-- Moonglade Cowl (7.3.5 - Moved from Warp Splinter)
-					-- #endif
-					i(28318),	-- Obsidian Clodstompers
-					i(28315),	-- Stormreaver Warblades
-					i(23617),	-- Plans: Earthpeace Breastplate
+					i(188374),	-- Aegis of the Sunbird
+					i(188367),	-- Beast Lord Cuirass
+					i(188377),	-- Enchanted Thorium Torque
+					i(188375),	-- Energis Armwraps
+					i(188392),	-- Moonglade Cowl
+					i(188376),	-- Obsidian Clodstompers
+					i(188373),	-- Stormreaver Warblades
 				},
 			}),
 			e(560, {	-- Thorngrin the Tender
 				["creatureID"] = 17978,
 				["groups"] = {
-					i(28327),	-- Arcane Netherband
-					i(28325),	-- Dreamer's Dragonstaff
-					i(28324),	-- Gauntlets of Cruel Intention
-					i(28323),	-- Ring of Umbral Doom
-					i(28322),	-- Runed Dagger of Solace
-					i(24310),	-- Pattern: Battlecast Pants
+					i(188382),	-- Arcane Netherband
+					i(188381),	-- Dreamer's Dragonstaff
+					i(188380),	-- Gauntlets of Cruel Intention
+					i(188379),	-- Ring of Umbral Doom
+					i(188378),	-- Runed Dagger of Solace
 				},
 			}),
 			e(561, {	-- Laj
 				["creatureID"] = 17980,
 				["groups"] = {
-					i(28339),	-- Boots of the Shifting Sands
-					i(28338),	-- Devil-Stitched Leggings
-					i(28340),	-- Mantle of Autumn
-					i(28328),	-- Mithril-Bark Cloak
-					i(27739),	-- Spaulders of the Righteous
-					-- #if AFTER 7.3.5
-					i(28349),	-- Tidefury Helm (7.3.5 - Moved from Warp Splinter)
-					-- #endif
+					i(188385),	-- Boots of the Shifting Sands
+					i(188384),	-- Devil-Stitched Leggings
+					i(188386),	-- Mantle of Autumn
+					i(188383),	-- Mithril-Bark Cloak
+					i(188366),	-- Spaulders of the Righteous
+					i(188393),	-- Tidefury Helm
 				},
 			}),
 			e(562, {	-- Warp Splinter
 				["creatureID"] = 17977,
 				["groups"] = {
-					i(28370),	-- Bangle of Endless Blessings
-					-- #if BEFORE 7.3.5
-					i(28228),	-- Beast Lord Cuirass (7.3.5 - Moved to High Botanist Freywinn)
-					-- #endif
-					-- #if AFTER 7.3.5
-					i(29258),	-- Boots of Ethereal Manipulation
-					i(29262),	-- Boots of the Endless Hunt
-					i(29359),	-- Feral Staff of Lashing
-					i(32072),	-- Gauntlets of Dissention
-					-- #endif
-					i(28367),	-- Greatsword of Forlorn Visions
-					i(28229),	-- Incanter's Robe
-					i(28343),	-- Jagged Bark Pendant
-					-- #if BEFORE 7.3.5
-					i(28348),	-- Moonglade Cowl (7.3.5 - Moved to High Botanist Freywinn)
-					-- #endif
-					i(28371),	-- Netherfury Cape
-					-- #if BEFORE 7.3.5
-					i(28349),	-- Tidefury Helm (7.3.5 - Moved to Laj)
-					i(28350),	-- Warhelm of the Bold (7.3.5 - Moved to Commander Sarannis)
-					-- #endif
-					i(28342),	-- Warp Infused Drape
-					i(28345),	-- Warp Splinter's Thorn
-					-- #if BEFORE 7.3.5
-					i(28347),	-- Warpscale Leggings (7.3.5 - Moved to Commander Sarannis)
-					-- #endif
-					i(28341),	-- Warpstaff of Arcanum
-					i(24311),	-- Pattern: Whitemend Hood
+					i(188396),	-- Bangle of Endless Blessings
+					i(188398),	-- Boots of Ethereal Manipulation
+					i(188399),	-- Boots of the Endless Hunt
+					i(188400),	-- Feral Staff of Lashing
+					i(188401),	-- Gauntlets of Dissention
+					i(188395),	-- Greatsword of Forlorn Visions
+					i(188368),	-- Incanter's Robe
+					i(188389),	-- Jagged Bark Pendant
+					i(188397),	-- Netherfury Cape
+					i(188388),	-- Warp Infused Drape
+					i(188390),	-- Warp Splinter's Thorn
+					i(188387),	-- Warpstaff of Arcanum
 				},
 			}),
 		})),
@@ -746,112 +687,72 @@ root("Holidays", d(24, {  -- Timewalking
 			e(576, {	-- Hungarfen
 				["creatureID"] = 17770,
 				["groups"] = {
-					-- #if BEFORE MOP
-					i(27631, {	-- Needle Shrike
-						["timeline"] = { "removed 5.0.4.10000" },
-					}),
-					-- #endif
-					-- #if AFTER 7.3.5
-					i(27747),	-- Boggspine Knuckles
-					i(27746),	-- Arcanium Signet Bands
-					-- #endif
-					i(24451),	-- Lykul Bloodbands
-					-- #if AFTER 7.3.5
-					i(27745),	-- Hungarhide Gauntlets
-					-- #endif
-					i(24450),	-- Manaspark Gloves
-					i(24452),	-- Starlight Gauntlets
-					-- #if AFTER 7.3.5
-					i(27743),	-- Girdle of Living Flame
-					i(27748),	-- Cassock of the Loyal
-					-- #endif
-					-- #if BEFORE MOP
-					i(24413, {	-- Totem of the Thunderhead
-						["timeline"] = { "removed 5.0.4.10000" },
-					}),
-					-- #endif
+					i(188335),	-- Arcanium Signet Bands
+					i(188336),	-- Boggspine Knuckles
+					i(188337),	-- Cassock of the Loyal
+					i(188333),	-- Girdle of Living Flame
+					i(188334),	-- Hungarhide Gauntlets
+					i(188316),	-- Lykul Bloodbands
+					i(188315),	-- Manaspark Gloves
+					i(188317),	-- Starlight Gauntlets
 				},
 			}),
 			e(577, {	-- Ghaz'an
 				["creatureID"] = 18105,
 				["groups"] = {
-					-- #if AFTER 7.3.5
-					i(27757),	-- Greatstaff of the Leviathan
-					-- #endif
-					i(24461),	-- Hatebringer
-					-- #if AFTER 7.3.5
-					i(27759),	-- Headdress of the Tides
-					i(27758),	-- Hydra-Fang Necklace
-					-- #endif
-					i(24462),	-- Luminous Pearls of Insight
-					i(24460),	-- Talisman of Tenacity
-					i(24459),	-- Cloak of Healing Rays
-					-- #if AFTER 7.3.5
-					i(27760),	-- Dunewind Sash
-					i(27755),	-- Girdle of Gallantry
-					-- #endif
-					i(24458),	-- Studded Girdle of Virtue
-					-- #if AFTER 7.3.5
-					i(27761),	-- Ring of the Shadow Deeps
-					-- #endif
+					i(188324),	-- Cloak of Healing Rays
+					i(188342),	-- Dunewind Sash
+					i(188338),	-- Girdle of Gallantry
+					i(188339),	-- Greatstaff of the Leviathan
+					i(188326),	-- Hatebringer
+					i(188341),	-- Headdress of the Tides
+					i(188340),	-- Hydra-Fang Necklace
+					i(188327),	-- Luminous Pearls of Insight
+					i(188343),	-- Ring of the Shadow Deeps
+					i(188323),	-- Studded Girdle of Virtue
+					i(188325),	-- Talisman of Tenacity
 				},
 			}),
 			e(578, {	-- Swamplord Musel'ek
 				["creatureID"] = 17826,
 				["groups"] = {
-					-- #if AFTER 7.3.5
-					i(27767),	-- Bogreaver
-					-- #endif
-					i(24453),	-- Zangartooth Shortblade
-					-- #if AFTER 7.3.5
-					i(27763),	-- Crown of the Forest Lord
-					i(27766),	-- Swampstone Necklace
-					-- #endif
-					i(24457),	-- Truth Bearer Shoulderguards
-					i(24454),	-- Cloak of Enduring Swiftness
-					i(24455),	-- Tunic of the Nightwatcher
-					-- #if AFTER 7.3.5
-					i(27765),	-- Armwraps of Disdain
-					i(27764),	-- Hands of the Sun
-					-- #endif
-					i(24456),	-- Greaves of the Iron Guardian
-					-- #if AFTER 7.3.5
-					i(27762),	-- Weathered Band of the Swamplord
-					-- #endif
+					i(188347),	-- Armwraps of Disdain
+					i(188349),	-- Bogreaver
+					i(188319),	-- Cloak of Enduring Swiftness
+					i(188345),	-- Crown of the Forest Lord
+					i(188321),	-- Greaves of the Iron Guardian
+					i(188346),	-- Hands of the Sun
+					i(188348),	-- Swampstone Necklace
+					i(188322),	-- Truth Bearer Shoulderguards
+					i(188320),	-- Tunic of the Nightwatcher
+					i(188344),	-- Weathered Band of the Swamplord
+					i(188318),	-- Zangartooth Shortblade
 				},
 			}),
 			e(579, {	-- The Black Stalker
 				["creatureID"] = 17882,
 				["groups"] = {
-					-- #if AFTER 7.3.5
-					i(27769),	-- Endbringer
-					-- #endif
-					i(24464),	-- The Stalker's Fangs
-					-- #if AFTER 7.3.5
-					i(29350),	-- The Black Stalk
-					i(27772),	-- Stormshield of Renewal
-					i(27781),	-- Demonfang Ritual Helm
-					i(27938),	-- Savage Mask of the Lynx Lord
-					i(27779),	-- Bone Chain Necklace
-					i(27771),	-- Doomplate Shoulderguards
-					-- #endif
-					i(24463),	-- Pauldrons of Brute Force
-					i(24481),	-- Robes of the Augurer
-					i(24465),	-- Shamblehide Chestguard
-					-- #if AFTER 7.3.5
-					i(27768),	-- Oracle Belt of Timeless Mystery
-					i(27773),	-- Barbaric Legstraps
-					i(27907),	-- Mana-Etched Pantaloons
-					-- #endif
-					i(24466),	-- Skulldugger's Leggings
-					-- #if AFTER 7.3.5
-					i(30541),	-- Stormsong Kilt
-					i(29265),	-- Barkchip Boots
-					i(32081),	-- Eye of the Stalker
-					i(27780),	-- Ring of Fabled Hope
-					i(27896),	-- Alembic of Infernal Power
-					i(27770),	-- Argussian Compass
-					-- #endif
+					i(188359),	-- Alembic of Infernal Power
+					i(188352),	-- Argussian Compass
+					i(188355),	-- Barbaric Legstraps
+					i(188362),	-- Barkchip Boots
+					i(188356),	-- Bone Chain Necklace
+					i(188358),	-- Demonfang Ritual Helm
+					i(188353),	-- Doomplate Shoulderguards
+					i(188351),	-- Endbringer
+					i(188365),	-- Eye of the Stalker
+					i(188360),	-- Mana-Etched Pantaloons
+					i(188350),	-- Oracle Belt of Timeless Mystery
+					i(188328),	-- Pauldrons of Brute Force
+					i(188357),	-- Ring of Fabled Hope
+					i(188332),	-- Robes of the Augurer
+					i(188361),	-- Savage Mask of the Lynx Lord
+					i(188330),	-- Shamblehide Chestguard
+					i(188331),	-- Skulldugger's Leggings
+					i(188354),	-- Stormshield of Renewal
+					i(188364),	-- Stormsong Kilt
+					i(188363),	-- The Black Stalk
+					i(188329),	-- The Stalker's Fangs
 				},
 			}),
 		})),

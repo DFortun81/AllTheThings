@@ -546,37 +546,37 @@ root("Holidays", d(24, {  -- Timewalking
 		})),
 		inst_tw(272, bubbleDown({ ["timeline"] = { "added 9.1.5", }},{	-- Azjol-Nerub
 			cr(28684, e(585, {	-- Krik'thir the Gatewatcher
-				i(35655),	-- Cobweb Machete
-				i(37216),	-- Facade Shield of Glyphs
-				i(157582),	-- Nerubian Mantle
-				i(37219),	-- Custodian's Chestpiece
-				i(37217),	-- Golden Limb Bands
-				i(35656),	-- Aura Focused Gauntlets
-				i(35657),	-- Exquisite Spider-Silk Footwraps
-				i(37218),	-- Stone-Worn Footwraps
+				i(188403),	-- Aura Focused Gauntlets
+				i(188402),	-- Cobweb Machete
+				i(188414),	-- Custodian's Chestpiece
+				i(188404),	-- Exquisite Spider-Silk Footwraps
+				i(188411),	-- Facade Shield of Glyphs
+				i(188412),	-- Golden Limb Bands
+				i(188428),	-- Nerubian Mantle
+				i(188413),	-- Stone-Worn Footwraps
 			})),
 			cr(28921, e(586, {	-- Hadronox
-				i(35658),	-- Life-Staff of the Web Lair
-				i(35660),	-- Spinneret Epaulets
-				i(37222),	-- Egg Sac Robes
-				i(37230),	-- Grotto Mist Gloves
-				i(157581),	-- Skittering Gauntlets
-				i(37221),	-- Hollowed Mandibles Legplates
-				i(35659),	-- Treads of Aspiring Heights
-				i(37220),	-- Essence of Gossamer
+				i(188417),	-- Egg Sac Robes
+				i(188415),	-- Essence of Gossamer
+				i(188418),	-- Grotto Mist Gloves
+				i(188416),	-- Hollowed Mandibles Legplates
+				i(188405),	-- Life-Staff of the Web Lair
+				i(188427),	-- Skittering Gauntlets
+				i(188407),	-- Spinneret Epaulets
+				i(188406),	-- Treads of Aspiring Heights
 			})),
 			cr(29120, e(587, {	-- Anub'arak
-				i(37235),	-- Crypt Lord's Deft Blade
-				i(37238),	-- Rod of the Fallen Monarch
-				i(37237),	-- Chitin Shell Greathelm
-				i(37236),	-- Insect Vestments
-				i(37240),	-- Flamebeard's Bracers
-				i(37241),	-- Ancient Aligned Girdle
-				i(35663),	-- Charmed Silken Cord
-				i(37242),	-- Sash of the Servant
-				i(35662),	-- Wing Cover Girdle
-				i(37232),	-- Ring of the Traitor King
-				i(35661),	-- Signet of Arachnathid Command
+				i(188425),	-- Ancient Aligned Girdle
+				i(188410),	-- Charmed Silken Cord
+				i(188422),	-- Chitin Shell Greathelm
+				i(188420),	-- Crypt Lord's Deft Blade
+				i(188424),	-- Flamebeard's Bracers
+				i(188421),	-- Insect Vestments
+				i(188419),	-- Ring of the Traitor King
+				i(188423),	-- Rod of the Fallen Monarch
+				i(188426),	-- Sash of the Servant
+				i(188408),	-- Signet of Arachnathid Command
+				i(188409),	-- Wing Cover Girdle
 			})),
 		})),
 		inst_tw(274, {	-- Gundrak
@@ -703,43 +703,43 @@ root("Holidays", d(24, {  -- Timewalking
 			cr(36497, e(615, {	-- Brojahm
 				i(50316),	-- Papa's Brand New Bag
 				i(50317),	-- Papa's New Bag
-				i(49783),	-- Lucky Old Sun
-				i(50191),	-- Nighttime
-				i(50197),	-- Eyes of Bewilderment
-				i(50196),	-- Love's Prisoner
-				i(49785),	-- Bewildering Shoulderpads
-				i(50193),	-- Very Fashionable Shoulders
-				i(49786),	-- Robes of the Cheating Heart
-				i(49787),	-- Seven Stormy Mornings
-				i(49788),	-- Cold Sweat Grips
-				i(50194),	-- Weeping Gauntlets
-				i(49784),	-- Minister's Number One Legplates
+				i(188457),	-- Bewildering Shoulderpads
+				i(188460),	-- Cold Sweat Grips
+				i(188477),	-- Eyes of Bewilderment
+				i(188476),	-- Love's Prisoner
+				i(188455),	-- Lucky Old Sun
+				i(188456),	-- Minister's Number One Legplates
+				i(188473),	-- Nighttime
+				i(188458),	-- Robes of the Cheating Heart
+				i(188459),	-- Seven Stormy Mornings
+				i(188474),	-- Very Fashionable Shoulders
+				i(188475),	-- Weeping Gauntlets
 			})),
 			cr(36502, e(616, {	-- Devourer of Souls
-				i(49790),	-- Blood Boil Lancet
-				i(49793),	-- Tower of the Mouldering Corpse
-				i(50203),	-- Blood Weeper
-				i(49789),	-- Heartshiver
-				i(50210),	-- Seethe
-				i(50206),	-- Frayed Scoundrel's Cap
-				i(50214),	-- Helm of the Spirit Shock
-				i(50211),	-- Arcane Loops of Anger
-				i(49799),	-- Coil of Missing Gems
-				i(50208),	-- Pauldrons of the Souleater
-				i(49792),	-- Accursed Crawling Cape
-				i(49791),	-- Lost Reliquary Chestguard
-				i(50213),	-- Mord'rethar Robes
-				i(49797),	-- Brace Guards of the Starless Night
-				i(50209),	-- Essence of Suffering
-				i(50212),	-- Essence of Desire
-				i(49796),	-- Essence of Anger
-				i(49794),	-- Legplates of Frozen Granite
-				i(50207),	-- Black Spire Sabatons
-				i(50215),	-- Recovered Reliquary Boots
-				i(49795),	-- Sollerets of Suffering
-				i(49798),	-- Soul Screaming Boots
-				i(49800),	-- Spiteful Signet
-				i(50198),	-- Needle-Encrusted Scorpion
+				i(188464),	-- Accursed Crawling Cape
+				i(188485),	-- Arcane Loops of Anger
+				i(188481),	-- Black Spire Sabatons
+				i(188462),	-- Blood Boil Lancet
+				i(188479),	-- Blood Weeper
+				i(188469),	-- Brace Guards of the Starless Night
+				i(188471),	-- Coil of Missing Gems
+				i(188468),	-- Essence of Anger
+				i(188486),	-- Essence of Desire
+				i(188483),	-- Essence of Suffering
+				i(188480),	-- Frayed Scoundrel's Cap
+				i(188461),	-- Heartshiver
+				i(188488),	-- Helm of the Spirit Shock
+				i(188466),	-- Legplates of Frozen Granite
+				i(188463),	-- Lost Reliquary Chestguard
+				i(188487),	-- Mord'rethar Robes
+				i(188478),	-- Needle-Encrusted Scorpion
+				i(188482),	-- Pauldrons of the Souleater
+				i(188489),	-- Recovered Reliquary Boots
+				i(188484),	-- Seethe
+				i(188467),	-- Sollerets of Suffering
+				i(188470),	-- Soul Screaming Boots
+				i(188472),	-- Spiteful Signet
+				i(188465),	-- Tower of the Mouldering Corpse
 			})),
 		})),
 		inst_tw(281, {	-- The Nexus
@@ -806,37 +806,41 @@ root("Holidays", d(24, {  -- Timewalking
 		}),
 		inst_tw(285, bubbleDown({ ["timeline"] = { "added 9.1.5", }},{	-- Utgarde Keep
 			cr(23953, e(638, {	-- Prince Keleseth <The San'layn>
-				i(37179),	-- Infantry Assault Blade
-				i(35570),	-- Keleseth's Blade of Evocation
-				i(37177),	-- Wand of the San'layn
-				i(37180),	-- Battlemap Hide Helm
-				i(35572),	-- Reinforced Velvet Helm
-				i(35571),	-- Dragon Stabler's Gauntlets
-				i(37178),	-- Strategist's Belt
+				i(188441),	-- Battlemap Hide Helm
+				i(188430),	-- Dragon Stabler's Gauntlets
+				i(188440),	-- Infantry Assault Blade
+				i(188429),	-- Keleseth's Blade of Evocation
+				i(188431),	-- Reinforced Velvet Helm
+				i(188439),	-- Strategist's Belt
+				i(188438),	-- Wand of the San'layn
 			})),
 			cr(24200, e(639, {	-- Skarvald the Constructor and Dalronn the Controller
-				i(35573),	-- Arm Blade of Augelmir
-				i(37181),	-- Dagger of Betrayal
-				i(157555),	-- Constructor's Worklight
-				i(37182),	-- Helmet of the Constructor
-				i(35574),	-- Chestplate of the Northern Lights
-				i(37184),	-- Dalronn's Jerkin
-				i(35575),	-- Skarvald's Dragonskin Habergeon
-				i(37183),	-- Bindings of the Tunneler
+				["crs"] = {
+					24201,	-- Dalronn the Controller
+				},
+				["g"] = {
+					i(188432),	-- Arm Blade of Augelmir
+					i(188444),	-- Bindings of the Tunneler
+					i(188433),	-- Chestplate of the Northern Lights
+					i(188454),	-- Constructor's Worklight
+					i(188442),	-- Dagger of Betrayal
+					i(188445),	-- Dalronn's Jerkin
+					i(188443),	-- Helmet of the Constructor
+					i(188434),	-- Skarvald's Dragonskin Habergeon
+				},
 			})),
 			cr(23954, e(640, {	-- Ingvar the Plunderer
-				i(41793),	-- Design: Fierce Monarch Topaz
-				i(37190),	-- Enraged Feral Staff
-				i(35576),	-- Ingvar's Monolithic Cleaver
-				i(37191),	-- Drake-Mounted Crossbow
-				i(37188),	-- Plunderer's Helmet
-				i(35578),	-- Overlaid Chain Spaulders
-				i(37194),	-- Sharp-Barbed Leather Belt
-				i(37189),	-- Breeches of the Caller
-				i(35577),	-- Holistic Patchwork Breeches
-				i(37193),	-- Staggering Legplates
-				i(37192),	-- Annhylde's Ring
-				i(37186),	-- Unsmashable Heavy Band
+				i(188451),	-- Annhylde's Ring
+				i(188448),	-- Breeches of the Caller
+				i(188450),	-- Drake-Mounted Crossbow
+				i(188449),	-- Enraged Feral Staff
+				i(188436),	-- Holistic Patchwork Breeches
+				i(188435),	-- Ingvar's Monolithic Cleaver
+				i(188437),	-- Overlaid Chain Spaulders
+				i(188447),	-- Plunderer's Helmet
+				i(188453),	-- Sharp-Barbed Leather Belt
+				i(188452),	-- Staggering Legplates
+				i(188446),	-- Unsmashable Heavy Band
 			})),
 		})),
 		inst_tw(286, bubbleDown({ ["timeline"] = { "added 6.2.3.20601", "removed 9.1.5", }},{	-- Utgarde Pinnacle
