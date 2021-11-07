@@ -813,8 +813,14 @@ _.ExpansionFeatures =
 					}),
 					q(58798, {	-- The Spires of Ascension
 						["sourceQuests"] = { 58797 },	-- Forged by Trial
-						["provider"] = { "n", 163650 },	-- Kleia
-						["coord"] = { 59.9, 36.2, SANCTUM_OF_BINDING },
+						["providers"] = {
+							{ "n", 163650 },	-- Kleia
+							{ "n", 160390 },	-- Kleia
+						},
+						["coords"] = {
+							{ 38.6, 43.3, ARCHONS_RISE },
+							{ 59.9, 36.2, SANCTUM_OF_BINDING },
+						},
 						["_drop"] = { "g" },	-- drop anima trash
 					}),
 					q(58563, {	-- Through Glass
