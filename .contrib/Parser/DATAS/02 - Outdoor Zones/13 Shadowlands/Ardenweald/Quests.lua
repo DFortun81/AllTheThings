@@ -9,7 +9,7 @@ _.Zones =
 			n(QUESTS, {
 				prof(FISHING, {
 					i(187877, {	-- Frog Soul
-						["description"] = "Fish anywhere in Ardenweald to recieve this soul.",
+						["description"] = "Fish anywhere in Ardenweald to receive this soul.",
 						["requireSkill"] = FISHING,
 					}),
 				}),

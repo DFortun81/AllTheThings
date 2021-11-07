@@ -128,7 +128,7 @@ _.ExpansionFeatures =
 							},
 						}),
 						o(9999890, {	-- This section is for gear rewards
-							["description"] = "You can only recieve each tier of gear rewards once per week.  Ex. Completing multiple 5 mask runs rewards the next lower tier reward each time.  After all tier rewards are looted for the week no more gear is given.",
+							["description"] = "You can only receive each tier of gear rewards once per week.  Ex. Completing multiple 5 mask runs rewards the next lower tier reward each time.  After all tier rewards are looted for the week no more gear is given.",
 							["g"] = {
 								o(9999891,	{	-- Main Objective Only(420)
 									["description"] = "Rewards ilvl 420 loot.",

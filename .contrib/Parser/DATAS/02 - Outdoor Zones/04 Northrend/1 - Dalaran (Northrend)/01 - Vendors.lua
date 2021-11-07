@@ -1846,7 +1846,7 @@ _.Zones =
 					},
 				}),
 				n(35826,  {	-- Kaye Toogie
-					["description"] = "When using |cff0070ddWormhole Generator: Northrend|r, you have a chance to recieve the option 'Underground...,' which ports you to the vendor.  You must have Engineering to use the toy.",
+					["description"] = "When using |cff0070ddWormhole Generator: Northrend|r, you have a chance to receive the option 'Underground...,' which ports you to the vendor.  You must have Engineering to use the toy.",
 					["requireSkill"] = ENGINEERING,
 					["g"] = {
 						i(16054),	-- Schematic: Arcanite Dragonling

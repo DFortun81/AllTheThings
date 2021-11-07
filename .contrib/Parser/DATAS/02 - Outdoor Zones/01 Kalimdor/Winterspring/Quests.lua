@@ -452,7 +452,7 @@ _.Zones =
 					["coord"] = { 45.7, 41.0, WINTERSPRING },
 				}),
 				q(28656, {	-- Strange Life Forces
-					["description"] = "Kill mobs at close range until you recieve an E'ko buff.",
+					["description"] = "Kill mobs at close range until you receive an E'ko buff.",
 					["coords"] = {
 						{ 46.3, 18.0, WINTERSPRING },
 						{ 55.6, 23.6, WINTERSPRING },

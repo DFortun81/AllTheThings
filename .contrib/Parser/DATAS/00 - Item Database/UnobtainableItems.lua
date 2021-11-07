@@ -10,7 +10,7 @@
 -- 10 Item from TCG card is no longer in print, but still purchaseable online, sometimes BMAH, and possibly AH.  (There is Hope)
 -- 11 This item is Bind on Pickup but can be obtained under certain circumstances.  (There is Hope)
 -- 12 Quests in Legacy are no longer available in game. This section is solely for you to be able to see what was obtained on your account. (Used for Legacy Quest Headers ONLY)
--- 13 Due to the Cataclysm or other changes in mob level this mob no longer drops this item. Please inform us if you recieve an item listed here as a drop.  (Used for Legacy Drop Headers ONLY)
+-- 13 Due to the Cataclysm or other changes in mob level this mob no longer drops this item. Please inform us if you receive an item listed here as a drop.  (Used for Legacy Drop Headers ONLY)
 -- 14 These items can't be purchased unless you have the required PvP Rating or were in the Top % of that season.
 -- 15 This item has a Source ID, but apparently cannot be used for transmog and will likely be unlearnable. (This probably needs to be moved to another file, not technically unobtainable, more unlearnable)
 -- 16 These items require either attending Blizzcon or purchasing a virtual ticket.  You may also find codes on various sites for high prices.

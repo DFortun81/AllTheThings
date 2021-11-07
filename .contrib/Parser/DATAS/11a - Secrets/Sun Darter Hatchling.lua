@@ -189,13 +189,13 @@ _.Secrets =
 				["description"] = "|cFFFFFFFFSTEP 9:|r Go up the ramp on the right to the Purple Transparent Barrier. Use Ethereal Oil and walk through the barrier to the Strange Stone in the back.",
 			}),
 			o(9999917, {	-- Step 10: Strange Stone
-				["description"] = "|cFFFFFFFFSTEP 10:|r At the Strange Stone, use the Gordok Ogre Suit & Wintefall Firewater.  Select the Strange Stones dialogue \"Stick arm in stone\" and recieve Sign of the Second debuff.",	-- n(54213)	-- Strange Stone
+				["description"] = "|cFFFFFFFFSTEP 10:|r At the Strange Stone, use the Gordok Ogre Suit & Wintefall Firewater.  Select the Strange Stones dialogue \"Stick arm in stone\" and receive Sign of the Second debuff.",	-- n(54213)	-- Strange Stone
 			}),
 			o(9999918, {	-- Step 11: Metal Gate
 				["description"] = "|cFFFFFFFFSTEP 11:|r Backtrack to the gate and use the Pygmy Oil until you turn into a Pygmy.  Walk through the gate to the Wisdom Cube.",
 			}),
 			o(9999919, {	-- Step 12: Wisdom Cube
-				["description"] = "|cFFFFFFFFSTEP 12:|r At the Wisdom Cube summon Perky Pug and use the Little Princess Costume on it. Select the Wisdom Cubes dialogue \"<Place arm beneath cube.>\" and recieve Sign of the First debuff.",	-- n(53730)	-- Wisdom Cube
+				["description"] = "|cFFFFFFFFSTEP 12:|r At the Wisdom Cube summon Perky Pug and use the Little Princess Costume on it. Select the Wisdom Cubes dialogue \"<Place arm beneath cube.>\" and receive Sign of the First debuff.",	-- n(53730)	-- Wisdom Cube
 			}),
 			o(9999920, {	-- Step 13: Tarnished Plaque
 				["description"] = "|cFFFFFFFFSTEP 13a:|r Backtrack down the ramp to the now opened gate. DO NOT JUMP OFF. Enter the room and on a pillar on the right will be a Tarnished Plaque.  Click on it.\n\nThe Tarnished Plaque reads:\n\n\"The greatest of achievments begins\nwith the smallest leap of the mind.\"\n\n|cFFFFFFFFSTEP 13b:|r After reading the Tarnished Plaque, click off at least one buff and use the Scroll of Intellect.",

@@ -654,7 +654,7 @@ _.Zones =
 					},
 				}),
 				q(56423, {	-- Large Storage Fragment
-				--	repeatable?  daily?  i picked it up right after doing the discs of norgannon quest and was able to summon another data anomaly.  both data anomalies i killed (on daily discs of norgannon quest + this) just awarded spare parts, so i'm not sure if there's a one-time loot lockout or if you could attempt to farm storage fragments and summon multiple data anomalies.  i've only recieved this item on data anomaly day.  i think the first time i got it was from just looting a normal mob, the second time was from a blue box of assorted parts from the reclamation rig
+				--	repeatable?  daily?  i picked it up right after doing the discs of norgannon quest and was able to summon another data anomaly.  both data anomalies i killed (on daily discs of norgannon quest + this) just awarded spare parts, so i'm not sure if there's a one-time loot lockout or if you could attempt to farm storage fragments and summon multiple data anomalies.  i've only received this item on data anomaly day.  i think the first time i got it was from just looting a normal mob, the second time was from a blue box of assorted parts from the reclamation rig
 					["isDaily"] = true,
 					["itemID"] = 169593,	-- Large Storage Fragment
 				}),
@@ -1302,7 +1302,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(56424, {	-- Rust Covered Disc
-				--	repeatable?  daily?  i picked it up right after doing the discs of norgannon quest and was able to summon another data anomaly.  both data anomalies i killed (on daily discs of norgannon quest + this) just awarded spare parts, so i'm not sure if there's a one-time loot lockout or if you could attempt to farm storage fragments and summon multiple data anomalies.  i've only recieved this item on data anomaly day.  received from a green recycling box from the reclamation rig
+				--	repeatable?  daily?  i picked it up right after doing the discs of norgannon quest and was able to summon another data anomaly.  both data anomalies i killed (on daily discs of norgannon quest + this) just awarded spare parts, so i'm not sure if there's a one-time loot lockout or if you could attempt to farm storage fragments and summon multiple data anomalies.  i've only received this item on data anomaly day.  received from a green recycling box from the reclamation rig
 					["isDaily"] = true,
 					["itemID"] = 169594,	-- Rust Covered Disc
 				}),
