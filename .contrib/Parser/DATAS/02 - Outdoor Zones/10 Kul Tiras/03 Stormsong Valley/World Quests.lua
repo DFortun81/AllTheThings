@@ -810,6 +810,7 @@ _.Zones =
 					["lvl"] = { 50 },
 					["g"] = {
 						n(129803, {	-- Whiplash
+							["questID"] = 52296,
 							["description"] = "This rare only spawns during its associated world quest.",
 							["coord"] = { 47.32, 65.81, STORMSONG_VALLEY },
 							["g"] = {

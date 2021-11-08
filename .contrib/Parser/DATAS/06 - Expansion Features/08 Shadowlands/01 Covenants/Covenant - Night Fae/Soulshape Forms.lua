@@ -207,3 +207,7 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+
+_.HiddenQuestTriggers = {
+	q(65029),	-- when learning about 'random' soulshape selection option
+};
