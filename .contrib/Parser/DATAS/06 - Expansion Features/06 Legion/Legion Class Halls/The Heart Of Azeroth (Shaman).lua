@@ -784,6 +784,7 @@ _.HiddenQuestTriggers = {
 	q(43901),	-- Shaman Order Hall - Tracking Quest: All - Troop B Enabled
 	q(43946),	-- Shaman Order Hall - Enhancement Chosen Second
 	q(41329),	-- Shaman Order Hall - Elemental Chosen First
+	q(41330),	-- Shaman Order Hall - Restoration Chosen First
 	q(43947),	-- Shaman Order Hall - Elemental Chosen
 	q(43948),	-- Shaman Order Hall - Restoration Chosen Third
 	q(44396),	-- Shaman Order Hall - Tracking Quest: Thunderaan's Enemies 1
