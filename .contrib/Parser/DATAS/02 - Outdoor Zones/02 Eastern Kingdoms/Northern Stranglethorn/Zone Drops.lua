@@ -53,7 +53,10 @@ _.Zones =
 					["crs"] = { 701 },	-- Bloodscalp Mystic
 				}),
 				i(1624, {	-- Skullsplitter Helm
-					["crs"] = { 781 },	-- Skullsplitter Headhunter
+					["crs"] = {
+						781,	-- Skullsplitter Headhunter
+						783,	-- Skullsplitter Berserker
+					},
 				}),
 				i(1664, {	-- Spellforce Rod
 					["crs"] = { 676 },	-- Venture Co. Surveyor

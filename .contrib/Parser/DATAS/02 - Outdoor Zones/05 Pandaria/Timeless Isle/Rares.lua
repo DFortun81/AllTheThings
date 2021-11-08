@@ -24,7 +24,6 @@ _.Zones =
 						crit(31, {	-- Archiereus of Flame
 							["achievementID"] = 8714,	-- Timeless Champion
 						}),
-						i(103982),	-- Burden of Eternity
 						i(86574, {	-- Elxir of Ancient Knowledge
 							["u"] = REMOVED_FROM_GAME,	-- removed around Legion prepatch
 						}),
@@ -37,7 +36,6 @@ _.Zones =
 						{ "i", 103684, 1 },	-- Scroll of Challenge
 					},
 					["g"] = {
-						i(103982),	-- Burden of Eternity
 						un(REMOVED_FROM_GAME, i(86574)),	-- Elixir of Ancient Knowledge
 					},
 				}),
@@ -461,9 +459,6 @@ _.Zones =
 					["questID"] = 33305,
 					["isDaily"] = true,
 					["coord"] = { 71.2, 82.6, TIMELESS_ISLE },	-- mapID needs verification
-					["g"] = {
-						i(103982),	-- Burden of Eternity
-					},
 				}),
 				n(72769,  {	-- Spirit of Jadefire
 					["questID"] = 33293,

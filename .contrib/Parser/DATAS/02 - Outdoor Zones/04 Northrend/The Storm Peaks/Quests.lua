@@ -794,8 +794,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["description"] = "Use Brann's Communicator to pick this quest up.",
 					["provider"] = { "n", 29579 },	-- Brann Bronzebeard
-					["sourceQuest"] = 12926,	-- Pieces of the Puzzle
 					["isBreadcrumb"] = true,
+					["sourceQuests"] = {
+						12926,	-- Pieces of the Puzzle
+						12872,	-- Norgannon's Shell (A)
+						12928,	-- Norgannon's Shell (H)
+					},
 				}),
 				q(12885, {	-- The Exiles of Ulduar
 					["sourceQuests"] = { 12872 },	-- Norgannon's Shell
