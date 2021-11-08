@@ -153,11 +153,8 @@ _.ExpansionFeatures =
 							}),
 						})),
 						n(QUESTS, {
-							mission(647, {	-- Black Market Journal
-								q(39278, {	-- The Missing Manifest
-									["provider"] = { "i", 127989 },	-- Waterlogged Manifest
-									["icon"] = "Interface\\Icons\\inv_inscription_scrollofwisdom_02",
-								}),
+							q(39278, {	-- The Missing Manifest
+								["provider"] = { "i", 127989 },	-- Waterlogged Manifest
 							}),
 							q(39665, {	-- A True Naval Commander
 								["provider"] = { "n", 93812 },	-- Salty Jorren

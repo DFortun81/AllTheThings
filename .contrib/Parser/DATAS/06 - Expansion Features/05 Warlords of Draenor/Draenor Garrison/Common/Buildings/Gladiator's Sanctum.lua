@@ -117,12 +117,12 @@ _.ExpansionFeatures =
 					n(QUESTS, {
 						q(37082),	-- Call of the Gladiator
 						q(37083, {	-- Fight, Kill, Salute!
+							i(119219, {	-- Warlord's Flag of Victory
+								["description"] = "Requires being the last player alive in the coliseum.",
+							}),
 							i(120142, {	-- Coliseum Champion's Spoils
 								i(119217),	-- Alliance Flag of Victory
-								i(119219),	-- Warlord's Flag of Victory
-							--	warlord's flag isn't a reward contained in this bag; it's from being the last player alive while in the coliseum
-							--	the other item contained in this bag is 119218 (horde flag of victory)
-							--	not sure whether to remove warlord's flag or if it was placed here intentionally so it doesn't get lost elsewhere
+								i(119218),	-- Horde Flag of Victory
 							}),
 						}),
 						q(36957, {	-- Nemesis: Becoming Death (Blood Elf)
