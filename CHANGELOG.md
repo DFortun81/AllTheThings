@@ -1,6 +1,6 @@
 # AllTheThings
 
-## [SL-2.5.2](https://github.com/DFortun81/AllTheThings/tree/SL-2.5.2) (2021-11-07)
+## [SL-2.5.2](https://github.com/DFortun81/AllTheThings/tree/SL-2.5.2) (2021-11-08)
 [Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.5.1a...SL-2.5.2) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
 ### Notable changes:
