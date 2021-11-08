@@ -714,14 +714,6 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 161907 },	-- Baroness Draka
 						["coord"] = { 49.7, 50.7, SEAT_OF_THE_PRIMUS },
 					}),
-					q(58609, {	-- Taking The Seat
-						["sourceQuests"] = {
-							57878,	-- Choosing Your Purpose [Story]
-							63212,	-- Report to Mevix [Skip]
-						},
-						["provider"] = { "n", 171821 },	-- Baroness Draka
-						["coord"] = { 42.9, 74.1, ORIBOS },
-					}),
 					q(61744, {	-- The Baron's Plan
 						["sourceQuests"] = { 61743 },	-- The Pupil Returns
 						["provider"] = { "n", 172923 },	-- Kel'Thuzad

@@ -471,11 +471,6 @@ _.ExpansionFeatures =
 						["isWeekly"] = true,
 						["coord"] = { 55.0, 26.8, SINFALL_REACHES },
 					}),
-					q(63215, {	-- Report to Draven
-						["sourceQuests"] = { 57878 },	-- Choosing Your Purpose
-						["provider"] = { "n", 159478 },	-- Tal-Inara
-						["coord"] = { 39.2, 69.7, ORIBOS },
-					}),
 					q(58444, {	-- Return to Sinfall
 						["sourceQuests"] = { 58440 },	-- Mirror, Mirror...
 						["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
@@ -497,11 +492,6 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 59315 },	-- The Court of Harvesters
 						["provider"] = { "n", 164796 },	-- Prince Renathal
 						["coord"] = { 50.9, 38.1, SINFALL_REACHES },
-					}),
-					q(59314, {	-- Sinfall
-						["sourceQuests"] = { 63215 },	-- Report to Draven
-						["provider"] = { "n", 171589 },	-- General Draven
-						["coord"] = { 44.8, 68.9, ORIBOS },
 					}),
 					q(63341, {	-- Sinfall Tactician
 						-- TODO: Assumed SQ... double check by skipping to Renown 22

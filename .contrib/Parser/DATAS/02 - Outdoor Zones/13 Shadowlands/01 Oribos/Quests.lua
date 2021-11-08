@@ -70,25 +70,25 @@ _.Zones =
 							{"where", "headerID", ZONE_REWARDS },
 							{"pop"},
 							{"finalize"},
-							
+
 							{"select", "mapID", MALDRAXXUS },
 							{"pop"},
 							{"where", "headerID", ZONE_REWARDS },
 							{"pop"},
 							{"finalize"},
-							
+
 							{"select", "mapID", ARDENWEALD },
 							{"pop"},
 							{"where", "headerID", ZONE_REWARDS },
 							{"pop"},
 							{"finalize"},
-							
+
 							{"select", "mapID", REVENDRETH },
 							{"pop"},
 							{"where", "headerID", ZONE_REWARDS },
 							{"pop"},
 							{"finalize"},
-							
+
 							{"merge"},
 							{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", },
 						},
@@ -589,11 +589,10 @@ _.Zones =
 					["sourceQuests"] = { 59770 },	-- Stand as One
 				}),
 				q(63771, {	-- Fate's Reminder
-					["description"] = "Will be automatically offered to a character who choses NOT to Skip the Campaign in Shadowlands.",
+					["description"] = "To get this Quest, you have to choose 'Replay Storyline' and pick 'Skip Storyline' right after.",
 					["sourceQuests"] = { 62704 },	-- The Threads of Fate
 					["altQuests"] = { 62713 },	-- Becoming a Skip character will exclude this Quest from being available
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["description"] = "To get this Quest, you have to choose Replay Storyline and pick Skip Storyline right after.",
 					["isBreadcrumb"] = true,
 				}),
 				q(62716, {	-- Re-Introductions
@@ -918,8 +917,6 @@ _.Zones =
 						57878,	-- Choosing Your Purpose [Story] -- TODO: confirm this requirement on a Story-Night Fae?
 						62000,	-- Choosing Your Purpose [Skip]
 					},
-					-- TODO: is this not a Skip-only quest?
-					-- ["customCollect"] = { "SL_SKIP", "SL_COV_NFA", },	-- Skip + Night Fae
 					["customCollect"] = "SL_COV_NFA",	-- Night Fae
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 159478 },	-- Tal-Inara
@@ -929,7 +926,7 @@ _.Zones =
 				q(61475, {	-- The Heart of the Forest
 					["sourceQuests"] = {
 						-- TODO: confirm
-						-- 57878,	-- Choosing Your Purpose [Story]
+						57878,	-- Choosing Your Purpose [Story]
 						63214,	-- Report to Moonberry [Skip]
 					},
 					["customCollect"] = "SL_COV_NFA",	-- Night Fae
@@ -939,9 +936,13 @@ _.Zones =
 				}),
 				-- Bastion
 				q(63211, {	-- Report to Adrestes
-					-- TODO: not 62023... that's a HQT or doesn't exist anymore? prob different for Story/Skip
-					-- ["sourceQuests"] = { 62023 },	-- Choosing Your Purpose
-					["customCollect"] = { "SL_SKIP", "SL_COV_KYR", },	-- Skip + Kyrian
+					["sourceQuests"] = {
+						-- TODO: confirm
+						57878,	-- Choosing Your Purpose [Story]
+						62000,	-- Choosing Your Purpose [Skip]
+					},
+					["customCollect"] = { "SL_COV_KYR", },	-- Kyrian
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 39.2, 69.7, ORIBOS },
 					["lvl"] = { 60 },
@@ -950,7 +951,7 @@ _.Zones =
 					["sourceQuests"] = {
 						57878,	-- Choosing Your Purpose [Story]
 						63211,	-- Report to Adrestes [Skip]
-					 },
+					},
 					["customCollect"] = "SL_COV_KYR",	-- Kyrian
 					["provider"] = { "n", 171787 },	-- Polemarch Adrestes
 					["coord"] = { 36.1, 64.1, ORIBOS },
@@ -958,11 +959,47 @@ _.Zones =
 				}),
 				-- Maldraxxus
 				q(63212, {	-- Report to Mevix
-					-- ["sourceQuests"] = { },	-- TODO
-					["customCollect"] = { "SL_SKIP", "SL_COV_NEC", },	-- Skip + Necrolord
+					["sourceQuests"] = {
+						-- TODO: confirm
+						57878,	-- Choosing Your Purpose [Story]
+						62000,	-- Choosing Your Purpose [Skip]
+					},
+					["customCollect"] = { "SL_COV_NEC", },	-- Necrolord
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 39.2, 69.7, ORIBOS },
-					-- ["isBreadcrumb"] = true, -- don't think this is breadcrumb for Skip characters
+					["lvl"] = { 60 },
+				}),
+				q(58609, {	-- Taking The Seat
+					["sourceQuests"] = {
+						57878,	-- Choosing Your Purpose [Story]
+						63212,	-- Report to Mevix [Skip]
+					},
+					["customCollect"] = { "SL_COV_NEC", },	-- Necrolord
+					["provider"] = { "n", 171821 },	-- Baroness Draka
+					["coord"] = { 42.9, 74.1, ORIBOS },
+					["lvl"] = { 60 },
+				}),
+				-- Revendreth
+				q(63215, {	-- Report to Draven
+					["sourceQuests"] = {
+						-- TODO: confirm
+						57878,	-- Choosing Your Purpose [Story]
+						62000,	-- Choosing Your Purpose [Skip]
+					},
+					["customCollect"] = { "SL_COV_VEN", },	-- Venthyr
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coord"] = { 39.2, 69.7, ORIBOS },
+				}),
+				q(59314, {	-- Sinfall
+					["sourceQuests"] = {
+						57878,	-- Choosing Your Purpose [Story]
+						63215,	-- Report to Draven [Skip]
+					},
+					["customCollect"] = { "SL_COV_VEN", },	-- Venthyr
+					["provider"] = { "n", 171589 },	-- General Draven
+					["coord"] = { 44.8, 68.9, ORIBOS },
 					["lvl"] = { 60 },
 				}),
 
