@@ -234,7 +234,7 @@ _.Holidays =
 				["requireSkill"] = BLACKSMITHING,
 			}),
 			q(29520, {	-- Banners, Banners Everywhere!
-				["requireSkill"] = LEATHERWORKING,
+				["requireSkill"] = TAILORING,
 				["description"] = "Requires |CFFFFD70010 Shiny Bauble|r, |CFFFFD7005 Coarse Thread|r, |CFFFFD7005 Blue Dye|r to complete.",
 				["isMonthly"] = true,
 				["provider"] = { "n", 10445 },	-- Selina Dourman
@@ -578,7 +578,7 @@ _.Holidays =
 				},
 			}),
 			q(29517, {	-- Eyes on the Prizes
-				["requireSkill"] = TAILORING,
+				["requireSkill"] = LEATHERWORKING,
 				["description"] = "Requires |CFFFFD7001 Coarse Thread|r, |CFFFFD7001 Red Dye|r, |CFFFFD7001 Blue Dye|r, to complete.",
 				["isMonthly"] = true,
 				["provider"] = { "n", 14841 },	-- Rinling
