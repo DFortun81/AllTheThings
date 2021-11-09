@@ -121,7 +121,6 @@ _.Zones =
 				n(134637, {	-- Headhunter Lee'za
 					["questID"] = 50661,
 					["coord"] = { 63.0, 14.0, ZULDAZAR },
-					["isWorldQuest"] = true,
 					["g"] = {
 						i(161117),	-- Berserker's Juju
 					},

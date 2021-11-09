@@ -226,6 +226,82 @@ _.ExpansionFeatures =
 								}),
 							}),
 							n(QUESTS, {
+								n(SPECIAL, sharedData({
+									["description"] = "Requires joining another Venthyr player in their Ember Court scenario and interacting with the respective Exalted Guest.",
+									-- ["sourceQuest"] = ,
+								}, {
+									-- Tier 1
+									q(65132, {	-- Friend of a Friend: Choofa
+										-- ["qg"] = ,
+										-- ["sourceQuest"] = ,
+									}),
+									q(65134, {	-- Friend of a Friend: Cryptkeeper Kassir
+										-- ["qg"] = ,
+										-- ["sourceQuest"] = ,
+									}),
+									q(65138, {	-- Friend of a Friend: Plague Deviser Marileth
+										-- ["qg"] = ,
+										-- ["sourceQuest"] = ,
+									}),
+									q(65140, {	-- Friend of a Friend: Sika
+										-- ["qg"] = ,
+										-- ["sourceQuest"] = ,
+									}),
+
+									-- Tier 2
+									q(65135, {	-- Friend of a Friend: Droman Aliothe
+										-- ["qg"] = ,
+										-- ["sourceQuest"] = ,
+									}),
+									q(65136, {	-- Friend of a Friend: Grandmaster Vole
+										-- ["qg"] = ,
+										-- ["sourceQuest"] = ,
+									}),
+									q(65137, {	-- Friend of a Friend: Kleia & Pelagos
+										-- ["qg"] = ,
+										-- ["sourceQuest"] = ,
+									}),
+									q(65141, {	-- Friend of a Friend: Stonehead
+										-- ["qg"] = ,
+										-- ["sourceQuest"] = ,
+									}),
+
+									-- Tier 3
+									q(65128, {	-- Friend of a Friend: Alexandros Mograine
+										-- ["qg"] = ,
+										-- ["sourceQuest"] = ,
+									}),
+									q(65129, {	-- Friend of a Friend: Hunt-Captain Korayn
+										-- ["qg"] = ,
+										-- ["sourceQuest"] = ,
+									}),
+									q(65130, {	-- Friend of a Friend: Polemarch Adrestes
+										-- ["qg"] = ,
+										-- ["sourceQuest"] = ,
+									}),
+									q(65131, {	-- Friend of a Friend: Rendle & Cudgelface
+										-- ["qg"] = ,
+										-- ["sourceQuest"] = ,
+									}),
+
+									-- Tier 4
+									q(65121, {	-- Friend of a Friend: Baroness Vashj
+										-- ["qg"] = ,
+										-- ["sourceQuest"] = ,
+									}),
+									q(65123, {	-- Friend of a Friend: Lady Moonberry
+										-- ["qg"] = ,
+										-- ["sourceQuest"] = ,
+									}),
+									q(65124, {	-- Friend of a Friend: Mikanikos
+										-- ["qg"] = ,
+										-- ["sourceQuest"] = ,
+									}),
+									q(65126, {	-- Friend of a Friend: The Countess
+										-- ["qg"] = ,
+										-- ["sourceQuest"] = ,
+									}),
+								})),
 								q(63721, {	-- Lord Garridan's Egg
 									["cost"] = { { "i", 185684, 1 } },	-- Lord Garridan's Egg
 									["repeatable"] = true,
@@ -1616,7 +1692,7 @@ _.ExpansionFeatures =
 									},
 								}),
 							})),
-							n(-963, {	-- Tier 3: Court Influencer
+							n(-963, sharedData({ ["customCollect"] = "SL_COV_VEN" }, {	-- Tier 3: Court Influencer
 								q(63690, {	-- Alexandros Mograine's Best Friend
 									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Alexandros Mograine?
 									["provider"] = { "n", 171933 },	-- Alexandros Mograine
@@ -1650,7 +1726,7 @@ _.ExpansionFeatures =
 								}),
 								q(62613, {	-- Kyrian Arsenal
 									["sourceQuests"] = { 62598 },	-- Forgelite Sophone
-									["provider"] = { "n", 158807 },	-- Forgelite Sophone
+									["provider"] = { "n", 174719 },	-- Forgelite Sophone
 									["coord"] = { 52.9, 83.5, BASTION },
 									["g"] = {
 										i(177243, {	-- Kyrian Arsenal
@@ -1783,8 +1859,8 @@ _.ExpansionFeatures =
 										}),
 									},
 								}),
-							}),
-							n(-964, {	-- Tier 4: Discerning Taste
+							})),
+							n(-964, sharedData({ ["customCollect"] = "SL_COV_VEN" }, {	-- Tier 4: Discerning Taste
 								q(60825, {	-- Amateur Spies
 									["isDaily"] = true,
 									["g"] = {
@@ -1856,8 +1932,8 @@ _.ExpansionFeatures =
 									["provider"] = { "n", 171106 },	-- The Countess
 									["coord"] = { 58.0, 27.4, REVENDRETH },
 								}),
-							}),
-							n(-965, {	-- Tier 5: The Professionals
+							})),
+							n(-965, sharedData({ ["customCollect"] = "SL_COV_VEN" }, {	-- Tier 5: The Professionals
 								q(61945, {	-- The Professionals
 									-- ["sourceQuests"] = {  },	-- TODO
 									["provider"] = { "n", 164966 },	-- Temel
@@ -1880,8 +1956,9 @@ _.ExpansionFeatures =
 										}),
 									},
 								}),
-							}),
+							})),
 							-- Random, non-collectible items which go into your bags while in the Ember Court
+							i(181355),	-- Faulty Fireworks
 							i(182211),	-- Stone Brick
 							n(VENDORS, {
 								n(174711, {	-- Freeman
@@ -2232,6 +2309,7 @@ _.ExpansionFeatures =
 									n(166133, {	-- Simone
 										i(181363, {	-- Handcrafted Mirror Repair Kit
 											["cost"] = { { "c", 1820, 20 } },	-- 20x Infused Ruby
+											["sourceQuest"] = 59740,	-- Repair and Restore
 										}),
 									}),
 									n(-968, {	-- Set A
@@ -2559,6 +2637,7 @@ _.HiddenQuestTriggers = {
 			q(62135),	-- picked up when entering the Ember Court for the week — for "Fungi Experiments"
 			q(62122),	-- Mystery Mirror
 			q(62123),	-- Prison Break
+			q(65055),	-- Protective Braziers
 
 		-- RSVPs
 			q(59382),	-- when using "RSVP: Baroness Vashj" — every time
@@ -2649,6 +2728,7 @@ _.HiddenQuestTriggers = {
 			q(61500),	-- using Stock: Comfy Chairs
 			q(61497),	-- using Stock: Greeting Kits
 			q(59688),	-- triggered when using "Dredger Party Supplies" (177237)
+			q(59689),	-- triggered when using "Generous Gift" (177238)
 			q(59690),	-- triggered when using "Racing Permit," reward from "It's Race Day in the Ramparts!" WQ
 			q(59693),	-- triggered when using "Kyrian Arsenal"
 			q(59695),	-- triggered when using "Maldraxxi Challenge Banner"
@@ -2665,7 +2745,6 @@ _.HiddenQuestTriggers = {
 			q(62523),	-- completed 'Safe/Humble' criteria for It's Certainly Never Boring
 			q(62525),	-- completed 'Relaxing' criteria for It's Certainly Never Boring
 			q(62526),	-- completed 'Exciting' criteria for It's Certainly Never Boring
-			-- q(59689),	-- Completed at the end, was unlocking Generous Gift and Protective Braziers for the Court Favors achievement.
 
 			--q(61918),	-- unflagged when doing restock quest (62078)
 
