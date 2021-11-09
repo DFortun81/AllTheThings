@@ -58,7 +58,7 @@ _.ExpansionFeatures =
 									i(185007),	-- Devoted Aspirant's Robes
 									i(185004),	-- Devoted Aspirant's Sash
 									i(185000),	-- Devoted Aspirant's Slippers
-									i(184999),	-- Devoted Aspirant's Vestments
+								--	i(184999),	-- Devoted Aspirant's Vestments. Not in the game.
 									i(185005),	-- Devoted Aspirant's Wraps
 								},
 							}),
@@ -1563,6 +1563,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(179399),	-- 9.0 Covenant - Bastion - Mail - Base - Shoulders
 					i(179400),	-- 9.0 Covenant - Bastion - Mail - Base - Waist
 					i(179401),	-- 9.0 Covenant - Bastion - Mail - Base - Wrists
+					i(184999),	-- Devoted Aspirant's Vestments
 				}),
 				n(-46, {	-- Plate
 					i(177684),	-- 9.0 Covenant - Bastion - Plate - Head
