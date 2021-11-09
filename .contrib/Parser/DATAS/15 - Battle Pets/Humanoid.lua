@@ -84,6 +84,9 @@ _.BattlePets =
 				["altSpeciesID"] = 280,	-- Guild Page (Alliance)
 				["races"] = HORDE_ONLY,
 			}),
+			p(3107, {	-- Gurgl
+				["timeline"] = { "added 9.1.5" },
+			});
 			p(121, {	-- Gurky
 				["u"] = REMOVED_FROM_GAME,
 			}),

@@ -2067,39 +2067,105 @@ _.Zones =
 										{"exclude", "itemID", 146647 },	-- Exclude itself to stop duplicating
 									},
 								}),
-								i(42557),	-- Savage Gladiator's Barrier
-								i(42511),	-- Savage Gladiator's Baton of Light
-								i(42356),	-- Savage Gladiator's Battle Staff
-								i(42221),	-- Savage Gladiator's Bonecracker
-								i(42295),	-- Savage Gladiator's Bonegrinder
-								i(42212),	-- Savage Gladiator's Chopper
-								i(42206),	-- Savage Gladiator's Cleaver
-								i(42294),	-- Savage Gladiator's Decapitator
-								i(42382),	-- Savage Gladiator's Energy Staff
-								i(42220),	-- Savage Gladiator's Fleshslicer
-								i(44416),	-- Savage Gladiator's Focus Staff
-								i(42344),	-- Savage Gladiator's Gavel
-								i(42297),	-- Savage Gladiator's Greatsword
-								i(42213),	-- Savage Gladiator's Hacker
-								i(42446),	-- Savage Gladiator's Heavy Crossbow
-								i(42445),	-- Savage Gladiator's Longbow
-								i(42215),	-- Savage Gladiator's Mutilator
-								i(42517),	-- Savage Gladiator's Piercing Touch
-								i(42296),	-- Savage Gladiator's Pike
-								i(42222),	-- Savage Gladiator's Pummeler
-								i(42223),	-- Savage Gladiator's Quickblade
-								i(42568),	-- Savage Gladiator's Redoubt
-								i(42447),	-- Savage Gladiator's Rifle
-								i(42218),	-- Savage Gladiator's Ripper
-								i(42216),	-- Savage Gladiator's Shanker
-								i(42556),	-- Savage Gladiator's Shield Wall
-								i(42217),	-- Savage Gladiator's Shiv
-								i(42219),	-- Savage Gladiator's Slasher
-								i(42224),	-- Savage Gladiator's Slicer
-								i(42343),	-- Savage Gladiator's Spellblade
-								i(42388),	-- Savage Gladiator's Staff
-								i(42448),	-- Savage Gladiator's Touch of Defeat
-								i(44415),	-- Savage Gladiator's War Staff
+								i(42557, {	-- Savage Gladiator's Barrier
+									-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
+								}),
+								i(42511, {	-- Savage Gladiator's Baton of Light
+									-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
+								}),
+								i(42356, {	-- Savage Gladiator's Battle Staff
+									-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
+								}),
+								i(42221, {	-- Savage Gladiator's Bonecracker
+									-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
+								}),
+								i(42295, {	-- Savage Gladiator's Bonegrinder
+									-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
+								}),
+								i(42212, {	-- Savage Gladiator's Chopper
+									-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
+								}),
+								i(42206, {	-- Savage Gladiator's Cleaver
+									-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
+								}),
+								i(42294, {	-- Savage Gladiator's Decapitator
+									-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
+								}),
+								i(42382, {	-- Savage Gladiator's Energy Staff
+									-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
+								}),
+								i(42220, {	-- Savage Gladiator's Fleshslicer
+									-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
+								}),
+								i(44416, {	-- Savage Gladiator's Focus Staff
+									-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
+								}),
+								i(42344, {	-- Savage Gladiator's Gavel
+									-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
+								}),
+								i(42297, {	-- Savage Gladiator's Greatsword
+									-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
+								}),
+								i(42213, {	-- Savage Gladiator's Hacker
+									-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
+								}),
+								i(42446, {	-- Savage Gladiator's Heavy Crossbow
+									-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
+								}),
+								i(42445, {	-- Savage Gladiator's Longbow
+									-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
+								}),
+								i(42215, {	-- Savage Gladiator's Mutilator
+									-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
+								}),
+								i(42517, {	-- Savage Gladiator's Piercing Touch
+									-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
+								}),
+								i(42296, {	-- Savage Gladiator's Pike
+									-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
+								}),
+								i(42222, {	-- Savage Gladiator's Pummeler
+									-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
+								}),
+								i(42223, {	-- Savage Gladiator's Quickblade
+									-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
+								}),
+								i(42568, {	-- Savage Gladiator's Redoubt
+									-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
+								}),
+								i(42447, {	-- Savage Gladiator's Rifle
+									-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
+								}),
+								i(42218, {	-- Savage Gladiator's Ripper
+									-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
+								}),
+								i(42216, {	-- Savage Gladiator's Shanker
+									-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
+								}),
+								i(42556, {	-- Savage Gladiator's Shield Wall
+									-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
+								}),
+								i(42217, {	-- Savage Gladiator's Shiv
+									-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
+								}),
+								i(42219, {	-- Savage Gladiator's Slasher
+									-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
+								}),
+								i(42224, {	-- Savage Gladiator's Slicer
+									-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
+								}),
+								i(42343, {	-- Savage Gladiator's Spellblade
+									-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
+								}),
+								i(42388, {	-- Savage Gladiator's Staff
+									-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
+								}),
+								i(42448, {	-- Savage Gladiator's Touch of Defeat
+									-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
+								}),
+								i(44415, {	-- Savage Gladiator's War Staff
+									-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
+								}),
 							}),
 							cl(DEATHKNIGHT, {
 								i(146580, {	-- Ensemble: Savage Gladiator's Dreadplate Armor

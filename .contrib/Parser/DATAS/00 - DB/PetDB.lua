@@ -1032,3 +1032,8 @@ pet(186539, 3101);	-- Sly
 pet(184867, 3092);	-- Squibbles
 pet(186535, 3106);	-- Topaz Baubleworm
 pet(186536, 3105);	-- Turquoise Baubleworm
+
+-----------------
+-- PATCH 9.1.5 --
+-----------------
+pet(186553, 3107);	-- Gurgl

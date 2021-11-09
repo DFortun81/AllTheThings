@@ -4245,16 +4245,18 @@ _.Zones =
 									}),
 								}),
 								n(HEAD, {
-									i(126023),	-- Warmongering Combatant's Hood of Prowess (A)
-									i(126074),	-- Warmongering Combatant's Helm (A)
-									i(126090),	-- Warmongering Combatant's Helm (A)
-									i(126111),	-- Warmongering Combatant's Plate Helmet (A)
+									-- TODO - where do these actually exist...
+									-- i(126023),	-- Warmongering Combatant's Hood of Prowess (A)
+									-- i(126074),	-- Warmongering Combatant's Helm (A)
+									-- i(126090),	-- Warmongering Combatant's Helm (A)
+									-- i(126111),	-- Warmongering Combatant's Plate Helmet (A)
 								}),
 								n(SHOULDER, {
-									i(126026),	-- Warmongering Combatant's Amice of Prowess (A)
-									i(126076),	-- Warmongering Combatant's Spaulders (A)
-									i(126092),	-- Warmongering Combatant's Spaulders (A)
-									i(126113),	-- Warmongering Combatant's Shoulderplates (A)
+									-- TODO - where do these actually exist...
+									-- i(126026),	-- Warmongering Combatant's Amice of Prowess (A)
+									-- i(126076),	-- Warmongering Combatant's Spaulders (A)
+									-- i(126092),	-- Warmongering Combatant's Spaulders (A)
+									-- i(126113),	-- Warmongering Combatant's Shoulderplates (A)
 								}),
 								n(BACK, {
 									i(126009, {	-- Warmongering Combatant's Cape of Cruelty (A)
@@ -4286,10 +4288,11 @@ _.Zones =
 									}),
 								}),
 								n(CHEST, {
-									i(126025),	-- Warmongering Combatant's Robes of Prowess (A)
-									i(126072),	-- Warmongering Combatant's Tunic (A)
-									i(126088),	-- Warmongering Combatant's Armor (A)
-									i(126109),	-- Warmongering Combatant's Plate Breastplate (A)
+									-- TODO - where do these actually exist...
+									-- i(126025),	-- Warmongering Combatant's Robes of Prowess (A)
+									-- i(126072),	-- Warmongering Combatant's Tunic (A)
+									-- i(126088),	-- Warmongering Combatant's Armor (A)
+									-- i(126109),	-- Warmongering Combatant's Plate Breastplate (A)
 								}),
 								n(WRIST, {
 									i(126021, {	-- Warmongering Combatant's Cuffs of Cruelty (A)
@@ -4318,10 +4321,11 @@ _.Zones =
 									}),
 								}),
 								n(HANDS, {
-									i(126022),	-- Warmongering Combatant's Gloves of Prowess (A)
-									i(126073),	-- Warmongering Combatant's Gloves (A)
-									i(126089),	-- Warmongering Combatant's Gauntlets (A)
-									i(126110),	-- Warmongering Combatant's Plate Gloves (A)
+									-- TODO - where do these actually exist...
+									-- i(126022),	-- Warmongering Combatant's Gloves of Prowess (A)
+									-- i(126073),	-- Warmongering Combatant's Gloves (A)
+									-- i(126089),	-- Warmongering Combatant's Gauntlets (A)
+									-- i(126110),	-- Warmongering Combatant's Plate Gloves (A)
 								}),
 								n(WAIST, {
 									i(126016, {	-- Warmongering Combatant's Cord of Cruelty (A)
@@ -4350,10 +4354,11 @@ _.Zones =
 									}),
 								}),
 								n(LEGS, {
-									i(126024),	-- Warmongering Combatant's Leggings of Prowess (A)
-									i(126075),	-- Warmongering Combatant's Legguards (A)
-									i(126091),	-- Warmongering Combatant's Leggings (A)
-									i(126112),	-- Warmongering Combatant's Legplates (A)
+									-- TODO - where do these actually exist...
+									-- i(126024),	-- Warmongering Combatant's Leggings of Prowess (A)
+									-- i(126075),	-- Warmongering Combatant's Legguards (A)
+									-- i(126091),	-- Warmongering Combatant's Leggings (A)
+									-- i(126112),	-- Warmongering Combatant's Legplates (A)
 								}),
 								n(FEET, {
 									i(126018, {	-- Warmongering Combatant's Treads of Cruelty (A)

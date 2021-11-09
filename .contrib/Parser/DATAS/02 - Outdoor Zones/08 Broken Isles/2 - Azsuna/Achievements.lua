@@ -188,6 +188,9 @@ _.Zones =
 						}),
 						crit(4, {	-- Coastal Sandpiper
 							["crs"] = { 89380 },	-- Coastal Sandpiper
+							["maps"] = {
+								EYE_OF_AZSHARA
+							},
 						}),
 					},
 				}),
