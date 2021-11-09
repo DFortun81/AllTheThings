@@ -1046,7 +1046,9 @@ _.ExpansionFeatures =
 									i(181939),	-- Conservator's Scale Boots
 									i(181934),	-- Conservator's Scale Buckle
 									i(181938),	-- Conservator's Scale Gloves
-									i(181880),	-- Conservator's Scale Greatcloak
+									i(181880, {	-- Conservator's Scale Greatcloak
+										["description"] = "This cloak is awarded from the Queen's Conservatory Rank 5 Set if purchased by a Mail Character.",
+									}),
 									i(181937),	-- Conservator's Scale Guise
 									i(181940),	-- Conservator's Scale Hauberk
 									i(181936),	-- Conservator's Scale Legguards
@@ -1065,7 +1067,9 @@ _.ExpansionFeatures =
 									i(179790),	-- Conservator's Leather Britches
 									i(179778),	-- Conservator's Leather Cape
 									i(179787),	-- Conservator's Leather Crest
-									i(179796),	-- Conservator's Leather Mantle
+									i(179796, {	-- Conservator's Leather Mantle
+										["description"] = "This cloak is awarded from the Queen's Conservatory Rank 5 Set if purchased by a Leather Character.",
+									}),
 									i(179793),	-- Conservator's Leather Vestment
 								},
 							}),
@@ -1076,7 +1080,9 @@ _.ExpansionFeatures =
 									i(179675),	-- Conservator's Silken Amice
 									i(179669),	-- Conservator's Silken Cowl
 									i(179681),	-- Conservator's Silken Cuffs
-									i(179625),	-- Conservator's Silken Drape
+									i(179625, {	-- Conservator's Silken Drape
+										["description"] = "This cloak is awarded from the Queen's Conservatory Rank 5 Set if purchased by a Cloth Character.",
+									}),
 									i(179666),	-- Conservator's Silken Handwraps
 									i(179672),	-- Conservator's Silken Leggings
 									i(179655),	-- Conservator's Silken Raiment
@@ -1089,7 +1095,9 @@ _.ExpansionFeatures =
 								["classes"] = { PALADIN, WARRIOR, DEATHKNIGHT },
 								["g"] = {
 									i(179902),	-- Conservator's Ironwood Chestplate
-									i(179633),	-- Conservator's Ironwood Cloak
+									i(179633, {	-- Conservator's Ironwood Cloak
+										["description"] = "This cloak is awarded from the Queen's Conservatory Rank 5 Set if purchased by a Plate Character.",
+									}),
 									i(179900),	-- Conservator's Ironwood Gauntlets
 									i(179896),	-- Conservator's Ironwood Girdle
 									i(179899),	-- Conservator's Ironwood Greathelm
@@ -1351,7 +1359,9 @@ _.ExpansionFeatures =
 									i(181918),	-- Winterborn Buckle
 									i(181923),	-- Winterborn Footguards
 									i(181922),	-- Winterborn Gloves
-									i(181878),	-- Winterborn Greatcloak
+									i(181878, {	-- Winterborn Greatcloak
+										["description"] = "This cloak is awarded from the Ensemble: Winterborn Guise Set if purchased by a Mail Character.",
+									}),
 									i(181921),	-- Winterborn Guise
 									i(181924),	-- Winterborn Hauberk
 									i(181920),	-- Winterborn Legguards
@@ -1371,7 +1381,9 @@ _.ExpansionFeatures =
 									i(179801),	-- Winterborn Belt
 									i(179804),	-- Winterborn Bracers
 									i(179792),	-- Winterborn Britches
-									i(179780),	-- Winterborn Cape
+									i(179780, {	-- Winterborn Cape
+										["description"] = "This cloak is awarded from the Ensemble: Winterborn Raiment Set if purchased by a Leather Character.",
+									}),
 									i(179777),	-- Winterborn Chestguard
 									i(179789),	-- Winterborn Crest
 									i(179798),	-- Winterborn Mantle
@@ -1388,7 +1400,9 @@ _.ExpansionFeatures =
 									i(179676),	-- Winterborn Amice
 									i(179670),	-- Winterborn Cowl
 									i(179682),	-- Winterborn Cuffs
-									i(179626),	-- Winterborn Drape
+									i(179626, {	-- Winterborn Drape
+										["description"] = "This cloak is awarded from the Ensemble: Winterborn Regalia Set if purchased by a Cloth Character.",
+									}),
 									i(179667),	-- Winterborn Handwraps
 									i(179673),	-- Winterborn Leggings
 									i(179656),	-- Winterborn Robes
@@ -1404,7 +1418,9 @@ _.ExpansionFeatures =
 								["classes"] = { PALADIN, WARRIOR, DEATHKNIGHT },
 								["g"] = {
 									i(179918),	-- Winterborn Chestplate
-									i(179635),	-- Winterborn Cloak
+									i(179635, {	-- Winterborn Cloak
+										["description"] = "This cloak is awarded from the Ensemble: Winterborn Warbark Set if purchased by a Plate Character.",
+									}),
 									i(179916),	-- Winterborn Gauntlets
 									i(179912),	-- Winterborn Girdle
 									i(179915),	-- Winterborn Greathelm
