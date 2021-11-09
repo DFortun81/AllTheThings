@@ -1091,6 +1091,10 @@ _.HiddenQuestTriggers = {
 	q(63404),	-- Gloves Leather
 	q(63409),	-- Waist Cloth
 	q(63402),	-- Conjurers Leggings
+	q(62037),	-- unlocking Mind of Maldraxxus set (TransmogSetID 2033, Duty-Bound Conjurer's items)
+	q(62036),	-- unlocking Zeal of Maldraxxus set (TransmogSetID 2038, Duty-Bound Wraith's items)
+	q(62028),	-- unlocking Heart of Maldraxxus set (TransmogSetID 2039, Duty-Bound Tactician's items)
+	q(62015),	-- unlocking Mettle of Maldraxxus set (TransmogSetID 2046, Duty-Bound Harbinger's items)
 
 -- Anima Conductor
 	q(60774),	-- Theater of Pain (lvl 3)

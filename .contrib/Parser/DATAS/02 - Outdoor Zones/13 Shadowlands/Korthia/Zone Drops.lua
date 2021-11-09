@@ -179,7 +179,7 @@ _.Zones =
 					},
 				}),
 			--	Greens
-				i(186153),	-- Foresworn Seal
+				i(186153),	-- Forsworn Seal
 				i(186151),	-- Mawsworn Assasin's Twinblade
 				i(186143),	-- Mawsworn Assassin's Backstabber*
 				i(186118),	-- Mawsworn Assassin's Belt

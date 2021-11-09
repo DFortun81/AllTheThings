@@ -1701,6 +1701,15 @@ _.HiddenQuestTriggers = {
 	q(61913),	-- Ensemble: Winterborn Guise
 	q(61914),	-- Ensemble: Winterborn Raiment
 	q(61915),	-- Ensemble: Winterborn Regalia
+	q(61901),	-- unlocking Faewoven Regalia/Oakheart Raiment sets (TransmogSetID 2047/2051, Faewoven/Oakheart items)
+	q(61907),	-- unlocking Night Courtier's Regalia set (TransmogSetID 2048, Night Courtier's cloth items)
+	q(61906),	-- unlocking Night Courtier's Raiment set (TransmogSetID 2054, Night Courtier's leather items)
+	q(61902),	-- unlocking Runewarden's Guise set (TransmogSetID 2055, Runewarden's items)
+	q(61905),	-- unlocking Night Courtier's Guise set (TransmogSetID 2057, Night Courtier's mail items)
+	q(61903),	-- unlocking Queensguard Warbark set (TransmogSetID 2059, Queensguard items)
+	q(61904),	-- unlocking Night Courtier's Warbark set (TransmogSetID 2060, Night Courtier's plate items)
+	q(62410),	-- unlocking Night Courtier's Bulb
+	q(62412),	-- unlocking Night Courtier's Pack
 };
 
 -- These quests never made it in.

@@ -77,7 +77,7 @@ _.Mounts =
 		i(186649),	-- Fierce Razorwing
 		i(30480),	-- Fiery Warhorse
 		i(71665),	-- Flametalon of Alysrazor
-		i(186483, {	-- Foresworn Aquilon
+		i(186483, {	-- Forsworn Aquilon
 			["customCollect"] = "SL_COV_KYR",	-- Kyrian
 		}),
 		i(166433),	-- Frightened Kodo

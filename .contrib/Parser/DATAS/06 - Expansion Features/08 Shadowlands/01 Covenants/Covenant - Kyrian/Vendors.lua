@@ -1549,6 +1549,7 @@ _.ExpansionFeatures =
 };
 _.HiddenQuestTriggers = {
 	q(63602),	-- learning Ensemble: Devoted Aspirant's Regalia
+	q(60595),	-- unlocking 12 Kyrian sets, no idea why they all have the same TrackingQuestID: https://wow.tools/dbc/?dbc=transmogset&build=9.1.5.40944#page=1&colFilter[3]=60595
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(SL_HEADER, {

@@ -2564,7 +2564,7 @@ _.ExpansionFeatures =
 };
 
 _.HiddenQuestTriggers = {
-	--	Dredger Butler Appearance
+	-- Dredger Butler Appearance
 		q(61581),	-- Choosing Purple during 'Shades of Muck' (61851)
 		q(61584),	-- Choosing Blue during 'Shades of Muck' (61851)
 		q(61579),	-- Choosing Green during 'Shades of Muck' (61851)
@@ -2755,6 +2755,15 @@ _.HiddenQuestTriggers = {
 			--q(61825),	-- During Ember Court after finishin Glimpse of the Wilds Niya's minigame
 			q(59691),	-- "The Party Herald"
 			q(61931),	-- Restocked Ember Court security/Killing house Iremoore Assassin (npcid:173098)
+	-- Misc
+		q(62034),	-- unlocking Soulbreaker's Burnished Vestments set (TransmogSetID 2064, Soulbreaker's Burnished items)
+		q(62035),	-- unlocking Soulbreaker's Court Vestments set (TransmogSetID 2065, Soulbreaker's Court items)
+		q(62031),	-- unlocking Court Death Shroud Armor set (TransmogSetID 2068, Court Death Shroud items)
+		q(62030),	-- unlocking Burnished Death Shroud Armor set (TransmogSetID 2069, Burnished Death Shroud items)
+		q(62026),	-- unlocking Fearstalker's Court Battlegear set (TransmogSetID 2072, Fearstalker's Court items)
+		q(62025),	-- unlocking Fearstalker's Burnished Battlegear set (TransmogSetID 2073, Fearstalker's Burnished items)
+		q(62022),	-- unlocking Dread Sentinel's Burnished Battleplate set (TransmogSetID 2076, Dread Sentinel's Burnished items)
+		q(62018),	-- unlocking Dread Sentinel's Court Battleplate set (TransmogSetID 2077, Dread Sentinel's Court items)
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {

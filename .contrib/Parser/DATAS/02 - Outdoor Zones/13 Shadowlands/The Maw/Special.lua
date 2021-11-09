@@ -317,7 +317,7 @@ _.Zones =
 								["isWeekly"] = true,
 								["questID"] = 63414,
 								["g"] = {
-									i(186008),	-- Foresworn's Judgment
+									i(186008),	-- Forsworn's Judgment
 									i(186207),	-- Mawsworn Herald's Vestments
 								},
 							}),

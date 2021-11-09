@@ -392,7 +392,7 @@ i(186651, 354361);	-- Dusklight Razorwing
 i(186482, 353875);	-- Elysian Aquilon
 i(186659, 354353);	-- Fallen Charger
 i(186649, 354359);	-- Fierce Razorwing
-i(186483, 353877);	-- Foresworn Aquilon
+i(186483, 353877);	-- Forsworn Aquilon
 i(186652, 354360);	-- Garnet Razorwing
 i(185973, 352309);	-- Hand of Bahmethra
 i(186653, 339957);	-- Hand of Hrestimorak

@@ -23,7 +23,7 @@ _.Holidays =
 						}),
 						ach(15308), 	-- Tower Overwhelming
 					}),
-					cl(DEATHKNIGHT, {
+					cl(DEATHKNIGHT, {	-- Gravewarden Armaments set
 						i(188537),	-- Gravewarden Armplates
 						i(188532),	-- Gravewarden Chestplate
 						i(188628),	-- Gravewarden Cloak
@@ -34,7 +34,7 @@ _.Holidays =
 						i(188539),	-- Gravewarden Sabatons
 						i(188534),	-- Gravewarden Visage
 					}),
-					cl(DEMONHUNTER, {
+					cl(DEMONHUNTER, {	-- Demonbane Armor set
 						i(188545),	-- Demonbane Bracers
 						i(188542),	-- Demonbane Faceguard
 						i(188541),	-- Demonbane Gauntlets
@@ -45,7 +45,7 @@ _.Holidays =
 						i(188547),	-- Demonbane Treads
 						i(188546),	-- Demonbane Waistguard
 					}),
-					cl(DRUID, {
+					cl(DRUID, {	-- Stormheart Raiment set
 						i(188554),	-- Stormheart Cinch
 						i(188630),	-- Stormheart Drape
 						i(188549),	-- Stormheart Gloves
@@ -57,7 +57,7 @@ _.Holidays =
 						i(188548),	-- Stormheart Tunic
 						i(188553),	-- Stormheart Wristguards
 					}),
-					cl(HUNTER, {
+					cl(HUNTER, {	-- Wildstalker Armor set
 						i(188561),	-- Wildstalker Armguards
 						i(188562),	-- Wildstalker Belt
 						i(188631),	-- Wildstalker Cape
@@ -68,7 +68,7 @@ _.Holidays =
 						i(188560),	-- Wildstalker Spaulders
 						i(188563),	-- Wildstalker Treads
 					}),
-					cl(MAGE, {
+					cl(MAGE, {	-- Regalia of the Arcane Tempest set
 						i(188565),	-- Crown of the Arcane Tempest
 						i(188569),	-- Cuffs of the Arcane Tempest
 						i(188632),	-- Drape of the Arcane Tempest
@@ -80,7 +80,7 @@ _.Holidays =
 						i(188570),	-- Sash of the Arcane Tempest
 						i(188571),	-- Slippers of the Arcane Tempest
 					}),
-					cl(MONK, {
+					cl(MONK, {	-- Xuen's Battlegear set
 						i(188633),	-- Xuen's Cloak
 						i(188579),	-- Xuen's Footpads
 						i(188573),	-- Xuen's Gauntlets
@@ -91,7 +91,7 @@ _.Holidays =
 						i(188578),	-- Xuen's Waistband
 						i(188577),	-- Xuen's Wraps
 					}),
-					cl(PALADIN, {
+					cl(PALADIN, {	-- Radiant Lightbringer Armor set
 						i(188580),	-- Radiant Lightbringer Breastplate
 						i(188634),	-- Radiant Lightbringer Cape
 						i(188582),	-- Radiant Lightbringer Crown
@@ -102,7 +102,7 @@ _.Holidays =
 						i(188585),	-- Radiant Lightbringer Vambraces
 						i(188586),	-- Radiant Lightbringer Waistguard
 					}),
-					cl(PRIEST, {
+					cl(PRIEST, {	-- Vestments of Blind Absolution set
 						i(188593),	-- Bracelets of Blind Absolution
 						i(188588),	-- Gloves of Blind Absolution
 						i(188589),	-- Hood of Blind Absolution
@@ -114,7 +114,7 @@ _.Holidays =
 						i(188644),	-- Vestments of Blind Absolution
 						i(188594),	-- Waistwrap of Blind Absolution
 					}),
-					cl(ROGUE, {
+					cl(ROGUE, {	-- Fanged Slayer's Armor set
 						i(188596),	-- Fanged Slayer's Chestguard
 						i(188602),	-- Fanged Slayer's Cord
 						i(188603),	-- Fanged Slayer's Footwraps
@@ -125,7 +125,7 @@ _.Holidays =
 						i(188636),	-- Fanged Slayer's Shroud
 						i(188601),	-- Fanged Slayer's Wristband
 					}),
-					cl(SHAMAN, {
+					cl(SHAMAN, {	-- Regalia of the Skybreaker set
 						i(188609),	-- Armbands of the Skybreaker
 						i(188637),	-- Drape of the Skybreaker
 						i(188611),	-- Greaves of the Skybreaker
@@ -137,7 +137,7 @@ _.Holidays =
 						i(188608),	-- Pauldrons of the Skybreaker
 						i(188610),	-- Waistguard of the Skybreaker
 					}),
-					cl(WARLOCK, {
+					cl(WARLOCK, {	-- Diabolic Raiment set
 						i(188618),	-- Diabolic Cinch
 						i(188617),	-- Diabolic Cuffs
 						i(188619),	-- Diabolic Footwraps
@@ -149,7 +149,7 @@ _.Holidays =
 						i(188638),	-- Diabolic Shroud
 						i(188645),	-- Diabolic Tunic
 					}),
-					cl(WARRIOR, {
+					cl(WARRIOR, {	-- Titanic Onslaught Armor set
 						i(188620),	-- Titanic Onslaught Breastplate
 						i(188639),	-- Titanic Onslaught Cloak
 						i(188626),	-- Titanic Onslaught Girdle
@@ -288,4 +288,20 @@ _.Holidays =
 			}),
 		}),
 	}),
+};
+
+_.HiddenQuestTriggers = {
+	q(65176),	-- learning Ensemble: Ravencrest's Battleplate (188209)
+	q(64923),	-- unlocking Gravewarden Armaments set
+	q(64924),	-- unlocking Demonbane Armor set
+	q(64925),	-- unlocking Stormheart Raiment set
+	q(64926),	-- unlocking Wildstalker Armor set
+	q(64927),	-- unlocking Regalia of the Arcane Tempest set
+	q(64928),	-- unlocking Xuen's Battlegear set
+	q(64929),	-- unlocking Radiant Lightbringer Armor set
+	q(64930),	-- unlocking Vestments of Blind Absolution set
+	q(64931),	-- unlocking Fanged Slayer's Armor set
+	q(64932),	-- unlocking Regalia of the Skybreaker set
+	q(64933),	-- unlocking Diabolic Raiment set
+	q(64934),	-- unlocking Titanic Onslaught Armor set
 };

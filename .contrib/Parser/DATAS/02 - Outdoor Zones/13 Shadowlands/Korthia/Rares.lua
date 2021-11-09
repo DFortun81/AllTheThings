@@ -304,7 +304,7 @@ _.Zones =
 							["customCollect"] = "SL_COV_KYR",	-- Kyrian
 							["questID"] = 64529,
 							["g"] = {
-								i(186483, {	-- Foresworn Aquilon (MOUNT!)
+								i(186483, {	-- Forsworn Aquilon (MOUNT!)
 									["customCollect"] = "SL_COV_KYR",	-- Kyrian
 								}),
 							},

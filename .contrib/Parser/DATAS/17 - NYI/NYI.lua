@@ -61,8 +61,8 @@ _.NeverImplemented =
 		-- Set added in 9.1.0
 		-- Night Fae -- of the Twilight Grove -- Korthia Dailies? tracking quest should be 63596
 		i(186500),	-- Ensemble: Garb of the Twilight Grove
-		-- Kyrian -- Foresworn Aspirant's -- Korthia Dailies? tracking quest should be 63600
-		i(186518),	-- Ensemble: Foresworn Aspirant's Regalia
+		-- Kyrian -- Forsworn Aspirant's -- Korthia Dailies? tracking quest should be 63600
+		i(186518),	-- Ensemble: Forsworn Aspirant's Regalia
 		-- Necrolord -- Rogue Necromancer's -- Korthia Dailies? tracking quest should be 63629
 		i(186505),	-- Ensemble: Rogue Necromancer's Vestments
 		-- Venthyr -- Radiant Court -- Korthia Dailies? tracking quest should be 63632

@@ -29,16 +29,16 @@ _.Zones =
 						n(KYRIAN, {
 							["customCollect"] = "SL_COV_KYR",	-- Kyrian
 							["g"] = {
-								-- Kyrian -- Foresworn Aspirant's -- Korthia Dailies
-								i(184990),	-- Foresworn Aspirant's Drape
-								i(184985),	-- Foresworn Aspirant's Handwraps
-								i(184986),	-- Foresworn Aspirant's Hood
-								i(184987),	-- Foresworn Aspirant's Leggings
-								i(185009),	-- Foresworn Aspirant's Robes
-								i(184988),	-- Foresworn Aspirant's Sash
-								i(184984),	-- Foresworn Aspirant's Slippers
-								i(184983),	-- Foresworn Aspirant's Vestments
-								i(184989),	-- Foresworn Aspirant's Wraps
+								-- Kyrian -- Forsworn Aspirant's -- Korthia Dailies
+								i(184990),	-- Forsworn Aspirant's Drape
+								i(184985),	-- Forsworn Aspirant's Handwraps
+								i(184986),	-- Forsworn Aspirant's Hood
+								i(184987),	-- Forsworn Aspirant's Leggings
+								i(185009),	-- Forsworn Aspirant's Robes
+								i(184988),	-- Forsworn Aspirant's Sash
+								i(184984),	-- Forsworn Aspirant's Slippers
+								i(184983),	-- Forsworn Aspirant's Vestments
+								i(184989),	-- Forsworn Aspirant's Wraps
 							},
 						}),
 						n(NECROLORD, {
@@ -1018,7 +1018,7 @@ _.Zones =
 
 _.HiddenQuestTriggers = {
 	q(64563),	-- triggered when turning in #64556, "In Need of Assistance"
-	q(64737),	-- triggered when turning in #64271, "A More Civilized Way" - received i(185115), Redeemed Inquisitor's Drape - perhaps a universal 'received covenant transmog' tracking quest?  got it the next day on my Kyrian shaman, who received i(184989), Foresworn Aspirant's Wraps.  was the first covenant mog for both characters ever but perhaps could be a weekly lockout or something? (See Errors for other ways to get this)
+	q(64737),	-- triggered when turning in #64271, "A More Civilized Way" - received i(185115), Redeemed Inquisitor's Drape - perhaps a universal 'received covenant transmog' tracking quest?  got it the next day on my Kyrian shaman, who received i(184989), Forsworn Aspirant's Wraps.  was the first covenant mog for both characters ever but perhaps could be a weekly lockout or something? (See Errors for other ways to get this)
 	q(64507),	-- triggered after picking up #64211, "Doorway in the Dark"
 	q(64533),	-- triggered after listening to the entirety of the Primus's RP after turning in "Covenants Renewed"
 	q(64377),	-- triggered after watching Thrall/Draka RP about Garrosh
