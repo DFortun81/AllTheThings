@@ -309,10 +309,18 @@ _.ExpansionFeatures =
 									["coord"] = { 55.1, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
 									["g"] = {
-										i(182489),	-- Stitched Harbinger's Greatcloak
-										i(182498),	-- Stitched Wraith's Cloak
-										i(182507),	-- Stitched Conjurer's Cape
-										i(182516),	-- Stitched Tactician's Drape
+										i(182489, {	-- Stitched Harbinger's Greatcloak
+											["description"] = "This cloak is only awarded to plate characters.",
+										}),
+										i(182498, {	-- Stitched Wraith's Cloak
+											["description"] = "This cloak is only awarded to leather characters.",
+										}),
+										i(182507, {	-- Stitched Conjurer's Cape
+											["description"] = "This cloak is only awarded to cloth characters.",
+										}),
+										i(182516, {	-- Stitched Tactician's Drape
+											["description"] = "This cloak is only awarded to mail characters.",
+										}),
 									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
@@ -786,7 +794,9 @@ _.ExpansionFeatures =
 							n(REWARDS, {
 								["description"] = "The cosmetic items under this header are occasionally random rewards from doing Maldraxxus world quests with Unity as your active abomination.",
 								["g"] = {
-									i(182543),	-- Duty-Bound Conjurer's Cape
+									i(182543, {	-- Duty-Bound Conjurer's Cape
+										["description"] = "This cloak is only awarded to cloth characters.",
+									}),
 									i(182541),	-- Duty-Bound Conjurer's Cinch
 									i(182535),	-- Duty-Bound Conjurer's Cowl
 									i(182538),	-- Duty-Bound Conjurer's Gloves
@@ -797,7 +807,9 @@ _.ExpansionFeatures =
 									i(182542),	-- Duty-Bound Conjurer's Wristwraps
 									i(182518),	-- Duty-Bound Harbinger's Chestguard
 									i(182520),	-- Duty-Bound Harbinger's Crushers
-									i(182525),	-- Duty-Bound Harbinger's Greatcloak
+									i(182525, {	-- Duty-Bound Harbinger's Greatcloak
+										["description"] = "This cloak is only awarded to plate characters.",
+									}),
 									i(182517),	-- Duty-Bound Harbinger's Greathelm
 									i(182521),	-- Duty-Bound Harbinger's Greaves
 									i(182522),	-- Duty-Bound Harbinger's Pauldrons
@@ -806,7 +818,9 @@ _.ExpansionFeatures =
 									i(182523),	-- Duty-Bound Harbinger's Warbelt
 									i(182551),	-- Duty-Bound Tactician's Bracers
 									i(182548),	-- Duty-Bound Tactician's Chausses
-									i(182552),	-- Duty-Bound Tactician's Drape
+									i(182552, {	-- Duty-Bound Tactician's Drape
+										["description"] = "This cloak is only awarded to mail characters.",
+									}),
 									i(182544),	-- Duty-Bound Tactician's Faceguard
 									i(182547),	-- Duty-Bound Tactician's Gauntlets
 									i(182550),	-- Duty-Bound Tactician's Girdle
@@ -817,7 +831,9 @@ _.ExpansionFeatures =
 									i(182532),	-- Duty-Bound Wraith's Belt
 									i(182528),	-- Duty-Bound Wraith's Boots
 									i(182530),	-- Duty-Bound Wraith's Breeches
-									i(182534),	-- Duty-Bound Wraith's Cloak
+									i(182534, {	-- Duty-Bound Wraith's Cloak
+										["description"] = "This cloak is only awarded to leather characters.",
+									}),
 									i(182527),	-- Duty-Bound Wraith's Jerkin
 									i(182531),	-- Duty-Bound Wraith's Shoulders
 									i(182529),	-- Duty-Bound Wraith's Stranglers
