@@ -1457,6 +1457,7 @@ _.Achievements =
 				}),
 			}),
 			ach(14730, {	-- To All The Squirrels I Set Sail to See
+				-- TODO map/coord/crs here instead of individual zone files
 				crit(1),	-- Honey Bee
 				crit(2),	-- Olivewing
 				crit(3),	-- Fluttering Softwing

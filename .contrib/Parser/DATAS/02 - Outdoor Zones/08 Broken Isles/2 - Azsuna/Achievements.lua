@@ -186,12 +186,6 @@ _.Zones =
 						crit(3, {	-- Albatross Chick
 							["crs"] = { 97020 },	-- Albatross Chick
 						}),
-						crit(4, {	-- Coastal Sandpiper
-							["crs"] = { 89380 },	-- Coastal Sandpiper
-							["maps"] = {
-								EYE_OF_AZSHARA
-							},
-						}),
 					},
 				}),
 				ach(11256),	-- Treasures of Azsuna

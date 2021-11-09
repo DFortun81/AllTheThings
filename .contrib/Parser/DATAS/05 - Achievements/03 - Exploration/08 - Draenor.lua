@@ -254,6 +254,7 @@ _.Achievements =
 			}),
 			ach(9401),		-- Shredder Maniac
 			ach(14728, {	-- To All The Squirrels Through Time and Space
+				-- TODO map/coord/crs here instead of individual zone files
 				crit(1),		-- Royal Moth
 				crit(2),		-- Moonshell Crab
 				crit(3),		-- Moon Snake

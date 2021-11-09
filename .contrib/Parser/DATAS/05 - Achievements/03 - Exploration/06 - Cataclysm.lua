@@ -193,6 +193,7 @@ _.Achievements =
 				crit(13),	-- Ruins of Southshore in Hillsbrad Foothills
 			}),
 			ach(5548, {	-- To All the Squirrels Who Cared for Me
+				-- TODO map/coord here instead of individual zone files
 				crit(1,  {	-- Alpine Chipmunk (Winterspring, Mount Hyjal, Stonetalon Mountains)
 					["crs"] = { 49779 },	-- Alpine Chipmunk
 				}),

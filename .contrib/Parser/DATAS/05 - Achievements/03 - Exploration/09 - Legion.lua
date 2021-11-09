@@ -419,10 +419,17 @@ _.Achievements =
 				crit(22),		-- Missing Augari Chest
 			}),
 			ach(14729, {		-- To All The Squirrels I Love Despite Their Scars
+				-- TODO map/coord/crs here instead of individual zone files
 				crit(1),		-- Felspider
 				crit(2),		-- Tenebrous Snake
 				crit(3),		-- Albatross Chick
-				crit(4),		-- Coastal Sandpiper
+				crit(4, {	-- Coastal Sandpiper
+					["crs"] = { 89380 },	-- Coastal Sandpiper
+					["maps"] = {
+						AZSUNA,
+						EYE_OF_AZSHARA,
+					},
+				}),
 				crit(5),		-- Glitterpool Frog
 				crit(6),		-- Gleamhoof Fawn
 				crit(7),		-- Auburn Ringtail

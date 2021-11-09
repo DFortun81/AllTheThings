@@ -194,6 +194,7 @@ _.Achievements =
 				crit(8),	-- The Schools of Arcane Magic - Transmutation
 			}),
 			ach(2557, {	-- To All The Squirrels Who Shared My Life
+				-- TODO map/coord here instead of individual zone files
 				crit(1,  {	-- Arctic Hare (Dragonblight, Zul'Drak, Borean Tundra)
 					["crs"] = { 29328 },	-- Arctic Hare
 				}),

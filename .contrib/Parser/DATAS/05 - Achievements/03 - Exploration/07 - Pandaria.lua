@@ -455,6 +455,7 @@ _.Achievements =
 				crit(7),	-- Southsea Firebrew
 			}),
 			ach(6350, {	-- To All the Squirrels I Once Caressed?
+				-- TODO map/coord/crs here instead of individual zone files
 				crit(1),	-- Amethyst Spiderling(Krasarang Wilds)
 				crit(2),	-- Bandicoon (Valley of the Four Winds)
 				crit(3),	-- Clouded Hedgehog (Dread Wastes)
