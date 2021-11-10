@@ -46,6 +46,7 @@ _.ExpansionFeatures =
 						["name"] = "Corgi Soul",
 						["icon"] = 1339013,
 						["description"] = "Emote |cFFFFFFFF/pet|r on the little corgi named Sparkle running around the night fae covenant sanctum.",
+						["crs"] = { 174608 },	-- Sparkle
 					}),
 					q(62424, {	-- Crane Soul
 						["provider"] = { "i", 182168 },	-- Crane Soul
@@ -102,7 +103,7 @@ _.ExpansionFeatures =
 					}),
 					q(62432, {	-- Owlcat Soul
 						["provider"] = { "i", 182177 },	-- Owlcat Soul
-						["crs"] = { 175732 },	-- Sylvanas Windrunner
+						-- ["crs"] = { 175732 },	-- Sylvanas Windrunner
 					}),
 					q(64989, {	-- Porcupine Soul
 						["provider"] = { "i", 187870 },	-- Porcupine Soul
@@ -115,14 +116,14 @@ _.ExpansionFeatures =
 					}),
 					q(62433, {	-- Raptor Soul
 						["provider"] = { "i", 182178 },	-- Raptor Soul
-						["crs"] = { 169769 },	-- Mueh'zala
+						-- ["crs"] = { 169769 },	-- Mueh'zala
 					}),
 					q(64985, {	-- Rat Soul
 						["provider"] = { "i", 187859 },	-- Rat Soul
 					}),
 					q(62434, {	-- Runestag Soul
 						["provider"] = { "i", 182179 },	-- Runestag Soul
-						["crs"] = { 164547 },	-- Mystic Rainbowhorn
+						-- ["crs"] = { 164547 },	-- Mystic Rainbowhorn
 					}),
 					q(64995, {	-- Saurid Soul
 						["provider"] = { "i", 187878 },	-- Saurid Soul
@@ -135,7 +136,7 @@ _.ExpansionFeatures =
 					}),
 					q(62431, {	-- Shadowstalker Soul
 						["provider"] = { "i", 182176 },	-- Shadowstalker Soul
-						["crs"] = { 168647 },	-- Valfir the Unrelenting
+						-- ["crs"] = { 168647 },	-- Valfir the Unrelenting
 					}),
 					pvp(q(63604, {	-- Shoveltusk Soul
 						["description"] = "Drops from PvP.",			-- Comp Stomp 2 Nov 2021
@@ -143,7 +144,7 @@ _.ExpansionFeatures =
 					})),
 					q(62436, {	-- Shrieker Soul
 						["provider"] = { "i", 182185 },	-- Shrieker Soul
-						["crs"] = { 164501 },	-- Mistcaller
+						-- ["crs"] = { 164501 },	-- Mistcaller
 					}),
 					q(64988, {	-- Snake Soul
 						["provider"] = { "i", 187862 },	-- Snake Soul
@@ -168,7 +169,7 @@ _.ExpansionFeatures =
 					}),
 					q(62439, {	-- Wolfhawk Soul
 						["provider"] = { "i", 182183 },	-- Wolfhawk Soul
-						["crs"] = { 164415 },	-- Skuld Vit
+						-- ["crs"] = { 164415 },	-- Skuld Vit
 					}),
 					pvp(q(62440, {	-- Wyvern Soul
 						["description"] = "Drops from random battlegrounds.",

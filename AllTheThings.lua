@@ -7736,6 +7736,7 @@ end)();
 
 -- Faction Lib
 (function()
+local GetFriendshipReputation = GetFriendshipReputation;
 local StandingByID = {
 	{	-- 1: HATED
 		["color"] = GetProgressColor(0),
@@ -7771,7 +7772,7 @@ local StandingByID = {
 	},
 };
 app.FactionNameByID = setmetatable({}, { __index = function(t, id)
-	local name = select(1, GetFactionInfoByID(id));
+	local name = select(1, GetFactionInfoByID(id)) or select(4, GetFriendshipReputation(id));
 	if name then
 		rawset(t, id, name);
 		rawset(app.FactionIDByName, name, id);
@@ -7858,15 +7859,19 @@ end
 local cache = app.CreateCache("factionID");
 local function CacheFactionInfo(t)
 	local _t, id = cache.GetCached(t);
-	local name, lore = GetFactionInfoByID(id);
+	local factionInfo = { GetFactionInfoByID(id) };
+	local friendshipInfo = { GetFriendshipReputation(id) };
+	local name = factionInfo[1] or friendshipInfo[4];
+	local lore = factionInfo[2];
 	_t.name = name or (t.creatureID and NPCNameFromID[t.creatureID]) or (FACTION .. " #" .. id);
 	if lore then
 		_t.lore = lore;
-	else
+	elseif not name then
 		_t.description = L["FACTION_SPECIFIC_REP"];
 	end
-	if t.isFriend then
-		local friendship = select(5, GetFriendshipReputation(id));
+	if friendshipInfo[1] then
+		rawset(t, "isFriend", true);
+		local friendship = friendshipInfo[5];
 		if friendship then
 			if _t.lore then
 		 		_t.lore = _t.lore.."\n\n"..friendship;

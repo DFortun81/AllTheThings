@@ -243,6 +243,8 @@ _.Factions =
 		}),
 		faction(2463, {	-- Marasmius
 			["customCollect"] = { "SL_COV_NFA" },	-- Night Fae
+			["crs"] = { 167455 },	-- Marasmius
+			["maps"] = { 1819 },	-- Fungal Terminus
 		}),
 		faction(2462, {	-- Stitchmasters
 			["customCollect"] = { "SL_COV_NEC" },	-- Necrolord
