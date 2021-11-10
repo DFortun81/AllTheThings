@@ -964,6 +964,10 @@ _.Zones =
 									i(124815, {	-- Wild Gladiator's Legplates (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
+									i(124835, {	-- Wild Gladiator's Ringmail Leggings (A)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+										-- Maybe you get this also from the ensemble used with male character?
+									}),
 								}),
 								n(FEET, {
 									i(124753, {	-- Wild Gladiator's Boots of Cruelty (A)
@@ -4244,20 +4248,6 @@ _.Zones =
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
 								}),
-								n(HEAD, {
-									-- TODO - where do these actually exist...
-									-- i(126023),	-- Warmongering Combatant's Hood of Prowess (A)
-									-- i(126074),	-- Warmongering Combatant's Helm (A)
-									-- i(126090),	-- Warmongering Combatant's Helm (A)
-									-- i(126111),	-- Warmongering Combatant's Plate Helmet (A)
-								}),
-								n(SHOULDER, {
-									-- TODO - where do these actually exist...
-									-- i(126026),	-- Warmongering Combatant's Amice of Prowess (A)
-									-- i(126076),	-- Warmongering Combatant's Spaulders (A)
-									-- i(126092),	-- Warmongering Combatant's Spaulders (A)
-									-- i(126113),	-- Warmongering Combatant's Shoulderplates (A)
-								}),
 								n(BACK, {
 									i(126009, {	-- Warmongering Combatant's Cape of Cruelty (A)
 										["cost"] = { { "i", 137642, 1 } },	-- 5x Mark of Honor
@@ -4287,13 +4277,6 @@ _.Zones =
 										["cost"] = { { "i", 137642, 1 } },	-- 5x Mark of Honor
 									}),
 								}),
-								n(CHEST, {
-									-- TODO - where do these actually exist...
-									-- i(126025),	-- Warmongering Combatant's Robes of Prowess (A)
-									-- i(126072),	-- Warmongering Combatant's Tunic (A)
-									-- i(126088),	-- Warmongering Combatant's Armor (A)
-									-- i(126109),	-- Warmongering Combatant's Plate Breastplate (A)
-								}),
 								n(WRIST, {
 									i(126021, {	-- Warmongering Combatant's Cuffs of Cruelty (A)
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
@@ -4320,13 +4303,6 @@ _.Zones =
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
 								}),
-								n(HANDS, {
-									-- TODO - where do these actually exist...
-									-- i(126022),	-- Warmongering Combatant's Gloves of Prowess (A)
-									-- i(126073),	-- Warmongering Combatant's Gloves (A)
-									-- i(126089),	-- Warmongering Combatant's Gauntlets (A)
-									-- i(126110),	-- Warmongering Combatant's Plate Gloves (A)
-								}),
 								n(WAIST, {
 									i(126016, {	-- Warmongering Combatant's Cord of Cruelty (A)
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
@@ -4352,13 +4328,6 @@ _.Zones =
 									i(126104, {	-- Warmongering Combatant's Girdle of Prowess (A)
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
-								}),
-								n(LEGS, {
-									-- TODO - where do these actually exist...
-									-- i(126024),	-- Warmongering Combatant's Leggings of Prowess (A)
-									-- i(126075),	-- Warmongering Combatant's Legguards (A)
-									-- i(126091),	-- Warmongering Combatant's Leggings (A)
-									-- i(126112),	-- Warmongering Combatant's Legplates (A)
 								}),
 								n(FEET, {
 									i(126018, {	-- Warmongering Combatant's Treads of Cruelty (A)
@@ -4903,34 +4872,6 @@ _.Zones =
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
 								}),
-								n(HEAD, {
-									i(124909, {	-- Wild Combatant's Hood of Prowess (A)
-										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-									}),
-									i(124960, {	-- Wild Combatant's Helm (A)
-										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-									}),
-									i(124976, {	-- Wild Combatant's Helm (A)
-										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-									}),
-									i(124997, {	-- Wild Combatant's Plate Helmet (A)
-										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-									}),
-								}),
-								n(SHOULDER, {
-									i(124912, {	-- Wild Combatant's Amice of Prowess (A)
-										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-									}),
-									i(124962, {	-- Wild Combatant's Spaulders (A)
-										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-									}),
-									i(124978, {	-- Wild Combatant's Spaulders (A)
-										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-									}),
-									i(124999, {	-- Wild Combatant's Shoulderplates (A)
-										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-									}),
-								}),
 								n(BACK, {
 									i(124895, {	-- Wild Combatant's Cape of Cruelty (A)
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
@@ -4960,20 +4901,6 @@ _.Zones =
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
 								}),
-								n(CHEST, {
-									i(124911, {	-- Wild Combatant's Robes of Prowess (A)
-										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-									}),
-									i(124974, {	-- Wild Combatant's Tunic (A)
-										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-									}),
-									i(124958, {	-- Wild Combatant's Armor (A)
-										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-									}),
-									i(124995, {	-- Wild Combatant's Plate Breastplate (A)
-										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-									}),
-								}),
 								n(WRIST, {
 									i(124907, {	-- Wild Combatant's Cuffs of Cruelty (A)
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
@@ -5000,20 +4927,6 @@ _.Zones =
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
 								}),
-								n(HANDS, {
-									i(124908, {	-- Wild Combatant's Gloves of Prowess (A)
-										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-									}),
-									i(124959, {	-- Wild Combatant's Gloves (A)
-										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-									}),
-									i(124975, {	-- Wild Combatant's Gauntlets (A)
-										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-									}),
-									i(124996, {	-- Wild Combatant's Plate Gloves (A)
-										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-									}),
-								}),
 								n(WAIST, {
 									i(124902, {	-- Wild Combatant's Cord of Cruelty (A)
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
@@ -5038,20 +4951,6 @@ _.Zones =
 									}),
 									i(124990, {	-- Wild Combatant's Girdle of Prowess (A)
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-									}),
-								}),
-								n(LEGS, {
-									i(124910, {	-- Wild Combatant's Leggings of Prowess (A)
-										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-									}),
-									i(124961, {	-- Wild Combatant's Legguards (A)
-										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-									}),
-									i(124977, {	-- Wild Combatant's Leggings (A)
-										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-									}),
-									i(124998, {	-- Wild Combatant's Legplates (A)
-										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
 								}),
 								n(FEET, {

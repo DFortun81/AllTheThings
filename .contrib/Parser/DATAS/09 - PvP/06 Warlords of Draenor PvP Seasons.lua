@@ -9688,9 +9688,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(125349),	-- Wild Gladiator's Accolade of Victory
 				i(125350),	-- Wild Gladiator's Accolade of Meditation
 			}),
-			cl(SHAMAN, {
-				i(124835),	-- Wild Gladiator's Ringmail Leggings (You get Wild Gladiator's Ringmail Kilt via Ensemble)
-			}),
 		}),
 	}),
 });
