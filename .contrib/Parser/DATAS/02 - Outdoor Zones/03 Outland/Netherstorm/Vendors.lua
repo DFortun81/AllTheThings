@@ -1731,7 +1731,7 @@ _.Zones =
 					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
 						n(WEAPONS, {
-							-- -- Never added, combined with Season 2
+							-- Never added, combined with Season 2
 							-- i(146651, {	-- Arsenal: Gladiator's Weapons
 							i(28302, {	-- Gladiator's Bonecracker
 								["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor

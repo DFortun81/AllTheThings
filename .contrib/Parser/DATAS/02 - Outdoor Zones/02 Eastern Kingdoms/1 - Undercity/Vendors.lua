@@ -420,7 +420,7 @@ _.Zones =
 					},
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						{"sub", "common_vendor", 5188}, -- -- Garyl <Tabard Vendor>
+						{"sub", "common_vendor", 5188}, -- Garyl <Tabard Vendor>
 					},
 				}),
 				n(4577,  {	-- Millie Gregorian <Tailoring Supplies>
