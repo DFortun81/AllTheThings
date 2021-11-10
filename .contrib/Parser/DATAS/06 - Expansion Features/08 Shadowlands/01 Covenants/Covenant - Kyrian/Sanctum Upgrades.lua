@@ -263,6 +263,7 @@ _.ExpansionFeatures =
 								}),
 								ach(14864),	-- Personal Nightmare
 								ach(14852),	-- The Hoot of the Issue
+								ach(14887),	-- To the Moon
 								un(NEVER_IMPLEMENTED, ach(14351, sharedData({["u"] = NEVER_IMPLEMENTED}, {	-- The Path Towards Ascension 39
 									ach(14340),	-- The Path Towards Ascension 1
 									ach(14342),	-- The Path Towards Ascension 3
