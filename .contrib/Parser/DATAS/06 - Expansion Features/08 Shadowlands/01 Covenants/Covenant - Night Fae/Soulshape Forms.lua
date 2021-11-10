@@ -24,9 +24,9 @@ _.ExpansionFeatures =
 						["provider"] = { "i", 187905 },	-- Boar Soul
 						["u"] = TIMEWALKING,
 					}),
-					q(64984, {	-- Bunny Soul
+					petbattle(q(64984, {	-- Bunny Soul
 						["provider"] = { "i", 187858 },	-- Bunny Soul
-					}),
+					})),
 					q(64961, {	-- Cat Soul
 						["provider"] = { "i", 187819 },	-- Cat Soul
 					}),
