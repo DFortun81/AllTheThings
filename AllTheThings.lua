@@ -6564,7 +6564,7 @@ app.CreateCache = function(idField)
 	end;
 	cache.GetCachedField = function(t, field, default_function)
 		--[[ -- Debug Prints
-		local _t, id = GetCached(t);
+		local _t, id = cache.GetCached(t);
 		if _t[field] then
 			print("GetCachedField",id,field,_t[field]);
 		end
@@ -6581,7 +6581,7 @@ app.CreateCache = function(idField)
 	end;
 	cache.SetCachedField = function(t, field, value)
 		--[[ Debug Prints
-		local _t, id = GetCached(t);
+		local _t, id = cache.GetCached(t);
 		if _t[field] then
 			print("SetCachedField",id,field,"Old",t[field],"New",value);
 		else
@@ -7859,6 +7859,8 @@ end
 local cache = app.CreateCache("factionID");
 local function CacheFactionInfo(t)
 	local _t, id = cache.GetCached(t);
+	-- do not attempt caching more than 1 time per factionID since not every cached field may have a cached value
+	if _t.name then return end
 	local factionInfo = { GetFactionInfoByID(id) };
 	local friendshipInfo = { GetFriendshipReputation(id) };
 	local name = factionInfo[1] or friendshipInfo[4];
