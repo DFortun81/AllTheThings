@@ -741,6 +741,7 @@ i(186973);	-- Anima-ted Leash
 i(183901);	-- Bonestorm Top
 i(187139);	-- Bottled Shade Heart
 i(187075);	-- Box of Rattling Chains
+i(186501);	-- Doomwalker Trophy Stand
 i(186985);	-- Elusive Pet Treat
 i(186974);	-- Experimental Anima Cell
 i(187051);	-- Forgotten Feather

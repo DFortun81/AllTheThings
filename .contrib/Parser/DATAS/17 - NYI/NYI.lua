@@ -69,22 +69,6 @@ _.NeverImplemented =
 		i(186513),	-- Ensemble: Radiant Court Attire
 		-- Venthyr -- Redeemed Inquisitor's  -- Korthia Dailies? tracking quest should be 63636
 		i(186514),	-- Ensemble: Redeemed Inquisitor's Vestments
-		-- Possibly WoW's 17th Anniversary
-		i(186459),	-- Archaic Charm of Presence
-		i(186460),	-- Anger-Spark Gloves
-		i(186461),	-- Gilded Trousers of Benediction
-		i(186462),	-- Black-Iron Battlecloak
-		i(186463),	-- Terrorweave Tunic
-		i(186475),	-- Hellstiched Mantle
-		i(186464),	-- Fathom-Helm of the Deeps
-		i(186481),	-- Darkcrest Waistguard
-		i(186465),	-- Faceguard of the Endless Watch
-		i(186484),	-- Voidforged Greaves
-		i(186466),	-- Ethereum Nexus-Reaver
-		i(186467),	-- Barrel-Blade Longrifle
-		i(186468),	-- Talon of the Tempest
-		i(186469),	-- Illidari Doomhawk (MOUNT!)
-		i(186506),	-- Akama's Edge
 		-- Possibly Timewalking Legion
 		cl(DEATHKNIGHT, {
 			i(180553),	-- Dreadwake Bonecage

@@ -72,6 +72,13 @@ _.Toys =
 		i(141298),		-- Displacer Meditation Stone
 		i(134019),		-- Don Carlos' Famous Hat
 		i(134831),		-- Doomsayer's Robes
+		i(186501, {		-- Doomwalker Trophy Stand
+			["u"] = WOW_ANNIVERSARY,
+			["timeline"] = {
+				"created 9.1.0",
+				"added 9.1.5",
+			},
+		}),
 		i(163740),		-- Drust Ritual Knife
 		i(164373),		-- Enchanted Soup Stone
 		i(86590),		-- Essence of the Breeze

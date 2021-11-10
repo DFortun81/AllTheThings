@@ -399,6 +399,7 @@ i(186653, 339957);	-- Hand of Hrestimorak
 i(186713, 354354);	-- Hand of Nilganihmaht
 i(186654, 354355);	-- Hand of Salaranga
 i(185996, 332904);	-- Harvester's Dredwing
+i(186469, 62048);	-- Illidari Doomhawk
 i(186489, 347250);	-- Lord of the Corpseflies
 i(186643, 354362);	-- Maelie The Wanderer
 i(186487, 353883);	-- Maldraxxian Corpsefly

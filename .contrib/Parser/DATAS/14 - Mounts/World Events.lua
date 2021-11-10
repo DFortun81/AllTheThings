@@ -14,6 +14,12 @@ _.Mounts =
 		})),
 		un(BREWFEST, i(37828)),	-- Great Brewfest Kodo
 		un(HALLOWS_END, i(37012)),	-- Headless Horseman's Mount
+		un(WOW_ANNIVERSARY, i(186469, {	-- -- Illidari Doomhawk
+			["timeline"] = {
+				"created 9.1.0",
+				"added 9.1.5",
+			},
+		})),
 		i(133543),			-- Infinite Timereaver
 		i(129922),			-- Ironbound Wraithcharger
 		un(FEAST_OF_WINTER_VEIL, i(128671)),	-- Minion of Grumpus

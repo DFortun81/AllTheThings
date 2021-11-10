@@ -92,6 +92,12 @@ _.BattlePets =
 			p(1515),	-- Stonegrinder
 			p(1632),	-- Sunblade Micro-Defender
 			p(1178),	-- Sunreaver Micro-Sentry
+			un(WOW_ANNIVERSARY, p(3100, { -- Timeless Mechanical Dragonling
+				["timeline"] = {
+					"created 9.1.0",
+					"added 9.1.5",
+				},
+			})),
 			p(389),		-- Tiny Harvester
 			p(2869),	-- Tinyclaw
 			p(2078),	-- Tinytron

@@ -1030,6 +1030,7 @@ pet(186537, 3104);	-- Ruby Baubleworm
 pet(186544, 3010);	-- Sinfall Screecher
 pet(186539, 3101);	-- Sly
 pet(184867, 3092);	-- Squibbles
+pet(186556, 3100);	-- Timeless Mechanical Dragonling
 pet(186535, 3106);	-- Topaz Baubleworm
 pet(186536, 3105);	-- Turquoise Baubleworm
 
