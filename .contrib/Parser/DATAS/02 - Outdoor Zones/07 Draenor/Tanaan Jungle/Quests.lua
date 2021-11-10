@@ -762,8 +762,6 @@ _.HiddenQuestTriggers = {
 		q(39185),	-- FLAG - Immaculate Mastery Taladite (learning Immaculate Mastery Taladite at an Apexis Gemcutter)
 		q(39186),	-- FLAG - Immaculate Multistrike Taladite (learning Immaculate Multistrike Taladite at an Apexis Gemcutter)
 		q(39187),	-- FLAG - Immaculate Stamina Taladite (learning Immaculate Stamina Taladite at an Apexis Gemcutter)
-		q(50678),	-- learning Ensemble: Battlegear of the Frostwolves
-		q(50680),	-- learning Ensemble: Ceremonial Karabor Finery
 		q(37886),	-- Max-level Choice Tracker: Tanaan 6.2 - Ironhold (A)
 		q(37946),	-- Max-level Choice Tracker: Tanaan 6.2 - Ironhold (H)
 		q(38583),	-- Max-Level Choice Tracker: Tanaan 6.2 - Group - Throne of Kil'jaeden (A)
@@ -784,6 +782,10 @@ _.HiddenQuestTriggers = {
 		q(37892),	-- Tanaan Garrison Max-level Choice Tracker: ANY CHOICE MADE (H)
 		q(37969),	-- Tanaan Jungle - Tracking Quest - Vol'mar Built - JMC
 		q(38433),	-- Tanaan Jungle - Tracking Quest - Lion's Watch Built - JMC
+	}),
+	n(BFA_HEADER, {
+		q(50678),	-- learning Ensemble: Battlegear of the Frostwolves
+		q(50680),	-- learning Ensemble: Ceremonial Karabor Finery
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
