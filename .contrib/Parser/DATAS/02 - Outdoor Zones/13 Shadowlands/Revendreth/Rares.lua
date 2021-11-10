@@ -67,6 +67,7 @@ _.Zones =
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
 						}),
 						i(179927),	-- Glowing Endmire Stinger
+						i(183759),	-- Unusually Large Cranium
 					},
 				}),
 				n(166710, {	-- Executioner Aatron
