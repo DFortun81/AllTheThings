@@ -1362,6 +1362,7 @@ _.ObjectNames = {
 	[252563] = "|cFFFFFFFFStep 9:|r Hungering Orb VII",
 	[252564] = "|cFFFFFFFFStep 10:|r Hungering Orb VIII",
 	[252565] = "|cFFFFFFFFStep 11:|r Hungering Orb IX",
+	[252570] = "Skyhold Chest of Riches",
 	[252802] = "Small Treasure Chest",
 	[252803] = "Small Treasure Chest",
 	[252805] = "Treasure Chest",

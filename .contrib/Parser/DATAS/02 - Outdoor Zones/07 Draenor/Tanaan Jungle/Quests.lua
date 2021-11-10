@@ -417,7 +417,7 @@ _.Zones =
 				}),
 				q(38996, {	-- Your Orders, General? (A)
 					-- Alliance version is repeatable, Horde version is not
-					["isDaily"] = true,	
+					["isDaily"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
@@ -757,21 +757,6 @@ _.HiddenQuestTriggers = {
 	n(WOD_HEADER, {
 		q(38836),	-- Aktar's Post (Aktar's Post visited)
 		q(39306),	-- Call to Arms (chosen during "Bring the Reinforcements")
-		q(39157),	-- Fel Legendary Pet Tracking Quest 1 — Felsworn Sentry
-		q(39160),	-- Fel Legendary Pet Tracking Quest 2 — Corrupted Thundertail
-		q(39161),	-- Fel Legendary Pet Tracking Quest 3 — Chaos Pup
-		q(39162),	-- Fel Legendary Pet Tracking Quest 4 — Cursed Spirit
-		q(39163),	-- Fel Legendary Pet Tracking Quest 5 — Felfly
-		q(39164),	-- Fel Legendary Pet Tracking Quest 6 — Tainted Maulclaw
-		q(39165),	-- Fel Legendary Pet Tracking Quest 7 — Direflame
-		q(39166),	-- Fel Legendary Pet Tracking Quest 8 — Mirecroak
-		q(39167),	-- Fel Legendary Pet Tracking Quest 9 — Dark Gazer
-		q(39168),	-- Fel Legendary Pet Tracking Quest 10 — Bleakclaw
-		q(39169),	-- Fel Legendary Pet Tracking Quest 11 — Vile Blood of Draenor
-		q(39170),	-- Fel Legendary Pet Tracking Quest 12 — Dreadwalker
-		q(39171),	-- Fel Legendary Pet Tracking Quest 13 — Netherfist
-		q(39172),	-- Fel Legendary Pet Tracking Quest 14 — Skrillix
-		q(39173),	-- Fel Legendary Pet Tracking Quest 15 — Defiled Earth
 		q(39183),	-- FLAG - Immaculate Critical Strike Taladite (learning Immaculate Critical Strike Taladite at an Apexis Gemcutter)
 		q(39184),	-- FLAG - Immaculate Haste Taladite (learning Immaculate Haste Taladite at an Apexis Gemcutter)
 		q(39185),	-- FLAG - Immaculate Mastery Taladite (learning Immaculate Mastery Taladite at an Apexis Gemcutter)
