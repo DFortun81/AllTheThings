@@ -1,6 +1,9 @@
 -- #if AFTER 6.2.3.20601
 root("Holidays", d(24, {  -- Timewalking
 	tier(TBC_TIER, {
+		i(187902, {	-- Sporebat Soul
+			["timeline"] = { "added 9.1.5" },
+		}),
 		-- #if AFTER 7.2.5.23910
 		inst_tw(751, {	-- The Black Temple
 			["isRaid"] = true,

@@ -96,6 +96,11 @@ _.Zones =
 				q(61947, {	-- Lurking In The Shadows
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
+					["g"] = {
+						i(187858, {	-- Bunny Soul
+							["timeline"] = { "added 9.1.5" },
+						}),
+					},
 				}),
 				q(61530, {	-- Mining: Ligneous Phaedrum Cluster
 					["requireSkill"] = MINING,

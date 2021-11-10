@@ -14,12 +14,18 @@ _.ExpansionFeatures =
 			},
 			["g"] = {
 				n(-936, sharedData({["customCollect"] = { "SL_COV_NFA" }}, {	-- Soulshape Forms
-					-- TODO: fill in remaining quests that are as yet unknown
 					q(65010, {	-- Alpaca Soul
 						["provider"] = { "i", 187882 },	-- Alpaca Soul
 					}),
 					q(62422, {	-- Ardenmoth Soul
 						["provider"] = { "i", 182165 },	-- Ardenmoth Soul
+					}),
+					q(65025, {	-- Boar Soul
+						["provider"] = { "i", 187905 },	-- Boar Soul
+						["u"] = TIMEWALKING,
+					}),
+					q(64984, {	-- Bunny Soul
+						["provider"] = { "i", 187858 },	-- Bunny Soul
 					}),
 					q(64961, {	-- Cat Soul
 						["provider"] = { "i", 187819 },	-- Cat Soul
@@ -37,6 +43,10 @@ _.ExpansionFeatures =
 						["name"] = "Choofa/Squirrel Soul",
 						["icon"] = 645526,
 						["description"] = "Talk to Choofa in the covenant sanctum."
+					}),
+					q(65024, {	-- Cloud Serpent Soul
+						["provider"] = { "i", 187904 },	-- Cloud Serpent Soul
+						["u"] = TIMEWALKING,
 					}),
 					pvp(q(64651, {	-- Cobra Soul
 						["description"] = "Drops from rated PvP.",
@@ -86,6 +96,14 @@ _.ExpansionFeatures =
 						["description"] = "Drops from M+.",
 						["provider"] = { "i", 182173 },	-- Hyena Soul
 					}),
+					q(65023, {	-- Jormungar Soul
+						["provider"] = { "i", 187903 },	-- Jormungar Soul
+						["u"] = TIMEWALKING,
+					}),
+					q(63609, {	-- Kodo Soul
+						["provider"] = { "i", 185053 },	-- Kodo Soul
+						["u"] = TIMEWALKING,
+					}),
 					q(62429, {	-- Leonine Soul
 						["provider"] = { "i", 182174 },	-- Leonine Soul
 					}),
@@ -100,6 +118,10 @@ _.ExpansionFeatures =
 					}),
 					q(64959, {	-- Otter Soul
 						["provider"] = { "i", 187818 },	-- Otter Soul
+					}),
+					q(65026, {	-- Owl Soul
+						["provider"] = { "i", 187906 },	-- Owl Soul
+						["u"] = TIMEWALKING,
 					}),
 					q(62432, {	-- Owlcat Soul
 						["provider"] = { "i", 182177 },	-- Owlcat Soul
@@ -155,6 +177,10 @@ _.ExpansionFeatures =
 					q(63606, {	-- Spider Soul
 						["provider"] = { "i", 185050 },	-- Spider Soul
 					}),
+					q(65022, {	-- Sporebat Soul
+						["provider"] = { "i", 187902 },	-- Sporebat Soul
+						["u"] = TIMEWALKING,
+					}),
 					q(62435, {	-- Stag Soul
 						["provider"] = { "i", 182180 },	-- Stag Soul
 					}),
@@ -178,31 +204,6 @@ _.ExpansionFeatures =
 					q(63603, {	-- Yak Soul
 						["provider"] = { "i", 185047 },	-- Yak Soul
 					}),
-					--]]
-					-- Has no source (Many suspected to be from TW
-					--[[
-					q(65025, {	-- Boar Soul (WoD?)
-						["provider"] = { "i", 187905 },	-- Boar Soul
-					}),
-					q(64984, {	-- Bunny Soul
-						["provider"] = { "i", 187858 },	-- Bunny Soul
-					}),
-					q(65024, {	-- Cloud Serpent Soul (MoP?)
-						["provider"] = { "i", 187904 },	-- Cloud Serpent Soul
-					}),
-					q(65023, {	-- Jormungar Soul (WRATH?)
-						["provider"] = { "i", 187903 },	-- Jormungar Soul
-					}),
-					q(63609, {	-- Kodo Soul (Cata?)
-						["provider"] = { "i", 185053 },	-- Kodo Soul
-					}),
-					q(65026, {	-- Owl Soul (Legion?)
-						["provider"] = { "i", 187906 },	-- Owl Soul
-					}),
-					q(65022, {	-- Sporebat Soul (TBC?)
-						["provider"] = { "i", 187902 },	-- Sporebat Soul
-					}),
-					--]]
 				})),
 			},
 		}),

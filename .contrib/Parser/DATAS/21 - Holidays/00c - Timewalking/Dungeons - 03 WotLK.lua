@@ -1,6 +1,9 @@
 -- #if AFTER 6.2.3.20601
 root("Holidays", d(24, {  -- Timewalking
 	tier(WOTLK_TIER, {
+		i(187903, {	-- Jormungar Soul
+			["timeline"] = { "added 9.1.5" },
+		}),
 		-- #if AFTER 7.3.5.25600
 		inst_tw(759, {	-- Ulduar
 			["isRaid"] = true,

@@ -1,6 +1,9 @@
 -- #if AFTER 7.1.5.23360
 root("Holidays", d(24, {  -- Timewalking
 	tier(MOP_TIER, {
+		i(187904, {	-- Cloud Serpent Soul
+			["timeline"] = { "added 9.1.5" },
+		}),
 		inst_tw(303, {	-- Gate of the Setting Sun
 			cr(56906, e(655, {	-- Saboteur Kip'tilak
 				i(144018),	-- Fallout-Filtering Hood

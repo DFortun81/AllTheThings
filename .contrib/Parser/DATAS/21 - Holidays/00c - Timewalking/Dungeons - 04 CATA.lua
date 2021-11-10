@@ -1,6 +1,9 @@
 -- #if AFTER 6.2.3.20601
 root("Holidays", d(24, {  -- Timewalking
 	tier(CATA_TIER, {
+		i(185053, {	-- Kodo Serpent Soul
+			["timeline"] = { "added 9.1.5" },
+		}),
 		-- #if AFTER 8.2.5.31958
 		inst_tw(78, {	-- Firelands
 			["isRaid"] = true,

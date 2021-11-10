@@ -354,6 +354,9 @@ root("Holidays", d(24, {  -- Timewalking
 					i(110042),	-- Gug'rokk's Smasher
 					i(110044),	-- Ogre Dinner Plate
 					i(110043),	-- Gug'rokk's Grandmother
+					i(187905, {	-- Boar Soul
+						["timeline"] = { "added 9.1.5" },
+					}),
 				},
 			}),
 		}),
@@ -502,6 +505,9 @@ root("Holidays", d(24, {  -- Timewalking
 					i(138806),	-- Illusion: Mark of Shadowmoon
 					i(110039),	-- Portal-Ripper's Staff
 					i(110038),	-- Ner'zhul's Ritual Blade
+					i(187905, {	-- Boar Soul
+						["timeline"] = { "added 9.1.5" },
+					}),
 				},
 			}),
 		}),

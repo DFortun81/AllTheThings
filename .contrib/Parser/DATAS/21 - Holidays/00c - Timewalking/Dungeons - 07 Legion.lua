@@ -1,6 +1,9 @@
 -- #if AFTER 9.1.5
 root("Holidays", d(24, {  -- Timewalking
 	tier(LEGION_TIER, {
+		i(187906, {	-- Owl Serpent Soul
+			["timeline"] = { "added 9.1.5" },
+		}),
 		inst_tw(740, {	-- Black Rook Hold
 			e(1518, {	-- Amalgam of Souls
 				["cr"] = 98542,	-- Amalgam of Souls
