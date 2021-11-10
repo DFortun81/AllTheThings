@@ -771,11 +771,18 @@ _.HiddenQuestTriggers = {
 		q(63575),	-- Dread Gladiator's Vestment (Priest, Mage, Warlock - Alliance)
 
 		--	PvP Arsenals
-		q(43224),	-- Primal Gladiator's Arsenal (Alliance)
-		q(43225),	-- Primal Gladiator's Arsenal (Horde)
-		q(43233),	-- Arsenal: Wild Combatant's Weapons
 		q(43235),	-- Primal Combatant's Arsenal (Alliance)
 		q(43236),	-- Primal Combatant's Arsenal (Horde)
+		q(43224),	-- Primal Gladiator's Arsenal (Alliance)
+		q(43225),	-- Primal Gladiator's Arsenal (Horde)
+		q(43233),	-- Wild Combatant's Arsenal (Alliance)
+		q(43233),	-- Wild Combatant's Arsenal (Horde)
+		q(43226),	-- Wild Gladiator's Arsenal (Alliance)
+		q(43227),	-- Wild Gladiator's Arsenal (Alliance)
+		q(43231),	-- Warmongering Combatant's Arsenal (Alliance)
+		q(43232),	-- Warmongering Combatant's Arsenal (Horde)
+		q(43229),	-- Warmongering Gladiator's Arsenal (Alliance)
+		q(43230),	-- Warmongering Gladiator's Arsenal (Horde)
 		q(46005),	-- Tyrannical Gladiator's Arsenal (A)
 		q(46007),	-- Prideful Gladiator's Arsenal (A)
 		q(46019),	-- Grievous Gladiator's Arsenal (A)
@@ -789,7 +796,7 @@ _.HiddenQuestTriggers = {
 		q(46609),	-- Furious Gladiator's Arsenal
 		q(46620),	-- Relentless Gladiator's Arsenal
 		q(46630),	-- Gladiator's Arsenal
-		q(46630),	-- Brutal Gladiator's Arsenal
+		q(46640),	-- Brutal Gladiator's Arsenal
 		q(46650),	-- Vengeful Gladiator's Arsenal
 		q(46660),	-- Merciless Gladiator's Arsenal
 		q(63223),	-- Dread Gladiator's Arsenal (Alliance)

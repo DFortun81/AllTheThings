@@ -1354,9 +1354,6 @@ _.Zones =
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
 									{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_MERCILESS, PVP_GLADIATOR, ROGUE },
-									{"select", "itemID", 32814 },	-- Veteran's Leather Bracers
-									{"select", "itemID", 32802 },	-- Veteran's Leather Belt
-									{"select", "itemID", 32790 },	-- Veteran's Leather Boots
 									{"select", "itemID", 147612 },	-- Veteran's Leather Wristguards
 									{"select", "itemID", 147610 },	-- Veteran's Leather Waistband
 									{"select", "itemID", 147611 },	-- Veteran's Leather Footguards
@@ -2858,7 +2855,6 @@ _.Zones =
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
 									{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_VENGEFUL, PVP_GLADIATOR, ROGUE },
-									{"select", "itemID", 33893 },	-- Vindicator's Leather Bracers
 									{"select", "itemID", 33891 },	-- Vindicator's Leather Belt
 									{"select", "itemID", 33892 },	-- Vindicator's Leather Boots
 									{"select", "itemID", 147670 },	-- Vindicator's Leather Wristguards
