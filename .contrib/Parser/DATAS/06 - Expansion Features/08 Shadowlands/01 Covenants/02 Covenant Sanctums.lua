@@ -178,6 +178,7 @@ _.ExpansionFeatures =
 								i(184504),	-- Attendant's Pocket Portal: Oribos
 								i(184501),	-- Attendant's Pocket Portal: Revendreth
 								i(171438),	-- Porous Weightstone
+								i(92683),	-- Flawless Dragonkin Battle-Stone
 							},
 						}),
 						-- Rare Quality Calling Rewards / Zone
