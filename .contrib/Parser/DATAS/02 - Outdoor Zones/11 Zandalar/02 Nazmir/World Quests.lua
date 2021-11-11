@@ -689,7 +689,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 				}),
 				un(NEVER_IMPLEMENTED, q(49675)),	-- showing in /attwq as [Quest 49675] no record of the quest found on Wowhead
-				un(NEVER_IMPLEMENTED, q(49695)),	-- showing in /attwq as [Quest 49695] no record of the quest found on Wowhead
 			}),
 		}),
 	}),

@@ -5455,37 +5455,6 @@ local function PopulateQuestObject(questObject)
 		end
 	end
 
-	-- Update Quest info from cache
-	_cache = SearchForField("questID",questID);
-	if _cache then
-		for _,data in ipairs(_cache) do
-			-- only merge into the quest object properties from an object in cache with this questID
-			if data.questID == questID then
-				MergeProperties(questObject, data, true);
-				-- merge in sourced things under this quest object if it is not a raw quest
-				if data.key ~= "questID" then
-					NestObjects(questObject, data.g, true);
-				end
-			-- otherwise this is a non-quest object flagged with this questID so it should be added under the quest
-			else
-				NestObject(questObject, data, true);
-			end
-		end
-	end
-
-	-- Check for provider info
-	if questObject.qgs and #questObject.qgs == 1 then
-		_cache = SearchForField("creatureID", questObject.qgs[1]);
-		if _cache then
-			for _,data in ipairs(_cache) do
-				if GetRelativeField(data, "headerID", -16) then	-- Rares only!
-					MergeProperties(questObject, data, true);
-					NestObjects(questObject, data.g, true);
-				end
-			end
-		end
-	end
-
 	-- Get time remaining info (only works for World Quests)
 	local timeRemaining = C_TaskQuest.GetQuestTimeLeftMinutes(questID);
 	if timeRemaining and timeRemaining > 0 then
@@ -5513,7 +5482,7 @@ local function GetPopulatedQuestObject(questID)
 	local cachedVersion = app.SearchForObject("questID", questID);
 	-- either want to duplicate the existing data for this quest, or create new data for a missing quest
 	local data = cachedVersion or { questID = questID, _missing = true };
-	local questObject = CreateObject(data);
+	local questObject = CreateObject(data, true);
 	PopulateQuestObject(questObject);
 	return questObject;
 end
@@ -9798,14 +9767,14 @@ app.ImportRawLink = function(group, rawlink)
 		group.rawlink = rawlink;
 		local _, linkItemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID, bonusCount, bonusID1 = strsplit(":", rawlink);
 		if linkItemID then
-			-- print("ImportRawLink",rawlink,linkItemID,modID,bonusCount,bonusID1)
+			-- if app.DEBUG_PRINT then print("ImportRawLink",rawlink,linkItemID,modID,bonusCount,bonusID1) end
 			-- set raw fields in the group based on the link
 			group.itemID = tonumber(linkItemID);
-			group.modID = modID and tonumber(modID);
+			group.modID = modID and tonumber(modID) or nil;
 			-- only set the bonusID if there is actually bonusIDs indicated
 			if (tonumber(bonusCount) or 0) > 0 then
 				-- Don't use bonusID 3524 as an actual bonusID
-				local b = bonusID1 and tonumber(bonusID1);
+				local b = bonusID1 and tonumber(bonusID1) or nil;
 				if b ~= 3524 then
 					group.bonusID = b;
 				end
@@ -10858,13 +10827,6 @@ app.BaseQuest = app.BaseObjectFields(questFields);
 
 -- consolidated representation of whether a Thing can be collectible via QuestID
 app.CollectibleAsQuest = function(t)
-	-- if t.questID == 11381 then
-	-- 	print("CollectibleAsQuest.repeatable",(not t.repeatable or app.Settings:GetTooltipSetting("Repeatable")))
-	-- 	print("CollectibleAsQuest.CheckCustomCollects",app.CheckCustomCollects(t))
-	-- 	print("CollectibleAsQuest.Mode",(app.MODE_DEBUG or (not t.isBreadcrumb and not t.DisablePartySync) or
-	-- 	(app.CollectibleBreadcrumbs and (not t.breadcrumbLockedBy or app.MODE_ACCOUNT))))
-	-- 	print("CollectibleAsQuest.OnQuestItem",(t.questID and not t.isWorldQuest and (t.cost or t.itemID) and C_QuestLog.IsOnQuest(t.questID)))
-	-- end
 	return
 	-- must treat Quests as collectible
 	app.CollectibleQuests
@@ -10906,7 +10868,12 @@ app.TryPopulateQuestRewards = function(questObject)
 	questObject.missingItem = questObject.missingItem and (questObject.missingItem - 1) or 15;
 	questObject.missingCurr = questObject.missingCurr and (questObject.missingCurr - 1) or 15;
 
-	-- app.DEBUG_PRINT = questObject.questID == 51581 and 51581;
+	-- all sub-group data will be populated via this method, so any pre-existing stuff should be cleaned out on the initial setup
+	if questObject.missingItem == 15 and questObject.missingCurr == 15 then
+		questObject.g = nil;
+	end
+
+	-- app.DEBUG_PRINT = questObject.questID == 32901 and 32901;
 	-- if app.DEBUG_PRINT then print("TryPopulateQuestRewards",questObject.questID) end
 	-- print("TryPopulateQuestRewards",questObject.questID,questObject.missingItem,questObject.missingCurr)
 	if questObject.missingItem > 0 then
@@ -10951,24 +10918,23 @@ app.TryPopulateQuestRewards = function(questObject)
 							-- if app.DEBUG_PRINT then print("Initial search",#search,link) end
 							-- find the specific item which the link represents (not sure all of this is necessary with improved search)
 							local exactItemID = GetGroupItemIDWithModID(item);
-							local modItemID = GetGroupItemIDWithModID(nil, item.itemID, item.modID);
-							-- sort the search results by how closely they match the item itself
-							local subItems, merged = {};
-							-- merge the 'most accurate' Source ATT item first
-							-- same as the search results for sourceGroup finding...
-							for i,j in ipairs(search) do
-								-- if app.DEBUG_PRINT then print("cached",j.key,j.key and j[j.key],j.modItemID,exactItemID,modItemID) end
-								if GroupMatchesParams(j, "itemID", exactItemID) or GroupMatchesParams(j, "itemID", modItemID) then
-									merged = true;
-									MergeProperties(item, j);
-									NestObjects(item, j.g);	-- no clone since item is cloned later
-									-- if app.DEBUG_PRINT then print("replace merge") app.PrintTable(item) end
-								elseif not merged and GroupMatchesParams(j, "itemID", modItemID, true) then
-									MergeProperties(item, j, true);
-									NestObjects(item, j.g);	-- no clone since item is cloned later
-									-- if app.DEBUG_PRINT then print("merge") app.PrintTable(item) end
-								else
-									tinsert(subItems, j);
+							local subItems = {};
+							local refinedMatches = app.GroupBestMatchingItems(search, exactItemID);
+							if refinedMatches then
+								-- move from depth 3 to depth 1 to find the set of items which best matches for the root
+								for depth=3,1,-1 do
+									if refinedMatches[depth] then
+										-- if app.DEBUG_PRINT then print("refined",depth,#refinedMatches[depth]) end
+										for _,o in ipairs(refinedMatches[depth]) do
+											MergeProperties(item, o, true);
+											NestObjects(item, o.g);	-- no clone since item is cloned later
+										end
+									end
+								end
+								-- any matches with depth 0 will be nested
+								if refinedMatches[0] then
+									if app.DEBUG_PRINT then print("refined",0,#refinedMatches[0]) end
+									app.ArrayAppend(subItems, refinedMatches[0]);	-- no clone since item is cloned later
 								end
 							end
 							-- then pull in any other sub-items which were not the item itself
@@ -11030,17 +10996,69 @@ app.TryPopulateQuestRewards = function(questObject)
 		questObject.doUpdate = true;
 
 		-- Finally ensure that any cached entries for the quest are copied into this version of the object
-		local cachedQuest = app.SearchForObject("questID", questObject.questID);
-		if cachedQuest and cachedQuest.g then
-			-- only copy in Things which are not Items since those will be populated from the server as requested
+		-- Needs to be SearchForField as non-quests can be pulled too
+		local cachedQuests = SearchForField("questID", questObject.questID);
+		if cachedQuests then
+			-- special care for API provided items
+			local apiItems = {};
+			if questObject.g then
+				for _,item in ipairs(questObject.g) do
+					if item.itemID then
+						apiItems[item.itemID] = item;
+					end
+				end
+			end
 			local nonItemNested = {};
-			for _,thing in ipairs(cachedQuest.g) do
-				if not thing.itemID then
-					tinsert(nonItemNested, thing);
+			-- merge in any DB data without replacing existing data
+			for _,data in ipairs(cachedQuests) do
+				-- only merge into the quest object properties from an object in cache with this questID
+				if data.questID and data.questID == questObject.questID then
+					MergeProperties(questObject, data, true);
+					-- need to exclusively copy cached values for certain fields since normal merge logic will not copy them
+					-- ref: quest 49675/58703
+					if data.u then questObject.u = data.u; end
+					-- merge in sourced things under this quest object if it is not a raw quest or not an API provided item
+					if data.g then
+						for _,o in ipairs(data.g) do
+							-- nest cached non-items
+							if not o.itemID then
+								-- if app.DEBUG_PRINT then print("nested-nonItem",o.hash) end
+								tinsert(nonItemNested, o);
+							else
+								-- cached items need to merge with corresponding API item based on simple itemID
+								if apiItems[o.itemID] then
+									-- if app.DEBUG_PRINT then print("nested-merged",o.hash) end
+									MergeProperties(apiItems[o.itemID], o, true);
+								else
+									-- otherwise just get nested
+									-- if app.DEBUG_PRINT then print("nested-item",o.hash) end
+									tinsert(nonItemNested, o);
+								end
+							end
+						end
+					end
+				-- otherwise if this is a non-quest object flagged with this questID so it should be added under the quest
+				elseif data.key ~= "questID" then
+					tinsert(nonItemNested, data);
 				end
 			end
 			NestObjects(questObject, nonItemNested, true);
 		end
+
+		-- Check for provider info
+		-- TODO: don't think this is necessary? it's trying to pull things listed under a creature when that creature is sourced under a 'Rares' header
+		-- if questObject.qgs and #questObject.qgs == 1 then
+		-- 	_cache = SearchForField("creatureID", questObject.qgs[1]);
+		-- 	if _cache then
+		-- 		for _,data in ipairs(_cache) do
+		-- 			if GetRelativeField(data, "headerID", -16) then	-- Rares only!
+		-- 				print("merge creature data",data.hash,"=>",questObject.questID)
+		-- 				MergeProperties(questObject, data, true);
+		-- 				NestObjects(questObject, data.g, true);
+		-- 			end
+		-- 		end
+		-- 	end
+		-- end
 
 		-- Build out purchases if specified
 		-- if app.Settings:GetTooltipSetting("WorldQuestsList:Currencies") then
@@ -18904,8 +18922,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 					for i,poi in ipairs(pois) do
 						-- only include Tasks on this actual mapID since each Zone mapID is checked individually
 						if poi.mapID == mapID then
-							local questObject = { questID = poi.questId };
-							PopulateQuestObject(questObject);
+							local questObject = GetPopulatedQuestObject(poi.questId);
 							if includeAll or
 								-- include the quest in the list if holding shift and tracking quests
 								(includePermanent and includeQuests) or
@@ -18934,8 +18951,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 					for id,questLine in pairs(questLines) do
 						-- dont show 'hidden' quest lines... not sure what this is exactly
 						if not questLine.hidden then
-							local questObject = { questID = questLine.questID };
-							PopulateQuestObject(questObject);
+							local questObject = GetPopulatedQuestObject(questLine.questID);
 							if includeAll or
 								-- include the quest in the list if holding shift and tracking quests
 								(includePermanent and includeQuests) or
@@ -18968,7 +18984,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				-- look for quests on map child maps as well
 				local mapChildInfos = C_Map.GetMapChildrenInfo(mapObject.mapID, 3);
 				if mapChildInfos then
-					for i,mapInfo in ipairs(mapChildInfos) do
+					for _,mapInfo in ipairs(mapChildInfos) do
 						-- start fetching the data while other stuff is setup
 						C_QuestLine.RequestQuestLinesForMap(mapInfo.mapID);
 						local subMapObject = app.CreateMapWithStyle(mapInfo.mapID);
@@ -19003,7 +19019,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				local includeQuests = app.CollectibleQuests;
 				local includePermanent = IsAltKeyDown() or includeAll;
 
-				-- Acquire all of the world quests
+				-- Acquire all of the world mapIDs
 				for _,pair in ipairs(worldMapIDs) do
 					local mapID = pair[1];
 					-- print("WQ.WorldMapIDs." , mapID)
@@ -19024,8 +19040,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 									if not IsQuestFlaggedCompleted(questID) then
 										local timeLeft = C_AreaPoiInfo.GetAreaPOISecondsLeft(arr[2]);
 										if timeLeft and timeLeft > 0 then
-											local questObject = { questID = questID };
-											PopulateQuestObject(questObject);
+											local questObject = GetPopulatedQuestObject(questID);
 
 											-- Custom time remaining based on the map POI since the quest itself does not indicate time remaining
 											if not questObject.timeRemaining then
@@ -19081,8 +19096,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 					local bounties = C_QuestLog.GetBountiesForMapID(pair[2]);
 					if bounties and #bounties > 0 then
 						for i,bounty in ipairs(bounties) do
-							local questObject = { questID = bounty.questID };
-							PopulateQuestObject(questObject);
+							local questObject = GetPopulatedQuestObject(bounty.questID);
 							NestObject(mapObject, questObject);
 						end
 					end
@@ -19101,12 +19115,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				-- Heroic Deeds
 				if includePermanent and not (CompletedQuests[32900] or CompletedQuests[32901]) then
 					local mapObject = app.CreateMapWithStyle(424);
-					_cache = SearchForField("questID", app.FactionID == Enum.FlightPathFaction.Alliance and 32900 or 32901);
-					if _cache then
-						for _,data in ipairs(_cache) do
-							NestObject(mapObject, data, true);
-						end
-					end
+					NestObject(mapObject, GetPopulatedQuestObject(app.FactionID == Enum.FlightPathFaction.Alliance and 32900 or 32901));
 					MergeObject(temp, mapObject);
 				end
 

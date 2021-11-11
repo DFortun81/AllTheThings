@@ -995,7 +995,7 @@ _.HiddenQuestTriggers = {
 		q(45405),	-- Breaching the Sanctum - completed with quest 44719
 		q(49563),	-- Warchief's Command: Frostfire Ridge! - completed with quest 49545
 		q(51845),	-- Storm's End - completed with quest 50824
-		
+
 		-- Frostfire Ridge
 		--q(36079),	-- A Hero's Welcome - TODO: figure out from where it gets completed
 		--q(33380),	-- REUSE - TODO: figure out from where it gets completed
@@ -1003,11 +1003,11 @@ _.HiddenQuestTriggers = {
 		--q(35251),	-- The Bounty of Bladespire	- TODO: figure out from where it gets completed
 		--q(34734),	-- The Loyalty of Olin Umberhide - TODO: figure out from where it gets completed
 		--q(37062),	-- Tricks of the Trade - TODO: figure out from where it gets completed
-		
+
 		-- Gorgrond
 		--q(35431),	-- The Best Poison - TODO: figure out from where it gets completed
 		--q(35653),	-- Wood is Wood - TODO: figure out from where it gets completed
-		
+
 		-- Shadowmoon Valley
 		--q(39396),	-- NOT USED - TODO: figure out from where it gets completed
 		--q(33267),	-- [Deprecated] - TODO: figure out from where it gets completed
@@ -1016,12 +1016,12 @@ _.HiddenQuestTriggers = {
 		--q(36796),	-- The Flock's Revenge - TODO: figure out from where it gets completed
 		--q(34565),	-- Tearing Up Talador - TODO: figure out from where it gets completed
 		--q(35340),	-- What Happened Here? - TODO: figure out from where it gets completed
-		
+
 		-- Talador
 		--q(33923),	-- Demons? In Auchindoun? - TODO: figure out from where it gets completed
 		--q(33974),	-- Dying Wish - TODO: figure out from where it gets completed
 		--q(34570),	-- REUSE - TODO: figure out from where it gets completed
-			
+
 		-------------------
 		---   CLASSIC   ---
 		-------------------
@@ -2511,7 +2511,9 @@ _.HiddenQuestTriggers = {
 		q(54910),	-- Opening a Darkshore chest
 		q(54911),	-- Opening a Darkshore chest
 		q(54912),	-- Opening a Darkshore chest
-		q(49695),	-- immediately after channeling on the drum finishes during "A Tribute For Death"
+		q(49695, {	-- immediately after channeling on the drum finishes during "A Tribute For Death"
+			["isWorldQuest"] = true, -- haunted HQT that shows in /attwq
+		}),
 		q(52294),	-- triggers with Krag'wa after accepting "The Last Witch Doctor of Krag'wa"
 		q(47530),	-- ???? [The Necropolis] (completed after soulbound, but not known)
 		q(47531),	-- triggered when turning in "Krag'wa the Terrible"
