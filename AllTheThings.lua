@@ -18803,6 +18803,16 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 	end
 end;
 customWindowUpdates["WorldQuests"] = function(self, force, got)
+	-- localize some APIs
+	local C_TaskQuest_GetQuestsForPlayerByMapID = C_TaskQuest.GetQuestsForPlayerByMapID;
+	local C_QuestLine_RequestQuestLinesForMap = C_QuestLine.RequestQuestLinesForMap;
+	local C_QuestLine_GetAvailableQuestLines = C_QuestLine.GetAvailableQuestLines;
+	local C_Map_GetMapChildrenInfo = C_Map.GetMapChildrenInfo;
+	local C_AreaPoiInfo_GetAreaPOISecondsLeft = C_AreaPoiInfo.GetAreaPOISecondsLeft;
+	local C_QuestLog_GetBountiesForMapID = C_QuestLog.GetBountiesForMapID;
+	local SecondsToTime = SecondsToTime;
+	local GetNumRandomDungeons, GetLFGDungeonInfo, GetLFGRandomDungeonInfo, GetLFGDungeonRewards, GetLFGDungeonRewardInfo = GetNumRandomDungeons, GetLFGDungeonInfo, GetLFGRandomDungeonInfo, GetLFGDungeonRewards, GetLFGDungeonRewardInfo;
+
 	if self:IsVisible() then
 		if not self.initialized then
 			self.initialized = true;
@@ -18913,19 +18923,19 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				self:Update(true);
 			end
 			-- World Quests (Tasks)
-			self.MergeTasks = function(self, mapObject, includeAll, includePermanent, includeQuests)
+			self.MergeTasks = function(self, mapObject)
 				local mapID = mapObject.mapID;
 				if not mapID then return; end
-				local pois = C_TaskQuest.GetQuestsForPlayerByMapID(mapID);
+				local pois = C_TaskQuest_GetQuestsForPlayerByMapID(mapID);
 				-- print(#pois,"WQ in",mapID);
 				if pois then
 					for i,poi in ipairs(pois) do
 						-- only include Tasks on this actual mapID since each Zone mapID is checked individually
 						if poi.mapID == mapID then
 							local questObject = GetPopulatedQuestObject(poi.questId);
-							if includeAll or
+							if self.includeAll or
 								-- include the quest in the list if holding shift and tracking quests
-								(includePermanent and includeQuests) or
+								(self.includePermanent and self.includeQuests) or
 								-- or if it is repeatable (i.e. one attempt per day/week/year)
 								questObject.repeatable or
 								-- or if it has time remaining
@@ -18942,19 +18952,19 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				end
 			end
 			-- Storylines/Map Quest Icons
-			self.MergeStorylines = function(self, mapObject, includeAll, includePermanent, includeQuests)
+			self.MergeStorylines = function(self, mapObject)
 				local mapID = mapObject.mapID;
 				if not mapID then return; end
-				C_QuestLine.RequestQuestLinesForMap(mapID);
-				local questLines = C_QuestLine.GetAvailableQuestLines(mapID)
+				C_QuestLine_RequestQuestLinesForMap(mapID);
+				local questLines = C_QuestLine_GetAvailableQuestLines(mapID)
 				if questLines then
 					for id,questLine in pairs(questLines) do
 						-- dont show 'hidden' quest lines... not sure what this is exactly
 						if not questLine.hidden then
 							local questObject = GetPopulatedQuestObject(questLine.questID);
-							if includeAll or
+							if self.includeAll or
 								-- include the quest in the list if holding shift and tracking quests
-								(includePermanent and includeQuests) or
+								(self.includePermanent and self.includeQuests) or
 								-- or if it is repeatable (i.e. one attempt per day/week/year)
 								questObject.repeatable or
 								-- or if it has time remaining
@@ -18970,33 +18980,33 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 					self.retry = true;
 				end
 			end
-			self.BuildMapAndChildren = function(self, mapObject, includeAll, includePermanent, includeQuests)
+			self.BuildMapAndChildren = function(self, mapObject)
 				if not mapObject.mapID then return; end
 
 				-- print("Build Map",mapObject.mapID,mapObject.text);
 
 				-- Merge Tasks for Zone
-				self:MergeTasks(mapObject, includeAll, includePermanent, includeQuests);
+				self:MergeTasks(mapObject);
 
 				-- Merge Storylines for Zone
-				self:MergeStorylines(mapObject, includeAll, includePermanent, includeQuests);
+				self:MergeStorylines(mapObject);
 
 				-- look for quests on map child maps as well
-				local mapChildInfos = C_Map.GetMapChildrenInfo(mapObject.mapID, 3);
+				local mapChildInfos = C_Map_GetMapChildrenInfo(mapObject.mapID, 3);
 				if mapChildInfos then
 					for _,mapInfo in ipairs(mapChildInfos) do
 						-- start fetching the data while other stuff is setup
-						C_QuestLine.RequestQuestLinesForMap(mapInfo.mapID);
+						C_QuestLine_RequestQuestLinesForMap(mapInfo.mapID);
 						local subMapObject = app.CreateMapWithStyle(mapInfo.mapID);
 
 						-- Merge Tasks for Zone
-						self:MergeTasks(subMapObject, includeAll, includePermanent, includeQuests);
+						self:MergeTasks(subMapObject);
 
 						-- Merge Storylines for Zone
-						self:MergeStorylines(subMapObject, includeAll, includePermanent, includeQuests);
+						self:MergeStorylines(subMapObject);
 
 						-- Build children of this map as well
-						self:BuildMapAndChildren(subMapObject, includeAll, includePermanent, includeQuests);
+						self:BuildMapAndChildren(subMapObject);
 
 						NestObject(mapObject, subMapObject);
 					end
@@ -19015,20 +19025,20 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				self.retry = nil;
 				local temp = {};
 				-- options when refreshing the list
-				local includeAll = app.MODE_DEBUG;
-				local includeQuests = app.CollectibleQuests;
-				local includePermanent = IsAltKeyDown() or includeAll;
+				self.includeAll = app.MODE_DEBUG;
+				self.includeQuests = app.CollectibleQuests;
+				self.includePermanent = IsAltKeyDown() or self.includeAll;
 
 				-- Acquire all of the world mapIDs
 				for _,pair in ipairs(worldMapIDs) do
 					local mapID = pair[1];
 					-- print("WQ.WorldMapIDs." , mapID)
 					-- start fetching the data while other stuff is setup
-					C_QuestLine.RequestQuestLinesForMap(mapID);
+					C_QuestLine_RequestQuestLinesForMap(mapID);
 					local mapObject = app.CreateMapWithStyle(mapID);
 
 					-- Build top-level maps all the way down
-					self:BuildMapAndChildren(mapObject, includeAll, includePermanent, includeQuests);
+					self:BuildMapAndChildren(mapObject);
 
 					-- Invasions
 					local mapIDPOIPairs = pair[2];
@@ -19038,7 +19048,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 							if #arr >= 3 then
 								for j,questID in ipairs(arr[3]) do
 									if not IsQuestFlaggedCompleted(questID) then
-										local timeLeft = C_AreaPoiInfo.GetAreaPOISecondsLeft(arr[2]);
+										local timeLeft = C_AreaPoiInfo_GetAreaPOISecondsLeft(arr[2]);
 										if timeLeft and timeLeft > 0 then
 											local questObject = GetPopulatedQuestObject(questID);
 
@@ -19068,7 +19078,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 								local subMap = app.CreateMapWithStyle(arr[1]);
 
 								-- Build top-level maps all the way down for the sub-map
-								self:BuildMapAndChildren(subMap, includeAll, includePermanent, includeQuests);
+								self:BuildMapAndChildren(subMap);
 
 								NestObject(mapObject, subMap);
 							end
@@ -19093,7 +19103,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 					local mapID = pair[1];
 					-- print("WQ.EmissaryMapIDs." .. tostring(mapID))
 					local mapObject = app.CreateMapWithStyle(mapID);
-					local bounties = C_QuestLog.GetBountiesForMapID(pair[2]);
+					local bounties = C_QuestLog_GetBountiesForMapID(pair[2]);
 					if bounties and #bounties > 0 then
 						for i,bounty in ipairs(bounties) do
 							local questObject = GetPopulatedQuestObject(bounty.questID);
@@ -19113,7 +19123,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				end
 
 				-- Heroic Deeds
-				if includePermanent and not (CompletedQuests[32900] or CompletedQuests[32901]) then
+				if self.includePermanent and not (CompletedQuests[32900] or CompletedQuests[32901]) then
 					local mapObject = app.CreateMapWithStyle(424);
 					NestObject(mapObject, GetPopulatedQuestObject(app.FactionID == Enum.FlightPathFaction.Alliance and 32900 or 32901));
 					MergeObject(temp, mapObject);
