@@ -742,11 +742,6 @@ _.Zones =
 						i(157024),	-- Sandfury Hatchet
 					},
 				}),
-				q(2865, {	-- Scarab Shells
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 7876 },	-- Tran'rek
-					["sourceQuest"] = 2864,	-- Tran'rek
-				}),
 				q(25111, {	-- Scavengers Scavenged
 					["provider"] = { "n", 39178 },	-- Driz Plunkbow
 					["coord"] = { 52.2, 28.0, TANARIS },
@@ -906,11 +901,6 @@ _.Zones =
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(7986)),	-- Plans: Ornate Mithril Breastplate
 					},
-				}),
-				q(3527, {	-- The Prophecy of Mosh'aru
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 8579 },	-- Yeh'kinya
-					["sourceQuest"] = 3520,	-- Screecher Spirits
 				}),
 				q(10,    {	-- The Scrimshank Redemption
 					["provider"] = { "n", 7724 },	-- Senior Surveyor Fizzledowser

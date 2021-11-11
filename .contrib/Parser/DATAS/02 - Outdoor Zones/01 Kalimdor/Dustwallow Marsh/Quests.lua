@@ -822,21 +822,6 @@ _.Zones =
 					["coord"] = { 66.2, 46.0, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(2861, {	-- Tabetha's Task
-					["u"] = REMOVED_FROM_GAME,
-					["maps"] = {
-						STORMWIND_CITY,
-						ORGRIMMAR,
-						IRONFORGE,
-						UNDERCITY,
-					},
-					["providers"] = {
-						{ "n", 4568 },	-- Anastasia Hartwell
-						{ "n", 5885 },	-- Deino
-						{ "n", 5144 },	-- Bink
-						{ "n", 5497 },	-- Jennea Cannon
-					},
-				}),
 				q(11198, {	-- Take Down Tethyr!
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 23905 },	-- Major Mills
@@ -1170,14 +1155,6 @@ _.Zones =
 					["coord"] = { 72.1, 47.1, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27216,	-- This Old Lighthouse
-				}),
-				q(2846,  {	-- Tiara of the Deep
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 6546 },	-- Tabetha
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(9527)),	-- Spellshifter Rod
-						un(REMOVED_FROM_GAME, i(9531)),	-- Gemshale Pauldrons
-					},
 				}),
 				q(25479, {	-- To New Thalanaar
 					["provider"] = { "n", 40345 },	-- Thyssiana

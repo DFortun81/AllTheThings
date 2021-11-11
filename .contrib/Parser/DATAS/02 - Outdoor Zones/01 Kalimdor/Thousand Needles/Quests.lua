@@ -364,15 +364,6 @@ _.Zones =
 						28051,	-- We All Scream for Ice Cream... and then Die!
 					},
 				}),
-				q(2770,  {	-- Gahz'rilla
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 4453 },	-- Wizzle Brassbolts
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(11122)),	-- Carrot on a Stick
-						un(REMOVED_FROM_GAME, i(9653)),	-- Speedy Racer Goggles
-					},
-				}),
 				q(25757, {	-- Get Koalbeard!
 					["provider"] = { "n", 41184 },	-- Riznek
 					["coord"] = { 88.5, 54.8, THOUSAND_NEEDLES },
