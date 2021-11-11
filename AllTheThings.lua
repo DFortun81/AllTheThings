@@ -20087,7 +20087,7 @@ SLASH_AllTheThings2 = "/things";
 SLASH_AllTheThings3 = "/att";
 SlashCmdList["AllTheThings"] = function(cmd)
 	if cmd then
-		print(cmd)
+		-- print(cmd)
 		local args = { strsplit(" ", string.lower(cmd)) };
 		cmd = args[1];
 		-- app.print(args)
