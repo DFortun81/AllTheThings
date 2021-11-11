@@ -12474,6 +12474,7 @@ UpdateGroups = function(parent, g, window)
 					UpdateGroups(group, group.g, window);
 				end
 				-- some objects are able to populate themselves via OnUpdate and track if needing to do another update via 'doUpdate'
+				-- print("update-doUpdate",group.hash)
 				if window and group.doUpdate then window.doUpdate = true; end
 			else
 				UpdateGroup(parent, group, window);
@@ -13627,6 +13628,11 @@ local function SetRowData(self, row, data)
 				data.reSource = nil;
 				data.parent.total = data.parent.total - 1;
 			end
+		-- an individual row can define whether the window should refresh again after it is displayed
+		elseif data.doUpdate then
+			-- print("window.doUpdate",data.hash)
+			data.doUpdate = nil;
+			self.doUpdate = true;
 		else
 			data.reSource = nil;
 		-- WARNING: DEV ONLY END
@@ -18344,6 +18350,10 @@ customWindowUpdates["quests"] = function(self, force, got)
 		self.Limit = 70000;
 		force = true;
 
+		-- custom params for initialization
+		local onlyMissing = app.GetCustomWindowParam("quests", "missing");
+		-- print("Quests - onlyMissing",onlyMissing)
+
 		-- info about the Window
 		self.data = {
 			["text"] = L["QUESTS_CHECKBOX"],
@@ -18357,9 +18367,23 @@ customWindowUpdates["quests"] = function(self, force, got)
 		-- add a bunch of raw, delay-loaded quests in order into the window
 		local groupCount = self.Limit / self.PartitionSize - 1;
 		local g, overrides = {}, {
-			visible = true,
+			visible = onlyMissing and function(o, key)
+				return o._missing;
+			end or true,
+			doUpdate = onlyMissing and function(o, key)
+				-- trigger a repeat update to the holding window after the DLO is loaded into the window and is not missing in DB
+				if not o._missing then
+					-- print("doUpdate override",o.hash)
+					return true;
+				end
+			end,
 			back = function(o, key)
 				return o._missing and 1 or 0;
+			end,
+			text = function(o, key)
+				if o.text and o.text ~= RETRIEVING_DATA then
+					return "#"..o.questID..": "..o.text;
+				end
 			end,
 		};
 		local partition, partitionStart, partitionGroups;
@@ -18380,9 +18404,9 @@ customWindowUpdates["quests"] = function(self, force, got)
 			tinsert(g, partition);
 		end
 		self.data.g = g;
+		BuildGroups(self.data, self.data.g);
 	end
 	if self:IsVisible() then
-		BuildGroups(self.data, self.data.g);
 		self:BaseUpdate(force);
 	end
 end
