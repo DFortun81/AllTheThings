@@ -8865,21 +8865,24 @@ end)();
 -- TODO: Once Item information is stored in a single source table, this mechanism can reference that instead of using a cache table here
 local cache = app.CreateCache("modItemID");
 -- Consolidated function to handle how many retries for information an Item may have
-local function HandleItemRetries(_t)
-	local t, id = cache.GetCached(_t);
-	if rawget(t, "retries") then
-		rawset(t, "retries", rawget(t, "retries") + 1);
-		if rawget(t, "retries") > app.MaximumItemInfoRetries then
+local function HandleItemRetries(t)
+	local _t, id = cache.GetCached(t);
+	local retries = rawget(_t, "retries");
+	if retries then
+		if retries > app.MaximumItemInfoRetries then
 			local itemName = "Item #" .. tostring(id) .. "*";
-			rawset(t, "title", L["FAILED_ITEM_INFO"]);
-			rawset(_t, "name", itemName);
-			rawset(t, "retries", nil);
-			rawset(t, "link", nil);
-			rawset(t, "s", nil);
+			rawset(_t, "title", L["FAILED_ITEM_INFO"]);
+			rawset(_t, "link", nil);
+			rawset(_t, "s", nil);
+			-- print("itemRetriesMax",itemName,rawget(t, "retries"))
+			-- save the "name" field in the source group to prevent further requests to the cache
+			rawset(t, "name", itemName);
 			return itemName;
+		else
+			rawset(_t, "retries", retries + 1);
 		end
 	else
-		rawset(t, "retries", 1);
+		rawset(_t, "retries", 1);
 	end
 end
 -- Consolidated function to cache available Item information
@@ -9571,14 +9574,10 @@ itemHarvesterFields.text = function(t)
 		end
 	end
 
-	local text = cache.GetCachedField(t, "text");
-
-	-- retries exceeded, so check the raw text
-	if text then
-		rawset(t, "collected", true);
-	end
-
-	return text;
+	local name = t.name;
+	-- retries exceeded, so check the raw .name on the group (gets assigned when retries exceeded during cache attempt)
+	if name then rawset(t, "collected", true); end
+	return name;
 end
 app.BaseItemHarvester = app.BaseObjectFields(itemHarvesterFields, "ItemHarvester");
 
