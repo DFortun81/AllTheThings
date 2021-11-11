@@ -15023,7 +15023,15 @@ local backdrop = {
 	tile = true, tileSize = 16, edgeSize = 16,
 	insets = { left = 4, right = 4, top = 4, bottom = 4 }
 };
+-- allows resetting a given ATT window
+function app:ResetWindow(suffix)
+	app.Windows[suffix] = nil;
+	app.print("Reset Window",suffix);
+end
 function app:GetWindow(suffix, parent, onUpdate)
+	if app.GetCustomWindowParam(suffix, "reset") then
+		app:ResetWindow(suffix);
+	end
 	local window = app.Windows[suffix];
 	if not window then
 		-- Create the window instance.
@@ -15121,6 +15129,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 		scrollbar:SetValue(1);
 		container:Show();
 		window:Update();
+		app.ResetCustomWindowParam(suffix);
 	end
 	return window;
 end
@@ -16277,10 +16286,25 @@ end
 
 -- Store the Custom Windows Update functions which are required by specific Windows
 (function()
-local customWindowUpdates = {};
+local customWindowUpdates = { params = {} };
 -- Returns the Custom Update function based on the Window suffix if existing
 function app:CustomWindowUpdate(suffix)
 	return customWindowUpdates[suffix];
+end
+-- Retrieves the value of the specific attribute for the given window suffix
+app.GetCustomWindowParam = function(suffix, name)
+	local params = customWindowUpdates.params;
+	if params[suffix] then return params[suffix][name] end
+end
+-- Defines the value of the specific attribute for the given window suffix
+app.SetCustomWindowParam = function(suffix, name, value)
+	local params = customWindowUpdates.params;
+	if params[suffix] then params[suffix][name] = value;
+	else params[suffix] = { [name] = value } end
+end
+-- Removes the custom attributes for a given window suffix
+app.ResetCustomWindowParam = function(suffix)
+	customWindowUpdates.params[suffix] = nil;
 end
 customWindowUpdates["AuctionData"] = function(self)
 	if not self.initialized then
@@ -18312,7 +18336,7 @@ customWindowUpdates["Random"] = function(self)
 		self:BaseUpdate(true);
 	end
 end;
-customWindowUpdates["Quests"] = function(self, force, got)
+customWindowUpdates["quests"] = function(self, force, got)
 	if not self.initialized then
 		-- temporarily prevent a force refresh from exploding the game if this window is open
 		self.doesOwnUpdate = true;
@@ -20040,8 +20064,16 @@ SLASH_AllTheThings2 = "/things";
 SLASH_AllTheThings3 = "/att";
 SlashCmdList["AllTheThings"] = function(cmd)
 	if cmd then
-		cmd = string.lower(cmd);
-		if cmd == "" or cmd == "main" or cmd == "mainlist" then
+		print(cmd)
+		local args = { strsplit(" ", string.lower(cmd)) };
+		cmd = args[1];
+		-- app.print(args)
+		-- first arg is always the window/command to execute
+		for k=2,#args do
+			-- maybe allow input of params with values?
+			app.SetCustomWindowParam(cmd, args[k], true);
+		end
+		if not cmd or cmd == "" or cmd == "main" or cmd == "mainlist" then
 			app.ToggleMainList();
 			return true;
 		elseif cmd == "bounty" then
@@ -20060,7 +20092,7 @@ SlashCmdList["AllTheThings"] = function(cmd)
 			app:GetWindow("Random"):Toggle();
 			return true;
 		elseif cmd == "quests" then
-			app:GetWindow("Quests"):Toggle();
+			app:GetWindow("quests"):Toggle();
 			return true;
 		elseif cmd == "wq" then
 			app:GetWindow("WorldQuests"):Toggle();
