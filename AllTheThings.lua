@@ -483,6 +483,11 @@ app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
 	local loader;
 	loader = {
 		__index = function(t, key)
+			-- load the object if it matches the load field and not yet loaded
+			if not o and key == loadField then
+				o = objFunc(unpack(params));
+			end
+
 			-- override for the object
 			local override = overrides and overrides[key];
 			if override ~= nil then
@@ -494,12 +499,6 @@ app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
 				end
 			-- existing object, then reference the respective key
 			elseif o then
-				return o[key];
-			end
-
-			-- load the object if it matches the load field
-			if key == loadField then
-				o = objFunc(unpack(params));
 				return o[key];
 			end
 		end,
