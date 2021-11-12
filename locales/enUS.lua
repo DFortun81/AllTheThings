@@ -531,7 +531,7 @@ app.L = {
 	["PROFILE_COPY"] = "Copy From";
 	["PROFILE_COPY_TOOLTIP"] = "Copy the Selected Profile into the Current Profile";
 	-- ["PROFILE_DELETE"] = "Delete";
-	["PROFILE_DELETE_TOOLTIP"] = "Delete a Profile from the set of available Profiles";
+	["PROFILE_DELETE_TOOLTIP"] = "Delete the Selected Profile";
 	["PROFILE_SWITCH_TOOLTIP"] = "Set the Selected Profile as the Current Profile";
 
 	-- About tab
