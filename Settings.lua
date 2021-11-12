@@ -184,6 +184,7 @@ local TooltipSettingsBase = {
 		["SummarizeThings"] = true,
 		["Warn:Difficulty"] = false,
 		["Warn:Removed"] = true,
+		["Updates:AdHoc"] = true,
 	},
 };
 
@@ -195,6 +196,7 @@ local OnClickForTab = function(self)
 	for i,tab in ipairs(parent.Tabs) do
 		if i == id then
 			for j,o in ipairs(tab.objects) do
+				-- print(":Show()",o.text or (o.GetText and o:GetText() or (o.Text and o.Text.GetText and o.Text:GetText())))
 				o:Show();
 			end
 		else
@@ -276,6 +278,9 @@ end
 -- Creates, assigns, and returns a RawSettings object for a given Profile Key
 settings.NewProfile = function(self, key)
 	if AllTheThingsProfiles then
+		-- cannot create existing profile name
+		if AllTheThingsProfiles.Profiles[key] then return; end
+
 		local raw = {
 			General = {},
 			Tooltips = {},
@@ -304,18 +309,19 @@ settings.CopyProfile = function(self, key, copyKey)
 end
 -- Removes a Profile
 settings.DeleteProfile = function(self, key)
-	if AllTheThingsProfiles then
+	if AllTheThingsProfiles and key and key ~= DEFAULT then
 		AllTheThingsProfiles.Profiles[key] = nil;
 		-- deleting the current character's profile, reassign to Default
 		if key == AllTheThingsProfiles.Assignments[app.GUID] then
 			AllTheThingsProfiles.Assignments[app.GUID] = nil;
 			settings.ApplyProfile();
 		end
+		return true;
 	end
 end
 -- Gets the Profile for the current character
 settings.GetProfile = function(self)
-	return AllTheThingsProfiles and AllTheThingsProfiles.Assignments[app.GUID] or "Default";
+	return AllTheThingsProfiles and AllTheThingsProfiles.Assignments[app.GUID] or DEFAULT;
 end
 -- Sets a Profile for the current character
 settings.SetProfile = function(self, key)
@@ -326,7 +332,7 @@ end
 -- Applies the profile for the current character as the base settings table
 settings.ApplyProfile = function()
 	if AllTheThingsProfiles then
-		local key = AllTheThingsProfiles.Assignments[app.GUID] or "Default";
+		local key = AllTheThingsProfiles.Assignments[app.GUID] or DEFAULT;
 		RawSettings = AllTheThingsProfiles.Profiles[key];
 		if not RawSettings then
 			RawSettings = settings:NewProfile(key);
@@ -603,6 +609,7 @@ end
 ---     changeFunc (Function): A custom function to be called, after selecting a dropdown option.
 -- Reference: https://medium.com/@JordanBenge/creating-a-wow-dropdown-menu-in-pure-lua-db7b2f9c0364
 settings.CreateDropdown = function(self, opts, OnRefresh)
+	error("DO NOT USE THIS METHOD");
 	local dropdown_name = self:GetName().."DD"..(opts.name or settings.UniqueCounter.CreateDropdown);
     local menu_items = opts.items or {};
     local title_text = opts.title or "";
@@ -748,6 +755,44 @@ Virtual EditBox SharedEditBoxTemplate
 Virtual EditBox StoreEditBoxTemplate
 	]]
 end
+settings.CreateButton = function(self, opts, functions)
+
+	local name = self:GetName().."B"..(opts.name or settings.UniqueCounter.CreateButton);
+	local text = opts.text;
+	local width = opts.width;
+	local tooltip = opts.tooltip;
+	local refs = opts.refs;
+	local template = opts.template or "OptionsButtonTemplate";
+
+	local f = CreateFrame("Button", name, self, template);
+	f:SetText(text);
+	if width then
+		f:SetWidth(width);
+	else
+		f:SetWidth(f:GetFontString():GetUnboundedStringWidth() + 20);
+	end
+	f:SetHeight(26);
+	f:RegisterForClicks("AnyUp");
+
+	if functions then
+		for k,func in pairs(functions) do
+			f:SetScript(k, func);
+		end
+	end
+
+	if refs then
+		for k,ref in pairs(refs) do
+			f[k] = ref;
+		end
+	end
+
+	if tooltip then
+		f:SetATTTooltip(tooltip);
+	end
+
+	if self.MostRecentTab then table.insert(self.MostRecentTab.objects, f); end
+	return f;
+end
 -- Small library for building a scrolling frame with minimal setup
 (function()
 local scrollWidth = 16;
@@ -763,6 +808,11 @@ end
 local function CreateCheckBox(self, text, OnRefresh, OnClick)
 	local box = settings:CreateCheckBox(text, OnRefresh, OnClick);
 	box:SetParent(self);
+	if not self.ATT then self.ATT = { CB = { }, CB_Count = 0 }; end
+	if not self.ATT.CB then self.ATT.CB = {}; self.ATT.CB_Count = 0; end
+	local count = self.ATT.CB_Count + 1;
+	self.ATT.CB[count] = box;
+	self.ATT.CB_Count = count;
 	return box;
 end
 local function AddScrollbar(scrollFrame)
@@ -3045,7 +3095,7 @@ local TooltipModifierNoneCheckBox = settings:CreateCheckBox(L["TOOLTIP_MOD_NONE"
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Enabled:Mod") == "None");
 	if not settings:GetTooltipSetting("Enabled") then
-		self:Disable();
+		app.Callback(self.Disable, self);
 		self:SetAlpha(0.2);
 	else
 		self:SetAlpha(1);
@@ -3053,7 +3103,7 @@ function(self)
 		if not self:GetChecked() then
 			self:Enable();
 		else
-			self:Disable();
+			app.Callback(self.Disable, self);
 		end
 	end
 end,
@@ -3069,7 +3119,7 @@ local TooltipModifierShiftCheckBox = settings:CreateCheckBox(L["TOOLTIP_MOD_SHIF
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Enabled:Mod") == "Shift");
 	if not settings:GetTooltipSetting("Enabled") then
-		self:Disable();
+		app.Callback(self.Disable, self);
 		self:SetAlpha(0.2);
 	else
 		self:SetAlpha(1);
@@ -3077,7 +3127,7 @@ function(self)
 		if not self:GetChecked() then
 			self:Enable();
 		else
-			self:Disable();
+			app.Callback(self.Disable, self);
 		end
 	end
 end,
@@ -3093,7 +3143,7 @@ local TooltipModifierCtrlCheckBox = settings:CreateCheckBox(L["TOOLTIP_MOD_CTRL"
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Enabled:Mod") == "Ctrl");
 	if not settings:GetTooltipSetting("Enabled") then
-		self:Disable();
+		app.Callback(self.Disable, self);
 		self:SetAlpha(0.2);
 	else
 		self:SetAlpha(1);
@@ -3101,7 +3151,7 @@ function(self)
 		if not self:GetChecked() then
 			self:Enable();
 		else
-			self:Disable();
+			app.Callback(self.Disable, self);
 		end
 	end
 end,
@@ -3117,7 +3167,7 @@ local TooltipModifierAltCheckBox = settings:CreateCheckBox(L["TOOLTIP_MOD_ALT"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Enabled:Mod") == "Alt");
 	if not settings:GetTooltipSetting("Enabled") then
-		self:Disable();
+		app.Callback(self.Disable, self);
 		self:SetAlpha(0.2);
 	else
 		self:SetAlpha(1);
@@ -3125,7 +3175,7 @@ function(self)
 		if not self:GetChecked() then
 			self:Enable();
 		else
-			self:Disable();
+			app.Callback(self.Disable, self);
 		end
 	end
 end,
@@ -4019,78 +4069,201 @@ ProfilesLabel:SetText(L["PROFILES_TAB"]..L["_BETA_LABEL"]);
 ProfilesLabel:Show();
 table.insert(settings.MostRecentTab.objects, ProfilesLabel);
 
+local CurrentProfileLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+CurrentProfileLabel:SetPoint("TOPLEFT", ProfilesLabel, "BOTTOMLEFT", 0, -4);
+CurrentProfileLabel:SetJustifyH("LEFT");
+CurrentProfileLabel:SetText(L["PROFILE_CURRENT"]..":");
+CurrentProfileLabel:Show();
+table.insert(settings.MostRecentTab.objects, CurrentProfileLabel);
+
+local CurrentProfileNameLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+CurrentProfileNameLabel:SetPoint("TOPLEFT", CurrentProfileLabel, "TOPRIGHT", 5, 0);
+CurrentProfileNameLabel:SetJustifyH("LEFT");
+CurrentProfileNameLabel:SetTextColor(1, 1, 1, 1);
+table.insert(settings.MostRecentTab.objects, CurrentProfileNameLabel);
+
 -- New Profile Textbox + Label
-local NewProfileTextBox = settings:CreateTextbox({
+local NewProfileTextBox = settings:CreateTextbox(
+-- textbox settings
+{
 	title = L["PROFILE_NEW"],
 	width = 200,
+},
+-- function hooks for the textbox
+{
+	["OnRefresh"] = function(self)
+		self:SetText("");
+	end,
 });
-NewProfileTextBox:SetPoint("TOPLEFT", ProfilesLabel, "BOTTOMLEFT", 5, -20);
+NewProfileTextBox:SetPoint("TOPLEFT", CurrentProfileLabel, "BOTTOMLEFT", 5, -20);
 NewProfileTextBox:SetATTTooltip(L["PROFILE_NEW_TOOLTIP"]);
 NewProfileTextBox:Show();
 
-local settingProfileItems = {};
-if AllTheThingsProfiles then
-	for k,v in pairs(AllTheThingsProfiles.Profiles) do
-		tinsert(settingProfileItems, k);
-	end
-else
-	tinsert(settingProfileItems, "Default");
-end
-local settingProfileChange = function(dropdown, changedValue)
-	-- print("Dropdown Value Changed", tostring(dropdown), tostring(changedValue));
-	settings:SetProfile(changedValue);
-	settings:ApplyProfile();
-end
-
--- Selected Profile Dropdown + Label
--- local SelectedProfile = settings:CreateDropdown(
--- {
--- 	items = settingProfileItems,
--- 	title = L["PROFILE_CURRENT"],
--- 	defaultVal = "Default",
--- 	changeFunc = settingProfileChange,
--- },
--- -- OnRefresh
--- function(self)
--- 	-- print("set dropdown name",settings:GetProfile())
--- 	UIDropDownMenu_SetSelectedName(self, settings:GetProfile());
--- end
--- );
--- SelectedProfile:SetPoint("TOPLEFT", NewProfileTextBox, "BOTTOMLEFT", 5, -20);
--- SelectedProfile:SetATTTooltip(L["PROFILE_CURRENT_TOOLTIP"]);
--- SelectedProfile:Show();
-
+-- Profiles selector scrollbox
 local ProfileSelector = settings:CreateScrollFrame();
 local ProfileScroller = ProfileSelector.ScrollContainer;
 ProfileScroller:SetPoint("TOPLEFT", NewProfileTextBox, "BOTTOMLEFT", 0, -20);
-ProfileScroller:SetPoint("RIGHT", NewProfileTextBox, "RIGHT", 100, 0);
+ProfileScroller:SetPoint("RIGHT", NewProfileTextBox, "RIGHT", 25, 0);
 ProfileScroller:SetPoint("BOTTOM", settings, "BOTTOM", 0, 20);
 settings.ApplyBackdropColor(ProfileScroller, 20, 20, 20, 1);
-
 ProfileSelector:SetHeight(100);
-ProfileSelector:SetMaxScroll(50); 	-- # of profiles?
 
-local box1 = ProfileSelector:CreateCheckBox("test1",
-function(self)
-	self:Enable();
-	self:SetAlpha(1);
-end,
-function(self)
+local refreshProfiles;
+refreshProfiles = function()
+	local mostRecentTab = settings.MostRecentTab;
+	-- make sure to use the correct tab when adding the UI elements
+	settings.MostRecentTab = tab;
 
-end);
-box1:SetPoint("TOPLEFT", ProfileSelector, "TOPLEFT", 5, -5);
-box1:SetATTTooltip("test box1");
-local box2 = ProfileSelector:CreateCheckBox("test2",
-function(self)
-	self:Enable();
-	self:SetAlpha(1);
-end,
-function(self)
+	-- update the current profile label
+	CurrentProfileNameLabel:SetText(settings:GetProfile());
+	CurrentProfileNameLabel:Show();
 
-end);
-box2:SetPoint("TOPLEFT", box1, "BOTTOMLEFT", 0, 0);
-box2:SetATTTooltip("test box2");
+	-- print("refresh profiles scrollbox")
+	local settingProfileItems = {};
+	if AllTheThingsProfiles then
+		for k,v in pairs(AllTheThingsProfiles.Profiles) do
+			-- print("added",k)
+			tinsert(settingProfileItems, k);
+		end
+	else
+		tinsert(settingProfileItems, DEFAULT);
+	end
+	-- sort the profiles
+	app.insertionSort(settingProfileItems, function(a,b) return string.lower(a) < string.lower(b); end);
 
+	local profileCount, existingBoxes, lastProfileSelect = 0, ProfileSelector.ATT and ProfileSelector.ATT.CB_Count or 0;
+	local maxProfileNameWidth = ProfileSelector:GetWidth() - 50;
+
+	-- create checkboxes for the profiles in the scrollframe
+	for _,profile in ipairs(settingProfileItems) do
+		local profileBox;
+		profileCount = profileCount + 1;
+		if existingBoxes >= profileCount then
+			-- print("replace-profileCB",profileCount,profile)
+			profileBox = ProfileSelector.ATT.CB[profileCount];
+			profileBox.Text:SetText(profile);
+		else
+			-- print("new-profileCB",profileCount,profile)
+			profileBox = ProfileSelector:CreateCheckBox(profile,
+				function(self)
+					-- print("CB.OnRefresh",self.Text:GetText())
+					local myProfile = self.Text:GetText();
+					if settings:GetProfile() == myProfile then
+						self:SetAlpha(0.5);
+						self:SetChecked(true);
+						app.Callback(self.Disable, self);
+					elseif tab.SelectedProfile == myProfile then
+						self:SetAlpha(1);
+						self:Enable();
+						self:SetChecked(true);
+					else
+						self:SetAlpha(1);
+						self:Enable();
+						self:SetChecked(false);
+					end
+				end,
+				function(self)
+					-- logic when the respective profile checkbox is selected
+					-- holding shift will switch profiles instead of selecting one
+					local profile = self.Text:GetText();
+					if IsShiftKeyDown() then
+						if settings:GetProfile() ~= profile then
+							if tab.SelectedProfile == profile then
+								tab.SelectedProfile = nil;
+							end
+							settings:SetProfile(profile);
+							settings:ApplyProfile();
+							settings:UpdateMode(1);
+						end
+					else
+						tab.SelectedProfile = profile;
+					end
+					refreshProfiles();
+				end);
+			if lastProfileSelect then
+				profileBox:SetPoint("TOPLEFT", lastProfileSelect, "BOTTOMLEFT", 0, 4);
+			else
+				profileBox:SetPoint("TOPLEFT", ProfileSelector, "TOPLEFT", 5, -5);
+			end
+		end
+		profileBox.Text:SetWidth(math.min(maxProfileNameWidth, math.ceil(profileBox.Text:GetUnboundedStringWidth())));
+		profileBox:SetHitRectInsets(0,0 - profileBox.Text:GetWidth(),0,0);
+		profileBox:SetATTTooltip(profile);
+		profileBox:OnRefresh();
+		profileBox:Show();
+		lastProfileSelect = profileBox;
+	end
+
+	-- hide extra checkboxes if they've been deleted during this game session
+	if existingBoxes > profileCount then
+		-- print("removing extra checkboxes",profileCount,existingBoxes)
+		for i=profileCount + 1,existingBoxes do
+			ProfileSelector.ATT.CB[i]:Hide();
+		end
+	end
+
+	ProfileSelector:SetMaxScroll(profileCount * 6);
+	-- profiles will be refreshed when needed
+	ProfileSelector.OnRefresh = nil;
+	-- make sure to switch back to the previous tab once done
+	settings.MostRecentTab = mostRecentTab;
+end
+ProfileSelector.OnRefresh = refreshProfiles;
+
+-- Create Button
+local CreateProfileButton = settings:CreateButton(
+-- button settings
+{
+	text = CREATE_COMPACT_UNIT_FRAME_PROFILE,
+	tooltip = CREATE_NEW_COMPACT_UNIT_FRAME_PROFILE,
+	refs = { ATTActionObject = NewProfileTextBox },
+},
+-- function hooks for the button
+{
+	["OnClick"] = function(self)
+		if self.ATTActionObject and self.ATTActionObject.GetText then
+			local newProfile = self.ATTActionObject:GetText();
+			if newProfile and newProfile ~= "" then
+				if settings:NewProfile(newProfile) then
+					settings:SetProfile(newProfile);
+					settings:ApplyProfile();
+					settings:UpdateMode(1);
+					refreshProfiles();
+					return true;
+				end
+				-- TODO dialog about existing profile
+				-- app:ShowPopupDialog("Profile already exists!", function() end);
+			end
+		end
+	end,
+});
+CreateProfileButton:SetPoint("TOPLEFT", NewProfileTextBox, "TOPRIGHT", 5, 4);
+CreateProfileButton:Show();
+
+-- Delete Button
+local DeleteProfileButton = settings:CreateButton(
+-- button settings
+{
+	text = DELETE,
+	tooltip = L["PROFILE_DELETE_TOOLTIP"],
+},
+-- function hooks for the button
+{
+	["OnClick"] = function(self)
+		local profile = tab.SelectedProfile;
+		if profile then
+			if settings:DeleteProfile(profile) then
+				settings:UpdateMode(1);
+				refreshProfiles();
+				return true;
+			end
+			-- TODO dialog about not deleting a profile
+			-- app:ShowPopupDialog("Profile cannot be deleted!", function() end);
+		end
+	end,
+});
+DeleteProfileButton:SetPoint("BOTTOMLEFT", ProfileScroller, "BOTTOMRIGHT", 5, 0);
+DeleteProfileButton:Show();
 
 -- local TooltipModifierShiftCheckBox = settings:CreateCheckBox(L["TOOLTIP_MOD_SHIFT"],
 -- function(self)
