@@ -13092,6 +13092,8 @@ end
 local function SetVisible(self, show, forceUpdate)
 	if show then
 		self:Show();
+		-- apply window position from profile
+		app.Settings.SetWindowFromProfile(self.Suffix);
 		self:Update(forceUpdate);
 	else
 		self:Hide();
@@ -13850,7 +13852,7 @@ local function StartMovingOrSizing(self, fromChild)
 	end
 end
 app.StoreWindowPosition = function(self)
-	if self.lockPersistable and AllTheThingsProfiles then
+	if (self.isLocked or self.lockPersistable) and AllTheThingsProfiles then
 		local key = app.Settings:GetProfile();
 		local profile = AllTheThingsProfiles.Profiles[key];
 		if not profile.Windows then profile.Windows = {}; end
@@ -13859,7 +13861,7 @@ app.StoreWindowPosition = function(self)
 		profile.Windows[self.Suffix or self.suffix] = points;
 		for i=1,self:GetNumPoints() do
 			local point, _, refPoint, x, y = self:GetPoint(i);
-			points[i] = { point = point, refPoint = refPoint, x = math.floor(x), y = math.floor(y) };
+			points[i] = { Point = point, PointRef = refPoint, X = math.floor(x), Y = math.floor(y) };
 		end
 		points.Width = math.floor(self:GetWidth());
 		points.Height = math.floor(self:GetHeight());
@@ -15089,13 +15091,6 @@ function app:GetWindow(suffix, parent, onUpdate)
 		window.Update = onUpdate or app:CustomWindowUpdate(suffix) or UpdateWindow;
 		window.SetVisible = SetVisible;
 		window.StorePosition = app.StoreWindowPosition;
-		if AllTheThingsSettings then
-			if suffix == "Prime" then
-				window:SetScale(app.Settings:GetTooltipSetting("MainListScale"));
-			else
-				window:SetScale(app.Settings:GetTooltipSetting("MiniListScale"));
-			end
-		end
 
 		window:SetScript("OnMouseWheel", OnScrollBarMouseWheel);
 		window:SetScript("OnMouseDown", StartMovingOrSizing);
@@ -15132,7 +15127,15 @@ function app:GetWindow(suffix, parent, onUpdate)
 			window.lockPersistable = true;
 		end
 
-		window:StorePosition();
+		-- apply scaling from settings
+		if AllTheThingsSettings then
+			if suffix == "Prime" then
+				window:SetScale(app.Settings:GetTooltipSetting("MainListScale"));
+			else
+				window:SetScale(app.Settings:GetTooltipSetting("MiniListScale"));
+			end
+		end
+
 		window:Hide();
 
 		-- The Close Button. It's assigned as a local variable so you can change how it behaves.

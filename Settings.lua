@@ -254,11 +254,6 @@ settings.Initialize = function(self)
 	OnClickForTab(self.Tabs[1]);
 	self:UpdateMode();
 
-	-- TODO: apply Window positions from the Profile
-	-- if RawSettings.Windows then
-
-	-- end
-
 	if self:GetTooltipSetting("Auto:MainList") then
 		app:GetWindow("Prime"):Show();
 	end
@@ -330,22 +325,55 @@ settings.GetProfile = function(self)
 end
 -- Sets a Profile for the current character
 settings.SetProfile = function(self, key)
-	if AllTheThingsProfiles then
+	if AllTheThingsProfiles and key then
+		-- don't assign Default... it's Default...
+		if key == DEFAULT then key = nil; end
 		AllTheThingsProfiles.Assignments[app.GUID] = key;
 	end
 end
 -- Applies the profile for the current character as the base settings table
 settings.ApplyProfile = function()
 	if AllTheThingsProfiles then
-		local key = AllTheThingsProfiles.Assignments[app.GUID] or DEFAULT;
+		local key = settings:GetProfile();
 		RawSettings = AllTheThingsProfiles.Profiles[key];
 		if not RawSettings then
 			RawSettings = settings:NewProfile(key);
 		end
 		setmetatable(RawSettings.General, GeneralSettingsBase);
 		setmetatable(RawSettings.Tooltips, TooltipSettingsBase);
+
+		-- apply window positions when applying a Profile
+		if RawSettings.Windows then
+			for suffix,_ in pairs(RawSettings.Windows) do
+				settings.SetWindowFromProfile(suffix);
+			end
+		end
+
 		app.print(L["PROFILE"]..":",key);
 		return true;
+	end
+end
+-- Allows moving an ATT window based on the position stored in the current Profile
+-- This would be used when creating a Window initially during a game session
+settings.SetWindowFromProfile = function(suffix)
+	local points = RawSettings and RawSettings.Windows and RawSettings.Windows[suffix];
+	local window = app.Windows[suffix];
+	if window and points then
+		window:ClearAllPoints();
+		for _,point in ipairs(points) do
+			if point.Point then
+				window:SetPoint(point.Point, UIParent, point.PointRef, point.X, point.Y);
+				-- print("SetPoint",suffix,point.Point, point.PointRef, point.X, point.Y)
+			end
+		end
+		if points.Width then
+			window:SetWidth(points.Width);
+			-- print("SetWidth",suffix,points.Width)
+		end
+		if points.Height then
+			window:SetHeight(points.Height);
+			-- print("SetHeight",suffix,points.Height)
+		end
 	end
 end
 settings.Get = function(self, setting, container)

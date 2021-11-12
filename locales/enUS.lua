@@ -528,7 +528,7 @@ app.L = {
 	["PROFILE_NEW_TOOLTIP"] = "Create a blank Profile to be used by the current Character";
 	["PROFILE_COPY_TOOLTIP"] = "Copy the Selected Profile into the Current Profile";
 	["PROFILE_DELETE_TOOLTIP"] = "Delete the Selected Profile";
-	["PROFILE_SWITCH_TOOLTIP"] = "Set the Selected Profile as the Current Profile";
+	["PROFILE_SWITCH_TOOLTIP"] = "Set the Selected Profile as the Current Profile\n\nA Profile can also be Shift-Clicked to Switch to it";
 
 	-- About tab
 	["ABOUT"] = "About";
