@@ -4077,7 +4077,7 @@ table.insert(settings.MostRecentTab.objects, ProfilesLabel);
 local CurrentProfileLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
 CurrentProfileLabel:SetPoint("TOPLEFT", ProfilesLabel, "BOTTOMLEFT", 0, -4);
 CurrentProfileLabel:SetJustifyH("LEFT");
-CurrentProfileLabel:SetText(L["PROFILE_CURRENT"]..":");
+CurrentProfileLabel:SetText(REFORGE_CURRENT..":");
 CurrentProfileLabel:Show();
 table.insert(settings.MostRecentTab.objects, CurrentProfileLabel);
 
@@ -4092,7 +4092,7 @@ table.insert(settings.MostRecentTab.objects, CurrentProfileNameLabel);
 local NewProfileTextBox = settings:CreateTextbox(
 -- textbox settings
 {
-	title = L["PROFILE_NEW"],
+	title = NEW_COMPACT_UNIT_FRAME_PROFILE,
 	width = 200,
 },
 -- function hooks for the textbox
