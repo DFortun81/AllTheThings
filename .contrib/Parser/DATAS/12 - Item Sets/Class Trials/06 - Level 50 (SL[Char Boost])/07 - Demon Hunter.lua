@@ -5,7 +5,7 @@
 _.GearSets =
 {
 	n(CLASS_TRIAL, {
-		n(LEVEL_FIFTY, bubbleDown({["u"] = BLIZZARD_BALANCE}, {
+		n(LEVEL_FIFTY_BOOST, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 			cl(DEMONHUNTER, {
 				i(170941),	-- Illidari Warglaives
 				i(170929),	-- Illidari Blindfold

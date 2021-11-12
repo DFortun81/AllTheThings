@@ -949,12 +949,15 @@ app.L = {
 		[-145] = select(6, EJ_GetInstanceInfo(476)),										-- Skyreach
 		[-146] = select(6, EJ_GetInstanceInfo(556)),										-- The Everbloom
 		[-147] = select(6, EJ_GetInstanceInfo(559)),										-- Upper Blackrock Spire
+	-- Class Trial
+		[-148] = 236566,																	-- Level 50 (Trial)
 	-- Garrison
 		[-152] = "Interface\\Icons\\achievement_zone_draenor_01",							-- Garrison Campaign
 		[-153] = 1103070,																	-- Work Orders
 	-- Class Trial
-		[-155] = "Interface\\Icons\\ability_bossmagistrix_timewarp1",						-- Level 48 (old level 110)																	-- Level 48 (old Level 110)
-		[-155] = 236566,																	-- Level 50 (old Level 120)
+		[-154] = "Interface\\Icons\\ability_bossmagistrix_timewarp1",						-- Level 48 (old level 110)
+		[-155] = 236566,																	-- Level 50 (old Level 120)(Boost)
+		[-156] = 236567,																	-- Level 60
 	-- Druid Feral Druid Hidden Artifact Appearance
 		[-157] = "Interface\\Icons\\achievement_zone_hinterlands_01",						-- The Hinterlands Activated
 		[-158] = "Interface\\Icons\\achievement_zone_feralas",								-- Feralas Activated
@@ -1661,12 +1664,15 @@ app.L = {
 		[-145] = select(2, GetAchievementInfo(8843)),							-- Skyreach
 		[-146] = select(2, GetAchievementInfo(9044)),							-- The Everbloom
 		[-147] = select(2, GetAchievementInfo(9042)),							-- Upper Blackrock Spire
+	-- Class Trial
+		[-148] = string.format(SPELLBOOK_AVAILABLE_AT, 50),						-- Level 50 (Trial)
 	-- Garrison
 		[-152] = "Garrison Campaign",											-- Garrison Campaign
 		[-153] = CAPACITANCE_WORK_ORDERS,										-- Work Orders
 	-- Class Trial
 		[-154] = string.format(SPELLBOOK_AVAILABLE_AT, 48),						-- Level 48 (old level 110)
-		[-155] = string.format(SPELLBOOK_AVAILABLE_AT, 50),						-- Level 50 (old Level 120)
+		[-155] = string.format(SPELLBOOK_AVAILABLE_AT, 50),						-- Level 50 (old Level 120)(Boost)
+		[-156] = string.format(SPELLBOOK_AVAILABLE_AT, 60),						-- Level 60
 	-- Druid Feral Druid Hidden Artifact Appearance
 		[-157] = DUNGEON_FLOOR_NIGHTMARERAID7.." "..GetSpellInfo(78741),		-- The Hinterlands Activated
 		[-158] = DUNGEON_FLOOR_NIGHTMARERAID9.." "..GetSpellInfo(78741),		-- Feralas Activated

@@ -5,7 +5,7 @@
 _.GearSets =
 {
 	n(CLASS_TRIAL, {
-		n(LEVEL_FIFTY, bubbleDown({["u"] = BLIZZARD_BALANCE}, {
+		n(LEVEL_FIFTY_BOOST, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 			cl(MAGE, {
 				i(170646),	-- Mountainsage Staff	*LA0207
 				i(170809),	-- Mountainsage Hood	*LA0207

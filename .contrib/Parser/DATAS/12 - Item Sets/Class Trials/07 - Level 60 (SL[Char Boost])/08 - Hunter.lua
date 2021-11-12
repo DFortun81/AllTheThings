@@ -5,7 +5,7 @@
 _.GearSets =
 {
 	n(CLASS_TRIAL, {
-		n(LEVEL_FIFTY, bubbleDown({["u"] = BLIZZARD_BALANCE}, {
+		n(LEVEL_SIXTY, bubbleDown({["u"] = BLIZZARD_BALANCE}, {
 			cl(HUNTER, {
 				i(171988, {	-- Adventurer's Footlocker
 					i(170638),	-- Trailseeker Shotgun
@@ -28,33 +28,3 @@ _.GearSets =
 		})),
 	}),
 };
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(BFA_HEADER, {
-		n(CLASS_TRIAL, {
-			cl(HUNTER, {
-				-- added 8.2.5/Confirmed
-				i(170633),	-- Trailseeker Choker
-			}),
-		}),
-	}),
-	n(SL_HEADER, {
-		n(CLASS_TRIAL, {
-			cl(HUNTER, {
-				-- added 9.0.1/No Info
-				i(177466),	-- Trailseeker Greaves
-				i(177467),	-- Trailseeker Gauntlets
-				i(177469),	-- Trailseeker Legguards
-				i(177471),	-- Trailseeker Belt
-				i(177472),	-- Trailseeker Bracers
-				i(177329),	-- Trailseeker Band of Onslaught
-				i(177330),	-- Trailseeker Ring of Onslaught
-				i(177333),	-- Trailseeker Spear
-				i(177328),	-- Trailseeker Idol of Rage
-				i(177331),	-- Trailseeker Stone of Rage
-				i(177326),	-- Trailseeker Cloak of Rage
-				i(177327),	-- Trailseeker Choker
-				i(177332),	-- Trailseeker Shotgun
-			}),
-		}),
-	}),
-});
