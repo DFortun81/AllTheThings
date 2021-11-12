@@ -6,10 +6,6 @@ _.Zones = {
 	m(KALIMDOR, {
 		m(NORTHERN_BARRENS, {	-- NOTE:: using this map for legacy barrens quests since they reused the mapID
 			n(QUESTS, {
-				q(6626, {	-- A Host of Evil
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 12866 },	-- Myriam Moonsinger
-				}),
 				q(879,   {	-- Betrayal from Within
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,

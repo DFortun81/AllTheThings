@@ -69,28 +69,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(6521,  {	-- An Unholy Alliance
-					["provider"] = { "n", 36273 },	-- Bragor Bloodfist
-					["coord"] = { 56.1, 92.1, UNDERCITY },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(17042)),	-- Nail Splitter
-						un(REMOVED_FROM_GAME, i(17039)),	-- Skullbreaker
-						un(REMOVED_FROM_GAME, i(17043)),	-- Zealot's Robe
-					},
-				}),
-				q(14353, {	-- An Unholy Alliance
-					["sourceQuests"] = { 14352 },	-- An Unholy Alliance
-					["provider"] = { "n", 36273 },	-- Bragor Bloodfist
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(17039)),	-- Skullbreaker
-						un(REMOVED_FROM_GAME, i(17042)),	-- Nail Spitter
-						un(REMOVED_FROM_GAME, i(17043)),	-- Zealot's Robe
-					},
-				}),
 				q(3784,  {	-- Assisting Arch Druid Runetotem
 					["provider"] = { "n", 6741 },	-- Innkeeper Norman
 					["u"] = REMOVED_FROM_GAME,

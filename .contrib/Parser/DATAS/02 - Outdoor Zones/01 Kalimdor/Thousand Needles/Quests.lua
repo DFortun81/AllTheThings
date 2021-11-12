@@ -585,11 +585,6 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4630 },	-- Pozzik
 				}),
-				q(27062, {	-- Looming Threat
-					["provider"] = { "n", 39895 },	-- Kanati Greycloud
-					["coord"] = { 11.1, 11.2, THOUSAND_NEEDLES },
-					["races"] = HORDE_ONLY,
-				}),
 				q(1106,  {	-- Martek the Exiled
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4454 },	-- Fizzle Brassbolts
