@@ -223,6 +223,7 @@ local function Callback(method, ...)
 		C_Timer.After(0, newCallback);
 	end
 end
+app.Callback = Callback;
 -- Triggers a timer callback method to run after the provided number of seconds with the provided params; the method can only be set to run once per delay
 local function DelayedCallback(method, delaySec, ...)
 	if not app.__callbacks then
@@ -317,7 +318,7 @@ local containsValue = function(dict, value)
 	end
 end
 local defaultComparison = function(a,b)
-	return a > b;
+	return a < b;
 end
 local function insertionSort(t, compare, nested)
 	if t then
@@ -337,6 +338,7 @@ local function insertionSort(t, compare, nested)
 		end
 	end
 end
+app.insertionSort = insertionSort;
 local sortByNameSafely = function(a, b)
 	if a and a.name then
 		if b and b.name then
@@ -19157,7 +19159,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 							_cache = SearchForField(idType, itemID);
 							if _cache then
 								for _,data in ipairs(_cache) do
-									-- copy any soruced data for the dungeon reward into the list
+									-- copy any sourced data for the dungeon reward into the list
 									if GroupMatchesParams(data, idType, itemID, true) then
 										MergeProperties(thing, data);
 									end
