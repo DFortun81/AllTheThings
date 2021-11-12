@@ -352,7 +352,12 @@ root("Instances", tier(CLASSIC_TIER, {
 			e(481, {	-- Mutanus the Devourer
 				["creatureID"] = 3654,
 				["groups"] = {
-					ach(630),	-- Wailing Caverns
+					removeclassicphase(ach(630, {	-- Wailing Caverns
+						-- #if BEFORE 3.0.1
+						["sourceQuest"] = 6981,	-- The Glowing Shard
+						["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(6981)); end]],
+						-- #endif
+					})),
 					i(10441),	-- Glowing Shard
 					i(6461),	-- Slime-Encrusted Pads
 					i(6627),	-- Mutant Breastplate

@@ -171,6 +171,7 @@ _.WorldDrops =
 				i(15746),	-- Pattern: Chimeric Leggings
 				i(15755),	-- Pattern: Chimeric Vest
 				i(8384),	-- Pattern: Comfortable Leather Hat
+				i(7360),	-- Pattern: Dark Leather Gloves
 				i(4296),	-- Pattern: Dark Leather Shoulders
 				i(2409),	-- Pattern: Dark Leather Tunic
 				i(7452),	-- Pattern: Dusky Boots

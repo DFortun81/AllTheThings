@@ -270,12 +270,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 						6230,	-- Peacekeeper Security Suit
 					},
 				}),
-				i(7360, {	-- Pattern: Dark Leather Gloves
-					["crs"] = {
-						7603,	-- Leprous Assistant
-						6230,	-- Peacekeeper Security Suit
-					},
-				}),
 				i(9509, {	-- Petrolspill Leggings
 					["crs"] = {
 						6232,	-- Arcane Nullifier X-21
