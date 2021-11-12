@@ -467,40 +467,32 @@ _.Zones =
 					["lvl"] = lvlsquish(20, 8, 20),
 				}),
 				-- #endif
-				q(5726,  {	-- Hidden Enemies
-					["provider"] = { "n", 4949 },	-- Thrall
+				q(5726, {	-- Hidden Enemies (1/5)
+					["qg"] = 4949,	-- Thrall <Warchief>
+					["coord"] = { 32.0, 37.8, ORGRIMMAR },
+					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
+					["lvl"] = 9,
+					["groups"] = {
+						objective(1, {	-- 0/1 Lieutenant's Insignia
+							["provider"] = { "i", 14544 },	-- Lieutenant's Insignia
+						}),
+					},
 				}),
-				q(5727,  {	-- Hidden Enemies
-					["sourceQuests"] = { 5726 },	-- Hidden Enemies
-					["provider"] = { "n", 4949 },	-- Thrall
+				q(5727, {	-- Hidden Enemies (2/5)
+					["qg"] = 4949,	-- Thrall <Warchief>
+					["sourceQuest"] = 5726,	-- Hidden Enemies (1/5)
+					["coord"] = { 32.0, 37.8, ORGRIMMAR },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(5728,  {	-- Hidden Enemies
-					["sourceQuests"] = { 5727 },	-- Hidden Enemies
-					["provider"] = { "n", 4949 },	-- Thrall
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(5729,  {	-- Hidden Enemies
-					["sourceQuests"] = { 5728 },	-- Hidden Enemies
-					["provider"] = { "n", 4949 },	-- Thrall
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(5730,  {	-- Hidden Enemies
-					["sourceQuests"] = { 5729 },	-- Hidden Enemies
-					["provider"] = { "n", 3216 },	-- Neeru Fireblade
-					["coord"] = { 50.0, 60.0, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(15424)),	-- Axe of Orgrimmar
-						un(REMOVED_FROM_GAME, i(15445)),	-- Hammer of Orgrimmar
-						un(REMOVED_FROM_GAME, i(15443)),	-- Kris of Orgrimmar
-						un(REMOVED_FROM_GAME, i(15444)),	-- Staff of Ogrimmar
+					["lvl"] = 9,
+					["groups"] = {
+						objective(1, {	-- 0/1 Gauge Neeru Fireblade's reaction to you being a member of the Burning Blade
+							["provider"] = { "i", 14544 },	-- Lieutenant's Insignia
+							["coord"] = { 49.5, 50.6, ORGRIMMAR },
+							["cr"] = 3216,	-- Neeru Fireblade
+						}),
 					},
 				}),
 				q(60359, {	-- Home Is Where the Hearth Is
@@ -1464,11 +1456,6 @@ _.Zones =
 						i(65643),	-- Mask of the Speaker
 						i(65630),	-- Headcover of the Speaker
 					},
-				}),
-				q(5761,  {	-- Slaying the Beast
-					["provider"] = { "n", 3216 },	-- Neeru Fireblade
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1823,  {	-- Speak with Ruga
 					["provider"] = { "n", 3354 },	-- Sorek

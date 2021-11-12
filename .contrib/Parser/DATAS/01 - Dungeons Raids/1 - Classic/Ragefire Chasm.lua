@@ -1,55 +1,191 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-_.Instances = { tier(CLASSIC_TIER, {
+root("Instances", tier(CLASSIC_TIER, {
 	inst(226, {	-- Ragefire Chasm
-		["lvl"] = 10,
-		["mapID"] = 213,
+		-- #if BEFORE MOP
+		["lore"] = "Ragefire Chasm consists of a network of volcanic caverns that lie below the orcs' new capital city of Orgrimmar. Recently, rumors have spread that a cult loyal to the demonic Shadow Council has taken up residence within the Chasm's fiery depths. This cult, known as the Burning Blade, threatens the very sovereignty of Durotar. Many believe that the orc Warchief, Thrall, is aware of the Blade's existence and has chosen not to destroy it in the hopes that its members might lead him straight to the Shadow Council. Either way, the dark powers emanating from Ragefire Chasm could undo all that the orcs have fought to attain",
+		-- #endif
+		-- #if AFTER CATA
 		["coord"] = { 52.52, 57.83, 86 },	-- Ragefire Chasm, Orgrimmar [Cleft of Shadow]
-		["g"] = {
+		-- #else
+		["coord"] = { 50.6, 51.6, ORGRIMMAR },
+		-- #endif
+		["mapID"] = RAGEFIRE_CHASM,
+		["lvl"] = lvlsquish(13, 10, 13),
+		["groups"] = {
 			n(QUESTS, {
 				q(30998, {	-- A New Enemy
-					["provider"] = { "n", 61823 },	-- High Sorceress Aryna
+					["qg"] = 61823,	-- High Sorceress Aryna
+					["timeline"] = { "added 5.0.1.15589" },
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(30969, {	-- A New Enemy
-					["provider"] = { "n", 61716 },	-- Invoker Xorenth
-					["races"] = HORDE_ONLY,
-				}),
-				q(26862, {	-- Elemental Tampering
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 44216 },	-- Bovaal Whitehorn
-					["races"] = HORDE_ONLY,
-				}),
-				q(30995, {	-- No Man Left Behind
-					["provider"] = { "n", 61822 },	-- SI:7 Field Commander Dirken
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(30984, {	-- No Orc Left Behind
-					["provider"] = { "n", 61823 },	-- Commander Bagran
-					["races"] = HORDE_ONLY,
-				}),
-				q(26856, {	-- Repel the Invasion
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 44217 },	-- Stone Guard Kurjack
-					["races"] = HORDE_ONLY,
-				}),
-				q(5724, {	-- Returning the Lost Satchel
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(15452)),	-- Featherbead Bracers
-						un(REMOVED_FROM_GAME, i(15453)),	-- Savannah Bracers
+					["lvl"] = lvlsquish(15, 7, 15),
+					["groups"] = {
+						objective(1, {	-- 0/5 Corrupted Insignia
+							["provider"] = { "i", 82605 },	-- Corrupted Insignia
+							["crs"] = {
+								61705,	-- Corrupted Flamecaller
+								61666,	-- Corrupted Houndmaster
+								61678,	-- Corrupted Reaver
+								61672,	-- Dark Shaman Acolyte
+								61412,	-- Dark Shaman Koranthal
+							},
+						}),
 					},
 				}),
-				q(26859, {	-- Searching for the Lost Satchel
-					["u"] = REMOVED_FROM_GAME,
+				q(30969, {	-- A New Enemy
+					["qg"] = 61716,	-- Invoker Xorenth
+					["timeline"] = { "added 5.0.1.15589" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(15, 7, 15),
+					["groups"] = {
+						objective(1, {	-- 0/5 Corrupted Insignia
+							["provider"] = { "i", 82605 },	-- Corrupted Insignia
+							["crs"] = {
+								61705,	-- Corrupted Flamecaller
+								61666,	-- Corrupted Houndmaster
+								61678,	-- Corrupted Reaver
+								61672,	-- Dark Shaman Acolyte
+								61412,	-- Dark Shaman Koranthal
+							},
+						}),
+					},
+				}),
+				q(26862, {	-- Elemental Tampering
+					["qg"] = 44216,	-- Bovaal Whitehorn
+					["timeline"] = { "added 4.0.3.13277", "removed 5.0.4" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(15, 7, 15),
+					["groups"] = {
+						objective(1, {	-- 0/6 Searing Binding
+							["provider"] = { "i", 60499 },	-- Searing Binding
+							["cr"] = 11321,	-- Molten Elemental
+						}),
+					},
+				}),
+				q(5728, {	-- Hidden Enemies (3/5)
+					["qg"] = 4949,	-- Thrall <Warchief>
+					["sourceQuest"] = 5727,	-- Hidden Enemies (2/5)
+					["coord"] = { 32.0, 37.8, ORGRIMMAR },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 9,
+					["groups"] = {
+						objective(1, {	-- 0/1 Bazzalan slain
+							["provider"] = { "n", 11519 },	-- Bazzalan
+						}),
+						objective(2, {	-- 0/1 Jergosh the Invoker slain
+							["provider"] = { "n", 11518 },	-- Jergosh the Invoker
+						}),
+					},
+				}),
+				q(5729, {	-- Hidden Enemies (4/5)
+					["qg"] = 4949,	-- Thrall <Warchief>
+					["sourceQuest"] = 5728,	-- Hidden Enemies (3/5)
+					["coord"] = { 32.0, 37.8, ORGRIMMAR },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 9,
+				}),
+				q(5730, {	-- Hidden Enemies (5/5)
+					["qg"] = 3216,	-- Neeru Fireblade
+					["sourceQuest"] = 5729,	-- Hidden Enemies (4/5)
+					["coord"] = { 49.6, 50.6, ORGRIMMAR },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 9,
+					["groups"] = {
+						i(15424, {	-- Axe of Orgrimmar
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(15445, {	-- Hammer of Orgrimmar
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(15443, {	-- Kris of Orgrimmar
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(15444, {	-- Staff of Orgrimmar
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
+				}),
+				q(30995, {	-- No Man Left Behind
+					["qg"] = 61822,	-- SI:7 Field Commander Dirken
+					["timeline"] = { "added 5.0.1.15589" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(15, 7, 15),
+					["groups"] = {
+						objective(1, {	-- 0/5 SI:7 Rangers rescued
+							["provider"] = { "n", 61788 },	-- SI:7 Ranger
+						}),
+					},
+				}),
+				q(30984, {	-- No Orc Left Behind
+					["qg"] = 61823,	-- Commander Bagran
+					["timeline"] = { "added 5.0.1.15589" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(15, 7, 15),
+					["groups"] = {
+						objective(1, {	-- 0/5 Kor'kron Scout rescued
+							["provider"] = { "n", 61680 },	-- Kor'kron Scout
+						}),
+					},
+				}),
+				q(26856, {	-- Repel the Invasion
+					["qg"] = 44217,	-- Stone Guard Kurjack
+					["timeline"] = { "added 4.0.3.13277", "removed 5.0.4" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(13, 7, 13),
+					["groups"] = {
+						objective(1, {	-- 0/1 Jergosh the Invoker slain
+							["provider"] = { "n", 11518 },	-- Jergosh the Invoker
+						}),
+						objective(2, {	-- 0/1 Bazzalan slain
+							["provider"] = { "n", 11519 },	-- Bazzalan
+						}),
+						objective(3, {	-- 0/1 Oggleflint slain
+							["provider"] = { "n", 11517 },	-- Oggleflint <Ragefire Chieftain>
+						}),
+					},
+				}),
+				q(5724, {	-- Returning the Lost Satchel
+					["qg"] = 11834,	-- Maur Grimtotem
+					["sourceQuest"] = 5722,	-- Searching for the Lost Satchel
+					["timeline"] = { "removed 4.0.3" },
+					["cost"] = { { "i", 14381, 1 } },	-- Grimtotem Satchel
+					["races"] = HORDE_ONLY,
+					["lvl"] = 9,
+					["groups"] = {
+						i(15452, {	-- Featherbead Bracers
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(15453, {	-- Savannah Bracers
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
+				}),
+				q(5722, {	-- Searching for the Lost Satchel
+					["qg"] = 11833,	-- Rahauro <Magatha's Servant>
+					["coord"] = { 70.6, 31.4, THUNDER_BLUFF },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 9,
+				}),
+				q(5761, {	-- Slaying the Beast
+					["qg"] = 3216,	-- Neeru Fireblade
+					["sourceQuest"] = 5727,	-- Hidden Enemies (2/5)
+					["coord"] = { 49.6, 50.6, ORGRIMMAR },
+					["timeline"] = { "removed 5.0.4" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 9,
+					["groups"] = {
+						objective(1, {	-- 0/1 Taragaman the Hungerer's Heart
+							["provider"] = { "i", 14540 },	-- Taragaman the Hungerer's Heart
+						}),
+					},
 				}),
 				q(26858, {	-- Taragaman the Hungerer
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 44217 },	-- Stone Guard Kurjack
-					["races"] = HORDE_ONLY,
+					["qg"] = 44217,	-- Stone Guard Kurjack
 					["sourceQuests"] = {
 						28003,	-- Adventurer's Wanted: Ragefire Chasm
 						26865,	-- Enemies Below
@@ -57,61 +193,305 @@ _.Instances = { tier(CLASSIC_TIER, {
 						26867,	-- Enemies Below
 						31035,	-- Enemies Below
 					},
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(131614)),	-- Chasm Linked Pants
-						un(REMOVED_FROM_GAME, i(66031)),	-- Hide Vest of the Shaman
-						un(REMOVED_FROM_GAME, i(66022)),	-- Ragefire Leggings
-						un(REMOVED_FROM_GAME, i(49541)),	-- Robes of the Doomed Ritual
-						un(REMOVED_FROM_GAME, i(131613)),	-- Scaled Vest of the Shaman
-						un(REMOVED_FROM_GAME, i(66040)),	-- Searing Belt
-						un(REMOVED_FROM_GAME, i(66045)),	-- Stone Guard Greaves
+					["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(13, 7, 13),
+					["groups"] = {
+						objective(1, {	-- 0/1 Taragaman the Hungerer's Heart
+							["provider"] = { "i", 14540 },	-- Taragaman the Hungerer's Heart
+						}),
+						i(131614, {	-- Chasm Linked Pants
+							["timeline"] = { "created 7.0.3.22248" },
+						}),
+						i(66031, {	-- Hide Vest of the Shaman
+							["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+						}),
+						i(66022, {	-- Ragefire Leggings
+							["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+						}),
+						i(49541, {	-- Robes of the Doomed Ritual
+							["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+						}),
+						i(131613, {	-- Scaled Vest of the Shaman
+							["timeline"] = { "created 7.0.3.22248" },
+						}),
+						i(66040, {	-- Searing Belt
+							["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+						}),
+						i(66045, {	-- Stone Guard Greaves
+							["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+						}),
+					},
+				}),
+				q(5723, {	-- Testing an Enemy's Strength
+					["qg"] = 11833,	-- Rahauro <Magatha's Servant>
+					["coord"] = { 70.6, 31.4, THUNDER_BLUFF },
+					["timeline"] = { "removed 5.0.4" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 9,
+					["groups"] = {
+						objective(1, {	-- 0/8 Ragefire Trogg slain
+							["provider"] = { "n", 11318 },	-- Ragefire Trogg
+						}),
+						objective(2, {	-- 0/8 Ragefire Shaman slain
+							["provider"] = { "n", 11319 },	-- Ragefire Shaman
+						}),
 					},
 				}),
 				q(30996, {	-- The Dark Shaman
+					["qg"] = 61823,	-- High Sorceress Aryna
+					["timeline"] = { "added 5.0.1.15589" },
 					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 61823 },	-- High Sorceress Aryna
-					["g"] = {
-						i(82893),	-- Hide Vest of the Shaman
-						i(82891),	-- Robes of the Doomed Ritual
-						i(131712),	-- Scaled Vest of the Shaman
-						i(82895),	-- Searing Belt
-						i(82892),	-- Ragefire Leggings
-						i(82894),	-- Stone Guard Greaves
-						i(131711),	-- Stone Guard Greaves
+					["lvl"] = lvlsquish(13, 7, 13),
+					["groups"] = {
+						objective(1, {	-- 0/1 Dark Shaman Koranthal slain
+							["provider"] = { "n", 61412 },	-- Dark Shaman Koranthal
+						}),
+						objective(2, {	-- 0/1 Lava Guard Gordoth slain
+							["provider"] = { "n", 61528 },	-- Lava Guard Gordoth
+						}),
+						i(82893, {	-- Hide Vest of the Shaman
+							["timeline"] = { "added 5.0.1.15589" },
+						}),
+						i(82891, {	-- Robes of the Doomed Ritual
+							["timeline"] = { "added 5.0.1.15589" },
+						}),
+						i(131712, {	-- Scaled Vest of the Shaman
+							["timeline"] = { "created 7.0.3.22248" },
+						}),
+						i(82895, {	-- Searing Belt
+							["timeline"] = { "added 5.0.1.15589" },
+						}),
+						i(82892, {	-- Ragefire Leggings
+							["timeline"] = { "added 5.0.1.15589" },
+						}),
+						i(82894, {	-- Stone Guard Greaves
+							["timeline"] = { "added 5.0.1.15589" },
+						}),
+						i(131711, {	-- Stone Guard Greaves
+							["timeline"] = { "created 7.0.3.22248" },
+						}),
 					},
 				}),
 				q(30983, {	-- The Dark Shaman
-					["provider"] = { "n", 61716 },	-- Invoker Xorenth
+					["qg"] = 61716,	-- Invoker Xorenth
+					["timeline"] = { "added 5.0.1.15589" },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(13, 7, 13),
+					["groups"] = {
+						objective(1, {	-- 0/1 Dark Shaman Koranthal slain
+							["provider"] = { "n", 61412 },	-- Dark Shaman Koranthal
+						}),
+						objective(2, {	-- 0/1 Lava Guard Gordoth slain
+							["provider"] = { "n", 61528 },	-- Lava Guard Gordoth
+						}),
+					},
+				}),
+				q(5725, {	-- The Power to Destroy...
+					["qg"] = 2425,	-- Varimathras
+					["coord"] = { 56.2, 91.8, UNDERCITY },
+					["timeline"] = { "removed 3.3.0" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 9,
+					-- #if BEFORE 3.3.0
+					["groups"] = {
+						objective(1, {	-- 0/1 Spells of Shadow
+							["provider"] = { "i", 14395 },	-- Spells of Shadow
+						}),
+						objective(2, {	-- 0/1 Incantations from the Nether
+							["provider"] = { "i", 14396 },	-- Incantations from the Nether
+						}),
+						i(15450, {	-- Dredgemire Leggings
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(15451, {	-- Gargoyle Leggings
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(15449, {	-- Ghastly Trousers
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
+					-- #endif
+				}),
+				q(14356, {	-- The Power to Destroy... (After Wrathgate)
+					["qg"] = 36273,	-- Bragor Bloodfist
+					["coord"] = { 56.3, 92.2, UNDERCITY },
+					["timeline"] = { "added 3.3.0", "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 9,
+					["groups"] = {
+						objective(1, {	-- 0/1 Spells of Shadow
+							["provider"] = { "i", 14395 },	-- Spells of Shadow
+						}),
+						objective(2, {	-- 0/1 Incantations from the Nether
+							["provider"] = { "i", 14396 },	-- Incantations from the Nether
+						}),
+						i(15450, {	-- Dredgemire Leggings
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(15451, {	-- Gargoyle Leggings
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(15449, {	-- Ghastly Trousers
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
 				}),
 			}),
-			cr(61408, e(694, {	-- Adarogg
-				i(82880),	-- Fang of Adarogg
-				i(82879),	-- Collarspike Bracers
-				i(151422),	-- Bonecoal Waistguard
-				i(82772),	-- Snarlmouth Leggings
-				i(151421),	-- Scorched Blazehound Boots
-			})),
-			cr(61412, e(695, {	-- Dark Shaman Koranthal
-				i(82882),	-- Dark Ritual Cape
-				i(132551),	-- Dark Shaman's Jerkin
-				i(82877),	-- Grasp of the Broken Totem
-				i(82881),	-- Cuffs of Black Elements
-			})),
-			cr(61463, e(696, {	-- Slagmaw
-				i(82878),	-- Fireworm Robes
-				i(82885),	-- Flameseared Carapace
-				i(132552),	-- Chitonous Bindings
-				i(82884),	-- Chitonous Bracers
-			})),
-			cr(61528, e(697, {	-- Lava Guard Gordoth
-				ach(629),	-- Ragefire Chasm
-				i(82888),	-- Heartboiler Staff
-				i(82883),	-- Bloodcursed Felblade
-				i(151425),	-- Gordoth's Crushers
-				i(151424),	-- Belt of Boundless Fury
-				i(82886),	-- Gorewalker Treads
-			})),
+			n(ZONE_DROPS, {
+				i(14396, {	-- Incantations from the Nether
+					["races"] = HORDE_ONLY,
+					["crs"] = {
+						11322,	-- Searing Blade Cultist
+						11324,	-- Searing Blade Warlock
+					},
+				}),
+				i(14395, {	-- Spells of Shadow
+					["races"] = HORDE_ONLY,
+					["crs"] = {
+						11322,	-- Searing Blade Cultist
+						11324,	-- Searing Blade Warlock
+					},
+				}),
+			}),
+			n(11517, {	-- Oggleflint <Ragefire Chieftain>
+				["timeline"] = { "removed 5.0.4" },
+				["groups"] = {
+					i(14381, {	-- Grimtotem Satchel
+						["description"] = "Found on the tauren corpse in front of this boss.",
+					}),
+					i(68194, {	-- Oggleflint's Inspirer
+						["timeline"] = { "added 4.0.3", "removed 5.0.4" },
+					}),
+				},
+			}),
+			n(11520, {	-- Taragaman the Hungerer
+				["timeline"] = { "removed 5.0.4" },
+				["groups"] = {
+					-- #if BEFORE 5.0.4
+					removeclassicphase(ach(629, {	-- Ragefire Chasm
+						-- #if BEFORE 3.0.1
+						["sourceQuest"] = 5761,	-- Slaying the Beast
+						["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(5761)); end]],
+						["races"] = HORDE_ONLY,
+						-- #endif
+					})),
+					-- #endif
+					i(14540, {	-- Taragaman the Hungerer's Heart
+						["timeline"] = { "removed 5.0.4" },
+					}),
+					i(14145, {	-- Cursed Felblade
+						["timeline"] = { "removed 5.0.4" },
+					}),
+					i(14149, {	-- Subterranean Cape
+						["timeline"] = { "removed 5.0.4" },
+					}),
+					i(14148, {	-- Crystalline Cuffs
+						["timeline"] = { "removed 5.0.4" },
+					}),
+				},
+			}),
+			n(11518, {	-- Jergosh the Invoker
+				["timeline"] = { "removed 5.0.4" },
+				["groups"] = {
+					i(14151, {	-- Chanting Blade
+						["timeline"] = { "removed 5.0.4" },
+					}),
+					i(14150, {	-- Robe of Evocation
+						["timeline"] = { "removed 5.0.4" },
+					}),
+					i(14147, {	-- Cavedweller Bracers
+						["timeline"] = { "removed 5.0.4" },
+					}),
+				},
+			}),
+			n(11519, {	-- Bazzalan
+				["timeline"] = { "removed 5.0.4" },
+				["groups"] = {
+					i(68195, {	-- Bazzalan's Blade
+						["timeline"] = { "added 4.0.3.13287", "removed 5.0.4" },
+					}),
+				},
+			}),
+			e(694, {	-- Adarogg
+				["creatureID"] = 61408,
+				["timeline"] = { "added 5.0.4" },
+				["groups"] = {
+					i(82880, {	-- Fang of Adarogg
+						["timeline"] = { "added 5.0.4" },
+					}),
+					i(82879, {	-- Collarspike Bracers
+						["timeline"] = { "added 5.0.4" },
+					}),
+					i(151422, {	-- Bonecoal Waistguard
+						["timeline"] = { "added 7.3.0.24484" },
+					}),
+					i(82772, {	-- Snarlmouth Leggings
+						["timeline"] = { "added 5.0.4" },
+					}),
+					i(151421, {	-- Scorched Blazehound Boots
+						["timeline"] = { "added 7.3.0.24484" },
+					}),
+				},
+			}),
+			e(695, {	-- Dark Shaman Koranthal
+				["creatureID"] = 61412,
+				["timeline"] = { "added 5.0.4" },
+				["groups"] = {
+					i(82882, {	-- Dark Ritual Cape
+						["timeline"] = { "added 5.0.4" },
+					}),
+					i(132551, {	-- Dark Shaman's Jerkin
+						["timeline"] = { "added 7.0.3.22248" },
+					}),
+					i(82877, {	-- Grasp of the Broken Totem
+						["timeline"] = { "added 5.0.4" },
+					}),
+					i(82881, {	-- Cuffs of Black Elements
+						["timeline"] = { "added 5.0.4" },
+					}),
+				},
+			}),
+			e(696, {	-- Slagmaw
+				["creatureID"] = 61463,
+				["timeline"] = { "added 5.0.4" },
+				["groups"] = {
+					i(82878, {	-- Fireworm Robes
+						["timeline"] = { "added 5.0.4" },
+					}),
+					i(82885, {	-- Flameseared Carapace
+						["timeline"] = { "added 5.0.4" },
+					}),
+					i(132552, {	-- Chitonous Bindings
+						["timeline"] = { "added 7.0.3.22248" },
+					}),
+					i(82884, {	-- Chitonous Bracers
+						["timeline"] = { "added 5.0.4" },
+					}),
+				},
+			}),
+			e(697, {	-- Lava Guard Gordoth
+				["creatureID"] = 61528,
+				["timeline"] = { "added 5.0.4" },
+				["groups"] = {
+					ach(629),	-- Ragefire Chasm
+					i(82888, {	-- Heartboiler Staff
+						["timeline"] = { "added 5.0.4" },
+					}),
+					i(82883, {	-- Bloodcursed Felblade
+						["timeline"] = { "added 5.0.4" },
+					}),
+					i(151425, {	-- Gordoth's Crushers
+						["timeline"] = { "added 7.3.0.24484" },
+					}),
+					i(151424, {	-- Belt of Boundless Fury
+						["timeline"] = { "added 7.3.0.24484" },
+					}),
+					i(82886, {	-- Gorewalker Treads
+						["timeline"] = { "added 5.0.4" },
+					}),
+				},
+			}),
 			n(17830, {	-- Zelemar the Wrathful
 				["timeline"] = { "added 2.2.0.7272", "removed 4.0.3.10000" },
 				["groups"] = {
@@ -122,31 +502,13 @@ _.Instances = { tier(CLASSIC_TIER, {
 					}),
 				},
 			}),
-			n(-40, {	-- Legacy
-				n(ZONE_DROPS, {
-					un(REMOVED_FROM_GAME, n(11519, {	-- Bazzalan
-						un(REMOVED_FROM_GAME, i(68195)),	-- Bazzalan's Blade
-					})),
-					un(REMOVED_FROM_GAME, n(11518, {	-- Jergosh the Invoker
-						un(REMOVED_FROM_GAME, i(14147)),	-- Cavedweller Bracers
-						un(REMOVED_FROM_GAME, i(14151)),	-- Chanting Blade
-						un(REMOVED_FROM_GAME, i(14150)),	-- Robe of Evocation
-					})),
-					un(REMOVED_FROM_GAME, n(11517, {	-- Oggleflint
-						un(REMOVED_FROM_GAME, i(68194)),	-- Oggleflint's Inspirer
-					})),
-					un(REMOVED_FROM_GAME, n(11520, {	-- Taragaman the Hungerer
-						un(REMOVED_FROM_GAME, i(14148)),	-- Crystalline Cuffs
-						un(REMOVED_FROM_GAME, i(14145)),	-- Cursed Felblade
-						un(REMOVED_FROM_GAME, i(14149)),	-- Subterranean Cape
-					})),
-				}),
-			}),
 		},
 	}),
-})};
-_.HiddenQuestTriggers = {
+}));
+-- #if AFTER 6.0.1
+root("HiddenQuestTriggers", {
 	n(WOD_HEADER, {
 		q(35287),	-- Ragefire Chasm Reward Quest - Normal completion
 	}),
-};
+});
+-- #endif

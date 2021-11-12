@@ -254,11 +254,6 @@ _.Zones =
 					["coord"] = { 45.5, 55.8, THUNDER_BLUFF },
 					["races"] = { TAUREN },
 				}),
-				q(5723,  {	-- Testing an Enemy's Strength
-					["provider"] = { "n", 11833 },	-- Rahauro
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(742,   {	-- The Ashenvale Hunt
 					["provider"] = { "n", 10881 },	-- Bluff Runner Windstrider
 					["races"] = HORDE_ONLY,

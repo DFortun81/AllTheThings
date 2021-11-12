@@ -453,27 +453,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(5725,  {	-- The Power to Destroy
-					["provider"] = { "n", 2425 },	-- Varimathras
-					["coord"] = { 56.3, 92.2, UNDERCITY },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(15449)),	-- Ghastly Trousers
-						un(REMOVED_FROM_GAME, i(15450)),	-- Dredgemire Leggings
-						un(REMOVED_FROM_GAME, i(15451)),	-- Gargoyle Leggings
-					},
-				}),
-				q(14356, {	-- The Power to Destroy
-					["provider"] = { "n", 36273 },	-- Bragor Bloodfist
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(15449)),	-- Ghastly Trousers
-						un(REMOVED_FROM_GAME, i(15450)),	-- Dredgemire Leggings
-						un(REMOVED_FROM_GAME, i(15451)),	-- Gargoyle Leggings
-					},
-				}),
 				q(38404, {	-- The Same, But Different
 					["sourceQuests"] = { 38397 },	-- A Curious Oddity
 					["provider"] = { "n", 6566 },	-- Estelle Gendry
