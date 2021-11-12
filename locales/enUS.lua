@@ -524,6 +524,7 @@ app.L = {
 
 	-- Profiles tab
 	["PROFILES_TAB"] = "Profiles";
+	["PROFILE"] = "Profile";
 	["PROFILE_CURRENT"] = "Current";
 	["PROFILE_CURRENT_TOOLTIP"] = "Select an existing Profile to be used by the current Character";
 	["PROFILE_NEW"] = "New";

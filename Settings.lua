@@ -344,7 +344,7 @@ settings.ApplyProfile = function()
 		end
 		setmetatable(RawSettings.General, GeneralSettingsBase);
 		setmetatable(RawSettings.Tooltips, TooltipSettingsBase);
-		app.print("Profile:",key);
+		app.print(L["PROFILE"]..":",key);
 		return true;
 	end
 end
