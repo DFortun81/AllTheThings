@@ -13824,6 +13824,8 @@ end
 local function StopMovingOrSizing(self)
 	self:StopMovingOrSizing();
 	self.isMoving = nil;
+	-- store the window position
+	self:StorePosition();
 end
 local function StartMovingOrSizing(self, fromChild)
 	if not self:IsMovable() and not self:IsResizable() or self.isLocked then
@@ -13845,6 +13847,24 @@ local function StartMovingOrSizing(self, fromChild)
 		elseif self:IsMovable() then
 			self:StartMoving();
 		end
+	end
+end
+app.StoreWindowPosition = function(self)
+	if self.lockPersistable and AllTheThingsProfiles then
+		local key = app.Settings:GetProfile();
+		local profile = AllTheThingsProfiles.Profiles[key];
+		if not profile.Windows then profile.Windows = {}; end
+		-- re-save the window position by point anchors
+		local points = {};
+		profile.Windows[self.Suffix or self.suffix] = points;
+		for i=1,self:GetNumPoints() do
+			local point, _, refPoint, x, y = self:GetPoint(i);
+			points[i] = { point = point, refPoint = refPoint, x = math.floor(x), y = math.floor(y) };
+		end
+		points.Width = math.floor(self:GetWidth());
+		points.Height = math.floor(self:GetHeight());
+		-- print("saved position",self.Suffix or self.suffix)
+		-- app.PrintTable(points)
 	end
 end
 local RowOnEnter, RowOnLeave;
@@ -15068,6 +15088,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 		window.BaseUpdate = UpdateWindow;
 		window.Update = onUpdate or app:CustomWindowUpdate(suffix) or UpdateWindow;
 		window.SetVisible = SetVisible;
+		window.StorePosition = app.StoreWindowPosition;
 		if AllTheThingsSettings then
 			if suffix == "Prime" then
 				window:SetScale(app.Settings:GetTooltipSetting("MainListScale"));
@@ -15111,6 +15132,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 			window.lockPersistable = true;
 		end
 
+		window:StorePosition();
 		window:Hide();
 
 		-- The Close Button. It's assigned as a local variable so you can change how it behaves.
