@@ -118,6 +118,7 @@ _.ExpansionFeatures =
 						i(92886),	-- Lavasoul Collar
 						i(92884),	-- Lavasoul Ring
 						i(93052),	-- Mogubreaker Hood*				— 5/16/19
+						i(89446),	-- Mogu-Wrought Girdle				— 2021-11-12
 						i(93140),	-- Scavenged Pandaren Axe
 						i(93142),	-- Scavenged Pandaren Axe
 						i(93130),	-- Scavenged Pandaren Broadaxe
@@ -410,7 +411,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				n(-46, {	-- Plate
 					i(89444),	-- Mogu-Wrought Breastplate
 					i(89445),	-- Mogu-Wrought Gauntlets
-					i(89446),	-- Mogu-Wrought Girdle
 					i(89451),	-- Mogu-Wrought Vambraces
 					i(92822),	-- Jinyu-Forged Breastplate
 					i(92823),	-- Jinyu-Forged Gauntlets
