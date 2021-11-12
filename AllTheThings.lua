@@ -13715,7 +13715,7 @@ local function SetRowData(self, row, data)
 end
 local function Refresh(self)
 	if not app.IsReady or not self:IsVisible() then return; end
-	-- print("Refresh:",self.Suffix or self.suffix)
+	-- print("Refresh:",self.Suffix)
 	if self:GetHeight() > 64 then self.ScrollBar:Show(); else self.ScrollBar:Hide(); end
 	if self:GetHeight() < 40 then
 		self.CloseButton:Hide();
@@ -13802,16 +13802,16 @@ local function Refresh(self)
 
 		-- If this window has an UpdateDone method which should process after the Refresh is complete
 		if self.UpdateDone then
-			-- print("Refresh-UpdateDone",self.Suffix or self.suffix)
+			-- print("Refresh-UpdateDone",self.Suffix)
 			Callback(self.UpdateDone, self);
 		-- If the rows need to be processed again, do so next update.
 		elseif self.processingLinks then
-			-- print("Refresh-processingLinks",self.Suffix or self.suffix)
+			-- print("Refresh-processingLinks",self.Suffix)
 			Callback(self.Refresh, self);
 			self.processingLinks = nil;
 		-- If the data itself needs another update pass due to new rows being added dynamically
 		elseif self.doUpdate then
-			-- print("Refresh-doUpdate",self.Suffix or self.suffix)
+			-- print("Refresh-doUpdate",self.Suffix)
 			Callback(self.Update, self, true);
 			self.doUpdate = nil;
 		end
@@ -13826,8 +13826,10 @@ end
 local function StopMovingOrSizing(self)
 	self:StopMovingOrSizing();
 	self.isMoving = nil;
-	-- store the window position
-	self:StorePosition();
+	-- store the window position if the window is visible (this is called on new popouts prior to becoming visible for some reason)
+	if self:IsVisible() then
+		self:StorePosition();
+	end
 end
 local function StartMovingOrSizing(self, fromChild)
 	if not self:IsMovable() and not self:IsResizable() or self.isLocked then
@@ -13852,21 +13854,32 @@ local function StartMovingOrSizing(self, fromChild)
 	end
 end
 app.StoreWindowPosition = function(self)
-	if (self.isLocked or self.lockPersistable) and AllTheThingsProfiles then
-		local key = app.Settings:GetProfile();
-		local profile = AllTheThingsProfiles.Profiles[key];
-		if not profile.Windows then profile.Windows = {}; end
-		-- re-save the window position by point anchors
-		local points = {};
-		profile.Windows[self.Suffix or self.suffix] = points;
-		for i=1,self:GetNumPoints() do
-			local point, _, refPoint, x, y = self:GetPoint(i);
-			points[i] = { Point = point, PointRef = refPoint, X = math.floor(x), Y = math.floor(y) };
+	if AllTheThingsProfiles then
+		if self.isLocked or self.lockPersistable then
+			local key = app.Settings:GetProfile();
+			local profile = AllTheThingsProfiles.Profiles[key];
+			if not profile.Windows then profile.Windows = {}; end
+			-- re-save the window position by point anchors
+			local points = {};
+			profile.Windows[self.Suffix] = points;
+			for i=1,self:GetNumPoints() do
+				local point, _, refPoint, x, y = self:GetPoint(i);
+				points[i] = { Point = point, PointRef = refPoint, X = math.floor(x), Y = math.floor(y) };
+			end
+			points.Width = math.floor(self:GetWidth());
+			points.Height = math.floor(self:GetHeight());
+			points.Locked = self.isLocked or nil;
+			-- print("saved window",self.Suffix)
+			-- app.PrintTable(points)
+		else
+			-- a window which was potentially saved due to being locked, but is now being unlocked (unsaved)
+			-- print("removing stored window",self.Suffix)
+			local key = app.Settings:GetProfile();
+			local profile = AllTheThingsProfiles.Profiles[key];
+			if profile.Windows then
+				profile.Windows[self.Suffix] = nil;
+			end
 		end
-		points.Width = math.floor(self:GetWidth());
-		points.Height = math.floor(self:GetHeight());
-		-- print("saved position",self.Suffix or self.suffix)
-		-- app.PrintTable(points)
 	end
 end
 local RowOnEnter, RowOnLeave;
@@ -14068,18 +14081,7 @@ local function RowOnClick(self, button)
 				if IsAltKeyDown() then
 					local locked = not window.isLocked;
 					window.isLocked = locked;
-					-- only certain window locks may be persisted
-					if window.lockPersistable and window.Suffix then
-						local lockedWindows = GetDataMember("LockedWindows", {});
-						local lockedName = window.Suffix;
-						if locked then
-							-- windows would be locked for all characters, but position can be changed per character
-							lockedWindows[lockedName] = 1;
-						else
-							lockedWindows[lockedName] = nil;
-						end
-						SetDataMember("LockedWindows", lockedWindows);
-					end
+					window:StorePosition();
 					-- force tooltip to refresh since locked state drives tooltip content
 					if GameTooltip then
 						RowOnLeave(self);
@@ -15006,14 +15008,14 @@ local function UpdateWindow(self, force, got)
 			end
 			force = (force or self.HasPendingUpdate) and self:IsVisible();
 		end
-		-- print("Update:",self.Suffix or self.suffix, force and "FORCE", self:IsVisible() and "VISIBLE");
+		-- print("Update:",self.Suffix, force and "FORCE", self:IsVisible() and "VISIBLE");
 		if force or self:IsVisible() then
 			if self.rowData then wipe(self.rowData);
 			else self.rowData = {}; end
 			self.data.expanded = true;
 			if not self.doesOwnUpdate and
 				(force or (self.shouldFullRefresh and self:IsVisible())) then
-				-- print("UpdateGroups",self.suffix or self.Suffix)
+				-- print("UpdateGroups",self.Suffix)
 				TopLevelUpdateGroup(self.data, self);
 				self.HasPendingUpdate = nil;
 				-- print("Done")
@@ -16288,18 +16290,6 @@ function app:RefreshData(lazy, got, manual)
 	else
 		-- print(".5sec delay callback")
 		AfterCombatOrDelayedCallback(app._RefreshData, 0.5);
-	end
-end
-function app:ApplyLockedWindows()
-	local lockedWindows = GetDataMember("LockedWindows", nil);
-	if lockedWindows then
-		for name,lock in pairs(lockedWindows) do
-			-- only saving locks, so lock is irrelevant mostly
-			local window = app.Windows[name];
-			if window then
-				window.isLocked = true;
-			end
-		end
 	end
 end
 function app:BuildSearchResponse(groups, field, value)
@@ -20086,7 +20076,7 @@ app.SetupProfiles = function()
 		Assignments = {},
 	};
 	AllTheThingsProfiles = ATTProfiles;
-	local default = app.Settings:NewProfile("Default");
+	local default = app.Settings:NewProfile(DEFAULT);
 	-- copy various existing settings that are now Profiled
 	if AllTheThingsSettings then
 		-- General Settings
@@ -20114,7 +20104,7 @@ app.SetupProfiles = function()
 			end
 		end
 	end
-	ATTProfiles.Profiles.Default = default;
+	ATTProfiles.Profiles[DEFAULT] = default;
 	app.print("Initialized ATT Profiles!");
 
 	-- delete old variables
@@ -20784,12 +20774,23 @@ app.events.VARIABLES_LOADED = function()
 		accountWideData.Toys = data;
 	end
 
+	-- clean up 'LockedWindows' (now stored in Profiles)
+	local lockedWindows = GetDataMember("LockedWindows");
+	if lockedWindows then
+		for name,_ in pairs(lockedWindows) do
+			local window = app.Windows[name];
+			if window then
+				window.isLocked = true;
+				window:StorePosition();
+			end
+		end
+	end
+
 	-- Clean up settings
 	local oldsettings = {};
 	for i,key in ipairs({
 		"LocalizedCategoryNames",
 		--"LocalizedFlightPathDB",
-		"LockedWindows",
 		"Position",
 		"RandomSearchFilter",
 		"Reagents",
@@ -20805,9 +20806,6 @@ app.events.VARIABLES_LOADED = function()
 
 	-- Init the Settings before working with data
 	app.Settings:Initialize();
-
-	-- Apply Locked Window Settings
-	app:ApplyLockedWindows();
 
 	-- Attempt to register for the addon message prefix.
 	C_ChatInfo.RegisterAddonMessagePrefix("ATT");

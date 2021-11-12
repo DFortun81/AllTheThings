@@ -358,6 +358,7 @@ end
 settings.SetWindowFromProfile = function(suffix)
 	local points = RawSettings and RawSettings.Windows and RawSettings.Windows[suffix];
 	local window = app.Windows[suffix];
+	-- print("SetWindowFromProfile",suffix,points,window)
 	if window and points then
 		window:ClearAllPoints();
 		for _,point in ipairs(points) do
@@ -374,6 +375,7 @@ settings.SetWindowFromProfile = function(suffix)
 			window:SetHeight(points.Height);
 			-- print("SetHeight",suffix,points.Height)
 		end
+		window.isLocked = points.Locked;
 	end
 end
 settings.Get = function(self, setting, container)
