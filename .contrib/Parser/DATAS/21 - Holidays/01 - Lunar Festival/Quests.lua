@@ -1008,7 +1008,7 @@ _.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 				["provider"] = { "n", 15593 },	-- Elder Starsong
 				["isYearly"] = true,
 				["coord"] = { 69.6, 53.8, SWAMP_OF_SORROWS },	-- Start of path leading down to Sunken Temple
-				["maps"] = { SUNKEN_TEMPLE },
+				["maps"] = { TEMPLE_OF_ATALHAKKAR },
 				["g"] = {
 					crit(2, {	-- Elder Starsong in Sunken Temple
 						["achievementID"] = 910,	-- Elders of the Dungeons
@@ -1032,9 +1032,7 @@ _.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 				["provider"] = { "n", 15578 },	-- Elder Wildmane
 				["isYearly"] = true,
 				["coord"] = { 39.2, 21.3, TANARIS },	-- Zul'Farrak entrance
-				["maps"] = {
-					219,	-- Zul'Farrak
-				},
+				["maps"] = { ZULFARRAK },
 				["g"] = {
 					crit(1, {	-- Elder Wildmane in Zul'Farrak
 						["achievementID"] = 910,	-- Elders of the Dungeons

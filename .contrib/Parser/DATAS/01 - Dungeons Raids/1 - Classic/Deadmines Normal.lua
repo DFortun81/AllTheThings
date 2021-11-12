@@ -5,7 +5,7 @@
 _.Instances = { tier(CLASSIC_TIER, {
 	inst(63, {	-- Deadmines
 		["lvl"] = 10,
-		["mapID"] = 291,
+		["mapID"] = DEADMINES,
 		["maps"] = { 292 },
 		["coord"] = { 25.59, 50.97, 55 },	-- Deadmines, The Deadmines [Westfall]
 		["g"] = {

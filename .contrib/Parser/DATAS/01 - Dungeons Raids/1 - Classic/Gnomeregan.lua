@@ -6,7 +6,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 	inst(231, {	-- Gnomeregan
 		["lvl"] = 19,
 		["maps"] = {
-			226,
+			GNOMEREGAN,
 			227,
 			228,
 			229,

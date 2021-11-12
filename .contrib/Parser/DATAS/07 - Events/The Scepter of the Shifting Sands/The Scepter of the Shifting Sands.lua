@@ -99,7 +99,7 @@ root("WorldEvents", n(-539,	-- The Scepter of the Shifting Sands
 				q(8733, {	-- Eranikus, Tyrant of the Dream
 					["qg"] = 15362,	-- Malfurion Stormrage
 					["sourceQuest"] = 8555,	-- The Charge of the Dragonflights
-					["maps"] = { SUNKEN_TEMPLE },
+					["maps"] = { TEMPLE_OF_ATALHAKKAR },
 					["lvl"] = 60,
 				}),
 				q(8305, {	-- Long Forgotten Memories

@@ -68,7 +68,7 @@ _.Holidays = {
 				inst(63, {	-- The Deadmines
 					n(47626, {	-- Admiral Ripsnarl
 						un(FEAST_OF_WINTER_VEIL, ig(21524, {	-- Red Winter Hat
-							["maps"] = { 291, 292 },
+							["maps"] = { DEADMINES, 292 },
 						})),
 					}),
 				}),
