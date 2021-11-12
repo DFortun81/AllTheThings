@@ -529,9 +529,10 @@ app.L = {
 	["PROFILE_NEW"] = "New";
 	["PROFILE_NEW_TOOLTIP"] = "Create a blank Profile to be used by the current Character";
 	["PROFILE_COPY"] = "Copy From";
-	["PROFILE_COPY_TOOLTIP"] = "Copy a Profile into the Current Profile";
-	["PROFILE_DELETE"] = "Delete";
-	["PROFILE_DELETE_TOOLTIP"] = "Delete a Profile from the set of available Profiles.";
+	["PROFILE_COPY_TOOLTIP"] = "Copy the Selected Profile into the Current Profile";
+	-- ["PROFILE_DELETE"] = "Delete";
+	["PROFILE_DELETE_TOOLTIP"] = "Delete a Profile from the set of available Profiles";
+	["PROFILE_SWITCH_TOOLTIP"] = "Set the Selected Profile as the Current Profile";
 
 	-- About tab
 	["ABOUT"] = "About";

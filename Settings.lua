@@ -199,6 +199,7 @@ local OnClickForTab = function(self)
 				-- print(":Show()",o.text or (o.GetText and o:GetText() or (o.Text and o.Text.GetText and o.Text:GetText())))
 				o:Show();
 			end
+			if tab.OnRefresh then tab:OnRefresh(); end
 		else
 			for j,o in ipairs(tab.objects) do
 				o:Hide();
@@ -277,7 +278,7 @@ local function rawcopy(source, copy)
 end
 -- Creates, assigns, and returns a RawSettings object for a given Profile Key
 settings.NewProfile = function(self, key)
-	if AllTheThingsProfiles then
+	if AllTheThingsProfiles and key then
 		-- cannot create existing profile name
 		if AllTheThingsProfiles.Profiles[key] then return; end
 
@@ -295,6 +296,10 @@ end
 -- Creates, assigns, copies existing, and returns a RawSettings object for a given Profile Key
 settings.CopyProfile = function(self, key, copyKey)
 	if AllTheThingsProfiles then
+		key = key or settings:GetProfile();
+		-- delete the existing profile manually
+		AllTheThingsProfiles.Profiles[key] = nil;
+		-- re-create the profile
 		local raw = settings:NewProfile(key);
 		local copy = AllTheThingsProfiles.Profiles[copyKey];
 		if copy then
@@ -4080,6 +4085,7 @@ local CurrentProfileNameLabel = settings:CreateFontString(nil, "ARTWORK", "GameF
 CurrentProfileNameLabel:SetPoint("TOPLEFT", CurrentProfileLabel, "TOPRIGHT", 5, 0);
 CurrentProfileNameLabel:SetJustifyH("LEFT");
 CurrentProfileNameLabel:SetTextColor(1, 1, 1, 1);
+CurrentProfileNameLabel:Show();
 table.insert(settings.MostRecentTab.objects, CurrentProfileNameLabel);
 
 -- New Profile Textbox + Label
@@ -4102,11 +4108,19 @@ NewProfileTextBox:Show();
 -- Profiles selector scrollbox
 local ProfileSelector = settings:CreateScrollFrame();
 local ProfileScroller = ProfileSelector.ScrollContainer;
-ProfileScroller:SetPoint("TOPLEFT", NewProfileTextBox, "BOTTOMLEFT", 0, -20);
+ProfileScroller:SetPoint("TOPLEFT", NewProfileTextBox, "BOTTOMLEFT", 0, -36);
 ProfileScroller:SetPoint("RIGHT", NewProfileTextBox, "RIGHT", 25, 0);
 ProfileScroller:SetPoint("BOTTOM", settings, "BOTTOM", 0, 20);
 settings.ApplyBackdropColor(ProfileScroller, 20, 20, 20, 1);
 ProfileSelector:SetHeight(100);
+
+-- common function for setting the current profile
+local UseProfile = function(profile)
+	tab.SelectedProfile = nil;
+	settings:SetProfile(profile);
+	settings:ApplyProfile();
+	settings:UpdateMode(1);
+end
 
 local refreshProfiles;
 refreshProfiles = function()
@@ -4116,7 +4130,6 @@ refreshProfiles = function()
 
 	-- update the current profile label
 	CurrentProfileNameLabel:SetText(settings:GetProfile());
-	CurrentProfileNameLabel:Show();
 
 	-- print("refresh profiles scrollbox")
 	local settingProfileItems = {};
@@ -4166,19 +4179,18 @@ refreshProfiles = function()
 					-- logic when the respective profile checkbox is selected
 					-- holding shift will switch profiles instead of selecting one
 					local profile = self.Text:GetText();
-					if IsShiftKeyDown() then
-						if settings:GetProfile() ~= profile then
-							if tab.SelectedProfile == profile then
-								tab.SelectedProfile = nil;
-							end
-							settings:SetProfile(profile);
-							settings:ApplyProfile();
-							settings:UpdateMode(1);
-						end
+					if tab.SelectedProfile == profile then
+						tab.SelectedProfile = nil;
 					else
 						tab.SelectedProfile = profile;
 					end
+					if IsShiftKeyDown() then
+						if settings:GetProfile() ~= profile then
+							UseProfile(profile);
+						end
+					end
 					refreshProfiles();
+					return true;
 				end);
 			if lastProfileSelect then
 				profileBox:SetPoint("TOPLEFT", lastProfileSelect, "BOTTOMLEFT", 0, 4);
@@ -4203,12 +4215,10 @@ refreshProfiles = function()
 	end
 
 	ProfileSelector:SetMaxScroll(profileCount * 6);
-	-- profiles will be refreshed when needed
-	ProfileSelector.OnRefresh = nil;
 	-- make sure to switch back to the previous tab once done
 	settings.MostRecentTab = mostRecentTab;
 end
-ProfileSelector.OnRefresh = refreshProfiles;
+tab.OnRefresh = refreshProfiles;
 
 -- Create Button
 local CreateProfileButton = settings:CreateButton(
@@ -4216,29 +4226,70 @@ local CreateProfileButton = settings:CreateButton(
 {
 	text = CREATE_COMPACT_UNIT_FRAME_PROFILE,
 	tooltip = CREATE_NEW_COMPACT_UNIT_FRAME_PROFILE,
-	refs = { ATTActionObject = NewProfileTextBox },
 },
 -- function hooks for the button
 {
 	["OnClick"] = function(self)
-		if self.ATTActionObject and self.ATTActionObject.GetText then
-			local newProfile = self.ATTActionObject:GetText();
+		-- if self.ATTActionObject and self.ATTActionObject.GetText then
+			local newProfile = NewProfileTextBox:GetText();
 			if newProfile and newProfile ~= "" then
 				if settings:NewProfile(newProfile) then
-					settings:SetProfile(newProfile);
-					settings:ApplyProfile();
-					settings:UpdateMode(1);
+					UseProfile(newProfile);
 					refreshProfiles();
 					return true;
 				end
 				-- TODO dialog about existing profile
 				-- app:ShowPopupDialog("Profile already exists!", function() end);
 			end
-		end
+		-- end
 	end,
 });
 CreateProfileButton:SetPoint("TOPLEFT", NewProfileTextBox, "TOPRIGHT", 5, 4);
 CreateProfileButton:Show();
+
+-- Switch Button
+local SwitchProfileButton = settings:CreateButton(
+-- button settings
+{
+	text = SWITCH,
+	tooltip = L["PROFILE_SWITCH_TOOLTIP"],
+},
+-- function hooks for the button
+{
+	["OnClick"] = function(self)
+		local profile = tab.SelectedProfile;
+		if profile then
+			UseProfile(profile);
+			refreshProfiles();
+			return true;
+		end
+	end,
+});
+SwitchProfileButton:SetPoint("TOPLEFT", NewProfileTextBox, "BOTTOMLEFT", 0, -4);
+SwitchProfileButton:Show();
+
+-- Copy Button
+local CopyProfileButton = settings:CreateButton(
+-- button settings
+{
+	text = CALENDAR_COPY_EVENT,
+	tooltip = L["PROFILE_COPY_TOOLTIP"],
+},
+-- function hooks for the button
+{
+	["OnClick"] = function(self)
+		local profile = tab.SelectedProfile;
+		if profile then
+			settings:CopyProfile(nil, profile);
+			settings:ApplyProfile();
+			settings:UpdateMode(1);
+			refreshProfiles();
+			return true;
+		end
+	end,
+});
+CopyProfileButton:SetPoint("TOPLEFT", SwitchProfileButton, "TOPRIGHT", 10, 0);
+CopyProfileButton:Show();
 
 -- Delete Button
 local DeleteProfileButton = settings:CreateButton(
