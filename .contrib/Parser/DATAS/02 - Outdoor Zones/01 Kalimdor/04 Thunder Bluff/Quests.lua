@@ -167,16 +167,6 @@ _.Zones =
 						i(5083),	-- Pattern: Kodo Hide Bag
 					},
 				}),
-				q(914,   {	-- Leaders of the Fang
-					["provider"] = { "n", 5770 },	-- Nara Wildmane
-					["coord"] = { 75.8, 30.8, THUNDER_BLUFF },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(6505)),	-- Crescent Staff
-						un(REMOVED_FROM_GAME, i(6504)),	-- Wingblade
-					},
-				}),
 				q(3562,  {	-- Magatha's Payment to Jediga
 					["sourceQuests"] = { 3518 },	-- Delivery to Magatha
 					["provider"] = { "n", 4046 },	-- Magatha Grimtotem
@@ -199,12 +189,6 @@ _.Zones =
 				q(3786,  {	-- Morrowgrain Research
 					["sourceQuests"] = { 3782 },	-- Morrowgrain Research
 					["provider"] = { "n", 9087 },	-- Bashana Runetotem
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(1490,  {	-- Nara Wildmane
-					["sourceQuests"] = { 1489 },	-- Hamuul Runetotem
-					["provider"] = { "n", 5769 },	-- Arch Druid Hamuul Runetotem
-					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(2965,  {	-- Portents of Uldum
@@ -257,15 +241,6 @@ _.Zones =
 					["coord"] = { 75.6, 31.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(962,   {	-- Serpentbloom
-					["provider"] = { "n", 3419 },	-- Apothecary Zamah
-					["coord"] = { 22.6, 20.2, THUNDER_BLUFF },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(10919)),	-- Apothecary Gloves
-					},
 				}),
 				q(1131,  {	-- Steelsnap
 					["sourceQuests"] = { 1130 },	-- Melor Sends Word

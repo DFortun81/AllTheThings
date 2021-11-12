@@ -85,12 +85,6 @@ _.Zones = {
 					["provider"] = { "n", 3391 },	-- Gazlowe
 					["sourceQuest"] = 1178,	-- Goblin Sponsorship
 				}),
-				q(1489, {	-- Hamuul Runetotem
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3448 },	-- Tonga Runetotem
-					["sourceQuest"] = 880,	-- Altered Beings
-				}),
 				q(882,   {	-- Ishamuhale
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,

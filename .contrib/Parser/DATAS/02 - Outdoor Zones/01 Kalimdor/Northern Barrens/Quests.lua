@@ -405,15 +405,6 @@ _.Zones =
 						i(131328),	-- Ointment-Coated Handwraps
 					},
 				}),
-				q(3370,  {	-- In Nightmares
-					["hordeQuestID"] = 3369,
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 8418 },	-- Falla Sagewind
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(10658)),	-- Quagmire Galoshes
-						un(REMOVED_FROM_GAME, i(10657)),	-- Talbar Mantle
-					},
-				}),
 				q(905,   {	-- Into the Raptor's Den
 					["provider"] = { "n", 3338 },	-- Sergra Darkthorn
 					["coord"] = { 50.0, 59.8, NORTHERN_BARRENS },
