@@ -951,12 +951,14 @@ app.L = {
 		[-147] = select(6, EJ_GetInstanceInfo(559)),										-- Upper Blackrock Spire
 	-- Class Trial
 		[-148] = 236566,																	-- Level 50 (Trial)
+		[-149] = 1408997,																	-- Level 110
+		[-150] = 2065613,																	-- Level 120
 	-- Garrison
 		[-152] = "Interface\\Icons\\achievement_zone_draenor_01",							-- Garrison Campaign
 		[-153] = 1103070,																	-- Work Orders
 	-- Class Trial
-		[-154] = "Interface\\Icons\\ability_bossmagistrix_timewarp1",						-- Level 48 (old level 110)
-		[-155] = 236566,																	-- Level 50 (old Level 120)(Boost)
+		[-154] = "Interface\\Icons\\ability_bossmagistrix_timewarp1",						-- Level 48
+		[-155] = 236566,																	-- Level 50 (Boost)
 		[-156] = 236567,																	-- Level 60
 	-- Druid Feral Druid Hidden Artifact Appearance
 		[-157] = "Interface\\Icons\\achievement_zone_hinterlands_01",						-- The Hinterlands Activated
@@ -1665,13 +1667,15 @@ app.L = {
 		[-146] = select(2, GetAchievementInfo(9044)),							-- The Everbloom
 		[-147] = select(2, GetAchievementInfo(9042)),							-- Upper Blackrock Spire
 	-- Class Trial
-		[-148] = string.format(SPELLBOOK_AVAILABLE_AT, 50),						-- Level 50 (Trial)
+		[-148] = string.format(SPELLBOOK_AVAILABLE_AT, 50).." ".."(Trial)",		-- Level 50 (Trial)
+		[-149] = string.format(SPELLBOOK_AVAILABLE_AT, 110),					-- Level 110
+		[-150] = string.format(SPELLBOOK_AVAILABLE_AT, 120),					-- Level 120
 	-- Garrison
 		[-152] = "Garrison Campaign",											-- Garrison Campaign
 		[-153] = CAPACITANCE_WORK_ORDERS,										-- Work Orders
 	-- Class Trial
-		[-154] = string.format(SPELLBOOK_AVAILABLE_AT, 48),						-- Level 48 (old level 110)
-		[-155] = string.format(SPELLBOOK_AVAILABLE_AT, 50),						-- Level 50 (old Level 120)(Boost)
+		[-154] = string.format(SPELLBOOK_AVAILABLE_AT, 48),						-- Level 48
+		[-155] = string.format(SPELLBOOK_AVAILABLE_AT, 50).." ".."(Boost)",		-- Level 50 (Boost)
 		[-156] = string.format(SPELLBOOK_AVAILABLE_AT, 60),						-- Level 60
 	-- Druid Feral Druid Hidden Artifact Appearance
 		[-157] = DUNGEON_FLOOR_NIGHTMARERAID7.." "..GetSpellInfo(78741),		-- The Hinterlands Activated
