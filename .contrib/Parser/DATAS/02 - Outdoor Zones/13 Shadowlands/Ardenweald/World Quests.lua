@@ -7,6 +7,12 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(ARDENWEALD, {
 			n(WORLD_QUESTS, {
+				n(REWARDS, {
+					i(187858, {	-- Bunny Soul
+						["description"] = "Has a chance to be listed as a reward for players of the 'Night Fae' Covenant from Pet Battle World Quests.\n\nSwitch to Night Fae Covenant, and use '/attwq' to see if it's up!",
+						["timeline"] = { "added 9.1.5" },
+					}),
+				}),
 				q(60872, {	-- A Dangerous Harvest
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
@@ -96,11 +102,6 @@ _.Zones =
 				q(61947, {	-- Lurking In The Shadows
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
-					["g"] = {
-						i(187858, {	-- Bunny Soul
-							["timeline"] = { "added 9.1.5" },
-						}),
-					},
 				}),
 				q(61530, {	-- Mining: Ligneous Phaedrum Cluster
 					["requireSkill"] = MINING,

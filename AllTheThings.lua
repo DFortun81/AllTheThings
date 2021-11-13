@@ -10868,6 +10868,12 @@ app.CollectibleAsQuest = function(t)
 		);
 end
 
+-- These are Items rewarded by WQs which are treated as currency
+-- other Items which are 'costs' will not be excluded by the "WorldQuestsList:Currencies" setting
+app.WorldQuestCurrencyItems = {
+	[163036] = true,	-- Polished Pet Charms
+	[116415] = true,	-- Shiny Pet Charms
+};
 -- Will attempt to populate the rewards of the quest object into itself (will become the object's OnUpdate until populated or 15 rendered frames)
 app.TryPopulateQuestRewards = function(questObject)
 	if not questObject or not questObject.questID then return; end
@@ -10882,12 +10888,13 @@ app.TryPopulateQuestRewards = function(questObject)
 		questObject.g = nil;
 	end
 
-	-- app.DEBUG_PRINT = questObject.questID == 32901 and 32901;
+	-- app.DEBUG_PRINT = questObject.questID == 61949 and 61949;
 	-- if app.DEBUG_PRINT then print("TryPopulateQuestRewards",questObject.questID) end
 	-- print("TryPopulateQuestRewards",questObject.questID,questObject.missingItem,questObject.missingCurr)
 	if questObject.missingItem > 0 then
 		-- Get reward info
 		local numQuestRewards = GetNumQuestLogRewards(questObject.questID);
+		local skipCollectibleCurrencies = not app.Settings:GetTooltipSetting("WorldQuestsList:Currencies");
 		-- numQuestRewards will often be 0 for fresh questID API calls...
 		-- pre-emptively call the following API method as well to get cached data earlier for the next refresh
 		GetQuestLogRewardInfo(1, questObject.questID);
@@ -10909,18 +10916,16 @@ app.TryPopulateQuestRewards = function(questObject)
 					-- if item.itemID == 137483 then
 					-- 	app.DEBUG_PRINT = item.itemID;
 					-- 	print("item.initial parse")
-					-- 	app.PrintTable(item)
 					-- end
 					-- if app.DEBUG_PRINT then print("Parse Link", link) end
 					if item.itemID then
-						-- if app.DEBUG_PRINT then print(_, linkItemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID, bonusCount, bonusID1); end
 						local search = SearchForLink(link);
 						-- search will either match through bonusID, modID, or itemID in that priority
 
 						-- put all the item information into a basic table
-						-- if app.DEBUG_PRINT then app.PrintTable(item) end
-						-- block the group from being collectible as a cost if the option is not enabled
-						if not app.Settings:GetTooltipSetting("WorldQuestsList:Currencies") then
+						-- if app.DEBUG_PRINT then print("Base Item") app.PrintTable(item) end
+						-- block the group from being collectible as a cost if the option is not enabled for various 'currency' items
+						if skipCollectibleCurrencies and app.WorldQuestCurrencyItems[item.itemID] then
 							item.collectibleAsCost = false;
 						end
 						if search then
@@ -10942,7 +10947,7 @@ app.TryPopulateQuestRewards = function(questObject)
 								end
 								-- any matches with depth 0 will be nested
 								if refinedMatches[0] then
-									if app.DEBUG_PRINT then print("refined",0,#refinedMatches[0]) end
+									-- if app.DEBUG_PRINT then print("refined",0,#refinedMatches[0]) end
 									app.ArrayAppend(subItems, refinedMatches[0]);	-- no clone since item is cloned later
 								end
 							end
@@ -10954,6 +10959,7 @@ app.TryPopulateQuestRewards = function(questObject)
 						questObject.missingItem = 0;
 						-- don't let cached groups pollute potentially inaccurate raw Data
 						item.link = nil;
+						-- if app.DEBUG_PRINT then print("Final Item") app.PrintTable(item) end
 						NestObject(questObject, item, true);
 					end
 					-- if app.DEBUG_PRINT then app.DEBUG_PRINT = nil; end
@@ -10965,6 +10971,7 @@ app.TryPopulateQuestRewards = function(questObject)
 	-- Add info for currency rewards as containers for their respective collectibles
 	if questObject.missingCurr > 0 then
 		local numCurrencies = GetNumQuestLogRewardCurrencies(questObject.questID);
+		local skipCollectibleCurrencies = not app.Settings:GetTooltipSetting("WorldQuestsList:Currencies");
 		-- pre-emptively call the following API method as well to get cached data earlier for the next refresh
 		GetQuestLogRewardCurrencyInfo(1, questObject.questID);
 		-- numCurrencies will often be 0 for fresh questID API calls...
@@ -10977,7 +10984,7 @@ app.TryPopulateQuestRewards = function(questObject)
 				currencyID = tonumber(currencyID);
 				local item = { ["currencyID"] = currencyID };
 				-- block the group from being collectible as a cost if the option is not enabled
-				if not app.Settings:GetTooltipSetting("WorldQuestsList:Currencies") then
+				if skipCollectibleCurrencies then
 					item.collectibleAsCost = false;
 				end
 				_cache = SearchForField("currencyID", currencyID);
