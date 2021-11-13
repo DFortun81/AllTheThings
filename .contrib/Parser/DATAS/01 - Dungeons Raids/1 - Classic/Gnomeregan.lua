@@ -6,7 +6,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 	inst(231, {	-- Gnomeregan
 		["lvl"] = 19,
 		["maps"] = {
-			226,
+			GNOMEREGAN,
 			227,
 			228,
 			229,
@@ -267,12 +267,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 						6226,	-- Mechano-Flamewalker
 						6227,	-- Mechano-Frostwalker
 						6225,	-- Mechano-Tank
-						6230,	-- Peacekeeper Security Suit
-					},
-				}),
-				i(7360, {	-- Pattern: Dark Leather Gloves
-					["crs"] = {
-						7603,	-- Leprous Assistant
 						6230,	-- Peacekeeper Security Suit
 					},
 				}),

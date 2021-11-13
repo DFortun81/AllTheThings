@@ -1875,15 +1875,6 @@ _.Zones =
 						"removed 4.0.3.10000",
 					},
 				}),
-				q(2936, {	-- The Spider God
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3188 },	-- Master Gadrin
-					["sourceQuest"] = 2935,	-- Consult Master Gadrin
-					["timeline"] = {
-						"added 1.11.1.10958",
-						"removed 4.0.3.10000",
-					},
-				}),
 				q(39801, {	-- The Splintered Fleet
 					["sourceQuest"] = 39698,	-- Making the Rounds
 					["lvl"] = 98,

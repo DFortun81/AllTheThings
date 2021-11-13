@@ -307,6 +307,9 @@ root("Holidays", d(24, {  -- Timewalking
 					i(110050),	-- Dagger of the Sanguine Emeralds
 					i(110005),	-- Crystalline Blood Drop
 					i(110010),	-- Mote of Corruption
+					i(187905, {	-- Boar Soul
+						["timeline"] = { "added 9.1.5" },
+					}),
 				},
 			}),
 		}),

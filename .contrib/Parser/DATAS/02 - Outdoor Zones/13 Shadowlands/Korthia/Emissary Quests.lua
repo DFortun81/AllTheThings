@@ -20,7 +20,7 @@ _.Zones =
 				q(64266, {	-- Supplies from The Archivist's Codex
 					["repeatable"] = true,
 					["g"] = {
-						i(187028, {	-- Supplies of the Archivist's Codex
+						i(187028, {	-- Supplies of the Archivists' Codex
 							i(186641),	-- Tamed Mauler (MOUNT!)
 							i(186538),	-- Gnashtooth (PET!)
 						}),
@@ -33,6 +33,6 @@ _.Zones =
 _.HiddenQuestTriggers = {
 	q(64286),	-- Paragon of Death's Advance
 	q(64287),	-- Paragon of The Archivists' Codex
-	--q(64670),	-- Paragon of The Archivists' Codex??
+	q(64670),	-- triggered when turning in Supplies of the Archivists' Codex
 	q(64669),	-- triggered when turning in Supplies from Death's Advance
 };

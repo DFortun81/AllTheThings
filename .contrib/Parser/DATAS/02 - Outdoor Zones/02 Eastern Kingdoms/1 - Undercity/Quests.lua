@@ -69,28 +69,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(6521,  {	-- An Unholy Alliance
-					["provider"] = { "n", 36273 },	-- Bragor Bloodfist
-					["coord"] = { 56.1, 92.1, UNDERCITY },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(17042)),	-- Nail Splitter
-						un(REMOVED_FROM_GAME, i(17039)),	-- Skullbreaker
-						un(REMOVED_FROM_GAME, i(17043)),	-- Zealot's Robe
-					},
-				}),
-				q(14353, {	-- An Unholy Alliance
-					["sourceQuests"] = { 14352 },	-- An Unholy Alliance
-					["provider"] = { "n", 36273 },	-- Bragor Bloodfist
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(17039)),	-- Skullbreaker
-						un(REMOVED_FROM_GAME, i(17042)),	-- Nail Spitter
-						un(REMOVED_FROM_GAME, i(17043)),	-- Zealot's Robe
-					},
-				}),
 				q(3784,  {	-- Assisting Arch Druid Runetotem
 					["provider"] = { "n", 6741 },	-- Innkeeper Norman
 					["u"] = REMOVED_FROM_GAME,
@@ -452,27 +430,6 @@ _.Zones =
 					["provider"] = { "n", 10879 },	-- Harbinger Balthazad
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(5725,  {	-- The Power to Destroy
-					["provider"] = { "n", 2425 },	-- Varimathras
-					["coord"] = { 56.3, 92.2, UNDERCITY },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(15449)),	-- Ghastly Trousers
-						un(REMOVED_FROM_GAME, i(15450)),	-- Dredgemire Leggings
-						un(REMOVED_FROM_GAME, i(15451)),	-- Gargoyle Leggings
-					},
-				}),
-				q(14356, {	-- The Power to Destroy
-					["provider"] = { "n", 36273 },	-- Bragor Bloodfist
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(15449)),	-- Ghastly Trousers
-						un(REMOVED_FROM_GAME, i(15450)),	-- Dredgemire Leggings
-						un(REMOVED_FROM_GAME, i(15451)),	-- Gargoyle Leggings
-					},
 				}),
 				q(38404, {	-- The Same, But Different
 					["sourceQuests"] = { 38397 },	-- A Curious Oddity

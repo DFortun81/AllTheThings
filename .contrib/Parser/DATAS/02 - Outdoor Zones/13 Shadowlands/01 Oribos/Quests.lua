@@ -818,17 +818,18 @@ _.Zones =
 					["g"] = {
 						i(181685),	-- Gorewrought Barrier
 						i(181689),	-- Gorewrought Bonesaw
+						i(181693),	-- Gorewrought Crossbow
 						i(181690),	-- Gorewrought Crusher
 						i(181691),	-- Gorewrought Greatstaff
 						i(181694),	-- Gorewrought Greatsword
 						i(181696),	-- Gorewrought Shank
 						i(181695),	-- Gorewrought Shortsword
+						i(181697),	-- Gorewrought Spellblade
 						i(181688),	-- Gorewrought Stave
 						i(181686),	-- Gorewrought Tome
 						i(181684),	-- Gorewrought Wand
 						i(181692),	-- Gorewrought Warblade
 						i(181687),	-- Gorewrought Warglaive
-						-- TODO: more rewards
 					},
 				}),
 				-- Revendreth

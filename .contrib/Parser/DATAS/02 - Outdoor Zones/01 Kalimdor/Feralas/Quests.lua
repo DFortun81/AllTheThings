@@ -310,12 +310,6 @@ _.Zones =
 					["coord"] = { 77.2, 56.5, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(27063, {	-- Looming Threat
-					["provider"] = { "n", 40032 },	-- Telaron Windflight
-					["coord"] = { 50.7, 17.2, FERALAS },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-				}),
 				q(2853,  {	-- Master of the Wild Leather
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7852 },	-- Pratt McGrubben

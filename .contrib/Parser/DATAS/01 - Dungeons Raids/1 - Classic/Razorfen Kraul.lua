@@ -5,7 +5,7 @@
 _.Instances = { tier(CLASSIC_TIER, {
 	inst(234, {	-- Razorfen Kraul
 		["coord"] = { 41.0, 94.6, SOUTHERN_BARRENS },
-		["mapID"] = 301,
+		["mapID"] = RAZORFEN_KRAUL,
 		["lvl"] = 25,
 		["g"] = {
 			n(QUESTS, {

@@ -364,15 +364,6 @@ _.Zones =
 						28051,	-- We All Scream for Ice Cream... and then Die!
 					},
 				}),
-				q(2770,  {	-- Gahz'rilla
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 4453 },	-- Wizzle Brassbolts
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(11122)),	-- Carrot on a Stick
-						un(REMOVED_FROM_GAME, i(9653)),	-- Speedy Racer Goggles
-					},
-				}),
 				q(25757, {	-- Get Koalbeard!
 					["provider"] = { "n", 41184 },	-- Riznek
 					["coord"] = { 88.5, 54.8, THOUSAND_NEEDLES },
@@ -593,11 +584,6 @@ _.Zones =
 				q(1176,  {	-- Load Lightening
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4630 },	-- Pozzik
-				}),
-				q(27062, {	-- Looming Threat
-					["provider"] = { "n", 39895 },	-- Kanati Greycloud
-					["coord"] = { 11.1, 11.2, THOUSAND_NEEDLES },
-					["races"] = HORDE_ONLY,
 				}),
 				q(1106,  {	-- Martek the Exiled
 					["u"] = REMOVED_FROM_GAME,

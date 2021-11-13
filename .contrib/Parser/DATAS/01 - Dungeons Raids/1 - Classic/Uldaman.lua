@@ -5,7 +5,7 @@
 _.Instances = { tier(CLASSIC_TIER, {
 	inst(239, {	-- Uldaman
 		["lvl"] = 35,
-		["mapID"] = 230,
+		["mapID"] = ULDAMAN,
 		["maps"] = { 231 },
 		["coords"] = {
 			{ 36.63, 29.42, 16 },	-- Uldaman [Front], Uldaman [Badlands]

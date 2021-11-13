@@ -5,7 +5,7 @@
 _.GearSets =
 {
 	n(CLASS_TRIAL, {
-		n(LEVEL_FIFTY, bubbleDown({["u"] = BLIZZARD_BALANCE}, {
+		n(LEVEL_FIFTY_BOOST, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 			cl(PRIEST, {
 				i(170701),	-- Communal Staff	*LA0104
 				i(170857),	-- Communal Hood	*LA0104

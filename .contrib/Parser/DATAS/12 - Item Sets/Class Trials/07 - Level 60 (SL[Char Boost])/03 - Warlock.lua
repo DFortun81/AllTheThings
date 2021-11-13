@@ -4,7 +4,7 @@
 _.GearSets =
 { --[[ -- Disabled for now as a Lv50 Boost provides the Level 48 items. Confirmed by Timum 24.09.2021
 	n(CLASS_TRIAL, {
-		n(LEVEL_FIFTY, bubbleDown({["u"] = BLIZZARD_BALANCE}, {
+		n(LEVEL_FIFTY_BOOST, bubbleDown({["u"] = BLIZZARD_BALANCE}, {
 			cl(WARLOCK, {
 				i(170742),	-- Felsoul Stave
 				i(170905),	-- Felsoul Cowl

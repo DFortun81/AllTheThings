@@ -6,10 +6,6 @@ _.Zones = {
 	m(KALIMDOR, {
 		m(NORTHERN_BARRENS, {	-- NOTE:: using this map for legacy barrens quests since they reused the mapID
 			n(QUESTS, {
-				q(6626, {	-- A Host of Evil
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 12866 },	-- Myriam Moonsinger
-				}),
 				q(879,   {	-- Betrayal from Within
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
@@ -84,12 +80,6 @@ _.Zones = {
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3391 },	-- Gazlowe
 					["sourceQuest"] = 1178,	-- Goblin Sponsorship
-				}),
-				q(1489, {	-- Hamuul Runetotem
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3448 },	-- Tonga Runetotem
-					["sourceQuest"] = 880,	-- Altered Beings
 				}),
 				q(882,   {	-- Ishamuhale
 					["u"] = REMOVED_FROM_GAME,

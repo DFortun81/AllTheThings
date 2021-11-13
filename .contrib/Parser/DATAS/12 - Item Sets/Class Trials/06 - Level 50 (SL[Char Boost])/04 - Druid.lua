@@ -5,7 +5,7 @@
 _.GearSets =
 {
 	n(CLASS_TRIAL, {
-		n(LEVEL_FIFTY, bubbleDown({["u"] = BLIZZARD_BALANCE}, {
+		n(LEVEL_FIFTY_BOOST, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 			cl(DRUID, {
 				n(-9926, {	-- Balance
 					i(171988, { -- Adventurer's Footlocker	*LA0404Balance
