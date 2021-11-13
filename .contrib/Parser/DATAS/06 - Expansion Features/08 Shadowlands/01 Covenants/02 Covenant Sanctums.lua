@@ -336,6 +336,12 @@ _.ExpansionFeatures =
 						["coord"] = { 51.1, 38.0, SINFALL_REACHES },
 					}),
 				}),
+				n(REWARDS, {
+					i(188005),	-- Anima-Bathed Blade
+					i(188004),	-- Crate of Anima-Infused Parts
+					i(188003),	-- Crate of Revendreth Reserve
+					i(188000),	-- Grovetender's Pack
+				}),
 			},
 		}),
 	}),
