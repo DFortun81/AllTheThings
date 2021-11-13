@@ -321,7 +321,9 @@ settings.DeleteProfile = function(self, key)
 end
 -- Gets the Profile for the current character
 settings.GetProfile = function(self)
-	return AllTheThingsProfiles and AllTheThingsProfiles.Assignments[app.GUID] or DEFAULT;
+	if AllTheThingsProfiles then
+		return AllTheThingsProfiles.Assignments[app.GUID] or DEFAULT;
+	end
 end
 -- Sets a Profile for the current character
 settings.SetProfile = function(self, key)
@@ -4144,6 +4146,27 @@ ProfileScroller:SetPoint("BOTTOM", settings, "BOTTOM", 0, 20);
 settings.ApplyBackdropColor(ProfileScroller, 20, 20, 20, 1);
 ProfileSelector:SetHeight(100);
 
+-- Initialize Profiles Button
+local InitializeProfilesButton = settings:CreateButton(
+-- button settings
+{
+	text = L["PROFILE_INITIALIZE"],
+	tooltip = L["PROFILE_INITIALIZE_TOOLTIP"],
+},
+-- function hooks for the button
+{
+	["OnClick"] = function(self)
+		app:ShowPopupDialog(L["PROFILE_INITIALIZE_CONFIRM"],
+		function()
+			app.SetupProfiles();
+			OnClickForTab(tab);
+			app.Callback(self.Disable, self);
+		end);
+	end,
+});
+InitializeProfilesButton:SetPoint("TOPLEFT", ProfilesLabel, "TOPRIGHT", 10, 5);
+InitializeProfilesButton:Show();
+
 -- common function for setting the current profile
 local UseProfile = function(profile)
 	tab.SelectedProfile = nil;
@@ -4159,17 +4182,19 @@ refreshProfiles = function()
 	settings.MostRecentTab = tab;
 
 	-- update the current profile label
-	CurrentProfileNameLabel:SetText(settings:GetProfile());
+	local currentProfile = settings:GetProfile();
+	CurrentProfileNameLabel:SetText(currentProfile or NOT_APPLICABLE);
 
 	-- print("refresh profiles scrollbox")
 	local settingProfileItems = {};
 	if AllTheThingsProfiles then
+		-- buttons have no OnRefresh script, so have to hide it externally
+		InitializeProfilesButton:Hide();
+
 		for k,v in pairs(AllTheThingsProfiles.Profiles) do
 			-- print("added",k)
 			tinsert(settingProfileItems, k);
 		end
-	else
-		tinsert(settingProfileItems, DEFAULT);
 	end
 	-- sort the profiles
 	app.insertionSort(settingProfileItems, function(a,b) return string.lower(a) < string.lower(b); end);
@@ -4345,144 +4370,6 @@ local DeleteProfileButton = settings:CreateButton(
 });
 DeleteProfileButton:SetPoint("BOTTOMLEFT", ProfileScroller, "BOTTOMRIGHT", 5, 0);
 DeleteProfileButton:Show();
-
--- local TooltipModifierShiftCheckBox = settings:CreateCheckBox(L["TOOLTIP_MOD_SHIFT"],
--- function(self)
--- 	self:SetChecked(settings:GetTooltipSetting("Enabled:Mod") == "Shift");
--- 	if not settings:GetTooltipSetting("Enabled") then
--- 		self:Disable();
--- 		self:SetAlpha(0.2);
--- 	else
--- 		self:SetAlpha(1);
--- 		-- act like a radio button
--- 		if not self:GetChecked() then
--- 			self:Enable();
--- 		else
--- 			self:Disable();
--- 		end
--- 	end
--- end,
--- function(self)
--- 	if self:GetChecked() then
--- 		settings:SetTooltipSetting("Enabled:Mod", "Shift");
--- 	end
--- end);
--- TooltipModifierShiftCheckBox:SetPoint("TOP", TooltipModifierNoneCheckBox, "TOP", 0, 0);
--- TooltipModifierShiftCheckBox:SetPoint("LEFT", TooltipModifierNoneCheckBox.Text, "RIGHT", 4, 0);
-
-
-
---- test TextBoxes
-
--- Virtual EditBox AuctionHouseLevelRangeEditBoxTemplate
--- Virtual EditBox AuctionHouseQuantityInputEditBoxTemplate
--- Virtual EditBox AuctionHouseSearchBoxTemplate
--- Virtual EditBox AuthChallengeEditBoxTemplate
--- Virtual EditBox AutoCompleteEditBoxTemplate
--- Virtual EditBox BagSearchBoxTemplate
--- Virtual EditBox ChatFrameEditBoxTemplate
--- Virtual EditBox CommunitiesChatEditBoxTemplate
--- Virtual EditBox CreateChannelPopupEditBoxTemplate
--- Virtual EditBox InputBoxTemplate
--- Virtual EditBox LargeInputBoxTemplate
--- Virtual EditBox LargeMoneyInputBoxTemplate
--- Virtual EditBox LFGListEditBoxTemplate
--- Virtual EditBox NameChangeEditBoxTemplate
--- Virtual EditBox SearchBoxTemplate
--- Virtual EditBox SharedEditBoxTemplate
--- Virtual EditBox StoreEditBoxTemplate
-
-local previous = NewProfileTextBox;
-local textboxTemplates = {
-	"AuctionHouseLevelRangeEditBoxTemplate",
-	"AuctionHouseQuantityInputEditBoxTemplate",
-	"AuctionHouseSearchBoxTemplate",
-	-- "AuthChallengeEditBoxTemplate",
-	"AutoCompleteEditBoxTemplate",
-	"BagSearchBoxTemplate",
-	-- "ChatFrameEditBoxTemplate",
-	"CommunitiesChatEditBoxTemplate",
-	"CreateChannelPopupEditBoxTemplate",
-	"InputBoxTemplate",
-	"LargeInputBoxTemplate",
-	"LargeMoneyInputBoxTemplate",
-	"LFGListEditBoxTemplate",
-	"NameChangeEditBoxTemplate",
-	"ScrollingEditBoxTemplate",
-	"SharedEditBoxTemplate",
-	-- "StoreEditBoxTemplate",
-}
-
-local createTextbox = function(template)
-	local tb = settings:CreateTextbox(
-	{
-		title = template,
-		width = 150,
-		template = template,
-	});
-	tb:SetPoint("TOPLEFT", previous, "BOTTOMLEFT", 0, 4);
-	tb:Show();
-	previous = tb;
-end
-
--- for _,template in ipairs(textboxTemplates) do
--- 	print("create template:",template,pcall(createTextbox,template))
--- end
-
---- test DropDowns
-
--- Virtual Frame AdvancedVideoOptionsDropDownMenuTemplate
--- Virtual Frame AuctionHouseFilterDropDownMenuTemplate
--- Virtual Frame CommunitiesFrameMemberListDropDownMenuTemplate
--- Virtual Frame CommunitiesListDropDownMenuTemplate
--- Virtual Frame CommunityMemberListDropDownMenuTemplate
--- Virtual Frame GuildMemberListDropDownMenuTemplate
--- Virtual Frame LargeUIDropDownMenuTemplate
--- Virtual Frame RaidVideoOptionsDropDownMenuTemplate
--- Virtual Frame StoreDropDownMenuTemplate
--- Virtual Frame StreamDropDownMenuTemplate
--- Virtual Frame UIDropDownMenuTemplate
--- Virtual Frame UIMenuTemplate
--- Virtual Frame VideoOptionsDropDownMenuTemplate
-
-previous = NewProfileTextBox;
-local dropdownTemplates = {
-	-- "AdvancedVideoOptionsDropDownMenuTemplate",
-	-- "AuctionHouseFilterDropDownMenuTemplate",
-	-- "CommunitiesFrameMemberListDropDownMenuTemplate",
-	-- "CommunitiesListDropDownMenuTemplate",
-	-- "CommunityMemberListDropDownMenuTemplate",
-	-- "GuildMemberListDropDownMenuTemplate",
-	-- "LargeUIDropDownMenuTemplate",
-	-- "RaidVideoOptionsDropDownMenuTemplate",
-	-- "StoreDropDownMenuTemplate",
-	-- "StreamDropDownMenuTemplate",
-	"UIDropDownMenuTemplate",
-	-- "UIMenuTemplate",
-	-- "VideoOptionsDropDownMenuTemplate",
-}
-
-local createDropdown = function(template)
-	local tb = settings:CreateDropdown(
-	{
-		items = { template },
-		defaultVal = template,
-		changeFunc = settingProfileChange,
-		title = template,
-		width = 150,
-		template = template,
-	});
-	tb:SetPoint("TOPLEFT", previous, "BOTTOMLEFT", 0, 4);
-	tb:Show();
-	previous = tb;
-end
-
--- for _,template in ipairs(dropdownTemplates) do
--- 	print("create dropdown template:",template,pcall(createDropdown,template))
--- end
-
-
-
 
 end)();
 

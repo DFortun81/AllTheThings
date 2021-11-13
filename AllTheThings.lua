@@ -20104,7 +20104,12 @@ app.SetupProfiles = function()
 			end
 		end
 	end
-	ATTProfiles.Profiles[DEFAULT] = default;
+
+	-- pull in window data for the default profile
+	for _,window in pairs(app.Windows) do
+		window:StorePosition();
+	end
+
 	app.print("Initialized ATT Profiles!");
 
 	-- delete old variables
