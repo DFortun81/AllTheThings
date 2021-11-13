@@ -694,8 +694,12 @@ for key,value in pairs({
 		[-131] = "辛特兰 "..GetSpellInfo(133137),					-- The Hinterlands Active
 		[-132] = "菲拉斯 "..GetSpellInfo(133137),					-- Feralas Active
 		[-133] = "暮色森林 "..GetSpellInfo(78741),					-- Duskwood Activated
+	-- Class Trial
+		--TODO: [-148] = string.format(SPELLBOOK_AVAILABLE_AT, 50).." ".."(Trial)",	-- Level 50 (Trial)
 	-- Garrison
 		[-152] = "要塞战役",											-- Garrison Campaign
+	-- Class Trial
+		--TODO: [-155] = string.format(SPELLBOOK_AVAILABLE_AT, 50).." ".."(Boost)",	-- Level 50 (Boost)
 	-- Druid Feral Druid Hidden Artifact Appearance
 		[-157] = "辛特兰 "..GetSpellInfo(78741),						-- The Hinterlands Activated
 		[-158] = "菲拉斯 "..GetSpellInfo(78741),						-- Feralas Activated
