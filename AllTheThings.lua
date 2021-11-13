@@ -4750,6 +4750,7 @@ local CacheFields;
 local _cache;
 (function()
 local currentMaps = {};
+local currentInstance;
 local fieldCache_g,fieldCache_f, fieldConverters;
 local function CacheField(group, field, value)
 	fieldCache_g = rawget(fieldCache, field);
@@ -4957,14 +4958,14 @@ fieldConverters = {
 		end
 	end,
 	["coord"] = function(group, value)
-		-- don't cache mapID from coord for anything which is inside an Instance
-		if not GetRelativeField(group, "key", "instanceID") then
+		-- don't cache mapID from coord for anything which is itself an actual instance
+		if currentInstance ~= group then
 			if value[3] then cacheMapID(group, value[3], true); end
 		end
 	end,
 	["coords"] = function(group, value)
-		-- don't cache mapID from coord for anything which is inside an Instance
-		if not GetRelativeField(group, "key", "instanceID") then
+		-- don't cache mapID from coord for anything which is itself an actual instance
+		if currentInstance ~= group then
 			for _,coord in ipairs(value) do
 				if coord[3] then cacheMapID(group, coord[3], true); end
 			end
@@ -5033,6 +5034,10 @@ CacheFields = function(group)
 			n = n + 1;
 		end
 	end
+	-- track if this group is a 'real' instance (instanceID + mapID/maps)
+	if not currentInstance and group.key == "instanceID" and (group.mapID or group.maps) then
+		currentInstance = group;
+	end
 	for _,k in ipairs(keys) do
 		_cache = rawget(fieldConverters, k);
 		if _cache then
@@ -5055,6 +5060,10 @@ CacheFields = function(group)
 		for key,value in pairs(mapKeys) do
 			rawget(mapKeyUncachers, key)(group, value);
 		end
+	end
+	-- clear the 'real' instance if this group was it
+	if currentInstance and currentInstance == group then
+		currentInstance = nil;
 	end
 end
 end)();
@@ -16691,12 +16700,13 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				return { g = { group }, ["sort"] = true, ["collectible"] = false, };
 			end
 		end
-		-- set of keys for headers which can be nested in the minilist automatically, but not as a direct top header
+		-- set of keys for headers which can be nested in the minilist automatically, but not confined to a direct top header
 		local subGroupKeys = {
 			["filterID"] = app.CreateFilter,
 			["professionID"] = app.CreateProfession,
 			["raceID"] = app.CreateRace,
 			["holidayID"] = app.CreateHoliday,
+			["instanceID"] = app.CreateInstance,
 		};
 		-- Keep a static collection of top-level groups in the list so they can just be referenced for adding new
 		local topHeaders = {
