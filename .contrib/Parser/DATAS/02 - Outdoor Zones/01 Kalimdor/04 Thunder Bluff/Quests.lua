@@ -54,17 +54,6 @@ _.Zones =
 					["coord"] = { 77.0, 27.4, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 				}),
-				q(1102,  {	-- A Vengeful Fate
-					["provider"] = { "n", 4451 },	-- Auld Stonespire
-					["coord"] = { 36.2, 59.8, THUNDER_BLUFF },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(4197)),	-- Berylline Pads
-						un(REMOVED_FROM_GAME, i(6742)),	-- Stonefist Girdle
-						un(REMOVED_FROM_GAME, i(6725)),	-- Marbled Buckler
-					},
-				}),
 				q(5088,  {	-- Arikara
 					["provider"] = { "n", 4046 },	-- Magatha Grimtotem
 					["coord"] = { 69.9, 30.9, THUNDER_BLUFF },

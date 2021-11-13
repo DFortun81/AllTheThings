@@ -180,14 +180,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(1109,  {	-- Going, Going, Guano
-					["provider"] = { "n", 2055 },	-- Master Apothecary Faranell
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(24899, {	-- Going, Going, Guano!
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(5050,  {	-- Good Luck Charm
 					["sourceQuests"] = { 5049 },	-- The Jeremiah Blues
 					["provider"] = { "n", 8403 },	-- Jeremiah Payson

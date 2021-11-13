@@ -387,8 +387,6 @@ _.WorldDrops =
 				i(11993),	-- Clay Ring
 				i(11984),	-- Cobalt Ring
 				i(11994),	-- Coral Band
-				un(REMOVED_FROM_GAME, i(1077)),	-- Defias Mage Ring
-				un(REMOVED_FROM_GAME, i(1076)),	-- Defias Renegade Ring
 				i(12054),	-- Demon Band
 				i(12058),	-- Demonic Bone Ring
 				i(12013),	-- Desert Ring

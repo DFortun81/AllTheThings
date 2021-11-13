@@ -18,10 +18,6 @@ _.Zones = {
 					["provider"] = { "n", 3430 },	-- Mangletooth
 					["sourceQuest"] = 878,	-- Tribes at War
 				}),
-				q(1221,  {	-- Blueleaf Tubers
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 3446 },	-- Mebok Mizzyrix
-				}),
 				q(819,   {	-- Chen's Empty Keg
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,

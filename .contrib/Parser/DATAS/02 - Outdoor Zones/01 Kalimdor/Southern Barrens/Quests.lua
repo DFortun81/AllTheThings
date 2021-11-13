@@ -299,9 +299,6 @@ _.Zones =
 						i(131407),	-- Singleton Gauntlets
 					},
 				}),
-				q(24898, {	-- Going, Going, Guano!
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(25106, {	-- Hands Off Me Dig!
 					["provider"] = { "n", 39155 },	-- Marley Twinbraid
 					["coord"] = { 47.1, 88.5, SOUTHERN_BARRENS },

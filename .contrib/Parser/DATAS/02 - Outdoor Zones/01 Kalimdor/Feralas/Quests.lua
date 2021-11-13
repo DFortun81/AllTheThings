@@ -684,17 +684,6 @@ _.Zones =
 						i(54949),	-- Hadoken Band
 					},
 				}),
-				q(1101,  {	-- The Crone of the Kraul
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 4048 },	-- Falfindel Waywarder
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(4197)),	-- Berylline Pads
-						un(REMOVED_FROM_GAME, i(29200)),	-- Falfindel's Blaster
-						un(REMOVED_FROM_GAME, i(6725)),	-- Marbled Buckler
-						un(REMOVED_FROM_GAME, i(6742)),	-- Stonefist Girdle
-					},
-				}),
 				q(25422, {	-- The Darkmist Legacy
 					["provider"] = { "n", 40131 },	-- Sensiria
 					["coord"] = { 65.9, 62.8, FERALAS },
