@@ -498,6 +498,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				},
 				["timeline"] = { "added 1.4.0", "removed 4.0.1" },
 				["maps"] = { THUNDER_BLUFF },
+				["races"] = HORDE_ONLY,
 				["lvl"] = lvlsquish(10, 10, 10),
 				["groups"] = {
 					objective(1, {	-- 0/1 Cairne's Hoofprint
@@ -624,6 +625,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				["sourceQuest"] = 172,	-- Children's Week [Horde - Orc]
 				["timeline"] = { "added 1.4.0", "removed 4.0.1" },
 				["maps"] = { THE_BARRENS },
+				["races"] = HORDE_ONLY,
 				["lvl"] = lvlsquish(10, 10, 10),
 				["groups"] = {
 					objective(1, {	-- Go to the docks of Ratchet in the Barrens.
@@ -640,6 +642,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				["sourceQuest"] = 172,	-- Children's Week [Horde - Orc]
 				["timeline"] = { "added 1.4.0", "removed 4.0.1" },
 				["maps"] = { THE_BARRENS },
+				["races"] = HORDE_ONLY,
 				["lvl"] = lvlsquish(10, 10, 10),
 				["groups"] = {
 					objective(1, {	-- Go to the Mor'shan Rampart in the Barrens.
@@ -712,6 +715,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				},
 				["timeline"] = { "added 1.4.0", "removed 4.0.1" },
 				["maps"] = { DUSTWALLOW_MARSH },
+				["races"] = ALLIANCE_ONLY,
 				["lvl"] = lvlsquish(10, 10, 10),
 				["groups"] = {
 					objective(1, {	-- 0/1 Jaina's Autograph
@@ -1037,6 +1041,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				["sourceQuest"] = 1468,	-- Children's Week [Alliance - Human]
 				["timeline"] = { "added 1.4.0", "removed 4.0.1" },
 				["maps"] = { WESTFALL },
+				["races"] = ALLIANCE_ONLY,
 				["lvl"] = lvlsquish(10, 10, 10),
 				["groups"] = {
 					objective(1, {	-- Go to the Westfall Lighthouse.
@@ -1116,6 +1121,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				["sourceQuest"] = 1468,	-- Children's Week [Alliance - Human]
 				["timeline"] = { "added 1.4.0", "removed 4.0.1" },
 				["maps"] = { DARNASSUS },
+				["races"] = ALLIANCE_ONLY,
 				["lvl"] = lvlsquish(10, 10, 10),
 				["groups"] = {
 					objective(1, {	-- Go to the bank in Darnassus, otherwise known as the Bough of the Eternals.
@@ -1324,6 +1330,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				["sourceQuest"] = 1468,	-- Children's Week [Alliance - Human]
 				["timeline"] = { "added 1.4.0", "removed 4.0.1" },
 				["maps"] = { LOCH_MODAN },
+				["races"] = ALLIANCE_ONLY,
 				["lvl"] = lvlsquish(10, 10, 10),
 				["groups"] = {
 					objective(1, {	-- Go to the top of the Stonewrought Dam in Loch Modan.
