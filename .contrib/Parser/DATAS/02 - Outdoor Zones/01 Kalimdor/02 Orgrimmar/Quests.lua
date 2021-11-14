@@ -1299,17 +1299,6 @@ _.Zones =
 					["classes"] = { DRUID },
 					["coord"] = { 35.0, 67.6, ORGRIMMAR },	-- Sesebi
 				}),
-				q(2283,  {	-- Necklace Recovery
-					["provider"] = { "n", 6986 },	-- Dran Droffers
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(2284,  {	-- Necklace Recovery, Take 2
-					["sourceQuests"] = { 2283 },	-- Necklace Recovery
-					["provider"] = { "n", 6986 },	-- Dran Droffers
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(2950,  {	-- Nogg's Ring Redo
 					["sourceQuests"] = { 2949 },	-- Return of the Ring
 					["provider"] = { "n", 3412 },	-- Nogg

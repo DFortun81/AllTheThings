@@ -624,29 +624,11 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(9634)),	-- Skilled Handling Gloves
 					},
 				}),
-				q(2977,  {	-- Return to Ironforge
-					["model"] = 201041,
-					["coord"] = { 37.6, 81.4, TANARIS },
-					["provider"] = { "o", 142343 },	-- Uldum Pedestal
-					["sourceQuest"] = 2954,	-- The Stone Watcher
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 45,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(53819, {	-- Return to the Nest
 					["provider"] = { "n", 151132 },	-- Feathers
 					["coord"] = { 62.1, 45.3, TANARIS },
 					["sourceQuest"] = 53818,	-- Re-parrot / Programming On The Fly
 					["lvl"] = 120,
-				}),
-				q(2967,  {	-- Return to Thunder Bluff
-					["model"] = 201041,
-					["coord"] = { 37.6, 81.4, TANARIS },
-					["provider"] = { "o", 142343 },	-- Uldum Pedestal
-					["sourceQuest"] = 2954,	-- The Stone Watcher
-					["races"] = HORDE_ONLY,
-					["lvl"] = 45,
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(24905, {	-- Returning a Favor
 					["provider"] = { "n", 38706 },	-- Zeke Bootscuff
@@ -929,16 +911,6 @@ _.Zones =
 						3445,	-- The Sunken Temple (A)
 						3380,	-- The Sunken Temple (H)
 					},
-				}),
-				q(2954,  {	-- The Stone Watcher
-					["provider"] = { "n", 7918 },	-- Stone Watcher of Norgannon
-					["coord"] = { 37.6, 81.4, TANARIS },
-					["sourceQuests"] = {
-						2966,	-- Seeing What Happens [Horde]
-						2946,	-- Seeing What Happens [Alliance]
-					},
-					["lvl"] = 45,
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(2741, {	-- The Super Egg-O-Matic
 					["u"] = REMOVED_FROM_GAME,

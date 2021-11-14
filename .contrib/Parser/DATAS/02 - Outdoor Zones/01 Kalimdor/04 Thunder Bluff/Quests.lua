@@ -26,27 +26,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(2968,  {	-- A Future Task
-					["sourceQuests"] = { 2967 },	-- Return to Thunder Bluff
-					["provider"] = { "n", 3978 },	-- Sage Truthseeker
-					["coord"] = { 34.4, 46.9, THUNDER_BLUFF },
-					["timeline"] = { "removed 4.0.3.10000" },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						un(TBC_PHASE_ONE, i(34421, {	-- Cave Crawler's Mail Treads
-							["timeline"] = {
-								"added 2.3.0.10000",
-								"removed 4.0.3.10000",
-							},
-						})),
-						un(TBC_PHASE_ONE, i(34422, {	-- Tempered Thorium Boots
-							["timeline"] = {
-								"added 2.3.0.10000",
-								"removed 4.0.3.10000",
-							},
-						})),
-					},
-				}),
 				q(27283, {	-- A Journey to Moonglade
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 3034 },	-- Sheal Runetotem
@@ -180,13 +159,6 @@ _.Zones =
 					["provider"] = { "n", 9087 },	-- Bashana Runetotem
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(2965,  {	-- Portents of Uldum
-					["sourceQuests"] = { 2440 },	-- The Platinum Discs
-					["provider"] = { "n", 3978 },	-- Sage Truthseeker
-					["coord"] = { 34.8, 47.8, THUNDER_BLUFF },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(1123,  {	-- Rabine Saturna
 					["sourceQuests"] = { 1000, 1004, 1018 },	-- 3x versions of The New Frontier
 					["provider"] = { "n", 5769 },	-- Arch Druid Hamuul Runetotem
@@ -224,13 +196,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(2966,  {	-- Seeing What Happens
-					["sourceQuests"] = { 2965 },	-- Portents of Uldum
-					["provider"] = { "n", 5770 },	-- Nara Wildmane
-					["coord"] = { 75.6, 31.6, THUNDER_BLUFF },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(1131,  {	-- Steelsnap
 					["sourceQuests"] = { 1130 },	-- Melor Sends Word
 					["provider"] = { "n", 3441 },	-- Melor Stonehoof
@@ -258,16 +223,6 @@ _.Zones =
 					["provider"] = { "n", 10881 },	-- Bluff Runner Windstrider
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(2440,  {	-- The Platinum Discs
-					["sourceQuests"] = { 2280 },	-- The Platinum Discs
-					["provider"] = { "n", 3978 },	-- Sage Truthseeker
-					["coord"] = { 34.8, 47.8, THUNDER_BLUFF },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(9587)),	-- Thawpelt Sack
-					},
 				}),
 				q(1195,  {	-- The Sacred Flame
 					["provider"] = { "n", 4721 },	-- Zangen Stonehoof

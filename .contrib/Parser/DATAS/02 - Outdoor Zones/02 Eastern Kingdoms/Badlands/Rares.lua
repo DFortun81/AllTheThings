@@ -31,14 +31,6 @@ _.Zones =
 				n(50728, {	-- Deathstrike
 					["coord"] = { 70.2, 53.8, BADLANDS },
 				}),
-				n(7057,  {	-- Digmaster Shovelphlange
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(9375)),	-- Expert Goldmaker's Helmet
-						un(REMOVED_FROM_GAME, i(9378)),	-- Shovelphlange's Mining Axe
-						un(REMOVED_FROM_GAME, i(9382)),	-- Tromping Miner's Boots
-					},
-				}),
 				n(2719,  {	-- Dustbelcher Lord
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {

@@ -18,29 +18,6 @@ _.Zones =
 						}),
 					},
 				}),
-				q(2964,  {	-- A Future Task
-					["sourceQuests"] = { 2977 },	-- Return to Ironforge
-					["provider"] = { "n", 2916 },	-- Historian Karnik
-					["coord"] = { 77.4, 11.6, IRONFORGE },
-					["timeline"] = { "removed 4.0.3.10000" },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(34418, {	-- Scrying Wand
-							["timeline"] = {
-								"added 2.3.0.10000",
-								"removed 4.0.3.10000",
-							},
-						}),
-						-- #if BEFORE MOP
-						i(34419, {	-- Thorium Flight Blade
-							["timeline"] = {
-								"added 2.3.0.10000",
-								"removed 4.0.3.10000",
-							},
-						}),
-						-- #endif
-					},
-				}),
 				q(700,   {	-- A King's Tribute
 					["provider"] = { "n", 2790 },	-- Grand Mason Marblesten
 					["coord"] = { 38.4, 87.2, IRONFORGE },
@@ -238,13 +215,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(2963,  {	-- Portents of Uldum
-					["sourceQuests"] = { 2439 },	-- The Platinum Discs
-					["provider"] = { "n", 5387 },	-- High Explorer Magellas
-					["coord"] = { 70.6, 17.0, IRONFORGE },
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(302,   {	-- Powder to Ironband
 					["sourceQuests"] = { 301 },	-- Report to Ironforge
 					["provider"] = { "n", 1356 },	-- Prospector Stormpike
@@ -269,13 +239,6 @@ _.Zones =
 					["provider"] = { "n", 1573 },	-- Gryth Thurden
 					["coord"] = { 55.8, 47.8, IRONFORGE },
 					["races"] = { DWARF, GNOME },
-				}),
-				q(2946,  {	-- Seeing What Happens
-					["sourceQuests"] = { 2963 },	-- Portents of Uldum
-					["provider"] = { "n", 2916 },	-- Historian Karnik
-					["coord"] = { 77.4, 11.6, IRONFORGE },
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(32317, {	-- Seeking the Soulstones
 					["sourceQuests"] = { 32310 },	-- A Tale of Six Masters

@@ -126,12 +126,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 5394 },	-- Neeka Bloodscar
 				}),
-				q(2340, {	-- Deliver the Gems
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 6868 },	-- Jarkal Mossmeld
-					["sourceQuest"] = 2339,	-- Find the Gems and Power Source
-				}),
 				q(27930, {	-- Devastation
 					["coord"] = { 15.9, 33.2, BADLANDS },
 					["description"] = "If you abandon this quest, leave the area then return to the cave.",
@@ -177,12 +171,6 @@ _.Zones =
 					["coord"] = { 20.5, 56.0, BADLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27827 },	-- The Swift, the Fierce, and the Stout
-				}),
-				q(2339, {	-- Find the Gems and Power Source
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 6868 },	-- Jarkal Mossmeld
-					["sourceQuest"] = 2338,	-- Translating the Journal
 				}),
 				q(27765, {	-- First Sample: Wild Eggs
 					["provider"] = { "n", 46654 },	-- Rhea
@@ -328,13 +316,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(6732)),	-- Gnomish Mechanic's Gloves
 					},
 				}),
-				q(2341,  {	-- Necklace Recovery, Take 3
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(7888)),		-- Jarkal's Enhancing Necklace
-					},
-				}),
 				q(27889, {	-- New Kargath
 					["provider"] = { "n", 46664 },	-- Dr. Hieronymus Blam
 					["coord"] = { 46.8, 56.2, BADLANDS },
@@ -374,13 +355,6 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 5394 },	-- Neeka Bloodscar
-				}),
-				q(2361,  {	-- Restoring the Necklace
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(7673)),		-- Talvash's Enhancing Necklace
-					},
 				}),
 				q(27794, {	-- Return to Blam (A)
 					["coord"] = { 50.2, 53.2, BADLANDS },
@@ -547,13 +521,6 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 2785 },	-- Theldurin the Lost
 					["sourceQuest"] = 687,	-- Theldurin the Lost
-				}),
-				q(1139,  {	-- The Lost Tablets of Will
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(6723)),		-- Medal of Courage
-					},
 				}),
 				q(27877, {	-- The Morons' League
 					["provider"] = { "n", 46759 },	-- Lidia Sunglow
@@ -776,12 +743,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(2338, {	-- Translating the Journal
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 6868 },	-- Jarkal Mossmeld
-					["sourceQuest"] = 2318,	-- Translating the Journal
 				}),
 				q(717,   {	-- Tremors of the Earth
 					["u"] = REMOVED_FROM_GAME,

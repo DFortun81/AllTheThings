@@ -599,11 +599,6 @@ _.Zones =
 						i(156976),	-- Staff of Memory
 					},
 				}),
-				q(1956, {	-- Power in Uldaman
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["classes"] = { MAGE },
-				}),
 				q(27245, {	-- Prisoners of the Grimtotems (awarded "Prisoners of the Grimtotem" criteria)
 					["provider"] = { "n", 23723 },	-- Sergeant Lukas
 					["coord"] = { 46.5, 22.9, DUSTWALLOW_MARSH },
