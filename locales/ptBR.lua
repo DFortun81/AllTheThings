@@ -978,12 +978,14 @@ for key,value in pairs({
 	[21042] = "Insígnia da Guarda de Theramore",	-- Theramore Guard Badge
 	[35251] = "Baú de Karnitol",	-- Karnitol's Chest
 	[112948] = "Cofre Trancado do Intrépido",	-- Intrepid's Locked Strongbox
+	[113757] = "Baú de Umbraforja",	-- Shadowforge Cache
 	[123329] = "Baú de Baelog",	-- Baelog's Chest
+	[125477] = "Urna Evidente",	-- Conspicuous Urn
 	[131474] = "Os Discos de Norgannon",	-- The Discs of Norgannon
-	[131979] = "Baú de Lenhanegra Grande",	-- Large Darkwood Chest
 	[138492] = "Estilhaços de Myzrael",	-- Shards of Myzrael
 	[141979] = "Tesouro Antigo",	-- Ancient Treasure
 	[142071] = "Ovomático",	-- Egg-O-Matic	--TODO: This was taken from classic Wowhead
+	[142088] = "Tabuleta da Vontade",	-- Tablet of Will
 	[142122] = "Cartaz de Procura-se",	-- Wanted Poster
 	[142127] = "Segredo de Rin'ji",	-- Rin'ji's Secret
 	[142151] = "Barril Lacrado",	-- Sealed Barrel
@@ -2144,6 +2146,7 @@ for key,value in pairs({
 	[252563] = "|cFFFFFFFFStep 9:|r Orbe Faminto VII",	-- |cFFFFFFFFStep 9:|r Hungering Orb VII
 	[252564] = "|cFFFFFFFFStep 10:|r Orbe Faminto VIII",	-- |cFFFFFFFFStep 10:|r Hungering Orb VIII
 	[252565] = "|cFFFFFFFFStep 11:|r Orbe Faminto IX",	-- |cFFFFFFFFStep 11:|r Hungering Orb IX
+	[252570] = "Baú de Riquezas da Fortaleza Celeste",	-- Skyhold Chest of Riches
 	[252802] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
 	[252803] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
 	[252805] = "Baú do Tesouro",	-- Treasure Chest

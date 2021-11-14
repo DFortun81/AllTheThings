@@ -977,12 +977,14 @@ for key,value in pairs({
 	[21042] = "Ecusson de la garde de Theramore",	-- Theramore Guard Badge
 	[35251] = "Coffre de Karnitol",	-- Karnitol's Chest
 	[112948] = "Coffre verrouillé de l'Intrépide",	-- Intrepid's Locked Strongbox
+	[113757] = "Cachette d'Ombreforge",	-- Shadowforge Cache
 	[123329] = "Coffre de Baelog",	-- Baelog's Chest
+	[125477] = "Urne ostentatoire",	-- Conspicuous Urn
 	[131474] = "Les disques de Norgannon",	-- The Discs of Norgannon
-	[131979] = "Grand coffre de sombrebois",	-- Large Darkwood Chest
 	[138492] = "Fragments de Myzrael",	-- Shards of Myzrael
 	[141979] = "Trésor ancien",	-- Ancient Treasure
 	[142071] = "Œuf-O-Matic",	-- Egg-O-Matic
+	[142088] = "Tablette de volonté",	-- Tablet of Will
 	[142122] = "Avis de recherche",	-- Wanted Poster
 	[142127] = "Secret de Rin'ji",	-- Rin'ji's Secret
 	[142151] = "Tonneau scellé",	-- Sealed Barrel
@@ -2143,6 +2145,7 @@ for key,value in pairs({
 	[252563] = "|cFFFFFFFFStep 9:|r Orbe affamé VII",	-- |cFFFFFFFFStep 9:|r Hungering Orb VII
 	[252564] = "|cFFFFFFFFStep 10:|r Orbe affamé VIII",	-- |cFFFFFFFFStep 10:|r Hungering Orb VIII
 	[252565] = "|cFFFFFFFFStep 11:|r Orbe affamé IX",	-- |cFFFFFFFFStep 11:|r Hungering Orb IX
+	[252570] = "Coffre de richesses du Séjour céleste",	-- Skyhold Chest of Riches
 	[252802] = "Petit coffre au trésor",	-- Small Treasure Chest
 	[252803] = "Petit coffre au trésor",	-- Small Treasure Chest
 	[252805] = "Coffre au trésor",	-- Treasure Chest

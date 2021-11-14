@@ -977,12 +977,14 @@ for key,value in pairs({
 	[21042] = "테라모어 경비병 휘장",	-- Theramore Guard Badge
 	[35251] = "카니톨의 궤짝",	-- Karnitol's Chest
 	[112948] = "용감무쌍호의 잠긴 금고",	-- Intrepid's Locked Strongbox
+	[113757] = "어둠괴철로 금고",	-- Shadowforge Cache
 	[123329] = "밸로그의 궤짝",	-- Baelog's Chest
+	[125477] = "특이한 항아리",	-- Conspicuous Urn
 	[131474] = "노르간논의 원반",	-- The Discs of Norgannon
-	[131979] = "큰 흑단 궤짝",	-- Large Darkwood Chest
 	[138492] = "미즈라엘의 결정",	-- Shards of Myzrael
 	[141979] = "고대의 보물",	-- Ancient Treasure
 	[142071] = "자동부화기",	-- Egg-O-Matic	--TODO: This was taken from classic Wowhead
+	[142088] = "결의의 서판",	-- Tablet of Will
 	[142122] = "현상 수배 전단",	-- Wanted Poster
 	[142127] = "린지의 비밀",	-- Rin'ji's Secret	--TODO: This was taken from classic Wowhead
 	[142151] = "봉인된 통",	-- Sealed Barrel
@@ -2143,6 +2145,7 @@ for key,value in pairs({
 	[252563] = "|cFFFFFFFFStep 9:|r 굶주린 보주 VII",	-- |cFFFFFFFFStep 9:|r Hungering Orb VII
 	[252564] = "|cFFFFFFFFStep 10:|r 굶주린 보주 VIII",	-- |cFFFFFFFFStep 10:|r Hungering Orb VIII
 	[252565] = "|cFFFFFFFFStep 11:|r 굶주린 보주 IX",	-- |cFFFFFFFFStep 11:|r Hungering Orb IX
+	[252570] = "하늘보루 재물 상자",	-- Skyhold Chest of Riches
 	[252802] = "작은 보물 상자",	-- Small Treasure Chest
 	[252803] = "작은 보물 상자",	-- Small Treasure Chest
 	[252805] = "보물 상자",	-- Treasure Chest

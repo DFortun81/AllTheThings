@@ -978,12 +978,14 @@ for key,value in pairs({
 	[21042] = "Abzeichen der Wache von Theramore",	-- Theramore Guard Badge
 	[35251] = "Karnitols Truhe",	-- Karnitol's Chest
 	[112948] = "Verschlossene Geldkassette der 'Kühnheit'",	-- Intrepid's Locked Strongbox
+	[113757] = "Schattenschmiedecache",	-- Shadowforge Cache
 	[123329] = "Baelogs Truhe",	-- Baelog's Chest
+	[125477] = "Verdächtige Urne",	-- Conspicuous Urn
 	[131474] = "Die Scheiben von Norgannon",	-- The Discs of Norgannon
-	[131979] = "Große Dunkelholztruhe",	-- Large Darkwood Chest
 	[138492] = "Splitter von Myzrael",	-- Shards of Myzrael
 	[141979] = "Antiker Schatz",	-- Ancient Treasure
 	[142071] = "Ei-o-Mat",	-- Egg-O-Matic
+	[142088] = "Schrifttafel des Willens",	-- Tablet of Will
 	[142122] = "Steckbrief",	-- Wanted Poster
 	[142127] = "Rin'jis Geheimnis",	-- Rin'ji's Secret
 	[142151] = "Versiegeltes Fass",	-- Sealed Barrel
@@ -2144,6 +2146,7 @@ for key,value in pairs({
 	[252563] = "|cFFFFFFFFSchritt 9:|r Hungernde Kugel VII",	-- |cFFFFFFFFStep 9:|r Hungering Orb VII
 	[252564] = "|cFFFFFFFFSchritt 10:|r Hungernde Kugel VIII",	-- |cFFFFFFFFStep 10:|r Hungering Orb VIII
 	[252565] = "|cFFFFFFFFSchritt 11:|r Hungernde Kugel IX",	-- |cFFFFFFFFStep 11:|r Hungering Orb IX
+	[252570] = "Truhe mit Reichtümern aus der Himmelsfeste",	-- Skyhold Chest of Riches
 	[252802] = "Kleine Schatztruhe",	-- Small Treasure Chest
 	[252803] = "Kleine Schatztruhe",	-- Small Treasure Chest
 	[252805] = "Schatztruhe",	-- Treasure Chest

@@ -982,12 +982,14 @@ for key,value in pairs({
 	[21042] = "Identificación de guardia de Theramore",	-- Theramore Guard Badge
 	[35251] = "Cofre de Karnitol",	-- Karnitol's Chest
 	[112948] = "Caja fuerte de El Intrépido cerrada",	-- Intrepid's Locked Strongbox
+	[113757] = "Alijo de Forjatiniebla",	-- Shadowforge Cache
 	[123329] = "Cofre de Baelog",	-- Baelog's Chest
+	[125477] = "Urna llamativa",	-- Conspicuous Urn
 	[131474] = "Los Discos de Norgannon",	-- The Discs of Norgannon
-	[131979] = "Cofre grande de Leñoscuro",	-- Large Darkwood Chest
 	[138492] = "Fragmentos de Myzrael",	-- Shards of Myzrael
 	[141979] = "Tesoro antiguo",	-- Ancient Treasure
 	[142071] = "Huevomático",	-- Egg-O-Matic
+	[142088] = "Tablilla de Voluntad",	-- Tablet of Will
 	[142122] = "Cartel de Se busca",	-- Wanted Poster
 	[142127] = "Secreto de Rin'ji",	-- Rin'ji's Secret
 	[142151] = "Barrica sellada",	-- Sealed Barrel
@@ -2148,6 +2150,7 @@ for key,value in pairs({
 	[252563] = "|cFFFFFFFFStep 9:|r Orbe hambriento VII",	-- |cFFFFFFFFStep 9:|r Hungering Orb VII
 	[252564] = " |cFFFFFFFFStep 10:|r Orbe hambriento VIII",	-- |cFFFFFFFFStep 10:|r Hungering Orb VIII
 	[252565] = " |cFFFFFFFFStep 11:|r Orbe hambriento IX",	-- |cFFFFFFFFStep 11:|r Hungering Orb IX
+	[252570] = "Cofre de riquezas del Bastión Celestial",	-- Skyhold Chest of Riches
 	[252802] = "Arqueta pequeña",	-- Small Treasure Chest
 	[252803] = "Arqueta pequeña",	-- Small Treasure Chest
 	[252805] = "Arqueta",	-- Treasure Chest
