@@ -1966,7 +1966,7 @@ for key,value in pairs({
 	[244473] = "천둥 토템 도난당한 물품",	-- Thunder Totem Stolen Goods
 	[244494] = "보물 상자",	-- Treasure Chest
 	[244519] = "보물 상자",	-- Treasure Chest
-	--TODO: [244628] = "Taurson's Prize",	-- Taurson's Prize
+	[244628] = "타우르슨의 상품",	-- Taurson's Prize
 	[244651] = "야한 연애 소설",	-- Steamy Romance Novel
 	--TODO: [244678] = "|cFFFFFFFFStep 8:|r Page 5555",	-- |cFFFFFFFFStep 8:|r Page 5555
 	[244689] = "작은 보물 상자",	-- Small Treasure Chest
