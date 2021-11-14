@@ -36,6 +36,11 @@ namespace ATT
             private static IDictionary<long, Dictionary<string, object>> ITEMS_WITH_SPECIES = new ConcurrentDictionary<long, Dictionary<string, object>>();
 
             /// <summary>
+            /// All of the items with mount data that have been parsed sorted by Item ID.
+            /// </summary>
+            private static IDictionary<long, long> MOUNTS = new ConcurrentDictionary<long, long>();
+
+            /// <summary>
             /// All of the items with species data that have been parsed sorted by Item ID.
             /// </summary>
             private static IDictionary<long, bool> TOYS = new ConcurrentDictionary<long, bool>();
@@ -103,6 +108,17 @@ namespace ATT
             }
 
 
+
+            /// <summary>
+            /// All of the mounts that are in the database.
+            /// </summary>
+            public static IDictionary<long, long> AllMounts
+            {
+                get
+                {
+                    return MOUNTS;
+                }
+            }
 
             /// <summary>
             /// All of the toys that are in the database.
@@ -224,6 +240,17 @@ namespace ATT
             {
                 if (isToy) TOYS[itemID] = true;
                 else TOYS.Remove(itemID);
+            }
+
+            /// <summary>
+            /// Set the spellID for a given mount.
+            /// </summary>
+            /// <param name="itemID">The Item ID.</param>
+            /// <param name="spellID">The spellID of the mount.</param>
+            public static void SetMountSpellID(long itemID, long spellID)
+            {
+                if (spellID > 0) MOUNTS[itemID] = spellID;
+                else MOUNTS.Remove(itemID);
             }
 
             /// <summary>

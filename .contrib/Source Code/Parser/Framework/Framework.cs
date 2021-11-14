@@ -1618,6 +1618,13 @@ namespace ATT
                 if (item != null) Items.MergeInto(pair.Key, pair.Value, item);
             }
 
+            // Go through and merge all of the mount data into the item containers.
+            foreach (var pair in Items.AllMounts)
+            {
+                var item = Items.GetNull(pair.Key);
+                if (item != null) Items.MergeInto(pair.Key, new Dictionary<string, object> { { "mountID", pair.Value } }, item);
+            }
+
             // Go through and merge all of the toy data into the item containers.
             foreach (var pair in Items.AllToys)
             {
@@ -2329,6 +2336,33 @@ namespace ATT
                             }
                             break;
                         }
+                    case "ItemMountDB":
+                        {
+                            // The format of the Item Mount DB is a dictionary of item ID -> Spell ID.
+                            // This is slightly more annoying to parse, but it works okay.
+                            if (pair.Value is Dictionary<long, object> itemMountDB)
+                            {
+                                foreach (var itemValuePair in itemMountDB)
+                                {
+                                    if (itemValuePair.Value is object o)
+                                    {
+                                        Items.SetMountSpellID(itemValuePair.Key, Convert.ToInt64(o));
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("ItemMountDB not in the correct format!");
+                                        Console.WriteLine(MiniJSON.Json.Serialize(itemValuePair.Value));
+                                        Console.ReadLine();
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("ItemMountDB not in the correct format!");
+                                Console.ReadLine();
+                            }
+                            break;
+                        }
                     case "ItemSpeciesDB":
                         {
                             // The format of the Item Species DB is a dictionary of item ID -> Values.
@@ -2917,6 +2951,37 @@ namespace ATT
                         }
                         builder.AppendLine("};");
                         File.WriteAllText(Path.Combine(debugFolder.FullName, "ObjectDB.lua"), builder.ToString());
+                    }
+
+                    // Export the Mount DB file.
+                    var mounts = Framework.Items.AllIDs;
+                    if (mounts.Any())
+                    {
+                        var builder = new StringBuilder("-----------------------------------------------------\n--   M O U N T   D A T A B A S E   M O D U L E   --\n-----------------------------------------------------\n");
+                        var keys = mounts.ToList();
+                        keys.Sort();
+                        foreach(var itemID in keys)
+                        {
+                            var item = Framework.Items.GetNull(itemID);
+                            if (item != null)
+                            {
+                                if (item.TryGetValue("mountID", out long spellID))
+                                {
+                                    builder.Append("i(").Append(itemID).Append(", ").Append(spellID).Append(");");
+                                    if (item != null && item.TryGetValue("name", out string name)) builder.Append("\t-- ").Append(name);
+                                    builder.AppendLine();
+                                }
+                                else if (item.TryGetValue("f", out long f) && f == 100)
+                                {
+                                    builder.Append("i(").Append(itemID);
+                                    if (item.TryGetValue("spellID", out spellID)) builder.Append(", ").Append(spellID);
+                                    builder.Append(");");
+                                    if (item != null && item.TryGetValue("name", out string name)) builder.Append("\t-- ").Append(name);
+                                    builder.AppendLine();
+                                }
+                            }
+                        }
+                        File.WriteAllText(Path.Combine(debugFolder.FullName, "RawMountDB.lua"), builder.ToString());
                     }
                 }
             }

@@ -39,6 +39,7 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 	}),
 	i(37011, {	-- Magic Broom
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		["collectible"] = false,
 	}),
 	i(37582, {	-- Pyroblast Cinnamon Ball
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
@@ -112,6 +113,7 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 	}),
 	i(37011, {	-- Magic Broom
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		["collectible"] = false,
 	}),
 	i(37582, {	-- Pyroblast Cinnamon Ball
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
@@ -1524,6 +1526,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						}),
 						i(37011, {	-- Magic Broom
 							["timeline"] = { "added 2.4.3.8600" },
+							["collectible"] = false,
 						}),
 					},
 				}),
@@ -1551,6 +1554,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						}),
 						i(37011, {	-- Magic Broom
 							["timeline"] = { "added 2.4.3.8600" },
+							["collectible"] = false,
 						}),
 					},
 				}),
@@ -1600,10 +1604,11 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 							["timeline"] = { "added 2.2.2.7318" },
 						}),
 						i(33176, {	-- Flying Broom
-							["timeline"] = { "added 2.2.2.7318", "removed 4.2.2" },
+							["timeline"] = { "added 2.2.2.7318", "deleted 4.2.2" },
 						}),
 						i(37011, {	-- Magic Broom
 							["timeline"] = { "added 2.4.3.8600" },
+							["collectible"] = false,
 						}),
 					},
 				}),
@@ -1706,12 +1711,13 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 				}),
 				i(37011, {	-- Magic Broom
 					["timeline"] = { "added 2.4.3.8600" },
+					["collectible"] = false,
 				}),
 				-- #endif
 				-- #if NOT ANYCLASSIC
 				-- #if BEFORE LEGION
 				i(33176, {	-- Flying Broom
-					["timeline"] = { "added 2.2.2.7318", "removed 4.2.2" },
+					["timeline"] = { "added 2.2.2.7318", "deleted 4.2.2" },
 				}),
 				i(33182, {	-- Swift Flying Broom
 					["timeline"] = { "added 2.0.1", "removed 2.4.3" },
@@ -4098,16 +4104,16 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, { {
 	["groups"] = {
 		-- #if ANYCLASSIC
 		i(33176, {	-- Flying Broom
-			["timeline"] = { "created 2.2.2.7318" },
+			["timeline"] = { "created 2.2.2.7318", "deleted 4.2.2" },
 		}),
 		i(33182, {	-- Swift Flying Broom
-			["timeline"] = { "created 2.0.1" },
+			["timeline"] = { "created 2.0.1", "deleted 4.2.2" },
 		}),
 		i(33184, {	-- Swift Magic Broom
-			["timeline"] = { "created 2.0.1" },
+			["timeline"] = { "created 2.0.1", "deleted 4.2.2" },
 		}),
 		i(33183, {	-- Old Magic Broom
-			["timeline"] = { "created 2.0.1" },
+			["timeline"] = { "created 2.0.1", "deleted 4.2.2" },
 		}),
 		-- #endif
 		i(33957),	-- Witches Band (unused version)

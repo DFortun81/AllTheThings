@@ -32,6 +32,13 @@ namespace ATT
                         fields.Remove("f");
                         return;
                     }
+                    else if (f == 100 && fields.Contains("spellID"))   // Mounts
+                    {
+                        WriteShortcut(builder, "mnt", "_.CreateMount");
+                        ExportField(builder, data, fields, "spellID");
+                        fields.Remove("f");
+                        return;
+                    }
                 }
 
                 base.Build(builder, data, fields);
