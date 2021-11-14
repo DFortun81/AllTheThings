@@ -17,3 +17,7 @@
 - Quests that are listed inside instances but have their starting point in the open world will now properly map their coordinates.
 - Invasion Points for Argus return to minilists once again.
 - Other fixes.
+
+### Notable changes:
+
+Next release will probably have Profiles support!
