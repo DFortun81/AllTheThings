@@ -296,7 +296,18 @@ root("Instances", tier(CLASSIC_TIER, {
 				["groups"] = bubbleDown({ ["timeline"] = REMOVED_WITH_RERELEASE }, {
 			-- #endif
 					n(10184, {	-- Onyxia
-						ach(684),	-- Onyxia's Lair (Level 60)
+						removeclassicphase(ach(684, {	-- Onyxia's Lair (Level 60)
+							-- #if BEFORE 3.0.1
+							["sourceQuests"] = {
+								7635,	-- A Proper String
+								7509,	-- The Forging of Quel'Serrar
+								8620,	-- The Only Prescription
+								7495,	-- Victory for the Alliance
+								7490,	-- Victory for the Horde
+							},
+							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(7635) or C_QuestLog.IsQuestFlaggedCompleted(7509) or C_QuestLog.IsQuestFlaggedCompleted(8620) or C_QuestLog.IsQuestFlaggedCompleted(7495) or C_QuestLog.IsQuestFlaggedCompleted(7490)); end]],
+							-- #endif
+						})),
 						i(18423, {	-- Head of Onyxia (A)
 							["races"] = ALLIANCE_ONLY,
 						}),

@@ -1233,6 +1233,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 						["icon"] = "Interface\\Icons\\ability_rogue_deviouspoisons",
 					}),
 					n(-371, {	-- The Upper Necropolis
+						["icon"] = "Interface\\Icons\\inv_misc_head_dragon_blue",
 						["groups"] = {
 							n(15989, {	-- Sapphiron
 								un(REMOVED_FROM_GAME, i(23242)),	-- Claw of the Frost Wyrm
@@ -1283,7 +1284,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 								un(REMOVED_FROM_GAME, i(23065)),	-- Ring of the Earthshatterer
 							}),
 						},
-						["icon"] = "Interface\\Icons\\inv_misc_head_dragon_blue",
 					}),
 				},
 			}),

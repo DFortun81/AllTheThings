@@ -1482,7 +1482,12 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 			e(1551, {	-- C'Thun
 				["creatureID"] = 15727,
 				["groups"] = {
-					ach(687),	-- Temple of Ahn'Qiraj
+					removeclassicphase(ach(687, {	-- Temple of Ahn'Qiraj
+						-- #if BEFORE 3.0.1
+						["sourceQuest"] = 8801,	-- C'Thun's Legacy
+						["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(8801)); end]],
+						-- #endif
+					})),
 					i(21221),	-- Eye of C'Thun
 					applyclassicphase(PHASE_SIX, {
 						["itemID"] = 22734,	-- Base of Atiesh

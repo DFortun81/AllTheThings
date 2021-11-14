@@ -326,7 +326,16 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_THREE, {
 			e(1536,  {	-- Nefarian
 				["creatureID"] = 11583,	-- Nefarian
 				["groups"] = {
-					ach(685),	-- Blackwing Lair
+					removeclassicphase(ach(685, {	-- Blackwing Lair
+						-- #if BEFORE 3.0.1
+						["sourceQuests"] = {
+							7781,	-- The Lord of Blackrock
+							7783,	-- The Lord of Blackrock
+							8730,	-- Nefarius's Corruption
+						},
+						["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(7781) or C_QuestLog.IsQuestFlaggedCompleted(7783) or C_QuestLog.IsQuestFlaggedCompleted(8730)); end]],
+						-- #endif
+					})),
 					i(19003, {	-- Head of Nefarian (A)
 						["races"] = ALLIANCE_ONLY,
 					}),

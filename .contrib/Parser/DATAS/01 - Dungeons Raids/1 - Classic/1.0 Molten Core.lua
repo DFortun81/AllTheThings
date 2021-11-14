@@ -658,7 +658,15 @@ root("Instances", tier(CLASSIC_TIER, {
 			e(1528, {	-- Ragnaros
 				["creatureID"] = 11502,
 				["groups"] = {
-					ach(686),	-- Molten Core
+					removeclassicphase(ach(686, {	-- Molten Core
+						-- #if BEFORE 3.0.1
+						["sourceQuests"] = {
+							7787,	-- Rise, Thunderfury!
+							8620,	-- The Only Prescription
+						},
+						["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(7787) or C_QuestLog.IsQuestFlaggedCompleted(8620)); end]],
+						-- #endif
+					})),
 					i(19017, {	-- Essence of the Firelord
 						["description"] = "For this to drop, you must be on the Thunderaan the Windseeker quest.",
 						["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },

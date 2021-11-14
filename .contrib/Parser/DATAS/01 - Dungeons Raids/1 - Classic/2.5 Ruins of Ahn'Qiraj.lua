@@ -998,7 +998,12 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 			e(1542, {	-- Ossirian the Unscarred
 				["creatureID"] = 15339,
 				["groups"] = {
-					ach(689),	-- Ruins of Ahn'Qiraj
+					removeclassicphase(ach(689, {	-- Ruins of Ahn'Qiraj
+						-- #if BEFORE 3.0.1
+						["sourceQuest"] = 8791,	-- The Fall of Ossirian
+						["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(8791)); end]],
+						-- #endif
+					})),
 					i(21220),	-- Head of Ossirian the Unscarred
 					i(21452),	-- Staff of the Ruins
 					i(21715),	-- Sand Polished Hammer
