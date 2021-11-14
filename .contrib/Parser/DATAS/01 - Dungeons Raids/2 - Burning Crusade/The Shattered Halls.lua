@@ -196,6 +196,28 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						i(25792),	-- Curate's Boots
 					},
 				}),
+				q(9524, {	-- Imprisoned in the Citadel [Alliance]
+					["qg"] = 17288,	-- Randy Whizzlesprocket
+					-- #if ANYCLASSIC
+					["description"] = "It is currently unknown if this quest will become available later or not.",
+					["timeline"] = { "created 2.0.3" },	-- Never Implemented.
+					-- #else
+					["timeline"] = { "removed 4.3.0" },
+					-- #endif
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 70,
+				}),
+				q(9525, {	-- Imprisoned in the Citadel [Horde]
+					["qg"] = 17294,	-- Drisella
+					-- #if ANYCLASSIC
+					["description"] = "It is currently unknown if this quest will become available later or not.",
+					["timeline"] = { "created 2.0.3" },	-- Never Implemented.
+					-- #else
+					["timeline"] = { "removed 4.3.0" },
+					-- #endif
+					["races"] = HORDE_ONLY,
+					["lvl"] = 70,
+				}),
 				q(29656, {	-- O'mrogg's Warcloth
 					["qg"] = 54933,	-- Advance Scout Chadwick
 					["timeline"] = { "added 4.3.0.14732" },
@@ -428,7 +450,18 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(569, {	-- Warchief Kargath Bladefist
 					["creatureID"] = 16808,
 					["groups"] = {
-						ach(657),	-- The Shattered Halls
+						removeclassicphase(ach(657, {	-- The Shattered Halls
+							-- #if BEFORE 3.0.1
+							["sourceQuests"] = {
+								10884,	-- Trial of the Naaru: Mercy
+								9492,	-- Turning the Tide
+								9524,	-- Imprisoned in the Citadel
+								9525,	-- Imprisoned in the Citadel
+								9495,	-- The Will of the Warchief
+							},
+							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(10884) or C_QuestLog.IsQuestFlaggedCompleted(9492) or C_QuestLog.IsQuestFlaggedCompleted(9524) or C_QuestLog.IsQuestFlaggedCompleted(9525) or C_QuestLog.IsQuestFlaggedCompleted(9495)); end]],
+							-- #endif
+						})),
 						i(27533),	-- Demonblood Eviscerator
 						i(27538),	-- Lightsworn Hammer
 						-- #if AFTER 7.3.5
@@ -553,7 +586,16 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					e(569, {	-- Warchief Kargath Bladefist
 						["creatureID"] = 16808,
 						["groups"] = {
-							ach(678),	-- Heroic: The Shattered Halls
+							removeclassicphase(ach(678, {	-- Heroic: The Shattered Halls
+								-- #if BEFORE 3.0.1
+								["sourceQuests"] = {
+									10884,	-- Trial of the Naaru: Mercy
+									9524,	-- Imprisoned in the Citadel
+									9525,	-- Imprisoned in the Citadel
+								},
+								["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(10884) or C_QuestLog.IsQuestFlaggedCompleted(9524) or C_QuestLog.IsQuestFlaggedCompleted(9525)); end]],
+								-- #endif
+							})),
 							i(27533),	-- Demonblood Eviscerator
 							i(27538),	-- Lightsworn Hammer
 							i(29348),	-- The Bladefist

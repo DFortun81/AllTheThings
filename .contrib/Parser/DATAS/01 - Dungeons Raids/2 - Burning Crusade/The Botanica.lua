@@ -139,7 +139,12 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(562, {	-- Warp Splinter
 					["creatureID"] = 17977,
 					["groups"] = {
-						ach(659),	-- The Botanica
+						removeclassicphase(ach(659, {	-- The Botanica
+							-- #if BEFORE 3.0.1
+							["sourceQuest"] = 10704,	-- How to Break Into the Arcatraz
+							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(10704)); end]],
+							-- #endif
+						})),
 						i(28370),	-- Bangle of Endless Blessings
 						-- #if BEFORE 7.3.5
 						i(28228),	-- Beast Lord Cuirass (7.3.5 - Moved to High Botanist Freywinn)

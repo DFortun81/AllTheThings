@@ -230,7 +230,15 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(547, {	-- Murmur
 					["creatureID"] = 18708,
 					["groups"] = {
-						ach(654),	-- Shadow Labyrinth
+						removeclassicphase(ach(654, {	-- Shadow Labyrinth
+							-- #if BEFORE 3.0.1
+							["sourceQuests"] = {
+								10095,	-- Into the Heart of the Labyrinth
+								10885,	-- Trial of the Naaru: Strength
+							},
+							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(10095) or C_QuestLog.IsQuestFlaggedCompleted(10885)); end]],
+							-- #endif
+						})),
 						i(27903),	-- Sonic Spear
 						i(27905),	-- Greatsword of Horrid Dreams
 						-- #if AFTER 7.3.5
@@ -321,7 +329,12 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					e(547, {	-- Murmur
 						["creatureID"] = 18708,
 						["groups"] = {
-							ach(675),	-- Shadow Labyrinth
+							removeclassicphase(ach(675, {	-- Heroic: Shadow Labyrinth
+								-- #if BEFORE 3.0.1
+								["sourceQuest"] = 10885,	-- Trial of the Naaru: Strength
+								["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(10885)); end]],
+								-- #endif
+							})),
 							i(27903),	-- Sonic Spear
 							i(27905),	-- Greatsword of Horrid Dreams
 							i(29353),	-- Shockwave Truncheon

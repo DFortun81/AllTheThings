@@ -225,7 +225,15 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 			e(1576, {	-- Kael'thas Sunstrider
 				["creatureID"] = 19622,
 				["groups"] = {
-					ach(696),	-- Tempest Keep
+					removeclassicphase(ach(696, {	-- Tempest Keep
+						-- #if BEFORE 3.0.1
+						["sourceQuests"] = {
+							10445,	-- The Vials of Eternity
+							11007,	-- Kael'thas and the Verdant Sphere
+						},
+						["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(10445) or C_QuestLog.IsQuestFlaggedCompleted(11007)); end]],
+						-- #endif
+					})),
 					i(32405),	-- Verdant Sphere
 					i(32458, {	-- Ashes of Al'ar (MOUNT!)
 						ach(885),	-- Ashes of Al'ar

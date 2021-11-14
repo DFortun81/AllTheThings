@@ -76,7 +76,17 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			e(1566, {
 				["creatureID"] = 17257,
 				["groups"] = {
-					ach(693),	-- Magtheridon's Lair
+					removeclassicphase(ach(693, {	-- Magtheridon's Lair
+						-- #if BEFORE 3.0.1
+						["sourceQuests"] = {
+							11002,	-- The Fall of Magtheridon
+							11003,	-- The Fall of Magtheridon
+							10888,	-- Trial of the Naaru: Magtheridon
+							11116,	-- Trial of the Naaru: (QUEST FLAG)
+						},
+						["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(11002) or C_QuestLog.IsQuestFlaggedCompleted(11003) or C_QuestLog.IsQuestFlaggedCompleted(10888) or C_QuestLog.IsQuestFlaggedCompleted(11116)); end]],
+						-- #endif
+					})),
 					i(32385, {	-- Magtheridon's Head
 						["races"] = ALLIANCE_ONLY,
 					}),

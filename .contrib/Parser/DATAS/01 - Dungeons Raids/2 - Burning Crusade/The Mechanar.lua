@@ -134,7 +134,12 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(565, {	-- Pathaleon the Calculator
 					["creatureID"] = 19220,
 					["groups"] = {
-						ach(658),	-- The Mechanar
+						removeclassicphase(ach(658, {	-- The Mechanar
+							-- #if BEFORE 3.0.1
+							["sourceQuest"] = 10704,	-- How to Break Into the Arcatraz
+							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(10704)); end]],
+							-- #endif
+						})),
 						i(28288),	-- Abacus of Violent Odds
 						i(28269),	-- Baba's Cloak of Arcanistry
 						-- #if BEFORE 7.3.5
