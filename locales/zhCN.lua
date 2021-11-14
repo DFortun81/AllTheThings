@@ -1287,7 +1287,7 @@ for key, value in pairs({
 	[195600] = "燃烧之石",	-- Smouldering Stone
 	[195642] = "纳迦能量石",	-- Naga Power Stone
 	[195676] = "秘密实验室通话器",	-- Secret Lab Squakbox
-	--TODO: [196393] = "Broken Relic",	-- Broken Relic
+	[196393] = "损坏的圣物",	-- Broken Relic
 	--TODO: [196832] = "Upper Scrying Stone",	-- Upper Scrying Stone
 	--TODO: [196833] = "Lower Scrying Stone",	-- Lower Scrying Stone
 	--TODO: [201578] = "Wrenchmen Recruitment Poster",	-- Wrenchmen Recruitment Poster
@@ -2662,14 +2662,14 @@ for key, value in pairs({
 	--TODO: [332704] = "Corrupted Chest",	-- Corrupted Chest
 	--TODO: [334216] = "Black Empire Cache",	-- Black Empire Cache
 	[336415] = "丢弃的卷轴",	-- Discarded Scroll
-	--TODO: [337237] = "Lost Vault",	-- Lost Vault
+	[337237] = "失落宝物",	-- Lost Vault
 	--TODO: [339211] = "|cFFFFFFFFStep 2:|r Empty Dish",	-- |cFFFFFFFFStep 2:|r Empty Dish
 	[339283] = "被遗忘的贵族宝箱",	-- Forgotten Noble's Chest
 	[339601] = "万世卷轴",	-- Scroll of Aeons
 	[339641] = "净化饮剂",	-- Purifying Draught
 	[339770] = "被丢弃的宝箱",	-- Abandoned Treasure Chest
 	[341424] = "遗忘的纪念品",	-- Forgotten Mementos
-	[343611] = "虚触之卵",	-- Voidtouched Egg	--TODO: This was manually translated
+	[343611] = "虚触之卵",	-- Voidtouched Egg
 	[344588] = "执事者的惊人炖煮",	-- Stewart's Stewpendous Stew
 	[344726] = "黑暗布道",	-- Dark Sermon
 	[345446] = "符文牡鹿的巨角",	-- Great Horn of the Runestag
