@@ -21,7 +21,7 @@ root("WorldEvents", n(SEVENTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = WOW_ANNIVERS
 		}),
 	}),
 	n(WORLD_BOSSES, {
-		n(167749, {	-- Doomwalker
+		n(167749, bubbleDown({ ["modID"] = 22, },{	-- Doomwalker
 			i(186506),	-- Akama's Edge
 			i(186460),	-- Anger-Spark Gloves
 			i(186459),	-- Archaic Charm of Presence
@@ -38,6 +38,6 @@ root("WorldEvents", n(SEVENTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = WOW_ANNIVERS
 			i(186484),	-- Voidforged Greaves
 			i(186469),	-- Illidari Doomhawk (MOUNT!)
 			i(186501);	-- Doomwalker Trophy Stand (TOY!)
-		}),
+		})),
 	}),
 })));

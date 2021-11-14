@@ -9,12 +9,12 @@ root("GearSets", n(CLASS_TRIAL, {
 			-- Note: [As of August 18th 110 trials have been implemented and use same itemID's as boosting]
 			-- Note: [As of SL-Pre patch lvl 110 trials became lvl 48 trials]
 			-- Note: [As of November 11th, 2021 48 Trials became 50 Trials with a mix of ids from 48 Trials and 50 (SL Char Boost)]
-			["description"] = "These are gained by creating a Level 50 Trial of that particular class.  Each class has one default spec except Shamans, Druids and Hunters.",
+			["description"] = "These are gained by creating a Level 50 Trial of that particular class.  Each class has one default spec except Shamans, Druids and Hunters.\n\nSome/All of the Weapons from Adventurer's Footlocker may be broken.",
 			["lvl"] = 50,
 			["groups"] = {
 				cl(DEATHKNIGHT, {
-					i(160439, {	-- Adventurer's Footlocker
-						i(153726),	-- Heart-Lesion Blade
+					i(171988, {	-- Adventurer's Footlocker
+						i(170591),	-- Heart-Lesion Blade
 					}),
 					i(153747),	-- Heart-Lesion RuneBlade
 					i(153721),	-- Heart-Lesion Helm
@@ -51,9 +51,9 @@ root("GearSets", n(CLASS_TRIAL, {
 				}),
 				cl(DRUID, {
 					n(-9926, {	-- Balance
-						i(160439, {	-- Adventurer's Footlocker	*LA0404Balance
-							i(153773),	-- Springrain Spear	*LA0404Balance
-							i(153760),	-- Springrain Stave	*LA0404Balance
+						i(171988, { -- Adventurer's Footlocker	*LA0404Balance
+							i(170617), -- Springrain Spear	*LA0404Balance
+							i(170611), -- Springrain Stave	*LA0404Balance
 						}),
 						i(153760),	-- Springrain Stave	*LA0404Balance
 						i(153757),	-- Springrain Headpiece	*LA0404Balance
@@ -72,9 +72,9 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(153764),	-- Springrain Idol of Destruction	Balance
 					}),
 					n(-9925, {	-- Feral
-						i(160439, {	-- Adventurer's Footlocker *LA0422Feral
-							i(153760),	-- Springrain Stave *LA0422Feral
-							i(153773),	-- Springrain Spear *LA0422Feral	-- Note!! Yes you get another one
+						i(171988, {	-- Adventurer's Footlocker	*LA0422Feral
+							i(170617),	-- Springrain Spear	*LA0422Feral
+							i(170611),	-- Springrain Stave	*LA0422Feral
 						}),
 						i(153773),	-- Springrain Spear *LA0422Feral
 						i(153771),	-- Springrain Helm *LA0422Feral
@@ -94,9 +94,9 @@ root("GearSets", n(CLASS_TRIAL, {
 					}),
 				}),
 				cl(HUNTER, {
-					i(160439, {	-- Adventurer's Footlocker
-						i(153813),	-- Trailseeker Shotgun
-						i(153814),	-- Trailseeker Spear
+					i(171988, {	-- Adventurer's Footlocker
+						i(170638),	-- Trailseeker Shotgun
+						i(170639),	-- Trailseekeer Spear
 					}),
 					i(153813),	-- Trailseeker Shotgun
 					i(153808),	-- Trailseeker Helm
@@ -154,9 +154,10 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(153849),	-- Mistdancer Idol of Wisdom
 					})),
 					n(-9932, {	-- Windwalker
-						i(160439, {	-- Adventurer's Footlocker
-							i(153835),	-- Mistdancer Spire
-							i(153856),	-- Mistdancer Staff
+						i(171988, {	-- Adventurer's Footlocker
+							i(170651),	-- Mistdancer Spire
+							i(170659),	-- Mistdancer Staff
+							i(170660),	-- Mistdancer Sword
 						}),
 						i(153859),	-- Mistdancer Sword
 						i(153840),	-- Mistdancer Helm
@@ -209,10 +210,10 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(153910),	-- Sunsoul Defender Stone
 					})),
 					n(-9944, {	-- Retribution
-						i(160439, {	-- Adventurer's Footlocker
-							i(153892),	-- Sunsoul Bulwark
-							i(153889),	-- Sunsoul Scepter
-							i(153891),	-- Sunsoul Sword
+						i(171988, {	-- Adventurer's Footlocker
+							i(170676),	-- Sunsoul Bulwark
+							i(170673),	-- Sunsoul Scepter
+							i(170675),	-- Sunsoul Sword
 						}),
 						i(153893),	-- Sunsoul Warmaul
 						i(153870),	-- Sunsoul Helm
@@ -249,8 +250,8 @@ root("GearSets", n(CLASS_TRIAL, {
 					i(153926),	-- Communal Idol of Wisdom	*LA0104
 				}),
 				cl(ROGUE, {
-					i(160439, {	-- Adventurer's Footlocker
-						i(153961),	-- Lightdrinker Sword
+					i(171988, {	-- Adventurer's Footlocker
+						i(170712),	-- Lightdrinker Sword
 					}),
 					i(153959),	-- Lightdrinker Dagger
 					i(153960),	-- Lightdrinker Shiv
@@ -271,8 +272,9 @@ root("GearSets", n(CLASS_TRIAL, {
 				}),
 				cl(SHAMAN, {
 					n(-9939, {	-- Elemental
-						i(160439, {	-- Adventurer's Footlocker
-							i(153983),	-- Streamtalker Talons
+						i(171988, {	-- Adventurer's Footlocker
+							i(170725),	-- Streamtalker Aegis
+							i(170724),	-- Streamtalker Claws
 						}),
 						i(153979),	-- Streamtalker Aegis
 						i(153973),	-- Streamtalker Claws
@@ -292,9 +294,8 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(153972),	-- Streamtalker Stone of Destruction
 					}),
 					n(-9940, {	-- Enhancement
-						i(160439, {	-- Adventurer's Footlocker
-							i(153979),	-- Streamtalker Aegis
-							i(153973),	-- Streamtalker Claws
+						i(171988, {	-- Adventurer's Footlocker
+							i(170726),	-- Streamtalker Talons
 						}),
 						i(153983),	-- Streamtalker Talons
 						i(153987),	-- Streamtalker Helm
