@@ -354,7 +354,7 @@ local L = app.L;
 		--TODO: L.ACCOUNT_WIDE_TITLES_TOOLTIP = "|cff00AB00Track Account-wide|R\n\nMost titles are tracked account wide, but some prestigious titles in WoW are locked to the character that earned them.\n\nToggle this if you don't care about that and want to see those titles marked Collected for your alts.";
 
 	-- Filters tab
-		["FILTERS_TAB"] = "Tracking";	-- Overwriting default cause it sounds better according to @Goldenshacal
+		L.FILTERS_TAB = "Tracking";	-- Overwriting default cause it sounds better according to @Goldenshacal
 		--TODO: L.ITEM_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if you are in |Cff00AB00Account Mode|cffFFFFFF, even if the option is disabled.|r";
 		--TODO: L.CLASS_DEFAULTS_BUTTON = "Class Defaults";
 		--TODO: L.CLASS_DEFAULTS_BUTTON_TOOLTIP = "Click this button to reset all of the filters to your class defaults.\n\nNOTE: Only filters that are collectible for your class can be turned on.";

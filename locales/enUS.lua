@@ -1463,19 +1463,9 @@ app.L = {
 		[-9951] = "Interface\\Icons\\ClassIcon_Priest",								-- Discipline / Holy Spec
 		[-9952] = "Interface\\Icons\\ClassIcon_Druid",								-- Guardian / Feral Spec
 	------ ACHIEVEMENT HEADER SECTION ------
-		[-9955] = "Interface\\Icons\\achievement_general",							-- General
-
-		[-9957] = "Interface\\Icons\\inv_misc_map02",								-- Exploration
-
-		[-9959] = app.asset("Category_D&R"),										-- Dungeons & Raids
-		[-9960] = app.asset("Category_Professions"),								-- Professions
+	-- Is Used Somewhere
 		[-9961] = app.asset("Category_Factions"),									-- Reputation
-		[-9962] = app.asset("Category_Event"),										-- World Events
-		[-9963] = app.asset("Category_PetJournal"),									-- Pet Battles
-		[-9964] = "Interface\\Icons\\Paladin_Protection",							-- Collections
 		[-9965] = "Interface\\Icons\\achievement_level_110",						-- Class Hall
-		[-9966] = "Interface\\Icons\\inv_garrison_hearthstone",						-- Draenor Garrison
-		[-9968] = "Interface\\Icons\\Paladin_Protection",							-- Legacy
 		[-9969] = "Interface\\Icons\\Paladin_Protection",							-- Feats of Strength
 		[-9971] = "Interface\\Icons\\inv_misc_food_15",								-- Cooking
 		[-9972] = "Interface\\Icons\\trade_fishing",								-- Fishing
@@ -1507,19 +1497,7 @@ app.L = {
 		[-10001] = "Interface\\Icons\\Paladin_Protection",							-- Seething Shore
 		[-10002] = app.asset("Expansion_CLASSIC"),									-- Classic
 		[-10003] = app.asset("Expansion_TBC"),										-- The Burning Crusade
-		[-10004] = app.asset("Expansion_WOTLK"),									-- Lich King Dungeon
-		[-10005] = app.asset("Expansion_WOTLK"),									-- Lich King Raid
-		[-10006] = app.asset("Expansion_CATA"),										-- Cataclysm Dungeon
-		[-10007] = app.asset("Expansion_CATA"),										-- Cataclysm Raid
-		[-10008] = app.asset("Expansion_MOP"),										-- Pandaria Dungeon
-		[-10009] = app.asset("Expansion_MOP"),										-- Pandaria Raid
-		[-10010] = app.asset("Expansion_WOD"),										-- Draenor Dungeon
-		[-10011] = app.asset("Expansion_WOD"),										-- Draenor Raid
-		[-10012] = app.asset("Expansion_LEGION"),									-- Legion Dungeon
-		[-10013] = app.asset("Expansion_LEGION"),									-- Legion Raid
 		[-10014] = app.asset("Expansion_WOTLK"),									-- Wrath of the Lich King
-
-
 		[-10025] = app.asset("Event_dmf"),											-- Darkmoon Faire
 		[-10027] = "Interface\\Icons\\Paladin_Protection",							-- Collect
 		[-10028] = "Interface\\Icons\\Paladin_Protection",							-- Battle
@@ -1536,11 +1514,7 @@ app.L = {
 		[-10048] = "Interface\\Icons\\buff_feltreasures",							-- Mage Tower
 		[-10049] = "Interface\\Icons\\buff_forcesoforder",							-- Command Center
 		[-10050] = "Interface\\Icons\\buff_epichunter",								-- Nether Disruptor
-		[-10051] = "Interface\\Icons\\Paladin_Protection",							--
 		[-10052] = app.asset("Expansion_BFA"),										-- Battle for Azeroth
-		[-10053] = app.asset("Expansion_BFA"),										-- BFA Dungeon
-		[-10054] = app.asset("Expansion_BFA"),										-- BFA Raid
-		[-10055] = app.asset("Category_ExpansionFeatures"),							-- Expansion Features
 		[-10056] = "Interface\\Icons\\Paladin_Protection",							--
 		[-10057] = "Interface\\Icons\\Ability_Warrior_OffensiveStance",				-- War Effort
 		[-10058] = "Interface\\Icons\\Paladin_Protection",							--
@@ -1563,8 +1537,6 @@ app.L = {
 		[-10082] = "Interface\\Icons\\spell_priest_psyfiend",						-- Lost Area (Vision Scenario)
 		[-10083] = "236373",														-- Covenant Assaults
 		[-10100] = app.asset("Expansion_SL"),										-- Shadowlands
-		[-10101] = app.asset("Expansion_SL"),										-- Shadowlands Dungeon
-		[-10102] = app.asset("Expansion_SL"),										-- Shadowlands Raid
 		[-10103] = "Interface\\Icons\\Paladin_Protection",							-- The Maw and Torghast
 		[-10105] = 236373,															-- Covenant Assaults
 
@@ -2220,19 +2192,9 @@ app.L = {
 		[-9951] = GetSpellInfo(148462).." & "..GetSpellInfo(137031), 			-- Discipline / Holy Priest Spec
 		[-9952] = GetSpellInfo(234890).." & "..GetSpellInfo(137011), 			-- Guardian / Feral Druid Spec
 	------ ACHIEVEMENT HEADER SECTION ------
-		[-9955] = STAT_CATEGORY_GENERAL,										-- General
-
-		[-9957] = select(1,GetCategoryInfo(97)),								-- Exploration
-
-		[-9959] = GROUP_FINDER,													-- Dungeons & Raids
-		[-9960] = TRADE_SKILLS,													-- Professions
 		[-9961] = TUTORIAL_TITLE16,												-- Reputation
-		[-9962] = BATTLE_PET_SOURCE_7,											-- World Events
-		[-9963] = SHOW_PET_BATTLES_ON_MAP_TEXT,									-- Pet Battles
-		[-9964] = COLLECTIONS,													-- Collections
 		[-9965] = select(1,GetCategoryInfo(15304)),								-- Class Hall
 		[-9966] = select(1,GetCategoryInfo(15303)),								-- Draenor Garrison
-		[-9968] = LFG_LIST_LEGACY,												-- Legacy
 		[-9969] = select(1,GetCategoryInfo(81)),								-- Feats of Strength
 		[-9971] = PROFESSIONS_COOKING,											-- Cooking
 		[-9972] = PROFESSIONS_FISHING,											-- Fishing
@@ -2264,21 +2226,8 @@ app.L = {
 		[-10001] = select(1,GetCategoryInfo(15292)),							-- Seething Shore
 		[-10002] = select(1,GetCategoryInfo(14808)),							-- Classic
 		[-10003] = EXPANSION_NAME1,												-- The Burning Crusade
-		[-10004] = select(1,GetCategoryInfo(14806)),							-- Lich King Dungeon
-		[-10005] = select(1,GetCategoryInfo(14922)),							-- Lich King Raid
-		[-10006] = select(1,GetCategoryInfo(15067)),							-- Cataclysm Dungeon
-		[-10007] = select(1,GetCategoryInfo(15068)),							-- Cataclysm Raid
-		[-10008] = select(1,GetCategoryInfo(15106)),							-- Pandaria Dungeon
-		[-10009] = select(1,GetCategoryInfo(15107)),							-- Pandaria Raid
-		[-10010] = select(1,GetCategoryInfo(15228)),							-- Draenor Dungeon
-		[-10011] = select(1,GetCategoryInfo(15231)),							-- Draenor Raid
-		[-10012] = select(1,GetCategoryInfo(15254)),							-- Legion Dungeon
-		[-10013] = select(1,GetCategoryInfo(15255)),							-- Legion Raid
 		[-10014] = EXPANSION_NAME2,												-- Wrath of the Lich King
-
-
 		[-10025] = CALENDAR_FILTER_DARKMOON,									-- Darkmoon Faire
-		[-10026] = SPLASH_BATTLEFORAZEROTH_8_1_5_FEATURE2_TITLE,				-- Brawler's Guild
 		[-10027] = select(1,GetCategoryInfo(15118)),							-- Collect
 		[-10028] = select(1,GetCategoryInfo(15119)),							-- Battle
 		[-10029] = select(1,GetCategoryInfo(15120)),							-- Level
@@ -2294,11 +2243,7 @@ app.L = {
 		[-10048] = BROKENSHORE_BUILDING_MAGETOWER,								-- Mage Tower
 		[-10049] = BROKENSHORE_BUILDING_COMMANDCENTER,							-- Command Center
 		[-10050] = BROKENSHORE_BUILDING_NETHERDISRUPTOR,						-- Nether Disruptor
-		[-10051] = CHARACTER,													-- Character
 		[-10052] = EXPANSION_NAME7,												-- Battle for Azeroth
-		[-10053] = select(1,GetCategoryInfo(15285)),							-- Battle Dungeon
-		[-10054] = select(1,GetCategoryInfo(15286)),							-- Battle Raid
-		[-10055] = select(1,GetCategoryInfo(15301)),							-- Expansion Features
 		[-10056] = ISLANDS_HEADER,												-- Island Expeditions
 		[-10057] = select(1,GetCategoryInfo(15308)),							-- War Effort
 		[-10058] = WORLD,														-- World
@@ -2326,8 +2271,6 @@ app.L = {
 		[-10083] = "Covenant Assaults",											-- Covenant Assaults
 	-- Shadowlands Achievement Header
 		[-10100] = EXPANSION_NAME8,												-- Shadowlands
-		[-10101] = select(1,GetCategoryInfo(15428)),							-- Shadowlands Dungeon
-		[-10102] = select(1,GetCategoryInfo(15438)),							-- Shadowlands Raids
 		[-10103] = select(1,GetCategoryInfo(15440)),							-- The Maw and Torghast
 	--	hopefully temp objects, these currently do not have accessible object data on wowhead
 		[-1433951] = "Broken Mirror A-1",										-- Broken Mirror
