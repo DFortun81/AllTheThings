@@ -1,18 +1,19 @@
 # AllTheThings
 
-## [SL-2.5.2](https://github.com/DFortun81/AllTheThings/tree/SL-2.5.2) (2021-11-08)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.5.1a...SL-2.5.2) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [SL-2.5.3](https://github.com/DFortun81/AllTheThings/tree/SL-2.5.3) (2021-11-14)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.5.2...SL-2.5.3) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
 ### Notable changes:
 
-- Added sources to all new Night Fae soulshapes and crittershapes.
-- Added sources to new druid travel forms.
-- Added Trial of Style shoes to vendor.
-- Black Market vendors now show their goodies in the tooltip.
-- Fixed BoE filter in settings.
-- Fixed infinite loop breaking addon in rare circumstances.
-- Fixed MoP Caches of Treasures.
-- Castle Nathria LFR tokens rewarded by Covenant Campaign Quests will show their 'Contains' properly now.
-- More prep for new Timewalking dungeons.
-- Some quest fixes.
+- WoW 17th Anniversary!
+- More WoD Garrison unification/cleanup.
+- WoD pets/quests/achievements improvements.
+- 9.1.5 has new questchain to get another murloc pet. You can find it in Secrets->Gurgl.
+- More PvP items fixes.
+- Fixed duplicating Lore information for Friendship factions.
+- Another round of fixes and improvements for `/attwq` feature.
+- Added new lvl 60 boost and new items associated with it. Reorganized (removed) trials/boosts while at it.
+- More unification between retail/classic versions of ATT, this time in classic dungeons.
+- Quests that are listed inside instances but have their starting point in the open world will now properly map their coordinates.
+- Invasion Points for Argus return to minilists once again.
 - Other fixes.
