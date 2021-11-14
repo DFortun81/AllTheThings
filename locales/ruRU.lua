@@ -965,12 +965,14 @@ for key,value in pairs({
 	[21042] = "Кокарда Тераморской стражи",	-- Theramore Guard Badge
 	[35251] = "Сундук Карнитола",	-- Karnitol's Chest
 	[112948] = "Запертый сейф на \"Отважном\".",	-- Intrepid's Locked Strongbox
+	[113757] = "Тайник Тенегорна",	-- Shadowforge Cache
 	[123329] = "Сундук Бейлога",	-- Baelog's Chest
+	[125477] = "Подозрительная урна",	-- Conspicuous Urn
 	[131474] = "Диски Норганнона",	-- The Discs of Norgannon
-	[131979] = "Большой сундук из темного дерева",	-- Large Darkwood Chest
 	[138492] = "Кристаллы Мизраэль",	-- Shards of Myzrael
 	[141979] = "Древнее сокровище",	-- Ancient Treasure
 	[142071] = "Яйц-О-Матик",	-- Egg-O-Matic
+	[142088] = "Табличка воли",	-- Tablet of Will
 	[142122] = "Плакат \"Разыскивается\"",	-- Wanted Poster
 	[142127] = "Секрет Рин'джи",	-- Rin'ji's Secret
 	[142151] = "Запечатанная бочка",	-- Sealed Barrel
@@ -2131,6 +2133,7 @@ for key,value in pairs({
 	[252563] = "|cFFFFFFFFШаг 9:|r Алчущая сфера VII",	-- |cFFFFFFFFStep 9:|r Hungering Orb VII
 	[252564] = "|cFFFFFFFFШаг 10:|r Алчущая сфера VIII",	-- |cFFFFFFFFStep 10:|r Hungering Orb VIII
 	[252565] = "|cFFFFFFFFШаг 11:|r Алчущая сфера IX",	-- |cFFFFFFFFStep 11:|r Hungering Orb IX
+	[252570] = "Сундук с сокровищами Небесной Цитадели",	-- Skyhold Chest of Riches
 	[252802] = "Маленький сундук с сокровищами",	-- Small Treasure Chest
 	[252803] = "Маленький сундук с сокровищами",	-- Small Treasure Chest
 	[252805] = "Сундук с сокровищами",	-- Treasure Chest

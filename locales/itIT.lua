@@ -976,12 +976,14 @@ for key,value in pairs({
 	[21042] = "Distintivo della Guardia di Theramore",	-- Theramore Guard Badge
 	[35251] = "Cassa di Karnitol",	-- Karnitol's Chest
 	[112948] = "Forziere Chiuso dell'Intrepida",	-- Intrepid's Locked Strongbox
+	[113757] = "Scrigno di Forgiascura",	-- Shadowforge Cache
 	[123329] = "Cassa di Baelog",	-- Baelog's Chest
+	[125477] = "Urna Notevole",	-- Conspicuous Urn
 	[131474] = "Dischi di Norgannon",	-- The Discs of Norgannon
-	[131979] = "Grossa Cassa di Boscoscuro",	-- Large Darkwood Chest
 	[138492] = "Frammento di Myzrael",	-- Shards of Myzrael
 	[141979] = "Tesoro Antico",	-- Ancient Treasure
 	[142071] = "Egg-O-Matic",	-- Egg-O-Matic	--TODO: This was taken from classic Wowhead
+	[142088] = "Tavoletta della Volontà",	-- Tablet of Will
 	[142122] = "Manifesto dei Ricercati",	-- Wanted Poster
 	[142127] = "Rin'ji's Secret",	-- Rin'ji's Secret	--TODO: This was taken from classic Wowhead
 	[142151] = "Barile Sigillato",	-- Sealed Barrel
@@ -2142,6 +2144,7 @@ for key,value in pairs({
 	[252563] = "|cFFFFFFFFStep 9:|r Globo Famelico VII",	-- |cFFFFFFFFStep 9:|r Hungering Orb VII
 	[252564] = "|cFFFFFFFFStep 10:|r Globo Famelico VIII",	-- |cFFFFFFFFStep 10:|r Hungering Orb VIII
 	[252565] = "|cFFFFFFFFStep 11:|r Globo Famelico IX",	-- |cFFFFFFFFStep 11:|r Hungering Orb IX
+	[252570] = "Cassa di Ricchezze della Rocca Celeste",	-- Skyhold Chest of Riches
 	[252802] = "Cassa del Tesoro Piccola",	-- Small Treasure Chest
 	[252803] = "Cassa del Tesoro Piccola",	-- Small Treasure Chest
 	[252805] = "Cassa del Tesoro",	-- Treasure Chest

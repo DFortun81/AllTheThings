@@ -1034,12 +1034,14 @@ for key, value in pairs({
 	[21042] = "塞拉摩卫兵徽章",	-- Theramore Guard Badge
 	[35251] = "卡尼托的箱子",	-- Karnitol's Chest	--TODO: This was taken from classic Wowhead
 	[112948] = "保险箱",	-- Intrepid's Locked Strongbox
+	[113757] = "暗影熔炉地窖",	-- Shadowforge Cache
 	[123329] = "巴尔洛戈的箱子",	-- Baelog's Chest
+	[125477] = "显眼的石罐",	-- Conspicuous Urn
 	[131474] = "诺甘农圆盘",	-- The Discs of Norgannon
-	[131979] = "大型黑木箱",	-- Large Darkwood Chest
 	[138492] = "密斯莱尔水晶碎块",	-- Shards of Myzrael
 	[141979] = "古代宝藏",	-- Ancient Treasure
 	[142071] = "测蛋器",	-- Egg-O-Matic	--TODO: This was taken from classic Wowhead
+	[142088] = "意志石板",	-- Tablet of Will
 	[142122] = "通缉：卡利夫·斯科比斯汀",	-- Wanted Poster	--TODO: This was taken from classic Wowhead
 	[142127] = "林吉的秘密",	-- Rin'ji's Secret	--TODO: This was taken from classic Wowhead
 	[142151] = "密封的桶",	-- Sealed Barrel
@@ -2200,6 +2202,7 @@ for key, value in pairs({
 	[252563] = "|cFFFFFFFF第9步:|r 饥渴宝珠 VII",	-- |cFFFFFFFFStep 9:|r Hungering Orb VII
 	[252564] = "|cFFFFFFFF第10步:|r 饥渴宝珠 VIII",	-- |cFFFFFFFFStep 10:|r Hungering Orb VIII
 	[252565] = "饥渴宝珠",	-- |cFFFFFFFFStep 11:|r Hungering Orb IX
+	--TODO: [252570] = "Skyhold Chest of Riches",	-- Skyhold Chest of Riches
 	[252802] = "小宝箱",	-- Small Treasure Chest
 	[252803] = "小宝箱",	-- Small Treasure Chest
 	[252805] = "宝箱",	-- Treasure Chest
