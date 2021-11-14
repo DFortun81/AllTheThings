@@ -223,6 +223,7 @@ local function Callback(method, ...)
 		C_Timer.After(0, newCallback);
 	end
 end
+app.Callback = Callback;
 -- Triggers a timer callback method to run after the provided number of seconds with the provided params; the method can only be set to run once per delay
 local function DelayedCallback(method, delaySec, ...)
 	if not app.__callbacks then
@@ -317,7 +318,7 @@ local containsValue = function(dict, value)
 	end
 end
 local defaultComparison = function(a,b)
-	return a > b;
+	return a < b;
 end
 local function insertionSort(t, compare, nested)
 	if t then
@@ -337,6 +338,7 @@ local function insertionSort(t, compare, nested)
 		end
 	end
 end
+app.insertionSort = insertionSort;
 local sortByNameSafely = function(a, b)
 	if a and a.name then
 		if b and b.name then
@@ -13106,6 +13108,8 @@ end
 local function SetVisible(self, show, forceUpdate)
 	if show then
 		self:Show();
+		-- apply window position from profile
+		app.Settings.SetWindowFromProfile(self.Suffix);
 		self:Update(forceUpdate);
 	else
 		self:Hide();
@@ -13727,7 +13731,7 @@ local function SetRowData(self, row, data)
 end
 local function Refresh(self)
 	if not app.IsReady or not self:IsVisible() then return; end
-	-- print("Refresh:",self.Suffix or self.suffix)
+	-- print("Refresh:",self.Suffix)
 	if self:GetHeight() > 64 then self.ScrollBar:Show(); else self.ScrollBar:Hide(); end
 	if self:GetHeight() < 40 then
 		self.CloseButton:Hide();
@@ -13814,16 +13818,16 @@ local function Refresh(self)
 
 		-- If this window has an UpdateDone method which should process after the Refresh is complete
 		if self.UpdateDone then
-			-- print("Refresh-UpdateDone",self.Suffix or self.suffix)
+			-- print("Refresh-UpdateDone",self.Suffix)
 			Callback(self.UpdateDone, self);
 		-- If the rows need to be processed again, do so next update.
 		elseif self.processingLinks then
-			-- print("Refresh-processingLinks",self.Suffix or self.suffix)
+			-- print("Refresh-processingLinks",self.Suffix)
 			Callback(self.Refresh, self);
 			self.processingLinks = nil;
 		-- If the data itself needs another update pass due to new rows being added dynamically
 		elseif self.doUpdate then
-			-- print("Refresh-doUpdate",self.Suffix or self.suffix)
+			-- print("Refresh-doUpdate",self.Suffix)
 			Callback(self.Update, self, true);
 			self.doUpdate = nil;
 		end
@@ -13838,6 +13842,10 @@ end
 local function StopMovingOrSizing(self)
 	self:StopMovingOrSizing();
 	self.isMoving = nil;
+	-- store the window position if the window is visible (this is called on new popouts prior to becoming visible for some reason)
+	if self:IsVisible() then
+		self:StorePosition();
+	end
 end
 local function StartMovingOrSizing(self, fromChild)
 	if not self:IsMovable() and not self:IsResizable() or self.isLocked then
@@ -13858,6 +13866,35 @@ local function StartMovingOrSizing(self, fromChild)
 			end);
 		elseif self:IsMovable() then
 			self:StartMoving();
+		end
+	end
+end
+app.StoreWindowPosition = function(self)
+	if AllTheThingsProfiles then
+		if self.isLocked or self.lockPersistable then
+			local key = app.Settings:GetProfile();
+			local profile = AllTheThingsProfiles.Profiles[key];
+			if not profile.Windows then profile.Windows = {}; end
+			-- re-save the window position by point anchors
+			local points = {};
+			profile.Windows[self.Suffix] = points;
+			for i=1,self:GetNumPoints() do
+				local point, _, refPoint, x, y = self:GetPoint(i);
+				points[i] = { Point = point, PointRef = refPoint, X = math.floor(x), Y = math.floor(y) };
+			end
+			points.Width = math.floor(self:GetWidth());
+			points.Height = math.floor(self:GetHeight());
+			points.Locked = self.isLocked or nil;
+			-- print("saved window",self.Suffix)
+			-- app.PrintTable(points)
+		else
+			-- a window which was potentially saved due to being locked, but is now being unlocked (unsaved)
+			-- print("removing stored window",self.Suffix)
+			local key = app.Settings:GetProfile();
+			local profile = AllTheThingsProfiles.Profiles[key];
+			if profile.Windows then
+				profile.Windows[self.Suffix] = nil;
+			end
 		end
 	end
 end
@@ -14060,18 +14097,7 @@ local function RowOnClick(self, button)
 				if IsAltKeyDown() then
 					local locked = not window.isLocked;
 					window.isLocked = locked;
-					-- only certain window locks may be persisted
-					if window.lockPersistable and window.Suffix then
-						local lockedWindows = GetDataMember("LockedWindows", {});
-						local lockedName = window.Suffix;
-						if locked then
-							-- windows would be locked for all characters, but position can be changed per character
-							lockedWindows[lockedName] = 1;
-						else
-							lockedWindows[lockedName] = nil;
-						end
-						SetDataMember("LockedWindows", lockedWindows);
-					end
+					window:StorePosition();
 					-- force tooltip to refresh since locked state drives tooltip content
 					if GameTooltip then
 						RowOnLeave(self);
@@ -14998,14 +15024,14 @@ local function UpdateWindow(self, force, got)
 			end
 			force = (force or self.HasPendingUpdate) and self:IsVisible();
 		end
-		-- print("Update:",self.Suffix or self.suffix, force and "FORCE", self:IsVisible() and "VISIBLE");
+		-- print("Update:",self.Suffix, force and "FORCE", self:IsVisible() and "VISIBLE");
 		if force or self:IsVisible() then
 			if self.rowData then wipe(self.rowData);
 			else self.rowData = {}; end
 			self.data.expanded = true;
 			if not self.doesOwnUpdate and
 				(force or (self.shouldFullRefresh and self:IsVisible())) then
-				-- print("UpdateGroups",self.suffix or self.Suffix)
+				-- print("UpdateGroups",self.Suffix)
 				TopLevelUpdateGroup(self.data, self);
 				self.HasPendingUpdate = nil;
 				-- print("Done")
@@ -15082,13 +15108,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 		window.BaseUpdate = UpdateWindow;
 		window.Update = onUpdate or app:CustomWindowUpdate(suffix) or UpdateWindow;
 		window.SetVisible = SetVisible;
-		if AllTheThingsSettings then
-			if suffix == "Prime" then
-				window:SetScale(app.Settings:GetTooltipSetting("MainListScale"));
-			else
-				window:SetScale(app.Settings:GetTooltipSetting("MiniListScale"));
-			end
-		end
+		window.StorePosition = app.StoreWindowPosition;
 
 		window:SetScript("OnMouseWheel", OnScrollBarMouseWheel);
 		window:SetScript("OnMouseDown", StartMovingOrSizing);
@@ -15123,6 +15143,15 @@ function app:GetWindow(suffix, parent, onUpdate)
 		-- set whether this window lock is persistable between sessions
 		if suffix == "Prime" or suffix == "CurrentInstance" or suffix == "RaidAssistant" or suffix == "WorldQuests" then
 			window.lockPersistable = true;
+		end
+
+		-- apply scaling from settings
+		if AllTheThingsSettings then
+			if suffix == "Prime" then
+				window:SetScale(app.Settings:GetTooltipSetting("MainListScale"));
+			else
+				window:SetScale(app.Settings:GetTooltipSetting("MiniListScale"));
+			end
 		end
 
 		window:Hide();
@@ -16277,18 +16306,6 @@ function app:RefreshData(lazy, got, manual)
 	else
 		-- print(".5sec delay callback")
 		AfterCombatOrDelayedCallback(app._RefreshData, 0.5);
-	end
-end
-function app:ApplyLockedWindows()
-	local lockedWindows = GetDataMember("LockedWindows", nil);
-	if lockedWindows then
-		for name,lock in pairs(lockedWindows) do
-			-- only saving locks, so lock is irrelevant mostly
-			local window = app.Windows[name];
-			if window then
-				window.isLocked = true;
-			end
-		end
 	end
 end
 function app:BuildSearchResponse(groups, field, value)
@@ -19174,7 +19191,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 							_cache = SearchForField(idType, itemID);
 							if _cache then
 								for _,data in ipairs(_cache) do
-									-- copy any soruced data for the dungeon reward into the list
+									-- copy any sourced data for the dungeon reward into the list
 									if GroupMatchesParams(data, idType, itemID, true) then
 										MergeProperties(thing, data);
 									end
@@ -20076,7 +20093,7 @@ app.SetupProfiles = function()
 		Assignments = {},
 	};
 	AllTheThingsProfiles = ATTProfiles;
-	local default = app.Settings:NewProfile("Default");
+	local default = app.Settings:NewProfile(DEFAULT);
 	-- copy various existing settings that are now Profiled
 	if AllTheThingsSettings then
 		-- General Settings
@@ -20104,7 +20121,12 @@ app.SetupProfiles = function()
 			end
 		end
 	end
-	ATTProfiles.Profiles.Default = default;
+
+	-- pull in window data for the default profile
+	for _,window in pairs(app.Windows) do
+		window:StorePosition();
+	end
+
 	app.print("Initialized ATT Profiles!");
 
 	-- delete old variables
@@ -20774,12 +20796,23 @@ app.events.VARIABLES_LOADED = function()
 		accountWideData.Toys = data;
 	end
 
+	-- clean up 'LockedWindows' (now stored in Profiles)
+	local lockedWindows = GetDataMember("LockedWindows");
+	if lockedWindows then
+		for name,_ in pairs(lockedWindows) do
+			local window = app.Windows[name];
+			if window then
+				window.isLocked = true;
+				window:StorePosition();
+			end
+		end
+	end
+
 	-- Clean up settings
 	local oldsettings = {};
 	for i,key in ipairs({
 		"LocalizedCategoryNames",
 		--"LocalizedFlightPathDB",
-		"LockedWindows",
 		"Position",
 		"RandomSearchFilter",
 		"Reagents",
@@ -20795,9 +20828,6 @@ app.events.VARIABLES_LOADED = function()
 
 	-- Init the Settings before working with data
 	app.Settings:Initialize();
-
-	-- Apply Locked Window Settings
-	app:ApplyLockedWindows();
 
 	-- Attempt to register for the addon message prefix.
 	C_ChatInfo.RegisterAddonMessagePrefix("ATT");
