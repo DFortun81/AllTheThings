@@ -633,6 +633,13 @@ root("Instances", tier(CLASSIC_TIER, {
 			e(467, {	-- Revelosh
 				["creatureID"] = 6910,
 				["groups"] = {
+					i(7733, {	-- Staff of Prehistoria
+						["description"] = "Use this on the keyhole looking gizmo in the digsite that has the miniature city to open the door to Ironaya.\n\nThis is a reference to the Raiders of the Lost Ark.",
+						["cost"] = {
+							{ "i", 7740, 1 },	-- Gni'kiv Medallion
+							{ "i", 7741, 1 },	-- The Shaft of Tsol
+						},
+					}),
 					i(7741, {	-- The Shaft of Tsol
 						["description"] = "Use this item along with the Gni'kiv Medallion to create the Staff of Prehistoria required to open the door to Ironaya.\n\nYou should trade this to the person that looted the Gni'kiv Medallion.",
 					}),
@@ -646,13 +653,6 @@ root("Instances", tier(CLASSIC_TIER, {
 						["timeline"] = { "added 7.3.0.24484"},
 					}),
 					i(9387),	-- Revelosh's Boots
-				},
-			}),
-			i(7733, {	-- Staff of Prehistoria
-				["description"] = "Use this on the keyhole looking gizmo in the digsite that has the miniature city to open the door to Ironaya.\n\nThis is a reference to the Raiders of the Lost Ark.",
-				["cost"] = {
-					{ "i", 7740, 1 },	-- Gni'kiv Medallion
-					{ "i", 7741, 1 },	-- The Shaft of Tsol
 				},
 			}),
 			e(469, {	-- Ironaya
