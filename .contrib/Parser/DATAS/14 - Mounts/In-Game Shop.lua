@@ -23,6 +23,7 @@ _.Mounts =
 		un(BLIZZARD_BALANCE, i(147901)),		-- Luminous Starseeker
 		un(BLIZZARD_BALANCE, i(122469)),		-- Mystic Runesaber
 		un(BLIZZARD_BALANCE, i(156564)),		-- Shu-zen, the Divine Sentinel
+		un(BLIZZARD_BALANCE, mount(347812)),	-- Sapphire Skyblazer
 		un(BLIZZARD_BALANCE, mount(308078)),	-- Squeakers, the Trickster
 		un(BLIZZARD_BALANCE, mount(326390)),	-- Steamscale Incinerator
 		un(BLIZZARD_BALANCE, mount(317177)),	-- Sunwarmed Purrkin

@@ -23,6 +23,7 @@ _.InGameShop =
 		un(BLIZZARD_BALANCE, i(147901)),			-- Luminous Starseeker
 		un(BLIZZARD_BALANCE, i(122469)),			-- Mystic Runesaber
 		un(BLIZZARD_BALANCE, i(156564)),			-- Shu-zen, the Divine Sentinel
+		un(BLIZZARD_BALANCE, mount(347812)),	-- Sapphire Skyblazer
 		un(BLIZZARD_BALANCE, mount(308078)),		-- Squeakers, the Trickster
 		un(BLIZZARD_BALANCE, mount(326390)),		-- Steamscale Incinerator
 		un(BLIZZARD_BALANCE, mount(317177)),		-- Sunwarmed Purrkin
@@ -83,7 +84,7 @@ _.InGameShop =
 		un(BLIZZARD_BALANCE, i(172380)),			-- Sprite Darter's Trousers
 	}),
 	n(-161, {	-- Toys
-		["description"] = "For a limited time 25% of proceeds will go to WoW Esports prize pools.",
+	--	["description"] = "For a limited time 25% of proceeds will go to WoW Esports prize pools.",
 		["g"] = {
 			un(BLIZZARD_BALANCE, i(166778)),		-- Horde's Might Firework
 			un(BLIZZARD_BALANCE, i(166777)),		-- Lion's Pride Firework
