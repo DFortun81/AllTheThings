@@ -485,6 +485,17 @@ local L = app.L;
 		--TODO: L.CHAT_COMMANDS_LABEL = "Chat Commands";
 		--TODO: L.CHAT_COMMANDS_TEXT = "/att |cffFFFFFFor|R /things |cffFFFFFFor|R /allthethings\n|cffFFFFFFOpens the Main List.\n\n|R/att mini |cffFFFFFFor|R /attmini\n|cffFFFFFFOpens the Mini List.\n\n|R/att bounty\n|cffFFFFFFOpens a list of bugged or unconfirmed items.\n\n|R/att ra |cffFFFFFFor|R /attra\n|cffFFFFFFOpens the Raid Assistant.\n\n|R/att wq |cffFFFFFFor|R /attwq\n|cffFFFFFFOpens the World Quests List.\n\n|R/att item:1234 |cffFFFFFFor|R /att [Item Link]\n|cffFFFFFFOpens a window with shared appearances. Also works with other things, such as|R quest:1234|cffFFFFFF, |Rnpcid:1234|cffFFFFFF, |Rmapid:1234|cffFFFFFF or |Rrecipeid:1234|cffFFFFFF.\n\n|R/att random |cffFFFFFFor|R /attrandom |cffFFFFFFor|R /attran\n|cffFFFFFFOpens the Random List.\n\n|R/att unsorted\n|cffFFFFFFOpens a list of unsourced items. Best opened in Debug Mode.\n\n|R/rl\n|cffFFFFFFReload your WoW interface.|R";
 
+	-- Profiles tab
+		--TODO: L.PROFILES_TAB = "Profiles";
+		--TODO: L.PROFILE = "Profile";
+		--TODO: L.PROFILE_INITIALIZE = "Initialize Profiles";
+		--TODO: L.PROFILE_INITIALIZE_TOOLTIP = "This will enable your Saved Variables for ATT to support and contain Profile data. Your current Settings and Window information will be copied into the '"..DEFAULT.."' Profile, which cannot be deleted, but may be modified and will be used as the initial Profile for all characters.\n\nPlease be sure to report any unusual behavior or bugs with Profiles to the ATT Discord!";
+		--TODO: L.PROFILE_INITIALIZE_CONFIRM = "Are you sure you want to enable Profile support?";
+		--TODO: L.PROFILE_NEW_TOOLTIP = "Create a blank Profile to be used by the current Character";
+		--TODO: L.PROFILE_COPY_TOOLTIP = "Copy the Selected Profile into the Current Profile";
+		--TODO: L.PROFILE_DELETE_TOOLTIP = "Delete the Selected Profile";
+		--TODO: L.PROFILE_SWITCH_TOOLTIP = "Set the Selected Profile as the Current Profile\n\nA Profile can also be Shift-Clicked to Switch to it";
+
 	-- About tab
 		L.ABOUT = "关于";
 		L.ABOUT_1 = " |CFFFFFFFF是一个收集追踪插件, 告诉你在哪里以及如何获得游戏中的所有事物! 在我们的Discord上有一个庞大的用户社区(链接在底部), 你可以在这里提出问题、提交建议以及报告错误或丢失的物品. 如果你发现了一些可收藏的事物或没有记录, 你可以在Discord上告诉我们, 或者对于更懂技术的人来说, 我们有一个Git, 你可以直接贡献给我们.\n\n虽然我们力求完美, 但每个补丁都会有很多事物加入到游戏中, 所以如果我们可能遗漏了一些事物, 请理解我们是一个试图跟上变化以及自己收集事物的小团队 :D\n\n欢迎在直播的时候向我提问, 即使不是直接与ATT相关的问题, 我也会尽力回答(常见的WoW插件编程也行).\n\n- |r|Cffff8000Crieve|CFFFFFFFF\n\nPS: 下载ATT怀旧服版本!\n\n是的, 我打算玩WoW怀旧服, 但在全职工作和开发两个版本的插件, 不会有太多的时间去打团.\n\n不，ATT不是将图标放在背包图标上的插件. 那个是CanIMogIt和Caerdon Wardrobe!\n\n即将推出的比较收藏的网站.|r";	--TODO: add TBC Classic here and add "For online collection comparing check out DataForAzeroth.com from shoogen!"
@@ -728,8 +739,10 @@ for key,value in pairs({
 		[-394] = "天灾工厂",											-- The Plagueworks
 	-- BFA Outposts
 		--TODO: [-397] = "Outposts",								-- Outposts
-	-- T0.5
+	-- T0.5 & Classic
 		--TODO: [-420] = "Tier 0.5 Sets",							-- Tier 0.5 Sets
+		--TODO: [-422] = "Atal'ai Defenders",						-- Atal'ai Defenders
+		[-423] = "天启四骑士",											-- The Four Horsemen
 	-- BFA War Chest
 		[-488] = "战争宝箱",											-- Daily War Chest
 	-- Tarot Cards
