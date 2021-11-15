@@ -5,7 +5,7 @@
 root("GearSets", n(CLASS_TRIAL, {
 	n(SL_HEADER, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 		n(LEVEL_FIFTY_BOOST, {
-			-- Note: [ Prepatch SL was 120 Boost before]
+			-- Note: [As of October 13th, 2020 Level 120 Boost became Level 50 Boost]
 			-- Note: [As of November 11th, 2021 SL Character boost increased from 50 to 60. Some of the old 50 items went to the new class trial level 50]
 			["description"] = "These are gained by using a Lvel 50 Boost of that particular class.  Each class has one default spec.  Shamans and Druids have two specs available and both are needed to 100% each category.",
 			["lvl"] = 50,

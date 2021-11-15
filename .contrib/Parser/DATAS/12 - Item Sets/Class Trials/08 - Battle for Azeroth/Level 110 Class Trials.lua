@@ -7,10 +7,17 @@ root("GearSets", n(CLASS_TRIAL, {
 		n(LEVEL_HUNDRED_TEN, {
 			-- Note: [As of July 4, 2018 it's Boosted 110's as no 110 trial is available]
 			-- Note: [As of August 18th, 2018 110 trials have been implemented and use same itemID's as boosting]
-			-- Note: [As of SL-pre patch these Became LvL 48 Class Trials ]
+			-- Note: [As of October 13th, 2020 these Became LvL 48 Class Trials ]
 			["description"] = "These are gained by boosting a character to Level 100.  Each class has one default spec except Shamans, Druids and Hunters.",
 			["lvl"] = 110,
-			--["sym"] = -- Symlink current trials
+			["sym"] = {
+				{"select", "headerID", CLASS_TRIAL},
+				{"pop"},
+				{"where", "headerID", SL_HEADER},
+				{"pop"},
+				{"where", "headerID", LEVEL_FOURTY_EIGHT },
+				{"pop"},
+			},
 			["groups"] = {
 				n(-387,  {	-- Relics
 					un(REMOVED_FROM_GAME, i(156805)),	-- Bloodtotem Band

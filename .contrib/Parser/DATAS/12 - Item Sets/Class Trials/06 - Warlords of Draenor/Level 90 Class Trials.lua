@@ -5,7 +5,9 @@
 root("GearSets", n(CLASS_TRIAL, {
 	n(WOD_HEADER, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 		n(LEVEL_NINETY, {
-			["description"] = "These were obtained by creating a Level 90 Class Trial or boosting a character to Level 90 for each class and specialization.", -- This gear was awarded if you used your Lv90 boost after 6.0.1
+			-- Note: [As of patch 6.0.1 Level 90 Boost does reward this gear instead]
+			-- Note: [As of --Date--(when this became class trial) you obtain the old Level 90 Boost Gear]
+			["description"] = "These were obtained by creating a Level 90 Class Trial or boosting a character to Level 90 for each class and specialization.",
 			["lvl"] = 90,
 			["groups"] = {
 				cl(DEATHKNIGHT, {
