@@ -6,7 +6,7 @@ _.ExpansionFeatures =
 {
 	tier(SL_TIER, {
 		n(NIGHT_FAE, {
-			["g"] = {
+			["g"] = bubbleDown({ ["customCollect"] = "SL_COV_NFA", },{
 				n(-935, {	-- Sanctum Upgrades
 					n(-915, {	-- Anima Conductor
 						n(-916, {	-- Tier 1: Flowing Tendrils
@@ -951,7 +951,7 @@ _.ExpansionFeatures =
 						}),
 					}),
 				}),
-			},
+			}),
 		}),
 	}),
 };

@@ -4,7 +4,7 @@
 
 _.PVP =
 {
-	n(-216, {	-- Prestige
+	pvp(n(-216, {	-- Prestige
 		["u"] = REMOVED_FROM_GAME,
 		["g"] = {
 			ach(10991, {	-- First Step into a Larger World [1]
@@ -151,5 +151,5 @@ _.PVP =
 				i(140407),	-- Prestigious Midnight Courser
 			})),
 		},
-	}),
+	})),
 };

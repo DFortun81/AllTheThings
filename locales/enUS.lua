@@ -1130,6 +1130,7 @@ app.L = {
 		-- Mole Machine
 		[-517] = "Interface\\Icons\\ability_racial_molemachine",							-- Mole Machine
 	-- Blizzard Events and Anniversaries
+		[-519] = "World Events",															-- World Events
 		[-520] = "Interface\\Icons\\inv_misc_missilesmallcluster_green",					-- Expansion Pre-Launch
 		[-522] = "Interface\\Icons\\expansionicon_wrathofthelichking",						-- Wotlk: Zombie Infestation
 		[-523] = "Interface\\Icons\\expansionicon_cataclysm",								-- Cataclysm: Elemental Unrest
@@ -1283,6 +1284,8 @@ app.L = {
 		[-860] = "Interface\\Icons\\inv_smallazeriteshard",									-- Rank 3
 		[-861] = "Interface\\Icons\\inv_smallazeritecluster",								-- Rank 4
 		[-862] = "Interface\\Icons\\inv_heartofazeroth",									-- Heart of Azeroth
+	-- Toys
+		[-899] = 1044996,																	-- Pepe
 	-- SL Headers
 		[-900] = 3675495,																	-- Covenant Sanctums
 		[-901] = 3726261,																	-- Covenant Callings
@@ -1577,7 +1580,7 @@ app.L = {
 		[-21] = "Captains",
 		[-22] = "Secrets",														-- Secrets
 		[-23] = "Common Dungeon Drop",											-- WoD Common Dungeon Drop
-		[-26] = BATTLE_PET_SOURCE_1,											-- Drop
+		[-26] = "Drops",														-- Drop
 		[-31] = select(1,GetCategoryInfo(15268)),								-- Promotions
 		[-34] = TRACKER_HEADER_WORLD_QUESTS,									-- World Quests
 		[-36] = BATTLE_PET_SOURCE_10,											-- In-Game Shop
@@ -1822,6 +1825,7 @@ app.L = {
 	-- Mole Machine
 		[-517] = GetSpellInfo(265225),											-- Mole Machine
 	-- Blizzard Events and Anniversaries
+		[-519] = app.asset("Category_Event"),									-- World Events
 		[-520] = "Expansion Pre-Launch",										-- Expansion Pre-Launch
 		[-522] = EXPANSION_NAME2..": Zombie Infestation",						-- Wrath of the Lich King: Zombie Infestation
 		[-523] = EXPANSION_NAME3..": Elemental Unrest",							-- Cataclysm: Elemental Unrest
@@ -1983,6 +1987,8 @@ app.L = {
 		[-860] = string.format(AZERITE_ESSENCE_RANK, 3),						-- Rank 3
 		[-861] = string.format(AZERITE_ESSENCE_RANK, 4),						-- Rank 4
 		[-862] = GetSpellInfo(275825),											-- Heart of Azeroth
+	-- Toys
+		[-899] = "Pepe",														-- Pepe
 	-- Shadowlands Header
 		[-900] = select(1,GetCategoryInfo(15441)),								-- Covenant Sanctums
 		[-901] = GetSpellInfo(339041),											-- Covenant Callings

@@ -185,7 +185,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					["description"] = "This quest chain seems to be an incomplete one as there is no follow-up. Still an interesting quest chain as most people do not know about it. It essentially details how Eranikus is not actually dead and likely prepares the player for the Opening of AQ quest chain that does involve Eranikus once again.",
 					["coord"] = { 13.67, 71.72, SWAMP_OF_SORROWS },
 					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { WINTERSPING },
+					["maps"] = { WINTERSPRING },
 					["lvl"] = 48,
 				}),
 				q(3446, {	-- Into the Depths
