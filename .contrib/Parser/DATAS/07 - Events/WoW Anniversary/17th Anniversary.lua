@@ -5,10 +5,27 @@
 root("WorldEvents", n(SEVENTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = WOW_ANNIVERSARY, },{
 	ach(14942),	-- WoW's 17th Anniversary
 	n(MAILBOX, {
-		i(185907),	-- Celebration Package
+		i(185906, {	-- Anniversary Gift
+			i(185907),	-- Celebration Package
+			i(172013),	-- Celebration Firework
+			--currency(1166),	-- Timewarped Badge
+			q(57249, {	-- A Timely Invitation
+				["provider"] = { "i", 171177 },	-- Invitation from the Timewalkers
+				["coord"] = { 53.6, 54.8, CAVERNS_OF_TIME },
+				["u"] = WOW_ANNIVERSARY,
+				["isYearly"] = true,
+			}),
+		}),
 	}),
 	n(QUESTS, {
-		q(60215),	-- Doomwalkin' Has Come Knockin'
+		q(60215, {	-- Doomwalkin' Has Come Knockin'
+			["provider"] = { "n", 157113 },	-- Chromie
+			["coord"] = { 53.5, 54.7, CAVERNS_OF_TIME },
+			["isWeekly"] = true,
+			["g"] = {
+				--currency(1166),	-- Timewarped Badge
+			},
+		}),
 	}),
 	n(VENDORS, {
 		n(158061, {	-- Historian Ma'di
@@ -21,23 +38,29 @@ root("WorldEvents", n(SEVENTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = WOW_ANNIVERS
 		}),
 	}),
 	n(WORLD_BOSSES, {
-		n(167749, bubbleDown({ ["modID"] = 22, },{	-- Doomwalker
-			i(186506),	-- Akama's Edge
-			i(186460),	-- Anger-Spark Gloves
-			i(186459),	-- Archaic Charm of Presence
-			i(186467),	-- Barrel-Blade Longrifle
-			i(186462),	-- Black-Iron Battlecloak
-			i(186481),	-- Darkcrest Waistguard
-			i(186466),	-- Ethereum Nexus-Reaver
-			i(186465),	-- Faceguard of the Endless Watch
-			i(186464),	-- Fathom-Helm of the Deeps
-			i(186461),	-- Gilded Trousers of Benediction
-			i(186475),	-- Hellstiched Mantle
-			i(186468),	-- Talon of the Tempest
-			i(186463),	-- Terrorweave Tunic
-			i(186484),	-- Voidforged Greaves
-			i(186469),	-- Illidari Doomhawk (MOUNT!)
-			i(186501);	-- Doomwalker Trophy Stand (TOY!)
-		})),
+		n(167749, {	-- Doomwalker
+			["isRaid"] = true,
+			["questID"] = 60214,
+			--["isDaily"] = true, or weekly
+			["coord"] = { 64.4, 50.7, TANARIS },
+			["g"] = sharedData({ ["modID"] = 22, },{
+				i(186506),	-- Akama's Edge
+				i(186460),	-- Anger-Spark Gloves
+				i(186459),	-- Archaic Charm of Presence
+				i(186467),	-- Barrel-Blade Longrifle
+				i(186462),	-- Black-Iron Battlecloak
+				i(186481),	-- Darkcrest Waistguard
+				i(186466),	-- Ethereum Nexus-Reaver
+				i(186465),	-- Faceguard of the Endless Watch
+				i(186464),	-- Fathom-Helm of the Deeps
+				i(186461),	-- Gilded Trousers of Benediction
+				i(186475),	-- Hellstiched Mantle
+				i(186468),	-- Talon of the Tempest
+				i(186463),	-- Terrorweave Tunic
+				i(186484),	-- Voidforged Greaves
+				i(186469),	-- Illidari Doomhawk (MOUNT!)
+				i(186501);	-- Doomwalker Trophy Stand (TOY!)
+			}),
+		}),
 	}),
 })));
