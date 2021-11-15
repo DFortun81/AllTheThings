@@ -146,11 +146,17 @@ root("Promotions", n(-535, bubbleDown({	-- Trading Card Game
 		i(33225, {	-- Swift Spectral Tiger
 			["timeline"] = { "added 2.1.3.6898" },
 		}),
-		i(35225, {	-- X-51 Nether-Rocket
-			["timeline"] = { "added 2.4.0.7923" },
+		i(35225, {	-- X-51 Nether-Rocket BOP
+			["timeline"] = { "added 2.4.0.7923" , "removed 3.2.0" },
 		}),
-		i(35226, {	-- X-51 Nether-Rocket X-TREME
-			["timeline"] = { "added 2.4.0.7923" },
+		i(49285, {	-- X-51 Nether-Rocket BOE
+			["timeline"] = { "added 3.2.0" },
+		}),
+		i(35226, {	-- X-51 Nether-Rocket X-TREME BOP
+			["timeline"] = { "added 2.4.0.7923" , "removed 3.2.0" },
+		}),
+		i(49286, {	-- X-51 Nether-Rocket X-TREME BOE
+			["timeline"] = { "added 3.2.0" },
 		}),
 	}),
 	filter(10, {	-- Shirt
