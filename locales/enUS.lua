@@ -1118,8 +1118,6 @@ app.L = {
 		[-397] = "Interface\\Icons\\inv_icon_daily_mission_scroll",							-- Outposts
 	-- T0.5 & Classic
 		[-420] = "Interface\\Icons\\INV_Chest_Plate03",										-- Tier 0.5 Sets
-		[-422] = "Atal'ai Defenders",														-- Atal'ai Defenders
-		[-423] = "The Four Horsemen",														-- The Four Horsemen
 	-- BFA War Chest
 		[-488] = "Interface\\Icons\\inv_misc_treasurechest04b",								-- Daily War Chest
 	-- Tarot Cards
@@ -1808,8 +1806,10 @@ app.L = {
 		[-396] = C_Map.GetAreaInfo(7932),										-- The Frostwing Halls
 	-- BFA Outposts
 		[-397] = "Outposts",													-- Outposts
-	-- T0.5
+	-- T0.5 & Classic
 		[-420] = "Tier 0.5 Sets",												-- Tier 0.5 Sets
+		[-422] = "Atal'ai Defenders",											-- Atal'ai Defenders
+		[-423] = "The Four Horsemen",											-- The Four Horsemen
 	-- BFA War Chest
 		[-488] = "War Chest",													-- Daily War Chest
 	-- Tarot Cards
