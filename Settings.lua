@@ -629,7 +629,7 @@ end
 settings.CreateTab = function(self, text)
 	local id = #self.Tabs + 1;
 	local tab = CreateFrame("Button", self:GetName() .. "-Tab" .. id, self, "OptionsFrameTabButtonTemplate");
-	if id > 1 then tab:SetPoint("TOPLEFT", self.Tabs[id - 1], "TOPRIGHT", 0, 0); end
+	if id > 1 then tab:SetPoint("TOPLEFT", self.Tabs[id - 1], "TOPRIGHT", -10, 0); end
 	table.insert(self.Tabs, tab);
 	self.MostRecentTab = tab;
 	tab.objects = {};
@@ -1300,7 +1300,7 @@ settings.merch = f;
 local line;
 (function()
 local tab = settings:CreateTab(L["GENERAL_LABEL"]);
-tab:SetPoint("TOPLEFT", settings.logo, "BOTTOMRIGHT", -20, 0);
+tab:SetPoint("TOPLEFT", settings.logo, "BOTTOMRIGHT", -36, 0);
 line = settings:CreateTexture(nil, "ARTWORK");
 line:SetPoint("LEFT", settings, "LEFT", 4, 0);
 line:SetPoint("RIGHT", settings, "RIGHT", -4, 0);
