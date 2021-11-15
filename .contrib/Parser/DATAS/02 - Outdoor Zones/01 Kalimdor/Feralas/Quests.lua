@@ -841,11 +841,6 @@ _.Zones =
 					["provider"] = { "n", 7777 },	-- Rok Orhan
 					["sourceQuest"] = 2975,	-- The Ogres of Feralas
 				}),
-				q(3380, {	-- The Sunken Temple
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 8115 },	-- Witch Doctor Uzer'i
-				}),
 				q(25387, {	-- To Camp Mojache
 					["provider"] = { "n", 39656 },	-- Orhan Ogreblade
 					["coord"] = { 51.9, 48.0, FERALAS },

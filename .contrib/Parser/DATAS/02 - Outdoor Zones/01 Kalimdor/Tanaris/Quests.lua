@@ -478,11 +478,6 @@ _.Zones =
 					["sourceQuest"] = 110,	-- Insect Part Analysis
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(3446, {	-- Into the Depths
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 7771 },	-- Marvon Rivetseeker
-					["sourceQuest"] = 3444,	-- The Stone Circle
-				}),
 				q(25556, {	-- Into Zul'Farrak
 					["provider"] = { "n", 7804 },	-- Trenton Lighthammer
 					["coord"] = { 42.4, 24.0, TANARIS },
@@ -823,11 +818,6 @@ _.Zones =
 					["coord"] = { 49.9, 82.8, TANARIS },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(4787, {	-- The Ancient Egg
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 8579 },	-- Yeh'kinya
-					["sourceQuest"] = 3527,	-- The Prophecy of Mosh'aru
-				}),
 				q(10277, {	-- The Caverns of Time
 					["provider"] = { "n", 20130 },	-- Andormu
 					["coord"] = { 41.5, 38.5, TANARIS },
@@ -903,14 +893,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25017,	-- Ancient Obstacles
 					["description"] = "If chest disappears for you, go to Zidormi in Uldum and ask her to return you back in time.",
-				}),
-				q(3444, {	-- The Stone Circle
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 7771 },	-- Marvon Rivetseeker
-					["sourceQuests"] = {
-						3445,	-- The Sunken Temple (A)
-						3380,	-- The Sunken Temple (H)
-					},
 				}),
 				q(2741, {	-- The Super Egg-O-Matic
 					["u"] = REMOVED_FROM_GAME,

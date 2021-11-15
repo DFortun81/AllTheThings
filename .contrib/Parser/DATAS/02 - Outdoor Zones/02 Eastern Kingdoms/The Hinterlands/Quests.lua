@@ -284,13 +284,6 @@ _.Zones =
 						i(131509),	-- Soul Eater Pauldrons
 					},
 				}),
-				q(1446,  {	-- Jammal'an the Prophet
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(11124)),	-- Helm of Exile
-						un(REMOVED_FROM_GAME, i(11123)),	-- Rainstrider Leggings
-					},
-				}),
 				q(7862,  {	-- Job Opening: Guard Captain of Revantusk Village
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,

@@ -1116,8 +1116,10 @@ app.L = {
 		[-396] = "Interface\\Icons\\achievement_dungeon_icecrown_frostwinghalls",			-- The Frostwing Halls
 	-- BFA Outposts
 		[-397] = "Interface\\Icons\\inv_icon_daily_mission_scroll",							-- Outposts
-	-- T0.5
+	-- T0.5 & Classic
 		[-420] = "Interface\\Icons\\INV_Chest_Plate03",										-- Tier 0.5 Sets
+		[-422] = "Atal'ai Defenders",														-- Atal'ai Defenders
+		[-423] = "The Four Horsemen",														-- The Four Horsemen
 	-- BFA War Chest
 		[-488] = "Interface\\Icons\\inv_misc_treasurechest04b",								-- Daily War Chest
 	-- Tarot Cards

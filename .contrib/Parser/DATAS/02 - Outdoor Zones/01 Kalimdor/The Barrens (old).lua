@@ -269,12 +269,6 @@ _.Zones = {
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3390 },	-- Apothecary Helbrim
 				}),
-				q(4146, {	-- Zapper Fuel
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 8496 },	-- Liv Rizzlefix
-					["sourceQuest"] = 4147,	-- Marvon's Workshop
-				}),
 				q(1483, {	-- Ziz Fizziks
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3442 },	-- Sputtervalve
