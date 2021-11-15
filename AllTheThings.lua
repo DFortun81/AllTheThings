@@ -12876,7 +12876,7 @@ app.RefreshCustomCollectibility = function()
 	-- Exile's Reach (New Player Experience)
 	app.SetCustomCollectibility("NPE", function()
 		-- settings override
-		if app.Settings:GetFilter("CC:NPE") then return true; end
+		if app.Settings:Get("CC:NPE") then return true; end
 		-- needs mapID to check this
 		if not app.GetCurrentMapID() then return; end
 		-- print("first check");
@@ -12900,7 +12900,7 @@ app.RefreshCustomCollectibility = function()
 	-- Shadowlands Skip
 	app.SetCustomCollectibility("SL_SKIP", function()
 		-- settings override
-		if app.Settings:GetFilter("CC:SL_SKIP") then return true; end
+		if app.Settings:Get("CC:SL_SKIP") then return true; end
 		-- check if quest #62713 is completed. appears to be a HQT concerning whether the character has chosen to skip the SL Storyline
 		return IsQuestFlaggedCompleted(62713) or false;
 	end);
@@ -12911,25 +12911,25 @@ app.RefreshCustomCollectibility = function()
 	-- Shadowlands Covenant: Kyrian
 	app.SetCustomCollectibility("SL_COV_KYR", function()
 		-- settings override
-		if app.Settings:GetFilter("CC:SL_COV_KYR") then return true; end
+		if app.Settings:Get("CC:SL_COV_KYR") then return true; end
 		return SLCovenantId == 1 or SLCovenantId == 0;
 	end);
 	-- Shadowlands Covenant: Venthyr
 	app.SetCustomCollectibility("SL_COV_VEN", function()
 		-- settings override
-		if app.Settings:GetFilter("CC:SL_COV_VEN") then return true; end
+		if app.Settings:Get("CC:SL_COV_VEN") then return true; end
 		return SLCovenantId == 2 or SLCovenantId == 0;
 	end);
 	-- Shadowlands Covenant: Night Fae
 	app.SetCustomCollectibility("SL_COV_NFA", function()
 		-- settings override
-		if app.Settings:GetFilter("CC:SL_COV_NFA") then return true; end
+		if app.Settings:Get("CC:SL_COV_NFA") then return true; end
 		return SLCovenantId == 3 or SLCovenantId == 0;
 	end);
 	-- Shadowlands Covenant: Necrolord
 	app.SetCustomCollectibility("SL_COV_NEC", function()
 		-- settings override
-		if app.Settings:GetFilter("CC:SL_COV_NEC") then return true; end
+		if app.Settings:Get("CC:SL_COV_NEC") then return true; end
 		return SLCovenantId == 4 or SLCovenantId == 0;
 	end);
 end

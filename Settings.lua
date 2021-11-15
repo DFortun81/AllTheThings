@@ -531,10 +531,10 @@ settings.NonInsane = function(self)
 	or self:GetValue("Seasonal", "DoFiltering")
 	-- Non-Account Mode with Covenants filtered
 	or (not self:Get("AccountMode")
-		and (not self:GetFilter("CC:SL_COV_KYR")
-			or not self:GetFilter("CC:SL_COV_NEC")
-			or not self:GetFilter("CC:SL_COV_NFA")
-			or not self:GetFilter("CC:SL_COV_VEN")));
+		and (not self:Get("CC:SL_COV_KYR")
+			or not self:Get("CC:SL_COV_NEC")
+			or not self:Get("CC:SL_COV_NFA")
+			or not self:Get("CC:SL_COV_VEN")));
 end
 settings.GetPersonal = function(self, setting)
 	return AllTheThingsSettingsPerCharacter[setting];
@@ -2717,7 +2717,7 @@ local reason = L["CUSTOM_COLLECTS_REASONS"]["NPE"]
 local text = reason["icon"].." "..reason["text"]
 local NPE_CheckBox = child:CreateCheckBox(text,
 function(self)
-	self:SetChecked(settings:GetFilter("CC:NPE"));
+	self:SetChecked(settings:Get("CC:NPE"));
 	if settings:Get("AccountMode") then
 		self:Disable();
 		self:SetAlpha(0.2);
@@ -2727,7 +2727,7 @@ function(self)
 	end
 end,
 function(self)
-	settings:SetFilter("CC:NPE", self:GetChecked());
+	settings:Set("CC:NPE", self:GetChecked());
 	settings:UpdateMode(1);
 end);
 NPE_CheckBox:SetATTTooltip(reason["desc"]);
@@ -2737,7 +2737,7 @@ reason = L["CUSTOM_COLLECTS_REASONS"]["SL_SKIP"]
 text = reason["icon"].." "..reason["text"]
 local SL_SKIP_CheckBox = child:CreateCheckBox(text,
 function(self)
-	self:SetChecked(settings:GetFilter("CC:SL_SKIP"));
+	self:SetChecked(settings:Get("CC:SL_SKIP"));
 	if settings:Get("AccountMode") then
 		self:Disable();
 		self:SetAlpha(0.2);
@@ -2747,7 +2747,7 @@ function(self)
 	end
 end,
 function(self)
-	settings:SetFilter("CC:SL_SKIP", self:GetChecked());
+	settings:Set("CC:SL_SKIP", self:GetChecked());
 	settings:UpdateMode(1);
 end);
 SL_SKIP_CheckBox:SetATTTooltip(reason["desc"]);
@@ -2758,7 +2758,7 @@ reason = L["CUSTOM_COLLECTS_REASONS"]["SL_COV_KYR"]
 text = reason["icon"].." "..insane_color..reason["text"].."|r"
 local SL_COV_KYR_CheckBox = child:CreateCheckBox(text,
 function(self)
-	self:SetChecked(settings:GetFilter("CC:SL_COV_KYR"));
+	self:SetChecked(settings:Get("CC:SL_COV_KYR"));
 	if settings:Get("AccountMode") then
 		self:Disable();
 		self:SetAlpha(0.2);
@@ -2768,7 +2768,7 @@ function(self)
 	end
 end,
 function(self)
-	settings:SetFilter("CC:SL_COV_KYR", self:GetChecked());
+	settings:Set("CC:SL_COV_KYR", self:GetChecked());
 	settings:UpdateMode(1);
 end);
 SL_COV_KYR_CheckBox:SetATTTooltip(string.format(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"], text));
@@ -2778,7 +2778,7 @@ reason = L["CUSTOM_COLLECTS_REASONS"]["SL_COV_NEC"]
 text = reason["icon"].." "..insane_color..reason["text"].."|r"
 local SL_COV_NEC_CheckBox = child:CreateCheckBox(text,
 function(self)
-	self:SetChecked(settings:GetFilter("CC:SL_COV_NEC"));
+	self:SetChecked(settings:Get("CC:SL_COV_NEC"));
 	if settings:Get("AccountMode") then
 		self:Disable();
 		self:SetAlpha(0.2);
@@ -2788,7 +2788,7 @@ function(self)
 	end
 end,
 function(self)
-	settings:SetFilter("CC:SL_COV_NEC", self:GetChecked());
+	settings:Set("CC:SL_COV_NEC", self:GetChecked());
 	settings:UpdateMode(1);
 end);
 SL_COV_NEC_CheckBox:SetATTTooltip(string.format(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"], text));
@@ -2798,7 +2798,7 @@ reason = L["CUSTOM_COLLECTS_REASONS"]["SL_COV_NFA"]
 text = reason["icon"].." "..insane_color..reason["text"].."|r"
 local SL_COV_NFA_CheckBox = child:CreateCheckBox(text,
 function(self)
-	self:SetChecked(settings:GetFilter("CC:SL_COV_NFA"));
+	self:SetChecked(settings:Get("CC:SL_COV_NFA"));
 	if settings:Get("AccountMode") then
 		self:Disable();
 		self:SetAlpha(0.2);
@@ -2808,7 +2808,7 @@ function(self)
 	end
 end,
 function(self)
-	settings:SetFilter("CC:SL_COV_NFA", self:GetChecked());
+	settings:Set("CC:SL_COV_NFA", self:GetChecked());
 	settings:UpdateMode(1);
 end);
 SL_COV_NFA_CheckBox:SetATTTooltip(string.format(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"], text));
@@ -2818,7 +2818,7 @@ reason = L["CUSTOM_COLLECTS_REASONS"]["SL_COV_VEN"]
 text = reason["icon"].." "..insane_color..reason["text"].."|r"
 local SL_COV_VEN_CheckBox = child:CreateCheckBox(text,
 function(self)
-	self:SetChecked(settings:GetFilter("CC:SL_COV_VEN"));
+	self:SetChecked(settings:Get("CC:SL_COV_VEN"));
 	if settings:Get("AccountMode") then
 		self:Disable();
 		self:SetAlpha(0.2);
@@ -2828,7 +2828,7 @@ function(self)
 	end
 end,
 function(self)
-	settings:SetFilter("CC:SL_COV_VEN", self:GetChecked());
+	settings:Set("CC:SL_COV_VEN", self:GetChecked());
 	settings:UpdateMode(1);
 end);
 SL_COV_VEN_CheckBox:SetATTTooltip(string.format(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"], text));
