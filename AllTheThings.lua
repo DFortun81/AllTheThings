@@ -16788,15 +16788,17 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					-- Cache the difficultyID, if there is one. Also, ignore the event tag for anything that isn't Bizmo's Brawlpub.
 					local difficultyID = not GetRelativeField(group, "headerID", -496) and GetRelativeValue(group, "difficultyID");
 
-					if group.instanceID or group.mapID or group.key == "classID" then
-						-- only if this group mapID matches the minilist mapID directly or by maps
-						if group.mapID == self.mapID or (group.maps and contains(group.maps, self.mapID)) then
-							MergeProperties(header, group, true);
-							if group.g then
-								MergeObjects(groups, group.g);
-							end
-							group = nil;
+
+					-- groups which 'should' be a root of the minilist
+					if (group.instanceID or group.mapID or group.key == "classID")
+					-- and actually match this minilist...
+					-- only if this group mapID matches the minilist mapID directly or by maps
+					and (group.mapID == self.mapID or (group.maps and contains(group.maps, self.mapID))) then
+						MergeProperties(header, group, true);
+						if group.g then
+							MergeObjects(groups, group.g);
 						end
+						group = nil;
 					else
 						-- Get the header chain for the group
 						local topHeader;

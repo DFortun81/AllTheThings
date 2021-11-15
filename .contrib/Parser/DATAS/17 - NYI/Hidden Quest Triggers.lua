@@ -1989,12 +1989,6 @@ _.HiddenQuestTriggers = {
 		--	Invasion points
 		--	secondary quests trigger multiple times throughout the week (aka if you complete it on tuesday and wednesday, both official + secondary quest pop both days).
 		--	secondary quests don't seem to be tied to which boss you kill OR loot (have gotten them when receiving rep tokens, unsullied tokens, blue drops, and even just AP/a grey item).
-		q(48982),	-- Invasion Point: Aurinor
-		q(49099),	-- Invasion Point: Bonich
-		q(49098),	-- Invasion Point: Cen'gar
-		q(49096),	-- Invasion Point: Naigtal
-		q(49097),	-- Invasion Point: Sangua
-		q(49091),	-- Invasion Point: Val
 		q(49195),	-- Greater Invasion Point: Occularus - weekly completion
 		q(49176),	-- Greater Invasion Point: Occularus - bonus roll used
 		q(49196),	-- Greater Invasion Point: Pit Lord Vilemus - weekly completion

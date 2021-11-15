@@ -5,9 +5,16 @@
 _.Instances = { tier(LEGION_TIER, {
 	inst(959, {	-- Invasion Points
 		["isRaid"] = true,
-		["lvl"] = 110,
+		-- ["sourceQuests"] = { },	-- TODO pretty sure a quest is required to unlock these
+		["coords"] = {
+			{ 38.8, 12.4, 882 },	-- Eredath
+			{ 70.5, 38.8, 882 },	-- Eredath
+			-- TODO more coords for possible spawns
+			-- then remove the maps for Krokuun and Antoran Wastes once coords added
+		},
 		["g"] = {
 			ach(12028, {	-- Envision Invasion Eradication
+				["collectible"] = false;
 				["maps"] = {
 					921,	-- Invasion Point: Aurinor
 					922,	-- Invasion Point: Bonich
@@ -15,6 +22,14 @@ _.Instances = { tier(LEGION_TIER, {
 					924,	-- Invasion Point: Naigtal
 					925,	-- Invasion Point: Sangua
 					926,	-- Invasion Point: Val
+					830,	-- Krokuun
+					831,	-- Upper Deck [The Vindicaar: Krokuun]
+					832,	-- Lower Deck [The Vindicaar: Krokuun]
+					883,	-- Upper Deck [The Vindicaar: Eredath]
+					884,	-- Lower Deck [The Vindicaar: Eredath]
+					885,	-- Antoran Wastes
+					886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
+					887,	-- Lower Deck [The Vindicaar: Antoran Wastes]
 				},
 				["crs"] = {
 					125849,	-- Invasion Point: Aurinor
@@ -79,208 +94,344 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				},
 			}),
-			-- not sure if questIDs should be attached to the lesser invasion points
-			-- they don't seem to function like world quests, so they don't show up in /attwq
-			-- enabling tracking may cause problems due to how the invasion points cycle, but i'm not sure!
-			-- questIDs are here but commented out in case anyone wants to figure out a way to use them in the future.
-			m(921, {	-- Invasion Point: Aurinor
-			--	["questID"] = 48982,	-- Invasion Point: Aurinor
-				["coord"] = { 38.77, 12.42, 882 },	-- Eredath
+			e(2010, {	-- Matron Folnuna
+				["questID"] = 49169,
+				["modelScale"] = 0.65,
+				["creatureID"] = 124514,
+				["isRaid"] = true,
+				["crs"] = { 127528 },	-- Greater Invasion Point: Matron Folnuna
+				["maps"] = {
+					929,	-- Greater Invasion Point: Matron Folnuna
+					830,	-- Krokuun
+					831,	-- Upper Deck [The Vindicaar: Krokuun]
+					832,	-- Lower Deck [The Vindicaar: Krokuun]
+					883,	-- Upper Deck [The Vindicaar: Eredath]
+					884,	-- Lower Deck [The Vindicaar: Eredath]
+					885,	-- Antoran Wastes
+					886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
+					887,	-- Lower Deck [The Vindicaar: Antoran Wastes]
+				},
+				["g"] = {
+					crit(3, {	-- Matron Folnuna
+						["achievementID"] = 12026,	-- Invasion Obliteration
+					}),
+					i(152376),	-- Crown of Burning Resolve
+					i(152369),	-- Helm of the Vigilant Eye
+					i(152354),	-- Accursed Defiler's Mantle
+					i(152371),	-- Shoulderguards of Despondent Masses
+					i(152358),	-- Imp-Overseer's Vest
+					i(152356),	-- Fel-Absorbant Wristbands
+					i(152375),	-- Gauntlets of Barbaric Cruelty
+					i(152360),	-- Gloves of Barbarous Feats
+					i(152372),	-- Waistguard of Devilish Deeds
+					i(152380),	-- Waistguard of Fel Magics
+					i(152349),	-- Nefarious Light-Step Slippers
+					i(152359),	-- Vile Drifter's Footpads
+					i(152053),	-- Essence of the Burgeoning Brood
+					i(152346),	-- Frigid Earring
+				},
+			}),
+			e(2011, {	-- Mistress Alluradel
+				["questID"] = 49167,
+				["modelScale"] = 0.95,
+				["creatureID"] = 124625,
+				["isRaid"] = true,
+				["crs"] = { 127536 },	-- Greater Invasion Point: Mistress Alluradel
+				["maps"] = {
+					928,	-- Greater Invasion Point: Mistress Alluradel
+					830,	-- Krokuun
+					831,	-- Upper Deck [The Vindicaar: Krokuun]
+					832,	-- Lower Deck [The Vindicaar: Krokuun]
+					883,	-- Upper Deck [The Vindicaar: Eredath]
+					884,	-- Lower Deck [The Vindicaar: Eredath]
+					885,	-- Antoran Wastes
+					886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
+					887,	-- Lower Deck [The Vindicaar: Antoran Wastes]
+				},
+				["g"] = {
+					crit(5, {	-- Mistress Alluradel
+						["achievementID"] = 12026,	-- Invasion Obliteration
+					}),
+					i(152351),	-- Mesmerizing Soul Hood
+					i(152354),	-- Accursed Defiler's Mantle
+					i(152363),	-- Fel-Spike Shoulderpads
+					i(152379),	-- Spaulders of Vile Determination
+					i(152378),	-- Breastplate of Terminal End
+					i(152366),	-- Enthralling Chain Armor
+					i(152373),	-- Poison-Barbed Bracers
+					i(152364),	-- Cinch of Detestable Guile
+					i(152372),	-- Waistguard of Devlish Deeds
+					i(152362),	-- Leggings of Heinous Acts
+					i(152349),	-- Nefarious Light-Step Slippers
+					i(152374),	-- Soul Crushing Stompers
+					i(152294),	-- Fel Mistress' Brand
+					i(152030),	-- Scourge of Perverse Desire
+				},
+			}),
+			e(2012, {	-- Inquisitor Meto
+				["questID"] = 49166,
+				["modelScale"] = 0.85,
+				["creatureID"] = 124592,
+				["isRaid"] = true,
+				["crs"] = { 127535 },	-- Greater Invasion Point: Inquisitor Meto
+				["maps"] = {
+					930,	-- Greater Invasion Point: Inquisitor Meto
+					830,	-- Krokuun
+					831,	-- Upper Deck [The Vindicaar: Krokuun]
+					832,	-- Lower Deck [The Vindicaar: Krokuun]
+					883,	-- Upper Deck [The Vindicaar: Eredath]
+					884,	-- Lower Deck [The Vindicaar: Eredath]
+					885,	-- Antoran Wastes
+					886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
+					887,	-- Lower Deck [The Vindicaar: Antoran Wastes]
+				},
+				["g"] = {
+					crit(4, {	-- Inquisitor Meto
+						["achievementID"] = 12026,	-- Invasion Obliteration
+					}),
+					i(152361),	-- Horned Hood of Retaliation
+					i(152371),	-- Shoulderguards of Despondent Masses
+					i(152378),	-- Breastplate of Terminal End
+					i(152353),	-- Robes of Demonic Purpose
+					i(152381),	-- Tainted Corruptor's Vambraces
+					i(152368),	-- Fel-Linked Crushers
+					i(152350),	-- Gloves of Grim Direction
+					i(152364),	-- Cinch of Detestable Guile
+					i(152380),	-- Waistguard of Fel Magics
+					i(152370),	-- Legguards of Doomed Chattel
+					i(152349),	-- Nefarious Light-Step Slippers
+					i(152359),	-- Vile Drifter's Footpads
+					i(152290),	-- Censer of Dark Intent
+					i(152344),	-- Meto's Orb of Entropy
+				},
+			}),
+			e(2013, {	-- Occularus
+				["questID"] = 49170,
+				["modelScale"] = 0.50,
+				["creatureID"] = 124492,
+				["isRaid"] = true,
+				["crs"] = { 127533 },	-- Greater Invasion Point: Occularus
+				["maps"] = {
+					932,	-- Greater Invasion Point: Occularus
+					830,	-- Krokuun
+					831,	-- Upper Deck [The Vindicaar: Krokuun]
+					832,	-- Lower Deck [The Vindicaar: Krokuun]
+					883,	-- Upper Deck [The Vindicaar: Eredath]
+					884,	-- Lower Deck [The Vindicaar: Eredath]
+					885,	-- Antoran Wastes
+					886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
+					887,	-- Lower Deck [The Vindicaar: Antoran Wastes]
+				},
+				["g"] = {
+					crit(1, {	-- Occularus
+						["achievementID"] = 12026,	-- Invasion Obliteration
+					}),
+					i(152369),	-- Helm of the Vigilant Eye
+					i(152351),	-- Mesmerizing Soul Hood
+					i(152354),	-- Accursed Defiler's Mantle
+					i(152358),	-- Imp-Overseer's Vest
+					i(152373),	-- Poison-Barbed Bracers
+					i(152381),	-- Tainted Corruptor's Vambraces
+					i(152360),	-- Gloves of Barbarous Feats
+					i(152355),	-- Sash of Diabolic Preparation
+					i(152377),	-- Gore-Soaked Legplates
+					i(152367),	-- Sabatons of Ceaseless Assault
+					i(152374),	-- Soul Crushing Stompers
+					i(152347),	-- Occularus' Unblemished Lens
+				},
+			}),
+			e(2014, {	-- Sotanathor
+				["questID"] = 49171,
+				["modelScale"] = 0.75,
+				["creatureID"] = 124555,
+				["isRaid"] = true,
+				["crs"] = { 127532 },	-- Greater Invasion Point: Sotanathor
+				["maps"] = {
+					931,	-- Greater Invasion Point: Sotanathor
+					830,	-- Krokuun
+					831,	-- Upper Deck [The Vindicaar: Krokuun]
+					832,	-- Lower Deck [The Vindicaar: Krokuun]
+					883,	-- Upper Deck [The Vindicaar: Eredath]
+					884,	-- Lower Deck [The Vindicaar: Eredath]
+					885,	-- Antoran Wastes
+					886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
+					887,	-- Lower Deck [The Vindicaar: Antoran Wastes]
+				},
+				["g"] = {
+					crit(2, {	-- Sotanathor
+						["achievementID"] = 12026,	-- Invasion Obliteration
+					}),
+					i(152361),	-- Horned Hood of Retaliation
+					i(152379),	-- Spaulders of Vile Determination
+					i(152366),	-- Enthralling Chain Armor
+					i(152353),	-- Robes of Demonic Purpose
+					i(152365),	-- Bracers of Diabolic Fury
+					i(152368),	-- Fel-Linked Crushers
+					i(152375),	-- Gauntlets of Barbaric Cruelty
+					i(152350),	-- Gloves of Grim Direction
+					i(152372),	-- Waistguard of Devlish Deeds
+					i(152377),	-- Gore-Soaked Legplates
+					i(152362),	-- Leggings of Heinous Acts
+					i(152352),	-- Subjugated Drudge's Leggings
+					i(152348),	-- Sotanathor's Thundering Hoof
+					i(152292),	-- Spike of Immortal Command
+				},
+			}),
+			e(2015, {	-- Pit Lord Vilemus
+				["questID"] = 49168,
+				["modelScale"] = 1.15,
+				["creatureID"] = 124719,
+				["isRaid"] = true,
+				["crs"] = { 127531 },	-- Greater Invasion Point: Pit Lord Vilemus
+				["maps"] = {
+					927,	-- Greater Invasion Point: Pit Lord Vilemus
+					830,	-- Krokuun
+					831,	-- Upper Deck [The Vindicaar: Krokuun]
+					832,	-- Lower Deck [The Vindicaar: Krokuun]
+					883,	-- Upper Deck [The Vindicaar: Eredath]
+					884,	-- Lower Deck [The Vindicaar: Eredath]
+					885,	-- Antoran Wastes
+					886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
+					887,	-- Lower Deck [The Vindicaar: Antoran Wastes]
+				},
+				["g"] = {
+					crit(6, {	-- Pit Lord Vilemus
+						["achievementID"] = 12026,	-- Invasion Obliteration
+					}),
+					i(152376),	-- Crown of Burning Resolve
+					i(152363),	-- Fel-Spike Shoulderpads
+					i(152378),	-- Breastplate of Terminal End
+					i(152365),	-- Bracers of Diabolic Fury
+					i(152356),	-- Fel-Absorbant Wristbands
+					i(152368),	-- Fel-Linked Crushers
+					i(152360),	-- Gloves of Barbarous Feats
+					i(152355),	-- Sash of Diabolic Preparation
+					i(152370),	-- Legguards of Doomed Chattel
+					i(152352),	-- Subjugated Drudge's Leggings
+					i(152367),	-- Sabatons of Ceaseless Assault
+					i(152374),	-- Soul Crushing Stompers
+					i(152345),	-- Vilemus' Bile
+				},
+			}),
+			q(48982, {	-- Invasion Point: Aurinor
 				["icon"] = "Interface\\Icons\\inv_legionadventure",
 				["crs"] = { 125849 },	-- Invasion Point: Aurinor
+				["repeatable"] = true,
+				["maps"] = {
+					921,	-- Invasion Point: Aurinor
+					830,	-- Krokuun
+					831,	-- Upper Deck [The Vindicaar: Krokuun]
+					832,	-- Lower Deck [The Vindicaar: Krokuun]
+					883,	-- Upper Deck [The Vindicaar: Eredath]
+					884,	-- Lower Deck [The Vindicaar: Eredath]
+					885,	-- Antoran Wastes
+					886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
+					887,	-- Lower Deck [The Vindicaar: Antoran Wastes]
+				},
 				["g"] = {
 					i(153265),	-- Enclave Aspirant's Battleaxe
 					i(153261),	-- Forlorn Artificer's Hammer
 				},
 			}),
-			m(922, {	-- Invasion Point: Bonich
-			--	["questID"] = 49099,	-- Invasion Point: Bonich
-				["coord"] = { 70.5, 38.8, 882 },	-- Eredath
+			q(49099, {	-- Invasion Point: Bonich
 				["icon"] = "Interface\\Icons\\inv_legionadventure",
 				["crs"] = { 126547 },	-- Invasion Point: Bonich
+				["repeatable"] = true,
+				["maps"] = {
+					922,	-- Invasion Point: Bonich
+					830,	-- Krokuun
+					831,	-- Upper Deck [The Vindicaar: Krokuun]
+					832,	-- Lower Deck [The Vindicaar: Krokuun]
+					883,	-- Upper Deck [The Vindicaar: Eredath]
+					884,	-- Lower Deck [The Vindicaar: Eredath]
+					885,	-- Antoran Wastes
+					886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
+					887,	-- Lower Deck [The Vindicaar: Antoran Wastes]
+				},
 				["g"] = {
 					i(153320),	-- Ardent Vindicator's Demolisher
 					i(153295),	-- Spectral Consul's Quickblade
 				},
 			}),
-			m(923, {	-- Invasion Point: Cen'gar
-			--	["questID"] = 49098,	-- Invasion Point: Cen'gar
+			q(49098, {	-- Invasion Point: Cen'gar
 				["icon"] = "Interface\\Icons\\inv_legionadventure",
 				["crs"] = { 126120 },	-- Invasion Point: Cen'gar
+				["repeatable"] = true,
+				["maps"] = {
+					923,	-- Invasion Point: Cen'gar
+					830,	-- Krokuun
+					831,	-- Upper Deck [The Vindicaar: Krokuun]
+					832,	-- Lower Deck [The Vindicaar: Krokuun]
+					883,	-- Upper Deck [The Vindicaar: Eredath]
+					884,	-- Lower Deck [The Vindicaar: Eredath]
+					885,	-- Antoran Wastes
+					886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
+					887,	-- Lower Deck [The Vindicaar: Antoran Wastes]
+				},
 				["g"] = {
 					i(153262),	-- Forlorn Artificer's Gavel
 					i(153300),	-- Militant Exarch's Saber
 				},
 			}),
-			m(924, {	-- Invasion Point: Naigtal
-			--	["questID"] = 49096,	-- Invasion Point: Naigtal
+			q(49096, {	-- Invasion Point: Naigtal
 				["icon"] = "Interface\\Icons\\inv_legionadventure",
 				["crs"] = { 126593 },	-- Invasion Point: Naigtal
+				["repeatable"] = true,
+				["maps"] = {
+					924,	-- Invasion Point: Naigtal
+					830,	-- Krokuun
+					831,	-- Upper Deck [The Vindicaar: Krokuun]
+					832,	-- Lower Deck [The Vindicaar: Krokuun]
+					883,	-- Upper Deck [The Vindicaar: Eredath]
+					884,	-- Lower Deck [The Vindicaar: Eredath]
+					885,	-- Antoran Wastes
+					886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
+					887,	-- Lower Deck [The Vindicaar: Antoran Wastes]
+				},
 				["g"] = {
 					i(153264),	-- Enclave Aspirant's Splitter
 					i(153301),	-- Militant Exarch's Slicer
 				},
 			}),
-			m(925, {	-- Invasion Point: Sangua
-			--	["questID"] = 49097,	-- Invasion Point: Sangua
+			q(49097, {	-- Invasion Point: Sangua
 				["icon"] = "Interface\\Icons\\inv_legionadventure",
 				["crs"] = { 125863 },	-- Invasion Point: Sangua
+				["repeatable"] = true,
+				["maps"] = {
+					925,	-- Invasion Point: Sangua
+					830,	-- Krokuun
+					831,	-- Upper Deck [The Vindicaar: Krokuun]
+					832,	-- Lower Deck [The Vindicaar: Krokuun]
+					883,	-- Upper Deck [The Vindicaar: Eredath]
+					884,	-- Lower Deck [The Vindicaar: Eredath]
+					885,	-- Antoran Wastes
+					886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
+					887,	-- Lower Deck [The Vindicaar: Antoran Wastes]
+				},
 				["g"] = {
 					i(153307),	-- Oronaar Miner's Pickaxe
 					i(153297),	-- Spectral Consul's Broadsword
 				},
 			}),
-			m(926, {	-- Invasion Point: Val
-			--	["questID"] = 49091,	-- Invasion Point: Val
+			q(49091, {	-- Invasion Point: Val
 				["icon"] = "Interface\\Icons\\inv_legionadventure",
 				["crs"] = { 126499 },	-- Invasion Point: Val
+				["repeatable"] = true,
+				["maps"] = {
+					926,	-- Invasion Point: Val
+					830,	-- Krokuun
+					831,	-- Upper Deck [The Vindicaar: Krokuun]
+					832,	-- Lower Deck [The Vindicaar: Krokuun]
+					883,	-- Upper Deck [The Vindicaar: Eredath]
+					884,	-- Lower Deck [The Vindicaar: Eredath]
+					885,	-- Antoran Wastes
+					886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
+					887,	-- Lower Deck [The Vindicaar: Antoran Wastes]
+				},
 				["g"] = {
 					i(153258),	-- Forlorn Artificer's Mace
 					i(153254),	-- Isolon Anchorite's Mace
 				},
-			}),
-			ach(12026, {	-- Invasion Obliteration
-				e(2010, {	-- Matron Folnuna
-					["questID"] = 49169,
-					["mapID"] = 929,
-					["modelScale"] = 0.65,
-					["creatureID"] = 124514,
-					["isRaid"] = true,
-					["crs"] = { 127528 },	-- Greater Invasion Point: Matron Folnuna
-					["g"] = {
-						i(152376),	-- Crown of Burning Resolve
-						i(152369),	-- Helm of the Vigilant Eye
-						i(152354),	-- Accursed Defiler's Mantle
-						i(152371),	-- Shoulderguards of Despondent Masses
-						i(152358),	-- Imp-Overseer's Vest
-						i(152356),	-- Fel-Absorbant Wristbands
-						i(152375),	-- Gauntlets of Barbaric Cruelty
-						i(152360),	-- Gloves of Barbarous Feats
-						i(152372),	-- Waistguard of Devilish Deeds
-						i(152380),	-- Waistguard of Fel Magics
-						i(152349),	-- Nefarious Light-Step Slippers
-						i(152359),	-- Vile Drifter's Footpads
-						i(152053),	-- Essence of the Burgeoning Brood
-						i(152346),	-- Frigid Earring
-					},
-				}),
-				e(2011, {	-- Mistress Alluradel
-					["mapID"] = 928,
-					["questID"] = 49167,
-					["modelScale"] = 0.95,
-					["creatureID"] = 124625,
-					["isRaid"] = true,
-					["crs"] = { 127536 },	-- Greater Invasion Point: Mistress Alluradel
-					["g"] = {
-						i(152351),	-- Mesmerizing Soul Hood
-						i(152354),	-- Accursed Defiler's Mantle
-						i(152363),	-- Fel-Spike Shoulderpads
-						i(152379),	-- Spaulders of Vile Determination
-						i(152378),	-- Breastplate of Terminal End
-						i(152366),	-- Enthralling Chain Armor
-						i(152373),	-- Poison-Barbed Bracers
-						i(152364),	-- Cinch of Detestable Guile
-						i(152372),	-- Waistguard of Devlish Deeds
-						i(152362),	-- Leggings of Heinous Acts
-						i(152349),	-- Nefarious Light-Step Slippers
-						i(152374),	-- Soul Crushing Stompers
-						i(152294),	-- Fel Mistress' Brand
-						i(152030),	-- Scourge of Perverse Desire
-					},
-				}),
-				e(2012, {	-- Inquisitor Meto
-					["questID"] = 49166,
-					["mapID"] = 930,
-					["modelScale"] = 0.85,
-					["creatureID"] = 124592,
-					["isRaid"] = true,
-					["crs"] = { 127535 },	-- Greater Invasion Point: Inquisitor Meto
-					["g"] = {
-						i(152361),	-- Horned Hood of Retaliation
-						i(152371),	-- Shoulderguards of Despondent Masses
-						i(152378),	-- Breastplate of Terminal End
-						i(152353),	-- Robes of Demonic Purpose
-						i(152381),	-- Tainted Corruptor's Vambraces
-						i(152368),	-- Fel-Linked Crushers
-						i(152350),	-- Gloves of Grim Direction
-						i(152364),	-- Cinch of Detestable Guile
-						i(152380),	-- Waistguard of Fel Magics
-						i(152370),	-- Legguards of Doomed Chattel
-						i(152349),	-- Nefarious Light-Step Slippers
-						i(152359),	-- Vile Drifter's Footpads
-						i(152290),	-- Censer of Dark Intent
-						i(152344),	-- Meto's Orb of Entropy
-					},
-				}),
-				e(2013, {	-- Occularus
-					["questID"] = 49170,
-					["mapID"] = 932,
-					["modelScale"] = 0.50,
-					["creatureID"] = 124492,
-					["isRaid"] = true,
-					["crs"] = { 127533 },	-- Greater Invasion Point: Occularus
-					["g"] = {
-						i(152369),	-- Helm of the Vigilant Eye
-						i(152351),	-- Mesmerizing Soul Hood
-						i(152354),	-- Accursed Defiler's Mantle
-						i(152358),	-- Imp-Overseer's Vest
-						i(152373),	-- Poison-Barbed Bracers
-						i(152381),	-- Tainted Corruptor's Vambraces
-						i(152360),	-- Gloves of Barbarous Feats
-						i(152355),	-- Sash of Diabolic Preparation
-						i(152377),	-- Gore-Soaked Legplates
-						i(152367),	-- Sabatons of Ceaseless Assault
-						i(152374),	-- Soul Crushing Stompers
-						i(152347),	-- Occularus' Unblemished Lens
-					},
-				}),
-				e(2014, {	-- Sotanathor
-					["questID"] = 49171,
-					["mapID"] = 931,
-					["modelScale"] = 0.75,
-					["creatureID"] = 124555,
-					["isRaid"] = true,
-					["crs"] = { 127532 },	-- Greater Invasion Point: Sotanathor
-					["g"] = {
-						i(152361),	-- Horned Hood of Retaliation
-						i(152379),	-- Spaulders of Vile Determination
-						i(152366),	-- Enthralling Chain Armor
-						i(152353),	-- Robes of Demonic Purpose
-						i(152365),	-- Bracers of Diabolic Fury
-						i(152368),	-- Fel-Linked Crushers
-						i(152375),	-- Gauntlets of Barbaric Cruelty
-						i(152350),	-- Gloves of Grim Direction
-						i(152372),	-- Waistguard of Devlish Deeds
-						i(152377),	-- Gore-Soaked Legplates
-						i(152362),	-- Leggings of Heinous Acts
-						i(152352),	-- Subjugated Drudge's Leggings
-						i(152348),	-- Sotanathor's Thundering Hoof
-						i(152292),	-- Spike of Immortal Command
-					},
-				}),
-				e(2015, {	-- Pit Lord Vilemus
-					["questID"] = 49168,
-					["mapID"] = 927,
-					["modelScale"] = 1.15,
-					["creatureID"] = 124719,
-					["isRaid"] = true,
-					["crs"] = { 127531 },	-- Greater Invasion Point: Pit Lord Vilemus
-					["g"] = {
-						i(152376),	-- Crown of Burning Resolve
-						i(152363),	-- Fel-Spike Shoulderpads
-						i(152378),	-- Breastplate of Terminal End
-						i(152365),	-- Bracers of Diabolic Fury
-						i(152356),	-- Fel-Absorbant Wristbands
-						i(152368),	-- Fel-Linked Crushers
-						i(152360),	-- Gloves of Barbarous Feats
-						i(152355),	-- Sash of Diabolic Preparation
-						i(152370),	-- Legguards of Doomed Chattel
-						i(152352),	-- Subjugated Drudge's Leggings
-						i(152367),	-- Sabatons of Ceaseless Assault
-						i(152374),	-- Soul Crushing Stompers
-						i(152345),	-- Vilemus' Bile
-					},
-				}),
 			}),
 		},
 	}),

@@ -366,14 +366,7 @@ _.Achievements =
 				crit(7),		-- Beginner's Guide to Dimensional Rifting Ch. 7 - Our Legacy
 			}),
 			ach(12084),		-- Infused and Abused (Argus)
-			ach(12026, {	-- Invasion Obliteration
-				crit(1),		-- Occularus
-				crit(2),		-- Sotanathor
-				crit(3),		-- Matron Folnuna
-				crit(4),		-- Inquisitor Meto
-				crit(5),		-- Mistress Alluradel
-				crit(6),		-- Pit Lord Vilemus
-			}),
+			ach(12026),	-- Invasion Obliteration
 			ach(11841, {	-- Naxt Victim
 				crit(1),		-- Than'otalion
 				crit(2),		-- Skulguloth

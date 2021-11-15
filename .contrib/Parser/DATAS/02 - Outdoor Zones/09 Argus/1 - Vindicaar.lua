@@ -15,8 +15,8 @@ _.Zones =
 				884,	-- Lower Deck [The Vindicaar: Eredath]
 				-- 886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
 				887,	-- Lower Deck [The Vindicaar: Antoran Wastes]
-				940,	-- Upper Deck [The Vindicaar: LFD]
-				941,	-- Lower Deck [The Vindicaar: LFD]
+				-- 940,	-- Upper Deck [The Vindicaar: LFD]
+				-- 941,	-- Lower Deck [The Vindicaar: LFD]
 			},
 			["lvl"] = lvlsquish(10, 110, 10),
 			["isRaid"] = true,
