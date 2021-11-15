@@ -1130,7 +1130,7 @@ app.L = {
 		-- Mole Machine
 		[-517] = "Interface\\Icons\\ability_racial_molemachine",							-- Mole Machine
 	-- Blizzard Events and Anniversaries
-		[-519] = "World Events",															-- World Events
+		[-519] = app.asset("Category_Event"),												-- World Events
 		[-520] = "Interface\\Icons\\inv_misc_missilesmallcluster_green",					-- Expansion Pre-Launch
 		[-522] = "Interface\\Icons\\expansionicon_wrathofthelichking",						-- Wotlk: Zombie Infestation
 		[-523] = "Interface\\Icons\\expansionicon_cataclysm",								-- Cataclysm: Elemental Unrest
@@ -1825,7 +1825,7 @@ app.L = {
 	-- Mole Machine
 		[-517] = GetSpellInfo(265225),											-- Mole Machine
 	-- Blizzard Events and Anniversaries
-		[-519] = app.asset("Category_Event"),									-- World Events
+		[-519] = "World Events",												-- World Events
 		[-520] = "Expansion Pre-Launch",										-- Expansion Pre-Launch
 		[-522] = EXPANSION_NAME2..": Zombie Infestation",						-- Wrath of the Lich King: Zombie Infestation
 		[-523] = EXPANSION_NAME3..": Elemental Unrest",							-- Cataclysm: Elemental Unrest
