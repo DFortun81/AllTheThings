@@ -2,7 +2,7 @@
 --        T O Y S       M O D U L E        --
 ---------------------------------------------
 
-root("Toys", n(-899, {	-- Pepe
+root("Toys", n(86470, {	-- Pepe
 	i(122293),		-- Trans-Dimensional Bird Whistle
 	i(170151, {	-- A Tiny Clockwork Key
 		["questID"] = 56911,	-- Pepe can be sometimes be summoned with this mask

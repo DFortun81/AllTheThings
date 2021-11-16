@@ -1284,8 +1284,6 @@ app.L = {
 		[-860] = "Interface\\Icons\\inv_smallazeriteshard",									-- Rank 3
 		[-861] = "Interface\\Icons\\inv_smallazeritecluster",								-- Rank 4
 		[-862] = "Interface\\Icons\\inv_heartofazeroth",									-- Heart of Azeroth
-	-- Toys
-		[-899] = 1044996,																	-- Pepe
 	-- SL Headers
 		[-900] = 3675495,																	-- Covenant Sanctums
 		[-901] = 3726261,																	-- Covenant Callings
@@ -1987,8 +1985,6 @@ app.L = {
 		[-860] = string.format(AZERITE_ESSENCE_RANK, 3),						-- Rank 3
 		[-861] = string.format(AZERITE_ESSENCE_RANK, 4),						-- Rank 4
 		[-862] = GetSpellInfo(275825),											-- Heart of Azeroth
-	-- Toys
-		[-899] = "Pepe",														-- Pepe
 	-- Shadowlands Header
 		[-900] = select(1,GetCategoryInfo(15441)),								-- Covenant Sanctums
 		[-901] = GetSpellInfo(339041),											-- Covenant Callings
