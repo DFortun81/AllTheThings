@@ -4,7 +4,7 @@ profession(INSCRIPTION, {
 			["description"] = "A Mage inscriptionist with 175 skill (BfA) has a chance to create this recipe when conjuring their refreshment table. Other classes must get it from a Mage or the auction house.",
 		}),
 	}),
-	n(-26, {	-- Drop
+	n(DROPS, {
 		q(36239, {	-- A Mysterious Satchel
 			["requireSkill"] = INSCRIPTION,
 			["description"] = "This item can drop from any Draenor mob.",

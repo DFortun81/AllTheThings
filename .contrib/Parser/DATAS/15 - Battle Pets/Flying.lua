@@ -83,7 +83,7 @@ _.BattlePets =
 			p(1975),	-- Direbeak Hatchling
 			p(2118),	-- Docile Skyfin
 			p(169, {	-- Dragon Kite
-				["u"] = 10,	-- TCG
+				["u"] = TCG,
 			}),
 			p(537),		-- Dragonbone Hatchling
 			p(1386, {	-- Dread Hatchling
@@ -245,7 +245,7 @@ _.BattlePets =
 			p(2924),	-- Tranquil Wader
 			p(525),		-- Turkey
 			p(241, {	-- Tuskarr Kite
-				["u"] = 10,	-- TCG
+				["u"] = TCG,
 			}),
 			p(1464),	-- Twilight Wasp
 			p(1538),	-- Umbrafen Spore

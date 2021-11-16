@@ -28,7 +28,7 @@ _.BattlePets =
 			p(2546),	-- Detective Ray
 			p(2710),	-- Drowned Hatchling
 			p(1967),	-- Drudge Ghoul
-			un(10, p(348)),	-- Eye of the Legion
+			un(TCG, p(348)),	-- Eye of the Legion
 			un(REMOVED_FROM_GAME, p(346)),	-- Fetish Shaman
 			p(3114),	-- Fodder
 			p(266),		-- Fossilized Hatchling
@@ -55,10 +55,10 @@ _.BattlePets =
 			p(453),		-- Infested Bear Cub
 			p(3045),	-- Iridescent Ooze
 			p(3122),	-- Irongrasp
-			un(10, p(302)),	-- Landro's Lichling
+			un(TCG, p(302)),	-- Landro's Lichling
 			p(2532),	-- Leper Rat
 			p(3098),	-- Lil'Abom
-			un(10, p(249)),		-- Lil' K.T.
+			un(TCG, p(249)),		-- Lil' K.T.
 			p(3119),	-- Lost Limb
 			p(458),		-- Lost of Lordaeron
 			p(2895),	-- Lost Soul

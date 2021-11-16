@@ -59,7 +59,7 @@ _.BattlePets =
 			p(2888),	-- Glimr
 			p(2114),	-- Globe Yeti
 			p(333, {	-- Gregarious Grell
-				["u"] = 10,	-- TCG
+				["u"] = TCG,
 			}),
 			p(1602, {	-- Grommloc
 				["u"] = REMOVED_FROM_GAME,

@@ -47,7 +47,7 @@ _.BattlePets =
 			p(1764),	-- Energized Manafiend
 			p(1773),	-- Erudite Manafiend
 			p(183, {	-- Ethereal Soul-Trader
-				["u"] = 10,	-- TCG
+				["u"] = TCG,
 			}),
 			p(1717),	-- Extinguished Eye
 			p(3126),	-- Eye of Affliction
@@ -66,7 +66,7 @@ _.BattlePets =
 			p(3125),	-- Golden Eye
 			p(2120),	-- Grasping Manifestation
 			p(1174, {	-- Gusting Grimoire
-				["u"] = 10,	-- TCG
+				["u"] = TCG,
 			}),
 			p(1346),	-- Harmonious Porcupette
 			p(1718),	-- Hateful Eye
@@ -128,7 +128,7 @@ _.BattlePets =
 			}),
 			p(1185),	-- Spectral Porcupette
 			p(242, {	-- Spectral Tiger Cub
-				["u"] = 10,	-- TCG
+				["u"] = TCG,
 			}),
 			p(1969),	-- Stardust
 			p(2393),	-- Sticky Oozeling

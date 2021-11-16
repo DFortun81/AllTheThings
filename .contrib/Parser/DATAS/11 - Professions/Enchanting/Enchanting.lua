@@ -6,7 +6,7 @@
 
 -- Enchanting - Skill ID 333 / Spell ID 7411
 profession(ENCHANTING, {
-	n(-26, {	-- Drop
+	n(DROPS, {
 		q(36308, {	-- Enchanted Highmaul Bracer (A)
 			["requireSkill"] = ENCHANTING,
 			["description"] = "This item can drop from any Draenor mob.",

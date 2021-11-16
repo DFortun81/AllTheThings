@@ -1,6 +1,6 @@
 -- Fishing - Skill ID 356 / Spell ID 7620
 profession(FISHING, {
-	n(-26,    {	-- Drop
+	n(DROPS, {
 		i(34109, {	-- Weather-Beaten Journal
 			["_drop"] = { "spellID", "recipeID" },
 		}),

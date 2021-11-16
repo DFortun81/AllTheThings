@@ -1,6 +1,6 @@
 -- Skinning - Skill ID 393 / Spell ID 8613
 profession(SKINNING, {
-	n(-26, {	-- Drop
+	n(DROPS, {
 		i(111351, {		-- A Guide to Skinning in Draenor
 			["collectible"] = false,
 			["description"] = "This can drop from any Warlords of Draenor mob after skinning it.",

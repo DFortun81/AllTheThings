@@ -8,7 +8,7 @@ profession(TAILORING, {
 			["requireSkill"] = TAILORING,
 		}),
 	}),
-	n(-26, {	-- Drop
+	n(DROPS, {
 		q(36236, {	-- The Cryptic Tome of Tailoring
 			["requireSkill"] = TAILORING,
 			["description"] = "This item can drop from any Draenor mob.",

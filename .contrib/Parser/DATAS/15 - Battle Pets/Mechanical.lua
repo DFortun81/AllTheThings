@@ -38,7 +38,7 @@ _.BattlePets =
 			p(2674),	-- H4ND-EE
 			p(1387),	-- Iron Starlette
 			p(1806),	-- Knockoff Blingtron
-			un(10, p(285)),		-- Landro's Lil' XT
+			un(TCG, p(285)),		-- Landro's Lil' XT
 			p(1412),	-- Lifelike Mechanical Frostboar
 			p(95),		-- Lifelike Toad
 			p(1320),	-- Lil' Bling
@@ -80,7 +80,7 @@ _.BattlePets =
 				["races"] = HORDE_ONLY,
 			}),
 			p(471),		-- Robo-Chick
-			un(10, p(168)),	-- Rocket Chicken
+			un(TCG, p(168)),	-- Rocket Chicken
 			p(2401),	-- Rooter
 			p(1957),	-- Runeforged Servitor
 			p(2673),	-- Scrapyard Tunneler

@@ -1,5 +1,5 @@
 profession(LEATHERWORKING, {
-	n(-26, {	-- Drop
+	n(DROPS, {
 		q(36176, {	-- A Call for Huntsman
 			["requireSkill"] = LEATHERWORKING,
 			["description"] = "This item can drop from any Draenor mob.",

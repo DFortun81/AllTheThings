@@ -1,6 +1,6 @@
 -- Alchemy - Skill ID 171 / Spell ID 2259
 profession(ALCHEMY, {
-	n(-26, {	-- Drop	-- TODO: Add the drop locations
+	n(DROPS, {	-- TODO: Add the drop locations
 		i(109558, {		-- A Treatise on the Alchemy of Draenor
 			["collectible"] = false,
 			["spellID"] = 0,

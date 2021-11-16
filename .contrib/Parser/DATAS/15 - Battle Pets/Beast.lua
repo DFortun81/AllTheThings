@@ -177,7 +177,7 @@ _.BattlePets =
 			p(2458),	-- Muskflank Calfling
 			p(2713),	-- Mustyfur Snooter
 			p(303, {	-- Nightsaber Cub
-				["u"] = 10,	-- Trading Card Game
+				["u"] = TCG,
 			}),
 			p(1727),	-- Nursery Spider
 			p(236),		-- Obsidian Hatchling

@@ -1,6 +1,6 @@
 -- Herbalism - Skill ID 182 / Spell ID 2366
 profession(HERBALISM, {
-	n(-26, {	-- Drop
+	n(DROPS, {
 		i(111350, {		-- A Compendium of the Herbs of Draenor
 			["collectible"] = false,
 			["description"] = "This can drop from any herb gathering node on Draenor.",

@@ -4,7 +4,7 @@
 
 _.Titles =
 {
-	n(-3, {	-- Holiday
+	n(HOLIDAYS, {
 		title(43, {	-- Elder <Name>
 			["u"] = LUNAR_FESTIVAL,
 		}),

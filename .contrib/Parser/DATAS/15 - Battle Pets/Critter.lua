@@ -162,7 +162,7 @@ _.BattlePets =
 			p(3020),	-- Runelight Leaper
 			p(496),		-- Rusty Snail
 			p(665, {	-- Sand Scarab
-				["u"] = 10,	-- TCG
+				["u"] = TCG,
 			}),
 			p(2463),	-- Sandshell Chitterer
 			p(717),		-- Savory Beetle

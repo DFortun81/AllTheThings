@@ -4,7 +4,7 @@
 
 _.Mounts =
 {
-	n(-26, {	-- Drop
+	n(DROPS, {
 		i(143643),	-- Abyss Worm
 		i(152904),	-- Acid Belcher
 		i(168830),	-- Aerial Unit R-21/X

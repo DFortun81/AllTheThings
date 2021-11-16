@@ -1,6 +1,6 @@
 -- Mining - Skill ID 186 / Spell ID 2575
 profession(MINING, {
-	n(-26, {	-- Drop
+	n(DROPS, {
 		i(111349, {		-- A Treatise on Mining in Draenor
 			["collectible"] = false,
 			["description"] = "This can drop from any ore gathering node on Draenor.",

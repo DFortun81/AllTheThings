@@ -4,11 +4,11 @@
 local RIDING_TURTLE = i(23720, {	-- Riding Turtle
 	["timeline"] = { "added 2.0.0.5462" },
 });
-root("Promotions", n(-535, bubbleDown({	-- Trading Card Game
+root("Promotions", n(TCG_HEADER, bubbleDown({
 	-- #if ANYCLASSIC
 	["u"] = REMOVED_FROM_GAME,
 	-- #else
-	["u"] = 10,
+	["u"] = TCG,
 	-- #endif
 }, {
 	filter(BATTLE_PETS, {

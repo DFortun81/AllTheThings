@@ -110,7 +110,7 @@ _.BattlePets =
 			p(1755),	-- Plump Jelly
 			p(1568),	-- Puddle Terror
 			p(328, {	-- Purple Puffer
-				["u"] = 10,	-- TCG
+				["u"] = TCG,
 			}),
 			p(2373),	-- River Frog
 			p(2378),	-- River Otter
