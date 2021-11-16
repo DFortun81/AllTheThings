@@ -673,6 +673,7 @@ for key,value in pairs({
 		--TODO: [-21] = "Captains",									-- Captains
 		--TODO: [-22] = "Secrets",									-- Secrets
 		--TODO: [-23] = "Common Dungeon Drop",						-- WoD Common Dungeon Drop
+		--TODO: [-26] = "Drops",									-- Drops
 		[-40] = "绝版",												-- Legacy
 		--TODO: [-41] = "Cache of Madness",
 	-- Armor Types
@@ -750,6 +751,7 @@ for key,value in pairs({
 	-- Misc
 		--TODO: [-493] = "Broken Mission Loot",						-- Broken Mission Loot
 	-- Blizzard Events and Anniversaries
+		--TODO: [-519] = "World Events",							-- World Events
 		[-520] = "资料片前夕",										-- Expansion Pre-Launch
 		[-522] = "巫妖王之怒：Zombie Infestation",					-- Wrath of the Lich King: Zombie Infestation
 		[-523] = "大地的裂变：Elemental Unrest",						-- Cataclysm: Elemental Unrest

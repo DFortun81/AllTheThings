@@ -614,6 +614,7 @@ for key,value in pairs({
 		[-21] = "Капитаны",										-- Captains
 		[-22] = "Секреты",										-- Secrets
 		[-23] = "Обычная добыча с боссов",						-- WoD Common Dungeon Drop
+		[-26] = BATTLE_PET_SOURCE_1,							-- Drops
 		[-41] = "Тайник Безумия",
 	-- Armor Types
 		[-43] = "Тканевые доспехи",								-- Cloth
@@ -691,6 +692,7 @@ for key,value in pairs({
 	-- Misc
 		[-493] = "Сломанный лут с миссий",							-- Broken Mission Loot
 	-- Blizzard Events and Anniversaries
+		[-519] = "Игровые события",									-- World Events
 		[-520] = "Препатч",											-- Expansion Pre-Launch
 		[-522] = "Wrath of the Lich King: Нашествие зомби",			-- Wrath of the Lich King: Zombie Infestation
 		[-523] = "Cataclysm: Бейство элементалей",					-- Cataclysm: Elemental Unrest
