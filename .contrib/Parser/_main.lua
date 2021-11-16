@@ -1293,15 +1293,9 @@ end
 mi = function(id, t)									-- Create a MISSION Object (Alternative)
 	return struct("missionID", id, t);
 end
--- #if BEFORE WRATH
-mount = function(id, t)									-- Create a MOUNT Object, which is just a spellID with a filter.
-	return struct("spellID", id, t);
-end
--- #else
 mount = function(id, t)									-- Create a MOUNT Object, which is just a spellID with a filter.
 	return struct("mountID", id, t);
 end
--- #endif
 npc = function(id, t)									-- Create an NPC Object (negative indicates that it is custom)
 	return struct("npcID", id, t);
 end
