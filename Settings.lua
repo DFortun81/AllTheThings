@@ -351,7 +351,9 @@ settings.ApplyProfile = function()
 			end
 		end
 
-		app.print(L["PROFILE"]..":",key);
+		if app.IsReady then
+			app.print(L["PROFILE"]..":",key);
+		end
 		return true;
 	end
 end

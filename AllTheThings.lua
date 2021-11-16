@@ -21120,6 +21120,9 @@ app.events.VARIABLES_LOADED = function()
 			app:RefreshData(false);
 		end
 
+		-- do a settings apply to ensure ATT windows which have now been created, are moved according to the current Profile
+		app.Settings:ApplyProfile();
+
 		-- now that the addon is ready, make sure the minilist is updated to the current location if necessary
 		Callback(app.LocationTrigger);
 	end);
