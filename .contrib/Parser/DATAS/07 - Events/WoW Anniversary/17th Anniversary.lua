@@ -43,6 +43,10 @@ root("WorldEvents", n(SEVENTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = WOW_ANNIVERS
 			["questID"] = 60214,
 			--["isDaily"] = true, or weekly
 			["coord"] = { 64.4, 50.7, TANARIS },
+			["maps"] = {
+				74,	--	Caverns of Time Entrance
+				CAVERNS_OF_TIME,
+			},
 			["g"] = {
 				i(186506),	-- Akama's Edge
 				i(186460),	-- Anger-Spark Gloves
