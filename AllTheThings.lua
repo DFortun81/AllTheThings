@@ -9985,10 +9985,8 @@ local mountFields = {
 		return app.CollectibleMounts;
 	end,
 	["collected"] = function(t)
-		if app.CurrentCharacter.Spells[t.spellID] then return 1; end
-		if app.AccountWideRecipes and ATTAccountWideData.Spells[t.spellID] then return 2; end
+		if ATTAccountWideData.Spells[t.spellID] then return 1; end
 		if IsSpellKnown(t.spellID) or (t.questID and IsQuestFlaggedCompleted(t.questID)) then
-			app.CurrentCharacter.Spells[t.spellID] = 1;
 			ATTAccountWideData.Spells[t.spellID] = 1;
 			return 1;
 		end
@@ -10049,7 +10047,6 @@ local RefreshMounts = function(newMountID)
 		if spellID and isCollected then
 			if not collectedSpells[spellID] then
 				collectedSpells[spellID] = 1;
-				app.CurrentCharacter.Spells[spellID] = 1;
 				if not newMounts then newMounts = { spellID }
 				else tinsert(newMounts, spellID); end
 			end
