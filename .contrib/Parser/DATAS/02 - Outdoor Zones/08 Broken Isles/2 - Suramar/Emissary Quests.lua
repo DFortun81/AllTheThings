@@ -8,7 +8,7 @@ _.Zones =
 		m(SURAMAR, {
 			n(EMISSARY_QUESTS, {
 				q(42421, {	-- The Nightfallen
-					["repeatable"] = true,
+					["isWorldQuest"] = true,
 					["providers"] = {
 						{ "n", 97140 },	-- Thalyssra
 						{ "n", 115736 },	-- First Arcanist Thalyssra

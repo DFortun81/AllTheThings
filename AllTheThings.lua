@@ -11010,6 +11010,11 @@ app.TryPopulateQuestRewards = function(questObject)
 		questObject.OnUpdate = nil;
 		questObject.doUpdate = true;
 
+		-- Troublesome scenarios to test when changing this logic:
+		-- BFA emissaries
+		-- BFA Azerite armor caches
+		-- Argus Rare WQ's + Rare Alt quest
+
 		-- Finally ensure that any cached entries for the quest are copied into this version of the object
 		-- Needs to be SearchForField as non-quests can be pulled too
 		local cachedQuests = SearchForField("questID", questObject.questID);
@@ -11032,23 +11037,22 @@ app.TryPopulateQuestRewards = function(questObject)
 					-- need to exclusively copy cached values for certain fields since normal merge logic will not copy them
 					-- ref: quest 49675/58703
 					if data.u then questObject.u = data.u; end
-					-- merge in sourced things under this quest object if it is not a raw quest or not an API provided item
+					-- merge in sourced things under this quest object
 					if data.g then
 						for _,o in ipairs(data.g) do
 							-- nest cached non-items
 							if not o.itemID then
 								-- if app.DEBUG_PRINT then print("nested-nonItem",o.hash) end
 								tinsert(nonItemNested, o);
-							else
-								-- cached items need to merge with corresponding API item based on simple itemID
-								if apiItems[o.itemID] then
-									-- if app.DEBUG_PRINT then print("nested-merged",o.hash) end
-									MergeProperties(apiItems[o.itemID], o, true);
-								else
-									-- otherwise just get nested
-									-- if app.DEBUG_PRINT then print("nested-item",o.hash) end
-									tinsert(nonItemNested, o);
-								end
+							-- cached items need to merge with corresponding API item based on simple itemID
+							elseif apiItems[o.itemID] then
+								-- if app.DEBUG_PRINT then print("nested-merged",o.hash) end
+								MergeProperties(apiItems[o.itemID], o, true);
+							--  if it is not a WQ or is a 'raid' (world boss)
+							elseif questObject.isRaid or not questObject.isWorldQuest then
+								-- otherwise just get nested
+								-- if app.DEBUG_PRINT then print("nested-item",o.hash) end
+								tinsert(nonItemNested, o);
 							end
 						end
 					end

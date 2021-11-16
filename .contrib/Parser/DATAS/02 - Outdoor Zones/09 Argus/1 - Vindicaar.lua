@@ -26,7 +26,7 @@ _.Zones =
 				n(EMISSARY_QUESTS, {
 					q(48642, {	-- Argussian Reach
 						["provider"] = { "n", 127151 },	-- Toraan the Revered
-						["repeatable"] = true,
+						["isWorldQuest"] = true,
 						["g"] = {
 							i(157831, {	-- Scuffed Krokul Cache
 								["sym"] = {
@@ -84,7 +84,7 @@ _.Zones =
 					}),
 					q(48639, {	-- Army of the Light
 						["provider"] = { "n", 127120 },	-- Vindicator Jaelaana
-						["repeatable"] = true,
+						["isWorldQuest"] = true,
 						["g"] = {
 							i(157829, {	-- Gilded Trunk
 								["sym"] = {

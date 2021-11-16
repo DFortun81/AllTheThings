@@ -8,7 +8,7 @@ _.Zones =
 		m(AZSUNA, {
 			n(EMISSARY_QUESTS, {
 				q(42420, {	-- Court of Farondis
-					["repeatable"] = true,
+					["isWorldQuest"] = true,
 					["provider"] = { "n", 107376 },	-- Veridis Fallon <Court of Farondis Emissary>
 					["g"] = {
 						i(157825, {	-- Farondis Lockbox

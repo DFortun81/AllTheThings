@@ -90,7 +90,7 @@ _.Zones =
 			}),
 			q(56119, {	-- The Ankoan
 				["races"] = ALLIANCE_ONLY,
-				["repeatable"] = true,
+				["isWorldQuest"] = true,
 				["g"] = {
 					crit(1, {	-- Complete an Emissary for your ally in Nazjatar
 						["achievementID"] = 13635,	-- Tour of the Depths
@@ -99,7 +99,7 @@ _.Zones =
 			}),
 			q(56120, {	-- The Unshackled
 				["races"] = HORDE_ONLY,
-				["repeatable"] = true,
+				["isWorldQuest"] = true,
 				["g"] = {
 					crit(1, {	-- Complete an Emissary for your ally in Nazjatar
 						["achievementID"] = 13635,	-- Tour of the Depths

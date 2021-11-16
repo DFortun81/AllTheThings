@@ -41,7 +41,7 @@ _.Zones =
 					}),
 					n(EMISSARY_QUESTS, {
 						q(50562, {	-- Champions of Azeroth
-							["isDaily"] = true,
+							["isWorldQuest"] = true,
 							["coord"] = { 42.22, 44.27, SILITHUS },
 							["lvl"] = { 50 },
 						}),

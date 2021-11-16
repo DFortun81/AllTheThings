@@ -12,7 +12,7 @@ _.Zones =
 					["lvl"] = 120,
 					["coord"] = { 58.0, 62.6, DAZARALOR },
 					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
+					["isWorldQuest"] = true,
 					["g"] = {
 						i(165871, {	-- Honorbound Equipment Cache (awarded for all incursions)
 							["description"] = "This cache is awarded for completing any incursion on a Horde character.",
@@ -62,7 +62,7 @@ _.Zones =
 				q(50598, {	-- Zandalari Empire
 					["provider"] = { "n", 131287 },	-- Natal'hakata
 					["lvl"] = 120,
-					["isDaily"] = true,
+					["isWorldQuest"] = true,
 					["coord"] = { 67.07, 71.44, HALL_OF_CHRONICLERS },
 					["races"] = HORDE_ONLY,
 					["g"] = {

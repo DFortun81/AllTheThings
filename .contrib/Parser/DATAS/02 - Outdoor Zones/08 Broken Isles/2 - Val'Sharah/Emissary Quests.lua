@@ -8,7 +8,7 @@ _.Zones =
 		m(VALSHARAH, {
 			n(EMISSARY_QUESTS, {
 				q(42170, {	-- The Dreamweavers
-					["repeatable"] = true,
+					["isWorldQuest"] = true,
 					["provider"] = { "n", 106901 },	-- Sylvia Hartshorn <Dreamweaver Emissary>
 					["groups"] = {
 						i(157822, {	-- Dreamweaver Provisions

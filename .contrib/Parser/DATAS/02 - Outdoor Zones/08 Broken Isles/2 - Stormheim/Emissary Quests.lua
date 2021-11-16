@@ -8,7 +8,7 @@ _.Zones =
 		m(STORMHEIM, {
 			n(EMISSARY_QUESTS,   {
 				q(42234, {	-- The Valarjar
-					["repeatable"] = true,
+					["isWorldQuest"] = true,
 					["provider"] = { "n", 106904 },	-- Valdemar Stormseeker <Valarjar Emissary>
 					["groups"] = {
 						i(157824, {	-- Valarjar Cache

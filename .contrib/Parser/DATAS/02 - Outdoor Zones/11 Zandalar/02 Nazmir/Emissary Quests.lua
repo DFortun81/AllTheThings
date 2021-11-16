@@ -25,7 +25,7 @@ _.Zones =
 					["lvl"] = 120,
 					["coord"] = { 39.11, 79.47, NAZMIR },
 					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
+					["isWorldQuest"] = true,
 					["g"] = {
 						i(165865, {	-- Nazmir Expeditionary Equipment Cache
 							["sym"] = {

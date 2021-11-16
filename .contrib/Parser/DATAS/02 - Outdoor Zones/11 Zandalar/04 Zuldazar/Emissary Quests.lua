@@ -25,7 +25,7 @@ _.Zones =
 					["provider"] = { "n", 134345 },	-- Collector Kojo
 					["lvl"] = 120,
 					["coord"] = { 71.51, 30.35, ZULDAZAR },
-					["isDaily"] = true,
+					["isWorldQuest"] = true,
 					["g"] = {
 						i(165785, {	-- Tortollan Trader's Stock
 							i(165680),	-- Igneous Winterskorn Loop

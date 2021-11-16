@@ -11,7 +11,7 @@ _.Zones =
 					["provider"] = { "n", 135815 },	-- Quartermaster Alcorn
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
+					["isWorldQuest"] = true,
 					["g"] = {
 						i(165870, {	-- Order of Embers Equipment Cache
 							["sym"] = {

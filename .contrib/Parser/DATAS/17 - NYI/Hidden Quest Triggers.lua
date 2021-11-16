@@ -3841,7 +3841,7 @@ _.HiddenQuestTriggers = {
 
 		-- Dungeons
 		q(62658),	-- Shadowlands Dungeon Reward Quest
-		q(62079),	-- triggered at the end of Mythic Tirna Scithe (+2)
+		q(62079),	-- received weekly Mythic+ keystone
 
 		-- Castle Nathria
 		q(60680),	-- LFR 'The Leeching Vaults' Completed

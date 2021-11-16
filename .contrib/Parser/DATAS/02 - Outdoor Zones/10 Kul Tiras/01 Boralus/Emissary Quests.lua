@@ -12,7 +12,7 @@ _.Zones =
 					["lvl"] = 120,
 					["coord"] = { 69.32, 24.94, BORALUS },
 					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
+					["isWorldQuest"] = true,
 					["g"] = {
 						i(165872, {	-- 7th Legion Equipment Cache (awarded for all incursions)
 							["sym"] = {
@@ -38,13 +38,13 @@ _.Zones =
 					["lvl"] = 120,
 					["coord"] = { 67.52, 21.56, BORALUS },
 					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
+					["isWorldQuest"] = true,
 					["g"] = {
 						i(165869, {	-- Proudmoore Admiralty Equipment Cache
 							["sym"] = {
 								{"select", "itemID", 157996},	-- Harbormaster Pauldrons
 								{"finalize"},	-- Push the items to the finalized list.
-								
+
 								{"select", "mapID", KULTIRAS},
 								{"pop"},	-- Discard the Map Header and acquire the children.
 								{"select", "mapID", TIRAGARDE_SOUND},

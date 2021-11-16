@@ -26,7 +26,7 @@ _.Zones =
 					["lvl"] = 120,
 					["coord"] = { 59.29, 69.33, STORMSONG_VALLEY },
 					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
+					["isWorldQuest"] = true,
 					["g"] = {
 						i(165868, {	-- Storm's Wake Equipment Cache
 							["sym"] = {
@@ -72,7 +72,7 @@ _.Zones =
 					["provider"] = { "n", 135793 },	-- Collector Kojo
 					["lvl"] = 120,
 					["coord"] = { 40.54, 36.41, STORMSONG_VALLEY },
-					["isDaily"] = true,
+					["isWorldQuest"] = true,
 					["g"] = {
 						i(165785, {	-- Tortollan Trader's Stock
 							i(165680),	-- Igneous Winterskorn Loop

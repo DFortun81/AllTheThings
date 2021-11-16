@@ -8,7 +8,7 @@ _.Zones =
 		m(BROKEN_SHORE, {
 			n(EMISSARY_QUESTS, {
 				q(48641, {	-- Armies of Legionfall
-					["repeatable"] = true,
+					["isWorldQuest"] = true,
 					["provider"] = { "n", 120414 },	-- Captain Ruysantos
 					["coord"] = { 42.2, 58.8, BROKEN_SHORE },
 					["g"] = {

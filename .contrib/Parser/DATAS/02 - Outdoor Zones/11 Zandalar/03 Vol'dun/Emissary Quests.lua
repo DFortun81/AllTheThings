@@ -25,7 +25,7 @@ _.Zones =
 					["lvl"] = 120,
 					["coord"] = { 56.68, 49.74, VOLDUN },
 					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
+					["isWorldQuest"] = true,
 					["g"] = {
 						i(165864, {	-- Voldunai Equipment Cache
 							["sym"] = {

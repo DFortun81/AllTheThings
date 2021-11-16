@@ -8,7 +8,7 @@ _.Zones =
 		m(HIGHMOUNTAIN, {
 			n(EMISSARY_QUESTS, {
 				q(42233, {	-- Highmountain Tribes
-					["repeatable"] = true,
+					["isWorldQuest"] = true,
 					["provider"] = { "n", 106902 },	-- Ransa Greyfeather <Highmountain Emissary>
 					["groups"] = {
 						i(157823, {	-- Highmountain Tribute

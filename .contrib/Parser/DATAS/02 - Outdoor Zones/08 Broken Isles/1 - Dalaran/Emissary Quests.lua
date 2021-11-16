@@ -8,7 +8,7 @@ _.Zones =
 		m(LEGION_DALARAN, {
 			n(EMISSARY_QUESTS, {
 				q(43179, {	-- The Kirin Tor of Dalaran
-					["repeatable"] = true,
+					["isWorldQuest"] = true,
 					["provider"] = { "n", 32725 },	-- Warmage Silva
 					["g"] = {
 						i(147410),	-- Greater Court of Farondis Insignia
