@@ -293,9 +293,9 @@ root("Instances", tier(CLASSIC_TIER, {
 				},
 				["ignoreBonus"] = true,
 				["timeline"] = REMOVED_WITH_RERELEASE,
-				["groups"] = bubbleDown({ ["timeline"] = REMOVED_WITH_RERELEASE }, {
+				["groups"] = {
 			-- #endif
-					n(10184, {	-- Onyxia
+					n(10184, bubbleDown({ ["timeline"] = REMOVED_WITH_RERELEASE }, {	-- Onyxia
 						removeclassicphase(ach(684, {	-- Onyxia's Lair (Level 60)
 							-- #if BEFORE 3.0.1
 							["sourceQuests"] = {
@@ -335,9 +335,9 @@ root("Instances", tier(CLASSIC_TIER, {
 						i(17078),	-- Sapphiron Drape
 						i(18813),	-- Ring of Binding
 						i(17064),	-- Shard of the Scale
-					}),
+					})),
 			-- #if AFTER WRATH
-				}),
+				},
 			}),
 			applyclassicphase(WRATH_PHASE_THREE, d(3, {	-- 10 Player
 				["lvl"] = 80,
