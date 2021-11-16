@@ -279,16 +279,6 @@ _.Zones =
 					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(168,   {	-- Collecting Memories
-					["provider"] = { "n", 656 },	-- Wilder Thistlenettle
-					["coord"] = { 65.2, 21.2, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(2036)),	-- Dusty Mining Gloves
-						un(REMOVED_FROM_GAME, i(2037)),	-- Tunneler's Boots
-					},
-				}),
 				q(46274, {	-- Consoling the King
 					["sourceQuests"] = { 46272 },	-- Summons to the Keep
 					["provider"] = { "n", 119338 },	-- Genn Greymane
@@ -774,15 +764,6 @@ _.Zones =
 					["provider"] = { "n", 44395 },	-- Celestine of the Harvest
 					["classes"] = { DRUID },
 					["coord"] = { 57.6, 24.8, STORMWIND_CITY },
-				}),
-				q(167,   {	-- Oh Brother...
-					["provider"] = { "n", 656 },	-- Wilder Thistlenettle
-					["coord"] = { 66.8, 43.8, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(1893)),	-- Miner's Revenge
-					},
 				}),
 				q(6187,  {	-- Order Must Be Restored
 					["providers"] = {

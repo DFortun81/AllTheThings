@@ -295,7 +295,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					i(132569, {	-- Stolen Jailer's Greaves
 						["timeline"] = { "added 7.0.3.22248" },
 					}),
-					i(2168),	-- Corpse Rompers
+					i(2168),	-- Foreman's Boots [Classic] / Corpse Rompers [CATA+]
 				},
 			}),
 		},
