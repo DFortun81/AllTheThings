@@ -231,7 +231,7 @@ _.Zones =
 				}),
 				q(52374, {	-- Work Order: Crow's Nest Scope
 					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
+					["races"] = HORDE_ONLY,
 					["isWorldQuest"] = true,
 					["requireSkill"] = ENGINEERING,
 					["g"] = {
