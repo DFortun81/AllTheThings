@@ -1982,7 +1982,7 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange)
 		"race:"..app.RaceID,
 		"class:"..app.ClassIndex,
 		"lvl:"..app.Level,
-		"mapID:"..mapID,
+		mapID and ("mapID:"..mapID) or "mapID:??",
 		coord and ("coord:"..coord) or "coord:??",
 		"ver:"..app.Version,
 
