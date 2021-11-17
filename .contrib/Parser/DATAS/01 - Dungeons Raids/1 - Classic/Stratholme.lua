@@ -10,9 +10,9 @@ _.Instances = { tier(CLASSIC_TIER, {
 			m(STRATHOLME, {	-- Stratholme - Main Gate
 				["creatureID"] = -388, -- Stratholme - Main Gate
 				["description"] = "Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Live\" or \"Scarlet\" side, which the Scarlet Crusade has taken over.",
-				["maps"] = {
+				-- ["maps"] = {
 					-- 827,	-- Paladin: Legion Class Mount Map TODO: move this under whatever quest sends you here
-				},
+				-- },
 				["coord"] = { 27.66, 11.64, EASTERN_PLAGUELANDS },	-- Stratholme [Main Gate]
 				["groups"] = {
 					n(QUESTS, {
