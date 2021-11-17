@@ -90,9 +90,7 @@ _.Zones =
 						["sourceQuests"] = {
 							9726,	-- Now That We're Friends...
 							9919,	-- Sporeggar
-							-- TODO:: verify below
-							9806,	-- Fertile Spores (probably)
-							9729,	-- Fhwoor Smash! (probably)
+							9729,	-- Fhwoor Smash!
 						},
 					}),
 				}),
