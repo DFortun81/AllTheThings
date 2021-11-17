@@ -16631,6 +16631,24 @@ customWindowUpdates["CosmicInfuser"] = function(self, force)
 					},
 				},
 			};
+			local openMinilist = function(row, button)
+				-- logic to right-click to set the minilist to this mapID, for testing
+				if button == "RightButton" then
+					app.OpenMiniList(row.ref.mapID, true);
+					return true;
+				end
+			end
+			local meta = {
+				["collected"] = function(t)
+					local results = SearchForField("mapID", t.mapID);
+					rawset(t, "collected", results and true or false);
+					rawset(t, "title", results and #results or 0);
+					return rawget(t, "collected");
+				end,
+			};
+			-- an override base table for the normal map base table...
+			local baseMap = { __index = function(t, key) return meta[key] and meta[key](t) or app.BaseMap.__index(t, key); end };
+
 			self.Rebuild = function(self)
 				-- Rebuild all the datas
 				local temp = self.data.g[1];
@@ -16638,24 +16656,18 @@ customWindowUpdates["CosmicInfuser"] = function(self, force)
 				tinsert(self.data.g, temp);
 
 				-- Go through all of the possible maps
+				local allmapchains = {};
 				for mapID=1,3000,1 do
 					local mapInfo = C_Map_GetMapInfo(mapID);
 					if mapInfo then
-						local results = SearchForField("mapID", mapID);
-						local mapObject = { ["mapID"] = mapID, ["collectible"] = true };
-						if results and #results > 0 then
-							mapObject.collected = true;
-						else
-							mapObject.collected = false;
-						end
+						local mapObject = setmetatable({ ["mapID"] = mapID, ["collectible"] = true, ["OnClick"] = openMinilist }, baseMap);
 
 						-- Recurse up the map chain and build the full hierarchy
 						local parentMapID = mapInfo.parentMapID;
 						while parentMapID do
 							mapInfo = C_Map_GetMapInfo(parentMapID);
 							if mapInfo then
-								-- TODO: add logic to right-click to set the minilist to this mapID, for testing
-								mapObject = { ["mapID"] = parentMapID, ["collectible"] = true, ["g"] = { mapObject } };
+								mapObject = setmetatable({ ["mapID"] = parentMapID, ["collectible"] = true, ["OnClick"] = openMinilist, ["g"] = { mapObject } }, baseMap);
 								parentMapID = mapInfo.parentMapID;
 							else
 								break;
@@ -16663,20 +16675,16 @@ customWindowUpdates["CosmicInfuser"] = function(self, force)
 						end
 
 						-- Merge it into the listing.
-						NestObject(self.data, mapObject, true);
+						tinsert(allmapchains, mapObject);
 					end
 				end
-
+				NestObjects(self.data, allmapchains);
+				BuildGroups(self.data, self.data.g);
 				self:Update(true);
 			end
 		end
 
 		-- Update the window and all of its row data
-		self.data.progress = 0;
-		self.data.total = 0;
-		self.data.indent = 0;
-		self.data.back = 1;
-		BuildGroups(self.data, self.data.g);
 		self:BaseUpdate(force);
 	end
 end;
@@ -17082,6 +17090,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				AfterCombatCallback(RefreshLocation);
 			end
 		end
+		app.OpenMiniList = OpenMiniList;
 		app.OpenMiniListForCurrentZone = OpenMiniListForCurrentZone;
 		app.ToggleMiniListForCurrentZone = ToggleMiniListForCurrentZone;
 		app.LocationTrigger = LocationTrigger;
