@@ -324,6 +324,7 @@ _.Instances = { tier(CATA_TIER, {
 								i(78486),	-- Ti'tahk, the Steps of Time
 								i(78480),	-- Vishanka, Jaws of the Earth
 								i(89810),	-- Bounty of a Sundered Land
+								i(122198),	-- Music Roll: The Shattering [Confirmed in #errors]
 							})),
 						},
 					}),
