@@ -755,6 +755,7 @@ _.Zones =
 					["description"] = "Use your Wildhammer Flare Gun to summon the questgiver anywhere on the Path of Conquest.",
 					["sourceQuests"] = { 10775 },	-- Tabards of the Illidari
 					["groups"] = {
+						i(31279),	-- Enchanted Illidari Tabard [Temp Quest Item] (SourceID can be learned, but cannot be transmogged)
 						i(31075),	-- Evoker's Mark of the Redemption
 						i(31078),	-- Protector's Mark of the Redemption
 						i(31077),	-- Slayer's Mark of the Redemption

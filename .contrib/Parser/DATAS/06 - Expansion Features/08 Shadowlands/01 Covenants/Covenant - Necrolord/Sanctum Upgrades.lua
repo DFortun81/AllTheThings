@@ -1087,10 +1087,13 @@ _.HiddenQuestTriggers = {
 	q(63398),	-- Chest
 	q(63400),	-- Cloak (182498)
 	q(63399),	-- Slippers (182501)
+
 -- Duty-Bound Set
-	q(63404),	-- Gloves Leather
-	q(63409),	-- Waist Cloth
-	q(63402),	-- Conjurers Leggings
+	q(63404),	-- Gloves / Leather
+	q(63409),	-- Waist / Cloth
+	q(63402),	-- Legs / Cloth
+	q(63401),	-- Shoulders / Plate
+
 	q(62037),	-- unlocking Mind of Maldraxxus set (TransmogSetID 2033, Duty-Bound Conjurer's items)
 	q(62036),	-- unlocking Zeal of Maldraxxus set (TransmogSetID 2038, Duty-Bound Wraith's items)
 	q(62028),	-- unlocking Heart of Maldraxxus set (TransmogSetID 2039, Duty-Bound Tactician's items)

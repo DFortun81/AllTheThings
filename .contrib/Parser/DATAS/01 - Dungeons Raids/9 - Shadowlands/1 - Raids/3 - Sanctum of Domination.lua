@@ -1299,6 +1299,7 @@ _.HiddenQuestTriggers = {
 	q(64612),	-- Hollowsoul (Mythic)
 	q(64679),	-- Hollowsoul (Mythic)
 
+	q(64676),	-- Borr-Gahn (LFR)
 	q(64606),	-- Stygian Ember from Borr-Gahn [178824] (Heroic)
 	q(64622),	-- Stygian Ember from Borr-Gahn (Heroic)
 	q(64623),	-- Stygian Ember from Borr-Gahn (Heroic)

@@ -157,13 +157,17 @@ _.Zones =
 							n(87394, {	-- Kwilax Fuseshiv <Reputation Vendor>
 								["coord"] = { 50.5, 41.4, DRAENOR_NAGRAND },
 								["g"] = {
-									currency(823, {	-- Apexis Crystal
-										["g"] = {
-											i(119149),	-- Captured Forest Sproutling
-											i(116672),	-- Domesticated Razorback
-											i(119148),	-- Indentured Albino River Calf
-											i(118667),	-- Steamwheedle Elixir
-										},
+									i(119149, {	-- Captured Forest Sproutling
+										["cost"] = { { "c", 823, 2000 } },	-- 2000x Apexis Crystal
+									}),
+									i(116672, {	-- Domesticated Razorback
+										["cost"] = { { "c", 823, 5000 } },	-- 5000x Apexis Crystal
+									}),
+									i(119148, {	-- Indentured Albino River Calf
+										["cost"] = { { "c", 823, 2000 } },	-- 2000x Apexis Crystal
+									}),
+									i(118667, {	-- Steamwheedle Elixir
+										["cost"] = { { "c", 823, 1 } },	-- 1x Apexis Crystal
 									}),
 									i(119165, {	-- Contract: Professor Felblast
 										follower(460),	-- Professor Felblast

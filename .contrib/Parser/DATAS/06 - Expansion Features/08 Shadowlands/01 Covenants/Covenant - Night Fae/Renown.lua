@@ -66,12 +66,12 @@ _.ExpansionFeatures =
 
 _.HiddenQuestTriggers = {
 	q(64074),	-- hitting Renown 45 - received mount, Ardenweald Wilderling
-	-- q( ),	-- hitting Renown 48 [Death Knight] (received Memory of ??)
+	q(64406),	-- hitting Renown 48 [Death Knight] (received Memory of Rampant Transference)
 	-- q( ),	-- hitting Renown 48 [Demon Hunter] (received Memory of ??)
 	q(64397),	-- hitting Renown 48 [Druid] (received Memory of Celestial Spirits)
 	q(64388),	-- hitting Renown 48 [Hunter] (received Memory of the Fragments of the Elder Antlers)
 	q(64403),	-- hitting Renown 48 [Mage] (received Memory of the Fae Heart)
-	-- q( ),	-- hitting Renown 48 [Monk] (received Memory of ??)
+	q(64380),	-- hitting Renown 48 [Monk] (received Memory of Faeline Harmony)
 	q(64382),	-- hitting Renown 48 [Paladin] (received Memory of ??)
 	q(64408),	-- hitting Renown 48 [Priest] (received Memory of Bwonsamdi's Pact)
 	q(64401),	-- hitting Renown 48 [Rogue] (received Memory of Toxic Onslaught)
