@@ -20524,6 +20524,15 @@ app.events.ARTIFACT_UPDATE = function(...)
 	end
 end
 app.events.VARIABLES_LOADED = function()
+	local function LocalizeGlobal(globalName, init)
+		local val = _G[globalName];
+		if init and not val then
+			val = {};
+			_G[globalName] = val;
+		end
+		return val;
+	end
+
 	local v = GetAddOnMetadata("AllTheThings", "Version");
 	-- if placeholder exists as the Version tag, then assume we are not on the Release version
 	if string.match(v, "version") then
@@ -20535,12 +20544,8 @@ app.events.VARIABLES_LOADED = function()
 	else
 		app.Version = "v" .. v;
 	end
-	AllTheThingsAD = _G["AllTheThingsAD"];	-- For account-wide data.
-	if not AllTheThingsAD then
-		AllTheThingsAD = { };
-		_G["AllTheThingsAD"] = AllTheThingsAD;
-	end
 
+	AllTheThingsAD = LocalizeGlobal("AllTheThingsAD", true);	-- For account-wide data.
 	-- Cache the Localized Category Data
 	AllTheThingsAD.LocalizedCategoryNames = setmetatable(AllTheThingsAD.LocalizedCategoryNames or {}, { __index = app.CategoryNames });
 	app.CategoryNames = nil;
@@ -20589,11 +20594,7 @@ app.events.VARIABLES_LOADED = function()
 	});
 
 	-- Character Data Storage
-	local characterData = ATTCharacterData;
-	if not characterData then
-		characterData = {};
-		ATTCharacterData = characterData;
-	end
+	local characterData = LocalizeGlobal("ATTCharacterData", true);
 	local currentCharacter = characterData[app.GUID];
 	if not currentCharacter then
 		currentCharacter = {};
@@ -20728,11 +20729,7 @@ app.events.VARIABLES_LOADED = function()
 	end
 
 	-- Account Wide Data Storage
-	ATTAccountWideData = _G["ATTAccountWideData"];
-	if not ATTAccountWideData then
-		ATTAccountWideData = {};
-		_G["ATTAccountWideData"] = ATTAccountWideData;
-	end
+	ATTAccountWideData = LocalizeGlobal("ATTAccountWideData", true);
 	local accountWideData = ATTAccountWideData;
 	if not accountWideData.Achievements then accountWideData.Achievements = {}; end
 	if not accountWideData.Artifacts then accountWideData.Artifacts = {}; end
@@ -21154,7 +21151,7 @@ app.events.ADDON_LOADED = function(addonName)
 		if app.Settings:GetTooltipSetting("Auto:AH") then
 			app:OpenAuctionModule();
 		end
-	elseif addonName == "Blizzard_AchievementUI" then
+	elseif addonName == "Blizzard_AchievementUI" and app.IsReady then
 		RefreshAchievementCollection();
 	end
 end
