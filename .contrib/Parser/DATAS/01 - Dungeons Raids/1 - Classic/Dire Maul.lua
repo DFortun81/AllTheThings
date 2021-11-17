@@ -8,10 +8,10 @@ _.Instances = { tier(CLASSIC_TIER, {
 		["mapID"] = DIRE_MAUL,
 		["g"] = {
 			ach(644),	-- King of Dire Maul
-			n(-12, {	-- Warpwood Quarter [East - Demon]
+			m(239, {	-- Warpwood Quarter [East - Demon]
+				["creatureID"] = -12,	-- Warpwood Quarter [East - Demon]
 				["description"] = "This is the instance on the right side.",
 				["maps"] = {
-					239,	-- Warpwood Quarter
 					240,	-- The Shrine of Eldretharr
 				},
 				["coord"] = { 64.83, 30.24, FERALAS },	-- Dire Maul [East]
@@ -194,10 +194,8 @@ _.Instances = { tier(CLASSIC_TIER, {
 					})),
 				},
 			}),
-			n(-13, {	-- Gordok Commons [North - Ogres] [Straight]
-				["maps"] = {
-					235,	-- Gordok Commons
-				},
+			m(235, {	-- Gordok Commons [North - Ogres] [Straight]
+				["creatureID"] = -13,	-- Gordok Commons [North - Ogres] [Straight]
 				["coord"] = { 62.48, 24.48, FERALAS },	-- Dire Maul [North]
 				["g"] = {
 					n(QUESTS, {
@@ -479,9 +477,9 @@ _.Instances = { tier(CLASSIC_TIER, {
 					}),
 				},
 			}),
-			n(-14, {	-- Capital Gardens [West - Elves] [Left Side]
+			m(236, {	-- Capital Gardens [West - Elves] [Left Side]
+				["creatureID"] = -14,	-- Capital Gardens [West - Elves] [Left Side]
 				["maps"] = {
-					236,	-- Capital Gardens
 					237,	-- Court of the Highborne
 					238,	-- Prison of Immol'Thar
 				},

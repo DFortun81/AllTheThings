@@ -7,11 +7,11 @@ _.Instances = { tier(CLASSIC_TIER, {
 		["lvl"] = 37,
 		["groups"] = {
 			ach(646),	-- Stratholme
-			n(-388, {	-- Stratholme - Main Gate
+			m(STRATHOLME, {	-- Stratholme - Main Gate
+				["creatureID"] = -388, -- Stratholme - Main Gate
 				["description"] = "Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Live\" or \"Scarlet\" side, which the Scarlet Crusade has taken over.",
 				["maps"] = {
-					STRATHOLME,	-- Living Side
-					827,	-- Paladin: Legion Class Mount Map
+					-- 827,	-- Paladin: Legion Class Mount Map TODO: move this under whatever quest sends you here
 				},
 				["coord"] = { 27.66, 11.64, EASTERN_PLAGUELANDS },	-- Stratholme [Main Gate]
 				["groups"] = {
@@ -271,9 +271,9 @@ _.Instances = { tier(CLASSIC_TIER, {
 					}),
 				},
 			}),
-			n(-389, {	-- Stratholme - Service Entrance
+			m(318, {	-- Stratholme - Service Entrance
+				["creatureID"] = -389, -- Stratholme - Service Entrance
 				["description"] = "Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Dead\" or \"Scourge\" side, which the Scourge has taken over.",
-				["maps"] = { 318 },	-- Undead Side
 				["coord"] = { 43.76, 17.52, EASTERN_PLAGUELANDS },	-- Stratholme [Undead Side]
 				["groups"] = {
 					n(QUESTS, {

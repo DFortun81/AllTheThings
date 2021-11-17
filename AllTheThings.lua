@@ -4960,14 +4960,14 @@ fieldConverters = {
 		end
 	end,
 	["coord"] = function(group, value)
-		-- don't cache mapID from coord for anything which is itself an actual instance
-		if currentInstance ~= group then
+		-- don't cache mapID from coord for anything which is itself an actual instance or a map
+		if currentInstance ~= group and not group.mapID then
 			if value[3] then cacheMapID(group, value[3], true); end
 		end
 	end,
 	["coords"] = function(group, value)
-		-- don't cache mapID from coord for anything which is itself an actual instance
-		if currentInstance ~= group then
+		-- don't cache mapID from coord for anything which is itself an actual instance or a map
+		if currentInstance ~= group and not group.mapID then
 			for _,coord in ipairs(value) do
 				if coord[3] then cacheMapID(group, coord[3], true); end
 			end
@@ -9882,7 +9882,7 @@ local mapFields = {
 		return app.TryColorizeName(t, t.name);
 	end,
 	["name"] = function(t)
-		return app.GetMapName(t.mapID);
+		return t.creatureID and NPCNameFromID[t.creatureID] or app.GetMapName(t.mapID);
 	end,
 	["icon"] = function(t)
 		return app.asset("Category_Zones");
