@@ -226,6 +226,7 @@ app.L = {
 	["REQUIRES_PVP"] = "|CFF00FFDEThis Thing requires Player vs Player activities or a currency related to those activities.|r";
 	["REQUIRES_PETBATTLES"] = "|CFF00FFDEThis Thing requires Pet Battling.|r";
 	["REPORT_INACCURATE_QUEST"] = "Wrong Quest Info! (Click to Report)";
+	["NESTED_QUEST_REQUIREMENTS"] = "Nested Quest Requirements";
 
 	-- Item Filter Window
 	["ITEM_FILTER_TEXT"] = "Item Filters";

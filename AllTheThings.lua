@@ -4541,7 +4541,7 @@ app.BuildSourceParent = function(group)
 				end
 			end
 			-- Things tagged with an npcID should show that NPC as a Source
-			if thing.npcID or thing.creatureID then
+			if thing.key ~= "npcID" and (thing.npcID or thing.creatureID) then
 				local parentNPC = app.SearchForObject("npcID", thing.npcID or thing.creatureID) or {["npcID"] = thing.npcID or thing.creatureID};
 				if parents then tinsert(parents, parentNPC);
 				else parents = { parentNPC }; end
@@ -13498,7 +13498,7 @@ function app:CreateMiniListForGroup(group)
 				end
 			end
 			local questChainHeader = {
-				["text"] = gTop and L["QUEST_CHAIN_NESTED_CHECKBOX"] or L["QUEST_CHAIN_REQ"],
+				["text"] = gTop and L["NESTED_QUEST_REQUIREMENTS"] or L["QUEST_CHAIN_REQ"],
 				["description"] = L["QUEST_CHAIN_REQ_DESC"],
 				["icon"] = "Interface\\Icons\\Spell_Holy_MagicalSentry.blp",
 				["g"] = gTop or g,

@@ -8,6 +8,7 @@ _.Zones =
 		m(LEGION_DALARAN, {
 			n(RARES, {
 				n(108628, {	-- Armond Thaco
+					["description"] = "Can be made hostile by Demon Hunters using 'Spectral Sight' or Paladins wielding 'Truthguard' allowing anyone to get credit.",
 					["questID"] = 42763,
 				}),
 				o(244965, {	-- Sheddle's Chest
