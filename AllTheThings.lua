@@ -9885,7 +9885,7 @@ local mapFields = {
 		return t.creatureID and NPCNameFromID[t.creatureID] or app.GetMapName(t.mapID);
 	end,
 	["icon"] = function(t)
-		return t.creatureID and L["HEADER_ICONS"][t.creatureID] or app.asset("Category_Zones");
+		return app.asset("Category_Zones");
 	end,
 	["back"] = function(t)
 		if app.CurrentMapID == t.mapID or (t.maps and contains(t.maps, app.CurrentMapID)) then
