@@ -2637,6 +2637,7 @@ _.HiddenQuestTriggers = {
 			q(62135),	-- picked up when entering the Ember Court for the week — for "Fungi Experiments"
 			q(62122),	-- Mystery Mirror
 			q(62123),	-- Prison Break
+			q(65054),	-- Training Dummies
 			q(65055),	-- Protective Braziers
 
 		-- RSVPs

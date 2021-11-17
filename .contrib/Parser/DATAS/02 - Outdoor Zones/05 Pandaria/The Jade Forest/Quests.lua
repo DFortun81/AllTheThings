@@ -679,7 +679,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(29922, {	-- In Search of Wisdom
-					["sourceQuests"] = { 29901 },	-- Anduin's Decision
+					["sourceQuests"] = {
+						29905,	-- Let Them Burn
+						29906,	-- Carp Diem
+						29901,	-- Anduin's Decision
+					},
 					["provider"] = { "n", 54960 },	-- Elder Lusshan
 					["coord"] = { 58.9, 81.5, THE_JADE_FOREST },
 					["races"] = ALLIANCE_ONLY,

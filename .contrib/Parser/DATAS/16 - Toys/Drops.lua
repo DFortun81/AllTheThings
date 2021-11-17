@@ -131,7 +131,6 @@ root("Toys", n(DROPS, {
 	i(153181),		-- Red Conservatory Scroll
 	i(184476),		-- Regenerating Slime Vial
 	i(104294),		-- Rime of the Time-Lost Mariner
-	i(131811),		-- Rocfeather Skyhorn Kite
 	i(174928),		-- Rotten Apple
 	i(153253),		-- S.F.E. Interceptor
 	i(86583),		-- Salyin Battle Banner

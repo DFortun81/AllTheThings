@@ -87,9 +87,7 @@ _.Zones =
 					["questID"] = 39806,
 					["coord"] = { 48.3, 40.4, HIGHMOUNTAIN },
 					["g"] = {
-						i(131809, {	-- Gleaming Roc Feather
-							i(131811),	-- Rocfeather Skyhorn Kite (TOY!)
-						}),
+						i(131809),	-- Gleaming Roc Feather
 						crit(4, {	-- Crawshuk the Hungry
 							["achievementID"] = 11264,	-- Adventurer of Highmountain
 						}),

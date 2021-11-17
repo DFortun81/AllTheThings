@@ -273,7 +273,6 @@ _.Zones =
 				}),
 				n(132047, {	-- Reinforced Hullbreaker
 					["questID"] = 53611,
-					["repeatable"] = true,
 					["coord"] = { 69.6, 51.0, STORMSONG_VALLEY },
 				}),
 				n(139328, {	-- Sabertron

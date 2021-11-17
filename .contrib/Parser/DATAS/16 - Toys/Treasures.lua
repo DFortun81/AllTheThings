@@ -22,6 +22,14 @@ root("Toys", n(TREASURES, {
 	i(187344),	-- Offering Kit Maker
 	i(187113),	-- Personal Ball and Chain
 	i(181825),	-- Phial of Ravenous Slime
+	i(131811, {	-- Rocfeather Skyhorn Kite
+		["cost"] = {
+			{ "i", 131809, 1 },	-- Gleaming Roc Feather
+			{ "i", 131927, 1 },	-- Shimmering Roc Feather
+			{ "i", 131926, 1 },	-- Delicate Roc Feather
+			{ "i", 131810, 1 },	-- Derelict Skyhorn Kite
+		},
+	}),
 	i(173984),	-- Scroll of Aeons
 	i(187339),	-- Silver Shardhide Whistle
 	i(184415),	-- Soothing Vesper
@@ -32,3 +40,7 @@ root("Toys", n(TREASURES, {
 	i(174921),	-- Void-Touched Skull
 	i(174924),	-- Void-Touched Souvenir Totem
 }));
+
+_.HiddenQuestTriggers = {
+	q(40389),	-- creating Rocfeather Skyhorn Kite
+};

@@ -106,18 +106,14 @@ _.Zones =
 					["questID"] = 39466,
 					["coord"] = { 49.6, 37.7, HIGHMOUNTAIN },
 					["g"] = {
-						i(131927, {	-- Shimmering Roc Feather
-							i(131811),	-- Rocfeather Skyhorn Kite (TOY!)
-						}),
+						i(131927),	-- Shimmering Roc Feather
 					},
 				}),
 				o(243773, {	-- Treasure Chest
 					["questID"] = 39503,
 					["coord"] = { 47.6, 44.0, HIGHMOUNTAIN },
 					["g"] = {
-						i(131926, {	-- Delicate Roc Feather
-							i(131811),	-- Rocfeather Skyhorn Kite (TOY!)
-						}),
+						i(131926),	-- Delicate Roc Feather
 					},
 				}),
 				o(245548, {	-- Treasure Chest
@@ -133,9 +129,7 @@ _.Zones =
 					["questID"] = 39824,
 					["coord"] = { 53.5, 51.0, HIGHMOUNTAIN },
 					["g"] = {
-						i(131810, {	-- Derelict Skyhorn Kite
-							i(131811),	-- Rocfeather Skyhorn Kite (TOY!)
-						}),
+						i(131810),	-- Derelict Skyhorn Kite
 					},
 				}),
 				o(245524, {	-- Treasure Chest
