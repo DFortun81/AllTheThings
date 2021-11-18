@@ -7,6 +7,12 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(BASTION, {
 			n(WORLD_QUESTS, {
+				n(REWARDS, {
+					i(187858, {	-- Bunny Soul
+						["description"] = "Has a chance to be listed as a reward for players of the 'Night Fae' Covenant from Pet Battle World Quests.\n\nSwitch to Night Fae Covenant, and use '/attwq' to see if it's up!",
+						["timeline"] = { "added 9.1.5" },
+					}),
+				}),
 				q(61593, {	-- A Crisis of Memory (no idea why there are 2 versions of this)
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

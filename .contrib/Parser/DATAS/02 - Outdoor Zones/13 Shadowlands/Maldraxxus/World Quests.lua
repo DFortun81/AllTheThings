@@ -7,6 +7,12 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(MALDRAXXUS, {
 			n(WORLD_QUESTS, {
+				n(REWARDS, {
+					i(187858, {	-- Bunny Soul
+						["description"] = "Has a chance to be listed as a reward for players of the 'Night Fae' Covenant from Pet Battle World Quests.\n\nSwitch to Night Fae Covenant, and use '/attwq' to see if it's up!",
+						["timeline"] = { "added 9.1.5" },
+					}),
+				}),
 				i(183111, {	-- Animated Ulna
 					["description"] = "A rare reward from pet battle WQs in Maldraxxus.  Combine with the other bones to craft the pet:\n|cFF0070ddAnimated Radius|r: Purchased from |cFFFFFFFFNalcorn Talsen|r in Maldraxxus or |cFFFFFFFFDar Vattish|r in Oribos.\n|cFF0070ddFlexing Phalanges|r: Skeletal Hand Fragments (47.4, 62.1 in Maldraxxus).",
 					["g"] = {
