@@ -224,436 +224,433 @@ root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 				}),
 			}),
 			n(VENDORS, {
-				["u"] = REMOVED_FROM_GAME,
-				["g"] = bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
-					n(158386, {	-- Time-Displaced Jorek Ironside <Frostwolf Supply Officer>
-						["coord"] = { 58.1, 33.6, HILLSBRAD_FOOTHILLS },
-						["races"] = HORDE_ONLY,
-						["g"] = {
-							n(BACK, {
-								i(172100, {	-- Frostwolf Advisor's Cloak
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
-									},
-								}),
-								i(172098, {	-- Frostwolf Legionnaire's Cloak
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
-									},
-								}),
+				n(158386, {	-- Time-Displaced Jorek Ironside <Frostwolf Supply Officer>
+					["coord"] = { 58.1, 33.6, HILLSBRAD_FOOTHILLS },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						n(BACK, {
+							i(172100, {	-- Frostwolf Advisor's Cloak
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 20 },	-- 20x Timewarped Badge
+								},
 							}),
-							n(-43,  {	-- Cloth
-								i(172120, {	-- Frost Runed Headdress
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
-									},
-								}),
-								i(172105, {	-- Frostwolf Cloth Belt
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
-									},
-								}),
+							i(172098, {	-- Frostwolf Legionnaire's Cloak
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 20 },	-- 20x Timewarped Badge
+								},
 							}),
-							f(52,   {	-- Finger
-								i(172124, {	-- Deep Rooted Ring
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
-									},
-								}),
-								i(172138, {	-- Don Julio's Band
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
-									},
-								}),
-								i(172140, {	-- Don Rodrigo's Band
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
-									},
-								}),
+						}),
+						n(-43,  {	-- Cloth
+							i(172120, {	-- Frost Runed Headdress
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 20 },	-- 20x Timewarped Badge
+								},
 							}),
-							n(-44,  {	-- Leather
-								i(172104, {	-- Frostwolf Leather Belt
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
-									},
-								}),
-								i(172128, {	-- Yeti Hide Bracers
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
-									},
-								}),
+							i(172105, {	-- Frostwolf Cloth Belt
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 20 },	-- 20x Timewarped Badge
+								},
 							}),
-							n(-45,  {	-- Mail
-								i(172103, {	-- Frostwolf Mail Belt
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
-									},
-								}),
-								i(172126, {	-- Winteraxe Epaulets
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
-									},
-								}),
+						}),
+						f(52,   {	-- Finger
+							i(172124, {	-- Deep Rooted Ring
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 20 },	-- 20x Timewarped Badge
+								},
 							}),
-							f(51,   {	-- Neck
-								i(172111, {	-- Frostwolf Advisor's Pendant
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
-									},
-								}),
-								i(172110, {	-- Frostwolf Legionnaire's Pendant
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
-									},
-								}),
+							i(172138, {	-- Don Julio's Band
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 20 },	-- 20x Timewarped Badge
+								},
 							}),
-							n(-46,  {	-- Plate
-								i(172102, {	-- Frostwolf Plate Belt
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
-									},
-								}),
-								i(172127, {	-- Frozen Steel Vambraces
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
-									},
-								}),
+							i(172140, {	-- Don Rodrigo's Band
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 20 },	-- 20x Timewarped Badge
+								},
 							}),
-							n(WEAPONS, {
-								i(172122, {	-- Bloodseeker
-									["cost"] = {
-										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 90 },	-- 90x Timewarped Badge
-									},
-								}),
-								i(172125, {	-- Cold Forged Blade
-									["cost"] = {
-										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 40 },	-- 40x Timewarped Badge
-									},
-								}),
-								i(172139, {	-- Cold Forged Hammer
-									["cost"] = {
-										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 40 },	-- 40x Timewarped Badge
-									},
-								}),
-								i(172118, {	-- Frostbite
-									["cost"] = {
-										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 40 },	-- 40x Timewarped Badge
-									},
-								}),
-								i(172114, {	-- Glacial Blade
-									["cost"] = {
-										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 40 },	-- 40x Timewarped Badge
-									},
-								}),
-								i(172121, {	-- Ice Barbed Spear
-									["cost"] = {
-										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 90 },	-- 90x Timewarped Badge
-									},
-								}),
-								i(172133, {	-- Lei of the Lifegiver
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 30 },	-- 30x Timewarped Badge
-									},
-								}),
-								i(172135, {	-- The Immovable Object
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 30 },	-- 30x Timewarped Badge
-									},
-								}),
-								i(172137, {	-- The Lobotomizer
-									["cost"] = {
-										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 40 },	-- 40x Timewarped Badge
-									},
-								}),
-								i(172134, {	-- Therazane's Touch
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 30 },	-- 30x Timewarped Badge
-									},
-								}),
-								i(172136, {	-- The Unstoppable Force
-									["cost"] = {
-										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 90 },	-- 90x Timewarped Badge
-									},
-								}),
-								i(172129, {	-- Tome of Arcane Domination
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 30 },	-- 30x Timewarped Badge
-									},
-								}),
-								i(172130, {	-- Tome of Shadow Force
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 30 },	-- 30x Timewarped Badge
-									},
-								}),
-								i(172132, {	-- Tome of the Fiery Arcana
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 30 },	-- 30x Timewarped Badge
-									},
-								}),
-								i(172131, {	-- Tome of the Ice Lord
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 30 },	-- 30x Timewarped Badge
-									},
-								}),
-								i(172123, {	-- Wand of Biting Cold
-									["cost"] = {
-										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 40 },	-- 40x Timewarped Badge
-									},
-								}),
-								i(172116, {	-- Whiteout Staff
-									["cost"] = {
-										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 90 },	-- 40x Timewarped Badge
-									},
-								}),
+						}),
+						n(-44,  {	-- Leather
+							i(172104, {	-- Frostwolf Leather Belt
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 20 },	-- 20x Timewarped Badge
+								},
 							}),
-						},
-					}),
-					n(158385, {	-- Time-Displaced Thanthaldis Snowgleam <Stormpike Supply Officer>
-						["coord"] = { 44.7, 46.4, HILLSBRAD_FOOTHILLS },
-						["races"] = ALLIANCE_ONLY,
-						["g"] = {
-							n(BACK, {
-								i(172101, {	-- Stormpike Sage's Cloak
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
-									},
-								}),
-								i(172099, {	-- Stormpike Soldier's Cloak
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
-									},
-								}),
+							i(172128, {	-- Yeti Hide Bracers
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 20 },	-- 20x Timewarped Badge
+								},
 							}),
-							n(-43,  {	-- Cloth
-								i(172120, {	-- Frost Runed Headdress
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
-									},
-								}),
-								i(172109, {	-- Stormpike Cloth Girdle
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
-									},
-								}),
+						}),
+						n(-45,  {	-- Mail
+							i(172103, {	-- Frostwolf Mail Belt
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 20 },	-- 20x Timewarped Badge
+								},
 							}),
-							f(52,   {	-- Finger
-								i(172124, {	-- Deep Rooted Ring
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
-									},
-								}),
-								i(172138, {	-- Don Julio's Band
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
-									},
-								}),
-								i(172140, {	-- Don Rodrigo's Band
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
-									},
-								}),
+							i(172126, {	-- Winteraxe Epaulets
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 20 },	-- 20x Timewarped Badge
+								},
 							}),
-							n(-44,  {	-- Leather
-								i(172108, {	-- Stormpike Leather Girdle
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
-									},
-								}),
-								i(172128, {	-- Yeti Hide Bracers
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
-									},
-								}),
+						}),
+						f(51,   {	-- Neck
+							i(172111, {	-- Frostwolf Advisor's Pendant
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 20 },	-- 20x Timewarped Badge
+								},
 							}),
-							n(-45,  {	-- Mail
-								i(172107, {	-- Stormpike Mail Girdle
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
-									},
-								}),
-								i(172126, {	-- Winteraxe Epaulets
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
-									},
-								}),
+							i(172110, {	-- Frostwolf Legionnaire's Pendant
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 20 },	-- 20x Timewarped Badge
+								},
 							}),
-							n(-46,  {	-- Plate
-								i(172127, {	-- Frozen Steel Vambraces
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
-									},
-								}),
-								i(172106, {	-- Stormpike Plate Girdle
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
-									},
-								}),
+						}),
+						n(-46,  {	-- Plate
+							i(172102, {	-- Frostwolf Plate Belt
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 20 },	-- 20x Timewarped Badge
+								},
 							}),
-							f(51,   {	-- Neck
-								i(172113, {	-- Stormpike Sage's Pendant
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
-									},
-								}),
-								i(172112, {	-- Stormpike Soldier's Pendant
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
-									},
-								}),
+							i(172127, {	-- Frozen Steel Vambraces
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 20 },	-- 20x Timewarped Badge
+								},
 							}),
-							n(WEAPONS, {
-								i(172122, {	-- Bloodseeker
-									["cost"] = {
-										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 90 },	-- 90x Timewarped Badge
-									},
-								}),
-								i(172125, {	-- Cold Forged Blade
-									["cost"] = {
-										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 40 },	-- 40x Timewarped Badge
-									},
-								}),
-								i(172139, {	-- Cold Forged Hammer
-									["cost"] = {
-										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 40 },	-- 40x Timewarped Badge
-									},
-								}),
-								i(172117, {	-- Crackling Staff
-									["cost"] = {
-										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 90 },	-- 90x Timewarped Badge
-									},
-								}),
-								i(172115, {	-- Electrified Dagger
-									["cost"] = {
-										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 40 },	-- 40x Timewarped Badge
-									},
-								}),
-								i(172121, {	-- Ice Barbed Spear
-									["cost"] = {
-										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 90 },	-- 90x Timewarped Badge
-									},
-								}),
-								i(172133, {	-- Lei of the Lifegiver
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 30 },	-- 30x Timewarped Badge
-									},
-								}),
-								i(172119, {	-- Stormstrike Hammer
-									["cost"] = {
-										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 40 },	-- 40x Timewarped Badge
-									},
-								}),
-								i(172135, {	-- The Immovable Object
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 30 },	-- 30x Timewarped Badge
-									},
-								}),
-								i(172137, {	-- The Lobotomizer
-									["cost"] = {
-										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 40 },	-- 40x Timewarped Badge
-									},
-								}),
-								i(172134, {	-- Therazane's Touch
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 30 },	-- 30x Timewarped Badge
-									},
-								}),
-								i(172136, {	-- The Unstoppable Force
-									["cost"] = {
-										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 90 },	-- 90x Timewarped Badge
-									},
-								}),
-								i(172129, {	-- Tome of Arcane Domination
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 30 },	-- 30x Timewarped Badge
-									},
-								}),
-								i(172130, {	-- Tome of Shadow Force
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 30 },	-- 30x Timewarped Badge
-									},
-								}),
-								i(172132, {	-- Tome of the Fiery Arcana
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 30 },	-- 30x Timewarped Badge
-									},
-								}),
-								i(172131, {	-- Tome of the Ice Lord
-									["cost"] = {
-										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 30 },	-- 30x Timewarped Badge
-									},
-								}),
-								i(172123, {	-- Wand of Biting Cold
-									["cost"] = {
-										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 40 },	-- 40x Timewarped Badge
-									},
-								}),
+						}),
+						n(WEAPONS, {
+							i(172122, {	-- Bloodseeker
+								["cost"] = {
+									{ "i", 137642, 2 },	-- 2x  Mark of Honor
+									{ "c", 1166, 90 },	-- 90x Timewarped Badge
+								},
 							}),
-						},
-					}),
+							i(172125, {	-- Cold Forged Blade
+								["cost"] = {
+									{ "i", 137642, 2 },	-- 2x  Mark of Honor
+									{ "c", 1166, 40 },	-- 40x Timewarped Badge
+								},
+							}),
+							i(172139, {	-- Cold Forged Hammer
+								["cost"] = {
+									{ "i", 137642, 2 },	-- 2x  Mark of Honor
+									{ "c", 1166, 40 },	-- 40x Timewarped Badge
+								},
+							}),
+							i(172118, {	-- Frostbite
+								["cost"] = {
+									{ "i", 137642, 2 },	-- 2x  Mark of Honor
+									{ "c", 1166, 40 },	-- 40x Timewarped Badge
+								},
+							}),
+							i(172114, {	-- Glacial Blade
+								["cost"] = {
+									{ "i", 137642, 2 },	-- 2x  Mark of Honor
+									{ "c", 1166, 40 },	-- 40x Timewarped Badge
+								},
+							}),
+							i(172121, {	-- Ice Barbed Spear
+								["cost"] = {
+									{ "i", 137642, 2 },	-- 2x  Mark of Honor
+									{ "c", 1166, 90 },	-- 90x Timewarped Badge
+								},
+							}),
+							i(172133, {	-- Lei of the Lifegiver
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 30 },	-- 30x Timewarped Badge
+								},
+							}),
+							i(172135, {	-- The Immovable Object
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 30 },	-- 30x Timewarped Badge
+								},
+							}),
+							i(172137, {	-- The Lobotomizer
+								["cost"] = {
+									{ "i", 137642, 2 },	-- 2x  Mark of Honor
+									{ "c", 1166, 40 },	-- 40x Timewarped Badge
+								},
+							}),
+							i(172134, {	-- Therazane's Touch
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 30 },	-- 30x Timewarped Badge
+								},
+							}),
+							i(172136, {	-- The Unstoppable Force
+								["cost"] = {
+									{ "i", 137642, 2 },	-- 2x  Mark of Honor
+									{ "c", 1166, 90 },	-- 90x Timewarped Badge
+								},
+							}),
+							i(172129, {	-- Tome of Arcane Domination
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 30 },	-- 30x Timewarped Badge
+								},
+							}),
+							i(172130, {	-- Tome of Shadow Force
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 30 },	-- 30x Timewarped Badge
+								},
+							}),
+							i(172132, {	-- Tome of the Fiery Arcana
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 30 },	-- 30x Timewarped Badge
+								},
+							}),
+							i(172131, {	-- Tome of the Ice Lord
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 30 },	-- 30x Timewarped Badge
+								},
+							}),
+							i(172123, {	-- Wand of Biting Cold
+								["cost"] = {
+									{ "i", 137642, 2 },	-- 2x  Mark of Honor
+									{ "c", 1166, 40 },	-- 40x Timewarped Badge
+								},
+							}),
+							i(172116, {	-- Whiteout Staff
+								["cost"] = {
+									{ "i", 137642, 2 },	-- 2x  Mark of Honor
+									{ "c", 1166, 90 },	-- 40x Timewarped Badge
+								},
+							}),
+						}),
+					},
+				}),
+				n(158385, {	-- Time-Displaced Thanthaldis Snowgleam <Stormpike Supply Officer>
+					["coord"] = { 44.7, 46.4, HILLSBRAD_FOOTHILLS },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						n(BACK, {
+							i(172101, {	-- Stormpike Sage's Cloak
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 20 },	-- 20x Timewarped Badge
+								},
+							}),
+							i(172099, {	-- Stormpike Soldier's Cloak
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 20 },	-- 20x Timewarped Badge
+								},
+							}),
+						}),
+						n(-43,  {	-- Cloth
+							i(172120, {	-- Frost Runed Headdress
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 20 },	-- 20x Timewarped Badge
+								},
+							}),
+							i(172109, {	-- Stormpike Cloth Girdle
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 20 },	-- 20x Timewarped Badge
+								},
+							}),
+						}),
+						f(52,   {	-- Finger
+							i(172124, {	-- Deep Rooted Ring
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 20 },	-- 20x Timewarped Badge
+								},
+							}),
+							i(172138, {	-- Don Julio's Band
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 20 },	-- 20x Timewarped Badge
+								},
+							}),
+							i(172140, {	-- Don Rodrigo's Band
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 20 },	-- 20x Timewarped Badge
+								},
+							}),
+						}),
+						n(-44,  {	-- Leather
+							i(172108, {	-- Stormpike Leather Girdle
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 20 },	-- 20x Timewarped Badge
+								},
+							}),
+							i(172128, {	-- Yeti Hide Bracers
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 20 },	-- 20x Timewarped Badge
+								},
+							}),
+						}),
+						n(-45,  {	-- Mail
+							i(172107, {	-- Stormpike Mail Girdle
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 20 },	-- 20x Timewarped Badge
+								},
+							}),
+							i(172126, {	-- Winteraxe Epaulets
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 20 },	-- 20x Timewarped Badge
+								},
+							}),
+						}),
+						n(-46,  {	-- Plate
+							i(172127, {	-- Frozen Steel Vambraces
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 20 },	-- 20x Timewarped Badge
+								},
+							}),
+							i(172106, {	-- Stormpike Plate Girdle
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 20 },	-- 20x Timewarped Badge
+								},
+							}),
+						}),
+						f(51,   {	-- Neck
+							i(172113, {	-- Stormpike Sage's Pendant
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 20 },	-- 20x Timewarped Badge
+								},
+							}),
+							i(172112, {	-- Stormpike Soldier's Pendant
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 20 },	-- 20x Timewarped Badge
+								},
+							}),
+						}),
+						n(WEAPONS, {
+							i(172122, {	-- Bloodseeker
+								["cost"] = {
+									{ "i", 137642, 2 },	-- 2x  Mark of Honor
+									{ "c", 1166, 90 },	-- 90x Timewarped Badge
+								},
+							}),
+							i(172125, {	-- Cold Forged Blade
+								["cost"] = {
+									{ "i", 137642, 2 },	-- 2x  Mark of Honor
+									{ "c", 1166, 40 },	-- 40x Timewarped Badge
+								},
+							}),
+							i(172139, {	-- Cold Forged Hammer
+								["cost"] = {
+									{ "i", 137642, 2 },	-- 2x  Mark of Honor
+									{ "c", 1166, 40 },	-- 40x Timewarped Badge
+								},
+							}),
+							i(172117, {	-- Crackling Staff
+								["cost"] = {
+									{ "i", 137642, 2 },	-- 2x  Mark of Honor
+									{ "c", 1166, 90 },	-- 90x Timewarped Badge
+								},
+							}),
+							i(172115, {	-- Electrified Dagger
+								["cost"] = {
+									{ "i", 137642, 2 },	-- 2x  Mark of Honor
+									{ "c", 1166, 40 },	-- 40x Timewarped Badge
+								},
+							}),
+							i(172121, {	-- Ice Barbed Spear
+								["cost"] = {
+									{ "i", 137642, 2 },	-- 2x  Mark of Honor
+									{ "c", 1166, 90 },	-- 90x Timewarped Badge
+								},
+							}),
+							i(172133, {	-- Lei of the Lifegiver
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 30 },	-- 30x Timewarped Badge
+								},
+							}),
+							i(172119, {	-- Stormstrike Hammer
+								["cost"] = {
+									{ "i", 137642, 2 },	-- 2x  Mark of Honor
+									{ "c", 1166, 40 },	-- 40x Timewarped Badge
+								},
+							}),
+							i(172135, {	-- The Immovable Object
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 30 },	-- 30x Timewarped Badge
+								},
+							}),
+							i(172137, {	-- The Lobotomizer
+								["cost"] = {
+									{ "i", 137642, 2 },	-- 2x  Mark of Honor
+									{ "c", 1166, 40 },	-- 40x Timewarped Badge
+								},
+							}),
+							i(172134, {	-- Therazane's Touch
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 30 },	-- 30x Timewarped Badge
+								},
+							}),
+							i(172136, {	-- The Unstoppable Force
+								["cost"] = {
+									{ "i", 137642, 2 },	-- 2x  Mark of Honor
+									{ "c", 1166, 90 },	-- 90x Timewarped Badge
+								},
+							}),
+							i(172129, {	-- Tome of Arcane Domination
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 30 },	-- 30x Timewarped Badge
+								},
+							}),
+							i(172130, {	-- Tome of Shadow Force
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 30 },	-- 30x Timewarped Badge
+								},
+							}),
+							i(172132, {	-- Tome of the Fiery Arcana
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 30 },	-- 30x Timewarped Badge
+								},
+							}),
+							i(172131, {	-- Tome of the Ice Lord
+								["cost"] = {
+									{ "i", 137642, 1 },	-- 1x  Mark of Honor
+									{ "c", 1166, 30 },	-- 30x Timewarped Badge
+								},
+							}),
+							i(172123, {	-- Wand of Biting Cold
+								["cost"] = {
+									{ "i", 137642, 2 },	-- 2x  Mark of Honor
+									{ "c", 1166, 40 },	-- 40x Timewarped Badge
+								},
+							}),
+						}),
+					},
 				}),
 			}),
 		}),
