@@ -19,7 +19,7 @@ local C_TransmogCollection_GetIllusionSourceInfo = C_TransmogCollection.GetIllus
 local C_TransmogCollection_GetItemInfo = C_TransmogCollection.GetItemInfo;
 local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance = C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
 local C_TransmogCollection_GetSourceInfo = C_TransmogCollection.GetSourceInfo;
-local C_QuestLog_GetAllCompletedQuestIDs = C_QuestLog.GetAllCompletedQuestIDs
+local C_QuestLog_GetAllCompletedQuestIDs = C_QuestLog.GetAllCompletedQuestIDs;
 local C_Map_GetMapInfo = C_Map.GetMapInfo;
 local SetPortraitTexture = _G["SetPortraitTexture"];
 local SetPortraitTextureFromDisplayID = _G["SetPortraitTextureFromCreatureDisplayID"];
@@ -11314,7 +11314,7 @@ local function QueryCompletedQuests()
 	end
 	local completedKeys = {};
 	-- allow individual prints
-	for _,v in pairs(freshCompletes) do
+	for _,v in ipairs(freshCompletes) do
 		t[v] = true;
 		completedKeys[v] = true;
 	end
@@ -11338,7 +11338,7 @@ local function RefreshQuestCompletionState(questID)
 	end
 
 	local completedQuestHelper = app.QuestCompletionHelper;
-	for questID,completed in pairs(DirtyQuests) do
+	for questID,_ in pairs(DirtyQuests) do
 		completedQuestHelper(tonumber(questID));
 	end
 	-- soft update if any quests were even completed to ensure visible changes occur
