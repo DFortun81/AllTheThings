@@ -110,7 +110,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 			i(62540),	-- Lil' Deathwing
 		},
 	}),
-	tier(MOP_TIER, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
+	tier(MOP_TIER, {
 		["description"] = "These rewards were made available to anyone that purchased a Collector's Edition of Mists of Pandaria.\n\nThe rewards can be be purchased from the in-game shop.",
 		["timeline"] = { "added 5.0.1" },
 		["groups"] = {
@@ -119,8 +119,8 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 			i(85870),	-- Imperial Quilen
 			i(85871),	-- Lucky Quilen Cub
 		},
-	})),
-	tier(WOD_TIER, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
+	}),
+	tier(WOD_TIER, {
 		["description"] = "These rewards were made available to anyone that purchased a Collector's Edition of Warlords of Draenor.",
 		["timeline"] = { "added 6.0.1" },
 		["groups"] = {
@@ -129,8 +129,8 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 			i(109014),	-- Dread Hatchling
 			i(109013),	-- Reins of the Dread Raven
 		},
-	})),
-	tier(LEGION_TIER, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
+	}),
+	tier(LEGION_TIER, {
 		["description"] = "These rewards were made available to anyone that purchased a Collector's Edition of Legion.\n\nThe rewards can be be purchased from the in-game shop.",
 		["timeline"] = { "added 7.0.1" },
 		["groups"] = {
@@ -139,8 +139,8 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 			i(128426),	-- Nibbles
 			i(128425),	-- Reins of the Illidari Felstalker
 		},
-	})),
-	tier(BFA_TIER, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
+	}),
+	tier(BFA_TIER, {
 		["description"] = "These rewards were made available to anyone that purchased a Collector's Edition of BFA.\n\nThe rewards can be be purchased from the in-game shop.",
 		["timeline"] = { "added 8.0.1" },
 		["groups"] = {
@@ -151,7 +151,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 			a(i(153539)),	-- Seabraid Stallion
 			i(153541),	-- Tottle
 		},
-	})),
+	}),
 	tier(SL_TIER, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		["description"] = "These rewards are available to anyone that purchases Shadowlands Heroic Edition.",
 		["timeline"] = { "added 9.0.1" },
@@ -187,14 +187,14 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 		},
 	})),
 	-- #if NOT ANYCLASSIC
-	n(-578, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {	-- World of Warcraft 15th Anniversary Collector's Edition
+	n(-578, {	-- World of Warcraft 15th Anniversary Collector's Edition
 		["description"] = "These rewards were made available to anyone that purchased a World of Warcraft 15th Anniversary Collector's Edition, but only for non-Classic realms.",
 		["timeline"] = { "added 8.2.5.31958" },
 		["groups"] = {
 			a(mount(302361)),	-- Alabaster Stormtalon
 			h(mount(302362)),	-- Alabaster Thunderwing
 		},
-	})),
+	}),
 	-- #endif
 	n(-579, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {	-- Dark Portal Pass
 		["description"] = "These rewards were made available to anyone that purchased a Dark Portal Pass for TBC Classic.\n\nThe act of adding items for real money to the In-Game Shop in Classic has widely been frowned upon.",

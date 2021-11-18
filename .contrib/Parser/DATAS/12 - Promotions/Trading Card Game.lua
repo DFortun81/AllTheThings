@@ -1,9 +1,6 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
-local RIDING_TURTLE = i(23720, {	-- Riding Turtle
-	["timeline"] = { "added 2.0.0.5462" },
-});
 root("Promotions", n(TCG_HEADER, bubbleDown({
 	-- #if ANYCLASSIC
 	["u"] = REMOVED_FROM_GAME,
@@ -85,11 +82,17 @@ root("Promotions", n(TCG_HEADER, bubbleDown({
 		i(68825, {	-- Amani Dragonhawk
 			["timeline"] = { "added 4.1.0.13682" },
 		}),
-		i(49282, {	-- Big Battle Bear
+		i(38576, {	-- Big Battle Bear BOP
+			["timeline"] = { "added 2.4.2.8301", "removed 3.2.0.10147" },
+		}),
+		i(49282, {	-- Big Battle Bear BOE
 			["timeline"] = { "added 3.2.0.10147" },
 		}),
 		i(54069, {	-- Blazing Hippogryph
-			["timeline"] = { "added 3.3.3.11723" },
+			["timeline"] = { "added 3.3.3.11723", "removed 4.3.0.15005" },
+		}),
+		i(74269, {	-- Blazing Hippogryph
+			["timeline"] = { "added 4.3.0.15005" },
 		}),
 		i(72582, {	-- Corrupted Hippogryph
 			["timeline"] = { "added 4.3.0.15005" },
@@ -100,19 +103,30 @@ root("Promotions", n(TCG_HEADER, bubbleDown({
 		i(93671, {	-- Ghastly Charger's Skull
 			["timeline"] = { "added 5.2.0.16408" },
 		}),
+		i(46778, {	-- Magic Rooster Egg
+			["timeline"] = { "added 3.2.0.10026", "removed 3.2.0.10147" },
+		}),
 		i(49290, {	-- Magic Rooster Egg
 			["timeline"] = { "added 3.2.0.10147" },
 		}),
 		i(68008, {	-- Mottled Drake
 			["timeline"] = { "added 4.0.3.13287" },
 		}),
-		i(49283, {	-- Reins of the Spectral Tiger
+		i(33224, {	-- Spectral Tiger BOP
+			["timeline"] = { "added 2.1.3.6898", "removed 3.2.0.10147" },
+		}),
+		i(49283, {	-- Reins of the Spectral Tiger BOE
 			["timeline"] = { "added 3.2.0.10147" },
 		}),
-		i(49284, {	-- Reins of the Swift Spectral Tiger
+		i(33225, {	-- Swift Spectral Tiger BOP
+			["timeline"] = { "added 2.1.3.6898", "removed 3.2.0.10147" },
+		}),
+		i(49284, {	-- Reins of the Swift Spectral Tiger BOE
 			["timeline"] = { "added 3.2.0.10147" },
 		}),
-		RIDING_TURTLE,
+		i(23720, {	-- Riding Turtle
+			["timeline"] = { "added 2.0.0.5462" },
+		}),
 		i(69228, {	-- Savage Raptor
 			["timeline"] = { "added 4.1.0.13682" },
 		}),
@@ -124,27 +138,6 @@ root("Promotions", n(TCG_HEADER, bubbleDown({
 		}),
 		i(54068, {	-- Wooly White Rhino
 			["timeline"] = { "added 3.3.5.12340" },
-		}),
-		i(49285, {	-- X-51 Nether-Rocket
-			["timeline"] = { "added 3.2.0.10147" },
-		}),
-		i(49286, {	-- X-51 Nether-Rocket X-TREME
-			["timeline"] = { "added 3.2.0.10147" },
-		}),
-		i(38576, {	-- Big Battle Bear
-			["timeline"] = { "added 2.4.2.8301" },
-		}),
-		i(74269, {	-- Blazing Hippogryph
-			["timeline"] = { "added 4.3.0.15005" },
-		}),
-		i(46778, {	-- Magic Rooster Egg
-			["timeline"] = { "added 3.2.0.10026" },
-		}),
-		i(33224, {	-- Spectral Tiger
-			["timeline"] = { "added 2.1.3.6898" },
-		}),
-		i(33225, {	-- Swift Spectral Tiger
-			["timeline"] = { "added 2.1.3.6898" },
 		}),
 		i(35225, {	-- X-51 Nether-Rocket BOP
 			["timeline"] = { "added 2.4.0.7923" , "removed 3.2.0" },
@@ -262,7 +255,3 @@ root("Promotions", n(TCG_HEADER, bubbleDown({
 		}),
 	}),
 })));
-
--- #if NOT ANYCLASSIC
-RIDING_TURTLE.u = nil;
--- #endif

@@ -246,6 +246,9 @@ _.Craftables =
 				WOD_CRAFTED_ITEM(116187, 128014),	-- Wayfaring Shoulderguards + Burnished Essence
 				WOD_CRAFTED_ITEM(116191, 128014),	-- Wayfaring Tunic + Burnished Essence
 			}),
+			f(100, {	-- Mounts
+				i(108883),	-- Dustmane Direwolf
+			}),
 		}),
 		prof(TAILORING, {
 			filter(113, {	-- Bags

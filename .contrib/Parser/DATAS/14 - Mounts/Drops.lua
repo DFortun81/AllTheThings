@@ -33,9 +33,6 @@ _.Mounts =
 		i(77067),	-- Blazing Drake
 		i(153043),	-- Blessed Felcrusher Mount
 		i(182085),	-- Blisterback Bloodtusk
-		i(182083, {	-- Bonecleaver's Skullboar
-			["u"] = NEVER_IMPLEMENTED,	-- No evidence of this dropping from Sabriel yet
-		}),
 		i(182075, {	-- Bonehoof Tauralus
 			["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant drop only
 		}),

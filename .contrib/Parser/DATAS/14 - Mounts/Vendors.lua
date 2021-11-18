@@ -57,8 +57,6 @@ _.Mounts =
 		i(186490, {	-- Battlefield Swarmer
 			["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant only
 		}),
-		i(167894),	-- Beastlord's Irontusk
-		i(167895),	-- Beastlord's Warwolf
 		i(152795),	-- Beryl Ruinstrider
 		i(29465),	-- Black Battlestrider
 		i(91008, {	-- Black Dragon Turtle [Panda Only]
@@ -153,7 +151,6 @@ _.Mounts =
 		i(161912, {	-- Dapple Gray
 			["races"] = ALLIANCE_ONLY,
 		}),
-		i(153485),	-- Darkmoon Dirigible
 		i(63125),	-- Dark Phoenix
 		i(28915),	-- Dark Riding Talbuk
 		i(29228),	-- Dark War Talbuk
@@ -545,7 +542,6 @@ _.Mounts =
 		}),
 		i(13322),	-- Unpainted Mechanostrider
 		i(167170),	-- Unshackled Waveray
-		i(187595),	-- Val'sharah Hippogryph
 		i(183801),	-- Vibrant Flutterwing
 		i(8592),	-- Violet Raptor
 		i(161667, {	-- Voldunai Dunescraper

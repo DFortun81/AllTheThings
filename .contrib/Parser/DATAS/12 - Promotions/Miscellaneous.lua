@@ -1,9 +1,13 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
-root("Promotions", n(-383, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, { -- Miscellaneous
+local WANDERING_ANCIENT = mount(348162, {	-- Wandering Ancient
+	["timeline"] = { "added 9.0.5" },
+	["description"] = "Granted to players by logging in on character of at least level 20.",
+});
+root("Promotions", n(-383, { -- Miscellaneous
 	["description"] = "This section is for miscellaneous promotions that took place in the real world or something to do with account management.",
-	["groups"] = {
+	["groups"] = bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 		i(19160, {	-- Contest Winner's Tabard [TODO: Move to PVP?]
 			["description"] = "This tabard was given to the people on each servers with the most honorable kills before the introduction of the original honor system.",
 			["timeline"] = { "added 1.11.1.5462" },
@@ -74,6 +78,7 @@ root("Promotions", n(-383, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, { -- Miscel
 			["description"] = "This was awarded to players when they linked their original WoW account to a Battle.Net Tag. No longer available as all accounts now require Battle.Net Tag initially, unless you have access to an unattached account.",
 			["timeline"] = { "added 3.0.1" },
 		}),
+		WANDERING_ANCIENT,
 		ach(9496, {	-- Warlord's Deathwheel
 			["timeline"] = { "added 6.0.2.18888" },
 		}),
@@ -81,5 +86,6 @@ root("Promotions", n(-383, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, { -- Miscel
 			["description"] = "Azeroth Choppers promotional mount. You had to have logged in on a Horde character between the 24th of July and the 30th of September 2014 in order for your account to receive this mount.",
 			["timeline"] = { "added 6.0.2.18888" },
 		}),
-	},
-})));
+	}),
+}));
+WANDERING_ANCIENT.u = nil;

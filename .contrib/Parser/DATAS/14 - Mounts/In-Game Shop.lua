@@ -2,37 +2,49 @@
 --       M O U N T S     M O D U L E       --
 ---------------------------------------------
 
-_.Mounts =
-{
-	n(IN_GAME_SHOP, {
-		un(BLIZZARD_BALANCE, mount(302361, {	-- Alabaster Stormtalon		-- No in game item
-			["races"] = ALLIANCE_ONLY,
-		})),
-		un(BLIZZARD_BALANCE, mount(302362, {	-- Alabaster Thunderwing	-- No in game item
-			["races"] = HORDE_ONLY,
-		})),
-		un(REMOVED_FROM_GAME, i(95341)),			-- Armored Bloodwing
-		un(BLIZZARD_BALANCE, i(54811)),			-- Celestial Steed
-		un(BLIZZARD_BALANCE, i(97989)),			-- Enchanted Fey Dragon
-		un(REMOVED_FROM_GAME, i(112327)),			-- Grinning Reaver
-		un(BLIZZARD_BALANCE, i(78924)),			-- Heart of the Aspects
-		un(BLIZZARD_BALANCE, i(166774)),		-- Hogrus, Swine of Good Fortune
-		un(BLIZZARD_BALANCE, mount(124659)),	-- Imperial Quilen
-		un(BLIZZARD_BALANCE, i(107951)),		-- Iron Skyreaver
-		un(BLIZZARD_BALANCE, mount(308087)),	-- Lucky Yun
-		un(BLIZZARD_BALANCE, i(147901)),		-- Luminous Starseeker
-		un(BLIZZARD_BALANCE, i(122469)),		-- Mystic Runesaber
-		un(BLIZZARD_BALANCE, i(156564)),		-- Shu-zen, the Divine Sentinel
-		un(BLIZZARD_BALANCE, mount(347812)),	-- Sapphire Skyblazer
-		un(BLIZZARD_BALANCE, mount(308078)),	-- Squeakers, the Trickster
-		un(BLIZZARD_BALANCE, mount(326390)),	-- Steamscale Incinerator
-		un(BLIZZARD_BALANCE, mount(317177)),	-- Sunwarmed Purrkin
-		un(REMOVED_FROM_GAME, i(92724)),			-- Swift Windsteed
-		un(BLIZZARD_BALANCE, i(166776)),		-- Sylverian Dreamer
-		un(BLIZZARD_BALANCE, i(160589)),		-- The Dreadwake
-		un(BLIZZARD_BALANCE, mount(346136)),	-- Viridian Phase-Hunter
-		un(BLIZZARD_BALANCE, i(166775)),		-- Vulpine Familiar
-		un(BLIZZARD_BALANCE, i(112326)),		-- Warforged Nightmare
-		un(BLIZZARD_BALANCE, i(69846)),			-- Winged Guardian
+root("Mounts", n(IN_GAME_SHOP, sharedData({ ["u"] = BLIZZARD_BALANCE },{
+	mount(302361, {		-- Alabaster Stormtalon
+		["races"] = ALLIANCE_ONLY,
 	}),
-};
+	mount(302362, {		-- Alabaster Thunderwing
+		["races"] = HORDE_ONLY,
+	}),
+	i(95341, {			-- Armored Bloodwing
+		["u"] = REMOVED_FROM_GAME,
+	}),
+	i(54811),			-- Celestial Steed
+	i(109013, {			-- Dread Raven
+		["u"] = REMOVED_FROM_GAME,
+	}),
+	i(97989),			-- Enchanted Fey Dragon
+	i(153540, {			-- Gilded Ravasaur
+		["races"] = HORDE_ONLY,
+	}),
+	i(112327, {			-- Grinning Reaver
+		["u"] = REMOVED_FROM_GAME,
+	}),
+	i(78924),			-- Heart of the Aspects
+	i(166774),			-- Hogrus, Swine of Good Fortune
+	i(128425),			-- Illidari Felstalker
+	i(85870),			-- Imperial Quilen
+	i(107951),			-- Iron Skyreaver
+	mount(308087),		-- Lucky Yun
+	i(147901),			-- Luminous Starseeker
+	i(122469),			-- Mystic Runesaber
+	mount(347812),		-- Sapphire Skyblazer
+	i(153539, {			-- Seabraid Stallion
+		["races"] = ALLIANCE_ONLY,
+	}),
+	i(156564),			-- Shu-zen, the Divine Sentinel
+	mount(308078),		-- Squeakers, the Trickster
+	mount(326390),		-- Steamscale Incinerator
+	mount(317177),		-- Sunwarmed Purrkin
+	i(92724, {			-- Swift Windsteed
+		["u"] = REMOVED_FROM_GAME,
+	}),
+	i(166776),			-- Sylverian Dreamer
+	i(160589),			-- The Dreadwake
+	i(166775),			-- Vulpine Familiar
+	i(112326),			-- Warforged Nightmare
+	i(69846),			-- Winged Guardian
+})));
