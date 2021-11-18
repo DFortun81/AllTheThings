@@ -9,6 +9,10 @@ root("Mounts", n(HOLIDAYS, {
 	i(167895, {		-- Beastlord's Warwolf
 		["u"] = TIMEWALKING,
 	}),
+	i(33976, {			-- Brewfest Ram
+		["u"] = REMOVED_FROM_GAME,
+		["description"] = "If you completed the Brewfest Riding Rams quest in 2007, you are eligible to buy this mount from Brewfest vendors. You cannot purchase this mount otherwise.",
+	}),
 	i(153485, {		-- Darkmoon Dirigible
 		["u"] = DARKMOON_FAIRE,
 	}),

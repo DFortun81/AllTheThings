@@ -22,6 +22,7 @@ _.Mounts =
 			["classes"] = { WARRIOR },
 		}),
 		i(180948),		-- Battle Gargon Vrednic
+		un(REMOVED_FROM_GAME, i(21176)),	-- Black Qiraji Resonating Crystal
 		i(94290),		-- Bone-White Primal Raptor
 		i(184168),		-- Bound Shadehound
 		i(137579),		-- Brilliant Direbeak
@@ -79,6 +80,7 @@ _.Mounts =
 			["races"] = { TAUREN },
 			["classes"] = { PALADIN },
 		}),
+		un(REMOVED_FROM_GAME, i(128422)),	-- Grove Warden
 		i(185996),		-- Harvester's Dredwing
 		i(143502, {		-- Highlord's Golden Charger
 			["classes"] = { PALADIN },

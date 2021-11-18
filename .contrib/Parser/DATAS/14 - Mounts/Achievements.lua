@@ -15,8 +15,10 @@ _.Mounts =
 		i(116781),	-- Armored Frostwolf
 		i(98104),	-- Armored Red Dragonhawk
 		i(93662),	-- Armored Skyscreamer
+		un(REMOVED_FROM_GAME, i(90710)),	-- Ashen Pandaren Phoenix
 		i(174836),	-- Awakened Mindborer
 		i(167171),	-- Azshari Bloatray
+		un(REMOVED_FROM_GAME, i(44164)),	-- Reins of the Black Proto-Drake
 		i(174654),	-- Black Serpent of N'Zoth
 		i(44223),	-- Black War Bear (A)
 		i(44224),	-- Black War Bear (H)
@@ -26,22 +28,26 @@ _.Mounts =
 		i(168055),	-- Bloodflank Charger
 		i(163216),	-- Bloodgorged Crawg
 		i(44843),	-- Blue Dragonhawk
+		un(REMOVED_FROM_GAME, i(116791)),	-- Challenger's War Yeti
 		i(174066, {	-- Caravan Hyena
 			["races"] = HORDE_ONLY,
 		}),
 		i(182074, {	--  Chosen Tauralus
 			["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant only
 		}),
-		i(163577),	-- Conquerer's Scythemaw
 		i(184166),	-- Corridor Creeper
 		i(69230),	-- Corrupted Fire Hawk
 		i(87769),	-- Crimson Cloud Serpent
+		un(REMOVED_FROM_GAME, i(89154)),	-- Crimson Pandaren Phoenix
+		un(REMOVED_FROM_GAME, i(49098)),	-- Crusader's Black Warhorse
+		un(REMOVED_FROM_GAME, i(49096)),	-- Crusader's White Warhorse
 		i(166539),	-- Dazar'alor Windreaver
 		i(161331, {	-- Dark Iron Core Hound
 			["races"] = ALLIANCE_ONLY,
 		}),
 		i(62901),	-- Drake of the East Wind
 		i(118676),	-- Emerald Drake
+		un(REMOVED_FROM_GAME, i(90711)),	-- Emerald Pandaren Phoenix
 		i(69226),	-- Felfire Hawk
 		i(69213),	-- Flameward Hippogryph
 		i(163981),	-- Frenzied Feltalon
@@ -59,6 +65,7 @@ _.Mounts =
 		i(45801),	-- Ironbound Proto-Drake
 		i(168056),	-- Ironclad Frostclaw
 		i(91802),	-- Jade Pandaren Kite
+		un(REMOVED_FROM_GAME, i(104246)),	-- Kor'kron War Wolf
 		i(164762, {	-- Kul Tiran Charger
 			["races"] = ALLIANCE_ONLY,
 		}),
@@ -75,13 +82,7 @@ _.Mounts =
 		i(161215),	-- Reins of the Obsidian Krolusk
 		i(89785),	-- Pandaren Kite (Alliance)
 		i(81559),	-- Pandaren Kite (Horde)
-		i(140408),	-- Prestigious Azure Courser
-		i(164250),	-- Prestigious Bloodforged Courser
-		i(140228),	-- Prestigious Bronze Courser
-		i(140232),	-- Prestigious Forest Courser
-		i(140233),	-- Prestigious Ivory Courser
-		i(140407),	-- Prestigious Midnight Courser
-		i(140230),	-- Prestigious Royal Courser
+		un(REMOVED_FROM_GAME, i(44175)),	-- Reins of the Plagued Proto-Drake
 		i(129280),	-- Prestigious War Steed
 		i(143864),	-- Prestigious War Wolf
 		i(163982),	-- Pureheart Courser
@@ -101,57 +102,12 @@ _.Mounts =
 		i(156486),	-- Starcursed Voidstrider (A)
 		i(120968),	-- Summon Chauffeur (A)
 		i(122703),	-- Summon Chauffeur (H)
+		un(REMOVED_FROM_GAME, i(49044)),	-- Swift Alliance Steed
+		un(REMOVED_FROM_GAME, i(49046)),	-- Swift Horde Wolf
 		i(186637),	-- Tazavesh Gearglider
 		i(77068),	-- Twilight Harbinger
-		pvp(i(186177)),	-- Unchained Gladiator's Soul Eater
-		i(165020, {	-- Vicious Black Bonesteed
-			["races"] = HORDE_ONLY,
-		}),
-		i(165019, {	-- Vicious Black Warsaber
-			["races"] = ALLIANCE_ONLY,
-		}),
-		i(140353),	-- Vicious Gilnean Warhorse*
-		i(102514),	-- Vicious Kaldorei Warsaber*
-		i(102533),	-- Vicious Skeletal Warhorse*
-		i(163122, {	-- Vicious War Basilisk (A)
-			["races"] = ALLIANCE_ONLY,
-		}),
-		i(163121, {	-- Vicious War Basilisk (H)
-			["races"] = HORDE_ONLY,
-		}),
-		i(142234),	-- Vicious War Bear (A)*
-		i(142235),	-- Vicious War Bear (H)*
-		i(163124),	-- Vicious War Clefthoof
-		i(140350),	-- Vicious War Elekk*
-		i(152870),	-- Vicious War Fox (A)*
-		i(152869),	-- Vicious War Fox (H)*
-		i(186178, {	-- Vicious War Gorm (A)
-			["races"] = ALLIANCE_ONLY,
-		}),
-		i(186179, {	-- Vicious War Gorm (H)
-			["races"] = HORDE_ONLY,
-		}),
-		i(124540),	-- Vicious War Kodo*
-		i(142237),	-- Vicious War Lion*
-		i(124089),	-- Vicious War Mechanostrider*
-		i(116777),	-- Vicious War Ram*
-		i(116778),	-- Vicious War Raptor*
-		i(163123),	-- Vicious War Riverbeast
-		i(142437),	-- Vicious War Scorpion*
-		i(70909),	-- Vicious War Steed*
-		i(140348),	-- Vicious Warstrider*
-		i(140354),	-- Vicious War Trike*
-		i(143648),	-- Vicious War Turtle (A)*
-		i(143649),	-- Vicious War Turtle (H)*
-		i(184014),	-- Vicious War Spider (A)
-		i(184013),	-- Vicious War Spider (H)
-		i(70910),	-- Vicious War Wolf*
-		i(173713, {	-- Vicious White Bonesteed
-			["races"] = HORDE_ONLY,
-		}),
-		i(173714, {	-- Vicious White Warsaber
-			["races"] = ALLIANCE_ONLY,
-		}),
+
+		un(REMOVED_FROM_GAME, i(90712)),	-- Violet Pandaren Phoenix
 		i(44177),	-- Violet Proto-Drake
 		i(62900),	-- Volcanic Stone Drake
 		i(184183),	-- Voracious Gorger

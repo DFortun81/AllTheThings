@@ -9,7 +9,7 @@ _.Mounts =
 		i(152904),	-- Acid Belcher
 		i(168830),	-- Aerial Unit R-21/X
 		i(69747),	-- Amani Battle Bear
-		i(183800),	-- Amber Ardenmoth
+		un(REMOVED_FROM_GAME, i(33809)),	-- Amani War Bear
 		i(94230),	-- Amber Primordial Direhorn
 		i(152816),	-- Antoran Charhound
 		i(182650),	-- Arboreal Gulper
@@ -22,16 +22,13 @@ _.Mounts =
 		i(166432),	-- Ashenvale Chimaera
 		i(32458),	-- Ashes of Al'ar
 		i(87777),	-- Astral Cloud Serpent
-		i(153044),	-- Avenging Felcrusher Mount
 		i(43952),	-- Azure Drake
-		i(186644),	-- Beryl Shardhide
 		i(152903),	-- Biletooth Gnasher Mount [Note: Drop Argus]
 		i(43986),	-- Black Drake
 		i(166428),	-- Blackpaw
 		i(94292),	-- Black Primal Raptor
 		i(182614),	-- Blanchy's Reins
 		i(77067),	-- Blazing Drake
-		i(153043),	-- Blessed Felcrusher Mount
 		i(182085),	-- Blisterback Bloodtusk
 		i(182075, {	-- Bonehoof Tauralus
 			["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant drop only
@@ -43,10 +40,8 @@ _.Mounts =
 		i(21218),	-- Blue Qiraji Battle Tank
 		i(163578),	-- Broken Highland Mustang
 		i(43951),	-- Bronze Drake
-		i(184160),	-- Bulbous Necroray
 		i(186638),	-- Cartel Master's Gearglider
 		i(181818),	-- Chewed Reins of the Callow Flayedwing
-		i(147806),	-- Cloudwing Hippogryph
 		i(173887),	-- Clutch of Ha-Li
 		i(95059),	-- Clutch of Ji-Kun
 		i(94228),	-- Cobalt Primordial Direhorn
@@ -71,7 +66,6 @@ _.Mounts =
 		i(137574),	-- Felblaze Infernal
 		i(152841),	-- Felglow Mana Ray Mount
 		i(123890),	-- Felsteel Annihilator
-		i(186649),	-- Fierce Razorwing
 		i(30480),	-- Fiery Warhorse
 		i(71665),	-- Flametalon of Alysrazor
 		i(186483, {	-- Forsworn Aquilon
@@ -83,7 +77,6 @@ _.Mounts =
 		i(186652),	-- Garnet Razorwing
 		i(116673),	-- Giant Coldsnout
 		i(166705),	-- Glacial Tidestorm
-		i(153042),	-- Glorious Felcrusher Mount
 		i(166518),	-- G.M.O.D.
 		i(184062),	-- Gnawed Reins of the Battle-Bound Warhound (Battle-Bound Warhound in journal)
 		i(163573),	-- Goldenmane's Rein's
@@ -100,12 +93,10 @@ _.Mounts =
 		i(87771),	-- Heavenly Onyx Cloud Serpent
 		i(137575),	-- Hellfire Infernal
 		i(163579),	-- Highland Mustang
-		i(147807),	-- Highmountain Elderhorn
 		i(180581, {	-- Hopecrusher Gargon
 			["customCollect"] = "SL_COV_VEN",	-- Venthyr covenant drop only
 		}),
 		i(180461),	-- Horrid Dredwing
-		i(184161),	-- Infested Necroray
 		i(50818),	-- Invincible
 		i(116660),	-- Ironhoof Destroyer
 		i(166467),	-- Island Thunderscale
@@ -116,7 +107,6 @@ _.Mounts =
 		i(104253),	-- Kor'kron Juggernaut
 		i(152844),	-- Lambent Mana Ray
 		i(163575),	-- Leaping Veinseeker
-		i(143764),	-- Leywoven Flying Carpet
 		i(77069),	-- Life-Binder's Handmaiden
 		i(163646),	-- Lil' Donkey
 		i(138258),	-- Long-Forgotten Hippogryph
@@ -145,7 +135,6 @@ _.Mounts =
 		i(174872),	-- Ny'alotha Allseer
 		i(49636),	-- Onyxian Drake
 		i(180726),	-- Pale Acidmaw
-		i(184162),	-- Pestilent Necroray
 		i(180762, {	-- Phalynx of Humility
 			["customCollect"] = "SL_COV_KYR",	-- Kyrian covenant only
 		}),
@@ -159,12 +148,10 @@ _.Mounts =
 		i(32768),	-- Raven Lord
 		i(94291),	-- Red Primal Raptor
 		i(21321),	-- Red Qiraji Battle Tank
-		i(182081),	-- Reins of the Colossal Slaughterclaw (Colossal Slaughterclaw in journal)
 		i(174841),	-- Ren's Stalwart Hound
 		i(147835),	-- Riddler's Mind-Worm
 		i(166466),	-- Risen Mare
 		i(13335),	-- Rivendare's Deathcharger
-		i(169198),	-- Royal Snapdragon
 		i(168823),	-- Rusty Mechanocrawler
 		i(186656),	-- Sanctum Gloomcharger
 		i(116767),	-- Sapphire Riberbeast
@@ -183,7 +170,6 @@ _.Mounts =
 		i(142552),	-- Smoldering Ember Wyrm
 		i(116771),	-- Solar Spirehawk
 		i(89783),	-- Son of Galleon
-		i(186657),	-- Soulbound Gloomcharger
 		i(163586),	-- Squawks
 		i(93666),	-- Spawn of Horridon
 		i(180725),	-- Spinemaw Gladechewer
@@ -199,9 +185,10 @@ _.Mounts =
 		i(163644),	-- Swift Albino Raptor
 		i(116773),	-- Swift Breezestrider
 		i(180728),	-- Swift Gloomhoof
+		un(BLACK_MARKET, i(19872)),	-- Swift Razzashi Raptor
 		i(35513),	-- Swift White Hawkstrider
 		i(68824),	-- Swift Zulian Panther
-		i(186641),	-- Tamed Mauler
+		un(BLACK_MARKET, i(19902)),	-- Swift Zulian Tiger
 		i(163574),	-- Terrified Pack Mule
 		i(156798),	-- The Hivemind
 		i(95057),	-- Thundering Cobalt Cloud Serpent
@@ -214,7 +201,6 @@ _.Mounts =
 		i(43954),	-- Twilight Drake
 		i(166803),	-- Umber Nightsaber
 		i(160829),	-- Underrot Crawg Harness
-		i(147805),	-- Valarjar Stormwing
 		i(186642),	-- Vengeance
 		i(152842),	-- Vibrant Mana Ray Mount
 		i(152790),	-- Vile Fiend
@@ -223,7 +209,6 @@ _.Mounts =
 		i(180414),	-- Wakener's Runestag
 		i(116780),	-- Warsong Direfang
 		i(174753),	-- Waste Marauder
-		i(147804),	-- Wild Dreamrunner
 		i(180730, {	-- Wild Glimmerfur Prowler
 			["customCollect"] = "SL_COV_NFA",	-- Night Fae covenant drop only
 		}),

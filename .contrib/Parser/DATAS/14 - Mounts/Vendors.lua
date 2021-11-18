@@ -14,6 +14,7 @@ _.Mounts =
 		i(85262),	-- Amber Scorpion
 		i(186647),	-- Amber Shardhide
 		i(152794),	-- Amethyst Ruinstrider
+		un(REMOVED_FROM_GAME, i(12302)),	-- Ancient Frostsaber
 		i(167167),	-- Ankoan Waveray
 		i(141713),	-- Arcadian War Turtle
 		i(186493, {	-- Ardenweald Wilderling
@@ -39,10 +40,10 @@ _.Mounts =
 			["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant only
 		}),
 		i(44689),	-- Armored Snowy Gryphon
+		un(REMOVED_FROM_GAME, i(12351)),	-- Arctic Wolf
 		i(186485, {	-- Ascendant's Aquilon
 			["customCollect"] = "SL_COV_KYR",	-- Kyrian covenant only
 		}),
-		i(103638),	-- Ashhide Mushan Beast
 		i(186494, {	-- Autumnal Wilderling
 			["customCollect"] = "SL_COV_NFA",	-- Night Fae covenant only
 		}),
@@ -58,7 +59,6 @@ _.Mounts =
 			["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant only
 		}),
 		i(152795),	-- Beryl Ruinstrider
-		i(29465),	-- Black Battlestrider
 		i(91008, {	-- Black Dragon Turtle [Panda Only]
 			["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 		}),
@@ -66,22 +66,10 @@ _.Mounts =
 			["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 		}),
 		i(29221),	-- Black Hawkstrider
+		un(REMOVED_FROM_GAME, i(13328)),	-- Black Ram
 		i(89391),	-- Black Riding Goat
 		i(46308),	-- Black Skeletal Horse
 		i(2411),	-- Black Stallion
-		i(35906),	-- Black War Elekk
-		i(29466),	-- Black War Kodo
-		i(43956, {	-- Black War Mammoth [Alliance Only]
-			["races"] = ALLIANCE_ONLY,
-		}),
-		i(44077, {	-- Black War Mammoth [Horde Only]
-			["races"] = HORDE_ONLY,
-		}),
-		i(29467),	-- Black War Ram
-		i(29472),	-- Black War Raptor
-		i(29468),	-- Black War Steed
-		i(29471),	-- Black War Tiger
-		i(29469),	-- Black War Wolf
 		i(46099),	-- Black Wolf
 		i(87789),	-- Blonde Riding Yak
 		i(137570),	-- Bloodfang Widow
@@ -196,8 +184,8 @@ _.Mounts =
 			["customCollect"] = "SL_COV_KYR",	-- Kyrian
 		}),
 		i(45590),	-- Exodar Elekk
+		un(REMOVED_FROM_GAME, i(13329)),	-- Frost Ram
 		i(45597),	-- Forsaken Warhorse
-		i(19029),	-- Frostwolf Howler
 		i(183740),	-- Gilded Prowler
 		i(45589),	-- Gnomeregan Mechanostrider
 		i(62461),	-- Goblin Trike
@@ -274,6 +262,7 @@ _.Mounts =
 		i(82765, {	-- Green Dragon Turtle (non-pandaren)
 			["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 		}),
+		un(REMOVED_FROM_GAME, i(15292)),	-- Green Kodo
 		i(163183),	-- Green Marsh Hopper
 		i(13321),	-- Green Mechanostrider
 		i(32314),	-- Green Riding Nether Ray
@@ -296,11 +285,11 @@ _.Mounts =
 		i(44080, {	-- Ice Mammoth [Horde Only]
 			["races"] = HORDE_ONLY,
 		}),
-		i(169203),	-- Inkscale Deepseeker
+		un(REMOVED_FROM_GAME, i(13327)),	-- Icy Blue Mechanostrider Mod A
 		i(182954),	-- Inquisition Gargon
 		i(45586),	-- Ironforge Ram
 		i(116782),	-- Ironside Warwolf
-		i(142369),	-- Ivory Hawkstrider
+		un(REMOVED_FROM_GAME, i(13317)),	-- Ivory Raptor
 		i(67107),	-- Kor'kron Annihilator
 		i(152788),	-- Lightforged Warframe Mount
 		i(182082),	-- Lurid Bloodtusk
@@ -309,10 +298,12 @@ _.Mounts =
 		}),
 		un(BLACK_MARKET, i(163042)),	-- Mighty Caravan Brutosaur
 		i(116768),	-- Mosshide Riverwallow
+		un(REMOVED_FROM_GAME, i(8586)),		-- Mottled Red Raptor
 		i(73838),	-- Mountain Horse
 		i(143637, {	-- Netherlord's Brimstone Wrathsteed (Warlock)
 			["classes"] = { WARLOCK },
 		}),
+		un(REMOVED_FROM_GAME, i(12303)),	-- Nightsaber
 		i(186478, {	-- Obsidian Gravewing
 			["customCollect"] = "SL_COV_VEN",	-- Venthyr-only
 		}),
@@ -324,6 +315,7 @@ _.Mounts =
 		}),
 		i(116776),	-- Pale Thorngrazer
 		i(163589),	-- Palehide Direhorn
+		un(REMOVED_FROM_GAME, i(12354)),	-- Palomino
 		i(180762, {	-- Phalynx of Humility
 			["customCollect"] = "SL_COV_KYR",	-- Kyrian covenant only
 		}),
@@ -368,7 +360,7 @@ _.Mounts =
 		i(32317),	-- Red Riding Nether Ray
 		i(89306),	-- Red Shado-Pan Riding Tiger
 		i(13331),	-- Red Skeletal Horse
-		i(29470),	-- Red Skeletal Warhorse
+		un(REMOVED_FROM_GAME, i(12330)),	-- Red Wolf
 		i(186488, {	-- Regal Corpsefly
 			["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant only
 		}),
@@ -437,7 +429,6 @@ _.Mounts =
 			["races"] = HORDE_ONLY,
 		}),
 		i(8632),	-- Spotted Frostsaber
-		i(19030),	-- Stormpike Battle Charger
 		i(161909, {	-- Stormsong Coastwatcher
 			["races"] = ALLIANCE_ONLY,
 		}),
@@ -499,7 +490,6 @@ _.Mounts =
 		i(46762, {	-- Swift Violet Ram (Alliance, except dwarf)
 			["races"] = exclude({ DWARF }, ALLIANCE_ONLY),
 		}),
-		i(34129),	-- Swift Warstrider
 		i(18773),	-- Swift White Mechanostrider
 		i(18785),	-- Swift White Ram
 		i(18778),	-- Swift White Steed
@@ -519,6 +509,7 @@ _.Mounts =
 			["races"] = HORDE_ONLY,
 		}),
 		i(25474),	-- Tawny Wind Rider
+		un(REMOVED_FROM_GAME, i(15293)),	-- Teal Kodo
 		i(45592),	-- Thunder Bluff Kodo
 		i(89304),	-- Thundering August Cloud Serpent
 		i(85666),	-- Thundering Jade Cloud Serpent
@@ -549,6 +540,7 @@ _.Mounts =
 		}),
 		i(174754),	-- Wastewander Skyterror
 		i(46100),	-- White Kodo
+		un(REMOVED_FROM_GAME, i(13326)),	-- White Mechanostrider Mod B
 		i(5873),	-- White Ram
 		i(89390),	-- White Riding Goat
 		i(31836, {	-- White Riding Talbuk [Alliance Only]
@@ -558,6 +550,7 @@ _.Mounts =
 			["races"] = HORDE_ONLY,
 		}),
 		i(46746),	-- White Skeletal Warhorse
+		un(REMOVED_FROM_GAME, i(12353)),	-- White Stallion
 		i(29231, {	-- White War Talbuk [Alliance Only]
 			["races"] = ALLIANCE_ONLY,
 		}),

@@ -49,6 +49,7 @@ root("Mounts", n(PROMOTIONS, sharedData({ ["u"] = REMOVED_FROM_GAME },{
 	i(37719),			-- Swift Zhevra
 	i(76755),			-- Tyrael's Charger
 	WANDERING_ACIENT,	-- Wandering Ancient
+	un(REMOVED_FROM_GAME, i(116788)),	-- Warlord's Deathwheel
 	mount(346136, {		-- Viridian Phase-Hunter
 		["u"] = BLIZZARD_BALANCE,
 	}),
