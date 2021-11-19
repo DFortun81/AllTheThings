@@ -1081,4 +1081,16 @@ i(186491);	-- Spring Wilderling Harness
 -----------------
 i(187595, 359013);	-- Val'sharah Hippogryph
 i(188674, 359318);	-- Soaring Spelltome
+
+
+-----------------
+-- PATCH 9.2.0 --
+-----------------
+-- *Have Source and is Mounts also
+-- PvP
+i(189507, 365559);	--* Cosmic Gladiator's Soul Eater
+i(187681, 347256);	--* Vicious War Gulper (A)
+i(187680, 347255);	--* Vicious War Gulper (H)
+i(187644, 349824);	-- Vicious Warstalker (A)
+i(187642, 349823);	-- Vicious Warstalker (H)
 end)();

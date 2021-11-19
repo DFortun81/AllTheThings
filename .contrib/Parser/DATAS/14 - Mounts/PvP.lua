@@ -35,6 +35,7 @@ root("Mounts", pvp(n(PVP, sharedData({ ["u"] = REMOVED_FROM_GAME },{
 	i(156881),	-- Notorious Gladiator's Proto-Drake
 	i(156884),	-- Corrupted Gladiator's Proto-Drake
 	i(183937),	-- Sinful Gladiator's Soul Eater
+	i(186177),	-- Unchained Gladiator's Soul Eater
 }))));
 root("Mounts", pvp(n(PVP, {
 	n(FACTION_HEADER_ALLIANCE, sharedData({ ["races"] = ALLIANCE_ONLY },{
@@ -52,7 +53,10 @@ root("Mounts", pvp(n(PVP, {
 		i(142234),	-- Vicious War Bear
 		i(140350),	-- Vicious War Elekk
 		i(152870),	-- Vicious War Fox
-		i(186178),	-- Vicious War Gorm
+		i(186178, {	-- Vicious War Gorm
+			["timeline"] = { "added 9.1.0", "removed 9.2.0" },
+		}),
+		i(187681),	-- Vicious War Gulper
 		i(142237),	-- Vicious War Lion
 		i(124089),	-- Vicious War Mechanostrider
 		i(116777),	-- Vicious War Ram
@@ -78,7 +82,10 @@ root("Mounts", pvp(n(PVP, {
 		i(142235),	-- Vicious War Bear
 		i(163124),	-- Vicious War Clefthoof
 		i(152869),	-- Vicious War Fox
-		i(186179),	-- Vicious War Gorm
+		i(186179, {	-- Vicious War Gorm
+			["timeline"] = { "added 9.1.0", "removed 9.2.0" },
+		}),
+		i(187680),	-- Vicious War Gulper
 		i(124540),	-- Vicious War Kodo
 		i(116778),	-- Vicious War Raptor
 		i(142437),	-- Vicious War Scorpion
@@ -93,6 +100,7 @@ root("Mounts", pvp(n(PVP, {
 	})),
 	i(103638),	-- Ashhide Mushan Beast
 	i(163577),	-- Conquerer's Scythemaw
+	i(189507),	-- Cosmic Gladiator's Soul Eater
 	i(169203),	-- Inkscale Deepseeker
 	i(142369),	-- Ivory Hawkstrider
 	i(140408),	-- Prestigious Azure Courser
@@ -102,5 +110,4 @@ root("Mounts", pvp(n(PVP, {
 	i(140233),	-- Prestigious Ivory Courser
 	i(140407),	-- Prestigious Midnight Courser
 	i(140230),	-- Prestigious Royal Courser
-	i(186177),	-- Unchained Gladiator's Soul Eater
 })));
