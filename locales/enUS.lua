@@ -1250,7 +1250,7 @@ app.L = {
 		[-692] = "Interface\\Icons\\inv_protodrakegladiatormount_black",					-- Corrupted Gladiator: Battle for Azeroth Season 4
 	-- Shadowlands PvP Seasons
 		[-693] = "Interface\\Icons\\inv_shadebeastmount",									-- Sinful Gladiator: Shadowlands Season 1
-		[-694] = 3949827,																	-- Unchained Gladiator: Shadowlands Season 2
+		[-694] = "Interface\\Icons\\inv_shadebeastmount_blue",								-- Unchained Gladiator: Shadowlands Season 2
 	-- More PvP Seasons are likely to come dont use IDs here
 	-- Pets
 		[-795] = app.asset("Pet_Dungeon"),													-- Pet Battle Dungeons
