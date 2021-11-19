@@ -153,6 +153,18 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE },{
 		i(172377),			-- Sprite Darter's Sash
 		i(172374),			-- Sprite Darter's Shawl
 		i(172380),			-- Sprite Darter's Trousers
+		i(184832),			-- Celestial Observer's Astral Walkers
+		i(184833),			-- Celestial Observer's Buckle
+		i(184829),			-- Celestial Observer's Constellations
+		i(184835),			-- Celestial Observer's Gloves
+		i(184836),			-- Celestial Observer's Leggings
+		i(184830),			-- Celestial Observer's Robe
+		i(184831),			-- Celestial Observer's Skygazer
+		i(184837),			-- Celestial Observer's Starshroud
+		i(184834),			-- Celestial Observer's Wristwrap
+		i(188135),			-- Frrgl's Shaking Shell
+		i(184828),			-- Grrgl's Spotted Shell
+		i(188136),			-- Mrrgl's Shiny Shell
 	}),
 	n(-161, {	-- Toys
 		i(166778),			-- Horde's Might Firework
