@@ -125,7 +125,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							26181,	-- Back to Darkbreak Cave (breadcrumb)
-							26143,	-- All That Rises
+							-- 26143,	-- All That Rises (26193 appears on world map without completing this quest)
 						},
 						["g"] = {
 							i(59604),	-- Submariner's Weighted Treads
@@ -139,7 +139,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							26182,	-- Back to the Tenebrous Cavern (breadcrumb)
-							26143,	-- All that Rises
+							-- 26143,	-- All that Rises (26194 appears on world map without completing this quest)
 						},
 						["g"] = {
 							i(59601),	-- Submariner's Weighted Treads
