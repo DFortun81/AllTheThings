@@ -1087,10 +1087,54 @@ i(188674, 359318);	-- Soaring Spelltome
 -- PATCH 9.2.0 --
 -----------------
 -- *Have Source and is Mounts also
+-- Protoform Synthesis
+i(187632, 359232);	-- Adorned Vombata
+i(187670, 359376);	-- Bronze Gastropod
+i(187663, 359364);	-- Bronzewing Vespoid
+i(187665, 359366);	-- Buzz
+i(187630, 359230);	-- Curious Crystalsniffer
+i(187631, 359231);	-- Darkened Vombata
+i(187638, 359278);	-- Deathrunner
+i(187666, 342668);	-- Desertwing Hunter
+i(187664, 359367);	-- Forged Spiteflyer
+i(187677, 359401);	-- Genesis Crawler
+i(187683, 359413);	-- Goldplate Bufonid
+i(187679, 359403);	-- Ineffable Skitterer
+i(187667, 359372);	-- Mawdapted Raptora
+i(187639, 342671); 	-- Pale Regal Cervid
+i(188808, 363701);	-- Patient Bufonid
+i(188809, 363703);	-- Prototype Leaper
+i(187668, 359373);	-- Raptora Swooper
+i(187641, 359277);	-- Sundered Zerethsteed
+i(188810, 363706);	-- Russet Bufonid
+i(187669, 346719);	-- Serenade
+i(187672, 359378);	-- Stabilized Gastropod
+i(187678, 359402);	-- Tarachnid Creeper
+i(187671, 359377);	-- Unsuccessful Prototype Fleetpod
+i(187660, 342678);	-- Vespoid Flutterer
+
+-- M+
+i(187682, 359407);	-- Wastewarped Deathwalker
+
 -- PvP
 i(189507, 365559);	--* Cosmic Gladiator's Soul Eater
 i(187681, 347256);	--* Vicious War Gulper (A)
 i(187680, 347255);	--* Vicious War Gulper (H)
 i(187644, 349824);	-- Vicious Warstalker (A)
 i(187642, 349823);	-- Vicious Warstalker (H)
+
+-- Rare Drop?
+i(187676, 342680);	-- Deepstar Aurelid
+
+-- Torghast?
+i(188736, 363297);	-- Colossal Soulshredder Mawrat
+i(188700, 363178);	-- Colossal Umbrahide Mawrat
+i(188696, 363136);	-- Colossal Ebonclaw Mawrat
+
+-- PH/UNKNOWN/NYI
+i(187640, 359276);	-- Anointed Protostag
+i(187673, 359381);	-- Cryptic Aurelid
+i(187629, 359229);	-- Heartlight Vombata
+-- Holy Lightstrider(spellID 356802)
+-- Carcinized Zerethsteed(SpellID 359545)
 end)();
