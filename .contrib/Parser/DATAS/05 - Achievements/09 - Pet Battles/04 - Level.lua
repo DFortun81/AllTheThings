@@ -2,8 +2,8 @@
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
-root("Achievements", petbattle(achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
-	achcat(ACHIEVEMENT_CATEGORY_LEVEL, {
+root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
+	petbattle(achcat(ACHIEVEMENT_CATEGORY_LEVEL, {
 		ach(6570, {	-- All Growns Up! (Lvl 25)
 			ach(6569),	-- Old Timer (Lvl 20)
 			ach(6568),	-- Time for a Leash (15)
@@ -24,5 +24,5 @@ root("Achievements", petbattle(achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			ach(6579),	-- Rookie Pet Group (15)
 		}),
 		ach(9070),	-- Overstuffed
-	}),
-})));
+	})),
+}));

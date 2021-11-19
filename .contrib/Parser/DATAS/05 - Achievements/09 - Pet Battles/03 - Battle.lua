@@ -2,8 +2,8 @@
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
-root("Achievements", petbattle(achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
-	achcat(ACHIEVEMENT_CATEGORY_BATTLE, {
+root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
+	petbattle(achcat(ACHIEVEMENT_CATEGORY_BATTLE, {
 		ach(14881, {	-- Abhorrent Adversaries of the Afterlife
 			i(184512),	-- Winterleaf Spriggan
 			crit(1,  {	-- Crystalsnap
@@ -2018,5 +2018,5 @@ root("Achievements", petbattle(achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			ach(6559),	-- Traveling Pet Mauler (30)
 			ach(6558),	-- Local Pet Mauler (10)
 		}),
-	}),
-})));
+	})),
+}));
