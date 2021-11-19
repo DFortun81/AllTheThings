@@ -4961,13 +4961,13 @@ fieldConverters = {
 	end,
 	["coord"] = function(group, value)
 		-- don't cache mapID from coord for anything which is itself an actual instance or a map
-		if currentInstance ~= group and not group.mapID then
+		if currentInstance ~= group and not rawget(group, "mapID") and not rawget(group, "difficultyID") then
 			if value[3] then cacheMapID(group, value[3], true); end
 		end
 	end,
 	["coords"] = function(group, value)
 		-- don't cache mapID from coord for anything which is itself an actual instance or a map
-		if currentInstance ~= group and not group.mapID then
+		if currentInstance ~= group and not rawget(group, "mapID") and not rawget(group, "difficultyID") then
 			for _,coord in ipairs(value) do
 				if coord[3] then cacheMapID(group, coord[3], true); end
 			end
