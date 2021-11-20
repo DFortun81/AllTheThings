@@ -304,16 +304,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(11871)),	-- Snarkshaw Spaulders
 					},
 				}),
-				q(7492,  {	-- Camp Mojache
-					["providers"] = {
-						{ "n", 20724 },	-- Herald Amorlin (Silvermoon)
-						{ "n", 10879 },	-- Harbinger Balthazad (Undercity)
-						{ "n", 10880 },	-- Warcaller Gorlach (Orgrimmar)
-						{ "n", 10881 },	-- Bluff Runner Windstrider (Thunder Bluff)
-					},
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(60887, {	-- Cataclysm: Onward to Adventure in Kalimdor
 					["repeatable"] = true,
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>

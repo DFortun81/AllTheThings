@@ -144,11 +144,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(10706)),	-- Nightscale Girdle
 					},
 				}),
-				q(7481, {	-- Elven Legends
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 14373 },	-- Sage Korolusk
-				}),
 				q(25402, {	-- Estulan's Examination
 					["provider"] = { "n", 39653 },	-- Silvia
 					["coord"] = { 56.9, 54.9, FERALAS },

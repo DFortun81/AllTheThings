@@ -30,17 +30,6 @@ _.Secrets =
 					}),
 					i(18258, {	-- Gordok Ogre Suit
 						["description"] = "Qty:1\n\nPurchase on the AH, make your own (pre Cata Tailors/Leatherworkers only), or head to Dire Maul North.\n\nOnce inside find Knot Thimblejack near Guard Slip'kik, and complete his quest for the suit.",
-						["g"] = {
-							q(27120, {	-- The Gordok Ogre Suit
-								["provider"] = { "n", 14338 },	-- Knot Thimblejack
-								["repeatable"] = true,
-								["collectible"] = false,
-								["coords"] = {
-									{ 62.5, 24.9, FERALAS },	-- Dire Maul North entrance
-									{ 28.5, 55.0, 235 },	-- Inside instance
-								}
-							}),
-						},
 					}),
 					i(103789, {	-- "Little Princess" Costume
 						["description"] = "Qty:1\n\nPurchase on the AH or from the vendors below:",

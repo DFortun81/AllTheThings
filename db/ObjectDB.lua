@@ -105,6 +105,7 @@ select(2, ...).ObjectNames = {
 	[178144] = "Troll Chest",
 	[178227] = "Murgut's Totem Basket",
 	[179485] = "A Broken Trap",
+	[179499] = "Ogre Tannin Basket",
 	[179501] = "Knot Thimblejack's Cache",
 	[179564] = "Gordok Tribute Chest",
 	[179697] = "Arena Treasure Chest",
