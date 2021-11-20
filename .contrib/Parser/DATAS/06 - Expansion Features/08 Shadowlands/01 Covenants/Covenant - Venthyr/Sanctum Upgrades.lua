@@ -304,7 +304,7 @@ _.ExpansionFeatures =
 								})),
 							}),
 							-- Repeatable Event quests within Ember Court
-							n(QUESTS, sharedData({["repeatable"] = true,},{
+							n(QUESTS, sharedData({["isDaily"] = true,},{
 								q(63721, {	-- Lord Garridan's Egg
 									["cost"] = { { "i", 185684, 1 } },	-- Lord Garridan's Egg
 									["u"] = NOBLEGARDEN,
@@ -321,50 +321,52 @@ _.ExpansionFeatures =
 									["cost"] = { { "i", 185682, 1 } },	-- Temel's Egg
 									["u"] = NOBLEGARDEN,
 								}),
-								q(61555),	-- High Inquisitor Vetar
-								q(61556),	-- 'Party Crashers'
-								q(61725),	-- Stolen Mementos
-								q(62135),	-- Fungi Experiments
-								q(62137),	-- Theotar's Toast
-								q(62126),	-- Animal Rescue
-								q(62127),	-- Ride on the Wild Side
-								q(62134),	-- Lower Your Standards
-								q(62118),	-- Traditional Candles
-								q(62119),	-- Roaring Fires
-								q(62113),	-- Party Crashers
-								q(62122),	-- Mystery Mirror
-								q(62123),	-- Prison Break
-								q(62142),	-- Ember Skyterror
-								q(65054),	-- Training Dummies
-								q(65055),	-- Protective Braziers
-								q(65056),	-- Stop the Slip
+								q(62146),	-- A Little More Comfortable
 								q(62130),	-- A Quiet Moment
-								q(62124),	-- Ritual of Accusation
+								q(62126),	-- Animal Rescue
 								q(62141),	-- Blustery Boil
+								q(62121),	-- Cartel Ta Justice
+								q(62136),	-- Clumpdump
+								q(62128),	-- Concert Kick-Off
 								q(62138),	-- Court Crusher
 								q(62145),	-- Crime of Fashion
+								q(62129),	-- Dance For Love
+								q(62111),	-- Drezgruda
+								q(62142),	-- Ember Skyterror
+								q(62132),	-- Food Fight
+								q(62135),	-- Fungi Experiments
+								q(65053),	-- Giant Lungcap
+								q(61555),	-- High Inquisitor Vetar
 								q(62148),	-- It's Raining Anima
+								q(62116),	-- Kedu
+								q(62139),	-- Knockerbock
 								q(62144),	-- Legacy of Stone
+								q(62134),	-- Lower Your Standards
 								q(62133),	-- Made to Order
-								q(62143),	-- The Murder of Colonel Mort
+								q(62122),	-- Mystery Mirrors
+								q(62113),	-- Party Crashers
+								q(61556),	-- Party Crashers
 								q(62110),	-- Party Crashers
 								q(62115),	-- Party Crashers
 								q(62117),	-- Party Crashers
 								q(62147),	-- Party Pests
+								q(62123),	-- Prison Break
+								q(65055),	-- Protective Braziers
+								q(62127),	-- Ride on the Wild Side
 								q(62125),	-- Ritual of Absolution
+								q(62124),	-- Ritual of Accusation
+								q(62119),	-- Roaring Fires
 								q(62114),	-- Sineater
+								q(62120),	-- Stolen Mementos
+								q(61725),	-- Stolen Mementos
+								q(65056),	-- Stop the Slip
 								q(62131),	-- Tea Time
 								q(62171),	-- Tea Time
+								q(62143),	-- The Murder of Colonel Mort
+								q(62137),	-- Theotar's Toast
+								q(62118),	-- Traditional Candles
+								q(65054),	-- Training Dummies
 								q(62140),	-- Venthyr Provocateur
-								q(62132),	-- Food Fight
-								q(62120),	-- Stolen Mementos
-								q(62121),	-- Cartel Ta Justice
-								q(62136),	-- Clumpdump
-								q(62111),	-- Drezgruda
-								q(62116),	-- Kedu
-								q(62128),	-- Concert Kick-Off
-								q(62129),	-- Dance For Love
-								q(62139),	-- Knockerbock
 							})),
 							n(REWARDS, {
 								["description"] = "Some rewards drop from the non-Extravagant tribute chests, but targeting the Extravagant tribute from Elated guests is the best way to get rare loot.",	-- typically a few pieces will drop from the regular/medium chests, but it appears to be the same loot that drops from Extravagant chests - just listing the Extravagant chest for source and duplication reduction, especially since some pieces drop from multiple guests' chests

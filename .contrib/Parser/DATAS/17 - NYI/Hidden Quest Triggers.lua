@@ -3686,7 +3686,6 @@ _.HiddenQuestTriggers = {
 		q(60955),	-- "Noko's Flute," same as above
 		q(61433),	-- "Lower Your Standards," for turning in Giant Lungcap to Picky Stefan
 		q(61445),	-- triggered completed upon turning in gossip to Prince Renathal for the "Venthyr Provocateur" objective (assume this is for sharing the gossip to make court +Exciting)
-		q(62146),	-- triggered when completing "A Little More Comfortable"
 		q(62496),	-- triggered when Ember Court ended, Week 1 (had Cryptkeeper Kassir as guest and he was Elated)
 		q(62512),	-- triggered when Ember Court ended, Week 1 (had Cryptkeeper Kassir as guest and he was Elated)
 		q(62499),	-- triggered when Ember Court ended, Week 2 (had Kleia + Pelagos as guests and they were Elated)
