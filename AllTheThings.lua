@@ -16941,7 +16941,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				-- sort only the top layer of groups if not in an instance, force visible so sort goes through
 				-- print(GetInstanceInfo());
 				-- sort top level by name if not in an instance
-				if not self.data.instanceID then
+				if not GetRelativeValue(self.data, "instanceID") then
 					SortGroup(self.data, "name");
 				end
 				-- and conditionally sort the entire list (sort groups which contain 'mapped' content)
