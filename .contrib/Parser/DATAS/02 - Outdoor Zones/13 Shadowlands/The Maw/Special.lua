@@ -37,7 +37,7 @@ _.Zones =
 					}),
 					n(-911,  {	-- Hunt: Shadehounds
 						["isWeekly"] = true,
-						["questID"] = 63433,
+						["questID"] = 63180,
 						["cr"] = 174861,	-- Gorged Shadehound
 						["g"] = {
 							n(174861, {	-- Gorged Shadehound
@@ -46,16 +46,16 @@ _.Zones =
 								["coord"] = { 53.4, 79.3, THE_MAW },
 								["g"] = {
 									crit(1, {	-- Shadehounds
-									["achievementID"] = 14738,	-- Hunting Party
+										["achievementID"] = 14738,	-- Hunting Party
 									}),
 									i(184167),	-- Mawsworn Soulhunter (MOUNT!)
 									i(183057, {	-- Shadehound Armor Plating
-									["questID"] = 63154,	-- Shadehound Armor Plating
-									["g"] = {
-										crit(18, {	-- Shadehound Armor Plating
-											["achievementID"] = 14761,	-- Deciphering Death's Intentions
-										}),
-									},
+										["questID"] = 63154,	-- Shadehound Armor Plating
+										["g"] = {
+											crit(18, {	-- Shadehound Armor Plating
+												["achievementID"] = 14761,	-- Deciphering Death's Intentions
+											}),
+										},
 									}),
 								},
 							}),
@@ -314,8 +314,6 @@ _.Zones =
 							}),
 							n(175846, {	-- Dathlane the Herald <Torghast Executioner>
 								["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
-								["isWeekly"] = true,
-								["questID"] = 63414,
 								["g"] = {
 									i(186008),	-- Forsworn's Judgment
 									i(186207),	-- Mawsworn Herald's Vestments
@@ -323,8 +321,6 @@ _.Zones =
 							}),
 							n(175877, {	-- Lumisende <Torghast Executioner>
 								["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
-								["isWeekly"] = true,
-								["questID"] = 63414,
 								["g"] = {
 									i(186011),	-- Lumisende's Twin-Blade
 									i(186230),	-- Mawsworn Warboots
@@ -332,8 +328,6 @@ _.Zones =
 							}),
 							n(175881, {	-- Naelcrotix <Torghast Executioner>
 								["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
-								["isWeekly"] = true,
-								["questID"] = 63414,
 								["g"] = {
 									i(186243),	-- Helm of Necrotic Sight
 									i(186013),	-- Vessel of Primordial Death
@@ -341,8 +335,6 @@ _.Zones =
 							}),
 							n(176173, {	-- Zograthos <Torghast Executioner>
 								["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
-								["isWeekly"] = true,
-								["questID"] = 63414,
 								["g"] = {
 									i(186232),	-- Phantom-Stalker's Legplates
 									i(186216),	-- Zograthos' Visage

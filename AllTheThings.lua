@@ -11278,7 +11278,7 @@ app.CreateVignette = function(id, t)
 end
 end)();
 
--- Will print a warning message and play a warning sound if the given QuestID begin completed will prevent being able to complete a breadcrumb
+-- Will print a warning message and play a warning sound if the given QuestID being completed will prevent being able to complete a breadcrumb
 -- (as far as ATT is capable of knowing)
 app.CheckForBreadcrumbPrevention = function(title, questID)
 	local nextQuests = app.SearchForField("nextQuests", questID);

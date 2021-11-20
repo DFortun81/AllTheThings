@@ -3818,7 +3818,6 @@ _.HiddenQuestTriggers = {
 		q(62908),	-- triggered after collecting 5 souls during "Rule 1: Have an Escape Plan"
 		q(62913),	-- triggered when turning in #60281, "Rule 4: Make a List"
 		q(63446),	-- triggered when landing in The Maw on 12/9/20
-		q(63180),	-- triggered after killing Gorged Shadehound / the end of Hunt: Shadehound (looting the mob had a separate trigger)
 		q(63178),	-- triggered when starting/accepting Hunt Gorged Shadehounds
 		q(63195),	-- triggered when starting/accepting Hunt Souleaters
 		q(63196),	-- triggered when starting/accepting Hunt Death Elementals
