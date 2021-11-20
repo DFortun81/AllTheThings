@@ -16813,6 +16813,14 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					else
 						-- Get the header chain for the group
 						local topHeader;
+						local groupKey, typeHeaderID = group.key;
+						-- pre-emptively determine the expected top header for this 'thing' based on its key
+						for headerID,key in pairs(topHeaders) do
+							if groupKey == key then
+								typeHeaderID = headerID;
+								break;
+							end
+						end
 						local nextParent, headerID = group.parent;
 
 						-- Pre-nest some groups based on their type after grabbing the parent
@@ -16825,25 +16833,28 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 						-- Building the header chain for each mapped Thing
 						while nextParent do
 							headerID = nextParent.headerID;
-							if headerID then
-								-- This matches a top-level header, track that top-level header at the highest point
-								if topHeaders[headerID] then
-									-- already found a matching header, then nest it before switching
-									if topHeader then
-										group = CreateHeaderData(group, topHeader);
-									end
-									topHeader = nextParent;
-								elseif not ignoredHeaders[headerID] then
-									group = CreateHeaderData(group, nextParent);
-									nested = true;
-								end
-							else
-								for hkey,hf in pairs(subGroupKeys) do
-									if nextParent[hkey] then
-										-- create the specified group Type header
+							-- this is the Type header which has already been determined based on the mapped Thing, so skip nesting at this level
+							if typeHeaderID ~= headerID then
+								if headerID then
+									-- This matches a top-level header, track that top-level header at the highest point
+									if topHeaders[headerID] then
+										-- already found a matching header, then nest it before switching
+										if topHeader then
+											group = CreateHeaderData(group, topHeader);
+										end
+										topHeader = nextParent;
+									elseif not ignoredHeaders[headerID] then
 										group = CreateHeaderData(group, nextParent);
 										nested = true;
-										break;
+									end
+								else
+									for hkey,hf in pairs(subGroupKeys) do
+										if nextParent[hkey] then
+											-- create the specified group Type header
+											group = CreateHeaderData(group, nextParent);
+											nested = true;
+											break;
+										end
 									end
 								end
 							end
@@ -16854,20 +16865,16 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 							group = CreateHeaderData(group, topHeader);
 							nested = true;
 						end
+						-- and based on the Type of the original Thing if it was never listed under any matching top headers
+						if typeHeaderID then
+							group = app.CreateNPC(typeHeaderID, CreateHeaderData(group));
+							nested = true;
+						end
 					end
 
 					-- couldn't nest this thing using custom headers, try to use the key of the group to figure it out
 					if not nested and group then
 						local groupKey = group.key;
-						-- print("manual nest by type",group.key,group.key and group[group.key])
-						for headerID,key in pairs(topHeaders) do
-							if groupKey == key then
-								-- print("nest as",headerID)
-								group = app.CreateNPC(headerID, CreateHeaderData(group));
-								nested = true;
-								break;
-							end
-						end
 						-- really really special cases...
 						-- Battle Pets get a raw Filter group
 						if not nested and groupKey == "speciesID" then
