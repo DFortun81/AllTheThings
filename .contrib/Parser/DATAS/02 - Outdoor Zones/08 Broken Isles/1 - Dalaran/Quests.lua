@@ -153,7 +153,6 @@ _.Zones =
 						SHAMAN,			-- Elemental
 						WARRIOR,		-- Fury
 					},
-					["sourceQuests"] = { 45843 },	-- Dark Omens
 					["provider"] = { "n", 90418 },	-- Archmage Modera
 					["coord"] = { 28.5, 48.9, LEGION_DALARAN },
 				}),
@@ -190,11 +189,19 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(49472, {	-- A Titanic Effort
-					["u"] = REMOVED_FROM_GAME,
+					["sourceQuest"] = 49474,	-- The Cursed Shard
+					["timeline"] = {
+						"added 7.3.5",
+						"removed 8.0"
+					},
 				}),
 				q(49473, {	-- A Titanic Effort
-					["u"] = REMOVED_FROM_GAME,
+					["sourceQuest"] = 49472,	-- A Titanic Effort
 					["repeatable"] = true,
+					["timeline"] = {
+						"added 7.3.5",
+						"removed 8.0"
+					},
 				}),
 				q(47041, {	-- Affliction: The Twisted Twin
 					["sourceQuests"] = {
@@ -1045,6 +1052,10 @@ _.Zones =
 				q(49474, {	-- The Cursed Shard
 					["provider"] = { "i", 154880 },	-- Cursed Shard
 					["isBreadcrumb"] = true,
+					["timeline"] = {
+						"added 7.3.5",
+						"removed 8.0"
+					}
 				}),
 				q(45420, {	-- The Eye of Aman'Thul
 					["sourceQuests"] = { 45417 },	-- The Nighthold: Lord of the Shadow Council

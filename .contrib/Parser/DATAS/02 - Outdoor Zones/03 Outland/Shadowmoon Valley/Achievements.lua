@@ -21,7 +21,8 @@ _.Zones =
 					crit(1, {	-- Wildhammer Stronghold
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
-							-- TODO: there's more required here
+							10776,	-- Dissension Amongst the Ranks...
+							10678,	-- The Main Course!
 							10744,	-- News of Victory (A)
 						},
 					}),
@@ -50,7 +51,7 @@ _.Zones =
 						},
 					}),
 					crit(5, {	-- Akama's Promise
-						["sourceQuest"] = 11052,	-- Akama's Promise
+						["sourceQuest"] = 10708,	-- Akama's Promise
 					}),
 					crit(6, {	-- The Cipher of Damnation
 						["sourceQuest"] = 10588,	-- The Cipher of Damnation
