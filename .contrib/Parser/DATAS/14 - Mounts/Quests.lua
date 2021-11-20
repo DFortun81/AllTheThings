@@ -112,7 +112,10 @@ _.Mounts =
 			["timeline"] = { "added 9.1.5" },
 		}),
 		i(137573),		-- Llothien Prowler
-		i(182589),		-- Loyal Gorger
+		i(182589, {	-- Loyal Gorger
+			-- tagged with cost here so that it shows under the Rare for the start of the quest chain item
+			["cost"] = { { "i", 180583, 1 } },	-- Impressionable Gorger Spawn
+		}),
 		i(161330, {		-- Mag'har Direwolf [Mag'har Orc Quest Chain]
 			["races"] = HORDE_ONLY
 		}),
