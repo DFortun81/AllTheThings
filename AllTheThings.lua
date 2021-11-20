@@ -16742,6 +16742,13 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			["holidayID"] = app.CreateHoliday,
 			["instanceID"] = app.CreateInstance,
 		};
+		-- set of keys for headers which can be nested in the minilist within an Instance automatically, but not confined to a direct top header
+		local subGroupInstanceKeys = {
+			["filterID"] = app.CreateFilter,
+			["professionID"] = app.CreateProfession,
+			["raceID"] = app.CreateRace,
+			["holidayID"] = app.CreateHoliday,
+		};
 		-- Keep a static collection of top-level groups in the list so they can just be referenced for adding new
 		local topHeaders = {
 		-- ACHIEVEMENTS = -4
@@ -16789,6 +16796,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				-- Simplify the returned groups
 				local groups, nested = {};
 				local header = app.CreateMap(self.mapID, { g = groups });
+				local inInstance = IsInInstance();
 				for _,group in ipairs(results) do
 					-- do not use any raw Source groups in the final list
 					group = CreateObject(group);
@@ -16847,7 +16855,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 										nested = true;
 									end
 								else
-									for hkey,hf in pairs(subGroupKeys) do
+									for hkey,hf in pairs(inInstance and subGroupInstanceKeys or subGroupKeys) do
 										if nextParent[hkey] then
 											-- create the specified group Type header
 											group = CreateHeaderData(group, nextParent);
