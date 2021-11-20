@@ -198,35 +198,6 @@ _.Zones =
 					}),
 					i(137695),	-- Schematic: Reaves Module: Wormhole Generator Mode
 				}),
-				prof(HERBALISM, {
-					q(40040, {	-- Felwort Sample
-						["requireSkill"] = HERBALISM,
-						["provider"] = { "i", 129122 },	-- Felwort Sample
-						["g"] = {
-							recipe(193307),	-- Felwort (Rank 1)
-						},
-					}),
-					q(40024, {	-- Foxflower Sample
-						["requireSkill"] = HERBALISM,
-						["provider"] = { "i", 129119 },	-- Foxflower Sample
-						["g"] = {
-							recipe(193298),	-- Foxflower (Rank 1)
-						},
-					}),
-					q(40028, {	-- The Pied Picker
-						["requireSkill"] = HERBALISM,
-						["sourceQuests"] = { 40026 },	-- Chase the Culprit
-						["provider"] = { "i", 129278 },	-- Foxflower Scent Gland
-						["g"] = {
-							recipe(193300),	-- Foxflower (Rank 3)
-						},
-					}),
-					q(40025, {	-- Teeny Bite Marks
-						["requireSkill"] = HERBALISM,
-						["sourceQuests"] = { 40024 },	-- Foxflower Sample
-						["provider"] = { "i", 129137 },	-- Nibbled Foxflower Stem
-					}),
-				}),
 				prof(JEWELCRAFTING, {	-- Technically Archaeology, but we can only use 1 filter atm.
 					i(137867, {	-- Design: Shadowruby Band (Rank 3)
 						["description"] = "Can drop from digsites via Archaeology.",

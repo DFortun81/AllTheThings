@@ -172,32 +172,6 @@ _.Zones =
 					}),
 					i(137695),	-- Schematic: Reaves Module: Wormhole Generator Mode
 				}),
-				prof(HERBALISM, {
-					q(40040, {	-- Felwort Sample
-						["requireSkill"] = HERBALISM,
-						["provider"] = { "i", 129122 },	-- Felwort Sample
-						["g"] = {
-							recipe(193307),	-- Felwort [Rank 1]
-						},
-					}),
-					q(40029, {	-- Fjarnskaggl Sample
-						["requireSkill"] = HERBALISM,
-						["provider"] = { "i", 129120 },	-- Fjarnskaggl Sample
-						["g"] = {
-							recipe(193301),	-- Fjarnskaggl [Rank 1]
-						},
-					}),
-					q(40030, {	-- Ram's-Horn Trowel
-						["requireSkill"] = HERBALISM,
-						["sourceQuest"] = 40029,	-- Fjarnskaggl Sample
-						["provider"] = { "i", 129138 },	-- Ram's-Horn Trowel
-					}),
-					q(40032, {	-- The Missing Page
-						["requireSkill"] = HERBALISM,
-						["sourceQuest"] = 40031,	-- Vrykul Herblore
-						["provider"] = { "i", 129142 },		-- Runed Journal Page
-					}),
-				}),
 				prof(SKINNING, {
 					q(40149, {	-- Drakol'nir Must Die
 						["sourceQuests"] = {

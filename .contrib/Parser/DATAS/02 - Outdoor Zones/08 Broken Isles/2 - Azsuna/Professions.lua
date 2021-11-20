@@ -229,31 +229,6 @@ _.Zones =
 						["description"] = "I got it after about ~20-30 min of fishing from a Cursed Queenfish pool in the lake near Narthalas Academy. No legendary pole equipped or any special lures.",
 					}),
 				}),
-				prof(HERBALISM, {
-					q(40013, {	-- Aethril Sample
-						["requireSkill"] = HERBALISM,
-						["provider"] = { "i", 129117 },	-- Aethril Sample
-					}),
-					q(40015, {	-- Ragged Strips of Silk
-						["requireSkill"] = HERBALISM,
-						["sourceQuest"] = 40014,	-- Spayed by the Spade
-						["provider"] = { "i", 129135 },	-- Ragged Strips of Silk
-					}),
-					q(40017, {	-- A Slip of the Hand
-						["requireSkill"] = HERBALISM,
-						["sourceQuest"] = 40016,	-- Desperation Breeds Ingenuity
-						["g"] = {
-							recipe(193294),	-- Aethril (Rank 3)
-						},
-					}),
-					q(40040, {	-- Felwort Sample
-						["requireSkill"] = HERBALISM,
-						["provider"] = { "i", 129122 },	-- Felwort Sample
-						["g"] = {
-							recipe(193307),	-- Felwort [Rank 1]
-						},
-					}),
-				}),
 				prof(SKINNING, {
 					q(40145, {	-- Under Down
 						["sourceQuests"] = { 40144 },	-- Glielle

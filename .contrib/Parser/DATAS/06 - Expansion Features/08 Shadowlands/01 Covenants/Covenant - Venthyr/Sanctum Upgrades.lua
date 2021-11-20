@@ -2736,9 +2736,6 @@ _.HiddenQuestTriggers = {
 			q(61453),	-- triggered when using "Training Dummies" (181437)
 			q(61456),	-- triggered when using "Slippery Muck" (181440)
 
-		-- Misson Table
-			q(60635),	-- Unknown
-
 		-- Misc.
 			q(61919),	-- unflagged when completing Restock: Exploratory Meals (62094)
 			q(62524),	-- triggered at end of Ember Court (Vashj/Koryan/Choofa/Stonehead)

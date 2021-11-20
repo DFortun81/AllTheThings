@@ -237,29 +237,6 @@ _.Zones =
 					i(137845),	-- Design: Maelstrom Band (Rank 3)
 					i(137695),	-- Schematic: Reaves Module: Wormhole Generator Mode
 				}),
-				prof(HERBALISM, {
-					q(40040, {	-- Felwort Sample
-						["requireSkill"] = HERBALISM,
-						["provider"] = { "i", 129122 },	-- Felwort Sample
-						["g"] = {
-							recipe(193307),	-- Felwort [Rank 1]
-						},
-					}),
-					q(40034, {	-- Starlight Rosedust
-						["requireSkill"] = HERBALISM,
-						["provider"] = { "i", 129121 },	-- Starlight Rosedust
-					}),
-					q(40036, {	-- Jeweled Spade Handle
-						["requireSkill"] = HERBALISM,
-						["sourceQuest"] = 40035,	-- The Gentlest Touch
-						["provider"] = { "i", 129140 },	-- Jeweled Spade Handle
-					}),
-					q(40038, {	-- Insane Ramblings
-						["requireSkill"] = HERBALISM,
-						["sourceQuest"] = 40037,	-- The Spade's Blade
-						["provider"] = { "i", 129143 },	-- Scribbled Ramblings
-					}),
-				}),
 				prof(SKINNING, {
 					q(40158),	-- Darkheart Thicket: Demons Be Different
 					q(40154),	-- Eye of Azshara: The Scales of Serpentrix

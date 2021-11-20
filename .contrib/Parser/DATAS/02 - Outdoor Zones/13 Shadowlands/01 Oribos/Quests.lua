@@ -1060,7 +1060,6 @@ _.HiddenQuestTriggers = {
 	q(65079),	-- Swapping Cov to Necrolord at R80
 	-- 9.1.5?
 	q(62923),	-- Swapped to Venthyr from Necrolord at R80? Probably a old hqt
-	q(65031),	-- Choosing Battlegrounds as leveling
 	q(64848),	-- Choosing Torghast as leveling
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
