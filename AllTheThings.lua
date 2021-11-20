@@ -9846,8 +9846,7 @@ app.GetCurrentMapID = function()
 	local uiMapID = C_Map_GetBestMapForUnit("player");
 	if uiMapID then
 		local map = C_Map_GetMapInfo(uiMapID);
-		if map and (map.mapType == 0 or map.mapType == 1 or map.mapType == 2) then
-			-- Onyxia's Lair fix
+		if map then
 			local ZONE_TEXT_TO_MAP_ID = app.L["ZONE_TEXT_TO_MAP_ID"];
 			local real = GetRealZoneText();
 			local otherMapID = real and ZONE_TEXT_TO_MAP_ID[real];
