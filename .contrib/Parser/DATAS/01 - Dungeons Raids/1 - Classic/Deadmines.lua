@@ -290,220 +290,220 @@ root("Instances", tier(CLASSIC_TIER, {
 					},
 				}),
 			}),
+			n(RARES, {
+				n(596, {	-- Brainwashed Noble
+					["description"] = "This is a rare that is not always present.\n\nLocated in the cavern before the instance.",
+					-- #if BEFORE CATA
+					["coord"] = { 44.0, 78.3, WESTFALL },
+					-- #else
+					["coords"] = {
+						{ 41.0, 76.6, WESTFALL },
+						{ 42.6, 76.6, WESTFALL },
+						{ 42.8, 79.0, WESTFALL },
+					},
+					-- #endif
+					["groups"] = {
+						i(3902, {	-- Staff of Nobles
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						-- #if BEFORE 4.0.3
+						i(5967),	-- Girdle of Nobility
+						-- #endif
+					},
+				}),
+				n(626, {	-- Foreman Thistlenettle
+					["description"] = "This is a rare that is not always present.\n\nLocated in the cavern before the instance.",
+					["coord"] = { 42.2, 82.6, WESTFALL },
+					["groups"] = {
+						i(1875),	-- Thistlenettle's Badge
+						i(2167), 	-- Foreman's Gloves
+						i(2166), 	-- Foreman's Leggings
+						i(2168), 	-- Foreman's Boots [Classic] / Corpse Rompers [CATA+]
+					},
+				}),
+				n(599, {	-- Marisa du'Paige
+					["description"] = "This is a rare that is not always present.\n\nLocated in the cavern before the instance.",
+					-- #if BEFORE CATA
+					["coord"] = { 42.2, 79.9, WESTFALL },
+					-- #else
+					["coords"] = {
+						{ 52.8, 54.6, WESTFALL },
+						{ 56.2, 67.8, WESTFALL },
+						{ 41.4, 56.6, WESTFALL },
+						{ 29.6, 61.4, WESTFALL },
+					},
+					-- #endif
+					["groups"] = {
+						i(3019, {	-- Noble's Robe
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(4660, {	-- Walking Boots
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
+				}),
+			}),
+			n(ZONE_DROPS, {
+				i(10402, {	-- Blackened Defias Boots
+					["timeline"] = { "removed 4.0.3" },
+					["cr"] = 4416,	-- Defias Strip Miner
+				}),
+				i(10401, {	-- Blackened Defias Gloves
+					-- #if AFTER 4.0.3
+					["cr"] = 48421,	-- Defias Overseer
+					-- #else
+					["crs"] = {
+						634,	-- Defias Overseer
+						4417,	-- Defias Taskmaster
+					},
+					-- #endif
+				}),
+				i(10400, {	-- Blackened Defias Leggings
+					-- #if AFTER 4.0.3
+					["cr"] = 48421,	-- Defias Overseer
+					-- #else
+					["crs"] = {
+						634,	-- Defias Overseer
+						4417,	-- Defias Taskmaster
+					},
+					-- #endif
+				}),
+				i(1951, {	-- Blackwater Cutlass
+					-- #if AFTER 4.0.3
+					["crs"] = {
+						48522,	-- Defias Pirate
+						48521,	-- Defias Squallshaper
+					},
+					-- #else
+					["crs"] = {
+						657,	-- Defias Pirate
+						1732,	-- Defias Squallshaper
+					},
+					-- #endif
+				}),
+				-- #if BEFORE 4.0.3
+				i(1959, {	-- Cold Iron Pick
+					["cr"] = 623,	-- Skeletal Miner
+				}),
+				i(1927, {	-- Deadmines Cleaver
+					["cr"] = 594,	-- Defias Henchman
+				}),
+				-- #endif
+				i(1928, {	-- Defias Mage Staff
+					["timeline"] = { "removed 4.0.3" },
+					["cr"] = 1726,	-- Defias Magician
+				}),
+				i(1925, {	-- Defias Rapier
+					["timeline"] = { "removed 4.0.3" },
+					["cr"] = 1725,	-- Defias Watchman
+				}),
+				i(1943, {	-- Goblin Mail Leggings
+					["timeline"] = { "removed 4.0.3" },
+					["cr"] = 3947,	-- Goblin Shipbuilder
+				}),
+				i(1936, {	-- Goblin Screwdriver
+					["timeline"] = { "removed 4.0.3" },
+					["cr"] = 622,	-- Goblin Engineer
+				}),
+				i(1944, {	-- Metalworking Gloves
+					["timeline"] = { "removed 4.0.3" },
+					["cr"] = 1731,	-- Goblin Craftsman
+				}),
+				i(1894, {	-- Miners' Union Card
+					["crs"] = {
+						623,	-- Skeletal Miner
+						625,	-- Undead Dynamiter
+						624,	-- Undead Excavator
+					},
+				}),
+				i(8492, {	-- Parrot Cage (Green Wing Macaw)
+					-- #if AFTER 4.0.3
+					["crs"] = {
+						48417,	-- Defias Blood Wizard
+						48522,	-- Defias Pirate
+					},
+					-- #else
+					["cr"] = 657,	-- Defias Pirate
+					-- #endif
+				}),
+				i(1958, {	-- Petrified Shinbone
+					-- #if AFTER LEGION
+					["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+					-- #endif
+					["cr"] = 625,	-- Undead Dynamiter
+				}),
+				i(7997, {	-- Red Defias Mask
+					-- #if BEFORE CATA
+					["description"] = "Can drop in Westfall and The Deadmines. Rogues typically keep this mask for appearance sets.",
+					-- #endif
+				}),
+				i( 915),	-- Red Silk Bandana
+				i(1929, {	-- Silk-threaded Trousers
+					-- #if AFTER 4.0.3
+					["crs"] = {
+						48417,	-- Defias Blood Wizard
+						48418,	-- Defias Envoker
+					},
+					-- #else
+					["crs"] = {
+						1729,	-- Defias Evoker
+						4418,	-- Defias Wizard
+					},
+					-- #endif
+				}),
+				i(4676, {	-- Skeletal Gauntlets
+					["cr"] = 624,	-- Undead Excavator
+				}),
+				i(1930, {	-- Stonemason Cloak
+					-- #if AFTER 4.0.3
+					["cr"] = 48419,	-- Defias Miner
+					-- #else
+					["cr"] = 598,	-- Defias Miner
+					-- #endif
+				}),
+				-- #if BEFORE 4.0.3
+				i(1934, {	-- Stonemason Trousers [Classic] / Hogger's Trousers [CATA+]
+					["cr"] = 636,	-- Defias Blackguard
+				}),
+				-- #endif
+				i(120138, {	-- Tome of Polymorph: Monkey
+					["spellID"] = 161354,	-- Polymorph (Monkey)
+					["timeline"] = { "added 6.0.2.18816" },
+					["classes"] = { MAGE },
+					["crs"] = {
+						48278,	-- Mining Monkey
+						48440,	-- Mining Monkey
+						48441,	-- Mining Monkey
+						48442,	-- Mining Monkey
+					},
+				}),
+				i(1926, {	-- Weighted Sap
+					-- #if AFTER 4.0.3
+					["cr"] = 48420,	-- Defias Digger
+					-- #else
+					["cr"] = 824,	-- Defias Digger
+					-- #endif
+				}),
+				i(6994, {	-- Whitestone Oak Lumber
+					["cr"] = 641,	-- Goblin Woodcarver
+				}),
+				i(1945, {	-- Woodworking Gloves
+					["timeline"] = { "removed 4.0.3" },
+					["cr"] = 641,	-- Goblin Woodcarver
+				}),
+			}),
 			-- #if AFTER CATA
 			d(1, {	-- Normal
 			-- #endif
-				n(ZONE_DROPS, {
-					i(10402, {	-- Blackened Defias Boots
-						["timeline"] = { "removed 4.0.3" },
-						["cr"] = 4416,	-- Defias Strip Miner
-					}),
-					i(10401, {	-- Blackened Defias Gloves
-						-- #if AFTER 4.0.3
-						["cr"] = 48421,	-- Defias Overseer
-						-- #else
-						["crs"] = {
-							634,	-- Defias Overseer
-							4417,	-- Defias Taskmaster
-						},
-						-- #endif
-					}),
-					i(10400, {	-- Blackened Defias Leggings
-						-- #if AFTER 4.0.3
-						["cr"] = 48421,	-- Defias Overseer
-						-- #else
-						["crs"] = {
-							634,	-- Defias Overseer
-							4417,	-- Defias Taskmaster
-						},
-						-- #endif
-					}),
-					i(1951, {	-- Blackwater Cutlass
-						-- #if AFTER 4.0.3
-						["crs"] = {
-							48522,	-- Defias Pirate
-							48521,	-- Defias Squallshaper
-						},
-						-- #else
-						["crs"] = {
-							657,	-- Defias Pirate
-							1732,	-- Defias Squallshaper
-						},
-						-- #endif
-					}),
+				n(3586, {	-- Miner Johnson
+					["description"] = "This is a rare that is not always present.",
+					["timeline"] = { "removed 4.0.3" },
 					-- #if BEFORE 4.0.3
-					i(1959, {	-- Cold Iron Pick
-						["cr"] = 623,	-- Skeletal Miner
-					}),
-					i(1927, {	-- Deadmines Cleaver
-						["cr"] = 594,	-- Defias Henchman
-					}),
+					["groups"] = {
+						i(5443),	-- Gold-plated Buckler
+						i(5444),	-- Miner's Cape
+					},
 					-- #endif
-					i(1928, {	-- Defias Mage Staff
-						["timeline"] = { "removed 4.0.3" },
-						["cr"] = 1726,	-- Defias Magician
-					}),
-					i(1925, {	-- Defias Rapier
-						["timeline"] = { "removed 4.0.3" },
-						["cr"] = 1725,	-- Defias Watchman
-					}),
-					i(1943, {	-- Goblin Mail Leggings
-						["timeline"] = { "removed 4.0.3" },
-						["cr"] = 3947,	-- Goblin Shipbuilder
-					}),
-					i(1936, {	-- Goblin Screwdriver
-						["timeline"] = { "removed 4.0.3" },
-						["cr"] = 622,	-- Goblin Engineer
-					}),
-					i(1944, {	-- Metalworking Gloves
-						["timeline"] = { "removed 4.0.3" },
-						["cr"] = 1731,	-- Goblin Craftsman
-					}),
-					i(1894, {	-- Miners' Union Card
-						["crs"] = {
-							623,	-- Skeletal Miner
-							625,	-- Undead Dynamiter
-							624,	-- Undead Excavator
-						},
-					}),
-					i(8492, {	-- Parrot Cage (Green Wing Macaw)
-						-- #if AFTER 4.0.3
-						["crs"] = {
-							48417,	-- Defias Blood Wizard
-							48522,	-- Defias Pirate
-						},
-						-- #else
-						["cr"] = 657,	-- Defias Pirate
-						-- #endif
-					}),
-					i(1958, {	-- Petrified Shinbone
-						-- #if AFTER LEGION
-						["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
-						-- #endif
-						["cr"] = 625,	-- Undead Dynamiter
-					}),
-					i(7997, {	-- Red Defias Mask
-						-- #if BEFORE CATA
-						["description"] = "Can drop in Westfall and The Deadmines. Rogues typically keep this mask for appearance sets.",
-						-- #endif
-					}),
-					i( 915),	-- Red Silk Bandana
-					i(1929, {	-- Silk-threaded Trousers
-						-- #if AFTER 4.0.3
-						["crs"] = {
-							48417,	-- Defias Blood Wizard
-							48418,	-- Defias Envoker
-						},
-						-- #else
-						["crs"] = {
-							1729,	-- Defias Evoker
-							4418,	-- Defias Wizard
-						},
-						-- #endif
-					}),
-					i(4676, {	-- Skeletal Gauntlets
-						["cr"] = 624,	-- Undead Excavator
-					}),
-					i(1930, {	-- Stonemason Cloak
-						-- #if AFTER 4.0.3
-						["cr"] = 48419,	-- Defias Miner
-						-- #else
-						["cr"] = 598,	-- Defias Miner
-						-- #endif
-					}),
-					-- #if BEFORE 4.0.3
-					i(1934, {	-- Stonemason Trousers [Classic] / Hogger's Trousers [CATA+]
-						["cr"] = 636,	-- Defias Blackguard
-					}),
-					-- #endif
-					i(120138, {	-- Tome of Polymorph: Monkey
-						["spellID"] = 161354,	-- Polymorph (Monkey)
-						["timeline"] = { "added 6.0.2.18816" },
-						["classes"] = { MAGE },
-						["crs"] = {
-							48278,	-- Mining Monkey
-							48440,	-- Mining Monkey
-							48441,	-- Mining Monkey
-							48442,	-- Mining Monkey
-						},
-					}),
-					i(1926, {	-- Weighted Sap
-						-- #if AFTER 4.0.3
-						["cr"] = 48420,	-- Defias Digger
-						-- #else
-						["cr"] = 824,	-- Defias Digger
-						-- #endif
-					}),
-					i(6994, {	-- Whitestone Oak Lumber
-						["cr"] = 641,	-- Goblin Woodcarver
-					}),
-					i(1945, {	-- Woodworking Gloves
-						["timeline"] = { "removed 4.0.3" },
-						["cr"] = 641,	-- Goblin Woodcarver
-					}),
-				}),
-				n(RARES, {
-					n(596, {	-- Brainwashed Noble
-						["description"] = "This is a rare that is not always present.\n\nLocated in the cavern before the instance.",
-						-- #if BEFORE CATA
-						["coord"] = { 44.0, 78.3, WESTFALL },
-						-- #else
-						["coords"] = {
-							{ 41.0, 76.6, WESTFALL },
-							{ 42.6, 76.6, WESTFALL },
-							{ 42.8, 79.0, WESTFALL },
-						},
-						-- #endif
-						["groups"] = {
-							i(3902, {	-- Staff of Nobles
-								["timeline"] = { "removed 4.0.3" },
-							}),
-							-- #if BEFORE 4.0.3
-							i(5967),	-- Girdle of Nobility
-							-- #endif
-						},
-					}),
-					n(626, {	-- Foreman Thistlenettle
-						["description"] = "This is a rare that is not always present.\n\nLocated in the cavern before the instance.",
-						["coord"] = { 42.2, 82.6, WESTFALL },
-						["groups"] = {
-							i(1875),	-- Thistlenettle's Badge
-							i(2167), 	-- Foreman's Gloves
-							i(2166), 	-- Foreman's Leggings
-							i(2168), 	-- Foreman's Boots [Classic] / Corpse Rompers [CATA+]
-						},
-					}),
-					n(599, {	-- Marisa du'Paige
-						["description"] = "This is a rare that is not always present.\n\nLocated in the cavern before the instance.",
-						-- #if BEFORE CATA
-						["coord"] = { 42.2, 79.9, WESTFALL },
-						-- #else
-						["coords"] = {
-							{ 52.8, 54.6, WESTFALL },
-							{ 56.2, 67.8, WESTFALL },
-							{ 41.4, 56.6, WESTFALL },
-							{ 29.6, 61.4, WESTFALL },
-						},
-						-- #endif
-						["groups"] = {
-							i(3019, {	-- Noble's Robe
-								["timeline"] = { "removed 4.0.3" },
-							}),
-							i(4660, {	-- Walking Boots
-								["timeline"] = { "removed 4.0.3" },
-							}),
-						},
-					}),
-					n(3586, {	-- Miner Johnson
-						["description"] = "This is a rare that is not always present.",
-						["timeline"] = { "removed 4.0.3" },
-						-- #if BEFORE 4.0.3
-						["groups"] = {
-							i(5443),	-- Gold-plated Buckler
-							i(5444),	-- Miner's Cape
-						},
-						-- #endif
-					}),
 				}),
 				n(644, {	-- Rhahk'Zor <The Foreman>
 					["timeline"] = { "removed 4.0.3" },
@@ -587,7 +587,9 @@ root("Instances", tier(CLASSIC_TIER, {
 							-- #endif
 						})),
 						-- #endif
-						i(2874),	-- An Unsent Letter
+						i(2874, {	-- An Unsent Letter
+							["timeline"] = { "deleted 4.0.3" },
+						}),
 						i(3637),	-- Head of VanCleef
 						-- #if BEFORE 4.0.3
 						i(5191),	-- Cruel Barb

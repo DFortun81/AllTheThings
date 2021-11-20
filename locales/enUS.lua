@@ -2274,7 +2274,7 @@ app.L = {
 		["Onyxia's Lair"] = 248,
 		["The Trial of Style"] = -777,
 		["Razorfen Downs"] = 300,
-		["The Deadmines"] = 291,
+		[C_Map.GetAreaInfo(1581)] = 291,	-- "The Deadmines" now points to the Deadmines.
 		[C_Map.GetAreaInfo(3217)] = 234,	-- "The Maul" now points to Dire Maul.
 		[C_Map.GetAreaInfo(4992)] = 234,	-- "Broken Commons" now points to Dire Maul.
 	};
