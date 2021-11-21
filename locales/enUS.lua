@@ -227,6 +227,7 @@ app.L = {
 	["REQUIRES_PETBATTLES"] = "|CFF00FFDEThis Thing requires Pet Battling.|r";
 	["REPORT_INACCURATE_QUEST"] = "Wrong Quest Info! (Click to Report)";
 	["NESTED_QUEST_REQUIREMENTS"] = "Nested Quest Requirements";
+	["MAIN_LIST_REQUIRES_REFRESH"] = "[Open Main list to update progress]";
 
 	-- Item Filter Window
 	["ITEM_FILTER_TEXT"] = "Item Filters";

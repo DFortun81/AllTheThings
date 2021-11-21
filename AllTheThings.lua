@@ -12953,8 +12953,8 @@ local function MinimapButtonOnEnter(self)
 	local reference = app:GetDataCache();
 	GameTooltip:SetOwner(self, "ANCHOR_LEFT");
 	GameTooltip:ClearLines();
-	GameTooltip:AddDoubleLine(L["TITLE"], GetProgressColorText(reference.progress, reference.total));
-	GameTooltip:AddDoubleLine(app.Settings:GetModeString(), app.GetNumberOfItemsUntilNextPercentage(reference.progress, reference.total), 1, 1, 1);
+	GameTooltip:AddDoubleLine(reference.text, GetProgressColorText(reference.progress, reference.total));
+	GameTooltip:AddDoubleLine(reference.mb_title1, reference.mb_title2, 1, 1, 1);
 	GameTooltip:AddLine(L["DESCRIPTION"], 0.4, 0.8, 1, 1);
 	GameTooltip:AddLine(L["MINIMAP_MOUSEOVER_TEXT"], 1, 1, 1);
 	GameTooltip:Show();
@@ -15211,8 +15211,10 @@ function app:GetDataCache()
 		allData = setmetatable({}, {
 			__index = function(t, key)
 				if key == "title" then
-					return app.Settings:GetModeString() .. DESCRIPTION_SEPARATOR .. app.GetNumberOfItemsUntilNextPercentage(t.progress, t.total);
+					return t.mb_title1..DESCRIPTION_SEPARATOR..t.mb_title2;
 				end
+				if key == "mb_title1" then return app.Settings:GetModeString(); end
+				if key == "mb_title2" then return t.total == 0 and L["MAIN_LIST_REQUIRES_REFRESH"] or app.GetNumberOfItemsUntilNextPercentage(t.progress, t.total); end
 			end
 		});
 		allData.expanded = true;
