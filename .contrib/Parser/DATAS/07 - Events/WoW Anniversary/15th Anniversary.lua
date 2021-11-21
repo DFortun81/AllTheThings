@@ -676,7 +676,7 @@ root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 				ach(13931, {	-- Memories of Fel, Frost and Fire
 					i(172012),	-- Obsidian Worldbreaker (MOUNT!)
 				}),
-				n(TBC_HEADER, {
+				tier(TBC_TIER, {
 					e(1572, {	-- Lady Vashj
 						["cr"] = 21212,	-- Lady Vashj
 						["g"] = {
@@ -791,7 +791,7 @@ root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 						},
 					}),
 				}),
-				n(WRATH_HEADER, {
+				tier(WOTLK_TIER, {
 					e(1605, {	-- Heigan the Unclean
 						["cr"] = 15936,	-- Heigan the Unclean
 						["g"] = {
@@ -1080,7 +1080,7 @@ root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 						},
 					}),
 				}),
-				n(CATA_HEADER,  {
+				tier(CATA_TIER,  {
 					e(167, {	-- Cho'gall
 						["cr"] = 43324,
 						["g"] = {

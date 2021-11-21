@@ -684,7 +684,7 @@ _.HiddenQuestTriggers = {
 };
 
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(SL_HEADER, {
+	tier(SL_TIER, {
 		f(55, {		-- Consumables
 			i(185974),	-- Bahmeht Chain Link (PTR only)
 		}),

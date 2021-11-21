@@ -478,7 +478,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(25506),	-- Sea-Food Chain
 		
 	}),
-	n(CATA_HEADER, {
+	tier(CATA_TIER, {
 		n(WEAPONS, {
 			i(54554),	-- Bejeweled Ship's Wheel
 			i(54553),	-- Kliklak's Fearsome Greatsword (never made it to live)

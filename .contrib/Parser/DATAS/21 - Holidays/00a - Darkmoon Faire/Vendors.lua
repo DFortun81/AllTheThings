@@ -1155,7 +1155,7 @@ _.Holidays =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(MOP_HEADER, {
+	tier(MOP_TIER, {
 		m(407, {	-- Darkmoon Island
 			-- Unused T0 Replica
 			cl(DRUID, {

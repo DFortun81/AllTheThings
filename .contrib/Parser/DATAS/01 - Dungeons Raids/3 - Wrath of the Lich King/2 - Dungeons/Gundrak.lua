@@ -308,7 +308,7 @@ _.Instances = { tier(WOTLK_TIER, {
 	}),
 })};
 _.HiddenQuestTriggers = {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		q(35475),	-- Gundrak Reward Quest - Normal completion
 		q(35476),	-- Gundrak Reward Quest - Heroic completion
 		q(35477),	-- Gundrak Bonus Objective - kill Eck the Ferocious (Heroic only)

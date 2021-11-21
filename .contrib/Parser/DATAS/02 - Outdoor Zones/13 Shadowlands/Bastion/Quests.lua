@@ -1070,7 +1070,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(62895),	-- Track Selection
 		q(62896),	-- Track Selection
 	}),
-	n(SL_HEADER, {
+	tier(SL_TIER, {
 		n(-163, {	-- Armor
 			n(-43, {	-- Cloth
 				i(175608),	-- Pure Aspirant's Robe

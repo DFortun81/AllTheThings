@@ -213,7 +213,7 @@ _.Instances = { tier(WOTLK_TIER, {
 	}),
 })};
 _.HiddenQuestTriggers = {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		q(35513),	-- The Nexus - Reward Quest - Normal completion
 		q(35514),	-- The Nexus - Reward Quest - Heroic completion
 		q(35515),	-- The Nexus - Bonus Objective Reward Quest - kill Commander Stoutbeard (A) / Commander Kolurg (H) (Heroic only)

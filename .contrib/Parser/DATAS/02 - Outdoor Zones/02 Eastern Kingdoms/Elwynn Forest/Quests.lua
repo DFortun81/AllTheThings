@@ -362,7 +362,7 @@ _.Zones =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		n(QUESTS, {
 			q(33425),	-- Blue/Yellow Sprint 15 INTERNAL REPEATABLE
 			q(33428),	-- Elwynn Forest Racing

@@ -334,7 +334,7 @@ _.Zones =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		n(WEAPONS, {
 			i(107644),	-- Napmaster's Sleep Mask
 		}),

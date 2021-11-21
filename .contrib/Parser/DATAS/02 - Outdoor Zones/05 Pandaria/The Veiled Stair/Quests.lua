@@ -29,7 +29,7 @@ _.Zones =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(MOP_HEADER, {
+	tier(MOP_TIER, {
 		n(WEAPONS, {
 			i(84527),	-- Hidden Pass Meditation Staff
 		}),

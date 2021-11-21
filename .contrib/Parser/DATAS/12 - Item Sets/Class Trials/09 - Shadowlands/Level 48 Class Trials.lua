@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root("GearSets", n(CLASS_TRIAL, {
-	n(SL_HEADER, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
+	tier(SL_TIER, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 		n(LEVEL_FOURTY_EIGHT, {
 			-- Note: [As of July 4, 2018 it's Boosted 110's as no 110 trial is available]
 			-- Note: [As of August 18th, 2018 110 trials have been implemented and use same itemID's as boosting]
@@ -394,7 +394,7 @@ root("GearSets", n(CLASS_TRIAL, {
 	})),
 }));
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(SL_HEADER, {
+	tier(SL_TIER, {
 		n(CLASS_TRIAL, {
 			cl(DEATHKNIGHT, {
 				-- added 9.0.1/No Info

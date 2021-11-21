@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root("GearSets", n(CLASS_TRIAL, {
-	n(LEGION_HEADER, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
+	tier(LEGION_TIER, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 		n(LEVEL_HUNDRED, {
 			-- Note: [As of August 16, 2018 Level 100 Boost became Level 100 Class Trial]
 			["description"] = "These were obtained by creating a Level 100 Class Trial for each class and specialization.",
@@ -377,7 +377,7 @@ root("GearSets", n(CLASS_TRIAL, {
 	})),
 }));
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(LEGION_HEADER, {
+	tier(LEGION_TIER, {
 		n(CLASS_TRIAL, {
 			cl(DEATHKNIGHT, {
 				-- added 7.2.5/No Info

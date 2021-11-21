@@ -100,7 +100,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 	}),
 })};
 _.HiddenQuestTriggers = {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		q(35606),	-- Scarlet Halls Reward Quest - Normal completion
 		q(35607),	-- Scarlet Halls - Bonus Objective Reward Quest - kill Armsmaster Harlan
 	}),

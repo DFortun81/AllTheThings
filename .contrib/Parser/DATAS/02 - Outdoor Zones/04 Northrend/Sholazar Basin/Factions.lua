@@ -272,7 +272,7 @@ _.Zones =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(WRATH_HEADER, {
+	tier(WOTLK_TIER, {
 		n(-163, {	-- Armor
 			f(53,	{	-- Trinket
 				i(44869),	-- Frenzyheart Insignia of Fury

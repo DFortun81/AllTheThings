@@ -1204,7 +1204,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						i(50992),	-- Waistband of Despair
 					},
 					["sym"] = {
-						{"sub", "pvp_gear_base", WRATH_HEADER, SEASON_RELENTLESS, PVP_GLADIATOR },
+						{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_RELENTLESS, PVP_GLADIATOR },
 						{"pop"},	-- Discard the Set header and acquire the children.
 						{"exclude", "headerID", NECK, FINGER, -386, BACK, WRIST, WAIST, FEET, WEAPONS },	-- Exclude Neck, Finger, Trinkets, Back, Wrist, Waist, Feet and Weapons
 					},
@@ -3898,7 +3898,7 @@ _.Instances = { tier(WOTLK_TIER, {
 	}),
 })};
 _.HiddenQuestTriggers = {
-	n(WRATH_HEADER, {
+	tier(WOTLK_TIER, {
 		q(24808),	-- Tank Ring Flag - doing "A Change of Heart" in ICC and choosing strength ring
 		q(24809),	-- Healer Ring Flag - doing "A Change of Heart" in ICC and choosing intellect haste/versa ring
 		q(24810),	-- Melee Ring Flag - doing "A Change of Heart" in ICC and choosing agility ring
@@ -3906,7 +3906,7 @@ _.HiddenQuestTriggers = {
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(WRATH_HEADER, {
+	tier(WOTLK_TIER, {
 		inst(758, {
 			-- Most sets was added 4.0.1
 			cl(DEATHKNIGHT, {

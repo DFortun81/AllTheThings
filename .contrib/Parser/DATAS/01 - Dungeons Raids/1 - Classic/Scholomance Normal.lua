@@ -476,7 +476,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 	}),
 })};
 _.HiddenQuestTriggers = {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		q(35594),	-- Scholomance Reward Quest - Normal completion
 	}),
 };

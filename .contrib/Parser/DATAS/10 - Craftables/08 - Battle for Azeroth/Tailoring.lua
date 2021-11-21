@@ -169,7 +169,7 @@ _.Craftables =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(BFA_HEADER, {
+	tier(BFA_TIER, {
 		prof(TAILORING, {
 			i(154698),	-- Tidespray Linen Cloak of the Feather (Doesnt load ingame)
 			i(154701),	-- Tidespray Linen Cloak of Resilience (Doesnt load ingame)

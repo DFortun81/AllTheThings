@@ -543,7 +543,7 @@ _.Zones =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(CATA_HEADER, {
+	tier(CATA_TIER, {
 		n(WEAPONS, {
 			i(52969),	-- Heartache Dagger	-- 52965 got added
 		}),

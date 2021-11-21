@@ -305,7 +305,7 @@ _.Instances = { tier(WOTLK_TIER, {
 	}),
 })};
 _.HiddenQuestTriggers = {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		q(35478),	-- The Violet Hold Reward Quest - Normal completion
 		q(35480),	-- The Violet Hold Reward Quest - Heroic completion
 	}),

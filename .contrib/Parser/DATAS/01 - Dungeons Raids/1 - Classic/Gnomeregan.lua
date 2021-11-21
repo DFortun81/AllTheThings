@@ -399,7 +399,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 	}),
 })};
 _.HiddenQuestTriggers = {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		q(35601),	-- Gnomeregan Reward Quest - Normal completion
 		q(35602),	-- Gnomeregan Bonus Objective Reward Quest - kill Grubbis
 	}),

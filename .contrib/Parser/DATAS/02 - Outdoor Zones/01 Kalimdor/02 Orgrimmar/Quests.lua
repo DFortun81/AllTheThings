@@ -1375,7 +1375,7 @@ _.Zones =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(CATA_HEADER, {
+	tier(CATA_TIER, {
 		n(-163, {	-- Armor
 			f(51,	{	-- Neck
 				i(49314),	-- Sparkling Onyxia Tooth Pendant

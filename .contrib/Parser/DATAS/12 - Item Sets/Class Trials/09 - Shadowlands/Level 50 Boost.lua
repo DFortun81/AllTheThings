@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root("GearSets", n(CLASS_TRIAL, {
-	n(SL_HEADER, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
+	tier(SL_TIER, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 		n(LEVEL_FIFTY_BOOST, {
 			-- Note: [As of October 13th, 2020 Level 120 Boost became Level 50 Boost]
 			-- Note: [As of November 11th, 2021 SL Character boost increased from 50 to 60. Some of the old 50 items went to the new class trial level 50]
@@ -367,7 +367,7 @@ root("GearSets", n(CLASS_TRIAL, {
 }));
 --[[ There exist a lvl 60 boost now
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(SL_HEADER, {
+	tier(SL_TIER, {
 		n(CLASS_TRIAL, {
 			cl(WARLOCK, {
 				-- Lv50 Boost Gear. Not added by blizzard yet.

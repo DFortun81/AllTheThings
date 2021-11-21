@@ -479,7 +479,7 @@ _.HiddenQuestTriggers = {
 };
 
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(SL_HEADER, {
+	tier(SL_TIER, {
 		n(-494, {	-- Misc
 			i(187137),	-- Research Report: Relic Finding Techniques (this effect is now granted from a spell learned from quest 64368)
 		}),

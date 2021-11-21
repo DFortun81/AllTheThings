@@ -220,7 +220,7 @@ _.Instances = { tier(WOTLK_TIER, {
 	}),
 })};
 _.HiddenQuestTriggers = {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		q(35441),	-- Halls of Reflection Reward Quest - Normal completion
 		q(35442),	-- Halls of Reflection Reward Quest - Heroic completion
 	}),

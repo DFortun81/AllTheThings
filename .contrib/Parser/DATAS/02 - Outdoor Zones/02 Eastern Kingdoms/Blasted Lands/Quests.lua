@@ -879,7 +879,7 @@ _.Zones =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		n(QUESTS, {
 			q(35499),	-- Blow up towers
 		}),

@@ -1090,7 +1090,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(60138),	-- Unlocking the Gates
 		q(60559),	-- Unused
 	}),
-	n(SL_HEADER, {
+	tier(SL_TIER, {
 		n(-163, {	-- Armor
 			n(-43, {	-- Cloth
 				i(175679),	-- Oribos Quest Cloth Robe

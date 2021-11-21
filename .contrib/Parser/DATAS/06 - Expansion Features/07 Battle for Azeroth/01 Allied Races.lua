@@ -1694,7 +1694,7 @@ _.ExpansionFeatures =
 
 
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(BFA_HEADER, {
+	tier(BFA_TIER, {
 		n(-254, {	-- Heritage Armor
 			i(174354),	-- Vulpera Heritage Footwraps
 			i(174355),	-- Vulpera Heritage Wristwraps

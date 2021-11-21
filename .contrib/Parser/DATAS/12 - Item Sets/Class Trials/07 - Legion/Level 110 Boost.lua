@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root("GearSets", n(CLASS_TRIAL, {
-	n(LEGION_HEADER, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
+	tier(LEGION_TIER, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 		n(LEVEL_HUNDRED_TEN, {
 			-- Note: [As of July 4, 2018 it's Boosted 110's as no 110 trial is available]
 			-- Note: [As of August 18th, 2018 110 trials have been implemented and use same itemID's as boosting]
@@ -12,7 +12,7 @@ root("GearSets", n(CLASS_TRIAL, {
 			["sym"] = {
 				{"select", "headerID", CLASS_TRIAL},
 				{"pop"},
-				{"where", "headerID", SL_HEADER},
+				{"where", "tierID", SL_TIER},
 				{"pop"},
 				{"where", "headerID", LEVEL_FOURTY_EIGHT },
 				{"pop"},

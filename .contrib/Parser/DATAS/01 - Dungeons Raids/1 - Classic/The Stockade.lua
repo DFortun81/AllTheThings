@@ -303,7 +303,7 @@ root("Instances", tier(CLASSIC_TIER, {
 }));
 -- #if AFTER 6.0.1
 root("HiddenQuestTriggers", {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		q(35288),	-- Stockade Reward Quest - Normal completion
 	}),
 });

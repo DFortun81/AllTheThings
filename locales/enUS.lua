@@ -1468,18 +1468,11 @@ app.L = {
 	------ ACHIEVEMENT HEADER SECTION ------
 	-- Is Used Somewhere
 		[-9965] = "Interface\\Icons\\achievement_level_110",						-- Class Hall
-		[-9979] = app.asset("Expansion_CATA"),										-- Cataclysm
-		[-9981] = app.asset("Expansion_WOD"),										-- Draenor
-		[-9982] = app.asset("Expansion_LEGION"),									-- Legion
 		[-9983] = "Interface\\Icons\\Paladin_Protection",							-- Honor
-		[-10003] = app.asset("Expansion_TBC"),										-- The Burning Crusade
-		[-10014] = app.asset("Expansion_WOTLK"),									-- Wrath of the Lich King
-		[-10041] = app.asset("Expansion_MOP"),										-- Mists of Pandaria
 		[-10044] = app.asset("Category_D&R"),										-- Raids
 		[-10045] = "Interface\\Icons\\Paladin_Protection",							-- Currencies
 		[-10048] = "Interface\\Icons\\buff_feltreasures",							-- Mage Tower
 		[-10050] = "Interface\\Icons\\buff_epichunter",								-- Nether Disruptor
-		[-10052] = app.asset("Expansion_BFA"),										-- Battle for Azeroth
 		[-10057] = "Interface\\Icons\\Ability_Warrior_OffensiveStance",				-- War Effort
 		[-10058] = "Interface\\Icons\\Paladin_Protection",							-- World
 		[-10059] = "Interface\\Icons\\pandarenracial_innerpeace",					-- Pandaria Scenarios
@@ -1500,7 +1493,6 @@ app.L = {
 		[-10082] = "Interface\\Icons\\spell_priest_psyfiend",						-- Lost Area (Vision Scenario)
 	-- 9.1
 		[-10083] = "236373",														-- Covenant Assaults
-		[-10100] = app.asset("Expansion_SL"),										-- Shadowlands
 	--	hopefully temp custom NPCs, these objects do not have data on wowhead atm
 		[-1433951] = "3854020",															-- Broken Mirror
 		[-1433952] = "3854020",															-- Broken Mirror
@@ -2156,37 +2148,17 @@ app.L = {
 		[-9951] = GetSpellInfo(148462).." & "..GetSpellInfo(137031), 			-- Discipline / Holy Priest Spec
 		[-9952] = GetSpellInfo(234890).." & "..GetSpellInfo(137011), 			-- Guardian / Feral Druid Spec
 	------ ACHIEVEMENT HEADER SECTION ------
-		[-9961] = TUTORIAL_TITLE16,												-- Reputation
 		[-9965] = select(1,GetCategoryInfo(15304)),								-- Class Hall
 		[-9966] = select(1,GetCategoryInfo(15303)),								-- Draenor Garrison
-		[-9969] = select(1,GetCategoryInfo(81)),								-- Feats of Strength
-		[-9975] = POSTMASTER_PIPE_EASTERNKINGDOMS,								-- Eastern Kingdoms
-		[-9976] = POSTMASTER_PIPE_KALIMDOR,										-- Kalimdor
-		[-9977] = POSTMASTER_PIPE_OUTLAND,										-- Outland
-		[-9978] = POSTMASTER_PIPE_NORTHREND,									-- Northrend
-		[-9979] = EXPANSION_NAME3,												-- Cataclysm
-		[-9980] = POSTMASTER_PIPE_PANDARIA,										-- Pandaria
-		[-9981] = POSTMASTER_PIPE_DRAENOR,										-- Draenor
-		[-9982] = EXPANSION_NAME6,												-- Legion
 		[-9983] = HONOR,														-- Honor
-		[-9986] = select(1,GetCategoryInfo(14803)),								-- Eye of the Storm
-		[-9987] = select(1,GetCategoryInfo(14801)),								-- Alterac Valley
-		[-10002] = select(1,GetCategoryInfo(14808)),							-- Classic
-		[-10003] = EXPANSION_NAME1,												-- The Burning Crusade
-		[-10014] = EXPANSION_NAME2,												-- Wrath of the Lich King
-		[-10041] = EXPANSION_NAME4,												-- Mists of Pandaria
 		[-10044] = RAIDS,														-- Raids
 		[-10045] = select(1,GetCategoryInfo(15280)),							-- Currencies
 		[-10048] = BROKENSHORE_BUILDING_MAGETOWER,								-- Mage Tower
-		[-10049] = BROKENSHORE_BUILDING_COMMANDCENTER,							-- Command Center
 		[-10050] = BROKENSHORE_BUILDING_NETHERDISRUPTOR,						-- Nether Disruptor
-		[-10052] = EXPANSION_NAME7,												-- Battle for Azeroth
 		[-10057] = select(1,GetCategoryInfo(15308)),							-- War Effort
 		[-10058] = WORLD,														-- World
 		[-10059] = select(1,GetCategoryInfo(15302)),							-- Pandaria Scenarios
 		[-10061] = select(2,GetAchievementInfo(7333)),							-- The Four Celestials
-		-- If we ever need them they need a new number
-		--[-10061] = BATTLE_PET_BREED_QUALITY1,									-- "Poor";
 	-- 8.3
 		[-10066] = BATTLE_PET_BREED_QUALITY6,									-- "Legendary";
 		[-10067] = ITEM_QUALITY6_DESC, 											-- Artifact
@@ -2203,8 +2175,6 @@ app.L = {
 		[-10080] = SPLASH_BATTLEFORAZEROTH_8_3_0_FEATURE1_TITLE,				-- Horrific Visions
 		[-10081] = "Corrupted Area",
 		[-10082] = "Lost Area",
-	-- Shadowlands Achievement Header
-		[-10100] = EXPANSION_NAME8,												-- Shadowlands
 	-- 9.1
 		[-10083] = "Covenant Assaults",											-- Covenant Assaults
 	--	hopefully temp objects, these currently do not have accessible object data on wowhead

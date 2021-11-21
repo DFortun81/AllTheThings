@@ -391,7 +391,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 	}),
 })};
 _.HiddenQuestTriggers = {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		q(36866),	-- Lower Blackrock Spires Reward Quest - Normal completion
 		q(36867),	-- Lower Blackrock Spires Bonus Reward Quest — kill Urok Doomhowl
 	}),

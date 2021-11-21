@@ -446,7 +446,7 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 }));
 -- #endif
 _.HiddenQuestTriggers = {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		q(35546),	-- Mana Tombs Reward Quest - Normal completion
 		q(35547),	-- Mana Tombs Reward Quest - Heroic completion
 		q(35548),	-- Mana-Tombs Bonus Objective - kill Yor

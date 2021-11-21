@@ -2554,34 +2554,34 @@ end
 (function()
 local subroutines;
 subroutines = {
-	["pvp_gear_base"] = function(headerID1, headerID2, headerID3)
+	["pvp_gear_base"] = function(tierID, headerID1, headerID2)
 		return {
-			{"select", "headerID", headerID1 },	-- Select the Expansion header
+			{"select", "tierID", tierID },	-- Select the Expansion header
 			{"pop"},	-- Discard the Expansion header and acquire the children.
-			{"where", "headerID", headerID2 },	-- Select the Season header
+			{"where", "headerID", headerID1 },	-- Select the Season header
 			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "headerID", headerID3 },	-- Select the Set header
+			{"where", "headerID", headerID2 },	-- Select the Set header
 		};
 	end,
-	["pvp_gear_faction_base"] = function(headerID1, headerID2, headerID3, headerID4)
+	["pvp_gear_faction_base"] = function(tierID, headerID1, headerID2, headerID3)
 		return {
-			{"select", "headerID", headerID1 },	-- Select the Expansion header
+			{"select", "tierID", tierID },	-- Select the Expansion header
 			{"pop"},	-- Discard the Expansion header and acquire the children.
-			{"where", "headerID", headerID2 },	-- Select the Season header
+			{"where", "headerID", headerID1 },	-- Select the Season header
 			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "headerID", headerID3 },	-- Select the Faction header
+			{"where", "headerID", headerID2 },	-- Select the Faction header
 			{"pop"},	-- Discard the Faction header and acquire the children.
-			{"where", "headerID", headerID4 },	-- Select the Set header
+			{"where", "headerID", headerID3 },	-- Select the Set header
 		};
 	end,
 	-- Set Gear
-	["pvp_set_ensemble"] = function(headerID1, headerID2, headerID3, classID)
+	["pvp_set_ensemble"] = function(tierID, headerID1, headerID2, classID)
 		return {
-			{"select", "headerID", headerID1 },	-- Select the Expansion header
+			{"select", "tierID", tierID },	-- Select the Expansion header
 			{"pop"},	-- Discard the Expansion header and acquire the children.
-			{"where", "headerID", headerID2 },	-- Select the Season header
+			{"where", "headerID", headerID1 },	-- Select the Season header
 			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "headerID", headerID3 },	-- Select the Set header
+			{"where", "headerID", headerID2 },	-- Select the Set header
 			{"pop"},	-- Discard the Set header and acquire the children.
 			{"where", "classID", classID },	-- Select all the class header.
 			{"pop"},	-- Discard the class header and acquire the children.
@@ -2589,15 +2589,15 @@ subroutines = {
 			{"is", "s"},	-- If it has a sourceID, keep it, otherwise throw it away.
 		};
 	end,
-	["pvp_set_faction_ensemble"] = function(headerID1, headerID2, headerID3, headerID4, classID)
+	["pvp_set_faction_ensemble"] = function(tierID, headerID1, headerID2, headerID3, classID)
 		return {
-			{"select", "headerID", headerID1 },	-- Select the Expansion header
+			{"select", "tierID", tierID },	-- Select the Expansion header
 			{"pop"},	-- Discard the Expansion header and acquire the children.
-			{"where", "headerID", headerID2 },	-- Select the Season header
+			{"where", "headerID", headerID1 },	-- Select the Season header
 			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "headerID", headerID3 },	-- Select the Faction header
+			{"where", "headerID", headerID2 },	-- Select the Faction header
 			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "headerID", headerID4 },	-- Select the Set header
+			{"where", "headerID", headerID3 },	-- Select the Set header
 			{"pop"},	-- Discard the Set header and acquire the children.
 			{"where", "classID", classID },	-- Select all the class header.
 			{"pop"},	-- Discard the class header and acquire the children.
@@ -2606,13 +2606,13 @@ subroutines = {
 		};
 	end,
 	-- Weapons
-	["pvp_weapons_ensemble"] = function(headerID1, headerID2, headerID3)
+	["pvp_weapons_ensemble"] = function(tierID, headerID1, headerID2)
 		return {
-			{"select", "headerID", headerID1 },	-- Select the Expansion header
+			{"select", "tierID", tierID },	-- Select the Expansion header
 			{"pop"},	-- Discard the Expansion header and acquire the children.
-			{"where", "headerID", headerID2 },	-- Select the Season header
+			{"where", "headerID", headerID1 },	-- Select the Season header
 			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "headerID", headerID3 },	-- Select the Set header
+			{"where", "headerID", headerID2 },	-- Select the Set header
 			{"pop"},	-- Discard the Set header and acquire the children.
 			{"where", "headerID", -319 },	-- Select the "Weapons" header.
 			{"pop"},	-- Discard the class header and acquire the children.
@@ -2620,15 +2620,15 @@ subroutines = {
 			{"is", "s"},	-- If it has a sourceID, keep it, otherwise throw it away.
 		};
 	end,
-	["pvp_weapons_faction_ensemble"] = function(headerID1, headerID2, headerID3, headerID4)
+	["pvp_weapons_faction_ensemble"] = function(tierID, headerID1, headerID2, headerID3)
 		return {
-			{"select", "headerID", headerID1 },	-- Select the Expansion header
+			{"select", "tierID", tierID },	-- Select the Expansion header
 			{"pop"},	-- Discard the Expansion header and acquire the children.
-			{"where", "headerID", headerID2 },	-- Select the Season header
+			{"where", "headerID", headerID1 },	-- Select the Season header
 			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "headerID", headerID3 },	-- Select the Faction header
+			{"where", "headerID", headerID2 },	-- Select the Faction header
 			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "headerID", headerID4 },	-- Select the Set header
+			{"where", "headerID", headerID3 },	-- Select the Set header
 			{"pop"},	-- Discard the Set header and acquire the children.
 			{"where", "headerID", -319 },	-- Select the "Weapons" header.
 			{"pop"},	-- Discard the class header and acquire the children.

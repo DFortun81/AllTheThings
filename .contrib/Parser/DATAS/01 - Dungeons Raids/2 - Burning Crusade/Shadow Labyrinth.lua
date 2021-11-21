@@ -360,7 +360,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	}),
 })));
 _.HiddenQuestTriggers = {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		q(35519),	-- The Shadow Labyrinth Reward Quest - Normal completion
 		q(35520),	-- The Shadow Labyrinth Reward Quest - Heroic completion
 	}),

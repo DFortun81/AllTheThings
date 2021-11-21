@@ -372,7 +372,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	}),
 })));
 _.HiddenQuestTriggers = {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		q(35561),	-- The Slave Pens Reward Quest - Normal completion
 		q(35562),	-- The Slave Pens Reward Quest - Heroic completion
 	}),

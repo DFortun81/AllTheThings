@@ -448,7 +448,7 @@ _.Instances = { tier(LEGION_TIER, {
 	}),
 })};
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(LEGION_HEADER, {
+	tier(LEGION_TIER, {
 		n(-163, {	-- Armor
 			n(-43, {	-- Cloth
 				i(142214),	-- 7.1 Dungeon - Karazhan - Cloth SHOULDER 2

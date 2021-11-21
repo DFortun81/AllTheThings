@@ -242,7 +242,7 @@ _.Instances = { tier(WOTLK_TIER, {
 	}),
 })};
 _.HiddenQuestTriggers = {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		q(35472),	-- Culling of Stratholme Reward Quest - Normal completion
 		q(35474),	-- Culling of Stratholme Reward Quest - Heroic completion
 		q(35473),	-- Culling of Stratholme - Bonus Objective Reward - kill Infinite Corruptor (Heroic only)

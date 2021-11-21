@@ -179,7 +179,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 	}),
 })};
 _.HiddenQuestTriggers = {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		q(35885),	-- Maraudon (Wicked Grotto) Reward Quest - Normal completion
 		q(35886),	-- Maraudon (Foulspore Cavern) Reward Quest - Normal completion
 		q(35887),	-- Maraudon (Earth Song Falls) Reward Quest - Normal completion

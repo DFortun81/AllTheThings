@@ -1323,7 +1323,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 	}),
 })};
 _.HiddenQuestTriggers = {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		q(35899),	-- Blackrock Depths (Detention Block) Reward Quest - Normal completion
 		q(35901),	-- Blackrock Depths (Detention Bonus) Reward Quest
 		q(35902),	-- Blackrock Depths (Upper City) Reward Quest - Normal completion

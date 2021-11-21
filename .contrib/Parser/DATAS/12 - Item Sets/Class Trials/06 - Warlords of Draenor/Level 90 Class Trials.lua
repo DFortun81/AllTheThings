@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root("GearSets", n(CLASS_TRIAL, {
-	n(WOD_HEADER, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
+	tier(WOD_TIER, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 		n(LEVEL_NINETY, {
 			-- Note: [As of patch 6.0.1 Level 90 Boost does reward this gear instead]
 			-- Note: [As of --Date--(when this became class trial) you obtain the old Level 90 Boost Gear]
@@ -409,7 +409,7 @@ root("GearSets", n(CLASS_TRIAL, {
 	})),
 }));
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		n(CLASS_TRIAL, {
 			cl(DEATHKNIGHT, {
 				-- added 6.0.2/Confirmed

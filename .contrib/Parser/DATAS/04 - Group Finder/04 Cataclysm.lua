@@ -120,7 +120,7 @@ _.GroupFinder =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(CATA_HEADER, {
+	tier(CATA_TIER, {
 		n(-163, {	-- Armor
 			n(-44, {	-- Leather
 				i(113710),	-- Ravaged Leather Leggings

@@ -46,6 +46,7 @@ select(2, ...).ObjectNames = {
 	[21042] = "Theramore Guard Badge",
 	[35251] = "Karnitol's Chest",
 	[37099] = "Atal'ai Tablet",
+	[91138] = "Jordan's Hammer",
 	[112948] = "Intrepid's Locked Strongbox",
 	[113757] = "Shadowforge Cache",
 	[123329] = "Baelog's Chest",

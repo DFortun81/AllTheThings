@@ -281,7 +281,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	}),
 })));
 _.HiddenQuestTriggers = {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		q(35544),	-- Auchinai Crypts Reward Quest - Normal completion
 		q(35545),	-- Auchinai Crypts Reward Quest - Heroic completion
 	}),

@@ -4,7 +4,7 @@
 
 _.PVP =
 {
-	pvp(n(SL_HEADER, {
+	pvp(tier(SL_TIER, {
 		n(-693, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Sinful Gladiator: Shadowlands Season 1
 			n(PVP_ASPIRANT, {
 				n(BACK, {
@@ -852,7 +852,7 @@ _.PVP =
 	})),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(SL_HEADER, {
+	tier(SL_TIER, {
 		n(-693, {	-- Sinful Gladiator: Shadowlands Season 1
 			n(WEAPONS, {
 				i(183432),	-- Sinful Aspirant's Reaver

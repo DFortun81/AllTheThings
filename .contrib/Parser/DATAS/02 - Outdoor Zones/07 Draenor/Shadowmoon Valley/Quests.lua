@@ -1088,7 +1088,7 @@ _.Zones =
 	}),
 };
 _.HiddenQuestTriggers = {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		q(36493),	-- Shadowmoon Valley - Tracking Quest: Can Open Othaar's Door
 		q(36797),	-- Shadowmoon Valley - Founded the garrison
 		q(35626),	-- Shadowmoon Valley - Friend of the Exarchs: Apprentice Artificer Andren selected
@@ -1111,7 +1111,7 @@ _.HiddenQuestTriggers = {
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		n(WEAPONS, {
 			i(117994),	-- RENAME Karabor Honor Guard Axe
 			i(117993),	-- RENAME Rangari Boot Knife

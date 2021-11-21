@@ -91,6 +91,7 @@ _.ObjectNames = {
 	[50961] = "Malem Chest",
 	[51708] = "Eliza's Grave Dirt",
 	[61934] = "Brazier of the Dormant Flame",
+	[91138] = "Jordan's Hammer",
 	[103821] = "Doan's Strongbox",
 	[112888] = "Dusty Shelf",
 	[112948] = "Intrepid's Locked Strongbox",

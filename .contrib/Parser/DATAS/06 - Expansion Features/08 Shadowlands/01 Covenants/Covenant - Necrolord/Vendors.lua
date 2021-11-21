@@ -1573,7 +1573,7 @@ _.HiddenQuestTriggers = {
 	q(62901),	-- learning Arsenal: Stitchmasters' Weapons
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(SL_HEADER, {
+	tier(SL_TIER, {
 		n(NECROLORD, {
 			n(-163, {	-- Armor
 				n(-43, {	-- Cloth

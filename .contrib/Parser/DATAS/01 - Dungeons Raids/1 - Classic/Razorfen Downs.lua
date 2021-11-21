@@ -407,7 +407,7 @@ root("Instances", tier(CLASSIC_TIER, {
 }));
 -- #if AFTER 6.0.1
 root("HiddenQuestTriggers", {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		q(35598),	-- Razorfen Downs Reward Quest - Normal completion
 	}),
 });

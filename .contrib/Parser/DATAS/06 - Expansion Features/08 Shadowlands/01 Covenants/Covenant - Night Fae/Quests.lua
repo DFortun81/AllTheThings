@@ -840,7 +840,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(61554),	-- The Play's The Thing
 		q(63101),	-- XX REUSEME
 	}),
-	n(SL_HEADER, {
+	tier(SL_TIER, {
 		n(-163, {	-- Armor
 			n(WEAPONS, {
 				i(176017),	-- Ardenweald Quest 2H Mace

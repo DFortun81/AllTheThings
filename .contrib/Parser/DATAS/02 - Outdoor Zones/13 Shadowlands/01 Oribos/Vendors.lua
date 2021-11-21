@@ -127,7 +127,7 @@ _.Zones =
 								{ "c", 1602, 375 },	-- 375xConquest
 							},
 							["sym"] = {
-								{"select", "headerID", -10100 },		-- Select Shadowlands Header
+								{"select", "tierID", SL_TIER },			-- Select Shadowlands Header
 								{"pop"},								-- Discard the Header and acquire all of the children.
 								{"where", "headerID", -694 },			-- Unchained Gladiator: Shadowlands Season 2
 								{"pop"},								-- Discard the Header and acquire all of the children.

@@ -292,7 +292,7 @@ _.Instances = { tier(CATA_TIER, {
 	}),
 })};
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(CATA_HEADER, {
+	tier(CATA_TIER, {
 		inst(73, {	-- Blackwing Descent
 			i(65015),	-- DONTUSEFury of Angerforge
 		}),

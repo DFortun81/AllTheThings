@@ -920,7 +920,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(58732),	-- The Stuff of Memories
 		q(58173),	-- What Are They Hiding?
 	}),
-	n(SL_HEADER, {
+	tier(SL_TIER, {
 		n(WEAPONS, {
 			i(176012),	-- Ardenweald Quest Mace
 			i(176013),	-- Ardenweald Quest Mace

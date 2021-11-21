@@ -1902,7 +1902,7 @@ _.Instances = { tier(MOP_TIER, {
 	}),
 })};
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(MOP_HEADER, {
+	tier(MOP_TIER, {
 		inst(362, {
 			-- T15 Thunderforged & Heroic Thunderforged (Throne of Thunder)
 			cl(DEATHKNIGHT, {

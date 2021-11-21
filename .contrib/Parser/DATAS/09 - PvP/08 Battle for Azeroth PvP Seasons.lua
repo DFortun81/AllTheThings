@@ -4,7 +4,7 @@
 
 _.PVP =
 {
-	pvp(n(BFA_HEADER, {
+	pvp(tier(BFA_TIER, {
 		n(-689, {	-- Dread Gladiator: Battle for Azeroth Season 1
 			n(PVP_ASPIRANT, {
 				n(WEAPONS, {
@@ -1654,7 +1654,7 @@ _.PVP =
 
 -- The items never made it in.
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(BFA_HEADER, {
+	tier(BFA_TIER, {
 		n(-689, {	-- Dread Gladiator: Battle for Azeroth Season 1
 			n(-163, {	-- Armor
 				n(-43, {	-- Cloth

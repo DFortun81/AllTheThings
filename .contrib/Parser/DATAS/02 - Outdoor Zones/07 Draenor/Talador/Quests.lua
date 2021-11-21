@@ -1704,7 +1704,7 @@ _.Zones =
 	}),
 };
 _.HiddenQuestTriggers = {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		q(34199),	-- Vignette: Anchorite's Sojourn
 		q(34113),	-- Vignette: Guy 2 Found (Deathweb Hallow)
 		q(34935),	-- Talador - After Wall Greeting. Triggers during "Dropping In" after taking the portal
@@ -1762,7 +1762,7 @@ _.HiddenQuestTriggers = {
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		n(QUESTS, {
 			q(34691),	-- Just the Beginning
 			q(34677),	-- NOT USED
