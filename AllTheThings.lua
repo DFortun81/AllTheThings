@@ -19200,7 +19200,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				local numRandomDungeons = GetNumRandomDungeons();
 				-- print(numRandomDungeons,"numRandomDungeons");
 				if numRandomDungeons > 0 then
-					local groupFinder = { achID = 4476, text = DUNGEONS_BUTTON, g = {} };
+					local groupFinder = { achID = 4476, text = DUNGEONS_BUTTON, collectible = false, g = {} };
 					for index=1,numRandomDungeons,1 do
 						local dungeonID = GetLFGRandomDungeonInfo(index);
 						-- print("RandInfo",index,GetLFGRandomDungeonInfo(index));
