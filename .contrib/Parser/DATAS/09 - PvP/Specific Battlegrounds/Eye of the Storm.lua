@@ -5,11 +5,9 @@
 _.PVP =
 {
 	n(-304, {	-- Battlegrounds
-		n(-9986, {	-- Eye of the Storm
-			["maps"] = {
-				112,	-- Eye of the Storm (BG)
-				397,	-- Eye of the Storm (BG)
-			},
+		m(112, {	-- Eye of the Storm
+			["achievementID"] = 208,	-- Eye of the Storm Victory
+			["maps"] = { 397 },	-- Eye of the Storm (BG)
 			["g"] = {
 				un(REMOVED_FROM_GAME, i(29024)),	-- Eye of the Storm Mark of Honor
 			},

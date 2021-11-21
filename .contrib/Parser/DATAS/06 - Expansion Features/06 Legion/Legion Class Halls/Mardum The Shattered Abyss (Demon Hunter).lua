@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	tier(LEGION_TIER, {
-		n(-9965, {	-- Legion Class Hall
+		n(CLASS_HALL, {
 			cl(DEMONHUNTER, {	-- Mardum, The Shattered Abyss (Demon Hunter)
 				["classes"] = { DEMONHUNTER },
 				["maps"] = {

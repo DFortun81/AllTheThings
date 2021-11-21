@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	tier(LEGION_TIER, {
-		n(-9965, {	-- Legion Class Hall
+		n(CLASS_HALL, {
 			["icon"] = "Interface\\Icons\\achievement_level_110",
 			["g"] = {
 				n(93787, {	-- Scouting Map

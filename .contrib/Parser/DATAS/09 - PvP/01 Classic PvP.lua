@@ -4,7 +4,7 @@
 
 _.PVP =
 {
-	pvp(n(-10002, {	-- Classic
+	pvp(tier(CLASSIC_TIER, {
 		n(-663, {	-- Classic Honor System
 			["description"] = "These items require the Legionnaire/Knight-Captain rank from Classic or higher to collect.|r",
 			["g"] = {
@@ -1067,7 +1067,7 @@ _.PVP =
 	})),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-10002, {	-- Classic
+	tier(CLASSIC_TIER, {
 		n(-663, {	-- Classic Alliance Honor System
 			n(WEAPONS, {
 				i(77559),	-- Replica Grand Marshal's left Hand Blade

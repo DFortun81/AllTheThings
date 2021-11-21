@@ -369,7 +369,7 @@ _.Zones =
 								i(163810),	-- Thistlebrush Bud
 								i(166495),	-- Tonguelasher
 							}),
-							n(-9961, {	-- Reputation
+							n(FACTIONS, {
 								i(163217, {	-- Azeroth's Tear
 									["description"] = "|CFFFF0000Turn in to Magni Bronzebeard in Silithus for Champions of Azeroth rep.|r",
 									["coord"] = { 42.2, 44.2, SILITHUS },

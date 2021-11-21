@@ -4,11 +4,9 @@
 
 root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_GAME, },{
 	ach(13917),	-- 15th Anniversary
-	n(-9987, {	-- Alterac Valley
-		["maps"] = {
-			1537,	-- Alterac Valley
-			HILLSBRAD_FOOTHILLS,
-		},
+	m(1537, {	-- Alterac Valley
+		["icon"] = 236711,	-- Alterac Valley
+		["maps"] = { HILLSBRAD_FOOTHILLS },
 		["u"] = WOW_ANNIVERSARY,
 		["g"] = bubbleDown({ ["u"] = WOW_ANNIVERSARY }, {
 			ach(13928, {	-- Alterac Valley of Olde (A)

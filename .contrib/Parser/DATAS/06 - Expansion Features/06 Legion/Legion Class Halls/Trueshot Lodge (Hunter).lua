@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	tier(LEGION_TIER, {
-		n(-9965, {	-- Legion Class Hall
+		n(CLASS_HALL, {
 			cl(HUNTER, {
 				["classes"] = { HUNTER },
 				["mapID"] = 739,

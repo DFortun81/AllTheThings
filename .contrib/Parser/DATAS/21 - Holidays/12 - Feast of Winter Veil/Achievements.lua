@@ -129,22 +129,20 @@ _.Holidays = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL},
 				crit(5),		-- Crashin' Thrashin' Roller
 			}),
 			ach(8699),		-- The Danger Zone
-			n(-9969, {		-- Feats of Strength
-				ach(1705),		-- Clockwork Rocket Bot (2007)
-				ach(1706),		-- Crashin' Thrashin' Racer (2008)
-				ach(6059),		-- Red Rider Air Rifle (2009)
-				ach(6060),		-- MiniZep Controller (2010)
-				ach(6061),		-- Gaudy Winter Veil Sweater (2011)
-				ach(7852),		-- They're Both Footballs? (2012)
-				ach(8698),		-- Crashin' Thrashin' Flyer (2013)
-				ach(9915),		-- Crashin' Thrashin' Shredder (2014)
-				ach(10337),		-- Crashin' Thrashin' Flamer (2015)
-				ach(10751),		-- Brr... It's Cold in Here (2016)
-				ach(11913),		-- Don't Play With That In The House (2017)
-				ach(12850),		-- At Least You're Being Careful (2018)
-				ach(13927),		-- Crashin' Splashin' (2019)
-				ach(14931),		-- Flying Festivities (2020)
-			}),
+			ach(1705),		-- Clockwork Rocket Bot (2007)
+			ach(1706),		-- Crashin' Thrashin' Racer (2008)
+			ach(6059),		-- Red Rider Air Rifle (2009)
+			ach(6060),		-- MiniZep Controller (2010)
+			ach(6061),		-- Gaudy Winter Veil Sweater (2011)
+			ach(7852),		-- They're Both Footballs? (2012)
+			ach(8698),		-- Crashin' Thrashin' Flyer (2013)
+			ach(9915),		-- Crashin' Thrashin' Shredder (2014)
+			ach(10337),		-- Crashin' Thrashin' Flamer (2015)
+			ach(10751),		-- Brr... It's Cold in Here (2016)
+			ach(11913),		-- Don't Play With That In The House (2017)
+			ach(12850),		-- At Least You're Being Careful (2018)
+			ach(13927),		-- Crashin' Splashin' (2019)
+			ach(14931),		-- Flying Festivities (2020)
 		}),
 	}),
 });

@@ -7,7 +7,7 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {
 		m(1186, {	-- Blackrock Depths: Shadowforge City
 			n(-517, {	-- Mole Machine
-				n(-9976, {	-- Kalimdor
+				tier(CLASSIC_TIER, {
 					["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 					["g"] = {
 						q(53591, {	-- Fire Plume Ridge
@@ -28,11 +28,6 @@ _.Zones =
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 						}),
-					},
-				}),
-				n(-9975, {	-- Eastern Kingdoms
-					["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-					["g"] = {
 						q(53585, {	-- Aerie Peak
 							["name"] = "Aerie Peak",
 							["coord"] = { 13.52, 46.81, THE_HINTERLANDS },
@@ -53,7 +48,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(-9977, {	-- Outland
+				tier(TBC_TIER, {
 					["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 					["g"] = {
 						q(53599, {	-- The Hand of Gul'dan [Outlands]
@@ -70,7 +65,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(-9978, {	-- Northrend
+				tier(WOTLK_TIER, {
 					["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 					["g"] = {
 						q(53586, {	-- Argent Tournament Grounds
@@ -87,7 +82,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(-9980, {	-- Pandaria
+				tier(MOP_TIER, {
 					["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 					["g"] = {
 						q(53595, {	-- One Keg
@@ -104,7 +99,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(WOD_HEADER, {
+				tier(WOD_TIER, {
 					["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 					["g"] = {
 						q(53590, {	-- Elemental Plateau
@@ -121,7 +116,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(-528,  {	-- Broken Isles
+				tier(LEGION_TIER, {
 					["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 					["g"] = {
 						q(53589, {	-- Aalgen Point

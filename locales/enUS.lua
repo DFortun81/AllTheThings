@@ -1467,37 +1467,26 @@ app.L = {
 		[-9952] = "Interface\\Icons\\ClassIcon_Druid",								-- Guardian / Feral Spec
 	------ ACHIEVEMENT HEADER SECTION ------
 	-- Is Used Somewhere
-		[-9961] = app.asset("Category_Factions"),									-- Reputation
 		[-9965] = "Interface\\Icons\\achievement_level_110",						-- Class Hall
-		[-9969] = "Interface\\Icons\\Paladin_Protection",							-- Feats of Strength
-		[-9975] = app.asset("Expansion_CLASSIC"),									-- Eastern Kingdoms
-		[-9976] = app.asset("Expansion_CLASSIC"),									-- Kalimdor
-		[-9977] = app.asset("Expansion_TBC"),										-- Outland
-		[-9978] = app.asset("Expansion_WOTLK"),										-- Northrend
 		[-9979] = app.asset("Expansion_CATA"),										-- Cataclysm
-		[-9980] = app.asset("Expansion_MOP"),										-- Pandaria
 		[-9981] = app.asset("Expansion_WOD"),										-- Draenor
 		[-9982] = app.asset("Expansion_LEGION"),									-- Legion
 		[-9983] = "Interface\\Icons\\Paladin_Protection",							-- Honor
-		[-9986] = "Interface\\Icons\\Paladin_Protection",							-- Eye of the Storm
-		[-9987] = "Interface\\Icons\\Paladin_Protection",							-- Alterac Valley
-		[-10002] = app.asset("Expansion_CLASSIC"),									-- Classic
 		[-10003] = app.asset("Expansion_TBC"),										-- The Burning Crusade
 		[-10014] = app.asset("Expansion_WOTLK"),									-- Wrath of the Lich King
 		[-10041] = app.asset("Expansion_MOP"),										-- Mists of Pandaria
 		[-10044] = app.asset("Category_D&R"),										-- Raids
 		[-10045] = "Interface\\Icons\\Paladin_Protection",							-- Currencies
 		[-10048] = "Interface\\Icons\\buff_feltreasures",							-- Mage Tower
-		[-10049] = "Interface\\Icons\\buff_forcesoforder",							-- Command Center
 		[-10050] = "Interface\\Icons\\buff_epichunter",								-- Nether Disruptor
 		[-10052] = app.asset("Expansion_BFA"),										-- Battle for Azeroth
 		[-10057] = "Interface\\Icons\\Ability_Warrior_OffensiveStance",				-- War Effort
-		[-10058] = "Interface\\Icons\\Paladin_Protection",							--
+		[-10058] = "Interface\\Icons\\Paladin_Protection",							-- World
 		[-10059] = "Interface\\Icons\\pandarenracial_innerpeace",					-- Pandaria Scenarios
 		[-10061] = "Interface\\Icons\\achievement_faction_celestials",				-- The Four Celestials
-		[-10067] = "Interface\\Icons\\inv_artifact_tome01",							-- AK Research Book
 		[-10067] = app.asset("Weapon_Type_Artifact"),								-- Artifacts
-		[-10071] = "Interface\\Icons\\Paladin_Protection",							--
+	-- 8.3
+		[-10071] = "Interface\\Icons\\Paladin_Protection",							-- Vision of N'zotth
 		[-10072] = "Interface\\Icons\\ability_deathwing_assualtaspects",			-- N'Zoth Assault
 		[-10073] = "Interface\\Icons\\spell_arcane_teleportorgrimmar",				-- Horrific Vision of Orgrimmar
 		[-10074] = "Interface\\Icons\\spell_arcane_teleportstormwind",				-- Horrific Vision of Stomrwind
@@ -1509,10 +1498,9 @@ app.L = {
 		[-10080] = "Interface\\Icons\\trade_alchemy_potiond2",						-- Horrific Visions
 		[-10081] = "Interface\\Icons\\spell_shadow_shadowmend",						-- Corrupted Area (Vision Scenario)
 		[-10082] = "Interface\\Icons\\spell_priest_psyfiend",						-- Lost Area (Vision Scenario)
+	-- 9.1
 		[-10083] = "236373",														-- Covenant Assaults
 		[-10100] = app.asset("Expansion_SL"),										-- Shadowlands
-		[-10105] = 236373,															-- Covenant Assaults
-
 	--	hopefully temp custom NPCs, these objects do not have data on wowhead atm
 		[-1433951] = "3854020",															-- Broken Mirror
 		[-1433952] = "3854020",															-- Broken Mirror
@@ -2215,9 +2203,10 @@ app.L = {
 		[-10080] = SPLASH_BATTLEFORAZEROTH_8_3_0_FEATURE1_TITLE,				-- Horrific Visions
 		[-10081] = "Corrupted Area",
 		[-10082] = "Lost Area",
-		[-10083] = "Covenant Assaults",											-- Covenant Assaults
 	-- Shadowlands Achievement Header
 		[-10100] = EXPANSION_NAME8,												-- Shadowlands
+	-- 9.1
+		[-10083] = "Covenant Assaults",											-- Covenant Assaults
 	--	hopefully temp objects, these currently do not have accessible object data on wowhead
 		[-1433951] = "Broken Mirror A-1",										-- Broken Mirror
 		[-1433952] = "Broken Mirror A-2",										-- Broken Mirror
