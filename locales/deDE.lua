@@ -214,6 +214,7 @@ local L = app.L;
 	--TODO: L.REQUIRES_PETBATTLES = "|CFF00FFDEThis Thing requires Pet Battling.|r";
 	--TODO: L.REPORT_INACCURATE_QUEST = "Wrong Quest Info! (Click to Report)";
 	--TODO: L.NESTED_QUEST_REQUIREMENTS = "Nested Quest Requirements";
+	--TODO: L.MAIN_LIST_REQUIRES_REFRESH = "[Open Main list to update progress]";
 
 	-- Item Filter Window
 		--TODO: L.ITEM_FILTER_TEXT = "Item Filters";
@@ -910,7 +911,7 @@ for key,value in pairs({
 			--TODO: [-5350] = "Class Trial Item Sets",				-- Class Trial
 
 		--TODO: [-7776] = "Winter Revelers",						-- Winter Revelers (for Winter Veil)
-	------ ACHIEVEMENT HEADER SECTION ------
+	------ ACHIEVEMENT HEADERS SECTION ------
 		--TODO: [-10071] = "Visions of N'Zoth",
 		--TODO: [-10072] = "N'Zoth Assault",
 		--TODO: [-10073] = "Horrific Vision of Orgrimmar",
@@ -922,8 +923,9 @@ for key,value in pairs({
 		[-10079] = "Angriff: Ausgegrabene Aqir",					-- Assault: Aqir Unearthed
 		--TODO: [-10081] = "Corrupted Area",
 		--TODO: [-10082] = "Lost Area",
-		--TODO: [-10083] = "Covenant Assaults",						-- Covenant Assaults
-		-- Shadowlands Achievement Header
+		-- Shadowlands Achievement Headers
+			-- 9.1
+				--TODO: [-10083] = "Covenant Assaults",				-- Covenant Assaults
 			--	hopefully temp objects, these currently do not have accessible object data on wowhead
 				[-1433951] = "Zerbrochener Spiegel A-1",			-- Broken Mirror
 				[-1433952] = "Zerbrochener Spiegel A-2",			-- Broken Mirror

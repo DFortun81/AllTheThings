@@ -1465,7 +1465,7 @@ app.L = {
 		[-9949] = "Interface\\Icons\\Spell_Deathknight_FrostPresence",				-- Frost Death Knight Spec
 		[-9951] = "Interface\\Icons\\ClassIcon_Priest",								-- Discipline / Holy Spec
 		[-9952] = "Interface\\Icons\\ClassIcon_Druid",								-- Guardian / Feral Spec
-	------ ACHIEVEMENT HEADER SECTION ------
+	------ ACHIEVEMENT HEADERS SECTION ------
 	-- Is Used Somewhere
 		[-9965] = "Interface\\Icons\\achievement_level_110",						-- Class Hall
 		[-9983] = "Interface\\Icons\\Paladin_Protection",							-- Honor
@@ -1491,6 +1491,7 @@ app.L = {
 		[-10080] = "Interface\\Icons\\trade_alchemy_potiond2",						-- Horrific Visions
 		[-10081] = "Interface\\Icons\\spell_shadow_shadowmend",						-- Corrupted Area (Vision Scenario)
 		[-10082] = "Interface\\Icons\\spell_priest_psyfiend",						-- Lost Area (Vision Scenario)
+	-- Shadowlands Achievement Headers
 	-- 9.1
 		[-10083] = "236373",														-- Covenant Assaults
 	--	hopefully temp custom NPCs, these objects do not have data on wowhead atm
@@ -2147,7 +2148,7 @@ app.L = {
 		[-9949] = GetSpellInfo(137006),											-- Frost Death Knight Spec
 		[-9951] = GetSpellInfo(148462).." & "..GetSpellInfo(137031), 			-- Discipline / Holy Priest Spec
 		[-9952] = GetSpellInfo(234890).." & "..GetSpellInfo(137011), 			-- Guardian / Feral Druid Spec
-	------ ACHIEVEMENT HEADER SECTION ------
+	------ ACHIEVEMENT HEADERS SECTION ------
 		[-9965] = select(1,GetCategoryInfo(15304)),								-- Class Hall
 		[-9966] = select(1,GetCategoryInfo(15303)),								-- Draenor Garrison
 		[-9983] = HONOR,														-- Honor
@@ -2159,9 +2160,9 @@ app.L = {
 		[-10058] = WORLD,														-- World
 		[-10059] = select(1,GetCategoryInfo(15302)),							-- Pandaria Scenarios
 		[-10061] = select(2,GetAchievementInfo(7333)),							-- The Four Celestials
-	-- 8.3
 		[-10066] = BATTLE_PET_BREED_QUALITY6,									-- "Legendary";
 		[-10067] = ITEM_QUALITY6_DESC, 											-- Artifact
+	-- 8.3
 		[-10069] = SCENARIOS,													-- Scenarios
 		[-10071] = "Visions of N'Zoth",
 		[-10072] = "N'Zoth Assault",

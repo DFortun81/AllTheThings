@@ -216,6 +216,7 @@ local L = app.L;
 	--TODO: L.REQUIRES_PETBATTLES = "|CFF00FFDEThis Thing requires Pet Battling.|r";
 	--TODO: L.REPORT_INACCURATE_QUEST = "Wrong Quest Info! (Click to Report)";
 	--TODO: L.NESTED_QUEST_REQUIREMENTS = "Nested Quest Requirements";
+	--TODO: L.MAIN_LIST_REQUIRES_REFRESH = "[Open Main list to update progress]";
 
 	-- Item Filter Window
 		L.ITEM_FILTER_TEXT = "物品过滤";
@@ -965,7 +966,7 @@ for key,value in pairs({
 			[-5350] = "职业试用套装",								-- Class Trial
 
 		--TODO: [-7776] = "Winter Revelers",						-- Winter Revelers (for Winter Veil)
-	------ ACHIEVEMENT HEADER SECTION ------
+	------ ACHIEVEMENT HEADERS SECTION ------
 		[-10071] = "恩佐斯的幻象",									-- Visions of N'Zoth
 		[-10072] = "恩佐斯突袭",										-- N'Zoth Assault
 		[-10073] = "奥格瑞玛的惊魂幻象",								-- Horrific Vision of Orgrimmar
@@ -977,8 +978,9 @@ for key,value in pairs({
 		[-10079] = "突袭：亚基重现",									-- Assault: Aqir Unearthed
 		[-10081] = "腐化区域",										-- Corrupted Area
 		[-10082] = "失落区域",										-- Lost Area
-		--TODO: [-10083] = "Covenant Assaults",						-- Covenant Assaults
 		-- Shadowlands Achievement Header
+			-- 9.1
+				--TODO: [-10083] = "Covenant Assaults",				-- Covenant Assaults
 			--	hopefully temp objects, these currently do not have accessible object data on wowhead
 				[-1433951] = "残破的镜子 A-1",						-- Broken Mirror
 				[-1433952] = "残破的镜子 A-2",						-- Broken Mirror

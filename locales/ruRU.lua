@@ -214,6 +214,7 @@ local L = app.L;
 	L.REQUIRES_PETBATTLES = "|CFF00FFDEЭта Штучка требует игру с Боевыми Питомцами.|r";
 	L.REPORT_INACCURATE_QUEST = "Неверная Информация о Задании! (Нажмите для Отчёта)";
 	L.NESTED_QUEST_REQUIREMENTS = "Вложенные Требования Заданий";
+	L.MAIN_LIST_REQUIRES_REFRESH = "[Откройте Основной список, чтобы обновить прогресс]";
 
 	-- Item Filter Window
 		L.ITEM_FILTER_TEXT = "Фильтровать предметы";
@@ -896,7 +897,7 @@ for key,value in pairs({
 	-- Classes
 		[-9951] = GetSpellInfo(148462).." и "..GetSpellInfo(137031),	-- Discipline / Holy Priest Spec
 		[-9952] = GetSpellInfo(234890).." и "..GetSpellInfo(137011), 	-- Guardian / Feral Druid Spec
-	------ ACHIEVEMENT HEADER SECTION ------
+	------ ACHIEVEMENT HEADERS SECTION ------
 		[-10071] = "Видения Н'Зота",
 		[-10072] = "Нападение Н'Зота",
 		[-10073] = "Жуткое видение Оргримара",
@@ -908,8 +909,9 @@ for key,value in pairs({
 		[-10079] = "Нападение: появление акиров",
 		[-10081] = "Заражённая область",
 		[-10082] = "Захваченная область",
-		[-10083] = "Нападения Ковенантов",							-- Covenant Assaults
 		-- Shadowlands Achievement Header
+			-- 9.1
+				[-10083] = "Нападения Ковенантов",					-- Covenant Assaults
 			--	hopefully temp objects, these currently do not have accessible object data on wowhead
 				[-1433951] = "Разбитое зеркало A-1",				-- Broken Mirror
 				[-1433952] = "Разбитое зеркало A-2",				-- Broken Mirror
