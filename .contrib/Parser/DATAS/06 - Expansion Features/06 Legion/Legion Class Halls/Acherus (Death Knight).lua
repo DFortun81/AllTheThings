@@ -351,7 +351,7 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(42449, {	-- Return of the Four Horsemen
-							["provider"] = { "n", 93658 }, -- Highlord Darion Mograine
+							["provider"] = { "n", 93437 }, -- Highlord Darion Mograine
 							["coord"] = { 51.6, 50.0, 647 },
 							["classes"] = { DEATHKNIGHT },
 							["sourceQuest"] = 39799, -- Our Next Move

@@ -3514,57 +3514,10 @@ _.HiddenQuestTriggers = {
 		-- Necrolord Covenant
 		-- q(57622),	-- Triggered when completing 58609 'Taking the Seat' on a Skip+Necrolord character
 		q(62752),	-- Triggered when completion 59609 'No Rest For the Dead'
-		q(60781),	-- Daily channeling anima [Necrolord]
-		q(61588),	-- Triggered after first time channeling anima (to House of Constructs)
-		q(62575),	-- triggered after crafting Armor Plating at Abominable Stitching Table
-		q(62824),	-- triggered after crafting Back Mushrooms at Abominable Stitching Table
-		q(62580),	-- triggered after crafting Barrel O'Fish at Abominable Stitching Table
-		q(62574),	-- triggered after crafting Butterflies at Abominable Stitching Table
-		q(62762),	-- triggered after crafting Chef Hat at Abominable Stitching Table
-		q(62570),	-- triggered after crafting Collector Kash's Pack at Abominable Stitching Table
-		q(61560),	-- triggered after crafting Dapper Top Hat at Abominable Stitching Table
-		q(62758),	-- triggered after crafting Dundae's Hat at Abominable Stitching Table
-		q(62764),	-- triggered after crafting Egg Hat at Abominable Stitching Table
-		q(62469),	-- triggered after crafting Engineering Pack at Abominable Stitching Table
-		q(62471),	-- triggered after crafting Flower Crown at Abominable Stitching Table
-		q(62472),	-- triggered after crafting Halo of Purity at Abominable Stitching Table
-		q(62479),	-- triggered after crafting Happiness Bird at Abominable Stitching Table
-		q(62583),	-- triggered after crafting Hitchhiker at Abominable Stitching Table
-		q(61712),	-- triggered after crafting Holiday Hat at Abominable Stitching Table
-		q(62759),	-- triggered after crafting Lovely Candle Display at Abominable Stitching Table
-		q(62470),	-- triggered after crafting Magician's Hat at Abominable Stitching Table
-		q(62577),	-- triggered after crafting Operational Instructions at Abominable Stitching Table
-		q(61561),	-- triggered after crafting Outlaw Flag at Abominable Stitching Table
-		q(62826),	-- triggered after crafting Pirate Hat at Abominable Stitching Table
-		q(62576),	-- triggered after crafting Plague Pack at Abominable Stitching Table
-		q(62476),	-- triggered after crafting Red Eye Lens at Abominable Stitching Table
-		q(62825),	-- triggered after crafting Shoulder Sprouts at Abominable Stitching Table
-		q(62481),	-- triggered after crafting Six-League Pack at Abominable Stitching Table
-		q(62817),	-- triggered after crafting Skull Fungus at Abominable Stitching Table
-		q(62474),	-- triggered after crafting Skull Protector at Abominable Stitching Table
-		q(62760),	-- triggered after crafting Trained Corpselice at Abominable Stitching Table
-		q(61562),	-- triggered after crafting Trustworthy Doll at Abominable Stitching Table
-		q(62823),	-- triggered after crafting Underpowered Gravity Pack at Abominable Stitching Table
-		q(62819),	-- triggered after crafting Unworthy Crown at Abominable Stitching Table
-		q(62468),	-- triggered after crafting Vestigial Wings at Abominable Stitching Table
 		q(57602),	-- triggered after summoning Atticus in Maldraxxus for quest Supply Chain
 		q(57615),	-- triggered after summoning Atticus in Maldraxxus for quest Supply Chain
 		q(58434),	-- triggered when summoning Chordy in Ardenweald for #61510, "A Bountiful Haul"
 		q(60783),	-- triggered when turning in #60722, "Tower Power"/Completing Campaign: Promises of the Praetor
-		q(57577),	-- Triggered after recruiting Flytrap
-		q(57598),	-- Triggered after recruiting Gas Bag
-		q(57859),	-- Triggered after recruiting Guillotine
-		q(57610),	-- Triggered after recruiting Iron Phillip
-		q(57578),	-- Triggered after recruiting Marz
-		q(57858),	-- Triggered after recruiting Miru
-		q(57575),	-- Triggered after recruiting Naxx
-		q(57603),	-- Triggered after recruiting Neena
-		q(57606),	-- Triggered after recruiting Roseboil
-		q(57607),	-- Triggered after recruiting Unity
-		q(57854),	-- Triggered after recruiting Sabrina
-		q(57857),	-- Triggered after recruiting Toothpick
-		q(57612),	-- Triggered after recruiting The Professor
-		q(58412),	-- Triggered after recruiting Unity
 		q(61516),	-- When completing 'Things They Leave Behind' (61511) for the first time
 		q(63453),	-- When turning in the First 10 Souls Weekly on Necrolord
 		q(61591),	-- Triggered after completing Specter Of War: Visectus (60283) for the first time
@@ -3574,9 +3527,6 @@ _.HiddenQuestTriggers = {
 		q(62290),	-- Triggered when turning in 'Corpse Run' (61523)
 		q(62215),	-- Triggered when turning in Training Program (62216)
 		q(62596),	-- Triggered when completing 'The Great Luckydo'
-		q(62404),	-- using Ashen Ink (Crypt Couture)
-		q(62408),	-- using Jagged Bonesaw (Crypt Couture)
-		q(62405),	-- using Mucosal Pigment (Crypt Couture)
 		q(59266),	-- triggered when i picked up the last eye for "Prying Eyes"
 		q(60166),	-- Triggered after raising portcullis to access Miru Soulblossom in Etheric Vault
 

@@ -109,7 +109,8 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 				["coord"] = { 77.4, 19.6, ICECROWN },
 			}),
 			crit(24, {	-- Mo'ruk
-				["coord"] = { 65.0, 42.7, KRASARANG_WILDS },
+				["coord"] = { 62.2, 45.8, KRASARANG_WILDS },
+				["cr"] = 66733,	-- Mo'ruk <Grand Master Pet Tamer>
 			}),
 			crit(25, {	-- Morulu The Elder
 				["coord"] = { 59.0, 70.0, SHATTRATH_CITY },

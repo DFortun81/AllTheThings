@@ -10,7 +10,6 @@ _.Zones =
 				ach(1191, {	-- Terror of Terokkar (A)
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						ach(894), -- Flying High Over Skettis
 						crit(1, {	-- The Skettis Offensive
 							["sourceQuest"] = 10879,	-- The Skettis Offensive
 						}),
