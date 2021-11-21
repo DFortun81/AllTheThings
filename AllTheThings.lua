@@ -6881,9 +6881,12 @@ app.CreateAchievementCriteria = function(id, t)
 end
 
 local function CheckAchievementCollectionStatus(achievementID)
-	local id,name,_,accCompleted,_,_,_,_,flags,_,_,isGuild = GetAchievementInfo(achievementID)
-	if id and not isGuild and accCompleted and bit.band(flags,0x1) == 0 then
-		ATTAccountWideData.Achievements[id] = 1;
+	-- this can fire prior to VARIABLES_LOADED, so we can only capture the achievement as collected in the DB if the variables have loaded
+	if ATTAccountWideData then
+		local id,name,_,accCompleted,_,_,_,_,flags,_,_,isGuild = GetAchievementInfo(achievementID)
+		if id and not isGuild and accCompleted and bit.band(flags,0x1) == 0 then
+			ATTAccountWideData.Achievements[id] = 1;
+		end
 	end
 end
 RefreshAchievementCollection = function()
