@@ -141,14 +141,14 @@ _.ExpansionFeatures =
 						}),
 					}),
 				}),
-				ach(15089, {	-- Flawless Master
+				ach(15089, {	-- Flawless Master (Layer 12)
 					i(186655),	-- Mawsworn Charger's Reins (MOUNT!)
-					ach(15088),	-- Flawless: Upper Reaches
-					ach(15087),	-- Flawless: Mort'regar
-					ach(15084),	-- Flawless: The Soulforges
-					ach(15083),	-- Flawless: Coldheart Interstitia
-					ach(15081),	-- Flawless: Skoldus Hall
-					ach(15082),	-- Flawless: Fracture Chambers
+					ach(15088),	-- Flawless: Upper Reaches (Layer 12)
+					ach(15087),	-- Flawless: Mort'regar (Layer 12)
+					ach(15084),	-- Flawless: The Soulforges (Layer 12)
+					ach(15083),	-- Flawless: Coldheart Interstitia (Layer 12)
+					ach(15081),	-- Flawless: Skoldus Hall (Layer 12)
+					ach(15082),	-- Flawless: Fracture Chambers (Layer 12)
 				}),
 				ach(14776),		-- For the Hoarder!
 				ach(14498, {	-- Gatekeepers of Torghast
@@ -281,6 +281,35 @@ _.ExpansionFeatures =
 				ach(14569),		-- Torghast: Twisting Corridors: Layer 7
 				ach(14570, {	-- Torghast: Twisting Corridors: Layer 8
 					i(184166),		-- Corridor Creeper (MOUNT!)
+				}),
+				-- PTR
+				ach(15322, {	-- Flawless Master (Layer 16)
+					i(188736),	-- Colossal Soulshredder Mawrat (MOUNT!)
+					ach(15320),	-- Flawless: Upper Reaches (Layer 16)
+					ach(15319),	-- Flawless: Mort'regar (Layer 16)
+					ach(15317),	-- Flawless: The Soulforges (Layer 16)
+					ach(15318),	-- Flawless: Coldheart Interstitia (Layer 16)
+					ach(15314),	-- Flawless: Skoldus Hall (Layer 16)
+					ach(15316),	-- Flawless: Fracture Chambers (Layer 16)
+				}),
+				ach(15251),	-- The Jailer's Gauntlet: Layer 1
+				ach(15252, {	-- The Jailer's Gauntlet: Layer 2
+					i(188679),	-- Lightless Tormentor (PET!)
+				}),
+				ach(15253),	-- The Jailer's Gauntlet: Layer 3
+				ach(15254, {	-- The Jailer's Gauntlet: Layer 4
+					i(188952),	-- Dominated Hearthstone (TOY!)
+				}),
+				ach(15255),	-- The Jailer's Gauntlet: Layer 5
+				ach(15256, {	-- The Jailer's Gauntlet: Layer 6
+					-- title( ),	-- "Gauntlet Runner"
+				}),
+				ach(15257),	-- The Jailer's Gauntlet: Layer 7
+				ach(15258, {	-- The Jailer's Gauntlet: Layer 8
+					i(188696),	-- Colossal Ebonclaw Mawrat (MOUNT!)
+				}),
+				ach(15324, {	-- Tower Ranger
+					-- title ( ),	-- ", Tower Ranger"
 				}),
 			}),
 		}),

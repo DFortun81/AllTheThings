@@ -1080,7 +1080,7 @@ pet(189585, 3237);	-- E'rnee
 pet(187735, 3172);	-- Geordy (Anima Shell?)
 
 -- Torghast
-pet(188679, 3221);	-- Lightless Tormentor
+pet(188679, 3221);	--* Lightless Tormentor
 
 -- Rest of iDS
 --[[

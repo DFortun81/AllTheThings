@@ -549,5 +549,13 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(11),		-- Roving Gladechewer
 			crit(12),		-- Wild Gormling
 		}),
+		-- PTR
+		ach(15391),	-- Adventurer of Zereth Mortis
+		ach(15211, {	-- Completing the Code
+			i(187793),	-- Personal Containment Trap (TOY!)
+		}),
+		ach(15392),	-- Dune Dominance
+		ach(15224),	-- Explore Zereth Mortis
+		ach(15331),	-- Treasures of Zereth Mortis
 	}),
 }));

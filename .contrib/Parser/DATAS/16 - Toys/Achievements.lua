@@ -4,6 +4,7 @@
 
 root("Toys", n(ACHIEVEMENTS,  {
 	i(166247),				-- Citizens Brigade Whistle
+	i(188952),				-- Dominated Hearthstone
 	i(139773),				-- Emerald Winds
 	i(184223),				-- Helm of the Dominated
 	i(87528),				-- Honorary Brewmaster Keg
@@ -13,6 +14,7 @@ root("Toys", n(ACHIEVEMENTS,  {
 	petbattle(i(174871)),	-- Mayhem Mind Melder
 	i(143660),				-- Mrgrglhjorn
 	i(86596),				-- Nat's Fishing Chair
+	i(187793),				-- Personal Containment Trap
 	i(122700),				-- Portable Audiophone
 	i(119215),				-- Robo-Gnomebulator
 	petbattle(i(92738)),	-- Safari Hat

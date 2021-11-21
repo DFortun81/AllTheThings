@@ -125,6 +125,35 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES, {
 			}),
 			ach(14569),	-- Twisting Corridors: Layer 7
 		}),
+		-- PTR
+		ach(15322, {	-- Flawless Master (Layer 16)
+			i(188736),	-- Colossal Soulshredder Mawrat (MOUNT!)
+			ach(15320),	-- Flawless: Upper Reaches (Layer 16)
+			ach(15319),	-- Flawless: Mort'regar (Layer 16)
+			ach(15317),	-- Flawless: The Soulforges (Layer 16)
+			ach(15318),	-- Flawless: Coldheart Interstitia (Layer 16)
+			ach(15314),	-- Flawless: Skoldus Hall (Layer 16)
+			ach(15316),	-- Flawless: Fracture Chambers (Layer 16)
+		}),
+		ach(15251),	-- The Jailer's Gauntlet: Layer 1
+		ach(15252, {	-- The Jailer's Gauntlet: Layer 2
+			i(188679),	-- Lightless Tormentor (PET!)
+		}),
+		ach(15253),	-- The Jailer's Gauntlet: Layer 3
+		ach(15254, {	-- The Jailer's Gauntlet: Layer 4
+			i(188952),	-- Dominated Hearthstone (TOY!)
+		}),
+		ach(15255),	-- The Jailer's Gauntlet: Layer 5
+		ach(15256, {	-- The Jailer's Gauntlet: Layer 6
+			-- title( ),	-- "Gauntlet Runner"
+		}),
+		ach(15257),	-- The Jailer's Gauntlet: Layer 7
+		ach(15258, {	-- The Jailer's Gauntlet: Layer 8
+			i(188696),	-- Colossal Ebonclaw Mawrat (MOUNT!)
+		}),
+		ach(15324, {	-- Tower Ranger
+			-- title ( ),	-- ", Tower Ranger"
+		}),
 
 	-- These may have existed on beta? But don't appear to be in the release version, only the layer 1 achieves have been seen.
 	-- Leaving them here commented out for now, we can delete later if they never show up.

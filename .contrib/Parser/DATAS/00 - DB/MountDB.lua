@@ -1127,13 +1127,13 @@ i(187642, 349823);	-- Vicious Warstalker (H)
 i(187676, 342680);	-- Deepstar Aurelid
 
 -- Torghast?
-i(188736, 363297);	-- Colossal Soulshredder Mawrat
+i(188736, 363297);	--* Colossal Soulshredder Mawrat
 i(188700, 363178);	-- Colossal Umbrahide Mawrat
-i(188696, 363136);	-- Colossal Ebonclaw Mawrat
+i(188696, 363136);	--* Colossal Ebonclaw Mawrat
 
 -- PH/UNKNOWN/NYI
 i(187640, 359276);	-- Anointed Protostag
-i(187673, 359381);	-- Cryptic Aurelid
+i(187673, 359381);	--* Cryptic Aurelid
 i(187629, 359229);	-- Heartlight Vombata
 -- Holy Lightstrider(spellID 356802)
 -- Carcinized Zerethsteed(SpellID 359545)

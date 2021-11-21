@@ -35,12 +35,15 @@ _.Mounts =
 		i(182074, {	--  Chosen Tauralus
 			["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant only
 		}),
+		i(188696),	-- Colossal Ebonclaw Mawrat
+		i(188736),	-- Colossal Soulshredder Mawrat
 		i(184166),	-- Corridor Creeper
 		i(69230),	-- Corrupted Fire Hawk
 		i(87769),	-- Crimson Cloud Serpent
 		un(REMOVED_FROM_GAME, i(89154)),	-- Crimson Pandaren Phoenix
 		un(REMOVED_FROM_GAME, i(49098)),	-- Crusader's Black Warhorse
 		un(REMOVED_FROM_GAME, i(49096)),	-- Crusader's White Warhorse
+		i(187673),	-- Cryptic Aurelid
 		i(166539),	-- Dazar'alor Windreaver
 		i(161331, {	-- Dark Iron Core Hound
 			["races"] = ALLIANCE_ONLY,

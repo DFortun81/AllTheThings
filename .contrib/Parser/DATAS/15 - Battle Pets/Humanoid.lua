@@ -108,6 +108,7 @@ _.BattlePets =
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
+			p(3221),	-- Lightless Tormentor
 			p(1226),	-- Lil' Bad Wolf
 			p(3062),	-- Lost Featherling
 			p(111, {	-- Lurky

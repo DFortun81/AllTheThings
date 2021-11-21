@@ -100,5 +100,9 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 		ach(15108),		-- Together Forever
 		ach(15105),		-- Tormentor's Tango
 		ach(15131),		-- Whack-A-Soul
+		-- PTR
+		ach(15381),	-- Power ON
+		ach(15386),	-- Shimmering Secrets
+		ach(15315),	-- Amidst Ourselves
 	}),
 }));

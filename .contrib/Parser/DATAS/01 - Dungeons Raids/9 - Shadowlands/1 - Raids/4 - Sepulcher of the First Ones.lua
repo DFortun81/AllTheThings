@@ -137,6 +137,7 @@ root("Instances", tier(SL_TIER, {
 				e(2512, {	-- Solitary Guardian
 					["crs"] = {  },	-- 
 					["g"] = {
+						ach(15381),	-- Power ON
 						
 					},
 				}),
@@ -173,7 +174,7 @@ root("Instances", tier(SL_TIER, {
 				e(2529, {	-- Halondrus the Reclaimer
 					["crs"] = {  },	-- 
 					["g"] = {
-						
+						ach(15386),	-- Shimmering Secrets
 					},
 				}),
 				e(2546, {	-- Anduin Wrynn
@@ -185,6 +186,7 @@ root("Instances", tier(SL_TIER, {
 				e(2543, {	-- Lords of Dread
 					["crs"] = {  },	-- 
 					["g"] = {
+						ach(15315),	-- Amidst Ourselves
 						
 					},
 				}),
