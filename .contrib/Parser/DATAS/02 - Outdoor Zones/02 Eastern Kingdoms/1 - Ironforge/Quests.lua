@@ -154,13 +154,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(9514)),	-- Arcane Staff
 					},
 				}),
-				q(27267, {	-- Make Contact with SI:7
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 5165 },	-- Hulfdan Blackbeard
-					["classes"] = { ROGUE },
-					["coord"] = { 51.6, 14.6, IRONFORGE },	-- Hulfdan Blackbeard
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(28259, {	-- Meet with Demisette Cloyce
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 5173 },	-- Alexander Calder

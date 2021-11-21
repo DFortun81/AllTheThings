@@ -44,6 +44,41 @@ root("Instances", tier(CLASSIC_TIER, {
 						i(65480),	-- Staff of the Technocrat
 					},
 				}),
+				q(27351, {	-- A Royal Reward
+					-- #if AFTER SHADOWLANDS
+					["qg"] = 164946,	-- Veruca Darkstream <Rogue Trainer>
+					-- #else
+					["qgs"] = {
+						51998,	-- Arthur Huwe
+						13283,	-- Lord Tony Romano
+					},
+					-- #endif
+					["sourceQuest"] = 27267,	-- Make Contact with SI:7
+					-- #if AFTER SHADOWLANDS
+					["coord"] = { 78.6, 70.6, STORMWIND_CITY },
+					-- #else
+					["coords"] = {
+						{ 79.6, 61.2, STORMWIND_CITY },	-- Arthur Huwe
+						{ 79.6, 60.8, STORMWIND_CITY },	-- Lord Tony Romano
+					},
+					-- #endif
+					["timeline"] = { "added 4.0.3.13277" },
+					["classes"] = { ROGUE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(20, 8, 20),
+					["groups"] = {
+						objective(1, {	-- 0/1 Springvale's Sharpening Stone
+							["provider"] = { "i", 60880 },	-- Springvale's Sharpening Stone
+						}),
+						objective(2, {	-- 0/5 Moonsteel Ingots
+							["provider"] = { "i", 60872 },	-- Moonsteel Ingots
+						}),
+						objective(3, {	-- 0/5 Deathless Sinew
+							["provider"] = { "i", 60874 },	-- Deathless Sinew
+						}),
+						i(65486),	-- SI:7 Special Issue Dagger
+					},
+				}),
 				q(27441, {	-- A Seer's Staff [Goblin]
 					-- #if AFTER SHADOWLANDS
 					["qg"] = 168621,	-- Martin Goodchilde <Priest Trainer>
@@ -163,6 +198,35 @@ root("Instances", tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
+				q(27396, {	-- Blade of the Shattered Hand
+					-- #if AFTER SHADOWLANDS
+					["qg"] = 168598,	-- Thega Graveblade <Rogue Trainer>
+					-- #else
+					["qg"] = 47233,	-- Gordul
+					-- #endif
+					["sourceQuest"] = 27279,	-- The Shattered Hand
+					-- #if AFTER SHADOWLANDS
+					["coord"] = { 75.4, 47.4, ORGRIMMAR },
+					-- #else
+					["coord"] = { 32.9, 65.8, ORGRIMMAR },
+					-- #endif
+					["timeline"] = { "added 4.0.3.13277" },
+					["classes"] = { ROGUE },
+					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(20, 8, 20),
+					["groups"] = {
+						objective(1, {	-- 0/1 Springvale's Sharpening Stone
+							["provider"] = { "i", 60880 },	-- Springvale's Sharpening Stone
+						}),
+						objective(2, {	-- 0/5 Moonsteel Ingots
+							["provider"] = { "i", 60872 },	-- Moonsteel Ingots
+						}),
+						objective(3, {	-- 0/5 Deathless Sinew
+							["provider"] = { "i", 60874 },	-- Deathless Sinew
+						}),
+						i(65487),	-- Blade of the Shattered Hand
+					},
+				}),
 				-- #if BEFORE SHADOWLANDS
 				q(27334, {	-- Dark Cleric Cecille [CATA] / Journey to Orgrimmar [SL+]
 					["qgs"] = {
@@ -196,6 +260,25 @@ root("Instances", tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
+				-- #if AFTER SHADOWLANDS
+				q(27265, {	-- Ezul'aan Calls [SL+] / Lord Grayson Shadowbreaker [CATA]
+					["qgs"] = {
+						16761,	-- Baatun
+						35281,	-- Rukua
+						5147,	-- Valgar Highforge
+					},
+					["coords"] = {
+						{ 43.6, 78.4, THE_EXODAR },	-- Baatun
+						{ 43.6, 78.4, DARNASSUS },	-- Rukua
+						{ 51.0, 26.2, IRONFORGE },	-- Valgar Highforge
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(20, 8, 20),
+				}),
+				-- #endif
 				q(27362, {	-- Favored of Elune
 					["qg"] = 7999,	-- Tyrande Whisperwind
 					["sourceQuest"] = 27269,	-- The Temple of the Moon
@@ -384,6 +467,40 @@ root("Instances", tier(CLASSIC_TIER, {
 				}),
 				-- #endif
 				-- #if BEFORE SHADOWLANDS
+				q(27265, {	-- Lord Grayson Shadowbreaker [CATA] / Ezul'aan Calls [SL+]
+					["qgs"] = {
+						16761,	-- Baatun
+						35281,	-- Rukua
+						5147,	-- Valgar Highforge
+					},
+					["coords"] = {
+						{ 43.6, 78.4, THE_EXODAR },	-- Baatun
+						{ 43.6, 78.4, DARNASSUS },	-- Rukua
+						{ 51.0, 26.2, IRONFORGE },	-- Valgar Highforge
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(20, 8, 20),
+				}),
+				-- #endif
+				q(27267, {	-- Make Contact with SI:7
+					["qgs"] = {
+						4214,	-- Erion Shadewhisper
+						5165,	-- Hulfdan Blackbeard
+					},
+					["coords"] = {
+						{ 40.0, 39.6, DARNASSUS },	-- Erion Shadewhisper
+						{ 51.6, 14.6, IRONFORGE },	-- Hulfdan Blackbeard
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["classes"] = { ROGUE },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(20, 8, 20),
+				}),
+				-- #if BEFORE SHADOWLANDS
 				q(27268, {	-- Make Haste to the Cathedral [CATA] / Patrice Lancaster Sends Word [SL+]
 					["qgs"] = {
 						16756,	-- Caedmos
@@ -402,6 +519,64 @@ root("Instances", tier(CLASSIC_TIER, {
 					["lvl"] = lvlsquish(20, 8, 20),
 				}),
 				-- #endif
+				q(27354, {	-- Mastering the Arcane [Alliance]
+					-- #if AFTER SHADOWLANDS
+					["qg"] = 164955,	-- Frazzle Frostfingers <Mage Trainer>
+					-- #else
+					["qg"] = 331,	-- Maginor Dumas
+					-- #endif
+					["sourceQuest"] = 27271,	-- Journey to the Wizard's Sanctum
+					-- #if AFTER SHADOWLANDS
+					["coord"] = { 80.0, 69.6, STORMWIND_CITY },
+					-- #else
+					["coord"] = { 49.2, 87.6, STORMWIND_CITY },
+					-- #endif
+					["timeline"] = { "added 4.0.3.13287" },
+					["classes"] = { MAGE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(20, 8, 20),
+					["groups"] = {
+						objective(1, {	-- 0/1 Silverlaine's Enchanted Crystal
+							["provider"] = { "i", 60878 },	-- Silverlaine's Enchanted Crystal
+						}),
+						objective(2, {	-- 0/5 Moontouched Wood
+							["provider"] = { "i", 60871 },	-- Moontouched Wood
+						}),
+						objective(3, {	-- 0/5 Ghostly Essence
+							["provider"] = { "i", 60875 },	-- Ghostly Essence
+						}),
+						i(65467),	-- Staff of the Royal Wizard
+					},
+				}),
+				q(27400, {	-- Mastering the Arcane [Horde]
+					-- #if AFTER SHADOWLANDS
+					["qg"] = 168626,	-- Feenix Arcshine
+					-- #else
+					["qg"] = 47246,	-- Ureda
+					-- #endif
+					["sourceQuest"] = 27277,	-- An Audience with Ureda [CATA] / An Audience with Feenix Arcshine [SL+]
+					-- #if AFTER SHADOWLANDS
+					["coord"] = { 74.6, 43.5, ORGRIMMAR },	-- Feenix Arcshine
+					-- #else
+					["coord"] = { 48.4, 62.6, ORGRIMMAR },	-- Ureda
+					-- #endif
+					["timeline"] = { "added 4.0.3.13287" },
+					["classes"] = { MAGE },
+					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(20, 8, 20),
+					["groups"] = {
+						objective(1, {	-- 0/1 Silverlaine's Enchanted Crystal
+							["provider"] = { "i", 60878 },	-- Silverlaine's Enchanted Crystal
+						}),
+						objective(2, {	-- 0/5 Moontouched Wood
+							["provider"] = { "i", 60871 },	-- Moontouched Wood
+						}),
+						objective(3, {	-- 0/5 Ghostly Essence
+							["provider"] = { "i", 60875 },	-- Ghostly Essence
+						}),
+						i(65468),	-- Staff of the Arcane Path
+					},
+				}),
 				-- #if AFTER SHADOWLANDS
 				q(27304, {	-- Meet with Avaros Dawnglaive [Tauren] [SL+] / Follow the Sun [CATA]
 					["qgs"] = {
@@ -621,6 +796,37 @@ root("Instances", tier(CLASSIC_TIER, {
 					},
 				}),
 				-- #endif
+				q(27343, {	-- The Hand of the Light
+					-- #if AFTER SHADOWLANDS
+					["qg"] = 164952,	-- Ezul'aan <Paladin Trainer>
+					-- #else
+					["qg"] = 928,	-- Lord Grayson Shadowbreaker
+					-- #endif
+					["sourceQuest"] = 27265,	-- Lord Grayson Shadowbreaker [CATA] / Ezul'aan Calls [SL+]
+					-- #if AFTER SHADOWLANDS
+					["coord"] = { 79.2, 69.6, STORMWIND_CITY },
+					-- #else
+					["coord"] = { 52.6, 45.0, STORMWIND_CITY },
+					-- #endif
+					["timeline"] = { "added 4.0.3.13277" },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(20, 8, 20),
+					["groups"] = {
+						objective(1, {	-- 0/1 Commander's Holy Symbol
+							["provider"] = { "i", 60879 },	-- Commander's Holy Symbol
+						}),
+						objective(2, {	-- 0/5 Moonsteel Ingots
+							["provider"] = { "i", 60872 },	-- Moonsteel Ingots
+						}),
+						objective(3, {	-- 0/5 Deathless Sinew
+							["provider"] = { "i", 60874 },	-- Deathless Sinew
+						}),
+						i(65475),	-- Mace of the Order
+						i(65476),	-- Gavel of the Order
+						i(65477),	-- Warhammer of the Order
+					},
+				}),
 				q(1740, {	-- The Orb of Soran'ruk
 					["qg"] = 6247,	-- Doan Karhan
 					["coord"] = { 49.2, 57.2, THE_BARRENS },
@@ -685,6 +891,21 @@ root("Instances", tier(CLASSIC_TIER, {
 					},
 				}),
 				-- #endif
+				q(27279, {	-- The Shattered Hand
+					["qgs"] = {
+						16684,	-- Zelanis
+						4584,	-- Gregory Charles
+					},
+					["coords"] = {
+						{ 79.4, 52.0, SILVERMOON_CITY },	-- Zelanis
+						{ 84.6, 73.2, UNDERCITY },	-- Gregory Charles
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["classes"] = { ROGUE },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(20, 8, 20),
+				}),
 				q(27269, {	-- The Temple of the Moon
 					["qgs"] = {
 						11401,	-- Priestess Alathea
@@ -710,9 +931,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				
 				
 				
-				-- https://www.wowhead.com/item=60879/commanders-holy-symbol#objective-of
-				-- https://www.wowhead.com/item=60880/springvales-sharpening-stone#objective-of
-				-- https://www.wowhead.com/item=60878/silverlaines-enchanted-crystal#objective-of
+				
 				-- https://www.wowhead.com/item=60885/silverlaine-family-sword#objective-of
 				-- https://www.wowhead.com/item=60881/waldens-talisman#objective-of
 				-- https://www.wowhead.com/item=60876/waldens-elixirs#objective-of

@@ -66,13 +66,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(27267, {	-- Make Contact with SI:7
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 4214 },	-- Erion Shadewhisper
-					["classes"] = { ROGUE },
-					["coord"] = { 40.0, 39.6, DARNASSUS },
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(4493,  {	-- March of the Silithid [Alliance]
 					["sourceQuests"] = { 162 },	-- Rise of the Silithid [Alliance]
 					["provider"] = { "n", 7740 },	-- Gracina Spiritmight

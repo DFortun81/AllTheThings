@@ -211,16 +211,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(27396, {	-- Blade of the Shattered Hand
-					["sourceQuests"] = { 27279 },	-- The Shattered Hand
-					["provider"] = { "n", 47233 },	-- Gordul
-					["classes"] = { ROGUE },
-					["coord"] = { 32.9, 65.8, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(65487),	-- Blade of the Shattered Hand
-					},
-				}),
 				q(29401, {	-- Blown Away
 					["provider"] = { "n", 54004 },	-- Jaga
 					["coord"] = { 48.1, 46.8, ORGRIMMAR },
@@ -623,28 +613,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(27400, {	-- Mastering the Arcane [TODO: Source the quest items in SFK.]
-					-- #if BEFORE SHADOWLANDS
-					["qg"] = 47246,	-- Ureda
-					["sourceQuest"] = 27277,	-- An Audience with Ureda
-					["coord"] = { 48.4, 62.6, ORGRIMMAR },	-- Ureda
-					-- #else
-					["qg"] = 168626,	-- Feenix Arcshine
-					["sourceQuest"] = 27277,	-- An Audience with Feenix Arcshine
-					["coord"] = { 74.6, 43.5, ORGRIMMAR },	-- Feenix Arcshine
-					-- #endif
-					["timeline"] = { "added 4.0.3.13287" },
-					["cost"] = {	-- TODO: make these objectives
-						{ "i", 60878, 1 },	-- Silverlaine's Enchanted Crystal
-						{ "i", 60871, 5 },	-- Moontouched Wood
-						{ "i", 60875, 5 },	-- Ghostly Essence
-					},
-					["classes"] = { MAGE },
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(65468),	-- Staff of the Arcane Path
-					},
-				}),
 				q(7667,  {	-- Material Assistance
 					["provider"] = { "n", 13417 },	-- Sagorne Creststrider
 					["classes"] = { SHAMAN },
@@ -781,21 +749,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { SHAMAN },
 					["lvl"] = 20,
-				}),
-				q(27279, {	-- The Shattered Hand
-					["provider"] = { "n", 16684 },	-- Zelanis
-					["coord"] = { 79.4, 52.0, SILVERMOON_CITY },
-					["isBreadcrumb"] = true,
-					["races"] = HORDE_ONLY,
-					["classes"] = { ROGUE },
-					["lvl"] = 20,
-				}),
-				q(27279, {	-- The Shattered Hand
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 4584 },	-- Gregory Charles
-					["classes"] = { ROGUE },
-					["coord"] = { 84.6, 73.2, UNDERCITY },
-					["races"] = HORDE_ONLY,
 				}),
 				q(28302, {	-- Meet with Sunwalker Atohmo
 					["isBreadcrumb"] = true,
