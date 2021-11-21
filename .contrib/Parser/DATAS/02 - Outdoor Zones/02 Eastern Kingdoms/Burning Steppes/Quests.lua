@@ -852,7 +852,10 @@ _.Zones =
 					["provider"] = { "n", 48568 },	-- Eitrigg
 					["coord"] = { 44.5, 44.4, BURNING_STEPPES },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 28435 },	-- The Kodocaller's Horn
+					["sourceQuests"] = {
+						28434,	-- Strategic Cuts
+						28435,	-- The Kodocaller's Horn
+					},
 					["g"] = {
 						i(64520),	-- Helm of Serendipity
 						i(64519),	-- Improvised Breastplate

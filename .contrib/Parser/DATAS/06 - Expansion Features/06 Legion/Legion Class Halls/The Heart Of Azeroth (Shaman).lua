@@ -777,14 +777,14 @@ _.ExpansionFeatures =
 _.HiddenQuestTriggers = {
 	q(38275),	-- Shaman Order Hall - Tracking Quest: Return to Firelands 1 Mission Completed
 	q(41116),	-- Shaman Order Hall - Looting the Maelstrom Chest containing the Lave Fountain toy from Puzzlemaster Lo
+	q(41329),	-- Shaman Order Hall - Elemental Chosen First
+	q(41330),	-- Shaman Order Hall - Restoration Chosen First
 	q(42998),	-- Shaman Order Hall - Tracking Quest: Return to Firelands 2 Mission Completed
 	q(42999),	-- Shaman Order Hall - Tracking Quest: Return to Firelands 3 Mission Completed
 	q(43000),	-- Shaman Order Hall - Tracking Quest: Return to Firelands 4 Mission Completed
 	q(43001),	-- Shaman Order Hall - Tracking Quest: Return to Firelands 5 Mission Completed
 	q(43901),	-- Shaman Order Hall - Tracking Quest: All - Troop B Enabled
 	q(43946),	-- Shaman Order Hall - Enhancement Chosen Second
-	q(41329),	-- Shaman Order Hall - Elemental Chosen First
-	q(41330),	-- Shaman Order Hall - Restoration Chosen First
 	q(43947),	-- Shaman Order Hall - Elemental Chosen
 	q(43948),	-- Shaman Order Hall - Restoration Chosen Third
 	q(44396),	-- Shaman Order Hall - Tracking Quest: Thunderaan's Enemies 1

@@ -187,7 +187,7 @@ _.Zones =
 					["provider"] = { "n", 2278 },	-- Melisara
 					["coord"] = { 57.2, 46.3, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 28587 },	-- Aid of the Frostwolf
+					["sourceQuests"] = { 28506 },	-- March of the Stormpike
 				}),
 				q(545,   {	-- Dalaran Patrols
 					["u"] = REMOVED_FROM_GAME,
