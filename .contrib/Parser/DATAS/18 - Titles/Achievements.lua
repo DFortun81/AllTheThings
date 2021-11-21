@@ -257,6 +257,16 @@ _.Titles =
 				"added 9.1.5",
 			},
 		}),
+		title(449, {	-- Gauntlet Runner <Name>
+			["timeline"] = {
+				"added 9.2.0",
+			},
+		}),
+		title(450, {	-- <Name>, Tower Ranger
+			["timeline"] = {
+				"added 9.2.0",
+			},
+		}),
 	}),
 	n(ACHIEVEMENTS, bubbleDown({ ["u"] = REMOVED_FROM_GAME, ["collectible"] = false, }, { -- Realm Best Time Challenge Mode (Blizzard removed these from players)
 		title(241),	-- <Name>, Defender of the Wall

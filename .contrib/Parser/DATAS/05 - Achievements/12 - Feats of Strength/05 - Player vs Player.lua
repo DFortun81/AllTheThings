@@ -1327,9 +1327,9 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			ach(15380),		-- Combatant II: Shadowlands Season 3
 			-- ach(15346),	-- Cosmic Combatant
 			-- ach(15347),	-- Cosmic Combatant
-			--ach(15353, {	-- Cosmic Gladiator: Shadowlands Season 3
-				--title( ),	-- Cosmic Gladiator?
-			--}),
+			ach(15353, {	-- Cosmic Gladiator: Shadowlands Season 3
+				title(452),	-- Cosmic Gladiator <Name>
+			}),
 			ach(15351),		-- Duelist: Shadowlands Season 3
 			ach(15354),		-- Elite: Shadowlands Season 3
 			ach(15352),		-- Gladiator: Shadowlands Season 3

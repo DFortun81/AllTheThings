@@ -145,14 +145,14 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES, {
 		}),
 		ach(15255),	-- The Jailer's Gauntlet: Layer 5
 		ach(15256, {	-- The Jailer's Gauntlet: Layer 6
-			-- title( ),	-- "Gauntlet Runner"
+			title(449),	-- Gauntlet Runner <Name>
 		}),
 		ach(15257),	-- The Jailer's Gauntlet: Layer 7
 		ach(15258, {	-- The Jailer's Gauntlet: Layer 8
 			i(188696),	-- Colossal Ebonclaw Mawrat (MOUNT!)
 		}),
 		ach(15324, {	-- Tower Ranger
-			-- title ( ),	-- ", Tower Ranger"
+			title(450),	-- <Name>, Tower Ranger
 		}),
 
 	-- These may have existed on beta? But don't appear to be in the release version, only the layer 1 achieves have been seen.

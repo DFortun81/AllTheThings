@@ -13,7 +13,7 @@ _.Titles =
 		title(325),	-- <Name>, Bound by Honor
 		title(369),	-- <Name> the Tactician
 		-- Arean Seasonal
-		title(441),	-- Unchained Gladiator <Name>
+		title(452),	-- Cosmic Gladiator <Name>
 		-- BG Wins
 		title(152, {	-- <Name>, Veteran of the Alliance
 			["races"] = ALLIANCE_ONLY,
@@ -524,6 +524,12 @@ _.Titles =
 			["timeline"] = {
 				"added 9.0.2",
 				"removed 9.1.0",
+			},
+		}),
+		title(441, {	-- Unchained Gladiator <Name>
+			["timeline"] = {
+				"added 9.1.0",
+				"removed 9.2.0",
 			},
 		}),
 		-- RBG titles
