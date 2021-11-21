@@ -790,4 +790,11 @@ i(188680);	-- Winter Veil Chorus Book
 i(187958);	-- PH - Banner of the Opportune
 i(187957);	-- PH - Banner of the Opportune
 i(187959);	-- PH - Banner of the Opportune
+
+
+-----------------
+-- PATCH 9.2.0 --
+-----------------
+i(188952);	-- Dominated Hearthstone
+i(187793);	-- Personal Containment Trap
 end)();
