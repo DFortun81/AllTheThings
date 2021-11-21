@@ -159,13 +159,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(6804)),	-- Windstorm Hammer
 					},
 				}),
-				q(27304, {	-- Follow the Sun
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 20406 },	-- Champion Cyssa Dawnrose
-					["classes"] = { PALADIN },
-					["coord"] = { 57.8, 90.2, UNDERCITY },
-					["races"] = { TAUREN },
-				}),
 				q(737,   {	-- Forbidden Knowledge
 					["sourceQuests"] = { 736 },	-- The Star, the Hand and the Heart
 					["provider"] = { "n", 2934 },	-- Keeper Bel'dugur

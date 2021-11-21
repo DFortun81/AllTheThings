@@ -180,6 +180,103 @@ _.Instances = { tier(CLASSIC_TIER, {
 						un(REMOVED_FROM_GAME, i(12065)),	-- Ward of the Elements
 					},
 				}),
+				-- #if AFTER SHADOWLANDS
+				q(28304, {	-- Journey to Orgrimmar [Undead] (SL+) / Meet with Dark Cleric Cecille (Cata+)
+					["qgs"] = {
+						16658,	-- Aldrae <Priest Trainer>
+						3045,	-- Malakai Cross <Priest Trainer>
+						43870,	-- Seer Beryl <Priest Trainer>
+						4606,	-- Aelthalyste <Priest Trainer>
+					},
+					["coords"] = {
+						{ 53.2, 26.6, SILVERMOON_CITY },	-- Aldrae <Priest Trainer>
+						{ 24.8, 22.4, THUNDER_BLUFF },	-- Malakai Cross <Priest Trainer>
+						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
+						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
+					},
+					["timeline"] = { "added 4.0.3.10000" },
+					["classes"] = { PRIEST },
+					["races"] = { UNDEAD },
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(50, 20, 50),
+				}),
+				q(28307, {	-- Journey to Orgrimmar [Blood Elf] (SL+) / Meet with Tyelis (Cata+)
+					["qgs"] = {
+						16658,	-- Aldrae <Priest Trainer>
+						3045,	-- Malakai Cross <Priest Trainer>
+						43870,	-- Seer Beryl <Priest Trainer>
+						4606,	-- Aelthalyste <Priest Trainer>
+					},
+					["coords"] = {
+						{ 53.2, 26.6, SILVERMOON_CITY },	-- Aldrae <Priest Trainer>
+						{ 24.8, 22.4, THUNDER_BLUFF },	-- Malakai Cross <Priest Trainer>
+						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
+						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
+					},
+					["timeline"] = { "added 4.0.3.10000" },
+					["classes"] = { PRIEST },
+					["races"] = { BLOODELF },
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(50, 20, 50),
+				}),
+				q(28308, {	-- Journey to Orgrimmar [Tauren] (SL+) / Meet with Seer Liwatha (Cata+)
+					["qgs"] = {
+						16658,	-- Aldrae <Priest Trainer>
+						3045,	-- Malakai Cross <Priest Trainer>
+						43870,	-- Seer Beryl <Priest Trainer>
+						4606,	-- Aelthalyste <Priest Trainer>
+					},
+					["coords"] = {
+						{ 53.2, 26.6, SILVERMOON_CITY },	-- Aldrae <Priest Trainer>
+						{ 24.8, 22.4, THUNDER_BLUFF },	-- Malakai Cross <Priest Trainer>
+						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
+						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
+					},
+					["timeline"] = { "added 4.0.3.10000" },
+					["classes"] = { PRIEST },
+					["races"] = { TAUREN },
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(50, 20, 50),
+				}),
+				q(28309, {	-- Journey to Orgrimmar [Troll] (SL+) / Meet with Shadow-Walker Zuru (Cata+)
+					["qgs"] = {
+						16658,	-- Aldrae <Priest Trainer>
+						3045,	-- Malakai Cross <Priest Trainer>
+						43870,	-- Seer Beryl <Priest Trainer>
+						4606,	-- Aelthalyste <Priest Trainer>
+					},
+					["coords"] = {
+						{ 53.2, 26.6, SILVERMOON_CITY },	-- Aldrae <Priest Trainer>
+						{ 24.8, 22.4, THUNDER_BLUFF },	-- Malakai Cross <Priest Trainer>
+						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
+						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
+					},
+					["timeline"] = { "added 4.0.3.10000" },
+					["classes"] = { PRIEST },
+					["races"] = { TROLL },
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(50, 20, 50),
+				}),
+				q(28323, {	-- Journey to Orgrimmar [Goblin] (SL+) / Meet with Brother Silverhallow (Cata+)
+					["qgs"] = {
+						16658,	-- Aldrae <Priest Trainer>
+						3045,	-- Malakai Cross <Priest Trainer>
+						43870,	-- Seer Beryl <Priest Trainer>
+						4606,	-- Aelthalyste <Priest Trainer>
+					},
+					["coords"] = {
+						{ 53.2, 26.6, SILVERMOON_CITY },	-- Aldrae <Priest Trainer>
+						{ 24.8, 22.4, THUNDER_BLUFF },	-- Malakai Cross <Priest Trainer>
+						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
+						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
+					},
+					["timeline"] = { "added 4.0.3.10000" },
+					["classes"] = { PRIEST },
+					["races"] = { GOBLIN },
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(50, 20, 50),
+				}),
+				-- #endif
 				q(4134, {	-- Lost Thunderbrew Recipe
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
@@ -188,6 +285,171 @@ _.Instances = { tier(CLASSIC_TIER, {
 						un(REMOVED_FROM_GAME, i(11964)),	-- Swiftstrike Cudgel
 					},
 				}),
+				-- #if BEFORE SHADOWLANDS
+				q(28323, {	-- Meet with Brother Silverhallow (Cata+) / Journey to Orgrimmar [Goblin] (SL+)
+					["qgs"] = {
+						16658,	-- Aldrae <Priest Trainer>
+						3045,	-- Malakai Cross <Priest Trainer>
+						43870,	-- Seer Beryl <Priest Trainer>
+						4606,	-- Aelthalyste <Priest Trainer>
+					},
+					["coords"] = {
+						{ 53.2, 26.6, SILVERMOON_CITY },	-- Aldrae <Priest Trainer>
+						{ 24.8, 22.4, THUNDER_BLUFF },	-- Malakai Cross <Priest Trainer>
+						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
+						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
+					},
+					["timeline"] = { "added 4.0.3.10000" },
+					["classes"] = { PRIEST },
+					["races"] = { GOBLIN },
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(50, 20, 50),
+				}),
+				q(28304, {	-- Meet with Dark Cleric Cecille (Cata+) / Journey to Orgrimmar [Goblin] (SL+)
+					["qgs"] = {
+						16658,	-- Aldrae <Priest Trainer>
+						3045,	-- Malakai Cross <Priest Trainer>
+						43870,	-- Seer Beryl <Priest Trainer>
+						4606,	-- Aelthalyste <Priest Trainer>
+					},
+					["coords"] = {
+						{ 53.2, 26.6, SILVERMOON_CITY },	-- Aldrae <Priest Trainer>
+						{ 24.8, 22.4, THUNDER_BLUFF },	-- Malakai Cross <Priest Trainer>
+						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
+						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
+					},
+					["timeline"] = { "added 4.0.3.10000" },
+					["classes"] = { PRIEST },
+					["races"] = { UNDEAD },
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(50, 20, 50),
+				}),
+				q(28298, {	-- Meet with Gordul (Cata+) / Meet with Thega Graveblade (SL+)
+					["qgs"] = {
+						16684,	-- Zelanis <Rogue Trainer>
+						4584,	-- Gregory Charles <Rogue Trainer>
+					},
+					["coords"] = {
+						{ 79.4, 52.0, SILVERMOON_CITY },
+						{ 84.6, 73.2, UNDERCITY },	-- Gregory Charles (Undercity)
+					},
+					["classes"] = { ROGUE },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(50, 20, 50),
+				}),
+				-- #endif
+				-- #if AFTER SHADOWLANDS
+				q(28290, {	-- Meet with Gormok Ogrefist (SL+) / Meet with Grezz Ragefist (Cata+)
+					["qgs"] = {
+						43009,	-- Alsudar the Bastion
+						3042,	-- Sark Ragetotem
+						4593,	-- Christoph Walker
+					},
+					["coords"] = {
+						{ 81.0, 37.8, SILVERMOON_CITY },	-- Alsudar the Bastion
+						{ 57.2, 89.0, THUNDER_BLUFF },	-- Sark Ragetotem
+						{ 47.2, 15.2, UNDERCITY },	-- Christoph Walker
+					},
+					["classes"] = { WARRIOR },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(50, 20, 50),
+				}),
+				-- #endif
+				-- #if BEFORE SHADOWLANDS
+				q(28290, {	-- Meet with Grezz Ragefist (Cata+) / Meet with Gormok Ogrefist (SL+)
+					["qgs"] = {
+						43009,	-- Alsudar the Bastion
+						3042,	-- Sark Ragetotem
+						4593,	-- Christoph Walker
+					},
+					["coords"] = {
+						{ 81.0, 37.8, SILVERMOON_CITY },	-- Alsudar the Bastion
+						{ 57.2, 89.0, THUNDER_BLUFF },	-- Sark Ragetotem
+						{ 47.2, 15.2, UNDERCITY },	-- Christoph Walker
+					},
+					["classes"] = { WARRIOR },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(50, 20, 50),
+				}),
+				q(28308, {	-- Meet with Seer Liwatha (Cata+) / Journey to Orgrimmar [Tauren] (SL+)
+					["qgs"] = {
+						16658,	-- Aldrae <Priest Trainer>
+						3045,	-- Malakai Cross <Priest Trainer>
+						43870,	-- Seer Beryl <Priest Trainer>
+						4606,	-- Aelthalyste <Priest Trainer>
+					},
+					["coords"] = {
+						{ 53.2, 26.6, SILVERMOON_CITY },	-- Aldrae <Priest Trainer>
+						{ 24.8, 22.4, THUNDER_BLUFF },	-- Malakai Cross <Priest Trainer>
+						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
+						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
+					},
+					["timeline"] = { "added 4.0.3.10000" },
+					["classes"] = { PRIEST },
+					["races"] = { TAUREN },
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(50, 20, 50),
+				}),
+				q(28309, {	-- Meet with Shadow-Walker Zuru (Cata+) / Journey to Orgrimmar [Troll] (SL+)
+					["qgs"] = {
+						16658,	-- Aldrae <Priest Trainer>
+						3045,	-- Malakai Cross <Priest Trainer>
+						43870,	-- Seer Beryl <Priest Trainer>
+						4606,	-- Aelthalyste <Priest Trainer>
+					},
+					["coords"] = {
+						{ 53.2, 26.6, SILVERMOON_CITY },	-- Aldrae <Priest Trainer>
+						{ 24.8, 22.4, THUNDER_BLUFF },	-- Malakai Cross <Priest Trainer>
+						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
+						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
+					},
+					["timeline"] = { "added 4.0.3.10000" },
+					["classes"] = { PRIEST },
+					["races"] = { TROLL },
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(50, 20, 50),
+				}),
+				-- #endif
+				-- #if AFTER SHADOWLANDS
+				q(28298, {	-- Meet with Thega Graveblade (SL+) / Meet with Gordul (Cata+)
+					["qgs"] = {
+						16684,	-- Zelanis <Rogue Trainer>
+						4584,	-- Gregory Charles <Rogue Trainer>
+					},
+					["coords"] = {
+						{ 79.4, 52.0, SILVERMOON_CITY },
+						{ 84.6, 73.2, UNDERCITY },	-- Gregory Charles (Undercity)
+					},
+					["classes"] = { ROGUE },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(50, 20, 50),
+				}),
+				-- #endif
+				-- #if BEFORE SHADOWLANDS
+				q(28307, {	-- Meet with Tyelis (Cata+) / Journey to Orgrimmar [Blood Elf] (SL+)
+					["qgs"] = {
+						16658,	-- Aldrae <Priest Trainer>
+						3045,	-- Malakai Cross <Priest Trainer>
+						43870,	-- Seer Beryl <Priest Trainer>
+						4606,	-- Aelthalyste <Priest Trainer>
+					},
+					["coords"] = {
+						{ 53.2, 26.6, SILVERMOON_CITY },	-- Aldrae <Priest Trainer>
+						{ 24.8, 22.4, THUNDER_BLUFF },	-- Malakai Cross <Priest Trainer>
+						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
+						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
+					},
+					["timeline"] = { "added 4.0.3.10000" },
+					["classes"] = { PRIEST },
+					["races"] = { BLOODELF },
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(50, 20, 50),
+				}),
+				-- #endif
 				q(4132, {	-- Operation: Death to Angerforge
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
@@ -241,6 +503,61 @@ _.Instances = { tier(CLASSIC_TIER, {
 						un(REMOVED_FROM_GAME, i(12108)),	-- Basaltscale Armor
 						un(REMOVED_FROM_GAME, i(12111)),	-- Lavaplate Gauntlets
 						un(REMOVED_FROM_GAME, i(12110)),	-- Raincaster Drape
+					},
+				}),
+				q(28475, {	-- Twilight Scheming [Blood Elf]
+					["qg"] = 45337,	-- Tyelis
+					["sourceQuest"] = 28307,	-- Meet with Tyelis (Cata+) / Journey to Orgrimmar [Blood Elf] (SL+)
+					["coord"] = { 49.0, 71.0, ORGRIMMAR },
+					["classes"] = { PRIEST },
+					["races"] = { BLOODELF },
+					["groups"] = {
+						i(65634),	-- Crown of the Sunchaser
+					},
+				}),
+				q(28478, {	-- Twilight Scheming [Goblin]
+					["qg"] = 45347,	-- Brother Silverhallow
+					["sourceQuest"] = 28323,	-- Meet with Brother Silverhallow (Cata+) / Journey to Orgrimmar [Goblin] (SL+)
+					["coord"] = { 37.8, 87.4, ORGRIMMAR },
+					["classes"] = { PRIEST },
+					["races"] = { GOBLIN },
+					["groups"] = {
+						i(65637),	-- Crown of Golden Worship
+					},
+				}),
+				q(28474, {	-- Twilight Scheming [Undead]
+					["qg"] = 45339,	-- Dark Cleric Cecille
+					["sourceQuest"] = 28304,	-- Meet with Dark Cleric Cecille (Cata+) / Journey to Orgrimmar [Goblin] (SL+)
+					["coord"] = { 48.2, 72.8, ORGRIMMAR },
+					["classes"] = { PRIEST },
+					["races"] = { UNDEAD },
+					["groups"] = {
+						i(65633),	-- Crown of Forsaken Faith
+					},
+				}),
+				q(28476, {	-- Twilight Scheming [Tauren]
+					["qg"] = 44735,	-- Seer Liwatha
+					["sourceQuest"] = 28308,	-- Meet with Seer Liwatha (Cata+) / Journey to Orgrimmar [Tauren] (SL+)
+					["coord"] = { 45.4, 53.4, ORGRIMMAR },
+					["classes"] = { PRIEST },
+					["races"] = { TAUREN },
+					["groups"] = {
+						i(65635),	-- Crown of the Earthmother
+						-- You get these when completing the quest
+						i(141979),	-- Crown of the Hallowed
+						i(141980),	-- Crown of the Hallowed
+						i(141981),	-- Crown of the Hallowed
+						i(141982),	-- Crown of the Hallowed
+					},
+				}),
+				q(28477, {	-- Twilight Scheming [Troll]
+					["qg"] = 45137,	-- Shadow-Walker Zuru
+					["sourceQuest"] = 28309,	-- Meet with Shadow-Walker Zuru (Cata+) / Journey to Orgrimmar [Troll] (SL+)
+					["coord"] = { 35.4, 69.2, ORGRIMMAR },
+					["classes"] = { PRIEST },
+					["races"] = { TROLL },
+					["groups"] = {
+						i(65636),	-- Crown of the Shadow-Walker
 					},
 				}),
 				q(4324, {	-- Yuka Screwspigot

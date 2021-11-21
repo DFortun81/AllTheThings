@@ -1369,6 +1369,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 						["groups"] = {
 							o(179564, {	-- Gordok Tribute Chest
 								["description"] = "A full Tribute Run (5 items) requires leaving all bosses alive except King Gordok, and also requires activating the Frost Trap & fooling Kromcrush with the Ogre Suit, granted by the Goblin near the trap.",
+								["modelScale"] = 3,
 								["groups"] = {
 									i(18655),	-- Schematic: Major Recombobulator
 									i(18499),	-- Barrier Shield

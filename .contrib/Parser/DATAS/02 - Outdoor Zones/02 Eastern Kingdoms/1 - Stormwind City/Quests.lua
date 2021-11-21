@@ -17,16 +17,6 @@ _.Zones =
 						i(65496),	-- Staff of Justified Sins
 					},
 				}),
-				q(27363, {	-- A Budding Young Surgeon
-					["sourceQuests"] = { 27274 },	-- The Chief Surgeon
-					["provider"] = { "n", 45306 },	-- Chief Surgeon Gashweld
-					["classes"] = { PRIEST },
-					["coord"] = { 63.0, 34.2, STORMWIND_CITY },
-					["races"] = { GNOME },
-					["g"] = {
-						i(65480),	-- Staff of the Technocrat
-					},
-				}),
 				q(28393, {	-- A Dangerous Alliance
 					["sourceQuests"] = { 28258 },	-- Meet with Ander Germaine
 					["provider"] = { "n", 914 },	-- Ander Germaine
@@ -335,21 +325,6 @@ _.Zones =
 					["coord"] = { 52.7, 14.1, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(27361, {	-- Favored of the Light
-					["sourceQuests"] = { 27268 },	-- Make Haste to the Cathedral
-					-- #if ANYCLASSIC
-					["provider"] = { "n", 376 },	-- High Priestess Laurena
-					["coord"] = { 49.6, 44.8, STORMWIND_CITY },
-					-- #else
-					["provider"] = { "n", 164949 },	-- Patrice Lancaster
-					["coord"] = { 49.6, 44.8, STORMWIND_CITY },
-					-- #endif
-					["classes"] = { PRIEST },
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(65482),	-- Staff of the Hallowed
-					},
-				}),
 				q(1271,  {	-- Feast at the Blue Recluse
 					["sourceQuests"] = { 1222 },	-- Stinky's Escape
 					["provider"] = { "n", 1141 },	-- Angus Stern
@@ -630,21 +605,6 @@ _.Zones =
 						{ 43.6, 78.4, THE_EXODAR },	-- Baatun
 						{ 43.6, 78.4, DARNASSUS },	-- Rukua
 						{ 51.0, 26.2, IRONFORGE },	-- Valgar Highforge
-					},
-				}),
-				q(27268, {	-- Make Haste to the Cathedral
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { PRIEST },
-					["lvl"] = 20,
-					["qgs"] = {
-						16756,	-- Caedmos
-						11401,	-- Priestess Alathea
-						11406,	-- High Priest Rohan
-					},
-					["coords"] = {
-						{ 38.5, 50.9, THE_EXODAR },	-- Caedmos
-						{ 43.4, 79.2, DARNASSUS },	-- Priestess Alathea
-						{ 25.0, 8.2, IRONFORGE },	-- High Priest Rohan
 					},
 				}),
 				q(28258, {	-- Meet with Ander Germaine
