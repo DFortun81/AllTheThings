@@ -39,7 +39,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 				title(142),	-- Wrathful Gladiator <Name>
 			}),
 		})),
-		n(-672, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Vicious Gladiator: Cataclysm Season 1
+		n(SEASON_VICIOUS, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 			ach(5344, {	-- Hero of the Alliance: Vicious
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -50,7 +50,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 				title(191),	-- Vicious Gladiator <Name>
 			}),
 		})),
-		n(-673, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Ruthless Gladiator: Cataclysm Season 2
+		n(SEASON_RUTHLESS, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 			ach(6316, {	-- Hero of the Alliance: Ruthless
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -61,7 +61,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 				title(192),	-- Ruthless Gladiator <Name>
 			}),
 		})),
-		n(-674, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Cataclysmic Gladiator: Cataclysm Season 3
+		n(SEASON_CATACLYSMIC, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 			ach(6939, {	-- Hero of the Alliance: Cataclysmic
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -72,7 +72,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 				title(193),	-- Cataclysmic Gladiator <Name>
 			}),
 		})),
-		n(-675, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Malevolent Gladiator: Mists of Pandaria Season 1
+		n(SEASON_MALEVOLENT, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 			ach(8243, {	-- Hero of the Alliance: Malevolent
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -83,7 +83,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 				title(223),	-- Malevolent Gladiator <Name>
 			}),
 		})),
-		n(-676, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Tyrannical Gladiator: Mists of Pandaria Season 2
+		n(SEASON_TYRANNICAL, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 			ach(8652, {	-- Hero of the Alliance: Tyrannical
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -94,7 +94,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 				title(225),	-- Tyrannical Gladiator <Name>
 			}),
 		})),
-		n(-677, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Grievous Gladiator: Mists of Pandaria Season 3/Season 14
+		n(SEASON_GRIEVOUS, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 			ach(8649),	-- Challenger: WMists of Pandaria Season 3/Season 14
 			ach(8645),	-- Duelist: Mists of Pandaria Season 3/Season 14
 			ach(8644),	-- Gladiator: Mists of Pandaria Season 3/Season 14	-- Mount is listed under FoS>Mounts.
@@ -117,7 +117,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			}),
 			ach(8646),	-- Rival: Mists of Pandaria Season 3/Season 14
 		})),
-		n(-678, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Prideful Gladiator: Mists of Pandaria Season 4/Season 15
+		n(SEASON_PRIDEFUL, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 			ach(8670),	-- Challenger: Mists of Pandaria Season 4/Season 15
 			ach(8668),	-- Duelist: Mists of Pandaria Season 4/Season 15
 			ach(8667),	-- Gladiator: Mists of Pandaria Season 4/Season 15	-- Mount is listed under FoS>Mounts.

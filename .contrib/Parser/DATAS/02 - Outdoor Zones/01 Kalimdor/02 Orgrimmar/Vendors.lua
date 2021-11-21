@@ -249,7 +249,7 @@ _.Zones =
 					["coord"] = { 38.6, 70.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						{"sub", "pvp_gear_base", CATA_TIER, -673, PVP_GLADIATOR },
+						{"sub", "pvp_gear_base", CATA_TIER, SEASON_RUTHLESS, PVP_GLADIATOR },
 						{"pop"},	-- Discard the Set header and acquire the children.
 						{"exclude", "headerID", NECK, FINGER, -386 },	-- Exclude Neck, Finger and Trinkets
 					},
@@ -401,7 +401,7 @@ _.Zones =
 					["coord"] = { 38.8, 69.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						{"sub", "pvp_gear_base", CATA_TIER, -672, PVP_GLADIATOR },	-- Vicious Gladiator: Season 9 Gladiator Gear
+						{"sub", "pvp_gear_base", CATA_TIER, SEASON_VICIOUS, PVP_GLADIATOR },
 						{"pop"},	-- Discard the Set header and acquire the children.
 						{"exclude", "headerID", NECK, FINGER, -386 },	-- Exclude Neck, Finger and Trinkets
 						{"finalize"},	-- Push the Set items to the finalized list.
@@ -2551,7 +2551,7 @@ _.Zones =
 					["itemID"] = 137642,	-- Mark of Honor
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						{"sub", "pvp_gear_base", CATA_TIER, -672, PVP_HONOR },
+						{"sub", "pvp_gear_base", CATA_TIER, SEASON_VICIOUS, PVP_HONOR },
 						{"pop"},	-- Discard the Set header and acquire the children.
 					},
 				}),
@@ -3277,7 +3277,7 @@ _.Zones =
 					["coord"] = { 38.8, 70.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						{"sub", "pvp_gear_base", CATA_TIER, -674, PVP_GLADIATOR },	-- Cataclysmic Gladiator: Season 11 Gladiator Gear
+						{"sub", "pvp_gear_base", CATA_TIER, SEASON_CATACLYSMIC, PVP_GLADIATOR },
 						{"pop"},	-- Discard the Set header and acquire the children.
 						{"exclude", "headerID", NECK, FINGER, -386 },	-- Exclude Neck, Finger and Trinkets
 					},
