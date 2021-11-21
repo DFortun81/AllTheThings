@@ -57,13 +57,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(4987)),	-- Dwarf Captain's Sword
 					},
 				}),
-				q(27270, {	-- An Audience with the Farseer
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 23127 },	-- Farseer Javad
-					["classes"] = { SHAMAN },
-					["coord"] = { 55.0, 30.2, IRONFORGE },
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(38394, {	-- Completionism
 					["sourceQuests"] = { 38345 },	-- Numismatics
 					["provider"] = { "n", 6294 },	-- Krom Stoutarm
@@ -74,13 +67,6 @@ _.Zones =
 							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 					},
-				}),
-				q(27272, {	-- Demisette Sends Word
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 5173 },	-- Alexander Calder
-					["classes"] = { WARLOCK },
-					["coord"] = { 50.2, 6.8, IRONFORGE },
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(2039,  {	-- Find Bingles
 					["provider"] = { "n", 6569 },	-- Gnoarn

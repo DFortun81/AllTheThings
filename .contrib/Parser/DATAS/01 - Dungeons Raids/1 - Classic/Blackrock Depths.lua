@@ -126,6 +126,17 @@ _.Instances = { tier(CLASSIC_TIER, {
 						["sourceQuests"] = { 27585 },	-- The 109th Division
 					}),
 				}),
+				q(28457, {	-- A Dangerous Alliance
+					["qg"] = 168596,	-- Gormok Ogrefist
+					["sourceQuest"] = 28290,	-- Meet with Grezz Ragefist (Cata+) / Meet with Gormok Ogrefist (SL+)
+					["coord"] = { 73.6, 45.6, ORGRIMMAR },
+					["classes"] = { WARRIOR },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(65625),	-- Faceguard of the Horde
+						i(65642),	-- Headguard of the Horde
+					},
+				}),
 				q(4024, {	-- A Taste of Flame
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {

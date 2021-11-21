@@ -7,16 +7,6 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {
 		m(STORMWIND_CITY, {
 			n(QUESTS, {
-				q(27355, {	-- A Boon for the Powerful
-					["sourceQuests"] = { 27272 },	-- Demisette Sends Word
-					["provider"] = { "n", 461 },	-- Demisette Cloyce
-					["classes"] = { WARLOCK },
-					["coord"] = { 39.4, 84.8, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(65496),	-- Staff of Justified Sins
-					},
-				}),
 				q(28393, {	-- A Dangerous Alliance
 					["sourceQuests"] = { 28258 },	-- Meet with Ander Germaine
 					["provider"] = { "n", 914 },	-- Ander Germaine
@@ -33,17 +23,6 @@ _.Zones =
 					["provider"] = { "n", 142930 },	-- Halford Wyrmbane
 					["coord"] = { 27.7, 21.5, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(27337, {	-- A Fitting Weapon
-					["sourceQuests"] = { 27225 },	-- A Summons from Ander Germaine
-					["provider"] = { "n", 914 },	-- Ander Germaine
-					["classes"] = { WARRIOR },
-					["coord"] = { 79.4, 69.0, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(65492),	-- Broadsword of the Crown
-						i(65493),	-- Greatsword of the Crown
-					},
 				}),
 				q(46275, {	-- A Kingdom's Heart
 					["sourceQuests"] = { 46274 },	-- Consoling the King
@@ -112,16 +91,6 @@ _.Zones =
 					["coord"] = { 85.6, 31.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(27344, {	-- A Well-Earned Reward
-					["sourceQuests"] = { 27266 },	-- Wulf Calls
-					["provider"] = { "n", 44247 },	-- Wulf Hansreim
-					["classes"] = { HUNTER },
-					["coord"] = { 79.0, 71.0, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(65465),	-- Crossbow of the Crown
-					},
-				}),
 				q(62567, {	-- Adventurers Wanted: Chromie's Call
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
@@ -183,17 +152,6 @@ _.Zones =
 					["provider"] = { "n", 163219 },	-- Captain Garrick
 					["coord"] = { 85.2, 32.1, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(27353, {	-- Blessings of the Elements
-					["sourceQuests"] = { 27270 },	-- An Audience with the Farseer
-					["provider"] = { "n", 20407 },	-- Farseer Umbrua
-					["classes"] = { SHAMAN },
-					["coord"] = { 64.6, 33.0, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(65488),	-- Battleaxe of the Farseer
-						i(65489),	-- Spell Axe of the Farseer
-					},
 				}),
 				q(29412, {	-- Blown Away
 					["provider"] = { "n", 54117 },	-- Vin
@@ -1238,31 +1196,6 @@ _.Zones =
 					["coord"] = { 56.3, 17.3, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 				}),
-
-				-- TODO: ANOTHER SET OF SILLY BREADCRUMBS, PLEASE FIX.
-				q(27266, {	-- Wulf Calls
-					["provider"] = { "n", 17122 },	-- Vord
-					["coord"] = { 47.2, 88.4, THE_EXODAR },
-					["isBreadcrumb"] = true,
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { HUNTER },
-					["lvl"] = 20,
-				}),
-				q(27266, {	-- Wulf Calls
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 5115 },	-- Daera Brightspear
-					["classes"] = { HUNTER },
-					["coord"] = { 70.9, 89.8, IRONFORGE },	-- Daera Brightspear
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(27266, {	-- Wulf Calls
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 4138 },	-- Jeen'ra Nightrunner
-					["classes"] = { HUNTER },
-					["coord"] = { 43.4, 26.0, DARNASSUS },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				-- END SILL BREADCRUMB SECTION
 				q(1698,  {	-- Yorus Barleybrew
 					["provider"] = { "n", 5479 },	-- Wu Shen
 					["classes"] = { WARRIOR },

@@ -23,6 +23,35 @@ root("Instances", tier(CLASSIC_TIER, {
 		["lvl"] = lvlsquish(14, 11, 14),
 		["groups"] = {
 			n(QUESTS, {
+				q(27355, {	-- A Boon for the Powerful
+					-- #if AFTER SHADOWLANDS
+					["qg"] = 164942,	-- Evelyn Thorn <Warlock Trainer>
+					-- #else
+					["qg"] = 461,	-- Demisette Cloyce
+					-- #endif
+					["sourceQuest"] = 27272,	-- Demisette Sends Word [CATA] / A Message From Evelyn Thorn [SL+]
+					-- #if AFTER SHADOWLANDS
+					["coord"] = { 79.6, 69.8, STORMWIND_CITY },
+					-- #else
+					["coord"] = { 39.4, 84.8, STORMWIND_CITY },
+					-- #endif
+					["timeline"] = { "added 4.0.3.10000" },
+					["classes"] = { WARLOCK },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(20, 8, 20),
+					["groups"] = {
+						objective(1, {	-- 0/1 Tenebrous Orb
+							["provider"] = { "i", 60882 },	-- Tenebrous Orb
+						}),
+						objective(2, {	-- 0/1 Book of Lost Souls
+							["provider"] = { "i", 60873 },	-- Book of Lost Souls
+						}),
+						objective(3, {	-- 0/5 Ghostly Essence
+							["provider"] = { "i", 60875 },	-- Ghostly Essence
+						}),
+						i(65496),	-- Staff of Justified Sins
+					},
+				}),
 				q(27363, {	-- A Budding Young Surgeon [Gnome]
 					["qg"] = 45306,	-- Chief Surgeon Gashweld
 					["sourceQuest"] = 27274,	-- The Chief Surgeon [CATA] / Patrice Lancaster Sends Word [Gnome] [SL+]
@@ -44,6 +73,122 @@ root("Instances", tier(CLASSIC_TIER, {
 						i(65480),	-- Staff of the Technocrat
 					},
 				}),
+				q(27337, {	-- A Fitting Weapon [Alliance]
+					-- #if AFTER SHADOWLANDS
+					["qg"] = 164939,	-- Signilda Hardforge <Warrior Trainer>
+					-- #else
+					["qg"] = 914,	-- Ander Germaine
+					-- #endif
+					["sourceQuest"] = 27225,	-- A Summons from Ander Germaine
+					-- #if AFTER SHADOWLANDS
+					["coord"] = { 80.2, 70.2, STORMWIND_CITY },
+					-- #else
+					["coord"] = { 79.4, 69.0, STORMWIND_CITY },
+					-- #endif
+					["timeline"] = { "added 4.0.3.10000" },
+					["classes"] = { WARRIOR },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(20, 8, 20),
+					["groups"] = {
+						objective(1, {	-- 0/1 Silverlaine Family Sword
+							["provider"] = { "i", 60885 },	-- Silverlaine Family Sword
+						}),
+						objective(2, {	-- 0/5 Moonsteel Ingots
+							["provider"] = { "i", 60872 },	-- Moonsteel Ingots
+						}),
+						objective(3, {	-- 0/5 Deathless Sinew
+							["provider"] = { "i", 60874 },	-- Deathless Sinew
+						}),
+						i(65492),	-- Broadsword of the Crown
+						i(65493),	-- Greatsword of the Crown
+					},
+				}),
+				q(27365, {	-- A Fitting Weapon [Horde]
+					-- #if AFTER SHADOWLANDS
+					["qg"] = 168596,	-- Gormok Ogrefist
+					-- #else
+					["qg"] = 3353,	-- Grezz Ragefist
+					-- #endif
+					["sourceQuest"] = 27281,	-- Grezz Ragefist [CATA] / Gormok Ogrefist [SL+]
+					-- #if AFTER SHADOWLANDS
+					["coord"] = { 73.6, 45.6, ORGRIMMAR },
+					-- #else
+					["coord"] = { 73.8, 45.6, ORGRIMMAR },
+					-- #endif
+					["timeline"] = { "added 4.0.3.10000" },
+					["classes"] = { WARRIOR },
+					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(20, 8, 20),
+					["groups"] = {
+						objective(1, {	-- 0/1 Silverlaine Family Sword
+							["provider"] = { "i", 60885 },	-- Silverlaine Family Sword
+						}),
+						objective(2, {	-- 0/5 Moonsteel Ingots
+							["provider"] = { "i", 60872 },	-- Moonsteel Ingots
+						}),
+						objective(3, {	-- 0/5 Deathless Sinew
+							["provider"] = { "i", 60874 },	-- Deathless Sinew
+						}),
+						i(65494),	-- Broadaxe of the Horde
+						i(65495),	-- Greataxe of the Horde
+					},
+				}),
+				q(27283, {	-- A Journey to Moonglade
+					["qgs"] = {
+						44726,	-- Shalla Whiteleaf
+						44978,	-- Sesebi
+						3034,	-- Sheal Runetotem
+						52319,	-- Mala Skywatcher
+					},
+					["coords"] = {
+						{ 44.8, 51.6, ORGRIMMAR },	-- Shalla Whiteleaf
+						{ 35.0, 67.6, ORGRIMMAR },	-- Sesebi
+						{ 77.0, 27.4, THUNDER_BLUFF },	-- Sheal Runetotem
+						{ 55.0, 50.4, UNDERCITY },	-- Mala Skywatcher
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["classes"] = { DRUID },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(8, 20, 8),
+				}),
+				q(27395, {	-- A Marksman's Weapon
+					-- #if AFTER SHADOWLANDS
+					["qg"] = 168551,	-- Tamanji <Hunter Trainer>
+					["coord"] = { 73.8, 43.8, ORGRIMMAR },
+					-- #else
+					["qg"] = 3352,	-- Ormak Grimshot
+					["coord"] = { 63.8, 32.8, ORGRIMMAR },
+					-- #endif
+					["sourceQuest"] = 27278,	-- Grimshot's Call [CATA] / Tamanji's Call [SL+]
+					["timeline"] = { "added 4.0.3.13277" },
+					["classes"] = { HUNTER },
+					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(20, 8, 20),
+					["groups"] = {
+						objective(1, {	-- 0/1 Godfrey's Crystal Scope
+							["provider"] = { "i", 60877 },	-- Godfrey's Crystal Scope
+						}),
+						objective(2, {	-- 0/5 Moontouched Wood
+							["provider"] = { "i", 60871 },	-- Moontouched Wood
+						}),
+						objective(3, {	-- 0/5 Deathless Sinew
+							["provider"] = { "i", 60874 },	-- Deathless Sinew
+						}),
+						i(65466),	-- Bow of the Great Hunter
+					},
+				}),
+				-- #if AFTER SHADOWLANDS
+				q(27272, {	-- A Message From Evelyn Thorn [SL+] / Demisette Sends Word [CATA]
+					["qg"] = 5173,	-- Alexander Calder
+					["coord"] = { 50.2, 6.8, IRONFORGE },
+					["timeline"] = { "added 4.0.3.10000" },
+					["classes"] = { WARLOCK },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(20, 8, 20),
+				}),
+				-- #endif
 				q(27351, {	-- A Royal Reward
 					-- #if AFTER SHADOWLANDS
 					["qg"] = 164946,	-- Veruca Darkstream <Rogue Trainer>
@@ -183,6 +328,81 @@ root("Instances", tier(CLASSIC_TIER, {
 						i(65474),	-- Greatsword of the Sunwalker
 					},
 				}),
+				q(27344, {	-- A Well-Earned Reward
+					-- #if AFTER SHADOWLANDS
+					["qg"] = 164960,	-- Dalgrun Steelpine <Hunter Trainer>
+					["coord"] = { 79.2, 71.2, STORMWIND_CITY },
+					-- #else
+					["qg"] = 44247,	-- Wulf Hansreim
+					["coord"] = { 79.0, 71.0, STORMWIND_CITY },
+					-- #endif
+					["sourceQuest"] = 27266,	-- Wulf Calls [CATA] / Dalgrun Calls [SL+]
+					["timeline"] = { "added 4.0.3.13277" },
+					["classes"] = { HUNTER },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(8, 20, 8),
+					["groups"] = {
+						objective(1, {	-- 0/1 Godfrey's Crystal Scope
+							["provider"] = { "i", 60877 },	-- Godfrey's Crystal Scope
+						}),
+						objective(2, {	-- 0/5 Moontouched Wood
+							["provider"] = { "i", 60871 },	-- Moontouched Wood
+						}),
+						objective(3, {	-- 0/5 Deathless Sinew
+							["provider"] = { "i", 60874 },	-- Deathless Sinew
+						}),
+						i(65465),	-- Crossbow of the Crown
+					},
+				}),
+				q(27270, {	-- An Audience with the Farseer [CATA] / An Audience with Mulric [SL+]
+					["qgs"] = {
+						52292,	-- Droha
+						23127,	-- Farseer Javad
+					},
+					["coords"] = {
+						{ 43.8, 78.8, DARNASSUS },
+						{ 55.0, 30.2, IRONFORGE },
+					},
+					["timeline"] = { "added 4.0.3.10000" },
+					["classes"] = { SHAMAN },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(20, 8, 20),
+				}),
+				q(27273, {	-- An Invitation from Moonglade
+					["qgs"] = {
+						16721,	-- Shalannius
+						4217,	-- Mathrengyl Bearwalker
+						5504,	-- Sheldras Moontree (Stormwind)
+						44395,	-- Celestine of the Harvest (Stormwind)
+					},
+					["coords"] = {
+						{ 24.4, 54.4, AZUREMYST_ISLE },	-- Shalannius
+						{ 40.4, 27.6, DARNASSUS },	-- Mathrengyl Bearwalker
+						{ 27.6, 50.0, STORMWIND_CITY },	-- Sheldras Moontree
+						{ 57.6, 24.8, STORMWIND_CITY },	-- Celestine of the Harvest
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["classes"] = { DRUID },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(8, 20, 8),
+				}),
+				q(27920, {	-- Armored to the Teeth
+					["qg"] = 47006,	-- Packleader Ivar Bloodfang
+					["sourceQuest"] = 27917,	-- Sniffing Them Out
+					["timeline"] = { "added 4.0.3.10000" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(16, 8, 16),
+					["groups"] = {
+						objective(1, {	-- 0/1 Baron Silverlaine slain
+							["provider"] = { "n", 3887 },	-- Baron Silverlaine
+						}),
+						objective(2, {	-- 0/1 Commander Springvale slain
+							["provider"] = { "n", 4278 },	-- Commander Springvale
+						}),
+					},
+				}),
 				q(1014, {	-- Arugal Must Die
 					["qg"] = 1938,	-- Dalar Dawnweaver
 					["coord"] = { 44.2, 39.8, SILVERPINE_FOREST },
@@ -227,6 +447,55 @@ root("Instances", tier(CLASSIC_TIER, {
 						i(65487),	-- Blade of the Shattered Hand
 					},
 				}),
+				q(27353, {	-- Blessings of the Elements
+					-- #if AFTER SHADOWLANDS
+					["qg"] = 164945,	-- Mulric Boldrock <Shaman Trainer>
+					-- #else
+					["qg"] = 20407,	-- Farseer Umbrua
+					-- #endif
+					["sourceQuest"] = 27270,	-- An Audience with the Farseer [CATA] / An Audience with Mulric [SL+]
+					-- #if AFTER SHADOWLANDS
+					["coord"] = { 78.8, 70.8, STORMWIND_CITY },
+					-- #else
+					["coord"] = { 64.6, 33.0, STORMWIND_CITY },
+					-- #endif
+					["timeline"] = { "added 4.0.3.10000" },
+					["classes"] = { SHAMAN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(20, 8, 20),
+					["groups"] = {
+						objective(1, {	-- 0/1 Walden's Talisman
+							["provider"] = { "i", 60881 },	-- Walden's Talisman
+						}),
+						objective(2, {	-- 0/1 Book of Lost Souls
+							["provider"] = { "i", 60873 },	-- Book of Lost Souls
+						}),
+						objective(3, {	-- 0/5 Ghostly Essence
+							["provider"] = { "i", 60875 },	-- Ghostly Essence
+						}),
+						i(65488),	-- Battleaxe of the Farseer
+						i(65489),	-- Spell Axe of the Farseer
+					},
+				}),
+				-- #if AFTER SHADOWLANDS
+				q(27266, {	-- Dalgrun Calls [SL+] / Wulf Calls [CATA]
+					["qgs"] = {
+						4138,	-- Jeen'ra Nightrunner
+						5115,	-- Daera Brightspear
+						17122,	-- Vord
+					},
+					["coords"] = {
+						{ 43.4, 26.0, DARNASSUS },	-- Jeen'ra Nightrunner
+						{ 70.9, 89.8, IRONFORGE },	-- Daera Brightspear
+						{ 47.2, 88.4, THE_EXODAR },	-- Vord
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { HUNTER },
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(8, 20, 8),
+				}),
+				-- #endif
 				-- #if BEFORE SHADOWLANDS
 				q(27334, {	-- Dark Cleric Cecille [CATA] / Journey to Orgrimmar [SL+]
 					["qgs"] = {
@@ -260,6 +529,53 @@ root("Instances", tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
+				-- #if BEFORE SHADOWLANDS
+				q(27272, {	-- Demisette Sends Word [CATA] / A Message From Evelyn Thorn [SL+]
+					["qg"] = 5173,	-- Alexander Calder
+					["coord"] = { 50.2, 6.8, IRONFORGE },
+					["timeline"] = { "added 4.0.3.10000" },
+					["classes"] = { WARLOCK },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(20, 8, 20),
+				}),
+				-- #endif
+				-- #if BEFORE MOP
+				q(27397, {	-- Dreamseeker's Task [CATA] / Terga's Task [MOP] / Hretar's Task [SL+]
+					-- #if AFTER SHADOWLANDS
+					["qg"] = 168628,	-- Hretar Riverspeaker <Shaman Trainer>
+					-- #elseif AFTER MOP
+					["qg"] = 72939,	-- Terga Earthbreaker
+					-- #else
+					["qg"] = 3344,	-- Kardris Dreamseeker
+					-- #endif
+					["sourceQuest"] = 27280,	-- The Dreamseeker Calls [CATA] / The Earthbreaker Calls [MOP] / The Riverspeaker Calls [SL+]
+					-- #if AFTER SHADOWLANDS
+					["coord"] = { 73.6, 43.4, ORGRIMMAR },
+					-- #elseif AFTER MOP
+					["coord"] = { 39.0, 47.6, ORGRIMMAR },
+					-- #else
+					["coord"] = { 39.0, 47.4, ORGRIMMAR },
+					-- #endif
+					["timeline"] = { "added 4.0.3.13277" },
+					["classes"] = { SHAMAN },
+					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(20, 8, 20),
+					["groups"] = {
+						objective(1, {	-- 0/1 Walden's Talisman
+							["provider"] = { "i", 60881 },	-- Walden's Talisman
+						}),
+						objective(2, {	-- 0/1 Book of Lost Souls
+							["provider"] = { "i", 60873 },	-- Book of Lost Souls
+						}),
+						objective(3, {	-- 0/5 Ghostly Essence
+							["provider"] = { "i", 60875 },	-- Ghostly Essence
+						}),
+						i(65490),	-- Battleaxe of the Speaker
+						i(65491),	-- Spell Axe of the Speaker
+					},
+				}),
+				-- #endif
 				-- #if AFTER SHADOWLANDS
 				q(27265, {	-- Ezul'aan Calls [SL+] / Lord Grayson Shadowbreaker [CATA]
 					["qgs"] = {
@@ -329,6 +645,18 @@ root("Instances", tier(CLASSIC_TIER, {
 						i(65482),	-- Staff of the Hallowed
 					},
 				}),
+				q(27921, {	-- Fighting Tooth and Claw
+					["qg"] = 47006,	-- Packleader Ivar Bloodfang
+					["sourceQuest"] = 27920,	-- Armored to the Teeth
+					["timeline"] = { "added 4.0.3.10000" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(16, 8, 16),
+					["groups"] = {
+						objective(1, {	-- 0/1 Lord Walden slain
+							["provider"] = { "n", 46963 },	-- Lord Walden
+						}),
+					},
+				}),
 				-- #if BEFORE SHADOWLANDS
 				q(27304, {	-- Follow the Sun [CATA] / Meet with Avaros Dawnglaive [Tauren] [SL+]
 					["qgs"] = {
@@ -366,6 +694,120 @@ root("Instances", tier(CLASSIC_TIER, {
 							["provider"] = { "i", 60875 },	-- Ghostly Essence
 						}),
 						i(65479),	-- Staff of the Forsaken Faith
+					},
+				}),
+				-- #endif
+				q(27968, {	-- Fury of the Pack
+					["qg"] = 47006,	-- Packleader Ivar Bloodfang
+					["sourceQuest"] = 27921,	-- Fighting Tooth and Claw
+					["timeline"] = { "added 4.0.3.10000" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(16, 8, 16),
+					["groups"] = {
+						objective(1, {	-- 0/1 Lord Godfrey slain
+							["provider"] = { "n", 46964 },	-- Lord Godfrey
+						}),
+						i(65984),	-- Breastplate of the Terrible Price
+						i(66002),	-- Packleader's Pauldrons
+						i(65960),	-- Shadowfang Shoulderpads
+						i(65936),	-- Sandals of Sacrifice
+						i(65910),	-- Godfrey's Britches
+						i(131684, {	-- Packleader's Chain Spaulders
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+						i(131685, {	-- Boots of Painful Cost
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+					},
+				}),
+				-- #if AFTER SHADOWLANDS
+				q(27281, {	-- Gormok Ogrefist [SL+] / Grezz Ragefist [CATA]
+					["qgs"] = {
+						43009,	-- Alsudar the Bastion <Warrior Trainer>
+						3042,	-- Sark Ragetotem <Warrior Trainer>
+						4593,	-- Christoph Walker <Warrior Trainer>
+					},
+					["coords"] = {
+						{ 81.0, 37.8, SILVERMOON_CITY },	-- Alsudar the Bastion <Warrior Trainer>
+						{ 57.2, 89.0, THUNDER_BLUFF },	-- Sark Ragetotem <Warrior Trainer>
+						{ 47.2, 15.2, UNDERCITY },	-- Christoph Walker <Warrior Trainer>
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["classes"] = { WARRIOR },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(20, 8, 20),
+				}),
+				-- #endif
+				-- #if BEFORE SHADOWLANDS
+				q(27281, {	-- Grezz Ragefist [CATA] / Gormok Ogrefist [SL+]
+					["qgs"] = {
+						43009,	-- Alsudar the Bastion <Warrior Trainer>
+						3042,	-- Sark Ragetotem <Warrior Trainer>
+						4593,	-- Christoph Walker <Warrior Trainer>
+					},
+					["coords"] = {
+						{ 81.0, 37.8, SILVERMOON_CITY },	-- Alsudar the Bastion <Warrior Trainer>
+						{ 57.2, 89.0, THUNDER_BLUFF },	-- Sark Ragetotem <Warrior Trainer>
+						{ 47.2, 15.2, UNDERCITY },	-- Christoph Walker <Warrior Trainer>
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["classes"] = { WARRIOR },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(20, 8, 20),
+				}),
+				q(27278, {	-- Grimshot's Call [CATA] / Tamanji's Call [SL+]
+					["qgs"] = {
+						16674,	-- Zandine <Hunter Trainer>
+						3039,	-- Holt Thunderhorn <Hunter Trainer>
+						39116,	-- Apolos <Hunter Trainer>
+					},
+					["coords"] = {
+						{ 84.4, 28.0, SILVERMOON_CITY },	-- Zandine <Hunter Trainer>
+						{ 57.4, 89.2, THUNDER_BLUFF },	-- Holt Thunderhorn <Hunter Trainer>
+						{ 49.6, 29.0, UNDERCITY },	-- Apolos <Hunter Trainer>
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["classes"] = { HUNTER },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(20, 8, 20),
+				}),
+				-- #endif
+				-- #if AFTER SHADOWLANDS
+				q(27397, {	-- Hretar's Task [SL+] / Dreamseeker's Task [CATA] / Terga's Task [MOP]
+					-- #if AFTER SHADOWLANDS
+					["qg"] = 168628,	-- Hretar Riverspeaker <Shaman Trainer>
+					-- #elseif AFTER MOP
+					["qg"] = 72939,	-- Terga Earthbreaker
+					-- #else
+					["qg"] = 3344,	-- Kardris Dreamseeker
+					-- #endif
+					["sourceQuest"] = 27280,	-- The Dreamseeker Calls [CATA] / The Earthbreaker Calls [MOP] / The Riverspeaker Calls [SL+]
+					-- #if AFTER SHADOWLANDS
+					["coord"] = { 73.6, 43.4, ORGRIMMAR },
+					-- #elseif AFTER MOP
+					["coord"] = { 39.0, 47.6, ORGRIMMAR },
+					-- #else
+					["coord"] = { 39.0, 47.4, ORGRIMMAR },
+					-- #endif
+					["timeline"] = { "added 4.0.3.13277" },
+					["classes"] = { SHAMAN },
+					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(20, 8, 20),
+					["groups"] = {
+						objective(1, {	-- 0/1 Walden's Talisman
+							["provider"] = { "i", 60881 },	-- Walden's Talisman
+						}),
+						objective(2, {	-- 0/1 Book of Lost Souls
+							["provider"] = { "i", 60873 },	-- Book of Lost Souls
+						}),
+						objective(3, {	-- 0/5 Ghostly Essence
+							["provider"] = { "i", 60875 },	-- Ghostly Essence
+						}),
+						i(65490),	-- Battleaxe of the Speaker
+						i(65491),	-- Spell Axe of the Speaker
 					},
 				}),
 				-- #endif
@@ -464,6 +906,41 @@ root("Instances", tier(CLASSIC_TIER, {
 					["races"] = { UNDEAD },
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(20, 8, 20),
+				}),
+				q(27282, {	-- Kazak's Behest [SL+] / Zevrost's Behest [CATA] / Kranosh's Behest [WOD]
+					["qgs"] = {
+						43881,	-- Delano Morisett <Warlock Trainer>
+						4563,	-- Kaal Soulreaper <Warlock Trainer>
+						16648,	-- Zanien (Silvermoon <Warlock Trainer>
+					},
+					["coords"] = {
+						{ 25.2, 14.4, THUNDER_BLUFF },		-- Delano Morisett <Warlock Trainer>
+						{ 86.0, 15.6, UNDERCITY },		-- Kaal Soulreaper <Warlock Trainer>
+						{ 73.2, 45.2, SILVERMOON_CITY },	-- Zanien <Warlock Trainer>
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["classes"] = { WARLOCK },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(8, 20, 8),
+				}),
+				-- #elseif AFTER WOD
+				q(27282, {	-- Kranosh's Behest [WOD] / Zevrost's Behest [CATA] / Kazak's Behest [SL+]
+					["qgs"] = {
+						43881,	-- Delano Morisett <Warlock Trainer>
+						4563,	-- Kaal Soulreaper <Warlock Trainer>
+						16648,	-- Zanien (Silvermoon <Warlock Trainer>
+					},
+					["coords"] = {
+						{ 25.2, 14.4, THUNDER_BLUFF },		-- Delano Morisett <Warlock Trainer>
+						{ 86.0, 15.6, UNDERCITY },		-- Kaal Soulreaper <Warlock Trainer>
+						{ 73.2, 45.2, SILVERMOON_CITY },	-- Zanien <Warlock Trainer>
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["classes"] = { WARLOCK },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(8, 20, 8),
 				}),
 				-- #endif
 				-- #if BEFORE SHADOWLANDS
@@ -593,6 +1070,20 @@ root("Instances", tier(CLASSIC_TIER, {
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(20, 8, 20),
 				}),
+				-- #endif
+				q(27996, {	-- Orders Are For the Living
+					["qg"] = 47293,	-- Deathstalker Commander Belmont
+					["sourceQuest"] = 27988,	-- Plague...Plague Everywhere!
+					["timeline"] = { "added 4.0.3.10000" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(16, 8, 16),
+					["groups"] = {
+						objective(1, {	-- 0/1 Lord Walden slain
+							["provider"] = { "n", 46963 },	-- Lord Walden
+						}),
+					},
+				}),
+				-- #if AFTER SHADOWLANDS
 				q(27268, {	-- Patrice Lancaster Sends Word [All] [SL+] / Make Haste to the Cathedral [CATA]
 					["qgs"] = {
 						16756,	-- Caedmos
@@ -628,6 +1119,21 @@ root("Instances", tier(CLASSIC_TIER, {
 					["lvl"] = lvlsquish(20, 8, 20),
 				}),
 				-- #endif
+				q(27988, {	-- Plague...Plague Everywhere!
+					["qg"] = 47293,	-- Deathstalker Commander Belmont
+					["sourceQuests"] = { 27974 },	-- This Land is Our Land
+					["timeline"] = { "added 4.0.3.10000" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(16, 8, 16),
+					["groups"] = {
+						objective(1, {	-- 0/1 Baron Silverlaine slain
+							["provider"] = { "n", 3887 },	-- Baron Silverlaine
+						}),
+						objective(2, {	-- 0/1 Commander Springvale slain
+							["provider"] = { "n", 4278 },	-- Commander Springvale
+						}),
+					},
+				}),
 				-- #if BEFORE SHADOWLANDS
 				q(28164, {	-- Seek Brother Silverhallow [CATA] / Journey to Orgrimmar [Goblin] [SL+]
 					["qgs"] = {
@@ -687,6 +1193,17 @@ root("Instances", tier(CLASSIC_TIER, {
 					["lvl"] = lvlsquish(20, 8, 20),
 				}),
 				-- #endif
+				q(27917, {	-- Sniffing Them Out
+					["qg"] = 47006,	-- Packleader Ivar Bloodfang
+					["timeline"] = { "added 4.0.3.10000" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(16, 8, 16),
+					["groups"] = {
+						objective(1, {	-- 0/1 Baron Ashbury slain
+							["provider"] = { "n", 46962 },	-- Baron Ashbury
+						}),
+					},
+				}),
 				q(27439, {	-- Staff of the Light [Blood Elf]
 					-- #if AFTER SHADOWLANDS
 					["qg"] = 168621,	-- Martin Goodchilde <Priest Trainer>
@@ -715,6 +1232,86 @@ root("Instances", tier(CLASSIC_TIER, {
 						i(65478),	-- Staff of the Sunchaser
 					},
 				}),
+				q(27998, {	-- Sweet, Merciless Revenge
+					["qg"] = 47293,	-- Deathstalker Commander Belmont
+					["sourceQuest"] = 27988,	-- Plague...Plague Everywhere!
+					["timeline"] = { "added 4.0.3.10000" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(16, 8, 16),
+					["groups"] = {
+						objective(1, {	-- 0/1 Lord Godfrey slain
+							["provider"] = { "n", 46964 },	-- Lord Godfrey
+						}),
+						i(66038),	-- Breastplate of the Terrible Price
+						i(66044),	-- Deathstalker Pauldrons
+						i(66029),	-- Shadowfanger Shoulderpads
+						i(66020),	-- Sandals of Sacrifice
+						i(66011),	-- Godfrey's Britches
+						i(131686, {	-- Packleader's Chain Spaulders
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+						i(131687, {	-- Boots of Painful Cost
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+					},
+				}),
+				-- #if AFTER SHADOWLANDS
+				q(27278, {	-- Tamanji's Call [SL+] / Grimshot's Call [CATA]
+					["qgs"] = {
+						16674,	-- Zandine <Hunter Trainer>
+						3039,	-- Holt Thunderhorn <Hunter Trainer>
+						39116,	-- Apolos <Hunter Trainer>
+					},
+					["coords"] = {
+						{ 84.4, 28.0, SILVERMOON_CITY },	-- Zandine <Hunter Trainer>
+						{ 57.4, 89.2, THUNDER_BLUFF },	-- Holt Thunderhorn <Hunter Trainer>
+						{ 49.6, 29.0, UNDERCITY },	-- Apolos <Hunter Trainer>
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["classes"] = { HUNTER },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(20, 8, 20),
+				}),
+				-- #endif
+				-- #if AFTER MOP
+				-- #if BEFORE SHADOWLANDS
+				q(27397, {	-- Terga's Task [MOP] / Dreamseeker's Task [CATA] / Hretar's Task [SL+]
+					-- #if AFTER SHADOWLANDS
+					["qg"] = 168628,	-- Hretar Riverspeaker <Shaman Trainer>
+					-- #elseif AFTER MOP
+					["qg"] = 72939,	-- Terga Earthbreaker
+					-- #else
+					["qg"] = 3344,	-- Kardris Dreamseeker
+					-- #endif
+					["sourceQuest"] = 27280,	-- The Dreamseeker Calls [CATA] / The Earthbreaker Calls [MOP] / The Riverspeaker Calls [SL+]
+					-- #if AFTER SHADOWLANDS
+					["coord"] = { 73.6, 43.4, ORGRIMMAR },
+					-- #elseif AFTER MOP
+					["coord"] = { 39.0, 47.6, ORGRIMMAR },
+					-- #else
+					["coord"] = { 39.0, 47.4, ORGRIMMAR },
+					-- #endif
+					["timeline"] = { "added 4.0.3.13277" },
+					["classes"] = { SHAMAN },
+					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(20, 8, 20),
+					["groups"] = {
+						objective(1, {	-- 0/1 Walden's Talisman
+							["provider"] = { "i", 60881 },	-- Walden's Talisman
+						}),
+						objective(2, {	-- 0/1 Book of Lost Souls
+							["provider"] = { "i", 60873 },	-- Book of Lost Souls
+						}),
+						objective(3, {	-- 0/5 Ghostly Essence
+							["provider"] = { "i", 60875 },	-- Ghostly Essence
+						}),
+						i(65490),	-- Battleaxe of the Speaker
+						i(65491),	-- Spell Axe of the Speaker
+					},
+				}),
+				-- #endif
+				-- #endif
 				q(27434, {	-- The Adept's Path
 					-- #if AFTER SHADOWLANDS
 					["qg"] = 168597,	-- Avaros Dawnglaive <Paladin Trainer>
@@ -774,6 +1371,52 @@ root("Instances", tier(CLASSIC_TIER, {
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(20, 8, 20),
 				}),
+				-- #endif
+				q(27356, {	-- The Circle's Future [Alliance]
+					["qg"] = 12042,	-- Loganaar
+					["sourceQuest"] = 27273,	-- An Invitation from Moonglade
+					["coord"] = { 52.4, 40.4, MOONGLADE },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { DRUID },
+					["lvl"] = lvlsquish(8, 20, 8),
+					["groups"] = {
+						objective(1, {	-- 0/1 Walden's Elixirs
+							["provider"] = { "i", 60876 },	-- Walden's Elixirs
+						}),
+						objective(2, {	-- 0/5 Moontouched Wood
+							["provider"] = { "i", 60871 },	-- Moontouched Wood
+						}),
+						objective(3, {	-- 0/5 Ghostly Essence
+							["provider"] = { "i", 60875 },	-- Ghostly Essence
+						}),
+						i(65461),	-- Staff of the Green Circle
+						i(65462),	-- Staff of the Verdant Circle
+					},
+				}),
+				q(27404, {	-- The Circle's Future [Horde]
+					["qg"] = 12042,	-- Loganaar
+					["sourceQuest"] = 27283,	-- A Journey to Moonglade
+					["coord"] = { 52.4, 40.4, MOONGLADE },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+					["classes"] = { DRUID },
+					["lvl"] = lvlsquish(8, 20, 8),
+					["groups"] = {
+						objective(1, {	-- 0/1 Walden's Elixirs
+							["provider"] = { "i", 60876 },	-- Walden's Elixirs
+						}),
+						objective(2, {	-- 0/5 Moontouched Wood
+							["provider"] = { "i", 60871 },	-- Moontouched Wood
+						}),
+						objective(3, {	-- 0/5 Ghostly Essence
+							["provider"] = { "i", 60875 },	-- Ghostly Essence
+						}),
+						i(65463),	-- Staff of the Green Circle
+						i(65464),	-- Staff of the Verdant Circle
+					},
+				}),
+				-- #if BEFORE SHADOWLANDS
 				q(27437, {	-- The Dark Cleric's Bidding [CATA] / Forsaken Faith [SL+]
 					["qg"] = 45339,	-- Dark Cleric Cecille
 					["sourceQuest"] = 27334,	-- Dark Cleric Cecille [CATA] / Journey to Orgrimmar [SL+]
@@ -795,6 +1438,43 @@ root("Instances", tier(CLASSIC_TIER, {
 						i(65479),	-- Staff of the Forsaken Faith
 					},
 				}),
+				-- #if BEFORE MOP
+				q(27280, {	-- The Dreamseeker Calls [CATA] / The Earthbreaker Calls [MOP] / The Riverspeaker Calls [SL+]
+					["qgs"] = {
+						16661,	-- Gez'li
+						51639,	-- Kador Cloudsong
+						3032,	-- Beram Skychaser <Shaman Trainer>
+					},
+					["coords"] = {
+						{ 71.8, 56.0, SILVERMOON_CITY },
+						{ 22.2, 19.0, THUNDER_BLUFF },
+						{ 22.0, 18.8, THUNDER_BLUFF },
+					},
+					["timeline"] = { "added 4.0.3.10000" },
+					["classes"] = { SHAMAN },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(20, 8, 20),
+				}),
+				-- #else
+				q(27280, {	-- The Earthbreaker Calls [MOP] / The Dreamseeker Calls [CATA] / The Riverspeaker Calls [SL+]
+					["qgs"] = {
+						16661,	-- Gez'li
+						51639,	-- Kador Cloudsong
+						3032,	-- Beram Skychaser <Shaman Trainer>
+					},
+					["coords"] = {
+						{ 71.8, 56.0, SILVERMOON_CITY },
+						{ 22.2, 19.0, THUNDER_BLUFF },
+						{ 22.0, 18.8, THUNDER_BLUFF },
+					},
+					["timeline"] = { "added 4.0.3.10000" },
+					["classes"] = { SHAMAN },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(20, 8, 20),
+				}),
+				-- #endif
 				-- #endif
 				q(27343, {	-- The Hand of the Light
 					-- #if AFTER SHADOWLANDS
@@ -849,6 +1529,25 @@ root("Instances", tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
+				-- #if AFTER SHADOWLANDS
+				q(27280, {	-- The Riverspeaker Calls [SL+] / The Dreamseeker Calls [CATA] / The Earthbreaker Calls [MOP]
+					["qgs"] = {
+						16661,	-- Gez'li
+						51639,	-- Kador Cloudsong
+						3032,	-- Beram Skychaser <Shaman Trainer>
+					},
+					["coords"] = {
+						{ 71.8, 56.0, SILVERMOON_CITY },
+						{ 22.2, 19.0, THUNDER_BLUFF },
+						{ 22.0, 18.8, THUNDER_BLUFF },
+					},
+					["timeline"] = { "added 4.0.3.10000" },
+					["classes"] = { SHAMAN },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(20, 8, 20),
+				}),
+				-- #endif
 				-- #if BEFORE SHADOWLANDS
 				q(27331, {	-- The Seer's Call [CATA] / Journey to Orgrimmar [Tauren] [SL+]
 					["qgs"] = {
@@ -921,91 +1620,88 @@ root("Instances", tier(CLASSIC_TIER, {
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(20, 8, 20),
 				}),
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				-- https://www.wowhead.com/item=60885/silverlaine-family-sword#objective-of
-				-- https://www.wowhead.com/item=60881/waldens-talisman#objective-of
-				-- https://www.wowhead.com/item=60876/waldens-elixirs#objective-of
-				--q(27395),	-- A Marksman's Weapon
-				
-				--q(27344),	-- A Well-Earned Reward
-				--q(27355),	-- A Boon for the Powerful
-				q(27920, {	-- Armored to the Teeth
-					["sourceQuests"] = { 27917 },	-- Sniffing Them Out
-					["provider"] = { "n", 47706 },	-- Packleader Ivar Bloodfang
-					["timeline"] = { "added 4.0.3.10000" },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(27921, {	-- Fighting Tooth and Claw
-					["sourceQuests"] = { 27920 },	-- Armored to the Teeth
-					["provider"] = { "n", 47706 },	-- Packleader Ivar Bloodfang
-					["timeline"] = { "added 4.0.3.10000" },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(27968, {	-- Fury of the Pack
-					["sourceQuests"] = { 27921 },	-- Fighting Tooth and Claw
-					["provider"] = { "n", 47706 },	-- Packleader Ivar Bloodfang
-					["timeline"] = { "added 4.0.3.10000" },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(65984),	-- Breastplate of the Terrible Price
-						i(66002),	-- Packleader's Pauldrons
-						i(65960),	-- Shadowfang Shoulderpads
-						i(65936),	-- Sandals of Sacrifice
-						i(65910),	-- Godfrey's Britches
-						i(131684),	-- Packleader's Chain Spaulders
-						i(131685),	-- Boots of Painful Cost
-					},
-				}),
-				q(27996, {	-- Orders Are For the Living
-					["sourceQuests"] = { 27988 },	-- Plague...Plague Everywhere!
-					["provider"] = { "n", 47293 },	-- Deathstalker Commander Belmont
-					["timeline"] = { "added 4.0.3.10000" },
-					["races"] = HORDE_ONLY,
-				}),
-				
-				q(27988, {	-- Plague...Plague Everywhere!
-					["sourceQuests"] = { 27974 },	-- This Land is Our Land
-					["provider"] = { "n", 47293 },	-- Deathstalker Commander Belmont
-					["timeline"] = { "added 4.0.3.10000" },
-					["races"] = HORDE_ONLY,
-				}),
-				q(27917, {	-- Sniffing Them Out
-					["provider"] = { "n", 47706 },	-- Packleader Ivar Bloodfang
-					["timeline"] = { "added 4.0.3.10000" },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(27998, {	-- Sweet, Merciless Revenge
-					["sourceQuests"] = { 27988 },	-- Plague...Plague Everywhere!
-					["provider"] = { "n", 47293 },	-- Deathstalker Commander Belmont
-					["timeline"] = { "added 4.0.3.10000" },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(66038),	-- Breastplate of the Terrible Price
-						i(66044),	-- Deathstalker Pauldrons
-						i(66029),	-- Shadowfanger Shoulderpads
-						i(66020),	-- Sandals of Sacrifice
-						i(66011),	-- Godfrey's Britches
-						i(131686),	-- Packleader's Chain Spaulders
-						i(131687),	-- Boots of Painful Cost
-					},
-				}),
-				
 				q(27974, {	-- This Land is Our Land
-					["provider"] = { "n", 47293 },	-- Deathstalker Commander Belmont
+					["qg"] = 47293,	-- Deathstalker Commander Belmont
 					["timeline"] = { "added 4.0.3.10000" },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(16, 8, 16),
+					["groups"] = {
+						objective(1, {	-- 0/1 Baron Ashbury slain
+							["provider"] = { "n", 46962 },	-- Baron Ashbury
+						}),
+					},
 				}),
-				--q(27402),	-- Token of Power
+				q(27402, {	-- Token of Power
+					-- #if AFTER SHADOWLANDS
+					["qg"] = 168623,	-- Kazak Darkscream <Warlock Trainer>
+					-- #elseif AFTER WOD
+					["qg"] = 88705,	-- Kranosh
+					-- #else
+					["qg"] = 3326,	-- Zevrost <Warlock Trainer>
+					-- #endif
+					["sourceQuest"] = 27282,	-- Zevrost's Behest [CATA] / Kranosh's Behest [WOD] / Kazak's Behest [SL+]
+					-- #if AFTER SHADOWLANDS
+					["coord"] = { 74.6, 47.2, ORGRIMMAR },
+					-- #elseif AFTER WOD
+					["coord"] = { 76.8, 37.4, ORGRIMMAR },
+					-- #else
+					["coord"] = { 53.5, 49.6, ORGRIMMAR },
+					-- #endif
+					["timeline"] = { "added 4.0.3.10000" },
+					["classes"] = { WARLOCK },
+					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(20, 8, 20),
+					["groups"] = {
+						objective(1, {	-- 0/1 Tenebrous Orb
+							["provider"] = { "i", 60882 },	-- Tenebrous Orb
+						}),
+						objective(2, {	-- 0/1 Book of Lost Souls
+							["provider"] = { "i", 60873 },	-- Book of Lost Souls
+						}),
+						objective(3, {	-- 0/5 Ghostly Essence
+							["provider"] = { "i", 60875 },	-- Ghostly Essence
+						}),
+						i(65497),	-- Staff of the Left Hand Path
+					},
+				}),
+				-- #if BEFORE SHADOWLANDS
+				q(27266, {	-- Wulf Calls [CATA] / Dalgrun Calls [SL+]
+					["qgs"] = {
+						4138,	-- Jeen'ra Nightrunner
+						5115,	-- Daera Brightspear
+						17122,	-- Vord
+					},
+					["coords"] = {
+						{ 43.4, 26.0, DARNASSUS },	-- Jeen'ra Nightrunner
+						{ 70.9, 89.8, IRONFORGE },	-- Daera Brightspear
+						{ 47.2, 88.4, THE_EXODAR },	-- Vord
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { HUNTER },
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(8, 20, 8),
+				}),
+				-- #endif
+				-- #if BEFORE WOD
+				q(27282, {	-- Zevrost's Behest [CATA] / Kranosh's Behest [WOD] / Kazak's Behest [SL+]
+					["qgs"] = {
+						43881,	-- Delano Morisett <Warlock Trainer>
+						4563,	-- Kaal Soulreaper <Warlock Trainer>
+						16648,	-- Zanien (Silvermoon <Warlock Trainer>
+					},
+					["coords"] = {
+						{ 25.2, 14.4, THUNDER_BLUFF },		-- Delano Morisett <Warlock Trainer>
+						{ 86.0, 15.6, UNDERCITY },		-- Kaal Soulreaper <Warlock Trainer>
+						{ 73.2, 45.2, SILVERMOON_CITY },	-- Zanien <Warlock Trainer>
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["classes"] = { WARLOCK },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(8, 20, 8),
+				}),
+				-- #endif
 			}),
 			-- #if AFTER CATA
 			d(1, {	-- Normal
@@ -1218,6 +1914,13 @@ root("Instances", tier(CLASSIC_TIER, {
 						i(132566, {	-- Dark Lupine Wraps
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
+					},
+				}),
+				o(205476, {	-- Book of Lost Souls
+					["description"] = "This item in located on a chair in Lord Walden's room.",
+					["timeline"] = { "added 4.0.3" },
+					["groups"] = {
+						i(60873),	-- Book of Lost Souls
 					},
 				}),
 				n(4274, {	-- Fenrus the Devourer

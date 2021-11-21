@@ -6,17 +6,6 @@ _.Zones =
 	m(KALIMDOR, {
 		m(ORGRIMMAR, {
 			n(QUESTS, {
-				q(28457, {	-- A Dangerous Alliance
-					["qg"] = 168596,	-- Gormok Ogrefist
-					["sourceQuest"] = 28290,	-- Meet with Grezz Ragefist (Cata+) / Meet with Gormok Ogrefist (SL+)
-					["coord"] = { 73.6, 45.6, ORGRIMMAR },
-					["classes"] = { WARRIOR },
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(65625),	-- Faceguard of the Horde
-						i(65642),	-- Headguard of the Horde
-					},
-				}),
 				q(7831,  {	-- A Donation of Mageweave
 					["provider"] = { "n", 14726 },	-- Rashona Straglash
 					["races"] = HORDE_ONLY,
@@ -57,55 +46,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(27365, {	-- A Fitting Weapon
-					-- #if AFTER SHADOWLANDS
-					["qg"] = 168596,	-- Gormok Ogrefist
-					["coord"] = { 73.6, 45.6, ORGRIMMAR },
-					-- #else
-					["qg"] = 3353,	-- Grezz Ragefist
-					["coord"] = { 73.8, 45.6, ORGRIMMAR },
-					-- #endif
-					["sourceQuest"] = 27281,	-- Grezz Ragefist (Cata+) / Gormok Ogrefist (SL+)
-					["classes"] = { WARRIOR },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(65494),	-- Broadaxe of the Horde
-						i(65495),	-- Greataxe of the Horde
-					},
-				}),
-				q(27283, {	-- A Journey to Moonglade
-					["isBreadcrumb"] = true,
-					["providers"] = {
-						{ "n", 44726 },	-- Shalla Whiteleaf
-						{ "n", 44978 },	-- Sesebi
-					},
-					["classes"] = { DRUID },
-					["coords"] = {
-						{ 44.8, 51.6, ORGRIMMAR },	-- Shalla Whiteleaf
-						{ 35.0, 67.6, ORGRIMMAR },	-- Sesebi
-					},
-					["races"] = HORDE_ONLY,
-				}),
 				q(13266, {	-- A Life Without Regret
 					["sourceQuests"] = { 13257 },	-- Herald of War
 					["provider"] = { "n", 31412 },	-- Thrall
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(27395, {	-- A Marksman's Weapon
-					-- #if AFTER SHADOWLANDS
-					["qg"] = 168551,	-- Tamanji <Hunter Trainer>
-					["coord"] = { 73.8, 43.8, ORGRIMMAR },
-					-- #else
-					["qg"] = 3352,	-- Ormak Grimshot
-					["coord"] = { 63.8, 32.8, ORGRIMMAR },
-					-- #endif
-					["sourceQuest"] = 27278,	-- Grimshot's Call (Cata+) / Tamanji's Call (SL+)
-					["classes"] = { HUNTER },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(65466),	-- Bow of the Great Hunter
-					},
 				}),
 				q(50341, {	-- A Recent Discovery
 					["sourceQuests"] = { 49977 },	-- Summons to Orgrimmar
@@ -337,63 +282,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				-- #if AFTER SHADOWLANDS
-				q(27281, {	-- Gormok Ogrefist (SL+) / Grezz Ragefist (Cata+)
-					["qgs"] = {
-						43009,	-- Alsudar the Bastion <Warrior Trainer>
-						3042,	-- Sark Ragetotem <Warrior Trainer>
-						4593,	-- Christoph Walker <Warrior Trainer>
-					},
-					["coords"] = {
-						{ 81.0, 37.8, SILVERMOON_CITY },	-- Alsudar the Bastion <Warrior Trainer>
-						{ 57.2, 89.0, THUNDER_BLUFF },	-- Sark Ragetotem <Warrior Trainer>
-						{ 47.2, 15.2, UNDERCITY },	-- Christoph Walker <Warrior Trainer>
-					},
-					["timeline"] = { "added 4.0.3.13277" },
-					["classes"] = { WARRIOR },
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 8, 20),
-				}),
-				-- #endif
-				-- #if BEFORE SHADOWLANDS
-				q(27281, {	-- Grezz Ragefist (Cata+) / Gormok Ogrefist (SL+)
-					["qgs"] = {
-						43009,	-- Alsudar the Bastion <Warrior Trainer>
-						3042,	-- Sark Ragetotem <Warrior Trainer>
-						4593,	-- Christoph Walker <Warrior Trainer>
-					},
-					["coords"] = {
-						{ 81.0, 37.8, SILVERMOON_CITY },	-- Alsudar the Bastion <Warrior Trainer>
-						{ 57.2, 89.0, THUNDER_BLUFF },	-- Sark Ragetotem <Warrior Trainer>
-						{ 47.2, 15.2, UNDERCITY },	-- Christoph Walker <Warrior Trainer>
-					},
-					["timeline"] = { "added 4.0.3.13277" },
-					["classes"] = { WARRIOR },
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 8, 20),
-				}),
-				-- #endif
-				-- #if BEFORE SHADOWLANDS
-				q(27278, {	-- Grimshot's Call (Cata+) / Tamanji's Call (SL+)
-					["qgs"] = {
-						16674,	-- Zandine <Hunter Trainer>
-						3039,	-- Holt Thunderhorn <Hunter Trainer>
-						39116,	-- Apolos <Hunter Trainer>
-					},
-					["coords"] = {
-						{ 84.4, 28.0, SILVERMOON_CITY },	-- Zandine <Hunter Trainer>
-						{ 57.4, 89.2, THUNDER_BLUFF },	-- Holt Thunderhorn <Hunter Trainer>
-						{ 49.6, 29.0, UNDERCITY },	-- Apolos <Hunter Trainer>
-					},
-					["timeline"] = { "added 4.0.3.13277" },
-					["classes"] = { HUNTER },
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 8, 20),
-				}),
-				-- #endif
 				q(5726, {	-- Hidden Enemies (1/5)
 					["qg"] = 4949,	-- Thrall <Warchief>
 					["coord"] = { 32.0, 37.8, ORGRIMMAR },
@@ -511,42 +399,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				-- #if AFTER SHADOWLANDS
-				q(27282, {	-- Kazak's Behest (SL+) / Kranosh's Behest (WOD+) / Zevrost's Behest (Cata+)
-					["qgs"] = {
-						43881,	-- Delano Morisett <Warlock Trainer>
-						4563,	-- Kaal Soulreaper <Warlock Trainer>
-						16648,	-- Zanien (Silvermoon <Warlock Trainer>
-					},
-					["coords"] = {
-						{ 25.2, 14.4, THUNDER_BLUFF },		-- Delano Morisett <Warlock Trainer>
-						{ 86.0, 15.6, UNDERCITY },		-- Kaal Soulreaper <Warlock Trainer>
-						{ 73.2, 45.2, SILVERMOON_CITY },	-- Zanien <Warlock Trainer>
-					},
-					["classes"] = { WARLOCK },
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(8, 20, 8),
-				}),
-				-- #endif
-				-- #if AFTER WOD
-				q(27282, {	-- Kranosh's Behest (WOD+) / Kazak's Behest (SL+) / Zevrost's Behest (Cata+)
-					["qgs"] = {
-						43881,	-- Delano Morisett <Warlock Trainer>
-						4563,	-- Kaal Soulreaper <Warlock Trainer>
-						16648,	-- Zanien (Silvermoon <Warlock Trainer>
-					},
-					["coords"] = {
-						{ 25.2, 14.4, THUNDER_BLUFF },		-- Delano Morisett <Warlock Trainer>
-						{ 86.0, 15.6, UNDERCITY },		-- Kaal Soulreaper <Warlock Trainer>
-						{ 73.2, 45.2, SILVERMOON_CITY },	-- Zanien <Warlock Trainer>
-					},
-					["classes"] = { WARLOCK },
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(8, 20, 8),
-				}),
-				-- #endif
 				q(1945,  {	-- Laughing Sisters
 					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,
@@ -734,21 +586,6 @@ _.Zones =
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-				}),
-				q(27280, {	-- The Earthbreaker Calls
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 51639 },	-- Kador Cloudsong
-					["classes"] = { SHAMAN },
-					["coord"] = { 22.2, 19.0, THUNDER_BLUFF },
-					["races"] = HORDE_ONLY,
-				}),
-				q(27280, {	-- The Earthbreaker Calls
-					["provider"] = { "n", 16661 },	-- Gez'li
-					["coord"] = { 71.8, 56.0, SILVERMOON_CITY },
-					["isBreadcrumb"] = true,
-					["races"] = HORDE_ONLY,
-					["classes"] = { SHAMAN },
-					["lvl"] = 20,
 				}),
 				q(28302, {	-- Meet with Sunwalker Atohmo
 					["isBreadcrumb"] = true,
@@ -944,36 +781,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				-- #if AFTER SHADOWLANDS
-				q(27278, {	-- Tamanji's Call (SL+) / Grimshot's Call (Cata+)
-					["qgs"] = {
-						16674,	-- Zandine <Hunter Trainer>
-						3039,	-- Holt Thunderhorn <Hunter Trainer>
-						39116,	-- Apolos <Hunter Trainer>
-					},
-					["coords"] = {
-						{ 84.4, 28.0, SILVERMOON_CITY },	-- Zandine <Hunter Trainer>
-						{ 57.4, 89.2, THUNDER_BLUFF },	-- Holt Thunderhorn <Hunter Trainer>
-						{ 49.6, 29.0, UNDERCITY },	-- Apolos <Hunter Trainer>
-					},
-					["timeline"] = { "added 4.0.3.13277" },
-					["classes"] = { HUNTER },
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 8, 20),
-				}),
-				-- #endif
-				q(27397, {	-- Terga's Task
-					["sourceQuests"] = { 27280 },	-- The Earthbreaker Calls
-					["provider"] = { "n", 3344 },	-- Kardris Dreamseeker
-					["classes"] = { SHAMAN },
-					["coord"] = { 39.0, 47.4, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(65490),	-- Battleaxe of the Speaker
-						i(65491),	-- Spell Axe of the Speaker
-					},
-				}),
 				q(235,   {	-- The Ashenvale Hunt
 					["provider"] = { "n", 10880 },	-- Warcaller Gorlach
 					["races"] = HORDE_ONLY,
@@ -1134,16 +941,6 @@ _.Zones =
 					["provider"] = { "n", 45244 },	-- Farseer Krogar
 					["coord"] = { 50.4, 38.2, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-				}),
-				q(27402, {	-- Token of Power
-					["qg"] = 88705,	-- Kranosh
-					["sourceQuest"] = 27282,	-- Zevrost's Behest (Cata+) / Kranosh's Behest (WOD+) / Kazak's Behest (SL+)
-					["coord"] = { 76.8, 37.4, ORGRIMMAR },
-					["classes"] = { WARLOCK },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(65497),	-- Staff of the Left Hand Path
-					},
 				}),
 				q(26830, {	-- Traitor's Bait
 					["sourceQuests"] = { 26798 },	-- Saurfang Will be Pleased
@@ -1352,24 +1149,6 @@ _.Zones =
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 				}),
-				-- #if BEFORE WOD
-				q(27282, {	-- Zevrost's Behest (Cata+) / Kranosh's Behest (WOD+) / Kazak's Behest (SL+)
-					["qgs"] = {
-						43881,	-- Delano Morisett <Warlock Trainer>
-						4563,	-- Kaal Soulreaper <Warlock Trainer>
-						16648,	-- Zanien (Silvermoon <Warlock Trainer>
-					},
-					["coords"] = {
-						{ 25.2, 14.4, THUNDER_BLUFF },		-- Delano Morisett <Warlock Trainer>
-						{ 86.0, 15.6, UNDERCITY },		-- Kaal Soulreaper <Warlock Trainer>
-						{ 73.2, 45.2, SILVERMOON_CITY },	-- Zanien <Warlock Trainer>
-					},
-					["classes"] = { WARLOCK },
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(8, 20, 8),
-				}),
-				-- #endif
 			}),
 		}),
 	}),

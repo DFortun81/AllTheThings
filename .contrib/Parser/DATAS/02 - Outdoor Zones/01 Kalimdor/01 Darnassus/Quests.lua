@@ -7,13 +7,6 @@ _.Zones =
 	m(KALIMDOR, {
 		m(DARNASSUS, {
 			n(QUESTS, {
-				q(27270, {	-- An Audience with the Farseer
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 52292 },	-- Droha
-					["classes"] = { SHAMAN },
-					["coord"] = { 43.8, 78.8, DARNASSUS },
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(6342,  {	-- An Unexpected Gift
 					["sourceQuests"] = { 6341 },	-- To Darnassus
 					["provider"] = { "n", 7316 },	-- Sister Aquinne

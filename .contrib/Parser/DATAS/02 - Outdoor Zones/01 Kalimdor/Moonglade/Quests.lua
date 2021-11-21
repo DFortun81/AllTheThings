@@ -14,33 +14,6 @@ _.Zones =
 				q(29298, {	-- A Smoke-Stained Locket
 					["provider"] = { "i", 69854 },	-- Smoke-Stained Locket
 				}),
-				q(27273, {	-- An Invitation from Moonglade
-					["isBreadcrumb"] = true,
-					["providers"] = {
-						{ "n", 5504 },	-- Sheldras Moontree (Stormwind)
-						{ "n", 44395 },	-- Celestine of the Harvest (Stormwind)
-					},
-					["classes"] = { DRUID },
-					["coords"] = {
-						{ 27.6, 50.0, STORMWIND_CITY },	-- Sheldras Moontree
-						{ 57.6, 24.8, STORMWIND_CITY },	-- Celestine of the Harvest
-					},
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(27273, {	-- An Invitation from Moonglade
-					["qg"] = 16721,	-- Shalannius
-					["coord"] = { 24.4, 54.4, AZUREMYST_ISLE },
-					["classes"] = { DRUID },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-				}),
-				q(27273, {	-- An Invitation from Moonglade
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 4217 },	-- Mathrengyl Bearwalker
-					["classes"] = { DRUID },
-					["coord"] = { 40.4, 27.6, DARNASSUS },
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(5061,  {	-- Aquatic Form
 					["hordeQuestID"] = 31,
 					["u"] = REMOVED_FROM_GAME,
@@ -105,30 +78,6 @@ _.Zones =
 					["g"] = {
 						i(65638),	-- Headdress of the Green Circle
 						i(65617),	-- Headdress of the Verdant Circle
-					},
-				}),
-				q(27356, {	-- The Circle's Future
-					["provider"] = { "n", 12042 },	-- Loganaar
-					["coord"] = { 52.4, 40.4, MOONGLADE },
-					["sourceQuest"] = 27273,	-- An Invitation from Moonglade
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { DRUID },
-					["lvl"] = 20,
-					["g"] = {
-						i(65461),	-- Staff of the Green Circle
-						i(65462),	-- Staff of the Verdant Circle
-					},
-				}),
-				q(27404, {	-- The Circle's Future
-					["provider"] = { "n", 12042 },	-- Loganaar
-					["coord"] = { 52.4, 40.4, MOONGLADE },
-					["sourceQuest"] = 27283,	-- A Journey to Moonglade
-					["races"] = HORDE_ONLY,
-					["classes"] = { DRUID },
-					["lvl"] = 20,
-					["g"] = {
-						i(65463),	-- Staff of the Green Circle
-						i(65464),	-- Staff of the Verdant Circle
 					},
 				}),
 				q(29303, {	-- Tragedy and Family
