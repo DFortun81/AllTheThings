@@ -1038,3 +1038,72 @@ pet(186536, 3105);	-- Turquoise Baubleworm
 -- PATCH 9.1.5 --
 -----------------
 pet(186553, 3107);	-- Gurgl
+
+
+-----------------
+-- PATCH 9.2.0 --
+-----------------
+-- *Have Source and is in pet Journal also
+-- Protoform Synthesis
+pet(189363, 3223);	-- Ambystan Darter
+pet(189369, 3179);	-- Archetype of Animation
+pet(189380, 3207);	-- Archetype of Cunning
+pet(187795, 3174);	-- Archetype of Discovery
+pet(187713, 3169);	-- Archetype of Focus
+pet(189383, 3211);	-- Archetype of Malice
+pet(187928, 3197);	-- Archetype of Metamorphosis
+pet(187803, 3178);	-- Archetype of Motion
+pet(189375, 3189);	-- Archetype of Multiplicity
+pet(189381, 3201);	-- Archetype of Predation
+pet(189371, 3229);	-- Archetype of Renewal
+pet(189367, 3220);	-- Archetype of Satisfaction
+pet(189382, 3181);	-- Archetype of Serenity
+pet(189364, 3204);	-- Archetype of Survival
+pet(189377, 3233);	-- Archetype of Vigilance
+pet(189376, 3235);	-- Gastropodling
+pet(189374, 3232);	-- Leaping Leporid
+pet(189368, 3226);	-- Multichicken
+pet(187734, 3171);	-- Omnipotential Core
+pet(189373, 3231);	-- Prototickles
+pet(187733, 3170);	-- Resonant Echo
+pet(189378, 3222);	-- Shelly
+pet(189370, 3227);	-- Stabilized Geomental
+pet(189365, 3224);	-- Stabilized Scarabid
+pet(189372, 3230);	-- Terror Jelly
+pet(187798, 3176);	-- Tunneling Vombata
+pet(189366, 3225);	-- Violent Poultrid
+pet(189379, 3234);	-- Viperid Menace
+-- Quest
+pet(189585, 3237);	-- E'rnee
+
+-- Treasures 
+pet(187735, 3172);	-- Geordy (Anima Shell?)
+
+-- Torghast
+pet(188679, 3221);	-- Lightless Tormentor
+
+-- Rest of iDS
+--[[
+3173
+3180
+3190
+3191
+3196
+3200
+3202
+3203
+3205
+3206
+3208
+3209
+3210
+3212
+3213
+3214
+3215
+3216
+3217
+3218
+3219
+--]]
+
