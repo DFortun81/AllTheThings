@@ -173,9 +173,6 @@ _.Zones =
 					["provider"] = { "n", 177586 },	-- Baroness Draka
 					["coord"] = { 62.8, 66.0, THE_MAW },
 				}),
-				q(63135, {	-- Coldheart Flight Routes
-					["provider"] = { "i", 180801 },	-- Coldheart Flight Routes
-				}),
 				q(60762, {	-- Death Motes
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["isWeekly"] = true,
@@ -334,9 +331,6 @@ _.Zones =
 					["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, THE_MAW },
-				}),
-				q(63155, {	-- Indecipherable Map
-					["provider"] = { "i", 183058 },	-- Indecipherable Map
 				}),
 				q(62654, {	-- Maw Walker
 					["sourceQuests"] = { 59973 },	-- A Bond Beyond Death

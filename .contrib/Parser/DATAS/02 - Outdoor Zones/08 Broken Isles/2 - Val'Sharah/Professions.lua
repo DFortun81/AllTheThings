@@ -230,29 +230,6 @@ _.Zones =
 					}),
 					i(137695),	-- Schematic: Reaves Module: Wormhole Generator Mode
 				}),
-				prof(HERBALISM, {
-					q(40018, {	-- Dreamleaf Sample
-						["requireSkill"] = HERBALISM,
-						["provider"] = { "i", 129118 },	-- Dreamleaf Sample
-					}),
-					q(40020, {	-- Twisted to Death
-						["requireSkill"] = HERBALISM,
-						["sourceQuest"] = 40019,	-- An Empathetic Herb
-						["provider"] = { "i", 129136 },	-- Blight-Twisted Herb
-					}),
-					q(40022, {	-- Choked by Nightmare
-						["requireSkill"] = HERBALISM,
-						["sourceQuest"] = 40021,	-- One Dead Plant is One Too Many
-						["provider"] = { "i", 129141 },	-- Blight-Choked Herb
-					}),
-					q(40040, {	-- Felwort Sample
-						["requireSkill"] = HERBALISM,
-						["provider"] = { "i", 129122 },	-- Felwort Sample
-						["g"] = {
-							recipe(193307),	-- Felwort [Rank 1]
-						},
-					}),
-				}),
 				prof(SKINNING, {
 					q(40143, {	-- Unfinished Treatise on the Properties of Stormscale
 						["sourceQuests"] = { 40142 },	-- The Core of the Stormscale

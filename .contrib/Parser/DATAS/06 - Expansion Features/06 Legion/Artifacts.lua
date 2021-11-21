@@ -27,11 +27,11 @@ local thisSideUpAch = {};
 _.Achievements =
 {
 	achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, {
-		n(-9974, {	-- Archaeology
+		achcat(ACHIEVEMENT_CATEGORY_ARCHAEOLOGY, bubbleDown({ ["requireSkill"] = ARCHAEOLOGY },{
 			ach(10603, {	-- A Keen Eye
 				ach(10602, {["groups"] = thisSideUpAch}),		-- This Side Up
 			}),
-		}),
+		})),
 	}),
 };
 local oldcl = cl;

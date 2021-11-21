@@ -17,16 +17,6 @@ _.Zones =
 						i(65496),	-- Staff of Justified Sins
 					},
 				}),
-				q(27363, {	-- A Budding Young Surgeon
-					["sourceQuests"] = { 27274 },	-- The Chief Surgeon
-					["provider"] = { "n", 45306 },	-- Chief Surgeon Gashweld
-					["classes"] = { PRIEST },
-					["coord"] = { 63.0, 34.2, STORMWIND_CITY },
-					["races"] = { GNOME },
-					["g"] = {
-						i(65480),	-- Staff of the Technocrat
-					},
-				}),
 				q(28393, {	-- A Dangerous Alliance
 					["sourceQuests"] = { 28258 },	-- Meet with Ander Germaine
 					["provider"] = { "n", 914 },	-- Ander Germaine
@@ -79,22 +69,6 @@ _.Zones =
 					["provider"] = { "n", 119357 },	-- Anduin Wrynn
 					["coord"] = { 85.9, 34.3, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(27351, {	-- A Royal Reward
-					["sourceQuests"] = { 27267 },	-- Make Contact with SI:7
-					["providers"] = {
-						{ "n", 51998 },	-- Arthur Huwe
-						{ "n", 13283 },	-- Lord Tony Romano
-					},
-					["classes"] = { ROGUE },
-					["coords"] = {
-						{ 79.6, 61.2, STORMWIND_CITY },	-- Arthur Huwe
-						{ 79.6, 60.8, STORMWIND_CITY },	-- Lord Tony Romano
-					},
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(65486),	-- SI:7 Special Issue Dagger
-					},
 				}),
 				q(27225, {	-- A Summons from Ander Germaine
 					["qgs"] = {
@@ -335,21 +309,6 @@ _.Zones =
 					["coord"] = { 52.7, 14.1, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(27361, {	-- Favored of the Light
-					["sourceQuests"] = { 27268 },	-- Make Haste to the Cathedral
-					-- #if ANYCLASSIC
-					["provider"] = { "n", 376 },	-- High Priestess Laurena
-					["coord"] = { 49.6, 44.8, STORMWIND_CITY },
-					-- #else
-					["provider"] = { "n", 164949 },	-- Patrice Lancaster
-					["coord"] = { 49.6, 44.8, STORMWIND_CITY },
-					-- #endif
-					["classes"] = { PRIEST },
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(65482),	-- Staff of the Hallowed
-					},
-				}),
 				q(1271,  {	-- Feast at the Blue Recluse
 					["sourceQuests"] = { 1222 },	-- Stinky's Escape
 					["provider"] = { "n", 1141 },	-- Angus Stern
@@ -565,16 +524,6 @@ _.Zones =
 						i(7509),	-- Manaweave Robe	-- NOTE: Item still available
 					},
 				}),
-				q(27354, {	-- Mastering the Arcane
-					["sourceQuests"] = { 27271 },	-- Journey to the Wizard's Sanctum
-					["provider"] = { "n", 331 },	-- Maginor Dumas
-					["classes"] = { MAGE },
-					["coord"] = { 49.2, 87.6, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(65467),	-- Staff of the Royal Wizard
-					},
-				}),
 				q(1703,  {	-- Mathiel
 					["sourceQuests"] = { 1701 },	-- Fire Hardened Mail
 					["provider"] = { "n", 5413 },	-- Furen Longbeard
@@ -614,37 +563,6 @@ _.Zones =
 						{ 47.2, 61.8, THE_EXODAR },	-- Edirah
 						{ 37.6, 80.0, DARNASSUS },	-- Tarelvir
 						{ 51.0, 26.2, IRONFORGE },	-- Nittlebur Sparkfizzle
-					},
-				}),
-				q(27265, {	-- Lord Grayson Shadowbreaker
-					["isBreadcrumb"] = true,
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { PALADIN },
-					["lvl"] = 20,
-					["qgs"] = {
-						16761,	-- Baatun
-						35281,	-- Rukua
-						5147,	-- Valgar Highforge
-					},
-					["coords"] = {
-						{ 43.6, 78.4, THE_EXODAR },	-- Baatun
-						{ 43.6, 78.4, DARNASSUS },	-- Rukua
-						{ 51.0, 26.2, IRONFORGE },	-- Valgar Highforge
-					},
-				}),
-				q(27268, {	-- Make Haste to the Cathedral
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { PRIEST },
-					["lvl"] = 20,
-					["qgs"] = {
-						16756,	-- Caedmos
-						11401,	-- Priestess Alathea
-						11406,	-- High Priest Rohan
-					},
-					["coords"] = {
-						{ 38.5, 50.9, THE_EXODAR },	-- Caedmos
-						{ 43.4, 79.2, DARNASSUS },	-- Priestess Alathea
-						{ 25.0, 8.2, IRONFORGE },	-- High Priest Rohan
 					},
 				}),
 				q(28258, {	-- Meet with Ander Germaine
@@ -1014,18 +932,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(65619),	-- Helm of the Crown
-					},
-				}),
-				q(27343, {	-- The Hand of the Light
-					["sourceQuests"] = { 27265 },	-- Lord Grayson Shadowbreaker
-					["provider"] = { "n", 928 },	-- Lord Grayson Shadowbreaker
-					["classes"] = { PALADIN },
-					["coord"] = { 52.6, 45.0, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(65475),	-- Mace of the Order
-						i(65476),	-- Gavel of the Order
-						i(65477),	-- Warhammer of the Order
 					},
 				}),
 				q(29547, {	-- The King's Command

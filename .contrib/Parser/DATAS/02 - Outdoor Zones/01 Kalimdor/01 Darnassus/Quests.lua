@@ -44,16 +44,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(11871)),	-- Snarkshaw Spaulders
 					},
 				}),
-				q(27362, {	-- Favored of Elune
-					["sourceQuests"] = { 27269 },	-- The Temple of the Moon
-					["provider"] = { "n", 7999 },	-- Tyrande Whisperwind
-					["classes"] = { PRIEST },
-					["coord"] = { 43.0, 77.8, DARNASSUS },
-					["races"] = { NIGHTELF },
-					["g"] = {
-						i(65483),	-- Moon Staff of Elune
-					},
-				}),
 				q(7671,  {	-- Frostsaber Replacement
 					["u"] = REMOVED_FROM_GAME,
 					["repeatable"] = true,
@@ -75,13 +65,6 @@ _.Zones =
 					["provider"] = { "i", 46876 },	-- Riding Training Pamphlet
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(27267, {	-- Make Contact with SI:7
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 4214 },	-- Erion Shadewhisper
-					["classes"] = { ROGUE },
-					["coord"] = { 40.0, 39.6, DARNASSUS },
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(4493,  {	-- March of the Silithid [Alliance]
 					["sourceQuests"] = { 162 },	-- Rise of the Silithid [Alliance]
@@ -174,13 +157,6 @@ _.Zones =
 					["coord"] = { 57.8, 34.4, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(27269, {	-- The Temple of the Moon
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 11401 },	-- Priestess Alathea
-					["classes"] = { PRIEST },
-					["coord"] = { 43.4, 79.2, DARNASSUS },
-					["races"] = { NIGHTELF },
 				}),
 				q(1038,  {	-- Velinde's Effects
 					["sourceQuests"] = { 1037 },	-- Velinde Starsong

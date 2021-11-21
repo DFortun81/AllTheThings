@@ -375,7 +375,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	}),
 });
 _.HiddenQuestTriggers = {
-	q(60635),	-- Night Fae Mission Table
+	-- Misson Table
+	q(60635),	-- Night Fae Mission Table / Unknown Venthyr
 
 	-- RENOWN TRIGGERS
 	q(64082),	-- Renown 73 (WQ Reward increase)

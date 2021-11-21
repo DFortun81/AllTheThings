@@ -4961,13 +4961,13 @@ fieldConverters = {
 	end,
 	["coord"] = function(group, value)
 		-- don't cache mapID from coord for anything which is itself an actual instance or a map
-		if currentInstance ~= group and not group.mapID then
+		if currentInstance ~= group and not rawget(group, "mapID") and not rawget(group, "difficultyID") then
 			if value[3] then cacheMapID(group, value[3], true); end
 		end
 	end,
 	["coords"] = function(group, value)
 		-- don't cache mapID from coord for anything which is itself an actual instance or a map
-		if currentInstance ~= group and not group.mapID then
+		if currentInstance ~= group and not rawget(group, "mapID") and not rawget(group, "difficultyID") then
 			for _,coord in ipairs(value) do
 				if coord[3] then cacheMapID(group, coord[3], true); end
 			end
@@ -7911,7 +7911,14 @@ local fields = {
 	end,
 	["trackable"] = app.ReturnTrue,
 	["collectible"] = function(t)
-		return app.CollectibleReputations;
+		if app.CollectibleReputations then
+			-- If your reputation is higher than the maximum for a different faction, return partial completion.
+			if not app.AccountWideReputations and t.maxReputation and t.maxReputation[1] ~= t.factionID and (select(3, GetFactionInfoByID(t.maxReputation[1])) or 4) >= app.GetFactionStanding(t.maxReputation[2]) then
+				return false;
+			end
+			return true;
+		end
+		return false;
 	end,
 	["collected"] = function(t)
 		local factionID = t.factionID;
@@ -7931,11 +7938,6 @@ local fields = {
 
 		-- If there's an associated achievement, return partial completion.
 		if t.achievementID and select(4, GetAchievementInfo(t.achievementID)) then
-			return 2;
-		end
-
-		-- If your reputation is higher than the maximum for a different faction, return partial completion.
-		if t.maxReputation and t.maxReputation[1] ~= factionID and (select(3, GetFactionInfoByID(t.maxReputation[1])) or 4) >= app.GetFactionStanding(t.maxReputation[2]) then
 			return 2;
 		end
 
@@ -9844,8 +9846,7 @@ app.GetCurrentMapID = function()
 	local uiMapID = C_Map_GetBestMapForUnit("player");
 	if uiMapID then
 		local map = C_Map_GetMapInfo(uiMapID);
-		if map and (map.mapType == 0 or map.mapType == 1 or map.mapType == 2) then
-			-- Onyxia's Lair fix
+		if map then
 			local ZONE_TEXT_TO_MAP_ID = app.L["ZONE_TEXT_TO_MAP_ID"];
 			local real = GetRealZoneText();
 			local otherMapID = real and ZONE_TEXT_TO_MAP_ID[real];
@@ -11276,7 +11277,7 @@ app.CreateVignette = function(id, t)
 end
 end)();
 
--- Will print a warning message and play a warning sound if the given QuestID begin completed will prevent being able to complete a breadcrumb
+-- Will print a warning message and play a warning sound if the given QuestID being completed will prevent being able to complete a breadcrumb
 -- (as far as ATT is capable of knowing)
 app.CheckForBreadcrumbPrevention = function(title, questID)
 	local nextQuests = app.SearchForField("nextQuests", questID);
@@ -12952,8 +12953,8 @@ local function MinimapButtonOnEnter(self)
 	local reference = app:GetDataCache();
 	GameTooltip:SetOwner(self, "ANCHOR_LEFT");
 	GameTooltip:ClearLines();
-	GameTooltip:AddDoubleLine(L["TITLE"], GetProgressColorText(reference.progress, reference.total));
-	GameTooltip:AddDoubleLine(app.Settings:GetModeString(), app.GetNumberOfItemsUntilNextPercentage(reference.progress, reference.total), 1, 1, 1);
+	GameTooltip:AddDoubleLine(reference.text, GetProgressColorText(reference.progress, reference.total));
+	GameTooltip:AddDoubleLine(reference.mb_title1, reference.mb_title2, 1, 1, 1);
 	GameTooltip:AddLine(L["DESCRIPTION"], 0.4, 0.8, 1, 1);
 	GameTooltip:AddLine(L["MINIMAP_MOUSEOVER_TEXT"], 1, 1, 1);
 	GameTooltip:Show();
@@ -15210,8 +15211,10 @@ function app:GetDataCache()
 		allData = setmetatable({}, {
 			__index = function(t, key)
 				if key == "title" then
-					return app.Settings:GetModeString() .. DESCRIPTION_SEPARATOR .. app.GetNumberOfItemsUntilNextPercentage(t.progress, t.total);
+					return t.mb_title1..DESCRIPTION_SEPARATOR..t.mb_title2;
 				end
+				if key == "mb_title1" then return app.Settings:GetModeString(); end
+				if key == "mb_title2" then return t.total == 0 and L["MAIN_LIST_REQUIRES_REFRESH"] or app.GetNumberOfItemsUntilNextPercentage(t.progress, t.total); end
 			end
 		});
 		allData.expanded = true;
@@ -16741,6 +16744,13 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			["holidayID"] = app.CreateHoliday,
 			["instanceID"] = app.CreateInstance,
 		};
+		-- set of keys for headers which can be nested in the minilist within an Instance automatically, but not confined to a direct top header
+		local subGroupInstanceKeys = {
+			["filterID"] = app.CreateFilter,
+			["professionID"] = app.CreateProfession,
+			["raceID"] = app.CreateRace,
+			["holidayID"] = app.CreateHoliday,
+		};
 		-- Keep a static collection of top-level groups in the list so they can just be referenced for adding new
 		local topHeaders = {
 		-- ACHIEVEMENTS = -4
@@ -16788,6 +16798,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				-- Simplify the returned groups
 				local groups, nested = {};
 				local header = app.CreateMap(self.mapID, { g = groups });
+				local inInstance = IsInInstance();
 				for _,group in ipairs(results) do
 					-- do not use any raw Source groups in the final list
 					group = CreateObject(group);
@@ -16811,6 +16822,14 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					else
 						-- Get the header chain for the group
 						local topHeader;
+						local groupKey, typeHeaderID = group.key;
+						-- pre-emptively determine the expected top header for this 'thing' based on its key
+						for headerID,key in pairs(topHeaders) do
+							if groupKey == key then
+								typeHeaderID = headerID;
+								break;
+							end
+						end
 						local nextParent, headerID = group.parent;
 
 						-- Pre-nest some groups based on their type after grabbing the parent
@@ -16823,25 +16842,28 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 						-- Building the header chain for each mapped Thing
 						while nextParent do
 							headerID = nextParent.headerID;
-							if headerID then
-								-- This matches a top-level header, track that top-level header at the highest point
-								if topHeaders[headerID] then
-									-- already found a matching header, then nest it before switching
-									if topHeader then
-										group = CreateHeaderData(group, topHeader);
-									end
-									topHeader = nextParent;
-								elseif not ignoredHeaders[headerID] then
-									group = CreateHeaderData(group, nextParent);
-									nested = true;
-								end
-							else
-								for hkey,hf in pairs(subGroupKeys) do
-									if nextParent[hkey] then
-										-- create the specified group Type header
+							-- this is the Type header which has already been determined based on the mapped Thing, so skip nesting at this level
+							if typeHeaderID ~= headerID then
+								if headerID then
+									-- This matches a top-level header, track that top-level header at the highest point
+									if topHeaders[headerID] then
+										-- already found a matching header, then nest it before switching
+										if topHeader then
+											group = CreateHeaderData(group, topHeader);
+										end
+										topHeader = nextParent;
+									elseif not ignoredHeaders[headerID] then
 										group = CreateHeaderData(group, nextParent);
 										nested = true;
-										break;
+									end
+								else
+									for hkey,hf in pairs(inInstance and subGroupInstanceKeys or subGroupKeys) do
+										if nextParent[hkey] then
+											-- create the specified group Type header
+											group = CreateHeaderData(group, nextParent);
+											nested = true;
+											break;
+										end
 									end
 								end
 							end
@@ -16852,20 +16874,16 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 							group = CreateHeaderData(group, topHeader);
 							nested = true;
 						end
+						-- and based on the Type of the original Thing if it was never listed under any matching top headers
+						if typeHeaderID then
+							group = app.CreateNPC(typeHeaderID, CreateHeaderData(group));
+							nested = true;
+						end
 					end
 
 					-- couldn't nest this thing using custom headers, try to use the key of the group to figure it out
 					if not nested and group then
 						local groupKey = group.key;
-						-- print("manual nest by type",group.key,group.key and group[group.key])
-						for headerID,key in pairs(topHeaders) do
-							if groupKey == key then
-								-- print("nest as",headerID)
-								group = app.CreateNPC(headerID, CreateHeaderData(group));
-								nested = true;
-								break;
-							end
-						end
 						-- really really special cases...
 						-- Battle Pets get a raw Filter group
 						if not nested and groupKey == "speciesID" then
@@ -16932,7 +16950,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				-- sort only the top layer of groups if not in an instance, force visible so sort goes through
 				-- print(GetInstanceInfo());
 				-- sort top level by name if not in an instance
-				if not self.data.instanceID then
+				if not GetRelativeValue(self.data, "instanceID") then
 					SortGroup(self.data, "name");
 				end
 				-- and conditionally sort the entire list (sort groups which contain 'mapped' content)

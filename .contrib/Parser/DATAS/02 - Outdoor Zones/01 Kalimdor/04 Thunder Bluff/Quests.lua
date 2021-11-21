@@ -101,13 +101,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(6720)),	-- Spirit Hunter's Headdress
 					},
 				}),
-				q(27304, {	-- Follow the Sun
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 43795 },	-- Aponi Brightmane
-					["classes"] = { PALADIN },
-					["coord"] = { 63.2, 79.8, THUNDER_BLUFF },
-					["races"] = { TAUREN },
-				}),
 				q(1064,  {	-- Forsaken Aid
 					["sourceQuests"] = { 1063 },	-- The Elder Crone
 					["provider"] = { "n", 4046 },	-- Magatha Grimtotem

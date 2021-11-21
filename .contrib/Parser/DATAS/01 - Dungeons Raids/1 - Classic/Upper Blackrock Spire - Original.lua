@@ -185,13 +185,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 					["g"] = {
 						i(18779, {	-- Bottom Half of Advanced Armorsmithing: Volume 1
 							["description"] = "Combine with the Top Half of Advanced Armorsmithing: Volume 1.",
-							["g"] = {
-								i(18769, {	-- Enchanted Thorium Platemail [Item was removed from the game and turned into gray item Torn Scroll]
-									q(7649, {	-- Enchanted Thorium Platemail: Volume 1
-										un(REMOVED_FROM_GAME, i(12727)),	-- Plans: Enchanted Thorium Breastplate
-									}),
-								}),
-							},
 						}),
 						i(12834, {	-- Plans: Arcanite Champion
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe

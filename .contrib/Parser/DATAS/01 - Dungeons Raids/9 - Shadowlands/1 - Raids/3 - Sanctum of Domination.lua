@@ -1329,7 +1329,6 @@ _.HiddenQuestTriggers = {
 	q(64332),	-- Eye of the Jailer (Heroic-Week 2)
 	q(64333),	-- Eye of the Jailer (Mythic)
 	q(64630),	-- Eye of the Jailer (Normal / Heroic) (Heroic-Week 2)
-	q(64632),	-- Eye of the Jailer (Heroic)
 	q(64657),	-- Eye of the Jailer (Normal / Heroic) (Heroic-Week 2)
 
 	q(64334),	-- The Nine (Normal / Heroic) (Heroic-Week 2)

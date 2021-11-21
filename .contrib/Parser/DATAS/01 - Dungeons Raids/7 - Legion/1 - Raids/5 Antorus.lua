@@ -24,6 +24,13 @@ _.Instances = { tier(LEGION_TIER, {
 		["lvl"] = { 45 },
 		["g"] = {
 			n(QUESTS, {
+				q(48954, {	-- Blood of a Titan
+					["provider"] = { "i", 152900 },	-- Blood of the Unmaker
+					["timeline"] = { "added 7.3", "removed 8.0" },
+					["g"] = {
+						un(REMOVED_FROM_GAME, i(152901)),	-- Kirin Tor Summoning Cystal (MOUNT!)
+					},
+				}),
 				q(49077, {	-- Moments of Reflection
 					["provider"] = { "n", 129429 },	-- Alor'idal Crystal
 				}),
@@ -1233,11 +1240,7 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				}),
 				cr(124828, e(2031, {	-- Argus the Unmaker
-					un(REMOVED_FROM_GAME, i(152900, {	-- Blood of the Unmaker (HEROIC+ ONLY)
-						q(48954, {	-- Blood of a Titan
-							un(REMOVED_FROM_GAME, i(152901)),	-- Kirin Tor Summoning Cystal (MOUNT!)
-						}),
-					})),
+					un(REMOVED_FROM_GAME, i(152900)),	-- Blood of the Unmaker
 					un(REMOVED_FROM_GAME, ach(12110)),	-- Ahead of the Curve: Argus the Unmaker
 					ach(12257),	-- Stardust Crusaders
 					i(153115),	-- Scythe of the Unmaker [BLUE]
@@ -1651,11 +1654,7 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				}),
 				cr(124828, e(2031, {	-- Argus the Unmaker
-					un(REMOVED_FROM_GAME, i(152900, {	-- Blood of the Unmaker  (HEROIC+ ONLY)
-						q(48954, {	-- Blood of a Titan
-							un(REMOVED_FROM_GAME, i(152901)),	-- Kirin Tor Summoning Cystal (MOUNT!)
-						}),
-					})),
+					un(REMOVED_FROM_GAME, i(152900)),	-- Blood of the Unmaker
 					un(REMOVED_FROM_GAME, ach(12110)),	-- Ahead of the Curve: Argus the Unmaker
 					un(REMOVED_FROM_GAME, ach(12111)),	-- Cutting Edge: Argus the Unmaker
 					un(REMOVED_FROM_GAME, ach(12258)),	-- Realm First! Argus the Unmaker

@@ -214,7 +214,7 @@ _.Zones =
 				q(9850,  {	-- Clefthoof Mastery
 					["provider"] = { "n", 18180 },	-- Hemet Nesingwary
 					["coord"] = { 71.5, 40.8, NAGRAND },
-					["sourceQuest"] = 9855,	-- Clefthoof Mastery
+					["sourceQuest"] = 9789,	-- Clefthoof Mastery
 				}),
 				q(9851,  {	-- Clefthoof Mastery
 					["provider"] = { "n", 18180 },	-- Hemet Nesingwary

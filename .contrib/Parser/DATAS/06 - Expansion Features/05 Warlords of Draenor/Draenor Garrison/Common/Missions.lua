@@ -210,7 +210,7 @@ _.ExpansionFeatures =
 					-- tormented gear above is based on varying follower levels, so it makes sense for each to have a separate description
 					-- munificent, turbulent, and grandiose tokens below are each in their own bracket
 					-- maybe group each category under one header instead of having the same description on each token?
-						n(-493, bubbleDown({ ["u"] = 45, ["description"] = "If you obtain this item, please report to the ATT Discord with screenshots of the item and level/ilvl of followers", },{	-- Broken Mission Loot
+						n(-493, sharedData({ ["u"] = 45, ["description"] = "If you see this item as a reward on your Garrion Mission Table, please report to the ATT Discord with screenshots of the item and level/ilvl of your active followers", },{	-- Broken Mission Loot
 							i(114109, {	-- Munificent Armament
 							--["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
 								["g"] = {
