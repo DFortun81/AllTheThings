@@ -2768,6 +2768,7 @@ _.HiddenQuestTriggers = {
 			q(59688),	-- triggered when using "Dredger Party Supplies" (177237)
 			q(59689),	-- triggered when using "Generous Gift" (177238)
 			q(59690),	-- triggered when using "Racing Permit," reward from "It's Race Day in the Ramparts!" WQ
+			q(59692),	-- triggered when using "Venthyr Arsenal"
 			q(59693),	-- triggered when using "Kyrian Arsenal"
 			q(59695),	-- triggered when using "Maldraxxi Challenge Banner"
 			q(61453),	-- triggered when using "Training Dummies" (181437)

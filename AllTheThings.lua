@@ -1990,6 +1990,26 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange)
 		-- TODO: put more info in here as it will be copy-paste into Discord
 	};
 end
+-- Checks a given quest reference against the current character info to see if something is inaccurate
+app.CheckInaccurateQuestInfo = function(questRef, questChange)
+	if questRef and questRef.questID then
+		-- print("CheckInaccurateQuestInfo",questRef.questID,questChange)
+		local id = questRef.questID;
+		-- TODO: change filtering technique so we can do app.CharacterFilter(questRef) to bypass any Account filtering active
+		if not (app.RequiredSkillFilter(questRef)
+			and app.ClassRequirementFilter(questRef)
+			and app.RaceRequirementFilter(questRef)
+			and app.RequireCustomCollectFilter(questRef)) then
+			local popupID = "quest-filter-" .. id;
+			if app:SetupReportDialog(popupID, "Inaccurate Quest Info: " .. id,
+				app.BuildDiscordQuestInfoTable(id, "inaccurate-quest", questChange)
+			) then
+				local reportMsg = app:Linkify(L["REPORT_INACCURATE_QUEST"], "f7b531", "dialog:" .. popupID);
+				Callback(app.print, reportMsg);
+			end
+		end
+	end
+end
 local PrintQuestInfo = function(questID, new, info)
 	if app.IsReady and app.Settings:GetTooltipSetting("Report:CompletedQuests") then
 		local searchResults = app.SearchForField("questID", questID);
@@ -2035,19 +2055,8 @@ local PrintQuestInfo = function(questID, new, info)
 				questID = app:Linkify(questID, "149bfd", "search:questID:" .. id);
 			end
 			-- This quest doesn't meet the filter for this character, then ask to report in chat
-			-- TODO: change filtering technique so we can do app.CharacterFilter(questRef) to bypass any Account filtering active
-			if questChange == "accepted" and
-				not (app.RequiredSkillFilter(questRef)
-					and app.ClassRequirementFilter(questRef)
-					and app.RaceRequirementFilter(questRef)
-					and app.RequireCustomCollectFilter(questRef)) then
-				local popupID = "quest-filter-" .. id;
-				if app:SetupReportDialog(popupID, "Inaccurate Quest Info: " .. id,
-					app.BuildDiscordQuestInfoTable(id, "inaccurate-quest", questChange)
-				) then
-					local reportMsg = app:Linkify(L["REPORT_INACCURATE_QUEST"], "f7b531", "dialog:" .. popupID);
-					Callback(app.print, reportMsg);
-				end
+			if questChange == "accepted" then
+				DelayedCallback(app.CheckInaccurateQuestInfo, 1, questRef, questChange);
 			end
 		end
 		print("Quest",questChange,questID,(info or ""));

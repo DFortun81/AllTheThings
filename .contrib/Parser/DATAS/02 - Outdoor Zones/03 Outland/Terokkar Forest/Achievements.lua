@@ -43,6 +43,13 @@ _.Zones =
 							["sourceQuests"] = {
 								10042,	-- Kill the Shadow Council!
 								10035,	-- Torgos!
+								10022,	-- The Elusive Ironjaw
+								-- TODO: not 100% sure if every quest below is required
+								10012,	-- Fel Orc Plans
+								10007,	-- Thinning the Ranks
+								10869,	-- Thin the Flock
+								9986,	-- Stymying the Arakkoa
+								10028,	-- Vessels of Power
 							},
 						}),
 					},
