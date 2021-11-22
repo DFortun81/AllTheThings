@@ -995,6 +995,8 @@ for key,value in pairs({
 	[21015] = "Traces de sabot",	-- Hoofprints	--TODO: This was taken from classic Wowhead
 	[21042] = "Ecusson de la garde de Theramore",	-- Theramore Guard Badge
 	[35251] = "Coffre de Karnitol",	-- Karnitol's Chest
+	[37099] = "Tablette atal'ai",	-- Atal'ai Tablet
+	[91138] = "Marteau de Jordan",	-- Jordan's Hammer
 	[112948] = "Coffre verrouillé de l'Intrépide",	-- Intrepid's Locked Strongbox
 	[113757] = "Cachette d'Ombreforge",	-- Shadowforge Cache
 	[123329] = "Coffre de Baelog",	-- Baelog's Chest
@@ -1014,6 +1016,7 @@ for key,value in pairs({
 	[144063] = "Monolithe d'Equinex",	-- Equinex Monolith
 	[148502] = "|cFFFFFFFFStep 1:|r Page 9",	-- |cFFFFFFFFStep 1:|r Page 9
 	[148504] = "Une tombe ostentatoire",	-- A Conspicuous Gravestone
+	[149036] = "Coffre de Marvon",	-- Marvon's Chest
 	[149502] = "Trésor du Vol noir",	-- Hoard of the Black Dragonflight
 	[160836] = "Coffret à relique",	-- Relic Coffer
 	[161495] = "Coffre secret",	-- Secret Safe
@@ -1053,6 +1056,7 @@ for key,value in pairs({
 	[178144] = "Coffre de Troll",	-- Troll Chest
 	[178227] = "Panier à Totems de Murgut",	-- Murgut's Totem Basket
 	[179485] = "Piège cassé",	-- A Broken Trap
+	[179499] = "Panier de tanin ogre",	-- Ogre Tannin Basket
 	[179501] = "Réserve de Noué Dédodevie",	-- Knot Thimblejack's Cache
 	[179564] = "Tribut des Gordok",	-- Gordok Tribute Chest
 	[179697] = "Coffre au trésor de l'arène",	-- Arena Treasure Chest
@@ -1089,6 +1093,7 @@ for key,value in pairs({
 	[181748] = "Cristal de sang",	-- Blood Crystal
 	[181756] = "Livre ancien endommagé",	-- Battered Ancient Book
 	[181889] = "Avis de recherche",	-- Wanted Poster
+	[182011] = "Caisse de lingots",	-- Crate of Ingots
 	[182032] = "Journal de Galaen",	-- Galaen's Journal
 	[182058] = "Chariot à viande du Fléau",	-- Scourge Meat Wagon
 	[182115] = "Avis de recherche",	-- Wanted Poster
@@ -1302,6 +1307,7 @@ for key,value in pairs({
 	[205266] = "Disque élaboré",	-- Elaborate Disc
 	[205332] = "Avis de recherche",	-- Wanted Poster
 	[205350] = "Panneau de communication de la Horde",	-- Horde Communication Panel
+	[205476] = "Livre des âmes perdues",	-- Book of Lost Souls
 	[205540] = "Squelette décrépit",	-- Decrepit Skeleton
 	[205874] = "Hiéroglyphes couverts de sable",	-- Sand-Covered Hieroglyphs
 	[205875] = "Fusée du croisé",	-- Crusader's Flare

@@ -1052,6 +1052,8 @@ for key, value in pairs({
 	[21015] = "蹄印",	-- Hoofprints	--TODO: This was taken from classic Wowhead
 	[21042] = "塞拉摩卫兵徽章",	-- Theramore Guard Badge
 	[35251] = "卡尼托的箱子",	-- Karnitol's Chest	--TODO: This was taken from classic Wowhead
+	[37099] = "阿塔莱石板",	-- Atal'ai Tablet
+	[91138] = "乔丹的铁锤",	-- Jordan's Hammer
 	[112948] = "保险箱",	-- Intrepid's Locked Strongbox
 	[113757] = "暗影熔炉地窖",	-- Shadowforge Cache
 	[123329] = "巴尔洛戈的箱子",	-- Baelog's Chest
@@ -1071,6 +1073,7 @@ for key, value in pairs({
 	[144063] = "艾奎尼克斯石碑",	-- Equinex Monolith
 	[148502] = "|cFFFFFFFF第1步:|r 第9页",	-- |cFFFFFFFFStep 1:|r Page 9
 	[148504] = "明显的墓碑",	-- A Conspicuous Gravestone
+	[149036] = "玛尔冯的箱子",	-- Marvon's Chest
 	[149502] = "黑龙的财宝",	-- Hoard of the Black Dragonflight	--TODO: This was taken from classic Wowhead
 	[160836] = "古物宝库",	-- Relic Coffer
 	[161495] = "秘密保险箱",	-- Secret Safe
@@ -1110,6 +1113,7 @@ for key, value in pairs({
 	[178144] = "巨魔的箱子",	-- Troll Chest
 	[178227] = "穆戈特的图腾篮",	-- Murgut's Totem Basket
 	[179485] = "损坏的陷阱",	-- A Broken Trap
+	[179499] = "食人魔鞣酸篮",	-- Ogre Tannin Basket
 	[179501] = "诺特·希姆加克的储物箱",	-- Knot Thimblejack's Cache	--TODO: This was taken from classic Wowhead
 	[179564] = "戈多克贡品",	-- Gordok Tribute Chest
 	[179697] = "竞技场财宝箱",	-- Arena Treasure Chest
@@ -1146,6 +1150,7 @@ for key, value in pairs({
 	[181748] = "血水晶",	-- Blood Crystal	--TODO: This was taken from tbc Wowhead
 	--TODO: [181756] = "Battered Ancient Book",	-- Battered Ancient Book
 	[181889] = "通缉布告",	-- Wanted Poster
+	[182011] = "铁锭箱",	-- Crate of Ingots
 	[182032] = "加莱恩的日记",	-- Galaen's Journal
 	[182058] = "天灾战车",	-- Scourge Meat Wagon
 	[182115] = "通缉布告",	-- Wanted Poster
@@ -1359,6 +1364,7 @@ for key, value in pairs({
 	[205266] = "精致的圆盘",	-- Elaborate Disc
 	[205332] = "通缉布告",	-- Wanted Poster
 	[205350] = "部落通讯台",	-- Horde Communication Panel
+	[205476] = "迷失灵魂之书",	-- Book of Lost Souls
 	[205540] = "破损的骨骼",	-- Decrepit Skeleton
 	[205874] = "沙土覆盖的符文",	-- Sand-Covered Hieroglyphs
 	--TODO: [205875] = "Crusader's Flare",	-- Crusader's Flare

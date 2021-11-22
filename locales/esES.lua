@@ -1000,6 +1000,8 @@ for key,value in pairs({
 	[21015] = "Huellas pezuñales",	-- Hoofprints	--TODO: This was taken from classic Wowhead
 	[21042] = "Identificación de guardia de Theramore",	-- Theramore Guard Badge
 	[35251] = "Cofre de Karnitol",	-- Karnitol's Chest
+	[37099] = "Tablilla Atal'ai",	-- Atal'ai Tablet
+	[91138] = "Martillo de Jordan",	-- Jordan's Hammer
 	[112948] = "Caja fuerte de El Intrépido cerrada",	-- Intrepid's Locked Strongbox
 	[113757] = "Alijo de Forjatiniebla",	-- Shadowforge Cache
 	[123329] = "Cofre de Baelog",	-- Baelog's Chest
@@ -1019,6 +1021,7 @@ for key,value in pairs({
 	[144063] = "Monolito de Equinex",	-- Equinex Monolith
 	[148502] = "|cFFFFFFFFStep 1:|r Página 9",	-- |cFFFFFFFFStep 1:|r Page 9
 	[148504] = "Una lápida llamativa",	-- A Conspicuous Gravestone
+	[149036] = "Cofre de Marvon",	-- Marvon's Chest
 	[149502] = "Tesoro oculto del Vuelo Negro",	-- Hoard of the Black Dragonflight
 	[160836] = "Arca de reliquias",	-- Relic Coffer
 	[161495] = "Caja fuerte secreta",	-- Secret Safe
@@ -1058,6 +1061,7 @@ for key,value in pairs({
 	[178144] = "Cofre trol",	-- Troll Chest
 	[178227] = "Cesta de tótems de Murgut",	-- Murgut's Totem Basket
 	[179485] = "Trampa rota",	-- A Broken Trap
+	[179499] = "Cesta de tanino de ogro",	-- Ogre Tannin Basket
 	[179501] = "Alijo de Knot Thimblejack",	-- Knot Thimblejack's Cache
 	[179564] = "Tributo a Gordok",	-- Gordok Tribute Chest
 	[179697] = "Arqueta de la arena",	-- Arena Treasure Chest
@@ -1094,6 +1098,7 @@ for key,value in pairs({
 	[181748] = "Cristal de sangre",	-- Blood Crystal
 	[181756] = "Libro antiguo maltrecho",	-- Battered Ancient Book
 	[181889] = "Cartel de Se busca",	-- Wanted Poster
+	[182011] = "Cajón de lingotes",	-- Crate of Ingots
 	[182032] = "Diario de Galaen",	-- Galaen's Journal
 	[182058] = "Carro de despojos de la Plaga",	-- Scourge Meat Wagon
 	[182115] = "Cartel de Se busca",	-- Wanted Poster
@@ -1307,6 +1312,7 @@ for key,value in pairs({
 	[205266] = "Disco elaborado",	-- Elaborate Disc
 	[205332] = "Cartel de Se busca",	-- Wanted Poster
 	[205350] = "Panel de comunicación de la Horda",	-- Horde Communication Panel
+	[205476] = "Libro de las Almas Perdidas",	-- Book of Lost Souls
 	[205540] = "Esqueleto decrépito",	-- Decrepit Skeleton
 	[205874] = "Jeroglíficos cubiertos de arena",	-- Sand-Covered Hieroglyphs
 	[205875] = "Bengala de cruzado",	-- Crusader's Flare

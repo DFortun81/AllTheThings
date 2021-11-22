@@ -997,6 +997,8 @@ for key,value in pairs({
 	[21015] = "Hufabdrücke",	-- Hoofprints	--TODO: This was taken from classic Wowhead
 	[21042] = "Abzeichen der Wache von Theramore",	-- Theramore Guard Badge
 	[35251] = "Karnitols Truhe",	-- Karnitol's Chest
+	[37099] = "Schrifttafel der Atal'ai",	-- Atal'ai Tablet
+	[91138] = "Jordans Hammer",	-- Jordan's Hammer
 	[112948] = "Verschlossene Geldkassette der 'Kühnheit'",	-- Intrepid's Locked Strongbox
 	[113757] = "Schattenschmiedecache",	-- Shadowforge Cache
 	[123329] = "Baelogs Truhe",	-- Baelog's Chest
@@ -1016,6 +1018,7 @@ for key,value in pairs({
 	[144063] = "Monolith von Equinex",	-- Equinex Monolith
 	[148502] = "|cFFFFFFFFSchritt 1:|r Seite 9",	-- |cFFFFFFFFStep 1:|r Page 9
 	[148504] = "Ein verdächtiger Grabstein",	-- A Conspicuous Gravestone
+	[149036] = "Marvons Truhe",	-- Marvon's Chest
 	[149502] = "Hort des schwarzen Drachenschwarms",	-- Hoard of the Black Dragonflight
 	[160836] = "Reliktkasten",	-- Relic Coffer
 	[161495] = "Geheimsafe",	-- Secret Safe
@@ -1055,6 +1058,7 @@ for key,value in pairs({
 	[178144] = "Trolltruhe",	-- Troll Chest
 	[178227] = "Murguts Totemkorb",	-- Murgut's Totem Basket
 	[179485] = "Beschädigte Falle",	-- A Broken Trap
+	[179499] = "Gerbekorb der Oger",	-- Ogre Tannin Basket
 	[179501] = "Knot Zwingschraubs Behälter",	-- Knot Thimblejack's Cache
 	[179564] = "Tribut der Gordok",	-- Gordok Tribute Chest
 	[179697] = "Arenaschatztruhe",	-- Arena Treasure Chest
@@ -1091,6 +1095,7 @@ for key,value in pairs({
 	[181748] = "Blutkristall",	-- Blood Crystal
 	[181756] = "Zerfleddertes altes Buch",	-- Battered Ancient Book
 	[181889] = "Steckbrief",	-- Wanted Poster
+	[182011] = "Kiste mit Blöcken",	-- Crate of Ingots
 	[182032] = "Galaens Tagebuch",	-- Galaen's Journal
 	[182058] = "Fleischwagen der Geißel",	-- Scourge Meat Wagon
 	[182115] = "Steckbrief",	-- Wanted Poster
@@ -1304,6 +1309,7 @@ for key,value in pairs({
 	[205266] = "Aufwendige Scheibe",	-- Elaborate Disc
 	[205332] = "Steckbrief",	-- Wanted Poster
 	[205350] = "Kommunikationskonsole der Horde",	-- Horde Communication Panel
+	[205476] = "Buch der verlorenen Seelen",	-- Book of Lost Souls
 	[205540] = "Verfallenes Skelett",	-- Decrepit Skeleton
 	[205874] = "Sandbedeckte Hieroglyphen",	-- Sand-Covered Hieroglyphs
 	[205875] = "Leuchtsignal des Kreuzzüglers",	-- Crusader's Flare
