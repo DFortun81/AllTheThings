@@ -1791,11 +1791,11 @@ for key, value in pairs({
 	[234735] = "暗影视觉药剂",	-- Elixir of Shadow Sight
 	[234736] = "暗影视觉药剂",	-- Elixir of Shadow Sight	--TODO: This was manually translated
 	--TODO: [234740] = "Orchish Signaling Horn",	-- Orchish Signaling Horn
-	--TODO: [234744] = "Offering to the Raven Mother",	-- Offering to the Raven Mother
-	--TODO: [234746] = "Offering to the Raven Mother",	-- Offering to the Raven Mother
-	--TODO: [234748] = "Offering to the Raven Mother",	-- Offering to the Raven Mother
+	[234744] = "鸦母的供品",	-- Offering to the Raven Mother	--TODO: This was manually translated
+	[234746] = "鸦母的供品",	-- Offering to the Raven Mother	--TODO: This was manually translated
+	[234748] = "鸦母的供品",	-- Offering to the Raven Mother	--TODO: This was manually translated
 	[235073] = "鸦母的供品",	-- Offering to the Raven Mother
-	--TODO: [235090] = "Offering to the Raven Mother",	-- Offering to the Raven Mother
+	[235090] = "鸦母的供品",	-- Offering to the Raven Mother	--TODO: This was manually translated
 	[235091] = "失落的戒指",	-- Lost Ring
 	--TODO: [235095] = "Misplaced Scroll",	-- Misplaced Scroll
 	--TODO: [235097] = "Ephial's Dark Grimoire",	-- Ephial's Dark Grimoire
