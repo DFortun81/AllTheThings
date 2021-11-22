@@ -1085,19 +1085,25 @@ _.HiddenQuestTriggers = {
 	q(61186),	-- Enchant from rank 3 anima conductor (spellid=335041)
 
 -- Stitched Set (armor-type agnostic it seems by slot rewarded)
-	q(63392),	-- Gloves (182502) / Stranglers (182493)
-	q(63394),	-- Armguards (182497)
-	q(63395),	-- Breeches (182494)
-	q(63396),	-- Shoulders (182495)
+	-- q(),	-- Helm
+	q(63396),	-- Shoulders
 	q(63398),	-- Chest
-	q(63400),	-- Cloak (182498)
-	q(63399),	-- Slippers (182501)
+	q(63394),	-- Wrist
+	q(63392),	-- Gloves
+	-- q(),	-- Waist
+	q(63395),	-- Legs
+	q(63399),	-- Feet
+	q(63400),	-- Cloak
 
 -- Duty-Bound Set
-	q(63404),	-- Gloves / Leather
-	q(63409),	-- Waist / Cloth
-	q(63402),	-- Legs / Cloth
-	q(63401),	-- Shoulders / Plate
+	-- q(),	-- Helm
+	q(63401),	-- Shoulders
+	-- q(),	-- Chest
+	-- q(),	-- Wrist
+	q(63404),	-- Gloves
+	q(63409),	-- Waist
+	q(63402),	-- Legs
+	-- q(),	-- Feet
 
 	q(62037),	-- unlocking Mind of Maldraxxus set (TransmogSetID 2033, Duty-Bound Conjurer's items)
 	q(62036),	-- unlocking Zeal of Maldraxxus set (TransmogSetID 2038, Duty-Bound Wraith's items)
