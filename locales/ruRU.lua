@@ -983,6 +983,8 @@ for key,value in pairs({
 	[21015] = "Следы копыт",	-- Hoofprints
 	[21042] = "Кокарда Тераморской стражи",	-- Theramore Guard Badge
 	[35251] = "Сундук Карнитола",	-- Karnitol's Chest
+	[37099] = "Табличка племени Атал'ай",	-- Atal'ai Tablet
+	[91138] = "Молот Джордана",	-- Jordan's Hammer
 	[112948] = "Запертый сейф на \"Отважном\".",	-- Intrepid's Locked Strongbox
 	[113757] = "Тайник Тенегорна",	-- Shadowforge Cache
 	[123329] = "Сундук Бейлога",	-- Baelog's Chest
@@ -1002,6 +1004,7 @@ for key,value in pairs({
 	[144063] = "Монолит Равноденствия",	-- Equinex Monolith
 	[148502] = "|cFFFFFFFFШаг 1:|r Страница 9",	-- |cFFFFFFFFStep 1:|r Page 9
 	[148504] = "Подозрительное надгробие",	-- A Conspicuous Gravestone
+	[149036] = "Сундук Марвона",	-- Marvon's Chest
 	[149502] = "Сокровищница черных драконов",	-- Hoard of the Black Dragonflight
 	[160836] = "Реликварий",	-- Relic Coffer
 	[161495] = "Потайной сейф",	-- Secret Safe
@@ -1041,6 +1044,7 @@ for key,value in pairs({
 	[178144] = "Тролльский сундук",	-- Troll Chest
 	[178227] = "Корзина тотема Мургута",	-- Murgut's Totem Basket
 	[179485] = "Сломанная ловушка",	-- A Broken Trap
+	[179499] = "Огрский дубильный чан",	-- Ogre Tannin Basket
 	[179501] = "Тайник Уззла Наперстяка",	-- Knot Thimblejack's Cache
 	[179564] = "Приношения Гордока",	-- Gordok Tribute Chest
 	[179697] = "Сундук с сокровищами арены",	-- Arena Treasure Chest
@@ -1077,6 +1081,7 @@ for key,value in pairs({
 	[181748] = "Кровавый кристалл",	-- Blood Crystal
 	[181756] = "Потрепанная древняя книга",	-- Battered Ancient Book
 	[181889] = "Плакат \"Разыскивается\"",	-- Wanted Poster
+	[182011] = "Ящик со слитками",	-- Crate of Ingots
 	[182032] = "Записи Галена",	-- Galaen's Journal
 	[182058] = "Мясной фургон Плети",	-- Scourge Meat Wagon
 	[182115] = "Плакат \"Разыскивается\"",	-- Wanted Poster
@@ -1290,6 +1295,7 @@ for key,value in pairs({
 	[205266] = "Замысловатый диск",	-- Elaborate Disc
 	[205332] = "Плакат \"Разыскивается\"",	-- Wanted Poster
 	[205350] = "Пульт связи Орды",	-- Horde Communication Panel
+	[205476] = "Книга Потерянных Душ",	-- Book of Lost Souls
 	[205540] = "Дряхлый скелет",	-- Decrepit Skeleton
 	[205874] = "Покрытые песком иероглифы",	-- Sand-Covered Hieroglyphs
 	[205875] = "Сигнальная ракета рыцаря",	-- Crusader's Flare
