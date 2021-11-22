@@ -221,26 +221,6 @@ _.Zones =
 						i(131349),	-- Windwhipped Grips
 					},
 				}),
-				q(7065,  {	-- Corruption of Earth and Seed (A)
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 13698 },	-- Keeper Marandis
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(17705)),	-- Thrash Blade
-						un(REMOVED_FROM_GAME, i(17743)),	-- Resurgence Rod
-						un(REMOVED_FROM_GAME, i(17753)),	-- Verdant Keeper's Aim
-					},
-				}),
-				q(7064,  {	-- Corruption of Earth and Seed (H)
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 13699 },	-- Selendra
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(17705)),	-- Thrash Blade
-						un(REMOVED_FROM_GAME, i(17743)),	-- Resurgence Rod
-						un(REMOVED_FROM_GAME, i(17753)),	-- Verdant Keeper's Aim
-					},
-				}),
 				q(14394, {	-- Death to Agogridon
 					["provider"] = { "n", 36398 },	-- Khan Leh'Prah
 					["coord"] = { 72.2, 67.3, DESOLACE },
@@ -976,17 +956,6 @@ _.Zones =
 					["coord"] = { 44.9, 29.5, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14188,	-- Avenge Furien!
-				}),
-				q(7028,  {	-- Twisted Evils
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 13656 },	-- Willow
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(17775)),	-- Acumen Robes
-						un(REMOVED_FROM_GAME, i(17779)),	-- Hulkstone Pauldrons
-						un(REMOVED_FROM_GAME, i(17777)),	-- Relentless Chain
-						un(REMOVED_FROM_GAME, i(17776)),	-- Sprightring Helm
-					},
 				}),
 				q(14264, {	-- Wetter Than Wet
 					["provider"] = { "n", 35827 },	-- Valishj
