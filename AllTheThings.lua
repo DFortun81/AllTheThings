@@ -3355,18 +3355,19 @@ end
 local function FillPurchases(group, depth)
 	-- default to 2 levels of filling, i.e. 0) Raid Essence -> 1) Tier Token -> 2) Item
 	depth = depth or 2;
+	-- if app.DEBUG_PRINT then print("FillPurchases?",group.hash,depth) end
 	if depth <= 0 then return; end
 	-- do not fill purchases on certain items, can skip the skip though based on a level
 	if (app.SkipPurchases[-1] or 0) < (app.SkipPurchases[group.itemID or -1] or 0) then return; end
-	-- do not fill 'saved' groups, or groups directly under saved groups unless in Acct or Debug mode
-	if not app.MODE_DEBUG_OR_ACCOUNT then
+	-- do not fill 'saved' groups (unless they are actual Maps or Instances, or a Difficulty header), or groups directly under saved groups unless in Acct or Debug mode
+	if not app.MODE_DEBUG_OR_ACCOUNT and not (group.instanceID or group.mapID or group.difficultyID) then
 		if group.saved then return; end
 		local rawParent = rawget(group, "parent");
 		if rawParent and rawParent.saved then return; end
 	end
-	-- if app.DEBUG_PRINT then print("FillPurchases",group.modItemID,group.currencyID,depth) end
 
 	local collectibles = group.costCollectibles or (group.collectibleAsCost and group.costCollectibles or group.costCollectibles);
+	-- if app.DEBUG_PRINT then print("GetPurchases",collectibles and #collectibles) end
 	if collectibles and #collectibles > 0 then
 		-- Nest new copies of the cost collectible objects of this group under itself
 		local usedToBuy = app.CreateNPC(-2, { ["text"] = L["CURRENCY_FOR"] } );
