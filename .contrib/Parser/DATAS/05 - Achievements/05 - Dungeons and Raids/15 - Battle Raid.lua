@@ -4,7 +4,13 @@
 
 root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 	achcat(ACHIEVEMENT_CATEGORY_BATTLE_RAID, {
-		ach(13506),		-- A Good Eye-dea
+		ach(13506, {	-- A Good Eye-dea
+			["maps"] = {	-- TODO: maybe specific mapID within the instance
+				1345,	-- Shrine of Shadows
+				1346,	-- Tendril of Corruption
+				1363,	-- Introquest (Twist the Knife)
+			},
+		}),
 		ach(13724),		-- A Smack of Jellyfish
 		ach(13383),		-- Barrel of Monkeys
 		ach(14038),		-- Bloody Mess
@@ -60,7 +66,13 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(2),	-- Drest'agath
 			crit(3),	-- Il'gynoth, Corruption Reborn
 		}),
-		ach(13501),		-- Gotta Bounce
+		ach(13501, {	-- Gotta Bounce
+			["maps"] = {	-- TODO: maybe specific mapID within the instance
+				1345,	-- Shrine of Shadows
+				1346,	-- Tendril of Corruption
+				1363,	-- Introquest (Twist the Knife)
+			},
+		}),
 		ach(12521, {	-- Halls of Containment
 			crit(1),		-- Taloc
 			crit(2),		-- MOTHER

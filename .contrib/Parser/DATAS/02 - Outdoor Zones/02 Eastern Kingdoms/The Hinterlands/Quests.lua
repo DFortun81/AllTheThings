@@ -93,7 +93,7 @@ _.Zones =
 					["sourceQuests"] = { 26523 },	-- All That Skitters
 					["g"] = {
 						i(59252),	-- Sandals of Tainted Blood
-						i(59253, {	-- Sandrene's Invisible Hauberk
+						i(59253, {	-- Sandrene's Invisible Vest
 							["description"] = "You will not be able to transmog this item.",
 						}),
 						i(59254),	-- Spider Venom Leggings
