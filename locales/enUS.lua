@@ -2176,6 +2176,7 @@ app.L = {
 		[-10080] = SPLASH_BATTLEFORAZEROTH_8_3_0_FEATURE1_TITLE,				-- Horrific Visions
 		[-10081] = "Corrupted Area",
 		[-10082] = "Lost Area",
+	-- Shadowlands Achievement Headers
 	-- 9.1
 		[-10083] = "Covenant Assaults",											-- Covenant Assaults
 	--	hopefully temp objects, these currently do not have accessible object data on wowhead
