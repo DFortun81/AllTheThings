@@ -496,6 +496,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					},
 					["sourceQuest"] = 4147,	-- Marvon's Workshop
 					["coord"] = { 62.5, 38.7, THE_BARRENS },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 47,
 					["groups"] = {
