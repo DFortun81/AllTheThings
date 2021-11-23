@@ -127,7 +127,9 @@ _.Instances = { tier(MOP_TIER, {
 						ach(6457),	-- Stormstout Brewery
 						i(144124),	-- Wort Stirring Rod
 						i(144085),	-- Gao's Keg Tapper
-						i(144217),	-- Inelava, Spirit of Inebriation
+						i(144217, {	-- Inelava, Spirit of Inebriation
+							["timeline"] = { "created 7.1.5" },	-- don't think this has technically ever existed even though it shows in dungeon journal
+						}),
 						i(87545),	-- Inelava, Spirit of Inebriation — this specific itemID dropped for a discord user on May 4th, 2020 (a screenshot was provided).  possible that both versions drop?
 						i(144089),	-- Yan-Zhu's Pressure Valve
 						i(143969),	-- Fizzy Spaulders

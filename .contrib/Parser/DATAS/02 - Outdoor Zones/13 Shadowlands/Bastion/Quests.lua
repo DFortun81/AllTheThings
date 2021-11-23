@@ -208,14 +208,13 @@ _.Zones =
 					["sourceQuests"] = { 57717 },	-- Step Back From That Ledge, My Friend
 					["provider"] = { "o", 344726  },	-- Dark Sermon
 					["coord"] = { 57.2, 71.8, BASTION },
+					["altQuests"] = { 60292 },	-- Dangerous Discourse
 				}),
 				q(60292, {	-- Dangerous Discourse
-					["sourceQuests"] = {
-						57037,	-- A Once Sweet Sound
-						59147,	-- The Hand of Purification
-					},
+					["sourceQuests"] = { 57717 },	-- Step Back From That Ledge, My Friend
 					["provider"] = { "n", 159762 },	-- Eridia
 					["coord"] = { 61.2, 74.3, BASTION },
+					["altQuests"] = { 57719 },	-- Dangerous Discourse
 				}),
 				q(63983, {	-- Dead Drop
 					["sourceQuests"] = { 63982 },	-- Above My Station
