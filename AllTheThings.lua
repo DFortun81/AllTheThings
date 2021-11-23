@@ -5078,6 +5078,7 @@ CacheFields = function(group)
 		currentInstance = nil;
 	end
 end
+app.CacheFields = CacheFields;
 end)();
 local function SearchForFieldRecursively(group, field, value)
 	if group.g then
@@ -12504,9 +12505,13 @@ UpdateGroup = function(parent, group, window)
 			SetThingVisibility(parent, group);
 		end
 
-		-- Increment the parent group's totals
-		parent.total = (parent.total or 0) + group.total;
-		parent.progress = (parent.progress or 0) + group.progress;
+		-- Increment the parent group's totals if the group is not ignored for sources
+		if not group.sourceIgnored then
+			parent.total = (parent.total or 0) + group.total;
+			parent.progress = (parent.progress or 0) + group.progress;
+		-- else
+			-- print("Ignoring progress/total",group.progress,"/",group.total,"for group",group.text)
+		end
 	end
 
 	-- if app.DEBUG_PRINT then print("UpdateGroup.Done",group.progress,group.total,group.visible,group.__type) end
@@ -14563,6 +14568,10 @@ RowOnEnter = function (self)
 			if reference.pvp then
 				GameTooltip:AddLine(L["REQUIRES_PVP"], 1, 1, 1, 1, true);
 			end
+			-- Ignored for Source/Progress
+			if reference.sourceIgnored then
+				GameTooltip:AddLine(L["DOES_NOT_CONTRIBUTE_TO_PROGRESS"], 1, 1, 1, 1, true);
+			end
 		end
 
 		-- Further conditional texts that can be displayed
@@ -15218,6 +15227,27 @@ end
 end)();
 
 function app:GetDataCache()
+	-- Attaches a dynamic OnUpdate to the category which auto-populates itself using the provided field and optional value when first receiving an Update to itself
+	local function DynamicCategory(group, field, value)
+		if field then
+			group.OnUpdate = function(self)
+				-- pull out all Things which should go into this category based on field & value
+				group.g = app:BuildSearchResponse(app:GetWindow("Prime").data.g, field, value, true);
+				-- reset indents and such
+				BuildGroups(group, group.g);
+				-- sort the top level groups initially
+				group.sort = true;
+				app.SortGroup(group, "name", nil, nil, "sort");
+				group.sort = nil;
+				-- dynamic groups are ignored for the source tooltips
+				group.sourceIgnored = true;
+				-- make sure these things are cached so they can be updated when collected
+				app.CacheFields(group);
+				self.OnUpdate = nil;
+			end
+		end
+		return group;
+	end
 	-- Update the Row Data by filtering raw data
 	local allData = app:GetWindow("Prime").data;
 	if not allData or not allData.total and app.Categories then
@@ -15440,15 +15470,6 @@ function app:GetDataCache()
 			tinsert(g, db);
 		end
 
-		-- Illusions
-		if app.Categories.Illusions then
-			db = {};
-			db.g = app.Categories.Illusions;
-			db.expanded = false;
-			db.text = "Illusions";
-			tinsert(g, db);
-		end
-
 		-- Factions
 		if app.Categories.Factions then
 			db = app.CreateNPC(-6013);
@@ -15459,56 +15480,79 @@ function app:GetDataCache()
 			tinsert(g, db);
 		end
 
-		-- Mounts
-		if app.Categories.Mounts then
-			db = {};
-			db.g = app.Categories.Mounts;
-			db.expanded = false;
-			db.text = MOUNTS;
-			db.icon = app.asset("Category_Mounts");
-			db.sourceIgnored = true;
-			tinsert(g, db);
-		end
-
 		-- Pet Journal
 		if app.Categories.BattlePets then
 			db = {};
 			db.g = app.Categories.BattlePets;
 			db.f = 101;
-			db.expanded = false;
 			db.text = AUCTION_CATEGORY_BATTLE_PETS;
 			db.icon = app.asset("Category_PetJournal");
 			for _,o in ipairs(db.g) do
-				-- the raw pet journal listings
+				-- the dynamic pet journal listing
 				if o.headerID == -797 then
 					o.sourceIgnored = true;
+					-- o = DynamicCategory(o, "speciesID");
+					break;
 				end
 			end
 			tinsert(g, db);
 		end
 
+		-- Illusions - Dynamic
+		db = {};
+		db.text = "Illusions".." - "..DYNAMIC;
+		db.icon = 132853;
+		tinsert(g, DynamicCategory(db, "illusionID"));
+
+		-- Mounts
+		-- if app.Categories.Mounts then
+		-- 	db = {};
+		-- 	db.g = app.Categories.Mounts;
+		-- 	db.expanded = false;
+		-- 	db.text = MOUNTS;
+		-- 	db.icon = app.asset("Category_Mounts");
+		-- 	db.sourceIgnored = true;
+		-- 	tinsert(g, db);
+		-- end
+		-- Mounts - Dynamic
+		db = {};
+		db.text = MOUNTS.." - "..DYNAMIC;
+		db.icon = app.asset("Category_Mounts");
+		tinsert(g, DynamicCategory(db, "mountID"));
+
 		-- Titles
-		if app.Categories.Titles then
-			db = {};
-			db.g = app.Categories.Titles;
-			db.icon = app.asset("Category_Titles");
-			db.expanded = false;
-			db.text = "Titles";
-			db.sourceIgnored = true;
-			tinsert(g, db);
-		end
+		-- if app.Categories.Titles then
+		-- 	db = {};
+		-- 	db.g = app.Categories.Titles;
+		-- 	db.icon = app.asset("Category_Titles");
+		-- 	db.expanded = false;
+		-- 	db.text = "Titles";
+		-- 	db.sourceIgnored = true;
+		-- 	tinsert(g, db);
+		-- end
+		-- Titles - Dynamic
+		db = {};
+		db.icon = app.asset("Category_Titles");
+		db.text = "Titles".." - "..DYNAMIC;
+		tinsert(g, DynamicCategory(db, "titleID"));
 
 		-- Toys
-		if app.Categories.Toys then
-			db = {};
-			db.g = app.Categories.Toys;
-			db.icon = app.asset("Category_ToyBox");
-			db.expanded = false;
-			db.f = 102;
-			db.text = TOY_BOX;
-			db.sourceIgnored = true;
-			tinsert(g, db);
-		end
+		-- if app.Categories.Toys then
+		-- 	db = {};
+		-- 	-- db.g = app.Categories.Toys;
+		-- 	db.icon = app.asset("Category_ToyBox");
+		-- 	db.expanded = false;
+		-- 	db.f = 102;
+		-- 	db.text = TOY_BOX;
+		-- 	db.sourceIgnored = true;
+		-- 	tinsert(g, db);
+		-- end
+		-- Toys - Dynamic
+		db = {};
+		db.icon = app.asset("Category_ToyBox");
+		db.f = 102;
+		db.text = TOY_BOX.." - "..DYNAMIC;
+		tinsert(g, DynamicCategory(db, "isToy"));
 
 		--[[
 		-- DYNAMIC TOY BOX (not filtered)
@@ -15785,17 +15829,19 @@ function app:GetDataCache()
 		--]]
 
 
-		--[[
+		---[[
 		-- More attempts at dynamically built sections.
 		-- Titles
-		local titlesCategory = {};
-		titlesCategory.g = {};
-		titlesCategory.titles = {};
-		titlesCategory.expanded = false;
-		titlesCategory.text = PAPERDOLL_SIDEBAR_TITLES;
-		titlesCategory.icon = app.asset("Category_Titles");
-		table.insert(g, titlesCategory);
+		-- local titlesCategory = {};
+		-- titlesCategory.g = {};
+		-- titlesCategory.titles = {};
+		-- titlesCategory.expanded = false;
+		-- titlesCategory.text = PAPERDOLL_SIDEBAR_TITLES;
+		-- titlesCategory.icon = app.asset("Category_Titles");
+		-- tinsert(g, DynamicCategory(titlesCategory, "titleID"));
+		--]]
 
+		--[[
 		-- Toys
 		local toyCategory = {};
 		toyCategory.g = {};
@@ -16160,85 +16206,65 @@ function app:GetDataCache()
 		]]--
 
 		-- Update Flight Path data.
-		flightPathsCategory.OnUpdate = function(self)
-			for i,_ in pairs(fieldCache["flightPathID"]) do
-				if not self.fps[i] then
-					local fp = app.CreateFlightPath(tonumber(i));
-					for j,o in ipairs(_) do
-						for key,value in pairs(o) do rawset(fp, key, value); end
-					end
-					self.fps[i] = fp;
-					fp.g = nil;
-					fp.maps = nil;
-					if not fp.u or fp.u ~= 1 then
-						fp.parent = self;
-						tinsert(self.g, fp);
-					else
-						fp.parent = flightPathsCategory_NYI;
-						tinsert(flightPathsCategory_NYI.g, fp);
-					end
-					-- Make sure the sourced FP data exists in the cache DB so it doesn't show *NEW*
-					if not app.FlightPathDB[i] then app.FlightPathDB[i] = _; end
-				end
-			end
-			-- will only run once per session and return true the first time it is called
-			if app.CacheFlightPathData() then
-				for i,_ in pairs(app.FlightPathDB) do
+		if flightPathsCategory then
+			flightPathsCategory.OnUpdate = function(self)
+				for i,_ in pairs(fieldCache["flightPathID"]) do
 					if not self.fps[i] then
 						local fp = app.CreateFlightPath(tonumber(i));
+						for j,o in ipairs(_) do
+							for key,value in pairs(o) do rawset(fp, key, value); end
+						end
 						self.fps[i] = fp;
+						fp.g = nil;
+						fp.maps = nil;
 						if not fp.u or fp.u ~= 1 then
-							app.print("Flight Path needs Source!",i,fp.name)
 							fp.parent = self;
 							tinsert(self.g, fp);
 						else
 							fp.parent = flightPathsCategory_NYI;
 							tinsert(flightPathsCategory_NYI.g, fp);
 						end
+						-- Make sure the sourced FP data exists in the cache DB so it doesn't show *NEW*
+						if not app.FlightPathDB[i] then app.FlightPathDB[i] = _; end
 					end
 				end
-			end
-			insertionSort(self.g, function(a, b)
-				return a.name < b.name;
-			end);
-		end;
-		flightPathsCategory:OnUpdate();
-		-- Needed for externally updating only this group when collecting a flight path since the records are not cached
-		app.FlightPathsCategory = flightPathsCategory;
-
-		-- Update Title data.
-		if titlesCategory then
-			titlesCategory.OnUpdate = function(self)
-				local headers, header = {};
-				for i,header in ipairs(self.g) do
-					if header.headerID and header.key == "headerID" then
-						headers[header.headerID] = header;
-						if not header.g then
-							header.g = {};
+				-- will only run once per session and return true the first time it is called
+				if app.CacheFlightPathData() then
+					for i,_ in pairs(app.FlightPathDB) do
+						if not self.fps[i] then
+							local fp = app.CreateFlightPath(tonumber(i));
+							self.fps[i] = fp;
+							if not fp.u or fp.u ~= 1 then
+								app.print("Flight Path needs Source!",i,fp.name)
+								fp.parent = self;
+								tinsert(self.g, fp);
+							else
+								fp.parent = flightPathsCategory_NYI;
+								tinsert(flightPathsCategory_NYI.g, fp);
+							end
 						end
 					end
 				end
-				for i,_ in pairs(fieldCache["titleID"]) do
-					if not self.titles[i] then
-						self.titles[i] = buildCategoryEntry(self, headers, _, app.CreateTitle(tonumber(i)));
-					end
-				end
-				insertionSort(self.g, sortByTextSafely);
-				for i,header in pairs(headers) do
-					if not header.ignoreSort then
-						insertionSort(header.g, sortByTextSafely);
-					end
-				end
-				for i=#self.g,1,-1 do
-					header = self.g[i];
-					if header.g and #header.g < 1 and header.headerID and header.key == "headerID" then
-						headers[header.headerID] = nil;
-						table.remove(self.g, i);
-					end
-				end
-			end
-			titlesCategory:OnUpdate();
+				insertionSort(self.g, function(a, b)
+					return a.name < b.name;
+				end);
+				-- no longer need to run this logic once the dynamic group has been filled
+				self.OnUpdate = nil;
+			end;
+			flightPathsCategory:OnUpdate();
+			-- Needed for externally updating only this group when collecting a flight path since the records are not cached
+			app.FlightPathsCategory = flightPathsCategory;
 		end
+
+		-- Update Title data.
+		-- if titlesCategory then
+		-- 	titlesCategory.OnUpdate = function(self)
+		-- 		titlesCategory.g = app:BuildSearchResponse(app:GetWindow("Prime").data.g, "titleID");
+		-- 		-- reset indents and such
+		-- 		BuildGroups(titlesCategory, titlesCategory.g);
+		-- 		self.OnUpdate = nil;
+		-- 	end
+		-- end
 
 		-- Update Toy data.
 		if toyCategory then
@@ -16325,20 +16351,23 @@ function app:RefreshData(lazy, got, manual)
 		AfterCombatOrDelayedCallback(app._RefreshData, 0.5);
 	end
 end
-function app:BuildSearchResponse(groups, field, value)
+function app:BuildSearchResponse(groups, field, value, clear)
 	if groups then
 		local t, response, v;
-		for i,group in ipairs(groups) do
+		for _,group in ipairs(groups) do
 			v = group[field];
 			response = nil;
-			if v and (v == value or (field == "requireSkill" and app.SpellIDToSkillID[app.SpecializationSpellIDs[v] or 0] == value)) then
+			if v and (not value or
+				(v == value or
+					(field == "requireSkill" and app.SpellIDToSkillID[app.SpecializationSpellIDs[v] or 0] == value))) then
 				-- some recipes are faction locked and cannot be learned by the current character, so don't include them if specified
 				if not app.BuildSearchResponse_IgnoreUnavailableRecipes or not group.spellID or app.FilterItemClass_IgnoreBoEFilter(group) then
-					if t then tinsert(t, CreateObject(group));
-					else t = { CreateObject(group) }; end
+					local clone = clear and CreateObject(group, true) or CreateObject(group);
+					if t then tinsert(t, clone);
+					else t = { clone }; end
 				end
 			elseif group.g then
-				response = app:BuildSearchResponse(group.g, field, value);
+				response = app:BuildSearchResponse(group.g, field, value, clear);
 				if response then
 					local groupCopy = {};
 					-- copy direct group values only
@@ -16346,7 +16375,9 @@ function app:BuildSearchResponse(groups, field, value)
 					-- no need to clone response, since it is already cloned above
 					groupCopy.g = response;
 					-- if the group itself does not meet the field/value expectation, force it to be uncollectible
-					if groupCopy.field ~= value then groupCopy.collectible = false; end
+					if not groupCopy[field] or groupCopy[field] ~= value then groupCopy.collectible = false; end
+					-- don't copy in any extra data for the header group which can pull things into groups
+					groupCopy.sym = nil;
 					if t then tinsert(t, groupCopy);
 					else t = { groupCopy }; end
 				end
