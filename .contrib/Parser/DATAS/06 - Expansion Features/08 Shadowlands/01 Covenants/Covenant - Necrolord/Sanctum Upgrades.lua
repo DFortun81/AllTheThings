@@ -111,6 +111,9 @@ _.ExpansionFeatures =
 									["coord"] = { 55.3, 68.3, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["maps"] = {
+										1717,	-- Chill's Reach
+									},
 								}),
 								q(59042, {	-- A Good Heart
 									["sourceQuests"] = { 58686 },	-- Weapon of Mass Construction
