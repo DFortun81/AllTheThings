@@ -143,36 +143,6 @@ _.Zones =
 						}),
 					}),
 				}),
-				q(6564, {	-- Allegiance to the Old Gods
-					["crs"] = { 4802 },	-- Blackfathom Tide Priestess
-					["races"] = HORDE_ONLY,
-					["provider"] = { "i", 16790 },	-- Damp Note
-					["timeline"] = {
-						"added 1.11.1.10958",
-						"removed 4.0.3.10000",
-					},
-				}),
-				q(6565, {	-- Allegiance to the Old Gods
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 12736 },	-- Je'neu Sancrea
-					["sourceQuest"] = 6564,	-- Allegiance to the Old Gods
-					["timeline"] = {
-						"added 1.11.1.10958",
-						"removed 4.0.3.10000",
-					},
-					["g"] = bubbleDown({ ["timeline"] = { "added 1.11.1.5462", "removed 4.0.3.10000", } },{
-						i(17694),	-- Band of the Fist
-						i(17695),	-- Chestnut Mantle
-					}),
-				}),
-				q(6921, {	-- Amongst the Ruins
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 12736 },	-- Je'neu Sancrea
-					["timeline"] = {
-						"added 1.11.1.10958",
-						"removed 4.0.3.10000",
-					},
-				}),
 				q(1025, {	-- An Aggressive Defense
 					["provider"] = { "n", 3691 },	-- Raene Wolfrunner
 					["coord"] = { 36.6, 49.6, ASHENVALE },
@@ -284,37 +254,6 @@ _.Zones =
 					["coord"] = { 37.7, 43.5, ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(21, 7, 21),
-				}),
-				q(26893, {	-- Blackfathom Deeps [More Checking Needed]
-					["timeline"] = {
-						"added 4.0.3.13277",
-					},
-					["races"] = HORDE_ONLY,	-- not tagged as such in API, but the quest text mentions needing "help with the Alliance that are threatening Zoram'gar Outpost."  looks like there are 2 quests per faction
-				}),
-				q(26894, {	-- Blackfathom Deeps
-					["provider"] = { "n", 34122 },	-- Commander Grimfang
-					["coord"] = { 12.1, 33.8, ASHENVALE },
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
-					["timeline"] = {
-						"added 4.0.3.13277",
-					},
-				}),
-				q(26897, {	-- Blackfathom Deeps
-					["provider"] = { "n", 3845 },	-- Shindrell Swiftfire
-					["coord"] = { 18.2, 20.4, ASHENVALE },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-					["timeline"] = {
-						"added 4.0.3.13277",
-					},
-				}),
-				q(26898, {	-- Blackfathom Deeps
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 3691 },	-- Raene Wolfrunner
-					["timeline"] = {
-						"added 4.0.3.13277",
-					},
 				}),
 				q(13947, {	-- Blastranaar!
 					["provider"] = { "n", 34359 },	-- Captain Goggath
@@ -2138,13 +2077,6 @@ _.Zones =
 					["timeline"] = {
 						"added 4.0.3.13277",
 					},
-				}),
-				q(6563,  {	-- The Essence of Aku'Mai -- ATT classic BFD?
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 12736 },	-- Je'neu Sancrea
-					["coord"] = { 11.6, 34.3, ASHENVALE },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 6562,	-- Trouble in the Deeps
 				}),
 				q(13796, {	-- The Forest Heart
 					["provider"] = { "n", 33777 },	-- Gaivan Shadewalker
