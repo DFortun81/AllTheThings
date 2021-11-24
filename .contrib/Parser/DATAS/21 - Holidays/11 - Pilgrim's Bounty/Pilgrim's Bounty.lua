@@ -673,6 +673,19 @@ _.Holidays = { applyholiday(PILGRIMS_BOUNTY, {
 			}),
 		}),
 		n(ZONE_DROPS, {
+			i(189705, {	-- Turkey Soul
+				["description"] = "Gain the buff 'The Spirit of Sharing' by eating 5 stacks of each type of Pilgrim's Bounty food at the tables, then continue eating various foods.\nThe item will be auto-looted randomly when leaving a chair.",
+				["timeline"] = { "added 9.1.5" },
+				["customCollect"] = { "SL_COV_NFA" },	-- Night Fae Covenant
+				["maps"] = ALL_PILGIM_MAPS,
+				["crs"] = {
+					34812,	-- The Turkey Chair
+					34819,	-- The Stuffing Chair
+					34822,	-- The Pie Chair
+					34823,	-- The Cranberry Chair
+					34824,	-- The Sweet Potato Chair
+				},
+			}),
 			i(44834, {	-- Wild Turkey
 				["maps"] = { ELWYNN_FOREST, TIRISFAL_GLADES },
 				["crs"] = {
