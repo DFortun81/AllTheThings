@@ -215,6 +215,7 @@ local L = app.L;
 	L.REPORT_INACCURATE_QUEST = "Неверная Информация о Задании! (Нажмите для Отчёта)";
 	L.NESTED_QUEST_REQUIREMENTS = "Вложенные Требования Заданий";
 	L.MAIN_LIST_REQUIRES_REFRESH = "[Откройте Основной список, чтобы обновить прогресс]";
+	L.DOES_NOT_CONTRIBUTE_TO_PROGRESS = "|cffe08207Эта группа и её содержимое не влияют на прогресс данного окна!|r";
 
 	-- Item Filter Window
 		L.ITEM_FILTER_TEXT = "Фильтровать предметы";
