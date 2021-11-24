@@ -1469,6 +1469,7 @@ app.L = {
 	------ ACHIEVEMENT HEADERS SECTION ------
 	-- Is Used Somewhere
 		[-9965] = "Interface\\Icons\\achievement_level_110",						-- Class Hall
+		[-9966] = 1041860,															-- Dreanor Garrison
 		[-9983] = "Interface\\Icons\\Paladin_Protection",							-- Honor
 		[-10044] = app.asset("Category_D&R"),										-- Raids
 		[-10045] = "Interface\\Icons\\Paladin_Protection",							-- Currencies
