@@ -15487,14 +15487,21 @@ function app:GetDataCache()
 			db.f = 101;
 			db.text = AUCTION_CATEGORY_BATTLE_PETS;
 			db.icon = app.asset("Category_PetJournal");
+			-- remove the manually-built pet journal for now
 			for _,o in ipairs(db.g) do
 				-- the dynamic pet journal listing
 				if o.headerID == -797 then
+					o.g = nil;
 					o.sourceIgnored = true;
 					-- o = DynamicCategory(o, "speciesID");
 					break;
 				end
 			end
+			-- Battle Pets - Dynamic
+			local bp = {};
+			bp.text = AUCTION_CATEGORY_BATTLE_PETS.." - "..DYNAMIC;
+			bp.icon = app.asset("Category_PetJournal");
+			tinsert(db.g, DynamicCategory(bp, "speciesID"));
 			tinsert(g, db);
 		end
 
