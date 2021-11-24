@@ -648,15 +648,6 @@ _.Zones =
 					["classes"] = { DRUID },
 					["coord"] = { 35.0, 67.6, ORGRIMMAR },	-- Sesebi
 				}),
-				q(2950,  {	-- Nogg's Ring Redo
-					["sourceQuests"] = { 2949 },	-- Return of the Ring
-					["provider"] = { "n", 3412 },	-- Nogg
-					["coord"] = { 56.7, 57.0, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(9588),	-- Nogg's Gold Ring
-					},
-				}),
 				q(26417, {	-- Northern Stranglethorn: The Fallen Empire
 					["sourceQuests"] = { 26416 },	-- Well, Come to the Jungle
 					["isBreadcrumb"] = true,

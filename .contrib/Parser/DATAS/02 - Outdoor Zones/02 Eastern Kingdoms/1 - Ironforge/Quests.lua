@@ -82,15 +82,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(4984)),	-- Skull of Impending Doom
 					},
 				}),
-				q(2948,  {	-- Gnome Improvement
-					["sourceQuests"] = { 2947 },	-- Return of the Ring
-					["provider"] = { "n", 6826 },	-- Talvash del Kissel
-					["coord"] = { 36.0, 4.0, IRONFORGE },
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(9538),	-- Talvash's Gold Ring
-					},
-				}),
 				q(1682,  {	-- Grey Iron Weapons
 					["provider"] = { "n", 6031 },	-- Tormus Deepforge
 					["classes"] = { WARRIOR },

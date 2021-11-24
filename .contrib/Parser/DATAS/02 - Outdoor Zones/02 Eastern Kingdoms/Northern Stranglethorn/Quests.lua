@@ -252,13 +252,6 @@ _.Zones =
 						i(61106),	-- Excelsior Waders
 					},
 				}),
-				q(26944, {	-- Exploring Gnomeregan
-					["provider"] = { "n", 44018 },	-- Wulfred Harrys
-					["coord"] = { 53.3, 66.2, NORTHERN_STRANGLETHORN },
-					["races"] = ALLIANCE_ONLY,
-					["altQuests"] = { 26943 },	-- Home Sweet Gnome
-					["isBreadcrumb"] = true,
-				}),
 				q(26745, {	-- Favored Skull (A)
 					["provider"] = { "n", 42736 },	-- Lashtail Hatchling
 					["races"] = ALLIANCE_ONLY,

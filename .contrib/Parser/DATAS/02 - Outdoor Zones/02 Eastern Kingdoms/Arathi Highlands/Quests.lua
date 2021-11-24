@@ -229,13 +229,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(15456)),	-- Lightstep Leggings
 					},
 				}),
-				q(26943, {	-- Home Sweet Gnome
-					["provider"] = { "n", 2789 },	-- Skuerto
-					["coord"] = { 40.3, 49.1, ARATHI_HIGHLANDS },
-					["races"] = ALLIANCE_ONLY,
-					["altQuests"] = { 26944 },	-- Exploring Gnomeregan
-					["isBreadcrumb"] = true,
-				}),
 				q(26110, {	-- Just Like Old Times
 					["provider"] = { "n", 2712 },	-- Quae
 					["coord"] = { 54.8, 55.3, ARATHI_HIGHLANDS },
