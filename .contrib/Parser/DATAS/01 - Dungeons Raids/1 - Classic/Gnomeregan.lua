@@ -99,7 +99,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				}),
 				q(2948, {	-- Gnome Improvement
 					["qg"] = 6826, 	-- Talvash del Kissel
-					["sourceQuest"] = 2947,	-- Return of the Ring
+					["sourceQuest"] = 2947,	-- Return of the Ring [Alliance]
 					["coord"] = { 36.2, 3.8, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -193,7 +193,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				}),
 				q(2950, {	-- Nogg's Ring Redo
 					["qg"] = 3412, 	-- Nogg <Expert Engineer>
-					["sourceQuest"] = 2949,	-- Return of the Ring [Alliance]
+					["sourceQuest"] = 2949,	-- Return of the Ring [Horde]
 					-- #if AFTER CATA
 					["coord"] = { 56.7, 57.0, ORGRIMMAR },
 					-- #else
@@ -217,6 +217,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						{ "o", 142487 },	-- The Sparklematic 5200
 					},
 					["sourceQuest"] = 2945,	-- Grime-Encrusted Ring
+					["races"] = ALLIANCE_ONLY,
 					["lvl"]	= lvlsquish(28, 10, 28),
 				}),
 				q(2949, {	-- Return of the Ring [Horde]
@@ -225,6 +226,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						{ "o", 142487 },	-- The Sparklematic 5200
 					},
 					["sourceQuest"] = 2945,	-- Grime-Encrusted Ring
+					["races"] = HORDE_ONLY,
 					["lvl"]	= lvlsquish(28, 10, 28),
 				}),
 				q(2841, {	-- Rig Wars
