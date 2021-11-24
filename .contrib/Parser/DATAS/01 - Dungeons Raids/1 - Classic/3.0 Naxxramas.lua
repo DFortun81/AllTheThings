@@ -1,1292 +1,2084 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-_.Instances = { tier(CLASSIC_TIER, {
+root("Instances", tier(CLASSIC_TIER, 
+-- #if BEFORE WRATH
+applyclassicphase(PHASE_SIX,
+-- #endif
+{
 	inst(754, {	-- Naxxramas
-		["u"] = REMOVED_FROM_GAME,
-		["isRaid"] = true,
+		-- #if BEFORE MOP
+		["lore"] = "An ancient Nerubian ziggurat, Naxxramas was torn free from the ground by agents of the Lich King to serve as Kel'Thuzad's base of operations as he spreads the plague throughout Lordaeron.\n\nDue to Kel'Thuzad fighting a war against the Scarlet Crusade, the Argent Dawn, the Forsaken and the humans of the Alliance, as well as constant incursions of adventurers from every race and nation into the Scourge-controlled Plaguelands on a daily basis, his forces have been severely taxed to maintain the security of his necropolis. But now that the gates of Naxxramas are open, Kel'Thuzad's new forces are rapidly sweeping away all opposition to the Scourge.",
+		-- #endif
+		-- #if BEFORE WRATH
+		["sourceQuest"] = 9121,	-- The Dread Citadel - Naxxramas [Honored]
+		["timeline"] = { "removed 3.0.2" },
+		-- #endif
+		-- #if AFTER CATA
 		["sharedLockout"] = 1,
+		-- #endif
+		["mapID"] = NAXXRAMAS,
+		["maps"] = { 163, 164, 165, 166, 167 },
+		["isRaid"] = true,
+		-- #if BEFORE WRATH
 		["lvl"] = 60,
-		["mapID"] = 162,
-		["groups"] = {
-			d(9, {	-- 40 Player (Legacy)
-				["ignoreBonus"] = true,
-				["u"] = REMOVED_FROM_GAME,
+		-- #endif
+		["groups"] = bubbleDown({ ["timeline"] = { "removed 3.0.2" } }, {
+			-- #if AFTER WRATH
+			d(9, applyclassicphase(PHASE_SIX, {	-- 40 Player (Legacy)
 				["sourceQuest"] = 9121,	-- The Dread Citadel - Naxxramas [Honored]
+				-- #if AFTER LEGION
+				["ignoreBonus"] = true,
+				-- #endif
+				["lvl"] = 60,
 				["groups"] = {
+			-- #endif
 					n(LEGENDARY_QUESTLINE, {
-						["classes"] = { PRIEST, MAGE, WARLOCK, DRUID },
 						["title"] = "Atiesh, Greatstaff of the Guardian",
 						["icon"] = "Interface\\Icons\\INV_Staff_Medivh",
+						-- #if BEFORE WRATH
+						["lore"] = "Atiesh is one of the most coveted legendaries in the game. In addition to being Best-In-Slot for some specs, it also provides a Unique Party-Wide Bufff:\n\nWarlock: 33 Spell Power and Healing\nMage: 2% Crit\nPriest: 62 Healing\nDruid: 11 Mp5",
+						-- #endif
+						["classes"] = { PRIEST, MAGE, WARLOCK, DRUID },
+						["maps"] = { CAVERNS_OF_TIME },
 						["isRaid"] = true,
-						["u"] = REMOVED_FROM_GAME,
 						["groups"] = {
-							{
-								["itemID"] = 22726,	-- Splinter of Atiesh
-								["description"] = "This item used to drop from all of the bosses in Naxxramas.",
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									{
-										["itemID"] = 22727,	-- Frame of Atiesh
-										["questID"] = 9250,	-- Frame of Atiesh [Quest]
-										["u"] = REMOVED_FROM_GAME,
-									},
-								},
-							},
-							{
-								["questID"] = 9251,	-- Atiesh, the Befouled Greatstaff
+							q(9251, {	-- Atiesh, the Befouled Greatstaff
+								["qg"] = 15192,	-- Anachronos
 								["sourceQuest"] = 9250,	-- Frame of Atiesh
-								["provider"] = { "n", 15192 },	-- Anachronos
-								["u"] = REMOVED_FROM_GAME,
-							},
-							{
-								["questID"] = 9257,	-- Atiesh, Greatstaff of the Guardian [Priest]
+								["maps"] = { TEMPLE_OF_AHNQIRAJ },
+								["classes"] = { PRIEST, MAGE, WARLOCK, DRUID },
+								["lvl"] = 60,
+								["groups"] = {
+									objective(1, {	-- 0/1 Staff Head of Atiesh
+										["provider"] = { "i", 22733 },	-- Staff Head of Atiesh
+									}),
+									objective(2, {	-- 0/1 Base of Atiesh
+										["provider"] = { "i", 22734 },	-- Base of Atiesh
+									}),
+								},
+							}),
+							q(9257, {	-- Atiesh, Greatstaff of the Guardian [Priest]
+								["qg"] = 15192,	-- Anachronos
 								["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
+								["maps"] = { STRATHOLME },
 								["classes"] = { PRIEST },
-								["provider"] = { "n", 15192 },	-- Anachronos
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22631)),	-- Atiesh, Greatstaff of the Guardian (Priest)
+								["cost"] = {
+									{ "i", 22737, 1 },	-- Atiesh, Greatstaff of the Guardian
 								},
-							},
-							{
-								["questID"] = 9270,	-- Atiesh, Greatstaff of the Guardian [Mage]
+								["groups"] = {
+									i(22631),	-- Atiesh, Greatstaff of the Guardian (Priest)
+								},
+							}),
+							q(9270, {	-- Atiesh, Greatstaff of the Guardian [Mage]
+								["qg"] = 15192,	-- Anachronos
 								["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
+								["maps"] = { STRATHOLME },
 								["classes"] = { MAGE },
-								["provider"] = { "n", 15192 },	-- Anachronos
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22589)),	-- Atiesh, Greatstaff of the Guardian (Mage)
+								["cost"] = {
+									{ "i", 22737, 1 },	-- Atiesh, Greatstaff of the Guardian
 								},
-							},
-							{
-								["questID"] = 9271,	-- Atiesh, Greatstaff of the Guardian [Warlock]
+								["groups"] = {
+									i(22589),	-- Atiesh, Greatstaff of the Guardian (Mage)
+								},
+							}),
+							q(9271, {	-- Atiesh, Greatstaff of the Guardian [Warlock]
+								["qg"] = 15192,	-- Anachronos
 								["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
+								["maps"] = { STRATHOLME },
 								["classes"] = { WARLOCK },
-								["provider"] = { "n", 15192 },	-- Anachronos
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22630)),	-- Atiesh, Greatstaff of the Guardian (Warlock)
+								["cost"] = {
+									{ "i", 22737, 1 },	-- Atiesh, Greatstaff of the Guardian
 								},
-							},
-							{
-								["questID"] = 9269,	-- Atiesh, Greatstaff of the Guardian [Druid]
+								["groups"] = {
+									i(22630),	-- Atiesh, Greatstaff of the Guardian (Warlock)
+								},
+							}),
+							q(9269, {	-- Atiesh, Greatstaff of the Guardian [Druid]
+								["qg"] = 15192,	-- Anachronos
 								["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
+								["maps"] = { STRATHOLME },
 								["classes"] = { DRUID },
-								["provider"] = { "n", 15192 },	-- Anachronos
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22632)),	-- Atiesh, Greatstaff of the Guardian (Druid)
+								["cost"] = {
+									{ "i", 22737, 1 },	-- Atiesh, Greatstaff of the Guardian
 								},
-							},
+								["groups"] = {
+									i(22632),	-- Atiesh, Greatstaff of the Guardian (Druid)
+								},
+							}),
+							q(9250, {	-- Frame of Atiesh
+								["provider"] = { "i", 22727 },	-- Frame of Atiesh
+								["description"] = "Collect 40 of the Splinters to craft the Frame of Atiesh. This starts the quest chain for Atiesh. You will need to coordinate with your guild to get priority on Splinters.",
+								["classes"] = { PRIEST, MAGE, WARLOCK, DRUID },
+								["cost"] = {
+									{ "i", 22726, 40 },	-- Splinter of Atiesh
+								},
+								["lvl"] = 60,
+							}),
 						},
 					}),
 					n(QUESTS, {
-						{	-- Echoes of War
-							["questID"] = 9033,	-- Echoes of War
+						cl(WARRIOR, {
+							q(9037, {	-- Dreadnaught Helmet
+								["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22353, 1 },	-- Desecrated Helmet
+									{ "i", 22375, 15 },	-- Wartorn Plate Scrap
+									{ "i", 12360, 5 },	-- Arcanite Bar
+									{ "i", 20725, 1 },	-- Nexus Crystal
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22418),	-- Dreadnaught Helmet
+								},
+							}),
+							q(9038, {	-- Dreadnaught Pauldrons
+								["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22354, 1 },	-- Desecrated Pauldrons
+									{ "i", 22375, 12 },	-- Wartorn Plate Scrap
+									{ "i", 12360, 2 },	-- Arcanite Bar
+									{ "i", 15407, 3 },	-- Cured Rugged Hide
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22419),	-- Dreadnaught Pauldrons
+								},
+							}),
+							q(9034, {	-- Dreadnaught Breastplate
+								["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22349, 1 },	-- Desecrated Breastplate
+									{ "i", 22375, 25 },	-- Wartorn Plate Scrap
+									{ "i", 12360, 4 },	-- Arcanite Bar
+									{ "i", 20725, 2 },	-- Nexus Crystal
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22416),	-- Dreadnaught Breastplate
+								},
+							}),
+							q(9042, {	-- Dreadnaught Bracers
+								["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22355, 1 },	-- Desecrated Bracers
+									{ "i", 22375, 6 },	-- Wartorn Plate Scrap
+									{ "i", 12360, 1 },	-- Arcanite Bar
+									{ "i", 20725, 1 },	-- Nexus Crystal
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22423),	-- Dreadnaught Bracers
+								},
+							}),
+							q(9040, {	-- Dreadnaught Gauntlets
+								["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22357, 1 },	-- Desecrated Gauntlets
+									{ "i", 22375, 8 },	-- Wartorn Plate Scrap
+									{ "i", 12360, 1 },	-- Arcanite Bar
+									{ "i", 15407, 5 },	-- Cured Rugged Hide
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22421),	-- Dreadnaught Gauntlets
+								},
+							}),
+							q(9041, {	-- Dreadnaught Waistguard
+								["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22356, 1 },	-- Desecrated Waistguard
+									{ "i", 22375, 8 },	-- Wartorn Plate Scrap
+									{ "i", 12360, 1 },	-- Arcanite Bar
+									{ "i", 15407, 5 },	-- Cured Rugged Hide
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22422),	-- Dreadnaught Waistguard
+								},
+							}),
+							q(9036, {	-- Dreadnaught Legplates
+								["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22352, 1 },	-- Desecrated Legplates
+									{ "i", 22375, 20 },	-- Wartorn Plate Scrap
+									{ "i", 12360, 4 },	-- Arcanite Bar
+									{ "i", 15407, 3 },	-- Cured Rugged Hide
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22417),	-- Dreadnaught Legplates
+								},
+							}),
+							q(9039, {	-- Dreadnaught Sabatons
+								["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22358, 1 },	-- Desecrated Sabatons
+									{ "i", 22375, 12 },	-- Wartorn Plate Scrap
+									{ "i", 12360, 2 },	-- Arcanite Bar
+									{ "i", 15407, 3 },	-- Cured Rugged Hide
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22420),	-- Dreadnaught Sabatons
+								},
+							}),
+						}),
+						cl(PALADIN, {
+							q(9045, {	-- Redemption Headpiece
+								["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22360, 1 },	-- Desecrated Headpiece
+									{ "i", 22375, 15 },	-- Wartorn Plate Scrap
+									{ "i", 12360, 5 },	-- Arcanite Bar
+									{ "i", 15407, 2 },	-- Cured Rugged Hide
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22428),	-- Redemption Headpiece
+								},
+							}),
+							q(9046, {	-- Redemption Spaulders
+								["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22361, 1 },	-- Desecrated Spaulders
+									{ "i", 22375, 12 },	-- Wartorn Plate Scrap
+									{ "i", 12360, 2 },	-- Arcanite Bar
+									{ "i", 20725, 2 },	-- Nexus Crystal
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22429),	-- Redemption Spaulders
+								},
+							}),
+							q(9043, {	-- Redemption Tunic
+								["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22350, 1 },	-- Desecrated Tunic
+									{ "i", 22375, 25 },	-- Wartorn Plate Scrap
+									{ "i", 12360, 4 },	-- Arcanite Bar
+									{ "i", 15407, 3 },	-- Cured Rugged Hide
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22425),	-- Redemption Tunic
+								},
+							}),
+							q(9050, {	-- Redemption Wristguards
+								["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22362, 1 },	-- Desecrated Wristguards
+									{ "i", 22375, 6 },	-- Wartorn Plate Scrap
+									{ "i", 12360, 1 },	-- Arcanite Bar
+									{ "i", 15407, 2 },	-- Cured Rugged Hide
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22424),	-- Redemption Wristguards
+								},
+							}),
+							q(9048, {	-- Redemption Handguards
+								["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22364, 1 },	-- Desecrated Handguards
+									{ "i", 22375, 8 },	-- Wartorn Plate Scrap
+									{ "i", 12360, 1 },	-- Arcanite Bar
+									{ "i", 15407, 5 },	-- Cured Rugged Hide
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22426),	-- Redemption Handguards
+								},
+							}),
+							q(9049, {	-- Redemption Girdle
+								["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22363, 1 },	-- Desecrated Girdle
+									{ "i", 22375, 8 },	-- Wartorn Plate Scrap
+									{ "i", 12360, 1 },	-- Arcanite Bar
+									{ "i", 20725, 3 },	-- Nexus Crystal
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22431),	-- Redemption Girdle
+								},
+							}),
+							q(9044, {	-- Redemption Legguards
+								["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22359, 1 },	-- Desecrated Legguards
+									{ "i", 22375, 20 },	-- Wartorn Plate Scrap
+									{ "i", 12360, 4 },	-- Arcanite Bar
+									{ "i", 20725, 2 },	-- Nexus Crystal
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22427),	-- Redemption Legguards
+								},
+							}),
+							q(9047, {	-- Redemption Boots
+								["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22365, 1 },	-- Desecrated Boots
+									{ "i", 22375, 12 },	-- Wartorn Plate Scrap
+									{ "i", 12360, 2 },	-- Arcanite Bar
+									{ "i", 15407, 3 },	-- Cured Rugged Hide
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22430),	-- Redemption Boots
+								},
+							}),
+						}),
+						cl(HUNTER, {
+							q(9056, {	-- Cryptstalker Headpiece
+								["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 82.5, 58.6, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22360, 1 },	-- Desecrated Headpiece
+									{ "i", 22374, 15 },	-- Wartorn Chain Scrap
+									{ "i", 12360, 4 },	-- Arcanite Bar
+									{ "i", 20725, 2 },	-- Nexus Crystal
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22438),	-- Cryptstalker Headpiece
+								},
+							}),
+							q(9057, {	-- Cryptstalker Spaulders
+								["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 82.5, 58.6, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22361, 1 },	-- Desecrated Spaulders
+									{ "i", 22374, 12 },	-- Wartorn Chain Scrap
+									{ "i", 12360, 2 },	-- Arcanite Bar
+									{ "i", 15407, 3 },	-- Cured Rugged Hide
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22439),	-- Cryptstalker Spaulders
+								},
+							}),
+							q(9054, {	-- Cryptstalker Tunic
+								["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 82.5, 58.6, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22350, 1 },	-- Desecrated Tunic
+									{ "i", 22374, 25 },	-- Wartorn Chain Scrap
+									{ "i", 12360, 4 },	-- Arcanite Bar
+									{ "i", 15407, 3 },	-- Cured Rugged Hide
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22436),	-- Cryptstalker Tunic
+								},
+							}),
+							q(9061, {	-- Cryptstalker Wristguards
+								["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 82.5, 58.6, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22362, 1 },	-- Desecrated Wristguards
+									{ "i", 22374, 6 },	-- Wartorn Chain Scrap
+									{ "i", 12360, 1 },	-- Arcanite Bar
+									{ "i", 15407, 2 },	-- Cured Rugged Hide
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22443),	-- Cryptstalker Wristguards
+								},
+							}),
+							q(9059, {	-- Cryptstalker Handguards
+								["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 82.5, 58.6, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22364, 1 },	-- Desecrated Handguards
+									{ "i", 22374, 8 },	-- Wartorn Chain Scrap
+									{ "i", 12360, 1 },	-- Arcanite Bar
+									{ "i", 15407, 5 },	-- Cured Rugged Hide
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22441),	-- Cryptstalker Handguards
+								},
+							}),
+							q(9060, {	-- Cryptstalker Girdle
+								["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 82.5, 58.6, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22363, 1 },	-- Desecrated Girdle
+									{ "i", 22374, 8 },	-- Wartorn Chain Scrap
+									{ "i", 12360, 1 },	-- Arcanite Bar
+									{ "i", 20725, 3 },	-- Nexus Crystal
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22442),	-- Cryptstalker Girdle
+								},
+							}),
+							q(9055, {	-- Cryptstalker Legguards
+								["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 82.5, 58.6, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22359, 1 },	-- Desecrated Legguards
+									{ "i", 22374, 20 },	-- Wartorn Chain Scrap
+									{ "i", 12360, 3 },	-- Arcanite Bar
+									{ "i", 15407, 5 },	-- Cured Rugged Hide
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22437),	-- Cryptstalker Legguards
+								},
+							}),
+							q(9058, {	-- Cryptstalker Boots
+								["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 82.5, 58.6, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22365, 1 },	-- Desecrated Boots
+									{ "i", 22374, 12 },	-- Wartorn Chain Scrap
+									{ "i", 12360, 1 },	-- Arcanite Bar
+									{ "i", 20725, 3 },	-- Nexus Crystal
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22440),	-- Cryptstalker Boots
+								},
+							}),
+						}),
+						cl(ROGUE, {
+							q(9079,	{	-- Bonescythe Helmet
+								["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22353, 1 },	-- Desecrated Helmet
+									{ "i", 22373, 15 },	-- Wartorn Leather Scrap
+									{ "i", 15407, 8 },	-- Cured Rugged Hide
+									{ "i", 20725, 1 },	-- Nexus Crystal
+									{ "g", 750000 },	-- 75g
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22478),	-- Bonescythe Helmet
+								},
+							}),
+							q(9080,	{	-- Bonescythe Pauldrons
+								["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22354, 1 },	-- Desecrated Pauldrons
+									{ "i", 22373, 12 },	-- Wartorn Leather Scrap
+									{ "i", 15407, 5 },	-- Cured Rugged Hide
+									{ "i", 20725, 1 },	-- Nexus Crystal
+									{ "g", 500000 },	-- 50g
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22479),	-- Bonescythe Pauldrons
+								},
+							}),
+							q(9077,	{	-- Bonescythe Breastplate
+								["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22349, 1 },	-- Desecrated Breastplate
+									{ "i", 22373, 25 },	-- Wartorn Leather Scrap
+									{ "i", 12360, 2 },	-- Arcanite Bar
+									{ "i", 15407, 6 },	-- Cured Rugged Hide
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22476),	-- Bonescythe Breastplate
+								},
+							}),
+							q(9084,	{	-- Bonescythe Bracers
+								["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22355, 1 },	-- Desecrated Bracers
+									{ "i", 22373, 6 },	-- Wartorn Leather Scrap
+									{ "i", 12360, 1 },	-- Arcanite Bar
+									{ "i", 15407, 2 },	-- Cured Rugged Hide
+									{ "g", 100000 },	-- 10g
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22483),	-- Bonescythe Bracers
+								},
+							}),
+							q(9082,	{	-- Bonescythe Gauntlets
+								["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22357, 1 },	-- Desecrated Gauntlets
+									{ "i", 22373, 8 },	-- Wartorn Leather Scrap
+									{ "i", 12360, 1 },	-- Arcanite Bar
+									{ "i", 15407, 5 },	-- Cured Rugged Hide
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22481),	-- Bonescythe Gauntlets
+								},
+							}),
+							q(9083,	{	-- Bonescythe Waistguard
+								["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22356, 1 },	-- Desecrated Waistguard
+									{ "i", 22373, 8 },	-- Wartorn Leather Scrap
+									{ "i", 15407, 5 },	-- Cured Rugged Hide
+									{ "i", 20725, 1 },	-- Nexus Crystal
+									{ "g", 150000 },	-- 15g
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22482),	-- Bonescythe Waistguard
+								},
+							}),
+							q(9078,	{	-- Bonescythe Legplates
+								["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22352, 1 },	-- Desecrated Legplates
+									{ "i", 22373, 20 },	-- Wartorn Leather Scrap
+									{ "i", 12360, 1 },	-- Arcanite Bar
+									{ "i", 15407, 8 },	-- Cured Rugged Hide
+									{ "g", 1000000 },	-- 100g
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22477),	-- Bonescythe Legplates
+								},
+							}),
+							q(9081,	{	-- Bonescythe Sabatons
+								["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22358, 1 },	-- Desecrated Sabatons
+									{ "i", 22373, 12 },	-- Wartorn Leather Scrap
+									{ "i", 15407, 3 },	-- Cured Rugged Hide
+									{ "i", 20725, 2 },	-- Nexus Crystal
+									{ "g", 250000 },	-- 25g
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22480),	-- Bonescythe Sabatons
+								},
+							}),
+						}),
+						cl(PRIEST, {
+							q(9113, {	-- Circlet of Faith
+								["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22367, 1 },	-- Desecrated Circlet
+									{ "i", 22376, 15 },	-- Wartorn Cloth Scrap
+									{ "i", 14342, 3 },	-- Mooncloth
+									{ "i", 20725, 3 },	-- Nexus Crystal
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22514),	-- Circlet of Faith
+								},
+							}),
+							q(9114, {	-- Shoulderpads of Faith
+								["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22368, 1 },	-- Desecrated Shoulderpads
+									{ "i", 22376, 12 },	-- Wartorn Cloth Scrap
+									{ "i", 14342, 2 },	-- Mooncloth
+									{ "i", 15407, 3 },	-- Cured Rugged Hide
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22515),	-- Shoulderpads of Faith
+								},
+							}),
+							q(9111, {	-- Robe of Faith
+								["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22351, 1 },	-- Desecrated Robe
+									{ "i", 22376, 25 },	-- Wartorn Cloth Scrap
+									{ "i", 14342, 4 },	-- Mooncloth
+									{ "i", 20725, 2 },	-- Nexus Crystal
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22512),	-- Robe of Faith
+								},
+							}),
+							q(9118, {	-- Bindings of Faith
+								["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22369, 1 },	-- Desecrated Bindings
+									{ "i", 22376, 6 },	-- Wartorn Cloth Scrap
+									{ "i", 12363, 1 },	-- Arcane Crystal
+									{ "i", 20725, 1 },	-- Nexus Crystal
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22519),	-- Bindings of Faith
+								},
+							}),
+							q(9116, {	-- Gloves of Faith
+								["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22371, 1 },	-- Desecrated Gloves
+									{ "i", 22376, 8 },	-- Wartorn Cloth Scrap
+									{ "i", 14342, 4 },	-- Mooncloth
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22517),	-- Gloves of Faith
+								},
+							}),
+							q(9117, {	-- Belt of Faith
+								["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22370, 1 },	-- Desecrated Belt
+									{ "i", 22376, 8 },	-- Wartorn Cloth Scrap
+									{ "i", 12363, 2 },	-- Arcane Crystal
+									{ "i", 14342, 2 },	-- Mooncloth
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22518),	-- Belt of Faith
+								},
+							}),
+							q(9112, {	-- Leggings of Faith
+								["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22366, 1 },	-- Desecrated Leggings
+									{ "i", 22376, 20 },	-- Wartorn Cloth Scrap
+									{ "i", 14342, 4 },	-- Mooncloth
+									{ "i", 20725, 2 },	-- Nexus Crystal
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22513),	-- Leggings of Faith
+								},
+							}),
+							q(9115, {	-- Sandals of Faith
+								["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22372, 1 },	-- Desecrated Sandals
+									{ "i", 22376, 12 },	-- Wartorn Cloth Scrap
+									{ "i", 14342, 2 },	-- Mooncloth
+									{ "i", 15407, 3 },	-- Cured Rugged Hide
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22516),	-- Sandals of Faith
+								},
+							}),
+						}),
+						cl(SHAMAN, {
+							q(9070, {	-- Earthshatter Headpiece
+								["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.1, 59.0, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22360, 1 },	-- Desecrated Headpiece
+									{ "i", 22374, 15 },	-- Wartorn Chain Scrap
+									{ "i", 12360, 4 },	-- Arcanite Bar
+									{ "i", 20725, 2 },	-- Nexus Crystal
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22466),	-- Earthshatter Headpiece
+								},
+							}),
+							q(9071, {	-- Earthshatter Spaulders
+								["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.1, 59.0, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22361, 1 },	-- Desecrated Spaulders
+									{ "i", 22374, 12 },	-- Wartorn Chain Scrap
+									{ "i", 12360, 2 },	-- Arcanite Bar
+									{ "i", 14342, 2 },	-- Mooncloth
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22467),	-- Earthshatter Spaulders
+								},
+							}),
+							q(9068, {	-- Earthshatter Tunic
+								["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.1, 59.0, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22350, 1 },	-- Desecrated Tunic
+									{ "i", 22374, 25 },	-- Wartorn Chain Scrap
+									{ "i", 12360, 4 },	-- Arcanite Bar
+									{ "i", 15407, 3 },	-- Cured Rugged Hide
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22464),	-- Earthshatter Tunic
+								},
+							}),
+							q(9075, {	-- Earthshatter Wristguards
+								["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.1, 59.0, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22362, 1 },	-- Desecrated Wristguards
+									{ "i", 22374, 6 },	-- Wartorn Chain Scrap
+									{ "i", 12360, 1 },	-- Arcanite Bar
+									{ "i", 15407, 2 },	-- Cured Rugged Hide
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22471),	-- Earthshatter Wristguards
+								},
+							}),
+							q(9073, {	-- Earthshatter Handguards
+								["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.1, 59.0, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22364, 1 },	-- Desecrated Handguards
+									{ "i", 22374, 8 },	-- Wartorn Chain Scrap
+									{ "i", 12360, 1 },	-- Arcanite Bar
+									{ "i", 15407, 5 },	-- Cured Rugged Hide
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22469),	-- Earthshatter Handguards
+								},
+							}),
+							q(9074, {	-- Earthshatter Girdle
+								["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.1, 59.0, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22363, 1 },	-- Desecrated Girdle
+									{ "i", 22374, 8 },	-- Wartorn Chain Scrap
+									{ "i", 12360, 1 },	-- Arcanite Bar
+									{ "i", 20725, 3 },	-- Nexus Crystal
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22470),	-- Earthshatter Girdle
+								},
+							}),
+							q(9069, {	-- Earthshatter Legguards
+								["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.1, 59.0, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22359, 1 },	-- Desecrated Legguards
+									{ "i", 22374, 20 },	-- Wartorn Chain Scrap
+									{ "i", 12360, 3 },	-- Arcanite Bar
+									{ "i", 15407, 5 },	-- Cured Rugged Hide
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22465),	-- Earthshatter Legguards
+								},
+							}),
+							q(9072, {	-- Earthshatter Boots
+								["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.1, 59.0, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22365, 1 },	-- Desecrated Boots
+									{ "i", 22374, 12 },	-- Wartorn Chain Scrap
+									{ "i", 12360, 1 },	-- Arcanite Bar
+									{ "i", 20725, 3 },	-- Nexus Crystal
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22468),	-- Earthshatter Boots
+								},
+							}),
+						}),
+						cl(MAGE, {
+							q(9097, {	-- Frostfire Circlet
+								["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22367, 1 },	-- Desecrated Circlet
+									{ "i", 22376, 15 },	-- Wartorn Cloth Scrap
+									{ "i", 14342, 3 },	-- Mooncloth
+									{ "i", 20725, 3 },	-- Nexus Crystal
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22498),	-- Frostfire Circlet
+								},
+							}),
+							q(9098, {	-- Frostfire Shoulderpads
+								["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22368, 1 },	-- Desecrated Shoulderpads
+									{ "i", 22376, 12 },	-- Wartorn Cloth Scrap
+									{ "i", 14342, 2 },	-- Mooncloth
+									{ "i", 15407, 3 },	-- Cured Rugged Hide
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22499),	-- Frostfire Shoulderpads
+								},
+							}),
+							q(9095, {	-- Frostfire Robe
+								["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22351, 1 },	-- Desecrated Robe
+									{ "i", 22376, 25 },	-- Wartorn Cloth Scrap
+									{ "i", 14342, 4 },	-- Mooncloth
+									{ "i", 20725, 2 },	-- Nexus Crystal
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22496),	-- Frostfire Robe
+								},
+							}),
+							q(9102, {	-- Frostfire Bindings
+								["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22369, 1 },	-- Desecrated Bindings
+									{ "i", 22376, 6 },	-- Wartorn Cloth Scrap
+									{ "i", 12363, 1 },	-- Arcane Crystal
+									{ "i", 20725, 1 },	-- Nexus Crystal
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22503),	-- Frostfire Bindings
+								},
+							}),
+							q(9100, {	-- Frostfire Gloves
+								["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22371, 1 },	-- Desecrated Gloves
+									{ "i", 22376, 8 },	-- Wartorn Cloth Scrap
+									{ "i", 14342, 4 },	-- Mooncloth
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22501),	-- Frostfire Gloves
+								},
+							}),
+							q(9101, {	-- Frostfire Belt
+								["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22370, 1 },	-- Desecrated Belt
+									{ "i", 22376, 8 },	-- Wartorn Cloth Scrap
+									{ "i", 12363, 2 },	-- Arcane Crystal
+									{ "i", 14342, 2 },	-- Mooncloth
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22502),	-- Frostfire Belt
+								},
+							}),
+							q(9096, {	-- Frostfire Leggings
+								["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22366, 1 },	-- Desecrated Leggings
+									{ "i", 22376, 20 },	-- Wartorn Cloth Scrap
+									{ "i", 14342, 4 },	-- Mooncloth
+									{ "i", 20725, 2 },	-- Nexus Crystal
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22497),	-- Frostfire Leggings
+								},
+							}),
+							q(9099, {	-- Frostfire Sandals
+								["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22372, 1 },	-- Desecrated Sandals
+									{ "i", 22376, 12 },	-- Wartorn Cloth Scrap
+									{ "i", 14342, 2 },	-- Mooncloth
+									{ "i", 15407, 3 },	-- Cured Rugged Hide
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22500),	-- Frostfire Sandals
+								},
+							}),
+						}),
+						cl(WARLOCK, {
+							q(9105, {	-- Plagueheart Circlet
+								["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22367, 1 },	-- Desecrated Circlet
+									{ "i", 22376, 15 },	-- Wartorn Cloth Scrap
+									{ "i", 14342, 3 },	-- Mooncloth
+									{ "i", 14344, 3 },	-- Large Brilliant Shard
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22506),	-- Plagueheart Circlet
+								},
+							}),
+							q(9106, {	-- Plagueheart Shoulderpads
+								["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22368, 1 },	-- Desecrated Shoulderpads
+									{ "i", 22376, 12 },	-- Wartorn Cloth Scrap
+									{ "i", 14342, 2 },	-- Mooncloth
+									{ "i", 15407, 3 },	-- Cured Rugged Hide
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22507),	-- Plagueheart Shoulderpads
+								},
+							}),
+							q(9103, {	-- Plagueheart Robe
+								["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22351, 1 },	-- Desecrated Robe
+									{ "i", 22376, 25 },	-- Wartorn Cloth Scrap
+									{ "i", 14342, 4 },	-- Mooncloth
+									{ "i", 20725, 2 },	-- Nexus Crystal
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22504),	-- Plagueheart Robe
+								},
+							}),
+							q(9110, {	-- Plagueheart Bindings
+								["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22369, 1 },	-- Desecrated Bindings
+									{ "i", 22376, 6 },	-- Wartorn Cloth Scrap
+									{ "i", 12363, 1 },	-- Arcane Crystal
+									{ "i", 20725, 1 },	-- Nexus Crystal
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22511),	-- Plagueheart Bindings
+								},
+							}),
+							q(9108, {	-- Plagueheart Gloves
+								["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22371, 1 },	-- Desecrated Gloves
+									{ "i", 22376, 8 },	-- Wartorn Cloth Scrap
+									{ "i", 14342, 4 },	-- Mooncloth
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22509),	-- Plagueheart Gloves
+								},
+							}),
+							q(9109, {	-- Plagueheart Belt
+								["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22370, 1 },	-- Desecrated Belt
+									{ "i", 22376, 8 },	-- Wartorn Cloth Scrap
+									{ "i", 14342, 2 },	-- Mooncloth
+									{ "i", 12363, 2 },	-- Arcane Crystal
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22510),	-- Plagueheart Belt
+								},
+							}),
+							q(9104, {	-- Plagueheart Leggings
+								["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22366, 1 },	-- Desecrated Leggings
+									{ "i", 22376, 20 },	-- Wartorn Cloth Scrap
+									{ "i", 14342, 4 },	-- Mooncloth
+									{ "i", 20725, 2 },	-- Nexus Crystal
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22505),	-- Plagueheart Leggings
+								},
+							}),
+							q(9107, {	-- Plagueheart Sandals
+								["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22372, 1 },	-- Desecrated Sandals
+									{ "i", 22376, 12 },	-- Wartorn Cloth Scrap
+									{ "i", 14342, 2 },	-- Mooncloth
+									{ "i", 15407, 3 },	-- Cured Rugged Hide
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22508),	-- Plagueheart Sandals
+								},
+							}),
+						}),
+						cl(DRUID, {
+							q(9088,	{	-- Dreamwalker Headpiece
+								["qg"] = 16135,	-- Rayne <Cenarion Circle>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22360, 1 },	-- Desecrated Headpiece
+									{ "i", 22373, 15 },	-- Wartorn Leather Scrap
+									{ "i", 15407, 6 },	-- Cured Rugged Hide
+									{ "i", 20725, 2 },	-- Nexus Crystal
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22490),	-- Dreamwalker Headpiece
+								},
+							}),
+							q(9089,	{	-- Dreamwalker Spaulders
+								["qg"] = 16135,	-- Rayne <Cenarion Circle>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22361, 1 },	-- Desecrated Spaulders
+									{ "i", 22373, 12 },	-- Wartorn Leather Scrap
+									{ "i", 15407, 5 },	-- Cured Rugged Hide
+									{ "i", 20725, 1 },	-- Nexus Crystal
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22491),	-- Dreamwalker Spaulders
+								},
+							}),
+							q(9086,	{	-- Dreamwalker Tunic
+								["qg"] = 16135,	-- Rayne <Cenarion Circle>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22350, 1 },	-- Desecrated Tunic
+									{ "i", 22373, 25 },	-- Wartorn Leather Scrap
+									{ "i", 15407, 6 },	-- Cured Rugged Hide
+									{ "i", 20725, 2 },	-- Nexus Crystal
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22488),	-- Dreamwalker Tunic
+								},
+							}),
+							q(9093,	{	-- Dreamwalker Wristguards
+								["qg"] = 16135,	-- Rayne <Cenarion Circle>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22362, 1 },	-- Desecrated Wristguards
+									{ "i", 22373, 6 },	-- Wartorn Leather Scrap
+									{ "i", 15407, 2 },	-- Cured Rugged Hide
+									{ "i", 12363, 1 },	-- Arcane Crystal
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22495),	-- Dreamwalker Wristguards
+								},
+							}),
+							q(9091,	{	-- Dreamwalker Handguards
+								["qg"] = 16135,	-- Rayne <Cenarion Circle>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22364, 1 },	-- Desecrated Handguards
+									{ "i", 22373, 8 },	-- Wartorn Leather Scrap
+									{ "i", 15407, 5 },	-- Cured Rugged Hide
+									{ "i", 20725, 1 },	-- Nexus Crystal
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22493),	-- Dreamwalker Handguards
+								},
+							}),
+							q(9092,	{	-- Dreamwalker Girdle
+								["qg"] = 16135,	-- Rayne <Cenarion Circle>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22363, 1 },	-- Desecrated Girdle
+									{ "i", 22373, 8 },	-- Wartorn Leather Scrap
+									{ "i", 15407, 2 },	-- Cured Rugged Hide
+									{ "i", 14342, 3 },	-- Mooncloth
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22494),	-- Dreamwalker Girdle
+								},
+							}),
+							q(9087,	{	-- Dreamwalker Legguards
+								["qg"] = 16135,	-- Rayne <Cenarion Circle>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22359, 1 },	-- Desecrated Legguards
+									{ "i", 22373, 20 },	-- Wartorn Leather Scrap
+									{ "i", 15407, 8 },	-- Cured Rugged Hide
+									{ "i", 20725, 1 },	-- Nexus Crystal
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22489),	-- Dreamwalker Legguards
+								},
+							}),
+							q(9090,	{	-- Dreamwalker Boots
+								["qg"] = 16135,	-- Rayne <Cenarion Circle>
+								["sourceQuest"] = 9033,	-- Echoes of War
+								["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
+								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 22365, 1 },	-- Desecrated Boots
+									{ "i", 22373, 12 },	-- Wartorn Leather Scrap
+									{ "i", 15407, 2 },	-- Cured Rugged Hide
+									{ "i", 14342, 3 },	-- Mooncloth
+								},
+								["lvl"] = 60,
+								["groups"] = {
+									i(22492),	-- Dreamwalker Boots
+								},
+							}),
+						}),
+						q(9033, {	-- Echoes of War
+							["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
 							["sourceQuests"] = {
 								9121,	-- The Dread Citadel - Naxxramas
 								9122,	-- The Dread Citadel - Naxxramas
 								9123,	-- The Dread Citadel - Naxxramas
 							},
-							["provider"] = { "n", 16115 },	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
-							["u"] = REMOVED_FROM_GAME,
-						},
-						{	-- Glacial Cloak
-							["questID"] = 9237,	-- Glacial Cloak
-							["sourceQuest"] = 9233,	-- Omarion's Handbook
-							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
-							["u"] = REMOVED_FROM_GAME,
+							["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
+							["lvl"] = 60,
 							["groups"] = {
-								un(REMOVED_FROM_GAME, i(22658)),	-- Glacial Cloak
+								objective(1, {	-- 0/8 Deathknight Captain slain
+									["provider"] = { "n", 16145 },	-- Deathknight Captain
+								}),
+								objective(2, {	-- 0/3 Venom Stalker slain
+									["provider"] = { "n", 15976 },	-- Venom Stalker
+								}),
+								objective(3, {	-- 0/5 Living Monstrosity slain
+									["provider"] = { "n", 16021 },	-- Living Monstrosity
+								}),
+								objective(4, {	-- 0/5 Stoneskin Gargoyle slain
+									["provider"] = { "n", 16168 },	-- Stoneskin Gargoyle
+								}),
 							},
-						},
-						{	-- Glacial Gloves
-							["questID"] = 9239,	-- Glacial Gloves
+						}),
+						q(9237, {	-- Glacial Cloak
+							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
-							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
-							["u"] = REMOVED_FROM_GAME,
-							["groups"] = {
-								un(REMOVED_FROM_GAME, i(22654)),	-- Glacial Gloves
+							["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
+							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
+							["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
+							["cost"] = {
+								{ "i", 22682, 5 },	-- Frozen Rune
+								{ "i",  7080, 2 },	-- Essence of Water
+								{ "i", 14048, 4 },	-- Bolt of Runecloth
+								{ "i", 14227, 4 },	-- Ironweb Spider Silk
+								{ "g", 2000000 },	-- 200g
 							},
-						},
-						{	-- Glacial Vest
-							["questID"] = 9240,	-- Glacial Vest
+							["lvl"] = 60,
+							["groups"] = {
+								i(22658),	-- Glacial Cloak
+							},
+						}),
+						q(9239, {	-- Glacial Gloves
+							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
-							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
-							["u"] = REMOVED_FROM_GAME,
-							["groups"] = {
-								un(REMOVED_FROM_GAME, i(22652)),	-- Glacial Vest
+							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
+							["classes"] = { PRIEST, MAGE, WARLOCK },
+							["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
+							["cost"] = {
+								{ "i", 22682, 5 },	-- Frozen Rune
+								{ "i",  7080, 4 },	-- Essence of Water
+								{ "i", 14048, 4 },	-- Bolt of Runecloth
+								{ "i", 14227, 2 },	-- Ironweb Spider Silk
+								{ "g", 2000000 },	-- 200g
 							},
-						},
-						{	-- Glacial Wrists
-							["questID"] = 9238,	-- Glacial Wrists
+							["lvl"] = 60,
+							["groups"] = {
+								i(22654),	-- Glacial Gloves
+							},
+						}),
+						q(9240, {	-- Glacial Vest
+							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
-							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
-							["u"] = REMOVED_FROM_GAME,
-							["groups"] = {
-								un(REMOVED_FROM_GAME, i(22655)),	-- Glacial Wrists
+							["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
+							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
+							["classes"] = { PRIEST, MAGE, WARLOCK },
+							["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
+							["cost"] = {
+								{ "i", 22682, 8 },	-- Frozen Rune
+								{ "i",  7080, 6 },	-- Essence of Water
+								{ "i", 14048, 8 },	-- Bolt of Runecloth
+								{ "i", 14227, 4 },	-- Ironweb Spider Silk
+								{ "g", 3000000 },	-- 300g
 							},
-						},
-						{	-- Icebane Bracers
-							["questID"] = 9235,	-- Icebane Bracers
+							["lvl"] = 60,
+							["groups"] = {
+								i(22652),	-- Glacial Vest
+							},
+						}),
+						q(9238, {	-- Glacial Wrists
+							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
-							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
-							["u"] = REMOVED_FROM_GAME,
-							["groups"] = {
-								{	-- Plans: Icebane Bracers
-									["recipeID"] = 28244,	-- Plans: Icebane Bracers
-									["u"] = REMOVED_FROM_GAME,
-								},
+							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
+							["classes"] = { PRIEST, MAGE, WARLOCK },
+							["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
+							["cost"] = {
+								{ "i", 22682, 4 },	-- Frozen Rune
+								{ "i",  7080, 2 },	-- Essence of Water
+								{ "i", 14048, 2 },	-- Bolt of Runecloth
+								{ "i", 14227, 2 },	-- Ironweb Spider Silk
+								{ "g", 2000000 },	-- 200g
 							},
-						},
-						{	-- Icebane Breastplate
-							["questID"] = 9236,	-- Icebane Breastplate
+							["lvl"] = 60,
+							["groups"] = {
+								i(22655),	-- Glacial Wrists
+							},
+						}),
+						q(9235, {	-- Icebane Bracers
+							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
-							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
-							["u"] = REMOVED_FROM_GAME,
-							["groups"] = {
-								{	-- Plans: Icebane Breastplate
-									["recipeID"] = 28242,	-- Plans: Icebane Breastplate
-									["u"] = REMOVED_FROM_GAME,
-								},
+							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
+							["classes"] = { WARRIOR, PALADIN },
+							["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
+							["cost"] = {
+								{ "i", 22682, 4 },	-- Frozen Rune
+								{ "i", 7080, 2 },	-- Essence of Water
+								{ "i", 12359, 12 },	-- Thorium Bar
+								{ "i", 12360, 2 },	-- Arcanite Bar
+								{ "g", 2000000 },	-- 200g
 							},
-						},
-						{	-- Icebane Gauntlets
-							["questID"] = 9234,	-- Icebane Gauntlets
+							["lvl"] = 60,
+							["groups"] = {
+								i(22671),	-- Icebane Bracers
+							},
+						}),
+						q(9236, {	-- Icebane Breastplate
+							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
-							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
-							["u"] = REMOVED_FROM_GAME,
-							["groups"] = {
-								{	-- Plans: Icebane Gauntlets
-									["recipeID"] = 28243,	-- Plans: Icebane Gauntlets
-									["u"] = REMOVED_FROM_GAME,
-								},
+							["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
+							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
+							["classes"] = { WARRIOR, PALADIN },
+							["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
+							["cost"] = {
+								{ "i", 22682, 8 },	-- Frozen Rune
+								{ "i", 7080, 4 },	-- Essence of Water
+								{ "i", 12359, 16 },	-- Thorium Bar
+								{ "i", 12360, 2 },	-- Arcanite Bar
+								{ "g", 3000000 },	-- 300g
 							},
-						},
-						{	-- Icy Scale Bracers
-							["questID"] = 9244,	-- Icy Scale Bracers
+							["lvl"] = 60,
+							["groups"] = {
+								i(22669),	-- Icebane Breastplate
+							},
+						}),
+						q(9234, {	-- Icebane Gauntlets
+							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
-							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
-							["u"] = REMOVED_FROM_GAME,
-							["groups"] = {
-								un(REMOVED_FROM_GAME, i(22665)),	-- Icy Scale Bracers
+							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
+							["classes"] = { WARRIOR, PALADIN },
+							["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
+							["cost"] = {
+								{ "i", 22682, 5 },	-- Frozen Rune
+								{ "i", 7080, 2 },	-- Essence of Water
+								{ "i", 12359, 12 },	-- Thorium Bar
+								{ "i", 12360, 2 },	-- Arcanite Bar
+								{ "g", 2000000 },	-- 200g
 							},
-						},
-						{	-- Icy Scale Breastplate
-							["questID"] = 9246,	-- Icy Scale Breastplate
+							["lvl"] = 60,
+							["groups"] = {
+								i(22670),	-- Icebane Gauntlets
+							},
+						}),
+						q(9244, {	-- Icy Scale Bracers
+							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
-							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
-							["u"] = REMOVED_FROM_GAME,
-							["groups"] = {
-								un(REMOVED_FROM_GAME, i(22664)),	-- Icy Scale Breastplate
+							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
+							["classes"] = { HUNTER, SHAMAN },
+							["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
+							["cost"] = {
+								{ "i", 22682, 4 },	-- Frozen Rune
+								{ "i",  7080, 5 },	-- Essence of Water
+								{ "i", 15407, 3 },	-- Cured Rugged Hide
+								{ "i", 15408, 16 },	-- Heavy Scorpid Scale
+								{ "g", 2000000 },	-- 200g
 							},
-						},
-						{	-- Icy Scale Gauntlets
-							["questID"] = 9245,	-- Icy Scale Gauntlets
+							["lvl"] = 60,
+							["groups"] = {
+								i(22665),	-- Icy Scale Bracers
+							},
+						}),
+						q(9246, {	-- Icy Scale Breastplate
+							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
-							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
-							["u"] = REMOVED_FROM_GAME,
-							["groups"] = {
-								un(REMOVED_FROM_GAME, i(22666)),	-- Icy Scale Gauntlets
+							["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
+							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
+							["classes"] = { HUNTER, SHAMAN },
+							["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
+							["cost"] = {
+								{ "i", 22682, 8 },	-- Frozen Rune
+								{ "i",  7080, 7 },	-- Essence of Water
+								{ "i", 15407, 5 },	-- Cured Rugged Hide
+								{ "i", 15408, 24 },	-- Heavy Scorpid Scale
+								{ "g", 3000000 },	-- 300g
 							},
-						},
-						{	-- Polar Bracers
-							["questID"] = 9241,	-- Polar Bracers
+							["lvl"] = 60,
+							["groups"] = {
+								i(22664),	-- Icy Scale Breastplate
+							},
+						}),
+						q(9245, {	-- Icy Scale Gauntlets
+							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
-							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
-							["u"] = REMOVED_FROM_GAME,
-							["groups"] = {
-								un(REMOVED_FROM_GAME, i(22663)),	-- Polar Bracers
+							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
+							["classes"] = { HUNTER, SHAMAN },
+							["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
+							["cost"] = {
+								{ "i", 22682, 5 },	-- Frozen Rune
+								{ "i",  7080, 5 },	-- Essence of Water
+								{ "i", 15407, 3 },	-- Cured Rugged Hide
+								{ "i", 15408, 16 },	-- Heavy Scorpid Scale
+								{ "g", 2000000 },	-- 200g
 							},
-						},
-						{	-- Polar Gloves
-							["questID"] = 9242,	-- Polar Gloves
+							["lvl"] = 60,
+							["groups"] = {
+								i(22666),	-- Icy Scale Gauntlets
+							},
+						}),
+						q(9233, {	-- Omarion's Handbook
+							["provider"] = { "i", 22719 },	-- Omarion's Handbook
+							["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
+							["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
+							["lvl"] = 60,
+						}),
+						q(9241, {	-- Polar Bracers
+							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
-							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
-							["u"] = REMOVED_FROM_GAME,
-							["groups"] = {
-								un(REMOVED_FROM_GAME, i(22662)),	-- Polar Gloves
+							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
+							["classes"] = { ROGUE, DRUID },
+							["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
+							["cost"] = {
+								{ "i", 22682, 4 },	-- Frozen Rune
+								{ "i",  7080, 3 },	-- Essence of Water
+								{ "i", 12810, 12 },	-- Enchanted Leather
+								{ "i", 15407, 3 },	-- Cured Rugged Hide
+								{ "g", 2000000 },	-- 200g
 							},
-						},
-						{	-- Polar Tunic
-							["questID"] = 9243,	-- Polar Tunic
+							["lvl"] = 60,
+							["groups"] = {
+								i(22663),	-- Polar Bracers
+							},
+						}),
+						q(9242, {	-- Polar Gloves
+							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
-							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
-							["u"] = REMOVED_FROM_GAME,
-							["groups"] = {
-								un(REMOVED_FROM_GAME, i(22661)),	-- Polar Tunic
+							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
+							["classes"] = { ROGUE, DRUID },
+							["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
+							["cost"] = {
+								{ "i", 22682, 5 },	-- Frozen Rune
+								{ "i",  7080, 3 },	-- Essence of Water
+								{ "i", 15407, 3 },	-- Cured Rugged Hide
+								{ "i", 12810, 12 },	-- Enchanted Leather
+								{ "g", 2000000 },	-- 200g
 							},
-						},
-						{	-- Ramaladni's Icy Grasp
-							["questID"] = 9230,	-- Ramaladni's Icy Grasp
+							["lvl"] = 60,
+							["groups"] = {
+								i(22662),	-- Polar Gloves
+							},
+						}),
+						q(9243, {	-- Polar Tunic
+							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
+							["sourceQuest"] = 9233,	-- Omarion's Handbook
+							["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
+							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
+							["classes"] = { ROGUE, DRUID },
+							["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
+							["cost"] = {
+								{ "i", 22682, 8 },	-- Frozen Rune
+								{ "i",  7080, 5 },	-- Essence of Water
+								{ "i", 15407, 5 },	-- Cured Rugged Hide
+								{ "i", 12810, 16 },	-- Enchanted Leather
+								{ "g", 3000000 },	-- 300g
+							},
+							["lvl"] = 60,
+							["groups"] = {
+								i(22661),	-- Polar Tunic
+							},
+						}),
+						q(9230, {	-- Ramaladni's Icy Grasp
+							["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
 							["sourceQuest"] = 9229,	-- The Fate of Ramaldni
-							["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
-							["u"] = REMOVED_FROM_GAME,
-							["groups"] = {
-								un(REMOVED_FROM_GAME, i(22707)),	-- Ramaladni's Icy Grasp
+							["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
+							["cost"] = {
+								{ "i", 22682, 1 },	-- Frozen Rune
+								{ "i", 12361, 1 },	-- Blue Sapphire
+								{ "i", 12360, 1 },	-- Arcanite Bar
 							},
-						},
-						{	-- The Dread Citadel - Naxxramas [Honored]
-							["questID"] = 9121,	-- The Dread Citadel - Naxxramas [Honored]
-							["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos <Brotherhood of the Light>
+							["lvl"] = 60,
+							["groups"] = {
+								i(22707),	-- Ramaladni's Icy Grasp
+							},
+						}),
+						q(9121, {	-- The Dread Citadel - Naxxramas [Honored]
+							["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 							["minReputation"] = { 529, HONORED },	-- Argent Dawn, Honored.
+							["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
 							["altQuests"] = {
 								9122,	-- The Dread Citadel - Naxxramas [Revered]
 								9123,	-- The Dread Citadel - Naxxramas [Exalted]
+								9378,	-- Attunement [HIDDEN QUEST TRIGGER]
 							},
-							["u"] = REMOVED_FROM_GAME,
 							["cost"] = {
-								{ "i", 12363, 6 },	-- Arcane Crystal
+								{ "i", 12363, 5 },	-- Arcane Crystal
 								{ "i", 14344, 2 },	-- Large Brilliant Shard
 								{ "i", 20725, 2 },	-- Nexus Crystal
 								{ "i", 12811, 1 },	-- Righteous Orb
 								{ "g", 600000 },	-- 60g
 							},
-						},
-						{	-- The Dread Citadel - Naxxramas [Revered]
-							["questID"] = 9122,	-- The Dread Citadel - Naxxramas [Revered]
-							["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos <Brotherhood of the Light>
+							["lvl"] = 60,
+						}),
+						q(9122, {	-- The Dread Citadel - Naxxramas [Revered]
+							["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+							["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
 							["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
 							["altQuests"] = {
 								9121,	-- The Dread Citadel - Naxxramas [Honored]
 								9123,	-- The Dread Citadel - Naxxramas [Exalted]
+								9378,	-- Attunement [HIDDEN QUEST TRIGGER]
 							},
-							["u"] = REMOVED_FROM_GAME,
 							["cost"] = {
 								{ "i", 12363, 2 },	-- Arcane Crystal
 								{ "i", 20725, 1 },	-- Nexus Crystal
 								{ "g", 300000 },	-- 30g
 							},
-						},
-						{	-- The Dread Citadel - Naxxramas [Exalted]
-							["questID"] = 9123,	-- The Dread Citadel - Naxxramas [Exalted]
-							["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos <Brotherhood of the Light>
+							["lvl"] = 60,
+						}),
+						q(9123, {	-- The Dread Citadel - Naxxramas [Exalted]
+							["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 							["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
+							["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
 							["altQuests"] = {
 								9121,	-- The Dread Citadel - Naxxramas [Honored]
 								9122,	-- The Dread Citadel - Naxxramas [Revered]
+								9378,	-- Attunement [HIDDEN QUEST TRIGGER]
 							},
-							["u"] = REMOVED_FROM_GAME,
-						},
-						{	-- The Fate of Ramaldni
-							["questID"] = 9229,	-- The Fate of Ramaldni
-							["sourceQuest"] = 9033,	-- Echoes of War
-							["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
-							["u"] = REMOVED_FROM_GAME,
-						},
-						{	-- The Only Song I Know...
-							["questID"] = 9232,	-- The Only Song I Know...
-							["sourceQuest"] = 9033,	-- Echoes of War
-							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
-							["u"] = REMOVED_FROM_GAME,
+							["lvl"] = 60,
+						}),
+						q(9120, {	-- The Fall of Kel'Thuzad
+							["provider"] = { "i", 22520 },	-- The Phylactery of Kel'Thuzad
+							["lvl"] = 60,
 							["groups"] = {
-								un(REMOVED_FROM_GAME, i(22700)),	-- Glacial Leggings
-								un(REMOVED_FROM_GAME, i(22699)),	-- Icebane Leggings
-								un(REMOVED_FROM_GAME, i(22702)),	-- Icy Scale Leggings
-								un(REMOVED_FROM_GAME, i(22701)),	-- Polar Leggings
-							},
-						},
-						cl(WARRIOR, {
-							{
-								["questID"] = 9037,	-- Dreadnaught Helmet
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22418)),	-- Dreadnaught Helmet
-								},
-							},
-							{
-								["questID"] = 9038,	-- Dreadnaught Pauldrons
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22419)),	-- Dreadnaught Pauldrons
-								},
-							},
-							{
-								["questID"] = 9034,	-- Dreadnaught Breastplate
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22416)),	-- Dreadnaught Breastplate
-								},
-							},
-							{
-								["questID"] = 9042,	-- Dreadnaught Bracers
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22423)),	-- Dreadnaught Bracers
-								},
-							},
-							{
-								["questID"] = 9040,	-- Dreadnaught Gauntlets
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22421)),	-- Dreadnaught Gauntlets
-								},
-							},
-							{
-								["questID"] = 9041,	-- Dreadnaught Waistguard
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22422)),	-- Dreadnaught Waistguard
-								},
-							},
-							{
-								["questID"] = 9036,	-- Dreadnaught Legplates
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22417)),	-- Dreadnaught Legplates
-								},
-							},
-							{
-								["questID"] = 9039,	-- Dreadnaught Sabatons
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22420)),	-- Dreadnaught Sabatons
-								},
+								i(23206),	-- Mark of the Champion
+								i(23207),	-- Mark of the Champion
 							},
 						}),
-						cl(PALADIN, {
-							{
-								["questID"] = 9045,	-- Redemption Headpiece
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16115 },	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22428)),	-- Redemption Headpiece
-								},
-							},
-							{
-								["questID"] = 9046,	-- Redemption Spaulders
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16115 },	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22429)),	-- Redemption Spaulders
-								},
-							},
-							{
-								["questID"] = 9050,	-- Redemption Wristguards
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16115 },	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22424)),	-- Redemption Wristguards
-								},
-							},
-							{
-								["questID"] = 9048,	-- Redemption Handguards
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16115 },	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22426)),	-- Redemption Handguards
-								},
-							},
-							{
-								["questID"] = 9043,	-- Redemption Tunic
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16115 },	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22425)),	-- Redemption Tunic
-								},
-							},
-							{
-								["questID"] = 9049,	-- Redemption Girdle
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16115 },	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22431)),	-- Redemption Girdle
-								},
-							},
-							{
-								["questID"] = 9044,	-- Redemption Legguards
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16115 },	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22427)),	-- Redemption Legguards
-								},
-							},
-							{
-								["questID"] = 9047,	-- Redemption Boots
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16115 },	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22430)),	-- Redemption Boots
-								},
+						q(9229, {	-- The Fate of Ramaladni
+							["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
+							["sourceQuest"] = 9033,	-- Echoes of War
+							["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
+							["lvl"] = 60,
+							["groups"] = {
+								objective(1, {	-- 0/1 Fate of Ramaladni
+									["provider"] = { "i", 22708 },	-- Fate of Ramaladni
+								}),
 							},
 						}),
-						cl(HUNTER, {
-							{
-								["questID"] = 9056,	-- Cryptstalker Headpiece
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16132 },	-- Huntsman Leopold <The Scarlet Crusade>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22438)),	-- Cryptstalker Headpiece
-								},
+						q(9232, {	-- The Only Song I Know...
+							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
+							["sourceQuest"] = 9033,	-- Echoes of War
+							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
+							["cost"] = {
+								{ "i", 22682, 2 },	-- Frozen Rune
+								{ "i",  7080, 2 },	-- Essence of Water
+								{ "i", 12361, 2 },	-- Blue Sapphire
+								{ "g", 300000 },	-- 30g
 							},
-							{
-								["questID"] = 9057,	-- Cryptstalker Spaulders
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16132 },	-- Huntsman Leopold <The Scarlet Crusade>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22439)),	-- Cryptstalker Spaulders
-								},
-							},
-							{
-								["questID"] = 9054,	-- Cryptstalker Tunic
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16132 },	-- Huntsman Leopold <The Scarlet Crusade>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22436)),	-- Cryptstalker Tunic
-								},
-							},
-							{
-								["questID"] = 9061,	-- Cryptstalker Wristguards
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16132 },	-- Huntsman Leopold <The Scarlet Crusade>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22443)),	-- Cryptstalker Wristguards
-								},
-							},
-							{
-								["questID"] = 9059,	-- Cryptstalker Handguards
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16132 },	-- Huntsman Leopold <The Scarlet Crusade>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22441)),	-- Cryptstalker Handguards
-								},
-							},
-							{
-								["questID"] = 9060,	-- Cryptstalker Girdle
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16132 },	-- Huntsman Leopold <The Scarlet Crusade>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22442)),	-- Cryptstalker Girdle
-								},
-							},
-							{
-								["questID"] = 9055,	-- Cryptstalker Legguards
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16132 },	-- Huntsman Leopold <The Scarlet Crusade>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22437)),	-- Cryptstalker Legguards
-								},
-							},
-							{
-								["questID"] = 9058,	-- Cryptstalker Boots
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16132 },	-- Huntsman Leopold <The Scarlet Crusade>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22440)),	-- Cryptstalker Boots
-								},
-							},
-						}),
-						cl(ROGUE, {
-							{
-								["questID"] = 9079,	-- Bonescythe Helmet
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16131 },	-- Rohan the Assassin <The Scarlet Crusade>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22478)),	-- Bonescythe Helmet
-								},
-							},
-							{
-								["questID"] = 9080,	-- Bonescythe Pauldrons
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16131 },	-- Rohan the Assassin <The Scarlet Crusade>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22479)),	-- Bonescythe Pauldrons
-								},
-							},
-							{
-								["questID"] = 9077,	-- Bonescythe Breastplate
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16131 },	-- Rohan the Assassin <The Scarlet Crusade>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22476)),	-- Bonescythe Breastplate
-								},
-							},
-							{
-								["questID"] = 9084,	-- Bonescythe Bracers
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16131 },	-- Rohan the Assassin <The Scarlet Crusade>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22483)),	-- Bonescythe Bracers
-								},
-							},
-							{
-								["questID"] = 9082,	-- Bonescythe Gauntlets
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16131 },	-- Rohan the Assassin <The Scarlet Crusade>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22481)),	-- Bonescythe Gauntlets
-								},
-							},
-							{
-								["questID"] = 9083,	-- Bonescythe Waistguard
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16131 },	-- Rohan the Assassin <The Scarlet Crusade>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22482)),	-- Bonescythe Waistguard
-								},
-							},
-							{
-								["questID"] = 9078,	-- Bonescythe Legplates
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16131 },	-- Rohan the Assassin <The Scarlet Crusade>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22477)),	-- Bonescythe Legplates
-								},
-							},
-							{
-								["questID"] = 9081,	-- Bonescythe Sabatons
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16131 },	-- Rohan the Assassin <The Scarlet Crusade>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22480)),	-- Bonescythe Sabatons
-								},
-							},
-						}),
-						cl(PRIEST, {
-							{
-								["questID"] = 9113,	-- Circlet of Faith
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16113 },	-- Father Inigo Montoy <Brotherhood of the Light>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22514)),	-- Circlet of Faith
-								},
-							},
-							{
-								["questID"] = 9114,	-- Shoulderpads of Faith
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16113 },	-- Father Inigo Montoy <Brotherhood of the Light>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22515)),	-- Shoulderpads of Faith
-								},
-							},
-							{
-								["questID"] = 9111,	-- Robe of Faith
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16113 },	-- Father Inigo Montoy <Brotherhood of the Light>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22512)),	-- Robe of Faith
-								},
-							},
-							{
-								["questID"] = 9118,	-- Bindings of Faith
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16113 },	-- Father Inigo Montoy <Brotherhood of the Light>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22519)),	-- Bindings of Faith
-								},
-							},
-							{
-								["questID"] = 9116,	-- Gloves of Faith
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16113 },	-- Father Inigo Montoy <Brotherhood of the Light>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22517)),	-- Gloves of Faith
-								},
-							},
-							{
-								["questID"] = 9117,	-- Belt of Faith
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16113 },	-- Father Inigo Montoy <Brotherhood of the Light>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22518)),	-- Belt of Faith
-								},
-							},
-							{
-								["questID"] = 9112,	-- Leggings of Faith
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16113 },	-- Father Inigo Montoy <Brotherhood of the Light>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22513)),	-- Leggings of Faith
-								},
-							},
-							{
-								["questID"] = 9115,	-- Sandals of Faith
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16113 },	-- Father Inigo Montoy <Brotherhood of the Light>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22516)),	-- Sandals of Faith
-								},
-							},
-						}),
-						cl(SHAMAN, {
-							{
-								["questID"] = 9070,	-- Earthshatter Headpiece
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16134 },	-- Rimblat Earthshatter <The Earthen Ring>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22466)),	-- Earthshatter Headpiece
-								},
-							},
-							{
-								["questID"] = 9071,	-- Earthshatter Spaulders
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16134 },	-- Rimblat Earthshatter <The Earthen Ring>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22467)),	-- Earthshatter Spaulders
-								},
-							},
-							{
-								["questID"] = 9068,	-- Earthshatter Tunic
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16134 },	-- Rimblat Earthshatter <The Earthen Ring>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22464)),	-- Earthshatter Tunic
-								},
-							},
-							{
-								["questID"] = 9075,	-- Earthshatter Wristguards
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16134 },	-- Rimblat Earthshatter <The Earthen Ring>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22471)),	-- Earthshatter Wristguards
-								},
-							},
-							{
-								["questID"] = 9073,	-- Earthshatter Handguards
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16134 },	-- Rimblat Earthshatter <The Earthen Ring>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22469)),	-- Earthshatter Handguards
-								},
-							},
-							{
-								["questID"] = 9074,	-- Earthshatter Girdle
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16134 },	-- Rimblat Earthshatter <The Earthen Ring>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22470)),	-- Earthshatter Girdle
-								},
-							},
-							{
-								["questID"] = 9069,	-- Earthshatter Legguards
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16134 },	-- Rimblat Earthshatter <The Earthen Ring>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22465)),	-- Earthshatter Legguards
-								},
-							},
-							{
-								["questID"] = 9072,	-- Earthshatter Boots
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16134 },	-- Rimblat Earthshatter <The Earthen Ring>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22468)),	-- Earthshatter Boots
-								},
-							},
-						}),
-						cl(MAGE, {
-							{
-								["questID"] = 9097,	-- Frostfire Circlet
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos <Brotherhood of the Light>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22498)),	-- Frostfire Circlet
-								},
-							},
-							{
-								["questID"] = 9098,	-- Frostfire Shoulderpads
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos <Brotherhood of the Light>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22499)),	-- Frostfire Shoulderpads
-								},
-							},
-							{
-								["questID"] = 9095,	-- Frostfire Robe
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos <Brotherhood of the Light>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22496)),	-- Frostfire Robe
-								},
-							},
-							{
-								["questID"] = 9102,	-- Frostfire Bindings
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos <Brotherhood of the Light>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22503)),	-- Frostfire Bindings
-								},
-							},
-							{
-								["questID"] = 9100,	-- Frostfire Gloves
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos <Brotherhood of the Light>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22501)),	-- Frostfire Gloves
-								},
-							},
-							{
-								["questID"] = 9101,	-- Frostfire Belt
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos <Brotherhood of the Light>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22502)),	-- Frostfire Belt
-								},
-							},
-							{
-								["questID"] = 9096,	-- Frostfire Leggings
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos <Brotherhood of the Light>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22497)),	-- Frostfire Leggings
-								},
-							},
-							{
-								["questID"] = 9099,	-- Frostfire Sandals
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos <Brotherhood of the Light>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22500)),	-- Frostfire Sandals
-								},
-							},
-						}),
-						cl(WARLOCK, {
-							{
-								["questID"] = 9105,	-- Plagueheart Circlet
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16133 },	-- Mataus the Wrathcaster <The Scarlet Crusade>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22506)),	-- Plagueheart Circlet
-								},
-							},
-							{
-								["questID"] = 9106,	-- Plagueheart Shoulderpads
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16133 },	-- Mataus the Wrathcaster <The Scarlet Crusade>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22507)),	-- Plagueheart Shoulderpads
-								},
-							},
-							{
-								["questID"] = 9103,	-- Plagueheart Robe
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16133 },	-- Mataus the Wrathcaster <The Scarlet Crusade>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22504)),	-- Plagueheart Robe
-								},
-							},
-							{
-								["questID"] = 9110,	-- Plagueheart Bindings
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16133 },	-- Mataus the Wrathcaster <The Scarlet Crusade>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22511)),	-- Plagueheart Bindings
-								},
-							},
-							{
-								["questID"] = 9108,	-- Plagueheart Gloves
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16133 },	-- Mataus the Wrathcaster <The Scarlet Crusade>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22509)),	-- Plagueheart Gloves
-								},
-							},
-							{
-								["questID"] = 9109,	-- Plagueheart Belt
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16133 },	-- Mataus the Wrathcaster <The Scarlet Crusade>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22510)),	-- Plagueheart Belt
-								},
-							},
-							{
-								["questID"] = 9104,	-- Plagueheart Leggings
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16133 },	-- Mataus the Wrathcaster <The Scarlet Crusade>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22505)),	-- Plagueheart Leggings
-								},
-							},
-							{
-								["questID"] = 9107,	-- Plagueheart Sandals
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16133 },	-- Mataus the Wrathcaster <The Scarlet Crusade>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22508)),	-- Plagueheart Sandals
-								},
-							},
-						}),
-						cl(DRUID, {
-							{
-								["questID"] = 9088,	-- Dreamwalker Headpiece
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16135 },	-- Rayne <Cenarion Circle>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22490)),	-- Dreamwalker Headpiece
-								},
-							},
-							{
-								["questID"] = 9089,	-- Dreamwalker Spaulders
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16135 },	-- Rayne <Cenarion Circle>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22491)),	-- Dreamwalker Spaulders
-								},
-							},
-							{
-								["questID"] = 9086,	-- Dreamwalker Tunic
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16135 },	-- Rayne <Cenarion Circle>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22488)),	-- Dreamwalker Tunic
-								},
-							},
-							{
-								["questID"] = 9093,	-- Dreamwalker Wristguards
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16135 },	-- Rayne <Cenarion Circle>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22495)),	-- Dreamwalker Wristguards
-								},
-							},
-							{
-								["questID"] = 9091,	-- Dreamwalker Handguards
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16135 },	-- Rayne <Cenarion Circle>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22493)),	-- Dreamwalker Handguards
-								},
-							},
-							{
-								["questID"] = 9092,	-- Dreamwalker Girdle
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16135 },	-- Rayne <Cenarion Circle>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22494)),	-- Dreamwalker Girdle
-								},
-							},
-							{
-								["questID"] = 9087,	-- Dreamwalker Legguards
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16135 },	-- Rayne <Cenarion Circle>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22489)),	-- Dreamwalker Legguards
-								},
-							},
-							{
-								["questID"] = 9090,	-- Dreamwalker Boots
-								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
-								["provider"] = { "n", 16135 },	-- Rayne <Cenarion Circle>
-								["u"] = REMOVED_FROM_GAME,
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22492)),	-- Dreamwalker Boots
-								},
+							["lvl"] = 60,
+							["groups"] = {
+								i(22700),	-- Glacial Leggings
+								i(22699),	-- Icebane Leggings
+								i(22702),	-- Icy Scale Leggings
+								i(22701),	-- Polar Leggings
 							},
 						}),
 					}),
 					n(ZONE_DROPS, {
-						un(REMOVED_FROM_GAME, i(23221)),	-- Misplaced Servo Arm
-						un(REMOVED_FROM_GAME, i(23044)),	-- Harbinger of Doom
-						un(REMOVED_FROM_GAME, i(23238)),	-- Stygian Buckler
-						un(REMOVED_FROM_GAME, i(23664)),	-- Pauldrons of Elemental Fury
-						un(REMOVED_FROM_GAME, i(23667)),	-- Spaulders of the Grand Crusader
-						un(REMOVED_FROM_GAME, i(23226)),	-- Ghoul Skin Tunic
-						un(REMOVED_FROM_GAME, i(23069)),	-- Necro-Knight's Garb
-						un(REMOVED_FROM_GAME, i(23666)),	-- Belt of the Grand Crusader
-						un(REMOVED_FROM_GAME, i(23663)),	-- Girdle of Elemental Fury
-						un(REMOVED_FROM_GAME, i(23665)),	-- Leggings of Elemental Fury
-						un(REMOVED_FROM_GAME, i(23668)),	-- Leggings of the Grand Crusader
-						un(REMOVED_FROM_GAME, i(23237)),	-- Ring of the Eternal Flame
+						i(22708),	-- Fate of Ramaladni
+						i(22682, {	-- Frozen Rune
+							["description"] = "Use a Word of Thawing on Frozen Rune objects around Naxx to collect 3-6 of these.",
+							["cost"] = { { "i", 23055, 1 } },	-- Word of Thawing
+						}),
+						i(22374),	-- Wartorn Chain Scrap
+						i(22376),	-- Wartorn Cloth Scrap
+						i(22373),	-- Wartorn Leather Scrap
+						i(22375),	-- Wartorn Plate Scrap
+						i(23055, {	-- Word of Thawing
+							["description"] = "These can be used to loot the Frozen Runes scattered around the inside of Naxxramas.",
+						}),
+						i(23221),	-- Misplaced Servo Arm
+						i(23044),	-- Harbinger of Doom
+						i(23238),	-- Stygian Buckler
+						i(23664),	-- Pauldrons of Elemental Fury
+						i(23667),	-- Spaulders of the Grand Crusader
+						i(23226),	-- Ghoul Skin Tunic
+						i(23069),	-- Necro-Knight's Garb
+						i(23666),	-- Belt of the Grand Crusader
+						i(23663),	-- Girdle of Elemental Fury
+						i(23665),	-- Leggings of Elemental Fury
+						i(23668),	-- Leggings of the Grand Crusader
+						i(23237),	-- Ring of the Eternal Flame
+					}),
+					n(COMMON_BOSS_DROPS, {
+						-- Helms
+						-- Thaddius Only
+						
+						-- Shoulders
+						i(22354, {	-- Desecrated Pauldrons
+							["crs"] = {
+								16028,	-- Patchwerk
+								15931,	-- Grobbulus
+								15932,	-- Gluth
+							},
+						}),
+						i(22368, {	-- Desecrated Shoulderpads
+							["crs"] = {
+								16028,	-- Patchwerk
+								15931,	-- Grobbulus
+								15932,	-- Gluth
+							},
+						}),
+						i(22361, {	-- Desecrated Spaulders
+							["crs"] = {
+								16028,	-- Patchwerk
+								15931,	-- Grobbulus
+								15932,	-- Gluth
+							},
+						}),
+						
+						-- Chest
+						-- Four Horsemen Only
+						
+						-- Bracers
+						i(22369, {	-- Desecrated Bindings
+							["crs"] = {
+								15956,	-- Anub'Rekhan
+								15953,	-- Grand Widow Faerlina
+								15932,	-- Gluth
+							},
+						}),
+						i(22355, {	-- Desecrated Bracers
+							["crs"] = {
+								15956,	-- Anub'Rekhan
+								15953,	-- Grand Widow Faerlina
+								15932,	-- Gluth
+							},
+						}),
+						i(22362, {	-- Desecrated Wristguards
+							["crs"] = {
+								15956,	-- Anub'Rekhan
+								15953,	-- Grand Widow Faerlina
+								15932,	-- Gluth
+							},
+						}),
+						
+						-- Gloves
+						-- Maexxna Only
+						
+						-- Belts
+						i(22370, {	-- Desecrated Belt
+							["crs"] = {
+								15954,	-- Noth the Plaguebringer
+								15936,	-- Heigan the Unclean
+								15932,	-- Gluth
+							},
+						}),
+						i(22363, {	-- Desecrated Girdle
+							["crs"] = {
+								15954,	-- Noth the Plaguebringer
+								15936,	-- Heigan the Unclean
+								15932,	-- Gluth
+							},
+						}),
+						i(22356, {	-- Desecrated Waistguard
+							["crs"] = {
+								15954,	-- Noth the Plaguebringer
+								15936,	-- Heigan the Unclean
+								15932,	-- Gluth
+							},
+						}),
+						
+						-- Legs
+						-- Loatheb Only
+						
+						-- Boots
+						i(22365, {	-- Desecrated Boots
+							["crs"] = {
+								16061,	-- Instructor Razuvious
+								16060,	-- Gothik the Harvester
+								15932,	-- Gluth
+							},
+						}),
+						i(22358, {	-- Desecrated Sabatons
+							["crs"] = {
+								16061,	-- Instructor Razuvious
+								16060,	-- Gothik the Harvester
+								15932,	-- Gluth
+							},
+						}),
+						i(22372, {	-- Desecrated Sandals
+							["crs"] = {
+								16061,	-- Instructor Razuvious
+								16060,	-- Gothik the Harvester
+								15932,	-- Gluth
+							},
+						}),
+						
+						i(22726, {	-- Splinter of Atiesh
+							["classes"] = { PRIEST, MAGE, WARLOCK, DRUID },
+							["crs"] = {
+								15956,	-- Anub'Rekhan
+								15953,	-- Grand Widow Faerlina
+								15952,	-- Maexxna
+								15954,	-- Noth the Plaguebringer
+								15936,	-- Heigan the Unclean
+								16011,	-- Loatheb
+								16061,	-- Instructor Razuvious
+								16060,	-- Gothik the Harvester
+								16062,	-- Highlord Mograine <The Ashbringer>
+								16028,	-- Patchwerk
+								15931,	-- Grobbulus
+								15932,	-- Gluth
+								15928,	-- Thaddius
+							},
+						}),
 					}),
 					n(-368, {	-- The Arachnid Quarter
+						["icon"] = "Interface\\Icons\\inv_trinket_naxxramas04",
 						["groups"] = {
 							n(15956, {	-- Anub'Rekhan
-								un(REMOVED_FROM_GAME, i(22937)),	-- Gem of Nerubis
-								un(REMOVED_FROM_GAME, i(22935)),	-- Touch of Frost
-								un(REMOVED_FROM_GAME, i(22938)),	-- Cryptfiend Silk Cloak
-								un(REMOVED_FROM_GAME, i(22936)),	-- Wristguards of Vengeance
-								un(REMOVED_FROM_GAME, i(22939)),	-- Band of Unanswered Prayers
-								un(REMOVED_FROM_GAME, i(22355)),	-- Desecrated Bracers (Rogue, Warrior)
-								un(REMOVED_FROM_GAME, i(22369)),	-- Desecrated Bindings (Mage, Priest Warlock)
-								un(REMOVED_FROM_GAME, i(22362)),	-- Desecrated Wristguards (Druid, Hunter, Paladin, Shaman)
+								i(22937),	-- Gem of Nerubis
+								i(22935),	-- Touch of Frost
+								i(22938),	-- Cryptfiend Silk Cloak
+								i(22936),	-- Wristguards of Vengeance
+								i(22939),	-- Band of Unanswered Prayers
 							}),
 							n(15953, {	-- Grand Widow Faerlina
-								un(REMOVED_FROM_GAME, i(22942)),	-- The Widow's Embrace
-								un(REMOVED_FROM_GAME, i(22806)),	-- Widow's Remorse
-								un(REMOVED_FROM_GAME, i(22943)),	-- Malice Stone Pendant
-								un(REMOVED_FROM_GAME, i(22940)),	-- Icebane Pauldrons
-								un(REMOVED_FROM_GAME, i(22941)),	-- Polar Shoulder Pads
-								un(REMOVED_FROM_GAME, i(22355)),	-- Desecrated Bracers (Rogue, Warrior)
-								un(REMOVED_FROM_GAME, i(22369)),	-- Desecrated Bindings (Mage, Priest Warlock)
-								un(REMOVED_FROM_GAME, i(22362)),	-- Desecrated Wristguards (Druid, Hunter, Paladin, Shaman)
+								i(22942),	-- The Widow's Embrace
+								i(22806),	-- Widow's Remorse
+								i(22943),	-- Malice Stone Pendant
+								i(22940),	-- Icebane Pauldrons
+								i(22941),	-- Polar Shoulder Pads
 							}),
 							n(15952, {	-- Maexxna
-								un(REMOVED_FROM_GAME, i(22804)),	-- Maexxna's Fang
-								un(REMOVED_FROM_GAME, i(22807)),	-- Wraith Blade
-								un(REMOVED_FROM_GAME, i(22947)),	-- Pendant of Forgotten Names
-								un(REMOVED_FROM_GAME, i(23220)),	-- Crystal Webbed Robe
-								un(REMOVED_FROM_GAME, i(22954)),	-- Kiss of the Spider
-								un(REMOVED_FROM_GAME, i(22357)),	-- Desecrated Gauntlets (Rogue, Warrior)
-								un(REMOVED_FROM_GAME, i(22371)),	-- Desecrated Gloves (Mage, Priest Warlock)
-								un(REMOVED_FROM_GAME, i(22364)),	-- Desecrated Handguards (Druid, Hunter, Paladin, Shaman)
+								i(22357),	-- Desecrated Gauntlets
+								i(22371),	-- Desecrated Gloves
+								i(22364),	-- Desecrated Handguards
+								i(22804),	-- Maexxna's Fang
+								i(22807),	-- Wraith Blade
+								i(22947),	-- Pendant of Forgotten Names
+								i(23220),	-- Crystal Webbed Robe
+								i(22954),	-- Kiss of the Spider
 							}),
 						},
-						["icon"] = "Interface\\Icons\\inv_trinket_naxxramas04",
 					}),
 					n(-370, {	-- The Plague Quarter
+						["icon"] = "Interface\\Icons\\Spell_Shadow_PlagueCloud",
 						["groups"] = {
 							n(15954, {	-- Noth the Plaguebringer
-								un(REMOVED_FROM_GAME, i(22816)),	-- Hatchet of Sundered Bone
-								un(REMOVED_FROM_GAME, i(23029)),	-- Noth's Frigid Heart
-								un(REMOVED_FROM_GAME, i(23030)),	-- Cloak of the Scourge
-								un(REMOVED_FROM_GAME, i(23028)),	-- Hailstone Band
-								un(REMOVED_FROM_GAME, i(23031)),	-- Band of the Inevitable
-								un(REMOVED_FROM_GAME, i(23006)),	-- Libram of Light
-								un(REMOVED_FROM_GAME, i(23005)),	-- Totem of Flower Water
-								un(REMOVED_FROM_GAME, i(22356)),	-- Desecrated Waistguard (Rogue, Warrior)
-								un(REMOVED_FROM_GAME, i(22370)),	-- Desecrated Belt (Mage, Priest Warlock)
-								un(REMOVED_FROM_GAME, i(22363)),	-- Desecrated Girdle (Druid, Hunter, Paladin, Shaman)
+								i(22816),	-- Hatchet of Sundered Bone
+								i(23029),	-- Noth's Frigid Heart
+								i(23030),	-- Cloak of the Scourge
+								i(23031),	-- Band of the Inevitable
+								i(23028),	-- Hailstone Band
+								i(23006),	-- Libram of Light
+								i(23005),	-- Totem of Flowing Water
 							}),
 							n(15936, {	-- Heigan the Unclean
-								un(REMOVED_FROM_GAME, i(23019)),	-- Icebane Helmet
-								un(REMOVED_FROM_GAME, i(23033)),	-- Icy Scale Coif
-								un(REMOVED_FROM_GAME, i(23035)),	-- Preceptor's Hat
-								un(REMOVED_FROM_GAME, i(23036)),	-- Necklace of Necropsy
-								un(REMOVED_FROM_GAME, i(23068)),	-- Legplates of Carnage
-								un(REMOVED_FROM_GAME, i(22356)),	-- Desecrated Waistguard (Rogue, Warrior)
-								un(REMOVED_FROM_GAME, i(22370)),	-- Desecrated Belt (Mage, Priest Warlock)
-								un(REMOVED_FROM_GAME, i(22363)),	-- Desecrated Girdle (Druid, Hunter, Paladin, Shaman)
+								i(23019),	-- Icebane Helmet
+								i(23033),	-- Icy Scale Coif
+								i(23035),	-- Preceptor's Hat
+								i(23036),	-- Necklace of Necropsy
+								i(23068),	-- Legplates of Carnage
 							}),
 							n(16011, {	-- Loatheb
-								un(REMOVED_FROM_GAME, i(22800)),	-- Brimstone Staff
-								un(REMOVED_FROM_GAME, i(23039)),	-- The Eye of Nerub
-								un(REMOVED_FROM_GAME, i(23038)),	-- Band of Unnatural Forces
-								un(REMOVED_FROM_GAME, i(23037)),	-- Ring of Spiritual Fervor
-								un(REMOVED_FROM_GAME, i(23042)),	-- Loatheb's Reflection
-								un(REMOVED_FROM_GAME, i(22352)),	-- Desecrated Legplates (Rogue, Warrior)
-								un(REMOVED_FROM_GAME, i(22366)),	-- Desecrated Leggings (Mage, Priest Warlock)
-								un(REMOVED_FROM_GAME, i(22359)),	-- Desecrated Legguards (Druid, Hunter, Paladin, Shaman)
+								i(22366),	-- Desecrated Leggings
+								i(22359),	-- Desecrated Legguards
+								i(22352),	-- Desecrated Legplates
+								i(22800),	-- Brimstone Staff
+								i(23039),	-- The Eye of Nerub
+								i(23038),	-- Band of Unnatural Forces
+								i(23037),	-- Ring of Spiritual Fervor
+								i(23042),	-- Loatheb's Reflection
 							}),
 						},
-						["icon"] = "Interface\\Icons\\inv_misc_cauldron_nature",
 					}),
 					n(-369, {	-- The Military Quarter
+						["icon"] = "Interface\\Icons\\Spell_Shadow_UnholyStrength",
 						["groups"] = {
 							n(16365, {	-- Master Craftsman Omarion <Brotherhood of the Light>
-								["description"] = "Omarion is an artisan Blacksmithing, Leatherworking, and Tailoring craftsman. Unfortunately, he was gravely injured inside Naxxramas and doesn't have much time left. He is willing to teach other master crafters his knowledge so it doesn't die with him.\n\nOmarion can teach the following plans and patterns to master craftsmen who have the required reputation with the Argent Dawn.",
+								["lore"] = "Omarion is an artisan blacksmithing, leatherworking, and tailoring craftsman. Unfortunately he was gravely injured inside Naxxramas and doesn't have much time left. He is willing to teach other master crafters his knowledge so it doesn't die with him.\n\nOmarion can teach the following plans and patterns to master craftsmen who have the required reputation with the Argent Dawn.",
 								["groups"] = {
-									un(REMOVED_FROM_GAME, i(22685)),	-- Pattern: Glacial Cloak
-									un(REMOVED_FROM_GAME, i(22684)),	-- Pattern: Glacial Gloves
-									un(REMOVED_FROM_GAME, i(22686)),	-- Pattern: Glacial Vest
-									un(REMOVED_FROM_GAME, i(22687)),	-- Pattern: Glacial Wrists
-									un(REMOVED_FROM_GAME, i(22705)),	-- Pattern: Icebane Bracers
-									un(REMOVED_FROM_GAME, i(22703)),	-- Pattern: Icebane Breastplate
-									un(REMOVED_FROM_GAME, i(22704)),	-- Pattern: Icebane Gauntlets
-									un(REMOVED_FROM_GAME, i(22698)),	-- Pattern: Icy Scale Bracers
-									un(REMOVED_FROM_GAME, i(22696)),	-- Pattern: Icy Scale Breastplate
-									un(REMOVED_FROM_GAME, i(22697)),	-- Pattern: Icy Scale Gauntlets
-									un(REMOVED_FROM_GAME, i(22695)),	-- Pattern: Polar Bracers
-									un(REMOVED_FROM_GAME, i(22694)),	-- Pattern: Polar Gloves
-									un(REMOVED_FROM_GAME, i(22692)),	-- Pattern: Polar Tunic
-									un(REMOVED_FROM_GAME, i(22719, {	-- Omarion's Handbook
-										["description"] = "Non-crafters can take this handbook to Craftsman Wilhelm at Light's Hope Chapel, who can make all the items as well, as long as the players provide the materials and pay a hefty fee.",
-										["questID"] = 9233,	-- Omarion's Handbook [Quest]
-									})),
+									i(22719, {	-- Omarion's Handbook
+										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
+										["description"] = "Non-crafters can take his handbook to Craftsman Wilhelm at Light's Hope Chapel who can make all the items as well, as long as the players provide the materials and pay a hefty fee.",
+									}),
+									{
+										["itemID"] = 22685,	-- Pattern: Glacial Cloak
+										["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
+									},
+									{
+										["itemID"] = 22684,	-- Pattern: Glacial Gloves
+										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
+									},
+									{
+										["itemID"] = 22686,	-- Pattern: Glacial Vest
+										["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
+									},
+									{
+										["itemID"] = 22687,	-- Pattern: Glacial Wrists
+										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
+									},
+									{
+										["itemID"] = 22705,	-- Pattern: Icebane Bracers
+										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
+									},
+									{
+										["itemID"] = 22703,	-- Pattern: Icebane Breastplate
+										["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
+									},
+									{
+										["itemID"] = 22704,	-- Pattern: Icebane Gauntlets
+										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
+									},
+									{
+										["itemID"] = 22698,	-- Pattern: Icy Scale Bracers
+										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
+									},
+									{
+										["itemID"] = 22696,	-- Pattern: Icy Scale Breastplate
+										["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
+									},
+									{
+										["itemID"] = 22697,	-- Pattern: Icy Scale Gauntlets
+										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
+									},
+									{
+										["itemID"] = 22695,	-- Pattern: Polar Bracers
+										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
+									},
+									{
+										["itemID"] = 22694,	-- Pattern: Polar Gloves
+										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
+									},
+									{
+										["itemID"] = 22692,	-- Pattern: Polar Tunic
+										["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
+									},
 								},
 							}),
 							n(16061, {	-- Instructor Razuvious
-								un(REMOVED_FROM_GAME, i(23014)),	-- Iblis, Blade of the Fallen Seraph
-								un(REMOVED_FROM_GAME, i(23009)),	-- Wand of the Whispering Dead
-								un(REMOVED_FROM_GAME, i(23017)),	-- Veil of Eclipse
-								un(REMOVED_FROM_GAME, i(23219)),	-- Girdle of the Mentor
-								un(REMOVED_FROM_GAME, i(23018)),	-- Signet of the Fallen Defender
-								un(REMOVED_FROM_GAME, i(23004)),	-- Idol of Longevity
-								un(REMOVED_FROM_GAME, i(22358)),	-- Desecrated Sabatons (Rogue, Warrior)
-								un(REMOVED_FROM_GAME, i(22372)),	-- Desecrated Sandals (Mage, Priest Warlock)
-								un(REMOVED_FROM_GAME, i(22365)),	-- Desecrated Boots (Druid, Hunter, Paladin, Shaman)
+								i(23014),	-- Iblis, Blade of the Fallen Seraph
+								i(23009),	-- Wand of the Whispering Dead
+								i(23017),	-- Veil of Eclipse
+								i(23219),	-- Girdle of the Mentor
+								i(23018),	-- Signet of the Fallen Defender
+								i(23004),	-- Idol of Longevity
 							}),
 							n(16060, {	-- Gothik the Harvester
-								un(REMOVED_FROM_GAME, i(23032)),	-- Glacial Headdress
-								un(REMOVED_FROM_GAME, i(23020)),	-- Polar Helmet
-								un(REMOVED_FROM_GAME, i(23023)),	-- Sadist's Collar
-								un(REMOVED_FROM_GAME, i(23021)),	-- The Soul Harvester's Bindings
-								un(REMOVED_FROM_GAME, i(23073)),	-- Boots of Displacement
-								un(REMOVED_FROM_GAME, i(22358)),	-- Desecrated Sabatons (Rogue, Warrior)
-								un(REMOVED_FROM_GAME, i(22372)),	-- Desecrated Sandals (Mage, Priest Warlock)
-								un(REMOVED_FROM_GAME, i(22365)),	-- Desecrated Boots (Druid, Hunter, Paladin, Shaman)
+								i(23032),	-- Glacial Headdress
+								i(23020),	-- Polar Helmet
+								i(23023),	-- Sadist's Collar
+								i(23021),	-- The Soul Harvester's Bindings
+								i(23073),	-- Boots of Displacement
 							}),
-							n(16062, {	-- Highlord Mograine <The Ashbringer>
-								{
-									["itemID"] = 13262,	-- Ashbringer
-									["u"] = NEVER_IMPLEMENTED,
-									["description"] = "This is here so that you can quickly compare the Corrupted Ashbringer with the original Ashbringer model. It was never available to players.\n\nThis weapon was eventually turned into an Artifact weapon with an updated model for the Legion expansion for Retribution Paladins.",
-									["collectible"] = false,
+							n(-423, {	-- The Four Horsemen
+								["qgs"] = {
+									16062,	-- Highlord Mograine <The Ashbringer>
+									16065,	-- Lady Blaumeux
+									16063,	-- Sir Zeliek
+									16064,	-- Thane Korth'azz
 								},
-								un(REMOVED_FROM_GAME, i(22691)),	-- Corrupted Ashbringer
-								un(REMOVED_FROM_GAME, i(22809)),	-- Maul of the Redeemed Crusader
-								un(REMOVED_FROM_GAME, i(22811)),	-- Soulstring
-								un(REMOVED_FROM_GAME, i(23071)),	-- Leggings of Apocalypse
-								un(REMOVED_FROM_GAME, i(23025)),	-- Seal of the Damned
-								un(REMOVED_FROM_GAME, i(23027)),	-- Warmth of Forgiveness
-								un(REMOVED_FROM_GAME, i(22349)),	-- Desecrated Breastplate (Rogue, Warrior)
-								un(REMOVED_FROM_GAME, i(22351)),	-- Desecrated Robe (Mage, Priest Warlock)
-								un(REMOVED_FROM_GAME, i(22350)),	-- Desecrated Tunic (Druid, Hunter, Paladin, Shaman)
+								["modelScale"] = 2,
+								["groups"] = {
+									i(22349),	-- Desecrated Breastplate
+									i(22351),	-- Desecrated Robe
+									i(22350),	-- Desecrated Tunic
+									un(NEVER_IMPLEMENTED, {
+										["itemID"] = 13262,	-- Ashbringer
+										["lore"] = "This is here so that you can quickly compare the Corrupted Ashbringer with the original Ashbringer model. It was never available to players.\n\nThis weapon was eventually turned into an Artifact weapon with an updated model for the Legion expansion for Retribution Paladins.",
+										["collectible"] = false,
+									}),
+									i(22691),	-- Corrupted Ashbringer
+									i(22809),	-- Maul of the Redeemed Crusader
+									i(22811),	-- Soulstring
+									i(23071),	-- Leggings of Apocalypse
+									i(23025),	-- Seal of the Damned
+									i(23027),	-- Warmth of Forgiveness
+								},
 							}),
 						},
-						["icon"] = "Interface\\Icons\\spell_deathknight_classicon",
 					}),
-					n(-367, {	-- The Construct Quarter
+					n(-367, { 	-- The Construct Quarter
+						["icon"] = "Interface\\Icons\\Spell_Shadow_AbominationExplosion",
 						["groups"] = {
 							n(16028, {	-- Patchwerk
-								un(REMOVED_FROM_GAME, i(22815)),	-- Severance
-								un(REMOVED_FROM_GAME, i(22818)),	-- The Plague Bearer
-								un(REMOVED_FROM_GAME, i(22820)),	-- Wand of Fates
-								un(REMOVED_FROM_GAME, i(22960)),	-- Cloak of Suturing
-								un(REMOVED_FROM_GAME, i(22961)),	-- Band of Reanimation
-								un(REMOVED_FROM_GAME, i(22354)),	-- Desecrated Pauldrons (Rogue, Warrior)
-								un(REMOVED_FROM_GAME, i(22368)),	-- Desecrated Shoulderpads (Mage, Priest Warlock)
-								un(REMOVED_FROM_GAME, i(22361)),	-- Desecrated Spaulders (Druid, Hunter, Paladin, Shaman)
+								["modelScale"] = 2,
+								["groups"] = {
+									i(22815),	-- Severance
+									i(22818),	-- The Plague Bearer
+									i(22820),	-- Wand of Fates
+									i(22960),	-- Cloak of Suturing
+									i(22961),	-- Band of Reanimation
+								},
 							}),
 							n(15931, {	-- Grobbulus
-								un(REMOVED_FROM_GAME, i(22803)),	-- Midnight Haze
-								un(REMOVED_FROM_GAME, i(22988)),	-- The End of Dreams
-								un(REMOVED_FROM_GAME, i(22810)),	-- Toxin Injector
-								un(REMOVED_FROM_GAME, i(22968)),	-- Glacial Mantle
-								un(REMOVED_FROM_GAME, i(22967)),	-- Icy Scale Spaulders
-								un(REMOVED_FROM_GAME, i(22354)),	-- Desecrated Pauldrons (Rogue, Warrior)
-								un(REMOVED_FROM_GAME, i(22368)),	-- Desecrated Shoulderpads (Mage, Priest Warlock)
-								un(REMOVED_FROM_GAME, i(22361)),	-- Desecrated Spaulders (Druid, Hunter, Paladin, Shaman)
+								["modelScale"] = 3,
+								["groups"] = {
+									i(22803),	-- Midnight Haze
+									i(22988),	-- The End of Dreams
+									i(22810),	-- Toxin Injector
+									i(22968),	-- Glacial Mantle
+									i(22967),	-- Icy Scale Spaulders
+								},
 							}),
 							n(15932, {	-- Gluth
-								un(REMOVED_FROM_GAME, i(22813)),	-- Claymore of Unholy Might
-								un(REMOVED_FROM_GAME, i(23075)),	-- Death's Bargain
-								un(REMOVED_FROM_GAME, i(22994)),	-- Digested Hand of Power
-								un(REMOVED_FROM_GAME, i(22981)),	-- Gluth's Missing Collar
-								un(REMOVED_FROM_GAME, i(22983)),	-- Rime Covered Mantle
-								un(REMOVED_FROM_GAME, i(22354)),	-- Desecrated Pauldrons (Rogue, Warrior)
-								un(REMOVED_FROM_GAME, i(22368)),	-- Desecrated Shoulderpads (Mage, Priest Warlock)
-								un(REMOVED_FROM_GAME, i(22361)),	-- Desecrated Spaulders (Druid, Hunter, Paladin, Shaman)
-								un(REMOVED_FROM_GAME, i(22358)),	-- Desecrated Sabatons (Rogue, Warrior)
-								un(REMOVED_FROM_GAME, i(22372)),	-- Desecrated Sandals (Mage, Priest Warlock)
-								un(REMOVED_FROM_GAME, i(22365)),	-- Desecrated Boots (Druid, Hunter, Paladin, Shaman)
-								un(REMOVED_FROM_GAME, i(22356)),	-- Desecrated Waistguard (Rogue, Warrior)
-								un(REMOVED_FROM_GAME, i(22370)),	-- Desecrated Belt (Mage, Priest Warlock)
-								un(REMOVED_FROM_GAME, i(22363)),	-- Desecrated Girdle (Druid, Hunter, Paladin, Shaman)
-								un(REMOVED_FROM_GAME, i(22355)),	-- Desecrated Bracers (Rogue, Warrior)
-								un(REMOVED_FROM_GAME, i(22369)),	-- Desecrated Bindings (Mage, Priest Warlock)
-								un(REMOVED_FROM_GAME, i(22362)),	-- Desecrated Wristguards (Druid, Hunter, Paladin, Shaman)
+								i(22813),	-- Claymore of Unholy Might
+								i(23075),	-- Death's Bargain
+								i(22994),	-- Digested Hand of Power
+								i(22981),	-- Gluth's Missing Collar
+								i(22983),	-- Rime Covered Mantle
 							}),
 							n(15928, {	-- Thaddius
-								un(REMOVED_FROM_GAME, i(22801)),	-- Spire of Twilight
-								un(REMOVED_FROM_GAME, i(22808)),	-- The Castigator
-								un(REMOVED_FROM_GAME, i(23000)),	-- Plated Abomination Ribcage
-								un(REMOVED_FROM_GAME, i(23070)),	-- Leggings of Polarity
-								un(REMOVED_FROM_GAME, i(23001)),	-- Eye of Diminution
-								un(REMOVED_FROM_GAME, i(22353)),	-- Desecrated Helmet (Rogue, Warrior)
-								un(REMOVED_FROM_GAME, i(22367)),	-- Desecrated Circlet (Mage, Priest Warlock)
-								un(REMOVED_FROM_GAME, i(22360)),	-- Desecrated Headpiece (Druid, Hunter, Paladin, Shaman)
+								i(22367),	-- Desecrated Circlet
+								i(22360),	-- Desecrated Headpiece
+								i(22353),	-- Desecrated Helmet
+								i(22801),	-- Spire of Twilight
+								i(22808),	-- The Castigator
+								i(23000),	-- Plated Abomination Ribcage
+								i(23070),	-- Leggings of Polarity
+								i(23001),	-- Eye of Diminution
 							}),
 						},
-						["icon"] = "Interface\\Icons\\ability_rogue_deviouspoisons",
 					}),
-					n(-371, {	-- The Upper Necropolis
+					n(-371, { 	-- The Upper Necropolis
 						["icon"] = "Interface\\Icons\\inv_misc_head_dragon_blue",
 						["groups"] = {
 							n(15989, {	-- Sapphiron
-								un(REMOVED_FROM_GAME, i(23242)),	-- Claw of the Frost Wyrm
-								un(REMOVED_FROM_GAME, i(23043)),	-- The Face of Death
-								un(REMOVED_FROM_GAME, i(23049)),	-- Sapphiron's Left Eye
-								un(REMOVED_FROM_GAME, i(23048)),	-- Sapphiron's Right Eye
-								un(REMOVED_FROM_GAME, i(23050)),	-- Cloak of the Necropolis
-								un(REMOVED_FROM_GAME, i(23045)),	-- Shroud of Dominion
-								un(REMOVED_FROM_GAME, i(23072)),	-- Fists of the Unrelenting
-								un(REMOVED_FROM_GAME, i(23047)),	-- Eye of the Dead
-								un(REMOVED_FROM_GAME, i(23040)),	-- Glyph of Deflection
-								un(REMOVED_FROM_GAME, i(23041)),	-- Slayer's Crest
-								un(REMOVED_FROM_GAME, i(23046)),	-- The Restrained Essence of Sapphiron
-								un(REMOVED_FROM_GAME, i(23549)),	-- Fortitude of the Scourge
-								un(REMOVED_FROM_GAME, i(23548)),	-- Might of the Scourge
-								un(REMOVED_FROM_GAME, i(23545)),	-- Power of the Scourge
-								un(REMOVED_FROM_GAME, i(23547)),	-- Resilience of the Scourge
+								["modelScale"] = 2,
+								["groups"] = {
+									i(23242),	-- Claw of the Frost Wyrm
+									i(23043),	-- The Face of Death
+									i(23049),	-- Sapphiron's Left Eye
+									i(23048),	-- Sapphiron's Right Eye
+									i(23050),	-- Cloak of the Necropolis
+									i(23045),	-- Shroud of Dominion
+									i(23072, {	-- Fists of the Unrelenting
+										-- #if BEFORE TBC
+										["description"] = "These were made available after the TBC Prepatch.",
+										["u"] = NEVER_IMPLEMENTED,
+										-- #else
+										["u"] = TBC_PHASE_ONE,
+										-- #endif
+									}),
+									i(23047),	-- Eye of the Dead
+									i(23040),	-- Glyph of Deflection
+									i(23041),	-- Slayer's Crest
+									i(23046),	-- The Restrained Essence of Sapphiron
+									i(23549),	-- Fortitude of the Scourge
+									i(23548),	-- Might of the Scourge
+									i(23545),	-- Power of the Scourge
+									i(23547),	-- Resilience of the Scourge
+								},
 							}),
 							n(15990, {	-- Kel'Thuzad
-								{
-									["itemID"] = 22520,	-- The Phylactery of Kel'Thuzad
-									["questID"] = 9120,	-- The Fall of Kel'Thuzad
-									["u"] = REMOVED_FROM_GAME,
-									["groups"] = {
-										un(REMOVED_FROM_GAME, i(23206)),	-- Mark of the Champion
-										un(REMOVED_FROM_GAME, i(23207)),	-- Mark of the Champion
-									},
-								},
-								un(REMOVED_FROM_GAME, i(22821)),	-- Doomfinger
-								un(REMOVED_FROM_GAME, i(23057)),	-- Gem of Trapped Innocents
-								un(REMOVED_FROM_GAME, i(23054)),	-- Gressil, Dawn of Ruin
-								un(REMOVED_FROM_GAME, i(23056)),	-- Hammer of the Twisting Nether
-								un(REMOVED_FROM_GAME, i(22802)),	-- Kingsfall
-								un(REMOVED_FROM_GAME, i(22798)),	-- Might of Menethil
-								un(REMOVED_FROM_GAME, i(22812)),	-- Nerubian Slavemaker
-								un(REMOVED_FROM_GAME, i(22799)),	-- Soulseeker
-								un(REMOVED_FROM_GAME, i(23577)),	-- The Hungering Cold
-								un(REMOVED_FROM_GAME, i(22819)),	-- Shield of Condemnation
-								un(REMOVED_FROM_GAME, i(23053)),	-- Stormrage's Talisman of Seething
-								un(REMOVED_FROM_GAME, i(23060)),	-- Bonescythe Ring
-								un(REMOVED_FROM_GAME, i(23062)),	-- Frostfire Ring
-								un(REMOVED_FROM_GAME, i(23063)),	-- Plagueheart Ring
-								un(REMOVED_FROM_GAME, i(23061)),	-- Ring of Faith
-								un(REMOVED_FROM_GAME, i(23066)),	-- Ring of Redemption
-								un(REMOVED_FROM_GAME, i(23067)),	-- Ring of the Cryptstalker
-								un(REMOVED_FROM_GAME, i(23059)),	-- Ring of the Dreadnaught
-								un(REMOVED_FROM_GAME, i(23064)),	-- Ring of the Dreamwalker
-								un(REMOVED_FROM_GAME, i(23065)),	-- Ring of the Earthshatterer
+								i(22520),	-- The Phylactery of Kel'Thuzad
+								i(22733, {	-- Staff Head of Atiesh
+									["classes"] = { PRIEST, MAGE, WARLOCK, DRUID },
+								}),
+								i(22821),	-- Doomfinger
+								i(23054),	-- Gressil, Dawn of Ruin
+								i(23056),	-- Hammer of the Twisting Nether
+								i(22802),	-- Kingsfall
+								i(22798),	-- Might of Menethil
+								i(22812),	-- Nerubian Slavemaker
+								i(22799),	-- Soulseeker
+								i(23577),	-- The Hungering Cold
+								i(22819),	-- Shield of Condemnation
+								i(23057),	-- Gem of Trapped Innocents
+								i(23053),	-- Stormrage's Talisman of Seething
+								i(23060),	-- Bonescythe Ring
+								i(23062),	-- Frostfire Ring
+								i(23063),	-- Plagueheart Ring
+								i(23061),	-- Ring of Faith
+								i(23066),	-- Ring of Redemption
+								i(23067),	-- Ring of the Cryptstalker
+								i(23059),	-- Ring of the Dreadnaught
+								i(23064),	-- Ring of the Dreamwalker
+								i(23065),	-- Ring of the Earthshatterer
 							}),
 						},
 					}),
+			-- #if AFTER WRATH
 				},
-			}),
-		},
+			})),
+			-- #endif
+		}),
 	}),
-})};
+}
+-- #if BEFORE WRATH
+)
+-- #endif
+));
