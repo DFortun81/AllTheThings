@@ -41,6 +41,12 @@ _.Instances = { tier(CLASSIC_TIER, {
 						q(27192, {	-- The Great Ezra Grimm
 							["provider"] = { "n", 45323 },	-- Packmaster Stonebruiser
 						}),
+						q(5262, {	-- The Truth Comes Crashing Down
+							["u"] = REMOVED_FROM_GAME,
+							["crs"] = { 10813 },	-- Balnazzar
+							["provider"] = { "i", 13250 },	-- Head of Balnazzar
+							["sourceQuest"] = 5251,	-- The Archivist
+						}),
 					}),
 					n(ZONE_DROPS, {
 						i(16249,  {  -- Formula: Enchant 2H Weapon - Major Intellect

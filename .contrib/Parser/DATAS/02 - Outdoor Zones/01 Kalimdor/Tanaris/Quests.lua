@@ -308,12 +308,6 @@ _.Zones =
 					["description"] = "The item that starts this quest can be found as a zone drop in Tanaris or in Zul'Farrak.",
 					["provider"] = { "i", 8623 },	-- OOX-17/TN Distress Beacon
 				}),
-				q(5802, {	-- Fire Plume Forged
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 5411 },	-- Krinkle Goodsteel
-					["sourceQuest"] = 5514,	-- Mold Rhymes With...
-				}),
 				q(25565, {	-- Fragments of Language
 					["sourceQuests"] = { 28881 },	-- Prospector Gunstan
 					["provider"] = { "n", 40109 },	-- Prospector Gunstan

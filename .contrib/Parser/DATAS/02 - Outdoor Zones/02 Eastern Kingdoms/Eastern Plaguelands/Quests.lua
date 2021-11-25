@@ -54,12 +54,6 @@ _.Zones =
 					["provider"] = { "n", 11063 },	-- Carlin Redpath
 					["coord"] = { 35.5, 68.8, EASTERN_PLAGUELANDS },
 				}),
-				q(28756, {	-- Aberrations of Bone
-					["sourceQuests"] = { 27464 },	-- Argent Call: The Trial of the Crypt
-					["repeatable"] = true,
-					["provider"] = { "n", 49856 },	-- Lord Raymond George
-					["coord"] = { 76.1, 50.9, EASTERN_PLAGUELANDS },
-				}),
 				q(27539, {	-- Add'em to the Pile
 					["provider"] = { "n", 45831 },	-- Crusader Kevin Frost
 					["coord"] = { 27.6, 20.8, EASTERN_PLAGUELANDS },
@@ -165,11 +159,6 @@ _.Zones =
 					},
 					["provider"] = { "n", 16115 },	-- Crusade Commander Eligor Dawnbringer
 					["coord"] = { 76.7, 73.1, EASTERN_PLAGUELANDS },
-				}),
-				q(5531,  {	-- Betina Bigglezink
-					["sourceQuests"] = { 5522 },	-- Leonid Barthalomew
-					["provider"] = { "n", 11036 },	-- Leonid Barthalomew the Revered
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(9131,  {	-- Binding the Dreadnaught
 					["provider"] = { "n", 16112 },	-- Crusade Commander Korfax
@@ -600,16 +589,6 @@ _.Zones =
 					["provider"] = { "n", 10667 },	-- Chromie
 					["coord"] = { 35.2, 68.1, EASTERN_PLAGUELANDS },
 				}),
-				q(5463,  {	-- Menethil's Gift
-					["sourceQuests"] = { 5462 },	-- The Dying, Ras Frostwhisper
-					["provider"] = { "n", 11036 },	-- Leonid Barthalomew the Revered
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(5464,  {	-- Menethil's Gift
-					["sourceQuests"] = { 5463 },	-- Menethil's Gift
-					["provider"] = { "o", 176631 },	-- Menethil's Gift
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(5510,  {	-- Minion's Scourgestones
 					["provider"] = { "n", 11039 },	-- Duke Nicholas Zverenhoff
 					["coord"] = { 75.7, 53.8, EASTERN_PLAGUELANDS },
@@ -675,10 +654,6 @@ _.Zones =
 						{ 50.6, 20.1, EASTERN_PLAGUELANDS },
 						{ 73.6, 51.9, EASTERN_PLAGUELANDS },
 					},
-				}),
-				q(5529,  {	-- Plagued Hatchlings
-					["provider"] = { "n", 11035 },	-- Betina Bigglezink
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27420, {	-- Postponing the Inevitable
 					["sourceQuests"] = { 27544 },	-- Cenarion Tenacity
@@ -972,17 +947,6 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22636)),	-- Ice Guard
-					},
-				}),
-				q(5466,  {	-- The Lich, Ras Frostwhisper
-					["sourceQuests"] = { 5465 },	-- Soulbound Keepsake
-					["provider"] = { "n", 11286 },	-- Magistrate Marduke
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(13986)),	-- Crown of Caer Darrow
-						un(REMOVED_FROM_GAME, i(14002)),	-- Darrowshire Strongguard
-						un(REMOVED_FROM_GAME, i(13984)),	-- Darrowspike
-						un(REMOVED_FROM_GAME, i(13982)),	-- Warblade of Caer Darrow
 					},
 				}),
 				q(27532, {	-- The Plaguewood Tower

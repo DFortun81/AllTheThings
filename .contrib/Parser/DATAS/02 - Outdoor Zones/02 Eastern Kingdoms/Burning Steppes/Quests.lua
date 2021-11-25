@@ -524,11 +524,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28442 },	-- Flame Crest
 				}),
-				q(5522, {	-- Leonid Barthalomew
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 10267 },	-- Thinkee Steamboil
-					["sourceQuest"] = 4734,	-- Egg Freezing
-				}),
 				q(4481, {	-- Libram of Constitution
 					["u"] = REMOVED_FROM_GAME,
 					["qg"] = 9836,	-- Mathredis Firestar

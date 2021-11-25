@@ -123,12 +123,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 24992 },	-- Escaped From Gilneas
 				}),
-				q(5804, {	-- Araj's Scarab
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 11057 },	-- Apothecary Dithers
-					["sourceQuest"] = 5802,	-- Fire Plume Forged
-				}),
 				q(5405, {	-- Argent Dawn Commission
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
@@ -165,11 +159,6 @@ _.Zones =
 					["coord"] = { 83.2, 68.9, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 25007 },	-- East... Always to the East
-				}),
-				q(5341, {	-- Barov Family Fortune
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 11022 },	-- Alexi Barov
 				}),
 				q(5406,  {	-- Corruptor's Scourgestones
 					["u"] = REMOVED_FROM_GAME,			-- Removed in Patch 4.0.3
@@ -435,11 +424,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(15801)),	-- Valiant Shortsword
 					},
 				}),
-				q(5514, {	-- Mold Rhymes With...
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 11057 },	-- Apothecary Dithers
-				}),
 				q(24995, {	-- Off the Scales
 					["provider"] = { "n", 38977 },	-- Apothecary Jerrod
 					["coord"] = { 61.6, 34.5, TIRISFAL_GLADES },
@@ -511,18 +495,6 @@ _.Zones =
 						5094,	-- A Call to Arms: The Plaguelands!
 						5095,	-- A Call to Arms: The Plaguelands!
 					},
-				}),
-				q(838,   {	-- Scholomance
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 10837 },	-- High Executor Derrington
-					["sourceQuest"] = 5098,	-- All Along the Watchtowers
-				}),
-				q(964,   {	-- Skeletal Fragments
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 11057 },	-- Apothecary Dithers
-					["sourceQuest"] = 838,	-- Scholomance
 				}),
 				q(355,   {	-- Speak with Sevren
 					["u"] = REMOVED_FROM_GAME,
@@ -633,12 +605,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 3082 },	-- Dargol's Skull
 					["description"] = "At the bottom of the |cFFFFD700Agamand Family Crypt|r.",
-				}),
-				q(5511, {	-- The Key to Scholomance
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 11057 },	-- Apothecary Dithers
-					["sourceQuest"] = 5804,	-- Araj's Scarab
 				}),
 				q(26952, {	-- The Menders' Stead
 					["provider"] = { "n", 10839 },	-- Argent Officer Garush
