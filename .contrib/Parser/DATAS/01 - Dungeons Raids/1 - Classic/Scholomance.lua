@@ -511,7 +511,6 @@ root("Instances", tier(CLASSIC_TIER, {
 						["groups"] = {
 							objective(1, {	-- 0/1 Darkreaver's Head
 								["provider"] = { "i", 18880 },	-- Darkreaver's Head
-								["cost"] = { { "i", 18746 } },	-- Divination Scryer
 							}),
 							i(18807, {	-- Helm of Latent Power
 								["timeline"] = { "removed 1.7.0" },
@@ -533,7 +532,6 @@ root("Instances", tier(CLASSIC_TIER, {
 						["groups"] = {
 							objective(1, {	-- 0/1 Darkreaver's Head
 								["provider"] = { "i", 18880 },	-- Darkreaver's Head
-								["cost"] = { { "i", 18746 } },	-- Divination Scryer
 							}),
 							i(20134, {	-- Skyfury Helm
 								["timeline"] = { "added 1.7.0", "removed 4.0.3" },
