@@ -436,7 +436,7 @@ _.PVP =
 				}),
 			}),
 		})),
-		n(-694, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Unchained Gladiator: Shadowlands Season 2
+		n(SEASON_UNCHAINED, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 			n(PVP_ASPIRANT, {
 				n(BACK, {
 					i(185240),	-- Unchained Aspirant's Cape
