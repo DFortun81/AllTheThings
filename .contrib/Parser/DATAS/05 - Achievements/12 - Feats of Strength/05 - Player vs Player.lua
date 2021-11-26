@@ -39,7 +39,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 				title(142),	-- Wrathful Gladiator <Name>
 			}),
 		})),
-		n(-672, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Vicious Gladiator: Cataclysm Season 1
+		n(SEASON_VICIOUS, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 			ach(5344, {	-- Hero of the Alliance: Vicious
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -50,7 +50,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 				title(191),	-- Vicious Gladiator <Name>
 			}),
 		})),
-		n(-673, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Ruthless Gladiator: Cataclysm Season 2
+		n(SEASON_RUTHLESS, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 			ach(6316, {	-- Hero of the Alliance: Ruthless
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -61,7 +61,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 				title(192),	-- Ruthless Gladiator <Name>
 			}),
 		})),
-		n(-674, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Cataclysmic Gladiator: Cataclysm Season 3
+		n(SEASON_CATACLYSMIC, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 			ach(6939, {	-- Hero of the Alliance: Cataclysmic
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -72,7 +72,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 				title(193),	-- Cataclysmic Gladiator <Name>
 			}),
 		})),
-		n(-675, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Malevolent Gladiator: Mists of Pandaria Season 1
+		n(SEASON_MALEVOLENT, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 			ach(8243, {	-- Hero of the Alliance: Malevolent
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -83,7 +83,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 				title(223),	-- Malevolent Gladiator <Name>
 			}),
 		})),
-		n(-676, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Tyrannical Gladiator: Mists of Pandaria Season 2
+		n(SEASON_TYRANNICAL, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 			ach(8652, {	-- Hero of the Alliance: Tyrannical
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -94,7 +94,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 				title(225),	-- Tyrannical Gladiator <Name>
 			}),
 		})),
-		n(-677, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Grievous Gladiator: Mists of Pandaria Season 3/Season 14
+		n(SEASON_GRIEVOUS, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 			ach(8649),	-- Challenger: WMists of Pandaria Season 3/Season 14
 			ach(8645),	-- Duelist: Mists of Pandaria Season 3/Season 14
 			ach(8644),	-- Gladiator: Mists of Pandaria Season 3/Season 14	-- Mount is listed under FoS>Mounts.
@@ -117,7 +117,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			}),
 			ach(8646),	-- Rival: Mists of Pandaria Season 3/Season 14
 		})),
-		n(-678, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Prideful Gladiator: Mists of Pandaria Season 4/Season 15
+		n(SEASON_PRIDEFUL, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 			ach(8670),	-- Challenger: Mists of Pandaria Season 4/Season 15
 			ach(8668),	-- Duelist: Mists of Pandaria Season 4/Season 15
 			ach(8667),	-- Gladiator: Mists of Pandaria Season 4/Season 15	-- Mount is listed under FoS>Mounts.
@@ -140,7 +140,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			}),
 			ach(8669),	-- Rival: Mists of Pandaria Season 4/Season 15
 		})),
-		n(-679, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Primal Gladiator: Warlords of Draenor Season 1
+		n(SEASON_PRIMAL, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 			ach(9242),	-- Challenger: Warlords of Draenor Season 1
 			ach(9996, {	-- Defender of the Alliance: Warlords of Draenor Season 1
 				["races"] = ALLIANCE_ONLY,
@@ -241,7 +241,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 				},
 			}),
 		})),
-		n(-680, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Wild Gladiator: Warlords of Draenor Season 2
+		n(SEASON_WILD, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 			ach(10101),	-- Challenger: Warlords of Draenor Season 2
 			ach(10106, {	-- Defender of the Alliance: Warlords of Draenor Season 2
 				["races"] = ALLIANCE_ONLY,
@@ -342,7 +342,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 				title(315),	-- Wild Gladiator <Name>
 			}),
 		})),
-		n(-681, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Warmongering Gladiator: Warlords of Draenor Season 3
+		n(SEASON_WARMONGERING, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 			ach(10113),	-- Challenger: Warlords of Draenor Season 3
 			ach(10118, {	-- Defender of the Alliance: Warlords of Draenor Season 3
 				["races"] = ALLIANCE_ONLY,
@@ -443,7 +443,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 				title(316),	-- Warmongering Gladiator <Name>
 			}),
 		})),
-		n(-682, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Vindictive Gladiator: Legion Season 1
+		n(SEASON_VINDICTIVE, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 			ach(11017),	-- Challenger: Legion Season 1
 			ach(11022, {	-- Defender of the Alliance: Legion Season 1
 				["races"] = ALLIANCE_ONLY,
@@ -546,7 +546,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 				title(353),	-- Vindictive Gladiator <Name>
 			}),
 		})),
-		n(-683, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Fearless Gladiator: Legion Season 2
+		n(SEASON_FEARLESS, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 			ach(11028),	-- Challenger: Legion Season 2
 			ach(11034, {	-- Defender of the Alliance: Legion Season 2
 				["races"] = ALLIANCE_ONLY,
@@ -648,7 +648,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			}),
 			ach(11027),	-- Rival: Legion Season 2
 		})),
-		n(-684, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Cruel Gladiator: Legion Season 3
+		n(SEASON_CRUEL, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 			ach(11039),	-- Challenger: Legion Season 3
 			-- Sometimes under Legacy, sometimes under FoS.
 			-- We put them all under FoS in ATT.
@@ -750,7 +750,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			}),
 			ach(11040),	-- Rival: Legion Season 3
 		})),
-		n(-685, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Ferocious Gladiator: Legion Season 4
+		n(SEASON_FEROCIOUS, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 			ach(11060),	-- Challenger: Legion Season 4
 			ach(11054, {	-- Defender of the Alliance: Legion Season 4
 				["races"] = ALLIANCE_ONLY,
@@ -852,7 +852,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			}),
 			ach(11059),	-- Rival: Legion Season 4
 		})),
-		n(-686, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Fierce Gladiator: Legion Season 5
+		n(SEASON_FIERCE, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 			ach(12036),	-- Challenger: Legion Season 5
 			ach(12039, {	-- Defender of the Alliance: Legion Season 5
 				["races"] = ALLIANCE_ONLY,
@@ -954,7 +954,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			}),
 			ach(12035),	-- Rival: Legion Season 5
 		})),
-		n(-687, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Dominant Gladiator: Legion Season 6
+		n(SEASON_DOMINANT, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 			ach(12169),	-- Challenger: Legion Season 6
 			ach(12175, {	-- Defender of the Alliance: Legion Season 6
 				["races"] = ALLIANCE_ONLY,
@@ -1056,7 +1056,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			}),
 			ach(12170),	-- Rival: Legion Season 6
 		})),
-		n(-688, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Demonic Gladiator: Legion Season 7
+		n(SEASON_DEMONIC, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 			ach(12187),	-- Challenger: Legion Season 7
 			ach(12195, {	-- Defender of the Alliance: Legion Season 7
 				["races"] = ALLIANCE_ONLY,
@@ -1158,7 +1158,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 				},
 			}),
 		})),
-		n(-689, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Dread Gladiator: Battle for Azeroth Season 1
+		n(SEASON_DREAD, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 			ach(12959),	-- Challenger: Battle for Azeroth Season 1
 			ach(13199),	-- Combatant: Battle for Azeroth Season 1
 			ach(12962, {	-- Duelist: Battle for Azeroth Season 1
@@ -1183,7 +1183,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 				title(79),	-- Dread Gladiator <Name>
 			}),
 		})),
-		n(-690, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Sinister Gladiator: Battle for Azeroth Season 2
+		n(SEASON_SINISTER, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 			ach(13203),	-- Challenger: Battle for Azeroth Season 2
 			ach(13204),	-- Combatant: Battle for Azeroth Season 2
 			ach(13209, {	-- Duelist: Battle for Azeroth Season 2
@@ -1207,7 +1207,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 				title(80),	-- Sinister Gladiator <Name>
 			}),
 		})),
-		n(-691, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Notorious Gladiator: Battle for Azeroth Season 3
+		n(SEASON_NOTORIOUS, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 			ach(13634),	-- Challenger: Battle for Azeroth Season 3
 			ach(13639),	-- Combatant: Battle for Azeroth Season 3
 			ach(13642, {	-- Duelist: Battle for Azeroth Season 3
@@ -1231,7 +1231,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			}),
 			ach(13641),	-- Rival: Battle for Azeroth Season 3
 		})),
-		n(-692, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Corrupted Gladiator: Battle for Azeroth Season 4
+		n(SEASON_CORRUPTED, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 			ach(13959),	-- Challenger: Battle for Azeroth Season 4
 			ach(13962),	-- Combatant: Battle for Azeroth Season 4
 			ach(13964, {	-- Duelist: Battle for Azeroth Season 4
@@ -1255,7 +1255,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 				title(411),	-- Corrupted Gladiator <Name>
 			}),
 		})),
-		n(-693, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Sinful Gladiator: Shadowlands Season 1
+		n(SEASON_SINFUL, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 			ach(14686),		-- Challenger: Shadowlands Season 1
 			ach(14685, {	-- Combatant: Shadowlands Season 1
 				title(78, {	-- Combatant <Name>
@@ -1281,7 +1281,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 				title(434),	-- Sinful Gladiator <Name>
 			}),
 		})),
-		n(-694, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Unchained Gladiator: Shadowlands Season 2
+		n(SEASON_UNCHAINED, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 			ach(14969),		-- Challenger I: Shadowlands Season 2
 			ach(15233, {	-- Challenger II: Shadowlands Season 2
 				["timeline"] = { "added 9.1.5" },

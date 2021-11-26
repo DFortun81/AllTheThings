@@ -86,6 +86,7 @@ _.Zones =
 						["provider"] = { "n", 64058 },	-- Jorunga Stonehoof
 						["races"] = HORDE_ONLY,
 						["requireSkill"] = BLACKSMITHING,
+						["timeline"] = { "removed 8.0" },	-- no longer available due to the profession level changes
 					}),
 --[[
 					q(31391, {	-- The Klaxxi

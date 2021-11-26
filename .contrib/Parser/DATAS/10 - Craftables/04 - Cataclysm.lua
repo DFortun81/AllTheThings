@@ -639,7 +639,7 @@ _.Craftables =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(CATA_HEADER, {
+	tier(CATA_TIER, {
 		prof(LEATHERWORKING, {
 			i(56497),	-- Razorshell Gloves
 		}),

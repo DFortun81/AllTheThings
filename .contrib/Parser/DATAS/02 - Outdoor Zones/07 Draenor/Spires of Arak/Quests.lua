@@ -1285,7 +1285,7 @@ _.Zones =
 	}),
 };
 _.HiddenQuestTriggers = {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		q(36885),	-- Spires of Arak - Ogre Waygate
 		q(36364),	-- Spires - Treasure 041 - Toxicfang Venom
 		q(35874),	-- Spires of Arak - Apparatus - triggers after finishing "The Ebon Hunter" quest
@@ -1312,7 +1312,7 @@ _.HiddenQuestTriggers = {
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		n(WEAPONS, {
 			i(114946),	-- Admiral Taylor's Spellguard
 		}),

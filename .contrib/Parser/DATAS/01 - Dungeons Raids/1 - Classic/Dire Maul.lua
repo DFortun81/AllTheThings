@@ -1589,7 +1589,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 })));
 -- #if AFTER 6.0.1
 root("HiddenQuestTriggers", {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		q(35890),	-- Dire Maul (Warpwood Quarter) Reward Quest - Normal completion
 		q(35891),	-- Dire Maul (Capital Gardens) Reward Quest - Normal completion
 		q(35892),	-- Dire Maul (Gordok Commons) Reward Quest - Normal completion

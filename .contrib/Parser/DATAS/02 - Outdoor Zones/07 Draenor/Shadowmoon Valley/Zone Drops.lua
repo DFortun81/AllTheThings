@@ -19,7 +19,7 @@ _.Zones =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		n(-163, {	-- Armor
 			n(BACK, {
 				i(117494),	-- Windfang Drape

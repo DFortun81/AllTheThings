@@ -8,7 +8,7 @@ _.Zones =
 			n(QUESTS, {
 				q(50130, {	-- A Friendly Gesture
 					["qg"] = 17924,	-- Msshi'fn
-					["sourceQuest"] = 50131,	-- An Outside Perspective
+					["sourceQuest"] = 9919,	-- Sporeggar
 					["coord"] = { 19.7, 52.1, ZANGARMARSH },
 					["timeline"] = { "added 7.3.5.25600" },
 					["minReputation"] = { 970, NEUTRAL },	-- Sporeggar, Neutral.
@@ -612,6 +612,7 @@ _.Zones =
 				}),
 				q(9919,  {	-- Sporeggar
 					["qg"] = 17923,	-- Fahssn
+					["sourceQuest"] = 50131,	-- An Outside Perspective
 					["coord"] = { 19.0, 63.4, ZANGARMARSH },
 					["minReputation"] = { 970, NEUTRAL },	-- Sporeggar, Neutral.
 					["lvl"] = lvlsquish(60, 10, 60),

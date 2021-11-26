@@ -754,7 +754,7 @@ _.Zones =
 	}),
 };
 _.HiddenQuestTriggers = {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		q(38836),	-- Aktar's Post (Aktar's Post visited)
 		q(39306),	-- Call to Arms (chosen during "Bring the Reinforcements")
 		q(39183),	-- FLAG - Immaculate Critical Strike Taladite (learning Immaculate Critical Strike Taladite at an Apexis Gemcutter)
@@ -783,13 +783,13 @@ _.HiddenQuestTriggers = {
 		q(37969),	-- Tanaan Jungle - Tracking Quest - Vol'mar Built - JMC
 		q(38433),	-- Tanaan Jungle - Tracking Quest - Lion's Watch Built - JMC
 	}),
-	n(BFA_HEADER, {
+	tier(BFA_TIER, {
 		q(50678),	-- learning Ensemble: Battlegear of the Frostwolves
 		q(50680),	-- learning Ensemble: Ceremonial Karabor Finery
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		n(QUESTS, {
 			q(39129),	-- Ill Tempered
 		}),

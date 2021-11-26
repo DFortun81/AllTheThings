@@ -901,7 +901,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(28240),	-- Tapped Out
 		q(28255),	-- Vhat's Next?
 	}),
-	n(CATA_HEADER, {
+	tier(CATA_TIER, {
 		n(WEAPONS, {
 			i(65878),	-- Charbelching Wand
 		}),

@@ -630,7 +630,7 @@ _.Craftables =
 };
 -- The items never made it in.
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(WRATH_HEADER, {
+	tier(WOTLK_TIER, {
 		prof(ENCHANTING, {
 			i(34138),	-- Enchanted White Wand
 			i(34139),	-- Enchanted Crimson Wand

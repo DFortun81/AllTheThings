@@ -1714,7 +1714,7 @@ _.HiddenQuestTriggers = {
 
 -- These quests never made it in.
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(SL_HEADER, {
+	tier(SL_TIER, {
 		n(NIGHT_FAE, {
 			n(-163, {	-- Armor
 				n(-43, {	-- Cloth

@@ -813,7 +813,7 @@ _.Zones =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(LEGION_HEADER, {
+	tier(LEGION_TIER, {
 		n(-387,	{	-- Relics
 			i(133018),	-- Azsuna Package 3 - Holy 1 - Unused
 		}),

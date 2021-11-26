@@ -759,7 +759,7 @@ _.Zones =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(LEGION_HEADER, {
+	tier(LEGION_TIER, {
 		n(-387,	{	-- Relics
 			i(130162),	-- Val-Sharah Artifact Gem #1 [Holy]
 		}),

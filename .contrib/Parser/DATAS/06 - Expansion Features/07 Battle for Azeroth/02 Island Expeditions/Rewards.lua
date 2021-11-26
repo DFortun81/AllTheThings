@@ -505,7 +505,7 @@ _.ExpansionFeatures =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(BFA_HEADER, {
+	tier(BFA_TIER, {
 		n(-3338, {	-- Island Expeditions
 			n(-161, {	-- Toys
 				i(163922),	-- Used for a toy, you never can get the actual item

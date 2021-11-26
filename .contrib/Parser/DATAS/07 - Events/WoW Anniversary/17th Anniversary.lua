@@ -41,7 +41,7 @@ root("WorldEvents", n(SEVENTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = WOW_ANNIVERS
 		n(167749, {	-- Doomwalker
 			["isRaid"] = true,
 			["questID"] = 60214,
-			--["isDaily"] = true, or weekly
+			["isDaily"] = true,
 			["coord"] = { 64.4, 50.7, TANARIS },
 			["maps"] = {
 				74,	--	Caverns of Time Entrance

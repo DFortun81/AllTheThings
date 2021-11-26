@@ -405,7 +405,7 @@ _.Instances = { tier(WOTLK_TIER, {
 	}),
 })};
 _.HiddenQuestTriggers = {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		q(35483),	-- Drak'Tharon Keep Reward Quest - Normal completion
 		q(35484),	-- Drak'Tharon Keep Reward Quest - Heroic completion
 	}),

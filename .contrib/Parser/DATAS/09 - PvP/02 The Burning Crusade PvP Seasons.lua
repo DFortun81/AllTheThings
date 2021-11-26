@@ -4,7 +4,7 @@
 
 _.PVP =
 {
-	pvp(n(TBC_HEADER, {
+	pvp(tier(TBC_TIER, {
 		n(PRE_SEASON, {
 			["description"] = "These items were available during Burning Crusade as Level 70 Pre-Season 1 rewards in Netherstorm. They cannot be transmogged, not even if you were a High Warlord or Grand Marshall. Replica items were introduced in their place.",
 			["u"] = REMOVED_FROM_GAME,
@@ -351,7 +351,7 @@ _.PVP =
 					i(146609, {	-- Ensemble: Gladiator's Dragonhide Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_GLADIATOR, PVP_GLADIATOR, DRUID },
+							{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR, DRUID },
 							{"select", "itemID", 28443 },	-- General's Dragonhide Belt
 							{"select", "itemID", 28444 },	-- General's Dragonhide Boots
 							{"select", "itemID", 31594 },	-- General's Kodohide Belt
@@ -419,7 +419,7 @@ _.PVP =
 					i(146608, {	-- Ensemble: Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_GLADIATOR, PVP_GLADIATOR, HUNTER },
+							{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR, HUNTER },
 							{"select", "itemID", 28450 },	-- General's Chain Girdle
 							{"select", "itemID", 28449 },	-- General's Chain Sabatons
 							{"select", "itemID", 28974 },	-- Marshal's Chain Girdle
@@ -449,7 +449,7 @@ _.PVP =
 					i(146617, {	-- Ensemble: Gladiator's Silk Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_GLADIATOR, PVP_GLADIATOR, MAGE },
+							{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR, MAGE },
 							{"select", "itemID", 28409 },   -- General's Silk Belt
 							{"select", "itemID", 29001 },	-- Marshal's Silk Belt
 							{"select", "itemID", 28410 },	-- General's Silk Footguards
@@ -479,7 +479,7 @@ _.PVP =
 					i(146616, {	-- Ensemble: Gladiator's Scaled Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_GLADIATOR, PVP_GLADIATOR, PALADIN },
+							{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR, PALADIN },
 							{"select", "itemID", 28641 },	-- General's Lamellar Belt
 							{"select", "itemID", 28642 },	-- General's Lamellar Greaves
 							{"select", "itemID", 32982 },	-- General's Ornamented Belt
@@ -547,7 +547,7 @@ _.PVP =
 					i(146615, {	-- Ensemble: Gladiator's Satin Armor -- Confirmed August 2021 here+Outdoor BC
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_GLADIATOR, PVP_GLADIATOR, PRIEST },
+							{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR, PRIEST },
 							{"exclude", "itemID", 146615 },	-- Exclude itself to stop duplicating
 						},
 						["g"] = {
@@ -591,7 +591,7 @@ _.PVP =
 					i(146612, {	-- Ensemble: Gladiator's Leather Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_GLADIATOR, PVP_GLADIATOR, ROGUE },
+							{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR, ROGUE },
 							{"select", "itemID", 28423 },	-- General's Leather Belt
 							{"select", "itemID", 28422 },   -- General's Leather Boots
 							{"select", "itemID", 28986 },	-- Marshal's Leather Belt
@@ -621,7 +621,7 @@ _.PVP =
 					i(146614, {	-- Ensemble: Gladiator's Ringmail Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_GLADIATOR, PVP_GLADIATOR, SHAMAN },
+							{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR, SHAMAN },
 							{"select", "itemID", 28629 },	-- General's Linked Girdle
 							{"select", "itemID", 28630 },	-- General's Linked Sabatons
 							{"select", "itemID", 28639 },	-- General's Mail Girdle
@@ -689,7 +689,7 @@ _.PVP =
 					i(146611, {	-- Ensemble: Gladiator's Felweave Armor -- Confirmed August 2021 here+Outdoor BC
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_GLADIATOR, PVP_GLADIATOR, WARLOCK },
+							{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR, WARLOCK },
 							{"select", "itemID", 147615 },	-- General's Felweave Belt
 							{"select", "itemID", 147616 },	-- General's Felweave Boots
 							{"select", "itemID", 147772 },  -- General's Felweave Cuffs
@@ -727,7 +727,7 @@ _.PVP =
 					i(146613, {	-- Ensemble: Gladiator's Plate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_GLADIATOR, PVP_GLADIATOR, WARRIOR },
+							{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR, WARRIOR },
 							{"select", "itemID", 28385 },	-- General's Plate Belt
 							{"select", "itemID", 28383 },	-- General's Plate Greaves
 							{"select", "itemID", 28995 },	-- Marshal's Plate Belt
@@ -1119,7 +1119,7 @@ _.PVP =
 					i(146650, {	-- Arsenal: Merciless Gladiator's Weapons [Horde / Alliance / Tested ] { Note: Contains Gladiator/Merciless Sets }
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_weapons_ensemble", TBC_HEADER, SEASON_MERCILESS, PVP_GLADIATOR },
+							{"sub", "pvp_weapons_ensemble", TBC_TIER, SEASON_MERCILESS, PVP_GLADIATOR },
 							{"exclude", "itemID", 146650 },	-- Exclude itself to stop duplicating
 						},
 						["g"] = {
@@ -1232,7 +1232,7 @@ _.PVP =
 					i(146619, {	-- Ensemble: Merciless Gladiator's Dragonhide Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_MERCILESS, PVP_GLADIATOR, DRUID },
+							{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_MERCILESS, PVP_GLADIATOR, DRUID },
 							{"select", "itemID", 32810 },	-- Veteran's Dragonhide Bracers
 							{"select", "itemID", 32798 },	-- Veteran's Dragonhide Belt
 							{"select", "itemID", 32786 },	-- Veteran's Dragonhide Boots
@@ -1297,7 +1297,7 @@ _.PVP =
 					i(146618, {	-- Ensemble: Merciless Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_MERCILESS, PVP_GLADIATOR, HUNTER },
+							{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_MERCILESS, PVP_GLADIATOR, HUNTER },
 							{"select", "itemID", 32809 },	-- Veteran's Chain Bracers
 							{"select", "itemID", 32797 },	-- Veteran's Chain Girdle
 							{"select", "itemID", 32785 },	-- Veteran's Chain Sabatons
@@ -1326,7 +1326,7 @@ _.PVP =
 					i(146627, {	-- Ensemble: Merciless Gladiator's Silk Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_MERCILESS, PVP_GLADIATOR, MAGE },
+							{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_MERCILESS, PVP_GLADIATOR, MAGE },
 							{"select", "itemID", 32820 },	-- Veteran's Silk Cuffs
 							{"select", "itemID", 32807 },	-- Veteran's Silk Belt
 							{"select", "itemID", 32795 },	-- Veteran's Silk Footguards
@@ -1355,7 +1355,7 @@ _.PVP =
 					i(146626, {	-- Ensemble: Merciless Gladiator's Scaled Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_MERCILESS, PVP_GLADIATOR, PALADIN },
+							{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_MERCILESS, PVP_GLADIATOR, PALADIN },
 							{"select", "itemID", 32813 },	-- Veteran's Lamellar Bracers
 							{"select", "itemID", 32801 },	-- Veteran's Lamellar Belt
 							{"select", "itemID", 32789 },	-- Veteran's Lamellar Greaves
@@ -1420,7 +1420,7 @@ _.PVP =
 					i(146625, {	-- Ensemble: Merciless Gladiator's Satin Armor -- Confirmed August 2021 here+Outdoor BC
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_MERCILESS, PVP_GLADIATOR, PRIEST },
+							{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_MERCILESS, PVP_GLADIATOR, PRIEST },
 							{"exclude", "itemID", 146625 },	-- Exclude itself to stop duplicating
 						},
 						["g"] = {
@@ -1464,7 +1464,7 @@ _.PVP =
 					i(146622, {	-- Ensemble: Merciless Gladiator's Leather Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_MERCILESS, PVP_GLADIATOR, ROGUE },
+							{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_MERCILESS, PVP_GLADIATOR, ROGUE },
 							{"select", "itemID", 147612 },	-- Veteran's Leather Wristguards
 							{"select", "itemID", 147610 },	-- Veteran's Leather Waistband
 							{"select", "itemID", 147611 },	-- Veteran's Leather Footguards
@@ -1493,7 +1493,7 @@ _.PVP =
 					i(146624, {	-- Ensemble: Merciless Gladiator's Ringmail Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_MERCILESS, PVP_GLADIATOR, SHAMAN },
+							{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_MERCILESS, PVP_GLADIATOR, SHAMAN },
 							{"select", "itemID", 32816 },	-- Veteran's Linked Bracers
 							{"select", "itemID", 32803 },	-- Veteran's Linked Girdle
 							{"select", "itemID", 32791 },	-- Veteran's Linked Sabatons
@@ -1558,7 +1558,7 @@ _.PVP =
 					i(146621, {	-- Ensemble: Merciless Gladiator's Felweave Armor -- Confirmed August 2021 here+Outdoor BC
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_MERCILESS, PVP_GLADIATOR, WARLOCK },
+							{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_MERCILESS, PVP_GLADIATOR, WARLOCK },
 							{"select", "itemID", 32811 },	-- Veteran's Dreadweave Cuffs
 							{"select", "itemID", 32799 },	-- Veteran's Dreadweave Belt
 							{"select", "itemID", 32787 },	-- Veteran's Dreadweave Stalkers
@@ -1602,7 +1602,7 @@ _.PVP =
 					i(146623, {	-- Ensemble: Merciless Gladiator's Plate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_MERCILESS, PVP_GLADIATOR, WARRIOR },
+							{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_MERCILESS, PVP_GLADIATOR, WARRIOR },
 							{"select", "itemID", 32818 },	-- Veteran's Plate Bracers
 							{"select", "itemID", 32805 },	-- Veteran's Plate Bel
 							{"select", "itemID", 32793 },	-- Veteran's Plate Greaves
@@ -1815,7 +1815,7 @@ _.PVP =
 					i(146649, {	-- Arsenal: Vengeful Gladiator's Weapons [ Horde / Alliance / Tested ]
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_weapons_ensemble", TBC_HEADER, SEASON_VENGEFUL, PVP_GLADIATOR },
+							{"sub", "pvp_weapons_ensemble", TBC_TIER, SEASON_VENGEFUL, PVP_GLADIATOR },
 							{"exclude", "itemID", 146649 },	-- Exclude itself to stop duplicating
 							},
 						["g"] = {
@@ -1934,7 +1934,7 @@ _.PVP =
 					i(146629, {	-- Ensemble: Vengeful Gladiator's Dragonhide Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_VENGEFUL, PVP_GLADIATOR, DRUID },
+							{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_VENGEFUL, PVP_GLADIATOR, DRUID },
 							{"select", "itemID", 33881 },	-- Vindicator's Dragonhide Bracers
 							{"select", "itemID", 33879 },	-- Vindicator's Dragonhide Belt
 							{"select", "itemID", 33880 },	-- Vindicator's Dragonhide Boots
@@ -1999,7 +1999,7 @@ _.PVP =
 					i(146628, {	-- Ensemble: Vengeful Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_VENGEFUL, PVP_GLADIATOR, HUNTER },
+							{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_VENGEFUL, PVP_GLADIATOR, HUNTER },
 							{"select", "itemID", 33876 },	-- Vindicator's Chain Bracers
 							{"select", "itemID", 33877 },	-- Vindicator's Chain Girdle
 							{"select", "itemID", 33878 },	-- Vindicator's Chain Sabatons
@@ -2028,7 +2028,7 @@ _.PVP =
 					i(146637, {	-- Ensemble: Vengeful Gladiator's Silk Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_VENGEFUL, PVP_GLADIATOR, MAGE },
+							{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_VENGEFUL, PVP_GLADIATOR, MAGE },
 							{"select", "itemID", 33913 },	-- Vindicator's Silk Cuffs
 							{"select", "itemID", 33912 },	-- Vindicator's Silk Belt
 							{"select", "itemID", 33914 },	-- Vindicator's Silk Footguards
@@ -2057,7 +2057,7 @@ _.PVP =
 					i(146636, {	-- Ensemble: Vengeful Gladiator's Scaled Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_VENGEFUL, PVP_GLADIATOR, PALADIN },
+							{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_VENGEFUL, PVP_GLADIATOR, PALADIN },
 							{"select", "itemID", 33889 },	-- Vindicator's Lamellar Bracers
 							{"select", "itemID", 33888 },	-- Vindicator's Lamellar Belt
 							{"select", "itemID", 33890 },	-- Vindicator's Lamellar Greaves
@@ -2122,7 +2122,7 @@ _.PVP =
 					i(146635, {	-- Ensemble: Vengeful Gladiator's Satin Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_VENGEFUL, PVP_GLADIATOR, PRIEST },
+							{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_VENGEFUL, PVP_GLADIATOR, PRIEST },
 							{"select", "itemID", 33901 },	-- Vindicator's Mooncloth Cuffs
 							{"select", "itemID", 33900 },	-- Vindicator's Mooncloth Belt
 							{"select", "itemID", 33902 },	-- Vindicator's Mooncloth Slippers
@@ -2166,7 +2166,7 @@ _.PVP =
 					i(146632, {	-- Ensemble: Vengeful Gladiator's Leather Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_VENGEFUL, PVP_GLADIATOR, ROGUE },
+							{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_VENGEFUL, PVP_GLADIATOR, ROGUE },
 							{"select", "itemID", 33891 },	-- Vindicator's Leather Belt
 							{"select", "itemID", 33892 },	-- Vindicator's Leather Boots
 							{"select", "itemID", 147670 },	-- Vindicator's Leather Wristguards
@@ -2195,7 +2195,7 @@ _.PVP =
 					i(146634, {	-- Ensemble: Vengeful Gladiator's Ringmail Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_VENGEFUL, PVP_GLADIATOR, SHAMAN },
+							{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_VENGEFUL, PVP_GLADIATOR, SHAMAN },
 							{"select", "itemID", 33894 },	-- Vindicator's Linked Bracers
 							{"select", "itemID", 33895 },	-- Vindicator's Linked Girdle
 							{"select", "itemID", 33896 },	-- Vindicator's Linked Sabatons
@@ -2260,7 +2260,7 @@ _.PVP =
 					i(146631, {	-- Ensemble: Vengeful Gladiator's Felweave Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_VENGEFUL, PVP_GLADIATOR, WARLOCK },
+							{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_VENGEFUL, PVP_GLADIATOR, WARLOCK },
 							{"select", "itemID", 33883 },	-- Vindicator's Dreadweave Cuffs
 							{"select", "itemID", 33882 },	-- Vindicator's Dreadweave Belt
 							{"select", "itemID", 33884 },	-- Vindicator's Dreadweave Stalkers
@@ -2304,7 +2304,7 @@ _.PVP =
 					i(146633, {	-- Ensemble: Vengeful Gladiator's Plate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_VENGEFUL, PVP_GLADIATOR, WARRIOR },
+							{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_VENGEFUL, PVP_GLADIATOR, WARRIOR },
 							{"select", "itemID", 33813 },	-- Vindicator's Plate Bracers
 							{"select", "itemID", 33811 },	-- Vindicator's Plate Belt
 							{"select", "itemID", 33812 },	-- Vindicator's Plate Greaves
@@ -2517,7 +2517,7 @@ _.PVP =
 					i(146648, {	-- Arsenal: Brutal Gladiator's Weapons [ Horde / Alliance / Tested ]
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_weapons_ensemble", TBC_HEADER, SEASON_BRUTAL, PVP_GLADIATOR },
+							{"sub", "pvp_weapons_ensemble", TBC_TIER, SEASON_BRUTAL, PVP_GLADIATOR },
 							{"exclude", "itemID", 146648 },	-- Exclude itself to stop duplicating
 							},
 						["g"] = {
@@ -2645,7 +2645,7 @@ _.PVP =
 					i(146600, {	-- Ensemble: Brutal Gladiator's Dreadplate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_BRUTAL, PVP_GLADIATOR, DEATHKNIGHT },
+							{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_BRUTAL, PVP_GLADIATOR, DEATHKNIGHT },
 							{"select", "itemID", 35176 },	-- Guardian's Plate Bracers
 							{"select", "itemID", 35161 },	-- Guardian's Plate Belt
 							{"select", "itemID", 35146 },	-- Guardian's Plate Greaves
@@ -2674,7 +2674,7 @@ _.PVP =
 					i(146599, {	-- Ensemble: Brutal Gladiator's Dragonhide Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_BRUTAL, PVP_GLADIATOR, DRUID },
+							{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_BRUTAL, PVP_GLADIATOR, DRUID },
 							{"select", "itemID", 35167 },	-- Guardian's Dragonhide Bracers
 							{"select", "itemID", 35152 },	-- Guardian's Dragonhide Belt
 							{"select", "itemID", 35137 },	-- Guardian's Dragonhide Boots
@@ -2739,7 +2739,7 @@ _.PVP =
 					i(146598, {	-- Ensemble: Brutal Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_BRUTAL, PVP_GLADIATOR, HUNTER },
+							{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_BRUTAL, PVP_GLADIATOR, HUNTER },
 							{"select", "itemID", 35166 },	-- Guardian's Chain Bracers
 							{"select", "itemID", 35151 },	-- Guardian's Chain Girdle
 							{"select", "itemID", 35136 },	-- Guardian's Chain Sabatons
@@ -2768,7 +2768,7 @@ _.PVP =
 					i(146607, {	-- Ensemble: Brutal Gladiator's Silk Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_BRUTAL, PVP_GLADIATOR, MAGE },
+							{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_BRUTAL, PVP_GLADIATOR, MAGE },
 							{"select", "itemID", 35179 },	-- Guardian's Silk Cuffs
 							{"select", "itemID", 35164 },	-- Guardian's Silk Belt
 							{"select", "itemID", 35149 },	-- Guardian's Silk Footguards
@@ -2797,7 +2797,7 @@ _.PVP =
 					i(146606, {	-- Ensemble: Brutal Gladiator's Scaled Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_BRUTAL, PVP_GLADIATOR, PALADIN },
+							{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_BRUTAL, PVP_GLADIATOR, PALADIN },
 							{"select", "itemID", 35170 },	-- Guardian's Lamellar Bracers
 							{"select", "itemID", 35155 },	-- Guardian's Lamellar Belt
 							{"select", "itemID", 35140 },	-- Guardian's Lamellar Greaves
@@ -2862,7 +2862,7 @@ _.PVP =
 					i(146605, {	-- Ensemble: Brutal Gladiator's Satin Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_BRUTAL, PVP_GLADIATOR, PRIEST },
+							{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_BRUTAL, PVP_GLADIATOR, PRIEST },
 							{"select", "itemID", 35174 },	-- Guardian's Mooncloth Cuffs
 							{"select", "itemID", 35159 },	-- Guardian's Mooncloth Belt
 							{"select", "itemID", 35144 },	-- Guardian's Mooncloth Slippers
@@ -2906,7 +2906,7 @@ _.PVP =
 					i(146602, {	-- Ensemble: Brutal Gladiator's Leather Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_BRUTAL, PVP_GLADIATOR, ROGUE },
+							{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_BRUTAL, PVP_GLADIATOR, ROGUE },
 							{"select", "itemID", 35171 },	-- Guardian's Leather Bracers
 							{"select", "itemID", 35156 },	-- Guardian's Leather Belt
 							{"select", "itemID", 35141 },	-- Guardian's Leather Boots
@@ -2935,7 +2935,7 @@ _.PVP =
 					i(146604, {	-- Ensemble: Brutal Gladiator's Ringmail Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_BRUTAL, PVP_GLADIATOR, SHAMAN },
+							{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_BRUTAL, PVP_GLADIATOR, SHAMAN },
 							{"select", "itemID", 35172 },	-- Guardian's Linked Bracers
 							{"select", "itemID", 35157 },	-- Guardian's Linked Girdle
 							{"select", "itemID", 35142 },	-- Guardian's Linked Sabatons
@@ -3000,7 +3000,7 @@ _.PVP =
 					i(146601, {	-- Ensemble: Brutal Gladiator's Felweave Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_BRUTAL, PVP_GLADIATOR, WARLOCK },
+							{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_BRUTAL, PVP_GLADIATOR, WARLOCK },
 							{"select", "itemID", 35168 },	-- Guardian's Dreadweave Cuffs
 							{"select", "itemID", 35153 },	-- Guardian's Dreadweave Belt
 							{"select", "itemID", 35138 },	-- Guardian's Dreadweave Stalkers
@@ -3044,7 +3044,7 @@ _.PVP =
 					i(146603, {	-- Ensemble: Brutal Gladiator's Plate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", TBC_HEADER, SEASON_BRUTAL, PVP_GLADIATOR, WARRIOR },
+							{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_BRUTAL, PVP_GLADIATOR, WARRIOR },
 							{"select", "itemID", 35176 },	-- Guardian's Plate Bracers
 							{"select", "itemID", 35161 },	-- Guardian's Plate Belt
 							{"select", "itemID", 35146 },	-- Guardian's Plate Greaves

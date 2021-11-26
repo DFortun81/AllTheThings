@@ -321,10 +321,7 @@ profession(ENCHANTING, {
 						{
 							-- Lifestealing
 							["recipeID"] = 20032,--[[Lifestealing]]
-							["timeline"] = {
-								"added 1.11.1.5462",
-								"removed 5.0.4.15890",
-							},
+							["timeline"] = { "removed 4.0.3" },
 						},
 						{
 							["recipeID"] = 20036--[[Major Intellect]]

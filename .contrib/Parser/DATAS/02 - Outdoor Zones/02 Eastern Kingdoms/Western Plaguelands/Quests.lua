@@ -287,10 +287,6 @@ _.Zones =
 					["coord"] = { 49.2, 54.9, WESTERN_PLAGUELANDS },
 					["sourceQuest"] = 27057,	-- Return to the Stead
 				}),
-				q(5382, {	-- Doctor Theolen Krastinov, the Butcher
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 11216 },	-- Eva Sarkhoff
-				}),
 				q(27157, {	-- Drudges... <Sigh>
 					["provider"] = { "n", 45157 },	-- Lieutenant Myner
 					["coord"] = { 43.2, 15.9, WESTERN_PLAGUELANDS },
@@ -365,11 +361,6 @@ _.Zones =
 				q(27156, {	-- It's About Time!
 					["provider"] = { "n", 45157 },	-- Lieutenant Myner
 					["coord"] = { 43.2, 15.9, WESTERN_PLAGUELANDS },
-				}),
-				q(5515, {	-- Krastinov's Bag of Horrors
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 11216 },	-- Eva Sarkhoff
-					["sourceQuest"] = 5382,	-- Doctor Theolen Krastinov, the Butcher
 				}),
 				q(27000, {	-- Learning the Ropes
 					["provider"] = { "n", 11616 },	-- Nathaniel Dumah
@@ -532,11 +523,6 @@ _.Zones =
 						28749,	-- The Battle for Andorhal (War-Mage Erallier, STV)
 					},
 				}),
-				q(5465, {	-- Soulbound Keepsake
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 11036 },	-- Leonid Barthalomew the Revered
-					["sourceQuest"] = 5464,	-- Menethil's Gift
-				}),
 				q(27055, {	-- Students of Krastinov
 					["provider"] = { "n", 44454 },	-- Field Agent Kaartish
 					["coord"] = { 49.2, 54.9, WESTERN_PLAGUELANDS },
@@ -624,11 +610,6 @@ _.Zones =
 						27198,	-- Supporting the Troops
 					},
 				}),
-				q(5462, {	-- The Dying, Ras Frostwhisper
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 11286 },	-- Magistrate Marduke
-					["sourceQuest"] = 5461,	-- The Human, Ras Frostwhisper
-				}),
 				q(27161, {	-- The Endless Flow (A)
 					["provider"] = { "n", 44467 },	-- Lang Loosegrip
 					["coord"] = { 41.2, 70.0, WESTERN_PLAGUELANDS },
@@ -649,25 +630,6 @@ _.Zones =
 					["provider"] = { "n", 45147 },	-- Daria L'Rayne
 					["coord"] = { 42.1, 14.9, WESTERN_PLAGUELANDS },
 					["sourceQuest"] = 27152,	-- Unusual Behavior... Even For Gnolls
-				}),
-				q(5461, {	-- The Human, Ras Frostwhisper
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 11286 },	-- Magistrate Marduke
-					["sourceQuest"] = 5384,	-- Kirtonos the Herald
-				}),
-				q(5344,  {	-- The Last Barov
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(14023)),	-- Barov Peasant Caller
-					},
-				}),
-				q(5342,  {	-- The Last Barov
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(14022)),	-- Barov Peasant Caller
-					},
 				}),
 				q(26957, {	-- The Long Trip Home
 					["provider"] = { "n", 44905 },	-- Del Gahrron

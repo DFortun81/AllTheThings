@@ -11,18 +11,6 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "i", 18987 },	-- Blackhand's Command
 				}),
-				q(3801, {	-- Dark Iron Legacy
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 8888 },	-- Franclorn Forgewright
-				}),
-				q(3802, {	-- Dark Iron Legacy
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 8888 },	-- Franclorn Forgewright
-					["sourceQuest"] = 3801,	-- Dark Iron Legacy
-					["g"] = {
-						i(11000),	-- Shadowforge Key
-					},
-				}),
 			}),
 		}),
 	}),

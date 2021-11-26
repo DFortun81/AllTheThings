@@ -80,9 +80,11 @@ _.Zones =
 						["provider"] = { "n", 64101 },	-- Taijin the Cyclone
 					}),
 					q(32683, {	-- So You Want to Be a Blacksmith...
-						["requireSkill"] = BLACKSMITHING,
 						["provider"] = { "n", 64085 },	-- Cullen Hammerbrow
 						["coord"] = { 71.27, 50.52, 393 },
+						["races"] = ALLIANCE_ONLY,
+						["requireSkill"] = BLACKSMITHING,
+						["timeline"] = { "removed 8.0" },	-- no longer available due to the profession level changes
 					}),
 					--[[
 					q(31390, {	-- The Klaxxi

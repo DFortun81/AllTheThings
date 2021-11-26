@@ -45,13 +45,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(27283, {	-- A Journey to Moonglade
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 52319 },	-- Mala Skywatcher
-					["classes"] = { DRUID },
-					["coord"] = { 55.0, 50.4, UNDERCITY },
-					["races"] = HORDE_ONLY,
-				}),
 				q(42985, {	-- A Royal Audience
 					["description"]	= "You get this quest when you reach Prestige Rank 2.",
 					["races"] = HORDE_ONLY,
@@ -458,11 +451,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(2032)),	-- Gallan Cuffs
 						un(REMOVED_FROM_GAME, i(4443)),	-- Grim Pauldrons
 					},
-				}),
-				q(4133,  {	-- Vivian Lagrave
-					["provider"] = { "n", 5204 },	-- Apothecary Zinge
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(4769,  {	-- Vivian Lagrave and the Darkstone Tablet
 					["provider"] = { "n", 5204 },	-- Apothecary Zinge

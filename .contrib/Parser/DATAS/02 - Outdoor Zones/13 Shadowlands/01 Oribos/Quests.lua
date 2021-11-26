@@ -772,6 +772,7 @@ _.Zones =
 						i(179513),	-- Duskwarder Scimitar
 						i(179532),	-- Duskwarder Scythe
 						i(179604),	-- Duskwarder Shield
+						i(179584),	-- Duskwarder Shortbow
 						i(181432),	-- Duskwarder Spellthorn
 						i(179547),	-- Duskwarder Warclub
 						i(179508),	-- Duskwarder Warglaive
@@ -1090,7 +1091,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(60138),	-- Unlocking the Gates
 		q(60559),	-- Unused
 	}),
-	n(SL_HEADER, {
+	tier(SL_TIER, {
 		n(-163, {	-- Armor
 			n(-43, {	-- Cloth
 				i(175679),	-- Oribos Quest Cloth Robe

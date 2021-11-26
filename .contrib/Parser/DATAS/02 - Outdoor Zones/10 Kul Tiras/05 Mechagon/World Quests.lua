@@ -41,17 +41,8 @@ _.Zones =
 						i(168832),	-- Galvanic Oscillator
 					},
 				}),
-				q(56131, {	-- Security First
-					["isWorldQuest"] = true,	-- already completed on a Horde character without doing it?
-					["races"] = HORDE_ONLY,
-					["lvl"] = { 50 },
-					["g"] = {
-						i(168832),	-- Galvanic Oscillator
-					},
-				}),
 				q(56141, {	-- Security First
 					["isWorldQuest"] = true,
-					-- ["races"] = ALLIANCE_ONLY,	-- Currently available for Horde character
 					["lvl"] = { 50 },
 					["g"] = {
 						i(168832),	-- Galvanic Oscillator

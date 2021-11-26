@@ -2124,7 +2124,7 @@ _.Zones =
 	}),
 };
 _.HiddenQuestTriggers = {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		q(36249),	-- Gorgrond - Active Choice: Lumbermill - trigger if the lumbermill is currently active
 		q(36250),	-- Gorgrond - Active Choice: Lumbermill - see 36249
 		q(35064),	-- Gorgrond - Sparring Arena
@@ -2143,7 +2143,7 @@ _.HiddenQuestTriggers = {
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		n(WEAPONS, {
 			i(119408),	-- Foereaver Polearm [This version wasn't added]
 		}),

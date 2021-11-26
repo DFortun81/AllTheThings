@@ -2356,7 +2356,7 @@ _.ExpansionFeatures =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(LEGION_HEADER, {
+	tier(LEGION_TIER, {
 		n(ARTIFACTS, {
 			n(WEAPONS, {
 				i(137661),	-- Truthguard

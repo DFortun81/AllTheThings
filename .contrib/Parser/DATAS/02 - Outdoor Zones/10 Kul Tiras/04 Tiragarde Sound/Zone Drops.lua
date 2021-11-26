@@ -33,7 +33,7 @@ _.Zones =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(BFA_HEADER, {
+	tier(BFA_TIER, {
 		n(WEAPONS, {
 			i(159538),	-- Coldscale Cudgel
 			i(159498),	-- Coldscale Pistol

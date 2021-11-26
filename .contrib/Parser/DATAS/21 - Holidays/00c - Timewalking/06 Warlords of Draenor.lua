@@ -21,37 +21,99 @@ _.Holidays =
 					["races"] = HORDE_ONLY,
 					["coord"] = { 42.8, 54.5, WARSPEAR },
 					["g"] = {
-						i(167894),	-- Beastlord's Irontusk -
-						i(167895),	-- Beastlord's Warwolf
-						i(168012),	-- Apexis Focusing Shard
-						i(168014),	-- Banner of the Burning Blade
-						i(119396),	-- Shadowspeaker's Shard - 50
-						i(113287),	-- Shard of Scorn - 50
-						i(119226),	-- Blammo's Blammer - 100
-						i(127339),	-- Forgotten Champion's Blade - 100
-						i(109074),	-- Fine Void-Chain Cinch - 25
-						i(116834),	-- Whitesea's Waistwrap - 25
-						i(119372),	-- Ironstudded Scale Girdle - 25
-						i(119384),	-- Krud's Girthy Girdle - 25
-						i(116110),	-- Zorkra's Hood - 25
-						i(109057),	-- Frogskin Diving Cap - 25
-						i(112096),	-- Dented Ogre Skullcap - 25
-						i(127320),	-- Mo'gruth's Discarded Parade Helm - 25
-						i(127296),	-- Twisted Taboo Handwraps - 25
-						i(127304),	-- Cave Keeper Wraps - 25
-						i(127311),	-- Serpentine Gloves - 25
-						i(127319),	-- Krag'goth's Iron Gauntlets - 25
-						i(116765),	-- Positive Pantaloons - 25
-						i(113557),	-- Dragonrider's Tinkered Leggings - 25
-						i(119370),	-- Rattlekilt - 25
-						i(119382),	-- Hershak's Heavy Legguards - 25
-						i(167924),	-- Commendation of the Arakkoa Outcasts - 50
-						i(167926),	-- Commendation of the Steamwheedle Preservation Society - 50
-						i(167925),	-- Commendation of the Order of the Awakened - 50
-						i(167927),	-- Commendation of the Saberstalkers
-						i(167928),	-- Commendation of the Frostwolf Orcs - 50
-						i(167930),	-- Commendation of the Laughing Skull Orcs - 50
-						i(168017),	-- Commendation of Vol'jin's Headhunters - 50
+						i(167894, {	-- Beastlord's Irontusk
+							["cost"] = { { "c", 1166, 5000 } },	-- 5000x Timewarped Badge
+						}),
+						i(167895, {	-- Beastlord's Warwolf
+							["cost"] = { { "c", 1166, 5000 } },	-- 5000x Timewarped Badge
+						}),
+						i(168012, {	-- Apexis Focusing Shard
+							["cost"] = { { "c", 1166, 500 } },	-- 500x Timewarped Badge
+						}),
+						i(168014, {	-- Banner of the Burning Blade
+							["cost"] = { { "c", 1166, 750 } },	-- 750x Timewarped Badge
+						}),
+						i(119396, {	-- Shadowspeaker's Shard
+							["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
+						}),
+						i(113287, {	-- Shard of Scorn
+							["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
+						}),
+						i(119226, {	-- Blammo's Blammer
+							["cost"] = { { "c", 1166, 100 } },	-- 100x Timewarped Badge
+						}),
+						i(127339, {	-- Forgotten Champion's Blade
+							["cost"] = { { "c", 1166, 100 } },	-- 100x Timewarped Badge
+						}),
+						i(109074, {	-- Fine Void-Chain Cinch
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(116834, {	-- Whitesea's Waistwrap
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(119372, {	-- Ironstudded Scale Girdle
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(119384, {	-- Krud's Girthy Girdle
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(116110, {	-- Zorkra's Hood
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(109057, {	-- Frogskin Diving Cap
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(112096, {	-- Dented Ogre Skullcap
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(127320, {	-- Mo'gruth's Discarded Parade Helm
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(127296, {	-- Twisted Taboo Handwraps
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(127304, {	-- Cave Keeper Wraps
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(127311, {	-- Serpentine Gloves
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(127319, {	-- Krag'goth's Iron Gauntlets
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(116765, {	-- Positive Pantaloons
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(113557, {	-- Dragonrider's Tinkered Leggings
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(119370, {	-- Rattlekilt
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(119382, {	-- Hershak's Heavy Legguards
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(167924, {	-- Commendation of the Arakkoa Outcasts
+							["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
+						}),
+						i(167926, {	-- Commendation of the Steamwheedle Preservation Society
+							["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
+						}),
+						i(167925, {	-- Commendation of the Order of the Awakened
+							["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
+						}),
+						i(167927, {	-- Commendation of the Saberstalkers
+							["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
+						}),
+						i(167928, {	-- Commendation of the Frostwolf Orcs
+							["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
+						}),
+						i(167930, {	-- Commendation of the Laughing Skull Orcs
+							["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
+						}),
+						i(168017, {	-- Commendation of Vol'jin's Headhunters
+							["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
+						}),
 						i(122338, {	-- Ancient Heirloom Armor Casing
 							["cost"] = {
 								{ "c", 1166, 750 },		-- 750x Timewarped Badge
@@ -106,37 +168,99 @@ _.Holidays =
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 36.9, 72.5, STORMSHIELD },
 					["g"] = {
-						i(167894),	-- Beastlord's Irontusk
-						i(167895),	-- Beastlord's Warwolf
-						i(168012),	-- Apexis Focusing Shard
-						i(168014),	-- Banner of the Burning Blade
-						i(119396),	-- Shadowspeaker's Shard - 50
-						i(113287),	-- Shard of Scorn - 50
-						i(119226),	-- Blammo's Blammer - 100
-						i(127339),	-- Forgotten Champion's Blade - 100
-						i(109074),	-- Fine Void-Chain Cinch - 25
-						i(116834),	-- Whitesea's Waistwrap - 25
-						i(119372),	-- Ironstudded Scale Girdle - 25
-						i(119384),	-- Krud's Girthy Girdle - 25
-						i(116110),	-- Zorkra's Hood - 25
-						i(109057),	-- Frogskin Diving Cap - 25
-						i(112096),	-- Dented Ogre Skullcap - 25
-						i(127320),	-- Mo'gruth's Discarded Parade Helm - 25
-						i(127296),	-- Twisted Taboo Handwraps - 25
-						i(127304),	-- Cave Keeper Wraps - 25
-						i(127311),	-- Serpentine Gloves - 25
-						i(127319),	-- Krag'goth's Iron Gauntlets - 25
-						i(116765),	-- Positive Pantaloons - 25
-						i(113557),	-- Dragonrider's Tinkered Leggings - 25
-						i(119370),	-- Rattlekilt - 25
-						i(119382),	-- Hershak's Heavy Legguards - 25
-						i(167924),	-- Commendation of the Arakkoa Outcasts - 50
-						i(167926),	-- Commendation of the Steamwheedle Preservation Society - 50
-						i(167925),	-- Commendation of the Order of the Awakened - 50
-						i(167927),	-- Commendation of the Saberstalkers
-						i(167929),	-- Commendation of the Council of Exarchs - 50
-						i(167932),	-- Commendation of the Sha'tari Defense - 50
-						i(168018),	-- Commendation of the Hand of the Prophet - 50
+						i(167894, {	-- Beastlord's Irontusk
+							["cost"] = { { "c", 1166, 5000 } },	-- 5000x Timewarped Badge
+						}),
+						i(167895, {	-- Beastlord's Warwolf
+							["cost"] = { { "c", 1166, 5000 } },	-- 5000x Timewarped Badge
+						}),
+						i(168012, {	-- Apexis Focusing Shard
+							["cost"] = { { "c", 1166, 500 } },	-- 500x Timewarped Badge
+						}),
+						i(168014, {	-- Banner of the Burning Blade
+							["cost"] = { { "c", 1166, 750 } },	-- 750x Timewarped Badge
+						}),
+						i(119396, {	-- Shadowspeaker's Shard
+							["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
+						}),
+						i(113287, {	-- Shard of Scorn
+							["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
+						}),
+						i(119226, {	-- Blammo's Blammer
+							["cost"] = { { "c", 1166, 100 } },	-- 100x Timewarped Badge
+						}),
+						i(127339, {	-- Forgotten Champion's Blade
+							["cost"] = { { "c", 1166, 100 } },	-- 100x Timewarped Badge
+						}),
+						i(109074, {	-- Fine Void-Chain Cinch
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(116834, {	-- Whitesea's Waistwrap
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(119372, {	-- Ironstudded Scale Girdle
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(119384, {	-- Krud's Girthy Girdle
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(116110, {	-- Zorkra's Hood
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(109057, {	-- Frogskin Diving Cap
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(112096, {	-- Dented Ogre Skullcap
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(127320, {	-- Mo'gruth's Discarded Parade Helm
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(127296, {	-- Twisted Taboo Handwraps
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(127304, {	-- Cave Keeper Wraps
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(127311, {	-- Serpentine Gloves
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(127319, {	-- Krag'goth's Iron Gauntlets
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(116765, {	-- Positive Pantaloons
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(113557, {	-- Dragonrider's Tinkered Leggings
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(119370, {	-- Rattlekilt
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(119382, {	-- Hershak's Heavy Legguards
+							["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						}),
+						i(167924, {	-- Commendation of the Arakkoa Outcasts
+							["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
+						}),
+						i(167926, {	-- Commendation of the Steamwheedle Preservation Society
+							["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
+						}),
+						i(167925, {	-- Commendation of the Order of the Awakened
+							["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
+						}),
+						i(167927, {	-- Commendation of the Saberstalkers
+							["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
+						}),
+						i(167929, {	-- Commendation of the Council of Exarchs
+							["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
+						}),
+						i(167932, {	-- Commendation of the Sha'tari Defense
+							["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
+						}),
+						i(168018, {	-- Commendation of the Hand of the Prophet
+							["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
+						}),
 						i(122338, {	-- Ancient Heirloom Armor Casing
 							["cost"] = {
 								{ "c", 1166, 750 },		-- 750x Timewarped Badge

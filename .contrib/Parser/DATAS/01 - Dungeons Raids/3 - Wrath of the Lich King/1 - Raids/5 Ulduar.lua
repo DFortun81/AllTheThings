@@ -902,7 +902,7 @@ _.Instances = { tier(WOTLK_TIER, {
 	}),
 })};
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(WRATH_HEADER, {
+	tier(WOTLK_TIER, {
 		inst(759, {
 			-- Most sets was added 4.0.1
 			cl(DEATHKNIGHT, {

@@ -176,12 +176,8 @@ _.Zones =
 					["requireSkill"] = HERBALISM,
 				}),
 				q(44817),	-- Stirring the Swarm
-				q(41318, {	-- Supplies Needed: Felslate
-					["requireSkill"] = MINING,
-				}),
-				q(41303, {	-- Supplies Needed: Starlight Roses
-					["requireSkill"] = HERBALISM,
-				}),
+				q(41318),	-- Supplies Needed: Felslate
+				q(41303),	-- Supplies Needed: Starlight Roses
 				q(41351),	-- Supplies Needed: Stonehide Leather
 				q(41283, {	-- The Angler Mangler
 					["requireSkill"] = FISHING,

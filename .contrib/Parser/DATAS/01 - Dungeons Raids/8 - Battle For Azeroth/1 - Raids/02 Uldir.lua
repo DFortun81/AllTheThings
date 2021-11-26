@@ -943,7 +943,7 @@ _.Instances = { tier(BFA_TIER, {
 	}),
 })};
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(BFA_HEADER, {
+	tier(BFA_TIER, {
 		inst(1031, {	-- Uldir
 			i(166406),	-- Flaskzertauren's Cloth Robes
 			i(166407),	-- Flaskzertauren's Cloth Shoulders

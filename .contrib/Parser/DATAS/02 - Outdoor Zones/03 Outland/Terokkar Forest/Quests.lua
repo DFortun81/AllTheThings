@@ -463,9 +463,10 @@ _.Zones =
 					["coord"] = { 48.8, 45.7, TEROKKAR_FOREST },
 					["races"] = HORDE_ONLY,
 				}),
-				q(10852, {	-- Missing Friends -- aa
+				q(10852, {	-- Missing Friends
 					["provider"] = { "n", 22365 },	-- Ethan
 					["coord"] = { 37.7, 51.3, TEROKKAR_FOREST },
+					["sourceQuests"] = { 10849 },	-- Seek Out Kirrik
 				}),
 				q(9993, {	-- Olemba Seed Oil
 					["provider"] = { "n", 18385 },	-- Rakoria

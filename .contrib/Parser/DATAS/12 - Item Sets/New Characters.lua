@@ -231,7 +231,7 @@ _.GearSets =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(LEGION_HEADER, {
+	tier(LEGION_TIER, {
 		n(-211, {	-- New Characters
 			cl(DRUID, {
 				i(157669),	-- Wildshifter Headpiece

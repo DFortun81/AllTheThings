@@ -216,6 +216,8 @@ local L = app.L;
 	--TODO: L.REQUIRES_PETBATTLES = "|CFF00FFDEThis Thing requires Pet Battling.|r";
 	--TODO: L.REPORT_INACCURATE_QUEST = "Wrong Quest Info! (Click to Report)";
 	--TODO: L.NESTED_QUEST_REQUIREMENTS = "Nested Quest Requirements";
+	--TODO: L.MAIN_LIST_REQUIRES_REFRESH = "[Open Main list to update progress]";
+	--TODO: L.DOES_NOT_CONTRIBUTE_TO_PROGRESS = "|cffe08207This group and its content do not contribute to the progress of this window!|r";
 
 	-- Item Filter Window
 		L.ITEM_FILTER_TEXT = "物品过滤";
@@ -965,7 +967,7 @@ for key,value in pairs({
 			[-5350] = "职业试用套装",								-- Class Trial
 
 		--TODO: [-7776] = "Winter Revelers",						-- Winter Revelers (for Winter Veil)
-	------ ACHIEVEMENT HEADER SECTION ------
+	------ ACHIEVEMENT HEADERS SECTION ------
 		[-10071] = "恩佐斯的幻象",									-- Visions of N'Zoth
 		[-10072] = "恩佐斯突袭",										-- N'Zoth Assault
 		[-10073] = "奥格瑞玛的惊魂幻象",								-- Horrific Vision of Orgrimmar
@@ -977,8 +979,9 @@ for key,value in pairs({
 		[-10079] = "突袭：亚基重现",									-- Assault: Aqir Unearthed
 		[-10081] = "腐化区域",										-- Corrupted Area
 		[-10082] = "失落区域",										-- Lost Area
-		--TODO: [-10083] = "Covenant Assaults",						-- Covenant Assaults
 		-- Shadowlands Achievement Header
+			-- 9.1
+				--TODO: [-10083] = "Covenant Assaults",				-- Covenant Assaults
 			--	hopefully temp objects, these currently do not have accessible object data on wowhead
 				[-1433951] = "残破的镜子 A-1",						-- Broken Mirror
 				[-1433952] = "残破的镜子 A-2",						-- Broken Mirror
@@ -1050,6 +1053,8 @@ for key, value in pairs({
 	[21015] = "蹄印",	-- Hoofprints	--TODO: This was taken from classic Wowhead
 	[21042] = "塞拉摩卫兵徽章",	-- Theramore Guard Badge
 	[35251] = "卡尼托的箱子",	-- Karnitol's Chest	--TODO: This was taken from classic Wowhead
+	[37099] = "阿塔莱石板",	-- Atal'ai Tablet
+	[91138] = "乔丹的铁锤",	-- Jordan's Hammer
 	[112948] = "保险箱",	-- Intrepid's Locked Strongbox
 	[113757] = "暗影熔炉地窖",	-- Shadowforge Cache
 	[123329] = "巴尔洛戈的箱子",	-- Baelog's Chest
@@ -1069,6 +1074,7 @@ for key, value in pairs({
 	[144063] = "艾奎尼克斯石碑",	-- Equinex Monolith
 	[148502] = "|cFFFFFFFF第1步:|r 第9页",	-- |cFFFFFFFFStep 1:|r Page 9
 	[148504] = "明显的墓碑",	-- A Conspicuous Gravestone
+	[149036] = "玛尔冯的箱子",	-- Marvon's Chest
 	[149502] = "黑龙的财宝",	-- Hoard of the Black Dragonflight	--TODO: This was taken from classic Wowhead
 	[160836] = "古物宝库",	-- Relic Coffer
 	[161495] = "秘密保险箱",	-- Secret Safe
@@ -1108,6 +1114,7 @@ for key, value in pairs({
 	[178144] = "巨魔的箱子",	-- Troll Chest
 	[178227] = "穆戈特的图腾篮",	-- Murgut's Totem Basket
 	[179485] = "损坏的陷阱",	-- A Broken Trap
+	[179499] = "食人魔鞣酸篮",	-- Ogre Tannin Basket
 	[179501] = "诺特·希姆加克的储物箱",	-- Knot Thimblejack's Cache	--TODO: This was taken from classic Wowhead
 	[179564] = "戈多克贡品",	-- Gordok Tribute Chest
 	[179697] = "竞技场财宝箱",	-- Arena Treasure Chest
@@ -1144,6 +1151,7 @@ for key, value in pairs({
 	[181748] = "血水晶",	-- Blood Crystal	--TODO: This was taken from tbc Wowhead
 	--TODO: [181756] = "Battered Ancient Book",	-- Battered Ancient Book
 	[181889] = "通缉布告",	-- Wanted Poster
+	[182011] = "铁锭箱",	-- Crate of Ingots
 	[182032] = "加莱恩的日记",	-- Galaen's Journal
 	[182058] = "天灾战车",	-- Scourge Meat Wagon
 	[182115] = "通缉布告",	-- Wanted Poster
@@ -1357,6 +1365,7 @@ for key, value in pairs({
 	[205266] = "精致的圆盘",	-- Elaborate Disc
 	[205332] = "通缉布告",	-- Wanted Poster
 	[205350] = "部落通讯台",	-- Horde Communication Panel
+	[205476] = "迷失灵魂之书",	-- Book of Lost Souls
 	[205540] = "破损的骨骼",	-- Decrepit Skeleton
 	[205874] = "沙土覆盖的符文",	-- Sand-Covered Hieroglyphs
 	--TODO: [205875] = "Crusader's Flare",	-- Crusader's Flare
@@ -1780,15 +1789,15 @@ for key, value in pairs({
 	[234704] = "暗影视觉药剂",	-- Elixir of Shadow Sight	--TODO: This was manually translated
 	[234705] = "暗影视觉药剂",	-- Elixir of Shadow Sight	--TODO: This was manually translated
 	[234734] = "暗影视觉药剂",	-- Elixir of Shadow Sight	--TODO: This was manually translated
-	[234735] = "暗影视觉药剂",	-- Elixir of Shadow Sight	--TODO: This was manually translated
+	[234735] = "暗影视觉药剂",	-- Elixir of Shadow Sight
 	[234736] = "暗影视觉药剂",	-- Elixir of Shadow Sight	--TODO: This was manually translated
 	--TODO: [234740] = "Orchish Signaling Horn",	-- Orchish Signaling Horn
-	--TODO: [234744] = "Offering to the Raven Mother",	-- Offering to the Raven Mother
-	--TODO: [234746] = "Offering to the Raven Mother",	-- Offering to the Raven Mother
-	--TODO: [234748] = "Offering to the Raven Mother",	-- Offering to the Raven Mother
-	--TODO: [235073] = "Offering to the Raven Mother",	-- Offering to the Raven Mother
-	--TODO: [235090] = "Offering to the Raven Mother",	-- Offering to the Raven Mother
-	--TODO: [235091] = "Lost Ring",	-- Lost Ring
+	[234744] = "鸦母的供品",	-- Offering to the Raven Mother	--TODO: This was manually translated
+	[234746] = "鸦母的供品",	-- Offering to the Raven Mother	--TODO: This was manually translated
+	[234748] = "鸦母的供品",	-- Offering to the Raven Mother	--TODO: This was manually translated
+	[235073] = "鸦母的供品",	-- Offering to the Raven Mother
+	[235090] = "鸦母的供品",	-- Offering to the Raven Mother	--TODO: This was manually translated
+	[235091] = "失落的戒指",	-- Lost Ring
 	--TODO: [235095] = "Misplaced Scroll",	-- Misplaced Scroll
 	--TODO: [235097] = "Ephial's Dark Grimoire",	-- Ephial's Dark Grimoire
 	--TODO: [235103] = "Garrison Supplies",	-- Garrison Supplies
@@ -1798,8 +1807,8 @@ for key, value in pairs({
 	[235129] = "浓缩之种",	-- Enriched Seeds
 	--TODO: [235135] = "Smuggled Apexis Artifacts",	-- Smuggled Apexis Artifacts
 	--TODO: [235141] = "Iron Horde Explosives",	-- Iron Horde Explosives
-	[235143] = "刺客的长矛",	-- Assassin's Spear	--TODO: This was manually translated
-	--TODO: [235168] = "Outcast's Pouch",	-- Outcast's Pouch
+	[235143] = "刺客的长矛",	-- Assassin's Spear
+	[235168] = "流亡者袋子",	-- Outcast's Pouch
 	--TODO: [235172] = "Outcast's Belongings",	-- Outcast's Belongings
 	--TODO: [235282] = "Sethekk Ritual Brew",	-- Sethekk Ritual Brew
 	[235289] = "要塞工匠的锤子",	-- Garrison Workman's Hammer	--TODO: This was manually translated
@@ -2127,7 +2136,7 @@ for key, value in pairs({
 	[247694] = "凯尔丹纳斯的背包",	-- Kel'danath's Knapsack
 	[247797] = "遗失的邮件",	-- Lost Mail
 	[248398] = "虚灵通讯装置",	-- Ethereal Communication Device	--TODO: This was manually translated
-	[248534] = "艾露恩之泪",	-- Tears of Elune	--TODO: This was manually translated
+	[248534] = "艾露恩之泪",	-- Tears of Elune
 	[248854] = "戴斯蒙德的保险箱",	-- Desmond's Lockbox
 	[249211] = "撕破的夏多雷丝绸",	-- Torn Shaldorei Silk
 	[249997] = "小宝箱",	-- Small Treasure Chest

@@ -26,13 +26,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(27283, {	-- A Journey to Moonglade
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 3034 },	-- Sheal Runetotem
-					["classes"] = { DRUID },
-					["coord"] = { 77.0, 27.4, THUNDER_BLUFF },
-					["races"] = HORDE_ONLY,
-				}),
 				q(5088,  {	-- Arikara
 					["provider"] = { "n", 4046 },	-- Magatha Grimtotem
 					["coord"] = { 69.9, 30.9, THUNDER_BLUFF },

@@ -1357,7 +1357,7 @@ _.Zones =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(BFA_HEADER, {
+	tier(BFA_TIER, {
 		n(-163, {	-- Armor
 			n(-43, {	-- Cloth
 				i(159019),	-- Loa Speaker's Handguards

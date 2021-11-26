@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	tier(LEGION_TIER, {
-		n(-9965, {	-- Legion Class Hall
+		n(CLASS_HALL, {
 			cl(ROGUE, {	-- The Hall of Shadows
 				["classes"] = { ROGUE },
 				["lvl"] = 98,

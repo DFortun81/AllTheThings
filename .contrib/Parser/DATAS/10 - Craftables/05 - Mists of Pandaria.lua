@@ -827,7 +827,7 @@ _.Craftables =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(MOP_HEADER, {
+	tier(MOP_TIER, {
 		prof(BLACKSMITHING, {
 			i(93441),	-- Crafted Dreadful Gladiator's Barrier - UNUSED
 			i(93483),	-- Crafted Dreadful Gladiator's Redoubt

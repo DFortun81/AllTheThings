@@ -115,12 +115,6 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 2921 },	-- Lotwil Veriatus
 				}),
-				q(3981, {	-- Commander Gor'shak
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 9081 },	-- Galamav the Marksman
-					["sourceQuest"] = 3906,	-- Disharmony of Flame
-				}),
 				q(1419,  {	-- Coyote Thieves
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
@@ -130,11 +124,6 @@ _.Zones =
 					["coord"] = { 15.9, 33.2, BADLANDS },
 					["description"] = "If you abandon this quest, leave the area then return to the cave.",
 					["sourceQuests"] = { 27858, 27898 },	-- Rheastrasza's Gift (A, H)
-				}),
-				q(3906, {	-- Disharmony of Flame
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 9084 },	-- Thunderheart
 				}),
 				q(27927, {	-- Down to the Scar
 					["isBreadcrumb"] = true,
@@ -197,11 +186,6 @@ _.Zones =
 					["coord"] = { 18.9, 42.8, BADLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27890 },	-- The Bad Dogs
-				}),
-				q(4122, {	-- Grark Lorkrub
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 9080 },	-- Lexlort
 				}),
 				q(714,   {	-- Gyro... What?
 					["u"] = REMOVED_FROM_GAME,
@@ -269,16 +253,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27890 },	-- The Bad Dogs
 				}),
-				q(4081, {	-- KILL ON SIGHT: Dark Iron Dwarves
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "o", 164867 },	-- WANTED
-				}),
-				q(4082, {	-- KILL ON SIGHT: High Ranking Dark Iron Officials
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "o", 164868 },	-- KILL ON SIGHT
-				}),
 				q(27770, {	-- Lifting the Veil
 					["provider"] = { "n", 46654 },	-- Rhea
 					["coord"] = { 66.3, 55.4, BADLANDS },
@@ -292,14 +266,6 @@ _.Zones =
 					["provider"] = { "n", 2920 },	-- Quest Giver: Lucien Tosselwrench
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4624)),	-- Recipe: Lesser Stoneshield Potion [REMOVED FROM GAME]
-					},
-				}),
-				q(4134,  {	-- Lost Thunderbrew Recipe
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(12000)),	-- Limb Cleaver
-						un(REMOVED_FROM_GAME, i(11964)),	-- Swiftstrike Cudgel
 					},
 				}),
 				q(739,   {	-- Murdaloc
@@ -509,14 +475,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27896 },	-- The Sorrow and the Fury
 				}),
-				q(3911, {	-- The Last Element
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 9078 },	-- Shadowmage Vivian Lagrave
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(12038)),	-- Lagrave's Seal
-					},
-				}),
 				q(692,   {	-- The Lost Fragments
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 2785 },	-- Theldurin the Lost
@@ -534,18 +492,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(15824)),	-- Astoria Robes
 						un(REMOVED_FROM_GAME, i(15827)),	-- Jadescale Breastplate
 						un(REMOVED_FROM_GAME, i(15825)),	-- Traphook Jerkin
-					},
-				}),
-				q(4063,  {	-- The Rise of the Machines
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 2921 },	-- Lotwil Veriatus
-					["sourceQuest"] = 4062,	-- The Rise of the Machines
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(12109)),	-- Azure Moon Amice
-						un(REMOVED_FROM_GAME, i(12108)),	-- Basaltscale Armor
-						un(REMOVED_FROM_GAME, i(12111)),	-- Lavaplate Gauntlets
-						un(REMOVED_FROM_GAME, i(12110)),	-- Raincaster Drape
 					},
 				}),
 				q(27709, {	-- The Sentinel's Game (A)
@@ -773,12 +719,6 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 17097 },	-- Advisor Sarophas
-				}),
-				q(3982, {	-- What Is Going On?
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 9020 },	-- Commander Gor'shak
-					["sourceQuest"] = 3981,	-- Commander Gor'shak
 				}),
 				q(27775, {	-- When the Going Gets Tough, Cheat
 					["provider"] = { "n", 46653 },	-- Garyanne Fleezlebop

@@ -348,7 +348,7 @@ _.ExpansionFeatures =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(MOP_HEADER, {
+	tier(MOP_TIER, {
 		n(-10059, {	-- Pandaren Scenario
 			n(-163, {	-- Armor
 				n(-43, {	-- Cloth

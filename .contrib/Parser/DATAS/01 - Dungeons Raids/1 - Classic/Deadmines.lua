@@ -381,10 +381,10 @@ root("Instances", tier(CLASSIC_TIER, {
 					},
 					-- #endif
 				}),
-				-- #if BEFORE 4.0.3
 				i(1959, {	-- Cold Iron Pick
 					["cr"] = 623,	-- Skeletal Miner
 				}),
+				-- #if BEFORE 4.0.3
 				i(1927, {	-- Deadmines Cleaver
 					["cr"] = 594,	-- Defias Henchman
 				}),
@@ -776,7 +776,7 @@ root("Instances", tier(CLASSIC_TIER, {
 }));
 -- #if AFTER 6.0.1
 root("HiddenQuestTriggers", {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		q(35586),	-- Deadmines Reward Quest - Normal completion
 	}),
 });

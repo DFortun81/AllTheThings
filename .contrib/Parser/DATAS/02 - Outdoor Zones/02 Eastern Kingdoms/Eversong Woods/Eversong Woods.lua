@@ -1803,7 +1803,7 @@ _.Zones =
 };
 
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(TBC_HEADER, {
+	tier(TBC_TIER, {
 		cl(MAGE, {
 			i(47102),	-- Manaweave Robe Mage Quest reward
 		}),

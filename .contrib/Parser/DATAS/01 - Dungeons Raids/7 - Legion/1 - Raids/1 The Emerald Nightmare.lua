@@ -994,7 +994,7 @@ _.Instances = { tier(LEGION_TIER, {
 	}),
 })};
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(LEGION_HEADER, {
+	tier(LEGION_TIER, {
 		inst(768, {	-- The Emerald Nightmare
 			i(138229),	-- Nightmare Boss 3 Relic Storm
 			i(157766),	-- Vial of Nightmare Fog

@@ -144,69 +144,71 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(11),		-- The Beastwarrens
 			crit(12),		-- Zovaal's Cauldron
 		}),
-		ach(14825, {	-- Explorer of the Shadowlands
-			ach(14306, {	-- Explore Revendreth
-				crit(1),		-- Caretaker's Manor
-				crit(2),		-- Archivam
-				crit(3),		-- Witherfall Ruin
-				crit(4),		-- The Endmire
-				crit(5),		-- Catacombs of Regret
-				crit(6),		-- Old Gate
-				crit(7),		-- The Night Market
-				crit(8),		-- The Banewood
-				crit(9),		-- Stalker's Lodge
-				crit(10),		-- Chalice District
-				crit(11),		-- Redelav District
-				crit(12),		-- Dredhollow
-				crit(13),		-- Ember Ward
-				crit(14),		-- Darkwall Tower
-				crit(15),		-- Court of the Harvesters
-				crit(16),		-- Dominance Gate
-				crit(17),		-- The Shrouded Asylum
-				crit(18),		-- Dominance Keep
-			}),
-			ach(14305, {	-- Explore Maldraxxus
-				crit(1),		-- Theater of Pain
-				crit(2),		-- The Stitchyard
-				crit(3),		-- The Spearhead
-				crit(4),		-- Sepulcher of Knowledge
-				crit(5),		-- Seat of the Primus
-				crit(6),		-- House of Plagues
-				crit(7),		-- House of the Chosen
-				crit(8),		-- House of Rituals
-				crit(9),		-- House of Eyes
-				crit(10),		-- House of Constructs
-				crit(11),		-- Glutharn's Decay
-				crit(12),		-- Forgotten Wounds
-				crit(13),		-- Burning Thicket
-			}),
-			ach(14304, {	-- Explore Ardenweald
-				crit(1),		-- Dusty Burrows
-				crit(2),		-- The Stalks
-				crit(3),		-- Starlit Overlook
-				crit(4),		-- Shimmerbough
-				crit(5),		-- Tirna Scithe
-				crit(6),		-- Hibernal Hollow
-				crit(7),		-- Heart of the Forest
-				crit(8),		-- Gormhive
-				crit(9),		-- Glitterfall Basin
-				crit(10),		-- Tirna Noch
-				crit(11),		-- Darkreach
-				crit(12),		-- Crumbled Ridge
-				crit(13),		-- Gossamer Cliffs
-			}),
-			ach(14303, {	-- Explore Bastion
-				crit(1),		-- Vestribule of Eternity
-				crit(2),		-- Temple of Humility
-				crit(3),		-- Purity's Pinnacle
-				crit(4),		-- Firstborne's Bounty
-				crit(5),		-- The Mnemonic Locus
-				crit(6),		-- The Eternal Forge
-				crit(7),		-- Elysian Hold
-				crit(8),		-- Citadel of Loyalty
-				crit(9),		-- Temple of Courage
-				crit(10),		-- Aspirant's Crucible
-				crit(11),		-- Agthia's Repose
+		ach(14825, {	-- Shadowlands Voyager
+			ach(15388, {	-- Shadowlands Explorer
+				ach(14306, {	-- Explore Revendreth
+					crit(1),		-- Caretaker's Manor
+					crit(2),		-- Archivam
+					crit(3),		-- Witherfall Ruin
+					crit(4),		-- The Endmire
+					crit(5),		-- Catacombs of Regret
+					crit(6),		-- Old Gate
+					crit(7),		-- The Night Market
+					crit(8),		-- The Banewood
+					crit(9),		-- Stalker's Lodge
+					crit(10),		-- Chalice District
+					crit(11),		-- Redelav District
+					crit(12),		-- Dredhollow
+					crit(13),		-- Ember Ward
+					crit(14),		-- Darkwall Tower
+					crit(15),		-- Court of the Harvesters
+					crit(16),		-- Dominance Gate
+					crit(17),		-- The Shrouded Asylum
+					crit(18),		-- Dominance Keep
+				}),
+				ach(14305, {	-- Explore Maldraxxus
+					crit(1),		-- Theater of Pain
+					crit(2),		-- The Stitchyard
+					crit(3),		-- The Spearhead
+					crit(4),		-- Sepulcher of Knowledge
+					crit(5),		-- Seat of the Primus
+					crit(6),		-- House of Plagues
+					crit(7),		-- House of the Chosen
+					crit(8),		-- House of Rituals
+					crit(9),		-- House of Eyes
+					crit(10),		-- House of Constructs
+					crit(11),		-- Glutharn's Decay
+					crit(12),		-- Forgotten Wounds
+					crit(13),		-- Burning Thicket
+				}),
+				ach(14304, {	-- Explore Ardenweald
+					crit(1),		-- Dusty Burrows
+					crit(2),		-- The Stalks
+					crit(3),		-- Starlit Overlook
+					crit(4),		-- Shimmerbough
+					crit(5),		-- Tirna Scithe
+					crit(6),		-- Hibernal Hollow
+					crit(7),		-- Heart of the Forest
+					crit(8),		-- Gormhive
+					crit(9),		-- Glitterfall Basin
+					crit(10),		-- Tirna Noch
+					crit(11),		-- Darkreach
+					crit(12),		-- Crumbled Ridge
+					crit(13),		-- Gossamer Cliffs
+				}),
+				ach(14303, {	-- Explore Bastion
+					crit(1),		-- Vestribule of Eternity
+					crit(2),		-- Temple of Humility
+					crit(3),		-- Purity's Pinnacle
+					crit(4),		-- Firstborne's Bounty
+					crit(5),		-- The Mnemonic Locus
+					crit(6),		-- The Eternal Forge
+					crit(7),		-- Elysian Hold
+					crit(8),		-- Citadel of Loyalty
+					crit(9),		-- Temple of Courage
+					crit(10),		-- Aspirant's Crucible
+					crit(11),		-- Agthia's Repose
+				}),
 			}),
 			ach(14310, {	-- Adventurer of Revendreth
 				crit(1),		-- Soulstalker Doina

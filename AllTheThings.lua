@@ -1990,6 +1990,26 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange)
 		-- TODO: put more info in here as it will be copy-paste into Discord
 	};
 end
+-- Checks a given quest reference against the current character info to see if something is inaccurate
+app.CheckInaccurateQuestInfo = function(questRef, questChange)
+	if questRef and questRef.questID then
+		-- print("CheckInaccurateQuestInfo",questRef.questID,questChange)
+		local id = questRef.questID;
+		-- TODO: change filtering technique so we can do app.CharacterFilter(questRef) to bypass any Account filtering active
+		if not (app.RequiredSkillFilter(questRef)
+			and app.ClassRequirementFilter(questRef)
+			and app.RaceRequirementFilter(questRef)
+			and app.RequireCustomCollectFilter(questRef)) then
+			local popupID = "quest-filter-" .. id;
+			if app:SetupReportDialog(popupID, "Inaccurate Quest Info: " .. id,
+				app.BuildDiscordQuestInfoTable(id, "inaccurate-quest", questChange)
+			) then
+				local reportMsg = app:Linkify(L["REPORT_INACCURATE_QUEST"], "f7b531", "dialog:" .. popupID);
+				Callback(app.print, reportMsg);
+			end
+		end
+	end
+end
 local PrintQuestInfo = function(questID, new, info)
 	if app.IsReady and app.Settings:GetTooltipSetting("Report:CompletedQuests") then
 		local searchResults = app.SearchForField("questID", questID);
@@ -2035,19 +2055,8 @@ local PrintQuestInfo = function(questID, new, info)
 				questID = app:Linkify(questID, "149bfd", "search:questID:" .. id);
 			end
 			-- This quest doesn't meet the filter for this character, then ask to report in chat
-			-- TODO: change filtering technique so we can do app.CharacterFilter(questRef) to bypass any Account filtering active
-			if questChange == "accepted" and
-				not (app.RequiredSkillFilter(questRef)
-					and app.ClassRequirementFilter(questRef)
-					and app.RaceRequirementFilter(questRef)
-					and app.RequireCustomCollectFilter(questRef)) then
-				local popupID = "quest-filter-" .. id;
-				if app:SetupReportDialog(popupID, "Inaccurate Quest Info: " .. id,
-					app.BuildDiscordQuestInfoTable(id, "inaccurate-quest", questChange)
-				) then
-					local reportMsg = app:Linkify(L["REPORT_INACCURATE_QUEST"], "f7b531", "dialog:" .. popupID);
-					Callback(app.print, reportMsg);
-				end
+			if questChange == "accepted" then
+				DelayedCallback(app.CheckInaccurateQuestInfo, 1, questRef, questChange);
 			end
 		end
 		print("Quest",questChange,questID,(info or ""));
@@ -2249,6 +2258,7 @@ local NPCNameFromID = setmetatable({}, { __index = function(t, id)
 		rawset(t, id, title);
 		return title;
 	end
+	return RETRIEVING_DATA;
 end});
 
 -- Search Caching
@@ -2554,34 +2564,34 @@ end
 (function()
 local subroutines;
 subroutines = {
-	["pvp_gear_base"] = function(headerID1, headerID2, headerID3)
+	["pvp_gear_base"] = function(tierID, headerID1, headerID2)
 		return {
-			{"select", "headerID", headerID1 },	-- Select the Expansion header
+			{"select", "tierID", tierID },	-- Select the Expansion header
 			{"pop"},	-- Discard the Expansion header and acquire the children.
-			{"where", "headerID", headerID2 },	-- Select the Season header
+			{"where", "headerID", headerID1 },	-- Select the Season header
 			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "headerID", headerID3 },	-- Select the Set header
+			{"where", "headerID", headerID2 },	-- Select the Set header
 		};
 	end,
-	["pvp_gear_faction_base"] = function(headerID1, headerID2, headerID3, headerID4)
+	["pvp_gear_faction_base"] = function(tierID, headerID1, headerID2, headerID3)
 		return {
-			{"select", "headerID", headerID1 },	-- Select the Expansion header
+			{"select", "tierID", tierID },	-- Select the Expansion header
 			{"pop"},	-- Discard the Expansion header and acquire the children.
-			{"where", "headerID", headerID2 },	-- Select the Season header
+			{"where", "headerID", headerID1 },	-- Select the Season header
 			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "headerID", headerID3 },	-- Select the Faction header
+			{"where", "headerID", headerID2 },	-- Select the Faction header
 			{"pop"},	-- Discard the Faction header and acquire the children.
-			{"where", "headerID", headerID4 },	-- Select the Set header
+			{"where", "headerID", headerID3 },	-- Select the Set header
 		};
 	end,
 	-- Set Gear
-	["pvp_set_ensemble"] = function(headerID1, headerID2, headerID3, classID)
+	["pvp_set_ensemble"] = function(tierID, headerID1, headerID2, classID)
 		return {
-			{"select", "headerID", headerID1 },	-- Select the Expansion header
+			{"select", "tierID", tierID },	-- Select the Expansion header
 			{"pop"},	-- Discard the Expansion header and acquire the children.
-			{"where", "headerID", headerID2 },	-- Select the Season header
+			{"where", "headerID", headerID1 },	-- Select the Season header
 			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "headerID", headerID3 },	-- Select the Set header
+			{"where", "headerID", headerID2 },	-- Select the Set header
 			{"pop"},	-- Discard the Set header and acquire the children.
 			{"where", "classID", classID },	-- Select all the class header.
 			{"pop"},	-- Discard the class header and acquire the children.
@@ -2589,15 +2599,15 @@ subroutines = {
 			{"is", "s"},	-- If it has a sourceID, keep it, otherwise throw it away.
 		};
 	end,
-	["pvp_set_faction_ensemble"] = function(headerID1, headerID2, headerID3, headerID4, classID)
+	["pvp_set_faction_ensemble"] = function(tierID, headerID1, headerID2, headerID3, classID)
 		return {
-			{"select", "headerID", headerID1 },	-- Select the Expansion header
+			{"select", "tierID", tierID },	-- Select the Expansion header
 			{"pop"},	-- Discard the Expansion header and acquire the children.
-			{"where", "headerID", headerID2 },	-- Select the Season header
+			{"where", "headerID", headerID1 },	-- Select the Season header
 			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "headerID", headerID3 },	-- Select the Faction header
+			{"where", "headerID", headerID2 },	-- Select the Faction header
 			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "headerID", headerID4 },	-- Select the Set header
+			{"where", "headerID", headerID3 },	-- Select the Set header
 			{"pop"},	-- Discard the Set header and acquire the children.
 			{"where", "classID", classID },	-- Select all the class header.
 			{"pop"},	-- Discard the class header and acquire the children.
@@ -2606,13 +2616,13 @@ subroutines = {
 		};
 	end,
 	-- Weapons
-	["pvp_weapons_ensemble"] = function(headerID1, headerID2, headerID3)
+	["pvp_weapons_ensemble"] = function(tierID, headerID1, headerID2)
 		return {
-			{"select", "headerID", headerID1 },	-- Select the Expansion header
+			{"select", "tierID", tierID },	-- Select the Expansion header
 			{"pop"},	-- Discard the Expansion header and acquire the children.
-			{"where", "headerID", headerID2 },	-- Select the Season header
+			{"where", "headerID", headerID1 },	-- Select the Season header
 			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "headerID", headerID3 },	-- Select the Set header
+			{"where", "headerID", headerID2 },	-- Select the Set header
 			{"pop"},	-- Discard the Set header and acquire the children.
 			{"where", "headerID", -319 },	-- Select the "Weapons" header.
 			{"pop"},	-- Discard the class header and acquire the children.
@@ -2620,15 +2630,15 @@ subroutines = {
 			{"is", "s"},	-- If it has a sourceID, keep it, otherwise throw it away.
 		};
 	end,
-	["pvp_weapons_faction_ensemble"] = function(headerID1, headerID2, headerID3, headerID4)
+	["pvp_weapons_faction_ensemble"] = function(tierID, headerID1, headerID2, headerID3)
 		return {
-			{"select", "headerID", headerID1 },	-- Select the Expansion header
+			{"select", "tierID", tierID },	-- Select the Expansion header
 			{"pop"},	-- Discard the Expansion header and acquire the children.
-			{"where", "headerID", headerID2 },	-- Select the Season header
+			{"where", "headerID", headerID1 },	-- Select the Season header
 			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "headerID", headerID3 },	-- Select the Faction header
+			{"where", "headerID", headerID2 },	-- Select the Faction header
 			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "headerID", headerID4 },	-- Select the Set header
+			{"where", "headerID", headerID3 },	-- Select the Set header
 			{"pop"},	-- Discard the Set header and acquire the children.
 			{"where", "headerID", -319 },	-- Select the "Weapons" header.
 			{"pop"},	-- Discard the class header and acquire the children.
@@ -3355,18 +3365,19 @@ end
 local function FillPurchases(group, depth)
 	-- default to 2 levels of filling, i.e. 0) Raid Essence -> 1) Tier Token -> 2) Item
 	depth = depth or 2;
+	-- if app.DEBUG_PRINT then print("FillPurchases?",group.hash,depth) end
 	if depth <= 0 then return; end
 	-- do not fill purchases on certain items, can skip the skip though based on a level
 	if (app.SkipPurchases[-1] or 0) < (app.SkipPurchases[group.itemID or -1] or 0) then return; end
-	-- do not fill 'saved' groups, or groups directly under saved groups unless in Acct or Debug mode
-	if not app.MODE_DEBUG_OR_ACCOUNT then
+	-- do not fill 'saved' groups (unless they are actual Maps or Instances, or a Difficulty header), or groups directly under saved groups unless in Acct or Debug mode
+	if not app.MODE_DEBUG_OR_ACCOUNT and not (group.instanceID or group.mapID or group.difficultyID) then
 		if group.saved then return; end
 		local rawParent = rawget(group, "parent");
 		if rawParent and rawParent.saved then return; end
 	end
-	-- if app.DEBUG_PRINT then print("FillPurchases",group.modItemID,group.currencyID,depth) end
 
 	local collectibles = group.costCollectibles or (group.collectibleAsCost and group.costCollectibles or group.costCollectibles);
+	-- if app.DEBUG_PRINT then print("GetPurchases",collectibles and #collectibles) end
 	if collectibles and #collectibles > 0 then
 		-- Nest new copies of the cost collectible objects of this group under itself
 		local usedToBuy = app.CreateNPC(-2, { ["text"] = L["CURRENCY_FOR"] } );
@@ -5068,6 +5079,7 @@ CacheFields = function(group)
 		currentInstance = nil;
 	end
 end
+app.CacheFields = CacheFields;
 end)();
 local function SearchForFieldRecursively(group, field, value)
 	if group.g then
@@ -6881,9 +6893,12 @@ app.CreateAchievementCriteria = function(id, t)
 end
 
 local function CheckAchievementCollectionStatus(achievementID)
-	local id,name,_,accCompleted,_,_,_,_,flags,_,_,isGuild = GetAchievementInfo(achievementID)
-	if id and not isGuild and accCompleted and bit.band(flags,0x1) == 0 then
-		ATTAccountWideData.Achievements[id] = 1;
+	-- this can fire prior to VARIABLES_LOADED, so we can only capture the achievement as collected in the DB if the variables have loaded
+	if ATTAccountWideData then
+		local id,name,_,accCompleted,_,_,_,_,flags,_,_,isGuild = GetAchievementInfo(achievementID)
+		if id and not isGuild and accCompleted and bit.band(flags,0x1) == 0 then
+			ATTAccountWideData.Achievements[id] = 1;
+		end
 	end
 end
 RefreshAchievementCollection = function()
@@ -12491,9 +12506,13 @@ UpdateGroup = function(parent, group, window)
 			SetThingVisibility(parent, group);
 		end
 
-		-- Increment the parent group's totals
-		parent.total = (parent.total or 0) + group.total;
-		parent.progress = (parent.progress or 0) + group.progress;
+		-- Increment the parent group's totals if the group is not ignored for sources
+		if not group.sourceIgnored then
+			parent.total = (parent.total or 0) + group.total;
+			parent.progress = (parent.progress or 0) + group.progress;
+		-- else
+			-- print("Ignoring progress/total",group.progress,"/",group.total,"for group",group.text)
+		end
 	end
 
 	-- if app.DEBUG_PRINT then print("UpdateGroup.Done",group.progress,group.total,group.visible,group.__type) end
@@ -14394,26 +14413,25 @@ RowOnEnter = function (self)
 		if reference.qgs and app.Settings:GetTooltipSetting("QuestGivers") then
 			if app.Settings:GetTooltipSetting("creatureID") then
 				for i,qg in ipairs(reference.qgs) do
-					GameTooltip:AddDoubleLine(i == 1 and L["QUEST_GIVER"] or " ", tostring(qg > 0 and NPCNameFromID[qg] or "") .. " (" .. qg .. ")");
+					GameTooltip:AddDoubleLine(i == 1 and L["QUEST_GIVER"] or " ", tostring(NPCNameFromID[qg]) .. " (" .. qg .. ")");
 				end
 			else
 				for i,qg in ipairs(reference.qgs) do
-					GameTooltip:AddDoubleLine(i == 1 and L["QUEST_GIVER"] or " ", tostring(qg > 0 and NPCNameFromID[qg] or qg));
+					GameTooltip:AddDoubleLine(i == 1 and L["QUEST_GIVER"] or " ", tostring(NPCNameFromID[qg]));
 				end
 			end
 		end
 		if reference.crs and app.Settings:GetTooltipSetting("creatures") then
 			-- extreme amounts of creatures tagged, then only list a summary of how many...
-			local custom = L["HEADER_NAMES"];
 			if #reference.crs > 25 then
 				GameTooltip:AddDoubleLine(CREATURE, "[" .. tostring(#reference.crs) .. " Creatures]");
 			elseif app.Settings:GetTooltipSetting("creatureID") then
 				for i,cr in ipairs(reference.crs) do
-					GameTooltip:AddDoubleLine(i == 1 and CREATURE or " ", tostring(cr > 0 and NPCNameFromID[cr] or custom[cr]) .. " (" .. cr .. ")");
+					GameTooltip:AddDoubleLine(i == 1 and CREATURE or " ", tostring(NPCNameFromID[cr]) .. " (" .. cr .. ")");
 				end
 			else
 				for i,cr in ipairs(reference.crs) do
-					GameTooltip:AddDoubleLine(i == 1 and CREATURE or " ", tostring(cr > 0 and NPCNameFromID[cr] or custom[cr]));
+					GameTooltip:AddDoubleLine(i == 1 and CREATURE or " ", tostring(NPCNameFromID[cr]));
 				end
 			end
 		end
@@ -14549,6 +14567,10 @@ RowOnEnter = function (self)
 			-- PvP
 			if reference.pvp then
 				GameTooltip:AddLine(L["REQUIRES_PVP"], 1, 1, 1, 1, true);
+			end
+			-- Ignored for Source/Progress
+			if reference.sourceIgnored then
+				GameTooltip:AddLine(L["DOES_NOT_CONTRIBUTE_TO_PROGRESS"], 1, 1, 1, 1, true);
 			end
 		end
 
@@ -15205,6 +15227,27 @@ end
 end)();
 
 function app:GetDataCache()
+	-- Attaches a dynamic OnUpdate to the category which auto-populates itself using the provided field and optional value when first receiving an Update to itself
+	local function DynamicCategory(group, field, value)
+		if field then
+			group.OnUpdate = function(self)
+				-- pull out all Things which should go into this category based on field & value
+				group.g = app:BuildSearchResponse(app:GetWindow("Prime").data.g, field, value, true);
+				-- reset indents and such
+				BuildGroups(group, group.g);
+				-- sort the top level groups initially
+				group.sort = true;
+				app.SortGroup(group, "name", nil, nil, "sort");
+				group.sort = nil;
+				-- dynamic groups are ignored for the source tooltips
+				group.sourceIgnored = true;
+				-- make sure these things are cached so they can be updated when collected
+				app.CacheFields(group);
+				self.OnUpdate = nil;
+			end
+		end
+		return group;
+	end
 	-- Update the Row Data by filtering raw data
 	local allData = app:GetWindow("Prime").data;
 	if not allData or not allData.total and app.Categories then
@@ -15427,15 +15470,6 @@ function app:GetDataCache()
 			tinsert(g, db);
 		end
 
-		-- Illusions
-		if app.Categories.Illusions then
-			db = {};
-			db.g = app.Categories.Illusions;
-			db.expanded = false;
-			db.text = "Illusions";
-			tinsert(g, db);
-		end
-
 		-- Factions
 		if app.Categories.Factions then
 			db = app.CreateNPC(-6013);
@@ -15446,56 +15480,86 @@ function app:GetDataCache()
 			tinsert(g, db);
 		end
 
-		-- Mounts
-		if app.Categories.Mounts then
-			db = {};
-			db.g = app.Categories.Mounts;
-			db.expanded = false;
-			db.text = MOUNTS;
-			db.icon = app.asset("Category_Mounts");
-			db.sourceIgnored = true;
-			tinsert(g, db);
-		end
-
 		-- Pet Journal
 		if app.Categories.BattlePets then
 			db = {};
 			db.g = app.Categories.BattlePets;
 			db.f = 101;
-			db.expanded = false;
 			db.text = AUCTION_CATEGORY_BATTLE_PETS;
 			db.icon = app.asset("Category_PetJournal");
+			-- remove the manually-built pet journal for now
 			for _,o in ipairs(db.g) do
-				-- the raw pet journal listings
+				-- the dynamic pet journal listing
 				if o.headerID == -797 then
+					o.g = nil;
 					o.sourceIgnored = true;
+					-- o = DynamicCategory(o, "speciesID");
+					break;
 				end
 			end
+			-- Battle Pets - Dynamic
+			local bp = {};
+			bp.text = AUCTION_CATEGORY_BATTLE_PETS.." - "..DYNAMIC;
+			bp.icon = app.asset("Category_PetJournal");
+			tinsert(db.g, DynamicCategory(bp, "speciesID"));
 			tinsert(g, db);
 		end
+
+		-- Illusions - Dynamic
+		db = {};
+		db.text = "Illusions".." - "..DYNAMIC;
+		db.icon = 132853;
+		tinsert(g, DynamicCategory(db, "illusionID"));
+
+		-- Mounts
+		-- if app.Categories.Mounts then
+		-- 	db = {};
+		-- 	db.g = app.Categories.Mounts;
+		-- 	db.expanded = false;
+		-- 	db.text = MOUNTS;
+		-- 	db.icon = app.asset("Category_Mounts");
+		-- 	db.sourceIgnored = true;
+		-- 	tinsert(g, db);
+		-- end
+		-- Mounts - Dynamic
+		db = {};
+		db.text = MOUNTS.." - "..DYNAMIC;
+		db.icon = app.asset("Category_Mounts");
+		tinsert(g, DynamicCategory(db, "mountID"));
 
 		-- Titles
-		if app.Categories.Titles then
-			db = {};
-			db.g = app.Categories.Titles;
-			db.icon = app.asset("Category_Titles");
-			db.expanded = false;
-			db.text = "Titles";
-			db.sourceIgnored = true;
-			tinsert(g, db);
-		end
+		-- if app.Categories.Titles then
+		-- 	db = {};
+		-- 	db.g = app.Categories.Titles;
+		-- 	db.icon = app.asset("Category_Titles");
+		-- 	db.expanded = false;
+		-- 	db.text = "Titles";
+		-- 	db.sourceIgnored = true;
+		-- 	tinsert(g, db);
+		-- end
+		-- Titles - Dynamic
+		db = {};
+		db.icon = app.asset("Category_Titles");
+		db.text = "Titles".." - "..DYNAMIC;
+		tinsert(g, DynamicCategory(db, "titleID"));
 
 		-- Toys
-		if app.Categories.Toys then
-			db = {};
-			db.g = app.Categories.Toys;
-			db.icon = app.asset("Category_ToyBox");
-			db.expanded = false;
-			db.f = 102;
-			db.text = TOY_BOX;
-			db.sourceIgnored = true;
-			tinsert(g, db);
-		end
+		-- if app.Categories.Toys then
+		-- 	db = {};
+		-- 	-- db.g = app.Categories.Toys;
+		-- 	db.icon = app.asset("Category_ToyBox");
+		-- 	db.expanded = false;
+		-- 	db.f = 102;
+		-- 	db.text = TOY_BOX;
+		-- 	db.sourceIgnored = true;
+		-- 	tinsert(g, db);
+		-- end
+		-- Toys - Dynamic
+		db = {};
+		db.icon = app.asset("Category_ToyBox");
+		db.f = 102;
+		db.text = TOY_BOX.." - "..DYNAMIC;
+		tinsert(g, DynamicCategory(db, "isToy"));
 
 		--[[
 		-- DYNAMIC TOY BOX (not filtered)
@@ -15772,17 +15836,19 @@ function app:GetDataCache()
 		--]]
 
 
-		--[[
+		---[[
 		-- More attempts at dynamically built sections.
 		-- Titles
-		local titlesCategory = {};
-		titlesCategory.g = {};
-		titlesCategory.titles = {};
-		titlesCategory.expanded = false;
-		titlesCategory.text = PAPERDOLL_SIDEBAR_TITLES;
-		titlesCategory.icon = app.asset("Category_Titles");
-		table.insert(g, titlesCategory);
+		-- local titlesCategory = {};
+		-- titlesCategory.g = {};
+		-- titlesCategory.titles = {};
+		-- titlesCategory.expanded = false;
+		-- titlesCategory.text = PAPERDOLL_SIDEBAR_TITLES;
+		-- titlesCategory.icon = app.asset("Category_Titles");
+		-- tinsert(g, DynamicCategory(titlesCategory, "titleID"));
+		--]]
 
+		--[[
 		-- Toys
 		local toyCategory = {};
 		toyCategory.g = {};
@@ -16147,85 +16213,65 @@ function app:GetDataCache()
 		]]--
 
 		-- Update Flight Path data.
-		flightPathsCategory.OnUpdate = function(self)
-			for i,_ in pairs(fieldCache["flightPathID"]) do
-				if not self.fps[i] then
-					local fp = app.CreateFlightPath(tonumber(i));
-					for j,o in ipairs(_) do
-						for key,value in pairs(o) do rawset(fp, key, value); end
-					end
-					self.fps[i] = fp;
-					fp.g = nil;
-					fp.maps = nil;
-					if not fp.u or fp.u ~= 1 then
-						fp.parent = self;
-						tinsert(self.g, fp);
-					else
-						fp.parent = flightPathsCategory_NYI;
-						tinsert(flightPathsCategory_NYI.g, fp);
-					end
-					-- Make sure the sourced FP data exists in the cache DB so it doesn't show *NEW*
-					if not app.FlightPathDB[i] then app.FlightPathDB[i] = _; end
-				end
-			end
-			-- will only run once per session and return true the first time it is called
-			if app.CacheFlightPathData() then
-				for i,_ in pairs(app.FlightPathDB) do
+		if flightPathsCategory then
+			flightPathsCategory.OnUpdate = function(self)
+				for i,_ in pairs(fieldCache["flightPathID"]) do
 					if not self.fps[i] then
 						local fp = app.CreateFlightPath(tonumber(i));
+						for j,o in ipairs(_) do
+							for key,value in pairs(o) do rawset(fp, key, value); end
+						end
 						self.fps[i] = fp;
+						fp.g = nil;
+						fp.maps = nil;
 						if not fp.u or fp.u ~= 1 then
-							app.print("Flight Path needs Source!",i,fp.name)
 							fp.parent = self;
 							tinsert(self.g, fp);
 						else
 							fp.parent = flightPathsCategory_NYI;
 							tinsert(flightPathsCategory_NYI.g, fp);
 						end
+						-- Make sure the sourced FP data exists in the cache DB so it doesn't show *NEW*
+						if not app.FlightPathDB[i] then app.FlightPathDB[i] = _; end
 					end
 				end
-			end
-			insertionSort(self.g, function(a, b)
-				return a.name < b.name;
-			end);
-		end;
-		flightPathsCategory:OnUpdate();
-		-- Needed for externally updating only this group when collecting a flight path since the records are not cached
-		app.FlightPathsCategory = flightPathsCategory;
-
-		-- Update Title data.
-		if titlesCategory then
-			titlesCategory.OnUpdate = function(self)
-				local headers, header = {};
-				for i,header in ipairs(self.g) do
-					if header.headerID and header.key == "headerID" then
-						headers[header.headerID] = header;
-						if not header.g then
-							header.g = {};
+				-- will only run once per session and return true the first time it is called
+				if app.CacheFlightPathData() then
+					for i,_ in pairs(app.FlightPathDB) do
+						if not self.fps[i] then
+							local fp = app.CreateFlightPath(tonumber(i));
+							self.fps[i] = fp;
+							if not fp.u or fp.u ~= 1 then
+								app.print("Flight Path needs Source!",i,fp.name)
+								fp.parent = self;
+								tinsert(self.g, fp);
+							else
+								fp.parent = flightPathsCategory_NYI;
+								tinsert(flightPathsCategory_NYI.g, fp);
+							end
 						end
 					end
 				end
-				for i,_ in pairs(fieldCache["titleID"]) do
-					if not self.titles[i] then
-						self.titles[i] = buildCategoryEntry(self, headers, _, app.CreateTitle(tonumber(i)));
-					end
-				end
-				insertionSort(self.g, sortByTextSafely);
-				for i,header in pairs(headers) do
-					if not header.ignoreSort then
-						insertionSort(header.g, sortByTextSafely);
-					end
-				end
-				for i=#self.g,1,-1 do
-					header = self.g[i];
-					if header.g and #header.g < 1 and header.headerID and header.key == "headerID" then
-						headers[header.headerID] = nil;
-						table.remove(self.g, i);
-					end
-				end
-			end
-			titlesCategory:OnUpdate();
+				insertionSort(self.g, function(a, b)
+					return a.name < b.name;
+				end);
+				-- no longer need to run this logic once the dynamic group has been filled
+				self.OnUpdate = nil;
+			end;
+			flightPathsCategory:OnUpdate();
+			-- Needed for externally updating only this group when collecting a flight path since the records are not cached
+			app.FlightPathsCategory = flightPathsCategory;
 		end
+
+		-- Update Title data.
+		-- if titlesCategory then
+		-- 	titlesCategory.OnUpdate = function(self)
+		-- 		titlesCategory.g = app:BuildSearchResponse(app:GetWindow("Prime").data.g, "titleID");
+		-- 		-- reset indents and such
+		-- 		BuildGroups(titlesCategory, titlesCategory.g);
+		-- 		self.OnUpdate = nil;
+		-- 	end
+		-- end
 
 		-- Update Toy data.
 		if toyCategory then
@@ -16312,20 +16358,23 @@ function app:RefreshData(lazy, got, manual)
 		AfterCombatOrDelayedCallback(app._RefreshData, 0.5);
 	end
 end
-function app:BuildSearchResponse(groups, field, value)
+function app:BuildSearchResponse(groups, field, value, clear)
 	if groups then
 		local t, response, v;
-		for i,group in ipairs(groups) do
+		for _,group in ipairs(groups) do
 			v = group[field];
 			response = nil;
-			if v and (v == value or (field == "requireSkill" and app.SpellIDToSkillID[app.SpecializationSpellIDs[v] or 0] == value)) then
+			if v and (not value or
+				(v == value or
+					(field == "requireSkill" and app.SpellIDToSkillID[app.SpecializationSpellIDs[v] or 0] == value))) then
 				-- some recipes are faction locked and cannot be learned by the current character, so don't include them if specified
 				if not app.BuildSearchResponse_IgnoreUnavailableRecipes or not group.spellID or app.FilterItemClass_IgnoreBoEFilter(group) then
-					if t then tinsert(t, CreateObject(group));
-					else t = { CreateObject(group) }; end
+					local clone = clear and CreateObject(group, true) or CreateObject(group);
+					if t then tinsert(t, clone);
+					else t = { clone }; end
 				end
 			elseif group.g then
-				response = app:BuildSearchResponse(group.g, field, value);
+				response = app:BuildSearchResponse(group.g, field, value, clear);
 				if response then
 					local groupCopy = {};
 					-- copy direct group values only
@@ -16333,7 +16382,9 @@ function app:BuildSearchResponse(groups, field, value)
 					-- no need to clone response, since it is already cloned above
 					groupCopy.g = response;
 					-- if the group itself does not meet the field/value expectation, force it to be uncollectible
-					if groupCopy.field ~= value then groupCopy.collectible = false; end
+					if not groupCopy[field] or groupCopy[field] ~= value then groupCopy.collectible = false; end
+					-- don't copy in any extra data for the header group which can pull things into groups
+					groupCopy.sym = nil;
 					if t then tinsert(t, groupCopy);
 					else t = { groupCopy }; end
 				end
@@ -19197,7 +19248,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				local numRandomDungeons = GetNumRandomDungeons();
 				-- print(numRandomDungeons,"numRandomDungeons");
 				if numRandomDungeons > 0 then
-					local groupFinder = { achID = 4476, text = DUNGEONS_BUTTON, g = {} };
+					local groupFinder = { achID = 4476, text = DUNGEONS_BUTTON, collectible = false, g = {} };
 					for index=1,numRandomDungeons,1 do
 						local dungeonID = GetLFGRandomDungeonInfo(index);
 						-- print("RandInfo",index,GetLFGRandomDungeonInfo(index));

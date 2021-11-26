@@ -214,6 +214,8 @@ local L = app.L;
 	--TODO: L.REQUIRES_PETBATTLES = "|CFF00FFDEThis Thing requires Pet Battling.|r";
 	--TODO: L.REPORT_INACCURATE_QUEST = "Wrong Quest Info! (Click to Report)";
 	--TODO: L.NESTED_QUEST_REQUIREMENTS = "Nested Quest Requirements";
+	--TODO: L.MAIN_LIST_REQUIRES_REFRESH = "[Open Main list to update progress]";
+	--TODO: L.DOES_NOT_CONTRIBUTE_TO_PROGRESS = "|cffe08207This group and its content do not contribute to the progress of this window!|r";
 
 	-- Item Filter Window
 		--TODO: L.ITEM_FILTER_TEXT = "Item Filters";
@@ -908,7 +910,7 @@ for key,value in pairs({
 			--TODO: [-5350] = "Class Trial Item Sets",				-- Class Trial
 
 		--TODO: [-7776] = "Winter Revelers",						-- Winter Revelers (for Winter Veil)
-	------ ACHIEVEMENT HEADER SECTION ------
+	------ ACHIEVEMENT HEADERS SECTION ------
 		--TODO: [-10071] = "Visions of N'Zoth",
 		--TODO: [-10072] = "N'Zoth Assault",
 		--TODO: [-10073] = "Horrific Vision of Orgrimmar",
@@ -920,8 +922,9 @@ for key,value in pairs({
 		[-10079] = "습격: 아퀴르 출현",									-- Assault: Aqir Unearthed
 		--TODO: [-10081] = "Corrupted Area",
 		--TODO: [-10082] = "Lost Area",
-		--TODO: [-10083] = "Covenant Assaults",						-- Covenant Assaults
 		-- Shadowlands Achievement Header
+			-- 9.1
+				--TODO: [-10083] = "Covenant Assaults",				-- Covenant Assaults
 			--	hopefully temp objects, these currently do not have accessible object data on wowhead
 				[-1433951] = "깨진 거울 A-1",							-- Broken Mirror
 				[-1433952] = "깨진 거울 A-2",							-- Broken Mirror
@@ -993,6 +996,8 @@ for key,value in pairs({
 	[21015] = "발굽 자국",	-- Hoofprints	--TODO: This was taken from classic Wowhead
 	[21042] = "테라모어 경비병 휘장",	-- Theramore Guard Badge
 	[35251] = "카니톨의 궤짝",	-- Karnitol's Chest
+	[37099] = "아탈라이 서판",	-- Atal'ai Tablet
+	[91138] = "조던의 망치",	-- Jordan's Hammer
 	[112948] = "용감무쌍호의 잠긴 금고",	-- Intrepid's Locked Strongbox
 	[113757] = "어둠괴철로 금고",	-- Shadowforge Cache
 	[123329] = "밸로그의 궤짝",	-- Baelog's Chest
@@ -1012,6 +1017,7 @@ for key,value in pairs({
 	[144063] = "에퀴넥스 비석탑",	-- Equinex Monolith
 	[148502] = "|cFFFFFFFFStep 1:|r 9쪽",	-- |cFFFFFFFFStep 1:|r Page 9
 	[148504] = "눈에 띄는 묘비",	-- A Conspicuous Gravestone
+	[149036] = "마본의 궤짝",	-- Marvon's Chest
 	[149502] = "검은용군단의 보물",	-- Hoard of the Black Dragonflight	--TODO: This was taken from classic Wowhead
 	[160836] = "유물 금고",	-- Relic Coffer
 	[161495] = "비밀 금고",	-- Secret Safe
@@ -1051,6 +1057,7 @@ for key,value in pairs({
 	[178144] = "트롤 궤짝",	-- Troll Chest
 	[178227] = "머구트의 토템 광주리",	-- Murgut's Totem Basket
 	[179485] = "부서진 함정",	-- A Broken Trap
+	[179499] = "오우거 타닌 광주리",	-- Ogre Tannin Basket
 	[179501] = "노트 팀블잭의 은닉품",	-- Knot Thimblejack's Cache	--TODO: This was taken from classic Wowhead
 	[179564] = "고르독 공물",	-- Gordok Tribute Chest
 	[179697] = "투기장 보물상자",	-- Arena Treasure Chest
@@ -1087,6 +1094,7 @@ for key,value in pairs({
 	[181748] = "핏빛 수정",	-- Blood Crystal
 	[181756] = "닳아해진 고대 책",	-- Battered Ancient Book
 	[181889] = "현상 수배 전단",	-- Wanted Poster
+	[182011] = "주괴 상자",	-- Crate of Ingots
 	[182032] = "갈라엔의 일지",	-- Galaen's Journal
 	[182058] = "스컬지 시체 수레",	-- Scourge Meat Wagon
 	[182115] = "현상 수배 전단",	-- Wanted Poster
@@ -1300,6 +1308,7 @@ for key,value in pairs({
 	[205266] = "정교한 원반",	-- Elaborate Disc
 	[205332] = "현상 수배 전단",	-- Wanted Poster
 	[205350] = "호드 통신 단말기",	-- Horde Communication Panel
+	[205476] = "잃어버린 영혼의 서",	-- Book of Lost Souls
 	[205540] = "오래된 해골",	-- Decrepit Skeleton
 	[205874] = "모래투성이 성각문양",	-- Sand-Covered Hieroglyphs
 	[205875] = "성전사의 신호탄",	-- Crusader's Flare

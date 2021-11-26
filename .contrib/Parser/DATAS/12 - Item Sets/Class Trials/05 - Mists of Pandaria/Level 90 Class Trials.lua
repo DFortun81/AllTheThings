@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root("GearSets", n(CLASS_TRIAL, {
-	n(MOP_HEADER, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
+	tier(MOP_TIER, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 		n(LEVEL_NINETY, {
 			-- Note: [As of patch 6.0.1 Level 90 Boost does not reward this gear anymore]
 			["description"] = "These were obtained by creating a Level 90 Class Trial for each class and specialization.",

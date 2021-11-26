@@ -214,6 +214,8 @@ local L = app.L;
 	--TODO: L.REQUIRES_PETBATTLES = "|CFF00FFDEThis Thing requires Pet Battling.|r";
 	--TODO: L.REPORT_INACCURATE_QUEST = "Wrong Quest Info! (Click to Report)";
 	--TODO: L.NESTED_QUEST_REQUIREMENTS = "Nested Quest Requirements";
+	--TODO: L.MAIN_LIST_REQUIRES_REFRESH = "[Open Main list to update progress]";
+	--TODO: L.DOES_NOT_CONTRIBUTE_TO_PROGRESS = "|cffe08207This group and its content do not contribute to the progress of this window!|r";
 
 	-- Item Filter Window
 		--TODO: L.ITEM_FILTER_TEXT = "Item Filters";
@@ -910,7 +912,7 @@ for key,value in pairs({
 			--TODO: [-5350] = "Class Trial Item Sets",				-- Class Trial
 
 		--TODO: [-7776] = "Winter Revelers",						-- Winter Revelers (for Winter Veil)
-	------ ACHIEVEMENT HEADER SECTION ------
+	------ ACHIEVEMENT HEADERS SECTION ------
 		--TODO: [-10071] = "Visions of N'Zoth",
 		--TODO: [-10072] = "N'Zoth Assault",
 		--TODO: [-10073] = "Horrific Vision of Orgrimmar",
@@ -922,8 +924,9 @@ for key,value in pairs({
 		[-10079] = "Angriff: Ausgegrabene Aqir",					-- Assault: Aqir Unearthed
 		--TODO: [-10081] = "Corrupted Area",
 		--TODO: [-10082] = "Lost Area",
-		--TODO: [-10083] = "Covenant Assaults",						-- Covenant Assaults
-		-- Shadowlands Achievement Header
+		-- Shadowlands Achievement Headers
+			-- 9.1
+				--TODO: [-10083] = "Covenant Assaults",				-- Covenant Assaults
 			--	hopefully temp objects, these currently do not have accessible object data on wowhead
 				[-1433951] = "Zerbrochener Spiegel A-1",			-- Broken Mirror
 				[-1433952] = "Zerbrochener Spiegel A-2",			-- Broken Mirror
@@ -995,6 +998,8 @@ for key,value in pairs({
 	[21015] = "Hufabdrücke",	-- Hoofprints	--TODO: This was taken from classic Wowhead
 	[21042] = "Abzeichen der Wache von Theramore",	-- Theramore Guard Badge
 	[35251] = "Karnitols Truhe",	-- Karnitol's Chest
+	[37099] = "Schrifttafel der Atal'ai",	-- Atal'ai Tablet
+	[91138] = "Jordans Hammer",	-- Jordan's Hammer
 	[112948] = "Verschlossene Geldkassette der 'Kühnheit'",	-- Intrepid's Locked Strongbox
 	[113757] = "Schattenschmiedecache",	-- Shadowforge Cache
 	[123329] = "Baelogs Truhe",	-- Baelog's Chest
@@ -1014,6 +1019,7 @@ for key,value in pairs({
 	[144063] = "Monolith von Equinex",	-- Equinex Monolith
 	[148502] = "|cFFFFFFFFSchritt 1:|r Seite 9",	-- |cFFFFFFFFStep 1:|r Page 9
 	[148504] = "Ein verdächtiger Grabstein",	-- A Conspicuous Gravestone
+	[149036] = "Marvons Truhe",	-- Marvon's Chest
 	[149502] = "Hort des schwarzen Drachenschwarms",	-- Hoard of the Black Dragonflight
 	[160836] = "Reliktkasten",	-- Relic Coffer
 	[161495] = "Geheimsafe",	-- Secret Safe
@@ -1053,6 +1059,7 @@ for key,value in pairs({
 	[178144] = "Trolltruhe",	-- Troll Chest
 	[178227] = "Murguts Totemkorb",	-- Murgut's Totem Basket
 	[179485] = "Beschädigte Falle",	-- A Broken Trap
+	[179499] = "Gerbekorb der Oger",	-- Ogre Tannin Basket
 	[179501] = "Knot Zwingschraubs Behälter",	-- Knot Thimblejack's Cache
 	[179564] = "Tribut der Gordok",	-- Gordok Tribute Chest
 	[179697] = "Arenaschatztruhe",	-- Arena Treasure Chest
@@ -1089,6 +1096,7 @@ for key,value in pairs({
 	[181748] = "Blutkristall",	-- Blood Crystal
 	[181756] = "Zerfleddertes altes Buch",	-- Battered Ancient Book
 	[181889] = "Steckbrief",	-- Wanted Poster
+	[182011] = "Kiste mit Blöcken",	-- Crate of Ingots
 	[182032] = "Galaens Tagebuch",	-- Galaen's Journal
 	[182058] = "Fleischwagen der Geißel",	-- Scourge Meat Wagon
 	[182115] = "Steckbrief",	-- Wanted Poster
@@ -1302,6 +1310,7 @@ for key,value in pairs({
 	[205266] = "Aufwendige Scheibe",	-- Elaborate Disc
 	[205332] = "Steckbrief",	-- Wanted Poster
 	[205350] = "Kommunikationskonsole der Horde",	-- Horde Communication Panel
+	[205476] = "Buch der verlorenen Seelen",	-- Book of Lost Souls
 	[205540] = "Verfallenes Skelett",	-- Decrepit Skeleton
 	[205874] = "Sandbedeckte Hieroglyphen",	-- Sand-Covered Hieroglyphs
 	[205875] = "Leuchtsignal des Kreuzzüglers",	-- Crusader's Flare

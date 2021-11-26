@@ -11,6 +11,7 @@ _.Instances = { tier(CATA_TIER, {
 			n(QUESTS, {
 				q(28834, {	-- Rescue the Earthspeaker!
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 50270,	-- Captain Taylor
 					["g"] = {
 						i(65654),	-- Belt of a Thousand Deaths
 						i(65655),	-- Leggings of Opportune Strikes
@@ -19,6 +20,7 @@ _.Instances = { tier(CATA_TIER, {
 				}),
 				q(28833, {	-- Rescue the Earthspeaker!
 					["races"] = HORDE_ONLY,
+					["qg"] = 50272,	-- Legionnaire Nazgrim
 					["g"] = {
 						i(65654),	-- Belt of a Thousand Deaths
 						i(65655),	-- Leggings of Opportune Strikes
@@ -27,6 +29,7 @@ _.Instances = { tier(CATA_TIER, {
 				}),
 				q(28836, {	-- Sins of the Sea Witch
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 50270,	-- Captain Taylor
 					["g"] = {
 						i(65657),	-- Deepmist Robes
 						i(65659),	-- Kelp Forest Vest
@@ -35,6 +38,7 @@ _.Instances = { tier(CATA_TIER, {
 				}),
 				q(28843, {	-- Sins of the Sea Witch
 					["races"] = HORDE_ONLY,
+					["qg"] = 50272,	-- Legionnaire Nazgrim
 					["g"] = {
 						i(65657),	-- Deepmist Robes
 						i(65659),	-- Kelp Forest Vest

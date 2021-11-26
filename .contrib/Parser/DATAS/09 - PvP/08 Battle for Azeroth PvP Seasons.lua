@@ -4,8 +4,8 @@
 
 _.PVP =
 {
-	pvp(n(BFA_HEADER, {
-		n(-689, {	-- Dread Gladiator: Battle for Azeroth Season 1
+	pvp(tier(BFA_TIER, {
+		n(SEASON_DREAD, {
 			n(PVP_ASPIRANT, {
 				n(WEAPONS, {
 					i(162885),	-- Dread Aspirant's Barrier (A)
@@ -387,7 +387,7 @@ _.PVP =
 				}),
 			}),
 		}),
-		n(-690, {	-- Sinister Gladiator: Battle for Azeroth Season 2
+		n(SEASON_SINISTER, {
 			n(PVP_ASPIRANT, {
 				n(WEAPONS, {
 					i(165206),	-- Sinister Aspirant's Bonecracker (A)
@@ -796,7 +796,7 @@ _.PVP =
 				}),
 			}),
 		}),
-		n(-691, {	-- Notorious Gladiator: Battle for Azeroth Season 3
+		n(SEASON_NOTORIOUS, {
 			n(PVP_ASPIRANT, {
 				n(WEAPONS, {
 					i(169756),	-- Notorious Aspirant's Blade (A)
@@ -1245,7 +1245,7 @@ _.PVP =
 				}),
 			}),
 		}),
-		n(-692, {	-- Corrupted Gladiator: Battle for Azeroth Season 4
+		n(SEASON_CORRUPTED, {
 			n(PVP_ASPIRANT, {
 				n(WEAPONS, {
 					i(172880),	-- Corrupted Aspirant's Chopper (A)
@@ -1654,8 +1654,8 @@ _.PVP =
 
 -- The items never made it in.
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(BFA_HEADER, {
-		n(-689, {	-- Dread Gladiator: Battle for Azeroth Season 1
+	tier(BFA_TIER, {
+		n(SEASON_DREAD, {
 			n(-163, {	-- Armor
 				n(-43, {	-- Cloth
 					i(166907),	-- Dread Gladiator's Silk Robe
@@ -1741,7 +1741,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(161929),	-- Honorable Combatant's Salutary Scepter
 			}),
 		}),
-		n(-690, {	-- Sinister Gladiator: Battle for Azeroth Season 2
+		n(SEASON_SINISTER, {
 			n(WEAPONS, {
 				i(165036),	-- Sinister Gladiator's Halberd (A)
 				i(165201),	-- Sinister Aspirant's Halberd (A)
@@ -1781,7 +1781,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				}),
 			}),
 		}),
-		n(-691, {	-- Notorious Gladiator: Battle for Azeroth Season 3
+		n(SEASON_NOTORIOUS, {
 			n(WEAPONS, {
 				i(167522),	-- Notorious Aspirant's Shield Wall (A)
 				i(167521),	-- Notorious Aspirant's Shield Wall (H)
@@ -1789,7 +1789,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(169724),	-- Notorious Gladiator's Bonegrinder
 			}),
 		}),
-		n(-692, {	-- Corrupted Gladiator: Battle for Azeroth Season 4
+		n(SEASON_CORRUPTED, {
 			n(-163, {	-- Armor
 				n(-43, {	-- Cloth
 					i(172718),	-- Corrupted Gladiator's Silk Armor (A)

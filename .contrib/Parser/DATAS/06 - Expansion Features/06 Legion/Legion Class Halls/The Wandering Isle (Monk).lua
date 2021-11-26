@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	tier(LEGION_TIER, {
-		n(-9965, {	-- Legion Class Hall
+		n(CLASS_HALL, {
 			cl(MONK, {
 				["classes"] = { MONK },
 				["mapID"] = 709,	-- The Wandering Isle

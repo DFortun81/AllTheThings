@@ -111,6 +111,9 @@ _.ExpansionFeatures =
 									["coord"] = { 55.3, 68.3, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["maps"] = {
+										1717,	-- Chill's Reach
+									},
 								}),
 								q(59042, {	-- A Good Heart
 									["sourceQuests"] = { 58686 },	-- Weapon of Mass Construction
@@ -1073,25 +1076,37 @@ _.HiddenQuestTriggers = {
 	q(63099),	-- Opening 184589, Bag of Potions from Atticus
 	--q(62535),	-- Unknown doing dailies from abom
 	q(60873),	-- Buying Bag of Sin Stones (180442) from Atticus
+
+-- Crypt Couture criterias
+	q(62404),	-- using Ashen Ink (Crypt Couture)
+	q(62408),	-- using Jagged Bonesaw (Crypt Couture)
+	q(62405),	-- using Mucosal Pigment (Crypt Couture)
+
 -- Enchants
 	q(61187),	-- Enchant from rank 3 anima conductor (spellid=335042)
 	q(61185),	-- Enchant from rank 3 anima conductor (spellid=335040)
 	q(61186),	-- Enchant from rank 3 anima conductor (spellid=335041)
 
 -- Stitched Set (armor-type agnostic it seems by slot rewarded)
-	q(63392),	-- Gloves (182502) / Stranglers (182493)
-	q(63394),	-- Armguards (182497)
-	q(63395),	-- Breeches (182494)
-	q(63396),	-- Shoulders (182495)
+	-- q(),	-- Helm
+	q(63396),	-- Shoulders
 	q(63398),	-- Chest
-	q(63400),	-- Cloak (182498)
-	q(63399),	-- Slippers (182501)
+	q(63394),	-- Wrist
+	q(63392),	-- Gloves
+	-- q(),	-- Waist
+	q(63395),	-- Legs
+	q(63399),	-- Feet
+	q(63400),	-- Cloak
 
 -- Duty-Bound Set
-	q(63404),	-- Gloves / Leather
-	q(63409),	-- Waist / Cloth
-	q(63402),	-- Legs / Cloth
-	q(63401),	-- Shoulders / Plate
+	-- q(),	-- Helm
+	q(63401),	-- Shoulders
+	-- q(),	-- Chest
+	-- q(),	-- Wrist
+	q(63404),	-- Gloves
+	q(63409),	-- Waist
+	q(63402),	-- Legs
+	-- q(),	-- Feet
 
 	q(62037),	-- unlocking Mind of Maldraxxus set (TransmogSetID 2033, Duty-Bound Conjurer's items)
 	q(62036),	-- unlocking Zeal of Maldraxxus set (TransmogSetID 2038, Duty-Bound Wraith's items)
@@ -1099,8 +1114,60 @@ _.HiddenQuestTriggers = {
 	q(62015),	-- unlocking Mettle of Maldraxxus set (TransmogSetID 2046, Duty-Bound Harbinger's items)
 
 -- Anima Conductor
+	q(60781),	-- Daily channeling anima [Necrolord]
+	q(61588),	-- Triggered after first time channeling anima (to House of Constructs)
 	q(60774),	-- Theater of Pain (lvl 3)
 	q(60780),	-- triggered the first time i channeled anima to the daily quest hub
+
+-- Recruiting Constructs
+	q(57577),	-- Triggered after recruiting Flytrap
+	q(57598),	-- Triggered after recruiting Gas Bag
+	q(57859),	-- Triggered after recruiting Guillotine
+	q(57610),	-- Triggered after recruiting Iron Phillip
+	q(57578),	-- Triggered after recruiting Marz
+	q(57858),	-- Triggered after recruiting Miru
+	q(57575),	-- Triggered after recruiting Naxx
+	q(57603),	-- Triggered after recruiting Neena
+	q(57606),	-- Triggered after recruiting Roseboil
+	q(57607),	-- Triggered after recruiting Unity
+	q(57854),	-- Triggered after recruiting Sabrina
+	q(57857),	-- Triggered after recruiting Toothpick
+	q(57612),	-- Triggered after recruiting The Professor
+	q(58412),	-- Triggered after recruiting Unity
+
+-- Stitching Table Abomination 'Upgrades'
+	q(62575),	-- triggered after crafting Armor Plating at Abominable Stitching Table
+	q(62824),	-- triggered after crafting Back Mushrooms at Abominable Stitching Table
+	q(62580),	-- triggered after crafting Barrel O'Fish at Abominable Stitching Table
+	q(62574),	-- triggered after crafting Butterflies at Abominable Stitching Table
+	q(62762),	-- triggered after crafting Chef Hat at Abominable Stitching Table
+	q(62570),	-- triggered after crafting Collector Kash's Pack at Abominable Stitching Table
+	q(61560),	-- triggered after crafting Dapper Top Hat at Abominable Stitching Table
+	q(62758),	-- triggered after crafting Dundae's Hat at Abominable Stitching Table
+	q(62764),	-- triggered after crafting Egg Hat at Abominable Stitching Table
+	q(62469),	-- triggered after crafting Engineering Pack at Abominable Stitching Table
+	q(62572),	-- triggered after crafting Faction Flag at Abominable Stitching Table
+	q(62471),	-- triggered after crafting Flower Crown at Abominable Stitching Table
+	q(62472),	-- triggered after crafting Halo of Purity at Abominable Stitching Table
+	q(62479),	-- triggered after crafting Happiness Bird at Abominable Stitching Table
+	q(62583),	-- triggered after crafting Hitchhiker at Abominable Stitching Table
+	q(61712),	-- triggered after crafting Holiday Hat at Abominable Stitching Table
+	q(62759),	-- triggered after crafting Lovely Candle Display at Abominable Stitching Table
+	q(62470),	-- triggered after crafting Magician's Hat at Abominable Stitching Table
+	q(62577),	-- triggered after crafting Operational Instructions at Abominable Stitching Table
+	q(61561),	-- triggered after crafting Outlaw Flag at Abominable Stitching Table
+	q(62826),	-- triggered after crafting Pirate Hat at Abominable Stitching Table
+	q(62576),	-- triggered after crafting Plague Pack at Abominable Stitching Table
+	q(62476),	-- triggered after crafting Red Eye Lens at Abominable Stitching Table
+	q(62825),	-- triggered after crafting Shoulder Sprouts at Abominable Stitching Table
+	q(62481),	-- triggered after crafting Six-League Pack at Abominable Stitching Table
+	q(62817),	-- triggered after crafting Skull Fungus at Abominable Stitching Table
+	q(62474),	-- triggered after crafting Skull Protector at Abominable Stitching Table
+	q(62760),	-- triggered after crafting Trained Corpselice at Abominable Stitching Table
+	q(61562),	-- triggered after crafting Trustworthy Doll at Abominable Stitching Table
+	q(62823),	-- triggered after crafting Underpowered Gravity Pack at Abominable Stitching Table
+	q(62819),	-- triggered after crafting Unworthy Crown at Abominable Stitching Table
+	q(62468),	-- triggered after crafting Vestigial Wings at Abominable Stitching Table
 };
 
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {

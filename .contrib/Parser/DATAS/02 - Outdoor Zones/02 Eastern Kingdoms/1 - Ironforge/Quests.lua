@@ -57,13 +57,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(4987)),	-- Dwarf Captain's Sword
 					},
 				}),
-				q(27270, {	-- An Audience with the Farseer
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 23127 },	-- Farseer Javad
-					["classes"] = { SHAMAN },
-					["coord"] = { 55.0, 30.2, IRONFORGE },
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(38394, {	-- Completionism
 					["sourceQuests"] = { 38345 },	-- Numismatics
 					["provider"] = { "n", 6294 },	-- Krom Stoutarm
@@ -74,13 +67,6 @@ _.Zones =
 							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 					},
-				}),
-				q(27272, {	-- Demisette Sends Word
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 5173 },	-- Alexander Calder
-					["classes"] = { WARLOCK },
-					["coord"] = { 50.2, 6.8, IRONFORGE },
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(2039,  {	-- Find Bingles
 					["provider"] = { "n", 6569 },	-- Gnoarn
@@ -94,15 +80,6 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4984)),	-- Skull of Impending Doom
-					},
-				}),
-				q(2948,  {	-- Gnome Improvement
-					["sourceQuests"] = { 2947 },	-- Return of the Ring
-					["provider"] = { "n", 6826 },	-- Talvash del Kissel
-					["coord"] = { 36.0, 4.0, IRONFORGE },
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(9538),	-- Talvash's Gold Ring
 					},
 				}),
 				q(1682,  {	-- Grey Iron Weapons
@@ -270,15 +247,6 @@ _.Zones =
 						i(122341, {	-- Timeworn Heirloom Scabbard
 							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
-					},
-				}),
-				q(3701,  {	-- The Smoldering Ruins of Thaurissan
-					["provider"] = { "n", 8879 },	-- Royal Historian Archersonus
-					["coord"] = { 38.4, 55.3, IRONFORGE },
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(12102)),	-- Ring of the Aristocrat
 					},
 				}),
 				q(735,   {	-- The Star, the Hand and the Heart

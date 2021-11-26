@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root("GearSets", n(CLASS_TRIAL, {
-	n(WOD_HEADER, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
+	tier(WOD_TIER, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 		n(LEVEL_HUNDRED, {
 			-- Note: [As of August 16, 2018 Level 100 Boost became Level 100 Class Trial]
 			["description"] = "These were obtained by boosting a character to Level 100 for each class and specialization.",
@@ -11,7 +11,7 @@ root("GearSets", n(CLASS_TRIAL, {
 			["sym"] = {
 				{"select", "headerID", CLASS_TRIAL },
 				{"pop"},
-				{"where", "headerID", LEGION_HEADER },
+				{"where", "headerID", LEGION_TIER },
 				{"pop"},
 				{"where", "headerID", LEVEL_HUNDRED },
 				{"pop"},
@@ -20,7 +20,7 @@ root("GearSets", n(CLASS_TRIAL, {
 	})),
 }));
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		n(CLASS_TRIAL, {
 			cl(DEATHKNIGHT, {
 				-- added 6.2.2/Confirmed

@@ -214,6 +214,8 @@ local L = app.L;
 	--TODO: L.REQUIRES_PETBATTLES = "|CFF00FFDEThis Thing requires Pet Battling.|r";
 	--TODO: L.REPORT_INACCURATE_QUEST = "Wrong Quest Info! (Click to Report)";
 	--TODO: L.NESTED_QUEST_REQUIREMENTS = "Nested Quest Requirements";
+	--TODO: L.MAIN_LIST_REQUIRES_REFRESH = "[Open Main list to update progress]";
+	--TODO: L.DOES_NOT_CONTRIBUTE_TO_PROGRESS = "|cffe08207This group and its content do not contribute to the progress of this window!|r";
 
 	-- Item Filter Window
 		--TODO: L.ITEM_FILTER_TEXT = "Item Filters";
@@ -907,7 +909,7 @@ for key,value in pairs({
 			--TODO: [-5350] = "Class Trial Item Sets",				-- Class Trial
 
 		--TODO: [-7776] = "Winter Revelers",						-- Winter Revelers (for Winter Veil)
-	------ ACHIEVEMENT HEADER SECTION ------
+	------ ACHIEVEMENT HEADERS SECTION ------
 		--TODO: [-10071] = "Visions of N'Zoth",
 		--TODO: [-10072] = "N'Zoth Assault",
 		--TODO: [-10073] = "Horrific Vision of Orgrimmar",
@@ -919,8 +921,9 @@ for key,value in pairs({
 		[-10079] = "Assalto: L'avvento degli Aqir",					-- Assault: Aqir Unearthed
 		--TODO: [-10081] = "Corrupted Area",
 		--TODO: [-10082] = "Lost Area",
-		--TODO: [-10083] = "Covenant Assaults",						-- Covenant Assaults
 		-- Shadowlands Achievement Header
+			-- 9.1
+				--TODO: [-10083] = "Covenant Assaults",				-- Covenant Assaults
 			--	hopefully temp objects, these currently do not have accessible object data on wowhead
 				[-1433951] = "Specchio Rotto A-1",					-- Broken Mirror
 				[-1433952] = "Specchio Rotto A-2",					-- Broken Mirror
@@ -992,6 +995,8 @@ for key,value in pairs({
 	[21015] = "Hoofprints",	-- Hoofprints	--TODO: This was taken from classic Wowhead
 	[21042] = "Distintivo della Guardia di Theramore",	-- Theramore Guard Badge
 	[35251] = "Cassa di Karnitol",	-- Karnitol's Chest
+	[37099] = "Tavoletta Atal'ai",	-- Atal'ai Tablet
+	[91138] = "Martello di Jordan",	-- Jordan's Hammer
 	[112948] = "Forziere Chiuso dell'Intrepida",	-- Intrepid's Locked Strongbox
 	[113757] = "Scrigno di Forgiascura",	-- Shadowforge Cache
 	[123329] = "Cassa di Baelog",	-- Baelog's Chest
@@ -1011,6 +1016,7 @@ for key,value in pairs({
 	[144063] = "Monolito Equinex",	-- Equinex Monolith
 	[148502] = "|cFFFFFFFFStep 1:|r Pagina 9",	-- |cFFFFFFFFStep 1:|r Page 9
 	[148504] = "Lapide Notevole",	-- A Conspicuous Gravestone
+	[149036] = "Cassa di Marvon",	-- Marvon's Chest
 	[149502] = "Hoard of the Black Dragonflight",	-- Hoard of the Black Dragonflight	--TODO: This was taken from classic Wowhead
 	[160836] = "Reliquiario",	-- Relic Coffer
 	[161495] = "Cassaforte Segreta",	-- Secret Safe
@@ -1050,6 +1056,7 @@ for key,value in pairs({
 	[178144] = "Cassa dei Troll",	-- Troll Chest
 	[178227] = "Cesto del Totem di Murgut",	-- Murgut's Totem Basket
 	[179485] = "Trappola Rotta",	-- A Broken Trap
+	[179499] = "Cestello di Colorante Ogre",	-- Ogre Tannin Basket
 	[179501] = "Knot Thimblejack's Cache",	-- Knot Thimblejack's Cache	--TODO: This was taken from classic Wowhead
 	[179564] = "Tributo dei Gordok",	-- Gordok Tribute Chest
 	[179697] = "Cassa del Tesoro dell'Arena",	-- Arena Treasure Chest
@@ -1086,6 +1093,7 @@ for key,value in pairs({
 	[181748] = "Cristallo di Sangue",	-- Blood Crystal
 	[181756] = "Antico Libro Rovinato",	-- Battered Ancient Book
 	[181889] = "Manifesto dei Ricercati",	-- Wanted Poster
+	[182011] = "Cassa di Lingotti",	-- Crate of Ingots
 	[182032] = "Diario di Galaen",	-- Galaen's Journal
 	[182058] = "Carro dei Morti del Flagello",	-- Scourge Meat Wagon
 	[182115] = "Manifesto dei Ricercati",	-- Wanted Poster
@@ -1299,6 +1307,7 @@ for key,value in pairs({
 	[205266] = "Disco Lavorato",	-- Elaborate Disc
 	[205332] = "Manifesto dei Ricercati",	-- Wanted Poster
 	[205350] = "Pannello di Comunicazione dell'Orda",	-- Horde Communication Panel
+	[205476] = "Libro delle Anime Perdute",	-- Book of Lost Souls
 	[205540] = "Scheletro Decrepito",	-- Decrepit Skeleton
 	[205874] = "Geroglifici Coperti dalla Sabbia",	-- Sand-Covered Hieroglyphs
 	[205875] = "Bengala del Crociato",	-- Crusader's Flare

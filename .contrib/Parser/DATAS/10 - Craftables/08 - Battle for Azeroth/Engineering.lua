@@ -161,7 +161,7 @@ _.Craftables =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(BFA_HEADER, {
+	tier(BFA_TIER, {
 		prof(ENGINEERING, {
 			i(153505),	-- Monelite Boomstick
 		}),

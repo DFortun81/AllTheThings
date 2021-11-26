@@ -41,6 +41,12 @@ _.Instances = { tier(CLASSIC_TIER, {
 						q(27192, {	-- The Great Ezra Grimm
 							["provider"] = { "n", 45323 },	-- Packmaster Stonebruiser
 						}),
+						q(5262, {	-- The Truth Comes Crashing Down
+							["u"] = REMOVED_FROM_GAME,
+							["crs"] = { 10813 },	-- Balnazzar
+							["provider"] = { "i", 13250 },	-- Head of Balnazzar
+							["sourceQuest"] = 5251,	-- The Archivist
+						}),
 					}),
 					n(ZONE_DROPS, {
 						i(16249,  {  -- Formula: Enchant 2H Weapon - Major Intellect
@@ -535,7 +541,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 	}),
 })};
 _.HiddenQuestTriggers = {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		q(35563),	-- Stratholme - Main Gate - Reward Quest - Normal completion
 		q(35564),	-- Stratholme - Main Gate - Bonus Objective Reward Quest
 		q(35574),	-- Stratholme - Service Entrance Reward Quest - Normal completion

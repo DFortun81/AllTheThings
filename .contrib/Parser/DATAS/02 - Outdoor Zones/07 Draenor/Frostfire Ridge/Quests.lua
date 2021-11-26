@@ -1274,7 +1274,7 @@ _.Zones =
 	}),
 };
 _.HiddenQuestTriggers = {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		q(36904),	-- Frostfire Ridge - Ogre Waygate - actived Ogre Waygate at 59.6, 47.5
 		q(34453),	-- Frostfire Ridge - Tracking Event: Gazlowe Arrived
 		q(34715),	-- Frostfire Ridge - Tracking Flag: Shamanstone Summons - appoach the frostwolf shaman stone in Wor'gol while on "Honor Has Its Rewards" to start the dialog
@@ -1305,7 +1305,7 @@ _.HiddenQuestTriggers = {
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(WOD_HEADER, {
+	tier(WOD_TIER, {
 		n(-163, {	-- Armor
 			n(-43, {	-- Cloth
 				i(106163),	-- Frostwolf Wind-Talker Robe

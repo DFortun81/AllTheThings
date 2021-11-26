@@ -164,27 +164,6 @@ _.Zones =
 					["races"] = { TROLL, BLOODELF, NIGHTBORNE },
 					["sourceQuests"] = { 28427 },	-- A Needle in a Hellhole
 				}),
-				q(4022, {	-- A Taste of Flame
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 9459 },	-- Cyrus Therepentous
-				}),
-				q(4023, {	-- A Taste of Flame
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 9459 },	-- Cyrus Therepentous
-				}),
-				q(4024,  {	-- A Taste of Flame
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 9459 },	-- Cyrus Therepentous
-					["sourceQuests"] = {
-						4022,	-- A Taste of Flame
-						4023,	-- A Taste of Flame
-					},
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(12066)),	-- Shaleskin Cape
-						un(REMOVED_FROM_GAME, i(12083)),	-- Valconian Sash
-						un(REMOVED_FROM_GAME, i(12082)),	-- Wyrmhide Spaulders
-					},
-				}),
 				q(28279, {	-- Abuse of Power
 					["provider"] = { "n", 48110 },	-- Colonel Troteman
 					["coord"] = { 46.3, 45.9, BURNING_STEPPES },
@@ -474,16 +453,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28438 },	-- Trial by Magma
 				}),
-				q(4263,  {	-- Incendius!
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(12112)),	-- Crypt Demon Bracers
-						un(REMOVED_FROM_GAME, i(12114)),	-- Nightfall Gloves
-						un(REMOVED_FROM_GAME, i(12115)),	-- Stalwart Clutch
-						un(REMOVED_FROM_GAME, i(12113)),	-- Sunborne Cape
-					},
-				}),
 				q(28239, {	-- Into the Black Tooth Hovel
 					["provider"] = { "n", 48109 },	-- John J. Keeshan
 					["coord"] = { 46.3, 46.0, BURNING_STEPPES },
@@ -523,11 +492,6 @@ _.Zones =
 					["coord"] = { 54.6, 24.4, BURNING_STEPPES },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28442 },	-- Flame Crest
-				}),
-				q(5522, {	-- Leonid Barthalomew
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 10267 },	-- Thinkee Steamboil
-					["sourceQuest"] = 4734,	-- Egg Freezing
 				}),
 				q(4481, {	-- Libram of Constitution
 					["u"] = REMOVED_FROM_GAME,
@@ -852,7 +816,10 @@ _.Zones =
 					["provider"] = { "n", 48568 },	-- Eitrigg
 					["coord"] = { 44.5, 44.4, BURNING_STEPPES },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 28435 },	-- The Kodocaller's Horn
+					["sourceQuests"] = {
+						28434,	-- Strategic Cuts
+						28435,	-- The Kodocaller's Horn
+					},
 					["g"] = {
 						i(64520),	-- Helm of Serendipity
 						i(64519),	-- Improvised Breastplate
@@ -873,10 +840,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				q(4123, {	-- The Heart of the Mountain
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 9536 },	-- Maxwort Uberglint
-				}),
 				q(28252, {	-- The Kodocaller's Horn
 					["provider"] = { "n", 48085 },	-- Quartermaster Kaoshin
 					["coord"] = { 45.3, 51.7, BURNING_STEPPES },
@@ -888,17 +851,6 @@ _.Zones =
 					["coord"] = { 45.3, 51.7, BURNING_STEPPES },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28433 },	-- Grunt Work
-				}),
-				q(4061, {	-- The Rise of the Machines
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 9079 },	-- Hierophant Theodora Mulvadania
-				}),
-				q(4062, {	-- The Rise of the Machines
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 9079 },	-- Hierophant Theodora Mulvadania
-					["sourceQuest"] = 4061,	-- The Rise of the Machines
 				}),
 				q(28180, {	-- The Sand, the Cider, and the Orb
 					["provider"] = { "n", 47811 },	-- John J. Keeshan
