@@ -1316,7 +1316,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 				["timeline"] = { "added 9.1.5" },
 			}),
 		})),
-		n(-695, {	-- Cosmic Gladiator: Shadowlands Season 3
+		n(SEASON_COSMIC, {
 			ach(15349),		-- Challenger I: Shadowlands Season 3
 			ach(15379),		-- Challenger II: Shadowlands Season 3
 			ach(15348, {	-- Combatant I: Shadowlands Season 3

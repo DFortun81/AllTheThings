@@ -849,7 +849,7 @@ _.PVP =
 				}),
 			}),
 		})),
-		n(-695, {	-- Cosmic Gladiator: Shadowlands Season 3
+		n(SEASON_COSMIC, {
 			n(PVP_ASPIRANT, {
 				n(BACK, {
 					i(186944),	-- Cosmic Aspirant's Cape
