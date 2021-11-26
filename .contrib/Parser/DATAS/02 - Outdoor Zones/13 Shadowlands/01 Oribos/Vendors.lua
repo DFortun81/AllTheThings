@@ -129,7 +129,7 @@ _.Zones =
 							["sym"] = {
 								{"select", "tierID", SL_TIER },			-- Select Shadowlands Header
 								{"pop"},								-- Discard the Header and acquire all of the children.
-								{"where", "headerID", -694 },			-- Unchained Gladiator: Shadowlands Season 2
+								{"where", "headerID", SEASON_UNCHAINED },			-- Unchained Gladiator: Shadowlands Season 2
 								{"pop"},								-- Discard the Header and acquire all of the children.
 								{"where", "headerID", PVP_GLADIATOR },	-- Gladiator Header
 								{"pop"},								-- Discard the Header and acquire all of the children.
