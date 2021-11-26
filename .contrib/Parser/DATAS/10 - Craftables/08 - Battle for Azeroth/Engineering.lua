@@ -6,7 +6,7 @@ _.Craftables =
 {
 	tier(BFA_TIER, {
 		prof(ENGINEERING, {
-			filter(100, {	-- Mounts
+			n(MOUNTS, {
 				i(161134),	-- Mecha-Mogul Mk2
 				i(158886, {	-- Super-Charged Engine
 					i(153594),	-- Xiwyllag ATV
@@ -18,7 +18,7 @@ _.Craftables =
 			filter(55, {	-- Consumable
 				i(165738),	-- Makeshift Azerite Detector
 			}),
-			filter(102, {	-- Toys
+			n(TOYS, {
 				i(168667), -- Blingtron 7000
 				i(168807),	-- Wormhole Generator: Kul Tiras
 				i(168808),	-- Wormhole Generator: Zandalar

@@ -112,7 +112,7 @@ _.Craftables =
 					i(172243),	-- Desolate Scale Treads
 				}),
 			}),
-			filter(102, {	-- Toys
+			n(TOYS, {
 				i(186985),	-- Elusive Pet Treat
 				i(186702),	-- Pallid Bone Flute
 				i(186686),	-- Pallid Oracle Bones

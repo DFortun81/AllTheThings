@@ -262,7 +262,7 @@ _.Craftables =
 			}),
 		}),
 		prof(ENGINEERING, {
-			filter(100, {	-- Mounts
+			n(MOUNTS, {
 				i(87250),	-- Depleted-Kyparium Rocket*
 				i(87251),	-- Geosynchronous World Spinner*
 				i(95416),	-- Sky Golem*
@@ -272,7 +272,7 @@ _.Craftables =
 				i(94903),	-- Pierre*
 				i(100905),	-- Rascal-Bot*
 			}),
-			filter(102, {	-- Toys
+			n(TOYS, {
 				i(87214),	-- Blingtron 4000*
 				i(87215),	-- Wormhole Generator: Pandaria*
 			}),
@@ -385,7 +385,7 @@ _.Craftables =
 			}),
 		}),
 		prof(JEWELCRAFTING, {
-			filter(100, {	-- Mounts
+			n(MOUNTS, {
 				i(83088),	-- Jade Panther
 				i(82453),	-- Jeweled Onyx Panther
 				i(83087),	-- Ruby Panther

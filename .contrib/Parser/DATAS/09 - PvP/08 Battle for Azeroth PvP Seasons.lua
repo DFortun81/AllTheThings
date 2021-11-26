@@ -378,7 +378,7 @@ _.PVP =
 				un(REMOVED_FROM_GAME, i(164586)),	-- Warlord's Trophy Dread Duelist
 				un(REMOVED_FROM_GAME, i(164587)),	-- Warlord's Trophy Dread Elite
 			})),
-			filter(100, {	-- Mounts
+			n(MOUNTS, {
 				i(163123, {	-- Vicious War Riverbeast (A)
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -787,7 +787,7 @@ _.PVP =
 				un(REMOVED_FROM_GAME, i(164958)),	-- Warlord's Trophy Sinister Duelist
 				un(REMOVED_FROM_GAME, i(164959)),	-- Warlord's Trophy Sinister Elite
 			})),
-			filter(100, {	-- Mounts
+			n(MOUNTS, {
 				i(165019, {	-- Vicious Black Warsaber (A)
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1236,7 +1236,7 @@ _.PVP =
 				un(REMOVED_FROM_GAME, i(171098)),	-- Warlord's Trophy Notorious Duelist
 				un(REMOVED_FROM_GAME, i(171099)),	-- Warlord's Trophy Notorious Elite
 			})),
-			filter(100, {	-- Mounts
+			n(MOUNTS, {
 				i(163122, {	-- Vicious War Basilisk (A)
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1640,7 +1640,7 @@ _.PVP =
 				un(REMOVED_FROM_GAME, i(172898)),	-- Warlord's Trophy Corrupted Duelist
 				un(REMOVED_FROM_GAME, i(172899)),	-- Warlord's Trophy Corrupted Elite
 			})),
-			filter(100, {	-- Mounts
+			n(MOUNTS, {
 				i(173714, {	-- Vicious White Warsaber (A)
 					["races"] = ALLIANCE_ONLY,
 				}),

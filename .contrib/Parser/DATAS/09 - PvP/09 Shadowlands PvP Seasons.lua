@@ -427,7 +427,7 @@ _.PVP =
 			i(164583),	-- Battleborn Sigil Dread Elite
 			i(164587),	-- Warlord's Trophy Dread Elite
 			--]]
-			filter(100,  {	-- Mounts
+			n(MOUNTS, {
 				i(184014, {	-- Vicious War Spider (A)
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -840,7 +840,7 @@ _.PVP =
 					i(185315),	-- Unchained Gladiator's Xiphos
 				}),
 			})),
-			filter(100, {	-- Mounts
+			n(MOUNTS, {
 				i(186178, {	-- Vicious War Gorm (A)
 					["races"] = ALLIANCE_ONLY,
 				}),

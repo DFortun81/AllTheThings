@@ -29,7 +29,7 @@ _.Craftables =
 			filter(31, {	-- Guns
 				i(172923)	-- Precision Lifeforce Inverter
 			}),
-			filter(102, {	-- Toys
+			n(TOYS, {
 				i(172924)	-- Wormhole Generator: Shadowlands
 			}),
 		}),

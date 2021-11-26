@@ -128,7 +128,7 @@ _.Craftables =
 			}),
 		}),
 		prof(BLACKSMITHING, {
-			filter(100, {	-- Mounts
+			n(MOUNTS, {
 				i(137686),	-- Steelbound Harness
 			}),
 			filter(54, {	-- Relics
@@ -178,7 +178,7 @@ _.Craftables =
 				i(128535),	-- Enchanted Pen
 				i(128534),	-- Enchanted Torch
 			}),
-			filter(102, {	-- Toy
+			n(TOYS, {
 				i(128536),	-- Leylight Brazier
 			}),
 		}),
@@ -186,7 +186,7 @@ _.Craftables =
 			filter(BATTLE_PETS, {
 				i(132519),	-- Trigger*
 			}),
-			filter(102, {	-- Toys
+			n(TOYS, {
 				i(132518),	-- Blingtron's Circuit Design Tutorial*
 				i(151652),	-- Wormhole Generator: Argus*
 			}),
@@ -275,7 +275,7 @@ _.Craftables =
 			sp(227043, {	-- Tome of the Tranquil Mind
 				i(141446),	-- Tome of the Tranquil Mind
 			}),
-			filter(102, {	-- Toy
+			n(TOYS, {
 				i(129211),	-- Steamy Romance Novel Kit
 			}),
 			filter(53, {	-- Trinkets
@@ -306,7 +306,7 @@ _.Craftables =
 			}),
 		}),
 		prof(JEWELCRAFTING, {
-			filter(102, {	-- Toy
+			n(TOYS, {
 				i(130254),	-- Chatterstone
 				i(130251),	-- JewelCraft
 			}),

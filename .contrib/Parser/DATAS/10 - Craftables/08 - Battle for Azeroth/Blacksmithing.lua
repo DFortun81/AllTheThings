@@ -6,7 +6,7 @@ _.Craftables =
 {
 	tier(BFA_TIER, {
 		prof(BLACKSMITHING, {
-			filter(100, {	-- Mounts
+			n(MOUNTS, {
 				i(158887, {	-- Monelite Reinforced Chassis
 					i(153594),	-- Xiwyllag ATV
 				}),
