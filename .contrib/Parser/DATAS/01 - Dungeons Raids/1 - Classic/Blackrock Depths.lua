@@ -90,7 +90,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Encased Fiery Essence
 							["provider"] = { "i", 11230 },	-- Encased Fiery Essence
-							["cost"] = { { "i", 11231 } },	-- Altered Black Dragonflight Molt
+							["cost"] = { { "i", 11231, 1 } },	-- Altered Black Dragonflight Molt
 							["cr"] = 9016,	-- Bael'Gar
 						}),
 						i(12066, {	-- Shaleskin Cape

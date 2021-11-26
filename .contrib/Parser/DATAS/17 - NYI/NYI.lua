@@ -1654,7 +1654,7 @@ _.NeverImplemented =
 		i(55219),	-- Vaporous Transform
 		i(142360),	-- Blazing Ember Signet
 	}),
-	n(-160, {	-- Mounts
+	n(MOUNTS, {
 		a(model(9475, i(13325))),		-- Fluorescent Green Mechanostrider (Never added in Game)
 		h(model(11641, i(14062, {		-- Kodo Mount						(Never added in Game)
 			{ ["mountID"] = 18363, ["u"] = NEVER_IMPLEMENTED }
@@ -1723,7 +1723,7 @@ _.NeverImplemented =
 		i(43964),	-- Reins of the Black Polar Bear
 		i(46101),	-- Blue Skeletal Warhorse
 	}),
-	n(-162, {	-- Pets
+	n(PETS, {
 		model(65527, i(129108, {	-- Son of Goredome						(Never added in Game)
 			p(1751),
 		})),
@@ -2975,7 +2975,7 @@ _.NeverImplemented =
 		}),
 		i(5657),	-- Recipe: Instant Toxin
 	}),
-	n(-161, {	-- Toys
+	n(TOYS, {
 		i(140779),	-- Falanaar Echo
 		i(136848),	-- Worn Doll Test
 		i(143545),	-- Fel Focusing Crystal

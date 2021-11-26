@@ -2646,20 +2646,6 @@ subroutines = {
 			{"is", "s"},	-- If it has a sourceID, keep it, otherwise throw it away.
 		};
 	end,
-	-- Island Expeditions Sets
-	["islandexpeditions_sets"] = function(headerID1, headerID2)
-		return {
-			{"select", "headerID", -3338 },	-- Select the Island Expeditions header
-			{"pop"},	-- Discard the Island Expeditions header and acquire the children.
-			{"where", "headerID", -18 },	-- Select the Rewards header
-			{"pop"},	-- Discard the Rewards header and acquire the children.
-			{"where", "headerID", -3339 },	-- Select the Item Sets header
-			{"pop"},	-- Discard the Item Sets header and acquire the children.
-			{"where", "headerID", headerID1 },	-- Select the Armor Type header
-			{"pop"},	-- Discard the Set header and acquire the children.
-			{"where", "headerID", headerID2 },	-- Select the Set header
-		};
-	end,
 	["legion_relinquished_base"] = function()
 		return {
 			-- Legion Legendaries

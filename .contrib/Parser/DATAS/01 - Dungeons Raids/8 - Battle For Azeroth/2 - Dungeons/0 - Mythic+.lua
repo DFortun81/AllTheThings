@@ -4,7 +4,7 @@
 
 _.Instances = { tier(BFA_TIER, {
 	n(-857, {	-- Mythic+
-		n(-852, {	-- Azerite Essences
+		n(AZERITE_ESSENCES, {
 			i(169491),	-- Focused Life Anima
 			i(168399, {	-- Fetish of the Dark Caverns (Rank 1)
 				["description"] = "Requires completing a +4 Mythic and looting the chest at the end of the dungeon.\n",

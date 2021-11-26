@@ -195,7 +195,7 @@ profession(SKINNING, {
 	filter(BATTLE_PETS, {
 		i(153057),	-- Fossorial Bile Larva
 	}),
-	n(-161, {	-- Toys
+	n(TOYS, {
 		i(130102),	--  Mother's Skinning Knife
 	}),
 	q(40134, {	-- Highmountain Hides

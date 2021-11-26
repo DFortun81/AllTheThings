@@ -787,7 +787,7 @@ _.ExpansionFeatures =
 					}),
 				}),
 				n(-10076, {	-- Assault: The Black Empire
-					n(-852, {	-- Azerite Essences
+					n(AZERITE_ESSENCES, {
 						i(168574, {	-- Petrified Living Bark (Rank 2)
 							["classes"] = TANKS,
 							["cost"] = { { "i", 174288, 3 } },	-- 3x Breath of Everlasting Spirit

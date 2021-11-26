@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KULTIRAS, {
 		m(BORALUS, {
-			n(-161, {	-- Toys
+			n(TOYS, {
 				i(122293, {	-- Trans-Dimensional Bird Whistle
 					["collectible"] = false,
 					["g"] = {

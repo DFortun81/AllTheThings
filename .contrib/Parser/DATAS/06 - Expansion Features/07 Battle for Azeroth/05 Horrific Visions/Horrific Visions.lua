@@ -63,7 +63,7 @@ _.ExpansionFeatures =
 					ach(14060),	-- Unwavering Resolve
 					ach(14061),	-- We have the Technology
 				}),
-				n(-852, {	-- Azerite Essences
+				n(AZERITE_ESSENCES, {
 					i(173310, {	-- Manual of Unbalanced Tactics (Rank 3)
 						["classes"] = TANKS,
 						["cost"] = { { "i", 174287, 45 } },	-- 45x Spark of Unwavering Strength

@@ -118,7 +118,7 @@ _.Craftables =
 				i(111402),	-- Mechanical Axebeak*
 				i(118741),	-- Mechanical Scorpid*
 			}),
-			filter(102, {	-- Toys
+			n(TOYS, {
 				i(111821),	-- Blingtron 5000*
 				i(109167),	-- Findle's Loot-A-Rang*
 				i(108745),	-- Personal Hologram*
@@ -246,7 +246,7 @@ _.Craftables =
 				WOD_CRAFTED_ITEM(116187, 128014),	-- Wayfaring Shoulderguards + Burnished Essence
 				WOD_CRAFTED_ITEM(116191, 128014),	-- Wayfaring Tunic + Burnished Essence
 			}),
-			f(100, {	-- Mounts
+			n(MOUNTS, {
 				i(108883),	-- Dustmane Direwolf
 			}),
 		}),
@@ -272,7 +272,7 @@ _.Craftables =
 				WOD_CRAFTED_ITEM(114813, 128012),	-- Hexweave Robe + Hexweave Essence
 				WOD_CRAFTED_ITEM(114815, 128012),	-- Hexweave Slippers + Hexweave Essence
 			}),
-			n(-160, {	-- Mounts
+			n(MOUNTS, {
 				i(115363),	-- Creeping Carpet
 			}),
 			filter(BATTLE_PETS, {

@@ -363,7 +363,7 @@ profession(FISHING, {
 			},
 		}),
 	}),
-	filter(100,   {	-- Mounts
+	n(MOUNTS, {
 		i(142398, {	-- Darkwater Skate
 			["cost"] = { { "i", 124669, 500 }, },	-- 500x Darkmoon Daggermaw
 		}),
@@ -378,7 +378,7 @@ profession(FISHING, {
 			["description"] = "Caught anywhere from Northrend to current zones.",
 		}),
 	}),
-	n(-162,   {	-- Pets
+	n(PETS, {
 		p(174),		-- Chuck
 		p(193),		-- Giant Sewer Rat
 		p(2837),	-- Gloop

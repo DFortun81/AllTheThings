@@ -25,7 +25,7 @@ _.Instances = { tier(BFA_TIER, {
 			--	,	-- Locus of Infinite Truth
 		},
 		["g"] = {
-			n(-852, {	-- Azerite Essences
+			n(AZERITE_ESSENCES, {
 				i(173883, {	-- Replicating Void Droplets (Rank 1)
 					["cost"] = { { "i", 174279, 15 } },	-- 15x Encrypted Ny'alothan Text
 					["g"] = {

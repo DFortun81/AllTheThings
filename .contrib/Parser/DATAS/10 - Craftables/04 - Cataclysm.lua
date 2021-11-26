@@ -6,7 +6,7 @@ _.Craftables =
 {
 	tier(CATA_TIER, {
 		prof(ALCHEMY, {
-			n(-160, {	-- Mounts
+			n(MOUNTS, {
 				i(65891),	-- Vial of the Sands
 			}),
 			i(58488, {	-- Potion of Treasure Finding
@@ -233,7 +233,7 @@ _.Craftables =
 				i(60216),	-- De-Weaponized Mechanical Companion*
 				i(59597),	-- Personal World Destroyer*
 			}),
-			filter(102, {	-- Toys
+			n(TOYS, {
 				i(40727),	-- Gnomish Gravity Well*
 				i(60854),	-- Loot-A-Rang*
 			}),

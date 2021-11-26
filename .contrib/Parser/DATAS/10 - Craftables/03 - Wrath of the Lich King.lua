@@ -200,11 +200,11 @@ _.Craftables =
 			}),
 		}),
 		prof(ENGINEERING, {
-			filter(100, {	-- Mounts
+			n(MOUNTS, {
 				i(41508),	-- Mechano-Hog*
 				i(44413),	-- Mekgineer's Chopper*
 			}),
-			filter(102, {	-- Toys
+			n(TOYS, {
 				i(40895),	-- Gnomish X-Ray Specs*
 				i(40768),	-- MOLL-E*
 				i(48933),	-- Wormhole Generator: Northrend*
@@ -584,7 +584,7 @@ _.Craftables =
 				i(49891),	-- Leggings of Woven Death
 				i(49892),	-- Lightweave Leggings
 			}),
-			n(-160, {	-- Mounts
+			n(MOUNTS, {
 				i(44554),	-- Flying Carpet
 				i(54797),	-- Frosty Flying Carpet
 				i(44558),	-- Magnificent Flying Carpet
