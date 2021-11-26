@@ -822,12 +822,6 @@ _.Zones =
 						currency(515),	-- Darkmoon Prize Ticket
 					},
 				}),
-				q(4002,  {	-- The Eastern Kingdoms
-					["sourceQuests"] = { 4001 },	-- What Is Going On?
-					["provider"] = { "n", 4949 },	-- Thrall
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(30094, {	-- The End Time
 					["provider"] = { "n", 52382 },	-- Ziradormi
 					["coord"] = { 48.8, 70.4, ORGRIMMAR },
@@ -887,12 +881,6 @@ _.Zones =
 					["g"] = {
 						i(65626),	-- Hood of the Arcane Path
 					},
-				}),
-				q(4003,  {	-- The Royal Rescue
-					["sourceQuests"] = { 4002 },	-- The Eastern Kingdoms
-					["provider"] = { "n", 4949 },	-- Thrall
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1858,  {	-- The Shattered Hand
 					["provider"] = { "n", 6446 },	-- Therzok

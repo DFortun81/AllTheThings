@@ -452,11 +452,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(4443)),	-- Grim Pauldrons
 					},
 				}),
-				q(4133,  {	-- Vivian Lagrave
-					["provider"] = { "n", 5204 },	-- Apothecary Zinge
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(4769,  {	-- Vivian Lagrave and the Darkstone Tablet
 					["provider"] = { "n", 5204 },	-- Apothecary Zinge
 					["races"] = HORDE_ONLY,

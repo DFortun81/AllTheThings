@@ -199,14 +199,6 @@ _.Zones =
 					["coord"] = { 54.7, 50.5, DUN_MOROGH },
 					["races"] = { DWARF, GNOME },
 				}),
-				q(4126,  {	-- Hurley Blackbreath
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(12000)),	-- Limb Cleaver
-						un(REMOVED_FROM_GAME, i(11964)),	-- Swiftstrike Cudgel
-					},
-				}),
 				q(25932, {	-- It's Raid Night Every Night
 					["provider"] = { "n", 41578 },	-- Sergeant Flinthammer
 					["coord"] = { 70.4, 48.9, DUN_MOROGH },

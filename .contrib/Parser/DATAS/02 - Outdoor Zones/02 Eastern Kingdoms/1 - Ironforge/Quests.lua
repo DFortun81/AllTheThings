@@ -249,15 +249,6 @@ _.Zones =
 						}),
 					},
 				}),
-				q(3701,  {	-- The Smoldering Ruins of Thaurissan
-					["provider"] = { "n", 8879 },	-- Royal Historian Archersonus
-					["coord"] = { 38.4, 55.3, IRONFORGE },
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(12102)),	-- Ring of the Aristocrat
-					},
-				}),
 				q(735,   {	-- The Star, the Hand and the Heart
 					["sourceQuests"] = { 727 },	-- To Ironforge for Yagyin's Digest
 					["provider"] = { "n", 2934 },	-- Gerrig Bonegrip

@@ -33,13 +33,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 							un(REMOVED_FROM_GAME, i(15861)),	-- Swiftfoot Treads
 						},
 					}),
-					q(6502, {	-- Drakefire Amulet
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = ALLIANCE_ONLY,
-						["g"] = {
-							un(REMOVED_FROM_GAME, i(16309)),	-- Drakefire Amulet
-						},
-					}),
 					q(4974, {	-- For The Horde!
 						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
