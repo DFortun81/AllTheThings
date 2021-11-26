@@ -23,49 +23,69 @@ _.Instances = { tier(BFA_TIER, {
 				spell(281237, {	-- Reorigination Array
 					["description"] = "As mentioned above, Reorigination Array can stack up to 10 times, and the tooltip reveals how this system works. Every week, there is a hidden mini-quest to defeat 3 bosses in Uldir, this objective can be completed in any difficulty. You do not need to have any Azerite Armor from Uldir to progress in these quests. Completing this quest will reward you with one stack of Reorigination Array while in Uldir permanently.\n\nThe track of the complete upgrade system is achieved by a dozen different flag quests, listed below. Note, however, that these quests don't have database entries as they only serve as flags, but can be actually queried in-game for their completion. The first part of the system controls how many bosses have been killed in Uldir for that week:",
 					["g"] = {
-						n(-229, {	-- Weekly
-							n(-593, {	--  Kill Credit 1
-								["questID"] = 53568,	--  Kill Credit 1
-								["isWeekly"] = true,
-							}),
-							n(-594, {	--  Kill Credit 2
-								["questID"] = 53569,	--  Kill Credit 2
-								["isWeekly"] = true,
-							}),
-							n(-595, {	--  Kill Credit 3
-								["questID"] = 53570,	--  Kill Credit 3
-								["isWeekly"] = true,
-							}),
+						q(53568, {	-- Kill Credit 1
+							["name"] = "Kill Credit 1",
+							["icon"] = "Interface\\Icons\\70_inscription_deck_Hellfire",
+							["isWeekly"] = true,
 						}),
-						n(-583, {	-- Power Increased to Level 1
-							["questID"] = 53571,	-- Stack #1
+						q(53569, {	-- Kill Credit 2
+							["name"] = "Kill Credit 2",
+							["icon"] = "Interface\\Icons\\70_inscription_deck_Hellfire_2",
+							["isWeekly"] = true,
 						}),
-						n(-584, {	-- Power Increased to Level 2
-							["questID"] = 53572,	-- Stack #2
+						q(53570, {	-- Kill Credit 3
+							["name"] = "Kill Credit 3",
+							["icon"] = "Interface\\Icons\\70_inscription_deck_Hellfire_3",
+							["isWeekly"] = true,
 						}),
-						n(-585, {	-- Power Increased to Level 3
-							["questID"] = 53573,	-- Stack #3
+						q(53571, {	-- Power Increased to Level 1
+							["name"] = "Power Increased to Level 1",
+							["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",
 						}),
-						n(-586, {	-- Power Increased to Level 4
-							["questID"] = 53574,	-- Stack #4
+						q(53572, {	-- Power Increased to Level 2
+							["sourceQuests"] = { 53571 },	-- Power Increased to Level 1
+							["name"] = "Power Increased to Level 2",
+							["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",
 						}),
-						n(-587, {	-- Power Increased to Level 5
-							["questID"] = 53575,	-- Stack #5
+						q(53573, {	-- Power Increased to Level 3
+							["sourceQuests"] = { 53572 },	-- Power Increased to Level 2
+							["name"] = "Power Increased to Level 3",
+							["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",
 						}),
-						n(-588, {	-- Power Increased to Level 6
-							["questID"] = 53576,	-- Stack #6
+						q(53574, {	-- Power Increased to Level 4
+							["sourceQuests"] = { 53573 },	-- Power Increased to Level 3
+							["name"] = "Power Increased to Level 4",
+							["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",
 						}),
-						n(-589, {	-- Power Increased to Level 7
-							["questID"] = 53577,	-- Stack #7
+						q(53575, {	-- Power Increased to Level 5
+							["sourceQuests"] = { 53574 },	-- Power Increased to Level 4
+							["name"] = "Power Increased to Level 5",
+							["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",
 						}),
-						n(-590, {	-- Power Increased to Level 8
-							["questID"] = 53578,	-- Stack #8
+						q(53576, {	-- Power Increased to Level 6
+							["sourceQuests"] = { 53575 },	-- Power Increased to Level 5
+							["name"] = "Power Increased to Level 6",
+							["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",
 						}),
-						n(-591, {	-- Power Increased to Level 9
-							["questID"] = 53579,	-- Stack #9
+						q(53577, {	-- Power Increased to Level 7
+							["sourceQuests"] = { 53576 },	-- Power Increased to Level 6
+							["name"] = "Power Increased to Level 7",
+							["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",
 						}),
-						n(-592, {	-- Power Increased to Level 10
-							["questID"] = 53580,	-- Stack #10	gonna assume this is actually 53580, completed on main
+						q(53578, {	-- Power Increased to Level 8
+							["sourceQuests"] = { 53577 },	-- Power Increased to Level 7
+							["name"] = "Power Increased to Level 8",
+							["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",
+						}),
+						q(53579, {	-- Power Increased to Level 9
+							["sourceQuests"] = { 53578 },	-- Power Increased to Level 8
+							["name"] = "Power Increased to Level 9",
+							["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",
+						}),
+						q(53580, {	-- Power Increased to Level 10
+							["sourceQuests"] = { 53579 },	-- Power Increased to Level 9
+							["name"] = "Power Increased to Level 10",
+							["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",
 						}),
 					},
 				}),

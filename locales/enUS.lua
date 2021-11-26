@@ -880,7 +880,7 @@ app.L = {
 		[-17] = app.asset("Interface_Quest_header"),										-- Quests
 		[-18] = app.asset("Interface_Rewards"),		 										-- Rewards
 		[-19] = "Interface\\Icons\\INV_Misc_Head_Dragon_Green",								-- Dragons of Nightmare
-		[-20] = "Interface\\Icons\\INV_Misc_Coin_02",										-- Common Vendor Items
+		--[-20] = "Silithid Royalty",															-- Silithid Royalty
 		[-21] = "Interface\\Icons\\achievement_pvp_h_12",									-- Captains
 		[-22] = app.asset("Category_Secrets"),												-- Secrets
 		[-23] = "Interface\\Icons\\item_maldraxxus_paragonchest_01",						-- WoD Common Dungeon Drop
@@ -1012,8 +1012,6 @@ app.L = {
 		[-227] = "Interface\\ICONS\\spell_holy_divinepurpose",								-- Victory
 	-- Flight Path
 		[-228] = app.asset("Category_FlightPaths"),											-- Flight Paths
-	-- Misc Weekly (Used in Many Places)
-		[-229] = "Interface\\Icons\\Achievement_Quests_Completed_Daily_04",					-- Weekly
 	-- Warfronts
 		[-233] = "Interface\\Icons\\achievement_zone_arathihighlands_01",					-- Warfront: The Battle for Stromgarde
 	-- Recipes (Only used in BMAH atm)
@@ -1167,22 +1165,6 @@ app.L = {
 		[-578] = app.asset("Expansion_CLASSIC"),											-- World of Warcraft 15th Anniversary
 		[-579] = "Interface\\Icons\\achievement_dungeon_outland_dungeonmaster",				-- Dark Portal Pass
 		[-580] = "Interface\\Icons\\inv_misc_mdi_banner01",									-- The Great Push: Season 2
-	-- Raid Buff Stack Size in Uldir
-		[-583] = "Interface\\Icons\\inv_trinket_80_titan02c",								-- Power Increased to Level 1
-		[-584] = "Interface\\Icons\\inv_trinket_80_titan02c",								-- Power Increased to Level 2
-		[-585] = "Interface\\Icons\\inv_trinket_80_titan02c",								-- Power Increased to Level 3
-		[-586] = "Interface\\Icons\\inv_trinket_80_titan02c",								-- Power Increased to Level 4
-		[-587] = "Interface\\Icons\\inv_trinket_80_titan02c",								-- Power Increased to Level 5
-		[-588] = "Interface\\Icons\\inv_trinket_80_titan02c",								-- Power Increased to Level 6
-		[-589] = "Interface\\Icons\\inv_trinket_80_titan02c",								-- Power Increased to Level 7
-		[-590] = "Interface\\Icons\\inv_trinket_80_titan02c",								-- Power Increased to Level 8
-		[-591] = "Interface\\Icons\\inv_trinket_80_titan02c",								-- Power Increased to Level 9
-		[-592] = "Interface\\Icons\\inv_trinket_80_titan02c",								-- Power Increased to Level 10
-		[-593] = "Interface\\Icons\\70_inscription_deck_Hellfire",							-- Kill Credit 1
-		[-594] = "Interface\\Icons\\70_inscription_deck_Hellfire_2",						-- Kill Credit 2
-		[-595] = "Interface\\Icons\\70_inscription_deck_Hellfire_3",						-- Kill Credit 3
-	-- Need these spells here because if we use them in the file it won't allow the quest to mark as complete due to it not being designed that way.
-	-- This is the workaround.
 	-- Quest Items - Used in NYI
 		--[-600] = Doesnt need icon															-- Quest Items
 	-- PvP Headers
@@ -1486,7 +1468,7 @@ app.L = {
 		[-17] = TRACKER_HEADER_QUESTS,											-- Quests
 		[-18] = QUEST_REWARDS, 													-- Rewards
 		[-19] = "Dragons of Nightmare",											-- Dragons of Nightmare
-		[-20] = "Common Vendor Items",											-- Common Vendor Items
+		[-20] = "Silithid Royalty",												-- Silithid Royalty
 		[-21] = "Captains",
 		[-22] = "Secrets",														-- Secrets
 		[-23] = "Common Dungeon Drop",											-- WoD Common Dungeon Drop
@@ -1612,8 +1594,6 @@ app.L = {
 		[-227] = GetSpellInfo(109382),											-- Victory
 	-- Flight Path
 		[-228] = GetSpellInfo(218950),											-- Flight Path
-	-- Misc Weekly (Used in Many Places)
-		[-229] = CALENDAR_REPEAT_WEEKLY,										-- Weekly
 	-- Warfronts
 		[-233] = GetSpellInfo(279443),											-- Warfront: The Battle for Stromgarde
 	-- Recipes (Only used in BMAH atm)
@@ -1770,22 +1750,7 @@ app.L = {
 		[-578] = select(2, GetAchievementInfo(13917)),							-- WoW's 15th Anniversary
 		[-579] = "Dark Portal Pass",											-- Dark Portal Pass
 		[-580] = "The Great Push: Season 2",									-- The Great Push: Season 2
-	-- Raid Buff Stack Size in Uldir
-		[-583] = string.format(AZERITE_ITEM_LEVELED_UP_TOAST, 1),				-- Power Increased to Level 1
-		[-584] = string.format(AZERITE_ITEM_LEVELED_UP_TOAST, 2),				-- Power Increased to Level 2
-		[-585] = string.format(AZERITE_ITEM_LEVELED_UP_TOAST, 3),				-- Power Increased to Level 3
-		[-586] = string.format(AZERITE_ITEM_LEVELED_UP_TOAST, 4),				-- Power Increased to Level 4
-		[-587] = string.format(AZERITE_ITEM_LEVELED_UP_TOAST, 5),				-- Power Increased to Level 5
-		[-588] = string.format(AZERITE_ITEM_LEVELED_UP_TOAST, 6),				-- Power Increased to Level 6
-		[-589] = string.format(AZERITE_ITEM_LEVELED_UP_TOAST, 7),				-- Power Increased to Level 7
-		[-590] = string.format(AZERITE_ITEM_LEVELED_UP_TOAST, 8),				-- Power Increased to Level 8
-		[-591] = string.format(AZERITE_ITEM_LEVELED_UP_TOAST, 9),				-- Power Increased to Level 9
-		[-592] = string.format(AZERITE_ITEM_LEVELED_UP_TOAST, 10),				-- Power Increased to Level 10
-		[-593] = GetSpellInfo(228357).." 1",									-- Kill Credit 1
-		[-594] = GetSpellInfo(228357).." 2",									-- Kill Credit 2
-		[-595] = GetSpellInfo(228357).." 3",									-- Kill Credit 3
-	-- Need these spells here because if we use them in the file it won't allow the quest to mark as complete due to it not being designed that way.
-	-- This is the workaround.
+	--
 		[-600] = AUCTION_CATEGORY_QUEST_ITEMS,									-- Quest Items
 	-- PvP Header
 		-- Special Season Tags
