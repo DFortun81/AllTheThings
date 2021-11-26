@@ -1403,8 +1403,6 @@ app.L = {
 		[-9947] = "Interface\\Icons\\INV_Shield_06",								-- Protection Warrior Spec
 		[-9948] = "Interface\\Icons\\Spell_Deathknight_BloodPresence",				-- Blood Death Knight Spec
 		[-9949] = "Interface\\Icons\\Spell_Deathknight_FrostPresence",				-- Frost Death Knight Spec
-	-- Unsued [-9951] = "Interface\\Icons\\ClassIcon_Priest",						-- Discipline / Holy Spec
-	-- Unsued [-9952] = "Interface\\Icons\\ClassIcon_Druid",						-- Guardian / Feral Spec
 	------ ACHIEVEMENT HEADERS SECTION ------
 	-- Is Used Somewhere
 		[-9965] = "Interface\\Icons\\achievement_level_110",						-- Class Hall
@@ -1562,7 +1560,7 @@ app.L = {
 		[-159] = "Event Roll",													-- Daily Dreamway Event Roll
 	-- Collections
 		[-160] = TUTORIAL_TITLE53,												-- Mounts
-		[-161] = "Toys",														-- Toys
+		[-161] = TOY_BOX,														-- Toy Box
 		[-162] = PETS,															-- Pets
 	-- Armor
 		[-163] = RESISTANCE0_NAME,												-- Armor
@@ -2024,8 +2022,6 @@ app.L = {
 		[-9947] = GetSpellInfo(137048),											-- Protection Warrior Spec
 		[-9948] = GetSpellInfo(137008),											-- Blood Death Knight Spec
 		[-9949] = GetSpellInfo(137006),											-- Frost Death Knight Spec
-	-- Unsued	[-9951] = GetSpellInfo(148462).." & "..GetSpellInfo(137031), 	-- Discipline / Holy Priest Spec
-	-- Unsued	[-9952] = GetSpellInfo(234890).." & "..GetSpellInfo(137011), 	-- Guardian / Feral Druid Spec
 	------ ACHIEVEMENT HEADERS SECTION ------
 		[-9965] = select(1,GetCategoryInfo(15304)),								-- Class Hall
 		[-9966] = select(1,GetCategoryInfo(15303)),								-- Draenor Garrison
