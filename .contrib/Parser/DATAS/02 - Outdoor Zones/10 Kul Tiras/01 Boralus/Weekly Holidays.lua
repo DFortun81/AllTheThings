@@ -170,7 +170,7 @@ _.Zones =
 					["g"] = {
 						i(154992, {	-- Brawler's Footlocker
 							["sym"] = {
-								{"select", "headerID", -692},	-- BFA Season 4
+								{"select", "headerID", SEASON_CORRUPTED},	-- BFA Season 4
 								{"pop"},	-- Discard the header and acquire the children.
 								{"where", "headerID", PVP_GLADIATOR},	-- Gladiator Gear
 								{"pop"},	-- Discard the header and acquire the children.

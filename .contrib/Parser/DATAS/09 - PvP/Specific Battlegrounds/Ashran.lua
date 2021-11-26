@@ -474,7 +474,7 @@ _.PVP =
 							i(170073),	-- Dented Ashmaul Strongbox
 							i(128216, {	-- Dented Ashmaul Strongbox
 								["races"] = ALLIANCE_ONLY,
-								["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, -681, FACTION_HEADER_ALLIANCE, PVP_COMBATANT }, },
+								["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_ALLIANCE, PVP_COMBATANT }, },
 								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
@@ -490,7 +490,7 @@ _.PVP =
 							}),
 							i(128215, {	-- Dented Ashmaul Strongbox
 								["races"] = HORDE_ONLY,
-								["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, -681, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
+								["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
 								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
@@ -506,7 +506,7 @@ _.PVP =
 							}),
 							i(128215, {	-- Dented Ashmaul Strongbox
 								["races"] = HORDE_ONLY,
-								["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, -681, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
+								["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
 								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
@@ -523,7 +523,7 @@ _.PVP =
 							i(170073),	-- Dented Ashmaul Strongbox
 							i(128216, {	-- Dented Ashmaul Strongbox
 								["races"] = ALLIANCE_ONLY,
-								["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, -681, FACTION_HEADER_ALLIANCE, PVP_COMBATANT }, },
+								["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_ALLIANCE, PVP_COMBATANT }, },
 								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
@@ -540,7 +540,7 @@ _.PVP =
 							i(170073),	-- Dented Ashmaul Strongbox
 							i(128216, {	-- Dented Ashmaul Strongbox
 								["races"] = ALLIANCE_ONLY,
-								["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, -681, FACTION_HEADER_ALLIANCE, PVP_COMBATANT }, },
+								["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_ALLIANCE, PVP_COMBATANT }, },
 								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
@@ -556,7 +556,7 @@ _.PVP =
 							}),
 							i(128215, {	-- Dented Ashmaul Strongbox
 								["races"] = HORDE_ONLY,
-								["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, -681, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
+								["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
 								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
@@ -573,7 +573,7 @@ _.PVP =
 							i(170073),	-- Dented Ashmaul Strongbox
 							i(128216, {	-- Dented Ashmaul Strongbox
 								["races"] = ALLIANCE_ONLY,
-								["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, -681, FACTION_HEADER_ALLIANCE, PVP_COMBATANT }, },
+								["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_ALLIANCE, PVP_COMBATANT }, },
 								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
@@ -594,12 +594,12 @@ _.PVP =
 							i(170073),	-- Dented Ashmaul Strongbox
 							i(128216, {	-- Dented Ashmaul Strongbox
 								["races"] = ALLIANCE_ONLY,
-								["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, -681, FACTION_HEADER_ALLIANCE, PVP_COMBATANT }, },
+								["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_ALLIANCE, PVP_COMBATANT }, },
 								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(128215, {	-- Dented Ashmaul Strongbox
 								["races"] = HORDE_ONLY,
-								["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, -681, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
+								["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
 								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
@@ -615,7 +615,7 @@ _.PVP =
 							}),
 							i(128215, {	-- Dented Ashmaul Strongbox
 								["races"] = HORDE_ONLY,
-								["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, -681, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
+								["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
 								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
@@ -632,7 +632,7 @@ _.PVP =
 							i(170073),	-- Dented Ashmaul Strongbox
 							i(128216, {	-- Dented Ashmaul Strongbox
 								["races"] = ALLIANCE_ONLY,
-								["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, -681, FACTION_HEADER_ALLIANCE, PVP_COMBATANT }, },
+								["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_ALLIANCE, PVP_COMBATANT }, },
 								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
@@ -649,7 +649,7 @@ _.PVP =
 							i(170073),	-- Dented Ashmaul Strongbox
 							i(128216, {	-- Dented Ashmaul Strongbox
 								["races"] = ALLIANCE_ONLY,
-								["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, -681, FACTION_HEADER_ALLIANCE, PVP_COMBATANT }, },
+								["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_ALLIANCE, PVP_COMBATANT }, },
 								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
@@ -665,7 +665,7 @@ _.PVP =
 							}),
 							i(128215, {	-- Dented Ashmaul Strongbox
 								["races"] = HORDE_ONLY,
-								["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, -681, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
+								["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
 								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
@@ -681,7 +681,7 @@ _.PVP =
 							}),
 							i(128215, {	-- Dented Ashmaul Strongbox
 								["races"] = HORDE_ONLY,
-								["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, -681, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
+								["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
 								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
@@ -864,7 +864,7 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(125765)),	-- Wild Gladiator's Baton of Light
 							un(REMOVED_FROM_GAME, i(126763)),	-- Warmongering Gladiator's Touch of Defeat
 							un(REMOVED_FROM_GAME, i(126879)),	-- Warmongering Gladiator's Baton of Light
-							n(-679, {	-- Primal Gladiator: Warlords Season 1
+							n(SEASON_PRIMAL, {
 								cl(DEATHKNIGHT, {
 									un(REMOVED_FROM_GAME, i(115837)),	-- Primal Gladiator's Dreadplate Chestpiece
 									un(REMOVED_FROM_GAME, i(115838)),	-- Primal Gladiator's Dreadplate Gauntlets
@@ -1014,7 +1014,7 @@ _.PVP =
 									un(REMOVED_FROM_GAME, i(115908)),	-- Primal Gladiator's Plate Warboots
 								}),
 							}),
-							n(-680, {	-- Wild Gladiator: Warlords Season 2
+							n(SEASON_WILD, {
 								cl(DEATHKNIGHT, {
 									un(REMOVED_FROM_GAME, i(125651)), -- Wild Gladiator's Dreadplate Chestpiece
 									un(REMOVED_FROM_GAME, i(125652)), -- Wild Gladiator's Dreadplate Gauntlets
@@ -1161,7 +1161,7 @@ _.PVP =
 									un(REMOVED_FROM_GAME, i(125779)), -- Wild Gladiator's Plate Shoulders
 								}),
 							}),
-							n(-681, {	-- Warmongering Gladiator: Warlords Season 3
+							n(SEASON_WARMONGERING, {
 								cl(DEATHKNIGHT, {
 									un(REMOVED_FROM_GAME, i(126765)), -- Warmongering Gladiator's Dreadplate Chestpiece
 									un(REMOVED_FROM_GAME, i(126766)), -- Warmongering Gladiator's Dreadplate Gauntlets
@@ -1429,7 +1429,7 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(125765)),	-- Wild Gladiator's Baton of Light
 							un(REMOVED_FROM_GAME, i(126763)),	-- Warmongering Gladiator's Touch of Defeat
 							un(REMOVED_FROM_GAME, i(126879)),	-- Warmongering Gladiator's Baton of Light
-							n(-679, {	-- Primal Gladiator: Warlords Season 1
+							n(SEASON_PRIMAL, {
 								cl(DEATHKNIGHT, {
 									un(REMOVED_FROM_GAME, i(115837)),	-- Primal Gladiator's Dreadplate Chestpiece
 									un(REMOVED_FROM_GAME, i(115838)),	-- Primal Gladiator's Dreadplate Gauntlets
@@ -1579,7 +1579,7 @@ _.PVP =
 									un(REMOVED_FROM_GAME, i(115908)),	-- Primal Gladiator's Plate Warboots
 								}),
 							}),
-							n(-680, {	-- Wild Gladiator: Warlords Season 2
+							n(SEASON_WILD, {
 								cl(DEATHKNIGHT, {
 									un(REMOVED_FROM_GAME, i(125651)), -- Wild Gladiator's Dreadplate Chestpiece
 									un(REMOVED_FROM_GAME, i(125652)), -- Wild Gladiator's Dreadplate Gauntlets
@@ -1726,7 +1726,7 @@ _.PVP =
 									un(REMOVED_FROM_GAME, i(125779)), -- Wild Gladiator's Plate Shoulders
 								}),
 							}),
-							n(-681, {	-- Warmongering Gladiator: Warlords Season 3
+							n(SEASON_WARMONGERING, {
 								cl(DEATHKNIGHT, {
 									un(REMOVED_FROM_GAME, i(126765)), -- Warmongering Gladiator's Dreadplate Chestpiece
 									un(REMOVED_FROM_GAME, i(126766)), -- Warmongering Gladiator's Dreadplate Gauntlets

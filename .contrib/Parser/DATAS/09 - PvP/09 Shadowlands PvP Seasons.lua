@@ -5,7 +5,7 @@
 _.PVP =
 {
 	pvp(tier(SL_TIER, {
-		n(-693, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Sinful Gladiator: Shadowlands Season 1
+		n(SEASON_SINFUL, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 			n(PVP_ASPIRANT, {
 				n(BACK, {
 					i(178301),	-- Sinful Aspirant's Cape
@@ -436,7 +436,7 @@ _.PVP =
 				}),
 			}),
 		})),
-		n(-694, {	-- Unchained Gladiator: Shadowlands Season 2
+		n(SEASON_UNCHAINED, {
 			n(PVP_ASPIRANT, {
 				n(BACK, {
 					i(185240),	-- Unchained Aspirant's Cape
@@ -853,7 +853,7 @@ _.PVP =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(SL_TIER, {
-		n(-693, {	-- Sinful Gladiator: Shadowlands Season 1
+		n(SEASON_SINFUL, {
 			n(WEAPONS, {
 				i(183432),	-- Sinful Aspirant's Reaver
 				i(178469),	-- Sinful Aspirant's Bow
