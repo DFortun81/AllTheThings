@@ -652,8 +652,6 @@ for key,value in pairs({
 		[103] = "幻象";												-- Illusions
 		--TODO: [107] = "Vignettes";
 		[108] = "乐谱";												-- Music Rolls
-		[110] = "头衔";												-- Titles
-		[114] = "坐骑装备";											-- Mount Equipment
 
 	[999] = "事件物品";												-- Event Item
 })
@@ -680,11 +678,6 @@ for key,value in pairs({
 		--TODO: [-26] = "Drops",									-- Drops
 		[-40] = "绝版",												-- Legacy
 		--TODO: [-41] = "Cache of Madness",
-	-- Armor Types
-		[-43] = GetItemSubClassInfo(4,1),							-- Cloth 布甲
-		[-44] = GetItemSubClassInfo(4,2),							-- Leather 皮甲
-		[-45] = GetItemSubClassInfo(4,3),							-- Mail 锁甲
-		[-46] = GetItemSubClassInfo(4,4),							-- Plate 板甲
 	-- World Events
 		[-50] = "情人节",											-- Love is in the Air
 		[-53] = "仲夏火焰节",										-- Midsummer Fire Festival

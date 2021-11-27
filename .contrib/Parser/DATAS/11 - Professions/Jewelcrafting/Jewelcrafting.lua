@@ -5387,7 +5387,7 @@ cacheRecipes(_.Professions);
 
 -- Jewelcrafting Item Recipe Database
 local itemrecipe = function(name, itemID, spellID, spellIDAfterCata, timeline)
-	local o = { ["itemID"] = itemID, ["spellID"] = spellID, ["requireSkill"] = JEWELCRAFTING, ["f"] = 200 };
+	local o = { ["itemID"] = itemID, ["spellID"] = spellID, ["requireSkill"] = JEWELCRAFTING, ["f"] = RECIPES };
 	if spellIDAfterCata then
 		if type(spellIDAfterCata) == "number" then
 			-- #if AFTER CATA

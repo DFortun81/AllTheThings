@@ -593,9 +593,7 @@ for key,value in pairs({
 
 	-- "Non-Equipment Types"
 		[103] = "Иллюзии";									-- Illusions (TODO: чары для оружия? Предметы, что дают Чары для оружия в коллекцию, называются Иллюзиями)
-		[107] = "Особые";
-		[110] = "Звания";									-- Titles
-		[114] = "Экипировка Транспорта";					-- Mount Equipment
+		[107] = "Особые";									-- Vignettes
 
 	[999] = "Предметы Событий";								-- Event Item
 })
@@ -620,11 +618,6 @@ for key,value in pairs({
 		[-23] = "Обычная добыча с боссов",						-- WoD Common Dungeon Drop
 		[-26] = BATTLE_PET_SOURCE_1,							-- Drops
 		[-41] = "Тайник Безумия",
-	-- Armor Types
-		[-43] = "Тканевые доспехи",								-- Cloth
-		[-44] = "Кожаные доспехи",								-- Leather
-		[-45] = "Кольчужные доспехи",							-- Mail
-		[-46] = "Латные доспехи",								-- Plate
 	-- World Events
 		[-53] = "Огненный Солнцеворот",							-- Midsummer Fire Festival
 		[-55] = "День пирата",
@@ -661,7 +654,6 @@ for key,value in pairs({
 	-- Class Hall /Artifact
 		[-159] = "Ролл События",									-- Daily Dreamway Event Roll
 	-- Other
-		[-163] = "Доспехи",											-- Armor
 		[-211] = "Новый персонаж",									-- New Character
 		[-212] = "Сундук с сокровищами",							-- Treasure Chest
 	-- Fishing

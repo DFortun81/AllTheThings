@@ -610,9 +610,7 @@ for key,value in pairs({
 
 	-- "Non-Equipment Types"
 		--TODO: [103] = "Illusions";								-- Illusions
-		--TODO: [107] = "Vignettes";
-		--TODO: [110] = "Titles";									-- Titles
-		--TODO: [114] = "Mount Equipment";							-- Mount Equipment
+		--TODO: [107] = "Vignettes";								-- Vignettes
 
 	--TODO: [999] = "Event Item";									-- Event Item
 })
@@ -636,11 +634,6 @@ for key,value in pairs({
 		--TODO: [-23] = "Common Dungeon Drop",						-- WoD Common Dungeon Drop
 		--TODO: [-26] = "Drops",									-- Drops
 		--TODO: [-41] = "Cache of Madness",
-	-- Armor Types
-		--TODO: [-43] = GetItemSubClassInfo(4,1).." "..RESISTANCE0_NAME,-- Cloth
-		--TODO: [-44] = GetItemSubClassInfo(4,2).." "..RESISTANCE0_NAME,-- Leather
-		--TODO: [-45] = GetItemSubClassInfo(4,3).." "..RESISTANCE0_NAME,-- Mail
-		--TODO: [-46] = GetItemSubClassInfo(4,4).." "..RESISTANCE0_NAME,-- Plate
 	-- World Events
 		--TODO: [-53] = "Midsummer Fire Festival",					-- Midsummer Fire Festival
 		--TODO: [-55] = "Pirates' Day",

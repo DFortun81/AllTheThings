@@ -751,7 +751,7 @@ app.L = {
 		-- "Non-Equipment Types"
 		[100] = MOUNTS,											-- Mounts
 		[101] = AUCTION_CATEGORY_BATTLE_PETS,					-- Battle Pets
-		[102] = "Toys",											-- Toys
+		[102] = TOY_BOX,										-- Toy Box
 		[103] = "Illusions",									-- Illusions
 		[104] = ITEM_BIND_QUEST,								-- Quest Items
 		[105] = TRACKER_FILTER_ACHIEVEMENTS,					-- Achievements
@@ -759,11 +759,11 @@ app.L = {
 		[107] = "Vignettes",
 		[108] = ENABLE_MUSIC.." "..ROLL,						-- Music Rolls
 		[109] = HEIRLOOMS,										-- Heirlooms
-		[110] = "Titles",										-- Titles
+		[110] = PAPERDOLL_SIDEBAR_TITLES,						-- Titles
 		[111] = GetItemClassInfo(16),							-- Glyph
 		[112] = FACTION,										-- Factions
 		[113] = INVTYPE_BAG,									-- Bags
-		[114] = "Mount Equipment",								-- Mount Equipment
+		[114] = MOUNT_EQUIPMENT_LEVEL_UP_FEATURE,				-- Mount Equipment
 
 		-- "Recipes"
 		[200] = AUCTION_CATEGORY_RECIPES,						-- Recipes
@@ -805,8 +805,8 @@ app.L = {
 		[55] = "Interface\\Icons\\INV_Drink_25_HoneyTea",						-- Consumables
 		[59] = "Interface\\Icons\\INV_Misc_Book_03",							-- Class Books
 		[100] = app.asset("Category_Mounts"),									-- Mounts
-		[101] = "Interface\\Icons\\Tracking_WildPet",							-- Battle Pet
-		[102] = app.asset("Category_ToyBox"),									-- Toys
+		[101] = "Interface\\Icons\\Tracking_WildPet",							-- Battle Pets
+		[102] = app.asset("Category_ToyBox"),									-- Toy Box
 		[103] = "Interface\\Icons\\inv_inscription_weaponscroll03",				-- Illusions
 		[111] = "Interface\\Icons\\Inv_glyph_minorwarrior",						-- Glyph
 		[113] = "Interface\\Icons\\INV_Misc_Bag_08",							-- Bag
