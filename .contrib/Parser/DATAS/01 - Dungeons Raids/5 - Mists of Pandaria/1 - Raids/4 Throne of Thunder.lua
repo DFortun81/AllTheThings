@@ -196,7 +196,7 @@ _.Instances = { tier(MOP_TIER, {
 					i(95219),	-- Spiderweb Tabi
 					i(95222),	-- Spiritbound Boots
 					i(95216),	-- Vaultwalker Sabatons
-					n(-355, {	-- Thunderforged
+					n(TITANFORGED, {
 						i(96330),	-- Necklace of the Terra-Cotta Archer
 						i(96336),	-- Necklace of the Terra-Cotta Invoker
 						i(96341),	-- Necklace of the Terra-Cotta Mender
@@ -639,7 +639,7 @@ _.Instances = { tier(MOP_TIER, {
 							68397,	-- Lei Shen
 						},
 						["g"] = {
-							n(-355, {	-- Thunderforged
+							n(TITANFORGED, {
 								i(96249),	-- Bo-Ris, Horror in the Night
 								i(96234),	-- Darkwood Spiritstaff
 								i(96247),	-- Greatsword of Frozen Hells
@@ -709,7 +709,7 @@ _.Instances = { tier(MOP_TIER, {
 						i(94729),	-- Jin'rokh's Soulcrystal
 						i(95510),	-- Sign of the Bloodied God
 						i(94512),	-- Renataki's Soul Charm
-						n(-355, {	-- Thunderforged
+						n(TITANFORGED, {
 							i(96012),	-- Soulblade of the Breaking Storm
 							i(96004),	-- Worldbreaker's Stormscythe
 							i(95998),	-- Lightning-Eye Hood
@@ -757,7 +757,7 @@ _.Instances = { tier(MOP_TIER, {
 						i(95514),	-- Petrified Eye of the Basilisk
 						i(94514),	-- Horridon's Last Gasp
 						i(94526),	-- Spark of Zandalar
-						n(-355, {	-- Thunderforged
+						n(TITANFORGED, {
 							i(96029),	-- Dinomancer's Spiritbinding Spire
 							i(96019),	-- Jalak's Maelstrom Staff
 							i(96032),	-- Venomlord's Totemic Wand
@@ -809,7 +809,7 @@ _.Instances = { tier(MOP_TIER, {
 							i(94523),	-- Bad Juju
 							i(94516),	-- Fortitude of the Zandalari
 							i(94513),	-- Wushoolay's Final Choice
-							n(-355, {	-- Thunderforged
+							n(TITANFORGED, {
 								i(96047),	-- Zerat, Malakk's Soulburning Greatsword
 								i(96042),	-- Amun-Thoth, Sul's Spiritrending Talons
 								i(96038),	-- Kura-Kura, Kazra'jin's Skullcleaver
@@ -851,7 +851,7 @@ _.Instances = { tier(MOP_TIER, {
 						i(94787),	-- Tortos' Shellseizers
 						i(94784),	-- Refreshing Abalone Girdle
 						i(94772),	-- Quakestompers
-						n(-355, {	-- Thunderforged
+						n(TITANFORGED, {
 							i(96058),	-- Shellsplitter Greataxe
 							i(96050),	-- Shattered Tortoiseshell Longbow
 							i(96064),	-- Tortos' Discarded Shell
@@ -903,7 +903,7 @@ _.Instances = { tier(MOP_TIER, {
 							i(94795),	-- Spinescale Seal
 							i(94521),	-- Breath of the Hydra
 							i(94520),	-- Inscribed Bag of Hydra-Spawn
-							n(-355, {	-- Thunderforged
+							n(TITANFORGED, {
 								i(96070),	-- Megaera's Poisoned Fang
 								i(96082),	-- Fetish of the Hydra
 								i(96085),	-- Hood of Smoldering Flesh
@@ -950,7 +950,7 @@ _.Instances = { tier(MOP_TIER, {
 						i(94811),	-- Featherflight Belt
 						i(94515),	-- Fabled Feather of Ji-Kun
 						i(94527),	-- Ji-Kun's Rising Winds
-						n(-355, {	-- Thunderforged
+						n(TITANFORGED, {
 							i(96092),	-- Giorgio's Caduceus of Pure Moods
 							i(96095),	-- Crown of Potentiated Birth
 							i(96089),	-- Pinionfeather Greatcloak
@@ -986,7 +986,7 @@ _.Instances = { tier(MOP_TIER, {
 						i(94817),	-- Treads of the Blind Eye
 						i(94931),	-- Durumu's Captive Eyeball
 						i(95511),	-- Durumu's Severed Tentacle
-						n(-355, {	-- Thunderforged
+						n(TITANFORGED, {
 							i(96115),	-- Ritual Dagger of the Mind's Eye
 							i(96100),	-- Durumu's Baleful Gaze
 							i(96112),	-- Chilblain Spaulders
@@ -1033,7 +1033,7 @@ _.Instances = { tier(MOP_TIER, {
 						i(94519),	-- Primordius' Talisman of Rage
 						i(94525),	-- Stolen Relic of Zuldazar
 						i(94522),	-- Talisman of Bloodlust
-						n(-355, {	-- Thunderforged
+						n(TITANFORGED, {
 							i(96130),	-- Acid-Spine Bonemace
 							i(96140),	-- Greatshield of the Gloaming
 							i(96137),	-- Clear-Mind Helm
@@ -1078,7 +1078,7 @@ _.Instances = { tier(MOP_TIER, {
 							i(94961),	-- Gore-Soaked Gear
 							i(94531),	-- Cha-Ye's Essence of Brilliance
 							i(94518),	-- Delicate Vial of the Sanguinaire
-							n(-355, {	-- Thunderforged
+							n(TITANFORGED, {
 								i(96146),	-- Athame of the Sanguine Ritual
 								i(96142),	-- Hand of the Dark Animus
 								i(96150),	-- Crown of the Golden Golem
@@ -1116,7 +1116,7 @@ _.Instances = { tier(MOP_TIER, {
 							i(94968),	-- Dam'ren's Frozen Footguards
 							i(94967),	-- Spurs of the Storm Cavalry
 							i(95512),	-- Ro'shak's Remembrance
-							n(-355, {	-- Thunderforged
+							n(TITANFORGED, {
 								i(96152),	-- Iron Qon's Boot Knife
 								i(96162),	-- Qon's Flaming Scimitar
 								i(96153),	-- Voice of the Quilen
@@ -1154,7 +1154,7 @@ _.Instances = { tier(MOP_TIER, {
 							i(94978),	-- Girdle of Night and Day
 							i(94976),	-- Tidal Force Treads
 							i(94529),	-- Gaze of the Twins
-							n(-355, {	-- Thunderforged
+							n(TITANFORGED, {
 								i(96167),	-- Suen-Wo, Spire of the Falling Sun
 								i(96163),	-- Wu-Lai, Bladed Fan of the Consorts
 								i(96166),	-- Shield of Twinned Despair
@@ -1193,7 +1193,7 @@ _.Instances = { tier(MOP_TIER, {
 						i(94528),	-- Soul Barrier
 						i(94524),	-- Unerring Vision of Lei Shen
 						i(94867),	-- Heart of the Thunder King
-						n(-355, {	-- Thunderforged
+						n(TITANFORGED, {
 							i(96175),	-- Shan-Dun, Breaker of Hope
 							i(96181),	-- Uroe, Harbinger of Terror
 							i(96187),	-- Torall, Rod of the Shattered Throne
@@ -1250,7 +1250,7 @@ _.Instances = { tier(MOP_TIER, {
 							68397,	-- Lei Shen
 						},
 						["g"] = {
-							n(-355, {	-- Thunderforged
+							n(TITANFORGED, {
 								i(96979),	-- Lost Shoulders of Fire
 								i(96981),	-- Lost Shoulders of Fluidity
 								i(96980),	-- Lost Shoulders of Healing
@@ -1321,7 +1321,7 @@ _.Instances = { tier(MOP_TIER, {
 						i(96377),	-- Jin'rokh's Soulcrystal
 						i(96368),	-- Sign of the Bloodied God
 						i(96369),	-- Renataki's Soul Charm
-						n(-355, {	-- Thunderforged
+						n(TITANFORGED, {
 							i(96756),	-- Soulblade of the Breaking Storm
 							i(96748),	-- Worldbreaker's Stormscythe
 							i(96742),	-- Lightning-Eye Hood
@@ -1370,7 +1370,7 @@ _.Instances = { tier(MOP_TIER, {
 						i(96403),	-- Petrified Eye of the Basilisk
 						i(96385),	-- Horridon's Last Gasp
 						i(96398),	-- Spark of Zandalar
-						n(-355, {	-- Thunderforged
+						n(TITANFORGED, {
 							i(96773),	-- Dinomancer's Spiritbinding Spire
 							i(96763),	-- Jalak's Maelstrom Staff
 							i(96776),	-- Venomlord's Totemic Wand
@@ -1423,7 +1423,7 @@ _.Instances = { tier(MOP_TIER, {
 							i(96409),	-- Bad Juju
 							i(96421),	-- Fortitude of the Zandalari
 							i(96413),	-- Wushoolay's Final Choice
-							n(-355, {	-- Thunderforged
+							n(TITANFORGED, {
 								i(96791),	-- Zerat, Malakk's Soulburning Greatsword
 								i(96786),	-- Amun-Thoth, Sul's Spiritrending Talons
 								i(96782),	-- Kura-Kura, Kazra'jin's Skullcleaver
@@ -1466,7 +1466,7 @@ _.Instances = { tier(MOP_TIER, {
 						i(96441),	-- Tortos' Shellseizers
 						i(96440),	-- Refreshing Abalone Girdle
 						i(96426),	-- Quakestompers
-						n(-355, {	-- Thunderforged
+						n(TITANFORGED, {
 							i(96802),	-- Shellsplitter Greataxe
 							i(96794),	-- Shattered Tortoiseshell Longbow
 							i(96808),	-- Tortos' Discarded Shell
@@ -1518,7 +1518,7 @@ _.Instances = { tier(MOP_TIER, {
 							i(96448),	-- Spinescale Seal
 							i(96455),	-- Breath of the Hydra
 							i(96456),	-- Inscribed Bag of Hydra-Spawn
-							n(-355, {	-- Thunderforged
+							n(TITANFORGED, {
 								i(96814),	-- Megaera's Poisoned Fang
 								i(96826),	-- Fetish of the Hydra
 								i(96829),	-- Hood of Smoldering Flesh
@@ -1566,7 +1566,7 @@ _.Instances = { tier(MOP_TIER, {
 						i(96465),	-- Featherflight Belt
 						i(96470),	-- Fabled Feather of Ji-Kun
 						i(96471),	-- Ji-Kun's Rising Winds
-						n(-355, {	-- Thunderforged
+						n(TITANFORGED, {
 							i(96836),	-- Giorgio's Caduceus of Pure Moods
 							i(96839),	-- Crown of Potentiated Birth
 							i(96833),	-- Pinionfeather Greatcloak
@@ -1603,7 +1603,7 @@ _.Instances = { tier(MOP_TIER, {
 						i(96478),	-- Treads of the Blind Eye
 						i(96486),	-- Durumu's Captive Eyeball
 						i(96481),	-- Durumu's Severed Tentacle
-						n(-355, {	-- Thunderforged
+						n(TITANFORGED, {
 							i(96859),	-- Ritual Dagger of the Mind's Eye
 							i(96844),	-- Durumu's Baleful Gaze
 							i(96856),	-- Chilblain Spaulders
@@ -1651,7 +1651,7 @@ _.Instances = { tier(MOP_TIER, {
 						i(96501),	-- Primordius' Talisman of Rage
 						i(96507),	-- Stolen Relic of Zuldazar
 						i(96492),	-- Talisman of Bloodlust
-						n(-355, {	-- Thunderforged
+						n(TITANFORGED, {
 							i(96874),	-- Acid-Spine Bonemace
 							i(96884),	-- Greatshield of the Gloaming
 							i(96881),	-- Clear-Mind Helm
@@ -1697,7 +1697,7 @@ _.Instances = { tier(MOP_TIER, {
 							i(96513),	-- Gore-Soaked Gear
 							i(96516),	-- Cha-Ye's Essence of Brilliance
 							i(96523),	-- Delicate Vial of the Sanguinaire
-							n(-355, {	-- Thunderforged
+							n(TITANFORGED, {
 								i(96890),	-- Athame of the Sanguine Ritual
 								i(96886),	-- Hand of the Dark Animus
 								i(96894),	-- Crown of the Golden Golem
@@ -1736,7 +1736,7 @@ _.Instances = { tier(MOP_TIER, {
 							i(96528),	-- Dam'ren's Frozen Footguards
 							i(96531),	-- Spurs of the Storm Cavalry
 							i(96529),	-- Ro'shak's Remembrance
-							n(-355, {	-- Thunderforged
+							n(TITANFORGED, {
 								i(96896),	-- Iron Qon's Boot Knife
 								i(96906),	-- Qon's Flaming Scimitar
 								i(96897),	-- Voice of the Quilen
@@ -1775,7 +1775,7 @@ _.Instances = { tier(MOP_TIER, {
 							i(96541),	-- Girdle of Night and Day
 							i(96542),	-- Tidal Force Treads
 							i(96543),	-- Gaze of the Twins
-							n(-355, {	-- Thunderforged
+							n(TITANFORGED, {
 								i(96911),	-- Suen-Wo, Spire of the Falling Sun
 								i(96907),	-- Wu-Lai, Bladed Fan of the Consorts
 								i(96910),	-- Shield of Twinned Despair
@@ -1822,7 +1822,7 @@ _.Instances = { tier(MOP_TIER, {
 						i(96555),	-- Soul Barrier
 						i(96558),	-- Unerring Vision of Lei Shen
 						i(94867),	-- Heart of the Thunder King
-						n(-355, {	-- Thunderforged
+						n(TITANFORGED, {
 							i(96919),	-- Shan-Dun, Breaker of Hope
 							i(96925),	-- Uroe, Harbinger of Terror
 							i(96931),	-- Torall, Rod of the Shattered Throne

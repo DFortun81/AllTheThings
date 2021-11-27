@@ -5478,7 +5478,7 @@ _.PVP =
 				n(BACK, {
 					un(REMOVED_FROM_GAME, i(98336)), -- Tyrannical Gladiator's Greatcloak
 				}),
-				n(-325, {	-- Tabards
+				filter(TABARDS, {
 					un(REMOVED_FROM_GAME, i(98162)), -- Tyrannical Gladiator's Tabard
 				}),
 			}),
@@ -8656,7 +8656,7 @@ _.PVP =
 				n(BACK, {
 					un(REMOVED_FROM_GAME, i(101698)), -- Grievous Gladiator's Greatcloak
 				}),
-				n(-325, {	-- Tabards
+				filter(TABARDS, {
 					un(REMOVED_FROM_GAME, i(101697)), -- Grievous Gladiator's Tabard
 				}),
 			}),
@@ -10321,7 +10321,7 @@ _.PVP =
 				n(BACK, {
 					un(REMOVED_FROM_GAME, i(103635)), -- Prideful Gladiator's Greatcloak
 				}),
-				n(-325, {	-- Tabards
+				filter(TABARDS, {
 					un(REMOVED_FROM_GAME, i(103636)), -- Prideful Gladiator's Tabard
 				}),
 			}),

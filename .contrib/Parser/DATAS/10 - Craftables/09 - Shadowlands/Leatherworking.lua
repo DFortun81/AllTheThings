@@ -6,13 +6,13 @@ _.Craftables =
 {
 	tier(SL_TIER, {
 		prof(LEATHERWORKING, {
-			filter(32, {	-- Bows
+			filter(BOWS, {
 				i(172350),	-- Composite Bow
 			}),
-			filter(33, {	-- Crossbows
+			filter(CROSSBOWS, {
 				i(172351),	-- Composite Crossbow
 			}),
-			filter(34, {	-- Fist Weapons
+			filter(FIST_WEAPONS, {
 				i(172349),	-- Bone Bound Knuckles
 				i(172348),	-- Desolate Leather Cestus
 			}),

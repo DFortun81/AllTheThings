@@ -50,49 +50,49 @@ _.Craftables =
 			}),
 		}),
 		prof(BLACKSMITHING, {
-			filter(20, {	-- Daggers
+			filter(DAGGERS, {
 				i(82967),	-- Ghost Shard
 				i(82974),	-- Masterwork Ghost Shard
 			}),
-			filter(21, {	-- 1H Axes
+			filter(ONE_HANDED_AXES, {
 				i(94577),	-- Black Planar Edge, Reborn
 				i(82963),	-- Forgewire Axe
 				i(82970),	-- Masterwork Forgewire Axe
 				i(94575),	-- The Planar Edge, Reborn
 				i(94579),	-- Wicked Edge of the Planes, Reborn
 			}),
-			filter(22, {	-- 2H Axes
+			filter(TWO_HANDED_AXES, {
 				i(94580),	-- Bloodmoon, Reborn
 				i(94576),	-- Lunar Crescent, Reborn
 				i(82973),	-- Masterwork Spiritblade Decimator
 				i(94578),	-- Mooncleaver, Reborn
 				i(82966),	-- Spiritblade Decimator
 			}),
-			filter(23, {	-- 1H Maces
+			filter(ONE_HANDED_MACES, {
 				i(94584),	-- Dragonmaw, Reborn
 				i(94585),	-- Dragonstrike, Reborn
 				i(94581),	-- Drakefist Hammer, Reborn
 				i(82972),	-- Masterwork Phantasmal Hammer
 				i(82965),	-- Phantasmal Hammer
 			}),
-			filter(24, {	-- 2H Maces
+			filter(TWO_HANDED_MACES, {
 				i(94583),	-- Deep Thunder, Reborn
 				i(94586),	-- Stormherald, Reborn
 				i(94582),	-- Thunder, Reborn
 			}),
-			filter(25, {	-- 1H Swords
+			filter(ONE_HANDED_SWORDS, {
 				i(94591),	-- Blazefury, Reborn
 				i(94589),	-- Blazeguard, Reborn
 				i(94587),	-- Fireguard, Reborn
 				i(82964),	-- Ghost-Forged Blade
 				i(82971),	-- Masterwork Ghost-Forged Blade
 			}),
-			filter(26, {	-- 2H Swords
+			filter(TWO_HANDED_SWORDS, {
 				i(94588),	-- Lionheart Blade, Reborn
 				i(94590),	-- Lionheart Champion, Reborn
 				i(94592),	-- Lionheart Executioner, Reborn
 			}),
-			filter(8, {		-- Shield
+			filter(SHIELDS, {
 				i(98776),	-- Crafted Malevolent Gladiator's Barrier
 				i(98810),	-- Crafted Malevolent Gladiator's Redoubt
 				i(98920),	-- Crafted Malevolent Gladiator's Shield Wall
@@ -370,7 +370,7 @@ _.Craftables =
 					["cost"] = { { "i", 79333, 1 }, },	-- Inscribed Fan
 				}),
 			}),
-			filter(28, {	-- Staves
+			filter(STAVES, {
 				i(79342),	-- Ghost Iron Staff
 				i(79340, {	-- Inscribed Crane Staff
 					["cost"] = { { "i", 79339, 1 }, },	-- Rain Poppy Staff

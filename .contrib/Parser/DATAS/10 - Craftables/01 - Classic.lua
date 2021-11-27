@@ -313,7 +313,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(7969),	-- Mithril Spurs
 			i(12645),	-- Thorium Shield Spike
 		}),
-		filter(20, {	-- Daggers
+		filter(DAGGERS, {
 			i(3848),	-- Big Bronze Knife
 			-- #if AFTER TBC
 			applyclassicphase(PHASE_THREE, i(19166)),	-- Black Amnesty
@@ -328,7 +328,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(5540),	-- Pearl-Handled Dagger
 			i(12260),	-- Searing Golden Blade
 		}),
-		filter(21, {	-- 1H Axes
+		filter(ONE_HANDED_AXES, {
 			-- #if AFTER TBC
 			i(12798),	-- Annihilator
 			-- #endif
@@ -344,7 +344,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(12773),	-- Ornate Thorium Handaxe
 			i(3489),	-- Thick War Axe
 		}),
-		filter(22, {	-- 2H Axes
+		filter(TWO_HANDED_AXES, {
 			-- #if AFTER TBC
 			i(12784),	-- Arcanite Reaper
 			-- #endif
@@ -368,7 +368,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			-- #endif
 			i(3856),	-- Shadow Crescent Axe
 		}),
-		filter(23, {	-- 1H Maces
+		filter(ONE_HANDED_MACES, {
 			i(7945),	-- Big Black Mace
 			i(2848),	-- Bronze Mace
 			i(2844),	-- Copper Mace
@@ -397,7 +397,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				["timeline"] = { "removed 4.0.2" },
 			}),
 		}),
-		filter(24, {	-- 2H Maces
+		filter(TWO_HANDED_MACES, {
 			i(7956),	-- Bronze Warhammer
 			-- #if AFTER TBC
 			i(11608),	-- Dark Iron Pulverizer
@@ -413,7 +413,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(3851),	-- Solid Iron Maul
 			i(17193),	-- Sulfuron Hammer
 		}),
-		filter(25, {	-- 1H Swords
+		filter(ONE_HANDED_SWORDS, {
 			-- #if AFTER TBC
 			applyclassicphase(PHASE_THREE, i(19168)),	-- Blackguard
 			i(12777, {	-- Blazing Rapier
@@ -449,7 +449,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			-- #endif
 			i(7943),	-- Wicked Mithril Blade
 		}),
-		filter(26, {	-- 2H Swords
+		filter(TWO_HANDED_SWORDS, {
 			-- #if AFTER TBC
 			i(12790, {	-- Arcanite Champion
 				["timeline"] = {
@@ -474,7 +474,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			-- #endif
 		}),
 		-- #if AFTER TBC
-		filter(29, {	-- Polearms
+		filter(POLEARMS, {
 			applyclassicphase(PHASE_THREE, i(19167)),	-- Blackfury
 			i(7959, {	-- Blight
 				["timeline"] = {
@@ -493,11 +493,11 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			-- #endif
 		}),
 		-- #endif
-		filter(8, {		-- Shields
+		filter(SHIELDS, {
 			applyclassicphase(PHASE_FIVE, i(22198)),	-- Jagged Obsidian Shield
 		}),
 		-- #if BEFORE MOP
-		filter(26, {	-- Thrown
+		filter(36, {	-- Thrown
 			applyclassicphase(TBC_PHASE_ONE, i(29203, {	-- Enchanted Thorium Blades
 				["timeline"] = {
 					"added 2.0.1.10000",
@@ -940,7 +940,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(12810),	-- Enchanted Leather
 			i(12655),	-- Enchanted Thorium Bar
 		}),
-		filter(27, {	-- Wands
+		filter(WANDS, {
 			i(11288),	-- Greater Magic Wand
 			i(11290),	-- Greater Mystic Wand
 			i(11287),	-- Lesser Magic Wand
@@ -1209,7 +1209,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(10548),	-- Sniper Scope
 			i(4406),	-- Standard Scope
 		}),
-		filter(8, {		-- Shields
+		filter(SHIELDS, {
 			i(18168),	-- Force Reactive Disk*
 		}),
 		category(191, {	-- Tools
@@ -1233,7 +1233,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 		i(19440),	-- Powerful Anti-Venom
 	}),
 	prof(FISHING, {
-		filter(23, {	-- 1H Maces
+		filter(ONE_HANDED_MACES, {
 			i(6360, {	-- Steelscale Crushfish
 				-- #if AFTER CATA
 				["description"] = "Can be caught in Ashenvale, Darkmoon Island, Hillsbrad Foothills, Northern Stranglethorn, and Wetlands in open water.",
@@ -1539,7 +1539,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(21763),	-- Figurine - Truesilver Boar
 			i(21760),	-- Figurine - Truesilver Crab
 		}),
-		filter(34, {	-- Fist Weapons
+		filter(FIST_WEAPONS, {
 			i(20954),	-- Heavy Iron Knuckles
 		}),
 		filter(50, {	-- Miscellaneous

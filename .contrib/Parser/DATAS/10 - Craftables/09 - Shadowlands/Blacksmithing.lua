@@ -6,35 +6,35 @@ _.Craftables =
 {
 	tier(SL_TIER, {
 		prof(BLACKSMITHING, {
-			filter(20, {	-- Daggers
+			filter(DAGGERS, {
 				i(171390),	-- Ceremonious Blade
 				i(171385),	-- Ceremonious Shanker
 			}),
-			filter(21, {	-- 1H Axes
+			filter(ONE_HANDED_AXES, {
 				i(171388),	-- Ceremonious Axe
 			}),
-			filter(22, {	-- 2H Axes
+			filter(TWO_HANDED_AXES, {
 				i(171389),	-- Ceremonious Reaper
 			}),
-			filter(23, {	-- 1H Maces
+			filter(ONE_HANDED_MACES, {
 				i(171387),	-- Ceremonious Mace
 			}),
-			filter(24, {	-- 2H Maces
+			filter(TWO_HANDED_MACES, {
 				i(171384),	-- Ceremonious Smasher
 			}),
-			filter(25, {	-- 1H Swords
+			filter(ONE_HANDED_SWORDS, {
 				i(171382),	-- Ceremonious Rapier
 			}),
-			filter(26, {	-- 2H Swords
+			filter(TWO_HANDED_SWORDS, {
 				i(171383),	-- Ceremonious Claymore
 			}),
-			filter(29, {	-- Polearms
+			filter(POLEARMS, {
 				i(171386),	-- Ceremonious Spear
 			}),
-			filter(35, {	-- Warglaives
+			filter(WARGLAIVES, {
 				i(171392),	-- Ceremonious Warglaive
 			}),
-			filter(8, {		-- Shield
+			filter(SHIELDS, {
 				i(171391),	-- Ceremonious Shield
 			}),
 			n(HEAD, {

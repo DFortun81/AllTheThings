@@ -714,7 +714,7 @@ _.Zones =
 					["coord"] = { 64.2, 49.9, ARDENWEALD },
 					["g"] = {
 						i(175986, {	-- Grove Defender's Maul
-							["f"] = 24,	-- 2H mace (for some reason erroneously has filterID of 23, which is 1H maces)
+							["f"] = TWO_HANDED_MACES,	-- (for some reason erroneously has filterID of 23, which is 1H maces)
 						}),
 						i(175983),	-- Heartwood Bow
 						i(175984),	-- Heartwood Dagger

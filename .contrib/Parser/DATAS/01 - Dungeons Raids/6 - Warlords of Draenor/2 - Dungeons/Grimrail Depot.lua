@@ -33,7 +33,7 @@ _.Instances = { tier(WOD_TIER, {
 					},
 					["g"] = {
 						i(110051),	-- Overseer's Final Word
-						n(-355, bubbleDown({["bonusID"] = 4746 }, {	-- Warforged
+						n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
 							i(110051),	-- Overseer's Final Word
 						})),
 					},
@@ -50,7 +50,7 @@ _.Instances = { tier(WOD_TIER, {
 					["g"] = {
 						i(110052),	-- Scepter of Brutality
 						i(109996),	-- Thundertower's Targeting Reticle
-						n(-355, bubbleDown({["bonusID"] = 4746 }, {	-- Warforged
+						n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
 							i(110052),	-- Scepter of Brutality
 							i(109996),	-- Thundertower's Targeting Reticle
 						})),
@@ -68,7 +68,7 @@ _.Instances = { tier(WOD_TIER, {
 						i(110054),	-- Thunderlord Flamestaff
 						i(110053),	-- Arrowbreaker Greatshield
 						i(110001),	-- Tovra's Lightning Repository
-						n(-355, bubbleDown({["bonusID"] = 4746 }, {	-- Warforged
+						n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
 							i(110054),	-- Thunderlord Flamestaff
 							i(110053),	-- Arrowbreaker Greatshield
 							i(110001),	-- Tovra's Lightning Repository

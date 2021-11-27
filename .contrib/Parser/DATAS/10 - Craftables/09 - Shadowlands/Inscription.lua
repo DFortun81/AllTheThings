@@ -15,7 +15,7 @@ _.Craftables =
 			filter(HELD_IN_OFF_HAND, {
 				i(173050),	-- Newly Departed Codex
 			}),
-			filter(28, {	-- Staffs
+			filter(STAVES, {
 				i(173428),	-- Soul Keeper's Column
 				i(173054),	-- Soul Keeper's Spire
 			}),

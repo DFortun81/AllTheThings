@@ -283,7 +283,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 				["recipeID"] = 26881
 			}
 		}),
-		filter(34, {	-- Fist Weapons
+		filter(FIST_WEAPONS, {
 			{
 				["name"] = "Heavy Iron Knuckles",
 				["recipeID"] = 25612

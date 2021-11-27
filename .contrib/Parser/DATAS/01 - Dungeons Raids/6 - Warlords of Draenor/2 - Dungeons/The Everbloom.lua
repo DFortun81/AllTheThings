@@ -31,7 +31,7 @@ _.Instances = { tier(WOD_TIER, {
 					["g"] = {
 						i(119175),	-- Leafhide Penetrator
 						i(109999),	-- Witherbark's Branch
-						n(-355, bubbleDown({["bonusID"] = 4746 }, {	-- Warforged
+						n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
 							i(119175),	-- Leafhide Penetrator
 							i(109999),	-- Witherbark's Branch
 						})),
@@ -50,7 +50,7 @@ _.Instances = { tier(WOD_TIER, {
 					["g"] = {
 						i(119176),	-- Interloper's Mossy Skull
 						i(110009),	-- Leaf of the Ancient Protectors
-						n(-355, bubbleDown({["bonusID"] = 4746 }, {	-- Warforged
+						n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
 							i(119176),	-- Interloper's Mossy Skull
 							i(110009),	-- Leaf of the Ancient Protectors
 						})),
@@ -68,7 +68,7 @@ _.Instances = { tier(WOD_TIER, {
 					["g"] = {
 						i(119173),	-- Dessicated Husk Shield
 						i(110019),	-- Xeri'tac's Unhatched Egg Sac
-						n(-355, bubbleDown({["bonusID"] = 4746 }, {	-- Warforged
+						n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
 							i(119173),	-- Dessicated Husk Shield
 							i(110019),	-- Xeri'tac's Unhatched Egg Sac
 						})),
@@ -83,7 +83,7 @@ _.Instances = { tier(WOD_TIER, {
 					["g"] = {
 						i(119174),	-- Sol's Magestaff
 						i(110014),	-- Spores of Alacrity
-						n(-355, bubbleDown({["bonusID"] = 4746 }, {	-- Warforged
+						n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
 							i(119174),	-- Sol's Magestaff
 							i(110014),	-- Spores of Alacrity
 						})),
@@ -100,7 +100,7 @@ _.Instances = { tier(WOD_TIER, {
 						ach(9044),	-- The Everbloom
 						i(119181),	-- Hoof of Yalnu
 						i(110004),	-- Coagulated Genesaur Blood
-						n(-355, bubbleDown({["bonusID"] = 4746 }, {	-- Warforged
+						n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
 							i(119181),	-- Hoof of Yalnu
 							i(110004),	-- Coagulated Genesaur Blood
 						})),

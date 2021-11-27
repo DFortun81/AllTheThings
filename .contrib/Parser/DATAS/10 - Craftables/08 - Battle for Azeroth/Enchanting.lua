@@ -12,7 +12,7 @@ _.Craftables =
 			filter(BATTLE_PETS, {
 				i(152878),	-- Enchanted Tiki Mask
 			}),
-			filter(27, {	-- Wands
+			filter(WANDS, {
 				i(161927),	-- Enchanter's Sorcerous Scepter [Alliance]
 				i(152874),	-- Enchanter's Sorcerous Scepter [Horde]
 				i(161925),	-- Enchanter's Umbral Wand [Alliance]

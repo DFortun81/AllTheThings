@@ -6,7 +6,7 @@ _.WorldDrops =
 {
 	tier(MOP_TIER, {
 		n(WEAPONS, {
-			n(-334, {	-- 1H Axes
+			filter(ONE_HANDED_AXES, {
 				i(82020),	-- Polished Axe
 				i(82045),	-- Bronzed Axe
 				i(82100),	-- Barbarian Axe
@@ -18,7 +18,7 @@ _.WorldDrops =
 				i(94028),	-- Zandalari Head-Cleaver
 				i(94099),	-- Corroded Hacker
 			}),
-			n(-335, {	-- 2H Axes
+			filter(TWO_HANDED_AXES, {
 				i(82019),	-- Polished Broadaxe
 				i(82047),	-- Bronzed Broadaxe
 				i(82102),	-- Barbarian Broadaxe
@@ -28,7 +28,7 @@ _.WorldDrops =
 				i(87421),	-- Fellworth's Repetitive Greataxe
 				i(94100),	-- Weighty Stone Axe
 			}),
-			n(-346, {	-- Bows
+			filter(BOWS, {
 				i(82018),	-- Polished Bow
 				i(82046),	-- Bronzed Bow
 				i(82101),	-- Barbarian Bow
@@ -38,7 +38,7 @@ _.WorldDrops =
 				i(87474),	-- Ennadee's Twirling Longbow
 				i(94101),	-- Restrung Voodoo Bow
 			}),
-			n(-347, {	-- Crossbows
+			filter(CROSSBOWS, {
 				i(82016),	-- Polished Crossbow
 				i(82048),	-- Bronzed Crossbow
 				i(82103),	-- Barbarian Crossbow
@@ -46,7 +46,7 @@ _.WorldDrops =
 				i(82213),	-- Inlaid Crossbow
 				i(82268),	-- Engraved Crossbow
 			}),
-			n(-333, {	-- Daggers
+			filter(DAGGERS, {
 				i(82003),	-- Intricate Spellblade
 				i(82015),	-- Polished Dagger
 				i(82049),	-- Bronzed Dagger
@@ -66,7 +66,7 @@ _.WorldDrops =
 				i(94102),	-- Chiseled Fangs
 				i(94215),	-- Saurjaw Dagger
 			}),
-			n(-348, {	-- Fist Weapons
+			filter(FIST_WEAPONS, {
 				i(82013),	-- Polished Knuckles
 				i(82054),	-- Bronzed Knuckles
 				i(82109),	-- Barbarian Knuckles
@@ -76,7 +76,7 @@ _.WorldDrops =
 				i(87509),	-- Fist of Fate
 				i(94098),	-- Dull Hawktalons
 			}),
-			n(-345, {	-- Guns
+			filter(GUNS, {
 				i(82012),	-- Polished Gun
 				i(82051),	-- Bronzed Gun
 				i(82106),	-- Barbarian Gun
@@ -98,7 +98,7 @@ _.WorldDrops =
 				i(87458),	-- Bone-Inlaid Fan
 				i(90571),	-- Scroll of Whispered Secrets
 			}),
-			n(-336, {	-- 1H Maces
+			filter(ONE_HANDED_MACES, {
 				i(82009),	-- Polished Mace
 				i(82011),	-- Intricate Scepter
 				i(82055),	-- Bronzed Mace
@@ -116,7 +116,7 @@ _.WorldDrops =
 				i(87515),	-- Ced's Crusher
 				i(94212),	-- Hex-Caster Gavel
 			}),
-			n(-337, {	-- 2H Maces
+			filter(TWO_HANDED_MACES, {
 				i(82008),	-- Polished Hammer
 				i(82052),	-- Bronzed Hammer
 				i(82107),	-- Barbarian Hammer
@@ -125,7 +125,7 @@ _.WorldDrops =
 				i(82272),	-- Engraved Hammer
 				i(87418),	-- Lerah's Ribsmasher
 			}),
-			n(-343, {	-- Polearms
+			filter(POLEARMS, {
 				i(82006),	-- Polished Spear
 				i(82056),	-- Bronzed Spear
 				i(82111),	-- Barbarian Spear
@@ -135,7 +135,7 @@ _.WorldDrops =
 				i(87420),	-- Ritter's Rat Render
 				i(94103),	-- Ritual Headcleaver Halberd
 			}),
-			n(-332, {	-- Shield
+			filter(SHIELDS, {
 				i(82004),	-- Wall Shield
 				i(82074),	-- Brick Shield
 				i(82129),	-- Miner Shield
@@ -149,7 +149,7 @@ _.WorldDrops =
 				i(94214),	-- Loa-Binder Disc
 				i(94218),	-- Skyking Bulwark
 			}),
-			n(-342, {	-- Staves
+			filter(STAVES, {
 				i(82002),	-- Polished Staff
 				i(82014),	-- Polished Staff
 				i(82057),	-- Bronzed Staff
@@ -169,7 +169,7 @@ _.WorldDrops =
 				i(94097),	-- Defective Soulgem Staff
 				i(94104),	-- Sky-Shaper Staff
 			}),
-			n(-338, {	-- 1H Swords
+			filter(ONE_HANDED_SWORDS, {
 				i(82001),	-- Polished Sword
 				i(82059),	-- Bronzed Sword
 				i(82114),	-- Barbarian Sword
@@ -182,7 +182,7 @@ _.WorldDrops =
 				i(94093),	-- Saur-Singer Spellblade
 				i(94217),	-- Stubby Talonblade
 			}),
-			n(-339, {	-- 2H Swords
+			filter(TWO_HANDED_SWORDS, {
 				i(82000),	-- Polished Greatsword
 				i(82050),	-- Bronzed Greatsword
 				i(82105),	-- Barbarian Greatsword
@@ -191,7 +191,7 @@ _.WorldDrops =
 				i(82270),	-- Engraved Greatsword
 				i(87423),	-- Bjam's Door-Breaker
 			}),
-			n(-341, {	-- Wands
+			filter(WANDS, {
 				i(81998),	-- Intricate Wand
 				i(82066),	-- Gemmed Wand
 				i(82121),	-- Shamanic Wand

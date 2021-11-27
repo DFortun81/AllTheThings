@@ -34,7 +34,7 @@ _.Craftables =
 				i(55055),	-- Elementium Shield Spike
 				i(55057),	-- Pyrium Weapon Chain
 			}),
-			filter(20, {	-- Daggers
+			filter(DAGGERS, {
 				i(70155),	-- Brainsplinter
 				i(55044),	-- Cold-Forged Shank
 				i(55068),	-- Elementium Shank
@@ -42,34 +42,34 @@ _.Craftables =
 				i(55045),	-- Fire-Etched Dagger
 				i(70156),	-- Masterwork Elementium Spellblade
 			}),
-			filter(21, {	-- 1H Axes
+			filter(ONE_HANDED_AXES, {
 				i(55043),	-- Decapitator's Razor
 				i(55067),	-- Elementium Bonesplitter
 				i(67602),	-- Elementium Gutslicer
 				i(70158),	-- Elementium-Edged Scalper
 			}),
-			filter(23, {	-- 1H Maces
+			filter(ONE_HANDED_MACES, {
 				i(55065),	-- Elementium Hammer
 				i(55046),	-- Lifeforce Hammer
 				i(70157),	-- Lightforged Elementium Hammer
 			}),
-			filter(24, {	-- 2H Maces
+			filter(TWO_HANDED_MACES, {
 				i(67605),	-- Forged Elementium Mindcrusher
 			}),
-			filter(25, {	-- 1H Swords
+			filter(ONE_HANDED_SWORDS, {
 				i(70162),	-- Pyrium Spellward
 				i(70163),	-- Unbreakable Guardian
 			}),
-			filter(26, {	-- 2H Swords
+			filter(TWO_HANDED_SWORDS, {
 				i(70164),	-- Masterwork Elementium Deathblade
 				i(55052),	-- Obsidium Executioner
 			}),
-			filter(29, {	-- Polearms
+			filter(POLEARMS, {
 				i(55066),	-- Elementium Poleaxe
 				i(55246),	-- Obsidium Bladespear
 				i(70165),	-- Witch-Hunter's Harvester
 			}),
-			filter(8, {		-- Shield
+			filter(SHIELDS, {
 				i(55069),	-- Elementium Earthguard
 				i(55070),	-- Elementium Stormshield
 				i(55041),	-- Hardened Obsidium Shield
@@ -302,7 +302,7 @@ _.Craftables =
 				i(62234),	-- Dungeoneering Guide
 				i(62233),	-- Lord Rottington's Pressed Wisp Book
 			}),
-			filter(28, {	-- Staves
+			filter(STAVES, {
 				i(87565),	-- Key to the Planes
 				i(87562),	-- Rosethorn Staff
 				i(87566),	-- Runed Staff
@@ -310,7 +310,7 @@ _.Craftables =
 			}),
 		}),
 		prof(JEWELCRAFTING, {
-			filter(34, {	-- Fist Weapons
+			filter(FIST_WEAPONS, {
 				i(52492),	-- Carnelian Spikes
 				i(52493),	-- The Perforator
 			}),

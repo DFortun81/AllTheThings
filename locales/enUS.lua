@@ -728,7 +728,7 @@ app.L = {
 		[27] = GetItemSubClassInfo(2,19),						-- Wands
 		[28] = GetItemSubClassInfo(2,10),						-- Staffs
 		[29] = GetItemSubClassInfo(2,6),						-- Polearms
-		[30] = GetItemSubClassInfo(2,17),						-- Spears
+		-- Unused [30] = GetItemSubClassInfo(2,17),				-- Spears
 		[31] = GetItemSubClassInfo(2,3),						-- Guns
 		[32] = GetItemSubClassInfo(2,2),						-- Bows
 		[33] = GetItemSubClassInfo(2,18),						-- Crossbows
@@ -751,7 +751,7 @@ app.L = {
 		-- "Non-Equipment Types"
 		[100] = MOUNTS,											-- Mounts
 		[101] = AUCTION_CATEGORY_BATTLE_PETS,					-- Battle Pets
-		[102] = TOY_BOX,										-- Toy Box
+		[102] = "Toys",											-- Toy Box
 		[103] = "Illusions",									-- Illusions
 		[104] = ITEM_BIND_QUEST,								-- Quest Items
 		[105] = TRACKER_FILTER_ACHIEVEMENTS,					-- Achievements
@@ -1038,23 +1038,6 @@ app.L = {
 		[-328] = "Interface\\Icons\\inv_belt_24",											-- Waist
 		[-329] = "Interface\\Icons\\inv_pants_09",											-- Legs
 		[-330] = "Interface\\Icons\\inv_boots_09",											-- Feet
-	-- Weapon Slots
-		[-332] = "Interface\\Icons\\inv_shield_06",											-- Shield
-		[-333] = "Interface\\Icons\\inv_weapon_shortblade_01",								-- Daggers
-		[-334] = "Interface\\Icons\\inv_axe_17",											-- 1H Axes
-		[-335] = "Interface\\Icons\\inv_axe_09",											-- 2H Axes
-		[-336] = "Interface\\Icons\\inv_mace_02",											-- 1H Maces
-		[-337] = "Interface\\Icons\\inv_hammer_16",											-- 2H Maces
-		[-338] = "Interface\\Icons\\inv_sword_04",											-- 1H Swords
-		[-339] = "Interface\\Icons\\inv_sword_07",											-- 2H Swords
-		[-340] = "Interface\\Icons\\ability_demonhunter_chaosstrike",						-- Warglaives
-		[-341] = "Interface\\Icons\\inv_wand_02",											-- Wands
-		[-342] = "Interface\\Icons\\inv_staff_27",											-- Staffs
-		[-343] = "Interface\\Icons\\inv_spear_04",											-- Polearms
-		[-345] = "Interface\\Icons\\inv_weapon_rifle_01",									-- Guns
-		[-346] = "Interface\\Icons\\inv_weapon_bow_05",										-- Bows
-		[-347] = "Interface\\Icons\\inv_weapon_crossbow_01",								-- Crossbows
-		[-348] = "Interface\\Icons\\inv_misc_monsterclaw_02",								-- Fist Weapons
 	-- Titanforged/Warforged
 		[-355] = "Interface\\Icons\\misc_arrowlup",											-- Titanforged
 	-- First Questline Draenor
@@ -1606,23 +1589,6 @@ app.L = {
 		[-328] = INVTYPE_WAIST,													-- Waist
 		[-329] = INVTYPE_LEGS,													-- Legs
 		[-330] = INVTYPE_FEET,													-- Feet
-	-- Weapon Slots
-		[-332] = GetItemSubClassInfo(4,6),										-- Shield
-		[-333] = GetItemSubClassInfo(2,15),										-- Daggers
-		[-334] = GetItemSubClassInfo(2,0),										-- 1H Axes
-		[-335] = GetItemSubClassInfo(2,1),										-- 2H Axes
-		[-336] = GetItemSubClassInfo(2,4),										-- 1H Maces
-		[-337] = GetItemSubClassInfo(2,5),										-- 2H Maces
-		[-338] = GetItemSubClassInfo(2,7),										-- 1H Swords
-		[-339] = GetItemSubClassInfo(2,8),										-- 2H Swords
-		[-340] = GetItemSubClassInfo(2,9),										-- Warglaives
-		[-341] = GetItemSubClassInfo(2,19),										-- Wands
-		[-342] = GetItemSubClassInfo(2,10),										-- Staffs
-		[-343] = GetItemSubClassInfo(2,6),										-- Polearms
-		[-345] = GetItemSubClassInfo(2,3),										-- Guns
-		[-346] = GetItemSubClassInfo(2,2),										-- Bows
-		[-347] = GetItemSubClassInfo(2,18),										-- Crossbows
-		[-348] = GetItemSubClassInfo(2,13),										-- Fist Weapons
 	-- Titanforged/Warforged
 		[-355] = GetSpellInfo(257215),											-- Titanforged
 	-- First Questline Draenor

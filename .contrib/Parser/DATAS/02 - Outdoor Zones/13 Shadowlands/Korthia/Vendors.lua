@@ -186,7 +186,7 @@ _.Zones =
 									i(186771),	-- Vault Patroller's Slicer*
 									i(186766),	-- Vault Patroller's Staff
 								}),
-								f(3,    {	-- Cloaks
+								n(BACK, {
 									i(186770),	-- Vault Attendant's Cape*
 									i(185905),	-- Vault Guardian's Drape*
 								}),

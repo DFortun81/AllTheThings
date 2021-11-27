@@ -6,7 +6,7 @@ _.WorldDrops =
 {
 	tier(TBC_TIER, {
 		n(WEAPONS, {
-			n(-334, {	-- 1H Axes
+			filter(ONE_HANDED_AXES, {
 				i(25198),	-- Karaborian Battle Axe
 				i(25199),	-- Knight's War Axe
 				i(25200),	-- Jagged Broadaxe
@@ -23,7 +23,7 @@ _.WorldDrops =
 				i(25211),	-- Rockbiter Cutter
 				i(31153),	-- Axe of the Legion
 			}),
-			n(-335, {	-- 2H Axes
+			filter(TWO_HANDED_AXES, {
 				i(25212),	-- Lucky Strike Axe
 				i(25213),	-- Fel-Touched Axe
 				i(25214),	-- Mok'Nathal Battleaxe
@@ -41,7 +41,7 @@ _.WorldDrops =
 				i(31291),	-- Crystalforged War Axe
 				i(31318),	-- Singing Crystal Axe
 			}),
-			n(-346, {	-- Bows
+			filter(BOWS, {
 				i(25240),	-- Azerothian Longbow
 				i(25241),	-- Ashenvale Longbow
 				i(25242),	-- Telaari Longbow
@@ -58,7 +58,7 @@ _.WorldDrops =
 				i(25253),	-- Windspear Longbow
 				i(31303),	-- Valanos' Longbow
 			}),
-			n(-347, {	-- Crossbows
+			filter(CROSSBOWS, {
 				i(25254),	-- Tower Crossbow
 				i(25255),	-- Ram's Head Crossbow
 				i(25256),	-- Stronghold Crossbow
@@ -74,7 +74,7 @@ _.WorldDrops =
 				i(25266),	-- Well-Balanced Crossbow
 				i(25267),	-- Rampant Crossbow
 			}),
-			n(-333, {	-- Daggers
+			filter(DAGGERS, {
 				i(25100),	-- Liege Blade
 				i(25101),	-- Cross Pommel Dagger
 				i(25102),	-- Jaedenis Dagger
@@ -108,7 +108,7 @@ _.WorldDrops =
 				i(31305),	-- Ced's Carver
 				i(31331),	-- The Night Blade
 			}),
-			n(-348, {	-- Fist Weapons
+			filter(FIST_WEAPONS, {
 				i(25184),	-- Ravager Claws
 				i(25185),	-- Thrasher Blades
 				i(25186),	-- Vampiric Handscythes
@@ -125,7 +125,7 @@ _.WorldDrops =
 				i(25197),	-- Razor Scythes
 				i(30755),	-- Mag'hari Fighting Claw
 			}),
-			n(-345, {	-- Guns
+			filter(GUNS, {
 				i(25268),	-- Lead-Slug Shotgun
 				i(25269),	-- Longbeard Rifle
 				i(25270),	-- Gnomish Assault Rifle
@@ -159,7 +159,7 @@ _.WorldDrops =
 				i(25098),	-- Tuurik Torch
 				i(25099),	-- Draenei Crystal Rod
 			}),
-			n(-336, {	-- 1H Maces
+			filter(ONE_HANDED_MACES, {
 				i(25114),	-- Doomsayer's Mace
 				i(25115),	-- Riversong Mace
 				i(25116),	-- Pneumatic War Hammer
@@ -192,7 +192,7 @@ _.WorldDrops =
 				i(31304),	-- The Essence Focuser
 				i(31342),	-- The Ancient Scepter of Sue-Min
 			}),
-			n(-337, {	-- 2H Maces
+			filter(TWO_HANDED_MACES, {
 				i(25128),	-- Shining Mace
 				i(25129),	-- Giant's Leg Bone
 				i(25130),	-- Gronn-Bone Club
@@ -210,7 +210,7 @@ _.WorldDrops =
 				i(31299),	-- The Oathkeeper
 				i(31322),	-- The Hammer of Destiny
 			}),
-			n(-343, {	-- Polearms
+			filter(POLEARMS, {
 				i(25226),	-- War Scythe
 				i(25227),	-- Sha'tari Longspear
 				i(25228),	-- Halberd Polearm
@@ -226,7 +226,7 @@ _.WorldDrops =
 				i(25238),	-- Hellfire War Spear
 				i(25239),	-- Legend's Glaive
 			}),
-			n(-332, {	-- Shield
+			filter(SHIELDS, {
 				i(25072),	-- Northman's Shield
 				i(25073),	-- Emperor Shield
 				i(25074),	-- Telaari Shield
@@ -245,7 +245,7 @@ _.WorldDrops =
 				i(31292),	-- Crystal Pulse Shield
 				i(25075),	-- Hardened Steel Shield
 			}),
-			n(-342, {	-- Staves
+			filter(STAVES, {
 				i(25170),	-- Rattan Bo Staff
 				i(25171),	-- Straight Hardwood Staff
 				i(25172),	-- Jinbali Warp-Staff
@@ -278,7 +278,7 @@ _.WorldDrops =
 				i(31308),	-- The Bringer of Death
 				i(31334),	-- Staff of Natural Fury
 			}),
-			n(-338, {	-- 1H Swords
+			filter(ONE_HANDED_SWORDS, {
 				i(25142),	-- Telaari Longblade
 				i(25143),	-- Silver Hand Blade
 				i(25144),	-- Skettis Curved Blade
@@ -299,7 +299,7 @@ _.WorldDrops =
 				i(31332),	-- Blinkstrike
 				i(31336),	-- Blade of Wizardry
 			}),
-			n(-339, {	-- 2H Swords
+			filter(TWO_HANDED_SWORDS, {
 				i(25156),	-- Royal Crusader Sword
 				i(25157),	-- Serpentlord Claymore
 				i(25158),	-- Skeletal Broadsword
@@ -316,7 +316,7 @@ _.WorldDrops =
 				i(25169),	-- Fel Orc Brute Sword
 				i(31134),	-- Blade of Misfortune
 			}),
-			n(-341, {	-- Wands
+			filter(WANDS, {
 				i(25282),	-- Mahogany Wand
 				i(25283),	-- Crystallized Ebony Wand
 				i(25284),	-- Purpleheart Wand

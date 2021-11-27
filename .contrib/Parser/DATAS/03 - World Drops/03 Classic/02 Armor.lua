@@ -292,8 +292,6 @@ _.WorldDrops =
 				i(12988),	-- Starsight Tunic
 				i(13110),	-- Wolffear Harness
 			}),
-			n(-324, {	-- Shirt
-			}),
 			n(WRIST, {
 				i(13199),	-- Crushridge Bindings
 				i(13120),	-- Deepfury Bracers
