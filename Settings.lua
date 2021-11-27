@@ -184,7 +184,6 @@ local TooltipSettingsBase = {
 		["SummarizeThings"] = true,
 		["Warn:Difficulty"] = false,
 		["Warn:Removed"] = true,
-		["Updates:AdHoc"] = true,
 	},
 };
 
