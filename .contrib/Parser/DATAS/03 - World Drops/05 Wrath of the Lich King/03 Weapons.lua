@@ -136,7 +136,7 @@ _.WorldDrops =
 				i(36654),	-- Harsh-Winter Rifle
 				i(50444),	-- Rowan's Rifle of Silver Bullets
 			}),
-			n(-331, {	-- Held in Off-hand
+			filter(HELD_IN_OFF_HAND, {
 				i(36459),	-- Icy Orb
 				i(36460),	-- Northern Star
 				i(36461),	-- Demon-Skull Orb

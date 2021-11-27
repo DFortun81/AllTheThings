@@ -69,7 +69,7 @@ _.Instances = { tier(BFA_TIER, {
 						["f"] = 8,	-- Shield
 					}),
 					i(175009, {	-- Zealous Ritualist's Reverie
-						["f"] = 1,	-- Held in Off-hand
+						["f"] = HELD_IN_OFF_HAND,
 					}),
 				}),
 				ach(14193, {	-- Vision of Destiny
@@ -321,7 +321,7 @@ _.Instances = { tier(BFA_TIER, {
 						["f"] = 8,	-- Shield
 					}),
 					i(175009, {	-- Zealous Ritualist's Reverie
-						["f"] = 1,	-- Held in Off-hand
+						["f"] = HELD_IN_OFF_HAND,
 					}),
 				}),
 				e(2368, {	-- Wrathion, the Black Emperor
@@ -554,7 +554,7 @@ _.Instances = { tier(BFA_TIER, {
 						["f"] = 8,	-- Shield
 					}),
 					i(175009, {	-- Zealous Ritualist's Reverie
-						["f"] = 1,	-- Held in Off-hand
+						["f"] = HELD_IN_OFF_HAND,
 					}),
 				}),
 				e(2368, {	-- Wrathion, the Black Emperor
@@ -790,7 +790,7 @@ _.Instances = { tier(BFA_TIER, {
 						["f"] = 8,	-- Shield
 					}),
 					i(175009, {	-- Zealous Ritualist's Reverie
-						["f"] = 1,	-- Held in Off-hand
+						["f"] = HELD_IN_OFF_HAND,
 					}),
 				}),
 				e(2368, {	-- Wrathion, the Black Emperor

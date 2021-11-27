@@ -206,7 +206,7 @@ _.Craftables =
 				i(60223),	-- High-Powered Bolt Gun
 				i(70139),	-- Flintlocke's Woodchucker
 			}),
-			n(-318, {	-- Armour
+			n(ARMOR, {
 				-- Head
 				i(59455),	-- Agile Bio-Optic Killshades*
 				i(59453),	-- Camouflage Bio-Optic Killshades*
@@ -295,7 +295,7 @@ _.Craftables =
 					}),
 				}),
 			}),
-			filter(1, {	-- Off-hand
+			filter(HELD_IN_OFF_HAND, {
 				i(62236),	-- Battle Tome
 				i(62231),	-- Book of Blood
 				i(62235),	-- Divine Companion

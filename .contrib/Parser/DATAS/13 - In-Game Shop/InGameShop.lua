@@ -135,7 +135,7 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE },{
 			["u"] = REMOVED_FROM_GAME,
 		}),
 	}),
-	filter(2, {	-- Cosmetic
+	filter(COSMETIC, {
 		i(95475, {			-- Crown of Eternal Winter
 			["u"] = REMOVED_FROM_GAME,
 		}),

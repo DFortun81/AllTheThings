@@ -1111,7 +1111,7 @@ _.NeverImplemented =
 			--SL
 			i(167150),	-- QA Combat Test Cloak 1(9.0.5?)
 		}),
-		n(-349, {	-- Cosmetic
+		filter(COSMETIC, {
 			i(52488),	-- Jeweler's Sapphire Monocle (other version got added)
 			i(116399),	-- Emerald Sunglasses (WoD Beta)
 			i(133996),	-- Was testing version, they added i(134022))	-- Burgy Blackheart's Handsome Hat
@@ -3109,7 +3109,7 @@ _.NeverImplemented =
 			i(165270),	-- Fallback Weapon - Gun
 
 		}),
-		n(-331, {	-- Held in Offhand
+		filter(HELD_IN_OFF_HAND, {
 			-- ItemID/Retrieving
 			i(18316),	-- Obsidian Bauble
 			i(19989),	-- Tome of Devouring Shadows

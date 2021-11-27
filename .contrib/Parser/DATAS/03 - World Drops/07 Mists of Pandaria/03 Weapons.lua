@@ -87,7 +87,7 @@ _.WorldDrops =
 				i(87477),	-- Penate's Penance-Procuring Pistol
 				i(94094),	-- Hexbelcher Rifle
 			}),
-			n(-331, {	-- Held in Off-hand
+			filter(HELD_IN_OFF_HAND, {
 				i(82010),	-- Intricate Crystal
 				i(82062),	-- Gemmed Crystal
 				i(82117),	-- Shamanic Crystal

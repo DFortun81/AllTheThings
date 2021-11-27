@@ -588,8 +588,8 @@ FEET = -330;
 NECK = -384;
 FINGER = -385;
 -- Meta Slot
+ARMOR = -318;
 WEAPONS = -319;
-ARMOR = -163;
 
 -- D&R
 COMMON_BOSS_DROPS = -1;
@@ -706,6 +706,8 @@ SEVENTEENTH_ANNIVERSARY = -5366;
 --------------------------
 
 -- Filters
+HELD_IN_OFF_HAND = 1;
+COSMETIC = 2;
 CLOTH = 4;
 LEATHER = 5;
 MAIL = 6;

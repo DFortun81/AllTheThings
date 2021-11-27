@@ -280,7 +280,7 @@ _.Craftables =
 				i(77527),	-- Big Game Hunter*
 				i(77528),	-- Long-Range Trillium Sniper*
 			}),
-			n(-318, {	-- Armour
+			n(ARMOR, {
 				-- Head
 				i(77534),	-- Agile Retinal Armor*
 				i(77535),	-- Camouflage Retinal Armor*
@@ -361,7 +361,7 @@ _.Craftables =
 			filter(53, {	-- Trinkets
 				i(102483),	-- Crafted Malevolent Gladiator's Medallion of Tenacity
 			}),
-			filter(1, {	-- Off-hand
+			filter(HELD_IN_OFF_HAND, {
 				i(79333),	-- Inscribed Fan
 				i(79334, {	-- Inscribed Jade Fan
 					["cost"] = { { "i", 79333, 1 }, },	-- Inscribed Fan

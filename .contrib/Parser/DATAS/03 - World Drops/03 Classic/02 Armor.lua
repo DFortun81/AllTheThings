@@ -5,7 +5,7 @@
 _.WorldDrops =
 {
 	tier(CLASSIC_TIER, {
-		n(-318, {	-- Armor
+		n(ARMOR, {
 			n(HEAD, {
 				i(13102),	-- Cassandra's Grace
 				i(3020),	-- Enduring Cap

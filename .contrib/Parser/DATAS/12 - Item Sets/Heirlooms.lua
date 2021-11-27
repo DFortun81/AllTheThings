@@ -179,7 +179,7 @@ _.GearSets =
 					},
 				}),
 			}),
-			n(-318, {	-- Armor
+			n(ARMOR, {
 				n(BACK, {
 					un(REMOVED_FROM_GAME, i(62040)),	-- Ancient Bloodmoon Cloak
 					i(122262),	-- Ancient Bloodmoon Cloak

@@ -5,7 +5,7 @@
 _.WorldDrops =
 {
 	tier(WOD_TIER, {
-		n(-318, {	-- Armor
+		n(ARMOR, {
 			n(HEAD, {
 				i(118857),	-- Casque of Defiance
 				i(118896),	-- Helmet of Vile Indignation

@@ -219,7 +219,7 @@ _.Craftables =
 				i(39688),	-- Mark "S" Boomstick*
 				i(44504),	-- Nesingwary 4000*
 			}),
-			n(-318, {	-- Armour
+			n(ARMOR, {
 				-- Head
 				i(42549),	-- Armored Titanium Goggles*
 				i(42552),	-- Charged Titanium Specs*
@@ -297,7 +297,7 @@ _.Craftables =
 					}),
 				}),
 			}),
-			filter(1, {	-- Off-hand
+			filter(HELD_IN_OFF_HAND, {
 				i(44210),	-- Faces of Doom
 				i(38322),	-- Iron-Bound Tome
 				i(45854),	-- Rituals of the New Moon

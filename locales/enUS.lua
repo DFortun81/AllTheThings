@@ -805,7 +805,7 @@ app.L = {
 		[55] = "Interface\\Icons\\INV_Drink_25_HoneyTea",						-- Consumables
 		[59] = "Interface\\Icons\\INV_Misc_Book_03",							-- Class Books
 		[100] = app.asset("Category_Mounts"),									-- Mounts
-		[101] = app.asset("Category_PetBattles"),								-- Battle Pets
+		[101] = "Interface\\Icons\\Tracking_WildPet",							-- Battle Pet
 		[102] = app.asset("Category_ToyBox"),									-- Toys
 		[103] = "Interface\\Icons\\inv_inscription_weaponscroll03",				-- Illusions
 		[111] = "Interface\\Icons\\Inv_glyph_minorwarrior",						-- Glyph
@@ -973,8 +973,6 @@ app.L = {
 		[-158] = "Interface\\Icons\\achievement_zone_feralas",								-- Feralas Activated
 	-- Class Hall /Artifact
 		-- [-159] = Uses different icons													-- Daily Dreamway Event Roll
-	-- Armor
-		[-163] = "Interface\\Icons\\garrison_purplearmor",									-- Armor
 	-- Junkboxes
 		[-165] = "Interface\\Icons\\inv_box_01",											-- Junkboxes
 	-- Emissary
@@ -1041,7 +1039,6 @@ app.L = {
 		[-329] = "Interface\\Icons\\inv_pants_09",											-- Legs
 		[-330] = "Interface\\Icons\\inv_boots_09",											-- Feet
 	-- Weapon Slots
-		[-331] = "Interface\\Icons\\inv_misc_orb_01",										-- Held in Off-hand
 		[-332] = "Interface\\Icons\\inv_shield_06",											-- Shield
 		[-333] = "Interface\\Icons\\inv_weapon_shortblade_01",								-- Daggers
 		[-334] = "Interface\\Icons\\inv_axe_17",											-- 1H Axes
@@ -1058,8 +1055,6 @@ app.L = {
 		[-346] = "Interface\\Icons\\inv_weapon_bow_05",										-- Bows
 		[-347] = "Interface\\Icons\\inv_weapon_crossbow_01",								-- Crossbows
 		[-348] = "Interface\\Icons\\inv_misc_monsterclaw_02",								-- Fist Weapons
-	-- Cosmetic
-		[-349] = "Interface\\Icons\\Ability_Mage_IceForm",									-- Cosmetic
 	-- Titanforged/Warforged
 		[-355] = "Interface\\Icons\\misc_arrowlup",											-- Titanforged
 	-- First Questline Draenor
@@ -1157,7 +1152,7 @@ app.L = {
 	-- Quest Items - Used in NYI
 		--[-600] = Doesnt need icon															-- Quest Items
 	-- PvP Headers
-		--[-650] = 1455894,																	-- Rated Battlegrounds
+		[-650] = 1455894,																	-- Rated Battlegrounds
 		--[-651] = "Interface\\Worldmap\\GlowSkull_64Grey",									-- Not used yet. Future PvP Icons if needed
 		--[-652] = "Interface\\Worldmap\\GlowSkull_64",										-- Not used yet. Future PvP Icons if needed
 		[-651] = "Interface\\Icons\\inv_pandarenserpentmount_white",						-- Honor Gear Prideful (S15)
@@ -1546,8 +1541,6 @@ app.L = {
 		[-160] = TUTORIAL_TITLE53,												-- Mounts
 		[-161] = TOY_BOX,														-- Toy Box
 		[-162] = PETS,															-- Pets
-	-- Armor
-		[-163] = RESISTANCE0_NAME,												-- Armor
 	-- Junkboxes
 		[-165] = GetItemSubClassInfo(13,1),										-- Junkboxes
 	-- Emissary
@@ -1614,7 +1607,6 @@ app.L = {
 		[-329] = INVTYPE_LEGS,													-- Legs
 		[-330] = INVTYPE_FEET,													-- Feet
 	-- Weapon Slots
-		[-331] = INVTYPE_HOLDABLE,												-- Held in Off-hand
 		[-332] = GetItemSubClassInfo(4,6),										-- Shield
 		[-333] = GetItemSubClassInfo(2,15),										-- Daggers
 		[-334] = GetItemSubClassInfo(2,0),										-- 1H Axes
@@ -1631,8 +1623,6 @@ app.L = {
 		[-346] = GetItemSubClassInfo(2,2),										-- Bows
 		[-347] = GetItemSubClassInfo(2,18),										-- Crossbows
 		[-348] = GetItemSubClassInfo(2,13),										-- Fist Weapons
-	-- Cosmetic
-		[-349] = GetItemSubClassInfo(4,5),										-- Cosmetic
 	-- Titanforged/Warforged
 		[-355] = GetSpellInfo(257215),											-- Titanforged
 	-- First Questline Draenor

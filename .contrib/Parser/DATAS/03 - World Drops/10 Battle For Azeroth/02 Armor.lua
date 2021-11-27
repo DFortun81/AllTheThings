@@ -5,7 +5,7 @@
 _.WorldDrops =
 {
 	tier(BFA_TIER, {
-		n(-318, {	-- Armor
+		n(ARMOR, {
 			n(BACK, {
 				i(160161),	-- Faithless Skycloak
 				i(154848),	-- Heartsbane Greatcloak

@@ -20,7 +20,7 @@ _.Craftables =
 					["classes"] = { DRUID },
 				}),
 			}),
-			filter(1, {	-- Off-hand
+			filter(HELD_IN_OFF_HAND, {
 				i(161936),	-- Honorable Combatant's Etched Vessel [Alliance]
 				i(159940),	-- Honorable Combatant's Etched Vessel [Horde]
 				i(161934),	-- Inscribed Vessel of Mysticism [Alliance]

@@ -5,7 +5,7 @@
 _.WorldDrops =
 {
 	tier(CATA_TIER, {
-		n(-318, {	-- Armor
+		n(ARMOR, {
 			n(HEAD, {
 				i(66931),	-- Mercury-Coated Hood
 				i(66955),	-- Scentsniffer Hood

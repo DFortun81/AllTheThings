@@ -1259,7 +1259,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				["description"] = "Interestingly enough, you can fish this out of the lava in Ironforge. I guess the gnomes failed their quest...",
 			}),
 		}),
-		filter(1, {		-- Held in Off-hand
+		filter(HELD_IN_OFF_HAND, {
 			i(6292),	-- 10 Pound Mud Snapper
 			i(6294),	-- 12 Pound Mud Snapper
 			i(6295),	-- 15 Pound Mud Snapper
@@ -1444,7 +1444,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				i(37160),	-- Four of Swords
 			}),
 		}),
-		filter(1, {	-- Off-hand
+		filter(HELD_IN_OFF_HAND, {
 			i(43661),	-- Book of Stars
 			i(43655),	-- Book of Survival
 			i(43660),	-- Fire Eater's Guide

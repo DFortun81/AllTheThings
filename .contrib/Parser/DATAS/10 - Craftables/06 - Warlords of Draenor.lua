@@ -131,7 +131,7 @@ _.Craftables =
 				}),
 				WOD_CRAFTED_ITEM(109168, 128017),	-- Shrediron's Shredder* + True Iron Trigger*
 			}),
-			n(-318, {	-- Armour
+			n(ARMOR, {
 				WOD_CRAFTED_IDENTICAL_ITEM(109173, 128011),	-- Cybergenetic Mechshades* + Linkgrease Locksprocket
 				WOD_CRAFTED_IDENTICAL_ITEM(109171, 128011),	-- Night-Vision Mechshades* + Linkgrease Locksprocket
 				WOD_CRAFTED_IDENTICAL_ITEM(109172, 128011),	-- Plasma Mechshades* + Linkgrease Locksprocket
@@ -163,7 +163,7 @@ _.Craftables =
 				i(118601),	-- Ocean Tarot
 				i(118603),	-- Savage Tarot
 			}),
-			filter(1, {	-- Off-hand
+			filter(HELD_IN_OFF_HAND, {
 				i(113270, {	-- Shadowtome
 					["timeline"] = { "created 9.0" },
 				}),

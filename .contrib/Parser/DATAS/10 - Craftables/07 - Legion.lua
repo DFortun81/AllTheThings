@@ -190,7 +190,7 @@ _.Craftables =
 				i(132518),	-- Blingtron's Circuit Design Tutorial*
 				i(151652),	-- Wormhole Generator: Argus*
 			}),
-			n(-318, {	-- Armour
+			n(ARMOR, {
 				i(132500),	-- Blink-Trigger Headgun*
 				i(132502),	-- Bolt-Action Headgun*
 				i(144333),	-- Chain Skullblasters*
@@ -346,7 +346,7 @@ _.Craftables =
 			}),
 		}),
 		prof(LEATHERWORKING, {
-			n(-349, {	-- Cosmetic
+			filter(COSMETIC, {
 				un(FEAST_OF_WINTER_VEIL, i(151791)),	-- Winter Boots
 			}),
 			filter(LEATHER, {

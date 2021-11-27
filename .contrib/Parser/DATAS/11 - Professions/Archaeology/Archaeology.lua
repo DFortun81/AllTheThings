@@ -334,7 +334,7 @@ profession(ARCHAEOLOGY, {
 		}),
 	}),
 	currency(821,  {	-- Draenor Clans
-		n(-318, {	-- Armor
+		n(ARMOR, {
 			i(116985),	-- Headdress of the First Shaman
 		}),
 		filter(BATTLE_PETS, {
@@ -766,7 +766,7 @@ profession(ARCHAEOLOGY, {
 		}),
 	}),
 	currency(393,  {	-- Fossil
-		n(-318, {	-- Armor
+		n(ARMOR, {
 			i(69764),	-- Extinct Turtle Shell
 		}),
 		filter(BATTLE_PETS, {
@@ -1314,7 +1314,7 @@ profession(ARCHAEOLOGY, {
 		}),
 	}),
 	currency(394,  {	-- Night Elf
-		n(-318, {	-- Armor
+		n(ARMOR, {
 			i(64643),	-- Queen Azshara's Dressing Gown
 		}),
 		f(50,   {	-- Miscellaneous
@@ -1501,7 +1501,7 @@ profession(ARCHAEOLOGY, {
 		}),
 	}),
 	currency(397,  {	-- Orc
-		n(-318, {	-- Armor
+		n(ARMOR, {
 			i(64644),	-- Headdress of the First Shaman
 		}),
 		f(50,   {	-- Miscellaneous

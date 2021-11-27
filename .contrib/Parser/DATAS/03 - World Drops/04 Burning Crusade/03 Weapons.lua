@@ -143,7 +143,7 @@ _.WorldDrops =
 				i(31204),	-- The Gunblade
 				i(31323),	-- Don Santos' Famous Hunting Rifle
 			}),
-			n(-331, {	-- Held in Off-hand
+			filter(HELD_IN_OFF_HAND, {
 				i(25086),	-- Dreamseeker Dandelion
 				i(25087),	-- Bleeding Eye
 				i(25088),	-- Laughing Skull Orb
