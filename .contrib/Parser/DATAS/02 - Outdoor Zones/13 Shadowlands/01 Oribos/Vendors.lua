@@ -472,7 +472,7 @@ _.Zones =
 							i(186873),	-- Cosmic Aspirant's Cloak
 							i(186909),	-- Cosmic Aspirant's Drape
 						}),
-						n(-43,  {	-- Cloth
+						filter(CLOTH, {
 							i(186934),	-- Cosmic Aspirant's Silk Belt
 							i(186938),	-- Cosmic Aspirant's Silk Bindings
 							i(186898),	-- Cosmic Aspirant's Silk Cord
@@ -495,7 +495,7 @@ _.Zones =
 							i(186901),	-- Cosmic Aspirant's Ring
 							i(186945),	-- Cosmic Aspirant's Signet
 						}),
-						n(-44,  {	-- Leather
+						filter(LEATHER, {
 							i(186941),	-- Cosmic Aspirant's Leather Armguards
 							i(186900),	-- Cosmic Aspirant's Leather Belt
 							i(186881),	-- Cosmic Aspirant's Leather Boots
@@ -513,7 +513,7 @@ _.Zones =
 							i(186877),	-- Cosmic Aspirant's Leather Vest
 							i(186905),	-- Cosmic Aspirant's Leather Wristwraps
 						}),
-						n(-45,  {	-- Mail
+						filter(MAIL, {
 							i(186899),	-- Cosmic Aspirant's Chain Belt
 							i(186940),	-- Cosmic Aspirant's Chain Bracer
 							i(186935),	-- Cosmic Aspirant's Chain Clasp
@@ -536,7 +536,7 @@ _.Zones =
 							i(186907),	-- Cosmic Aspirant's Necklace
 							i(186947),	-- Cosmic Aspirant's Pendant
 						}),
-						n(-46,  {	-- Plate
+						filter(PLATE, {
 							i(186939),	-- Cosmic Aspirant's Plate Armguards
 							i(186911),	-- Cosmic Aspirant's Plate Armor
 							i(186875),	-- Cosmic Aspirant's Plate Chestplate
@@ -1178,7 +1178,7 @@ _.Zones =
 							i(186783),	-- Cosmic Gladiator's Greatcloak
 							i(186782),	-- Cosmic Gladiator's Shawl
 						}),
-						n(-43,  {	-- Cloth
+						filter(CLOTH, {
 							i(186801),	-- Cosmic Gladiator's Silk Amice
 							i(186805),	-- Cosmic Gladiator's Silk Armbands
 							i(186803),	-- Cosmic Gladiator's Silk Belt
@@ -1201,7 +1201,7 @@ _.Zones =
 							i(186784),	-- Cosmic Gladiator's Ring
 							i(186786),	-- Cosmic Gladiator's Signet
 						}),
-						n(-44,  {	-- Leather
+						filter(LEATHER, {
 							i(186818),	-- Cosmic Gladiator's Leather Belt
 							i(186808),	-- Cosmic Gladiator's Leather Boots
 							i(186814),	-- Cosmic Gladiator's Leather Breeches
@@ -1219,7 +1219,7 @@ _.Zones =
 							i(186821),	-- Cosmic Gladiator's Leather Wristguards
 							i(186820),	-- Cosmic Gladiator's Leather Wristwraps
 						}),
-						n(-45,  {	-- Mail
+						filter(MAIL, {
 							i(186834),	-- Cosmic Gladiator's Chain Belt
 							i(186825),	-- Cosmic Gladiator's Chain Boots
 							i(186837),	-- Cosmic Gladiator's Chain Bracers
@@ -1242,7 +1242,7 @@ _.Zones =
 							i(186787),	-- Cosmic Gladiator's Necklace
 							i(186788),	-- Cosmic Gladiator's Pendant
 						}),
-						n(-46,  {	-- Plate
+						filter(PLATE, {
 							i(186838),	-- Cosmic Gladiator's Plate Chestguard
 							i(186839),	-- Cosmic Gladiator's Plate Chestplate
 							i(186842),	-- Cosmic Gladiator's Plate Gauntlets
