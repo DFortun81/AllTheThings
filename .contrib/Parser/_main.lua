@@ -589,8 +589,6 @@ NECK = -384;
 FINGER = -385;
 -- Meta Slot
 WEAPONS = -319;
-
--- Armor
 ARMOR = -163;
 
 -- D&R
