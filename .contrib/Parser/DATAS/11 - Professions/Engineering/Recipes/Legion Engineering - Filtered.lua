@@ -1,5 +1,5 @@
 profession(ENGINEERING, {
-	filter(200, {
+	filter(RECIPES, {
 		{
 			["name"] = "Legion Engineering",
 			["categoryID"] = 469,

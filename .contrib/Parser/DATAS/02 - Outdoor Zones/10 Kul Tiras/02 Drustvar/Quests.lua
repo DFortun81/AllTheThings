@@ -1548,13 +1548,13 @@ _.Zones =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(BFA_TIER, {
-		n(-163, {	-- Armor
-			n(-43, {	-- Cloth
+		n(ARMOR, {
+			filter(CLOTH, {
 				i(155465),	-- Wickerwoven Cord
 				i(158603),	-- Wickerwoven Handwraps
 				i(160197),	-- Wickerwoven Pantaloons
 			}),
-			n(-44, {	-- Leather
+			filter(LEATHER, {
 				i(158589),	-- Banisher Striders
 				i(158604),	-- Banisher Mitts
 				i(158620),	-- Banisher Waistwrap
@@ -1562,7 +1562,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(160198),	-- Banisher Britches
 				i(155473),	-- Banisher Cinch
 			}),
-			n(-45, {	-- Mail
+			filter(MAIL, {
 				i(158590),	-- Crone-Seeker's Striders
 				i(158605),	-- Crone-Seeker's Grips
 				i(158621),	-- Crone-Seeker's Cincture
@@ -1570,7 +1570,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(160199),	-- Crone-Seeker's Leggings
 				i(155481),	-- Crone-Seeker's Chain
 			}),
-			n(-46, {	-- Plate
+			filter(PLATE, {
 				i(158591),	-- Waycrest Militia Footguards
 				i(158606),	-- Waycrest Militia Gloves
 				i(158622),	-- Waycrest Militia Buckle

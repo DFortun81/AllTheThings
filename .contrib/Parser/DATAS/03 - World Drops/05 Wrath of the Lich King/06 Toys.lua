@@ -5,7 +5,7 @@
 _.WorldDrops =
 {
 	tier(WOTLK_TIER, {
-		n(TOYS, {
+		filter(TOYS, {
 			i(37254),	-- Super Simian Sphere
 		}),
 	}),

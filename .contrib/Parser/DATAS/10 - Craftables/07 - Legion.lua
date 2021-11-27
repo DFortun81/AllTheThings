@@ -128,7 +128,7 @@ _.Craftables =
 			}),
 		}),
 		prof(BLACKSMITHING, {
-			n(MOUNTS, {
+			filter(MOUNTS, {
 				i(137686),	-- Steelbound Harness
 			}),
 			filter(54, {	-- Relics
@@ -178,7 +178,7 @@ _.Craftables =
 				i(128535),	-- Enchanted Pen
 				i(128534),	-- Enchanted Torch
 			}),
-			n(TOYS, {
+			filter(TOYS, {
 				i(128536),	-- Leylight Brazier
 			}),
 		}),
@@ -186,7 +186,7 @@ _.Craftables =
 			filter(BATTLE_PETS, {
 				i(132519),	-- Trigger*
 			}),
-			n(TOYS, {
+			filter(TOYS, {
 				i(132518),	-- Blingtron's Circuit Design Tutorial*
 				i(151652),	-- Wormhole Generator: Argus*
 			}),
@@ -275,7 +275,7 @@ _.Craftables =
 			sp(227043, {	-- Tome of the Tranquil Mind
 				i(141446),	-- Tome of the Tranquil Mind
 			}),
-			n(TOYS, {
+			filter(TOYS, {
 				i(129211),	-- Steamy Romance Novel Kit
 			}),
 			filter(53, {	-- Trinkets
@@ -306,7 +306,7 @@ _.Craftables =
 			}),
 		}),
 		prof(JEWELCRAFTING, {
-			n(TOYS, {
+			filter(TOYS, {
 				i(130254),	-- Chatterstone
 				i(130251),	-- JewelCraft
 			}),
@@ -349,7 +349,7 @@ _.Craftables =
 			n(-349, {	-- Cosmetic
 				un(FEAST_OF_WINTER_VEIL, i(151791)),	-- Winter Boots
 			}),
-			n(-44, {	-- Leather
+			filter(LEATHER, {
 				i(128890),	-- Dreadleather Belt
 				i(128891),	-- Dreadleather Bindings
 				i(128885),	-- Dreadleather Footpads
@@ -369,7 +369,7 @@ _.Craftables =
 				i(128880),	-- Warhide Pants
 				i(128881),	-- Warhide Shoulderguard
 			}),
-			n(-45, {	-- Mail
+			filter(MAIL, {
 				i(128899),	-- Battlebound Armbands
 				i(128898),	-- Battlebound Girdle
 				i(128894),	-- Battlebound Grips
@@ -441,7 +441,7 @@ _.Craftables =
 				i(127032),	-- Silkweave Flourish
 				i(127031),	-- Silkweave Shade
 			}),
-			n(-43, {	-- Cloth
+			filter(CLOTH, {
 				i(146666),	-- Celumbra, the Night's Dichotomy
 				i(151771),	-- Festival Dress
 				i(151772),	-- Festival Suit

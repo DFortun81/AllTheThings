@@ -1,5 +1,5 @@
 profession(ALCHEMY, {
-	filter(200, {
+	filter(RECIPES, {
 		{
 			["name"] = "Zandalari Alchemy",
 			["categoryID"] = 592,

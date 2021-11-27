@@ -13,23 +13,23 @@ _.Craftables =
 				i(172921),	-- Infra-green Reflex Sight
 			}),
 			n(HEAD, {
-				filter(4, {	-- Cloth
+				filter(CLOTH, {
 					i(172905),	-- Flexible Ectoplasmic Specs
 				}),
-				filter(5, {	-- Leather
+				filter(LEATHER, {
 					i(172906),	-- Grounded Ectoplasmic Specs
 				}),
-				filter(6, {	-- Mail
+				filter(MAIL, {
 					i(172907),	-- Articulated Ectoplasmic Specs
 				}),
-				filter(7, {	-- Plate
+				filter(PLATE, {
 					i(172908),	-- Reinforced Ectoplasmic Specs
 				}),
 			}),
 			filter(31, {	-- Guns
 				i(172923)	-- Precision Lifeforce Inverter
 			}),
-			n(TOYS, {
+			filter(TOYS, {
 				i(172924)	-- Wormhole Generator: Shadowlands
 			}),
 		}),

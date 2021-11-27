@@ -1149,20 +1149,20 @@ _.HiddenQuestTriggers = {
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(LEGION_TIER, {
-		n(-163, {	-- Armor
-			n(-43, {	-- Cloth
+		n(ARMOR, {
+			filter(CLOTH, {
 				i(121507),	-- Runespeaker's Crown
 				i(121511),	-- Runespeaker's Leggings
 			}),
-			n(-44, {	-- Leather
+			filter(LEATHER, {
 				i(121509),	-- Runesworn Crown
 				i(121513),	-- Runesworn Breeches
 			}),
-			n(-45, {	-- Mail
+			filter(MAIL, {
 				i(121508),	-- Stormborn Crown
 				i(121512),	-- Stormborn Leggings
 			}),
-			n(-46, {	-- Plate
+			filter(PLATE, {
 				i(121506),	-- Dreadsworn Crown
 				i(121510),	-- Dreadsworn Legguards
 			}),

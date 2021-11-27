@@ -1456,8 +1456,8 @@ _.HiddenQuestTriggers = {
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(SL_TIER, {
 		n(VENTHYR, {
-			n(-163, {	-- Armor
-				n(-43, {	-- Cloth
+			n(ARMOR, {
+				filter(CLOTH, {
 					i(179466),	-- 9.0 Covenant - Revendreth - Cloth - Head
 					i(179467),	-- 9.0 Covenant - Revendreth - Cloth - Chest
 					i(179468),	-- 9.0 Covenant - Revendreth - Cloth - Feet
@@ -1467,7 +1467,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(179472),	-- 9.0 Covenant - Revendreth - Cloth - Waist
 					i(179473),	-- 9.0 Covenant - Revendreth - Cloth - Wrists
 				}),
-				n(-44, {	-- Leather
+				filter(LEATHER, {
 					i(179457),	-- 9.0 Covenant - Revendreth - Leather - Head
 					i(179458),	-- 9.0 Covenant - Revendreth - Leather - Chest
 					i(179459),	-- 9.0 Covenant - Revendreth - Leather - Feet
@@ -1477,7 +1477,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(179463),	-- 9.0 Covenant - Revendreth - Leather - Waist
 					i(179464),	-- 9.0 Covenant - Revendreth - Leather - Wrists
 				}),
-				n(-45, {	-- Mail
+				filter(MAIL, {
 					i(179475),	-- 9.0 Covenant - Revendreth - Mail Head
 					i(179476),	-- 9.0 Covenant - Revendreth - Mail Chest
 					i(179477),	-- 9.0 Covenant - Revendreth - Mail Feet
@@ -1487,7 +1487,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(179481),	-- 9.0 Covenant - Revendreth - Mail Waist
 					i(179482),	-- 9.0 Covenant - Revendreth - Mail Wrists
 				}),
-				n(-46, {	-- Plate
+				filter(PLATE, {
 					i(174198),	-- 9.0 Covenant - Revendreth - Plate Head
 					i(174199),	-- 9.0 Covenant - Revendreth - Plate Chest
 					i(174200),	-- 9.0 Covenant - Revendreth - Plate Feet

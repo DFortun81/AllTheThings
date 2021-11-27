@@ -1550,14 +1550,14 @@ _.HiddenQuestTriggers = {
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(BFA_TIER, {
-		n(-163, {	-- Armor
-			n(-44, {	-- Leather
+		n(ARMOR, {
+			filter(LEATHER, {
 				i(161277),	-- Scorching Sands Britches
 				i(161281),	-- Scorching Sands Treads
 				i(161302),	-- Scorching Sands Mace
 				i(161303),	-- Scorching Sands Bludgeon
 			}),
-			n(-46, {	-- Plate
+			filter(PLATE, {
 				i(161279),	-- Exiled Veteran's Greaves
 			}),
 		}),

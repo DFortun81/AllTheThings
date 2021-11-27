@@ -42,7 +42,7 @@ root("BlackMarket", bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(118572),	-- Illusion: Flame of Ragnaros
 		i(128649),	-- Illusion: Winter's Grasp
 	}),
-	n(MOUNTS, {
+	filter(MOUNTS, {
 		i(143643),	-- Abyss Worm
 		i(68823),	-- Armored Razzashi Raptor
 		i(32458),	-- Ashes of Alar
@@ -168,7 +168,7 @@ root("BlackMarket", bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(105756),	-- Poxleitner's Leggings of Lights
 		i(105757),	-- Shipley's Shady Silks
 	}),
-	n(PETS, {
+	filter(BATTLE_PETS, {
 		i(44984),	-- Ammen Vale Lashling Pet
 		i(34535),	-- Azure Whelpling
 		i(32588),	-- Banana Charm
@@ -222,7 +222,7 @@ root("BlackMarket", bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(44971),	-- Tirisfal Batling Pet
 		i(49287),	-- Tuskarr Kite
 	}),
-	n(-235, {	-- Recipes
+	filter(RECIPES, {
 		i(86238),	-- Pattern: Chestguard of Nemeses
 		i(86272),	-- Pattern: Fists of Lightning
 		i(86380),	-- Pattern: Imperial Silk Gloves
@@ -345,7 +345,7 @@ root("BlackMarket", bubbleDown({ ["u"] = BLACK_MARKET, },{
 			i(22420),	-- Dreadnaught Sabatons
 		}),
 	}),
-	n(TOYS, {
+	filter(TOYS, {
 		i(33223),	-- Fishing Chair
 		i(45063),	-- Foam Sword Rack
 		i(33219),	-- Goblin Gumbo Kettle

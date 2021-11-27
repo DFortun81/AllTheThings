@@ -190,7 +190,7 @@ _.Zones =
 									i(186770),	-- Vault Attendant's Cape*
 									i(185905),	-- Vault Guardian's Drape*
 								}),
-								f(4,    {	-- Cloth
+								filter(CLOTH, {
 									i(185861),	-- Korthian Caretaker's Bindings*
 									i(185860),	-- Korthian Caretaker's Cinch*
 									i(185858),	-- Korthian Caretaker's Crest*
@@ -208,7 +208,7 @@ _.Zones =
 									i(186663),	-- Korthian Caretaker's Vestments*
 									i(186669),	-- Korthian Caretaker's Wraps
 								}),
-								f(5,    {	-- Leather
+								filter(LEATHER, {
 									i(185866),	-- Shardhide Leather Belt
 									i(185862),	-- Shardhide Leather Boots
 									i(185867),	-- Shardhide Leather Bracers*
@@ -226,7 +226,7 @@ _.Zones =
 									i(186737),	-- Shardhide Leather Trousers
 									i(185884),	-- Shardhide Leather Vest*
 								}),
-								f(6,    {	-- Mail
+								filter(MAIL, {
 									i(185875),	-- Razorwing Scale Bracers
 									i(186746),	-- Razorwing Scale Chain
 									i(185868),	-- Razorwing Scale Chainmail
@@ -244,7 +244,7 @@ _.Zones =
 									i(185869),	-- Razorwing Scale Striders
 									i(186747),	-- Razorwing Scale Wristguards
 								}),
-								f(7,    {	-- Plate
+								filter(PLATE, {
 									i(186755),	-- Vault Guardian's Binders
 									i(185877),	-- Vault Guardian's Breastplate
 									i(186754),	-- Vault Guardian's Buckle

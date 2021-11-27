@@ -56,7 +56,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 					i(32429, {	-- Pattern: Boots of Shackled Souls
 						["spellID"] = 39997,	-- Boots of Shackled Souls
 						["requireSkill"] = LEATHERWORKING,
-						["f"] = 200,
+						["f"] = RECIPES,
 					}),
 					i(32430, {	-- Pattern: Bracers of Shackled Souls
 						-- #if AFTER CATA
@@ -65,33 +65,33 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 						["spellID"] = 40000,	-- Bracers of Shackled Souls
 						-- #endif
 						["requireSkill"] = LEATHERWORKING,
-						["f"] = 200,
+						["f"] = RECIPES,
 					}),
 					i(32431, {	-- Pattern: Greaves of Shackled Souls
 						["spellID"] = 40001,	-- Greaves of Shackled Souls
 						["requireSkill"] = LEATHERWORKING,
-						["f"] = 200,
+						["f"] = RECIPES,
 					}),
 					i(32447),	-- Pattern: Night's End
 					i(32436, {	-- Pattern: Redeemed Soul Cinch
 						["spellID"] = 40006,	-- Redeemed Soul Cinch
 						["requireSkill"] = LEATHERWORKING,
-						["f"] = 200,
+						["f"] = RECIPES,
 					}),
 					i(32435, {	-- Pattern: Redeemed Soul Legguards
 						["spellID"] = 40005,	-- Redeemed Soul Legguards
 						["requireSkill"] = LEATHERWORKING,
-						["f"] = 200,
+						["f"] = RECIPES,
 					}),
 					i(32433, {	-- Pattern: Redeemed Soul Moccasins
 						["spellID"] = 40003,	-- Redeemed Soul Moccasins
 						["requireSkill"] = LEATHERWORKING,
-						["f"] = 200,
+						["f"] = RECIPES,
 					}),
 					i(32434, {	-- Pattern: Redeemed Soul Wristguards
 						["spellID"] = 40004,	-- Redeemed Soul Wristguards
 						["requireSkill"] = LEATHERWORKING,
-						["f"] = 200,
+						["f"] = RECIPES,
 					}),
 					i(32438),	-- Pattern: Soulguard Bracers
 					i(32440),	-- Pattern: Soulguard Girdle
@@ -100,7 +100,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 					i(32432, {	-- Pattern: Waistguard of Shackled Souls
 						["spellID"] = 40002,	-- Waistguard of Shackled Souls
 						["requireSkill"] = LEATHERWORKING,
-						["f"] = 200,
+						["f"] = RECIPES,
 					}),
 					i(32442),	-- Plans: Shadesteel Bracers
 					i(32444),	-- Plans: Shadesteel Girdle
@@ -140,22 +140,22 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 				i(32744, {	-- Pattern: Bracers of Renewed Life
 					["spellID"] = 41156,	-- Bracers of Renewed Life
 					["requireSkill"] = LEATHERWORKING,
-					["f"] = 200,
+					["f"] = RECIPES,
 				}),
 				i(32750, {	-- Pattern: Living Earth Bindings
 					["spellID"] = 41163,	-- Living Earth Bindings
 					["requireSkill"] = LEATHERWORKING,
-					["f"] = 200,
+					["f"] = RECIPES,
 				}),
 				i(32749, {	-- Pattern: Shoulders of Lightning Reflexes
 					["spellID"] = 41162,	-- Shoulders of Lightning Reflexes
 					["requireSkill"] = LEATHERWORKING,
-					["f"] = 200,
+					["f"] = RECIPES,
 				}),
 				i(32747, {	-- Pattern: Swiftstrike Shoulders
 					["spellID"] = 41160,	-- Swiftstrike Shoulders
 					["requireSkill"] = LEATHERWORKING,
-					["f"] = 200,
+					["f"] = RECIPES,
 				}),
 				i(32753),	-- Pattern: Swiftheal Mantle
 				i(32738),	-- Plans: Dawnsteel Bracers

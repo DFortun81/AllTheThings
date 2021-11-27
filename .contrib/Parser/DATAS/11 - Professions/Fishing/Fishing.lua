@@ -363,7 +363,7 @@ profession(FISHING, {
 			},
 		}),
 	}),
-	n(MOUNTS, {
+	filter(MOUNTS, {
 		i(142398, {	-- Darkwater Skate
 			["cost"] = { { "i", 124669, 500 }, },	-- 500x Darkmoon Daggermaw
 		}),
@@ -378,7 +378,7 @@ profession(FISHING, {
 			["description"] = "Caught anywhere from Northrend to current zones.",
 		}),
 	}),
-	n(PETS, {
+	filter(BATTLE_PETS, {
 		p(174),		-- Chuck
 		p(193),		-- Giant Sewer Rat
 		p(2837),	-- Gloop
@@ -453,7 +453,7 @@ itemrecipe(34109, 0--[[43308]], "added 2.3.0.7382", TBC_PHASE_ONE);	-- Weather-B
 
 -- These items never made it in.
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	filter(200, {	-- Recipes
+	filter(RECIPES, {
 		i(16082),	-- Artisan Fishing - The Way of the Lure
 		-- #if AFTER CATA
 		i(46054),	-- Journeyman Fishing - Fishing for Dummies

@@ -3,7 +3,7 @@
 -------------------------------------
 
 root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE },{
-	n(MOUNTS, {
+	filter(MOUNTS, {
 		mount(302361, {		-- Alabaster Stormtalon
 			["races"] = ALLIANCE_ONLY,
 		}),
@@ -66,7 +66,7 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE },{
 		}),
 		i(69846),			-- Winged Guardian
 	}),
-	n(PETS, {
+	filter(BATTLE_PETS, {
 		i(106240),			-- Alterac Brew-Pup
 		i(118516),			-- Argi
 		battlepet(156, {	-- Bananas
@@ -166,7 +166,7 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE },{
 		i(184828),			-- Grrgl's Spotted Shell
 		i(188136),			-- Mrrgl's Shiny Shell
 	}),
-	n(TOYS, {
+	filter(TOYS, {
 		i(166778),			-- Horde's Might Firework
 		i(166777),			-- Lion's Pride Firework
 		i(166779),			-- Transmorpher Beacon

@@ -341,13 +341,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = bubbleDown({["modID"] = 0}, {
 						n(-11, {	-- Common Box Drops
-							n(MOUNTS, {
+							filter(MOUNTS, {
 								["description"] = "Can drop from any epic or rare box.",
 								["g"] = {
 									i(166470),	-- Stonehide Elderhorn
 								},
 							}),
-							n(PETS, {
+							filter(BATTLE_PETS, {
 								i(166486),	-- Baby Stonehide
 								i(163818),	-- Bloodstone Tunneler
 								i(163805),	-- Craghoof Kid
@@ -489,14 +489,14 @@ _.Zones =
 								i(164405),	-- Twilight Dragon's Greatbelt
 								i(164407),	-- Twilight Dragon's Legplates
 								i(164409),	-- Twilight Dragon's Warboots
-								n(MOUNTS, {
+								filter(MOUNTS, {
 									i(166468),	-- Bloodgorged Hunter
 									i(163583),	-- Craghorn Chasm-Leaper
 									i(163586),	-- Squawks
 									i(163585),	-- Surf Jelly
 									i(163584),	-- Twilight Avenger
 								}),
-								n(PETS, {
+								filter(BATTLE_PETS, {
 									i(163798),	-- Captain Nibs
 									i(169205),	-- Ghostly Whelpling
 									i(163800),	-- Poro
@@ -541,11 +541,11 @@ _.Zones =
 								i(164461),	-- Tomb-Keeper's Girdle
 								i(164463),	-- Tomb-Keeper's Legguards
 								i(164465),	-- Tomb-Keeper's Sabatons
-								n(MOUNTS, {
+								filter(MOUNTS, {
 									i(163583),	-- Craghorn Chasm-Leaper
 									i(163582),	-- Qinsho's Eternal Hound
 								}),
-								n(PETS, {
+								filter(BATTLE_PETS, {
 									i(163800),	-- Poro
 								}),
 								n(WEAPONS, {
@@ -590,11 +590,11 @@ _.Zones =
 								i(164483),	-- Faceless Follower's Waistcord
 								i(164486),	-- Faceless Follower's Legwraps
 								i(164488),	-- Faceless Follower's Sandals
-								n(MOUNTS, {
+								filter(MOUNTS, {
 									i(166468),	-- Bloodgorged Hunter
 									i(166466),	-- Risen Mare
 								}),
-								n(PETS, {
+								filter(BATTLE_PETS, {
 									i(166494),	-- Lord Woofington
 									i(166488),	-- Rotting Ghoul
 									i(163797),	-- Scuttle
@@ -634,14 +634,14 @@ _.Zones =
 								i(166839),	-- Winterscale Waistguard
 								i(166837),	-- Sleetguard Greatbelt
 								i(166838),	-- Sleetguard Warboots
-								n(MOUNTS, {
+								filter(MOUNTS, {
 									i(166468),	-- Bloodgorged Hunter
 									i(163583),	-- Craghorn Chasm-Leaper
 									i(166467),	-- Island Thunderscale
 									i(163585),	-- Surf Jelly
 									i(163584),	-- Twilight Avenger
 								}),
-								n(PETS, {
+								filter(BATTLE_PETS, {
 									i(163797),	-- Scuttle
 									i(166499),	-- Thunderscale Whelpling
 									i(163807),	-- Tinder Pup — may need to be moved to CBD section
@@ -687,12 +687,12 @@ _.Zones =
 								i(164499),	-- Saurok Scale Belt
 								i(164504),	-- Saurok Scale Greaves
 								i(164502),	-- Saurok Scale Boots
-								n(MOUNTS, {
+								filter(MOUNTS, {
 									i(166468),	-- Bloodgorged Hunter
 									i(163586),	-- Squawks
 									i(163585),	-- Surf Jelly
 								}),
-								n(PETS, {
+								filter(BATTLE_PETS, {
 									i(163799),	-- Barnaby
 									i(163798),	-- Captain Nibs
 								}),
@@ -723,16 +723,16 @@ _.Zones =
 								i(164475),	-- Spider Acolyte's Cord
 								i(164478),	-- Spider Acolyte's Leggings
 								i(164480),	-- Spider Acolyte's Anklewraps
-								n(MOUNTS, {
+								filter(MOUNTS, {
 									i(166468),	-- Bloodgorged Hunter
 									i(163583),	-- Craghorn Chasm-Leaper
 									i(163585),	-- Surf Jelly
 								}),
-								n(PETS, {
+								filter(BATTLE_PETS, {
 									i(166488),	-- Rotting Ghoul
 									i(163824),	-- Voru'kar Leecher
 								}),
-								n(TOYS, {
+								filter(TOYS, {
 									i(164373),	-- Enchanted Soup Stone
 									i(163924),	-- Whiskerwax Candle
 								}),
@@ -758,12 +758,12 @@ _.Zones =
 								i(164461),	-- Tomb-Keeper's Girdle
 								i(164463),	-- Tomb-Keeper's Legguards
 								i(164465),	-- Tomb-Keeper's Sabatons
-								n(MOUNTS, {
+								filter(MOUNTS, {
 									i(166468),	-- Bloodgorged Hunter
 									i(163583),	-- Craghorn Chasm-Leaper
 									i(163582),	-- Qinsho's Eternal Hound
 								}),
-								n(PETS, {
+								filter(BATTLE_PETS, {
 									i(169322),	-- Adventurous Hopling Pack
 									i(163802),	-- Inky
 									i(163801),	-- Octopode Fry
@@ -817,11 +817,11 @@ _.Zones =
 								i(164539),	-- Wild Marauder Chain
 								i(164544),	-- Wild Marauder Breeches
 								i(164542),	-- Wild Marauder Boots
-								n(MOUNTS, {
+								filter(MOUNTS, {
 									i(166468),	-- Bloodgorged Hunter
 									i(163585),	-- Surf Jelly
 								}),
-								n(PETS, {
+								filter(BATTLE_PETS, {
 									i(163807),	-- Tinder Pup — may need to be moved to CBD section
 								}),
 								n(WEAPONS, {
@@ -868,7 +868,7 @@ _.Zones =
 								i(164434),	-- Waistcord of the Tranquil Path
 								i(164429),	-- Leggings of the Tranquil Path
 								i(164428),	-- Footpads of the Tranquil Path
-								n(TOYS, {
+								filter(TOYS, {
 									i(164375),	-- Bad Mojo Banana
 									i(164374),	-- Magic Monkey Banana
 									i(163795),	-- Oomgut Ritual Drum
@@ -905,7 +905,7 @@ _.Zones =
 								i(164450),	-- Spiritbough Belt
 								i(164445),	-- Spiritbough Breeches
 								i(164444),	-- Spiritbough Striders
-								n(MOUNTS, {
+								filter(MOUNTS, {
 									i(163585),	-- Surf Jelly
 								}),
 								n(WEAPONS, {
@@ -931,11 +931,11 @@ _.Zones =
 								i(164467),	-- Mrrglurggl Girdle
 								i(164472),	-- Mrrglurggl Legguards
 								i(164470),	-- Mrrglurggl Boots
-								n(MOUNTS, {
+								filter(MOUNTS, {
 									i(166468),	-- Bloodgorged Hunter
 									i(163585),	-- Surf Jelly
 								}),
-								n(PETS, {
+								filter(BATTLE_PETS, {
 									i(163823),	-- Coldlight Surfrunner
 									i(163821),	-- Juvenile Brineshell
 								}),
@@ -988,7 +988,7 @@ _.Zones =
 								i(164554),	-- Whirling Dervish Belt
 								i(164549),	-- Whirling Dervish Breeches
 								i(164548),	-- Whirling Dervish Striders
-								n(PETS, {
+								filter(BATTLE_PETS, {
 									i(163811),	-- Giggling Flame
 									i(163812),	-- Laughing Stonekin
 									i(163814),	-- Mischievous Zephyr

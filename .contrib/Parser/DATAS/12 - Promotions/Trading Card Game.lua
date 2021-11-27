@@ -78,7 +78,7 @@ root("Promotions", n(TCG_HEADER, bubbleDown({
 			["timeline"] = { "added 3.2.2.10468" },
 		}),
 	}),
-	n(MOUNTS, {
+	filter(MOUNTS, {
 		i(68825, {	-- Amani Dragonhawk
 			["timeline"] = { "added 4.1.0.13682" },
 		}),
@@ -186,7 +186,7 @@ root("Promotions", n(TCG_HEADER, bubbleDown({
 			["timeline"] = { "added 2.4.3.8601" },
 		}),
 	}),
-	n(TOYS, {
+	filter(TOYS, {
 		i(49704, {	-- Carved Ogre Idol
 			["timeline"] = { "added 3.2.2.10468" },
 		}),

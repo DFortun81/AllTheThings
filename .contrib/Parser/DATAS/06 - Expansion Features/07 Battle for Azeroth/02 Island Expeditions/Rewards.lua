@@ -12,7 +12,7 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 					i(164368),	-- Plundered Crimson Captain's hat
 					i(164369),	-- Plundered Pirate Admiral's Bicorne
 				}),
-				n(-43, {	-- Cloth
+				filter(CLOTH, {
 					i(166828),	-- Dark Animator's Cowl
 					i(166825),	-- Dark Animator's Mantle
 					i(166824),	-- Dark Animator's Robe
@@ -68,7 +68,7 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 					i(164454),	-- Swarmfury Legwraps
 					i(164456),	-- Swarmfury Footwraps
 				}),
-				n(-44, {	-- Leather
+				filter(LEATHER, {
 					i(166836),	-- Frosthoof Gloves
 					i(166835),	-- Frosthood Waistcord
 					i(166818),	-- Fallen Runelord's Cowl
@@ -128,7 +128,7 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 					i(164549),	-- Whirling Dervish Breeches
 					i(164548),	-- Whirling Dervish Striders
 				}),
-				n(-45, {	-- Mail
+				filter(MAIL, {
 					i(164399),	-- Dragonrider's Helmet
 					i(164401),	-- Dragonrider's Spaulders
 					i(164402),	-- Dragonrider's Harness
@@ -180,7 +180,7 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 					i(164544),	-- Wild Marauder Breeches
 					i(164542),	-- Wild Marauder Boots
 				}),
-				n(-46, {	-- Plate
+				filter(PLATE, {
 					i(164534),	-- Bloodwake Helmet
 					i(164536),	-- Bloodwake Spaulders
 					i(164531),	-- Bloodwake Breastplate
@@ -250,7 +250,7 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 						["description"] = "Contains roughly 9-12 dubloons, more if you have the research.",
 					}),
 				}),
-				n(MOUNTS, {
+				filter(MOUNTS, {
 					i(166468),	-- Bloodgorged Hunter
 					i(163583),	-- Craghorn Chasm-Leaper
 					i(166467),	-- Island Thunderscale
@@ -261,7 +261,7 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 					i(163585),	-- Surf Jelly
 					i(163584),	-- Twilight Avenger
 				}),
-				n(PETS, {
+				filter(BATTLE_PETS, {
 					i(169322),	-- Adventurous Hopling Pack
 					i(166486),	-- Baby Stonehide
 					i(163799),	-- Barnaby
@@ -303,7 +303,7 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 					i(166495),	-- Tonguelasher
 					i(163824),	-- Voru'kar Leecher
 				}),
-				n(TOYS, {
+				filter(TOYS, {
 					i(164375),	-- Bad Mojo Banana [Un'gol Ruins]
 					i(164373),	-- Enchanted Soup Stone
 					i(164374),	-- Magic Monkey Banana
@@ -414,7 +414,7 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(BFA_TIER, {
 		n(ISLAND_EXPEDITIONS, {
-			n(TOYS, {
+			filter(TOYS, {
 				i(163922),	-- Used for a toy, you never can get the actual item
 				i(163923),	-- Used for a toy, you never can get the actual item
 				i(164372),	-- Jinyu Light Globe
@@ -426,7 +426,7 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(164287),	-- Plundered Dragonrider Spaulders
 			i(164288),	-- Plundered Gjalerbron Pauldrons
 		}),
-		n(-46, {	-- Plate
+		filter(PLATE, {
 			i(164525),	-- Rattling Bone Greatbelt
 		}),
 	}),

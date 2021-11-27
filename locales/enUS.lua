@@ -751,7 +751,7 @@ app.L = {
 		-- "Non-Equipment Types"
 		[100] = MOUNTS,											-- Mounts
 		[101] = AUCTION_CATEGORY_BATTLE_PETS,					-- Battle Pets
-		[102] = TOY,											-- Toy
+		[102] = "Toys",											-- Toys
 		[103] = "Illusions",									-- Illusions
 		[104] = ITEM_BIND_QUEST,								-- Quest Items
 		[105] = TRACKER_FILTER_ACHIEVEMENTS,					-- Achievements
@@ -804,9 +804,9 @@ app.L = {
 		[54] = "Interface\\Icons\\inv_staff_2h_felfireraid_d_03",				-- Relic
 		[55] = "Interface\\Icons\\INV_Drink_25_HoneyTea",						-- Consumables
 		[59] = "Interface\\Icons\\INV_Misc_Book_03",							-- Class Books
-		[100] = "Interface\\Icons\\ability_mount_fireravengodmountgreen",		-- Mounts
-		[101] = "Interface\\Icons\\Tracking_WildPet",							-- Battle Pet
-		[102] = "Interface\\Icons\\INV_Misc_Toy_10",							-- Toy
+		[100] = app.asset("Category_Mounts"),									-- Mounts
+		[101] = app.asset("Category_PetBattles"),								-- Battle Pets
+		[102] = app.asset("Category_ToyBox"),									-- Toys
 		[103] = "Interface\\Icons\\inv_inscription_weaponscroll03",				-- Illusions
 		[111] = "Interface\\Icons\\Inv_glyph_minorwarrior",						-- Glyph
 		[113] = "Interface\\Icons\\INV_Misc_Bag_08",							-- Bag
@@ -880,7 +880,7 @@ app.L = {
 		[-17] = app.asset("Interface_Quest_header"),										-- Quests
 		[-18] = app.asset("Interface_Rewards"),		 										-- Rewards
 		[-19] = "Interface\\Icons\\INV_Misc_Head_Dragon_Green",								-- Dragons of Nightmare
-		--[-20] = "Silithid Royalty",															-- Silithid Royalty
+		[-20] = "Interface\\Icons\\INV_Misc_Coin_02",										-- Common Vendor Items
 		[-21] = "Interface\\Icons\\achievement_pvp_h_12",									-- Captains
 		[-22] = app.asset("Category_Secrets"),												-- Secrets
 		[-23] = "Interface\\Icons\\item_maldraxxus_paragonchest_01",						-- WoD Common Dungeon Drop
@@ -892,11 +892,6 @@ app.L = {
 		[-38] = app.asset("Category_Professions"),											-- Professions
 		[-40] = "Interface\\Icons\\Inv_misc_book_17",										-- Legacy
 		[-41] = "Interface\\Icons\\TRADE_ARCHAEOLOGY",										-- Cache of Madness
-	-- Armor Types
-		[-43] = "Interface\\Icons\\inv_chest_cloth_21",										-- Cloth Armor
-		[-44] = "Interface\\Icons\\inv_chest_leather_09",									-- Leather Armor
-		[-45] = "Interface\\Icons\\inv_chest_chain_05",										-- Mail Armor
-		[-46] = "Interface\\Icons\\inv_chest_plate01",										-- Plate Armor
 	-- World Events (These are used by ATT CLassic)
 		[-47] = "Interface\\Icons\\achievement_worldevent_lunar",							-- Lunar Festival
 		[-52] = "Interface\\Icons\\inv_misc_toy_04",										-- Children's Week
@@ -978,10 +973,6 @@ app.L = {
 		[-158] = "Interface\\Icons\\achievement_zone_feralas",								-- Feralas Activated
 	-- Class Hall /Artifact
 		-- [-159] = Uses different icons													-- Daily Dreamway Event Roll
-	-- Collections
-		[-160] = app.asset("Category_Mounts"),												-- Mounts
-		[-161] = app.asset("Category_ToyBox"),												-- Toy
-		[-162] = app.asset("Category_PetBattles"),											-- Pets
 	-- Armor
 		[-163] = "Interface\\Icons\\garrison_purplearmor",									-- Armor
 	-- Junkboxes
@@ -1014,8 +1005,6 @@ app.L = {
 		[-228] = app.asset("Category_FlightPaths"),											-- Flight Paths
 	-- Warfronts
 		[-233] = "Interface\\Icons\\achievement_zone_arathihighlands_01",					-- Warfront: The Battle for Stromgarde
-	-- Recipes (Only used in BMAH atm)
-		[-235] = "Interface\\Icons\\inv_scroll_05",											-- Recipes
 	-- War Campaign
 		[-236] = "Interface\\Icons\\ui_alliance_7legionmedal",								-- Alliance War Campaign
 	-- Warfront
@@ -1466,7 +1455,7 @@ app.L = {
 		[-17] = TRACKER_HEADER_QUESTS,											-- Quests
 		[-18] = QUEST_REWARDS, 													-- Rewards
 		[-19] = "Dragons of Nightmare",											-- Dragons of Nightmare
-		[-20] = "Silithid Royalty",												-- Silithid Royalty
+		[-20] = "Common Vendor Items",											-- Common Vendor Items
 		[-21] = "Captains",
 		[-22] = "Secrets",														-- Secrets
 		[-23] = "Common Dungeon Drop",											-- WoD Common Dungeon Drop
@@ -1478,11 +1467,6 @@ app.L = {
 		[-38] = TRADE_SKILLS,													-- Professions
 		[-40] = LFG_LIST_LEGACY,												-- Legacy
 		[-41] = "Cache of Madness",												-- Cache of Madness
-	-- Armor Types
-		[-43] = GetItemSubClassInfo(4,1).." "..RESISTANCE0_NAME,				-- Cloth
-		[-44] = GetItemSubClassInfo(4,2).." "..RESISTANCE0_NAME,				-- Leather
-		[-45] = GetItemSubClassInfo(4,3).." "..RESISTANCE0_NAME,				-- Mail
-		[-46] = GetItemSubClassInfo(4,4).." "..RESISTANCE0_NAME,				-- Plate
 	-- World Events (These are used by ATT CLassic)
 		[-47] = select(1,GetCategoryInfo(160)),									-- Lunar Festival
 		[-52] = select(1,GetCategoryInfo(163)),									-- Children's Week
@@ -1594,8 +1578,6 @@ app.L = {
 		[-228] = GetSpellInfo(218950),											-- Flight Path
 	-- Warfronts
 		[-233] = GetSpellInfo(279443),											-- Warfront: The Battle for Stromgarde
-	-- Recipes (Only used in BMAH atm)
-		[-235] = AUCTION_CATEGORY_RECIPES,										-- Recipes
 	-- War Campaign
 		[-236] = C_Map.GetAreaInfo(9663),										-- War Campaign - Alliance
 	-- Warfront

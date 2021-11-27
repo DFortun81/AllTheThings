@@ -5,7 +5,7 @@
 _.WorldDrops =
 {
 	tier(LEGION_TIER, {
-		f(200, {	-- Recipes
+		filter(RECIPES, {
 			prof(ALCHEMY, {
 				i(142119),	-- Recipe: Potion of Prolonged Power (Rank 1)
 				i(127925),	-- Recipe: Infernal Alchemist Stone (Rank 2)

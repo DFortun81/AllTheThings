@@ -53,16 +53,16 @@ _.Instances = { tier(BFA_TIER, {
 			d(17, {	-- LFR
 				n(ZONE_DROPS, {
 					i(175005, {	-- Belt of Concealed Intent
-						["f"] = 6,	-- Mail
+						["f"] = MAIL,
 					}),
 					i(175007, {	-- Footpads of Terrible Delusions
-						["f"] = 5,	-- Leather
+						["f"] = LEATHER,
 					}),
 					i(175006, {	-- Gauntlets of Nightmare Manifest
-						["f"] = 7,	-- Plate
+						["f"] = PLATE,
 					}),
 					i(175004, {	-- Legwraps of Horrifying Figments
-						["f"] = 4,	-- Cloth
+						["f"] = CLOTH,
 					}),
 					i(175008),	-- Lurking Schemer's Band
 					i(175010, {	-- Maddened Adherent's Bulwark
@@ -305,16 +305,16 @@ _.Instances = { tier(BFA_TIER, {
 				}),
 				n(ZONE_DROPS, {
 					i(175005, {	-- Belt of Concealed Intent
-						["f"] = 6,	-- Mail
+						["f"] = MAIL,
 					}),
 					i(175007, {	-- Footpads of Terrible Delusions
-						["f"] = 5,	-- Leather
+						["f"] = LEATHER,
 					}),
 					i(175006, {	-- Gauntlets of Nightmare Manifest
-						["f"] = 7,	-- Plate
+						["f"] = PLATE,
 					}),
 					i(175004, {	-- Legwraps of Horrifying Figments
-						["f"] = 4,	-- Cloth
+						["f"] = CLOTH,
 					}),
 					i(175008),	-- Lurking Schemer's Band
 					i(175010, {	-- Maddened Adherent's Bulwark
@@ -538,16 +538,16 @@ _.Instances = { tier(BFA_TIER, {
 				}),
 				n(ZONE_DROPS, {
 					i(175005, {	-- Belt of Concealed Intent
-						["f"] = 6,	-- Mail
+						["f"] = MAIL,
 					}),
 					i(175007, {	-- Footpads of Terrible Delusions
-						["f"] = 5,	-- Leather
+						["f"] = LEATHER,
 					}),
 					i(175006, {	-- Gauntlets of Nightmare Manifest
-						["f"] = 7,	-- Plate
+						["f"] = PLATE,
 					}),
 					i(175004, {	-- Legwraps of Horrifying Figments
-						["f"] = 4,	-- Cloth
+						["f"] = CLOTH,
 					}),
 					i(175008),	-- Lurking Schemer's Band
 					i(175010, {	-- Maddened Adherent's Bulwark
@@ -774,16 +774,16 @@ _.Instances = { tier(BFA_TIER, {
 				}),
 				n(ZONE_DROPS, {
 					i(175005, {	-- Belt of Concealed Intent
-						["f"] = 6,	-- Mail
+						["f"] = MAIL,
 					}),
 					i(175007, {	-- Footpads of Terrible Delusions
-						["f"] = 5,	-- Leather
+						["f"] = LEATHER,
 					}),
 					i(175006, {	-- Gauntlets of Nightmare Manifest
-						["f"] = 7,	-- Plate
+						["f"] = PLATE,
 					}),
 					i(175004, {	-- Legwraps of Horrifying Figments
-						["f"] = 4,	-- Cloth
+						["f"] = CLOTH,
 					}),
 					i(175008),	-- Lurking Schemer's Band
 					i(175010, {	-- Maddened Adherent's Bulwark

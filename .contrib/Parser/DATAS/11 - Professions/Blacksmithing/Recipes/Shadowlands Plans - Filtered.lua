@@ -1,5 +1,5 @@
 profession(BLACKSMITHING, {
-	filter(200, {	-- Recipes
+	filter(RECIPES, {
 		{
 			["categoryID"] = 1311,	-- Shadowlands Plans
 			["g"] = {

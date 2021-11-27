@@ -590,6 +590,9 @@ FINGER = -385;
 -- Meta Slot
 WEAPONS = -319;
 
+-- Armor
+ARMOR = -163;
+
 -- D&R
 COMMON_BOSS_DROPS = -1;
 WORLD_BOSSES = -7;
@@ -685,11 +688,6 @@ IN_GAME_SHOP = -36;
 HOLIDAYS = -3;
 WORLD_EVENTS = -519;
 
--- Collection (Might Change to filter later)
-MOUNTS = -160;
-TOYS = -161;
-PETS = -162;
-
 -- Anniversary
 FOURTH_ANNIVERSARY = -5353;
 FIFTH_ANNIVERSARY = -5354;
@@ -710,7 +708,14 @@ SEVENTEENTH_ANNIVERSARY = -5366;
 --------------------------
 
 -- Filters
+CLOTH = 4;
+LEATHER = 5;
+MAIL = 6;
+PLATE = 7;
+MOUNTS = 100;
 BATTLE_PETS = 101;
+TOYS = 102;
+RECIPES = 200;
 
 -- Professions
 PROFESSIONS = -38;

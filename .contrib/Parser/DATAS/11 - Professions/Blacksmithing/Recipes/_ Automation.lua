@@ -4,7 +4,7 @@ DO NOT MODIFY THIS FILE, I WILL CUT YOU.
     -CRIEVE
 ]]--
 profession(164, {	-- Blacksmithing
-	filter(200, {
+	filter(RECIPES, {
 		{
 			["name"] = "Training",
 			["categoryID"] = 424,

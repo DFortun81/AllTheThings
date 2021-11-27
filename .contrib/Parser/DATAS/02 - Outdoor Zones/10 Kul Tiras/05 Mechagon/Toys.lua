@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KULTIRAS, {
 		m(MECHAGON, {
-			n(TOYS, {
+			filter(TOYS, {
 				i(122293, {	-- Trans-Dimensional Bird Whistle
 					["collectible"] = false,
 					["g"] = {

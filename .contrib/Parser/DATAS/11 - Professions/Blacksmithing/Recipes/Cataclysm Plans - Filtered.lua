@@ -1,5 +1,5 @@
 profession(BLACKSMITHING, {
-	filter(200, {	-- Recipes
+	filter(RECIPES, {
 	-- Reviewed and updated as of 12.06.2018 BfA 8.0, leaving all items from _Automation in for easier future updates
 		{	-- Cataclysm Plans
 			["categoryID"] = 569--[[Cataclysm Plans]],

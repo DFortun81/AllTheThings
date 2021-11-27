@@ -262,7 +262,7 @@ _.Craftables =
 			}),
 		}),
 		prof(ENGINEERING, {
-			n(MOUNTS, {
+			filter(MOUNTS, {
 				i(87250),	-- Depleted-Kyparium Rocket*
 				i(87251),	-- Geosynchronous World Spinner*
 				i(95416),	-- Sky Golem*
@@ -272,7 +272,7 @@ _.Craftables =
 				i(94903),	-- Pierre*
 				i(100905),	-- Rascal-Bot*
 			}),
-			n(TOYS, {
+			filter(TOYS, {
 				i(87214),	-- Blingtron 4000*
 				i(87215),	-- Wormhole Generator: Pandaria*
 			}),
@@ -385,7 +385,7 @@ _.Craftables =
 			}),
 		}),
 		prof(JEWELCRAFTING, {
-			n(MOUNTS, {
+			filter(MOUNTS, {
 				i(83088),	-- Jade Panther
 				i(82453),	-- Jeweled Onyx Panther
 				i(83087),	-- Ruby Panther
@@ -425,7 +425,7 @@ _.Craftables =
 				i(85852),	-- Quick Strike Cloak
 				i(85853),	-- Stormscale Drape
 			}),
-			n(-44, {	-- Leather
+			filter(LEATHER, {
 				i(85788),	-- Chestguard of Nemeses
 				i(85797),	-- Contender's Leather Belt
 				i(85798),	-- Contender's Leather Boots
@@ -559,7 +559,7 @@ _.Craftables =
 				i(85849),	-- Wildblood Gloves
 				i(85850),	-- Wildblood Vest
 			}),
-			n(-45, {	-- Mail
+			filter(MAIL, {
 				i(85787),	-- Chestguard of Earthen Harmony
 				i(94276),	-- Cloud Serpent Helm
 				i(94275),	-- Cloud Serpent Sabatons

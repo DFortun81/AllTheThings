@@ -192,7 +192,7 @@ _.GearSets =
 					un(REMOVED_FROM_GAME, i(62038)),	-- Worn Stoneskin Gargoyle Cape
 					i(122260),	-- Worn Stoneskin Gargoyle Cape
 				}),
-				n(-43, {	-- Cloth
+				filter(CLOTH, {
 					un(REMOVED_FROM_GAME, i(93859)),	-- Bloodstained Dreadmist Mantle
 					un(REMOVED_FROM_GAME, i(93860)),	-- Bloodstained Dreadmist Robe
 					un(REMOVED_FROM_GAME, i(44107)),	-- Exquisite Sunderseer Mantle
@@ -219,7 +219,7 @@ _.GearSets =
 						},
 					}),
 				}),
-				n(-44, {	-- Leather
+				filter(LEATHER, {
 					un(REMOVED_FROM_GAME, i(44103)),	-- Exceptional Stormshroud Shoulders
 					i(122376, {	-- Exceptional Stormshroud Shoulders
 						["cost"] = { { "i", 137642, 8 }, },	-- 8x Mark of Honor
@@ -271,7 +271,7 @@ _.GearSets =
 					un(REMOVED_FROM_GAME, i(93863)),	-- Supple Shadowcraft Tunic
 					un(REMOVED_FROM_GAME, i(93866)),	-- Wild Feralheart Spaulders
 				}),
-				n(-45, {	-- Mail
+				filter(MAIL, {
 					un(REMOVED_FROM_GAME, i(93886)),	-- Adorned Beastmaster's Mantle
 					un(REMOVED_FROM_GAME, i(44102)),	-- Aged Pauldrons of The Five Thunders
 					i(122375, {	-- Aged Pauldrons of The Five Thunders
@@ -323,7 +323,7 @@ _.GearSets =
 					i(122246),	-- Tarnished Raging Berserker's Helm
 					un(REMOVED_FROM_GAME, i(93889)),	-- Venerated Pauldrons of The Five Thunders
 				}),
-				n(-46, {	-- Plate
+				filter(PLATE, {
 					un(REMOVED_FROM_GAME, i(93892)),	-- Brushed Breastplate of Might
 					un(REMOVED_FROM_GAME, i(93893)),	-- Brushed Pauldrons of Might
 					un(REMOVED_FROM_GAME, i(69889)),	-- Burnished Breastplate of Might

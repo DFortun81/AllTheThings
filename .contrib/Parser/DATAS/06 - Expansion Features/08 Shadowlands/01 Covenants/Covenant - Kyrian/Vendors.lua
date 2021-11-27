@@ -1554,8 +1554,8 @@ _.HiddenQuestTriggers = {
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(SL_TIER, {
 		n(KYRIAN, {
-			n(-163, {	-- Armor
-				n(-45, {	-- Mail
+			n(ARMOR, {
+				filter(MAIL, {
 					i(179394),	-- 9.0 Covenant - Bastion - Mail - Base - Head
 					i(179395),	-- 9.0 Covenant - Bastion - Mail - Base - Chest
 					i(179396),	-- 9.0 Covenant - Bastion - Mail - Base - Feet
@@ -1566,7 +1566,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(179401),	-- 9.0 Covenant - Bastion - Mail - Base - Wrists
 					i(184999),	-- Devoted Aspirant's Vestments
 				}),
-				n(-46, {	-- Plate
+				filter(PLATE, {
 					i(177684),	-- 9.0 Covenant - Bastion - Plate - Head
 					i(177685),	-- 9.0 Covenant - Bastion - Plate - Chest
 					i(177686),	-- 9.0 Covenant - Bastion - Plate - Feet

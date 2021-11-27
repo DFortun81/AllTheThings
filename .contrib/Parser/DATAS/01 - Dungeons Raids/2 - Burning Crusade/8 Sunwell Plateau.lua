@@ -23,44 +23,44 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 				i(35218, {	-- Pattern: Carapace of Sun and Shadow
 					["spellID"] = 46138,	-- Carapace of Sun and Shadow
 					["requireSkill"] = LEATHERWORKING,
-					["f"] = 200,
+					["f"] = RECIPES,
 				}),
 				i(35217, {	-- Pattern: Embrace of the Phoenix
 					["spellID"] = 46137,	-- Embrace of the Phoenix
 					["requireSkill"] = LEATHERWORKING,
-					["f"] = 200,
+					["f"] = RECIPES,
 				}),
 				i(35213, {	-- Pattern: Fletcher's Gloves of the Phoenix
 					["spellID"] = 46133,	-- Fletcher's Gloves of the Phoenix
 					["requireSkill"] = LEATHERWORKING,
-					["f"] = 200,
+					["f"] = RECIPES,
 				}),
 				i(35214, {	-- Pattern: Gloves of Immortal Dusk
 					["spellID"] = 46134,	-- Gloves of Immortal Dusk
 					["requireSkill"] = LEATHERWORKING,
-					["f"] = 200,
+					["f"] = RECIPES,
 				}),
 				i(35205),	-- Pattern: Hands of Eternal Light
 				i(35216, {	-- Pattern: Leather Chestguard of the Sun
 					["spellID"] = 46136,	-- Leather Chestguard of the Sun
 					["requireSkill"] = LEATHERWORKING,
-					["f"] = 200,
+					["f"] = RECIPES,
 				}),
 				i(35212, {	-- Pattern: Leather Gauntlets of the Sun
 					["spellID"] = 46132,	-- Leather Gauntlets of the Sun
 					["requireSkill"] = LEATHERWORKING,
-					["f"] = 200,
+					["f"] = RECIPES,
 				}),
 				i(35207),	-- Pattern: Robe of Eternal Light
 				i(35219, {	-- Pattern: Sun-Drenched Scalee Chestguard
 					["spellID"] = 46139,	-- Sun-Drenched Scalee Chestguard
 					["requireSkill"] = LEATHERWORKING,
-					["f"] = 200,
+					["f"] = RECIPES,
 				}),
 				i(35215, {	-- Pattern: Sun-Drenched Scale Gloves
 					["spellID"] = 46135,	-- Sun-Drenched Scale Gloves
 					["requireSkill"] = LEATHERWORKING,
-					["f"] = 200,
+					["f"] = RECIPES,
 				}),
 				i(35204),	-- Pattern: Sunfire Handwraps
 				i(35206),	-- Pattern: Sunfire Robe

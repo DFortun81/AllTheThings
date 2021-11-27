@@ -195,7 +195,7 @@ profession(SKINNING, {
 	filter(BATTLE_PETS, {
 		i(153057),	-- Fossorial Bile Larva
 	}),
-	n(TOYS, {
+	filter(TOYS, {
 		i(130102),	--  Mother's Skinning Knife
 	}),
 	q(40134, {	-- Highmountain Hides
@@ -203,7 +203,7 @@ profession(SKINNING, {
 		["requireSkill"] = SKINNING,
 	}),
 	--[==[--
-	filter(200, {	-- Recipes
+	filter(RECIPES, {
 		tier(LEGION_TIER, {
 			recipe(194167),	-- Felhide [Rank 1]
 			recipe(194168),	-- Felhide [Rank 2]

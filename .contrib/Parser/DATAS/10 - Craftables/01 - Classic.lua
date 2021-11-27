@@ -1319,7 +1319,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(6352),	-- Waterlogged Crate
 		}),
 		-- #if AFTER TBC
-		filter(200, {	-- Recipes
+		filter(RECIPES, {
 			i(34109, {	-- Weather-Beaten Journal
 				["description"] = "Can be fished from schools.",
 			}),
@@ -1776,7 +1776,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				["timeline"] = { "removed 4.0.3" },
 			}),
 		}),
-		filter(5, {	-- Leather
+		filter(LEATHER, {
 			category(251, {	-- Helms
 				i(8201),	-- Big Voodoo Mask
 				applyclassicphase(PHASE_FIVE_CATCH_UP, i(22759)),	-- Bramblewood Helm
@@ -2046,7 +2046,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				})
 			}),
 		}),
-		filter(6, {	-- Mail
+		filter(MAIL, {
 			category(251, {	-- Helms
 				i(15080),	-- Heavy Scorpid Helm
 				i(8208),	-- Tough Scorpid Helm

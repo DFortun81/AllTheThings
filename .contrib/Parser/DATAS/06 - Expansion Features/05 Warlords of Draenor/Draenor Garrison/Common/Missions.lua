@@ -730,8 +730,8 @@ _.ExpansionFeatures =
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(WOD_TIER, {
 		n(-299, {	-- Missions
-			n(-163, {	-- Armor
-				n(-43, {	-- Cloth
+			n(ARMOR, {
+				filter(CLOTH, {
 					i(114317),	-- Mantisweave Robes
 					i(114383),	-- Gloves of Hooded Nightmares
 					i(114387),	-- Hood of Hooded Nightmares
@@ -739,7 +739,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(114399),	-- Cord of Hooded Nightmares
 					i(114460),	-- Fireflash Cord
 				}),
-				n(-44, {	-- Leather
+				filter(LEATHER, {
 					i(114314),	-- Shadow-Gorged Chestguard
 					i(114384),	-- Gauntlets of Falling Leaves
 					i(114388),	-- Hood of Falling Leaves
@@ -747,7 +747,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(114400),	-- Belt of Falling Leaves
 					i(114461),	-- Spireflame Belt
 				}),
-				n(-45, {	-- Mail
+				filter(MAIL, {
 					i(114315),	-- Chestguard of Meditative Focus
 					i(114385),	-- Element-Binder Gauntlets
 					i(114389),	-- Element-Binder Helm
@@ -755,7 +755,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(114401),	-- Element-Binder Belt
 					i(114462),	-- Belt of Elemental Torment
 				}),
-				n(-46, {	-- Plate
+				filter(PLATE, {
 					i(114316),	-- Salt-Scorched Breastplate
 					i(114386),	-- Gauntlets of Grievous Storms
 					i(114390),	-- Greathelm of Grievous Storms

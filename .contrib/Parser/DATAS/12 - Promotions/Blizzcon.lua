@@ -85,12 +85,12 @@ root("Promotions", n(-545, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Blizzc
 	i(163986, {	-- Orgrimmar Hero's War Banner
 		["timeline"] = { "added 8.0.1.27843" },
 		["races"] = HORDE_ONLY,
-		["f"] = 102,	-- Toy
+		["f"] = TOYS,
 	}),
 	i(163987, {	-- Stormwind Champion's War Banner
 		["timeline"] = { "added 8.0.1.27843" },
 		["races"] = ALLIANCE_ONLY,
-		["f"] = 102,	-- Toy
+		["f"] = TOYS,
 	}),
 	i(163985, {	-- War Mantle of the Alliance
 		["timeline"] = { "added 8.0.1.27843" },

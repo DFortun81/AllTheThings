@@ -514,7 +514,7 @@ _.Zones =
 								["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
 							}),
 						}),
-						n(-43,  {	-- Cloth
+						filter(CLOTH, {
 							i(185230, {	-- Unchained Aspirant's Silk Belt
 								["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
 							}),
@@ -564,7 +564,7 @@ _.Zones =
 								["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
 							}),
 						}),
-						n(-44,  {	-- Leather
+						filter(LEATHER, {
 							i(185237, {	-- Unchained Aspirant's Leather Armguards
 							["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
 							}),
@@ -614,7 +614,7 @@ _.Zones =
 								["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
 							}),
 						}),
-						n(-45,  {	-- Mail
+						filter(MAIL, {
 							i(185154, {	-- Unchained Aspirant's Chain Belt
 							["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
 							}),
@@ -664,7 +664,7 @@ _.Zones =
 								["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
 							}),
 						}),
-						n(-46,  {	-- Plate
+						filter(PLATE, {
 							i(185235, {	-- Unchained Aspirant's Plate Armguards
 								["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
 							}),
@@ -1128,7 +1128,7 @@ _.Zones =
 								["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
 							}),
 						}),
-						n(-43,  {	-- Cloth
+						filter(CLOTH, {
 							i(185267, {	-- Unchained Gladiator's Silk Amice
 								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
 							}),
@@ -1178,7 +1178,7 @@ _.Zones =
 								["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
 							}),
 						}),
-						n(-44,  {	-- Leather
+						filter(LEATHER, {
 							i(185191, {	-- Unchained Gladiator's Leather Belt
 								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
 							}),
@@ -1228,7 +1228,7 @@ _.Zones =
 								["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
 							}),
 						}),
-						n(-45,  {	-- Mail
+						filter(MAIL, {
 							i(185190, {	-- Unchained Gladiator's Chain Belt
 								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
 							}),
@@ -1278,7 +1278,7 @@ _.Zones =
 								["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
 							}),
 						}),
-						n(-46,  {	-- Plate
+						filter(PLATE, {
 							i(185166, {	-- Unchained Gladiator's Plate Chestguard
 								["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
 							}),

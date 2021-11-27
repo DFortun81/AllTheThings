@@ -200,11 +200,11 @@ _.Craftables =
 			}),
 		}),
 		prof(ENGINEERING, {
-			n(MOUNTS, {
+			filter(MOUNTS, {
 				i(41508),	-- Mechano-Hog*
 				i(44413),	-- Mekgineer's Chopper*
 			}),
-			n(TOYS, {
+			filter(TOYS, {
 				i(40895),	-- Gnomish X-Ray Specs*
 				i(40768),	-- MOLL-E*
 				i(48933),	-- Wormhole Generator: Northrend*
@@ -371,7 +371,7 @@ _.Craftables =
 				i(43565),	-- Durable Nerubhide Cape
 				i(43566),	-- Ice Striker's Cloak
 			}),
-			n(-44, {	-- Leather
+			filter(LEATHER, {
 				i(38405),	-- Arctic Belt
 				i(38404),	-- Arctic Boots
 				i(38400),	-- Arctic Chestpiece
@@ -441,7 +441,7 @@ _.Craftables =
 				i(44930),	-- Windripper Boots
 				i(44931),	-- Windripper Leggings
 			}),
-			n(-45, {	-- Mail
+			filter(MAIL, {
 				i(45553),	-- Belt of Dragons
 				i(47580),	-- Black Chitin Bracers
 				i(47579),	-- Black Chitin Bracers
@@ -584,7 +584,7 @@ _.Craftables =
 				i(49891),	-- Leggings of Woven Death
 				i(49892),	-- Lightweave Leggings
 			}),
-			n(MOUNTS, {
+			filter(MOUNTS, {
 				i(44554),	-- Flying Carpet
 				i(54797),	-- Frosty Flying Carpet
 				i(44558),	-- Magnificent Flying Carpet

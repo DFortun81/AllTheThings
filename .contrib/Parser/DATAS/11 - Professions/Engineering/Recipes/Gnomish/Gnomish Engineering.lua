@@ -1,5 +1,5 @@
 profession(20219, {	-- Gnomish Engineering
-	filter(200, {
+	filter(RECIPES, {
 		{
 			["name"] = "Pandaria Engineering",
 			["categoryID"] = 713,

@@ -144,8 +144,8 @@ _.ExpansionFeatures =
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(BFA_TIER, {
 		n(-10057, {	-- War Effort
-			n(-163, {	-- Armor
-				n(-43, {	-- Cloth
+			n(ARMOR, {
+				filter(CLOTH, {
 					i(183762),	-- Moonpriest's Coronet
 					i(183763),	-- Moonpriest's Mantle
 					i(183772),	-- Moonpriest's Vestments
@@ -153,7 +153,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(183775),	-- Plaguebringer's Shoulderguards
 					i(183784),	-- Plaguebringer's Robe
 				}),
-				n(-44, {	-- Leather
+				filter(LEATHER, {
 					i(183764),	-- Darkwood Sentinel's Tunic
 					i(183765),	-- Darkwood Sentinel's Cowl
 					i(183766),	-- Darkwood Sentinel's Monnions
@@ -161,7 +161,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(183777),	-- Deathstalker's Collar
 					i(183778),	-- Deathstalker's Shoulderguards
 				}),
-				n(-45, {	-- Mail
+				filter(MAIL, {
 					i(183767),	-- Kaldorei Archer's Chainmail
 					i(183768),	-- Kaldorei Archer's Hood
 					i(183769),	-- Kaldorei Archer's Shoulderguards
@@ -169,7 +169,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(183780),	-- Blightguard's Helmet
 					i(183781),	-- Blightguard's Shoulderguards
 				}),
-				n(-46, {	-- Plate
+				filter(PLATE, {
 					i(183770),	-- Wardenguard's Chestplate
 					i(183771),	-- Wardenguard's Greathelm
 					i(183773),	-- Wardenguard's Pauldrons

@@ -240,7 +240,7 @@ root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 								},
 							}),
 						}),
-						n(-43,  {	-- Cloth
+						filter(CLOTH, {
 							i(172120, {	-- Frost Runed Headdress
 								["cost"] = {
 									{ "i", 137642, 1 },	-- 1x  Mark of Honor
@@ -274,7 +274,7 @@ root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 								},
 							}),
 						}),
-						n(-44,  {	-- Leather
+						filter(LEATHER, {
 							i(172104, {	-- Frostwolf Leather Belt
 								["cost"] = {
 									{ "i", 137642, 1 },	-- 1x  Mark of Honor
@@ -288,7 +288,7 @@ root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 								},
 							}),
 						}),
-						n(-45,  {	-- Mail
+						filter(MAIL, {
 							i(172103, {	-- Frostwolf Mail Belt
 								["cost"] = {
 									{ "i", 137642, 1 },	-- 1x  Mark of Honor
@@ -316,7 +316,7 @@ root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 								},
 							}),
 						}),
-						n(-46,  {	-- Plate
+						filter(PLATE, {
 							i(172102, {	-- Frostwolf Plate Belt
 								["cost"] = {
 									{ "i", 137642, 1 },	-- 1x  Mark of Honor
@@ -454,7 +454,7 @@ root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 								},
 							}),
 						}),
-						n(-43,  {	-- Cloth
+						filter(CLOTH, {
 							i(172120, {	-- Frost Runed Headdress
 								["cost"] = {
 									{ "i", 137642, 1 },	-- 1x  Mark of Honor
@@ -488,7 +488,7 @@ root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 								},
 							}),
 						}),
-						n(-44,  {	-- Leather
+						filter(LEATHER, {
 							i(172108, {	-- Stormpike Leather Girdle
 								["cost"] = {
 									{ "i", 137642, 1 },	-- 1x  Mark of Honor
@@ -502,7 +502,7 @@ root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 								},
 							}),
 						}),
-						n(-45,  {	-- Mail
+						filter(MAIL, {
 							i(172107, {	-- Stormpike Mail Girdle
 								["cost"] = {
 									{ "i", 137642, 1 },	-- 1x  Mark of Honor
@@ -516,7 +516,7 @@ root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 								},
 							}),
 						}),
-						n(-46,  {	-- Plate
+						filter(PLATE, {
 							i(172127, {	-- Frozen Steel Vambraces
 								["cost"] = {
 									{ "i", 137642, 1 },	-- 1x  Mark of Honor

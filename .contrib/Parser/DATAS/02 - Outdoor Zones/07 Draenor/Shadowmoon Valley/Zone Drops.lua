@@ -20,7 +20,7 @@ _.Zones =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(WOD_TIER, {
-		n(-163, {	-- Armor
+		n(ARMOR, {
 			n(BACK, {
 				i(117494),	-- Windfang Drape
 				i(117495),	-- Windfang Greatcloak

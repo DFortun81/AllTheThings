@@ -4,7 +4,7 @@
 -- not yet in the automation.
 
 profession(LEATHERWORKING, {
-	filter(200, {
+	filter(RECIPES, {
 		{
 			["name"] = "Zandalari Patterns",
 			["categoryID"] = 871,

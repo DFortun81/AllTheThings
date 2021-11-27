@@ -18,23 +18,23 @@ _.Zones =
 						i(33165, {	-- Formula: Enchant Weapon - Greater Agility
 							["spellID"] = 42620,	-- Enchant Weapon - Greater Agility
 							["requireSkill"] = ENCHANTING,
-							["f"] = 200,
+							["f"] = RECIPES,
 						}),
 						i(33124, {	-- Pattern: Cloak of Darkness
 							["spellID"] = 42546,	-- Cloak of Darkness
 							["requireSkill"] = LEATHERWORKING,
-							["f"] = 200,
+							["f"] = RECIPES,
 						}),
 						i(33205, {	-- Pattern: Shadowprowler's Chestguard
 							["spellID"] = 42731,	-- Shadowprowler's Chestguard
 							["requireSkill"] = LEATHERWORKING,
-							["f"] = 200,
+							["f"] = RECIPES,
 						}),
 						i(33209, {	-- Recipe: Flask of Chromatic Wonder
 							-- #if BEFORE MOP
 							["spellID"] = 42736,	-- Flask of Chromatic Wonder
 							["requireSkill"] = ALCHEMY,
-							["f"] = 200,
+							["f"] = RECIPES,
 							-- #else
 							["spellID"] = 0,
 							-- #endif

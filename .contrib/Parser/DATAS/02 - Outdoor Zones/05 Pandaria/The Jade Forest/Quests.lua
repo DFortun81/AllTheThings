@@ -1765,8 +1765,8 @@ _.Zones =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(MOP_TIER, {
-		n(-163, {	-- Armor
-			n(-43, {	-- Cloth
+		n(ARMOR, {
+			filter(CLOTH, {
 				i(80948),	-- Peacebreaker's Silk Cowl
 				i(80949),	-- Peacebreaker's Satin Hood
 				i(80988),	-- Scavenger's Silk Amice
@@ -1782,7 +1782,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(81015),	-- Landfall Silk Treads
 				i(81016),	-- Landfall Satin Treads
 			}),
-			n(-44, {	-- Leather
+			filter(LEATHER, {
 				i(80946),	-- Peacebreaker's Leather Helm
 				i(80950),	-- Peacebreaker's Hide Helm
 				i(80986),	-- Scavenger's Leather Spaulders
@@ -1798,7 +1798,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(81013),	-- Landfall Leather Boots
 				i(81017),	-- Landfall Moccasins
 			}),
-			n(-45, {	-- Mail
+			filter(MAIL, {
 				i(80947),	-- Peacebreaker's Chain Helm
 				i(80951),	-- Peacebreaker's Ringmail Helm
 				i(80987),	-- Scavenger's Chain Spaulders
@@ -1814,7 +1814,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(81014),	-- Landfall Chain Boots
 				i(81018),	-- Landfall Sabatons
 			}),
-			n(-46, {	-- Plate
+			filter(PLATE, {
 				i(80952),	-- Peacebreaker's Burnished Headcover
 				i(80953),	-- Peacebreaker's Armored Helm
 				i(80954),	-- Peacebreaker's Heavy Helm

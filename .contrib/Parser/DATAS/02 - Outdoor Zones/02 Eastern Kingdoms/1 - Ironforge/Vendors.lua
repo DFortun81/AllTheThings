@@ -31,7 +31,7 @@ _.Zones =
 							["u"] = TBC_PHASE_ONE,
 							-- #endif
 							["isLimited"] = true,
-							["f"] = 200,
+							["f"] = RECIPES,
 						}),
 						i(20975, {	-- Design: The Jade Eye
 							["spellID"] = 25619,	-- The Jade Eye
@@ -41,7 +41,7 @@ _.Zones =
 							["u"] = TBC_PHASE_ONE,
 							-- #endif
 							["isLimited"] = true,
-							["f"] = 200,
+							["f"] = RECIPES,
 						}),
 					},
 				}),

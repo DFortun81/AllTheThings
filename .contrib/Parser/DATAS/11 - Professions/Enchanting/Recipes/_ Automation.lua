@@ -4,7 +4,7 @@ DO NOT MODIFY THIS FILE, I WILL CUT YOU.
     -CRIEVE
 ]]--
 profession(333, {	-- Enchanting
-	filter(200, {
+	filter(RECIPES, {
 		{
 			["name"] = "Illusions",
 			["categoryID"] = 399,

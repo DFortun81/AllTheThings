@@ -273,7 +273,7 @@ _.Zones =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(WOTLK_TIER, {
-		n(-163, {	-- Armor
+		n(ARMOR, {
 			f(53,	{	-- Trinket
 				i(44869),	-- Frenzyheart Insignia of Fury
 				i(44870),	-- Oracle Talisman of Ablution

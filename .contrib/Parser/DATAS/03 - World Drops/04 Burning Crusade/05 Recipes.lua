@@ -5,7 +5,7 @@
 _.WorldDrops =
 {
 	tier(TBC_TIER, {
-		f(200, {	-- Recipes
+		filter(RECIPES, {
 			prof(ALCHEMY, {
 				i(22914),	-- Recipe: Destruction Potion
 				i(22926),	-- Recipe: Elixir of Empowerment (BoE version)

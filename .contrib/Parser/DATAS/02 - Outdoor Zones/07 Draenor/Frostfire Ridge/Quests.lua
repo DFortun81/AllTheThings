@@ -1306,17 +1306,17 @@ _.HiddenQuestTriggers = {
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(WOD_TIER, {
-		n(-163, {	-- Armor
-			n(-43, {	-- Cloth
+		n(ARMOR, {
+			filter(CLOTH, {
 				i(106163),	-- Frostwolf Wind-Talker Robe
 			}),
-			n(-44, {	-- Leather
+			filter(LEATHER, {
 				i(106142),	-- Frostwolf Scout's Tunic
 			}),
-			n(-45, {	-- Mail
+			filter(MAIL, {
 				i(106166),	-- Frostwolf Ringmail Armor (Beta only, was reward from https://www.wowhead.com/quest=32985/fury-of-frostfire)
 			}),
-			n(-46, {	-- Plate
+			filter(PLATE, {
 				i(106147),	-- Forstwolf Stalwart Chestpiece (beta only)
 			}),
 		}),

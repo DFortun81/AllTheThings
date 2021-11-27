@@ -5,7 +5,7 @@
 _.WorldDrops =
 {
 	tier(BFA_TIER, {
-		f(200, {	-- Recipes
+		filter(RECIPES, {
 			prof(BLACKSMITHING, {
 				i(166260),	-- Recipe: Monel-Hardened Hoofplates (Rank 3)
 			}),

@@ -6,7 +6,7 @@ _.Craftables =
 {
 	tier(BFA_TIER, {
 		prof(ENGINEERING, {
-			n(MOUNTS, {
+			filter(MOUNTS, {
 				i(161134),	-- Mecha-Mogul Mk2
 				i(158886, {	-- Super-Charged Engine
 					i(153594),	-- Xiwyllag ATV
@@ -18,7 +18,7 @@ _.Craftables =
 			filter(55, {	-- Consumable
 				i(165738),	-- Makeshift Azerite Detector
 			}),
-			n(TOYS, {
+			filter(TOYS, {
 				i(168667), -- Blingtron 7000
 				i(168807),	-- Wormhole Generator: Kul Tiras
 				i(168808),	-- Wormhole Generator: Zandalar
@@ -44,7 +44,7 @@ _.Craftables =
 				i(170315),	-- Uncanny Combatant's Stormsteel Destroyer [Horde]
 			}),
 			n(HEAD, {
-				filter(4, {	-- Cloth
+				filter(CLOTH, {
 					i(168689, {	-- Abyssal Synthetic Specs
 						i(168763),	-- Schematic: A5C-3N-D3D Synthetic Specs
 					}),
@@ -72,7 +72,7 @@ _.Craftables =
 						i(165917),	-- Schematic: SP1-R1-73D Synthetic Specs
 					}),
 				}),
-				filter(5, {	-- Leather
+				filter(LEATHER, {
 					i(168692, {	-- Abyssal Gearspun Goggles
 						i(168765),	-- Schematic: A5C-3N-D3D Gearspun Goggles
 					}),
@@ -100,7 +100,7 @@ _.Craftables =
 						i(165913),	-- Schematic: SP1-R1-73D Gearspun Goggles
 					}),
 				}),
-				filter(6, {	-- Mail
+				filter(MAIL, {
 					i(168695, {	-- Abyssal Bionic Bifocals
 						i(168767),	-- Schematic: A5C-3N-D3D Bionic Bifocals
 					}),
@@ -128,7 +128,7 @@ _.Craftables =
 						i(165911),	-- Schematic: SP1-R1-73D Bionic Bifocals
 					}),
 				}),
-				filter(7, {	-- Plate
+				filter(PLATE, {
 					i(168698, {	-- Abyssal Orthogonal Optics
 						i(168769),	-- Schematic: A5C-3N-D3D Orthogonal Optics
 					}),

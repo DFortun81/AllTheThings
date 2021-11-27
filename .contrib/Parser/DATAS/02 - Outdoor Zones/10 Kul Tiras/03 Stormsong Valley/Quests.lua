@@ -1709,22 +1709,22 @@ _.Zones =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(BFA_TIER, {
-		n(-163, {	-- Armor
-			n(-43, {	-- Cloth
+		n(ARMOR, {
+			filter(CLOTH, {
 				i(160372),	-- Tidespeaker Cinch
 			}),
-			n(-44, {	-- Leather
+			filter(LEATHER, {
 				i(158694),	-- Darkwater Grips
 				i(158706),	-- Darkwater Trousers
 				i(160375),	-- Darkwater Waistwrap
 				i(160388),	-- Darkwater Bands
 			}),
-			n(-45, {	-- Mail
+			filter(MAIL, {
 				i(158697),	-- Stormchaser Grips
 				i(158705),	-- Stormchaser Links
 				i(160391),	-- Stormchaser Coils
 			}),
-			n(-46, {	-- Plate
+			filter(PLATE, {
 				i(158695),	-- Dread Corsair Handguards
 				i(158703),	-- Dread Corsair Chausses
 				i(160381),	-- Dread Corsair Clasp

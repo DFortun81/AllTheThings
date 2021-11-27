@@ -1,5 +1,5 @@
 profession(ALCHEMY, {
-	filter(200, {
+	filter(RECIPES, {
 		{
 			["categoryID"] = 1294,	-- Shadowlands Alchemy
 			["g"] = {
