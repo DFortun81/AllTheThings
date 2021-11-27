@@ -333,6 +333,7 @@ namespace ATT
             if (!MergeItemData)
             {
                 Items.MergeInto(data);
+                Objects.PostProcessMergeInto(data);
                 foreach (string key in Objects.MergeObjectFields.Keys)
                     Objects.MergeInto(key, data);
             }
@@ -600,24 +601,23 @@ namespace ATT
                     altQuests.Remove(questID);
                 }
             }
-            // TODO: maybe consolidate this repeated logic if ever making items/npcs work for it...
             else if (data.TryGetValue("_quests", out object quests))
             {
-                DuplicateDataIntoGroups(data, quests, "quest");
+                DuplicateDataIntoGroups(data, quests, "questID");
                 data.Remove("_quests");
                 cloned = true;
             }
             else if (data.TryGetValue("_items", out object items))
             {
-                DuplicateDataIntoGroups(data, items, "item");
+                DuplicateDataIntoGroups(data, items, "itemID");
                 data.Remove("_items");
-                //cloned = true;
+                cloned = true;
             }
             else if (data.TryGetValue("_npcs", out object npcs))
             {
-                DuplicateDataIntoGroups(data, npcs, "npc");
+                DuplicateDataIntoGroups(data, npcs, "npcID");
                 data.Remove("_npcs");
-                //cloned = true;
+                cloned = true;
             }
 
             // specifically Achievement Criteria that is cloned to another location in the addon should not be maintained where it was cloned from
@@ -1067,9 +1067,7 @@ namespace ATT
         private static void DuplicateDataIntoGroups(Dictionary<string, object> data, object groups, string type)
         {
             var groupIDs = groups as List<object>;
-            var clone = new Dictionary<string, object>(data);
-            List<object> groupList = new List<object>() { clone };
-            if (groupIDs != null && ATT.Export.ObjectData.TryGetMostSignificantObjectType(data, out ATT.Export.ObjectData objectData))
+            if (groupIDs != null && ATT.Export.ObjectData.TryGetMostSignificantObjectType(data, out Export.ObjectData objectData))
             {
                 switch (objectData.ObjectType)
                 {
@@ -1080,30 +1078,30 @@ namespace ATT
                             // duplicate from an achID/criteriaID source
                             if (parent.Key == "achID")
                             {
-                                if (!clone.ContainsKey(parent.Key))
+                                if (!data.ContainsKey(parent.Key))
                                 {
-                                    clone.Add(parent.Key, parent.Value);
+                                    data.Add(parent.Key, parent.Value);
                                 }
                                 else
                                 {
                                     // child already contains the parent key value? weird but replace anyway
-                                    clone[parent.Key] = parent.Value;
+                                    data[parent.Key] = parent.Value;
                                 }
                             }
                         }
 
                         // verify the criteria has the achieve information before duplicating
-                        if (clone.ContainsKey("achID"))
+                        if (data.ContainsKey("achID"))
                         {
-                            DuplicateGroupListIntoObjects(groupIDs, groupList, type);
+                            DuplicateGroupListIntoObjects(groupIDs, data, type);
                         }
                         else
                         {
-                            Trace.WriteLine("Failed to duplicate object due to missing 'achID': " + MiniJSON.Json.Serialize(clone));
+                            Trace.WriteLine("Failed to duplicate criteria object due to missing 'achID': " + MiniJSON.Json.Serialize(data));
                         }
                         break;
                     case "achID":
-                        DuplicateGroupListIntoObjects(groupIDs, groupList, type);
+                        DuplicateGroupListIntoObjects(groupIDs, data, type);
                         break;
                         // handle other types of duplication sources if necessary
                 }
@@ -1116,49 +1114,12 @@ namespace ATT
         /// <param name="groupIDs"></param>
         /// <param name="groupList"></param>
         /// <param name="type"></param>
-        private static void DuplicateGroupListIntoObjects(List<object> groupIDs, List<object> groupList, string type)
+        private static void DuplicateGroupListIntoObjects(List<object> groupIDs, Dictionary<string, object> data, string type)
         {
             // duplicate the data into the sourced data by type
             foreach (object dupeGroupID in groupIDs)
             {
-                try
-                {
-                    long groupIDint = Convert.ToInt64(dupeGroupID);
-                    switch (type)
-                    {
-                        case "quest":
-                            // push the clone data into the 'g' of the matching quest objects
-                            if (Objects.AllQuests.TryGetValue(groupIDint, out Dictionary<string, object> questg))
-                                Objects.Merge(questg, "g", groupList);
-                            break;
-                            //case "item":
-                            //    // push the clone data into the 'g' of the matching item object
-                            //    var item = Items.Get(groupIDint);
-                            //    Objects.Merge(item, "g", groupList);
-                            //    break;
-                            //case "npc":
-                            //    // push the clone data into the 'g' of the matching item object
-                            //    break;
-                    }
-                }
-                catch (FormatException ex)
-                {
-                    Trace.WriteLine("Bad format " + type + "ID used in _" + type + "s property:" + dupeGroupID?.ToString());
-                    Trace.WriteLine(ex.Message);
-                    Trace.WriteLine(ex.StackTrace);
-                }
-                catch (InvalidCastException ex)
-                {
-                    Trace.WriteLine("Non-integer " + type + "ID used in _" + type + "s property:" + dupeGroupID?.ToString());
-                    Trace.WriteLine(ex.Message);
-                    Trace.WriteLine(ex.StackTrace);
-                }
-                catch (Exception ex)
-                {
-                    Trace.WriteLine("Unexpected Exception Occurred while processing " + type + "ID used in _" + type + "s property:" + dupeGroupID?.ToString());
-                    Trace.WriteLine(ex.Message);
-                    Trace.WriteLine(ex.StackTrace);
-                }
+                Objects.PostProcessMerge(type, dupeGroupID, data);
             }
         }
 
