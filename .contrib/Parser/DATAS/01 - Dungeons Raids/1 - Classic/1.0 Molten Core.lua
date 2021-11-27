@@ -674,7 +674,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					i(17204, {	-- Eye of Sulfuras
 						["classes"] = { DEATHKNIGHT, DRUID, PALADIN, SHAMAN, WARRIOR },
 						["cost"] = { { "i", 17193, 1 } },	-- Sulfuron Hammer
-						["f"] = 24,	-- To match Sulfuras, Hand of Ragnaros and cause it to display even if Quest Items are filtered
+						["f"] = TWO_HANDED_MACES,	-- To match Sulfuras, Hand of Ragnaros and cause it to display even if Quest Items are filtered
 						["groups"] = {
 							ach(429),	-- Sulfuras, Hand of Ragnaros
 							i(17182),	-- Sulfuras, Hand of Ragnaros

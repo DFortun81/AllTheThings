@@ -6,7 +6,7 @@ _.Craftables =
 {
 	tier(BFA_TIER, {
 		prof(JEWELCRAFTING, {
-			filter(28, {	-- Staves
+			filter(STAVES, {
 				i(159939),	-- Honorable Combatant's Staff of Intuition
 				i(153639),	-- Laribole Staff of Alacrity
 				i(167943),	-- Notorious Combatant's Intuitive Staff

@@ -152,7 +152,7 @@ root("Promotions", n(TCG_HEADER, bubbleDown({
 			["timeline"] = { "added 3.2.0" },
 		}),
 	}),
-	filter(10, {	-- Shirt
+	filter(SHIRTS, {
 		["timeline"] = { "added 3.1.0.9626" },
 		["groups"] = {
 			i(45037, {	-- Epic Purple Shirt
@@ -160,7 +160,7 @@ root("Promotions", n(TCG_HEADER, bubbleDown({
 			}),
 		}
 	}),
-	filter(9, {		-- Tabard
+	filter(TABARDS, {
 		i(38312, {	-- Tabard of Brilliance
 			["timeline"] = { "added 2.4.3.8601" },
 		}),

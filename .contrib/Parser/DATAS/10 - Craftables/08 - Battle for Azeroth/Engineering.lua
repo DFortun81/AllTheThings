@@ -23,7 +23,7 @@ _.Craftables =
 				i(168807),	-- Wormhole Generator: Kul Tiras
 				i(168808),	-- Wormhole Generator: Zandalar
 			}),
-			filter(23, {	-- 1H Maces
+			filter(ONE_HANDED_MACES, {
 				i(159937),	-- Honorable Combatant's Discombobulator
 				i(152830),	-- Magnetic Discombobulator
 				i(167940),	-- Notorious Combatant's Discombobulator
@@ -31,7 +31,7 @@ _.Craftables =
 				i(164680),	-- Sinister Combatant's Discombobulator
 				i(170313),	-- Uncanny Combatant's Discombobulator
 			}),
-			filter(31, {	-- Guns
+			filter(GUNS, {
 				i(161930),	-- Finely-Tuned Stormsteel Destroyer [Alliance]
 				i(153506),	-- Finely-Tuned Stormsteel Destroyer [Horde]
 				i(161931),	-- Honorable Combatant's Stormsteel Destroyer [Alliance]

@@ -1130,7 +1130,7 @@ _.NeverImplemented =
 			-- SL
 			i(185774),	-- PH Green Head Candle
 		}),
-		n(-324, {	-- Shirts
+		filter(SHIRTS, {
 			i(52548),	-- Initiate's Tunic
 			i(53869),	-- War Paint (Shirt) NOT GOOD FOR THE LADIES (NYI)
 			i(53879),	-- Rugged Work Shirt
@@ -1142,7 +1142,7 @@ _.NeverImplemented =
 			i(137118),	-- The Crone's Shirt
 			i(137552),	-- Purple Shirt
 		}),
-		n(-325, {	-- Tabard
+		filter(TABARDS, {
 			i(23388),	-- Tranquillen Tabard
 			i(147204),	-- Black Apron - TEST
 		}),
@@ -3038,7 +3038,7 @@ _.NeverImplemented =
 		i(161118),	-- Marrow Shatter (TW Vendor/Tw drop?)
 	}),
 	n(WEAPONS, {
-		n(-346, {	-- Bows
+		filter(BOWS, {
 			-- Load In Game
 			i(5748),	-- Centaur Longbow
 			i(115294),	-- Spectral Longbow
@@ -3050,12 +3050,12 @@ _.NeverImplemented =
 			i(109283),	-- 6.0 QA Combat Test Hunter Bow
 			i(111783),	-- Irontree Bow (Cata version 55306 is in game but this version doesn't seem to have ever existed)
 		}),
-		n(-347, {	-- Crossbows
+		filter(CROSSBOWS, {
 			-- ItemID/Retrieving
 			i(108784),	-- 7.0 PH Weapon - Crossbow Agi
 			i(165267),	-- Fallback Weapon - Crossbow
 		}),
-		n(-333, {	-- Daggers
+		filter(DAGGERS, {
 			-- Load In Game
 			i(2664),	-- Spinner Fang
 			i(17142),	-- Shard of the Defiler
@@ -3080,7 +3080,7 @@ _.NeverImplemented =
 			i(167148),	-- QA Combat Test Dagger 1
 			i(180863),	-- Silent Lady's Kiss
 		}),
-		n(-348, {	-- Fist Weapons
+		filter(FIST_WEAPONS, {
 			-- Load In Game
 			i(81320),	-- Right-Handed Invis Knuckles
 			i(85588),	-- Reflex Edges [This version never implemented]
@@ -3099,7 +3099,7 @@ _.NeverImplemented =
 			i(109534),	-- 6.0 QA Combat Test Agility Fist Weapon (MH) 2
 			i(165269),	-- Fallback Weapon - Fist
 		}),
-		n(-345, {	-- Guns
+		filter(GUNS, {
 			-- ItemID/Retrieving
 			i(38246),	-- Skull-Forged Blunderbuss
 			i(49455),	-- Blunderbuss of Deforestation
@@ -3121,7 +3121,7 @@ _.NeverImplemented =
 			i(165277),	-- Fallback Weapon - Offhand
 			i(167146),	-- QA Combat Test Caster Offhand 1
 		}),
-		n(-334, {	-- One-Handed Axes
+		filter(ONE_HANDED_AXES, {
 			-- Load In Game
 			i(5255),	-- Quilboar Tomahawk
 			i(68050),	-- Shatterscale Mightfish
@@ -3145,7 +3145,7 @@ _.NeverImplemented =
 			i(164967),	-- Steelforged Axe (CREATURE USE - TIER 2 VISUAL ONLY)
 			i(165264),	-- Fallback Weapon - 1H Axe
 		}),
-		n(-336, {	-- One-Handed Maces
+		filter(ONE_HANDED_MACES, {
 			-- Load In Game
 			i(107390),	-- Obliterator Firing Lever
 			i(115296),	-- Spectral Warmace
@@ -3168,7 +3168,7 @@ _.NeverImplemented =
 			i(165262),	-- Fallback Weapon - 1H Mace
 			i(167141),	-- QA Combat Test 1h Mace
 		}),
-		n(-338, {	-- One-Handed Swords
+		filter(ONE_HANDED_SWORDS, {
 			-- Load In Game
 			i(18582),	-- The Twin Blades of Azzinoth
 			i(18583),	-- Warglaive of Azzinoth (Right)
@@ -3197,7 +3197,7 @@ _.NeverImplemented =
 			i(165273),	-- Fallback Weapon - 1H Sword
 			i(167143),	-- QA Combat Test 1h Sword
 		}),
-		n(-343,	{	-- Polearms
+		filter(POLEARMS, {
 			-- Load In Game
 			i(115297),	-- Spectral Polearm
 			-- ItemID/Retrieving
@@ -3258,7 +3258,7 @@ _.NeverImplemented =
 			-- ItemID/Retrieving
 			i(140070),	-- Deep Cave Ice Crystal (ptr only)
 		}),
-		n(-332, {	-- Shields
+		filter(SHIELDS, {
 			-- Load In Game
 			i(18303),	-- Nimble Buckler
 			i(18342),	-- Quel'dorei Guard [NPC Shield I believe]
@@ -3279,7 +3279,7 @@ _.NeverImplemented =
 			i(165276),	-- Fallback Weapon - Shield
 			i(167140),	-- QA Combat Test  Shield 1
 		}),
-		n(-342, {	-- Staves
+		filter(STAVES, {
 			-- Load In Game
 			i(115298),	-- Spectral Spire
 			i(182566),	-- NPE Weapon Staff AGI
@@ -3311,7 +3311,7 @@ _.NeverImplemented =
 			i(167145),	-- QA Combat Test Caster Staff 1
 			i(167147),	-- QA Combat Test Staff 1
 		}),
-		n(-335, {	-- Two Handed Axes
+		filter(TWO_HANDED_AXES, {
 			-- Load In Game
 			i(69916),	-- Trollbane (Daakara)
 			i(80980),	-- Axe of Aborted Deforestation (Never made it to Live, yet into our Appearances Tab)
@@ -3328,7 +3328,7 @@ _.NeverImplemented =
 			i(165265),	-- Fallback Weapon - 2H Axe
 			i(167142),	-- QA Combat Test 2H Axe
 		}),
-		n(-337, {	-- Two Handed Maces
+		filter(TWO_HANDED_MACES, {
 			-- Load In Game
 			i(169818),	-- Quilboar Club
 			i(182565),	-- NPE Weapon 2H Mace STR
@@ -3342,7 +3342,7 @@ _.NeverImplemented =
 			i(159555),	-- 8.0 PH - Weapon - 2H Mace
 			i(165263),	-- Fallback Weapon - 2H Mace
 		}),
-		n(-339, {	-- Two Handed Swords
+		filter(TWO_HANDED_SWORDS, {
 			-- Load In Game
 			i(33475),	-- Frostmourne
 			i(56702),	-- Saw Blade (never made it to live)
@@ -3359,7 +3359,7 @@ _.NeverImplemented =
 			--
 			i(49547),	-- Unknown
 		}),
-		n(-341, {	-- Wands
+		filter(WANDS, {
 			-- ItemID/Retrieving
 			i(32482),	-- Touch of Victory
 			i(34144),	-- Branch of Destruction
@@ -3375,7 +3375,7 @@ _.NeverImplemented =
 			--
 			i(165883),	-- Unknown
 		}),
-		n(-340, {	-- War Glaives
+		filter(WARGLAIVES, {
 			-- Load In Game
 			i(151138),	-- Warglaive of Azzinoth [This version not implemented; was testing for transmog]
 			i(182571),	-- NPE Weapon Warglaive AGI

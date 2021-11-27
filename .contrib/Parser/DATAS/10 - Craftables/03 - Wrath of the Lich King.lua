@@ -19,30 +19,30 @@ _.Craftables =
 				i(42500),	-- Titanium Shield Spike
 				i(44936),	-- Titanium Plating
 			}),
-			filter(20, {	-- Daggers
+			filter(DAGGERS, {
 				i(41183),	-- Saronite Ambusher
 				i(41184),	-- Saronite Shiv
 				i(42435),	-- Titansteel Shanker
 				i(45085),	-- Titansteel Spellblade
 			}),
-			filter(21, {	-- 1H Axes
+			filter(ONE_HANDED_AXES, {
 				i(41243),	-- Notched Cobalt War Axe
 			}),
-			filter(22, {	-- 2H Axes
+			filter(TWO_HANDED_AXES, {
 				i(41181),	-- Honed Cobalt Cleaver
 			}),
-			filter(23, {	-- 1H Maces
+			filter(ONE_HANDED_MACES, {
 				i(41240),	-- Cobalt Tenderizer
 				i(42443),	-- Cudgel of Saronite Justice
 				i(41185),	-- Furious Saronite Beatstick
 				i(41383),	-- Titansteel Bonecrusher
 				i(41384),	-- Titansteel Guardian
 			}),
-			filter(24, {	-- 2H Maces
+			filter(TWO_HANDED_MACES, {
 				i(41188),	-- Saronite Mindcrusher
 				i(41257),	-- Titansteel Destroyer
 			}),
-			filter(25, {	-- 1H Swords
+			filter(ONE_HANDED_SWORDS, {
 				i(41186, {	-- Corroded Saronite Edge
 					["timeline"] = {
 						"added 3.0.1.8770",
@@ -59,10 +59,10 @@ _.Craftables =
 				i(41182),	-- Savage Cobalt Slicer
 				i(41239),	-- Sturdy Cobalt Quickblade
 			}),
-			filter(26, {	-- 2H Swords
+			filter(TWO_HANDED_SWORDS, {
 				i(41242),	-- Forged Cobalt Claymore
 			}),
-			filter(8, {		-- Shield
+			filter(SHIELDS, {
 				i(40668),	-- Cobalt Triangle Shield
 				i(41113),	-- Saronite Bulwark
 				i(40670),	-- Saronite Defender
@@ -595,7 +595,7 @@ _.Craftables =
 				i(41513),	-- Frostwoven Shoulders
 				i(41523),	-- Mystic Frostwoven Shoulders
 			}),
-			n(-324, {	-- Shirts
+			filter(SHIRTS, {
 				i(41249),	-- Blue Lumberjack Shirt
 				i(41253),	-- Blue Workman's Shirt
 				i(41250),	-- Green Lumberjack Shirt

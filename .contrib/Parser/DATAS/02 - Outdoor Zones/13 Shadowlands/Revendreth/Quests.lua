@@ -629,7 +629,7 @@ _.Zones =
 						i(177638),	-- Sinfall Edgemaster's Blade
 						i(177637),	-- Sinfall Arquebus
 						i(177635, {	-- Sinfall Legion Smasher
-							["f"] = 24,	-- 2H mace (for some reason erroneously has filterID of 23, which is 1H maces)
+							["f"] = TWO_HANDED_MACES,	-- (for some reason erroneously has filterID of 23, which is 1H maces)
 						}),
 						i(177636),	-- Sinfall Legionaire's Barbed Staff
 						i(184326),	-- Sinfall Stoneborn Cudgel

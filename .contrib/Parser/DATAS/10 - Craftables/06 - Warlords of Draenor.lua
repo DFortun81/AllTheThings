@@ -169,7 +169,7 @@ _.Craftables =
 				}),
 				WOD_CRAFTED_ITEM(113270),	-- Shadowtome
 			}),
-			filter(28, {	-- Staves
+			filter(STAVES, {
 				i(113134, {	-- Crystalfire Spellstaff
 					["timeline"] = { "created 9.0" },
 				}),
@@ -179,7 +179,7 @@ _.Craftables =
 				}),
 				WOD_CRAFTED_ITEM(111526),	-- Etched-Blade Warstaff
 			}),
-			filter(27, {	-- Wands
+			filter(WANDS, {
 				i(113131, {	-- Warmaster's Firestick
 					["timeline"] = { "added 9.0" },
 				}),

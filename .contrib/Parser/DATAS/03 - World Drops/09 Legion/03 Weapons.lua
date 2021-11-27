@@ -6,7 +6,7 @@ _.WorldDrops =
 {
 	tier(LEGION_TIER, {
 		n(WEAPONS, {
-			n(-337, {	-- 2H Maces
+			filter(TWO_HANDED_MACES, {
 				i(132921),	-- Athrog's Dethamma
 			}),
 		}),

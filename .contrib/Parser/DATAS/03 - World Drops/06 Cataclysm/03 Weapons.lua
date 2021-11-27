@@ -6,7 +6,7 @@ _.WorldDrops =
 {
 	tier(CATA_TIER, {
 		n(WEAPONS, {
-			n(-334, {	-- 1H Axes
+			filter(ONE_HANDED_AXES, {
 				i(55283),	-- Angerfang Axe
 				i(66981),	-- Axe of the Deadly Price
 				i(66952),	-- Belmont's Vampire Hacker
@@ -18,7 +18,7 @@ _.WorldDrops =
 				i(55285),	-- Splinterspear Axe
 				i(55282),	-- Steelspark Axe
 			}),
-			n(-335, {	-- 2H Axes
+			filter(TWO_HANDED_AXES, {
 				i(55292),	-- Angerfang Broadaxe
 				i(55296),	-- Bladefist Broadaxe
 				i(55297),	-- Irontree Broadaxe
@@ -29,7 +29,7 @@ _.WorldDrops =
 				i(55291),	-- Steelspark Broadaxe
 				i(66985),	-- Termination Axe
 			}),
-			n(-346, {	-- Bows
+			filter(BOWS, {
 				i(55301),	-- Angerfang Bow
 				i(55305),	-- Bladefist Bow
 				i(55306),	-- Irontree Bow
@@ -40,7 +40,7 @@ _.WorldDrops =
 				i(55303),	-- Splinterspear Bow
 				i(55300),	-- Steelspark Bow
 			}),
-			n(-347, {	-- Crossbows
+			filter(CROSSBOWS, {
 				i(55319),	-- Angerfang Crossbow
 				i(55323),	-- Bladefist Crossbow
 				i(55324),	-- Irontree Crossbow
@@ -50,7 +50,7 @@ _.WorldDrops =
 				i(55321),	-- Splinterspear Crossbow
 				i(55318),	-- Steelspark Crossbow
 			}),
-			n(-333, {	-- Daggers
+			filter(DAGGERS, {
 				i(55328),	-- Angerfang Dagger
 				i(55441),	-- Blackwolf Spellblade
 				i(55332),	-- Bladefist Dagger
@@ -71,7 +71,7 @@ _.WorldDrops =
 				i(55440),	-- Thondroril Spellblade
 				i(66956),	-- Trek's Shiv
 			}),
-			n(-348, {	-- Fist Weapons
+			filter(FIST_WEAPONS, {
 				i(55346),	-- Angerfang Knuckles
 				i(55350),	-- Bladefist Knuckles
 				i(66972),	-- Crystalline Geoknife
@@ -82,7 +82,7 @@ _.WorldDrops =
 				i(55348),	-- Splinterspear Knuckles
 				i(55345),	-- Steelspark Knuckles
 			}),
-			n(-345, {	-- Guns
+			filter(GUNS, {
 				i(67045),	-- Abatement Cannon
 				i(55355),	-- Angerfang Gun
 				i(55359),	-- Bladefist Gun
@@ -107,7 +107,7 @@ _.WorldDrops =
 				i(55372),	-- Swamplight Crystal
 				i(55377),	-- Thondroril Crystal
 			}),
-			n(-336, {	-- 1H Maces
+			filter(ONE_HANDED_MACES, {
 				i(55382),	-- Angerfang Mace
 				i(55369),	-- Blackwolf Scepter
 				i(55386),	-- Bladefist Mace
@@ -128,7 +128,7 @@ _.WorldDrops =
 				i(55363),	-- Swamplight Scepter
 				i(55368),	-- Thondroril Scepter
 			}),
-			n(-337, {	-- 2H Maces
+			filter(TWO_HANDED_MACES, {
 				i(55391),	-- Angerfang Hammer
 				i(55395),	-- Bladefist Hammer
 				i(55396),	-- Irontree Hammer
@@ -139,7 +139,7 @@ _.WorldDrops =
 				i(55390),	-- Steelspark Hammer
 				i(66993),	-- Sorrow's End
 			}),
-			n(-343, {	-- Polearms
+			filter(POLEARMS, {
 				i(55409),	-- Angerfang Spear
 				i(55413),	-- Bladefist Spear
 				i(55414),	-- Irontree Spear
@@ -150,7 +150,7 @@ _.WorldDrops =
 				i(55411),	-- Splinterspear Spear
 				i(55408),	-- Steelspark Spear
 			}),
-			n(-332, {	-- Shields
+			filter(SHIELDS, {
 				i(67145),	-- Blockade's Lost Shield
 				i(67061),	-- Bulwark of the Scorned Man
 				i(55432),	-- Crystalvein Shield
@@ -164,7 +164,7 @@ _.WorldDrops =
 				i(55431),	-- Stonewrought Shield
 				i(67124),	-- Zulian Swirling Shield
 			}),
-			n(-342, {	-- Staves
+			filter(STAVES, {
 				i(55337),	-- Angerfang Staff
 				i(55445),	-- Angerfang Staff
 				i(55789),	-- Berto's Staff
@@ -186,7 +186,7 @@ _.WorldDrops =
 				i(55336),	-- Steelspark Staff
 				i(55444),	-- Steelspark Staff
 			}),
-			n(-338, {	-- 1H Swords
+			filter(ONE_HANDED_SWORDS, {
 				i(55454),	-- Angerfang Sword
 				i(55458),	-- Bladefist Sword
 				i(66916),	-- Delicate Blade of Meaning
@@ -199,7 +199,7 @@ _.WorldDrops =
 				i(55456),	-- Splinterspear Sword
 				i(55453),	-- Steelspark Sword
 			}),
-			n(-339, {	-- 2H Swords
+			filter(TWO_HANDED_SWORDS, {
 				i(55463),	-- Angerfang Greatsword
 				i(55467),	-- Bladefist Greatsword
 				i(55468),	-- Irontree Greatsword
@@ -210,7 +210,7 @@ _.WorldDrops =
 				i(55465),	-- Splinterspear Greatsword
 				i(55462),	-- Steelspark Greatsword
 			}),
-			n(-341, {	-- Wands
+			filter(WANDS, {
 				i(55486),	-- Blackwolf Wand
 				i(66920),	-- Cyu's Ornate Wand
 				i(55484),	-- Mereldar Wand

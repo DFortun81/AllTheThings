@@ -14,7 +14,7 @@ _.Craftables =
 			filter(114, {	-- Mount Equipment
 				i(168417),	-- Inflatable Mount Shoes
 			}),
-			filter(20, {	-- Daggers
+			filter(DAGGERS, {
 				i(161922),	-- Honorable Combatant's Shanker [Alliance]
 				i(159857),	-- Honorable Combatant's Shanker [Horde]
 				i(162652),	-- Honorable Combatant's Spellblade [Alliance]
@@ -36,7 +36,7 @@ _.Craftables =
 				i(170292),	-- Uncanny Combatant's Spellblade [Alliance]
 				i(170309),	-- Uncanny Combatant's Spellblade [Horde]
 			}),
-			filter(24, {	-- 2H Maces
+			filter(TWO_HANDED_MACES, {
 				i(161921),	-- Honorable Combatant's Deckpounder [Alliance]
 				i(159855),	-- Honorable Combatant's Deckpounder [Horde]
 				i(161915),	-- Monel-Hardened Deckpounder [Alliance]
@@ -48,7 +48,7 @@ _.Craftables =
 				i(170293),	-- Uncanny Combatant's Deckpounder [Alliance]
 				i(170366),	-- Uncanny Combatant's Deckpounder [Horde]
 			}),
-			filter(25, {	-- 1H Swords
+			filter(ONE_HANDED_SWORDS, {
 				i(161920),	-- Honorable Combatant's Cutlass [Alliance]
 				i(159853),	-- Honorable Combatant's Cutlass [Horde]
 				i(161913),	-- Monel-Hardened Cutlass [Alliance]
@@ -62,11 +62,11 @@ _.Craftables =
 				i(170294),	-- Uncanny Combatant's Cutlass [Alliance]
 				i(170302),	-- Uncanny Combatant's Cutlass [Horde]
 			}),
-			filter(26, {	-- 2H Swords
+			filter(TWO_HANDED_SWORDS, {
 				i(161914),	-- Monel-Hardened Claymore [Alliance]
 				i(152828),	-- Monel-Hardened Claymore [Horde]
 			}),
-			filter(29, {	-- Polearms
+			filter(POLEARMS, {
 				i(161923),	-- Honorable Combatant's Polearm [Alliance]
 				i(159858),	-- Honorable Combatant's Polearm [Horde]
 				i(161917),	-- Monel-Hardened Polearm [Alliance]
@@ -80,7 +80,7 @@ _.Craftables =
 				i(170290),	-- Uncanny Combatant's Polearm [Alliance]
 				i(170311),	-- Uncanny Combatant's Polearm [Horde]
 			}),
-			filter(8, {		-- Shield
+			filter(SHIELDS, {
 				i(161892),	-- Honorable Combatant's Aegis [Alliance]
 				i(159851),	-- Honorable Combatant's Shield [Horde]
 				i(161890),	-- Monel-Hardened Shield [Alliance]

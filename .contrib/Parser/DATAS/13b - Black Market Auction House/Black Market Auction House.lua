@@ -242,7 +242,7 @@ root("BlackMarket", bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(87410),	-- Plans: Ornate Battleplate of the Master
 		i(87408),	-- Plans: Unyielding Bloodplate
 	}),
-	n(-325, {	-- Tabard
+	filter(TABARDS, {
 		i(38312),	-- Tabard of Brilliance
 		i(23705),	-- Tabard of Flame
 		i(23709),	-- Tabard of Frost
