@@ -5,7 +5,7 @@
 _.WorldDrops =
 {
 	tier(MOP_TIER, {
-		n(-318, {	-- Armor
+		n(ARMOR, {
 			n(HEAD, {
 				i(87450),	-- Hood of Alchemical Vapors
 				i(87451),	-- Helm of Elemental Binding

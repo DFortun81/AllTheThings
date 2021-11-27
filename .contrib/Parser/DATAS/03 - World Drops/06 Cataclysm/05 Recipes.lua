@@ -5,7 +5,7 @@
 _.WorldDrops =
 {
 	tier(CATA_TIER, {
-		f(200, {	-- Recipes
+		filter(RECIPES, {
 			prof(ENCHANTING, {
 				i(68787),	-- Formula: Enchant Bracer - Agility
 				i(68788),	-- Formula: Enchant Bracer - Major Strength

@@ -19,7 +19,7 @@ _.Instances = { tier(BFA_TIER, {
 		},
 		["lvl"] = { 50 },
 		["g"] = {
-			n(-852, {	-- Azerite Essences
+			n(AZERITE_ESSENCES, {
 				i(168328, {	-- Hardened Azerite Formation (Rank 1)
 					["classes"] = TANKS,
 					["cost"] = { { "i", 169694, 9 } },	-- 9x Aqueous Reliquary

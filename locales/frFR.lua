@@ -727,15 +727,9 @@ for key,value in pairs({
 		--TODO: [-541] = "The Silithyst Must Flow",					-- The Silithyst Must Flow
 		[-542] = "L'ouverture de la Porte des ténèbres",			-- The Opening of the Dark Portal
 		--TODO: [-543] = "Legion Invasions",						-- Legion Invasions
-		--TODO: [-544] = "WoW Collector's Edition",					-- WoW Collector's Edition
-		--TODO: [-550] = "Starcraft Collector's Edition",			-- Starcraft Collector's Edition
-		--TODO: [-551] = "Diablo Collector's Edition",				-- Diablo Collector's Edition
-		--TODO: [-556] = "Arena Tournament",						-- Arena Tournament
 		[-579] = "Passe Porte des ténèbres",						-- Dark Portal Pass
 		[-580] = "The Great Push: Saison 2",						-- The Great Push: Season 2
 	-- PvP Header
-		-- Special Season Tags
-			--TODO: [-655] = "Ensemble Gear", 						-- Ensemble Gear (PvP)
 		-- PvP Set Names
 			--TODO: [-659] = "Aspirant Gear",						-- Aspirant PvP Gear (WoD, BfA)
 			--TODO: [-660] = "Combatant Gear",						-- Combatant PvP Gear (WoD, Legion)
@@ -850,8 +844,6 @@ for key,value in pairs({
 			--TODO: [-969] = "Set B",								-- Set B
 			--TODO: [-970] = "Set C",								-- Set C
 			--TODO: [-971] = "Set D",								-- Set D
-		-- Black Vault
-			--TODO: [-1001] = "The Black Vault",
 	-- Warrior order hall lore items
 		--TODO: [-2200] = "Great Odyn and the Firelord",
 		--TODO: [-2201] = "The Wanderer and the Serpent",
@@ -867,37 +859,6 @@ for key,value in pairs({
 		[-2211] = "La folie de Volund",								-- Volund's Folly
 	-- T3
 		--TODO: [-3179] = string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 3),
-	-- Island Expedition Sets
-		--TODO: [-3315] = "Spider Acolyte",
-		--TODO: [-3316] = "Hydraxian",
-		--TODO: [-3317] = "Frostwind",
-		--TODO: [-3318] = "Faceless Follower",
-		--TODO: [-3319] = "Swarmfury",
-		--TODO: [-3340] = "Dark Animator",
-		--TODO: [-3341] = "Duskhaven",
-		--TODO: [-3343] = "Choking Winter",
-		--TODO: [-3342] = "Fallen Runelord",
-		--TODO: [-3320] = "Spiritbough",
-		--TODO: [-3321] = "Tranquil Path",
-		--TODO: [-3322] = "Miststalker",
-		--TODO: [-3323] = "Whirling Dervish",
-		--TODO: [-3324] = "Feralbark",
-		--TODO: [-3325] = "Firekin",
-		--TODO: [-3344] = "Frostsworn",
-		--TODO: [-3326] = "Wild Marauder",
-		--TODO: [-3327] = "Dragonrider",
-		--TODO: [-3328] = "Saurok",
-		--TODO: [-3329] = "Mrrglurggl",
-		--TODO: [-3330] = "Headshrinker",
-		--TODO: [-3331] = "Voodoo Stalker",
-		--TODO: [-3332] = "Geocrag",
-		--TODO: [-3333] = "Razorfin",
-		--TODO: [-3345] = "Sanctified Scourgelord",
-		--TODO: [-3334] = "Tomb-Keeper",
-		--TODO: [-3335] = "Bloodwake",
-		--TODO: [-3336] = "Rattling Bone",
-		--TODO: [-3337] = "Twilight Dragon",
-		--TODO: [-3347] = "Black Tooth Grunt",
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
 			--TODO: [-5200] = "Base Appearance",

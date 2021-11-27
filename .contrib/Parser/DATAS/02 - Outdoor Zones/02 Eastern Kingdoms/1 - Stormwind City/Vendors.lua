@@ -94,7 +94,7 @@ _.Zones =
 									["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
 								}),
 							}),
-							n(-43, {	-- Cloth
+							filter(CLOTH, {
 								i(172837, {	-- Corrupted Aspirant's Silk Cord (A)
 									["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
 								}),
@@ -120,7 +120,7 @@ _.Zones =
 									["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
 								}),
 							}),
-							n(-44, {	-- Leather
+							filter(LEATHER, {
 								i(172839, {	-- Corrupted Aspirant's Leather Belt (A)
 									["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
 								}),
@@ -146,7 +146,7 @@ _.Zones =
 									["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
 								}),
 							}),
-							n(-45, {	-- Mail
+							filter(MAIL, {
 								i(172842, {	-- Corrupted Aspirant's Chain Armbands (A)
 									["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
 								}),
@@ -172,7 +172,7 @@ _.Zones =
 									["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
 								}),
 							}),
-							n(-46, {	-- Plate
+							filter(PLATE, {
 								i(172841, {	-- Corrupted Aspirant's Plate Armguards (A)
 									["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
 								}),
@@ -499,7 +499,7 @@ _.Zones =
 							["u"] = TBC_PHASE_ONE,
 							-- #endif
 							["isLimited"] = true,
-							["f"] = 200,
+							["f"] = RECIPES,
 						}),
 					},
 				}),

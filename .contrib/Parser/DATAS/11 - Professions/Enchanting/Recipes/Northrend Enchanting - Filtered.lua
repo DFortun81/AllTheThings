@@ -1,5 +1,5 @@
 profession(ENCHANTING, {
-	filter(200, {	-- Recipes
+	filter(RECIPES, {
 		{
 			["categoryID"] = 663--[[Northrend Enchanting]],
 			["g"] = {

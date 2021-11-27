@@ -7,12 +7,6 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(THE_MAW, {
 			n(QUESTS, {
-				n(-229, {	-- Weekly
-					q(63708, {	-- Phantasmagoria
-						["provider"] = { "i", 185756 },	-- Warped Phantasma
-						["isWeekly"] = true,
-					}),
-				}),
 				q(59973, {	-- A Bond Beyond Death
 					["sourceQuests"] = { 59962 },	-- Hope Never Dies
 					["provider"] = { "n", 172414 },	-- Highlord Darion Mograine
@@ -373,6 +367,10 @@ _.Zones =
 					["sourceQuests"] = { 59914 },	-- Fear to Tread
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
 					["coord"] = { 22.2, 33.0, 1648 },	-- pre-SL scenario
+				}),
+				q(63708, {	-- Phantasmagoria
+					["provider"] = { "i", 185756 },	-- Warped Phantasma
+					["isWeekly"] = true,
 				}),
 				q(62234, {	-- Power of the Colossus
 					["provider"] = { "n", 162804 },	-- Ve'nari

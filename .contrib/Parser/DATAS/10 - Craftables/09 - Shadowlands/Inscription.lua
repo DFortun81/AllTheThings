@@ -12,7 +12,7 @@ _.Craftables =
 			n(HEAD, {
 				i(180755),	-- Fae Revel Masque
 			}),
-			filter(1, {	-- Off-hand
+			filter(HELD_IN_OFF_HAND, {
 				i(173050),	-- Newly Departed Codex
 			}),
 			filter(28, {	-- Staffs

@@ -1,5 +1,5 @@
 profession(ALCHEMY, {
-	filter(200, {	-- Recipes
+	filter(RECIPES, {
 		{
 			["categoryID"] = 1250,	-- training recipes
 			["g"] = {

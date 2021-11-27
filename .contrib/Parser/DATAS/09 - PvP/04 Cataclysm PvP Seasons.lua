@@ -1267,7 +1267,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(64851)),	-- Bloodthirsty Gladiator's Signet of Accuracy
 					un(REMOVED_FROM_GAME, i(64852)),	-- Bloodthirsty Gladiator's Signet of Cruelty
 				}),
-				n(-331, {	-- Held In Offhand
+				filter(HELD_IN_OFF_HAND, {
 					un(REMOVED_FROM_GAME, i(64759)),	-- Bloodthirsty Gladiator's Hatchet (Throw wep)
 					un(REMOVED_FROM_GAME, i(64819)),	-- Bloodthirsty Gladiator's Relic of Conquest
 					un(REMOVED_FROM_GAME, i(64820)),	-- Bloodthirsty Gladiator's Relic of Dominance
@@ -2023,7 +2023,7 @@ _.PVP =
 					i(60651),	-- Vicious Gladiator's Signet of Accuracy
 					i(60650),	-- Vicious Gladiator's Signet of Cruelty
 				}),
-				n(-331, {	-- Held In Offhand
+				filter(HELD_IN_OFF_HAND, {
 					un(REMOVED_FROM_GAME, i(61348)),	-- Vicious Gladiator's Hatchet (Throw wep)
 					un(REMOVED_FROM_GAME, i(61391)),	-- Vicious Gladiator's Relic of Conquest
 					un(REMOVED_FROM_GAME, i(61388)),	-- Vicious Gladiator's Relic of Dominance
@@ -2215,7 +2215,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(65608)),	-- Vicious Gladiator's Warboots of Alacrity
 					un(REMOVED_FROM_GAME, i(65607)),	-- Vicious Gladiator's Warboots of Cruelty
 				}),
-				n(-331, {	-- Held In Offhand
+				filter(HELD_IN_OFF_HAND, {
 					un(REMOVED_FROM_GAME, i(67467)), -- Vicious Gladiator's War Edge (Throw wep) wrong label by blizz
 					un(REMOVED_FROM_GAME, i(67466)), -- Vicious Gladiator's Hatchet (Throw wep) wrong label by blizz
 				}),
@@ -2417,7 +2417,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(70653)),	-- Vicious Gladiator's Signet of Accuracy
 					un(REMOVED_FROM_GAME, i(70654)),	-- Vicious Gladiator's Signet of Cruelty
 				}),
-				n(-331, {	-- Held In Offhand
+				filter(HELD_IN_OFF_HAND, {
 					un(REMOVED_FROM_GAME, i(70628)),	-- Vicious Gladiator's Relic of Conquest
 					un(REMOVED_FROM_GAME, i(70629)),	-- Vicious Gladiator's Relic of Dominance
 					un(REMOVED_FROM_GAME, i(70630)),	-- Vicious Gladiator's Relic of Salvation
@@ -3405,7 +3405,7 @@ _.PVP =
 					i(70373),	-- Ruthless Gladiator's Signet of Accuracy
 					i(70372),	-- Ruthless Gladiator's Signet of Cruelty
 				}),
-				n(-331, {	-- Held In Offhand
+				filter(HELD_IN_OFF_HAND, {
 					un(REMOVED_FROM_GAME, i(70233)),	-- Ruthless Gladiator's Hatchet (Throw wep)
 					un(REMOVED_FROM_GAME, i(70408)),	-- Ruthless Gladiator's Relic of Conquest
 					un(REMOVED_FROM_GAME, i(70405)),	-- Ruthless Gladiator's Relic of Dominance
@@ -3591,7 +3591,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(70505)),	-- Ruthless Gladiator's Warboots of Alacrity
 					un(REMOVED_FROM_GAME, i(70504)),	-- Ruthless Gladiator's Warboots of Cruelty
 				}),
-				n(-331, {	-- Held In Offhand
+				filter(HELD_IN_OFF_HAND, {
 					un(REMOVED_FROM_GAME, i(70197)),	-- Ruthless Gladiator's Hatchet (Throw wep)
 					un(REMOVED_FROM_GAME, i(70198)),	-- Ruthless Gladiator's War Edge (Throw Wep)
 				}),
@@ -3778,7 +3778,7 @@ _.PVP =
 						un(REMOVED_FROM_GAME, i(72326)),	-- Ruthless Gladiator's Pendant of Diffusion
 						un(REMOVED_FROM_GAME, i(72327)),	-- Ruthless Gladiator's Pendant of Meditation
 					}),
-					n(-331, {	-- Held In Offhand
+					filter(HELD_IN_OFF_HAND, {
 						un(REMOVED_FROM_GAME, i(72456)),	-- Ruthless Gladiator's Relic of Conquest
 						un(REMOVED_FROM_GAME, i(72328)),	-- Ruthless Gladiator's Relic of Dominance
 						un(REMOVED_FROM_GAME, i(72358)),	-- Ruthless Gladiator's Relic of Salvation
@@ -4490,7 +4490,7 @@ _.PVP =
 					i(73488),	-- Cataclysmic Gladiator's Signet of Accuracy
 					i(73489),	-- Cataclysmic Gladiator's Signet of Cruelty
 				}),
-				n(-331, {	-- Held In Offhand
+				filter(HELD_IN_OFF_HAND, {
 					un(REMOVED_FROM_GAME, i(73471)),	-- Cataclysmic Gladiator's Hatchet (Throw Wep)
 					un(REMOVED_FROM_GAME, i(73490)),	-- Cataclysmic Gladiator's Relic of Conquest
 					un(REMOVED_FROM_GAME, i(73624)),	-- Cataclysmic Gladiator's Relic of Dominance
@@ -4676,7 +4676,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(73695)),	-- Cataclysmic Gladiator's Warboots of Alacrity
 					un(REMOVED_FROM_GAME, i(73696)),	-- Cataclysmic Gladiator's Warboots of Cruelty
 				}),
-				n(-331, {	-- Held In Offhand
+				filter(HELD_IN_OFF_HAND, {
 					un(REMOVED_FROM_GAME, i(74783)),	-- Cataclysmic Gladiator's Hatchet (Throw Weapon)
 					un(REMOVED_FROM_GAME, i(74783)),	-- Cataclysmic Gladiator's Relic of Conquest
 					un(REMOVED_FROM_GAME, i(74785)),	-- Cataclysmic Gladiator's Relic of Dominance

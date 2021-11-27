@@ -1,5 +1,5 @@
 profession(INSCRIPTION, {
-	filter(200, {	-- Recipes
+	filter(RECIPES, {
 		{
 			["categoryID"] = 1406,	-- Shadowlands Inscription
 			["g"] = {

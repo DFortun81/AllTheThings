@@ -1,5 +1,5 @@
 profession(BLACKSMITHING, {
-	filter(200, {
+	filter(RECIPES, {
 		{
 			["categoryID"] = 553,  -- Pandaren Plans
 			["g"] = {

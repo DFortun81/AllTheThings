@@ -129,7 +129,7 @@ _.Zones =
 							["sym"] = {
 								{"select", "tierID", SL_TIER },			-- Select Shadowlands Header
 								{"pop"},								-- Discard the Header and acquire all of the children.
-								{"where", "headerID", -694 },			-- Unchained Gladiator: Shadowlands Season 2
+								{"where", "headerID", SEASON_UNCHAINED },			-- Unchained Gladiator: Shadowlands Season 2
 								{"pop"},								-- Discard the Header and acquire all of the children.
 								{"where", "headerID", PVP_GLADIATOR },	-- Gladiator Header
 								{"pop"},								-- Discard the Header and acquire all of the children.
@@ -630,7 +630,7 @@ _.Zones =
 								["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
 							}),
 						})),
-						n(-43,  sharedData({ ["u"] = REMOVED_FROM_GAME },{	-- Cloth
+						filter(CLOTH, sharedData({ ["u"] = REMOVED_FROM_GAME },{
 							i(185230, {	-- Unchained Aspirant's Silk Belt
 								["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
 							}),
@@ -680,7 +680,7 @@ _.Zones =
 								["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
 							}),
 						})),
-						n(-44,  sharedData({ ["u"] = REMOVED_FROM_GAME },{	-- Leather
+						filter(LEATHER, sharedData({ ["u"] = REMOVED_FROM_GAME },{
 							i(185237, {	-- Unchained Aspirant's Leather Armguards
 							["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
 							}),
@@ -730,7 +730,7 @@ _.Zones =
 								["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
 							}),
 						})),
-						n(-45,  sharedData({ ["u"] = REMOVED_FROM_GAME },{	-- Mail
+						filter(MAIL, sharedData({ ["u"] = REMOVED_FROM_GAME },{
 							i(185154, {	-- Unchained Aspirant's Chain Belt
 							["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
 							}),
@@ -780,7 +780,7 @@ _.Zones =
 								["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
 							}),
 						})),
-						n(-46,  sharedData({ ["u"] = REMOVED_FROM_GAME },{	-- Plate
+						filter(PLATE, sharedData({ ["u"] = REMOVED_FROM_GAME },{
 							i(185235, {	-- Unchained Aspirant's Plate Armguards
 								["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
 							}),
@@ -1368,7 +1368,7 @@ _.Zones =
 								["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
 							}),
 						})),
-						n(-43,  sharedData({ ["u"] = REMOVED_FROM_GAME },{	-- Cloth
+						filter(CLOTH, sharedData({ ["u"] = REMOVED_FROM_GAME },{
 							i(185267, {	-- Unchained Gladiator's Silk Amice
 								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
 							}),
@@ -1418,7 +1418,7 @@ _.Zones =
 								["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
 							}),
 						})),
-						n(-44,  sharedData({ ["u"] = REMOVED_FROM_GAME },{	-- Leather
+						filter(LEATHER, sharedData({ ["u"] = REMOVED_FROM_GAME },{
 							i(185191, {	-- Unchained Gladiator's Leather Belt
 								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
 							}),
@@ -1468,7 +1468,7 @@ _.Zones =
 								["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
 							}),
 						})),
-						n(-45,  sharedData({ ["u"] = REMOVED_FROM_GAME },{	-- Mail
+						filter(MAIL, sharedData({ ["u"] = REMOVED_FROM_GAME },{
 							i(185190, {	-- Unchained Gladiator's Chain Belt
 								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
 							}),
@@ -1518,7 +1518,7 @@ _.Zones =
 								["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
 							}),
 						})),
-						n(-46,  sharedData({ ["u"] = REMOVED_FROM_GAME },{	-- Plate
+						filter(PLATE, sharedData({ ["u"] = REMOVED_FROM_GAME },{
 							i(185166, {	-- Unchained Gladiator's Plate Chestguard
 								["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
 							}),

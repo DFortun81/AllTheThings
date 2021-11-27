@@ -1716,8 +1716,8 @@ _.HiddenQuestTriggers = {
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(SL_TIER, {
 		n(NIGHT_FAE, {
-			n(-163, {	-- Armor
-				n(-43, {	-- Cloth
+			n(ARMOR, {
+				filter(CLOTH, {
 					i(179439),	-- 9.0 Covenant - Ardenweald - Cloth - Head
 					i(179440),	-- 9.0 Covenant - Ardenweald - Cloth - Chest
 					i(179441),	-- 9.0 Covenant - Ardenweald - Cloth - Feet
@@ -1764,7 +1764,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(179718),	-- Ardenweald Covenant Cloth Wrist
 					i(179660),	-- Winterborn Tunic
 				}),
-				n(-44, {	-- Leather
+				filter(LEATHER, {
 					i(175579),	-- Ardenweald Covenant Leather Chest
 					i(175583),	-- Ardenweald Covenant Leather Feet
 					i(175584),	-- Ardenweald Covenant Leather Hand
@@ -1810,7 +1810,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(179763),	-- Ardenweald Covenant Leather Wrist
 					i(179764),	-- Ardenweald Covenant Leather Wrist
 				}),
-				n(-45, {	-- Mail
+				filter(MAIL, {
 					i(179855),	-- Ardenweald Covenant Mail Waist
 					i(179856),	-- Ardenweald Covenant Mail Shoulders
 					i(179857),	-- Ardenweald Covenant Mail Legs
@@ -1926,7 +1926,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(181908),	-- Ardenweald Covenant Mail D_02 Chest
 					i(181976),	-- Ardenweald Covenant Mail D_02 Robe
 				}),
-				n(-46, {	-- Plate
+				filter(PLATE, {
 					i(173914),	-- 9.0 Covenant - Ardenweald - Plate Head
 					i(173915),	-- 9.0 Covenant - Ardenweald - Plate Chest
 					i(173916),	-- 9.0 Covenant - Ardenweald - Plate Feet

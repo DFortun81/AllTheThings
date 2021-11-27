@@ -5,7 +5,7 @@
 _.WorldDrops =
 {
 	tier(TBC_TIER, {
-		n(-318, {	-- Armor
+		n(ARMOR, {
 			n(HEAD, {
 				i(31145),	-- Headdress of the Sleeper
 				i(31222),	-- Headdress of Inner Rage

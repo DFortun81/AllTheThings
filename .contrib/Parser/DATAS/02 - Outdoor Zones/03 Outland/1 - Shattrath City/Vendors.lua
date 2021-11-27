@@ -783,7 +783,7 @@ _.Zones =
 							["timeline"] = { "removed 3.2.0.10000"},
 							["requireSkill"] = LEATHERWORKING,
 							["isLimited"] = true,
-							["f"] = 200,
+							["f"] = RECIPES,
 						}),
 					},
 				}),

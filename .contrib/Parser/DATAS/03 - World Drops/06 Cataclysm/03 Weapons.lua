@@ -94,7 +94,7 @@ _.WorldDrops =
 				i(55354),	-- Steelspark Gun
 				i(66953),	-- Snub-Nosed Pistol
 			}),
-			n(-331, {	-- Held in Off-hand
+			filter(HELD_IN_OFF_HAND, {
 				i(55378),	-- Blackwolf Crystal
 				i(67125),	-- Bone-Inlaid Sarcophagus Key
 				i(67149),	-- Heartbound Tome

@@ -350,8 +350,8 @@ _.ExpansionFeatures =
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(MOP_TIER, {
 		n(-10059, {	-- Pandaren Scenario
-			n(-163, {	-- Armor
-				n(-43, {	-- Cloth
+			n(ARMOR, {
+				filter(CLOTH, {
 					i(93068),	-- Yak Wool Robe
 					i(93069),	-- Yak Wool Sandals
 					i(93070),	-- Yak Wool Handwraps
@@ -366,7 +366,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(93108),	-- Brewfather Shoulderpads
 					i(93109),	-- Brewfather Cord
 				}),
-				n(-44, {	-- Leather
+				filter(LEATHER, {
 					i(93049),	-- Mogubreaker Jerkin
 					i(93050),	-- Mogubreaker Boots
 					i(93051),	-- Mogubreaker Gloves
@@ -379,7 +379,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(93083),	-- Hozen-Stitched Shoulders
 					i(93084),	-- Hozen-Stitched Waistband
 				}),
-				n(-45, {	-- Mail
+				filter(MAIL, {
 					i(89460),	-- Scarshell Belt
 					i(89461),	-- Scarshell Bracers
 					i(89462),	-- Scarshell Gauntlets
@@ -408,7 +408,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(93091),	-- Swashbuckling Spaulders
 					i(93093),	-- Swashbuckling Bracers
 				}),
-				n(-46, {	-- Plate
+				filter(PLATE, {
 					i(89444),	-- Mogu-Wrought Breastplate
 					i(89445),	-- Mogu-Wrought Gauntlets
 					i(89451),	-- Mogu-Wrought Vambraces

@@ -1,5 +1,5 @@
 profession(ENCHANTING, {
-	filter(200, {	-- Recipes
+	filter(RECIPES, {
 		cat(399, sharedData({["u"] = 15},{	--[[Illusions]]
 			{
 				["recipeID"] = 173716,--[[Illusion: Agility]]

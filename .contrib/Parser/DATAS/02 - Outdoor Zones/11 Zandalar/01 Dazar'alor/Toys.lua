@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(ZANDALAR, {
 		m(THE_GREAT_SEAL, {	-- Dazar'alor
-			n(-161, {	-- Toys
+			filter(TOYS, {
 				i(122293, {	-- Trans-Dimensional Bird Whistle
 					["collectible"] = false,
 					["g"] = {

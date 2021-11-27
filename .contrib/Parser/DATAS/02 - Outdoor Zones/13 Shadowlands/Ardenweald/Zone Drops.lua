@@ -57,8 +57,8 @@ _.Zones =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(SL_TIER, {
-		n(-163, {	-- Armor
-			n(-43, {	-- Cloth
+		n(ARMOR, {
+			filter(CLOTH, {
 				i(179587),	-- Drust Mask
 				i(179588),	-- Drust Mask
 				i(179589),	-- Drust Mask

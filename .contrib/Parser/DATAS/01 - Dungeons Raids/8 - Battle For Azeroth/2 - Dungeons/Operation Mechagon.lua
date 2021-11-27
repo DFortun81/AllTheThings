@@ -21,7 +21,7 @@ _.Instances = { tier(BFA_TIER, {
 				i(170208),	-- Recipe: Potion of Unbridled Fury (Rank 3)
 				i(170209),	-- Recipe: Potion of Wild Mending (Rank 3)
 			}),
-			n(-852, {	-- Azerite Essences
+			n(AZERITE_ESSENCES, {
 				i(168844, {	-- Perfection-Enhancing Gearbox (Rank 3)
 					["cost"] = { { "i", 169774, 4 } },	-- 4x Progression Sprocket
 					["g"] = {

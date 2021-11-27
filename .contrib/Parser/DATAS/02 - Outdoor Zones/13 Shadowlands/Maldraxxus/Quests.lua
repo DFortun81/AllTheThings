@@ -807,20 +807,20 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(58261),	-- What's the Grub
 	}),
 	tier(SL_TIER, {
-		n(-163, {	-- Armor
-			n(-43, {	-- Cloth
+		n(ARMOR, {
+			filter(CLOTH, {
 				i(175512),	-- Corpse-Stitcher's Raiment
 				i(175528),	-- Corpse-Stitcher's Trousers
 			}),
-			n(-44, {	-- Leather
+			filter(LEATHER, {
 				i(175515),	-- Deceitful Agent's Tunic
 				i(175530),	-- Deceitful Agent's Legwraps
 			}),
-			n(-45, {	-- Mail
+			filter(MAIL, {
 				i(175514),	-- Flesh Architect's Hauberk
 				i(175529),	-- Flesh Architect's Greaves
 			}),
-			n(-46, {	-- Plate
+			filter(PLATE, {
 				i(175513),	-- Cruel Executioner's Breastplate
 				i(175527),	-- Cruel Executioner's Greaves
 			}),

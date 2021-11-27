@@ -1,5 +1,5 @@
 profession(ENGINEERING, {
-	filter(200, {
+	filter(RECIPES, {
 		{
 			["categoryID"] = 1381,	-- Shadowlands Engineering
 			["g"] = {

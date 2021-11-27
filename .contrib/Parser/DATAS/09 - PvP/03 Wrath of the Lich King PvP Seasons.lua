@@ -1061,7 +1061,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(42110)),	-- Hateful Gladiator's Band of Dominance
 					un(REMOVED_FROM_GAME, i(42112)),	-- Hateful Gladiator's Band of Triumph
 				}),
-				n(-331, {	-- Held In Offhand
+				filter(HELD_IN_OFF_HAND, {
 					un(REMOVED_FROM_GAME, i(42587)), -- Hateful Gladiator's Idol of Resolve
 					un(REMOVED_FROM_GAME, i(42582)), -- Hateful Gladiator's Idol of Steadfastness
 					un(REMOVED_FROM_GAME, i(42577)), -- Hateful Gladiator's Idol of Tenacity
@@ -1733,7 +1733,7 @@ _.PVP =
 					i(42114),	-- Deadly Gladiator's Band of Ascendancy
 					i(42115),	-- Deadly Gladiator's Band of Victory
 				}),
-				n(-331, {	-- Held In Offhand
+				filter(HELD_IN_OFF_HAND, {
 					un(REMOVED_FROM_GAME, i(42588)), -- Deadly Gladiator's Idol of Resolve
 					un(REMOVED_FROM_GAME, i(42583)), -- Deadly Gladiator's Idol of Steadfastness
 					un(REMOVED_FROM_GAME, i(42578)), -- Deadly Gladiator's Idol of Tenacity
@@ -2416,7 +2416,7 @@ _.PVP =
 					i(42116),	-- Furious Gladiator's Band of Dominance
 					i(42117),	-- Furious Gladiator's Band of Triumph
 				}),
-				n(-331, {	-- Held In Offhand
+				filter(HELD_IN_OFF_HAND, {
 					un(REMOVED_FROM_GAME, i(42589)), -- Furious Gladiator's Idol of Resolve
 					un(REMOVED_FROM_GAME, i(42584)), -- Furious Gladiator's Idol of Steadfastness
 					un(REMOVED_FROM_GAME, i(42579)), -- Furious Gladiator's Idol of Tenacity
@@ -3144,7 +3144,7 @@ _.PVP =
 					i(42118),	-- Relentless Gladiator's Band of Ascendancy
 					i(42119),	-- Relentless Gladiator's Band of Victory
 				}),
-				n(-331, {	-- Held In Offhand
+				filter(HELD_IN_OFF_HAND, {
 					un(REMOVED_FROM_GAME, i(42591)), -- Relentless Gladiator's Idol of Resolve
 					un(REMOVED_FROM_GAME, i(42585)), -- Relentless Gladiator's Idol of Steadfastness
 					un(REMOVED_FROM_GAME, i(42580)), -- Relentless Gladiator's Idol of Tenacity
@@ -3873,7 +3873,7 @@ _.PVP =
 					i(51336),	-- Wrathful Gladiator's Band of Dominance
 					i(51358),	-- Wrathful Gladiator's Band of Triumph
 				}),
-				n(-331, {	-- Held In Offhand
+				filter(HELD_IN_OFF_HAND, {
 					un(REMOVED_FROM_GAME, i(51429)), -- Wrathful Gladiator's Idol of Resolve
 					un(REMOVED_FROM_GAME, i(51437)), -- Wrathful Gladiator's Idol of Steadfastness
 					un(REMOVED_FROM_GAME, i(51423)), -- Wrathful Gladiator's Idol of Tenacity

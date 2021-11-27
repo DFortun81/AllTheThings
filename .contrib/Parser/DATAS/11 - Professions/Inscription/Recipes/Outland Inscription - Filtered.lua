@@ -1,5 +1,5 @@
 profession(INSCRIPTION, {
-	filter(200, {	-- Recipes
+	filter(RECIPES, {
 	-- Reviewed and updated as of 11.23.2018 BfA 8.0, leaving all items from _Automation in for easier future updates
 		{	-- Outland Inscription
 			["categoryID"] = 769--[[Outland Inscription]],

@@ -247,7 +247,7 @@ _.Instances = { tier(CATA_TIER, {
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(CATA_TIER, {
 		inst(77, {	-- Zul'Aman
-			n(-45, {	-- Mail
+			filter(MAIL, {
 				i(33964),	-- Helm of the Stormcaller - Never Added
 			}),
 		}),

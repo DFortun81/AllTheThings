@@ -118,7 +118,7 @@ _.WorldDrops =
 				i(116634),	-- Howling Gun
 				i(118798),	-- Dead Eye Zakk's Boomshooter
 			}),
-			n(-331, {	-- Held in Off-hand
+			filter(HELD_IN_OFF_HAND, {
 				i(116694),	-- Coldsinger Crystal
 				i(116697),	-- Moonwhisper Crystal
 				i(116700),	-- Growthshaper Branch

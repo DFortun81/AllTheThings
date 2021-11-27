@@ -128,7 +128,7 @@ _.Craftables =
 			}),
 		}),
 		prof(BLACKSMITHING, {
-			filter(100, {	-- Mounts
+			filter(MOUNTS, {
 				i(137686),	-- Steelbound Harness
 			}),
 			filter(54, {	-- Relics
@@ -178,7 +178,7 @@ _.Craftables =
 				i(128535),	-- Enchanted Pen
 				i(128534),	-- Enchanted Torch
 			}),
-			filter(102, {	-- Toy
+			filter(TOYS, {
 				i(128536),	-- Leylight Brazier
 			}),
 		}),
@@ -186,11 +186,11 @@ _.Craftables =
 			filter(BATTLE_PETS, {
 				i(132519),	-- Trigger*
 			}),
-			filter(102, {	-- Toys
+			filter(TOYS, {
 				i(132518),	-- Blingtron's Circuit Design Tutorial*
 				i(151652),	-- Wormhole Generator: Argus*
 			}),
-			n(-318, {	-- Armour
+			n(ARMOR, {
 				i(132500),	-- Blink-Trigger Headgun*
 				i(132502),	-- Bolt-Action Headgun*
 				i(144333),	-- Chain Skullblasters*
@@ -275,7 +275,7 @@ _.Craftables =
 			sp(227043, {	-- Tome of the Tranquil Mind
 				i(141446),	-- Tome of the Tranquil Mind
 			}),
-			filter(102, {	-- Toy
+			filter(TOYS, {
 				i(129211),	-- Steamy Romance Novel Kit
 			}),
 			filter(53, {	-- Trinkets
@@ -306,7 +306,7 @@ _.Craftables =
 			}),
 		}),
 		prof(JEWELCRAFTING, {
-			filter(102, {	-- Toy
+			filter(TOYS, {
 				i(130254),	-- Chatterstone
 				i(130251),	-- JewelCraft
 			}),
@@ -346,10 +346,10 @@ _.Craftables =
 			}),
 		}),
 		prof(LEATHERWORKING, {
-			n(-349, {	-- Cosmetic
+			filter(COSMETIC, {
 				un(FEAST_OF_WINTER_VEIL, i(151791)),	-- Winter Boots
 			}),
-			n(-44, {	-- Leather
+			filter(LEATHER, {
 				i(128890),	-- Dreadleather Belt
 				i(128891),	-- Dreadleather Bindings
 				i(128885),	-- Dreadleather Footpads
@@ -369,7 +369,7 @@ _.Craftables =
 				i(128880),	-- Warhide Pants
 				i(128881),	-- Warhide Shoulderguard
 			}),
-			n(-45, {	-- Mail
+			filter(MAIL, {
 				i(128899),	-- Battlebound Armbands
 				i(128898),	-- Battlebound Girdle
 				i(128894),	-- Battlebound Grips
@@ -441,7 +441,7 @@ _.Craftables =
 				i(127032),	-- Silkweave Flourish
 				i(127031),	-- Silkweave Shade
 			}),
-			n(-43, {	-- Cloth
+			filter(CLOTH, {
 				i(146666),	-- Celumbra, the Night's Dichotomy
 				i(151771),	-- Festival Dress
 				i(151772),	-- Festival Suit

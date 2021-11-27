@@ -496,7 +496,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					},
 				}),
 			}),
-			filter(200, {	-- Recipes
+			filter(RECIPES, {
 				["crs"] = {
 					15369,	-- Ayamiss the Hunter
 					15370,	-- Buru the Gorger

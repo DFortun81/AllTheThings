@@ -1,5 +1,5 @@
 profession(LEATHERWORKING, {
-	filter(200, {
+	filter(RECIPES, {
 		{
 			["name"] = "Pandaria Patterns",
 			["categoryID"] = 876,

@@ -128,8 +128,8 @@ _.ExpansionFeatures =
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(BFA_TIER, {
 		n(-10057, {	-- War Effort
-			n(-163, {	-- Armor
-				n(-43, {	-- Cloth
+			n(ARMOR, {
+				filter(CLOTH, {
 					i(163269),	-- 7th Legionnaire's Mantle
 					i(163340),	-- 7th Legionnaire's Circlet
 					i(163343),	-- 7th Legionnaire's Sash
@@ -152,7 +152,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(174032),	-- Honorbound Artificer's Pantaloons
 					i(174033),	-- Honorbound Artificer's Wristwraps
 				}),
-				n(-44, {	-- Leather
+				filter(LEATHER, {
 					i(163378),	-- 7th Legionnaire's Shoulderpads
 					i(163379),	-- 7th Legionnaire's Pants
 					i(163381),	-- 7th Legionnaire's Mask
@@ -186,7 +186,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(177105),	-- Honorbound Outrider's Gloves
 					i(177106),	-- Honorbound Outrider's Boots
 				}),
-				n(-45, {	-- Mail
+				filter(MAIL, {
 					i(163286),	-- Honorbound Vanguard's Footguards
 					i(163291),	-- Honorbound Vanguard's Strikers
 					i(163293),	-- Honorbound Vanguard's Warhelm
@@ -222,7 +222,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(177108),	-- Honorbound Vanguard's Handguards
 					i(177109),	-- Honorbound Vanguard's Sabatons
 				}),
-				n(-46, {	-- Plate
+				filter(PLATE, {
 					i(163406),	-- 7th Legionnaire's Shoulderplates
 					i(163408),	-- 7th Legionnaire's Legplates
 					i(163412),	-- 7th Legionnaire's Helmet

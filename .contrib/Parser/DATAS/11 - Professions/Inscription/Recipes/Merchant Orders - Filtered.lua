@@ -1,5 +1,5 @@
 profession(INSCRIPTION, {
-	filter(200, {	-- Recipes
+	filter(RECIPES, {
 		{	-- Merchant Orders
 			["categoryID"] = 403,	-- Merchant Orders
 			["g"] = {

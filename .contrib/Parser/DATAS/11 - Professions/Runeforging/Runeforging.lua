@@ -1,5 +1,5 @@
 profession(960, {	-- Runeforging
-	filter(200, {	-- Recipes
+	filter(RECIPES, {
 		{
 			--["recipeID"] = 53428,  -- Runeforging spell
 			["classes"] = { DEATHKNIGHT },  -- DK

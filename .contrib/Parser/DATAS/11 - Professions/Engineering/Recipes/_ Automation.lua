@@ -4,7 +4,7 @@ DO NOT MODIFY THIS FILE, I WILL CUT YOU.
     -CRIEVE
 ]]--
 profession(202, {	-- Engineering
-	filter(200, {
+	filter(RECIPES, {
 		{
 			["name"] = "Shadowlands Engineering",
 			["categoryID"] = 1381,

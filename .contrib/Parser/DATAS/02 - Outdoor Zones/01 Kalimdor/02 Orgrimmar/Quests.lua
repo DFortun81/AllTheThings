@@ -1134,7 +1134,7 @@ _.Zones =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(CATA_TIER, {
-		n(-163, {	-- Armor
+		n(ARMOR, {
 			f(51,	{	-- Neck
 				i(49314),	-- Sparkling Onyxia Tooth Pendant
 				i(49312),	-- Purified Onyxia Blood Talisman

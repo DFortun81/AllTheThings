@@ -55,7 +55,7 @@ _.Zones =
 							["u"] = TBC_PHASE_ONE,
 							-- #endif
 							["isLimited"] = true,
-							["f"] = 200,
+							["f"] = RECIPES,
 						}),
 						i(16217, {	-- Formula: Enchant Shield - Greater Stamina
 							["isLimited"] = true,

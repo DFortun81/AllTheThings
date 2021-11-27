@@ -5,7 +5,7 @@
 _.WorldDrops =
 {
 	tier(WOTLK_TIER, {
-		n(-318, {	-- Armor
+		n(ARMOR, {
 			n(HEAD, {
 				i(37787),	-- Greathelm of the Unyielding Bull
 				i(37775),	-- Helm of the Broken Ram

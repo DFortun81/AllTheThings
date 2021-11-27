@@ -262,7 +262,7 @@ _.Craftables =
 			}),
 		}),
 		prof(ENGINEERING, {
-			filter(100, {	-- Mounts
+			filter(MOUNTS, {
 				i(87250),	-- Depleted-Kyparium Rocket*
 				i(87251),	-- Geosynchronous World Spinner*
 				i(95416),	-- Sky Golem*
@@ -272,7 +272,7 @@ _.Craftables =
 				i(94903),	-- Pierre*
 				i(100905),	-- Rascal-Bot*
 			}),
-			filter(102, {	-- Toys
+			filter(TOYS, {
 				i(87214),	-- Blingtron 4000*
 				i(87215),	-- Wormhole Generator: Pandaria*
 			}),
@@ -280,7 +280,7 @@ _.Craftables =
 				i(77527),	-- Big Game Hunter*
 				i(77528),	-- Long-Range Trillium Sniper*
 			}),
-			n(-318, {	-- Armour
+			n(ARMOR, {
 				-- Head
 				i(77534),	-- Agile Retinal Armor*
 				i(77535),	-- Camouflage Retinal Armor*
@@ -361,7 +361,7 @@ _.Craftables =
 			filter(53, {	-- Trinkets
 				i(102483),	-- Crafted Malevolent Gladiator's Medallion of Tenacity
 			}),
-			filter(1, {	-- Off-hand
+			filter(HELD_IN_OFF_HAND, {
 				i(79333),	-- Inscribed Fan
 				i(79334, {	-- Inscribed Jade Fan
 					["cost"] = { { "i", 79333, 1 }, },	-- Inscribed Fan
@@ -385,7 +385,7 @@ _.Craftables =
 			}),
 		}),
 		prof(JEWELCRAFTING, {
-			filter(100, {	-- Mounts
+			filter(MOUNTS, {
 				i(83088),	-- Jade Panther
 				i(82453),	-- Jeweled Onyx Panther
 				i(83087),	-- Ruby Panther
@@ -425,7 +425,7 @@ _.Craftables =
 				i(85852),	-- Quick Strike Cloak
 				i(85853),	-- Stormscale Drape
 			}),
-			n(-44, {	-- Leather
+			filter(LEATHER, {
 				i(85788),	-- Chestguard of Nemeses
 				i(85797),	-- Contender's Leather Belt
 				i(85798),	-- Contender's Leather Boots
@@ -559,7 +559,7 @@ _.Craftables =
 				i(85849),	-- Wildblood Gloves
 				i(85850),	-- Wildblood Vest
 			}),
-			n(-45, {	-- Mail
+			filter(MAIL, {
 				i(85787),	-- Chestguard of Earthen Harmony
 				i(94276),	-- Cloud Serpent Helm
 				i(94275),	-- Cloud Serpent Sabatons

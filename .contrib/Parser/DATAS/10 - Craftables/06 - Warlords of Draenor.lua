@@ -118,7 +118,7 @@ _.Craftables =
 				i(111402),	-- Mechanical Axebeak*
 				i(118741),	-- Mechanical Scorpid*
 			}),
-			filter(102, {	-- Toys
+			filter(TOYS, {
 				i(111821),	-- Blingtron 5000*
 				i(109167),	-- Findle's Loot-A-Rang*
 				i(108745),	-- Personal Hologram*
@@ -131,7 +131,7 @@ _.Craftables =
 				}),
 				WOD_CRAFTED_ITEM(109168, 128017),	-- Shrediron's Shredder* + True Iron Trigger*
 			}),
-			n(-318, {	-- Armour
+			n(ARMOR, {
 				WOD_CRAFTED_IDENTICAL_ITEM(109173, 128011),	-- Cybergenetic Mechshades* + Linkgrease Locksprocket
 				WOD_CRAFTED_IDENTICAL_ITEM(109171, 128011),	-- Night-Vision Mechshades* + Linkgrease Locksprocket
 				WOD_CRAFTED_IDENTICAL_ITEM(109172, 128011),	-- Plasma Mechshades* + Linkgrease Locksprocket
@@ -163,7 +163,7 @@ _.Craftables =
 				i(118601),	-- Ocean Tarot
 				i(118603),	-- Savage Tarot
 			}),
-			filter(1, {	-- Off-hand
+			filter(HELD_IN_OFF_HAND, {
 				i(113270, {	-- Shadowtome
 					["timeline"] = { "created 9.0" },
 				}),
@@ -220,7 +220,7 @@ _.Craftables =
 				WOD_CRAFTED_ITEM(116174, 128014),	-- Nimble Burnished Cloak + Burnished Essence
 				WOD_CRAFTED_ITEM(116171, 128014),	-- Powerful Burnished Cloak + Burnished Essence
 			}),
-			n(-44, {	-- Leather
+			filter(LEATHER, {
 				i(116164),	-- Journeying Helm
 				i(116165),	-- Journeying Robes
 				i(116166),	-- Journeying Slacks
@@ -233,7 +233,7 @@ _.Craftables =
 				WOD_CRAFTED_ITEM(116180, 128014),	-- Supple Vest + Burnished Essence
 				WOD_CRAFTED_ITEM(116183, 128014),	-- Supple Waistguard + Burnished Essence
 			}),
-			n(-45, {	-- Mail
+			filter(MAIL, {
 				i(116167),	-- Traveling Helm
 				i(116169),	-- Traveling Leggings
 				i(116168),	-- Traveling Tunic
@@ -246,7 +246,7 @@ _.Craftables =
 				WOD_CRAFTED_ITEM(116187, 128014),	-- Wayfaring Shoulderguards + Burnished Essence
 				WOD_CRAFTED_ITEM(116191, 128014),	-- Wayfaring Tunic + Burnished Essence
 			}),
-			f(100, {	-- Mounts
+			filter(MOUNTS, {
 				i(108883),	-- Dustmane Direwolf
 			}),
 		}),
@@ -259,7 +259,7 @@ _.Craftables =
 				WOD_CRAFTED_ITEM(114818, 128012),	-- Nimble Hexweave Cloak + Hexweave Essence
 				WOD_CRAFTED_ITEM(114817, 128012),	-- Powerful Hexweave Cloak + Hexweave Essence
 			}),
-			n(-43, {	-- Cloth
+			filter(CLOTH, {
 				i(114828),	-- Sumptuous Cowl
 				i(114829),	-- Sumptuous Robes
 				i(114831),	-- Sumptuous Leggings
@@ -272,7 +272,7 @@ _.Craftables =
 				WOD_CRAFTED_ITEM(114813, 128012),	-- Hexweave Robe + Hexweave Essence
 				WOD_CRAFTED_ITEM(114815, 128012),	-- Hexweave Slippers + Hexweave Essence
 			}),
-			n(-160, {	-- Mounts
+			filter(MOUNTS, {
 				i(115363),	-- Creeping Carpet
 			}),
 			filter(BATTLE_PETS, {

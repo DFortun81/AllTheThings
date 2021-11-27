@@ -1070,29 +1070,29 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(62896),	-- Track Selection
 	}),
 	tier(SL_TIER, {
-		n(-163, {	-- Armor
-			n(-43, {	-- Cloth
+		n(ARMOR, {
+			filter(CLOTH, {
 				i(175608),	-- Pure Aspirant's Robe
 				i(175620),	-- Pure Aspirant's Hood
 				i(175629),	-- Pure Aspirant's Mantle
 				i(175632),	-- Pure Aspirant's Cord
 				i(178958),	-- Pure Aspirant's Handwraps
 			}),
-			n(-44, {	-- Leather
+			filter(LEATHER, {
 				i(175611),	-- Courageous Aspirant's Vest
 				i(175622),	-- Courageous Aspirant's Helm
 				i(175627),	-- Courageous Aspirant's Spaulders
 				i(175634),	-- Courageous Aspirant's Belt
 				i(178956),	-- Courageous Aspirant's Mitts
 			}),
-			n(-45, {	-- Mail
+			filter(MAIL, {
 				i(175610),	-- Humble Aspirant's Vest
 				i(175621),	-- Humble Aspirant's Helm
 				i(175630),	-- Humble Aspirant's Monnion
 				i(175633),	-- Humble Aspirant's Belt
 				i(178959),	-- Humble Aspirant's Handguards
 			}),
-			n(-46, {	-- Plate
+			filter(PLATE, {
 				i(175607),	-- Judicious Aspirant's Helm
 				i(175609),	-- Judicious Aspirant's Chestplate
 				i(175628),	-- Judicious Aspirant's Shoulders

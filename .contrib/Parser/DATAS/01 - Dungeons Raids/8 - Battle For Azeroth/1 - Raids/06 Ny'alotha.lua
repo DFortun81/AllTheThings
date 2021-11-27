@@ -25,7 +25,7 @@ _.Instances = { tier(BFA_TIER, {
 			--	,	-- Locus of Infinite Truth
 		},
 		["g"] = {
-			n(-852, {	-- Azerite Essences
+			n(AZERITE_ESSENCES, {
 				i(173883, {	-- Replicating Void Droplets (Rank 1)
 					["cost"] = { { "i", 174279, 15 } },	-- 15x Encrypted Ny'alothan Text
 					["g"] = {
@@ -53,23 +53,23 @@ _.Instances = { tier(BFA_TIER, {
 			d(17, {	-- LFR
 				n(ZONE_DROPS, {
 					i(175005, {	-- Belt of Concealed Intent
-						["f"] = 6,	-- Mail
+						["f"] = MAIL,
 					}),
 					i(175007, {	-- Footpads of Terrible Delusions
-						["f"] = 5,	-- Leather
+						["f"] = LEATHER,
 					}),
 					i(175006, {	-- Gauntlets of Nightmare Manifest
-						["f"] = 7,	-- Plate
+						["f"] = PLATE,
 					}),
 					i(175004, {	-- Legwraps of Horrifying Figments
-						["f"] = 4,	-- Cloth
+						["f"] = CLOTH,
 					}),
 					i(175008),	-- Lurking Schemer's Band
 					i(175010, {	-- Maddened Adherent's Bulwark
 						["f"] = 8,	-- Shield
 					}),
 					i(175009, {	-- Zealous Ritualist's Reverie
-						["f"] = 1,	-- Held in Off-hand
+						["f"] = HELD_IN_OFF_HAND,
 					}),
 				}),
 				ach(14193, {	-- Vision of Destiny
@@ -305,23 +305,23 @@ _.Instances = { tier(BFA_TIER, {
 				}),
 				n(ZONE_DROPS, {
 					i(175005, {	-- Belt of Concealed Intent
-						["f"] = 6,	-- Mail
+						["f"] = MAIL,
 					}),
 					i(175007, {	-- Footpads of Terrible Delusions
-						["f"] = 5,	-- Leather
+						["f"] = LEATHER,
 					}),
 					i(175006, {	-- Gauntlets of Nightmare Manifest
-						["f"] = 7,	-- Plate
+						["f"] = PLATE,
 					}),
 					i(175004, {	-- Legwraps of Horrifying Figments
-						["f"] = 4,	-- Cloth
+						["f"] = CLOTH,
 					}),
 					i(175008),	-- Lurking Schemer's Band
 					i(175010, {	-- Maddened Adherent's Bulwark
 						["f"] = 8,	-- Shield
 					}),
 					i(175009, {	-- Zealous Ritualist's Reverie
-						["f"] = 1,	-- Held in Off-hand
+						["f"] = HELD_IN_OFF_HAND,
 					}),
 				}),
 				e(2368, {	-- Wrathion, the Black Emperor
@@ -538,23 +538,23 @@ _.Instances = { tier(BFA_TIER, {
 				}),
 				n(ZONE_DROPS, {
 					i(175005, {	-- Belt of Concealed Intent
-						["f"] = 6,	-- Mail
+						["f"] = MAIL,
 					}),
 					i(175007, {	-- Footpads of Terrible Delusions
-						["f"] = 5,	-- Leather
+						["f"] = LEATHER,
 					}),
 					i(175006, {	-- Gauntlets of Nightmare Manifest
-						["f"] = 7,	-- Plate
+						["f"] = PLATE,
 					}),
 					i(175004, {	-- Legwraps of Horrifying Figments
-						["f"] = 4,	-- Cloth
+						["f"] = CLOTH,
 					}),
 					i(175008),	-- Lurking Schemer's Band
 					i(175010, {	-- Maddened Adherent's Bulwark
 						["f"] = 8,	-- Shield
 					}),
 					i(175009, {	-- Zealous Ritualist's Reverie
-						["f"] = 1,	-- Held in Off-hand
+						["f"] = HELD_IN_OFF_HAND,
 					}),
 				}),
 				e(2368, {	-- Wrathion, the Black Emperor
@@ -774,23 +774,23 @@ _.Instances = { tier(BFA_TIER, {
 				}),
 				n(ZONE_DROPS, {
 					i(175005, {	-- Belt of Concealed Intent
-						["f"] = 6,	-- Mail
+						["f"] = MAIL,
 					}),
 					i(175007, {	-- Footpads of Terrible Delusions
-						["f"] = 5,	-- Leather
+						["f"] = LEATHER,
 					}),
 					i(175006, {	-- Gauntlets of Nightmare Manifest
-						["f"] = 7,	-- Plate
+						["f"] = PLATE,
 					}),
 					i(175004, {	-- Legwraps of Horrifying Figments
-						["f"] = 4,	-- Cloth
+						["f"] = CLOTH,
 					}),
 					i(175008),	-- Lurking Schemer's Band
 					i(175010, {	-- Maddened Adherent's Bulwark
 						["f"] = 8,	-- Shield
 					}),
 					i(175009, {	-- Zealous Ritualist's Reverie
-						["f"] = 1,	-- Held in Off-hand
+						["f"] = HELD_IN_OFF_HAND,
 					}),
 				}),
 				e(2368, {	-- Wrathion, the Black Emperor

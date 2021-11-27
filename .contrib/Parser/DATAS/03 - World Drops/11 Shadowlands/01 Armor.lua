@@ -5,7 +5,7 @@
 _.WorldDrops =
 {
 	tier(SL_TIER, {
-		n(-318, {	-- Armor [Epic -- No adjustments]
+		n(ARMOR, {
 			i(184790),	-- Archdruid Van-Yali's Greenthumbs
 			i(184791),	-- Azsharys' Lunar Veil
 			i(184796),	-- Baetheas' Ironclad Warboots

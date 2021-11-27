@@ -140,7 +140,7 @@ _.WorldDrops =
 				i(3430),	-- Sniper Rifle
 				i(13138),	-- The Silencer
 			}),
-			n(-331, {	-- Held in Off-hand
+			filter(HELD_IN_OFF_HAND, {
 				i(9944),	-- Abjurer's Crystal
 				i(15971),	-- Aboriginal Rod
 				i(15944),	-- Ancestral Orb

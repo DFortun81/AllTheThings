@@ -6,7 +6,7 @@ _.Craftables =
 {
 	tier(SL_TIER, {
 		prof(ENCHANTING, {
-			filter(102, {	-- Toy
+			filter(TOYS, {
 				i(186973),	-- Anima-ted Leash
 			}),
 			filter(27, {	-- Wands

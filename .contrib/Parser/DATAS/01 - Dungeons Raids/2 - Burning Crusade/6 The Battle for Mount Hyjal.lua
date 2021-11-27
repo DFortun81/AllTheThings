@@ -898,24 +898,24 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 					i(32748, {	-- Pattern: Bindings of Lightning Reflexes
 						["spellID"] = 41161,	-- Bindings of Lightning Reflexes
 						["requireSkill"] = LEATHERWORKING,
-						["f"] = 200,
+						["f"] = RECIPES,
 					}),
 					i(32751, {	-- Pattern: Living Earth Shoulders
 						["spellID"] = 41164,	-- Living Earth Shoulders
 						["requireSkill"] = LEATHERWORKING,
-						["f"] = 200,
+						["f"] = RECIPES,
 					}),
 					i(32755),	-- Pattern: Mantle of Nimble Thought
 					i(32745, {	-- Pattern: Shoulderpads of Renewed Life
 						["spellID"] = 41157,	-- Shoulderpads of Renewed Life
 						["requireSkill"] = LEATHERWORKING,
-						["f"] = 200,
+						["f"] = RECIPES,
 					}),
 					i(32752),	-- Pattern: Swiftheal Wraps
 					i(32746, {	-- Pattern: Swiftstrike Bracers
 						["spellID"] = 41158,	-- Swiftstrike Bracers
 						["requireSkill"] = LEATHERWORKING,
-						["f"] = 200,
+						["f"] = RECIPES,
 					}),
 					i(32736),	-- Plans: Swiftsteel Bracers
 					i(32739),	-- Plans: Dawnsteel Shoulders

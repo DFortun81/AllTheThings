@@ -1,5 +1,5 @@
 profession(ALCHEMY, {
-	filter(200, {	-- Recipes
+	filter(RECIPES, {
 		{
 			["categoryID"] = 602--[[Alchemy of Outland]],
 			["g"] = {

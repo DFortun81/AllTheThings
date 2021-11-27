@@ -773,11 +773,7 @@ for key,value in pairs({
 		--TODO: [-541] = "The Silithyst Must Flow",					-- The Silithyst Must Flow
 		[-542] = "开启黑暗之门",									-- The Opening of the Dark Portal
 		[-543] = "军团入侵",											-- Legion Invasions
-		[-544] = "魔兽世界典藏版",									-- WoW Collector's Edition
 		[-545] = "暴雪嘉年华",										-- Blizzcon
-		[-550] = "星际争霸典藏版",									-- Starcraft Collector's Edition
-		[-551] = "暗黑破坏神典藏版",									-- Diablo Collector's Edition
-		[-558] = "上海2012年战网世界锦标赛",							-- Battle.net World Championship Shanghai 2012
 		[-564] = "星际争霸2：自由之翼",								-- Starcraft II: Wings of Liberty
 		[-565] = "星际争霸2：虫群之心",								-- Starcraft II: Heart of the Swarm
 		[-566] = "暗黑破坏神3",										-- Diablo III
@@ -787,8 +783,6 @@ for key,value in pairs({
 		--TODO: [-579] = "Dark Portal Pass",
 		--TODO: [-580] = "The Great Push: Season 2",				-- The Great Push: Season 2
 	-- PvP Header
-		-- Special Season Tags
-			--TODO: [-655] = "Ensemble Gear", 						-- Ensemble Gear (PvP)
 		-- PvP Set Names
 			[-659] = "候选者套装",									-- Aspirant PvP Gear (WoD, BfA)
 			[-660] = "争斗者套装",									-- Combatant PvP Gear (WoD, Legion)
@@ -903,8 +897,6 @@ for key,value in pairs({
 			--TODO: [-969] = "Set B",								-- Set B
 			--TODO: [-970] = "Set C",								-- Set C
 			--TODO: [-971] = "Set D",								-- Set D
-		-- Black Vault
-			--TODO: [-1001] = "The Black Vault",
 	-- Warrior order hall lore items
 		--TODO: [-2200] = "Great Odyn and the Firelord",
 		--TODO: [-2201] = "The Wanderer and the Serpent",
@@ -920,41 +912,6 @@ for key,value in pairs({
 		--TODO: [-2211] = "Volund's Folly",
 	-- T3
 		[-3179] = "T3套装",
-	-- Island Expedition Sets
-		[-3315] = "蜘蛛助祭",
-		[-3316] = "海达希亚",
-		[-3317] = "霜风",
-		[-3318] = "无面信徒",
-		[-3319] = "虫群之怒",
-		[-3340] = "黑暗活化者",
-		[-3341] = "暮湾镇",
-		--TODO: [-3343] = "Choking Winter",
-		[-3342] = "阵亡符文领主",
-		[-3320] = "灵枝",
-		[-3321] = "静谧之途",
-		[-3322] = "迷雾行者",
-		--TODO: [-3323] = "Whirling Dervish",
-		[-3324] = "荒野树皮",
-		[-3325] = "焰鬼",
-		--TODO: [-3344] = "Frostsworn",
-		[-3326] = "狂野劫掠者",
-		[-3327] = "驭龙者",
-		--TODO: [-3328] = "Saurok",
-		[-3329] = "姆格姆格",
-		[-3330] = "藏头者",
-		[-3331] = "巫毒猎手",
-		[-3332] = "土岩",
-		[-3333] = "刀鳍",
-		[-3339] = "套装",											-- Item Sets
-		[-3345] = "神圣天灾领主",
-		--TODO: [-3334] = "Tomb-Keeper",
-		[-3335] = "赤潮",
-		[-3336] = "响骨",
-		[-3337] = "暮光巨龙",
-		[-3347] = "黑齿步兵",
-	-- PvP Sets
-	-- Note: Some of these may go away once I check as I think I am localizing with gear sets, but leave for now
-		[-4189] = "PvP套装",											-- Instance Item Sets, PvP
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
 			[-5200] = "基础外观",									-- Base Appearance

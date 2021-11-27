@@ -1060,21 +1060,21 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(59969),	-- A Shaman's Duty
 	}),
 	tier(BFA_TIER, {
-		n(-163, {	-- Armor
-			n(-43, {	-- Cloth
+		n(ARMOR, {
+			filter(CLOTH, {
 				i(174795),	-- Expeditionary Cloth Mantle
 			}),
-			n(-44, {	-- Leather
+			filter(LEATHER, {
 				i(175183),	-- Expeditionary Leather Boots
 				i(175215),	-- Expeditionary Leather Boots
 				i(174796),	-- Expeditionary Leather Pauldrons
 			}),
-			n(-45, {	-- Mail
+			filter(MAIL, {
 				i(175182),	-- Expeditionary Mail Sabatons
 				i(175214),	-- Expeditionary Mail Sabatons
 				i(174797),	-- Expeditionary Mail Shoulders
 			}),
-			n(-46, {	-- Plate
+			filter(PLATE, {
 				i(174798),	-- Expeditionary Plate Shoulderguard
 				i(175180),	-- Expeditionary Plate Warboots
 				i(175212),	-- Expeditionary Plate Warboots

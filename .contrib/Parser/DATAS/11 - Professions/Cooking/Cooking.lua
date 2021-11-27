@@ -3019,7 +3019,7 @@ profession(COOKING, {
 	})),
 	-- #endif
 	-- #if NOT ANYCLASSIC
-	filter(200, {	-- Recipes
+	filter(RECIPES, {
 		tier(CLASSIC_TIER, {
 			un(REMOVED_FROM_GAME, i(16072, {	-- Expert Cookbook
 				["spellID"] = 0,	-- replacing the spellID that is automatically pulled from the itemDB, which shows this item as "unknown" when it's not collectible
@@ -3224,7 +3224,7 @@ itemrecipe("Master Cookbook", 27736, 0--[[33359]], TBC_PHASE_ONE, true);
 -- These items never made it in.
 recipeCache = nil;	-- Invalidate the cache.
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	filter(200, {	-- Recipe
+	filter(RECIPES, {
 		itemrecipe("Recipe: Herb Baked Egg", 6891, 8604),	-- this is taught by trainer when you learn cooking; recipe item was never in game
 		itemrecipe("Deprecated Recipe: Kodo Skin Bag", 4997),
 		itemrecipe("Artisan Cookbook", 16073, 19887),

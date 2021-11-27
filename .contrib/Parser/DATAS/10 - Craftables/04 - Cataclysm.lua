@@ -6,7 +6,7 @@ _.Craftables =
 {
 	tier(CATA_TIER, {
 		prof(ALCHEMY, {
-			n(-160, {	-- Mounts
+			filter(MOUNTS, {
 				i(65891),	-- Vial of the Sands
 			}),
 			i(58488, {	-- Potion of Treasure Finding
@@ -206,7 +206,7 @@ _.Craftables =
 				i(60223),	-- High-Powered Bolt Gun
 				i(70139),	-- Flintlocke's Woodchucker
 			}),
-			n(-318, {	-- Armour
+			n(ARMOR, {
 				-- Head
 				i(59455),	-- Agile Bio-Optic Killshades*
 				i(59453),	-- Camouflage Bio-Optic Killshades*
@@ -233,7 +233,7 @@ _.Craftables =
 				i(60216),	-- De-Weaponized Mechanical Companion*
 				i(59597),	-- Personal World Destroyer*
 			}),
-			filter(102, {	-- Toys
+			filter(TOYS, {
 				i(40727),	-- Gnomish Gravity Well*
 				i(60854),	-- Loot-A-Rang*
 			}),
@@ -295,7 +295,7 @@ _.Craftables =
 					}),
 				}),
 			}),
-			filter(1, {	-- Off-hand
+			filter(HELD_IN_OFF_HAND, {
 				i(62236),	-- Battle Tome
 				i(62231),	-- Book of Blood
 				i(62235),	-- Divine Companion
@@ -386,7 +386,7 @@ _.Craftables =
 				i(75076),	-- Vicious Fur Cloak
 				i(75077),	-- Vicious Hide Cloak
 			}),
-			n(-44, {	-- Leather
+			filter(LEATHER, {
 				i(56562),	-- Assassin's Chestplate
 				i(56537),	-- Belt of Nefarious Whispers
 				i(71985),	-- Bladeshadow Leggings
@@ -456,7 +456,7 @@ _.Craftables =
 				i(75080),	-- Vicious Wyrmhide Legs
 				i(75099),	-- Vicious Wyrmhide Shoulders
 			}),
-			n(-45, {	-- Mail
+			filter(MAIL, {
 				un(REMOVED_FROM_GAME, i(56546)),	-- Bloodied Dragonscale Belt
 				un(REMOVED_FROM_GAME, i(56534)),	-- Bloodied Dragonscale Boots
 				un(REMOVED_FROM_GAME, i(56526)),	-- Bloodied Dragonscale Bracers

@@ -208,8 +208,8 @@ _.NeverImplemented =
 			i(136971),	-- Tome of Hex: Snake
 		}),
 	}),
-	n(-163, {	-- Armor
-		n(-43, {	-- Cloth
+	n(ARMOR, {
+		filter(CLOTH, {
 			cl(MAGE, {
 			}),
 			cl(PRIEST, {
@@ -392,7 +392,7 @@ _.NeverImplemented =
 			-- Legion
 			i(153289),	-- Eredar Priestess' Tunic
 		}),
-		n(-44, {	-- Leather
+		filter(LEATHER, {
 			cl(DRUID, {
 			}),
 			cl(ROGUE, {
@@ -632,7 +632,7 @@ _.NeverImplemented =
 			i(178148),	-- 9.0 Dungeon - PH Item
 			i(178305),	-- unused
 		}),
-		n(-45, {	-- Mail
+		filter(MAIL, {
 			cl(SHAMAN, {
 			}),
 			cl(HUNTER, {
@@ -811,7 +811,7 @@ _.NeverImplemented =
 			--
 			i(68844),	-- Unknown
 		}),
-		n(-46, {	-- Plate
+		filter(PLATE, {
 			cl(DEATHKNIGHT, {
 			}),
 			cl(PALADIN, {
@@ -1111,7 +1111,7 @@ _.NeverImplemented =
 			--SL
 			i(167150),	-- QA Combat Test Cloak 1(9.0.5?)
 		}),
-		n(-349, {	-- Cosmetic
+		filter(COSMETIC, {
 			i(52488),	-- Jeweler's Sapphire Monocle (other version got added)
 			i(116399),	-- Emerald Sunglasses (WoD Beta)
 			i(133996),	-- Was testing version, they added i(134022))	-- Burgy Blackheart's Handsome Hat
@@ -1654,7 +1654,7 @@ _.NeverImplemented =
 		i(55219),	-- Vaporous Transform
 		i(142360),	-- Blazing Ember Signet
 	}),
-	n(-160, {	-- Mounts
+	filter(MOUNTS, {
 		a(model(9475, i(13325))),		-- Fluorescent Green Mechanostrider (Never added in Game)
 		h(model(11641, i(14062, {		-- Kodo Mount						(Never added in Game)
 			{ ["mountID"] = 18363, ["u"] = NEVER_IMPLEMENTED }
@@ -1723,7 +1723,7 @@ _.NeverImplemented =
 		i(43964),	-- Reins of the Black Polar Bear
 		i(46101),	-- Blue Skeletal Warhorse
 	}),
-	n(-162, {	-- Pets
+	filter(BATTLE_PETS, {
 		model(65527, i(129108, {	-- Son of Goredome						(Never added in Game)
 			p(1751),
 		})),
@@ -2975,7 +2975,7 @@ _.NeverImplemented =
 		}),
 		i(5657),	-- Recipe: Instant Toxin
 	}),
-	n(-161, {	-- Toys
+	filter(TOYS, {
 		i(140779),	-- Falanaar Echo
 		i(136848),	-- Worn Doll Test
 		i(143545),	-- Fel Focusing Crystal
@@ -3109,7 +3109,7 @@ _.NeverImplemented =
 			i(165270),	-- Fallback Weapon - Gun
 
 		}),
-		n(-331, {	-- Held in Offhand
+		filter(HELD_IN_OFF_HAND, {
 			-- ItemID/Retrieving
 			i(18316),	-- Obsidian Bauble
 			i(19989),	-- Tome of Devouring Shadows

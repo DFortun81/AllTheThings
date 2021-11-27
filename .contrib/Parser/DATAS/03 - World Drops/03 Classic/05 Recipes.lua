@@ -5,7 +5,7 @@
 _.WorldDrops =
 {
 	tier(CLASSIC_TIER, {
-		f(200, {	-- Recipes
+		filter(RECIPES, {
 			prof(ALCHEMY, {
 				-- #if AFTER 8.0.1.10000
 				i(6454),	-- Manual: Strong Anti-Venom

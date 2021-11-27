@@ -3,7 +3,7 @@ profession(JUNKYARD_TINKERING, {
 	["requireSkill"] = JUNKYARD_TINKERING,
 	["cr"] = 150359,	-- Pascal-K1N6
 	["groups"] = {
-		filter(200, {	-- Recipes
+		filter(RECIPES, {
 			{
 				["name"] = "Junkyard Tinkering",
 				["categoryID"] = 1257,	-- Junkyard Tinkering

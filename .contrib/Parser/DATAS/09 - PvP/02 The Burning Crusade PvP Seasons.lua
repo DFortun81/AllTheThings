@@ -1067,7 +1067,7 @@ _.PVP =
 				-- Orinally sold Offhand/Neck/Finger by
 				-- Alliance SW: n(12781,  {	-- Master Sergeant Biggins  &
 				-- Horde OG: n(12793,  {	-- Brave Stonehide
-				n(-331, {	-- Held In Offhand
+				filter(HELD_IN_OFF_HAND, {
 					un(REMOVED_FROM_GAME, i(33945)), -- Gladiator's Idol of Resolve
 					un(REMOVED_FROM_GAME, i(33942)), -- Gladiator's Idol of Steadfastness
 					un(REMOVED_FROM_GAME, i(28355)), -- Gladiator's Idol of Tenacity
@@ -1783,7 +1783,7 @@ _.PVP =
 				-- Orinally sold Offhand/Neck/Finger by
 				-- Alliance SW: n(23446,  {	-- Lieutenant Tristia --  &
 				-- Horde OG: n(24520, {	-- Doris Volanthius --
-				n(-331, {	-- Held In Offhand
+				filter(HELD_IN_OFF_HAND, {
 					un(REMOVED_FROM_GAME, i(33946)), -- Merciless Gladiator's Idol of Resolve
 					un(REMOVED_FROM_GAME, i(33943)), -- Merciless Gladiator's Idol of Steadfastness
 					un(REMOVED_FROM_GAME, i(33076)), -- Merciless Gladiator's Idol of Tenacity
@@ -2476,7 +2476,7 @@ _.PVP =
 				-- Orinally sold Offhand/Neck/Finger by
 				-- Alliance SW: n(23446,  {	-- Lieutenant Tristia --  &
 				-- Horde OG: n(24520, {	-- Doris Volanthius --
-				n(-331, {	-- Held In Offhand
+				filter(HELD_IN_OFF_HAND, {
 					un(REMOVED_FROM_GAME, i(33947)), -- Vengeful Gladiator's Idol of Resolve
 					un(REMOVED_FROM_GAME, i(33944)), -- Vengeful Gladiator's Idol of Steadfastness
 					un(REMOVED_FROM_GAME, i(33841)), -- Vengeful Gladiator's Idol of Tenacity
@@ -3224,7 +3224,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				n(-331, {	-- Held In Offhand
+				filter(HELD_IN_OFF_HAND, {
 					un(REMOVED_FROM_GAME, i(35019)),	-- Brutal Gladiator's Idol of Resolve
 					un(REMOVED_FROM_GAME, i(35020)),	-- Brutal Gladiator's Idol of Steadfastness
 					un(REMOVED_FROM_GAME, i(35021)),	-- Brutal Gladiator's Idol of Tenacity

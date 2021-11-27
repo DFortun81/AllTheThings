@@ -1037,7 +1037,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					},
 				}),
 			}),
-			filter(200, {	-- Recipes
+			filter(RECIPES, {
 				["crs"] = {
 					15516,	-- Battleguard Sartura
 					15510,	-- Fankriss the Unyielding

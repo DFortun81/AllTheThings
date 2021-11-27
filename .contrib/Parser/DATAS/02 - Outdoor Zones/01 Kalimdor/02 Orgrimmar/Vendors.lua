@@ -79,7 +79,7 @@ _.Zones =
 									["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
 								}),
 							}),
-							n(-43, {	-- Cloth
+							filter(CLOTH, {
 								i(172787, {	-- Corrupted Aspirant's Silk Cord (H)
 									["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
 								}),
@@ -105,7 +105,7 @@ _.Zones =
 									["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
 								}),
 							}),
-							n(-44, {	-- Leather
+							filter(LEATHER, {
 								i(172794, {	-- Corrupted Aspirant's Leather Belt (H)
 									["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
 								}),
@@ -131,7 +131,7 @@ _.Zones =
 									["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
 								}),
 							}),
-							n(-45, {	-- Mail
+							filter(MAIL, {
 								i(172803, {	-- Corrupted Aspirant's Chain Armbands (H)
 									["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
 								}),
@@ -157,7 +157,7 @@ _.Zones =
 									["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
 								}),
 							}),
-							n(-46, {	-- Plate
+							filter(PLATE, {
 								i(172811, {	-- Corrupted Aspirant's Plate Armguards (H)
 									["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
 								}),

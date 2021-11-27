@@ -743,7 +743,7 @@ _.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				i(31893),	-- Eight of Storms
 			}),
 		}),
-		filter(1, {	-- Off-hand
+		filter(HELD_IN_OFF_HAND, {
 			i(43667),	-- Book of Clever Tricks
 			i(43666),	-- Hellfire Tome
 		}),

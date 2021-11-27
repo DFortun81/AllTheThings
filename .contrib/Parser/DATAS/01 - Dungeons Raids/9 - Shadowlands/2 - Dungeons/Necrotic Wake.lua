@@ -111,7 +111,7 @@ _.Instances = { tier(SL_TIER, {
 						i(178730),	-- Engorged Worm Smasher
 						i(178735),	-- Blight Belcher
 						i(178732, {	-- Abominable Visage
-							["filterID"] = 4,	-- Cloth (blizz says cloak for some reason)
+							["filterID"] = CLOTH,
 						}),
 						i(178733),	-- Blightbone Spaulders
 						i(178734),	-- Fused Bone Greatbelt
@@ -169,7 +169,7 @@ _.Instances = { tier(SL_TIER, {
 							i(178730),	-- Engorged Worm Smasher
 							i(178735),	-- Blight Belcher
 							i(178732, {	-- Abominable Visage
-								["filterID"] = 4,	-- Cloth (blizz says cloak for some reason)
+								["filterID"] = CLOTH,
 							}),
 							i(178733),	-- Blightbone Spaulders
 							i(178734),	-- Fused Bone Greatbelt
@@ -229,7 +229,7 @@ _.Instances = { tier(SL_TIER, {
 							i(178730),	-- Engorged Worm Smasher
 							i(178735),	-- Blight Belcher
 							i(178732, {	-- Abominable Visage
-								["filterID"] = 4,	-- Cloth (blizz says cloak for some reason)
+								["filterID"] = CLOTH,
 							}),
 							i(178733),	-- Blightbone Spaulders
 							i(178734),	-- Fused Bone Greatbelt

@@ -4,7 +4,7 @@ DO NOT MODIFY THIS FILE, I WILL CUT YOU.
     -CRIEVE
 ]]--
 profession(393, {	-- Skinning
-	filter(200, {
+	filter(RECIPES, {
 		{
 			["name"] = "Kul Tiran Skinning",
 			["categoryID"] = 1046,

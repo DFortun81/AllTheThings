@@ -613,7 +613,7 @@ _.Zones =
 								["spellID"] = 210656,	-- Songs of the Legion
 								["timeline"] = { "added 7.0.3.21134" },
 								["requireSkill"] = INSCRIPTION,
-								["f"] = 200,
+								["f"] = RECIPES,
 							}),
 						},
 					}),
@@ -628,14 +628,14 @@ _.Zones =
 								["spellID"] = 32482,	-- Comfortable Insoles
 								["requireSkill"] = LEATHERWORKING,
 								["isLimited"] = true,
-								["f"] = 200,
+								["f"] = RECIPES,
 							}),
 							i(25720, {	-- Pattern: Heavy Knothide Leather
 								["spellID"] = 32455,	-- Heavy Knothide Leather
 								["timeline"] = { "removed 3.2.0.10000"},
 								["requireSkill"] = LEATHERWORKING,
 								["isLimited"] = true,
-								["f"] = 200,
+								["f"] = RECIPES,
 							}),
 						},
 					}),

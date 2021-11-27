@@ -1053,26 +1053,26 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(57228),	-- The Assault on Dreadhollow
 	}),
 	tier(SL_TIER, {
-		n(-163, {	-- Armor
-			n(-43, {	-- Cloth
+		n(ARMOR, {
+			filter(CLOTH, {
 				i(175420),	-- Slippers of Pained Absolution
 				i(175490),	-- Gloves of Pained Absolution
 				i(175501),	-- Shoulders of Pained Absolution
 				i(178074),	-- Cover of Pained Absolution
 			}),
-			n(-44, {	-- Leather
+			filter(LEATHER, {
 				i(175422),	-- Nightcloaked Boots
 				i(175488),	-- Nightcloaked Grips
 				i(175499),	-- Nightcloaked Shoulderpads
 				i(178076),	-- Nightcloaked Cover
 			}),
-			n(-45, {	-- Mail
+			filter(MAIL, {
 				i(175421),	-- Soul Hunter's  Sabatons
 				i(175491),	-- Soul Hunter's Grips
 				i(175502),	-- Soul Hunter's Mantle
 				i(178075),	-- Soul Hunter's Cover
 			}),
-			n(-46, {	-- Plate
+			filter(PLATE, {
 				i(175419),	-- Stoneforged Greatboots
 				i(175489),	-- Stoneforged Gauntlets
 				i(175500),	-- Stoneforged Shoulderguards

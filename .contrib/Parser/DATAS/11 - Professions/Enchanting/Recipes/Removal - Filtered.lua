@@ -1,5 +1,5 @@
 profession(ENCHANTING, {
-	filter(200, {	-- Recipes
+	filter(RECIPES, {
 		cat(404, sharedData({["u"] = 15},{	--[[Removal]]
 			recipe(177355),	--[[Remove Illusion]]
 		})),

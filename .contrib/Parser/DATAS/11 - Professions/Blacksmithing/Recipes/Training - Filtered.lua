@@ -1,5 +1,5 @@
 profession(BLACKSMITHING, {
-	filter(200, {	-- Recipes
+	filter(RECIPES, {
 		{	-- Training
 			["categoryID"] = 424,	-- Training
 			["g"] = {

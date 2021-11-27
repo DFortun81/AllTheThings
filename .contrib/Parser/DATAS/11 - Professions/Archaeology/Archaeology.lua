@@ -329,12 +329,12 @@ profession(ARCHAEOLOGY, {
 			i(64444),	-- Scepter of the Nathrezim
 			i(64443),	-- Strange Silver Paperweight
 		}),
-		n(-161, {	-- Toys
+		filter(TOYS, {
 			i(64456),	-- Arrival of the Naaru
 		}),
 	}),
 	currency(821,  {	-- Draenor Clans
-		n(-318, {	-- Armor
+		n(ARMOR, {
 			i(116985),	-- Headdress of the First Shaman
 		}),
 		filter(BATTLE_PETS, {
@@ -717,7 +717,7 @@ profession(ARCHAEOLOGY, {
 				},
 			}),
 		}),
-		n(-161, {	-- Toys
+		filter(TOYS, {
 			i(160751),	-- Dance of the Dead
 		}),
 		n(-386, {	-- Trinket
@@ -757,7 +757,7 @@ profession(ARCHAEOLOGY, {
 			i(64486),	-- Word of Empress Zoe
 			i(63110),	-- Worn Hunting Knife
 		}),
-		n(-161, {	-- Toys
+		filter(TOYS, {
 			i(64373),	-- Chalice of the Mountain Kings
 			i(64488),	-- The Innkeeper's Daughter
 		}),
@@ -766,7 +766,7 @@ profession(ARCHAEOLOGY, {
 		}),
 	}),
 	currency(393,  {	-- Fossil
-		n(-318, {	-- Armor
+		n(ARMOR, {
 			i(69764),	-- Extinct Turtle Shell
 		}),
 		filter(BATTLE_PETS, {
@@ -787,10 +787,10 @@ profession(ARCHAEOLOGY, {
 			i(63527),	-- Twisted Ammonite Shell
 			i(64387),	-- Vicious Ancient Fish
 		}),
-		n(-160, {	-- Mounts
+		filter(MOUNTS, {
 			i(60954),	-- Fossilized Raptor
 		}),
-		n(-161, {	-- Toys
+		filter(TOYS, {
 			i(69776),	-- Ancient Amber
 		}),
 	}),
@@ -1291,7 +1291,7 @@ profession(ARCHAEOLOGY, {
 				},
 			}),
 		}),
-		n(-161, {	-- Toys
+		filter(TOYS, {
 			i(89614),	-- Anatomical Dummy
 		}),
 		n(-386, {	-- Trinket
@@ -1308,13 +1308,13 @@ profession(ARCHAEOLOGY, {
 			i(64474),	-- Spidery Sundial
 			i(64480),	-- Vizier's Scrawled Streamer
 		}),
-		n(-161, {	-- Toys
+		filter(TOYS, {
 			i(64481),	-- Blessing of the Old God
 			i(64482),	-- Puzzle Box of Yogg-Saron
 		}),
 	}),
 	currency(394,  {	-- Night Elf
-		n(-318, {	-- Armor
+		n(ARMOR, {
 			i(64643),	-- Queen Azshara's Dressing Gown
 		}),
 		f(50,   {	-- Miscellaneous
@@ -1337,7 +1337,7 @@ profession(ARCHAEOLOGY, {
 			i(64378),	-- String of Small Pink Pearls
 			i(64650),	-- Umbra Crescent
 		}),
-		n(-161, {	-- Toys
+		filter(TOYS, {
 			i(64646),	-- Bones of Transformation
 			i(64361),	-- Druid and Priest Statue Set
 			i(64358),	-- Highborne Soul Mirror
@@ -1501,7 +1501,7 @@ profession(ARCHAEOLOGY, {
 		}),
 	}),
 	currency(397,  {	-- Orc
-		n(-318, {	-- Armor
+		n(ARMOR, {
 			i(64644),	-- Headdress of the First Shaman
 		}),
 		f(50,   {	-- Miscellaneous
@@ -1659,12 +1659,12 @@ profession(ARCHAEOLOGY, {
 			i(64654),	-- Soapstone Scarab Necklace
 			i(64655),	-- Tiny Oasis Mosaic
 		}),
-		n(-160,   {	-- Mounts
+		filter(MOUNTS, {
 			sp(92148, {	-- Scepter of Azj'Aqir
 				i(64883),	-- Ultramarine Qiraji Battle Tank
 			}),
 		}),
-		n(-161,   {	-- Toys
+		filter(TOYS, {
 			i(64881),	-- Pendant of the Scarab Storm
 		}),
 		n(WEAPONS, {
@@ -1692,7 +1692,7 @@ profession(ARCHAEOLOGY, {
 			i(64374),	-- Tooth with Gold Filling
 			i(63115),	-- Zandalari Voodoo Doll
 		}),
-		n(-161, {	-- Toys
+		filter(TOYS, {
 			i(69777),	-- Haunted War Drum
 		}),
 		n(WEAPONS, {
@@ -1707,7 +1707,7 @@ profession(ARCHAEOLOGY, {
 			i(64461),	-- Scramseax
 			i(64467),	-- Thorned Necklace
 		}),
-		n(-161, {	-- Toys
+		filter(TOYS, {
 			i(69775),	-- Vrykul Drinking Horn
 		}),
 		n(WEAPONS, {
@@ -1820,7 +1820,7 @@ profession(ARCHAEOLOGY, {
 				},
 			}),
 		}),
-		n(-161, {	-- Toys
+		filter(TOYS, {
 			i(160740),	-- Croak Crock
 		}),
 		n(-386, {	-- Trinket

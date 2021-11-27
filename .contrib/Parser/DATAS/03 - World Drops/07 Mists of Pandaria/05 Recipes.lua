@@ -5,7 +5,7 @@
 _.WorldDrops =
 {
 	tier(MOP_TIER, {
-		f(200, {	-- Recipes
+		filter(RECIPES, {
 			prof(BLACKSMITHING, {
 				i(100865, {	-- Plans: Balanced Trillium Ingot and Its Uses
 					["spellID"] = 0,

@@ -1092,8 +1092,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(60559),	-- Unused
 	}),
 	tier(SL_TIER, {
-		n(-163, {	-- Armor
-			n(-43, {	-- Cloth
+		n(ARMOR, {
+			filter(CLOTH, {
 				i(175679),	-- Oribos Quest Cloth Robe
 				i(175682),	-- Oribos Quest Cloth Feet
 				i(175686),	-- Oribos Quest Cloth Hand
@@ -1105,7 +1105,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(179489),	-- Oribos Quest Cloth Chest
 				i(179490),	-- Oribos Quest Cloth Chest
 			}),
-			n(-44, {	-- Leather
+			filter(LEATHER, {
 				i(175681),	-- Oribos Quest Leather Chest
 				i(175684),	-- Oribos Quest Leather Feet
 				i(175685),	-- Oribos Quest Leather Hand
@@ -1115,7 +1115,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(175699),	-- Oribos Quest Leather Waist
 				i(175702),	-- Oribos Quest Leather Wrist
 			}),
-			n(-45, {	-- Mail
+			filter(MAIL, {
 				i(175680),	-- Oribos Quest Mail Chest
 				i(175683),	-- Oribos Quest Mail Feet
 				i(175687),	-- Oribos Quest Mail Hand
@@ -1125,7 +1125,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(175698),	-- Oribos Quest Mail Waist
 				i(175701),	-- Oribos Quest Mail Wrist
 			}),
-			n(-46, {	-- Plate
+			filter(PLATE, {
 				i(175639),	-- Oribos Quest Plate Head
 				i(175640),	-- Oribos Quest Plate Chest
 				i(175641),	-- Oribos Quest Plate Feet

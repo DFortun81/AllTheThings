@@ -4,7 +4,7 @@ DO NOT MODIFY THIS FILE, I WILL CUT YOU.
     -CRIEVE
 ]]--
 profession(773, {	-- Inscription
-	filter(200, {
+	filter(RECIPES, {
 		{
 			["name"] = "Merchant Orders",
 			["categoryID"] = 403,

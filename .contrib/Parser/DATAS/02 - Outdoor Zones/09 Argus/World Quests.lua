@@ -11,7 +11,7 @@ _.Zones =
 				n(BACK, {
 					i(150988),	-- Twisted-Ritualist's Shawl
 				}),
-				n(-43, {	-- Cloth
+				filter(CLOTH, {
 					i(150980),	-- Doomsinger Cap
 					i(150987),	-- Doomsinger Amice
 					i(150985),	-- Doomsinger Robes
@@ -21,7 +21,7 @@ _.Zones =
 					i(150986),	-- Doomsinger Leggings
 					i(150984),	-- Doomsinger Slippers
 				}),
-				n(-44, {	-- Leather
+				filter(LEATHER, {
 					i(150969),	-- Stygian Mask
 					i(150970),	-- Stygian Shoulderguards
 					i(150968),	-- Stygian Vest
@@ -31,7 +31,7 @@ _.Zones =
 					i(150971),	-- Stygian Trousers
 					i(150967),	-- Stygian Boots
 				}),
-				n(-45, {	-- Mail
+				filter(MAIL, {
 					i(150975),	-- Nath'raxxan Coif
 					i(150979),	-- Nath'raxxan Spaulders
 					i(150978),	-- Nath'raxxan Chestguard
@@ -41,7 +41,7 @@ _.Zones =
 					i(150974),	-- Nath'raxxan Leggings
 					i(150976),	-- Nath'raxxan Boots
 				}),
-				n(-46, {	-- Plate
+				filter(PLATE, {
 					i(150957),	-- Garothi Helmet
 					i(150960),	-- Garothi Pauldrons
 					i(150958),	-- Garothi Breastplate

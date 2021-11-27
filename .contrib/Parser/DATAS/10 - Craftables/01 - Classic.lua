@@ -1259,7 +1259,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				["description"] = "Interestingly enough, you can fish this out of the lava in Ironforge. I guess the gnomes failed their quest...",
 			}),
 		}),
-		filter(1, {		-- Held in Off-hand
+		filter(HELD_IN_OFF_HAND, {
 			i(6292),	-- 10 Pound Mud Snapper
 			i(6294),	-- 12 Pound Mud Snapper
 			i(6295),	-- 15 Pound Mud Snapper
@@ -1319,7 +1319,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(6352),	-- Waterlogged Crate
 		}),
 		-- #if AFTER TBC
-		filter(200, {	-- Recipes
+		filter(RECIPES, {
 			i(34109, {	-- Weather-Beaten Journal
 				["description"] = "Can be fished from schools.",
 			}),
@@ -1444,7 +1444,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				i(37160),	-- Four of Swords
 			}),
 		}),
-		filter(1, {	-- Off-hand
+		filter(HELD_IN_OFF_HAND, {
 			i(43661),	-- Book of Stars
 			i(43655),	-- Book of Survival
 			i(43660),	-- Fire Eater's Guide
@@ -1776,7 +1776,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				["timeline"] = { "removed 4.0.3" },
 			}),
 		}),
-		filter(5, {	-- Leather
+		filter(LEATHER, {
 			category(251, {	-- Helms
 				i(8201),	-- Big Voodoo Mask
 				applyclassicphase(PHASE_FIVE_CATCH_UP, i(22759)),	-- Bramblewood Helm
@@ -2046,7 +2046,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				})
 			}),
 		}),
-		filter(6, {	-- Mail
+		filter(MAIL, {
 			category(251, {	-- Helms
 				i(15080),	-- Heavy Scorpid Helm
 				i(8208),	-- Tough Scorpid Helm

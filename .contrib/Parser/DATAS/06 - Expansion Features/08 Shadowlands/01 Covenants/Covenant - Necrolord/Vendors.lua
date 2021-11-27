@@ -1575,8 +1575,8 @@ _.HiddenQuestTriggers = {
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(SL_TIER, {
 		n(NECROLORD, {
-			n(-163, {	-- Armor
-				n(-43, {	-- Cloth
+			n(ARMOR, {
+				filter(CLOTH, {
 					i(179412),	-- 9.0 Covenant - Maldraxxus - Cloth - Head
 					i(179413),	-- 9.0 Covenant - Maldraxxus - Cloth - Chest
 					i(179414),	-- 9.0 Covenant - Maldraxxus - Cloth - Feet
@@ -1586,7 +1586,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(179418),	-- 9.0 Covenant - Maldraxxus - Cloth - Waist
 					i(179419),	-- 9.0 Covenant - Maldraxxus - Cloth - Wrists
 				}),
-				n(-44, {	-- Leather
+				filter(LEATHER, {
 					i(179403),	-- 9.0 Covenant - Maldraxxus - Leather - Head
 					i(179404),	-- 9.0 Covenant - Maldraxxus - Leather - Chest
 					i(179405),	-- 9.0 Covenant - Maldraxxus - Leather - Feet
@@ -1596,7 +1596,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(179409),	-- 9.0 Covenant - Maldraxxus - Leather - Waist
 					i(179410),	-- 9.0 Covenant - Maldraxxus - Leather - Wrists
 				}),
-				n(-45, {	-- Mail
+				filter(MAIL, {
 					i(179421),	-- 9.0 Covenant - Maldraxxus - Mail Head
 					i(179422),	-- 9.0 Covenant - Maldraxxus - Mail Chest
 					i(179423),	-- 9.0 Covenant - Maldraxxus - Mail Feet
@@ -1606,7 +1606,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(179427),	-- 9.0 Covenant - Maldraxxus - Mail Waist
 					i(179428),	-- 9.0 Covenant - Maldraxxus - Mail Wrists
 				}),
-				n(-46, {	-- Plate
+				filter(PLATE, {
 					i(174185),	-- 9.0 Covenant - Maldraxxus - Plate Head
 					i(174186),	-- 9.0 Covenant - Maldraxxus - Plate Chest
 					i(174187),	-- 9.0 Covenant - Maldraxxus - Plate Feet

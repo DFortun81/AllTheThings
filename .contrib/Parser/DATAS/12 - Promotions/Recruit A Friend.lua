@@ -114,7 +114,7 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
 		}),
 	}),
-	filter(100, {	-- Mounts
+	filter(MOUNTS, {
 		i(37598),	-- Swift Zhevra OLD
 	}),
 }));

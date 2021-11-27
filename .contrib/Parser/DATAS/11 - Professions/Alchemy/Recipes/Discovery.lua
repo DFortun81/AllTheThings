@@ -1,5 +1,5 @@
 profession(ALCHEMY, {
-	filter(200, {
+	filter(RECIPES, {
 		{
 			["categoryID"] = 592,  -- Zandalari Alchemy
 			["g"] = {

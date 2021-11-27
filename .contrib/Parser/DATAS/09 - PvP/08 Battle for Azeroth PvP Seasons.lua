@@ -43,7 +43,7 @@ _.PVP =
 					i(162876),	-- Dread Aspirant's Wand (H)
 					i(162880),	-- Dread Aspirant's Warglaive (H)
 				}),
-				n(-43,  {	-- Cloth
+				filter(CLOTH, {
 					i(162925),	-- Dread Aspirant's Silk Cord (A)
 					i(162928),	-- Dread Aspirant's Silk Cuffs (A)
 					i(162911),	-- Dread Aspirant's Silk Gloves (A)
@@ -61,7 +61,7 @@ _.PVP =
 					i(162933),	-- Dread Aspirant's Silk Robe (H)
 					i(162938),	-- Dread Aspirant's Silk Treads (H)
 				}),
-				n(-44,  {	-- Leather
+				filter(LEATHER, {
 					i(162927),	-- Dread Aspirant's Leather Belt (A)
 					i(162931),	-- Dread Aspirant's Leather Bindings (A)
 					i(162908),	-- Dread Aspirant's Leather Boots (A)
@@ -79,7 +79,7 @@ _.PVP =
 					i(162952),	-- Dread Aspirant's Leather Spaulders (H)
 					i(162936),	-- Dread Aspirant's Leather Tunic (H)
 				}),
-				n(-45,  {	-- Mail
+				filter(MAIL, {
 					i(162930),	-- Dread Aspirant's Chain Armbands (A)
 					i(162903),	-- Dread Aspirant's Chain Armor (A)
 					i(162912),	-- Dread Aspirant's Chain Gauntlets (A)
@@ -97,7 +97,7 @@ _.PVP =
 					i(162955),	-- Dread Aspirant's Chain Spaulders (H)
 					i(162957),	-- Dread Aspirant's Chain Waistguard (H)
 				}),
-				n(-46,  {	-- Plate
+				filter(PLATE, {
 					i(162929),	-- Dread Aspirant's Plate Armguards (A)
 					i(162902),	-- Dread Aspirant's Plate Chestpiece (A)
 					i(162910),	-- Dread Aspirant's Plate Gauntlets (A)
@@ -191,7 +191,7 @@ _.PVP =
 					i(161689),	-- Dread Gladiator's Wand (H)
 					i(161693),	-- Dread Gladiator's Warglaive (H)
 				}),
-				n(-43, {	-- Cloth
+				filter(CLOTH, {
 					i(161731),	-- Dread Gladiator's Silk Amice (A)
 					i(161737),	-- Dread Gladiator's Silk Bracers (A)
 					i(161625),	-- Dread Gladiator's Silk Cord (A)
@@ -225,7 +225,7 @@ _.PVP =
 					i(161638),	-- Dread Gladiator's Silk Treads (H)
 					i(161758),	-- Dread Gladiator's Silk Trousers (H)
 				}),
-				n(-44, {	-- Leather
+				filter(LEATHER, {
 					i(161740),	-- Dread Gladiator's Leather Armwraps (A)
 					i(161627),	-- Dread Gladiator's Leather Belt (A)
 					i(161631),	-- Dread Gladiator's Leather Bindings (A)
@@ -259,7 +259,7 @@ _.PVP =
 					i(161745),	-- Dread Gladiator's Leather Vest (H)
 					i(161768),	-- Dread Gladiator's Leather Waistband (H)
 				}),
-				n(-45, {	-- Mail
+				filter(MAIL, {
 					i(161630),	-- Dread Gladiator's Chain Armbands (A)
 					i(161603),	-- Dread Gladiator's Chain Armor (A)
 					i(161712),	-- Dread Gladiator's Chain Chestguard (A)
@@ -293,7 +293,7 @@ _.PVP =
 					i(161658),	-- Dread Gladiator's Chain Waistguard (H)
 					i(161771),	-- Dread Gladiator's Chain Wristguards (H)
 				}),
-				n(-46, {	-- Plate
+				filter(PLATE, {
 					i(161629),	-- Dread Gladiator's Plate Armguards (A)
 					i(161711),	-- Dread Gladiator's Plate Chestguard (A)
 					i(161602),	-- Dread Gladiator's Plate Chestpiece (A)
@@ -378,7 +378,7 @@ _.PVP =
 				un(REMOVED_FROM_GAME, i(164586)),	-- Warlord's Trophy Dread Duelist
 				un(REMOVED_FROM_GAME, i(164587)),	-- Warlord's Trophy Dread Elite
 			})),
-			filter(100, {	-- Mounts
+			filter(MOUNTS, {
 				i(163123, {	-- Vicious War Riverbeast (A)
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -415,7 +415,7 @@ _.PVP =
 					i(165197),	-- Sinister Aspirant's Staff (H)
 					i(165193),	-- Sinister Aspirant's Warglaive (H)
 				}),
-				n(-43,  {	-- Cloth
+				filter(CLOTH, {
 					i(165121),	-- Sinister Aspirant's Cuffs (A)
 					i(165118),	-- Sinister Aspirant's Cord (A)
 					i(165104),	-- Sinister Aspirant's Gloves (A)
@@ -433,7 +433,7 @@ _.PVP =
 					i(165061),	-- Sinister Aspirant's Robe (H)
 					i(165062),	-- Sinister Aspirant's Treads (H)
 				}),
-				n(-44,  {	-- Leather
+				filter(LEATHER, {
 					i(165120),	-- Sinister Aspirant's Belt (A)
 					i(165124),	-- Sinister Aspirant's Bindings (A)
 					i(165101),	-- Sinister Aspirant's Boots (A)
@@ -451,7 +451,7 @@ _.PVP =
 					i(165074),	-- Sinister Aspirant's Spaulders (H)
 					i(165069),	-- Sinister Aspirant's Tunic (H)
 				}),
-				n(-45,  {	-- Mail
+				filter(MAIL, {
 					i(165123),	-- Sinister Aspirant's Chain Armbands (A)
 					i(165096),	-- Sinister Aspirant's Chain Armor (A)
 					i(165105),	-- Sinister Aspirant's Chain Gauntlets (A)
@@ -469,7 +469,7 @@ _.PVP =
 					i(165082),	-- Sinister Aspirant's Chain Chain Spaulders (H)
 					i(165083),	-- Sinister Aspirant's Chain Waistguard (H)
 				}),
-				n(-46,  {	-- Plate
+				filter(PLATE, {
 					i(165122),	-- Sinister Aspirant's Plate Armguards (A)
 					i(165095),	-- Sinister Aspirant's Plate Chestpiece (A)
 					i(165103),	-- Sinister Aspirant's Plate Gauntlets (A)
@@ -551,7 +551,7 @@ _.PVP =
 					i(165032),	-- Sinister Gladiator's Staff (H)
 					i(165028),	-- Sinister Gladiator's Warglaive (H)
 				}),
-				n(-43,  {	-- Cloth
+				filter(CLOTH, {
 					i(164897),	-- Sinister Gladiator's Silk Amice (A)
 					i(164903),	-- Sinister Gladiator's Silk Bracers (A)
 					i(166626),	-- Sinister Gladiator's Silk Chestwrap (A)
@@ -597,7 +597,7 @@ _.PVP =
 					i(164847),	-- Sinister Gladiator's Silk Trousers (H)
 					i(166614),	-- Sinister Gladiator's Silk Vestments (H)
 				}),
-				n(-44,  {	-- Leather
+				filter(LEATHER, {
 					i(164906),	-- Sinister Gladiator's Leather Armwraps (A)
 					i(164838),	-- Sinister Gladiator's Leather Belt (A)
 					i(164842),	-- Sinister Gladiator's Leather Bindings (A)
@@ -643,7 +643,7 @@ _.PVP =
 					i(164851),	-- Sinister Gladiator's Leather Vest (H)
 					i(164857),	-- Sinister Gladiator's Leather Waistband (H)
 				}),
-				n(-45,  {	-- Mail
+				filter(MAIL, {
 					i(164841),	-- Sinister Gladiator's Chain Armbands (A)
 					i(164814),	-- Sinister Gladiator's Chain Armor (A)
 					i(164878),	-- Sinister Gladiator's Chain Chestguard (A)
@@ -689,7 +689,7 @@ _.PVP =
 					i(164801),	-- Sinister Gladiator's Chain Waistguard (H)
 					i(164866),	-- Sinister Gladiator's Chain Wristguards (H)
 				}),
-				n(-46,  {	-- Plate
+				filter(PLATE, {
 					i(164840),	-- Sinister Gladiator's Plate Armguards (A)
 					i(166619),	-- Sinister Gladiator's Plate Armor (A)
 					i(166627),	-- Sinister Gladiator's Plate Breastplate (A)
@@ -787,7 +787,7 @@ _.PVP =
 				un(REMOVED_FROM_GAME, i(164958)),	-- Warlord's Trophy Sinister Duelist
 				un(REMOVED_FROM_GAME, i(164959)),	-- Warlord's Trophy Sinister Elite
 			})),
-			filter(100, {	-- Mounts
+			filter(MOUNTS, {
 				i(165019, {	-- Vicious Black Warsaber (A)
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -830,7 +830,7 @@ _.PVP =
 					i(169739),	-- Notorious Aspirant's Wand (H)
 					i(170082),	-- Notorious Aspirant's Warglaive (H)
 				}),
-				n(-43,  {	-- Cloth
+				filter(CLOTH, {
 					i(167514),	-- Notorious Aspirant's Silk Cord (A)
 					i(167517),	-- Notorious Aspirant's Silk Cuffs (A)
 					i(167500),	-- Notorious Aspirant's Silk Gloves (A)
@@ -848,7 +848,7 @@ _.PVP =
 					i(167458),	-- Notorious Aspirant's Silk Treads (H)
 					i(167464),	-- Notorious Aspirant's Silk Cord (H)
 				}),
-				n(-44,  {	-- Leather
+				filter(LEATHER, {
 					i(167516),	-- Notorious Aspirant's Leather Belt (A)
 					i(167520),	-- Notorious Aspirant's Leather Bindings (A)
 					i(167497),	-- Notorious Aspirant's Leather Boots (A)
@@ -866,7 +866,7 @@ _.PVP =
 					i(167470),	-- Notorious Aspirant's Leather Spaulders (H)
 					i(167465),	-- Notorious Aspirant's Leather Tunic (H)
 				}),
-				n(-45,  {	-- Mail
+				filter(MAIL, {
 					i(167519),	-- Notorious Aspirant's Chain Armbands (A)
 					i(167492),	-- Notorious Aspirant's Chain Armor (A)
 					i(167501),	-- Notorious Aspirant's Chain Gauntlets (A)
@@ -884,7 +884,7 @@ _.PVP =
 					i(167478),	-- Notorious Aspirant's Chain Spaulders (H)
 					i(167479),	-- Notorious Aspirant's Chain Waistguard (H)
 				}),
-				n(-46,  {	-- Plate
+				filter(PLATE, {
 					i(167518),	-- Notorious Aspirant's Plate Armguards (A)
 					i(167491),	-- Notorious Aspirant's Plate Chestpiece (A)
 					i(167499),	-- Notorious Aspirant's Plate Gauntlets (A)
@@ -976,7 +976,7 @@ _.PVP =
 					i(169719),	-- Notorious Gladiator's Wand (H)
 					i(169707),	-- Notorious Gladiator's Warglaive (H)
 				}),
-				n(-43,  {	-- Cloth
+				filter(CLOTH, {
 					i(167352),	-- Notorious Gladiator's Silk Amice (A)
 					i(167429),	-- Notorious Gladiator's Silk Armor (A)
 					i(167358),	-- Notorious Gladiator's Silk Bracers (A)
@@ -1028,7 +1028,7 @@ _.PVP =
 					i(167302),	-- Notorious Gladiator's Silk Trousers (H)
 					i(167409),	-- Notorious Gladiator's Silk Vestments (H)
 				}),
-				n(-44,  {	-- Leather
+				filter(LEATHER, {
 					i(167361),	-- Notorious Gladiator's Leather Armwraps (A)
 					i(167293),	-- Notorious Gladiator's Leather Belt (A)
 					i(167297),	-- Notorious Gladiator's Leather Bindings (A)
@@ -1080,7 +1080,7 @@ _.PVP =
 					i(167306),	-- Notorious Gladiator's Leather Vest (H)
 					i(167312),	-- Notorious Gladiator's Leather Waistband (H)
 				}),
-				n(-45,  {	-- Mail
+				filter(MAIL, {
 					i(167296),	-- Notorious Gladiator's Chain Armbands (A)
 					i(167269),	-- Notorious Gladiator's Chain Armor (A)
 					i(167333),	-- Notorious Gladiator's Chain Chestguard (A)
@@ -1132,7 +1132,7 @@ _.PVP =
 					i(167321),	-- Notorious Gladiator's Chain Wristguards (H)
 					i(167419),	-- Notorious Gladiator's Chainmail (H)
 				}),
-				n(-46,  {	-- Plate
+				filter(PLATE, {
 					i(167295),	-- Notorious Gladiator's Plate Armguards (A)
 					i(167414),	-- Notorious Gladiator's Plate Armor (A)
 					i(167422),	-- Notorious Gladiator's Plate Breastplate (A)
@@ -1236,7 +1236,7 @@ _.PVP =
 				un(REMOVED_FROM_GAME, i(171098)),	-- Warlord's Trophy Notorious Duelist
 				un(REMOVED_FROM_GAME, i(171099)),	-- Warlord's Trophy Notorious Elite
 			})),
-			filter(100, {	-- Mounts
+			filter(MOUNTS, {
 				i(163122, {	-- Vicious War Basilisk (A)
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1289,7 +1289,7 @@ _.PVP =
 					i(174018),	-- Corrupted Aspirant's War Staff (H)
 					i(172887),	-- Corrupted Aspirant's Warglaive (H)
 				}),
-				n(-43, {	-- Cloth
+				filter(CLOTH, {
 					i(172837),	-- Corrupted Aspirant's Silk Cord (A)
 					i(172840),	-- Corrupted Aspirant's Silk Cuffs (A)
 					i(172823),	-- Corrupted Aspirant's Silk Gloves (A)
@@ -1307,7 +1307,7 @@ _.PVP =
 					i(172780),	-- Corrupted Aspirant's Silk Robe (H)
 					i(172781),	-- Corrupted Aspirant's Silk Treads (H)
 				}),
-				n(-44, {	-- Leather
+				filter(LEATHER, {
 					i(172839),	-- Corrupted Aspirant's Leather Belt (A)
 					i(172843),	-- Corrupted Aspirant's Leather Bindings (A)
 					i(172820),	-- Corrupted Aspirant's Leather Boots (A)
@@ -1325,7 +1325,7 @@ _.PVP =
 					i(172793),	-- Corrupted Aspirant's Leather Spaulders (H)
 					i(172788),	-- Corrupted Aspirant's Leather Tunic (H)
 				}),
-				n(-45, {	-- Mail
+				filter(MAIL, {
 					i(172842),	-- Corrupted Aspirant's Chain Armbands (A)
 					i(172815),	-- Corrupted Aspirant's Chain Armor (A)
 					i(172824),	-- Corrupted Aspirant's Chain Gauntlets (A)
@@ -1343,7 +1343,7 @@ _.PVP =
 					i(172801),	-- Corrupted Aspirant's Chain Spaulders (H)
 					i(172802),	-- Corrupted Aspirant's Chain Waistguard (H)
 				}),
-				n(-46, {	-- Plate
+				filter(PLATE, {
 					i(172841),	-- Corrupted Aspirant's Plate Armguards (A)
 					i(172814),	-- Corrupted Aspirant's Plate Chestpiece (A)
 					i(172822),	-- Corrupted Aspirant's Plate Gauntlets (A)
@@ -1423,7 +1423,7 @@ _.PVP =
 					i(172766),	-- Corrupted Gladiator's War Staff (H)
 					i(172749),	-- Corrupted Gladiator's Warglaive (H)
 				}),
-				n(-43, {	-- Cloth
+				filter(CLOTH, {
 					i(172641),	-- Corrupted Gladiator's Silk Amice (A)
 					i(172647),	-- Corrupted Gladiator's Silk Bracers (A)
 					i(172710),	-- Corrupted Gladiator's Silk Chestwrap (A)
@@ -1469,7 +1469,7 @@ _.PVP =
 					i(172591),	-- Corrupted Gladiator's Silk Trousers (H)
 					i(172698),	-- Corrupted Gladiator's Silk Vestments (H)
 				}),
-				n(-44, {	-- Leather
+				filter(LEATHER, {
 					i(172650),	-- Corrupted Gladiator's Leather Armwraps (A)
 					i(172582),	-- Corrupted Gladiator's Leather Belt (A)
 					i(172586),	-- Corrupted Gladiator's Leather Bindings (A)
@@ -1515,7 +1515,7 @@ _.PVP =
 					i(172595),	-- Corrupted Gladiator's Leather Vest (H)
 					i(172601),	-- Corrupted Gladiator's Leather Waistband (H)
 				}),
-				n(-45, {	-- Mail
+				filter(MAIL, {
 					i(172585),	-- Corrupted Gladiator's Chain Armbands (A)
 					i(172558),	-- Corrupted Gladiator's Chain Armor (A)
 					i(172622),	-- Corrupted Gladiator's Chain Chestguard (A)
@@ -1561,7 +1561,7 @@ _.PVP =
 					i(172610),	-- Corrupted Gladiator's Chain Wristguards (H)
 					i(172708),	-- Corrupted Gladiator's Chainmail (H)
 				}),
-				n(-46, {	-- Plate
+				filter(PLATE, {
 					i(172584),	-- Corrupted Gladiator's Plate Armguards (A)
 					i(172703),	-- Corrupted Gladiator's Plate Armor (A)
 					i(172711),	-- Corrupted Gladiator's Plate Breastplate (A)
@@ -1640,7 +1640,7 @@ _.PVP =
 				un(REMOVED_FROM_GAME, i(172898)),	-- Warlord's Trophy Corrupted Duelist
 				un(REMOVED_FROM_GAME, i(172899)),	-- Warlord's Trophy Corrupted Elite
 			})),
-			filter(100, {	-- Mounts
+			filter(MOUNTS, {
 				i(173714, {	-- Vicious White Warsaber (A)
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1656,8 +1656,8 @@ _.PVP =
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(BFA_TIER, {
 		n(SEASON_DREAD, {
-			n(-163, {	-- Armor
-				n(-43, {	-- Cloth
+			n(ARMOR, {
+				filter(CLOTH, {
 					i(166907),	-- Dread Gladiator's Silk Robe
 					i(166908),	-- Dread Gladiator's Silk Treads
 					i(166909),	-- Dread Gladiator's Silk Gloves
@@ -1675,7 +1675,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(166944),	-- Dread Gladiator's Silk Cord
 					i(166945),	-- Dread Gladiator's Silk Cuffs
 				}),
-				n(-44, {	-- Leather
+				filter(LEATHER, {
 					i(166946),	-- Dread Gladiator's Leather Tunic
 					i(166947),	-- Dread Gladiator's Leather Boots
 					i(166948),	-- Dread Gladiator's Leather Gloves
@@ -1693,7 +1693,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(166921),	-- Dread Gladiator's Leather Belt
 					i(166922),	-- Dread Gladiator's Leather Bindings
 				}),
-				n(-45, {	-- Mail
+				filter(MAIL, {
 					i(166954),	-- Dread Gladiator's Chain Armor
 					i(166955),	-- Dread Gladiator's Chain Sabatons
 					i(166956),	-- Dread Gladiator's Chain Gauntlets
@@ -1711,7 +1711,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(166929),	-- Dread Gladiator's Chain Waistguard
 					i(166930),	-- Dread Gladiator's Chain Armbands
 				}),
-				n(-46, {	-- Plate
+				filter(PLATE, {
 					i(166906),	-- Dread Gladiator's Plate Pauldrons
 					i(166931),	-- Dread Gladiator's Plate Chestpiece
 					i(166932),	-- Dread Gladiator's Plate Warboots
@@ -1746,8 +1746,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(165036),	-- Sinister Gladiator's Halberd (A)
 				i(165201),	-- Sinister Aspirant's Halberd (A)
 			}),
-			n(-163, {	-- Armor
-				n(-43, {	-- Cloth
+			n(ARMOR, {
+				filter(CLOTH, {
 					i(166634),	-- Sinister Gladiator's Silk Armor (A)
 					i(166660),	-- Sinister Gladiator's Silk Shoulderguards (A)
 					i(166611),	-- Sinister Gladiator's Silk Cap (A)
@@ -1755,7 +1755,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(166654),	-- Sinister Gladiator's Silk Shoulderguards (H)
 					i(166606),	-- Sinister Gladiator's Silk Cap (H)
 				}),
-				n(-44, {	-- Leather
+				filter(LEATHER, {
 					i(166637),	-- Sinister Gladiator's Leather Harness (A)
 					i(166613),	-- Sinister Gladiator's Leather Headpiece (A)
 					i(166658),	-- Sinister Gladiator's Leather Shoulderpads (A)
@@ -1763,7 +1763,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(166607),	-- Sinister Gladiator's Leather Headpiece (H)
 					i(166655),	-- Sinister Gladiator's Leather Shoulderpads (H)
 				}),
-				n(-45, {	-- Mail
+				filter(MAIL, {
 					i(166661),	-- Sinister Gladiator's Chain Epaulets (A)
 					i(166612),	-- Sinister Gladiator's Chain Skullcover (A)
 					i(166636),	-- Sinister Gladiator's Chain Vest (A)
@@ -1771,7 +1771,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(166608),	-- Sinister Gladiator's Chain Skullcover (H
 					i(166656),	-- Sinister Gladiator's Chain Epaulets (H)
 				}),
-				n(-46, {	-- Plate
+				filter(PLATE, {
 					i(166635),	-- Sinister Gladiator's Plate Chestplate (A)
 					i(166659),	-- Sinister Gladiator's Shoulderplates (A)
 					i(166610),	-- Sinister Gladiator's Plate Skullguard (A)
@@ -1790,8 +1790,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 		n(SEASON_CORRUPTED, {
-			n(-163, {	-- Armor
-				n(-43, {	-- Cloth
+			n(ARMOR, {
+				filter(CLOTH, {
 					i(172718),	-- Corrupted Gladiator's Silk Armor (A)
 					i(172695),	-- Corrupted Gladiator's Silk Cap (A)
 					i(172744),	-- Corrupted Gladiator's Silk Shoulderguards (A)
@@ -1799,7 +1799,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(172690),	-- Corrupted Gladiator's Silk Cap (H)
 					i(172738),	-- Corrupted Gladiator's Silk Shoulderguards (H)
 				}),
-				n(-44, {	-- Leather
+				filter(LEATHER, {
 					i(172721),	-- Corrupted Gladiator's Leather Harness (A)
 					i(172697),	-- Corrupted Gladiator's Leather Headpiece (A)
 					i(172742),	-- Corrupted Gladiator's Leather Shoulderpads (A)
@@ -1807,7 +1807,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(172691),	-- Corrupted Gladiator's Leather Headpiece (H)
 					i(172739),	-- Corrupted Gladiator's Leather Shoulderpads (H)
 				}),
-				n(-45, {	-- Mail
+				filter(MAIL, {
 					i(172745),	-- Corrupted Gladiator's Chain Epaulets (A)
 					i(172696),	-- Corrupted Gladiator's Chain Skullcover (A)
 					i(172720),	-- Corrupted Gladiator's Chain Vest (A)
@@ -1815,7 +1815,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(172692),	-- Corrupted Gladiator's Chain Skullcover (H)
 					i(172740),	-- Corrupted Gladiator's Chain Epaulets (H)
 				}),
-				n(-46, {	-- Plate
+				filter(PLATE, {
 					i(172719),	-- Corrupted Gladiator's Plate Chestplate (A)
 					i(172694),	-- Corrupted Gladiator's Plate Skullguard (A)
 					i(172743),	-- Corrupted Gladiator's Shoulderplates (A)

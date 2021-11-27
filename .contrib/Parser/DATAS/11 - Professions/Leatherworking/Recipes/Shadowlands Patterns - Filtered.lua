@@ -1,5 +1,5 @@
 profession(LEATHERWORKING, {
-	filter(200, {	-- Recipes
+	filter(RECIPES, {
 		category(1334, {	-- Shadowlands Patterns
 			category(1531, bubbleDown({ ["u"] = 15 }, {	-- Quest Recipes
 				-- All Quest Recipes marked unobtainable (training) because they are only learned temporarily

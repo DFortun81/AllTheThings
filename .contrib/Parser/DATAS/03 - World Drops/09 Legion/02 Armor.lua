@@ -5,7 +5,7 @@
 _.WorldDrops =
 {
 	tier(LEGION_TIER, {
-		n(-318, {	-- Armor
+		n(ARMOR, {
 			n(HEAD, {
 				i(141566),	-- Serrinne's Maleficent Habit
 				i(141575),	-- Gorrog's Serene Gaze

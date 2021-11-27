@@ -29,7 +29,7 @@ _.Zones =
 				n(PVP, {
 					["lvl"] = 120,	-- Don't become available until this level.
 					["g"] = {
-						n(-852, {	-- Azerite Essences
+						n(AZERITE_ESSENCES, {
 							i(169902, {	-- Finger-Bone Trophy of Battle (Rank 1)
 								["description"] = "Requires earning 500 Conquest and opening your weekly chest.\n",
 								["g"] = {
@@ -1984,8 +1984,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(59225),	-- [DNT] Azerite Reward Test Quest - BJI
 	}),
 	tier(BFA_TIER, {
-		n(-163, {	-- Armor
-			n(-43, {	-- Cloth
+		n(ARMOR, {
+			filter(CLOTH, {
 				i(158657),	-- Zanchuli Shoes
 				i(158663),	-- Zanchuli Grasps
 				i(158675),	-- Zanchuli Bracelets
@@ -1994,14 +1994,14 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(161246),	-- Zanchuli Woolies
 				i(161248),	-- Zanchuli Pantaloons
 			}),
-			n(-44, {	-- Leather
+			filter(LEATHER, {
 				i(158655),	-- Jambani Boots
 				i(158665),	-- Jambani Grasps
 				i(161243),	-- Jambani Cincture
 				i(161249),	-- Jambani Britches
 				i(161250),	-- Jambani Leggings
 			}),
-			n(-45, {	-- Mail
+			filter(MAIL, {
 				i(158656),	-- Torcalin Striders
 				i(158662),	-- Torcalin Grasps
 				i(158673),	-- Torcalin Armguards
@@ -2010,7 +2010,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(161251),	-- Torcalin Leggings
 				i(161252),	-- Torcalin Pants
 			}),
-			n(-46, {	-- Plate
+			filter(PLATE, {
 				i(158658),	-- Rastari Greatboots
 				i(158664),	-- Rastari Grips
 				i(158674),	-- Rastari Wristwraps

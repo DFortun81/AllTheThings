@@ -12,7 +12,7 @@ _.PVP =
 					i(175851),	-- Sinful Aspirant's Cloak
 					i(178265),	-- Sinful Aspirant's Drape
 				}),
-				n(-43,  {	-- Cloth
+				filter(CLOTH, {
 					i(175876),	-- Sinful Aspirant's Silk Cord
 					i(175862),	-- Sinful Aspirant's Silk Gloves
 					i(175864),	-- Sinful Aspirant's Silk Hood
@@ -26,7 +26,7 @@ _.PVP =
 					i(175879),	-- Sinful Aspirant's Ring
 					i(178329),	-- Sinful Aspirant's Signet
 				}),
-				n(-44,  {	-- Leather
+				filter(LEATHER, {
 					i(175878),	-- Sinful Aspirant's Leather Belt
 					i(175859),	-- Sinful Aspirant's Leather Boots
 					i(175870),	-- Sinful Aspirant's Leather Breeches
@@ -36,7 +36,7 @@ _.PVP =
 					i(175855),	-- Sinful Aspirant's Leather Vest
 					i(175883),	-- Sinful Aspirant's Leather Wristwraps
 				}),
-				n(-45,  {	-- Mail
+				filter(MAIL, {
 					i(175877),	-- Sinful Aspirant's Chain Belt
 					i(175863),	-- Sinful Aspirant's Chain Gauntlets
 					i(175865),	-- Sinful Aspirant's Chain Helm
@@ -51,7 +51,7 @@ _.PVP =
 					i(175885),	-- Sinful Aspirant's Necklace
 					i(178335),	-- Sinful Aspirant's Pendant
 				}),
-				n(-46,  {	-- Plate
+				filter(PLATE, {
 					i(175853),	-- Sinful Aspirant's Plate Chestplate
 					i(175881),	-- Sinful Aspirant's Plate Cuffs
 					i(175861),	-- Sinful Aspirant's Plate Gauntlets
@@ -98,7 +98,7 @@ _.PVP =
 					i(184311),	-- Sinful Gladiator's Greatcloak
 					i(178414),	-- Sinful Gladiator's Shawl
 				}),
-				n(-43,  {	-- Cloth
+				filter(CLOTH, {
 					i(178375),	-- Sinful Gladiator's Silk Amice
 					i(178382),	-- Sinful Gladiator's Silk Armbands
 					i(178378),	-- Sinful Gladiator's Silk Belt
@@ -121,7 +121,7 @@ _.PVP =
 					i(175916),	-- Sinful Gladiator's Ring
 					i(178442),	-- Sinful Gladiator's Signet
 				}),
-				n(-44,  {	-- Leather
+				filter(LEATHER, {
 					i(175915),	-- Sinful Gladiator's Leather Belt
 					i(175896),	-- Sinful Gladiator's Leather Boots
 					i(175907),	-- Sinful Gladiator's Leather Breeches
@@ -139,7 +139,7 @@ _.PVP =
 					i(178385),	-- Sinful Gladiator's Leather Wristguards
 					i(175920),	-- Sinful Gladiator's Leather Wristwraps
 				}),
-				n(-45,  {	-- Mail
+				filter(MAIL, {
 					i(175914),	-- Sinful Gladiator's Chain Belt
 					i(178360),	-- Sinful Gladiator's Chain Boots
 					i(178384),	-- Sinful Gladiator's Chain Bracers
@@ -162,7 +162,7 @@ _.PVP =
 					i(175922),	-- Sinful Gladiator's Necklace
 					i(178387),	-- Sinful Gladiator's Pendant
 				}),
-				n(-46,  {	-- Plate
+				filter(PLATE, {
 					i(175890),	-- Sinful Gladiator's Plate Chestguard
 					i(178355),	-- Sinful Gladiator's Plate Chestplate
 					i(175898),	-- Sinful Gladiator's Plate Gauntlets
@@ -324,7 +324,7 @@ _.PVP =
 					i(184311),	-- Sinful Gladiator's Greatcloak
 					i(178414),	-- Sinful Gladiator's Shawl
 				}),
-				n(-43,  {	-- Cloth
+				filter(CLOTH, {
 					i(178375),	-- Sinful Gladiator's Silk Amice
 					i(178382),	-- Sinful Gladiator's Silk Armbands
 					i(178378),	-- Sinful Gladiator's Silk Belt
@@ -347,7 +347,7 @@ _.PVP =
 					i(175916),	-- Sinful Gladiator's Ring
 					i(178442),	-- Sinful Gladiator's Signet
 				}),
-				n(-44,  {	-- Leather
+				filter(LEATHER, {
 					i(175915),	-- Sinful Gladiator's Leather Belt
 					i(175896),	-- Sinful Gladiator's Leather Boots
 					i(175907),	-- Sinful Gladiator's Leather Breeches
@@ -365,7 +365,7 @@ _.PVP =
 					i(178385),	-- Sinful Gladiator's Leather Wristguards
 					i(175920),	-- Sinful Gladiator's Leather Wristwraps
 				}),
-				n(-45,  {	-- Mail
+				filter(MAIL, {
 					i(175914),	-- Sinful Gladiator's Chain Belt
 					i(178360),	-- Sinful Gladiator's Chain Boots
 					i(178384),	-- Sinful Gladiator's Chain Bracers
@@ -388,7 +388,7 @@ _.PVP =
 					i(175922),	-- Sinful Gladiator's Necklace
 					i(178387),	-- Sinful Gladiator's Pendant
 				}),
-				n(-46,  {	-- Plate
+				filter(PLATE, {
 					i(175890),	-- Sinful Gladiator's Plate Chestguard
 					i(178355),	-- Sinful Gladiator's Plate Chestplate
 					i(175898),	-- Sinful Gladiator's Plate Gauntlets
@@ -427,7 +427,7 @@ _.PVP =
 			i(164583),	-- Battleborn Sigil Dread Elite
 			i(164587),	-- Warlord's Trophy Dread Elite
 			--]]
-			filter(100,  {	-- Mounts
+			filter(MOUNTS, {
 				i(184014, {	-- Vicious War Spider (A)
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -443,7 +443,7 @@ _.PVP =
 					i(185128),	-- Unchained Aspirant's Cloak
 					i(185205),	-- Unchained Aspirant's Drape
 				}),
-				n(-43,  {	-- Cloth
+				filter(CLOTH, {
 					i(185230),	-- Unchained Aspirant's Silk Belt
 					i(185234),	-- Unchained Aspirant's Silk Bindings
 					i(185153),	-- Unchained Aspirant's Silk Cord
@@ -466,7 +466,7 @@ _.PVP =
 					i(185156),	-- Unchained Aspirant's Ring
 					i(185241),	-- Unchained Aspirant's Signet
 				}),
-				n(-44,  {	-- Leather
+				filter(LEATHER, {
 					i(185237),	-- Unchained Aspirant's Leather Armguards
 					i(185155),	-- Unchained Aspirant's Leather Belt
 					i(185136),	-- Unchained Aspirant's Leather Boots
@@ -484,7 +484,7 @@ _.PVP =
 					i(185132),	-- Unchained Aspirant's Leather Vest
 					i(185160),	-- Unchained Aspirant's Leather Wristwraps
 				}),
-				n(-45,  {	-- Mail
+				filter(MAIL, {
 					i(185154),	-- Unchained Aspirant's Chain Belt
 					i(185236),	-- Unchained Aspirant's Chain Bracer
 					i(185231),	-- Unchained Aspirant's Chain Clasp
@@ -507,7 +507,7 @@ _.PVP =
 					i(185162),	-- Unchained Aspirant's Necklace
 					i(185243),	-- Unchained Aspirant's Pendant
 				}),
-				n(-46,  {	-- Plate
+				filter(PLATE, {
 					i(185235),	-- Unchained Aspirant's Plate Armguards
 					i(185207),	-- Unchained Aspirant's Plate Armor
 					i(185130),	-- Unchained Aspirant's Plate Chestplate
@@ -561,7 +561,7 @@ _.PVP =
 					i(185313),	-- Unchained Gladiator's Greatcloak
 					i(185280),	-- Unchained Gladiator's Shawl
 				}),
-				n(-43,  {	-- Cloth
+				filter(CLOTH, {
 					i(185267),	-- Unchained Gladiator's Silk Amice
 					i(185274),	-- Unchained Gladiator's Silk Armbands
 					i(185270),	-- Unchained Gladiator's Silk Belt
@@ -584,7 +584,7 @@ _.PVP =
 					i(185192),	-- Unchained Gladiator's Ring
 					i(185281),	-- Unchained Gladiator's Signet
 				}),
-				n(-44,  {	-- Leather
+				filter(LEATHER, {
 					i(185191),	-- Unchained Gladiator's Leather Belt
 					i(185172),	-- Unchained Gladiator's Leather Boots
 					i(185183),	-- Unchained Gladiator's Leather Breeches
@@ -602,7 +602,7 @@ _.PVP =
 					i(185277),	-- Unchained Gladiator's Leather Wristguards
 					i(185196),	-- Unchained Gladiator's Leather Wristwraps
 				}),
-				n(-45,  {	-- Mail
+				filter(MAIL, {
 					i(185190),	-- Unchained Gladiator's Chain Belt
 					i(185252),	-- Unchained Gladiator's Chain Boots
 					i(185276),	-- Unchained Gladiator's Chain Bracers
@@ -625,7 +625,7 @@ _.PVP =
 					i(185198),	-- Unchained Gladiator's Necklace
 					i(185279),	-- Unchained Gladiator's Pendant
 				}),
-				n(-46,  {	-- Plate
+				filter(PLATE, {
 					i(185166),	-- Unchained Gladiator's Plate Chestguard
 					i(185247),	-- Unchained Gladiator's Plate Chestplate
 					i(185174),	-- Unchained Gladiator's Plate Gauntlets
@@ -702,7 +702,7 @@ _.PVP =
 					i(185313),	-- Unchained Gladiator's Greatcloak
 					i(185280),	-- Unchained Gladiator's Shawl
 				}),
-				n(-43,  {	-- Cloth
+				filter(CLOTH, {
 					i(185267),	-- Unchained Gladiator's Silk Amice
 					i(185274),	-- Unchained Gladiator's Silk Armbands
 					i(185270),	-- Unchained Gladiator's Silk Belt
@@ -725,7 +725,7 @@ _.PVP =
 					i(185192),	-- Unchained Gladiator's Ring
 					i(185281),	-- Unchained Gladiator's Signet
 				}),
-				n(-44,  {	-- Leather
+				filter(LEATHER, {
 					i(185191),	-- Unchained Gladiator's Leather Belt
 					i(185172),	-- Unchained Gladiator's Leather Boots
 					i(185183),	-- Unchained Gladiator's Leather Breeches
@@ -743,7 +743,7 @@ _.PVP =
 					i(185277),	-- Unchained Gladiator's Leather Wristguards
 					i(185196),	-- Unchained Gladiator's Leather Wristwraps
 				}),
-				n(-45,  {	-- Mail
+				filter(MAIL, {
 					i(185190),	-- Unchained Gladiator's Chain Belt
 					i(185252),	-- Unchained Gladiator's Chain Boots
 					i(185276),	-- Unchained Gladiator's Chain Bracers
@@ -766,7 +766,7 @@ _.PVP =
 					i(185198),	-- Unchained Gladiator's Necklace
 					i(185279),	-- Unchained Gladiator's Pendant
 				}),
-				n(-46,  {	-- Plate
+				filter(PLATE, {
 					i(185166),	-- Unchained Gladiator's Plate Chestguard
 					i(185247),	-- Unchained Gladiator's Plate Chestplate
 					i(185174),	-- Unchained Gladiator's Plate Gauntlets
@@ -840,7 +840,7 @@ _.PVP =
 					i(185315),	-- Unchained Gladiator's Xiphos
 				}),
 			})),
-			filter(100, {	-- Mounts
+			filter(MOUNTS, {
 				i(186178, {	-- Vicious War Gorm (A)
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1269,8 +1269,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(176004),	-- Sinful Gladiator's Sword (existed in beta; doesn't appear to exist in live)
 				i(176009),	-- Sinful Gladiator's Warglaive (existed in beta; doesn't appear to exist in live)
 			}),
-			n(-163, {	-- Armor
-				n(-43, {	-- Cloth
+			n(ARMOR, {
+				filter(CLOTH, {
 					i(178266),	-- Sinful Aspirant's Silk Gown
 					i(178271),	-- Sinful Aspirant's Silk Footwraps
 					i(178276),	-- Sinful Aspirant's Silk Handwraps
@@ -1280,7 +1280,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(178290),	-- Sinful Aspirant's Silk Belt
 					i(178294),	-- Sinful Aspirant's Silk Bindings
 				}),
-				n(-44, {	-- Leather
+				filter(LEATHER, {
 					i(178269),	-- Sinful Aspirant's Leather Tunic
 					i(178273),	-- Sinful Aspirant's Leather Footpads
 					i(178274),	-- Sinful Aspirant's Leather Grips
@@ -1297,7 +1297,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(178328),	-- Sinful Aspirant's Leather Loop
 					i(178333),	-- Sinful Aspirant's Leather Cuffs
 				}),
-				n(-45, {	-- Mail
+				filter(MAIL, {
 					i(178268),	-- Sinful Aspirant's Chain Tunic
 					i(178272),	-- Sinful Aspirant's Chain Stompers
 					i(178277),	-- Sinful Aspirant's Chain Handguards
@@ -1314,7 +1314,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(178327),	-- Sinful Aspirant's Chain Buckle
 					i(178332),	-- Sinful Aspirant's Chain Coils
 				}),
-				n(-46, {	-- Plate
+				filter(PLATE, {
 					i(178264),	-- Sinful Aspirant's Plate Headguard
 					i(178267),	-- Sinful Aspirant's Plate Armor
 					i(178270),	-- Sinful Aspirant's Plate Stompers
