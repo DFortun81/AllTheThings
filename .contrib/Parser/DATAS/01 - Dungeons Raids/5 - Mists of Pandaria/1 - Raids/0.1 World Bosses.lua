@@ -19,7 +19,7 @@ _.Instances = { tier(MOP_TIER, {
 					517,	-- Lightning Vein Mine
 				},
 				["lvl"] = 85,	-- Confirmed by Lucetia November 5, 2018
-				["cr"] = 69099,	-- Nalak, the Storm Lord
+				["creatureID"] = 69099,	-- Nalak, the Storm Lord
 				["g"] = {
 					ach(8028),	-- Praise the Sun!
 					-- Mounts, Caches, and Quest Items!
@@ -337,7 +337,7 @@ _.Instances = { tier(MOP_TIER, {
 				["isRaid"] = true,
 				["coord"] = { 49.9, 56.8, ISLE_OF_GIANTS },
 				["lvl"] = 85,	-- Confirmed by Lucetia November 5, 2018
-				["cr"] = 69161,	-- Oondasta
+				["creatureID"] = 69161,	-- Oondasta
 				["g"] = {
 					ach(8123),	-- Millions of Years of Evolution vs. My Fist
 					i(94228),	-- Reins of the Cobalt Primordial Direhorn
@@ -420,7 +420,7 @@ _.Instances = { tier(MOP_TIER, {
 					555,	-- Cavern of Lost Spirits
 				},
 				["lvl"] = 80,	-- Confirmed by Lucetia November 5, 2018
-				["cr"] = 72057,	-- Ordos, Fire-God of the Yaungol
+				["creatureID"] = 72057,	-- Ordos, Fire-God of the Yaungol
 				["u"] = 38,	-- Ordos - Legendary Cloak
 				["g"] = {
 					un(38, ach(8533)),	-- Ordos
@@ -521,7 +521,7 @@ _.Instances = { tier(MOP_TIER, {
 					377,	-- Cavern of Endless Echoes
 				},
 				["lvl"] = 85,	-- Confirmed by Lucetia November 5, 2018
-				["cr"] = 62346,	-- Galleon
+				["creatureID"] = 62346,	-- Galleon
 				["g"] = {
 					ach(6517),	-- Extinction Event
 					i(89783),	-- Son of Galleon's Saddle
@@ -654,7 +654,7 @@ _.Instances = { tier(MOP_TIER, {
 					434,	-- The Ancient Passage
 				},
 				["lvl"] = 85,	-- Confirmed by Lucetia November 5, 2018
-				["cr"] = 60491,	-- Sha of Anger
+				["creatureID"] = 60491,	-- Sha of Anger
 				["g"] = {
 					ach(6480),	-- Settle Down, Bro
 					crit(5, {	-- Sha of Anger slain

@@ -117,7 +117,7 @@ _.Instances = { tier(BFA_TIER, {
 					},
 					["g"] = {
 						e(2352, {	-- Abyssal Commander Sivara
-							["cr"] = 151881,
+							["creatureID"] = 151881,
 							["g"] = {
 								crit(1, {	-- Abyssal Commander Sivara
 									["achievementID"] = 13718,	-- The Grand Reception
@@ -143,7 +143,7 @@ _.Instances = { tier(BFA_TIER, {
 							},
 						}),
 						e(2347, {	-- Blackwater Behemoth
-							["cr"] = 150653,
+							["creatureID"] = 150653,
 							["g"] = {
 								crit(2, {	-- Blackwater Behemoth
 									["achievementID"] = 13718,	-- The Grand Reception
@@ -167,7 +167,7 @@ _.Instances = { tier(BFA_TIER, {
 							},
 						}),
 						e(2353, {	-- Radiance of Azshara
-							["cr"] = 152364,
+							["creatureID"] = 152364,
 							["g"] = {
 								crit(3, {	-- Radiance of Azshara
 									["achievementID"] = 13718,	-- The Grand Reception
@@ -200,7 +200,7 @@ _.Instances = { tier(BFA_TIER, {
 					},
 					["g"] = {
 						e(2354, {	-- Lady Ashvane
-							["cr"] = 152236,
+							["creatureID"] = 152236,
 							["g"] = {
 								crit(1, {	-- Lady Ashvane
 									["achievementID"] = 13719,	-- Depths of the Devoted
@@ -222,7 +222,7 @@ _.Instances = { tier(BFA_TIER, {
 							},
 						}),
 						e(2351, {	-- Orgozoa
-							["cr"] = 152128,
+							["creatureID"] = 152128,
 							["g"] = {
 								crit(2, {	-- Orgozoa
 									["achievementID"] = 13719,	-- Depths of the Devoted
@@ -278,7 +278,7 @@ _.Instances = { tier(BFA_TIER, {
 					},
 					["g"] = {
 						e(2349, {	-- Za'qul, Harbinger of Ny'alotha
-							["cr"] = 150859,
+							["creatureID"] = 150859,
 							["g"] = {
 								crit(1, {	-- Za'qul
 									["achievementID"] = 13725,	-- The Circle of Stars
@@ -299,7 +299,7 @@ _.Instances = { tier(BFA_TIER, {
 							},
 						}),
 						e(2361, {	-- Queen Azshara
-							["cr"] = 152910,
+							["creatureID"] = 152910,
 							["g"] = {
 								crit(2, {	-- Queen Azshara
 									["achievementID"] = 13725,	-- The Circle of Stars
@@ -341,7 +341,7 @@ _.Instances = { tier(BFA_TIER, {
 					i(167171),	-- Azshari Bloatray
 				}),
 				e(2352, {	-- Abyssal Commander Sivara
-					["cr"] = 151881,	-- Abyssal Commander Sivara
+					["creatureID"] = 151881,	-- Abyssal Commander Sivara
 					["g"] = {
 						crit(1, {	-- Abyssal Commander Sivara
 							["achievementID"] = 13718,	-- The Grand Reception
@@ -368,7 +368,7 @@ _.Instances = { tier(BFA_TIER, {
 					},
 				}),
 				e(2347, {	-- Blackwater Behemoth
-					["cr"] = 150653,
+					["creatureID"] = 150653,
 					["g"] = {
 						crit(2, {	-- Blackwater Behemoth
 							["achievementID"] = 13718,	-- The Grand Reception
@@ -393,7 +393,7 @@ _.Instances = { tier(BFA_TIER, {
 					},
 				}),
 				e(2353, {	-- Radiance of Azshara
-					["cr"] = 152364,
+					["creatureID"] = 152364,
 					["g"] = {
 						crit(3, {	-- Radiance of Azshara
 							["achievementID"] = 13718,	-- The Grand Reception
@@ -419,7 +419,7 @@ _.Instances = { tier(BFA_TIER, {
 					},
 				}),
 				e(2354, {	-- Lady Ashvane
-					["cr"] = 152236,
+					["creatureID"] = 152236,
 					["g"] = {
 						crit(1, {	-- Lady Ashvane
 							["achievementID"] = 13719,	-- Depths of the Devoted
@@ -442,7 +442,7 @@ _.Instances = { tier(BFA_TIER, {
 					},
 				}),
 				e(2351, {	-- Orgozoa
-					["cr"] = 152128,
+					["creatureID"] = 152128,
 					["g"] = {
 						crit(2, {	-- Orgozoa
 							["achievementID"] = 13719,	-- Depths of the Devoted
@@ -492,7 +492,7 @@ _.Instances = { tier(BFA_TIER, {
 					},
 				}),
 				e(2349, {	-- Za'qul, Harbinger of Ny'alotha
-					["cr"] = 150859,
+					["creatureID"] = 150859,
 					["g"] = {
 						crit(1, {	-- Za'qul, Harbinger of Ny'alotha
 							["achievementID"] = 13725,	-- The Circle of Stars
@@ -514,7 +514,7 @@ _.Instances = { tier(BFA_TIER, {
 					},
 				}),
 				e(2361, {	-- Queen Azshara
-					["cr"] = 152910,
+					["creatureID"] = 152910,
 					["g"] = {
 						crit(2, {	-- Queen Azshara
 							["achievementID"] = 13725,	-- The Circle of Stars
@@ -555,7 +555,7 @@ _.Instances = { tier(BFA_TIER, {
 					i(167171),	-- Azshari Bloatray
 				}),
 				e(2352, {	-- Abyssal Commander Sivara
-					["cr"] = 151881,
+					["creatureID"] = 151881,
 					["g"] = {
 						crit(1, {	-- Abyssal Commander Sivara
 							["achievementID"] = 13718,	-- The Grand Reception
@@ -582,7 +582,7 @@ _.Instances = { tier(BFA_TIER, {
 					},
 				}),
 				e(2347, {	-- Blackwater Behemoth
-					["cr"] = 150653,
+					["creatureID"] = 150653,
 					["g"] = {
 						crit(2, {	-- Blackwater Behemoth
 							["achievementID"] = 13718,	-- The Grand Reception
@@ -607,7 +607,7 @@ _.Instances = { tier(BFA_TIER, {
 					},
 				}),
 				e(2353, {	-- Radiance of Azshara
-					["cr"] = 152364,
+					["creatureID"] = 152364,
 					["g"] = {
 						crit(3, {	-- Radiance of Azshara
 							["achievementID"] = 13718,	-- The Grand Reception
@@ -633,7 +633,7 @@ _.Instances = { tier(BFA_TIER, {
 					},
 				}),
 				e(2354, {	-- Lady Ashvane
-					["cr"] = 152236,
+					["creatureID"] = 152236,
 					["g"] = {
 						crit(1, {	-- Lady Ashvane
 							["achievementID"] = 13719,	-- Depths of the Devoted
@@ -656,7 +656,7 @@ _.Instances = { tier(BFA_TIER, {
 					},
 				}),
 				e(2351, {	-- Orgozoa
-					["cr"] = 152128,
+					["creatureID"] = 152128,
 					["g"] = {
 						crit(2, {	-- Orgozoa
 							["achievementID"] = 13719,	-- Depths of the Devoted
@@ -706,7 +706,7 @@ _.Instances = { tier(BFA_TIER, {
 					},
 				}),
 				e(2349, {	-- Za'qul, Harbinger of Ny'alotha
-					["cr"] = 150859,
+					["creatureID"] = 150859,
 					["g"] = {
 						crit(1, {	-- Za'qul, Harbinger of Ny'alotha
 							["achievementID"] = 13725,	-- The Circle of Stars
@@ -729,7 +729,7 @@ _.Instances = { tier(BFA_TIER, {
 					},
 				}),
 				e(2361, {	-- Queen Azshara
-					["cr"] = 152910,
+					["creatureID"] = 152910,
 					["g"] = {
 						un(REMOVED_FROM_GAME, ach(13784)),	-- Ahead of the Curve: Queen Azshara
 						crit(2, {	-- Queen Azshara
@@ -771,7 +771,7 @@ _.Instances = { tier(BFA_TIER, {
 					i(167171),	-- Azshari Bloatray
 				}),
 				e(2352, {	-- Abyssal Commander Sivara
-					["cr"] = 151881,
+					["creatureID"] = 151881,
 					["g"] = {
 						ach(13726),	-- Mythic: Abyssal Commander Sivara
 						crit(1, {	-- Abyssal Commander Sivara
@@ -799,7 +799,7 @@ _.Instances = { tier(BFA_TIER, {
 					},
 				}),
 				e(2347, {	-- Blackwater Behemoth
-					["cr"] = 150653,
+					["creatureID"] = 150653,
 					["g"] = {
 						ach(13728),	-- Mythic: Blackwater Behemoth
 						crit(2, {	-- Blackwater Behemoth
@@ -825,7 +825,7 @@ _.Instances = { tier(BFA_TIER, {
 					},
 				}),
 				e(2353, {	-- Radiance of Azshara
-					["cr"] = 152364,
+					["creatureID"] = 152364,
 					["g"] = {
 						ach(13727),	-- Mythic: Radiance of Azshara
 						crit(3, {	-- Radiance of Azshara
@@ -852,7 +852,7 @@ _.Instances = { tier(BFA_TIER, {
 					},
 				}),
 				e(2354, {	-- Lady Ashvane
-					["cr"] = 152236,
+					["creatureID"] = 152236,
 					["g"] = {
 						ach(13729),	-- Mythic: Lady Ashvane
 						crit(1, {	-- Lady Ashvane
@@ -876,7 +876,7 @@ _.Instances = { tier(BFA_TIER, {
 					},
 				}),
 				e(2351, {	-- Orgozoa
-					["cr"] = 152128,
+					["creatureID"] = 152128,
 					["g"] = {
 						ach(13730),	-- Mythic: Orgozoa
 						crit(2, {	-- Orgozoa
@@ -928,7 +928,7 @@ _.Instances = { tier(BFA_TIER, {
 					},
 				}),
 				e(2349, {	-- Za'qul, Harbinger of Ny'alotha
-					["cr"] = 150859,
+					["creatureID"] = 150859,
 					["g"] = {
 						ach(13732),	-- Mythic: Za'qul
 						crit(1, {	-- Za'qul, Harbinger of Ny'alotha
@@ -952,7 +952,7 @@ _.Instances = { tier(BFA_TIER, {
 					},
 				}),
 				e(2361, {	-- Queen Azshara
-					["cr"] = 152910,
+					["creatureID"] = 152910,
 					["g"] = {
 						ach(13733, {	-- Mythic: Queen Azshara
 							title(404),	-- the Eternal

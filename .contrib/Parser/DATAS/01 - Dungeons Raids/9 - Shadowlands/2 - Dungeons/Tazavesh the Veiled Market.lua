@@ -138,7 +138,7 @@ _.Instances = { tier(SL_TIER, {
 				["difficulties"] = { 8, 23 },
 				["g"] = {
 					e(2437, {	-- Zo'phex the Sentinel
-						["cr"] = 175616,	-- Zo'phex
+						["creatureID"] = 175616,	-- Zo'phex
 						["g"] = {
 							ach(15109, {	-- Will it Blend?
 								["cost"] = {
@@ -187,7 +187,7 @@ _.Instances = { tier(SL_TIER, {
 						},
 					}),
 					e(2436, {	-- Mailroom Mayhem
-						["cr"] = 175646,	-- P.O.S.T Master
+						["creatureID"] = 175646,	-- P.O.S.T Master
 						["g"] = {
 							ach(15106),	-- Quality Control
 							i(182584),	-- Cheetah's Vigor

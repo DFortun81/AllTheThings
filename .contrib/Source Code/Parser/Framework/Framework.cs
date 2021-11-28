@@ -371,6 +371,16 @@ namespace ATT
                 data["modID"] = modID;
             }
 
+            // Clean up Encounters which only have a single creatureID assigned via 'crs'
+            if (data.ContainsKey("encounterID") && !data.ContainsKey("creatureID") && data.TryGetValue("crs", out List<object> crs))
+            {
+                if (crs.Count == 1)
+                {
+                    data["creatureID"] = Convert.ToInt64(crs[0]);
+                    data.Remove("crs");
+                }
+            }
+
             if (data.TryGetValue("categoryID", out long categoryID)) ProcessCategoryObject(data, categoryID);
             if (data.TryGetValue("creatureID", out long creatureID))
             {

@@ -136,7 +136,7 @@ _.Instances = { tier(LEGION_TIER, {
 					["cr"] = 111246,	-- Archmage Timear
 					["g"] = {
 						e(1862, {	-- Goroth
-							["cr"] = 115844,	-- Goroth
+							["creatureID"] = 115844,	-- Goroth
 							["g"] = {
 								i(147069),	-- Shoulderplates of Crackling Flame
 								i(146984),	-- Cloak of Stifling Brimstone
@@ -157,7 +157,7 @@ _.Instances = { tier(LEGION_TIER, {
 							},
 						}),
 						e(1856, {	-- Harjatan
-							["cr"] = 116407,	-- Harjatan
+							["creatureID"] = 116407,	-- Harjatan
 							["g"] = {
 								i(147037),	-- Dripping Arcfin Shoulderpads
 								i(147043),	-- Hauberk of Frozen Mist
@@ -187,7 +187,7 @@ _.Instances = { tier(LEGION_TIER, {
 							},
 						}),
 						e(1861, {	-- Mistress Sassz'ine
-							["cr"] = 115767,	-- Mistress Sassz'ine
+							["creatureID"] = 115767,	-- Mistress Sassz'ine
 							["g"] = {
 								i(143643),	-- Abyss Worm
 								i(147049),	-- Azure Squallshaper's Helm
@@ -321,7 +321,7 @@ _.Instances = { tier(LEGION_TIER, {
 					["cr"] = 111246,	-- Archmage Timear
 					["g"] = {
 						e(1897, {	-- Maiden of Vigilance
-							["cr"] = 118289,	-- Maiden of Vigilance
+							["creatureID"] = 118289,	-- Maiden of Vigilance
 							["g"] = {
 								i(151524),	-- Hammer of Vigilance
 								i(147050),	-- Crown of Discarded Hope
@@ -388,7 +388,7 @@ _.Instances = { tier(LEGION_TIER, {
 					["cr"] = 111246,	-- Archmage Timear
 					["g"] = {
 						e(1898, {	-- Kil'jaeden
-							["cr"] = 117269,	-- Kil'jaeden
+							["creatureID"] = 117269,	-- Kil'jaeden
 							["g"] = {
 								i(151539),	-- Technique: Glyph of Ember Shards
 								i(147034),	-- Shadow-Scarred Headcover
@@ -478,7 +478,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(101426),	-- Micronax Controller
 				}),
 				e(1862, {	-- Goroth
-					["cr"] = 115844,	-- Goroth
+					["creatureID"] = 115844,	-- Goroth
 					["g"] = {
 						ach(11724),	-- Fel Turkey
 						i(147069),	-- Shoulderplates of Crackling Flame
@@ -535,7 +535,7 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				}),
 				e(1856, {	-- Harjatan
-					["cr"] = 116407,	-- Harjatan
+					["creatureID"] = 116407,	-- Harjatan
 					["g"] = {
 						ach(11699),	-- Grand Fin-ale
 						i(147037),	-- Dripping Arcfin Shoulderpads
@@ -593,7 +593,7 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				}),
 				e(1861, {	-- Mistress Sassz'ine
-					["cr"] = 115767,	-- Mistress Sassz'ine
+					["creatureID"] = 115767,	-- Mistress Sassz'ine
 					["g"] = {
 						ach(11676),	-- Five Course Seafood Buffet
 						i(143643),	-- Abyss Worm
@@ -659,7 +659,7 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				}),
 				e(1897, {	-- Maiden of Vigilance
-					["cr"] = 118289,	-- Maiden of Vigilance
+					["creatureID"] = 118289,	-- Maiden of Vigilance
 					["g"] = {
 						ach(11675),	-- Sky Walker
 						i(151524),	-- Hammer of Vigilance
@@ -723,7 +723,7 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				}),
 				e(1898, {	-- Kil'jaeden
-					["cr"] = 117269,	-- Kil'jaeden
+					["creatureID"] = 117269,	-- Kil'jaeden
 					["g"] = {
 						ach(11770),	-- Dark Souls
 						i(151539),	-- Technique: Glyph of Ember Shards
@@ -809,7 +809,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(101426),	-- Micronax Controller
 				}),
 				e(1862, {	-- Goroth
-					["cr"] = 115844,
+					["creatureID"] = 115844,
 					["g"] = {
 						ach(11724),	-- Fel Turkey
 						i(147069),	-- Shoulderplates of Crackling Flame
@@ -866,7 +866,7 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				}),
 				e(1856, {	-- Harjatan
-					["cr"] = 116407,	-- Harjatan
+					["creatureID"] = 116407,	-- Harjatan
 					["g"] = {
 						ach(11699),	-- Grand Fin-ale
 						i(147037),	-- Dripping Arcfin Shoulderpads
@@ -924,7 +924,7 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				}),
 				e(1861, {	-- Mistress Sassz'ine
-					["cr"] = 115767,	-- Mistress Sassz'ine
+					["creatureID"] = 115767,	-- Mistress Sassz'ine
 					["g"] = {
 						ach(11676),	-- Five Course Seafood Buffet
 						i(143643),	-- Abyss Worm
@@ -990,7 +990,7 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				}),
 				e(1897, {	-- Maiden of Vigilance
-					["cr"] = 118289,	-- Maiden of Vigilance
+					["creatureID"] = 118289,	-- Maiden of Vigilance
 					["g"] = {
 						ach(11675),	-- Sky Walker
 						i(151524),	-- Hammer of Vigilance
@@ -1054,7 +1054,7 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				}),
 				e(1898, {	-- Kil'jaeden
-					["cr"] = 117269,	-- Kil'jaeden
+					["creatureID"] = 117269,	-- Kil'jaeden
 					["g"] = {
 						ach(11770),	-- Dark Souls
 						i(151539),	-- Technique: Glyph of Ember Shards
@@ -1140,7 +1140,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(101426),	-- Micronax Controller
 				}),
 				e(1862, {	-- Goroth
-					["cr"] = 115844,	-- Goroth
+					["creatureID"] = 115844,	-- Goroth
 					["g"] = {
 						ach(11767),	-- Mythic: Goroth
 						ach(11724),	-- Fel Turkey
@@ -1199,7 +1199,7 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				}),
 				e(1856, {	-- Harjatan
-					["cr"] = 116407,	-- Harjatan
+					["creatureID"] = 116407,	-- Harjatan
 					["g"] = {
 						ach(11775),	-- Mythic: Harjatan
 						ach(11699),	-- Grand Fin-ale
@@ -1259,7 +1259,7 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				}),
 				e(1861, {	-- Mistress Sassz'ine
-					["cr"] = 115767,	-- Mistress Sassz'ine
+					["creatureID"] = 115767,	-- Mistress Sassz'ine
 					["g"] = {
 						ach(11776),	-- Mythic: Mistress Sassz'ine
 						ach(11676),	-- Five Course Seafood Buffet
@@ -1327,7 +1327,7 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				}),
 				e(1897, {	-- Maiden of Vigilance
-					["cr"] = 118289,	-- Maiden of Vigilance
+					["creatureID"] = 118289,	-- Maiden of Vigilance
 					["g"] = {
 						ach(11779),	-- Mythic: Maiden of Vigilance
 						ach(11675),	-- Sky Walker
@@ -1393,7 +1393,7 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				}),
 				e(1898, {	-- Kil'jaeden
-					["cr"] = 117269,	-- Kil'jaeden
+					["creatureID"] = 117269,	-- Kil'jaeden
 					["g"] = {
 						ach(11875, {	-- Cutting Edge: Kil'jaeden
 							["u"] = REMOVED_FROM_GAME,

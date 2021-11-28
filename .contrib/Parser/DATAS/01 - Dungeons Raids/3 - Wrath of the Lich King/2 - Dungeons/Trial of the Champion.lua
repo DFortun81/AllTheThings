@@ -88,7 +88,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					},
 				}),
 				e(635, {	-- Eadric the Pure
-					["cr"] = 35119,	-- Eadric the Pure
+					["creatureID"] = 35119,	-- Eadric the Pure
 					["g"] = {
 						crit(7, {	-- Eadric the Pure (A)
 							["achievementID"] = 4296,	-- Trial of the Champion (A)
@@ -125,7 +125,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					},
 				}),
 				e(636, {	-- Argent Confessor Paletress
-					["cr"] = 34928,	-- Argent Confessor Paletress
+					["creatureID"] = 34928,	-- Argent Confessor Paletress
 					["g"] = {
 						crit(6, {	-- Argent Confessor Paletress (A)
 							["achievementID"] = 4296,	-- Trial of the Champion (A)
@@ -162,7 +162,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					},
 				}),
 				e(637, {	-- The Black Knight
-					["cr"] = 35451,	-- The Black Knight
+					["creatureID"] = 35451,	-- The Black Knight
 					["g"] = {
 						crit(8, {	-- The Black Knight (A)
 							["achievementID"] = 4296,	-- Trial of the Champion (A)
@@ -280,7 +280,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						},
 					}),
 					e(635, {	-- Eadric the Pure
-						["cr"] = 35119,	-- Eadric the Pure
+						["creatureID"] = 35119,	-- Eadric the Pure
 						["g"] = {
 							crit(7, {	-- Eadric the Pure (A)
 								["achievementID"] = 4298,	-- Heroic: Trial of the Champion (A)
@@ -319,7 +319,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						},
 					}),
 					e(636, {	-- Argent Confessor Paletress
-						["cr"] = 34928,	-- Argent Confessor Paletress
+						["creatureID"] = 34928,	-- Argent Confessor Paletress
 						["g"] = {
 							crit(6, {	-- Argent Confessor Paletress (A)
 								["achievementID"] = 4298,	-- Heroic: Trial of the Champion (A)
@@ -434,7 +434,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						},
 					}),
 					e(637, {	-- The Black Knight
-						["cr"] = 35451,	-- The Black Knight
+						["creatureID"] = 35451,	-- The Black Knight
 						["g"] = {
 							crit(8, {	-- The Black Knight (A)
 								["achievementID"] = 4298,	-- Heroic: Trial of the Champion (A)

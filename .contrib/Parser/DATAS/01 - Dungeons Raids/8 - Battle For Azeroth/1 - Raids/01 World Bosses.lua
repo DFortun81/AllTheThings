@@ -19,7 +19,7 @@ _.Instances = { tier(BFA_TIER, {
 					1184,	-- Winterchill Mine (lower)
 					1185,	-- Winterchill Mine (upper)
 				},
-				["cr"] = 136385,	-- Azurethos, The Winged Typhoon
+				["creatureID"] = 136385,	-- Azurethos, The Winged Typhoon
 				["g"] = bubbleDown({["modID"] = 3}, {
 					crit(6, {	-- Azurethos
 						["achievementID"] = 12587,	-- Unbound Monstrosities
@@ -43,7 +43,7 @@ _.Instances = { tier(BFA_TIER, {
 				["isRaid"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["coord"] = { 37.8, 40.2, ARATHI_HIGHLANDS },
-				["cr"] = 138122,	-- Doom's Howl
+				["creatureID"] = 138122,	-- Doom's Howl
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(163195),	-- Schematic: Makeshift Azerite Detector (confirmed drop by Crieve on stream 11.23.18)
 					i(163828),	-- Toy Siege Tower
@@ -70,7 +70,7 @@ _.Instances = { tier(BFA_TIER, {
 				["maps"] = {	-- all Vol'dun maps
 					1009,	-- Atul'Aman: The Blood Font
 				},
-				["cr"] = 138794,	-- Dunegorger Kraulok
+				["creatureID"] = 138794,	-- Dunegorger Kraulok
 				["g"] = bubbleDown({["modID"] = 3}, {
 					crit(5, {	-- Dunegorger Kraulok
 						["achievementID"] = 12587,	-- Unbound Monstrosities
@@ -91,7 +91,7 @@ _.Instances = { tier(BFA_TIER, {
 				["isWeekly"] = true,
 				["questID"] = 58705,	-- Grand Empress Shek'zara
 				["isRaid"] = true,
-				["cr"] = 154638,
+				["creatureID"] = 154638,
 				["coord"] = { 5.9, 56.4, 1530 },
 				["g"] = {
 					i(174243),	-- Guise of the Voracious Prowler
@@ -110,7 +110,7 @@ _.Instances = { tier(BFA_TIER, {
 					{ 31.8, 66.9, DRUSTVAR },	-- west road
 					{ 49.2, 74.6, DRUSTVAR },	-- actual boss
 				},
-				["cr"] = 140252,	-- Hailstone Construct
+				["creatureID"] = 140252,	-- Hailstone Construct
 				["g"] = bubbleDown({["modID"] = 3}, {
 					crit(2, {	-- Hailstone
 						["achievementID"] = 12587,	-- Unbound Monstrosities
@@ -136,7 +136,7 @@ _.Instances = { tier(BFA_TIER, {
 				["races"] = ALLIANCE_ONLY,
 				["coord"] = { 41.47, 35.97, DARKSHORE },
 				["lvl"] = { 50 },
-				["cr"] = 148295,	-- Ivus the Decayed
+				["creatureID"] = 148295,	-- Ivus the Decayed
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(166695),	-- Petrified Ironbark Crown
 					i(166687),	-- Warring Ancient's Mask
@@ -159,7 +159,7 @@ _.Instances = { tier(BFA_TIER, {
 				["races"] = HORDE_ONLY,
 				["coord"] = { 41.4, 35.9, DARKSHORE },
 				["lvl"] = { 50 },
-				["cr"] = 144946,	-- Ivus the Forest Lord
+				["creatureID"] = 144946,	-- Ivus the Forest Lord
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(166696),	-- Petrified Ironbark Crown
 					i(166688),	-- Warring Ancient's Crown
@@ -187,7 +187,7 @@ _.Instances = { tier(BFA_TIER, {
 					1176,	-- Breath of Pa'ku, middle level
 					1177,	-- Breath Of Pa'ku,	bottom level
 				},
-				["cr"] = 132253,	-- Ji'arak
+				["creatureID"] = 132253,	-- Ji'arak
 				["g"] = bubbleDown({["modID"] = 3}, {
 					crit(4, {	-- Ji'arak
 						["achievementID"] = 12587,	-- Unbound Monstrosities
@@ -210,7 +210,7 @@ _.Instances = { tier(BFA_TIER, {
 				["isRaid"] = true,
 				["coord"] = { 35.6, 33.6, NAZMIR },
 				["lvl"] = { 50 },
-				["cr"] = 132701,	-- T'zane <Tehe Soul Terror>
+				["creatureID"] = 132701,	-- T'zane <Tehe Soul Terror>
 				["g"] = bubbleDown({["modID"] = 3}, {
 					crit(3, {	-- T'zane
 						["achievementID"] = 12587,	-- Unbound Monstrosities
@@ -234,7 +234,7 @@ _.Instances = { tier(BFA_TIER, {
 				["isRaid"] = true,
 				["races"] = HORDE_ONLY,
 				["coord"] = { 35.5, 38.9, ARATHI_HIGHLANDS },
-				["cr"] = 137374,	-- The Lion's Roar
+				["creatureID"] = 137374,	-- The Lion's Roar
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(163829),	-- Toy War Machine
 					i(161455),	-- Battlemage's Collar
@@ -286,7 +286,7 @@ _.Instances = { tier(BFA_TIER, {
 				["isWeekly"] = true,
 				["questID"] = 55466,	-- Vuk'laz the Earthbreaker
 				["isRaid"] = true,
-				["cr"] = 160970,
+				["creatureID"] = 160970,
 				["coord"] = { 45.7, 16.1, 1527 },
 				["g"] = {
 					i(174258),	-- Greathelm of Indiscriminate Brutality
@@ -308,7 +308,7 @@ _.Instances = { tier(BFA_TIER, {
 					1182,	-- Saltstone Mine
 					1183,	-- Thornheart
 				},
-				["cr"] = 140163,	-- Warbringeer Yenajz
+				["creatureID"] = 140163,	-- Warbringeer Yenajz
 				["g"] = bubbleDown({["modID"] = 3}, {
 					crit(1, {	-- Warbringer Yenajz
 						["achievementID"] = 12587,	-- Unbound Monstrosities
@@ -335,7 +335,7 @@ _.Instances = { tier(BFA_TIER, {
 					1524,	-- Deepsea Slave Pen
 					1528,	-- The Eternal Palace
 				},
-				["cr"] = 152671,	-- Wekemara
+				["creatureID"] = 152671,	-- Wekemara
 				["g"] = bubbleDown({["modID"] = 3}, {
 					crit(2, {	-- Defeat one of the World Bosses in Nazjatar
 						["achievementID"] = 13635,	-- Tour of the Depths

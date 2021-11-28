@@ -48,7 +48,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(137717),	-- Schematic: Double-Barreled Cranial Cannon (Rank 3)
 				}),
 				e(1485, {	-- Hymdall
-					["cr"] = 94960,	-- Hymdall
+					["creatureID"] = 94960,	-- Hymdall
 					["g"] = {
 						i(133621),	-- Adorned Guardian's Bracers
 						i(133628),	-- Battleborne Sentinel Gauntlets
@@ -64,7 +64,7 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				}),
 				e(1486, {	-- Hyrja
-					["cr"] = 95833,	-- Hyrja
+					["creatureID"] = 95833,	-- Hyrja
 					["g"] = {
 						i(140657),	-- Crest of the Lightborn [Priest Hidden Artifact Appearance]
 						i(133620),	-- Amice of the Enlightened
@@ -82,7 +82,7 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				}),
 				e(1487, {	-- Fenryr
-					["cr"] = 99868,	-- Fenryr
+					["creatureID"] = 99868,	-- Fenryr
 					["g"] = {
 						i(133633),	-- Wolfstride Pendant
 						i(133639),	-- Goldscar Pelt
@@ -95,7 +95,7 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				}),
 				e(1488, {	-- God-King Skovald
-					["cr"] = 95675,	-- God-King Skovald
+					["creatureID"] = 95675,	-- God-King Skovald
 					["g"] = {
 						i(140660),	-- Haft of the God-King
 						i(134193),	-- Biornskin Moccasins
@@ -113,7 +113,7 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				}),
 				e(1489, {	-- Odyn
-					["cr"] = 95676,	-- Odyn
+					["creatureID"] = 95676,	-- Odyn
 					["g"] = {
 						ach(10786),	-- Halls of Valor
 						i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
@@ -146,7 +146,7 @@ _.Instances = { tier(LEGION_TIER, {
 						i(137717),	-- Schematic: Double-Barreled Cranial Cannon (Rank 3)
 					}),
 					e(1485, {	-- Hymdall
-						["cr"] = 94960,	-- Hymdall
+						["creatureID"] = 94960,	-- Hymdall
 						["g"] = {
 							i(133621),	-- Adorned Guardian's Bracers
 							i(133628),	-- Battleborne Sentinel Gauntlets
@@ -162,7 +162,7 @@ _.Instances = { tier(LEGION_TIER, {
 						},
 					}),
 					e(1486, {	-- Hyrja
-						["cr"] = 95833,	-- Hyrja
+						["creatureID"] = 95833,	-- Hyrja
 						["g"] = {
 							i(140657),	-- Crest of the Lightborn [Priest Hidden Artifact Appearance]
 							i(133620),	-- Amice of the Enlightened
@@ -180,7 +180,7 @@ _.Instances = { tier(LEGION_TIER, {
 						},
 					}),
 					e(1487, {	-- Fenryr
-						["cr"] = 99868,	-- Fenryr
+						["creatureID"] = 99868,	-- Fenryr
 						["g"] = {
 							i(133633),	-- Wolfstride Pendant
 							i(133639),	-- Goldscar Pelt
@@ -193,7 +193,7 @@ _.Instances = { tier(LEGION_TIER, {
 						},
 					}),
 					e(1488, {	-- God-King Skovald
-						["cr"] = 95675,	-- God-King Skovald
+						["creatureID"] = 95675,	-- God-King Skovald
 						["g"] = {
 							i(140660),	-- Haft of the God-King
 							i(134193),	-- Biornskin Moccasins
@@ -211,7 +211,7 @@ _.Instances = { tier(LEGION_TIER, {
 						},
 					}),
 					e(1489, {	-- Odyn
-						["cr"] = 95676,	-- Odyn
+						["creatureID"] = 95676,	-- Odyn
 						["g"] = {
 							ach(10788),	-- Heroic: Halls of Valor
 							i(137857),	-- Design: Raging Furystone Gorget (Rank 3)
@@ -251,7 +251,7 @@ _.Instances = { tier(LEGION_TIER, {
 						i(137717),	-- Schematic: Double-Barreled Cranial Cannon (Rank 3)
 					}),
 					e(1485, {	-- Hymdall
-						["cr"] = 94960,	-- Hymdall
+						["creatureID"] = 94960,	-- Hymdall
 						["g"] = {
 							i(133621),	-- Adorned Guardian's Bracers
 							i(133628),	-- Battleborne Sentinel Gauntlets
@@ -267,7 +267,7 @@ _.Instances = { tier(LEGION_TIER, {
 						},
 					}),
 					e(1486, {	-- Hyrja
-						["cr"] = 95833,	-- Hyrja
+						["creatureID"] = 95833,	-- Hyrja
 						["g"] = {
 							i(140657),	-- Crest of the Lightborn [Priest Hidden Artifact Appearance]
 							i(133620),	-- Amice of the Enlightened
@@ -285,7 +285,7 @@ _.Instances = { tier(LEGION_TIER, {
 						},
 					}),
 					e(1487, {	-- Fenryr
-						["cr"] = 99868,	-- Fenryr
+						["creatureID"] = 99868,	-- Fenryr
 						["g"] = {
 							i(133633),	-- Wolfstride Pendant
 							i(133639),	-- Goldscar Pelt
@@ -298,7 +298,7 @@ _.Instances = { tier(LEGION_TIER, {
 						},
 					}),
 					e(1488, {	-- God-King Skovald
-						["cr"] = 95675,	-- God-King Skovald
+						["creatureID"] = 95675,	-- God-King Skovald
 						["g"] = {
 							i(140660),	-- Haft of the God-King
 							i(134193),	-- Biornskin Moccasins
@@ -316,7 +316,7 @@ _.Instances = { tier(LEGION_TIER, {
 						},
 					}),
 					e(1489, {	-- Odyn
-						["cr"] = 95676,	-- Odyn
+						["creatureID"] = 95676,	-- Odyn
 						["g"] = {
 							ach(10789),	-- Mythic: Halls of Valor
 							ach(10543),	-- Surge Protector
