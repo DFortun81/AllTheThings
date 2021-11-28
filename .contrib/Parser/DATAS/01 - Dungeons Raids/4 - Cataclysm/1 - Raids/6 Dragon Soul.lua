@@ -76,9 +76,6 @@ _.Instances = { tier(CATA_TIER, {
 						["qg"] = 57770,	-- Zazzo Twinklefingers
 						["sourceQuest"] = 30108,	-- Our Man in Karazhan
 						["coord"] = { 52.6, 77.6, DEADWIND_PASS },
-						["cost"] = {
-							{ "i", 77954, 1 },	-- Vial of Black Dragonsblood
-						},
 					}),
 					q(30107, {	-- Cluster Clutch
 						["qg"] = 57777,	-- Wrathion <The Black Prince>
@@ -102,11 +99,6 @@ _.Instances = { tier(CATA_TIER, {
 						["qg"] = 57777,	-- Wrathion <The Black Prince>
 						["sourceQuest"] = 30116,	-- Sharpening Your Fangs
 						["coord"] = { 71.4, 45.6, HILLSBRAD_FOOTHILLS },
-						["cost"] = {
-							{ "i", 78352, 1 },	-- Fragment of Deathwing's Jaw
-							{ "i", 77947, 1 },	-- The Sleeper
-							{ "i", 77948, 1 },	-- The Dreamer
-						},
 						["groups"] = {
 							i(77949),	-- Golad, Twilight of Aspects
 							i(77950),	-- Tiriosh, Nightmare of Ages
@@ -115,9 +107,6 @@ _.Instances = { tier(CATA_TIER, {
 					q(29801, {	-- Proving Your Worth
 						["qg"] = 55476,	-- Lord Afrasastrasz
 						["coord"] = { 50.2, 59.6, 409 },	-- Dragon Soul
-						["cost"] = {
-							{ "i", 74246, 1 },	-- Cryptomancer's Decoder Ring
-						},
 					}),
 					q(30116, {	-- Sharpening Your Fangs
 						["qg"] = 57777,	-- Wrathion <The Black Prince>
@@ -150,11 +139,6 @@ _.Instances = { tier(CATA_TIER, {
 						["qg"] = 57770,	-- Zazzo Twinklefingers
 						["sourceQuest"] = 30109,	-- Blood of the Betrayer
 						["coord"] = { 52.6, 77.6, DEADWIND_PASS },
-						["cost"] = {
-							{ "i", 77954, 1 },	-- Vial of Black Dragonsblood
-							{ "i", 77945, 1 },	-- Fear
-							{ "i", 77946, 1 },	-- Vengeance
-						},
 						["g"] = {
 							i(77947),	-- The Sleeper
 							i(77948),	-- The Dreamer
@@ -478,6 +462,7 @@ _.Instances = { tier(CATA_TIER, {
 						i(78012),	-- Ring of the Riven
 						i(78011),	-- Signet of Grasping Mouths
 						i(74246, {	-- Cryptomancer's Decoder Ring
+							["b"] = 1,	-- BoP
 							["description"] = "You need to pickpocket this from the boss.",
 						}),
 					})),
@@ -756,6 +741,7 @@ _.Instances = { tier(CATA_TIER, {
 						i(78419),	-- Ring of the Riven
 						i(78413),	-- Signet of Grasping Mouths
 						i(74246, {	-- Cryptomancer's Decoder Ring
+							["b"] = 1,	-- BoP
 							["description"] = "You need to pickpocket this from the boss.",
 						}),
 					})),

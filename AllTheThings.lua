@@ -18051,8 +18051,10 @@ customWindowUpdates["Random"] = function(self)
 					for i, subgroup in ipairs(app:GetWindow("Prime").data.g) do
 						SearchRecursivelyForEverything(subgroup, searchResults);
 					end
-					searchCache["randomatt"] = searchResults;
-					return searchResults;
+					if #searchResults > 0 then
+						searchCache["randomatt"] = searchResults;
+						return searchResults;
+					end
 				end
 			end
 			function self:SelectAchievement()
@@ -18064,8 +18066,10 @@ customWindowUpdates["Random"] = function(self)
 						return o.collectible and not o.mapID;
 					end
 					SearchRecursively(app:GetWindow("Prime").data, "achievementID", searchResults, func);
-					searchCache["randomachievement"] = searchResults;
-					return searchResults;
+					if #searchResults > 0 then
+						searchCache["randomachievement"] = searchResults;
+						return searchResults;
+					end
 				end
 			end
 			function self:SelectItem()
@@ -18077,8 +18081,10 @@ customWindowUpdates["Random"] = function(self)
 						return o.collectible;
 					end
 					SearchRecursively(app:GetWindow("Prime").data, "itemID", searchResults, func);
-					searchCache["randomitem"] = searchResults;
-					return searchResults;
+					if #searchResults > 0 then
+						searchCache["randomitem"] = searchResults;
+						return searchResults;
+					end
 				end
 			end
 			function self:SelectInstance()
@@ -18090,8 +18096,10 @@ customWindowUpdates["Random"] = function(self)
 						return ((o.total or 0) - (o.progress or 0)) > 0;
 					end
 					SearchRecursively(app:GetWindow("Prime").data, "instanceID", searchResults, func);
-					searchCache["randominstance"] = searchResults;
-					return searchResults;
+					if #searchResults > 0 then
+						searchCache["randominstance"] = searchResults;
+						return searchResults;
+					end
 				end
 			end
 			function self:SelectDungeon()
@@ -18103,8 +18111,10 @@ customWindowUpdates["Random"] = function(self)
 						return not o.isRaid and (((o.total or 0) - (o.progress or 0)) > 0);
 					end
 					SearchRecursively(app:GetWindow("Prime").data, "instanceID", searchResults, func);
-					searchCache["randomdungeon"] = searchResults;
-					return searchResults;
+					if #searchResults > 0 then
+						searchCache["randomdungeon"] = searchResults;
+						return searchResults;
+					end
 				end
 			end
 			function self:SelectQuest()
@@ -18116,8 +18126,10 @@ customWindowUpdates["Random"] = function(self)
 						return o.collectible;
 					end
 					SearchRecursively(app:GetWindow("Prime").data, "questID", searchResults, func);
-					searchCache["quests"] = searchResults;
-					return searchResults;
+					if #searchResults > 0 then
+						searchCache["quests"] = searchResults;
+						return searchResults;
+					end
 				end
 			end
 			function self:SelectRaid()
@@ -18129,8 +18141,10 @@ customWindowUpdates["Random"] = function(self)
 						return o.isRaid and (((o.total or 0) - (o.progress or 0)) > 0);
 					end
 					SearchRecursively(app:GetWindow("Prime").data, "instanceID", searchResults, func);
-					searchCache["randomraid"] = searchResults;
-					return searchResults;
+					if #searchResults > 0 then
+						searchCache["randomraid"] = searchResults;
+						return searchResults;
+					end
 				end
 			end
 			function self:SelectMount()
@@ -18142,8 +18156,10 @@ customWindowUpdates["Random"] = function(self)
 						return o.collectible and (not o.achievementID or o.itemID);
 					end
 					SearchRecursivelyForValue(app:GetWindow("Prime").data, "filterID", 100, searchResults, func);
-					searchCache["randommount"] = searchResults;
-					return searchResults;
+					if #searchResults > 0 then
+						searchCache["randommount"] = searchResults;
+						return searchResults;
+					end
 				end
 			end
 			function self:SelectPet()
@@ -18155,8 +18171,10 @@ customWindowUpdates["Random"] = function(self)
 						return o.collectible;
 					end
 					SearchRecursively(app:GetWindow("Prime").data, "speciesID", searchResults, func);
-					searchCache["randompet"] = searchResults;
-					return searchResults;
+					if #searchResults > 0 then
+						searchCache["randompet"] = searchResults;
+						return searchResults;
+					end
 				end
 			end
 			function self:SelectToy()
@@ -18168,8 +18186,10 @@ customWindowUpdates["Random"] = function(self)
 						return o.collectible;
 					end
 					SearchRecursively(app:GetWindow("Prime").data, "isToy", searchResults, func);
-					searchCache["randomtoy"] = searchResults;
-					return searchResults;
+					if #searchResults > 0 then
+						searchCache["randomtoy"] = searchResults;
+						return searchResults;
+					end
 				end
 			end
 			local excludedZones = {
@@ -18194,8 +18214,10 @@ customWindowUpdates["Random"] = function(self)
 						return (((o.total or 0) - (o.progress or 0)) > 0) and not o.instanceID and not excludedZones[o.mapID];
 					end
 					SearchRecursively(app:GetWindow("Prime").data, "mapID", searchResults, func);
-					searchCache["randomzone"] = searchResults;
-					return searchResults;
+					if #searchResults > 0 then
+						searchCache["randomzone"] = searchResults;
+						return searchResults;
+					end
 				end
 			end
 			local mainHeader, filterHeader;
@@ -18404,7 +18426,7 @@ customWindowUpdates["Random"] = function(self)
 				if method then
 					rerollOption.text = L["REROLL_2"] .. (method ~= "AllTheThings" and L[method:upper()] or method);
 					method = "Select" .. method;
-					local temp = self[method]() or {};
+					local temp = self[method]() or app.EmptyTable;
 					local totalWeight = 0;
 					for i,o in ipairs(temp) do
 						totalWeight = totalWeight + ((o.total or 1) - (o.progress or 0));
