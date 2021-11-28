@@ -3087,9 +3087,7 @@ _.Instances = { tier(MOP_TIER, {
 							ROGUE,
 						},
 					}),
-					i(112935, {	-- Tusks of Mannoroth [Normal that scales to Heroic/Mythic]
-						-- ["bonusID"] = 449,
-					}),
+					i(112935),	-- Tusks of Mannoroth
 					i(112932),	-- Kor'kron Spire of Supremacy
 					i(112925),	-- Xal'atoh, Desecrated Image of Gorehowl
 					i(112939),	-- Horned Mace of the Old Ones
@@ -3547,9 +3545,7 @@ _.Instances = { tier(MOP_TIER, {
 							ROGUE,
 						},
 					}),
-					i(112935, {	-- Tusks of Mannoroth [Normal that scales to Heroic/Mythic]
-						-- ["bonusID"] = 450,
-					}),
+					i(112935),	-- Tusks of Mannoroth
 					i(104253),	-- Kor'kron Juggernaut (MOUNT!)
 					i(112932),	-- Kor'kron Spire of Supremacy
 					i(112925),	-- Xal'atoh, Desecrated Image of Gorehowl

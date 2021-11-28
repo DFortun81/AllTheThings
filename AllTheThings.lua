@@ -3575,21 +3575,25 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 		if itemID then
 			-- Merge the source group for all matching Sources of the search results
-			local sourceGroup = {};
+			local sourceGroup;
 			for i,j in ipairs(group.g or group) do
 				-- print("sourceGroup?",j.key,j.key and j[j.key],j.modItemID)
 				if sourceID and GroupMatchesParams(j, "s", sourceID) then
 					-- print("sourceID match",sourceID)
-					MergeProperties(sourceGroup, j);
+					if sourceGroup then MergeProperties(sourceGroup, j)
+					else sourceGroup = CreateObject(j); end
 				elseif GroupMatchesParams(j, paramA, paramB) then
 					-- print("exact match",paramA,paramB)
-					MergeProperties(sourceGroup, j, true);
+					if sourceGroup then MergeProperties(sourceGroup, j, true)
+					else sourceGroup = CreateObject(j); end
 				elseif GroupMatchesParams(j, paramA, paramB, true) then
 					-- print("match",paramA,paramB)
-					MergeProperties(sourceGroup, j, true);
+					if sourceGroup then MergeProperties(sourceGroup, j, true)
+					else sourceGroup = CreateObject(j); end
 				end
 			end
 
+			if not sourceGroup then sourceGroup = {}; end
 			-- Show the unobtainable source text, if necessary.
 			if sourceGroup.key then
 				-- Acquire the SourceID if it hadn't been determined yet.
@@ -4050,10 +4054,11 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		if #root.g == 1 then
 			local o = root.g[1];
 			-- print("Check Single",root.key,root[root.key],root[o.key],o.key,o[o.key],o[root.key])
-			-- TODO: find an example which tests this... may not be possible with above logic
+			-- Heroic Tusks of Mannoroth triggers this logic
 			if (root[o.key] == o[o.key]) or (root[root.key] == o[root.key]) then
 				-- print("Single group")
-				root = o;
+				root.g = nil;
+				MergeProperties(root, o, true);
 			end
 		end
 
