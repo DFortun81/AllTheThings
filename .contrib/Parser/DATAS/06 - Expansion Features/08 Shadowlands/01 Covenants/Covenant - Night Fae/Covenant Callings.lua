@@ -13,7 +13,7 @@ _.ExpansionFeatures =
 				THE_CANOPY,	-- Heart of the Forest
 			},
 			["g"] = {
-				n(-901, sharedData({	-- Covenant Callings
+				n(COVENANT_CALLINGS, sharedData({
 					["sourceQuests"] = { 62899 },	-- The Endless Forest
 					["repeatable"] = true,
 				}, {

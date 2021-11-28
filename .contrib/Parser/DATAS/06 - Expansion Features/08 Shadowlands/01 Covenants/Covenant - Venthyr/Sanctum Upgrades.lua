@@ -12,8 +12,8 @@ _.ExpansionFeatures =
 			-- But it is complete for my main, as well as 62921... /shrug
 			["g"] = {
 				n(-957, {	-- Sanctum Upgrades
-					n(-915, {	-- Anima Conductor
-						n(-916, {	-- Tier 1: Flowing Tendrils
+					n(ANIMA_CONDUCTOR, {
+						n(TIER_ONE, {	-- Flowing Tendrils
 							q(63066, {	-- Sanctum Upgrade: Anima Conductor
 								["provider"] = { "n", 172605 },	-- Foreman Flatfinger
 								["coord"] = { 55.4, 27.0, SINFALL_REACHES },
@@ -39,7 +39,7 @@ _.ExpansionFeatures =
 								},
 							}),
 						}),
-						n(-917, {	-- Tier 2: Streaming Threads
+						n(TIER_TWO, {	-- Streaming Threads
 							q(61735, {	-- Awaken Our Allies
 								-- ["sourceQuests"] = { ? },	--
 								["provider"] = { "n", 173038 },	-- John the Reanimator
@@ -100,10 +100,10 @@ _.ExpansionFeatures =
 								["coord"] = { 71.2, 74.4, REVENDRETH },
 							}),
 						}),
-						n(-918, {	-- Tier 3: Flowing Power
+						n(TIER_THREE, {	-- Flowing Power
 						}),
 					}),
-					n(-905, {	-- Command Table
+					n(COMMAND_TABLE, {
 						n(-906, {	-- Tier 1: Tactical Insight
 							q(59319, {	-- Advancing Our Efforts
 								["sourceQuests"] = { 63064 },	-- Sanctum Upgrade: Adventures Scouting Map

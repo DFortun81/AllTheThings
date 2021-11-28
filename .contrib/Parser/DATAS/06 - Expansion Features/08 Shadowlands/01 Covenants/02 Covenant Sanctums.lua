@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	tier(SL_TIER, {
-		n(-900, {	-- Covenant Sanctums
+		n(COVENANT_SANCTUMS, {
 			["description"] = "These rewards are shared across Covenants.",
 			["g"] = {
 				n(ACHIEVEMENTS, {
@@ -151,141 +151,139 @@ _.ExpansionFeatures =
 						}),
 					},
 				}),
-				n(-901, {	-- Covenant Callings
-					["g"] = {
-						n(175390, {	-- Dirty Glinting Object
-							["description"] = "Can appear when on certain Training callings.  Roughly every 5 minutes, upon exiting combat, your trainee will call your attention to something they've discovered.\n\nOften contains potions, leveling and rarity charms for pets, or food.",
-							["crs"] = {
-								-- Confirmed Follower ID's which will drop the loot objects
-								170035,	-- Deos [Kyrian]
-								170016,	-- Dregs [Necrolord]
-								170045,	-- Drippy [Venthyr]
-								170029,	-- Twinklewings [Night Fae]
+				n(COVENANT_CALLINGS, {
+					n(175390, {	-- Dirty Glinting Object
+						["description"] = "Can appear when on certain Training callings.  Roughly every 5 minutes, upon exiting combat, your trainee will call your attention to something they've discovered.\n\nOften contains potions, leveling and rarity charms for pets, or food.",
+						["crs"] = {
+							-- Confirmed Follower ID's which will drop the loot objects
+							170035,	-- Deos [Kyrian]
+							170016,	-- Dregs [Necrolord]
+							170045,	-- Drippy [Venthyr]
+							170029,	-- Twinklewings [Night Fae]
 
-								-- Follower ID's which will NOT drop loot objects
-								-- 170026,	-- Cadaverous [Necrolord]
-								-- 170033,	-- Karras [Night Fae]
-								-- 170044,	-- Nandor [Venthyr]
-								-- 170039,	-- Popo [Kyrian]
-							},
-							["g"] = {
-								i(184507),	-- Lucy's Lost Collar (PET!)
-								i(184505),	-- "Adorable Ascended" Costume
-								i(184506),	-- "Flying Faerie" Costume
-								i(184503),	-- Attendant's Pocket Portal: Ardenweald
-								i(184500),	-- Attendant's Pocket Portal: Bastion
-								i(184502),	-- Attendant's Pocket Portal: Maldraxxus
-								i(184504),	-- Attendant's Pocket Portal: Oribos
-								i(184501),	-- Attendant's Pocket Portal: Revendreth
-								i(171438),	-- Porous Weightstone
-								i(92683),	-- Flawless Dragonkin Battle-Stone
-							},
-						}),
-						-- Rare Quality Calling Rewards / Zone
-						i(181475, {	-- Bounty of the Grovewardens / Ardenweald
-							["description"] = "Rewarded by completing a Calling based in Ardenweald.",
-							["g"] = {
-								i(187840, {	-- Sparkle Wings (TOY!)
-									["timeline"] = { "added 9.1.5" },
+							-- Follower ID's which will NOT drop loot objects
+							-- 170026,	-- Cadaverous [Necrolord]
+							-- 170033,	-- Karras [Night Fae]
+							-- 170044,	-- Nandor [Venthyr]
+							-- 170039,	-- Popo [Kyrian]
+						},
+						["g"] = {
+							i(184507),	-- Lucy's Lost Collar (PET!)
+							i(184505),	-- "Adorable Ascended" Costume
+							i(184506),	-- "Flying Faerie" Costume
+							i(184503),	-- Attendant's Pocket Portal: Ardenweald
+							i(184500),	-- Attendant's Pocket Portal: Bastion
+							i(184502),	-- Attendant's Pocket Portal: Maldraxxus
+							i(184504),	-- Attendant's Pocket Portal: Oribos
+							i(184501),	-- Attendant's Pocket Portal: Revendreth
+							i(171438),	-- Porous Weightstone
+							i(92683),	-- Flawless Dragonkin Battle-Stone
+						},
+					}),
+					-- Rare Quality Calling Rewards / Zone
+					i(181475, {	-- Bounty of the Grovewardens / Ardenweald
+						["description"] = "Rewarded by completing a Calling based in Ardenweald.",
+						["g"] = {
+							i(187840, {	-- Sparkle Wings (TOY!)
+								["timeline"] = { "added 9.1.5" },
+							}),
+							i(187880),	-- Goat Soul
+						},
+					}),
+					i(181556, {	-- Tribute of the Court / Revendreth
+						["description"] = "Rewarded by completing a Calling based in Revendreth.",
+						["g"] = {
+							-- i(181224),	-- Avowed Arcanist's Staff / Zone Reward
+							-- i(182136),	-- Chilled to the Core [Shaman-Enhance] / Source Drop
+							-- i(182127),	-- Shake the Foundations [Shaman-Elemental] / Source Drop
+							-- i(181508),	-- Fortifying Ingredients [Monk-Brewmaster] / Source Drop
+							-- i(181740),	-- Evasive Stride [Monk] / Source
+							i(180248),	-- Ambassador's Reserve (Ember Court Bonus Time)
+							i(187512, {	-- Tome of Small Sins (TOY!)
+								["timeline"] = { "added 9.1.5" },
+							}),
+							i(187862),	-- Snake Soul
+						},
+					}),
+					i(181732, {	-- Tribute of the Ambitious / Maldraxxus
+						["description"] = "Rewarded by completing a Calling based in Maldraxxus.",
+						["g"] = {
+							i(184159, {	-- Necroray Egg (Timer)
+								i(184158, {	-- Oozing Necroray Egg (No Timer)
+									i(184160),	-- Bulbous Necroray
+									i(184161),	-- Infested Necroray
+									i(184162),	-- Pestilent Necroray
 								}),
-								i(187880),	-- Goat Soul
-							},
-						}),
-						i(181556, {	-- Tribute of the Court / Revendreth
-							["description"] = "Rewarded by completing a Calling based in Revendreth.",
-							["g"] = {
-								-- i(181224),	-- Avowed Arcanist's Staff / Zone Reward
-								-- i(182136),	-- Chilled to the Core [Shaman-Enhance] / Source Drop
-								-- i(182127),	-- Shake the Foundations [Shaman-Elemental] / Source Drop
-								-- i(181508),	-- Fortifying Ingredients [Monk-Brewmaster] / Source Drop
-								-- i(181740),	-- Evasive Stride [Monk] / Source
-								i(180248),	-- Ambassador's Reserve (Ember Court Bonus Time)
-								i(187512, {	-- Tome of Small Sins (TOY!)
-									["timeline"] = { "added 9.1.5" },
-								}),
-								i(187862),	-- Snake Soul
-							},
-						}),
-						i(181732, {	-- Tribute of the Ambitious / Maldraxxus
-							["description"] = "Rewarded by completing a Calling based in Maldraxxus.",
-							["g"] = {
-								i(184159, {	-- Necroray Egg (Timer)
-									i(184158, {	-- Oozing Necroray Egg (No Timer)
-										i(184160),	-- Bulbous Necroray
-										i(184161),	-- Infested Necroray
-										i(184162),	-- Pestilent Necroray
-									}),
-								}),
-								i(187913, {	-- Apprentice Slimemancer's Boots (TOY!)
-									["timeline"] = { "added 9.1.5" },
-								}),
-								-- i(181435),	-- Calcualted Strikes [Monk-Windwalker] / Source Drop
-								-- i(181462),	-- Coordinated Offensive [Monk] / Source Drop
-								-- i(181742),	-- Walk with the Ox [Monk-Brewmaster] / Source Drop
-								-- i(181640),	-- Tumbling Technique [Monk] / Source Drop
-							},
-						}),
-						i(181372, {	-- Tribute of the Ascended / Bastion
-							["description"] = "Rewarded by completing a Calling based in Bastion.",
-							["g"] = {
-								-- i(181770),	-- Bone Marrow Hops [Monk] / Source Drop
-								-- i(182138),	-- Mind Devourer [Priest-Shadow]
-								i(187419, {	-- Steward's First Feather (TOY!)
-									["timeline"] = { "added 9.1.5" },
-								}),
-							},
-						}),
+							}),
+							i(187913, {	-- Apprentice Slimemancer's Boots (TOY!)
+								["timeline"] = { "added 9.1.5" },
+							}),
+							-- i(181435),	-- Calcualted Strikes [Monk-Windwalker] / Source Drop
+							-- i(181462),	-- Coordinated Offensive [Monk] / Source Drop
+							-- i(181742),	-- Walk with the Ox [Monk-Brewmaster] / Source Drop
+							-- i(181640),	-- Tumbling Technique [Monk] / Source Drop
+						},
+					}),
+					i(181372, {	-- Tribute of the Ascended / Bastion
+						["description"] = "Rewarded by completing a Calling based in Bastion.",
+						["g"] = {
+							-- i(181770),	-- Bone Marrow Hops [Monk] / Source Drop
+							-- i(182138),	-- Mind Devourer [Priest-Shadow]
+							i(187419, {	-- Steward's First Feather (TOY!)
+								["timeline"] = { "added 9.1.5" },
+							}),
+						},
+					}),
 
-						-- Epic Quality Challenges Rewards / Zone
-						i(181476, {	-- Tribute of the Wild Hunt / Ardenweald
-							["description"] = "Rewarded by completing a 'Challenges' Calling based in Ardenweald.",
-							["g"] = {
-								i(187840, {	-- Sparkle Wings (TOY!)
-									["timeline"] = { "added 9.1.5" },
+					-- Epic Quality Challenges Rewards / Zone
+					i(181476, {	-- Tribute of the Wild Hunt / Ardenweald
+						["description"] = "Rewarded by completing a 'Challenges' Calling based in Ardenweald.",
+						["g"] = {
+							i(187840, {	-- Sparkle Wings (TOY!)
+								["timeline"] = { "added 9.1.5" },
+							}),
+							i(187880),	-- Goat Soul
+						},
+					}),
+					i(181557, {	-- Favor of the Court / Revendreth
+						["description"] = "Rewarded by completing a 'Challenges' Calling based in Revendreth.",
+						["g"] = {
+							i(176850),	-- Blank Invitation
+							-- i(182348),	-- Lavish Harvest
+							i(187512, {	-- Tome of Small Sins (TOY!)
+								["timeline"] = { "added 9.1.5" },
+							}),
+							i(187862),	-- Snake Soul
+						},
+					}),
+					i(181733, {	-- Tribute of the Duty-Bound / Maldraxxus
+						["description"] = "Rewarded by completing a 'Challenges' Calling based in Maldraxxus.",
+						["g"] = {
+							i(184159, {	-- Necroray Egg (Timer)
+								i(184158, {	-- Oozing Necroray Egg (No Timer)
+									i(184160),	-- Bulbous Necroray
+									i(184161),	-- Infested Necroray
+									i(184162),	-- Pestilent Necroray
 								}),
-								i(187880),	-- Goat Soul
-							},
-						}),
-						i(181557, {	-- Favor of the Court / Revendreth
-							["description"] = "Rewarded by completing a 'Challenges' Calling based in Revendreth.",
-							["g"] = {
-								i(176850),	-- Blank Invitation
-								-- i(182348),	-- Lavish Harvest
-								i(187512, {	-- Tome of Small Sins (TOY!)
-									["timeline"] = { "added 9.1.5" },
-								}),
-								i(187862),	-- Snake Soul
-							},
-						}),
-						i(181733, {	-- Tribute of the Duty-Bound / Maldraxxus
-							["description"] = "Rewarded by completing a 'Challenges' Calling based in Maldraxxus.",
-							["g"] = {
-								i(184159, {	-- Necroray Egg (Timer)
-									i(184158, {	-- Oozing Necroray Egg (No Timer)
-										i(184160),	-- Bulbous Necroray
-										i(184161),	-- Infested Necroray
-										i(184162),	-- Pestilent Necroray
-									}),
-								}),
-								i(187913, {	-- Apprentice Slimemancer's Boots (TOY!)
-									["timeline"] = { "added 9.1.5" },
-								}),
-								-- i(181705),	-- Celestial Effervescence
-								-- i(182111),	-- Spiritual Resonance
-							},
-						}),
-						i(181741, {	-- Tribute of the Paragon / Bastion
-							["description"] = "Rewarded by completing a 'Challenges' Calling based in Bastion.",
-							["g"] = {
-								-- i(182145),	-- Heavy Rainfall
-								-- i(181944),	-- Resonant Words
-								-- i(181867),	-- Swift Penitence
-								i(187419, {	-- Steward's First Feather (TOY!)
-									["timeline"] = { "added 9.1.5" },
-								}),
-							},
-						}),
-					},
+							}),
+							i(187913, {	-- Apprentice Slimemancer's Boots (TOY!)
+								["timeline"] = { "added 9.1.5" },
+							}),
+							-- i(181705),	-- Celestial Effervescence
+							-- i(182111),	-- Spiritual Resonance
+						},
+					}),
+					i(181741, {	-- Tribute of the Paragon / Bastion
+						["description"] = "Rewarded by completing a 'Challenges' Calling based in Bastion.",
+						["g"] = {
+							-- i(182145),	-- Heavy Rainfall
+							-- i(181944),	-- Resonant Words
+							-- i(181867),	-- Swift Penitence
+							i(187419, {	-- Steward's First Feather (TOY!)
+								["timeline"] = { "added 9.1.5" },
+							}),
+						},
+					}),
 				}),
 				n(QUESTS, {
 				--	LIVE DATA

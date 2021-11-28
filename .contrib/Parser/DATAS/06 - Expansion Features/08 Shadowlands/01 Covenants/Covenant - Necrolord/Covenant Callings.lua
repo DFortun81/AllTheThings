@@ -9,7 +9,7 @@ _.ExpansionFeatures =
 			["customCollect"] = "SL_COV_NEC",	-- Necrolord
 			["maps"] = { SEAT_OF_THE_PRIMUS },
 			["g"] = {
-				n(-901, sharedData({	-- Covenant Callings
+				n(COVENANT_CALLINGS, sharedData({
 						["sourceQuests"] = { 59609 },	-- No Rest For the Dead
 						["repeatable"] = true,
 				}, {

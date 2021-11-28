@@ -15,7 +15,7 @@ _.ExpansionFeatures =
 				SINFALL_DEPTHS,
 			},
 			["g"] = {
-				n(-901, sharedData({	-- Covenant Callings
+				n(COVENANT_CALLINGS, sharedData({
 					["sourceQuests"] = {
 						59324,	-- Our True Purpose
 						62921,	-- Our True Purpose
