@@ -1107,13 +1107,36 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					n(11491, {	-- Old Ironbark
 						["description"] = "Talk to him for him to break down the door.",
 					}),
-					applyclassicphase(PHASE_FIVE, n(16097, -- Isalien Summonable
-						bubbleDown({
-							["timeline"] = { "removed 4.0.3" },
-							-- #if NOT ANYCLASSIC
-							["u"] = 11,
-							-- #endif
-						}, {
+					applyclassicphase(PHASE_FIVE, n(16097, -- Isalien
+					-- #if AFTER 4.0.3
+					{
+					-- This Update function unmarks the removed from game flag for folks with the brazier.
+					["OnUpdate"] = [[function(t)
+						t.OnUpdate = nil;
+						if GetItemCount(22057, true) > 0 then
+							t.u = nil;
+							for i,o in ipairs(t.g) do
+								if o.u and o.u == 11 then
+									o.u = nil;
+								end
+							end
+						else
+							t.u = 11;
+							for i,o in ipairs(t.g) do
+								if not o.u then
+									o.u = 11;
+								end
+							end
+						end
+					end]],
+					-- #else
+					bubbleDown({
+						["timeline"] = { "removed 4.0.3" },
+						-- #if NOT ANYCLASSIC
+						["u"] = 11,
+						-- #endif
+					}, {
+					-- #endif
 						["description"] = "This boss can be summoned using items from the |cff3399ff(Dungeon Set 2 questline)|r.",
 						["cost"] = {
 							{ "i", 22050, 1 },	-- Brazier of Beckoning [Isalien]
@@ -1133,7 +1156,11 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 								["timeline"] = { "deleted 5.0.4" },
 							}),
 						},
-					}))),
+					}
+					-- #if BEFORE 4.0.3
+					)
+					-- #endif
+					)),
 					e(405, {	-- Alzzin the Wildshaper
 						["creatureID"] = 11492,
 						["groups"] = {

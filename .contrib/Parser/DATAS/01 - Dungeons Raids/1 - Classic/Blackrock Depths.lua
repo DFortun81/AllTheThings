@@ -1504,20 +1504,53 @@ root("Instances", tier(CLASSIC_TIER, {
 						i(11623),	-- Spritecaster Cape
 					},
 				}),
-				o(181074, {		-- Arena Spoils Summonable Read Description
-					["description"] = "Banner of Provocation (Dungeon Set 2 questline) is required to summon this boss. Loot the grey chest on the grey grate after killing the mobs.",
-					["model"] = 196976,
+				applyclassicphase(PHASE_FIVE, n(16059, 	-- Theldren
+				-- #if AFTER 4.0.3
+				{
+				-- This Update function unmarks the removed from game flag for folks with the banner.
+				["OnUpdate"] = [[function(t)
+					t.OnUpdate = nil;
+					if GetItemCount(21986, true) > 0 then
+						t.u = nil;
+						for i,o in ipairs(t.g) do
+							if o.u and o.u == 11 then
+								o.u = nil;
+							end
+						end
+					else
+						t.u = 11;
+						for i,o in ipairs(t.g) do
+							if not o.u then
+								o.u = 11;
+							end
+						end
+					end
+				end]],
+				-- #else
+				bubbleDown({
+					["timeline"] = { "removed 4.0.3" },
+					-- #if NOT ANYCLASSIC
+					["u"] = 11,
+					-- #endif
+				}, {
+				-- #endif
+					["provider"] = { "o", 181074 },	-- Arena Spoils
+					["description"] = "Requires Banner of Provocation (Dungeon Set 2 Questline) to summon this boss. Loot the grey chest on the grey grate after killing the mobs. You must use the banner before the non-elites are killed.",
+					["cost"] = { { "i", 21986, 1 } },	-- Banner of Provocation
 					["groups"] = {
-						i(21986, {	-- Banner of Provocation
-							i(22305, {	-- Ironweave Mantle
-								["timeline"] = { "removed 4.0.1" },
-							}),
-							un(11, i(22317)),	-- Lefty's Brass Knuckle
-							un(11, i(22318)),	-- Malgen's Long Bow
-							un(11, i(22330)),	-- Shroud of Arcane Mastery
+						i(22047),	-- Top Piece of Lord Valthalak's Amulet
+						i(22305, {	-- Ironweave Mantle
+							["timeline"] = { "removed 4.0.1" },
 						}),
+						i(22317),	-- Lefty's Brass Knuckle
+						i(22318),	-- Malgen's Long Bow
+						i(22330),	-- Shroud of Arcane Mastery
 					},
-				}),
+				}
+				-- #if BEFORE 4.0.3
+				)
+				-- #endif
+				)),
 				e(372, {	-- Ring of Law
 					["description"] = "Approaching the center of the ring will start an event, and the High Justice will appear and approach one of the gates and release three waves of non-elite enemies, followed by one of six possible mini-bosses.",
 					["creatureID"] = 10096,	-- High Justice Grimstone
