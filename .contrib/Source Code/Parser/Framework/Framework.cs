@@ -482,7 +482,7 @@ namespace ATT
                                 else
                                 {
                                     // Mark the first patch this was removed on. (the upcoming patch)
-                                    if(removedPatch == 0) removedPatch = version;
+                                    if (removedPatch == 0) removedPatch = version;
                                     removed = 6;
                                 }
                                 break;
@@ -2923,7 +2923,7 @@ namespace ATT
                         var builder = new StringBuilder("-----------------------------------------------------\n--   M O U N T   D A T A B A S E   M O D U L E   --\n-----------------------------------------------------\n");
                         var keys = mounts.ToList();
                         keys.Sort();
-                        foreach(var itemID in keys)
+                        foreach (var itemID in keys)
                         {
                             var item = Framework.Items.GetNull(itemID);
                             if (item != null)

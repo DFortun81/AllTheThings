@@ -181,9 +181,6 @@ _.Zones =
 					["coord"] = { 52.6, 41.0, MECHAGON },
 					["crs"] = { 154342 },	-- Arachnoid Harvester (alt-time)
 					["g"] = {
-						crit(7, {	-- Arachnoid Harvester
-							["achievementID"] = 13470,	-- Rest in Pistons
-						}),
 						i(168823),	-- Rusty Mechanocrawler
 					},
 				}),
@@ -198,9 +195,6 @@ _.Zones =
 						{ 53.2, 49.7, MECHAGON },
 					},
 					["g"] = {
-						crit(30, {	-- Vaultbot
-							["achievementID"] = 13470,	-- Rest in Pistons
-						}),
 						i(167843, {	-- Blueprint: Vaultbot Key
 							["questID"] = 55058,
 							["g"] = {

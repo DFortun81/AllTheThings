@@ -834,7 +834,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 				["_quests"] = { 56003 },
 			}),
 		}),
-		ach(14160),		-- Rare to Well Done -- TODO:: update criteria when they get added
+		ach(14160),		-- Rare to Well Done
 		ach(13470, {	-- Rest In Pistons
 			crit(1),	-- Mechagnoian Nullfier
 			crit(2),	-- The Scrap King
@@ -867,7 +867,9 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(27),	-- Steel Singer Freza
 			crit(28),	-- Gear Checker Cogstar
 			crit(29),	-- Mr. Fixthis
-			crit(30),	-- Vaultbot
+			crit(30, {	-- Vaultbot
+				["_npcs"] = { 150394 }, 	-- Armored Vaultbot
+			}),
 			crit(31),	-- Enforcer KX-T57
 			crit(32),	-- The Rusty Prince
 			crit(33),	-- Gorged Gear-Cruncher

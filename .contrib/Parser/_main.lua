@@ -1571,7 +1571,7 @@ a = function(t)	-- Flag as Alliance Only
 	end
 	return t;
 end
-cr = function(id, t)											-- Add a Creature List to an object.
+crs = function(id, t)											-- Add a Creature List to an object.
 	if type(id) == "number" then
 		t.cr = id;
 	else
@@ -1579,7 +1579,6 @@ cr = function(id, t)											-- Add a Creature List to an object.
 	end
 	return t;
 end
-crs = cr;
 h = function(t) -- Flag as Horde Only
 	if t.races then
 		for key,value in pairs(t) do
