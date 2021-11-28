@@ -384,4 +384,5 @@ _.Zones =
 };
 _.HiddenQuestTriggers = {
 	q(54400),	-- Russel The Bard Recruited for Upright Citizens
+	q(54401),	-- Flynn Fairwind recruited for Upright Citizens
 };
