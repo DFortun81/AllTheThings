@@ -434,7 +434,7 @@ _.Instances = { tier(MOP_TIER, {
 							un(38, i(105826)),	-- Cape of the Alpha Normal (confirmed to drop from Ordos cache on July 23, 2020)
 							un(38, i(105832)),	-- Crimson Gauntlets of Death Normal (confirmed to drop from Ordos cache on July 23, 2020)
 							un(38, i(105829)),	-- Drape of the Omega Normal (confirmed to drop from Ordos cache on July 23, 2020)
-						--	un(REMOVED_FROM_GAME, i(105837)),	-- Gauntlets of Discarded Time Normal
+							un(38, i(105837)),	-- Gauntlets of Discarded Time Normal (confirmed to drop from Ordos cache on November 28, 2021)
 							un(38, i(105827)),	-- Kalaena's Arcane Handwraps (confirmed to drop from Ordos cache on April 28, 2020)
 							un(38, i(105833)),	-- Keengrip Arrowpullers Normal (confirmed to drop from Ordos cache on November 14, 2019)
 							un(38, i(105834)),	-- Marco's Crackling Gloves Normal (confirmed to drop from Ordos cache on May 6, 2020)
