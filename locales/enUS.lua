@@ -728,7 +728,6 @@ app.L = {
 		[27] = GetItemSubClassInfo(2,19),						-- Wands
 		[28] = GetItemSubClassInfo(2,10),						-- Staffs
 		[29] = GetItemSubClassInfo(2,6),						-- Polearms
-		-- Unused [30] = GetItemSubClassInfo(2,17),				-- Spears
 		[31] = GetItemSubClassInfo(2,3),						-- Guns
 		[32] = GetItemSubClassInfo(2,2),						-- Bows
 		[33] = GetItemSubClassInfo(2,18),						-- Crossbows
@@ -751,7 +750,7 @@ app.L = {
 		-- "Non-Equipment Types"
 		[100] = MOUNTS,											-- Mounts
 		[101] = AUCTION_CATEGORY_BATTLE_PETS,					-- Battle Pets
-		[102] = "Toys",											-- Toy Box
+		[102] = TOY_BOX,										-- Toy Box
 		[103] = "Illusions",									-- Illusions
 		[104] = ITEM_BIND_QUEST,								-- Quest Items
 		[105] = TRACKER_FILTER_ACHIEVEMENTS,					-- Achievements

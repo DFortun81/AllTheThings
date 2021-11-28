@@ -181,7 +181,7 @@ local L = app.L;
 	--TODO: L.CHANGE_SEARCH_FILTER = "Change Search Filter";
 	--TODO: L.CHANGE_SEARCH_FILTER_DESC = "Click this to change your search filter.";
 	--TODO: L.REROLL_2 = "Reroll: ";
-	--TODO: L.NOTHING_TO_SELECT_FROM = "There was nothing to randomly select from.";
+	--TODO: L.NOTHING_TO_SELECT_FROM = "There was nothing to randomly select from. If 'Ad-Hoc Updates' is enabled in Settings, the Main list must be updated (/att) before using this window.";
 	--TODO: L.NO_SEARCH_METHOD = "No search method specified.";
 	--TODO: L.PROFESSION_LIST = "Profession List";
 	--TODO: L.PROFESSION_LIST_DESC = "Open your professions to cache them.";
@@ -781,16 +781,11 @@ for key,value in pairs({
 		--TODO: [-913] = "Tormentors of Torghast",					-- Tormentors of Torghast
 		--TODO: [-914] = "Adventures",								-- Adventures
 		--TODO: [-915] = "Anima Conductor",							-- Anima Conductor
-		[-916] = string.format(COVENANT_SANCTUM_TIER, 1)..": 흐르는 줄기",	-- Tier 1: Flowing Tendrils
-		[-917] = string.format(COVENANT_SANCTUM_TIER, 2)..": 굽이치는 타래",-- Tier 2: Streaming Threads
-		[-918] = string.format(COVENANT_SANCTUM_TIER, 3)..": 흐르는 힘",	-- Tier 3: Flowing Power
 		[-977] = "방랑자 멜리",											-- Maelie the Wanderer
 		[-979] = "중개자 베켄 & 중개자 베노트",								-- Broker Ve'ken & Broker Ve'nott
 		-- SL Maldraxxus/Necrolord
 			--TODO: [-921] = "Sanctum Upgrades",					-- Sanctum Upgrades (Necrolord)
 			--TODO: [-924] = "Transport Network",					-- Transport Network (Necrolord)
-			[-925] = string.format(COVENANT_SANCTUM_TIER, 1)..": 친구 만들기",	-- Abomination Factory (Necrolord) Tier 1
-			[-926] = string.format(COVENANT_SANCTUM_TIER, 2)..": 사지 제작",	-- Abomination Factory (Necrolord) Tier 2
 			[-927] = string.format(COVENANT_SANCTUM_TIER, 3)..": 생명의 탄생",	-- Abomination Factory (Necrolord) Tier 3
 			[-928] = string.format(COVENANT_SANCTUM_TIER, 4)..": 만들어낸 친구",	-- Abomination Factory (Necrolord) Tier 4
 			[-938] = string.format(COVENANT_SANCTUM_TIER, 5)..": 우정은 영원히",	-- Abomination Factory (Necrolord) Tier 5

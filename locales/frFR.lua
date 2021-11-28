@@ -180,7 +180,7 @@ local L = app.L;
 	--TODO: L.CHANGE_SEARCH_FILTER = "Change Search Filter";
 	--TODO: L.CHANGE_SEARCH_FILTER_DESC = "Click this to change your search filter.";
 	--TODO: L.REROLL_2 = "Reroll: ";
-	--TODO: L.NOTHING_TO_SELECT_FROM = "There was nothing to randomly select from.";
+	--TODO: L.NOTHING_TO_SELECT_FROM = "There was nothing to randomly select from. If 'Ad-Hoc Updates' is enabled in Settings, the Main list must be updated (/att) before using this window.";
 	--TODO: L.NO_SEARCH_METHOD = "No search method specified.";
 	--TODO: L.PROFESSION_LIST = "Profession List";
 	--TODO: L.PROFESSION_LIST_DESC = "Open your professions to cache them.";
@@ -780,16 +780,11 @@ for key,value in pairs({
 		--TODO: [-913] = "Tormentors of Torghast",					-- Tormentors of Torghast
 		--TODO: [-914] = "Adventures",								-- Adventures
 		--TODO: [-915] = "Anima Conductor",							-- Anima Conductor
-		[-916] = string.format(COVENANT_SANCTUM_TIER, 1)..": Vrilles flottantes",	-- Tier 1: Flowing Tendrils
-		[-917] = string.format(COVENANT_SANCTUM_TIER, 2)..": Flots de fils",-- Tier 2: Streaming Threads
-		[-918] = string.format(COVENANT_SANCTUM_TIER, 3)..": Flot de puissance",	-- Tier 3: Flowing Power
 		[-977] = "Maélie la Vagabonde",								-- Maelie the Wanderer
 		[-979] = "Négociant Ve'ken & Négociant Ve'nott",			-- Broker Ve'ken & Broker Ve'nott
 		-- SL Maldraxxus/Necrolord
 			--TODO: [-921] = "Sanctum Upgrades",					-- Sanctum Upgrades (Necrolord)
 			--TODO: [-924] = "Transport Network",					-- Transport Network (Necrolord)
-			[-925] = string.format(COVENANT_SANCTUM_TIER, 1)..": Partenaire recomposé",	-- Abomination Factory (Necrolord) Tier 1
-			[-926] = string.format(COVENANT_SANCTUM_TIER, 2)..": Confection de membres",	-- Abomination Factory (Necrolord) Tier 2
 			[-927] = string.format(COVENANT_SANCTUM_TIER, 3)..": Insufflation de vie",	-- Abomination Factory (Necrolord) Tier 3
 			[-928] = string.format(COVENANT_SANCTUM_TIER, 4)..": Amis forgés de toutes pièces",	-- Abomination Factory (Necrolord) Tier 4
 			[-938] = string.format(COVENANT_SANCTUM_TIER, 5)..": Meilleurs amis pour la vie",	-- Abomination Factory (Necrolord) Tier 5

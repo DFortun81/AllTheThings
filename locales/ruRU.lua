@@ -181,7 +181,7 @@ local L = app.L;
 	L.CHANGE_SEARCH_FILTER = "Изменение Фильтра для Поиска";
 	L.CHANGE_SEARCH_FILTER_DESC = "Нажмите, чтобы изменить фильтр для поиска.";
 	L.REROLL_2 = "Повторный бросок: ";
-	L.NOTHING_TO_SELECT_FROM = "Не из чего делать случайный выбор.";
+	L.NOTHING_TO_SELECT_FROM = "Не из чего делать случайный выбор. Если включена опция 'Обновлять только видимые окна', то предварительно нужно открыть Основной Список (/att).";
 	L.NO_SEARCH_METHOD = "Не выбран метод для поиска.";
 	L.PROFESSION_LIST = "Список Профессий";
 	L.PROFESSION_LIST_DESC = "Откройте Ваши профессии для кэширования.";
@@ -764,16 +764,11 @@ for key,value in pairs({
 		[-913] = "Мучители из Торгаста",							-- Tormentors of Torghast
 		[-914] = "Приключения",										-- Adventures
 		[-915] = "Проводник анимы",									-- Anima Conductor
-		[-916] = string.format(COVENANT_SANCTUM_TIER, 1)..": Растущая паутина",	-- Tier 1: Flowing Tendrils
-		[-917] = string.format(COVENANT_SANCTUM_TIER, 2)..": Тянущиеся нити",-- Tier 2: Streaming Threads
-		[-918] = string.format(COVENANT_SANCTUM_TIER, 3)..": Текущая энергия",	-- Tier 3: Flowing Power
 		[-977] = "Маэли Странница",									-- Maelie the Wanderer
 		[-979] = "Брокер Ве'кен & Брокер Ве'нотт",					-- Broker Ve'ken & Broker Ve'nott
 		-- SL Maldraxxus/Necrolord
 			[-921] = "Улучшения для Обители",						-- Sanctum Upgrades (Necrolord)
 			[-924] = "Транспортная Сеть",							-- Transport Network (Necrolord)
-			[-925] = string.format(COVENANT_SANCTUM_TIER, 1)..": Собери себе друга",	-- Abomination Factory (Necrolord) Tier 1
-			[-926] = string.format(COVENANT_SANCTUM_TIER, 2)..": А теперь добавим ножек",	-- Abomination Factory (Necrolord) Tier 2
 			[-927] = string.format(COVENANT_SANCTUM_TIER, 3)..": Встань и живи",	-- Abomination Factory (Necrolord) Tier 3
 			[-928] = string.format(COVENANT_SANCTUM_TIER, 4)..": Кованые друзья",	-- Abomination Factory (Necrolord) Tier 4
 			[-938] = string.format(COVENANT_SANCTUM_TIER, 5)..": Лучшие друзья навсегда",	-- Abomination Factory (Necrolord) Tier 5

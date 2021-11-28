@@ -183,7 +183,7 @@ local L = app.L;
 	L.CHANGE_SEARCH_FILTER = "更改搜索过滤";
 	L.CHANGE_SEARCH_FILTER_DESC = "单击此按钮可更改搜索过滤.";
 	--TODO: L.REROLL_2 = "Reroll: ";
-	L.NOTHING_TO_SELECT_FROM = "没有什么可以随意选择的.";
+	L.NOTHING_TO_SELECT_FROM = "没有什么可以随意选择的. If 'Ad-Hoc Updates' is enabled in Settings, the Main list must be updated (/att) before using this window.";	-- TODO:
 	L.NO_SEARCH_METHOD = "未指定搜索方法.";
 	L.PROFESSION_LIST = "专业列表";
 	L.PROFESSION_LIST_DESC = "打开你的专业来缓存它们.";
@@ -833,16 +833,11 @@ for key,value in pairs({
 		[-913] = "托加斯特的折磨者",										-- Tormentors of Torghast
 		--TODO: [-914] = "Adventures",								-- Adventures
 		[-915] = "心能导流器",										-- Anima Conductor
-		[-916] = string.format(COVENANT_SANCTUM_TIER, 1)..": 流动卷须",	-- Tier 1: Flowing Tendrils
-		[-917] = string.format(COVENANT_SANCTUM_TIER, 2)..": 涌动丝缕",-- Tier 2: Streaming Threads
-		[-918] = string.format(COVENANT_SANCTUM_TIER, 3)..": 流动能量",	-- Tier 3: Flowing Power
 		[-977] = "游荡者梅莉",											-- Maelie the Wanderer
 		[-979] = "掮灵威·肯 & 掮灵威·诺特",									-- Broker Ve'ken & Broker Ve'nott
 		-- SL Maldraxxus/Necrolord
 			[-921] = "圣所升级",										-- Sanctum Upgrades (Necrolord)
 			[-924] = "传送网络",										-- Transport Network (Necrolord)
-			[-925] = string.format(COVENANT_SANCTUM_TIER, 1)..": 建造伙伴",	-- Abomination Factory (Necrolord) Tier 1
-			[-926] = string.format(COVENANT_SANCTUM_TIER, 2)..": 打造肢体",	-- Abomination Factory (Necrolord) Tier 2
 			[-927] = string.format(COVENANT_SANCTUM_TIER, 3)..": 给予生命",	-- Abomination Factory (Necrolord) Tier 3
 			[-928] = string.format(COVENANT_SANCTUM_TIER, 4)..": 铸就友谊",	-- Abomination Factory (Necrolord) Tier 4
 			[-938] = string.format(COVENANT_SANCTUM_TIER, 5)..": 永远的好魔友",	-- Abomination Factory (Necrolord) Tier 5
