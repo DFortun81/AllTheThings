@@ -10127,7 +10127,6 @@ app.CreateMusicRoll = function(questID, t)
 	return setmetatable(constructor(questID, t, "questID"), app.BaseMusicRoll);
 end
 
-local SelfieCameraMkII = { { "i", 122674 } };
 local fields = {
 	["key"] = function(t)
 		return "questID";
@@ -10168,7 +10167,6 @@ local fields = {
 };
 app.BaseSelfieFilter = app.BaseObjectFields(fields);
 app.CreateSelfieFilter = function(id, t)
-	t.providers = SelfieCameraMkII;
 	return setmetatable(constructor(id, t, "questID"), app.BaseSelfieFilter);
 end
 end)();
