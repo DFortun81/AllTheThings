@@ -355,9 +355,6 @@ namespace ATT
                 }
             }
 
-            // Items that were added to the game after the current expansion shouldn't be included in the game.
-            //data.TryGetValue("itemID", out decimal itemID);
-
             // Get the filter for this Item
             if (data.TryGetValue("f", out long f))
             {
@@ -368,30 +365,11 @@ namespace ATT
                     modID = 0;
                 }
             }
-            // Assign the modID if not already specified.
-            if (data.TryGetValue("modID", out object modIDRef))
+            // Apply the inherited modID for items which do not specify their own modID
+            if (modID > 0 && data.ContainsKey("itemID") && !data.ContainsKey("modID"))
             {
-                modID = Convert.ToInt64(modIDRef);
-                // don't use modID if there isn't one
-                if (modID <= 0) data.Remove("modID");
-            }
-            else if (data.ContainsKey("ignoreBonus"))
-            {
-                data.Remove("modID");
-            }
-            else if (modID > 0 && data.ContainsKey("itemID"))
-            {
-                // only modID if it's a real item and real modID
                 data["modID"] = modID;
             }
-
-            // Get the specific ItemID using ModID and BonusID of the data as well for accuracy
-            //decimal itemID = Items.GetSpecificItemID(data);
-
-            //if (data.TryGetValue("bonusID", out long bonusID) || modID != 0)
-            //{
-            //    Trace.WriteLine($"ItemID:{itemID}, ModID:{modID}, BonusID:{bonusID}");
-            //}
 
             if (data.TryGetValue("categoryID", out long categoryID)) ProcessCategoryObject(data, categoryID);
             if (data.TryGetValue("creatureID", out long creatureID))
