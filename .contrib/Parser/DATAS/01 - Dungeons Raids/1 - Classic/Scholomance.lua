@@ -21,7 +21,7 @@ root("Instances", tier(CLASSIC_TIER, {
 			-- #if AFTER MOP
 			d(1, {		-- Normal
 			-- #endif
-				n(QUESTS, {
+				n(QUESTS, sharedData({["modID"] = 0},{
 					q(28756, {	-- Aberrations of Bone
 						["qg"] = 49856,	-- Lord Raymond George
 						["sourceQuest"] = 27464,	-- Argent Call: The Trial of the Crypt
@@ -672,7 +672,7 @@ root("Instances", tier(CLASSIC_TIER, {
 							}),
 						},
 					}),
-				}),
+				})),
 				n(ZONE_DROPS, {
 					i(16255, {	-- Formula: Enchant 2H Weapon - Major Spirit / Formula: Enchant 2H Weapon - Major Versatility
 						-- #if BEFORE 5.0.4
@@ -1348,7 +1348,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				["lvl"] = 90,
 				["groups"] = {
 					ach(6396),	-- Sanguinarian
-					n(QUESTS, {
+					n(QUESTS, sharedData({["modID"] = 0},{
 						q(31448, {	-- An End to the Suffering
 							["provider"] = { "n", 64563 },	-- Talking Skull
 							["groups"] = {
@@ -1366,7 +1366,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						q(31442, {	-- The Four Tomes
 							["provider"] = { "n", 64563 },	-- Talking Skull
 						}),
-					}),
+					})),
 					e(659, {	-- Instructor Chillheart
 						["crs"] = {
 							58633,	-- Instructor Chillheart
