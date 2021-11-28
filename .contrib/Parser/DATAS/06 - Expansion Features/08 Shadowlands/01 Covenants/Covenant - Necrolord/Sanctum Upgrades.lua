@@ -16,21 +16,21 @@ _.ExpansionFeatures =
 									["cost"] = {
 										{ "i", 178061, 50 },	-- Malleable Flesh
 										{ "i", 183744, 5 },		-- Superior Parts
-										-- { "c", 1813, ? },	-- ?x Anima (not shown in-game)
+										-- { "c", ANIMA, ? },	-- ?x Anima (not shown in-game)
 									},
 								}),
 								i(181268, {	-- Backbone (PET!)
 									["cost"] = {
 										{ "i", 178061, 5 },	-- Malleable Flesh
 										{ "i", 172092, 1 },	-- Pallid Bone
-										{ "c", 1813, 750 },	-- 750 Reservoir Anima
+										{ "c", ANIMA, 750 },	-- 750 Reservoir Anima
 									},
 								}),
 								i(181282, {	-- Mu'dud (PET!)
 									["cost"] = {
 										{ "i", 178061, 10 },	-- Malleable Flesh
 										{ "i", 183744, 5 },		-- Superior Parts
-										{ "c", 1813, 1250 },	-- 1250 Reservoir Anima
+										{ "c", ANIMA, 1250 },	-- 1250 Reservoir Anima
 									},
 								}),
 								-- Note: have to use ["name"] for the quest trackers so that it shows names in list instead of Quest #xxxxx

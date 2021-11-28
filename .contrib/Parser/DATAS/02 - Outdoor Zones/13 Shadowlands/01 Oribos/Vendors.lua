@@ -97,7 +97,7 @@ _.Zones =
 						i(188198, {	-- Travlers Anima Cache
 							["description"] = "This item allow you to transfer anima between characters in a one-to-one ratio.",
 							["cost"] = {
-								{ "c", 1813, 1000 },	-- Anima
+								{ "c", ANIMA, 1000 },	-- Anima
 							},
 							["g"] = {
 								currency(1813),	-- 1000xAnima
@@ -263,7 +263,7 @@ _.Zones =
 						i(182207),	-- Illusion: Sinsedge
 						n(VENTHYR, sharedData({["customCollect"] = { "SL_COV_VEN" }}, {
 							i(183708, {	-- Glittering Gold Sinstone Chain
-								["cost"] = { { "c", 1813, 3500 } },
+								["cost"] = { { "c", ANIMA, 3500 } },
 							}),
 						})),
 					},
@@ -384,10 +384,10 @@ _.Zones =
 						i(184753),	-- Tree-Scaler's Britches
 						n(NIGHT_FAE, sharedData({["customCollect"] = { "SL_COV_NFA" }}, {
 							i(182168, {	-- Crane Soul
-								["cost"] = { { "c", 1813, 1500 } },	-- Reservoir Anima
+								["cost"] = { { "c", ANIMA, 1500 } },	-- Reservoir Anima
 							}),
 							i(181309, {	-- Faewoven Pack
-								["cost"] = { { "c", 1813, 3500 } },	-- Reservoir Anima
+								["cost"] = { { "c", ANIMA, 3500 } },	-- Reservoir Anima
 							}),
 						})),
 					},

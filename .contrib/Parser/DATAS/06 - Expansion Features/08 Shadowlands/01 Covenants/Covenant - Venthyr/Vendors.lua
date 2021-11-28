@@ -17,183 +17,183 @@ _.ExpansionFeatures =
 							{ ["customCollect"] = "SL_COV_VEN", }	-- Venthyr
 							, {
 							i(184665, {	-- Chronicle of Lost Memories
-								["cost"] = { { "c", 1885, 35 } },		-- 35x Grateful Offering
+								["cost"] = { { "c", GRATEFUL, 35 } },		-- 35x Grateful Offering
 							}),
 							i(183249, {	-- Memory of a Vital Sacrifice
 							--	appears on the vendor at Renown 14, not sure if this is the same or different for other covenants
-								["cost"] = { { "c", 1813, 250 } },	-- 250x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 250 } },	-- 250x Reservoir Anima
 							}),
 							i(182332, {	-- Gravestone Battle Armor (MOUNT!)
 								["cost"] = {
-									{ "c", 1813, 100 },	-- 100x Reservoir Anima
-									{ "c", 1885, 50 },	-- 50x Grateful Offering
+									{ "c", ANIMA, 100 },	-- 100x Reservoir Anima
+									{ "c", GRATEFUL, 50 },	-- 50x Grateful Offering
 								},
 							}),
 							i(180461, {	-- Horrid Dredwing (MOUNT!)
 								["cost"] = {
-									{ "c", 1813, 5000 },	-- 5,000x Reservoir Anima
-									{ "c", 1885, 100 },		-- 100x Grateful Offering
+									{ "c", ANIMA, 5000 },	-- 5,000x Reservoir Anima
+									{ "c", GRATEFUL, 100 },		-- 100x Grateful Offering
 								},
 							}),
 							i(186478, {	-- Obsidian Gravewing (MOUNT!)
-								["cost"] = { { "c", 1813, 7500 } },	-- 7,500x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 7500 } },	-- 7,500x Reservoir Anima
 							}),
 							i(183715, {	-- Sinfall Gargon (MOUNT!)
-								["cost"] = { { "c", 1813, 5000 } },	-- 5,000x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 5000 } },	-- 5,000x Reservoir Anima
 							}),
 							i(181555, {	-- Sinheart (PET!)
 								["cost"] = {
-									{ "c", 1813, 1500 },	-- 1,500x Reservoir Anima
-									{ "c", 1885, 30 },		-- 30x Grateful Offering
+									{ "c", ANIMA, 1500 },	-- 1,500x Reservoir Anima
+									{ "c", GRATEFUL, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(183716, {	-- Venthyr Sinstone (TOY!)
-								["cost"] = { { "c", 1813, 750 } },	-- 750x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 750 } },	-- 750x Reservoir Anima
 							}),
 							i(182204, {	-- Illusion: Sinwrath
 								["illusionID"] = 6258,	-- this doesn't want to be collectible without the ID added here, even though it's in the Illusions.lua file in the item DB
-								["cost"] = { { "c", 1813, 2500 } },	-- 2,500x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 2500 } },	-- 2,500x Reservoir Anima
 							}),
 							i(182433, {	-- Barbedged Dredblade
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
-									{ "c", 1885, 50 },		-- 50x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", GRATEFUL, 50 },		-- 50x Grateful Offering
 								},
 							}),
 							i(182429, {	-- Claw of the Gilded Stoneborn
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
-									{ "c", 1885, 50 },		-- 50x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", GRATEFUL, 50 },		-- 50x Grateful Offering
 								},
 							}),
 							i(181046, {	-- Crimson Death Shroud Belt
 								["cost"] = {
-									{ "c", 1813, 3000 },	-- 3,000 Reservoir Anima
-									{ "c", 1885, 25 },		-- 25x Grateful Offering
+									{ "c", ANIMA, 3000 },	-- 3,000 Reservoir Anima
+									{ "c", GRATEFUL, 25 },		-- 25x Grateful Offering
 								},
 							}),
 							i(181047, {	-- Crimson Death Shroud Bindings
 								["cost"] = {
-									{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
-									{ "c", 1885, 15 },		-- 15x Grateful Offering
+									{ "c", ANIMA, 2000 },	-- 2,000x Reservoir Anima
+									{ "c", GRATEFUL, 15 },		-- 15x Grateful Offering
 								},
 							}),
 							i(181041, {	-- Crimson Death Shroud Boots
 								["cost"] = {
-									{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
-									{ "c", 1885, 15 },		-- 15x Grateful Offering
+									{ "c", ANIMA, 2000 },	-- 2,000x Reservoir Anima
+									{ "c", GRATEFUL, 15 },		-- 15x Grateful Offering
 								},
 							}),
 							i(181044, {	-- Crimson Death Shroud Breeches
 								["cost"] = {
-									{ "c", 1813, 3000 },	-- 3,000 Reservoir Anima
-									{ "c", 1885, 25 },		-- 25x Grateful Offering
+									{ "c", ANIMA, 3000 },	-- 3,000 Reservoir Anima
+									{ "c", GRATEFUL, 25 },		-- 25x Grateful Offering
 								},
 							}),
 							i(181042, {	-- Crimson Death Shroud Gloves
 								["cost"] = {
-									{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
-									{ "c", 1885, 15 },		-- 15x Grateful Offering
+									{ "c", ANIMA, 2000 },	-- 2,000x Reservoir Anima
+									{ "c", GRATEFUL, 15 },		-- 15x Grateful Offering
 								},
 							}),
 							i(181043, {	-- Crimson Death Shroud Hood
 								["cost"] = {
-									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
-									{ "c", 1885, 30 },		-- 30x Grateful Offering
+									{ "c", ANIMA, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", GRATEFUL, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(181045, {	-- Crimson Death Shroud Spaulders
 								["cost"] = {
-									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
-									{ "c", 1885, 30 },		-- 30x Grateful Offering
+									{ "c", ANIMA, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", GRATEFUL, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(181040, {	-- Crimson Death Shroud Vest
 								["cost"] = {
-									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
-									{ "c", 1885, 30 },		-- 30x Grateful Offering
+									{ "c", ANIMA, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", GRATEFUL, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(181048, {	-- Crimson Death Shroud Wrap
 								["cost"] = {
-									{ "c", 1813, 1500 },	-- 1,500x Reservoir Anima
-									{ "c", 1885, 10 },		-- 10x Grateful Offering
+									{ "c", ANIMA, 1500 },	-- 1,500x Reservoir Anima
+									{ "c", GRATEFUL, 10 },		-- 10x Grateful Offering
 								},
 							}),
 							i(182436, {	-- Crimson Dredwing Glaive
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
-									{ "c", 1885, 50 },		-- 50x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", GRATEFUL, 50 },		-- 50x Grateful Offering
 								},
 							}),
 							i(182434, {	-- Crimson-Edged Wingblade
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
-									{ "c", 1885, 50 },		-- 50x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", GRATEFUL, 50 },		-- 50x Grateful Offering
 								},
 							}),
 							i(182435, {	-- Crimsonbarbed Sinbreaker
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
-									{ "c", 1885, 50 },		-- 50x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", GRATEFUL, 50 },		-- 50x Grateful Offering
 								},
 							}),
 							i(181005, {	-- Dread Sentinel's Crimson Chestplate
 								["cost"] = {
-									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
-									{ "c", 1885, 30 },		-- 30x Grateful Offering
+									{ "c", ANIMA, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", GRATEFUL, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(181012, {	-- Dread Sentinel's Crimson Cloak
 								["cost"] = {
-									{ "c", 1813, 1500 },	-- 1,500x Reservoir Anima
-									{ "c", 1885, 10 },		-- 10x Grateful Offering
+									{ "c", ANIMA, 1500 },	-- 1,500x Reservoir Anima
+									{ "c", GRATEFUL, 10 },		-- 10x Grateful Offering
 								},
 							}),
 							i(181010, {	-- Dread Sentinel's Crimson Girdle
 								["cost"] = {
-									{ "c", 1813, 3000 },	-- 3,000 Reservoir Anima
-									{ "c", 1885, 25 },		-- 25x Grateful Offering
+									{ "c", ANIMA, 3000 },	-- 3,000 Reservoir Anima
+									{ "c", GRATEFUL, 25 },		-- 25x Grateful Offering
 								},
 							}),
 							i(181006, {	-- Dread Sentinel's Crimson Greatboots
 								["cost"] = {
-									{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
-									{ "c", 1885, 15 },		-- 15x Grateful Offering
+									{ "c", ANIMA, 2000 },	-- 2,000x Reservoir Anima
+									{ "c", GRATEFUL, 15 },		-- 15x Grateful Offering
 								},
 							}),
 							i(181007, {	-- Dread Sentinel's Crimson Grips
 								["cost"] = {
-									{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
-									{ "c", 1885, 15 },		-- 15x Grateful Offering
+									{ "c", ANIMA, 2000 },	-- 2,000x Reservoir Anima
+									{ "c", GRATEFUL, 15 },		-- 15x Grateful Offering
 								},
 							}),
 							i(181004, {	-- Dread Sentinel's Crimson Headgear
 								["cost"] = {
-									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
-									{ "c", 1885, 30 },		-- 30x Grateful Offering
+									{ "c", ANIMA, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", GRATEFUL, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(181008, {	-- Dread Sentinel's Crimson Legguards
 								["cost"] = {
-									{ "c", 1813, 3000 },	-- 3,000 Reservoir Anima
-									{ "c", 1885, 25 },		-- 25x Grateful Offering
+									{ "c", ANIMA, 3000 },	-- 3,000 Reservoir Anima
+									{ "c", GRATEFUL, 25 },		-- 25x Grateful Offering
 								},
 							}),
 							i(181009, {	-- Dread Sentinel's Crimson Spaulders
 								["cost"] = {
-									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
-									{ "c", 1885, 30 },		-- 30x Grateful Offering
+									{ "c", ANIMA, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", GRATEFUL, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(181011, {	-- Dread Sentinel's Crimson Vambraces
 								["cost"] = {
-									{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
-									{ "c", 1885, 15 },		-- 15x Grateful Offering
+									{ "c", ANIMA, 2000 },	-- 2,000x Reservoir Anima
+									{ "c", GRATEFUL, 15 },		-- 15x Grateful Offering
 								},
 							}),
 							i(186508, {	-- Ensemble: Court Inquisitor's Vestments
-								["cost"] = { { "c", 1813, 10000 } },	-- 10,000x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 10000 } },	-- 10,000x Reservoir Anima
 								["g"] = {
 									i(185097),	-- Court Inquisitor's Cape
 									i(185091),	-- Court Inquisitor's Handwraps
@@ -207,7 +207,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(186510, {	-- Ensemble: Sinful Inquisitor's Vestments
-								["cost"] = { { "c", 1813, 10000 } },	-- 10,000x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 10000 } },	-- 10,000x Reservoir Anima
 								["g"] = {
 									i(185118),	-- Sinful Inquisitor's Handwraps
 									i(185119),	-- Sinful Inquisitor's Hood
@@ -221,7 +221,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(186509, {	-- Ensemble: Sinful Venthyr Attire
-								["cost"] = { { "c", 1813, 10000 } },	-- 10,000x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 10000 } },	-- 10,000x Reservoir Anima
 								["g"] = {
 									i(185083),	-- Sinfall Venthyr Handwraps
 									i(185084),	-- Sinfall Venthyr Hood
@@ -235,173 +235,173 @@ _.ExpansionFeatures =
 							}),
 							i(181073, {	-- Fearstalker's Crimson Belt
 								["cost"] = {
-									{ "c", 1813, 3000 },	-- 3,000 Reservoir Anima
-									{ "c", 1885, 25 },		-- 25x Grateful Offering
+									{ "c", ANIMA, 3000 },	-- 3,000 Reservoir Anima
+									{ "c", GRATEFUL, 25 },		-- 25x Grateful Offering
 								},
 							}),
 							i(181074, {	-- Fearstalker's Crimson Bracers
 								["cost"] = {
-									{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
-									{ "c", 1885, 15 },		-- 15x Grateful Offering
+									{ "c", ANIMA, 2000 },	-- 2,000x Reservoir Anima
+									{ "c", GRATEFUL, 15 },		-- 15x Grateful Offering
 								},
 							}),
 							i(181075, {	-- Fearstalker's Crimson Cloak
 								["cost"] = {
-									{ "c", 1813, 1500 },	-- 1,500x Reservoir Anima
-									{ "c", 1885, 10 },		-- 10x Grateful Offering
+									{ "c", ANIMA, 1500 },	-- 1,500x Reservoir Anima
+									{ "c", GRATEFUL, 10 },		-- 10x Grateful Offering
 								},
 							}),
 							i(181069, {	-- Fearstalker's Crimson Gauntlets
 								["cost"] = {
-									{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
-									{ "c", 1885, 15 },		-- 15x Grateful Offering
+									{ "c", ANIMA, 2000 },	-- 2,000x Reservoir Anima
+									{ "c", GRATEFUL, 15 },		-- 15x Grateful Offering
 								},
 							}),
 							i(181067, {	-- Fearstalker's Crimson Hauberk
 								["cost"] = {
-									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
-									{ "c", 1885, 30 },		-- 30x Grateful Offering
+									{ "c", ANIMA, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", GRATEFUL, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(181070, {	-- Fearstalker's Crimson Helm
 								["cost"] = {
-									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
-									{ "c", 1885, 30 },		-- 30x Grateful Offering
+									{ "c", ANIMA, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", GRATEFUL, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(181071, {	-- Fearstalker's Crimson Leggings
 								["cost"] = {
-									{ "c", 1813, 3000 },	-- 3,000 Reservoir Anima
-									{ "c", 1885, 25 },		-- 25x Grateful Offering
+									{ "c", ANIMA, 3000 },	-- 3,000 Reservoir Anima
+									{ "c", GRATEFUL, 25 },		-- 25x Grateful Offering
 								},
 							}),
 							i(181072, {	-- Fearstalker's Crimson Monnion
 								["cost"] = {
-									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
-									{ "c", 1885, 30 },		-- 30x Grateful Offering
+									{ "c", ANIMA, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", GRATEFUL, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(181068, {	-- Fearstalker's Crimson Sabatons
 								["cost"] = {
-									{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
-									{ "c", 1885, 15 },		-- 15x Grateful Offering
+									{ "c", ANIMA, 2000 },	-- 2,000x Reservoir Anima
+									{ "c", GRATEFUL, 15 },		-- 15x Grateful Offering
 								},
 							}),
 							i(182432, {	-- Gilded Sentry Stave
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
-									{ "c", 1885, 50 },		-- 50x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", GRATEFUL, 50 },		-- 50x Grateful Offering
 								},
 							}),
 							i(182431, {	-- Gilded Sineater's Staff
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
-									{ "c", 1885, 50 },		-- 50x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", GRATEFUL, 50 },		-- 50x Grateful Offering
 								},
 							}),
 							i(182428, {	-- Gilded Sinfall Bastard Sword
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
-									{ "c", 1885, 50 },		-- 50x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", GRATEFUL, 50 },		-- 50x Grateful Offering
 								},
 							}),
 							i(183712, {	-- Gleaming Crypt Keeper's Mantle
-								["cost"] = { { "c", 1813, 3500 } },	-- 3,500x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 3500 } },	-- 3,500x Reservoir Anima
 							}),
 							i(183705, {	-- Mantle of Crimson Blades
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
-									{ "c", 1885, 40 },		-- 40x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", GRATEFUL, 40 },		-- 40x Grateful Offering
 								},
 							}),
 							i(182437, {	-- Screecher's Crimson Spinethrower
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
-									{ "c", 1885, 50 },		-- 50x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", GRATEFUL, 50 },		-- 50x Grateful Offering
 								},
 							}),
 							i(183975, {	-- Sinfall Ceremonial Blade
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
-									{ "c", 1885, 50 },		-- 50x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", GRATEFUL, 50 },		-- 50x Grateful Offering
 								},
 							}),
 							i(182438, {	-- Sinfall Gilded Bulwark
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
-									{ "c", 1885, 50 },		-- 50x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", GRATEFUL, 50 },		-- 50x Grateful Offering
 								},
 							}),
 							i(182427, {	-- Sinfall Heartpiercer
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
-									{ "c", 1885, 50 },		-- 50x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", GRATEFUL, 50 },		-- 50x Grateful Offering
 								},
 							}),
 							i(182439, {	-- Sinheart Spell Foci
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
-									{ "c", 1885, 50 },		-- 50x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", GRATEFUL, 50 },		-- 50x Grateful Offering
 								},
 							}),
 							i(182430, {	-- Sinseeker's Dredwing Gavel
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
-									{ "c", 1885, 50 },		-- 50x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", GRATEFUL, 50 },		-- 50x Grateful Offering
 								},
 							}),
 							i(181102, {	-- Soulbreaker's Crimson Drape
 								["cost"] = {
-									{ "c", 1813, 1500 },	-- 1,500x Reservoir Anima
-									{ "c", 1885, 10 },		-- 10x Grateful Offering
+									{ "c", ANIMA, 1500 },	-- 1,500x Reservoir Anima
+									{ "c", GRATEFUL, 10 },		-- 10x Grateful Offering
 								},
 							}),
 							i(181096, {	-- Soulbreaker's Crimson Handwraps
 								["cost"] = {
-									{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
-									{ "c", 1885, 15 },		-- 15x Grateful Offering
+									{ "c", ANIMA, 2000 },	-- 2,000x Reservoir Anima
+									{ "c", GRATEFUL, 15 },		-- 15x Grateful Offering
 								},
 							}),
 							i(181097, {	-- Soulbreaker's Crimson Hood
 								["cost"] = {
-									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
-									{ "c", 1885, 30 },		-- 30x Grateful Offering
+									{ "c", ANIMA, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", GRATEFUL, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(181098, {	-- Soulbreaker's Crimson Leggings
 								["cost"] = {
-									{ "c", 1813, 3000 },	-- 3,000 Reservoir Anima
-									{ "c", 1885, 25 },		-- 25x Grateful Offering
+									{ "c", ANIMA, 3000 },	-- 3,000 Reservoir Anima
+									{ "c", GRATEFUL, 25 },		-- 25x Grateful Offering
 								},
 							}),
 							i(181099, {	-- Soulbreaker's Crimson Mantle
 								["cost"] = {
-									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
-									{ "c", 1885, 30 },		-- 30x Grateful Offering
+									{ "c", ANIMA, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", GRATEFUL, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(181100, {	-- Soulbreaker's Crimson Sash
 								["cost"] = {
-									{ "c", 1813, 3000 },	-- 3,000 Reservoir Anima
-									{ "c", 1885, 25 },		-- 25x Grateful Offering
+									{ "c", ANIMA, 3000 },	-- 3,000 Reservoir Anima
+									{ "c", GRATEFUL, 25 },		-- 25x Grateful Offering
 								},
 							}),
 							i(181095, {	-- Soulbreaker's Crimson Slippers
 								["cost"] = {
-									{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
-									{ "c", 1885, 15 },		-- 15x Grateful Offering
+									{ "c", ANIMA, 2000 },	-- 2,000x Reservoir Anima
+									{ "c", GRATEFUL, 15 },		-- 15x Grateful Offering
 								},
 							}),
 							i(181094, {	-- Soulbreaker's Crimson Vestments
 								["cost"] = {
-									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
-									{ "c", 1885, 30 },		-- 30x Grateful Offering
+									{ "c", ANIMA, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", GRATEFUL, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(181101, {	-- Soulbreaker's Crimson Wraps
 								["cost"] = {
-									{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
-									{ "c", 1885, 15 },		-- 15x Grateful Offering
+									{ "c", ANIMA, 2000 },	-- 2,000x Reservoir Anima
+									{ "c", GRATEFUL, 15 },		-- 15x Grateful Offering
 								},
 							}),
 						}),
@@ -411,190 +411,190 @@ _.ExpansionFeatures =
 						["g"] = {
 							i(181143, {	-- Claw of the Stoneborn Executioner
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3500x Reservoir Anima
-									{ "c", 1885, 10 },		-- 10x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3500x Reservoir Anima
+									{ "c", GRATEFUL, 10 },		-- 10x Grateful Offering
 								},
 							}),
 							i(181142, {	-- Dark Blade of the Repentant
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3500x Reservoir Anima
-									{ "c", 1885, 10 },		-- 10x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3500x Reservoir Anima
+									{ "c", GRATEFUL, 10 },		-- 10x Grateful Offering
 								},
 							}),
 							i(181154, {	-- Dark Bulwark of Death's Vigil
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3500x Reservoir Anima
-									{ "c", 1885, 10 },		-- 10x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3500x Reservoir Anima
+									{ "c", GRATEFUL, 10 },		-- 10x Grateful Offering
 								},
 							}),
 							i(180902, {	-- Dread Sentinel's Ebony Chestplate
-								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
 							}),
 							i(180921, {	-- Dread Sentinel's Ebony Spaulders
-								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
 							}),
 							i(181149, {	-- Dredbat's Dark Guile
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3500x Reservoir Anima
-									{ "c", 1885, 10 },		-- 10x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3500x Reservoir Anima
+									{ "c", GRATEFUL, 10 },		-- 10x Grateful Offering
 								},
 							}),
 							i(181152, {	-- Dredwing's Ebon Edge
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3500x Reservoir Anima
-									{ "c", 1885, 10 },		-- 10x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3500x Reservoir Anima
+									{ "c", GRATEFUL, 10 },		-- 10x Grateful Offering
 								},
 							}),
 							i(180920, {	-- Ebony Death Shroud Spaulders
-								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
 							}),
 							i(180904, {	-- Ebony Death Shroud Vest
-								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
 							}),
 							i(181153, {	-- Ebony Dredspine Repeater
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3500x Reservoir Anima
-									{ "c", 1885, 10 },		-- 10x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3500x Reservoir Anima
+									{ "c", GRATEFUL, 10 },		-- 10x Grateful Offering
 								},
 							}),
 							i(181141, {	-- Ebony Soul Piercer
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3500x Reservoir Anima
-									{ "c", 1885, 10 },		-- 10x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3500x Reservoir Anima
+									{ "c", GRATEFUL, 10 },		-- 10x Grateful Offering
 								},
 							}),
 							i(180903, {	-- Fearstalker's Ebony Hauberk
-								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
 							}),
 							i(180923, {	-- Fearstalker's Ebony Monnion
-								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
 							}),
 							i(181144, {	-- Gavel of Dark Diviniaton
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3500x Reservoir Anima
-									{ "c", 1885, 10 },		-- 10x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3500x Reservoir Anima
+									{ "c", GRATEFUL, 10 },		-- 10x Grateful Offering
 								},
 							}),
 							i(181150, {	-- Sin's Ebon Edge
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3500x Reservoir Anima
-									{ "c", 1885, 10 },		-- 10x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3500x Reservoir Anima
+									{ "c", GRATEFUL, 10 },		-- 10x Grateful Offering
 								},
 							}),
 							i(181146, {	-- Singed Soul Spire
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3500x Reservoir Anima
-									{ "c", 1885, 10 },		-- 10x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3500x Reservoir Anima
+									{ "c", GRATEFUL, 10 },		-- 10x Grateful Offering
 								},
 							}),
 							i(181156, {	-- Sinstealer's Dark Foci
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3500x Reservoir Anima
-									{ "c", 1885, 10 },		-- 10x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3500x Reservoir Anima
+									{ "c", GRATEFUL, 10 },		-- 10x Grateful Offering
 								},
 							}),
 							i(180922, {	-- Soulbreaker's Ebony Mantle
-								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
 							}),
 							i(180901, {	-- Soulbreaker's Ebony Vestments
-								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
 							}),
 							i(181151, {	-- Souleater's Ebony Barb
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3500x Reservoir Anima
-									{ "c", 1885, 10 },		-- 10x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3500x Reservoir Anima
+									{ "c", GRATEFUL, 10 },		-- 10x Grateful Offering
 								},
 							}),
 							i(181148, {	-- Stave of Dark Passions
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3500x Reservoir Anima
-									{ "c", 1885, 10 },		-- 10x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3500x Reservoir Anima
+									{ "c", GRATEFUL, 10 },		-- 10x Grateful Offering
 								},
 							}),
 							i(180938, {	-- Dread Sentinel's Ebony Cloak
-								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
 							}),
 							i(180924, {	-- Dread Sentinel's Ebony Girdle
-								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
 							}),
 							i(180905, {	-- Dread Sentinel's Ebony Greatboots
-								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
 							}),
 							i(180910, {	-- Dread Sentinel's Ebony Grips
-								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
 							}),
 							i(180900, {	-- Dread Sentinel's Ebony Headgear
-								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
 							}),
 							i(180916, {	-- Dread Sentinel's Ebony Legguards
-								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
 							}),
 							i(180929, {	-- Dread Sentinel's Ebony Vambraces
-								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
 							}),
 							i(180927, {	-- Ebony Death Shroud Belt
-								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
 							}),
 							i(180931, {	-- Ebony Death Shroud Bindings
-								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
 							}),
 							i(180908, {	-- Ebony Death Shroud Boots
-								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
 							}),
 							i(180919, {	-- Ebony Death Shroud Breeches
-								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
 							}),
 							i(180936, {	-- Ebony Death Shroud Cloak
-								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
 							}),
 							i(180909, {	-- Ebony Death Shroud Gloves
-								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
 							}),
 							i(180915, {	-- Ebony Death Shroud Hood
-								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
 							}),
 							i(180926, {	-- Fearstalker's Ebony Belt
-								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
 							}),
 							i(180930, {	-- Fearstalker's Ebony Bracers
-								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
 							}),
 							i(180937, {	-- Fearstalker's Ebony Cloak
-								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
 							}),
 							i(180912, {	-- Fearstalker's Ebony Gauntlets
-								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
 							}),
 							i(180914, {	-- Fearstalker's Ebony Helm
-								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
 							}),
 							i(180918, {	-- Fearstalker's Ebony Leggings
-								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
 							}),
 							i(180907, {	-- Fearstalker's Ebony Sabatons
-								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
 							}),
 							i(180934, {	-- Soulbreaker's Ebony Drape
-								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
 							}),
 							i(180911, {	-- Soulbreaker's Ebony Handwraps
-								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
 							}),
 							i(180913, {	-- Soulbreaker's Ebony Hood
-								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
 							}),
 							i(180917, {	-- Soulbreaker's Ebony Leggings
-								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
 							}),
 							i(180925, {	-- Soulbreaker's Ebony Sash
-								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
 							}),
 							i(180906, {	-- Soulbreaker's Ebony Slippers
-								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
 							}),
 
 							i(180928, {	-- Soulbreaker's Ebony Wraps
-								["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
 							}),
 						},
 					}),

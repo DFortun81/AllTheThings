@@ -2011,46 +2011,46 @@ _.ExpansionFeatures =
 									["coord"] = { 32.0, 41.2, REVENDRETH },
 									["g"] = {
 										i(182371, {	-- Claws of the Court's Sentinels
-											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 1750 } },	-- 1,750x Reservoir Anima
 										}),
 										i(182380, {	-- Court Bodyguard's Cover
-											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 1750 } },	-- 1,750x Reservoir Anima
 										}),
 										i(182376, {	-- Court Guardian's Blade
-											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 1750 } },	-- 1,750x Reservoir Anima
 										}),
 										i(182377, {	-- Court Sinweaver's Blade
-											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 1750 } },	-- 1,750x Reservoir Anima
 										}),
 										i(182381, {	-- Court's Crystal
-											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 1750 } },	-- 1,750x Reservoir Anima
 										}),
 										i(182370, {	-- Crusader's Blade of the Ember Court
-											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 1750 } },	-- 1,750x Reservoir Anima
 										}),
 										i(182373, {	-- Ember Court Accuser's Stave
-											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 1750 } },	-- 1,750x Reservoir Anima
 										}),
 										i(183974, {	-- Ember Court Ceremonial Dagger
-											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 1750 } },	-- 1,750x Reservoir Anima
 										}),
 										i(182375, {	-- Ember Court Duelist's Blade
-											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 1750 } },	-- 1,750x Reservoir Anima
 										}),
 										i(182372, {	-- Ember Court Gavel
-											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 1750 } },	-- 1,750x Reservoir Anima
 										}),
 										i(182379, {	-- Ember Court Sentry's Crossbow
-											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 1750 } },	-- 1,750x Reservoir Anima
 										}),
 										i(182369, {	-- Ornate Ember Court Dagger
-											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 1750 } },	-- 1,750x Reservoir Anima
 										}),
 										i(182374, {	-- Spiked Ember Court Stave
-											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 1750 } },	-- 1,750x Reservoir Anima
 										}),
 										i(182378, {	-- Winged Blade of the Ember Court
-											["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 1750 } },	-- 1,750x Reservoir Anima
 										}),
 									},
 								}),
@@ -2072,7 +2072,7 @@ _.ExpansionFeatures =
 											["cost"] = 5000000,	-- 500g
 										}),
 										i(177234, {	-- Rally Bell
-											["cost"] = { { "c", 1813, 25 } },
+											["cost"] = { { "c", ANIMA, 25 } },
 											["g"] = {
 												crit(5, {	-- Rally Bell
 													["achievementID"] = 14678,	-- Court Favors
@@ -2085,112 +2085,112 @@ _.ExpansionFeatures =
 									["coord"] = { 28.3, 43.7, REVENDRETH },
 									["g"] = {
 										i(181055, {	-- Court Death Shroud Belt
-											["cost"] = { { "c", 1813, 750 } },	-- 750x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 750 } },	-- 750x Reservoir Anima
 										}),
 										i(181056, {	-- Court Death Shroud Bindings
-											["cost"] = { { "c", 1813, 750 } },	-- 750x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 750 } },	-- 750x Reservoir Anima
 										}),
 										i(181050, {	-- Court Death Shroud Boots
-											["cost"] = { { "c", 1813, 1500 } },	-- 1,500x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 1500 } },	-- 1,500x Reservoir Anima
 										}),
 										i(181053, {	-- Court Death Shroud Breeches
-											["cost"] = { { "c", 1813, 1500 } },	-- 1,500x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 1500 } },	-- 1,500x Reservoir Anima
 										}),
 										i(181057, {	-- Court Death Shroud Cloak
-											["cost"] = { { "c", 1813, 750 } },	-- 750x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 750 } },	-- 750x Reservoir Anima
 										}),
 										i(181051, {	-- Court Death Shroud Gloves
-											["cost"] = { { "c", 1813, 1500 } },	-- 1,500x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 1500 } },	-- 1,500x Reservoir Anima
 										}),
 										i(181052, {	-- Court Death Shroud Hood
-											["cost"] = { { "c", 1813, 2000 } },	-- 2,000x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 2000 } },	-- 2,000x Reservoir Anima
 										}),
 										i(181054, {	-- Court Death Shroud Spaulders
-											["cost"] = { { "c", 1813, 2000 } },	-- 2,000x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 2000 } },	-- 2,000x Reservoir Anima
 										}),
 										i(181049, {	-- Court Death Shroud Vest
-											["cost"] = { { "c", 1813, 2000 } },	-- 2,000x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 2000 } },	-- 2,000x Reservoir Anima
 										}),
 										i(181014, {	-- Dread Sentinel's Court Chestplate
-											["cost"] = { { "c", 1813, 2000 } },	-- 2,000x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 2000 } },	-- 2,000x Reservoir Anima
 										}),
 										i(181021, {	-- Dread Sentinel's Court Cloak
-											["cost"] = { { "c", 1813, 750 } },	-- 750x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 750 } },	-- 750x Reservoir Anima
 										}),
 										i(181019, {	-- Dread Sentinel's Court Girdle
-											["cost"] = { { "c", 1813, 750 } },	-- 750x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 750 } },	-- 750x Reservoir Anima
 										}),
 										i(181015, {	-- Dread Sentinel's Court Greatboots
-											["cost"] = { { "c", 1813, 1500 } },	-- 1,500x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 1500 } },	-- 1,500x Reservoir Anima
 										}),
 										i(181016, {	-- Dread Sentinel's Court Grips
-											["cost"] = { { "c", 1813, 1500 } },	-- 1,500x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 1500 } },	-- 1,500x Reservoir Anima
 										}),
 										i(181013, {	-- Dread Sentinel's Court Headgear
-											["cost"] = { { "c", 1813, 2000 } },	-- 2,000x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 2000 } },	-- 2,000x Reservoir Anima
 										}),
 										i(181017, {	-- Dread Sentinel's Court Legguards
-											["cost"] = { { "c", 1813, 1500 } },	-- 1,500x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 1500 } },	-- 1,500x Reservoir Anima
 										}),
 										i(181018, {	-- Dread Sentinel's Court Spaulders
-											["cost"] = { { "c", 1813, 2000 } },	-- 2,000x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 2000 } },	-- 2,000x Reservoir Anima
 										}),
 										i(181020, {	-- Dread Sentinel's Court Vambraces
-											["cost"] = { { "c", 1813, 750 } },	-- 750x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 750 } },	-- 750x Reservoir Anima
 										}),
 										i(181082, {	-- Fearstalker's Court Belt
-											["cost"] = { { "c", 1813, 750 } },	-- 750x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 750 } },	-- 750x Reservoir Anima
 										}),
 										i(181083, {	-- Fearstalker's Court Bracers
-											["cost"] = { { "c", 1813, 750 } },	-- 750x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 750 } },	-- 750x Reservoir Anima
 										}),
 										i(181084, {	-- Fearstalker's Court Cloak
-											["cost"] = { { "c", 1813, 750 } },	-- 750x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 750 } },	-- 750x Reservoir Anima
 										}),
 										i(181078, {	-- Fearstalker's Court Gauntlets
-											["cost"] = { { "c", 1813, 1500 } },	-- 1,500x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 1500 } },	-- 1,500x Reservoir Anima
 										}),
 										i(181076, {	-- Fearstalker's Court Hauberk
-											["cost"] = { { "c", 1813, 2000 } },	-- 2,000x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 2000 } },	-- 2,000x Reservoir Anima
 										}),
 										i(181079, {	-- Fearstalker's Court Helm
-											["cost"] = { { "c", 1813, 2000 } },	-- 2,000x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 2000 } },	-- 2,000x Reservoir Anima
 										}),
 										i(181080, {	-- Fearstalker's Court Leggings
-											["cost"] = { { "c", 1813, 1500 } },	-- 1,500x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 1500 } },	-- 1,500x Reservoir Anima
 										}),
 										i(181081, {	-- Fearstalker's Court Monnion
-											["cost"] = { { "c", 1813, 2000 } },	-- 2,000x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 2000 } },	-- 2,000x Reservoir Anima
 										}),
 										i(181077, {	-- Fearstalker's Court Sabatons
-											["cost"] = { { "c", 1813, 1500 } },	-- 1,500x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 1500 } },	-- 1,500x Reservoir Anima
 										}),
 										i(181120, {	-- Soulbreaker's Court Drape
-											["cost"] = { { "c", 1813, 750 } },	-- 750x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 750 } },	-- 750x Reservoir Anima
 										}),
 										i(181114, {	-- Soulbreaker's Court Handwraps
-											["cost"] = { { "c", 1813, 1500 } },	-- 1,500x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 1500 } },	-- 1,500x Reservoir Anima
 										}),
 										i(181115, {	-- Soulbreaker's Court Hood
-											["cost"] = { { "c", 1813, 2000 } },	-- 2,000x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 2000 } },	-- 2,000x Reservoir Anima
 										}),
 										i(181116, {	-- Soulbreaker's Court Leggings
-											["cost"] = { { "c", 1813, 1500 } },	-- 1,500x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 1500 } },	-- 1,500x Reservoir Anima
 										}),
 										i(181117, {	-- Soulbreaker's Court Mantle
-											["cost"] = { { "c", 1813, 2000 } },	-- 2,000x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 2000 } },	-- 2,000x Reservoir Anima
 										}),
 										i(181118, {	-- Soulbreaker's Court Sash
-											["cost"] = { { "c", 1813, 750 } },	-- 750x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 750 } },	-- 750x Reservoir Anima
 										}),
 										i(181113, {	-- Soulbreaker's Court Slippers
-											["cost"] = { { "c", 1813, 1500 } },	-- 1,500x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 1500 } },	-- 1,500x Reservoir Anima
 										}),
 										i(181112, {	-- Soulbreaker's Court Vestments
-											["cost"] = { { "c", 1813, 2000 } },	-- 2,000x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 2000 } },	-- 2,000x Reservoir Anima
 										}),
 										i(181119, {	-- Soulbreaker's Court Wraps
-											["cost"] = { { "c", 1813, 750 } },	-- 750x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 750 } },	-- 750x Reservoir Anima
 										}),
 									},
 								}),
@@ -2203,7 +2203,7 @@ _.ExpansionFeatures =
 									["g"] = {
 										i(181316),	-- Silvertip Dredwing		-- no cost due each covenant offering this mount in different ways
 										i(181441, {	-- Altar of Accomplishment
-											["cost"] = { { "c", 1813, 25 } },	-- 25x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 25 } },	-- 25x Reservoir Anima
 											["g"] = {
 												crit(21, {	-- Altar of Accomplishment
 													["achievementID"] = 14678,	-- Court Favors
@@ -2214,7 +2214,7 @@ _.ExpansionFeatures =
 											["cost"] = { { "c", 1820, 25 } },	-- 25x Infused Ruby
 										}),
 										i(181517, {	-- Building: Dredger Pool
-											["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
 											["g"] = {
 												crit(1, {	-- Building: Dredger Pool
 													["achievementID"] = 14679,	-- Party Palace
@@ -2222,7 +2222,7 @@ _.ExpansionFeatures =
 											},
 										}),
 										i(181518, {	-- Building: Guardhouse
-											["cost"] = { { "c", 1813, 100 } },	-- 100x Reservoir Anima
+											["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
 											["g"] = {
 												crit(2, {	-- Building: Guardhouse
 													["achievementID"] = 14679,	-- Party Palace

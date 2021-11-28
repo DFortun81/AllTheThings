@@ -667,7 +667,28 @@ LEGENDARY_QUESTLINE = -10066;
 	NIGHT_FAE = -929;
 	VENTHYR = -949;
 	CONDUITS = -981;
+	COVENANT_SANCTUMS = -900;
+	COVENANT_CALLINGS = -901;
+	RENOWN = -902;
+	SANCTUM_UPGRADES = -921;
+	ANIMA_CONDUCTOR = -915;
+	COMMAND_TABLE = -905;
+	TRANSPORT_NETWORK = -924;
+	PATH_OF_ASCENSION = -942;
+		COURAGE = -972;
+		LOYALTY = -973;
+		WISDOM = -974;
+		HUMILITY = -975;
 
+
+	TIER_ONE = -916;
+	TIER_TWO = -917;
+	TIER_THREE = -918;
+	TIER_FOUR = -925;
+	TIER_FIVE = -926;
+-- Currencies
+ANIMA = 1813;
+GRATEFUL = 1885;
 -- Class Trials
 CLASS_TRIAL = -5350;
 LEVEL_NINETY = -137;
@@ -1613,7 +1634,7 @@ crit = function(criteriaID, t)           -- Create an Achievement Criteria Objec
 		if not isarray(t) then
 			-- DO NOT do that lol
 			if t.achievementID then
-				print("Ach:",t.achievementID,"Crit:",criteriaID,"Use '_quests', '_npcs', or 'cost' to define where/how this Criteria is granted instead of directly nesting it in Source.")
+				--print("Ach:",t.achievementID,"Crit:",criteriaID,"Use '_quests', '_npcs', or 'cost' to define where/how this Criteria is granted instead of directly nesting it in Source.")
 			end
 		else
 			t = { ["groups"] = t };

@@ -134,7 +134,7 @@ _.Zones =
 						i(182207),	-- Illusion: Sinsedge
 						n(VENTHYR, sharedData({["customCollect"] = { "SL_COV_VEN" }},{
 							i(183708, {	-- Glittering Gold Sinstone Chain
-								["cost"] = { { "c", 1813, 3500 } },
+								["cost"] = { { "c", ANIMA, 3500 } },
 							}),
 						})),
 					},
@@ -144,31 +144,31 @@ _.Zones =
 					["g"] = {
 						i(183977, {	-- House Renathal Ceremonial Dagger
 							["customCollect"] = "SL_COV_VEN",
-							["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+							["cost"] = { { "c", ANIMA, 1750 } },	-- 1,750x Reservoir Anima
 						}),
 						i(183982, {	-- Devourer Mite Sticker
-							["cost"] = { { "c", 1813, 3000 } },	-- 3,000x Reservoir Anima
+							["cost"] = { { "c", ANIMA, 3000 } },	-- 3,000x Reservoir Anima
 						}),
 						i(183980, {	-- Kyrian Gladius
-							["cost"] = { { "c", 1813, 3000 } },	-- 3,000x Reservoir Anima
+							["cost"] = { { "c", ANIMA, 3000 } },	-- 3,000x Reservoir Anima
 						}),
 						i(183981, {	-- Kyrian Greatblade
-							["cost"] = { { "c", 1813, 3000 } },	-- 3,000x Reservoir Anima
+							["cost"] = { { "c", ANIMA, 3000 } },	-- 3,000x Reservoir Anima
 						}),
 						i(183985, {	-- Maldraxxian Bonesaw
-							["cost"] = { { "c", 1813, 3000 } },	-- 3,000x Reservoir Anima
+							["cost"] = { { "c", ANIMA, 3000 } },	-- 3,000x Reservoir Anima
 						}),
 						i(183984, {	-- Maldraxxian Shortblade
-							["cost"] = { { "c", 1813, 3000 } },	-- 3,000x Reservoir Anima
+							["cost"] = { { "c", ANIMA, 3000 } },	-- 3,000x Reservoir Anima
 						}),
 						i(183983, {	-- Rogue Ritualist's Spellblade
-							["cost"] = { { "c", 1813, 3000 } },	-- 3,000x Reservoir Anima
+							["cost"] = { { "c", ANIMA, 3000 } },	-- 3,000x Reservoir Anima
 						}),
 						i(183979, {	-- Standard Fenser's Rapier
-							["cost"] = { { "c", 1813, 3000 } },	-- 3,000x Reservoir Anima
+							["cost"] = { { "c", ANIMA, 3000 } },	-- 3,000x Reservoir Anima
 						}),
 						i(183968, {	-- Venthyr Ritualist's Kris
-							["cost"] = { { "c", 1813, 3500 } },	-- 3,500x Reservoir Anima
+							["cost"] = { { "c", ANIMA, 3500 } },	-- 3,500x Reservoir Anima
 						}),
 					},
 				}),

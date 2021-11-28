@@ -222,13 +222,13 @@ _.ExpansionFeatures =
 						["coord"] = { 56.1, 51.3, 1819 },	-- The Ring
 						["g"] = {
 							i(180724, {	-- Enchanted Winterborn Runestag (MOUNT)
-								["cost"] = { { "c", 1813, 5000 } },
+								["cost"] = { { "c", ANIMA, 5000 } },
 							}),
 							i(183801, {	-- Vibrant Flutterwing (MOUNT)
-								["cost"] = { { "c", 1813, 5000 } },
+								["cost"] = { { "c", ANIMA, 5000 } },
 							}),
 							i(184118, {	-- Arsenal: Winterborn Weapons
-								["cost"] = { { "c", 1813, 30000 } },
+								["cost"] = { { "c", ANIMA, 30000 } },
 								["g"] = {
 									i(180075),	-- Winterborn Bow
 									i(179496),	-- Winterborn Fang
@@ -245,7 +245,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(181305, {	-- Faewoven Bulb
-								["cost"] = { { "c", 1813, 3500 } },
+								["cost"] = { { "c", ANIMA, 3500 } },
 							}),
 							i(182661, {	-- Fun Guss
 								["cost"] = { { "i", 163036, 250 } },
@@ -254,16 +254,16 @@ _.ExpansionFeatures =
 								["cost"] = { { "i", 163036, 250 } },
 							}),
 							i(181303, {	-- Night Courtier's Branches
-								["cost"] = { { "c", 1813, 3500 } },
+								["cost"] = { { "c", ANIMA, 3500 } },
 							}),
 							i(182674, {	-- Sir Reginald
 								["cost"] = { { "i", 163036, 250 } },
 							}),
 							i(182181, {	-- Tiger Soul
-								["cost"] = { { "c", 1813, 1500 } },
+								["cost"] = { { "c", ANIMA, 1500 } },
 							}),
 							i(182166, {	-- Ursine Soul
-								["cost"] = { { "c", 1813, 1500 } },
+								["cost"] = { { "c", ANIMA, 1500 } },
 							}),
 						},
 					}),
@@ -273,41 +273,41 @@ _.ExpansionFeatures =
 							{ ["customCollect"] = "SL_COV_NFA", }	-- Night Fae
 							, {
 							i(186494, {	-- Autumnal Wilderling (MOUNT!)
-								["cost"] = { { "c", 1813, 7500 } },	-- 7,500x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 7500 } },	-- 7,500x Reservoir Anima
 							}),
 							i(180722, {	-- Enchanted Shadeleaf Runestag (MOUNT)
 								["cost"] = {
-									{ "c", 1813, 100 },	-- 100x Reservoir Anima
-									{ "c", 1885, 40 },	-- 40x Grateful Offering
+									{ "c", ANIMA, 100 },	-- 100x Reservoir Anima
+									{ "c", GRATEFUL, 40 },	-- 40x Grateful Offering
 								},
 							}),
 							i(180413, {	-- Shadeleaf Runestag (MOUNT!)
-								["cost"] = { { "c", 1813, 5000 } },
+								["cost"] = { { "c", ANIMA, 5000 } },
 							}),
 							i(180730, {	-- Wild Glimmerfur Prowler (MOUNT!)
 								["cost"] = {
-									{ "c", 1813, 5000 },	-- 5,000x Reservoir Anima
-									{ "c", 1885, 75 },		-- 75x Grateful Offering
+									{ "c", ANIMA, 5000 },	-- 5,000x Reservoir Anima
+									{ "c", GRATEFUL, 75 },		-- 75x Grateful Offering
 								},
 							}),
 							i(180290, {	-- Night Fae Hearthstone (TOY!)
-								["cost"] = { { "c", 1813, 750 } },	-- 750x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 750 } },	-- 750x Reservoir Anima
 							}),
 							i(182663, {	-- Trootie (PET!)
 								["cost"] = {
-									{ "c", 1813, 1500 },	-- 1,500x Reservoir Anima
-									{ "c", 1885, 20 },		-- 20x Grateful Offering
+									{ "c", ANIMA, 1500 },	-- 1,500x Reservoir Anima
+									{ "c", GRATEFUL, 20 },		-- 20x Grateful Offering
 								},
 							}),
 							i(184164, {	-- Illusion: Wild Soul
-								["cost"] = { { "c", 1813, 2500 } },	-- 2,500x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 2500 } },	-- 2,500x Reservoir Anima
 							}),
 							i(183249, {	-- Memory of a Vital Sacrifice
 								-- appears on vendor after doing the questline to get to Renown 14
-								["cost"] = { { "c", 1813, 250 } },	-- 250x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 250 } },	-- 250x Reservoir Anima
 							}),
 							i(186498, {	-- Ensemble: Garb of the Azure Dusk
-								["cost"] = { { "c", 1813, 10000 } },	-- 10,000x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 10000 } },	-- 10,000x Reservoir Anima
 								["g"] = {
 									i(184946),	-- Azure Dusk Bindings
 									i(184947),	-- Azure Dusk Drape
@@ -322,317 +322,317 @@ _.ExpansionFeatures =
 							}),
 							i(179674, {	-- Night Courtier's Amice
 								["cost"] = {
-									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
-									{ "c", 1885, 30 },		-- 30x Grateful Offering
+									{ "c", ANIMA, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", GRATEFUL, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(179782, {	-- Night Courtier's Anklewraps
 								["cost"] = {
-									{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
-									{ "c", 1885, 15 },		-- 15x Grateful Offering
+									{ "c", ANIMA, 2000 },	-- 2,000x Reservoir Anima
+									{ "c", GRATEFUL, 15 },		-- 15x Grateful Offering
 								},
 							}),
 							i(181925, {	-- Night Courtier's Armbands
 								["cost"] = {
-									{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
-									{ "c", 1885, 15 },		-- 15x Grateful Offering
+									{ "c", ANIMA, 2000 },	-- 2,000x Reservoir Anima
+									{ "c", GRATEFUL, 15 },		-- 15x Grateful Offering
 								},
 							}),
 							i(179785, {	-- Night Courtier's Armguards
 								["cost"] = {
-									{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
-									{ "c", 1885, 15 },		-- 15x Grateful Offering
+									{ "c", ANIMA, 2000 },	-- 2,000x Reservoir Anima
+									{ "c", GRATEFUL, 15 },		-- 15x Grateful Offering
 								},
 							}),
 							i(179608, {	-- Night Courtier's Barrier
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
-									{ "c", 1885, 50 },		-- 50x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", GRATEFUL, 50 },		-- 50x Grateful Offering
 								},
 							}),
 							i(179800, {	-- Night Courtier's Belt
 								["cost"] = {
-									{ "c", 1813, 3000 },	-- 3,000x Reservoir Anima
-									{ "c", 1885, 25 },		-- 25x Grateful Offering
+									{ "c", ANIMA, 3000 },	-- 3,000x Reservoir Anima
+									{ "c", GRATEFUL, 25 },		-- 25x Grateful Offering
 								},
 							}),
 							i(179803, {	-- Night Courtier's Bracers
 								["cost"] = {
-									{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
-									{ "c", 1885, 15 },		-- 15x Grateful Offering
+									{ "c", ANIMA, 2000 },	-- 2,000x Reservoir Anima
+									{ "c", GRATEFUL, 15 },		-- 15x Grateful Offering
 								},
 							}),
 							i(179791, {	-- Night Courtier's Britches
 								["cost"] = {
-									{ "c", 1813, 3000 },	-- 3,000x Reservoir Anima
-									{ "c", 1885, 25 },		-- 25x Grateful Offering
+									{ "c", ANIMA, 3000 },	-- 3,000x Reservoir Anima
+									{ "c", GRATEFUL, 25 },		-- 25x Grateful Offering
 								},
 							}),
 							i(181926, {	-- Night Courtier's Buckle
 								["cost"] = {
-									{ "c", 1813, 3000 },	-- 3,000x Reservoir Anima
-									{ "c", 1885, 25 },		-- 25x Grateful Offering
+									{ "c", ANIMA, 3000 },	-- 3,000x Reservoir Anima
+									{ "c", GRATEFUL, 25 },		-- 25x Grateful Offering
 								},
 							}),
 							i(181307, {	-- Night Courtier's Bulb
-								["cost"] = { { "c", 1813, 3500 } },	-- 3,500x Reservoir Anima
+								["cost"] = { { "c", ANIMA, 3500 } },	-- 3,500x Reservoir Anima
 							}),
 							i(179628, {	-- Night Courtier's Cape
 								["cost"] = {
-									{ "c", 1813, 1500 },	-- 1,500x Reservoir Anima
-									{ "c", 1885, 10 },		-- 10x Grateful Offering
+									{ "c", ANIMA, 1500 },	-- 1,500x Reservoir Anima
+									{ "c", GRATEFUL, 10 },		-- 10x Grateful Offering
 								},
 							}),
 							i(179776, {	-- Night Courtier's Chestguard
 								["cost"] = {
-									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
-									{ "c", 1885, 30 },		-- 30x Grateful Offering
+									{ "c", ANIMA, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", GRATEFUL, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(179910, {	-- Night Courtier's Chestplate
 								["cost"] = {
-									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
-									{ "c", 1885, 30 },		-- 30x Grateful Offering
+									{ "c", ANIMA, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", GRATEFUL, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(179634, {	-- Night Courtier's Cloak
 								["cost"] = {
-									{ "c", 1813, 1500 },	-- 1,500x Reservoir Anima
-									{ "c", 1885, 10 },		-- 10x Grateful Offering
+									{ "c", ANIMA, 1500 },	-- 1,500x Reservoir Anima
+									{ "c", GRATEFUL, 10 },		-- 10x Grateful Offering
 								},
 							}),
 							i(179668, {	-- Night Courtier's Cowl
 								["cost"] = {
-									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
-									{ "c", 1885, 30 },		-- 30x Grateful Offering
+									{ "c", ANIMA, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", GRATEFUL, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(179788, {	-- Night Courtier's Crest
 								["cost"] = {
-									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
-									{ "c", 1885, 30 },		-- 30x Grateful Offering
+									{ "c", ANIMA, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", GRATEFUL, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(179680, {	-- Night Courtier's Cuffs
 								["cost"] = {
-									{ "c", 1813, 2000 },	-- 2,000 Reservoir Anima
-									{ "c", 1885, 15 },		-- 15x Grateful Offering
+									{ "c", ANIMA, 2000 },	-- 2,000 Reservoir Anima
+									{ "c", GRATEFUL, 15 },		-- 15x Grateful Offering
 								},
 							}),
 							i(179624, {	-- Night Courtier's Drape
 								["cost"] = {
-									{ "c", 1813, 1500 },	-- 1,500x Reservoir Anima
-									{ "c", 1885, 10 },		-- 10x Grateful Offering
+									{ "c", ANIMA, 1500 },	-- 1,500x Reservoir Anima
+									{ "c", GRATEFUL, 10 },		-- 10x Grateful Offering
 								},
 							}),
 							i(179494, {	-- Night Courtier's Fang
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
-									{ "c", 1885, 50 },		-- 50x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", GRATEFUL, 50 },		-- 50x Grateful Offering
 								},
 							}),
 							i(181931, {	-- Night Courtier's Footguards
 								["cost"] = {
-									{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
-									{ "c", 1885, 15 },		-- 15x Grateful Offering
+									{ "c", ANIMA, 2000 },	-- 2,000x Reservoir Anima
+									{ "c", GRATEFUL, 15 },		-- 15x Grateful Offering
 								},
 							}),
 							i(179908, {	-- Night Courtier's Gauntlets
 								["cost"] = {
-									{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
-									{ "c", 1885, 15 },		-- 15x Grateful Offering
+									{ "c", ANIMA, 2000 },	-- 2,000x Reservoir Anima
+									{ "c", GRATEFUL, 15 },		-- 15x Grateful Offering
 								},
 							}),
 							i(179904, {	-- Night Courtier's Girdle
 								["cost"] = {
-									{ "c", 1813, 3000 },	-- 3,000x Reservoir Anima
-									{ "c", 1885, 25 },		-- 25x Grateful Offering
+									{ "c", ANIMA, 3000 },	-- 3,000x Reservoir Anima
+									{ "c", GRATEFUL, 25 },		-- 25x Grateful Offering
 								},
 							}),
 							i(181930, {	-- Night Courtier's Gloves
 								["cost"] = {
-									{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
-									{ "c", 1885, 15 },		-- 15x Grateful Offering
+									{ "c", ANIMA, 2000 },	-- 2,000x Reservoir Anima
+									{ "c", GRATEFUL, 15 },		-- 15x Grateful Offering
 								},
 							}),
 							i(181879, {	-- Night Courtier's Greatcloak
 								["cost"] = {
-									{ "c", 1813, 1500 },	-- 1,500x Reservoir Anima
-									{ "c", 1885, 10 },		-- 10x Grateful Offering
+									{ "c", ANIMA, 1500 },	-- 1,500x Reservoir Anima
+									{ "c", GRATEFUL, 10 },		-- 10x Grateful Offering
 								},
 							}),
 							i(179907, {	-- Night Courtier's Greathelm
 								["cost"] = {
-									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
-									{ "c", 1885, 30 },		-- 30x Grateful Offering
+									{ "c", ANIMA, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", GRATEFUL, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(179906, {	-- Night Courtier's Greaves
 								["cost"] = {
-									{ "c", 1813, 3000 },	-- 3,000x Reservoir Anima
-									{ "c", 1885, 25 },		-- 25x Grateful Offering
+									{ "c", ANIMA, 3000 },	-- 3,000x Reservoir Anima
+									{ "c", GRATEFUL, 25 },		-- 25x Grateful Offering
 								},
 							}),
 							i(181929, {	-- Night Courtier's Guise
 								["cost"] = {
-									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
-									{ "c", 1885, 30 },		-- 30x Grateful Offering
+									{ "c", ANIMA, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", GRATEFUL, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(179665, {	-- Night Courtier's Handwraps
 								["cost"] = {
-									{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
-									{ "c", 1885, 15 },		-- 15x Grateful Offering
+									{ "c", ANIMA, 2000 },	-- 2,000x Reservoir Anima
+									{ "c", GRATEFUL, 15 },		-- 15x Grateful Offering
 								},
 							}),
 							i(181932, {	-- Night Courtier's Hauberk
 								["cost"] = {
-									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
-									{ "c", 1885, 30 },		-- 30x Grateful Offering
+									{ "c", ANIMA, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", GRATEFUL, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(179581, {	-- Night Courtier's Jaws
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
-									{ "c", 1885, 50 },		-- 50x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", GRATEFUL, 50 },		-- 50x Grateful Offering
 								},
 							}),
 							i(179671, {	-- Night Courtier's Leggings
 								["cost"] = {
-									{ "c", 1813, 3000 },	-- 3,000x Reservoir Anima
-									{ "c", 1885, 25 },		-- 25x Grateful Offering
+									{ "c", ANIMA, 3000 },	-- 3,000x Reservoir Anima
+									{ "c", GRATEFUL, 25 },		-- 25x Grateful Offering
 								},
 							}),
 							i(181928, {	-- Night Courtier's Legguards
 								["cost"] = {
-									{ "c", 1813, 3000 },	-- 3,000x Reservoir Anima
-									{ "c", 1885, 25 },		-- 25x Grateful Offering
+									{ "c", ANIMA, 3000 },	-- 3,000x Reservoir Anima
+									{ "c", GRATEFUL, 25 },		-- 25x Grateful Offering
 								},
 							}),
 							i(179568, {	-- Night Courtier's Lyre
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
-									{ "c", 1885, 50 },		-- 50x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", GRATEFUL, 50 },		-- 50x Grateful Offering
 								},
 							}),
 							i(182352, {	-- Night Courtier's Mace
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
-									{ "c", 1885, 50 },		-- 50x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", GRATEFUL, 50 },		-- 50x Grateful Offering
 								},
 							}),
 							i(179797, {	-- Night Courtier's Mantle
 								["cost"] = {
-									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
-									{ "c", 1885, 30 },		-- 30x Grateful Offering
+									{ "c", ANIMA, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", GRATEFUL, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(179540, {	-- Night Courtier's Maul
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
-									{ "c", 1885, 50 },		-- 50x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", GRATEFUL, 50 },		-- 50x Grateful Offering
 								},
 							}),
 							i(181311, {	-- Night Courtier's Pack
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
-									{ "c", 1885, 40 },		-- 40x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", GRATEFUL, 40 },		-- 40x Grateful Offering
 								},
 							}),
 							i(179905, {	-- Night Courtier's Pauldrons
 								["cost"] = {
-									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
-									{ "c", 1885, 30 },		-- 30x Grateful Offering
+									{ "c", ANIMA, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", GRATEFUL, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(181941, {	-- Night Courtier's Raiment
 								["cost"] = {
-									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
-									{ "c", 1885, 30 },		-- 30x Grateful Offering
+									{ "c", ANIMA, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", GRATEFUL, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(179654, {	-- Night Courtier's Robes
 								["cost"] = {
-									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
-									{ "c", 1885, 30 },		-- 30x Grateful Offering
+									{ "c", ANIMA, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", GRATEFUL, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(179909, {	-- Night Courtier's Sabatons
 								["cost"] = {
-									{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
-									{ "c", 1885, 15 },		-- 15x Grateful Offering
+									{ "c", ANIMA, 2000 },	-- 2,000x Reservoir Anima
+									{ "c", GRATEFUL, 15 },		-- 15x Grateful Offering
 								},
 							}),
 							i(179661, {	-- Night Courtier's Sandals
 								["cost"] = {
-									{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
-									{ "c", 1885, 15 },		-- 15x Grateful Offering
+									{ "c", ANIMA, 2000 },	-- 2,000x Reservoir Anima
+									{ "c", GRATEFUL, 15 },		-- 15x Grateful Offering
 								},
 							}),
 							i(179677, {	-- Night Courtier's Sash
 								["cost"] = {
-									{ "c", 1813, 3000 },	-- 3,000x Reservoir Anima
-									{ "c", 1885, 25 },		-- 25x Grateful Offering
+									{ "c", ANIMA, 3000 },	-- 3,000x Reservoir Anima
+									{ "c", GRATEFUL, 25 },		-- 25x Grateful Offering
 								},
 							}),
 							i(179558, {	-- Night Courtier's Scepter
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
-									{ "c", 1885, 50 },		-- 50x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", GRATEFUL, 50 },		-- 50x Grateful Offering
 								},
 							}),
 							i(181927, {	-- Night Courtier's Spaulders
 								["cost"] = {
-									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
-									{ "c", 1885, 30 },		-- 30x Grateful Offering
+									{ "c", ANIMA, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", GRATEFUL, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(180003, {	-- Night Courtier's Spire
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
-									{ "c", 1885, 50 },		-- 50x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", GRATEFUL, 50 },		-- 50x Grateful Offering
 								},
 							}),
 							i(179658, {	-- Night Courtier's Tunic
 								["cost"] = {
-									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
-									{ "c", 1885, 30 },		-- 30x Grateful Offering
+									{ "c", ANIMA, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", GRATEFUL, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(179903, {	-- Night Courtier's Vambraces
 								["cost"] = {
-									{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
-									{ "c", 1885, 15 },		-- 15x Grateful Offering
+									{ "c", ANIMA, 2000 },	-- 2,000x Reservoir Anima
+									{ "c", GRATEFUL, 15 },		-- 15x Grateful Offering
 								},
 							}),
 							i(179794, {	-- Night Courtier's Vestment
 								["cost"] = {
-									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
-									{ "c", 1885, 30 },		-- 30x Grateful Offering
+									{ "c", ANIMA, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", GRATEFUL, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(180020, {	-- Night Courtier's Wand
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
-									{ "c", 1885, 50 },		-- 50x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", GRATEFUL, 50 },		-- 50x Grateful Offering
 								},
 							}),
 							i(180077, {	-- Night Courtier's Warbow
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
-									{ "c", 1885, 50 },		-- 50x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", GRATEFUL, 50 },		-- 50x Grateful Offering
 								},
 							}),
 							i(180257, {	-- Night Courtier's Warglaive
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
-									{ "c", 1885, 50 },		-- 50x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", GRATEFUL, 50 },		-- 50x Grateful Offering
 								},
 							}),
 							i(179528, {	-- Night Courtier's Warspear
 								["cost"] = {
-									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
-									{ "c", 1885, 50 },		-- 50x Grateful Offering
+									{ "c", ANIMA, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", GRATEFUL, 50 },		-- 50x Grateful Offering
 								},
 							}),
 						}),
@@ -846,191 +846,191 @@ _.ExpansionFeatures =
 						["g"] = {
 							i(179602, {	-- Bulwark of the Wild Hunt
 								["cost"] = {
-									{ "c", 1813, 3500 },
-									{ "c", 1885, 10 },
+									{ "c", ANIMA, 3500 },
+									{ "c", GRATEFUL, 10 },
 								},
 							}),
 							i(175597, {	-- Faewoven Amice
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(175588, {	-- Faewoven Cowl
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(175603, {	-- Faewoven Cuffs
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(179623, {	-- Faewoven Drape
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(175586, {	-- Faewoven Handwraps
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(175592, {	-- Faewoven Leggings
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(175576, {	-- Faewoven Raiment
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(175581, {	-- Faewoven Sandals
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(175600, {	-- Faewoven Sash
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(179657, {	-- Faewoven Tunic
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(179493, {	-- Fang of the Wild Hunt
 								["cost"] = {
-									{ "c", 1813, 3500 },
-									{ "c", 1885, 10 },
+									{ "c", ANIMA, 3500 },
+									{ "c", GRATEFUL, 10 },
 								},
 							}),
 							i(179567, {	-- Harp of the Wild Hunt
 								["cost"] = {
-									{ "c", 1813, 3500 },
-									{ "c", 1885, 10 },
+									{ "c", ANIMA, 3500 },
+									{ "c", GRATEFUL, 10 },
 								},
 							}),
 							i(179580, {	-- Jaws of the Wild Hunt
 								["cost"] = {
-									{ "c", 1813, 3500 },
-									{ "c", 1885, 10 },
+									{ "c", ANIMA, 3500 },
+									{ "c", GRATEFUL, 10 },
 								},
 							}),
 							i(182319, {	-- Mace of the Wild Hunt
 								["cost"] = {
-									{ "c", 1813, 3500 },
-									{ "c", 1885, 10 },
+									{ "c", ANIMA, 3500 },
+									{ "c", GRATEFUL, 10 },
 								},
 							}),
 							i(179766, {	-- Oakheart Anklewraps
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(179767, {	-- Oakheart Armguards
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(179771, {	-- Oakheart Belt
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(179772, {	-- Oakheart Bracers
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(179769, {	-- Oakheart Britches
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(179773, {	-- Oakheart Cape
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(179768, {	-- Oakheart Crest
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(179770, {	-- Oakheart Mantle
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(179765, {	-- Oakheart Tunic
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(179774, {	-- Oakheart Vestment
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(179888, {	-- Queensguard Chestplate
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(179620, {	-- Queensguard Cloak
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(179890, {	-- Queensguard Gauntlets
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(179893, {	-- Queensguard Girdle
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(179887, {	-- Queensguard Greathelm
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(179891, {	-- Queensguard Greaves
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(179892, {	-- Queensguard Pauldrons
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(179889, {	-- Queensguard Sabatons
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(179894, {	-- Queensguard Vambraces
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(181916, {	-- Runewarden's Armguards
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(181910, {	-- Runewarden's Boots
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(181915, {	-- Runewarden's Buckle
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(181911, {	-- Runewarden's Gloves
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(181877, {	-- Runewarden's Greatcloak
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(181912, {	-- Runewarden's Guise
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(181909, {	-- Runewarden's Hauberk
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(181913, {	-- Runewarden's Legguards
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(181914, {	-- Runewarden's Spaulders
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(181979, {	-- Runewarden's Vestment
-								["cost"] = { { "c", 1813, 100 } },
+								["cost"] = { { "c", ANIMA, 100 } },
 							}),
 							i(179560, {	-- Scepter of the Wild Hunt
 								["cost"] = {
-									{ "c", 1813, 3500 },
-									{ "c", 1885, 10 },
+									{ "c", ANIMA, 3500 },
+									{ "c", GRATEFUL, 10 },
 								},
 							}),
 							i(180005, {	-- Staff of the Wild Hunt
 								["cost"] = {
-									{ "c", 1813, 3500 },
-									{ "c", 1885, 10 },
+									{ "c", ANIMA, 3500 },
+									{ "c", GRATEFUL, 10 },
 								},
 							}),
 							i(180021, {	-- Wand of the Wild Hunt
 								["cost"] = {
-									{ "c", 1813, 3500 },
-									{ "c", 1885, 10 },
+									{ "c", ANIMA, 3500 },
+									{ "c", GRATEFUL, 10 },
 								},
 							}),
 							i(180079, {	-- Warbow of the Wild Hunt
 								["cost"] = {
-									{ "c", 1813, 3500 },
-									{ "c", 1885, 10 },
+									{ "c", ANIMA, 3500 },
+									{ "c", GRATEFUL, 10 },
 								},
 							}),
 							i(180259, {	-- Warglaive of the Wild Hunt
 								["cost"] = {
-									{ "c", 1813, 3500 },
-									{ "c", 1885, 10 },
+									{ "c", ANIMA, 3500 },
+									{ "c", GRATEFUL, 10 },
 								},
 							}),
 							i(179529, {	-- Warspear of the Wild Hunt
 								["cost"] = {
-									{ "c", 1813, 3500 },
-									{ "c", 1885, 10 },
+									{ "c", ANIMA, 3500 },
+									{ "c", GRATEFUL, 10 },
 								},
 							}),
 							i(179542, {	-- Warmaul of the Wild Hunt
 								["cost"] = {
-									{ "c", 1813, 3500 },
-									{ "c", 1885, 10 },
+									{ "c", ANIMA, 3500 },
+									{ "c", GRATEFUL, 10 },
 								},
 							}),
 						},
@@ -1039,7 +1039,7 @@ _.ExpansionFeatures =
 						-- TODO: ["coord"] = { },
 						["g"] = {
 							i(184111, {	-- Ensemble: Conservator's Guise
-								["cost"] = { { "c", 1813, 12500 } },
+								["cost"] = { { "c", ANIMA, 12500 } },
 								["classes"] = { HUNTER, SHAMAN },
 								["g"] = {
 									i(181933),	-- Conservator's Scale Armguards
@@ -1057,7 +1057,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(184112, {	-- Ensemble: Conservator's Raiment
-								["cost"] = { { "c", 1813, 12500 } },
+								["cost"] = { { "c", ANIMA, 12500 } },
 								["classes"] = { DRUID, ROGUE, MONK, DEMONHUNTER },
 								["g"] = {
 									i(179781),	-- Conservator's Leather Anklewraps
@@ -1074,7 +1074,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(184113, {	-- Ensemble: Conservator's Regalia
-								["cost"] = { { "c", 1813, 12500 } },
+								["cost"] = { { "c", ANIMA, 12500 } },
 								["classes"] = { PRIEST, MAGE, WARLOCK },
 								["g"] = {
 									i(179675),	-- Conservator's Silken Amice
@@ -1091,7 +1091,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(184110, {	-- Ensemble: Conservator's Warbark
-								["cost"] = { { "c", 1813, 12500 } },
+								["cost"] = { { "c", ANIMA, 12500 } },
 								["classes"] = { PALADIN, WARRIOR, DEATHKNIGHT },
 								["g"] = {
 									i(179902),	-- Conservator's Ironwood Chestplate
@@ -1321,37 +1321,37 @@ _.ExpansionFeatures =
 						["g"] = {
 							i(183053, {	-- Umbral Scythehorn (MOUNT)
 								["cost"] = {
-									{ "c", 1813, 5000 },
-									{ "c", 1885, 5 },
+									{ "c", ANIMA, 5000 },
+									{ "c", GRATEFUL, 5 },
 								},
 							}),
 							i(180415, {	-- Winterborn Runestag (MOUNT)
 								["cost"] = {
-									{ "c", 1813, 5000 },
-									{ "c", 1885, 5 },
+									{ "c", ANIMA, 5000 },
+									{ "c", GRATEFUL, 5 },
 								},
 							}),
 							i(182664, {	-- Stemmins (PET)
 								["cost"] = {
 									{ "i", 163036, 250 },
-									{ "c", 1885, 5 },
+									{ "c", GRATEFUL, 5 },
 								},
 							}),
 							i(180636, {	-- Willowbreeze (PET)
 								["cost"] = {
 									{ "i", 163036, 250 },
-									{ "c", 1885, 5 },
+									{ "c", GRATEFUL, 5 },
 								},
 							}),
 							i(184665, {	-- Chronicle of Lost Memories
 								["cost"] = {
-									{ "c", 1885, 35 },
+									{ "c", GRATEFUL, 35 },
 								},
 							}),
 							i(184116, {	-- Ensemble: Winterborn Guise
 								["cost"] = {
-									{ "c", 1813, 25000 },
-									{ "c", 1885, 5 },
+									{ "c", ANIMA, 25000 },
+									{ "c", GRATEFUL, 5 },
 								},
 								["classes"] = { HUNTER, SHAMAN },
 								["g"] = {
@@ -1371,8 +1371,8 @@ _.ExpansionFeatures =
 							}),
 							i(184115, {	-- Ensemble: Winterborn Raiment
 								["cost"] = {
-									{ "c", 1813, 25000 },
-									{ "c", 1885, 5 },
+									{ "c", ANIMA, 25000 },
+									{ "c", GRATEFUL, 5 },
 								},
 								["classes"] = { DRUID, ROGUE, MONK, DEMONHUNTER },
 								["g"] = {
@@ -1392,8 +1392,8 @@ _.ExpansionFeatures =
 							}),
 							i(184114, {	-- Ensemble: Winterborn Regalia
 								["cost"] = {
-									{ "c", 1813, 25000 },
-									{ "c", 1885, 5 },
+									{ "c", ANIMA, 25000 },
+									{ "c", GRATEFUL, 5 },
 								},
 								["classes"] = { PRIEST, MAGE, WARLOCK },
 								["g"] = {
@@ -1412,8 +1412,8 @@ _.ExpansionFeatures =
 							}),
 							i(184117, {	-- Ensemble: Winterborn Warbark
 								["cost"] = {
-									{ "c", 1813, 25000 },
-									{ "c", 1885, 5 },
+									{ "c", ANIMA, 25000 },
+									{ "c", GRATEFUL, 5 },
 								},
 								["classes"] = { PALADIN, WARRIOR, DEATHKNIGHT },
 								["g"] = {
@@ -1432,47 +1432,47 @@ _.ExpansionFeatures =
 							}),
 							i(187871, {	-- Cricket Soul
 								["cost"] = {
-									{ "c", 1813, 15000 },
-									{ "c", 1885, 25 },
+									{ "c", ANIMA, 15000 },
+									{ "c", GRATEFUL, 25 },
 								},
 								["timeline"] = { "added 9.1.5" },
 							}),
 							i(182174, {	-- Leonine Soul
 								["cost"] = {
-									{ "c", 1813, 1500 },
-									{ "c", 1885, 5 },
+									{ "c", ANIMA, 1500 },
+									{ "c", GRATEFUL, 5 },
 								},
 							}),
 							i(182182, {	-- Lupine Soul
 								["cost"] = {
-									{ "c", 1813, 1500 },
-									{ "c", 1885, 5 },
+									{ "c", ANIMA, 1500 },
+									{ "c", GRATEFUL, 5 },
 								},
 							}),
 							i(187881, {	-- Ram Soul
 								["cost"] = {
-									{ "c", 1813, 25000 },
-									{ "c", 1885, 50 },
+									{ "c", ANIMA, 25000 },
+									{ "c", GRATEFUL, 50 },
 								},
 								["timeline"] = { "added 9.1.5" },
 							}),
 							i(187937, {	-- Technique: Mark of the Sable Ardenmoth
 								["cost"] = {
-									{ "c", 1813, 1000 },
-									{ "c", 1885, 5 },
+									{ "c", ANIMA, 1000 },
+									{ "c", GRATEFUL, 5 },
 								},
 								["timeline"] = { "added 9.1.5" },
 							}),
 							i(181308, {	-- Winterwoven Bulb
 								["cost"] = {
-									{ "c", 1813, 3500 },
-									{ "c", 1885, 5 },
+									{ "c", ANIMA, 3500 },
+									{ "c", GRATEFUL, 5 },
 								},
 							}),
 							i(181312, {	-- Winterwoven Pack
 								["cost"] = {
-									{ "c", 1813, 3500 },
-									{ "c", 1885, 5 },
+									{ "c", ANIMA, 3500 },
+									{ "c", GRATEFUL, 5 },
 								},
 							}),
 						},

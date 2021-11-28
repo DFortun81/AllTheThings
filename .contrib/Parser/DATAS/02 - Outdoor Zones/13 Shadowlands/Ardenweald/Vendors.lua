@@ -17,7 +17,7 @@ _.Zones =
 							["cost"] = 300000000,	-- 30,000g
 						}),
 						i(181309, {	-- Faewoven Pack
-							["cost"] = { { "c", 1813, 3500 } },	-- Reservoir Anima
+							["cost"] = { { "c", ANIMA, 3500 } },	-- Reservoir Anima
 							["customCollect"] = { "SL_COV_NFA" },	-- Night Fae
 						}),
 						i(178336, {	-- Tabard of the Wild Hunt
@@ -27,7 +27,7 @@ _.Zones =
 							["cost"] = { { "i", 163036, 250 } },	-- Polished Pet Charm
 						}),
 						i(182168, {	-- Crane Soul
-							["cost"] = { { "c", 1813, 1500 } },	-- Reservoir Anima
+							["cost"] = { { "c", ANIMA, 1500 } },	-- Reservoir Anima
 						}),
 						i(183093, {	-- Technique: Contract: The Wild Hunt
 							["cost"] = 17650000,	-- 1,765g
@@ -73,7 +73,7 @@ _.Zones =
 					["coord"] = { 43.0, 47.0, ARDENWEALD },
 					["g"] = {
 						i(180748, {	-- Silky Shimmermoth (MOUNT)
-							["cost"] = { { "c", 1813, 5000 } },
+							["cost"] = { { "c", ANIMA, 5000 } },
 						}),
 						i(175095, {	-- Book of Tickets
 							["cost"] = 40000,	-- 40 silver
@@ -94,28 +94,28 @@ _.Zones =
 							["cost"] = 1000000,	-- 100g
 						}),
 						i(183969, {	-- Theater Prop Kris
-							["cost"] = { { "c", 1813, 500 } },
+							["cost"] = { { "c", ANIMA, 500 } },
 						}),
 						i(175069, {	-- Theater Ticket
 							["cost"] = 2000,	-- 2 silver
 						}),
 						n(NIGHT_FAE, sharedData({["customCollect"] = { "SL_COV_NFA" }},{
 							i(187901, {	-- Eagle Soul
-								["cost"] = { { "c", 1813, 20000 } },
+								["cost"] = { { "c", ANIMA, 20000 } },
 								["timeline"] = { "added 9.1.5" },
 							}),
 							i(182662, {	-- Leafadore
 								["cost"] = { { "i", 163036, 250 } },
 							}),
 							i(182175, {	-- Moose Soul
-								["cost"] = { { "c", 1813, 1500 } },
+								["cost"] = { { "c", ANIMA, 1500 } },
 							}),
 							i(187873, {	-- Prairie Dog Soul
-								["cost"] = { { "c", 1813, 10000 } },
+								["cost"] = { { "c", ANIMA, 10000 } },
 								["timeline"] = { "added 9.1.5" },
 							}),
 							i(181304, {	-- Winterwoven Branches
-								["cost"] = { { "c", 1813, 3500 } },
+								["cost"] = { { "c", ANIMA, 3500 } },
 							}),
 						})),
 					},
