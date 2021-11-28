@@ -55,18 +55,6 @@ _.Zones =
 						["crs"] = { 80785 }
 					}),
 				}),
-				ach(10053, {	-- I Found Pepe!
-					["collectible"] = false,
-					["g"] = {
-						i(127867, {	-- A Tiny Ninja Shroud
-							["questID"] = 39267,
-							["coord"] = { 47.5, 41.3, GORGROND },
-							["g"] = {
-								crit(4),	-- Ninja Pepe
-							},
-						}),
-					},
-				}),
 				ach(9656,  {	-- In Plain Sight (The Pit)
 					["coords"] = {
 						{ 45.8, 27.2, GORGROND },

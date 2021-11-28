@@ -3355,8 +3355,9 @@ local function FillPurchases(group, depth)
 	if depth <= 0 then return; end
 	-- do not fill purchases on certain items, can skip the skip though based on a level
 	if (app.SkipPurchases[-1] or 0) < (app.SkipPurchases[group.itemID or -1] or 0) then return; end
-	-- do not fill 'saved' groups (unless they are actual Maps or Instances, or a Difficulty header), or groups directly under saved groups unless in Acct or Debug mode
-	if not app.MODE_DEBUG_OR_ACCOUNT and not (group.instanceID or group.mapID or group.difficultyID) then
+	-- do not fill 'saved' groups (unless they are actual Maps or Instances, or a Difficulty header. Also 'saved' Items usually means tied to a questID directory)
+	-- or groups directly under saved groups unless in Acct or Debug mode
+	if not app.MODE_DEBUG_OR_ACCOUNT and not (group.instanceID or group.mapID or group.difficultyID or group.itemID) then
 		if group.saved then return; end
 		local rawParent = rawget(group, "parent");
 		if rawParent and rawParent.saved then return; end

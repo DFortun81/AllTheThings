@@ -82,18 +82,6 @@ _.Zones =
 						crit(4),	-- Gorg the Subjugator's Idol
 					},
 				}),
-				ach(10053, {	-- I Found Pepe!
-					["collectible"] = false,
-					["g"] = {
-						i(127865, {	-- A Tiny Viking Helmet
-							["questID"] = 39265,	-- Pepe can be sometimes be summoned with this mask
-							["coord"] = { 80.11, 50.4, DRAENOR_NAGRAND },
-							["g"] = {
-								crit(2),	-- Viking Pepe
-							},
-						}),
-					},
-				}),
 				ach(9617,  {	-- Making the Cut (Gorian Proving Grounds)
 					["description"] = "Spawns in the building behind The Ring of Blood.  Kill 15 mobs that spawn around him in order to attack him.",
 					["crs"] = { 88210 },	-- Krud the Eviscerator

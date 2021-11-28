@@ -7,24 +7,6 @@ _.Zones =
 	m(BROKEN_ISLES, {
 		m(LEGION_DALARAN, {
 			n(QUESTS, {
-				i(122293, {	-- Trans-Dimensional Bird Whistle
-					["description"] = "If you see this item listed and you know the toy, it is likely you need the Pepe appearance that spawns in this zone.",
-					["collectible"] = false,
-					["g"] = {
-						i(139632, {	-- A Tiny Pair of Goggles
-							["questID"] = 43695,	-- Pepe can be sometimes be summoned with this mask
-							["coords"] = {
-								{ 42.31, 57.51, 625 },	-- Near Fruit Vendor
-								{ 48.01, 58.01, 625 },	-- Stairs to Curiositiese & Moore
-								{ 47.71, 32.31, 625 },	-- Magus Commerce Exchange well
-								{ 47.31, 37.61, 625 },	-- Legerdemain Lounge
-								{ 40.01, 28.01, 625 },	-- Things of the Past
-								{ 42.01, 19.01, 625 },	-- Antonidas Memoria
-								{ 36.01, 37.01, 625 },	-- Angelique Butler (First Aid Shop)
-							},
-						}),
-					},
-				}),
 				n(-176, {	-- Weekly World Events
 					["provider"] = { "n", 111246 },	-- Archmage Timear
 					["u"] = REMOVED_FROM_GAME,

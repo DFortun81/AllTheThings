@@ -60,18 +60,6 @@ _.Zones =
 					},
 				}),
 				ach(9486),		-- Goodness Gracious
-				ach(10053, {	-- I Found Pepe!
-					["collectible"] = false,
-					["g"] = {
-						i(127869, {	-- A Tiny Plated Helm
-							["questID"] = 39266,
-							["coord"] = { 51.0, 63.3, TALADOR },	-- Pepe Location
-							["g"] = {
-								crit(3),	-- Knight Pepe
-							},
-						}),
-					},
-				}),
 				ach(10067, {	-- In Pursuit of Gul'dan (A)
 					["collectible"] = false,
 					["races"] = ALLIANCE_ONLY,

@@ -80,28 +80,18 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 			ach(9911),	-- Where's the Mailbox? (1)
 		}),
 		ach(10053, {	-- I Found Pepe! (Various Draenor see criteria)
-			["groups"] = {
-				{
-					["achievementID"] = 10053,	-- I Found Pepe! (Achievement)
-					["criteriaID"] = 1,			-- Pirate Pepe (Spires of Arak 54.1 83.6)
-					["description"] = "Located in Spires of Arak at 54.1 83.6"
-				},
-				{
-					["achievementID"] = 10053,	-- I Found Pepe! (Achievement)
-					["criteriaID"] = 2,			-- Viking Pepe (Nagrand 80.1 50.4)
-					["description"] = "Located in Nagrand at 80.1 50.4"
-				},
-				{
-					["achievementID"] = 10053,	-- I Found Pepe! (Achievement)
-					["criteriaID"] = 3,			-- Knight Pepe (Talador 51.0 63.3)
-					["description"] = "Located in Talador at 51.0 63.3"
-				},
-				{
-					["achievementID"] = 10053,	-- I Found Pepe! (Achievement)
-					["criteriaID"] = 4,			-- Ninja Pepe (Gorgrond 47.5 41.3)
-					["description"] = "Located in Gorgrond at 47.5 41.3"
-				},
-			},
+			crit(1, {	-- Pirate Pepe
+				["cost"] = { { "i", 127870, 1 } },	-- A Tiny Pirate Hat
+			}),
+			crit(2, {	-- Viking Pepe
+				["cost"] = { { "i", 127865, 1 } },	-- A Tiny Viking Helmet
+			}),
+			crit(3, {	-- Knight Pepe
+				["cost"] = { { "i", 127869, 1 } },	-- A Tiny Plated Helm
+			}),
+			crit(4, {	-- Ninja Pepe
+				["cost"] = { { "i", 127867, 1 } },	-- A Tiny Ninja Shroud
+			}),
 		}),
 		ach(1165),		-- My Sack is "Gigantique" (Shattrath City / Haris Pilton)
 		ach(2084),		-- Ring of the Kirin Tor (Dalaran - NR / Harold Winston)

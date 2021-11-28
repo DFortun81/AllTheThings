@@ -110,14 +110,6 @@ _.Zones =
 				}),
 				ach(9612),		-- Eggs in One Basket
 				ach(9613),		-- Fish Gotta Swim, Birds Gotta Eat
-				ach(10053, {	-- I Found Pepe!
-					["collectible"] = false,
-					["g"] = {
-						crit(1, {	-- Pirate Pepe
-							["coord"] = { 54.11, 83.61, SPIRES_OF_ARAK }	-- Pepe Location
-						}),
-					},
-				}),
 				ach(9072,  {	-- Mantle of the Talon King
 					["sourceQuest"] = 37177,	-- Call of the Talon King
 					["g"] = {
