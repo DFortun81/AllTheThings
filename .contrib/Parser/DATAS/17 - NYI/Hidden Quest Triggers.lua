@@ -1620,7 +1620,7 @@ _.HiddenQuestTriggers = {
 		q(34024),	-- Tracking Quest. This completes when you kill the Windfang Matriarch after helping Romuul.
 		q(33786),	-- ??????. This was completed around Fiona's caravan in Shadowmoon Valley - Draenor (not entirely sure what triggered it.)
 		q(52969),	-- Going through the Stormwind Portal to Stormshield while on the WoD timeline in Chromie time
-		--q(39709),	-- Unknown tracking quest
+		q(39709),	-- Opening some salvage crates, reflags on fresh character
 
 		-------------------
 		--    Legion     --
