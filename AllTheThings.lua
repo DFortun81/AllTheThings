@@ -17365,6 +17365,7 @@ customWindowUpdates["Harvester"] = function(self)
 
 			local harvested = {};
 			local minID,maxID,oldRetries = app.customHarvestMin or self.min,app.customHarvestMax or self.max,app.MaximumItemInfoRetries;
+			local tremove = tremove;
 			self.min = minID;
 			self.max = maxID;
 			app.MaximumItemInfoRetries = 10;
@@ -17427,7 +17428,7 @@ customWindowUpdates["Harvester"] = function(self)
 			end
 			self.data = db;
 			BuildGroups(db, db.g);
-			self.ScrollBar:SetValue(1);
+			self.ScrollBar:SetValue(#db.g);
 			self.UpdateDone = function(self)
 				-- Hide data which have completed their harvest
 				local progress = 0;
@@ -17442,16 +17443,16 @@ customWindowUpdates["Harvester"] = function(self)
 				end
 				if self.rowData then
 					-- Remove up to 100 completed rows each frame (no need to process through thousands of rows when only a few update each frame)
-					-- TODO: this is still very laggy due to the thousands of rows being shifted on 'every remove'
-					local count = math.min(#self.rowData,100);
+					local count = #self.rowData;
 					if count > 1 then
 						self.rowData[1].progress = progress;
 						self.rowData[1].total = total;
-						for i=count,1,-1 do
+						for i=count,count-100,-1 do
 							if self.rowData[i] and not self.rowData[i].visible then
-								table.remove(self.rowData, i);
+								tremove(self.rowData, i);
 							end
 						end
+						self.ScrollBar:SetValue(count);
 					else
 						insertionSort(AllTheThingsHarvestItems);
 						insertionSort(AllTheThingsArtifactsItems);
