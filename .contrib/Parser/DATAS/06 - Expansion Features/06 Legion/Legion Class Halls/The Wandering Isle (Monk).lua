@@ -218,6 +218,11 @@ _.ExpansionFeatures =
 							["classes"] = { MONK },
 							["coord"] = { 38.9, 25.1, THE_JADE_FOREST },
 						}),
+						q(44239, {	-- Echo of a Celestial
+							["provider"] = { "n", 106538 },	-- Tianili
+							["classes"] = { MONK },
+							["coord"] = { 54.4, 58.8, 709 },	-- The Wandering Isle
+						}),
 						q(45574, {	-- Fel Ingredients
 							["sourceQuests"] = { 45459 },	-- Storming the Legion
 							["provider"] = { "n", 117305 },	-- Brewmaster Almai
@@ -710,7 +715,6 @@ _.ExpansionFeatures =
 
 						--[[
 						q(46024),	-- An Urgent Warning
-						q(44239),	-- Echo of a Celestial
 						q(44238),	-- Meditations on Fate
 						q(40698),	-- Purity of Form
 						--]]
