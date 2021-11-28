@@ -1609,16 +1609,19 @@ un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable w
 
 -- BEGIN UNFINISHED SECTION:
 crit = function(criteriaID, t)           -- Create an Achievement Criteria Object (localized automatically)
-  if not t then t = {};
-    elseif not t.groups then
+	if not t then t = {};
+	elseif not t.groups then
 		if not isarray(t) then
 			-- DO NOT do that lol
+			if t.achievementID then
+				print("Ach:",t.achievementID,"Crit:",criteriaID,"Use '_quests', '_npcs', or 'cost' to define where/how this Criteria is granted instead of directly nesting it in Source.")
+			end
 		else
 			t = { ["groups"] = t };
 		end
 	end
-    t.criteriaID = criteriaID;
-  return t;
+	t.criteriaID = criteriaID;
+	return t;
 end
 model = function(displayID, t)
 	t.displayID = displayID;

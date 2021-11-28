@@ -1,1 +1,1 @@
-"Parser for Retail.exe" debug
+"Parser for Retail.exe" debug > log_debug.txt

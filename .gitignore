@@ -1,7 +1,6 @@
 .contrib/.builds/
 .contrib/Harvesters/RAW/
 .contrib/Harvesters/*.json
-.contrib/Parser/log.txt
 .contrib/Parser/Parser.exe.config
 .contrib/Parser/Parser.pdb
 .contrib/Parser/Parser V2.exe.config
@@ -14,7 +13,6 @@
 .contrib/Source Code/Parser/.vs/
 .contrib/Source Code/ATT/bin
 .contrib/Source Code/Parser/obj/
-.contrib/Parser/log.txt
 .contrib/Harvesters/API.key
 .contrib/Parser/ATT.pdb
 .contrib/Source Code/Blizzard API Harvester/bin/
@@ -40,3 +38,4 @@ __pycache__
 .contrib/.tools/log.txt
 /.vscode/settings.json
 .venv
+.contrib/Parser/*.txt

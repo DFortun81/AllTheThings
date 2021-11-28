@@ -615,6 +615,8 @@ namespace ATT
             }
             else if (data.TryGetValue("_npcs", out object npcs))
             {
+                // TODO: consolidate when creature/npc are the same... if that ever happens
+                DuplicateDataIntoGroups(data, npcs, "creatureID");
                 DuplicateDataIntoGroups(data, npcs, "npcID");
                 data.Remove("_npcs");
                 cloned = true;

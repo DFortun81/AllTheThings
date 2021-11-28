@@ -25,7 +25,7 @@ local OnTooltipForSteamweedle = [[function(t)
 			local x, n = math.ceil((20999 - t.reputation) / repPerKill), math.ceil(63001 / repPerKill);
 			GameTooltip:AddDoubleLine("Kill Venture Co. (STV)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
 			GameTooltip:AddDoubleLine("Kill Southsea Pirates. (Tanaris & Barrens)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-			
+
 			local repPerTurnIn = isHuman and 28 or 25;
 			local x, n = math.ceil((42000 - reputation) / repPerTurnIn), math.ceil(84000 / repPerTurnIn);
 			GameTooltip:AddDoubleLine("Complete Zapping Quests (Feralas)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
@@ -51,7 +51,7 @@ local OnTooltipForSteamweedle = [[function(t)
 				GameTooltip:AddDoubleLine(" Kill Venture Co. (STV)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
 				GameTooltip:AddDoubleLine(" Kill Southsea Pirates. (Tanaris & Barrens)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
 			end
-			
+
 			local repPerTurnIn = isHuman and 28 or 25;
 			local x, n = math.ceil((42000 - reputation) / repPerTurnIn), math.ceil(42000 / repPerTurnIn);
 			GameTooltip:AddDoubleLine("Complete Zapping Quests (Feralas)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
@@ -1135,9 +1135,6 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					e(405, {	-- Alzzin the Wildshaper
 						["creatureID"] = 11492,
 						["groups"] = {
-							crit(1, {	-- Alzzin the Wildshaper slain
-								["achievementID"] = 644,	-- King of Dire Maul
-							}),
 							i(18501, {	-- Felvine Shard
 								["description"] = "Looted from the Felvine Shard object that spawns under the vines near the last boss in Dire Maul East.",
 							}),
@@ -1345,9 +1342,6 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					e(417, {	-- King Gordok
 						["creatureID"] = 11501,
 						["groups"] = {
-							crit(3, {	-- King Gordok slain
-								["achievementID"] = 644,	-- King of Dire Maul
-							}),
 							i(18520),	-- Barbarous Blade
 							i(18523),	-- Brightly Glowing Stone
 							i(18526),	-- Crown of the Ogre King
@@ -1516,9 +1510,6 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					e(409, {	-- Immol'thar
 						["creatureID"] = 11496,
 						["groups"] = {
-							crit(2, {	-- Immol'thar slain
-								["achievementID"] = 644,	-- King of Dire Maul
-							}),
 							i(18372),	-- Blade of the New Moon
 							i(18381),	-- Evil Eye Pendant
 							i(18384),	-- Bile-Etched Spaulders
