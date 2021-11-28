@@ -1509,7 +1509,9 @@ root("Instances", tier(CLASSIC_TIER, {
 					["model"] = 196976,
 					["groups"] = {
 						i(21986, {	-- Banner of Provocation
-							un(REMOVED_FROM_GAME, i(22305)),	-- Ironweave Mantle
+							i(22305, {	-- Ironweave Mantle
+								["timeline"] = { "removed 4.0.1" },
+							}),
 							un(11, i(22317)),	-- Lefty's Brass Knuckle
 							un(11, i(22318)),	-- Malgen's Long Bow
 							un(11, i(22330)),	-- Shroud of Arcane Mastery

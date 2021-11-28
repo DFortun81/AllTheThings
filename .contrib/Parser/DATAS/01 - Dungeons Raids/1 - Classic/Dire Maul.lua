@@ -1122,7 +1122,9 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 						["groups"] = {
 							i(22315), 	-- Hammer of Revitalization
 							i(22314), 	-- Huntsman's Harpoon
-							i(22304), 	-- Ironweave Gloves
+							i(22304, {	-- Ironweave Gloves
+								["timeline"] = { "removed 4.0.1" },
+							}),
 							i(22472), 	-- Boots of Ferocity
 							i(22401, {	-- Libram of Hope
 								["timeline"] = { "deleted 5.0.4" },

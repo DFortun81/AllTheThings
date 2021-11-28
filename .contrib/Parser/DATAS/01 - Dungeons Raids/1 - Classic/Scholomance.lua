@@ -1045,7 +1045,7 @@ root("Instances", tier(CLASSIC_TIER, {
 							["timeline"] = { "removed 5.0.4" },
 						}),
 						i(22303, {	-- Ironweave Pants
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { "removed 4.0.1" },
 						}),
 						i(22326, {	-- Amalgam's Band
 							["timeline"] = { "removed 5.0.4" },
