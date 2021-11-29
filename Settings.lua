@@ -291,6 +291,8 @@ end
 settings.CopyProfile = function(self, key, copyKey)
 	if AllTheThingsProfiles then
 		key = key or settings:GetProfile();
+		-- don't try to copy the same profile
+		if key == copyKey then return; end
 		-- delete the existing profile manually
 		AllTheThingsProfiles.Profiles[key] = nil;
 		-- re-create the profile
@@ -308,7 +310,7 @@ settings.CopyProfile = function(self, key, copyKey)
 end
 -- Removes a Profile
 settings.DeleteProfile = function(self, key)
-	if AllTheThingsProfiles and key and key ~= DEFAULT then
+	if AllTheThingsProfiles and key and key ~= "Default" then
 		AllTheThingsProfiles.Profiles[key] = nil;
 		-- deleting the current character's profile, reassign to Default
 		if key == AllTheThingsProfiles.Assignments[app.GUID] then
@@ -321,14 +323,14 @@ end
 -- Gets the Profile for the current character
 settings.GetProfile = function(self)
 	if AllTheThingsProfiles then
-		return AllTheThingsProfiles.Assignments[app.GUID] or DEFAULT;
+		return AllTheThingsProfiles.Assignments[app.GUID] or "Default";
 	end
 end
 -- Sets a Profile for the current character
 settings.SetProfile = function(self, key)
 	if AllTheThingsProfiles and key then
 		-- don't assign Default... it's Default...
-		if key == DEFAULT then key = nil; end
+		if key == "Default" then key = nil; end
 		AllTheThingsProfiles.Assignments[app.GUID] = key;
 	end
 end
@@ -4175,106 +4177,7 @@ local UseProfile = function(profile)
 	settings:ApplyProfile();
 	settings:UpdateMode(1);
 end
-
 local refreshProfiles;
-refreshProfiles = function()
-	local mostRecentTab = settings.MostRecentTab;
-	-- make sure to use the correct tab when adding the UI elements
-	settings.MostRecentTab = tab;
-
-	-- update the current profile label
-	local currentProfile = settings:GetProfile();
-	CurrentProfileNameLabel:SetText(currentProfile or NOT_APPLICABLE);
-
-	-- print("refresh profiles scrollbox")
-	local settingProfileItems = {};
-	if AllTheThingsProfiles then
-		-- buttons have no OnRefresh script, so have to hide it externally
-		InitializeProfilesButton:Hide();
-
-		for k,v in pairs(AllTheThingsProfiles.Profiles) do
-			-- print("added",k)
-			tinsert(settingProfileItems, k);
-		end
-	end
-	-- sort the profiles
-	app.insertionSort(settingProfileItems, function(a,b) return string.lower(a) < string.lower(b); end);
-
-	local profileCount, existingBoxes, lastProfileSelect = 0, ProfileSelector.ATT and ProfileSelector.ATT.CB_Count or 0;
-	local maxProfileNameWidth = ProfileSelector:GetWidth() - 50;
-
-	-- create checkboxes for the profiles in the scrollframe
-	for _,profile in ipairs(settingProfileItems) do
-		local profileBox;
-		profileCount = profileCount + 1;
-		if existingBoxes >= profileCount then
-			-- print("replace-profileCB",profileCount,profile)
-			profileBox = ProfileSelector.ATT.CB[profileCount];
-			profileBox.Text:SetText(profile);
-		else
-			-- print("new-profileCB",profileCount,profile)
-			profileBox = ProfileSelector:CreateCheckBox(profile,
-				function(self)
-					-- print("CB.OnRefresh",self.Text:GetText())
-					local myProfile = self.Text:GetText();
-					if settings:GetProfile() == myProfile then
-						self:SetAlpha(0.5);
-						self:SetChecked(true);
-						app.Callback(self.Disable, self);
-					elseif tab.SelectedProfile == myProfile then
-						self:SetAlpha(1);
-						self:Enable();
-						self:SetChecked(true);
-					else
-						self:SetAlpha(1);
-						self:Enable();
-						self:SetChecked(false);
-					end
-				end,
-				function(self)
-					-- logic when the respective profile checkbox is selected
-					-- holding shift will switch profiles instead of selecting one
-					local profile = self.Text:GetText();
-					if tab.SelectedProfile == profile then
-						tab.SelectedProfile = nil;
-					else
-						tab.SelectedProfile = profile;
-					end
-					if IsShiftKeyDown() then
-						if settings:GetProfile() ~= profile then
-							UseProfile(profile);
-						end
-					end
-					refreshProfiles();
-					return true;
-				end);
-			if lastProfileSelect then
-				profileBox:SetPoint("TOPLEFT", lastProfileSelect, "BOTTOMLEFT", 0, 4);
-			else
-				profileBox:SetPoint("TOPLEFT", ProfileSelector, "TOPLEFT", 5, -5);
-			end
-		end
-		profileBox.Text:SetWidth(math.min(maxProfileNameWidth, math.ceil(profileBox.Text:GetUnboundedStringWidth())));
-		profileBox:SetHitRectInsets(0,0 - profileBox.Text:GetWidth(),0,0);
-		profileBox:SetATTTooltip(profile);
-		profileBox:OnRefresh();
-		profileBox:Show();
-		lastProfileSelect = profileBox;
-	end
-
-	-- hide extra checkboxes if they've been deleted during this game session
-	if existingBoxes > profileCount then
-		-- print("removing extra checkboxes",profileCount,existingBoxes)
-		for i=profileCount + 1,existingBoxes do
-			ProfileSelector.ATT.CB[i]:Hide();
-		end
-	end
-
-	ProfileSelector:SetMaxScroll(profileCount * 6);
-	-- make sure to switch back to the previous tab once done
-	settings.MostRecentTab = mostRecentTab;
-end
-tab.OnRefresh = refreshProfiles;
 
 -- Create Button
 local CreateProfileButton = settings:CreateButton(
@@ -4319,7 +4222,7 @@ local SwitchProfileButton = settings:CreateButton(
 			refreshProfiles();
 			return true;
 		end
-	end,
+	end
 });
 SwitchProfileButton:SetPoint("TOPLEFT", NewProfileTextBox, "BOTTOMLEFT", 0, -4);
 SwitchProfileButton:Show();
@@ -4342,7 +4245,7 @@ local CopyProfileButton = settings:CreateButton(
 			refreshProfiles();
 			return true;
 		end
-	end,
+	end
 });
 CopyProfileButton:SetPoint("TOPLEFT", SwitchProfileButton, "TOPRIGHT", 10, 0);
 CopyProfileButton:Show();
@@ -4367,10 +4270,122 @@ local DeleteProfileButton = settings:CreateButton(
 			-- TODO dialog about not deleting a profile
 			-- app:ShowPopupDialog("Profile cannot be deleted!", function() end);
 		end
-	end,
+	end
 });
 DeleteProfileButton:SetPoint("BOTTOMLEFT", ProfileScroller, "BOTTOMRIGHT", 5, 0);
 DeleteProfileButton:Show();
+
+refreshProfiles = function()
+	local mostRecentTab = settings.MostRecentTab;
+	-- make sure to use the correct tab when adding the UI elements
+	settings.MostRecentTab = tab;
+	-- print("SelectedProfile",tab.SelectedProfile)
+
+	-- update the current profile label
+	local currentProfile = settings:GetProfile();
+	CurrentProfileNameLabel:SetText(currentProfile or NOT_APPLICABLE);
+
+	-- print("refresh profiles scrollbox")
+	local settingProfileItems = {};
+	if AllTheThingsProfiles then
+		-- buttons have no OnRefresh script, so have to hide it externally
+		InitializeProfilesButton:Hide();
+
+		for k,v in pairs(AllTheThingsProfiles.Profiles) do
+			-- print("added",k)
+			tinsert(settingProfileItems, k == "Default" and DEFAULT or k);
+		end
+	end
+	-- sort the profiles
+	app.insertionSort(settingProfileItems, function(a,b) return string.lower(a) < string.lower(b); end);
+
+	local profileCount, existingBoxes, lastProfileSelect = 0, ProfileSelector.ATT and ProfileSelector.ATT.CB_Count or 0;
+	local maxProfileNameWidth = ProfileSelector:GetWidth() - 50;
+
+	-- create checkboxes for the profiles in the scrollframe
+	for _,profile in ipairs(settingProfileItems) do
+		local profileBox;
+		profileCount = profileCount + 1;
+		if existingBoxes >= profileCount then
+			-- print("replace-profileCB",profileCount,profile)
+			profileBox = ProfileSelector.ATT.CB[profileCount];
+			profileBox.Text:SetText(profile);
+		else
+			-- print("new-profileCB",profileCount,profile)
+			profileBox = ProfileSelector:CreateCheckBox(profile,
+				function(self)
+					-- print("CB.OnRefresh",self.Text:GetText())
+					local myProfile = self.Text:GetText();
+					if settings:GetProfile() == myProfile then
+						self:SetAlpha(0.5);
+						self:SetChecked(true);
+						app.Callback(self.Disable, self);
+					elseif tab.SelectedProfile == myProfile then
+						self:SetAlpha(1);
+						self:Enable();
+						self:SetChecked(true);
+					else
+						self:SetAlpha(1);
+						self:Enable();
+						self:SetChecked(false);
+					end
+				end,
+				function(self)
+					-- logic when the respective profile checkbox is selected
+					-- holding shift will switch profiles instead of selecting one
+					local profile = self.Text:GetText();
+					-- print("clicked",profile)
+					if tab.SelectedProfile == profile then
+						tab.SelectedProfile = nil;
+					elseif profile ~= settings:GetProfile() then
+						tab.SelectedProfile = profile;
+					end
+					if IsShiftKeyDown() then
+						if settings:GetProfile() ~= profile then
+							UseProfile(profile);
+						end
+					end
+					refreshProfiles();
+					return true;
+				end);
+			if lastProfileSelect then
+				profileBox:SetPoint("TOPLEFT", lastProfileSelect, "BOTTOMLEFT", 0, 4);
+			else
+				profileBox:SetPoint("TOPLEFT", ProfileSelector, "TOPLEFT", 5, -5);
+			end
+		end
+		profileBox.Text:SetWidth(math.min(maxProfileNameWidth, math.ceil(profileBox.Text:GetUnboundedStringWidth())));
+		profileBox:SetHitRectInsets(0,0 - profileBox.Text:GetWidth(),0,0);
+		profileBox:SetATTTooltip(profile);
+		profileBox:OnRefresh();
+		profileBox:Show();
+		lastProfileSelect = profileBox;
+	end
+
+	-- enable/disable buttons if profile is 'selected'
+	if tab.SelectedProfile then
+		SwitchProfileButton:Enable();
+		CopyProfileButton:Enable();
+		DeleteProfileButton:Enable();
+	else
+		SwitchProfileButton:Disable();
+		CopyProfileButton:Disable();
+		DeleteProfileButton:Disable();
+	end
+
+	-- hide extra checkboxes if they've been deleted during this game session
+	if existingBoxes > profileCount then
+		-- print("removing extra checkboxes",profileCount,existingBoxes)
+		for i=profileCount + 1,existingBoxes do
+			ProfileSelector.ATT.CB[i]:Hide();
+		end
+	end
+
+	ProfileSelector:SetMaxScroll(profileCount * 6);
+	-- make sure to switch back to the previous tab once done
+	settings.MostRecentTab = mostRecentTab;
+end
+tab.OnRefresh = refreshProfiles;
 
 end)();
 
