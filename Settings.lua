@@ -353,7 +353,7 @@ settings.ApplyProfile = function()
 		end
 
 		if app.IsReady then
-			app.print(L["PROFILE"]..":",key);
+			app.print(L["PROFILE"]..":",settings:GetProfile(true));
 		end
 		return true;
 	end
