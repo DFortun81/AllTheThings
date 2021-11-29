@@ -8,15 +8,15 @@
 
 #### Dynamic groups
 
-Converted some 'Type' categories (Illusions, Mounts, Toys, Titles) in the Main list into dynamically-populated search results of the Main list itself. Please @Runawaynow in Discord with any feedback on this modification as it may need adjustments.
-Dynamic categories (and Pet Journal) are ignored when showing Source tooltips (since they are not actual Sources for Things) and likewise they no longer add to the progress/total of the Main list since they already exist elsewhere in the list.
-Known bug: right-clicking a subgroup of dynamic group will always popout the first subgroup you clicked.
+- Converted some 'Type' categories (Illusions, Mounts, Toys, Titles) in the Main list into dynamically-populated search results of the Main list itself. Please @Runawaynow in Discord with any feedback on this modification as it may need adjustments.
+- Dynamic categories (and Pet Journal) are ignored when showing Source tooltips (since they are not actual Sources for Things) and likewise they no longer add to the progress/total of the Main list since they already exist elsewhere in the list.
 
 
 #### Ad-Hoc Window Updates
 
 - Removed Ad-Hoc updates from being enabled by default. People who don't like the lag will have to turn it on themselves since it causes `/att random` to not work until the Main list is opened.
 - Modified `/att random` to work with Ad-Hoc Updates better, and print more info in chat if the Main list has not yet been updated.
+
 
 ### Notable changes:
 
