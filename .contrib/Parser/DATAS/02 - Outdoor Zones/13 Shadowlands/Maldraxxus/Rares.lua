@@ -133,11 +133,7 @@ _.Zones =
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
 						}),
 						i(182192),	-- Knee-Obstructing Legguards
-						i(174070, {	-- Indomitable Hide
-							["customCollect"] = { "SL_COV_NEC" },	-- Necrolord
-							["questID"] = 58379,
-							["isDaily"] = true,
-						}),
+						i(174070),	-- Indomitable Hide
 					},
 				}),
 				n(174108, { -- Necromantic Anomaly
@@ -164,10 +160,7 @@ _.Zones =
 						}),
 						i(182084),	-- Gorespine (MOUNT!)
 						i(184179),	-- Lichborn Commander's Boneblade
-						i(174076, {	-- Necromantic Oil
-							["questID"] = 58376,	-- Construct Part: Necromantic Oil
-							["isDaily"] = true,
-						}),
+						i(174076),	-- Necromantic Oil
 					},
 				}),
 				n(162767, {	-- Pesticide

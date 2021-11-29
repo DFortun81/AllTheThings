@@ -1,6 +1,52 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+local CONDUIT_GROUP = {
+	-- DK
+	i(182113),	-- Fleeting Wind
+	i(182133),	-- Insatiable Appetite
+	-- DH
+	i(182317),	-- Shattered Restoration
+	i(182324),	-- Felfire Haste
+	-- Druid
+	i(183466),	-- Innate Resolve
+	i(183467),	-- Tireless Pursuit
+	-- Hunter
+	i(182584),	-- Cheetah's Vigor
+	i(182469),	-- Rejuvenating Wind
+	-- Mage
+	i(181707),	-- Diverted Energy
+	i(181467),	-- Flow of Time
+	-- Monk
+	i(181512),	-- Dizzying Tumble
+	i(181373),	-- Harm Denial
+	-- Paladin
+	i(182336),	-- Golden Path
+	i(182448),	-- Light's Barding
+	-- Priest
+	i(181840),	-- Light's Inspiration
+	i(181962),	-- Mental Recovery
+	-- Rogue
+	i(183500),	-- Fade to Nothing
+	i(183496),	-- Nimble Fingers
+	-- Shaman
+	i(182106),	-- Refreshing Waters
+	i(182108),	-- Thunderous Paws
+	-- Warlock
+	i(182460),	-- Accrued Vitality
+	i(182466),	-- Shade of Terror
+	-- Warrior
+	i(181469),	-- Indelible Victory
+	i(180847),	-- Inspiring Presence
+};
+local LFR_WEAPON_GROUP = {
+	i(183893, {["modID"] = 4, }),	-- Abominable Anima Spherule
+	i(183892, {["modID"] = 4, }),	-- Mystic Anima Spherule
+	i(183891, {["modID"] = 4, }),	-- Venerated Anima Spherule
+	i(183890, {["modID"] = 4, }),	-- Zenith Anima Spherule
+	i(183888, {["modID"] = 4, }),	-- Apogee Anima Bead
+	i(183889, {["modID"] = 4, }),	-- Thaumaturgic Anima Bead
+};
 
 root("ExpansionFeatures", tier(SL_TIER, {
 	n(KYRIAN, {
@@ -10,9 +56,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 			SANCTUM_OF_BINDING,
 		},
 		["g"] = {
-			n(QUESTS, sharedData({
-				["customCollect"] = { "SL_COV_KYR", },	-- Kyrian
-				}, {
+			n(QUESTS, bubbleDown({ ["customCollect"] = "SL_COV_KYR" }, {	-- Kyrian
 				q(58997, {	-- A Bittersweet Prize
 					["sourceQuests"] = { 58995 },	-- I Dreamed A Dream
 					["provider"] = { "n", 163328 },	-- Pelagos
@@ -421,14 +465,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 					["provider"] = { "n", 166693 },	-- Polemarch Adrestes
 					["coord"] = { 67.4, 15.2, BASTION },
 					["_drop"] = { "g" },	-- make a bunch of vendor items stop showing up that are not actually rewarded by this quest
-					["g"] = {
-						i(183893, {["modID"] = 4, }),	-- Abominable Anima Spherule
-						i(183892, {["modID"] = 4, }),	-- Mystic Anima Spherule
-						i(183891, {["modID"] = 4, }),	-- Venerated Anima Spherule
-						i(183890, {["modID"] = 4, }),	-- Zenith Anima Spherule
-						i(183888, {["modID"] = 4, }),	-- Apogee Anima Bead
-						i(183889, {["modID"] = 4, }),	-- Thaumaturgic Anima Bead
-					},
+					["g"] = LFR_WEAPON_GROUP,
 				}),
 				q(58951, {	-- Lakeshire's Last Stand
 					["sourceQuests"] = { 58950 },	-- Lumber for Lakeshire
@@ -665,7 +702,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 					["sourceQuests"] = { 57898 },	-- Soul Meets Body
 					["provider"] = { "n", 160212 },	-- Soulguide Daelia
 					["coord"] = { 59.5, 34.2, SANCTUM_OF_BINDING },
-					["g"] = {
+					["g"] = appendGroups(CONDUIT_GROUP, {
 						i(181974),	-- Courageous Ascension
 						i(182321),	-- Enfeebled Mark
 						i(182345),	-- Elysian Dirge
@@ -678,43 +715,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 						i(182778),	-- Ringing Clarity
 						i(182960),	-- Soul Tithe
 						i(181759),	-- Strike with Clarity
-						-- DK
-						i(182113),	-- Fleeting Wind
-						i(182133),	-- Insatiable Appetite
-						-- DH
-						i(182317),	-- Shattered Restoration
-						i(182324),	-- Felfire Haste
-						-- Druid
-						i(183466),	-- Innate Resolve
-						i(183467),	-- Tireless Pursuit
-						-- Hunter
-						i(182584),	-- Cheetah's Vigor
-						i(182469),	-- Rejuvenating Wind
-						-- Mage
-						i(181707),	-- Diverted Energy
-						i(181467),	-- Flow of Time
-						-- Monk
-						i(181512),	-- Dizzying Tumble
-						i(181373),	-- Harm Denial
-						-- Paladin
-						i(182336),	-- Golden Path
-						i(182448),	-- Light's Barding
-						-- Priest
-						i(181840),	-- Light's Inspiration
-						i(181962),	-- Mental Recovery
-						-- Rogue
-						i(183500),	-- Fade to Nothing
-						i(183496),	-- Nimble Fingers
-						-- Shaman
-						i(182106),	-- Refreshing Waters
-						i(182108),	-- Thunderous Paws
-						-- Warlock
-						i(182460),	-- Accrued Vitality
-						i(182466),	-- Shade of Terror
-						-- Warrior
-						i(181469),	-- Indelible Victory
-						i(180847),	-- Inspiring Presence
-					},
+					}),
 				}),
 				q(61768, {	-- Stronger Together
 					["sourceQuests"] = { 61767 },	-- A Perilous Journey
@@ -894,6 +895,12 @@ root("ExpansionFeatures", tier(SL_TIER, {
 		},
 	}),
 }));
+
+for _,g in ipairs({CONDUIT_GROUP,LFR_WEAPON_GROUP}) do
+	for	_,t in ipairs(g) do
+		t.customCollect = nil;
+	end
+end
 
 root("HiddenQuestTriggers", {
 	q(59727),	-- Triggered when adding purple petals to Moonberry's soap during quest 58816 'Getting Backstage'

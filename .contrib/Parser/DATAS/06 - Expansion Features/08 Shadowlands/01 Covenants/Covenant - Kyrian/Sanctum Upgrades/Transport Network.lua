@@ -8,10 +8,10 @@ root("ExpansionFeatures", tier(SL_TIER, {
 			["icon"] = "Interface\\Icons\\ui_sigil_kyrian",
 			["g"] = bubbleDown({ ["customCollect"] = "SL_COV_KYR" }, {
 				n(TRANSPORT_NETWORK, {
-					["icon"] = 3854018,
+					["icon"] = "Interface\\Icons\\sanctum_features_transportationnetwork_bastion",
 					["g"] = {
 						n(TIER_ONE, {
-							["icon"] = 3854018,
+							["icon"] = "Interface\\Icons\\sanctum_features_transportationnetwork_bastion",
 							["g"] = {
 								n(FLIGHT_PATHS, {
 									fp(2626, {	-- Hero's Rest, Bastion
@@ -49,7 +49,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 							},
 						}),
 						n(TIER_TWO, {
-							["icon"] = 3854018,
+							["icon"] = "Interface\\Icons\\sanctum_features_transportationnetwork_bastion",
 							["g"] = {
 								n(FLIGHT_PATHS, {
 									fp(2634, {	-- Seat of Eternal Hymns, Bastion
@@ -71,7 +71,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 							},
 						}),
 						n(TIER_THREE, {
-							["icon"] = 3854018,
+							["icon"] = "Interface\\Icons\\sanctum_features_transportationnetwork_bastion",
 							["g"] = {
 								n(FLIGHT_PATHS, {
 									fp(2636, {	-- Terrace of The Collectors, Bastion

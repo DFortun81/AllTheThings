@@ -6,7 +6,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 	n(KYRIAN, {
 		n(SANCTUM_UPGRADES, {
 			["icon"] = "Interface\\Icons\\ui_sigil_kyrian",
-			["g"] = bubbleDown({ ["customCollect"] = "SL_COV_KYR" }, {
+			["g"] = bubbleDown({ ["customCollect"] = "SL_COV_KYR" }, {	-- Kyrian
 				n(COMMAND_TABLE, {
 					n(TIER_ONE, {
 						["icon"] = "Interface\\Icons\\Sanctum_features_missiontable",
