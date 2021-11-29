@@ -2339,7 +2339,7 @@ local function GetKey(t)
 	--]]
 end
 local function CreateHash(t)
-	local key = t.key or GetKey(t);
+	local key = t.key or GetKey(t) or t.text;
 	if key then
 		local hash = key .. (rawget(t, key) or t[key] or "NOKEY");
 		if key == "criteriaID" and t.achievementID then hash = hash .. ":" .. t.achievementID;
