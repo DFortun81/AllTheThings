@@ -1312,7 +1312,7 @@ local inventorySlotsMap = {	-- Taken directly from CanIMogIt (Thanks!)
 local function BuildGroups(parent, g)
 	if g then
 		-- Iterate through the groups
-		for key, group in ipairs(g) do
+		for _,group in ipairs(g) do
 			-- Set the group's parent
 			group.parent = parent;
 			group.indent = nil;
@@ -13159,7 +13159,8 @@ function app:CreateMiniListForGroup(group)
 	-- Pop Out Functionality! :O
 	local suffix = BuildSourceTextForChat(group, 1)
 		-- this portion is to ensure that custom slash command popouts have a unique name based on the stand-alone group (no parent)
-		.. " > " .. (group.text or "") .. (group.key or "NO_KEY") .. (group.key and group[group.key] or "NO_KEY_VAL");
+		.. " > " .. (group.text or "") .. (group.key or "NO_KEY") .. (group.key and group[group.key] or "NO_KEY_VAL")
+		..(app.RecursiveFirstParentWithField(group, "dynamic") or "");
 	local popout = app.Windows[suffix];
 	local showing = not popout or not popout:IsVisible();
 	-- force data to be re-collected if this is a quest chain since its logic is affected by settings
@@ -15243,6 +15244,8 @@ function app:GetDataCache()
 				group.sort = nil;
 				-- dynamic groups are ignored for the source tooltips
 				group.sourceIgnored = true;
+				-- mark the top group as dynamic for the field which it used (so popouts under the dynamic header are considered unique from other dynamic popouts)
+				group.dynamic = field;
 				-- make sure these things are cached so they can be updated when collected
 				app.CacheFields(group);
 				self.OnUpdate = nil;
@@ -16385,8 +16388,9 @@ function app:BuildSearchResponse(groups, field, value, clear)
 					groupCopy.g = response;
 					-- if the group itself does not meet the field/value expectation, force it to be uncollectible
 					if not groupCopy[field] or groupCopy[field] ~= value then groupCopy.collectible = false; end
-					-- don't copy in any extra data for the header group which can pull things into groups
+					-- don't copy in any extra data for the header group which can pull things into groups, or reference other groups
 					groupCopy.sym = nil;
+					groupCopy.sourceParent = nil;
 					if t then tinsert(t, groupCopy);
 					else t = { groupCopy }; end
 				end
