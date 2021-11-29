@@ -80,7 +80,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 										-- ["coord"] = { , BASTION },
 									}),
 									fp(2635, {	-- Temple of Humility, Bastion
-										["description"] = "Part of the Kyrian Rank 3Transport Network.",
+										["description"] = "Part of the Kyrian Rank 3 Transport Network.",
 										-- ["creatureID"] = ,	-- Eternal Gateway
 										-- ["coord"] = { , BASTION },
 									}),
