@@ -1657,22 +1657,16 @@ function Harvest(things)
 		thing = _.ItemDB[i];
 		if not thing then
 			thing = {};
-			thing.mods = {};
-			thing.bonuses = {};
 			_.ItemDB[i] = thing;
-		else
-			if not thing.mods then thing.mods = {} end
-			if not thing.bonuses then thing.bonuses = {} end
 		end
 		if j.mods then
-			for modID,sourceID in ipairs(j.mods) do
-				thing.mods[modID] = sourceID;
-			end
+			if not thing.mods then thing.mods = {} end
 			for modID,sourceID in pairs(j.mods) do
 				thing.mods[modID] = sourceID;
 			end
 		end
 		if j.bonuses then
+			if not thing.bonuses then thing.bonuses = {} end
 			for l,bonusID in pairs(j.bonuses) do
 				thing.bonuses[l] = bonusID;
 			end
