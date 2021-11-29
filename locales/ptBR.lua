@@ -937,8 +937,8 @@ for key,value in pairs({
 	[6751] = "Planta Frutífera Estranha",	-- Strange Fruited Plant
 	[6752] = "Planta Frondosa Estranha",	-- Strange Fronded Plant
 	[7510] = "Fronde Desenvolvida",	-- Sprouted Frond
-	--TODO: [15084] = "The Sparklematic 5200",	-- The Sparklematic 5200
-	--TODO: [15085] = "The Sparklematic 5200",	-- The Sparklematic 5200
+	[15084] = "A Brastematic 5200",	-- The Sparklematic 5200	--TODO: This was manually translated
+	[15085] = "A Brastematic 5200",	-- The Sparklematic 5200	--TODO: This was manually translated
 	[19022] = "Baú Gasto",	-- Worn Chest
 	[19023] = "|cFFFFFFFFStep 7:|r Página 2351",	-- |cFFFFFFFFStep 7:|r Page 2351
 	[19024] = "Santuário Escondido",	-- Hidden Shrine

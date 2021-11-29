@@ -938,8 +938,8 @@ for key,value in pairs({
 	[6751] = "Sonderbare fruchtbeladene Pflanze",	-- Strange Fruited Plant
 	[6752] = "Sonderbare wedelbestückte Pflanze",	-- Strange Fronded Plant
 	[7510] = "Sprießender Wedel",	-- Sprouted Frond
-	--TODO: [15084] = "The Sparklematic 5200",	-- The Sparklematic 5200
-	--TODO: [15085] = "The Sparklematic 5200",	-- The Sparklematic 5200
+	[15084] = "Der Funkelmat 5200",	-- The Sparklematic 5200	--TODO: This was manually translated
+	[15085] = "Der Funkelmat 5200",	-- The Sparklematic 5200	--TODO: This was manually translated
 	[19022] = "Abgenutzte Truhe",	-- Worn Chest
 	[19023] = "|cFFFFFFFFSchritt 7:|r Seite 2351",	-- |cFFFFFFFFStep 7:|r Page 2351
 	[19024] = "Verborgener Schrein",	-- Hidden Shrine

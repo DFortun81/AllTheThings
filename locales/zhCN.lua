@@ -989,8 +989,8 @@ for key, value in pairs({
 	[6751] = "奇怪的果树",	-- Strange Fruited Plant	--TODO: This was taken from classic Wowhead
 	[6752] = "奇怪的树木",	-- Strange Fronded Plant	--TODO: This was taken from classic Wowhead
 	[7510] = "发芽的树叶",	-- Sprouted Frond	--TODO: This was taken from classic Wowhead
-	--TODO: [15084] = "The Sparklematic 5200",	-- The Sparklematic 5200
-	--TODO: [15085] = "The Sparklematic 5200",	-- The Sparklematic 5200
+	[15084] = "超级清洁器5200型",	-- The Sparklematic 5200	--TODO: This was manually translated
+	[15085] = "超级清洁器5200型",	-- The Sparklematic 5200	--TODO: This was manually translated
 	[19022] = "旧箱子",	-- Worn Chest
 	[19023] = "|cFFFFFFFF第7步:|r 第2351页",	-- |cFFFFFFFFStep 7:|r Page 2351
 	[19024] = "隐蔽的神龛",	-- Hidden Shrine

@@ -923,8 +923,8 @@ for key,value in pairs({
 	[6751] = "Чудоягодник",	-- Strange Fruited Plant
 	[6752] = "Растение со странными листьями",	-- Strange Fronded Plant
 	[7510] = "Росток папоротника",	-- Sprouted Frond
-	--TODO: [15084] = "The Sparklematic 5200",	-- The Sparklematic 5200
-	--TODO: [15085] = "The Sparklematic 5200",	-- The Sparklematic 5200
+	[15084] = "Чистер 5200",	-- The Sparklematic 5200	--TODO: This was manually translated
+	[15085] = "Чистер 5200",	-- The Sparklematic 5200	--TODO: This was manually translated
 	[19022] = "Подержанный сундук",	-- Worn Chest
 	[19023] = "|cFFFFFFFFШаг 7:|r Страница 2351",	-- |cFFFFFFFFStep 7:|r Page 2351
 	[19024] = "Потаенное святилище",	-- Hidden Shrine
