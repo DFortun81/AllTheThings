@@ -321,9 +321,9 @@ settings.DeleteProfile = function(self, key)
 	end
 end
 -- Gets the Profile for the current character
-settings.GetProfile = function(self)
+settings.GetProfile = function(self, localized)
 	if AllTheThingsProfiles then
-		return AllTheThingsProfiles.Assignments[app.GUID] or "Default";
+		return AllTheThingsProfiles.Assignments[app.GUID] or (localized and DEFAULT or "Default");
 	end
 end
 -- Sets a Profile for the current character
@@ -4282,7 +4282,7 @@ refreshProfiles = function()
 	-- print("SelectedProfile",tab.SelectedProfile)
 
 	-- update the current profile label
-	local currentProfile = settings:GetProfile();
+	local currentProfile = settings:GetProfile(true);
 	CurrentProfileNameLabel:SetText(currentProfile or NOT_APPLICABLE);
 
 	-- print("refresh profiles scrollbox")
@@ -4316,7 +4316,8 @@ refreshProfiles = function()
 				function(self)
 					-- print("CB.OnRefresh",self.Text:GetText())
 					local myProfile = self.Text:GetText();
-					if settings:GetProfile() == myProfile then
+					local activeProfile = settings:GetProfile(true);
+					if activeProfile == myProfile then
 						self:SetAlpha(0.5);
 						self:SetChecked(true);
 						app.Callback(self.Disable, self);
@@ -4333,16 +4334,17 @@ refreshProfiles = function()
 				function(self)
 					-- logic when the respective profile checkbox is selected
 					-- holding shift will switch profiles instead of selecting one
-					local profile = self.Text:GetText();
+					local myProfile = self.Text:GetText();
+					local activeProfile = settings:GetProfile(true);
 					-- print("clicked",profile)
-					if tab.SelectedProfile == profile then
+					if tab.SelectedProfile == myProfile then
 						tab.SelectedProfile = nil;
-					elseif profile ~= settings:GetProfile() then
-						tab.SelectedProfile = profile;
+					elseif myProfile ~= activeProfile then
+						tab.SelectedProfile = myProfile;
 					end
 					if IsShiftKeyDown() then
-						if settings:GetProfile() ~= profile then
-							UseProfile(profile);
+						if myProfile ~= activeProfile then
+							UseProfile(myProfile);
 						end
 					end
 					refreshProfiles();
