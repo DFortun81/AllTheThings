@@ -368,7 +368,18 @@ namespace ATT
             // Apply the inherited modID for items which do not specify their own modID
             if (modID > 0 && data.ContainsKey("itemID") && !data.ContainsKey("modID"))
             {
+                //Trace.WriteLine($"Applied inherited modID {modID} over {data.GetString("modID")} for item {data.GetString("itemID")}");
                 data["modID"] = modID;
+            }
+            else if (data.ContainsKey("ignoreBonus"))
+            {
+                // will be removed later
+                data["modID"] = 0;
+                //Trace.WriteLine("Removed ignoreBonus modID", data.GetString("itemID"));
+            }
+            else if (data.TryGetValue("modID", out object objModID))
+            {
+                modID = Convert.ToInt64(objModID);
             }
 
             // Clean up Encounters which only have a single creatureID assigned via 'crs'
