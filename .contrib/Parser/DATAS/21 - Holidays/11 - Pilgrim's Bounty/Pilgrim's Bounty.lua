@@ -398,7 +398,6 @@ _.Holidays = { applyholiday(PILGRIMS_BOUNTY, {
 					-- #endif
 				},
 				["races"] = ALLIANCE_ONLY,
-				["isYearly"] = true,
 			}),
 			q(14065, {	-- Sharing a Bountiful Feast (Horde)
 				["qg"] = 34654,	-- Bountiful Feast Hostess
@@ -409,7 +408,6 @@ _.Holidays = { applyholiday(PILGRIMS_BOUNTY, {
 					HELLFIRE_PENINSULA,
 				},
 				["races"] = HORDE_ONLY,
-				["isYearly"] = true,
 			}),
 			q(14055, {	-- She Says Potato (Alliance)
 				["qg"] = 34744,	-- Jasper Moore
