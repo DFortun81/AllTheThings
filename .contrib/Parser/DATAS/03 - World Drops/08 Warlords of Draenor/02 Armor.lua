@@ -23,6 +23,8 @@ _.WorldDrops =
 				i(116679),	-- Growthshaper Amulet
 				i(111244),	-- Lovely Locket of the Luxurious Locks of Lor're
 				i(116678),	-- Moonwhisper Amulet
+				i(116687),	-- Oshu'gun Amulet
+				i(116685),	-- Ruhkmari Amulet
 				i(116684),	-- Shadowsage Amulet
 				i(116682),	-- Soulkeeper Amulet
 				i(116683),	-- Sunsworn Amulet
@@ -106,8 +108,10 @@ _.WorldDrops =
 			filter(52, {	-- Finger
 				i(116722),	-- Ancestral Ring
 				i(116695),	-- Coldsinger Ring
+				i(116704),	-- Evermourn Ring
 				i(116701),	-- Growthshaper Ring
 				i(116698),	-- Moonwhisper Ring
+				i(116719),	-- Ruhkmari Ring
 				i(118863),	-- Salubrious Signet of Snif'le
 				i(116716),	-- Shadowsage Ring
 				i(116710),	-- Soulkeeper Ring

@@ -731,7 +731,7 @@ SEVENTEENTH_ANNIVERSARY = -5366;
 -- Filters
 HELD_IN_OFF_HAND = 1;
 COSMETIC = 2;
---CLOAKS = 3; BACK is used by multiple symlinks asking for headerID.
+CLOAKS = 3; -- BACK is used by multiple symlinks asking for headerID.
 CLOTH = 4;
 LEATHER = 5;
 MAIL = 6;

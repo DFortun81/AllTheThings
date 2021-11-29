@@ -237,6 +237,122 @@ _.WorldDrops =
 				i(11975),	-- Topaz  Ring
 				i(12024),	-- Vanadium Talisman
 			}),
+			i(116920, {	-- True Steel Lockbox
+				n(WEAPONS, {
+					i(116721),	-- Ancestral Branch
+					i(116619),	-- Ancestral Scepter
+					i(116615),	-- Ancestral Spellblade
+					i(116626),	-- Ancestral Wand
+					i(116610),	-- Gorian Axe
+					i(116611),	-- Gorian Broadaxe
+					i(116612),	-- Gorian Bow
+					i(116613),	-- Gorian Crossbow
+					i(116614),	-- Gorian Dagger
+					i(116616),	-- Gorian Knuckles
+					i(116625),	-- Gorian Greatsword
+					i(116617),	-- Gorian Gun
+					i(116620),	-- Gorian Hammer
+					i(116618),	-- Gorian Mace
+					i(116621),	-- Gorian Spear
+					i(116622),	-- Gorian Staff
+					i(116623),	-- Gorian Staff
+					i(116624),	-- Gorian Sword
+					i(116627),	-- Howling Axe
+					i(116628),	-- Howling Broadaxe
+					i(116629),	-- Howling Bow
+					i(116630),	-- Howling Crossbow
+					i(116631),	-- Howling Dagger
+					i(116642),	-- Howling Greatsword
+					i(116634),	-- Howling Gun
+					i(116637),	-- Howling Hammer
+					i(116633),	-- Howling Knuckles
+					i(116635),	-- Howling Mace
+					i(116638),	-- Howling Spear
+					i(116639),	-- Howling Staff
+					i(116640),	-- Howling Staff
+					i(116641),	-- Howling Sword
+					i(116724),	-- Oshu'gun Basin
+					i(116636),	-- Oshu'gun Scepter
+					i(116632),	-- Oshu'gun Spellblade
+					i(116643),	-- Oshu'gun Wand
+				}),
+				filter(CLOAKS, {
+					i(116720),	-- Ancestral Cloak
+					i(116723),	-- Oshu'gun Cloak
+				}),
+				filter(CLOTH, {
+					i(106737),	-- Dark Star Cord
+					i(106738),	-- Dark Star Cowl
+					i(106739),	-- Dark Star Handwraps
+					i(106740),	-- Dark Star Leggings
+					i(106741),	-- Dark Star Robe
+					i(106742),	-- Dark Star Sandals
+					i(106743),	-- Dark Star Shoulderpads
+					i(106744),	-- Dark Star Wristwraps
+					i(106704),	-- Voidwrap Cord
+					i(106705),	-- Voidwrap Cowl
+					i(106706),	-- Voidwrap Handwraps
+					i(106707),	-- Voidwrap Leggings
+					i(106708),	-- Voidwrap Robe
+					i(106709),	-- Voidwrap Sandals
+					i(106710),	-- Voidwrap Shoulderpads
+					i(106711),	-- Voidwrap Wristwraps
+				}),
+				filter(LEATHER, {
+					i(106729),	-- Meadowstomper Bindings
+					i(106730),	-- Meadowstomper Boots
+					i(106731),	-- Meadowstomper Britches
+					i(106732),	-- Meadowstomper Gloves
+					i(106733),	-- Meadowstomper Hood
+					i(106734),	-- Meadowstomper Jerkin
+					i(106735),	-- Meadowstomper Shoulders
+					i(106736),	-- Meadowstomper Waistband
+					i(106696),	-- Sabermaw Bindings
+					i(106697),	-- Sabermaw Boots
+					i(106698),	-- Sabermaw Britches
+					i(106699),	-- Sabermaw Gloves
+					i(106700),	-- Sabermaw Hood
+					i(106701),	-- Sabermaw Jerkin
+					i(106702),	-- Sabermaw Shoulders
+					i(106703),	-- Sabermaw Waistband
+				}),
+				filter(MAIL, {
+					i(106745),	-- Packrunner Belt
+					i(106746),	-- Packrunner Bracers
+					i(106747),	-- Packrunner Gauntlets
+					i(106748),	-- Packrunner Greaves
+					i(106749),	-- Packrunner Helm
+					i(106750),	-- Packrunner Legguards
+					i(106751),	-- Packrunner Spaulders
+					i(106752),	-- Packrunner Vest
+					i(106712),	-- Sunspring Belt
+					i(106713),	-- Sunspring Bracers
+					i(106714),	-- Sunspring Gauntlets
+					i(106715),	-- Sunspring Greaves
+					i(106716),	-- Sunspring Helm
+					i(106717),	-- Sunspring Legguards
+					i(106718),	-- Sunspring Spaulders
+					i(106719),	-- Sunspring Vest
+				}),
+				filter(PLATE, {
+					i(106687),	-- Ironfist Breastplate
+					i(106688),	-- Ironfist Gauntlets
+					i(106689),	-- Ironfist Girdle
+					i(106690),	-- Ironfist Helm
+					i(106691),	-- Ironfist Legplates
+					i(106692),	-- Ironfist Pauldrons
+					i(106693),	-- Ironfist Sabatons
+					i(106695),	-- Ironfist Vambraces
+					i(106720),	-- Stonecrag Breastplate
+					i(106721),	-- Stonecrag Gauntlets
+					i(106722),	-- Stonecrag Girdle
+					i(106723),	-- Stonecrag Helm
+					i(106724),	-- Stonecrag Legplates
+					i(106725),	-- Stonecrag Pauldrons
+					i(106726),	-- Stonecrag Sabatons
+					i(106728),	-- Stonecrag Vambraces
+				}),
+			}),
 			i(88165, {	-- Vine-Cracked Junkbox
 				i(88149),	-- The Gloaming Blade
 				i(88150),	-- Krol Scimitar

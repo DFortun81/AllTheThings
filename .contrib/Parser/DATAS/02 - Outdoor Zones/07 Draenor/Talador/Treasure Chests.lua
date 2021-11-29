@@ -2,6 +2,72 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
+local COMMON_TREASURE_SYM = {
+	-- Weapons
+	{"select","itemID",116542},	-- Auchenai Axe
+	{"select","itemID",116544},	-- Auchenai Bow
+	{"select","itemID",116543},	-- Auchenai Broadaxe
+	{"select","itemID",116545},	-- Auchenai Crossbow
+	{"select","itemID",116546},	-- Auchenai Dagger
+	{"select","itemID",116557},	-- Auchenai Greatsword
+	{"select","itemID",116549},	-- Auchenai Gun
+	{"select","itemID",116552},	-- Auchenai Hammer
+	{"select","itemID",116548},	-- Auchenai Knuckles
+	{"select","itemID",116550},	-- Auchenai Mace
+	{"select","itemID",116553},	-- Auchenai Spear
+	{"select","itemID",116555},	-- Auchenai Staff
+	{"select","itemID",116554},	-- Auchenai Staff
+	{"select","itemID",116556},	-- Auchenai Sword
+	{"select","itemID",116709},	-- Soulkeeper Ledger
+	{"select","itemID",116551},	-- Soulkeeper Scepter
+	{"select","itemID",116547},	-- Soulkeeper Spellblade
+	{"select","itemID",116558},	-- Soulkeeper Wand
+	{"select","itemID",106562},	-- Stonebreaker Shield
+	-- Head
+	{"select","itemID",106584},	-- Deathweb Helm
+	{"select","itemID",106573},	-- Gordunni Cowl
+	{"select","itemID",106558},	-- Stonebreaker Helm
+	{"select","itemID",106568},	-- Teroclaw Hood
+	-- Shoulders
+	{"select","itemID",106586},	-- Deathweb Spaulders
+	{"select","itemID",106578},	-- Gordunni Shoulderpads
+	{"select","itemID",106560},	-- Stonebreaker Pauldrons
+	{"select","itemID",106570},	-- Teroclaw Shoulders
+	-- Back
+	{"select","itemID",116708},	-- Soulkeeper Cloak
+	-- Chest
+	{"select","itemID",106587},	-- Deathweb Vest
+	{"select","itemID",106576},	-- Gordunni Robe
+	{"select","itemID",106555},	-- Stonebreaker Breastplate
+	{"select","itemID",106569},	-- Teroclaw Jerkin
+	-- Wrist
+	{"select","itemID",106579},	-- Gordunni Wristwraps
+	{"select","itemID",106563},	-- Stonebreaker Vambraces
+	{"select","itemID",106564},	-- Teroclaw Bindings
+	-- Hands
+	{"select","itemID",106582},	-- Deathweb Gauntlets
+	{"select","itemID",106574},	-- Gordunni Handwraps
+	{"select","itemID",106556},	-- Stonebreaker Gauntlets
+	{"select","itemID",106567},	-- Teroclaw Gloves
+	-- Waist
+	{"select","itemID",106580},	-- Deathweb Belt
+	{"select","itemID",106572},	-- Gordunni Cord
+	{"select","itemID",106557},	-- Stonebreaker Girdle
+	{"select","itemID",106571},	-- Teroclaw Waistband
+	-- Legs
+	{"select","itemID",106585},	-- Deathweb Legguards
+	{"select","itemID",106575},	-- Gordunni Leggings
+	{"select","itemID",106559},	-- Stonebreaker Legplates
+	{"select","itemID",106566},	-- Teroclaw Britches
+	-- Feet
+	{"select","itemID",106583},	-- Deathweb Greaves
+	{"select","itemID",106577},	-- Gordunni Sandals
+	{"select","itemID",106561},	-- Stonebreaker Sabatons
+	{"select","itemID",106565},	-- Teroclaw Boots
+	-- Junkbox
+	{"select","itemID",116920},	-- True Steel Lockbox
+};
+
 _.Zones =
 {
 	m(DRAENOR, {
@@ -219,121 +285,7 @@ _.Zones =
 					["description"] = "Swim down to the bottom of the cavern.",
 					["modelID"] = 34286,
 					["coord"] = { 66.0, 85.1, TALADOR },
-					["g"] = {
-						-- Weapons
-						i(116542),	-- Auchenai Axe
-						i(116544),	-- Auchenai Bow
-						i(116543),	-- Auchenai Broadaxe
-						i(116545),	-- Auchenai Crossbow
-						i(116546),	-- Auchenai Dagger
-						i(116557),	-- Auchenai Greatsword
-						i(116549),	-- Auchenai Gun
-						i(116552),	-- Auchenai Hammer
-						i(116548),	-- Auchenai Knuckles
-						i(116550),	-- Auchenai Mace
-						i(116553),	-- Auchenai Spear
-						i(116555),	-- Auchenai Staff
-						i(116554),	-- Auchenai Staff
-						i(116556),	-- Auchenai Sword
-						i(116709),	-- Soulkeeper Ledger
-						i(116551),	-- Soulkeeper Scepter
-						i(116547),	-- Soulkeeper Spellblade
-						i(116558),	-- Soulkeeper Wand
-						i(106562),	-- Stonebreaker Shield
-						-- Head
-						i(106584),	-- Deathweb Helm
-						i(106573),	-- Gordunni Cowl
-						i(106558),	-- Stonebreaker Helm
-						i(106568),	-- Teroclaw Hood
-						-- Shoulders
-						i(106586),	-- Deathweb Spaulders
-						i(106578),	-- Gordunni Shoulderpads
-						i(106560),	-- Stonebreaker Pauldrons
-						i(106570),	-- Teroclaw Shoulders
-						-- Back
-						i(116708),	-- Soulkeeper Cloak
-						-- Chest
-						i(106587),	-- Deathweb Vest
-						i(106576),	-- Gordunni Robe
-						i(106555),	-- Stonebreaker Breastplate
-						i(106569),	-- Teroclaw Jerkin
-						-- Wrist
-						i(106579),	-- Gordunni Wristwraps
-						i(106563),	-- Stonebreaker Vambraces
-						i(106564),	-- Teroclaw Bindings
-						-- Hands
-						i(106582),	-- Deathweb Gauntlets
-						i(106574),	-- Gordunni Handwraps
-						i(106556),	-- Stonebreaker Gauntlets
-						i(106567),	-- Teroclaw Gloves
-						-- Waist
-						i(106580),	-- Deathweb Belt
-						i(106572),	-- Gordunni Cord
-						i(106557),	-- Stonebreaker Girdle
-						i(106571),	-- Teroclaw Waistband
-						-- Legs
-						i(106585),	-- Deathweb Legguards
-						i(106575),	-- Gordunni Leggings
-						i(106559),	-- Stonebreaker Legplates
-						i(106566),	-- Teroclaw Britches
-						-- Feet
-						i(106583),	-- Deathweb Greaves
-						i(106577),	-- Gordunni Sandals
-						i(106561),	-- Stonebreaker Sabatons
-						i(106565),	-- Teroclaw Boots
-						i(116920, {	-- True Steel Lockbox
-							-- Weapons
-							i(116721),	-- Ancestral Branch
-							i(116619),	-- Ancestral Scepter
-							i(116626),	-- Ancestral Wand
-							i(116613),	-- Gorian Crossbow
-							i(116614),	-- Gorian Dagger
-							i(116625),	-- Gorian Greatsword
-							i(116617),	-- Gorian Gun
-							i(116620),	-- Gorian Hammer
-							i(116618),	-- Gorian Mace
-							i(116621),	-- Gorian Spear
-							i(116622),	-- Gorian Staff
-							i(116627),	-- Howling Axe
-							i(116634),	-- Howling Gun
-							i(116633),	-- Howling Knuckles
-							i(116640),	-- Howling Staff
-							i(116632),	-- Oshu'gun Spellblade
-							i(116643),	-- Oshu'gun Wand
-							-- Head
-							i(106690),	-- Ironfist Helm
-							i(106723),	-- Stonecrag Helm
-							-- Shoulders
-							i(106692),	-- Ironfist Pauldrons
-							i(106735),	-- Meadowstomper Shoulders
-							i(106702),	-- Sabermaw Shoulders
-							-- Chest
-							i(106687),	-- Ironfist Breastplate
-							i(106701),	-- Sabermaw Jerkin
-							i(106720),	-- Stonecrag Breastplate
-							i(106708),	-- Voidwrap Robe
-							-- Wrist
-							i(106729),	-- Meadowstomper Bindings
-							i(106713),	-- Sunspring Bracers
-							i(106711),	-- Voidwrap Wristwraps
-							-- Hands
-							i(106747),	-- Packrunner Gauntlets
-							i(106699),	-- Sabermaw Gloves
-							i(106714),	-- Sunspring Gauntlets
-							i(106706),	-- Voidwrap Handwraps
-							-- Waist
-							i(106722),	-- Stonecrag Girdle
-							i(106712),	-- Sunspring Belt
-							i(106704),	-- Voidwrap Cord
-							-- Legs
-							i(106740),	-- Dark Star Leggings
-							i(106691),	-- Ironfist Legplates
-							i(106717),	-- Sunspring Legguards
-							-- Feet
-							i(106697),	-- Sabermaw Boots
-							i(106726),	-- Stonecrag Sabatons
-						}),
-					},
+					["sym"] = COMMON_TREASURE_SYM,
 				}),
 				o(228018, {	-- Soulbinder's Reliquary
 					["questID"] = 34254,

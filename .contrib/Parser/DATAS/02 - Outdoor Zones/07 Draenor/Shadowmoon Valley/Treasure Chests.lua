@@ -2,6 +2,69 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
+local COMMON_TREASURE_SYM = {
+	-- Weapons
+	{"select","itemID",116466},	-- Coldsinger Scepter
+	{"select","itemID",116459},	-- Frostbitten Bow
+	{"select","itemID",116461},	-- Frostbitten Dagger
+	{"select","itemID",116465},	-- Frostbitten Mace
+	{"select","itemID",106397},	-- Frostbitten Shield
+	{"select","itemID",116468},	-- Frostbitten Spear
+	{"select","itemID",116469},	-- Frostbitten Staff
+	{"select","itemID",116470},	-- Frostbitten Staff
+	{"select","itemID",116477},	-- Lunarglow Crossbow
+	{"select","itemID",116481},	-- Lunarglow Gun
+	{"select","itemID",116480},	-- Lunarglow Knuckles
+	{"select","itemID",116487},	-- Lunarglow Staff
+	{"select","itemID",116483},	-- Moonwhisper Scepter
+	{"select","itemID",116479},	-- Moonwhisper Spellblade
+	{"select","itemID",116490},	-- Moonwhisper Wand
+	{"select","itemID",106463},	-- Rockspine Shield
+	{"select","itemID",116491},	-- Vinewrapped Axe
+	{"select","itemID",116501},	-- Vinewrapped Hammer
+	{"select","itemID",116497},	-- Vinewrapped Knuckles
+	{"select","itemID",116502},	-- Vinewrapped Spear
+	-- Head
+	{"select","itemID",106419},	-- Frostlink Helm
+	{"select","itemID",106474},	-- Iyun Cowl
+	{"select","itemID",106459},	-- Rockspine Helm
+	-- Shoulders
+	{"select","itemID",106446},	-- Anchorite Shoulderpads
+	{"select","itemID",106413},	-- Lunarglow Shoulderpads
+	{"select","itemID",106428},	-- Rimeplate Pauldrons
+	{"select","itemID",106471},	-- Tailthrasher Shoulders
+	-- Back
+	{"select","itemID",116699},	-- Growthshaper Cloak
+	-- Chest
+	{"select","itemID",106422},	-- Frostlink Vest
+	{"select","itemID",106455},	-- Gronnling Vest
+	{"select","itemID",106411},	-- Lunarglow Robe
+	{"select","itemID",106456},	-- Rockspine Breastplate
+	-- Wrist
+	{"select","itemID",106416},	-- Frostlink Bracers
+	{"select","itemID",106480},	-- Iyun Wristwraps
+	-- Hands
+	{"select","itemID",106402},	-- Coldsnout Gloves
+	{"select","itemID",106417},	-- Frostlink Gauntlets
+	{"select","itemID",106424},	-- Rimeplate Gauntlets
+	{"select","itemID",106483},	-- Tangleheart Gauntlets
+	-- Waist
+	{"select","itemID",106415},	-- Frostlink Belt
+	{"select","itemID",106472},	-- Tailthrasher Waistband
+	{"select","itemID",106439},	-- Voidcaller Waistband
+	-- Legs
+	{"select","itemID",106394},	-- Bladespire Legplates
+	{"select","itemID",106476},	-- Iyun Leggings
+	-- Feet
+	{"select","itemID",106445},	-- Anchorite Sandals
+	{"select","itemID",106400},	-- Coldsnout Boots
+	{"select","itemID",106418},	-- Frostlink Greaves
+	{"select","itemID",106478},	-- Iyun Sandals
+	{"select","itemID",106412},	-- Lunarglow Sandals
+	{"select","itemID",106466},	-- Tailthrasher Boots
+	{"select","itemID",106484},	-- Tangleheart Greaves
+};
+
 _.Zones =
 {
 	m(DRAENOR, {
@@ -86,68 +149,7 @@ _.Zones =
 						{ 28.0, 38.5, DRAENOR_SHADOWMOON_VALLEY },	-- Path up starts
 						{ 29.9, 37.5, DRAENOR_SHADOWMOON_VALLEY },	-- Dusty Lockbox
 					},
-					["g"] = {
-						-- Weapons
-						i(116466),	-- Coldsinger Scepter
-						i(116459),	-- Frostbitten Bow
-						i(116461),	-- Frostbitten Dagger
-						i(116465),	-- Frostbitten Mace
-						i(106397),	-- Frostbitten Shield
-						i(116468),	-- Frostbitten Spear
-						i(116469),	-- Frostbitten Staff
-						i(116470),	-- Frostbitten Staff
-						i(116477),	-- Lunarglow Crossbow
-						i(116481),	-- Lunarglow Gun
-						i(116480),	-- Lunarglow Knuckles
-						i(116487),	-- Lunarglow Staff
-						i(116483),	-- Moonwhisper Scepter
-						i(116479),	-- Moonwhisper Spellblade
-						i(116490),	-- Moonwhisper Wand
-						i(106463),	-- Rockspine Shield
-						i(116491),	-- Vinewrapped Axe
-						i(116501),	-- Vinewrapped Hammer
-						i(116497),	-- Vinewrapped Knuckles
-						i(116502),	-- Vinewrapped Spear
-						-- Head
-						i(106419),	-- Frostlink Helm
-						i(106474),	-- Iyun Cowl
-						i(106459),	-- Rockspine Helm
-						-- Shoulders
-						i(106446),	-- Anchorite Shoulderpads
-						i(106413),	-- Lunarglow Shoulderpads
-						i(106428),	-- Rimeplate Pauldrons
-						i(106471),	-- Tailthrasher Shoulders
-						-- Back
-						i(116699),	-- Growthshaper Cloak
-						-- Chest
-						i(106422),	-- Frostlink Vest
-						i(106455),	-- Gronnling Vest
-						i(106411),	-- Lunarglow Robe
-						i(106456),	-- Rockspine Breastplate
-						-- Wrist
-						i(106416),	-- Frostlink Bracers
-						i(106480),	-- Iyun Wristwraps
-						-- Hands
-						i(106402),	-- Coldsnout Gloves
-						i(106417),	-- Frostlink Gauntlets
-						i(106424),	-- Rimeplate Gauntlets
-						i(106483),	-- Tangleheart Gauntlets
-						-- Waist
-						i(106415),	-- Frostlink Belt
-						i(106472),	-- Tailthrasher Waistband
-						i(106439),	-- Voidcaller Waistband
-						-- Legs
-						i(106394),	-- Bladespire Legplates
-						i(106476),	-- Iyun Leggings
-						-- Feet
-						i(106445),	-- Anchorite Sandals
-						i(106400),	-- Coldsnout Boots
-						i(106418),	-- Frostlink Greaves
-						i(106478),	-- Iyun Sandals
-						i(106412),	-- Lunarglow Sandals
-						i(106466),	-- Tailthrasher Boots
-						i(106484),	-- Tangleheart Greaves
-					},
+					["sym"] = COMMON_TREASURE_SYM,
 				}),
 				o(224783, {	-- False-Bottomed Jar
 					["questID"] = 33037,

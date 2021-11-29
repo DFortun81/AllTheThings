@@ -2,6 +2,75 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
+local COMMON_TREASURE_SYM = {
+	-- Weapons
+	{"select","itemID",116508},	-- Creeperclaw Axe
+	{"select","itemID",116510},	-- Creeperclaw Bow
+	{"select","itemID",116509},	-- Creeperclaw Broadaxe
+	{"select","itemID",116511},	-- Creeperclaw Crossbow
+	{"select","itemID",116512},	-- Creeperclaw Dagger
+	{"select","itemID",116523},	-- Creeperclaw Greatsword
+	{"select","itemID",116515},	-- Creeperclaw Gun
+	{"select","itemID",116518},	-- Creeperclaw Hammer
+	{"select","itemID",116514},	-- Creeperclaw Knuckles
+	{"select","itemID",116516},	-- Creeperclaw Mace
+	{"select","itemID",116519},	-- Creeperclaw Spear
+	{"select","itemID",116521},	-- Creeperclaw Staff
+	{"select","itemID",116520},	-- Creeperclaw Staff
+	{"select","itemID",116522},	-- Creeperclaw Sword
+	{"select","itemID",116517},	-- Evermorn Scepter
+	{"select","itemID",116513},	-- Evermorn Spellblade
+	{"select","itemID",116703},	-- Evermorn Twig
+	{"select","itemID",116524},	-- Evermorn Wand
+	{"select","itemID",106496},	-- Shardback Shield
+	-- Head
+	{"select","itemID",106518},	-- Highland Helm
+	{"select","itemID",106507},	-- Mandragoran Cowl
+	{"select","itemID",106492},	-- Shardback Helm
+	{"select","itemID",106502},	-- Steamscar Hood
+	-- Neck
+	{"select","itemID",116680},	-- Evermorn Amulet
+	-- Shoulders
+	{"select","itemID",106520},	-- Highland Spaulders
+	{"select","itemID",106512},	-- Mandragoran Shoulderpads
+	{"select","itemID",106494},	-- Shardback Pauldrons
+	{"select","itemID",106504},	-- Steamscar Shoulders
+	-- Bacj
+	{"select","itemID",116702},	-- Evermorn Cloak
+	-- Chest
+	{"select","itemID",106521},	-- Highland Vest
+	{"select","itemID",106510},	-- Mandragoran Robe
+	{"select","itemID",106489},	-- Shardback Breastplate
+	{"select","itemID",106503},	-- Steamscar Jerkin
+	-- Wrist
+	{"select","itemID",106515},	-- Highland Bracers
+	{"select","itemID",106513},	-- Mandragoran Wristwraps
+	{"select","itemID",106497},	-- Shardback Vambraces
+	{"select","itemID",106498},	-- Steamscar Bindings
+	-- Hands
+	{"select","itemID",106516},	-- Highland Gauntlets
+	{"select","itemID",106508},	-- Mandragoran Handwraps
+	{"select","itemID",106490},	-- Shardback Gauntlets
+	{"select","itemID",106501},	-- Steamscar Gloves
+	-- Waist
+	{"select","itemID",106514},	-- Highland Belt
+	{"select","itemID",106506},	-- Mandragoran Cord
+	{"select","itemID",106491},	-- Shardback Girdle
+	{"select","itemID",106505},	-- Steamscar Waistband
+	-- Legs
+	{"select","itemID",106519},	-- Highland Legguards
+	{"select","itemID",106509},	-- Mandragoran Leggings
+	{"select","itemID",106493},	-- Shardback Legplates
+	{"select","itemID",106500},	-- Steamscar Britches
+	-- Feet
+	{"select","itemID",106517},	-- Highland Greaves
+	{"select","itemID",106511},	-- Mandragoran Sandals
+	{"select","itemID",106495},	-- Shardback Sabatons
+	{"select","itemID",106499},	-- Steamscar Boots
+	-- Finger
+	{"select","itemID",116704},	-- Evermorn Ring
+};
+
 _.Zones =
 {
 	m(DRAENOR, {
@@ -373,74 +442,7 @@ _.Zones =
 				o(236141, {	-- Discarded Pack
 					["questID"] = 36625,
 					["coord"] = { 42.4, 83.4, GORGROND },
-					["g"] = {
-						-- Weapons
-						i(116508),	-- Creeperclaw Axe
-						i(116510),	-- Creeperclaw Bow
-						i(116509),	-- Creeperclaw Broadaxe
-						i(116511),	-- Creeperclaw Crossbow
-						i(116512),	-- Creeperclaw Dagger
-						i(116523),	-- Creeperclaw Greatsword
-						i(116515),	-- Creeperclaw Gun
-						i(116518),	-- Creeperclaw Hammer
-						i(116514),	-- Creeperclaw Knuckles
-						i(116516),	-- Creeperclaw Mace
-						i(116519),	-- Creeperclaw Spear
-						i(116521),	-- Creeperclaw Staff
-						i(116520),	-- Creeperclaw Staff
-						i(116522),	-- Creeperclaw Sword
-						i(116517),	-- Evermorn Scepter
-						i(116513),	-- Evermorn Spellblade
-						i(116703),	-- Evermorn Twig
-						i(116524),	-- Evermorn Wand
-						i(106496),	-- Shardback Shield
-						-- Head
-						i(106518),	-- Highland Helm
-						i(106507),	-- Mandragoran Cowl
-						i(106492),	-- Shardback Helm
-						i(106502),	-- Steamscar Hood
-						-- Neck
-						i(116680),	-- Evermorn Amulet
-						-- Shoulders
-						i(106520),	-- Highland Spaulders
-						i(106512),	-- Mandragoran Shoulderpads
-						i(106494),	-- Shardback Pauldrons
-						i(106504),	-- Steamscar Shoulders
-						-- Bacj
-						i(116702),	-- Evermorn Cloak
-						-- Chest
-						i(106521),	-- Highland Vest
-						i(106510),	-- Mandragoran Robe
-						i(106489),	-- Shardback Breastplate
-						i(106503),	-- Steamscar Jerkin
-						-- Wrist
-						i(106515),	-- Highland Bracers
-						i(106513),	-- Mandragoran Wristwraps
-						i(106497),	-- Shardback Vambraces
-						i(106498),	-- Steamscar Bindings
-						-- Hands
-						i(106516),	-- Highland Gauntlets
-						i(106508),	-- Mandragoran Handwraps
-						i(106490),	-- Shardback Gauntlets
-						i(106501),	-- Steamscar Gloves
-						-- Waist
-						i(106514),	-- Highland Belt
-						i(106506),	-- Mandragoran Cord
-						i(106491),	-- Shardback Girdle
-						i(106505),	-- Steamscar Waistband
-						-- Legs
-						i(106519),	-- Highland Legguards
-						i(106509),	-- Mandragoran Leggings
-						i(106493),	-- Shardback Legplates
-						i(106500),	-- Steamscar Britches
-						-- Feet
-						i(106517),	-- Highland Greaves
-						i(106511),	-- Mandragoran Sandals
-						i(106495),	-- Shardback Sabatons
-						i(106499),	-- Steamscar Boots
-						-- Finger
-						i(116704),	-- Evermorn Ring
-					},
+					["sym"] = COMMON_TREASURE_SYM,
 				}),
 				o(236139, {	-- Explorer Canister
 					["questID"] = 36621,
@@ -452,74 +454,7 @@ _.Zones =
 				o(236178, {	-- Evermorn Supply Cache
 					["questID"] = 36658,
 					["coord"] = { 41.8, 78.1, GORGROND },
-					["g"] = {
-						-- Weapons
-						i(116508),	-- Creeperclaw Axe
-						i(116510),	-- Creeperclaw Bow
-						i(116509),	-- Creeperclaw Broadaxe
-						i(116511),	-- Creeperclaw Crossbow
-						i(116512),	-- Creeperclaw Dagger
-						i(116523),	-- Creeperclaw Greatsword
-						i(116515),	-- Creeperclaw Gun
-						i(116518),	-- Creeperclaw Hammer
-						i(116514),	-- Creeperclaw Knuckles
-						i(116516),	-- Creeperclaw Mace
-						i(116519),	-- Creeperclaw Spear
-						i(116521),	-- Creeperclaw Staff
-						i(116520),	-- Creeperclaw Staff
-						i(116522),	-- Creeperclaw Sword
-						i(116517),	-- Evermorn Scepter
-						i(116513),	-- Evermorn Spellblade
-						i(116703),	-- Evermorn Twig
-						i(116524),	-- Evermorn Wand
-						i(106496),	-- Shardback Shield
-						-- Head
-						i(106518),	-- Highland Helm
-						i(106507),	-- Mandragoran Cowl
-						i(106492),	-- Shardback Helm
-						i(106502),	-- Steamscar Hood
-						-- Neck
-						i(116680),	-- Evermorn Amulet
-						-- Shoulders
-						i(106520),	-- Highland Spaulders
-						i(106512),	-- Mandragoran Shoulderpads
-						i(106494),	-- Shardback Pauldrons
-						i(106504),	-- Steamscar Shoulders
-						-- Bacj
-						i(116702),	-- Evermorn Cloak
-						-- Chest
-						i(106521),	-- Highland Vest
-						i(106510),	-- Mandragoran Robe
-						i(106489),	-- Shardback Breastplate
-						i(106503),	-- Steamscar Jerkin
-						-- Wrist
-						i(106515),	-- Highland Bracers
-						i(106513),	-- Mandragoran Wristwraps
-						i(106497),	-- Shardback Vambraces
-						i(106498),	-- Steamscar Bindings
-						-- Hands
-						i(106516),	-- Highland Gauntlets
-						i(106508),	-- Mandragoran Handwraps
-						i(106490),	-- Shardback Gauntlets
-						i(106501),	-- Steamscar Gloves
-						-- Waist
-						i(106514),	-- Highland Belt
-						i(106506),	-- Mandragoran Cord
-						i(106491),	-- Shardback Girdle
-						i(106505),	-- Steamscar Waistband
-						-- Legs
-						i(106519),	-- Highland Legguards
-						i(106509),	-- Mandragoran Leggings
-						i(106493),	-- Shardback Legplates
-						i(106500),	-- Steamscar Britches
-						-- Feet
-						i(106517),	-- Highland Greaves
-						i(106511),	-- Mandragoran Sandals
-						i(106495),	-- Shardback Sabatons
-						i(106499),	-- Steamscar Boots
-						-- Finger
-						i(116704),	-- Evermorn Ring
-					},
+					["sym"] = COMMON_TREASURE_SYM,
 				}),
 				o(233917, {	-- Femur of Improbability
 					["questID"] = 36170,
@@ -574,74 +509,7 @@ _.Zones =
 				o(233792, {	-- Pile of Rubble
 					["questID"] = 36118,
 					["coord"] = { 43.9, 70.6, GORGROND },
-					["g"] = {
-						-- Weapons
-						i(116508),	-- Creeperclaw Axe
-						i(116510),	-- Creeperclaw Bow
-						i(116509),	-- Creeperclaw Broadaxe
-						i(116511),	-- Creeperclaw Crossbow
-						i(116512),	-- Creeperclaw Dagger
-						i(116523),	-- Creeperclaw Greatsword
-						i(116515),	-- Creeperclaw Gun
-						i(116518),	-- Creeperclaw Hammer
-						i(116514),	-- Creeperclaw Knuckles
-						i(116516),	-- Creeperclaw Mace
-						i(116519),	-- Creeperclaw Spear
-						i(116521),	-- Creeperclaw Staff
-						i(116520),	-- Creeperclaw Staff
-						i(116522),	-- Creeperclaw Sword
-						i(116517),	-- Evermorn Scepter
-						i(116513),	-- Evermorn Spellblade
-						i(116703),	-- Evermorn Twig
-						i(116524),	-- Evermorn Wand
-						i(106496),	-- Shardback Shield
-						-- Head
-						i(106518),	-- Highland Helm
-						i(106507),	-- Mandragoran Cowl
-						i(106492),	-- Shardback Helm
-						i(106502),	-- Steamscar Hood
-						-- Neck
-						i(116680),	-- Evermorn Amulet
-						-- Shoulders
-						i(106520),	-- Highland Spaulders
-						i(106512),	-- Mandragoran Shoulderpads
-						i(106494),	-- Shardback Pauldrons
-						i(106504),	-- Steamscar Shoulders
-						-- Bacj
-						i(116702),	-- Evermorn Cloak
-						-- Chest
-						i(106521),	-- Highland Vest
-						i(106510),	-- Mandragoran Robe
-						i(106489),	-- Shardback Breastplate
-						i(106503),	-- Steamscar Jerkin
-						-- Wrist
-						i(106515),	-- Highland Bracers
-						i(106513),	-- Mandragoran Wristwraps
-						i(106497),	-- Shardback Vambraces
-						i(106498),	-- Steamscar Bindings
-						-- Hands
-						i(106516),	-- Highland Gauntlets
-						i(106508),	-- Mandragoran Handwraps
-						i(106490),	-- Shardback Gauntlets
-						i(106501),	-- Steamscar Gloves
-						-- Waist
-						i(106514),	-- Highland Belt
-						i(106506),	-- Mandragoran Cord
-						i(106491),	-- Shardback Girdle
-						i(106505),	-- Steamscar Waistband
-						-- Legs
-						i(106519),	-- Highland Legguards
-						i(106509),	-- Mandragoran Leggings
-						i(106493),	-- Shardback Legplates
-						i(106500),	-- Steamscar Britches
-						-- Feet
-						i(106517),	-- Highland Greaves
-						i(106511),	-- Mandragoran Sandals
-						i(106495),	-- Shardback Sabatons
-						i(106499),	-- Steamscar Boots
-						-- Finger
-						i(116704),	-- Evermorn Ring
-					},
+					["sym"] = COMMON_TREASURE_SYM,
 				}),
 				o(236170, {	-- Remains of Balik Orecrusher
 					["questID"] = 36654,
@@ -660,74 +528,7 @@ _.Zones =
 				o(236149, {	-- Sasha's Secret Stash
 					["questID"] = 36631,
 					["coord"] = { 39.0, 68.1, GORGROND },
-					["g"] = {
-						-- Weapons
-						i(116508),	-- Creeperclaw Axe
-						i(116510),	-- Creeperclaw Bow
-						i(116509),	-- Creeperclaw Broadaxe
-						i(116511),	-- Creeperclaw Crossbow
-						i(116512),	-- Creeperclaw Dagger
-						i(116523),	-- Creeperclaw Greatsword
-						i(116515),	-- Creeperclaw Gun
-						i(116518),	-- Creeperclaw Hammer
-						i(116514),	-- Creeperclaw Knuckles
-						i(116516),	-- Creeperclaw Mace
-						i(116519),	-- Creeperclaw Spear
-						i(116521),	-- Creeperclaw Staff
-						i(116520),	-- Creeperclaw Staff
-						i(116522),	-- Creeperclaw Sword
-						i(116517),	-- Evermorn Scepter
-						i(116513),	-- Evermorn Spellblade
-						i(116703),	-- Evermorn Twig
-						i(116524),	-- Evermorn Wand
-						i(106496),	-- Shardback Shield
-						-- Head
-						i(106518),	-- Highland Helm
-						i(106507),	-- Mandragoran Cowl
-						i(106492),	-- Shardback Helm
-						i(106502),	-- Steamscar Hood
-						-- Neck
-						i(116680),	-- Evermorn Amulet
-						-- Shoulders
-						i(106520),	-- Highland Spaulders
-						i(106512),	-- Mandragoran Shoulderpads
-						i(106494),	-- Shardback Pauldrons
-						i(106504),	-- Steamscar Shoulders
-						-- Bacj
-						i(116702),	-- Evermorn Cloak
-						-- Chest
-						i(106521),	-- Highland Vest
-						i(106510),	-- Mandragoran Robe
-						i(106489),	-- Shardback Breastplate
-						i(106503),	-- Steamscar Jerkin
-						-- Wrist
-						i(106515),	-- Highland Bracers
-						i(106513),	-- Mandragoran Wristwraps
-						i(106497),	-- Shardback Vambraces
-						i(106498),	-- Steamscar Bindings
-						-- Hands
-						i(106516),	-- Highland Gauntlets
-						i(106508),	-- Mandragoran Handwraps
-						i(106490),	-- Shardback Gauntlets
-						i(106501),	-- Steamscar Gloves
-						-- Waist
-						i(106514),	-- Highland Belt
-						i(106506),	-- Mandragoran Cord
-						i(106491),	-- Shardback Girdle
-						i(106505),	-- Steamscar Waistband
-						-- Legs
-						i(106519),	-- Highland Legguards
-						i(106509),	-- Mandragoran Leggings
-						i(106493),	-- Shardback Legplates
-						i(106500),	-- Steamscar Britches
-						-- Feet
-						i(106517),	-- Highland Greaves
-						i(106511),	-- Mandragoran Sandals
-						i(106495),	-- Shardback Sabatons
-						i(106499),	-- Steamscar Boots
-						-- Finger
-						i(116704),	-- Evermorn Ring
-					},
+					["sym"] = COMMON_TREASURE_SYM,
 				}),
 				o(236158, {	-- Sniper's Crossbow
 					["questID"] = 36634,
@@ -739,74 +540,7 @@ _.Zones =
 				o(236092, {	-- Stashed Emergency Rucksack
 					["questID"] = 36604,
 					["coord"] = { 48.1, 93.4, GORGROND },
-					["g"] = {
-						-- Weapons
-						i(116508),	-- Creeperclaw Axe
-						i(116510),	-- Creeperclaw Bow
-						i(116509),	-- Creeperclaw Broadaxe
-						i(116511),	-- Creeperclaw Crossbow
-						i(116512),	-- Creeperclaw Dagger
-						i(116523),	-- Creeperclaw Greatsword
-						i(116515),	-- Creeperclaw Gun
-						i(116518),	-- Creeperclaw Hammer
-						i(116514),	-- Creeperclaw Knuckles
-						i(116516),	-- Creeperclaw Mace
-						i(116519),	-- Creeperclaw Spear
-						i(116521),	-- Creeperclaw Staff
-						i(116520),	-- Creeperclaw Staff
-						i(116522),	-- Creeperclaw Sword
-						i(116517),	-- Evermorn Scepter
-						i(116513),	-- Evermorn Spellblade
-						i(116703),	-- Evermorn Twig
-						i(116524),	-- Evermorn Wand
-						i(106496),	-- Shardback Shield
-						-- Head
-						i(106518),	-- Highland Helm
-						i(106507),	-- Mandragoran Cowl
-						i(106492),	-- Shardback Helm
-						i(106502),	-- Steamscar Hood
-						-- Neck
-						i(116680),	-- Evermorn Amulet
-						-- Shoulders
-						i(106520),	-- Highland Spaulders
-						i(106512),	-- Mandragoran Shoulderpads
-						i(106494),	-- Shardback Pauldrons
-						i(106504),	-- Steamscar Shoulders
-						-- Bacj
-						i(116702),	-- Evermorn Cloak
-						-- Chest
-						i(106521),	-- Highland Vest
-						i(106510),	-- Mandragoran Robe
-						i(106489),	-- Shardback Breastplate
-						i(106503),	-- Steamscar Jerkin
-						-- Wrist
-						i(106515),	-- Highland Bracers
-						i(106513),	-- Mandragoran Wristwraps
-						i(106497),	-- Shardback Vambraces
-						i(106498),	-- Steamscar Bindings
-						-- Hands
-						i(106516),	-- Highland Gauntlets
-						i(106508),	-- Mandragoran Handwraps
-						i(106490),	-- Shardback Gauntlets
-						i(106501),	-- Steamscar Gloves
-						-- Waist
-						i(106514),	-- Highland Belt
-						i(106506),	-- Mandragoran Cord
-						i(106491),	-- Shardback Girdle
-						i(106505),	-- Steamscar Waistband
-						-- Legs
-						i(106519),	-- Highland Legguards
-						i(106509),	-- Mandragoran Leggings
-						i(106493),	-- Shardback Legplates
-						i(106500),	-- Steamscar Britches
-						-- Feet
-						i(106517),	-- Highland Greaves
-						i(106511),	-- Mandragoran Sandals
-						i(106495),	-- Shardback Sabatons
-						i(106499),	-- Steamscar Boots
-						-- Finger
-						i(116704),	-- Evermorn Ring
-					},
+					["sym"] = COMMON_TREASURE_SYM,
 				}),
 				o(231069, {	-- Strange Looking Dagger
 					["description"] = "Inside the cave with Pale and Spiders",

@@ -2,6 +2,75 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
+local COMMON_TREASURE_SYM = {
+	-- Weapons
+	{"select","itemID",116627},	-- Howling Axe
+	{"select","itemID",116629},	-- Howling Bow
+	{"select","itemID",116628},	-- Howling Broadaxe
+	{"select","itemID",116630},	-- Howling Crossbow
+	{"select","itemID",116631},	-- Howling Dagger
+	{"select","itemID",116642},	-- Howling Greatsword
+	{"select","itemID",116634},	-- Howling Gun
+	{"select","itemID",116637},	-- Howling Hammer
+	{"select","itemID",116633},	-- Howling Knuckles
+	{"select","itemID",116635},	-- Howling Mace
+	{"select","itemID",116638},	-- Howling Spear
+	{"select","itemID",116640},	-- Howling Staff
+	{"select","itemID",116639},	-- Howling Staff
+	{"select","itemID",116641},	-- Howling Sword
+	{"select","itemID",116724},	-- Oshu'gun Basin
+	{"select","itemID",116636},	-- Oshu'gun Scepter
+	{"select","itemID",116632},	-- Oshu'gun Spellblade
+	{"select","itemID",116643},	-- Oshu'gun Wand
+	{"select","itemID",106727},	-- Stonecrag Shield
+	-- Head
+	{"select","itemID",106738},	-- Dark Star Cowl
+	{"select","itemID",106733},	-- Meadowstomper Hood
+	{"select","itemID",106749},	-- Packrunner Helm
+	{"select","itemID",106723},	-- Stonecrag Helm
+	-- Neck
+	{"select","itemID",116687},	-- Oshu'gun Amulet
+	-- Shoulders
+	{"select","itemID",106743},	-- Dark Star Shoulderpads
+	{"select","itemID",106735},	-- Meadowstomper Shoulders
+	{"select","itemID",106751},	-- Packrunner Spaulders
+	{"select","itemID",106725},	-- Stonecrag Pauldrons
+	-- Back
+	{"select","itemID",116723},	-- Oshu'gun Cloak
+	-- Chest
+	{"select","itemID",106741},	-- Dark Star Robe
+	{"select","itemID",106734},	-- Meadowstomper Jerkin
+	{"select","itemID",106752},	-- Packrunner Vest
+	{"select","itemID",106720},	-- Stonecrag Breastplate
+	-- Wrist
+	{"select","itemID",106744},	-- Dark Star Wristwraps
+	{"select","itemID",106729},	-- Meadowstomper Bindings
+	{"select","itemID",106746},	-- Packrunner Bracers
+	{"select","itemID",106728},	-- Stonecrag Vambraces
+	-- Hands
+	{"select","itemID",106739},	-- Dark Star Handwraps
+	{"select","itemID",106732},	-- Meadowstomper Gloves
+	{"select","itemID",106747},	-- Packrunner Gauntlets
+	{"select","itemID",106721},	-- Stonecrag Gauntlets
+	-- Waist
+	{"select","itemID",106737},	-- Dark Star Cord
+	{"select","itemID",106736},	-- Meadowstomper Waistband
+	{"select","itemID",106745},	-- Packrunner Belt
+	{"select","itemID",106722},	-- Stonecrag Girdle
+	-- Legs
+	{"select","itemID",106740},	-- Dark Star Leggings
+	{"select","itemID",106731},	-- Meadowstomper Britches
+	{"select","itemID",106750},	-- Packrunner Legguards
+	{"select","itemID",106724},	-- Stonecrag Legplates
+	-- Feet
+	{"select","itemID",106742},	-- Dark Star Sandals
+	{"select","itemID",106730},	-- Meadowstomper Boots
+	{"select","itemID",106748},	-- Packrunner Greaves
+	{"select","itemID",106726},	-- Stonecrag Sabatons
+	-- Junkbox
+	{"select","itemID",116920},	-- True Steel Lockbox
+};
+
 _.Zones =
 {
 	m(DRAENOR, {
@@ -34,125 +103,7 @@ _.Zones =
 				o(233206, {	-- Abandoned Cargo
 					["questID"] = 35759,
 					["coord"] = { 67.6, 59.8, DRAENOR_NAGRAND },
-					["g"] = {
-						-- Weapons
-						i(116627),	-- Howling Axe
-						i(116629),	-- Howling Bow
-						i(116628),	-- Howling Broadaxe
-						i(116630),	-- Howling Crossbow
-						i(116631),	-- Howling Dagger
-						i(116642),	-- Howling Greatsword
-						i(116634),	-- Howling Gun
-						i(116637),	-- Howling Hammer
-						i(116633),	-- Howling Knuckles
-						i(116635),	-- Howling Mace
-						i(116638),	-- Howling Spear
-						i(116640),	-- Howling Staff
-						i(116639),	-- Howling Staff
-						i(116641),	-- Howling Sword
-						i(116724),	-- Oshu'gun Basin
-						i(116636),	-- Oshu'gun Scepter
-						i(116632),	-- Oshu'gun Spellblade
-						i(116643),	-- Oshu'gun Wand
-						i(106727),	-- Stonecrag Shield
-						-- Head
-						i(106738),	-- Dark Star Cowl
-						i(106733),	-- Meadowstomper Hood
-						i(106749),	-- Packrunner Helm
-						i(106723),	-- Stonecrag Helm
-						-- Neck
-						i(116687),	-- Oshu'gun Amulet
-						-- Shoulders
-						i(106743),	-- Dark Star Shoulderpads
-						i(106735),	-- Meadowstomper Shoulders
-						i(106751),	-- Packrunner Spaulders
-						i(106725),	-- Stonecrag Pauldrons
-						-- Back
-						i(116723),	-- Oshu'gun Cloak
-						-- Chest
-						i(106741),	-- Dark Star Robe
-						i(106734),	-- Meadowstomper Jerkin
-						i(106752),	-- Packrunner Vest
-						i(106720),	-- Stonecrag Breastplate
-						-- Wrist
-						i(106744),	-- Dark Star Wristwraps
-						i(106729),	-- Meadowstomper Bindings
-						i(106746),	-- Packrunner Bracers
-						i(106728),	-- Stonecrag Vambraces
-						-- Hands
-						i(106739),	-- Dark Star Handwraps
-						i(106732),	-- Meadowstomper Gloves
-						i(106747),	-- Packrunner Gauntlets
-						i(106721),	-- Stonecrag Gauntlets
-						-- Waist
-						i(106737),	-- Dark Star Cord
-						i(106736),	-- Meadowstomper Waistband
-						i(106745),	-- Packrunner Belt
-						i(106722),	-- Stonecrag Girdle
-						-- Legs
-						i(106740),	-- Dark Star Leggings
-						i(106731),	-- Meadowstomper Britches
-						i(106750),	-- Packrunner Legguards
-						i(106724),	-- Stonecrag Legplates
-						-- Feet
-						i(106742),	-- Dark Star Sandals
-						i(106730),	-- Meadowstomper Boots
-						i(106748),	-- Packrunner Greaves
-						i(106726),	-- Stonecrag Sabatons
-						-- Finger
-						i(116920, {	-- True Steel Lockbox
-							-- Weapons
-							i(116721),	-- Ancestral Branch
-							i(116619),	-- Ancestral Scepter
-							i(116626),	-- Ancestral Wand
-							i(116613),	-- Gorian Crossbow
-							i(116614),	-- Gorian Dagger
-							i(116625),	-- Gorian Greatsword
-							i(116617),	-- Gorian Gun
-							i(116620),	-- Gorian Hammer
-							i(116618),	-- Gorian Mace
-							i(116621),	-- Gorian Spear
-							i(116622),	-- Gorian Staff
-							i(116627),	-- Howling Axe
-							i(116634),	-- Howling Gun
-							i(116633),	-- Howling Knuckles
-							i(116640),	-- Howling Staff
-							i(116632),	-- Oshu'gun Spellblade
-							i(116643),	-- Oshu'gun Wand
-							-- Head
-							i(106690),	-- Ironfist Helm
-							i(106723),	-- Stonecrag Helm
-							-- Shoulders
-							i(106692),	-- Ironfist Pauldrons
-							i(106735),	-- Meadowstomper Shoulders
-							i(106702),	-- Sabermaw Shoulders
-							-- Chest
-							i(106687),	-- Ironfist Breastplate
-							i(106701),	-- Sabermaw Jerkin
-							i(106720),	-- Stonecrag Breastplate
-							i(106708),	-- Voidwrap Robe
-							-- Wrist
-							i(106729),	-- Meadowstomper Bindings
-							i(106713),	-- Sunspring Bracers
-							i(106711),	-- Voidwrap Wristwraps
-							-- Hands
-							i(106747),	-- Packrunner Gauntlets
-							i(106699),	-- Sabermaw Gloves
-							i(106714),	-- Sunspring Gauntlets
-							i(106706),	-- Voidwrap Handwraps
-							-- Waist
-							i(106722),	-- Stonecrag Girdle
-							i(106712),	-- Sunspring Belt
-							i(106704),	-- Voidwrap Cord
-							-- Legs
-							i(106740),	-- Dark Star Leggings
-							i(106691),	-- Ironfist Legplates
-							i(106717),	-- Sunspring Legguards
-							-- Feet
-							i(106697),	-- Sabermaw Boots
-							i(106726),	-- Stonecrag Sabatons
-						}),
-					},
+					["sym"] = COMMON_TREASURE_SYM,
 				}),
 				o(233650, {	-- Adventurer's Mace
 					["questID"] = 36077,
@@ -165,375 +116,18 @@ _.Zones =
 				o(233218, {	-- Adventurer's Pack
 					["questID"] = 35765,
 					["coord"] = { 82.2, 56.5, DRAENOR_NAGRAND },
-					["g"] = {
-						-- Weapons
-						i(116627),	-- Howling Axe
-						i(116629),	-- Howling Bow
-						i(116628),	-- Howling Broadaxe
-						i(116630),	-- Howling Crossbow
-						i(116631),	-- Howling Dagger
-						i(116642),	-- Howling Greatsword
-						i(116634),	-- Howling Gun
-						i(116637),	-- Howling Hammer
-						i(116633),	-- Howling Knuckles
-						i(116635),	-- Howling Mace
-						i(116638),	-- Howling Spear
-						i(116640),	-- Howling Staff
-						i(116639),	-- Howling Staff
-						i(116641),	-- Howling Sword
-						i(116724),	-- Oshu'gun Basin
-						i(116636),	-- Oshu'gun Scepter
-						i(116632),	-- Oshu'gun Spellblade
-						i(116643),	-- Oshu'gun Wand
-						i(106727),	-- Stonecrag Shield
-						-- Head
-						i(106738),	-- Dark Star Cowl
-						i(106733),	-- Meadowstomper Hood
-						i(106749),	-- Packrunner Helm
-						i(106723),	-- Stonecrag Helm
-						-- Neck
-						i(116687),	-- Oshu'gun Amulet
-						-- Shoulders
-						i(106743),	-- Dark Star Shoulderpads
-						i(106735),	-- Meadowstomper Shoulders
-						i(106751),	-- Packrunner Spaulders
-						i(106725),	-- Stonecrag Pauldrons
-						-- Back
-						i(116723),	-- Oshu'gun Cloak
-						-- Chest
-						i(106741),	-- Dark Star Robe
-						i(106734),	-- Meadowstomper Jerkin
-						i(106752),	-- Packrunner Vest
-						i(106720),	-- Stonecrag Breastplate
-						-- Wrist
-						i(106744),	-- Dark Star Wristwraps
-						i(106729),	-- Meadowstomper Bindings
-						i(106746),	-- Packrunner Bracers
-						i(106728),	-- Stonecrag Vambraces
-						-- Hands
-						i(106739),	-- Dark Star Handwraps
-						i(106732),	-- Meadowstomper Gloves
-						i(106747),	-- Packrunner Gauntlets
-						i(106721),	-- Stonecrag Gauntlets
-						-- Waist
-						i(106737),	-- Dark Star Cord
-						i(106736),	-- Meadowstomper Waistband
-						i(106745),	-- Packrunner Belt
-						i(106722),	-- Stonecrag Girdle
-						-- Legs
-						i(106740),	-- Dark Star Leggings
-						i(106731),	-- Meadowstomper Britches
-						i(106750),	-- Packrunner Legguards
-						i(106724),	-- Stonecrag Legplates
-						-- Feet
-						i(106742),	-- Dark Star Sandals
-						i(106730),	-- Meadowstomper Boots
-						i(106748),	-- Packrunner Greaves
-						i(106726),	-- Stonecrag Sabatons
-						-- Finger
-						i(116725),	-- Oshu'gun Ring
-						i(116920, {	-- True Steel Lockbox
-							-- Weapons
-							i(116721),	-- Ancestral Branch
-							i(116619),	-- Ancestral Scepter
-							i(116626),	-- Ancestral Wand
-							i(116613),	-- Gorian Crossbow
-							i(116614),	-- Gorian Dagger
-							i(116625),	-- Gorian Greatsword
-							i(116617),	-- Gorian Gun
-							i(116620),	-- Gorian Hammer
-							i(116618),	-- Gorian Mace
-							i(116621),	-- Gorian Spear
-							i(116622),	-- Gorian Staff
-							i(116627),	-- Howling Axe
-							i(116634),	-- Howling Gun
-							i(116633),	-- Howling Knuckles
-							i(116640),	-- Howling Staff
-							i(116632),	-- Oshu'gun Spellblade
-							i(116643),	-- Oshu'gun Wand
-							-- Head
-							i(106690),	-- Ironfist Helm
-							i(106723),	-- Stonecrag Helm
-							-- Shoulders
-							i(106692),	-- Ironfist Pauldrons
-							i(106735),	-- Meadowstomper Shoulders
-							i(106702),	-- Sabermaw Shoulders
-							-- Chest
-							i(106687),	-- Ironfist Breastplate
-							i(106701),	-- Sabermaw Jerkin
-							i(106720),	-- Stonecrag Breastplate
-							i(106708),	-- Voidwrap Robe
-							-- Wrist
-							i(106729),	-- Meadowstomper Bindings
-							i(106713),	-- Sunspring Bracers
-							i(106711),	-- Voidwrap Wristwraps
-							-- Hands
-							i(106747),	-- Packrunner Gauntlets
-							i(106699),	-- Sabermaw Gloves
-							i(106714),	-- Sunspring Gauntlets
-							i(106706),	-- Voidwrap Handwraps
-							-- Waist
-							i(106722),	-- Stonecrag Girdle
-							i(106712),	-- Sunspring Belt
-							i(106704),	-- Voidwrap Cord
-							-- Legs
-							i(106740),	-- Dark Star Leggings
-							i(106691),	-- Ironfist Legplates
-							i(106717),	-- Sunspring Legguards
-							-- Feet
-							i(106697),	-- Sabermaw Boots
-							i(106726),	-- Stonecrag Sabatons
-						}),
-					},
+					["sym"] = COMMON_TREASURE_SYM,
 				}),
 				o(233511, {	-- Adventurer's Pack
 					["questID"] = 35969,
 					["coord"] = { 45.6, 52.0, DRAENOR_NAGRAND },
-					["g"] = {
-						-- Weapons
-						i(116627),	-- Howling Axe
-						i(116629),	-- Howling Bow
-						i(116628),	-- Howling Broadaxe
-						i(116630),	-- Howling Crossbow
-						i(116631),	-- Howling Dagger
-						i(116642),	-- Howling Greatsword
-						i(116634),	-- Howling Gun
-						i(116637),	-- Howling Hammer
-						i(116633),	-- Howling Knuckles
-						i(116635),	-- Howling Mace
-						i(116638),	-- Howling Spear
-						i(116640),	-- Howling Staff
-						i(116639),	-- Howling Staff
-						i(116641),	-- Howling Sword
-						i(116724),	-- Oshu'gun Basin
-						i(116636),	-- Oshu'gun Scepter
-						i(116632),	-- Oshu'gun Spellblade
-						i(116643),	-- Oshu'gun Wand
-						i(106727),	-- Stonecrag Shield
-						-- Head
-						i(106738),	-- Dark Star Cowl
-						i(106733),	-- Meadowstomper Hood
-						i(106749),	-- Packrunner Helm
-						i(106723),	-- Stonecrag Helm
-						-- Neck
-						i(116687),	-- Oshu'gun Amulet
-						-- Shoulders
-						i(106743),	-- Dark Star Shoulderpads
-						i(106735),	-- Meadowstomper Shoulders
-						i(106751),	-- Packrunner Spaulders
-						i(106725),	-- Stonecrag Pauldrons
-						-- Back
-						i(116723),	-- Oshu'gun Cloak
-						-- Chest
-						i(106741),	-- Dark Star Robe
-						i(106734),	-- Meadowstomper Jerkin
-						i(106752),	-- Packrunner Vest
-						i(106720),	-- Stonecrag Breastplate
-						-- Wrist
-						i(106744),	-- Dark Star Wristwraps
-						i(106729),	-- Meadowstomper Bindings
-						i(106746),	-- Packrunner Bracers
-						i(106728),	-- Stonecrag Vambraces
-						-- Hands
-						i(106739),	-- Dark Star Handwraps
-						i(106732),	-- Meadowstomper Gloves
-						i(106747),	-- Packrunner Gauntlets
-						i(106721),	-- Stonecrag Gauntlets
-						-- Waist
-						i(106737),	-- Dark Star Cord
-						i(106736),	-- Meadowstomper Waistband
-						i(106745),	-- Packrunner Belt
-						i(106722),	-- Stonecrag Girdle
-						-- Legs
-						i(106740),	-- Dark Star Leggings
-						i(106731),	-- Meadowstomper Britches
-						i(106750),	-- Packrunner Legguards
-						i(106724),	-- Stonecrag Legplates
-						-- Feet
-						i(106742),	-- Dark Star Sandals
-						i(106730),	-- Meadowstomper Boots
-						i(106748),	-- Packrunner Greaves
-						i(106726),	-- Stonecrag Sabatons
-						-- Finger
-						i(116725),	-- Oshu'gun Ring
-						i(116920, {	-- True Steel Lockbox
-							-- Weapons
-							i(116721),	-- Ancestral Branch
-							i(116619),	-- Ancestral Scepter
-							i(116626),	-- Ancestral Wand
-							i(116613),	-- Gorian Crossbow
-							i(116614),	-- Gorian Dagger
-							i(116625),	-- Gorian Greatsword
-							i(116617),	-- Gorian Gun
-							i(116620),	-- Gorian Hammer
-							i(116618),	-- Gorian Mace
-							i(116621),	-- Gorian Spear
-							i(116622),	-- Gorian Staff
-							i(116627),	-- Howling Axe
-							i(116634),	-- Howling Gun
-							i(116633),	-- Howling Knuckles
-							i(116640),	-- Howling Staff
-							i(116632),	-- Oshu'gun Spellblade
-							i(116643),	-- Oshu'gun Wand
-							-- Head
-							i(106690),	-- Ironfist Helm
-							i(106723),	-- Stonecrag Helm
-							-- Shoulders
-							i(106692),	-- Ironfist Pauldrons
-							i(106735),	-- Meadowstomper Shoulders
-							i(106702),	-- Sabermaw Shoulders
-							-- Chest
-							i(106687),	-- Ironfist Breastplate
-							i(106701),	-- Sabermaw Jerkin
-							i(106720),	-- Stonecrag Breastplate
-							i(106708),	-- Voidwrap Robe
-							-- Wrist
-							i(106729),	-- Meadowstomper Bindings
-							i(106713),	-- Sunspring Bracers
-							i(106711),	-- Voidwrap Wristwraps
-							-- Hands
-							i(106747),	-- Packrunner Gauntlets
-							i(106699),	-- Sabermaw Gloves
-							i(106714),	-- Sunspring Gauntlets
-							i(106706),	-- Voidwrap Handwraps
-							-- Waist
-							i(106722),	-- Stonecrag Girdle
-							i(106712),	-- Sunspring Belt
-							i(106704),	-- Voidwrap Cord
-							-- Legs
-							i(106740),	-- Dark Star Leggings
-							i(106691),	-- Ironfist Legplates
-							i(106717),	-- Sunspring Legguards
-							-- Feet
-							i(106697),	-- Sabermaw Boots
-							i(106726),	-- Stonecrag Sabatons
-						}),
-					},
+					["sym"] = COMMON_TREASURE_SYM,
 				}),
 				o(232406, {	-- Adventurer's Pack
 					["questID"] = 35597,
 					["coord"] = { 69.9, 52.5, DRAENOR_NAGRAND },
 					["description"] = "Hanging in a tree.",
-					["g"] = {
-						-- Weapons
-						i(116627),	-- Howling Axe
-						i(116629),	-- Howling Bow
-						i(116628),	-- Howling Broadaxe
-						i(116630),	-- Howling Crossbow
-						i(116631),	-- Howling Dagger
-						i(116642),	-- Howling Greatsword
-						i(116634),	-- Howling Gun
-						i(116637),	-- Howling Hammer
-						i(116633),	-- Howling Knuckles
-						i(116635),	-- Howling Mace
-						i(116638),	-- Howling Spear
-						i(116640),	-- Howling Staff
-						i(116639),	-- Howling Staff
-						i(116641),	-- Howling Sword
-						i(116724),	-- Oshu'gun Basin
-						i(116636),	-- Oshu'gun Scepter
-						i(116632),	-- Oshu'gun Spellblade
-						i(116643),	-- Oshu'gun Wand
-						i(106727),	-- Stonecrag Shield
-						-- Head
-						i(106738),	-- Dark Star Cowl
-						i(106733),	-- Meadowstomper Hood
-						i(106749),	-- Packrunner Helm
-						i(106723),	-- Stonecrag Helm
-						-- Neck
-						i(116687),	-- Oshu'gun Amulet
-						-- Shoulders
-						i(106743),	-- Dark Star Shoulderpads
-						i(106735),	-- Meadowstomper Shoulders
-						i(106751),	-- Packrunner Spaulders
-						i(106725),	-- Stonecrag Pauldrons
-						-- Back
-						i(116723),	-- Oshu'gun Cloak
-						-- Chest
-						i(106741),	-- Dark Star Robe
-						i(106734),	-- Meadowstomper Jerkin
-						i(106752),	-- Packrunner Vest
-						i(106720),	-- Stonecrag Breastplate
-						-- Wrist
-						i(106744),	-- Dark Star Wristwraps
-						i(106729),	-- Meadowstomper Bindings
-						i(106746),	-- Packrunner Bracers
-						i(106728),	-- Stonecrag Vambraces
-						-- Hands
-						i(106739),	-- Dark Star Handwraps
-						i(106732),	-- Meadowstomper Gloves
-						i(106747),	-- Packrunner Gauntlets
-						i(106721),	-- Stonecrag Gauntlets
-						-- Waist
-						i(106737),	-- Dark Star Cord
-						i(106736),	-- Meadowstomper Waistband
-						i(106745),	-- Packrunner Belt
-						i(106722),	-- Stonecrag Girdle
-						-- Legs
-						i(106740),	-- Dark Star Leggings
-						i(106731),	-- Meadowstomper Britches
-						i(106750),	-- Packrunner Legguards
-						i(106724),	-- Stonecrag Legplates
-						-- Feet
-						i(106742),	-- Dark Star Sandals
-						i(106730),	-- Meadowstomper Boots
-						i(106748),	-- Packrunner Greaves
-						i(106726),	-- Stonecrag Sabatons
-						-- Finger
-						i(116725),	-- Oshu'gun Ring
-						i(116920, {	-- True Steel Lockbox
-							-- Weapons
-							i(116721),	-- Ancestral Branch
-							i(116619),	-- Ancestral Scepter
-							i(116626),	-- Ancestral Wand
-							i(116613),	-- Gorian Crossbow
-							i(116614),	-- Gorian Dagger
-							i(116625),	-- Gorian Greatsword
-							i(116617),	-- Gorian Gun
-							i(116620),	-- Gorian Hammer
-							i(116618),	-- Gorian Mace
-							i(116621),	-- Gorian Spear
-							i(116622),	-- Gorian Staff
-							i(116627),	-- Howling Axe
-							i(116634),	-- Howling Gun
-							i(116633),	-- Howling Knuckles
-							i(116640),	-- Howling Staff
-							i(116632),	-- Oshu'gun Spellblade
-							i(116643),	-- Oshu'gun Wand
-							-- Head
-							i(106690),	-- Ironfist Helm
-							i(106723),	-- Stonecrag Helm
-							-- Shoulders
-							i(106692),	-- Ironfist Pauldrons
-							i(106735),	-- Meadowstomper Shoulders
-							i(106702),	-- Sabermaw Shoulders
-							-- Chest
-							i(106687),	-- Ironfist Breastplate
-							i(106701),	-- Sabermaw Jerkin
-							i(106720),	-- Stonecrag Breastplate
-							i(106708),	-- Voidwrap Robe
-							-- Wrist
-							i(106729),	-- Meadowstomper Bindings
-							i(106713),	-- Sunspring Bracers
-							i(106711),	-- Voidwrap Wristwraps
-							-- Hands
-							i(106747),	-- Packrunner Gauntlets
-							i(106699),	-- Sabermaw Gloves
-							i(106714),	-- Sunspring Gauntlets
-							i(106706),	-- Voidwrap Handwraps
-							-- Waist
-							i(106722),	-- Stonecrag Girdle
-							i(106712),	-- Sunspring Belt
-							i(106704),	-- Voidwrap Cord
-							-- Legs
-							i(106740),	-- Dark Star Leggings
-							i(106691),	-- Ironfist Legplates
-							i(106717),	-- Sunspring Legguards
-							-- Feet
-							i(106697),	-- Sabermaw Boots
-							i(106726),	-- Stonecrag Sabatons
-						}),
-					},
+					["sym"] = COMMON_TREASURE_SYM,
 				}),
 				o(233658, {	-- Adventurer's Pouch
 					["description"]	= "Follow coords in order, start at cave and follow ramp to reach the pouch.",
@@ -544,376 +138,19 @@ _.Zones =
 						{ 64.2, 37.9, 553 },	-- Start of Ramp
 						{ 65.8, 57.6, 553 },	-- Pouch
 					},
-					["g"] = {
-						-- Weapons
-						i(116627),	-- Howling Axe
-						i(116629),	-- Howling Bow
-						i(116628),	-- Howling Broadaxe
-						i(116630),	-- Howling Crossbow
-						i(116631),	-- Howling Dagger
-						i(116642),	-- Howling Greatsword
-						i(116634),	-- Howling Gun
-						i(116637),	-- Howling Hammer
-						i(116633),	-- Howling Knuckles
-						i(116635),	-- Howling Mace
-						i(116638),	-- Howling Spear
-						i(116640),	-- Howling Staff
-						i(116639),	-- Howling Staff
-						i(116641),	-- Howling Sword
-						i(116724),	-- Oshu'gun Basin
-						i(116636),	-- Oshu'gun Scepter
-						i(116632),	-- Oshu'gun Spellblade
-						i(116643),	-- Oshu'gun Wand
-						i(106727),	-- Stonecrag Shield
-						-- Head
-						i(106738),	-- Dark Star Cowl
-						i(106733),	-- Meadowstomper Hood
-						i(106749),	-- Packrunner Helm
-						i(106723),	-- Stonecrag Helm
-						-- Neck
-						i(116687),	-- Oshu'gun Amulet
-						-- Shoulders
-						i(106743),	-- Dark Star Shoulderpads
-						i(106735),	-- Meadowstomper Shoulders
-						i(106751),	-- Packrunner Spaulders
-						i(106725),	-- Stonecrag Pauldrons
-						-- Back
-						i(116723),	-- Oshu'gun Cloak
-						-- Chest
-						i(106741),	-- Dark Star Robe
-						i(106734),	-- Meadowstomper Jerkin
-						i(106752),	-- Packrunner Vest
-						i(106720),	-- Stonecrag Breastplate
-						-- Wrist
-						i(106744),	-- Dark Star Wristwraps
-						i(106729),	-- Meadowstomper Bindings
-						i(106746),	-- Packrunner Bracers
-						i(106728),	-- Stonecrag Vambraces
-						-- Hands
-						i(106739),	-- Dark Star Handwraps
-						i(106732),	-- Meadowstomper Gloves
-						i(106747),	-- Packrunner Gauntlets
-						i(106721),	-- Stonecrag Gauntlets
-						-- Waist
-						i(106737),	-- Dark Star Cord
-						i(106736),	-- Meadowstomper Waistband
-						i(106745),	-- Packrunner Belt
-						i(106722),	-- Stonecrag Girdle
-						-- Legs
-						i(106740),	-- Dark Star Leggings
-						i(106731),	-- Meadowstomper Britches
-						i(106750),	-- Packrunner Legguards
-						i(106724),	-- Stonecrag Legplates
-						-- Feet
-						i(106742),	-- Dark Star Sandals
-						i(106730),	-- Meadowstomper Boots
-						i(106748),	-- Packrunner Greaves
-						i(106726),	-- Stonecrag Sabatons
-						-- Finger
-						i(116725),	-- Oshu'gun Ring
-						i(116920, {	-- True Steel Lockbox
-							-- Weapons
-							i(116721),	-- Ancestral Branch
-							i(116619),	-- Ancestral Scepter
-							i(116626),	-- Ancestral Wand
-							i(116613),	-- Gorian Crossbow
-							i(116614),	-- Gorian Dagger
-							i(116625),	-- Gorian Greatsword
-							i(116617),	-- Gorian Gun
-							i(116620),	-- Gorian Hammer
-							i(116618),	-- Gorian Mace
-							i(116621),	-- Gorian Spear
-							i(116622),	-- Gorian Staff
-							i(116627),	-- Howling Axe
-							i(116634),	-- Howling Gun
-							i(116633),	-- Howling Knuckles
-							i(116640),	-- Howling Staff
-							i(116632),	-- Oshu'gun Spellblade
-							i(116643),	-- Oshu'gun Wand
-							-- Head
-							i(106690),	-- Ironfist Helm
-							i(106723),	-- Stonecrag Helm
-							-- Shoulders
-							i(106692),	-- Ironfist Pauldrons
-							i(106735),	-- Meadowstomper Shoulders
-							i(106702),	-- Sabermaw Shoulders
-							-- Chest
-							i(106687),	-- Ironfist Breastplate
-							i(106701),	-- Sabermaw Jerkin
-							i(106720),	-- Stonecrag Breastplate
-							i(106708),	-- Voidwrap Robe
-							-- Wrist
-							i(106729),	-- Meadowstomper Bindings
-							i(106713),	-- Sunspring Bracers
-							i(106711),	-- Voidwrap Wristwraps
-							-- Hands
-							i(106747),	-- Packrunner Gauntlets
-							i(106699),	-- Sabermaw Gloves
-							i(106714),	-- Sunspring Gauntlets
-							i(106706),	-- Voidwrap Handwraps
-							-- Waist
-							i(106722),	-- Stonecrag Girdle
-							i(106712),	-- Sunspring Belt
-							i(106704),	-- Voidwrap Cord
-							-- Legs
-							i(106740),	-- Dark Star Leggings
-							i(106691),	-- Ironfist Legplates
-							i(106717),	-- Sunspring Legguards
-							-- Feet
-							i(106697),	-- Sabermaw Boots
-							i(106726),	-- Stonecrag Sabatons
-						}),
-					},
+					["sym"] = COMMON_TREASURE_SYM,
 				}),
 				o(233623, {	-- Adventurer's Pouch
 					["questID"] = 36050,
 					["coord"] = { 56.6, 72.9, DRAENOR_NAGRAND },
 					["modelID"] = 32854,
-					["g"] = {
-						-- Weapons
-						i(116627),	-- Howling Axe
-						i(116629),	-- Howling Bow
-						i(116628),	-- Howling Broadaxe
-						i(116630),	-- Howling Crossbow
-						i(116631),	-- Howling Dagger
-						i(116642),	-- Howling Greatsword
-						i(116634),	-- Howling Gun
-						i(116637),	-- Howling Hammer
-						i(116633),	-- Howling Knuckles
-						i(116635),	-- Howling Mace
-						i(116638),	-- Howling Spear
-						i(116640),	-- Howling Staff
-						i(116639),	-- Howling Staff
-						i(116641),	-- Howling Sword
-						i(116724),	-- Oshu'gun Basin
-						i(116636),	-- Oshu'gun Scepter
-						i(116632),	-- Oshu'gun Spellblade
-						i(116643),	-- Oshu'gun Wand
-						i(106727),	-- Stonecrag Shield
-						-- Head
-						i(106738),	-- Dark Star Cowl
-						i(106733),	-- Meadowstomper Hood
-						i(106749),	-- Packrunner Helm
-						i(106723),	-- Stonecrag Helm
-						-- Neck
-						i(116687),	-- Oshu'gun Amulet
-						-- Shoulders
-						i(106743),	-- Dark Star Shoulderpads
-						i(106735),	-- Meadowstomper Shoulders
-						i(106751),	-- Packrunner Spaulders
-						i(106725),	-- Stonecrag Pauldrons
-						-- Back
-						i(116723),	-- Oshu'gun Cloak
-						-- Chest
-						i(106741),	-- Dark Star Robe
-						i(106734),	-- Meadowstomper Jerkin
-						i(106752),	-- Packrunner Vest
-						i(106720),	-- Stonecrag Breastplate
-						-- Wrist
-						i(106744),	-- Dark Star Wristwraps
-						i(106729),	-- Meadowstomper Bindings
-						i(106746),	-- Packrunner Bracers
-						i(106728),	-- Stonecrag Vambraces
-						-- Hands
-						i(106739),	-- Dark Star Handwraps
-						i(106732),	-- Meadowstomper Gloves
-						i(106747),	-- Packrunner Gauntlets
-						i(106721),	-- Stonecrag Gauntlets
-						-- Waist
-						i(106737),	-- Dark Star Cord
-						i(106736),	-- Meadowstomper Waistband
-						i(106745),	-- Packrunner Belt
-						i(106722),	-- Stonecrag Girdle
-						-- Legs
-						i(106740),	-- Dark Star Leggings
-						i(106731),	-- Meadowstomper Britches
-						i(106750),	-- Packrunner Legguards
-						i(106724),	-- Stonecrag Legplates
-						-- Feet
-						i(106742),	-- Dark Star Sandals
-						i(106730),	-- Meadowstomper Boots
-						i(106748),	-- Packrunner Greaves
-						i(106726),	-- Stonecrag Sabatons
-						-- Finger
-						i(116725),	-- Oshu'gun Ring
-						i(116920, {	-- True Steel Lockbox
-							-- Weapons
-							i(116721),	-- Ancestral Branch
-							i(116619),	-- Ancestral Scepter
-							i(116626),	-- Ancestral Wand
-							i(116613),	-- Gorian Crossbow
-							i(116614),	-- Gorian Dagger
-							i(116625),	-- Gorian Greatsword
-							i(116617),	-- Gorian Gun
-							i(116620),	-- Gorian Hammer
-							i(116618),	-- Gorian Mace
-							i(116621),	-- Gorian Spear
-							i(116622),	-- Gorian Staff
-							i(116627),	-- Howling Axe
-							i(116634),	-- Howling Gun
-							i(116633),	-- Howling Knuckles
-							i(116640),	-- Howling Staff
-							i(116632),	-- Oshu'gun Spellblade
-							i(116643),	-- Oshu'gun Wand
-							-- Head
-							i(106690),	-- Ironfist Helm
-							i(106723),	-- Stonecrag Helm
-							-- Shoulders
-							i(106692),	-- Ironfist Pauldrons
-							i(106735),	-- Meadowstomper Shoulders
-							i(106702),	-- Sabermaw Shoulders
-							-- Chest
-							i(106687),	-- Ironfist Breastplate
-							i(106701),	-- Sabermaw Jerkin
-							i(106720),	-- Stonecrag Breastplate
-							i(106708),	-- Voidwrap Robe
-							-- Wrist
-							i(106729),	-- Meadowstomper Bindings
-							i(106713),	-- Sunspring Bracers
-							i(106711),	-- Voidwrap Wristwraps
-							-- Hands
-							i(106747),	-- Packrunner Gauntlets
-							i(106699),	-- Sabermaw Gloves
-							i(106714),	-- Sunspring Gauntlets
-							i(106706),	-- Voidwrap Handwraps
-							-- Waist
-							i(106722),	-- Stonecrag Girdle
-							i(106712),	-- Sunspring Belt
-							i(106704),	-- Voidwrap Cord
-							-- Legs
-							i(106740),	-- Dark Star Leggings
-							i(106691),	-- Ironfist Legplates
-							i(106717),	-- Sunspring Legguards
-							-- Feet
-							i(106697),	-- Sabermaw Boots
-							i(106726),	-- Stonecrag Sabatons
-						}),
-					},
+					["sym"] = COMMON_TREASURE_SYM,
 				}),
 				o(233499, {	-- Adventurer's Sack
 					["modelID"] = 32854,
 					["questID"] = 35955,
 					["coord"] = { 73.9, 14.1, DRAENOR_NAGRAND },
-					["g"] = {
-						-- Weapons
-						i(116627),	-- Howling Axe
-						i(116629),	-- Howling Bow
-						i(116628),	-- Howling Broadaxe
-						i(116630),	-- Howling Crossbow
-						i(116631),	-- Howling Dagger
-						i(116642),	-- Howling Greatsword
-						i(116634),	-- Howling Gun
-						i(116637),	-- Howling Hammer
-						i(116633),	-- Howling Knuckles
-						i(116635),	-- Howling Mace
-						i(116638),	-- Howling Spear
-						i(116640),	-- Howling Staff
-						i(116639),	-- Howling Staff
-						i(116641),	-- Howling Sword
-						i(116724),	-- Oshu'gun Basin
-						i(116636),	-- Oshu'gun Scepter
-						i(116632),	-- Oshu'gun Spellblade
-						i(116643),	-- Oshu'gun Wand
-						i(106727),	-- Stonecrag Shield
-						-- Head
-						i(106738),	-- Dark Star Cowl
-						i(106733),	-- Meadowstomper Hood
-						i(106749),	-- Packrunner Helm
-						i(106723),	-- Stonecrag Helm
-						-- Neck
-						i(116687),	-- Oshu'gun Amulet
-						-- Shoulders
-						i(106743),	-- Dark Star Shoulderpads
-						i(106735),	-- Meadowstomper Shoulders
-						i(106751),	-- Packrunner Spaulders
-						i(106725),	-- Stonecrag Pauldrons
-						-- Back
-						i(116723),	-- Oshu'gun Cloak
-						-- Chest
-						i(106741),	-- Dark Star Robe
-						i(106734),	-- Meadowstomper Jerkin
-						i(106752),	-- Packrunner Vest
-						i(106720),	-- Stonecrag Breastplate
-						-- Wrist
-						i(106744),	-- Dark Star Wristwraps
-						i(106729),	-- Meadowstomper Bindings
-						i(106746),	-- Packrunner Bracers
-						i(106728),	-- Stonecrag Vambraces
-						-- Hands
-						i(106739),	-- Dark Star Handwraps
-						i(106732),	-- Meadowstomper Gloves
-						i(106747),	-- Packrunner Gauntlets
-						i(106721),	-- Stonecrag Gauntlets
-						-- Waist
-						i(106737),	-- Dark Star Cord
-						i(106736),	-- Meadowstomper Waistband
-						i(106745),	-- Packrunner Belt
-						i(106722),	-- Stonecrag Girdle
-						-- Legs
-						i(106740),	-- Dark Star Leggings
-						i(106731),	-- Meadowstomper Britches
-						i(106750),	-- Packrunner Legguards
-						i(106724),	-- Stonecrag Legplates
-						-- Feet
-						i(106742),	-- Dark Star Sandals
-						i(106730),	-- Meadowstomper Boots
-						i(106748),	-- Packrunner Greaves
-						i(106726),	-- Stonecrag Sabatons
-						-- Finger
-						i(116725),	-- Oshu'gun Ring
-						i(116920, {	-- True Steel Lockbox
-							-- Weapons
-							i(116721),	-- Ancestral Branch
-							i(116619),	-- Ancestral Scepter
-							i(116626),	-- Ancestral Wand
-							i(116613),	-- Gorian Crossbow
-							i(116614),	-- Gorian Dagger
-							i(116625),	-- Gorian Greatsword
-							i(116617),	-- Gorian Gun
-							i(116620),	-- Gorian Hammer
-							i(116618),	-- Gorian Mace
-							i(116621),	-- Gorian Spear
-							i(116622),	-- Gorian Staff
-							i(116627),	-- Howling Axe
-							i(116634),	-- Howling Gun
-							i(116633),	-- Howling Knuckles
-							i(116640),	-- Howling Staff
-							i(116632),	-- Oshu'gun Spellblade
-							i(116643),	-- Oshu'gun Wand
-							-- Head
-							i(106690),	-- Ironfist Helm
-							i(106723),	-- Stonecrag Helm
-							-- Shoulders
-							i(106692),	-- Ironfist Pauldrons
-							i(106735),	-- Meadowstomper Shoulders
-							i(106702),	-- Sabermaw Shoulders
-							-- Chest
-							i(106687),	-- Ironfist Breastplate
-							i(106701),	-- Sabermaw Jerkin
-							i(106720),	-- Stonecrag Breastplate
-							i(106708),	-- Voidwrap Robe
-							-- Wrist
-							i(106729),	-- Meadowstomper Bindings
-							i(106713),	-- Sunspring Bracers
-							i(106711),	-- Voidwrap Wristwraps
-							-- Hands
-							i(106747),	-- Packrunner Gauntlets
-							i(106699),	-- Sabermaw Gloves
-							i(106714),	-- Sunspring Gauntlets
-							i(106706),	-- Voidwrap Handwraps
-							-- Waist
-							i(106722),	-- Stonecrag Girdle
-							i(106712),	-- Sunspring Belt
-							i(106704),	-- Voidwrap Cord
-							-- Legs
-							i(106740),	-- Dark Star Leggings
-							i(106691),	-- Ironfist Legplates
-							i(106717),	-- Sunspring Legguards
-							-- Feet
-							i(106697),	-- Sabermaw Boots
-							i(106726),	-- Stonecrag Sabatons
-						}),
-					},
+					["sym"] = COMMON_TREASURE_SYM,
 				}),
 				o(233457, {	-- Adventurer's Staff
 					["questID"] = 35953,
@@ -957,126 +194,7 @@ _.Zones =
 				o(233137, {	-- Burning Blade Cache
 					["questID"] = 35696,
 					["coord"] = { 85.4, 53.46, DRAENOR_NAGRAND },
-					["g"] = {
-						-- Weapons
-						i(116627),	-- Howling Axe
-						i(116629),	-- Howling Bow
-						i(116628),	-- Howling Broadaxe
-						i(116630),	-- Howling Crossbow
-						i(116631),	-- Howling Dagger
-						i(116642),	-- Howling Greatsword
-						i(116634),	-- Howling Gun
-						i(116637),	-- Howling Hammer
-						i(116633),	-- Howling Knuckles
-						i(116635),	-- Howling Mace
-						i(116638),	-- Howling Spear
-						i(116640),	-- Howling Staff
-						i(116639),	-- Howling Staff
-						i(116641),	-- Howling Sword
-						i(116724),	-- Oshu'gun Basin
-						i(116636),	-- Oshu'gun Scepter
-						i(116632),	-- Oshu'gun Spellblade
-						i(116643),	-- Oshu'gun Wand
-						i(106727),	-- Stonecrag Shield
-						-- Head
-						i(106738),	-- Dark Star Cowl
-						i(106733),	-- Meadowstomper Hood
-						i(106749),	-- Packrunner Helm
-						i(106723),	-- Stonecrag Helm
-						-- Neck
-						i(116687),	-- Oshu'gun Amulet
-						-- Shoulders
-						i(106743),	-- Dark Star Shoulderpads
-						i(106735),	-- Meadowstomper Shoulders
-						i(106751),	-- Packrunner Spaulders
-						i(106725),	-- Stonecrag Pauldrons
-						-- Back
-						i(116723),	-- Oshu'gun Cloak
-						-- Chest
-						i(106741),	-- Dark Star Robe
-						i(106734),	-- Meadowstomper Jerkin
-						i(106752),	-- Packrunner Vest
-						i(106720),	-- Stonecrag Breastplate
-						-- Wrist
-						i(106744),	-- Dark Star Wristwraps
-						i(106729),	-- Meadowstomper Bindings
-						i(106746),	-- Packrunner Bracers
-						i(106728),	-- Stonecrag Vambraces
-						-- Hands
-						i(106739),	-- Dark Star Handwraps
-						i(106732),	-- Meadowstomper Gloves
-						i(106747),	-- Packrunner Gauntlets
-						i(106721),	-- Stonecrag Gauntlets
-						-- Waist
-						i(106737),	-- Dark Star Cord
-						i(106736),	-- Meadowstomper Waistband
-						i(106745),	-- Packrunner Belt
-						i(106722),	-- Stonecrag Girdle
-						-- Legs
-						i(106740),	-- Dark Star Leggings
-						i(106731),	-- Meadowstomper Britches
-						i(106750),	-- Packrunner Legguards
-						i(106724),	-- Stonecrag Legplates
-						-- Feet
-						i(106742),	-- Dark Star Sandals
-						i(106730),	-- Meadowstomper Boots
-						i(106748),	-- Packrunner Greaves
-						i(106726),	-- Stonecrag Sabatons
-						-- Finger
-						i(116725),	-- Oshu'gun Ring
-						i(116920, {	-- True Steel Lockbox
-							-- Weapons
-							i(116721),	-- Ancestral Branch
-							i(116619),	-- Ancestral Scepter
-							i(116626),	-- Ancestral Wand
-							i(116613),	-- Gorian Crossbow
-							i(116614),	-- Gorian Dagger
-							i(116625),	-- Gorian Greatsword
-							i(116617),	-- Gorian Gun
-							i(116620),	-- Gorian Hammer
-							i(116618),	-- Gorian Mace
-							i(116621),	-- Gorian Spear
-							i(116622),	-- Gorian Staff
-							i(116627),	-- Howling Axe
-							i(116634),	-- Howling Gun
-							i(116633),	-- Howling Knuckles
-							i(116640),	-- Howling Staff
-							i(116632),	-- Oshu'gun Spellblade
-							i(116643),	-- Oshu'gun Wand
-							-- Head
-							i(106690),	-- Ironfist Helm
-							i(106723),	-- Stonecrag Helm
-							-- Shoulders
-							i(106692),	-- Ironfist Pauldrons
-							i(106735),	-- Meadowstomper Shoulders
-							i(106702),	-- Sabermaw Shoulders
-							-- Chest
-							i(106687),	-- Ironfist Breastplate
-							i(106701),	-- Sabermaw Jerkin
-							i(106720),	-- Stonecrag Breastplate
-							i(106708),	-- Voidwrap Robe
-							-- Wrist
-							i(106729),	-- Meadowstomper Bindings
-							i(106713),	-- Sunspring Bracers
-							i(106711),	-- Voidwrap Wristwraps
-							-- Hands
-							i(106747),	-- Packrunner Gauntlets
-							i(106699),	-- Sabermaw Gloves
-							i(106714),	-- Sunspring Gauntlets
-							i(106706),	-- Voidwrap Handwraps
-							-- Waist
-							i(106722),	-- Stonecrag Girdle
-							i(106712),	-- Sunspring Belt
-							i(106704),	-- Voidwrap Cord
-							-- Legs
-							i(106740),	-- Dark Star Leggings
-							i(106691),	-- Ironfist Legplates
-							i(106717),	-- Sunspring Legguards
-							-- Feet
-							i(106697),	-- Sabermaw Boots
-							i(106726),	-- Stonecrag Sabatons
-						}),
-					},
+					["sym"] = COMMON_TREASURE_SYM,
 				}),
 				o(233492, {	-- Elemental Offering
 					["questID"] = 35954,
@@ -1251,126 +369,7 @@ _.Zones =
 				o(233697, {	-- Saberon Stash
 					["questID"] = 36102,
 					["coord"] = { 75.2, 64.9, DRAENOR_NAGRAND },
-					["g"] = {
-						-- Weapons
-						i(116627),	-- Howling Axe
-						i(116629),	-- Howling Bow
-						i(116628),	-- Howling Broadaxe
-						i(116630),	-- Howling Crossbow
-						i(116631),	-- Howling Dagger
-						i(116642),	-- Howling Greatsword
-						i(116634),	-- Howling Gun
-						i(116637),	-- Howling Hammer
-						i(116633),	-- Howling Knuckles
-						i(116635),	-- Howling Mace
-						i(116638),	-- Howling Spear
-						i(116640),	-- Howling Staff
-						i(116639),	-- Howling Staff
-						i(116641),	-- Howling Sword
-						i(116724),	-- Oshu'gun Basin
-						i(116636),	-- Oshu'gun Scepter
-						i(116632),	-- Oshu'gun Spellblade
-						i(116643),	-- Oshu'gun Wand
-						i(106727),	-- Stonecrag Shield
-						-- Head
-						i(106738),	-- Dark Star Cowl
-						i(106733),	-- Meadowstomper Hood
-						i(106749),	-- Packrunner Helm
-						i(106723),	-- Stonecrag Helm
-						-- Neck
-						i(116687),	-- Oshu'gun Amulet
-						-- Shoulders
-						i(106743),	-- Dark Star Shoulderpads
-						i(106735),	-- Meadowstomper Shoulders
-						i(106751),	-- Packrunner Spaulders
-						i(106725),	-- Stonecrag Pauldrons
-						-- Back
-						i(116723),	-- Oshu'gun Cloak
-						-- Chest
-						i(106741),	-- Dark Star Robe
-						i(106734),	-- Meadowstomper Jerkin
-						i(106752),	-- Packrunner Vest
-						i(106720),	-- Stonecrag Breastplate
-						-- Wrist
-						i(106744),	-- Dark Star Wristwraps
-						i(106729),	-- Meadowstomper Bindings
-						i(106746),	-- Packrunner Bracers
-						i(106728),	-- Stonecrag Vambraces
-						-- Hands
-						i(106739),	-- Dark Star Handwraps
-						i(106732),	-- Meadowstomper Gloves
-						i(106747),	-- Packrunner Gauntlets
-						i(106721),	-- Stonecrag Gauntlets
-						-- Waist
-						i(106737),	-- Dark Star Cord
-						i(106736),	-- Meadowstomper Waistband
-						i(106745),	-- Packrunner Belt
-						i(106722),	-- Stonecrag Girdle
-						-- Legs
-						i(106740),	-- Dark Star Leggings
-						i(106731),	-- Meadowstomper Britches
-						i(106750),	-- Packrunner Legguards
-						i(106724),	-- Stonecrag Legplates
-						-- Feet
-						i(106742),	-- Dark Star Sandals
-						i(106730),	-- Meadowstomper Boots
-						i(106748),	-- Packrunner Greaves
-						i(106726),	-- Stonecrag Sabatons
-						-- Finger
-						i(116725),	-- Oshu'gun Ring
-						i(116920, {	-- True Steel Lockbox
-							-- Weapons
-							i(116721),	-- Ancestral Branch
-							i(116619),	-- Ancestral Scepter
-							i(116626),	-- Ancestral Wand
-							i(116613),	-- Gorian Crossbow
-							i(116614),	-- Gorian Dagger
-							i(116625),	-- Gorian Greatsword
-							i(116617),	-- Gorian Gun
-							i(116620),	-- Gorian Hammer
-							i(116618),	-- Gorian Mace
-							i(116621),	-- Gorian Spear
-							i(116622),	-- Gorian Staff
-							i(116627),	-- Howling Axe
-							i(116634),	-- Howling Gun
-							i(116633),	-- Howling Knuckles
-							i(116640),	-- Howling Staff
-							i(116632),	-- Oshu'gun Spellblade
-							i(116643),	-- Oshu'gun Wand
-							-- Head
-							i(106690),	-- Ironfist Helm
-							i(106723),	-- Stonecrag Helm
-							-- Shoulders
-							i(106692),	-- Ironfist Pauldrons
-							i(106735),	-- Meadowstomper Shoulders
-							i(106702),	-- Sabermaw Shoulders
-							-- Chest
-							i(106687),	-- Ironfist Breastplate
-							i(106701),	-- Sabermaw Jerkin
-							i(106720),	-- Stonecrag Breastplate
-							i(106708),	-- Voidwrap Robe
-							-- Wrist
-							i(106729),	-- Meadowstomper Bindings
-							i(106713),	-- Sunspring Bracers
-							i(106711),	-- Voidwrap Wristwraps
-							-- Hands
-							i(106747),	-- Packrunner Gauntlets
-							i(106699),	-- Sabermaw Gloves
-							i(106714),	-- Sunspring Gauntlets
-							i(106706),	-- Voidwrap Handwraps
-							-- Waist
-							i(106722),	-- Stonecrag Girdle
-							i(106712),	-- Sunspring Belt
-							i(106704),	-- Voidwrap Cord
-							-- Legs
-							i(106740),	-- Dark Star Leggings
-							i(106691),	-- Ironfist Legplates
-							i(106717),	-- Sunspring Legguards
-							-- Feet
-							i(106697),	-- Sabermaw Boots
-							i(106726),	-- Stonecrag Sabatons
-						}),
-					},
+					["sym"] = COMMON_TREASURE_SYM,
 				}),
 				o(236610, {	-- Spirit's Gift
 					["questID"] = 36846,
