@@ -572,3 +572,15 @@ _.WorldEvents =
 		}),
 	}),
 };
+
+root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED},{
+	n(-520, {	-- Expansion Prelaunch Events
+		tier(BFA_TIER, {	-- Battle For Azeroth
+			n(QUESTS, {
+				q(50882,{	-- All to Ash
+					["_drop"] = { "g" },
+				}),
+			}),
+		}),
+	}),
+}));
