@@ -85,7 +85,7 @@ root("HiddenQuestTriggers", {
 	-- q( ),	-- hitting Renown 48 [Rogue] (received Memory of ??)
 	q(64384),	-- hitting Renown 48 [Shaman] (received Memory of the Splintered Elementals)
 	q(64420),	-- hitting Renown 48 [Warlock] (received Memory of Shards of Annihilation)
-	-- q( ),	-- hitting Renown 48 [Warrior] (received Memory of ??)
+	q(64421),	-- hitting Renown 48 [Warrior] (received Memory of ??)
 	q(64100),	-- hitting Renown 50
 	q(64446),	-- hitting Renown 52
 	q(64099),	-- hitting Renown 56
