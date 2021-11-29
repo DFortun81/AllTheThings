@@ -252,10 +252,11 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 		}),
 		ach(9401),		-- Shredder Maniac
 		ach(14728, {	-- To All The Squirrels Through Time and Space
+			-- ref: https://www.wowhead.com/achievement=14728/to-all-the-squirrels-through-time-and-space#comments:id=3247125
 			-- TODO map/coord/crs here instead of individual zone files
 			crit(1),		-- Royal Moth
 			crit(2),		-- Moonshell Crab
-			crit(3),		-- Moon Snake
+			crit(3),		-- Moon Snake 44.6, 51.2, DRAENOR_SHADOWMOON_VALLEY
 			crit(4),		-- Mossbite Skitterer
 			crit(5),		-- Bloodbeak
 			crit(6),		-- Brilliant Bloodfeather
