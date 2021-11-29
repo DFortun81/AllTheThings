@@ -1,12 +1,15 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+local WISPS_OF_MEMORY = i(186472, {	-- Wisps of Memory
+	["description"] = "Rewarded at 52, 67 and 76 Renown.",
+});
 
-root("ExpansionFeatures", tier(SL_TIER, {
+root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_NEC" }, {
 	n(NECROLORD, {
 		n(RENOWN, {
 			["description"] = "These are rewards automatically granted by reaching a specific level of Renown.",
-			["g"] = bubbleDown( { ["customCollect"] = "SL_COV_NEC" }, {	-- Necrolord
+			["g"] = {
 				i(181821,  {	-- Armored Plaguerot Tauralus (MOUNT!)
 					["description"] = "Requires Renown 39.",
 				}),
@@ -37,6 +40,10 @@ root("ExpansionFeatures", tier(SL_TIER, {
 					["description"] = "Requires Renown 56.",
 					["questID"] = 64098,
 				}),
+				i(188004, {	-- Crate of Anima-Infused Parts
+					["description"] = "Rewarded at 15 and 24 Renown.",
+				}),
+				WISPS_OF_MEMORY,
 				n(LEGENDARIES, {
 					["description"] = "Requires Renown 48.",
 					["g"] = {
@@ -54,15 +61,18 @@ root("ExpansionFeatures", tier(SL_TIER, {
 						i(186570),	-- Memory of Glory
 					},
 				}),
-			}),
+			},
 		}),
 	}),
-}));
+})));
+
+WISPS_OF_MEMORY.customCollect = nil;
 
 root("HiddenQuestTriggers", {
 	q(62753),	-- hitting Renown 19
 	q(62754),	-- hitting Renown 35
 	q(62926),	-- hitting Renown 39
+	q(60782),	-- hitting Renown 41 ??
 	q(64097),	-- hitting Renown 45
 	q(64404),	-- hitting Renown 48 [Death Knight] (received Memory of an Abomination's Frenzy)
 	-- q( ),	-- hitting Renown 48 [Demon Hunter] (received Memory of ??)

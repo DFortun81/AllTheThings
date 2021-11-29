@@ -48,9 +48,9 @@ local LFR_WEAPON_GROUP = {
 	i(183889, {["modID"] = 4, }),	-- Thaumaturgic Anima Bead
 };
 
-root("ExpansionFeatures", tier(SL_TIER, {
+root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_NEC" }, {
 	n(NECROLORD, {
-		n(QUESTS, bubbleDown({ ["customCollect"] = "SL_COV_NEC" }, {	-- Necrolord
+		n(QUESTS, {
 			q(62835, {	-- A Call to Service
 				["sourceQuests"] = { 62834 },	-- Glorious Ambition
 				["provider"] = { "n", 175998 },	-- Elspeth Larink
@@ -93,6 +93,15 @@ root("ExpansionFeatures", tier(SL_TIER, {
 				["sourceQuests"] = { 61359 },	-- Power of the Primus
 				["provider"] = { "n", 165182 },	-- Baroness Draka
 				["coord"] = { 49.7, 43.4, SEAT_OF_THE_PRIMUS },
+			}),
+			q(65157, {	-- A Hardened Bond
+				["sourceQuests"] = { 62848 },	-- Conduits, What Are They For?
+				["provider"] = { "n", 161905 },	-- Bonesmith Heirmir
+				["coord"] = { 42.8, 31.9, SEAT_OF_THE_PRIMUS },
+				["timeline"] = { "added 9.1.5" },
+				["g"] = {
+					follower(1262),	-- Bonesmith Heirmir
+				},
 			}),
 			q(61388, {	-- A Journey Made Together
 				["sourceQuests"] = { 59597 },	-- Come On, We're Simpatico!
@@ -698,6 +707,15 @@ root("ExpansionFeatures", tier(SL_TIER, {
 				["provider"] = { "n", 172573 },	-- Khaliiq
 				["coord"] = { 27.2, 45.2, MALDRAXXUS },
 			}),
+			q(65165, {	-- Soul Support
+				["sourceQuests"] = { 62848 },	-- Conduits, What Are They For?
+				["provider"] = { "n", 183248 },	-- Construct Attendant
+				["coord"] = { 37.9, 36.2, SEAT_OF_THE_PRIMUS },
+				["timeline"] = { "added 9.1.5" },
+				["g"] = {
+					follower(1263),	-- Emeni
+				},
+			}),
 			q(62406, {	-- Staff of the Primus
 				["sourceQuests"] = { 59020 },	-- The Third Fall of Kel'Thuzad
 				["provider"] = { "n", 161907 },	-- Baroness Draka
@@ -816,6 +834,11 @@ root("ExpansionFeatures", tier(SL_TIER, {
 				["provider"] = { "n", 173172 },	-- Balmedar
 				["coord"] = { 66.2, 32.1, MALDRAXXUS },
 			}),
+			q(63624, {	-- The Roads We Walk
+				["sourceQuests"] = { 63623 },	-- Filling an Empty Throne
+				["provider"] = { "n", 177975 },	-- The Primus
+				["coord"] = { 49.7, 51.4, SEAT_OF_THE_PRIMUS },
+			}),
 			q(62843, {	-- The Soul Contact
 				["sourceQuests"] = { 61397 },	-- Opportunity Strikes
 				["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
@@ -913,40 +936,15 @@ root("ExpansionFeatures", tier(SL_TIER, {
 				["coord"] = { 46.5, 42.2, SEAT_OF_THE_PRIMUS },
 				["isWeekly"] = true,
 			}),
-			-- 9.1
-			q(63624, {	-- The Roads We Walk
-				["sourceQuests"] = { 63623 },	-- Filling an Empty Throne
-				["provider"] = { "n", 177975 },	-- The Primus
-				["coord"] = { 49.7, 51.4, SEAT_OF_THE_PRIMUS },
-			}),
-			-- 9.1.5
-			q(65165, {	-- Soul Support
-				["sourceQuests"] = { 62848 },	-- Conduits, What Are They For?
-				["provider"] = { "n", 183248 },	-- Construct Attendant
-				["coord"] = { 37.9, 36.2, SEAT_OF_THE_PRIMUS },
-				["timeline"] = { "added 9.1.5" },
-				["g"] = {
-					follower(1263),	-- Emeni
-				},
-			}),
-			q(65157, {	-- A Hardened Bond
-				["sourceQuests"] = { 62848 },	-- Conduits, What Are They For?
-				["provider"] = { "n", 161905 },	-- Bonesmith Heirmir
-				["coord"] = { 42.8, 31.9, SEAT_OF_THE_PRIMUS },
-				["timeline"] = { "added 9.1.5" },
-				["g"] = {
-					follower(1262),	-- Bonesmith Heirmir
-				},
-			}),
 			q(65104, {	-- Return More Lost Souls
 				["sourceQuests"] = { 62866 },	-- Return Lost Souls
 				["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
 				["coord"] = { 46.5, 42.2, SEAT_OF_THE_PRIMUS },
 				["repeatable"] = true,
 			}),
-		})),
+		}),
 	}),
-}));
+})));
 
 for _,g in ipairs({CONDUIT_GROUP,LFR_WEAPON_GROUP}) do
 	for	_,t in ipairs(g) do
@@ -967,13 +965,8 @@ root("HiddenQuestTriggers", {
 	q(62306),	-- using "Sorcerer's Blade"
 
 --	Unknown
-	q(60773),	-- Renown 30/Channeling anima
+	--q(60773),	-- Renown 30/Channeling anima
 	--q(60873),	-- Flying around in necrolord base
-
---	Unity Transmog
-	q(63407),	-- Leather Chest
-	q(63403),	-- Plate Helm
-	q(60782),	-- Renown 41
 });
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {

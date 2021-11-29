@@ -4,7 +4,7 @@
 
 root("ExpansionFeatures", tier(SL_TIER, {
 	n(KYRIAN, {
-		["customCollect"] = "SL_COV_KYR",	-- Kyrian
+		["customCollect"] = "SL_COV_KYR",
 		["maps"] = {
 			ARCHONS_RISE,
 			SANCTUM_OF_BINDING,
@@ -13,7 +13,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 			n(COVENANT_CALLINGS, sharedData({
 				["sourceQuests"] = { 57904 },	-- Our Eternal Charge
 				["repeatable"] = true,
-				["customCollect"] = "SL_COV_KYR",	-- Kyrian
+				["customCollect"] = "SL_COV_KYR",
 			}, {
 				q(62692, {	-- A Calling in Bastion
 					["sourceQuests"] = { 62698 },	-- A Call to Service

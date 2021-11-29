@@ -16,10 +16,27 @@ local CHRONICLE_OF_LOST_MEMORIES = i(184665, {	-- Chronicle of Lost Memories
 local MEMORY_OF_A_VITAL_SACRIFICE = i(183249, {	-- Memory of a Vital Sacrifice
 	["cost"] = { { "c", ANIMA, 250 } },	-- 250x Reservoir Anima
 });
+local HEIRMIR_GROUP = {
+	i(173109),	-- Angerseye
+	i(171833),	-- Elethium Ore
+	i(171828),	-- Laestrite Ore
+	i(173108),	-- Oriblase
+	i(171830),	-- Oxxein Ore
+	i(171831),	-- Phaedrum Ore
+	i(171832),	-- Sinvyr Ore
+	i(171829),	-- Solenium Ore
+	i(173110),	-- Umbryl
+};
 
-root("ExpansionFeatures", tier(SL_TIER, {
+root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_NEC" }, {
 	n(NECROLORD, {
-		n(VENDORS, bubbleDown({ ["customCollect"] = "SL_COV_NEC" }, {	-- Kyrian
+		n(REWARDS, {
+			i(183703, {
+				["description"] = "Only Obtainable from Heirmir Soulbind.",
+				["g"] = HEIRMIR_GROUP,
+			}),
+		}),
+		n(VENDORS, {
 			n(175310, {	-- Mellisa Fate <Raid Finder Nathrian Warsmith>
 				["coord"] = { 60.8, 44.3, SEAT_OF_THE_PRIMUS },
 				["g"] = bubbleDown({ ["modID"] = 4 }, {	-- LFR
@@ -1361,12 +1378,15 @@ root("ExpansionFeatures", tier(SL_TIER, {
 					}),
 				}),
 			}),
-		})),
+		}),
 	}),
-}));
+})));
 
-CHRONICLE_OF_LOST_MEMORIES.customCollect = nil;
-MEMORY_OF_A_VITAL_SACRIFICE.customCollect = nil;
+for _,g in ipairs({HEIRMIR_GROUP,{CHRONICLE_OF_LOST_MEMORIES, MEMORY_OF_A_VITAL_SACRIFICE}}) do
+	for	_,t in ipairs(g) do
+		t.customCollect = nil;
+	end
+end
 
 root("HiddenQuestTriggers", {
 	q(63627),	-- learning Ensemble: Marileth's Assistant's Vestments

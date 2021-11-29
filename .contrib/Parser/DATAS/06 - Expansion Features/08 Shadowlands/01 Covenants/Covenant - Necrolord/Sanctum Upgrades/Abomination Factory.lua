@@ -91,11 +91,11 @@ local WEAPON_SATCHEL_OF_THE_WILD_HUNT = {
 	i(179533),		-- Grove Warden's Harvester
 };
 
-root("ExpansionFeatures", tier(SL_TIER, {
+root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_NEC" }, {
 	n(NECROLORD, {
 		n(SANCTUM_UPGRADES, {
-			["icon"] = "Interface\\Icons\\inv_misc_sigil_maldraxxus01",
-			["g"] = bubbleDown({ ["customCollect"] = "SL_COV_NEC" }, {	-- Necrolord
+			["icon"] = "Interface\\Icons\\Inv_misc_sigil_maldraxxus01",
+			["g"] = {
 				n(ABOMINATION_FACTORY, {
 					n(ACHIEVEMENTS, {
 						ach(14833, {	-- Fashion Abomination
@@ -390,6 +390,9 @@ root("ExpansionFeatures", tier(SL_TIER, {
 						}),
 					}),
 					n(REWARDS, {
+						i(184304, {	-- Anima-Touched Weapon Fragments
+							["description"] = "Rewarded by the Weekly Quests from your Constructs and Chordy's Treasure Finding.",
+						}),
 						i(178061, {	-- Malleable Flesh
 							["description"] = "Rewarded by any Shadowlands Activity.",
 						}),
@@ -397,11 +400,11 @@ root("ExpansionFeatures", tier(SL_TIER, {
 							["description"] = "Rewarded by the Weekly Quests from your Constructs.",
 						}),
 						i(183744, {	-- Superior Parts
-							["description"] = "Rewarded by the Weekly Quests from your Constructs.",
+							["description"] = "Rewarded by the Weekly Quests from your Constructs and Command Table.",
 						}),
 					}),
 					n(TIER_ONE, {
-						["icon"] = "Interface\\Icons\\tradeskill_abominationstitching_abominations_lesser",
+						["icon"] = "Interface\\Icons\\Tradeskill_abominationstitching_abominations_lesser",
 						["g"] = {
 							n(167042, {	-- Abominable Stitching Table
 								["coord"] = { 55.0, 68.8, MALDRAXXUS },
@@ -753,7 +756,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 						},
 					}),
 					n(TIER_TWO, {
-						["icon"] = "Interface\\Icons\\inv_leatherworking_craftedleather_maldraxxus",
+						["icon"] = "Interface\\Icons\\Inv_leatherworking_craftedleather_maldraxxus",
 						["g"] = {
 							n(167042, {	-- Abominable Stitching Table
 								["coord"] = { 55.0, 68.8, MALDRAXXUS },
@@ -968,7 +971,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 						},
 					}),
 					n(TIER_THREE, {
-						["icon"] = "Interface\\Icons\\tradeskill_abominationstitching_abominations_mid",
+						["icon"] = "Interface\\Icons\\Tradeskill_abominationstitching_abominations_mid",
 						["g"] = {
 							n(167042, {	-- Abominable Stitching Table
 								["coord"] = { 55.0, 68.8, MALDRAXXUS },
@@ -1137,7 +1140,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 						},
 					}),
 					n(TIER_FOUR, {
-						["icon"] = "Interface\\Icons\\achievement_dungeon_theatreofpain_gorechop",
+						["icon"] = "Interface\\Icons\\Achievement_dungeon_theatreofpain_gorechop",
 						["g"] = {
 							n(167042, {	-- Abominable Stitching Table
 								["coord"] = { 55.0, 68.8, MALDRAXXUS },
@@ -1178,6 +1181,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 								q(58379, {	-- Construct Part: Indomitable Hide
 									["sourceQuests"] = { 61638 },	-- Iron Solution
 									["provider"] = { "i", 174070 },	-- Indomitable Hide
+									["repeatable"] = true,
 									["g"] = {
 										i(183475),	-- Indomitable Hide
 									},
@@ -1185,6 +1189,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 								q(58376, {	-- Construct Part: Necromantic Oil
 									["sourceQuests"] = { 61638 },	-- Iron Solution
 									["provider"] = { "i", 174076 },	-- Necromantic Oil
+									["repeatable"] = true,
 									["g"] = {
 										i(183519),	-- Necromantic Oil
 									},
@@ -1204,7 +1209,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 						},
 					}),
 					n(TIER_FIVE, {
-						["icon"] = "Interface\\Icons\\spell_animamaldraxxus_buff",
+						["icon"] = "Interface\\Icons\\Spell_animamaldraxxus_buff",
 						["g"] = {
 							n(167042, {	-- Abominable Stitching Table
 								["coord"] = { 55.0, 68.8, MALDRAXXUS },
@@ -1407,10 +1412,10 @@ root("ExpansionFeatures", tier(SL_TIER, {
 						}),
 					}),
 				}),
-			}),
+			},
 		}),
 	}),
-}));
+})));
 
 for _,g in ipairs({ATTICUS_GROUP,ASCENDED_CHEST_OF_ARMS,MARTIAL_TITHE_OF_THE_COURT_OF_HARVESTERS,UNDYING_ARMOY_WEAPON_CACHE,WEAPON_SATCHEL_OF_THE_WILD_HUNT}) do
 	for	_,t in ipairs(g) do
@@ -1452,6 +1457,10 @@ root("HiddenQuestTriggers", {
 	q(63409),	-- Waist
 	q(63402),	-- Legs
 	-- q(),	-- Feet
+
+--	Unity Transmog
+	q(63407),	-- Leather Chest
+	q(63403),	-- Plate Helm
 
 	q(62037),	-- unlocking Mind of Maldraxxus set (TransmogSetID 2033, Duty-Bound Conjurer's items)
 	q(62036),	-- unlocking Zeal of Maldraxxus set (TransmogSetID 2038, Duty-Bound Wraith's items)

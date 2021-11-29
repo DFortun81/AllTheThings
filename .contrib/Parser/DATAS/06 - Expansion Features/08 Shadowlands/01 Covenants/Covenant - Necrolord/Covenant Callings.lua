@@ -4,13 +4,13 @@
 
 root("ExpansionFeatures", tier(SL_TIER, {
 	n(NECROLORD, {
-		["customCollect"] = "SL_COV_NEC",	-- Necrolord
+		["customCollect"] = "SL_COV_NEC",
 		["maps"] = { SEAT_OF_THE_PRIMUS },
 		["g"] = {
 			n(COVENANT_CALLINGS, sharedData({
 					["sourceQuests"] = { 59609 },	-- No Rest For the Dead
 					["repeatable"] = true,
-					["customCollect"] = "SL_COV_NEC",	-- Necrolord
+					["customCollect"] = "SL_COV_NEC",
 			}, {
 				q(62694, {	-- A Calling in Maldraxxus
 					["sourceQuests"] = { 62835 },	-- A Call to Service

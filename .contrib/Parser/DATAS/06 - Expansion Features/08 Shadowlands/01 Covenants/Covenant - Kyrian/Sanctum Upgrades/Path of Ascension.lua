@@ -145,11 +145,11 @@ local ZELESKOS_GROUP = {
 	}),
 };
 
-root("ExpansionFeatures", tier(SL_TIER, {
+root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_KYR" }, {
 	n(KYRIAN, {
 		n(SANCTUM_UPGRADES, {
-			["icon"] = "Interface\\Icons\\ui_sigil_kyrian",
-			["g"] = bubbleDown({ ["customCollect"] = "SL_COV_KYR" }, {
+			["icon"] = "Interface\\Icons\\Inv_misc_sigil_bastion01",
+			["g"] = {
 				n(PATH_OF_ASCENSION, {
 					["maps"] = { 1711 },	-- Path of Ascension Coliseum
 					["g"] = {
@@ -193,7 +193,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 							ach(14852),	-- The Hoot of the Issue
 							ach(14887),	-- To the Moon
 						}),
-						n(-966, {	-- Blueprints & Crafting
+						n(BLUEPRINTS, {
 							["description"] = "Blueprints teach Dactylis recipes that allow you to craft gear for your Aspirants to use in the Path of Ascension battles.",
 							["crs"] = { 168430 },	-- Dactylis
 							["g"] = {
@@ -308,7 +308,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 							},
 						}),
 						n(TIER_ONE, {
-							["icon"] = 3536186,
+							["icon"] = "Interface\\Icons\\Inv_trinket_bastion_02_light",
 							["g"] = {
 								n(QUESTS, {
 									q(62218, {	-- A Fountain for Fae
@@ -524,7 +524,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 							},
 						}),
 						n(TIER_TWO, {
-							["icon"] = 3196822,
+							["icon"] = "Interface\\Icons\\Inv_cape_special_bastion_d_03",
 							["g"] = {
 								n(QUESTS, {
 									q(61371, {	-- Athanos
@@ -770,7 +770,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 							},
 						}),
 						n(TIER_THREE, {
-							["icon"] = 3565450,
+							["icon"] = "Interface\\Icons\\Ability_bastion_rogue",
 							["g"] = {
 								n(QUESTS, {
 									q(63181, {	-- Path of Ascension: Artemede's Challenge
@@ -916,7 +916,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 							},
 						}),
 						n(TIER_FOUR, {
-							["icon"] = 3565447,
+							["icon"] = "Interface\\Icons\\Ability_bastion_monk",
 							["g"] = {
 								n(REWARDS, {
 									n(171873, {	-- Athanos
@@ -982,7 +982,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 							},
 						}),
 						n(TIER_FIVE, {
-							["icon"] = 3565449,
+							["icon"] = "Interface\\Icons\\Ability_bastion_priest",
 							["g"] = {
 								n(REWARDS, {
 									n(171873, {	-- Athanos
@@ -1326,10 +1326,10 @@ root("ExpansionFeatures", tier(SL_TIER, {
 						}),
 					},
 				}),
-			}),
+			},
 		}),
 	}),
-}));
+})));
 
 for _,g in ipairs({ECHTHRA_GROUP,BINKIROS_GROUP,PHIXIN_GROUP,ZELESKOS_GROUP,{BRIGHTSCALE_HATCHLING, DUSTY_SPOREFLUTTER, DAUNTLESS_DUSKRUNNER, PLAGUELOUSE_LARVA}}) do
 	for	_,t in ipairs(g) do

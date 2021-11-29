@@ -2,11 +2,11 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root("ExpansionFeatures", tier(SL_TIER, {
+root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_NEC" }, {
 	n(NECROLORD, {
 		n(SANCTUM_UPGRADES, {
-			["icon"] = "Interface\\Icons\\inv_misc_sigil_maldraxxus01",
-			["g"] = bubbleDown({ ["customCollect"] = "SL_COV_NEC" }, {	-- Necrolord
+			["icon"] = "Interface\\Icons\\Inv_misc_sigil_maldraxxus01",
+			["g"] = {
 				n(COMMAND_TABLE, {
 					n(TIER_ONE, {
 						["icon"] = "Interface\\Icons\\Sanctum_features_missiontable",
@@ -93,16 +93,12 @@ root("ExpansionFeatures", tier(SL_TIER, {
 								q(63054, {	-- Strength in Numbers
 									["provider"] = { "n", 161909 },	-- Arkadia Moa
 									["coord"] = { 52.4, 38.4, SEAT_OF_THE_PRIMUS },
-									["description"] = "Becomes available after you build Command Table tier 1 in your sanctum.",
 								}),
-							}),
-							n(REWARDS, {
-								i(183744),	-- Superior Parts
 							}),
 						},
 					}),
 				}),
-			}),
+			},
 		}),
 	}),
-}));
+})));

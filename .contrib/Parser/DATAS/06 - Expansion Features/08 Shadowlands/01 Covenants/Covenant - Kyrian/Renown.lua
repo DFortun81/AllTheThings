@@ -1,12 +1,15 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+local WISPS_OF_MEMORY = i(186472, {	-- Wisps of Memory
+	["description"] = "Rewarded at 52, 67 and 76 Renown.",
+});
 
-root("ExpansionFeatures", tier(SL_TIER, {
+root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_KYR" }, {
 	n(KYRIAN, {
 		n(RENOWN, {
 			["description"] = "These are rewards automatically granted by reaching a specific level of Renown.",
-			["g"] = bubbleDown( { ["customCollect"] = "SL_COV_KYR" }, {	-- Kyrian
+			["g"] = {
 				i(186482,  {	-- Elysian Aquilon (MOUNT!)
 					["description"] = "Requires Renown 45.",
 				}),
@@ -39,6 +42,10 @@ root("ExpansionFeatures", tier(SL_TIER, {
 					["description"] = "Requires Renown 56.",
 					["questID"] = 64136,
 				}),
+				i(188005, {	-- Anima-Bathed Blade
+					["description"] = "Rewarded at 15 and 24 Renown.",
+				}),
+				WISPS_OF_MEMORY,
 				n(LEGENDARIES, {
 					["description"] = "Requires Renown 48.",
 					["g"] = {
@@ -56,10 +63,12 @@ root("ExpansionFeatures", tier(SL_TIER, {
 						i(187511),	-- Memory of Elysian Might
 					},
 				}),
-			}),
+			},
 		}),
 	}),
-}));
+})));
+
+WISPS_OF_MEMORY.customCollect = nil;
 
 root("HiddenQuestTriggers", {
 	q(64138),	-- hitting Renown 45

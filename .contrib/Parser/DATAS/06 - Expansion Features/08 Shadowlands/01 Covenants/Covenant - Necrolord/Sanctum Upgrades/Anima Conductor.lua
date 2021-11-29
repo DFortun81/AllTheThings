@@ -5,25 +5,35 @@ local GRATEFUL = currency(GRATEFUL);
 local AMALGAMTED_FORWORNS_JOURNAL = i(184298);
 local TEMPERED_BONEPLASTE_WAISTGUARD = i(184291);
 
-root("ExpansionFeatures", tier(SL_TIER, {
+root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_NEC" }, {
 	n(NECROLORD, {
 		n(SANCTUM_UPGRADES, {
-			["icon"] = "Interface\\Icons\\inv_misc_sigil_maldraxxus01",
-			["g"] = bubbleDown({ ["customCollect"] = "SL_COV_NEC" }, {	-- Necrolord
+			["icon"] = "Interface\\Icons\\Inv_misc_sigil_maldraxxus01",
+			["g"] = {
 				n(ANIMA_CONDUCTOR, {
 					["icon"] = "Interface\\Icons\\Sanctum_features_animadiversion_maldraxxus",
-					["g"] = {
+					["g"] = sharedData({ ["icon"] = "Interface\\Icons\\Sanctum_features_animadiversion_maldraxxus" }, {
 						n(REWARDS, {
 							["description"] = "Every Activity within Anima Conductor Rewards this.",
+							["icon"] = asset("Interface_Rewards"),
 							["g"] = {
 								GRATEFUL,
 							},
 						}),
 						n(TIER_ONE, {
-							["icon"] = "Interface\\Icons\\Sanctum_features_animadiversion_maldraxxus",
-							["g"] = {
+							n(QUESTS, {
+								q(63057, {	-- Restoring Power
+									["provider"] = { "n", 161909 },	-- Arkadia Moa
+									["coord"] = { 52.4, 38.4, SEAT_OF_THE_PRIMUS },
+								}),
+								q(60722, {	-- Tower Power
+									["sourceQuests"] = { 63057 },	-- Restoring Power
+									["provider"] = { "n", 167205 },	-- Yondare Hex
+									["coord"] = { 49.0, 36.0, SEAT_OF_THE_PRIMUS },
+								}),
+							}),
+							n(RARES, {
 								n(162741, {	-- Gieger <Experimental Construct>
-									["description"] = "A member of the |cFF40bf40Necrolord Covenant|r must channel anima to the House of Constructs to summon him.",
 									["questID"] = 58872,
 									["isDaily"] = true,
 									["coord"] = { 31.4, 35.4, MALDRAXXUS },
@@ -34,16 +44,8 @@ root("ExpansionFeatures", tier(SL_TIER, {
 										i(183754),	-- Stitchflesh's Design Notes
 									},
 								}),
-								q(63057, {	-- Restoring Power
-									["description"] = "Becomes available after you build Anima Conductor tier 1 in your sanctum.",
-									["provider"] = { "n", 161909 },	-- Arkadia Moa
-									["coord"] = { 52.4, 38.4, SEAT_OF_THE_PRIMUS },
-								}),
-								q(60722, {	-- Tower Power
-									["sourceQuests"] = { 63057 },	-- Restoring Power
-									["provider"] = { "n", 167205 },	-- Yondare Hex
-									["coord"] = { 49.0, 36.0, SEAT_OF_THE_PRIMUS },
-								}),
+							}),
+							n(TREASURES, {
 								o(355035, {	-- Treasure: House of the Chosen -- TODO: proper objectID
 									["description"] = "Becomes accessible when selecting the Anima Conduit to 'The House of the Chosen'\nRequires clicking the 3 Runes in the area to unlock",
 									["questID"] = 61647,
@@ -65,77 +67,68 @@ root("ExpansionFeatures", tier(SL_TIER, {
 										i(183622),	-- Grand Runespeaker's Staff
 									},
 								}),
-							},
+							}),
 						}),
 						n(TIER_TWO, {
-							["icon"] = "Interface\\Icons\\Sanctum_features_animadiversion_maldraxxus",
-							["g"] = {
+							n(QUESTS, sharedData({ ["isDaily"] = true }, {
 								q(62563, {	-- Back Again!
-									["isDaily"] = true,
 									["provider"] = { "n", 160523 },	-- Cyrin Smirk
 									["coord"] = { 51.4, 16.2, MALDRAXXUS },
 								}),
 								q(62403, {	-- Boared to Death
-									["isDaily"] = true,
 									["provider"] = { "n", 167603 },	-- Fixer Bixie
 									["coord"] = { 49.0, 36.0, MALDRAXXUS },
 								}),
 								q(62390, {	-- Body Count
-									["isDaily"] = true,
+
 									["provider"] = { "n", 167603 },	-- Fixer Bixie
 									["coord"] = { 49.0, 36.0, MALDRAXXUS },
 								}),
 								q(62364, {	-- Dire Learning
-									["isDaily"] = true,
 									["provider"] = { "n", 167603 },	-- Fixer Bixie
 									["coord"] = { 49.0, 36.0, MALDRAXXUS },
 								}),
 								q(62363, {	-- Heavy Lifting
-									["isDaily"] = true,
 									["provider"] = { "n", 167603 },	-- Fixer Bixie
 									["coord"] = { 49.0, 36.0, MALDRAXXUS },
 								}),
-								q(61699, {	-- Not Much to Goo On
-									["isWorldQuest"] = true,
-								}),
-								q(61841, {	-- Not Much to Goo On
-									["isWorldQuest"] = true,
-								}),
 								q(58211, {	-- Pumped Up
-									["isDaily"] = true,
 									["provider"] = { "n", 168675 },	-- Varzisk Lidless
 									["coord"] = { 51.2, 16.8, MALDRAXXUS },
 								}),
 								q(58260, {	-- Queens and Future Kings
-									["isDaily"] = true,
+
 									["provider"] = { "n", 167603 },	-- Fixer Bixie
 									["coord"] = { 49.0, 36.0, MALDRAXXUS },
 								}),
 								q(57964, {	-- Revenge Is Easy
-									["isDaily"] = true,
 									["provider"] = { "n", 160523 },	-- Cyrin Smirk
 									["coord"] = { 51.4, 16.2, MALDRAXXUS },
 								}),
 								q(60482, {	-- See With My Eyes
-									["isDaily"] = true,
 									["provider"] = { "n", 168675 },	-- Varzisk Lidless
 									["coord"] = { 51.2, 16.8, MALDRAXXUS },
 								}),
 								q(60505, {	-- Spider's Lair
-									["isDaily"] = true,
 									["provider"] = { "n", 168675 },	-- Varzisk Lidless
 									["coord"] = { 51.2, 16.8, MALDRAXXUS },
 								}),
 								q(62362, {	-- Volatile Reactions
-									["isDaily"] = true,
 									["provider"] = { "n", 167603 },	-- Fixer Bixie
 									["coord"] = { 49.0, 36.0, MALDRAXXUS },
 								}),
-							},
+							})),
+							n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true }, {
+								q(61699, {	-- Not Much to Goo On
+									["coord"] = { 66, 66, MALDRAXXUS },
+								}),
+								q(61841, {	-- Not Much to Goo On
+									["coord"] = { 66, 66, MALDRAXXUS },
+								}),
+							})),
 						}),
 						n(TIER_THREE, {
-							["icon"] = "Interface\\Icons\\Sanctum_features_animadiversion_maldraxxus",
-							["g"] = {
+							n(RARES, {
 								q(58454, {	-- Spoiling For A Fight
 									["provider"] = { "n", 159830 },	-- Au'narim
 									["isDaily"] = true,
@@ -152,14 +145,14 @@ root("ExpansionFeatures", tier(SL_TIER, {
 										TEMPERED_BONEPLASTE_WAISTGUARD,
 									},
 								}),
-							},
+							}),
 						}),
-					},
+					}),
 				}),
-			}),
+			},
 		}),
 	}),
-}));
+})));
 
 GRATEFUL.customCollect = nil;
 AMALGAMTED_FORWORNS_JOURNAL.customCollect = nil;
