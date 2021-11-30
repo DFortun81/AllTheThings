@@ -429,9 +429,7 @@ _.ExpansionFeatures =
 							["coord"] = { 32.3, 43.3, 709 },	-- The Wandering Isle
 						}),
 						q(42187, {	-- Rise, Champions
-						--	TODO: is altQuests necessary here?  is there a situation in which you'd complete the tracking quest but not the main quest?
 							["sourceQuests"] = { 42186 },	-- Growing Power
-							["altQuests"] = { 44296 },	-- Tracking Quest: Finished Rise, Champions
 							["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 							["classes"] = { MONK },
 							["coord"] = { 51.4, 48.5, 709 },	-- The Wandering Isle

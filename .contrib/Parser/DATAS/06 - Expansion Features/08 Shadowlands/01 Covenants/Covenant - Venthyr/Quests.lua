@@ -323,7 +323,10 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["coord"] = { 55.3, 27.4, SINFALL_REACHES },
 			}),
 			q(61050, {	-- How to Wear Seven Medallions
-				["sourceQuests"] = { 58444 },	-- Return to Sinfall
+				["sourceQuests"] = {
+					58444,	-- Return to Sinfall
+					63655,	-- Medallion of Wrath
+				},
 				["description"] = "Requires Renown 13.",
 				["provider"] = { "n", 158653 },	-- Prince Renathal
 				["coord"] = { 51.3, 38.0, SINFALL_REACHES },
