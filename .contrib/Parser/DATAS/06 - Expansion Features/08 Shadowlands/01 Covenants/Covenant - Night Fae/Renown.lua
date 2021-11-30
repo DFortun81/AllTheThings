@@ -1,68 +1,74 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+local WISPS_OF_MEMORY = i(186472, {	-- Wisps of Memory
+	["description"] = "Rewarded at 52, 67 and 76 Renown.",
+});
 
-_.ExpansionFeatures =
-{
-	tier(SL_TIER, {
-		n(NIGHT_FAE, {
-			n(RENOWN, {
-				["description"] = "These are rewards automatically granted by reaching a specific level of Renown.",
-				["g"] = bubbleDown( { ["customCollect"] = "SL_COV_NFA" }, {	-- Night Fae
-					i(186493, {	-- Ardenweald Wilderling (MOUNT!)
-						["description"] = "Requires Renown 45.",
-					}),
-					i(180722, {	-- Enchanted Shadeleaf Runestag (MOUNT!)
-						["description"] = "Requires Renown 39.",
-					}),
-					title(442, {	-- Protector of the Weald
-						["description"] = "Requires Renown 80.",
-					}),
-					title(428, {	-- Winter's Envoy
-						["description"] = "Requires Renown 40.",
-					}),
-					i(186497, {	-- Ensemble: Garb of Pure Spirit
-						["description"] = "Requires Renown 60.",
-						["g"] = {
-							i(184974),	-- Pure Sight Drape
-							i(184968),	-- Pure Sight Handwraps
-							i(184969),	-- Pure Sight Hood
-							i(184970),	-- Pure Sight Leggings
-							i(184971),	-- Pure Sight Mantle
-							i(184972),	-- Pure Sight Sash
-							i(184967),	-- Pure Sight Slippers
-							i(184966),	-- Pure Sight Vestments
-							i(184973),	-- Pure Sight Wraps
-						},
-					}),
-					i(186473, {	-- A Tiny Winter Staff
-						["description"] = "Requires Renown 56.",
-						["questID"] = 64078,
-					}),
-					n(LEGENDARIES, {
-						["description"] = "Requires Renown 48.",
-						["g"] = {
-							i(186565),	-- Memory of Rampant Transference
-							i(187109),	-- Memory of a Blazing Slaughter
-							i(186687),	-- Memory of Celestial Spirits
-							i(187231),	-- Memory of the Fragments of the Elder Antlers
-							i(187280),	-- Memory of the Fae Heart
-							i(187258),	-- Memory of the Faeline Harmony
-							i(187132),	-- Memory of the Seasons of Plenty
-							i(187161),	-- Memory of Bwonsamdi's Pact
-							i(186676),	-- Memory of the Toxic Onslaught
-							i(187223),	-- Memory of the Seeds of Rampant Growth
-							i(187227),	-- Memory of the Decaying Soul Satchel
-							i(186576),	-- Memory of Nature's Fury
-						},
-					}),
+root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_NFA" }, {
+	n(NIGHT_FAE, {
+		n(RENOWN, {
+			["description"] = "These are rewards automatically granted by reaching a specific level of Renown.",
+			["g"] = {
+				i(186493, {	-- Ardenweald Wilderling (MOUNT!)
+					["description"] = "Requires Renown 45.",
 				}),
-			}),
+				i(180722, {	-- Enchanted Shadeleaf Runestag (MOUNT!)
+					["description"] = "Requires Renown 39.",
+				}),
+				title(442, {	-- Protector of the Weald (TITLE!)
+					["description"] = "Requires Renown 80.",
+				}),
+				title(428, {	-- Winter's Envoy (TITLE!)
+					["description"] = "Requires Renown 40.",
+				}),
+				i(186497, {	-- Ensemble: Garb of Pure Spirit
+					["description"] = "Requires Renown 60.",
+					["g"] = {
+						i(184974),	-- Pure Sight Drape
+						i(184968),	-- Pure Sight Handwraps
+						i(184969),	-- Pure Sight Hood
+						i(184970),	-- Pure Sight Leggings
+						i(184971),	-- Pure Sight Mantle
+						i(184972),	-- Pure Sight Sash
+						i(184967),	-- Pure Sight Slippers
+						i(184966),	-- Pure Sight Vestments
+						i(184973),	-- Pure Sight Wraps
+					},
+				}),
+				i(186473, {	-- A Tiny Winter Staff (PEPE!)
+					["description"] = "Requires Renown 56.",
+					["questID"] = 64078,
+				}),
+				i(188000, {	-- Grovetender's Pack
+					["description"] = "Rewarded at 15 and 24 Renown.",
+				}),
+				WISPS_OF_MEMORY,
+				n(LEGENDARIES, {
+					["description"] = "Requires Renown 48.",
+					["g"] = {
+						i(186565),	-- Memory of Rampant Transference
+						i(187109),	-- Memory of a Blazing Slaughter
+						i(186687),	-- Memory of Celestial Spirits
+						i(187231),	-- Memory of the Fragments of the Elder Antlers
+						i(187280),	-- Memory of the Fae Heart
+						i(187258),	-- Memory of the Faeline Harmony
+						i(187132),	-- Memory of the Seasons of Plenty
+						i(187161),	-- Memory of Bwonsamdi's Pact
+						i(186676),	-- Memory of the Toxic Onslaught
+						i(187223),	-- Memory of the Seeds of Rampant Growth
+						i(187227),	-- Memory of the Decaying Soul Satchel
+						i(186576),	-- Memory of Nature's Fury
+					},
+				}),
+			},
 		}),
 	}),
-};
+})));
 
-_.HiddenQuestTriggers = {
+WISPS_OF_MEMORY.customCollect = nil;
+
+root("HiddenQuestTriggers", {
 	q(64074),	-- hitting Renown 45 - received mount, Ardenweald Wilderling
 	q(64406),	-- hitting Renown 48 [Death Knight] (received Memory of Rampant Transference)
 	q(64385),	-- hitting Renown 48 [Demon Hunter] (received Memory of ??)
@@ -87,4 +93,4 @@ _.HiddenQuestTriggers = {
 	-- 9.1.5 New HQTS
 	q(65111),	-- hitting Renown 15 (Anima instead of Soulkeeper Upgrade)
 	q(65112),	-- hitting Renown 24 (Anima instead of Soulkeeper Upgrade)
-};
+});

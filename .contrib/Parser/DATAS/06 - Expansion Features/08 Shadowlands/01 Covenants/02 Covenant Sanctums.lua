@@ -336,7 +336,6 @@ _.ExpansionFeatures =
 				}),
 				n(REWARDS, {
 					i(188003),	-- Crate of Revendreth Reserve
-					i(188000),	-- Grovetender's Pack
 				}),
 			},
 		}),

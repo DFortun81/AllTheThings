@@ -95,6 +95,9 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["coord"] = { 52.4, 38.4, SEAT_OF_THE_PRIMUS },
 								}),
 							}),
+							n(REWARDS, {
+								i(183744),	-- Superior Parts
+							}),
 						},
 					}),
 				}),

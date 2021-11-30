@@ -133,6 +133,9 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 								}),
 							}),
+							n(REWARDS, {
+								currency(1819),	-- Medallion of Service
+							}),
 						},
 					}),
 				}),
