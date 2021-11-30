@@ -1806,7 +1806,7 @@ _.HiddenQuestTriggers = {
 		q(38894),	-- Generic Order Hall - Founded the order hall
 		q(43837),	-- Generic Order Hall - Tutorial - combat ally unlocked
 		q(44296),	-- Generic Order Hall - Triggers after recruiting your first follower(s)
-		q(43900),	-- Generic Order Hall - Tracking Quest: All - Troop A Enabled
+		q(43900),	-- Generic Order Hall - Tracking Quest: All - Troop A Enabled (Completed First Tutorial Mission)
 		q(43901),	-- Generic Order Hall - Tracking Quest: All - Troop B Enabled
 		q(43433),	-- Generic Order Hall - Tracking Quest: Tutorial - Troops Built
 		q(42115),	-- Generic Order Hall - Tracking Quest: Chapter 1 completed - Triggers when you complete the quest that gets your first order hall upgrade
