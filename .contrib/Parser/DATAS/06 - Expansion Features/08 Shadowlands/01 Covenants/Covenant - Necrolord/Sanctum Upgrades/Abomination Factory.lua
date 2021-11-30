@@ -1352,6 +1352,9 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 						n(159238, {	-- Atticus <Supplies & Acquisitions>
 							["coord"] = { 55.2, 68.2, MALDRAXXUS },
 							["g"] = appendGroups(ATTICUS_GROUP, {
+								i(184589, {	-- Bag of Potions
+									["description"] = "This becomes available within Chill's Reach during 'A Brokered Deal'.",
+								}),
 								i(180442),	-- Bag of Sin Stones
 								i(180277),	-- Battlefront Ration Key
 								i(184037, {	-- Maldraxxus Candles
@@ -1426,7 +1429,6 @@ end
 root("HiddenQuestTriggers", {
 	q(63397),	-- Triggered when Completing weeklies with abominations/receiving Sitched set gear
 	q(62573),	-- Abomination level 3 sitching Chef hat/Sticky Cat.
-	--q(62572),	-- Created "Marz" as the 2nd construct, to finish "build one more" / Faction flag kit
 	q(61512),	-- Completing Something Old, Something Used first time. Confirmed first time 30.09.2021
 	q(63099),	-- Opening 184589, Bag of Potions from Atticus
 	--q(62535),	-- Unknown doing dailies from abom
@@ -1484,38 +1486,38 @@ root("HiddenQuestTriggers", {
 	q(58412),	-- Triggered after recruiting Unity
 
 -- Stitching Table Abomination 'Upgrades'
-	q(62575),	-- triggered after crafting Armor Plating at Abominable Stitching Table
-	q(62824),	-- triggered after crafting Back Mushrooms at Abominable Stitching Table
-	q(62580),	-- triggered after crafting Barrel O'Fish at Abominable Stitching Table
-	q(62574),	-- triggered after crafting Butterflies at Abominable Stitching Table
-	q(62762),	-- triggered after crafting Chef Hat at Abominable Stitching Table
-	q(62570),	-- triggered after crafting Collector Kash's Pack at Abominable Stitching Table
-	q(61560),	-- triggered after crafting Dapper Top Hat at Abominable Stitching Table
-	q(62758),	-- triggered after crafting Dundae's Hat at Abominable Stitching Table
-	q(62764),	-- triggered after crafting Egg Hat at Abominable Stitching Table
-	q(62469),	-- triggered after crafting Engineering Pack at Abominable Stitching Table
-	q(62572),	-- triggered after crafting Faction Flag at Abominable Stitching Table
-	q(62471),	-- triggered after crafting Flower Crown at Abominable Stitching Table
-	q(62472),	-- triggered after crafting Halo of Purity at Abominable Stitching Table
-	q(62479),	-- triggered after crafting Happiness Bird at Abominable Stitching Table
-	q(62583),	-- triggered after crafting Hitchhiker at Abominable Stitching Table
-	q(61712),	-- triggered after crafting Holiday Hat at Abominable Stitching Table
-	q(62759),	-- triggered after crafting Lovely Candle Display at Abominable Stitching Table
-	q(62470),	-- triggered after crafting Magician's Hat at Abominable Stitching Table
-	q(62577),	-- triggered after crafting Operational Instructions at Abominable Stitching Table
-	q(61561),	-- triggered after crafting Outlaw Flag at Abominable Stitching Table
-	q(62826),	-- triggered after crafting Pirate Hat at Abominable Stitching Table
-	q(62576),	-- triggered after crafting Plague Pack at Abominable Stitching Table
-	q(62476),	-- triggered after crafting Red Eye Lens at Abominable Stitching Table
-	q(62825),	-- triggered after crafting Shoulder Sprouts at Abominable Stitching Table
-	q(62481),	-- triggered after crafting Six-League Pack at Abominable Stitching Table
-	q(62817),	-- triggered after crafting Skull Fungus at Abominable Stitching Table
-	q(62474),	-- triggered after crafting Skull Protector at Abominable Stitching Table
-	q(62760),	-- triggered after crafting Trained Corpselice at Abominable Stitching Table
-	q(61562),	-- triggered after crafting Trustworthy Doll at Abominable Stitching Table
-	q(62823),	-- triggered after crafting Underpowered Gravity Pack at Abominable Stitching Table
-	q(62819),	-- triggered after crafting Unworthy Crown at Abominable Stitching Table
-	q(62468),	-- triggered after crafting Vestigial Wings at Abominable Stitching Table
+	q(62575),	-- Crafted Armor Plating at Abominable Stitching Table
+	q(62824),	-- Crafted Back Mushrooms at Abominable Stitching Table
+	q(62580),	-- Crafted Barrel O'Fish at Abominable Stitching Table
+	q(62574),	-- Crafted Butterflies at Abominable Stitching Table
+	q(62762),	-- Crafted Chef Hat at Abominable Stitching Table
+	q(62570),	-- Crafted Collector Kash's Pack at Abominable Stitching Table
+	q(61560),	-- Crafted Dapper Top Hat at Abominable Stitching Table
+	q(62758),	-- Crafted Dundae's Hat at Abominable Stitching Table
+	q(62764),	-- Crafted Egg Hat at Abominable Stitching Table
+	q(62469),	-- Crafted Engineering Pack at Abominable Stitching Table
+	q(62572),	-- Crafted Faction Flag at Abominable Stitching Table
+	q(62471),	-- Crafted Flower Crown at Abominable Stitching Table
+	q(62472),	-- Crafted Halo of Purity at Abominable Stitching Table
+	q(62479),	-- Crafted Happiness Bird at Abominable Stitching Table
+	q(62583),	-- Crafted Hitchhiker at Abominable Stitching Table
+	q(61712),	-- Crafted Holiday Hat at Abominable Stitching Table
+	q(62759),	-- Crafted Lovely Candle Display at Abominable Stitching Table
+	-- q(62470),	-- Crafted Operational Instructions? at Abominable Stitching Table
+	q(62577),	-- Crafted Magician's Hat at Abominable Stitching Table
+	q(61561),	-- Crafted Outlaw Flag at Abominable Stitching Table
+	q(62826),	-- Crafted Pirate Hat at Abominable Stitching Table
+	q(62576),	-- Crafted Plague Pack at Abominable Stitching Table
+	q(62476),	-- Crafted Red Eye Lens at Abominable Stitching Table
+	q(62825),	-- Crafted Shoulder Sprouts at Abominable Stitching Table
+	q(62481),	-- Crafted Six-League Pack at Abominable Stitching Table
+	q(62817),	-- Crafted Skull Fungus at Abominable Stitching Table
+	q(62474),	-- Crafted Skull Protector at Abominable Stitching Table
+	q(62760),	-- Crafted Trained Corpselice at Abominable Stitching Table
+	q(61562),	-- Crafted Trustworthy Doll at Abominable Stitching Table
+	q(62823),	-- Crafted Underpowered Gravity Pack at Abominable Stitching Table
+	q(62819),	-- Crafted Unworthy Crown at Abominable Stitching Table
+	q(62468),	-- Crafted Vestigial Wings at Abominable Stitching Table
 });
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {

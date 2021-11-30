@@ -159,11 +159,13 @@ AMALGAMTED_FORWORNS_JOURNAL.customCollect = nil;
 TEMPERED_BONEPLASTE_WAISTGUARD.customCollect = nil;
 
 root("HiddenQuestTriggers", {
-	q(61187),	-- Enchant from rank 3 anima conductor (spellid=335042)
-	q(61185),	-- Enchant from rank 3 anima conductor (spellid=335040)
-	q(61186),	-- Enchant from rank 3 anima conductor (spellid=335041)
-	q(60781),	-- Daily channeling anima [Necrolord]
-	q(61588),	-- Triggered after first time channeling anima (to House of Constructs)
-	q(60774),	-- Theater of Pain (lvl 3)
-	q(60780),	-- triggered the first time i channeled anima to the daily quest hub
+	q(61187),	-- Rank 3 Buff - Skeleton Command
+	q(61185),	-- Rank 3 Buff - Arctic Flesh
+	q(61186),	-- Rank 3 Buff - Primed Maldracite
+	q(61588),	-- House of the Chosen
+	q(60781),	-- House of Constructs
+	q(60774),	-- Theater of Pain
+	q(60780),	-- House of Eyes
+	q(60782),	-- House of Rituals
+	q(60773),	-- House of Plagues
 });

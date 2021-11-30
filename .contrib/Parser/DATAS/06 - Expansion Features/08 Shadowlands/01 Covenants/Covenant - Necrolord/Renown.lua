@@ -72,7 +72,6 @@ root("HiddenQuestTriggers", {
 	q(62753),	-- hitting Renown 19
 	q(62754),	-- hitting Renown 35
 	q(62926),	-- hitting Renown 39
-	q(60782),	-- hitting Renown 41 ??
 	q(64097),	-- hitting Renown 45
 	q(64404),	-- hitting Renown 48 [Death Knight] (received Memory of an Abomination's Frenzy)
 	-- q( ),	-- hitting Renown 48 [Demon Hunter] (received Memory of ??)

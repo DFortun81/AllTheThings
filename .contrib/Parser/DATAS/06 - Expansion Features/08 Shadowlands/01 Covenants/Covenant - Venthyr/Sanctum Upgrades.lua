@@ -2726,7 +2726,6 @@ _.HiddenQuestTriggers = {
 			q(59511),	-- selecting Security: Maldraxxian Army for Embrt Court
 
 		-- Unlocks
-			-- q(61493),	-- when using "Building: Dredger Pool"
 			q(59472),	-- when using "Contract: Traditional Theme"
 			q(59473),	-- when using "Contract: Traditional Theme"
 			q(61501),	-- when using "Staff: Ambassador"
@@ -2740,7 +2739,6 @@ _.HiddenQuestTriggers = {
 			q(61504),	-- triggered when using item #181536, "Guest List Page"
 			q(61505),	-- when using 'Guest List Page' (181537)
 			q(61506),	-- when using 'Guest List Page' (181538)
-			-- q(61494),	-- using Building: Guardhouse
 			q(59436),	-- using Staff: Stage Crew
 			q(59433),	-- using Staff: Waiters
 			q(61452),	-- using 'Vanity Mirror' (181436)
@@ -2775,14 +2773,14 @@ _.HiddenQuestTriggers = {
 			q(61456),	-- triggered when using "Slippery Muck" (181440)
 
 		-- Misc.
+			q(61918),	-- unflagged when completing Restock: Fashion Accessories (62078)
 			q(61919),	-- unflagged when completing Restock: Exploratory Meals (62094)
 			q(62524),	-- triggered at end of Ember Court (Vashj/Koryan/Choofa/Stonehead)
-			q(62521),	-- completed 'Safe/Humble' criteria for It's Certainly Never Boring
-			q(62523),	-- completed 'Safe/Humble' criteria for It's Certainly Never Boring
-			q(62525),	-- completed 'Relaxing' criteria for It's Certainly Never Boring
-			q(62526),	-- completed 'Exciting' criteria for It's Certainly Never Boring
-
-			--q(61918),	-- unflagged when doing restock quest (62078)
+			q(62521),	-- 'Safe/Humble' criteria for It's Certainly Never Boring
+			q(62523),	-- 'Safe/Humble' criteria for It's Certainly Never Boring
+			q(62525),	-- 'Relaxing' criteria for It's Certainly Never Boring
+			q(62526),	-- 'Exciting' criteria for It's Certainly Never Boring
+			q(62520),	-- 'Clean' criteria for It's Certainly Never Boring
 
 			--q(61935),	-- Stonehad was miserable, Adrestes was elated if it matters. This was at the start of the court - no idea what that was.  It's the first court with decorations though.
 
