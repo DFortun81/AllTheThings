@@ -14,6 +14,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 			n(COVENANT_CALLINGS, sharedData({
 				["sourceQuests"] = { 62899 },	-- The Endless Forest
 				["repeatable"] = true,
+				["customCollect"] = "SL_COV_NFA",
 			}, {
 				q(62693, {	-- A Calling in Ardenweald
 					["sourceQuests"] = { 62697 },	-- A Call to Service

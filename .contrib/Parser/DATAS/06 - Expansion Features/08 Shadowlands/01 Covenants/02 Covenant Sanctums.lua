@@ -334,9 +334,6 @@ _.ExpansionFeatures =
 						["coord"] = { 51.1, 38.0, SINFALL_REACHES },
 					}),
 				}),
-				n(REWARDS, {
-					i(188003),	-- Crate of Revendreth Reserve
-				}),
 			},
 		}),
 	}),
