@@ -12183,12 +12183,27 @@ function app.MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacterO
 		-- this source unlocks a visual that the current character may tmog, so all shared visuals should be considered 'collected' regardless of restriction
 		local currentCharacterUsable = currentCharacterOnly and not knownItem.nmc and not knownItem.nmr;
 		-- For each shared Visual SourceID
+		-- if knownSource.visualID == 322 then app.DEBUG_PRINT = true; app.PrintTable(knownSource); end
+		-- account cannot collect sourceID? not available for transmog?
+		-- local _, canCollect = C_TransmogCollection.AccountCanCollectSource(knownSourceID); -- pointless, always false if sourceID is known
+		-- local unknown1 = select(8, C_TransmogCollection.GetAppearanceSourceInfo(knownSourceID)); -- pointless, returns nil for many valid transmogs
+		-- Trust that Blizzard returns SourceID's which can actually be used as Transmog for the VisualID
+		local canMog;
 		for _,sourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(knownSource.visualID)) do
+			if sourceID == knownSourceID then
+				canMog = true;
+				break;
+			end
+		end
+		if not canMog then return; end
+		for _,sourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(knownSource.visualID)) do
+			-- if app.DEBUG_PRINT then print("visualID",knownSource.visualID,"s",sourceID,"known:",rawget(acctSources, sourceID)) end
 			-- If it is not currently marked collected on the account
 			if not rawget(acctSources, sourceID) then
 				-- for current character only, all we care is that the knownItem is not exclusive to another
 				-- race/class to consider all shared appearances as 'collected' for the current character
 				if currentCharacterUsable then
+					-- if app.DEBUG_PRINT then print("current character usable") end
 					rawset(acctSources, sourceID, 2);
 				else
 					-- Find the check Source in ATT
@@ -12237,6 +12252,7 @@ function app.MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacterO
 										or checkSource.categoryID == 4 --[[CHEST: Robe vs Armor]]
 										or app.SlotByInventoryType[knownSource.invType] == app.SlotByInventoryType[checkSource.invType])
 								then
+									-- if app.DEBUG_PRINT then print("Unique Collected s:",sourceID); end
 									rawset(acctSources, sourceID, 2);
 								-- else print("sources share visual and filters but different equips",item.s,sourceID)
 								end
@@ -12260,6 +12276,7 @@ function app.MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacterO
 				end
 			end
 		end
+		-- app.DEBUG_PRINT = nil;
 	end
 end
 function app.FilterItemTrackable(group)
