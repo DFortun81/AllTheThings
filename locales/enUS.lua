@@ -376,6 +376,14 @@ app.L = {
 	["REPORT_UNSORTED_CHECKBOX"] = "Only 'Unsourced'";
 	["REPORT_UNSORTED_CHECKBOX_TOOLTIP"] = "Enable this option if you only want to see the QuestID if it isn't already Sourced.";
 	["BEHAVIOR_LABEL"] = "List Behavior";
+	["DYNAMIC_CATEGORY_LABEL"] = "Dynamic Categories";
+	["DYNAMIC_CATEGORY_OFF"] = "Off";
+	["DYNAMIC_CATEGORY_OFF_TOOLTIP"] = "Do not generate any Dynamic Categories.";
+	["DYNAMIC_CATEGORY_SIMPLE"] = "Simple";
+	["DYNAMIC_CATEGORY_SIMPLE_TOOLTIP"] = "Generate Dynamic Categories based only on the very highest Category.";
+	["DYNAMIC_CATEGORY_NESTED"] = "Nested";
+	["DYNAMIC_CATEGORY_NESTED_TOOLTIP"] = "Generate Dynamic Categories based on their exact Source. This will lead to duplicates of Things that are also Sourced in multiple places.";
+	["DYNAMIC_CATEGORY_TOOLTIP_NOTE"] = "\n\n|cffff0000Requires Reload|r";
 
 	-- Account Wide Checkboxes
 	["ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP"] = "|cff00AB00Track Account-wide|R\n\nAchievement tracking is usually account wide, but there are a number of achievements exclusive to specific classes and races that you can't get on your main.";

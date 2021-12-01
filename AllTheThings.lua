@@ -9501,6 +9501,9 @@ fields.tsm = function(t)
 		return string.format("i:%d", t.itemID);
 	end
 fields.isToy = app.ReturnTrue;
+fields.toyID = function(t)
+		return t.itemID;
+	end
 
 app.BaseToy = app.BaseObjectFields(fields);
 app.CreateToy = function(id, t)
@@ -15224,27 +15227,79 @@ function app:GetWindow(suffix, parent, onUpdate)
 end
 end)();
 
+-- Common function set as the OnUpdate for a group which will build itself a 'simple' version of the
+-- content which matches the specified .dynamic 'field' of the group
+-- NOTE: Content must be cached using the dynamic 'field'
+app.DynamicCategory_Simple = function(self)
+	self.OnUpdate = nil;
+	if fieldCache[self.dynamic] then
+		local rootATT = app:GetWindow("Prime").data;
+		local RecursiveFirstParentWithFieldValue = app.RecursiveFirstParentWithFieldValue;
+		local top, topText;
+		local topHeaders = {};
+		for id,sources in pairs(fieldCache[self.dynamic]) do
+			-- find the top-level parent of the Thing
+			top = RecursiveFirstParentWithFieldValue(sources[1], "parent", rootATT);
+			if top then
+				topText = top.text;
+				-- store a copy of this top header if we dont have it
+				if not topHeaders[topText] then
+					topHeaders[topText] = CreateObject(top, true);
+					-- print("create topHeader",self.dynamic,"==>")
+					-- app.PrintTable(topHeaders[topText])
+				end
+				-- put a copy of the Thing into the matching top category (no uniques since only 1 per cached Thing)
+				NestObject(topHeaders[topText], CreateObject(sources[1], true));
+			end
+		end
+		-- sort all of the Things by name in each top header and put it under the dynamic group
+		-- print("sorting headers",self.dynamic)
+		for _,header in pairs(topHeaders) do
+			app.SortGroup(header, "name");
+			NestObject(self, header);
+		end
+		-- reset indents and such
+		BuildGroups(self, self.g);
+		-- sort the top level groups initially (group not yet visible)
+		self.sort = true;
+		app.SortGroup(self, "name", nil, nil, "sort");
+		self.sort = nil;
+		-- dynamic groups are ignored for the source tooltips
+		self.sourceIgnored = true;
+		-- make sure these things are cached so they can be updated when collected
+		-- print("cache dynamic",self.dynamic)
+		app.CacheFields(self);
+	else
+		app.print("Failed to build Simple Dynamic Category for:",self.dynamic)
+	end
+end
+
+-- Common function set as the OnUpdate for a group which will build itself a 'nested' version of the
+-- content which matches the specified .dynamic 'field' and .dynamic_value of the group
+app.DynamicCategory_Nested = function(self)
+	self.OnUpdate = nil;
+	-- pull out all Things which should go into this category based on field & value
+	self.g = app:BuildSearchResponse(app:GetWindow("Prime").data.g, self.dynamic, self.dynamic_value, true);
+	-- reset indents and such
+	BuildGroups(self, self.g);
+	-- sort the top level groups initially (group not yet visible)
+	self.sort = true;
+	app.SortGroup(self, "name", nil, nil, "sort");
+	self.sort = nil;
+	-- dynamic groups are ignored for the source tooltips
+	self.sourceIgnored = true;
+	-- make sure these things are cached so they can be updated when collected
+	app.CacheFields(self);
+end
+
 function app:GetDataCache()
 	-- Attaches a dynamic OnUpdate to the category which auto-populates itself using the provided field and optional value when first receiving an Update to itself
 	local function DynamicCategory(group, field, value)
-		if field then
-			group.OnUpdate = function(self)
-				-- pull out all Things which should go into this category based on field & value
-				group.g = app:BuildSearchResponse(app:GetWindow("Prime").data.g, field, value, true);
-				-- reset indents and such
-				BuildGroups(group, group.g);
-				-- sort the top level groups initially
-				group.sort = true;
-				app.SortGroup(group, "name", nil, nil, "sort");
-				group.sort = nil;
-				-- dynamic groups are ignored for the source tooltips
-				group.sourceIgnored = true;
-				-- mark the top group as dynamic for the field which it used (so popouts under the dynamic header are considered unique from other dynamic popouts)
-				group.dynamic = field;
-				-- make sure these things are cached so they can be updated when collected
-				app.CacheFields(group);
-				self.OnUpdate = nil;
-			end
+		local dynamicSetting = app.Settings:Get("Dynamic:Style");
+		if dynamicSetting > 0 then
+			-- mark the top group as dynamic for the field which it used (so popouts under the dynamic header are considered unique from other dynamic popouts)
+			group.dynamic = field;
+			group.OnUpdate = dynamicSetting == 2 and app.DynamicCategory_Nested or app.DynamicCategory_Simple;
 		end
 		return group;
 	end
@@ -15559,7 +15614,7 @@ function app:GetDataCache()
 		db.icon = app.asset("Category_ToyBox");
 		db.f = 102;
 		db.text = TOY_BOX.." - "..DYNAMIC;
-		tinsert(g, DynamicCategory(db, "isToy"));
+		tinsert(g, DynamicCategory(db, "toyID"));
 
 		--[[
 		-- DYNAMIC TOY BOX (not filtered)

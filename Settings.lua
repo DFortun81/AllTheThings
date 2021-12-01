@@ -35,7 +35,6 @@ app.Settings = settings;
 settings.name = app:GetName();
 settings.MostRecentTab = nil;
 settings.Tabs = {};
-settings.ModifierKeys = { "None", "Shift", "Ctrl", "Alt" };
 settings:SetBackdrop({
 	bgFile = "Interface/RAIDFRAME/UI-RaidFrame-GroupBg",
 	edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
@@ -134,6 +133,7 @@ local GeneralSettingsBase = {
 		["Skip:AutoRefresh"] = false,
 		["Show:PetBattles"] = true,
 		["Hide:PvP"] = false,
+		["Dynamic:Style"] = 1,
 	},
 };
 local FilterSettingsBase = {};
@@ -283,6 +283,8 @@ settings.NewProfile = function(self, key)
 			Unobtainable = {},
 			Windows = {},
 		};
+		-- Use Ad-Hoc for new Profiles, to remove initial lag
+		raw.Tooltips["Updates:AdHoc"] = true;
 		AllTheThingsProfiles.Profiles[key] = raw;
 		return raw;
 	end
@@ -316,6 +318,12 @@ settings.DeleteProfile = function(self, key)
 		if key == AllTheThingsProfiles.Assignments[app.GUID] then
 			AllTheThingsProfiles.Assignments[app.GUID] = nil;
 			settings.ApplyProfile();
+		end
+		-- deleting a profile used by other characters, they too will reset to default
+		for char,profKey in pairs(AllTheThingsProfiles.Assignments) do
+			if profKey == key then
+				AllTheThingsProfiles.Assignments[char]  = nil;
+			end
 		end
 		return true;
 	end
@@ -1312,7 +1320,7 @@ line:SetColorTexture(1, 1, 1, 0.4);
 line:SetHeight(2);
 
 local child = settings:CreateScrollFrame();
-child:SetMaxScroll(43); -- Adding more max value to the scrollbar is what controls the vertical size.
+child:SetMaxScroll(55); -- Adding more max value to the scrollbar is what controls the vertical size.
 local scrollFrame = child.ScrollContainer;
 scrollFrame:SetPoint("TOP", line, "BOTTOM", 0, -1);
 scrollFrame:SetPoint("LEFT", settings, "LEFT", 0, 0);
@@ -2405,10 +2413,93 @@ PrecisionSlider.OnRefresh = function(self)
 	end
 end;
 
+-- Dynamic Category Toggles
+local DynamicCategoryLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+DynamicCategoryLabel:SetJustifyH("LEFT");
+DynamicCategoryLabel:SetText(L["DYNAMIC_CATEGORY_LABEL"]);
+DynamicCategoryLabel:Show();
+table.insert(settings.MostRecentTab.objects, DynamicCategoryLabel);
+DynamicCategoryLabel:SetPoint("LEFT", ShowPercentagesCheckBox, "LEFT", 0, 0);
+DynamicCategoryLabel:SetPoint("TOP", PrecisionSlider, "BOTTOM", 0, -8);
+
+local settingName = "Dynamic:Style";
+-- Create Unique Disable methods for callbacks
+local function Off_Disable(self)
+	self:Disable();
+end
+local function Simple_Disable(self)
+	self:Disable();
+end
+local function Nested_Disable(self)
+	self:Disable();
+end
+local DynamicCategoryOffCheckbox = child:CreateCheckBox(L["DYNAMIC_CATEGORY_OFF"],
+function(self)
+	-- act like a radio button
+	self:SetAlpha(1);
+	if settings:Get(settingName) == 0 then
+		self:SetChecked(true);
+		app.Callback(Off_Disable, self);
+	else
+		self:SetChecked(false);
+		self:Enable();
+	end
+end,
+function(self)
+	if self:GetChecked() then
+		settings:Set(settingName, 0);
+	end
+end);
+DynamicCategoryOffCheckbox:SetPoint("TOP", DynamicCategoryLabel, "BOTTOM", 0, 0);
+DynamicCategoryOffCheckbox:SetPoint("LEFT", DynamicCategoryLabel, "LEFT", 0, 0);
+DynamicCategoryOffCheckbox:SetATTTooltip(L["DYNAMIC_CATEGORY_OFF_TOOLTIP"]..L["DYNAMIC_CATEGORY_TOOLTIP_NOTE"]);
+
+local DynamicCategorySimpleCheckbox = child:CreateCheckBox(L["DYNAMIC_CATEGORY_SIMPLE"],
+function(self)
+	-- act like a radio button
+	self:SetAlpha(1);
+	if settings:Get(settingName) == 1 then
+		self:SetChecked(true);
+		app.Callback(Simple_Disable, self);
+	else
+		self:SetChecked(false);
+		self:Enable();
+	end
+end,
+function(self)
+	if self:GetChecked() then
+		settings:Set(settingName, 1);
+	end
+end);
+DynamicCategorySimpleCheckbox:SetPoint("TOP", DynamicCategoryOffCheckbox, "TOP", 0, 0);
+DynamicCategorySimpleCheckbox:SetPoint("LEFT", DynamicCategoryOffCheckbox.Text, "RIGHT", 4, 0);
+DynamicCategorySimpleCheckbox:SetATTTooltip(L["DYNAMIC_CATEGORY_SIMPLE_TOOLTIP"]..L["DYNAMIC_CATEGORY_TOOLTIP_NOTE"]);
+
+local DynamicCategoryNestedCheckbox = child:CreateCheckBox(L["DYNAMIC_CATEGORY_NESTED"],
+function(self)
+	-- act like a radio button
+	self:SetAlpha(1);
+	if settings:Get(settingName) == 2 then
+		self:SetChecked(true);
+		app.Callback(Nested_Disable, self);
+	else
+		self:SetChecked(false);
+		self:Enable();
+	end
+end,
+function(self)
+	if self:GetChecked() then
+		settings:Set(settingName, 2);
+	end
+end);
+DynamicCategoryNestedCheckbox:SetPoint("TOP", DynamicCategorySimpleCheckbox, "TOP", 0, 0);
+DynamicCategoryNestedCheckbox:SetPoint("LEFT", DynamicCategorySimpleCheckbox.Text, "RIGHT", 4, 0);
+DynamicCategoryNestedCheckbox:SetATTTooltip(L["DYNAMIC_CATEGORY_NESTED_TOOLTIP"]..L["DYNAMIC_CATEGORY_TOOLTIP_NOTE"]);
+
 end)();
 
 ------------------------------------------
--- The "Filters" Tab.	--
+-- The "Tracking" Tab.	--
 ------------------------------------------
 (function()
 local tab = settings:CreateTab(L["FILTERS_TAB"]);
@@ -3131,11 +3222,24 @@ TooltipModifierLabel.OnRefresh = function(self)
 	end
 end;
 
+-- Create Unique Disable methods for callbacks
+local function None_Disable(self)
+	self:Disable();
+end
+local function Shift_Disable(self)
+	self:Disable();
+end
+local function Ctrl_Disable(self)
+	self:Disable();
+end
+local function Alt_Disable(self)
+	self:Disable();
+end
 local TooltipModifierNoneCheckBox = settings:CreateCheckBox(L["TOOLTIP_MOD_NONE"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Enabled:Mod") == "None");
 	if not settings:GetTooltipSetting("Enabled") then
-		app.Callback(self.Disable, self);
+		app.Callback(None_Disable, self);
 		self:SetAlpha(0.2);
 	else
 		self:SetAlpha(1);
@@ -3143,7 +3247,7 @@ function(self)
 		if not self:GetChecked() then
 			self:Enable();
 		else
-			app.Callback(self.Disable, self);
+			app.Callback(None_Disable, self);
 		end
 	end
 end,
@@ -3159,7 +3263,7 @@ local TooltipModifierShiftCheckBox = settings:CreateCheckBox(L["TOOLTIP_MOD_SHIF
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Enabled:Mod") == "Shift");
 	if not settings:GetTooltipSetting("Enabled") then
-		app.Callback(self.Disable, self);
+		app.Callback(Shift_Disable, self);
 		self:SetAlpha(0.2);
 	else
 		self:SetAlpha(1);
@@ -3167,7 +3271,7 @@ function(self)
 		if not self:GetChecked() then
 			self:Enable();
 		else
-			app.Callback(self.Disable, self);
+			app.Callback(Shift_Disable, self);
 		end
 	end
 end,
@@ -3183,7 +3287,7 @@ local TooltipModifierCtrlCheckBox = settings:CreateCheckBox(L["TOOLTIP_MOD_CTRL"
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Enabled:Mod") == "Ctrl");
 	if not settings:GetTooltipSetting("Enabled") then
-		app.Callback(self.Disable, self);
+		app.Callback(Ctrl_Disable, self);
 		self:SetAlpha(0.2);
 	else
 		self:SetAlpha(1);
@@ -3191,7 +3295,7 @@ function(self)
 		if not self:GetChecked() then
 			self:Enable();
 		else
-			app.Callback(self.Disable, self);
+			app.Callback(Ctrl_Disable, self);
 		end
 	end
 end,
@@ -3207,7 +3311,7 @@ local TooltipModifierAltCheckBox = settings:CreateCheckBox(L["TOOLTIP_MOD_ALT"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Enabled:Mod") == "Alt");
 	if not settings:GetTooltipSetting("Enabled") then
-		app.Callback(self.Disable, self);
+		app.Callback(Alt_Disable, self);
 		self:SetAlpha(0.2);
 	else
 		self:SetAlpha(1);
@@ -3215,7 +3319,7 @@ function(self)
 		if not self:GetChecked() then
 			self:Enable();
 		else
-			app.Callback(self.Disable, self);
+			app.Callback(Alt_Disable, self);
 		end
 	end
 end,
@@ -4150,6 +4254,9 @@ settings.ApplyBackdropColor(ProfileScroller, 20, 20, 20, 1);
 ProfileSelector:SetHeight(100);
 
 -- Initialize Profiles Button
+local function InitProfilesButton_Disable(self)
+	self:Disable();
+end
 local InitializeProfilesButton = settings:CreateButton(
 -- button settings
 {
@@ -4163,7 +4270,7 @@ local InitializeProfilesButton = settings:CreateButton(
 		function()
 			app.SetupProfiles();
 			OnClickForTab(tab);
-			app.Callback(self.Disable, self);
+			app.Callback(InitProfilesButton_Disable, self);
 		end);
 	end,
 });
@@ -4275,6 +4382,9 @@ local DeleteProfileButton = settings:CreateButton(
 DeleteProfileButton:SetPoint("BOTTOMLEFT", ProfileScroller, "BOTTOMRIGHT", 5, 0);
 DeleteProfileButton:Show();
 
+local function ProfileCheckbox_Disable(self)
+	self:Disable();
+end
 refreshProfiles = function()
 	local mostRecentTab = settings.MostRecentTab;
 	-- make sure to use the correct tab when adding the UI elements
@@ -4320,7 +4430,7 @@ refreshProfiles = function()
 					if activeProfile == myProfile then
 						self:SetAlpha(0.5);
 						self:SetChecked(true);
-						app.Callback(self.Disable, self);
+						app.Callback(ProfileCheckbox_Disable, self);
 					elseif tab.SelectedProfile == myProfile then
 						self:SetAlpha(1);
 						self:Enable();
