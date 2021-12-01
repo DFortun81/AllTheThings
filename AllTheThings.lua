@@ -1496,7 +1496,7 @@ CreateObject = function(t, rootOnly)
 		-- array
 		-- if app.DEBUG_PRINT then print("CreateObject on array",#t); end
 		for _,o in ipairs(t) do
-			tinsert(s, CreateObject(o));
+			tinsert(s, CreateObject(o, rootOnly));
 		end
 		return s;
 	-- use the highest-priority piece of data which exists in the table to turn it into an object
@@ -1561,7 +1561,17 @@ CreateObject = function(t, rootOnly)
 			t = app.CreateSpell(t.spellID, t);
 		else
 			-- if app.DEBUG_PRINT then print("CreateObject by value, no specific object type"); app.PrintTable(t); end
-			t = setmetatable({}, { __index = t });
+			if rootOnly then
+				-- shallow copy the root table only, since using t as a metatable will allow .g to exist still on the table
+				-- print("rootOnly copy of",t.text)
+				local s = {};
+				for k,v in pairs(t) do
+					s[k] = v;
+				end
+				t = s;
+			else
+				t = setmetatable({}, { __index = t });
+			end
 		end
 	end
 
@@ -4792,10 +4802,12 @@ fieldCache["factionID"] = {};
 fieldCache["flightPathID"] = {};
 fieldCache["followerID"] = {};
 fieldCache["headerID"] = {};
+fieldCache["illusionID"] = {};
 fieldCache["instanceID"] = {};
 fieldCache["itemID"] = {};
 fieldCache["itemIDAsCost"] = {};
 fieldCache["mapID"] = {};
+fieldCache["mountID"] = {};
 fieldCache["nextQuests"] = {};
 fieldCache["objectID"] = {};
 fieldCache["professionID"] = {};
@@ -4884,6 +4896,9 @@ fieldConverters = {
 		-- WARNING: DEV ONLY END
 		CacheField(group, "headerID", value);
 	end,
+	["illusionID"] = function(group, value)
+		CacheField(group, "illusionID", value);
+	end,
 	["instanceID"] = function(group, value)
 		CacheField(group, "instanceID", value);
 	end,
@@ -4916,6 +4931,10 @@ fieldConverters = {
 	end,
 	["spellID"] = function(group, value)
 		CacheField(group, "spellID", value);
+		-- cache as a mount if it is
+		if group.mountID then
+			CacheField(group, "mountID", group.mountID);
+		end
 	end,
 	["tierID"] = function(group, value)
 		CacheField(group, "tierID", value);
@@ -12376,17 +12395,17 @@ app.RecursiveFirstParentWithField = function(group, field)
 		end
 	end
 end
-app.RecursiveIsDescendantOfParentWithValue = function(group, field, value)
-	if group then
-		if group[field] and group[field] == value then
-			return true
+-- Returns the first found recursive Parent of the group which meets the provided field and value combination
+app.RecursiveFirstParentWithFieldValue = function(group, field, value)
+	if group and field then
+		if group[field] == value then
+			return group;
 		else
 			if group.parent then
-				return app.RecursiveIsDescendantOfParentWithValue(group.parent, field, value)
+				return app.RecursiveFirstParentWithFieldValue(group.parent, field, value);
 			end
 		end
 	end
-	return false;
 end
 
 -- Processing Functions
@@ -16279,29 +16298,29 @@ function app:GetDataCache()
 		-- end
 
 		-- Update Toy data.
-		if toyCategory then
-			toyCategory.OnUpdate = function(self)
-				local headers = {};
-				for i,header in ipairs(self.g) do
-					if header.headerID and header.key == "headerID" then
-						headers[header.headerID] = header;
-						if not header.g then
-							header.g = {};
-						end
-					end
-				end
-				for i,_ in pairs(fieldCache["toyID"]) do
-					if not self.toys[i] then
-						self.toys[i] = buildCategoryEntry(self, headers, _, app.CreateToy(tonumber(i)));
-					end
-				end
-				insertionSort(self.g, sortByTextSafely);
-				for i,header in pairs(headers) do
-					insertionSort(header.g, sortByTextSafely);
-				end
-			end
-			toyCategory:OnUpdate();
-		end
+		-- if toyCategory then
+		-- 	toyCategory.OnUpdate = function(self)
+		-- 		local headers = {};
+		-- 		for i,header in ipairs(self.g) do
+		-- 			if header.headerID and header.key == "headerID" then
+		-- 				headers[header.headerID] = header;
+		-- 				if not header.g then
+		-- 					header.g = {};
+		-- 				end
+		-- 			end
+		-- 		end
+		-- 		for i,_ in pairs(fieldCache["toyID"]) do
+		-- 			if not self.toys[i] then
+		-- 				self.toys[i] = buildCategoryEntry(self, headers, _, app.CreateToy(tonumber(i)));
+		-- 			end
+		-- 		end
+		-- 		insertionSort(self.g, sortByTextSafely);
+		-- 		for i,header in pairs(headers) do
+		-- 			insertionSort(header.g, sortByTextSafely);
+		-- 		end
+		-- 	end
+		-- 	toyCategory:OnUpdate();
+		-- end
 
 		-- Perform Heirloom caching/upgrade generation
 		app.CacheHeirlooms();
