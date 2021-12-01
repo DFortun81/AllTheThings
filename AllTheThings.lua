@@ -17127,6 +17127,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			end
 			-- ignore refreshing the minilist if it is already being shown and is the same zone
 			if self.mapID == id and not show then
+				-- print("exact map")
 				return; -- Haha JK BRO
 			end
 
@@ -17140,6 +17141,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			OpenMiniList(app.GetCurrentMapID(), true);
 		end
 		local function RefreshLocation()
+			-- print("RefreshLocation")
 			-- Acquire the new map ID.
 			local mapID = app.GetCurrentMapID();
 			if not mapID or mapID < 0 then
@@ -17158,6 +17160,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		end
 		local function LocationTrigger()
 			if app.InWorld and app.IsReady and (app.Settings:GetTooltipSetting("Auto:MiniList") or app:GetWindow("CurrentInstance"):IsVisible()) then
+				-- print("LocationTrigger-Callback")
 				AfterCombatCallback(RefreshLocation);
 			end
 		end
@@ -21228,16 +21231,15 @@ app.events.VARIABLES_LOADED = function()
 		app.Settings:ApplyProfile();
 
 		-- now that the addon is ready, make sure the minilist is updated to the current location if necessary
-		Callback(app.LocationTrigger);
+		DelayedCallback(app.LocationTrigger, 3);
 	end);
 end
 app.events.PLAYER_ENTERING_WORLD = function(...)
-	-- print("PLAYER_ENTERING_WORLD",...)
 	app.InWorld = true;
 	-- refresh any custom collects for this character
 	app.RefreshCustomCollectibility();
 	-- send a location trigger now that the character is 'in the world'
-	Callback(app.LocationTrigger);
+	DelayedCallback(app.LocationTrigger, 3);
 end
 app.events.ADDON_LOADED = function(addonName)
 	if addonName == "Blizzard_AuctionHouseUI" then

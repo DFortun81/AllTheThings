@@ -10,6 +10,7 @@ _G["AllTheThings"] = app;
 app.asset = function(path)
 	return "Interface\\Addons\\AllTheThings\\assets\\" .. path;
 end
+-- app.DEBUG_PRINT = true;
 
 -- Create an Event Processor.
 local events = {};
