@@ -960,21 +960,20 @@ _.ExpansionFeatures =
 							}),
 						}),
 					}),
-					m(715, {	-- Emerald Dreamway
+					m(715, bubbleDown({["classes"] = { DRUID }},{	-- Emerald Dreamway
 						["icon"] = "Interface\\Icons\\spell_arcane_portalshattrath",	-- Dream Portal Icon
 						["g"] = {
 							n(-159, {	-- Daily Dreamway Event Roll
 								["isDaily"] = true,
-								["isBreadcrumb"] = true,
 								["questID"] = 44326,	-- "daily dreamway event roll" on WoWHead
 								["description"] = "If this quest has a checkmark next to it, then check below which stone is active. If none of them are checked, that means that none of the owlcat stones can be interacted with today and that you should come back tomorrow.",
 								["icon"] = "Interface\\Icons\\inv_misc_druidstone04",
 								["g"] = {
 									n(-130, {	-- Duskwood Active
 										["isDaily"] = true,
-										["isBreadcrumb"] = true,
 										["questID"] = 44329,	-- Owlcat Stone Activate [Duskwood]
 										["description"] = "If this quest has a checkmark next to it, then that means the stone is active.",
+										["sourceQuests"] = { 44326 },	-- Daily Dreamway Event Roll
 										["coords"] = {
 											{ 42.0, 38.0, DUSKWOOD },
 											{ 43.0, 38.0, DUSKWOOD },
@@ -993,13 +992,12 @@ _.ExpansionFeatures =
 											{ 51.0, 41.0, DUSKWOOD },
 											{ 51.0, 43.0, DUSKWOOD },
 										},
-										["sourceQuests"] = { 44326 },	-- Daily Dreamway Event Roll
 									}),
 									n(-132, {	-- Feralas Active
 										["isDaily"] = true,
-										["isBreadcrumb"] = true,
 										["questID"] = 44327,	-- Owlcat Stone Activate [Feralas]
 										["description"] = "If this quest has a checkmark next to it, then that means the stone is active.",
+										["sourceQuests"] = { 44326 },	-- Daily Dreamway Event Roll
 										["coords"] = {
 											{ 48.0, 6.0, FERALAS },
 											{ 48.0, 10.0, FERALAS },
@@ -1023,13 +1021,12 @@ _.ExpansionFeatures =
 											{ 54.0, 12.9, FERALAS },
 											{ 54.0, 15.0, FERALAS },
 										},
-										["sourceQuests"] = { 44326 },	-- Daily Dreamway Event Roll
 									}),
 									n(-131, {	-- The Hinterlands Active
 										["isDaily"] = true,
-										["isBreadcrumb"] = true,
 										["questID"] = 44328,	-- Owlcat Stone Activate [Hinterlands]
 										["description"] = "If this quest has a checkmark next to it, then that means the stone is active.",
+										["sourceQuests"] = { 44326 },	-- Daily Dreamway Event Roll
 										["coords"] = {
 											{ 57.0, 34.0, THE_HINTERLANDS },
 											{ 58.1, 18.1, THE_HINTERLANDS },
@@ -1051,7 +1048,6 @@ _.ExpansionFeatures =
 											{ 68.9, 32.4, THE_HINTERLANDS },
 											{ 68.0, 36.0, THE_HINTERLANDS },
 										},
-										["sourceQuests"] = { 44326 },	-- Daily Dreamway Event Roll
 									}),
 								},
 							}),
@@ -1080,7 +1076,7 @@ _.ExpansionFeatures =
 								},
 							}),
 						},
-					}),
+					})),
 				},
 			}),
 		}),

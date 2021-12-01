@@ -1440,12 +1440,12 @@ root("HiddenQuestTriggers", {
 	q(62405),	-- using Mucosal Pigment (Crypt Couture)
 
 -- Stitched Set (armor-type agnostic it seems by slot rewarded)
-	-- q(),	-- Helm
+	q(63393),	-- Helm
 	q(63396),	-- Shoulders
 	q(63398),	-- Chest
 	q(63394),	-- Wrist
 	q(63392),	-- Gloves
-	-- q(),	-- Waist
+	-- q(63397),	-- Waist -- TODO confirm
 	q(63395),	-- Legs
 	q(63399),	-- Feet
 	q(63400),	-- Cloak
