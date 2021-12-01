@@ -17161,7 +17161,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		local function LocationTrigger()
 			if app.InWorld and app.IsReady and (app.Settings:GetTooltipSetting("Auto:MiniList") or app:GetWindow("CurrentInstance"):IsVisible()) then
 				-- print("LocationTrigger-Callback")
-				AfterCombatCallback(RefreshLocation);
+				AfterCombatOrDelayedCallback(RefreshLocation, 0.25);
 			end
 		end
 		app.OpenMiniList = OpenMiniList;
