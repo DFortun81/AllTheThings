@@ -40,6 +40,31 @@ app.SetScript = function(self, ...)
 		_:SetScript(scriptName, nil);
 	end
 end
+-- Triggers a timer callback method to run on the next game frame with the provided params; the method can only be set to run once per frame
+local function Callback(method, ...)
+	if not app.__callbacks then
+		app.__callbacks = {};
+	end
+	if not app.__callbacks[method] then
+		app.__callbacks[method] = ... and {...} or true;
+		print("Callback:",method, ...)
+		local newCallback = function()
+			local args = app.__callbacks[method];
+			app.__callbacks[method] = nil;
+			-- callback with args/void
+			if args ~= true then
+				print("Callback/args Running",method, unpack(args))
+				method(unpack(args));
+			else
+				print("Callback/void Running",method)
+				method();
+			end
+			print("Callback Done",method)
+		end;
+		C_Timer.After(0, newCallback);
+	end
+end
+app.Callback = Callback;
 
 (function()
 local SetATTTooltip = function(self, text)
