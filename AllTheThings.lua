@@ -16788,6 +16788,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				-- header groups in minilist shouldn't be attached to some random other source location
 				-- since they will be comprised of groups from many different source locations
 				header.sourceParent = nil;
+				header.customCollect = nil;
 				return header;
 			else
 				return { g = { group }, ["sort"] = true, ["collectible"] = false, };
