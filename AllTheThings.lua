@@ -12188,15 +12188,16 @@ function app.MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacterO
 		-- local _, canCollect = C_TransmogCollection.AccountCanCollectSource(knownSourceID); -- pointless, always false if sourceID is known
 		-- local unknown1 = select(8, C_TransmogCollection.GetAppearanceSourceInfo(knownSourceID)); -- pointless, returns nil for many valid transmogs
 		-- Trust that Blizzard returns SourceID's which can actually be used as Transmog for the VisualID
+		local visualIDs = C_TransmogCollection_GetAllAppearanceSources(knownSource.visualID);
 		local canMog;
-		for _,sourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(knownSource.visualID)) do
+		for _,sourceID in ipairs(visualIDs) do
 			if sourceID == knownSourceID then
 				canMog = true;
 				break;
 			end
 		end
 		if not canMog then return; end
-		for _,sourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(knownSource.visualID)) do
+		for _,sourceID in ipairs(visualIDs) do
 			-- if app.DEBUG_PRINT then print("visualID",knownSource.visualID,"s",sourceID,"known:",rawget(acctSources, sourceID)) end
 			-- If it is not currently marked collected on the account
 			if not rawget(acctSources, sourceID) then
@@ -15462,7 +15463,7 @@ function app:GetDataCache()
 
 		-- Pet Battles
 		if app.Categories.PetBattles then
-			db = {};
+			db = app.CreateNPC(-796);
 			db.g = app.Categories.PetBattles;
 			db.lvl = 3; -- Must be 3 to train (used to be 5 pre-scale)
 			db.expanded = false;
@@ -15552,30 +15553,29 @@ function app:GetDataCache()
 			tinsert(g, db);
 		end
 
+		-- Battle Pets - Dynamic
+		local db = {};
+		db.text = AUCTION_CATEGORY_BATTLE_PETS.." - "..DYNAMIC;
+		db.icon = app.asset("Category_PetJournal");
+		tinsert(g, DynamicCategory(db, "speciesID"));
 		-- Pet Journal
-		if app.Categories.BattlePets then
-			db = {};
-			db.g = app.Categories.BattlePets;
-			db.f = 101;
-			db.text = AUCTION_CATEGORY_BATTLE_PETS;
-			db.icon = app.asset("Category_PetJournal");
-			-- remove the manually-built pet journal for now
-			for _,o in ipairs(db.g) do
-				-- the dynamic pet journal listing
-				if o.headerID == -797 then
-					o.g = nil;
-					o.sourceIgnored = true;
-					-- o = DynamicCategory(o, "speciesID");
-					break;
-				end
-			end
-			-- Battle Pets - Dynamic
-			local bp = {};
-			bp.text = AUCTION_CATEGORY_BATTLE_PETS.." - "..DYNAMIC;
-			bp.icon = app.asset("Category_PetJournal");
-			tinsert(db.g, DynamicCategory(bp, "speciesID"));
-			tinsert(g, db);
-		end
+		-- if app.Categories.BattlePets then
+		-- 	db = {};
+		-- 	db.g = app.Categories.BattlePets;
+		-- 	db.f = 101;
+		-- 	db.text = AUCTION_CATEGORY_BATTLE_PETS;
+		-- 	db.icon = app.asset("Category_PetJournal");
+		-- 	-- remove the manually-built pet journal for now
+		-- 	for _,o in ipairs(db.g) do
+		-- 		-- the dynamic pet journal listing
+		-- 		if o.headerID == -797 then
+		-- 			o.g = nil;
+		-- 			o.sourceIgnored = true;
+		-- 			-- o = DynamicCategory(o, "speciesID");
+		-- 			break;
+		-- 		end
+		-- 	end
+		-- end
 
 		-- Illusions - Dynamic
 		db = {};
