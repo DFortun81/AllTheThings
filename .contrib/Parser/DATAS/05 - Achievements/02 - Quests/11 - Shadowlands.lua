@@ -371,6 +371,8 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			i(187673),	-- Cryptic Aurelid (MOUNT!)
 		}),
 		ach(15259),	-- Secrets of the First Ones
-		ach(15229),	-- Traversing the Spheres
+		ach(15229, {	-- Traversing the Spheres
+			i(187860),	-- Mortis Mover (TOY!)
+		}),
 	}),
 }));

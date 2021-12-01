@@ -1,7 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
---[[
 root("Zones", m(SHADOWLANDS, {
 	m(ZERETH_MORTIS, {
 		n(ACHIEVEMENTS, {
@@ -15,9 +14,10 @@ root("Zones", m(SHADOWLANDS, {
 				i(187673),	-- Cryptic Aurelid (MOUNT!)
 			}),
 			ach(15259),	-- Secrets of the First Ones
-			ach(15229),	-- Traversing the Spheres
+			ach(15229, {	-- Traversing the Spheres
+				i(187860),	-- Mortis Mover
+			}),
 			ach(15331),	-- Treasures of Zereth Mortis
 		}),
 	}),
 }));
---]]

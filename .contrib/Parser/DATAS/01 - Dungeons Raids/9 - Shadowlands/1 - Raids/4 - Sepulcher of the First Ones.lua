@@ -8,40 +8,42 @@ root("Instances", tier(SL_TIER, {
 		["coord"] = { , , },
 		["order"] = "03",
 		["maps"] = {
-			
+
 		},
 		["g"] = {
+			n(ACHIEVEMENTS, {
+				ach(15400),	-- Where the Wild Beasts Are
 			n(COMMON_BOSS_DROPS, {
-				
+
 			}),
 			d(17, {	-- LFR
 				n(ZONE_DROPS, {
-				
+
 				}),
 				ach(, {
 					["collectible"] = false,
 					["g"] = {
-						e(, {	-- 
+						e(, {	--
 							["crs"] = { },	--
 							["g"] = {
-								crit(, {	-- 
-									["achievementID"] = ,	-- 
+								crit(, {	--
+									["achievementID"] = ,	--
 								}),
 							},
 						}),
-						e(, {	-- 
+						e(, {	--
 							["crs"] = { },	--
 							["g"] = {
-								crit(, {	-- 
-									["achievementID"] = ,	-- 
+								crit(, {	--
+									["achievementID"] = ,	--
 								}),
 							},
 						}),
-						e(, {	-- 
+						e(, {	--
 							["crs"] = { },	--
 							["g"] = {
-								crit(, {	-- 
-									["achievementID"] = ,	-- 
+								crit(, {	--
+									["achievementID"] = ,	--
 								}),
 							},
 						}),
@@ -50,56 +52,27 @@ root("Instances", tier(SL_TIER, {
 				ach(, {
 					["collectible"] = false,
 					["g"] = {
-						e(, {	-- 
+						e(, {	--
 							["crs"] = { },	--
 							["g"] = {
-								crit(, {	-- 
-									["achievementID"] = ,	-- 
+								crit(, {	--
+									["achievementID"] = ,	--
 								}),
 							},
 						}),
-						e(, {	-- 
+						e(, {	--
 							["crs"] = { },	--
 							["g"] = {
-								crit(, {	-- 
-									["achievementID"] = ,	-- 
+								crit(, {	--
+									["achievementID"] = ,	--
 								}),
 							},
 						}),
-						e(, {	-- 
+						e(, {	--
 							["crs"] = { },	--
 							["g"] = {
-								crit(, {	-- 
-									["achievementID"] = ,	-- 
-								}),
-							},
-						}),
-					},
-				}),
-				ach(, {
-					["collectible"] = false,
-					["g"] = {
-						e(, {	-- 
-							["crs"] = { },	--
-							["g"] = {
-								crit(, {	-- 
-									["achievementID"] = ,	-- 
-								}),
-							},
-						}),
-						e(, {	-- 
-							["crs"] = { },	--
-							["g"] = {
-								crit(, {	-- 
-									["achievementID"] = ,	-- 
-								}),
-							},
-						}),
-						e(, {	-- 
-							["crs"] = { },	--
-							["g"] = {
-								crit(, {	-- 
-									["achievementID"] = ,	-- 
+								crit(, {	--
+									["achievementID"] = ,	--
 								}),
 							},
 						}),
@@ -108,19 +81,48 @@ root("Instances", tier(SL_TIER, {
 				ach(, {
 					["collectible"] = false,
 					["g"] = {
-						e(, {	-- 
+						e(, {	--
 							["crs"] = { },	--
 							["g"] = {
-								crit(, {	-- 
-									["achievementID"] = ,	-- 
+								crit(, {	--
+									["achievementID"] = ,	--
 								}),
 							},
 						}),
-						e(, {	-- 
+						e(, {	--
 							["crs"] = { },	--
 							["g"] = {
-								crit(, {	-- 
-									["achievementID"] = ,	-- 
+								crit(, {	--
+									["achievementID"] = ,	--
+								}),
+							},
+						}),
+						e(, {	--
+							["crs"] = { },	--
+							["g"] = {
+								crit(, {	--
+									["achievementID"] = ,	--
+								}),
+							},
+						}),
+					},
+				}),
+				ach(, {
+					["collectible"] = false,
+					["g"] = {
+						e(, {	--
+							["crs"] = { },	--
+							["g"] = {
+								crit(, {	--
+									["achievementID"] = ,	--
+								}),
+							},
+						}),
+						e(, {	--
+							["crs"] = { },	--
+							["g"] = {
+								crit(, {	--
+									["achievementID"] = ,	--
 								}),
 							},
 						}),
@@ -129,225 +131,225 @@ root("Instances", tier(SL_TIER, {
 			}),
 			d(14, {	-- Normal
 				n(QUESTS, {
-				
+
 				}),
 				n(ZONE_DROPS, {
-					
+
 				}),
-				e(2512, {	-- Solitary Guardian
-					["crs"] = {  },	-- 
+				e(2512, {	-- Vigilant Guardian
+					["crs"] = {  },	--
 					["g"] = {
 						ach(15381),	-- Power ON
-						
+
 					},
 				}),
 				e(2553, {	-- Artificer Xy'mox
-					["crs"] = {  },	-- 
+					["crs"] = {  },	--
 					["g"] = {
-						
+						ach(15398),	-- Those Belong in a Museum!
 					},
 				}),
 				e(2540, {	-- Dausegne, the Fallen Oracle
-					["crs"] = {  },	-- 
+					["crs"] = {  },	--
 					["g"] = {
-						
+						ach(15397),	-- Four Ring Circus
 					},
 				}),
 				e(2544, {	-- Prototype Pantheon
-					["crs"] = {  },	-- 
+					["crs"] = {  },	--
 					["g"] = {
-						
+
 					},
 				}),
 				e(2539, {	-- Lihuvim, Principal Architect
-					["crs"] = {  },	-- 
+					["crs"] = {  },	--
 					["g"] = {
-						
+
 					},
 				}),
 				e(2542, {	-- Skolex, the Insatiable Ravener
-					["crs"] = {  },	-- 
+					["crs"] = {  },	--
 					["g"] = {
-						
+						ach(15401),	-- Wisdom Comes From the Desert
 					},
 				}),
 				e(2529, {	-- Halondrus the Reclaimer
-					["crs"] = {  },	-- 
+					["crs"] = {  },	--
 					["g"] = {
 						ach(15386),	-- Shimmering Secrets
 					},
 				}),
 				e(2546, {	-- Anduin Wrynn
-					["crs"] = {  },	-- 
+					["crs"] = {  },	--
 					["g"] = {
-						
+						ach(15399),	-- Coming to Terms
 					},
 				}),
 				e(2543, {	-- Lords of Dread
-					["crs"] = {  },	-- 
+					["crs"] = {  },	--
 					["g"] = {
 						ach(15315),	-- Amidst Ourselves
-						
+
 					},
 				}),
 				e(2549, {	-- Rygelon
-					["crs"] = {  },	-- 
+					["crs"] = {  },	--
 					["g"] = {
-						
+						ach(15396),	-- We Are All Made of Stars
 					},
 				}),
 				e(2537, {	-- The Jailer
-					["crs"] = {  },	-- 
+					["crs"] = {  },	--
 					["g"] = {
-						
+
 					},
 				}),
 			}),
 			d(15, {	-- Heroic
 				n(QUESTS, {
-				
+
 				}),
 				n(ZONE_DROPS, {
-					
+
 				}),
-				e(2512, {	-- Solitary Guardian
-					["crs"] = {  },	-- 
+				e(2512, {	-- Vigilant Guardian
+					["crs"] = {  },	--
 					["g"] = {
-						
+
 					},
 				}),
 				e(2553, {	-- Artificer Xy'mox
-					["crs"] = {  },	-- 
+					["crs"] = {  },	--
 					["g"] = {
-						
+
 					},
 				}),
 				e(2540, {	-- Dausegne, the Fallen Oracle
-					["crs"] = {  },	-- 
+					["crs"] = {  },	--
 					["g"] = {
-						
+
 					},
 				}),
 				e(2544, {	-- Prototype Pantheon
-					["crs"] = {  },	-- 
+					["crs"] = {  },	--
 					["g"] = {
-						
+
 					},
 				}),
 				e(2539, {	-- Lihuvim, Principal Architect
-					["crs"] = {  },	-- 
+					["crs"] = {  },	--
 					["g"] = {
-						
+
 					},
 				}),
 				e(2542, {	-- Skolex, the Insatiable Ravener
-					["crs"] = {  },	-- 
+					["crs"] = {  },	--
 					["g"] = {
-						
+
 					},
 				}),
 				e(2529, {	-- Halondrus the Reclaimer
-					["crs"] = {  },	-- 
+					["crs"] = {  },	--
 					["g"] = {
-						
+
 					},
 				}),
 				e(2546, {	-- Anduin Wrynn
-					["crs"] = {  },	-- 
+					["crs"] = {  },	--
 					["g"] = {
-						
+
 					},
 				}),
 				e(2543, {	-- Lords of Dread
-					["crs"] = {  },	-- 
+					["crs"] = {  },	--
 					["g"] = {
-						
+
 					},
 				}),
 				e(2549, {	-- Rygelon
-					["crs"] = {  },	-- 
+					["crs"] = {  },	--
 					["g"] = {
-						
+
 					},
 				}),
 				e(2537, {	-- The Jailer
-					["crs"] = {  },	-- 
+					["crs"] = {  },	--
 					["g"] = {
-						
+
 					},
 				}),
 			}),
 			d(16, {	-- Mythic
 				n(QUESTS, {
-				
+
 				}),
 				n(ZONE_DROPS, {
-					
+
 				}),
-				e(2512, {	-- Solitary Guardian
-					["crs"] = {  },	-- 
+				e(2512, {	-- Vigilant Guardian
+					["crs"] = {  },	--
 					["g"] = {
-						
+
 					},
 				}),
 				e(2553, {	-- Artificer Xy'mox
-					["crs"] = {  },	-- 
+					["crs"] = {  },	--
 					["g"] = {
-						
+
 					},
 				}),
 				e(2540, {	-- Dausegne, the Fallen Oracle
-					["crs"] = {  },	-- 
+					["crs"] = {  },	--
 					["g"] = {
-						
+
 					},
 				}),
 				e(2544, {	-- Prototype Pantheon
-					["crs"] = {  },	-- 
+					["crs"] = {  },	--
 					["g"] = {
-						
+
 					},
 				}),
 				e(2539, {	-- Lihuvim, Principal Architect
-					["crs"] = {  },	-- 
+					["crs"] = {  },	--
 					["g"] = {
-						
+
 					},
 				}),
 				e(2542, {	-- Skolex, the Insatiable Ravener
-					["crs"] = {  },	-- 
+					["crs"] = {  },	--
 					["g"] = {
-						
+
 					},
 				}),
 				e(2529, {	-- Halondrus the Reclaimer
-					["crs"] = {  },	-- 
+					["crs"] = {  },	--
 					["g"] = {
-						
+
 					},
 				}),
 				e(2546, {	-- Anduin Wrynn
-					["crs"] = {  },	-- 
+					["crs"] = {  },	--
 					["g"] = {
-						
+
 					},
 				}),
 				e(2543, {	-- Lords of Dread
-					["crs"] = {  },	-- 
+					["crs"] = {  },	--
 					["g"] = {
-						
+
 					},
 				}),
 				e(2549, {	-- Rygelon
-					["crs"] = {  },	-- 
+					["crs"] = {  },	--
 					["g"] = {
-						
+
 					},
 				}),
 				e(2537, {	-- The Jailer
-					["crs"] = {  },	-- 
+					["crs"] = {  },	--
 					["g"] = {
-						
+
 					},
 				}),
 			}),

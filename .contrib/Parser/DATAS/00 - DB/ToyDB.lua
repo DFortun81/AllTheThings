@@ -796,5 +796,6 @@ i(187959);	-- PH - Banner of the Opportune
 -- PATCH 9.2.0 --
 -----------------
 i(188952);	-- Dominated Hearthstone
+i(187860);	-- Mortis Mover
 i(187793);	-- Personal Containment Trap
 end)();

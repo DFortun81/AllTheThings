@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
---[[
+
 root("Zones", m(SHADOWLANDS, {
 	m(ZERETH_MORTIS, {
 		n(EMISSARY_QUESTS, {
@@ -10,4 +10,3 @@ root("Zones", m(SHADOWLANDS, {
 		}),
 	}),
 }));
---]]

@@ -12,6 +12,7 @@ root("Toys", n(ACHIEVEMENTS,  {
 	i(163697),				-- Laser Pointer
 	i(184508),				-- Mawsworn Pet Leash
 	petbattle(i(174871)),	-- Mayhem Mind Melder
+	i(187860),				-- Mortis Mover
 	i(143660),				-- Mrgrglhjorn
 	i(86596),				-- Nat's Fishing Chair
 	i(187793),				-- Personal Containment Trap

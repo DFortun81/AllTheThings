@@ -104,5 +104,10 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 		ach(15381),	-- Power ON
 		ach(15386),	-- Shimmering Secrets
 		ach(15315),	-- Amidst Ourselves
+		ach(15400),	-- Where the Wild Beasts Are
+		ach(15398),	-- Those Belong in a Museum!
+		ach(15401),	-- Wisdom Comes From the Desert
+		ach(15399),	-- Coming to Terms
+		ach(15396),	-- We Are All Made of Stars
 	}),
 }));
