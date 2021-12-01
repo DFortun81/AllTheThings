@@ -73,7 +73,7 @@ _.Instances = { tier(SL_TIER, {
 				["isRaid"] = true,
 				--["coord"] = { , ,  },
 				["maps"] = { 1543, 1820, 1821, 1822, 1823 },	-- all maps in the Maw
-				["cr"] = 178958,	-- Mor'geth <Tormentor of the Damned>
+				["creatureID"] = 178958,	-- Mor'geth <Tormentor of the Damned>
 				["g"] = bubbleDown({ ["modID"] = 3 }, {
 					i(187507),	-- Adaptive Armor Fragment
 					i(187506),	-- Condensed Anima Sphere
@@ -94,7 +94,7 @@ _.Instances = { tier(SL_TIER, {
 				["questID"] = 61816,	-- Mortanis (WQ)
 				["isRaid"] = true,
 				["coord"] = { 32.1, 67.3, MALDRAXXUS },
-				["cr"] = 167525,	-- Mortanis
+				["creatureID"] = 167525,	-- Mortanis
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(183341),	-- Memory of a Guile Charm
 					i(183386),	-- Memory of Fujieda
@@ -112,7 +112,7 @@ _.Instances = { tier(SL_TIER, {
 				["questID"] = 61814,	-- Nurgash Muckformed (WQ)
 				["isRaid"] = true,
 				["coord"] = { 27.2, 14.9, REVENDRETH },
-				["cr"] = 167526,	-- Nurgash Muckformed
+				["creatureID"] = 167526,	-- Nurgash Muckformed
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(182638),	-- Memory of a Frenzied Monstrosity
 					i(183215),	-- Memory of an Erratic Fel Core
@@ -130,7 +130,7 @@ _.Instances = { tier(SL_TIER, {
 				["questID"] = 61815,	-- Oranomonos the Everbranching (WQ)
 				["isRaid"] = true,
 				["coord"] = { 20.2, 63.6, ARDENWEALD },
-				["cr"] = 167527,	-- Oranomonos the Everbranching
+				["creatureID"] = 167527,	-- Oranomonos the Everbranching
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(183274),	-- Memory of a Fevered Incantation
 					i(183261),	-- Memory of Surging Shots
@@ -148,7 +148,7 @@ _.Instances = { tier(SL_TIER, {
 				["questID"] = 61813,	-- Valinor, the Light of Eons (WQ)
 				["isRaid"] = true,
 				["coord"] = { 26.3, 22.4, BASTION },
-				["cr"] = 167524,	-- Valinor, the Light of Eons
+				["creatureID"] = 167524,	-- Valinor, the Light of Eons
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(183325),	-- Memory of Archbishop Benedictus
 					i(183311),	-- Memory of the Final Verdict

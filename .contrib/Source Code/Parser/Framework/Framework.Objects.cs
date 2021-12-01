@@ -78,6 +78,11 @@ namespace ATT
             };
 
             /// <summary>
+            /// Allows capturing various objects which should be merged-into the sub-content of another object
+            /// </summary>
+            public static IDictionary<string, Dictionary<object, List<Dictionary<string, object>>>> PostProcessMergeIntos { get; } = new Dictionary<string, Dictionary<object, List<Dictionary<string, object>>>>();
+
+            /// <summary>
             /// All of the SourceID's harvested for Legion Artifacts
             /// </summary>
             public static IDictionary<long, Dictionary<string, long>> ArtifactSources { get; } = new Dictionary<long, Dictionary<string, long>>();
@@ -479,6 +484,50 @@ namespace ATT
                             foreach (string field in MergeObjectFields[key])
                                 if (merged.TryGetValue(field, out object val))
                                     data[field] = val;
+                        }
+                    }
+                }
+            }
+
+            /// <summary>
+            /// Stores a given data to be merged later under the respective key/keyValue objects identified on the 2nd processing pass
+            /// </summary>
+            /// <param name="key"></param>
+            /// <param name="keyValue"></param>
+            /// <param name="data"></param>
+            internal static void PostProcessMerge(string key, object keyValue, Dictionary<string, object> data)
+            {
+                if (!PostProcessMergeIntos.TryGetValue(key, out Dictionary<object, List<Dictionary<string, object>>> typeObjects))
+                    PostProcessMergeIntos[key] = typeObjects = new Dictionary<object, List<Dictionary<string, object>>>();
+
+                if (!typeObjects.TryGetValue(keyValue, out List<Dictionary<string, object>> mergeObjects))
+                    typeObjects[keyValue] = mergeObjects = new List<Dictionary<string, object>>();
+
+                mergeObjects.Add(data);
+            }
+
+            /// <summary>
+            /// Merges a given set of objects based on the key name and key value from the common storage into the Source object
+            /// </summary>
+            /// <param name="v"></param>
+            /// <param name="data"></param>
+            internal static void PostProcessMergeInto(Dictionary<string, object> data)
+            {
+                // questID : { 123, [ obj1, obj2, obj3 ] }
+                // questID:123 
+                // get the appropriate merge objects for this data based on the matching keys
+                foreach (string key in PostProcessMergeIntos.Keys)
+                {
+                    // does this data contain the key?
+                    if (data.TryGetValue(key, out object keyValue))
+                    {
+                        // get the container for objects of this key
+                        if (PostProcessMergeIntos.TryGetValue(key, out Dictionary<object, List<Dictionary<string, object>>> typeObjects) && typeObjects.TryGetValue(keyValue, out List<Dictionary<string, object>> mergeObjects))
+                        {
+                            // merge the objects into the data object
+                            foreach (Dictionary<string, object> mergeObject in mergeObjects)
+                                // copy the actual object when merging under another Source, since it may merge into multiple Sources
+                                Merge(data, "g", new Dictionary<string, object>(mergeObject));
                         }
                     }
                 }
@@ -1424,6 +1473,10 @@ namespace ATT
                             {
                                 Merge(groups, list);
                             }
+                            else if (value is Dictionary<string, object> data)
+                            {
+                                Merge(groups, data);
+                            }
                             else
                             {
                                 Trace.WriteLine(ToJSON(value));
@@ -2321,21 +2374,6 @@ namespace ATT
                 //    PreMerge(entry, npc);
                 //    Merge(entry, npc);
                 //}
-            }
-
-            private static bool IsImportantQuestListing(Dictionary<string, object> quest)
-            {
-                return
-                    // not tied to an Item
-                    !quest.ContainsKey("itemID") &&
-                    // not repeatable
-                    //!quest.ContainsKey("repeatable") &&
-                    //!quest.ContainsKey("isDaily") &&
-                    //!quest.ContainsKey("isWeekly") &&
-                    //!quest.ContainsKey("isMonthly") &&
-                    //!quest.ContainsKey("isYearly") &&
-                    // not unobtainable
-                    (!quest.ContainsKey("u") || Convert.ToInt64(quest["u"]) > 3);
             }
 
             /// <summary>

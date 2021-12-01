@@ -8,10 +8,11 @@ _.Zones =
 		m(LEGION_DALARAN, {
 			n(-213, {	-- The Underbelly
 				n(ACHIEVEMENTS, {
-					currency(1149, {	-- Sightless Eyes
-						ach(11066, {	-- Underbelly Tycoon
+					ach(11066, {	-- Underbelly Tycoon
+						["cost"] = { { "c", 1149, 20000 } },	-- 20,000x Sightless Eyes
+						["g"] = {
 							i(138387),	-- Ratstallion (MOUNT!)
-						}),
+						},
 					}),
 				}),
 				petbattle(filter(BATTLE_PETS, {

@@ -1,69 +1,73 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+local WISPS_OF_MEMORY = i(186472, {	-- Wisps of Memory
+	["description"] = "Rewarded at 52, 67 and 76 Renown.",
+});
 
-_.ExpansionFeatures =
-{
-	tier(SL_TIER, {
-		n(VENTHYR, {
+root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_VEN" }, {
+	n(VENTHYR, {
+		n(RENOWN, {
+			["description"] = "These are rewards automatically granted by reaching a specific level of Renown.",
 			["g"] = {
-				n(-902, {	-- Renown
-					["description"] = "These are rewards automatically granted by reaching a specific level of Renown.",
-					["g"] = bubbleDown( { ["customCollect"] = "SL_COV_VEN" }, {	-- Venthyr
-						i(182332,  {	-- Gravestone Battle Gargon (MOUNT!)
-							["description"] = "Requires Renown 39.",
-						}),
-						i(186476,  {	-- Sinfall Gravewing (MOUNT!)
-							["description"] = "Requires Renown 45.",
-						}),
-						title_gendered(429, 430, {	-- Count / Countess
-							["description"] = "Requires Renown 40.",
-						}),
-						title(444, {	-- Sin Eater
-							["description"] = "Requires Renown 80.",
-						}),
-						i(186507,  {	-- Harvester's Court Attire
-							["description"] = "Requires Renown 60.",
-							["g"] = {
-								i(185064),	-- Harvester's Court Cloak
-								i(185059),	-- Harvester's Court Handwraps
-								i(185060),	-- Harvester's Court Hood
-								i(185061),	-- Harvester's Court Leggings
-								i(185062),	-- Harvester's Court Sash
-								i(185058),	-- Harvester's Court Slippers
-								i(185057),	-- Harvester's Court Vestments
-								i(185063),	-- Harvester's Court Wraps
-							},
-						}),
-						i(186580,  {	-- A Tiny Sinstone
-							["description"] = "Requires Renown 56.",
-							["questID"] = 64132,
-						}),
-						n(LEGENDARIES, {
-							["description"] = "Requires Renown 48.",
-							["g"] = {
-								i(186567),	-- Memory of Insatiable Hunger
-								i(187105),	-- Memory of the Agonizing Gaze
-								i(186609),	-- Memory of Sinful Hysteria
-								i(187232),	-- Memory of the Pouch of Razor Fragments
-								i(186635),	-- Memory of Sinful Delight
-								i(187277),	-- Memory of Sinister Teachings
-								i(187127),	-- Memory of Radiant Embers
-								i(187162),	-- Memory of Shadow Word: Manipulation
-								i(186710),	-- Memory of the Obedient
-								i(187224),	-- Memory of the Elemental Conduit
-								i(187228),	-- Memory of the Contained Perpetual Explosion
-								i(186572),	-- Memory of the Sinful Surge
-							},
-						}),
-					}),
+				i(182332,  {	-- Gravestone Battle Gargon (MOUNT!)
+					["description"] = "Requires Renown 39.",
+				}),
+				i(186476,  {	-- Sinfall Gravewing (MOUNT!)
+					["description"] = "Requires Renown 45.",
+				}),
+				title_gendered(429, 430, {	-- Count / Countess (TITLE!)
+					["description"] = "Requires Renown 40.",
+				}),
+				title(444, {	-- Sin Eater (TITLE!)
+					["description"] = "Requires Renown 80.",
+				}),
+				i(186507,  {	-- Harvester's Court Attire
+					["description"] = "Requires Renown 60.",
+					["g"] = {
+						i(185064),	-- Harvester's Court Cloak
+						i(185059),	-- Harvester's Court Handwraps
+						i(185060),	-- Harvester's Court Hood
+						i(185061),	-- Harvester's Court Leggings
+						i(185062),	-- Harvester's Court Sash
+						i(185058),	-- Harvester's Court Slippers
+						i(185057),	-- Harvester's Court Vestments
+						i(185063),	-- Harvester's Court Wraps
+					},
+				}),
+				i(186580,  {	-- A Tiny Sinstone (PEPE!)
+					["description"] = "Requires Renown 56.",
+					["questID"] = 64132,
+				}),
+				i(188003, {	-- Crate of Revendreth Reserve
+					["description"] = "Rewarded at 15 and 24 Renown.",
+				}),
+				WISPS_OF_MEMORY,
+				n(LEGENDARIES, {
+					["description"] = "Requires Renown 48.",
+					["g"] = {
+						i(186567),	-- Memory of Insatiable Hunger
+						i(187105),	-- Memory of the Agonizing Gaze
+						i(186609),	-- Memory of Sinful Hysteria
+						i(187232),	-- Memory of the Pouch of Razor Fragments
+						i(186635),	-- Memory of Sinful Delight
+						i(187277),	-- Memory of Sinister Teachings
+						i(187127),	-- Memory of Radiant Embers
+						i(187162),	-- Memory of Shadow Word: Manipulation
+						i(186710),	-- Memory of the Obedient
+						i(187224),	-- Memory of the Elemental Conduit
+						i(187228),	-- Memory of the Contained Perpetual Explosion
+						i(186572),	-- Memory of the Sinful Surge
+					},
 				}),
 			},
 		}),
 	}),
-};
+})));
 
-_.HiddenQuestTriggers = {
+WISPS_OF_MEMORY.customCollect = nil;
+
+root("HiddenQuestTriggers", {
 	q(62750),	-- hitting Renown 19
 	q(62751),	-- hitting Renown 35
 	q(62925),	-- hitting Renown 39
@@ -95,4 +99,4 @@ _.HiddenQuestTriggers = {
 	-- 9.1.5 New HQTS
 	q(65113),	-- hitting Renown 15 (Anima instead of Soulkeeper Upgrade)
 	q(65114),	-- hitting Renown 24 (Anima instead of Soulkeeper Upgrade)
-};
+});

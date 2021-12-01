@@ -27,7 +27,7 @@ _.Instances = { tier(LEGION_TIER, {
 					691,	-- Nyell's Workshop
 					798,	-- The Arcway
 				},
-				["cr"] = 109943,	-- Ana-Mouz
+				["creatureID"] = 109943,	-- Ana-Mouz
 				["g"] = {
 					crit(5, {	-- Ana-Mouz
 						["achievementID"] = 11160,	-- Unleashed Monstrosities
@@ -47,7 +47,7 @@ _.Instances = { tier(LEGION_TIER, {
 				["questID"] = 47061,	-- Apocron (WQ)
 				["isRaid"] = true,
 				["coord"] = { 59.2, 62.6, BROKEN_SHORE },
-				["cr"] = 121124,	-- Apocron
+				["creatureID"] = 121124,	-- Apocron
 				["g"] = {
 					crit(4, {	-- Apocron
 						["achievementID"] = 11786,	-- Terrors of the Shore
@@ -67,7 +67,7 @@ _.Instances = { tier(LEGION_TIER, {
 				["questID"] = 46947,	-- Brutallus (WQ)
 				["isRaid"] = true,
 				["coord"] = { 59.2, 28.4, BROKEN_SHORE },
-				["cr"] = 117239,	-- Brutallus
+				["creatureID"] = 117239,	-- Brutallus
 				["g"] = {
 					crit(1, {	-- Brutallus
 						["achievementID"] = 11786,	-- Terrors of the Shore
@@ -88,7 +88,7 @@ _.Instances = { tier(LEGION_TIER, {
 				["questID"] = 43193,	-- Calamitous Intent (WQ)
 				["isRaid"] = true,
 				["coord"] = { 37.7, 83.6, AZSUNA },
-				["cr"] = 109331,	-- Calamir
+				["creatureID"] = 109331,	-- Calamir
 				["g"] = {
 					crit(9, {	-- Calamir
 						["achievementID"] = 11160,	-- Unleashed Monstrosities
@@ -124,7 +124,7 @@ _.Instances = { tier(LEGION_TIER, {
 					869,	-- Highmountain (Legion Invasion Ship 1)
 					870,	-- Highmountain (Legion Invasion Ship 2)
 				},
-				["cr"] = 110378,	-- Drugon the Frostblood
+				["creatureID"] = 110378,	-- Drugon the Frostblood
 				["g"] = {
 					crit(7, {	-- Drugon the Frostblood
 						["achievementID"] = 11160,	-- Unleashed Monstrosities
@@ -160,7 +160,7 @@ _.Instances = { tier(LEGION_TIER, {
 					869,	-- Highmountain (Legion Invasion Ship 1)
 					870,	-- Highmountain (Legion Invasion Ship 2)
 				},
-				["cr"] = 99929,	-- Flotsam
+				["creatureID"] = 99929,	-- Flotsam
 				["g"] = {
 					crit(4, {	-- Flotsam
 						["achievementID"] = 11160,	-- Unleashed Monstrosities
@@ -189,7 +189,7 @@ _.Instances = { tier(LEGION_TIER, {
 					758,	-- Gloaming Reef
 					868,	-- Val'sharah (Legion Invasion)
 				},
-				["cr"] = 108879,	-- Humongris
+				["creatureID"] = 108879,	-- Humongris
 				["g"] = {
 					crit(3, {	-- Humongris
 						["achievementID"] = 11160,	-- Unleashed Monstrosities
@@ -220,7 +220,7 @@ _.Instances = { tier(LEGION_TIER, {
 					633,	-- Temple of a Thousand Lights
 					867,	-- Azsuna Invasion Map
 				},
-				["cr"] = 108829,	-- Levantus
+				["creatureID"] = 108829,	-- Levantus
 				["g"] = {
 					crit(6, {	-- Levantus
 						["achievementID"] = 11160,	-- Unleashed Monstrosities
@@ -243,7 +243,7 @@ _.Instances = { tier(LEGION_TIER, {
 				["questID"] = 46948,	-- Malificus (WQ)
 				["isRaid"] = true,
 				["coord"] = { 59.8, 27.8, BROKEN_SHORE },
-				["cr"] = 117303,	-- Malificus
+				["creatureID"] = 117303,	-- Malificus
 				["g"] = {
 					crit(2, {	-- Malificus
 						["achievementID"] = 11786,	-- Terrors of the Shore
@@ -279,7 +279,7 @@ _.Instances = { tier(LEGION_TIER, {
 					691,	-- Nyell's Workshop
 					798,	-- The Arcway
 				},
-				["cr"] = 110321,	-- Na'zak the Fiend
+				["creatureID"] = 110321,	-- Na'zak the Fiend
 				["g"] = {
 					crit(1, {	-- Na'zak the Fiend
 						["achievementID"] = 11160,	-- Unleashed Monstrosities
@@ -313,7 +313,7 @@ _.Instances = { tier(LEGION_TIER, {
 					866,	-- Stormheim (Legion Invasion)
 					877,	-- Fields of the Eternal Hunt
 				},
-				["cr"] = 107544,	-- Nithogg
+				["creatureID"] = 107544,	-- Nithogg
 				["g"] = {
 					crit(2, {	-- Nithogg
 						["achievementID"] = 11160,	-- Unleashed Monstrosities
@@ -341,7 +341,7 @@ _.Instances = { tier(LEGION_TIER, {
 					758,	-- Gloaming Reef
 					868,	-- Val'sharah (Legion Invasion)
 				},
-				["cr"] = 108678,	-- Shar'thos
+				["creatureID"] = 108678,	-- Shar'thos
 				["g"] = {
 					crit(10, {	-- Shar'thos
 						["achievementID"] = 11160,	-- Unleashed Monstrosities
@@ -361,7 +361,7 @@ _.Instances = { tier(LEGION_TIER, {
 				["questID"] = 46945,	-- Si'vash (WQ)
 				["isRaid"] = true,
 				["coord"] = { 89.6, 33.0, BROKEN_SHORE },
-				["cr"] = 117470,	-- Si'vash
+				["creatureID"] = 117470,	-- Si'vash
 				["g"] = {
 					crit(3, {	-- Si'vash
 						["achievementID"] = 11786,	-- Terrors of the Shore
@@ -428,7 +428,7 @@ _.Instances = { tier(LEGION_TIER, {
 					633,	-- Temple of a Thousand Lights
 					867,	-- Azsuna Invasion Map
 				},
-				["cr"] = 112350,	-- Withered J'im
+				["creatureID"] = 112350,	-- Withered J'im
 				["g"] = {
 					crit(11, {	-- Withered J'im
 						["achievementID"] = 11160,	-- Unleashed Monstrosities

@@ -29,7 +29,7 @@ _.Instances = { tier(WOD_TIER, {
 					["g"] = {
 						i(110055),	-- Gutwrench Goreaxe
 						i(110002),	-- Fleshrender's Meathook
-						n(-355, bubbleDown({["bonusID"] = 4746 }, {	-- Warforged
+						n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
 							i(110055),	-- Gutwrench Goreaxe
 							i(110002),	-- Fleshrender's Meathook
 						})),
@@ -48,7 +48,7 @@ _.Instances = { tier(WOD_TIER, {
 					["g"] = {
 						i(110056),	-- Black Iron Sniper Rifle
 						i(110017),	-- Enforcer's Stun Grenade
-						n(-355, bubbleDown({["bonusID"] = 4746 }, {	-- Warforged
+						n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
 							i(110056),	-- Black Iron Sniper Rifle
 							i(110017),	-- Enforcer's Stun Grenade
 						})),
@@ -63,7 +63,7 @@ _.Instances = { tier(WOD_TIER, {
 					["g"] = {
 						i(110057),	-- Mindbreaker Scepter
 						i(109997),	-- Kihra's Adrenaline Injector
-						n(-355, bubbleDown({["bonusID"] = 4746 }, {	-- Warforged
+						n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
 							i(110057),	-- Mindbreaker Scepter
 							i(109997),	-- Kihra's Adrenaline Injector
 						})),
@@ -85,7 +85,7 @@ _.Instances = { tier(WOD_TIER, {
 						i(110059),	-- Chasmwrench Docking Hook
 						i(110058),	-- Bloodied Hand of Woe
 						i(110060),	-- Painbringer's Crystal
-						n(-355, bubbleDown({["bonusID"] = 4746 }, {	-- Warforged
+						n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
 							i(110059),	-- Chasmwrench Docking Hook
 							i(110058),	-- Bloodied Hand of Woe
 							i(110060),	-- Painbringer's Crystal

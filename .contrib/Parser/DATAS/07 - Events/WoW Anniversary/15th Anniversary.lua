@@ -678,7 +678,7 @@ root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 				}),
 				tier(TBC_TIER, {
 					e(1572, {	-- Lady Vashj
-						["cr"] = 21212,	-- Lady Vashj
+						["creatureID"] = 21212,	-- Lady Vashj
 						["g"] = {
 							-- Old Token Items
 							i(171912),	-- Crystalforge Faceguard
@@ -715,7 +715,7 @@ root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 						},
 					}),
 					e(1576, {	-- Kael'thas Sunstrider
-						["cr"] = 19622,	-- Kael'thas Sunstrider
+						["creatureID"] = 19622,	-- Kael'thas Sunstrider
 						["g"] = {
 							-- Old Token Items
 							i(171902),	-- Cataclysm Chestguard
@@ -753,7 +753,7 @@ root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 						},
 					}),
 					e(1581, {	-- Archimonde
-						["cr"] = 17968,	-- Archimonde
+						["creatureID"] = 17968,	-- Archimonde
 						["g"] = {
 							--	ach(695),	-- The Battle for Mount Hyjal
 							-- Old Token Items
@@ -793,7 +793,7 @@ root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 				}),
 				tier(WOTLK_TIER, {
 					e(1605, {	-- Heigan the Unclean
-						["cr"] = 15936,	-- Heigan the Unclean
+						["creatureID"] = 15936,	-- Heigan the Unclean
 						["g"] = {
 							i(171618),	-- Amulet of Autopsy
 							i(171515),	-- Bindings of the Decrepit
@@ -822,7 +822,7 @@ root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 						},
 					}),
 					e(1623, {	-- Anub'arak
-						["cr"] = 34564,	-- Anub'arak
+						["creatureID"] = 34564,	-- Anub'arak
 						["g"] = {
 							i(171615, {	-- Aegis of the Coliseum
 								["races"] = HORDE_ONLY,
@@ -1050,7 +1050,7 @@ root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 						},
 					}),
 					e(1636, {	-- The Lich King
-						["cr"] = 36597,	-- The Lich King
+						["creatureID"] = 36597,	-- The Lich King
 						["g"] = {
 							i(172021),	-- Marks of Sanctification Purse
 							i(171571),	-- Archus, Greatstaff of Antonidas
@@ -1082,7 +1082,7 @@ root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 				}),
 				tier(CATA_TIER,  {
 					e(167, {	-- Cho'gall
-						["cr"] = 43324,
+						["creatureID"] = 43324,
 						["g"] = {
 							-- Old tier Items
 							i(171856),	-- Shadowflame Mantle
@@ -1164,7 +1164,7 @@ root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 						},
 					}),
 					e(198, {	-- Ragnaros
-						["cr"] = 52409,
+						["creatureID"] = 52409,
 						["g"] = {
 							i(69224),	-- Smoldering Egg of Millagazor (MOUNT!)
 							i(171804),	-- Balespider's Hood

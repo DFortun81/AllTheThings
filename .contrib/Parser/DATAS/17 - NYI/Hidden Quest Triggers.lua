@@ -43,6 +43,7 @@ _.HiddenQuestTriggers = {
 		q(38995),	-- Unused
 		q(39749),	-- Tracking Quest (triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands)
 		q(39748),	-- Tracking Quest (triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands)
+					-- Unflagged/flagged on a lvl 1 Bank alt when logging in lol
 		q(48671),	-- Lockout Tracking - Normal - Fire
 		q(48674),	-- Lockout Tracking - Normal - Islands. Possibly used in multiple situations
 		q(48676),	-- Lockout Tracking - Normal - Forest.
@@ -1620,7 +1621,7 @@ _.HiddenQuestTriggers = {
 		q(34024),	-- Tracking Quest. This completes when you kill the Windfang Matriarch after helping Romuul.
 		q(33786),	-- ??????. This was completed around Fiona's caravan in Shadowmoon Valley - Draenor (not entirely sure what triggered it.)
 		q(52969),	-- Going through the Stormwind Portal to Stormshield while on the WoD timeline in Chromie time
-		--q(39709),	-- Unknown tracking quest
+		q(39709),	-- Opening some salvage crates, reflags on fresh character
 
 		-------------------
 		--    Legion     --
@@ -1806,7 +1807,7 @@ _.HiddenQuestTriggers = {
 		q(38894),	-- Generic Order Hall - Founded the order hall
 		q(43837),	-- Generic Order Hall - Tutorial - combat ally unlocked
 		q(44296),	-- Generic Order Hall - Triggers after recruiting your first follower(s)
-		q(43900),	-- Generic Order Hall - Tracking Quest: All - Troop A Enabled
+		q(43900),	-- Generic Order Hall - Tracking Quest: All - Troop A Enabled (Completed First Tutorial Mission)
 		q(43901),	-- Generic Order Hall - Tracking Quest: All - Troop B Enabled
 		q(43433),	-- Generic Order Hall - Tracking Quest: Tutorial - Troops Built
 		q(42115),	-- Generic Order Hall - Tracking Quest: Chapter 1 completed - Triggers when you complete the quest that gets your first order hall upgrade
@@ -3653,7 +3654,6 @@ _.HiddenQuestTriggers = {
 		q(62517),	-- triggered when Ember Court ended, Week 6 (Droman Aliothe and Sika as guests and they were elated)
 		q(62528),	-- triggered when Ember Court Ended, i give up on tracking weeks, but had Kleia+Pelagos and Cryptkeeper Kassir as guests and they were Elated.  no previous K+P/Cryptkeeper quests triggered
 		q(62508),	-- Ember Court End - (Alexandros Mograine:Elated / Droman Aliothe: Uncomfortable / Sika: Elated - got Alexandros Mograine criteria for People Pleaser + Be Our Guest, possibly that, since i'd done ECs with the other 2 before)
-		q(62520),	-- Ember Court End - (Alexandros Mograine:Elated / Droman Aliothe: Uncomfortable / Sika: Elated - got Alexandros Mograine criteria for People Pleaser + Be Our Guest, possibly that, since i'd done ECs with the other 2 before)
 		q(62490),	-- Ember Court End - (Droman Aliothe:Elated / Cryptkeeper Kassir:Elated / Polemarch Adrestes:Elated / The Countess:Elated)
 		q(62491),	-- Ember Court End - (Choofa:Elated / Alexander Mograine:Miserable / Grandmaster Vole:Elated)
 		q(62495),	-- Ember Court End - (Choofa:Elated / Alexander Mograine:Miserable / Grandmaster Vole:Elated)

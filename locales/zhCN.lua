@@ -183,7 +183,7 @@ local L = app.L;
 	L.CHANGE_SEARCH_FILTER = "更改搜索过滤";
 	L.CHANGE_SEARCH_FILTER_DESC = "单击此按钮可更改搜索过滤.";
 	--TODO: L.REROLL_2 = "Reroll: ";
-	L.NOTHING_TO_SELECT_FROM = "没有什么可以随意选择的.";
+	L.NOTHING_TO_SELECT_FROM = "没有什么可以随意选择的. If 'Ad-Hoc Updates' is enabled in Settings, the Main list must be updated (/att) before using this window.";	-- TODO:
 	L.NO_SEARCH_METHOD = "未指定搜索方法.";
 	L.PROFESSION_LIST = "专业列表";
 	L.PROFESSION_LIST_DESC = "打开你的专业来缓存它们.";
@@ -652,8 +652,6 @@ for key,value in pairs({
 		[103] = "幻象";												-- Illusions
 		--TODO: [107] = "Vignettes";
 		[108] = "乐谱";												-- Music Rolls
-		[110] = "头衔";												-- Titles
-		[114] = "坐骑装备";											-- Mount Equipment
 
 	[999] = "事件物品";												-- Event Item
 })
@@ -680,11 +678,6 @@ for key,value in pairs({
 		--TODO: [-26] = "Drops",									-- Drops
 		[-40] = "绝版",												-- Legacy
 		--TODO: [-41] = "Cache of Madness",
-	-- Armor Types
-		[-43] = GetItemSubClassInfo(4,1),							-- Cloth 布甲
-		[-44] = GetItemSubClassInfo(4,2),							-- Leather 皮甲
-		[-45] = GetItemSubClassInfo(4,3),							-- Mail 锁甲
-		[-46] = GetItemSubClassInfo(4,4),							-- Plate 板甲
 	-- World Events
 		[-50] = "情人节",											-- Love is in the Air
 		[-53] = "仲夏火焰节",										-- Midsummer Fire Festival
@@ -840,16 +833,11 @@ for key,value in pairs({
 		[-913] = "托加斯特的折磨者",										-- Tormentors of Torghast
 		--TODO: [-914] = "Adventures",								-- Adventures
 		[-915] = "心能导流器",										-- Anima Conductor
-		[-916] = string.format(COVENANT_SANCTUM_TIER, 1)..": 流动卷须",	-- Tier 1: Flowing Tendrils
-		[-917] = string.format(COVENANT_SANCTUM_TIER, 2)..": 涌动丝缕",-- Tier 2: Streaming Threads
-		[-918] = string.format(COVENANT_SANCTUM_TIER, 3)..": 流动能量",	-- Tier 3: Flowing Power
 		[-977] = "游荡者梅莉",											-- Maelie the Wanderer
 		[-979] = "掮灵威·肯 & 掮灵威·诺特",									-- Broker Ve'ken & Broker Ve'nott
 		-- SL Maldraxxus/Necrolord
 			[-921] = "圣所升级",										-- Sanctum Upgrades (Necrolord)
 			[-924] = "传送网络",										-- Transport Network (Necrolord)
-			[-925] = string.format(COVENANT_SANCTUM_TIER, 1)..": 建造伙伴",	-- Abomination Factory (Necrolord) Tier 1
-			[-926] = string.format(COVENANT_SANCTUM_TIER, 2)..": 打造肢体",	-- Abomination Factory (Necrolord) Tier 2
 			[-927] = string.format(COVENANT_SANCTUM_TIER, 3)..": 给予生命",	-- Abomination Factory (Necrolord) Tier 3
 			[-928] = string.format(COVENANT_SANCTUM_TIER, 4)..": 铸就友谊",	-- Abomination Factory (Necrolord) Tier 4
 			[-938] = string.format(COVENANT_SANCTUM_TIER, 5)..": 永远的好魔友",	-- Abomination Factory (Necrolord) Tier 5
@@ -1001,6 +989,8 @@ for key, value in pairs({
 	[6751] = "奇怪的果树",	-- Strange Fruited Plant	--TODO: This was taken from classic Wowhead
 	[6752] = "奇怪的树木",	-- Strange Fronded Plant	--TODO: This was taken from classic Wowhead
 	[7510] = "发芽的树叶",	-- Sprouted Frond	--TODO: This was taken from classic Wowhead
+	[15084] = "超级清洁器5200型",	-- The Sparklematic 5200	--TODO: This was manually translated
+	[15085] = "超级清洁器5200型",	-- The Sparklematic 5200	--TODO: This was manually translated
 	[19022] = "旧箱子",	-- Worn Chest
 	[19023] = "|cFFFFFFFF第7步:|r 第2351页",	-- |cFFFFFFFFStep 7:|r Page 2351
 	[19024] = "隐蔽的神龛",	-- Hidden Shrine
@@ -1026,7 +1016,12 @@ for key, value in pairs({
 	[142151] = "密封的桶",	-- Sealed Barrel
 	[142195] = "木爪作战地图",	-- Woodpaw Battle Map
 	[142343] = "奥丹姆石座",	-- Uldum Pedestal
+	[142344] = "机械储存柜",	-- Artificial Extrapolator
+	[142345] = "矩阵式打孔计算机3005-A",	-- Matrix Punchograph 3005-A	--TODO: This was taken from classic Wowhead
+	[142475] = "矩阵式打孔计算机3005-B",	-- Matrix Punchograph 3005-B
+	[142476] = "矩阵式打孔计算机3005-C",	-- Matrix Punchograph 3005-C
 	[142487] = "超级清洁器5200型",	-- The Sparklematic 5200
+	[142696] = "矩阵式打孔计算机3005-D",	-- Matrix Punchograph 3005-D
 	[142702] = "毒液瓶",	-- Venom Bottle	--TODO: This was taken from classic Wowhead
 	[144063] = "艾奎尼克斯石碑",	-- Equinex Monolith
 	[148502] = "|cFFFFFFFF第1步:|r 第9页",	-- |cFFFFFFFFStep 1:|r Page 9
@@ -1056,12 +1051,19 @@ for key, value in pairs({
 	[175524] = "神秘的红色水晶",	-- Mysterious Red Crystal	--TODO: This was taken from classic Wowhead
 	[175894] = "詹妮丝的包裹",	-- Janice's Parcel	--TODO: This was taken from classic Wowhead
 	[175926] = "达尔松夫人的日记",	-- Mrs. Dalson's Diary	--TODO: This was taken from classic Wowhead
+	[175965] = "莱斯·霜语的防腐液",	-- Frostwhisper's Embalming Fluid	--TODO: This was taken from classic Wowhead
 	[176090] = "人类遗骸",	-- Human Remains
 	[176091] = "死木蒸锅",	-- Deadwood Cauldron
 	[176115] = "通缉：阿纳克·恐怖图腾",	-- Wanted Poster - Arnak Grimtotem	--TODO: This was taken from classic Wowhead
 	[176361] = "瘟疫之锅",	-- Scourge Cauldron	--TODO: This was taken from classic Wowhead
 	[176392] = "天灾之锅",	-- Scourge Cauldron
 	[176393] = "瘟疫之锅",	-- Scourge Cauldron	--TODO: This was taken from classic Wowhead
+	[176484] = "布瑞尔地契",	-- The Deed to Brill	--TODO: This was taken from classic Wowhead
+	[176485] = "凯尔达隆地契",	-- The Deed to Caer Darrow	--TODO: This was taken from classic Wowhead
+	[176486] = "南海镇地契",	-- The Deed to Southshore	--TODO: This was taken from classic Wowhead
+	[176487] = "塔伦米尔地契",	-- The Deed to Tarren Mill	--TODO: This was taken from classic Wowhead
+	[176544] = "艾瓦·萨克霍夫的遗体",	-- Remains of Eva Sarkhoff	--TODO: This was taken from classic Wowhead
+	[176545] = "卢森·萨克霍夫的遗体",	-- Remains of Lucien Sarkhoff	--TODO: This was taken from classic Wowhead
 	[176631] = "米奈希尔的礼物",	-- Menethil's Gift
 	[177289] = "瘟疫之锅",	-- Scourge Cauldron	--TODO: This was taken from classic Wowhead
 	[177491] = "白蚁桶",	-- Termite Barrel	--TODO: This was taken from classic Wowhead

@@ -32,7 +32,7 @@ _.Instances = { tier(WOD_TIER, {
 						un(REMOVED_FROM_GAME, i(118745)),	-- Painweaver Seal [Only available during pre WoD level 90 version]
 						un(REMOVED_FROM_GAME, i(118746)),	-- Rosewine Loop [Only available during pre WoD level 90 version]
 						un(REMOVED_FROM_GAME, i(118744)),	-- Rune Band of Healing [Only available during pre WoD level 90 version]
-						n(-355, bubbleDown({["bonusID"] = 4746 }, {	-- Warforged
+						n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
 							i(118719),	-- Petrified Willow
 							i(109998),	-- Gor'ashan's Lodestone Spike
 						})),
@@ -52,7 +52,7 @@ _.Instances = { tier(WOD_TIER, {
 						un(REMOVED_FROM_GAME, i(118747)),	-- Grips of Power [Only available during pre WoD level 90 version]
 						un(REMOVED_FROM_GAME, i(118750)),	-- Reiver Gauntlets [Only available during pre WoD level 90 version]
 						un(REMOVED_FROM_GAME, i(118749)),	-- Trueaim Grips [Only available during pre WoD level 90 version]
-						n(-355, bubbleDown({["bonusID"] = 4746 }, {	-- Warforged
+						n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
 							i(118724),	-- Pip's Flenser
 							i(110018),	-- Kyrak's Vileblood Serum
 						})),
@@ -77,7 +77,7 @@ _.Instances = { tier(WOD_TIER, {
 						un(REMOVED_FROM_GAME, i(118754)),	-- Polychromatic Dreamwrap [Only available during pre WoD level 90 version]
 						un(REMOVED_FROM_GAME, i(118758)),	-- Tharbek's Horrific Posessor [Only available during pre WoD level 90 version]
 						un(REMOVED_FROM_GAME, i(118757)),	-- Tharbek's Terrible Charge [Only available during pre WoD level 90 version]
-						n(-355, bubbleDown({["bonusID"] = 4746 }, {	-- Warforged
+						n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
 							i(118726),	-- Tharbek's Brutal Possessor
 							i(118725),	-- Tharbek's Unholy Charge
 							i(110008),	-- Tharbek's Lucky Pebble
@@ -86,7 +86,7 @@ _.Instances = { tier(WOD_TIER, {
 				}),
 				n(77927, {	-- Son of the Beast
 					i(120340),	-- Son of the Beast's Bloody Paw
-					n(-355, bubbleDown({["bonusID"] = 4746 }, {	-- Warforged
+					n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
 						i(120340),	-- Son of the Beast's Bloody Paw
 					})),
 				}),
@@ -99,7 +99,7 @@ _.Instances = { tier(WOD_TIER, {
 					["g"] = {
 						i(118737),	-- Blackhand Doomcutter
 						i(110003),	-- Ragewing's Firefang
-						n(-355, bubbleDown({["bonusID"] = 4746 }, {	-- Warforged
+						n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
 							i(118737),	-- Blackhand Doomcutter
 							i(110003),	-- Ragewing's Firefang
 						})),
@@ -118,7 +118,7 @@ _.Instances = { tier(WOD_TIER, {
 						i(118738),	-- Felshanker
 						i(118739),	-- Draconian Doomshield
 						i(110013),	-- Emberscale Talisman
-						n(-355, bubbleDown({["bonusID"] = 4746 }, {	-- Warforged
+						n(TITANFORGED, bubbleDown({["bonusID"] = 4746 }, {
 							i(118740),	-- Bleakblade of Shahram
 							i(118738),	-- Felshanker
 							i(118739),	-- Draconian Doomshield

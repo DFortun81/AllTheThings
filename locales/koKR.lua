@@ -181,7 +181,7 @@ local L = app.L;
 	--TODO: L.CHANGE_SEARCH_FILTER = "Change Search Filter";
 	--TODO: L.CHANGE_SEARCH_FILTER_DESC = "Click this to change your search filter.";
 	--TODO: L.REROLL_2 = "Reroll: ";
-	--TODO: L.NOTHING_TO_SELECT_FROM = "There was nothing to randomly select from.";
+	--TODO: L.NOTHING_TO_SELECT_FROM = "There was nothing to randomly select from. If 'Ad-Hoc Updates' is enabled in Settings, the Main list must be updated (/att) before using this window.";
 	--TODO: L.NO_SEARCH_METHOD = "No search method specified.";
 	--TODO: L.PROFESSION_LIST = "Profession List";
 	--TODO: L.PROFESSION_LIST_DESC = "Open your professions to cache them.";
@@ -611,9 +611,7 @@ for key,value in pairs({
 
 	-- "Non-Equipment Types"
 		--TODO: [103] = "Illusions";								-- Illusions
-		--TODO: [107] = "Vignettes";
-		--TODO: [110] = "Titles";									-- Titles
-		--TODO: [114] = "Mount Equipment";							-- Mount Equipment
+		--TODO: [107] = "Vignettes";								-- Vignettes
 
 	--TODO: [999] = "Event Item";									-- Event Item
 })
@@ -637,11 +635,6 @@ for key,value in pairs({
 		--TODO: [-23] = "Common Dungeon Drop",						-- WoD Common Dungeon Drop
 		--TODO: [-26] = "Drops",									-- Drops
 		--TODO: [-41] = "Cache of Madness",
-	-- Armor Types
-		--TODO: [-43] = GetItemSubClassInfo(4,1).." "..RESISTANCE0_NAME,-- Cloth
-		--TODO: [-44] = GetItemSubClassInfo(4,2).." "..RESISTANCE0_NAME,-- Leather
-		--TODO: [-45] = GetItemSubClassInfo(4,3).." "..RESISTANCE0_NAME,-- Mail
-		--TODO: [-46] = GetItemSubClassInfo(4,4).." "..RESISTANCE0_NAME,-- Plate
 	-- World Events
 		--TODO: [-53] = "Midsummer Fire Festival",					-- Midsummer Fire Festival
 		--TODO: [-55] = "Pirates' Day",
@@ -788,16 +781,11 @@ for key,value in pairs({
 		--TODO: [-913] = "Tormentors of Torghast",					-- Tormentors of Torghast
 		--TODO: [-914] = "Adventures",								-- Adventures
 		--TODO: [-915] = "Anima Conductor",							-- Anima Conductor
-		[-916] = string.format(COVENANT_SANCTUM_TIER, 1)..": 흐르는 줄기",	-- Tier 1: Flowing Tendrils
-		[-917] = string.format(COVENANT_SANCTUM_TIER, 2)..": 굽이치는 타래",-- Tier 2: Streaming Threads
-		[-918] = string.format(COVENANT_SANCTUM_TIER, 3)..": 흐르는 힘",	-- Tier 3: Flowing Power
 		[-977] = "방랑자 멜리",											-- Maelie the Wanderer
 		[-979] = "중개자 베켄 & 중개자 베노트",								-- Broker Ve'ken & Broker Ve'nott
 		-- SL Maldraxxus/Necrolord
 			--TODO: [-921] = "Sanctum Upgrades",					-- Sanctum Upgrades (Necrolord)
 			--TODO: [-924] = "Transport Network",					-- Transport Network (Necrolord)
-			[-925] = string.format(COVENANT_SANCTUM_TIER, 1)..": 친구 만들기",	-- Abomination Factory (Necrolord) Tier 1
-			[-926] = string.format(COVENANT_SANCTUM_TIER, 2)..": 사지 제작",	-- Abomination Factory (Necrolord) Tier 2
 			[-927] = string.format(COVENANT_SANCTUM_TIER, 3)..": 생명의 탄생",	-- Abomination Factory (Necrolord) Tier 3
 			[-928] = string.format(COVENANT_SANCTUM_TIER, 4)..": 만들어낸 친구",	-- Abomination Factory (Necrolord) Tier 4
 			[-938] = string.format(COVENANT_SANCTUM_TIER, 5)..": 우정은 영원히",	-- Abomination Factory (Necrolord) Tier 5
@@ -949,6 +937,8 @@ for key,value in pairs({
 	[6751] = "이상한 열매의 식물",	-- Strange Fruited Plant
 	[6752] = "이상한 잎의 식물",	-- Strange Fronded Plant	--TODO: This was taken from classic Wowhead
 	[7510] = "싹튼 잎",	-- Sprouted Frond	--TODO: This was taken from classic Wowhead
+	[15084] = "빤질빤질세척기 5200",	-- The Sparklematic 5200	--TODO: This was manually translated
+	[15085] = "빤질빤질세척기 5200",	-- The Sparklematic 5200	--TODO: This was manually translated
 	[19022] = "낡은 궤짝",	-- Worn Chest
 	[19023] = "|cFFFFFFFFStep 7:|r 2351쪽",	-- |cFFFFFFFFStep 7:|r Page 2351
 	[19024] = "숨겨진 제단",	-- Hidden Shrine
@@ -974,7 +964,12 @@ for key,value in pairs({
 	[142151] = "봉인된 통",	-- Sealed Barrel
 	[142195] = "덩굴발 작전도",	-- Woodpaw Battle Map
 	[142343] = "울둠 대좌",	-- Uldum Pedestal
+	[142344] = "인공장치 검출기",	-- Artificial Extrapolator
+	[142345] = "행렬 천공기록기 3005-A",	-- Matrix Punchograph 3005-A	--TODO: This was taken from classic Wowhead
+	[142475] = "행렬 천공기록기 3005-B",	-- Matrix Punchograph 3005-B
+	[142476] = "행렬 천공기록기 3005-C",	-- Matrix Punchograph 3005-C
 	[142487] = "빤질빤질세척기 5200",	-- The Sparklematic 5200
+	[142696] = "행렬 천공기록기 3005-D",	-- Matrix Punchograph 3005-D
 	[142702] = "독약병",	-- Venom Bottle
 	[144063] = "에퀴넥스 비석탑",	-- Equinex Monolith
 	[148502] = "|cFFFFFFFFStep 1:|r 9쪽",	-- |cFFFFFFFFStep 1:|r Page 9
@@ -1004,12 +999,19 @@ for key,value in pairs({
 	[175524] = "신비한 붉은 수정",	-- Mysterious Red Crystal	--TODO: This was taken from classic Wowhead
 	[175894] = "재니스의 소포",	-- Janice's Parcel	--TODO: This was taken from classic Wowhead
 	[175926] = "달슨 부인의 일기",	-- Mrs. Dalson's Diary	--TODO: This was taken from classic Wowhead
+	[175965] = "프로스트위스퍼의 불변의 영액",	-- Frostwhisper's Embalming Fluid
 	[176090] = "인간 해골",	-- Human Remains
 	[176091] = "마른가지 가마솥",	-- Deadwood Cauldron
 	[176115] = "현상 수배: 아르낙 그림토템",	-- Wanted Poster - Arnak Grimtotem
 	[176361] = "스컬지 가마솥",	-- Scourge Cauldron	--TODO: This was taken from classic Wowhead
 	[176392] = "스컬지 가마솥",	-- Scourge Cauldron
 	[176393] = "스컬지 가마솥",	-- Scourge Cauldron	--TODO: This was taken from classic Wowhead
+	[176484] = "브릴 증서",	-- The Deed to Brill
+	[176485] = "카엘 다로우 증서",	-- The Deed to Caer Darrow
+	[176486] = "남녘해안 증서",	-- The Deed to Southshore
+	[176487] = "타렌 제분소 증서",	-- The Deed to Tarren Mill
+	[176544] = "에바 사크호프의 유해",	-- Remains of Eva Sarkhoff
+	[176545] = "루시앙 사크호프의 유해",	-- Remains of Lucien Sarkhoff
 	[176631] = "메네실의 선물",	-- Menethil's Gift
 	[177289] = "스컬지 가마솥",	-- Scourge Cauldron	--TODO: This was taken from classic Wowhead
 	[177491] = "흰개미 통",	-- Termite Barrel	--TODO: This was taken from classic Wowhead

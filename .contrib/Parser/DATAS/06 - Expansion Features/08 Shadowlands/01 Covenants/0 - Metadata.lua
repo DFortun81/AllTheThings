@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	tier(SL_TIER, {
-		n(-900, {	-- Covenant Sanctums
+		n(COVENANT_SANCTUMS, {
 			["icon"] = 3726261, -- Inv_misc_covenant_renown
 			["maps"] = {
 				-- Kyrian

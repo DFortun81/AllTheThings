@@ -437,6 +437,7 @@ _.Zones =
 						crit(7, {	-- Wingflayer the Cruel
 							["achievementID"] = 14307,	-- Adventurer of Bastion
 						}),
+						i(182749),	-- Regurgitated Kyrian Wings
 					},
 				}),
 			}),

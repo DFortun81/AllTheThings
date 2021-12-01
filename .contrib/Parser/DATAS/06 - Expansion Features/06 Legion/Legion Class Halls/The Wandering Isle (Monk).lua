@@ -218,6 +218,11 @@ _.ExpansionFeatures =
 							["classes"] = { MONK },
 							["coord"] = { 38.9, 25.1, THE_JADE_FOREST },
 						}),
+						q(44239, {	-- Echo of a Celestial
+							["provider"] = { "n", 106538 },	-- Tianili
+							["classes"] = { MONK },
+							["coord"] = { 54.4, 58.8, 709 },	-- The Wandering Isle
+						}),
 						q(45574, {	-- Fel Ingredients
 							["sourceQuests"] = { 45459 },	-- Storming the Legion
 							["provider"] = { "n", 117305 },	-- Brewmaster Almai
@@ -424,9 +429,7 @@ _.ExpansionFeatures =
 							["coord"] = { 32.3, 43.3, 709 },	-- The Wandering Isle
 						}),
 						q(42187, {	-- Rise, Champions
-						--	TODO: is altQuests necessary here?  is there a situation in which you'd complete the tracking quest but not the main quest?
 							["sourceQuests"] = { 42186 },	-- Growing Power
-							["altQuests"] = { 44296 },	-- Tracking Quest: Finished Rise, Champions
 							["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 							["classes"] = { MONK },
 							["coord"] = { 51.4, 48.5, 709 },	-- The Wandering Isle
@@ -710,7 +713,6 @@ _.ExpansionFeatures =
 
 						--[[
 						q(46024),	-- An Urgent Warning
-						q(44239),	-- Echo of a Celestial
 						q(44238),	-- Meditations on Fate
 						q(40698),	-- Purity of Form
 						--]]

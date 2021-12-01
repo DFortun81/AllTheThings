@@ -184,10 +184,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 						un(REMOVED_FROM_GAME, i(16692)),	-- Devout Gloves
 					})),
 					cr(10813, e(449, {	-- Balnazzar
-						{
-							["achievementID"] = 646,	-- Stratholme
-							["criteriaID"] = 1,	-- Balnazzar slain
-						},
 						i(14512),	-- Pattern: Truefaith Vestments
 						{
 							["itemID"] = 29120,	-- Pattern: Truefaith Vestments
@@ -215,7 +211,9 @@ _.Instances = { tier(CLASSIC_TIER, {
 										["modelID"] = 34286,
 										["groups"] = {
 											un(REMOVED_FROM_GAME, i(22327)),	-- Amulet of the Redeemed
-											un(REMOVED_FROM_GAME, i(22301)),	-- Ironweave Robe
+											i(22301, {	-- Ironweave Robe
+												["timeline"] = { "removed 4.0.1" },
+											}),
 											un(REMOVED_FROM_GAME, i(22328)),	-- Legplates of Vigilance
 											un(REMOVED_FROM_GAME, i(22329)),	-- Scepter of Interminable Focus
 											un(REMOVED_FROM_GAME, i(22334)),	-- Band of Mending
@@ -433,10 +431,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 						un(REMOVED_FROM_GAME, i(16737)),	-- Gauntlets of Valor
 					})),
 					cr(45412, e(456, {	-- Lord Aurius Rivendare
-						{
-							["achievementID"] = 646,	-- Stratholme
-							["criteriaID"] = 2,	-- Lord Aurius Rivendare slain
-						},
 						i(13335, {	-- Deathcharger's Reins (MOUNT!)
 							ach(729),	-- Deathcharger's Reins
 						}),

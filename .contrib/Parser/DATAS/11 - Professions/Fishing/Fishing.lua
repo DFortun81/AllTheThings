@@ -4,6 +4,16 @@ profession(FISHING, {
 		i(34109, {	-- Weather-Beaten Journal
 			["_drop"] = { "spellID", "recipeID" },
 		}),
+		i(187877, {	-- Frog Soul
+			["description"] = "Fish anywhere in the Shadowlands to receive this soul.",
+			["customCollect"] = { "SL_COV_NFA" },	-- Night Fae
+			["maps"] = {
+				ARDENWEALD,
+				BASTION,
+				REVENDRETH,
+				MALDRAXXUS,
+			},
+		}),
 	}),
 	filter(57,   {	-- Fishing Poles
 		i(19970),	-- Arcanite Fishing Pole

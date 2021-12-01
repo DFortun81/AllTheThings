@@ -66,7 +66,7 @@ _.Instances = { tier(BFA_TIER, {
 					}),
 					i(175008),	-- Lurking Schemer's Band
 					i(175010, {	-- Maddened Adherent's Bulwark
-						["f"] = 8,	-- Shield
+						["f"] = SHIELDS,
 					}),
 					i(175009, {	-- Zealous Ritualist's Reverie
 						["f"] = HELD_IN_OFF_HAND,
@@ -318,7 +318,7 @@ _.Instances = { tier(BFA_TIER, {
 					}),
 					i(175008),	-- Lurking Schemer's Band
 					i(175010, {	-- Maddened Adherent's Bulwark
-						["f"] = 8,	-- Shield
+						["f"] = SHIELDS,
 					}),
 					i(175009, {	-- Zealous Ritualist's Reverie
 						["f"] = HELD_IN_OFF_HAND,
@@ -551,7 +551,7 @@ _.Instances = { tier(BFA_TIER, {
 					}),
 					i(175008),	-- Lurking Schemer's Band
 					i(175010, {	-- Maddened Adherent's Bulwark
-						["f"] = 8,	-- Shield
+						["f"] = SHIELDS,
 					}),
 					i(175009, {	-- Zealous Ritualist's Reverie
 						["f"] = HELD_IN_OFF_HAND,
@@ -787,7 +787,7 @@ _.Instances = { tier(BFA_TIER, {
 					}),
 					i(175008),	-- Lurking Schemer's Band
 					i(175010, {	-- Maddened Adherent's Bulwark
-						["f"] = 8,	-- Shield
+						["f"] = SHIELDS,
 					}),
 					i(175009, {	-- Zealous Ritualist's Reverie
 						["f"] = HELD_IN_OFF_HAND,

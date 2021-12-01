@@ -56,7 +56,7 @@ _.Instances = { tier(LEGION_TIER, {
 			}),
 			d(1, {	-- Normal
 				e(1518, {	-- Amalgam of Souls
-					["cr"] = 98542,	-- Amalgam of Souls
+					["creatureID"] = 98542,	-- Amalgam of Souls
 					["g"] = {
 						i(136714),	-- Amalgam's Seventh Spine
 						i(136976),	-- Etheldrin's Breastplate
@@ -73,7 +73,7 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				}),
 				e(1653, {	-- Illysanna Ravencrest
-					["cr"] = 98696,	-- Illysanna Ravencrest
+					["creatureID"] = 98696,	-- Illysanna Ravencrest
 					["g"] = {
 						i(134412),	-- Cloak of Unwavering Loyalty
 						i(136978),	-- Ember of Nullification
@@ -87,7 +87,7 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				}),
 				e(1664, {	-- Smashspite the Hateful
-					["cr"] = 98949,	-- Smashspite the Hateful
+					["creatureID"] = 98949,	-- Smashspite the Hateful
 					["g"] = {
 						i(134528),	-- Band of Callous Dominance
 						i(134426),	-- Collar of Raking Claws
@@ -136,7 +136,7 @@ _.Instances = { tier(LEGION_TIER, {
 				["lvl"] = 110,
 				["g"] = {
 					e(1518, {	-- Amalgam of Souls
-						["cr"] = 98542,	-- Amalgam of Souls
+						["creatureID"] = 98542,	-- Amalgam of Souls
 						["g"] = {
 							i(136714),	-- Amalgam's Seventh Spine
 							i(136976),	-- Etheldrin's Breastplate
@@ -153,7 +153,7 @@ _.Instances = { tier(LEGION_TIER, {
 						},
 					}),
 					e(1653, {	-- Illysanna Ravencrest
-						["cr"] = 98696,	-- Illysanna Ravencrest
+						["creatureID"] = 98696,	-- Illysanna Ravencrest
 						["g"] = {
 							i(134412),	-- Cloak of Unwavering Loyalty
 							i(136978),	-- Ember of Nullification
@@ -167,7 +167,7 @@ _.Instances = { tier(LEGION_TIER, {
 						},
 					}),
 					e(1664, {	-- Smashspite the Hateful
-						["cr"] = 98949,	-- Smashspite the Hateful
+						["creatureID"] = 98949,	-- Smashspite the Hateful
 						["g"] = {
 							i(134528),	-- Band of Callous Dominance
 							i(134426),	-- Collar of Raking Claws
@@ -219,7 +219,7 @@ _.Instances = { tier(LEGION_TIER, {
 				["lvl"] = 110,
 				["g"] = {
 					e(1518, {	-- Amalgam of Souls
-						["cr"] = 98542,	-- Amalgam of Souls
+						["creatureID"] = 98542,	-- Amalgam of Souls
 						["g"] = {
 							ach(10710, {	-- Black Rook Moan
 								["description"] = "Prevent a soul from touching the boss for 60 seconds during the intermission phase.",
@@ -239,7 +239,7 @@ _.Instances = { tier(LEGION_TIER, {
 						},
 					}),
 					e(1653, {	-- Illysanna Ravencrest
-						["cr"] = 98696,	-- Illysanna Ravencrest
+						["creatureID"] = 98696,	-- Illysanna Ravencrest
 						["g"] = {
 							ach(10711),	-- Adds? More Like Bads
 							i(134412),	-- Cloak of Unwavering Loyalty
@@ -254,7 +254,7 @@ _.Instances = { tier(LEGION_TIER, {
 						},
 					}),
 					e(1664, {	-- Smashspite the Hateful
-						["cr"] = 98949,	-- Smashspite the Hateful
+						["creatureID"] = 98949,	-- Smashspite the Hateful
 						["g"] = {
 							i(134528),	-- Band of Callous Dominance
 							i(134426),	-- Collar of Raking Claws

@@ -6,7 +6,7 @@ _.WorldDrops =
 {
 	tier(WOD_TIER, {
 		n(WEAPONS, {
-			n(-334, {	-- 1H Axes
+			filter(ONE_HANDED_AXES, {
 				i(116457),	-- Frostbitten Axe
 				i(116474),	-- Lunarglow Axe
 				i(116491),	-- Vinewrapped Axe
@@ -21,7 +21,7 @@ _.WorldDrops =
 				i(118781),	-- Gorestained Hatchet
 				i(118782),	-- Ivory-Hilted Cleaver
 			}),
-			n(-335, {	-- 2H Axes
+			filter(TWO_HANDED_AXES, {
 				i(116458),	-- Frostbitten Broadaxe
 				i(116475),	-- Lunarglow Broadaxe
 				i(116492),	-- Vinewrapped Broadaxe
@@ -35,7 +35,7 @@ _.WorldDrops =
 				i(116628),	-- Howling Broadaxe
 				i(118802),	-- Tayger's Sword-On-A-Stick
 			}),
-			n(-346, {	-- Bows
+			filter(BOWS, {
 				i(116459),	-- Frostbitten Bow
 				i(116476),	-- Lunarglow Bow
 				i(116493),	-- Vinewrapped Bow
@@ -49,7 +49,7 @@ _.WorldDrops =
 				i(116629),	-- Howling Bow
 				i(118796),	-- Gorestrung Longbow of Kel'tann
 			}),
-			n(-347, {	-- Crossbows
+			filter(CROSSBOWS, {
 				i(116460),	-- Frostbitten Crossbow
 				i(116477),	-- Lunarglow Crossbow
 				i(116494),	-- Vinewrapped Crossbow
@@ -63,7 +63,7 @@ _.WorldDrops =
 				i(116630),	-- Howling Crossbow
 				i(118797),	-- Auto-Loading Crossbow of the Sand Emperor
 			}),
-			n(-333, {	-- Daggers
+			filter(DAGGERS, {
 				i(116461),	-- Frostbitten Dagger
 				i(116462),	-- Coldsinger Spellblade
 				i(116478),	-- Lunarglow Dagger
@@ -90,7 +90,7 @@ _.WorldDrops =
 				i(118784),	-- Sliver of Na'the
 				i(118785),	-- Void Bound Knife
 			}),
-			n(-348, {	-- Fist Weapons
+			filter(FIST_WEAPONS, {
 				i(116463),	-- Frostbitten Knuckles
 				i(116480),	-- Lunarglow Knuckles
 				i(116497),	-- Vinewrapped Knuckles
@@ -104,7 +104,7 @@ _.WorldDrops =
 				i(116633),	-- Howling Knuckles
 				i(118786),	-- Chade's Kidneythumper
 			}),
-			n(-345, {	-- Guns
+			filter(GUNS, {
 				i(116464),	-- Frostbitten Gun
 				i(116481),	-- Lunarglow Gun
 				i(116498),	-- Vinewrapped Gun
@@ -135,7 +135,7 @@ _.WorldDrops =
 				i(118851),	-- Genesaur Braid
 				i(118852),	-- Erorus' Ledger of Trade
 			}),
-			n(-336, {	-- 1H Maces
+			filter(ONE_HANDED_MACES, {
 				i(116465),	-- Frostbitten Mace
 				i(116466),	-- Coldsinger Scepter
 				i(116482),	-- Lunarglow Mace
@@ -162,7 +162,7 @@ _.WorldDrops =
 				i(118788),	-- Matti's Magnificent Mace
 				i(118789),	-- Firecrystal Mace
 			}),
-			n(-337, {	-- 2H Maces
+			filter(TWO_HANDED_MACES, {
 				i(116467),	-- Frostbitten Hammer
 				i(116484),	-- Lunarglow Hammer
 				i(116501),	-- Vinewrapped Hammer
@@ -177,7 +177,7 @@ _.WorldDrops =
 				i(116637),	-- Howling Hammer
 				i(118799),	-- Draenic Ribsmasher
 			}),
-			n(-343, {	-- Polearms
+			filter(POLEARMS, {
 				i(116468),	-- Frostbitten Spear
 				i(116485),	-- Lunarglow Spear
 				i(116502),	-- Vinewrapped Spear
@@ -193,7 +193,7 @@ _.WorldDrops =
 				i(118800),	-- Pillar of Malice
 				i(118801),	-- Spire of Autumn
 			}),
-			n(-332, {	-- Shield
+			filter(SHIELDS, {
 				i(106397),	-- Frostbitten Shield
 				un(REMOVED_FROM_GAME, i(55433)),	-- Steelgrill Shield
 				i(106430),	-- Rimeplate Shield
@@ -211,7 +211,7 @@ _.WorldDrops =
 				i(118873),	-- Jerek's Intractable Barrier
 				i(118874),	-- Blackrock Bulwark
 			}),
-			n(-342, {	-- Staves
+			filter(STAVES, {
 				i(116469),	-- Frostbitten Staff
 				i(116470),	-- Frostbitten Staff
 				i(116486),	-- Lunarglow Staff
@@ -239,7 +239,7 @@ _.WorldDrops =
 				i(118805),	-- Caniki's Cane of Command
 				un(REMOVED_FROM_GAME, i(25173)),	-- Master's Bo Staff
 			}),
-			n(-338, {	-- 1H Swords
+			filter(ONE_HANDED_SWORDS, {
 				i(116471),	-- Frostbitten Sword
 				i(116488),	-- Lunarglow Sword
 				i(116505),	-- Vinewrapped Sword
@@ -255,7 +255,7 @@ _.WorldDrops =
 				i(118791),	-- Razorcrystal Blade
 				i(118792),	-- Reinforced Tuskblade
 			}),
-			n(-339, {	-- 2H Swords
+			filter(TWO_HANDED_SWORDS, {
 				i(116472),	-- Frostbitten Greatsword
 				i(116489),	-- Lunarglow Greatsword
 				i(116506),	-- Vinewrapped Greatsword
@@ -269,7 +269,7 @@ _.WorldDrops =
 				i(116642),	-- Howling Greatsword
 				i(118806),	-- Windworn Greatsword
 			}),
-			n(-341, {	-- Wands
+			filter(WANDS, {
 				i(116473),	-- Coldsinger Wand
 				i(116490),	-- Moonwhisper Wand
 				un(REMOVED_FROM_GAME, i(25285)),	-- Bloodwood Wand

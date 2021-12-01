@@ -1,7 +1,6 @@
--- Reassign the pointer to the recipe function to automatically mark the removal date.
-local oldRecipe = recipe;
-recipe = function(recipeID)
-	local o = oldRecipe(recipeID);
+-- Override the global function with a local one for some automated data
+local recipe = function(recipeID)
+	local o = recipe(recipeID);
 	o.timeline = { "removed 8.0.1.10000" };
 	return o;
 end
@@ -259,9 +258,6 @@ profession(FIRST_AID, {
 	}),
 	-- #endif
 });
-
--- Reset the pointer to the recipe function.
-recipe = oldRecipe;
 
 -- First Aid Recipes
 _.ItemDB = {};

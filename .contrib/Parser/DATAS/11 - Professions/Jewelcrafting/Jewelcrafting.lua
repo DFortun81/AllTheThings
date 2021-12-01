@@ -283,7 +283,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 				["recipeID"] = 26881
 			}
 		}),
-		filter(34, {	-- Fist Weapons
+		filter(FIST_WEAPONS, {
 			{
 				["name"] = "Heavy Iron Knuckles",
 				["recipeID"] = 25612
@@ -5387,7 +5387,7 @@ cacheRecipes(_.Professions);
 
 -- Jewelcrafting Item Recipe Database
 local itemrecipe = function(name, itemID, spellID, spellIDAfterCata, timeline)
-	local o = { ["itemID"] = itemID, ["spellID"] = spellID, ["requireSkill"] = JEWELCRAFTING, ["f"] = 200 };
+	local o = { ["itemID"] = itemID, ["spellID"] = spellID, ["requireSkill"] = JEWELCRAFTING, ["f"] = RECIPES };
 	if spellIDAfterCata then
 		if type(spellIDAfterCata) == "number" then
 			-- #if AFTER CATA

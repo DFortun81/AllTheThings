@@ -90,7 +90,7 @@ _.Instances = { tier(WOD_TIER, {
 				["questID"] = 39380,
 				["isRaid"] = true,
 				["coord"] = { 47.5, 22.1, TANAAN_JUNGLE },
-				["cr"] = 94015,	-- Supreme Lord Kazzak
+				["creatureID"] = 94015,	-- Supreme Lord Kazzak
 				["g"] = {
 					ach(10071),	-- The Legion Will NOT Conquer All
 					i(127976),	-- Choker of Reciprocity
@@ -124,7 +124,7 @@ _.Instances = { tier(WOD_TIER, {
 					548,    -- Cragplume Cauldron
 					549,	-- Cragplume Cauldron
 				},
-				["cr"] = 81535,	-- Tarlna the Ageless
+				["creatureID"] = 81535,	-- Tarlna the Ageless
 				["g"] = {
 					ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
 						["collectible"] = false,

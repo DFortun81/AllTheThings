@@ -10,9 +10,15 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 		ach(628),	-- Deadmines
 		ach(634),	-- Gnomeregan
 		ach(644, {	-- King of Dire Maul
-			crit(1),	-- Alzzin the Wildshaper
-			crit(2),	-- Immol'thar
-			crit(3),	-- King Gordok
+			crit(1, {	-- Alzzin the Wildshaper
+				["_npcs"] = { 11492 },
+			}),
+			crit(2, {	-- Immol'thar
+				["_npcs"] = { 11496 },
+			}),
+			crit(3, {	-- King Gordok
+				["_npcs"] = { 11501 },
+			}),
 		}),
 		ach(643),	-- Lower Blackrock Spire
 		ach(640),	-- Maraudon
@@ -27,8 +33,12 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 		ach(631),	-- Shadowfang Keep
 		ach(633),	-- Stormwind Stockade
 		ach(646, {	-- Stratholme
-			crit(1),	-- Balnazzar
-			crit(2),	-- Lord Aurius Rivendare
+			crit(1, {	-- Balnazzar
+				["_npcs"] = { 10813 },
+			}),
+			crit(2, {	-- Lord Aurius Rivendare
+				["_npcs"] = { 45412 },
+			}),
 		}),
 		ach(641),	-- Sunken Temple
 		ach(687),	-- Temple of Ahn'Qiraj

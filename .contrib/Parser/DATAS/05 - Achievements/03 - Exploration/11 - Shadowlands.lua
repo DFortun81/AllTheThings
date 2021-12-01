@@ -498,17 +498,18 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			}),
 		}),
 		ach(14731, {	-- To All the Squirrels I've Loved and Lost
+			-- TODO map/coord/crs here instead of individual zone files
 			crit(1),		-- Dreadfur Kit
 			crit(2),		-- Darkened Wyrmling
 			crit(3),		-- Soulwing Flitter
-			crit(4),		-- Starmoth
+			crit(4),		-- Starmoth 64.1, 42.0 ARDENWEALD
 			crit(5),		-- Timber Kit
 			crit(6),		-- Runewood Hoarder
 			crit(7),		-- Chittering Claw
 			crit(8),		-- Writhing Rachis
 			crit(9),		-- Bubbling Refuse
 			crit(10),		-- Shardling
-			crit(11),		-- Emaciated Bat
+			crit(11),		-- Emaciated Bat 39.2, 49.9 / 59.8, 68.2 REVENDRETH
 			crit(12),		-- Creeper
 		}),
 		ach(14791),		-- Toss a Seed to Your Hunter...

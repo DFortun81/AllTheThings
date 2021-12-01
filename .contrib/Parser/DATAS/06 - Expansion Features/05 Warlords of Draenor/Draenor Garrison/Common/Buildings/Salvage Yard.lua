@@ -26,6 +26,7 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 79857 },	-- Lumba the Crusher
 						}),
 					}),
+					i(139594),	-- Salvage Crate
 					i(114120, {	-- Big Crate of Salvage
 						["u"] = REMOVED_FROM_GAME,
 						["g"] = sharedData({["u"] = REMOVED_FROM_GAME},{

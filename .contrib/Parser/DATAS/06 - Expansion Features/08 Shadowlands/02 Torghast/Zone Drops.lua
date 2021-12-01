@@ -76,6 +76,7 @@ _.ExpansionFeatures =
 					["crs"] = {
 						151331,	-- Cellblock Sentinel
 						153165,	-- Custodian Thonar
+						155945,	-- Gherus the Chained
 						170418,	-- Goxul the Devourer
 						159190,	-- Synod
 						151329,	-- Warden Skoldus

@@ -7,12 +7,6 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(ARDENWEALD, {
 			n(QUESTS, {
-				prof(FISHING, {
-					i(187877, {	-- Frog Soul
-						["description"] = "Fish anywhere in Ardenweald to receive this soul.",
-						["requireSkill"] = FISHING,
-					}),
-				}),
 				q(58163, {	-- A Desperate Solution
 					["sourceQuests"] = { 58161 },	-- Forest Disappearances
 					["provider"] = { "o", 349515 },	-- Battered Journal
@@ -714,7 +708,7 @@ _.Zones =
 					["coord"] = { 64.2, 49.9, ARDENWEALD },
 					["g"] = {
 						i(175986, {	-- Grove Defender's Maul
-							["f"] = 24,	-- 2H mace (for some reason erroneously has filterID of 23, which is 1H maces)
+							["f"] = TWO_HANDED_MACES,	-- (for some reason erroneously has filterID of 23, which is 1H maces)
 						}),
 						i(175983),	-- Heartwood Bow
 						i(175984),	-- Heartwood Dagger

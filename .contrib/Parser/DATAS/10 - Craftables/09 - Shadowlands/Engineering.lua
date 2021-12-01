@@ -26,7 +26,7 @@ _.Craftables =
 					i(172908),	-- Reinforced Ectoplasmic Specs
 				}),
 			}),
-			filter(31, {	-- Guns
+			filter(GUNS, {
 				i(172923)	-- Precision Lifeforce Inverter
 			}),
 			filter(TOYS, {

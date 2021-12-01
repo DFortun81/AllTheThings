@@ -244,7 +244,6 @@ _.Zones =
 					["icon"] = "Interface\\Icons\\inv_helm_mask_fittedalpha_b_01_nightborne_02",
 					["crs"] = { 171743 },	-- Dapperdew
 					["g"] = {
-					--	TODO: add remaining questIDs + loot
 						n(166135, {	-- Astra, As Azshara <An Infamous Queen>
 							["questID"] = 61201,
 							["isDaily"] = true,
@@ -286,7 +285,7 @@ _.Zones =
 							},
 						}),
 						n(166138, {	-- Mi'kai, As Argus, the Unmaker <A Corrupted World Soul>
-							["isDaily"] = true,	-- ??
+							["isDaily"] = true,
 							["questID"] = 61202,
 							["g"] = {
 								crit(4, {	-- Argus, The Unmaker

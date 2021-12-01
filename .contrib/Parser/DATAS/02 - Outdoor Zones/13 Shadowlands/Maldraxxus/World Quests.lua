@@ -187,16 +187,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
-				q(61699, {	-- Not Much to Goo On
-					["description"] = "Need Conductor Tier 2",
-					["isWorldQuest"] = true,
-					["customCollect"] = "SL_COV_NEC",	-- Necrolord
-				}),
-				q(61841, {	-- Not Much to Goo On
-					["description"] = "Need Conductor Tier 2",
-					["isWorldQuest"] = true,
-					["customCollect"] = "SL_COV_NEC",	-- Necrolord
-				}),
 				q(58437, {	-- Parts to a Whole
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

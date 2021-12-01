@@ -35,7 +35,6 @@ app.Settings = settings;
 settings.name = app:GetName();
 settings.MostRecentTab = nil;
 settings.Tabs = {};
-settings.ModifierKeys = { "None", "Shift", "Ctrl", "Alt" };
 settings:SetBackdrop({
 	bgFile = "Interface/RAIDFRAME/UI-RaidFrame-GroupBg",
 	edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
@@ -134,6 +133,7 @@ local GeneralSettingsBase = {
 		["Skip:AutoRefresh"] = false,
 		["Show:PetBattles"] = true,
 		["Hide:PvP"] = false,
+		["Dynamic:Style"] = 1,
 	},
 };
 local FilterSettingsBase = {};
@@ -184,7 +184,6 @@ local TooltipSettingsBase = {
 		["SummarizeThings"] = true,
 		["Warn:Difficulty"] = false,
 		["Warn:Removed"] = true,
-		["Updates:AdHoc"] = true,
 	},
 };
 
@@ -284,6 +283,8 @@ settings.NewProfile = function(self, key)
 			Unobtainable = {},
 			Windows = {},
 		};
+		-- Use Ad-Hoc for new Profiles, to remove initial lag
+		raw.Tooltips["Updates:AdHoc"] = true;
 		AllTheThingsProfiles.Profiles[key] = raw;
 		return raw;
 	end
@@ -292,6 +293,8 @@ end
 settings.CopyProfile = function(self, key, copyKey)
 	if AllTheThingsProfiles then
 		key = key or settings:GetProfile();
+		-- don't try to copy the same profile
+		if key == copyKey then return; end
 		-- delete the existing profile manually
 		AllTheThingsProfiles.Profiles[key] = nil;
 		-- re-create the profile
@@ -309,27 +312,33 @@ settings.CopyProfile = function(self, key, copyKey)
 end
 -- Removes a Profile
 settings.DeleteProfile = function(self, key)
-	if AllTheThingsProfiles and key and key ~= DEFAULT then
+	if AllTheThingsProfiles and key and key ~= "Default" then
 		AllTheThingsProfiles.Profiles[key] = nil;
 		-- deleting the current character's profile, reassign to Default
 		if key == AllTheThingsProfiles.Assignments[app.GUID] then
 			AllTheThingsProfiles.Assignments[app.GUID] = nil;
 			settings.ApplyProfile();
 		end
+		-- deleting a profile used by other characters, they too will reset to default
+		for char,profKey in pairs(AllTheThingsProfiles.Assignments) do
+			if profKey == key then
+				AllTheThingsProfiles.Assignments[char]  = nil;
+			end
+		end
 		return true;
 	end
 end
 -- Gets the Profile for the current character
-settings.GetProfile = function(self)
+settings.GetProfile = function(self, localized)
 	if AllTheThingsProfiles then
-		return AllTheThingsProfiles.Assignments[app.GUID] or DEFAULT;
+		return AllTheThingsProfiles.Assignments[app.GUID] or (localized and DEFAULT or "Default");
 	end
 end
 -- Sets a Profile for the current character
 settings.SetProfile = function(self, key)
 	if AllTheThingsProfiles and key then
 		-- don't assign Default... it's Default...
-		if key == DEFAULT then key = nil; end
+		if key == "Default" then key = nil; end
 		AllTheThingsProfiles.Assignments[app.GUID] = key;
 	end
 end
@@ -352,7 +361,7 @@ settings.ApplyProfile = function()
 		end
 
 		if app.IsReady then
-			app.print(L["PROFILE"]..":",key);
+			app.print(L["PROFILE"]..":",settings:GetProfile(true));
 		end
 		return true;
 	end
@@ -1311,7 +1320,7 @@ line:SetColorTexture(1, 1, 1, 0.4);
 line:SetHeight(2);
 
 local child = settings:CreateScrollFrame();
-child:SetMaxScroll(43); -- Adding more max value to the scrollbar is what controls the vertical size.
+child:SetMaxScroll(55); -- Adding more max value to the scrollbar is what controls the vertical size.
 local scrollFrame = child.ScrollContainer;
 scrollFrame:SetPoint("TOP", line, "BOTTOM", 0, -1);
 scrollFrame:SetPoint("LEFT", settings, "LEFT", 0, 0);
@@ -2404,10 +2413,93 @@ PrecisionSlider.OnRefresh = function(self)
 	end
 end;
 
+-- Dynamic Category Toggles
+local DynamicCategoryLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+DynamicCategoryLabel:SetJustifyH("LEFT");
+DynamicCategoryLabel:SetText(L["DYNAMIC_CATEGORY_LABEL"]);
+DynamicCategoryLabel:Show();
+table.insert(settings.MostRecentTab.objects, DynamicCategoryLabel);
+DynamicCategoryLabel:SetPoint("LEFT", ShowPercentagesCheckBox, "LEFT", 0, 0);
+DynamicCategoryLabel:SetPoint("TOP", PrecisionSlider, "BOTTOM", 0, -8);
+
+local settingName = "Dynamic:Style";
+-- Create Unique Disable methods for callbacks
+local function Off_Disable(self)
+	self:Disable();
+end
+local function Simple_Disable(self)
+	self:Disable();
+end
+local function Nested_Disable(self)
+	self:Disable();
+end
+local DynamicCategoryOffCheckbox = child:CreateCheckBox(L["DYNAMIC_CATEGORY_OFF"],
+function(self)
+	-- act like a radio button
+	self:SetAlpha(1);
+	if settings:Get(settingName) == 0 then
+		self:SetChecked(true);
+		app.Callback(Off_Disable, self);
+	else
+		self:SetChecked(false);
+		self:Enable();
+	end
+end,
+function(self)
+	if self:GetChecked() then
+		settings:Set(settingName, 0);
+	end
+end);
+DynamicCategoryOffCheckbox:SetPoint("TOP", DynamicCategoryLabel, "BOTTOM", 0, 0);
+DynamicCategoryOffCheckbox:SetPoint("LEFT", DynamicCategoryLabel, "LEFT", 0, 0);
+DynamicCategoryOffCheckbox:SetATTTooltip(L["DYNAMIC_CATEGORY_OFF_TOOLTIP"]..L["DYNAMIC_CATEGORY_TOOLTIP_NOTE"]);
+
+local DynamicCategorySimpleCheckbox = child:CreateCheckBox(L["DYNAMIC_CATEGORY_SIMPLE"],
+function(self)
+	-- act like a radio button
+	self:SetAlpha(1);
+	if settings:Get(settingName) == 1 then
+		self:SetChecked(true);
+		app.Callback(Simple_Disable, self);
+	else
+		self:SetChecked(false);
+		self:Enable();
+	end
+end,
+function(self)
+	if self:GetChecked() then
+		settings:Set(settingName, 1);
+	end
+end);
+DynamicCategorySimpleCheckbox:SetPoint("TOP", DynamicCategoryOffCheckbox, "TOP", 0, 0);
+DynamicCategorySimpleCheckbox:SetPoint("LEFT", DynamicCategoryOffCheckbox.Text, "RIGHT", 4, 0);
+DynamicCategorySimpleCheckbox:SetATTTooltip(L["DYNAMIC_CATEGORY_SIMPLE_TOOLTIP"]..L["DYNAMIC_CATEGORY_TOOLTIP_NOTE"]);
+
+local DynamicCategoryNestedCheckbox = child:CreateCheckBox(L["DYNAMIC_CATEGORY_NESTED"],
+function(self)
+	-- act like a radio button
+	self:SetAlpha(1);
+	if settings:Get(settingName) == 2 then
+		self:SetChecked(true);
+		app.Callback(Nested_Disable, self);
+	else
+		self:SetChecked(false);
+		self:Enable();
+	end
+end,
+function(self)
+	if self:GetChecked() then
+		settings:Set(settingName, 2);
+	end
+end);
+DynamicCategoryNestedCheckbox:SetPoint("TOP", DynamicCategorySimpleCheckbox, "TOP", 0, 0);
+DynamicCategoryNestedCheckbox:SetPoint("LEFT", DynamicCategorySimpleCheckbox.Text, "RIGHT", 4, 0);
+DynamicCategoryNestedCheckbox:SetATTTooltip(L["DYNAMIC_CATEGORY_NESTED_TOOLTIP"]..L["DYNAMIC_CATEGORY_TOOLTIP_NOTE"]);
+
 end)();
 
 ------------------------------------------
--- The "Filters" Tab.	--
+-- The "Tracking" Tab.	--
 ------------------------------------------
 (function()
 local tab = settings:CreateTab(L["FILTERS_TAB"]);
@@ -3130,11 +3222,24 @@ TooltipModifierLabel.OnRefresh = function(self)
 	end
 end;
 
+-- Create Unique Disable methods for callbacks
+local function None_Disable(self)
+	self:Disable();
+end
+local function Shift_Disable(self)
+	self:Disable();
+end
+local function Ctrl_Disable(self)
+	self:Disable();
+end
+local function Alt_Disable(self)
+	self:Disable();
+end
 local TooltipModifierNoneCheckBox = settings:CreateCheckBox(L["TOOLTIP_MOD_NONE"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Enabled:Mod") == "None");
 	if not settings:GetTooltipSetting("Enabled") then
-		app.Callback(self.Disable, self);
+		app.Callback(None_Disable, self);
 		self:SetAlpha(0.2);
 	else
 		self:SetAlpha(1);
@@ -3142,7 +3247,7 @@ function(self)
 		if not self:GetChecked() then
 			self:Enable();
 		else
-			app.Callback(self.Disable, self);
+			app.Callback(None_Disable, self);
 		end
 	end
 end,
@@ -3158,7 +3263,7 @@ local TooltipModifierShiftCheckBox = settings:CreateCheckBox(L["TOOLTIP_MOD_SHIF
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Enabled:Mod") == "Shift");
 	if not settings:GetTooltipSetting("Enabled") then
-		app.Callback(self.Disable, self);
+		app.Callback(Shift_Disable, self);
 		self:SetAlpha(0.2);
 	else
 		self:SetAlpha(1);
@@ -3166,7 +3271,7 @@ function(self)
 		if not self:GetChecked() then
 			self:Enable();
 		else
-			app.Callback(self.Disable, self);
+			app.Callback(Shift_Disable, self);
 		end
 	end
 end,
@@ -3182,7 +3287,7 @@ local TooltipModifierCtrlCheckBox = settings:CreateCheckBox(L["TOOLTIP_MOD_CTRL"
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Enabled:Mod") == "Ctrl");
 	if not settings:GetTooltipSetting("Enabled") then
-		app.Callback(self.Disable, self);
+		app.Callback(Ctrl_Disable, self);
 		self:SetAlpha(0.2);
 	else
 		self:SetAlpha(1);
@@ -3190,7 +3295,7 @@ function(self)
 		if not self:GetChecked() then
 			self:Enable();
 		else
-			app.Callback(self.Disable, self);
+			app.Callback(Ctrl_Disable, self);
 		end
 	end
 end,
@@ -3206,7 +3311,7 @@ local TooltipModifierAltCheckBox = settings:CreateCheckBox(L["TOOLTIP_MOD_ALT"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Enabled:Mod") == "Alt");
 	if not settings:GetTooltipSetting("Enabled") then
-		app.Callback(self.Disable, self);
+		app.Callback(Alt_Disable, self);
 		self:SetAlpha(0.2);
 	else
 		self:SetAlpha(1);
@@ -3214,7 +3319,7 @@ function(self)
 		if not self:GetChecked() then
 			self:Enable();
 		else
-			app.Callback(self.Disable, self);
+			app.Callback(Alt_Disable, self);
 		end
 	end
 end,
@@ -4149,6 +4254,9 @@ settings.ApplyBackdropColor(ProfileScroller, 20, 20, 20, 1);
 ProfileSelector:SetHeight(100);
 
 -- Initialize Profiles Button
+local function InitProfilesButton_Disable(self)
+	self:Disable();
+end
 local InitializeProfilesButton = settings:CreateButton(
 -- button settings
 {
@@ -4162,7 +4270,7 @@ local InitializeProfilesButton = settings:CreateButton(
 		function()
 			app.SetupProfiles();
 			OnClickForTab(tab);
-			app.Callback(self.Disable, self);
+			app.Callback(InitProfilesButton_Disable, self);
 		end);
 	end,
 });
@@ -4176,106 +4284,7 @@ local UseProfile = function(profile)
 	settings:ApplyProfile();
 	settings:UpdateMode(1);
 end
-
 local refreshProfiles;
-refreshProfiles = function()
-	local mostRecentTab = settings.MostRecentTab;
-	-- make sure to use the correct tab when adding the UI elements
-	settings.MostRecentTab = tab;
-
-	-- update the current profile label
-	local currentProfile = settings:GetProfile();
-	CurrentProfileNameLabel:SetText(currentProfile or NOT_APPLICABLE);
-
-	-- print("refresh profiles scrollbox")
-	local settingProfileItems = {};
-	if AllTheThingsProfiles then
-		-- buttons have no OnRefresh script, so have to hide it externally
-		InitializeProfilesButton:Hide();
-
-		for k,v in pairs(AllTheThingsProfiles.Profiles) do
-			-- print("added",k)
-			tinsert(settingProfileItems, k);
-		end
-	end
-	-- sort the profiles
-	app.insertionSort(settingProfileItems, function(a,b) return string.lower(a) < string.lower(b); end);
-
-	local profileCount, existingBoxes, lastProfileSelect = 0, ProfileSelector.ATT and ProfileSelector.ATT.CB_Count or 0;
-	local maxProfileNameWidth = ProfileSelector:GetWidth() - 50;
-
-	-- create checkboxes for the profiles in the scrollframe
-	for _,profile in ipairs(settingProfileItems) do
-		local profileBox;
-		profileCount = profileCount + 1;
-		if existingBoxes >= profileCount then
-			-- print("replace-profileCB",profileCount,profile)
-			profileBox = ProfileSelector.ATT.CB[profileCount];
-			profileBox.Text:SetText(profile);
-		else
-			-- print("new-profileCB",profileCount,profile)
-			profileBox = ProfileSelector:CreateCheckBox(profile,
-				function(self)
-					-- print("CB.OnRefresh",self.Text:GetText())
-					local myProfile = self.Text:GetText();
-					if settings:GetProfile() == myProfile then
-						self:SetAlpha(0.5);
-						self:SetChecked(true);
-						app.Callback(self.Disable, self);
-					elseif tab.SelectedProfile == myProfile then
-						self:SetAlpha(1);
-						self:Enable();
-						self:SetChecked(true);
-					else
-						self:SetAlpha(1);
-						self:Enable();
-						self:SetChecked(false);
-					end
-				end,
-				function(self)
-					-- logic when the respective profile checkbox is selected
-					-- holding shift will switch profiles instead of selecting one
-					local profile = self.Text:GetText();
-					if tab.SelectedProfile == profile then
-						tab.SelectedProfile = nil;
-					else
-						tab.SelectedProfile = profile;
-					end
-					if IsShiftKeyDown() then
-						if settings:GetProfile() ~= profile then
-							UseProfile(profile);
-						end
-					end
-					refreshProfiles();
-					return true;
-				end);
-			if lastProfileSelect then
-				profileBox:SetPoint("TOPLEFT", lastProfileSelect, "BOTTOMLEFT", 0, 4);
-			else
-				profileBox:SetPoint("TOPLEFT", ProfileSelector, "TOPLEFT", 5, -5);
-			end
-		end
-		profileBox.Text:SetWidth(math.min(maxProfileNameWidth, math.ceil(profileBox.Text:GetUnboundedStringWidth())));
-		profileBox:SetHitRectInsets(0,0 - profileBox.Text:GetWidth(),0,0);
-		profileBox:SetATTTooltip(profile);
-		profileBox:OnRefresh();
-		profileBox:Show();
-		lastProfileSelect = profileBox;
-	end
-
-	-- hide extra checkboxes if they've been deleted during this game session
-	if existingBoxes > profileCount then
-		-- print("removing extra checkboxes",profileCount,existingBoxes)
-		for i=profileCount + 1,existingBoxes do
-			ProfileSelector.ATT.CB[i]:Hide();
-		end
-	end
-
-	ProfileSelector:SetMaxScroll(profileCount * 6);
-	-- make sure to switch back to the previous tab once done
-	settings.MostRecentTab = mostRecentTab;
-end
-tab.OnRefresh = refreshProfiles;
 
 -- Create Button
 local CreateProfileButton = settings:CreateButton(
@@ -4320,7 +4329,7 @@ local SwitchProfileButton = settings:CreateButton(
 			refreshProfiles();
 			return true;
 		end
-	end,
+	end
 });
 SwitchProfileButton:SetPoint("TOPLEFT", NewProfileTextBox, "BOTTOMLEFT", 0, -4);
 SwitchProfileButton:Show();
@@ -4343,7 +4352,7 @@ local CopyProfileButton = settings:CreateButton(
 			refreshProfiles();
 			return true;
 		end
-	end,
+	end
 });
 CopyProfileButton:SetPoint("TOPLEFT", SwitchProfileButton, "TOPRIGHT", 10, 0);
 CopyProfileButton:Show();
@@ -4368,10 +4377,127 @@ local DeleteProfileButton = settings:CreateButton(
 			-- TODO dialog about not deleting a profile
 			-- app:ShowPopupDialog("Profile cannot be deleted!", function() end);
 		end
-	end,
+	end
 });
 DeleteProfileButton:SetPoint("BOTTOMLEFT", ProfileScroller, "BOTTOMRIGHT", 5, 0);
 DeleteProfileButton:Show();
+
+local function ProfileCheckbox_Disable(self)
+	self:Disable();
+end
+refreshProfiles = function()
+	local mostRecentTab = settings.MostRecentTab;
+	-- make sure to use the correct tab when adding the UI elements
+	settings.MostRecentTab = tab;
+	-- print("SelectedProfile",tab.SelectedProfile)
+
+	-- update the current profile label
+	local currentProfile = settings:GetProfile(true);
+	CurrentProfileNameLabel:SetText(currentProfile or NOT_APPLICABLE);
+
+	-- print("refresh profiles scrollbox")
+	local settingProfileItems = {};
+	if AllTheThingsProfiles then
+		-- buttons have no OnRefresh script, so have to hide it externally
+		InitializeProfilesButton:Hide();
+
+		for k,v in pairs(AllTheThingsProfiles.Profiles) do
+			-- print("added",k)
+			tinsert(settingProfileItems, k == "Default" and DEFAULT or k);
+		end
+	end
+	-- sort the profiles
+	app.insertionSort(settingProfileItems, function(a,b) return string.lower(a) < string.lower(b); end);
+
+	local profileCount, existingBoxes, lastProfileSelect = 0, ProfileSelector.ATT and ProfileSelector.ATT.CB_Count or 0;
+	local maxProfileNameWidth = ProfileSelector:GetWidth() - 50;
+
+	-- create checkboxes for the profiles in the scrollframe
+	for _,profile in ipairs(settingProfileItems) do
+		local profileBox;
+		profileCount = profileCount + 1;
+		if existingBoxes >= profileCount then
+			-- print("replace-profileCB",profileCount,profile)
+			profileBox = ProfileSelector.ATT.CB[profileCount];
+			profileBox.Text:SetText(profile);
+		else
+			-- print("new-profileCB",profileCount,profile)
+			profileBox = ProfileSelector:CreateCheckBox(profile,
+				function(self)
+					-- print("CB.OnRefresh",self.Text:GetText())
+					local myProfile = self.Text:GetText();
+					local activeProfile = settings:GetProfile(true);
+					if activeProfile == myProfile then
+						self:SetAlpha(0.5);
+						self:SetChecked(true);
+						app.Callback(ProfileCheckbox_Disable, self);
+					elseif tab.SelectedProfile == myProfile then
+						self:SetAlpha(1);
+						self:Enable();
+						self:SetChecked(true);
+					else
+						self:SetAlpha(1);
+						self:Enable();
+						self:SetChecked(false);
+					end
+				end,
+				function(self)
+					-- logic when the respective profile checkbox is selected
+					-- holding shift will switch profiles instead of selecting one
+					local myProfile = self.Text:GetText();
+					local activeProfile = settings:GetProfile(true);
+					-- print("clicked",profile)
+					if tab.SelectedProfile == myProfile then
+						tab.SelectedProfile = nil;
+					elseif myProfile ~= activeProfile then
+						tab.SelectedProfile = myProfile;
+					end
+					if IsShiftKeyDown() then
+						if myProfile ~= activeProfile then
+							UseProfile(myProfile);
+						end
+					end
+					refreshProfiles();
+					return true;
+				end);
+			if lastProfileSelect then
+				profileBox:SetPoint("TOPLEFT", lastProfileSelect, "BOTTOMLEFT", 0, 4);
+			else
+				profileBox:SetPoint("TOPLEFT", ProfileSelector, "TOPLEFT", 5, -5);
+			end
+		end
+		profileBox.Text:SetWidth(math.min(maxProfileNameWidth, math.ceil(profileBox.Text:GetUnboundedStringWidth())));
+		profileBox:SetHitRectInsets(0,0 - profileBox.Text:GetWidth(),0,0);
+		profileBox:SetATTTooltip(profile);
+		profileBox:OnRefresh();
+		profileBox:Show();
+		lastProfileSelect = profileBox;
+	end
+
+	-- enable/disable buttons if profile is 'selected'
+	if tab.SelectedProfile then
+		SwitchProfileButton:Enable();
+		CopyProfileButton:Enable();
+		DeleteProfileButton:Enable();
+	else
+		SwitchProfileButton:Disable();
+		CopyProfileButton:Disable();
+		DeleteProfileButton:Disable();
+	end
+
+	-- hide extra checkboxes if they've been deleted during this game session
+	if existingBoxes > profileCount then
+		-- print("removing extra checkboxes",profileCount,existingBoxes)
+		for i=profileCount + 1,existingBoxes do
+			ProfileSelector.ATT.CB[i]:Hide();
+		end
+	end
+
+	ProfileSelector:SetMaxScroll(profileCount * 6);
+	-- make sure to switch back to the previous tab once done
+	settings.MostRecentTab = mostRecentTab;
+end
+tab.OnRefresh = refreshProfiles;
 
 end)();
 

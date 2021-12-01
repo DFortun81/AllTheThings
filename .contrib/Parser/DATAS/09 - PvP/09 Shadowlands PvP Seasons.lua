@@ -1345,7 +1345,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			n(-386, {	-- Trinkets
 				i(174380),	-- Gladiator's Concordance
 			}),
-			n(-325, {	-- Tabard
+			filter(TABARDS, {
 				i(180432),	-- 9.0 PvP - PvP Reward - Tabard - 2
 				i(180433),	-- 9.0 PvP - PvP Reward - Tabard - 3
 				i(180434),	-- 9.0 PvP - PvP Reward - Tabard - 4

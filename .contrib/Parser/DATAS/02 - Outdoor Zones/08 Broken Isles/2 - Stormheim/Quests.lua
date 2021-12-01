@@ -843,6 +843,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 60.0, 51.2, STORMHEIM },
 					["provider"] = { "n", 94346 },	-- Ensign Ward
+					["isBreadcrumb"] = true,
 				}),
 				q(39796, {	-- To Haustvald
 					["sourceQuests"] = { 39804 },	-- Speaking of Bones

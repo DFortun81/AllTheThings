@@ -411,25 +411,25 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 		}),
 		ach(14729, {		-- To All The Squirrels I Love Despite Their Scars
 			-- TODO map/coord/crs here instead of individual zone files
-			crit(1),		-- Felspider
-			crit(2),		-- Tenebrous Snake
-			crit(3),		-- Albatross Chick
-			crit(4, {	-- Coastal Sandpiper
+			crit(1),		-- Felspider 39.0 47.6 ASZUNA
+			crit(2),		-- Tenebrous Snake 40.92 58.62 ASZUNA
+			crit(3),		-- Albatross Chick 30.0 35.6 ASZUNA
+			crit(4, {	-- Coastal Sandpiper 57.6 40.8 ASZUNA
 				["crs"] = { 89380 },	-- Coastal Sandpiper
 				["maps"] = {
 					AZSUNA,
 					EYE_OF_AZSHARA,
 				},
 			}),
-			crit(5),		-- Glitterpool Frog
-			crit(6),		-- Gleamhoof Fawn
-			crit(7),		-- Auburn Ringtail
-			crit(8),		-- Blighthawk
-			crit(9),		-- Black-Footed Fox Kit
-			crit(10),		-- Long-Eared Owl
-			crit(11),		-- Golden Eaglet
-			crit(12),		-- Tiny Apparition
-			crit(13),		-- Echo Batling
+			crit(5),		-- Glitterpool Frog 42.6 56.8 SURAMAR
+			crit(6),		-- Gleamhoof Fawn 54.8 72.6 VALSHARAH
+			crit(7),		-- Auburn Ringtail 63.6 72.0 VALSHARAH
+			crit(8),		-- Blighthawk 38.6 62.6 VALSHARAH
+			crit(9),		-- Black-Footed Fox Kit 56.6 55.4 HIGHMOUNTAIN
+			crit(10),		-- Long-Eared Owl 56.2 54.4 HIGHMOUNTAIN
+			crit(11),		-- Golden Eaglet 60.5, 51.5 STORMHEIM
+			crit(12),		-- Tiny Apparition 56.4 43.5 STORMHEIM (cr:97952)
+			crit(13),		-- Echo Batling 55.1 44.3 HIGHMOUNTAIN
 		}),
 		ach(11256),		-- Treasures of Azsuna
 		ach(11257),		-- Treasures of Highmountain

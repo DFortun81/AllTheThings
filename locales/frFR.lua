@@ -180,7 +180,7 @@ local L = app.L;
 	--TODO: L.CHANGE_SEARCH_FILTER = "Change Search Filter";
 	--TODO: L.CHANGE_SEARCH_FILTER_DESC = "Click this to change your search filter.";
 	--TODO: L.REROLL_2 = "Reroll: ";
-	--TODO: L.NOTHING_TO_SELECT_FROM = "There was nothing to randomly select from.";
+	--TODO: L.NOTHING_TO_SELECT_FROM = "There was nothing to randomly select from. If 'Ad-Hoc Updates' is enabled in Settings, the Main list must be updated (/att) before using this window.";
 	--TODO: L.NO_SEARCH_METHOD = "No search method specified.";
 	--TODO: L.PROFESSION_LIST = "Profession List";
 	--TODO: L.PROFESSION_LIST_DESC = "Open your professions to cache them.";
@@ -610,9 +610,7 @@ for key,value in pairs({
 
 	-- "Non-Equipment Types"
 		--TODO: [103] = "Illusions";								-- Illusions
-		--TODO: [107] = "Vignettes";
-		--TODO: [110] = "Titles";									-- Titles
-		--TODO: [114] = "Mount Equipment";							-- Mount Equipment
+		--TODO: [107] = "Vignettes";								-- Vignettes
 
 	--TODO: [999] = "Event Item";									-- Event Item
 })
@@ -636,11 +634,6 @@ for key,value in pairs({
 		--TODO: [-23] = "Common Dungeon Drop",						-- WoD Common Dungeon Drop
 		--TODO: [-26] = "Drops",									-- Drops
 		--TODO: [-41] = "Cache of Madness",
-	-- Armor Types
-		--TODO: [-43] = GetItemSubClassInfo(4,1).." "..RESISTANCE0_NAME,-- Cloth
-		--TODO: [-44] = GetItemSubClassInfo(4,2).." "..RESISTANCE0_NAME,-- Leather
-		--TODO: [-45] = GetItemSubClassInfo(4,3).." "..RESISTANCE0_NAME,-- Mail
-		--TODO: [-46] = GetItemSubClassInfo(4,4).." "..RESISTANCE0_NAME,-- Plate
 	-- World Events
 		--TODO: [-53] = "Midsummer Fire Festival",					-- Midsummer Fire Festival
 		--TODO: [-55] = "Pirates' Day",
@@ -787,16 +780,11 @@ for key,value in pairs({
 		--TODO: [-913] = "Tormentors of Torghast",					-- Tormentors of Torghast
 		--TODO: [-914] = "Adventures",								-- Adventures
 		--TODO: [-915] = "Anima Conductor",							-- Anima Conductor
-		[-916] = string.format(COVENANT_SANCTUM_TIER, 1)..": Vrilles flottantes",	-- Tier 1: Flowing Tendrils
-		[-917] = string.format(COVENANT_SANCTUM_TIER, 2)..": Flots de fils",-- Tier 2: Streaming Threads
-		[-918] = string.format(COVENANT_SANCTUM_TIER, 3)..": Flot de puissance",	-- Tier 3: Flowing Power
 		[-977] = "Maélie la Vagabonde",								-- Maelie the Wanderer
 		[-979] = "Négociant Ve'ken & Négociant Ve'nott",			-- Broker Ve'ken & Broker Ve'nott
 		-- SL Maldraxxus/Necrolord
 			--TODO: [-921] = "Sanctum Upgrades",					-- Sanctum Upgrades (Necrolord)
 			--TODO: [-924] = "Transport Network",					-- Transport Network (Necrolord)
-			[-925] = string.format(COVENANT_SANCTUM_TIER, 1)..": Partenaire recomposé",	-- Abomination Factory (Necrolord) Tier 1
-			[-926] = string.format(COVENANT_SANCTUM_TIER, 2)..": Confection de membres",	-- Abomination Factory (Necrolord) Tier 2
 			[-927] = string.format(COVENANT_SANCTUM_TIER, 3)..": Insufflation de vie",	-- Abomination Factory (Necrolord) Tier 3
 			[-928] = string.format(COVENANT_SANCTUM_TIER, 4)..": Amis forgés de toutes pièces",	-- Abomination Factory (Necrolord) Tier 4
 			[-938] = string.format(COVENANT_SANCTUM_TIER, 5)..": Meilleurs amis pour la vie",	-- Abomination Factory (Necrolord) Tier 5
@@ -948,6 +936,8 @@ for key,value in pairs({
 	[6751] = "Plante aux fruits étranges",	-- Strange Fruited Plant
 	[6752] = "Plantes aux feuilles étranges",	-- Strange Fronded Plant
 	[7510] = "Racine éclose",	-- Sprouted Frond
+	[15084] = "Le Brille-o-Matic 5200",	-- The Sparklematic 5200	--TODO: This was manually translated
+	[15085] = "Le Brille-o-Matic 5200",	-- The Sparklematic 5200	--TODO: This was manually translated
 	[19022] = "Coffre usé",	-- Worn Chest
 	[19023] = "|cFFFFFFFFStep 7:|r Page 2351",	-- |cFFFFFFFFStep 7:|r Page 2351
 	[19024] = "Autel caché",	-- Hidden Shrine
@@ -973,7 +963,12 @@ for key,value in pairs({
 	[142151] = "Tonneau scellé",	-- Sealed Barrel
 	[142195] = "Plan de bataille des Griffebois",	-- Woodpaw Battle Map
 	[142343] = "Piédestal d'Uldum",	-- Uldum Pedestal
+	[142344] = "Extrapolateur artificiel",	-- Artificial Extrapolator
+	[142345] = "Matrice d'encodage 3005-A",	-- Matrix Punchograph 3005-A
+	[142475] = "Matrice d'encodage 3005-B",	-- Matrix Punchograph 3005-B
+	[142476] = "Matrice d'encodage 3005-C",	-- Matrix Punchograph 3005-C
 	[142487] = "Le Brille-o-Matic 5200",	-- The Sparklematic 5200
+	[142696] = "Matrice d'encodage 3005-D",	-- Matrix Punchograph 3005-D
 	[142702] = "Bouteille de venin",	-- Venom Bottle
 	[144063] = "Monolithe d'Equinex",	-- Equinex Monolith
 	[148502] = "|cFFFFFFFFStep 1:|r Page 9",	-- |cFFFFFFFFStep 1:|r Page 9
@@ -1003,12 +998,19 @@ for key,value in pairs({
 	[175524] = "Mystérieux cristal rouge",	-- Mysterious Red Crystal
 	[175894] = "Colis de Janice",	-- Janice's Parcel
 	[175926] = "Journal de Mme Dalson",	-- Mrs. Dalson's Diary
+	[175965] = "Fluide d’embaumement de Murmegivre",	-- Frostwhisper's Embalming Fluid
 	[176090] = "Cadavres humains",	-- Human Remains
 	[176091] = "Chaudron des Mort-bois",	-- Deadwood Cauldron
 	[176115] = "Avis de recherche : Arnak Totem-sinistre",	-- Wanted Poster - Arnak Grimtotem
 	[176361] = "Chaudron du Fléau",	-- Scourge Cauldron
 	[176392] = "Chaudron du Fléau",	-- Scourge Cauldron
 	[176393] = "Chaudron du Fléau",	-- Scourge Cauldron
+	[176484] = "Titre de propriété de Brill",	-- The Deed to Brill
+	[176485] = "Titre de propriété de Caer Darrow",	-- The Deed to Caer Darrow
+	[176486] = "Titre de propriété d’Austrivage",	-- The Deed to Southshore
+	[176487] = "Titre de propriété de Moulin-de-Tarren",	-- The Deed to Tarren Mill
+	[176544] = "Cadavre d'Eva Sarkhoff",	-- Remains of Eva Sarkhoff
+	[176545] = "Cadavre de Lucien Sarkhoff",	-- Remains of Lucien Sarkhoff
 	[176631] = "Don de Menethil",	-- Menethil's Gift
 	[177289] = "Chaudron du Fléau",	-- Scourge Cauldron
 	[177491] = "Tonneau de termites",	-- Termite Barrel

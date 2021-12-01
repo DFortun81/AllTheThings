@@ -9,7 +9,7 @@ _.Craftables =
 			filter(114, {	-- Mount Equipment
 				i(168419),	-- Comfortable Rider's Barding
 			}),
-			filter(32, {	-- Bows
+			filter(BOWS, {
 				i(161975),	-- Honorable Combatant's Bow [Alliance]
 				i(159896),	-- Honorable Combatant's Bow [Horde]
 				i(167935),	-- Notorious Combatant's Bow [Alliance]
@@ -24,7 +24,7 @@ _.Craftables =
 			filter(55, {	-- Consumable
 				i(154167),	-- Drums of the Maelstrom
 			}),
-			filter(34, {	-- Fist Weapons
+			filter(FIST_WEAPONS, {
 				i(161970),	-- Coarse Leather Cestus [Alliance]
 				i(154161),	-- Coarse Leather Cestus [Horde]
 				i(161972),	-- Hardened Tempest Knuckles [Alliance]

@@ -181,7 +181,7 @@ local L = app.L;
 	L.CHANGE_SEARCH_FILTER = "Изменение Фильтра для Поиска";
 	L.CHANGE_SEARCH_FILTER_DESC = "Нажмите, чтобы изменить фильтр для поиска.";
 	L.REROLL_2 = "Повторный бросок: ";
-	L.NOTHING_TO_SELECT_FROM = "Не из чего делать случайный выбор.";
+	L.NOTHING_TO_SELECT_FROM = "Не из чего делать случайный выбор. Если включена опция 'Обновлять только видимые окна', то предварительно нужно открыть Основной Список (/att).";
 	L.NO_SEARCH_METHOD = "Не выбран метод для поиска.";
 	L.PROFESSION_LIST = "Список Профессий";
 	L.PROFESSION_LIST_DESC = "Откройте Ваши профессии для кэширования.";
@@ -593,9 +593,7 @@ for key,value in pairs({
 
 	-- "Non-Equipment Types"
 		[103] = "Иллюзии";									-- Illusions (TODO: чары для оружия? Предметы, что дают Чары для оружия в коллекцию, называются Иллюзиями)
-		[107] = "Особые";
-		[110] = "Звания";									-- Titles
-		[114] = "Экипировка Транспорта";					-- Mount Equipment
+		[107] = "Особые";									-- Vignettes
 
 	[999] = "Предметы Событий";								-- Event Item
 })
@@ -620,11 +618,6 @@ for key,value in pairs({
 		[-23] = "Обычная добыча с боссов",						-- WoD Common Dungeon Drop
 		[-26] = BATTLE_PET_SOURCE_1,							-- Drops
 		[-41] = "Тайник Безумия",
-	-- Armor Types
-		[-43] = "Тканевые доспехи",								-- Cloth
-		[-44] = "Кожаные доспехи",								-- Leather
-		[-45] = "Кольчужные доспехи",							-- Mail
-		[-46] = "Латные доспехи",								-- Plate
 	-- World Events
 		[-53] = "Огненный Солнцеворот",							-- Midsummer Fire Festival
 		[-55] = "День пирата",
@@ -661,7 +654,6 @@ for key,value in pairs({
 	-- Class Hall /Artifact
 		[-159] = "Ролл События",									-- Daily Dreamway Event Roll
 	-- Other
-		[-163] = "Доспехи",											-- Armor
 		[-211] = "Новый персонаж",									-- New Character
 		[-212] = "Сундук с сокровищами",							-- Treasure Chest
 	-- Fishing
@@ -772,16 +764,11 @@ for key,value in pairs({
 		[-913] = "Мучители из Торгаста",							-- Tormentors of Torghast
 		[-914] = "Приключения",										-- Adventures
 		[-915] = "Проводник анимы",									-- Anima Conductor
-		[-916] = string.format(COVENANT_SANCTUM_TIER, 1)..": Растущая паутина",	-- Tier 1: Flowing Tendrils
-		[-917] = string.format(COVENANT_SANCTUM_TIER, 2)..": Тянущиеся нити",-- Tier 2: Streaming Threads
-		[-918] = string.format(COVENANT_SANCTUM_TIER, 3)..": Текущая энергия",	-- Tier 3: Flowing Power
 		[-977] = "Маэли Странница",									-- Maelie the Wanderer
 		[-979] = "Брокер Ве'кен & Брокер Ве'нотт",					-- Broker Ve'ken & Broker Ve'nott
 		-- SL Maldraxxus/Necrolord
 			[-921] = "Улучшения для Обители",						-- Sanctum Upgrades (Necrolord)
 			[-924] = "Транспортная Сеть",							-- Transport Network (Necrolord)
-			[-925] = string.format(COVENANT_SANCTUM_TIER, 1)..": Собери себе друга",	-- Abomination Factory (Necrolord) Tier 1
-			[-926] = string.format(COVENANT_SANCTUM_TIER, 2)..": А теперь добавим ножек",	-- Abomination Factory (Necrolord) Tier 2
 			[-927] = string.format(COVENANT_SANCTUM_TIER, 3)..": Встань и живи",	-- Abomination Factory (Necrolord) Tier 3
 			[-928] = string.format(COVENANT_SANCTUM_TIER, 4)..": Кованые друзья",	-- Abomination Factory (Necrolord) Tier 4
 			[-938] = string.format(COVENANT_SANCTUM_TIER, 5)..": Лучшие друзья навсегда",	-- Abomination Factory (Necrolord) Tier 5
@@ -936,6 +923,8 @@ for key,value in pairs({
 	[6751] = "Чудоягодник",	-- Strange Fruited Plant
 	[6752] = "Растение со странными листьями",	-- Strange Fronded Plant
 	[7510] = "Росток папоротника",	-- Sprouted Frond
+	[15084] = "Чистер 5200",	-- The Sparklematic 5200	--TODO: This was manually translated
+	[15085] = "Чистер 5200",	-- The Sparklematic 5200	--TODO: This was manually translated
 	[19022] = "Подержанный сундук",	-- Worn Chest
 	[19023] = "|cFFFFFFFFШаг 7:|r Страница 2351",	-- |cFFFFFFFFStep 7:|r Page 2351
 	[19024] = "Потаенное святилище",	-- Hidden Shrine
@@ -961,7 +950,12 @@ for key,value in pairs({
 	[142151] = "Запечатанная бочка",	-- Sealed Barrel
 	[142195] = "Тактическая карта стаи Древолапов",	-- Woodpaw Battle Map
 	[142343] = "Ульдумский пьедестал",	-- Uldum Pedestal
+	[142344] = "Искусственный экстраполятор",	-- Artificial Extrapolator
+	[142345] = "Матричный перфограф 3005-A",	-- Matrix Punchograph 3005-A
+	[142475] = "Матричный перфограф 3005-B",	-- Matrix Punchograph 3005-B
+	[142476] = "Матричный перфограф 3005-C",	-- Matrix Punchograph 3005-C
 	[142487] = "Чистер 5200",	-- The Sparklematic 5200
+	[142696] = "Матричный перфограф 3005-D",	-- Matrix Punchograph 3005-D
 	[142702] = "Флакон с ядом",	-- Venom Bottle
 	[144063] = "Монолит Равноденствия",	-- Equinex Monolith
 	[148502] = "|cFFFFFFFFШаг 1:|r Страница 9",	-- |cFFFFFFFFStep 1:|r Page 9
@@ -991,12 +985,19 @@ for key,value in pairs({
 	[175524] = "Таинственный красный кристалл",	-- Mysterious Red Crystal
 	[175894] = "Посылка Дженис",	-- Janice's Parcel
 	[175926] = "Дневник миссис Далсон",	-- Mrs. Dalson's Diary
+	[175965] = "Бальзамировочный состав Ледяного Шепота",	-- Frostwhisper's Embalming Fluid
 	[176090] = "Человеческие останки",	-- Human Remains
 	[176091] = "Котел Мертвого Леса",	-- Deadwood Cauldron
 	[176115] = "Плакат \"Разыскивается\": Арнак Зловещий Тотем",	-- Wanted Poster - Arnak Grimtotem
 	[176361] = "Котел Плети",	-- Scourge Cauldron
 	[176392] = "Котел Плети",	-- Scourge Cauldron
 	[176393] = "Котел Плети",	-- Scourge Cauldron
+	[176484] = "Документы на Брилл",	-- The Deed to Brill
+	[176485] = "Документы на Каэр Дарроу",	-- The Deed to Caer Darrow
+	[176486] = "Документы на Южнобережье",	-- The Deed to Southshore
+	[176487] = "Документы на Мельницу Таррен",	-- The Deed to Tarren Mill
+	[176544] = "Останки Евы Саркофф",	-- Remains of Eva Sarkhoff
+	[176545] = "Останки Люсьена Саркоффа",	-- Remains of Lucien Sarkhoff
 	[176631] = "Дар Менетила",	-- Menethil's Gift
 	[177289] = "Котел Плети",	-- Scourge Cauldron
 	[177491] = "Термитная бочка",	-- Termite Barrel

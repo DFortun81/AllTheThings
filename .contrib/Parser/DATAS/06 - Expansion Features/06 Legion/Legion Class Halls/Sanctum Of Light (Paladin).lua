@@ -833,6 +833,8 @@ _.HiddenQuestTriggers = {
 	q(42354),	-- Paladin Order Hall - Tracking Quest: Lumenstone 5
 	q(46767),	-- Paladin Order Hall - Maximillian 1 Week Cooldown (triggered after turning in Champion: Nerus Moonfang (46045))
 	q(44371),	-- Holy Chosen
+	q(43688),	-- Unlocking the Walking in the Shadows quest
+	q(43666),	-- Using Heart of Corruption
 };
 
 -- These quests never made it in.

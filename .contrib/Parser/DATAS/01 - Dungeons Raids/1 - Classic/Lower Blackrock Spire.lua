@@ -168,7 +168,9 @@ _.Instances = { tier(CLASSIC_TIER, {
 					i(22057, {
 						un(11, i(22325)),	-- Belt of the Trickster
 						un(11, i(22322)),	-- The Jaw Breaker
-						un(11, i(22306)),	-- Ironweave Belt
+						i(22306, {	-- Ironweave Belt
+							["timeline"] = { "removed 4.0.1" },
+						}),
 						un(11, i(22319)),	-- Tome of Divine Right
 					}),
 				},

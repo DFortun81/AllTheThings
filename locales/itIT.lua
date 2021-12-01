@@ -181,7 +181,7 @@ local L = app.L;
 	--TODO: L.CHANGE_SEARCH_FILTER = "Change Search Filter";
 	--TODO: L.CHANGE_SEARCH_FILTER_DESC = "Click this to change your search filter.";
 	--TODO: L.REROLL_2 = "Reroll: ";
-	--TODO: L.NOTHING_TO_SELECT_FROM = "There was nothing to randomly select from.";
+	--TODO: L.NOTHING_TO_SELECT_FROM = "There was nothing to randomly select from. If 'Ad-Hoc Updates' is enabled in Settings, the Main list must be updated (/att) before using this window.";
 	--TODO: L.NO_SEARCH_METHOD = "No search method specified.";
 	--TODO: L.PROFESSION_LIST = "Profession List";
 	--TODO: L.PROFESSION_LIST_DESC = "Open your professions to cache them.";
@@ -611,9 +611,7 @@ for key,value in pairs({
 
 	-- "Non-Equipment Types"
 		--TODO: [103] = "Illusions";								-- Illusions
-		--TODO: [107] = "Vignettes";
-		--TODO: [110] = "Titles";									-- Titles
-		--TODO: [114] = "Mount Equipment";							-- Mount Equipment
+		--TODO: [107] = "Vignettes";								-- Vignettes
 
 	--TODO: [999] = "Event Item";									-- Event Item
 })
@@ -637,11 +635,6 @@ for key,value in pairs({
 		--TODO: [-23] = "Common Dungeon Drop",						-- WoD Common Dungeon Drop
 		--TODO: [-26] = "Drops",									-- Drops
 		--TODO: [-41] = "Cache of Madness",
-	-- Armor Types
-		--TODO: [-43] = GetItemSubClassInfo(4,1).." "..RESISTANCE0_NAME,-- Cloth
-		--TODO: [-44] = GetItemSubClassInfo(4,2).." "..RESISTANCE0_NAME,-- Leather
-		--TODO: [-45] = GetItemSubClassInfo(4,3).." "..RESISTANCE0_NAME,-- Mail
-		--TODO: [-46] = GetItemSubClassInfo(4,4).." "..RESISTANCE0_NAME,-- Plate
 	-- World Events
 		--TODO: [-53] = "Midsummer Fire Festival",					-- Midsummer Fire Festival
 		--TODO: [-55] = "Pirates' Day",
@@ -786,16 +779,11 @@ for key,value in pairs({
 		--TODO: [-913] = "Tormentors of Torghast",					-- Tormentors of Torghast
 		--TODO: [-914] = "Adventures",								-- Adventures
 		--TODO: [-915] = "Anima Conductor",							-- Anima Conductor
-		[-916] = string.format(COVENANT_SANCTUM_TIER, 1)..": Tentacoli Fluenti",	-- Tier 1: Flowing Tendrils
-		[-917] = string.format(COVENANT_SANCTUM_TIER, 2)..": Fili Raggianti",-- Tier 2: Streaming Threads
-		[-918] = string.format(COVENANT_SANCTUM_TIER, 3)..": Potere Fluente",	-- Tier 3: Flowing Power
 		[-977] = "Maelie la Girovaga",								-- Maelie the Wanderer
 		[-979] = "Alienatore Ve'ken & Alienatore Ve'nott",			-- Broker Ve'ken & Broker Ve'nott
 		-- SL Maldraxxus/Necrolord
 			--TODO: [-921] = "Sanctum Upgrades",					-- Sanctum Upgrades (Necrolord)
 			--TODO: [-924] = "Transport Network",					-- Transport Network (Necrolord)
-			[-925] = string.format(COVENANT_SANCTUM_TIER, 1)..": Crea un Compagno",	-- Abomination Factory (Necrolord) Tier 1
-			[-926] = string.format(COVENANT_SANCTUM_TIER, 2)..": Creazione arti",	-- Abomination Factory (Necrolord) Tier 2
 			[-927] = string.format(COVENANT_SANCTUM_TIER, 3)..": Portare in Vita",	-- Abomination Factory (Necrolord) Tier 3
 			[-928] = string.format(COVENANT_SANCTUM_TIER, 4)..": Amici Plasmati",	-- Abomination Factory (Necrolord) Tier 4
 			[-938] = string.format(COVENANT_SANCTUM_TIER, 5)..": Un abominio è per sempre",	-- Abomination Factory (Necrolord) Tier 5
@@ -947,6 +935,8 @@ for key,value in pairs({
 	[6751] = "Strana Pianta da Frutto",	-- Strange Fruited Plant
 	[6752] = "Strana Pianta Frondosa",	-- Strange Fronded Plant
 	[7510] = "Pianta Rigogliosa",	-- Sprouted Frond
+	[15084] = "Lavatutto 5200",	-- The Sparklematic 5200	--TODO: This was manually translated
+	[15085] = "Lavatutto 5200",	-- The Sparklematic 5200	--TODO: This was manually translated
 	[19022] = "Forziere Consumato",	-- Worn Chest
 	[19023] = "|cFFFFFFFFStep 7:|r Pagina 2.351",	-- |cFFFFFFFFStep 7:|r Page 2351
 	[19024] = "Santuario Nascosto",	-- Hidden Shrine
@@ -972,7 +962,12 @@ for key,value in pairs({
 	[142151] = "Barile Sigillato",	-- Sealed Barrel
 	[142195] = "Piani di Battaglia degli Gnoll",	-- Woodpaw Battle Map
 	[142343] = "Piedistallo di Uldum",	-- Uldum Pedestal
+	[142344] = "Estrapolatore Artificiale",	-- Artificial Extrapolator
+	[142345] = "Matrix Punchograph 3005-A",	-- Matrix Punchograph 3005-A	--TODO: This was taken from classic Wowhead
+	[142475] = "Perforatrice per Matrici 3005-B",	-- Matrix Punchograph 3005-B
+	[142476] = "Perforatrice per Matrici 3005-C",	-- Matrix Punchograph 3005-C
 	[142487] = "Lavatutto 5200",	-- The Sparklematic 5200
+	[142696] = "Perforatrice per Matrici 3005-D",	-- Matrix Punchograph 3005-D
 	[142702] = "Bottiglia di Veleno",	-- Venom Bottle
 	[144063] = "Monolito Equinex",	-- Equinex Monolith
 	[148502] = "|cFFFFFFFFStep 1:|r Pagina 9",	-- |cFFFFFFFFStep 1:|r Page 9
@@ -1002,12 +997,19 @@ for key,value in pairs({
 	[175524] = "Mysterious Red Crystal",	-- Mysterious Red Crystal	--TODO: This was taken from classic Wowhead
 	[175894] = "Janice's Parcel",	-- Janice's Parcel	--TODO: This was taken from classic Wowhead
 	[175926] = "Mrs. Dalson's Diary",	-- Mrs. Dalson's Diary	--TODO: This was taken from classic Wowhead
+	[175965] = "Frostwhisper's Embalming Fluid",	-- Frostwhisper's Embalming Fluid	--TODO: This was taken from classic Wowhead
 	[176090] = "Resti di Umanoide",	-- Human Remains
 	[176091] = "Calderone dei Legnomorto",	-- Deadwood Cauldron
 	[176115] = "Wanted Poster - Arnak Grimtotem",	-- Wanted Poster - Arnak Grimtotem	--TODO: This was taken from classic Wowhead
 	[176361] = "Scourge Cauldron",	-- Scourge Cauldron	--TODO: This was taken from classic Wowhead
 	[176392] = "Calderone del Flagello",	-- Scourge Cauldron
 	[176393] = "Scourge Cauldron",	-- Scourge Cauldron	--TODO: This was taken from classic Wowhead
+	[176484] = "The Deed to Brill",	-- The Deed to Brill	--TODO: This was taken from classic Wowhead
+	[176485] = "The Deed to Caer Darrow",	-- The Deed to Caer Darrow	--TODO: This was taken from classic Wowhead
+	[176486] = "The Deed to Southshore",	-- The Deed to Southshore	--TODO: This was taken from classic Wowhead
+	[176487] = "The Deed to Tarren Mill",	-- The Deed to Tarren Mill	--TODO: This was taken from classic Wowhead
+	[176544] = "Remains of Eva Sarkhoff",	-- Remains of Eva Sarkhoff	--TODO: This was taken from classic Wowhead
+	[176545] = "Remains of Lucien Sarkhoff",	-- Remains of Lucien Sarkhoff	--TODO: This was taken from classic Wowhead
 	[176631] = "Dono di Menethil",	-- Menethil's Gift
 	[177289] = "Scourge Cauldron",	-- Scourge Cauldron	--TODO: This was taken from classic Wowhead
 	[177491] = "Termite Barrel",	-- Termite Barrel	--TODO: This was taken from classic Wowhead

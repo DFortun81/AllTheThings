@@ -308,7 +308,9 @@ _.Zones =
 						crit(10, {	-- Offering Box
 							["achievementID"] = 15099,	-- Treasures of Korthia
 						}),
-						i(187344);	-- Offering Kit Maker (TOY!)
+						i(187344, {	-- Offering Kit Maker (TOY!)
+							i(187342),	-- Offering Preparation Kit
+						});
 					},
 				}),
 				o(369297, {	-- Pile of Bones

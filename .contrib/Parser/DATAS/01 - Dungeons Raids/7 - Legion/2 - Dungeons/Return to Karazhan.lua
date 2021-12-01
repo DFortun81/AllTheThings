@@ -102,7 +102,7 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				}),
 				e(1825, {	-- Maiden of Virtue
-					["cr"] = 113971,	-- Maiden of Virtue
+					["creatureID"] = 113971,	-- Maiden of Virtue
 					["g"] = {
 						i(142138),	-- Confiscated Manacle
 						i(142153),	-- Cord of the Penitent
@@ -132,7 +132,7 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				}),
 				e(1837, {	-- Moroes
-					["cr"] = 114312,	-- Moroes
+					["creatureID"] = 114312,	-- Moroes
 					["g"] = {
 						i(138797),	-- Illusion: Mongoose
 						i(142246, {	-- Broken Pocket Watch
@@ -150,7 +150,7 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				}),
 				e(1836, {	-- The Curator
-					["cr"] = 114247,	-- The Curator
+					["creatureID"] = 114247,	-- The Curator
 					["g"] = {
 						i(142130),	-- Bite-Marked Wristplates
 						i(142141),	-- Custodian's Soothing Touch
@@ -165,7 +165,7 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				}),
 				e(1817, {	-- Shade of Medivh
-					["cr"] = 114350,	-- Shade of Medivh
+					["creatureID"] = 114350,	-- Shade of Medivh
 					["g"] = {
 						i(138798),	-- Illusion: Sunfire
 						i(142207),	-- Amulet of the Last Guardian
@@ -180,7 +180,7 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				}),
 				e(1818, {	-- Mana Devourer
-					["cr"] = 114252,	-- Mana Devourer
+					["creatureID"] = 114252,	-- Mana Devourer
 					["g"] = {
 						i(142162),	-- Fluctuating Energy
 						i(142150),	-- Hood of Uncanny Perspectives
@@ -194,7 +194,7 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				}),
 				e(1838, {	-- Viz'aduum the Watcher
-					["cr"] = 114790,	-- Viz'aduum the Watcher
+					["creatureID"] = 114790,	-- Viz'aduum the Watcher
 					["g"] = {
 						ach(11929),	-- Heroic: Return to Karazhan
 						i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
@@ -299,7 +299,7 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				}),
 				e(1825,   {	-- Maiden of Virtue
-					["cr"] = 113971,	-- Maiden of Virtue
+					["creatureID"] = 113971,	-- Maiden of Virtue
 					["g"] = {
 						i(142138),	-- Confiscated Manacle
 						i(142153),	-- Cord of the Penitent
@@ -330,7 +330,7 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				}),
 				e(1837,   {	-- Moroes
-					["cr"] = 114312,	-- Moroes
+					["creatureID"] = 114312,	-- Moroes
 					["g"] = {
 						ach(11338),	-- Dine and Bash
 						i(138797),	-- Illusion: Mongoose
@@ -382,7 +382,7 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				}),
 				e(1836,   {	-- The Curator
-					["cr"] = 114247,	-- The Curator
+					["creatureID"] = 114247,	-- The Curator
 					["g"] = {
 						i(142130),	-- Bite-Marked Wristplates
 						i(142141),	-- Custodian's Soothing Touch
@@ -397,7 +397,7 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				}),
 				e(1817,   {	-- Shade of Medivh
-					["cr"] = 114350,	-- Shade of Medivh
+					["creatureID"] = 114350,	-- Shade of Medivh
 					["g"] = {
 						ach(11432),	-- Scared Straight
 						i(138798),	-- Illusion: Sunfire
@@ -413,7 +413,7 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				}),
 				e(1818,   {	-- Mana Devourer
-					["cr"] = 114252,	-- Mana Devourer
+					["creatureID"] = 114252,	-- Mana Devourer
 					["g"] = {
 						ach(11431),	-- The Rat Pack
 						i(142162),	-- Fluctuating Energy
@@ -428,7 +428,7 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				}),
 				e(1838,   {	-- Viz'aduum the Watcher
-					["cr"] = 114790,	-- Viz'aduum the Watcher
+					["creatureID"] = 114790,	-- Viz'aduum the Watcher
 					["g"] = {
 						ach(11429),	-- Mythic: Return to Karazhan
 						i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)

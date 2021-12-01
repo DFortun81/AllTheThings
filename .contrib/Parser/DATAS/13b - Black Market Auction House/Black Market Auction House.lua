@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root("BlackMarket", {
-	n(VENDORS, bubbleDown({ 
+	n(VENDORS, bubbleDown({
 			["sym"] = {
 				{"select", "headerID", -94},		-- Select BMAH header
 				{"pop"},							-- Pop the header
@@ -242,7 +242,7 @@ root("BlackMarket", bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(87410),	-- Plans: Ornate Battleplate of the Master
 		i(87408),	-- Plans: Unyielding Bloodplate
 	}),
-	n(-325, {	-- Tabard
+	filter(TABARDS, {
 		i(38312),	-- Tabard of Brilliance
 		i(23705),	-- Tabard of Flame
 		i(23709),	-- Tabard of Frost
@@ -395,10 +395,10 @@ root("BlackMarket", bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(105742),	-- Kor'kron Dark Shaman Treads
 	}),
 	i(142000),	-- Rhinestone Sunglasses
-	i(14617),			-- Sawbones Shirt
-	i(112935),			-- Tusk of Mannoroth
-	i(141006),			-- The First Satyr's Spaulders
-	i(169430, {			--  Unclaimed Black Market Container
+	i(14617),	-- Sawbones Shirt
+	i(112935),	-- Tusks of Mannoroth
+	i(141006),	-- The First Satyr's Spaulders
+	i(169430, {	--  Unclaimed Black Market Container
 		["sym"] = {
 			{"select", "headerID", -94},		-- Select BMAH header
 			{"pop"},							-- Pop the header

@@ -199,31 +199,7 @@ local function StartCoroutine(name, method, delaySec)
 	-- else print("skipped coroutine",name);
 	end
 end
--- Triggers a timer callback method to run on the next game frame with the provided params; the method can only be set to run once per frame
-local function Callback(method, ...)
-	if not app.__callbacks then
-		app.__callbacks = {};
-	end
-	if not app.__callbacks[method] then
-		app.__callbacks[method] = ... and {...} or true;
-		-- print("Callback:",method, ...)
-		local newCallback = function()
-			local args = app.__callbacks[method];
-			app.__callbacks[method] = nil;
-			-- callback with args/void
-			if args ~= true then
-				-- print("Callback/args Running",method, unpack(args))
-				method(unpack(args));
-			else
-				-- print("Callback/void Running",method)
-				method();
-			end
-			-- print("Callback Done",method)
-		end;
-		C_Timer.After(0, newCallback);
-	end
-end
-app.Callback = Callback;
+local Callback = app.Callback;
 -- Triggers a timer callback method to run after the provided number of seconds with the provided params; the method can only be set to run once per delay
 local function DelayedCallback(method, delaySec, ...)
 	if not app.__callbacks then
@@ -387,6 +363,18 @@ app.ArrayAppend = function(a1, ...)
 		end
 	end
 	return a1;
+end
+-- Allows for returning a reversed array. Will do nothing for un-ordered tables or tables with a single entry
+app.ReverseOrder = function(a)
+	if a[1] and a[2] then
+		local b, n, j = {}, #a, 1;
+		for i=n,1,-1 do
+			b[j] = a[i];
+			j = j + 1;
+		end
+		return b;
+	end
+	return a;
 end
 
 -- Data Lib
@@ -1300,7 +1288,7 @@ local inventorySlotsMap = {	-- Taken directly from CanIMogIt (Thanks!)
 local function BuildGroups(parent, g)
 	if g then
 		-- Iterate through the groups
-		for key, group in ipairs(g) do
+		for _,group in ipairs(g) do
 			-- Set the group's parent
 			group.parent = parent;
 			group.indent = nil;
@@ -1484,7 +1472,7 @@ CreateObject = function(t, rootOnly)
 		-- array
 		-- if app.DEBUG_PRINT then print("CreateObject on array",#t); end
 		for _,o in ipairs(t) do
-			tinsert(s, CreateObject(o));
+			tinsert(s, CreateObject(o, rootOnly));
 		end
 		return s;
 	-- use the highest-priority piece of data which exists in the table to turn it into an object
@@ -1549,7 +1537,17 @@ CreateObject = function(t, rootOnly)
 			t = app.CreateSpell(t.spellID, t);
 		else
 			-- if app.DEBUG_PRINT then print("CreateObject by value, no specific object type"); app.PrintTable(t); end
-			t = setmetatable({}, { __index = t });
+			if rootOnly then
+				-- shallow copy the root table only, since using t as a metatable will allow .g to exist still on the table
+				-- print("rootOnly copy of",t.text)
+				local s = {};
+				for k,v in pairs(t) do
+					s[k] = v;
+				end
+				t = s;
+			else
+				t = setmetatable({}, { __index = t });
+			end
 		end
 	end
 
@@ -2327,7 +2325,7 @@ local function GetKey(t)
 	--]]
 end
 local function CreateHash(t)
-	local key = t.key or GetKey(t);
+	local key = t.key or GetKey(t) or t.text;
 	if key then
 		local hash = key .. (rawget(t, key) or t[key] or "NOKEY");
 		if key == "criteriaID" and t.achievementID then hash = hash .. ":" .. t.achievementID;
@@ -3355,8 +3353,9 @@ local function FillPurchases(group, depth)
 	if depth <= 0 then return; end
 	-- do not fill purchases on certain items, can skip the skip though based on a level
 	if (app.SkipPurchases[-1] or 0) < (app.SkipPurchases[group.itemID or -1] or 0) then return; end
-	-- do not fill 'saved' groups (unless they are actual Maps or Instances, or a Difficulty header), or groups directly under saved groups unless in Acct or Debug mode
-	if not app.MODE_DEBUG_OR_ACCOUNT and not (group.instanceID or group.mapID or group.difficultyID) then
+	-- do not fill 'saved' groups (unless they are actual Maps or Instances, or a Difficulty header. Also 'saved' Items usually means tied to a questID directory)
+	-- or groups directly under saved groups unless in Acct or Debug mode
+	if not app.MODE_DEBUG_OR_ACCOUNT and not (group.instanceID or group.mapID or group.difficultyID or group.itemID) then
 		if group.saved then return; end
 		local rawParent = rawget(group, "parent");
 		if rawParent and rawParent.saved then return; end
@@ -3574,21 +3573,25 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 		if itemID then
 			-- Merge the source group for all matching Sources of the search results
-			local sourceGroup = {};
+			local sourceGroup;
 			for i,j in ipairs(group.g or group) do
 				-- print("sourceGroup?",j.key,j.key and j[j.key],j.modItemID)
 				if sourceID and GroupMatchesParams(j, "s", sourceID) then
 					-- print("sourceID match",sourceID)
-					MergeProperties(sourceGroup, j);
+					if sourceGroup then MergeProperties(sourceGroup, j)
+					else sourceGroup = CreateObject(j); end
 				elseif GroupMatchesParams(j, paramA, paramB) then
 					-- print("exact match",paramA,paramB)
-					MergeProperties(sourceGroup, j, true);
+					if sourceGroup then MergeProperties(sourceGroup, j, true)
+					else sourceGroup = CreateObject(j); end
 				elseif GroupMatchesParams(j, paramA, paramB, true) then
 					-- print("match",paramA,paramB)
-					MergeProperties(sourceGroup, j, true);
+					if sourceGroup then MergeProperties(sourceGroup, j, true)
+					else sourceGroup = CreateObject(j); end
 				end
 			end
 
+			if not sourceGroup then sourceGroup = {}; end
 			-- Show the unobtainable source text, if necessary.
 			if sourceGroup.key then
 				-- Acquire the SourceID if it hadn't been determined yet.
@@ -4049,10 +4052,11 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		if #root.g == 1 then
 			local o = root.g[1];
 			-- print("Check Single",root.key,root[root.key],root[o.key],o.key,o[o.key],o[root.key])
-			-- TODO: find an example which tests this... may not be possible with above logic
+			-- Heroic Tusks of Mannoroth triggers this logic
 			if (root[o.key] == o[o.key]) or (root[root.key] == o[root.key]) then
 				-- print("Single group")
-				root = o;
+				root.g = nil;
+				MergeProperties(root, o, true);
 			end
 		end
 
@@ -4774,10 +4778,12 @@ fieldCache["factionID"] = {};
 fieldCache["flightPathID"] = {};
 fieldCache["followerID"] = {};
 fieldCache["headerID"] = {};
+fieldCache["illusionID"] = {};
 fieldCache["instanceID"] = {};
 fieldCache["itemID"] = {};
 fieldCache["itemIDAsCost"] = {};
 fieldCache["mapID"] = {};
+fieldCache["mountID"] = {};
 fieldCache["nextQuests"] = {};
 fieldCache["objectID"] = {};
 fieldCache["professionID"] = {};
@@ -4866,6 +4872,9 @@ fieldConverters = {
 		-- WARNING: DEV ONLY END
 		CacheField(group, "headerID", value);
 	end,
+	["illusionID"] = function(group, value)
+		CacheField(group, "illusionID", value);
+	end,
 	["instanceID"] = function(group, value)
 		CacheField(group, "instanceID", value);
 	end,
@@ -4898,6 +4907,10 @@ fieldConverters = {
 	end,
 	["spellID"] = function(group, value)
 		CacheField(group, "spellID", value);
+		-- cache as a mount if it is
+		if group.mountID then
+			CacheField(group, "mountID", group.mountID);
+		end
 	end,
 	["tierID"] = function(group, value)
 		CacheField(group, "tierID", value);
@@ -9488,6 +9501,9 @@ fields.tsm = function(t)
 		return string.format("i:%d", t.itemID);
 	end
 fields.isToy = app.ReturnTrue;
+fields.toyID = function(t)
+		return t.itemID;
+	end
 
 app.BaseToy = app.BaseObjectFields(fields);
 app.CreateToy = function(id, t)
@@ -10126,7 +10142,6 @@ app.CreateMusicRoll = function(questID, t)
 	return setmetatable(constructor(questID, t, "questID"), app.BaseMusicRoll);
 end
 
-local SelfieCameraMkII = { { "i", 122674 } };
 local fields = {
 	["key"] = function(t)
 		return "questID";
@@ -10167,7 +10182,6 @@ local fields = {
 };
 app.BaseSelfieFilter = app.BaseObjectFields(fields);
 app.CreateSelfieFilter = function(id, t)
-	t.providers = SelfieCameraMkII;
 	return setmetatable(constructor(id, t, "questID"), app.BaseSelfieFilter);
 end
 end)();
@@ -12169,12 +12183,28 @@ function app.MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacterO
 		-- this source unlocks a visual that the current character may tmog, so all shared visuals should be considered 'collected' regardless of restriction
 		local currentCharacterUsable = currentCharacterOnly and not knownItem.nmc and not knownItem.nmr;
 		-- For each shared Visual SourceID
-		for _,sourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(knownSource.visualID)) do
+		-- if knownSource.visualID == 322 then app.DEBUG_PRINT = true; app.PrintTable(knownSource); end
+		-- account cannot collect sourceID? not available for transmog?
+		-- local _, canCollect = C_TransmogCollection.AccountCanCollectSource(knownSourceID); -- pointless, always false if sourceID is known
+		-- local unknown1 = select(8, C_TransmogCollection.GetAppearanceSourceInfo(knownSourceID)); -- pointless, returns nil for many valid transmogs
+		-- Trust that Blizzard returns SourceID's which can actually be used as Transmog for the VisualID
+		local visualIDs = C_TransmogCollection_GetAllAppearanceSources(knownSource.visualID);
+		local canMog;
+		for _,sourceID in ipairs(visualIDs) do
+			if sourceID == knownSourceID then
+				canMog = true;
+				break;
+			end
+		end
+		if not canMog then return; end
+		for _,sourceID in ipairs(visualIDs) do
+			-- if app.DEBUG_PRINT then print("visualID",knownSource.visualID,"s",sourceID,"known:",rawget(acctSources, sourceID)) end
 			-- If it is not currently marked collected on the account
 			if not rawget(acctSources, sourceID) then
 				-- for current character only, all we care is that the knownItem is not exclusive to another
 				-- race/class to consider all shared appearances as 'collected' for the current character
 				if currentCharacterUsable then
+					-- if app.DEBUG_PRINT then print("current character usable") end
 					rawset(acctSources, sourceID, 2);
 				else
 					-- Find the check Source in ATT
@@ -12223,6 +12253,7 @@ function app.MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacterO
 										or checkSource.categoryID == 4 --[[CHEST: Robe vs Armor]]
 										or app.SlotByInventoryType[knownSource.invType] == app.SlotByInventoryType[checkSource.invType])
 								then
+									-- if app.DEBUG_PRINT then print("Unique Collected s:",sourceID); end
 									rawset(acctSources, sourceID, 2);
 								-- else print("sources share visual and filters but different equips",item.s,sourceID)
 								end
@@ -12246,6 +12277,7 @@ function app.MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacterO
 				end
 			end
 		end
+		-- app.DEBUG_PRINT = nil;
 	end
 end
 function app.FilterItemTrackable(group)
@@ -12360,17 +12392,17 @@ app.RecursiveFirstParentWithField = function(group, field)
 		end
 	end
 end
-app.RecursiveIsDescendantOfParentWithValue = function(group, field, value)
-	if group then
-		if group[field] and group[field] == value then
-			return true
+-- Returns the first found recursive Parent of the group which meets the provided field and value combination
+app.RecursiveFirstParentWithFieldValue = function(group, field, value)
+	if group and field then
+		if group[field] == value then
+			return group;
 		else
 			if group.parent then
-				return app.RecursiveIsDescendantOfParentWithValue(group.parent, field, value)
+				return app.RecursiveFirstParentWithFieldValue(group.parent, field, value);
 			end
 		end
 	end
-	return false;
 end
 
 -- Processing Functions
@@ -13143,7 +13175,8 @@ function app:CreateMiniListForGroup(group)
 	-- Pop Out Functionality! :O
 	local suffix = BuildSourceTextForChat(group, 1)
 		-- this portion is to ensure that custom slash command popouts have a unique name based on the stand-alone group (no parent)
-		.. " > " .. (group.text or "") .. (group.key or "NO_KEY") .. (group.key and group[group.key] or "NO_KEY_VAL");
+		.. " > " .. (group.text or "") .. (group.key or "NO_KEY") .. (group.key and group[group.key] or "NO_KEY_VAL")
+		..(app.RecursiveFirstParentWithField(group, "dynamic") or "");
 	local popout = app.Windows[suffix];
 	local showing = not popout or not popout:IsVisible();
 	-- force data to be re-collected if this is a quest chain since its logic is affected by settings
@@ -15212,25 +15245,79 @@ function app:GetWindow(suffix, parent, onUpdate)
 end
 end)();
 
+-- Common function set as the OnUpdate for a group which will build itself a 'simple' version of the
+-- content which matches the specified .dynamic 'field' of the group
+-- NOTE: Content must be cached using the dynamic 'field'
+app.DynamicCategory_Simple = function(self)
+	self.OnUpdate = nil;
+	if fieldCache[self.dynamic] then
+		local rootATT = app:GetWindow("Prime").data;
+		local RecursiveFirstParentWithFieldValue = app.RecursiveFirstParentWithFieldValue;
+		local top, topText;
+		local topHeaders = {};
+		for id,sources in pairs(fieldCache[self.dynamic]) do
+			-- find the top-level parent of the Thing
+			top = RecursiveFirstParentWithFieldValue(sources[1], "parent", rootATT);
+			if top then
+				topText = top.text;
+				-- store a copy of this top header if we dont have it
+				if not topHeaders[topText] then
+					topHeaders[topText] = CreateObject(top, true);
+					-- print("create topHeader",self.dynamic,"==>")
+					-- app.PrintTable(topHeaders[topText])
+				end
+				-- put a copy of the Thing into the matching top category (no uniques since only 1 per cached Thing)
+				NestObject(topHeaders[topText], CreateObject(sources[1], true));
+			end
+		end
+		-- sort all of the Things by name in each top header and put it under the dynamic group
+		-- print("sorting headers",self.dynamic)
+		for _,header in pairs(topHeaders) do
+			app.SortGroup(header, "name");
+			NestObject(self, header);
+		end
+		-- reset indents and such
+		BuildGroups(self, self.g);
+		-- sort the top level groups initially (group not yet visible)
+		self.sort = true;
+		app.SortGroup(self, "name", nil, nil, "sort");
+		self.sort = nil;
+		-- dynamic groups are ignored for the source tooltips
+		self.sourceIgnored = true;
+		-- make sure these things are cached so they can be updated when collected
+		-- print("cache dynamic",self.dynamic)
+		app.CacheFields(self);
+	else
+		app.print("Failed to build Simple Dynamic Category for:",self.dynamic)
+	end
+end
+
+-- Common function set as the OnUpdate for a group which will build itself a 'nested' version of the
+-- content which matches the specified .dynamic 'field' and .dynamic_value of the group
+app.DynamicCategory_Nested = function(self)
+	self.OnUpdate = nil;
+	-- pull out all Things which should go into this category based on field & value
+	self.g = app:BuildSearchResponse(app:GetWindow("Prime").data.g, self.dynamic, self.dynamic_value, true);
+	-- reset indents and such
+	BuildGroups(self, self.g);
+	-- sort the top level groups initially (group not yet visible)
+	self.sort = true;
+	app.SortGroup(self, "name", nil, nil, "sort");
+	self.sort = nil;
+	-- dynamic groups are ignored for the source tooltips
+	self.sourceIgnored = true;
+	-- make sure these things are cached so they can be updated when collected
+	app.CacheFields(self);
+end
+
 function app:GetDataCache()
 	-- Attaches a dynamic OnUpdate to the category which auto-populates itself using the provided field and optional value when first receiving an Update to itself
 	local function DynamicCategory(group, field, value)
-		if field then
-			group.OnUpdate = function(self)
-				-- pull out all Things which should go into this category based on field & value
-				group.g = app:BuildSearchResponse(app:GetWindow("Prime").data.g, field, value, true);
-				-- reset indents and such
-				BuildGroups(group, group.g);
-				-- sort the top level groups initially
-				group.sort = true;
-				app.SortGroup(group, "name", nil, nil, "sort");
-				group.sort = nil;
-				-- dynamic groups are ignored for the source tooltips
-				group.sourceIgnored = true;
-				-- make sure these things are cached so they can be updated when collected
-				app.CacheFields(group);
-				self.OnUpdate = nil;
-			end
+		local dynamicSetting = app.Settings:Get("Dynamic:Style");
+		if dynamicSetting > 0 then
+			-- mark the top group as dynamic for the field which it used (so popouts under the dynamic header are considered unique from other dynamic popouts)
+			group.dynamic = field;
+			group.OnUpdate = dynamicSetting == 2 and app.DynamicCategory_Nested or app.DynamicCategory_Simple;
 		end
 		return group;
 	end
@@ -15376,7 +15463,7 @@ function app:GetDataCache()
 
 		-- Pet Battles
 		if app.Categories.PetBattles then
-			db = {};
+			db = app.CreateNPC(-796);
 			db.g = app.Categories.PetBattles;
 			db.lvl = 3; -- Must be 3 to train (used to be 5 pre-scale)
 			db.expanded = false;
@@ -15466,30 +15553,29 @@ function app:GetDataCache()
 			tinsert(g, db);
 		end
 
+		-- Battle Pets - Dynamic
+		local db = {};
+		db.text = AUCTION_CATEGORY_BATTLE_PETS.." - "..DYNAMIC;
+		db.icon = app.asset("Category_PetJournal");
+		tinsert(g, DynamicCategory(db, "speciesID"));
 		-- Pet Journal
-		if app.Categories.BattlePets then
-			db = {};
-			db.g = app.Categories.BattlePets;
-			db.f = 101;
-			db.text = AUCTION_CATEGORY_BATTLE_PETS;
-			db.icon = app.asset("Category_PetJournal");
-			-- remove the manually-built pet journal for now
-			for _,o in ipairs(db.g) do
-				-- the dynamic pet journal listing
-				if o.headerID == -797 then
-					o.g = nil;
-					o.sourceIgnored = true;
-					-- o = DynamicCategory(o, "speciesID");
-					break;
-				end
-			end
-			-- Battle Pets - Dynamic
-			local bp = {};
-			bp.text = AUCTION_CATEGORY_BATTLE_PETS.." - "..DYNAMIC;
-			bp.icon = app.asset("Category_PetJournal");
-			tinsert(db.g, DynamicCategory(bp, "speciesID"));
-			tinsert(g, db);
-		end
+		-- if app.Categories.BattlePets then
+		-- 	db = {};
+		-- 	db.g = app.Categories.BattlePets;
+		-- 	db.f = 101;
+		-- 	db.text = AUCTION_CATEGORY_BATTLE_PETS;
+		-- 	db.icon = app.asset("Category_PetJournal");
+		-- 	-- remove the manually-built pet journal for now
+		-- 	for _,o in ipairs(db.g) do
+		-- 		-- the dynamic pet journal listing
+		-- 		if o.headerID == -797 then
+		-- 			o.g = nil;
+		-- 			o.sourceIgnored = true;
+		-- 			-- o = DynamicCategory(o, "speciesID");
+		-- 			break;
+		-- 		end
+		-- 	end
+		-- end
 
 		-- Illusions - Dynamic
 		db = {};
@@ -15545,7 +15631,7 @@ function app:GetDataCache()
 		db.icon = app.asset("Category_ToyBox");
 		db.f = 102;
 		db.text = TOY_BOX.." - "..DYNAMIC;
-		tinsert(g, DynamicCategory(db, "isToy"));
+		tinsert(g, DynamicCategory(db, "toyID"));
 
 		--[[
 		-- DYNAMIC TOY BOX (not filtered)
@@ -16260,29 +16346,29 @@ function app:GetDataCache()
 		-- end
 
 		-- Update Toy data.
-		if toyCategory then
-			toyCategory.OnUpdate = function(self)
-				local headers = {};
-				for i,header in ipairs(self.g) do
-					if header.headerID and header.key == "headerID" then
-						headers[header.headerID] = header;
-						if not header.g then
-							header.g = {};
-						end
-					end
-				end
-				for i,_ in pairs(fieldCache["toyID"]) do
-					if not self.toys[i] then
-						self.toys[i] = buildCategoryEntry(self, headers, _, app.CreateToy(tonumber(i)));
-					end
-				end
-				insertionSort(self.g, sortByTextSafely);
-				for i,header in pairs(headers) do
-					insertionSort(header.g, sortByTextSafely);
-				end
-			end
-			toyCategory:OnUpdate();
-		end
+		-- if toyCategory then
+		-- 	toyCategory.OnUpdate = function(self)
+		-- 		local headers = {};
+		-- 		for i,header in ipairs(self.g) do
+		-- 			if header.headerID and header.key == "headerID" then
+		-- 				headers[header.headerID] = header;
+		-- 				if not header.g then
+		-- 					header.g = {};
+		-- 				end
+		-- 			end
+		-- 		end
+		-- 		for i,_ in pairs(fieldCache["toyID"]) do
+		-- 			if not self.toys[i] then
+		-- 				self.toys[i] = buildCategoryEntry(self, headers, _, app.CreateToy(tonumber(i)));
+		-- 			end
+		-- 		end
+		-- 		insertionSort(self.g, sortByTextSafely);
+		-- 		for i,header in pairs(headers) do
+		-- 			insertionSort(header.g, sortByTextSafely);
+		-- 		end
+		-- 	end
+		-- 	toyCategory:OnUpdate();
+		-- end
 
 		-- Perform Heirloom caching/upgrade generation
 		app.CacheHeirlooms();
@@ -16369,8 +16455,9 @@ function app:BuildSearchResponse(groups, field, value, clear)
 					groupCopy.g = response;
 					-- if the group itself does not meet the field/value expectation, force it to be uncollectible
 					if not groupCopy[field] or groupCopy[field] ~= value then groupCopy.collectible = false; end
-					-- don't copy in any extra data for the header group which can pull things into groups
+					-- don't copy in any extra data for the header group which can pull things into groups, or reference other groups
 					groupCopy.sym = nil;
+					groupCopy.sourceParent = nil;
 					if t then tinsert(t, groupCopy);
 					else t = { groupCopy }; end
 				end
@@ -16768,6 +16855,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				-- header groups in minilist shouldn't be attached to some random other source location
 				-- since they will be comprised of groups from many different source locations
 				header.sourceParent = nil;
+				header.customCollect = nil;
 				return header;
 			else
 				return { g = { group }, ["sort"] = true, ["collectible"] = false, };
@@ -16859,14 +16947,6 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					else
 						-- Get the header chain for the group
 						local topHeader;
-						local groupKey, typeHeaderID = group.key;
-						-- pre-emptively determine the expected top header for this 'thing' based on its key
-						for headerID,key in pairs(topHeaders) do
-							if groupKey == key then
-								typeHeaderID = headerID;
-								break;
-							end
-						end
 						local nextParent, headerID = group.parent;
 
 						-- Pre-nest some groups based on their type after grabbing the parent
@@ -16879,28 +16959,25 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 						-- Building the header chain for each mapped Thing
 						while nextParent do
 							headerID = nextParent.headerID;
-							-- this is the Type header which has already been determined based on the mapped Thing, so skip nesting at this level
-							if typeHeaderID ~= headerID then
-								if headerID then
-									-- This matches a top-level header, track that top-level header at the highest point
-									if topHeaders[headerID] then
-										-- already found a matching header, then nest it before switching
-										if topHeader then
-											group = CreateHeaderData(group, topHeader);
-										end
-										topHeader = nextParent;
-									elseif not ignoredHeaders[headerID] then
+							if headerID then
+								-- This matches a top-level header, track that top-level header at the highest point
+								if topHeaders[headerID] then
+									-- already found a matching header, then nest it before switching
+									if topHeader then
+										group = CreateHeaderData(group, topHeader);
+									end
+									topHeader = nextParent;
+								elseif not ignoredHeaders[headerID] then
+									group = CreateHeaderData(group, nextParent);
+									nested = true;
+								end
+							else
+								for hkey,hf in pairs(inInstance and subGroupInstanceKeys or subGroupKeys) do
+									if nextParent[hkey] then
+										-- create the specified group Type header
 										group = CreateHeaderData(group, nextParent);
 										nested = true;
-									end
-								else
-									for hkey,hf in pairs(inInstance and subGroupInstanceKeys or subGroupKeys) do
-										if nextParent[hkey] then
-											-- create the specified group Type header
-											group = CreateHeaderData(group, nextParent);
-											nested = true;
-											break;
-										end
+										break;
 									end
 								end
 							end
@@ -16911,16 +16988,23 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 							group = CreateHeaderData(group, topHeader);
 							nested = true;
 						end
+					end
+
+					-- couldn't nest this thing using custom headers, try to use the key of the group to figure it out
+					if not nested and group then
+						local groupKey, typeHeaderID = group.key;
+						-- determine the expected top header for this 'thing' based on its key
+						for headerID,key in pairs(topHeaders) do
+							if groupKey == key then
+								typeHeaderID = headerID;
+								break;
+							end
+						end
 						-- and based on the Type of the original Thing if it was never listed under any matching top headers
 						if typeHeaderID then
 							group = app.CreateNPC(typeHeaderID, CreateHeaderData(group));
 							nested = true;
 						end
-					end
-
-					-- couldn't nest this thing using custom headers, try to use the key of the group to figure it out
-					if not nested and group then
-						local groupKey = group.key;
 						-- really really special cases...
 						-- Battle Pets get a raw Filter group
 						if not nested and groupKey == "speciesID" then
@@ -17111,6 +17195,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			end
 			-- ignore refreshing the minilist if it is already being shown and is the same zone
 			if self.mapID == id and not show then
+				-- print("exact map")
 				return; -- Haha JK BRO
 			end
 
@@ -17124,6 +17209,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			OpenMiniList(app.GetCurrentMapID(), true);
 		end
 		local function RefreshLocation()
+			-- print("RefreshLocation")
 			-- Acquire the new map ID.
 			local mapID = app.GetCurrentMapID();
 			if not mapID or mapID < 0 then
@@ -17142,7 +17228,8 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		end
 		local function LocationTrigger()
 			if app.InWorld and app.IsReady and (app.Settings:GetTooltipSetting("Auto:MiniList") or app:GetWindow("CurrentInstance"):IsVisible()) then
-				AfterCombatCallback(RefreshLocation);
+				-- print("LocationTrigger-Callback")
+				AfterCombatOrDelayedCallback(RefreshLocation, 0.25);
 			end
 		end
 		app.OpenMiniList = OpenMiniList;
@@ -17365,6 +17452,7 @@ customWindowUpdates["Harvester"] = function(self)
 
 			local harvested = {};
 			local minID,maxID,oldRetries = app.customHarvestMin or self.min,app.customHarvestMax or self.max,app.MaximumItemInfoRetries;
+			local tremove = tremove;
 			self.min = minID;
 			self.max = maxID;
 			app.MaximumItemInfoRetries = 10;
@@ -17427,7 +17515,7 @@ customWindowUpdates["Harvester"] = function(self)
 			end
 			self.data = db;
 			BuildGroups(db, db.g);
-			self.ScrollBar:SetValue(1);
+			self.ScrollBar:SetValue(#db.g);
 			self.UpdateDone = function(self)
 				-- Hide data which have completed their harvest
 				local progress = 0;
@@ -17442,16 +17530,16 @@ customWindowUpdates["Harvester"] = function(self)
 				end
 				if self.rowData then
 					-- Remove up to 100 completed rows each frame (no need to process through thousands of rows when only a few update each frame)
-					-- TODO: this is still very laggy due to the thousands of rows being shifted on 'every remove'
-					local count = math.min(#self.rowData,100);
+					local count = #self.rowData;
 					if count > 1 then
 						self.rowData[1].progress = progress;
 						self.rowData[1].total = total;
-						for i=count,1,-1 do
+						for i=count,count-100,-1 do
 							if self.rowData[i] and not self.rowData[i].visible then
-								table.remove(self.rowData, i);
+								tremove(self.rowData, i);
 							end
 						end
+						self.ScrollBar:SetValue(count);
 					else
 						insertionSort(AllTheThingsHarvestItems);
 						insertionSort(AllTheThingsArtifactsItems);
@@ -18055,8 +18143,10 @@ customWindowUpdates["Random"] = function(self)
 					for i, subgroup in ipairs(app:GetWindow("Prime").data.g) do
 						SearchRecursivelyForEverything(subgroup, searchResults);
 					end
-					searchCache["randomatt"] = searchResults;
-					return searchResults;
+					if #searchResults > 0 then
+						searchCache["randomatt"] = searchResults;
+						return searchResults;
+					end
 				end
 			end
 			function self:SelectAchievement()
@@ -18068,8 +18158,10 @@ customWindowUpdates["Random"] = function(self)
 						return o.collectible and not o.mapID;
 					end
 					SearchRecursively(app:GetWindow("Prime").data, "achievementID", searchResults, func);
-					searchCache["randomachievement"] = searchResults;
-					return searchResults;
+					if #searchResults > 0 then
+						searchCache["randomachievement"] = searchResults;
+						return searchResults;
+					end
 				end
 			end
 			function self:SelectItem()
@@ -18081,8 +18173,10 @@ customWindowUpdates["Random"] = function(self)
 						return o.collectible;
 					end
 					SearchRecursively(app:GetWindow("Prime").data, "itemID", searchResults, func);
-					searchCache["randomitem"] = searchResults;
-					return searchResults;
+					if #searchResults > 0 then
+						searchCache["randomitem"] = searchResults;
+						return searchResults;
+					end
 				end
 			end
 			function self:SelectInstance()
@@ -18094,8 +18188,10 @@ customWindowUpdates["Random"] = function(self)
 						return ((o.total or 0) - (o.progress or 0)) > 0;
 					end
 					SearchRecursively(app:GetWindow("Prime").data, "instanceID", searchResults, func);
-					searchCache["randominstance"] = searchResults;
-					return searchResults;
+					if #searchResults > 0 then
+						searchCache["randominstance"] = searchResults;
+						return searchResults;
+					end
 				end
 			end
 			function self:SelectDungeon()
@@ -18107,8 +18203,10 @@ customWindowUpdates["Random"] = function(self)
 						return not o.isRaid and (((o.total or 0) - (o.progress or 0)) > 0);
 					end
 					SearchRecursively(app:GetWindow("Prime").data, "instanceID", searchResults, func);
-					searchCache["randomdungeon"] = searchResults;
-					return searchResults;
+					if #searchResults > 0 then
+						searchCache["randomdungeon"] = searchResults;
+						return searchResults;
+					end
 				end
 			end
 			function self:SelectQuest()
@@ -18120,8 +18218,10 @@ customWindowUpdates["Random"] = function(self)
 						return o.collectible;
 					end
 					SearchRecursively(app:GetWindow("Prime").data, "questID", searchResults, func);
-					searchCache["quests"] = searchResults;
-					return searchResults;
+					if #searchResults > 0 then
+						searchCache["quests"] = searchResults;
+						return searchResults;
+					end
 				end
 			end
 			function self:SelectRaid()
@@ -18133,8 +18233,10 @@ customWindowUpdates["Random"] = function(self)
 						return o.isRaid and (((o.total or 0) - (o.progress or 0)) > 0);
 					end
 					SearchRecursively(app:GetWindow("Prime").data, "instanceID", searchResults, func);
-					searchCache["randomraid"] = searchResults;
-					return searchResults;
+					if #searchResults > 0 then
+						searchCache["randomraid"] = searchResults;
+						return searchResults;
+					end
 				end
 			end
 			function self:SelectMount()
@@ -18146,8 +18248,10 @@ customWindowUpdates["Random"] = function(self)
 						return o.collectible and (not o.achievementID or o.itemID);
 					end
 					SearchRecursivelyForValue(app:GetWindow("Prime").data, "filterID", 100, searchResults, func);
-					searchCache["randommount"] = searchResults;
-					return searchResults;
+					if #searchResults > 0 then
+						searchCache["randommount"] = searchResults;
+						return searchResults;
+					end
 				end
 			end
 			function self:SelectPet()
@@ -18159,8 +18263,10 @@ customWindowUpdates["Random"] = function(self)
 						return o.collectible;
 					end
 					SearchRecursively(app:GetWindow("Prime").data, "speciesID", searchResults, func);
-					searchCache["randompet"] = searchResults;
-					return searchResults;
+					if #searchResults > 0 then
+						searchCache["randompet"] = searchResults;
+						return searchResults;
+					end
 				end
 			end
 			function self:SelectToy()
@@ -18172,8 +18278,10 @@ customWindowUpdates["Random"] = function(self)
 						return o.collectible;
 					end
 					SearchRecursively(app:GetWindow("Prime").data, "isToy", searchResults, func);
-					searchCache["randomtoy"] = searchResults;
-					return searchResults;
+					if #searchResults > 0 then
+						searchCache["randomtoy"] = searchResults;
+						return searchResults;
+					end
 				end
 			end
 			local excludedZones = {
@@ -18198,8 +18306,10 @@ customWindowUpdates["Random"] = function(self)
 						return (((o.total or 0) - (o.progress or 0)) > 0) and not o.instanceID and not excludedZones[o.mapID];
 					end
 					SearchRecursively(app:GetWindow("Prime").data, "mapID", searchResults, func);
-					searchCache["randomzone"] = searchResults;
-					return searchResults;
+					if #searchResults > 0 then
+						searchCache["randomzone"] = searchResults;
+						return searchResults;
+					end
 				end
 			end
 			local mainHeader, filterHeader;
@@ -18408,7 +18518,7 @@ customWindowUpdates["Random"] = function(self)
 				if method then
 					rerollOption.text = L["REROLL_2"] .. (method ~= "AllTheThings" and L[method:upper()] or method);
 					method = "Select" .. method;
-					local temp = self[method]() or {};
+					local temp = self[method]() or app.EmptyTable;
 					local totalWeight = 0;
 					for i,o in ipairs(temp) do
 						totalWeight = totalWeight + ((o.total or 1) - (o.progress or 0));
@@ -21189,16 +21299,15 @@ app.events.VARIABLES_LOADED = function()
 		app.Settings:ApplyProfile();
 
 		-- now that the addon is ready, make sure the minilist is updated to the current location if necessary
-		Callback(app.LocationTrigger);
+		DelayedCallback(app.LocationTrigger, 3);
 	end);
 end
 app.events.PLAYER_ENTERING_WORLD = function(...)
-	-- print("PLAYER_ENTERING_WORLD",...)
 	app.InWorld = true;
 	-- refresh any custom collects for this character
 	app.RefreshCustomCollectibility();
 	-- send a location trigger now that the character is 'in the world'
-	Callback(app.LocationTrigger);
+	DelayedCallback(app.LocationTrigger, 3);
 end
 app.events.ADDON_LOADED = function(addonName)
 	if addonName == "Blizzard_AuctionHouseUI" then
