@@ -13,6 +13,8 @@ _.Zones =
 				1671,	-- Ring of Transference
 				1672,	-- Broker's Den
 				1673,	-- Ring of Transference
+				-- PTR 9.2
+				2041,	-- The Cruible
 			},
 		}),
 	}),

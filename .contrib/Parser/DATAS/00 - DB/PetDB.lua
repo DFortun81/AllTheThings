@@ -1076,7 +1076,7 @@ pet(189379, 3234);	-- Viperid Menace
 -- Quest
 pet(189585, 3237);	-- E'rnee
 
--- Treasures 
+-- Treasures
 pet(187735, 3172);	-- Geordy (Anima Shell?)
 
 -- Torghast
@@ -1084,7 +1084,7 @@ pet(188679, 3221);	--* Lightless Tormentor
 
 -- Rest of iDS
 --[[
-3173
+3173-- Bufonid Croaker Added Wild Pet
 3180
 3190
 3191
@@ -1098,7 +1098,7 @@ pet(188679, 3221);	--* Lightless Tormentor
 3209
 3210
 3212
-3213
+3213-- Vombata Pup Wild pet
 3214
 3215
 3216

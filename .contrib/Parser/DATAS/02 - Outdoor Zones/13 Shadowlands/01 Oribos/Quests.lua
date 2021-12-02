@@ -1041,6 +1041,22 @@ _.Zones =
 					["provider"] = { "n", 178908 },	-- Al'dalil
 					["coord"] = { 57.1, 31.1, ORIBOS },	-- Ring of Fates
 				}),
+				-- PTR 9.2
+				q(64942, {	-- Call of the Primus
+					--["sourceQuests"] = {},
+					["provider"] = { "n", 181655 },	-- The Primus
+					["coord"] = { 32.6, 51, 2041 },
+				}),
+				q(64944, { -- A Hasty Voyage
+					["sourceQuests"] = { 64942 },	-- Call of the Primus
+					["provider"] = { "n", 181655 },	-- The Primus
+					["coord"] = { 34.2, 52.3, 2041 },
+				}),
+				q(64958, {	-- The Forces Gather (Gives First Ach Crit when Completed)
+					["sourceQuests"] = { 64957 },	-- The Old Waystone
+					["provider"] = { "n", 184698 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 49.5, 37.5, ORIBOS },	-- (Downstairs)
+				}),
 			}),
 		}),
 	}),
