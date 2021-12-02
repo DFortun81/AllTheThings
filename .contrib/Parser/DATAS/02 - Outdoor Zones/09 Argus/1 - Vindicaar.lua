@@ -282,6 +282,15 @@ _.Zones =
 						["isWeekly"] = true,
 						["coord"] = { 46.7, 24.6, 831 },
 					}),
+					q(48636, {	-- Fueling the Antoran Campaign
+						["sourceQuests"] = { 48912 },	-- Supplying the Antoran Campaign
+						["repeatable"] = true,
+						["qg"] = 126954,	-- High Exarch Turalyon
+						["cost"] = { { "c", 1220, 900 } },	-- 900x Order Resources
+						["g"] = {
+							i(152097),	-- Lightforged Bulwark
+						},
+					}),
 					q(47431, {	-- Gathering Light
 						["sourceQuests"] = { 48500 },	-- A Moment of Respite
 						["provider"] = { "n", 122378 },	-- High Exarch Turalyon
@@ -347,6 +356,8 @@ _.Zones =
 					q(48912, {	-- Supplying the Antoran Campaign
 						["sourceQuests"] = { 48448 },	-- Hindering the Legion War Machine
 						["isWeekly"] = true,
+						["qg"] = 126954,	-- High Exarch Turalyon
+						["cost"] = { { "c", 1220, 150 } },	-- 150x Order Resources
 						["g"] = {
 							i(152097),	-- Lightforged Bulwark
 						},

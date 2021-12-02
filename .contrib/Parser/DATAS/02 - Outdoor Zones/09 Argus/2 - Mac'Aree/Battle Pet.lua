@@ -7,6 +7,34 @@ _.Zones =
 	m(905, {	-- Argus
 		m(882, {	-- Eredath
 			petbattle(filter(BATTLE_PETS, {
+				p(2131, {	-- Arcane Gorger
+					["cr"] = 128172,
+					["coord"] = { 62.6, 51.6, 882 },
+				}),
+				p(2132, {	-- Felcrazed Wyrm
+					["cr"] = 128174,
+					["coord"] = { 56.0, 34.6, 882 },
+				}),
+				p(2133, {	-- Pygmy Marsuul
+					["cr"] = 128173,
+					["coord"] = { 56.8, 64.8, 882 },
+				}),
+				p(2134, {	-- Skyfin Juvenile
+					["cr"] = 128167,
+					["coord"] = { 43.6, 66.2, 882 },
+				}),
+				p(2130, {	-- Void Shardling
+					["cr"] = 128171,
+					["coord"] = { 44.0, 47.0, 882 },
+				}),
+				p(2129, {	-- Voidstalker Runt
+					["cr"] = 128168,
+					["coord"] = { 43.0, 65.0, 882 },
+				}),
+				p(2128, {	-- Warpstalker Runt
+					["cr"] = 128170,
+					["coord"] = { 46.6, 68.6, 882 },
+				}),
 				ach(12088, {	-- Anomalous Animals of Argus
 					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 					["groups"] = {
@@ -400,13 +428,6 @@ _.Zones =
 						}),
 					},
 				}),
-				p(2131),	-- Arcane Gorger
-				p(2132),	-- Felcrazed Wyrm
-				p(2133),	-- Pygmy Marsuul
-				p(2134),	-- Skyfin Juvenile
-				p(2130),	-- Void Shardling
-				p(2129),	-- Voidstalker Runt
-				p(2128),	-- Warpstalker Runt
 			})),
 		}),
 	}),

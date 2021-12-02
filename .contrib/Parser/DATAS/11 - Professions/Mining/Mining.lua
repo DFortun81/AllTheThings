@@ -6,6 +6,11 @@ profession(MINING, {
 			["description"] = "This can drop from any ore gathering node on Draenor.",
 		}),
 		o(272768, {	-- Empyrium Deposit
+			["maps"] = {
+				885,	-- Antoran Wastes
+				830,	-- Krokuun
+				882,	-- Eredath
+			},
 			["g"] = {
 				q(48034, {	-- Empyrium Deposit Chunk
 					["provider"] = { "i", 151860 },	-- Empyrium Deposit Chunk
@@ -30,6 +35,11 @@ profession(MINING, {
 			},
 		}),
 		o(272780, {	-- Empyrium Seam
+			["maps"] = {
+				885,	-- Antoran Wastes
+				830,	-- Krokuun
+				882,	-- Eredath
+			},
 			["g"] = {
 				q(48037, {	-- Empyrium Seam Chunk
 					["provider"] = { "i", 151863 },	-- Empyrium Seam Chunk

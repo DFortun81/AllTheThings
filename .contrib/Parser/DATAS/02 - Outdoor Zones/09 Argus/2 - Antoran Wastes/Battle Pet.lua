@@ -7,6 +7,14 @@ _.Zones =
 	m(905, {	-- Argus
 		m(885, {	-- Antoran Wastes
 			petbattle(filter(BATTLE_PETS, {
+				p(2122, {	-- Antoran Bile Larva
+					["cr"] = 128163,
+					["coord"] = { 70.2, 47.4, 885 },
+				}),
+				p(2126, {	-- Antoran Bilescourge
+					["cr"] = 128175,
+					["coord"] = { 74.6, 47.8, 885 },
+				}),
 				ach(12088, {	-- Anomalous Animals of Argus
 					["groups"] = {
 						{
@@ -400,8 +408,6 @@ _.Zones =
 					},
 					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 				}),
-				p(2122),	-- Antoran Bile Larva
-				p(2126),	-- Antoran Bilescourge
 			})),
 		}),
 	}),
