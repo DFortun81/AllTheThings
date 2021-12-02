@@ -16919,7 +16919,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			end
 			local results = SearchForField("mapID", self.mapID);
 			if results then
-				-- print(#results,"individual minilist results",self.mapID)
+				-- print(#results,"Minilist Results for mapID",self.mapID)
 				-- Simplify the returned groups
 				local groups, nested = {};
 				local header = app.CreateMap(self.mapID, { g = groups });
@@ -17209,9 +17209,9 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			OpenMiniList(app.GetCurrentMapID(), true);
 		end
 		local function RefreshLocation()
-			-- print("RefreshLocation")
 			-- Acquire the new map ID.
 			local mapID = app.GetCurrentMapID();
+			-- print("RefreshLocation",mapID)
 			if not mapID or mapID < 0 then
 				AfterCombatCallback(RefreshLocation);
 				return;
