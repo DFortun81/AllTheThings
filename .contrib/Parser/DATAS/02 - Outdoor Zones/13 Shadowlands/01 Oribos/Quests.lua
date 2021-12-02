@@ -365,7 +365,15 @@ _.Zones =
 				q(51355, {	-- Secretest Fish
 					["description"] = "Can be found in Secret Fish Bubbles anywhere in Shadowlands zones. You must be wearing the Secret Fish Goggles to see/loot the bubbles.",
 					["provider"] = { "i", 158932 },	-- Secretest Fish
+					["cost"] = { { "i", 167698, 1 } },	-- Secret Fish Goggles
 					["isDaily"] = true,	-- according to the API it is daily, but haven't confirmed anyone being able to do it twice yet
+					["maps"] = {
+						ARDENWEALD,
+						BASTION,
+						MALDRAXXUS,
+						REVENDRETH,
+						-- THE_MAW, -- confirm
+					},
 				}),
 				q(59773, {	-- Seek the Ascended
 					["sourceQuests"] = { 60156 },	-- The Path to Bastion

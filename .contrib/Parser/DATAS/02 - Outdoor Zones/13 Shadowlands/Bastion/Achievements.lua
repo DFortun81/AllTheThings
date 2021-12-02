@@ -680,7 +680,7 @@ _.Zones =
 					}),
 					crit(15, {	-- Gift of Devos
 						["objectID"] = 353944,	-- Gift of Devos
-						["questID"] = 60895,	-- TODO: also triggered 62842
+						["questID"] = 60895,
 						["coord"] = { 27.6, 21.8, BASTION },
 						["g"] = {
 							i(179977),	-- Benevolent Gong
@@ -723,12 +723,15 @@ _.Zones =
 					["g"] = {
 						crit(1, {	-- Dreadfur Kit
 							["crs"] = { 170242 },	-- Dreadfur Kit
+							["coord"] = { 55.0, 13.6, BASTION },
 						}),
 						crit(2, {	-- Darkened Wyrmling
 							["crs"] = { 170006 },	-- Darkened Wyrmling
+							["coord"] = { 37.7, 27.4, BASTION },
 						}),
 						crit(3, {	-- Soulwing Flitter
 							["crs"] = { 168397 },	-- Soulwing Flitter
+							["coord"] = { 48.1, 77.7, BASTION },
 						}),
 					},
 				}),
