@@ -130,6 +130,7 @@ _.Zones =
 					["description"] = "A repeatable treasure chest that does not show up on the minimap.\n\nThe items in Parish Chests can be looted from other Revendreth treasures, but Parish Chests are up every day.",
 					["coords"] = {
 						{ 64.9, 43.4, REVENDRETH },
+						{ 65.0, 47.2, REVENDRETH },
 						{ 65.2, 48.6, REVENDRETH },
 						{ 65.8, 45.4, REVENDRETH },
 						{ 66.4, 47.8, REVENDRETH },
