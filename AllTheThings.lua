@@ -1977,9 +1977,11 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange)
 		"```",	-- discord fancy box
 
 		questChange,
+		"name:"..(C_TaskQuest.GetQuestInfoByQuestID(id) or C_QuestLog.GetTitleForQuestID(id) or "???"),
 		"race:"..app.RaceID,
 		"class:"..app.ClassIndex,
 		"lvl:"..app.Level,
+		"cov:"..(C_Covenants.GetActiveCovenantID() or "0");
 		mapID and ("mapID:"..mapID) or "mapID:??",
 		coord and ("coord:"..coord) or "coord:??",
 		"ver:"..app.Version,
@@ -7369,7 +7371,7 @@ local unitFields = {
 	["title"] = function(t)
 		if IsInGroup() then
 			if rawget(t, "isML") then return MASTER_LOOTER; end
-			if UnitIsGroupLeader(t.name) then return RAID_LEADER; end
+			if UnitIsGroupLeader(t.unit) then return RAID_LEADER; end
 		end
 	end,
 	["isGUID"] = function(t)
