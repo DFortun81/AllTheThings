@@ -10,6 +10,9 @@ root("Zones", m(SHADOWLANDS, {
 			pet(3213, {	-- Vombata Pup
 				["cr"] = 183142,
 			}),
+			pet(3202, {	-- Tarachnid Stalker
+				["cr"] = 182437,
+			}),
 		})),
 	}),
 }));

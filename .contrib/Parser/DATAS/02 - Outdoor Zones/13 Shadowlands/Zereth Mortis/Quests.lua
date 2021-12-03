@@ -84,7 +84,7 @@ root("Zones", m(SHADOWLANDS, {
 				["provider"] = { "n", 181003 },	-- Al'dalil
 				["coord"] = { 33.7, 59.8, ZERETH_MORTIS },
 			}),
-			q(64742, {	-- Xy Are You Doing This?
+			q(64743, {	-- Xy Are You Doing This?
 				["sourceQuests"] = { 64742 },	-- Traces of Tampering
 				["provider"] = { "n", 181003 },	-- Al'dalil
 				["coord"] = { 33.7, 59.8, ZERETH_MORTIS },
@@ -92,7 +92,7 @@ root("Zones", m(SHADOWLANDS, {
 			q(64758, {	-- Following the Leader
 				["sourceQuests"] = {
 					64744,	-- Broker Decloaker
-					64742,	-- Xy Are You Doing This?
+					64743,	-- Xy Are You Doing This?
 				},
 				["provider"] = { "n", 180936 },	-- Rana
 				["coord"] = { 33.8, 59.8, ZERETH_MORTIS },
@@ -107,5 +107,9 @@ root("Zones", m(SHADOWLANDS, {
 }));
 
 root("HiddenQuestTrigger", {
-	q(63850),	-- Triggered when enter ZM
+	q(63850),	-- Triggered when enter ZM (Might be WQ)
+	q(63766),	-- Triggered when Exploring
+
+	-- Gravid Repose
+	q(65330),	-- Interior Locus Arrangement at Gravid Repose
 });

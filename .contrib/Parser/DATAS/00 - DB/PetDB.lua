@@ -1090,7 +1090,7 @@ pet(188679, 3221);	--* Lightless Tormentor
 3191
 3196
 3200
-3202
+3202-- Tarachnid Stalker Wild
 3203
 3205
 3206

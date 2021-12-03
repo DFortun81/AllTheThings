@@ -67,6 +67,15 @@ _.Instances = { tier(SL_TIER, {
 					i(187882),	-- Alpaca Soul
 				},
 			}),
+			e(2550, {	-- Antros <Keeper of the Antecedents>
+				["crs"] = {
+					182466,	-- Antros
+					182863,	-- Sav'thul
+				},
+				["isWeekly"] = true,
+				["questID"] = 65143,	-- (WQ)
+				["coord"] = { 48, 5, ZERETH_MORTIS }
+			}),
 			e(2456, {	-- Mor'geth <Tormentor of the Damned>
 				["isWeekly"] = true,
 				["questID"] = 64531,	-- Mor'geth (WQ)
