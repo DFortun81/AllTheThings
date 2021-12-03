@@ -343,6 +343,13 @@ local L = app.L;
 		L.REPORT_UNSORTED_CHECKBOX = "Только 'Без Источника'";
 		L.REPORT_UNSORTED_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть QuestID задания, только если у него обозначен Источник.";
 		L.BEHAVIOR_LABEL = "Настройки Списков";
+		L.DYNAMIC_CATEGORY_LABEL = "Динамические Категории";
+		L.DYNAMIC_CATEGORY_OFF_TOOLTIP = "Не генерировать Динамические Категории.";
+		L.DYNAMIC_CATEGORY_SIMPLE = "Простые";
+		L.DYNAMIC_CATEGORY_SIMPLE_TOOLTIP = "Генерировать Динамические Категории только на основе самой общей Категории.";
+		L.DYNAMIC_CATEGORY_NESTED = "Вложенные";
+		L.DYNAMIC_CATEGORY_NESTED_TOOLTIP = "Генерировать Динамические Категории на основе точного Источника. Это приводит к повторам Штучек, которые имеют несколько Источников.";
+		L.DYNAMIC_CATEGORY_TOOLTIP_NOTE = "\n\n|cffff0000Требует Перезагрузки интерфейса|r";
 
 	-- Account Wide Checkboxes
 		L.ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = "|cff00AB00Отслеживать на весь аккаунт|R\n\nДостижения обычно отслеживаются на всю учётную запись, но есть некоторые эксклюзивные для определённых классов или рас достижения, которые Вы не сможете получить на основном персонаже.";
@@ -755,7 +762,6 @@ for key,value in pairs({
 		[-861] = "Ранг 4",											-- Rank 4
 	-- Shadowlands Header
 		[-903] = "Добыча локации",									-- Zone Rewards
-		[-906] = "1-й уровень: Тактическое мышление",				-- Tier 1: Tactical Insight
 		[-907] = "Мертвая Савраска",								-- Dead Blanchy
 		[-909] = "Охота: элементали смерти",						-- Hunt: Death Elementals
 		[-910] = "Охота: пожиратели душ",							-- Hunt: Alpha Devourers
@@ -769,48 +775,21 @@ for key,value in pairs({
 		-- SL Maldraxxus/Necrolord
 			[-921] = "Улучшения для Обители",						-- Sanctum Upgrades (Necrolord)
 			[-924] = "Транспортная Сеть",							-- Transport Network (Necrolord)
-			[-927] = string.format(COVENANT_SANCTUM_TIER, 3)..": Встань и живи",	-- Abomination Factory (Necrolord) Tier 3
-			[-928] = string.format(COVENANT_SANCTUM_TIER, 4)..": Кованые друзья",	-- Abomination Factory (Necrolord) Tier 4
-			[-938] = string.format(COVENANT_SANCTUM_TIER, 5)..": Лучшие друзья навсегда",	-- Abomination Factory (Necrolord) Tier 5
 		-- SL Ardenweald/Night Fae
-			[-935] = "Улучшения для обители",						-- Sanctum Upgrades (Night Fae)
 			[-936] = "Формы души",									-- Soulshape Forms (Night Fae)
-			[-937] = "Транспортная сеть",							-- Transport Network (Night Fae)
 			[-1002] = "Дух служения",								-- Dutiful Spirit
 			[-1003] = "Воинственный дух",							-- Martial Spirit
 			[-1004] = "Дух гордыни",								-- Prideful Spirit
 			[-1005] = "Неукрощенный дух",							-- Untamed Spirit
 		-- SL Bastion/Kyrian
 			[-940] = "Совет перерожденных",							-- Ascended Counil
-			[-941] = "Улучшения для обители",						-- Sanctum Upgrades (Kyrian)
-			[-943] = string.format(COVENANT_SANCTUM_TIER, 1)..": Первые шаги",	-- Tier 1: First Steps
-			[-944] = string.format(COVENANT_SANCTUM_TIER, 2)..": Священные испытания",	-- Tier 2: Sacred Trials
-			[-945] = string.format(COVENANT_SANCTUM_TIER, 3)..": Дальнейшие тренировки",	-- Tier 3: Continued Teaching
-			[-946] = string.format(COVENANT_SANCTUM_TIER, 4)..": Учение Мудрости",	-- Tier 4: Teachings of Wisdom
-			[-947] = string.format(COVENANT_SANCTUM_TIER, 5)..": Испытания Смирения",	-- Tier 5: Trials of Humility
-			[-948] = "Транспортная сеть",							-- Transport Network (Kyrian)
-			[-3348] = string.format(COVENANT_SANCTUM_TIER, 1)..": Шаг веры",	-- Tier 1: Step of Faith
-			[-3349] = string.format(COVENANT_SANCTUM_TIER, 2)..": Прыжок силы",	-- Tier 2: Leap of Power
-			[-3350] = string.format(COVENANT_SANCTUM_TIER, 3)..": Вечные пути",	-- Tier 3: Eternal Paths
 			[-966] = "Чертежи и Создание",							-- "Blueprints & Crafting"
 			[-973] = "Верность",									-- Loyalty
 			[-975] = "Смирение",									-- Humility
 		-- SL Revendreth/Venthyr
-			[-950] = "Транспортная сеть",							-- Transport Network
-			[-951] = string.format(COVENANT_SANCTUM_TIER, 1)..": Зеркало, зеркало",	-- Tier 1: Mirror, Mirror
-			[-952] = string.format(COVENANT_SANCTUM_TIER, 2)..": Через стекло",	-- Tier 2: Looking Glass
-			[-953] = string.format(COVENANT_SANCTUM_TIER, 3)..": Зазеркалье",	-- Tier 3: Mirror's Edge
 			[-954] = "Инквизиторы",									-- Inquisitors
 			[-955] = "Старшие Инквизиторы",							-- High Inquisitors
 			[-956] = "Великие Инквизиторы",							-- Grand Inquisitors
-			[-957] = "Улучшения для обители",						-- Sanctum Upgrades (Venthyr)
-			[-958] = string.format(COVENANT_SANCTUM_TIER, 2)..": Заслуженное пиршество",	-- Tier 2: Deserved Feast
-			[-959] = string.format(COVENANT_SANCTUM_TIER, 3)..": Высокая эффективность",	-- Tier 3: Superior Efficiency
-			[-961] = string.format(COVENANT_SANCTUM_TIER, 1)..": Новый Двор",	-- Tier 1: A New Court
-			[-962] = string.format(COVENANT_SANCTUM_TIER, 2)..": Доморощенная помощь",	-- Tier 2: Homegrown Help
-			[-963] = string.format(COVENANT_SANCTUM_TIER, 3)..": Влияние при Дворе",	-- Tier 3: Court Influencer
-			[-964] = string.format(COVENANT_SANCTUM_TIER, 4)..": Тонкий вкус",	-- Tier 4: Discerning Taste
-			[-965] = string.format(COVENANT_SANCTUM_TIER, 5)..": Профессионалы",	-- Tier 5: The Professionals
 			[-967] = "Восстановление зеркала",						-- "Mirror Restoration",
 			[-968] = "Набор A",										-- Set A
 			[-969] = "Набор B",										-- Set B

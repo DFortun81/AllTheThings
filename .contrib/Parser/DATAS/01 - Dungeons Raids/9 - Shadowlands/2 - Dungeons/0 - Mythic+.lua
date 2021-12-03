@@ -41,7 +41,7 @@ _.Instances = { tier(SL_TIER, {
 				title(451),	-- <Name>, the Tormented Hero
 			}),
 		}),
-		n(-936, {	-- Soulshape Forms
+		n(SOULSHAPES, {
 			i(182173),	-- Hyena Soul
 		}),
 	}),
