@@ -6,7 +6,9 @@ root("Zones", m(SHADOWLANDS, {
 		["achievementID"] = 15224,	-- Explore Zereth Mortis
 	--	["lore"] = "",
 		["maps"] = {
+			2028,	-- Locarian Esper
 			2029,	-- Gravid Repose
+			2030,	-- Nexus of Actualization
 		},
 	}),
 }));

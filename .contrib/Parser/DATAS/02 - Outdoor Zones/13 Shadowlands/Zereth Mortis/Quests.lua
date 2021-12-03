@@ -133,9 +133,66 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 47.3, 63.6, ZERETH_MORTIS },
 			}),
 			q(64825, {	-- Seeking Haven (THE CRIT FOR CHAP 2.. THE END)
-				["sourceQuests"] = { 64824 },	--Fighting For The Forge
+				["sourceQuests"] = { 64824 },	-- Fighting For The Forge
 				["provider"] = { "n", 183717 },	-- Lady Jaina Proudmoore
 				["coord"] = { 57, 53.6, ZERETH_MORTIS },
+			}),
+
+
+			-- Chapter 3
+			q(64218, {	-- Danger Near and Far
+				["sourceQuests"] = { 64825 },	-- Seeking Haven
+				["provider"] = { "n", 179611 },	-- Pelagos
+				["coord"] = { 35.2, 65, ZERETH_MORTIS },
+			}),
+			q(64219, {	-- A Mysterious Voice
+				["sourceQuests"] = { 64218 },	-- Danger Near and Far
+				["provider"] = { "n", 179611 },	-- Pelagos
+				["coord"] = { 40.1, 76.6, ZERETH_MORTIS },
+			}),
+			q(64223, {	-- Core of the Matter
+				["sourceQuests"] = { 64219 },	-- A Mysterious Voice
+				["provider"] = { "n", 179611 },	-- Pelagos
+				["coord"] = { 39.8, 78, ZERETH_MORTIS },
+			}),
+			q(64224, {	-- Seeking the Unknown
+				["sourceQuests"] = { 64223 },	-- Core of the Matter
+				["provider"] = { "n", 179611 },	-- Pelagos
+				["coord"] = { 34.9, 64.8, ZERETH_MORTIS },
+			}),
+			q(64225, {	-- Finding Firim
+				["sourceQuests"] = { 64224 },	-- Seeking the Unknown
+				["provider"] = { "n", 179611 },	-- Pelagos
+				["coord"] = { 34.9, 64.8, ZERETH_MORTIS },
+			}),
+			q(64227, {	-- Unseen Agents
+				["sourceQuests"] = { 64225 },	-- Finding Firim
+				["provider"] = { "n", 177958 },	-- Firim
+				["coord"] = { 34.6, 48.1, ZERETH_MORTIS },
+			}),
+			q(64226, {	-- Security Measures
+				["sourceQuests"] = { 64225 },	-- Finding Firim
+				["provider"] = { "n", 177958 },	-- Firim
+				["coord"] = { 34.6, 48.1, ZERETH_MORTIS },
+			}),
+			q(64228, {	-- Now You May Speak
+				["sourceQuests"] = {
+					64227,	-- Unseen Agents
+					64226,	-- Security Measures
+				},
+				["provider"] = { "n", 177958 },	-- Firim
+				["coord"] = { 34, 48.1, ZERETH_MORTIS },
+			}),
+			q(65149, {	-- Surveying Cyphers
+				["sourceQuests"] = { 64228 },	-- Now You May Speak
+				["provider"] = { "n", 177958 },	-- Firim
+				["coord"] = { 34.6, 48.1, ZERETH_MORTIS },
+			}),
+			q(64230, {	-- Cyphers of the First Ones (PTR wants to stop here)
+				["description"] = "I werent able to complete this Quest. Contact Discord if you are able to complete it.",
+				["sourceQuests"] = { 65149 },	-- Surveying Cyphers
+				["provider"] = { "n", 177958 },	-- Firim
+				["coord"] = { 34.6, 48.1, ZERETH_MORTIS },
 			}),
 
 
@@ -220,14 +277,62 @@ root("Zones", m(SHADOWLANDS, {
 					i(189585),	-- E'rnee
 				}
 			}),
+
+
+			-- Drim Questline (Those are probably unlocked ones you Leave Firim first time. They were available after Chap 1 at least but you dont get to the hideout before Chap 3)
+			q(65463, {	-- The Wellspring of the First Ones (MIGHT BE SHAMAN ONLY?!) Might be Breadcrumb!
+				["sourceQuests"] = { 64951 },	-- The Road to Haven (or The Forces Gather(64958) or something inbetween)
+				["provider"] = { "n", 181084 },	-- Drim
+				["coord"] = { 61.4, 49.3, ZERETH_MORTIS },
+			}),
+			q(65349, {	-- Lost Grace
+				["sourceQuests"] = { 65463 },	-- The Wellspring of the First Ones (MIGHT BE SHAMAN ONLY?!) Might be Breadcrumb!
+				["provider"] = { "n", 182146 },	-- Olem
+				["coord"] = { 61.9, 53.5, ZERETH_MORTIS },
+			}),
+			q(65350, {	-- Restore the Flow
+				["description"] = "I werent able to complete this Quest. Contact Discord if you are able to complete it.",
+				["sourceQuests"] = { 65349 },	-- Lost Grace
+				["provider"] = { "n", 184537 },	-- Assistant Conservator Nadir
+				["coord"] = { 55, 50.3, ZERETH_MORTIS },
+			}),
+			q(65353, {	-- An Automa-free Diet
+				["sourceQuests"] = { 65349 },	-- Lost Grace
+				["provider"] = { "n", 184537 },	-- Assistant Conservator Nadir
+				["coord"] = { 55, 50.3, ZERETH_MORTIS },
+			}),
+
+
+			-- Firim Quests (Those are probably unlocked ones you Leave Firim first time. They were available after Chap 1 at least but you dont get to the hideout before Chap 3)
+			q(65460, {	-- Your First Cantaric Protolock
+				["sourceQuests"] = { 64951 },	-- The Road to Haven (or The Forces Gather(64958) or something inbetween)
+				["provider"] = { "n", 177958 },	-- Firim
+				["coord"] = { 34.6, 48.1, ZERETH_MORTIS },
+			}),
+			q(65461, {	-- Your First Mezzonic Protolock
+				["sourceQuests"] = { 64951 },	-- The Road to Haven (or The Forces Gather(64958) or something inbetween)
+				["provider"] = { "n", 177958 },	-- Firim
+				["coord"] = { 34.6, 48.1, ZERETH_MORTIS },
+			}),
+			q(65466, {	-- Your First Fugueal Protolock
+				["sourceQuests"] = { 64951 },	-- The Road to Haven (or The Forces Gather(64958) or something inbetween)
+				["provider"] = { "n", 177958 },	-- Firim
+				["coord"] = { 34.6, 48.1, ZERETH_MORTIS },
+			}),
 		}),
 	}),
 }));
 
 root("HiddenQuestTrigger", {
-	q(63850),	-- Triggered when enter ZM (Might be WQ)
+	q(63850),	-- Triggered when enter ZM (Might be WQ). Triggered again today while running around in ZM
 	q(63766),	-- Triggered when Exploring
 
 	-- Gravid Repose
 	q(65330),	-- Interior Locus Arrangement at Gravid Repose
+	q(65337),	-- First Locus arrangement at Gravid Repose
+	q(65339),	-- Second Locus arrangement at Gravid Repose
+	q(65338),	-- Third Locus arrangement at Gravid Repose
+	q(65340),	-- Fourth Locus arrangement at Gravid Repose
+	q(65341),	-- Fifth Locus arrangement at Gravid Repose
+	q(65342),	-- Ultimate Locus arrangement at Gravid Repose
 });
