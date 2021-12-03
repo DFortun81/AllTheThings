@@ -38,13 +38,13 @@ for _,g in ipairs({DUTIFUL_COST_GROUP,MARTIAL_COST_GROUP,UNTAMED_COST_GROUP,PRID
 		number = number +1;
 	end
 end
-local T2_DUITFUL_GROUP = {
+local T2_DUTIFUL_GROUP = {
 	i(181225),		-- Crossbow of Contemplative Calm
 	i(181226),		-- Bronze Dual-Bladed Glaive
 	i(181232),		-- Cupbearer's Claymore
 	i(181234),		-- Dutybound Spellblade
 };
-local T3_DUITFUL_GROUP = {
+local T3_DUTIFUL_GROUP = {
 	i(181228),		-- Temple Guard's Partisan
 	i(181229),		-- Tranquil's Censer
 	i(181230),		-- Pugilist's Chakram
@@ -52,7 +52,7 @@ local T3_DUITFUL_GROUP = {
 	i(180814),		-- Sable (PET!)
 	i(180815),		-- Brightscale Hatchling (PET!)
 };
-local T5_DUITFUL_GROUP = {
+local T5_DUTIFUL_GROUP = {
 	i(181227),		-- Bronze Ceremonial Targe
 	i(181231),		-- Broadbladed Severer
 	i(181235),		-- Final Arbiter's Gavel
@@ -260,9 +260,9 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									}),
 								}),
 								o(350978, {	-- Queen's Conservatory Cache
-									n(DUITFUL, {
+									n(DUTIFUL, {
 										["description"] = "Spirit quality affects loot chance.",
-										["g"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[1] },T2_DUITFUL_GROUP),
+										["g"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[1] },T2_DUTIFUL_GROUP),
 									}),
 									n(MARTIAL, {
 										["description"] = "Spirit quality affects loot chance.",
@@ -282,9 +282,9 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									}),
 								}),
 								o(350978, {	-- Queen's Conservatory Cache
-									n(DUITFUL, {
+									n(DUTIFUL, {
 										["description"] = "Spirit quality affects loot chance.",
-										["g"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[2] },T3_DUITFUL_GROUP),
+										["g"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[2] },T3_DUTIFUL_GROUP),
 									}),
 									n(MARTIAL, {
 										["description"] = "Spirit quality affects loot chance.",
@@ -423,9 +423,9 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 							["icon"] = "Interface\\Icons\\Ability_ardenweald_paladin_winter",
 							["g"] = {
 								o(350978, {	-- Queen's Conservatory Cache
-									n(DUITFUL, {
+									n(DUTIFUL, {
 										["description"] = "Spirit quality affects loot chance.",
-										["g"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[3] },T5_DUITFUL_GROUP),
+										["g"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[3] },T5_DUTIFUL_GROUP),
 									}),
 									n(MARTIAL, {
 										["description"] = "Spirit quality affects loot chance.",
@@ -528,7 +528,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 	}),
 })));
 
-for _,g in ipairs({T2_DUITFUL_GROUP,T2_MARTIAL_GROUP,T2_UNTAMED_GROUP,T2_PRIDEFUL_GROUP,T3_DUITFUL_GROUP,T3_MARTIAL_GROUP,T3_UNTAMED_GROUP,T3_PRIDEFUL_GROUP,T5_DUITFUL_GROUP,T5_MARTIAL_GROUP,T5_UNTAMED_GROUP,T5_PRIDEFUL_GROUP}) do
+for _,g in ipairs({T2_DUTIFUL_GROUP,T2_MARTIAL_GROUP,T2_UNTAMED_GROUP,T2_PRIDEFUL_GROUP,T3_DUTIFUL_GROUP,T3_MARTIAL_GROUP,T3_UNTAMED_GROUP,T3_PRIDEFUL_GROUP,T5_DUTIFUL_GROUP,T5_MARTIAL_GROUP,T5_UNTAMED_GROUP,T5_PRIDEFUL_GROUP}) do
 	for	_,t in ipairs(g) do
 		t.customCollect = nil;
 	end
