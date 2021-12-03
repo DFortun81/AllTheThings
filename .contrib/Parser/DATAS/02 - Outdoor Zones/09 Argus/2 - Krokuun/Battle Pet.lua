@@ -7,6 +7,17 @@ _.Zones =
 	m(905, {	-- Argus
 		m(830, {	-- Krokuun
 			petbattle(filter(BATTLE_PETS, {
+				p(2123, {	-- Bile Larva
+					["cr"] = 128162,
+				}),
+				p(2124, {	-- Bilescourge
+					["cr"] = 128164,
+					["coord"] = { 47.0, 46.8, 830 },
+				}),
+				p(2127, {	-- Flickering Argunite
+					["cr"] = 128166,
+					["coord"] = { 35.4, 64.5, 830 },
+				}),
 				ach(12088, {	-- Anomalous Animals of Argus
 					["groups"] = {
 						{
@@ -400,9 +411,6 @@ _.Zones =
 					},
 					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 				}),
-				p(2123),	-- Bile Larva
-				p(2124),	-- Bilescourge
-				p(2127),	-- Flickering Argunite
 			})),
 		}),
 	}),

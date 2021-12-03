@@ -290,51 +290,52 @@ _.Zones =
 						["provider"] = { "n", 120533 },	-- Prophet Velen
 						["sourceQuests"] = { 49014 },	-- The Burning Throne
 					}),
-					spell(253365, {	-- Krokuun Equipment
-						q(47967, {	-- An Argus Roper
-							["provider"] = { "n", 126160 },	-- Lead Rider Jerek
-							["sourceQuests"] = { 48460 },	-- The Wranglers [Breadcrumb - Required]
-						}),
-						q(48455, {	-- Duskcloak Problem
-							["provider"] = { "n", 126160 },	-- Lead Rider Jerek
-							["sourceQuests"] = { 48460 },	-- The Wranglers [Breadcrumb - Required]
-						}),
-						q(48453, {	-- Strike Back
-							["provider"] = { "n", 126160 },	-- Lead Rider Jerek
-							["sourceQuests"] = { 48460 },	-- The Wranglers [Breadcrumb - Required]
-						}),
-						q(48544, {	-- Woah, Nelly
-							["provider"] = { "n", 126160 },	-- Lead Rider Jerek
-							["sourceQuests"] = { 47967, 48455, 48453 },	-- An Argus Roper / Duskcloak Problem / Strike Back
-						}),
-						q(48441, {	-- Remnants of Darkfall Ridge
-							["provider"] = { "n", 119388 },	-- Chieftain Hatuun
-							["sourceQuests"] = { 48544 },	-- Woah, Nelly
-						}),
-						q(48442, {	-- Nath'raxas Hold: Preparations
-							["provider"] = { "n", 119388 },	-- Chieftain Hatuun
-							["sourceQuests"] = { 48441 },	-- Remnants of Darkfall Ridge
-						}),
-						q(48910, {	-- Supplying Krokuun
-							["provider"] = { "n", 119388 },	-- Chieftain Hatuun
-							["repeatable"] = true,
-							["sourceQuests"] = { 48442 },	-- Nath'raxas Hold: Preparations
-							["groups"] = {
-								i(152095),	-- Krokul Ridgestalker
-							},
-						}),
-						q(48443, {	-- Nath'raxas Hold: Rescue Mission
-							["provider"] = { "n", 119388 },	-- Chieftain Hatuun
-							["sourceQuests"] = { 48910 },	-- Supplying Krokuun
-						}),
-						q(48634, {	-- Further Supplying Krokuun
-							["provider"] = { "n", 119388 },	-- Chieftain Hatuun
-							["repeatable"] = true,
-							["sourceQuests"] = { 48443 },	-- Nath'raxas Hold: Rescue Mission
-							["groups"] = {
-								i(152095),	-- Krokul Ridgestalker
-							},
-						}),
+					q(47967, {	-- An Argus Roper
+						["provider"] = { "n", 126160 },	-- Lead Rider Jerek
+						["sourceQuests"] = { 48460 },	-- The Wranglers [Breadcrumb - Required]
+					}),
+					q(48455, {	-- Duskcloak Problem
+						["provider"] = { "n", 126160 },	-- Lead Rider Jerek
+						["sourceQuests"] = { 48460 },	-- The Wranglers [Breadcrumb - Required]
+					}),
+					q(48453, {	-- Strike Back
+						["provider"] = { "n", 126160 },	-- Lead Rider Jerek
+						["sourceQuests"] = { 48460 },	-- The Wranglers [Breadcrumb - Required]
+					}),
+					q(48544, {	-- Woah, Nelly
+						["provider"] = { "n", 126160 },	-- Lead Rider Jerek
+						["sourceQuests"] = { 47967, 48455, 48453 },	-- An Argus Roper / Duskcloak Problem / Strike Back
+					}),
+					q(48441, {	-- Remnants of Darkfall Ridge
+						["provider"] = { "n", 119388 },	-- Chieftain Hatuun
+						["sourceQuests"] = { 48544 },	-- Woah, Nelly
+					}),
+					q(48442, {	-- Nath'raxas Hold: Preparations
+						["provider"] = { "n", 119388 },	-- Chieftain Hatuun
+						["sourceQuests"] = { 48441 },	-- Remnants of Darkfall Ridge
+					}),
+					q(48910, {	-- Supplying Krokuun
+						["provider"] = { "n", 119388 },	-- Chieftain Hatuun
+						["isWeekly"] = true,
+						["sourceQuests"] = { 48442 },	-- Nath'raxas Hold: Preparations
+						["groups"] = {
+							i(152095),	-- Krokul Ridgestalker
+						},
+					}),
+					q(48443, {	-- Nath'raxas Hold: Rescue Mission
+						["provider"] = { "n", 119388 },	-- Chieftain Hatuun
+						["sourceQuests"] = { 48910 },	-- Supplying Krokuun
+					}),
+					q(48634, {	-- Further Supplying Krokuun
+						["provider"] = { "n", 119388 },	-- Chieftain Hatuun
+						["repeatable"] = true,
+						["sourceQuests"] = {
+							48443,	-- Nath'raxas Hold: Rescue Mission
+							48910,	-- Supplying Krokuun
+						},
+						["groups"] = {
+							i(152095),	-- Krokul Ridgestalker
+						},
 					}),
 					q(48016, {	-- Ascending Alchemy
 						["provider"] = { "n", 125346 },	-- Alchemist Funen

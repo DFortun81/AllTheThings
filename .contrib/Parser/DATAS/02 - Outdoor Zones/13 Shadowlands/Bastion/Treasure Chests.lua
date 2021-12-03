@@ -7,9 +7,6 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(BASTION, {
 			n(TREASURES, {
-				currency(1819, {	-- Medallion of Service
-					["customCollect"] = "SL_COV_KYR",	-- Kyrian
-				}),
 				i(180866),	-- Gilded Wader
 				o_repeated({
 				-- Rewards

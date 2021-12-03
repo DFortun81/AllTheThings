@@ -145,6 +145,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 			}),
 			q(61785, {	-- An Expected Visitor
 				["description"] = "Requires Renown 11.",
+				["sourceQuests"] = { 58181 },	-- Building the Base
 				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 				["coord"] = { 55.6, 42.2, ARCHONS_RISE },
 			}),
@@ -160,7 +161,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				},
 			}),
 			q(58557, {	-- Assistance from Sinfall
-			--	["sourceQuests"] = { 61878 },	-- Creat of Greatness
+				["sourceQuests"] = { 61878 },	-- Creat of Greatness
 				["description"] = "Requires Renown 13.",
 				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 				["coord"] = { 45.0, 56.9, ARCHONS_RISE },
@@ -387,7 +388,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 					57123,	-- Kyrian No More
 				},
 				["provider"] = { "n", 170375 },	-- Kleia
-				--["coord"] = { 30.1, 61.9, THE_MAW },
+				["coord"] = { 33.5, 56.4, THE_MAW },
 				["g"] = {
 					i(177051),	-- Selfless Bearer's Chest
 					i(174290),	-- Selfless Collector's Chestplate
@@ -493,12 +494,13 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["coord"] = { 68.3, 41.6, BASTION },
 			}),
 			q(57113, {	-- Lysonia's Trail
-				-- ["sourceQuests"] = {  },	--
+				["sourceQuests"] = { 61697 },	-- A New Age
 				["description"] = "Requires Renown 20.",
 				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 				["coord"] = { 55.6, 42.0, ARCHONS_RISE },
 			}),
 			q(58775, {	-- Meet the Queen
+				["sourceQuests"] = { 58571 },	-- The Seal of Contrition
 				["description"] = "Requires Renown 17.",
 				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 				["coord"] = { 55.6, 42.0, ARCHONS_RISE },
@@ -674,7 +676,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 			q(58857, {	-- Seeds Away!
 				["sourceQuests"] = { 58939 },	-- The Blue Seed
 				["provider"] = { "n", 162392 },	-- Willowblossom
-				-- no coords, is your 'pet'
+				["coord"] = { 50.8, 77.4, ARDENWEALD },
 			}),
 			q(58561, {	-- Shards of the Countess
 				["sourceQuests"] = {
@@ -864,6 +866,11 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["sourceQuests"] = { 58775 },	-- Meet the Queen
 				["description"] = "Drops from Sicklethorns while doing quest 'Who Are You Fooling?'",
 				["provider"] = { "i", 175982 },	-- Sicklethorn To-Do List
+				["coord"] = { 40.4, 54.7, ARDENWEALD },
+				["crs"] = {
+					161878, -- Sicklethorn Slicer
+					163363,	-- Sicklethorn Zapper
+				},
 			}),
 			q(61776, {	-- Trouble on the Western Front
 				["sourceQuests"] = {

@@ -263,6 +263,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										filter(CLOTH, {
 											i(181129, {	-- Soulbreaker's Burnished Drape
 												["classes"] = { MAGE, PRIEST, WARLOCK },
+												["description"] = "This cloak is only awarded to cloth characters.", -- Every class sees this cloak in the Appearance tab & can mog it, so we add a note.
 											}),
 											i(181123),	-- Soulbreaker's Burnished Handwraps
 											i(181124),	-- Soulbreaker's Burnished Hood
@@ -280,6 +281,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 											i(181062),	-- Burnished Death Shroud Breeches
 											i(181066, {	-- Burnished Death Shroud Cloak
 												["classes"] = { DRUID, MONK, ROGUE, DEMONHUNTER },
+												["description"] = "This cloak is only awarded to leather characters.", -- Every class sees this cloak in the Appearance tab & can mog it, so we add a note.
 											}),
 											i(181060),	-- Burnished Death Shroud Gloves
 											i(181061),	-- Burnished Death Shroud Hood
@@ -293,6 +295,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 											i(181092),	-- Fearstalker's Burnished Bracers
 											i(181093, {	-- Fearstalker's Burnished Cloak
 												["classes"] = { HUNTER, SHAMAN },
+												["description"] = "This cloak is only awarded to mail characters.", -- Every class sees this cloak in the Appearance tab & can mog it, so we add a note.
 											}),
 											i(181087),	-- Fearstalker's Burnished Gauntlets
 											i(181085),	-- Fearstalker's Burnished Hauberk
@@ -305,6 +308,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 											i(181023),	-- Dread Sentinel's Burnished Chestplate
 											i(181030, {	-- Dread Sentinel's Burnished Cloak
 												["classes"] = { DEATHKNIGHT, WARRIOR, PALADIN },
+												["description"] = "This cloak is only awarded to Plate characters.", -- Every class sees this cloak in the Appearance tab & can mog it, so we add a note.
 											}),
 											i(181028),	-- Dread Sentinel's Burnished Girdle
 											i(181024),	-- Dread Sentinel's Burnished Greatboots
