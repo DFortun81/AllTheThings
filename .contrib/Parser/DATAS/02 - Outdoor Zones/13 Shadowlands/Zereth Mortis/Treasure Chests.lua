@@ -8,6 +8,10 @@ root("Zones", m(SHADOWLANDS, {
 		--		["coord"] = { 51.6, 9.9, ZERETH_MORTIS },
 		--		["questID"] =
 		--	}),
+		--	o(,{	-- Provis Cache (Needs Keys)
+		--		["coord"] = { 42, 51.9, ZERETH_MORTIS },
+		--		["questID"] = 65447,
+		--	}),
 		--	o(,{	-- Stolen Relic
 		--		["coord"] = { 37.9, 65.2, ZERETH_MORTIS },
 		--		["questID"] = 65447,

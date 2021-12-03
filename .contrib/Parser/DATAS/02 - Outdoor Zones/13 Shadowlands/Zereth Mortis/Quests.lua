@@ -63,6 +63,85 @@ root("Zones", m(SHADOWLANDS, {
 			}),
 			--q(64958, {	-- The Forces Gather (Gives First Ach Crit when Completed)
 
+			-- Chapter 2
+			q(64794, {	-- Knowing is Half the Battle
+				["sourceQuests"] = { 64958 },	-- The Forces Gather
+				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
+				["coord"] = { 35, 64.6, ZERETH_MORTIS },
+			}),
+			q(64796, {	-- Scour The Sands
+				["sourceQuests"] = { 64794 },	-- Knowing is Half the Battle
+				["provider"] = { "n", 181180 },	-- Shandris Feathermoon
+				["coord"] = { 48.5, 49.2, ZERETH_MORTIS },
+			}),
+			q(64797, {	-- Harmony and Discord
+				["sourceQuests"] = { 64796 },	-- Scour The Sands
+				["provider"] = { "n", 182046 },	-- Shandris Feathermoon
+				["coord"] = { 48, 44.9, ZERETH_MORTIS },
+			}),
+			q(64814, {	-- Battle for the Forge
+				["sourceQuests"] = { 64797 },	-- Harmony and Discord
+				["provider"] = { "n", 181193 },	-- Highlord Darion Mograine
+				["coord"] = { 41.9, 48.1, ZERETH_MORTIS },
+			}),
+			q(64815, {	-- Together, We Ride
+				["sourceQuests"] = { 64797 },	-- Harmony and Discord
+				["provider"] = { "n", 181193 },	-- Highlord Darion Mograine
+				["coord"] = { 41.9, 48.1, ZERETH_MORTIS },
+			}),
+			q(64817, {	-- In Plain Sight
+				["sourceQuests"] = {
+					64814, -- Battle for the Forge
+					64815, -- Together, We Ride
+				},
+				["provider"] = { "n", 181193 },	-- Highlord Darion Mograine
+				["coord"] = { 41.9, 48.1, ZERETH_MORTIS },
+			}),
+			q(64818, {	-- Reinforcements May Be Necessary
+				["sourceQuests"] = { 64817 },	-- In Plain Sight
+				["provider"] = { "n", 183615 },	-- Highlord Darion Mograine
+				["coord"] = { 41.9, 48.1, ZERETH_MORTIS },
+			}),
+
+			q(64820, {	-- This Is Your Fault, Fix it
+				["sourceQuests"] = { 64818 },	-- Reinforcements May Be Necessary
+				["provider"] = { "n", 177486 },	-- Elder Kreth
+				["coord"] = { 34.8, 64.9, ZERETH_MORTIS },
+			}),
+			q(64821, {	-- Nothing is True
+				["sourceQuests"] = { 64818 },	-- Reinforcements May Be Necessary
+				["provider"] = { "n", 181183 },	-- Highlord Darion Mograine
+				["coord"] = { 35, 64.8, ZERETH_MORTIS },
+			}),
+			q(64822, {	-- A Break in Communcation
+				["sourceQuests"] = { 64818 },	-- Reinforcements May Be Necessary
+				["provider"] = { "n", 181183 },	-- Highlord Darion Mograine
+				["coord"] = { 35, 64.8, ZERETH_MORTIS },
+			}),
+			q(64823, {	-- Doppelganger Duel
+				["sourceQuests"] = {
+					64820,	-- This Is Your Fault, Fix it
+					64821,	-- Nothing is True
+					64822,	-- A Break in Communcation
+				},
+				["provider"] = { "n", 181183 },	-- Highlord Darion Mograine
+				["coord"] = { 35, 64.8, ZERETH_MORTIS },
+			}),
+			q(64824, {	-- Fighting For The Forge
+				["sourceQuests"] = { 64823 },	-- Doppelganger Duel
+				["provider"] = { "n", 183724 },	-- Lady Jaina Proudmoore
+				["coord"] = { 47.3, 63.6, ZERETH_MORTIS },
+			}),
+			q(64825, {	-- Seeking Haven (THE CRIT FOR CHAP 2.. THE END)
+				["sourceQuests"] = { 64824 },	--Fighting For The Forge
+				["provider"] = { "n", 183717 },	-- Lady Jaina Proudmoore
+				["coord"] = { 57, 53.6, ZERETH_MORTIS },
+			}),
+
+
+
+
+
 			-- Al'dalil/Cartel Xy Side Quest
 			q(64771, {	-- Enlightened Exodus
 				["sourceQuests"] = { 64958 },	-- The Forces Gather
@@ -101,6 +180,45 @@ root("Zones", m(SHADOWLANDS, {
 				["sourceQuests"] = { 64758 },	-- Following the Leader
 				["provider"] = { "n", 180936 },	-- Rana
 				["coord"] = { 31.7, 67.4, ZERETH_MORTIS },
+			}),
+
+
+			-- E'rnee Questline
+			q(65064, {	-- Look Who I Found!
+				["sourceQuests"] = { 64825 },	-- Seeking Haven
+				["provider"] = { "n", 184486 },	-- Tamra
+				["coord"] = { 34.7, 66.3, ZERETH_MORTIS },
+			}),
+			q(65066, {	-- Flora Aroma
+				["sourceQuests"] = { 65064 },	-- Look Who I Found!
+				["provider"] = { "n", 182346 },	-- Tamra
+				["coord"] = { 49.2, 71.8, ZERETH_MORTIS },
+			}),
+			q(65067, {	-- Broker Beaker
+				["sourceQuests"] = { 65064 },	-- Look Who I Found!
+				["provider"] = { "n", 182346 },	-- Tamra
+				["coord"] = { 49.2, 71.8, ZERETH_MORTIS },
+			}),
+			q(65068, {	-- Cascades of Magnitude
+				["sourceQuests"] = {
+					65066,	-- Flora Aroma
+					65067,	-- Broker Beaker
+				},
+				["provider"] = { "n", 182346 },	-- Tamra
+				["coord"] = { 49.2, 71.8, ZERETH_MORTIS },
+			}),
+			q(65069, {	-- Culling the Maelstorm
+				["sourceQuests"] = { 65068 },	-- Cascades of Magnitude
+				["provider"] = { "n", 182346 },	-- Tamra
+				["coord"] = { 49.2, 71.8, ZERETH_MORTIS },
+			}),
+			q(65070, {	-- Can I Keep Him?
+				["sourceQuests"] = { 65069 },	-- Culling the Maelstorm
+				["provider"] = { "n", 182346 },	-- Tamra
+				["coord"] = { 49.2, 71.8, ZERETH_MORTIS },
+				["g"] = {
+					i(189585),	-- E'rnee
+				}
 			}),
 		}),
 	}),

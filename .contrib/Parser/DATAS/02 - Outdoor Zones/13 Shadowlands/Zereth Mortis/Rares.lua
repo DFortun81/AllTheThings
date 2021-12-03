@@ -5,8 +5,11 @@ root("Zones", m(SHADOWLANDS, {
 	m(ZERETH_MORTIS, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
 			n(183953, {	-- Corrupted Architect
-				--["coord"] = { 59.6, 18.6, ZERETH_MORTIS },
+				["coord"] = { 47.5, 62.2, ZERETH_MORTIS },
 				["questID"] = 65273,
+			}),
+			n(184409, {	-- Euv'ouk
+				["coord"] = { 47.5, 45.1, ZERETH_MORTIS },
 			}),
 			n(182318, {	-- General Zarathura
 				["coord"] = { 59.6, 18.6, ZERETH_MORTIS },
@@ -26,9 +29,15 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 35.8, 71.2, ZERETH_MORTIS },
 				["questID"] = 65240,
 			}),
+			n(181249, {
+				["coord"] = { 54.5, 73.4, ZERETH_MORTIS },
+			}),
 			n(181360, {	--Vexis
 				["coord"] = { 39.6, 54.4, ZERETH_MORTIS },
 				["questID"] = 65239,
+			}),
+			n(183747, {	-- Vitiane
+				["coord"] = { 47, 47, ZERETH_MORTIS },
 			}),
 			n(183737, {	-- Xy'rath the Covetous
 				["coord"] = { 63.7, 49.1, ZERETH_MORTIS },

@@ -1087,8 +1087,8 @@ pet(188679, 3221);	--* Lightless Tormentor
 3173-- Bufonid Croaker Added Wild Pet
 3180
 3190
-3191
-3196
+3191-- Timid Leporid Wild
+3196-- Proto Avian Fledgling
 3200
 3202-- Tarachnid Stalker Wild
 3203
@@ -1096,12 +1096,12 @@ pet(188679, 3221);	--* Lightless Tormentor
 3206
 3208
 3209
-3210
+3210-- Green Viperid
 3212
 3213-- Vombata Pup Wild pet
-3214
+3214-- Momma Vombata
 3215
-3216
+3216-- Ambystan Snapper Wild
 3217
 3218
 3219
