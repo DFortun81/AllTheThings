@@ -127,7 +127,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				}),
 				q(1142, {	-- Mortality Wanes
 					["qg"] = 4510,	-- Heralath Fallowbrook
-					["coord"] = { 69.4, 67.6, TELDRASSIL },
+					["coord"] = { 69.4, 67.6, DARNASSUS },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
