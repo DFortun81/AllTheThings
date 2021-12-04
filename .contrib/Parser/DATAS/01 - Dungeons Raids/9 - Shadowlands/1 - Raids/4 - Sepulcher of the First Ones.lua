@@ -1,21 +1,34 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
---[[
+
 root("Instances", tier(SL_TIER, {
 	inst(1195, {	-- Sanctum of Domination
 		["isRaid"] = true,
-		["coord"] = { , , },
+		--["coord"] = { , , },
 		["order"] = "03",
 		["maps"] = {
-
+			2047,	-- Entrance
+			2048,	-- Cornerstone of Creation
+			2050,	-- Anduin
+			2061,	-- Devouring Pit
 		},
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(15400),	-- Where the Wild Beasts Are
+			}),
 			n(COMMON_BOSS_DROPS, {
 
 			}),
+			n(FLIGHT_PATHS, {
+				fp(2712, {	-- 9.2 Raid - Progenitor - Flight Path Console - Hub
+					["cr"] = 182431,	-- Ancient Translocator
+				}),
+				fp(2713, {	-- 9.2 Raid - Progenitor - Flight Path Console - Terrestrial 01
+					["cr"] = 182472,	-- Ancient Translocator
+				}),
+			}),
+			--[[
 			d(17, {	-- LFR
 				n(ZONE_DROPS, {
 
@@ -129,6 +142,7 @@ root("Instances", tier(SL_TIER, {
 					},
 				}),
 			}),
+			--]]
 			d(14, {	-- Normal
 				n(QUESTS, {
 
@@ -150,7 +164,7 @@ root("Instances", tier(SL_TIER, {
 					},
 				}),
 				e(2540, {	-- Dausegne, the Fallen Oracle
-					["crs"] = {  },	--
+					["crs"] = { 181224 },	-- Dausegne
 					["g"] = {
 						ach(15397),	-- Four Ring Circus
 					},
@@ -168,7 +182,7 @@ root("Instances", tier(SL_TIER, {
 					},
 				}),
 				e(2542, {	-- Skolex, the Insatiable Ravener
-					["crs"] = {  },	--
+					["crs"] = { 181395 },	-- Skolex
 					["g"] = {
 						ach(15401),	-- Wisdom Comes From the Desert
 					},
@@ -225,7 +239,7 @@ root("Instances", tier(SL_TIER, {
 					},
 				}),
 				e(2540, {	-- Dausegne, the Fallen Oracle
-					["crs"] = {  },	--
+					["crs"] = { 181224 },	-- Dausegne
 					["g"] = {
 
 					},
@@ -243,7 +257,7 @@ root("Instances", tier(SL_TIER, {
 					},
 				}),
 				e(2542, {	-- Skolex, the Insatiable Ravener
-					["crs"] = {  },	--
+					["crs"] = { 181395 },	-- Skolex
 					["g"] = {
 
 					},
@@ -299,7 +313,7 @@ root("Instances", tier(SL_TIER, {
 					},
 				}),
 				e(2540, {	-- Dausegne, the Fallen Oracle
-					["crs"] = {  },	--
+					["crs"] = { 181224 },	-- Dausegne
 					["g"] = {
 
 					},
@@ -317,7 +331,7 @@ root("Instances", tier(SL_TIER, {
 					},
 				}),
 				e(2542, {	-- Skolex, the Insatiable Ravener
-					["crs"] = {  },	--
+					["crs"] = { 181395 },	-- Skolex
 					["g"] = {
 
 					},
@@ -356,4 +370,3 @@ root("Instances", tier(SL_TIER, {
 		},
 	}),
 }));
---]]

@@ -280,7 +280,7 @@ root("Zones", m(SHADOWLANDS, {
 
 
 			-- Drim Questline (Those are probably unlocked ones you Leave Firim first time. They were available after Chap 1 at least but you dont get to the hideout before Chap 3)
-			q(65463, {	-- The Wellspring of the First Ones (MIGHT BE SHAMAN ONLY?!) Might be Breadcrumb!
+			q(65463, {	-- The Wellspring of the First Ones (Might be Breadcrumb!)
 				["sourceQuests"] = { 64951 },	-- The Road to Haven (or The Forces Gather(64958) or something inbetween)
 				["provider"] = { "n", 181084 },	-- Drim
 				["coord"] = { 61.4, 49.3, ZERETH_MORTIS },

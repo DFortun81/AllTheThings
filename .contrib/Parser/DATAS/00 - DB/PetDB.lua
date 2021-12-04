@@ -1089,7 +1089,7 @@ pet(188679, 3221);	--* Lightless Tormentor
 3190-- Vicious Leporid
 3191-- Timid Leporid Wild
 3196-- Proto Avian Fledgling
-3200
+3200-- Scarlet Proto Avian
 3202-- Tarachnid Stalker Wild
 3203-- Tarachnid Ambusher
 3205-- Metallic Scarabid
