@@ -288,6 +288,7 @@ _.ExpansionFeatures =
 						mission(1382, {	-- Win the Crowd
 							i(130169),	-- Tournament Favor
 						}),
+						-- Rep Insignias
 						i(152960),	-- Argussian Reach Insignia
 						i(152957),	-- Army of the Light Insignia
 						i(141340),	-- Court of Farondis Insignia
@@ -331,6 +332,12 @@ _.ExpansionFeatures =
 						un(REMOVED_FROM_GAME, i(139457)),	-- Odyn's Challenge -> Halls of Valor: Odyn's Challenge -> Halls of Valor
 						un(REMOVED_FROM_GAME, i(139473)),	-- Vial of Poisoned Blood -> Darkheart Thicket: Into Darkheart Thicket -> Darkheart Thicket
 						un(REMOVED_FROM_GAME, i(139475)),	-- Waterlogged Letter -> Maw of Souls: Into the Maw of Souls -> Maw of Souls
+						-- Follower Equipments
+						i(143850),	-- Summon Grimtotem Warrior (maybe put in Shaman class hall only)
+						i(139816),	-- Well-Worn Stone
+						i(152935),	-- Wakener's Bauble
+						i(151844),	-- Xenedar Armor Set
+						i(152931),	-- Xenic Tincture
 					},
 				}),
 			},
