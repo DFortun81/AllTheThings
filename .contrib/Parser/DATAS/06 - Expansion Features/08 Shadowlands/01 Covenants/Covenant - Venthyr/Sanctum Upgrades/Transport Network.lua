@@ -260,7 +260,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										i(183973),	-- Lost Winged Ritual Kris
 										i(183976),	-- Rogue Researcher's Dagger
 										i(183978, {	-- Silver-Etched Hopebreaker Dirk
-											["description"] = "Confirmed Drops: Hunter, Shaman",
+											["description"] = "Drops for any class.",
 										}),
 										filter(CLOTH, {
 											i(181129, {	-- Soulbreaker's Burnished Drape
