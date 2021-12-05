@@ -4,6 +4,28 @@
 local GRATEFUL = currency(GRATEFUL);
 local REGURGITATED_KYRIAN_WINGS = i(182749);	-- Regurgitated Kyrian Wings
 local AEGIS_OF_SALVATION = i(184365);	-- Aegis of Salvation
+local WINGFLAYTER_THE_CRUEL = n(167078, { -- Wingflayer the Cruel
+	["description"] = " Only a member of the |cFF516bfeKyrian Covenant|r who has channeled anima to Temple of Courage can click the bell.",
+	["questID"] = 60314,
+	["isDaily"] = true,
+	["coord"] = { 41.8, 55.4, BASTION },
+	["g"] = {
+		REGURGITATED_KYRIAN_WINGS,
+	},
+});
+local ORSTUS_AND_SOTIROS = n(156340, { -- Larionrider Orstus
+	["description"] = "Take the anima gateway and click the Black Bell.  Only a member of the |cFF516bfeKyrian Covenant|r who has channeled anima to Citadel of Loyalty can click the bell.",
+	["questID"] = 61634,
+	["isDaily"] = true,
+	["coord"] = { 24.5, 22.7, BASTION },
+	["crs"] = { 156339 },	-- Eliminator Sotiros
+	["g"] = {
+		i(184401, {	-- Larion Pouncer (PET!)
+			["description"] = "To be eligible to receive the pet, your Anima Conductor must be upgraded to Rank 3.",
+		}),
+		AEGIS_OF_SALVATION,
+	},
+});
 
 root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_KYR" }, {
 	n(KYRIAN, {
@@ -33,14 +55,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 								}),
 							}),
 							n(RARES, {
-								n(167078, { -- Wingflayer the Cruel
-									["questID"] = 60314,
-									["isDaily"] = true,
-									["coord"] = { 41.8, 55.4, BASTION },
-									["g"] = {
-										REGURGITATED_KYRIAN_WINGS,
-									},
-								}),
+								WINGFLAYTER_THE_CRUEL,
 							}),
 							n(TREASURES, {
 								o(356818, {	-- Penitence of Purity
@@ -113,18 +128,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 						}),
 						n(TIER_THREE, {
 							n(RARES, {
-								n(156340, { -- Larionrider Orstus
-									["questID"] = 61634,
-									["isDaily"] = true,
-									["coord"] = { 24.5, 22.7, BASTION },
-									["crs"] = { 156339 },	-- Eliminator Sotiros
-									["g"] = {
-										i(184401, {	-- Larion Pouncer (PET!)
-											["description"] = "To be eligible to receive the pet, your Anima Conductor must be upgraded to Rank 3.",
-										}),
-										AEGIS_OF_SALVATION,
-									},
-								}),
+								ORSTUS_AND_SOTIROS,
 							}),
 						}),
 					}),
@@ -134,9 +138,11 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 	}),
 })));
 
-GRATEFUL.customCollect = nil;
-REGURGITATED_KYRIAN_WINGS.customCollect = nil;
-AEGIS_OF_SALVATION.customCollect = nil;
+for _,g in ipairs({WINGFLAYTER_THE_CRUEL, ORSTUS_AND_SOTIROS ,{GRATEFUL,REGURGITATED_KYRIAN_WINGS,AEGIS_OF_SALVATION}}) do
+	for	_,t in ipairs(g) do
+		t.customCollect = nil;
+	end
+end
 
 root("HiddenQuestTriggers", {
 	q(61268),	-- Triggered from buff received from Kyrian Conductor Tier 3

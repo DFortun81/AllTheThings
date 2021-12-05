@@ -185,6 +185,8 @@ _.Zones =
 		}),
 	}),
 };
-root("HiddenQuestTrigger", {
-	--q(44352),	-- HQT for Quest according to discord the one on the boat below thunder totem
+--[[
+root("HiddenQuestTriggers", {
+	q(44352),	-- HQT for Quest according to discord the one on the boat below thunder totem
 });
+--]]

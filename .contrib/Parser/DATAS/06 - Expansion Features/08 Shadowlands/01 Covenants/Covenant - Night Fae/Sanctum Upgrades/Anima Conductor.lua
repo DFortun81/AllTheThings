@@ -14,6 +14,66 @@ local SILKY_SHIMMERMOTH = i(180748, {	-- Silky Shimmermoth (MOUNT)
 	["cost"] = { { "c", ANIMA, 5000 } },
 });
 local GREATAXE_OF_UNRELENTING_PURSUIT = i(180154);
+local STAR_LAKE_AMPHITHEATER = n(-934,   {	-- Star Lake Amphitheater
+	["description"] = "You have to be in the |cFFA330C9Night Fae|r covenant to personally summon mobs, but anyone can kill and loot the mobs if they are summoned by someone else.  Only one mob is summonable per day.",
+	["questID"] = 61633,
+	["isDaily"] = true,
+	["coord"] = { 41.5, 44.8, ARDENWEALD },
+	["icon"] = "Interface\\Icons\\inv_helm_mask_fittedalpha_b_01_nightborne_02",
+	["crs"] = { 171743 },	-- Dapperdew
+	["g"] = {
+		n(166135, {	-- Astra, As Azshara <An Infamous Queen>
+			["questID"] = 61201,
+			["isDaily"] = true,
+			["g"] = GLIMMERLIGHT_STAFF,
+		}),
+		n(166145, {	-- Dreamweaver, As N'Zoth <An Eldritch Abomination>
+			["questID"] = 61206,
+			["isDaily"] = true,
+			["g"] = TWILIGHT_BLOOM,
+		}),
+		n(166142, {	-- Glimmerdust, As Jaina <A Magic Ice Princess>
+			["questID"] = 61205,
+			["isDaily"] = true,
+			["g"] = EVERCHILL_BRAMBLES,
+		}),
+		n(166139, {	-- Glimmerdust, As Kil'jaeden <of The Burning Legion>
+			["questID"] = 61203,
+			["isDaily"] = true,
+			["g"] = GLIMMERDUSTS_GRAND_DESIGN,
+		}),
+		n(166138, {	-- Mi'kai, As Argus, the Unmaker <A Corrupted World Soul>
+			["isDaily"] = true,
+			["questID"] = 61202,
+			["g"] = MIKAI_DEATHSCYTHE,
+		}),
+		n(166146, {	-- Niya, As Xavius <Some Kind of Evil Sylvar>
+			["questID"] = 61207,
+			["isDaily"] = true,
+			["g"] = DREAMERS_MENDING,
+		}),
+		n(166140, {	-- Senthii, As Gul'dan <From an Alternate Timeline>
+			["questID"] = 61204,
+			["isDaily"] = true,
+			["g"] = MURMURS_IN_THE_DARK,
+		}),
+		n(163714, {	-- Master Clerk Salorn <Tickets and Patron Rewards>
+			["coord"] = { 43.0, 47.0, ARDENWEALD },
+			["g"] = SILKY_SHIMMERMOTH,	-- (MOUNT!)
+		}),
+	},
+});
+local VALFIR = n(168647, {	-- Valfir the Unrelenting
+	["description"] = "Requires a member of the |cFFA330C9Night Fae Covenant|r to channel anima to Tirna Scithe. Afterwards, you can loot the Animaseed Light at the boss to remove its veil.",
+	["questID"] = 61632,
+	["isDaily"] = true,
+	["coord"] = { 30.0, 55.0, ARDENWEALD },
+	["g"] = {
+		i(180730),	-- Wild Glimmerfur Prowler (MOUNT!)
+		GREATAXE_OF_UNRELENTING_PURSUIT,
+		i(182176),	-- Shadowstalker Soul
+	},
+});
 
 root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_NFA" }, {
 	n(NIGHT_FAE, {
@@ -43,55 +103,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 								}),
 							}),
 							n(RARES, {
-								n(-934,   {	-- Star Lake Amphitheater
-									["description"] = "You have to be in the |cFFA330C9Night Fae|r covenant to personally summon mobs, but anyone can kill and loot the mobs if they are summoned by someone else.  Only one mob is summonable per day.",
-									["questID"] = 61633,
-									["isDaily"] = true,
-									["coord"] = { 41.5, 44.8, ARDENWEALD },
-									["icon"] = "Interface\\Icons\\inv_helm_mask_fittedalpha_b_01_nightborne_02",
-									["crs"] = { 171743 },	-- Dapperdew
-									["g"] = {
-										n(166135, {	-- Astra, As Azshara <An Infamous Queen>
-											["questID"] = 61201,
-											["isDaily"] = true,
-											["g"] = GLIMMERLIGHT_STAFF,
-										}),
-										n(166145, {	-- Dreamweaver, As N'Zoth <An Eldritch Abomination>
-											["questID"] = 61206,
-											["isDaily"] = true,
-											["g"] = TWILIGHT_BLOOM,
-										}),
-										n(166142, {	-- Glimmerdust, As Jaina <A Magic Ice Princess>
-											["questID"] = 61205,
-											["isDaily"] = true,
-											["g"] = EVERCHILL_BRAMBLES,
-										}),
-										n(166139, {	-- Glimmerdust, As Kil'jaeden <of The Burning Legion>
-											["questID"] = 61203,
-											["isDaily"] = true,
-											["g"] = GLIMMERDUSTS_GRAND_DESIGN,
-										}),
-										n(166138, {	-- Mi'kai, As Argus, the Unmaker <A Corrupted World Soul>
-											["isDaily"] = true,
-											["questID"] = 61202,
-											["g"] = MIKAI_DEATHSCYTHE,
-										}),
-										n(166146, {	-- Niya, As Xavius <Some Kind of Evil Sylvar>
-											["questID"] = 61207,
-											["isDaily"] = true,
-											["g"] = DREAMERS_MENDING,
-										}),
-										n(166140, {	-- Senthii, As Gul'dan <From an Alternate Timeline>
-											["questID"] = 61204,
-											["isDaily"] = true,
-											["g"] = MURMURS_IN_THE_DARK,
-										}),
-										n(163714, {	-- Master Clerk Salorn <Tickets and Patron Rewards>
-											["coord"] = { 43.0, 47.0, ARDENWEALD },
-											["g"] = SILKY_SHIMMERMOTH,	-- (MOUNT!)
-										}),
-									},
-								}),
+								STAR_LAKE_AMPHITHEATER,
 							}),
 							n(TREASURES, {
 								o(356820, {	-- Large Lunarlight Pod
@@ -146,17 +158,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 						}),
 						n(TIER_THREE, {
 							n(RARES, {
-								n(168647, {	-- Valfir the Unrelenting
-									["description"] = "You can loot the Animaseed Light at the boss to remove its veil.",
-									["questID"] = 61632,
-									["isDaily"] = true,
-									["coord"] = { 30.0, 55.0, ARDENWEALD },
-									["g"] = {
-										i(180730),	-- Wild Glimmerfur Prowler (MOUNT!)
-										GREATAXE_OF_UNRELENTING_PURSUIT,
-										i(182176),	-- Shadowstalker Soul
-									},
-								}),
+								VALFIR,
 							}),
 						}),
 					}),
@@ -166,8 +168,10 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 	}),
 })));
 
-for _,t in ipairs({GRATEFUL,GLIMMERLIGHT_STAFF,TWILIGHT_BLOOM,EVERCHILL_BRAMBLES,GLIMMERDUSTS_GRAND_DESIGN,MIKAI_DEATHSCYTHE,DREAMERS_MENDING,MURMURS_IN_THE_DARK,SILKY_SHIMMERMOTH,GREATAXE_OF_UNRELENTING_PURSUIT}) do
-	t.customCollect = nil;
+for _,g in ipairs({STAR_LAKE_AMPHITHEATER, VALFIR ,{GRATEFUL,GLIMMERLIGHT_STAFF,TWILIGHT_BLOOM,EVERCHILL_BRAMBLES,GLIMMERDUSTS_GRAND_DESIGN,MIKAI_DEATHSCYTHE,DREAMERS_MENDING,MURMURS_IN_THE_DARK,SILKY_SHIMMERMOTH,GREATAXE_OF_UNRELENTING_PURSUIT}}) do
+	for	_,t in ipairs(g) do
+		t.customCollect = nil;
+	end
 end
 
 root("HiddenQuestTriggers", {

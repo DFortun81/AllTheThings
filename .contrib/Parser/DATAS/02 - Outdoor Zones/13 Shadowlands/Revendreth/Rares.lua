@@ -110,18 +110,6 @@ _.Zones =
 						i(182972),	-- Critter Two-Thumbs Portrait
 					},
 				}),
-				n(159496, {	-- Forgemaster Madalav
-					["description"] = "Can be killed and looted by any Covenant, but a member of the |cFFfe040fVenthyr Covenant|r must channel anima to Dominance Keep and click on |cFFFFFFFFMadalav's Hammer|r to summon the rare.",
-					["questID"] = 61618,
-					["isDaily"] = true,
-					["coord"] = { 32.6, 14.7, REVENDRETH },	-- Madalav's Hammer (to summon rare)
-					["g"] = {
-						i(180489),	-- Forgemaster's Many-Fold Rapier
-						i(180939, {	-- Mantle of the Forgemaster's Dark Blades
-							["customCollect"] = "SL_COV_VEN",	-- Venthyr
-						}),
-					},
-				}),
 				n(167464, {	-- Grand Arcanist Dimitri
 					["description"] = "Kill the Shrouded Ritualists to spawn the rare.",
 					["questID"] = 60173,
@@ -134,45 +122,6 @@ _.Zones =
 						i(180503),	-- Grand Arcanist's Soulblade
 						i(180708),	-- Mirror of Despair
 						i(180659),	-- Soul Siphoning Shard
-					},
-				}),
-				n(165290, {	-- Harika the Horrid
-					["description"] = "Can be killed and looted by any Covenant, but a member of the |cFFfe040fVenthyr Covenant|r must channel anima to Wanecrypt Hill to summon it. Use the Dredterror Ballista to make her attackable.",
-					["questID"] = 59612,
-					["isDaily"] = true,
-					["coord"] = { 45.8, 79.0, REVENDRETH },
-					["g"] = {
-						q(59607, {	-- Takin' Down the Beast
-							["description"] = "If this quest is offered, it must be completed to spawn the rare.",
-							["repeatable"] = true,
-							["crs"] = { 165327 },	-- Wingsmash
-							["coord"] = { 46.30, 77.86, REVENDRETH },
-							["cost"] = { { "i", 176397, 1 } },	-- 1x Dredhollow Bolt
-						}),
-						i(176397, {	-- Dredhollow Bolt
-							["coord"] = { 43.2, 77.6, REVENDRETH },	-- Dredhollow Bolt
-						}),
-						-- TODO: do they offer a quest to repair the ballista? have never seen it...
-						--n(165325, {	-- Muckborn Craftsman
-						--	["coord"] = { 46.0, 79.0, REVENDRETH },	-- Muckborn Craftsman
-						--	["g"] = {
-						--		--i(176396, {			-- Dredhollow Tools
-						--		--	["description"] = "Used to repair the Dredterror Ballista. Bring 2 of them to Muckborn Craftsman.",
-						--		--	["crs"] = { 165325 },	-- Muckborn Craftsman
-						--		--	["coords"] = {
-						--		--		{ 40.77, 72.70, REVENDRETH },	-- Tool1
-						--		--		{ 41.18, 74.67, REVENDRETH },	-- Tool2
-						--		--	},
-						--		--	["g"] = {
-						--		--	},
-						--		--}),
-						--	},
-						-- }),
-						i(180713),	-- Shrieker's Voicebox
-						i(180461, {	-- Horrid Dredwing (MOUNT!)
-							["customCollect"] = "SL_COV_VEN",	-- Venthyr covenant drop only
-						}),
-						i(183720),	-- Dredbatskin Jerkin
 					},
 				}),
 				n(166679, {	-- Hopecrusher

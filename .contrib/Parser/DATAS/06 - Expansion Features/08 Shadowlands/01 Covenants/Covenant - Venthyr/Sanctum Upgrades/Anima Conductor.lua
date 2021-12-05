@@ -5,6 +5,37 @@ local GRATEFUL = currency(GRATEFUL);
 local SHRIEKERS_VOICEBOX = i(180713);
 local DREDBATSKIN_JERKIN = i(183720);
 local FORGEMASTERS_MANYFOLD_RAPIER = i(180489);
+local HARIKA_THE_HORRID = n(165290, {	-- Harika the Horrid
+	["description"] = "Can be killed and looted by any Covenant, but a member of the |cFFfe040fVenthyr Covenant|r must channel anima to Wanecrypt Hill to summon it. Use the Dredterror Ballista to make her attackable.",
+	["questID"] = 59612,
+	["isDaily"] = true,
+	["coord"] = { 45.8, 79.0, REVENDRETH },
+	["g"] = {
+		q(59607, {	-- Takin' Down the Beast
+			["description"] = "If this quest is offered, it must be completed to spawn the rare.",
+			["repeatable"] = true,
+			["crs"] = { 165327 },	-- Wingsmash
+			["coord"] = { 46.30, 77.86, REVENDRETH },
+			["cost"] = { { "i", 176397, 1 } },	-- 1x Dredhollow Bolt
+		}),
+		i(176397, {	-- Dredhollow Bolt
+			["coord"] = { 43.2, 77.6, REVENDRETH },	-- Dredhollow Bolt
+		}),
+		SHRIEKERS_VOICEBOX,
+		i(180461),	-- Horrid Dredwing (MOUNT!)
+		DREDBATSKIN_JERKIN,
+	},
+});
+local FORGEMASTER_MADALAV = n(159496, {	-- Forgemaster Madalav
+	["description"] = "Can be killed and looted by any Covenant, but a member of the |cFFfe040fVenthyr Covenant|r must channel anima to Dominance Keep and click on |cFFFFFFFFMadalav's Hammer|r to summon the rare.",
+	["questID"] = 61618,
+	["isDaily"] = true,
+	["coord"] = { 32.6, 14.7, REVENDRETH },	-- Madalav's Hammer
+	["g"] = {
+		FORGEMASTERS_MANYFOLD_RAPIER,
+		i(180939),	-- Mantle of the Forgemaster's Dark Blades
+	},
+});
 
 root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_VEN" }, {
 	n(VENTHYR, {
@@ -34,27 +65,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 								}),
 							}),
 							n(RARES, {
-								n(165290, {	-- Harika the Horrid
-									["description"] = "Can be killed and looted by any Covenant, but a member of the |cFFfe040fVenthyr Covenant|r must channel anima to Wanecrypt Hill to summon it. Use the Dredterror Ballista to make her attackable.",
-									["questID"] = 59612,
-									["isDaily"] = true,
-									["coord"] = { 45.8, 79.0, REVENDRETH },
-									["g"] = {
-										q(59607, {	-- Takin' Down the Beast
-											["description"] = "If this quest is offered, it must be completed to spawn the rare.",
-											["repeatable"] = true,
-											["crs"] = { 165327 },	-- Wingsmash
-											["coord"] = { 46.30, 77.86, REVENDRETH },
-											["cost"] = { { "i", 176397, 1 } },	-- 1x Dredhollow Bolt
-										}),
-										i(176397, {	-- Dredhollow Bolt
-											["coord"] = { 43.2, 77.6, REVENDRETH },	-- Dredhollow Bolt
-										}),
-										SHRIEKERS_VOICEBOX,
-										i(180461),	-- Horrid Dredwing (MOUNT!)
-										DREDBATSKIN_JERKIN,
-									},
-								}),
+								HARIKA_THE_HORRID,
 							}),
 							n(TREASURES, {
 								o(356757, {	-- Greed's Desire
@@ -130,16 +141,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 						}),
 						n(TIER_THREE, {
 							n(RARES, {
-								n(159496, {	-- Forgemaster Madalav
-									["description"] = "Can be killed and looted by any Covenant, but a member of the |cFFfe040fVenthyr Covenant|r must channel anima to Dominance Keep and click on |cFFFFFFFFMadalav's Hammer|r to summon the rare.",
-									["questID"] = 61618,
-									["isDaily"] = true,
-									["coord"] = { 32.6, 14.7, REVENDRETH },	-- Madalav's Hammer
-									["g"] = {
-										FORGEMASTERS_MANYFOLD_RAPIER,
-										i(180939),	-- Mantle of the Forgemaster's Dark Blades
-									},
-								}),
+								FORGEMASTER_MADALAV,
 							})
 						}),
 					}),
@@ -149,6 +151,8 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 	}),
 })));
 
-for _,t in ipairs({GRATEFUL,SHRIEKERS_VOICEBOX,DREDBATSKIN_JERKIN,FORGEMASTERS_MANYFOLD_RAPIER}) do
-	t.customCollect = nil;
+for _,g in ipairs({HARIKA_THE_HORRID, FORGEMASTER_MADALAV ,{GRATEFUL,SHRIEKERS_VOICEBOX,DREDBATSKIN_JERKIN,FORGEMASTERS_MANYFOLD_RAPIER}}) do
+	for	_,t in ipairs(g) do
+		t.customCollect = nil;
+	end
 end
