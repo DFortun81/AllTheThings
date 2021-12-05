@@ -22,7 +22,13 @@ root("Zones", m(SHADOWLANDS, {
 					}),
 					q(65089, {	-- Frog'it
 						["coord"] = { 60, 68.8, ZERETH_MORTIS },
-					})
+					}),
+					q(65262, {	-- Save the Vombata
+						["coord"] = { 43.5, 63.7, ZERETH_MORTIS },
+					}),
+					q(65234, {	-- Sweet On Them
+						["coord"] = { 63, 58, ZERETH_MORTIS },
+					}),
 				})),
 			},
 		}),

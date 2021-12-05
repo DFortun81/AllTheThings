@@ -16,6 +16,7 @@ root("Zones", m(SHADOWLANDS, {
 			}),
 			n(180917, {	-- Destabilized Core
 				["coord"] = { 53.6, 44.4, ZERETH_MORTIS },
+				["questID"] = 64716,
 			}),
 			n(184409, {	-- Euv'ouk
 				["coord"] = { 47.5, 45.1, ZERETH_MORTIS },
@@ -33,8 +34,12 @@ root("Zones", m(SHADOWLANDS, {
 				["description"] = "Need to pull close by roots.",
 				["coord"] = { 52.9, 93.3, ZERETH_MORTIS },
 			}),
+			n(180978, {	-- Hirukon <Aurelid Prime>
+				["coord"] = { 52.2, 75.2, ZERETH_MORTIS },
+			}),
 			n(183814, {	-- Interred Colossus
 				["coord"] = { 58.6, 39, ZERETH_MORTIS },
+				["questID"] = 65257,
 			}),
 			n(178563, {	-- Hadeon the Stonebreaker
 				["coord"] = { 52.6, 25.1, ZERETH_MORTIS },
@@ -65,8 +70,9 @@ root("Zones", m(SHADOWLANDS, {
 				["questID"] = 65240,
 			}),
 			n(183925, {	-- Tahkwitz
-				["description"] = "I'm not sure how to get to him",
+				["description"] = "Use the cosmic enegry system behind the mountain. Work your way to the top level and then jump down to be able to pull him.",
 				["coord"] = { 50.4, 39.8, ZERETH_MORTIS },
+				["questID"] = 65272,
 			}),
 			n(181249, {	-- Tethos
 				["coord"] = { 54.5, 73.4, ZERETH_MORTIS },

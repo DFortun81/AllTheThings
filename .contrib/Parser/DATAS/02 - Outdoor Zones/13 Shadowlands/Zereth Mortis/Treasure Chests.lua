@@ -18,6 +18,11 @@ root("Zones", m(SHADOWLANDS, {
 		--		["coord"] = { 51.6, 9.9, ZERETH_MORTIS },
 		--		["questID"] = ??
 		--	}),
+			o(375369, {	-- Gnawed Valise
+				["description"] = "On the big rock.",
+				["coord"] = { 39, 73.2, ZERETH_MORTIS },
+				["questID"] = 65480,
+			}),
 			o(375272, {	-- Mawsworn Cache
 				["coord"] = { 60.6, 30.8, ZERETH_MORTIS },
 				["questID"] = 65441,

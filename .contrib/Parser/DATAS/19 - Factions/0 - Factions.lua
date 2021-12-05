@@ -236,6 +236,7 @@ _.Factions =
 		faction(2417),	-- Uldum Accord
 	}),
 	tier(SL_TIER, {
+		faction(2480),	-- Automa
 		faction(2413),	-- Court of Harvesters
 		faction(2464),	-- Court of Night
 		faction(2470, {	-- Death's Advance
@@ -280,6 +281,7 @@ _.Factions =
 				faction(2449),	-- The Countess
 			}),
 		}),
+		faction(2478),	-- The Enlightened
 		faction(2410),	-- The Undying Army
 		faction(2465),	-- The Wild Hunt
 		faction(2432),	-- Ve'nari

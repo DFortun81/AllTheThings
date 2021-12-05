@@ -14,7 +14,7 @@ root("Zones", m(SHADOWLANDS, {
 				["cr"] = 181362,
 			}),
 			pet(3206, {	-- Emerald Scarabid
-				["cr"] = 182961,
+				["cr"] = 182691,
 			}),
 			pet(3210, {	-- Green Viperid
 				["cr"] = 182768,

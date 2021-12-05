@@ -2150,6 +2150,7 @@ _.ObjectNames = {
 	[374976] = "Symphonic Vault",
 	[375272] = "Mawsworn Cache",
 	[375281] = "Stolen Relic",
+	[375369] = "Gnawed Valise",
 	[375382] = "Crushed Supply Crate",
 	[9999890] = "Corrupted Loot",
 	[9999891] = "Main Objective Only",
