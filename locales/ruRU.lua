@@ -2170,6 +2170,7 @@ for key,value in pairs({
 	[259871] = "Большой костер Альянса",	-- Alliance Bonfire
 	[259926] = "Большой костер Орды",	-- Horde Bonfire
 	[259927] = "Большой костер Альянса",	-- Alliance Bonfire
+	[265526] = "Сундук с сокровищами",	-- Treasure Chest
 	[265532] = "Телемантический маяк",	-- Telemancy Beacon
 	[266289] = "Затерянный во времени сундук",	-- Time Lost Chest
 	[266851] = "Жезл искусственной жизни",	-- Wand of Simulated Life

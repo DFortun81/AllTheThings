@@ -16,27 +16,12 @@ local CHRONICLE_OF_LOST_MEMORIES = i(184665, {	-- Chronicle of Lost Memories
 local MEMORY_OF_A_VITAL_SACRIFICE = i(183249, {	-- Memory of a Vital Sacrifice
 	["cost"] = { { "c", ANIMA, 250 } },	-- 250x Reservoir Anima
 });
-local THEOTAR_GROUP = {
-	i(182122),	-- Ardenwood Vermouth
-	i(178217),	-- Azurebloom Tea
-	i(178545),	-- Bone Apple Tea
-	i(169701),	-- Death Blossom
-	i(168589),	-- Marrowroot
-	i(178219),	-- Mulled Faewine
-	i(171315),	-- Nightshade
-	i(168586),	-- Rising Glory
-	i(179278),	-- Shadeskin Brandy
-	i(179992),	-- Shadespring Water
-	i(170554),	-- Vigil's Torch
-	i(168583),	-- Widowbloom
-};
 
 root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_VEN" }, {
 	n(VENTHYR, {
 		n(REWARDS, {
 			i(183699, {	-- Exquisite Ingredients
 				["description"] = "Only Obtainable from Theotar Soulbind.",
-				["g"] = THEOTAR_GROUP,
 			}),
 		}),
 		n(VENDORS, {
@@ -1448,10 +1433,8 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 	}),
 })));
 
-for _,g in ipairs({THEOTAR_GROUP,{CHRONICLE_OF_LOST_MEMORIES, MEMORY_OF_A_VITAL_SACRIFICE}}) do
-	for	_,t in ipairs(g) do
-		t.customCollect = nil;
-	end
+for _,t in ipairs({CHRONICLE_OF_LOST_MEMORIES, MEMORY_OF_A_VITAL_SACRIFICE}) do
+	t.customCollect = nil;
 end
 
 root("HiddenQuestTriggers", {

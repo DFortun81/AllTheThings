@@ -16,20 +16,12 @@ local CHRONICLE_OF_LOST_MEMORIES = i(184665, {	-- Chronicle of Lost Memories
 local MEMORY_OF_A_VITAL_SACRIFICE = i(183249, {	-- Memory of a Vital Sacrifice
 	["cost"] = { { "c", ANIMA, 250 } },	-- 250x Reservoir Anima
 });
-local PELAGOS_GROUP = {
-	i(172232),	-- Eternal Crystal
-	i(173204),	-- Lightless Silk
-	i(172231),	-- Sacred Shard
-	i(173202),	-- Shrouded Cloth
-	i(172230),	-- Soul Dust
-};
 
 root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_KYR" }, {
 	n(KYRIAN, {
 		n(REWARDS, {
 			i(183701, {	-- Cleansing Rite Materials
 				["description"] = "Only Obtainable via Pelagos Soulbind.",
-				["g"] = PELAGOS_GROUP,
 			}),
 		}),
 		n(VENDORS, {
@@ -1545,10 +1537,8 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 	}),
 })));
 
-for _,g in ipairs({PELAGOS_GROUP,{CHRONICLE_OF_LOST_MEMORIES, MEMORY_OF_A_VITAL_SACRIFICE}}) do
-	for	_,t in ipairs(g) do
-		t.customCollect = nil;
-	end
+for _,t in ipairs({CHRONICLE_OF_LOST_MEMORIES, MEMORY_OF_A_VITAL_SACRIFICE}) do
+	t.customCollect = nil;
 end
 
 root("HiddenQuestTriggers", {

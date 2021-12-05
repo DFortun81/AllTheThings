@@ -4,30 +4,12 @@
 local MEMORY_OF_A_VITAL_SACRIFICE = i(183249, {	-- Memory of a Vital Sacrifice
 	["cost"] = { { "c", ANIMA, 250 } },	-- 250x Reservoir Anima
 });
-local NIYA_GROUP = {
-	i(172052);	-- Aethereal Meat
-	i(172094);	-- Callous Hide
-	i(179314);	-- Creeping Crawler Meat
-	i(172089);	-- Desolate Leather
-	i(173037);	-- Elysian Thade
-	i(173033);	-- Iridescent Amberjack
-	i(173032);	-- Lost Sole
-	i(172092);	-- Pallid Bone
-	i(172055);	-- Phantasmal Haunch
-	i(173035);	-- Pocked Bonefish
-	i(172054);	-- Raw Seraphic Wing
-	i(179315);	-- Shadowy Shank
-	i(173034);	-- Silvergill Pike
-	i(173036);	-- Spinefin Piranha
-	i(172053);	-- Tenebrous Ribs
-};
 
 root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_NFA" }, {
 	n(NIGHT_FAE, {
 		n(REWARDS, {
 			i(183702, {	-- Nature's Splendor
 				["description"] = "Only Obtainable from Niya Soulbind.",
-				["g"] = NIYA_GROUP,
 			}),
 		}),
 		n(VENDORS, {
@@ -1398,11 +1380,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 	}),
 })));
 
-for _,g in ipairs({NIYA_GROUP,{MEMORY_OF_A_VITAL_SACRIFICE}}) do
-	for	_,t in ipairs(g) do
-		t.customCollect = nil;
-	end
-end
+MEMORY_OF_A_VITAL_SACRIFICE.customCollect = nil;
 
 root("HiddenQuestTriggers", {
 	q(61908),	-- Ensemble: Conservator's Warbark

@@ -2236,6 +2236,7 @@ for key, value in pairs({
 	[259871] = "联盟篝火",	-- Alliance Bonfire
 	[259926] = "部落篝火",	-- Horde Bonfire
 	[259927] = "联盟篝火",	-- Alliance Bonfire
+	[265526] = "宝箱",	-- Treasure Chest
 	[265532] = "传送道标",	-- Telemancy Beacon
 	--TODO: [266289] = "Time Lost Chest",	-- Time Lost Chest
 	[266851] = "模拟生命魔杖",	-- Wand of Simulated Life

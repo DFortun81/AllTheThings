@@ -2185,6 +2185,7 @@ for key,value in pairs({
 	[259871] = "Freudenfeuer der Allianz",	-- Alliance Bonfire
 	[259926] = "Freudenfeuer der Horde",	-- Horde Bonfire
 	[259927] = "Freudenfeuer der Allianz",	-- Alliance Bonfire
+	[265526] = "Schatztruhe",	-- Treasure Chest
 	[265532] = "Telemantischer Signalgeber",	-- Telemancy Beacon
 	[266289] = "Zeitverlorene Kiste",	-- Time Lost Chest
 	[266851] = "Zauberstab des simulierten Lebens",	-- Wand of Simulated Life
