@@ -109,6 +109,10 @@ _.Zones =
 						i(131927),	-- Shimmering Roc Feather
 					},
 				}),
+				o(265526, {	-- Treasure Chest
+					["coord"] = { 39, 54.5, HIGHMOUNTAIN },
+					["questID"] = 44731,
+				}),
 				o(243773, {	-- Treasure Chest
 					["questID"] = 39503,
 					["coord"] = { 47.6, 44.0, HIGHMOUNTAIN },
@@ -181,3 +185,6 @@ _.Zones =
 		}),
 	}),
 };
+root("HiddenQuestTrigger", {
+	--q(44352),	-- HQT for Quest according to discord the one on the boat below thunder totem
+});

@@ -14,7 +14,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				ach(13045),		-- Every Day I'm Truffling
-				ach(13279, {	-- Family Battler
+				petbattle(ach(13279, {	-- Family Battler
 					["collectible"] = false,
 					["g"] = {
 						ach(13280, {	-- Hobbyist Aquarist
@@ -188,7 +188,7 @@ _.Zones =
 							},
 						}),
 					},
-				}),
+				})),
 				ach(13051, {	-- Legends of the Tidesages
 					crit(1, {	-- Legends of the Tidesages - Part 1
 						["coord"] = { 49.51, 80.90, STORMSONG_VALLEY },

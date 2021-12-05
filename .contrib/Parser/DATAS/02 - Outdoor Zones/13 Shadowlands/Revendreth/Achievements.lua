@@ -7,7 +7,7 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(REVENDRETH, {
 			n(ACHIEVEMENTS, {
-				ach(14881, {	-- Abhorrent Adversaries of the Afterlife
+				petbattle(ach(14881, {	-- Abhorrent Adversaries of the Afterlife
 					["collectible"] = false,
 					["g"] = {
 						crit(5, {	-- Sewer Creeper
@@ -19,7 +19,7 @@ _.Zones =
 							["crs"] = { 175782 },	-- The Countess
 						}),
 					},
-				}),
+				})),
 				ach(14769, {	-- Bat!
 					["coords"] = {	-- there doesn't seem to be a way to track individual bat statue collection, no questID or anything
 						{ 21.7, 50.2, REVENDRETH },
@@ -36,7 +36,7 @@ _.Zones =
 				ach(14272, {	-- Best Bud With Benefits
 					["sourceQuests"] = { 58327 },	-- Snacks for Stonehead
 				}),
-				ach(14879, {	-- Family Exorcist
+				petbattle(ach(14879, {	-- Family Exorcist
 					["collectible"] = false,
 					["g"] = {
 						ach(14868, {	-- Aquatic Apparitions
@@ -210,7 +210,7 @@ _.Zones =
 							},
 						}),
 					},
-				}),
+				})),
 				ach(13878, {	-- The Master of Revendreth
 					crit(1, {	-- Welcome to Revendreth
 						["sourceQuests"] = { 56978 },	-- To Darkhaven

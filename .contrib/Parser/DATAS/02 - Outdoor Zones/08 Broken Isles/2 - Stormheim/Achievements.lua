@@ -8,7 +8,7 @@ _.Zones =
 		m(STORMHEIM, {
 			n(ACHIEVEMENTS, {
 				ach(11263),	-- Adventurer of Stormheim
-				ach(9696,  {	-- Family Familiar
+				petbattle(ach(9696,  {	-- Family Familiar
 					["collectible"] = false,
 					["filterID"] = BATTLE_PETS,
 					["groups"] = {
@@ -153,7 +153,7 @@ _.Zones =
 							},
 						}),
 					},
-				}),
+				})),
 				un(REMOVED_FROM_GAME, ach(11139, {	-- Field Medic!
 					["groups"] = {
 						un(REMOVED_FROM_GAME, title(340, {	-- TITLE: Field Medic!

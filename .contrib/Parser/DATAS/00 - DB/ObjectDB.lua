@@ -1452,6 +1452,7 @@ _.ObjectNames = {
 	[259871] = "Alliance Bonfire",
 	[259926] = "Horde Bonfire",
 	[259927] = "Alliance Bonfire",
+	[265526] = "Treasure Chest",
 	[265532] = "Telemancy Beacon",
 	[266289] = "Time Lost Chest",
 	[266851] = "Wand of Simulated Life",

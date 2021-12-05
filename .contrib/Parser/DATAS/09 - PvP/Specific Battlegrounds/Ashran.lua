@@ -462,6 +462,12 @@ _.PVP =
 						["coord"] = { 44.6, 74.0, 1478 },
 						["races"] = ALLIANCE_ONLY,
 					}),
+					q(56339, {	-- Tremblade Must Die
+						["provider"] = { "n", 84473 },	-- General Ushet Wolfbarger
+						["isWeekly"] = true,
+						["coord"] = { 45, 28.7, 1478 },
+						["races"] = HORDE_ONLY,
+					}),
 					i(112128, {	-- Blood Elf Ear
 						["repeatable"] = true,
 						["questID"] = 35937,	-- Blood Elf Ear

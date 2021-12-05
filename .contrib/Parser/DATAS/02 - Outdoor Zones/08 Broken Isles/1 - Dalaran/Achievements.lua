@@ -7,7 +7,7 @@ _.Zones =
 	m(BROKEN_ISLES, {
 		m(LEGION_DALARAN, {
 			n(ACHIEVEMENTS, {
-				ach(9696, {		-- Family Familiar
+				petbattle(ach(9696, {		-- Family Familiar
 					["collectible"] = false,
 					["filterID"] = BATTLE_PETS,
 					["g"] = {
@@ -232,7 +232,7 @@ _.Zones =
 							},
 						}),
 					},
-				}),
+				})),
 				ach(10585, {	-- Fel-Smelter
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {

@@ -425,7 +425,7 @@ _.Instances = { tier(MOP_TIER, {
 				["g"] = {
 					un(38, ach(8533)),	-- Ordos
 					un(38, i(104273, {	-- Flame-Scarred Cache of Offerings
-						["description"] = "Awarded if you fail your loot roll. Usually contains gold or crafting materials.",
+						["description"] = "Awarded if you fail your loot roll. Usually contains gold or crafting materials. May follow you actual specc instead of loot specc, please provide more information to ATT Discord.",
 						["g"] = {
 						--	NOTE FOR CONTRIBS: Only add items you receive to this. The old listings on WoWHead may be inaccurate or out of date.
 						--	it's likely that the commented items drop also.  if they get confirmed, uncomment them and adjust the unobtainable filter here + in Siege of Orgrimmar

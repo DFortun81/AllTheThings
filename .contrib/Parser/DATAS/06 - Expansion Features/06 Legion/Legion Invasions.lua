@@ -171,3 +171,8 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+
+root("HiddenQuestTriggers", {
+	q(46819),	-- Val'Shara Wrecked Cart
+	q(46830),	-- Val'Shara Battlefield
+});

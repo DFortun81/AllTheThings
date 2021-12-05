@@ -36,12 +36,19 @@ root("ExpansionFeatures", {
 				["races"] = HORDE_ONLY,
 				["classes"] = exclude(PRIEST, ALL_CLASSES),
 			}),
-			q(54114, {	-- Every Little Death Helps [Priest]
-				["sourceQuests"] = {
-					54265,	-- Orders from Azshara
-					54433,	-- Orders from Azshara
-				},
+			q(54114, {	-- Every Little Death Helps [A, Priest]
+				["sourceQuests"] = { 54265 },	-- Orders from Azshara
 				["classes"] = { PRIEST },
+				["races"] = ALLIANCE_ONLY,
+				["coords"] = {
+					{ 78.0, 36.7, ZULDAZAR },
+					{ 34.2, 31.8, STORMSONG_VALLEY },
+				},
+			}),
+			q(54118, {	-- Every Little Death Helps [H, Priest]
+				["sourceQuests"] = { 54433 },	-- Orders from Azshara
+				["classes"] = { PRIEST },
+				["races"] = HORDE_ONLY,
 				["coords"] = {
 					{ 78.0, 36.7, ZULDAZAR },
 					{ 34.2, 31.8, STORMSONG_VALLEY },

@@ -1141,6 +1141,13 @@ _.HiddenQuestTriggers = {
 		-------------------
 		--      MOP      --
 		-------------------
+		-- Sort later
+		q(30370),	--  popped after farmer fung is a farm helper
+		q(31317),	-- Popped when I found opened the cave entrance on the quest "old man thistle's treasure"
+		q(31318),	-- Popped when i found the treasure on that same quest
+		q(30373),	-- Jogu the drunk as farmhand
+		q(30365),	-- Chee chee farmhand tillers
+		--
 		q(37193),	-- looks like some unused version of "The King's Command", autocompleted when I picked up "Hero's Call: Jade Forest!" 49556 from Hero's Call Board
 		q(31485),	-- UNUSED — triggered after turning in quest #31281, "So You Want to Be a Chef..." in Valley of the Four Winds
 		q(31469),	-- UNUSED — triggered after turning in quest #31311, "Way of the Grill" in Vally of the Four Winds
@@ -1429,6 +1436,13 @@ _.HiddenQuestTriggers = {
 		-------------------
 		--      WOD      --
 		-------------------
+		-- Darkals HiddenQuestTriggers
+		q(39709),	-- First time this quest popped in WoD Garrison after opening some salvage crates. Then it unflagged on fresh toon, after I walked a little it got completed again
+		q(35653),	-- both these triggered turning in other quests in the lower area of draenor gorgrond
+		q(35431),	-- both these triggered turning in other quests in the lower area of draenor gorgrond
+		q(34565),	-- Was just walking in spires of arak and boom
+		q(35340),	-- ooks to have triggered when 35339 was turned in
+		q(36796),	-- turned in a group of quests in spires, might have triggered with 36790
 		--	QUESTING / LEVELING / VARIOUS
 		q(33550),	-- [NOTUSED]Vignette: Iron Horde Napmaster (triggers when looting The Crystal Blade of Torvath in WoD Shadowmoon Valley)
 		q(37187),	-- The Dark Portal

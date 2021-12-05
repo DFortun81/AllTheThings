@@ -7,7 +7,7 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(BASTION, {
 			n(ACHIEVEMENTS, {
-				ach(14881, {	-- Abhorrent Adversaries of the Afterlife
+				petbattle(ach(14881, {	-- Abhorrent Adversaries of the Afterlife
 					["collectible"] = false,
 					["g"] = {
 						crit(1, {	-- Crystalsnap
@@ -23,8 +23,8 @@ _.Zones =
 							["crs"] = { 175785 },	-- Kostos
 						}),
 					},
-				}),
-				ach(14879, {	-- Family Exorcist
+				})),
+				petbattle(ach(14879, {	-- Family Exorcist
 					["collectible"] = false,
 					["g"] = {
 						ach(14868, {	-- Aquatic Apparitions
@@ -198,7 +198,7 @@ _.Zones =
 							},
 						}),
 					},
-				}),
+				})),
 				ach(14281, {	-- The Path to Ascension
 					crit(1, {	-- Eternity's Call
 						["sourceQuests"] = { 57677 },	-- A Soulbind In Need
