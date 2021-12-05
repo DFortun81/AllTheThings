@@ -16,24 +16,12 @@ local CHRONICLE_OF_LOST_MEMORIES = i(184665, {	-- Chronicle of Lost Memories
 local MEMORY_OF_A_VITAL_SACRIFICE = i(183249, {	-- Memory of a Vital Sacrifice
 	["cost"] = { { "c", ANIMA, 250 } },	-- 250x Reservoir Anima
 });
-local HEIRMIR_GROUP = {
-	i(173109),	-- Angerseye
-	i(171833),	-- Elethium Ore
-	i(171828),	-- Laestrite Ore
-	i(173108),	-- Oriblase
-	i(171830),	-- Oxxein Ore
-	i(171831),	-- Phaedrum Ore
-	i(171832),	-- Sinvyr Ore
-	i(171829),	-- Solenium Ore
-	i(173110),	-- Umbryl
-};
 
 root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_NEC" }, {
 	n(NECROLORD, {
 		n(REWARDS, {
 			i(183703, {
 				["description"] = "Only Obtainable from Heirmir Soulbind.",
-				["g"] = HEIRMIR_GROUP,
 			}),
 		}),
 		n(VENDORS, {
@@ -1382,10 +1370,8 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 	}),
 })));
 
-for _,g in ipairs({HEIRMIR_GROUP,{CHRONICLE_OF_LOST_MEMORIES, MEMORY_OF_A_VITAL_SACRIFICE}}) do
-	for	_,t in ipairs(g) do
-		t.customCollect = nil;
-	end
+for _,t in ipairs({CHRONICLE_OF_LOST_MEMORIES, MEMORY_OF_A_VITAL_SACRIFICE}) do
+	t.customCollect = nil;
 end
 
 root("HiddenQuestTriggers", {
