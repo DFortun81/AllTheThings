@@ -2182,6 +2182,7 @@ for key,value in pairs({
 	[259871] = "Falò dell'Alleanza",	-- Alliance Bonfire
 	[259926] = "Falò dell'Orda",	-- Horde Bonfire
 	[259927] = "Falò dell'Alleanza",	-- Alliance Bonfire
+	[265526] = "Cassa del Tesoro",	-- Treasure Chest
 	[265532] = "Segnalatore Telemantico",	-- Telemancy Beacon
 	[266289] = "Cassa Perduta nel Tempo",	-- Time Lost Chest
 	[266851] = "Bacchetta della Vita Simulata",	-- Wand of Simulated Life
