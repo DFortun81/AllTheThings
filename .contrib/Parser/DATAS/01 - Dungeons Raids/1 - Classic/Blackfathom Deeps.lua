@@ -105,6 +105,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					["qg"] = 4787,	-- Argent Guard Thaelrid <The Argent Dawn>
 					["sourceQuest"] = 1198,	-- In Search of Thaelrid
 					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
 					["groups"] = {

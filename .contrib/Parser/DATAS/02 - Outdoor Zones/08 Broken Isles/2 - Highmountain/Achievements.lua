@@ -34,7 +34,7 @@ _.Zones =
 				ach(10398, {	-- Drum Circle
 					["description"] = "This achievement can be soloed since after 'Battle for Azeroth'. Repeatedly jump for 1-3 minutes in the middle ring on the lower floor of Thunder Totem. It CANNOT be completed while you are on 'Assault on Thunder Totem' and you must be able to hear the drum beats to know the achievement is working."
 				}),
-				ach(9696,  {	-- Family Familiar
+				petbattle(ach(9696,  {	-- Family Familiar
 					["collectible"] = false,
 					["filterID"] = BATTLE_PETS,
 					["groups"] = {
@@ -222,7 +222,7 @@ _.Zones =
 							i(137298),		-- Zoom
 						}),
 					},
-				}),
+				})),
 				un(REMOVED_FROM_GAME, ach(11139, {	-- Field Medic!
 					un(REMOVED_FROM_GAME, title(340, {	-- TITLE: Field Medic!
 						["description"] = "WARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",

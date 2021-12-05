@@ -97,7 +97,7 @@ _.Zones =
 						},
 					}),
 				}),
-				ach(13625, {	-- Mighty Minions of Mechagon
+				petbattle(ach(13625, {	-- Mighty Minions of Mechagon
 					crit(5, {	-- CK-9 Micro-Oppression Unit
 						["crs"] = { 154926 },	-- CK-9 Micro-Oppression Unit
 						["coord"] = { 65.4, 57.6, MECHAGON },
@@ -130,7 +130,7 @@ _.Zones =
 						["crs"] = { 154929 },	-- Unit 17
 						["coord"] = { 72.1, 72.9, MECHAGON },
 					}),
-				}),
+				})),
 				ach(13708),		-- Most Minis Wins
 				ach(13696, {	-- Scrappy's Best Friend
 					["description"] = "When you find Scrappy, use an |Cff0070ddEnergy Cell|r to revive him and then feed him two |CffffffffMechano-Treats|r.  He runs around after being revived, so if you can't find him try using a /tar macro in the general Rustbolt area.",

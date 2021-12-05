@@ -209,7 +209,7 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(13279, {	-- Family Battler
+				petbattle(ach(13279, {	-- Family Battler
 					["collectible"] = false,
 					["g"] = {
 						ach(13280, {	-- Hobbyist Aquarist
@@ -423,7 +423,7 @@ _.Zones =
 							},
 						}),
 					},
-				}),
+				})),
 				ach(13087, {	-- Sausage Sampler
 					["description"] = "Can be completed as Horde by purchasing items on the AH.",
 					["g"] = {

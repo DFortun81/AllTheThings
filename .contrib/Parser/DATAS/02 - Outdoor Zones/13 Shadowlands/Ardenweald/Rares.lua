@@ -236,86 +236,6 @@ _.Zones =
 						i(180164),	-- Soultwister's Scythe
 					},
 				}),
-				n(-934,   {	-- Star Lake Amphitheater
-					["description"] = "You have to be in the |cFFA330C9Night Fae|r covenant to personally summon mobs, but anyone can kill and loot the mobs if they are summoned by someone else.  Only one mob is summonable per day.",
-					["questID"] = 61633,	-- this appears to trigger for all rares.  move to HQT if this changes, only 2 tested so far
-					["isDaily"] = true,
-					["coord"] = { 41.5, 44.8, ARDENWEALD },
-					["icon"] = "Interface\\Icons\\inv_helm_mask_fittedalpha_b_01_nightborne_02",
-					["crs"] = { 171743 },	-- Dapperdew
-					["g"] = {
-						n(166135, {	-- Astra, As Azshara <An Infamous Queen>
-							["questID"] = 61201,
-							["isDaily"] = true,
-							["g"] = {
-								crit(6, {	-- Azshara
-									["achievementID"] = 14353,	-- Ardenweald's a Stage
-								}),
-								i(179518),	-- Glimmerlight Staff
-							},
-						}),
-						n(166145, {	-- Dreamweaver, As N'Zoth <An Eldritch Abomination>
-							["questID"] = 61206,
-							["isDaily"] = true,
-							["g"] = {
-								crit(7, {	-- N'zoth
-									["achievementID"] = 14353,	-- Ardenweald's a Stage
-								}),
-								i(182453),	-- Twilight Bloom
-							},
-						}),
-						n(166142, {	-- Glimmerdust, As Jaina <A Magic Ice Princess>
-							["questID"] = 61205,
-							["isDaily"] = true,
-							["g"] = {
-								crit(5, {	-- Jaina
-									["achievementID"] = 14353,	-- Ardenweald's a Stage
-								}),
-								i(182452),	-- Everchill Brambles
-							},
-						}),
-						n(166139, {	-- Glimmerdust, As Kil'jaeden <of The Burning Legion>
-							["questID"] = 61203,
-							["isDaily"] = true,
-							["g"] = {
-								crit(3, {	-- Kil'jaeden
-									["achievementID"] = 14353,	-- Ardenweald's a Stage
-								}),
-								i(182451),	-- Glimmerdust's Grand Design
-							},
-						}),
-						n(166138, {	-- Mi'kai, As Argus, the Unmaker <A Corrupted World Soul>
-							["isDaily"] = true,
-							["questID"] = 61202,
-							["g"] = {
-								crit(4, {	-- Argus, The Unmaker
-									["achievementID"] = 14353,	-- Ardenweald's a Stage
-								}),
-								i(179534),	-- Mi'kai's Deathscythe
-							},
-						}),
-						n(166146, {	-- Niya, As Xavius <Some Kind of Evil Sylvar>
-							["questID"] = 61207,
-							["isDaily"] = true,
-							["g"] = {
-								crit(1, {	-- Xavius
-									["achievementID"] = 14353,	-- Ardenweald's a Stage
-								}),
-								i(182455),	-- Dreamer's Mending
-							},
-						}),
-						n(166140, {	-- Senthii, As Gul'dan <From an Alternate Timeline>
-							["questID"] = 61204,
-							["isDaily"] = true,
-							["g"] = {
-								crit(2, {	-- Gul'dan
-									["achievementID"] = 14353,	-- Ardenweald's a Stage
-								}),
-								i(182454),	-- Murmurs in the Dark
-							},
-						}),
-					},
-				}),
 				n(167721, {	-- The Slumbering Emperor
 					["description"] = "You can use various toys (Darkmoon Cannon, Phial of Ravenous Slime), pet abilities, and AoE abilities to pull this rare.  If you need help not falling asleep, pulling a nearby Greater Ardenmoth can apply a poison that will give you a few more seconds by waking you up with each tick.",
 					["questID"] = 60290,	-- no other quest popped
@@ -327,22 +247,6 @@ _.Zones =
 						}),
 						i(175711),	-- Slumberwood Band
 						i(183828),	-- Friendly Bugs
-					},
-				}),
-				n(168647, {	-- Valfir the Unrelenting
-					["description"] = "Requires a member of the |cFFA330C9Night Fae Covenant|r to channel anima to Tirna Scithe. Afterwards, you can loot the Animaseed Light at the boss to remove its veil.",
-					["questID"] = 61632,
-					["isDaily"] = true,
-					["coord"] = { 30.0, 55.0, ARDENWEALD },
-					["g"] = {
-						crit(19, {	-- Valfir the Unrelenting
-							["achievementID"] = 14309,	-- Adventurer of Ardenweald
-						}),
-						i(180730, {	-- Wild Glimmerfur Prowler (MOUNT!)
-							["customCollect"] = "SL_COV_NFA",	-- Night Fae covenant drop only
-						}),
-						i(180154),	-- Greataxe of Unrelenting Pursuit
-						i(182176),	-- Shadowstalker Soul
 					},
 				}),
 				n(164147, {	-- Wrigglemortis

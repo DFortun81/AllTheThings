@@ -4,6 +4,29 @@
 local GRATEFUL = currency(GRATEFUL);
 local AMALGAMTED_FORWORNS_JOURNAL = i(184298);
 local TEMPERED_BONEPLASTE_WAISTGUARD = i(184291);
+local GIEGER = n(162741, {	-- Gieger <Experimental Construct>
+	["description"] = "A member of the |cFF40bf40Necrolord Covenant|r must channel anima to the House of Constructs to summon him.",
+	["questID"] = 58872,
+	["isDaily"] = true,
+	["coord"] = { 31.4, 35.4, MALDRAXXUS },
+	["cr"] = 162815,	-- Final Thread
+	["g"] = {
+		i(182080),	-- Predatory Plagueroc (MOUNT!)
+		AMALGAMTED_FORWORNS_JOURNAL,
+		i(183754),	-- Stitchflesh's Design Notes
+	},
+});
+local SABRIEL = n(168147, { -- Sabriel the Bonecleaver
+	["description"] = "Can be killed and looted by any Covenant, but a member of the |cFF40bf40Necrolord Covenant|r must channel anima to the Theater of Pain and pick up the daily quest |cFF349cffSpoiling For A Fight|r to add Sabriel to the arena's rotation.",
+	["isDaily"] = true,
+	["questID"] = 58784,
+	["coord"] = { 50.4, 48.2, MALDRAXXUS },
+	["crs"] = { 168148 },	-- Drolkrad
+	["g"] = {
+		i(181815),	-- Armored Bonehoof Tauralus (MOUNT!)
+		TEMPERED_BONEPLASTE_WAISTGUARD,
+	},
+});
 
 root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_NEC" }, {
 	n(NECROLORD, {
@@ -33,17 +56,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 								}),
 							}),
 							n(RARES, {
-								n(162741, {	-- Gieger <Experimental Construct>
-									["questID"] = 58872,
-									["isDaily"] = true,
-									["coord"] = { 31.4, 35.4, MALDRAXXUS },
-									["cr"] = 162815,	-- Final Thread
-									["g"] = {
-										i(182080),	-- Predatory Plagueroc (MOUNT!)
-										AMALGAMTED_FORWORNS_JOURNAL,
-										i(183754),	-- Stitchflesh's Design Notes
-									},
-								}),
+								GIEGER,
 							}),
 							n(TREASURES, {
 								o(355035, {	-- Treasure: House of the Chosen -- TODO: proper objectID
@@ -80,7 +93,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["coord"] = { 49.0, 36.0, MALDRAXXUS },
 								}),
 								q(62390, {	-- Body Count
-
 									["provider"] = { "n", 167603 },	-- Fixer Bixie
 									["coord"] = { 49.0, 36.0, MALDRAXXUS },
 								}),
@@ -97,7 +109,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["coord"] = { 51.2, 16.8, MALDRAXXUS },
 								}),
 								q(58260, {	-- Queens and Future Kings
-
 									["provider"] = { "n", 167603 },	-- Fixer Bixie
 									["coord"] = { 49.0, 36.0, MALDRAXXUS },
 								}),
@@ -134,17 +145,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["isDaily"] = true,
 									["coord"] = { 53.6, 47.6, MALDRAXXUS },
 								}),
-								n(168147, { -- Sabriel the Bonecleaver
-									["description"] = "Can be killed and looted by any Covenant, but a member of the |cFF40bf40Necrolord Covenant|r must channel anima to the Theater of Pain and pick up the daily quest |cFF349cffSpoiling For A Fight|r to add Sabriel to the arena's rotation.",
-									["isDaily"] = true,
-									["questID"] = 58784,
-									["coord"] = { 50.4, 48.2, MALDRAXXUS },
-									["crs"] = { 168148 },	-- Drolkrad
-									["g"] = {
-										i(181815),	-- Armored Bonehoof Tauralus (MOUNT!)
-										TEMPERED_BONEPLASTE_WAISTGUARD,
-									},
-								}),
+								SABRIEL,
 							}),
 						}),
 					}),
@@ -154,9 +155,11 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 	}),
 })));
 
-GRATEFUL.customCollect = nil;
-AMALGAMTED_FORWORNS_JOURNAL.customCollect = nil;
-TEMPERED_BONEPLASTE_WAISTGUARD.customCollect = nil;
+for _,g in ipairs({GIEGER, SABRIEL ,{GRATEFUL,AMALGAMTED_FORWORNS_JOURNAL,TEMPERED_BONEPLASTE_WAISTGUARD}}) do
+	for	_,t in ipairs(g) do
+		t.customCollect = nil;
+	end
+end
 
 root("HiddenQuestTriggers", {
 	q(61187),	-- Rank 3 Buff - Skeleton Command

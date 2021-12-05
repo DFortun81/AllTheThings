@@ -14,7 +14,7 @@ _.Zones =
 					["coord"] = { 36.7, 36.7, ARDENWEALD },
 				}),
 				fp(2586, {	-- Ardenweald, Hibernal Hollow
-					["coord"] = { 40.3, 53.4, ARDENWEALD },
+					["coord"] = { 60.3, 53.4, ARDENWEALD },
 				}),
 				fp(2590, {	-- Ardenweald, Refugee Camp
 					["coord"] = { 92.9, 51.5, ARDENWEALD },

@@ -717,3 +717,7 @@ _.Zones =
 		}),
 	}),
 };
+
+root("HiddenQuestTriggers",{
+	q(32261),	-- Alliance Quest Choice: PvP
+});

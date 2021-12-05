@@ -21,6 +21,11 @@ _.Zones =
 						49542,	-- Warchief's Command: Townlong Steppes!
 					},
 				}),
+				q(31198, {	-- A Morale Victory
+					["coord"] = { 49, 71.2, TOWNLONG_STEPPES },
+					["provider"] = { "n", 63614 },	-- Ling of the Six Pools
+					["isDaily"] = true,
+				}),
 				q(30964, {	-- A Proper Poultice
 					["coord"] = { 49.1, 71.3, TOWNLONG_STEPPES },
 					["provider"] = { "n", 61625 },	-- Provisioner Bamfu
@@ -988,3 +993,7 @@ _.Zones =
 		}),
 	}),
 };
+
+root("HiddenQuestTriggers", {
+	q(31214),	-- FLAG - Chose Nurong
+});

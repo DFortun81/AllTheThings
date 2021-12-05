@@ -112,7 +112,9 @@ _.PVP =
 					i(162956),	-- Dread Aspirant's Plate Girdle (H)
 					i(162932),	-- Dread Aspirant's Plate Helm (H)
 					i(162948),	-- Dread Aspirant's Plate Legguards (H)
-					i(162953),	-- Dread Aspirant's Plate Pauldrons (H)
+					i(162953, {	-- Dread Aspirant's Plate Pauldrons (H)
+						["races"] = HORDE_ONLY,
+					}),
 					i(162937),	-- Dread Aspirant's Plate Warboots (H)
 				}),
 				n(BACK, {

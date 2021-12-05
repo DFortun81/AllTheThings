@@ -15,11 +15,11 @@ _.Zones =
 				},
 				["pvp"] = true,
 			}),
-			ach(13715, {	-- From the Belly of the Jelly
+			petbattle(ach(13715, {	-- From the Belly of the Jelly
 				["filterID"] = BATTLE_PETS,
-			}),
+			})),
 			ach(13692),		-- Give Me the Biggest Bag You've Got
-			ach(13626, {	-- Nautical Nuisances of Nazjatar
+			petbattle(ach(13626, {	-- Nautical Nuisances of Nazjatar
 				["filterID"] = BATTLE_PETS,
 				["g"] = {
 					crit(2, {	-- Chomp
@@ -73,7 +73,7 @@ _.Zones =
 						["coord"] = { 37.5, 16.7, 1355 },
 					}),
 				},
-			}),
+			})),
 			pvp(ach(13569)),	-- Tour of Duty: Nazjatar
 			ach(13638, {	-- Undersea Usurper
 				i(169194),		-- Snapback Scuttler

@@ -84,10 +84,9 @@ _.Zones =
 						n(66354, {	-- Master Cannon <Tanner>
 							["description"] = "All items on this vendor are quest rewards. You must have completed the quest to purchase the reward.|r",
 							["g"] = {
-								-- biting/formidable/serene yellow belt currently bugged. Removed in 8.0.1
-								un(REMOVED_FROM_GAME, i(89555)),	-- Biting Yellow Belt
-								un(REMOVED_FROM_GAME, i(89556)),	-- Formidable Yellow Belt
-								un(REMOVED_FROM_GAME, i(89558)),	-- Serene Yellow Belt
+								i(89555),	-- Biting Yellow Belt
+								i(89556),	-- Formidable Yellow Belt
+								i(89558),	-- Serene Yellow Belt
 								i(89562),	-- Green Belt of Hushed Wisdom
 								i(89561),	-- Green Belt of Quiet Understanding
 								i(89550),	-- Headband of the Coiled Serpent

@@ -7,7 +7,7 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(MALDRAXXUS, {
 			n(ACHIEVEMENTS, {
-				ach(14881, {	-- Abhorrent Adversaries of the Afterlife
+				petbattle(ach(14881, {	-- Abhorrent Adversaries of the Afterlife
 					["collectible"] = false,
 					["g"] = {
 						crit(8, {	-- Gelatinous
@@ -19,7 +19,7 @@ _.Zones =
 							["crs"] = { 175786 },	-- Glurp
 						}),
 					},
-				}),
+				})),
 				ach(14206, {	-- Blade of the Primus
 					crit(1, {	-- Champion of Pain
 						["sourceQuests"] = { 57515 },	-- The House of the Chosen
@@ -46,7 +46,7 @@ _.Zones =
 				ach(14802, {	-- Bloodsport
 				--	TODO: does this require being on/having completed The Ladder or can you get credit before 'unlocking' the arena?
 				}),
-				ach(14879, {	-- Family Exorcist
+				petbattle(ach(14879, {	-- Family Exorcist
 					["collectible"] = false,
 					["g"] = {
 						ach(14868, {	-- Aquatic Apparitions
@@ -220,7 +220,7 @@ _.Zones =
 							},
 						}),
 					},
-				}),
+				})),
 				ach(14626, {	-- Harvester of Sorrow
 				--	TODO: figure out a better way to display these?  maybe secrets?  maybe in a treasures header?  maybe the 'special' header?
 				--	the 'harvester of sorrow' achievement is granted by looting 'sorrowbane,' the pet is granted by looting oonar's arm... both have similarly convoluted loot methods and, from what i can tell, the objects are connected to each other.  this WAS part of the 'treasures of maldraxxus' achievement, but was moved to be its own thing

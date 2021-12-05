@@ -1499,6 +1499,7 @@ applyclassicphase(PHASE_SIX,
 						}),
 						q(9233, {	-- Omarion's Handbook
 							["provider"] = { "i", 22719 },	-- Omarion's Handbook
+							["description"] = "You must not have a profession above 270 skill for you to get this item from Omarion.",
 							["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
 							["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
 							["lvl"] = 60,

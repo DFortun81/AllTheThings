@@ -8271,8 +8271,6 @@ app.events.TAXIMAP_OPENED = function()
 				end
 			end
 		end
-		-- Need to update the dynamic Flight Paths category as well
-		app.UpdateGroup(app.Categories, app.FlightPathsCategory);
 		UpdateRawIDs("flightPathID", newFPs);
 	end
 end
@@ -14431,6 +14429,9 @@ RowOnEnter = function (self)
 			end
 			AttachTooltipSearchResults(GameTooltip, "quest:"..reference.questID, SearchForField, "questID", reference.questID);
 		end
+		if reference.flightPathID then
+			AttachTooltipSearchResults(GameTooltip, "fp:"..reference.flightPathID, SearchForField, "flightPathID", reference.flightPathID);
+		end
 		if reference.qgs and app.Settings:GetTooltipSetting("QuestGivers") then
 			if app.Settings:GetTooltipSetting("creatureID") then
 				for i,qg in ipairs(reference.qgs) do
@@ -15442,27 +15443,6 @@ function app:GetDataCache()
 			tinsert(g, db);
 		end
 
-		-- Factions (Dynamic)
-		--[[
-		-- TODO: Not right now, we have a section already. Refactor that section and use this instead.
-		local factionsCategory = {};
-		factionsCategory.g = {};
-		factionsCategory.factions = {};
-		factionsCategory.expanded = false;
-		factionsCategory.icon = app.asset("Category_Factions");
-		factionsCategory.text = L["FACTIONS"];
-		tinsert(g, factionsCategory);
-		]]--
-
-		-- Flight Paths (Dynamic)
-		local flightPathsCategory = {};
-		flightPathsCategory.g = {};
-		flightPathsCategory.fps = {};
-		flightPathsCategory.expanded = false;
-		flightPathsCategory.icon = app.asset("Category_FlightPaths");
-		flightPathsCategory.text = L["FLIGHT_PATHS"];
-		tinsert(g, flightPathsCategory);
-
 		-- Pet Battles
 		if app.Categories.PetBattles then
 			db = app.CreateNPC(-796);
@@ -15578,6 +15558,27 @@ function app:GetDataCache()
 		-- 		end
 		-- 	end
 		-- end
+
+		-- Factions (Dynamic)
+		--[[
+		-- TODO: Not right now, we have a section already. Refactor that section and use this instead.
+		local factionsCategory = {};
+		factionsCategory.g = {};
+		factionsCategory.factions = {};
+		factionsCategory.expanded = false;
+		factionsCategory.icon = app.asset("Category_Factions");
+		factionsCategory.text = L["FACTIONS"];
+		tinsert(g, factionsCategory);
+		]]--
+
+		-- Flight Paths (Dynamic)
+		local flightPathsCategory = {};
+		flightPathsCategory.g = {};
+		flightPathsCategory.fps = {};
+		flightPathsCategory.expanded = false;
+		flightPathsCategory.icon = app.asset("Category_FlightPaths");
+		flightPathsCategory.text = L["FLIGHT_PATHS"].." - "..DYNAMIC;
+		tinsert(g, flightPathsCategory);
 
 		-- Illusions - Dynamic
 		db = {};
@@ -16289,6 +16290,8 @@ function app:GetDataCache()
 		-- Update Flight Path data.
 		if flightPathsCategory then
 			flightPathsCategory.OnUpdate = function(self)
+				-- no longer need to run this logic once the dynamic group has been filled
+				self.OnUpdate = nil;
 				for i,_ in pairs(fieldCache["flightPathID"]) do
 					if not self.fps[i] then
 						local fp = app.CreateFlightPath(tonumber(i));
@@ -16326,15 +16329,17 @@ function app:GetDataCache()
 						end
 					end
 				end
-				insertionSort(self.g, function(a, b)
-					return a.name < b.name;
-				end);
-				-- no longer need to run this logic once the dynamic group has been filled
-				self.OnUpdate = nil;
+				-- reset indents and such
+				BuildGroups(flightPathsCategory, flightPathsCategory.g);
+				-- sort the top level groups initially (group not yet visible)
+				flightPathsCategory.sort = true;
+				app.SortGroup(flightPathsCategory, "name", nil, nil, "sort");
+				flightPathsCategory.sort = nil;
+				-- dynamic groups are ignored for the source tooltips
+				flightPathsCategory.sourceIgnored = true;
+				-- make sure these things are cached so they can be updated when collected
+				CacheFields(flightPathsCategory);
 			end;
-			flightPathsCategory:OnUpdate();
-			-- Needed for externally updating only this group when collecting a flight path since the records are not cached
-			app.FlightPathsCategory = flightPathsCategory;
 		end
 
 		-- Update Title data.

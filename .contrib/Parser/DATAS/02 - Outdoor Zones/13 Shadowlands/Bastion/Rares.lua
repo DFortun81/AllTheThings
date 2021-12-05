@@ -426,17 +426,6 @@ _.Zones =
 						i(184413),	-- Mnemonic Attunement Pane (TOY!)
 					},
 				}),
-				n(167078, { -- Wingflayer the Cruel
-					["questID"] = 60314,
-					["isDaily"] = true,
-					["coord"] = { 41.8, 55.4, BASTION },
-					["g"] = {
-						crit(7, {	-- Wingflayer the Cruel
-							["achievementID"] = 14307,	-- Adventurer of Bastion
-						}),
-						i(182749),	-- Regurgitated Kyrian Wings
-					},
-				}),
 			}),
 		}),
 	}),

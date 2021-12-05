@@ -7,7 +7,7 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(ARDENWEALD, {
 			n(ACHIEVEMENTS, {
-				ach(14881, {	-- Abhorrent Adversaries of the Afterlife
+				petbattle(ach(14881, {	-- Abhorrent Adversaries of the Afterlife
 					["collectible"] = false,
 					["g"] = {
 						crit(2, {	-- Briarpaw
@@ -23,7 +23,7 @@ _.Zones =
 							["crs"] = { 175780 },	-- Mistwing
 						}),
 					},
-				}),
+				})),
 				ach(14774, {	-- Ardenweald Gourmand
 					["description"] = "All food is sold by Tanor in Ardenweald at |cFFFFFFFF65.0, 19.6|r.",
 					["coord"] = { 65.0, 19.6, ARDENWEALD },
@@ -81,7 +81,7 @@ _.Zones =
 						["sourceQuests"] = { 58724 },	-- The Queen's Request
 					}),
 				}),
-				ach(14879, {	-- Family Exorcist
+				petbattle(ach(14879, {	-- Family Exorcist
 					["collectible"] = false,
 					["g"] = {
 						ach(14868, {	-- Aquatic Apparitions
@@ -215,7 +215,7 @@ _.Zones =
 							},
 						}),
 					},
-				}),
+				})),
 				ach(14788, {	-- Fractured Faerie Tales
 					crit(1, {	-- A Meandering Story
 						["description"] = "The NPC can be found patrolling between Tirna Vaal and the southern end of Glitterfall Basin or in the pass between Hibernal Hollow and the Heart of the Forest.",

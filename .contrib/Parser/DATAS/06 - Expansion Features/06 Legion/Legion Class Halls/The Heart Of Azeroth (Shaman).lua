@@ -794,6 +794,8 @@ _.HiddenQuestTriggers = {
 	q(44499),	-- Shaman Order Hall - Snowfang Tracking Quest
 	q(44653),	-- Shaman Order Hall - Tracking Quest: 7.0 Class Hall - Shaman - Pacing Mission 1
 	q(44654),	-- Shaman Order Hall - Tracking Quest: 7.0 Class Hall - Shaman - Pacing Mission 2A-5
+	q(44150),	-- Looted enhancement shaman hidden appearance
+	q(43674),	-- Using enhancement shaman hidden appearance item
 };
 
 -- These quests never made it in.

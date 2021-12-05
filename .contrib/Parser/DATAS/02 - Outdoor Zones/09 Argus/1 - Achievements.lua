@@ -43,9 +43,9 @@ _.Zones =
 						i(152343),	-- Lustrous Eventide Staff
 					}),
 				}),
-				ach(12100, {	-- Family Fighter
+				petbattle(ach(12100, {	-- Family Fighter
 					i(153040),	-- Felclaw Marsuul (PET!)
-				}),
+				})),
 				ach(12073, {	-- Locked and Loaded
 					crit(1, {	-- Light's Judgement
 						["sourceQuests"] = { 47287 },	-- The Vindicaar Matrix Core

@@ -87,7 +87,7 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(13279, {	-- Family Battler
+				petbattle(ach(13279, {	-- Family Battler
 					["collectible"] = false,
 					["g"] = {
 						ach(13280, {	-- Hobbyist Aquarist
@@ -261,7 +261,7 @@ _.Zones =
 							},
 						}),
 					},
-				}),
+				})),
 				ach(12482, {	-- Get Hek'd
 					["description"] = "Make sure to loot the cache Jani leaves behind as you fulfill each requirement; that's what awards the actual achievement criteria.",
 					["collectible"] = false,

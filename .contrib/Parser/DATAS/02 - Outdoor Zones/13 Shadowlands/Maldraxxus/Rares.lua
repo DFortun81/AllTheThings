@@ -94,20 +94,6 @@ _.Zones =
 						i(184178),	-- Worldrending Claymore
 					},
 				}),
-				n(162741, {	-- Gieger <Experimental Construct>
-					["description"] = "A member of the |cFF40bf40Necrolord Covenant|r must channel anima to the House of Constructs to summon him.",
-					["questID"] = 58872,
-					["isDaily"] = true,
-					["coord"] = { 31.4, 35.4, MALDRAXXUS },
-					["cr"] = 162815,	-- Final Thread
-					["g"] = {
-						i(182080, {	-- Predatory Plagueroc (MOUNT!)
-							["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant drop only
-						}),
-						i(184298),	-- Amalgamated Forsworn's Journal (has dropped twice from this rare)
-						i(183754),	-- Stitchflesh's Design Notes
-					},
-				}),
 				n(162588, { -- Gristlebeak
 					["description"] = "Kill the Unusual Eggs and Gristled Hatchlings to lure Gristlebeak.",
 					["questID"] = 58837,
@@ -394,25 +380,6 @@ _.Zones =
 							crit(4, {	-- Mistress Dyrax
 								["achievementID"] = 14802,	-- Bloodsport
 							}),
-						}),
-						n(168147, { -- Sabriel the Bonecleaver
-							["description"] = "Can be killed and looted by any Covenant, but a member of the |cFF40bf40Necrolord Covenant|r must channel anima to the Theater of Pain and pick up the daily quest |cFF349cffSpoiling For A Fight|r to add Sabriel to the arena's rotation.",
-							["isDaily"] = true,
-							["questID"] = 58784,
-							["coord"] = { 50.4, 48.2, MALDRAXXUS },
-							["crs"] = { 168148 },	-- Drolkrad
-							["g"] = {
-								crit(13, {	-- Sabriel the Bonecleaver
-									["achievementID"] = 14308,	-- Adventurer of Maldraxxus
-								}),
-								crit(7, {	-- Sabriel the Bonecleaver
-									["achievementID"] = 14802,	-- Bloodsport
-								}),
-								i(181815, {	-- Armored Bonehoof Tauralus (MOUNT!)
-									["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant drop only
-								}),
-								i(184291),	-- Tempered Boneplate Waistguard
-							},
 						}),
 						n(162874, {	-- Ti'or
 							crit(6, {	-- Ti'or

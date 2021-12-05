@@ -29,7 +29,7 @@ _.Zones =
 						},
 					}),
 				}),
-				ach(9696,  {	-- Family Familiar
+				petbattle(ach(9696,  {	-- Family Familiar
 					["collectible"] = false,
 					["filterID"] = BATTLE_PETS,
 					["g"] = {
@@ -134,7 +134,7 @@ _.Zones =
 							},
 						}),
 					},
-				}),
+				})),
 				ach(11139, {	-- Field Medic!
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {

@@ -32,6 +32,9 @@ _.Zones =
 						i(12987),	-- Darkweave Breeches
 						i(2194),	-- Diamond Hammer
 						i(1717),	-- Double Link Tunic
+						--#if AFTER SL
+						i(2098),	-- Double-Barreled Shotgun
+						--#endif
 						i(12999),	-- Drakewing Bands
 						i(2911),	-- Keller's Girdle
 						i(3021),	-- Ranger Bow

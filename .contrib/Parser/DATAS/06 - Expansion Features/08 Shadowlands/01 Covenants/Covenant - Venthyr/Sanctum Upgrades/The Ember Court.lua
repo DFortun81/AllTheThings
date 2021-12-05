@@ -1,6 +1,141 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+local ALEXANDROS_GROUP = {
+	i(181300),	-- Gruesome Flayedwing (MOUNT!)
+	i(181325),	-- Marrowfused Dagger
+	i(181331),	-- Marrowfused Shield
+	i(181330),	-- Marrowfused Warglaive
+	i(181327),	-- Spineforged Tenderizer
+};
+local VASHJ_GROUP = {
+	i(181300),	-- Gruesome Flayedwing (MOUNT!)
+	i(181322),	-- Bonebound Tome
+	i(181320),	-- Bonejowl Ballista
+	i(181330),	-- Marrowfused Warglaive
+	i(181264),	-- Plaguelouse Larva (PET!)
+	i(181327),	-- Spineforged Tenderizer
+};
+local CHOOFA_GROUP = {
+	i(179605),	-- Elderwood Barrier
+	i(179499),	-- Nightwillow Barb
+	i(179548),	-- Elderwood Gavel
+	i(179563),	-- Heartwood Stem
+};
+local KASSIR_GROUP = {
+	i(183713),	-- Kassir's Crypt Mantle - got when i hit Best Friend, not sure if that was just luck
+	i(180954),	-- Crypt Watcher's Spire
+	i(180964),	-- Ember Court Barrier
+	i(180956),	-- Axeblade Blunderbuss
+	i(180957),	-- Batwing Glaive
+	i(180963),	-- Crypt Keeper's Vessel
+	i(172957),	-- Atonement Crypt Key
+	i(173008),	-- Grand Inquisitor Aurica's Sinstone
+	i(173007),	-- Grand Inquisitor Nicu's Sinstone
+	i(173006),	-- High Inquisitor Dacian's Sinstone
+	i(173000),	-- High Inquisitor Gabi's Sinstone
+	i(173005),	-- High Inquisitor Magda's Sinstone
+	i(173001),	-- High Inquisitor Radu's Sinstone
+	i(172998),	-- Inquisitor Otilia's Sinstone
+	i(172997),	-- Inquisitor Petre's Sinstone
+	i(172996),	-- Inquisitor Sorin's Sinstone
+	i(172999),	-- Inquisitor Traian's Sinstone
+};
+local DORMAN_GROUP = {
+	i(179605),	-- Elderwood Barrier
+	i(179538),	-- Grove Warden's Maul
+	i(180628),	-- Pearlwing Heron (PET!)
+	i(179514),	-- Ripvine Saber
+	i(179548),	-- Elderwood Gavel
+	i(172043),	-- Feast of Gluttonous Hedonism
+};
+local VOLE_GROUP = {
+	i(181168),	-- Corpulent Bonetusk (PET!)
+	i(181328),	-- Marrowfused Sword
+	i(181330),	-- Marrowfused Warglaive
+	i(181329),	-- Marrowfused Claymore
+	i(181327),	-- Spineforged Tenderizer
+};
+local KORAYN_GROUP = {
+	i(180726),	-- Pale Acidmaw (MOUNT!)
+	i(179509),	-- Grove Warden's Edge
+	i(179533),	-- Grove Warden's Harvester
+	i(179605),	-- Elderwood Barrier
+	i(179585),	-- Nightwillow Shortbow
+	i(179548),	-- Elderwood Gavel
+};
+local KLEIA_AND_PELAGOS_GROUP = {
+	i(181233),	-- Bellringer's Hammer
+	i(181230),	-- Pugilist's Chakram
+	i(180814),	-- Sable (PET!) - got when i hit Best Friend, not sure if it was just luck
+	i(181226),	-- Bronze Dual-Bladed Glaive
+	i(181225),	-- Crossbow of Contemplative Calm
+	i(181232),	-- Cupbearer's Claymore
+};
+local MOONBERRY_GROUP = {
+	i(180726),	-- Pale Acidmaw (MOUNT!)
+	i(179516),	-- Songwood Staff
+	i(180639),	-- Dusty Sporeflutterer (PET!)
+	i(179605),	-- Elderwood Barrier
+	i(179548),	-- Elderwood Gavel
+};
+local MIKANIKOS_GROUP = {
+	i(181317),	-- Dauntless Duskrunner (MOUNT!)
+	i(181227),	-- Bronze Ceremonial Targe
+	i(181235),	-- Final Arbiter's Gavel
+	i(181230),	-- Pugilist's Chakram
+	i(181226),	-- Bronze Dual-Bladed Glaive
+	i(181232),	-- Cupbearer's Claymore
+};
+local MARILETH_GROUP = {
+	i(181323),	-- Blightclutched Greatstaff
+	i(181326),	-- Bloodstained Hacksaw
+	i(181330),	-- Marrowfused Warglaive
+	i(181321),	-- Gem-Crowned Wand
+	i(181327),	-- Spineforged Tenderizer
+};
+local ADRESTES_GROUP = {
+	i(181231),	-- Broadbladed Severer
+	i(181317),	-- Dauntless Duskrunner (MOUNT!)
+	i(181230),	-- Pugilist's Chakram
+	i(181228),	-- Temple Guard's Partisan
+	i(181226),	-- Bronze Dual-Bladed Glaive
+	i(181232),	-- Cupbearer's Claymore
+};
+local RENDLE_AND_CUDGELFACE_GROUP = {
+	i(180962),	-- Sterling-Silver Cudgel
+	i(181315),	-- Bloodfeaster Spiderling (PET!)
+	i(180959),	-- Dredger Anklebiter
+	i(180964),	-- Ember Court Barrier
+	i(180956),	-- Axeblade Blunderbuss
+	i(180957),	-- Batwing Glaive
+};
+local SIKA_GROUP = {
+	i(180815),	-- Brightscale Hatchling (PET!)
+	i(181230),	-- Pugilist's Chakram
+	i(181229),	-- Tranquil's Censer
+	i(181226),	-- Bronze Dual-Bladed Glaive
+	i(181232),	-- Cupbearer's Claymore
+};
+local STONEHEAD_GROUP = {
+	i(180964),	-- Ember Court Barrier
+	i(180960),	-- Shiny-Metal Topped Basher
+	i(180603),	-- Violet Dredwing Pup (PET!)
+	i(180956),	-- Axeblade Blunderbuss
+	i(180957),	-- Batwing Glaive
+	i(180689),	-- Pocket Embers
+	i(180955),	-- Stonewing Halberd
+};
+local COUNTESS_GROUP = {
+	i(180958),	-- Redelev House Foil
+	i(180961),	-- Silver-Bladed Ritual Dagger
+	i(180964),	-- Ember Court Barrier
+	i(180956),	-- Axeblade Blunderbuss
+	i(180957),	-- Batwing Glaive
+};
+local SILVERTIP_DREDWING =  i(181316, {
+	["cost"] = { { "c", ANIMA, 5000 } },
+});
 
 root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_VEN" }, {
 	n(VENTHYR, {
@@ -183,33 +318,21 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 						n(REWARDS, {
 							["description"] = "Some rewards drop from the non-Extravagant tribute chests, but targeting the Extravagant tribute from Elated guests is the best way to get rare loot.",	-- typically a few pieces will drop from the regular/medium chests, but it appears to be the same loot that drops from Extravagant chests - just listing the Extravagant chest for source and duplication reduction, especially since some pieces drop from multiple guests' chests
 							["g"] = {
-							--	TODO: the following tributes do not have any/much info on wowhead, check back and add more drops later:
-								-- alexandros mograine
-								-- baroness vashj
-								-- hunt-captain korayn
-								-- lady moonberry
-								-- mikanikos
-								-- polemarch adrestes
 								o(356697, {	-- Alexandros Mograine's Extravagant Tribute
 									["cr"] = 171833,	-- Alexandros Mograine <The Ashbringer>
-									["g"] = {
+									["g"] = appendGroups(ALEXANDROS_GROUP, {
 										crit(5, {	-- Alexandros Mograine
 											["achievementID"] = 14723,	-- Be Our Guest
 										}),
 										crit(5, {	-- Alexandros Mograine
 											["achievementID"] = 14724,	-- People Pleaser
 										}),
-										i(181300),	-- Gruesome Flayedwing (MOUNT!)
 										i(181616),	-- A Treatise on the Great Battles of Lordaeron
 										i(181617),	-- Command the Field
-										i(181325),	-- Marrowfused Dagger
-										i(181331),	-- Marrowfused Shield
-										i(181330),	-- Marrowfused Warglaive
 										i(183860),	-- The Death March: An Introduction to Maldraxxi Etiquette
 										i(183844),	-- A Letter of Introduction, The Bonesmith
 										i(181615),	-- Marching an Army
-										i(181327),	-- Spineforged Tenderizer
-									},
+									}),
 								}),
 								n(165686, {	-- Ashen Amalgamation
 									["description"] = "To summon this mob, you need to collect |cFF1eff00Anima-Infused Water|r from Sika's tribute, which makes water buckets appear around the Ember Court.  Use the |cFFFFFFFFTraditional|r decorations, and when the candles start fires you can douse them with the water.  Put out enough fires, and the rare will spawn.",
@@ -219,26 +342,21 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 								}),
 								o(356693, {	-- Baroness Vashj's Extravagant Tribute
 									["cr"] = 168444,	-- Baroness Vashj <Matron of Spies>
-									["g"] = {
+									["g"] = appendGroups(VASHJ_GROUP, {
 										crit(1, {	-- Baroness Vashj
 											["achievementID"] = 14723,	-- Be Our Guest
 										}),
 										crit(1, {	-- Baroness Vashj
 											["achievementID"] = 14724,	-- People Pleaser
 										}),
-										i(181300),	-- Gruesome Flayedwing (MOUNT!)
-										i(181322),	-- Bonebound Tome
 										i(178894),	-- Decree: Baroness Vashj's Boon
-										i(181330),	-- Marrowfused Warglaive
-										i(181264),	-- Plaguelouse Larva (PET!)
 										i(183860),	-- The Death March: An Introduction to Maldraxxi Etiquette
 										i(178892),	-- Decree: Baroness Vashj's Favor
-										i(181327),	-- Spineforged Tenderizer
-									},
+									}),
 								}),
 								o(356720, {	-- Choofa's Extravagant Tribute
 									["cr"] = 168449,	-- Choofa
-									["g"] = {
+									["g"] = appendGroups(CHOOFA_GROUP, {
 										crit(9, {	-- Choofa
 											["achievementID"] = 14723,	-- Be Our Guest
 										}),
@@ -249,8 +367,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										i(178899),	-- Treecorn
 										i(178901),	-- Vineseed
 										i(183883),	-- Bulging Collection of Random Bits
-										i(179605),	-- Elderwood Barrier
-										i(179499),	-- Nightwillow Barb
 										i(183861),	-- The Winter Cycle: A Collection of Ardenweald Etiquettes and Parables
 										i(177233, {	-- Bounding Shroom Seeds
 											crit(4, {	-- Bounding Shroom Seeds
@@ -258,56 +374,40 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 											}),
 										}),
 										i(183882),	-- Collection of Random Bits
-										i(179548),	-- Elderwood Gavel
-										i(179563),	-- Heartwood Stem
-									},
+									}),
 								}),
 								o(356752, {	-- Cryptkeeper Kassir's Extravagant Tribute
 									["cr"] = 168450,	-- Cryptkeeper Kassir
-									["g"] = {
+									["g"] = appendGroups(KASSIR_GROUP, {
 										crit(10, {	-- Cryptkeeper Kassir
 											["achievementID"] = 14723,	-- Be Our Guest
 										}),
 										crit(10, {	-- Cryptkeeper Kassir
 											["achievementID"] = 14724,	-- People Pleaser
 										}),
-										i(183713),	-- Kassir's Crypt Mantle - got when i hit Best Friend, not sure if that was just luck
 										i(183862),	-- A Proper Soiree: A detailed account of Venthyr Etiquette by Theotar
-										i(180954),	-- Crypt Watcher's Spire
-										i(180964),	-- Ember Court Barrier
-										i(180956),	-- Axeblade Blunderbuss
-										i(180957),	-- Batwing Glaive
-										i(180963),	-- Crypt Keeper's Vessel
-										i(172957),	-- Atonement Crypt Key
-										-- TODO: add all inquisitor sinstones? e.g. Inquisitor Otilia's Sinstone etc
-									},
+									}),
 								}),
 								o(356716, {	-- Droman Aliothe's Extravagant Tribute
 									["cr"] = 171847,	-- Droman Aliothe <Court of Night>
-									["g"] = {
+									["g"] = appendGroups(DORMAN_GROUP, {
 										crit(11, {	-- Droman Aliothe
 											["achievementID"] = 14723,	-- Be Our Guest
 										}),
 										crit(11, {	-- Droman Aliothe
 											["achievementID"] = 14724,	-- People Pleaser
 										}),
-										i(179605),	-- Elderwood Barrier
-										i(179538),	-- Grove Warden's Maul
-										i(180628),	-- Pearlwing Heron (PET!)
-										i(179514),	-- Ripvine Saber
 										i(183861),	-- The Winter Cycle: A Collection of Ardenweald Etiquettes and Parables
-										i(179548),	-- Elderwood Gavel
 										i(181438, {	-- The Wild Drum
 											crit(18, {	-- The Wild Drum
 												["achievementID"] = 14678,	-- Court Favors
 											}),
 										}),
-										i(172043),	-- Feast of Gluttonous Hedonism
-									},
+									}),
 								}),
 								o(356700, {	-- Grandmaster Vole's Extravagant Tribute
 									["cr"] = 171848,	-- Grandmaster Vole
-									["g"] = {
+									["g"] = appendGroups(VOLE_GROUP, {
 										crit(12, {	-- Grandmaster Vole
 											["achievementID"] = 14723,	-- Be Our Guest
 										}),
@@ -318,116 +418,88 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 											["isWeekly"] = true,
 											["questID"] = 62628,	-- Vole's Voucher
 										}),
-										i(181168),	-- Corpulent Bonetusk (PET!)
 										i(181765),	-- Marcel Mullby's Marker
-										i(181328),	-- Marrowfused Sword
-										i(181330),	-- Marrowfused Warglaive
 										i(183860),	-- The Death March: An Introduction to Maldraxxi Etiquette
-										i(181329),	-- Marrowfused Claymore
 										i(181767),	-- Small Coin Purse
-										i(181327),	-- Spineforged Tenderizer
-									},
+									}),
 								}),
 								o(356712, {	-- Hunt-Captain Korayn's Extravagant Tribute
 									["cr"] = 171836,	-- Hunt-Captain Korayn <The Wild Hunt>
-									["g"] = {
+									["g"] = appendGroups(KORAYN_GROUP, {
 										crit(6, {	-- Hunt-Captain Korayn
 											["achievementID"] = 14723,	-- Be Our Guest
 										}),
 										crit(6, {	-- Hunt-Captain Korayn
 											["achievementID"] = 14724,	-- People Pleaser
 										}),
-										i(180726),	-- Pale Acidmaw (MOUNT!)
 										i(181618),	-- Gorm Quishe Platter
-										i(179509),	-- Grove Warden's Edge
-										i(179533),	-- Grove Warden's Harvester
-										i(179605),	-- Elderwood Barrier
 										i(181620),	-- Hard Boiled Gorm Egg
-										i(179585),	-- Nightwillow Shortbow
 										i(183861),	-- The Winter Cycle: A Collection of Ardenweald Etiquettes and Parables
-										i(179548),	-- Elderwood Gavel
 										i(183846),	-- Orders to Gormsmith Cavina
 										i(181619),	-- Poached Gorm Eggs
-									},
+									}),
 								}),
 								o(356733, {	-- Kleia and Pelagos' Extravagant Tribute
 									["crs"] = {
 										171850,	-- Kleia
 										171851,	-- Pelagos
 									},
-									["g"] = {
+									["g"] = appendGroups(KLEIA_AND_PELAGOS_GROUP, {
 										crit(13, {	-- Kleia and Pelagos
 											["achievementID"] = 14723,	-- Be Our Guest
 										}),
 										crit(13, {	-- Kleia and Pelagos
 											["achievementID"] = 14724,	-- People Pleaser
 										}),
-										i(181233),	-- Bellringer's Hammer
-										i(181230),	-- Pugilist's Chakram
-										i(180814),	-- Sable (PET!) - got when i hit Best Friend, not sure if it was just luck
 										i(183863),	-- The Proper Path and Etiquette for Aspirants
-										i(181226),	-- Bronze Dual-Bladed Glaive
-										i(181225),	-- Crossbow of Contemplative Calm
-										i(181232),	-- Cupbearer's Claymore
-									},
+									}),
 								}),
 								o(356709, {	-- Lady Moonberry's Extravagant Tribute
 									["crs"] = {
 										171830,	-- Lady Moonberry <Court of Night>
 									--	171874,	-- Image of Lady Moonberry <Lady Moonberry's Conjuration> (not sure if/when this shows up)
 									},
-									["g"] = {
+									["g"] = appendGroups(MOONBERRY_GROUP, {
 										crit(2, {	-- Lady Moonberry
 											["achievementID"] = 14723,	-- Be Our Guest
 										}),
 										crit(2, {	-- Lady Moonberry
 											["achievementID"] = 14724,	-- People Pleaser
 										}),
-										i(180726),	-- Pale Acidmaw (MOUNT!)
 										i(181613),	-- Decree: Lady Moonberry's Boon
-										i(179516),	-- Songwood Staff
 										i(181607),	-- Decree: Lady Moonberry's Esteem
-										i(180639),	-- Dusty Sporeflutterer (PET!)
-										i(179605),	-- Elderwood Barrier
 										i(183861),	-- The Winter Cycle: A Collection of Ardenweald Etiquettes and Parables
-										i(179548),	-- Elderwood Gavel
 										i(181598),	-- Decree: Lady Moonberry's Favor
 										i(177232, {	-- Bewitched Wardrobe
 											crit(3, {	-- Bewitched Wardrobe
 												["achievementID"] = 14678,	-- Court Favors
 											}),
 										}),
-									},
+									}),
 								}),
 								o(356728, {	-- Mikanikos' Extravagant Tribute
 									["cr"] = 171831,	-- Mikanikos <Forgelite Prime>
-									["g"] = {
+									["g"] = appendGroups(MIKANIKOS_GROUP, {
 										crit(3, {	-- Mikanikos
 											["achievementID"] = 14723,	-- Be Our Guest
 										}),
 										crit(3, {	-- Mikanikos
 											["achievementID"] = 14724,	-- People Pleaser
 										}),
-										i(181317),	-- Dauntless Duskrunner (MOUNT!)
-										i(181227),	-- Bronze Ceremonial Targe
 										i(181563),	-- Decree: Mikanikos's Boon
-										i(181235),	-- Final Arbiter's Gavel
 										i(181564),	-- Decree: Mikanikos's Esteem
-										i(181230),	-- Pugilist's Chakram
 										i(183863),	-- The Proper Path and Etiquette for Aspirants
-										i(181226),	-- Bronze Dual-Bladed Glaive
-										i(181232),	-- Cupbearer's Claymore
 										i(181565),	-- Decree: Mikanikos's Favor
 										i(181439, {	-- Protective Braziers
 											crit(19, {	-- Protective Braziers
 												["achievementID"] = 14678,	-- Court Favors
 											}),
 										}),
-									},
+									}),
 								}),
 								o(356705, {	-- Plague Deviser Marileth's Extravagant Tribute
 									["cr"] = 171852,	-- Plague Deviser Marileth
-									["g"] = {
+									["g"] = appendGroups(MARILETH_GROUP, {
 										crit(14, {	-- Plague Deviser Marileth
 											["achievementID"] = 14723,	-- Be Our Guest
 										}),
@@ -435,53 +507,43 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 											["achievementID"] = 14724,	-- People Pleaser
 										}),
 										i(181621),	-- Hyper-Reactive Slime Sample
-										i(181323),	-- Blightclutched Greatstaff
-										i(181326),	-- Bloodstained Hacksaw
-										i(181330),	-- Marrowfused Warglaive
 										i(181622),	-- Slightly Irradiated Slime Sample
 										i(183860),	-- The Death March: An Introduction to Maldraxxi Etiquette
 										i(181623),	-- Fluorescent Slime Sample
-										i(181321),	-- Gem-Crowned Wand
-										i(181327),	-- Spineforged Tenderizer
 										i(181437, {	-- Training Dummies
 											crit(17, {	-- Training Dummies
 												["achievementID"] = 14678,	-- Court Favors
 											}),
 										}),
-									},
+									}),
 								}),
 								o(356725, {	-- Polemarch Adrestes' Extravagant Tribute
 									["cr"] = 168447,	-- Polemarch Adrestes
-									["g"] = {
+									["g"] = appendGroups(ADRESTES_GROUP, {
 										crit(7, {	-- Polemarch Adrestes
 											["achievementID"] = 14723,	-- Be Our Guest
 										}),
 										crit(7, {	-- Polemarch Adrestes
 											["achievementID"] = 14724,	-- People Pleaser
 										}),
-										i(181317),	-- Dauntless Duskrunner (MOUNT!)
 										i(178897),	-- Stalwart Pauldron of Resolve
-										i(181230),	-- Pugilist's Chakram
 										i(178896),	-- Stalwart Gloves of Resolve
-										i(181228),	-- Temple Guard's Partisan
 										i(183863),	-- The Proper Path and Etiquette for Aspirants
 										i(183845),	-- A Short Letter to Forgelite Sophone
-										i(181226),	-- Bronze Dual-Bladed Glaive
-										i(181232),	-- Cupbearer's Claymore
 										i(177238, {	-- Generous Gift
 											crit(9, {	-- Generous Gift
 												["achievementID"] = 14678,	-- Court Favors
 											}),
 										}),
 										i(178895),	-- Stalwart Vambraces of Resolve
-									},
+									}),
 								}),
 								o(356744, {	-- Rendle and Cudgelface's Extravagant Tribute
 									["crs"] = {
 										171841,	-- Cudgelface
 										171839,	-- Rendle
 									},
-									["g"] = {
+									["g"] = appendGroups(RENDLE_AND_CUDGELFACE_GROUP, {
 										crit(8, {	-- Rendle and Cudgelface
 											["achievementID"] = 14723,	-- Be Our Guest
 										}),
@@ -489,17 +551,11 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 											["achievementID"] = 14724,	-- People Pleaser
 										}),
 										i(181780),	-- An Undelivered Tradesman's Shipment
-										i(180962),	-- Sterling-Silver Cudgel
 										i(183862),	-- A Proper Soiree: A detailed account of Venthyr Etiquette by Theotar
 										i(181779),	-- A "Wrapped" Weapon
 										i(180677),	-- Discarded Medal of Valor
-										i(181315),	-- Bloodfeaster Spiderling (PET!)
-										i(180959),	-- Dredger Anklebiter
-										i(180964),	-- Ember Court Barrier
 										i(180710),	-- Pocket Repair Kit
 										i(180707),	-- Sticky Muck
-										i(180956),	-- Axeblade Blunderbuss
-										i(180957),	-- Batwing Glaive
 										i(177237, {	-- Dredger Party Supplies
 											crit(8, {	-- Dredger Party Supplies
 												["achievementID"] = 14678,	-- Court Favors
@@ -507,11 +563,11 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										}),
 										i(183848),	-- Hastily Scrawled Note to Forgy
 										i(181778),	-- Sack of Shinies
-									},
+									}),
 								}),
 								o(356737, {	-- Sika's Extravagant Tribute
 									["cr"] = 171854,	-- Sika
-									["g"] = {
+									["g"] = appendGroups(SIKA_GROUP, {
 										crit(15, {	-- Sika
 											["achievementID"] = 14723,	-- Be Our Guest
 										}),
@@ -519,24 +575,19 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 											["achievementID"] = 14724,	-- People Pleaser
 										}),
 										i(183886),	-- Sika's Rare Ore Pouch
-										i(180815),	-- Brightscale Hatchling (PET!)
-										i(181230),	-- Pugilist's Chakram
 										i(183885),	-- Sika's Spare Ore Pouch
 										i(183863),	-- The Proper Path and Etiquette for Aspirants
-										i(181229),	-- Tranquil's Censer
 										i(177230, {	-- Anima-Infused Water
 											crit(1, {	-- Anima-Infused Water
 												["achievementID"] = 14678,	-- Court Favors
 											}),
 										}),
-										i(181226),	-- Bronze Dual-Bladed Glaive
-										i(181232),	-- Cupbearer's Claymore
 										i(183884),	-- Pocketful of Assorted Nuggets
-									},
+									}),
 								}),
 								o(356748, {	-- Stonehead's Extravagant Tribute
 									["cr"] = 171856,	-- Stonehead
-									["g"] = {
+									["g"] = appendGroups(STONEHEAD_GROUP, {
 										crit(16, {	-- Stonehead
 											["achievementID"] = 14723,	-- Be Our Guest
 										}),
@@ -545,25 +596,19 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										}),
 										i(183709),	-- Bronze-Bound Sinstone
 										i(183862),	-- A Proper Soiree: A detailed account of Venthyr Etiquette by Theotar
-										i(180964),	-- Ember Court Barrier
-										i(180960),	-- Shiny-Metal Topped Basher
 										i(181771),	-- Stonehead's Best Bud Bracelet
-										i(180603),	-- Violet Dredwing Pup (PET!)
-										i(180956),	-- Axeblade Blunderbuss
-										i(180957),	-- Batwing Glaive
 										i(180689),	-- Pocket Embers
 										i(181440, {	-- Slippery Muck
 											crit(20, {	-- Slippery Muck
 												["achievementID"] = 14678,	-- Court Favors
 											}),
 										}),
-										i(180955),	-- Stonewing Halberd
 										i(178128),	-- Pouch of Shinies
-									},
+									}),
 								}),
 								o(356741, {	-- The Countess' Extravagant Tribute
 									["cr"] = 165269,	-- The Countess <Harvester of Desire>
-									["g"] = {
+									["g"] = appendGroups(COUNTESS_GROUP, {
 										crit(4, {	-- The Countess
 											["achievementID"] = 14723,	-- Be Our Guest
 										}),
@@ -572,20 +617,15 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										}),
 										i(182209),	-- Desire's Battle Gargon (MOUNT!)
 										i(181566),	-- Decree: The Countess's Boon
-										i(180958),	-- Redelev House Foil
-										i(180961),	-- Silver-Bladed Ritual Dagger
 										i(183862),	-- A Proper Soiree: A detailed account of Venthyr Etiquette by Theotar
 										i(181567),	-- Decree: The Countess's Esteem
-										i(180964),	-- Ember Court Barrier
 										i(182696),	-- The Countess's Parasol (TOY!)
-										i(180956),	-- Axeblade Blunderbuss
-										i(180957),	-- Batwing Glaive
 										i(181436, {	-- Vanity Mirror
 											crit(16, {	-- Vanity Mirror
 												["achievementID"] = 14678,	-- Court Favors
 											}),
 										}),
-									},
+									}),
 								}),
 							},
 						}),
@@ -2028,7 +2068,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 								},
 								["crs"] = { 172531 },	-- Temel <The Party Herald> (with no hat - combining these because they sell the same stuff)
 								["g"] = {
-									i(181316),	-- Silvertip Dredwing		-- no cost due each covenant offering this mount in different ways
+									SILVERTIP_DREDWING,
 									i(181441, {	-- Altar of Accomplishment
 										["cost"] = { { "c", ANIMA, 25 } },	-- 25x Reservoir Anima
 										["g"] = {
@@ -2132,6 +2172,12 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 		}),
 	}),
 })));
+
+for _,g in ipairs({ALEXANDROS_GROUP, VASHJ_GROUP, CHOOFA_GROUP, KASSIR_GROUP, DORMAN_GROUP, VOLE_GROUP, KORAYN_GROUP, KLEIA_AND_PELAGOS_GROUP, MOONBERRY_GROUP, MIKANIKOS_GROUP, MIKANIKOS_GROUP, MARILETH_GROUP, ADRESTES_GROUP, RENDLE_AND_CUDGELFACE_GROUP, SIKA_GROUP, STONEHEAD_GROUP, COUNTESS_GROUP ,{SILVERTIP_DREDWING}}) do
+	for	_,t in ipairs(g) do
+		t.customCollect = nil;
+	end
+end
 
 root("HiddenQuestTriggers", {
 	-- Dredger Butler Appearance

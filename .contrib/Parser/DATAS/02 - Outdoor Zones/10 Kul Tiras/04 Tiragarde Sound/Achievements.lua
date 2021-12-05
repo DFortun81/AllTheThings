@@ -46,7 +46,7 @@ _.Zones =
 					},
 				}),
 				ach(12939),		-- Adventurer of Tiragarde Sound
-				ach(13279, {	-- Family Battler
+				petbattle(ach(13279, {	-- Family Battler
 					["collectible"] = false,
 					["g"] = {
 						ach(13280, {	-- Hobbyist Aquarist
@@ -220,7 +220,7 @@ _.Zones =
 							},
 						}),
 					},
-				}),
+				})),
 				ach(13058, {	-- Kul Tiran Up the Dance Floor
 					["coord"] = { 50.27, 25.11, TIRAGARDE_SOUND },
 				}),

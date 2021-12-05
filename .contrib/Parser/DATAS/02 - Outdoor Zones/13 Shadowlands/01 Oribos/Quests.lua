@@ -62,6 +62,7 @@ _.Zones =
 						["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 						["isDaily"] = true,
 						["coord"] = { 34.7, 56.5, ORIBOS },
+						["lvl"] = { 50, 59 },
 						["timeline"] = { "added 9.1.5" },
 						["customCollect"] = "SL_SKIP",	-- SL Skip Character
 						["sym"] = {

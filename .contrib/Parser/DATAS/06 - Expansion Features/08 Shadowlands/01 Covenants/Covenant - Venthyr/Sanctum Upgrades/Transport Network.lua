@@ -259,7 +259,9 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										i(183972),	-- Forgotten Venthyr Winged Kris
 										i(183973),	-- Lost Winged Ritual Kris
 										i(183976),	-- Rogue Researcher's Dagger
-										i(183978),	-- Silver-Etched Hopebreaker Dirk
+										i(183978, {	-- Silver-Etched Hopebreaker Dirk
+											["description"] = "Confirmed Drops: Hunter(BM)",
+										}),
 										filter(CLOTH, {
 											i(181129, {	-- Soulbreaker's Burnished Drape
 												["classes"] = { MAGE, PRIEST, WARLOCK },
