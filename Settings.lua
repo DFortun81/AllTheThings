@@ -1320,7 +1320,7 @@ line:SetColorTexture(1, 1, 1, 0.4);
 line:SetHeight(2);
 
 local child = settings:CreateScrollFrame();
-child:SetMaxScroll(55); -- Adding more max value to the scrollbar is what controls the vertical size.
+child:SetMaxScroll(60); -- Adding more max value to the scrollbar is what controls the vertical size.
 local scrollFrame = child.ScrollContainer;
 scrollFrame:SetPoint("TOP", line, "BOTTOM", 0, -1);
 scrollFrame:SetPoint("LEFT", settings, "LEFT", 0, 0);
