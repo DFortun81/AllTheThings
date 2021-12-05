@@ -2183,6 +2183,7 @@ for key,value in pairs({
 	[259871] = "Feu de joie de l’Alliance",	-- Alliance Bonfire
 	[259926] = "Feu de joie de la Horde",	-- Horde Bonfire
 	[259927] = "Feu de joie de l’Alliance",	-- Alliance Bonfire
+	[265526] = "Coffre au trésor",	-- Treasure Chest
 	[265532] = "Balise de télémancie",	-- Telemancy Beacon
 	[266289] = "Coffre perdu dans le temps",	-- Time Lost Chest
 	[266851] = "Baguette d'existence artificielle",	-- Wand of Simulated Life

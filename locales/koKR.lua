@@ -2184,6 +2184,7 @@ for key,value in pairs({
 	[259871] = "얼라이언스 화톳불",	-- Alliance Bonfire
 	[259926] = "호드 화톳불",	-- Horde Bonfire
 	[259927] = "얼라이언스 화톳불",	-- Alliance Bonfire
+	[265526] = "보물 상자",	-- Treasure Chest
 	[265532] = "이동술 신호 장치",	-- Telemancy Beacon
 	--TODO: [266289] = "Time Lost Chest",	-- Time Lost Chest
 	[266851] = "모조 생명체의 마법봉",	-- Wand of Simulated Life
