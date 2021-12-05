@@ -333,9 +333,11 @@ _.ExpansionFeatures =
 						un(REMOVED_FROM_GAME, i(139473)),	-- Vial of Poisoned Blood -> Darkheart Thicket: Into Darkheart Thicket -> Darkheart Thicket
 						un(REMOVED_FROM_GAME, i(139475)),	-- Waterlogged Letter -> Maw of Souls: Into the Maw of Souls -> Maw of Souls
 						-- Follower Equipments
+						i(139808),	-- Cuiro of Abundant Happiness
+						i(152933),	-- Shadowguard Void Effusion
 						i(143850),	-- Summon Grimtotem Warrior (maybe put in Shaman class hall only)
-						i(139816),	-- Well-Worn Stone
 						i(152935),	-- Wakener's Bauble
+						i(139816),	-- Well-Worn Stone
 						i(151844),	-- Xenedar Armor Set
 						i(152931),	-- Xenic Tincture
 					},
