@@ -793,6 +793,7 @@ _.HiddenQuestTriggers = {
 		q(46554),	-- Ruthless Gladiator's Arsenal
 		q(46565),	-- Savage Gladiator's Arsenal
 		q(46576),	-- Deadly Gladiator's Arsenal
+		q(46598),	-- Hateful Gladiator's Arsenal
 		q(46587),	-- Wrathful Gladiator's Arsenal
 		q(46609),	-- Furious Gladiator's Arsenal
 		q(46620),	-- Relentless Gladiator's Arsenal

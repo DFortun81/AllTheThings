@@ -55,6 +55,7 @@ _.ExpansionFeatures =
 						i(92863),	-- Cordwoven Shoulderpads
 						i(92862),	-- Cordwoven Wristwraps
 						i(92840),	-- Danio-Scale Gauntlets			- 22 Oct 2021 Confirmed
+						i(92844),	-- Danio-Scale Spaulders			- 2021-11-13
 						i(92837),	-- Earthstriker Belt
 						i(92836),	-- Earthstriker Bracers
 						i(92835),	-- Earthstriker Gauntlets
@@ -119,6 +120,7 @@ _.ExpansionFeatures =
 						i(92884),	-- Lavasoul Ring
 						i(93052),	-- Mogubreaker Hood*				— 5/16/19
 						i(89446),	-- Mogu-Wrought Girdle				— 2021-11-12
+						i(89466),	-- Scarshell Spaulders				- 2021-11-13
 						i(93140),	-- Scavenged Pandaren Axe
 						i(93142),	-- Scavenged Pandaren Axe
 						i(93130),	-- Scavenged Pandaren Broadaxe
@@ -384,14 +386,12 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(89461),	-- Scarshell Bracers
 					i(89462),	-- Scarshell Gauntlets
 					i(89464),	-- Scarshell Helm
-					i(89466),	-- Scarshell Spaulders
 					i(89467),	-- Scarshell Vest
 					i(92838),	-- Danio-Scale Belt
 					i(92839),	-- Danio-Scale Bracers
 					i(92841),	-- Danio-Scale Greaves
 					i(92842),	-- Danio-Scale Helm
 					i(92843),	-- Danio-Scale Legguards
-					i(92844),	-- Danio-Scale Spaulders
 					i(92845),	-- Danio-Scale Vest
 					i(93057),	-- Stormshaper Vest
 					i(93058),	-- Stormshaper Greaves

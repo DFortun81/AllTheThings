@@ -101,6 +101,7 @@ _.Zones =
 						i(131544, {	-- Sandrene's Invisible Hauberk
 							["description"] = "You will not be able to transmog this item.",
 						}),
+						i(59253),	-- Sandrene's Invisible Vest
 						i(131545),	-- Spider Venom Legguards
 					},
 				}),
@@ -126,6 +127,7 @@ _.Zones =
 						i(131510, {	-- Sandrene's Invisible Hauberk
 							["description"] = "You will not be able to transmog this item.",
 						}),
+						i(59253),	-- Sandrene's Invisible Vest
 						i(131511),	-- Spider Venom Legguards
 					},
 				}),

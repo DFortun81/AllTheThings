@@ -530,9 +530,9 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 					follower(1260),	-- Kleia
 				},
 			}),
-			i(183054, {	-- Mysterious Soul Mirror
-				["questID"] = 62237,	-- Mysterious Soul Mirror
-				["crs"] = { 162061 },	-- Devos
+			q(62237, {	-- Mysterious Soul Mirror
+				["sourceQuests"] = { 57904 },	-- Our Eternal Charge
+				["provider"] = { "i", 183054 },	-- Mysterious Soul Mirror
 			}),
 			q(65147, {	-- No Ordinary Steward
 				["sourceQuests"] = { 62795 },	-- A Conduit for Good

@@ -280,6 +280,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
 				}),
+				q(52421, {
+					["requireSkill"] = LEATHERWORKING,
+					["isWorldQuest"] = true,
+					["races"] = HORDE_ONLY,
+				}),
 				q(51000, {	-- Work Order: Star Moss
 					["lvl"] = 120,
 					["races"] = HORDE_ONLY,

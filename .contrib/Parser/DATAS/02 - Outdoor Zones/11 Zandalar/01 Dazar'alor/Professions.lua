@@ -756,3 +756,7 @@ _.Zones =
 		}),
 	}),
 };
+
+root("HiddenQuestTriggers", {
+	q(55240),	--  triggered after destroying all portals during Seam Stress quest (55214)
+});

@@ -227,3 +227,6 @@ _.Zones =
 		}),
 	}),
 };
+root("HiddenQuestTriggers", {
+	q(45500),	-- Shalas'aman, I see there is a vignette in Todo about this
+});
