@@ -1230,6 +1230,10 @@ settings.UpdateMode = function(self, doRefresh)
 
 	-- ensure the settings pane itself is refreshed
 	self:Refresh();
+	-- and refresh any open ATT windows
+	if app.UpdateWindows then
+		app:UpdateWindows();
+	end
 end
 
 -- The ALL THE THINGS Epic Logo!
