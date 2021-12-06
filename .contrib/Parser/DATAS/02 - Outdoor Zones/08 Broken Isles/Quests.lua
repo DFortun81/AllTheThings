@@ -194,7 +194,7 @@ _.Zones =
 						}),
 						q(40615, {	-- Halls of Valor: Odyn's Blessing
 							["sourceQuests"] = {
-								40613,	-- A Feast Fit for Odyn
+								40614,	-- A Feast Fit for Odyn
 								40672,	-- Neltharion's Lair: Presentation is Key
 							},
 							["provider"] = { "n", 100738 },	-- Ashildir

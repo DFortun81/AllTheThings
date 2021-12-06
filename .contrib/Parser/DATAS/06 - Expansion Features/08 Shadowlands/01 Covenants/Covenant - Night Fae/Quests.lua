@@ -60,7 +60,10 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 			q(61058, {	-- Bound in Dreams
 				-- SQ needs confirmation, but this is when i saw the quest pop up.  this happened at Renown 16 for me, even though the soulbind only requires Renown 9 and i had been back to the sanctum many times since hitting that level
 				-- If someone quests on a new Night Fae character they might be able to figure out the SQ(s)
-				["sourceQuests"] = { 59242 },	-- Their New Home
+				["sourceQuests"] = {
+					59242,	-- Their New Home [First Covenant]
+					62899,	-- The Endless Forest  [Switched Covenant]
+				},
 				["provider"] = { "n", 160482 },	-- Dreamweaver
 				["coord"] = { 33.7, 47.6, THE_TRUNK },
 				["g"] = {
@@ -68,7 +71,10 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				},
 			}),
 			q(61057, {	-- By Trials Forged
-				["sourceQuests"] = { 60108 },	-- Drust and Ashes
+				["sourceQuests"] = {
+					60108,	-- Drust and Ashes [First Covenant]
+					62899,	-- The Endless Forest  [Switched Covenant]
+				},
 				["provider"] = { "n", 165659 },	-- Hunt-Captain Korayn
 				["coord"] = { 35.2, 47.4, THE_TRUNK },
 				["g"] = {
@@ -125,7 +131,9 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["coord"] = { 44.6, 39.0, THE_TRUNK },
 			}),
 			q(61984, {	-- Replenish the Reservoir
-				["sourceQuests"] = { 58160 },	-- For Queen and Grove!
+				-- ["sourceQuests"] = { 58160 },	-- For Queen and Grove!
+				-- TODO Verify if requirements different for first Covenant vs. Switching Covenant?
+				["sourceQuests"] = { 62899 },	-- The Endless Forest  [after switching Covenant]
 				["provider"] = { "n", 158553 },	-- Flutterby
 				["isWeekly"] = true,
 				["coord"] = { 33.9, 43.5, THE_ROOTS },
@@ -272,15 +280,16 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["coord"] = { 39.7, 55.7, THE_TRUNK },
 			}),
 			q(61541, {	-- The Forge of Bonds
+				["altQuests"] = { 63008 },	-- The Forge of Bonds
 				["sourceQuests"] = { 62898 },	-- The First New Growth
 				["provider"] = { "n", 172431 },	-- Lady Moonberry
 				["coord"] = { 49.5, 40.0, THE_TRUNK },
 			}),
 			q(63008, {	-- The Forge of Bonds
-			--	TODO: unsure how to pick up this version.  it automatically turned in with 61541
-			--	["sourceQuests"] = {  },	--
+				["altQuests"] = { 61541 },	-- The Forge of Bonds
+				["sourceQuests"] = { 58160 },	-- For Queen and Grove!
 				["provider"] = { "n", 156634 },	-- Winter Queen
-			--	["coord"] = {  },
+				["coord"] = { 50.9, 29.4, THE_CANOPY },
 			}),
 			q(61542, {	-- The Boon of Binding
 				["sourceQuests"] = { 61541 },	-- The Forge of Bonds

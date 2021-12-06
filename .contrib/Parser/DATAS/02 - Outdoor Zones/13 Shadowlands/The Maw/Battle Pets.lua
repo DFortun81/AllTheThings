@@ -27,6 +27,10 @@ _.Zones =
 				})),
 				petbattle(pet(3124, {	-- Vile Deathroach
 					["cr"] = 179227,	-- Vile Deathroach
+					["coords"] = {
+						{ 33.0, 46.6, THE_MAW },
+						{ 46.8, 57.6, THE_MAW },
+					},
 				})),
 				i(186188, {	-- Lil'Abom (PET!)
 				--	originally was not on PTR, then showed up during necrolord assault.  then was up without assault, the necrolord assault came back and pet parts all disappeared.  so i'm really not sure what the fuck the criteria are for seeing/looting these objects lol.  there is an assault quest that requires you to help build abominations so it may be tied to that, but it wasn't up last time the NL assault was active so i'm not sure

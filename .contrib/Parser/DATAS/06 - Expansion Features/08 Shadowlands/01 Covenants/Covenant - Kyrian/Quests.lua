@@ -858,6 +858,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["coord"] = { 32.1, 21.2, BASTION },
 			}),
 			q(58787, {	-- Trial of Ascension
+				["sourceQuests"] = { 57124 },	-- Her Will, Inflicted
 				["description"] = "Requires Renown 5.",
 				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 				["coord"] = { 55.6, 42.0, ARCHONS_RISE },
