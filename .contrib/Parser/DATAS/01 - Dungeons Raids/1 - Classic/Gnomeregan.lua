@@ -728,7 +728,6 @@ root("Instances", tier(CLASSIC_TIER, {
 				["groups"] = {
 					i(6893, {	-- Workshop Key
 						["description"] = "This key allows you to get into the back door of Gnomeregan.",
-						["timeline"] = { "removed 4.0.3" },
 					}),
 					i(9446),	-- Electrocutioner Leg
 					i(9448),	-- Spidertank Oilrag
