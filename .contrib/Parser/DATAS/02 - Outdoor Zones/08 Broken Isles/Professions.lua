@@ -422,6 +422,17 @@ _.Zones =
 						["coord"] = { 30.0, 53.4, SURAMAR },
 						["isBreadcrumb"] = true,
 					}),
+					q(38531, {	-- Leystone Mastery
+						["sourceQuest"] = 38530,	-- The Firmament Stone
+						["provider"] = { "n", 92242 },	-- Barm Stonebreaker
+						["coord"] = { 55.2, 84.2, HIGHMOUNTAIN },
+						["g"] = {
+							spell(191704, {	-- Recipe List: Grand Master Leysmithing
+								recipe(182964),	-- Leystone Pauldrons
+								recipe(182966),	-- Leystone Helm
+							}),
+						},
+					}),
 					q(38532, {	-- Maw of Souls: Hammered By The Storm
 						["description"] = "Remember to loot Heyla to obtain Terrorspike.",
 						["sourceQuests"] = { 38530 },	-- The Firmament Stone
@@ -2091,3 +2102,11 @@ _.Zones =
 		}),
 	}),
 };
+
+root("HiddenQuestTriggers", {
+	n(PROFESSIONS, {
+		prof(ALCHEMY, {
+			q(42083),	-- on turn-in of (42081)
+		}),
+	}),
+});

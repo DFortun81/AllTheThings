@@ -926,3 +926,13 @@ _.Zones =
 		}),
 	}),
 };
+
+root("HiddenQuestTriggers", {
+	m(1355, {	-- Nazjatar
+		n(RARES, {
+			n(QUESTS, {
+				q(56883),	-- using Brimstone Pickaxe to start Avarius
+			}),
+		}),
+	}),
+});

@@ -996,7 +996,6 @@ _.HiddenQuestTriggers = {
 		q(37667),	-- Building for Professions - completed with quest 36100 & 37669
 		q(45405),	-- Breaching the Sanctum - completed with quest 44719
 		q(49563),	-- Warchief's Command: Frostfire Ridge! - completed with quest 49545
-		q(51845),	-- Storm's End - completed with quest 50824
 
 		-- Frostfire Ridge
 		--q(36079),	-- A Hero's Welcome - TODO: figure out from where it gets completed
@@ -1636,7 +1635,6 @@ _.HiddenQuestTriggers = {
 		q(34024),	-- Tracking Quest. This completes when you kill the Windfang Matriarch after helping Romuul.
 		q(33786),	-- ??????. This was completed around Fiona's caravan in Shadowmoon Valley - Draenor (not entirely sure what triggered it.)
 		q(52969),	-- Going through the Stormwind Portal to Stormshield while on the WoD timeline in Chromie time
-		q(39709),	-- Opening some salvage crates, reflags on fresh character
 
 		-------------------
 		--    Legion     --

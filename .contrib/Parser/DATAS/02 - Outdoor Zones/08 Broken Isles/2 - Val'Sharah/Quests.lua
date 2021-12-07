@@ -719,6 +719,12 @@ _.Zones =
 					["requireSkill"] = ALCHEMY,
 					["sourceQuests"] = { 39431 },	-- Mending the Filter
 				}),
+				q(39338, {	-- Return the Filter
+					["provider"] = { "n", 93974 }, -- Leyweaver Erenyi
+					["coord"] = { 70.5, 46.4, VALSHARAH },
+					["requireSkill"] = ALCHEMY,
+					["sourceQuests"] = { 44112 },	-- Trading for Dreams
+				}),
 				q(42747, {	-- Where the Wildkin Are
 					["coord"] = { 59.4, 84.1, VALSHARAH },
 					["provider"] = { "n", 108304 },	-- Guviena Bladesong

@@ -5,36 +5,30 @@
 root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 	achcat(ACHIEVEMENT_CATEGORY_SHADOWLANDS_QUESTS, {
 		ach(14672, {	-- A Bit of This, A Bit of That
-		--	["_quests"] = { 60475 },	-- We'll Workshop It
+			["altQuests"] = { 60475 },	-- We'll Workshop It
 			["description"] = "Can currently be completed in one appearance of the World Quest by converting the Party to a Raid after collecting the 10 supplies, and talking to all 6 NPCs.",
 			["g"] = {
 				crit(1, {	-- Faerie Pomander
-					["_quests"] = { 60475 },	-- We'll Workshop It
 					["crs"] = { 158345 },	-- Lady of the Falls
 					["coord"] = { 51.1, 33.9, ARDENWEALD },
 				}),
 				crit(2, {	-- Slumberweb
-					["_quests"] = { 60475 },	-- We'll Workshop It
 					["crs"] = { 165704 },	-- Elder Gwenna
 					["coord"] = { 50.4, 33.0, ARDENWEALD },
 				}),
 				crit(3, {	-- Vorkai War Paint
-					["_quests"] = { 60475 },	-- We'll Workshop It
 					["crs"] = { 158519 },	-- Sorcha
 					["coord"] = { 51.1, 33.7, ARDENWEALD },
 				}),
 				crit(4, {	-- Gorm Whisperer
-					["_quests"] = { 60475 },	-- We'll Workshop It
 					["crs"] = { 165382 },	-- Gormsmith Cavina
 					["coord"] = { 51.6, 34.0, ARDENWEALD },
 				}),
 				crit(5, {	-- Tirnenn Resilience
-					["_quests"] = { 60475 },	-- We'll Workshop It
 					["crs"] = { 165705 },	-- Groonoomcrooek
 					["coord"] = { 51.8, 32.0, ARDENWEALD },
 				}),
 				crit(6, {	-- Finnan's Luck
-					["_quests"] = { 60475 },	-- We'll Workshop It
 					["crs"] = { 165703 },	-- Elder Finnan
 					["coord"] = { 51.7, 34.0, ARDENWEALD },
 				}),
@@ -42,7 +36,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 		}),
 		ach(14741, {	-- Aerial Ace
 			["description"] = "Speak to the NPC after completing the WQ and ask to complete the Paragon's Challenge.",
-			["_quests"] = { 60911 },	-- Flight School: Flapping Frenzy
+			["altQuests"] = { 60911 },	-- Flight School: Flapping Frenzy
 		}),
 		ach(15064, {	-- Breaking The Chains
 			i(186654),	-- Bracelet of Salarangor
@@ -172,7 +166,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			}),
 		}),
 		ach(14762, {	-- Breaking the Stratus Fear
-			["_quests"] = { 60858 },	-- Flight School: Up and Away!
+			["altQuests"] = { 60858 },	-- Flight School: Up and Away!
 		}),
 		ach(15032, {	-- Breaking Their Hold
 			crit(1),	-- Dead On Their Feet
@@ -187,7 +181,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			crit(10),	-- Somebody Feed Kevin
 		}),
 		ach(14772, {	-- Caught in a Bat Romance
-			["_quests"] = { 60602 },	-- Secret Service
+			["altQuests"] = { 60602 },	-- Secret Service
 		}),
 		ach(14790),		-- Covenant Campaign
 		ach(14735, {	-- Flight School Graduate
@@ -274,13 +268,13 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			}),
 		}),
 		ach(14766, {	-- Parasoling
-			["_quests"] = { 59718 },	-- Parasol Peril
+			["altQuests"] = { 59718 },	-- Parasol Peril
 			["g"] = {
 				i(182695),		-- Weathered Purple Parasol
 			},
 		}),
 		ach(14765, {	-- Ramparts Racer
-			["_quests"] = { 59643 },	-- It's Race Day in the Ramparts!
+			["altQuests"] = { 59643 },	-- It's Race Day in the Ramparts!
 		}),
 		ach(15036, {	-- Rooting Out The Evil
 			crit(1),	-- Clean Out the Crucible
@@ -295,7 +289,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			crit(10),	-- Heavy Handed Tactics
 		}),
 		ach(14671, {	-- Something's Not Quite Right....
-			["_quests"] = { 60739 },	-- Tough Crowd
+			["altQuests"] = { 60739 },	-- Tough Crowd
 			["crs"] = { 170080 },	-- Audience Member / Exposed Boggart
 		}),
 		ach(15033, {	-- Taking the Tremaculum
@@ -326,32 +320,16 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 		}),
 		ach(14758),		-- The World Beyond
 		ach(14737, {	-- What Bastion Remembered
-		--	["_quests"] = { 59717 },	-- Things Remembered
+			["altQuests"] = { 59717, 59705 },	-- Things Remembered
 			["g"] = {
-				crit(1, {	-- Eridia, Hand of Purity
-					["_quests"] = { 59717, 59705 },	-- Things Remembered
-				}),
-				crit(2, {	-- Kalisthene
-					["_quests"] = { 59717, 59705 },	-- Things Remembered
-				}),
-				crit(3, {	-- Chyrus, Paragon of Humility
-					["_quests"] = { 59717, 59705 },	-- Things Remembered
-				}),
-				crit(4, {	-- Kleia
-					["_quests"] = { 59717, 59705 },	-- Things Remembered
-				}),
-				crit(5, {	-- Pelagos
-					["_quests"] = { 59717, 59705 },	-- Things Remembered
-				}),
-				crit(6, {	-- Forgelite Sophone
-					["_quests"] = { 59717, 59705 },	-- Things Remembered
-				}),
-				crit(7, {	-- Uther
-					["_quests"] = { 59717, 59705 },	-- Things Remembered
-				}),
-				crit(8, {	-- Mikanikos
-					["_quests"] = { 59717, 59705 },	-- Things Remembered
-				}),
+				crit(1),	-- Eridia, Hand of Purity
+				crit(2),	-- Kalisthene
+				crit(3),	-- Chyrus, Paragon of Humility
+				crit(4),	-- Kleia
+				crit(5),	-- Pelagos
+				crit(6),	-- Forgelite Sophone
+				crit(7),	-- Uther
+				crit(8),	-- Mikanikos
 			},
 		}),
 		ach(15034, {	-- Wings Against the Flames
