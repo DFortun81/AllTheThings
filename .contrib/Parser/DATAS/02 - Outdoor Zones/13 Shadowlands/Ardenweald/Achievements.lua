@@ -216,64 +216,6 @@ _.Zones =
 						}),
 					},
 				})),
-				ach(14788, {	-- Fractured Faerie Tales
-					crit(1, {	-- A Meandering Story
-						["description"] = "The NPC can be found patrolling between Tirna Vaal and the southern end of Glitterfall Basin or in the pass between Hibernal Hollow and the Heart of the Forest.",
-						["provider"] = { "i", 183877 },	-- A Meandering Story
-						["questID"] = 62619,	-- A Meandering Story
-						["coords"] = {
-							{ 51.0, 50.4, ARDENWEALD },
-							{ 53.6, 42.0, ARDENWEALD },
-							{ 56.8, 52.8, ARDENWEALD },
-							{ 61.6, 35.4, ARDENWEALD },
-						},
-						["crs"] = { 174721 },	-- Meandering Story
-					}),
-					crit(2, {	-- A Wandering Tale
-						["provider"] = { "i", 183878 },	-- A Wandering Tale
-						["questID"] = 62620,	-- A Wandering Tale
-						["coords"] = {
-							{ 30.0, 44.8, ARDENWEALD },
-							{ 35.6, 26.8, ARDENWEALD },
-							{ 36.4, 48.0, ARDENWEALD },
-							{ 37.9, 40.0, ARDENWEALD },
-						},
-						["crs"] = { 174723 },	-- Wandering Tale
-					}),
-					crit(3, {	-- An Escapist Novel
-						["provider"] = { "i", 183879 },	-- An Escapist Novel
-						["questID"] = 62621,	-- An Escapist Novel
-						["coords"] = {
-							{ 32.6, 31.6, ARDENWEALD },
-							{ 40.0, 44.6, ARDENWEALD },
-							{ 40.6, 27.6, ARDENWEALD },
-							{ 40.9, 42.3, ARDENWEALD },
-						},
-						["crs"] = { 174724 },	-- Escapist Novel
-					}),
-					crit(4, {	-- A Travel Journal
-						["provider"] = { "i", 183880 },	-- A Travel Journal
-						["questID"] = 62622,	-- A Travel Journal
-						["coords"] = {
-							{ 40.1, 41.7, ARDENWEALD },
-							{ 49.7, 40.2, ARDENWEALD },
-							{ 50.2, 25.0, ARDENWEALD },
-							{ 50.2, 41.9, ARDENWEALD },
-						},
-						["crs"] = { 174725 },	-- Travel Journal
-					}),
-					crit(5, {	-- A Naughty Story
-						["provider"] = { "i", 183881 },	-- A Naughty Story
-						["questID"] = 62623,	-- A Naughty Story
-						["coords"] = {
-							{ 24.8, 51.8, ARDENWEALD },
-							{ 33.6, 57.4, ARDENWEALD },
-							{ 39.8, 65.6, ARDENWEALD },
-							{ 51.0, 54.8, ARDENWEALD },
-						},
-						["crs"] = { 174726 },	-- A Naughty Story
-					}),
-				}),
 				ach(14800, {	-- Sojourner of Ardenweald
 					crit(1, {	-- Thread of Hope
 						["sourceQuests"] = { 60066 },	-- Silk for Ardenweald

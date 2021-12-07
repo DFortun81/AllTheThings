@@ -19,15 +19,66 @@ _.Zones =
 					-- ["sourceQuests"] = {  },	-- TODO: had this rare killed from previously (lvl 57+) but didn't receive the quest item. Guessing there's a SQ...
 					["provider"] = { "i", 183091 },	-- Lifewoven Bracelet
 				}),
+				q(62619, {	-- A Meandering Story
+					["description"] = "The NPC can be found patrolling between Tirna Vaal and the southern end of Glitterfall Basin or in the pass between Hibernal Hollow and the Heart of the Forest.",
+					["provider"] = { "i", 183877 },	-- A Meandering Story
+					["crs"] = { 174721 },	-- Meandering Story
+					["coords"] = {
+						{ 51.0, 50.4, ARDENWEALD },
+						{ 53.6, 42.0, ARDENWEALD },
+						{ 56.8, 52.8, ARDENWEALD },
+						{ 61.6, 35.4, ARDENWEALD },
+					},
+				}),
+				q(62623, {	-- A Naughty Story
+					["provider"] = { "i", 183881 },	-- A Naughty Story
+					["crs"] = { 174726 },	-- A Naughty Story
+					["coords"] = {
+						{ 24.8, 51.8, ARDENWEALD },
+						{ 33.6, 57.4, ARDENWEALD },
+						{ 39.8, 65.6, ARDENWEALD },
+						{ 51.0, 54.8, ARDENWEALD },
+					},
+				}),
 				q(60063, {	-- A Song for Silkstriders
 					["sourceQuests"] = { 60062 },	-- The Shattered Harp
 					["provider"] = { "n", 167047 },	-- Artisan Rees
 					["coord"] = { 37.0, 29.6, ARDENWEALD },
 				}),
+				q(62622, {	-- A Travel Journal
+					["provider"] = { "i", 183880 },	-- A Travel Journal
+					["crs"] = { 174725 },	-- Travel Journal
+					["coords"] = {
+						{ 40.1, 41.7, ARDENWEALD },
+						{ 49.7, 40.2, ARDENWEALD },
+						{ 50.2, 25.0, ARDENWEALD },
+						{ 50.2, 41.9, ARDENWEALD },
+					},
+				}),
+				q(62620, {	-- A Wandering Tale
+					["provider"] = { "i", 183878 },	-- A Wandering Tale
+					["crs"] = { 174723 },	-- Wandering Tale
+					["coords"] = {
+						{ 30.0, 44.8, ARDENWEALD },
+						{ 35.6, 26.8, ARDENWEALD },
+						{ 36.4, 48.0, ARDENWEALD },
+						{ 37.9, 40.0, ARDENWEALD },
+					},
+				}),
 				q(57865, {	-- Ages-Echoing Wisdom
 					["sourceQuests"] = { 59656 },	-- Well, Tell the Lady
 					["provider"] = { "n", 158345 },	-- Lady of the Falls
 					["coord"] = { 51.1, 33.8, ARDENWEALD },
+				}),
+				q(62621, {	-- An Escapist Novel
+					["provider"] = { "i", 183879 },	-- An Escapist Novel
+					["crs"] = { 174724 },	-- Escapist Novel
+					["coords"] = {
+						{ 32.6, 31.6, ARDENWEALD },
+						{ 40.0, 44.6, ARDENWEALD },
+						{ 40.6, 27.6, ARDENWEALD },
+						{ 40.9, 42.3, ARDENWEALD },
+					},
 				}),
 				q(60519, {	-- Audience with the Winter Queen
 					["sourceQuests"] = { 60724 },	-- Heartless
