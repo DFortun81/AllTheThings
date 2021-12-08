@@ -775,6 +775,7 @@ _.HiddenQuestTriggers = {
 	q(44442),	-- Warlock Order Hall - Tracking Quest: New Blood 5
 	q(44655),	-- Warlock Order Hall - "Searching the Archives" mission complete
 	q(44657),	-- Warlock Order Hall - "Information at any Cost" mission complete
+	q(43678),	-- Destro hidden artifact from ritual of doom
 };
 
 -- These quests never made it in.

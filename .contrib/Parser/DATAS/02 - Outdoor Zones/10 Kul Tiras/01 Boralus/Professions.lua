@@ -773,3 +773,11 @@ _.Zones =
 		}),
 	}),
 };
+
+root("HiddenQuestTriggers", {
+	n(PROFESSIONS, {
+		prof(TAILORING, {
+			q(55236),	-- while closing time rifts during (55214)
+		}),
+	}),
+});

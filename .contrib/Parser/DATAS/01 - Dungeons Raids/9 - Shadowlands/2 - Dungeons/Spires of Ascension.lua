@@ -166,6 +166,7 @@ _.Instances = { tier(SL_TIER, {
 						i(180114),	-- Fallen Paragon's Armguards
 						i(180108),	-- Abyssal Disharmony Breeches
 						i(180119),	-- Boon of the Archon
+						i(183054),	-- Mysterious Soul Mirror
 					},
 				}),
 			}),
@@ -220,6 +221,7 @@ _.Instances = { tier(SL_TIER, {
 							i(180114),	-- Fallen Paragon's Armguards
 							i(180108),	-- Abyssal Disharmony Breeches
 							i(180119),	-- Boon of the Archon
+							i(183054),	-- Mysterious Soul Mirror
 						},
 					}),
 				},
@@ -281,6 +283,7 @@ _.Instances = { tier(SL_TIER, {
 							i(180114),	-- Fallen Paragon's Armguards
 							i(180108),	-- Abyssal Disharmony Breeches
 							i(180119),	-- Boon of the Archon
+							i(183054),	-- Mysterious Soul Mirror
 						},
 					}),
 				},

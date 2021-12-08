@@ -394,4 +394,5 @@ _.HiddenQuestTriggers = {
 	q(61451),	-- Stolen Jar
 	q(61470),	-- The Necronom-i-nom
 	q(61444),	-- Vat of Conspicuous Slime
+	q(62582),	-- Using Cache of Spare Weapons
 };

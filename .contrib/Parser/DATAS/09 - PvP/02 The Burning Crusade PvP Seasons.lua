@@ -583,7 +583,7 @@ _.PVP =
 							}),
 							i(147613),	-- General's Satin Cord
 							i(147614),	-- General's Satin Slippers
-							i(47771),  -- General's Satin Cuffs
+							i(147771),  -- General's Satin Cuffs
 						},
 					}),
 				}),

@@ -619,6 +619,7 @@ _.Zones =
 									i(164300),	-- Plundered Longhunt Bow
 									i(164292),	-- Plundered Petrified Tree
 									i(164276),	-- Plundered Sandfury Blade
+									i(164294),	-- Plundered Shadow-Infused Blade
 									i(164272),	-- Plundered Skullsplitter
 									i(164271),	-- Plundered Torga Blessed Bulwark
 									i(164296),	-- Plundered Tenderizing Crusher

@@ -1767,6 +1767,10 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			q(34691),	-- Just the Beginning
 			q(34677),	-- NOT USED
 			q(35161),	-- Vignette XP reward - Talador
+			-- For Darkal
+			q(33923),	-- Demons? In Auchindoun?
+			q(34565),	-- Tearing Up Talador
+			q(34570),	-- REUSE
 		}),
 	}),
 });

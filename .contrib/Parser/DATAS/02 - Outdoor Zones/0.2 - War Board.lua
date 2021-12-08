@@ -587,7 +587,7 @@ _.Zones =
 			--
 			q(26365, {	-- Hero's Call: Redridge Mountains!
 				["description"] = "This is a breadcrumb quest and is mutually exclusive with other Redridge Mountains breadcrumbs.  It also seems to be unobtainable at higher levels, so if you want to collect the transmog from this quest then you'll need to do it early.",
-				["lvl"] = 15,
+				["lvl"] = 11,
 				["coords"] = {
 					{ 85.6, 31.8, STORMWIND_CITY },	-- Anduin Wrynn <King of Stormwind> -- not sure about this one
 					{ 85.8, 32.4, STORMWIND_CITY },	-- Grand Admiral Jes-Tereth

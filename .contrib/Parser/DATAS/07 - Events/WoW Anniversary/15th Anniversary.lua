@@ -132,6 +132,9 @@ root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 						i(18150),	-- Rune of Recall
 					},
 				}),
+				q(63953, {	-- Korrak's Revenge
+					["timeline"] = { "added 9.1.5" },
+				}),
 				q(57320, {	-- Launch the Attack!
 					["repeatable"] = true,	-- presumably
 					["provider"] = { "n", 13449 },	-- Warmaster Garrick

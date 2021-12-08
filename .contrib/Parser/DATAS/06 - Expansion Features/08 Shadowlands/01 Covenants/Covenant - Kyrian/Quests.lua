@@ -530,9 +530,9 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 					follower(1260),	-- Kleia
 				},
 			}),
-			i(183054, {	-- Mysterious Soul Mirror
-				["questID"] = 62237,	-- Mysterious Soul Mirror
-				["crs"] = { 162061 },	-- Devos
+			q(62237, {	-- Mysterious Soul Mirror
+				["sourceQuests"] = { 57904 },	-- Our Eternal Charge
+				["provider"] = { "i", 183054 },	-- Mysterious Soul Mirror
 			}),
 			q(65147, {	-- No Ordinary Steward
 				["sourceQuests"] = { 62795 },	-- A Conduit for Good
@@ -858,6 +858,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["coord"] = { 32.1, 21.2, BASTION },
 			}),
 			q(58787, {	-- Trial of Ascension
+				["sourceQuests"] = { 57124 },	-- Her Will, Inflicted
 				["description"] = "Requires Renown 5.",
 				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 				["coord"] = { 55.6, 42.0, ARCHONS_RISE },

@@ -2360,6 +2360,11 @@ root("HiddenQuestTriggers", {
 			--q(61825),	-- During Ember Court after finishin Glimpse of the Wilds Niya's minigame
 			q(59691),	-- "The Party Herald"
 			q(61931),	-- Restocked Ember Court security/Killing house Iremoore Assassin (npcid:173098)
+			--q(61941),	-- Maybe Etiquette?
+			--q(61926),	-- Maybe Revendreth Etiquette?
+			--q(63353),	-- Achievement related to "Rendles Big Day"
+			--q(61932),	-- Maybe Bastion Etiquette
+			q(61458),	-- After using [Visions of Sire Denathrius] in Ember Court
 	-- Misc
 		q(62035),	-- unlocking Soulbreaker's Court Vestments set (TransmogSetID 2065, Soulbreaker's Court items)
 		q(62031),	-- unlocking Court Death Shroud Armor set (TransmogSetID 2068, Court Death Shroud items)

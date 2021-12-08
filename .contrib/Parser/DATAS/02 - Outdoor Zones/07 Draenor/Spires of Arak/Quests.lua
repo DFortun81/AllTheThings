@@ -1316,5 +1316,10 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		n(WEAPONS, {
 			i(114946),	-- Admiral Taylor's Spellguard
 		}),
+		n(QUESTS, {
+			-- For Darkal
+			q(35340),	-- What Happened Here?
+			q(36796),	-- The Flock's Revenge
+		}),
 	}),
 });

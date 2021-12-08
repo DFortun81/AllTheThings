@@ -383,11 +383,21 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			}),
 		}),
 		ach(14788, {	-- Fractured Faerie Tales
-			crit(1),		-- A Meandering Story
-			crit(2),		-- A Wandering Tale
-			crit(3),		-- An Escapist Novel
-			crit(4),		-- A Travel Journal
-			crit(5),		-- A Naughty Story
+			crit(1, {	-- A Meandering Story
+				["_quests"] = { 62619 },	-- A Meandering Story
+			}),
+			crit(2, {	-- A Wandering Tale
+				["_quests"] = { 62620 },	-- A Wandering Tale
+			}),
+			crit(3, {	-- An Escapist Novel
+				["_quests"] = { 62621 },	-- An Escapist Novel
+			}),
+			crit(4, {	-- A Travel Journal
+				["_quests"] = { 62622 },	-- A Travel Journal
+			}),
+			crit(5, {	-- A Naughty Story
+				["_quests"] = { 62623 },	-- A Naughty Story
+			}),
 		}),
 		ach(14745),		-- Grand Theft Shadehound
 		ach(14943),		-- Guarmageddon

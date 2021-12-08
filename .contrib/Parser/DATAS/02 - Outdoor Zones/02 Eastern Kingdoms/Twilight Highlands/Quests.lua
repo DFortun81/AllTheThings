@@ -545,10 +545,12 @@ _.Zones =
 					["provider"] = { "n", 45528 },	-- Calen
 				}),
 				q(28712, {	-- Enter the Dragon Queen
-					["sourceQuests"] = { 28109 },	-- Pressing Forward
-					-- May also require "Paving the Way"
 					["coord"] = { 21.8, 57.0, TWILIGHT_HIGHLANDS },
 					["provider"] = { "n", 47603 },	-- Alextrasza the Life-Binder
+					["sourceQuests"] = {
+						28109,	-- Pressing Forward (A)
+						28093,	-- Pressing Forward (H)
+					},
 				}),
 				q(27644, {	-- Eoin Dunwald
 					["sourceQuests"] = { 27640 },	-- Dunwalds Don't Die

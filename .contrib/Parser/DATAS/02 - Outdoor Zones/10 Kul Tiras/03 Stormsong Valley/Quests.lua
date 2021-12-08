@@ -1249,16 +1249,16 @@ _.Zones =
 					["g"] = {
 						n(-862, {	-- Hearth of Azeroth
 							["description"] = "The Heart of Azeroth Necklace is required to obtain these items.",
-								["g"] = {
-									i(155180),	-- Darkwater Hood
-									i(155186),	-- Darkwater Shoulderpads
-									i(155177),	-- Dread Corsair Greathelm
-									i(155187),	-- Dread Corsair Shoulderplates
-									i(155178),	-- Tidespeaker Circlet
-									i(155188),	-- Tidespeaker Mantle
-									i(155189),	-- Stormchaser Pauldrons
-									i(155179),	-- Stormchaser Coif
-								},
+							["g"] = {
+								i(155180),	-- Darkwater Hood
+								i(155186),	-- Darkwater Shoulderpads
+								i(155177),	-- Dread Corsair Greathelm
+								i(155187),	-- Dread Corsair Shoulderplates
+								i(155178),	-- Tidespeaker Circlet
+								i(155188),	-- Tidespeaker Mantle
+								i(155189),	-- Stormchaser Pauldrons
+								i(155179),	-- Stormchaser Coif
+							},
 						}),
 						i(175303),	-- Tidespeaker Circlet (no azerite version)
 						i(175328),	-- Tidespeaker Mantle (no azerite version)
@@ -1282,16 +1282,16 @@ _.Zones =
 					["g"] = {
 						n(-862, {	-- Hearth of Azeroth
 							["description"] = "The Heart of Azeroth Necklace is required to obtain these items.",
-								["g"] = {
-									i(155168),	-- Darkwater Tunic
-									i(160878),	-- Darkwater Shoulderguards
-									i(155166),	-- Dread Corsair Breastplate
-									i(160880),	-- Dread Corsair Pauldrons
-									i(160877),	-- Tidespeaker Amice
-									i(155185),	-- Tidespeaker Vestments
-									i(160879),	-- Stormchaser Shoulderguards
-									i(155167),	-- Stormchaser Chainmail
-								},
+							["g"] = {
+								i(155168),	-- Darkwater Tunic
+								i(160878),	-- Darkwater Shoulderguards
+								i(155166),	-- Dread Corsair Breastplate
+								i(160880),	-- Dread Corsair Pauldrons
+								i(160877),	-- Tidespeaker Amice
+								i(155185),	-- Tidespeaker Vestments
+								i(160879),	-- Stormchaser Shoulderguards
+								i(155167),	-- Stormchaser Chainmail
+							},
 						}),
 						i(175364),	-- Darkwater Tunic (no azerite version)
 						i(175343),	-- Darkwater Shoulderguards (no azerite version)
@@ -1733,12 +1733,21 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 	}),
 });
-_.HiddenQuestTriggers = {
-	q(54852),	-- naming the ship "Anduin's Wrath" during Blessing of the Tides quest to recruit Kul Tirans
-	q(54853),	-- naming the ship "Dawnsailor" during Blessing of the Tides quest to recruit Kul Tirans
-	q(54854),	-- naming the ship "Tiffin's Melody" during Blessing of the Tides quest to recruit Kul Tirans
-	q(54855),	-- naming the ship "The Lionheart" during Blessing of the Tides quest to recruit Kul Tirans
-	q(54775),	-- Warmode Storm's Rage
-	q(54716),	-- Secret Chest during Stormsong Valley Incursion in Warmode
-	--q(53635),	-- Got this either just after collecting Curious Grain Sacks, or after Killing Poacher Zane
-};
+
+root("HiddenQuestTriggers", {
+	m(KULTIRAS, {
+		m(STORMSONG_VALLEY, {
+			n(QUESTS, {
+				q(51845),	-- Storm's End - completed with quest 50824
+				q(51846),	-- popped with completion of (50824) [VOIDELF] [MAGE]
+				q(54852),	-- naming the ship "Anduin's Wrath" during Blessing of the Tides quest to recruit Kul Tirans
+				q(54853),	-- naming the ship "Dawnsailor" during Blessing of the Tides quest to recruit Kul Tirans
+				q(54854),	-- naming the ship "Tiffin's Melody" during Blessing of the Tides quest to recruit Kul Tirans
+				q(54855),	-- naming the ship "The Lionheart" during Blessing of the Tides quest to recruit Kul Tirans
+				q(54775),	-- Warmode Storm's Rage
+				q(54716),	-- Secret Chest during Stormsong Valley Incursion in Warmode
+				--q(53635),	-- Got this either just after collecting Curious Grain Sacks, or after Killing Poacher Zane
+			}),
+		}),
+	}),
+});

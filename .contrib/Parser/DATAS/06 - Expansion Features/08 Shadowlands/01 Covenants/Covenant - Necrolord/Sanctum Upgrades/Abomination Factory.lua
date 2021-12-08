@@ -1431,7 +1431,7 @@ root("HiddenQuestTriggers", {
 	q(62573),	-- Abomination level 3 sitching Chef hat/Sticky Cat.
 	q(61512),	-- Completing Something Old, Something Used first time. Confirmed first time 30.09.2021
 	q(63099),	-- Opening 184589, Bag of Potions from Atticus
-	--q(62535),	-- Unknown doing dailies from abom
+	--q(62535),	-- Unknown Maybe critera for Corspe Run
 	q(60873),	-- Buying Bag of Sin Stones (180442) from Atticus
 
 -- Crypt Couture criterias
@@ -1463,6 +1463,7 @@ root("HiddenQuestTriggers", {
 --	Unity Transmog
 	q(63407),	-- Leather Chest
 	q(63403),	-- Plate Helm
+	q(63406),	-- Plate Chest
 
 	q(62037),	-- unlocking Mind of Maldraxxus set (TransmogSetID 2033, Duty-Bound Conjurer's items)
 	q(62036),	-- unlocking Zeal of Maldraxxus set (TransmogSetID 2038, Duty-Bound Wraith's items)
@@ -1503,8 +1504,8 @@ root("HiddenQuestTriggers", {
 	q(62583),	-- Crafted Hitchhiker at Abominable Stitching Table
 	q(61712),	-- Crafted Holiday Hat at Abominable Stitching Table
 	q(62759),	-- Crafted Lovely Candle Display at Abominable Stitching Table
-	-- q(62470),	-- Crafted Operational Instructions? at Abominable Stitching Table
 	q(62577),	-- Crafted Magician's Hat at Abominable Stitching Table
+	q(62470),	-- Crafted Operational Instructions at Abominable Stitching Table
 	q(61561),	-- Crafted Outlaw Flag at Abominable Stitching Table
 	q(62826),	-- Crafted Pirate Hat at Abominable Stitching Table
 	q(62576),	-- Crafted Plague Pack at Abominable Stitching Table
