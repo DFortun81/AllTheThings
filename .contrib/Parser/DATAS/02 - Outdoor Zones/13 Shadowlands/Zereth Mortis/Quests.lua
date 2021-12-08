@@ -188,12 +188,17 @@ root("Zones", m(SHADOWLANDS, {
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.6, 48.1, ZERETH_MORTIS },
 			}),
-			q(64230, {	-- Cyphers of the First Ones (PTR wants to stop here)
-				["description"] = "I werent able to complete this Quest. Contact Discord if you are able to complete it.",
+			q(64230, {	-- Cyphers of the First Ones
 				["sourceQuests"] = { 65149 },	-- Surveying Cyphers
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.6, 48.1, ZERETH_MORTIS },
 			}),
+			q(65305, {	-- The Way Forward
+				["sourceQuests"] = { 64230 },	--  Cyphers of the First Ones
+				["provider"] = { "n", 179611 },	-- Pelagos
+				["coord"] = { 34, 48, ZERETH_MORTIS },
+			}),
+			-- END
 
 
 
@@ -238,6 +243,7 @@ root("Zones", m(SHADOWLANDS, {
 				["provider"] = { "n", 180936 },	-- Rana
 				["coord"] = { 31.7, 67.4, ZERETH_MORTIS },
 			}),
+			-- End
 
 
 			-- E'rnee Questline
@@ -277,13 +283,15 @@ root("Zones", m(SHADOWLANDS, {
 					i(189585),	-- E'rnee
 				}
 			}),
+			-- End
 
 
 			-- Drim Questline (Those are probably unlocked ones you Leave Firim first time. They were available after Chap 1 at least but you dont get to the hideout before Chap 3)
-			q(65463, {	-- The Wellspring of the First Ones (Might be Breadcrumb!)
+			q(65463, {	-- The Wellspring of the First Ones
 				["sourceQuests"] = { 64951 },	-- The Road to Haven (or The Forces Gather(64958) or something inbetween)
 				["provider"] = { "n", 181084 },	-- Drim
 				["coord"] = { 61.4, 49.3, ZERETH_MORTIS },
+				["isBreadcrumb"] = true,
 			}),
 			q(65349, {	-- Lost Grace
 				["sourceQuests"] = { 65463 },	-- The Wellspring of the First Ones (MIGHT BE SHAMAN ONLY?!) Might be Breadcrumb!
@@ -291,7 +299,6 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 61.9, 53.5, ZERETH_MORTIS },
 			}),
 			q(65350, {	-- Restore the Flow
-				["description"] = "I werent able to complete this Quest. Contact Discord if you are able to complete it.",
 				["sourceQuests"] = { 65349 },	-- Lost Grace
 				["provider"] = { "n", 184537 },	-- Assistant Conservator Nadir
 				["coord"] = { 55, 50.3, ZERETH_MORTIS },
@@ -301,6 +308,15 @@ root("Zones", m(SHADOWLANDS, {
 				["provider"] = { "n", 184537 },	-- Assistant Conservator Nadir
 				["coord"] = { 55, 50.3, ZERETH_MORTIS },
 			}),
+			q(65448, {	--  A Return to Grace
+				["sourceQuests"] = {
+					65350,	-- Restore the Flow
+					65353,	-- An Automa-free Diet
+				},
+				["provider"] = { "o", 375283 },	-- Flow Restart Console (QG)
+				["coord"] = { 74.1, 69, 2028 },
+			}),
+			-- End
 
 
 			-- Firim Quests (Those are probably unlocked ones you Leave Firim first time. They were available after Chap 1 at least but you dont get to the hideout before Chap 3)
@@ -319,13 +335,35 @@ root("Zones", m(SHADOWLANDS, {
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.6, 48.1, ZERETH_MORTIS },
 			}),
+			-- End
+
+
+			-- Cypher Research
+			q(65431, {	-- Further Research: Aealic
+				["sourceQuests"] = { 64230 },	--  Cyphers of the First Ones
+				["provider"] = { "n", 181397 },	-- Cypher Console
+				["coord"] = { 33.8, 49.4, ZERETH_MORTIS },
+			}),
+			-- End
 		}),
+		n(QUESTS, sharedData({ ["isDaily"] = true }, {
+			q(65264, {	-- Operation: Relocation
+				--["sourceQuests"] = {  },	Available After Chap 2
+				["provider"] = { "n", 181179 },	-- Elder Nirav
+				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
+			}),
+			q(65269, {	-- Obvious Plant
+				["sourceQuests"] = { 65305 },	-- The Way Forward (Chap 3)
+				["provider"] = { "n", 181179 },	-- Elder Nirav
+				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
+			})
+		})),
 	}),
 }));
 
 root("HiddenQuestTrigger", {
 	q(63850),	-- Triggered when enter ZM (Might be WQ). Triggered again today while running around in ZM
-	q(63766),	-- Triggered when Exploring
+	q(63766),	-- Triggered when Exploring (Might have to do with The Matriarch(183505))
 
 	-- Gravid Repose
 	q(65330),	-- Interior Locus Arrangement at Gravid Repose

@@ -37,10 +37,6 @@ root("Zones", m(SHADOWLANDS, {
 			n(180978, {	-- Hirukon <Aurelid Prime>
 				["coord"] = { 52.2, 75.2, ZERETH_MORTIS },
 			}),
-			n(183814, {	-- Interred Colossus
-				["coord"] = { 58.6, 39, ZERETH_MORTIS },
-				["questID"] = 65257,
-			}),
 			n(178563, {	-- Hadeon the Stonebreaker
 				["coord"] = { 52.6, 25.1, ZERETH_MORTIS },
 
@@ -50,6 +46,10 @@ root("Zones", m(SHADOWLANDS, {
 			}),
 			n(179034, {	-- Orixal
 				["coord"] = { 58.4, 83.1, ZERETH_MORTIS },
+			}),
+			n(183814, {	-- Otaris the Provoked
+				["coord"] = { 58.6, 39, ZERETH_MORTIS },
+				["questID"] = 65257,
 			}),
 			n(183746, {	-- Otiosen
 				["coord"] = { 43.4, 87.6, ZERETH_MORTIS },
@@ -76,6 +76,9 @@ root("Zones", m(SHADOWLANDS, {
 			}),
 			n(181249, {	-- Tethos
 				["coord"] = { 54.5, 73.4, ZERETH_MORTIS },
+			}),
+			n(183505, {	-- The Matriarch
+				["coord"] = { 44, 75, ZERETH_MORTIS },
 			}),
 			n(181360, {	--Vexis
 				["coord"] = { 39.6, 54.4, ZERETH_MORTIS },

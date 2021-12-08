@@ -1085,7 +1085,7 @@ pet(188679, 3221);	--* Lightless Tormentor
 -- Rest of iDS
 --[[
 3173-- Bufonid Croaker Added Wild Pet
-3180
+3180-- Venomous Bufonid
 3190-- Vicious Leporid
 3191-- Timid Leporid Wild
 3196-- Proto Avian Fledgling

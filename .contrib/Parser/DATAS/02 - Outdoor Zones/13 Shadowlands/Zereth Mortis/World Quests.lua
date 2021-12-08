@@ -7,10 +7,14 @@ root("Zones", m(SHADOWLANDS, {
 			["description"] = "Becomes Available after Chapter 2 of the Story Campaign.",
 			["g"] = {
 				n(REWARDS, {
-					i(189544),	-- Anima Lattice
+					i(189544),	-- Anima Webbing
+					i(189864),	-- Anima Gossamer
 					currency(1979),	-- Cyphers of the First Ones
 				}),
 				n(QUESTS, sharedData({ ["isWorldQuest"] = true }, {
+					q(65232, {	-- Annelid-ilation
+						["coord"] = { 57.2, 66.5, ZERETH_MORTIS },
+					}),
 					q(65117, {	-- Bad Samples
 						["coord"] = { 44.1, 30.8, ZERETH_MORTIS },
 					}),
@@ -29,8 +33,16 @@ root("Zones", m(SHADOWLANDS, {
 					q(65234, {	-- Sweet On Them
 						["coord"] = { 63, 58, ZERETH_MORTIS },
 					}),
+					-- Unlocked after Aeliec Cache
+					q(65408, {	-- Pattern Recognition
+						["coord"] = { 53.2, 86.8, ZERETH_MORTIS },
+					}),
 				})),
 			},
 		}),
 	}),
 }));
+
+root("HiddenQuestTriggers", {
+	q(65418),	-- Triggered when Completed Pattern Recognition(65408) I don't know if there is another WQ that completed or its because I opened the Cache in the WQ
+});

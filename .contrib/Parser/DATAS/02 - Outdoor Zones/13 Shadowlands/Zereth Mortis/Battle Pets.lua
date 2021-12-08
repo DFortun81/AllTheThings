@@ -37,6 +37,9 @@ root("Zones", m(SHADOWLANDS, {
 			pet(3200, {	-- Scarlet Proto Avian
 				["cr"] = 182294,
 			}),
+			pet(3180, {	-- Venomous Bufonid
+				["cr"] = 182019,
+			}),
 			pet(3190, {	-- Vicious Leporid
 				["cr"] = 182216
 			}),
