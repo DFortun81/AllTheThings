@@ -194,13 +194,193 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 34.6, 48.1, ZERETH_MORTIS },
 			}),
 			q(65305, {	-- The Way Forward
-				["sourceQuests"] = { 64230 },	--  Cyphers of the First Ones
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 179611 },	-- Pelagos
 				["coord"] = { 34, 48, ZERETH_MORTIS },
 			}),
 			-- END
 
 
+			-- Chapter 4
+			q(65335, {	-- News from Oribos
+				["sourceQuests"] = { 65305 },	-- The Way Forward
+				["provider"] = { "n", 183677 },	-- Uther the Lightbringer
+				["coord"] = { 35, 64.7, ZERETH_MORTIS },
+			}),
+			q(64830, {	-- Enlisting the Enlightened
+				["sourceQuests"] = { 65335 },	-- News from Oribos
+				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
+				["coord"] = { 35, 64.7, ZERETH_MORTIS },
+			}),
+			q(64833, {	-- Forging Unity from Diversity
+				["sourceQuests"] = { 64830 },	-- Enlisting the Enlightened
+				["provider"] = { "n", 184532 },	-- Elder Ara
+				["coord"] = { 34.8, 64.8, ZERETH_MORTIS },
+			}),
+			q(64831, {	-- Fragments of the First Ones
+				["sourceQuests"] = { 64833 },	-- Forging Unity from Diversity
+				["provider"] = { "n", 183139 },	-- Elder Ara
+				["coord"] = { 56.2, 57.9, ZERETH_MORTIS },
+			}),
+			q(64832, {	-- Reclaiming Provis Esper
+				["sourceQuests"] = { 64833 },	-- Forging Unity from Diversity
+				["provider"] = { "n", 183139 },	-- Elder Ara
+				["coord"] = { 56.2, 57.9, ZERETH_MORTIS },
+			}),
+			q(64837, {	-- The Pilgrim's Journey
+				["sourceQuests"] = {
+					64831,	-- Fragments of the First Ones
+					64832,	-- Reclaiming Provis Esper
+				},
+				["provider"] = { "n", 183168 },	-- Elder Ara
+				--["coord"] = { 56.2, 57.9, ZERETH_MORTIS }, Moving
+			}),
+			q(64834, {	-- Glow and Behold
+				["sourceQuests"] = { 64837 },	-- The Pilgrim's Journey
+				["provider"] = { "n", 183251 },	-- Elder Ara
+				["coord"] = { 61.3, 51.4, ZERETH_MORTIS },
+			}),
+			q(64838, {	-- Where There's a Pilgrim, There's a Way
+				["sourceQuests"] = { 64834 },	-- Glow and Behold
+				["provider"] = { "n", 183252 },	-- Elder Ara
+				["coord"] = { 64.7, 53.8, ZERETH_MORTIS },
+			}),
+			q(64969, {	-- In the Weeds
+				["sourceQuests"] = { 64838 },	-- Where There's a Pilgrim, There's a Way
+				["provider"] = { "n", 183530 },	-- Elder Ara
+				["coord"] = { 61.1, 50.7, ZERETH_MORTIS },
+			}),
+			q(64836, {	-- Nip It in the Bud
+				["sourceQuests"] = { 64969 },	-- In the Weeds
+				["provider"] = { "n", 183338 },	-- Elder Ara
+				["coord"] = { 48.2, 75.1, ZERETH_MORTIS },
+			}),
+			q(64839, {	-- Root of the Problem
+				["sourceQuests"] = { 64969 },	-- In the Weeds
+				["provider"] = { "n", 181771 },	-- Feroz
+				["coord"] = { 48.1, 75.2, ZERETH_MORTIS },
+			}),
+			q(64835, {	-- Pluck from the Vines
+				["sourceQuests"] = { 64969 },	-- In the Weeds
+				["provider"] = { "n", 181771 },	-- Feroz
+				["coord"] = { 48.1, 75.2, ZERETH_MORTIS },
+			}),
+			q(65331, {	-- Herbal Remedies
+				["sourceQuests"] = {
+					64836,	-- Nip It in the Bud
+					64839,	-- Root of the Problem
+					64835,	-- Pluck from the Vines
+				},
+				["provider"] = { "n", 184323 },	-- Feroz
+				["coord"] = { 47.7, 79.9, ZERETH_MORTIS },
+			}),
+			q(64840, {	-- Unchecked Growth
+				["sourceQuests"] = {
+					64836,	-- Nip It in the Bud
+					64839,	-- Root of the Problem
+					64835,	-- Pluck from the Vines
+				},
+				["provider"] = { "n", 184323 },	-- Feroz
+				["coord"] = { 47.7, 79.9, ZERETH_MORTIS },
+			}),
+			q(64841, {	-- Take Charge
+				["sourceQuests"] = {
+					64836,	-- Nip It in the Bud
+					64839,	-- Root of the Problem
+					64835,	-- Pluck from the Vines
+				},
+				["provider"] = { "n", 181814 },	-- General Draven
+				["coord"] = { 47.6, 80.3, ZERETH_MORTIS },
+			}),
+			q(64842, {	-- Catalyst Crush
+				["sourceQuests"] = {
+					64331,	-- Herbal Remedies
+					64840,	-- Unchecked Growth
+					64841,	-- Take Charge
+				},
+				["provider"] = { "n", 184442 },	-- Feroz
+				["coord"] = { 47.7, 79.9, ZERETH_MORTIS },
+			}),
+			q(64843, {	-- Key Crafting
+				["sourceQuests"] = { 64842 },	-- Catalyst Crush
+				["provider"] = { "n", 181814 },	-- General Draven
+				["coord"] = { 47.6, 80.3, ZERETH_MORTIS },
+			}),
+			q(64844, {	-- The Pilgrimage Ends
+				["sourceQuests"] = { 64843 },	-- Key Crafting
+				["provider"] = { "n", 184153 },	-- Elder Ara
+				["coord"] = { 47.3, 88.5, ZERETH_MORTIS },
+			}),
+			-- End
+
+			-- Chapter 5
+			q(64799, {	-- The Broken Crown
+				["sourceQuests"] = { 64844 },	-- The Pilgrimage Ends
+				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
+				["coord"] = { 35, 64.8, ZERETH_MORTIS },
+			}),
+			q(64800, {	-- Our Last Option
+				["sourceQuests"] = { 64799 },	-- The Broken Crown
+				["provider"] = { "n", 181229 },	-- Highlord Bolvar Fordragon
+				["coord"] = { 33.2, 68.9, ZERETH_MORTIS },
+			}),
+			q(64802, {	-- Hello, Darkness
+				["sourceQuests"] = { 64800 },	-- Our Last Option
+				["provider"] = { "n", 181245 },	-- The Primus
+				["coord"] = { 33.3, 68.8, ZERETH_MORTIS },
+			}),
+			q(64803, {	-- Testing One Two
+				["sourceQuests"] = { 64802 },	-- Hello, Darkness
+				["provider"] = { "n", 181245 },	-- The Primus
+				["coord"] = { 33.3, 68.8, ZERETH_MORTIS },
+			}),
+			q(64802, {	-- Elder Eru
+				["sourceQuests"] = { 64802 },	-- Hello, Darkness
+				["provider"] = { "n", 181229 },	-- Highlord Bolvar Fordragon
+				["coord"] = { 33.2, 68.9, ZERETH_MORTIS },
+			}),
+			q(64804, {	-- Cryptic Catalogue
+				["sourceQuests"] = { 64802 },	-- Elder Eru
+				["provider"] = { "n", 181266 },	-- Elder Eru
+				["coord"] = { 56.2, 83.3, ZERETH_MORTIS },
+			}),
+			q(64805, {	-- The Not-Scientific Method
+				["sourceQuests"] = {
+					64804,	-- Cryptic Catalogue
+					64803,	-- Testing One Two
+				},
+				["provider"] = { "n", 184182 },	-- Elder Eru
+				["coord"] = { 59.2, 78.8, ZERETH_MORTIS },
+			}),
+			q(64853, {	-- Two Paths to Tread
+				["sourceQuests"] = { 64805 },	-- The Not-Scientific Method
+				["provider"] = { "n", 184182 },	-- Elder Eru
+				["coord"] = { 59.2, 78.8, ZERETH_MORTIS },
+			}),
+			q(64809, {	-- One Half of the Equation
+				["sourceQuests"] = { 64853 },	-- Two Paths to Tread
+				["provider"] = { "n", 181229 },	-- Highlord Bolvar Fordragon
+				["coord"] = { 33.2, 68.9, ZERETH_MORTIS },
+			}),
+			q(64810, {	-- Oppress and Destroy
+				["sourceQuests"] = { 64809 },	-- One Half of the Equation
+				["provider"] = { "n", 181367 },	-- Highlord Bolvar Fordragon
+				["coord"] = { 57.2, 31.1, ZERETH_MORTIS },
+			}),
+			q(64811, {	-- Agressive Excavation
+				["sourceQuests"] = { 64809 },	-- One Half of the Equation
+				["provider"] = { "n", 181372 },	-- Taelia Fordragon
+				["coord"] = { 57.2, 31.2, ZERETH_MORTIS },
+			}),
+			q(64806, {	-- Where the Memories Resides
+				["sourceQuests"] = {
+					64810,	-- Oppress and Destroy
+					64811,	-- Agressive Excavation
+				},
+				["provider"] = { "n", 181367 },	-- Highlord Bolvar Fordragon
+				["coord"] = { 57.2, 31.1, ZERETH_MORTIS },
+			}),
+			-- The End contiune Baston>Torghast.
 
 
 

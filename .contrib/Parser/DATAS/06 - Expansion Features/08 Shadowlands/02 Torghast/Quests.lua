@@ -930,6 +930,21 @@ _.ExpansionFeatures =
 					["isWeekly"] = true,
 					["name"] = "Upper Reaches, Layer 12",
 				}),
+			-- PTR 9.2
+				q(64813, {	-- The Crown of Wills
+					["sourceQuests"] = { 64812 },	-- Forge of Domination
+					["provider"] = { "n", 181384 },	-- The Primus
+					["coord"] = { 49.3, 58.6, 1912 },
+				}),
+				-- The End of Chap 5
+
+				-- Chap 6
+				q(64816, {	-- Reality's Doorstep
+					["sourceQuests"] = { 64813 },	-- The Crown of Wills
+					["provider"] = { "n", 181379 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 49.1, 69.5, 1912 },
+					["isBreadcrumb"] = true,
+				}),
 			}),
 		}),
 	}),

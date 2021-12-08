@@ -53,6 +53,7 @@ root("Zones", m(SHADOWLANDS, {
 			}),
 			n(183746, {	-- Otiosen
 				["coord"] = { 43.4, 87.6, ZERETH_MORTIS },
+				["questID"] = 65556,
 			}),
 			n(180746, {	-- Protector of the First Ones
 				["description"] = "Pylons show what rune you need to bring here. It be done by one person, but you can only carry one of rune.\nPosition of runes:\nRune (V-like symbol) @ 43.0 21.5\nRune (Diamonds-like symbol) @ 44.9 22.4\nRune (M-like symbol) @ 46.8 23.3\nRune (H-llke symbol) @ 48.4 24.1",

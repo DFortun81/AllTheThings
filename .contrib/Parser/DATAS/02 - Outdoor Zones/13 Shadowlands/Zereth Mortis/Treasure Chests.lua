@@ -33,11 +33,16 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 39, 73.2, ZERETH_MORTIS },
 				["questID"] = 65480,
 			}),
+			o(373543, {	-- Library Vault
+				["description"] = "There are tablets around the Cave. The First one at (57.9,78.1) after that a new tablet will spawn in the room. This will happened four times in total.",
+				["coord"] = { 58.9, 77, ZERETH_MORTIS },
+				["questID"] = 65173,
+			}),
 			o(375272, {	-- Mawsworn Cache
 				["coord"] = { 60.6, 30.8, ZERETH_MORTIS },
 				["questID"] = 65441,
 			}),
-		--	o(,{	-- Mawsworn Chest (Needs Keys)
+		--	o(,{	-- Mawsworn Chest (Needs Keys) Renamed to Domination Chest? I couldnt get key
 		--		["description"] = "The surronding trash drops the key"
 		--		["coord"] = { 60, 18, ZERETH_MORTIS },
 		--		["questID"] = 65465,
@@ -89,6 +94,8 @@ root("Zones", m(SHADOWLANDS, {
 				["coords"] = {
 					{ 51.1, 64.5, ZERETH_MORTIS },
 					{ 54.5, 58.8, ZERETH_MORTIS },
+					{ 48.2, 66.5, ZERETH_MORTIS },
+					{ 48.2, 42.8, ZERETH_MORTIS },
 				},
 			}),
 			o(375373, {	-- Discarded Automa Scrap
@@ -98,10 +105,16 @@ root("Zones", m(SHADOWLANDS, {
 				["coords"] = {
 					{ 58.4, 40.3, ZERETH_MORTIS },
 					{ 46.8, 12.3, ZERETH_MORTIS },
+					{ 57.6, 23, ZERETH_MORTIS },
+					{ 60.9, 19.7, ZERETH_MORTIS },
+					{ 61, 16.5, ZERETH_MORTIS },
 				},
 			}),
 			o(375366, {	-- Tarachnid Eggs
-				["coord"] = { 61.4, 38.3, ZERETH_MORTIS },
+				["coords"] = {
+					{ 61.4, 38.3, ZERETH_MORTIS },
+					{ 56.3, 27.3, ZERETH_MORTIS },
+				},
 			}),
 			o(375290, {	-- Cypher Bound Chest
 				["coords"] = {
@@ -111,6 +124,18 @@ root("Zones", m(SHADOWLANDS, {
 					{ 34.7, 68.9, ZERETH_MORTIS },
 					{ 44.7, 22.4, ZERETH_MORTIS },
 					{ 46.6, 8.7, ZERETH_MORTIS },
+					{ 47.8, 66.9, ZERETH_MORTIS },
+					{ 49, 65.3, ZERETH_MORTIS },
+					{ 55.5, 55.5, ZERETH_MORTIS },
+					{ 51.8, 72, ZERETH_MORTIS },
+					{ 48.3, 79.8, ZERETH_MORTIS },
+					{ 54.3, 84.2, ZERETH_MORTIS },
+					{ 59.4, 82.7, ZERETH_MORTIS },
+					{ 58.8, 20.8, ZERETH_MORTIS },
+					{ 59.2, 19.3, ZERETH_MORTIS },
+					{ 58.5, 20.3, ZERETH_MORTIS },
+					{ 63, 19.6, ZERETH_MORTIS },
+					{ 63.2, 19.6, ZERETH_MORTIS },
 				},
 			})
 
@@ -122,4 +147,5 @@ root("HiddenQuestTriggers", {
 	q(65376),	-- Triggered when I died (Probably related to chest I opened before Fallen Vault)
 	q(65377),	-- Triggered when I died (Probably related to chest I opened before Fallen Vault)
 	q(65464),	-- Triggered when I died (Probably related to chest I opened before Fallen Vault)
+	--q(65316),	-- Triggered when I tried to do a puzzle
 });

@@ -7,6 +7,9 @@ root("Zones", m(SHADOWLANDS, {
 			pet(3216, {	-- Ambystan Snapper
 				["cr"] = 183277,
 			}),
+			pet(3217, {	-- Aurelid Floater
+				["cr"] = 183281,
+			}),
 			pet(3212, {	-- Bloodsucker Vespoid
 				["cr"] = 182876,
 			}),
@@ -27,6 +30,9 @@ root("Zones", m(SHADOWLANDS, {
 			}),
 			pet(3214, {	-- Momma Vombata
 				["cr"] = 183158,
+			}),
+			pet(3219, {	-- Predatory Gastropod
+				["cr"] = 183292
 			}),
 			pet(3196, {	-- Proto Avian Fledgling
 				["cr"] = 182260,

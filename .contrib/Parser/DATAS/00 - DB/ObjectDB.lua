@@ -2146,6 +2146,7 @@ _.ObjectNames = {
 	[369440] = "Riftbound Cache",
 	[369439] = "Riftbound Cache",
 	[370140] = "Damaged Jiro Stash",
+	[373543] = "Library Vault",
 	[373548] = "Template Archive",
 	[374976] = "Symphonic Vault",
 	[375272] = "Mawsworn Cache",

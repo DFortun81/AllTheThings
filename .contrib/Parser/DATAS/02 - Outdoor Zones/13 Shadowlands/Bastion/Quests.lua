@@ -979,6 +979,27 @@ _.Zones =
 					["provider"] = { "n", 165045 },	-- Kalisthene
 					["coord"] = { 52.8, 47.8, BASTION },
 				}),
+				-- PTR 9.2
+				q(64807, {	-- What We Wish to Forget
+					["sourceQuests"] = { 64806 },	-- Where the Memories Resides
+					["provider"] = { "n", 181280 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 59.2, 88.2, BASTION },
+				}),
+				q(64808, {	-- What Makes us Strong
+					["sourceQuests"] = { 64807 },	-- What We Wish to Forget
+					["provider"] = { "n", 181284 },	-- Anduin Wrynn
+					["coord"] = { 59.1, 88.5, BASTION },
+				}),
+				q(64798, {	-- What We Overcome
+					["sourceQuests"] = { 64808 },	-- What Makes us Strong
+					["provider"] = { "n", 181284 },	-- Anduin Wrynn
+					["coord"] = { 59.2, 88.3, BASTION },
+				}),
+				q(64812, {	-- Forge of Domination
+					["sourceQuests"] = { 64798 },	-- What We Overcome
+					["provider"] = { "n", 181280 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 59.2, 88.2, BASTION },
+				}),
 				n(BONUS_OBJECTIVES, {
 					q(62737, {	-- Aspirant For a Day (pre-60)
 						["customCollect"] = "SL_SKIP",	-- SL Skip Character

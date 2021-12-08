@@ -1102,8 +1102,8 @@ pet(188679, 3221);	--* Lightless Tormentor
 3214-- Momma Vombata
 3215
 3216-- Ambystan Snapper Wild
-3217
+3217-- Aurelid Floater
 3218
-3219
+3219-- Predatory Gastropod
 --]]
 
