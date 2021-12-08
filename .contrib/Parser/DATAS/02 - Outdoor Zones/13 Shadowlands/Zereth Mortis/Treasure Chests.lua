@@ -19,10 +19,10 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 38.2, 37.2, ZERETH_MORTIS },
 				["questID"] = 64667,
 			}),
-		--	o(,{	-- Fallen Vault
-		--		["coord"] = { 51.6, 9.9, ZERETH_MORTIS },
-		--		["questID"] = ??
-		--	}),
+			o(375376,{	-- Fallen Vault
+				["coord"] = { 51.6, 9.9, ZERETH_MORTIS },
+				--["questID"] = ??
+			}),
 			o(375405, {	-- Filched Artifact
 				["description"] = "Jumping Puzzle on the spheres",
 				["coord"] = { 49.8, 87.3, ZERETH_MORTIS },
@@ -71,6 +71,10 @@ root("Zones", m(SHADOWLANDS, {
 		--		["coord"] = { 42, 51.9, ZERETH_MORTIS },
 		--		["questID"] = ??
 		--	}),
+			o(375423, {	-- Offering to the First Ones
+				["coord"] = { 34.8, 56.1, ZERETH_MORTIS },
+				["questID"] = 65537,
+			}),
 			o(375281, {	-- Stolen Relic
 				["coord"] = { 37.9, 65.2, ZERETH_MORTIS },
 				["questID"] = 65447,
@@ -96,6 +100,8 @@ root("Zones", m(SHADOWLANDS, {
 					{ 54.5, 58.8, ZERETH_MORTIS },
 					{ 48.2, 66.5, ZERETH_MORTIS },
 					{ 48.2, 42.8, ZERETH_MORTIS },
+					{ 68.5, 36.1, ZERETH_MORTIS },
+					{ 62, 42, ZERETH_MORTIS },
 				},
 			}),
 			o(375373, {	-- Discarded Automa Scrap
@@ -108,12 +114,15 @@ root("Zones", m(SHADOWLANDS, {
 					{ 57.6, 23, ZERETH_MORTIS },
 					{ 60.9, 19.7, ZERETH_MORTIS },
 					{ 61, 16.5, ZERETH_MORTIS },
+					{ 67.6, 29.5, ZERETH_MORTIS },
+					{ 66.6, 32.1, ZERETH_MORTIS },
 				},
 			}),
 			o(375366, {	-- Tarachnid Eggs
 				["coords"] = {
 					{ 61.4, 38.3, ZERETH_MORTIS },
 					{ 56.3, 27.3, ZERETH_MORTIS },
+					{ 53.6, 35.9, ZERETH_MORTIS },
 				},
 			}),
 			o(375290, {	-- Cypher Bound Chest
@@ -136,6 +145,8 @@ root("Zones", m(SHADOWLANDS, {
 					{ 58.5, 20.3, ZERETH_MORTIS },
 					{ 63, 19.6, ZERETH_MORTIS },
 					{ 63.2, 19.6, ZERETH_MORTIS },
+					{ 29.3, 51.8, ZERETH_MORTIS },
+					{ 35.4, 51.7, ZERETH_MORTIS },
 				},
 			})
 
@@ -148,4 +159,8 @@ root("HiddenQuestTriggers", {
 	q(65377),	-- Triggered when I died (Probably related to chest I opened before Fallen Vault)
 	q(65464),	-- Triggered when I died (Probably related to chest I opened before Fallen Vault)
 	--q(65316),	-- Triggered when I tried to do a puzzle
+	--q(65323),	-- Triggered when I tried to do a puzzle
+	-- Concordances
+	q(65215),	-- Tranquil Concordance at 60.2 47.1
+	q(65209),	-- Tranquil Concordance at 49.3 71.6
 });

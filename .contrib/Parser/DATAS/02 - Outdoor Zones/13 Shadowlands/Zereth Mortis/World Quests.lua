@@ -27,6 +27,9 @@ root("Zones", m(SHADOWLANDS, {
 					q(65089, {	-- Frog'it
 						["coord"] = { 60, 68.8, ZERETH_MORTIS },
 					}),
+					q(65231, {	-- Plundered Knowledge
+						["coord"] = { 67.2, 39.1, ZERETH_MORTIS },
+					}),
 					q(65262, {	-- Save the Vombata
 						["coord"] = { 43.5, 63.7, ZERETH_MORTIS },
 					}),
@@ -34,6 +37,9 @@ root("Zones", m(SHADOWLANDS, {
 						["coord"] = { 63, 58, ZERETH_MORTIS },
 					}),
 					-- Unlocked after Aeliec Cache
+					q(65406, {	-- Connecting It All
+						["coord"] = { 65.7, 41, ZERETH_MORTIS },
+					}),
 					q(65408, {	-- Pattern Recognition
 						["coord"] = { 53.2, 86.8, ZERETH_MORTIS },
 					}),
@@ -44,5 +50,5 @@ root("Zones", m(SHADOWLANDS, {
 }));
 
 root("HiddenQuestTriggers", {
-	q(65418),	-- Triggered when Completed Pattern Recognition(65408) I don't know if there is another WQ that completed or its because I opened the Cache in the WQ
+	q(65418),	-- Triggered when Completed Pattern Recognition(65408)/Connecting It All(65406) I don't know if there is another WQ that completed or its because I opened the Cache in the WQ
 });

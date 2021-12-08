@@ -536,6 +536,11 @@ root("Zones", m(SHADOWLANDS, {
 				["sourceQuests"] = { 65305 },	-- The Way Forward (Chap 3)
 				["provider"] = { "n", 181179 },	-- Elder Nirav
 				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
+			}),
+			q(65255, {	-- Forcing the Cycle
+				["sourceQuests"] = { 65305 },	-- The Way Forward (Chap 3)
+				["provider"] = { "n", 177958 },	-- Firim
+				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
 			})
 		})),
 	}),

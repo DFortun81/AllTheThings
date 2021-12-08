@@ -9,6 +9,7 @@ root("Zones", m(SHADOWLANDS, {
 			}),
 			n(183596, {	-- Chitali the Eldest
 				["coord"] = { 50.3, 69, ZERETH_MORTIS },
+				["questID"] = 65553,
 			}),
 			n(183953, {	-- Corrupted Architect
 				["coord"] = { 47.5, 62.2, ZERETH_MORTIS },
@@ -23,12 +24,20 @@ root("Zones", m(SHADOWLANDS, {
 			}),
 			n(178229, {	-- Feasting
 				["coord"] = { 61.8, 60.5, ZERETH_MORTIS },
+				["questID"] = 65557,
+			}),
+			n(183646, {	-- Furidian
+				["description"] = "To open the vault there is corresponding symbols in the area. I only had to click The Star(64, 57.3) to open the chest. Maybe change this in later build.",
+				["coord"] = { 64.5, 58.7, ZERETH_MORTIS },
+				["questID"] = 65544,
 			}),
 			n(180924, {	-- Garudeon
+				["description"] = "Feed it and its kids with Energizing Leporid(183562, Bunnies in the area)",
 				["coord"] = { 68.9, 36.9, ZERETH_MORTIS },
 			}),
 			n(182318, {	-- General Zarathura
 				["coord"] = { 59.6, 18.6, ZERETH_MORTIS },
+				--["questID"] = ?? Didnt give any ID current build
 			}),
 			n(178778, {	-- Gluttonous Overgrowth
 				["description"] = "Need to pull close by roots.",
@@ -43,9 +52,14 @@ root("Zones", m(SHADOWLANDS, {
 			}),
 			n(178508, {	-- Mother Phestis
 				["coord"] = { 54, 34, ZERETH_MORTIS },
+				["questID"] = 65547,
+				["g"] = {
+					i(189769),	-- Fang of Phestis (Not Confirmed)
+				},
 			}),
 			n(179034, {	-- Orixal
 				["coord"] = { 58.4, 83.1, ZERETH_MORTIS },
+				--["questID"] = ?? Didnt give any ID current build
 			}),
 			n(183814, {	-- Otaris the Provoked
 				["coord"] = { 58.6, 39, ZERETH_MORTIS },
@@ -62,9 +76,11 @@ root("Zones", m(SHADOWLANDS, {
 			}),
 			n(183927, {	-- Sand Matriarch Ileus
 				["coord"] = { 54, 48.9, ZERETH_MORTIS },
+				--["questID"] = ?? Didnt give any ID current build
 			}),
 			n(184413, {	-- Shifting Stargorger
 				["coord"] = { 42, 21.9, ZERETH_MORTIS },
+				["questID"] = 65549,
 			}),
 			n(183722, {	-- Sorranos
 				["coord"] = { 35.8, 71.2, ZERETH_MORTIS },

@@ -198,6 +198,52 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 			q(63603, {	-- Yak Soul
 				["provider"] = { "i", 185047 },	-- Yak Soul
 			}),
+			-- PTR 9.2
+			q(65514, {	-- Armadillo Soul
+				["provider"] = { "i", 189986 },	-- Armadillo Soul
+			}),
+			q(65509, {	-- Bat Soul
+				["provider"] = { "i", 189977 },	-- Bat Soul
+			}),
+			q(65518, {	-- Bee Soul
+				["provider"] = { "i", 189990 },	-- Bee Soul
+			}),
+			q(65510, {	-- Brutosaur Soul
+				["provider"] = { "i", 189980 },	-- Brutosaur Soul
+			}),
+			q(65504, {	-- Dragonhawk Soul
+				["provider"] = { "i", 189971 },	-- Dragonhawk Soul
+			}),
+			q(65507, {	-- Elekk Soul
+				["provider"] = { "i", 189975 },	-- Elekk Soul
+			}),
+			q(65513, {	-- Gromit Soul
+				["provider"] = { "i", 189983 },	-- Gromit Soul
+			}),
+			q(65517, {	-- Penguin Soul
+				["provider"] = { "i", 189989 },	-- Penguin Soul
+			}),
+			q(65515, {	-- Pig Soul
+				["provider"] = { "i", 189987 },	-- Pig Soul
+			}),
+			q(65506, {	-- Ray Soul
+				["provider"] = { "i", 189973 },	-- Ray Soul
+			}),
+			q(65505, {	-- Scorpid Soul
+				["provider"] = { "i", 189972 },	-- Scorpid Soul
+			}),
+			q(65516, {	-- Sheep Soul
+				["provider"] = { "i", 189988 },	-- Sheep Soul
+			}),
+			q(65512, {	-- Silithid Soul
+				["provider"] = { "i", 189982 },	-- Silithid Soul
+			}),
+			q(65519, {	-- Snail Soul
+				["provider"] = { "i", 189991 },	-- Snail Soul
+			}),
+			q(65508, {	-- Tallstrider Soul
+				["provider"] = { "i", 189976 },	-- Tallstrider Soul
+			}),
 		}),
 	}),
 })));
