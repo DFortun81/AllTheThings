@@ -1504,8 +1504,8 @@ root("HiddenQuestTriggers", {
 	q(62583),	-- Crafted Hitchhiker at Abominable Stitching Table
 	q(61712),	-- Crafted Holiday Hat at Abominable Stitching Table
 	q(62759),	-- Crafted Lovely Candle Display at Abominable Stitching Table
-	-- q(62470),	-- Crafted Operational Instructions? at Abominable Stitching Table
 	q(62577),	-- Crafted Magician's Hat at Abominable Stitching Table
+	q(62470),	-- Crafted Operational Instructions at Abominable Stitching Table
 	q(61561),	-- Crafted Outlaw Flag at Abominable Stitching Table
 	q(62826),	-- Crafted Pirate Hat at Abominable Stitching Table
 	q(62576),	-- Crafted Plague Pack at Abominable Stitching Table
