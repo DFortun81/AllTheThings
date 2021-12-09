@@ -535,6 +535,7 @@ _.Zones =
 					["sourceQuest"] = 27576,	-- Patchwork Command
 				}),
 				q(26538, {	-- Emergency Aid
+					["sourceQuest"] = 26388,	-- Twilight Skies
 					["provider"] = { "n", 43193 },	-- Warlord Krogg
 					["coord"] = { 82.4, 49.8, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
