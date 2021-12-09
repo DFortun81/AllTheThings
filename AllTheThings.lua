@@ -15287,8 +15287,9 @@ app.DynamicCategory_Simple = function(self)
 		self.sort = nil;
 		-- dynamic groups are ignored for the source tooltips
 		self.sourceIgnored = true;
+		-- change the text color of the dynamic group to help indicate it is not included in the window total
+		self.text = Colorize(self.text, "ff7f40bf");
 		-- make sure these things are cached so they can be updated when collected
-		-- print("cache dynamic",self.dynamic)
 		app.CacheFields(self);
 	else
 		app.print("Failed to build Simple Dynamic Category for:",self.dynamic)
@@ -15309,6 +15310,8 @@ app.DynamicCategory_Nested = function(self)
 	self.sort = nil;
 	-- dynamic groups are ignored for the source tooltips
 	self.sourceIgnored = true;
+	-- change the text color of the dynamic group to help indicate it is not included in the window total
+	self.text = Colorize(self.text, "ff7f40bf");
 	-- make sure these things are cached so they can be updated when collected
 	app.CacheFields(self);
 end
@@ -15537,7 +15540,7 @@ function app:GetDataCache()
 
 		-- Battle Pets - Dynamic
 		local db = {};
-		db.text = AUCTION_CATEGORY_BATTLE_PETS.." - "..DYNAMIC;
+		db.text = AUCTION_CATEGORY_BATTLE_PETS;
 		db.icon = app.asset("Category_PetJournal");
 		tinsert(g, DynamicCategory(db, "speciesID"));
 		-- Pet Journal
@@ -15577,12 +15580,12 @@ function app:GetDataCache()
 		flightPathsCategory.fps = {};
 		flightPathsCategory.expanded = false;
 		flightPathsCategory.icon = app.asset("Category_FlightPaths");
-		flightPathsCategory.text = L["FLIGHT_PATHS"].." - "..DYNAMIC;
+		flightPathsCategory.text = Colorize(L["FLIGHT_PATHS"], "ff7f40bf");
 		tinsert(g, flightPathsCategory);
 
 		-- Illusions - Dynamic
 		db = {};
-		db.text = "Illusions".." - "..DYNAMIC;
+		db.text = "Illusions";
 		db.icon = 132853;
 		tinsert(g, DynamicCategory(db, "illusionID"));
 
@@ -15598,7 +15601,7 @@ function app:GetDataCache()
 		-- end
 		-- Mounts - Dynamic
 		db = {};
-		db.text = MOUNTS.." - "..DYNAMIC;
+		db.text = MOUNTS;
 		db.icon = app.asset("Category_Mounts");
 		tinsert(g, DynamicCategory(db, "mountID"));
 
@@ -15615,7 +15618,7 @@ function app:GetDataCache()
 		-- Titles - Dynamic
 		db = {};
 		db.icon = app.asset("Category_Titles");
-		db.text = "Titles".." - "..DYNAMIC;
+		db.text = "Titles";
 		tinsert(g, DynamicCategory(db, "titleID"));
 
 		-- Toys
@@ -15633,7 +15636,7 @@ function app:GetDataCache()
 		db = {};
 		db.icon = app.asset("Category_ToyBox");
 		db.f = 102;
-		db.text = TOY_BOX.." - "..DYNAMIC;
+		db.text = TOY_BOX;
 		tinsert(g, DynamicCategory(db, "toyID"));
 
 		--[[
