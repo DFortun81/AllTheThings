@@ -3420,10 +3420,6 @@ _.HiddenQuestTriggers = {
 		q(58117),	-- Triggered after turning in The Aspirant's Crucible (57709)
 		q(60294),	-- Triggered after choosing Larion from Nemea during Pride Or Unit quest
 		q(60293),	-- Triggered after choosing Phalynx from Pelodis during Pride Or Unit quest
-		q(62841),	-- Triggered after first time using Kyrian Bell buff item
-		q(58292),	-- looting Purians
-		q(58293),	-- placing first Purian in the bowl
-		q(58294),	-- placing second Purian in the bowl
 		q(62734),	-- Triggered after opening Silver Strongbox during The Sweetest Tribute quest
 		q(60259),	-- Your Personal Assistant - choosing Akiris
 		q(60260),	-- Your Personal Assistant - choosing Ipa — shares appearance with Dintos + Minta, so possible each steward has its own questID and you get credit for all the ones that share its appearance?

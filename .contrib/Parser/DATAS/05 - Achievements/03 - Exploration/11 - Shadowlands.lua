@@ -315,22 +315,57 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 				crit(29),		-- The Ascended Council
 			}),
 			ach(14314, {	-- Treasures of Revendreth
-				crit(1),		-- Lost Quill
-				crit(2),		-- Stylish Parasol
-				crit(3),		-- The Count
-				crit(4),		-- Rapier of the Fearless
-				crit(5),		-- Vrytha's Dredglaive
-				crit(6),		-- Makeshift Muckpool
-				crit(7),		-- Taskmaster's Trove
-				crit(8),		-- Forbidden Chamber
-				crit(9),		-- Smuggled Cache
-				crit(10),		-- Chest of Envious Dreams
-				crit(11),		-- Filcher's Prize
-				crit(12),		-- Wayfarer's Abandoned Spoils
-				crit(13),		-- Remlate's Hidden Cache
-				crit(14),		-- Fleeing Soul's Bundle
-				crit(15),		-- Gilded Plum Chest
-				crit(16),		-- Abandoned Curios
+				["maps"] = { REVENDRETH },
+				["g"] = {
+					crit(1, {	-- Lost Quill
+						["_quests"] = { 61990 },
+					}),
+					crit(2, {	-- Stylish Parasol
+						["_quests"] = { 61999 },
+					}),
+					crit(3, {	-- The Count
+						["_quests"] = { 62063 },
+					}),
+					crit(4, {	-- Rapier of the Fearless
+						["_quests"] = { 62156 },
+					}),
+					crit(5, {	-- Vyrtha's Dredglaive
+						["_quests"] = { 62164 },
+					}),
+					crit(6, {	-- Makeshift Muckpool
+						["_quests"] = { 62198 },
+					}),
+					crit(7, {	-- Taskmaster's Trove
+						["_quests"] = { 62199 },
+					}),
+					crit(8, {	-- Forbidden Chamber
+						["_quests"] = { 62243 },
+					}),
+					crit(9, {	-- Smuggled Cache
+						["_quests"] = { 59889 },
+					}),
+					crit(10, {	-- Chest of Envious Dreams
+						["_quests"] = { 59833 },
+					}),
+					crit(11, {	-- Filcher's Prize
+						["_quests"] = { 59883 },
+					}),
+					crit(12, {	-- Wayfarer's Abandoned Spoils
+						["_quests"] = { 59884 },
+					}),
+					crit(13, {	-- Remlate's Hidden Cache
+						["_quests"] = { 59885 },
+					}),
+					crit(14, {	-- Fleeing Soul's Bundle
+						["_quests"] = { 59886 },
+					}),
+					crit(15, {	-- Gilded Plum Chest
+						["_quests"] = { 59887 },
+					}),
+					crit(16, {	-- Abandoned Curios
+						["_quests"] = { 59888 },
+					}),
+				},
 			}),
 			ach(14313, {	-- Treasures of Ardenweald
 				crit(1),		-- Aerto's Body
@@ -365,39 +400,75 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 				crit(13),		-- Ritualist's Cache
 			}),
 			ach(14311, {	-- Treasures of Bastion
-				crit(1),		-- Scroll of Aeons
-				crit(2),		-- Vesper of Virtues
-				crit(3),		-- Purifying Draught
-				crit(4),		-- Lost Disciple's Notes
-				crit(5),		-- Larion Tamer's Harness
-				crit(6),		-- Stolen Equipment
-				crit(7),		-- Abandoned Stockpile
-				crit(8),		-- Experimental Construct Part
-				crit(9),		-- Windsmith's Tools
-				crit(10),		-- Memorial Offerings
-				crit(11),		-- Gift of Agthia
-				crit(12),		-- Gift of Vesiphone
-				crit(13),		-- Gift of Chyrus
-				crit(14),		-- Gift of Thenios
-				crit(15),		-- Gift of Devos
+				["maps"] = { BASTION },
+				["g"] = {
+					crit(1,  {	-- Scroll of Aeons
+						["_quests"] = { 58298 },
+					}),
+					crit(2,  {	-- Vesper of Virtues
+						["_quests"] = { 60478 },
+					}),
+					crit(3,  {	-- Purifying Draught
+						["_quests"] = { 58329 },
+					}),
+					crit(4,  {	-- Lost Disciple's Notes
+						["_quests"] = { 61048 },
+					}),
+					crit(5,  {	-- Larion Tamer's Harness
+						["_quests"] = { 61049 },
+					}),
+					crit(6,  {	-- Stolen Equipment
+						["_quests"] = { 61044 },
+					}),
+					crit(7,  {	-- Abandoned Stockpile
+						["_quests"] = { 61006 },
+					}),
+					crit(8,  {	-- Experimental Construct Part
+						["_quests"] = { 61052 },
+					}),
+					crit(9,  {	-- Windsmith's Tools
+						["_quests"] = { 61053 },
+					}),
+					crit(10, {	-- Memorial Offerings
+						["_quests"] = { 61150 },
+					}),
+					crit(11, {	-- Gift of Agthia
+						["_quests"] = { 60893 },
+					}),
+					crit(12, {	-- Gift of Vesiphone
+						["_quests"] = { 60890 },
+					}),
+					crit(13, {	-- Gift of Chyrus
+						["_quests"] = { 60892 },
+					}),
+					crit(14, {	-- Gift of Thenios
+						["_quests"] = { 60894 },
+					}),
+					crit(15, {	-- Gift of Devos
+						["_quests"] = { 60895 },
+					}),
+				},
 			}),
 		}),
 		ach(14788, {	-- Fractured Faerie Tales
-			crit(1, {	-- A Meandering Story
-				["_quests"] = { 62619 },	-- A Meandering Story
-			}),
-			crit(2, {	-- A Wandering Tale
-				["_quests"] = { 62620 },	-- A Wandering Tale
-			}),
-			crit(3, {	-- An Escapist Novel
-				["_quests"] = { 62621 },	-- An Escapist Novel
-			}),
-			crit(4, {	-- A Travel Journal
-				["_quests"] = { 62622 },	-- A Travel Journal
-			}),
-			crit(5, {	-- A Naughty Story
-				["_quests"] = { 62623 },	-- A Naughty Story
-			}),
+			["maps"] = { ARDENWEALD },
+			["g"] = {
+				crit(1, {	-- A Meandering Story
+					["_quests"] = { 62619 },	-- A Meandering Story
+				}),
+				crit(2, {	-- A Wandering Tale
+					["_quests"] = { 62620 },	-- A Wandering Tale
+				}),
+				crit(3, {	-- An Escapist Novel
+					["_quests"] = { 62621 },	-- An Escapist Novel
+				}),
+				crit(4, {	-- A Travel Journal
+					["_quests"] = { 62622 },	-- A Travel Journal
+				}),
+				crit(5, {	-- A Naughty Story
+					["_quests"] = { 62623 },	-- A Naughty Story
+				}),
+			},
 		}),
 		ach(14745),		-- Grand Theft Shadehound
 		ach(14943),		-- Guarmageddon

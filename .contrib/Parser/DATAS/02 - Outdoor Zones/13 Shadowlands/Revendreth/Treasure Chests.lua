@@ -8,6 +8,28 @@ _.Zones =
 		m(REVENDRETH, {
 			n(TREASURES, {
 				i(180866),	-- Gilded Wader (looks like this may just be an overall shared drop from treasures.  i got it from the Bleakwood Chest, there is drop data for it from Stoneborn Satchel, someone says they got it from the Venthyr Greed's Desire... so far only history from Revendreth/Bastion but it may come from other zones as well.  TODO: check back to see if this needs to be put in other zones)
+				o(349797, {	-- Abandoned Curios
+					["sourceQuests"] = { 57159 },	-- A Reflection of Truth
+					["description"] = "You can reach it with Door of Shadows or by jumping down from the road above.",
+					["questID"] = 59888,
+					["coord"] = { 51.8, 59.5, REVENDRETH },
+					["g"] = {
+						i(182744, {	-- Ornate Belt Buckle
+							i(182741, {	-- Buckled Cloth Belt
+								["cost"] = { { "i", 182746, 1 } },	-- All-In-One Belt Repair Kit
+							}),
+							i(182742, {	-- Buckled Leather Belt
+								["cost"] = { { "i", 182746, 1 } },	-- All-In-One Belt Repair Kit
+							}),
+							i(182739, {	-- Buckled Chain Belt
+								["cost"] = { { "i", 182746, 1 } },	-- All-In-One Belt Repair Kit
+							}),
+							i(182740, {	-- Buckled Plate Belt
+								["cost"] = { { "i", 182746, 1 } },	-- All-In-One Belt Repair Kit
+							}),
+						}),
+					},
+				}),
 				o(353232, {	-- Bleakwood Chest
 					["questID"] = 60665,
 					["isDaily"] = true,	-- repeatable??
@@ -27,6 +49,44 @@ _.Zones =
 						i(180398),	-- Stonewrought Legion Halberd
 					},
 				}),
+				o(349565, {	-- Chest of Envious Dreams
+					["questID"] = 59833,
+					["coord"] = { 69.3, 77.9, REVENDRETH },
+					["g"] = {
+						i(179393),	-- Mirror of Envious Dreams
+					},
+				}),
+				o(349792, {	-- Filcher's Prize
+					["questID"] = 59883,
+					["coord"] = { 64.2, 72.7, REVENDRETH },
+				}),
+				o(349795, {	-- Fleeing Soul's Bundle
+					["description"] = "Use the Bounding Shroom at 47.0, 58.3 to reach the treasure.",
+					["coord"] = { 46.4, 58.1, REVENDRETH },
+					["questID"] = 59886,
+				}),
+				o(358298, {	-- Forbidden Chamber Lockbox
+					["description"] = "Use the Anima Canister to drain anima from Silent Observers, and then use the Extra Action Button next to the Chamber Guardian.",
+					["questID"] = 62243,
+					["coord"] = { 47.3, 55.3, REVENDRETH },
+					["crs"] = {
+						173786,	-- Chamber Guardian
+						173838,	-- Silent Observer
+					},
+					["g"] = {
+						i(184075),	-- Stonewrought Sentry (TOY!)
+					},
+				}),
+				o(357467, {	-- Forbidden Ink
+					["description"] = "Take the |cFFFFFFFF[Forbidden Ink]|r from the library at |cFFFFFFFF37.6, 68.7|r and give it to the Lost Quill.",
+					["npcID"] = 173449,	-- Lost Quill
+					["coord"] = { 37.7, 69.2, REVENDRETH },
+					["questID"] = 61990,
+					["g"] = {
+						i(182613),	-- Refilling Inkwell
+						i(182475),	-- Forbidden Ink
+					},
+				}),
 				o(357565, {	-- Forgotten Angler's Rod
 					["description"] = "Click the fishing rod to spawn Muckribbon.",
 					["questID"] = 62196,
@@ -38,14 +98,24 @@ _.Zones =
 				}),
 				o(339283, {	-- Forgotten Noble's Chest
 					["description"] = "Opening a Crypt Door with the Atonement Crypt Key has a chance to reveal a Mirror that leads to this chest.",
-					-- ["sourceQuests"] = { },
+					["sourceQuests"] = { 57928 },	-- Atonement Crypt Key
 					["questID"] = 60949,
 					["isDaily"] = true,
 					["coord"] = { 45.8, 47.8, REVENDRETH },
+					["cost"] = { { "i", 172957, 1 } },	-- 1x Atonement Crypt Key
 					["g"] = {
+						i(180682),	-- Noble's Wardrobe
 					},
 				}),
-				-- TODO: treasure @ 68,64 questID = 59884
+				o(349796, {	-- Gilded Plum Chest
+					["description"] = "There is a Greedy Soul that wanders up and down the road.  Kill it, and it will drop the treasure.",
+					["questID"] = 59887,
+					["coord"] = { 75.2, 56.1, REVENDRETH },
+					["crs"] = { 166680 },	-- Greedy Soul
+					["g"] = {
+						i(179390),	-- Tantalizingly Large Golden Plum (grey item but causes a permanent debuff while held)
+					},
+				}),
 				o(353799, {	-- Hopebreaker Pack
 					["description"] = "A repeatable treasure chest that does not show up on the minimap.",
 					["coords"] = {
@@ -124,6 +194,15 @@ _.Zones =
 						i(180395),	-- Nathrezim Crusader's Hauberk
 						i(180339),	-- Shadow-Lined Chalice
 						i(184225),	-- Small Posable Skeleton
+					},
+				}),
+				o(9962198, {	-- Outcast's Makeshift Muckpool
+					-- TODO: not sure it's possible to determine the true objectID
+					["questID"] = 62198,
+					["coord"] = { 29.6, 37.1, REVENDRETH },
+					["cost"] = { { "c", 1820, 30 } },	-- 30x Infused Ruby
+					["g"] = {
+						i(182780),	-- Muckpool Cookpot (TOY!)
 					},
 				}),
 				o(353793, {	-- Parish Chest
@@ -223,6 +302,14 @@ _.Zones =
 						i(182971),	-- Fabius's Portrait
 					},
 				}),
+				n(173603, {	-- Rapier of the Fearless
+					-- TODO: not sure it's possible to determine the true objectID
+					["questID"] = 62156,
+					["coord"] = { 80.0, 37.1, REVENDRETH },
+					["g"] = {
+						i(182689),	-- Rapier of the Fearless
+					},
+				}),
 				o(353796, {	-- Reliquary of Remembrance
 				--	TODO: confirm that these are repeatable.  like parish chest (confirmed repeatable), there is no associated questID.  unlike parish chest, this chest appears to be the only source of these blues
 					["description"] = "A repeatable treasure chest that does not show up on the minimap.",
@@ -245,6 +332,11 @@ _.Zones =
 						i(180396),	-- Vambraces of Fading Humanity
 						i(180403),	-- Vessel of Distilled Regret
 					},
+				}),
+				o(349794, {	-- Remlate's Hidden Cache
+					["description"] = "Hug the cliff from the nearby flight path around the building.\nDrops 2 random green zone drops.",
+					["questID"] = 59885,
+					["coord"] = { 61.5, 58.6, REVENDRETH },
 				}),
 				o(351487, {	-- Secret Treasure
 					["description"] = "Find the small alcove at |cFFFFFFFF65.7, 42.9|r.  On the wall behind a dark red oval rug is a single |cFFFFFFFFFlickering Candle|r.  Click it to open up a secret passage beneath the rug.  To exit after you collect the treasure, click the candle on the right-hand side of the stairs where you entered.",
@@ -312,6 +404,13 @@ _.Zones =
 						i(182970, {	-- Burgleclipped Portrait
 							["customCollect"] = "SL_COV_VEN",
 						}),
+					},
+				}),
+				o(349798, {	-- Smuggled Cache
+					["questID"] = 59889,
+					["coord"] = { 31.1, 55.0, REVENDRETH },
+					["g"] = {
+						i(182738),	-- Bundle of Smuggled Parasol Components
 					},
 				}),
 				o(353797, {	-- Stone Legion Supplies
@@ -408,6 +507,33 @@ _.Zones =
 						["coord"] = { 36.5, 51.5, REVENDRETH },
 					}),
 				}),
+				o(357487, {	-- Stylish Parasol
+					["description"] = "Go up the stairs that start at 41.3, 44.9.",
+					["questID"] = 61999,
+					["coord"] = { 38.4, 44.2, REVENDRETH },
+					["g"] = {
+						i(182694),	-- Stylish Black Parasol (TOY!)
+					},
+				}),
+				o(357697, {	-- Taskmaster's Trove
+					["description"] = "Use the Ingress And Egress Rites at |cFFFFFFFF63.0, 72.1|r to see the Chest.",
+					["questID"] = 62199,
+					["coords"] = {
+						{ 63.0, 72.1, REVENDRETH },
+						{ 62.8, 75.3, REVENDRETH },
+					},
+					["g"] = {
+						i(183986),	-- Bondable Sinstone (TOY!)
+					},
+				}),
+				n(173488, {	-- The Count
+					["questID"] = 62063,
+					["coord"] = { 57.3, 43.3, REVENDRETH },
+					["cost"] = { { "c", 1820, 99 } },	-- 99x Infused Ruby
+					["g"] = {
+						i(182612),	-- The Count's Pendant (PET!)
+					},
+				}),
 				o(352703, {	-- The Harvest
 				--	TODO: apparently this has multiple notes/locations, add them as they pop up
 					["description"] = "Read the |cFFFFFFFFNote What Says Where You Put The Key|r near the treasure to figure out where the key is.\n\n– 'By one of those big lamps' = |cFFFFFFFF43.8, 41.4|r\n– 'In another storehouse' = |cFFFFFFFF38.2, 43.7|r",
@@ -424,6 +550,18 @@ _.Zones =
 						i(180393),	-- Depraved Darkblade's Epaulets
 						i(180386),	-- Herbalist's Pouch
 					},
+				}),
+				o(357584, {	-- Vyrtha's Dredglaive
+					["questID"] = 62164,
+					["coord"] = { 70.1, 60.0, REVENDRETH },
+					["g"] = {
+						i(177807),	-- Vyrtha's Dredglaive
+					},
+				}),
+				o(349793, {	-- Wayfarer's Abandoned Spoils
+					["description"] = "Use the nearby Bounding Shroom to get up to the treasure.",
+					["questID"] = 59884,
+					["coord"] = { 68.4, 64.4, REVENDRETH },
 				}),
 			}),
 		}),
