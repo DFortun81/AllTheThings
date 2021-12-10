@@ -1018,7 +1018,7 @@ _.HiddenQuestTriggers = {
 		q(65275),	-- Layer 2 (Weird) PET?
 
 		q(65290),	-- Layer 3
-		--q(64347),	-- Layer 3 (Already in AV probably because it ended in AV)
+		--q(64347),	-- Layer 3 (Already in AV probably because it ended in AV) /Might be Death-Bound Shard
 
 		q(65291),	-- Layer 4
 		q(65276),	-- Layer 4 (Weird) Toy?

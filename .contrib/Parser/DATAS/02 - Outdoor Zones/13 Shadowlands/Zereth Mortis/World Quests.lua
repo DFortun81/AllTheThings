@@ -30,6 +30,9 @@ root("Zones", m(SHADOWLANDS, {
 					q(65231, {	-- Plundered Knowledge
 						["coord"] = { 67.2, 39.1, ZERETH_MORTIS },
 					}),
+					q(65415, {	-- Researching The Solution
+						["coord"] = { 44.6, 30.9, ZERETH_MORTIS },
+					}),
 					q(65262, {	-- Save the Vombata
 						["coord"] = { 43.5, 63.7, ZERETH_MORTIS },
 					}),
@@ -42,6 +45,9 @@ root("Zones", m(SHADOWLANDS, {
 					}),
 					q(65408, {	-- Pattern Recognition
 						["coord"] = { 53.2, 86.8, ZERETH_MORTIS },
+					}),
+					q(65414, {	-- Perplexing Problem
+						["coord"] = { 63.1, 36.5, ZERETH_MORTIS },
 					}),
 				})),
 			},

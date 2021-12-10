@@ -12,6 +12,7 @@ root("Instances", tier(SL_TIER, {
 			2048,	-- Cornerstone of Creation
 			2050,	-- Anduin
 			2061,	-- Devouring Pit
+			2049,	-- Keeper's Bastion
 		},
 		["g"] = {
 			n(ACHIEVEMENTS, {
@@ -158,7 +159,12 @@ root("Instances", tier(SL_TIER, {
 					},
 				}),
 				e(2553, {	-- Artificer Xy'mox
-					["crs"] = {  },	--
+					["crs"] = {
+						183501, -- Artificer Xy'mox
+						184006,	-- Xy Reinforcer
+						184005,	-- Xy Reinforcer
+						184007,	-- Xy Reinforcer
+					},
 					["g"] = {
 						ach(15398),	-- Those Belong in a Museum!
 					},
@@ -176,7 +182,10 @@ root("Instances", tier(SL_TIER, {
 					},
 				}),
 				e(2539, {	-- Lihuvim, Principal Architect
-					["crs"] = {  },	--
+					["crs"] = {
+						182169,	-- Lihuvium
+						-- Adds? All same ID?
+					},
 					["g"] = {
 
 					},
@@ -233,9 +242,14 @@ root("Instances", tier(SL_TIER, {
 					},
 				}),
 				e(2553, {	-- Artificer Xy'mox
-					["crs"] = {  },	--
+					["crs"] = {
+						183501, -- Artificer Xy'mox
+						184006,	-- Xy Reinforcer
+						184005,	-- Xy Reinforcer
+						184007,	-- Xy Reinforcer
+					},
 					["g"] = {
-
+						ach(15398),	-- Those Belong in a Museum!
 					},
 				}),
 				e(2540, {	-- Dausegne, the Fallen Oracle
@@ -251,7 +265,10 @@ root("Instances", tier(SL_TIER, {
 					},
 				}),
 				e(2539, {	-- Lihuvim, Principal Architect
-					["crs"] = {  },	--
+					["crs"] = {
+						182169,	-- Lihuvium
+						-- Adds? All same ID?
+					},
 					["g"] = {
 
 					},
@@ -307,9 +324,14 @@ root("Instances", tier(SL_TIER, {
 					},
 				}),
 				e(2553, {	-- Artificer Xy'mox
-					["crs"] = {  },	--
+					["crs"] = {
+						183501, -- Artificer Xy'mox
+						184006,	-- Xy Reinforcer
+						184005,	-- Xy Reinforcer
+						184007,	-- Xy Reinforcer
+					},
 					["g"] = {
-
+						ach(15398),	-- Those Belong in a Museum!
 					},
 				}),
 				e(2540, {	-- Dausegne, the Fallen Oracle
@@ -325,7 +347,10 @@ root("Instances", tier(SL_TIER, {
 					},
 				}),
 				e(2539, {	-- Lihuvim, Principal Architect
-					["crs"] = {  },	--
+					["crs"] = {
+						182169,	-- Lihuvium
+						-- Adds? All same ID?
+					},
 					["g"] = {
 
 					},

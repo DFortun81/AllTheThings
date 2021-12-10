@@ -334,13 +334,13 @@ root("Zones", m(SHADOWLANDS, {
 				["provider"] = { "n", 181245 },	-- The Primus
 				["coord"] = { 33.3, 68.8, ZERETH_MORTIS },
 			}),
-			q(64802, {	-- Elder Eru
+			q(64801, {	-- Elder Eru
 				["sourceQuests"] = { 64802 },	-- Hello, Darkness
 				["provider"] = { "n", 181229 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 33.2, 68.9, ZERETH_MORTIS },
 			}),
 			q(64804, {	-- Cryptic Catalogue
-				["sourceQuests"] = { 64802 },	-- Elder Eru
+				["sourceQuests"] = { 64801 },	-- Elder Eru
 				["provider"] = { "n", 181266 },	-- Elder Eru
 				["coord"] = { 56.2, 83.3, ZERETH_MORTIS },
 			}),
@@ -520,7 +520,12 @@ root("Zones", m(SHADOWLANDS, {
 
 			-- Cypher Research
 			q(65431, {	-- Further Research: Aealic
-				["sourceQuests"] = { 64230 },	--  Cyphers of the First Ones
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
+				["provider"] = { "n", 181397 },	-- Cypher Console
+				["coord"] = { 33.8, 49.4, ZERETH_MORTIS },
+			}),
+			q(65432, {	-- Further Research: Dealic
+				["sourceQuests"] = { 65431 },	-- Further Research: Aealic
 				["provider"] = { "n", 181397 },	-- Cypher Console
 				["coord"] = { 33.8, 49.4, ZERETH_MORTIS },
 			}),
@@ -537,11 +542,21 @@ root("Zones", m(SHADOWLANDS, {
 				["provider"] = { "n", 181179 },	-- Elder Nirav
 				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
 			}),
+			q(65265, {	-- Buried Remnants
+			--	["sourceQuests"] = { 65305 },	-- The Way Forward (Chap 3)
+				["provider"] = { "n", 181179 },	-- Elder Nirav
+				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
+			}),
 			q(65255, {	-- Forcing the Cycle
 				["sourceQuests"] = { 65305 },	-- The Way Forward (Chap 3)
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
-			})
+			}),
+			q(65142, {	-- Portal Play
+				--["sourceQuests"] = { 65305 },	-- The Way Forward (Chap 3)
+				["provider"] = { "n", 177958 },	-- Firim
+				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
+			}),
 		})),
 	}),
 }));

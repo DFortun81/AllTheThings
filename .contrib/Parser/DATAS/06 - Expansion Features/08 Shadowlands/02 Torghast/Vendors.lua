@@ -58,17 +58,21 @@ _.ExpansionFeatures =
 							["cost"] = { { "c", 1728, 300 } },	-- 300x Phantasma
 						}),
 						-- PTR 9.2
-						i(188743),	-- Ashen Mawsworn Crossbow
-						i(188737),	-- Ebon Mawsworn Crossbow
-						i(188747),	-- Ashen Mawsworn Halberd
-						i(188746),	-- Ebon Mawsworn Halberd
-						i(188749),	-- Ashen Mawsworn Staff
-						i(188748),	-- Ebon Mawsworn Staff
-						i(188745),	-- Ashen Mawsworn Maul
-						i(188744),	-- Ebon Mawsworn Maul
-						i(188752),	-- Argent Mawsworn Greatsword
-						i(188750),	-- Burnished Mawsworn Greatsword
-						i(188753),	-- Gilded Mawsworn Greatsword
+						i(188743),	-- Ashen Mawsworn Crossbow	L14 300P	FC
+						i(188737),	-- Ebon Mawsworn Crossbow	L15 300P	FC
+						i(188747),	-- Ashen Mawsworn Halberd	L15 300P	FC
+						i(188746),	-- Ebon Mawsworn Halberd No Info
+						i(188749),	-- Ashen Mawsworn Staff L13 300P	FC
+						i(188748),	-- Ebon Mawsworn Staff	L14 300P 	FC
+						i(188745),	-- Ashen Mawsworn Maul L13 300P		FC
+						i(188744),	-- Ebon Mawsworn Maul	L14 300P	FC
+						i(188752),	-- Argent Mawsworn Greatsword L13 300P		FC
+						i(188750),	-- Burnished Mawsworn Greatsword	L15 300P	FC
+						i(188753),	-- Gilded Mawsworn Greatsword No Info
+						i(188690),	-- Corrupted Skull Crescent L14 150g AV		FC
+						i(188688),	-- Burnished Eye Crescent Drop from L15 FC Kosarus the Fallen(153451)
+						i(188686),	-- Burnished Soul Restraint Drop from L16 FC Gherus the Chained(155945)
+						i(188687),	-- Burnished Skull Crescent No Info.
 					},
 				}),
 			}),

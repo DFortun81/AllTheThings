@@ -567,6 +567,9 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 		ach(15211, {	-- Completing the Code
 			i(187793),	-- Personal Containment Trap (TOY!)
 		}),
+		ach(15402, {	-- Cyphers of the First Ones
+			["description"] = "Have to research eveything in the talent tree to gain flying.",
+		}),
 		ach(15392),	-- Dune Dominance
 		ach(15224),	-- Explore Zereth Mortis
 		ach(15331),	-- Treasures of Zereth Mortis

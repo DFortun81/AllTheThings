@@ -21,6 +21,7 @@ root("Zones", m(SHADOWLANDS, {
 			}),
 			n(184409, {	-- Euv'ouk
 				["coord"] = { 47.5, 45.1, ZERETH_MORTIS },
+				["questID"] = 65555,
 			}),
 			n(178229, {	-- Feasting
 				["coord"] = { 61.8, 60.5, ZERETH_MORTIS },
@@ -57,7 +58,7 @@ root("Zones", m(SHADOWLANDS, {
 					i(189769),	-- Fang of Phestis (Not Confirmed)
 				},
 			}),
-			n(179034, {	-- Orixal
+			n(179043, {	-- Orixal
 				["coord"] = { 58.4, 83.1, ZERETH_MORTIS },
 				--["questID"] = ?? Didnt give any ID current build
 			}),

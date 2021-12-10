@@ -154,12 +154,14 @@ root("Zones", m(SHADOWLANDS, {
 	}),
 }));
 root("HiddenQuestTriggers", {
-	q(65487),	-- Triggered when I died (Probably related to chest I opened before Fallen Vault)
-	q(65376),	-- Triggered when I died (Probably related to chest I opened before Fallen Vault)
-	q(65377),	-- Triggered when I died (Probably related to chest I opened before Fallen Vault)
-	q(65464),	-- Triggered when I died (Probably related to chest I opened before Fallen Vault)
-	--q(65316),	-- Triggered when I tried to do a puzzle
-	--q(65323),	-- Triggered when I tried to do a puzzle
+	--q(65487),	-- Triggered when I died (Probably related to chest I opened before Fallen Vault)
+	--q(65376),	-- Triggered when I died (Probably related to chest I opened before Fallen Vault)
+	--q(65377),	-- Triggered when I died (Probably related to chest I opened before Fallen Vault)
+	--q(65464),	-- Triggered when I died (Probably related to chest I opened before Fallen Vault)
+	--q(65322),	-- Triggered when I completed the puzzle, Fugueal At 38.5 35.5
+	--q(65316),	-- Triggered when I completed the puzzle, Mezzonic At 38.5 35.5 / 56.0 84.1??
+	--q(65323),	-- Triggered when I completed the puzzle
+	--q(65091),	-- Triggered when I completed the puzzle, Mezzonic At 39.3 60.4
 	-- Concordances
 	q(65215),	-- Tranquil Concordance at 60.2 47.1
 	q(65209),	-- Tranquil Concordance at 49.3 71.6
