@@ -9,7 +9,7 @@ root("Promotions", n(-580, {	-- The Great Push: Season 2
 		}),
 	},
 }));
-root("NeverImplemented", n(TOYS, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root("NeverImplemented", filter(TOYS, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	i(187958),	-- PH - Banner of the Opportune
 	i(187957),	-- PH - Banner of the Opportune
 	i(187959),	-- PH - Banner of the Opportune

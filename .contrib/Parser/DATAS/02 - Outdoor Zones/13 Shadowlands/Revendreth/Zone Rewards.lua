@@ -126,6 +126,7 @@ _.Zones =
 					i(181220),	-- Fiend Collector's Cudgel
 					i(181204),	-- Hide of Krengaath
 					i(180400),	-- Inquisitions Final Judgment
+					i(180324),	-- Iremore Necklace
 					i(181708),	-- Leafed Banewood Band
 					i(181223),	-- Mace of Emberwrath
 					i(182724),	-- Mail Courier's Belt
