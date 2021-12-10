@@ -18660,6 +18660,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 		local C_TradeSkillUI_GetRecipeReagentItemLink = C_TradeSkillUI.GetRecipeReagentItemLink;
 
 		self.initialized = true;
+		self.SkillsInit = {};
 		force = true;
 		self:SetMovable(false);
 		self:SetUserPlaced(false);
@@ -18683,7 +18684,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 			local skillCache = fieldCache["spellID"];
 			if skillCache then
 				local tradeSkillID = app.GetTradeSkillLine();
-				if tradeSkillID == self.lastTradeSkillID then
+				if not tradeSkillID or tradeSkillID == self.lastTradeSkillID then
 					return false;
 				end
 				-- If it's not yours, don't take credit for it.
@@ -18691,101 +18692,109 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 					return false;
 				end
 				self.lastTradeSkillID = tradeSkillID;
+				local updates = self.SkillsInit[tradeSkillID] or {};
+				self.SkillsInit[tradeSkillID] = updates;
 
 				local currentCategoryID, categories = -1, {};
-				local categoryIDs = { C_TradeSkillUI.GetCategories() };
-				for i = 1,#categoryIDs do
-					currentCategoryID = categoryIDs[i];
-					local categoryData = C_TradeSkillUI_GetCategoryInfo(currentCategoryID);
-					if categoryData then
-						if not categories[currentCategoryID] then
-							rawset(AllTheThingsAD.LocalizedCategoryNames, currentCategoryID, categoryData.name);
-							categories[currentCategoryID] = true;
+				if not updates["Categories"] then
+					updates["Categories"] = true;
+					local categoryIDs = { C_TradeSkillUI.GetCategories() };
+					for i = 1,#categoryIDs do
+						currentCategoryID = categoryIDs[i];
+						local categoryData = C_TradeSkillUI_GetCategoryInfo(currentCategoryID);
+						if categoryData then
+							if not categories[currentCategoryID] then
+								rawset(AllTheThingsAD.LocalizedCategoryNames, currentCategoryID, categoryData.name);
+								categories[currentCategoryID] = true;
+							end
 						end
 					end
 				end
 
 				-- Cache learned recipes
-				local learned, recipeID = {};
+				local learned = {};
 				local reagentCache = app.GetDataMember("Reagents", {});
 				local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
 				local acctSpells, charSpells = ATTAccountWideData.Spells, app.CurrentCharacter.Spells;
 				local skipcaching;
-				-- print("Scanning recipes",#recipeIDs)
-				for i = 1,#recipeIDs do
-					local spellRecipeInfo = C_TradeSkillUI_GetRecipeInfo(recipeIDs[i]);
-					if spellRecipeInfo then
-						skipcaching = nil;
-						recipeID = spellRecipeInfo.recipeID;
-						currentCategoryID = spellRecipeInfo.categoryID;
-						if not categories[currentCategoryID] then
-							local categoryData = C_TradeSkillUI_GetCategoryInfo(currentCategoryID);
-							if categoryData then
-								rawset(AllTheThingsAD.LocalizedCategoryNames, currentCategoryID, categoryData.name);
-								categories[currentCategoryID] = true;
-							end
-						end
-						if spellRecipeInfo.learned then
-							if spellRecipeInfo.disabled then
-								if charSpells[recipeID] then
-									charSpells[recipeID] = nil;
-									acctSpells[recipeID] = nil;
-								end
-							else
-								charSpells[recipeID] = 1;
-								if not acctSpells[recipeID] then
-									acctSpells[recipeID] = 1;
-									tinsert(learned, recipeID);
+				if not updates["Recipes"] then
+					updates["Recipes"] = true;
+					-- print("Scanning recipes",#recipeIDs)
+					for i = 1,#recipeIDs do
+						local spellRecipeInfo = C_TradeSkillUI_GetRecipeInfo(recipeIDs[i]);
+						if spellRecipeInfo then
+							skipcaching = nil;
+							recipeID = spellRecipeInfo.recipeID;
+							currentCategoryID = spellRecipeInfo.categoryID;
+							if not categories[currentCategoryID] then
+								local categoryData = C_TradeSkillUI_GetCategoryInfo(currentCategoryID);
+								if categoryData then
+									rawset(AllTheThingsAD.LocalizedCategoryNames, currentCategoryID, categoryData.name);
+									categories[currentCategoryID] = true;
 								end
 							end
-						elseif not spellRecipeInfo.disabled and not acctSpells[recipeID] then
-							-- print("unlearned, enabled RecipeID",recipeID)
-							-- enabled, unlearned recipes should be checked against ATT data to verify they CAN actually be learned
-							local cachedRecipe = app.SearchForMergedObject("spellID", recipeID);
-							-- verify the merged cached version is not 'super' unobtainable
-							if cachedRecipe and cachedRecipe.u and cachedRecipe.u < 3 then
-								-- print("Ignoring Unobtainable RecipeID",recipeID,cachedRecipe.u)
-								skipcaching = true;
-							end
-						end
-
-						if not skillCache[recipeID] then
-							--app.print("Missing [" .. (spellRecipeInfo.name or "??") .. "] (Spell ID #" .. spellRecipeInfo.recipeID .. ") in ATT Database. Please report it!");
-							skillCache[recipeID] = { {} };
-						end
-
-						local recipeLink = C_TradeSkillUI_GetRecipeItemLink(recipeID);
-						local craftedItemID = recipeLink and GetItemInfoInstant(recipeLink);
-						if craftedItemID then
-							local reagentLink, itemID, reagentCount;
-							for i=1,C_TradeSkillUI_GetRecipeNumReagents(recipeID) do
-								reagentCount = select(3, C_TradeSkillUI_GetRecipeReagentInfo(recipeID, i));
-								reagentLink = C_TradeSkillUI_GetRecipeReagentItemLink(recipeID, i);
-								itemID = reagentLink and GetItemInfoInstant(reagentLink);
-								-- print(recipeID, itemID, "=",reagentCount,">", craftedItemID);
-
-								-- Make sure a cache table exists for this item.
-								-- Index 1: The Recipe Skill IDs => { craftedID, reagentCount }
-								-- Index 2: The Crafted Item IDs => reagentCount
-								-- TODO: potentially re-design this structure
-								if itemID then
-									if skipcaching then
-										-- remove any existing cached recipes
-										if reagentCache[itemID] then
-											-- print("removing reagent cache info", itemID,recipeID,craftedItemID)
-											reagentCache[itemID][1][recipeID] = nil;
-											reagentCache[itemID][2][craftedItemID] = nil;
-										end
-									else
-										if not reagentCache[itemID] then reagentCache[itemID] = { {}, {} }; end
-										reagentCache[itemID][1][recipeID] = { craftedItemID, reagentCount };
-										-- if craftedItemID then reagentCache[itemID][2][craftedItemID] = reagentCount; end
-										reagentCache[itemID][2][craftedItemID] = reagentCount;
+							if spellRecipeInfo.learned then
+								if spellRecipeInfo.disabled then
+									if charSpells[recipeID] then
+										charSpells[recipeID] = nil;
+										acctSpells[recipeID] = nil;
+									end
+								else
+									charSpells[recipeID] = 1;
+									if not acctSpells[recipeID] then
+										acctSpells[recipeID] = 1;
+										tinsert(learned, recipeID);
 									end
 								end
+							elseif not spellRecipeInfo.disabled and not acctSpells[recipeID] then
+								-- print("unlearned, enabled RecipeID",recipeID)
+								-- enabled, unlearned recipes should be checked against ATT data to verify they CAN actually be learned
+								local cachedRecipe = app.SearchForMergedObject("spellID", recipeID);
+								-- verify the merged cached version is not 'super' unobtainable
+								if cachedRecipe and cachedRecipe.u and cachedRecipe.u < 3 then
+									-- print("Ignoring Unobtainable RecipeID",recipeID,cachedRecipe.u)
+									skipcaching = true;
+								end
 							end
-						-- else
-						-- 	print("recipe does not craft an item",recipeLink)
+
+							if not skillCache[recipeID] then
+								--app.print("Missing [" .. (spellRecipeInfo.name or "??") .. "] (Spell ID #" .. spellRecipeInfo.recipeID .. ") in ATT Database. Please report it!");
+								skillCache[recipeID] = { {} };
+							end
+
+							local recipeLink = C_TradeSkillUI_GetRecipeItemLink(recipeID);
+							local craftedItemID = recipeLink and GetItemInfoInstant(recipeLink);
+							if craftedItemID then
+								local reagentLink, itemID, reagentCount;
+								for i=1,C_TradeSkillUI_GetRecipeNumReagents(recipeID) do
+									reagentCount = select(3, C_TradeSkillUI_GetRecipeReagentInfo(recipeID, i));
+									reagentLink = C_TradeSkillUI_GetRecipeReagentItemLink(recipeID, i);
+									itemID = reagentLink and GetItemInfoInstant(reagentLink);
+									-- print(recipeID, itemID, "=",reagentCount,">", craftedItemID);
+
+									-- Make sure a cache table exists for this item.
+									-- Index 1: The Recipe Skill IDs => { craftedID, reagentCount }
+									-- Index 2: The Crafted Item IDs => reagentCount
+									-- TODO: potentially re-design this structure
+									if itemID then
+										if skipcaching then
+											-- remove any existing cached recipes
+											if reagentCache[itemID] then
+												-- print("removing reagent cache info", itemID,recipeID,craftedItemID)
+												reagentCache[itemID][1][recipeID] = nil;
+												reagentCache[itemID][2][craftedItemID] = nil;
+											end
+										else
+											if not reagentCache[itemID] then reagentCache[itemID] = { {}, {} }; end
+											reagentCache[itemID][1][recipeID] = { craftedItemID, reagentCount };
+											-- if craftedItemID then reagentCache[itemID][2][craftedItemID] = reagentCount; end
+											reagentCache[itemID][2][craftedItemID] = reagentCount;
+										end
+									end
+								end
+							-- else
+							-- 	print("recipe does not craft an item",recipeLink)
+							end
 						end
 					end
 				end
@@ -18793,27 +18802,37 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 				-- Open the Tradeskill list for this Profession
 				if self.tradeSkillID ~= tradeSkillID then
 					self.tradeSkillID = tradeSkillID;
-					app.BuildSearchResponse_IgnoreUnavailableRecipes = true;
-					for i,group in ipairs(app.Categories.Professions) do
-						if group.requireSkill == tradeSkillID then
-							self.data = CloneData(group);
-							local requireSkill = self.data.requireSkill;
-							local response = app:BuildSearchResponse(app.Categories.Instances, "requireSkill", requireSkill);
-							if response then tinsert(self.data.g, {text=GROUP_FINDER,icon = app.asset("Category_D&R"),g=response}); end
-							response = app:BuildSearchResponse(app.Categories.Achievements, "requireSkill", requireSkill);
-							if response then tinsert(self.data.g, {text=ACHIEVEMENTS,icon = app.asset("Category_Achievements"),g=response});  end
-							response = app:BuildSearchResponse(app.Categories.Zones, "requireSkill", requireSkill);
-							if response then tinsert(self.data.g, {text=BUG_CATEGORY2,icon = app.asset("Category_Zones"),g=response});  end
-							response = app:BuildSearchResponse(app.Categories.WorldDrops, "requireSkill", requireSkill);
-							if response then tinsert(self.data.g, {text=TRANSMOG_SOURCE_4,icon = app.asset("Category_WorldDrops"),g=response});  end
-							response = app:BuildSearchResponse(app.Categories.ExpansionFeatures, "requireSkill", requireSkill);
-							if response then tinsert(self.data.g, {text=GetCategoryInfo(15301),icon = app.asset("Category_ExpansionFeatures"),g=response});  end
-							response = app:BuildSearchResponse(app.Categories.WorldEvents, "requireSkill", requireSkill)
-							if response then tinsert(self.data.g, app.CreateDifficulty(18, {icon = app.asset("Category_Event"),g=response}));  end
-							response = app:BuildSearchResponse(app.Categories.Craftables, "requireSkill", requireSkill);
-							if response then tinsert(self.data.g, {text=LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM,icon = app.asset("Category_Crafting"),g=response});  end
+					local data = updates["Data"];
+					if not data then
+						app.BuildSearchResponse_IgnoreUnavailableRecipes = true;
+						for _,group in ipairs(app.Categories.Professions) do
+							if group.requireSkill == tradeSkillID then
+								data = CloneData(group);
+								local requireSkill = data.requireSkill;
+								local response = app:BuildSearchResponse(app.Categories.Instances, "requireSkill", requireSkill);
+								if response then tinsert(data.g, {text=GROUP_FINDER,icon = app.asset("Category_D&R"),g=response}); end
+								response = app:BuildSearchResponse(app.Categories.Achievements, "requireSkill", requireSkill);
+								if response then tinsert(data.g, {text=ACHIEVEMENTS,icon = app.asset("Category_Achievements"),g=response});  end
+								response = app:BuildSearchResponse(app.Categories.Zones, "requireSkill", requireSkill);
+								if response then tinsert(data.g, {text=BUG_CATEGORY2,icon = app.asset("Category_Zones"),g=response});  end
+								response = app:BuildSearchResponse(app.Categories.WorldDrops, "requireSkill", requireSkill);
+								if response then tinsert(data.g, {text=TRANSMOG_SOURCE_4,icon = app.asset("Category_WorldDrops"),g=response});  end
+								response = app:BuildSearchResponse(app.Categories.ExpansionFeatures, "requireSkill", requireSkill);
+								if response then tinsert(data.g, {text=GetCategoryInfo(15301),icon = app.asset("Category_ExpansionFeatures"),g=response});  end
+								response = app:BuildSearchResponse(app.Categories.WorldEvents, "requireSkill", requireSkill)
+								if response then tinsert(data.g, app.CreateDifficulty(18, {icon = app.asset("Category_Event"),g=response}));  end
+								response = app:BuildSearchResponse(app.Categories.Craftables, "requireSkill", requireSkill);
+								if response then tinsert(data.g, {text=LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM,icon = app.asset("Category_Crafting"),g=response});  end
+							end
 						end
+						data.indent = 0;
+						data.visible = true;
+						BuildGroups(data, data.g);
+						updates["Data"] = data;
+						-- only expand the list if this is the first time it is being generated
+						self.ExpandInfo = { Expand = true };
 					end
+					self.data = data;
 					app.BuildSearchResponse_IgnoreUnavailableRecipes = nil;
 				end
 				-- If something new was "learned", then refresh the data.
@@ -19014,12 +19033,6 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 		end
 
 		-- Update the window and all of its row data
-		if force then
-			self.data.indent = 0;
-			self.data.visible = true;
-			BuildGroups(self.data, self.data.g);
-			self.ExpandInfo = { Expand = true };
-		end
 		self:BaseUpdate(force or got, got);
 	end
 end;
