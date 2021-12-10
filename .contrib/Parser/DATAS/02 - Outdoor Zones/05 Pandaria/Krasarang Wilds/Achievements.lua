@@ -63,7 +63,7 @@ _.Zones =
 									["description"] = "Only lootable while in a Strength Tank Spec.",
 								}),
 								i(86118, {	-- Seafaring Advisor's Slippers
-									["description"] = "Only lootable while in a Priest Healer Spec.",
+									["description"] = "Only lootable as a Priest.",
 								}),
 								i(86119, {	-- Seafarer's Boots of Meditation
 									["description"] = "Only lootable while in a Leather Intellect Spec (Mistweaver/Balance/Restoration).",
