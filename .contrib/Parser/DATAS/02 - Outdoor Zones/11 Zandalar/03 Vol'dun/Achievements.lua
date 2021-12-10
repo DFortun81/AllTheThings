@@ -250,45 +250,6 @@ _.Zones =
 						}),
 					},
 				})),
-				ach(12482, {	-- Get Hek'd
-					["collectible"] = false,
-					["g"] = {
-						crit(3,  {	-- Charged Ranishu Antennae
-							["questID"] = 50883,
-							["itemID"] = 158910,	-- Charged Ranishu Antennae
-							["coord"] = { 47.0, 46.6, VOLDUN },	-- Court of Zak'rajan
-							["crs"] = {
-								129464,	-- Ranishu Nibbler
-								129473,	-- Ranishu Nibbler
-								135727,	-- Ranishu Ravager
-								129474,	-- Ranishu Ravager
-							},
-						}),
-						crit(6,  {	-- Polished Ringhorn Hoof
-							["questID"] = 50890,
-							["itemID"] = 158915,	-- Polished Ringhorn Hoof
-							["coord"] = { 56.2, 15.3, VOLDUN },
-							["crs"] = {
-								130317,	-- Ringhorn Fawn
-								130321,	-- Ringhorn Stag
-								130316,	-- Ringhorn Strider
-							},
-						}),
-						crit(9,  {	-- Sturdy Redrock Jaw
-							["questID"] = 50892,
-							["itemID"] = 158916,	-- Sturdy Redrock Jaw
-							["coord"] = { 49.3, 84.3, VOLDUN },	-- The Eternal Spring
-							["crs"] = {
-								134744,	-- Redrock Howler
-								134718,	-- Redrock Scavenger
-							},
-						}),
-						crit(12, {	-- Saurid Surprise
-							["sourceQuests"] = { 50901 },	-- Saurid Surprise
-							["coord"] = { 42.1, 72.1, VOLDUN },
-						}),
-					},
-				}),
 				ach(13027, {	-- Mushroom Harvest
 					["collectible"] = false,
 					["g"] = {

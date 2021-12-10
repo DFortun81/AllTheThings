@@ -262,46 +262,6 @@ _.Zones =
 						}),
 					},
 				})),
-				ach(12482, {	-- Get Hek'd
-					["description"] = "Make sure to loot the cache Jani leaves behind as you fulfill each requirement; that's what awards the actual achievement criteria.",
-					["collectible"] = false,
-					["g"] = {
-						crit(1,  {	-- Golden Ravasaur Egg
-							["sourceQuests"] = {
-								51145,	-- Curse of Jani (A)
-								47442,	-- Curse of Jani (H)
-							},
-							["questID"] = 50308,
-							["itemID"] = 156963,	-- Golden Ravasaur Egg
-							["coord"] = { 71.6, 41.2, ZULDAZAR },	-- Trashpile turn-in
-							["crs"] = {
-								131560,	-- Feral Ravasaur
-								122504,	-- Savagemane Ravasaur
-							},
-						}),
-						crit(4,  {	-- Big Hunter Mon
-							["sourceQuests"] = { 50332 },	-- Big Hunter Mon
-							["coord"] = { 66.2, 16.6, ZULDAZAR },	-- Trashpile pick-up
-						}),
-						crit(7,  {	-- The Great Hat Robbery
-							["sourceQuests"] = { 50381 },	-- The Great Hat Robbery
-							["coord"] = { 61.9, 46.9, ZULDAZAR },
-						}),
-						crit(10, {	-- Feathered Viper Scale
-							["sourceQuests"] = {
-								51145,	-- Curse of Jani (A)
-								47442,	-- Curse of Jani (H)
-							},
-							["questID"] = 50431,
-							["itemID"] = 157794,	-- Feathered Viper Scale
-							["coord"] = { 62.7, 20.5, ZULDAZAR },	-- Trashpile turn-in
-							["crs"] = {
-								132410,	-- Feathered Viper
-								132409,	-- Feathered Viper
-							},
-						}),
-					},
-				}),
 				ach(13542, {	-- How to Train your Direhorn
 					["races"] = HORDE_ONLY,
 					["g"] = {

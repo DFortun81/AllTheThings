@@ -466,18 +466,104 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 		}),
 		ach(13836),	-- Feline Figurines Found
 		ach(12482, {	-- Get Hek'd
-			crit(1),		-- Golden Ravasaur Egg
-			crit(2),		-- Vilescale Pearl
-			crit(3),		-- Charged Ranishu Antennae
-			crit(4),		-- Big Hunter Mon
-			crit(5),		-- Snapjaw Tail
-			crit(6),		-- Polished Ringhorn Hoof
-			crit(7),		-- The Great Hat Robbery
-			crit(8),		-- Nazwathan Relic
-			crit(9),		-- Sturdy Redrock Jaw
-			crit(10),		-- Feathered Viper Scale
-			crit(11),		-- Taking the Loa Road
-			crit(12),		-- Saurid Surprise
+			["description"] = "Make sure to loot the cache Jani leaves behind as you fulfill each requirement; that's what awards the actual achievement criteria.",
+			["g"] = {
+				crit(1,  {	-- Golden Ravasaur Egg
+					["itemID"] = 156963,	-- Golden Ravasaur Egg
+					["coord"] = { 71.6, 41.2, ZULDAZAR },	-- Trashpile turn-in
+					["sourceQuests"] = {
+						51145,	-- Curse of Jani (A)
+						47442,	-- Curse of Jani (H)
+					},
+					["crs"] = {
+						131560,	-- Feral Ravasaur
+						122504,	-- Savagemane Ravasaur
+						148871,	-- Voidcrafted Ravasaur
+					},
+				}),
+				crit(2, {	-- Vilescale Pearl
+					["itemID"] = 157797,	-- Vilescale Pearl
+					["coord"] = { 80.8, 46.7, NAZMIR },
+					["crs"] = {
+						125328,	-- Priestess Zaldraxia
+						125393,	-- Vilescale Guardian
+						125392,	-- Vilescale Mana Taster
+						125366,	-- Vilescale Poacher
+					},
+				}),
+				crit(3,  {	-- Charged Ranishu Antennae
+					["itemID"] = 158910,	-- Charged Ranishu Antennae
+					["coord"] = { 47.0, 46.6, VOLDUN },	-- Court of Zak'rajan
+					["crs"] = {
+						129464,	-- Ranishu Nibbler
+						129473,	-- Ranishu Nibbler
+						135727,	-- Ranishu Ravager
+						129474,	-- Ranishu Ravager
+					},
+				}),
+				crit(4,  {	-- Big Hunter Mon
+					["sourceQuests"] = { 50332 },	-- Big Hunter Mon
+					["coord"] = { 66.2, 16.6, ZULDAZAR },	-- Trashpile pick-up
+				}),
+				crit(5, {	-- Snapjaw Tail
+					["itemID"] = 157801,	-- Snapjaw Tail
+					["coord"] = { 34.0, 75.0, NAZMIR },
+					["crs"] = {
+						126723,	-- Primal Snapjaw
+						120588,	-- Rivermarsh Snapjaw
+					},
+				}),
+				crit(6,  {	-- Polished Ringhorn Hoof
+					["itemID"] = 158915,	-- Polished Ringhorn Hoof
+					["coord"] = { 56.2, 15.3, VOLDUN },
+					["crs"] = {
+						130317,	-- Ringhorn Fawn
+						130321,	-- Ringhorn Stag
+						130316,	-- Ringhorn Strider
+					},
+				}),
+				crit(7,  {	-- The Great Hat Robbery
+					["sourceQuests"] = { 50381 },	-- The Great Hat Robbery
+					["coord"] = { 61.9, 46.9, ZULDAZAR },
+				}),
+				crit(8, {	-- Nazwathan Relic
+					["itemID"] = 157802,	-- Nazwathan Relic
+					["coord"] = { 68.5, 32.7, NAZMIR },
+					["crs"] = {
+						131157,	-- Nazwathan Blood Bender
+						131155,	-- Nazwathan Guardian
+						131156,	-- Nazwathan Hulk
+					},
+				}),
+				crit(9,  {	-- Sturdy Redrock Jaw
+					["itemID"] = 158916,	-- Sturdy Redrock Jaw
+					["coord"] = { 49.3, 84.3, VOLDUN },	-- The Eternal Spring
+					["crs"] = {
+						134744,	-- Redrock Howler
+						134718,	-- Redrock Scavenger
+					},
+				}),
+				crit(10, {	-- Feathered Viper Scale
+					["itemID"] = 157794,	-- Feathered Viper Scale
+					["coord"] = { 62.7, 20.5, ZULDAZAR },	-- Trashpile turn-in
+					["sourceQuests"] = {
+						51145,	-- Curse of Jani (A)
+						47442,	-- Curse of Jani (H)
+					},
+					["crs"] = {
+						132410,	-- Feathered Viper
+						132409,	-- Feathered Viper
+					},
+				}),
+				crit(11, {	-- Taking the Loa Road
+					["sourceQuests"] = { 50444 },	-- Taking the Loa Road
+					["coord"] = { 53.9, 74.1, NAZMIR },
+				}),
+				crit(12, {	-- Saurid Surprise
+					["sourceQuests"] = { 50901 },	-- Saurid Surprise
+					["coord"] = { 42.1, 72.1, VOLDUN },
+				}),
+			},
 		}),
 		ach(13692, {	-- Give Me the Biggest Bag You've Got
 			crit(1),	-- Spawn of Nalaada
@@ -1595,5 +1681,18 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(16),	-- Subaquatic Support
 			crit(17),	-- Unfathomable
 		}),
+	}),
+}));
+
+root("HiddenQuestTriggers", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
+	achcat(ACHIEVEMENT_CATEGORY_BATTLE_FOR_AZEROTH_EXP, {
+		q(50308),	-- Golden Ravasaur Egg for Get Hek'd
+		q(50435),	-- Vilescale Pearl for Get Hek'd
+		q(50883),	-- Charged Ranishu Antennae for Get Hek'd
+		q(50437),	-- Snapjaw Tail for Get Hek'd
+		q(50890),	-- Polished Ringhorn Hoof for Get Hek'd
+		q(50892),	-- Sturdy Redrock Jaw for Get Hek'd
+		q(50441),	-- Nazwathan Relic for Get Hek'd
+		q(50431),	-- Feathered Viper Scale for Get Hek'd
 	}),
 }));

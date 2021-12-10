@@ -310,45 +310,6 @@ _.Zones =
 						}),
 					},
 				})),
-				ach(12482, {	-- Get Hek'd
-					["collectible"] = false,
-					["g"] = {
-						crit(2, {	-- Vilescale Pearl
-							["questID"] = 50435,
-							["itemID"] = 157797,	-- Vilescale Pearl
-							["coord"] = { 80.8, 46.7, NAZMIR },
-							["crs"] = {
-								125328,	-- Priestess Zaldraxia
-								125393,	-- Vilescale Guardian
-								125392,	-- Vilescale Mana Taster
-								125366,	-- Vilescale Poacher
-							},
-						}),
-						crit(5, {	-- Snapjaw Tail
-							["questID"] = 50437,
-							["itemID"] = 157801,	-- Snapjaw Tail
-							["coord"] = { 34.0, 75.0, NAZMIR },
-							["crs"] = {
-								126723,	-- Primal Snapjaw
-								120588,	-- Rivermarsh Snapjaw
-							},
-						}),
-						crit(8, {	-- Nazwathan Relic
-							["questID"] = 50441,
-							["itemID"] = 157802,	-- Nazwathan Relic
-							["coord"] = { 68.5, 32.7, NAZMIR },
-							["crs"] = {
-								131157,	-- Nazwathan Blood Bender
-								131155,	-- Nazwathan Guardian
-								131156,	-- Nazwathan Hulk
-							},
-						}),
-						crit(11, {	-- Taking the Loa Road
-							["sourceQuests"] = { 50444 },	-- Taking the Loa Road
-							["coord"] = { 53.9, 74.1, NAZMIR },
-						}),
-					},
-				}),
 				ach(13028, {	-- Hoppin' Sad
 					-- TODO:: maybe add individual records here, one for each coord and respective ID
 					["coords"] = {
