@@ -78,7 +78,7 @@ root("HiddenQuestTriggers", {
 	q(64389),	-- hitting Renown 48 [Druid] (received Memory of Sinful Hysteria)
 	q(64419),	-- hitting Renown 48 [Hunter] (received Memory of the Pouch of Razor Fragments)
 	q(64390),	-- hitting Renown 48 [Mage] (received Memory of Sinful Delight)
-	-- q( ),	-- hitting Renown 48 [Monk] (received Memory of ??)
+	q(64387),	-- hitting Renown 48 [Monk] (received Memory of ??)
 	q(64400),	-- hitting Renown 48 [Paladin] (received Memory of Radiant Embers)
 	q(64410),	-- hitting Renown 48 [Priest] (received Memory of Shadow Word: Manipulation)
 	q(64411),	-- hitting Renown 48 [Rogue] (received Memory of the Obedient)
