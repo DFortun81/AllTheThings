@@ -317,8 +317,7 @@ _.Zones =
 					},
 				}),
 				o(353791, {	-- Castle Strongbox
-					--TODO: ["questID"] = xxxxx,
-					["isDaily"] = true,	-- repeatable??
+					["description"] = "A repeatable treasure chest that does not show up on the minimap.",
 					["coords"] = {
 						{ 37.7, 36.5, REVENDRETH },
 						{ 38.3, 39.3, REVENDRETH },
@@ -387,8 +386,7 @@ _.Zones =
 					},
 				}),
 				o(353797, {	-- Stone Legion Supplies
-					--TODO: ["questID"] = xxxxx,
-					["isDaily"] = true,	-- repeatable??
+					["description"] = "A repeatable treasure chest that does not show up on the minimap.",
 					["coords"] = {
 						{ 26.3, 13.3, REVENDRETH },
 						{ 26.4, 17.2, REVENDRETH },
