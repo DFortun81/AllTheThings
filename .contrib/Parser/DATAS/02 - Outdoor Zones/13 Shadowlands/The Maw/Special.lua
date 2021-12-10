@@ -48,14 +48,7 @@ _.Zones =
 									["achievementID"] = 14738,	-- Hunting Party
 								}),
 								i(184167),	-- Mawsworn Soulhunter (MOUNT!)
-								i(183057, {	-- Shadehound Armor Plating
-									["questID"] = 63154,	-- Shadehound Armor Plating
-									["g"] = {
-										crit(18, {	-- Shadehound Armor Plating
-											["achievementID"] = 14761,	-- Deciphering Death's Intentions
-										}),
-									},
-								}),
+								i(183057),	-- Shadehound Armor Plating
 							},
 						}),
 					},

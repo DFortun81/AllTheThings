@@ -146,6 +146,9 @@ _.Zones =
 					["provider"] = { "n", 179078 },	-- Projection of Ve'nari
 					["coord"] = { 64.3, 50.6, THE_MAW },
 				}),
+				q(63157, {	-- Box of Torments
+					["provider"] = { "i", 183060 },	-- Box of Torments
+				}),
 				q(59762, {	-- By and Down the River
 					["sourceQuests"] = { 59776 },	-- From the Mouths of Madness
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
@@ -155,6 +158,9 @@ _.Zones =
 					["sourceQuests"] = { 57689 },	-- Prince Renathal
 					["provider"] = { "n", 158649 },	-- Vorpalia
 					["coord"] = { 38.7, 28.3, THE_MAW },
+				}),
+				q(63136, {	-- Chaotic Runes
+					["provider"] = { "i", 180802 },	-- Chaotic Runes
 				}),
 				q(63764, {	-- Claim the Sky
 					["sourceQuests"] = { 63754 },	-- The Caged Bird
@@ -167,6 +173,12 @@ _.Zones =
 					["provider"] = { "n", 177586 },	-- Baroness Draka
 					["coord"] = { 62.8, 66.0, THE_MAW },
 				}),
+				q(63135, {	-- Coldheart Flight Routes
+					["provider"] = { "i", 180801 },	-- Coldheart Flight Routes
+				}),
+				q(63132, {	-- Constellan Writ
+					["provider"] = { "i", 175769 },	-- Constellan Writ
+				}),
 				q(60762, {	-- Death Motes
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["isWeekly"] = true,
@@ -177,6 +189,9 @@ _.Zones =
 					["provider"] = { "n", 171770 },	-- Ve'nari
 					["coord"] = { 36.2, 55.7, THE_MAW },
 					["maps"] = { 1960 },	-- The Maw (scenario)
+				}),
+				q(63153, {	-- Discarded Torments
+					["provider"] = { "i", 180808 },	-- Discarded Torments
 				}),
 				q(60732, {	-- Disrupting the Flow
 					["provider"] = { "n", 176164 },	-- Doomed Soul
@@ -326,6 +341,18 @@ _.Zones =
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
+				q(63155, {	-- Indecipherable Map
+					["provider"] = { "i", 183058 },	-- Indecipherable Map
+				}),
+				q(63160, {	-- Korrath's Grimoire: Aleketh
+					["provider"] = { "i", 183066 },	-- Korrath's Grimoire: Aleketh
+				}),
+				q(63161, {	-- Korrath's Grimoire: Belidir
+					["provider"] = { "i", 183067 },	-- Korrath's Grimoire: Belidir
+				}),
+				q(63162, {	-- Korrath's Grimoire: Gyadrek
+					["provider"] = { "i", 183068 },	-- Korrath's Grimoire: Gyadrek
+				}),
 				q(62654, {	-- Maw Walker
 					["sourceQuests"] = { 59973 },	-- A Bond Beyond Death
 					["provider"] = { "n", 162804 },	-- Ve'nari
@@ -347,6 +374,15 @@ _.Zones =
 					["sourceQuests"] = { 59751 },	-- Through the Shattered Sky
 					["provider"] = { "n", 166723 },	-- Highlord Darion Morgraine
 					["coord"] = { 19.2, 57.0, 1648 },	-- pre-SL scenario
+				}),
+				i(63164, {	-- Mawsworn Orders
+					["provider"] = { "i", 183070 },	-- Mawsworn Orders
+				}),
+				q(63134, {	-- Mawsworn Patrol Map
+					["provider"] = { "i", 180799 },	-- Mawsworn Patrol Map
+				}),
+				q(63156, {	-- Mawsworn Shackles
+					["provider"] = { "i", 183059 },	-- Mawsworn Shackles
 				}),
 				q(63100, {	-- Misery's Company
 					["provider"] = { "n", 176069 },	-- Hopeless Vessel
@@ -376,6 +412,9 @@ _.Zones =
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["isWeekly"] = true,
 					["coord"] = { 46.9, 41.7, THE_MAW },
+				}),
+				q(63137, {	-- Puzzling Cryptogram
+					["provider"] = { "i", 180803 },	-- Puzzling Cryptogram
 				}),
 				q(62239, {	-- Rodent Removal
 				--	["provider"] = { "o",  },	-- Tormentor's Pike
@@ -451,10 +490,22 @@ _.Zones =
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
+				q(63145, {	-- Shadebound Testimonial
+					["provider"] = { "i", 180806 },	-- Shadebound Testimonial
+				}),
+				q(63154, {	-- Shadehound Armor Plating
+					["provider"] = { "i", 183057 },	-- Shadehound Armor Plating
+				}),
+				q(63133, {	-- Shifting Cryptogram
+					["provider"] = { "i", 178044 },	-- Shifting Cryptogram
+				}),
 				q(59915, {	-- Soul in Hand
 					["sourceQuests"] = { 59758 },	-- Speaking to the Dead
 					["provider"] = { "n", 166723 },	-- Highlord Darion Morgraine
 					["maps"] = { 1648 },	-- pre-SL scenario
+				}),
+				q(63142, {	-- Soulforge Blueprints
+					["provider"] = { "i", 180805 },	-- Soulforge Blueprints
 				}),
 				q(63206, {	-- Soulless Husks
 					["provider"] = { "n", 162804 },	-- Ve'nari
@@ -572,11 +623,20 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 28.0, 47.0, THE_MAW },
 				}),
+				q(63163, {	-- Tormentor's Notes
+					["provider"] = { "i", 183069 },	-- Tormentor's Notes
+				}),
+				q(63152, {	-- Venthyr Concordat
+					["provider"] = { "i", 180807 },	-- Venthyr Concordat
+				}),
 				q(63622, {	-- Victory in Our Name
 					["sourceQuests"] = { 63620 },	-- A Traitor's Due
 					["provider"] = { "n", 178103 },	-- Baroness Draka
 					["coord"] = { 62.0, 41.6, THE_MAW },
 					["_drop"] = { "g" },	-- drop anima trash
+				}),
+				q(63158, {	-- Wailing Coin
+					["provider"] = { "i", 183061 },	-- Wailing Coin
 				}),
 				q(61190, {	-- Wake of Ashes
 					["sourceQuests"] = { 59973 },	-- A Bond Beyond Death
@@ -600,11 +660,17 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 46.4, 62.3, THE_MAW },
 				}),
+				q(63159, {	-- Words of the Warden
+					["provider"] = { "i", 183063 },	-- Words of the Warden
+				}),
 				q(61765, {	-- Words of Warding
 					["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["isDaily"] = true,
 					["coord"] = { 46.9, 41.7, THE_MAW },
+				}),
+				q(63140, {	-- Worn Obleron Etching
+					["provider"] = { "i", 180804 },	-- Worn Obleron Etching
 				}),
 				q(59765, {	-- Wounds Beyond Flesh
 					["sourceQuests"] = { 59762 },	-- By and Down the River
