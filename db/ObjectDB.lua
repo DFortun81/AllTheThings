@@ -1810,6 +1810,7 @@ select(2, ...).ObjectNames = {
 	[353687] = "Broken Bell",
 	[353688] = "Broken Bell",
 	[353691] = "Skyward Bell",
+	[353791] = "Castle Strongbox",
 	[353792] = "Village Strongbox",
 	[353793] = "Parish Chest",
 	[353796] = "Reliquary of Remembrance",

@@ -346,6 +346,10 @@ _.ExpansionFeatures =
 					}),
 				},
 			}),
+			f(110, sharedData({ ["collectible"] = false }, {	-- Titles
+				title(224),	-- Gob Squad Recruit <Name>
+				title(226),	-- Gob Squad Commando <Name>
+			})),
 		}),
 	}),
 };

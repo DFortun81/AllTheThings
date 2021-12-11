@@ -16,6 +16,11 @@ _.Zones =
 						{ "i", 163789, 1 },	-- Bundle of Wicker Stick
 					},
 				}),
+				o(294084, {	-- Adventurer's Society Loot Stash
+					title(371, {	-- <Name>, No Good, Dirty, Rotten, Candy Stealer!
+						["collectible"] = false,
+					}),
+				}),
 			}),
 		}),
 	}),

@@ -1833,6 +1833,40 @@ _.NeverImplemented =
 		i(186545),	-- REUSE
 		i(180841),	-- Olive Dragon Turtle
 	}),
+	f(110, {	-- Titles
+		title(54),	-- <Name> of the Ten Storms
+		title(55),	-- <Name> of the Emerald Dream
+		title(57),	-- Prophet <Name>
+		title(58),	-- <Name> the Malefic
+		title(60),	-- <Name> of the Ebon Blade
+		title(63),	-- Assassin <Name>
+		title(64),	-- Grand Master Alchemist <Name>
+		title(65),	-- Grand Master Blacksmith <Name>
+		title(66),	-- Iron Chef <Name>
+		title(67),	-- Grand Master Enchanter <Name>
+		title(68),	-- Grand Master Engineer <Name>
+		title(69),	-- Doctor <Name>
+		title(70),	-- Grand Master Angler <Name>
+		title(71),	-- Grand Master Herbalist <Name>
+		title(72),	-- Grand Master Scribe <Name>
+		title(73),	-- Grand Master Jewelcrafter <Name>
+		title(74),	-- Grand Master Leatherworker <Name>
+		title(75),	-- Grand Master Miner <Name>
+		title(76),	-- Grand Master Skinner <Name>
+		title(77),	-- Grand Master Tailor <Name>
+		title(82),	-- <Name> the Lion Hearted
+		title(83),	-- <Name>, Champion of Elune
+		title(84),	-- <Name>, Hero of Orgrimmar
+		title(85),	-- Plainsrunner <Name>
+		title(86),	-- <Name> of the Darkspear
+		title(87),	-- <Name> the Forsaken
+		title(91),	-- <Name>, Hero of Northrend
+		title(330),	-- Master Assassin <Name>
+		title(406),	-- Sparking <Name>
+		title(408),	-- Pilgrim <Name> the Mallet Bearer
+		title(424),	-- Deathbringer <Name>
+		title(436),	-- <Name> the Avowed
+	}),
 	n(PROFESSIONS, {
 		prof(ALCHEMY, {
 			i(2556),	-- Recipe: Elixir of Tongues

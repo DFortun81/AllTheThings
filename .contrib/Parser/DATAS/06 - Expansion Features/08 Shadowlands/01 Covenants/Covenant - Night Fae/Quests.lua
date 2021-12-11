@@ -211,6 +211,11 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["sourceQuests"] = { 58104 },	-- Show, Don't Tell
 				["provider"] = { "n", 160484 },	-- Featherlight
 				["coord"] = { 40.7, 42.7, ARDENWEALD },
+				["g"] = {
+					title(413, {	-- <Name>, As Themselves
+						["collectible"] = false,
+					}),
+				},
 			}),
 			q(58158, {	-- The Fourth Wall, er, War
 				["sourceQuests"] = { 58157 },	-- Break a Leg

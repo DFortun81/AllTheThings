@@ -985,6 +985,9 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 							["icon"] = "Interface\\Icons\\Ability_bastion_priest",
 							["g"] = {
 								n(REWARDS, {
+									title(439,	{	-- <Name> the Ascended (TITLE!)
+										["description"] = "Might require all of Humility?",
+									}),
 									n(171873, {	-- Athanos
 										n(HUMILITY, {
 											crit(25, {	-- Defeat Athanos as Pelagos
