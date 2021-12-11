@@ -302,7 +302,7 @@ _.Zones =
 						["provider"] = { "n", 40642 },	-- Captain Taylor
 						["coord"] = { 49.1, 56.9, 205 },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 25747,	-- Losing Ground
+						["sourceQuest"] = 25892,	-- Losing Ground
 					}),
 					q(25968, {	-- Desperate Plan (H)
 						["provider"] = { "n", 40917 },	-- Legionnaire Nazgrim
