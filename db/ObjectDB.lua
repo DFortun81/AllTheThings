@@ -1532,6 +1532,7 @@ select(2, ...).ObjectNames = {
 	[293964] = "Forgotten Smuggler's Stash",
 	[293965] = "Scrimshaw Cache",
 	[293985] = "Wanted: War Gore",
+	[294084] = "Adventurer's Society Loot Stash",
 	[294096] = "Lit Orb",
 	[294097] = "Strange Seed",
 	[294098] = "Tiny Frog",
