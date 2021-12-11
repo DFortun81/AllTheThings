@@ -241,7 +241,7 @@ local L = app.L;
 	--TODO: L.QUEST_ONCE_PER_ACCOUNT_FORMAT = "Completed By: %s";
 
 -- Settings.lua
-	L.SKIP_AUTO_REFRESH = "不自动刷新!";
+	L.SKIP_AUTO_REFRESH = "不自动刷新!";	-- TODO: Skip Settings-Toggle Data Refreshes!
 	L.SKIP_AUTO_REFRESH_TOOLTIP = "默认情况下(未勾选), 任何可能影响可见数据的设置变化都会导致自动刷新.\n\n通过启用该选项设置的变化将不会生效, 直到玩家shift单击ATT窗口执行全部刷新.";
 	L.AFTER_REFRESH = "刷新后";
 
