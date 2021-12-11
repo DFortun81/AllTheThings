@@ -810,6 +810,7 @@ app.L = {
 		[53] = "Interface\\Icons\\INV_Trinket_Naxxramas05",						-- Trinket
 		[54] = "Interface\\Icons\\inv_staff_2h_felfireraid_d_03",				-- Relic
 		[55] = "Interface\\Icons\\INV_Drink_25_HoneyTea",						-- Consumables
+		[57] = 132932,															-- Fishing Poles
 		[59] = "Interface\\Icons\\INV_Misc_Book_03",							-- Class Books
 		[100] = app.asset("Category_Mounts"),									-- Mounts
 		[101] = "Interface\\Icons\\Tracking_WildPet",							-- Battle Pets

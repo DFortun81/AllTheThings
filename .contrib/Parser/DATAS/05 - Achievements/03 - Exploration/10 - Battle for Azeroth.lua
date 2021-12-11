@@ -747,12 +747,13 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 		}),
 		ach(13707),		-- Mrrl's Secret Stash
 		ach(13027, {	-- Mushroom Harvest
-			["maps"] = { NAZMIR },
+			--
+			-- ["maps"] = { NAZMIR, ZULDAZAR, VOLDUN },
 			["g"] = {
 				crit(1, {	-- Skullcap
 					["_npcs"] = { 143316 },
 				}),
-				crit(2, {	-- Bane of the Woods killed
+				crit(2, {	-- Bane of the Woods
 					["_npcs"] = { 143314 },
 				}),
 				crit(3, {	-- Portakillo
