@@ -4515,7 +4515,7 @@ local ThingKeys = {
 	["questID"] = true,
 	["objectID"] = true,
 	["encounterID"] = true,
-	["achievementID"] = true,
+	["achievementID"] = true,	-- special handling
 };
 -- Builds a 'Source' group from the parent of the group (or other listings of this group) and lists it under the group itself for
 app.BuildSourceParent = function(group)
@@ -4523,7 +4523,9 @@ app.BuildSourceParent = function(group)
 	if not group or not group.key or not ThingKeys[group.key] then return; end
 
 	-- pull all listings of this 'Thing'
-	local things = app.SearchForLink(group.key .. ":" .. group[group.key]);
+	local groupKey = group.key;
+	local keyValue = group[groupKey];
+	local things = app.SearchForLink(groupKey .. ":" .. keyValue);
 	if things then
 		-- print("Found things",#things)
 		local parents, parentKey;
@@ -4537,8 +4539,15 @@ app.BuildSourceParent = function(group)
 					-- only show certain types of parents as sources.. typically 'Game World Things'
 					-- or if the parent is directly tied to an NPC
 					if ThingKeys[parentKey] or parent.npcID or parent.creatureID then
-						if parents then tinsert(parents, parent);
-						else parents = { parent }; end
+						-- keep the Criteria nested for Achievements, to show proper completion tracking under various Sources
+						if groupKey == "achievementID" then
+							parent._keepSource = keyValue;
+							if parents then tinsert(parents, parent);
+							else parents = { parent }; end
+						else
+							if parents then tinsert(parents, parent);
+							else parents = { parent }; end
+						end
 					end
 					-- TODO: maybe handle mapID/instanceID in a different way as a fallback for things nested under headers within a zone....?
 				end
@@ -4569,13 +4578,27 @@ app.BuildSourceParent = function(group)
 				["OnUpdate"] = app.AlwaysShowUpdate,
 				["g"] = {},
 			};
-			local clonedParent;
+			local clonedParent, keepSource;
 			local clones = {};
 			for _,parent in ipairs(parents) do
-				clonedParent = CreateObject(parent);
-				clonedParent.g = nil;
+				keepSource = parent._keepSource;
+				-- clear the flag from the Source
+				parent._keepSource = nil;
+				-- if keepSource then print("Keeping Criteria under",parent.hash) end
+				clonedParent = keepSource and CreateObject(parent) or CreateObject(parent, true);
 				clonedParent.collectible = false;
-				clonedParent.OnUpdate = app.AlwaysShowUpdate;	-- TODO: filter actual unobtainable sources...
+				if keepSource and clonedParent.g then
+					local replace = {};
+					for _,o in ipairs(clonedParent.g) do
+						if o[groupKey] == keepSource then
+							-- print("keep Criteria",o.hash,"under",clonedParent.hash)
+							tinsert(replace, o);
+						end
+					end
+					clonedParent.g = replace;
+				else
+					clonedParent.OnUpdate = app.AlwaysShowUpdate;	-- TODO: filter actual unobtainable sources...
+				end
 				tinsert(clones, clonedParent);
 			end
 			PriorityNestObjects(sourceGroup, clones, nil, app.RecursiveGroupRequirementsFilter);
