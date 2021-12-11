@@ -4515,7 +4515,7 @@ local ThingKeys = {
 	["questID"] = true,
 	["objectID"] = true,
 	["encounterID"] = true,
-	["achievementID"] = true,
+	["achievementID"] = true,	-- special handling
 };
 -- Builds a 'Source' group from the parent of the group (or other listings of this group) and lists it under the group itself for
 app.BuildSourceParent = function(group)
@@ -4523,7 +4523,9 @@ app.BuildSourceParent = function(group)
 	if not group or not group.key or not ThingKeys[group.key] then return; end
 
 	-- pull all listings of this 'Thing'
-	local things = app.SearchForLink(group.key .. ":" .. group[group.key]);
+	local groupKey = group.key;
+	local keyValue = group[groupKey];
+	local things = app.SearchForLink(groupKey .. ":" .. keyValue);
 	if things then
 		-- print("Found things",#things)
 		local parents, parentKey;
@@ -4537,8 +4539,15 @@ app.BuildSourceParent = function(group)
 					-- only show certain types of parents as sources.. typically 'Game World Things'
 					-- or if the parent is directly tied to an NPC
 					if ThingKeys[parentKey] or parent.npcID or parent.creatureID then
-						if parents then tinsert(parents, parent);
-						else parents = { parent }; end
+						-- keep the Criteria nested for Achievements, to show proper completion tracking under various Sources
+						if groupKey == "achievementID" then
+							parent._keepSource = keyValue;
+							if parents then tinsert(parents, parent);
+							else parents = { parent }; end
+						else
+							if parents then tinsert(parents, parent);
+							else parents = { parent }; end
+						end
 					end
 					-- TODO: maybe handle mapID/instanceID in a different way as a fallback for things nested under headers within a zone....?
 				end
@@ -4569,13 +4578,27 @@ app.BuildSourceParent = function(group)
 				["OnUpdate"] = app.AlwaysShowUpdate,
 				["g"] = {},
 			};
-			local clonedParent;
+			local clonedParent, keepSource;
 			local clones = {};
 			for _,parent in ipairs(parents) do
-				clonedParent = CreateObject(parent);
-				clonedParent.g = nil;
+				keepSource = parent._keepSource;
+				-- clear the flag from the Source
+				parent._keepSource = nil;
+				-- if keepSource then print("Keeping Criteria under",parent.hash) end
+				clonedParent = keepSource and CreateObject(parent) or CreateObject(parent, true);
 				clonedParent.collectible = false;
-				clonedParent.OnUpdate = app.AlwaysShowUpdate;	-- TODO: filter actual unobtainable sources...
+				if keepSource and clonedParent.g then
+					local replace = {};
+					for _,o in ipairs(clonedParent.g) do
+						if o[groupKey] == keepSource then
+							-- print("keep Criteria",o.hash,"under",clonedParent.hash)
+							tinsert(replace, o);
+						end
+					end
+					clonedParent.g = replace;
+				else
+					clonedParent.OnUpdate = app.AlwaysShowUpdate;	-- TODO: filter actual unobtainable sources...
+				end
 				tinsert(clones, clonedParent);
 			end
 			PriorityNestObjects(sourceGroup, clones, nil, app.RecursiveGroupRequirementsFilter);
@@ -6782,7 +6805,7 @@ end
 -- Achievement Criteria Lib
 local function GetParentAchievementInfo(t, key)
 	local sourceAch = t.sourceParent or t.parent;
-	if sourceAch.achievementID == t.achievementID then
+	if sourceAch and sourceAch.achievementID == t.achievementID then
 		rawset(t, key, sourceAch[key]);
 		return rawget(t, key);
 	end
@@ -6807,9 +6830,11 @@ local criteriaFields = {
 		if t.encounterID then
 			return select(1, EJ_GetEncounterInfo(t.encounterID));
 		end
-		local m = GetAchievementNumCriteria(t.achievementID);
-		if m and t.criteriaID <= m then
-			return GetAchievementCriteriaInfo(t.achievementID, t.criteriaID, true);
+		if t.achievementID then
+			local m = GetAchievementNumCriteria(t.achievementID);
+			if m and t.criteriaID <= m then
+				return GetAchievementCriteriaInfo(t.achievementID, t.criteriaID, true);
+			end
 		end
 		return L["WRONG_FACTION"];
 	end,
@@ -15287,8 +15312,9 @@ app.DynamicCategory_Simple = function(self)
 		self.sort = nil;
 		-- dynamic groups are ignored for the source tooltips
 		self.sourceIgnored = true;
+		-- change the text color of the dynamic group to help indicate it is not included in the window total
+		self.text = Colorize(self.text, "ff7f40bf");
 		-- make sure these things are cached so they can be updated when collected
-		-- print("cache dynamic",self.dynamic)
 		app.CacheFields(self);
 	else
 		app.print("Failed to build Simple Dynamic Category for:",self.dynamic)
@@ -15309,6 +15335,8 @@ app.DynamicCategory_Nested = function(self)
 	self.sort = nil;
 	-- dynamic groups are ignored for the source tooltips
 	self.sourceIgnored = true;
+	-- change the text color of the dynamic group to help indicate it is not included in the window total
+	self.text = Colorize(self.text, "ff7f40bf");
 	-- make sure these things are cached so they can be updated when collected
 	app.CacheFields(self);
 end
@@ -15537,7 +15565,7 @@ function app:GetDataCache()
 
 		-- Battle Pets - Dynamic
 		local db = {};
-		db.text = AUCTION_CATEGORY_BATTLE_PETS.." - "..DYNAMIC;
+		db.text = AUCTION_CATEGORY_BATTLE_PETS;
 		db.icon = app.asset("Category_PetJournal");
 		tinsert(g, DynamicCategory(db, "speciesID"));
 		-- Pet Journal
@@ -15577,12 +15605,12 @@ function app:GetDataCache()
 		flightPathsCategory.fps = {};
 		flightPathsCategory.expanded = false;
 		flightPathsCategory.icon = app.asset("Category_FlightPaths");
-		flightPathsCategory.text = L["FLIGHT_PATHS"].." - "..DYNAMIC;
+		flightPathsCategory.text = Colorize(L["FLIGHT_PATHS"], "ff7f40bf");
 		tinsert(g, flightPathsCategory);
 
 		-- Illusions - Dynamic
 		db = {};
-		db.text = "Illusions".." - "..DYNAMIC;
+		db.text = "Illusions";
 		db.icon = 132853;
 		tinsert(g, DynamicCategory(db, "illusionID"));
 
@@ -15598,7 +15626,7 @@ function app:GetDataCache()
 		-- end
 		-- Mounts - Dynamic
 		db = {};
-		db.text = MOUNTS.." - "..DYNAMIC;
+		db.text = MOUNTS;
 		db.icon = app.asset("Category_Mounts");
 		tinsert(g, DynamicCategory(db, "mountID"));
 
@@ -15615,7 +15643,7 @@ function app:GetDataCache()
 		-- Titles - Dynamic
 		db = {};
 		db.icon = app.asset("Category_Titles");
-		db.text = "Titles".." - "..DYNAMIC;
+		db.text = "Titles";
 		tinsert(g, DynamicCategory(db, "titleID"));
 
 		-- Toys
@@ -15633,7 +15661,7 @@ function app:GetDataCache()
 		db = {};
 		db.icon = app.asset("Category_ToyBox");
 		db.f = 102;
-		db.text = TOY_BOX.." - "..DYNAMIC;
+		db.text = TOY_BOX;
 		tinsert(g, DynamicCategory(db, "toyID"));
 
 		--[[
@@ -18657,6 +18685,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 		local C_TradeSkillUI_GetRecipeReagentItemLink = C_TradeSkillUI.GetRecipeReagentItemLink;
 
 		self.initialized = true;
+		self.SkillsInit = {};
 		force = true;
 		self:SetMovable(false);
 		self:SetUserPlaced(false);
@@ -18680,7 +18709,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 			local skillCache = fieldCache["spellID"];
 			if skillCache then
 				local tradeSkillID = app.GetTradeSkillLine();
-				if tradeSkillID == self.lastTradeSkillID then
+				if not tradeSkillID or tradeSkillID == self.lastTradeSkillID then
 					return false;
 				end
 				-- If it's not yours, don't take credit for it.
@@ -18688,101 +18717,109 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 					return false;
 				end
 				self.lastTradeSkillID = tradeSkillID;
+				local updates = self.SkillsInit[tradeSkillID] or {};
+				self.SkillsInit[tradeSkillID] = updates;
 
 				local currentCategoryID, categories = -1, {};
-				local categoryIDs = { C_TradeSkillUI.GetCategories() };
-				for i = 1,#categoryIDs do
-					currentCategoryID = categoryIDs[i];
-					local categoryData = C_TradeSkillUI_GetCategoryInfo(currentCategoryID);
-					if categoryData then
-						if not categories[currentCategoryID] then
-							rawset(AllTheThingsAD.LocalizedCategoryNames, currentCategoryID, categoryData.name);
-							categories[currentCategoryID] = true;
+				if not updates["Categories"] then
+					updates["Categories"] = true;
+					local categoryIDs = { C_TradeSkillUI.GetCategories() };
+					for i = 1,#categoryIDs do
+						currentCategoryID = categoryIDs[i];
+						local categoryData = C_TradeSkillUI_GetCategoryInfo(currentCategoryID);
+						if categoryData then
+							if not categories[currentCategoryID] then
+								rawset(AllTheThingsAD.LocalizedCategoryNames, currentCategoryID, categoryData.name);
+								categories[currentCategoryID] = true;
+							end
 						end
 					end
 				end
 
 				-- Cache learned recipes
-				local learned, recipeID = {};
+				local learned = {};
 				local reagentCache = app.GetDataMember("Reagents", {});
 				local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
 				local acctSpells, charSpells = ATTAccountWideData.Spells, app.CurrentCharacter.Spells;
 				local skipcaching;
-				-- print("Scanning recipes",#recipeIDs)
-				for i = 1,#recipeIDs do
-					local spellRecipeInfo = C_TradeSkillUI_GetRecipeInfo(recipeIDs[i]);
-					if spellRecipeInfo then
-						skipcaching = nil;
-						recipeID = spellRecipeInfo.recipeID;
-						currentCategoryID = spellRecipeInfo.categoryID;
-						if not categories[currentCategoryID] then
-							local categoryData = C_TradeSkillUI_GetCategoryInfo(currentCategoryID);
-							if categoryData then
-								rawset(AllTheThingsAD.LocalizedCategoryNames, currentCategoryID, categoryData.name);
-								categories[currentCategoryID] = true;
-							end
-						end
-						if spellRecipeInfo.learned then
-							if spellRecipeInfo.disabled then
-								if charSpells[recipeID] then
-									charSpells[recipeID] = nil;
-									acctSpells[recipeID] = nil;
-								end
-							else
-								charSpells[recipeID] = 1;
-								if not acctSpells[recipeID] then
-									acctSpells[recipeID] = 1;
-									tinsert(learned, recipeID);
+				if not updates["Recipes"] then
+					updates["Recipes"] = true;
+					-- print("Scanning recipes",#recipeIDs)
+					for i = 1,#recipeIDs do
+						local spellRecipeInfo = C_TradeSkillUI_GetRecipeInfo(recipeIDs[i]);
+						if spellRecipeInfo then
+							skipcaching = nil;
+							recipeID = spellRecipeInfo.recipeID;
+							currentCategoryID = spellRecipeInfo.categoryID;
+							if not categories[currentCategoryID] then
+								local categoryData = C_TradeSkillUI_GetCategoryInfo(currentCategoryID);
+								if categoryData then
+									rawset(AllTheThingsAD.LocalizedCategoryNames, currentCategoryID, categoryData.name);
+									categories[currentCategoryID] = true;
 								end
 							end
-						elseif not spellRecipeInfo.disabled and not acctSpells[recipeID] then
-							-- print("unlearned, enabled RecipeID",recipeID)
-							-- enabled, unlearned recipes should be checked against ATT data to verify they CAN actually be learned
-							local cachedRecipe = app.SearchForMergedObject("spellID", recipeID);
-							-- verify the merged cached version is not 'super' unobtainable
-							if cachedRecipe and cachedRecipe.u and cachedRecipe.u < 3 then
-								-- print("Ignoring Unobtainable RecipeID",recipeID,cachedRecipe.u)
-								skipcaching = true;
-							end
-						end
-
-						if not skillCache[recipeID] then
-							--app.print("Missing [" .. (spellRecipeInfo.name or "??") .. "] (Spell ID #" .. spellRecipeInfo.recipeID .. ") in ATT Database. Please report it!");
-							skillCache[recipeID] = { {} };
-						end
-
-						local recipeLink = C_TradeSkillUI_GetRecipeItemLink(recipeID);
-						local craftedItemID = recipeLink and GetItemInfoInstant(recipeLink);
-						if craftedItemID then
-							local reagentLink, itemID, reagentCount;
-							for i=1,C_TradeSkillUI_GetRecipeNumReagents(recipeID) do
-								reagentCount = select(3, C_TradeSkillUI_GetRecipeReagentInfo(recipeID, i));
-								reagentLink = C_TradeSkillUI_GetRecipeReagentItemLink(recipeID, i);
-								itemID = reagentLink and GetItemInfoInstant(reagentLink);
-								-- print(recipeID, itemID, "=",reagentCount,">", craftedItemID);
-
-								-- Make sure a cache table exists for this item.
-								-- Index 1: The Recipe Skill IDs => { craftedID, reagentCount }
-								-- Index 2: The Crafted Item IDs => reagentCount
-								-- TODO: potentially re-design this structure
-								if itemID then
-									if skipcaching then
-										-- remove any existing cached recipes
-										if reagentCache[itemID] then
-											-- print("removing reagent cache info", itemID,recipeID,craftedItemID)
-											reagentCache[itemID][1][recipeID] = nil;
-											reagentCache[itemID][2][craftedItemID] = nil;
-										end
-									else
-										if not reagentCache[itemID] then reagentCache[itemID] = { {}, {} }; end
-										reagentCache[itemID][1][recipeID] = { craftedItemID, reagentCount };
-										-- if craftedItemID then reagentCache[itemID][2][craftedItemID] = reagentCount; end
-										reagentCache[itemID][2][craftedItemID] = reagentCount;
+							if spellRecipeInfo.learned then
+								if spellRecipeInfo.disabled then
+									if charSpells[recipeID] then
+										charSpells[recipeID] = nil;
+										acctSpells[recipeID] = nil;
+									end
+								else
+									charSpells[recipeID] = 1;
+									if not acctSpells[recipeID] then
+										acctSpells[recipeID] = 1;
+										tinsert(learned, recipeID);
 									end
 								end
+							elseif not spellRecipeInfo.disabled and not acctSpells[recipeID] then
+								-- print("unlearned, enabled RecipeID",recipeID)
+								-- enabled, unlearned recipes should be checked against ATT data to verify they CAN actually be learned
+								local cachedRecipe = app.SearchForMergedObject("spellID", recipeID);
+								-- verify the merged cached version is not 'super' unobtainable
+								if cachedRecipe and cachedRecipe.u and cachedRecipe.u < 3 then
+									-- print("Ignoring Unobtainable RecipeID",recipeID,cachedRecipe.u)
+									skipcaching = true;
+								end
 							end
-						-- else
-						-- 	print("recipe does not craft an item",recipeLink)
+
+							if not skillCache[recipeID] then
+								--app.print("Missing [" .. (spellRecipeInfo.name or "??") .. "] (Spell ID #" .. spellRecipeInfo.recipeID .. ") in ATT Database. Please report it!");
+								skillCache[recipeID] = { {} };
+							end
+
+							local recipeLink = C_TradeSkillUI_GetRecipeItemLink(recipeID);
+							local craftedItemID = recipeLink and GetItemInfoInstant(recipeLink);
+							if craftedItemID then
+								local reagentLink, itemID, reagentCount;
+								for i=1,C_TradeSkillUI_GetRecipeNumReagents(recipeID) do
+									reagentCount = select(3, C_TradeSkillUI_GetRecipeReagentInfo(recipeID, i));
+									reagentLink = C_TradeSkillUI_GetRecipeReagentItemLink(recipeID, i);
+									itemID = reagentLink and GetItemInfoInstant(reagentLink);
+									-- print(recipeID, itemID, "=",reagentCount,">", craftedItemID);
+
+									-- Make sure a cache table exists for this item.
+									-- Index 1: The Recipe Skill IDs => { craftedID, reagentCount }
+									-- Index 2: The Crafted Item IDs => reagentCount
+									-- TODO: potentially re-design this structure
+									if itemID then
+										if skipcaching then
+											-- remove any existing cached recipes
+											if reagentCache[itemID] then
+												-- print("removing reagent cache info", itemID,recipeID,craftedItemID)
+												reagentCache[itemID][1][recipeID] = nil;
+												reagentCache[itemID][2][craftedItemID] = nil;
+											end
+										else
+											if not reagentCache[itemID] then reagentCache[itemID] = { {}, {} }; end
+											reagentCache[itemID][1][recipeID] = { craftedItemID, reagentCount };
+											-- if craftedItemID then reagentCache[itemID][2][craftedItemID] = reagentCount; end
+											reagentCache[itemID][2][craftedItemID] = reagentCount;
+										end
+									end
+								end
+							-- else
+							-- 	print("recipe does not craft an item",recipeLink)
+							end
 						end
 					end
 				end
@@ -18790,27 +18827,37 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 				-- Open the Tradeskill list for this Profession
 				if self.tradeSkillID ~= tradeSkillID then
 					self.tradeSkillID = tradeSkillID;
-					app.BuildSearchResponse_IgnoreUnavailableRecipes = true;
-					for i,group in ipairs(app.Categories.Professions) do
-						if group.requireSkill == tradeSkillID then
-							self.data = CloneData(group);
-							local requireSkill = self.data.requireSkill;
-							local response = app:BuildSearchResponse(app.Categories.Instances, "requireSkill", requireSkill);
-							if response then tinsert(self.data.g, {text=GROUP_FINDER,icon = app.asset("Category_D&R"),g=response}); end
-							response = app:BuildSearchResponse(app.Categories.Achievements, "requireSkill", requireSkill);
-							if response then tinsert(self.data.g, {text=ACHIEVEMENTS,icon = app.asset("Category_Achievements"),g=response});  end
-							response = app:BuildSearchResponse(app.Categories.Zones, "requireSkill", requireSkill);
-							if response then tinsert(self.data.g, {text=BUG_CATEGORY2,icon = app.asset("Category_Zones"),g=response});  end
-							response = app:BuildSearchResponse(app.Categories.WorldDrops, "requireSkill", requireSkill);
-							if response then tinsert(self.data.g, {text=TRANSMOG_SOURCE_4,icon = app.asset("Category_WorldDrops"),g=response});  end
-							response = app:BuildSearchResponse(app.Categories.ExpansionFeatures, "requireSkill", requireSkill);
-							if response then tinsert(self.data.g, {text=GetCategoryInfo(15301),icon = app.asset("Category_ExpansionFeatures"),g=response});  end
-							response = app:BuildSearchResponse(app.Categories.WorldEvents, "requireSkill", requireSkill)
-							if response then tinsert(self.data.g, app.CreateDifficulty(18, {icon = app.asset("Category_Event"),g=response}));  end
-							response = app:BuildSearchResponse(app.Categories.Craftables, "requireSkill", requireSkill);
-							if response then tinsert(self.data.g, {text=LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM,icon = app.asset("Category_Crafting"),g=response});  end
+					local data = updates["Data"];
+					if not data then
+						app.BuildSearchResponse_IgnoreUnavailableRecipes = true;
+						for _,group in ipairs(app.Categories.Professions) do
+							if group.requireSkill == tradeSkillID then
+								data = CloneData(group);
+								local requireSkill = data.requireSkill;
+								local response = app:BuildSearchResponse(app.Categories.Instances, "requireSkill", requireSkill);
+								if response then tinsert(data.g, {text=GROUP_FINDER,icon = app.asset("Category_D&R"),g=response}); end
+								response = app:BuildSearchResponse(app.Categories.Achievements, "requireSkill", requireSkill);
+								if response then tinsert(data.g, {text=ACHIEVEMENTS,icon = app.asset("Category_Achievements"),g=response});  end
+								response = app:BuildSearchResponse(app.Categories.Zones, "requireSkill", requireSkill);
+								if response then tinsert(data.g, {text=BUG_CATEGORY2,icon = app.asset("Category_Zones"),g=response});  end
+								response = app:BuildSearchResponse(app.Categories.WorldDrops, "requireSkill", requireSkill);
+								if response then tinsert(data.g, {text=TRANSMOG_SOURCE_4,icon = app.asset("Category_WorldDrops"),g=response});  end
+								response = app:BuildSearchResponse(app.Categories.ExpansionFeatures, "requireSkill", requireSkill);
+								if response then tinsert(data.g, {text=GetCategoryInfo(15301),icon = app.asset("Category_ExpansionFeatures"),g=response});  end
+								response = app:BuildSearchResponse(app.Categories.WorldEvents, "requireSkill", requireSkill)
+								if response then tinsert(data.g, app.CreateDifficulty(18, {icon = app.asset("Category_Event"),g=response}));  end
+								response = app:BuildSearchResponse(app.Categories.Craftables, "requireSkill", requireSkill);
+								if response then tinsert(data.g, {text=LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM,icon = app.asset("Category_Crafting"),g=response});  end
+							end
 						end
+						data.indent = 0;
+						data.visible = true;
+						BuildGroups(data, data.g);
+						updates["Data"] = data;
+						-- only expand the list if this is the first time it is being generated
+						self.ExpandInfo = { Expand = true };
 					end
+					self.data = data;
 					app.BuildSearchResponse_IgnoreUnavailableRecipes = nil;
 				end
 				-- If something new was "learned", then refresh the data.
@@ -19011,12 +19058,6 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 		end
 
 		-- Update the window and all of its row data
-		if force then
-			self.data.indent = 0;
-			self.data.visible = true;
-			BuildGroups(self.data, self.data.g);
-			self.ExpandInfo = { Expand = true };
-		end
 		self:BaseUpdate(force or got, got);
 	end
 end;

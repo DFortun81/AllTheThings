@@ -252,7 +252,7 @@ app.L = {
 	["QUEST_ONCE_PER_ACCOUNT_FORMAT"] = "Completed By: %s";
 
 	-- Settings.lua
-		["SKIP_AUTO_REFRESH"] = "Do Not Auto-Refresh!";
+		["SKIP_AUTO_REFRESH"] = "Skip Settings-Toggle Data Refreshes!";
 		["SKIP_AUTO_REFRESH_TOOLTIP"] = "By default (unchecked), any Settings change which may affect visible data will cause an automatic refresh.\n\nBy enabling this option, Settings changes won't take effect until the User performs a Full Refresh by Shift-Clicking on an ATT window.";
 		["AFTER_REFRESH"] = "After Refresh";
 

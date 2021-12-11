@@ -715,3 +715,14 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 	}),
 }));
+
+root("_NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	tier(SL_TIER, {
+		n(CLASS_TRIAL, {
+			cl(DEMONHUNTER, {
+				i(177575),	-- Demon Trophy
+				i(177576),	-- Charm of Demonic Fire
+			}),
+		}),
+	}),
+}));

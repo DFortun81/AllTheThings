@@ -7,54 +7,6 @@ _.Zones =
 	m(BROKEN_ISLES, {
 		m(LEGION_DALARAN, {
 			n(QUESTS, {
-				n(-176, {	-- Weekly World Events
-					["provider"] = { "n", 111246 },	-- Archmage Timear
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						q(44164, {	-- A Burning Path Through Time
-							["isWeekly"] = true,	-- This is a Weekly Quest
-							["provider"] = { "n", 111246 },	-- Quest Giver: Archmage Timear
-							["g"] = {
-								i(153504),	-- Cache of Antoran Treasures [Normal]
-							},
-						}),
-						q(44166, {	-- A Frozen Path Through Time
-							["isWeekly"] = true,	-- This is a Weekly Quest
-							["provider"] = { "n", 111246 },	-- Quest Giver: Archmage Timear
-							["g"] = {
-								i(153504),	-- Cache of Antoran Treasures [Normal]
-							},
-						}),
-						q(44167, {	-- A Shattered Path Through Time
-							["isWeekly"] = true,	-- This is a Weekly Quest
-							["provider"] = { "n", 111246 },	-- Quest Giver: Archmage Timear
-							["g"] = {
-								i(153504),	-- Cache of Antoran Treasures [Normal]
-							},
-						}),
-						q(45799, {	-- A Shrouded Path Through Time
-							["isWeekly"] = true,	-- This is a Weekly Quest
-							["provider"] = { "n", 111246 },	-- Quest Giver: Archmage Timear
-							["g"] = {
-								i(153504),	-- Cache of Antoran Treasures [Normal]
-							},
-						}),
-						q(45799, {	-- A Shrouded Path Through Time
-							["isWeekly"] = true,	-- This is a Weekly Quest
-							["provider"] = { "n", 111246 },	-- Quest Giver: Archmage Timear
-							["g"] = {
-								i(153504),	-- Cache of Antoran Treasures [Normal]
-							},
-						}),
-						q(44171, {	-- Emissary of War
-							["isWeekly"] = true,	-- This is a Weekly Quest
-							["provider"] = { "n", 111246 },	-- Quest Giver: Archmage Timear
-							["g"] = {
-								i(153501),	-- Cache of Antoran Treasures [Heroic]
-							},
-						}),
-					},
-				}),
 				q(44720, {	-- A Call to Action
 					["lvl"] = 110,
 					["coords"] = {
@@ -1027,10 +979,6 @@ _.Zones =
 					["coord"] = { 52.7, 59.2, 629 },
 					["lvl"] = 110,
 				}),
-				q(44172, {	-- The Arena Calls
-					["isWeekly"] = true,
-					["provider"] = { "n", 111246 },	-- Archmage Timear
-				}),
 				q(49474, {	-- The Cursed Shard
 					["provider"] = { "i", 154880 },	-- Cursed Shard
 					["isBreadcrumb"] = true,
@@ -1089,11 +1037,6 @@ _.Zones =
 				q(47793, {	-- The Spoiled Sample
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(44174, {	-- The Very Best
-					["u"] = REMOVED_FROM_GAME,
-					["isWeekly"] = true,
-					["provider"] = { "n", 111246 },	-- Archmage Timear
-				}),
 				q(38307, {	-- The Warchief Beckons
 					["sourceQuests"] = {
 						39864,	-- Stormheim
@@ -1114,10 +1057,6 @@ _.Zones =
 						WARLOCK,	-- Affliction
 					},
 					["lvl"] = 110,
-				}),
-				q(44175, {	-- The World Awaits
-					["isWeekly"] = true,
-					["provider"] = { "n", 111246 },	-- Archmage Timear
 				}),
 				q(43331, {	-- Time to Collect
 					["sourceQuests"] = { 42483 },	-- Put It All on Red

@@ -10,60 +10,6 @@ _.Zones =
 				ach(14744, {	-- Better to Be Lucky Than Dead
 					ach(14743),	-- Deadly Serious
 				}),
-				ach(14761, {	-- Deciphering Death's Intentions
-					["description"] = "Most of the Maw Lore items can be found by killing Assassins, rares, or normal mobs.  The remaining ones drop from specific mobs, rares, or treasures that can be found throughout the Maw.",
-					["collectible"] = false,
-					["g"] = {
-						crit(1,  {	-- Constellan Writ
-							["provider"] = { "i", 175769 },	-- Constellan Writ
-							["questID"] = 63132,	-- Constellan Writ
-						}),
-						crit(2,  {	-- Shifting Cryptogram
-							["provider"] = { "i", 178044 },	-- Shifting Cryptogram
-							["questID"] = 63133,	-- Shifting Cryptogram
-						}),
-						crit(3,  {	-- Mawsworn Patrol Map
-							["provider"] = { "i", 180799 },	-- Mawsworn Patrol Map
-							["questID"] = 63134,	-- Mawsworn Patrol Map
-						}),
-						crit(4,  {	-- Coldheart Flight Routes
-							["provider"] = { "i", 180801 },	-- Coldheart Flight Routes
-							["questID"] = 63135,	-- Coldheart Flight Routes
-						}),
-						crit(5,  {	-- Chaotic Runes
-							["provider"] = { "i", 180802 },	-- Chaotic Runes
-							["questID"] = 63136,	-- Chaotic Runes
-						}),
-						crit(6,  {	-- Puzzling Cryptogram
-							["provider"] = { "i", 180803 },	-- Puzzling Cryptogram
-							["questID"] = 63137,	-- Puzzling Cryptogram
-						}),
-						crit(7,  {	-- Worn Obleron Etching
-							["provider"] = { "i", 180804 },	-- Worn Obleron Etching
-							["questID"] = 63140,	-- Worn Obleron Etching
-						}),
-						crit(8,  {	-- Soulforge Blueprints
-							["provider"] = { "i", 180805 },	-- Soulforge Blueprints
-							["questID"] = 63142,	-- Soulforge Blueprints
-						}),
-						crit(9,  {	-- Shadebound Testimonial
-							["provider"] = { "i", 180806 },	-- Shadebound Testimonial
-							["questID"] = 63145,	-- Shadebound Testimonial
-						}),
-						crit(10, {	-- Venthyr Concordat
-							["provider"] = { "i", 180807 },	-- Venthyr Concordat
-							["questID"] = 63152,	-- Venthyr Concordat
-						}),
-						crit(11, {	-- Discarded Torments
-							["provider"] = { "i", 180808 },	-- Discarded Torments
-							["questID"] = 63153,	-- Discarded Torments
-						}),
-						crit(19, {	-- Indecipherable Map
-							["provider"] = { "i", 183058 },	-- Indecipherable Map
-							["questID"] = 63155,	-- Indecipherable Map
-						}),
-					},
-				}),
 				ach(14895, {	-- Ghast Five
 					ach(14894),		-- To 'Ghast, Two Curios
 				}),

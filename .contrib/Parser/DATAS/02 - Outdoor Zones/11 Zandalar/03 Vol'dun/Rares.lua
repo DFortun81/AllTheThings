@@ -200,13 +200,7 @@ _.Zones =
 					},
 				}),
 				n(143313, {	-- Portakillo
-					--Note!! No questID triggered
-					["coord"] = { 61.04, 18.32, VOLDUN },
-					["g"] = {
-						crit(3, {	-- Portakillo killed
-							["achievementID"] = 13027,	-- Mushroom Harvest
-						}),
-					},
+					["coord"] = { 61.0, 18.3, VOLDUN },
 				}),
 				n(136340, {	-- Relic Hunter Hazaak
 					["questID"] = 51126,

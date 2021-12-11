@@ -260,6 +260,9 @@ _.Zones =
 					["questID"] = 47878,
 					["coord"] = { 29.1, 55.6, NAZMIR },
 				}),
+				n(143316, {	-- Skullcap
+					["coord"] = { 52.6, 70.0, NAZMIR },
+				}),
 				n(126460, {	-- Tainted Guardian
 					["questID"] = 48508,
 					["coord"] = { 31.4, 38.1, NAZMIR },
@@ -269,6 +272,10 @@ _.Zones =
 						}),
 						i(162621),	-- Nazmani Golem's Greathelm
 					},
+				}),
+				n(143311, {	-- Toadcruel
+					["questID"] = 50893,
+					["coord"] = { 73.6, 48.8, NAZMIR },
 				}),
 				n(126056, {	-- Totem Maker Jash'ga
 					["questID"] = 48406,

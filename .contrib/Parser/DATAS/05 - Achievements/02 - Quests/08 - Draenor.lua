@@ -31,12 +31,27 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			crit(3),		-- Pit Slayer
 		}),
 		ach(9548, {		-- Buried Treasures (Mok'gol Watchpost)
-			crit(1),		-- Garrosh's Shackles
-			crit(2),		-- Warsong Relics
-			crit(3),		-- Warsong Remains
-			crit(4),		-- Stolen Draenei Tome
-			crit(5),		-- Wolf Pup Remains
-			crit(6),		-- Gnarled Bone
+			["maps"] = { DRAENOR_NAGRAND },
+			["g"] = {
+				crit(1, {	-- Garrosh's Shackles
+					["_quests"] = { 37130 },
+				}),
+				crit(2, {	-- Warsong Relics
+					["_quests"] = { 37132 },
+				}),
+				crit(3, {	-- Warsong Remains
+					["_quests"] = { 37133 },
+				}),
+				crit(4, {	-- Stolen Draenei Tome
+					["_quests"] = { 37134 },
+				}),
+				crit(5, {	-- Wolf Pup Remains
+					["_quests"] = { 37135 },
+				}),
+				crit(6, {	-- Gnarled Bone
+					["_quests"] = { 37136 },
+				}),
+			},
 		}),
 		ach(9667),		-- Burn It to the Ground (Everbloom Wilds)
 		ach(9537),		-- By Fire Be... Merged? (Magnarok)

@@ -617,6 +617,9 @@ _.Zones =
 					["coord"] = { 51.5, 31.8, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 122817 },	-- Bladeguard Kaja
+					["g"] = {
+						i(179384),	-- Chain of Exemption (Added in SL)
+					},
 				}),
 				i(163621, {	-- Rusted Horde Insignia
 					["races"] = HORDE_ONLY,

@@ -1129,6 +1129,8 @@ _.NeverImplemented =
 			i(158329),	-- Hidden Gloves
 			-- SL
 			i(185774),	-- PH Green Head Candle
+			i(182306), -- Monster Mantle
+			i(186093), -- Shaded Spectacles
 		}),
 		filter(SHIRTS, {
 			i(52548),	-- Initiate's Tunic
@@ -1195,6 +1197,13 @@ _.NeverImplemented =
 			i(109526),	-- 7.0 QA Combat Test Neck 4
 			-- BFA
 			i(167137),	-- QA Combat Test Neck 1
+			-- SL
+			i(177146),	-- Shaleshell Pendant
+			i(177165),	-- Shaleshell Pendant
+			i(179386),	-- Tidesage Necklace (Might be another quest in Stormsong Valley)
+			i(185943),	-- Lost Adventurer's Medallion
+			i(186633),	-- Mawrat Mongrel's Collar
+			i(186983),	-- Attendant's Chain
 		}),
 		filter(52, {	-- Finger
 			-- Load In Game
@@ -1266,6 +1275,12 @@ _.NeverImplemented =
 			i(167135),	-- QA Combat Test Ring 1
 			i(167136),	-- QA Combat Test Ring 2
 			i(173421),	-- Black Empire Signet
+			-- SL
+			i(175717),	-- Inquisitor's Signet
+			i(177145),	-- Sea Sapphire Band
+			i(177153),	-- Beaten Copper Loop
+			i(177164),	-- Sea Sapphire Band
+			i(177167),	-- Beaten Copper Loop
 		}),
 		n(-386, {	-- Trinket
 			-- Load In Game
@@ -1327,6 +1342,21 @@ _.NeverImplemented =
 			i(167138),	-- QA Combat Test Trinket 1 (SL?)
 			i(167139),	-- QA Combat Test Trinket 2 (SL?)
 			i(173426),	-- Black Empire trinkets
+			-- SL
+			i(175726),	-- Primalist's Kelpling
+			i(175727),	-- Elder's Stormseed
+			i(177147),	-- Seabeast Tusk
+			i(177148),	-- Lucky Braid
+			i(177149),	-- Shimmering Rune
+			i(177150),	-- Petrified Basilisk Scale
+			i(177151),	-- Oceanographer's Weather Log
+			i(177152),	-- Privateer's Spyglass
+			i(177154),	-- Seabeast Tusk
+			i(177155),	-- Shimmering Rune
+			i(177156),	-- Petrified Basilisk Scale
+			i(177157),	-- Bijou of the Golden City
+			i(177158),	-- Enchanted Devilsaur Claw
+			i(177166),	-- Lucky Braid
 		}),
 	}),
 	n(-494, {	-- Misc
@@ -1722,6 +1752,10 @@ _.NeverImplemented =
 		i(43963),	-- Reins of the Brown Polar Bear
 		i(43964),	-- Reins of the Black Polar Bear
 		i(46101),	-- Blue Skeletal Warhorse
+		-- SL
+		i(186491),	-- Spring Wilderling Harness
+		i(186639),	-- Pilfered Gearglider
+		i(186640),	-- Silver Gearglider
 	}),
 	filter(BATTLE_PETS, {
 		model(65527, i(129108, {	-- Son of Goredome						(Never added in Game)
@@ -1795,6 +1829,9 @@ _.NeverImplemented =
 		i(136902),	-- Toxic Whelpling (wild pet catchable, item was never used)
 		i(136921),	-- Trigger (132519 is crafted from engineering, doesn't appear this version was ever used)
 		i(67600),	-- Lil' Alexstrasza (Never added in Game)
+		-- SL
+		i(186545),	-- REUSE
+		i(180841),	-- Olive Dragon Turtle
 	}),
 	n(PROFESSIONS, {
 		prof(ALCHEMY, {
@@ -3383,7 +3420,6 @@ _.NeverImplemented =
 			i(165682),	-- Fallback Weapon - Warglaives
 		}),
 	}),
-	-- Weapons end
 
 ------------------------------------------------------------
 --			T E M P O R A R Y			I T E M S		  --

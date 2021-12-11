@@ -262,46 +262,6 @@ _.Zones =
 						}),
 					},
 				})),
-				ach(12482, {	-- Get Hek'd
-					["description"] = "Make sure to loot the cache Jani leaves behind as you fulfill each requirement; that's what awards the actual achievement criteria.",
-					["collectible"] = false,
-					["g"] = {
-						crit(1,  {	-- Golden Ravasaur Egg
-							["sourceQuests"] = {
-								51145,	-- Curse of Jani (A)
-								47442,	-- Curse of Jani (H)
-							},
-							["questID"] = 50308,
-							["itemID"] = 156963,	-- Golden Ravasaur Egg
-							["coord"] = { 71.6, 41.2, ZULDAZAR },	-- Trashpile turn-in
-							["crs"] = {
-								131560,	-- Feral Ravasaur
-								122504,	-- Savagemane Ravasaur
-							},
-						}),
-						crit(4,  {	-- Big Hunter Mon
-							["sourceQuests"] = { 50332 },	-- Big Hunter Mon
-							["coord"] = { 66.2, 16.6, ZULDAZAR },	-- Trashpile pick-up
-						}),
-						crit(7,  {	-- The Great Hat Robbery
-							["sourceQuests"] = { 50381 },	-- The Great Hat Robbery
-							["coord"] = { 61.9, 46.9, ZULDAZAR },
-						}),
-						crit(10, {	-- Feathered Viper Scale
-							["sourceQuests"] = {
-								51145,	-- Curse of Jani (A)
-								47442,	-- Curse of Jani (H)
-							},
-							["questID"] = 50431,
-							["itemID"] = 157794,	-- Feathered Viper Scale
-							["coord"] = { 62.7, 20.5, ZULDAZAR },	-- Trashpile turn-in
-							["crs"] = {
-								132410,	-- Feathered Viper
-								132409,	-- Feathered Viper
-							},
-						}),
-					},
-				}),
 				ach(13542, {	-- How to Train your Direhorn
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -385,17 +345,6 @@ _.Zones =
 					ach(12859),		-- Prize Fighter
 					ach(12862),		-- Thirty Six and Two
 				}),
-				ach(13027, {	-- Mushroom Harvest
-					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
-					["g"] = {
-						n(143314, {	-- Bane of the Woods
-							["coord"] = { 45.6, 79.0, ZULDAZAR },
-							["g"] = {
-								crit(2),	-- Bane of the Woods
-							},
-						}),
-					},
-				}),
 				ach(12481, {	-- The Final Seal
 					["sourceQuests"] = { 50954 },	-- Zandalar Forever!
 					["races"] = HORDE_ONLY,
@@ -435,53 +384,6 @@ _.Zones =
 					},
 				}),
 				pvp(ach(12575)),	-- Tour of Duty: Zuldazar
-				ach(12851, {	-- Treasures of Zuldazar
-					["collectible"] = false,
-					["g"] = {
-						o(281092, {	-- Witch Doctor's Hoard
-							["criteriaID"] = 2,
-							["questID"] = 50259,
-							["coord"] = { 64.7, 21.7, ZULDAZAR },
-							["icon"] = "Interface\\Icons\\garrison_bronzechest",
-						}),
-						o(279609, {	-- Spoils of Pandaria
-							["criteriaID"] = 3,
-							["questID"] = 49936,
-							["coord"] = { 24.5, 27.0, 1177 },	-- lower level of Breath of Pa'ku
-							["icon"] = "Interface\\Icons\\garrison_bronzechest",
-						}),
-						o(281655, {	-- Gift of the Brokenhearted
-							["criteriaID"] = 4,
-							["questID"] = 50582,	-- 50950 for using the Incense prior to opening the chest itself.
-							["coord"] = { 51.5, 26.7, ZULDAZAR },
-							["icon"] = "Interface\\Icons\\garrison_bronzechest",
-						}),
-						o(277561, {	-- Warlord's Cache
-							["criteriaID"] = 5,
-							["questID"] = 49257,
-							["coord"] = { 49.5, 65.3, ZULDAZAR },
-							["icon"] = "Interface\\Icons\\garrison_bronzechest",
-						}),
-						o(281898, {	-- Dazar's Forgotten Chest
-							["criteriaID"] = 6,
-							["questID"] = 50707,
-							["coord"] = { 38.8, 34.4, ZULDAZAR },
-							["icon"] = "Interface\\Icons\\garrison_bronzechest",
-						}),
-						o(284455, {	-- The Exile's Lament
-							["criteriaID"] = 8,
-							["questID"] = 50949,
-							["coord"] = { 71.8, 16.7, ZULDAZAR },
-							["icon"] = "Interface\\Icons\\garrison_bronzechest",
-						}),
-						o(290725, {	-- Riches of Tor'nowa
-							["criteriaID"] = 10,
-							["questID"] = 51624,
-							["coord"] = { 52.9, 47.2, ZULDAZAR },
-							["icon"] = "Interface\\Icons\\garrison_bronzechest",
-						}),
-					},
-				}),
 			}),
 		}),
 	}),
