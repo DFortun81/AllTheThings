@@ -1643,7 +1643,10 @@ crit = function(criteriaID, t)           -- Create an Achievement Criteria Objec
 		if not isarray(t) then
 			-- DO NOT do that lol
 			if t.achievementID then
-				--print("Ach:",t.achievementID,"Crit:",criteriaID,"Use '_quests', '_npcs', or 'cost' to define where/how this Criteria is granted instead of directly nesting it in Source.")
+				-- print("Ach:",t.achievementID,"Crit:",criteriaID,"Use '_quests', '_npcs', or 'cost' to define where/how this Criteria is granted instead of directly nesting it in Source.")
+			end
+			if t.questID then
+				error(table.concat({"Do not use QuestID:",t.questID," inside Achievement Criteria:",criteriaID," ==> Use '_quests' to indicate a Criteria granted from completion of a single Quest."}))
 			end
 		else
 			t = { ["groups"] = t };

@@ -6782,7 +6782,7 @@ end
 -- Achievement Criteria Lib
 local function GetParentAchievementInfo(t, key)
 	local sourceAch = t.sourceParent or t.parent;
-	if sourceAch.achievementID == t.achievementID then
+	if sourceAch and sourceAch.achievementID == t.achievementID then
 		rawset(t, key, sourceAch[key]);
 		return rawget(t, key);
 	end
@@ -6807,9 +6807,11 @@ local criteriaFields = {
 		if t.encounterID then
 			return select(1, EJ_GetEncounterInfo(t.encounterID));
 		end
-		local m = GetAchievementNumCriteria(t.achievementID);
-		if m and t.criteriaID <= m then
-			return GetAchievementCriteriaInfo(t.achievementID, t.criteriaID, true);
+		if t.achievementID then
+			local m = GetAchievementNumCriteria(t.achievementID);
+			if m and t.criteriaID <= m then
+				return GetAchievementCriteriaInfo(t.achievementID, t.criteriaID, true);
+			end
 		end
 		return L["WRONG_FACTION"];
 	end,

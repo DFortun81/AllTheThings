@@ -747,10 +747,21 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 		}),
 		ach(13707),		-- Mrrl's Secret Stash
 		ach(13027, {	-- Mushroom Harvest
-			crit(1),		-- Skullcap killed
-			crit(2),		-- Bane of the Woods killed
-			crit(3),		-- Portakillo killed
-			crit(4),		-- Toadcruel killed
+			["maps"] = { NAZMIR },
+			["g"] = {
+				crit(1, {	-- Skullcap
+					["_npcs"] = { 143316 },
+				}),
+				crit(2, {	-- Bane of the Woods killed
+					["_npcs"] = { 143314 },
+				}),
+				crit(3, {	-- Portakillo
+					["_npcs"] = { 143313 },
+				}),
+				crit(4, {	-- Toadcruel
+					["_quests"] = { 50893 },
+				}),
+			},
 		}),
 		ach(13704, {	-- Nautical Battlefield Training (A)
 			["races"] = ALLIANCE_ONLY,
@@ -972,20 +983,51 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(6),		-- Timmy Gene Sunrise Pork
 		}),
 		ach(13016, {	-- Scavenger of the Sands
-			crit(1),		-- Jason's Rusty Blade
-			crit(2),		-- Ian's Empty Bottle
-			crit(3),		-- Julie's Cracked Dish
-			crit(4),		-- Brian's Broken Compass
-			crit(5),		-- Ofer's Bound Journal
-			crit(6),		-- Skye's Pet Rock
-			crit(7),		-- Julien's Left Boot
-			crit(8),		-- Navarro's Flask
-			crit(9),		-- Zach's Canteen
-			crit(10),		-- Damarcus' Backpack
-			crit(11),		-- Rachel's Flute
-			crit(12),		-- Josh's Fang Necklace
-			crit(13),		-- Portrait of Commander Martens
-			crit(14),		-- Kurt's Ornate Key
+			["maps"] = { VOLDUN },
+			["g"] = {
+				crit(1,  {	-- Jason's Rusty Blade
+					["_quests"] = { 53132 },
+				}),
+				crit(2,  {	-- Ian's Empty Bottle
+					["_quests"] = { 53133 },
+				}),
+				crit(3,  {	-- Julie's Cracked Dish
+					["_quests"] = { 53134 },
+				}),
+				crit(4,  {	-- Brian's Broken Compass
+					["_quests"] = { 53135 },
+				}),
+				crit(5,  {	-- Ofer's Bound Journal
+					["_quests"] = { 53136 },
+				}),
+				crit(6,  {	-- Skye's Pet Rock
+					["_quests"] = { 53137 },
+				}),
+				crit(7,  {	-- Julien's Left Boot
+					["_quests"] = { 53138 },
+				}),
+				crit(8,  {	-- Navarro's Flask
+					["_quests"] = { 53139 },
+				}),
+				crit(9,  {	-- Zach's Canteen
+					["_quests"] = { 53140 },
+				}),
+				crit(10, {	-- Damarcus' Backpack
+					["_quests"] = { 53141 },
+				}),
+				crit(11, {	-- Rachel's Flute
+					["_quests"] = { 53142 },
+				}),
+				crit(12, {	-- Josh's Fang Necklace
+					["_quests"] = { 53143 },
+				}),
+				crit(13, {	-- Portrait of Commander Martens
+					["_quests"] = { 53144 },
+				}),
+				crit(14, {	-- Kurt's Ornate Key
+					["_quests"] = { 53145 },
+				}),
+			},
 		}),
 		ach(13057, {	-- Shanty Raid
 			crit(1),		-- Shanty of the Lively Men
@@ -1597,16 +1639,39 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(10),		-- Stolen Thornspeaker Cache
 		}),
 		ach(12771, {	-- Treasures of Nazmir
-			crit(1),		-- Lucky Horace's Lucky Chest
-			crit(2),		-- Partially-Digested Treasure
-			crit(3),		-- Cursed Nazmani Chest
-			crit(4),		-- Cleverly Disguised Chest
-			crit(5),		-- Lost Nazmani Treasure
-			crit(6),		-- Offering to Bwonsamdi
-			crit(7),		-- Shipwrecked Chest
-			crit(8),		-- Venomous Seal
-			crit(9),		-- Swallowed Naga Chest
-			crit(10),		-- Wunja's Trove
+			["maps"] = { NAZMIR },
+			["g"] = {
+				crit(1, {		-- Lucky Horace's Lucky Chest
+					["_quests"] = { 49867 },
+				}),
+				crit(2, {		-- Partially-Digested Treasure
+					["_quests"] = { 50061 },
+				}),
+				crit(3, {		-- Cursed Nazmani Chest
+					["_quests"] = { 49979 },
+				}),
+				crit(4, {		-- Cleverly Disguised Chest
+					["_quests"] = { 49885 },
+				}),
+				crit(5, {		-- Lost Nazmani Treasure
+					["_quests"] = { 49891 },
+				}),
+				crit(6, {		-- Offering to Bwonsamdi
+					["_quests"] = { 49484 },
+				}),
+				crit(7, {		-- Shipwrecked Chest
+					["_quests"] = { 49483 },
+				}),
+				crit(8, {		-- Venomous Seal
+					["_quests"] = { 49889 },
+				}),
+				crit(9, {		-- Swallowed Naga Chest
+					["_quests"] = { 50045 },
+				}),
+				crit(10, {		-- Wunja's Trove
+					["_quests"] = { 49313 },
+				}),
+			},
 		}),
 		ach(12853, {	-- Treasures of Stormsong Valley
 			crit(1),		-- Weathered Treasure Chest
@@ -1633,28 +1698,74 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(10),		-- Singed Treasure Map
 		}),
 		ach(12849, {	-- Treasures of Vol'dun
-			crit(1),		-- Ashvane Spoils
-			crit(2),		-- Grayal's Last Offering
-			crit(3),		-- Lost Explorer's Bounty
-			crit(4),		-- Sandfury Reserve
-			crit(5),		-- Stranded Cache
-			crit(6),		-- Excavator's Greed
-			crit(7),		-- Zem'lan's Buried Treasure
-			crit(8),		-- Lost Offerings of Kimbul
-			crit(9),		-- Deadwood Chest
-			crit(10),		-- Sandsunken Treasure
+			["maps"] = { VOLDUN },
+			["g"] = {
+				crit(1,  {	-- Ashvane Spoils
+					["_quests"] = { 50237 },
+				}),
+				crit(2,  {	-- Grayal's Last Offering
+					["_quests"] = { 51093 },
+				}),
+				crit(3,  {	-- Lost Explorer's Bounty
+					["_quests"] = { 51132 },
+				}),
+				crit(4,  {	-- Sandfury Reserve
+					["_quests"] = { 51133 },
+				}),
+				crit(5,  {	-- Stranded Cache
+					["_quests"] = { 51135 },
+				}),
+				crit(6,  {	-- Excavator's Greed
+					["_quests"] = { 51136 },
+				}),
+				crit(7,  {	-- Zem'lan's Buried Treasure
+					["_quests"] = { 51137 },
+				}),
+				crit(8,  {	-- Lost Offerings of Kimbul
+					["_quests"] = { 52992 },
+				}),
+				crit(9,  {	-- Deadwood Chest
+					["_quests"] = { 52994 },
+				}),
+				crit(10, {	-- Sandsunken Treasure
+					["_quests"] = { 53004 },
+				}),
+			},
 		}),
 		ach(12851, {	-- Treasures of Zuldazar
-			crit(1),		-- Offerings of the Chosen
-			crit(2),		-- Witch Doctor's Hoard
-			crit(3),		-- Spoils of Pandaria
-			crit(4),		-- Gift of the Brokenhearted
-			crit(5),		-- Warlord's Cache
-			crit(6),		-- Dazar's Forgotten Chest
-			crit(7),		-- Da White Shark's Bounty
-			crit(8),		-- The Exile's Lament
-			crit(9),		-- Cache of Secrets
-			crit(10),		-- Riches of Tor'nowa
+			["maps"] = { ZULDAZAR },
+			["g"] = {
+				crit(1, {	-- Offerings of the Chosen
+					["_quests"] = { 48938 },
+				}),
+				crit(2, {	-- Witch Doctor's Hoard
+					["_quests"] = { 50259 },
+				}),
+				crit(3, {	-- Spoils of Pandaria
+					["_quests"] = { 49936 },
+				}),
+				crit(4, {	-- Gift of the Brokenhearted
+					["_quests"] = { 50582 },
+				}),
+				crit(5, {	-- Warlord's Cache
+					["_quests"] = { 49257 },
+				}),
+				crit(6, {	-- Dazar's Forgotten Chest
+					["_quests"] = { 50707 },
+				}),
+				crit(7, {	-- Da White Shark's Bounty
+					["_quests"] = { 50947 },
+				}),
+				crit(8, {	-- The Exile's Lament
+					["_quests"] = { 50949 },
+				}),
+				crit(9, {	-- Cache of Secrets
+					["_quests"] = { 51338 },
+				}),
+				crit(10, {	-- Riches of Tor'nowa
+					["_quests"] = { 51624 },
+				}),
+			},
 		}),
 		ach(13549, {	-- Trove Tracker
 			crit(1),	-- 20 Arcane Chests

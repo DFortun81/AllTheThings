@@ -2529,7 +2529,6 @@ _.HiddenQuestTriggers = {
 		q(51825),	-- ??? Triggers after turning in "Proudmoore's Parley" in Boralus
 		q(51826),	-- ??? Triggers after turning in "Proudmoore's Parley" in Boralus
 		q(54991),	-- Khaz'gorian Smithing Hammer - Anvil created
-		q(50950),	-- for using the Incense prior to opening Gift of the Brokenhearted for achievement Treasures of Zuldazar
 		q(51094),	-- for clicking on object 287238 Ancient Altar in Vol'dun as part of the Treasures of Vol'dun achievement for Grayal's Last Offering
 		q(53420),	-- for clicking on Lost Spawn of Krag'wa at { 52.83, 42.85, NAZMIR },
 		q(53425),	-- for clicking on Lost Spawn of Krag'wa at { 21.86, 69.34, NAZMIR },
@@ -2709,7 +2708,6 @@ _.HiddenQuestTriggers = {
 		q(55259),	-- Triggers after turning 'Sleep, Eat, Repeat' (ID 55258) in to finish the achievement criteria 'Sleep, Eat, Repeat' (3) for How to Train Your Direhorn (ID 13542)
 		q(52141),	-- after completing "SKREEEEE!" for How to Ptrain Your Pterrordax
 		q(47436),	-- Picked Pa'ku for "Picking a Side"
-		q(50948),	-- Da White Shark, rare with no associated loot (treasure quest is in achievement section)
 		q(47443),	-- switched loa alignment in Zuldazar to Gonk by speaking to Chronicler Ash'tari
 		q(53567),	-- Sky Queen, rare with no associated loot
 		q(50844),	-- triggered when turning in #50900, "Maybe When You're Older," part of Kua'fon questline
