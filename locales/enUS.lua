@@ -942,6 +942,11 @@ app.L = {
 	-- Garrisons
 		[-99] = "Interface\\Icons\\inv_garrison_resource",									-- Buildings
 		[-101] = "Interface\\Icons\\Achievement_GarrisonFollower_LevelUp",					-- Followers
+	-- Druid Feral Druid Hidden Artifact Appearance
+		[-130] = "Interface\\Icons\\achievement_zone_duskwood",								-- Duskwood Active
+		[-131] = "Interface\\Icons\\achievement_zone_hinterlands_01",						-- The Hinterlands Active
+		[-132] = "Interface\\Icons\\achievement_zone_feralas",								-- Feralas Active
+		[-133] = "Interface\\Icons\\achievement_zone_duskwood",								-- Duskwood Activated
 	-- Garrisons Invasions TODO: what levels?
 		[-136] = "Interface\\Icons\\achievement_bg_defendxtowers_av",						-- Garrison Invasion
 	-- Class Trial
@@ -969,6 +974,9 @@ app.L = {
 		[-154] = "Interface\\Icons\\ability_bossmagistrix_timewarp1",						-- Level 48
 		[-155] = 236566,																	-- Level 50 (Boost)
 		[-156] = 236567,																	-- Level 60
+	-- Druid Feral Druid Hidden Artifact Appearance
+		[-157] = "Interface\\Icons\\achievement_zone_hinterlands_01",						-- The Hinterlands Activated
+		[-158] = "Interface\\Icons\\achievement_zone_feralas",								-- Feralas Activated
 	-- Junkboxes
 		[-165] = "Interface\\Icons\\inv_box_01",											-- Junkboxes
 	-- Emissary
@@ -1265,6 +1273,19 @@ app.L = {
 		--
 	-- Sets
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",						-- Sets
+	-- Warrior order hall lore items
+		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
+		[-2201] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
+		[-2202] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
+		[-2203] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
+		[-2204] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
+		[-2205] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
+		[-2206] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
+		[-2207] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
+		[-2208] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
+		[-2209] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
+		[-2210] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
+		[-2211] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
 	-- T3
 		[-3179] = "Interface\\Icons\\achievement_dungeon_naxxramas",						-- Tier 3 Sets
 	-- Island Expeditions
@@ -1425,6 +1446,12 @@ app.L = {
 	-- Garrisons
 		[-99] = "Buildings",
 		[-101] = GARRISON_FOLLOWERS,											-- Followers
+	-- Druid Feral Druid Hidden Artifact Appearance
+		[-130] = DUNGEON_FLOOR_NIGHTMARERAID8.." "..GetSpellInfo(133137),		-- Duskwood Active
+		[-131] = DUNGEON_FLOOR_NIGHTMARERAID7.." "..GetSpellInfo(133137),		-- The Hinterlands Active
+		[-132] = DUNGEON_FLOOR_NIGHTMARERAID9.." "..GetSpellInfo(133137),		-- Feralas Active
+		[-133] = DUNGEON_FLOOR_NIGHTMARERAID8.." "..GetSpellInfo(78741),		-- Duskwood Activated
+	-- Garrisons Invasions TODO: what levels?
 		[-136] = GARRISON_LANDING_INVASION,										-- Garrison Invasion
 	-- Class Trial
 		[-137] = string.format(SPELLBOOK_AVAILABLE_AT, 90),						-- Level 90
@@ -1451,6 +1478,11 @@ app.L = {
 		[-154] = string.format(SPELLBOOK_AVAILABLE_AT, 48),						-- Level 48
 		[-155] = string.format(SPELLBOOK_AVAILABLE_AT, 50).." ".."(Boost)",		-- Level 50 (Boost)
 		[-156] = string.format(SPELLBOOK_AVAILABLE_AT, 60),						-- Level 60
+	-- Druid Feral Druid Hidden Artifact Appearance
+		[-157] = DUNGEON_FLOOR_NIGHTMARERAID7.." "..GetSpellInfo(78741),		-- The Hinterlands Activated
+		[-158] = DUNGEON_FLOOR_NIGHTMARERAID9.." "..GetSpellInfo(78741),		-- Feralas Activated
+	-- Class Hall /Artifact
+		[-159] = "Event Roll",													-- Daily Dreamway Event Roll
 	-- Junkboxes
 		[-165] = GetItemSubClassInfo(13,1),										-- Junkboxes
 	-- Emissary
@@ -1772,6 +1804,19 @@ app.L = {
 		[-987] = select(2, GetAchievementInfo(14493)),							-- The Upper Reaches
 	-- Sets
 		[-1000] = WARDROBE_SETS, 												-- Sets
+	-- Warrior order hall lore items
+		[-2200] = "Great Odyn and the Firelord",
+		[-2201] = "The Wanderer and the Serpent",
+		[-2202] = "Halls of Gold and Glory",
+		[-2203] = "The Keeper's Eye",
+		[-2204] = "First of the Val'kyr",
+		[-2205] = "The Sealing of the Halls of Valor",
+		[-2206] = "His Name Is Dragonblood",
+		[-2207] = "The Last Words of Asgrim the Dreadkiller",
+		[-2208] = "A Shieldmaiden's Creed",
+		[-2209] = "The Prophecy of Rythas the Oracle",
+		[-2210] = "The Lessons of the Blacklist",
+		[-2211] = "Volund's Folly",
 	-- T3
 		[-3179] = string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 3),	-- Tier 3 Sets
 	-- Island Expeditions

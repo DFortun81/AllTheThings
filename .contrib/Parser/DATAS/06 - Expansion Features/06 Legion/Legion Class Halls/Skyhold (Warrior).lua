@@ -34,46 +34,46 @@ _.ExpansionFeatures =
 						i(144436, {	-- Lost Legend of Odyn
 							["description"] = "This item can drop off of any Vrykul in the Broken Isles as a Warrior (any spec).",
 							["g"] = {
-								q(46223, {	-- Great Odyn and the Firelord
-									["name"] = "Great Odyn and the Firelord",
+								n(-2200, {	-- Great Odyn and the Firelord
+									["questID"] = 46223,
 								}),
-								q(46224, {	-- The Wanderer and the Serpent
-									["name"] = "The Wanderer and the Serpent",
+								n(-2201, {	-- The Wanderer and the Serpent
+									["questID"] = 46224,
 								}),
-								q(46225, {	-- Halls of Gold and Glory
-									["name"] = "Halls of Gold and Glory",
+								n(-2202, {	-- Halls of Gold and Glory
+									["questID"] = 46225,
 								}),
-								q(46226, {	-- The Keeper's Eye
-									["name"] = "The Keeper's Eye",
+								n(-2203, {	-- The Keeper's Eye
+									["questID"] = 46226,
 								}),
-								q(46227, {	-- First of the Val'kyr
-									["name"] = "First of the Val'kyr",
+								n(-2204, {	-- First of the Val'kyr
+									["questID"] = 46227,
 								}),
-								q(46228, {	-- The Sealing of the Halls of Valor
-									["name"] = "The Sealing of the Halls of Valor",
+								n(-2205, {	-- The Sealing of the Halls of Valor
+									["questID"] = 46228,
 								}),
 							}
 						}),
 						i(144437, {	-- Lost Legend of the Valarjar
 							["description"] = "This item can drop off of any Vrykul in the Broken Isles as a Warrior. (any spec)",
 							["g"] = {
-								q(46229, {	-- His Name Is Dragonblood
-									["name"] = "His Name Is Dragonblood",
+								n(-2206, {	-- His Name Is Dragonblood
+									["questID"] = 46229,
 								}),
-								q(46230, {	-- The Last Words of Asgrim the Dreadkiller
-									["name"] = "The Last Words of Asgrim the Dreadkiller",
+								n(-2207, {	-- The Last Words of Asgrim the Dreadkiller
+									["questID"] = 46230,
 								}),
-								q(46231, {	-- A Shieldmaiden's Creed
-									["name"] = "A Shieldmaiden's Creed",
+								n(-2208, {	-- A Shieldmaiden's Creed
+									["questID"] = 46231,
 								}),
-								q(46232, {	-- The Prophecy of Rythas the Oracle
-									["name"] = "The Prophecy of Rythas the Oracle",
+								n(-2209, {	-- The Prophecy of Rythas the Oracle
+									["questID"] = 46232,
 								}),
-								q(46233, {	-- The Lessons of the Blackfist
-									["name"] = "The Lessons of the Blackfist",
+								n(-2210, {	-- The Lessons of the Blackfist
+									["questID"] = 46233,
 								}),
-								q(46234, {	-- Volund's Folly
-									["name"] = "Volund's Folly",
+								n(-2211, {	-- Volund's Folly
+									["questID"] = 46234,
 								}),
 							}
 						}),

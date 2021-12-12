@@ -766,7 +766,6 @@ for key,value in pairs({
 	-- Secret Header
 		[-806] = "Zeitvergoldung",									-- Waist of Time
 	-- Chests
-		[-850] = "Mechanisierte Truhe",								-- Mechanized Chest
 		[-851] = "Truhe des Schwarzen Imperiums",					-- Black Empire Cache
 	-- Heart of Azeroth
 		--TODO: [-853] = "All Roles",								-- All Roles

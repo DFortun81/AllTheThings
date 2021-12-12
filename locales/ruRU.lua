@@ -748,7 +748,6 @@ for key,value in pairs({
 	-- Secret Header
 		[-806] = "Часовой пояс",									-- Waist of Time
 	-- Chests
-		[-850] = "Механизированный сундук",							-- Mechanized Chest
 		[-851] = "Тайник Темной Империи",							-- Black Empire Cache
 	-- Heart of Azeroth
 		[-853] = "Все роли",										-- All Roles

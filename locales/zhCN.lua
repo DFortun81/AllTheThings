@@ -817,7 +817,6 @@ for key,value in pairs({
 	-- Secret Header
 		[-806] = "钟示贤德腰带",												-- Waist of Time
 	-- Chests
-		[-850] = "机械化的宝箱",										-- Mechanized Chest
 		[-851] = "Black Empire Cache",								-- Black Empire Cache
 	-- Heart of Azeroth
 		[-853] = "全部角色",											-- All Roles
