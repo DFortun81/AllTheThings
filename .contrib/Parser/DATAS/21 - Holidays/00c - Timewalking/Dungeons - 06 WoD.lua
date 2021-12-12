@@ -8,7 +8,7 @@ local SKY = -145;
 local BLOOM = -146;
 local UBRS = -147;
 
-root("Holidays", d(24, {  -- Timewalking
+root("Holidays", d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
 	tier(WOD_TIER, {
 		n(-23, {
 			["u"] = TIMEWALKING,
@@ -633,5 +633,5 @@ root("Holidays", d(24, {  -- Timewalking
 			}),
 		}),
 	}),
-}));
+})));
 -- #endif

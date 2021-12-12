@@ -7,8 +7,7 @@ _.ExpansionFeatures =
 	tier(BFA_TIER, {
 		n(-10057, {	-- War Effort
 			n(-233, {	-- War Front: The Battle for Stromgarde
-				n(-227, {	-- Victory [Tier 1]
-					["icon"] = "Interface\\Icons\\achievement_bg_abshutout",
+				n(REWARDS, {
 					["description"] = "These are obtained by winning the warfront and can be awarded multiple times a week.",
 					["modID"] = 3,
 					["groups"] = {

@@ -1005,8 +1005,6 @@ app.L = {
 		[-220] = "Interface\\MINIMAP\\TRACKING\\Class",										-- Class
 	-- Bonus Objectives
 		[-221] = 237387,																	-- Bonus Objectives
-	-- Misc Victory (Used in many Places)
-		[-227] = "Interface\\ICONS\\spell_holy_divinepurpose",								-- Victory
 	-- Flight Path
 		[-228] = app.asset("Category_FlightPaths"),											-- Flight Paths
 	-- Warfronts
@@ -1528,8 +1526,6 @@ app.L = {
 		[-220] = CLASS,															-- Class
 	-- Bonus Objectives
 		[-221] = TRACKER_HEADER_BONUS_OBJECTIVES,								-- Bonus Objectives
-	-- Misc Victory (Used in many places)
-		[-227] = GetSpellInfo(109382),											-- Victory
 	-- Flight Path
 		[-228] = GetSpellInfo(218950),											-- Flight Path
 	-- Warfronts
