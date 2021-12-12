@@ -1359,7 +1359,7 @@ _.NeverImplemented =
 			i(177166),	-- Lucky Braid
 		}),
 	}),
-	n(-494, {	-- Misc
+	filter(50, {	-- Misc
 		filter(113, {	-- Bags
 			i(130943),	-- Reusable Tote Bag
 			i(166699),	-- Desert Rucksack
@@ -1367,14 +1367,14 @@ _.NeverImplemented =
 			i(38307),	-- Crafty's Bottomless Inscription Bag
 			i(166700),	-- Durable Sailor's Duffel
 		}),
-		f(55, {		-- Consumables
+		filter(55, {		-- Consumables
 			i(44871),	-- Greater Inscription of the Axe
 			i(44872),	-- Greater Inscription of the Crag
 			i(44873),	-- Greater Inscription of the Pinnacle
 			i(44874),	-- Greater Inscription of the Storm
 			i(45705),	-- Argent Tournament Invitation
 		}),
-		n(-600, {	-- Quest Items
+		filter(104, {	-- Quest Items
 			i(157772),	-- A Royal Concern
 			i(157775),	-- A Royal Concern
 			i(142362),	-- zzz old fel-etched bone
@@ -3090,7 +3090,7 @@ _.NeverImplemented =
 			["timeline"] = { "created 8.0.1.26871" },
 		}),
 	}),
-	n(-173, {	-- Timewalking
+	d(24, {	-- Timewalking
 		-- Possible TW Gear (not in journal)
 		i(150450),	-- Nether Shadow Tunic
 		i(150448),	-- Pauldrons of Abyssal Fury

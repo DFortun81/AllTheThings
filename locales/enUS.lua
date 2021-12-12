@@ -913,8 +913,6 @@ app.L = {
 		[-60] = "Interface\\Icons\\inv_thanksgiving_turkey",								-- Pilgrim's Bounty
 		[-61] = "Interface\\Icons\\achievement_worldevent_merrymaker",						-- The Feast of Winter Veil
 		[-62] = "Interface\\Icons\\inv_misc_fish_06",										-- Stranglethorn Fishing Extravaganza
-	-- Emerald Nightmare
-		[-68] = "Interface\\Icons\\spell_arcane_portalshattrath",							-- The Emerald Dream
 	-- Maraudon
 		[-69] = "Interface\\Icons\\spell_arcane_portalironforge",							-- Maraudon Purple
 		[-70] = "Interface\\Icons\\INV_Jewelcrafting_ArgusGemUncut_Orange_MiscIcons",		-- Orange
@@ -944,11 +942,6 @@ app.L = {
 	-- Garrisons
 		[-99] = "Interface\\Icons\\inv_garrison_resource",									-- Buildings
 		[-101] = "Interface\\Icons\\Achievement_GarrisonFollower_LevelUp",					-- Followers
-	-- Druid Feral Druid Hidden Artifact Appearance
-		[-130] = "Interface\\Icons\\achievement_zone_duskwood",								-- Duskwood Active
-		[-131] = "Interface\\Icons\\achievement_zone_hinterlands_01",						-- The Hinterlands Active
-		[-132] = "Interface\\Icons\\achievement_zone_feralas",								-- Feralas Active
-		[-133] = "Interface\\Icons\\achievement_zone_duskwood",								-- Duskwood Activated
 	-- Garrisons Invasions TODO: what levels?
 		[-136] = "Interface\\Icons\\achievement_bg_defendxtowers_av",						-- Garrison Invasion
 	-- Class Trial
@@ -976,11 +969,6 @@ app.L = {
 		[-154] = "Interface\\Icons\\ability_bossmagistrix_timewarp1",						-- Level 48
 		[-155] = 236566,																	-- Level 50 (Boost)
 		[-156] = 236567,																	-- Level 60
-	-- Druid Feral Druid Hidden Artifact Appearance
-		[-157] = "Interface\\Icons\\achievement_zone_hinterlands_01",						-- The Hinterlands Activated
-		[-158] = "Interface\\Icons\\achievement_zone_feralas",								-- Feralas Activated
-	-- Class Hall /Artifact
-		-- [-159] = Uses different icons													-- Daily Dreamway Event Roll
 	-- Junkboxes
 		[-165] = "Interface\\Icons\\inv_box_01",											-- Junkboxes
 	-- Emissary
@@ -988,7 +976,6 @@ app.L = {
 	-- Legion Artifact Questline
 		[-170] = "Interface\\Icons\\spell_shaman_maelstromweapon",							-- Balance of Power
 	-- Events
-		[-173] = "Interface\\Icons\\spell_holy_borrowedtime",								-- Timewalking
 		[-176] = 3753381,																	-- Weekly Holidays
 	-- Item Sets
 		[-211] = 1530081,																	-- New Characters
@@ -1037,8 +1024,6 @@ app.L = {
 		[-321] = "Interface\\Icons\\inv_shoulder_05",										-- Shoulder
 		[-322] = "Interface\\Icons\\inv_misc_cape_11",										-- Back
 		[-323] = "Interface\\Icons\\inv_chest_chain",										-- Chest
-		[-324] = "Interface\\Icons\\inv_shirt_grey_01",										-- Shirt
-		[-325] = "Interface\\Icons\\inv_misc_tournaments_tabard_gnome",						-- Tabard
 		[-326] = "Interface\\Icons\\inv_bracer_07",											-- Wrist
 		[-327] = "Interface\\Icons\\Inv_gauntlets_24",										-- Hands
 		[-328] = "Interface\\Icons\\inv_belt_24",											-- Waist
@@ -1097,10 +1082,9 @@ app.L = {
 		[-491] = "Interface\\Icons\\inv_misc_ticket_tarot_rogue",							-- Tarot Cards
 	-- Misc
 		[-493] = "Interface\\Icons\\Inv_icon_mission_complete_order",						-- Temporary Header WoD Mission Loot
-		[-494] = "Interface\\Icons\\Ability_Shaman_Ascendance",								-- Miscellaneous
 	-- Class Hall Demon Hunter
 		[-498] = "Interface\\Icons\\inv_offhand_hyjal_d_01",								-- Twisting Nether (Demon Hunter Order Hall advancement)
-		-- Mole Machine
+	-- Mole Machine
 		[-517] = "Interface\\Icons\\ability_racial_molemachine",							-- Mole Machine
 	-- Blizzard Events and Anniversaries
 		[-519] = app.asset("Category_Event"),												-- World Events
@@ -1138,8 +1122,6 @@ app.L = {
 		[-578] = app.asset("Expansion_CLASSIC"),											-- World of Warcraft 15th Anniversary
 		[-579] = "Interface\\Icons\\achievement_dungeon_outland_dungeonmaster",				-- Dark Portal Pass
 		[-580] = "Interface\\Icons\\inv_misc_mdi_banner01",									-- The Great Push: Season 2
-	-- Quest Items - Used in NYI
-		--[-600] = Doesnt need icon															-- Quest Items
 	-- PvP Headers
 		[-650] = 1455894,																	-- Rated Battlegrounds
 		--[-651] = "Interface\\Worldmap\\GlowSkull_64Grey",									-- Not used yet. Future PvP Icons if needed
@@ -1216,8 +1198,7 @@ app.L = {
 		[-808] = 2998185,																	-- Bound Shadehound
 	-- More Secrets are likely to come dont use IDs here
 	-- Chests
-		[-850] = "Interface\\Icons\\INV_Eng_Crate2",										-- Mechanized Chest
-		[-851] = "Interface\\Icons\\INV_Eng_Crate2",										-- Irontide Lockbox
+		[-851] = "Interface\\Icons\\INV_Eng_Crate2",										-- Black Empire Cache (Is a placeholder since no ObjectID are assigned to chests!)
 	-- Heart of Azeroth
 		[-852] = app.asset("Category_AzeriteEssences"),										-- Azerite Essences
 		[-853] = "Interface\\Icons\\inv_azeritedebuff",										-- All Roles
@@ -1284,19 +1265,6 @@ app.L = {
 		--
 	-- Sets
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",						-- Sets
-	-- Warrior order hall lore items
-		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
-		[-2201] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
-		[-2202] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
-		[-2203] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
-		[-2204] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
-		[-2205] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
-		[-2206] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
-		[-2207] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
-		[-2208] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
-		[-2209] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
-		[-2210] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
-		[-2211] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
 	-- T3
 		[-3179] = "Interface\\Icons\\achievement_dungeon_naxxramas",						-- Tier 3 Sets
 	-- Island Expeditions
@@ -1353,13 +1321,10 @@ app.L = {
 		[-9965] = "Interface\\Icons\\achievement_level_110",						-- Class Hall
 		[-9966] = 1041860,															-- Dreanor Garrison
 		[-9983] = "Interface\\Icons\\Paladin_Protection",							-- Honor
-		[-10044] = app.asset("Category_D&R"),										-- Raids
-		[-10045] = "Interface\\Icons\\Paladin_Protection",							-- Currencies
 		[-10048] = "Interface\\Icons\\buff_feltreasures",							-- Mage Tower
 		[-10050] = "Interface\\Icons\\buff_epichunter",								-- Nether Disruptor
 		[-10057] = "Interface\\Icons\\Ability_Warrior_OffensiveStance",				-- War Effort
 		[-10058] = "Interface\\Icons\\Paladin_Protection",							-- World
-		[-10059] = "Interface\\Icons\\pandarenracial_innerpeace",					-- Pandaria Scenarios
 		[-10061] = "Interface\\Icons\\achievement_faction_celestials",				-- The Four Celestials
 		[-10067] = app.asset("Weapon_Type_Artifact"),								-- Artifacts
 	-- 8.3
@@ -1435,7 +1400,6 @@ app.L = {
 		[-61] = GetSpellInfo(21953),											-- The Feast of Winter Veil
 		[-62] = "Stranglethorn Fishing Extravaganza",							-- Stranglethorn Fishing Extravaganza
 
-		[-68] = DUNGEON_FLOOR_NIGHTMARERAID13,									-- The Emerald Dream
 		[-69] = GetSpellInfo(21127),											-- Maraudon Portal
 		[-70] = DUNGEON_FLOOR_DESOLACE22.." - "..GetSpellInfo(251097),			-- Foulspore Cavern [Orange]
 		[-71] = DUNGEON_FLOOR_DESOLACE21.." - "..GetSpellInfo(251095),			-- The Wicked Grotto [Purple]
@@ -1461,12 +1425,6 @@ app.L = {
 	-- Garrisons
 		[-99] = "Buildings",
 		[-101] = GARRISON_FOLLOWERS,											-- Followers
-	-- Druid Feral Druid Hidden Artifact Appearance
-		[-130] = DUNGEON_FLOOR_NIGHTMARERAID8.." "..GetSpellInfo(133137),		-- Duskwood Active
-		[-131] = DUNGEON_FLOOR_NIGHTMARERAID7.." "..GetSpellInfo(133137),		-- The Hinterlands Active
-		[-132] = DUNGEON_FLOOR_NIGHTMARERAID9.." "..GetSpellInfo(133137),		-- Feralas Active
-		[-133] = DUNGEON_FLOOR_NIGHTMARERAID8.." "..GetSpellInfo(78741),		-- Duskwood Activated
-	-- Garrisons Invasions TODO: what levels?
 		[-136] = GARRISON_LANDING_INVASION,										-- Garrison Invasion
 	-- Class Trial
 		[-137] = string.format(SPELLBOOK_AVAILABLE_AT, 90),						-- Level 90
@@ -1493,15 +1451,6 @@ app.L = {
 		[-154] = string.format(SPELLBOOK_AVAILABLE_AT, 48),						-- Level 48
 		[-155] = string.format(SPELLBOOK_AVAILABLE_AT, 50).." ".."(Boost)",		-- Level 50 (Boost)
 		[-156] = string.format(SPELLBOOK_AVAILABLE_AT, 60),						-- Level 60
-	-- Druid Feral Druid Hidden Artifact Appearance
-		[-157] = DUNGEON_FLOOR_NIGHTMARERAID7.." "..GetSpellInfo(78741),		-- The Hinterlands Activated
-		[-158] = DUNGEON_FLOOR_NIGHTMARERAID9.." "..GetSpellInfo(78741),		-- Feralas Activated
-	-- Class Hall /Artifact
-		[-159] = "Event Roll",													-- Daily Dreamway Event Roll
-	-- Collections
-		[-160] = TUTORIAL_TITLE53,												-- Mounts
-		[-161] = TOY_BOX,														-- Toy Box
-		[-162] = PETS,															-- Pets
 	-- Junkboxes
 		[-165] = GetItemSubClassInfo(13,1),										-- Junkboxes
 	-- Emissary
@@ -1509,7 +1458,6 @@ app.L = {
 	-- Legion Artifact Questline
 		[-170] = GetSpellInfo(41341),											-- Balance of Power
 	-- Events
-		[-173] = PLAYER_DIFFICULTY_TIMEWALKER,									-- Timewalking
 		[-176] = CALENDAR_FILTER_WEEKLY_HOLIDAYS,								-- Weekly Holidays
 	-- Item Sets
 		[-211] = NEW.." "..CHARACTER,											-- New Character
@@ -1558,8 +1506,6 @@ app.L = {
 		[-321] = INVTYPE_SHOULDER,												-- Shoulder
 		[-322] = INVTYPE_CLOAK,													-- Back
 		[-323] = INVTYPE_CHEST,													-- Chest
-		[-324] = INVTYPE_BODY,													-- Shirt
-		[-325] = INVTYPE_TABARD,												-- Tabard
 		[-326] = INVTYPE_WRIST,													-- Wrist
 		[-327] = INVTYPE_HAND,													-- Hands
 		[-328] = INVTYPE_WAIST,													-- Waist
@@ -1621,7 +1567,6 @@ app.L = {
 		[-491] = "Tarot Cards",													-- Tarot Cards
 	-- Misc
 		[-493] = "Broken Mission Loot",											-- Temporary Header for WoD Mission Loot.
-		[-494] = MAC_OPTIONS_MISC, 												-- Miscellaneous
 	-- Class Hall Demon Hunter
 		[-498] = C_Map.GetAreaInfo(7576),										-- Twisting Nether (Demon Hunter Order Hall advancement)
 	-- Mole Machine
@@ -1662,8 +1607,6 @@ app.L = {
 		[-578] = select(2, GetAchievementInfo(13917)),							-- WoW's 15th Anniversary
 		[-579] = "Dark Portal Pass",											-- Dark Portal Pass
 		[-580] = "The Great Push: Season 2",									-- The Great Push: Season 2
-	--
-		[-600] = AUCTION_CATEGORY_QUEST_ITEMS,									-- Quest Items
 	-- PvP Header
 		-- Special Season Tags
 		--[-650] = "Rated Battleground",										-- Listed under Cata PvP Seasons
@@ -1748,8 +1691,7 @@ app.L = {
 		[-808] = GetSpellInfo(344577),											-- Bound Shadehound
 	-- More Secrets are likely to come dont use IDs here
 	-- Chests
-		[-850] = "Mechanized Chest",											-- Mechanized Chest
-		[-851] = "Black Empire Cache",											-- Black Empire Cache
+		[-851] = "Black Empire Cache",											-- Black Empire Cache (Is a placeholder since no ObjectID are assigned to chests!)
 	-- Heart of Azeroth
 		[-852] = SPLASH_BATTLEFORAZEROTH_8_2_0_FEATURE2_TITLE,					-- Heart of Azeroth Essences
 		[-853] = "All Roles",													-- All Roles
@@ -1830,19 +1772,6 @@ app.L = {
 		[-987] = select(2, GetAchievementInfo(14493)),							-- The Upper Reaches
 	-- Sets
 		[-1000] = WARDROBE_SETS, 												-- Sets
-	-- Warrior order hall lore items
-		[-2200] = "Great Odyn and the Firelord",
-		[-2201] = "The Wanderer and the Serpent",
-		[-2202] = "Halls of Gold and Glory",
-		[-2203] = "The Keeper's Eye",
-		[-2204] = "First of the Val'kyr",
-		[-2205] = "The Sealing of the Halls of Valor",
-		[-2206] = "His Name Is Dragonblood",
-		[-2207] = "The Last Words of Asgrim the Dreadkiller",
-		[-2208] = "A Shieldmaiden's Creed",
-		[-2209] = "The Prophecy of Rythas the Oracle",
-		[-2210] = "The Lessons of the Blacklist",
-		[-2211] = "Volund's Folly",
 	-- T3
 		[-3179] = string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 3),	-- Tier 3 Sets
 	-- Island Expeditions
@@ -1907,13 +1836,10 @@ app.L = {
 		[-9965] = select(1,GetCategoryInfo(15304)),								-- Class Hall
 		[-9966] = select(1,GetCategoryInfo(15303)),								-- Draenor Garrison
 		[-9983] = HONOR,														-- Honor
-		[-10044] = RAIDS,														-- Raids
-		[-10045] = select(1,GetCategoryInfo(15280)),							-- Currencies
 		[-10048] = BROKENSHORE_BUILDING_MAGETOWER,								-- Mage Tower
 		[-10050] = BROKENSHORE_BUILDING_NETHERDISRUPTOR,						-- Nether Disruptor
 		[-10057] = select(1,GetCategoryInfo(15308)),							-- War Effort
 		[-10058] = WORLD,														-- World
-		[-10059] = select(1,GetCategoryInfo(15302)),							-- Pandaria Scenarios
 		[-10061] = select(2,GetAchievementInfo(7333)),							-- The Four Celestials
 		[-10066] = BATTLE_PET_BREED_QUALITY6,									-- "Legendary";
 		[-10067] = ITEM_QUALITY6_DESC, 											-- Artifact

@@ -6,7 +6,7 @@ _.Instances = {
 	--	putting description + coords/cost on these because not all the information shows up in all places.  you can't see the coords or cost from the currency window, just the description, but you can plot coords if you pop the currencies out.
 	-- i didn't put cost on the ones that have choices because i didn't want it to seem like you needed all the different currencies/items to purchase seals, and i didn't put cost on warforged seals because you exchange 50 for 3, which we can't communicate clearly in anything other than a description
 	tier(MOP_TIER, {
-		n(-10045, {	-- Currency
+		n(REWARDS, {
 			["g"] = {
 				currency(697, {	-- Elder Charm of Good Fortune
 					["description"] = "Purchased from Commander Lo Ping in Townlong Steppes |cffffffff(37.8, 64.6)|r for 20 Lesser Charms of Good Fortune.  You also have a chance to get them from killing rares or opening Troves of the Thunder King on the Isle of Thunder.\n",

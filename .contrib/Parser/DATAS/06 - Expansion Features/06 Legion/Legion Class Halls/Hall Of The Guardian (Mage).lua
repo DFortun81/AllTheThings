@@ -121,12 +121,12 @@ _.ExpansionFeatures =
 							VALSHARAH,
 						},
 						["g"] = {
-							n(-159, {	-- Daily Event Roll
+							q(44384, {	-- Daily Portal Event Roll
 								["isDaily"] = true,
 								["isBreadcrumb"] = true,
-								["questID"] = 44384,	-- "Daily Portal Event Roll" on WoWHead
 								["description"] = "If this quest has a checkmark next to it, then check below to see if you are eligible for the scenario portal. If not, that means that you should come back tomorrow.",
 								["icon"] = "Interface\\Icons\\Achievement_Zone_Frostfire",
+								["name"] = "Daily Portal Event Roll",
 							}),
 							n(113513, {	-- Asher <Fury of Frostfire>
 								["description"] = "If this quest has a checkmark next to it, then that means the scenario portal is active. He only appears in a special phase in Frostfire Ridge upon taking the portal.",

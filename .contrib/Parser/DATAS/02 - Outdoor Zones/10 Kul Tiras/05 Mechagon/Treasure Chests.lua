@@ -39,7 +39,46 @@ _.Zones =
 						}),
 					}
 				}),
-				n(-850, {	-- Mechanized Chest
+				o_repeated({	-- Mechanized Chest
+					-- Contains
+					i(169850, {	-- Azeroth Mini Pack Mini Pack: Mechagon
+						i(169844, {	-- Azeroth Mini: Overspark
+							crit(4, {	-- Overspark
+								["achievementID"] = 13708,	-- Most Minis Wins
+							}),
+						}),
+						i(169852, {	-- Azeroth Mini: Blastatron
+							crit(12, {	-- Blastatron
+								["achievementID"] = 13708,	-- Most Minis Wins
+							}),
+						}),
+						i(169851, {	-- Azeroth Mini: Cogstar
+							crit(10, {	-- Cogstar
+								["achievementID"] = 13708,	-- Most Minis Wins
+							}),
+						}),
+						i(169845, {	-- Azeroth Mini: HK-8
+							crit(11, {	-- HK-8
+								["achievementID"] = 13708,	-- Most Minis Wins
+							}),
+						}),
+						i(169846, {	-- Azeroth Mini: King Mechagon
+							crit(13, {	-- King Mechagon
+								["achievementID"] = 13708,	-- Most Minis Wins
+							}),
+						}),
+					}),
+					i(168832),	-- Galvanic Oscillator
+					i(168327),	-- Chain Ignitercoil
+					i(167790, {	-- Paint Vial: Fireball Red
+						["questID"] = 55451,	-- Paint Vial: Fireball Red
+						["g"] = {
+							crit(6, {	-- Fireball Red
+								["achievementID"] = 13513,	-- Available in Eight Colors
+							}),
+						},
+					}),
+					-- Objects
 					o(325659, {	-- Mechanized Chest
 						["questID"] = 55547,
 						["isDaily"] = true,
@@ -152,43 +191,6 @@ _.Zones =
 							{ 20.6, 77.0, MECHAGON },
 							{ 21.7, 83.0, MECHAGON },
 							{ 12.2, 85.8, MECHAGON },
-						},
-					}),
-					i(169850, {	-- Azeroth Mini Pack Mini Pack: Mechagon
-						i(169844, {	-- Azeroth Mini: Overspark
-							crit(4, {	-- Overspark
-								["achievementID"] = 13708,	-- Most Minis Wins
-							}),
-						}),
-						i(169852, {	-- Azeroth Mini: Blastatron
-							crit(12, {	-- Blastatron
-								["achievementID"] = 13708,	-- Most Minis Wins
-							}),
-						}),
-						i(169851, {	-- Azeroth Mini: Cogstar
-							crit(10, {	-- Cogstar
-								["achievementID"] = 13708,	-- Most Minis Wins
-							}),
-						}),
-						i(169845, {	-- Azeroth Mini: HK-8
-							crit(11, {	-- HK-8
-								["achievementID"] = 13708,	-- Most Minis Wins
-							}),
-						}),
-						i(169846, {	-- Azeroth Mini: King Mechagon
-							crit(13, {	-- King Mechagon
-								["achievementID"] = 13708,	-- Most Minis Wins
-							}),
-						}),
-					}),
-					i(168832),	-- Galvanic Oscillator
-					i(168327),	-- Chain Ignitercoil
-					i(167790, {	-- Paint Vial: Fireball Red
-						["questID"] = 55451,	-- Paint Vial: Fireball Red
-						["g"] = {
-							crit(6, {	-- Fireball Red
-								["achievementID"] = 13513,	-- Available in Eight Colors
-							}),
 						},
 					}),
 				}),
