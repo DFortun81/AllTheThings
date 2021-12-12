@@ -15578,6 +15578,16 @@ function app:GetDataCache()
 			tinsert(g, db);
 		end
 
+		-- Flight Paths (Dynamic)
+		-- TODO: ugh re-do this again
+		local flightPathsCategory = {};
+		flightPathsCategory.g = {};
+		flightPathsCategory.fps = {};
+		flightPathsCategory.expanded = false;
+		flightPathsCategory.icon = app.asset("Category_FlightPaths");
+		flightPathsCategory.text = Colorize(L["FLIGHT_PATHS"], "ff7f40bf");
+		tinsert(g, flightPathsCategory);
+
 		-- Dynamic Categories
 		if dynamicSetting > 0 then
 
@@ -15598,15 +15608,6 @@ function app:GetDataCache()
 			factionsCategory.text = L["FACTIONS"];
 			tinsert(g, factionsCategory);
 			]]--
-
-			-- Flight Paths (Dynamic)
-			local flightPathsCategory = {};
-			flightPathsCategory.g = {};
-			flightPathsCategory.fps = {};
-			flightPathsCategory.expanded = false;
-			flightPathsCategory.icon = app.asset("Category_FlightPaths");
-			flightPathsCategory.text = Colorize(L["FLIGHT_PATHS"], "ff7f40bf");
-			tinsert(g, flightPathsCategory);
 
 			-- Illusions - Dynamic
 			db = {};
@@ -16286,7 +16287,7 @@ function app:GetDataCache()
 		]]--
 
 		-- Update Flight Path data.
-		if flightPathsCategory then
+		if flightPathsCategory and dynamicSetting > 0 then
 			flightPathsCategory.OnUpdate = function(self)
 				-- no longer need to run this logic once the dynamic group has been filled
 				self.OnUpdate = nil;
