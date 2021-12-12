@@ -15357,9 +15357,9 @@ app.DynamicCategory_Nested = function(self)
 end
 
 function app:GetDataCache()
+	local dynamicSetting = app.Settings:Get("Dynamic:Style");
 	-- Attaches a dynamic OnUpdate to the category which auto-populates itself using the provided field and optional value when first receiving an Update to itself
 	local function DynamicCategory(group, field, value)
-		local dynamicSetting = app.Settings:Get("Dynamic:Style");
 		if dynamicSetting > 0 then
 			-- mark the top group as dynamic for the field which it used (so popouts under the dynamic header are considered unique from other dynamic popouts)
 			group.dynamic = field;
@@ -15578,106 +15578,61 @@ function app:GetDataCache()
 			tinsert(g, db);
 		end
 
-		-- Battle Pets - Dynamic
-		local db = {};
-		db.text = AUCTION_CATEGORY_BATTLE_PETS;
-		db.icon = app.asset("Category_PetJournal");
-		tinsert(g, DynamicCategory(db, "speciesID"));
-		-- Pet Journal
-		-- if app.Categories.BattlePets then
-		-- 	db = {};
-		-- 	db.g = app.Categories.BattlePets;
-		-- 	db.f = 101;
-		-- 	db.text = AUCTION_CATEGORY_BATTLE_PETS;
-		-- 	db.icon = app.asset("Category_PetJournal");
-		-- 	-- remove the manually-built pet journal for now
-		-- 	for _,o in ipairs(db.g) do
-		-- 		-- the dynamic pet journal listing
-		-- 		if o.headerID == -797 then
-		-- 			o.g = nil;
-		-- 			o.sourceIgnored = true;
-		-- 			-- o = DynamicCategory(o, "speciesID");
-		-- 			break;
-		-- 		end
-		-- 	end
-		-- end
+		-- Dynamic Categories
+		if dynamicSetting > 0 then
 
-		-- Factions (Dynamic)
-		--[[
-		-- TODO: Not right now, we have a section already. Refactor that section and use this instead.
-		local factionsCategory = {};
-		factionsCategory.g = {};
-		factionsCategory.factions = {};
-		factionsCategory.expanded = false;
-		factionsCategory.icon = app.asset("Category_Factions");
-		factionsCategory.text = L["FACTIONS"];
-		tinsert(g, factionsCategory);
-		]]--
+			-- Battle Pets - Dynamic
+			local db = {};
+			db.text = AUCTION_CATEGORY_BATTLE_PETS;
+			db.icon = app.asset("Category_PetJournal");
+			tinsert(g, DynamicCategory(db, "speciesID"));
 
-		-- Flight Paths (Dynamic)
-		local flightPathsCategory = {};
-		flightPathsCategory.g = {};
-		flightPathsCategory.fps = {};
-		flightPathsCategory.expanded = false;
-		flightPathsCategory.icon = app.asset("Category_FlightPaths");
-		flightPathsCategory.text = Colorize(L["FLIGHT_PATHS"], "ff7f40bf");
-		tinsert(g, flightPathsCategory);
+			-- Factions (Dynamic)
+			--[[
+			-- TODO: Not right now, we have a section already. Refactor that section and use this instead.
+			local factionsCategory = {};
+			factionsCategory.g = {};
+			factionsCategory.factions = {};
+			factionsCategory.expanded = false;
+			factionsCategory.icon = app.asset("Category_Factions");
+			factionsCategory.text = L["FACTIONS"];
+			tinsert(g, factionsCategory);
+			]]--
 
-		-- Illusions - Dynamic
-		db = {};
-		db.text = L["FILTER_ID_TYPES"][103];
-		db.icon = 132853;
-		tinsert(g, DynamicCategory(db, "illusionID"));
+			-- Flight Paths (Dynamic)
+			local flightPathsCategory = {};
+			flightPathsCategory.g = {};
+			flightPathsCategory.fps = {};
+			flightPathsCategory.expanded = false;
+			flightPathsCategory.icon = app.asset("Category_FlightPaths");
+			flightPathsCategory.text = Colorize(L["FLIGHT_PATHS"], "ff7f40bf");
+			tinsert(g, flightPathsCategory);
 
-		-- Mounts
-		-- if app.Categories.Mounts then
-		-- 	db = {};
-		-- 	db.g = app.Categories.Mounts;
-		-- 	db.expanded = false;
-		-- 	db.text = MOUNTS;
-		-- 	db.icon = app.asset("Category_Mounts");
-		-- 	db.sourceIgnored = true;
-		-- 	tinsert(g, db);
-		-- end
-		-- Mounts - Dynamic
-		db = {};
-		db.text = MOUNTS;
-		db.icon = app.asset("Category_Mounts");
-		tinsert(g, DynamicCategory(db, "mountID"));
+			-- Illusions - Dynamic
+			db = {};
+			db.text = L["FILTER_ID_TYPES"][103];
+			db.icon = 132853;
+			tinsert(g, DynamicCategory(db, "illusionID"));
 
-		-- Titles
-		-- if app.Categories.Titles then
-		-- 	db = {};
-		-- 	db.g = app.Categories.Titles;
-		-- 	db.icon = app.asset("Category_Titles");
-		-- 	db.expanded = false;
-		-- 	db.text = "Titles";
-		-- 	db.sourceIgnored = true;
-		-- 	tinsert(g, db);
-		-- end
-		-- Titles - Dynamic
-		db = {};
-		db.icon = app.asset("Category_Titles");
-		db.text = PAPERDOLL_SIDEBAR_TITLES;
-		tinsert(g, DynamicCategory(db, "titleID"));
+			-- Mounts - Dynamic
+			db = {};
+			db.text = MOUNTS;
+			db.icon = app.asset("Category_Mounts");
+			tinsert(g, DynamicCategory(db, "mountID"));
 
-		-- Toys
-		-- if app.Categories.Toys then
-		-- 	db = {};
-		-- 	-- db.g = app.Categories.Toys;
-		-- 	db.icon = app.asset("Category_ToyBox");
-		-- 	db.expanded = false;
-		-- 	db.f = 102;
-		-- 	db.text = TOY_BOX;
-		-- 	db.sourceIgnored = true;
-		-- 	tinsert(g, db);
-		-- end
-		-- Toys - Dynamic
-		db = {};
-		db.icon = app.asset("Category_ToyBox");
-		db.f = 102;
-		db.text = TOY_BOX;
-		tinsert(g, DynamicCategory(db, "toyID"));
+			-- Titles - Dynamic
+			db = {};
+			db.icon = app.asset("Category_Titles");
+			db.text = PAPERDOLL_SIDEBAR_TITLES;
+			tinsert(g, DynamicCategory(db, "titleID"));
+
+			-- Toys - Dynamic
+			db = {};
+			db.icon = app.asset("Category_ToyBox");
+			db.f = 102;
+			db.text = TOY_BOX;
+			tinsert(g, DynamicCategory(db, "toyID"));
+		end
 
 		--[[
 		-- DYNAMIC TOY BOX (not filtered)
