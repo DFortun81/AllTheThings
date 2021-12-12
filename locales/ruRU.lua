@@ -2315,6 +2315,7 @@ for key,value in pairs({
 	[282666] = "Урна Агассу",	-- Urn of Agussu
 	[284426] = "Закопанная буровая машина",	-- Buried Mining Machine
 	[284448] = "Спрятанный сундук ученого",	-- Hidden Scholar's Chest
+	[284454] = "Сокровище Белой Акулы",	-- Da White Shark's Bounty
 	[284455] = "Плач изгоя",	-- The Exile's Lament
 	[286016] = "Бортовой журнал",	-- Ship's Log
 	[287081] = "Древняя табличка",	-- Ancient Tablet
@@ -2390,6 +2391,7 @@ for key,value in pairs({
 	[293964] = "Позабытый тайник контрабандиста",	-- Forgotten Smuggler's Stash
 	[293965] = "Тайник банды Резчиков",	-- Scrimshaw Cache
 	[293985] = "Разыскивается: Кровавчик",	-- Wanted: War Gore
+	[294084] = "Сундук с добычей Лиги искателей приключений",	-- Adventurer's Society Loot Stash
 	[294096] = "Светящаяся сфера",	-- Lit Orb
 	[294097] = "Странное семечко",	-- Strange Seed
 	[294098] = "Лягушка-малютка",	-- Tiny Frog
@@ -2422,6 +2424,20 @@ for key,value in pairs({
 	[294703] = "Доходягин ржавый сундук",	-- Grimmy's Rusty Lockbox
 	[296479] = "Ящик лорд-адмирала",	-- Lord Admiral's Footlocker
 	[296536] = "Обагренная кровью глефа часового",	-- Bloodied Sentinel's Glaive
+	[296573] = "Ржавая сабля Джейсона",	-- Jason's Rusty Blade
+	[296574] = "Пустая бутыль Иэна",	-- Ian's Empty Bottle
+	[296575] = "Разбитое блюдо Джули",	-- Julie's Cracked Dish
+	[296579] = "Сломанный компас Брайана",	-- Brian's Broken Compass
+	[296580] = "Переплетенный дневник Офера",	-- Ofer's Bound Journal
+	[296581] = "Ручной булыжник Скай",	-- Skye's Pet Rock
+	[296582] = "Левый сапог Жюльена",	-- Julien's Left Boot
+	[296583] = "Фляга Наварро",	-- Navarro's Flask
+	[296584] = "Фляжка Зака",	-- Zach's Canteen
+	[296585] = "Рюкзак Дамаркуса",	-- Damarcus' Backpack
+	[296586] = "Флейта Рейчел",	-- Rachel's Flute
+	[296587] = "Ожерелье Джоша из клыков",	-- Josh's Fang Necklace
+	[296588] = "Портрет командира Мартенса",	-- Portrait of Commander Martens
+	[296589] = "Резной ключ Курта",	-- Kurt's Ornate Key
 	[296915] = "Друстская стела: \"Круг\"",	-- Drust Stele: The Circle
 	[296916] = "Друстская стела: \"Ритуал\"",	-- Drust Stele: The Ritual
 	[296917] = "Друстская стела: \"Древо\"",	-- Drust Stele: The Tree
@@ -2654,6 +2670,7 @@ for key,value in pairs({
 	[353687] = "Сломанный колокол",	-- Broken Bell
 	[353688] = "Сломанный колокол",	-- Broken Bell
 	[353691] = "Небесный колокол",	-- Skyward Bell
+	[353791] = "Сундучок Замкового Предела",	-- Castle Strongbox
 	[353792] = "Сундучок Тихого Предела",	-- Village Strongbox
 	[353793] = "Сундучок молельщиков",	-- Parish Chest
 	[353796] = "Реликварий воспоминаний",	-- Reliquary of Remembrance
@@ -2862,6 +2879,7 @@ for key,value in pairs({
 	[369438] = "Тайник Разлома",	-- Riftbound Cache
 	[369439] = "Тайник Разлома",	-- Riftbound Cache
 	[369440] = "Тайник Разлома",	-- Riftbound Cache
+	[9962198] = "Самодельная лужа жижи изгоя",	-- Outcast's Makeshift Muckpool
 	[9999890] = "Оскверненная добыча",	-- Corrupted Loot
 	[9999891] = "Только Основная Задача",	-- Main Objective Only
 	[9999892] = "Основная Задача + 2 Дополнительных Зоны",	-- Main Objective + 2 Bonus Areas

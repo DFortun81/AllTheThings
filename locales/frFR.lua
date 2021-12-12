@@ -2328,6 +2328,7 @@ for key,value in pairs({
 	[282666] = "Urne d’Agussu",	-- Urn of Agussu
 	[284426] = "Engin d’extraction enfoui",	-- Buried Mining Machine
 	[284448] = "Coffre d’érudit caché",	-- Hidden Scholar's Chest
+	[284454] = "Prime de la Squale",	-- Da White Shark's Bounty
 	[284455] = "La lamente de l’exil",	-- The Exile's Lament
 	[286016] = "Journal de bord",	-- Ship's Log
 	[287081] = "Tablette antique",	-- Ancient Tablet
@@ -2403,6 +2404,7 @@ for key,value in pairs({
 	[293964] = "Cache de contrebandier oubliée",	-- Forgotten Smuggler's Stash
 	[293965] = "Cache sculptivoire",	-- Scrimshaw Cache
 	[293985] = "On recherche : Étripeur de guerre",	-- Wanted: War Gore
+	[294084] = "Planque à butin du Club des aventuriers",	-- Adventurer's Society Loot Stash
 	[294096] = "Orbe allumé",	-- Lit Orb
 	[294097] = "Graine étrange",	-- Strange Seed
 	[294098] = "Grenouille minuscule",	-- Tiny Frog
@@ -2435,6 +2437,20 @@ for key,value in pairs({
 	[294703] = "Coffret rouillé d’Osselet",	-- Grimmy's Rusty Lockbox
 	[296479] = "Cantine de l’amiral suprême",	-- Lord Admiral's Footlocker
 	[296536] = "Glaive de sentinelle ensanglanté",	-- Bloodied Sentinel's Glaive
+	[296573] = "Lame rouillée de Jason",	-- Jason's Rusty Blade
+	[296574] = "Bouteille vide de Ian",	-- Ian's Empty Bottle
+	[296575] = "Assiette ébréchée de Julie",	-- Julie's Cracked Dish
+	[296579] = "Boussole cassée de Brian",	-- Brian's Broken Compass
+	[296580] = "Journal relié d’Ofer",	-- Ofer's Bound Journal
+	[296581] = "Caillou préféré de Skye",	-- Skye's Pet Rock
+	[296582] = "Botte gauche de Julien",	-- Julien's Left Boot
+	[296583] = "Flacon de Navarro",	-- Navarro's Flask
+	[296584] = "Gourde de Zach",	-- Zach's Canteen
+	[296585] = "Sac à dos de Damarcus",	-- Damarcus' Backpack
+	[296586] = "Flûte de Rachel",	-- Rachel's Flute
+	[296587] = "Croc en collier de Josh",	-- Josh's Fang Necklace
+	[296588] = "Portrait du commandant Martens",	-- Portrait of Commander Martens
+	[296589] = "Clé ornée de Kurt",	-- Kurt's Ornate Key
 	[296915] = "Stèle drust : le cercle",	-- Drust Stele: The Circle
 	[296916] = "Stèle drust : le rituel",	-- Drust Stele: The Ritual
 	[296917] = "Stèle drust : l’arbre",	-- Drust Stele: The Tree
@@ -2667,6 +2683,7 @@ for key,value in pairs({
 	[353687] = "Cloche brisée",	-- Broken Bell
 	[353688] = "Cloche brisée",	-- Broken Bell
 	[353691] = "Cloche aérienne",	-- Skyward Bell
+	[353791] = "Coffre-fort du château",	-- Castle Strongbox
 	[353792] = "Coffre-fort du village",	-- Village Strongbox
 	[353793] = "Coffre paroissial",	-- Parish Chest
 	[353796] = "Reliquaire du souvenir",	-- Reliquary of Remembrance
@@ -2875,6 +2892,7 @@ for key,value in pairs({
 	[369438] = "Cache liée à la faille",	-- Riftbound Cache
 	[369439] = "Cache liée à la faille",	-- Riftbound Cache
 	[369440] = "Cache liée à la faille",	-- Riftbound Cache
+	[9962198] = "Tourbière de fortune de paria",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
 	--TODO: [9999892] = "Main Objective + 2 Bonus Areas",	-- Main Objective + 2 Bonus Areas

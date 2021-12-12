@@ -2381,6 +2381,7 @@ for key, value in pairs({
 	--TODO: [282666] = "Urn of Agussu",	-- Urn of Agussu
 	[284426] = "埋藏的采矿机",	-- Buried Mining Machine
 	[284448] = "隐蔽的学者宝箱",	-- Hidden Scholar's Chest
+	[284454] = "大白鲨的财宝",	-- Da White Shark's Bounty
 	--TODO: [284455] = "The Exile's Lament",	-- The Exile's Lament
 	[286016] = "船只日志",	-- Ship's Log
 	[287081] = "上古石板",	-- Ancient Tablet
@@ -2456,6 +2457,7 @@ for key, value in pairs({
 	[293964] = "被遗忘的走私者藏品",	-- Forgotten Smuggler's Stash
 	[293965] = "雕骨宝箱",	-- Scrimshaw Cache
 	[293985] = "通缉：战争之刺",	-- Wanted: War Gore
+	[294084] = "冒险者联盟战利品箱",	-- Adventurer's Society Loot Stash	--TODO: This was manually translated
 	[294096] = "点亮的宝珠",	-- Lit Orb
 	[294097] = "奇怪的种子",	-- Strange Seed
 	[294098] = "小青蛙",	-- Tiny Frog
@@ -2488,6 +2490,20 @@ for key, value in pairs({
 	--TODO: [294703] = "Grimmy's Rusty Lockbox",	-- Grimmy's Rusty Lockbox
 	[296479] = "海军统帅的提箱",	-- Lord Admiral's Footlocker
 	[296536] = "沾血的哨兵战刃",	-- Bloodied Sentinel's Glaive
+	[296573] = "杰森的锈刃",	-- Jason's Rusty Blade
+	[296574] = "伊安的空瓶",	-- Ian's Empty Bottle
+	[296575] = "茱莉的裂口盘子",	-- Julie's Cracked Dish
+	[296579] = "布莱恩的破损罗盘",	-- Brian's Broken Compass
+	[296580] = "奥夫的一捆日志",	-- Ofer's Bound Journal
+	[296581] = "斯凯的宠物玩具石",	-- Skye's Pet Rock
+	[296582] = "朱利安的左靴",	-- Julien's Left Boot
+	[296583] = "纳瓦罗的合剂",	-- Navarro's Flask
+	[296584] = "扎克的水壶",	-- Zach's Canteen
+	[296585] = "达马库斯的背包",	-- Damarcus' Backpack
+	[296586] = "雷切尔的笛子",	-- Rachel's Flute
+	[296587] = "乔什的毒牙项链",	-- Josh's Fang Necklace
+	[296588] = "指挥官马登斯的肖像",	-- Portrait of Commander Martens
+	[296589] = "库尔特的华丽钥匙",	-- Kurt's Ornate Key
 	[296915] = "德鲁斯特石碑：法阵",	-- Drust Stele: The Circle
 	[296916] = "德鲁斯特石碑：仪式",	-- Drust Stele: The Ritual
 	[296917] = "德鲁斯特石碑：巨树",	-- Drust Stele: The Tree
@@ -2720,6 +2736,7 @@ for key, value in pairs({
 	[353687] = "破损之钟",	-- Broken Bell
 	[353688] = "破损之钟",	-- Broken Bell
 	[353691] = "天空之钟",	-- Skyward Bell
+	[353791] = "城堡保险箱",	-- Castle Strongbox
 	[353792] = "村庄保险箱",	-- Village Strongbox
 	[353793] = "教区宝箱",	-- Parish Chest
 	[353796] = "追忆圣匣",	-- Reliquary of Remembrance
@@ -2928,6 +2945,7 @@ for key, value in pairs({
 	[369438] = "隙缚宝箱",	-- Riftbound Cache
 	[369439] = "隙缚宝箱",	-- Riftbound Cache
 	[369440] = "隙缚宝箱",	-- Riftbound Cache
+	[9962198] = "流亡者的简易泥池",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
 	--TODO: [9999892] = "Main Objective + 2 Bonus Areas",	-- Main Objective + 2 Bonus Areas
