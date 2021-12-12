@@ -12,7 +12,7 @@ root("Holidays", d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
 			},
 		}),
 		n(-10048, {	-- Mage Tower
-			["description"] = "The Mage Tower Challenges are back, more challenging then ever. Good luck everyone!",
+			["description"] = "The Mage Tower Challenges are back, more challenging than ever. Good luck everyone!",
 			["g"] = {
 				n(ACHIEVEMENTS, {
 					ach(15309),	-- A Towering Success
