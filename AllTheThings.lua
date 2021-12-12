@@ -15625,7 +15625,7 @@ function app:GetDataCache()
 
 		-- Illusions - Dynamic
 		db = {};
-		db.text = WEAPON_ENCHANTMENT;
+		db.text = L["FILTER_ID_TYPES"][103];
 		db.icon = 132853;
 		tinsert(g, DynamicCategory(db, "illusionID"));
 
