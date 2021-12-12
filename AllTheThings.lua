@@ -15625,7 +15625,7 @@ function app:GetDataCache()
 
 		-- Illusions - Dynamic
 		db = {};
-		db.text = "Illusions";
+		db.text = WEAPON_ENCHANTMENT;
 		db.icon = 132853;
 		tinsert(g, DynamicCategory(db, "illusionID"));
 
@@ -15658,7 +15658,7 @@ function app:GetDataCache()
 		-- Titles - Dynamic
 		db = {};
 		db.icon = app.asset("Category_Titles");
-		db.text = "Titles";
+		db.text = PAPERDOLL_SIDEBAR_TITLES;
 		tinsert(g, DynamicCategory(db, "titleID"));
 
 		-- Toys
