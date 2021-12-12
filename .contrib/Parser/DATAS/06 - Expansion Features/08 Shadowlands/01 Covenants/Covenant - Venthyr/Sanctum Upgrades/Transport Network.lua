@@ -246,7 +246,9 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										i(183707),	-- Mantle of Burnished Blades
 										i(183972),	-- Forgotten Venthyr Winged Kris
 										i(183973),	-- Lost Winged Ritual Kris
-										i(183976),	-- Rogue Researcher's Dagger
+										i(183976, {	-- Rogue Researcher's Dagger
+											["description"] = "Drops for any class.",
+										}),
 										i(183978, {	-- Silver-Etched Hopebreaker Dirk
 											["description"] = "Drops for any class.",
 										}),
