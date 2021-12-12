@@ -2457,7 +2457,7 @@ for key, value in pairs({
 	[293964] = "被遗忘的走私者藏品",	-- Forgotten Smuggler's Stash
 	[293965] = "雕骨宝箱",	-- Scrimshaw Cache
 	[293985] = "通缉：战争之刺",	-- Wanted: War Gore
-	--TODO: [294084] = "Adventurer's Society Loot Stash",	-- Adventurer's Society Loot Stash
+	[294084] = "冒险者联盟战利品箱",	-- Adventurer's Society Loot Stash	--TODO: This was manually translated
 	[294096] = "点亮的宝珠",	-- Lit Orb
 	[294097] = "奇怪的种子",	-- Strange Seed
 	[294098] = "小青蛙",	-- Tiny Frog
@@ -2945,7 +2945,7 @@ for key, value in pairs({
 	[369438] = "隙缚宝箱",	-- Riftbound Cache
 	[369439] = "隙缚宝箱",	-- Riftbound Cache
 	[369440] = "隙缚宝箱",	-- Riftbound Cache
-	--TODO: [9962198] = "Outcast's Makeshift Muckpool",	-- Outcast's Makeshift Muckpool
+	[9962198] = "流亡者的简易泥池",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
 	--TODO: [9999892] = "Main Objective + 2 Bonus Areas",	-- Main Objective + 2 Bonus Areas

@@ -2892,7 +2892,7 @@ for key,value in pairs({
 	[369438] = "Cache liée à la faille",	-- Riftbound Cache
 	[369439] = "Cache liée à la faille",	-- Riftbound Cache
 	[369440] = "Cache liée à la faille",	-- Riftbound Cache
-	--TODO: [9962198] = "Outcast's Makeshift Muckpool",	-- Outcast's Makeshift Muckpool
+	[9962198] = "Tourbière de fortune de paria",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
 	--TODO: [9999892] = "Main Objective + 2 Bonus Areas",	-- Main Objective + 2 Bonus Areas

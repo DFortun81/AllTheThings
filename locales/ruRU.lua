@@ -2879,7 +2879,7 @@ for key,value in pairs({
 	[369438] = "Тайник Разлома",	-- Riftbound Cache
 	[369439] = "Тайник Разлома",	-- Riftbound Cache
 	[369440] = "Тайник Разлома",	-- Riftbound Cache
-	--TODO: [9962198] = "Outcast's Makeshift Muckpool",	-- Outcast's Makeshift Muckpool
+	[9962198] = "Самодельная лужа жижи изгоя",	-- Outcast's Makeshift Muckpool
 	[9999890] = "Оскверненная добыча",	-- Corrupted Loot
 	[9999891] = "Только Основная Задача",	-- Main Objective Only
 	[9999892] = "Основная Задача + 2 Дополнительных Зоны",	-- Main Objective + 2 Bonus Areas

@@ -2894,7 +2894,7 @@ for key,value in pairs({
 	[369438] = "Rissgebundene Truhe",	-- Riftbound Cache
 	[369439] = "Rissgebundene Truhe",	-- Riftbound Cache
 	[369440] = "Rissgebundene Truhe",	-- Riftbound Cache
-	--TODO: [9962198] = "Outcast's Makeshift Muckpool",	-- Outcast's Makeshift Muckpool
+	[9962198] = "Behelfsmäßige Schlammlache des Ausgestoßenen",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
 	--TODO: [9999892] = "Main Objective + 2 Bonus Areas",	-- Main Objective + 2 Bonus Areas

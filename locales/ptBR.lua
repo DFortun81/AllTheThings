@@ -2405,7 +2405,7 @@ for key,value in pairs({
 	[293964] = "Estoque Esquecido do Contrabandista",	-- Forgotten Smuggler's Stash
 	[293965] = "Baú do Osso Talhado",	-- Scrimshaw Cache
 	[293985] = "Procura-se: Horror da Guerra",	-- Wanted: War Gore
-	--TODO: [294084] = "Adventurer's Society Loot Stash",	-- Adventurer's Society Loot Stash
+	[294084] = "Butim da Sociedade de Aventureiros",	-- Adventurer's Society Loot Stash	--TODO: This was manually translated
 	[294096] = "Orbe Aceso",	-- Lit Orb
 	[294097] = "Semente Estranha",	-- Strange Seed
 	[294098] = "Rã Minúscula",	-- Tiny Frog
@@ -2893,7 +2893,7 @@ for key,value in pairs({
 	[369438] = "Cabedal Fendífero",	-- Riftbound Cache
 	[369439] = "Cabedal Fendífero",	-- Riftbound Cache
 	[369440] = "Cabedal Fendífero",	-- Riftbound Cache
-	--TODO: [9962198] = "Outcast's Makeshift Muckpool",	-- Outcast's Makeshift Muckpool
+	[9962198] = "Poça de Lodo Improvisada do Proscrito",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
 	--TODO: [9999892] = "Main Objective + 2 Bonus Areas",	-- Main Objective + 2 Bonus Areas

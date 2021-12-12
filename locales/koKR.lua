@@ -2405,7 +2405,7 @@ for key,value in pairs({
 	[293964] = "잊혀진 밀수업자의 보관함",	-- Forgotten Smuggler's Stash
 	[293965] = "뼈새김 보관함",	-- Scrimshaw Cache
 	[293985] = "현상 수배: 전쟁 누더기",	-- Wanted: War Gore
-	--TODO: [294084] = "Adventurer's Society Loot Stash",	-- Adventurer's Society Loot Stash
+	[294084] = "모험가 협회 전리품 보관함",	-- Adventurer's Society Loot Stash	--TODO: This was manually translated
 	--TODO: [294096] = "Lit Orb",	-- Lit Orb
 	--TODO: [294097] = "Strange Seed",	-- Strange Seed
 	--TODO: [294098] = "Tiny Frog",	-- Tiny Frog
@@ -2893,7 +2893,7 @@ for key,value in pairs({
 	[369438] = "균열결속 보관함",	-- Riftbound Cache
 	[369439] = "균열결속 보관함",	-- Riftbound Cache
 	[369440] = "균열결속 보관함",	-- Riftbound Cache
-	--TODO: [9962198] = "Outcast's Makeshift Muckpool",	-- Outcast's Makeshift Muckpool
+	[9962198] = "추방자의 급조한 진흙 웅덩이",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
 	--TODO: [9999892] = "Main Objective + 2 Bonus Areas",	-- Main Objective + 2 Bonus Areas
