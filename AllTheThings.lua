@@ -2509,6 +2509,21 @@ PriorityNestObjects = function(p, g, newCreate, ...)
 		NestObjects(p, g, newCreate);
 	end
 end
+-- Mergess multiple sources of an object into a single object. Can specify to clean out all sub-groups of the result
+app.MergedObject = function(group, rootOnly)
+	if not group or not group[1] then return; end
+	local merged = CreateObject(group[1], rootOnly);
+	for i=2,#group do
+		MergeProperties(merged, group[i]);
+	end
+	-- for a merged object, clean any other references it might still have
+	merged.sourceParent = nil;
+	merged.parent = nil;
+	if rootOnly then
+		merged.g = nil;
+	end
+	return merged;
+end
 end)();
 local function ExpandGroupsRecursively(group, expanded, manual)
 	-- expand if there is any sub-group
@@ -15295,7 +15310,7 @@ app.DynamicCategory_Simple = function(self)
 					-- app.PrintTable(topHeaders[topText])
 				end
 				-- put a copy of the Thing into the matching top category (no uniques since only 1 per cached Thing)
-				NestObject(topHeaders[topText], CreateObject(sources[1], true));
+				NestObject(topHeaders[topText], app.MergedObject(sources, true));
 			end
 		end
 		-- sort all of the Things by name in each top header and put it under the dynamic group

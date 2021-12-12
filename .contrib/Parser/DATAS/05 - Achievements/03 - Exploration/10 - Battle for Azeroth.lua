@@ -747,8 +747,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 		}),
 		ach(13707),		-- Mrrl's Secret Stash
 		ach(13027, {	-- Mushroom Harvest
-			--
-			-- ["maps"] = { NAZMIR, ZULDAZAR, VOLDUN },
 			["g"] = {
 				crit(1, {	-- Skullcap
 					["_npcs"] = { 143316 },
