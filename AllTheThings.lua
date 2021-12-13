@@ -6701,25 +6701,14 @@ end)();
 -- Achievement Lib
 (function()
 local cache = app.CreateCache("achievementID");
-local function CacheInfo(t)
+local function CacheInfo(t, field)
 	local t, id = cache.GetCached(t);
 	--local IDNumber, Name, Points, Completed, Month, Day, Year, Description, Flags, Image, RewardText, isGuildAch = GetAchievementInfo(t.achievementID);
 	local _, name, _, _, _, _, _, _, _, icon = GetAchievementInfo(id);
 	t.link = GetAchievementLink(id);
 	t.name = name or ("Achievement #"..id);
 	t.icon = icon or QUESTION_MARK_ICON;
-end
-local function default_name(t)
-	CacheInfo(t);
-	return cache.GetCachedField(t, "name");
-end
-local function default_link(t)
-	CacheInfo(t);
-	return cache.GetCachedField(t, "link");
-end
-local function default_icon(t)
-	CacheInfo(t);
-	return cache.GetCachedField(t, "icon");
+	if field then return t[field]; end
 end
 app.AchievementFilter = 4;
 app.AchievementCharCompletedIndex = 13;
@@ -6738,13 +6727,13 @@ local fields = {
 		return t.link or t.name;
 	end,
 	["link"] = function(t)
-		return cache.GetCachedField(t, "link", default_link);
+		return cache.GetCachedField(t, "link", CacheInfo);
 	end,
 	["name"] = function(t)
-		return cache.GetCachedField(t, "name", default_name);
+		return cache.GetCachedField(t, "name", CacheInfo);
 	end,
 	["icon"] = function(t)
-		return cache.GetCachedField(t, "icon", default_icon);
+		return cache.GetCachedField(t, "icon", CacheInfo);
 	end,
 	["collectible"] = function(t)
 		return app.CollectibleAchievements;
@@ -7708,29 +7697,14 @@ end)();
 -- Encounter Lib
 (function()
 local cache = app.CreateCache("encounterID");
-local function CacheEncounterInfo(t)
+local function CacheInfo(t, field)
 	local t, id = cache.GetCached(t);
 	local name, lore, _, _, link = EJ_GetEncounterInfo(id);
 	t.name = name;
 	t.lore = lore;
 	t.link = link;
 	t.displayID = select(4, EJ_GetCreatureInfo(1, id));
-end
-local function default_name(t)
-	CacheEncounterInfo(t);
-	return cache.GetCachedField(t, "name");
-end
-local function default_lore(t)
-	CacheEncounterInfo(t);
-	return cache.GetCachedField(t, "lore");
-end
-local function default_link(t)
-	CacheEncounterInfo(t);
-	return cache.GetCachedField(t, "link");
-end
-local function default_displayID(t)
-	CacheEncounterInfo(t);
-	return cache.GetCachedField(t, "displayID");
+	if field then return t[field]; end
 end
 local function default_displayInfo(t)
 	local displayInfos, id, displayInfo = {}, t.encounterID;
@@ -7752,16 +7726,16 @@ local fields = {
 		return app.TryColorizeName(t, t.name);
 	end,
 	["name"] = function(t)
-		return cache.GetCachedField(t, "name", default_name);
+		return cache.GetCachedField(t, "name", CacheInfo);
 	end,
 	["lore"] = function(t)
-		return cache.GetCachedField(t, "lore", default_lore);
+		return cache.GetCachedField(t, "lore", CacheInfo);
 	end,
 	["link"] = function(t)
-		return cache.GetCachedField(t, "link", default_link);
+		return cache.GetCachedField(t, "link", CacheInfo);
 	end,
 	["displayID"] = function(t)
-		return cache.GetCachedField(t, "displayID", default_displayID);
+		return cache.GetCachedField(t, "displayID", CacheInfo);
 	end,
 	["displayInfo"] = function(t)
 		return cache.GetCachedField(t, "displayInfo", default_displayInfo);
@@ -7909,7 +7883,7 @@ app.IsFactionExclusive = function(factionID)
 	return factionID == 934 or factionID == 932;
 end
 local cache = app.CreateCache("factionID");
-local function CacheFactionInfo(t)
+local function CacheInfo(t, field)
 	local _t, id = cache.GetCached(t);
 	-- do not attempt caching more than 1 time per factionID since not every cached field may have a cached value
 	if _t.name then return end
@@ -7934,18 +7908,7 @@ local function CacheFactionInfo(t)
 			end
 		 end
 	end
-end
-local function default_name(t)
-	CacheFactionInfo(t);
-	return cache.GetCachedField(t, "name");
-end
-local function default_description(t)
-	CacheFactionInfo(t);
-	return cache.GetCachedField(t, "description");
-end
-local function default_lore(t)
-	CacheFactionInfo(t);
-	return cache.GetCachedField(t, "lore");
+	if field then return t[field]; end
 end
 local fields = {
 	["key"] = function(t)
@@ -7955,13 +7918,13 @@ local fields = {
 		return app.TryColorizeName(t, t.name);
 	end,
 	["name"] = function(t)
-		return cache.GetCachedField(t, "name", default_name);
+		return cache.GetCachedField(t, "name", CacheInfo);
 	end,
 	["description"] = function(t)
-		return cache.GetCachedField(t, "description", default_description);
+		return cache.GetCachedField(t, "description", CacheInfo);
 	end,
 	["lore"] = function(t)
-		return cache.GetCachedField(t, "lore", default_lore);
+		return cache.GetCachedField(t, "lore", CacheInfo);
 	end,
 	["icon"] = function(t)
 		return t.achievementID and select(10, GetAchievementInfo(t.achievementID))
@@ -8847,29 +8810,14 @@ end)();
 -- Instance Lib
 (function()
 local cache = app.CreateCache("instanceID");
-local function CacheInstanceInfo(t)
+local function CacheInfo(t, field)
 	local _t, id = cache.GetCached(t);
 	local name, lore, _, _, _, icon, _, link = EJ_GetInstanceInfo(id);
 	_t.name = name;
 	_t.lore = lore;
 	_t.icon = icon;
 	_t.link = link;
-end
-local function default_name(t)
-	CacheInstanceInfo(t);
-	return cache.GetCachedField(t, "name");
-end
-local function default_lore(t)
-	CacheInstanceInfo(t);
-	return cache.GetCachedField(t, "lore");
-end
-local function default_icon(t)
-	CacheInstanceInfo(t);
-	return cache.GetCachedField(t, "icon");
-end
-local function default_link(t)
-	CacheInstanceInfo(t);
-	return cache.GetCachedField(t, "link");
+	if field then return t[field]; end
 end
 local fields = {
 	["key"] = function(t)
@@ -8879,16 +8827,16 @@ local fields = {
 		return app.TryColorizeName(t, t.name);
 	end,
 	["icon"] = function(t)
-		return cache.GetCachedField(t, "icon", default_icon);
+		return cache.GetCachedField(t, "icon", CacheInfo);
 	end,
 	["name"] = function(t)
-		return cache.GetCachedField(t, "name", default_name);
+		return cache.GetCachedField(t, "name", CacheInfo);
 	end,
 	["lore"] = function(t)
-		return cache.GetCachedField(t, "lore", default_lore);
+		return cache.GetCachedField(t, "lore", CacheInfo);
 	end,
 	["link"] = function(t)
-		return cache.GetCachedField(t, "link", default_link);
+		return cache.GetCachedField(t, "link", CacheInfo);
 	end,
 	["back"] = function(t)
 		if app.CurrentMapID == t.mapID or (t.maps and contains(t.maps, app.CurrentMapID)) then
