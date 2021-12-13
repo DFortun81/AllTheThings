@@ -334,6 +334,8 @@ _.ExpansionFeatures =
 						un(REMOVED_FROM_GAME, i(139475)),	-- Waterlogged Letter -> Maw of Souls: Into the Maw of Souls -> Maw of Souls
 						-- Follower Equipments
 						i(139808),	-- Cuiro of Abundant Happiness
+						i(152447),	-- Lightburst Charge
+						i(152929),	-- Pronged Ridgestalker Spear
 						i(152933),	-- Shadowguard Void Effusion
 						i(143850),	-- Summon Grimtotem Warrior (maybe put in Shaman class hall only)
 						i(152935),	-- Wakener's Bauble

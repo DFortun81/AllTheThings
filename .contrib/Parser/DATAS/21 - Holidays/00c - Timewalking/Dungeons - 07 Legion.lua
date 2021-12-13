@@ -1,5 +1,5 @@
 -- #if AFTER 9.1.5
-root("Holidays", d(24, {  -- Timewalking
+root("Holidays", d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
 	tier(LEGION_TIER, {
 		i(187906, {	-- Owl Serpent Soul
 			["timeline"] = { "added 9.1.5" },
@@ -403,5 +403,5 @@ root("Holidays", d(24, {  -- Timewalking
 			}),
 		}),
 	}),
-}));
+})));
 -- #endif

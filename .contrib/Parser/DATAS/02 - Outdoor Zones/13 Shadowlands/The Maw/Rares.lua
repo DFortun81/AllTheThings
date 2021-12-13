@@ -150,14 +150,7 @@ _.Zones =
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
 						i(186618),	-- Willbreaker's Chain
-						i(183070, {	-- Mawsworn Orders
-							["questID"] = 63164,	-- Mawsworn Orders
-							["g"] = {
-								crit(22, {	-- Mawsworn Orders
-									["achievementID"] = 14761,	-- Deciphering Death's Intentions
-								}),
-							},
-						}),
+						i(183070),	-- Mawsworn Orders
 					},
 				}),
 				n(160770, {	-- Darithis the Bleak
@@ -208,30 +201,9 @@ _.Zones =
 						crit(18, {	-- Dath Rezara
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
-						i(183066, {	-- Korrath's Grimoire: Aleketh
-							["questID"] = 63160,	-- Korrath's Grimoire: Aleketh
-							["g"] = {
-								crit(16, {	-- Korrath's Grimoire: Aleketh
-									["achievementID"] = 14761,	-- Deciphering Death's Intentions
-								}),
-							},
-						}),
-						i(183067, {	-- Korrath's Grimoire: Belidir
-							["questID"] = 63161,	-- Korrath's Grimoire: Belidir
-							["g"] = {
-								crit(15, {	-- Korrath's Grimoire: Belidir
-									["achievementID"] = 14761,	-- Deciphering Death's Intentions
-								}),
-							},
-						}),
-						i(183068, {	-- Korrath's Grimoire: Gyadrek
-							["questID"] = 63162,	-- Korrath's Grimoire: Gyadrek
-							["g"] = {
-								crit(14, {	-- Korrath's Grimoire: Gyadrek
-									["achievementID"] = 14761,	-- Deciphering Death's Intentions
-								}),
-							},
-						}),
+						i(183066),	-- Korrath's Grimoire: Aleketh
+						i(183067),	-- Korrath's Grimoire: Belidir
+						i(183068),	-- Korrath's Grimoire: Gyadrek
 						i(186620),	-- Rezara's Fencing Grips
 					},
 				}),
@@ -323,30 +295,9 @@ _.Zones =
 						}),
 						i(186606),	-- Nilganihmaht's Signet Ring
 						i(184108),	-- Vorpal Amulet
-						i(183066, {	-- Korrath's Grimoire: Aleketh
-							["questID"] = 63160,	-- Korrath's Grimoire: Aleketh
-							["g"] = {
-								crit(16, {	-- Korrath's Grimoire: Aleketh
-									["achievementID"] = 14761,	-- Deciphering Death's Intentions
-								}),
-							},
-						}),
-						i(183067, {	-- Korrath's Grimoire: Belidir
-							["questID"] = 63161,	-- Korrath's Grimoire: Belidir
-							["g"] = {
-								crit(15, {	-- Korrath's Grimoire: Belidir
-									["achievementID"] = 14761,	-- Deciphering Death's Intentions
-								}),
-							},
-						}),
-						i(183068, {	-- Korrath's Grimoire: Gyadrek
-							["questID"] = 63162,	-- Korrath's Grimoire: Gyadrek
-							["g"] = {
-								crit(14, {	-- Korrath's Grimoire: Gyadrek
-									["achievementID"] = 14761,	-- Deciphering Death's Intentions
-								}),
-							},
-						}),
+						i(183066),	-- Korrath's Grimoire: Aleketh
+						i(183067),	-- Korrath's Grimoire: Belidir
+						i(183068),	-- Korrath's Grimoire: Gyadrek
 					},
 				}),
 				n(179460, {	-- Fallen Charger
@@ -472,14 +423,7 @@ _.Zones =
 						crit(16, {	-- Odalrik
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
-						i(183061, {	-- Wailing Coin
-							["questID"] = 63158,	-- Wailing Coin
-							["g"] = {
-								crit(21, {	-- Wailing Coin
-									["achievementID"] = 14761,	-- Deciphering Death's Intentions
-								}),
-							},
-						}),
+						i(183061),	-- Wailing Coin
 					},
 				}),
 				n(162845, {	-- Orrholyn <Lord of Bloodletting>
@@ -561,30 +505,9 @@ _.Zones =
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
 						i(185945),	-- Shadeweaver's Spire
-						i(183066, {	-- Korrath's Grimoire: Aleketh
-							["questID"] = 63160,	-- Korrath's Grimoire: Aleketh
-							["g"] = {
-								crit(16, {	-- Korrath's Grimoire: Aleketh
-									["achievementID"] = 14761,	-- Deciphering Death's Intentions
-								}),
-							},
-						}),
-						i(183067, {	-- Korrath's Grimoire: Belidir
-							["questID"] = 63161,	-- Korrath's Grimoire: Belidir
-							["g"] = {
-								crit(15, {	-- Korrath's Grimoire: Belidir
-									["achievementID"] = 14761,	-- Deciphering Death's Intentions
-								}),
-							},
-						}),
-						i(183068, {	-- Korrath's Grimoire: Gyadrek
-							["questID"] = 63162,	-- Korrath's Grimoire: Gyadrek
-							["g"] = {
-								crit(14, {	-- Korrath's Grimoire: Gyadrek
-									["achievementID"] = 14761,	-- Deciphering Death's Intentions
-								}),
-							},
-						}),
+						i(183066),	-- Korrath's Grimoire: Aleketh
+						i(183067),	-- Korrath's Grimoire: Belidir
+						i(183068),	-- Korrath's Grimoire: Gyadrek
 					},
 				}),
 				n(172524, {	-- Skittering Broodmother

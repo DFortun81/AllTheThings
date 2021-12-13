@@ -2175,6 +2175,33 @@ _.Instances = { tier(MOP_TIER, {
 								crit(2, {	-- Paragons of the Klaxxi
 									["achievementID"] = 8462,	-- Downfall
 								}),
+								title(231, {	-- <Name> the Poisoned Mind
+									["collectible"] = false,
+								}),
+								title(232, {	-- <Name> the Bloodseeker
+									["collectible"] = false,
+								}),
+								title(233, {	-- <Name> the Locust
+									["collectible"] = false,
+								}),
+								title(234, {	-- <Name> the Swarmkeeper
+									["collectible"] = false,
+								}),
+								title(235, {	-- <Name> the Prime
+									["collectible"] = false,
+								}),
+								title(236, {	-- <Name> the Manipulator
+									["collectible"] = false,
+								}),
+								title(237, {	-- <Name> the Dissector
+									["collectible"] = false,
+								}),
+								title(238, {	-- <Name> the Lucid
+									["collectible"] = false,
+								}),
+								title(239, {	-- <Name> the Wind-Reaver
+									["collectible"] = false,
+								}),
 								i(104165),	-- Kovok (PET!)
 								i(99675),	-- Leggings of the Cursed Conqueror
 								i(99676),	-- Leggings of the Cursed Protector
@@ -2602,6 +2629,33 @@ _.Instances = { tier(MOP_TIER, {
 						["achievementID"] = 8462,	-- Downfall
 					}),
 					ach(8531),	-- Now We are the Paragon
+					title(231, {	-- <Name> the Poisoned Mind
+						["collectible"] = false,
+					}),
+					title(232, {	-- <Name> the Bloodseeker
+						["collectible"] = false,
+					}),
+					title(233, {	-- <Name> the Locust
+						["collectible"] = false,
+					}),
+					title(234, {	-- <Name> the Swarmkeeper
+						["collectible"] = false,
+					}),
+					title(235, {	-- <Name> the Prime
+						["collectible"] = false,
+					}),
+					title(236, {	-- <Name> the Manipulator
+						["collectible"] = false,
+					}),
+					title(237, {	-- <Name> the Dissector
+						["collectible"] = false,
+					}),
+					title(238, {	-- <Name> the Lucid
+						["collectible"] = false,
+					}),
+					title(239, {	-- <Name> the Wind-Reaver
+						["collectible"] = false,
+					}),
 					i(104165),	-- Kovok (PET!)
 					i(99752),	-- Leggings of the Cursed Conqueror
 					i(99753),	-- Leggings of the Cursed Protector
@@ -3027,6 +3081,33 @@ _.Instances = { tier(MOP_TIER, {
 						["achievementID"] = 8462,	-- Downfall
 					}),
 					ach(8531),	-- Now We are the Paragon
+					title(231, {	-- <Name> the Poisoned Mind
+						["collectible"] = false,
+					}),
+					title(232, {	-- <Name> the Bloodseeker
+						["collectible"] = false,
+					}),
+					title(233, {	-- <Name> the Locust
+						["collectible"] = false,
+					}),
+					title(234, {	-- <Name> the Swarmkeeper
+						["collectible"] = false,
+					}),
+					title(235, {	-- <Name> the Prime
+						["collectible"] = false,
+					}),
+					title(236, {	-- <Name> the Manipulator
+						["collectible"] = false,
+					}),
+					title(237, {	-- <Name> the Dissector
+						["collectible"] = false,
+					}),
+					title(238, {	-- <Name> the Lucid
+						["collectible"] = false,
+					}),
+					title(239, {	-- <Name> the Wind-Reaver
+						["collectible"] = false,
+					}),
 					i(104165),	-- Kovok (PET!)
 					i(99688),	-- Leggings of the Cursed Conqueror
 					i(99693),	-- Leggings of the Cursed Protector
@@ -3482,6 +3563,33 @@ _.Instances = { tier(MOP_TIER, {
 					}),
 					ach(8481),	-- Mythic: Paragons of the Klaxxi
 					ach(8531),	-- Now We are the Paragon
+					title(231, {	-- <Name> the Poisoned Mind
+						["collectible"] = false,
+					}),
+					title(232, {	-- <Name> the Bloodseeker
+						["collectible"] = false,
+					}),
+					title(233, {	-- <Name> the Locust
+						["collectible"] = false,
+					}),
+					title(234, {	-- <Name> the Swarmkeeper
+						["collectible"] = false,
+					}),
+					title(235, {	-- <Name> the Prime
+						["collectible"] = false,
+					}),
+					title(236, {	-- <Name> the Manipulator
+						["collectible"] = false,
+					}),
+					title(237, {	-- <Name> the Dissector
+						["collectible"] = false,
+					}),
+					title(238, {	-- <Name> the Lucid
+						["collectible"] = false,
+					}),
+					title(239, {	-- <Name> the Wind-Reaver
+						["collectible"] = false,
+					}),
 					i(104165),	-- Kovok (PET!)
 					i(99712),	-- Leggings of the Cursed Conqueror
 					i(99713),	-- Leggings of the Cursed Protector

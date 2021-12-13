@@ -71,8 +71,7 @@ local COMMON_TREASURE_SYM = {
 	{"select","itemID",116920},	-- True Steel Lockbox
 };
 
-_.Zones =
-{
+root("Zones", {
 	m(DRAENOR, {
 		m(DRAENOR_NAGRAND, {
 			n(TREASURES, {
@@ -270,6 +269,18 @@ _.Zones =
 						currency(824),	-- Garrison Resources
 					},
 				}),
+				n(87528, {	-- Gnarled Bone
+					["questID"] = 37136,
+					["description"] = "Kill Mok'gol Wolfsong for a Wolf Totem, dig in dirt piles as a spectral wolf at a chance to find this item.",
+					["coords"] = {
+						{ 43.0, 35.6, DRAENOR_NAGRAND },
+						{ 45.7, 37.1, DRAENOR_NAGRAND },
+						{ 43.6, 38.8, DRAENOR_NAGRAND },
+						{ 44.0, 34.3, DRAENOR_NAGRAND },
+						{ 42.7, 37.6, DRAENOR_NAGRAND },
+						{ 43.3, 36.6, DRAENOR_NAGRAND },
+					},
+				}),
 				o(232597, {	-- Goblin Pack
 					["questID"] = 35590,
 					["coord"] = { 73.0, 62.1, DRAENOR_NAGRAND },
@@ -337,6 +348,10 @@ _.Zones =
 					["g"] = {
 						currency(824),	-- Garrison Resources
 					},
+				}),
+				n(87522, {	-- Garrosh's Shackles
+					["questID"] = 37130,
+					["coord"] = { 41.7, 37.5, DRAENOR_NAGRAND },
 				}),
 				o(233618, {	-- Ogre Beads
 					["questID"] = 36049,
@@ -406,6 +421,14 @@ _.Zones =
 					["questID"] = 35662,
 					["coord"] = { 87.6, 20.5, DRAENOR_NAGRAND },
 				}),
+				n(87526, {	-- Stolen Draenei Tome
+					["questID"] = 37134,
+					["coords"] = {
+						{ 45.3, 33.8, DRAENOR_NAGRAND },
+						{ 45.1, 38.2, DRAENOR_NAGRAND },
+						{ 42.0, 34.0, DRAENOR_NAGRAND },
+					},
+				}),
 				o(233613, {	-- Telaar Defender Shield
 					["questID"] = 36046,
 					["coord"] = { 64.6, 65.8, DRAENOR_NAGRAND },
@@ -441,6 +464,22 @@ _.Zones =
 						currency(824),	-- Garrison Resources
 					},
 				}),
+				n(87524, {	-- Warsong Relics
+					["questID"] = 37132,
+					["coord"] = { 45.5, 36.8, DRAENOR_NAGRAND },
+				}),
+				n(87525, {	-- Warsong Remains
+					["questID"] = 37133,
+					["description"] = "Kill Mok'gol Wolfsong for a Wolf Totem, dig in dirt piles as a spectral wolf at a chance to find this item.",
+					["coords"] = {
+						{ 43.0, 35.6, DRAENOR_NAGRAND },
+						{ 45.7, 37.1, DRAENOR_NAGRAND },
+						{ 43.6, 38.8, DRAENOR_NAGRAND },
+						{ 44.0, 34.3, DRAENOR_NAGRAND },
+						{ 42.7, 37.6, DRAENOR_NAGRAND },
+						{ 43.3, 36.6, DRAENOR_NAGRAND },
+					},
+				}),
 				o(233113, {	-- Warsong Spear
 					["questID"] = 35682,
 					["coord"] = { 76.1, 69.9, DRAENOR_NAGRAND },
@@ -462,7 +501,19 @@ _.Zones =
 						i(118235),	-- Ogre Diving Cap
 					},
 				}),
+				n(87527, {	-- Wolf Pup Remains
+					["questID"] = 37135,
+					["description"] = "Kill Mok'gol Wolfsong for a Wolf Totem, dig in dirt piles as a spectral wolf at a chance to find this item.",
+					["coords"] = {
+						{ 43.0, 35.6, DRAENOR_NAGRAND },
+						{ 45.7, 37.1, DRAENOR_NAGRAND },
+						{ 43.6, 38.8, DRAENOR_NAGRAND },
+						{ 44.0, 34.3, DRAENOR_NAGRAND },
+						{ 42.7, 37.6, DRAENOR_NAGRAND },
+						{ 43.3, 36.6, DRAENOR_NAGRAND },
+					},
+				}),
 			}),
 		}),
 	}),
-};
+});

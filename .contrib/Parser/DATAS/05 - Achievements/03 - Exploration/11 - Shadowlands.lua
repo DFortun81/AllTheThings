@@ -96,28 +96,76 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(7),		-- Ritualist's Mantle
 		}),
 		ach(14761, {	-- Deciphering Death's Intentions
-			crit(1),		-- Constellan Writ
-			crit(2),		-- Shifting Cryptogram
-			crit(3),		-- Mawsworn Patrol Map
-			crit(4),		-- Coldheart Flight Routes
-			crit(5),		-- Chaotic Runes
-			crit(6),		-- Puzzling Cryptogram
-			crit(7),		-- Worn Obleron Etching
-			crit(8),		-- Soulforge Blueprints
-			crit(9),		-- Shadebound Testimonial
-			crit(10),		-- Venthyr Concordat
-			crit(11),		-- Discarded Torments
-			crit(12),		-- Box of Torments
-			crit(13),		-- Words of the Warden
-			crit(14),		-- Korrath's Grimoire: Gyadrek
-			crit(15),		-- Korrath's Grimoire: Belidir
-			crit(16),		-- Korrath's Grimoire: Aleketh
-			crit(17),		-- Tormentor's Notes
-			crit(18),		-- Shadehound Armor Plating
-			crit(19),		-- Indecipherable Map
-			crit(20),		-- Mawsworn Shackles
-			crit(21),		-- Wailing Coin
-			crit(22),		-- Mawsworn Orders
+			["description"] = "Most of the Maw Lore items can be found by killing Assassins, rares, or normal mobs.  The remaining ones drop from specific mobs, rares, or treasures that can be found throughout the Maw.",
+			["maps"] = { THE_MAW },
+			["g"] = {
+				crit(1,  {	-- Constellan Writ
+					["_quests"] = { 63132 },
+				}),
+				crit(2,  {	-- Shifting Cryptogram
+					["_quests"] = { 63133 },
+				}),
+				crit(3,  {	-- Mawsworn Patrol Map
+					["_quests"] = { 63134 },
+				}),
+				crit(4,  {	-- Coldheart Flight Routes
+					["_quests"] = { 63135 },
+				}),
+				crit(5,  {	-- Chaotic Runes
+					["_quests"] = { 63136 },
+				}),
+				crit(6,  {	-- Puzzling Cryptogram
+					["_quests"] = { 63137 },
+				}),
+				crit(7,  {	-- Worn Obleron Etching
+					["_quests"] = { 63140 },
+				}),
+				crit(8,  {	-- Soulforge Blueprints
+					["_quests"] = { 63142 },
+				}),
+				crit(9,  {	-- Shadebound Testimonial
+					["_quests"] = { 63145 },
+				}),
+				crit(10, {	-- Venthyr Concordat
+					["_quests"] = { 63152 },
+				}),
+				crit(11, {	-- Discarded Torments
+					["_quests"] = { 63153 },
+				}),
+				crit(12, {	-- Box of Torments
+					["_quests"] = { 63157 },
+				}),
+				crit(13, {	-- Words of the Warden
+					["_quests"] = { 63159 },
+				}),
+				crit(14, {	-- Korrath's Grimoire: Gyadrek
+					["_quests"] = { 63162 },
+				}),
+				crit(15, {	-- Korrath's Grimoire: Belidir
+					["_quests"] = { 63161 },
+				}),
+				crit(16, {	-- Korrath's Grimoire: Aleketh
+					["_quests"] = { 63160 },
+				}),
+				crit(17, {	-- Tormentor's Notes
+					["_quests"] = { 63163 },
+				}),
+				crit(18, {	-- Shadehound Armor Plating
+					["_quests"] = { 63154 },
+				}),
+				crit(19, {	-- Indecipherable Map
+					["_quests"] = { 63155 },
+				}),
+				crit(20, {	-- Mawsworn Shackles
+					["_quests"] = { 63156 },
+				}),
+				crit(21, {	-- Wailing Coin
+					["_quests"] = { 63158 },
+				}),
+				crit(22, {	-- Mawsworn Orders
+					["_quests"] = { 63164 },
+				}),
+			},
 		}),
 		ach(15053, {	-- Explore Korthia
 			crit(1),	-- Estuary of Awakening

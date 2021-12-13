@@ -564,6 +564,7 @@ REWARDS = -18;
 SPECIAL = -77;
 TREASURES = -212;
 VENDORS = -2;
+WEEKLY_HOLIDAYS = -176;
 WORLD_QUESTS = -34;
 ZONE_DROPS = 0;
 ZONE_REWARDS = -903;
@@ -595,6 +596,7 @@ TITANFORGED = -355;
 -- D&R
 COMMON_BOSS_DROPS = -1;
 WORLD_BOSSES = -7;
+SCENARIOS = -10069;
 
 -- Pet
 PET_BATTLE = -796;
@@ -695,9 +697,6 @@ LEGENDARY_QUESTLINE = -10066;
 	TIER_THREE = -918;
 	TIER_FOUR = -925;
 	TIER_FIVE = -926;
--- Currencies
-ANIMA = 1813;
-GRATEFUL = 1885;
 -- Class Trials
 CLASS_TRIAL = -5350;
 LEVEL_NINETY = -137;
@@ -736,6 +735,9 @@ EIGHTEENTH_ANNIVERSARY = -5367;
 --------------------------
 --     T H E  E N D     --
 --------------------------
+-- Currencies
+ANIMA = 1813;
+GRATEFUL = 1885;
 
 -- Filters
 HELD_IN_OFF_HAND = 1;
@@ -1644,7 +1646,10 @@ crit = function(criteriaID, t)           -- Create an Achievement Criteria Objec
 		if not isarray(t) then
 			-- DO NOT do that lol
 			if t.achievementID then
-				--print("Ach:",t.achievementID,"Crit:",criteriaID,"Use '_quests', '_npcs', or 'cost' to define where/how this Criteria is granted instead of directly nesting it in Source.")
+				-- print("Ach:",t.achievementID,"Crit:",criteriaID,"Use '_quests', '_npcs', or 'cost' to define where/how this Criteria is granted instead of directly nesting it in Source.")
+			end
+			if t.questID then
+				error(table.concat({"Do not use QuestID:",t.questID," inside Achievement Criteria:",criteriaID," ==> Use '_quests' to indicate a Criteria granted from completion of a single Quest."}))
 			end
 		else
 			t = { ["groups"] = t };

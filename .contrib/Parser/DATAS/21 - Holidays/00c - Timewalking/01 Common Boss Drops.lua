@@ -10,6 +10,7 @@ local InfiniteTimereaver =
 			["g"] = {
 				i(133543, {	-- Reins of the Infinite Timereaver
 					["crs"] = TIMEWALKING_DUNGEON_CREATURE_IDS,
+					["u"] = TIMEWALKING,
 				}),
 			},
 		}),

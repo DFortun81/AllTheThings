@@ -239,7 +239,7 @@ local L = app.L;
 	--TODO: L.QUEST_ONCE_PER_ACCOUNT_FORMAT = "Completed By: %s";
 
 -- Settings.lua
-	--TODO: L.SKIP_AUTO_REFRESH = "Do Not Auto-Refresh!";
+	--TODO: L.SKIP_AUTO_REFRESH = "Skip Settings-Toggle Data Refreshes!";
 	--TODO: L.SKIP_AUTO_REFRESH_TOOLTIP = "By default (unchecked), any Settings change which may affect visible data will cause an automatic refresh.\n\nBy enabling this option, Settings changes won't take effect until the User performs a Full Refresh by Shift-Clicking on an ATT window.";
 	--TODO: L.AFTER_REFRESH = "After Refresh";
 
@@ -765,7 +765,6 @@ for key,value in pairs({
 	-- Secret Header
 		[-806] = "Cinto pelo Tempo Perdido",						-- Waist of Time
 	-- Chests
-		[-850] = "Baú Mecanizado",									-- Mechanized Chest
 		[-851] = "Depósito do Império Negro",						-- Black Empire Cache
 	-- Heart of Azeroth
 		--TODO: [-853] = "All Roles",								-- All Roles
@@ -2330,6 +2329,7 @@ for key,value in pairs({
 	[282666] = "Urna de Agussu",	-- Urn of Agussu
 	[284426] = "Máquina de Mineração Enterrada",	-- Buried Mining Machine
 	[284448] = "Baú Escondido do Erudito",	-- Hidden Scholar's Chest
+	[284454] = "Recompensa do Tubarão Branco",	-- Da White Shark's Bounty
 	[284455] = "O Lamento do Exílio",	-- The Exile's Lament
 	[286016] = "Registro de Bordo",	-- Ship's Log
 	[287081] = "Tabuleta Ancestral",	-- Ancient Tablet
@@ -2405,6 +2405,7 @@ for key,value in pairs({
 	[293964] = "Estoque Esquecido do Contrabandista",	-- Forgotten Smuggler's Stash
 	[293965] = "Baú do Osso Talhado",	-- Scrimshaw Cache
 	[293985] = "Procura-se: Horror da Guerra",	-- Wanted: War Gore
+	[294084] = "Butim da Sociedade de Aventureiros",	-- Adventurer's Society Loot Stash	--TODO: This was manually translated
 	[294096] = "Orbe Aceso",	-- Lit Orb
 	[294097] = "Semente Estranha",	-- Strange Seed
 	[294098] = "Rã Minúscula",	-- Tiny Frog
@@ -2437,6 +2438,20 @@ for key,value in pairs({
 	--TODO: [294703] = "Grimmy's Rusty Lockbox",	-- Grimmy's Rusty Lockbox
 	[296479] = "Maleta do Lorde-almirante",	-- Lord Admiral's Footlocker
 	[296536] = "Glaive da Sentinela Ensanguentada",	-- Bloodied Sentinel's Glaive
+	[296573] = "Lâmina Enferrujada de Jason",	-- Jason's Rusty Blade
+	[296574] = "Garrafa Vazia de Ian",	-- Ian's Empty Bottle
+	[296575] = "Prato Rachado de Julie",	-- Julie's Cracked Dish
+	[296579] = "Bússola Quebrada de Brian",	-- Brian's Broken Compass
+	[296580] = "Diário Encadernado de Ofer",	-- Ofer's Bound Journal
+	[296581] = "Rocha de Estimação de Scai",	-- Skye's Pet Rock
+	[296582] = "Bota Esquerda de Julien",	-- Julien's Left Boot
+	[296583] = "Frasco de Navarro",	-- Navarro's Flask
+	[296584] = "Cantil de Zach",	-- Zach's Canteen
+	[296585] = "Mochila de Damascos",	-- Damarcus' Backpack
+	[296586] = "Flauta de Raquel",	-- Rachel's Flute
+	[296587] = "Colar de Presas de Josh",	-- Josh's Fang Necklace
+	[296588] = "Retrato do Comandante Martins",	-- Portrait of Commander Martens
+	[296589] = "Chave Ornada do Kurt",	-- Kurt's Ornate Key
 	[296915] = "Estela Drusta: O Círculo",	-- Drust Stele: The Circle
 	[296916] = "Estela Drusta: O Ritual",	-- Drust Stele: The Ritual
 	[296917] = "Estela Drusta: A Árvore",	-- Drust Stele: The Tree
@@ -2669,6 +2684,7 @@ for key,value in pairs({
 	[353687] = "Sino Quebrado",	-- Broken Bell
 	[353688] = "Sino Quebrado",	-- Broken Bell
 	[353691] = "Sino Celestino",	-- Skyward Bell
+	[353791] = "Caixa-forte do Castelo",	-- Castle Strongbox
 	[353792] = "Caixa-forte da Vila",	-- Village Strongbox
 	[353793] = "Baú da Paróquia",	-- Parish Chest
 	[353796] = "Relicário da Lembrança",	-- Reliquary of Remembrance
@@ -2877,6 +2893,7 @@ for key,value in pairs({
 	[369438] = "Cabedal Fendífero",	-- Riftbound Cache
 	[369439] = "Cabedal Fendífero",	-- Riftbound Cache
 	[369440] = "Cabedal Fendífero",	-- Riftbound Cache
+	[9962198] = "Poça de Lodo Improvisada do Proscrito",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
 	--TODO: [9999892] = "Main Objective + 2 Bonus Areas",	-- Main Objective + 2 Bonus Areas

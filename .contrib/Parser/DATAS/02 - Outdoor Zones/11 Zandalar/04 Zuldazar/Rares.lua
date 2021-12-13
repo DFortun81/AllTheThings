@@ -28,6 +28,9 @@ _.Zones =
 						}),
 					},
 				}),
+				n(143314, {	-- Bane of the Woods
+					["coord"] = { 45.6, 79.0, ZULDAZAR },
+				}),
 				n(128699, {	-- Bloodbulge
 					["questID"] = 49267,
 					["coord"] = { 59.68, 18.22, ZULDAZAR },
@@ -47,6 +50,10 @@ _.Zones =
 							["achievementID"] = 12944,	-- Adventurer of Zuldazar
 						}),
 					},
+				}),
+				n(133208, {	-- Da White Shark
+					["questID"] = 50948,
+					["coord"] = { 59.5, 88.8, DAZARALOR },
 				}),
 				n(133190, {	-- Daggerjaw
 					["questID"] = 50269,

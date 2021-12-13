@@ -924,7 +924,7 @@ _.Zones =
 				q(26830, {	-- Traitor's Bait
 					["sourceQuests"] = { 26798 },	-- Saurfang Will be Pleased
 					["provider"] = { "n", 3144 },	-- Eitrigg
-					["coord"] = { 76.8, 37.4, ORGRIMMAR },
+					["coord"] = { 48.6, 71.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(63916),	-- Belt of Mystical Betrayal

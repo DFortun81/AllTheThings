@@ -239,7 +239,7 @@ local L = app.L;
 	--TODO: L.QUEST_ONCE_PER_ACCOUNT_FORMAT = "Completed By: %s";
 
 -- Settings.lua
-	--TODO: L.SKIP_AUTO_REFRESH = "Do Not Auto-Refresh!";
+	--TODO: L.SKIP_AUTO_REFRESH = "Skip Settings-Toggle Data Refreshes!";
 	--TODO: L.SKIP_AUTO_REFRESH_TOOLTIP = "By default (unchecked), any Settings change which may affect visible data will cause an automatic refresh.\n\nBy enabling this option, Settings changes won't take effect until the User performs a Full Refresh by Shift-Clicking on an ATT window.";
 	--TODO: L.AFTER_REFRESH = "After Refresh";
 
@@ -765,7 +765,6 @@ for key,value in pairs({
 	-- Secret Header
 		[-806] = "금쪽같은 시간을 버려낸 허리띠",								-- Waist of Time
 	-- Chests
-		[-850] = "기계 상자",											-- Mechanized Chest
 		[-851] = "검은 제국 보관함",										-- Black Empire Cache
 	-- Heart of Azeroth
 		--TODO: [-853] = "All Roles",								-- All Roles
@@ -2330,6 +2329,7 @@ for key,value in pairs({
 	[282666] = "아구수의 단지",	-- Urn of Agussu
 	[284426] = "묻힌 채광 기계",	-- Buried Mining Machine
 	[284448] = "숨겨진 학자의 상자",	-- Hidden Scholar's Chest
+	[284454] = "하얀 상어의 선물",	-- Da White Shark's Bounty
 	[284455] = "추방자의 탄식",	-- The Exile's Lament
 	[286016] = "항해일지",	-- Ship's Log
 	[287081] = "고대 서판",	-- Ancient Tablet
@@ -2405,6 +2405,7 @@ for key,value in pairs({
 	[293964] = "잊혀진 밀수업자의 보관함",	-- Forgotten Smuggler's Stash
 	[293965] = "뼈새김 보관함",	-- Scrimshaw Cache
 	[293985] = "현상 수배: 전쟁 누더기",	-- Wanted: War Gore
+	[294084] = "모험가 협회 전리품 보관함",	-- Adventurer's Society Loot Stash	--TODO: This was manually translated
 	--TODO: [294096] = "Lit Orb",	-- Lit Orb
 	--TODO: [294097] = "Strange Seed",	-- Strange Seed
 	--TODO: [294098] = "Tiny Frog",	-- Tiny Frog
@@ -2437,6 +2438,20 @@ for key,value in pairs({
 	--TODO: [294703] = "Grimmy's Rusty Lockbox",	-- Grimmy's Rusty Lockbox
 	[296479] = "제독의 사물함",	-- Lord Admiral's Footlocker
 	[296536] = "피투성이 파수꾼의 전투검",	-- Bloodied Sentinel's Glaive
+	[296573] = "제이슨의 녹슨 칼날",	-- Jason's Rusty Blade
+	[296574] = "이안의 빈 병",	-- Ian's Empty Bottle
+	[296575] = "줄리의 금 간 접시",	-- Julie's Cracked Dish
+	[296579] = "브라이언의 망가진 나침반",	-- Brian's Broken Compass
+	[296580] = "오퍼의 끈으로 엮은 일지",	-- Ofer's Bound Journal
+	[296581] = "스키예의 애완석",	-- Skye's Pet Rock
+	[296582] = "줄리안의 왼쪽 장화",	-- Julien's Left Boot
+	[296583] = "나바로의 물병",	-- Navarro's Flask
+	[296584] = "자크의 수통",	-- Zach's Canteen
+	[296585] = "다마르커스의 배낭",	-- Damarcus' Backpack
+	[296586] = "레이첼의 플루트",	-- Rachel's Flute
+	[296587] = "조쉬의 송곳니 목걸이",	-- Josh's Fang Necklace
+	[296588] = "사령관 마르텐스의 초상화",	-- Portrait of Commander Martens
+	[296589] = "커트의 정교한 열쇠",	-- Kurt's Ornate Key
 	[296915] = "드러스트 석비: 마법진",	-- Drust Stele: The Circle
 	--TODO: [296916] = "Drust Stele: The Ritual",	-- Drust Stele: The Ritual
 	[296917] = "드러스트 석비: 나무",	-- Drust Stele: The Tree
@@ -2669,6 +2684,7 @@ for key,value in pairs({
 	[353687] = "망가진 종",	-- Broken Bell
 	[353688] = "망가진 종",	-- Broken Bell
 	[353691] = "하늘맞이 종",	-- Skyward Bell
+	[353791] = "성채 금고",	-- Castle Strongbox
 	[353792] = "촌락 금고",	-- Village Strongbox
 	[353793] = "교구 상자",	-- Parish Chest
 	[353796] = "회고의 성물함",	-- Reliquary of Remembrance
@@ -2877,6 +2893,7 @@ for key,value in pairs({
 	[369438] = "균열결속 보관함",	-- Riftbound Cache
 	[369439] = "균열결속 보관함",	-- Riftbound Cache
 	[369440] = "균열결속 보관함",	-- Riftbound Cache
+	[9962198] = "추방자의 급조한 진흙 웅덩이",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
 	--TODO: [9999892] = "Main Objective + 2 Bonus Areas",	-- Main Objective + 2 Bonus Areas

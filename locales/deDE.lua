@@ -239,7 +239,7 @@ local L = app.L;
 	--TODO: L.QUEST_ONCE_PER_ACCOUNT_FORMAT = "Completed By: %s";
 
 -- Settings.lua
-	--TODO: L.SKIP_AUTO_REFRESH = "Do Not Auto-Refresh!";
+	--TODO: L.SKIP_AUTO_REFRESH = "Skip Settings-Toggle Data Refreshes!";
 	--TODO: L.SKIP_AUTO_REFRESH_TOOLTIP = "By default (unchecked), any Settings change which may affect visible data will cause an automatic refresh.\n\nBy enabling this option, Settings changes won't take effect until the User performs a Full Refresh by Shift-Clicking on an ATT window.";
 	--TODO: L.AFTER_REFRESH = "After Refresh";
 
@@ -766,7 +766,6 @@ for key,value in pairs({
 	-- Secret Header
 		[-806] = "Zeitvergoldung",									-- Waist of Time
 	-- Chests
-		[-850] = "Mechanisierte Truhe",								-- Mechanized Chest
 		[-851] = "Truhe des Schwarzen Imperiums",					-- Black Empire Cache
 	-- Heart of Azeroth
 		--TODO: [-853] = "All Roles",								-- All Roles
@@ -2331,6 +2330,7 @@ for key,value in pairs({
 	[282666] = "Urne von Agussu",	-- Urn of Agussu
 	[284426] = "Vergrabene Abbaumaschine",	-- Buried Mining Machine
 	[284448] = "Versteckte Truhe eines Gelehrten",	-- Hidden Scholar's Chest
+	[284454] = "Beute der Haibraut",	-- Da White Shark's Bounty
 	[284455] = "Klage des Verbannten",	-- The Exile's Lament
 	[286016] = "Schiffslogbuch",	-- Ship's Log
 	[287081] = "Uralte Schrifttafel",	-- Ancient Tablet
@@ -2406,6 +2406,7 @@ for key,value in pairs({
 	[293964] = "Vergessener Schmugglervorrat",	-- Forgotten Smuggler's Stash
 	[293965] = "Vorrat der Knochenritzer",	-- Scrimshaw Cache
 	[293985] = "Gesucht: Schlachtmetzler",	-- Wanted: War Gore
+	[294084] = "Beutetruhe des Abenteurerclubs",	-- Adventurer's Society Loot Stash
 	[294096] = "Erleuchtete Kugel",	-- Lit Orb
 	[294097] = "Seltsamer Samen",	-- Strange Seed
 	[294098] = "Winziger Frosch",	-- Tiny Frog
@@ -2438,6 +2439,20 @@ for key,value in pairs({
 	[294703] = "Grimms rostige Schließkiste",	-- Grimmy's Rusty Lockbox
 	[296479] = "Schließkiste des Lordadmirals",	-- Lord Admiral's Footlocker
 	[296536] = "Blutige Schildwachengleve",	-- Bloodied Sentinel's Glaive
+	[296573] = "Jasons rostige Klinge",	-- Jason's Rusty Blade
+	[296574] = "Ians leere Flasche",	-- Ian's Empty Bottle
+	[296575] = "Julies gesprungene Schüssel",	-- Julie's Cracked Dish
+	[296579] = "Brians kaputter Kompass",	-- Brian's Broken Compass
+	[296580] = "Ofers gebundenes Notizbuch",	-- Ofer's Bound Journal
+	[296581] = "Skyes Lieblingsstein",	-- Skye's Pet Rock
+	[296582] = "Juliens linker Stiefel",	-- Julien's Left Boot
+	[296583] = "Navarros Fläschchen",	-- Navarro's Flask
+	[296584] = "Zachs Feldflasche",	-- Zach's Canteen
+	[296585] = "Damarcus' Rucksack",	-- Damarcus' Backpack
+	[296586] = "Rachels Flöte",	-- Rachel's Flute
+	[296587] = "Joshs Reißzahnhalskette",	-- Josh's Fang Necklace
+	[296588] = "Porträt von Kommandant Martens",	-- Portrait of Commander Martens
+	[296589] = "Kurts verschnörkelter Schlüssel",	-- Kurt's Ornate Key
 	[296915] = "Druststele: Der Kreis",	-- Drust Stele: The Circle
 	[296916] = "Druststele: Das Ritual",	-- Drust Stele: The Ritual
 	[296917] = "Druststele: Der Baum",	-- Drust Stele: The Tree
@@ -2670,6 +2685,7 @@ for key,value in pairs({
 	[353687] = "Zerbrochene Glocke",	-- Broken Bell
 	[353688] = "Zerbrochene Glocke",	-- Broken Bell
 	[353691] = "Himmelsglocke",	-- Skyward Bell
+	[353791] = "Schlosschließkassette",	-- Castle Strongbox
 	[353792] = "Dorfschließkassette",	-- Village Strongbox
 	[353793] = "Gemeindetruhe",	-- Parish Chest
 	[353796] = "Reliquiar der Erinnerung",	-- Reliquary of Remembrance
@@ -2878,6 +2894,7 @@ for key,value in pairs({
 	[369438] = "Rissgebundene Truhe",	-- Riftbound Cache
 	[369439] = "Rissgebundene Truhe",	-- Riftbound Cache
 	[369440] = "Rissgebundene Truhe",	-- Riftbound Cache
+	[9962198] = "Behelfsmäßige Schlammlache des Ausgestoßenen",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
 	--TODO: [9999892] = "Main Objective + 2 Bonus Areas",	-- Main Objective + 2 Bonus Areas

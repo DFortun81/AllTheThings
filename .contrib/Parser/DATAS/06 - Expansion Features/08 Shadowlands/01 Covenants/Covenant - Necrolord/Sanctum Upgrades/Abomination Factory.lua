@@ -1362,6 +1362,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 								}),
 								i(178547),	-- Questionable Fried Poultry
 								i(178546),	-- Questionable Meat Product
+								i(178681),	-- Slim Shinbone
 								i(178535),	-- Suspicious Slime Shot
 							}),
 						}),

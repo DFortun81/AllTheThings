@@ -20,17 +20,15 @@ _.Instances = { tier(LEGION_TIER, {
 			786,
 			787,
 			788,
-			789
+			789,
 		},
 		["lvl"] = 110,
 		["g"] = {
-			n(-68, {	-- The Emerald Dream
-				petbattle(filter(BATTLE_PETS, {
-					p(1722, {	-- Dream Whelpling
-						["description"] = "Once you defeat Xavius these will spawn in the room after him."
-					}),
-				})),
-			}),
+			petbattle(filter(BATTLE_PETS, {
+				p(1722, {	-- Dream Whelpling
+					["description"] = "Once you defeat Xavius these will spawn in the room after him."
+				}),
+			})),
 			d(17, {	-- LFR
 				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,

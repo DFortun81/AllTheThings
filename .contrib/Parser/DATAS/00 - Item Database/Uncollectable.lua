@@ -4,6 +4,18 @@ local i = function(itemID)
 	_.Uncollectable[itemID] = item;
 	return item;
 end
+-- SL
+i(179293);	-- Glimmering Facial Cream
+i(180293);	-- Night Fae Insignia
+i(183190);	-- Oublion Cipher
+i(183726);	-- Gratitude of the Liberated
+i(181796);	-- Emergency Supplies Key
+
+i(174969);	-- Alpaca Saddlebag (Vulpera Backpack)
+
+-- Tailoring
+i(184480);	-- Lightless Silk Pouch
+
 
 -- 9.1 (no unsorted yet so don't know categories)
 i(186472);	-- Wisps of Memory
@@ -102,6 +114,9 @@ i(181648);	-- Ziggurat Focusing Crystal
 
 -- Battle Pet
 i(183714);	-- Swamp Reed (presumably Withered Creeper was originally learned via this item, but is now wild-caught, so this item being anywhere other than this folder makes the pet show as Unsorted or NYI or w/e)
+i(180627); -- Tranquil Wader
+i(180632); -- Gorm Rootstinger
+i(182672); -- Misty Leaper
 
 -- Consumables
 -- BC

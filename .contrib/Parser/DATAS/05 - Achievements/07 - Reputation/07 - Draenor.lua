@@ -8,7 +8,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 		ach(9470, {		-- Council of Exarchs
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
-				title(283, {	-- Prelate
+				title(283, {	-- Prelate <Name>
 					["races"] = ALLIANCE_ONLY,
 				}),
 			},
@@ -16,7 +16,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 		ach(9471, {		-- Frostwolf Orcs
 			["races"] = HORDE_ONLY,
 			["g"] = {
-				title(282, {	-- of the Frostwolves
+				title(282, {	-- <Name> of the Frostwolves
 					["races"] = HORDE_ONLY,
 				}),
 			},

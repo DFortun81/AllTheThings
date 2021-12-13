@@ -45,17 +45,35 @@ _.Zones =
 							["coord"] = { 43.7, 92.3, KRASARANG_WILDS },
 							["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
 							["questID"] = 31410,
-							["description"] = "On the bottom level of the ship — you will have to go down two sets of stairs.",
+							["description"] = "On the bottom level of the ship — you will have to go down two sets of stairs.\nThis chest is personal loot and based on your current Spec, NOT your Loot Spec.",
 							["g"] = {
-								i(86122),	-- Plankwalking Greaves
-								i(86115),	-- Swashbuckling Boots
-								i(86117),	-- Seafarer's Treads of Precision
-								i(86116),	-- Agile Seafarer's Jackboots
-								i(86123),	-- Seafarer's Sturdy Boots
-								i(86118),	-- Seafaring Advisor's Slippers
-								i(86119),	-- Seafarer's Boots of Meditation
-								i(86120),	-- Seafaring Sabatons of Meditation
-								i(86121),	-- Radiant Seafarer's Boots
+								i(86122, {	-- Plankwalking Greaves
+									["description"] = "Only lootable while in a Strength DPS Spec.",
+								}),
+								i(86115, {	-- Swashbuckling Boots
+									["description"] = "Only lootable while in a Leather Agility Spec (Rogue/Feral/Guardian/Brewmaster/Windwalker).",
+								}),
+								i(86117, {	-- Seafarer's Treads of Precision
+									["description"] = "Only lootable while in a Cloth DPS Spec (Mage/Warlock).",
+								}),
+								i(86116, {	-- Agile Seafarer's Jackboots
+									["description"] = "Only lootable while in a Mail Agility Spec (Hunter/Enhancement).",
+								}),
+								i(86123, {	-- Seafarer's Sturdy Boots
+									["description"] = "Only lootable while in a Strength Tank Spec.",
+								}),
+								i(86118, {	-- Seafaring Advisor's Slippers
+									["description"] = "Only lootable as a Priest.",
+								}),
+								i(86119, {	-- Seafarer's Boots of Meditation
+									["description"] = "Only lootable while in a Leather Intellect Spec (Mistweaver/Balance/Restoration).",
+								}),
+								i(86120, {	-- Seafaring Sabatons of Meditation
+									["description"] = "Only lootable while in a Mail Intellect Spec (Elemental/Restoration).",
+								}),
+								i(86121, {	-- Radiant Seafarer's Boots
+									["description"] = "Only lootable while in a Paladin Holy Spec.",
+								}), 
 							},
 						}),
 						o(213653, {		-- Pandaren Fishing Spear

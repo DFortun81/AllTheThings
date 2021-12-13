@@ -1,5 +1,5 @@
 -- #if AFTER 6.2.3.20601
-root("Holidays", d(24, {  -- Timewalking
+root("Holidays", d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
 	tier(WOTLK_TIER, {
 		i(187903, {	-- Jormungar Soul
 			["timeline"] = { "added 9.1.5" },
@@ -903,5 +903,5 @@ root("Holidays", d(24, {  -- Timewalking
 			})),
 		})),
 	}),
-}));
+})));
 -- #endif

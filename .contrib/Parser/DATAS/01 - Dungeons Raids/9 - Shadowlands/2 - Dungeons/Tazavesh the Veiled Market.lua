@@ -71,6 +71,7 @@ _.Instances = { tier(SL_TIER, {
 					["sourceQuests"] = { 63985 },	-- The Veiled Market
 					["provider"] = { "n", 178908 },	-- Al'dalil
 					["coord"] = { 86.7, 48.3, TAZAVESH_THE_VEILED_MARKET_WORLD },
+					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(64607, {	-- Tazavesh: A Hard Bargain
 					["description"] = "Requires |cFFFFFFFFPassably-Forged Credentials|r to be equipped to be able to accept the quest.",

@@ -12,8 +12,7 @@ _.Instances = { tier(CATA_TIER, {
 					50063,	-- Akma'hat
 					50056,	-- Garr
 					50089,	-- Julak-Doom
-					50009,	-- Hagara the Stormbinder
-					55294,	-- Mobus
+					50009,	-- Mobus
 					50061,	-- Xariona
 				},
 				["groups"] = {

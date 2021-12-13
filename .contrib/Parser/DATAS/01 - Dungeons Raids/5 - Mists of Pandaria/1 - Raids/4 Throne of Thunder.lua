@@ -61,7 +61,7 @@ _.Instances = { tier(MOP_TIER, {
 						i(95968),	-- Vaultwalker Sabatons
 					},
 				})),
-				n(-176, {	-- Weekly World Events
+				n(WEEKLY_HOLIDAYS, {
 					["description"] = "Only one of these quests are available in the raid at a time. As you progress through the raid, you should see ",
 					["g"] = {
 						{

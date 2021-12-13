@@ -38,18 +38,12 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 						n(TIER_TWO, {
 							n(QUESTS, {
 								q(60159, {	-- Mirror Attunement: Halls of Atonement
-									["sourceQuests"] = {
-										60060,	-- Mirror Attunement: Pridefall Hamlet
-										60147,	-- Mirror Attunement: The Eternal Terrace
-									},
+									["sourceQuests"] = { 57536 },	-- Mirror Making, Not Breaking
 									["provider"] = { "n", 167160 },	-- Laurent
 									["coord"] = { 47.6, 57.3, SINFALL_REACHES },
 								}),
 								q(60160, {	-- Mirror Attunement: The Banewood
-									["sourceQuests"] = {
-										60060,	-- Mirror Attunement: Pridefall Hamlet
-										60147,	-- Mirror Attunement: The Eternal Terrace
-									},
+									["sourceQuests"] = { 57536 },	-- Mirror Making, Not Breaking
 									["provider"] = { "n", 167160 },	-- Laurent
 									["coord"] = { 47.6, 57.3, SINFALL_REACHES },
 								}),
@@ -226,18 +220,12 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 								}),
 								n(QUESTS, {
 									q(60164, {	-- Mirror Attunement: Dominance Keep
-										["sourceQuests"] = {
-											60159,	-- Mirror Attunement: Halls of Atonement
-											60160,	-- Mirror Attunement: The Banewood
-										},
+									["sourceQuests"] = { 57536 },	-- Mirror Making, Not Breaking
 										["provider"] = { "n", 167160 },	-- Laurent
 										["coord"] = { 47.3, 57.5, SINFALL_REACHES },
 									}),
 									q(60165, {	-- Mirror Attunement: Feeders' Thicket
-										["sourceQuests"] = {
-											60159,	-- Mirror Attunement: Halls of Atonement
-											60160,	-- Mirror Attunement: The Banewood
-										},
+									["sourceQuests"] = { 57536 },	-- Mirror Making, Not Breaking
 										["provider"] = { "n", 167160 },	-- Laurent
 										["coord"] = { 47.3, 57.5, SINFALL_REACHES },
 									}),
@@ -258,7 +246,9 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										i(183707),	-- Mantle of Burnished Blades
 										i(183972),	-- Forgotten Venthyr Winged Kris
 										i(183973),	-- Lost Winged Ritual Kris
-										i(183976),	-- Rogue Researcher's Dagger
+										i(183976, {	-- Rogue Researcher's Dagger
+											["description"] = "Drops for any class.",
+										}),
 										i(183978, {	-- Silver-Etched Hopebreaker Dirk
 											["description"] = "Drops for any class.",
 										}),

@@ -112,28 +112,6 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(12851, {	-- Treasures of Zuldazar
-					["collectible"] = false,
-					["g"] = {
-						crit(1, {	-- Offerings of the Chosen
-							["objectID"] = 276735,	-- Offerings of the Chosen
-							["questID"] = 48938,
-							["coord"] = { 38.3, 7.2, DAZARALOR },
-						}),
-						crit(7, {	-- Da White Shark's Bounty
-							["sourceQuests"] = { 50948 },	-- Da White Shark kill
-							["questID"] = 50947,
-							["coord"] = { 59.5, 88.8, DAZARALOR },
-							["cr"] = 133208,	-- Da White Shark
-						}),
-						crit(9, {	-- Cache of Secrets
-							["description"] = "Located in a cave behind a waterfall.",
-							["objectID"] = 288596,	-- Cache of Secrets
-							["questID"] = 51338,
-							["coord"] = { 46.3, 26.6, DAZARALOR },
-						}),
-					},
-				}),
 				ach(12555, {	-- Welcome to Zandalar
 					["sourceQuests"] = { 52131 },	-- We Need Each Other
 					["races"] = HORDE_ONLY,

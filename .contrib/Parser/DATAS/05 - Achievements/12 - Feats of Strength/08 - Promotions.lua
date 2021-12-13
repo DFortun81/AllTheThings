@@ -64,7 +64,11 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		un(REMOVED_FROM_GAME, ach(11294)),		-- Murloc Battlemasters
 		un(REMOVED_FROM_GAME, ach(412)),		-- Murloc Costume
 		un(REMOVED_FROM_GAME, ach(3896)),		-- Onyx Panther (Korea only)
-		un(REMOVED_FROM_GAME, ach(10537)),		-- Patron of War
+		un(REMOVED_FROM_GAME, ach(10537, {		-- Patron of War
+			title(326, {	-- <Name>, Patron of War
+				["description"] = "Connect Twitch and Battle.net accounts and watch tournament streams",
+			}),
+		})),
 		un(REMOVED_FROM_GAME, ach(11931)),		-- Rides of War
 		un(REMOVED_FROM_GAME, ach(12454)),		-- Salute to Starcraft
 		ach(15323),	-- Sarge's Tale

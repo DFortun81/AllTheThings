@@ -239,7 +239,7 @@ local L = app.L;
 	--TODO: L.QUEST_ONCE_PER_ACCOUNT_FORMAT = "Completed By: %s";
 
 -- Settings.lua
-	--TODO: L.SKIP_AUTO_REFRESH = "Do Not Auto-Refresh!";
+	--TODO: L.SKIP_AUTO_REFRESH = "Skip Settings-Toggle Data Refreshes!";
 	--TODO: L.SKIP_AUTO_REFRESH_TOOLTIP = "By default (unchecked), any Settings change which may affect visible data will cause an automatic refresh.\n\nBy enabling this option, Settings changes won't take effect until the User performs a Full Refresh by Shift-Clicking on an ATT window.";
 	--TODO: L.AFTER_REFRESH = "After Refresh";
 
@@ -769,7 +769,6 @@ for key,value in pairs({
 	-- Secret Header
 		[-806] = "Cintiempo libre",									-- Waist of Time
 	-- Chests
-		[-850] = "Cofre mecanizado",								-- Mechanized Chest
 		[-851] = "Alijo del Imperio Negro",							-- Black Empire Cache
 	-- Heart of Azeroth
 		--TODO: [-853] = "All Roles",								-- All Roles
@@ -2334,6 +2333,7 @@ for key,value in pairs({
 	[282666] = "Urna de Agussu",	-- Urn of Agussu
 	[284426] = "Máquina minera enterrada",	-- Buried Mining Machine
 	[284448] = "Cofre de erudito oculto",	-- Hidden Scholar's Chest
+	[284454] = "Recompensa del Tiburón Blanco",	-- Da White Shark's Bounty
 	[284455] = "Lamento del Exiliado",	-- The Exile's Lament
 	[286016] = "Cuaderno de bitácora",	-- Ship's Log
 	[287081] = "Tablilla antigua",	-- Ancient Tablet
@@ -2409,6 +2409,7 @@ for key,value in pairs({
 	[293964] = "Alijo de contrabandista olvidado",	-- Forgotten Smuggler's Stash
 	[293965] = "Alijo de los Tallamarfil",	-- Scrimshaw Cache
 	[293985] = "Se busca: Guerrasangre",	-- Wanted: War Gore
+	[294084] = "Alijo de botín de la Sociedad de Aventureros",	-- Adventurer's Society Loot Stash
 	[294096] = "Orbe encendido",	-- Lit Orb
 	[294097] = "Semilla extraña",	-- Strange Seed
 	[294098] = "Rana pequeña",	-- Tiny Frog
@@ -2441,6 +2442,20 @@ for key,value in pairs({
 	[294703] = "Arcón oxidado de Huesardo",	-- Grimmy's Rusty Lockbox
 	[296479] = "Baúl del lord almirante",	-- Lord Admiral's Footlocker
 	[296536] = "Guja de centinela ensangrentada",	-- Bloodied Sentinel's Glaive
+	[296573] = "Hoja oxidada de Jason",	-- Jason's Rusty Blade
+	[296574] = "Botella vacía de Ian",	-- Ian's Empty Bottle
+	[296575] = "Plato roto de Julie",	-- Julie's Cracked Dish
+	[296579] = "Brújula rota de Brian",	-- Brian's Broken Compass
+	[296580] = "Diario encuadernado de Ofer",	-- Ofer's Bound Journal
+	[296581] = "Piedra mascota de Skye",	-- Skye's Pet Rock
+	[296582] = "Pie izquierdo de Julien",	-- Julien's Left Boot
+	[296583] = "Frasco de Navarro",	-- Navarro's Flask
+	[296584] = "Cantimplora de Zach",	-- Zach's Canteen
+	[296585] = "Mochila de Damarcus",	-- Damarcus' Backpack
+	[296586] = "Flauta de Rachel",	-- Rachel's Flute
+	[296587] = "Collar de colmillos de Josh",	-- Josh's Fang Necklace
+	[296588] = "Retrato del comandante Martens",	-- Portrait of Commander Martens
+	[296589] = "Llave ornamentada de Kurt",	-- Kurt's Ornate Key
 	[296915] = "Estela Drust: El círculo",	-- Drust Stele: The Circle
 	[296916] = "Estela Drust: El ritual",	-- Drust Stele: The Ritual
 	[296917] = "Estela Drust: El árbol",	-- Drust Stele: The Tree
@@ -2673,6 +2688,7 @@ for key,value in pairs({
 	[353687] = "Campana rota",	-- Broken Bell
 	[353688] = "Campana rota",	-- Broken Bell
 	[353691] = "Campana celeste",	-- Skyward Bell
+	[353791] = "Caja fuerte del castillo",	-- Castle Strongbox
 	[353792] = "Caja fuerte de la aldea",	-- Village Strongbox
 	[353793] = "Cofre de la parroquia",	-- Parish Chest
 	[353796] = "Relicario de recuerdos",	-- Reliquary of Remembrance
@@ -2881,6 +2897,7 @@ for key,value in pairs({
 	[369438] = "Alijo vinculafalla",	-- Riftbound Cache
 	[369439] = "Alijo vinculafalla",	-- Riftbound Cache
 	[369440] = "Alijo vinculafalla",	-- Riftbound Cache
+	[9962198] = "Charco mugroso improvisado de desterrado",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
 	--TODO: [9999892] = "Main Objective + 2 Bonus Areas",	-- Main Objective + 2 Bonus Areas

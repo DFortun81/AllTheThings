@@ -1974,7 +1974,7 @@ _.Zones =
 					["provider"] = { "n", 48366 },	-- Russell Brower
 				}),
 				q(26619, {	-- You Say You Want a Revolution
-					["sourceQuests"] = { 26540 },	-- Dangerous Compassion
+					["sourceQuests"] = { 26608 },	-- Negotiations Terminated
 					["provider"] = { "n", 43193 },	-- Warlord Krogg
 					["coord"] = { 82.4, 49.8, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,

@@ -6,7 +6,7 @@ _.Instances = {
 	--	putting description + coords/cost on these because not all the information shows up in all places.  you can't see the coords or cost from the currency window, just the description, but you can plot coords if you pop the currencies out.
 	-- i didn't put cost on the ones that have choices because i didn't want it to seem like you needed all the different currencies/items to purchase seals, and i didn't put cost on warforged seals because you exchange 50 for 3, which we can't communicate clearly in anything other than a description
 	tier(WOD_TIER, {
-		n(-10045, {	-- Currency
+		n(REWARDS, {
 			["g"] = {
 				currency(994, {		-- Seal of Tempered Fate
 					["description"] = "Purchased for 300g from an NPC at your Ashran hub in Draenor.\n\n|cff3f48ccAlliance:|r Purchased from Fate-Twister Seress in Stormshield |cffffffff(51.6,  61.8)|r.\n\n|cff880015Horde:|r Purchased from Fate-Twister Tiklal in Warspear |cffffffff(64.6, 62.0)|r.\n",

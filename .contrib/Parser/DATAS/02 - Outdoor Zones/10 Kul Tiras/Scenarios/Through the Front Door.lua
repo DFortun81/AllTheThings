@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KULTIRAS, {
-		n(-10069, {	-- Scenarios
+		n(SCENARIOS, {
 			["icon"] = "Interface\\Icons\\ability_demonhunter_imprison",
 			["g"] = {
 				m(1349, {	-- Tol Dagor

@@ -995,7 +995,10 @@ _.Zones =
 					q(47968, {	-- Signs and Portents
 						["coord"] = { 56.1, 35.2, DRUSTVAR },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = { 48622, }	-- The Vanishing Lord
+						["sourceQuests"] = { 48622, },	-- The Vanishing Lord
+						["g"] = {
+							i(179385),	-- Neglected Luck Pendant (added in SL)
+						},
 					}),
 				}),
 				q(49939, {	-- So Long, Sister

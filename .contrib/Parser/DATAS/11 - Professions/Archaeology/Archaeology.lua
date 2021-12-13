@@ -1952,7 +1952,7 @@ profession(ARCHAEOLOGY, {
 });
 
 root("HiddenQuestTriggers", {
-	profession(ARCHAEOLOGY, {
+	prof(ARCHAEOLOGY, {
 		q(33823),	-- Tracking Quest - Archaeology - Frostfire - Dig Map #1
 		q(33824),	-- Tracking Quest - Archaeology - Frostfire - Dig Map #2
 		q(33825),	-- Tracking Quest - Archaeology - Frostfire - Dig Map #3

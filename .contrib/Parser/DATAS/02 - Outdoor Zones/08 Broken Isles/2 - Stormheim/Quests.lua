@@ -1071,16 +1071,13 @@ _.Zones =
 				q(45534, {	-- A Common Enemy
 					["provider"] = { "n", 117394 },	-- Sigryn
 				}),
-				q(40614),	-- A Feast Fit for Odyn
 				q(40078),	-- A Heavy Burden
-				q(45482),	-- Arcane: Fate of the Tideskorn
 				q(46006),	-- Arkuthaz
 				q(43560),	-- Audience with the Windlord
 				q(46110),	-- Battle for Stormheim
 				q(40857),	-- Bits and Pieces
 				q(40867),	-- Bubble Baubles
 				q(40540),	-- Come at Me, Brul
-				q(41169),	-- Darkheart Thicket: Through the Fog
 				q(47767),	-- Death Metal Knight
 				q(39125),	-- Demon Destroyer
 				q(40110),	-- Disrupt the Inkbinders
@@ -1093,7 +1090,6 @@ _.Zones =
 				q(41158),	-- Fragments of the Fjords
 				q(38607),	-- Gates of Valhallas
 				q(38670),	-- Goredome 2
-				q(40615),	-- Halls of Valor: Odyn's Blessing
 				q(38625),	-- Hook & Sinker
 				q(38630),	-- Horde Kill Squad (Alliance Only)
 				q(38712),	-- Houndmaster Ely
@@ -1103,16 +1099,11 @@ _.Zones =
 				q(38785),	-- Living Leystone Sample
 				q(38774),	-- Lost Ettin
 				q(38422),	-- Makrura Wave Event
-				q(40613),	-- Maw of Souls: Retrieving the Svalnguard
 				q(39944),	-- Mysterious Messages
 				q(44116),	-- Mystery at Citrine Bay
-				q(40672),	-- Neltharion's Lair: Presentation is Key
 				q(39947),	-- Not So Complex?
 				q(41164),	-- One Step Closer
 				q(41161),	-- Out of the Frying Pan
-				q(46798),	-- Paragon of the Valarjar
-				q(43528),	-- Planning the Assault
-				q(43898),	-- Preparing to Move
 				q(41159),	-- Process of Elimination
 				q(42399),	-- Ready to Work
 				q(47052),	-- Retribution: Fate of the Tideskorn

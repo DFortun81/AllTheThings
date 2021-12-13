@@ -111,6 +111,9 @@ _.Zones =
 						}),
 						i(142361, {	-- Ivory Talon
 							i(142363),	-- Mark of Prey
+							title(346, {	-- <Name>, Talon's Vengeance
+								["collectible"] = false,
+							}),
 						}),
 						i(142366),	-- Regurgitated Leaf
 					}),

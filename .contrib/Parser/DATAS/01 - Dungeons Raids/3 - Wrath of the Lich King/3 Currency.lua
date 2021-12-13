@@ -4,7 +4,7 @@
 
 _.Instances = {
 	tier(WOTLK_TIER, {
-		n(-10045, {	-- Currency
+		n(REWARDS, {
 			i(40752, {	-- Emblem of Heroism (CurrencyID:101)
 				["timeline"] = {
 					"added 3.0.2.8905",

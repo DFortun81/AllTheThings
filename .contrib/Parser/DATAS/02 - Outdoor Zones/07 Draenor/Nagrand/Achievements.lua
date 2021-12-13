@@ -17,60 +17,6 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(9548,  {	-- Buried Treasures (Mok'gol Watchpost)
-					crit(1, {	-- Garrosh's Shackles
-						["questID"] = 37130,
-						["coord"] = { 41.7, 37.5, DRAENOR_NAGRAND },
-					}),
-					crit(2, {	-- Warsong Relics
-						["questID"] = 37132,
-						["coord"] = { 45.5, 36.8, DRAENOR_NAGRAND },
-					}),
-					crit(3, {	-- Warsong Remains
-						["questID"] = 37133,
-						["description"] = "Kill Mok'gol Wolfsong for a Wolf Totem, dig in dirt piles as a spectral wolf at a chance to find this item.",
-						["coords"] = {
-							{ 43.0, 35.6, DRAENOR_NAGRAND },
-							{ 45.7, 37.1, DRAENOR_NAGRAND },
-							{ 43.6, 38.8, DRAENOR_NAGRAND },
-							{ 44.0, 34.3, DRAENOR_NAGRAND },
-							{ 42.7, 37.6, DRAENOR_NAGRAND },
-							{ 43.3, 36.6, DRAENOR_NAGRAND },
-						},
-					}),
-					crit(4, {	-- Stolen Draenei Tome
-						["questID"] = 37134,
-						["coords"] = {
-							{ 45.3, 33.8, DRAENOR_NAGRAND },
-							{ 45.1, 38.2, DRAENOR_NAGRAND },
-							{ 42.0, 34.0, DRAENOR_NAGRAND },
-						},
-					}),
-					crit(5, {	-- Wolf Pup Remains
-						["questID"] = 37135,
-						["description"] = "Kill Mok'gol Wolfsong for a Wolf Totem, dig in dirt piles as a spectral wolf at a chance to find this item.",
-						["coords"] = {
-							{ 43.0, 35.6, DRAENOR_NAGRAND },
-							{ 45.7, 37.1, DRAENOR_NAGRAND },
-							{ 43.6, 38.8, DRAENOR_NAGRAND },
-							{ 44.0, 34.3, DRAENOR_NAGRAND },
-							{ 42.7, 37.6, DRAENOR_NAGRAND },
-							{ 43.3, 36.6, DRAENOR_NAGRAND },
-						},
-					}),
-					crit(6, {	-- Gnarled Bone
-						["questID"] = 37136,
-						["description"] = "Kill Mok'gol Wolfsong for a Wolf Totem, dig in dirt piles as a spectral wolf at a chance to find this item.",
-						["coords"] = {
-							{ 43.0, 35.6, DRAENOR_NAGRAND },
-							{ 45.7, 37.1, DRAENOR_NAGRAND },
-							{ 43.6, 38.8, DRAENOR_NAGRAND },
-							{ 44.0, 34.3, DRAENOR_NAGRAND },
-							{ 42.7, 37.6, DRAENOR_NAGRAND },
-							{ 43.3, 36.6, DRAENOR_NAGRAND },
-						},
-					}),
-				}),
 				ach(9610,  {	-- History of Violence (Broken Precipice)
 					["description"] = "In order to get the relics, except the Bust, use Jewel of Transformation in the area and then break boulder piles.",
 					["g"] = {

@@ -239,7 +239,7 @@ local L = app.L;
 	--TODO: L.QUEST_ONCE_PER_ACCOUNT_FORMAT = "Completed By: %s";
 
 -- Settings.lua
-	--TODO: L.SKIP_AUTO_REFRESH = "Do Not Auto-Refresh!";
+	--TODO: L.SKIP_AUTO_REFRESH = "Skip Settings-Toggle Data Refreshes!";
 	--TODO: L.SKIP_AUTO_REFRESH_TOOLTIP = "By default (unchecked), any Settings change which may affect visible data will cause an automatic refresh.\n\nBy enabling this option, Settings changes won't take effect until the User performs a Full Refresh by Shift-Clicking on an ATT window.";
 	--TODO: L.AFTER_REFRESH = "After Refresh";
 
@@ -763,7 +763,6 @@ for key,value in pairs({
 	-- Secret Header
 		[-806] = "Cinta del Perditempo",							-- Waist of Time
 	-- Chests
-		[-850] = "Forziere Meccanizzato",							-- Mechanized Chest
 		[-851] = "Cassa dell'Impero Nero",							-- Black Empire Cache
 	-- Heart of Azeroth
 		--TODO: [-853] = "All Roles",								-- All Roles
@@ -2328,6 +2327,7 @@ for key,value in pairs({
 	[282666] = "Urna di Agussu",	-- Urn of Agussu
 	[284426] = "Macchina da Estrazione Sepolta",	-- Buried Mining Machine
 	[284448] = "Cassa Nascosta dello Studioso",	-- Hidden Scholar's Chest
+	[284454] = "Bottino dello Squalo Bianco",	-- Da White Shark's Bounty
 	[284455] = "Lamento dell'Esule",	-- The Exile's Lament
 	[286016] = "Diario di Bordo",	-- Ship's Log
 	[287081] = "Antica Tavoletta",	-- Ancient Tablet
@@ -2403,6 +2403,7 @@ for key,value in pairs({
 	[293964] = "Scorte del Contrabbandiere Dimenticate",	-- Forgotten Smuggler's Stash
 	[293965] = "Cassetta dei Bendarozza",	-- Scrimshaw Cache
 	[293985] = "RICERCATO: Sbudellaguerra",	-- Wanted: War Gore
+	[294084] = "Bottino Segreto della Compagnia dell'Avventuriero",	-- Adventurer's Society Loot Stash
 	[294096] = "Globo Acceso",	-- Lit Orb
 	--TODO: [294097] = "Strange Seed",	-- Strange Seed
 	--TODO: [294098] = "Tiny Frog",	-- Tiny Frog
@@ -2435,6 +2436,20 @@ for key,value in pairs({
 	--TODO: [294703] = "Grimmy's Rusty Lockbox",	-- Grimmy's Rusty Lockbox
 	[296479] = "Scrigno dell'Ammiraglio Supremo",	-- Lord Admiral's Footlocker
 	[296536] = "Trilama Insanguinata della Sentinella",	-- Bloodied Sentinel's Glaive
+	[296573] = "Lama Arrugginita di Jason",	-- Jason's Rusty Blade
+	[296574] = "Bottiglia Vuota di Ian",	-- Ian's Empty Bottle
+	[296575] = "Piatto Spaccato di Julie",	-- Julie's Cracked Dish
+	[296579] = "Bussola Rotta di Brian",	-- Brian's Broken Compass
+	[296580] = "Diario Rilegato di Ofer",	-- Ofer's Bound Journal
+	[296581] = "Sassolino di Skye",	-- Skye's Pet Rock
+	[296582] = "Stivale Sinistro di Julien",	-- Julien's Left Boot
+	[296583] = "Fiasca di Navarro",	-- Navarro's Flask
+	[296584] = "Borraccia di Zach",	-- Zach's Canteen
+	[296585] = "Zaino di Damarcus",	-- Damarcus' Backpack
+	[296586] = "Flauto di Rachel",	-- Rachel's Flute
+	[296587] = "Collana di Zanne di Josh",	-- Josh's Fang Necklace
+	[296588] = "Ritratto del Comandante Martens",	-- Portrait of Commander Martens
+	[296589] = "Chiave Adornata di Kurt",	-- Kurt's Ornate Key
 	[296915] = "Stele dei Drust: Circolo",	-- Drust Stele: The Circle
 	[296916] = "Stele dei Drust: Rituale",	-- Drust Stele: The Ritual
 	[296917] = "Stele dei Drust: Albero",	-- Drust Stele: The Tree
@@ -2667,6 +2682,7 @@ for key,value in pairs({
 	[353687] = "Campana Rotta",	-- Broken Bell
 	[353688] = "Campana Rotta",	-- Broken Bell
 	[353691] = "Campana della Vetta",	-- Skyward Bell
+	[353791] = "Forziere del Castello",	-- Castle Strongbox
 	[353792] = "Forziere del Villaggio",	-- Village Strongbox
 	[353793] = "Cassa del Distretto",	-- Parish Chest
 	[353796] = "Reliquiario della Rimembranza",	-- Reliquary of Remembrance
@@ -2875,6 +2891,7 @@ for key,value in pairs({
 	[369438] = "Cassa Vincolata alla Fenditura",	-- Riftbound Cache
 	[369439] = "Cassa Vincolata alla Fenditura",	-- Riftbound Cache
 	[369440] = "Cassa Vincolata alla Fenditura",	-- Riftbound Cache
+	[9962198] = "Pozza di Fango Improvvisata dell'Esiliato",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
 	--TODO: [9999892] = "Main Objective + 2 Bonus Areas",	-- Main Objective + 2 Bonus Areas

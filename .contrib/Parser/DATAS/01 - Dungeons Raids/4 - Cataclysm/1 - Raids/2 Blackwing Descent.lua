@@ -74,6 +74,9 @@ _.Instances = { tier(CATA_TIER, {
 						["creatureID"] = 41378,
 						["groups"] = {
 							ach(5310),	-- Aberrant Behavior
+							title(147, {	-- <Name>, Slayer of Stupid, Incompetent and Disappointing Minions
+								["collectible"] = false,
+							}),
 							i(152967),	-- Experiment-In-A-Jar (PET!)
 							i(59347),	-- Mace of Acrid Death
 							i(59344),	-- Dragon Bone Warhelm
@@ -202,6 +205,9 @@ _.Instances = { tier(CATA_TIER, {
 						["groups"] = {
 							ach(5108),	-- Heroic: Maloriak
 							ach(5310),	-- Aberrant Behavior
+							title(147, {	-- <Name>, Slayer of Stupid, Incompetent and Disappointing Minions
+								["collectible"] = false,
+							}),
 							i(152967),	-- Experiment-In-A-Jar (PET!)
 							i(67428),	-- Leggings of the Forlorn Conqueror
 							i(67427),	-- Leggings of the Forlorn Protector

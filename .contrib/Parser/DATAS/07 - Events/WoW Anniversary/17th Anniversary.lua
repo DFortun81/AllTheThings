@@ -1,14 +1,13 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
--- Todo: Check when it's live
-root("WorldEvents", n(SEVENTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = WOW_ANNIVERSARY, },{
+
+root("WorldEvents", n(SEVENTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 	ach(14942),	-- WoW's 17th Anniversary
 	n(MAILBOX, {
 		i(185906, {	-- Anniversary Gift
 			i(185907),	-- Celebration Package
 			i(172013),	-- Celebration Firework
-			--currency(1166),	-- Timewarped Badge
 			q(57249, {	-- A Timely Invitation
 				["provider"] = { "i", 171177 },	-- Invitation from the Timewalkers
 				["coord"] = { 53.6, 54.8, CAVERNS_OF_TIME },
@@ -22,9 +21,6 @@ root("WorldEvents", n(SEVENTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = WOW_ANNIVERS
 			["provider"] = { "n", 157113 },	-- Chromie
 			["coord"] = { 53.5, 54.7, CAVERNS_OF_TIME },
 			["isWeekly"] = true,
-			["g"] = {
-				--currency(1166),	-- Timewarped Badge
-			},
 		}),
 	}),
 	n(VENDORS, {
