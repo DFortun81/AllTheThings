@@ -420,6 +420,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										["cost"] = {
 											{ "i", 178061, 1 },	-- 1xMalleable Flesh
 										},
+										["_drop"] = { "g" },
 									}),
 									q(57597, {
 										["name"] = "Construct Body: Flytrap",
@@ -534,6 +535,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 									["provider"] = { "n", 167150 },	-- Rathan
 									["coord"] = { 55.1, 68.8, MALDRAXXUS },
+									["_drop"] = { "g" },
 								}),
 								q(60195, {	-- Build One More
 									["sourceQuests"] = { 60042 },	-- May I Take Your Order?
