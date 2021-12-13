@@ -459,12 +459,7 @@ local function GetTempDataSubMember(member, submember, default)
 		return default;
 	end
 end
-local function ReturnTrue()
-	return true;
-end
-local function ReturnFalse()
-	return false;
-end
+
 -- Returns an object which contains no data, but can return values from an overrides table, and be loaded/created when a specific field is attempted to be referenced
 -- i.e. Create a data group which contains no information but will attempt to populate itself when [loadField] is referenced
 app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
@@ -503,8 +498,8 @@ app.SetDataSubMember = SetDataSubMember;
 app.GetDataSubMember = GetDataSubMember;
 app.GetTempDataMember = GetTempDataMember;
 app.GetTempDataSubMember = GetTempDataSubMember;
-app.ReturnTrue = ReturnTrue;
-app.ReturnFalse = ReturnFalse;
+app.ReturnTrue = function() return true; end
+app.ReturnFalse = function() return false; end
 
 local function RoundNumber(number, decimalPlaces)
 	local ret;
