@@ -6598,7 +6598,7 @@ app.CreateCache = function(idField)
 		if _t then
 			-- set a default provided cache value if any default function was provided and evalutes to a value
 			if not rawget(_t, field) and default_function then
-				local defVal = default_function(t);
+				local defVal = default_function(t, field);
 				if defVal then rawset(_t, field, defVal); end
 			end
 			return rawget(_t, field);
@@ -7148,9 +7148,37 @@ end)();
 
 -- Battle Pet Lib
 (function()
+-- localized global APIs
+local C_PetBattles_GetAbilityInfoByID = C_PetBattles.GetAbilityInfoByID;
+local C_PetJournal_GetNumCollectedInfo = C_PetJournal.GetNumCollectedInfo;
+local C_PetJournal_GetPetInfoByPetID = C_PetJournal.GetPetInfoByPetID;
+local C_PetJournal_GetPetInfoBySpeciesID = C_PetJournal.GetPetInfoBySpeciesID;
+
+local cache = app.CreateCache("speciesID");
+local function CacheInfo(t, field)
+	local t, id = cache.GetCached(t);
+	-- speciesName, speciesIcon, petType, companionID, tooltipSource, tooltipDescription, isWild,
+	-- canBattle, isTradeable, isUnique, obtainable, creatureDisplayID = C_PetJournal.GetPetInfoBySpeciesID(speciesID)
+	local speciesName, speciesIcon, petType, _, _, tooltipDescription, _, _, _, _, _, creatureDisplayID = C_PetJournal_GetPetInfoBySpeciesID(id);
+	if speciesName then
+		t.name = speciesName;
+		t.icon = speciesIcon;
+		t.petTypeID = petType;
+		t.lore = tooltipDescription;
+		t.displayID = creatureDisplayID;
+		t.text = "|cff0070dd"..speciesName.."|r";
+		if field then return t[field]; end
+	end
+end
+local function default_link(t)
+	if t.itemID then
+		return select(2, GetItemInfo(t.itemID));
+	end
+	return t.text;
+end
 local CollectedSpeciesHelper = setmetatable({}, {
 	__index = function(t, key)
-		if C_PetJournal.GetNumCollectedInfo(key) > 0 then
+		if C_PetJournal_GetNumCollectedInfo(key) > 0 then
 			rawset(t, key, 1);
 			return 1;
 		end
@@ -7176,31 +7204,25 @@ local fields = {
 		end
 	end,
 	["text"] = function(t)
-		return "|cff0070dd" .. (t.name or RETRIEVING_DATA) .. "|r";
+		return cache.GetCachedField(t, "text", CacheInfo);
 	end,
 	["icon"] = function(t)
-		return select(2, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
+		return cache.GetCachedField(t, "icon", CacheInfo);
 	end,
 	["lore"] = function(t)
-		return select(6, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
+		return cache.GetCachedField(t, "lore", CacheInfo);
 	end,
 	["displayID"] = function(t)
-		return select(12, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
+		return cache.GetCachedField(t, "displayID", CacheInfo);
 	end,
 	["petTypeID"] = function(t)
-		return select(3, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
+		return cache.GetCachedField(t, "petTypeID", CacheInfo);
 	end,
 	["name"] = function(t)
-		return select(1, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
+		return cache.GetCachedField(t, "name", CacheInfo);
 	end,
 	["link"] = function(t)
-		if t.itemID then
-			local link = select(2, GetItemInfo(t.itemID));
-			if link then
-				t.link = link;
-				return link;
-			end
-		end
+		return cache.GetCachedField(t, "link", default_link);
 	end,
 	["tsm"] = function(t)
 		return string.format("p:%d:1:3", t.speciesID);
@@ -7212,9 +7234,9 @@ app.CreateSpecies = function(id, t)
 end
 
 app.events.NEW_PET_ADDED = function(petID)
-	local speciesID = select(1, C_PetJournal.GetPetInfoByPetID(petID));
+	local speciesID = select(1, C_PetJournal_GetPetInfoByPetID(petID));
 	-- print("NEW_PET_ADDED", petID, speciesID);
-	if speciesID and C_PetJournal.GetNumCollectedInfo(speciesID) > 0 and not rawget(CollectedSpeciesHelper, speciesID) then
+	if speciesID and C_PetJournal_GetNumCollectedInfo(speciesID) > 0 and not rawget(CollectedSpeciesHelper, speciesID) then
 		-- print("not already learned pet")
 		rawset(CollectedSpeciesHelper, speciesID, 1);
 		UpdateSearchResults(SearchForField("speciesID", speciesID));
@@ -7232,7 +7254,7 @@ app.events.PET_JOURNAL_PET_DELETED = function(petID)
 	-- Check against all of the collected species for a species that is no longer 1/X
 	local atLeastOne = false;
 	for speciesID,collected in pairs(CollectedSpeciesHelper) do
-		if C_PetJournal.GetNumCollectedInfo(speciesID) < 1 then
+		if C_PetJournal_GetNumCollectedInfo(speciesID) < 1 then
 			rawset(CollectedSpeciesHelper, speciesID, nil);
 			atLeastOne = true;
 		end
@@ -7249,13 +7271,13 @@ local fields = {
 		return "petAbilityID";
 	end,
 	["text"] = function(t)
-		return select(2, C_PetBattles.GetAbilityInfoByID(t.petAbilityID));
+		return select(2, C_PetBattles_GetAbilityInfoByID(t.petAbilityID));
 	end,
 	["icon"] = function(t)
-		return select(3, C_PetBattles.GetAbilityInfoByID(t.petAbilityID));
+		return select(3, C_PetBattles_GetAbilityInfoByID(t.petAbilityID));
 	end,
 	["description"] = function(t)
-		return select(5, C_PetBattles.GetAbilityInfoByID(t.petAbilityID));
+		return select(5, C_PetBattles_GetAbilityInfoByID(t.petAbilityID));
 	end,
 };
 app.BasePetAbility = app.BaseObjectFields(fields);
