@@ -9,6 +9,7 @@ root("Zones", m(SHADOWLANDS, {
 			2028,	-- Locarian Esper
 			2029,	-- Gravid Repose
 			2030,	-- Nexus of Actualization
+			2031,	-- Crypts of the Eternal
 		},
 	}),
 }));

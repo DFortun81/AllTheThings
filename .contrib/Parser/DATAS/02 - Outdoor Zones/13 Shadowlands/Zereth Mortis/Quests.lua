@@ -530,6 +530,67 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 33.8, 49.4, ZERETH_MORTIS },
 			}),
 			-- End
+
+			-- Hanoa Questline
+			q(64772, {	-- Broken Circle
+				["description"] = "This Questline is available after researching Altonian Understanding",
+				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
+				["provider"] = { "n", 181091 },	-- Hanoa the Exile
+				["coord"] = { 40.1, 42.1, ZERETH_MORTIS },
+			}),
+			q(64773, {	-- A Jiro Guide to Not Being Eaten
+				["sourceQuests"] = { 64772 },	-- Broken Circle
+				["provider"] = { "n", 181098 },	-- Olea Pau
+				["coord"] = { 38, 39.8, ZERETH_MORTIS },
+			}),
+			q(64713, {	-- Picking Up the Pieces... Literally
+				["sourceQuests"] = { 64772 },	-- Broken Circle
+				["provider"] = { "n", 180919 },	-- Olea Novi
+				["coord"] = { 36.7, 37.7, ZERETH_MORTIS },
+			}),
+			q(65370, {	-- Gut Check
+				["sourceQuests"] = { 64772 },	-- Broken Circle
+				["provider"] = { "n", 181102 },	-- Olea Manu
+				["coord"] = { 38.2, 35.3, ZERETH_MORTIS },
+			}),
+			q(64775, {	-- Mawdified Behavior
+				["sourceQuests"] = {
+					64773,	-- A Jiro Guide to Not Being Eaten
+					64713,	-- Picking Up the Pieces... Literally
+					65370,	-- Gut Check
+				},
+				["provider"] = { "n", 180984 },	-- Hanoa the Exile
+				["coord"] = { 39.5, 31.9, ZERETH_MORTIS },
+			}),
+			q(64739, {	-- Zovaal's Grasp
+				["sourceQuests"] = { 64775 },	-- Mawdified Behavior
+				["provider"] = { "n", 184469 },	-- Hanoa the Exile
+				["coord"] = { 39.4, 32.2, ZERETH_MORTIS },
+			}),
+			q(64778, {	-- Rift Recon
+				["sourceQuests"] = { 64739 },	-- Zovaal's Grasp
+				["provider"] = { "n", 18170 },	-- Olea Manu
+				["coord"] = { 42.7, 31.6, ZERETH_MORTIS },
+			}),
+			q(64780, {	-- Mawsteel, Maw Problems
+				["sourceQuests"] = { 64739 },	-- Zovaal's Grasp
+				["provider"] = { "n", 181177 },	-- Olea Novi
+				["coord"] = { 42.6, 31.6, ZERETH_MORTIS },
+			}),
+			q(64779, {	-- Pound of Flesh
+				["sourceQuests"] = { 64739 },	-- Zovaal's Grasp
+				["provider"] = { "n", 181174 },	-- Olea Pau
+				["coord"] = { 42.3, 31.5, ZERETH_MORTIS },
+			}),
+			q(65219, {	-- Jiro to Hero
+				["sourceQuests"] = {
+					64778,	-- Rift Recon
+					64780,	-- Mawsteel, Maw Problems
+					64779,	-- Pound of Flesh
+				},
+				["provider"] = { "n", 180989 },	-- Hanoa the Exile
+				["coord"] = { 42.7, 31.4, ZERETH_MORTIS },
+			}),
 		}),
 		n(QUESTS, sharedData({ ["isDaily"] = true }, {
 			q(65264, {	-- Operation: Relocation
@@ -552,6 +613,17 @@ root("Zones", m(SHADOWLANDS, {
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
 			}),
+			q(65177, {	-- Fruit of the Bloom
+				["sourceQuests"] = { 65305 },	-- The Way Forward (Chap 3)
+				["provider"] = { "n", 177958 },	-- Firim
+				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
+			}),
+			q(64592, {	-- Historic Protection
+				["description"] = "This Daily is available after researching Altonian Understanding",
+				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
+				["provider"] = { "n", 180289 },	-- Mai Soh
+				["coord"] = { 58.3, 50, ZERETH_MORTIS },
+			}),
 			q(65142, {	-- Portal Play
 				--["sourceQuests"] = { 65305 },	-- The Way Forward (Chap 3)
 				["provider"] = { "n", 177958 },	-- Firim
@@ -573,4 +645,7 @@ root("HiddenQuestTrigger", {
 	q(65340),	-- Fourth Locus arrangement at Gravid Repose
 	q(65341),	-- Fifth Locus arrangement at Gravid Repose
 	q(65342),	-- Ultimate Locus arrangement at Gravid Repose
+
+	-- RP
+	q(65233),	-- RP after Jiro to Hero(65219)
 });

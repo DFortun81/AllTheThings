@@ -67,6 +67,11 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 46.6, 31, ZERETH_MORTIS },
 				["questID"] = 65540,
 			}),
+			o(373579, {	-- Prying Eye Discovery
+				["description"] = "Only available during Portal Play Daily",
+				["coord"] = { 35.2, 43.7, ZERETH_MORTIS },
+				["questID"] = 65184,
+			}),
 		--	o(,{	-- Provis Cache (Needs Keys)
 		--		["coord"] = { 42, 51.9, ZERETH_MORTIS },
 		--		["questID"] = ??
@@ -102,10 +107,16 @@ root("Zones", m(SHADOWLANDS, {
 					{ 48.2, 42.8, ZERETH_MORTIS },
 					{ 68.5, 36.1, ZERETH_MORTIS },
 					{ 62, 42, ZERETH_MORTIS },
+					{ 60.3, 71.6, ZERETH_MORTIS },
 				},
 			}),
 			o(375373, {	-- Discarded Automa Scrap
-				["coord"] = { 41.2, 72.9, ZERETH_MORTIS },
+				["coords"] = {
+					{ 41.2, 72.9, ZERETH_MORTIS },
+					{ 40.1, 69.4, ZERETH_MORTIS },
+					{ 50.6, 93, ZERETH_MORTIS },
+					{ 62.1, 74.9, ZERETH_MORTIS },
+				},
 			}),
 			o(375363, {	-- Mawsworn Supply Chest (Open two times same position within 15min)
 				["coords"] = {
@@ -116,6 +127,8 @@ root("Zones", m(SHADOWLANDS, {
 					{ 61, 16.5, ZERETH_MORTIS },
 					{ 67.6, 29.5, ZERETH_MORTIS },
 					{ 66.6, 32.1, ZERETH_MORTIS },
+					{ 46.1, 24.1, ZERETH_MORTIS },
+					{ 63.3, 21, ZERETH_MORTIS },
 				},
 			}),
 			o(375366, {	-- Tarachnid Eggs
@@ -147,6 +160,16 @@ root("Zones", m(SHADOWLANDS, {
 					{ 63.2, 19.6, ZERETH_MORTIS },
 					{ 29.3, 51.8, ZERETH_MORTIS },
 					{ 35.4, 51.7, ZERETH_MORTIS },
+					{ 51.1, 65.3, ZERETH_MORTIS },
+					{ 42.7, 76.4, ZERETH_MORTIS },
+					{ 39.8, 56.4, ZERETH_MORTIS },
+					{ 44.8, 50.8, ZERETH_MORTIS },
+					{ 54.2, 76.3, ZERETH_MORTIS },
+					{ 53.1, 71.3, ZERETH_MORTIS },
+					{ 59.4, 25, ZERETH_MORTIS },
+					{ 59.9, 34, ZERETH_MORTIS },
+					{ 59.6, 32.4, ZERETH_MORTIS },
+					{ 36.2, 38.4, ZERETH_MORTIS },
 				},
 			})
 
@@ -158,11 +181,19 @@ root("HiddenQuestTriggers", {
 	--q(65376),	-- Triggered when I died (Probably related to chest I opened before Fallen Vault)
 	--q(65377),	-- Triggered when I died (Probably related to chest I opened before Fallen Vault)
 	--q(65464),	-- Triggered when I died (Probably related to chest I opened before Fallen Vault)
-	--q(65322),	-- Triggered when I completed the puzzle, Fugueal At 38.5 35.5
-	--q(65316),	-- Triggered when I completed the puzzle, Mezzonic At 38.5 35.5 / 56.0 84.1??
-	--q(65323),	-- Triggered when I completed the puzzle
-	--q(65091),	-- Triggered when I completed the puzzle, Mezzonic At 39.3 60.4
+	-- Puzzle Chests AlexSoft = AS, Cantaric = Berlekamp's Switch Game, Mezzonic = Lights Out, Fugueal = 4 Properties Game, Glissandian = Bejeweled Puzzle, Toccatian = Crossed Lines
+	--q(65322),	-- Triggered when I completed the puzzle, Fugueal At 38.5 35.5 / AS:42.3 68.8??
+	--q(65316),	-- Triggered when I completed the puzzle, Mezzonic At 38.5 35.5 / AS:56.0 84.1??
+	--q(65318),	-- Triggered when I completed the puzzle, Cantaric at 48.7, 87.5 / AS:48.6 87.5 Ok.
+	--q(65323),	-- Triggered when I completed the puzzle, --- at 44.7, 76.1
+	--q(65091),	-- Triggered when I completed the puzzle, Mezzonic At 39.3 60.4 / AS:39.3 60.4 (Unsure of Name) Ok.
+	--q(65093),	-- Triggered when I completed the puzzle, Fugueal At 57.5 65.8
+	--q(65321),	-- Triggered when I completed the puzzle, Glissandian At 40, 72.9 / AS:40.0 72.9
+	--q(65092),	-- Triggered when I completed the puzzle, Glissandian At 58.9, 36.4 / AS:58.9 36.4
+	--q(65092),	-- Triggered when I completed the puzzle, Toccatian At 67.8, 27.4 / AS:67.9 27.3
 	-- Concordances
 	q(65215),	-- Tranquil Concordance at 60.2 47.1
 	q(65209),	-- Tranquil Concordance at 49.3 71.6
+	q(65212),	-- Tranquil Concordance at 38.9 48.5
+	q(64940),	-- Tranquil Concordance at 32.2 62.9
 });

@@ -1055,12 +1055,12 @@ _.Zones =
 				q(64942, {	-- Call of the Primus
 					--["sourceQuests"] = {},
 					["provider"] = { "n", 181655 },	-- The Primus
-					["coord"] = { 32.6, 51, 2041 },
+					["coord"] = { 32.6, 51, 2042 },
 				}),
 				q(64944, { -- A Hasty Voyage
 					["sourceQuests"] = { 64942 },	-- Call of the Primus
 					["provider"] = { "n", 181655 },	-- The Primus
-					["coord"] = { 34.2, 52.3, 2041 },
+					["coord"] = { 34.2, 52.3, 2042 },
 				}),
 				q(64958, {	-- The Forces Gather (Gives First Ach Crit when Completed)
 					["sourceQuests"] = { 64957 },	-- The Old Waystone

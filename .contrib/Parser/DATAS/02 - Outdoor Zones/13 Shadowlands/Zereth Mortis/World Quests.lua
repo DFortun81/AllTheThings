@@ -18,6 +18,9 @@ root("Zones", m(SHADOWLANDS, {
 					q(65117, {	-- Bad Samples
 						["coord"] = { 44.1, 30.8, ZERETH_MORTIS },
 					}),
+					q(65244, {	-- Devourable
+						["coord"] = { 42.1, 71, ZERETH_MORTIS },
+					}),
 					q(64960, {	-- Feed the Worms
 						["coord"] = { 56.8, 31.9, ZERETH_MORTIS },
 					}),
@@ -48,6 +51,9 @@ root("Zones", m(SHADOWLANDS, {
 					}),
 					q(65414, {	-- Perplexing Problem
 						["coord"] = { 63.1, 36.5, ZERETH_MORTIS },
+					}),
+					q(65412, {	-- Puzzling It Out
+						["coord"] = { 51.3, 25.8, ZERETH_MORTIS },
 					}),
 				})),
 			},

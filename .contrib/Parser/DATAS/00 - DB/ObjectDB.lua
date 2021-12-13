@@ -2165,6 +2165,7 @@ _.ObjectNames = {
 	[370140] = "Damaged Jiro Stash",
 	[373543] = "Library Vault",
 	[373548] = "Template Archive",
+	[373579] = "Prying Eye Discovery",
 	[374976] = "Symphonic Vault",
 	[375272] = "Mawsworn Cache",
 	[375281] = "Stolen Relic",
