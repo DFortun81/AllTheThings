@@ -417,6 +417,8 @@ _.Zones =
 					["g"] = {
 						i(180589),	-- Soullocked Sinstone (PET!)
 						i(180395),	-- Nathrezim Crusader's Hauberk
+						i(180400),	-- Inquisitions Final Judgment
+						i(180339),	-- Shadow-Lined Chalice
 					},
 				}),
 				o(351540, {	-- Secret Treasure
@@ -424,6 +426,11 @@ _.Zones =
 					["questID"] = 60196,
 					["isDaily"] = true,	-- ?? repeatable?
 					["coord"] = { 73.8, 46.3, REVENDRETH },
+					["g"] = {
+						i(180395),	-- Nathrezim Crusader's Hauberk
+						i(180400),	-- Inquisitions Final Judgment
+						i(180339),	-- Shadow-Lined Chalice
+					},
 				}),
 				o(351541, {	-- Secret Treasure
 					["description"] = "Enter the crypt at |cFFFFFFFF41.9, 50.0|r.  Downstairs, go through the right-hand door.  On the left side of the room is a bookshelf with a |cFFFFFFFFNondescript Book|r.  Click the book, and the treasure will appear.",
@@ -475,6 +482,16 @@ _.Zones =
 						i(182970, {	-- Burgleclipped Portrait
 							["customCollect"] = "SL_COV_VEN",
 						}),
+					},
+				}),
+				o(337241, {	-- Stashed Equipment
+					["description"] = "Opening a Crypt Door with the Atonement Crypt Key has a chance to reveal this treasure.",
+					["sourceQuests"] = { 57928 },	-- Atonement Crypt Key
+					["cost"] = { { "i", 172957, 1 } },	-- 1x Atonement Crypt Key
+					["g"] = {
+						i(180395),	-- Nathrezim Crusader's Hauberk
+						i(180400),	-- Inquisitions Final Judgment
+						i(180339),	-- Shadow-Lined Chalice
 					},
 				}),
 				o(349798, {	-- Smuggled Cache
@@ -552,6 +569,9 @@ _.Zones =
 						["questID"] = 60938,
 						["isDaily"] = true,
 						["coord"] = { 43.8, 57.1, REVENDRETH },
+						["g"] = {
+							i(182722),	-- Mail Courier's Cap
+						},
 					}),
 					o(354109, {	-- Stoneborn Satchel
 						["questID"] = 60944,
@@ -562,6 +582,9 @@ _.Zones =
 						["questID"] = 60943,
 						["isDaily"] = true,
 						["coord"] = { 80.4, 70.8, REVENDRETH },
+						["g"] = {
+							i(182721),	-- Mail Courier's Grips
+						},
 					}),
 					o(354111, {	-- Stoneborn Satchel
 						["questID"] = 60942,
@@ -624,6 +647,9 @@ _.Zones =
 						["questID"] = 60985,
 						["isDaily"] = true,
 						["coord"] = { 36.5, 51.5, REVENDRETH },
+						["g"] = {
+							i(182722),	-- Mail Courier's Cap
+						},
 					}),
 				}),
 				o(357487, {	-- Stylish Parasol
