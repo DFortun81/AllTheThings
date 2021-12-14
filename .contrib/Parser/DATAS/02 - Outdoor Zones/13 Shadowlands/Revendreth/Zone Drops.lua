@@ -145,6 +145,9 @@ _.Zones =
 							["description"] = "Awarded if your judgment of a soul matches that of Sinkeeper Mourana.",
 							["g"] = {
 								i(180387),	-- Crumbling Sinstone
+								i(180403),	-- Vessel of Distilled Regret
+								i(180402),	-- Barrier of the Forgotten
+								i(180396),	-- Vambraces of Fading Humanity
 							},
 						}),
 					},
