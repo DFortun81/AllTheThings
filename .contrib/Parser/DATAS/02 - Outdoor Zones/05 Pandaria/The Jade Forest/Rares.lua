@@ -74,11 +74,8 @@ _.Zones =
 				n(50338, {	-- Kor'nas Nightsavage
 					["coords"] = {
 						{ 43.4, 76.4, THE_JADE_FOREST },
-						{ 43.4, 76.6, THE_JADE_FOREST },
 						{ 43.6, 72.2, THE_JADE_FOREST },
-						{ 43.8, 73.2, THE_JADE_FOREST },
 						{ 44.0, 74.0, THE_JADE_FOREST },
-						{ 44.0, 75.0, THE_JADE_FOREST },
 						{ 44.0, 75.8, THE_JADE_FOREST },
 					},
 					["g"] = {
