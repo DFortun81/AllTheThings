@@ -442,7 +442,7 @@ _.Zones =
 					},
 				}),
 				o(351540, {	-- Secret Treasure
-					["description"] = "Find a |cFFFFFFFFDredger's Hammer|r in the surrounding area (they sparkle), and use it to open the |cFFFFFFFFJammed Door|r in front of the treasure.\n\nIf the door closes behind you, use the |cFFFFFFFFEscape Shovel|r on the wall.\nRequires |cFFFFD700It Used to Be Quiet Here|r completed in order to see hammers.",
+					["description"] = "Find a |cFFFFFFFFDredger's Hammer|r in the surrounding area (they sparkle), and use it to open the |cFFFFFFFFJammed Door|r in front of the treasure.\nRequires |cFFFFD700It Used to Be Quiet Here|r completed in order to see hammers.\n\nIf the door closes behind you, use the |cFFFFFFFFEscape Shovel|r on the wall.",
 					["questID"] = 60196,
 					["isDaily"] = true,	-- ?? repeatable?
 					["coord"] = { 73.8, 46.3, REVENDRETH },
