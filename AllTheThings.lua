@@ -16799,22 +16799,9 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		force = true;
 		self.initialized = true;
 		self.openedOnLogin = false;
+		self.CurrentMaps = {};
 		self.IsSameMapData = function(self)
-			local data = self.data;
-			if data.mapID then
-				-- Exact same map?
-				if data.mapID == self.mapID then
-					-- print("exact same map");
-					return true;
-				end
-			end
-			if data.maps then
-				-- Does the old map data contain this map?
-				if contains(data.maps, self.mapID) then
-					-- print("contained map");
-					return true;
-				end
-			end
+			if self.CurrentMaps[self.mapID] then return true; end
 		end
 		self.SetMapID = function(self, mapID)
 			-- print("SetMapID",mapID)
@@ -16896,12 +16883,14 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				self.data.mapID = self.mapID;
 				return;
 			end
+			wipe(self.CurrentMaps);
 			local results = SearchForField("mapID", self.mapID);
 			if results then
 				-- print(#results,"Minilist Results for mapID",self.mapID)
 				-- Simplify the returned groups
 				local groups, nested = {};
 				local header = app.CreateMap(self.mapID, { g = groups });
+				self.CurrentMaps[self.mapID] = true;
 				local inInstance = IsInInstance();
 				for _,group in ipairs(results) do
 					-- do not use any raw Source groups in the final list
@@ -16918,6 +16907,11 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					-- and actually match this minilist...
 					-- only if this group mapID matches the minilist mapID directly or by maps
 					and (group.mapID == self.mapID or (group.maps and contains(group.maps, self.mapID))) then
+						if group.maps then
+							for _,m in ipairs(group.maps) do
+								self.CurrentMaps[m] = true;
+							end
+						end
 						MergeProperties(header, group, true);
 						if group.g then
 							MergeObjects(groups, group.g);
