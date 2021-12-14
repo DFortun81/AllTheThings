@@ -4799,6 +4799,10 @@ local function CacheField(group, field, value)
 		rawset(fieldCache_g, value, {group});
 	end
 end
+-- Toggle being able to cache things inside maps
+app.ToggleCacheMaps = function(skipCaching)
+	currentMaps[-1] = skipCaching;
+end
 -- This is referenced by FlightPath objects when pulling their Info from the DB
 app.CacheField = CacheField;
 -- These are the fields we store.
@@ -4837,6 +4841,8 @@ end
 -- special map cache function, will only cache a group for the mapID if the current hierarchy has not already been cached in this map
 -- level doesn't matter and will be reported in chat for 'mapID' and 'maps' being multiply-nested
 local cacheMapID = function(group, mapID, coords)
+	-- use -1 as special key to NOT cache a group with a map
+	if currentMaps[-1] then return; end
 	if not currentMaps[mapID] then
 		-- track the group which was first cached for this map within the hierarchy
 		currentMaps[mapID] = group;
@@ -15989,7 +15995,9 @@ function app:GetDataCache()
 		end
 		BuildGroups(allData, allData.g);
 		app:GetWindow("Unsorted").data = allData;
+		app.ToggleCacheMaps(true);
 		CacheFields(allData);
+		app.ToggleCacheMaps();
 
 		local buildCategoryEntry = function(self, headers, searchResults, inst)
 			local header = self;
