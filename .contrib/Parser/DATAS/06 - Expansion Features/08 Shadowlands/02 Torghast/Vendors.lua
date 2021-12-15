@@ -59,8 +59,8 @@ _.ExpansionFeatures =
 						}),
 						-- PTR 9.2
 						i(188743),	-- Ashen Mawsworn Crossbow	L14 300P	FC
-						i(188737),	-- Ebon Mawsworn Crossbow	L15 300P	FC
-						i(188747),	-- Ashen Mawsworn Halberd	L15 300P	FC
+						i(188737),	-- Ebon Mawsworn Crossbow	L15 300P	FC/CI
+						i(188747),	-- Ashen Mawsworn Halberd	L15 300P	FC/CI
 						i(188746),	-- Ebon Mawsworn Halberd No Info
 						i(188749),	-- Ashen Mawsworn Staff L13 300P	FC
 						i(188748),	-- Ebon Mawsworn Staff	L14 300P 	FC

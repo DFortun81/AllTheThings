@@ -795,7 +795,11 @@ i(187959);	-- PH - Banner of the Opportune
 -----------------
 -- PATCH 9.2.0 --
 -----------------
+i(190237);	-- Broker Translocation Matrix
 i(188952);	-- Dominated Hearthstone
+i(190196);	-- Enlightened Hearthstone
 i(187860);	-- Mortis Mover
 i(187793);	-- Personal Containment Trap
+i(190177);	-- Sphere of Enlightened Cogitation
+i(190238);	-- Xy'rath's Booby-Trapped Cache
 end)();

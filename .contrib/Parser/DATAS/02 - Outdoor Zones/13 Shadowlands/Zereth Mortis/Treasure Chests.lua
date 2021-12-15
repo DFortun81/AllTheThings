@@ -28,6 +28,11 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 49.8, 87.3, ZERETH_MORTIS },
 				["questID"] = 65503,
 			}),
+			o(375492, {	-- Fractal Sealed Vault
+				["description"] = "Inside a cave",
+				["coord"] = { 77.5, 58.2, ZERETH_MORTIS },
+				["questID"] = 65565,
+			}),
 			o(375369, {	-- Gnawed Valise
 				["description"] = "On the big rock.",
 				["coord"] = { 39, 73.2, ZERETH_MORTIS },
@@ -69,7 +74,10 @@ root("Zones", m(SHADOWLANDS, {
 			}),
 			o(373579, {	-- Prying Eye Discovery
 				["description"] = "Only available during Portal Play Daily",
-				["coord"] = { 35.2, 43.7, ZERETH_MORTIS },
+				["coords"] = {
+					{ 35.2, 43.7, ZERETH_MORTIS },
+					{ 34.3, 44.3, ZERETH_MORTIS },
+				},
 				["questID"] = 65184,
 			}),
 		--	o(,{	-- Provis Cache (Needs Keys)
@@ -80,6 +88,12 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 34.8, 56.1, ZERETH_MORTIS },
 				["questID"] = 65537,
 			}),
+			--o(, {	-- Sandworn Chest
+			--	["description"] = "Key fragements drops in the area from mobs Sandworn Chest Key Fragment(190198)"
+			--	["coord"] = { 60.9, 37.9, ZERETH_MORTIS },
+			--	["questID"] = ,
+			--	["cost"] = { { "i", KEY}}??
+			--}),
 			o(375281, {	-- Stolen Relic
 				["coord"] = { 37.9, 65.2, ZERETH_MORTIS },
 				["questID"] = 65447,
@@ -116,6 +130,12 @@ root("Zones", m(SHADOWLANDS, {
 					{ 40.1, 69.4, ZERETH_MORTIS },
 					{ 50.6, 93, ZERETH_MORTIS },
 					{ 62.1, 74.9, ZERETH_MORTIS },
+				},
+			}),
+			o(375530, {	-- Forgotten Treasure Vault
+				["coords"] = {
+					{ 80.5, 45.6, ZERETH_MORTIS },
+					{ 55.7, 52.5, ZERETH_MORTIS },
 				},
 			}),
 			o(375363, {	-- Mawsworn Supply Chest (Open two times same position within 15min)
@@ -170,6 +190,7 @@ root("Zones", m(SHADOWLANDS, {
 					{ 59.9, 34, ZERETH_MORTIS },
 					{ 59.6, 32.4, ZERETH_MORTIS },
 					{ 36.2, 38.4, ZERETH_MORTIS },
+					{ 43.6, 86.7, ZERETH_MORTIS },
 				},
 			})
 
@@ -187,10 +208,10 @@ root("HiddenQuestTriggers", {
 	--q(65318),	-- Triggered when I completed the puzzle, Cantaric at 48.7, 87.5 / AS:48.6 87.5 Ok.
 	--q(65323),	-- Triggered when I completed the puzzle, --- at 44.7, 76.1
 	--q(65091),	-- Triggered when I completed the puzzle, Mezzonic At 39.3 60.4 / AS:39.3 60.4 (Unsure of Name) Ok.
-	--q(65093),	-- Triggered when I completed the puzzle, Fugueal At 57.5 65.8
+	--q(65093),	-- Triggered when I completed the puzzle, Fugueal At 57.5 65.8 / AS: 57.5 65.8
 	--q(65321),	-- Triggered when I completed the puzzle, Glissandian At 40, 72.9 / AS:40.0 72.9
-	--q(65092),	-- Triggered when I completed the puzzle, Glissandian At 58.9, 36.4 / AS:58.9 36.4
-	--q(65092),	-- Triggered when I completed the puzzle, Toccatian At 67.8, 27.4 / AS:67.9 27.3
+	--q(65092),	-- Triggered when I completed the puzzle, Glissandian At 58.9, 36.4 / AS:58.9 36.4 // AS:41.8 31.3
+	--q(65319),	-- Triggered when I completed the puzzle, Toccatian At 67.8, 27.4 / AS:67.9 27.3
 	-- Concordances
 	q(65215),	-- Tranquil Concordance at 60.2 47.1
 	q(65209),	-- Tranquil Concordance at 49.3 71.6

@@ -1220,7 +1220,7 @@ _.PVP =
 				filter(MOUNTS, {
 					i(189507),	-- Cosmic Gladiator's Soul Eater
 				}),
-				n(-325, {	-- Tabard
+				filter(TABARDS, {
 					i(186777),	-- Cosmic Gladiator's Tabard
 				}),
 			})),

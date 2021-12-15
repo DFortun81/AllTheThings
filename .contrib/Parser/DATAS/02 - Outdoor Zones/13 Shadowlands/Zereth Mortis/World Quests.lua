@@ -12,8 +12,14 @@ root("Zones", m(SHADOWLANDS, {
 					currency(1979),	-- Cyphers of the First Ones
 				}),
 				n(QUESTS, sharedData({ ["isWorldQuest"] = true }, {
+					q(65081, {	-- An Apple A Day
+						--["coord"] = { 57.2, 66.5, ZERETH_MORTIS }, Unknown atm
+					}),
 					q(65232, {	-- Annelid-ilation
 						["coord"] = { 57.2, 66.5, ZERETH_MORTIS },
+					}),
+					q(65119, {	-- Automa Ops
+						["coord"] = { 56.8, 32.7, ZERETH_MORTIS },
 					}),
 					q(65117, {	-- Bad Samples
 						["coord"] = { 44.1, 30.8, ZERETH_MORTIS },
@@ -54,6 +60,12 @@ root("Zones", m(SHADOWLANDS, {
 					}),
 					q(65412, {	-- Puzzling It Out
 						["coord"] = { 51.3, 25.8, ZERETH_MORTIS },
+					}),
+					q(65413, {	-- Puzzling It Out (Same Name Yes)
+						["coord"] = { 55.9, 84, ZERETH_MORTIS },
+					}),
+					q(65410, {	-- Puzzling Situation
+						["coord"] = { 55.7, 50, ZERETH_MORTIS },
 					}),
 				})),
 			},

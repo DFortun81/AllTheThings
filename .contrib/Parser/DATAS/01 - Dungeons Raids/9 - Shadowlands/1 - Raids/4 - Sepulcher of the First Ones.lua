@@ -5,7 +5,7 @@
 root("Instances", tier(SL_TIER, {
 	inst(1195, {	-- Sanctum of Domination
 		["isRaid"] = true,
-		--["coord"] = { , , },
+		["coord"] = { 80.9, 53.4, ZERETH_MORTIS },
 		["order"] = "03",
 		["maps"] = {
 			2047,	-- Entrance

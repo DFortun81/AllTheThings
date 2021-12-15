@@ -383,6 +383,59 @@ root("Zones", m(SHADOWLANDS, {
 			-- The End contiune Baston>Torghast.
 
 
+			-- Chap 6
+			q(65324, {	-- Patterns Within Patterns
+				["sourceQuests"] = { 64816 },	-- Reality's Doorstep
+				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
+				["coord"] = { 35, 64.8, ZERETH_MORTIS },
+				["isWeekly"] = true,
+			}),
+			q(64875, {	-- Something Wonderful
+				["sourceQuests"] = { 64816 },	-- Reality's Doorstep
+				["provider"] = { "n", 182556 },	-- Pelagos
+				["coord"] = { 35.5, 65.1, ZERETH_MORTIS },
+			}),
+			q(64876, {	-- Music of the Spheres
+				["sourceQuests"] = { 64875 },	-- Something Wonderful
+				["provider"] = { "n", 177958 },	-- Firim
+				["coord"] = { 34.2, 48.4, ZERETH_MORTIS },
+			}),
+			q(64878, {	-- What A Long Strange Trip
+				["sourceQuests"] = { 64876 },	-- Music of the Spheres
+				["provider"] = { "n", 181706 },	-- Popopoc
+				["coord"] = { 34.1, 47.3, ZERETH_MORTIS },
+			}),
+			q(65245, {	-- Pop Goes the Devourer!
+				["sourceQuests"] = { 64878 },	-- What A Long Strange Trip
+				["provider"] = { "n", 181706 },	-- Popopoc
+				["coord"] = { 47.2, 29.4, ZERETH_MORTIS },
+			}),
+			q(64888, {	-- Borrowed Power
+				["sourceQuests"] = { 64878 },	-- What A Long Strange Trip
+				["provider"] = { "n", 181706 },	-- Popopoc
+				["coord"] = { 47.2, 29.4, ZERETH_MORTIS },
+			}),
+			q(64936, {	-- Searching High and Low
+				["sourceQuests"] = { 64888 },	-- Borrowed Power
+				["provider"] = { "n", 183701 },	-- Popopoc
+				["coord"] = { 50.7, 28.3, ZERETH_MORTIS },
+			}),
+			q(64937, {	-- Searching High and Low
+				["sourceQuests"] = { 64936 },	-- Searching High and Low
+				["provider"] = { "n", 184949 },	-- Popopoc
+				["coord"] = { 48, 34, ZERETH_MORTIS },
+			}),
+
+
+			-- PROBABLY AFTER BORROWED POWER/POP GOES THE DEVOURER?
+			q(64889, {	-- Match Made in Zereth Mortis
+				["description"] = "to unlock cosmic transport",
+			}),
+			q(64935, {	-- Between A Rock & A Rock
+				["description"] = "to unlock cosmic transport",
+			}),
+			--
+
 
 			-- Al'dalil/Cartel Xy Side Quest
 			q(64771, {	-- Enlightened Exodus
@@ -480,12 +533,12 @@ root("Zones", m(SHADOWLANDS, {
 			}),
 			q(65350, {	-- Restore the Flow
 				["sourceQuests"] = { 65349 },	-- Lost Grace
-				["provider"] = { "n", 184537 },	-- Assistant Conservator Nadir
+				["provider"] = { "n", 184537 },	-- Nadir
 				["coord"] = { 55, 50.3, ZERETH_MORTIS },
 			}),
 			q(65353, {	-- An Automa-free Diet
 				["sourceQuests"] = { 65349 },	-- Lost Grace
-				["provider"] = { "n", 184537 },	-- Assistant Conservator Nadir
+				["provider"] = { "n", 184537 },	-- Nadir
 				["coord"] = { 55, 50.3, ZERETH_MORTIS },
 			}),
 			q(65448, {	--  A Return to Grace
@@ -624,10 +677,33 @@ root("Zones", m(SHADOWLANDS, {
 				["provider"] = { "n", 180289 },	-- Mai Soh
 				["coord"] = { 58.3, 50, ZERETH_MORTIS },
 			}),
+			q(65325, {	-- Motes of Knowledge
+				["description"] = "This Daily is available after researching Altonian Understanding",
+				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
+				["provider"] = { "n", 180289 },	-- Mai Soh
+				["coord"] = { 58.3, 50, ZERETH_MORTIS },
+			}),
+			q(65072, {	-- Not Safe For Work
+				["sourceQuests"] = { 65305 },	-- The Way Forward (Chap 3)
+				["provider"] = { "n", 180630 },	-- Elder Amir
+				["coord"] = { 61.4, 51.5, ZERETH_MORTIS },
+			}),
+			q(64785, {	-- Overgrown Story
+				["description"] = "Has containment trap for the achievement",
+				--["sourceQuests"] = { 65305 },	-- The Way Forward (Chap 3)
+				["provider"] = { "n", 177958 },	-- Firim
+				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
+			}),
 			q(65142, {	-- Portal Play
 				--["sourceQuests"] = { 65305 },	-- The Way Forward (Chap 3)
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
+			}),
+			q(65364, {	-- Super Jiro
+				["description"] = "This Daily is available after researching Altonian Understanding",
+				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
+				["provider"] = { "n", 184434 },	-- Mai Ber
+				["coord"] = { 58.4, 49.7, ZERETH_MORTIS },
 			}),
 		})),
 	}),
@@ -636,7 +712,8 @@ root("Zones", m(SHADOWLANDS, {
 root("HiddenQuestTrigger", {
 	q(63850),	-- Triggered when enter ZM (Might be WQ). Triggered again today while running around in ZM
 	q(63766),	-- Triggered when Exploring (Might have to do with The Matriarch(183505))
-
+	--q(63850),	-- Triggered when HS to ZM
+	--q(65621),	-- Triggered when HS to ZM
 	-- Gravid Repose
 	q(65330),	-- Interior Locus Arrangement at Gravid Repose
 	q(65337),	-- First Locus arrangement at Gravid Repose
@@ -648,4 +725,6 @@ root("HiddenQuestTrigger", {
 
 	-- RP
 	q(65233),	-- RP after Jiro to Hero(65219)
+	q(65571),	-- RP after Chap 5 with Taelia
+	--q(65028),	-- RP during q(64875, {	-- Something Wonderful??
 });

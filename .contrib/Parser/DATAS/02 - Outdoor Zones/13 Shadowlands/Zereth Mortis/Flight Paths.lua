@@ -22,10 +22,18 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 61.6, 50.2, ZERETH_MORTIS },
 				["cr"] = 183963,	-- Ancient Translocator
 			}),
+			fp(2737, {	-- Sepulcher of the First Ones
+				["coord"] = { 73.1, 53.4, ZERETH_MORTIS },
+				["cr"] = 184332,	-- Ancient Translocator
+			}),
+			fp(2736, {	-- Sepulcher Overlook
+				["coord"] = { 64.8, 53.5, ZERETH_MORTIS },
+				["cr"] = 183970,	-- Ancient Translocator
+			}),
 			fp(2733, {	-- Zovaal's Grasp
 				["coord"] = { 46, 21.7, ZERETH_MORTIS },
 				["cr"] = 183968,	-- Ancient Translocator
-			})
+			}),
 		}),
 	}),
 }));

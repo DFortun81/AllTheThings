@@ -6,6 +6,7 @@ root("Zones", m(SHADOWLANDS, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
 			n(179006, {	-- Akkaris
 				["coord"] = { 64.7, 33.7, ZERETH_MORTIS },
+				--["questID"] = 65549?? Share ID with Stargorger??
 			}),
 			n(183596, {	-- Chitali the Eldest
 				["coord"] = { 50.3, 69, ZERETH_MORTIS },
@@ -26,6 +27,9 @@ root("Zones", m(SHADOWLANDS, {
 			n(178229, {	-- Feasting
 				["coord"] = { 61.8, 60.5, ZERETH_MORTIS },
 				["questID"] = 65557,
+				["g"] = {
+					i(189969),	-- Vespoid's Clanging Legguards
+				},
 			}),
 			n(183646, {	-- Furidian
 				["description"] = "To open the vault there is corresponding symbols in the area. I only had to click The Star(64, 57.3) to open the chest. Maybe change this in later build.",
@@ -33,19 +37,28 @@ root("Zones", m(SHADOWLANDS, {
 				["questID"] = 65544,
 			}),
 			n(180924, {	-- Garudeon
-				["description"] = "Feed it and its kids with Energizing Leporid(183562, Bunnies in the area)",
+				["description"] = "Feed its kids with three Energizing Leporid(183562, Bunnies in the area)",
 				["coord"] = { 68.9, 36.9, ZERETH_MORTIS },
+				["questID"] = 64719,
+				["g"] = {
+					i(189937),	-- Garudeon's Blanket of Feathers
+				},
 			}),
 			n(182318, {	-- General Zarathura
 				["coord"] = { 59.6, 18.6, ZERETH_MORTIS },
-				--["questID"] = ?? Didnt give any ID current build
 			}),
 			n(178778, {	-- Gluttonous Overgrowth
 				["description"] = "Need to pull close by roots.",
 				["coord"] = { 52.9, 93.3, ZERETH_MORTIS },
 			}),
+			n(178963, {	-- Gorkek
+				["coord"] = { 76.1, 45.3, ZERETH_MORTIS },
+			}),
 			n(180978, {	-- Hirukon <Aurelid Prime>
 				["coord"] = { 52.2, 75.2, ZERETH_MORTIS },
+				["g"] = {
+					i(187676),	-- Deepstar Aurelid
+				},
 			}),
 			n(178563, {	-- Hadeon the Stonebreaker
 				["coord"] = { 52.6, 25.1, ZERETH_MORTIS },
@@ -60,7 +73,6 @@ root("Zones", m(SHADOWLANDS, {
 			}),
 			n(179043, {	-- Orixal
 				["coord"] = { 58.4, 83.1, ZERETH_MORTIS },
-				--["questID"] = ?? Didnt give any ID current build
 			}),
 			n(183814, {	-- Otaris the Provoked
 				["coord"] = { 58.6, 39, ZERETH_MORTIS },
@@ -76,8 +88,8 @@ root("Zones", m(SHADOWLANDS, {
 				["questID"] = 64668,
 			}),
 			n(183927, {	-- Sand Matriarch Ileus
-				["coord"] = { 54, 48.9, ZERETH_MORTIS },
-				--["questID"] = ?? Didnt give any ID current build
+				["coord"] = { 53.3, 47.1, ZERETH_MORTIS },
+				["questID"] = 65574,
 			}),
 			n(184413, {	-- Shifting Stargorger
 				["coord"] = { 42, 21.9, ZERETH_MORTIS },
@@ -98,6 +110,11 @@ root("Zones", m(SHADOWLANDS, {
 			n(183505, {	-- The Matriarch
 				["coord"] = { 44, 75, ZERETH_MORTIS },
 			}),
+			n(184804, {	-- The Unbroken
+				["description"] = "possibly spawn only during daily Motes of Knowledge(65325)",
+				["coord"] = { 58.2, 68.3, ZERETH_MORTIS },
+				["questID"] = 65551,
+			}),
 			n(181360, {	--Vexis
 				["coord"] = { 39.6, 54.4, ZERETH_MORTIS },
 				["questID"] = 65239,
@@ -108,6 +125,9 @@ root("Zones", m(SHADOWLANDS, {
 			n(183737, {	-- Xy'rath the Covetous
 				["coord"] = { 63.7, 49.1, ZERETH_MORTIS },
 				["questID"] = 65241,
+				["g"] = {
+					i(190238),	-- Xy'rath's Booby-Trapped Cache
+				},
 			}),
 			n(183764, {	-- Zatojin <Vespoid Prime>
 				["coord"] = { 43.3, 32.9, ZERETH_MORTIS },
