@@ -1125,8 +1125,25 @@ sharedData = function(data, t)
 	end
 	return t;
 end
-bubbleDown = function(data, t)
+bubbleDown = function(data, t, applyToSelf)
 	if t then
+		if applyToSelf then
+			-- if this is an array, convert to .g container first to prevent merge confusion
+			if isarray(t) then
+				local copy = {};
+				for i=#t,1 do
+					table.insert(copy, 1, t[i]);
+					table.remove(t, i);
+				end
+				t.g = copy;
+			end
+			-- then apply the bubbleDown content to itself
+			for key, value in pairs(data) do
+				if not t[key] then
+					t[key] = value;
+				end
+			end
+		end
 		if t.g or t.groups then
 			for key, value in pairs(data) do
 				if not t[key] then
