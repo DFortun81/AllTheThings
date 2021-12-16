@@ -1116,7 +1116,6 @@ _.Zones =
 						["qg"] = 17658,	-- Exarch Admetius
 						["coord"] = { 52.6, 53.2, BLOODMYST_ISLE },
 						["races"] = ALLIANCE_ONLY,
-						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(10, 1, 10),
 					}),
 					q(9756, {	-- What We Don't Know...

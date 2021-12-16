@@ -1143,7 +1143,7 @@ sharedDataSelf = function(data, t)
 			table.insert(copy, 1, t[i]);
 			table.remove(t, i);
 		end
-		t.g = copy;
+		t.groups = copy;
 	end
 	-- then apply the data to itself
 	applyData(data, t);
@@ -1176,10 +1176,8 @@ bubbleDownSelf = function(data, t)
 			table.insert(copy, 1, t[i]);
 			table.remove(t, i);
 		end
-		t.g = copy;
+		t.groups = copy;
 	end
-	-- then apply the data to itself
-	applyData(data, t);
 	-- then apply regular bubbleDown on the group
 	return bubbleDown(data, t);
 end

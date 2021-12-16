@@ -230,7 +230,12 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										["coord"] = { 47.3, 57.5, SINFALL_REACHES },
 									}),
 									q(59740, {	-- Repair and Restore
+										["description"] = "Requires completing 2 of the pre-requisite quests.",
 										["sourceQuests"] = {
+											60060,	-- Mirror Attunement: Pridefall Hamlet
+											60147,	-- Mirror Attunement: The Eternal Terrace
+											60160,	-- Mirror Attunement: The Banewood
+											60159,	-- Mirror Attunement: Halls of Atonement
 											60164,	-- Mirror Attunement: Dominance Keep
 											60165,	-- Mirror Attunement: Feeders' Thicket
 										},

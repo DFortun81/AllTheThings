@@ -165,18 +165,26 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["coord"] = { 33.9, 43.5, ARDENWEALD },
 				["isWeekly"] = true,
 				["g"] = {
-					i(177698),	-- Untamed Spirit Ardenweald (Uncommon)
+					i(177698, {	-- Untamed Spirit Ardenweald (Uncommon)
+						-- ["timeline"] = { "added 9.0", "removed 9.1.5" },	-- TODO: Think this will mess up their costs if they are actually marked as removed... will test more later
+					}),
 					i(177699),	-- Divine Untamed Spirit Ardenweald (Rare)
 					i(177700),	-- Greater Untamed Spirit Ardenweald (Epic)
-					i(178879),	-- Greater Dutiful Spirit (Epic)
+					i(178881, {	-- Dutiful Spirit Bastion (Uncommon)
+						-- ["timeline"] = { "added 9.0", "removed 9.1.5" },
+					}),
 					i(178880),	-- Divine Dutiful Spirit (Rare)
-					i(178881),	-- Dutiful Spirit Bastion (Uncommon)
+					i(178879),	-- Greater Dutiful Spirit (Epic)
+					i(178874, {	-- Martial Spirit Maldraxxus (Uncommon)
+						-- ["timeline"] = { "added 9.0", "removed 9.1.5" },
+					}),
 					i(178877),	-- Divine Martial Spirit (Rare)
-					i(178874),	-- Martial Spirit Maldraxxus (Uncommon)
 					i(178878),	-- Greater Martial Spirit (Epic)
-					i(178884),	-- Greater Prideful Spirit (Epic)
+					i(178882, {	-- Prideful Spirit Revendreth (Uncommon)
+						-- ["timeline"] = { "added 9.0", "removed 9.1.5" },
+					}),
 					i(178883),	-- Divine Prideful Spirit (Rare)
-					i(178882),	-- Prideful Spirit Revendreth(Uncommon)
+					i(178884),	-- Greater Prideful Spirit (Epic)
 				},
 			}),
 			q(65090, {	-- Return More Lost Souls

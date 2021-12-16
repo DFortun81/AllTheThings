@@ -95,14 +95,22 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 								}),
 							}),
 							n(REWARDS, {
-								i(178881),	-- Dutiful Spirit
-								i(178880),	-- Greater Dutiful Spirit
-								i(178874),	-- Martial Spirit
-								i(178877),	-- Greater Martial Spirit
-								i(177698),	-- Untamed Spirit
-								i(177699),	-- Greater Untamed Spirit
-								i(178882),	-- Prideful Spirit
-								i(178883),	-- Greater Prideful Spirit
+								i(177698, {	-- Untamed Spirit Ardenweald (Uncommon)
+									-- ["timeline"] = { "added 9.0", "removed 9.1.5" },	-- TODO: Think this will mess up their costs if they are actually marked as removed... will test more later
+								}),
+								i(177699),	-- Divine Untamed Spirit Ardenweald (Rare)
+								i(178881, {	-- Dutiful Spirit Bastion (Uncommon)
+									-- ["timeline"] = { "added 9.0", "removed 9.1.5" },
+								}),
+								i(178880),	-- Divine Dutiful Spirit (Rare)
+								i(178874, {	-- Martial Spirit Maldraxxus (Uncommon)
+									-- ["timeline"] = { "added 9.0", "removed 9.1.5" },
+								}),
+								i(178877),	-- Divine Martial Spirit (Rare)
+								i(178882, {	-- Prideful Spirit Revendreth (Uncommon)
+									-- ["timeline"] = { "added 9.0", "removed 9.1.5" },
+								}),
+								i(178883),	-- Divine Prideful Spirit (Rare)
 							}),
 						},
 					}),

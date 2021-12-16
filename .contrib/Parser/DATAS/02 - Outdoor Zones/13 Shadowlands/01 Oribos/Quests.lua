@@ -53,9 +53,13 @@ _.Zones =
 						["coord"] = { 34.7, 56.5, ORIBOS },
 						["_drop"] = { "g" },	-- drop anima trash
 					}),
-					q(64527, {	-- Observing the Chase
+					q(64527, {	-- Observing the Chase [SL 'Try Warmode']
 						["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 						["coord"] = { 34.7, 55.7, ORIBOS },	-- Ring of Fates
+						["altQuests"] = {
+							53295,	-- Do Your Part [BFA 'Try Warmode'] [A]
+							53338,	-- Prove Your Worth [BFA 'Try Warmode'] [H]
+						},
 					}),
 					q(65033, {	-- Observing Victory
 						["sourceQuests"] = { 65032 },	-- Battleground Observers

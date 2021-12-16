@@ -231,7 +231,6 @@ _.Zones =
 					}),
 					q(53295, {	-- Do Your Part
 						["provider"] = { "n", 141698 },	--  Kort Ceefer
-						["isWeekly"] = true,
 						["races"] = ALLIANCE_ONLY,
 						["coord"] = { 56.4, 25.8, BORALUS },
 						["g"] = {
