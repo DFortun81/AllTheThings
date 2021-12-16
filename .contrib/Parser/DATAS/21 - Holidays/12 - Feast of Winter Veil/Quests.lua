@@ -97,6 +97,7 @@ _.Holidays = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL},
 							un(FEAST_OF_WINTER_VEIL, i(151349)),	-- Toy Weapon Set [Alliance]
 							un(FEAST_OF_WINTER_VEIL, i(151348)),	-- Toy Weapon Set [Horde]
 							un(FEAST_OF_WINTER_VEIL, i(45057)),	-- Wind-Up Train Wrecker
+							un(FEAST_OF_WINTER_VEIL, i(188680)),	-- Winter Veil Chorus Book
 							un(FEAST_OF_WINTER_VEIL, i(116691)),	-- Zhevra Lounge Cushion
 							-- Illusions
 							un(FEAST_OF_WINTER_VEIL, i(118572)),	-- Illusion: Flames of Ragnaros
@@ -269,29 +270,30 @@ _.Holidays = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL},
 							})),
 							un(FEAST_OF_WINTER_VEIL, p(254)),	-- Blue Clockwork Rocket Bot
 							-- Toys
-							un(FEAST_OF_WINTER_VEIL, i(45057)),	-- Wind-Up Train Wrecker
 							un(FEAST_OF_WINTER_VEIL, i(54343)),	-- Blue Crashin' Thrashin' Racer Controller
-							un(FEAST_OF_WINTER_VEIL, i(90888)),	-- Foot Ball
-							un(FEAST_OF_WINTER_VEIL, i(104318)),	-- Crashin' Thrashin' Flyer Controller
-							un(FEAST_OF_WINTER_VEIL, i(46709)),	-- MiniZep Controller
-							un(FEAST_OF_WINTER_VEIL, i(37710)),	-- Crashin' Thrashin' Racer Controller
-							un(FEAST_OF_WINTER_VEIL, i(90883)),	-- The Pigskin
-							un(FEAST_OF_WINTER_VEIL, i(116692)),	-- Fuzzy Green Lounge Cushion
-							un(FEAST_OF_WINTER_VEIL, i(116691)),	-- Zhevra Lounge Cushion
-							un(FEAST_OF_WINTER_VEIL, i(116689)),	-- Pineapple Lounge Cushion
-							un(FEAST_OF_WINTER_VEIL, i(116690)),	-- Safari Lounge Cushion
-							un(FEAST_OF_WINTER_VEIL, i(116763)),	-- Crashin' Thrashin' Shredder Controller
 							un(FEAST_OF_WINTER_VEIL, i(108632, {	-- Crashin' Thrashin' Flamer Controller
 								crit(1, {	-- Crashin' Thrashin' Flamer
 									["achievementID"] = 10353,	-- Iron Armada
 								}),
 							})),
+							un(FEAST_OF_WINTER_VEIL, i(104318)),	-- Crashin' Thrashin' Flyer Controller
+							un(FEAST_OF_WINTER_VEIL, i(37710)),	-- Crashin' Thrashin' Racer Controller
+							un(FEAST_OF_WINTER_VEIL, i(116763)),	-- Crashin' Thrashin' Shredder Controller
+							un(FEAST_OF_WINTER_VEIL, i(139337)),	-- Disposable Winter Veil Suits
+							un(FEAST_OF_WINTER_VEIL, i(90888)),	-- Foot Ball
+							un(FEAST_OF_WINTER_VEIL, i(116692)),	-- Fuzzy Green Lounge Cushion
+							un(FEAST_OF_WINTER_VEIL, i(46709)),	-- MiniZep Controller
+							un(FEAST_OF_WINTER_VEIL, i(116689)),	-- Pineapple Lounge Cushion
+							un(FEAST_OF_WINTER_VEIL, i(128776)),	-- Red Wooden Sled
+							un(FEAST_OF_WINTER_VEIL, i(116690)),	-- Safari Lounge Cushion
 							un(FEAST_OF_WINTER_VEIL, i(116456)),	-- Scroll of Storytelling
+							un(FEAST_OF_WINTER_VEIL, i(90883)),	-- The Pigskin
 							un(FEAST_OF_WINTER_VEIL, i(54438)),	-- Tiny Blue Ragdoll
 							un(FEAST_OF_WINTER_VEIL, i(54437)),	-- Tiny Green Ragdoll
-							un(FEAST_OF_WINTER_VEIL, i(128776)),	-- Red Wooden Sled
 							un(FEAST_OF_WINTER_VEIL, i(44606)),	-- Toy Train Set
-							un(FEAST_OF_WINTER_VEIL, i(139337)),	-- Disposable Winter Veil Suits
+							un(FEAST_OF_WINTER_VEIL, i(45057)),	-- Wind-Up Train Wrecker
+							un(FEAST_OF_WINTER_VEIL, i(188680)),	-- Winter Veil Chorus Book
+							un(FEAST_OF_WINTER_VEIL, i(116691)),	-- Zhevra Lounge Cushion
 							-- Illusions
 							un(FEAST_OF_WINTER_VEIL, i(128649)),	-- Illusion: Winter's Grasp
 							un(FEAST_OF_WINTER_VEIL, i(118572)),	-- Illusion: Flames of Ragnaros

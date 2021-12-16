@@ -38,7 +38,6 @@ _.NeverImplemented =
 		i(188701),	-- Fire Festival Batons (Midsummer)
 		i(188699),	-- Insulated Dancing Insoles (Midsummer)
 		i(188695),	-- Summer Cranial Skillet (Midsummer)
-		i(188680),	-- Winter Veil Chorus Book (Winter Veil)
 		i(187422),	-- Rockin' Rollin' Racer Customizer 19.9.3 (Winter Veil)
 		i(187560),	-- Shine and Pine (Winter Veil)
 		ach(15181),	-- Rock n' Roll

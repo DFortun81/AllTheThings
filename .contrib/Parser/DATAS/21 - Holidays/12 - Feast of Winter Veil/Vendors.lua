@@ -25,6 +25,7 @@ _.Holidays = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL},
 					i(34319),	-- Pattern: Red Winter Clothes
 					-- Other
 					i(70923),	-- Gaudy Winter Veil Sweater
+					i(188680),	-- Winter Veil Chorus Book (TOY!)
 				},
 			}),
 			n(13435, {	-- Khole Jinglepocket
@@ -92,6 +93,7 @@ _.Holidays = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL},
 					i(34261),	-- Pattern: Green Winter Clothes
 					-- Other
 					i(70923),	-- Gaudy Winter Veil Sweater
+					i(188680),	-- Winter Veil Chorus Book (TOY!)
 				},
 			}),
 			n(23012, {	-- Hotoppik Jinglepocket
