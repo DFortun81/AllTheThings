@@ -1115,56 +1115,73 @@ appendGroups = function(common, groups)
 	end
 	return groups;
 end
-sharedData = function(data, t)
-	for i, group in ipairs(t) do
+-- Simply applies keys from 'data' into 't' where each key does not already exist
+applyData = function(data, t)
+	if data and t then
 		for key, value in pairs(data) do
-			if not group[key] then
-				group[key] = value;
+			if not t[key] then
+				t[key] = value;
 			end
+		end
+	end
+end
+-- Applies a copy of the provided data into the tables of the provided array
+sharedData = function(data, t)
+	if t then
+		for _,group in ipairs(t) do
+			applyData(data, group);
 		end
 	end
 	return t;
 end
-bubbleDown = function(data, t, applyToSelf)
-	if t then
-		if applyToSelf then
-			-- if this is an array, convert to .g container first to prevent merge confusion
-			if isarray(t) then
-				local copy = {};
-				for i=#t,1 do
-					table.insert(copy, 1, t[i]);
-					table.remove(t, i);
-				end
-				t.g = copy;
-			end
-			-- then apply the bubbleDown content to itself
-			for key, value in pairs(data) do
-				if not t[key] then
-					t[key] = value;
-				end
-			end
+-- Performs sharedData logic but also applies the data to the top-level table
+sharedDataSelf = function(data, t)
+	-- if this is an array, convert to .g container first to prevent merge confusion
+	if isarray(t) then
+		local copy = {};
+		for i=#t,1 do
+			table.insert(copy, 1, t[i]);
+			table.remove(t, i);
 		end
+		t.g = copy;
+	end
+	-- then apply the data to itself
+	applyData(data, t);
+	-- then apply regular sharedData on the group
+	return sharedData(data, t);
+end
+-- Applies a copy of the provided data into all sub-groups of the provided table/array
+bubbleDown = function(data, t)
+	if t then
 		if t.g or t.groups then
-			for key, value in pairs(data) do
-				if not t[key] then
-					t[key] = value;
-				end
-			end
+			applyData(data, t);
 			bubbleDown(data, t.groups);
 			bubbleDown(data, t.g);
 		elseif isarray(t) then
-			for i,group in ipairs(t) do
+			for _,group in ipairs(t) do
 				bubbleDown(data, group);
 			end
 		else
-			for key, value in pairs(data) do
-				if not t[key] then
-					t[key] = value;
-				end
-			end
+			applyData(data, t);
 		end
 		return t;
 	end
+end
+-- Performs bubbleDown logic but also applies the data to the top-level table
+bubbleDownSelf = function(data, t)
+	-- if this is an array, convert to .g container first to prevent merge confusion
+	if isarray(t) then
+		local copy = {};
+		for i=#t,1 do
+			table.insert(copy, 1, t[i]);
+			table.remove(t, i);
+		end
+		t.g = copy;
+	end
+	-- then apply the data to itself
+	applyData(data, t);
+	-- then apply regular bubbleDown on the group
+	return bubbleDown(data, t);
 end
 bubbleUp = function(t)
 	local t2 = {};

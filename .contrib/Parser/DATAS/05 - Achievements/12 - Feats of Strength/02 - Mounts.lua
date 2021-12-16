@@ -86,9 +86,9 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		ach(5767, {			-- Scourer of the Eternal Sands
 			title(143),		-- the Camel-Hoarder
 		}),
-		ach(14816, bubbleDown({["timeline"] = { "added 9.0", "removed 9.1" }},{	-- Sinful Gladiator's Soul Eater
+		ach(14816, bubbleDownSelf({["timeline"] = { "added 9.0", "removed 9.1" }},{	-- Sinful Gladiator's Soul Eater
 			i(183937),	-- Sinful Gladiator's Soul Eater
-		}, true)),
+		})),
 		un(REMOVED_FROM_GAME, ach(13202, {	-- Sinister Gladiator's Proto-Drake
 			un(REMOVED_FROM_GAME, i(156880)),	-- Sinister Gladiator's Proto-Drake
 		})),
