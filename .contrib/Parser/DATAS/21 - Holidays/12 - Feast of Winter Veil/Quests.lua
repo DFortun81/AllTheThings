@@ -69,6 +69,7 @@ root("Holidays", bubbleDown({ ["u"] = FEAST_OF_WINTER_VEIL }, {
 							p(191),		-- Clockwork Rocket Bot
 							i(73797),	-- Lump of Coal
 							i(104317),	-- Rotten Helper Box
+							i(178533),	-- Shaking Pet Carrier
 							-- Toys
 							i(54343),	-- Blue Crashin' Thrashin' Racer Controller
 							i(108632, {	-- Crashin' Thrashin' Flamer Controller
@@ -93,7 +94,6 @@ root("Holidays", bubbleDown({ ["u"] = FEAST_OF_WINTER_VEIL }, {
 							i(54437),	-- Tiny Green Ragdoll
 							i(44606),	-- Toy Train Set
 							i(151349),	-- Toy Weapon Set [Alliance]
-							i(151348),	-- Toy Weapon Set [Horde]
 							i(172219),	-- Wild Holly
 							i(45057),	-- Wind-Up Train Wrecker
 							i(188680),	-- Winter Veil Chorus Book
@@ -269,14 +269,11 @@ root("Holidays", bubbleDown({ ["u"] = FEAST_OF_WINTER_VEIL }, {
 						["lvl"] = 60,
 						["g"] = {
 							-- Battle Pets/Companions
-							p(191),	-- Clockwork Rocket Bot
-							i(73797, {	-- Lump of Coal
-								p(337),		-- Lumpy
-							}),
-							i(104317, {	-- Rotten Helper Box
-								p(1349),	-- Rotten Helper Box
-							}),
 							p(254),	-- Blue Clockwork Rocket Bot
+							p(191),	-- Clockwork Rocket Bot
+							i(73797),	-- Lump of Coal
+							i(104317),	-- Rotten Helper Box
+							i(178533),	-- Shaking Pet Carrier
 							-- Toys
 							i(54343),	-- Blue Crashin' Thrashin' Racer Controller
 							i(108632, {	-- Crashin' Thrashin' Flamer Controller
@@ -288,6 +285,7 @@ root("Holidays", bubbleDown({ ["u"] = FEAST_OF_WINTER_VEIL }, {
 							i(37710),	-- Crashin' Thrashin' Racer Controller
 							i(116763),	-- Crashin' Thrashin' Shredder Controller
 							i(139337),	-- Disposable Winter Veil Suits
+							i(128636),	-- Endothermic Blaster
 							i(90888),	-- Foot Ball
 							i(116692),	-- Fuzzy Green Lounge Cushion
 							i(46709),	-- MiniZep Controller
@@ -299,6 +297,8 @@ root("Holidays", bubbleDown({ ["u"] = FEAST_OF_WINTER_VEIL }, {
 							i(54438),	-- Tiny Blue Ragdoll
 							i(54437),	-- Tiny Green Ragdoll
 							i(44606),	-- Toy Train Set
+							i(151348),	-- Toy Weapon Set [Horde]
+							i(172219),	-- Wild Holly
 							i(45057),	-- Wind-Up Train Wrecker
 							i(188680),	-- Winter Veil Chorus Book
 							i(116691),	-- Zhevra Lounge Cushion
@@ -310,6 +310,8 @@ root("Holidays", bubbleDown({ ["u"] = FEAST_OF_WINTER_VEIL }, {
 							un(REMOVED_FROM_GAME, i(93625)),	-- Miniature Winter Veil Tree (Level 90)
 							un(REMOVED_FROM_GAME, i(117371)),	-- Miniature Winter Veil Tree (Level 1-110)
 							i(143898),	-- Miniature Winter Veil Tree (Level 1 - Cosmetic)
+							-- Trinkets
+							i(151351),	-- Glowing Gift
 						},
 					}),
 				},
