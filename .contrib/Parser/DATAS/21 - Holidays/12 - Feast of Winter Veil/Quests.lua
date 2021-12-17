@@ -2,8 +2,7 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-_.Holidays = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL},
-{
+root("Holidays", bubbleDown({ ["u"] = FEAST_OF_WINTER_VEIL }, {
 	holiday(235485, {	-- Feast of Winter Veil
 		n(QUESTS, {
 			i(174865, {	-- A Tiny Winter Hat (Pepe)
@@ -29,7 +28,7 @@ _.Holidays = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL},
 				["maps"] = {
 					STORMWIND_CITY,
 					THE_EXODAR,
-					579,	-- Lunarfall
+					LUNARFALL,
 				},
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
@@ -39,7 +38,6 @@ _.Holidays = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL},
 				["provider"] = { "n", 15732 },	-- Wonderform Operator
 				["coord"] = { 67.7, 71.4, STORMWIND_CITY },	-- (closest pick-up to turn-in
 				["races"] = ALLIANCE_ONLY,
-				["u"] = FEAST_OF_WINTER_VEIL,
 			}),
 			q(7025,  {	-- Treats for Greatfather Winter
 				["provider"] = { "n", 13444 },	-- Greatfather Winter
@@ -64,51 +62,51 @@ _.Holidays = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL},
 						["lvl"] = { 30, 59 },	-- quest apparently can't be done lower than level 30, this gift isn't awarded after hitting level cap
 					}),
 					i(116762, {	-- Stolen Present
-						["lvl"] = 101,
+						["lvl"] = 60,
 						["g"] = {
 							-- Battle Pets/Companions
-							un(FEAST_OF_WINTER_VEIL, p(254)),		-- Blue Clockwork Rocket Bot
-							un(FEAST_OF_WINTER_VEIL, p(191)),		-- Clockwork Rocket Bot
-							un(FEAST_OF_WINTER_VEIL, i(73797)),	-- Lump of Coal
-							un(FEAST_OF_WINTER_VEIL, i(104317)),	-- Rotten Helper Box
+							p(254),		-- Blue Clockwork Rocket Bot
+							p(191),		-- Clockwork Rocket Bot
+							i(73797),	-- Lump of Coal
+							i(104317),	-- Rotten Helper Box
 							-- Toys
-							un(FEAST_OF_WINTER_VEIL, i(54343)),	-- Blue Crashin' Thrashin' Racer Controller
-							un(FEAST_OF_WINTER_VEIL, i(108632, {	-- Crashin' Thrashin' Flamer Controller
+							i(54343),	-- Blue Crashin' Thrashin' Racer Controller
+							i(108632, {	-- Crashin' Thrashin' Flamer Controller
 								crit(1, {	-- Crashin' Thrashin' Flamer
 									["achievementID"] = 10353,	-- Iron Armada
 								}),
-							})),
-							un(FEAST_OF_WINTER_VEIL, i(104318)),	-- Crashin' Thrashin' Flyer Controller
-							un(FEAST_OF_WINTER_VEIL, i(37710)),	-- Crashin' Thrashin' Racer Controller
-							un(FEAST_OF_WINTER_VEIL, i(116763)),	-- Crashin' Thrashin' Shredder Controller
-							un(FEAST_OF_WINTER_VEIL, i(139337)),	-- Disposable Winter Veil Suits
-							un(FEAST_OF_WINTER_VEIL, i(128636)),	-- Endothermic Blaster
-							un(FEAST_OF_WINTER_VEIL, i(90888)),	-- Foot Ball
-							un(FEAST_OF_WINTER_VEIL, i(116692)),	-- Fuzzy Green Lounge Cushion
-							un(FEAST_OF_WINTER_VEIL, i(46709)),	-- MiniZep Controller
-							un(FEAST_OF_WINTER_VEIL, i(116689)),	-- Pineapple Lounge Cushion
-							un(FEAST_OF_WINTER_VEIL, i(128776)),	-- Red Wooden Sled
-							un(FEAST_OF_WINTER_VEIL, i(116690)),	-- Safari Lounge Cushion
-							un(FEAST_OF_WINTER_VEIL, i(116456)),	-- Scroll of Storytelling
-							un(FEAST_OF_WINTER_VEIL, i(90883)),	-- The Pigskin
-							un(FEAST_OF_WINTER_VEIL, i(54438)),	-- Tiny Blue Ragdoll
-							un(FEAST_OF_WINTER_VEIL, i(54437)),	-- Tiny Green Ragdoll
-							un(FEAST_OF_WINTER_VEIL, i(44606)),	-- Toy Train Set
-							un(FEAST_OF_WINTER_VEIL, i(151349)),	-- Toy Weapon Set [Alliance]
-							un(FEAST_OF_WINTER_VEIL, i(151348)),	-- Toy Weapon Set [Horde]
-							un(FEAST_OF_WINTER_VEIL, i(45057)),	-- Wind-Up Train Wrecker
-							un(FEAST_OF_WINTER_VEIL, i(188680)),	-- Winter Veil Chorus Book
-							un(FEAST_OF_WINTER_VEIL, i(116691)),	-- Zhevra Lounge Cushion
+							}),
+							i(104318),	-- Crashin' Thrashin' Flyer Controller
+							i(37710),	-- Crashin' Thrashin' Racer Controller
+							i(116763),	-- Crashin' Thrashin' Shredder Controller
+							i(139337),	-- Disposable Winter Veil Suits
+							i(128636),	-- Endothermic Blaster
+							i(90888),	-- Foot Ball
+							i(116692),	-- Fuzzy Green Lounge Cushion
+							i(46709),	-- MiniZep Controller
+							i(116689),	-- Pineapple Lounge Cushion
+							i(128776),	-- Red Wooden Sled
+							i(116690),	-- Safari Lounge Cushion
+							i(116456),	-- Scroll of Storytelling
+							i(90883),	-- The Pigskin
+							i(54438),	-- Tiny Blue Ragdoll
+							i(54437),	-- Tiny Green Ragdoll
+							i(44606),	-- Toy Train Set
+							i(151349),	-- Toy Weapon Set [Alliance]
+							i(151348),	-- Toy Weapon Set [Horde]
+							i(45057),	-- Wind-Up Train Wrecker
+							i(188680),	-- Winter Veil Chorus Book
+							i(116691),	-- Zhevra Lounge Cushion
 							-- Illusions
-							un(FEAST_OF_WINTER_VEIL, i(118572)),	-- Illusion: Flames of Ragnaros
-							un(FEAST_OF_WINTER_VEIL, i(128649)),	-- Illusion: Winter's Grasp
+							i(118572),	-- Illusion: Flames of Ragnaros
+							i(128649),	-- Illusion: Winter's Grasp
 							-- Appearances
 							un(REMOVED_FROM_GAME, i(66540)),	-- Miniature Winter Veil Tree (Level 85)
 							un(REMOVED_FROM_GAME, i(93625)),	-- Miniature Winter Veil Tree (Level 90)
 							un(REMOVED_FROM_GAME, i(117371)),	-- Miniature Winter Veil Tree (Level 1-110)
-							un(FEAST_OF_WINTER_VEIL, i(143898)),	-- Miniature Winter Veil Tree (Level 1 - Cosmetic)
+							i(143898),	-- Miniature Winter Veil Tree (Level 1 - Cosmetic)
 							-- Trinkets
-							un(FEAST_OF_WINTER_VEIL, i(151351)),	-- Glowing Gift
+							i(151351),	-- Glowing Gift
 						},
 					}),
 				},
@@ -136,7 +134,7 @@ _.Holidays = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL},
 						["description"] = "Greatfather Winter will mail this toy to you approximately 1 day after you complete this quest.",
 						["g"] = {
 							n(13444, {	-- Greatfather Winter
-								un(FEAST_OF_WINTER_VEIL, i(17712)),	-- Winter Veil Disguise Kit
+								i(17712),	-- Winter Veil Disguise Kit
 							}),
 						},
 					}),
@@ -214,7 +212,6 @@ _.Holidays = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL},
 				["coord"] = { 50.1, 61.8, ORGRIMMAR },	-- closest pick-up to turn-in
 				["races"] = HORDE_ONLY,
 				["maps"] = { THUNDER_BLUFF },
-				["u"] = FEAST_OF_WINTER_VEIL,
 			}),
 			q(7061,  {	-- The Feast of Winter Veil (Horde)
 				["provider"] = { "n", 13417 },	-- Sagorne Creststrider
@@ -258,50 +255,50 @@ _.Holidays = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL},
 						["lvl"] = { 30, 59 },	-- quest apparently can't be done lower than level 30, this gift isn't awarded after hitting level cap
 					}),
 					i(116762, {	-- Stolen Present
-						["lvl"] = 101,
+						["lvl"] = 60,
 						["g"] = {
 							-- Battle Pets/Companions
-							un(FEAST_OF_WINTER_VEIL, p(191)),	-- Clockwork Rocket Bot
-							un(FEAST_OF_WINTER_VEIL, i(73797, {	-- Lump of Coal
-								un(FEAST_OF_WINTER_VEIL, p(337)),		-- Lumpy
-							})),
-							un(FEAST_OF_WINTER_VEIL, i(104317, {	-- Rotten Helper Box
-								un(FEAST_OF_WINTER_VEIL, p(1349)),	-- Rotten Helper Box
-							})),
-							un(FEAST_OF_WINTER_VEIL, p(254)),	-- Blue Clockwork Rocket Bot
+							p(191),	-- Clockwork Rocket Bot
+							i(73797, {	-- Lump of Coal
+								p(337),		-- Lumpy
+							}),
+							i(104317, {	-- Rotten Helper Box
+								p(1349),	-- Rotten Helper Box
+							}),
+							p(254),	-- Blue Clockwork Rocket Bot
 							-- Toys
-							un(FEAST_OF_WINTER_VEIL, i(54343)),	-- Blue Crashin' Thrashin' Racer Controller
-							un(FEAST_OF_WINTER_VEIL, i(108632, {	-- Crashin' Thrashin' Flamer Controller
+							i(54343),	-- Blue Crashin' Thrashin' Racer Controller
+							i(108632, {	-- Crashin' Thrashin' Flamer Controller
 								crit(1, {	-- Crashin' Thrashin' Flamer
 									["achievementID"] = 10353,	-- Iron Armada
 								}),
-							})),
-							un(FEAST_OF_WINTER_VEIL, i(104318)),	-- Crashin' Thrashin' Flyer Controller
-							un(FEAST_OF_WINTER_VEIL, i(37710)),	-- Crashin' Thrashin' Racer Controller
-							un(FEAST_OF_WINTER_VEIL, i(116763)),	-- Crashin' Thrashin' Shredder Controller
-							un(FEAST_OF_WINTER_VEIL, i(139337)),	-- Disposable Winter Veil Suits
-							un(FEAST_OF_WINTER_VEIL, i(90888)),	-- Foot Ball
-							un(FEAST_OF_WINTER_VEIL, i(116692)),	-- Fuzzy Green Lounge Cushion
-							un(FEAST_OF_WINTER_VEIL, i(46709)),	-- MiniZep Controller
-							un(FEAST_OF_WINTER_VEIL, i(116689)),	-- Pineapple Lounge Cushion
-							un(FEAST_OF_WINTER_VEIL, i(128776)),	-- Red Wooden Sled
-							un(FEAST_OF_WINTER_VEIL, i(116690)),	-- Safari Lounge Cushion
-							un(FEAST_OF_WINTER_VEIL, i(116456)),	-- Scroll of Storytelling
-							un(FEAST_OF_WINTER_VEIL, i(90883)),	-- The Pigskin
-							un(FEAST_OF_WINTER_VEIL, i(54438)),	-- Tiny Blue Ragdoll
-							un(FEAST_OF_WINTER_VEIL, i(54437)),	-- Tiny Green Ragdoll
-							un(FEAST_OF_WINTER_VEIL, i(44606)),	-- Toy Train Set
-							un(FEAST_OF_WINTER_VEIL, i(45057)),	-- Wind-Up Train Wrecker
-							un(FEAST_OF_WINTER_VEIL, i(188680)),	-- Winter Veil Chorus Book
-							un(FEAST_OF_WINTER_VEIL, i(116691)),	-- Zhevra Lounge Cushion
+							}),
+							i(104318),	-- Crashin' Thrashin' Flyer Controller
+							i(37710),	-- Crashin' Thrashin' Racer Controller
+							i(116763),	-- Crashin' Thrashin' Shredder Controller
+							i(139337),	-- Disposable Winter Veil Suits
+							i(90888),	-- Foot Ball
+							i(116692),	-- Fuzzy Green Lounge Cushion
+							i(46709),	-- MiniZep Controller
+							i(116689),	-- Pineapple Lounge Cushion
+							i(128776),	-- Red Wooden Sled
+							i(116690),	-- Safari Lounge Cushion
+							i(116456),	-- Scroll of Storytelling
+							i(90883),	-- The Pigskin
+							i(54438),	-- Tiny Blue Ragdoll
+							i(54437),	-- Tiny Green Ragdoll
+							i(44606),	-- Toy Train Set
+							i(45057),	-- Wind-Up Train Wrecker
+							i(188680),	-- Winter Veil Chorus Book
+							i(116691),	-- Zhevra Lounge Cushion
 							-- Illusions
-							un(FEAST_OF_WINTER_VEIL, i(128649)),	-- Illusion: Winter's Grasp
-							un(FEAST_OF_WINTER_VEIL, i(118572)),	-- Illusion: Flames of Ragnaros
+							i(128649),	-- Illusion: Winter's Grasp
+							i(118572),	-- Illusion: Flames of Ragnaros
 							-- Appearances
 							un(REMOVED_FROM_GAME, i(66540)),	-- Miniature Winter Veil Tree (Level 85)
 							un(REMOVED_FROM_GAME, i(93625)),	-- Miniature Winter Veil Tree (Level 90)
 							un(REMOVED_FROM_GAME, i(117371)),	-- Miniature Winter Veil Tree (Level 1-110)
-							un(FEAST_OF_WINTER_VEIL, i(143898)),	-- Miniature Winter Veil Tree (Level 1 - Cosmetic)
+							i(143898),	-- Miniature Winter Veil Tree (Level 1 - Cosmetic)
 						},
 					}),
 				},
@@ -359,7 +356,7 @@ _.Holidays = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL},
 						["description"] = "Greatfather Winter will mail this toy to you approximately 1 day after you complete this quest.",
 						["g"] = {
 							n(13445, {	-- Greatfather Winter
-								un(FEAST_OF_WINTER_VEIL, i(17712)),	-- Winter Veil Disguise Kit
+								i(17712),	-- Winter Veil Disguise Kit
 							}),
 						},
 					}),
@@ -367,4 +364,4 @@ _.Holidays = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL},
 			}),
 		}),
 	}),
-});
+}));

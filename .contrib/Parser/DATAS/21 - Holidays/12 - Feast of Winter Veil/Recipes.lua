@@ -2,10 +2,8 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-_.Holidays = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL},
-{
+root("Holidays", bubbleDown({ ["u"] = FEAST_OF_WINTER_VEIL }, {
 	holiday(235485, {	-- Feast of Winter Veil
-		-- TODO: These are temporarily here.  They trigger Crieve to be in unsorted.  Will fix more when I revamp it - Luce.
 		filter(RECIPES, {
 			n(MAILBOX, {
 				["description"] = "These recipes are mailed to characters with the corresponding profession(s) on the FIRST day of the event. They can also be bought from several seasonal vendors.",
@@ -35,4 +33,4 @@ _.Holidays = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL},
 			}),
 		}),
 	}),
-});
+}));

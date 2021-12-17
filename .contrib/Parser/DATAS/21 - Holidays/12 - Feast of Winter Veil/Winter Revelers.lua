@@ -2,8 +2,7 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-_.Holidays = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL},
-{
+root("Holidays", bubbleDown({ ["u"] = FEAST_OF_WINTER_VEIL }, {
 	holiday(235485, {	-- Feast of Winter Veil
 		n(-7776, {	-- Winter Revelers
 			["description"] = "Type /kiss while targeting any Winter Reveler to receive one of the following items.\n\nNOTE: While the debuff persists, you will be unable to kiss another one.",
@@ -53,7 +52,7 @@ _.Holidays = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL},
 					})
 				}),
 				i(21519, {	-- Mistletoe
-					ach(1686, {	-- Bros. Before Ho Ho Ho's (A)
+					ach(1686, {	-- Holiday Bromance (A)
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							crit(1, {	-- Brother Nimetz in Stranglethorn Vale
@@ -84,7 +83,7 @@ _.Holidays = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL},
 							}),
 						},
 					}),
-					ach(1685, {	-- Bros. Before Ho Ho Ho's (H)
+					ach(1685, {	-- Holiday Bromance (H)
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							crit(1, {	-- Brother Malach in the Undercity
@@ -102,4 +101,4 @@ _.Holidays = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL},
 			},
 		}),
 	}),
-});
+}));
