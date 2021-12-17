@@ -94,6 +94,7 @@ root("Holidays", bubbleDown({ ["u"] = FEAST_OF_WINTER_VEIL }, {
 							i(44606),	-- Toy Train Set
 							i(151349),	-- Toy Weapon Set [Alliance]
 							i(151348),	-- Toy Weapon Set [Horde]
+							i(172219),	-- Wild Holly
 							i(45057),	-- Wind-Up Train Wrecker
 							i(188680),	-- Winter Veil Chorus Book
 							i(116691),	-- Zhevra Lounge Cushion
@@ -189,19 +190,29 @@ root("Holidays", bubbleDown({ ["u"] = FEAST_OF_WINTER_VEIL }, {
 				["isYearly"] = true,
 			}),
 			q(39651, {	-- Grumpus
-				["provider"] = { "n", 96735 },	-- Pizzle
-				["maps"] = { FROSTWALL },
-				["races"] = HORDE_ONLY,
+				["providers"] = {
+					{ "n", 96451 },	-- Almie [A]
+					{ "n", 96735 },	-- Pizzle [H]
+				},
 				["isDaily"] = true,
+				["maps"] = {
+					FROSTWALL,
+					LUNARFALL,
+				},
 				["g"] = {
 					i(128659),	-- Merry Supplies
 				},
 			}),
 			q(39649, {	-- Menacing Grumplings
-				["provider"] = { "n", 96735 },	-- Pizzle
-				["maps"] = { FROSTWALL },
-				["races"] = HORDE_ONLY,
+				["providers"] = {
+					{ "n", 96451 },	-- Almie [A]
+					{ "n", 96735 },	-- Pizzle [H]
+				},
 				["isDaily"] = true,
+				["maps"] = {
+					FROSTWALL,
+					LUNARFALL,
+				},
 				["g"] = {
 					i(128659),	-- Merry Supplies
 				},
@@ -304,19 +315,29 @@ root("Holidays", bubbleDown({ ["u"] = FEAST_OF_WINTER_VEIL }, {
 				},
 			}),
 			q(39668, {	-- What Horrible Presents
-				["provider"] = { "n", 96735 },	-- Pizzle
-				["maps"] = { FROSTWALL },
-				["races"] = HORDE_ONLY,
+				["providers"] = {
+					{ "n", 96451 },	-- Almie [A]
+					{ "n", 96735 },	-- Pizzle [H]
+				},
 				["isDaily"] = true,
+				["maps"] = {
+					FROSTWALL,
+					LUNARFALL,
+				},
 				["g"] = {
 					i(128659),	-- Merry Supplies
 				},
 			}),
 			q(39648, {	-- Where Are the Children?
-				["provider"] = { "n", 96735 },	-- Pizzle
-				["maps"] = { FROSTWALL },
-				["races"] = HORDE_ONLY,
+				["providers"] = {
+					{ "n", 96451 },	-- Almie [A]
+					{ "n", 96735 },	-- Pizzle [H]
+				},
 				["isDaily"] = true,
+				["maps"] = {
+					FROSTWALL,
+					LUNARFALL,
+				},
 				["g"] = {
 					i(128659),	-- Merry Supplies
 				},
