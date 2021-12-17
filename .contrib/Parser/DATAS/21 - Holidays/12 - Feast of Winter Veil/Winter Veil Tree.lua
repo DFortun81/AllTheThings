@@ -52,7 +52,6 @@ root("Holidays", bubbleDown({ ["u"] = FEAST_OF_WINTER_VEIL }, {
 								i(116689),	-- Pineapple Lounge Cushion
 								i(116690),	-- Safarai Lounge Cushion
 								i(116691),	-- Zhevra Lounge Cusion
-								i(128768),	-- Candy Cane
 							},
 						}),
 						i(21271, {	-- Gently Shaken Gift
@@ -63,7 +62,6 @@ root("Holidays", bubbleDown({ ["u"] = FEAST_OF_WINTER_VEIL }, {
 								i(116689),	-- Pineapple Lounge Cushion
 								i(116690),	-- Safarai Lounge Cushion
 								i(116691),	-- Zhevra Lounge Cusion
-								i(128768),	-- Candy Cane
 							},
 						}),
 						i(128652, {	-- Gently Shaken Gift
@@ -75,7 +73,6 @@ root("Holidays", bubbleDown({ ["u"] = FEAST_OF_WINTER_VEIL }, {
 								i(128776),	-- Red Wooden Sled
 								i(116690),	-- Safarai Lounge Cushion
 								i(116691),	-- Zhevra Lounge Cusion
-								i(128768),	-- Candy Cane
 							},
 						}),
 						i(139343, {	-- Gently Shaken Gift
@@ -88,7 +85,6 @@ root("Holidays", bubbleDown({ ["u"] = FEAST_OF_WINTER_VEIL }, {
 								i(128776),	-- Red Wooden Sled
 								i(116690),	-- Safarai Lounge Cushion
 								i(116691),	-- Zhevra Lounge Cusion
-								i(128768),	-- Candy Cane
 							},
 						}),
 						i(151345, {	-- Gently Shaken Gift
@@ -101,7 +97,6 @@ root("Holidays", bubbleDown({ ["u"] = FEAST_OF_WINTER_VEIL }, {
 								i(151343, {	-- Hearthstation [A]
 									["races"] = ALLIANCE_ONLY,
 								}),
-								i(128768),	-- Candy Cane
 							},
 						}),
 						i(162974, {	-- Gently Shaken Gift
@@ -109,7 +104,6 @@ root("Holidays", bubbleDown({ ["u"] = FEAST_OF_WINTER_VEIL }, {
 							["description"] = "Gift from 2018.",
 							["g"] = {
 								i(162973),	-- Greatfather Winter's Hearthstone
-								i(128768),	-- Candy Cane
 							},
 						}),
 						i(172225, {	-- Gently Shaken Gift
@@ -117,7 +111,6 @@ root("Holidays", bubbleDown({ ["u"] = FEAST_OF_WINTER_VEIL }, {
 							["questID"] = 57643,
 							["g"] = {
 								i(172219),	-- Wild Holly
-								i(128768),	-- Candy Cane
 							},
 						}),
 						i(178529, {	-- Gently Shaken Gift
