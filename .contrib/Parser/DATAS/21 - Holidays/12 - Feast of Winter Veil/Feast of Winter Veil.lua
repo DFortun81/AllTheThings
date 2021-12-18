@@ -1806,7 +1806,21 @@ _.Holidays = { applyholiday(FEAST_OF_WINTER_VEIL, {
 			}),
 			o(243911, {	-- Snow Mound
 				["timeline"] = { "added 6.2.2.20395" },
-				["maps"] = { FROSTFIRE_RIDGE },
+				["coords"] = {
+                    { 42.8, 27.3, FROSTFIRE_RIDGE },
+                    { 43.2, 27.8, FROSTFIRE_RIDGE },
+                    { 43.9, 28.0, FROSTFIRE_RIDGE },
+                    { 44.1, 25.9, FROSTFIRE_RIDGE },
+                    { 44.4, 26.5, FROSTFIRE_RIDGE },
+                    { 45.0, 26.2, FROSTFIRE_RIDGE },
+                    { 45.3, 26.7, FROSTFIRE_RIDGE },
+                    { 45.8, 25.8, FROSTFIRE_RIDGE },
+                    { 45.8, 26.6, FROSTFIRE_RIDGE },
+                    { 47.0, 27.0, FROSTFIRE_RIDGE },
+                    { 47.0, 28.5, FROSTFIRE_RIDGE },
+                    { 47.4, 28.2, FROSTFIRE_RIDGE },
+                    { 47.6, 27.6, FROSTFIRE_RIDGE },
+                },
 				["groups"] = {
 					i(128770, {	-- Grumpling
 						["timeline"] = { "added 6.2.2.20395" },
