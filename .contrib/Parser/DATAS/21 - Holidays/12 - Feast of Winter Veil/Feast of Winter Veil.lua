@@ -48,7 +48,7 @@ local HOLIDAY_SMOKYWOOD_PASTURES_GIFT_PACK = {	-- Smokywood Pastures Gift Pack
 	}),
 	-- #endif
 };
-_.Holidays = { applyholiday(FEAST_OF_WINTER_VEIL, {
+root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 	-- #if ANYCLASSIC
 	["npcID"] = -61,
 	-- #else
@@ -455,12 +455,12 @@ _.Holidays = { applyholiday(FEAST_OF_WINTER_VEIL, {
 			["groups"] = {
 				-- #if AFTER TBC
 				i(34261, {	-- Pattern: Green Winter Clothes
+					["description"] = "Horde Tailors receive this pattern in the mail, but Alliance players that are adventurous can learn it from the Neutral holiday vendor in Orgrimmar.",
 					["timeline"] = { "added 2.3.0.7501" },
-					["races"] = HORDE_ONLY,
 				}),
 				i(34319, {	-- Pattern: Red Winter Clothes
+					["description"] = "Alliance Tailors receive this pattern in the mail, but Horde players that are adventurous can learn it from the Neutral holiday vendor in Ironforge.",
 					["timeline"] = { "added 2.3.0.7501" },
-					["races"] = ALLIANCE_ONLY,
 				}),
 				i(34262, {	-- Pattern: Winter Boots
 					["timeline"] = { "added 2.3.0.7501" },
@@ -1837,7 +1837,7 @@ _.Holidays = { applyholiday(FEAST_OF_WINTER_VEIL, {
 			}),
 		}),
 	},
-})};
+}));
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	holiday(235485, {	-- Feast of Winter Veil
