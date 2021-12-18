@@ -482,7 +482,7 @@ namespace ATT
                                 {
                                     // Mark the first patch this was removed on. (the upcoming patch)
                                     if (removedPatch == 0) removedPatch = version;
-                                    removed = 6;
+                                    if (removed != 1) removed = 6;
                                 }
                                 break;
                             }
