@@ -20,6 +20,34 @@ local HOLIDAY_VENDOR_GROUPS_RED = {
 		["timeline"] = { "added 2.3.0.7501" },
 	}),
 };
+local HOLIDAY_NON_COLLECTIBLE_GROUPS = {
+	i(21215),	-- Graccu's Mince Meat Fruitcake
+	-- #if AFTER 3.0.2.8962
+	i(44481),	-- Grindgear Toy Gorilla
+	-- #endif
+	-- #if AFTER 3.1.0.9658
+	i(44601),	-- Heavy Copper Racer
+	-- #endif
+	-- #if AFTER 3.0.2.8962
+	i(34498),	-- Paper Zeppelin Kit (3.0.2.8962)
+	i(44482),	-- Trusty Copper Racer (3.0.2.8970)
+	-- #endif
+	-- #if AFTER 3.1.0.9658
+	i(44599),	-- Zippy Copper Racer
+	-- #endif
+};
+local HOLIDAY_SMOKYWOOD_PASTURES_GIFT_PACK = {	-- Smokywood Pastures Gift Pack
+	-- #if BEFORE 6.2.2.20395
+	i(2996),	-- Bolt of Linen Cloth
+	i(2840),	-- Copper Bar
+	i(2318),	-- Light Leather
+	i(785),		-- Mageroyal
+	-- #else
+	i(128647, {	-- Fizzy Apple Cider
+		["timeline"] = { "added 6.2.2.20395" },
+	}),
+	-- #endif
+};
 _.Holidays = { applyholiday(FEAST_OF_WINTER_VEIL, {
 	-- #if ANYCLASSIC
 	["npcID"] = -61,
@@ -1419,11 +1447,15 @@ _.Holidays = { applyholiday(FEAST_OF_WINTER_VEIL, {
 				["isYearly"] = true,
 			},
 			{	-- You're a Mean One... (Both)
-				["providers"] = {
-					{ "n", 13418 },	-- Kaymard Copperpinch (Horde)
-					{ "n", 13433 },	-- Wulmort Jinglepocket (Alliance)
-					{ "n", 13636 },	-- Strange Snowman
+				-- #if AFTER CATA
+				["qgs"] = {
+					13418,	-- Kaymard Copperpinch (Horde)
+					13433,	-- Wulmort Jinglepocket (Alliance)
+					13636,	-- Strange Snowman
 				},
+				-- #else
+				["qg"] = 13636,	-- Strange Snowman
+				-- #endif
 				["allianceQuestID"] = 7043,	-- You're a Mean One... (Alliance)
 				["hordeQuestID"] = 6983,	-- You're a Mean One... (Horde)
 				["sourceQuests"] = {
@@ -1436,10 +1468,11 @@ _.Holidays = { applyholiday(FEAST_OF_WINTER_VEIL, {
 					{ 33.2, 67.8, IRONFORGE },	-- Wulmort Jinglepocket (Alliance)
 					{ 42.4, 41, HILLSBRAD_FOOTHILLS },	-- Strange Snowman
 				},
+				["isDaily"] = true,
 				-- #else
 				["coord"] = { 35.4, 72.6, ALTERAC_MOUNTAINS },
+				["isYearly"] = true,
 				-- #endif
-				["isDaily"] = true,
 				["lvl"] = 30,
 				["groups"] = {
 					objective(1, {	-- 0/1 Stolen Treats
@@ -1449,14 +1482,6 @@ _.Holidays = { applyholiday(FEAST_OF_WINTER_VEIL, {
 					i(149503, {	-- Stolen Gift
 						["description"] = "This gift is granted to any player below max level. This gift doesn't drop any of the rare seasonal items; it's currently not worth it.",
 						["timeline"] = { "added 7.2.5.23910" },
-						["sym"] = {
-							{ "select", "itemID", 21215 },	-- Graccu's Mince Meat Fruitcake
-							{ "select", "itemID", 44481 },	-- Grindgear Toy Gorilla (3.0.2.8962)
-							{ "select", "itemID", 44601 },	-- Heavy Copper Racer (3.1.0.9658)
-							{ "select", "itemID", 34498 },	-- Paper Zeppelin Kit (3.0.2.8962)
-							{ "select", "itemID", 44482 },	-- Trusty Copper Racer (3.0.2.8970)
-							{ "select", "itemID", 44599 },	-- Zippy Copper Racer (3.1.0.9658)
-						},
 						-- #if AFTER SHADOWLANDS
 						["lvl"] = { 30, 59 },
 						-- #elseif AFTER BFA
@@ -1464,6 +1489,7 @@ _.Holidays = { applyholiday(FEAST_OF_WINTER_VEIL, {
 						-- #else
 						["lvl"] = { 30, 100 },
 						-- #endif
+						["groups"] = HOLIDAY_NON_COLLECTIBLE_GROUPS,
 					}),
 					-- TODO: Sort out the contents of the Stolen Presents by patch (in time, don't need it until Cata)
 					i(116762, {	-- Stolen Present
@@ -1531,18 +1557,7 @@ _.Holidays = { applyholiday(FEAST_OF_WINTER_VEIL, {
 				},
 				["timeline"] = { "created 8.3.0", "added 9.0.1" },
 			}),
-			i(17727, {	-- Smokywood Pastures Gift Pack
-				-- #if BEFORE 6.2.2.20395
-				i(2996),	-- Bolt of Linen Cloth
-				i(2840),	-- Copper Bar
-				i(2318),	-- Light Leather
-				i(785),		-- Mageroyal
-				-- #else
-				i(128647, {	-- Fizzy Apple Cider
-					["timeline"] = { "added 6.2.2.20395" },
-				}),
-				-- #endif
-			}),
+			i(17727, HOLIDAY_SMOKYWOOD_PASTURES_GIFT_PACK),	-- Smokywood Pastures Gift Pack
 			i(17685, {	-- Smokywood Pastures Sampler
 				i(17404),	-- Blended Bean Brew
 				i(17344, {	-- Candy Cane
@@ -1843,6 +1858,12 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 }));
 
 -- Remove the holiday flag.
+-- #if BEFORE 6.2.2.20395
+for i,o in ipairs(HOLIDAY_SMOKYWOOD_PASTURES_GIFT_PACK) do o.u = nil; end
+-- #endif
+for i=2,#HOLIDAY_NON_COLLECTIBLE_GROUPS,1 do
+	HOLIDAY_NON_COLLECTIBLE_GROUPS[i].u = nil;
+end
 MEDALLION_OF_THE_LEGION.u = nil;
 FROZEN_ARMS_OF_A_HERO.u = nil;
 HUGE_SNOWBALL.u = nil;
