@@ -15972,6 +15972,7 @@ function app:GetDataCache()
 			db.description = L["NEVER_IMPLEMENTED_DESC"];
 			tinsert(g, db);
 			tinsert(db.g, 1, flightPathsCategory_NYI);
+			CacheFields(db);
 		end
 
 		-- Hidden Quest Triggers
@@ -15982,6 +15983,9 @@ function app:GetDataCache()
 			db.text = L["HIDDEN_QUEST_TRIGGERS"];
 			db.description = L["HIDDEN_QUEST_TRIGGERS_DESC"];
 			tinsert(g, db);
+			app.ToggleCacheMaps(true);
+			CacheFields(db);
+			app.ToggleCacheMaps();
 		end
 
 		-- Unsorted
@@ -15992,12 +15996,12 @@ function app:GetDataCache()
 			db.text = L["UNSORTED_1"];
 			db.description = L["UNSORTED_DESC_2"];
 			tinsert(g, db);
+			app.ToggleCacheMaps(true);
+			CacheFields(db);
+			app.ToggleCacheMaps();
 		end
 		BuildGroups(allData, allData.g);
 		app:GetWindow("Unsorted").data = allData;
-		app.ToggleCacheMaps(true);
-		CacheFields(allData);
-		app.ToggleCacheMaps();
 
 		local buildCategoryEntry = function(self, headers, searchResults, inst)
 			local header = self;
