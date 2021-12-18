@@ -1419,7 +1419,11 @@ _.Holidays = { applyholiday(FEAST_OF_WINTER_VEIL, {
 				["isYearly"] = true,
 			},
 			{	-- You're a Mean One... (Both)
-				["qg"] = 13636,	-- Strange Snowman
+				["providers"] = {
+					{ "n", 13418 },	-- Kaymard Copperpinch (Horde)
+					{ "n", 13433 },	-- Wulmort Jinglepocket (Alliance)
+					{ "n", 13636 },	-- Strange Snowman
+				},
 				["allianceQuestID"] = 7043,	-- You're a Mean One... (Alliance)
 				["hordeQuestID"] = 6983,	-- You're a Mean One... (Horde)
 				["sourceQuests"] = {
@@ -1427,11 +1431,15 @@ _.Holidays = { applyholiday(FEAST_OF_WINTER_VEIL, {
 					6963,	-- Stolen Winter Veil Treats (Horde)
 				},
 				-- #if AFTER CATA
-				["coord"] = { 42.4, 41, HILLSBRAD_FOOTHILLS },
+				["coords"] = {
+					{ 52.4, 77, ORGRIMMAR },	-- Kaymard Copperpinch (Horde)
+					{ 33.2, 67.8, IRONFORGE },	-- Wulmort Jinglepocket (Alliance)
+					{ 42.4, 41, HILLSBRAD_FOOTHILLS },	-- Strange Snowman
+				},
 				-- #else
 				["coord"] = { 35.4, 72.6, ALTERAC_MOUNTAINS },
 				-- #endif
-				["isYearly"] = true,
+				["isDaily"] = true,
 				["lvl"] = 30,
 				["groups"] = {
 					objective(1, {	-- 0/1 Stolen Treats
