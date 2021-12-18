@@ -1321,6 +1321,7 @@ _.Instances = { tier(WOD_TIER, {
 					i(124230),	-- Prophecy of Fear
 				})),
 				cr(91331, e(1438, {	-- Archimonde
+					un(REMOVED_FROM_GAME, ach(10044)),	-- Ahead of the Curve: The Black Gate
 					un(REMOVED_FROM_GAME, i(133762, {
 						un(REMOVED_FROM_GAME, q(40904, {
 						})),
@@ -1842,6 +1843,8 @@ _.Instances = { tier(WOD_TIER, {
 					i(124230),	-- Prophecy of Fear
 				})),
 				cr(91331, e(1438, {	-- Archimonde
+					un(REMOVED_FROM_GAME, ach(10044)),	-- Ahead of the Curve: The Black Gate
+					un(REMOVED_FROM_GAME, ach(10045)),	-- Cutting Edge: The Black Gate
 					ig(123890),	-- Felsteel Annihilator (Mount)
 					i(124389),	-- Calamity's Edge
 					i(124382),	-- Edict of Argus
