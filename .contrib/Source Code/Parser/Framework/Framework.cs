@@ -94,7 +94,7 @@ namespace ATT
             { "WOD", new int[] { 6, 2, 4, 21345 } },
             { "LEGION", new int[] { 7, 3, 5, 26365 } },
             { "BFA", new int[] { 8, 3, 7, 35249 } },
-            { "SHADOWLANDS", new int[] { 9, 1, 5, 41359 } },
+            { "SHADOWLANDS", new int[] { 9, 1, 5, 41488 } },
         };
 
         public static readonly string CURRENT_RELEASE_PHASE_NAME =
@@ -482,7 +482,7 @@ namespace ATT
                                 {
                                     // Mark the first patch this was removed on. (the upcoming patch)
                                     if (removedPatch == 0) removedPatch = version;
-                                    removed = 6;
+                                    if (removed != 1) removed = 6;
                                 }
                                 break;
                             }

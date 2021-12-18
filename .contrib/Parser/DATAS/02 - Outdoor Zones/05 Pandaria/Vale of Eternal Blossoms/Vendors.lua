@@ -284,14 +284,14 @@ _.Zones =
 				}),
 				n(66973, {	-- Kai Featherfall <Phoenix Egg Trader>
 					["coord"] = { 82.2, 34.0, VALE_OF_ETERNAL_BLOSSOMS },
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(90045, {	-- Ancestral Phoenix Egg
+					["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME},{
+						i(90045, {	-- Ancestral Phoenix Egg
 							i(89154),	-- Reins of the Crimson Pandaren Phoenix
 							i(90710),	-- Reins of the Ashen Pandaren Phoenix
 							i(90711),	-- Reins of the Emerald Pandaren Phoenix
 							i(90712),	-- Reins of the Violet Pandaren Phoenix
-						})),
-					},
+						}),
+					}),
 				}),
 				n(65172, {	-- Len at Arms <Adventuring Supplies>
 					["coord"] = { 14.1, 78.8, VALE_OF_ETERNAL_BLOSSOMS },

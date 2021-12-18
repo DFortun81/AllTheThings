@@ -19,10 +19,18 @@ namespace ATT
         public static long ConvertVersion<T>(this T[] arr)
         {
             if (arr == null || arr.Length < 1) return 0;
-            return long.Parse(new StringBuilder().Append(Convert.ToString(arr[0]).Trim())
-                .Append((arr.Length >= 2 ? Convert.ToString(arr[1]).Trim() : "").PadLeft(3, '0'))
-                .Append((arr.Length >= 3 ? Convert.ToString(arr[2]).Trim() : "").PadLeft(3, '0'))
-                .Append((arr.Length >= 4 ? Convert.ToString(arr[1]).Trim() : "").PadLeft(6, '0')).ToString());
+            try
+            {
+                return long.Parse(new StringBuilder().Append(Convert.ToString(arr[0]).Trim())
+                    .Append((arr.Length >= 2 ? Convert.ToString(arr[1]).Trim() : "").PadLeft(3, '0'))
+                    .Append((arr.Length >= 3 ? Convert.ToString(arr[2]).Trim() : "").PadLeft(3, '0'))
+                    .Append((arr.Length >= 4 ? Convert.ToString(arr[1]).Trim() : "").PadLeft(6, '0')).ToString());
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(MiniJSON.Json.Serialize(arr));
+                throw e;
+            }
         }
 
         /// <summary>
