@@ -2,13 +2,8 @@
 --     N E V E R    I M P L E M E N T E D    M O D U L E     --
 ---------------------------------------------------------------
 -- Everything in this file hasn't been implemented yet.
-local oldI, oldQ, oldAch, oldP = i, q, ach, p;
-i = function(...) return un(NEVER_IMPLEMENTED, oldI(...)); end
-q = function(...) return un(NEVER_IMPLEMENTED, oldQ(...)); end
-ach = function(...) return un(NEVER_IMPLEMENTED, oldAch(...)); end
-p = function(...) return un(NEVER_IMPLEMENTED, oldP(...)); end
-_.NeverImplemented =
-{
+
+root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	i(163255, {	-- 7th Legionnaire's Treads
 		-- CRIEVE NOTE: Keep this here until we get solid proof and an accurate source.
 		["description"] = "There's been a lot of discussion about this item and whether or not it exists. If this drops for you, please provide as much information as you can about how and where you got it. It does not commonly drop like the other items in Arathi and it is suspected not to be available from the Warfront Victory or Warfront Victory Quest Crate either.\n\n - Crieve",
@@ -38,7 +33,6 @@ _.NeverImplemented =
 		i(188701),	-- Fire Festival Batons (Midsummer)
 		i(188699),	-- Insulated Dancing Insoles (Midsummer)
 		i(188695),	-- Summer Cranial Skillet (Midsummer)
-		i(188680),	-- Winter Veil Chorus Book (Winter Veil)
 		i(187422),	-- Rockin' Rollin' Racer Customizer 19.9.3 (Winter Veil)
 		i(187560),	-- Shine and Pine (Winter Veil)
 		ach(15181),	-- Rock n' Roll
@@ -3454,21 +3448,17 @@ _.NeverImplemented =
 			i(165682),	-- Fallback Weapon - Warglaives
 		}),
 	}),
+}));
 
-------------------------------------------------------------
---			T E M P O R A R Y			I T E M S		  --
-------------------------------------------------------------
-
--- Here I am going to call upon maps that don't really have any data and wouldn't make sense to display a mini list in
-m(465),		-- Le Glas
-m(516),		-- Isle of Thunder (One of last initial scenaraio)
-m(892),		-- Azuremyst Isle (Argus Opening)
-m(893),		-- Azuremyst Isle (Argus Opening)
-m(889),		-- Arcatraz - scenario map
-m(890),		-- Arcatraz - scenario map
-m(1338),	-- Darkshore (Tyrande's Ascension scenario)
-m(1335),	-- Cooking: Impossible
-};
-
--- Restore original functionality.
-i, q, ach, p = oldI, oldQ, oldAch, oldP;
+-- NYI Content which should NOT be filtered in game since it is 'technically' there
+root("NeverImplemented", {
+	-- Maps that don't have any data but still exist in game
+	m(465),		-- Le Glas
+	m(516),		-- Isle of Thunder (One of last initial scenaraio)
+	m(892),		-- Azuremyst Isle (Argus Opening)
+	m(893),		-- Azuremyst Isle (Argus Opening)
+	m(889),		-- Arcatraz - scenario map
+	m(890),		-- Arcatraz - scenario map
+	m(1338),	-- Darkshore (Tyrande's Ascension scenario)
+	m(1335),	-- Cooking: Impossible
+});

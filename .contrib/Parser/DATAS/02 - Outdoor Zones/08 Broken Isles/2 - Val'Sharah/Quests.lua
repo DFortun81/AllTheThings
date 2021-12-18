@@ -764,6 +764,7 @@ _.Zones =
 		}),
 	}),
 };
+
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(LEGION_TIER, {
 		n(-387,	{	-- Relics
@@ -771,7 +772,15 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 	}),
 });
+
 _.HiddenQuestTriggers = {
-	q(45490),	-- Lytheron
-	q(44881),	-- Sharptalon Matriarch Tracking Q From the WQ Sharptalon
+	m(BROKEN_ISLES, {
+		m(VALSHARAH, {
+			n(QUESTS, {
+				q(38666),	-- entering the burning house during 38644	(The Farmsteads)
+				q(45490),	-- Lytheron
+				q(44881),	-- Sharptalon Matriarch Tracking Q From the WQ Sharptalon
+			}),
+		}),
+	}),
 };

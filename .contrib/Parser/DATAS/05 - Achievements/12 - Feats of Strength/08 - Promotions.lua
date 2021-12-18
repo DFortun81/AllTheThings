@@ -74,11 +74,11 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		ach(15323),	-- Sarge's Tale
 		un(REMOVED_FROM_GAME, ach(3536)),		-- The Marine Marine
 		un(REMOVED_FROM_GAME, ach(414)),		-- Tyrael's Hilt
-		un(REMOVED_FROM_GAME, ach(9496, {		-- Warlord's Deathwheel
-			["races"] = HORDE_ONLY,
-			["g"] = {
-				i(116788),			-- Warlord's Deathwheel
-			},
+		ach(9496, bubbleDownSelf({	-- Warlord's Deathwheel
+			["timeline"] = { "added 6.0.2.18888" },
+			["u"] = REMOVED_FROM_GAME,
+			["races"] = HORDE_ONLY, }, {
+				i(116788),	-- Warlord's Deathwheel
 		})),
 	}),
 }));

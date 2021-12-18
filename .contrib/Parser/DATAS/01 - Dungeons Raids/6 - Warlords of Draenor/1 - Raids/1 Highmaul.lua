@@ -532,6 +532,7 @@ _.Instances = { tier(WOD_TIER, {
 					un(REMOVED_FROM_GAME, i(115288)),	-- Felbreaker's Tome
 				})),
 				cr(77428, e(1197, {	-- Imperator Mar'gok <Sorcerer King>
+					un(REMOVED_FROM_GAME, ach(9441)),	-- Ahead of the Curve: Imperator's Fall
 					ach(8977),	-- Lineage of Power
 					i(113848),	-- Gor'gah, High Blade of the Gorians
 					i(113857),	-- Staff of the Grand Imperator
@@ -746,6 +747,7 @@ _.Instances = { tier(WOD_TIER, {
 						ach(8965, {	-- Mythic: Imperator's Fall
 							title(304),	-- <Name>, Empire's Twilight
 						}),
+						un(REMOVED_FROM_GAME, ach(9441)),	-- Ahead of the Curve: Imperator's Fall
 						un(REMOVED_FROM_GAME, ach(9442)),	-- Cutting Edge: Imperator's Fall
 						ach(8977),	-- Lineage of Power
 						i(113848),	-- Gor'gah, High Blade of the Gorians

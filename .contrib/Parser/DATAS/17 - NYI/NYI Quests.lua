@@ -2,13 +2,8 @@
 --     N E V E R    I M P L E M E N T E D    M O D U L E     --
 ---------------------------------------------------------------
 -- Everything in this file hasn't been implemented yet.
-local oldI, oldQ, oldAch, oldP = i, q, ach, p;
-i = function(...) return un(NEVER_IMPLEMENTED, oldI(...)); end
-q = function(...) return un(NEVER_IMPLEMENTED, oldQ(...)); end
-ach = function(...) return un(NEVER_IMPLEMENTED, oldAch(...)); end
-p = function(...) return un(NEVER_IMPLEMENTED, oldP(...)); end
-_.NeverImplemented =
-{
+
+root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	n(QUESTS, {
 		tier(CLASSIC_TIER, { -- These Quests might be ingame, very unlikely however.
 			q(62300),	-- Classic 20-49
@@ -1212,7 +1207,4 @@ _.NeverImplemented =
 			q(40829),	-- LFGDungeons - Draenor 6.2 - Raid Finder - 1st
 		}),
 	}),
-};
-
--- Restore original functionality.
-i, q, ach, p = oldI, oldQ, oldAch, oldP;
+}));

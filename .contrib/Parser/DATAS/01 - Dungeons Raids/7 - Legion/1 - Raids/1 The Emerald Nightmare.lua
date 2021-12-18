@@ -314,7 +314,7 @@ _.Instances = { tier(LEGION_TIER, {
 				}),
 				cr(102672, e(1703, {	-- Nythendra
 					ach(10555, {	-- Buggy Fight
-						["creatureID"] = 105097,	-- Glow Bug
+						["crs"] = { 105097 },	-- Glow Bug
 					}),
 					ach(10818, crit(1)),	-- Darkbough / Nythendra
 					i(139636),	-- Vantus Rune Technique: Nythendra [Rank 1]
@@ -550,7 +550,7 @@ _.Instances = { tier(LEGION_TIER, {
 				}),
 				cr(102672, e(1703, {	-- Nythendra
 					ach(10555, {	-- Buggy Fight
-						["creatureID"] = 105097,	-- Glow Bug
+						["crs"] = { 105097 },	-- Glow Bug
 					}),
 					ach(10818, crit(1)),	-- Darkbough / Nythendra
 					i(139636),	-- Vantus Rune Technique: Nythendra [Rank 1]
@@ -789,7 +789,7 @@ _.Instances = { tier(LEGION_TIER, {
 				}),
 				cr(102672, e(1703, {	-- Nythendra
 					ach(10555, {	-- Buggy Fight
-						["creatureID"] = 105097,	-- Glow Bug
+						["crs"] = { 105097 },	-- Glow Bug
 					}),
 					ach(10818, crit(1)),	-- Darkbough / Nythendra
 					i(139636),	-- Vantus Rune Technique: Nythendra [Rank 1]

@@ -4799,6 +4799,10 @@ local function CacheField(group, field, value)
 		rawset(fieldCache_g, value, {group});
 	end
 end
+-- Toggle being able to cache things inside maps
+app.ToggleCacheMaps = function(skipCaching)
+	currentMaps[-1] = skipCaching;
+end
 -- This is referenced by FlightPath objects when pulling their Info from the DB
 app.CacheField = CacheField;
 -- These are the fields we store.
@@ -4837,6 +4841,8 @@ end
 -- special map cache function, will only cache a group for the mapID if the current hierarchy has not already been cached in this map
 -- level doesn't matter and will be reported in chat for 'mapID' and 'maps' being multiply-nested
 local cacheMapID = function(group, mapID, coords)
+	-- use -1 as special key to NOT cache a group with a map
+	if currentMaps[-1] then return; end
 	if not currentMaps[mapID] then
 		-- track the group which was first cached for this map within the hierarchy
 		currentMaps[mapID] = group;
@@ -15966,6 +15972,7 @@ function app:GetDataCache()
 			db.description = L["NEVER_IMPLEMENTED_DESC"];
 			tinsert(g, db);
 			tinsert(db.g, 1, flightPathsCategory_NYI);
+			CacheFields(db);
 		end
 
 		-- Hidden Quest Triggers
@@ -15976,6 +15983,9 @@ function app:GetDataCache()
 			db.text = L["HIDDEN_QUEST_TRIGGERS"];
 			db.description = L["HIDDEN_QUEST_TRIGGERS_DESC"];
 			tinsert(g, db);
+			app.ToggleCacheMaps(true);
+			CacheFields(db);
+			app.ToggleCacheMaps();
 		end
 
 		-- Unsorted
@@ -15986,10 +15996,12 @@ function app:GetDataCache()
 			db.text = L["UNSORTED_1"];
 			db.description = L["UNSORTED_DESC_2"];
 			tinsert(g, db);
+			app.ToggleCacheMaps(true);
+			CacheFields(db);
+			app.ToggleCacheMaps();
 		end
 		BuildGroups(allData, allData.g);
 		app:GetWindow("Unsorted").data = allData;
-		CacheFields(allData);
 
 		local buildCategoryEntry = function(self, headers, searchResults, inst)
 			local header = self;
@@ -16791,22 +16803,9 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		force = true;
 		self.initialized = true;
 		self.openedOnLogin = false;
+		self.CurrentMaps = {};
 		self.IsSameMapData = function(self)
-			local data = self.data;
-			if data.mapID then
-				-- Exact same map?
-				if data.mapID == self.mapID then
-					-- print("exact same map");
-					return true;
-				end
-			end
-			if data.maps then
-				-- Does the old map data contain this map?
-				if contains(data.maps, self.mapID) then
-					-- print("contained map");
-					return true;
-				end
-			end
+			if self.CurrentMaps[self.mapID] then return true; end
 		end
 		self.SetMapID = function(self, mapID)
 			-- print("SetMapID",mapID)
@@ -16888,12 +16887,14 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				self.data.mapID = self.mapID;
 				return;
 			end
+			wipe(self.CurrentMaps);
 			local results = SearchForField("mapID", self.mapID);
 			if results then
 				-- print(#results,"Minilist Results for mapID",self.mapID)
 				-- Simplify the returned groups
 				local groups, nested = {};
 				local header = app.CreateMap(self.mapID, { g = groups });
+				self.CurrentMaps[self.mapID] = true;
 				local inInstance = IsInInstance();
 				for _,group in ipairs(results) do
 					-- do not use any raw Source groups in the final list
@@ -16910,6 +16911,11 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					-- and actually match this minilist...
 					-- only if this group mapID matches the minilist mapID directly or by maps
 					and (group.mapID == self.mapID or (group.maps and contains(group.maps, self.mapID))) then
+						if group.maps then
+							for _,m in ipairs(group.maps) do
+								self.CurrentMaps[m] = true;
+							end
+						end
 						MergeProperties(header, group, true);
 						if group.g then
 							MergeObjects(groups, group.g);

@@ -240,7 +240,6 @@ _.Zones =
 							},
 						}),
 						q(53338, {	-- Prove Your Worth
-							["isWeekly"] = true,
 							["coord"] = { 51.56, 58.06, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 143551 },	--  Centurion Firescream

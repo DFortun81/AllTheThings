@@ -794,6 +794,7 @@ _.Zones =
 				}),
 				q(28212, {	-- Hot Stuff
 					["sourceQuests"] = {
+						27752,	-- Fight Like a Wildhammer
 						27753,	-- Never Leave a Dinner Behind
 						27754,	-- Dragonmaw Takedown
 					},
@@ -1236,6 +1237,7 @@ _.Zones =
 				}),
 				q(28215, {	-- Potential Energy
 					["sourceQuests"] = {
+						27752,	-- Fight Like a Wildhammer
 						27753,	-- Never Leave a Dinner Behind
 						27754,	-- Dragonmaw Takedown
 					},
@@ -1478,6 +1480,7 @@ _.Zones =
 				}),
 				q(27815, {	-- Somethin' for the Boys
 					["sourceQuests"] = {
+						27813,	-- Death Worthy of a Dragonmaw
 						27814,	-- Anything We Can Get
 						28234,	-- They Took Me Pants!
 					},
@@ -1543,6 +1546,7 @@ _.Zones =
 				}),
 				q(28211, {	-- Tempered in Elemental Flame
 					["sourceQuests"] = {
+						27752,	-- Fight Like a Wildhammer
 						27753,	-- Never Leave a Dinner Behind
 						27754,	-- Dragonmaw Takedown
 					},
