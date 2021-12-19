@@ -1218,11 +1218,10 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					i(21213),  -- Preserved Holly
 				},
 			}),
-			{	-- New Year Celebrations! (Both)
+			q(8860, {	-- New Year Celebrations!
 				["qg"] = 15732,	-- Wonderform Operator <Smokywood Pastures>
-				["allianceQuestID"] = 8860,	-- New Year Celebrations!
-				["hordeQuestID"] = 8861,	-- New Year Celebrations!
 				["description"] = "This quest is only available on December 31. Quest can be obtained from Wonderform Operator in any major city.",
+				["isYearly"] = true,
 				["maps"] = {
 					-- #if AFTER WRATH
 					NORTHREND_DALARAN,
@@ -1240,13 +1239,39 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					TIRISFAL_GLADES,
 					WETLANDS,
 				},
-				["isYearly"] = true,
 				["groups"] = {
 					objective(1, {	-- 0/1 Smokywood Supplies
 						["provider"] = { "i", 21545 },	-- Smokywood Supplies
 					}),
 				},
-			},
+			}),
+			q(8861, {	-- New Year Celebrations!
+				["qg"] = 15732,	-- Wonderform Operator <Smokywood Pastures>
+				["description"] = "This quest is only available on December 31. Quest can be obtained from Wonderform Operator in any major city.",
+				["isYearly"] = true,
+				["maps"] = {
+					-- #if AFTER WRATH
+					NORTHREND_DALARAN,
+					-- #endif
+					DUN_MOROGH,
+					DUROTAR,
+					ORGRIMMAR,
+					-- #if AFTER CATA
+					THE_CAPE_OF_STRANGLETHORN,
+					-- #else
+					STRANGLETHORN_VALE,
+					-- #endif
+					STORMWIND_CITY,
+					TANARIS,
+					TIRISFAL_GLADES,
+					WETLANDS,
+				},
+				["groups"] = {
+					objective(1, {	-- 0/1 Smokywood Supplies
+						["provider"] = { "i", 21545 },	-- Smokywood Supplies
+					}),
+				},
+			}),
 			q(7042, {	-- Stolen Winter Veil Treats (Alliance)
 				["qg"] = 13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
 				-- #if AFTER CATA
@@ -1421,10 +1446,8 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					}),
 				},
 			}),
-			{	-- Winter's Presents (Both)
+			q(8827,{	-- Winter's Presents [A]
 				["qg"] = 15732,	-- Wonderform Operator <Smokywood Pastures>
-				["allianceQuestID"] = 8827,	-- Winter's Presents (Alliance)
-				["hordeQuestID"] = 8828,	-- Winter's Presents (Horde)
 				["description"] = "This quest becomes available after the 25th.",
 				["maps"] = {
 					-- #if AFTER WRATH
@@ -1445,26 +1468,42 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				},
 				["isBreadcrumb"] = true,
 				["isYearly"] = true,
-			},
-			{	-- You're a Mean One... (Both)
+			}),
+			q(8828, {	-- Winter's Presents [H]
+				["qg"] = 15732,	-- Wonderform Operator <Smokywood Pastures>
+				["description"] = "This quest becomes available after the 25th.",
+				["maps"] = {
+					-- #if AFTER WRATH
+					NORTHREND_DALARAN,
+					-- #endif
+					DUN_MOROGH,
+					DUROTAR,
+					ORGRIMMAR,
+					-- #if AFTER CATA
+					THE_CAPE_OF_STRANGLETHORN,
+					-- #else
+					STRANGLETHORN_VALE,
+					-- #endif
+					STORMWIND_CITY,
+					TANARIS,
+					TIRISFAL_GLADES,
+					WETLANDS,
+				},
+				["isBreadcrumb"] = true,
+				["isYearly"] = true,
+			}),
+			q(7043,{	-- You're a Mean One... [A]
 				-- #if AFTER CATA
 				["qgs"] = {
-					13418,	-- Kaymard Copperpinch (Horde)
 					13433,	-- Wulmort Jinglepocket (Alliance)
 					13636,	-- Strange Snowman
 				},
 				-- #else
 				["qg"] = 13636,	-- Strange Snowman
 				-- #endif
-				["allianceQuestID"] = 7043,	-- You're a Mean One... (Alliance)
-				["hordeQuestID"] = 6983,	-- You're a Mean One... (Horde)
-				["sourceQuests"] = {
-					7042,	-- Stolen Winter Veil Treats (Alliance)
-					6963,	-- Stolen Winter Veil Treats (Horde)
-				},
+				["sourceQuest"] = 7042,	-- Stolen Winter Veil Treats (Alliance)
 				-- #if AFTER CATA
 				["coords"] = {
-					{ 52.4, 77, ORGRIMMAR },	-- Kaymard Copperpinch (Horde)
 					{ 33.2, 67.8, IRONFORGE },	-- Wulmort Jinglepocket (Alliance)
 					{ 42.4, 41, HILLSBRAD_FOOTHILLS },	-- Strange Snowman
 				},
@@ -1491,52 +1530,55 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 						-- #endif
 						["groups"] = HOLIDAY_NON_COLLECTIBLE_GROUPS,
 					}),
-					-- TODO: Sort out the contents of the Stolen Presents by patch (in time, don't need it until Cata)
+					i(93626, {	-- Stolen Present
+						["timeline"] = { "added 5.1.0.16309", "removed 6.0.1.18594" },
+					}),
+					i(73792, {	-- Stolen Present
+						["timeline"] = { "added 4.3.0.15005", "removed 5.1.0.16309" },
+					}),
 					i(116762, {	-- Stolen Present
 						["timeline"] = { "added 6.0.1.18594" },
-						["lvl"] = 60,
-						["groups"] = {
-							-- Battle Pets/Companions
-							i(54436),	-- Blue Clockwork Rocket Bot
-							i(34425),	-- Clockwork Rocket Bot
-							i(73797),	-- Lump of Coal
-							i(104317),	-- Rotten Helper Box
-							i(178533),	-- Shaking Pet Carrier
-							-- Toys
-							i(54343),	-- Blue Crashin' Thrashin' Racer Controller
-							i(108632),	-- Crashin' Thrashin' Flamer Controller
-							i(104318),	-- Crashin' Thrashin' Flyer Controller
-							i(37710),	-- Crashin' Thrashin' Racer Controller
-							i(116763),	-- Crashin' Thrashin' Shredder Controller
-							i(139337),	-- Disposable Winter Veil Suits
-							i(128636),	-- Endothermic Blaster
-							i(116692),	-- Fuzzy Green Lounge Cushion
-							i(46709),	-- MiniZep Controller
-							i(116689),	-- Pineapple Lounge Cushion
-							i(128776),	-- Red Wooden Sled
-							i(116690),	-- Safari Lounge Cushion
-							i(116456),	-- Scroll of Storytelling
-							i(90888),	-- Special Edition Foot Ball
-							i(90883),	-- The Pigskin
-							i(54438),	-- Tiny Blue Ragdoll
-							i(54437),	-- Tiny Green Ragdoll
-							i(44606),	-- Toy Train Set
-							i(151348),	-- Toy Weapon Set [Horde]
-							i(172219),	-- Wild Holly
-							i(45057),	-- Wind-Up Train Wrecker
-							i(188680),	-- Winter Veil Chorus Book
-							i(116691),	-- Zhevra Lounge Cushion
-							-- Illusions
-							i(128649),	-- Illusion: Winter's Grasp
-							i(118572),	-- Illusion: Flames of Ragnaros
-							-- Appearances
-							un(REMOVED_FROM_GAME, i(66540)),	-- Miniature Winter Veil Tree (Level 85)
-							un(REMOVED_FROM_GAME, i(93625)),	-- Miniature Winter Veil Tree (Level 90)
-							un(REMOVED_FROM_GAME, i(117371)),	-- Miniature Winter Veil Tree (Level 1-110)
-							i(143898),	-- Miniature Winter Veil Tree (Level 1 - Cosmetic)
-							-- Trinkets
-							i(151351),	-- Glowing Gift
-						},
+						["sym"] = {{"fill"}},	-- fill with cached content
+					}),
+				},
+			}),
+			q(6983, {	-- You're a Mean One... [H]
+				-- #if AFTER CATA
+				["qgs"] = {
+					13418,	-- Kaymard Copperpinch (Horde)
+					13636,	-- Strange Snowman
+				},
+				-- #else
+				["qg"] = 13636,	-- Strange Snowman
+				-- #endif
+				["sourceQuest"] = 6963,	-- Stolen Winter Veil Treats (Horde)
+				-- #if AFTER CATA
+				["coords"] = {
+					{ 52.4, 77, ORGRIMMAR },	-- Kaymard Copperpinch (Horde)
+					{ 42.4, 41, HILLSBRAD_FOOTHILLS },	-- Strange Snowman
+				},
+				["isDaily"] = true,
+				-- #else
+				["coord"] = { 35.4, 72.6, ALTERAC_MOUNTAINS },
+				["isYearly"] = true,
+				-- #endif
+				["lvl"] = 30,
+				["groups"] = {
+					objective(1, {	-- 0/1 Stolen Treats
+						["provider"] = { "i", 17662 },	-- Stolen Treats
+						["cr"] = 13602,	-- The Abominable Greench
+					}),
+					i(149503, {	-- Stolen Gift
+						["description"] = "This gift is granted to any player below max level. This gift doesn't drop any of the rare seasonal items; it's currently not worth it.",
+						["timeline"] = { "added 7.2.5.23910" },
+						-- #if AFTER SHADOWLANDS
+						["lvl"] = { 30, 59 },
+						-- #elseif AFTER BFA
+						["lvl"] = { 30, 109 },
+						-- #else
+						["lvl"] = { 30, 100 },
+						-- #endif
+						["groups"] = HOLIDAY_NON_COLLECTIBLE_GROUPS,
 					}),
 					i(93626, {	-- Stolen Present
 						["timeline"] = { "added 5.1.0.16309", "removed 6.0.1.18594" },
@@ -1544,8 +1586,12 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					i(73792, {	-- Stolen Present
 						["timeline"] = { "added 4.3.0.15005", "removed 5.1.0.16309" },
 					}),
+					i(116762, {	-- Stolen Present
+						["timeline"] = { "added 6.0.1.18594" },
+						["sym"] = {{"fill"}},	-- fill with cached content
+					}),
 				},
-			},
+			}),
 		}),
 		n(REWARDS, {
 			i(174865, {	-- A Tiny Winter Hat (Pepe)
@@ -1585,6 +1631,53 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				i(17706),	-- Plans: Edge of Winter
 				i(17709),	-- Recipe: Elixir of Frost Power
 				i(17720),	-- Schematic: Snowmaster 9000
+			}),
+			-- TODO: Sort out the contents of the Stolen Presents by patch (in time, don't need it until Cata)
+			i(116762, {	-- Stolen Present
+				["timeline"] = { "added 6.0.1.18594" },
+				["lvl"] = 60,
+				["groups"] = {
+					-- Battle Pets/Companions
+					i(54436),	-- Blue Clockwork Rocket Bot
+					i(34425),	-- Clockwork Rocket Bot
+					i(73797),	-- Lump of Coal
+					i(104317),	-- Rotten Helper Box
+					i(178533),	-- Shaking Pet Carrier
+					-- Toys
+					i(54343),	-- Blue Crashin' Thrashin' Racer Controller
+					i(108632),	-- Crashin' Thrashin' Flamer Controller
+					i(104318),	-- Crashin' Thrashin' Flyer Controller
+					i(37710),	-- Crashin' Thrashin' Racer Controller
+					i(116763),	-- Crashin' Thrashin' Shredder Controller
+					i(139337),	-- Disposable Winter Veil Suits
+					i(128636),	-- Endothermic Blaster
+					i(116692),	-- Fuzzy Green Lounge Cushion
+					i(46709),	-- MiniZep Controller
+					i(116689),	-- Pineapple Lounge Cushion
+					i(128776),	-- Red Wooden Sled
+					i(116690),	-- Safari Lounge Cushion
+					i(116456),	-- Scroll of Storytelling
+					i(90888),	-- Special Edition Foot Ball
+					i(90883),	-- The Pigskin
+					i(54438),	-- Tiny Blue Ragdoll
+					i(54437),	-- Tiny Green Ragdoll
+					i(44606),	-- Toy Train Set
+					i(151348),	-- Toy Weapon Set [Horde]
+					i(172219),	-- Wild Holly
+					i(45057),	-- Wind-Up Train Wrecker
+					i(188680),	-- Winter Veil Chorus Book
+					i(116691),	-- Zhevra Lounge Cushion
+					-- Illusions
+					i(128649),	-- Illusion: Winter's Grasp
+					i(118572),	-- Illusion: Flames of Ragnaros
+					-- Appearances
+					un(REMOVED_FROM_GAME, i(66540)),	-- Miniature Winter Veil Tree (Level 85)
+					un(REMOVED_FROM_GAME, i(93625)),	-- Miniature Winter Veil Tree (Level 90)
+					un(REMOVED_FROM_GAME, i(117371)),	-- Miniature Winter Veil Tree (Level 1-110)
+					i(143898),	-- Miniature Winter Veil Tree (Level 1 - Cosmetic)
+					-- Trinkets
+					i(151351),	-- Glowing Gift
+				},
 			}),
 		}),
 		n(VENDORS, {
