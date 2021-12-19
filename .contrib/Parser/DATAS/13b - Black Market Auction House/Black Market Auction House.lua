@@ -205,6 +205,7 @@ root("BlackMarket", bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(8494),	-- Parrot Cage (Hyacinth Macaw)
 		i(35504),	-- Phoenix Hatchling
 		i(44721),	-- Proto-Drake Whelp
+		i(183621),	-- Putrid Geist
 		i(94574),	-- Pygmy Direhorn
 		i(97959),	-- Quivering Blob
 		i(48124),	-- Razormaw Hatchling
