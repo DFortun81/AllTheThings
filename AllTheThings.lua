@@ -2062,8 +2062,7 @@ local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 	local total = rawget(t, "_TOTAL") or 0;
 	if value then
 		if not rawget(t, key) then
-			total = total + 1;
-			rawset(t, "_TOTAL", total);
+			rawset(t, "_TOTAL", total + 1);
 		end
 		rawset(t, key, value);
 		rawset(DirtyQuests, key, true);
@@ -2072,8 +2071,7 @@ local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 		app.CurrentCharacter.Quests[key] = 1;
 		PrintQuestInfo(key);
 	elseif value == false then
-		total = total - 1;
-		rawset(t, "_TOTAL", total);
+		rawset(t, "_TOTAL", total - 1);
 		rawset(DirtyQuests, "DIRTY", true);
 		-- no need to actually set the key in the table since it's been marked as incomplete
 		-- and this meta function only triggers on NEW key assignments
@@ -6058,19 +6056,16 @@ end
 local npcQuestsCache = {}
 function app.IsNPCQuestGiver(self, npcID)
 	if not npcID then return false; end
-	if npcQuestsCache[npcID] then
+	if npcQuestsCache[npcID] ~= nil then
 		return npcQuestsCache[npcID];
 	else
 		local group = app.SearchForField("creatureID", npcID);
-		if not group then
-			npcQuestsCache[npcID] = false;
-			return false;
-		end
-
-		for i,v in pairs(group) do
-			if v.visible and v.questID then
-				npcQuestsCache[npcID] = true;
-				return true;
+		if group then
+			for _,v in pairs(group) do
+				if v.visible and v.questID then
+					npcQuestsCache[npcID] = true;
+					return true;
+				end
 			end
 		end
 
@@ -11336,7 +11331,8 @@ local function QueryCompletedQuests()
 			print(questDiff,"Quests Unflagged");
 		end
 	end
-	if math.abs(questDiff) > 50 then
+	questDiff = math.abs(questDiff);
+	if questDiff > 50 then
 		app.Settings:SetTooltipSetting("Report:CompletedQuests", false);
 	end
 	local completedKeys = {};
@@ -11352,7 +11348,7 @@ local function QueryCompletedQuests()
 			t[q] = false;	-- trigger the metatable function
 		end
 	end
-	if math.abs(questDiff) > 50 then
+	if questDiff > 50 then
 		app.Settings:SetTooltipSetting("Report:CompletedQuests", oldReportSetting);
 	end
 end
@@ -11378,7 +11374,7 @@ end
 app.RefreshQuestInfo = function(questID)
 	-- print("RefreshQuestInfo",questID)
 	if questID then
-		Callback(RefreshQuestCompletionState, questID);
+		RefreshQuestCompletionState(questID);
 	else
 		AfterCombatOrDelayedCallback(RefreshQuestCompletionState, 1);
 	end
@@ -21137,7 +21133,6 @@ app.events.VARIABLES_LOADED = function()
 
 		-- Mark all previously completed quests.
 		QueryCompletedQuests();
-		wipe(DirtyQuests);
 
 		-- Current character collections shouldn't use '2' ever... so clear any 'inaccurate' data
 		local currentQuestsCache = currentCharacter.Quests;
@@ -21148,7 +21143,7 @@ app.events.VARIABLES_LOADED = function()
 		-- Cache some collection states for account wide quests that aren't actually granted account wide and can be flagged using an achievementID. (Allied Races)
 		local collected;
 		-- achievement collection state isn't readily available when VARIABLES_LOADED fires, so we do it here to ensure we get a valid state for matching
-		for i,achievementQuests in ipairs({
+		for _,achievementQuests in ipairs({
 			{ 12453, { 49973, 49613, 49354, 49614 } },	-- Allied Races: Nightborne
 			{ 12517, { 53466, 53467, 53354, 53353, 53355, 52942, 52943, 52945, 52955, 51479 } },	-- Allied Races: Mag'har
 			{ 13156, { 53831, 53823, 53824, 54419, 53826, 54301, 54925, 54300, 53825, 53827, 53828, 54031, 54033, 54032, 54034, 53830, 53719 } },	-- Allied Races: Zandalari Troll
@@ -21176,7 +21171,7 @@ app.events.VARIABLES_LOADED = function()
 		}) do
 			-- If you completed the achievement, then mark the associated quests.
 			collected = select(4, GetAchievementInfo(achievementQuests[1]));
-			for j,questID in ipairs(achievementQuests[2]) do
+			for _,questID in ipairs(achievementQuests[2]) do
 				if collected then
 					-- Mark the quest as completed for the Account
 					accountWideData.Quests[questID] = 1;
@@ -21195,14 +21190,14 @@ app.events.VARIABLES_LOADED = function()
 			end
 		end
 		-- Cache some collection states for account wide quests that aren't actually granted account wide and can be flagged using a known sourceID.  (Secrets)
-		for i,appearanceQuests in ipairs({
+		for _,appearanceQuests in ipairs({
 			-- Waist of Time isn't technically once-per-account, so don't fake the cached data
 			-- { 98614, { 52829, 52830, 52831, 52898, 52899, 52900, 52901, 52902, 52903, 52904, 52905, 52906, 52907, 52908, 52909, 52910, 52911, 52912, 52913, 52914, 52915, 52916, 52917, 52918, 52919, 52920, 52921, 52922, 52822, 52823, 52824, 52826} },	-- Waist of Time
 		}) do
 			-- If you have the appearance, then mark the associated quests.
 			local sourceInfo = C_TransmogCollection_GetSourceInfo(appearanceQuests[1]);
 			collected = sourceInfo.isCollected;
-			for j,questID in ipairs(appearanceQuests[2]) do
+			for _,questID in ipairs(appearanceQuests[2]) do
 				if collected then
 					-- Mark the quest as completed for the Account
 					accountWideData.Quests[questID] = 1;
@@ -21221,7 +21216,7 @@ app.events.VARIABLES_LOADED = function()
 			end
 		end
 		-- Cache some collection states for misc. once-per-account quests
-		for i,questID in ipairs({
+		for _,questID in ipairs({
 			-- BFA Mission/Outpost Quests which trigger locking Account-Wide HQTs
 			52478,	-- Hillcrest Pasture (Mission Completion)
 			52479,	-- Hillcrest Pasture (BFA Horde Outpost Unlock)
@@ -21309,7 +21304,7 @@ app.events.VARIABLES_LOADED = function()
 
 		local anyComplete;
 		-- Check for fixing Blizzard's incompetence in consistency for shared account-wide quest eligibility which is only granted to some of the shared account-wide quests
-		for i,questGroup in ipairs({
+		for _,questGroup in ipairs({
 			{ 32008, 32009, 31878, 31879, 31880, 31881, 31882, 31883, 31884, 31885, },	-- Pet Battle Intro quests
 			{
 				53063, 	-- A Mission of Unity (BFA Alliance WQ Unlock)
@@ -21355,6 +21350,8 @@ app.events.VARIABLES_LOADED = function()
 			end
 			anyComplete = nil;
 		end
+
+		wipe(DirtyQuests);
 
 		app:RegisterEvent("QUEST_LOG_UPDATE");
 		app:RegisterEvent("QUEST_TURNED_IN");
