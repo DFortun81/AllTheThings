@@ -984,6 +984,7 @@ for key,value in pairs({
 	[177964] = "Глубинный Камень",	-- Fathom Stone
 	[178144] = "Тролльский сундук",	-- Troll Chest
 	[178227] = "Корзина тотема Мургута",	-- Murgut's Totem Basket
+	[178609] = "Праздничный снег",	-- Holiday Snow
 	[179485] = "Сломанная ловушка",	-- A Broken Trap
 	[179499] = "Огрский дубильный чан",	-- Ogre Tannin Basket
 	[179501] = "Тайник Уззла Наперстяка",	-- Knot Thimblejack's Cache
@@ -1008,6 +1009,11 @@ for key,value in pairs({
 	[180690] = "Большой сундук Скарабея",	-- Large Scarab Coffer
 	[180691] = "Сундук Скарабея",	-- Scarab Coffer
 	[180717] = "Гонг Скарабея",	-- The Scarab Gong
+	[180743] = "Тщательно упакованный подарок",	-- Carefully Wrapped Present
+	[180746] = "Слегка помятый подарок",	-- Gently Shaken Gift
+	[180747] = "Подарок в яркой упаковке",	-- Gaily Wrapped Present
+	[180748] = "Тикающий подарок",	-- Ticking Present
+	[180793] = "Подарок в разноцветной упаковке",	-- Festive Gift
 	[180794] = "Дневник Джандис Баровой",	-- Journal of Jandice Barov
 	[180918] = "Разыскивается: Таэлис Ненасытный",	-- Wanted: Thaelis the Hungerer
 	[181011] = "Журнал магистра Блеклые Сумерки",	-- Magister Duskwither's Journal
@@ -1053,6 +1059,7 @@ for key,value in pairs({
 	[186585] = "Свиток из кожи дракона",	-- Dragonskin Scroll
 	--TODO: [186881] = "Dark Iron Sabotage Plans",	-- Dark Iron Sabotage Plans
 	[186887] = "Большой светильник из тыквы",	-- Large Jack-o'-Lantern
+	[187236] = "Подарок к Зимнему Покрову",	-- Winter Veil Gift
 	[187273] = "Подозрительный след копыта",	-- Suspicious Hoofprint
 	[187559] = "Большой костер Орды",	-- Horde Bonfire
 	[187564] = "Большой костер Альянса",	-- Alliance Bonfire
@@ -2577,6 +2584,7 @@ for key,value in pairs({
 	[334216] = "Тайник Темной Империи",	-- Black Empire Cache
 	[336415] = "Выброшенный свиток",	-- Discarded Scroll
 	[337237] = "Утерянное хранилище",	-- Lost Vault
+	[337241] = "Сложенное снаряжение",	-- Stashed Equipment
 	[339211] = "|cFFFFFFFFШаг 2:|r Пустая миска",	-- |cFFFFFFFFStep 2:|r Empty Dish
 	[339283] = "Позабытый сундук аристократа",	-- Forgotten Noble's Chest
 	[339601] = "Свиток веков",	-- Scroll of Aeons

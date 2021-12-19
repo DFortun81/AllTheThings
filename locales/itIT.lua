@@ -996,6 +996,7 @@ for key,value in pairs({
 	[177964] = "Pietra Profonda",	-- Fathom Stone
 	[178144] = "Cassa dei Troll",	-- Troll Chest
 	[178227] = "Cesto del Totem di Murgut",	-- Murgut's Totem Basket
+	[178609] = "Neve Festiva",	-- Holiday Snow
 	[179485] = "Trappola Rotta",	-- A Broken Trap
 	[179499] = "Cestello di Colorante Ogre",	-- Ogre Tannin Basket
 	[179501] = "Knot Thimblejack's Cache",	-- Knot Thimblejack's Cache	--TODO: This was taken from classic Wowhead
@@ -1020,6 +1021,11 @@ for key,value in pairs({
 	[180690] = "Grande Forziere dello Scarabeo",	-- Large Scarab Coffer
 	[180691] = "Forziere dello Scarabeo",	-- Scarab Coffer
 	[180717] = "The Scarab Gong",	-- The Scarab Gong	--TODO: This was taken from classic Wowhead
+	[180743] = "Regalo Incartato con Cura",	-- Carefully Wrapped Present
+	[180746] = "Dono Dolcemente Scosso",	-- Gently Shaken Gift
+	[180747] = "Regalo Incartato Gioiosamente",	-- Gaily Wrapped Present
+	[180748] = "Regalo Ticchettante",	-- Ticking Present
+	[180793] = "Dono Festivo",	-- Festive Gift
 	[180794] = "Journal of Jandice Barov",	-- Journal of Jandice Barov	--TODO: This was taken from classic Wowhead
 	[180918] = "Ricercato: Thaelis il Famelico",	-- Wanted: Thaelis the Hungerer
 	[181011] = "Diario del Magistro Lungovespro",	-- Magister Duskwither's Journal
@@ -1065,6 +1071,7 @@ for key,value in pairs({
 	[186585] = "Rotolo di Pelle di Drago",	-- Dragonskin Scroll
 	--TODO: [186881] = "Dark Iron Sabotage Plans",	-- Dark Iron Sabotage Plans
 	[186887] = "Grande Jack Lanterna",	-- Large Jack-o'-Lantern
+	[187236] = "Regalo di Grande Inverno",	-- Winter Veil Gift
 	[187273] = "Impronta di Zoccolo Sospetta",	-- Suspicious Hoofprint
 	[187559] = "Falò dell'Orda",	-- Horde Bonfire
 	[187564] = "Falò dell'Alleanza",	-- Alliance Bonfire
@@ -2589,6 +2596,7 @@ for key,value in pairs({
 	[334216] = "Cassa dell'Impero Nero",	-- Black Empire Cache
 	[336415] = "Pergamena Scartata",	-- Discarded Scroll
 	[337237] = "Segrete Perdute",	-- Lost Vault
+	[337241] = "Equipaggiamento Nascosto",	-- Stashed Equipment
 	--TODO: [339211] = "|cFFFFFFFFStep 2:|r Empty Dish",	-- |cFFFFFFFFStep 2:|r Empty Dish
 	[339283] = "Cassa dei Nobili Dimenticata",	-- Forgotten Noble's Chest
 	[339601] = "Pergamena degli Eoni",	-- Scroll of Aeons

@@ -998,6 +998,7 @@ for key,value in pairs({
 	[177964] = "Pedra das Profundezas",	-- Fathom Stone
 	[178144] = "Baú dos Trolls",	-- Troll Chest
 	[178227] = "Cesto do Totem de Murgut",	-- Murgut's Totem Basket
+	[178609] = "Neve de Feriado",	-- Holiday Snow
 	[179485] = "Armadilha Quebrada",	-- A Broken Trap
 	[179499] = "Cesta de Tanino Ôgrico",	-- Ogre Tannin Basket
 	[179501] = "Tesouro do Fiapo Agulhacerta",	-- Knot Thimblejack's Cache	--TODO: This was taken from classic Wowhead
@@ -1022,6 +1023,11 @@ for key,value in pairs({
 	[180690] = "Grande Arca do Escaravelho",	-- Large Scarab Coffer
 	[180691] = "Arca do Escaravelho",	-- Scarab Coffer
 	--TODO: [180717] = "The Scarab Gong",	-- The Scarab Gong
+	[180743] = "Presente Cuidadosamente Embrulhado",	-- Carefully Wrapped Present
+	[180746] = "Presente Chacoalhado Gentilmente",	-- Gently Shaken Gift
+	[180747] = "Presente Alegremente Embrulhado",	-- Gaily Wrapped Present
+	[180748] = "Presente Tiquetaqueante",	-- Ticking Present
+	[180793] = "Presente Festivo",	-- Festive Gift
 	[180794] = "Diário de Janice Barov",	-- Journal of Jandice Barov
 	[180918] = "Procura-se: Thaelis, o Famélico",	-- Wanted: Thaelis the Hungerer
 	[181011] = "Diário do Magíster Ocaso",	-- Magister Duskwither's Journal
@@ -1067,6 +1073,7 @@ for key,value in pairs({
 	[186585] = "Pergaminho de Pele de Dragão",	-- Dragonskin Scroll
 	--TODO: [186881] = "Dark Iron Sabotage Plans",	-- Dark Iron Sabotage Plans
 	[186887] = "Lanterna de Abóbora Grande",	-- Large Jack-o'-Lantern
+	[187236] = "Presente de Véu de Inverno",	-- Winter Veil Gift
 	[187273] = "Pegada Suspeita",	-- Suspicious Hoofprint
 	[187559] = "Fogueira da Horda",	-- Horde Bonfire
 	[187564] = "Fogueira da Aliança",	-- Alliance Bonfire
@@ -2591,6 +2598,7 @@ for key,value in pairs({
 	[334216] = "Depósito do Império Negro",	-- Black Empire Cache
 	[336415] = "Pergaminho Descartado",	-- Discarded Scroll
 	[337237] = "Cofre Perdido",	-- Lost Vault
+	[337241] = "Equipamento Escondido",	-- Stashed Equipment
 	--TODO: [339211] = "|cFFFFFFFFStep 2:|r Empty Dish",	-- |cFFFFFFFFStep 2:|r Empty Dish
 	[339283] = "Baú de Nobre Esquecido",	-- Forgotten Noble's Chest
 	[339601] = "Pergaminho das Eras",	-- Scroll of Aeons
