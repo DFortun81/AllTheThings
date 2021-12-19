@@ -73,9 +73,10 @@ _.Zones =
 				}),
 				n(50338, {	-- Kor'nas Nightsavage
 					["coords"] = {
-						{ 44.6, 69.3, THE_JADE_FOREST },
-						{ 45.1, 71.5, THE_JADE_FOREST },
-						{ 45.2, 74.2, THE_JADE_FOREST },
+						{ 43.4, 76.4, THE_JADE_FOREST },
+						{ 43.6, 72.2, THE_JADE_FOREST },
+						{ 44.0, 74.0, THE_JADE_FOREST },
+						{ 44.0, 75.8, THE_JADE_FOREST },
 					},
 					["g"] = {
 						i(87217),	-- Small Bag of Goods

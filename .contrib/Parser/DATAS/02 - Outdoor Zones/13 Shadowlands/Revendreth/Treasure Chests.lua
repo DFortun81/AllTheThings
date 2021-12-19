@@ -385,16 +385,36 @@ _.Zones =
 				--	TODO: confirm that these are repeatable.  like parish chest (confirmed repeatable), there is no associated questID.  unlike parish chest, this chest appears to be the only source of these blues
 					["description"] = "A repeatable treasure chest that does not show up on the minimap.",
 					["coords"] = {
+						{ 62.5, 29.0, REVENDRETH },
+						{ 63.4, 34.2, REVENDRETH },
 						{ 63.5, 34.2, REVENDRETH },
-						{ 64.8, 31.2, REVENDRETH },
-						{ 64.9, 26.8, REVENDRETH },
+						{ 64.2, 33.3, REVENDRETH },
+						{ 64.4, 27.6, REVENDRETH },
+						{ 64.8, 26.9, REVENDRETH },
+						{ 64.8, 31.0, REVENDRETH },
+						{ 64.9, 26.0, REVENDRETH },
+						{ 65.3, 27.6, REVENDRETH },
 						{ 65.9, 29.2, REVENDRETH },
-						{ 66.6, 31.2, REVENDRETH },
-						{ 76.1, 38.1, REVENDRETH },
+						{ 65.9, 34.5, REVENDRETH },
+						{ 66.6, 31.1, REVENDRETH },
+						{ 76.0, 37.9, REVENDRETH },
+						{ 76.0, 40.1, REVENDRETH },
+						{ 76.2, 34.2, REVENDRETH },
+						{ 76.5, 40.0, REVENDRETH },
+						{ 76.7, 37.4, REVENDRETH },
+						{ 76.7, 37.5, REVENDRETH },
+						{ 77.1, 36.2, REVENDRETH },
 						{ 77.2, 32.8, REVENDRETH },
 						{ 78.0, 40.8, REVENDRETH },
+						{ 78.2, 38.0, REVENDRETH },
+						{ 78.2, 42.4, REVENDRETH },
 						{ 78.2, 42.5, REVENDRETH },
+						{ 78.3, 33.6, REVENDRETH },
+						{ 78.4, 33.4, REVENDRETH },
+						{ 78.4, 36.3, REVENDRETH },
+						{ 78.9, 39.7, REVENDRETH },
 						{ 79.0, 42.2, REVENDRETH },
+						{ 79.7, 33.8, REVENDRETH },
 						{ 80.1, 37.1, REVENDRETH },
 						{ 80.4, 39.7, REVENDRETH },
 					},
@@ -417,13 +437,21 @@ _.Zones =
 					["g"] = {
 						i(180589),	-- Soullocked Sinstone (PET!)
 						i(180395),	-- Nathrezim Crusader's Hauberk
+						i(180400),	-- Inquisitions Final Judgment
+						i(180339),	-- Shadow-Lined Chalice
 					},
 				}),
 				o(351540, {	-- Secret Treasure
-					["description"] = "Find a |cFFFFFFFFDredger's Hammer|r in the surrounding area (they sparkle), and use it to open the |cFFFFFFFFJammed Door|r in front of the treasure.\n\nIf the door closes behind you, use the |cFFFFFFFFEscape Shovel|r on the wall.",
+					["description"] = "Find a |cFFFFFFFFDredger's Hammer|r in the surrounding area (they sparkle), and use it to open the |cFFFFFFFFJammed Door|r in front of the treasure.\nRequires |cFFFFD700It Used to Be Quiet Here|r completed in order to see hammers.\n\nIf the door closes behind you, use the |cFFFFFFFFEscape Shovel|r on the wall.",
+					["sourceQuests"] = { 60487 }, -- It Used to Be Quiet Here
 					["questID"] = 60196,
 					["isDaily"] = true,	-- ?? repeatable?
 					["coord"] = { 73.8, 46.3, REVENDRETH },
+					["g"] = {
+						i(180395),	-- Nathrezim Crusader's Hauberk
+						i(180400),	-- Inquisitions Final Judgment
+						i(180339),	-- Shadow-Lined Chalice
+					},
 				}),
 				o(351541, {	-- Secret Treasure
 					["description"] = "Enter the crypt at |cFFFFFFFF41.9, 50.0|r.  Downstairs, go through the right-hand door.  On the left side of the room is a bookshelf with a |cFFFFFFFFNondescript Book|r.  Click the book, and the treasure will appear.",
@@ -475,6 +503,16 @@ _.Zones =
 						i(182970, {	-- Burgleclipped Portrait
 							["customCollect"] = "SL_COV_VEN",
 						}),
+					},
+				}),
+				o(337241, {	-- Stashed Equipment
+					["description"] = "Opening a Crypt Door with the Atonement Crypt Key has a chance to reveal this treasure.",
+					["sourceQuests"] = { 57928 },	-- Atonement Crypt Key
+					["cost"] = { { "i", 172957, 1 } },	-- 1x Atonement Crypt Key
+					["g"] = {
+						i(180395),	-- Nathrezim Crusader's Hauberk
+						i(180400),	-- Inquisitions Final Judgment
+						i(180339),	-- Shadow-Lined Chalice
 					},
 				}),
 				o(349798, {	-- Smuggled Cache
@@ -552,6 +590,9 @@ _.Zones =
 						["questID"] = 60938,
 						["isDaily"] = true,
 						["coord"] = { 43.8, 57.1, REVENDRETH },
+						["g"] = {
+							i(182722),	-- Mail Courier's Cap
+						},
 					}),
 					o(354109, {	-- Stoneborn Satchel
 						["questID"] = 60944,
@@ -562,6 +603,9 @@ _.Zones =
 						["questID"] = 60943,
 						["isDaily"] = true,
 						["coord"] = { 80.4, 70.8, REVENDRETH },
+						["g"] = {
+							i(182721),	-- Mail Courier's Grips
+						},
 					}),
 					o(354111, {	-- Stoneborn Satchel
 						["questID"] = 60942,
@@ -624,6 +668,9 @@ _.Zones =
 						["questID"] = 60985,
 						["isDaily"] = true,
 						["coord"] = { 36.5, 51.5, REVENDRETH },
+						["g"] = {
+							i(182722),	-- Mail Courier's Cap
+						},
 					}),
 				}),
 				o(357487, {	-- Stylish Parasol

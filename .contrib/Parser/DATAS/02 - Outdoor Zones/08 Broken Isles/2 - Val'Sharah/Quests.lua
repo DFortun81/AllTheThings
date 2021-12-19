@@ -316,11 +316,10 @@ _.Zones =
 						39117,	-- Shriek No More (definitely required)
 						-- "Shriek No More" was the last quest i turned in from the bradensbrook area, so i'm not sure what else is required.
 						-- other quests in the area are as follows — some or all may be required:
-						-- 38646,	-- A Sight for Sore Eyes
-						-- 38645,	-- Children of the Night
-						-- 38647,	-- For the Corn!
-						-- 38644,	-- The Farmsteads
-						-- 38711,	-- The Warden's Signet
+						38646,	-- A Sight for Sore Eyes
+						38645,	-- Children of the Night
+						38647,	-- For the Corn!
+						38644,	-- The Farmsteads
 					},
 					["coord"] = { 42.5, 59.0, VALSHARAH },
 					["provider"] = { "n", 92620 },	-- Commander Jarod Shadowsong

@@ -1866,6 +1866,7 @@ _.ObjectNames = {
 	[334216] = "Black Empire Cache",
 	[336415] = "Discarded Scroll",
 	[337237] = "Lost Vault",
+	[337241] = "Stashed Equipment",
 	[339211] = "|cFFFFFFFFStep 2:|r Empty Dish",
 	[339283] = "Forgotten Noble's Chest",
 	[339601] = "Scroll of Aeons",

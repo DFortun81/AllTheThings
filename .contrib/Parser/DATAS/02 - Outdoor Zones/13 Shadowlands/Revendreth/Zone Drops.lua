@@ -142,9 +142,12 @@ _.Zones =
 					["crs"] = { 160716 },	-- Sinstone Rampager
 					["g"] = {
 						i(174652, {	-- Satchel of Forgotten Heirlooms
-							["description"] = "Awarded if your judgment of a soul matches that of Sinkeeper Mourana.",
+							["description"] = "Awarded regardless of your judgment.", -- as of December 14th 2021 she gives the satchel regardless of player's decision.
 							["g"] = {
 								i(180387),	-- Crumbling Sinstone
+								i(180403),	-- Vessel of Distilled Regret
+								i(180402),	-- Barrier of the Forgotten
+								i(180396),	-- Vambraces of Fading Humanity
 							},
 						}),
 					},
