@@ -2518,6 +2518,20 @@ _.Zones =
 						i(16060),	-- Common White Shirt
 					},
 				}),
+				n(169166, {	-- Provisioner Jin'hake
+					["description"] = "Only sells items once the achievement |cffebae34Exile's Reach|r [14222] is completed.",
+					["coord"] = { 72.6, 44.6, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(175161),	-- Expeditionary Axe
+						i(175174),	-- Expeditionary Cudgel
+						i(175171),	-- Expeditionary Dagger
+						i(175165),	-- Expeditionary Greataxe
+						i(175169),	-- Expeditionary Longbow
+						i(175163),	-- Expeditionary Quarterstaff
+						i(175164),	-- Expeditionary Staff
+					},
+				}),
 				n(46359,  {	-- Punra <Blacksmithing Supplies>
 					["coord"] = { 45.0, 77.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,

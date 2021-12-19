@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root("Zones", {
 	m(SHADOWLANDS, {
 		m(ARDENWEALD, {
 			n(QUESTS, {
@@ -933,32 +932,37 @@ _.Zones =
 			}),
 		}),
 	}),
-};
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(58772),	-- [DNT] Bonds of Depletion
-		q(61167),	-- [DNT] Delivering Hope
-		q(61149),	-- [DNT] Kivarr's Remedy
-		q(58734),	-- [PH] Get Memories from Archives
-		q(58774),	-- [REUSE AS WQ]
-		q(57466),	-- [REUSE]
-		q(58814),	-- [UNUSED]
-		q(58728),	-- A Promising Lead
-		q(58731),	-- A Shattered Vessel
-		q(58733),	-- Animamnesis
-		q(57663),	-- Blackthorn Blackout
-		q(57872),	-- Bring More Friends!
-		q(57659),	-- Bring More Friends!
-		q(58730),	-- Deep Thoughts
-		q(58729),	-- Night and Day
-		q(58735),	-- Path of Totality
-		q(57733),	-- Pocktfuls of Silk
-		q(58769),	-- REUSE ME
-		q(58736),	-- Selenis, Night Warrior
-		q(57457),	-- Shaking 'Shrooms
-		q(57658),	-- The Final Leg
-		q(58732),	-- The Stuff of Memories
-		q(58173),	-- What Are They Hiding?
+});
+
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	m(SHADOWLANDS, {
+		m(ARDENWEALD, {
+			n(QUESTS, {
+				q(58772),	-- [DNT] Bonds of Depletion
+				q(61167),	-- [DNT] Delivering Hope
+				q(61149),	-- [DNT] Kivarr's Remedy
+				q(58734),	-- [PH] Get Memories from Archives
+				q(58774),	-- [REUSE AS WQ]
+				q(57466),	-- [REUSE]
+				q(58814),	-- [UNUSED]
+				q(58728),	-- A Promising Lead
+				q(58731),	-- A Shattered Vessel
+				q(58733),	-- Animamnesis
+				q(57663),	-- Blackthorn Blackout
+				q(57872),	-- Bring More Friends!
+				q(57659),	-- Bring More Friends!
+				q(58730),	-- Deep Thoughts
+				q(58729),	-- Night and Day
+				q(58735),	-- Path of Totality
+				q(57733),	-- Pocktfuls of Silk
+				q(58769),	-- REUSE ME
+				q(58736),	-- Selenis, Night Warrior
+				q(57457),	-- Shaking 'Shrooms
+				q(57658),	-- The Final Leg
+				q(58732),	-- The Stuff of Memories
+				q(58173),	-- What Are They Hiding?
+			}),
+		}),
 	}),
 	tier(SL_TIER, {
 		n(WEAPONS, {
@@ -985,9 +989,17 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(178118),	-- Ardenweald NPC Staff
 		}),
 	}),
+}));
+
+root("HiddenQuestTriggers", {
+	m(SHADOWLANDS, {
+		m(ARDENWEALD, {
+			n(QUESTS, {
+				q(62936),	-- some quest/story RP w/ Bwonsamdi about Rezan
+				q(63427),	-- Intro Skip
+				q(63007),	-- Intro Skip
+				q(64312),	-- listening to the story time with tyrande after 9.1 campaign finish (in ardenweald)
+			}),
+		}),
+	}),
 });
-_.HiddenQuestTriggers = {
-	q(63427),	-- Intro Skip
-	q(63007),	-- Intro Skip
-	q(64312),	-- listening to the story time with tyrande after 9.1 campaign finish (in ardenweald)
-};

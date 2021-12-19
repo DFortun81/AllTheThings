@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root("Zones", {
 	m(KALIMDOR, {
 		m(SILITHUS, {
 			m(CHAMBER_OF_HEART, {
@@ -1023,4 +1022,14 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});
+
+root("HiddenQuestTriggers", {
+	m(KALIMDOR, {
+		m(SILITHUS, {
+			m(CHAMBER_OF_HEART, {
+				q(59133),	-- Upgrading Ashjra'kamas from 122 -> 125 corruption
+			}),
+		}),
+	}),
+});

@@ -2872,6 +2872,7 @@ _.Zones =
 					},
 				}),
 				n(167429, {	-- Quartermaster Richter
+					["description"] = "Only sells items once the achievement |cffebae34Exile's Reach|r [14222] is completed.",
 					["coord"] = { 79.5, 69.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
