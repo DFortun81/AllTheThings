@@ -1002,6 +1002,7 @@ for key,value in pairs({
 	[177964] = "Piedra de las profundidades",	-- Fathom Stone
 	[178144] = "Cofre trol",	-- Troll Chest
 	[178227] = "Cesta de tótems de Murgut",	-- Murgut's Totem Basket
+	[178609] = "Nieve de Vacaciones",	-- Holiday Snow
 	[179485] = "Trampa rota",	-- A Broken Trap
 	[179499] = "Cesta de tanino de ogro",	-- Ogre Tannin Basket
 	[179501] = "Alijo de Knot Thimblejack",	-- Knot Thimblejack's Cache
@@ -1026,6 +1027,11 @@ for key,value in pairs({
 	[180690] = "Arca del escarabajo grande",	-- Large Scarab Coffer
 	[180691] = "Arca del escarabajo",	-- Scarab Coffer
 	--TODO: [180717] = "The Scarab Gong",	-- The Scarab Gong
+	[180743] = "Presente envuelto con cuidado",	-- Carefully Wrapped Present
+	[180746] = "Obsequio ligeramente agitado",	-- Gently Shaken Gift
+	[180747] = "Presente con envoltorio alegre",	-- Gaily Wrapped Present
+	[180748] = "Presente que hace tic-tac",	-- Ticking Present
+	[180793] = "Obsequio festivo",	-- Festive Gift
 	[180794] = "Diario de Jandice Barov",	-- Journal of Jandice Barov
 	[180918] = "Se busca: Thaelis el Hambriento",	-- Wanted: Thaelis the Hungerer
 	[181011] = "Diario del magister Ocaso Marchito",	-- Magister Duskwither's Journal
@@ -1071,6 +1077,7 @@ for key,value in pairs({
 	[186585] = "Pergamino de piel de dragón",	-- Dragonskin Scroll
 	--TODO: [186881] = "Dark Iron Sabotage Plans",	-- Dark Iron Sabotage Plans
 	[186887] = "Calabaza iluminada",	-- Large Jack-o'-Lantern
+	[187236] = "Obsequio del Festival de Invierno",	-- Winter Veil Gift
 	[187273] = "Huella de casco sospechosa",	-- Suspicious Hoofprint
 	[187559] = "Fogata de la Horda",	-- Horde Bonfire
 	[187564] = "Fogata de la Alianza",	-- Alliance Bonfire
@@ -2595,6 +2602,7 @@ for key,value in pairs({
 	[334216] = "Alijo del Imperio Negro",	-- Black Empire Cache
 	[336415] = "Pergamino desechado",	-- Discarded Scroll
 	[337237] = "Cámara perdida",	-- Lost Vault
+	[337241] = "Equipamiento oculto",	-- Stashed Equipment
 	[339211] = "|cFFFFFFFFStep 2:|r Plato vacío",	-- |cFFFFFFFFStep 2:|r Empty Dish
 	[339283] = "Cofre de noble olvidado",	-- Forgotten Noble's Chest
 	[339601] = "Pergamino de los Eones",	-- Scroll of Aeons

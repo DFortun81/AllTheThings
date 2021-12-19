@@ -998,6 +998,7 @@ for key,value in pairs({
 	[177964] = "심연의 돌",	-- Fathom Stone
 	[178144] = "트롤 궤짝",	-- Troll Chest
 	[178227] = "머구트의 토템 광주리",	-- Murgut's Totem Basket
+	[178609] = "눈더미",	-- Holiday Snow
 	[179485] = "부서진 함정",	-- A Broken Trap
 	[179499] = "오우거 타닌 광주리",	-- Ogre Tannin Basket
 	[179501] = "노트 팀블잭의 은닉품",	-- Knot Thimblejack's Cache	--TODO: This was taken from classic Wowhead
@@ -1022,6 +1023,11 @@ for key,value in pairs({
 	[180690] = "큰 스카라베 상자",	-- Large Scarab Coffer
 	[180691] = "스카라베 상자",	-- Scarab Coffer
 	[180717] = "스카라베 징",	-- The Scarab Gong	--TODO: This was taken from classic Wowhead
+	[180743] = "정성스럽게 포장된 선물꾸러미",	-- Carefully Wrapped Present
+	[180746] = "누가 살짝 흔들어 본 선물",	-- Gently Shaken Gift
+	[180747] = "화려하게 포장된 선물꾸러미",	-- Gaily Wrapped Present
+	[180748] = "들썩거리는 선물상자",	-- Ticking Present
+	[180793] = "축제 선물",	-- Festive Gift
 	[180794] = "잔다이스 바로브의 일지",	-- Journal of Jandice Barov
 	[180918] = "현상 수배: 욕망의 탤리스",	-- Wanted: Thaelis the Hungerer
 	[181011] = "마법학자 더스크위더의 일지",	-- Magister Duskwither's Journal
@@ -1067,6 +1073,7 @@ for key,value in pairs({
 	[186585] = "용가죽 두루마리",	-- Dragonskin Scroll
 	--TODO: [186881] = "Dark Iron Sabotage Plans",	-- Dark Iron Sabotage Plans
 	[186887] = "커다란 호박등",	-- Large Jack-o'-Lantern
+	[187236] = "겨울맞이 축제 선물",	-- Winter Veil Gift
 	[187273] = "수상한 발굽 자국",	-- Suspicious Hoofprint
 	[187559] = "호드 화톳불",	-- Horde Bonfire
 	[187564] = "얼라이언스 화톳불",	-- Alliance Bonfire
@@ -2591,6 +2598,7 @@ for key,value in pairs({
 	--TODO: [334216] = "Black Empire Cache",	-- Black Empire Cache
 	[336415] = "버려진 두루마리",	-- Discarded Scroll
 	[337237] = "잃어버린 금고",	-- Lost Vault
+	[337241] = "장비 보관함",	-- Stashed Equipment
 	--TODO: [339211] = "|cFFFFFFFFStep 2:|r Empty Dish",	-- |cFFFFFFFFStep 2:|r Empty Dish
 	[339283] = "잊힌 귀족의 상자",	-- Forgotten Noble's Chest
 	[339601] = "영겁의 두루마리",	-- Scroll of Aeons

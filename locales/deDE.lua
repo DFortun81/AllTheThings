@@ -999,6 +999,7 @@ for key,value in pairs({
 	[177964] = "Tiefenstein",	-- Fathom Stone
 	[178144] = "Trolltruhe",	-- Troll Chest
 	[178227] = "Murguts Totemkorb",	-- Murgut's Totem Basket
+	[178609] = "Feiertagsschnee",	-- Holiday Snow
 	[179485] = "Beschädigte Falle",	-- A Broken Trap
 	[179499] = "Gerbekorb der Oger",	-- Ogre Tannin Basket
 	[179501] = "Knot Zwingschraubs Behälter",	-- Knot Thimblejack's Cache
@@ -1023,6 +1024,11 @@ for key,value in pairs({
 	[180690] = "Großer Skarabäuskasten",	-- Large Scarab Coffer
 	[180691] = "Skarabäuskasten",	-- Scarab Coffer
 	[180717] = "Der Skarabäusgong",	-- The Scarab Gong	--TODO: This was taken from classic Wowhead
+	[180743] = "Sorgfältig verpacktes Geschenk",	-- Carefully Wrapped Present
+	[180746] = "Leicht geschütteltes Geschenk",	-- Gently Shaken Gift
+	[180747] = "Fröhlich verpacktes Geschenk",	-- Gaily Wrapped Present
+	[180748] = "Tickendes Geschenk",	-- Ticking Present
+	[180793] = "Festtagsgeschenk",	-- Festive Gift
 	[180794] = "Tagebuch von Jandice Barov",	-- Journal of Jandice Barov
 	[180918] = "GESUCHT: Thaelis der Manadurstige",	-- Wanted: Thaelis the Hungerer
 	[181011] = "Magister Nachtschimmers Tagebuch",	-- Magister Duskwither's Journal
@@ -1068,6 +1074,7 @@ for key,value in pairs({
 	[186585] = "Rolle aus Drachenhaut",	-- Dragonskin Scroll
 	--TODO: [186881] = "Dark Iron Sabotage Plans",	-- Dark Iron Sabotage Plans
 	[186887] = "Große Kürbislaterne",	-- Large Jack-o'-Lantern
+	[187236] = "Winterhauchgeschenk",	-- Winter Veil Gift
 	[187273] = "Verdächtiger Hufabdruck",	-- Suspicious Hoofprint
 	[187559] = "Freudenfeuer der Horde",	-- Horde Bonfire
 	[187564] = "Freudenfeuer der Allianz",	-- Alliance Bonfire
@@ -2592,6 +2599,7 @@ for key,value in pairs({
 	[334216] = "Truhe des Schwarzen Imperiums",	-- Black Empire Cache
 	[336415] = "Weggeworfene Schriftrolle",	-- Discarded Scroll
 	[337237] = "Verlorene Schatztruhe",	-- Lost Vault
+	[337241] = "Verstaute Ausrüstung",	-- Stashed Equipment
 	[339211] = "|cFFFFFFFFSchritt 2:|r Leerer Teller",	-- |cFFFFFFFFStep 2:|r Empty Dish
 	[339283] = "Truhe des vergessenen Adligen",	-- Forgotten Noble's Chest
 	[339601] = "Schriftrolle der Äonen",	-- Scroll of Aeons

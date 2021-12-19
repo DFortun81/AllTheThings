@@ -997,6 +997,7 @@ for key,value in pairs({
 	[177964] = "Pierre de la Brasse",	-- Fathom Stone
 	[178144] = "Coffre de Troll",	-- Troll Chest
 	[178227] = "Panier à Totems de Murgut",	-- Murgut's Totem Basket
+	[178609] = "Neige d'hiver",	-- Holiday Snow
 	[179485] = "Piège cassé",	-- A Broken Trap
 	[179499] = "Panier de tanin ogre",	-- Ogre Tannin Basket
 	[179501] = "Réserve de Noué Dédodevie",	-- Knot Thimblejack's Cache
@@ -1021,6 +1022,11 @@ for key,value in pairs({
 	[180690] = "Grand coffre de scarabées",	-- Large Scarab Coffer
 	[180691] = "Coffre de scarabées",	-- Scarab Coffer
 	[180717] = "Le gong du Scarabée",	-- The Scarab Gong	--TODO: This was taken from classic Wowhead
+	[180743] = "Cadeau soigneusement emballé",	-- Carefully Wrapped Present
+	[180746] = "Cadeau secoué doucement",	-- Gently Shaken Gift
+	[180747] = "Cadeau à l'emballage multicolore",	-- Gaily Wrapped Present
+	[180748] = "Cadeau tic-taquant",	-- Ticking Present
+	[180793] = "Cadeau de fête",	-- Festive Gift
 	[180794] = "Journal de Jandice Barov",	-- Journal of Jandice Barov
 	[180918] = "Avis de recherche : Thaelis l'Affameur",	-- Wanted: Thaelis the Hungerer
 	[181011] = "Journal du magistère Ternesoir",	-- Magister Duskwither's Journal
@@ -1066,6 +1072,7 @@ for key,value in pairs({
 	[186585] = "Parchemin en peau de dragon",	-- Dragonskin Scroll
 	--TODO: [186881] = "Dark Iron Sabotage Plans",	-- Dark Iron Sabotage Plans
 	[186887] = "Grosse citrouille de la Sanssaint",	-- Large Jack-o'-Lantern
+	[187236] = "Cadeau du Voile d'hiver",	-- Winter Veil Gift
 	[187273] = "Empreinte de sabot suspecte",	-- Suspicious Hoofprint
 	[187559] = "Feu de joie de la Horde",	-- Horde Bonfire
 	[187564] = "Feu de joie de l'Alliance",	-- Alliance Bonfire
@@ -2590,6 +2597,7 @@ for key,value in pairs({
 	[334216] = "Cache de l’Empire noir",	-- Black Empire Cache
 	[336415] = "Parchemin abandonné",	-- Discarded Scroll
 	[337237] = "Caveau perdu",	-- Lost Vault
+	[337241] = "Réserve d’équipement",	-- Stashed Equipment
 	[339211] = "|cFFFFFFFFStep 2:|r Assiette vide",	-- |cFFFFFFFFStep 2:|r Empty Dish
 	[339283] = "Coffre de noble oublié",	-- Forgotten Noble's Chest
 	[339601] = "Parchemin des éons",	-- Scroll of Aeons

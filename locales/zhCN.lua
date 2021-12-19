@@ -1050,6 +1050,7 @@ for key, value in pairs({
 	[177964] = "深渊之石",	-- Fathom Stone
 	[178144] = "巨魔的箱子",	-- Troll Chest
 	[178227] = "穆戈特的图腾篮",	-- Murgut's Totem Basket
+	[178609] = "节日大雪",	-- Holiday Snow
 	[179485] = "损坏的陷阱",	-- A Broken Trap
 	[179499] = "食人魔鞣酸篮",	-- Ogre Tannin Basket
 	[179501] = "诺特·希姆加克的储物箱",	-- Knot Thimblejack's Cache	--TODO: This was taken from classic Wowhead
@@ -1074,6 +1075,11 @@ for key, value in pairs({
 	[180690] = "大型圣甲虫箱",	-- Large Scarab Coffer
 	[180691] = "圣甲虫箱",	-- Scarab Coffer
 	[180717] = "甲虫之锣",	-- The Scarab Gong	--TODO: This was taken from classic Wowhead
+	[180743] = "节日礼物",	-- Carefully Wrapped Present
+	[180746] = "轻轻摇晃过的礼品",	-- Gently Shaken Gift
+	[180747] = "节日礼物",	-- Gaily Wrapped Present
+	[180748] = "条纹礼物盒",	-- Ticking Present
+	[180793] = "节日礼物",	-- Festive Gift
 	[180794] = "詹迪斯·巴罗夫的日记",	-- Journal of Jandice Barov	--TODO: This was taken from classic Wowhead
 	[180918] = "通缉：饥饿者泰里斯",	-- Wanted: Thaelis the Hungerer
 	[181011] = "魔导师达斯维瑟的日记",	-- Magister Duskwither's Journal	--TODO: This was manually translated
@@ -1119,6 +1125,7 @@ for key, value in pairs({
 	--TODO: [186585] = "Dragonskin Scroll",	-- Dragonskin Scroll
 	--TODO: [186881] = "Dark Iron Sabotage Plans",	-- Dark Iron Sabotage Plans
 	[186887] = "大南瓜灯",	-- Large Jack-o'-Lantern
+	[187236] = "冬幕节礼物",	-- Winter Veil Gift
 	[187273] = "可疑的蹄印",	-- Suspicious Hoofprint
 	[187559] = "部落篝火",	-- Horde Bonfire
 	[187564] = "联盟篝火",	-- Alliance Bonfire
@@ -2643,6 +2650,7 @@ for key, value in pairs({
 	--TODO: [334216] = "Black Empire Cache",	-- Black Empire Cache
 	[336415] = "丢弃的卷轴",	-- Discarded Scroll
 	[337237] = "失落宝物",	-- Lost Vault
+	[337241] = "贮藏的装备",	-- Stashed Equipment
 	--TODO: [339211] = "|cFFFFFFFFStep 2:|r Empty Dish",	-- |cFFFFFFFFStep 2:|r Empty Dish
 	[339283] = "被遗忘的贵族宝箱",	-- Forgotten Noble's Chest
 	[339601] = "万世卷轴",	-- Scroll of Aeons
