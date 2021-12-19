@@ -1,18 +1,26 @@
 # AllTheThings
 
-## [SL-2.6.3](https://github.com/DFortun81/AllTheThings/tree/SL-2.6.3) (2021-12-12)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.6.2...SL-2.6.3) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [SL-2.6.4](https://github.com/DFortun81/AllTheThings/tree/SL-2.6.4) (2021-12-19)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.6.3...SL-2.6.4) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
+
+### Highlights of this update
+
+#### Winter Veil
+
+- Winter Veil synced with other versions of ATT, report any errors if you spot them!
+- Added Winter Veil Chorus Book toy sold by Winter Veil vendors!
+- Added "Rock n' Roll" achievement.
+- Added Shaking Pet Carrier (2020 pet present) to Stolen Present.
+- Small quest adjustments.
 
 ### Notable changes:
 
-- Refreshes on the settings tab will perform a refresh on visible ATT windows as well (fixes changing Profiles with varied window sizes/positions letting rows escape the window).
-- Removed 'Dynamic' from all the Dynamic groups and gave them a color instead to help show they function differently than the other groups in the Main window.
-- Fixed some obscure bugs with Dynamic groups.
-- Improved some Tradeskill stuff:
-    - Fixed re-expanding the same profession
-    - One processing pass per profession
-- Fixed a couple of bugs with achievements.
-- Reformatted lots of achievements that span multiple zones/have associated quests: "Fractured Faerie Tales", Treasure Achievements for Bastion/Revendreth, "Deciphering Death's Intentions", "Get Hek'd", "Treasures of Zuldazar", "Treasures of Nazmir", "Treasures of Vol'dun", "Mushroom Harvest", "Scavenger of the Sands".
-- Added Timewalking badge cost and new items to the vendors.
+- Fixed Dynamic Flight Paths from always being hidden >_<
+- Slight adjustment to minilist checking for if the current map has changed. Hopefully minilist will change zones more reliably!
+- Small optimizations here and there.
+- Revamped Firelands a bit so that the Tier Tokens will properly show the Tier Items they can be turned into.
+- Probably fixed 'Buggy Fight' not being an achievement in the minilist.
+- Some Twilight Highlands questline improvements.
+- Putrid Geist (SL pre-patch pet) added to BMAH.
 - Other fixes.

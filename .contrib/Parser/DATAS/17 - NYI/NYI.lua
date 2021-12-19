@@ -35,7 +35,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(188695),	-- Summer Cranial Skillet (Midsummer)
 		i(187422),	-- Rockin' Rollin' Racer Customizer 19.9.3 (Winter Veil)
 		i(187560),	-- Shine and Pine (Winter Veil)
-		ach(15181),	-- Rock n' Roll
 		ach(15313),	-- Rockin' Rollin' Racer
 		-- Trial of Style 9.1.5 Items added
 		i(188240),	-- Augur's Walkers
