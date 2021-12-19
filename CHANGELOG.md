@@ -20,6 +20,7 @@ Merry Christmas, everyone! 🎅
 
 - Fixed Dynamic Flight Paths from always being hidden >_<
 - Slight adjustment to minilist checking for if the current map has changed. Hopefully minilist will change zones more reliably!
+- Potentially fixed weird situations for players who are attempting to collect repeatable quests.
 - Small optimizations here and there.
 - Revamped Firelands a bit so that the Tier Tokens will properly show the Tier Items they can be turned into.
 - Probably fixed "Buggy Fight" not being an achievement in the minilist.
