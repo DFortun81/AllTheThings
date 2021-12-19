@@ -1702,9 +1702,7 @@ root("Instances", tier(LEGION_TIER, {
 root("HiddenQuestTriggers", tier(LEGION_TIER, {
 	inst(946, {
 		d(16, {	-- Mythic
-			e(2025, {	-- Eonar the Life-Bender
-				q(49360),	-- Mythic: Eonar -- First Kill
-			}),
+			q(49360),	-- Mythic: Eonar -- First Kill
 		}),
 	}),
 }));
