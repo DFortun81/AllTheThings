@@ -196,3 +196,11 @@ _.Instances = { tier(WOD_TIER, {
 		},
 	}),
 })};
+root("HiddenQuestTriggers", {
+	tier(WOD_TIER, {
+		q(34545),	-- Shadowmoon Burial Grounds Challenge Mode - Bronze Addition (Nth)
+		q(34528),	-- Shadowmoon Burial Grounds Challenge Mode - Consolation (Nth)
+		q(34547),	-- Shadowmoon Burial Grounds Challenge Mode - Gold Addition (Nth)
+		q(34546),	-- Shadowmoon Burial Grounds Challenge Mode - Silver Addition (Nth)
+	}),
+});

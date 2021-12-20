@@ -985,6 +985,7 @@ _.HiddenQuestTriggers = {
 		q(35390),	-- The Shadow Over Oshu'gun - completed with quest 35088
 		q(35391),	-- Silence the Call - completed with quest 35083
 		q(35392),	-- The Nether Approaches - completed with quest 35087
+		q(36461),	-- Locating the Lapidarist - completed with quest 36352
 		q(36501),	-- Iron Horde Invasion - completed with quest 36498
 		q(36635),	-- Your First Work Order - completed with quest 35168 & 37569
 		q(37185),	-- A Personal Summons - completed with quest 28790 & 28825
@@ -1444,7 +1445,6 @@ _.HiddenQuestTriggers = {
 		q(35340),	-- ooks to have triggered when 35339 was turned in
 		q(36796),	-- turned in a group of quests in spires, might have triggered with 36790
 		--	QUESTING / LEVELING / VARIOUS
-		q(33550),	-- [NOTUSED]Vignette: Iron Horde Napmaster (triggers when looting The Crystal Blade of Torvath in WoD Shadowmoon Valley)
 		q(37187),	-- The Dark Portal
 		q(37677),	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Maraad
 		q(37676),	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Thrall
@@ -1452,57 +1452,17 @@ _.HiddenQuestTriggers = {
 		q(35253),	-- triggered during "Onslaught's End" when door to Teron'gor was opened
 		q(35297),	-- triggered during "Blazing of Glory" when you approach Khadgar around 67.6,60.5
 		q(34440),	-- triggered just before turning in "Ga'nar of the Frostwolf"
-		q(36426),	-- Dueling Orbs,	-- triggered when completing "Mysterious Ring" (34463)
 		q(35914),	-- Default invasion reward flag during the first garrison invasion as part of Draenor's base intro
-		q(36461),	-- Locating the Lapidarist - NYI version of the quest. seems to be a duplicate
 		q(37864),	-- Voidtalon (Pops after the player leaves the scenario.)
 
 		--	DUNGEONS & RAIDS
-		q(35960),	-- Auchindoun Reward Quest
-		q(35957),	-- Bloodmaul Slag Mines Reward Quest (triggered at the end of normal BSM)
-		q(34533),	-- Bloodmaul Slag Mines Challenge Mode - Bronze Addition (Nth)
-		q(34525),	-- Bloodmaul Slag Mines Challenge Mode - Consolation (Nth)
-		q(34535),	-- Bloodmaul Slag Mines Challenge Mode - Gold Addition (Nth)
-		q(34534),	-- Bloodmaul Slag Mines Challenge Mode - Silver Addition (Nth)
 		q(37501),	-- Draenor Challenge Mode - Bronze Addition (1st)
-		q(34539),	-- Draenor Challenge Mode - Bronze Addition (Nth)
 		q(37502),	-- Draenor Challenge Mode - Consolation (1st)
-		q(34527),	-- Draenor Challenge Mode - Consolation (Nth)
 		q(37503),	-- Draenor Challenge Mode - Gold Addition (1st)
-		q(34541),	-- Draenor Challenge Mode - Gold Addition (Nth)
 		q(37504),	-- Draenor Challenge Mode - Silver Addition (1st)
-		q(34540),	-- Draenor Challenge Mode - Silver Addition (Nth)
-		q(34548),	-- Iron Depot Challenge Mode - Bronze Addition (Nth)
-		q(34529),	-- Iron Depot Challenge Mode - Consolation (Nth)
-		q(34550),	-- Iron Depot Challenge Mode - Gold Addition (Nth)
-		q(34549),	-- Iron Depot Challenge Mode - Silver Addition (Nth)
-		q(34536),	-- Iron Docks Challenge Mode - Bronze Addition (Nth)
-		q(34526),	-- Iron Docks Challenge Mode - Consolation (Nth)
-		q(34538),	-- Iron Docks Challenge Mode - Gold Addition (Nth)
-		q(34537),	-- Iron Docks Challenge Mode - Silver Addition (Nth)
-		q(35958),	-- Iron Docks Reward Quest
-		q(34545),	-- Shadowmoon Burial Grounds Challenge Mode - Bronze Addition (Nth)
-		q(34528),	-- Shadowmoon Burial Grounds Challenge Mode - Consolation (Nth)
-		q(34547),	-- Shadowmoon Burial Grounds Challenge Mode - Gold Addition (Nth)
-		q(34546),	-- Shadowmoon Burial Grounds Challenge Mode - Silver Addition (Nth)
-		q(34551),	-- Shaper Dungeon [PH] Challenge Mode - Bronze Addition (Nth)
-		q(34530),	-- Shaper Dungeon [PH] Challenge Mode - Consolation (Nth)
-		q(34553),	-- Shaper Dungeon [PH] Challenge Mode - Gold Addition (Nth)
-		q(34552),	-- Shaper Dungeon [PH] Challenge Mode - Silver Addition (Nth)
-		q(35961),	-- Skyreach Reward Quest (triggered at the end of Normal Skyreach)
-		q(34542),	-- Spires of Arak Challenge Mode - Bronze Addition (Nth)
-		q(34524),	-- Spires of Arak Challenge Mode - Consolation (Nth)
-		q(34544),	-- Spires of Arak Challenge Mode - Gold Addition (Nth)
-		q(34543),	-- Spires of Arak Challenge Mode - Silver Addition (Nth)
-		q(34554),	-- Upper Blackrock Spire Challenge Mode - Bronze Addition (Nth)
-		q(34531),	-- Upper Blackrock Spire Challenge Mode - Consolation (Nth)
-		q(34742),	-- Upper Blackrock Spire Challenge Mode - Consolation (Nth)
-		q(34556),	-- Upper Blackrock Spire Challenge Mode - Gold Addition (Nth)
-		q(34555),	-- Upper Blackrock Spire Challenge Mode - Silver Addition (Nth)
-		q(35963),	-- Warlords Heroic Dungeon Reward Quest (triggered at the end of Mythic Grimrail Depot)
-		q(35962),	-- Warlords Max Level Dungeon Reward Quest (triggered at the end of Normal Grimrail Depot)
+		q(35963),	-- Warlords Heroic Dungeon Reward Quest - triggered at the end of Mythic Grimrail Depot
 		q(36277),	-- Warlords Max Level Dungeon Bonus Reward
-		q(34405),	-- DEPRECATED - REUSE — looting Blackrock Ore chest after Operator Thogar in LFR Blackrock Foundry
+		q(35962),	-- Warlords Max Level Dungeon Reward Quest - triggered at the end of Normal Grimrail Depot
 
 		--	GARRISON
 		q(36793),	-- Frostfire Ridge - Founded Garrison - triggers after using the Master Surveyor during "Establish Your Garrison"

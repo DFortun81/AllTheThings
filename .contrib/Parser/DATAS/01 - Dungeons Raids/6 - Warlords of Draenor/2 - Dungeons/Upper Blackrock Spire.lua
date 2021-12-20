@@ -296,3 +296,12 @@ _.Instances = { tier(WOD_TIER, {
 		},
 	}),
 })};
+root("HiddenQuestTriggers", {
+	tier(WOD_TIER, {
+		q(34554),	-- Upper Blackrock Spire Challenge Mode - Bronze Addition (Nth)
+		q(34531),	-- Upper Blackrock Spire Challenge Mode - Consolation (Nth)
+		q(34742),	-- Upper Blackrock Spire Challenge Mode - Consolation (Nth)
+		q(34556),	-- Upper Blackrock Spire Challenge Mode - Gold Addition (Nth)
+		q(34555),	-- Upper Blackrock Spire Challenge Mode - Silver Addition (Nth)
+	}),
+});

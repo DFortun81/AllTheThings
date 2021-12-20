@@ -204,3 +204,12 @@ _.Instances = { tier(WOD_TIER, {
 		},
 	}),
 })};
+root("HiddenQuestTriggers", {
+	tier(WOD_TIER, {
+		q(35961),	-- Skyreach Reward Quest
+		q(34542),	-- Spires of Arak Challenge Mode - Bronze Addition (Nth)
+		q(34524),	-- Spires of Arak Challenge Mode - Consolation (Nth)
+		q(34544),	-- Spires of Arak Challenge Mode - Gold Addition (Nth)
+		q(34543),	-- Spires of Arak Challenge Mode - Silver Addition (Nth)
+	}),
+});

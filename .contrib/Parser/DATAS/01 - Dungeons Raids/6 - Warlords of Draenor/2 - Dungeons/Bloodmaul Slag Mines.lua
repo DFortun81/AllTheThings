@@ -205,3 +205,12 @@ _.Instances = { tier(WOD_TIER, {
 		},
 	}),
 })};
+root("HiddenQuestTriggers", {
+	tier(WOD_TIER, {
+		q(34533),	-- Bloodmaul Slag Mines Challenge Mode - Bronze Addition (Nth)
+		q(34525),	-- Bloodmaul Slag Mines Challenge Mode - Consolation (Nth)
+		q(34535),	-- Bloodmaul Slag Mines Challenge Mode - Gold Addition (Nth)
+		q(34534),	-- Bloodmaul Slag Mines Challenge Mode - Silver Addition (Nth)
+		q(35957),	-- Bloodmaul Slag Mines Reward Quest
+	}),
+});

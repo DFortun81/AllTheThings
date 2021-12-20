@@ -1089,25 +1089,26 @@ _.Zones =
 };
 _.HiddenQuestTriggers = {
 	tier(WOD_TIER, {
-		q(36493),	-- Shadowmoon Valley - Tracking Quest: Can Open Othaar's Door
 		q(36797),	-- Shadowmoon Valley - Founded the garrison
 		q(35626),	-- Shadowmoon Valley - Friend of the Exarchs: Apprentice Artificer Andren selected
 		q(35629),	-- Shadowmoon Valley - Friend of the Exarchs: Vindicator Onaala selected
 		q(35628),	-- Shadowmoon Valley - Friend of the Exarchs: Rangari Chel selected
 		q(33151),	-- Shadowmoon Valley - Saw scout Valdez arrive in Twilight Glade
-		q(37451),	-- Shadowmoon Valley - see Qiana Moonshadow while on "Qiana Moonshadow"
-		q(34600),	-- Shadowmoon Valley - Tracking Quest: Saw Vorka, Rangari Leave
-		q(34622),	-- Shadowmoon Valley - Tracking Quest: Saw Ner'zhul Leave
-		q(33839),	-- Shadowmoon Valley - Tracking Quest: Saw Naaru Purified
-		q(34599),	-- Shadowmoon Valley - Tracking Quest: Saw Yrel Leave Twilight Glade
+		q(37451),	-- Shadowmoon Valley - See Qiana Moonshadow (Follower Mission Turn in) - triggers while on quest "Qiana Moonshadow" (questID 34646)
+		q(37674),	-- Shadowmoon Valley - Shadowmoon Valley 6.0:JP3 - Gloomshade Grove - Tracking Quest - See Shelly Hamby (Game of Thorns) - after killing King Deathbloom
+		q(36493),	-- Shadowmoon Valley - Tracking Quest: Can Open Othaar's Door
 		q(36907),	-- Shadowmoon Valley - Tracking Quest: Defense of Karabor - Celebration Finished
+		q(33839),	-- Shadowmoon Valley - Tracking Quest: Saw Naaru Purified
+		q(34622),	-- Shadowmoon Valley - Tracking Quest: Saw Ner'zhul Leave
+		q(34600),	-- Shadowmoon Valley - Tracking Quest: Saw Vorka, Rangari Leave
+		q(34599),	-- Shadowmoon Valley - Tracking Quest: Saw Yrel Leave Twilight Glade
 		q(33086),	-- Shadowmoon Valley - Tracking Quest: The Root of Darkness - Stone 1
 		q(33165),	-- Shadowmoon Valley - Tracking Quest: The Root of Darkness - Stone 2
 		q(33167),	-- Shadowmoon Valley - Tracking Quest: The Root of Darkness - Stone 3
 		q(33166),	-- Shadowmoon Valley - Tracking Quest: The Root of Darkness - Stone 4
 		q(34896),	-- Shadowmoon Valley - Tracking Quest: Stealthed Rangari - triggers when approaching Rangari Navra (43.7, 51.7)
-		q(37674),	-- Shadowmoon Valley 6.0:JP3 - Gloomshade Grove - Tracking Quest - See Shelly Hamby (Game of Thorns) - after killing King Deathbloom
-		q(49544),	-- Shadowmoon Valley - After handing in Hero's Call: Shadowmoon Valley! (Draenor)
+		q(33550),	-- Shadowmoon Valley - [NOTUSED]Vignette: Iron Horde Napmaster - triggers when looting The Crystal Blade of Torvath
+		q(49544),	-- Shadowmoon Valley - triggers after handing in Hero's Call: Shadowmoon Valley! (Draenor)
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {

@@ -181,3 +181,11 @@ _.Instances = { tier(WOD_TIER, {
 		},
 	}),
 })};
+root("HiddenQuestTriggers", {
+	tier(WOD_TIER, {
+		q(34548),	-- Iron Depot Challenge Mode - Bronze Addition (Nth)
+		q(34529),	-- Iron Depot Challenge Mode - Consolation (Nth)
+		q(34550),	-- Iron Depot Challenge Mode - Gold Addition (Nth)
+		q(34549),	-- Iron Depot Challenge Mode - Silver Addition (Nth)
+	}),
+});
