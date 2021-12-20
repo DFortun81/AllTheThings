@@ -1089,7 +1089,7 @@ _.Zones =
 };
 _.HiddenQuestTriggers = {
 	tier(WOD_TIER, {
-		q(36797),	-- Shadowmoon Valley - Founded the garrison
+		q(36797),	-- Shadowmoon Valley - Founded Garrison - triggers after building Alliance Garrison
 		q(35626),	-- Shadowmoon Valley - Friend of the Exarchs: Apprentice Artificer Andren selected
 		q(35629),	-- Shadowmoon Valley - Friend of the Exarchs: Vindicator Onaala selected
 		q(35628),	-- Shadowmoon Valley - Friend of the Exarchs: Rangari Chel selected

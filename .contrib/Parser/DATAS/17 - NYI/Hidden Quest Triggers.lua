@@ -985,6 +985,7 @@ _.HiddenQuestTriggers = {
 		q(35390),	-- The Shadow Over Oshu'gun - completed with quest 35088
 		q(35391),	-- Silence the Call - completed with quest 35083
 		q(35392),	-- The Nether Approaches - completed with quest 35087
+		q(36079),	-- A Hero's Welcome - completed with quest 34575
 		q(36461),	-- Locating the Lapidarist - completed with quest 36352
 		q(36501),	-- Iron Horde Invasion - completed with quest 36498
 		q(36635),	-- Your First Work Order - completed with quest 35168 & 37569
@@ -999,7 +1000,6 @@ _.HiddenQuestTriggers = {
 		q(49563),	-- Warchief's Command: Frostfire Ridge! - completed with quest 49545
 
 		-- Frostfire Ridge
-		--q(36079),	-- A Hero's Welcome - TODO: figure out from where it gets completed
 		--q(33380),	-- REUSE - TODO: figure out from where it gets completed
 		--q(33407),	-- REUSE - TODO: figure out from where it gets completed
 		--q(35251),	-- The Bounty of Bladespire	- TODO: figure out from where it gets completed
@@ -1448,10 +1448,6 @@ _.HiddenQuestTriggers = {
 		q(37187),	-- The Dark Portal
 		q(37677),	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Maraad
 		q(37676),	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Thrall
-		q(35983),	-- triggered during "Onslaught's End" when door to Cho'gal was opened
-		q(35253),	-- triggered during "Onslaught's End" when door to Teron'gor was opened
-		q(35297),	-- triggered during "Blazing of Glory" when you approach Khadgar around 67.6,60.5
-		q(34440),	-- triggered just before turning in "Ga'nar of the Frostwolf"
 		q(35914),	-- Default invasion reward flag during the first garrison invasion as part of Draenor's base intro
 		q(37864),	-- Voidtalon (Pops after the player leaves the scenario.)
 
