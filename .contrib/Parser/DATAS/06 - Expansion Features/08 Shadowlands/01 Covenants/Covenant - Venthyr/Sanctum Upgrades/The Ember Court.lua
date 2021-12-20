@@ -297,6 +297,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 							q(62115),	-- Party Crashers
 							q(62117),	-- Party Crashers
 							q(62147),	-- Party Pests
+							q(64255),	-- Party Time
 							q(62123),	-- Prison Break
 							q(65055),	-- Protective Braziers
 							q(62127),	-- Ride on the Wild Side
