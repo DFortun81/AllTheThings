@@ -584,18 +584,14 @@ _.PVP =
 							}),
 						},
 					}),
-					i(112113, {	-- Pandaren Hide
-						["allianceQuestID"] = 35942,	-- Pandaren Hide (A)
-						["hordeQuestID"] = 36038,	-- Pandaren Hide (H)
+					q(35942, {	-- Pandaren Hide [A]
+						["provider"] = { "i", 112113 },	-- Pandaren Hide
+						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 						["g"] = {
 							crit(1, {	-- Pandaren Hide (A)
 								["achievementID"] = 9104,	-- Bounty Hunter (A)
 								["races"] = ALLIANCE_ONLY,
-							}),
-							crit(1, {	-- Pandaren Hide (H)
-								["achievementID"] = 9103,	-- Bounty Hunter (H)
-								["races"] = HORDE_ONLY,
 							}),
 							i(170073),	-- Dented Ashmaul Strongbox
 							i(128216, {	-- Dented Ashmaul Strongbox
@@ -603,6 +599,18 @@ _.PVP =
 								["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_ALLIANCE, PVP_COMBATANT }, },
 								["u"] = REMOVED_FROM_GAME,
 							}),
+						},
+					}),
+					q(36038, {	-- Pandaren Hide [H]
+						["provider"] = { "i", 112113 },	-- Pandaren Hide
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+						["g"] = {
+							crit(1, {	-- Pandaren Hide (H)
+								["achievementID"] = 9103,	-- Bounty Hunter (H)
+								["races"] = HORDE_ONLY,
+							}),
+							i(170073),	-- Dented Ashmaul Strongbox
 							i(128215, {	-- Dented Ashmaul Strongbox
 								["races"] = HORDE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_HORDE, PVP_COMBATANT }, },

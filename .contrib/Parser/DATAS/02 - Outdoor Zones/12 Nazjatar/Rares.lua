@@ -198,11 +198,7 @@ _.Zones =
 					crit(8, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
-					i(170167, {	-- Eel Filet
-						crit(51, {	-- Eel Filet
-							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-						}),
-					}),
+					i(170167),	-- Eel Filet
 				},
 			}),
 			n(152756, {	-- Daggertooth Terror
@@ -243,17 +239,7 @@ _.Zones =
 					crit(10, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
-					i(170176, {	-- Fathom Ray Wing
-						["allianceQuestID"] = 57247,	-- Fathom Ray Wing
-						["hordeQuestID"] = 56972,	-- Fathom Ray Wing
-						["description"] = "Turn in to |cFFFFD700Hunter Akana|r (Alliance) or |cFFFFD700Neri Sharpfin|r (Horde) for 250 reputation, plus 50 experience for your bodyguard.",
-						["repeatable"] = true,
-						["g"] = {
-							crit(46, {	-- Fathom Ray Wing
-								["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-							}),
-						},
-					}),
+					i(170176),	-- Fathom Ray Wing
 				},
 			}),
 			n(152414, {	-- Elder Unu
@@ -282,11 +268,7 @@ _.Zones =
 					crit(12, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
-					i(170167, {	-- Eel Filet
-						crit(51, {	-- Eel Filet
-							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-						}),
-					}),
+					i(170167),	-- Eel Filet
 					i(169359, {	-- Spawn of Nalaada (PET!)
 						crit(1, {	-- Spawn of Nalaada
 							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
@@ -458,17 +440,7 @@ _.Zones =
 							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 						}),
 					}),
-					i(170171, {	-- Giant Crab Leg
-						["allianceQuestID"] = 57248,	-- Giant Crab Leg
-						["hordeQuestID"] = 56973,	-- Giant Crab Leg
-						["description"] = "Turn in to |cFFFFD700Bladesman Inowari|r (Alliance) or |cFFFFD700Poen Gillbrack|r (Horde) for 250 reputation, plus 50 experience for your bodyguard.",
-						["repeatable"] = true,
-						["g"] = {
-							crit(49, {	-- Giant Crab Leg
-								["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-							}),
-						},
-					}),
+					i(170171),	-- Giant Crab Leg
 				},
 			}),
 			n(152397, {	-- Oronu
@@ -587,17 +559,7 @@ _.Zones =
 					crit(24, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
-					i(170171, {	-- Giant Crab Leg
-						["allianceQuestID"] = 57248,	-- Giant Crab Leg
-						["hordeQuestID"] = 56973,	-- Giant Crab Leg
-						["description"] = "Turn in to |cFFFFD700Bladesman Inowari|r (Alliance) or |cFFFFD700Poen Gillbrack|r (Horde) for 250 reputation, plus 50 experience for your bodyguard.",
-						["repeatable"] = true,
-						["g"] = {
-							crit(49, {	-- Giant Crab Leg
-								["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-							}),
-						},
-					}),
+					i(170171),	-- Giant Crab Leg
 					i(169350, {	-- Glittering Diamondshell (PET!)
 						crit(2, {	-- Glittering Diamondshell
 							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
@@ -691,11 +653,7 @@ _.Zones =
 					crit(28, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
-					i(170167, {	-- Eel Filet
-						crit(51, {	-- Eel Filet
-							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-						}),
-					}),
+					i(170167),	-- Eel Filet
 					i(170187, {	-- Shadescale (TOY!)
 						crit(35, {	-- Shadescale
 							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
@@ -758,17 +716,7 @@ _.Zones =
 						["achievementID"] = 13691,
 					}),
 					i(169163),	-- Silent Glider
-					i(170176, {	-- Fathom Ray Wing
-						["allianceQuestID"] = 57247,	-- Fathom Ray Wing
-						["hordeQuestID"] = 56972,	-- Fathom Ray Wing
-						["description"] = "Turn in to |cFFFFD700Hunter Akana|r (Alliance) or |cFFFFD700Neri Sharpfin|r (Horde) for 250 reputation, plus 50 experience for your bodyguard.",
-						["repeatable"] = true,
-						["g"] = {
-							crit(46, {	-- Fathom Ray Wing
-								["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-							}),
-						},
-					}),
+					i(170176),	-- Fathom Ray Wing
 				},
 			}),
 			n(153898, {	-- Tidelord Aquatus
