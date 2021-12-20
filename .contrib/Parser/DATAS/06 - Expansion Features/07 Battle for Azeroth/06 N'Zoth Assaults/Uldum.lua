@@ -2,8 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-_.ExpansionFeatures =
-{
+root("ExpansionFeatures", {
 	tier(BFA_TIER, {
 		m(1527, {	-- Uldum (under assault)
 			["icon"] = "Interface\\Icons\\INV_FACTION_83_ULDUMACCORD",
@@ -2290,10 +2289,21 @@ _.ExpansionFeatures =
 			},
 		}),
 	}),
-};
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+});
+
+root("HiddenQuestTriggers", {
+	tier(BFA_TIER, {
+		m(1527, {	-- Uldum (under assault)
+			n(-10072, {	-- N'Zoth Assault
+				q(59061),	-- hatching Shadowbarb drone after the first phase
+			}),
+		}),
+	}),
+});
+
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(58801),	-- Enter the Void
 		q(58904),	-- Shards of Corruption
 	}),
-});
+}));

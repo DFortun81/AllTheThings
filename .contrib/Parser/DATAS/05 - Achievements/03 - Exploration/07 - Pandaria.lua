@@ -404,37 +404,99 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(4),	-- The Dark Prophet Zul
 		}),
 		ach(8714, {	-- Timeless Champion (Timeless Isle)
-			crit(1),	-- Emerald Gander
-			crit(2),	-- Ironfur Steelhorn
-			crit(3),	-- Great Turtle Furyshell
-			crit(4),	-- Gu'chi the Swarmbringer
-			crit(5),	-- Zesqua
-			crit(6),	-- Zhu-Gon the Sour
-			crit(7),	-- Karkanos
-			crit(8),	-- Chelon
-			crit(9),	-- Spelurk
-			crit(10),	-- Cranegnasher
-			crit(11),	-- Rattleskew
-			crit(12),	-- Spirit of Jadefire
-			crit(13),	-- Leafmender
-			crit(14),	-- Bufo
-			crit(15),	-- Garnia
-			crit(16),	-- Tsavo'ka
-			crit(17),	-- Monstrous Spineclaw
-			crit(18),	-- Imperial Python
-			crit(19),	-- Stinkbraid
-			crit(20),	-- Rock Moss
-			crit(21),	-- Watcher Osu
-			crit(22),	-- Jakur of Ordon
-			crit(23),	-- Champion of the Black Flame
-			crit(24),	-- Cinderfall
-			crit(25),	-- Urdur the Cauterizer
-			crit(26),	-- Flintlord Gairan
-			crit(27),	-- Huolon
-			crit(28),	-- Golganarr
-			crit(29),	-- Evermaw
-			crit(30),	-- Dread Ship Vazuvius
-			crit(31),	-- Archiereus of Flame
+			crit(1, {	-- Emerald Gander
+				["_quests"] = { 33295 },
+			}),
+			crit(2, {	-- Ironfur Steelhorn
+				["_quests"] = { 33296 },
+			}),
+			crit(3, {	-- Great Turtle Furyshell
+				["_quests"] = { 33297 },
+			}),
+			crit(4, {	-- Gu'chi the Swarmbringer
+				["_quests"] = { 33294 },
+			}),
+			crit(5, {	-- Zesqua
+				["_quests"] = { 33316 },
+			}),
+			crit(6, {	-- Zhu-Gon the Sour
+				["_quests"] = { 32959 },
+			}),
+			crit(7, {	-- Karkanos
+				["_quests"] = { 33292 },
+			}),
+			crit(8, {	-- Chelon
+				["_quests"] = { 32966 },
+			}),
+			crit(9, {	-- Spelurk
+				["_quests"] = { 32960 },
+			}),
+			crit(10, {	-- Cranegnasher
+				["_quests"] = { 32967 },
+			}),
+			crit(11, {	-- Rattleskew
+				["_npcs"] = { 72048 },
+			}),
+			crit(12, {	-- Spirit of Jadefire
+				["_quests"] = { 33293 },
+			}),
+			crit(13, {	-- Leafmender
+				["_quests"] = { 33298 },
+			}),
+			crit(14, {	-- Bufo
+				["_quests"] = { 33301 },
+			}),
+			crit(15, {	-- Garnia
+				["_quests"] = { 33300 },
+			}),
+			crit(16, {	-- Tsavo'ka
+				["_quests"] = { 33304 },
+			}),
+			crit(17, {	-- Monstrous Spineclaw
+				["_quests"] = { 33302 },
+			}),
+			crit(18, {	-- Imperial Python
+				["_quests"] = { 33303 },
+			}),
+			crit(19, {	-- Stinkbraid
+				["_quests"] = { 33305 },
+			}),
+			crit(20, {	-- Rock Moss
+				["_quests"] = { 33307 },
+			}),
+			crit(21, {	-- Watcher Osu
+				["_quests"] = { 33322 },
+			}),
+			crit(22, {	-- Jakur of Ordon
+				["_quests"] = { 33306 },
+			}),
+			crit(23, {	-- Champion of the Black Flame
+				["_quests"] = { 33299 },
+			}),
+			crit(24, {	-- Cinderfall
+				["_quests"] = { 33310 },
+			}),
+			crit(25, {	-- Urdur the Cauterizer
+				["_quests"] = { 33308 },
+			}),
+			crit(26, {	-- Flintlord Gairan
+				["_quests"] = { 33309 },
+			}),
+			crit(27, {	-- Huolon
+				["_quests"] = { 33311 },
+			}),
+			crit(28, {	-- Golganarr
+				["_quests"] = { 33315 },
+			}),
+			crit(29, {	-- Evermaw
+				["_quests"] = { 33313 },
+			}),
+			crit(30, {	-- Dread Ship Vazuvius
+				["_quests"] = { 33314 },
+			}),
+			crit(31, {	-- Archiereus of Flame
+				["_quests"] = { 33312 },
+			}),
 		}),
 		ach(8784, {	-- Timeless Legends (Timeless Isle)
 			crit(1),	-- Cloudstrike Family Helm

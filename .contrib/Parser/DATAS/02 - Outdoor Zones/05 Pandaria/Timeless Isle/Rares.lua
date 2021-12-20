@@ -21,9 +21,6 @@ _.Zones =
 						{ 48.4, 33.3, TIMELESS_ISLE },
 					},
 					["g"] = {
-						crit(31, {	-- Archiereus of Flame
-							["achievementID"] = 8714,	-- Timeless Champion
-						}),
 						i(86574, {	-- Elxir of Ancient Knowledge
 							["u"] = REMOVED_FROM_GAME,	-- removed around Legion prepatch
 						}),
@@ -49,9 +46,6 @@ _.Zones =
 						{ 62.1, 77.1, TIMELESS_ISLE },
 					},
 					["g"] = {
-						crit(14, {	-- Bufo
-							["achievementID"] = 8714,	-- Timeless Champion
-						}),
 						i(104169, {	-- Gulp Froglet (PET!)
 							crit(47, {	-- Gulp Froglet
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
@@ -68,9 +62,6 @@ _.Zones =
 						{ 65.4, 60.2, TIMELESS_ISLE },
 					},
 					["g"] = {
-						crit(23, {	-- Champion of the Black Flame
-							["achievementID"] = 8714,	-- Timeless Champion
-						}),
 						i(106130, {	-- Big Bag of Herbs
 							crit(7, {	-- Big Bag of Herbs
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
@@ -90,9 +81,6 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 25.2, 35.8, TIMELESS_ISLE },
 					["g"] = {
-						crit(8, {	-- Chelon
-							["achievementID"] = 8714,	-- Timeless Champion
-						}),
 						i(86584, {	-- Hardened Shell
 							crit(9, {	-- Hardened Shell
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
@@ -105,9 +93,6 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 54.1, 52.9, TIMELESS_ISLE },
 					["g"] = {
-						crit(24, {	-- Cinderfall
-							["achievementID"] = 8714,	-- Timeless Champion
-						}),
 						i(104299, {	-- Falling Flame
 							crit(27, {	-- Falling Flame
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
@@ -158,9 +143,6 @@ _.Zones =
 						{ 36.7, 84.0, TIMELESS_ISLE },
 					},
 					["g"] = {
-						crit(1, {	-- Emerald Gander
-							["achievementID"] = 8714,	-- Timeless Champion
-						}),
 						i(104264, {	-- Meaty Crane Leg
 							["description"] = "Can be turned in to Great Chef Woo for 20 Timeless Isle coins.",
 							["repeatable"] = true,
@@ -445,9 +427,6 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 59.5, 48.9, TIMELESS_ISLE },
 					["g"] = {
-						crit(9, {	-- Spelurk
-							["achievementID"] = 8714,	-- Timeless Champion
-						}),
 						i(104320, {	-- Cursed Talisman
 							crit(17, {	-- Cursed Talisman
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
