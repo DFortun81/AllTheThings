@@ -6598,6 +6598,7 @@ app.BaseObjectFields = function(fields, type)
 		_cache = rawget(fields, key);
 		-- cloned groups will not directly have a parent, but they will instead have a sourceParent, so fill in with that instead
 		if not _cache then
+			-- TODO: evaluate performance cost of 'missing' keys hitting this logic (i.e. 'collectible' on headers, etc.)
 			-- special re-direct keys possible for 'any' Type of object
 			if key == "parent" then return t.sourceParent; end
 			if key == "hash" then return app.CreateHash(t); end
@@ -9194,6 +9195,7 @@ app.BaseItemWithQuestIDAndFactionID = app.BaseObjectFields(fields);
 -- Appearance Lib (Item Source)
 local fields = RawCloneData(itemFields);
 fields.key = function(t) return "s"; end;
+-- TODO: if PL filter is ever a thing investigate https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.PlayerCanCollectSource
 fields.collectible = itemFields.collectibleAsTransmog;
 fields.collected = itemFields.collectedAsTransmog;
 app.BaseItemSource = app.BaseObjectFields(fields, "BaseItemSource");
@@ -11155,7 +11157,8 @@ app.TryPopulateQuestRewards = function(questObject)
 		end
 		BuildGroups(questObject, questObject.g);
 	else
-		questObject.doUpdate = questObject.OnUpdate;
+		-- print("set questObject.doUpdate",questObject.questID)
+		questObject.doUpdate = true;
 	end
 
 	-- app.DEBUG_PRINT = nil;
@@ -12586,8 +12589,10 @@ UpdateGroups = function(parent, g, window)
 					UpdateGroups(group, group.g, window);
 				end
 				-- some objects are able to populate themselves via OnUpdate and track if needing to do another update via 'doUpdate'
-				-- print("update-doUpdate",group.hash)
-				if window and group.doUpdate then window.doUpdate = true; end
+				if window and group.doUpdate then
+					-- print("update-doUpdate",group.doUpdate,"=>",group.hash)
+					window.doUpdate = true;
+				end
 			else
 				UpdateGroup(parent, group, window);
 			end
@@ -13745,7 +13750,7 @@ local function SetRowData(self, row, data)
 			end
 		-- an individual row can define whether the window should refresh again after it is displayed
 		elseif data.doUpdate then
-			-- print("window.doUpdate",data.hash)
+			-- print("window.doUpdate",data.doUpdate,"=>",data.hash)
 			data.doUpdate = nil;
 			self.doUpdate = true;
 		else
@@ -14984,6 +14989,8 @@ RowOnEnter = function (self)
 		-- end
 		-- local fields = {
 		-- 	"__type",
+		-- 	"OnUpdate",
+		-- 	"doUpdate",
 		-- };
 		-- GameTooltip:AddLine("-- Extra Fields:");
 		-- for _,key in ipairs(fields) do
