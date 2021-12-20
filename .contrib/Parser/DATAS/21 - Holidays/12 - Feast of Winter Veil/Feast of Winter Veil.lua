@@ -455,11 +455,19 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			["groups"] = {
 				-- #if AFTER TBC
 				i(34261, {	-- Pattern: Green Winter Clothes
-					["description"] = "Horde Tailors receive this pattern in the mail, but Alliance players that are adventurous can learn it from the Neutral holiday vendor in Orgrimmar.",
+					-- #if AFTER TBC
+					["description"] = "Horde Tailors receive this pattern in the mail, but Alliance Tailors can learn it from the Neutral holiday vendor in Shattrath.",
+					-- #else
+					["description"] = "Horde Tailors receive this pattern in the mail, but Alliance Tailors that are adventurous can learn it from the Neutral holiday vendor in Orgrimmar.",
+					-- #endif
 					["timeline"] = { "added 2.3.0.7501" },
 				}),
 				i(34319, {	-- Pattern: Red Winter Clothes
-					["description"] = "Alliance Tailors receive this pattern in the mail, but Horde players that are adventurous can learn it from the Neutral holiday vendor in Ironforge.",
+					-- #if AFTER TBC
+					["description"] = "Alliance Tailors receive this pattern in the mail, but Horde Tailors can learn it from the Neutral holiday vendor in Shattrath.",
+					-- #else
+					["description"] = "Alliance Tailors receive this pattern in the mail, but Horde Tailors that are adventurous can learn it from the Neutral holiday vendor in Stormwind.",
+					-- #endif
 					["timeline"] = { "added 2.3.0.7501" },
 				}),
 				i(34262, {	-- Pattern: Winter Boots
