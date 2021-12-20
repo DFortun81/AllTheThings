@@ -38,7 +38,13 @@ _.GearSets =
 				}),
 				un(REMOVED_FROM_GAME, i(93858)),	-- Brawler's Bladed Claws
 				un(REMOVED_FROM_GAME, i(92948)),	-- Brawler's Razor Claws
-				i(122396),	-- Brawler's Razor Claws
+				i(122396, {	-- Brawler's Razor Claws
+					-- TODO: more accurate timeline updates
+					["timeline"] = {
+						"added 7.2", "removed 8.0",
+						"added 8.2", "removed 9.0",
+					},
+				}),
 				un(REMOVED_FROM_GAME, i(79131)),	-- Burnished Warden Staff
 				i(122363, {	-- Burnished Warden Staff
 					["cost"] = {
