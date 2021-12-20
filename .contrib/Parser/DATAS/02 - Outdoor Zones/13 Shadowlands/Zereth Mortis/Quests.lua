@@ -382,6 +382,12 @@ root("Zones", m(SHADOWLANDS, {
 			}),
 			-- The End contiune Baston>Torghast.
 
+			-- Might cont here?
+			q(65259, {	-- The Heart of the Sepulcher
+				["provider"] = { "n", 181367 },	-- Highlord Bolvar Fordragon
+				["coord"] = { 35, 64.7, ZERETH_MORTIS },
+			}),
+
 
 			-- Chap 6
 			q(65324, {	-- Patterns Within Patterns
@@ -420,13 +426,16 @@ root("Zones", m(SHADOWLANDS, {
 				["provider"] = { "n", 183701 },	-- Popopoc
 				["coord"] = { 50.7, 28.3, ZERETH_MORTIS },
 			}),
-			q(64937, {	-- Searching High and Low
+			q(64937, {	-- You Light Up My Left
 				["sourceQuests"] = { 64936 },	-- Searching High and Low
 				["provider"] = { "n", 184949 },	-- Popopoc
 				["coord"] = { 48, 34, ZERETH_MORTIS },
 			}),
-
-
+			q(65237, {	-- Oracle, Heal Thyself
+				["sourceQuests"] = { 64937 },	-- You Light Up My Left
+				["provider"] = { "n", 181706 },	-- Popopoc
+				["coord"] = { 38.1, 48.1, ZERETH_MORTIS },
+			}),
 			-- PROBABLY AFTER BORROWED POWER/POP GOES THE DEVOURER?
 			q(64889, {	-- Match Made in Zereth Mortis
 				["description"] = "to unlock cosmic transport",
@@ -435,6 +444,107 @@ root("Zones", m(SHADOWLANDS, {
 				["description"] = "to unlock cosmic transport",
 			}),
 			--
+
+
+			-- The End
+
+
+			-- Chapter 7
+			q(65328, {	-- Arbiter in the Making
+				["sourceQuests"] = { 65237 },	-- Oracle, Heal Thyself
+				["provider"] = { "n", 181090 },	-- Pelagos
+				["coord"] = { 34.3, 48.6, ZERETH_MORTIS },
+			}),
+			q(64879, {	-- A Monumental Discovery
+				["sourceQuests"] = { 65328 },	-- Arbiter in the Making
+				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
+				["coord"] = { 35, 64.8, ZERETH_MORTIS },
+			}),
+			q(64723, {	-- Restoration Porject
+				["sourceQuests"] = { 64879 },	-- A Monumental Discovery
+				["provider"] = { "n", 177958 },	-- Firim
+				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
+			}),
+			q(64733, {	-- Help From Beyond
+				["sourceQuests"] = { 64723 },	-- Restoration Porject
+				["provider"] = { "n", 181545 },	-- Firim
+				["coord"] = { 33.8, 48.4, ZERETH_MORTIS },
+			}),
+			q(64720, {	-- Cleaving A Path
+				["sourceQuests"] = { 64733 },	-- Help From Beyond
+				["provider"] = { "n", 180928 },	-- Secutor Mevix
+				["coord"] = { 56.4, 31.2, ZERETH_MORTIS },
+			}),
+			q(64706, {	-- A Matter Of Motivation
+				["sourceQuests"] = { 64733 },	-- Help From Beyond
+				["provider"] = { "n", 180903 },	-- Firim
+				["coord"] = { 56.9, 31.2, ZERETH_MORTIS },
+			}),
+			q(64718, {	-- Keys To Victory
+				["sourceQuests"] = { 64733 },	-- Help From Beyond
+				["provider"] = { "n", 180942 },	-- Saezurah
+				["coord"] = { 57.1, 31.1, ZERETH_MORTIS },
+			}),
+			q(64722, {	-- Knocking On Death's Door
+				["sourceQuests"] = {
+					64720,	-- Cleaving A Path
+					64706,	-- A Matter Of Motivation
+					64718,	-- Keys To Victory
+				},
+				["provider"] = { "n", 180903 },	-- Firim
+				["coord"] = { 55.9, 29.9, ZERETH_MORTIS },
+			}),
+			q(64727, {	-- The Infinite Circle
+				["sourceQuests"] = { 64722 },	-- Knocking On Death's Door
+				["provider"] = { "n", 180953 },	-- Saezurah
+				["coord"] = { 36.7, 77.1, 2031 },
+			}),
+			q(64726, {	-- The Order Of Things
+				["sourceQuests"] = { 64727 },	-- The Infinite Circle
+				["provider"] = { "n", 180942 },	-- Saezurah
+				["coord"] = { 53.3, 47.1, 2031 },
+			}),
+			q(64725, {	-- Unforgivable Intrusion
+				["sourceQuests"] = { 64727 },	-- The Infinite Circle
+				["provider"] = { "n", 180942 },	-- Saezurah
+				["coord"] = { 53.3, 47.1, 2031 },
+			}),
+			q(64962, {	-- As Foretold
+				["sourceQuests"] = {
+					64726,	-- The Order Of Things
+					64725,	-- Unforgivable Intrusion
+				},
+				["provider"] = { "n", 180942 },	-- Saezurah
+				["coord"] = { 53.3, 47.1, 2031 },
+			}),
+			q(64728, {	-- Acquaintances Forgotten
+				["sourceQuests"] = { 64962 },	-- As Foretold
+				["provider"] = { "n", 180942 },	-- Saezurah
+				["coord"] = { 53.3, 47.1, 2031 },
+			}),
+			q(64730, {	-- The Turning Point
+				["sourceQuests"] = { 64728 },	-- Acquaintances Forgotten
+				["provider"] = { "n", 180942 },	-- Saezurah
+				["coord"] = { 53.3, 47.1, 2031 },
+			}),
+			q(64731, {	-- For Every Soul
+				["sourceQuests"] = { 64730 },	-- The Turning Point
+				["provider"] = { "n", 180915 },	-- Kleia
+				["coord"] = { 52.5, 45.8, 2031 },
+			}),
+			q(64729, {	-- Lifetimes To Consider
+				["sourceQuests"] = { 64731 },	-- For Every Soul
+				["provider"] = { "n", 180942 },	-- Saezurah
+				["coord"] = { 53.3, 47.1, 2031 },
+			}),
+			q(65238, {	-- Souls Entwined (Critiera)
+				["sourceQuests"] = { 64729 },	-- Lifetimes To Consider
+				["provider"] = { "n", 181545 },	-- Kleia
+				["coord"] = { 34.4, 48.5, ZERETH_MORTIS },
+			}),
+			-- Cont Oribos
+			-- END
+
 
 
 			-- Al'dalil/Cartel Xy Side Quest
@@ -582,6 +692,11 @@ root("Zones", m(SHADOWLANDS, {
 				["provider"] = { "n", 181397 },	-- Cypher Console
 				["coord"] = { 33.8, 49.4, ZERETH_MORTIS },
 			}),
+			q(65433, {	-- Further Research: Trebalim
+				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
+				["provider"] = { "n", 181397 },	-- Cypher Console
+				["coord"] = { 33.8, 49.4, ZERETH_MORTIS },
+			}),
 			-- End
 
 			-- Hanoa Questline
@@ -646,6 +761,22 @@ root("Zones", m(SHADOWLANDS, {
 			}),
 		}),
 		n(QUESTS, sharedData({ ["isDaily"] = true }, {
+			q(65268, {	-- Bzzzzt!
+				--["sourceQuests"] = {  },	Available After Chap 2
+				["provider"] = { "n", 181179 },	-- Elder Nirav
+				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
+			}),
+			q(64964, {	-- Choose Your Fighter
+				--["sourceQuests"] = {  },	Available After Chap 2
+				["provider"] = { "n", 181179 },	-- Elder Nirav
+				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
+			}),
+			q(65326, {	-- Circle of Strife
+				["description"] = "This Daily is available after researching Altonian Understanding",
+				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
+				["provider"] = { "n", 180289 },	-- Mai Soh
+				["coord"] = { 58.3, 50, ZERETH_MORTIS },
+			}),
 			q(65264, {	-- Operation: Relocation
 				--["sourceQuests"] = {  },	Available After Chap 2
 				["provider"] = { "n", 181179 },	-- Elder Nirav
@@ -660,6 +791,11 @@ root("Zones", m(SHADOWLANDS, {
 			--	["sourceQuests"] = { 65305 },	-- The Way Forward (Chap 3)
 				["provider"] = { "n", 181179 },	-- Elder Nirav
 				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
+			}),
+			q(65226, {	-- Fleet-footed and Fastidious
+				--["sourceQuests"] = { 65305 },	-- The Way Forward (Chap 3)
+				["provider"] = { "n", 177958 },	-- Firim
+				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
 			}),
 			q(65255, {	-- Forcing the Cycle
 				["sourceQuests"] = { 65305 },	-- The Way Forward (Chap 3)
@@ -677,7 +813,18 @@ root("Zones", m(SHADOWLANDS, {
 				["provider"] = { "n", 180289 },	-- Mai Soh
 				["coord"] = { 58.3, 50, ZERETH_MORTIS },
 			}),
+			q(64717, {	-- Materials of Creation
+				--["sourceQuests"] = { 65305 },	-- The Way Forward (Chap 3)
+				["provider"] = { "n", 177958 },	-- Firim
+				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
+			}),
 			q(65325, {	-- Motes of Knowledge
+				["description"] = "This Daily is available after researching Altonian Understanding",
+				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
+				["provider"] = { "n", 180289 },	-- Mai Soh
+				["coord"] = { 58.3, 50, ZERETH_MORTIS },
+			}),
+			q(65362, {	-- Not of the Body
 				["description"] = "This Daily is available after researching Altonian Understanding",
 				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
 				["provider"] = { "n", 180289 },	-- Mai Soh
@@ -705,6 +852,16 @@ root("Zones", m(SHADOWLANDS, {
 				["provider"] = { "n", 184434 },	-- Mai Ber
 				["coord"] = { 58.4, 49.7, ZERETH_MORTIS },
 			}),
+			q(64854, {	-- Trappings of Success
+				--["sourceQuests"] = { 65305 },	-- The Way Forward (Chap 3)
+				["provider"] = { "n", 177958 },	-- Firim
+				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
+			}),
+			q(65096, {	-- Your Death Or Mine
+				["sourceQuests"] = { 65305 },	-- The Way Forward (Chap 3)
+				["provider"] = { "n", 180630 },	-- Elder Amir
+				["coord"] = { 61.4, 51.5, ZERETH_MORTIS },
+			}),
 		})),
 	}),
 }));
@@ -712,8 +869,9 @@ root("Zones", m(SHADOWLANDS, {
 root("HiddenQuestTrigger", {
 	q(63850),	-- Triggered when enter ZM (Might be WQ). Triggered again today while running around in ZM
 	q(63766),	-- Triggered when Exploring (Might have to do with The Matriarch(183505))
-	--q(63850),	-- Triggered when HS to ZM
-	--q(65621),	-- Triggered when HS to ZM
+	q(65621),	-- Triggered when HS to ZM
+	--q(64880),	-- Triggered in Oribos?
+	--q(65144),	-- Firims Cave?
 	-- Gravid Repose
 	q(65330),	-- Interior Locus Arrangement at Gravid Repose
 	q(65337),	-- First Locus arrangement at Gravid Repose
@@ -727,4 +885,9 @@ root("HiddenQuestTrigger", {
 	q(65233),	-- RP after Jiro to Hero(65219)
 	q(65571),	-- RP after Chap 5 with Taelia
 	--q(65028),	-- RP during q(64875, {	-- Something Wonderful??
+
+	-- Jiro Buffs?
+	--q(65167),	-- Echoed Jiro Nascii(183263) with spellID(362023) Same HQTs from different Jiros (42.7 44.8)
+	--q(65166),	-- Echoed Jiro Genesii(184943) with SpellID(362022 ) 45.4 38.8
+	--q(65144),	-- Echoed Jiro Creatii(184939) with SpellID(361831)  54.5 55.8
 });

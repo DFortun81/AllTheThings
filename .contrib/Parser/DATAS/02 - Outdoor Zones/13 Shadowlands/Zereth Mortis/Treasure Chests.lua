@@ -19,14 +19,24 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 38.2, 37.2, ZERETH_MORTIS },
 				["questID"] = 64667,
 			}),
+			o(375413, {	-- Drowned Broker Supplies
+				["description"] = "Need to have completed Dealic Understanding. At 34.5, 70.5 there is a Coreless Aurelid(185282), use Popopoc to on it to get the chest.",
+				["coord"] = { 34.8, 69.9, ZERETH_MORTIS },
+				["questID"] = 65523,
+			}),
 			o(375376,{	-- Fallen Vault
 				["coord"] = { 51.6, 9.9, ZERETH_MORTIS },
-				--["questID"] = ??
+				["questID"] = 65487,
 			}),
 			o(375405, {	-- Filched Artifact
 				["description"] = "Jumping Puzzle on the spheres",
 				["coord"] = { 49.8, 87.3, ZERETH_MORTIS },
 				["questID"] = 65503,
+			}),
+			o(373561, {	-- Forgotten Proto-Vault
+				["description"] = "You can reach this chest only during the WQ Frog'it(65089)",
+				["coord"] = { 67.0, 69.4, ZERETH_MORTIS },
+				["questID"] = 65178,
 			}),
 			o(375492, {	-- Fractal Sealed Vault
 				["description"] = "Inside a cave",
@@ -88,12 +98,15 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 34.8, 56.1, ZERETH_MORTIS },
 				["questID"] = 65537,
 			}),
-			--o(, {	-- Sandworn Chest
-			--	["description"] = "Key fragements drops in the area from mobs Sandworn Chest Key Fragment(190198)"
-			--	["coord"] = { 60.9, 37.9, ZERETH_MORTIS },
-			--	["questID"] = ,
-			--	["cost"] = { { "i", KEY}}??
-			--}),
+			o(375404, {	-- Sandworn Chest
+				["description"] = "Key fragements drops in the area from mobs Sandworn Chest Key Fragment(190198)",
+				["coord"] = { 64.8, 33.7, ZERETH_MORTIS },
+				["questID"] = 65611,
+				["cost"] = { { "i", 190197, 1 } },	-- Sandworn Chest Key
+				["g"] = {
+					i(190189),	-- Sandworn Relic
+				},
+			}),
 			o(375281, {	-- Stolen Relic
 				["coord"] = { 37.9, 65.2, ZERETH_MORTIS },
 				["questID"] = 65447,
@@ -111,6 +124,30 @@ root("Zones", m(SHADOWLANDS, {
 			o(373548, {	-- Template Archive
 				["description"] = "Found inside of Nexus of Actualization. Push Orb in the room before",
 				["questID"] = 65175,
+			}),
+			o(375495, {	-- Undulating Foliage
+				["description"] = "There is four runes that needs to be activated to activate the teleporter.\n",
+				["coord"] = { 52, 80, ZERETH_MORTIS },
+				["questID"] = 65572,
+				["g"] = {
+					n(185390, { -- Teleporter Lock
+						["coord"] = { 51, 82.1, ZERETH_MORTIS },
+						["questID"] = 65589,
+					}),
+					n(185391, { -- Teleporter Lock
+						["coord"] = { 52.5, 83.4, ZERETH_MORTIS },
+						["questID"] = 65590,
+					}),
+					n(185392, { -- Teleporter Lock
+						["coord"] = { 53.2, 80.9, ZERETH_MORTIS },
+						["questID"] = 65591,
+					}),
+					n(185393, { -- Teleporter Lock
+						["description"] = "This lock is outside of the Wards, next to the console that opens the door.",
+						["coord"] = { 50, 76.2, ZERETH_MORTIS },
+						["questID"] = 65592,
+					}),
+				},
 			}),
 			-- Repeatable chests??
 			o(375362, {	-- Avian Chest
@@ -130,12 +167,15 @@ root("Zones", m(SHADOWLANDS, {
 					{ 40.1, 69.4, ZERETH_MORTIS },
 					{ 50.6, 93, ZERETH_MORTIS },
 					{ 62.1, 74.9, ZERETH_MORTIS },
+					{ 49.7, 75.9, ZERETH_MORTIS },
+					{ 53.9, 88.6, ZERETH_MORTIS },
 				},
 			}),
 			o(375530, {	-- Forgotten Treasure Vault
 				["coords"] = {
 					{ 80.5, 45.6, ZERETH_MORTIS },
 					{ 55.7, 52.5, ZERETH_MORTIS },
+					{ 46.4, 95.8, ZERETH_MORTIS },
 				},
 			}),
 			o(375363, {	-- Mawsworn Supply Chest (Open two times same position within 15min)
@@ -149,6 +189,7 @@ root("Zones", m(SHADOWLANDS, {
 					{ 66.6, 32.1, ZERETH_MORTIS },
 					{ 46.1, 24.1, ZERETH_MORTIS },
 					{ 63.3, 21, ZERETH_MORTIS },
+					{ 46.4, 5.1, ZERETH_MORTIS },
 				},
 			}),
 			o(375366, {	-- Tarachnid Eggs
@@ -191,6 +232,10 @@ root("Zones", m(SHADOWLANDS, {
 					{ 59.6, 32.4, ZERETH_MORTIS },
 					{ 36.2, 38.4, ZERETH_MORTIS },
 					{ 43.6, 86.7, ZERETH_MORTIS },
+					{ 34.6, 68.8, ZERETH_MORTIS },
+					{ 59.4, 24.9, ZERETH_MORTIS },
+					{ 74.5, 60.6, ZERETH_MORTIS },
+					{ 54, 72.6, ZERETH_MORTIS },
 				},
 			})
 
@@ -198,23 +243,38 @@ root("Zones", m(SHADOWLANDS, {
 	}),
 }));
 root("HiddenQuestTriggers", {
-	--q(65487),	-- Triggered when I died (Probably related to chest I opened before Fallen Vault)
-	--q(65376),	-- Triggered when I died (Probably related to chest I opened before Fallen Vault)
-	--q(65377),	-- Triggered when I died (Probably related to chest I opened before Fallen Vault)
-	--q(65464),	-- Triggered when I died (Probably related to chest I opened before Fallen Vault)
+	-- Entering Cosmic Area first time
+	--q(65376),
+	--q(65377),
+	--q(65464),
+	-- End
 	-- Puzzle Chests AlexSoft = AS, Cantaric = Berlekamp's Switch Game, Mezzonic = Lights Out, Fugueal = 4 Properties Game, Glissandian = Bejeweled Puzzle, Toccatian = Crossed Lines
-	--q(65322),	-- Triggered when I completed the puzzle, Fugueal At 38.5 35.5 / AS:42.3 68.8??
-	--q(65316),	-- Triggered when I completed the puzzle, Mezzonic At 38.5 35.5 / AS:56.0 84.1??
-	--q(65318),	-- Triggered when I completed the puzzle, Cantaric at 48.7, 87.5 / AS:48.6 87.5 Ok.
-	--q(65323),	-- Triggered when I completed the puzzle, --- at 44.7, 76.1
-	--q(65091),	-- Triggered when I completed the puzzle, Mezzonic At 39.3 60.4 / AS:39.3 60.4 (Unsure of Name) Ok.
-	--q(65093),	-- Triggered when I completed the puzzle, Fugueal At 57.5 65.8 / AS: 57.5 65.8
-	--q(65321),	-- Triggered when I completed the puzzle, Glissandian At 40, 72.9 / AS:40.0 72.9
-	--q(65092),	-- Triggered when I completed the puzzle, Glissandian At 58.9, 36.4 / AS:58.9 36.4 // AS:41.8 31.3
-	--q(65319),	-- Triggered when I completed the puzzle, Toccatian At 67.8, 27.4 / AS:67.9 27.3
+	--q(65322),	-- Triggered when completed the puzzle, Fugueal At 38.5 35.5 / AS:42.3 68.8??
+	--q(65316),	-- Triggered when completed the puzzle, Mezzonic At 38.5 35.5 / AS:56.0 84.1?? AS now says follow Glissandian at 56.0 84.2
+	--q(65318),	-- Triggered when completed the puzzle, Cantaric at 48.7, 87.5 / AS:48.6 87.5 // AS2:55.0 48.0 // AS3:56.0 79.6
+	--q(65323),	-- Triggered when completed the puzzle, --- at 44.7, 76.1
+	--q(65091),	-- Triggered when completed the puzzle, Mezzonic At 39.3 60.4 / AS:39.3 60.4 // AS2:39.4 60.4
+	--q(65093),	-- Triggered when completed the puzzle, Fugueal At M1:57.5 65.8 // M2:63.1, 37.4 / AS: 57.5 65.8 // AS2:63.1 37.4 // AS3:47.1 77.2
+	--q(65321),	-- Triggered when completed the puzzle, Glissandian At 40, 72.9 / AS:40.0 72.9 // AS2:33.8 54.3 // AS3:44.7 50.5
+	--q(65092),	-- Triggered when completed the puzzle, Glissandian At 58.9, 36.4 / AS:58.9 36.4 // AS2:41.8 31.3
+	--q(65319),	-- Triggered when completed the puzzle, Toccatian At 67.8, 27.4 / AS:67.9 27.3 // AS2:65.6 47.6 // AS3:64.3 63.3
+	--q(65320),	-- Triggered when completed the puzzle, Mezzonic At / AS:38.5 35.5
+	--q(65094),	-- Triggered when completed the puzzle, Cantaric At 38.5, 63.2 / AS:38.5 63.7
+	--q(65315),	-- Triggered when completed the puzzle, Mezzonic At 64.7, 52.8 / AS:64.7 52.8
 	-- Concordances
+	-- Requires Aealic Understanding
 	q(65215),	-- Tranquil Concordance at 60.2 47.1
 	q(65209),	-- Tranquil Concordance at 49.3 71.6
 	q(65212),	-- Tranquil Concordance at 38.9 48.5
 	q(64940),	-- Tranquil Concordance at 32.2 62.9
+	-- Requires Dealic Understanding
+	q(65216),	-- Excitable Concordance at 50.4, 51 (OID:373587)
+	q(65213),	-- Excitable Concordance at 39.0 31.3 (OID:373584)
+	q(65179),	-- Excitable Concordance at 31.7, 54.6 (OID:373562)
+	q(65210),	-- Excitable Concordance at 64.6, 60.4 (OID:373581)
+	-- Requires Trebalim Understanding
+	--q(),	-- Mercurial Concordance at 39.8, 25.7 (OID:373585)
+	--q(),	-- Mercurial Concordance at 64.3 24.0 (OID:373588)
+	--q(),	-- Mercurial Concordance at 51.6 91.3 (OID:373582)
+	--q(),	-- Mercurial Concordance at 35.0 71.5 (OID:373563)
 });

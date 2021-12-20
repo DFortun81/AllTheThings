@@ -24,6 +24,9 @@ root("Zones", m(SHADOWLANDS, {
 					q(65117, {	-- Bad Samples
 						["coord"] = { 44.1, 30.8, ZERETH_MORTIS },
 					}),
+					q(65230, {	-- Bot-Any
+						["coord"] = { 47.4, 80.3, ZERETH_MORTIS },
+					}),
 					q(65244, {	-- Devourable
 						["coord"] = { 42.1, 71, ZERETH_MORTIS },
 					}),
@@ -39,7 +42,7 @@ root("Zones", m(SHADOWLANDS, {
 					q(65231, {	-- Plundered Knowledge
 						["coord"] = { 67.2, 39.1, ZERETH_MORTIS },
 					}),
-					q(65415, {	-- Researching The Solution
+					q(65115, {	-- Researching The Solution
 						["coord"] = { 44.6, 30.9, ZERETH_MORTIS },
 					}),
 					q(65262, {	-- Save the Vombata
@@ -52,8 +55,14 @@ root("Zones", m(SHADOWLANDS, {
 					q(65406, {	-- Connecting It All
 						["coord"] = { 65.7, 41, ZERETH_MORTIS },
 					}),
+					q(65417, {	-- Connecting It All (Same Name)
+						["coord"] = { 55, 48, ZERETH_MORTIS },
+					}),
 					q(65408, {	-- Pattern Recognition
 						["coord"] = { 53.2, 86.8, ZERETH_MORTIS },
+					}),
+					q(65402, {	-- Pattern Recognition
+						["coord"] = { 32, 52.6, ZERETH_MORTIS },
 					}),
 					q(65414, {	-- Perplexing Problem
 						["coord"] = { 63.1, 36.5, ZERETH_MORTIS },
@@ -66,6 +75,9 @@ root("Zones", m(SHADOWLANDS, {
 					}),
 					q(65410, {	-- Puzzling Situation
 						["coord"] = { 55.7, 50, ZERETH_MORTIS },
+					}),
+					q(65403, {	-- Puzzling Situation
+						["coord"] = { 38.4, 70.4, ZERETH_MORTIS },
 					}),
 				})),
 			},

@@ -1069,7 +1069,13 @@ _.Zones =
 				q(64958, {	-- The Forces Gather (Gives First Ach Crit when Completed)
 					["sourceQuests"] = { 64957 },	-- The Old Waystone
 					["provider"] = { "n", 184698 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 49.5, 37.5, ORIBOS },	-- (Downstairs)
+					["coord"] = { 49.5, 37.5, ORIBOS },	-- (Up Stairs)
+				}),
+				-- Chap 7
+				q(65239, {	-- Safe Haven
+					["sourceQuests"] = { 65238 },	-- Souls Entwined
+					["provider"] = { "n", 184584 },	-- Kleia
+					["coord"] = { 59.9, 56.1, ORIBOS },
 				}),
 			}),
 		}),
