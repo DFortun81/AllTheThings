@@ -463,10 +463,9 @@ end
 -- Returns an object which contains no data, but can return values from an overrides table, and be loaded/created when a specific field is attempted to be referenced
 -- i.e. Create a data group which contains no information but will attempt to populate itself when [loadField] is referenced
 app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
-	local dlo, o;
+	local o;
 	local params = {...};
-	local loader;
-	loader = {
+	local loader = {
 		__index = function(t, key)
 			-- load the object if it matches the load field and not yet loaded
 			if not o and key == loadField then
@@ -487,9 +486,15 @@ app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
 				return o[key];
 			end
 		end,
+		-- transfer field sets to the underlying object
+		__newindex = function(t, key, val)
+			if o then
+				o[key] = val;
+			end
+		end,
 	};
 	-- data is just an empty table with a loader metatable
-	dlo = setmetatable({}, loader);
+	local dlo = setmetatable({}, loader);
 	return dlo;
 end
 app.SetDataMember = SetDataMember;
@@ -5550,9 +5555,26 @@ end
 -- Returns an Object based on a QuestID a lot of Quest information for displaying in a row
 local function GetPopulatedQuestObject(questID)
 	local cachedVersion = app.SearchForObject("questID", questID);
+	-- questID not sourced specifically as a questID, potentially only as an altQuest on another object...
+	if not cachedVersion then
+		local allCached = app.SearchForField("questID", questID);
+		if allCached then
+			for _,o in ipairs(allCached) do
+				if o.altQuests then
+					if contains(o.altQuests, questID) then
+						-- print("Found group for questID via altQuests",questID,"=>",o.hash)
+						cachedVersion = o;
+						break;
+					end
+				end
+			end
+		end
+	end
 	-- either want to duplicate the existing data for this quest, or create new data for a missing quest
 	local data = cachedVersion or { questID = questID, _missing = true };
 	local questObject = CreateObject(data, true);
+	-- if this quest exists but is Sourced under a _missing group, then it is technically missing itself
+	questObject._missing = GetRelativeValue(data, "_missing");
 	PopulateQuestObject(questObject);
 	return questObject;
 end
@@ -15999,6 +16021,8 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.text = L["UNSORTED_1"];
 			db.description = L["UNSORTED_DESC_2"];
+			-- since unsorted is technically auto-populated, anything nested under it is considered 'missing' in ATT
+			db._missing = true;
 			tinsert(g, db);
 			app.ToggleCacheMaps(true);
 			CacheFields(db);
@@ -17371,7 +17395,7 @@ customWindowUpdates["ItemFinder"] = function(self, ...)
 					end
 				end
 			end;
-			-- add a bunch of raw, delay-loaded quests in order into the window
+			-- add a bunch of raw, delay-loaded items in order into the window
 			local groupCount = self.Limit / self.PartitionSize - 1;
 			local g, overrides = {}, {visible=true};
 			local partition, partitionStart, partitionGroups;
@@ -18576,16 +18600,8 @@ customWindowUpdates["quests"] = function(self, force, got)
 		-- add a bunch of raw, delay-loaded quests in order into the window
 		local groupCount = self.Limit / self.PartitionSize - 1;
 		local g, overrides = {}, {
-			visible = onlyMissing and function(o, key)
-				return o._missing;
-			end or true,
-			doUpdate = onlyMissing and function(o, key)
-				-- trigger a repeat update to the holding window after the DLO is loaded into the window and is not missing in DB
-				if not o._missing then
-					-- print("doUpdate override",o.hash)
-					return true;
-				end
-			end,
+			visible = true,
+			indent = 2,
 			back = function(o, key)
 				return o._missing and 1 or 0;
 			end,
@@ -18595,6 +18611,18 @@ customWindowUpdates["quests"] = function(self, force, got)
 				end
 			end,
 		};
+		if onlyMissing then
+			overrides.visible = function(o, key)
+				return o._missing;
+			end;
+			overrides.doUpdate = function(o, key)
+				-- trigger a repeat update to the holding window after the DLO is loaded into the window and is not missing in DB
+				if not o._missing then
+					-- print("doUpdate override",o.hash)
+					return true;
+				end
+			end;
+		end
 		local partition, partitionStart, partitionGroups;
 		local dlo = app.DelayLoadedObject;
 		for j=0,groupCount,1 do
