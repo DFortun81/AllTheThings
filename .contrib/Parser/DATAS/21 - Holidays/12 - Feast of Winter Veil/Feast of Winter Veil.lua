@@ -1207,7 +1207,6 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			q(8860, {	-- New Year Celebrations!
 				["qg"] = 15732,	-- Wonderform Operator <Smokywood Pastures>
 				["description"] = "This quest is only available on December 31. Quest can be obtained from Wonderform Operator in any major city.",
-				["isYearly"] = true,
 				["maps"] = {
 					-- #if AFTER WRATH
 					NORTHREND_DALARAN,
@@ -1234,7 +1233,6 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			q(8861, {	-- New Year Celebrations!
 				["qg"] = 15732,	-- Wonderform Operator <Smokywood Pastures>
 				["description"] = "This quest is only available on December 31. Quest can be obtained from Wonderform Operator in any major city.",
-				["isYearly"] = true,
 				["maps"] = {
 					-- #if AFTER WRATH
 					NORTHREND_DALARAN,
