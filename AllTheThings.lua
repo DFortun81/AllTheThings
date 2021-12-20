@@ -4073,6 +4073,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		-- Replace as the group
 		group = root;
 		-- Ensure no weird parent references attached to the base search result
+		group.sourceParent = nil;
 		group.parent = nil;
 
 		-- print(group.g and #group.g,"Merge total");
