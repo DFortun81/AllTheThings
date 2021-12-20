@@ -2027,17 +2027,29 @@ namespace ATT
                         return "altQuestID";
                     }
 
-                case "altSpeciesID":
-                    {
-                        return "altSpeciesID";
-                    }
-
                 case "questID":
                 case "aQuestID":
                 case "allyQuestID":
                 case "allianceQuestID":
                     {
                         return "questID";
+                    }
+
+                case "aqd":
+                case "allianceQuestData":
+                    {
+                        return "aqd";
+                    }
+
+                case "hqd":
+                case "hordeQuestData":
+                    {
+                        return "hqd";
+                    }
+
+                case "altSpeciesID":
+                    {
+                        return "altSpeciesID";
                     }
 
                 case "altAchID":

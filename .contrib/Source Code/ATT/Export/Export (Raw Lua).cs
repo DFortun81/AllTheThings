@@ -88,9 +88,12 @@ namespace ATT
             {
                 // Write the shortcut for the object type.
                 objectType.WriteShortcut(builder, objectType.ConstructorShortcut, objectType.Function);
-                ExportRawLua(builder, data2[objectType.ObjectType]);
-                data2.Remove(objectType.ObjectType);
-                builder.Append(", ");
+                if (objectType.ShouldWriteObjectType)
+                {
+                    ExportRawLua(builder, data2[objectType.ObjectType]);
+                    data2.Remove(objectType.ObjectType);
+                    builder.Append(", ");
+                }
             }
 
             // Open Bracket for beginning of the Dictionary.

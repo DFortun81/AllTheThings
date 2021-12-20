@@ -282,6 +282,20 @@ namespace ATT
             return false;
         }
 
+        // https://stackoverflow.com/questions/1749966/c-sharp-how-to-determine-whether-a-type-is-a-number
+        private static readonly HashSet<Type> NumericTypes = new HashSet<Type>
+        {
+            typeof(int),  typeof(double),  typeof(decimal),
+            typeof(long), typeof(short),   typeof(sbyte),
+            typeof(byte), typeof(ulong),   typeof(ushort),
+            typeof(uint), typeof(float)
+        };
+
+        public static bool IsNumeric(this Type myType)
+        {
+            return NumericTypes.Contains(Nullable.GetUnderlyingType(myType) ?? myType);
+        }
+
         /// <summary>
         /// Returns whether the sequence matches the content of another sequence regardless of ordering<para/>
         /// NOTE: Not well-optimized for long sequences

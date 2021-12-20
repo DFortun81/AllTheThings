@@ -91,13 +91,13 @@ namespace ATT
             fields.Sort();
 
             // If this is a constructed object type, then we need to write a parenthesis afterward.
-            var constructed = ExportShortcut(builder, data, fields);
+            var constructed = ExportShortcut(builder, data, fields, out ObjectData objectType);
 
             // If there are still fields to write, then do so.
             if (fields.Count > 0)
             {
                 // Write a comma for the start of the data dictionary contents.
-                builder.Append(',');
+                if (objectType.ShouldWriteObjectType) builder.Append(',');
 
                 // We don't need to write the "g" tag if that's the only field.
                 if (fields.Count == 1 && fields[0] == "g")

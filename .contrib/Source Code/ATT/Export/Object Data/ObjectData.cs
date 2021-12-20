@@ -94,7 +94,7 @@ namespace ATT
                 {
                     if (data.TryGetValue(objectType.ObjectType, out object objRef))
                     {
-                        if (Convert.ToInt64(objRef) == 0) defaultValue = objectType;
+                        if (objRef.GetType().IsNumeric() && Convert.ToInt64(objRef) == 0) defaultValue = objectType;
                         else
                         {
                             objectData = objectType;
@@ -127,6 +127,11 @@ namespace ATT
             /// The object type.
             /// </summary>
             public string ObjectType { get; private set; }
+
+            /// <summary>
+            /// Whether or not to allow the parser to explicitly write the object type.
+            /// </summary>
+            public virtual bool ShouldWriteObjectType { get { return true; } }
             #endregion
             #region Functionality
             /// <summary>

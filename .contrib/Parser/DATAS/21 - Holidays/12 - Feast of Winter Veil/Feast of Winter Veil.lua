@@ -1478,23 +1478,37 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["isBreadcrumb"] = true,
 				["isYearly"] = true,
 			}),
-			q(7043,{	-- You're a Mean One... [A]
+			{	-- You're a Mean One...
+				["allianceQuestData"] = q(7043, {	-- You're a Mean One... [A]
+					["sourceQuest"] = 7042,	-- Stolen Winter Veil Treats (Alliance)
+					-- #if AFTER CATA
+					["qgs"] = {
+						13433,	-- Wulmort Jinglepocket (Alliance)
+						13636,	-- Strange Snowman
+					},
+					["coords"] = {
+						{ 33.2, 67.8, IRONFORGE },	-- Wulmort Jinglepocket (Alliance)
+						{ 42.4, 41, HILLSBRAD_FOOTHILLS },	-- Strange Snowman
+					},
+					-- #endif
+				}),
+				["hordeQuestData"] = q(6983, {	-- You're a Mean One... [H]
+					["sourceQuest"] = 6963,	-- Stolen Winter Veil Treats (Horde)
+					-- #if AFTER CATA
+					["qgs"] = {
+						13418,	-- Kaymard Copperpinch (Horde)
+						13636,	-- Strange Snowman
+					},
+					["coords"] = {
+						{ 52.4, 77, ORGRIMMAR },	-- Kaymard Copperpinch (Horde)
+						{ 42.4, 41, HILLSBRAD_FOOTHILLS },	-- Strange Snowman
+					},
+					-- #endif
+				}),
 				-- #if AFTER CATA
-				["qgs"] = {
-					13433,	-- Wulmort Jinglepocket (Alliance)
-					13636,	-- Strange Snowman
-				},
-				-- #else
-				["qg"] = 13636,	-- Strange Snowman
-				-- #endif
-				["sourceQuest"] = 7042,	-- Stolen Winter Veil Treats (Alliance)
-				-- #if AFTER CATA
-				["coords"] = {
-					{ 33.2, 67.8, IRONFORGE },	-- Wulmort Jinglepocket (Alliance)
-					{ 42.4, 41, HILLSBRAD_FOOTHILLS },	-- Strange Snowman
-				},
 				["isDaily"] = true,
 				-- #else
+				["qg"] = 13636,	-- Strange Snowman
 				["coord"] = { 35.4, 72.6, ALTERAC_MOUNTAINS },
 				["isYearly"] = true,
 				-- #endif
@@ -1527,57 +1541,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 						["sym"] = {{"fill"}},	-- fill with cached content
 					}),
 				},
-			}),
-			q(6983, {	-- You're a Mean One... [H]
-				-- #if AFTER CATA
-				["qgs"] = {
-					13418,	-- Kaymard Copperpinch (Horde)
-					13636,	-- Strange Snowman
-				},
-				-- #else
-				["qg"] = 13636,	-- Strange Snowman
-				-- #endif
-				["sourceQuest"] = 6963,	-- Stolen Winter Veil Treats (Horde)
-				-- #if AFTER CATA
-				["coords"] = {
-					{ 52.4, 77, ORGRIMMAR },	-- Kaymard Copperpinch (Horde)
-					{ 42.4, 41, HILLSBRAD_FOOTHILLS },	-- Strange Snowman
-				},
-				["isDaily"] = true,
-				-- #else
-				["coord"] = { 35.4, 72.6, ALTERAC_MOUNTAINS },
-				["isYearly"] = true,
-				-- #endif
-				["lvl"] = 30,
-				["groups"] = {
-					objective(1, {	-- 0/1 Stolen Treats
-						["provider"] = { "i", 17662 },	-- Stolen Treats
-						["cr"] = 13602,	-- The Abominable Greench
-					}),
-					i(149503, {	-- Stolen Gift
-						["description"] = "This gift is granted to any player below max level. This gift doesn't drop any of the rare seasonal items; it's currently not worth it.",
-						["timeline"] = { "added 7.2.5.23910" },
-						-- #if AFTER SHADOWLANDS
-						["lvl"] = { 30, 59 },
-						-- #elseif AFTER BFA
-						["lvl"] = { 30, 109 },
-						-- #else
-						["lvl"] = { 30, 100 },
-						-- #endif
-						["groups"] = HOLIDAY_NON_COLLECTIBLE_GROUPS,
-					}),
-					i(93626, {	-- Stolen Present
-						["timeline"] = { "added 5.1.0.16309", "removed 6.0.1.18594" },
-					}),
-					i(73792, {	-- Stolen Present
-						["timeline"] = { "added 4.3.0.15005", "removed 5.1.0.16309" },
-					}),
-					i(116762, {	-- Stolen Present
-						["timeline"] = { "added 6.0.1.18594" },
-						["sym"] = {{"fill"}},	-- fill with cached content
-					}),
-				},
-			}),
+			},
 		}),
 		n(REWARDS, {
 			i(174865, {	-- A Tiny Winter Hat (Pepe)

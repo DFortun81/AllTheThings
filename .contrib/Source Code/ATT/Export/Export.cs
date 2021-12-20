@@ -16,6 +16,7 @@ namespace ATT
         static Export()
         {
             // Initialize all of the Object Types in order of Export Priority.
+            ObjectData.Create<FactionQuestData>("aqd", "aqd",       "_.CreateQuestWithFactionData");
             ObjectData.Create("buildingID",         "gb",           "_.CreateGarrisonBuilding", "f", "spellID");
             ObjectData.Create<ToyData>("isToy",     "toy",          "_.CreateToy", "f", "spellID", "modID");
             ObjectData.Create<ToyData>("toyID",     "toy",          "_.CreateToy", "f", "spellID", "modID");

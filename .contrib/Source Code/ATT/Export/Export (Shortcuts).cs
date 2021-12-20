@@ -30,11 +30,12 @@ namespace ATT
         /// <param name="builder">The builder.</param>
         /// <param name="data">The data dictionary.</param>
         /// <param name="fields">The list of remaining fields to write.</param>
+        /// <param name="objectData">The object data container.</param>
         /// <returns>Whether or not the shortcut was found.</returns>
-        private static bool ExportShortcut(StringBuilder builder, Dictionary<string, object> data, List<string> fields)
+        private static bool ExportShortcut(StringBuilder builder, Dictionary<string, object> data, List<string> fields, out ObjectData objectType)
         {
             // Write the shortcut with the highest priority
-            if (ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectType))
+            if (ObjectData.TryGetMostSignificantObjectType(data, out objectType))
             {
                 // Write the shortcut for the object type.
                 objectType.Build(builder, data, fields);

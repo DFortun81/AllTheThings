@@ -9,6 +9,17 @@ local L = app.L;
 local auctionFrame = CreateFrame("Frame");
 local window;
 
+-- Assign the FactionID.
+app.Faction = UnitFactionGroup("player");
+if app.Faction == "Horde" then
+	app.FactionID = Enum.FlightPathFaction.Horde;
+elseif app.Faction == "Alliance" then
+	app.FactionID = Enum.FlightPathFaction.Alliance;
+else
+	-- Neutral Pandaren or... something else. Scourge? Neat.
+	app.FactionID = 0;
+end
+
 -- Performance Cache
 -- While this may seem silly, caching references to commonly used APIs is actually a performance gain...
 local C_ArtifactUI_GetAppearanceInfoByID = C_ArtifactUI.GetAppearanceInfoByID;
@@ -11185,6 +11196,11 @@ app.CreateQuest = function(id, t)
 	end
 	return setmetatable(constructor(id, t, "questID"), app.BaseQuest);
 end
+app.CreateQuestWithFactionData = function(t)
+	local questData = app.FactionID == Enum.FlightPathFaction.Horde and t.hqd or t.aqd;
+	for key,value in pairs(questData) do t[key] = value; end
+	return setmetatable(t, app.BaseQuest);
+end
 -- Causes a group to remain visible if it is replayable, regardless of collection status
 app.ShowIfReplayableQuest = function(data)
 	data.visible = C_QuestLog_IsQuestReplayable(data.questID) or app.CollectedItemVisibilityFilter(data);
@@ -20879,15 +20895,6 @@ app.events.VARIABLES_LOADED = function()
 	app.GUID = UnitGUID("player");
 	app.Me = "|c" .. RAID_CLASS_COLORS[class].colorStr .. name .. "-" .. (realm or GetRealmName()) .. "|r";
 	app.ClassName = "|c" .. RAID_CLASS_COLORS[class].colorStr .. className .. "|r";
-	app.Faction = UnitFactionGroup("player");
-	if app.Faction == "Horde" then
-		app.FactionID = Enum.FlightPathFaction.Horde;
-	elseif app.Faction == "Alliance" then
-		app.FactionID = Enum.FlightPathFaction.Alliance;
-	else
-		-- Neutral Pandaren or... something else. Scourge? Neat.
-		app.FactionID = 0;
-	end
 
 	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(L["TITLE"], {
 		type = "launcher",
