@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root("Zones", {
 	m(ZANDALAR, {
 		m(NAZMIR, {
 			n(RARES, {
@@ -32,8 +31,7 @@ _.Zones =
 					},
 				}),
 				n(134293, {	-- Azerite-Infused Slag
-					["allianceQuestID"] = 50563,	-- Azerite-Infused Slag [Alliance]
-					["hordeQuestID"] = 49305,		-- Azerite-Infused Slag [Horde]
+					["questID"] = 50563,
 					["coord"] = { 32.98, 26.80, NAZMIR },
 					["g"] = {
 						crit(3, {	-- Azerite-Infused Slag
@@ -378,4 +376,4 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});

@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root("Zones", {
 	m(KULTIRAS, {
 		m(MECHAGON, {
 			n(RARES, {
@@ -806,8 +805,6 @@ _.Zones =
 				}),
 				n(155583, {	-- Scrapclaw
 					["questID"] = 56737,
-					--["allianceQuestID"] = 55907,
-					--["hordeQuestID"] = 56307,
 					["coord"] = { 82.3, 77.8, MECHAGON },
 					["isDaily"] = true,
 					["g"] = {
@@ -947,4 +944,15 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});
+
+root("HiddenQuestTriggers", {
+	m(KULTIRAS, {
+		m(MECHAGON, {
+			n(RARES, {
+				q(55907),	-- killing scrapclaw on Alliance?
+				q(56307),	-- killing scrapclaw on Horde?
+			}),
+		}),
+	}),
+});

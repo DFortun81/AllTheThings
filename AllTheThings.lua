@@ -2083,6 +2083,14 @@ end});
 local IsQuestFlaggedCompleted = function(questID)
 	return questID and CompletedQuests[questID];
 end
+-- Returns true if any provided questID is currently completed for the current character
+local IsAnyQuestFlaggedCompleted = function(quests)
+	if quests then
+		for _,questID in pairs(quests) do
+			if CompletedQuests[questID] then return 1; end
+		end
+	end
+end
 local IsQuestFlaggedCompletedForObject = function(t)
 	-- nil if not a quest-based object
 	if not t.questID then return; end
@@ -10252,7 +10260,7 @@ local npcFields = {
 		return IsQuestFlaggedCompletedForObject(t);
 	end,
 	["savedAsQuest"] = function(t)
-		return IsQuestFlaggedCompleted(t.questID);
+		return IsQuestFlaggedCompleted(t.questID) or IsAnyQuestFlaggedCompleted(t.altQuests);
 	end,
 	["trackableAsQuest"] = app.ReturnTrue,
 	["repeatableAsQuest"] = function(t)
@@ -14422,12 +14430,11 @@ RowOnEnter = function (self)
 			if app.Settings:GetTooltipSetting("questID") then
 				GameTooltip:AddDoubleLine(L["QUEST_ID"], tostring(reference.questID));
 				if reference.altQuests and #reference.altQuests > 0 then
-					local altQuests="";
-					for i,questID in ipairs(reference.altQuests) do
-						if (i > 1) then altQuests = altQuests .. ","; end
-						altQuests = altQuests .. tostring(questID) .. GetCompletionIcon(IsQuestFlaggedCompleted(questID));
+					local altQuestInfo = {};
+					for _,questID in ipairs(reference.altQuests) do
+						tinsert(altQuestInfo, tostring(questID)..GetCompletionIcon(IsQuestFlaggedCompleted(questID)));
 					end
-					GameTooltip:AddDoubleLine(" ", "[" .. altQuests .. "]");
+					GameTooltip:AddDoubleLine(" ", "[" .. app.TableConcat(altQuestInfo, nil, nil, ",") .. "]");
 				end
 			end
 			if ATTAccountWideData.OneTimeQuests[reference.questID] then
