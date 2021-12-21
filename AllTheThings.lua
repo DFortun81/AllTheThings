@@ -4276,10 +4276,16 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							left = left .. " > " .. critAch.text;
 						end
 					end
+					if paramA == "itemID" and group.collectible then
+						app.BuildCrafted_ReagentCount = app.BuildCrafted_ReagentCount + app.ItemCanBeCraftedWithReagentCount(group.itemID, paramB);
+					end
 					tinsert(info, { left = item.prefix .. left, right = right });
 				end
 				if #entries - containCount > 0 then
 					tinsert(info, { left = L["AND_"] .. (#entries - containCount) .. L["_MORE"] .. "..." });
+				end
+				if app.BuildCrafted_ReagentCount > 0 then
+					tinsert(info, { left = L["ITEMS_NEEDED_TO_CRAFT"] .. app.BuildCrafted_ReagentCount })
 				end
 			end
 		end
@@ -4337,7 +4343,37 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	end
 	return group;
 end
+app.ItemCanBeCraftedWithReagentCount = function(targetItemID, reagentItemID, craftModifier, checkedRecipes)
+	craftModifier = craftModifier or 1;
+	checkedRecipes = checkedRecipes or {};
+	local reagentCache = app.GetDataSubMember("Reagents", reagentItemID);
+	
+	-- If reagentItemID is used in crafts
+	if reagentCache then
+		-- find what recipes that use reagentItemID can lead to targetItemID
+		for recipeID,info in pairs(reagentCache[1]) do
+			if not checkedRecipes[recipeID] then
+				local craftedItemID = info[1];
+				local reagentCount = info[2];
+				
+				if targetItemID == craftedItemID then
+					return craftModifier * reagentCount;
+				end
+				
+				checkedRecipes[recipeID] = true;
+				reagentCount = app.ItemCanBeCraftedWithReagentCount(targetItemID, craftedItemID, craftModifier * reagentCount, checkedRecipes);
+				
+				-- Non-zero count can only occur when we found target item
+				if reagentCount > 0 then
+					return reagentCount;
+				end
+			end
+		end
+	end
+	return 0;
+end
 app.BuildCrafted_IncludedItems = {};
+app.BuildCrafted_ReagentCount = 0;
 -- Appends sub-groups into the item group based on what the item is used to craft (via ReagentCache)
 app.BuildCrafted = function(item)
 	local itemID = item.itemID;
@@ -6078,6 +6114,7 @@ local function AttachTooltipSearchResults(self, search, method, paramA, paramB, 
 		-- print("build tooltip search",self.HasATTSearchResults,search)
 		-- tooltips can skip to level 1
 		app.SetSkipPurchases(1);
+		app.BuildCrafted_ReagentCount = 0;
 		AttachTooltipRawSearchResults(self, GetCachedSearchResults(search, method, paramA, paramB, ...));
 		app.SetSkipPurchases(0);
 	-- else print("skip tooltip search",self.HasATTSearchResults,search)
