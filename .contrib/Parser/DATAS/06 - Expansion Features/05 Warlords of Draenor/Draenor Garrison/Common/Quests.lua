@@ -1019,6 +1019,48 @@ _.ExpansionFeatures =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 38573,	-- Nothing Remains
 				}),
+				q(37851, {	-- Amulet of Rukhmar: The Final Key
+					["sourceQuests"] = { 37850 },	-- Amulet of Rukhmar: The Second Key
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
+					["isDaily"] = true,
+				}),
+				q(37849, {	-- Amulet of Rukhmar: The First Key
+					["sourceQuests"] = { 37848 },	-- Treasure Contract: Amulet of Rukhmar
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
+					["isDaily"] = true,
+				}),
+				q(37850, {	-- Amulet of Rukhmar: The Second Key
+					["sourceQuests"] = { 37849 },	-- Amulet of Rukhmar: The First Key
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
+					["isDaily"] = true,
+				}),
+				q(37852, {	-- Amulet of Rukhmar: The Apexis Device (A)
+					["sourceQuests"] = { 37851 },	-- Amulet of Rukhmar: The Final Key
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coord"] = { 34.6, 32.7, LUNARFALL },
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						crit(3, {
+							["achievementID"] = 9825,	-- Master Relic Hunter (A)
+						}),
+					},
+				}),
+				q(37993, {	-- Amulet of Rukhmar: The Apexis Device (H)
+					["sourceQuests"] = { 37851 },	-- Amulet of Rukhmar: The Final Key
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coord"] = { 40.2, 56.0, FROSTWALL },
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						crit(3, {
+							["achievementID"] = 9836,	-- Master Relic Hunter (H)
+						}),
+					},
+				}),
 				q(34653, {	-- Arakkoa Exodus
 					["sourceQuests"] = { 35537, 35554 },	-- News from Spires of Arak H/A
 					["isBreadcrumb"] = true,
@@ -1652,6 +1694,48 @@ _.ExpansionFeatures =
 						garrisonBuilding(29),	-- Herb Garden lvl 1
 					},
 				}),
+				q(37885, {	-- Dark Grimoire: Breaching the Barrier (A)
+					["sourceQuest"] = 37884,	-- Dark Grimoire: The Final Ingredient
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coord"] = { 34.6, 32.7, LUNARFALL },
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						crit(2, {
+							["achievementID"] = 9825,	-- Master Relic Hunter (A)
+						}),
+					},
+				}),
+				q(37994, {	-- Dark Grimoire: Breaching the Barrier (H)
+					["sourceQuest"] = 37884,	-- Dark Grimoire: The Final Ingredient
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coord"] = { 40.2, 56.0, FROSTWALL },
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						crit(2, {
+							["achievementID"] = 9836,	-- Master Relic Hunter (H)
+						}),
+					},
+				}),
+				q(37884, {	-- Dark Grimoire: The Final Ingredient
+					["sourceQuest"] = 37883,	-- Dark Grimoire: The Second Ingredient
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
+					["isDaily"] = true,
+				}),
+				q(37882, {	-- Dark Grimoire: The First Ingredient
+					["sourceQuest"] = 37881,	-- Treasure Contract: Explosive Discoveries
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
+					["isDaily"] = true,
+				}),
+				q(37883, {	-- Dark Grimoire: The Second Ingredient
+					["sourceQuest"] = 37882,	-- Dark Grimoire: The First Ingredient
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
+					["isDaily"] = true,
+				}),
 				q(37773, {	-- Death to Amethon!
 					["provider"] = { "n", 89805 },	-- Renzik "The Shiv"
 					["isDaily"] = true,
@@ -1740,6 +1824,48 @@ _.ExpansionFeatures =
 					["coord"] = { 49.7, 49.5, FROSTWALL },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34775,	-- Mission Probable
+				}),
+				q(37979, {	-- Dream of Argus: The Crystal Reborn (A)
+					["sourceQuest"] = 37978,	-- Dream of Argus: The Final Fragment
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coord"] = { 34.6, 32.7, LUNARFALL },
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						crit(6, {
+							["achievementID"] = 9825,	-- Master Relic Hunter (A)
+						}),
+					},
+				}),
+				q(37997, {	-- Dream of Argus: The Crystal Reborn (H)
+					["sourceQuest"] = 37978,	-- Dream of Argus: The Final Fragment
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coord"] = { 40.2, 56.0, FROSTWALL },
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						crit(6, {
+							["achievementID"] = 9836,	-- Master Relic Hunter (H)
+						}),
+					},
+				}),
+				q(37978, {	-- Dream of Argus: The Final Fragment
+					["sourceQuest"] = 37977,	-- Dream of Argus: The Second Fragment
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
+					["isDaily"] = true,
+				}),
+				q(37976, {	-- Dream of Argus: The First Fragment
+					["sourceQuest"] = 37973,	-- Treasure Contract: The Artificer
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
+					["isDaily"] = true,
+				}),
+				q(37977, {	-- Dream of Argus: The Second Fragment
+					["sourceQuest"] = 37976,	-- Dream of Argus: The First Fragment
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
+					["isDaily"] = true,
 				}),
 				q(39034, {	-- Emissary of War
 					["provider"] = { "n", 94870 },	-- Seer Kazal
@@ -1834,17 +1960,77 @@ _.ExpansionFeatures =
 					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
 					["isDaily"] = true,
 				}),
-				q(37919, {	-- Gronnsbane: The Blessing of Beasts
+				q(37919, {	-- Gronnsbane: The Blessing of Beasts (A)
 					["sourceQuest"] = 37918, -- Gronnsbane: The Blessing of Fire
 					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
-					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
+					["coord"] = { 34.6, 32.7, LUNARFALL },
 					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						crit(1, {
+							["achievementID"] = 9825,	-- Master Relic Hunter (A)
+						}),
+					},
+				}),
+				q(37995, {	-- Gronnsbane: The Blessing of Beasts (H)
+					["sourceQuest"] = 37918, -- Gronnsbane: The Blessing of Fire
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coord"] = { 40.2, 56.0, FROSTWALL },
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						crit(1, {
+							["achievementID"] = 9836,	-- Master Relic Hunter (H)
+						}),
+					},
 				}),
 				q(37916, {	-- Gronnsbane: The Broken Spear
 					["sourceQuest"] = 37914, -- Treasure Contract: The Thunderlord Sage
 					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
 					["isDaily"] = true,
+				}),
+				q(37799, {	-- Gutrek's Cleaver: The Final Piece
+					["sourceQuest"] = 37798,	-- Gutrek's Cleaver: The Second Piece
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
+					["isDaily"] = true,
+				}),
+				q(37797, {	-- Gutrek's Cleaver: The First Piece
+					["sourceQuest"] = 37788,	-- Treasure Contract: Gutrek's Cleaver
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
+					["isDaily"] = true,
+				}),
+				q(37798, {	-- Gutrek's Cleaver: The Second Piece
+					["sourceQuest"] = 37797,	-- Gutrek's Cleaver: The First Piece
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
+					["isDaily"] = true,
+				}),
+				q(37811, {	-- Gutrek's Cleaver: The Spirit Forge (A)
+					["sourceQuest"] = 37799,	-- Gutrek's Cleaver: The Final Piece
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coord"] = { 34.6, 32.7, LUNARFALL },
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						crit(4, {
+							["achievementID"] = 9825,	-- Master Relic Hunter (A)
+						}),
+					},
+				}),
+				q(37992, {	-- Gutrek's Cleaver: The Spirit Forge (H)
+					["sourceQuest"] = 37799,	-- Gutrek's Cleaver: The Final Piece
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coord"] = { 40.2, 56.0, FROSTWALL },
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						crit(4, {
+							["achievementID"] = 9836,	-- Master Relic Hunter (H)
+						}),
+					},
 				}),
 				q(36589, {	-- Heavy Arms
 					["races"] = HORDE_ONLY,
@@ -2192,6 +2378,48 @@ _.ExpansionFeatures =
 						{ "o", 237022 },	-- Command Board lvl 3
 					},
 				}),
+				q(37945, {	-- The Silent Skull: Taking from the Taker (A)
+					["sourceQuest"] = 37944,	-- The Silent Skull: The Third Reagent
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coord"] = { 34.6, 32.7, LUNARFALL },
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						crit(5, {
+							["achievementID"] = 9825,	-- Master Relic Hunter (A)
+						}),
+					},
+				}),
+				q(37996, {	-- The Silent Skull: Taking from the Taker (H)
+					["sourceQuest"] = 37944,	-- The Silent Skull: The Third Reagent
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coord"] = { 40.2, 56.0, FROSTWALL },
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						crit(5, {
+							["achievementID"] = 9836,	-- Master Relic Hunter (H)
+						}),
+					},
+				}),
+				q(37942, {	-- The Silent Skull: The First Reagent
+					["sourceQuest"] = 37941,	-- Treasure Contract: The Infected Orc
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
+					["isDaily"] = true,
+				}),
+				q(37943, {	-- The Silent Skull: The Second Reagent
+					["sourceQuest"] = 37942,	-- The Silent Skull: The First Reagent
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
+					["isDaily"] = true,
+				}),
+				q(37944, {	-- The Silent Skull: The Third Reagent
+					["sourceQuest"] = 37943,	-- The Silent Skull: The Second Reagent
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
+					["isDaily"] = true,
+				}),
 				q(35459, {	-- The Southern Wilds
 					["sourceQuests"] = { 34019 },	-- Shadows Awaken
 					["coord"] = { 42.8, 45.2, LUNARFALL },
@@ -2258,6 +2486,15 @@ _.ExpansionFeatures =
 						{ "n", 89793 },	-- Harrison Jones
 						{ "n", 92223 },	-- Surveyor Daltry
 					},
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 33.2, LUNARFALL } },
+				}),
+				q(37881, {	-- Treasure Contract: Explosive Discoveries
+					["isDaily"] = true,
+					["providers"] = {
+						{ "n", 89793 },	-- Harrison Jones
+						{ "n", 92223 },	-- Surveyor Daltry
+					},
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 33.2, LUNARFALL } },
 				}),
 				q(37788, {	-- Treasure Contract: Gutrek's Cleaver
 					["isDaily"] = true,
@@ -2265,6 +2502,7 @@ _.ExpansionFeatures =
 						{ "n", 89793 },	-- Harrison Jones
 						{ "n", 92223 },	-- Surveyor Daltry
 					},
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 33.2, LUNARFALL } },
 				}),
 				q(37941, {	-- Treasure Contract: The Infected Orc
 					["isDaily"] = true,
@@ -2272,14 +2510,23 @@ _.ExpansionFeatures =
 						{ "n", 89793 },	-- Harrison Jones
 						{ "n", 92223 },	-- Surveyor Daltry
 					},
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 33.2, LUNARFALL } },
 				}),
-				q(37914, {	-- Treasure Contract: The Thunderlord Sage
+				q(37973, {	-- Treasure Contract: The Artificer
+					["isDaily"] = true,
 					["providers"] = {
 						{ "n", 89793 },	-- Harrison Jones
 						{ "n", 92223 },	-- Surveyor Daltry
 					},
 					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 33.2, LUNARFALL } },
+				}),
+				q(37914, {	-- Treasure Contract: The Thunderlord Sage
 					["isDaily"] = true,
+					["providers"] = {
+						{ "n", 89793 },	-- Harrison Jones
+						{ "n", 92223 },	-- Surveyor Daltry
+					},
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 33.2, LUNARFALL } },
 				}),
 				q(37290, {	-- Upgrades in Ashran
 					["description"] = "You need to have Comprehensive Construction Outpost Guide (item 116395) in your inventory",

@@ -979,6 +979,7 @@ _.HiddenQuestTriggers = {
 		q(34435),	-- Find Ga'nar - completed with quest 34434 & 34740
 		q(34438),	-- Regarding Enormous Tanks - completed with quest 34958
 		q(34817),	-- Altar Altercation - completed with quest 34423
+		q(35340),	-- What Happened Here? - completed with quest 35322
 		q(35387),	-- Through the Nether - completed with quest 35085
 		q(35388),	-- The Void March - completed with quest 35086
 		q(35389),	-- Silence the Call - completed with quest 35084
@@ -989,6 +990,7 @@ _.HiddenQuestTriggers = {
 		q(36461),	-- Locating the Lapidarist - completed with quest 36352
 		q(36501),	-- Iron Horde Invasion - completed with quest 36498
 		q(36635),	-- Your First Work Order - completed with quest 35168 & 37569
+		q(36796),	-- The Flock's Revenge - completed with quest 36790
 		q(37185),	-- A Personal Summons - completed with quest 28790 & 28825
 		q(37189),	-- A Personal Summons - completed with quest 28825
 		q(37190),	-- Iron Horde Invasion - completed with quest 36499
@@ -1015,9 +1017,7 @@ _.HiddenQuestTriggers = {
 		--q(33267),	-- [Deprecated] - TODO: figure out from where it gets completed
 
 		-- Spires of Arak
-		--q(36796),	-- The Flock's Revenge - TODO: figure out from where it gets completed
 		--q(34565),	-- Tearing Up Talador - TODO: figure out from where it gets completed
-		--q(35340),	-- What Happened Here? - TODO: figure out from where it gets completed
 
 		-- Talador
 		--q(33923),	-- Demons? In Auchindoun? - TODO: figure out from where it gets completed

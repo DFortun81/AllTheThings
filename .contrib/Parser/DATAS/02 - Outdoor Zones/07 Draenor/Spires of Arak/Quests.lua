@@ -423,33 +423,6 @@ _.Zones =
 					["coord"] = { 51.6, 31.2, SPIRES_OF_ARAK },
 					["provider"] = { "n", 79890 },	-- Ornekka
 				}),
-				q(37851, {	-- Amulet of Rukhmar: The Final Key
-					["sourceQuests"] = { 37850 },	-- Amulet of Rukhmar: The Second Key
-					["coord"] = { 73.4, 34.9, SPIRES_OF_ARAK },
-					["isDaily"] = true,
-				}),
-				q(37849, {	-- Amulet of Rukhmar: The First Key
-					["sourceQuests"] = { 37848 },	-- Treasure Contract: Amulet of Rukhmar
-					["coord"] = { 53.0, 14.8, SPIRES_OF_ARAK },
-					["isDaily"] = true,
-				}),
-				q(37850, {	-- Amulet of Rukhmar: The Second Key
-					["sourceQuests"] = { 37849 },	-- Amulet of Rukhmar: The First Key
-					["coord"] = { 60.5, 12.3, SPIRES_OF_ARAK },
-					["isDaily"] = true,
-				}),
-				q(37993, {	-- Amulet of Rukhmar: The Apexis Device
-					["sourceQuests"] = { 37851 },	-- Amulet of Rukhmar: The Final Key
-					["coord"] = { 69.9, 33.6, SPIRES_OF_ARAK },
-					["isDaily"] = true,
-					["races"] = HORDE_ONLY,
-				}),
-				q(37852, {	-- Amulet of Rukhmar: The Apexis Device
-					["sourceQuests"] = { 37851 },	-- Amulet of Rukhmar: The Final Key
-					["coord"] = { 69.9, 33.6, SPIRES_OF_ARAK },
-					["isDaily"] = true,
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(34886, {	-- Baby Bird
 					["sourceQuests"] = { 34838 },	-- Ikky's Egg
 					["coord"] = { 45.4, 36.6, SPIRES_OF_ARAK },

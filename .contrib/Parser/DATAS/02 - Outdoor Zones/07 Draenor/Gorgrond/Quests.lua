@@ -1774,26 +1774,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				q(37945, {	-- The Silent Skull: Taking from the Taker
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-				}),
-				q(37996, {	-- The Silent Skull: Taking from the Taker
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
-				q(37942, {	-- The Silent Skull: The First Reagent
-					["sourceQuest"] = 37941,	-- Treasure Contract: The Infected Orc
-					["isDaily"] = true,
-				}),
-				q(37943, {	-- The Silent Skull: The Second Reagent
-					["isDaily"] = true,
-					["sourceQuest"] = 37942,	-- The Silent Skull: The First Reagent
-				}),
-				q(37944, {	-- The Silent Skull: The Third Reagent
-					["isDaily"] = true,
-					["sourceQuest"] = 37943,	-- The Silent Skull: The Second Reagent
-				}),
 				q(38255, {	-- The Train Gang (A)
 					["provider"] = { "n", 90177 },	-- Exarch Yrel
 					["coord"] = { 56.7, 17.1, GORGROND },
