@@ -752,7 +752,9 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(30, 10, 30),
 				["groups"] = {
-					i(17726),	-- Smokywood Pastures Special Gift
+					i(17726, {	-- Smokywood Pastures Special Gift
+						["sym"] = {{"fill"}},	-- fill with cached content
+					}),
 				},
 			}),
 			q(6984, {	-- A Smokywood Pastures' Thank You! (Horde)
@@ -767,7 +769,9 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(30, 10, 30),
 				["groups"] = {
-					i(17726),	-- Smokywood Pastures Special Gift
+					i(17726, {	-- Smokywood Pastures Special Gift
+						["sym"] = {{"fill"}},	-- fill with cached content
+					}),
 				},
 			}),
 			q(11528, { 	-- A Winter Veil Gift (2007)
@@ -1625,6 +1629,8 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					i(143898),	-- Miniature Winter Veil Tree (Level 1 - Cosmetic)
 					-- Trinkets
 					i(151351),	-- Glowing Gift
+					-- Misc:
+					i(46725),	-- Red Rider Air Rifle
 				},
 			}),
 		}),
@@ -1879,6 +1885,12 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 		}),
 	},
 }));
+
+root("HiddenQuestTriggers", {
+	holiday(235485, {	-- Winter's Veil
+		q(45766, {["isYearly"]=true}),	-- finding Greatfather Winter in Highmountain (npc ID 104710)
+	}),
+});
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	holiday(235485, {	-- Feast of Winter Veil

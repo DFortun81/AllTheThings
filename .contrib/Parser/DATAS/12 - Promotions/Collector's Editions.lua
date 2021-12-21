@@ -11,48 +11,57 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 					["timeline"] = { "added 2.0.1" },
 					["maps"] = { EVERSONG_WOODS },
 					["races"] = { BLOODELF },
+					["_drop"] = { "g" },	-- API includes the pets and they are listed below separately
 				}),
 				q(12781, {	-- Welcome! (Death Knight)
 					["provider"] = { "i", 39713 },	-- Ebon Hold Gift Voucher
 					["timeline"] = { "added 3.0.1" },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["classes"] = { DEATHKNIGHT },
+					["_drop"] = { "g" },	-- API includes the pets and they are listed below separately
 				}),
 				q(9278, {	-- Welcome! (Draenei)
 					["provider"] = { "i", 22888 },	-- Azure Watch Gift Voucher
 					["timeline"] = { "added 2.0.1" },
 					["maps"] = { AZUREMYST_ISLE },
 					["classes"] = { DRAENEI },
+					["_drop"] = { "g" },	-- API includes the pets and they are listed below separately
 				}),
 				q(5841, {	-- Welcome! (Dwarf, Gnome)
 					["provider"] = { "i", 14647 },	-- Kharanos [Wrath+] / Coldridge Valley Gift Voucher
 					["maps"] = { DUN_MOROGH },
 					["races"] = { DWARF, GNOME },
+					["_drop"] = { "g" },	-- API includes the pets and they are listed below separately
 				}),
 				q(5805, {	-- Welcome! (Human)
 					["provider"] = { "i", 14646 },	-- Goldshire [Wrath+] / Northshire Gift Voucher
 					["maps"] = { ELWYNN_FOREST },
 					["races"] = { HUMAN },
+					["_drop"] = { "g" },	-- API includes the pets and they are listed below separately
 				}),
 				q(5842, {	-- Welcome! (Night Elf)
 					["provider"] = { "i", 14648 },	-- Dolanaar [Wrath+] / Shadowglen Gift Voucher
 					["maps"] = { TELDRASSIL },
 					["races"] = { NIGHTELF },
+					["_drop"] = { "g" },	-- API includes the pets and they are listed below separately
 				}),
 				q(5843, {	-- Welcome! (Orc & Troll)
 					["provider"] = { "i", 14649 },	-- Razor Hill [Wrath+] / Valley of Trials Gift Voucher
 					["maps"] = { DUROTAR },
 					["races"] = { ORC, TROLL },
+					["_drop"] = { "g" },	-- API includes the pets and they are listed below separately
 				}),
 				q(5844, {	-- Welcome! (Tauren)
 					["provider"] = { "i", 14650 },	-- Bloodhoof Village [Wrath+] / Camp Narache Gift Voucher
 					["maps"] = { MULGORE },
 					["races"] = { TAUREN },
+					["_drop"] = { "g" },	-- API includes the pets and they are listed below separately
 				}),
 				q(5847, {	-- Welcome! (Undead)
 					["provider"] = { "i", 14651 },	-- Brill [Wrath+] / Deathknell Gift Voucher
 					["maps"] = { TIRISFAL_GLADES },
 					["races"] = { UNDEAD },
+					["_drop"] = { "g" },	-- API includes the pets and they are listed below separately
 				}),
 			}),
 			n(REWARDS, {

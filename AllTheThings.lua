@@ -18734,7 +18734,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 				end
 
 				-- Cache learned recipes
-				local learned = {};
+				local learned, recipeID = {};
 				local reagentCache = app.GetDataMember("Reagents", {});
 				local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
 				local acctSpells, charSpells = ATTAccountWideData.Spells, app.CurrentCharacter.Spells;

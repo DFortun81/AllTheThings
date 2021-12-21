@@ -18,7 +18,9 @@ _.GroupFinder =
 				i(113769),	-- Ravaged Leather Boots*
 				i(113705),	-- Ravaged Leather Bracers*
 				i(113698),	-- Ravaged Leather Cap*
+				i(113724),	-- Ravaged Leather Gauntlets	-- Confirmed by Warmech on Discord 2021-12-21
 				i(113700),	-- Ravaged Leather Helm
+				i(113712),	-- Ravaged Leather Pants		-- Confirmed by Warmech on Discord 2021-12-21
 				i(113768),	-- Ravaged Leather Slippers*
 				i(113706),	-- Ravaged Leather Wristguards*
 				i(113774),	-- Sparkmail Boots

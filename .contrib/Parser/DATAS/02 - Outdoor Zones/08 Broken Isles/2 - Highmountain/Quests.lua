@@ -980,7 +980,6 @@ _.Zones =
 				}),
 	--[[ TODO: These quests will be organized Soon™
 				q(40312),	-- A Timely Opportunity REMOVED
-				q(45766),	-- Albino Elderhorn
 				q(39646),	-- Albino Elderhorn
 				q(41053),	-- Altar of the Eternal Hunt
 				q(40413),	-- Amateur Hunters

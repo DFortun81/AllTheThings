@@ -3585,7 +3585,6 @@ _.HiddenQuestTriggers = {
 		q(61161),	-- another "Party Crashers!" objective, automatically "accepted" when it started
 		q(61163),	-- also for the "Party Crashers" objective, but automatically "accepted" when it started
 		q(61929),	-- also completed when finishing "Theotar's Toast" objective
-		q(62112),	-- completed when killing Rare 'Sloppy' in Ember Court
 		q(61164),	-- triggered completed upon finishing the #62117 "Party Crashers"
 		q(61162),	-- for the #62113 version of "Party Crashers"
 		q(60930),	-- "Lower Your Standards," sort of a real quest?  but repeatable, only available when certain choices are made for ember court, pointless in general, doesn't seem worth tracking

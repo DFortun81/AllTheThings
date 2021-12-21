@@ -272,7 +272,6 @@ root("Zones", {
 					},
 				}),
 				n(143311, {	-- Toadcruel
-					["questID"] = 50893,
 					["coord"] = { 73.6, 48.8, NAZMIR },
 				}),
 				n(126056, {	-- Totem Maker Jash'ga

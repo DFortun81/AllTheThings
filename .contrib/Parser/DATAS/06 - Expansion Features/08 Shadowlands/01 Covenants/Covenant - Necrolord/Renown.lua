@@ -79,7 +79,7 @@ root("HiddenQuestTriggers", {
 	-- q( ),	-- hitting Renown 48 [Hunter] (received Memory of the Pact of the Soulstalkers)
 	q(64391),	-- hitting Renown 48 [Mage] (received Memory of Death's Fathom)
 	q(64398),	-- hitting Renown 48 [Monk] (received Memory of Bountiful Brew)
-	-- q( ),	-- hitting Renown 48 [Paladin] (received Memory of ??)
+	q(64399),	-- hitting Renown 48 [Paladin] (received Memory of Duty-Bound Gavel)
 	q(64414),	-- hitting Renown 48 [Priest] (received Memory of Pallid Command)
 	-- q( ),	-- hitting Renown 48 [Rogue] (received Memory of ??)
 	q(64384),	-- hitting Renown 48 [Shaman] (received Memory of the Splintered Elementals)

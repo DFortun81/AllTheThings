@@ -764,7 +764,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 					["_npcs"] = { 143313 },
 				}),
 				crit(4, {	-- Toadcruel
-					["_quests"] = { 50893 },
+					["_npcs"] = { 143311 },
 				}),
 			},
 		}),

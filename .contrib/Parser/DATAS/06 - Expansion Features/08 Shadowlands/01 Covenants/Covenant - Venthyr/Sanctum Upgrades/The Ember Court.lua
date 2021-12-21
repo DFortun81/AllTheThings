@@ -175,78 +175,62 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 						n(QUESTS, {
 							n(SPECIAL, sharedData({
 								["description"] = "Requires joining another Venthyr player in their Ember Court scenario and interacting with the respective Exalted Guest.",
-								-- ["sourceQuest"] = ,
+								-- ["sourceQuest"] = ,	-- TODO: there is something that prevents being able to pick these up...
 							}, {
 								-- Tier 1
 								q(65132, {	-- Friend of a Friend: Choofa
-									-- ["qg"] = ,
-									-- ["sourceQuest"] = ,
+									["qg"] = 168449,
 								}),
 								q(65134, {	-- Friend of a Friend: Cryptkeeper Kassir
-									-- ["qg"] = ,
-									-- ["sourceQuest"] = ,
+									["qg"] = 168450,
 								}),
 								q(65138, {	-- Friend of a Friend: Plague Deviser Marileth
-									-- ["qg"] = ,
-									-- ["sourceQuest"] = ,
+									["qg"] = 171852,
 								}),
 								q(65140, {	-- Friend of a Friend: Sika
-									-- ["qg"] = ,
-									-- ["sourceQuest"] = ,
+									["qg"] = 171854,
 								}),
 
 								-- Tier 2
 								q(65135, {	-- Friend of a Friend: Droman Aliothe
-									-- ["qg"] = ,
-									-- ["sourceQuest"] = ,
+									["qg"] = 171847,
 								}),
 								q(65136, {	-- Friend of a Friend: Grandmaster Vole
-									-- ["qg"] = ,
-									-- ["sourceQuest"] = ,
+									["qg"] = 171848,
 								}),
 								q(65137, {	-- Friend of a Friend: Kleia & Pelagos
-									-- ["qg"] = ,
-									-- ["sourceQuest"] = ,
+									["qg"] = 171851, -- Pelagos -- TODO: maybe either?
 								}),
 								q(65141, {	-- Friend of a Friend: Stonehead
-									-- ["qg"] = ,
-									-- ["sourceQuest"] = ,
+									["qg"] = 171856,
 								}),
 
 								-- Tier 3
 								q(65128, {	-- Friend of a Friend: Alexandros Mograine
-									-- ["qg"] = ,
-									-- ["sourceQuest"] = ,
+									["qg"] = 171833,
 								}),
 								q(65129, {	-- Friend of a Friend: Hunt-Captain Korayn
-									-- ["qg"] = ,
-									-- ["sourceQuest"] = ,
+									["qg"] = 171836,
 								}),
 								q(65130, {	-- Friend of a Friend: Polemarch Adrestes
-									-- ["qg"] = ,
-									-- ["sourceQuest"] = ,
+									["qg"] = 168447,
 								}),
 								q(65131, {	-- Friend of a Friend: Rendle & Cudgelface
-									-- ["qg"] = ,
-									-- ["sourceQuest"] = ,
+									["qg"] = 171839,	-- Rendle -- TODO: maybe either?
 								}),
 
 								-- Tier 4
 								q(65121, {	-- Friend of a Friend: Baroness Vashj
-									-- ["qg"] = ,
-									-- ["sourceQuest"] = ,
+									["qg"] = 168444,
 								}),
 								q(65123, {	-- Friend of a Friend: Lady Moonberry
-									-- ["qg"] = ,
-									-- ["sourceQuest"] = ,
+									["qg"] = 171830,
 								}),
 								q(65124, {	-- Friend of a Friend: Mikanikos
-									-- ["qg"] = ,
-									-- ["sourceQuest"] = ,
+									["qg"] = 171831,
 								}),
 								q(65126, {	-- Friend of a Friend: The Countess
-									-- ["qg"] = ,
-									-- ["sourceQuest"] = ,
+									["qg"] = 165269,
 								}),
 							})),
 						}),
@@ -305,6 +289,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 							q(62124),	-- Ritual of Accusation
 							q(62119),	-- Roaring Fires
 							q(62114),	-- Sineater
+							q(62112),	-- Sloppy
 							q(62120),	-- Stolen Mementos
 							q(61725),	-- Stolen Mementos
 							q(65056),	-- Stop the Slip

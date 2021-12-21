@@ -2113,7 +2113,7 @@ _.Zones =
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
-					["g"] = bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
+					["g"] = sharedData({ ["u"] = REMOVED_FROM_GAME }, {
 						i(13584),	-- Diablo Stone
 						i(13583),	-- Panda Collar
 						i(13582),	-- Zergling Leash
@@ -2184,7 +2184,8 @@ _.Zones =
 		}),
 	}),
 };
-_.NEVER_IMPLEMENTED = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		m(KALIMDOR, {
 			m(DUROTAR, {
@@ -2199,4 +2200,4 @@ _.NEVER_IMPLEMENTED = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-});
+}));

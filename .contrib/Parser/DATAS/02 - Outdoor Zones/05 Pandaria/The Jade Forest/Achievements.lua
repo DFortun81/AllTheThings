@@ -124,7 +124,9 @@ _.Zones =
 					},
 				}),
 				ach(6855, {	-- The Seven Burdens of Shaohao
-					crit(1),	-- The Emperor's Burden - Part 1
+					crit(1, {	-- The Emperor's Burden - Part 1
+						["coord"] = { 47.0, 45.1, THE_JADE_FOREST },
+					}),
 					crit(3, {	-- The Emperor's Burden - Part 3
 						["coord"] = { 55.8, 56.8, THE_JADE_FOREST },
 					}),
