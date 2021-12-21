@@ -4276,14 +4276,20 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							left = left .. " > " .. critAch.text;
 						end
 					end
-					if paramA == "itemID" and group.collectible then
-						app.BuildCrafted_ReagentCount = app.BuildCrafted_ReagentCount + app.ItemCanBeCraftedWithReagentCount(group.itemID, paramB);
-					end
 					tinsert(info, { left = item.prefix .. left, right = right });
 				end
 				if #entries - containCount > 0 then
 					tinsert(info, { left = L["AND_"] .. (#entries - containCount) .. L["_MORE"] .. "..." });
 				end
+				
+				-- TODO: check if counting option enabled
+				for i=1,#entries do
+					item = entries[i];
+					group = item.group;
+					if paramA == "itemID" and group.collectible and not group.collected then
+						app.BuildCrafted_ReagentCount = app.BuildCrafted_ReagentCount + app.ItemCanBeCraftedWithReagentCount(group.itemID, paramB);
+					end
+				end;
 				if app.BuildCrafted_ReagentCount > 0 then
 					tinsert(info, { left = L["ITEMS_NEEDED_TO_CRAFT"] .. app.BuildCrafted_ReagentCount })
 				end
