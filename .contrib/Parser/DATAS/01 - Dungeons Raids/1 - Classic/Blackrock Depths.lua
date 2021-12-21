@@ -869,7 +869,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 48,
 				}),
-				
+
 				q(28457, {	-- A Dangerous Alliance
 					["qg"] = 168596,	-- Gormok Ogrefist
 					["sourceQuest"] = 28290,	-- Meet with Grezz Ragefist (Cata+) / Meet with Gormok Ogrefist (SL+)
@@ -1143,7 +1143,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					["lvl"] = lvlsquish(50, 20, 50),
 				}),
 				-- #endif
-				
+
 				q(28475, {	-- Twilight Scheming [Blood Elf]
 					["qg"] = 45337,	-- Tyelis
 					["sourceQuest"] = 28307,	-- Meet with Tyelis (Cata+) / Journey to Orgrimmar [Blood Elf] (SL+)
@@ -1199,7 +1199,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						i(65636),	-- Crown of the Shadow-Walker
 					},
 				}),
-				
+
 				n(-75, {	-- Detention Block
 					q(27569, {	-- Dark Iron Tacticians
 						["provider"] = { "n", 45894 },	-- Prospector Seymour
@@ -1286,7 +1286,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						["sourceQuests"] = { 27585 },	-- The 109th Division
 					}),
 				}),
-				
+
 			}),
 			n(VENDORS, {
 				n(12944, {	-- Lokhtos Darkbargainer <The Thorium Brotherhood>
@@ -1822,9 +1822,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						i(11746),	-- Golem Skull Helm
 						-- #endif
 						applyclassicphase(PHASE_FIVE, i(22212)),	-- Golem Fitted Pauldrons
-						-- #if BEFORE 7.3.2
 						applyclassicphase(PHASE_FIVE, i(22204)),	-- Wristguards of Renown
-						-- #endif
 						i(11745),	-- Fists of Phalanx
 						i(151409, {	-- Ferrous Cord
 							["timeline"] = { "added 7.3.0.24484" },

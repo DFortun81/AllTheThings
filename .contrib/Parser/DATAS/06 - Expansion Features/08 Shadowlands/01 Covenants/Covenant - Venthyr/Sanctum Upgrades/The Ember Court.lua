@@ -2332,6 +2332,7 @@ root("HiddenQuestTriggers", {
 		-- Misc.
 			q(61918),	-- unflagged when completing Restock: Fashion Accessories (62078)
 			q(61919),	-- unflagged when completing Restock: Exploratory Meals (62094)
+			q(61925),	-- completed when completing a 'Restock' quest
 			q(62524),	-- triggered at end of Ember Court (Vashj/Koryan/Choofa/Stonehead)
 			q(62521),	-- 'Safe/Humble' criteria for It's Certainly Never Boring
 			q(62523),	-- 'Safe/Humble' criteria for It's Certainly Never Boring
