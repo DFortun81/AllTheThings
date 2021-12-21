@@ -1063,7 +1063,6 @@ app.L = {
 		[-379] = "Interface\\Icons\\inv_misc_blizzcon09_graphicscard",						-- Junkyard
 		[-380] = "Interface\\Icons\\inv_misc_key_06",										-- Workshop
 	-- Misc Armor Slots
-		[-383] = "Interface\\Icons\\inv_misc_gem_variety_02",								-- Miscellaneous
 		[-384] = "Interface\\Icons\\inv_jewelcrafting_70_maxlvlneck_green",					-- Neck
 		[-385] = "Interface\\Icons\\inv_70_dungeon_ring5a",									-- Finger
 		[-386] = "Interface\\Icons\\inv_qirajidol_obsidian",								-- Trinket
