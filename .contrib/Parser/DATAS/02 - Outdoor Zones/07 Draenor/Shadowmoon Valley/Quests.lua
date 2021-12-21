@@ -318,6 +318,7 @@ _.Zones =
 					},
 				}),
 				q(33787, {	-- Fiona's Solution
+					["sourceQuests"] = { 33786 },	-- Crippled Caravan
 					["coord"] = { 53.5, 57.2, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 76204 },	-- Fiona
@@ -1026,6 +1027,14 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["icon"] = "Interface\\Icons\\INV_Artifact_tome01",
 					--["objectID"] = 233229,	-- Shadow Council Tome of Curses
+				}),
+				q(33786, {	-- Crippled Caravan
+					["sourceQuests"] = {
+						35450,	-- The Southern Wilds
+						35459,	-- The Southern Wilds
+					},
+					["coord"] = { 57.0, 57.5, DRAENOR_SHADOWMOON_VALLEY },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				n(BONUS_OBJECTIVES, {
 					-- TODO: Check SQ

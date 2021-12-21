@@ -783,6 +783,9 @@ _.HiddenQuestTriggers = {
 		q(37892),	-- Tanaan Garrison Max-level Choice Tracker: ANY CHOICE MADE (H)
 		q(37969),	-- Tanaan Jungle - Tracking Quest - Vol'mar Built - JMC
 		q(38433),	-- Tanaan Jungle - Tracking Quest - Lion's Watch Built - JMC
+		q(38234),	-- Tracking Event: Inscribed Ruin Found - triggers during quest "Get a Clue" (questID 38213), clue #3
+		q(38236),	-- Tracking Event: Note Found - triggers during quest "Get a Clue" (questID 38213), clue #1
+		q(38231),	-- Tracking Event: Shrine Found - triggers during quest "Get a Clue" (questID 38213), clue #2
 	}),
 	tier(BFA_TIER, {
 		q(50678),	-- learning Ensemble: Battlegear of the Frostwolves

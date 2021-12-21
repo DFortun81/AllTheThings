@@ -975,6 +975,7 @@ _.HiddenQuestTriggers = {
 		q(31373),	-- The Order of the Cloud Serpent - completed with quest 32461
 		q(31375),	-- The Order of the Cloud Serpent - completed with quest 32461
 		q(33073),	-- [NOTUSED]Vignette: Ancient Saltsnap Turtle - completed with quest 33070
+		q(33267),	-- [Deprecated] - completed with quest 33461
 		q(34426),	-- Yrel - completed with quest 34478 & 34427
 		q(34435),	-- Find Ga'nar - completed with quest 34434 & 34740
 		q(34438),	-- Regarding Enormous Tanks - completed with quest 34958
@@ -1012,9 +1013,8 @@ _.HiddenQuestTriggers = {
 		--q(35431),	-- The Best Poison - TODO: figure out from where it gets completed
 		--q(35653),	-- Wood is Wood - TODO: figure out from where it gets completed
 
-		-- Shadowmoon Valley
+		-- Shadowmoon Valley / probably Tanaan Jungle instead
 		--q(39396),	-- NOT USED - TODO: figure out from where it gets completed
-		--q(33267),	-- [Deprecated] - TODO: figure out from where it gets completed
 
 		-- Spires of Arak
 		--q(34565),	-- Tearing Up Talador - TODO: figure out from where it gets completed
@@ -1585,7 +1585,6 @@ _.HiddenQuestTriggers = {
 		q(33965),	-- Tanaan Flowerpicker
 		q(39128),	-- Tanaan Vignette
 		q(39713),	-- Tracking Quest. Pops immediately on new characters but no other info known. Possibly legendary ring related
-		q(33786),	-- ??????. This was completed around Fiona's caravan in Shadowmoon Valley - Draenor (not entirely sure what triggered it.)
 		q(52969),	-- Going through the Stormwind Portal to Stormshield while on the WoD timeline in Chromie time
 
 		-------------------
