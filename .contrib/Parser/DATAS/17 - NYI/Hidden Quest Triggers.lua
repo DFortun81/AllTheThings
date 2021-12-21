@@ -1002,6 +1002,8 @@ _.HiddenQuestTriggers = {
 		q(37441),	-- Solanian's Belongings - completed with quest 37443
 		q(37564),	-- Your First Blacksmithing Work Order - completed with quest 35168 & 37569
 		q(37667),	-- Building for Professions - completed with quest 36100 & 37669
+		q(37933),	-- Uncovering the Artifact Fragments - completed with quest 36133 & possibly also 36198
+		q(38008),	-- The Road of Glory - completed with quest 36125 & 36227
 		q(45405),	-- Breaching the Sanctum - completed with quest 44719
 		q(49563),	-- Warchief's Command: Frostfire Ridge! - completed with quest 49545
 
@@ -1442,7 +1444,6 @@ _.HiddenQuestTriggers = {
 		q(35653),	-- both these triggered turning in other quests in the lower area of draenor gorgrond
 		q(35431),	-- both these triggered turning in other quests in the lower area of draenor gorgrond
 		q(34565),	-- Was just walking in spires of arak and boom
-		q(35340),	-- ooks to have triggered when 35339 was turned in
 
 		--	QUESTING / LEVELING / VARIOUS
 		q(37187),	-- The Dark Portal

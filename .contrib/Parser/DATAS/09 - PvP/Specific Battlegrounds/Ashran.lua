@@ -404,6 +404,18 @@ _.PVP =
 						["races"] = HORDE_ONLY,
 						["u"] = REMOVED_FROM_GAME,
 					}),
+					q(39217, {	-- Don't Hate, Excavate! (A)
+						["provider"] = { "n", 84223 },	-- Harrison Jones
+						["coord"] = { 42.8, 76.8, 1478 },
+						["races"] = ALLIANCE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(39233, {	-- Don't Hate, Excavate! (H)
+						["provider"] = { "n", 88448 },	-- Belloc Brightblade
+						["coord"] = { 45.8, 29.0, 1478 },
+						["races"] = HORDE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(36123, {	-- Into The Wilderness (A)
 						["provider"] = { "n", 82909 },	-- Chris Clarkie
 						["coord"] = { 43.4, 76.8, 1478 },
@@ -767,6 +779,24 @@ _.PVP =
 								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
+					}),
+				}),
+				n(BONUS_OBJECTIVES, {
+					q(37479, {	-- Bonus Objective: Kill Alliance Leaders
+						["races"] = ALLIANCE_ONLY,
+						["isRepeatable"] = true,
+					}),
+					q(37480, {	-- Bonus Objective: Kill Alliance Leaders
+						["races"] = ALLIANCE_ONLY,
+						["isRepeatable"] = true,
+					}),
+					q(37481, {	-- Bonus Objective: Kill Horde Leaders
+						["races"] = HORDE_ONLY,
+						["isRepeatable"] = true,
+					}),
+					q(37482, {	-- Bonus Objective: Kill Horde Leaders
+						["races"] = HORDE_ONLY,
+						["isRepeatable"] = true,
 					}),
 				}),
 				n(VENDORS, {

@@ -570,7 +570,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(36072),	-- Nagrand - Treasure 056 - Abu'Gar's Favorite Lure
 			q(35711),	-- Nagrand - Treasure 059 - Abu'gar's Tenacity
 			q(36089),	-- Nagrand - Treasure 070 - Abu'Gar's Reel
-			q(35623),	-- Nagrand - Vignette Boss - Explorer Rixak
 			q(33529),	-- Nightmare in the Tomb
 			q(33878),	-- No Miner Left Behind
 			q(33449),	-- Northwestern Medicine
@@ -1120,7 +1119,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(38707),	-- DEPRECATED
 			q(38733),	-- DEPRECATED
 			q(39076),	-- DEPRICATED
-			q(39233),	-- Don't Hate, Excavate!
 			q(37754),	-- Dungeon Active
 			q(39370),	-- Equipment Blueprint: Ammo Reserves
 			q(39369),	-- Equipment Blueprint: Automated Sky Scanner
