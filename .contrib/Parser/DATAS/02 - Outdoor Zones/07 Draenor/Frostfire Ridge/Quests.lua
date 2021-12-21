@@ -1331,10 +1331,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			q(34079),	-- Mission Successful
 			q(33562),	-- Trophy: Gorg'ak's Obsidian Spines
 			q(35057),	-- Vignette XP reward - Frostfire
-			-- Until Darkal is back
-			q(33407),	-- REUSE Triggered Completed when completing To the Slaughter(33622)
-			q(33380),	-- REUSE Triggered Completed when completing To the Slaughter(33622)
-			q(35251),	-- The Bounty of Bladespire Triggered Completed when completing Moving In(33657)
 		}),
 	}),
 });

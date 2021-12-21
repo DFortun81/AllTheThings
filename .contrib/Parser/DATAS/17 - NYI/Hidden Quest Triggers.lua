@@ -976,10 +976,13 @@ _.HiddenQuestTriggers = {
 		q(31375),	-- The Order of the Cloud Serpent - completed with quest 32461
 		q(33073),	-- [NOTUSED]Vignette: Ancient Saltsnap Turtle - completed with quest 33070
 		q(33267),	-- [Deprecated] - completed with quest 33461
+		q(33380),	-- REUSE - completed with quest 33622
+		q(33407),	-- REUSE - completed with quest 33622
 		q(34426),	-- Yrel - completed with quest 34478 & 34427
 		q(34435),	-- Find Ga'nar - completed with quest 34434 & 34740
 		q(34438),	-- Regarding Enormous Tanks - completed with quest 34958
 		q(34817),	-- Altar Altercation - completed with quest 34423
+		q(35251),	-- The Bounty of Bladespire - completed with quest 33657
 		q(35340),	-- What Happened Here? - completed with quest 35322
 		q(35387),	-- Through the Nether - completed with quest 35085
 		q(35388),	-- The Void March - completed with quest 35086
@@ -1003,9 +1006,6 @@ _.HiddenQuestTriggers = {
 		q(49563),	-- Warchief's Command: Frostfire Ridge! - completed with quest 49545
 
 		-- Frostfire Ridge
-		--q(33380),	-- REUSE - TODO: figure out from where it gets completed
-		--q(33407),	-- REUSE - TODO: figure out from where it gets completed
-		--q(35251),	-- The Bounty of Bladespire	- TODO: figure out from where it gets completed
 		--q(34734),	-- The Loyalty of Olin Umberhide - TODO: figure out from where it gets completed
 		--q(37062),	-- Tricks of the Trade - TODO: figure out from where it gets completed
 
@@ -1443,7 +1443,7 @@ _.HiddenQuestTriggers = {
 		q(35431),	-- both these triggered turning in other quests in the lower area of draenor gorgrond
 		q(34565),	-- Was just walking in spires of arak and boom
 		q(35340),	-- ooks to have triggered when 35339 was turned in
-		q(36796),	-- turned in a group of quests in spires, might have triggered with 36790
+
 		--	QUESTING / LEVELING / VARIOUS
 		q(37187),	-- The Dark Portal
 		q(37677),	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Maraad

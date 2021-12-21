@@ -417,10 +417,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(35107),	-- Book of Alchemical Secrets
 			q(35855),	-- Book of Draenic Cures
 			q(35854),	-- Botanic Cure Guide
-			q(37250),	-- Broken Precipice POI Tracking Quest
-			q(37251),	-- Broken Precipice POI Tracking Quest
-			q(37252),	-- Broken Precipice POI Tracking Quest
-			q(37253),	-- Broken Precipice POI Tracking Quest
 			q(35786),	-- Bronze Victory
 			q(37305),	-- Bronze Victory
 			q(33150),	-- Brute Beatdown
@@ -537,8 +533,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(35789),	-- Infantry Leather Cap
 			q(33638),	-- Insatiable Swarms
 			q(34509),	-- Into the Jaws of the Jungle
-			q(36123),	-- Into The Wilderness
-			q(36228),	-- Into The Wilderness
 			q(35755),	-- Intricately Carved Battle Staff
 			q(33987),	-- Intro Tracking
 			q(33496),	-- Iron Horde in Karabor
@@ -609,8 +603,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(33750),	-- Quest Reward Summary: Pipeworks
 			q(33749),	-- Quest Reward Summary: Train Depot
 			q(35824),	-- Renewed Band
-			q(36130),	-- Reporting For Duty
-			q(36197),	-- Reporting For Duty
 			q(35781),	-- Restored Infantry Cloak
 			q(35801),	-- Restored Lace Kerchief
 			q(35831),	-- Restored Statue
@@ -664,8 +656,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(33737),	-- Strike While the Iron Is Hot
 			q(37120),	-- Sunspring POI Tracking Quest
 			q(35853),	-- Super Immunoglobulin Kit
-			q(36127),	-- Survey Ashran
-			q(36226),	-- Survey Ashran
 			q(35296),	-- Tainted Garden
 			q(33656),	-- Talbuk Roundup
 			q(34366),	-- Tanaan 01: Front of the Portal
@@ -722,8 +712,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(36705),	-- The Ring of Blood: Mogor!
 			q(36670),	-- The Ring of Blood: Skull Chewer!
 			q(36672),	-- The Ring of Blood: Venoxis!
-			q(36125),	-- The Road of Glory
-			q(36227),	-- The Road of Glory
 			q(34064),	-- The Search For Drogguk
 			q(34121),	-- The Shard of Shadows
 			q(33781),	-- The Survivalist's Way
@@ -830,8 +818,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(36865),	-- UBRS Event Dungeon Reward Quest
 			q(35768),	-- Ultra Healing Potion
 			q(35777),	-- Unbendable Card
-			q(36133),	-- Uncovering the Artifact Fragments
-			q(36198),	-- Uncovering the Artifact Fragments
 			q(33509),	-- Unexpected Assault
 			q(33510),	-- Unexpected Assault
 			q(35008),	-- UNUSED
@@ -908,8 +894,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(34008),	-- We Are Leaving!
 			q(34844),	-- We Require More Resources
 			q(35193),	-- Weapons Of Our Enemies
-			q(36119),	-- Welcome to Ashran
-			q(36196),	-- Welcome to Ashran
 			q(35799),	-- Wooly Bedroll
 			q(33959),	-- You Sunk My Battleship!
 			q(36838),	-- Your Second Alchemy Work Order
@@ -1087,7 +1071,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(38240),	-- Raid Active
 			q(37753),	-- Relic Hunter Active
 			q(38291),	-- Some Dust
-			q(38282),	-- Some Dust
+			q(38292),	-- Some Dust
 			q(38114),	-- TBC 60-69
 			q(38125),	-- TBC 60-69
 			q(38136),	-- TBC 60-69

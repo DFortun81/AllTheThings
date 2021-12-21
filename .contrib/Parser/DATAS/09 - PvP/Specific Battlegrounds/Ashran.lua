@@ -404,6 +404,18 @@ _.PVP =
 						["races"] = HORDE_ONLY,
 						["u"] = REMOVED_FROM_GAME,
 					}),
+					q(36123, {	-- Into The Wilderness (A)
+						["provider"] = { "n", 82909 },	-- Chris Clarkie
+						["coord"] = { 43.4, 76.8, 1478 },
+						["races"] = ALLIANCE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(36228, {	-- Into The Wilderness (H)
+						["provider"] = { "n", 83869 },	-- Angry Zurge
+						["coord"] = { 45.8, 28.8, 1478 },
+						["races"] = HORDE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(39096, {	-- Slay Them All! (A)
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,
@@ -444,6 +456,18 @@ _.PVP =
 							}),
 						},
 					}),
+					q(36133, {	-- Uncovering the Artifact Fragments (A)
+						["provider"] = { "n", 88682 },	-- Misirin Stouttoe
+						["coord"] = { 43.2, 77.0, 1478 },
+						["races"] = ALLIANCE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(36198, {	-- Uncovering the Artifact Fragments (H)
+						["provider"] = { "n", 94864 },	-- Cymre Brightblade
+						["coord"] = { 45.8, 29.0, 1478 },
+						["races"] = HORDE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(56336, {	-- Uncovering the Artifact Fragments (A)
 						["provider"] = { "n", 155283 },	-- Ecilam
 						["isWeekly"] = true,
@@ -455,6 +479,50 @@ _.PVP =
 						["isWeekly"] = true,
 						["coord"] = { 45.4, 27.1, 1478 },
 						["races"] = HORDE_ONLY,
+					}),
+					q(36130, {	-- Reporting For Duty (A)
+						["provider"] = { "n", 84173 },	-- Commander Anne Dunworthy
+						["coord"] = { 44.6, 74.0, 1478 },
+						["races"] = ALLIANCE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(36197, {	-- Reporting For Duty (H)
+						["provider"] = { "n", 84473 },	-- General Ushet Wolfbarger
+						["coord"] = { 45.0, 27.8, 1478 },
+						["races"] = HORDE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(36127, {	-- Survey Ashran (A)
+						["provider"] = { "n", 82901 },	-- Farseer Kylanda
+						["coord"] = { 44.8, 75.0, 1478 },
+						["races"] = ALLIANCE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(36226, {	-- Survey Ashran (H)
+						["provider"] = { "n", 84660 },	-- Mare Wildrunner
+						["coord"] = { 47.0, 26.8, 1478 },
+						["races"] = HORDE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(36125, {	-- The Road of Glory (A)
+						["provider"] = { "n", 82909 },	-- Chris Clarkie
+						["coord"] = { 43.4, 76.8, 1478 },
+						["races"] = ALLIANCE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(36227, {	-- The Road of Glory (H)
+						["provider"] = { "n", 83869 },	-- Angry Zurge
+						["coord"] = { 45.8, 28.8, 1478 },
+						["races"] = HORDE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(36119, {	-- Welcome to Ashran (A)
+						["races"] = ALLIANCE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(36196, {	-- Welcome to Ashran (H)
+						["races"] = HORDE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(56338, {	-- Volrath Must Die
 						["provider"] = { "n", 84173 },	-- Commander Anne Dunworthy
