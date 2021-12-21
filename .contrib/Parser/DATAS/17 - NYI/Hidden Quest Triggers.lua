@@ -41,9 +41,6 @@ _.HiddenQuestTriggers = {
 		--  UNKNOWN/NYI  --
 		-------------------
 		q(38995),	-- Unused
-		q(39749),	-- Tracking Quest (triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands)
-		q(39748),	-- Tracking Quest (triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands)
-					-- Unflagged/flagged on a lvl 1 Bank alt when logging in lol
 		q(48671),	-- Lockout Tracking - Normal - Fire
 		q(48674),	-- Lockout Tracking - Normal - Islands. Possibly used in multiple situations
 		q(48676),	-- Lockout Tracking - Normal - Forest.
@@ -1439,27 +1436,29 @@ _.HiddenQuestTriggers = {
 		-------------------
 		--      WOD      --
 		-------------------
-		-- Darkals HiddenQuestTriggers
-		q(39709),	-- First time this quest popped in WoD Garrison after opening some salvage crates. Then it unflagged on fresh toon, after I walked a little it got completed again
-		q(35653),	-- both these triggered turning in other quests in the lower area of draenor gorgrond
-		q(35431),	-- both these triggered turning in other quests in the lower area of draenor gorgrond
-		q(34565),	-- Was just walking in spires of arak and boom
-
 		--	QUESTING / LEVELING / VARIOUS
 		q(37187),	-- The Dark Portal
-		q(37677),	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Maraad
-		q(37676),	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Thrall
 		q(35914),	-- Default invasion reward flag during the first garrison invasion as part of Draenor's base intro
 		q(37864),	-- Voidtalon (Pops after the player leaves the scenario.)
-
+		
 		--	DUNGEONS & RAIDS
 		q(37501),	-- Draenor Challenge Mode - Bronze Addition (1st)
 		q(37502),	-- Draenor Challenge Mode - Consolation (1st)
 		q(37503),	-- Draenor Challenge Mode - Gold Addition (1st)
 		q(37504),	-- Draenor Challenge Mode - Silver Addition (1st)
+		q(37333),	-- LFGDungeons - Draenor - Heroic Random - 1st
+		q(37334),	-- LFGDungeons - Draenor - Heroic Random - Nth
+		q(37335),	-- LFGDungeons - Draenor - Normal Random - 1st
+		q(37336),	-- LFGDungeons - Draenor - Normal Random - Nth
+		q(40829),	-- LFGDungeons - Draenor 6.2 - Raid Finder - 1st
 		q(35963),	-- Warlords Heroic Dungeon Reward Quest - triggered at the end of Mythic Grimrail Depot
 		q(36277),	-- Warlords Max Level Dungeon Bonus Reward
 		q(35962),	-- Warlords Max Level Dungeon Reward Quest - triggered at the end of Normal Grimrail Depot
+		q(38117),	-- WOD 90-99
+		q(38128),	-- WOD 90-99
+		q(38139),	-- WOD 90-99
+		q(38157),	-- WOD 90-99
+		q(38168),	-- WOD 90-99
 
 		--	GARRISON
 		q(36793),	-- Frostfire Ridge - Founded Garrison - triggers after using the Master Surveyor during "Establish Your Garrison"
@@ -1469,13 +1468,23 @@ _.HiddenQuestTriggers = {
 		q(38315),	-- DEPRECATED - triggered when turning in "Bringing the Bass" on alliance
 		q(38401),	-- DEPRECATED - triggered when turning in "Bringing the Bass" on alliance
 		q(38348),	-- Triggers when using "Music Roll: Silvermoon" or "Music Roll: Exodar". Appears to be a duplicate ID
-		q(39406),	-- Tracking Quest. Related to weekly naval mission in the shipyard
-		q(39407),	-- Tracking Quest. Related to weekly naval mission in the shipyard
-		q(39411),	-- Tracking Quest. Related to weekly naval mission in the shipyard
-		q(39723),	-- Tracking Quest. Related to rare naval missions in the shipyard
-		q(39724),	-- Tracking Quest. Related to rare naval missions in the shipyard
-		q(39725),	-- Tracking Quest. Related to rare naval missions in the shipyard
-		q(39750),	-- Tracking Quest. Related to rare naval missions in the shipyard
+		q(39406),	-- Tracking Quest - Related to weekly naval mission in the shipyard
+		q(39407),	-- Tracking Quest - Related to weekly naval mission in the shipyard
+		q(39408),	-- Tracking Quest - interact with the mission table.
+		q(39409),	-- Tracking Quest - After completing the WoD mission "Ghost Wrangler" (mission ID: 305), although not sure why that would be tracked.
+		q(39410),	-- Tracking Quest - First interaction with the Garrison Mission Table this week. Completed a bunch of mission + one of the followers leveled up
+		q(39411),	-- Tracking Quest - Related to weekly naval mission in the shipyard
+		q(39412),	-- Tracking Quest - Something having to do with Naval Missions most likely (triggered with 39414)
+		q(39413),	-- Tracking Quest - Garrison/Shipyard Mission Table
+		q(39414),	-- Tracking Quest - Gladiator's Sanctum - Triggers on construction of the gladiator's sanctum (Lunarfall)
+		q(39415),	-- Tracking Quest - Garrison/Shipyard Mission Table
+		q(39709),	-- Tracking Quest - First time this quest popped in WoD Garrison after opening some salvage crates. Then it unflagged on fresh toon, after I walked a little it got completed again
+		q(39710),	-- Tracking Quest - Garrison/Shipyard Mission Table
+		q(39711),	-- Tracking Quest - Garrison/Shipyard Mission Table
+		q(39723),	-- Tracking Quest - Related to rare naval missions in the shipyard
+		q(39724),	-- Tracking Quest - Related to rare naval missions in the shipyard
+		q(39725),	-- Tracking Quest - Related to rare naval missions in the shipyard
+		q(39750),	-- Tracking Quest - Related to rare naval missions in the shipyard
 		q(34679),	-- Nagrand - Alliance Stables Tracking Event
 		q(34680),	-- Nagrand - Alliance Workshop Tracking Event
 		q(37202),	-- Nagrand - Hemet Nesingwary Visitor Tracking Event
@@ -1493,7 +1502,6 @@ _.HiddenQuestTriggers = {
 		q(36886),	-- Ogre Waygate — opening waygate in gorgrond
 		q(36294),	-- Lumber Mill — Phylarch the Evergreen first attack
 		q(36295),	-- Lumber Mill — Phylarch the Evergreen second attack
-		q(39414),	-- Gladiator's Sanctum - Triggers on construction of the gladiator's sanctum (Lunarfall)
 		q(36058),	-- Seal of Tempered Fate: Armory
 		q(36894),	-- Nemesis Flag, Draenei/Blood Elf — all these are for burning effigies of specific races in the Gladiator Sanctum
 		q(36891),	-- Nemesis Flag, Dwarf/Forsaken
@@ -1536,25 +1544,62 @@ _.HiddenQuestTriggers = {
 		q(36554),	-- Garrison Max-level Choice Tracker: Nagrand Mok'gol Watchpost
 		q(37646),	-- See New Brightstone, See Wolfed Out Thorn (Garrison Attack?)
 
-		-- GARRISON COMMAND TABLE
-		q(39413),
-		q(39415),
-		q(39710),
-		q(39711),	-- Tracking Quest: Garrison/Shipyard Mission Table
-
-		--	TREASURES
-		q(34521),	-- Treasure: Glowing Obsidian Shard (secondary quest triggered when looting Burning Pearl in Frostfire Ridge)
-		q(34968),	-- Treasure: Ice-Covered Supplies (secondary quest triggered when looting Forgotten Supplies in Frostfire Ridge)
-		q(34184),	-- Vignette: Aarkos - Killed Boss — first quest that triggers before looting Aarko's Family Treasure in Talador (we have the loot quest attached to the treasure)
-
 		--	Short-Supply Reward - UNKNOWN TRIGGERS
 		q(37461),	-- Short-Supply Reward
 		q(37463),	-- Short-Supply Reward
 		q(37465),	-- Short-Supply Reward
+		q(37648),	-- Short-Supply Reward
+		q(37681),	-- Short-Supply Reward
+		q(37682),	-- Short-Supply Reward
+		q(37683),	-- Short-Supply Reward
+		q(37684),	-- Short-Supply Reward
 		q(39376),	-- Short-Supply Reward
 		q(39377),	-- Short-Supply Reward
 		q(39378),	-- Short-Supply Reward
+		q(39398),	-- Short-Supply Reward
+		q(39468),	-- Short-Supply Reward
+		q(39473),	-- Short-Supply Reward
+		q(39474),	-- Short-Supply Reward
+		q(39475),	-- Short-Supply Reward
+		q(39476),	-- Short-Supply Reward
+		q(39477),	-- Short-Supply Reward
+		q(39478),	-- Short-Supply Reward
+		q(39479),	-- Short-Supply Reward
+		q(39480),	-- Short-Supply Reward
+		q(39481),	-- Short-Supply Reward
+		q(39482),	-- Short-Supply Reward
+		q(39483),	-- Short-Supply Reward
+		q(39484),	-- Short-Supply Reward
+		q(39485),	-- Short-Supply Reward
 
+		-- Tracking Quest - UNKNOWN TRIGGERS
+		q(32935),	-- Tracking Quest
+		q(37423),	-- Tracking Quest
+		q(37424),	-- Tracking Quest
+		q(37425),	-- Tracking Quest
+		q(37426),	-- Tracking Quest
+		q(37427),	-- Tracking Quest
+		q(37428),	-- Tracking Quest
+		q(37429),	-- Tracking Quest
+		q(37430),	-- Tracking Quest
+		q(37431),	-- Tracking Quest
+		q(37432),	-- Tracking Quest
+		q(39727),	-- Tracking Quest
+		q(39728),	-- Tracking Quest
+		q(39736),	-- Tracking Quest
+		q(39737),	-- Tracking Quest
+		q(39738),	-- Tracking Quest
+		q(39739),	-- Tracking Quest
+		q(39740),	-- Tracking Quest
+		q(39749),	-- Tracking Quest - triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands
+		q(39748),	-- Tracking Quest - triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands
+					-- Unflagged/flagged on a lvl 1 Bank alt when logging in lol
+		q(39751),	-- Tracking Quest
+		q(39752),	-- Tracking Quest
+		q(39753),	-- Tracking Quest
+		q(40416),	-- Tracking Quest
+		q(40853),	-- Tracking Quest
+		
 		--	???
 		q(33964),	-- Arak Flowerpicker
 		q(36636),	-- Blueprint Read
@@ -1585,7 +1630,7 @@ _.HiddenQuestTriggers = {
 		q(33960),	-- Talador Flowerpicker
 		q(33965),	-- Tanaan Flowerpicker
 		q(39128),	-- Tanaan Vignette
-		q(39713),	-- Tracking Quest. Pops immediately on new characters but no other info known. Possibly legendary ring related
+		q(39713),	-- Tracking Quest - Pops immediately on new characters but no other info known. Possibly legendary ring related
 		q(52969),	-- Going through the Stormwind Portal to Stormshield while on the WoD timeline in Chromie time
 
 		-------------------

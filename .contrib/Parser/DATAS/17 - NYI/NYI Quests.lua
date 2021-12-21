@@ -728,7 +728,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(33253),	-- To the Defense of Karabor
 			q(33401),	-- Torg's Trouble
 			q(33352),	-- Tracking Event: Chief killed
-			q(32935),	-- Tracking Quest
 			q(33418),	-- Tracking Quest - Failed
 			q(33748),	-- Tracking Quest - Saberon Servent Snip Scene
 			q(34705),	-- Tracking Quest - Shadowmoon Intro
@@ -971,34 +970,16 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(37567),	-- Interact with Dudebro
 			q(37297),	-- Kill Jeron Emberfall
 			q(37295),	-- Kill Rylai Crestfall
-			q(37333),	-- LFGDungeons - Draenor - Heroic Random - 1st
-			q(37334),	-- LFGDungeons - Draenor - Heroic Random - Nth
-			q(37335),	-- LFGDungeons - Draenor - Normal Random - 1st
-			q(37336),	-- LFGDungeons - Draenor - Normal Random - Nth
 			q(37248),	-- Mastering the Menagerie
 			q(37475),	-- Molten Quarry
 			q(37513),	-- Ogres Invasion! BETA
 			q(35832),	-- Priceless Gryphon Figurine
 			q(37512),	-- Primals Invasion! BETA
 			q(35806),	-- Rugged Knapsack
-			q(37681),	-- Short-Supply Reward
-			q(37682),	-- Short-Supply Reward
-			q(37683),	-- Short-Supply Reward
-			q(37684),	-- Short-Supply Reward
 			q(37597),	-- Talk to Testie
 			q(37515),	-- The Iron Horde Approaches... BETA
 			q(37508),	-- Tracking Event: Stacking the Deck
 			q(37509),	-- Tracking Event: Stacking the Deck
-			q(37423),	-- Tracking Quest
-			q(37424),	-- Tracking Quest
-			q(37425),	-- Tracking Quest
-			q(37426),	-- Tracking Quest
-			q(37427),	-- Tracking Quest
-			q(37428),	-- Tracking Quest
-			q(37429),	-- Tracking Quest
-			q(37430),	-- Tracking Quest
-			q(37431),	-- Tracking Quest
-			q(37432),	-- Tracking Quest
 			q(37531),	-- Tracking - See Closed Chest
 			q(36343),	-- UNUSED
 			q(37539),	-- UNUSED
@@ -1088,11 +1069,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(38137),	-- WLK 70-79
 			q(38155),	-- WLK 70-79
 			q(38166),	-- WLK 70-79
-			q(38117),	-- WOD 90-99
-			q(38128),	-- WOD 90-99
-			q(38139),	-- WOD 90-99
-			q(38157),	-- WOD 90-99
-			q(38168),	-- WOD 90-99
 			q(38007),	-- zzOldEMPTY TEST
 
 			-- 6.1.1 - no NYI quests
@@ -1131,30 +1107,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(39002),	-- Ogres of the Deep
 			q(38214),	-- REUSE
 			q(38222),	-- REUSE
-			q(39398),	-- Short-Supply Reward
-			q(39468),	-- Short-Supply Reward
-			q(39473),	-- Short-Supply Reward
-			q(39474),	-- Short-Supply Reward
-			q(39475),	-- Short-Supply Reward
-			q(39476),	-- Short-Supply Reward
-			q(39477),	-- Short-Supply Reward
-			q(39478),	-- Short-Supply Reward
-			q(39479),	-- Short-Supply Reward
-			q(39480),	-- Short-Supply Reward
-			q(39481),	-- Short-Supply Reward
-			q(39482),	-- Short-Supply Reward
-			q(39483),	-- Short-Supply Reward
-			q(39484),	-- Short-Supply Reward
-			q(39485),	-- Short-Supply Reward
 			q(39524),	-- Slay Them All!
 			q(39525),	-- Slay Them All!
 			q(39001),	-- To Farahlon!
-			q(39727),	-- Tracking Quest
-			q(39728),	-- Tracking Quest
-			q(39740),	-- Tracking Quest
-			q(39751),	-- Tracking Quest
-			q(39752),	-- Tracking Quest
-			q(39753),	-- Tracking Quest
 			q(39036),	-- Tracking: Alliance Siegebreaker
 			q(39035),	-- Tracking: Horde Siegebreaker
 			q(39037),	-- Tracking: Iron Horde Siegebreaker
@@ -1185,8 +1140,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(34120),	-- The Shard of Shadows
 			q(39714),	-- Where Are the Children?
 
-			-- 6.2.3
-			q(40829),	-- LFGDungeons - Draenor 6.2 - Raid Finder - 1st
+			-- 6.2.3 - no NYI quests
 		}),
 	}),
 }));

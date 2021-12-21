@@ -328,6 +328,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 })));
 _.HiddenQuestTriggers = {
 	tier(WOD_TIER, {
+		q(35541),	-- Sethekk Halls Bonus Objective
 		q(35539),	-- Sethekk Halls Reward Quest - Normal completion
 		q(35540),	-- Sethekk Halls Reward Quest - Heroic completion
 	}),

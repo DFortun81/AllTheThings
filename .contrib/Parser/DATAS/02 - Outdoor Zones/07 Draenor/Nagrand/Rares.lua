@@ -75,6 +75,13 @@ _.Zones =
 						i(119405),	-- Durg's Heavy Maul
 					},
 				}),
+				n(82486, {	-- Explorer Nozzand
+					["questID"] = 35623,
+					["coord"] = { 89.0, 41.0, DRAENOR_NAGRAND },
+					["g"] = {
+						currency(824),	-- Garrison Resources
+					},
+				}),
 				n(82975, {	-- Fangler
 					["questID"] = 35836,
 					["coord"] = { 75.3, 10.9, DRAENOR_NAGRAND },

@@ -2586,11 +2586,9 @@ _.ExpansionFeatures =
 
 _.HiddenQuestTriggers =
 {
-	q(39412),	-- Something having to do with Naval Missions most likely (triggered with 39414)
 	q(37647),	-- Tracking Quest - Hide Old Baros / Thorn / Brightstone (after picking up the rose quest item during quest "Garrison Campaign: Every Rose Has Its Thorn")
 	q(37670),	-- [Deprecated] Tracking Quest - Hide Old Baros / Thorn / Brightstone (after picking up the rose quest item during quest "Garrison Campaign: Every Rose Has Its Thorn")
 	q(39829),	-- Sleigh and Guards Shared Criteria (Winter Veil)
 	q(39610),	-- Winter Veil Active (Winter Veil)
 	q(38276),	-- 6.1 Garrison - World Boss Invasion Loot (killing Commander Dro'gan)
-	q(39409),	-- After completing the WoD mission "Ghost Wrangler" (mission ID: 305), although not sure why that would be tracked.
 };

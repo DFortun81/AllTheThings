@@ -1302,6 +1302,9 @@ _.HiddenQuestTriggers = {
 		q(37652),	-- Frostfire Ridge - Vignette: Jabberjaw, triggers with 37386
 		q(34517),	-- Frostfire Ridge - Vignette: Gargantuan Frostbeak, triggers with 34522 after killing Ug'lok the Frozen
 		q(34519),	-- Frostfire Ridge - Vignette: Brotoculus, triggers with 34522 after killing Ug'lok the Frozen
+		q(34521),	-- Frostfire Ridge - Treasure: Glowing Obsidian Shard - secondary quest triggered when looting Burning Pearl in Frostfire Ridge
+		q(34968),	-- Frostfire Ridge - Treasure: Ice-Covered Supplies - secondary quest triggered when looting Forgotten Supplies in Frostfire Ridge
+		q(34313),	-- Frostfire Ridge - Orlana Strongbrow - triggers during quest "The Shadow Gate" (questID 34381)
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
