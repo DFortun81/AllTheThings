@@ -9,7 +9,7 @@ _.Instances = { tier(WOD_TIER, {
 		["g"] = {
 			e(1291, {	-- Drov the Ruiner
 				["isWeekly"] = true,
-				["questID"] = 37462,
+				["questID"] = 37460,
 				["isRaid"] = true,
 				["coord"] = { 44.1, 39.9, GORGROND },
 				["maps"] = {	-- all Gorgrond maps
@@ -149,3 +149,11 @@ _.Instances = { tier(WOD_TIER, {
 		},
 	}),
 })};
+root("HiddenQuestTriggers", {
+	tier(WOD_TIER, {
+		q(33069),	-- REUSEME - Supreme Lord Kazzak bonus roll
+		q(37675),	-- Short-Supply Reward - Tarlna the Ageless bonus roll & Drov the Ruiner bonus roll
+		q(37673),	-- Short-Supply Reward - Drov the Ruiner bonus roll
+		q(37672),	-- Short-Supply Reward - Rukhmar bonus roll
+	}),
+});

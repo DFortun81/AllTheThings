@@ -776,7 +776,8 @@ _.HiddenQuestTriggers = {
 		q(38038),	-- Max-level Choice Tracker: Tanaan 6.2 - The Iron Front (H)
 		q(38042),	-- Max-level Choice Tracker: Tanaan 6.2 - Zeth'Gol (A)
 		q(38041),	-- Max-level Choice Tracker: Tanaan 6.2 - Zeth'Gol (H)
-		q(33069),	-- REUSEME (after killing Supreme Lord Kazzak and using Bonus Roll)
+		q(39375),	-- Short-Supply Reward - triggers after looting Suspiciously Glowing Chest
+		q(39434),	-- Short-Supply Reward - triggers on the first rare kill (Baleful Spaulders itemID 128348)
 		q(39416),	-- Skoller's Bag o' Squirrel Treats - after talking to Skoller and getting his toy (Skoller's Bag of Squirrel Treats)
 		q(37887),	-- Tanaan Garrison Max-level Choice Tracker: ANY CHOICE MADE (A)
 		q(37892),	-- Tanaan Garrison Max-level Choice Tracker: ANY CHOICE MADE (H)

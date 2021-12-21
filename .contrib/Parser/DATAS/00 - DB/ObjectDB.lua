@@ -1029,6 +1029,7 @@ _.ObjectNames = {
 	[237022] = "Command Board",
 	[237511] = "Strange Spore",
 	[237821] = "Bladefury's Orders",
+	[237946] = "Spirit Coffer",
 	[239120] = "Okuna Longtusk's Pack",
 	[239143] = "Glass of Warm Milk",
 	[239171] = "Glass of Warm Milk",

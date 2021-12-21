@@ -1546,13 +1546,10 @@ _.HiddenQuestTriggers = {
 		q(34968),	-- Treasure: Ice-Covered Supplies (secondary quest triggered when looting Forgotten Supplies in Frostfire Ridge)
 		q(34184),	-- Vignette: Aarkos - Killed Boss — first quest that triggers before looting Aarko's Family Treasure in Talador (we have the loot quest attached to the treasure)
 
-		--	WORLD BOSSES (probably?  'short-supply reward' is usually a bonus roll)
-		q(37460),	-- Gorgrond - Short-Supply Reward (Drov the Ruiner killed)
-		q(37672),	-- Short-Supply Reward (Rukhmar bonus roll)
-		q(37673),	-- Drov the Ruiner bonus roll / Triggered when killing Tarlna the Ageless (side note: accompanied by Pepe
-		q(37675),	-- Tarlna the Ageless bonus roll
-		q(39434),	-- Short-Supply Reward / First Rare killed in Tanaan
-		q(39375),	-- Short-Supply Reward / Suspiciously Glowing Chest in Tanaan
+		--	Short-Supply Reward - UNKNOWN TRIGGERS
+		q(37461),	-- Short-Supply Reward
+		q(37463),	-- Short-Supply Reward
+		q(37465),	-- Short-Supply Reward
 		q(39376),	-- Short-Supply Reward
 		q(39377),	-- Short-Supply Reward
 		q(39378),	-- Short-Supply Reward
@@ -1560,7 +1557,6 @@ _.HiddenQuestTriggers = {
 		--	???
 		q(33964),	-- Arak Flowerpicker
 		q(36636),	-- Blueprint Read
-		q(36856),	-- Burning Missive
 		q(36849),	-- Burning Missive
 		q(36850),	-- Burning Missive
 		q(36851),	-- Burning Missive
@@ -1568,6 +1564,7 @@ _.HiddenQuestTriggers = {
 		q(36853),	-- Burning Missive
 		q(36854),	-- Burning Missive
 		q(36855),	-- Burning Missive
+		q(36856),	-- Burning Missive
 		q(34580),	-- Draenor Flowerpicker
 		q(34581),	-- Draenor Flowerpicker Note Found
 		q(34831),	-- Encounter Mushroom
@@ -1588,7 +1585,6 @@ _.HiddenQuestTriggers = {
 		q(33965),	-- Tanaan Flowerpicker
 		q(39128),	-- Tanaan Vignette
 		q(39713),	-- Tracking Quest. Pops immediately on new characters but no other info known. Possibly legendary ring related
-		q(34024),	-- Tracking Quest. This completes when you kill the Windfang Matriarch after helping Romuul.
 		q(33786),	-- ??????. This was completed around Fiona's caravan in Shadowmoon Valley - Draenor (not entirely sure what triggered it.)
 		q(52969),	-- Going through the Stormwind Portal to Stormshield while on the WoD timeline in Chromie time
 

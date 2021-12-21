@@ -1485,6 +1485,12 @@ _.Zones =
 _.HiddenQuestTriggers = {
 	tier(WOD_TIER, {
 		q(36906),	-- Ogre Waygate
+		q(37802),	-- Gutrek's Hilt Looted - triggers during "Gutrek's Cleaver: The First Piece" (questID 37797)
+		q(37803),	-- Gutrek's Pommel Looted - triggers during "Gutrek's Cleaver: The Second Piece" (questID 37798)
+		q(37804),	-- Gutrek's Blade Looted - triggers during "Gutrek's Cleaver: The Final Piece" (questID 37799)
+		q(37671),	-- Nagrand 6.0:JP3 - Broken Precipice - Tracking Quest - See Greblin Fastfizzle - triggers during "Garrison Campaign: The Broken Precipice" (questID 35985 & 36117)
+		-- TODO: verify
+		--q(37805),	-- Goblin Looted - triggers during "Gutrek's Cleaver: The Spirit Forge" (questID 37811 & 37992)
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {

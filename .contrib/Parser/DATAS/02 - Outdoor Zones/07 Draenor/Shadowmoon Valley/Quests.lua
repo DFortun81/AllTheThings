@@ -1093,6 +1093,7 @@ _.HiddenQuestTriggers = {
 		q(35626),	-- Shadowmoon Valley - Friend of the Exarchs: Apprentice Artificer Andren selected
 		q(35629),	-- Shadowmoon Valley - Friend of the Exarchs: Vindicator Onaala selected
 		q(35628),	-- Shadowmoon Valley - Friend of the Exarchs: Rangari Chel selected
+		q(34024),	-- Shadowmoon Valley - Fungal Heart - triggers when you kill the Windfang Matriarch during quest "The Clarity Elixir" (questID 33076)
 		q(33151),	-- Shadowmoon Valley - Saw scout Valdez arrive in Twilight Glade
 		q(37451),	-- Shadowmoon Valley - See Qiana Moonshadow (Follower Mission Turn in) - triggers while on quest "Qiana Moonshadow" (questID 34646)
 		q(37674),	-- Shadowmoon Valley - Shadowmoon Valley 6.0:JP3 - Gloomshade Grove - Tracking Quest - See Shelly Hamby (Game of Thorns) - after killing King Deathbloom

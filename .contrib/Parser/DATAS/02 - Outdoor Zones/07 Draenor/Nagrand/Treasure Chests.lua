@@ -386,6 +386,13 @@ root("Zones", {
 					["coord"] = { 75.2, 64.9, DRAENOR_NAGRAND },
 					["sym"] = COMMON_TREASURE_SYM,
 				}),
+				o(237946, {	-- Spirit Coffer
+					["questID"] = 37435,
+					["coord"] = { 40.4, 68.6, DRAENOR_NAGRAND },
+					["g"] = {
+						currency(824),	-- Garrison Resources
+					},
+				}),
 				o(236610, {	-- Spirit's Gift
 					["questID"] = 36846,
 					["coord"] = { 35.5, 57.3, DRAENOR_NAGRAND },
