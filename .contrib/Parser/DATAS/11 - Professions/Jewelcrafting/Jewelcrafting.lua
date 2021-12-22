@@ -289,7 +289,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 				["recipeID"] = 25612
 			}
 		}),
-		filter(50, {	-- Miscellaneous
+		filter(MISC, {
 			{
 				["name"] = "Coarse Stone Statue",
 				["recipeID"] = 32801

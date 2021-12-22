@@ -1285,7 +1285,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(13916),	-- 92 Pound Mightfish
 			i(13917),	-- 103 Pound Mightfish
 		}),
-		filter(50, {	-- Miscellaneous
+		filter(MISC, {
 			i(13907),	-- 7 Pound Lobster
 			i(13908),	-- 9 Pound Lobster
 			i(13909),	-- 12 Pound Lobster
@@ -1542,7 +1542,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 		filter(FIST_WEAPONS, {
 			i(20954),	-- Heavy Iron Knuckles
 		}),
-		filter(50, {	-- Miscellaneous
+		filter(MISC, {
 			i(25880),	-- Coarse Stone Statue
 			i(25883),	-- Dense Stone Statue
 			i(25881),	-- Heavy Stone Statue
