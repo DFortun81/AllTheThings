@@ -1437,198 +1437,6 @@ _.HiddenQuestTriggers = {
 		q(32962),	-- "Tom" Bone Apart - Tracking Quest — looting first chest after speaking with Zarhym.  second chest didn't have a quest, but didn't finish so not sure if there are other quests
 
 		-------------------
-		--      WOD      --
-		-------------------
-		tier(WOD_TIER, {
-			--	QUESTING / LEVELING / VARIOUS
-			q(37187),	-- The Dark Portal
-			q(35914),	-- Default invasion reward flag during the first garrison invasion as part of Draenor's base intro
-
-			--	DUNGEONS & RAIDS
-			q(38116, {["_drop"] = { "g" }}),	-- Cata/Mop 80-89
-			q(38127, {["_drop"] = { "g" }}),	-- Cata/MoP 80-89
-			q(38138),	-- Cata/MoP 80-89
-			q(38156),	-- Cata/MoP 80-89
-			q(38167),	-- Cata/MoP 80-89
-			q(38149),	-- Classic 10-19
-			q(38160),	-- Classic 10-19
-			q(38132),	-- Classic 20-29
-			q(38150),	-- Classic 20-29
-			q(38161),	-- Classic 20-29
-			q(38133),	-- Classic 30-39
-			q(38151),	-- Classic 30-39
-			q(38162),	-- Classic 30-39
-			q(38134),	-- Classic 40-49
-			q(38152),	-- Classic 40-49
-			q(38163),	-- Classic 40-49
-			q(38113, {["_drop"] = { "g" }}),	-- Classic 50-59
-			q(38124, {["_drop"] = { "g" }}),	-- Classic 50-59
-			q(38135),	-- Classic 50-59
-			q(38153),	-- Classic 50-59
-			q(38164),	-- Classic 50-59
-			q(37501),	-- Draenor Challenge Mode - Bronze Addition (1st)
-			q(37502),	-- Draenor Challenge Mode - Consolation (1st)
-			q(37503),	-- Draenor Challenge Mode - Gold Addition (1st)
-			q(37504),	-- Draenor Challenge Mode - Silver Addition (1st)
-			q(38118, {["_drop"] = { "g" }}),	-- Legion 100-109 A
-			q(38129, {["_drop"] = { "g" }}),	-- Legion 100-109 A
-			q(38140, {["_drop"] = { "g" }}),	-- Legion 100-109 A
-			q(38158, {["_drop"] = { "g" }}),	-- Legion 100-109 A
-			q(38169),	-- Legion 100-109 A
-			q(38171, {["_drop"] = { "g" }}),	-- Legion 100-109 A
-			q(38172, {["_drop"] = { "g" }}),	-- Legion 100-109 A
-			q(38119, {["_drop"] = { "g" }}),	-- Legion 100-109 H
-			q(38130, {["_drop"] = { "g" }}),	-- Legion 100-109 H
-			q(38141),	-- Legion 100-109 H
-			q(38159, {["_drop"] = { "g" }}),	-- Legion 100-109 H
-			q(38170),	-- Legion 100-109 H
-			q(38173, {["_drop"] = { "g" }}),	-- Legion 100-109 H
-			q(38174, {["_drop"] = { "g" }}),	-- Legion 100-109 H
-			q(37333),	-- LFGDungeons - Draenor - Heroic Random - 1st
-			q(37334),	-- LFGDungeons - Draenor - Heroic Random - Nth
-			q(37335),	-- LFGDungeons - Draenor - Normal Random - 1st
-			q(37336),	-- LFGDungeons - Draenor - Normal Random - Nth
-			q(40829),	-- LFGDungeons - Draenor 6.2 - Raid Finder - 1st
-			q(40395, {["_drop"] = { "g" }}),	-- LFGDungeons - Timewalking "Heroic" Random - Nth
-			q(36144, {["_drop"] = { "g" }}),	-- LFG WLK 75-80
-			q(36150, {["_drop"] = { "g" }}),	-- LFG WLK 75-80
-			q(36140, {["_drop"] = { "g" }}),	-- Pandaria 88-90
-			q(36148, {["_drop"] = { "g" }}),	-- Pandaria 88-90
-			q(38114, {["_drop"] = { "g" }}),	-- TBC 60-69
-			q(38125, {["_drop"] = { "g" }}),	-- TBC 60-69
-			q(38136),	-- TBC 60-69
-			q(38154),	-- TBC 60-69
-			q(38165),	-- TBC 60-69
-			q(35963),	-- Warlords Heroic Dungeon Reward Quest - triggered at the end of Mythic Grimrail Depot
-			q(36277),	-- Warlords Max Level Dungeon Bonus Reward
-			q(35962),	-- Warlords Max Level Dungeon Reward Quest - triggered at the end of Normal Grimrail Depot
-			q(38115, {["_drop"] = { "g" }}),	-- WLK 70-79
-			q(38126, {["_drop"] = { "g" }}),	-- WLK 70-79
-			q(38137),	-- WLK 70-79
-			q(38155),	-- WLK 70-79
-			q(38166),	-- WLK 70-79
-			q(38117, {["_drop"] = { "g" }}),	-- WOD 90-99
-			q(38128, {["_drop"] = { "g" }}),	-- WOD 90-99
-			q(38139),	-- WOD 90-99
-			q(38157),	-- WOD 90-99
-			q(38168),	-- WOD 90-99
-
-			-- ASSAULTS
-			q(36534),	-- Garrison Max-level Choice Tracker: (GROUP) Talador Shattrath City, West (When picking up Assault on the Heart of Shattrath on Horde character)
-			q(36547),	-- Garrison Max-level Choice Tracker: (GROUP) Talador Shattrath City, West (When picking up Assault on the Heart of Shattrath on Horde character)
-			q(36663),	-- Garrison Max-level Choice Tracker: ANY CHOICE MADE (When picking up Assault on the Heart of Shattrath on Horde character)
-			q(36664),	-- Garrison Max-level Choice Tracker: ANY CHOICE MADE (When picking up Assault on the Heart of Shattrath on Alliance character)
-			q(36537),	-- Garrison Max-level Choice Tracker: Spires Shadowmoon Cliffs
-			q(36558),	-- Garrison Max-level Choice Tracker: Spires Shadowmoon Cliffs
-			q(36532),	-- Garrison Max-level Choice Tracker: (GROUP) Gorgrond Blackrock Foundry
-			q(36545),	-- Garrison Max-level Choice Tracker: (GROUP) Gorgrond Blackrock Foundry
-			q(36527),	-- Garrison Max-level Choice Tracker: Frostfire Bloodmaul Compound
-			q(36549),	-- Garrison Max-level Choice Tracker: Frostfire Bloodmaul Compound
-			q(36528),	-- Garrison Max-level Choice Tracker: Shadowmoon Darktide Roost
-			q(36555),	-- Garrison Max-level Choice Tracker: Shadowmoon Darktide Roost
-			q(36533),	-- Garrison Max-level Choice Tracker: Gorgrond Primal Forest
-			q(36552),	-- Garrison Max-level Choice Tracker: Gorgrond Primal Forest
-			q(36531),	-- Garrison Max-level Choice Tracker: Shadowmoon Sanctum of Othaar
-			q(36556),	-- Garrison Max-level Choice Tracker: Shadowmoon Sanctum of Othaar
-			q(36539),	-- Garrison Max-level Choice Tracker: Spires Mushroom Swamp
-			q(36557),	-- Garrison Max-level Choice Tracker: Spires Mushroom Swamp
-			q(36540),	-- Garrison Max-level Choice Tracker: Nagrand Broken Precipice
-			q(36553),	-- Garrison Max-level Choice Tracker: Nagrand Broken Precipice
-			q(36541),	-- Garrison Max-level Choice Tracker: Nagrand Mok'gol Watchpost
-			q(36554),	-- Garrison Max-level Choice Tracker: Nagrand Mok'gol Watchpost
-			q(37646),	-- See New Brightstone, See Wolfed Out Thorn (Garrison Attack?)
-
-			--	Short-Supply Reward - UNKNOWN TRIGGERS
-			q(37461),	-- Short-Supply Reward
-			q(37463),	-- Short-Supply Reward
-			q(37465),	-- Short-Supply Reward
-			q(37648),	-- Short-Supply Reward
-			q(37681),	-- Short-Supply Reward
-			q(37682),	-- Short-Supply Reward
-			q(37683),	-- Short-Supply Reward
-			q(37684),	-- Short-Supply Reward
-			q(39376),	-- Short-Supply Reward
-			q(39377),	-- Short-Supply Reward
-			q(39378),	-- Short-Supply Reward
-			q(39398),	-- Short-Supply Reward
-			q(39468),	-- Short-Supply Reward
-			q(39473),	-- Short-Supply Reward
-			q(39474),	-- Short-Supply Reward
-			q(39475),	-- Short-Supply Reward
-			q(39476),	-- Short-Supply Reward
-			q(39477),	-- Short-Supply Reward
-			q(39478),	-- Short-Supply Reward
-			q(39479),	-- Short-Supply Reward
-			q(39480),	-- Short-Supply Reward
-			q(39481),	-- Short-Supply Reward
-			q(39482),	-- Short-Supply Reward
-			q(39483),	-- Short-Supply Reward
-			q(39484),	-- Short-Supply Reward
-			q(39485),	-- Short-Supply Reward
-
-			-- Tracking Quest - UNKNOWN TRIGGERS
-			q(32935),	-- Tracking Quest
-			q(37423),	-- Tracking Quest
-			q(37424),	-- Tracking Quest
-			q(37425),	-- Tracking Quest
-			q(37426),	-- Tracking Quest
-			q(37427),	-- Tracking Quest
-			q(37428),	-- Tracking Quest
-			q(37429),	-- Tracking Quest
-			q(37430),	-- Tracking Quest
-			q(37431),	-- Tracking Quest
-			q(37432),	-- Tracking Quest
-			q(39727),	-- Tracking Quest
-			q(39728),	-- Tracking Quest
-			q(39736),	-- Tracking Quest
-			q(39737),	-- Tracking Quest
-			q(39738),	-- Tracking Quest
-			q(39739),	-- Tracking Quest
-			q(39740),	-- Tracking Quest
-			q(39749),	-- Tracking Quest - triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands
-			q(39748),	-- Tracking Quest - triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands
-						-- Unflagged/flagged on a lvl 1 Bank alt when logging in lol
-			q(39751),	-- Tracking Quest
-			q(39752),	-- Tracking Quest
-			q(39753),	-- Tracking Quest
-			q(40416),	-- Tracking Quest
-			q(40853),	-- Tracking Quest
-
-			--	???
-			q(33964),	-- Arak Flowerpicker
-			q(36636),	-- Blueprint Read
-			q(36849),	-- Burning Missive
-			q(36850),	-- Burning Missive
-			q(36851),	-- Burning Missive
-			q(36852),	-- Burning Missive
-			q(36853),	-- Burning Missive
-			q(36854),	-- Burning Missive
-			q(36855),	-- Burning Missive
-			q(36856),	-- Burning Missive
-			q(34580),	-- Draenor Flowerpicker
-			q(34581),	-- Draenor Flowerpicker Note Found
-			q(34831),	-- Encounter Mushroom
-			q(33961),	-- Frostfire Flowerpicker
-			q(33966),	-- Gorgrond Flowerpicker
-			q(33963),	-- Nagrand Flowerpicker
-			q(34872),	-- Prized Repossessions Tracking
-			q(34985),	-- Prized Repossessions Tracking
-			q(34986),	-- Punching Through Tracking
-			q(34873),	-- Punching Through Tracking
-			q(35192),	-- See Reinforcements Teleport
-			q(33962),	-- Shadowmoon Flowerpicker
-			q(34053),	-- SoL Conversation Tracker
-			q(36942),	-- Soulbinder Aedraa
-			q(34871),	-- Supply Recovery Tracking
-			q(34984),	-- Supply Recovery Tracking
-			q(33960),	-- Talador Flowerpicker
-			q(33965),	-- Tanaan Flowerpicker
-			q(39128),	-- Tanaan Vignette
-			q(39713),	-- Tracking Quest - Pops immediately on new characters but no other info known. Possibly legendary ring related
-			q(52969),	-- Going through the Stormwind Portal to Stormshield while on the WoD timeline in Chromie time
-		}),
-
-		-------------------
 		--    Legion     --
 		-------------------
 		--	Various tracking quests
@@ -3788,5 +3596,196 @@ _.HiddenQuestTriggers = {
 
 		-- Treasures of Korthia achievement
 		q(64045),	-- The Maw repeatable treasure, Stolen Anima Vessel
+	}),
+	-------------------
+	--      WOD      --
+	-------------------
+	tier(WOD_TIER, {
+		--	QUESTING / LEVELING / VARIOUS
+		q(37187),	-- The Dark Portal
+		q(35914),	-- Default invasion reward flag during the first garrison invasion as part of Draenor's base intro
+
+		--	DUNGEONS & RAIDS
+		q(38116, {["_drop"] = { "g" }}),	-- Cata/Mop 80-89
+		q(38127, {["_drop"] = { "g" }}),	-- Cata/MoP 80-89
+		q(38138),	-- Cata/MoP 80-89
+		q(38156),	-- Cata/MoP 80-89
+		q(38167),	-- Cata/MoP 80-89
+		q(38149),	-- Classic 10-19
+		q(38160),	-- Classic 10-19
+		q(38132),	-- Classic 20-29
+		q(38150),	-- Classic 20-29
+		q(38161),	-- Classic 20-29
+		q(38133),	-- Classic 30-39
+		q(38151),	-- Classic 30-39
+		q(38162),	-- Classic 30-39
+		q(38134),	-- Classic 40-49
+		q(38152),	-- Classic 40-49
+		q(38163),	-- Classic 40-49
+		q(38113, {["_drop"] = { "g" }}),	-- Classic 50-59
+		q(38124, {["_drop"] = { "g" }}),	-- Classic 50-59
+		q(38135),	-- Classic 50-59
+		q(38153),	-- Classic 50-59
+		q(38164),	-- Classic 50-59
+		q(37501),	-- Draenor Challenge Mode - Bronze Addition (1st)
+		q(37502),	-- Draenor Challenge Mode - Consolation (1st)
+		q(37503),	-- Draenor Challenge Mode - Gold Addition (1st)
+		q(37504),	-- Draenor Challenge Mode - Silver Addition (1st)
+		q(38118, {["_drop"] = { "g" }}),	-- Legion 100-109 A
+		q(38129, {["_drop"] = { "g" }}),	-- Legion 100-109 A
+		q(38140, {["_drop"] = { "g" }}),	-- Legion 100-109 A
+		q(38158, {["_drop"] = { "g" }}),	-- Legion 100-109 A
+		q(38169),	-- Legion 100-109 A
+		q(38171, {["_drop"] = { "g" }}),	-- Legion 100-109 A
+		q(38172, {["_drop"] = { "g" }}),	-- Legion 100-109 A
+		q(38119, {["_drop"] = { "g" }}),	-- Legion 100-109 H
+		q(38130, {["_drop"] = { "g" }}),	-- Legion 100-109 H
+		q(38141),	-- Legion 100-109 H
+		q(38159, {["_drop"] = { "g" }}),	-- Legion 100-109 H
+		q(38170),	-- Legion 100-109 H
+		q(38173, {["_drop"] = { "g" }}),	-- Legion 100-109 H
+		q(38174, {["_drop"] = { "g" }}),	-- Legion 100-109 H
+		q(37333),	-- LFGDungeons - Draenor - Heroic Random - 1st
+		q(37334),	-- LFGDungeons - Draenor - Heroic Random - Nth
+		q(37335),	-- LFGDungeons - Draenor - Normal Random - 1st
+		q(37336),	-- LFGDungeons - Draenor - Normal Random - Nth
+		q(40829),	-- LFGDungeons - Draenor 6.2 - Raid Finder - 1st
+		q(40395, {["_drop"] = { "g" }}),	-- LFGDungeons - Timewalking "Heroic" Random - Nth
+		q(36144, {["_drop"] = { "g" }}),	-- LFG WLK 75-80
+		q(36150, {["_drop"] = { "g" }}),	-- LFG WLK 75-80
+		q(36140, {["_drop"] = { "g" }}),	-- Pandaria 88-90
+		q(36148, {["_drop"] = { "g" }}),	-- Pandaria 88-90
+		q(38114, {["_drop"] = { "g" }}),	-- TBC 60-69
+		q(38125, {["_drop"] = { "g" }}),	-- TBC 60-69
+		q(38136),	-- TBC 60-69
+		q(38154),	-- TBC 60-69
+		q(38165),	-- TBC 60-69
+		q(35963),	-- Warlords Heroic Dungeon Reward Quest - triggered at the end of Mythic Grimrail Depot
+		q(36277),	-- Warlords Max Level Dungeon Bonus Reward
+		q(35962),	-- Warlords Max Level Dungeon Reward Quest - triggered at the end of Normal Grimrail Depot
+		q(38115, {["_drop"] = { "g" }}),	-- WLK 70-79
+		q(38126, {["_drop"] = { "g" }}),	-- WLK 70-79
+		q(38137),	-- WLK 70-79
+		q(38155),	-- WLK 70-79
+		q(38166),	-- WLK 70-79
+		q(38117, {["_drop"] = { "g" }}),	-- WOD 90-99
+		q(38128, {["_drop"] = { "g" }}),	-- WOD 90-99
+		q(38139),	-- WOD 90-99
+		q(38157),	-- WOD 90-99
+		q(38168),	-- WOD 90-99
+
+		-- ASSAULTS
+		q(36534),	-- Garrison Max-level Choice Tracker: (GROUP) Talador Shattrath City, West (When picking up Assault on the Heart of Shattrath on Horde character)
+		q(36547),	-- Garrison Max-level Choice Tracker: (GROUP) Talador Shattrath City, West (When picking up Assault on the Heart of Shattrath on Horde character)
+		q(36663),	-- Garrison Max-level Choice Tracker: ANY CHOICE MADE (When picking up Assault on the Heart of Shattrath on Horde character)
+		q(36664),	-- Garrison Max-level Choice Tracker: ANY CHOICE MADE (When picking up Assault on the Heart of Shattrath on Alliance character)
+		q(36537),	-- Garrison Max-level Choice Tracker: Spires Shadowmoon Cliffs
+		q(36558),	-- Garrison Max-level Choice Tracker: Spires Shadowmoon Cliffs
+		q(36532),	-- Garrison Max-level Choice Tracker: (GROUP) Gorgrond Blackrock Foundry
+		q(36545),	-- Garrison Max-level Choice Tracker: (GROUP) Gorgrond Blackrock Foundry
+		q(36527),	-- Garrison Max-level Choice Tracker: Frostfire Bloodmaul Compound
+		q(36549),	-- Garrison Max-level Choice Tracker: Frostfire Bloodmaul Compound
+		q(36528),	-- Garrison Max-level Choice Tracker: Shadowmoon Darktide Roost
+		q(36555),	-- Garrison Max-level Choice Tracker: Shadowmoon Darktide Roost
+		q(36533),	-- Garrison Max-level Choice Tracker: Gorgrond Primal Forest
+		q(36552),	-- Garrison Max-level Choice Tracker: Gorgrond Primal Forest
+		q(36531),	-- Garrison Max-level Choice Tracker: Shadowmoon Sanctum of Othaar
+		q(36556),	-- Garrison Max-level Choice Tracker: Shadowmoon Sanctum of Othaar
+		q(36539),	-- Garrison Max-level Choice Tracker: Spires Mushroom Swamp
+		q(36557),	-- Garrison Max-level Choice Tracker: Spires Mushroom Swamp
+		q(36540),	-- Garrison Max-level Choice Tracker: Nagrand Broken Precipice
+		q(36553),	-- Garrison Max-level Choice Tracker: Nagrand Broken Precipice
+		q(36541),	-- Garrison Max-level Choice Tracker: Nagrand Mok'gol Watchpost
+		q(36554),	-- Garrison Max-level Choice Tracker: Nagrand Mok'gol Watchpost
+		q(37646),	-- See New Brightstone, See Wolfed Out Thorn (Garrison Attack?)
+
+		--	Short-Supply Reward - UNKNOWN TRIGGERS
+		q(37461),	-- Short-Supply Reward
+		q(37463),	-- Short-Supply Reward
+		q(37465),	-- Short-Supply Reward
+		q(37648),	-- Short-Supply Reward
+		q(37681),	-- Short-Supply Reward
+		q(37682),	-- Short-Supply Reward
+		q(37683),	-- Short-Supply Reward
+		q(37684),	-- Short-Supply Reward
+		q(39376),	-- Short-Supply Reward
+		q(39377),	-- Short-Supply Reward
+		q(39378),	-- Short-Supply Reward
+		q(39398),	-- Short-Supply Reward
+		q(39468),	-- Short-Supply Reward
+		q(39473),	-- Short-Supply Reward
+		q(39474),	-- Short-Supply Reward
+		q(39475),	-- Short-Supply Reward
+		q(39476),	-- Short-Supply Reward
+		q(39477),	-- Short-Supply Reward
+		q(39478),	-- Short-Supply Reward
+		q(39479),	-- Short-Supply Reward
+		q(39480),	-- Short-Supply Reward
+		q(39481),	-- Short-Supply Reward
+		q(39482),	-- Short-Supply Reward
+		q(39483),	-- Short-Supply Reward
+		q(39484),	-- Short-Supply Reward
+		q(39485),	-- Short-Supply Reward
+
+		-- Tracking Quest - UNKNOWN TRIGGERS
+		q(32935),	-- Tracking Quest
+		q(37423),	-- Tracking Quest
+		q(37424),	-- Tracking Quest
+		q(37425),	-- Tracking Quest
+		q(37426),	-- Tracking Quest
+		q(37427),	-- Tracking Quest
+		q(37428),	-- Tracking Quest
+		q(37429),	-- Tracking Quest
+		q(37430),	-- Tracking Quest
+		q(37431),	-- Tracking Quest
+		q(37432),	-- Tracking Quest
+		q(39727),	-- Tracking Quest
+		q(39728),	-- Tracking Quest
+		q(39736),	-- Tracking Quest
+		q(39737),	-- Tracking Quest
+		q(39738),	-- Tracking Quest
+		q(39739),	-- Tracking Quest
+		q(39740),	-- Tracking Quest
+		q(39749),	-- Tracking Quest - triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands
+		q(39748),	-- Tracking Quest - triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands
+					-- Unflagged/flagged on a lvl 1 Bank alt when logging in lol
+		q(39751),	-- Tracking Quest
+		q(39752),	-- Tracking Quest
+		q(39753),	-- Tracking Quest
+		q(40416),	-- Tracking Quest
+		q(40853),	-- Tracking Quest
+
+		--	???
+		q(33964),	-- Arak Flowerpicker
+		q(36636),	-- Blueprint Read
+		q(36849),	-- Burning Missive
+		q(36850),	-- Burning Missive
+		q(36851),	-- Burning Missive
+		q(36852),	-- Burning Missive
+		q(36853),	-- Burning Missive
+		q(36854),	-- Burning Missive
+		q(36855),	-- Burning Missive
+		q(36856),	-- Burning Missive
+		q(34580),	-- Draenor Flowerpicker
+		q(34581),	-- Draenor Flowerpicker Note Found
+		q(34831),	-- Encounter Mushroom
+		q(33961),	-- Frostfire Flowerpicker
+		q(33966),	-- Gorgrond Flowerpicker
+		q(33963),	-- Nagrand Flowerpicker
+		q(34872),	-- Prized Repossessions Tracking
+		q(34985),	-- Prized Repossessions Tracking
+		q(34986),	-- Punching Through Tracking
+		q(34873),	-- Punching Through Tracking
+		q(35192),	-- See Reinforcements Teleport
+		q(33962),	-- Shadowmoon Flowerpicker
+		q(34053),	-- SoL Conversation Tracker
+		q(36942),	-- Soulbinder Aedraa
+		q(34871),	-- Supply Recovery Tracking
+		q(34984),	-- Supply Recovery Tracking
+		q(33960),	-- Talador Flowerpicker
+		q(33965),	-- Tanaan Flowerpicker
+		q(39128),	-- Tanaan Vignette
+		q(39713),	-- Tracking Quest - Pops immediately on new characters but no other info known. Possibly legendary ring related
+		q(52969),	-- Going through the Stormwind Portal to Stormshield while on the WoD timeline in Chromie time
 	}),
 };
