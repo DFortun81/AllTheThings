@@ -18850,6 +18850,10 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 								if response then tinsert(data.g, {text=LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM,icon = app.asset("Category_Crafting"),g=response});  end
 							end
 						end
+						-- a profession which ATT has no data as being a profession? (PoA crafting)
+						if not data then
+							data = app.CreateProfession(tradeSkillID);
+						end
 						data.indent = 0;
 						data.visible = true;
 						BuildGroups(data, data.g);
