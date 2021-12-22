@@ -797,6 +797,7 @@ select(2, ...).ObjectNames = {
 	[234455] = "Relics of the Outcasts",
 	[234456] = "Shattered Hand Lockbox",
 	[234458] = "Shattered Hand Cache",
+	[234461] = "Toxicfang Venom",
 	[234471] = "Spray-O-Matic 5000 XT",
 	[234472] = "Sailor Zazzuk's 180-Proof Rum",
 	[234473] = "Campaign Contributions",

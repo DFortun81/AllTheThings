@@ -975,9 +975,11 @@ _.HiddenQuestTriggers = {
 		q(33267),	-- [Deprecated] - completed with quest 33461
 		q(33380),	-- REUSE - completed with quest 33622
 		q(33407),	-- REUSE - completed with quest 33622
+		q(33914),	-- Gut Guttra - completed with quest 33132
 		q(34426),	-- Yrel - completed with quest 34478 & 34427
 		q(34435),	-- Find Ga'nar - completed with quest 34434 & 34740
 		q(34438),	-- Regarding Enormous Tanks - completed with quest 34958
+		q(34506),	-- Bonus Objective: Kill Grimfrost Ogres - completed with quest 33145
 		q(34817),	-- Altar Altercation - completed with quest 34423
 		q(35251),	-- The Bounty of Bladespire - completed with quest 33657
 		q(35340),	-- What Happened Here? - completed with quest 35322
@@ -990,8 +992,11 @@ _.HiddenQuestTriggers = {
 		q(36079),	-- A Hero's Welcome - completed with quest 34575
 		q(36461),	-- Locating the Lapidarist - completed with quest 36352
 		q(36501),	-- Iron Horde Invasion - completed with quest 36498
+		q(36569),	-- Unruly Visitors — completed with quest 36483
+		q(36570),	-- Unruly Visitors — completed with quest 36483
 		q(36635),	-- Your First Work Order - completed with quest 35168 & 37569
 		q(36796),	-- The Flock's Revenge - completed with quest 36790
+		q(36859),	-- Deprecated - completed with quest 36590
 		q(37185),	-- A Personal Summons - completed with quest 28790 & 28825
 		q(37189),	-- A Personal Summons - completed with quest 28825
 		q(37190),	-- Iron Horde Invasion - completed with quest 36499
@@ -1001,10 +1006,14 @@ _.HiddenQuestTriggers = {
 		q(37667),	-- Building for Professions - completed with quest 36100 & 37669
 		q(37933),	-- Uncovering the Artifact Fragments - completed with quest 36133 & possibly also 36198
 		q(38008),	-- The Road of Glory - completed with quest 36125 & 36227
+		q(39058, {	-- Critters of Draenor — completed with quest 38299 & 38300
+			["_drop"] = { "g" },	-- pulls in a couple pet items and causes their sources to list 'unsorted'
+		}),
 		q(45405),	-- Breaching the Sanctum - completed with quest 44719
 		q(49563),	-- Warchief's Command: Frostfire Ridge! - completed with quest 49545
 
 		-- Frostfire Ridge
+		--q(33264),	-- A Proper Burial - TODO: figure out from where it gets completed
 		--q(34734),	-- The Loyalty of Olin Umberhide - TODO: figure out from where it gets completed
 		--q(37062),	-- Tricks of the Trade - TODO: figure out from where it gets completed
 
@@ -1439,7 +1448,6 @@ _.HiddenQuestTriggers = {
 		--	QUESTING / LEVELING / VARIOUS
 		q(37187),	-- The Dark Portal
 		q(35914),	-- Default invasion reward flag during the first garrison invasion as part of Draenor's base intro
-		q(37864),	-- Voidtalon (Pops after the player leaves the scenario.)
 
 		--	DUNGEONS & RAIDS
 		q(37501),	-- Draenor Challenge Mode - Bronze Addition (1st)
@@ -1459,65 +1467,6 @@ _.HiddenQuestTriggers = {
 		q(38139),	-- WOD 90-99
 		q(38157),	-- WOD 90-99
 		q(38168),	-- WOD 90-99
-
-		--	GARRISON
-		q(36793),	-- Frostfire Ridge - Founded Garrison - triggers after using the Master Surveyor during "Establish Your Garrison"
-		q(36799),	-- Garrison Nodes - Tracking Quest - triggered after unlocking the mine, picking herbs
-		q(37311),	-- Drafting Table Interact
-		q(36640),	-- Followers Obtained
-		q(38315),	-- DEPRECATED - triggered when turning in "Bringing the Bass" on alliance
-		q(38401),	-- DEPRECATED - triggered when turning in "Bringing the Bass" on alliance
-		q(38348),	-- Triggers when using "Music Roll: Silvermoon" or "Music Roll: Exodar". Appears to be a duplicate ID
-		q(39406),	-- Tracking Quest - Related to weekly naval mission in the shipyard
-		q(39407),	-- Tracking Quest - Related to weekly naval mission in the shipyard
-		q(39408),	-- Tracking Quest - interact with the mission table.
-		q(39409),	-- Tracking Quest - After completing the WoD mission "Ghost Wrangler" (mission ID: 305), although not sure why that would be tracked.
-		q(39410),	-- Tracking Quest - First interaction with the Garrison Mission Table this week. Completed a bunch of mission + one of the followers leveled up
-		q(39411),	-- Tracking Quest - Related to weekly naval mission in the shipyard
-		q(39412),	-- Tracking Quest - Something having to do with Naval Missions most likely (triggered with 39414)
-		q(39413),	-- Tracking Quest - Garrison/Shipyard Mission Table
-		q(39414),	-- Tracking Quest - Gladiator's Sanctum - Triggers on construction of the gladiator's sanctum (Lunarfall)
-		q(39415),	-- Tracking Quest - Garrison/Shipyard Mission Table
-		q(39709),	-- Tracking Quest - First time this quest popped in WoD Garrison after opening some salvage crates. Then it unflagged on fresh toon, after I walked a little it got completed again
-		q(39710),	-- Tracking Quest - Garrison/Shipyard Mission Table
-		q(39711),	-- Tracking Quest - Garrison/Shipyard Mission Table
-		q(39723),	-- Tracking Quest - Related to rare naval missions in the shipyard
-		q(39724),	-- Tracking Quest - Related to rare naval missions in the shipyard
-		q(39725),	-- Tracking Quest - Related to rare naval missions in the shipyard
-		q(39750),	-- Tracking Quest - Related to rare naval missions in the shipyard
-		q(34679),	-- Nagrand - Alliance Stables Tracking Event
-		q(34680),	-- Nagrand - Alliance Workshop Tracking Event
-		q(37202),	-- Nagrand - Hemet Nesingwary Visitor Tracking Event
-		q(34812),	-- Nagrand - Horde Stables Tracking Event
-		q(34813),	-- Nagrand - Horde Workshop Tracking Event
-		q(34518),	-- Nagrand - Nagrand Corral
-		q(36898),	-- Tracking Quest: Delvar Ironfist
-		q(36877),	-- Tracking Quest: Tormmok — taking Tormmok as a bodyguard/wingman
-		q(36569),	-- Unruly Visitors — triggers when turning in "Battle Pet Roundup"
-		q(36570),	-- Unruly Visitors — triggers when turning in "Battle Pet Roundup"
-		q(39058, {	-- Critters of Draenor — looks like an unused version of #38299
-			["_drop"] = { "g" },	-- pulls in a couple pet items and causes their sources to list 'unsorted'
-		}),
-		q(36492),	-- Garrison Pet Battle — discord report, "for today's EU garrison menagerie fight, the Blingtron/protectron one"
-		q(36886),	-- Ogre Waygate — opening waygate in gorgrond
-		q(36294),	-- Lumber Mill — Phylarch the Evergreen first attack
-		q(36295),	-- Lumber Mill — Phylarch the Evergreen second attack
-		q(36058),	-- Seal of Tempered Fate: Armory
-		q(36894),	-- Nemesis Flag, Draenei/Blood Elf — all these are for burning effigies of specific races in the Gladiator Sanctum
-		q(36891),	-- Nemesis Flag, Dwarf/Forsaken
-		q(36892),	-- Nemesis Flag, Gnome/Tauren
-		q(36956),	-- Nemesis Flag, Human
-		q(36890),	-- Nemesis Flag, Human/Orc
-		q(36893),	-- Nemesis Flag, Night Elf/Troll
-		q(36896),	-- Nemesis Flag, Pandaren (A/H)
-		q(36895),	-- Nemesis Flag, Worgen/Goblin
-		q(36905),	-- Ogre Waygate — Opening the Ogre Gateway in Talador during quest #36848, "Ogre Waygates"
-		q(39610),	-- triggered together with 39615 after applying Ball of Tangled Lights (Feast of Winter Veil decoration)
-		q(36901),	-- Tracking Quest: Vivianne — assigned Vivianne as bodyguard
-		q(36902),	-- Tracking Quest: Aeda Brightdawn — assigned Aeda Brightdawn as bodyguard
-		q(46952),	-- Flag Garrison Dog Quest
-		q(54705),	-- Level 17 human monk looting mailbox in garrisson <-- Hmm. Errors report also says using 7th legion scouting map.
-		q(37197),	-- See Rexxar Quest Giver 002 (Garrison Campaign for Darktide Roost)
 
 		-- ASSAULTS
 		q(36534),	-- Garrison Max-level Choice Tracker: (GROUP) Talador Shattrath City, West (When picking up Assault on the Heart of Shattrath on Horde character)
@@ -2275,6 +2224,7 @@ _.HiddenQuestTriggers = {
 		q(55241),	-- closing the second to last rift while on #55214, "Seam Stress"
 		q(50657),	-- not sure if this is part of the Vulpera allied race questline?  i turned in #53907, picked up #53908, learned the "Nomi's Vintage" toy, refreshed (nothing), went and took the portal from the vineyard to shal'aran, and this popped.  it popped immediately when i clicked the portal
 		q(55628),	-- Tracking Quest killed Mala'kili/Rohn'kor
+		q(54705),	-- Using 7th Legion Scouting Map
 		--q(55464),	-- Triggered with Tandred Proudmoore conversation?
 
 		--	HONEYBACK HIVE

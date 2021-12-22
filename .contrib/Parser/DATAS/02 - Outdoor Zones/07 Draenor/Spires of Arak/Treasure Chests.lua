@@ -475,6 +475,13 @@ _.Zones =
 					["coord"] = { 33.3, 27.3, SPIRES_OF_ARAK },
 					["description"] = "Requires archaeology.",
 				}),
+				o(234461, {	-- Toxicfang Venom
+					["questID"] = 36364,
+					["coord"] = { 54.4, 32.4, SPIRES_OF_ARAK },
+					["g"] = {
+						i(118695),	-- Toxicfang Venom
+					},
+				}),
 				o(235307, {	-- Waterlogged Satchel
 					["modelID"] = 32854,
 					["questID"] = 36455,

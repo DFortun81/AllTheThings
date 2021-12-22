@@ -1273,40 +1273,39 @@ _.Zones =
 		}),
 	}),
 };
-_.HiddenQuestTriggers = {
+root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
-		q(36904),	-- Frostfire Ridge - Ogre Waygate - actived Ogre Waygate at 59.6, 47.5
-		q(34453),	-- Frostfire Ridge - Tracking Event: Gazlowe Arrived
-		q(34715),	-- Frostfire Ridge - Tracking Flag: Shamanstone Summons - appoach the frostwolf shaman stone in Wor'gol while on "Honor Has Its Rewards" to start the dialog
-		q(33847),	-- Frostfire Ridge - Flag: Seen Ga'nar Rolling Out),	-- triggered going into Chillfang's cave immediately upon getting to Draenor
-		q(33909),	-- Frostfire Ridge - Flag: Seen Ga'nar Rolling Out to Bladespire),	-- triggers shortly after reaching Wor'gol during "Den of Wolves"
-		q(33846),	-- Frostfire Ridge - Flag: Seen Thrall Cyclone),	-- triggers during "These Colors Don't Run"
-		q(33443),	-- Frostfire Ridge - Barrier Destroyed),	-- triggers upon reaching the top of the walkway with rolling fireballs in Bladespire Citadel during "Great Balls of Fire!"
-		q(34510),	-- Frostfire Ridge - Tracking Event: Catapuls 'n' Clefthoof),	-- triggered after riding the wolf down Bladespire Citadel during "Moving In"
-		q(34511),	-- Frostfire Ridge - Tracking Event: Ogre Drag),	-- triggered after riding the wolf down Bladespire Citadel during "Moving In"
-		q(34654),	-- Frostfire Ridge - Tracking Flag: Dagg Found at Daggermaw Ravine),	-- triggers when you open Dagg's cage at 39.6, 28.1
-		q(34312),	-- Frostfire Ridge - The Magma Lord),	-- triggered when Molthron first appears at 43.6, 15.6
-		q(37544),	-- Frostfire Ridge - Garrison Follower: Greatmother Geyah),	-- triggers if you pick Greatmother Geyah during "The Frostwolves Stand Ready"
-		q(37545),	-- Frostfire Ridge - Garrison Follower: Kal'gor the Honorable),	-- triggers if you pick Kal'gor during "The Frostwolves Stand Ready"
-		q(34730),	-- Frostfire Ridge - Garrison Follower: Lokra),	-- triggers if you pick Lokra during "The Frostwolves Stand Ready"
-		q(34329),	-- Frostfire Ridge - Shamanstone: Buffeting Galefury selected. Only procs once
-		q(34330),	-- Frostfire Ridge - Shamanstone: Ogrish Fortitude selected. Only procs once
-		q(34456),	-- Frostfire Ridge - Shamanstone: Spirit of the Wolf. Popped when approaching the Frostwolf shamanstone
-		q(34331),	-- Frostfire Ridge - Shamanstone: Spirit of the Wolf selected. Only procs once
-		q(34332),	-- Frostfire Ridge - Shamanstone: Touched By Fire selected. Only procs once
-		q(34333),	-- Frostfire Ridge - Shamanstone: Touched By Ice selected. Only procs once
-		q(34328),	-- Frostfire Ridge - Shamanstone: Blessing of the WOlf selected. Only procs once
-		q(34506),	-- Frostfire Ridge - Bonus Objective: Kill Grimfrost Ogres - NYI version since the bonus objective was unified into questID 33145
-		q(33914),	-- Frostfire Ridge - Gut Guttra - NYI, possible duplicate
-		q(33264),	-- Frostfire Ridge - A Proper Burial - NYI, possible duplicate
-		q(37652),	-- Frostfire Ridge - Vignette: Jabberjaw, triggers with 37386
-		q(34517),	-- Frostfire Ridge - Vignette: Gargantuan Frostbeak, triggers with 34522 after killing Ug'lok the Frozen
-		q(34519),	-- Frostfire Ridge - Vignette: Brotoculus, triggers with 34522 after killing Ug'lok the Frozen
-		q(34521),	-- Frostfire Ridge - Treasure: Glowing Obsidian Shard - secondary quest triggered when looting Burning Pearl in Frostfire Ridge
-		q(34968),	-- Frostfire Ridge - Treasure: Ice-Covered Supplies - secondary quest triggered when looting Forgotten Supplies in Frostfire Ridge
-		q(34313),	-- Frostfire Ridge - Orlana Strongbrow - triggers during quest "The Shadow Gate" (questID 34381)
+		q(33443),	-- Barrier Destroyed - triggers upon reaching the top of the walkway with rolling fireballs in Bladespire Citadel during "Great Balls of Fire!" (questID 33408)
+		q(34453),	-- Tracking Event: Gazlowe Arrived
+		q(34715),	-- Tracking Flag: Shamanstone Summons - appoach the frostwolf shaman stone in Wor'gol while on "Honor Has Its Rewards" to start the dialog (questID 33816)
+		q(33847),	-- Flag: Seen Ga'nar Rolling Out - triggers when going into Chillfang's cave immediately upon getting to Draenor
+		q(33909),	-- Flag: Seen Ga'nar Rolling Out to Bladespire - triggers shortly after reaching Wor'gol during "Den of Wolves" (questID 34379)
+		q(33846),	-- Flag: Seen Thrall Cyclone - triggers during "These Colors Don't Run" (questID 33526)
+		q(36793),	-- Founded Garrison - triggers after building Horde Garrison
+		q(37544),	-- Garrison Follower: Greatmother Geyah - Greatmother Geyah selected during "The Frostwolves Stand Ready" (questID 37563)
+		q(37545),	-- Garrison Follower: Kal'gor the Honorable - Kal'gor the Honorable selected during "The Frostwolves Stand Ready" (questID 37563)
+		q(34730),	-- Garrison Follower: Lokra - Lokra selected during "The Frostwolves Stand Ready" (questID 37563)
+		q(36904),	-- Ogre Waygate
+		q(34313),	-- Orlana Strongbrow - triggers during "The Shadow Gate" (questID 34381)
+		q(34329),	-- Shamanstone: Buffeting Galefury selected. Only procs once
+		q(34330),	-- Shamanstone: Ogrish Fortitude selected. Only procs once
+		q(34456),	-- Shamanstone: Spirit of the Wolf. Popped when approaching the Frostwolf shamanstone
+		q(34331),	-- Shamanstone: Spirit of the Wolf selected. Only procs once
+		q(34332),	-- Shamanstone: Touched By Fire selected. Only procs once
+		q(34333),	-- Shamanstone: Touched By Ice selected. Only procs once
+		q(34328),	-- Shamanstone: Blessing of the WOlf selected. Only procs once
+		q(34510),	-- Tracking Event: Catapuls 'n' Clefthoof - triggers after riding the wolf down Bladespire Citadel during "Moving In" (questID 33657)
+		q(34511),	-- Tracking Event: Ogre Drag - triggers after riding the wolf down Bladespire Citadel during "Moving In" (questID 33657)
+		q(34654),	-- Tracking Flag: Dagg Found at Daggermaw Ravine - triggers when you open Dagg's cage at 39.6, 28.1
+		q(34312),	-- The Magma Lord - triggers when Molthron first appears at 43.6, 15.6
+		q(37652),	-- Vignette: Jabberjaw - secondary trigger for Jabberjaw rare
+		q(34517),	-- Vignette: Gargantuan Frostbeak - secondary trigger for Ug'lok the Frozen rare
+		q(34519),	-- Vignette: Brotoculus - tertiary trigger for g'lok the Frozen rare
+		q(34521),	-- Treasure: Glowing Obsidian Shard - secondary quest triggered when looting Burning Pearl in Frostfire Ridge
+		q(34968),	-- Treasure: Ice-Covered Supplies - secondary quest triggered when looting Forgotten Supplies in Frostfire Ridge
+		
 	}),
-};
+});
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(WOD_TIER, {
 		n(ARMOR, {
