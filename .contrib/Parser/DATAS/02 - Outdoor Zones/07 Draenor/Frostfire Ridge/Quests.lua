@@ -1276,8 +1276,6 @@ _.Zones =
 root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
 		q(33443),	-- Barrier Destroyed - triggers upon reaching the top of the walkway with rolling fireballs in Bladespire Citadel during "Great Balls of Fire!" (questID 33408)
-		q(34453),	-- Tracking Event: Gazlowe Arrived
-		q(34715),	-- Tracking Flag: Shamanstone Summons - appoach the frostwolf shaman stone in Wor'gol while on "Honor Has Its Rewards" to start the dialog (questID 33816)
 		q(33847),	-- Flag: Seen Ga'nar Rolling Out - triggers when going into Chillfang's cave immediately upon getting to Draenor
 		q(33909),	-- Flag: Seen Ga'nar Rolling Out to Bladespire - triggers shortly after reaching Wor'gol during "Den of Wolves" (questID 34379)
 		q(33846),	-- Flag: Seen Thrall Cyclone - triggers during "These Colors Don't Run" (questID 33526)
@@ -1294,16 +1292,17 @@ root("HiddenQuestTriggers", {
 		q(34332),	-- Shamanstone: Touched By Fire selected. Only procs once
 		q(34333),	-- Shamanstone: Touched By Ice selected. Only procs once
 		q(34328),	-- Shamanstone: Blessing of the WOlf selected. Only procs once
+		q(34312),	-- The Magma Lord - triggers when Molthron first appears at 43.6, 15.6
 		q(34510),	-- Tracking Event: Catapuls 'n' Clefthoof - triggers after riding the wolf down Bladespire Citadel during "Moving In" (questID 33657)
+		q(34453),	-- Tracking Event: Gazlowe Arrived
 		q(34511),	-- Tracking Event: Ogre Drag - triggers after riding the wolf down Bladespire Citadel during "Moving In" (questID 33657)
 		q(34654),	-- Tracking Flag: Dagg Found at Daggermaw Ravine - triggers when you open Dagg's cage at 39.6, 28.1
-		q(34312),	-- The Magma Lord - triggers when Molthron first appears at 43.6, 15.6
-		q(37652),	-- Vignette: Jabberjaw - secondary trigger for Jabberjaw rare
-		q(34517),	-- Vignette: Gargantuan Frostbeak - secondary trigger for Ug'lok the Frozen rare
-		q(34519),	-- Vignette: Brotoculus - tertiary trigger for g'lok the Frozen rare
+		q(34715),	-- Tracking Flag: Shamanstone Summons - appoach the frostwolf shaman stone in Wor'gol while on "Honor Has Its Rewards" to start the dialog (questID 33816)
 		q(34521),	-- Treasure: Glowing Obsidian Shard - secondary quest triggered when looting Burning Pearl in Frostfire Ridge
 		q(34968),	-- Treasure: Ice-Covered Supplies - secondary quest triggered when looting Forgotten Supplies in Frostfire Ridge
-		
+		q(34519),	-- Vignette: Brotoculus - tertiary trigger for g'lok the Frozen rare
+		q(34517),	-- Vignette: Gargantuan Frostbeak - secondary trigger for Ug'lok the Frozen rare
+		q(37652),	-- Vignette: Jabberjaw - secondary trigger for Jabberjaw rare
 	}),
 });
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
