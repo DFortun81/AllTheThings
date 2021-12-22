@@ -2105,8 +2105,8 @@ _.Zones =
 };
 root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
-		q(36249),	-- Active Choice: Lumbermill - trigger if the Lumbermill is currently active
-		q(36250),	-- Active Choice: Lumbermill - trigger if the Lumbermill is currently active
+		q(36249),	-- Active Choice: Lumbermill - triggers if the Lumbermill is currently active
+		q(36250),	-- Active Choice: Lumbermill - triggers if the Lumbermill is currently active
 		q(36251),	-- Active Choice: Sparring Arena - triggers if the Sparring Arena is currently active
 		q(36252),	-- Active Choice: Sparring Arena - triggers if the Sparring Arena is currently active
 		q(39309),	-- Arcane Orb

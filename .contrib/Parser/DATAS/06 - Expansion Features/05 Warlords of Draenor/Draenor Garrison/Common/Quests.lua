@@ -2591,6 +2591,8 @@ root("HiddenQuestTriggers", {
 		q(37311),	-- Drafting Table Interact
 		q(46952),	-- Flag Garrison Dog Quest
 		q(36640),	-- Followers Obtained
+		q(37198),	-- Garrison Visitor: Sappy - triggered during Goren invasion in Garrison
+		q(37199),	-- Garrison Visitor: Sappy - triggered during Goren invasion in Garrison
 		q(36799),	-- Garrison Nodes - Tracking Quest - triggers after unlocking the mine, picking herbs
 		q(36492),	-- Garrison Pet Battle — discord report, "for today's EU garrison menagerie fight, the Blingtron/protectron one"
 		q(36894),	-- Nemesis Flag, Draenei/Blood Elf — burning effigy in the Gladiator Sanctum
