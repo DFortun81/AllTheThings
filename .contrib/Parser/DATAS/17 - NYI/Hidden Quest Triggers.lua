@@ -3792,8 +3792,5 @@ _.HiddenQuestTriggers = {
 
 		-- Treasures of Korthia achievement
 		q(64045),	-- The Maw repeatable treasure, Stolen Anima Vessel
-
-		-- Inscription
-		q(64986),	-- Triggered after using Mark of the Twilight Runestag or Mark of the Gloomstalker Dredbat
 	}),
 };
