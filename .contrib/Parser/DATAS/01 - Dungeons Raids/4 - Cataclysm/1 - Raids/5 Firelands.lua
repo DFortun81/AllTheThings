@@ -834,9 +834,9 @@ root("Instances", tier(CATA_TIER, {
 								crit(4),	-- Fiery Tornado
 							}),
 							ach(5809),	-- Heroic: Alysrazor
-							CHEST_CONQ,	-- Chest of the Fiery Conqueror
-							CHEST_PROT,	-- Chest of the Fiery Protector
-							CHEST_VANQ,	-- Chest of the Fiery Vanquisher
+							i(71679),	-- Chest of the Fiery Conqueror
+							i(71686),	-- Chest of the Fiery Protector
+							i(71672),	-- Chest of the Fiery Vanquisher
 							i(71665),	-- Flametalon of Alysrazor (MOUNT!)
 							i(71427),	-- Alysra's Razor
 							i(71430),	-- Greathelm of the Voracious Maw
@@ -865,9 +865,9 @@ root("Instances", tier(CATA_TIER, {
 								crit(5),	-- Shatterstone
 							}),
 							ach(5806),	-- Heroic: Shannox
-							LEGS_CONQ,	-- Leggings of the Fiery Conqueror
-							LEGS_PROT,	-- Leggings of the Fiery Protector
-							LEGS_VANQ,	-- Leggings of the Fiery Vanquisher
+							i(71678),	-- Leggings of the Fiery Conqueror
+							i(71685),	-- Leggings of the Fiery Protector
+							i(71671),	-- Leggings of the Fiery Vanquisher
 							i(152975),	-- Smoldering Treat (PET!)
 							i(71445),	-- Skullstealer Greataxe
 							i(71441),	-- Feeding Frenzy
@@ -890,9 +890,9 @@ root("Instances", tier(CATA_TIER, {
 						["g"] = {
 							ach(5805),	-- Heroic: Baleroc
 							ach(5830),	-- Share the Pain
-							GLOVE_CONQ,	-- Gauntlets of the Fiery Conqueror
-							GLOVE_PROT,	-- Gauntlets of the Fiery Protector
-							GLOVE_VANQ,	-- Gauntlets of the Fiery Vanquisher
+							i(71676),	-- Gauntlets of the Fiery Conqueror
+							i(71683),	-- Gauntlets of the Fiery Protector
+							i(71669),	-- Gauntlets of the Fiery Vanquisher
 							i(152977),	-- Vibrating Stone (PET!)
 							i(71454),	-- Gatecrasher
 							i(71460),	-- Shard of Torment
@@ -918,9 +918,9 @@ root("Instances", tier(CATA_TIER, {
 							}),
 							i(152978),	-- Fandral's Pet Carrier (PET!)
 							i(122304),	-- Fandral's Seed Pouch (TOY!)
-							SHOULDER_CONQ,	-- Shoulders of the Fiery Conqueror
-							SHOULDER_PROT,	-- Shoulders of the Fiery Protector
-							SHOULDER_VANQ,	-- Shoulders of the Fiery Vanquisher
+							i(71680),	-- Shoulders of the Fiery Conqueror
+							i(71687),	-- Shoulders of the Fiery Protector
+							i(71673),	-- Shoulders of the Fiery Vanquisher
 							i(71466),	-- Fandral's Flamescythe
 							i(71473),	-- Stinger of the Flaming Scorpion
 							i(71472),	-- Flowform Choker
@@ -942,9 +942,9 @@ root("Instances", tier(CATA_TIER, {
 								title(190),	-- Firelord
 							}),
 							ach(5855),	-- Ragnar-O's
-							HELM_CONQ,	-- Crown of the Fiery Conqueror
-							HELM_PROT,	-- Crown of the Fiery Protector
-							HELM_VANQ,	-- Crown of the Fiery Vanquisher
+							i(71677),	-- Crown of the Fiery Conqueror
+							i(71684),	-- Crown of the Fiery Protector
+							i(71670),	-- Crown of the Fiery Vanquisher
 							i(69224),	-- Smoldering Egg of Millagazor (MOUNT!)
 							i(175158, {	-- Flames of Fury (Bag of Tricks addition)
 								["races"] = { VULPERA },

@@ -3387,7 +3387,7 @@ local function FillPurchases(group, depth)
 	if depth <= 0 then return; end
 	-- do not fill purchases on certain items, can skip the skip though based on a level
 	if (app.SkipPurchases[-1] or 0) < (app.SkipPurchases[group.itemID or -1] or 0) then return; end
-	-- do not fill 'saved' groups (unless they are actual Maps or Instances, or a Difficulty header. Also 'saved' Items usually means tied to a questID directory)
+	-- do not fill 'saved' groups (unless they are actual Maps or Instances, or a Difficulty header. Also 'saved' Items usually means tied to a questID directly)
 	-- or groups directly under saved groups unless in Acct or Debug mode
 	if not app.MODE_DEBUG_OR_ACCOUNT and not (group.instanceID or group.mapID or group.difficultyID or group.itemID) then
 		if group.saved then return; end
@@ -3402,7 +3402,7 @@ local function FillPurchases(group, depth)
 		local usedToBuy = app.CreateNPC(-2, { ["text"] = L["CURRENCY_FOR"] } );
 		NestObject(group, usedToBuy);
 		PriorityNestObjects(usedToBuy, collectibles, true, app.RecursiveGroupRequirementsFilter);
-		-- if app.DEBUG_PRINT then print("Filled",#collectibles,"under",group.key,group.key and group[group.key],"as",#usedToBuy.g,"unique groups") end
+		-- if app.DEBUG_PRINT then print("Filled",#collectibles,"under",group.hash,"as",#usedToBuy.g,"unique groups") end
 		-- reduce the depth by one since a cost has been filled
 		depth = depth - 1;
 		-- mark this group as no-longer collectible as a cost since its collectible contents have been filled under itself
@@ -9058,6 +9058,7 @@ local itemFields = {
 	end,
 	["collectibleAsCost"] = function(t)
 		if not t.costCollectibles then
+			-- if t.itemID == 71686 then app.DEBUG_PRINT = true; end
 			local results, id;
 			-- Search by modItemID if possible for accuracy
 			if t.modItemID and t.modItemID ~= t.itemID then
@@ -9094,10 +9095,12 @@ local itemFields = {
 						collectible = collectible or app.CheckCollectible(t, ref, ref._cache);
 					end
 				end
+				-- app.DEBUG_PRINT = nil;
 				return collectible;
 			else
 				cache.SetCachedField(t, "costCollectibles", app.EmptyTable);
 			end
+			-- app.DEBUG_PRINT = nil;
 		else
 			-- Quick escape if current-character only and comes from something saved
 			if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return false; end
