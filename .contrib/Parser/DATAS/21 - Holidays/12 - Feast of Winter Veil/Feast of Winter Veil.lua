@@ -711,7 +711,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					{ "o", 180746 },	-- Gently Shaken Gift
 					{ "i", 187520 },	-- Gently Shaken Gift
 				},
-				["description"] = "Gift from 2020.",
+				["description"] = "Gift from 2021.",
 				["timeline"] = { "added 9.1.5.40871" },	-- TODO: Add Removed Timestamp in 2022.
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["groups"] = {

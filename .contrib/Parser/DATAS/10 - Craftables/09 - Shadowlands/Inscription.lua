@@ -18,7 +18,7 @@ _.Craftables =
 					["questID"] = 65061,
 					["classes"] = { DRUID },
 				}),
-				i(187887,{	-- Mark of the Gloomstalker Dredbat
+				i(187887, {	-- Mark of the Gloomstalker Dredbat
 					["questID"] = 65048,
 					["classes"] = { DRUID },
 				}),
