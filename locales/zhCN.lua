@@ -6,8 +6,8 @@ local L = app.L;
 	L["TITLE"] = "|cffb4b4ffALL THE THINGS|r";
 	L["AUCTION_TAB"] = "|cffb4b4ffATT|r";
 	L["DESCRIPTION"] = "“你愚蠢地寻求自己的终结，厚颜无耻地无视了你无法理解的力量。你入侵了收集者的领域并为此努力。现在只有一条路可走了——这条孤独的路……该死的路。”"
-	-- L.THINGS_UNTIL = " THINGS UNTIL ";
-	-- L.THING_UNTIL = " THING UNTIL ";
+	L.THINGS_UNTIL = " 事物到 ";
+	L.THING_UNTIL = " 事物到 ";
 	L.YOU_DID_IT = "你做到了！|r";
 
 	-- Big new chunk from AllTheThings.lua
@@ -288,11 +288,11 @@ local L = app.L;
 	L.PRECISION_SLIDER_TOOLTIP = '使用此选项可自定义百分比计算中所需的精度级别。\n\n默认：2';
 	L.MINIMAP_SLIDER = "迷你地图按钮尺寸";
 	L.MINIMAP_SLIDER_TOOLTIP = '使用此选项可自定义迷你地图按钮的大小。\n\n默认：36';
-	L.ACCOUNT_THINGS_LABEL = "帐号通用 Things";
-	L.GENERAL_THINGS_LABEL = "通用 Things";
-	L.EXPANSION_THINGS_LABEL = "资料片 Things";
-	L.EXTRA_THINGS_LABEL = "额外 Things";
-	L.STRANGER_THINGS_LABEL = "陌生 Things";
+	L.ACCOUNT_THINGS_LABEL = "帐号通用事物";
+	L.GENERAL_THINGS_LABEL = "通用事物";
+	L.EXPANSION_THINGS_LABEL = "资料片事物";
+	L.EXTRA_THINGS_LABEL = "额外事物";
+	L.STRANGER_THINGS_LABEL = "陌生事物";
 	-- L.ACHIEVEMENTS_CHECKBOX = "|cffADD8E6"..ACHIEVEMENTS;
 	L.ACHIEVEMENTS_CHECKBOX_TOOLTIP = "启用此选项可追踪成就。";
 	-- L.TMOG_CHECKBOX = "|cffADD8E6"..WARDROBE;
@@ -678,7 +678,7 @@ for key,value in pairs({
 
 		-- PADDING for extra types, if necessary
 
-		[55] = "消耗品"										-- Consumable (Artifact Power, etc)
+		[55] = "消耗品";										-- Consumable (Artifact Power, etc)
 	[59] = "职业技能书";												-- Class Books (Classic Spells, Ashran Books, etc)
 
 		-- "Non-Equipment Types"
