@@ -1440,7 +1440,7 @@ _.HiddenQuestTriggers = {
 		q(37187),	-- The Dark Portal
 		q(35914),	-- Default invasion reward flag during the first garrison invasion as part of Draenor's base intro
 		q(37864),	-- Voidtalon (Pops after the player leaves the scenario.)
-		
+
 		--	DUNGEONS & RAIDS
 		q(37501),	-- Draenor Challenge Mode - Bronze Addition (1st)
 		q(37502),	-- Draenor Challenge Mode - Consolation (1st)
@@ -1599,7 +1599,7 @@ _.HiddenQuestTriggers = {
 		q(39753),	-- Tracking Quest
 		q(40416),	-- Tracking Quest
 		q(40853),	-- Tracking Quest
-		
+
 		--	???
 		q(33964),	-- Arak Flowerpicker
 		q(36636),	-- Blueprint Read
@@ -3792,5 +3792,8 @@ _.HiddenQuestTriggers = {
 
 		-- Treasures of Korthia achievement
 		q(64045),	-- The Maw repeatable treasure, Stolen Anima Vessel
+
+		-- Inscription
+		q(64986),	-- Triggered after using Mark of the Twilight Runestag or Mark of the Gloomstalker Dredbat
 	}),
 };
