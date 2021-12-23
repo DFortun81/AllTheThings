@@ -2342,7 +2342,7 @@ root("HiddenQuestTriggers", {
 			q(62520),	-- 'Clean' criteria for It's Certainly Never Boring
 
 			--q(61935),	-- Stonehad was miserable, Adrestes was elated if it matters. This was at the start of the court - no idea what that was.  It's the first court with decorations though.
-			--q(61536),	-- Miserable Aliothe, Happy Mikanikos, Comfortable Choofa, Comfortable Alexandros Mograine, triggered after opening Mikanikos chest
+			--q(61536),	-- Miserable Aliothe, Uncomfortable Mikanikos, Unhappy Choofa, Unhappy Alexandros Mograine, triggered after opening Mikanikos chest
 
 			--q(61930),	-- Unknown
 			q(61936),	-- Triggered after Restock: Surveillance
@@ -2354,6 +2354,7 @@ root("HiddenQuestTriggers", {
 			--q(63353),	-- Achievement related to "Rendles Big Day"
 			--q(61932),	-- Maybe Bastion Etiquette
 			q(61458),	-- After using [Visions of Sire Denathrius] in Ember Court
+			q(61414),	-- Faulty Fireworks (+Safe)
 
 	-- Misc
 		q(62035),	-- unlocking Soulbreaker's Court Vestments set (TransmogSetID 2065, Soulbreaker's Court items)
