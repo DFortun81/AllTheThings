@@ -285,6 +285,9 @@ _.ExpansionFeatures =
 						n(VENDORS, {
 							n(85984, {	--  Nat Pagle <Master Fisherman>
 								i(168416),	-- Angler's Water Striders
+								i(116825, {	-- Savage Fishing Pole
+									["cost"] = { { "i", 117397, 25 }, },	-- 25x Nat's Lucky Coin
+								}),
 								i(116826, {	-- Draenic Fishing Pole
 									["cost"] = { { "i", 117397, 25 }, },	-- 25x Nat's Lucky Coin
 								}),
