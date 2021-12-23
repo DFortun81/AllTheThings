@@ -1452,15 +1452,15 @@ root("HiddenQuestTriggers", {
 	q(63150),	-- Athanos | Humility | no charms | no active braziers
 	q(63151),	-- Azaruux | Humility | no charms | no active braziers
 
-	-- HQTs for Bastion of Protection
+	-- HQTs for Bastion of Protection achievement
 	q(63074),	-- Kalisthene | Spiritforged Aegis
 	q(63075),	-- Craven Corinth | Spiritforged Aegis
 	
-	-- HQTs for The Hoot of the Issue
+	-- HQTs for The Hoot of the Issue achievement
 	q(63076),	-- Loyalty | Alderyn and Myn'ir | Mikanikos
 	q(63077),	-- Loyalty | Splinterbark Nightmare | Mikanikos
 
-	-- HQTs for It's Not What You Wear
+	-- HQTs for It's Not What You Wear achievement
 	q(63078),	-- Loyalty | Herald's Footpads
 	q(63079),	-- Loyalty | Deep Echo Trident
 	q(63080),	-- Loyalty | Vial of Lichfrost
@@ -1476,7 +1476,7 @@ root("HiddenQuestTriggers", {
 	q(63088),	-- Humility | Ring of Warding
 	q(63089),	-- Humility | Spiritforged Aegis
 	
-	-- HQTs for Learning from the Masters
+	-- HQTs for Learning from the Masters achievement
 	q(63093),	-- Kalisthene | Wisdom | Kleia
 	q(63094),	-- Kalisthene | Wisdom | Pelagos
 	q(63095),	-- Kalisthene | Wisdom | Mikanikos
