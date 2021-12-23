@@ -2077,6 +2077,8 @@ root("Instances", tier(CLASSIC_TIER, {
 root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
 		q(35304),	-- Shadowfang Keep Reward Quest - Normal completion
+		q(35309),	-- Shadowfang Keep Reward Quest - Heroic completion
+		q(35311),	-- Commander Springvale Reward Quest
 		q(35305),	-- Defeat Baron Silverlaine Reward
 	}),
 });

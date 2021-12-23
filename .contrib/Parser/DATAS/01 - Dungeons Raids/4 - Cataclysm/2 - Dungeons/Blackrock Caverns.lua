@@ -246,3 +246,11 @@ _.Instances = { tier(CATA_TIER, {
 		},
 	}),
 })};
+root("HiddenQuestTriggers", {
+	tier(WOD_TIER, {
+		q(35348),	-- Blackrock Caverns Reward Quest
+		q(35351),	-- Blackrock Caverns Reward Quest
+		q(35349),	-- Blackrock Caverns Bonus Reward
+		q(35352),	-- Blackrock Caverns Bonus Reward - killing Beauty
+	}),
+});

@@ -183,3 +183,9 @@ _.Instances = { tier(CATA_TIER, {
 		},
 	}),
 })};
+root("HiddenQuestTriggers", {
+	tier(WOD_TIER, {
+		q(35404),	-- Grim Batol Reward Quest
+		q(35405),	-- Grim Batol Reward Quest
+	}),
+});

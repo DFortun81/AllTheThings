@@ -244,6 +244,11 @@ _.Instances = { tier(CATA_TIER, {
 		},
 	}),
 })};
+root("HiddenQuestTriggers", {
+	tier(WOD_TIER, {
+		q(35443),	-- Zul'Aman Reward Quest - Heroic completion
+	}),
+});
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(CATA_TIER, {
 		inst(77, {	-- Zul'Aman

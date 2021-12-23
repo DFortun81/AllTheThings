@@ -159,3 +159,15 @@ _.Instances = { tier(MOP_TIER, {
 		},
 	}),
 })};
+root("HiddenQuestTriggers", {
+	tier(MOP_TIER, {
+		q(31621),	-- Stormstout Brewery Challenge Mode - Bronze Addition (Nth)
+		q(31620),	-- Stormstout Brewery Challenge Mode - Consolation (Nth)
+		q(31623),	-- Stormstout Brewery Challenge Mode - Gold Addition (Nth)
+		q(31622),	-- Stormstout Brewery Challenge Mode - Silver Addition (Nth)
+	}),
+	tier(WOD_TIER, {
+		q(35323),	-- Stormstout Brewery Reward Quest
+		q(35324),	-- Stormstout Brewery Reward Quest
+	}),
+});

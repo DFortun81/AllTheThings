@@ -99,34 +99,10 @@ _.HiddenQuestTriggers = {
 		q(54632),	-- Paragon of the Zandalari Empire
 
 	--	PVP quests
-		q(38109, {	-- Vanilla 10-19
-			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
-		}),
-		q(38120, {	-- Vanilla 10-19
-			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
-		}),
-		q(38110, {	-- Classic 20-29
-			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
-		}),
-		q(38121, {	-- Classic 20-29
-			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
-		}),
 		q(62298, {	-- Classic 20-49
 			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
 		}),
 		q(62299, {	-- Classic 20-49
-			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
-		}),
-		q(38111, {	-- Classic 30-39
-			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
-		}),
-		q(38122, {	-- Classic 30-39
-			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
-		}),
-		q(38112, {	-- Classic 40-49
-			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
-		}),
-		q(38123, {	-- Classic 40-49
 			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
 		}),
 		q(62347, {	-- Shadowlands (51-59) E
@@ -840,28 +816,6 @@ _.HiddenQuestTriggers = {
 		q(45436),	-- First Win of the Day (Skirmish)
 		q(45433),	-- First Win of the Day (3v3)
 		q(45434),	-- First Win of the Day (10v10)
-		q(36143, {	-- LFGDungeons - Lich King - Dungeon Normal 1st
-			["_drop"] = { "g" },	-- drop satchel
-		}),
-		q(36149, {	-- LFGDungeons - Lich King - Dungeon Normal Nth
-			["_drop"] = { "g" },	-- drop satchel
-		}),
-		q(36145),	-- LFGDungeons - Cataclysm - Dungeon Normal 1st
-		q(36151),	-- LFGDungeons - Cataclysm - Dungeon Normal Nth
-		q(36147, {	-- LFGDungeons - Pandaria - Dungeon Normal 1st
-			["_drop"] = { "g" },	-- drop satchel
-		}),
-		q(36139, {	-- LFGDungeons - Pandaria - Dungeon Normal Nth
-			["_drop"] = { "g" },	-- drop satchel
-		}),
-		q(31618, {	-- LFGDungeons - Mists - Normal Random - 1st
-			["_drop"] = { "g" },	-- drop satchel
-		}),
-		q(31619, {	-- LFGDungeons - Mists - Normal Random - Nth
-			["_drop"] = { "g" },	-- drop satchel
-		}),
-		q(37505),	-- LFGDungeons - Draenor - Raid Finder - 1st
-		q(37506),	-- LFGDungeons - Draenor - Raid Finder - Nth
 		q(49847),	-- Selected Pandaria at level 80 Special Duty Assignment" on horde
 		q(57668),	-- Triggering when using a portal to Orgrimmar as Horde/to Ironforge as Alliance after Dec 25th during the Feast of Winter Veil 2019
 		--- (seems to trigger only the first time you go there that day). Possibly used to determine loot eligibility?
@@ -998,6 +952,7 @@ _.HiddenQuestTriggers = {
 		q(36796),	-- The Flock's Revenge - completed with quest 36790
 		q(36859),	-- Deprecated - completed with quest 36590
 		q(37185),	-- A Personal Summons - completed with quest 28790 & 28825
+		q(37186),	-- The Art of War - completed with quest 29611 & 29612
 		q(37189),	-- A Personal Summons - completed with quest 28825
 		q(37190),	-- Iron Horde Invasion - completed with quest 36499
 		q(37196),	-- Iron Horde Invasion - completed with quest 36498
@@ -1006,6 +961,7 @@ _.HiddenQuestTriggers = {
 		q(37667),	-- Building for Professions - completed with quest 36100 & 37669
 		q(37933),	-- Uncovering the Artifact Fragments - completed with quest 36133 & possibly also 36198
 		q(38008),	-- The Road of Glory - completed with quest 36125 & 36227
+		q(38305),	-- Cenarius, Keeper of the Grove — completed with quest 40122
 		q(39058, {["_drop"] = { "g" }}),	-- Critters of Draenor — completed with quest 38299 & 38300
 		q(45405),	-- Breaching the Sanctum - completed with quest 44719
 		q(49563),	-- Warchief's Command: Frostfire Ridge! - completed with quest 49545
@@ -1075,37 +1031,10 @@ _.HiddenQuestTriggers = {
 		q(12452),	-- Dragonblight - triggers when turning in "The Fate of the Ruby Dragonshrine". duplicate version of a quest during early development
 		q(12693),	-- Sholazar Basin - Wolvar Faction Choice Tracker
 		q(12694),	-- Sholazar Basin - Oracle Faction Choice Tracker
-		q(39783),	-- Battle Pet - Terky
 
 		-------------------
 		--   CATACLYSM   --
 		-------------------
-		--	Dungeons & Raids
-		q(35348),	-- Blackrock Caverns Reward Quest
-		q(35351),	-- Blackrock Caverns Reward Quest
-		q(35349),	-- Blackrock Caverns Bonus Reward
-		q(35352),	-- Blackrock Caverns Bonus Reward. Killing Beauty
-		q(35587),	-- Deadmines heroic completion
-		q(35358),	-- End Time heroic completion
-		q(35404),	-- Grim Batol Reward Quest
-		q(35405),	-- Grim Batol Reward Quest
-		q(35439),	-- Hour of Twilight dungeon reward (Kill benedictus)
-		q(35414),	-- Lost City of the Tol'vir dungeon reward (Kill Siamat)
-		q(35311),	-- Shadowfang Keep heroic bonus objective complete
-		q(35309),	-- Shadowfang Keep heroic completion (Kill Lord Godfrey)
-		q(35911),	-- Stonecore Reward Quest
-		q(35913),	-- Stonecore (Heroic) reward quest
-		q(35401),	-- The Vortex Pinnacle Reward Quest
-		q(35363),	-- Throne of the Tides Reward Quest
-		q(35365),	-- Throne of the Tides Reward Quest (kill final boss, triggered in Timewalking)
-		q(35364),	-- Throne of the Tides Bonus Reward (kill Mindbender Ghur'sha)
-		q(35366),	-- Throne of the Tides Bonus Reward (kill Mindbender Ghur'sha, triggered in Timewalking)
-		q(35403),	-- Vortex Pinnacle dungeon reward (Kill Asaad)
-		q(35443),	-- Zul'Aman Reward Quest
-		q(35411),	-- Zul'Gurub Reward Quest
-		q(35412),	-- Zul'Gurub Bonus Objective Reward Quest. Killing Cache of Madness
-		q(35435),	-- Well of Eternity Reward Quest
-
 		-- QUESTING
 		q(28347),	-- Coffer of Promise TRACKING QUEST
 		q(25071),	-- FLAG - Purple Murloc
@@ -1151,7 +1080,6 @@ _.HiddenQuestTriggers = {
 		q(30373),	-- Jogu the drunk as farmhand
 		q(30365),	-- Chee chee farmhand tillers
 		--
-		q(37193),	-- looks like some unused version of "The King's Command", autocompleted when I picked up "Hero's Call: Jade Forest!" 49556 from Hero's Call Board
 		q(31485),	-- UNUSED — triggered after turning in quest #31281, "So You Want to Be a Chef..." in Valley of the Four Winds
 		q(31469),	-- UNUSED — triggered after turning in quest #31311, "Way of the Grill" in Vally of the Four Winds
 		q(30536),	-- FLAG - Weed War Training — triggered after turning in daily quest #30321, "Weed War II"
@@ -1210,28 +1138,18 @@ _.HiddenQuestTriggers = {
 		q(31969),	-- Jade Forest - Tracking flag used during horde quest "Priorities"
 		q(31195),	-- Jade Forest - Ooked the Dooker (literally the name. Triggers after killing Dook Ookem during "Lay of the Land" as horde)
 		q(29368),	-- Jade Forest - Tracking - added in cataclysm but triggered after completing the criteria for "Acid Rain" in MOP?
-		q(37186),	-- Jade Forest - The Art of War - version added during warlords of draenor, but no info exists anywhere for it
 		q(30486),	-- Jade Forest - Jade Dragon Phased Terrain Tracking - triggers after placing the Cho family heirloom during "Last Piece of the Puzzle"
 		q(30165),	-- Jade Forest - picked the blue serpent egg on "Choosing the One"
 		q(30166),	-- Jade Forest - picked the green serpent egg on "Choosing the One"
 		q(30167),	-- Jade Forest - picked the yellow/gold serpent egg on "Choosing the One"
-		q(37212),	-- FLAG - Proving Grounds - Damage Bronze
 		q(33089),	-- FLAG - Proving Grounds - Damage Bronze
-		q(37214),	-- FLAG - Proving Grounds - Damage Gold
 		q(33091),	-- FLAG - Proving Grounds - Damage Gold
 		q(33090),	-- FLAG - Proving Grounds - Damage Silver
-		q(37213),	-- FLAG - Proving Grounds - Damage Silver
-		q(37218),	-- FLAG - Proving Grounds - Healer Bronze
 		q(33095),	-- FLAG - Proving Grounds - Healer Bronze
-		q(37220),	-- FLAG - Proving Grounds - Healer Gold
 		q(33097),	-- FLAG - Proving Grounds - Healer Gold
 		q(33096),	-- FLAG - Proving Grounds - Healer Silver
-		q(37219),	-- FLAG - Proving Grounds - Healer Silver
 		q(33092),	-- FLAG - Proving Grounds - Tank Bronze
-		q(37215),	-- FLAG - Proving Grounds - Tank Bronze
 		q(33094),	-- FLAG - Proving Grounds - Tank Gold
-		q(37217),	-- FLAG - Proving Grounds - Tank Gold
-		q(37216),	-- FLAG - Proving Grounds - Tank Silver
 		q(33093),	-- FLAG - Proving Grounds - Tank Silver
 		q(32112),	-- FLAG - Been to Fight Club. Completing first fight
 		q(32899),	-- Daily Scenario Random (Nth)(Mists)
@@ -1295,57 +1213,6 @@ _.HiddenQuestTriggers = {
 		q(32666),	-- Warlock Green Fire Questline - Reached Kanrethad
 
 		--	DUNGEONS
-		q(35315),	-- Gate of the Setting Sun Reward Quest
-		q(35316),	-- Gate of the Setting Sun Reward Quest
-		q(31631),	-- Gate of the Setting Sun Challenge Mode - Bronze Addition (Nth)
-		q(31624),	-- Gate of the Setting Sun Challenge Mode - Consolation (Nth)
-		q(31645),	-- Gate of the Setting Sun Challenge Mode - Gold Addition (Nth)
-		q(31638),	-- Gate of the Setting Sun Challenge Mode - Silver Addition (Nth)
-		q(31499),	-- Jade Serpent Challenge Mode - Bronze Addition (Nth)
-		q(31498),	-- Jade Serpent Challenge Mode - Consolation (Nth)
-		q(31501),	-- Jade Serpent Challenge Mode - Gold Addition (Nth)
-		q(31500),	-- Jade Serpent Challenge Mode - Silver Addition (Nth)
-		q(31634),	-- Mogu'shan Palace Challenge Mode - Bronze Addition (Nth)
-		q(31627),	-- Mogu'shan Palace Challenge Mode - Consolation (Nth)
-		q(31648),	-- Mogu'shan Palace Challenge Mode - Gold Addition (Nth)
-		q(31641),	-- Mogu'shan Palace Challenge Mode - Silver Addition (Nth)
-		q(35318),	-- Mogu'shan Palace Reward Quest (was in a normal)
-		q(35321),	-- Mogu'shan Palace Reward Quest
-		q(31636),	-- Scarlet Halls Challenge Mode - Bronze Addition (Nth)
-		q(31630),	-- Scarlet Halls Challenge Mode - Consolation (Nth)
-		q(31650),	-- Scarlet Halls Challenge Mode - Gold Addition (Nth)
-		q(31643),	-- Scarlet Halls Challenge Mode - Silver Addition (Nth)
-		q(35609),	-- Scarlet Halls heroic bonus objective complete (kill Armsmaster Harlan)
-		q(35608),	-- Scarlet Halls heroic completion (Kill Flameweaver Koegler)
-		q(31637),	-- Scarlet Monastery Challenge Mode - Bronze Addition (Nth)
-		q(31629),	-- Scarlet Monastery Challenge Mode - Consolation (Nth)
-		q(31651),	-- Scarlet Monastery Challenge Mode - Gold Addition (Nth)
-		q(31644),	-- Scarlet Monastery Challenge Mode - Silver Addition (Nth)
-		q(35613),	-- Scarlet Monastery heroic completion
-		q(31635),	-- Scholomance Challenge Mode - Bronze Addition (Nth)
-		q(31628),	-- Scholomance Challenge Mode - Consolation (Nth)
-		q(31649),	-- Scholomance Challenge Mode - Gold Addition (Nth)
-		q(31642),	-- Scholomance Challenge Mode - Silver Addition (Nth)
-		q(35595),	-- Scholomance heroic completion
-		q(31632),	-- Shado-Pan Monastery Challenge Mode - Bronze Addition (Nth)
-		q(31625),	-- Shado-Pan Monastery Challenge Mode - Consolation (Nth)
-		q(31646),	-- Shado-Pan Monastery Challenge Mode - Gold Addition (Nth)
-		q(31639),	-- Shado-Pan Monastery Challenge Mode - Silver Addition (Nth)
-		q(35319),	-- Shado-Pan Monastery normal clear
-		q(35320),	-- Shado-Pan Monastery Reward Quest
-		q(35461),	-- Siege of Niuzao Reward Quest
-		q(31633),	-- Siege of Niuzao Temple Challenge Mode - Bronze Addition (Nth)
-		q(31626),	-- Siege of Niuzao Temple Challenge Mode - Consolation (Nth)
-		q(31647),	-- Siege of Niuzao Temple Challenge Mode - Gold Addition (Nth)
-		q(31640),	-- Siege of Niuzao Temple Challenge Mode - Silver Addition (Nth)
-		q(31621),	-- Stormstout Brewery Challenge Mode - Bronze Addition (Nth)
-		q(31620),	-- Stormstout Brewery Challenge Mode - Consolation (Nth)
-		q(31623),	-- Stormstout Brewery Challenge Mode - Gold Addition (Nth)
-		q(31622),	-- Stormstout Brewery Challenge Mode - Silver Addition (Nth)
-		q(35323),	-- Stormstout Brewery Reward Quest
-		q(35324),	-- Stormstout Brewery Reward Quest
-		q(35325),	-- Temple of the Jade Serpent Reward Quest (LFG)
-		q(35327),	-- Temple of the Jade Serpent Reward Quest
 		q(32898),	-- Daily Scenario Random (1st) (Mists) — normal scenario completion
 		q(32817),	-- Complete "Loyalty" Scenario — triggered when turning in "The King and the Council"
 		q(32818),	-- Complete "The Dark Heart of Pandaria" Scenario — triggered when turning in "The Warchief and the Darkness"
@@ -1442,8 +1309,6 @@ _.HiddenQuestTriggers = {
 		--	Various tracking quests
 		q(42181),	-- triggered after turning in #39733, "The Lone Mountain"
 		q(43447),	-- Vignette: Wraithtalon — newer tracking quest for Wraithtalon rare in Val'sharah (on top of normal tracking quest - both pop at the same time)
-		q(33820),	-- Tracking Quest: Seen Escape Cinematic — triggered by cinematic during quest #34338, "The Descent"
-		q(36588),	-- Tracking - See Closed Chest — triggered immediately after accepting quest #34410, "The Beating Heart"
 		q(40087),	-- "Enter the Illidari: Shivarra" - Sevis Brightflame Sacrificed Tracking Event
 		q(40076),	-- Start Demon Hunter Tracking - triggers right after creating a demon hunter
 		q(39517),	-- Demon Hunter - picked Havoc during "Fel Secrets" on Mardum
@@ -1459,17 +1324,13 @@ _.HiddenQuestTriggers = {
 		q(42741),	-- Legion Expansion Started Tracking Quest
 		q(46733),	-- Legion Expansion Started Tracking Quest
 		q(40658),	-- Durotar - Tracking Quest - W1 - See Demon Attack ("Demons Among Us" quest)
-		q(33707),	-- Durotar - Demons Among Us - Horde - looks like a possible alpha version of the quest? triggers when turning in "Demons Among Us"
 		q(40768),	-- Orgrimmar - Tracking Quest - W1 - Intro to Illidari Complete - triggers when turning in "Keep Your Friends Close"
 		q(40616),	-- Tracking Quest - W1 - Saw Leader Die
-		q(36825),	-- Fate of the Horde - triggered when turning in "Audience with the Warchief" as a demon hunter
 		q(40521),	-- Tracking Quest - W1 - Demon Attack Complete (Horde) - triggered after turning in "Demons Among Them"
 		q(41306),	-- The Fallen Lion. Triggers with regular "The Fallen Lion" 40517
-		q(33079),	-- Triggers with "Demons Among Us" 40593
 		q(8237),	-- In the Blink of an Eye - dalaran transported to the broken isles
 		q(45533),	-- Legion Dungeon Reward Quest
 		q(44437),	-- Legion Sungeon Reward quest (Wrath of Azshara)
-		q(38305),	-- Cenarius, Keeper of the Grove — unused version of quest 40122
 		q(37526),	-- Farondis Murder Flag — triggers between turning in "The Tidestone: Shattered" and starting "Save Yourself" in Azsuna
 		q(41891),	-- Tainted Growth — got credit for this when turning in 38684, "Reading the Leaves"
 		q(43510),	-- Seal of Fate: Class Hall. Weekly quest, various sources
@@ -3604,8 +3465,45 @@ _.HiddenQuestTriggers = {
 		--	QUESTING / LEVELING / VARIOUS
 		q(37187),	-- The Dark Portal
 		q(35914),	-- Default invasion reward flag during the first garrison invasion as part of Draenor's base intro
+		q(37193),	-- The King's Command - autocompleted when "Hero's Call: Jade Forest!" is picked up (questID 49556)
 
 		--	DUNGEONS & RAIDS
+		q(37212),	-- FLAG - Proving Grounds - Damage Bronze
+		q(37214),	-- FLAG - Proving Grounds - Damage Gold
+		q(37213),	-- FLAG - Proving Grounds - Damage Silver
+		q(37218),	-- FLAG - Proving Grounds - Healer Bronze
+		q(37220),	-- FLAG - Proving Grounds - Healer Gold
+		q(37219),	-- FLAG - Proving Grounds - Healer Silver
+		q(37215),	-- FLAG - Proving Grounds - Tank Bronze
+		q(37217),	-- FLAG - Proving Grounds - Tank Gold
+		q(37216),	-- FLAG - Proving Grounds - Tank Silver
+		q(37501),	-- Draenor Challenge Mode - Bronze Addition (1st)
+		q(37502),	-- Draenor Challenge Mode - Consolation (1st)
+		q(37503),	-- Draenor Challenge Mode - Gold Addition (1st)
+		q(37504),	-- Draenor Challenge Mode - Silver Addition (1st)
+		q(36145),	-- LFGDungeons - Cataclysm - Dungeon Normal 1st
+		q(36151),	-- LFGDungeons - Cataclysm - Dungeon Normal Nth
+		q(40829),	-- LFGDungeons - Draenor 6.2 - Raid Finder - 1st
+		q(37333),	-- LFGDungeons - Draenor - Heroic Random - 1st
+		q(37334),	-- LFGDungeons - Draenor - Heroic Random - Nth
+		q(37335),	-- LFGDungeons - Draenor - Normal Random - 1st
+		q(37336),	-- LFGDungeons - Draenor - Normal Random - Nth
+		q(37505),	-- LFGDungeons - Draenor - Raid Finder - 1st
+		q(37506),	-- LFGDungeons - Draenor - Raid Finder - Nth
+		q(36143, {["_drop"] = { "g" }}),	-- LFGDungeons - Lich King - Dungeon Normal 1st
+		q(36149, {["_drop"] = { "g" }}),	-- LFGDungeons - Lich King - Dungeon Normal Nth
+		q(31618, {["_drop"] = { "g" }}),	-- LFGDungeons - Mists - Normal Random - 1st
+		q(31619, {["_drop"] = { "g" }}),	-- LFGDungeons - Mists - Normal Random - Nth
+		q(36147, {["_drop"] = { "g" }}),	-- LFGDungeons - Pandaria - Dungeon Normal 1st
+		q(36139, {["_drop"] = { "g" }}),	-- LFGDungeons - Pandaria - Dungeon Normal Nth
+		q(40395, {["_drop"] = { "g" }}),	-- LFGDungeons - Timewalking "Heroic" Random - Nth
+		q(36144, {["_drop"] = { "g" }}),	-- LFG WLK 75-80
+		q(36150, {["_drop"] = { "g" }}),	-- LFG WLK 75-80
+		q(35963),	-- Warlords Heroic Dungeon Reward Quest - triggered at the end of Mythic Grimrail Depot
+		q(36277),	-- Warlords Max Level Dungeon Bonus Reward
+		q(35962),	-- Warlords Max Level Dungeon Reward Quest - triggered at the end of Normal Grimrail Depot
+
+		-- PVP
 		q(38116, {["_drop"] = { "g" }}),	-- Cata/Mop 80-89
 		q(38127, {["_drop"] = { "g" }}),	-- Cata/MoP 80-89
 		q(38138),	-- Cata/MoP 80-89
@@ -3613,12 +3511,18 @@ _.HiddenQuestTriggers = {
 		q(38167),	-- Cata/MoP 80-89
 		q(38149),	-- Classic 10-19
 		q(38160),	-- Classic 10-19
+		q(38110, {["_drop"] = { "g" }}),	-- Classic 20-29
+		q(38121, {["_drop"] = { "g" }}),	-- Classic 20-29
 		q(38132),	-- Classic 20-29
 		q(38150),	-- Classic 20-29
 		q(38161),	-- Classic 20-29
+		q(38111, {["_drop"] = { "g" }}),	-- Classic 30-39
+		q(38122, {["_drop"] = { "g" }}),	-- Classic 30-39
 		q(38133),	-- Classic 30-39
 		q(38151),	-- Classic 30-39
 		q(38162),	-- Classic 30-39
+		q(38112, {["_drop"] = { "g" }}),	-- Classic 40-49
+		q(38123, {["_drop"] = { "g" }}),	-- Classic 40-49
 		q(38134),	-- Classic 40-49
 		q(38152),	-- Classic 40-49
 		q(38163),	-- Classic 40-49
@@ -3627,10 +3531,6 @@ _.HiddenQuestTriggers = {
 		q(38135),	-- Classic 50-59
 		q(38153),	-- Classic 50-59
 		q(38164),	-- Classic 50-59
-		q(37501),	-- Draenor Challenge Mode - Bronze Addition (1st)
-		q(37502),	-- Draenor Challenge Mode - Consolation (1st)
-		q(37503),	-- Draenor Challenge Mode - Gold Addition (1st)
-		q(37504),	-- Draenor Challenge Mode - Silver Addition (1st)
 		q(38118, {["_drop"] = { "g" }}),	-- Legion 100-109 A
 		q(38129, {["_drop"] = { "g" }}),	-- Legion 100-109 A
 		q(38140, {["_drop"] = { "g" }}),	-- Legion 100-109 A
@@ -3645,14 +3545,6 @@ _.HiddenQuestTriggers = {
 		q(38170),	-- Legion 100-109 H
 		q(38173, {["_drop"] = { "g" }}),	-- Legion 100-109 H
 		q(38174, {["_drop"] = { "g" }}),	-- Legion 100-109 H
-		q(37333),	-- LFGDungeons - Draenor - Heroic Random - 1st
-		q(37334),	-- LFGDungeons - Draenor - Heroic Random - Nth
-		q(37335),	-- LFGDungeons - Draenor - Normal Random - 1st
-		q(37336),	-- LFGDungeons - Draenor - Normal Random - Nth
-		q(40829),	-- LFGDungeons - Draenor 6.2 - Raid Finder - 1st
-		q(40395, {["_drop"] = { "g" }}),	-- LFGDungeons - Timewalking "Heroic" Random - Nth
-		q(36144, {["_drop"] = { "g" }}),	-- LFG WLK 75-80
-		q(36150, {["_drop"] = { "g" }}),	-- LFG WLK 75-80
 		q(36140, {["_drop"] = { "g" }}),	-- Pandaria 88-90
 		q(36148, {["_drop"] = { "g" }}),	-- Pandaria 88-90
 		q(38114, {["_drop"] = { "g" }}),	-- TBC 60-69
@@ -3660,9 +3552,8 @@ _.HiddenQuestTriggers = {
 		q(38136),	-- TBC 60-69
 		q(38154),	-- TBC 60-69
 		q(38165),	-- TBC 60-69
-		q(35963),	-- Warlords Heroic Dungeon Reward Quest - triggered at the end of Mythic Grimrail Depot
-		q(36277),	-- Warlords Max Level Dungeon Bonus Reward
-		q(35962),	-- Warlords Max Level Dungeon Reward Quest - triggered at the end of Normal Grimrail Depot
+		q(38109, {["_drop"] = { "g" }}),	-- Vanilla 10-19
+		q(38120, {["_drop"] = { "g" }}),	-- Vanilla 10-19
 		q(38115, {["_drop"] = { "g" }}),	-- WLK 70-79
 		q(38126, {["_drop"] = { "g" }}),	-- WLK 70-79
 		q(38137),	-- WLK 70-79

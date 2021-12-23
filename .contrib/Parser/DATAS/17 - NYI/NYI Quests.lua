@@ -880,7 +880,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(34191),	-- Vignette: Un'glok Blackfinger
 			q(34907),	-- Vignette/Treasure: Lagoon Pool/Giant Clam
 			q(34652),	-- Vignette/Treasure: Savage Clam
-			q(34649),	-- Vignette/Treasure: Smoldering True Iron Deposit
 			q(32936),	-- War Horses!
 			q(33906),	-- War Kangaroo!
 			q(34008),	-- We Are Leaving!

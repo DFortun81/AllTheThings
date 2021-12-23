@@ -593,3 +593,9 @@ _.Instances = { tier(CATA_TIER, {
 		},
 	}),
 })};
+root("HiddenQuestTriggers", {
+	tier(WOD_TIER, {
+		q(35411),	-- Zul'Gurub Reward Quest - Heroic completion
+		q(35412),	-- Zul'Gurub Bonus Objective Reward Quest - kill Cache of Madness
+	}),
+});

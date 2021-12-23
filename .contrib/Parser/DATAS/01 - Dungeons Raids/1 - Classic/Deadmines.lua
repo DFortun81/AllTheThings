@@ -778,6 +778,7 @@ root("Instances", tier(CLASSIC_TIER, {
 root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
 		q(35586),	-- Deadmines Reward Quest - Normal completion
+		q(35587),	-- Deadmines Reward Quest - Heroic completion
 	}),
 });
 -- #endif

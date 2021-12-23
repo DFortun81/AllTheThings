@@ -174,3 +174,15 @@ _.Instances = { tier(MOP_TIER, {
 		},
 	}),
 })};
+root("HiddenQuestTriggers", {
+	tier(MOP_TIER, {
+		q(31632),	-- Shado-Pan Monastery Challenge Mode - Bronze Addition (Nth)
+		q(31625),	-- Shado-Pan Monastery Challenge Mode - Consolation (Nth)
+		q(31646),	-- Shado-Pan Monastery Challenge Mode - Gold Addition (Nth)
+		q(31639),	-- Shado-Pan Monastery Challenge Mode - Silver Addition (Nth)
+	}),
+	tier(WOD_TIER, {
+		q(35319),	-- Shado-Pan Monastery Reward Quest - Normal completion
+		q(35320),	-- Shado-Pan Monastery Reward Quest - Heroic completion
+	}),
+});

@@ -1612,11 +1612,20 @@ root("Instances", tier(CLASSIC_TIER, {
 		},
 	}),
 }));
--- #if AFTER 6.0.1
+-- #if AFTER 5.0.1
 root("HiddenQuestTriggers", {
+	tier(MOP_TIER, {
+		q(31635),	-- Scholomance Challenge Mode - Bronze Addition (Nth)
+		q(31628),	-- Scholomance Challenge Mode - Consolation (Nth)
+		q(31649),	-- Scholomance Challenge Mode - Gold Addition (Nth)
+		q(31642),	-- Scholomance Challenge Mode - Silver Addition (Nth)
+	}),
+	-- #if AFTER 6.0.1
 	tier(WOD_TIER, {
 		q(35594),	-- Scholomance Reward Quest - Normal completion
+		q(35595),	-- Scholomance Reward Quest - Heroic completion
 	}),
+	-- #endif
 });
 -- #endif
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {

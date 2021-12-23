@@ -183,3 +183,15 @@ _.Instances = { tier(MOP_TIER, {
 		},
 	}),
 })};
+root("HiddenQuestTriggers", {
+	tier(MOP_TIER, {
+		q(31499),	-- Jade Serpent Challenge Mode - Bronze Addition (Nth)
+		q(31498),	-- Jade Serpent Challenge Mode - Consolation (Nth)
+		q(31501),	-- Jade Serpent Challenge Mode - Gold Addition (Nth)
+		q(31500),	-- Jade Serpent Challenge Mode - Silver Addition (Nth)
+	}),
+	tier(WOD_TIER, {
+		q(35325),	-- Temple of the Jade Serpent Reward Quest
+		q(35327),	-- Temple of the Jade Serpent Reward Quest
+	}),
+});

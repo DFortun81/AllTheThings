@@ -647,6 +647,7 @@ select(2, ...).ObjectNames = {
 	[230402] = "Lucky Coin",
 	[230424] = "Snow-Covered Strongbox",
 	[230425] = "Gnawed Bone",
+	[230428] = "Smoldering True Iron Deposit",
 	[230544] = GetSpellInfo(155334),	-- Touched By Ice,
 	[230611] = "Pale Loot Sack",
 	[230643] = "Teroclaw Nest",
