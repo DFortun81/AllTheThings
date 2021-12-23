@@ -482,6 +482,12 @@ _.Zones =
 						i(7509),	-- Manaweave Robe	-- NOTE: Item still available
 					},
 				}),
+				q(65047, {	-- Mark of the Nightwing Raven
+					["name"] = "Mark of the Nightwing Raven",
+					["provider"] = { "n", 44395 },	-- Celestine of the Harvest
+					["classes"] = { DRUID },
+					["coord"] = { 57.6, 24.8, STORMWIND_CITY },
+				}),
 				q(1703,  {	-- Mathiel
 					["sourceQuests"] = { 1701 },	-- Fire Hardened Mail
 					["provider"] = { "n", 5413 },	-- Furen Longbeard

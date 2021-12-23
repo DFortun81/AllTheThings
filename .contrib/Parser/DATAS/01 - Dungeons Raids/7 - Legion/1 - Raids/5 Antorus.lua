@@ -1702,7 +1702,9 @@ root("Instances", tier(LEGION_TIER, {
 root("HiddenQuestTriggers", tier(LEGION_TIER, {
 	inst(946, {
 		d(16, {	-- Mythic
+			q(49358),	-- 'invasion battle' first kill
 			q(49360),	-- Mythic: Eonar -- First Kill
+			q(49362),	-- full raid cleared
 		}),
 	}),
 }));

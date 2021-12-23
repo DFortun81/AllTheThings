@@ -1703,65 +1703,66 @@ _.Zones =
 		}),
 	}),
 };
-_.HiddenQuestTriggers = {
+root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
+		q(34935),	-- After Wall Greeting - triggers during "Dropping In" after taking the portal (questID 34913 & 34879)
+		q(34560),	-- Armory
+		q(34568),	-- Armory
+		q(37301),	-- Armory
+		q(37304),	-- Armory
+		q(34793),	-- Auchenai Defenders Greeting
+		q(35044),	-- Cordana Summon - triggers if you build the Arcane Sanctum and approach Khadgar at the entrance of Zangarra
+		q(34920),	-- Destroy Ward - triggers when interacting with the first orb during "Orbs of Power" (questID 34911 & 34889)
+		q(33927),	-- Draenei Camp Explosion Tracker - triggers when approaching the area for Deceptia's Smoldering Boots
+		q(37300),	-- Drafting Table Interact - triggers when you switch buildings in Talador
+		q(34895),	-- Dropping Bombs Tracking
+		q(34983),	-- Dropping Bombs Tracking
+		q(35047),	-- Dropping Bombs Tracking
+		q(36426),	-- Dueling Orbs
+		q(34835),	-- Gather Energy - triggers when interacting with an energy orb in Zangarra during "Gathering the Spark" (questID 34619 & 34636)
+		q(34834),	-- General Commentary - triggers when you interact with the second ancient during "Forming the Scroll" (questID 34612 & 34635)
+		q(33727),	-- Heal Up
+		q(34934),	-- Initial Defenders - triggers when approaching the gate at Gordal Fortress
+		q(34821),	-- Khadgar Summon - triggers when you take the portal to Khadgar's Tower during "Making Acquaintances" (questID 34815 & 34814)
+		q(34906),	-- Krelas Summoned - triggers when Krelas is summoned while approaching the arcane gate during "Dropping In" (questID 34913 & 34879)
+		q(34561),	-- Mage Tower
+		q(34567),	-- Mage Tower
+		q(37302),	-- Mage Tower
+		q(37303),	-- Mage Tower
+		q(35051),	-- Mage Tower Complete - triggers when obtaining your follower after "Due Cause to Celebrate"
+		q(34772),	-- Morkeths Cage
+		q(34946),	-- Morkurk Greeting
+		q(36905),	-- Ogre Waygate
+		q(34904),	-- Portal Vision - triggers when the portal is summoned to get on the wall during "Dropping In" (questID 34913 & 34879)
+		q(34833),	-- Prune Ancient - triggers when you interact with the first ancient during "Forming the Scroll" (questID 34612 & 34635)
+		q(33732),	-- Sabotage Siege Weapons
+		q(34969),	-- Serena Summoned - triggers when approaching Gordal Fortress and Serena ports in
+		q(34503),	-- Screaming Telmor Citizen - triggers in Telmor
+		q(33931),	-- This Is Not a Quest - triggers when you loot Deceptia's Smoldering Boots
+		q(34857),	-- Tracking Flag: Orcs Kicked Out of Cave - triggers when going to turn in "Old Friends, New Enemies" (questID 35226)
+		q(35491),	-- Tracking Flag - Underseer Bloodmane Vignette - secondary quest trigger for Underseer Bloodmane rare
+		q(33645),	-- Tracking Quest - Iskar's Hired Hand
+		q(34760),	-- Treasure: Warchest of Kull'krosh - secondary quest trigger for Rusted Lockbox treasure
+		q(34562),	-- Trigger Teron'gor Defense Spawns - triggers in a cave with Soulbind Nyami at Gul'Rok
+		q(34047),	-- Tuurem Explosion Tracker
+		q(34574),	-- Unused - triggeres when choosing the Arcane Sanctum building
+		q(34184),	-- Vignette: Aarkos - Killed Boss — first quest that triggers before looting Aarko's Family Treasure in Talador (we have the loot quest attached to the treasure)
 		q(34199),	-- Vignette: Anchorite's Sojourn
-		q(34113),	-- Vignette: Guy 2 Found (Deathweb Hallow)
-		q(34935),	-- Talador - After Wall Greeting. Triggers during "Dropping In" after taking the portal
-		q(34560),	-- Talador - Armory
-		q(34568),	-- Talador - Armory
-		q(37301),	-- Talador - Armory
-		q(37304),	-- Talador - Armory
-		q(34793),	-- Talador - Auchenai Defenders Greeting
-		q(35044),	-- Talador - Cordana Summon. Triggers if you build the arcane sanctum and approach khadgar at the entrance of Zangarra
-		q(34920),	-- Talador - Destroy Ward. Triggers when interacting with the first orb during "Orbs of Power"
-		q(33927),	-- Talador - Draenei Camp Explosion Tracker,	-- triggers when approaching the area for Deceptia's Smoldering Boots
-		q(37300),	-- Talador - Drafting Table Interact. Triggers when you switch buildings in Talador
-		q(34895),	-- Talador - Dropping Bombs Tracking
-		q(34983),	-- Talador - Dropping Bombs Tracking
-		q(35047),	-- Talador - Dropping Bombs Tracking
-		q(36426),	-- Talador - Dueling Orbs
-		q(34220),	-- Talador - Echo of Murmur killed, but not yet looted
-		q(34835),	-- Talador - Gather Energy. Triggers when interacting with an energy orb in Zangarra during "Gathering the Spark"
-		q(34834),	-- Talador - General Commentary. Triggers during "Forming the Scroll" when you interact with the second ancient
-		q(33727),	-- Talador - Heal Up
-		q(34934),	-- Talador - Initial Defenders. Triggers when approaching the gate at Gordal Fortress
-		q(34821),	-- Talador - Khadgar Summon. Triggers when you take the portal to Khadgar's Tower during "Making Acquaintances"
-		q(34906),	-- Talador - Krelas Summoned. Triggers when Krelas is summoned while approaching the arcane gate during "Dropping In"
-		q(34561),	-- Talador - Mage Tower
-		q(34567),	-- Talador - Mage Tower
-		q(37302),	-- Talador - Mage Tower
-		q(37303),	-- Talador - Mage Tower
-		q(35051),	-- Talador - Mage Tower Complete. Triggers when obtaining your follower after "Due Cause to Celebrate"
-		q(34772),	-- Talador - Morkeths Cage
-		q(34946),	-- Talador - Morkurk Greeting
-		q(34904),	-- Talador - Portal Vision. Triggers during "Dropping In" when the portal is summoned to get on the wall
-		q(34833),	-- Talador - Prune Ancient. Triggers during "Forming the Scroll" when you interact with the first ancient
-		q(33732),	-- Talador - Sabotage Siege Weapons
-		q(34969),	-- Talador - Serena Summoned. Triggers when approaching Gordal Fortress and Serena ports in
-		q(33931),	-- Talador - This Is Not a Quest,	-- triggers when you loot Deceptia's Smoldering Boots. Supposedly it shows the map indicator but is silently completed when the explosion happens?
-		q(34857),	-- Talador - Tracking Flag: Orcs Kicked Out of Cave),	-- triggers when going to turn in "Old Friends, New Enemies"
-		q(33645),	-- Talador - Tracking Quest,	-- Iskar's Hired Hand
-		q(34562),	-- Talador - Trigger Teron'gor Defense Spawns),	-- triggers in a cave with Soulbind Nyami at Gul'Rok
-		q(34574),	-- Talador - Unused. Triggered when choosing the Arcane Sanctum
-		q(34184),	-- Talador - Vignette: Aarkos - Killed Boss — first quest that triggers before looting Aarko's Family Treasure in Talador (we have the loot quest attached to the treasure)
-		q(34101),	-- Talador - Vignette: Aruumel's Worn Mace	-- triggers when looting "Lightbearer"
-		q(34112),	-- Talador - Vignette: Guy 1 Found,	-- triggers breaking a deathweb cocoon in Deathweb Hollow (A)
-		q(34114),	-- Talador - Vignette: Four Friends Found,	-- triggers when all 4 citizens are freed from deathweb cocoons, making the Deathweb Toxin Vial treasure lootable (A)
-		q(34115),	-- Talador - Vignette: Four Friends Found,	-- triggers when all 4 citizens are freed from deathweb cocoons, making the Deathweb Toxin Vial treasure lootable
-		q(34110),	-- Talador - Vignette: Girl 1 Found,	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
-		q(34116),	-- Talador - Vignette: Girl 1 Found,	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
-		q(34111),	-- Talador - Vignette: Girl 2 Found,	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
-		q(34117),	-- Talador - Vignette: Girl 2 Found,	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
-		q(34118),	-- Talador - Vignette: Guy 1 Found,	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
-		q(34119),	-- Talador - Vignette: Guy 2 Found,	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
-		q(34523),	-- Talador - Warlock Speaking to Gul'dan,	-- triggers near Gul'Rok
-		q(34047),	-- Talador - Tuurem Explosion Tracker
-		q(34503),	-- Talador - Screaming Telmor Citizen,	-- triggers in Telmor
-		q(34760),	-- Talador - triggered when looting the Rusted Lockbox. WoWhead lists as a nagrand treasure but that treasure doesn't seem to exist
-		q(35491),	-- Talador - Underseer Bloodmane vignette duplicate flag
+		q(34101),	-- Vignette: Aruumel's Worn Mace - triggers when looting "Lightbearer"
+		q(34220),	-- Vignette: Echo of Murmur - triggers when killed, but not yet looted
+		q(34114),	-- Vignette: Four Friends Found - triggers when all 4 citizens are freed from deathweb cocoons, making the Deathweb Toxin Vial treasure lootable (A)
+		q(34115),	-- Vignette: Four Friends Found - triggers when all 4 citizens are freed from deathweb cocoons, making the Deathweb Toxin Vial treasure lootable (H)
+		q(34110),	-- Vignette: Girl 1 Found - triggers breaking a deathweb cocoon in Deathweb Hollow (A)
+		q(34116),	-- Vignette: Girl 1 Found - triggers breaking a deathweb cocoon in Deathweb Hollow (H)
+		q(34111),	-- Vignette: Girl 2 Found - triggers breaking a deathweb cocoon in Deathweb Hollow (A)
+		q(34117),	-- Vignette: Girl 2 Found - triggers breaking a deathweb cocoon in Deathweb Hollow (H)
+		q(34112),	-- Vignette: Guy 1 Found - triggers breaking a deathweb cocoon in Deathweb Hollow (A)
+		q(34118),	-- Vignette: Guy 1 Found - triggers breaking a deathweb cocoon in Deathweb Hollow (H)
+		q(34113),	-- Vignette: Guy 2 Found - triggers breaking a deathweb cocoon in Deathweb Hollow (A)
+		q(34119),	-- Vignette: Guy 2 Found - triggers breaking a deathweb cocoon in Deathweb Hollow (H)
+		q(34523),	-- Warlock Speaking to Gul'dan - triggers near Gul'Rok
 	}),
-};
+});
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(WOD_TIER, {
 		n(QUESTS, {

@@ -1351,7 +1351,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(177166),	-- Lucky Braid
 		}),
 	}),
-	filter(50, {	-- Misc
+	filter(MISC, {
 		filter(113, {	-- Bags
 			i(130943),	-- Reusable Tote Bag
 			i(166699),	-- Desert Rucksack

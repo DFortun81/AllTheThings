@@ -480,12 +480,18 @@ _.Zones =
 					["questID"] = 60200,
 					["coord"] = { 50.2, 49.0, REVENDRETH },
 					["crs"] = { 169865 },	-- Treasure Guardian <House Grinchin>
+					["g"] = {
+						i(180401),	-- Noble Justice
+					},
 				}),
 				o(351544, {	-- Secret Treasure
 					["description"] = "Enter the crypt at |cFFFFFFFF55.2, 34.7|r.  Downstairs, go through the right-hand door and defeat Lord Darion.\n\nWhen you turn to leave the room, you will see a painting on either side of the door.  The one on the right side is a |cFFFFFFFFFlickering Portrait|r, and it has a hidden lever behind it that will open the door to the treasure.  There are two more Venthyr guarding the chest.",
 					["questID"] = 60201,
 					["isDaily"] = true,
 					["coord"] = { 55.3, 35.9, REVENDRETH },
+					["g"] = {
+						i(180401),	-- Noble Justice
+					},
 				}),
 				o(351545, {	-- Secret Treasure
 					["description"] = "Lord Scowl is imprisoned in a cage next to the treasure.  Pick up a book from a nearby fallen cage, climb up the tree, give the book to Lord Scowl, and he will kick the treasure down to the ground for you.",

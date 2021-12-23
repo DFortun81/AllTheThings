@@ -473,7 +473,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(35222),	-- Firing the Mayor
 			q(35228),	-- Firing the Mayor
 			q(33755),	-- First Test Race: 2 Laps
-			q(34846),	-- Fish Fight
+			q(34846, {["_drop"] = { "g" }}),	-- Fish Fight
 			q(33635),	-- FLAG - Seen Gazebo Explosion
 			q(33644),	-- FLAG - Seen Wall Explosion
 			q(35827),	-- Focused Crystal
@@ -509,8 +509,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(36536),	-- Garrison Max-level Choice Tracker: (PVP) Ashran
 			q(36548),	-- Garrison Max-level Choice Tracker: (PVP) Ashran
 			q(35681),	-- Garrison Supplies
-			q(37198),	-- Garrison Visitor: Sappy
-			q(37199),	-- Garrison Visitor: Sappy
 			q(34669),	-- Gather Lumber
 			q(33400),	-- General Problems
 			q(35788, {["_drop"] = { "g" }}),	-- Gold Victory
@@ -548,8 +546,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(35771),	-- Legible Scroll
 			q(35743),	-- Lesser Alchemist Stone
 			q(35803),	-- Lesser Mage Robe
-			q(36144),	-- LFG WLK 75-80
-			q(36150),	-- LFG WLK 75-80
 			q(34845),	-- Lurking in the Shadows
 			q(35800),	-- Luxurious Bedroll
 			q(35752),	-- Magically Banded Totem
@@ -584,8 +580,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(34055),	-- Origin Unknown
 			q(33943),	-- Outrider Urukag
 			q(35776),	-- Overly Clear Book
-			q(36140),	-- Pandaria 88-90
-			q(36148),	-- Pandaria 88-90
 			q(35758),	-- Patched Wand
 			q(35749),	-- Passable Old Staff
 			q(35217),	-- Pearing It Up
@@ -1003,44 +997,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			-- 6.1.0
 			q(35256),	-- A Heart Unbroken
 			q(37751),	-- Bounties Active
-			q(38116),	-- Cata/Mop 80-89
-			q(38127),	-- Cata/MoP 80-89
-			q(38138),	-- Cata/MoP 80-89
-			q(38156),	-- Cata/MoP 80-89
-			q(38167),	-- Cata/MoP 80-89
-			q(38149),	-- Classic 10-19
-			q(38160),	-- Classic 10-19
-			q(38132),	-- Classic 20-29
-			q(38150),	-- Classic 20-29
-			q(38161),	-- Classic 20-29
-			q(38133),	-- Classic 30-39
-			q(38151),	-- Classic 30-39
-			q(38162),	-- Classic 30-39
-			q(38134),	-- Classic 40-49
-			q(38152),	-- Classic 40-49
-			q(38163),	-- Classic 40-49
-			q(38113),	-- Classic 50-59
-			q(38124),	-- Classic 50-59
-			q(38135),	-- Classic 50-59
-			q(38153),	-- Classic 50-59
-			q(38164),	-- Classic 50-59
 			q(38005),	-- delete me
 			q(38006),	-- delete me
 			q(36293),	-- It's Gotta Work!
-			q(38118),	-- Legion 100-109 A
-			q(38129),	-- Legion 100-109 A
-			q(38140),	-- Legion 100-109 A
-			q(38158),	-- Legion 100-109 A
-			q(38169),	-- Legion 100-109 A
-			q(38171),	-- Legion 100-109 A
-			q(38172),	-- Legion 100-109 A
-			q(38119),	-- Legion 100-109 H
-			q(38130),	-- Legion 100-109 H
-			q(38141),	-- Legion 100-109 H
-			q(38159),	-- Legion 100-109 H
-			q(38170),	-- Legion 100-109 H
-			q(38173),	-- Legion 100-109 H
-			q(38174),	-- Legion 100-109 H
 			q(38245),	-- Lots of Ore
 			q(38244),	-- More Ore
 			q(37752),	-- Pet Battles Active
@@ -1052,11 +1011,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(37753),	-- Relic Hunter Active
 			q(38291),	-- Some Dust
 			q(38292),	-- Some Dust
-			q(38114),	-- TBC 60-69
-			q(38125),	-- TBC 60-69
-			q(38136),	-- TBC 60-69
-			q(38154),	-- TBC 60-69
-			q(38165),	-- TBC 60-69
 			q(36496),	-- The Lumber Mill
 			q(35394),	-- The Pale Threat
 			q(37800),	-- Tracking Quest: Start the Garrison Campaign
@@ -1064,11 +1018,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(38003),	-- Vignette: Killed Gaiju
 			q(38004),	-- Vignette: Looted Treasure
 			q(37842),	-- Vignette: Yaeger-367
-			q(38115),	-- WLK 70-79
-			q(38126),	-- WLK 70-79
-			q(38137),	-- WLK 70-79
-			q(38155),	-- WLK 70-79
-			q(38166),	-- WLK 70-79
 			q(38007),	-- zzOldEMPTY TEST
 
 			-- 6.1.1 - no NYI quests
@@ -1132,7 +1081,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 
 			-- 6.2.2
 			q(39052),	-- Blueprints Are Important
-			q(40395),	-- LFGDungeons - Timewalking "Heroic" Random - Nth
 			q(33560),	-- Light's Rest
 			q(37924),	-- Maritime Salvage
 			q(39608),	-- Mysterious Brew Consumed
