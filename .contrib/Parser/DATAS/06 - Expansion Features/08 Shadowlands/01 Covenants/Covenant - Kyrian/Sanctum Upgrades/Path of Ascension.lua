@@ -1475,7 +1475,7 @@ root("HiddenQuestTriggers", {
 	q(63087),	-- Humility | Phial of Serenity
 	q(63088),	-- Humility | Ring of Warding
 	q(63089),	-- Humility | Spiritforged Aegis
-	
+
 	-- HQTs for Learning from the Masters achievement
 	q(63093),	-- Kalisthene | Wisdom | Kleia
 	q(63094),	-- Kalisthene | Wisdom | Pelagos
