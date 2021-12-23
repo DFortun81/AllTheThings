@@ -1721,8 +1721,8 @@ local function GetUnobtainableTexture(groupORu)
 	local u = isTable and groupORu.u or groupORu;
 	-- non-unobtainable group
 	if not u then return; end
-	-- non-NYI item or spell which is BoE, use green dot
-	if isTable and (groupORu.itemID or groupORu.spellID) and u > 1 and not app.IsBoP(groupORu) then
+	-- non-NYI item or spell which is BoE and not a holiday (u<1000), use green dot
+	if isTable and (groupORu.itemID or groupORu.spellID) and u > 1 and u < 1000 and not app.IsBoP(groupORu) then
 		u = 3;
 	else
 		local record = L["UNOBTAINABLE_ITEM_REASONS"][u];
