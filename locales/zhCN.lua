@@ -581,35 +581,35 @@ local L = app.L;
 	L.SOURCE_ID_MISSING = "请在 #errors 中向 ATT Discord 报告此物品及其获取地点！";
 
 	-- Filter Text
-	L["ACHIEVEMENT_ID"] = "成就 ID";
-	L["ARTIFACT_ID"] = "神器 ID";
-	L["AZERITE_ESSENCE_ID"] = "艾泽里特精华 ID";
-	L["CREATURE_ID"] = "生物 ID";
-	L["CURRENCY_ID"] = "货币 ID";
-	L["DIFFICULTY_ID"] = "难度 ID";
-	L["ENCOUNTER_ID"] = "首领战斗 ID";
-	L["EXPANSION_ID"] = "资料片 ID";
-	L["FILTER_ID"] = "滤镜 ID";
-	L["FOLLOWER_ID"] = "追随者 ID";
-	L["ILLUSION_ID"] = "幻象 ID";
-	L["INSTANCE_ID"] = "副本 ID";
-	L["ITEM_ID"] = "物品 ID";
-	L["FACTION_ID"] = "阵营 ID";
-	L["FLIGHT_PATH_ID"] = "飞行路线 ID";
-	L["MAP_ID"] = "地图 ID";
-	L["MOUNT_ID"] = "坐骑 ID";
-	L["MUSIC_ROLL_ID"] = "乐谱 ID";
-	L["NPC_ID"] = "NPC ID";
-	L["OBJECT_ID"] = "道具 ID";
-	L["QUEST_ID"] = "任务 ID";
-	L["SET_ID"] = "套装 ID";
-	L["SOURCE_ID"] = "来源 ID";
-	L["SPECIES_ID"] = "品种 ID";
-	L["SPELL_ID"] = "法术 ID";
-	L["TITLE_ID"] = "头衔 ID";
-	L["TOY_ID"] = "玩具 ID";
-	L["VISUAL_ID"] = "外观 ID";
-	L["iLvl"] = "物品等级";
+	L.ACHIEVEMENT_ID = "成就 ID";
+	L.ARTIFACT_ID = "神器 ID";
+	L.AZERITE_ESSENCE_ID = "艾泽里特精华 ID";
+	L.CREATURE_ID = "生物 ID";
+	L.CURRENCY_ID = "货币 ID";
+	L.DIFFICULTY_ID = "难度 ID";
+	L.ENCOUNTER_ID = "首领战斗 ID";
+	L.EXPANSION_ID = "资料片 ID";
+	L.FILTER_ID = "滤镜 ID";
+	L.FOLLOWER_ID = "追随者 ID";
+	L.ILLUSION_ID = "幻象 ID";
+	L.INSTANCE_ID = "副本 ID";
+	L.ITEM_ID = "物品 ID";
+	L.FACTION_ID = "阵营 ID";
+	L.FLIGHT_PATH_ID = "飞行路线 ID";
+	L.MAP_ID = "地图 ID";
+	L.MOUNT_ID = "坐骑 ID";
+	L.MUSIC_ROLL_ID = "乐谱 ID";
+	L.NPC_ID = "NPC ID";
+	L.OBJECT_ID = "道具 ID";
+	L.QUEST_ID = "任务 ID";
+	L.SET_ID = "套装 ID";
+	L.SOURCE_ID = "来源 ID";
+	L.SPECIES_ID = "品种 ID";
+	L.SPELL_ID = "法术 ID";
+	L.TITLE_ID = "头衔 ID";
+	L.TOY_ID = "玩具 ID";
+	L.VISUAL_ID = "外观 ID";
+	L.iLvl = "物品等级";
 
 	-- Artifact Relic Completion
 	L.ARTIFACT_RELIC_CACHE = "打开所有神器武器的神器用户界面以缓存这是否是升级。这对于确定您是否可以将此物品交易给小伙伴很有用。 ";
@@ -631,7 +631,6 @@ local L = app.L;
 local a = L.ABBREVIATIONS;
 for key,value in pairs({
 	["安托鲁斯，燃烧王座"] = "安托鲁斯",
-	["资料片前夕"] = "前夕",
 	["尼奥罗萨，觉醒之城"] = "尼奥罗萨",
 	["塔扎维什，帷纱集市"] = "塔扎维什",
 })
@@ -654,14 +653,14 @@ for key,value in pairs({
 
 		-- PADDING for extra types, if necessary
 
-		[55] = "消耗品";										-- Consumable (Artifact Power, etc)
-	[59] = "职业技能书";												-- Class Books (Classic Spells, Ashran Books, etc)
+		[55] = "消耗品",									-- Consumable (Artifact Power, etc)
+		[59] = "职业技能书",									-- Class Books (Classic Spells, Ashran Books, etc)
 
 		-- "Non-Equipment Types"
-		[103] = "幻象";										-- Illusions
-		[107] = "事件";
+		[103] = "幻象",										-- Illusions
+		[107] = "事件",
 
-		[999] = "事件物品";
+		[999] = "事件物品",
 })
 do a[key] = value; end
 
@@ -680,7 +679,6 @@ for key,value in pairs({
 		[-23] = "一般地下城掉落",											-- WoD Common Dungeon Drop
 		[-26] = "掉落",									-- Drops
 		[-41] = "疯狂宝箱",													-- Cache of Madness
-	-- World Events
 		[-53] = "仲夏火焰节",												-- Midsummer Fire Festival
 		[-55] = "海盗日",													-- Pirates' Day
 		[-59] = "亡灵节",													-- Day of the Dead
@@ -707,8 +705,6 @@ for key,value in pairs({
 	-- Druid Feral Druid Hidden Artifact Appearance
 	-- Class Hall /Artifact
 		[-159] = "事件投骰",										-- Daily Dreamway Event Roll
-	-- Other
-		[-211] = NEW .. CHARACTER,									-- New Character 新建角色
 	-- Fishing
 		[-217] = "鱼竿",														-- Lures (for Fishing)
 		[-218] = "鱼饵",												-- Coastal (for Fishing)
@@ -724,7 +720,7 @@ for key,value in pairs({
 	-- Operation: Mechagon
 		[-379] = "垃圾场",													-- Junkyard
 	-- Icecrown Citadel
-		[-393] = "进攻堡垒",											-- Storming the Citadel
+		[-393] = "进攻堡垒",												-- Storming the Citadel
 		[-394] = "天灾工厂",													-- The Plagueworks
 	-- BFA Outposts
 		[-397] = "哨站",													-- Outposts
@@ -740,178 +736,173 @@ for key,value in pairs({
 		[-493] = "破碎前置任务拾取",											-- Temporary Header for WoD Mission Loot.
 	-- Blizzard Events and Anniversaries
 		[-519] = "世界事件",													-- World Events
-		[-520] = "资料片前夕",										-- Expansion Pre-Launch
-		[-522] = EXPANSION_NAME2.."：僵尸感染",						-- Wrath of the Lich King: Zombie Infestation
-		[-523] = EXPANSION_NAME3.."：元素动荡",							-- Cataclysm: Elemental Unrest
-		[-525] = EXPANSION_NAME5.."：钢铁部落入侵",						-- Warlords of Draenor: Iron Horde Incursion
-		[-526] = EXPANSION_NAME6.."：军团入侵",							-- Legion: Legion Invasion
-		[-527] = EXPANSION_NAME7.."：荆棘战争",						-- Battle for Azeroth: War of the Thorns
+		[-520] = "资料片前夕",												-- Expansion Pre-Launch
+		[-522] = EXPANSION_NAME2.."：僵尸感染",								-- Wrath of the Lich King: Zombie Infestation
+		[-523] = EXPANSION_NAME3.."：元素动荡",								-- Cataclysm: Elemental Unrest
+		[-525] = EXPANSION_NAME5.."：钢铁部落入侵",							-- Warlords of Draenor: Iron Horde Incursion
+		[-526] = EXPANSION_NAME6.."：军团入侵",								-- Legion: Legion Invasion
+		[-527] = EXPANSION_NAME7.."：荆棘战争",								-- Battle for Azeroth: War of the Thorns
 		[-532] = "风暴英雄",												-- Heroes of the Storm
 		[-533] = "炉石传说",													-- Hearthstone
 		[-534] = "典藏版",												-- Collector's Edition
 		[-536] = "炉石传说佣兵战纪",											-- Hearthstone Mercenaries
 		[-537] = "暗黑破坏神20周年庆",											-- Diablo 20th Anniversary
 		[-538] = "安其拉之战捐献",										-- The Ahn'Qiraj War Effort
-		[-539] = "流沙节杖",											-- The Scepter of the Shifting Sands
-		[-540] = "天灾入侵",											-- The Scourge Invasion
+		[-539] = "流沙节杖",										-- The Scepter of the Shifting Sands
+		[-540] = "天灾入侵",												-- The Scourge Invasion
 		[-541] = "希利苏斯流沙",											-- The Silithyst Must Flow
 		[-542] = "开启黑暗之门",									-- The Opening of the Dark Portal
-		[-543] = "军团入侵",											-- Legion Invasions
-		[-545] = "暴雪嘉年华",										-- Blizzcon
-		[-564] = "星际争霸2：自由之翼",								-- Starcraft II: Wings of Liberty
-		[-565] = "星际争霸2：虫群之心",								-- Starcraft II: Heart of the Swarm
-		[-566] = "暗黑破坏神3",										-- Diablo III
-		[-575] = "暗黑破坏神3：夺魂之镰",								-- Diablo III: Reaper of Souls
-		[-576] = "星际争霸2：虚空之遗",								-- StarCraft II: Legacy of the Void
+		[-543] = "军团入侵",												-- Legion Invasions
+		[-545] = "暴雪嘉年华",													-- Blizzcon
+		[-552] = "魔兽争霸III战争嘉奖版",									-- Warcraft 3 Spoils of War Edition
+		[-553] = "可口可乐活动",													-- iCoke
+		[-564] = "星际争霸II：自由之翼",										-- Starcraft II: Wings of Liberty
+		[-565] = "星际争霸II：虫群之心",									-- Starcraft II: Heart of the Swarm
+		[-566] = "暗黑破坏神III",												-- Diablo III
+		[-568] = "守望先锋：起源",											-- Overwatch: Origins
+		[-575] = "暗黑破坏神III：夺魂之镰",									-- Diablo III: Reaper of Souls
+		[-576] = "星际争霸II：虚空之遗",								-- StarCraft II: Legacy of the Void
 		[-577] = "魔兽电影",											-- Warcraft Movie
-		--TODO: [-579] = "Dark Portal Pass",
-		--TODO: [-580] = "The Great Push: Season 2",				-- The Great Push: Season 2
+		[-579] = "穿过黑暗之门",											-- Dark Portal Pass
+		[-580] = "极限冲层：第二季",										-- The Great Push: Season 2
 	-- PvP Header
 		-- PvP Set Names
-			[-659] = "候选者套装",									-- Aspirant PvP Gear (WoD, BfA)
-			[-660] = "争斗者套装",									-- Combatant PvP Gear (WoD, Legion)
-			[-661] = "角斗士套装",									-- Gladiator PvP Gear
-			[-662] = "精锐套装",										-- Elite PvP Gear
-		-- Classic PvP Seasons
-			--TODO: [-663] = "Classic Honor System",				-- Classic Honor System
-		-- The Burning Crusade PvP Seasons
-			--TODO: [-658] = "BC Pre-Season",						-- Pre-Season (PvP BC)
-			[-664] = select(2, GetAchievementInfo(2091)).."：第1赛季",	-- Gladiator: Season 1
-			[-665] = select(2, GetAchievementInfo(418)).."：第2赛季",	-- Merciless Gladiator: Season 2
-			[-666] = select(2, GetAchievementInfo(419)).."：第3赛季",	-- Vengeful Gladiator: Season 3
-			[-667] = select(2, GetAchievementInfo(420)).."：第4赛季",	-- Brutal Gladiator: Season 4
-		-- Wrath of the Lich-King PvP Seasons
-			[-668] = select(2, GetAchievementInfo(3336)).."第5赛季",	-- Deadly Gladiator: Season 5
-			--TODO: [-657] = "Hateful Gladiator",					-- Hateful Gladiator: Season 5 ("medium pvp gear")
-			[-669] = select(2, GetAchievementInfo(3436)).."第6赛季",	-- Furious Gladiator: Season 6
-			[-670] = select(2, GetAchievementInfo(3758)).."第7赛季",	-- Relentless Gladiator: Season 7
-			[-671] = select(2, GetAchievementInfo(4599)).."第8赛季",	-- Wrathful Gladiator: Season 8
-		-- Cataclysm PvP Seasons
-			[-672] = select(2, GetAchievementInfo(6002)).."第9赛季",	-- Vicious Gladiator: Season 9
-			--TODO: [-656] = "Honor Gear Ruthless Season",			-- Honor Gear Ruthless Season
-			[-673] = select(2, GetAchievementInfo(6124)).."第10赛季",	-- Ruthless Gladiator: Season 10
-			--TODO: [-654] = "Honor Gear Cataclysmic Season",		-- Honor Gear Cataclysmic Season
-			[-674] = select(2, GetAchievementInfo(6938)).."第11赛季",	-- Cataclysmic Gladiator: Season 11
-		-- Mists of Pandaria PvP Seasons
-			[-675] = select(2, GetAchievementInfo(8214)).."第12赛季",	-- Malevolent Gladiator: Season 12
-			--TODO: [-653] = "Honor Gear Tyrannical Season",		-- Honor Gear Tyrannical Season
-			[-676] = select(2, GetAchievementInfo(8791)).."第13赛季",	-- Tyrannical Gladiator: Season 13
-			--TODO: [-652] = "Honor Gear Grievous Season",			-- Honor Gear Grievous Season
-			--TODO: [-651] = "Honor Gear Prideful Season",			-- Honor Gear Prideful Season
+		[-659] = "候选者套装",									-- Aspirant PvP Gear (WoD, BfA)
+		[-660] = "争斗者套装",									-- Combatant PvP Gear (WoD, Legion)
+		[-661] = "角斗士套装",									-- Gladiator PvP Gear
+		[-662] = "精锐套装",										-- Elite PvP Gear
+	-- Classic PvP Seasons
+		[-663] = "经典旧世荣誉系统",				-- Classic Honor System
+	-- The Burning Crusade PvP Seasons
+		[-658] = "燃烧的远征季前赛",											-- Pre-Season (PvP BC)
+		[-664] = select(2, GetAchievementInfo(2091)).."：第1赛季",	-- Gladiator: Season 1
+		[-665] = select(2, GetAchievementInfo(418)).."：第2赛季",	-- Merciless Gladiator: Season 2
+		[-666] = select(2, GetAchievementInfo(419)).."：第3赛季",	-- Vengeful Gladiator: Season 3
+		[-667] = select(2, GetAchievementInfo(420)).."：第4赛季",	-- Brutal Gladiator: Season 4
+	-- Wrath of the Lich-King PvP Seasons
+		[-668] = select(2, GetAchievementInfo(3336)).."第5赛季",	-- Deadly Gladiator: Season 5
+		[-657] = "憎恨角斗士",						-- Hateful Gladiator: Season 5 ("medium pvp gear")
+		[-669] = select(2, GetAchievementInfo(3436)).."第6赛季",	-- Furious Gladiator: Season 6
+		[-670] = select(2, GetAchievementInfo(3758)).."第7赛季",	-- Relentless Gladiator: Season 7
+		[-671] = select(2, GetAchievementInfo(4599)).."第8赛季",	-- Wrathful Gladiator: Season 8
+	-- Cataclysm PvP Seasons
+		[-672] = select(2, GetAchievementInfo(6002)).."第9赛季",	-- Vicious Gladiator: Season 9
+		[-656] = "荣誉装备冷酷赛季",					-- Honor Gear Ruthless (S10)
+		[-673] = select(2, GetAchievementInfo(6124)).."第10赛季",	-- Ruthless Gladiator: Season 10
+		[-654] = "荣誉装备灾变赛季",					-- Honor Gear Cataclysmic (S11)
+		[-674] = select(2, GetAchievementInfo(6938)).."第11赛季",	-- Cataclysmic Gladiator: Season 11
+	-- Mists of Pandaria PvP Seasons
+		[-675] = select(2, GetAchievementInfo(8214)).."第12赛季",	-- Malevolent Gladiator: Season 12
+		[-653] = "荣誉装备暴虐赛季",					-- Honor Gear Tyrannical (S13)
+		[-676] = select(2, GetAchievementInfo(8791)).."第13赛季",	-- Tyrannical Gladiator: Season 13
+		[-652] = "荣誉装备恶孽赛季",					-- Honor Gear Grievous (S14)
+		[-651] = "荣誉装备骄矜赛季",					-- Honor Gear Prideful (S15)
+		[-795] = "宠物对战地下城",											-- Pet Battle Dungeons
 	-- Secret Header
 		[-806] = "钟示贤德腰带",												-- Waist of Time
 	-- Chests
-		[-851] = "Black Empire Cache",								-- Black Empire Cache
+		[-851] = "黑暗帝国宝箱",											-- Black Empire Cache (Is a placeholder since no ObjectID are assigned to chests!)
 	-- Heart of Azeroth
 		[-853] = "全部角色",											-- All Roles
-		--TODO: [-854] = "DPS",										-- DPS
+		[-854] = "输出",														-- DPS
 		[-855] = "治疗",												-- Healers
 		[-856] = "坦克",												-- Tanks
-		[-857] = "大秘境",											-- Mythic+
-		--TODO: [-858] = "Rank 1",									-- Rank 1
-		--TODO: [-859] = "Rank 2",									-- Rank 2
-		--TODO: [-860] = "Rank 3",									-- Rank 3
-		--TODO: [-861] = "Rank 4",									-- Rank 4
+		[-857] = "史诗钥石",											-- Mythic+
 	-- Shadowlands Header
 		[-903] = "区域奖励",											-- Zone Rewards
 		[-907] = "死掉的布兰契",										-- Dead Blanchy
-		[-909] = "狩猎: 死亡元素",										-- Hunt: Death Elementals
-		[-910] = "狩猎: 噬魂者",											-- Hunt: Alpha Devourers
-		[-911] = "狩猎: 影犬",											-- Hunt: Shadehounds
-		[-912] = "狩猎: 飞翼噬魂者",										-- Hunt: Winged Soul Eaters
+		[-909] = "狩猎：死亡元素",										-- Hunt: Death Elementals
+		[-910] = "狩猎：噬魂者",											-- Hunt: Alpha Devourers
+		[-911] = "狩猎：影犬",											-- Hunt: Shadehounds
+		[-912] = "狩猎：飞翼噬魂者",										-- Hunt: Winged Soul Eaters
 		[-913] = "托加斯特的折磨者",										-- Tormentors of Torghast
-		--TODO: [-914] = "Adventures",								-- Adventures
-		[-915] = "心能导流器",										-- Anima Conductor
 		[-977] = "游荡者梅莉",											-- Maelie the Wanderer
 		[-979] = "掮灵威·肯 & 掮灵威·诺特",									-- Broker Ve'ken & Broker Ve'nott
 		-- SL Maldraxxus/Necrolord
-			[-921] = "圣所升级",										-- Sanctum Upgrades (Necrolord)
-			[-924] = "传送网络",										-- Transport Network (Necrolord)
+		[-921] = "圣所升级",										-- Sanctum Upgrades (Necrolord)
+		[-924] = "传送网络",										-- Transport Network (Necrolord)
 		-- SL Ardenweald/Night Fae
-			[-936] = "灵魂变形形态",										-- Soulshape Forms (Night Fae)
-			[-1002] = "尽职精魂",									-- Dutiful Spirit
-			[-1003] = "尚武精魂",									-- Martial Spirit
-			[-1004] = "骄傲精魂",									-- Prideful Spirit
-			[-1005] = "狂野精魂",									-- Untamed Spirit
+		[-936] = "灵魂变形形态",												-- Soulshape Forms (Night Fae)
+		[-1002] = "尽职精魂",													-- Dutiful Spirit
+		[-1003] = "尚武精魂",													-- Martial Spirit
+		[-1004] = "骄傲精魂",												-- Prideful Spirit
+		[-1005] = "狂野精魂",													-- Untamed Spirit
 		-- SL Bastion/Kyrian
-			[-940] = "晋升者议会",									-- Ascended Counil
-			--TODO: [-966] = "Blueprints & Crafting",				-- Blueprints (for Path of Ascension)
-			--TODO: [-973] = "Loyalty",								-- Loyalty
-			--TODO: [-975] = "Humility",							-- Humility
+		[-940] = "晋升者议会",												-- Ascended Counil
+		[-966] = "图纸和制造",												-- Blueprints (for Path of Ascension)
+		[-973] = "忠诚",														-- Loyalty
+		[-975] = "谦逊",													-- Humility
 		-- SL Revendreth/Venthyr
-			--TODO: [-954] = "Inquisitors",							-- Inquisitors
-			--TODO: [-955] = "High Inquisitors",					-- High Inquisitors
-			--TODO: [-956] = "Grand Inquisitors",					-- Grand Inquisitors
-			[-967] = "破镜重圆",										-- "Mirror Restoration",
-			--TODO: [-968] = "Set A",								-- Set A
-			--TODO: [-969] = "Set B",								-- Set B
-			--TODO: [-970] = "Set C",								-- Set C
-			--TODO: [-971] = "Set D",								-- Set D
+		[-954] = "审判官",													-- Inquisitors
+		[-955] = "高阶审判官",												-- High Inquisitors
+		[-956] = "大审判官",												-- Grand Inquisitors
+		[-967] = "破镜重圆",												-- "Mirror Restoration",
+		[-968] = "组 A",														-- Set A
+		[-969] = "组 B",														-- Set B
+		[-970] = "组 C",														-- Set C
+		[-971] = "组 D",														-- Set D
 	-- Warrior order hall lore items
-		--TODO: [-2200] = "Great Odyn and the Firelord",
-		--TODO: [-2201] = "The Wanderer and the Serpent",
-		--TODO: [-2202] = "Halls of Gold and Glory",
-		--TODO: [-2203] = "The Keeper's Eye",
-		--TODO: [-2204] = "First of the Val'kyr",
-		--TODO: [-2205] = "The Sealing of the Halls of Valor",
-		--TODO: [-2206] = "His Name Is Dragonblood",
-		--TODO: [-2207] = "The Last Words of Asgrim the Dreadkiller",
-		--TODO: [-2208] = "A Shieldmaiden's Creed",
-		--TODO: [-2209] = "The Prophecy of Rythas the Oracle",
-		--TODO: [-2210] = "The Lessons of the Blacklist",
-		--TODO: [-2211] = "Volund's Folly",
+		[-2200] = "伟大的奥丁与炎魔之王",
+		[-2201] = "流浪者与蛇",
+		[-2202] = "黄金与荣耀的殿堂",
+		[-2203] = "守护者之眼",
+		[-2204] = "首位瓦格里",
+		[-2205] = "封印英灵殿",
+		[-2206] = "他名叫龙血",
+		[-2207] = "亡灵杀手艾斯格里姆的遗言",
+		[-2208] = "女武神的信条",
+		[-2209] = "神谕者莱萨斯的预言",
+		[-2210] = "黑拳的教诲",
+		[-2211] = "沃伦德的愚行",
 	-- T3
-		[-3179] = "T3套装",
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
-			[-5200] = "基础外观",									-- Base Appearance
-			[-5201] = "职业大厅战役",								-- Class Hall Campaign
-			[-5202] = "能量的平衡",									-- Balance of Power
-			[-5203] = "荣誉奖励",									-- Prestige Rewards
-			[-5204] = "挑战外观",									-- Challenge Appearance
-			[-5205] = "隐藏外观",									-- Hidden Appearance
+		[-5200] = "基础外观",
+		[-5201] = "职业大厅战役",
+		[-5202] = "能量的平衡",
+		[-5203] = "荣誉奖励",
+		[-5204] = "挑战外观",
+		[-5205] = "隐藏外观",
 		-- Class Sets
-			[-5350] = "职业试用套装",								-- Class Trial
+		[-5350] = "职业试用套装",											-- Class Trial
 
-		--TODO: [-7776] = "Winter Revelers",						-- Winter Revelers (for Winter Veil)
+		[-7776] = "冬季狂欢者",												-- Winter Revelers (for Winter Veil)
 	------ ACHIEVEMENT HEADERS SECTION ------
-		[-10071] = "恩佐斯的幻象",									-- Visions of N'Zoth
-		[-10072] = "恩佐斯突袭",										-- N'Zoth Assault
-		[-10073] = "奥格瑞玛的惊魂幻象",								-- Horrific Vision of Orgrimmar
-		[-10074] = "暴风城的惊魂幻象",								-- Horrific Vision of Stormwind
-		[-10075] = "突袭：阿玛赛特进军",								-- Assault: Amathet Advance
-		[-10076] = "突袭：黑暗帝国",									-- Assault: The Black Empire
-		[-10077] = "突袭：战争氏族",									-- Assault: The Warring Clans
-		[-10078] = "突袭：无尽虫群",									-- Assault: The Endless Swarm
-		[-10079] = "突袭：亚基重现",									-- Assault: Aqir Unearthed
-		[-10081] = "腐化区域",										-- Corrupted Area
-		[-10082] = "失落区域",										-- Lost Area
-		-- Shadowlands Achievement Header
-			-- 9.1
-				--TODO: [-10083] = "Covenant Assaults",				-- Covenant Assaults
-			--	hopefully temp objects, these currently do not have accessible object data on wowhead
-				[-1433951] = "残破的镜子 A-1",						-- Broken Mirror
-				[-1433952] = "残破的镜子 A-2",						-- Broken Mirror
-				[-1433953] = "残破的镜子 A-3",						-- Broken Mirror
-				[-1433954] = "残破的镜子 B-1",						-- Broken Mirror
-				[-1433955] = "残破的镜子 B-2",						-- Broken Mirror
-				[-1433956] = "残破的镜子 B-3",						-- Broken Mirror
-				[-1433957] = "残破的镜子 C-1",						-- Broken Mirror
-				[-1433958] = "残破的镜子 C-2",						-- Broken Mirror
-				[-1433959] = "残破的镜子 C-3",						-- Broken Mirror
-				[-1433960] = "残破的镜子 D-1",						-- Broken Mirror
-				[-1433961] = "残破的镜子 D-2",						-- Broken Mirror
-				[-1433962] = "残破的镜子 D-3",						-- Broken Mirror
+		[-10071] = "恩佐斯的幻象",
+		[-10072] = "恩佐斯突袭",
+		[-10075] = "突袭：阿玛赛特进军",
+		[-10076] = "突袭：黑暗帝国",
+		[-10077] = "突袭：战争氏族",
+		[-10078] = "突袭：无尽虫群",
+		[-10079] = "突袭：亚基重现",
+		[-10081] = "腐化区域",
+		[-10082] = "失落区域",
+	-- Shadowlands Achievement Headers
+	-- 9.1
+		[-10083] = "盟约突袭",				-- Covenant Assaults
+	--	hopefully temp objects, these currently do not have accessible object data on wowhead
+		[-1433951] = "残破的镜子 A-1",
+		[-1433952] = "残破的镜子 A-2",
+		[-1433953] = "残破的镜子 A-3",
+		[-1433954] = "残破的镜子 B-1",
+		[-1433955] = "残破的镜子 B-2",
+		[-1433956] = "残破的镜子 B-3",
+		[-1433957] = "残破的镜子 C-1",
+		[-1433958] = "残破的镜子 C-2",
+		[-1433959] = "残破的镜子 C-3",
+		[-1433960] = "残破的镜子 D-1",
+		[-1433961] = "残破的镜子 D-2",
+		[-1433962] = "残破的镜子 D-3",
 })
 do a[key] = value; end
 
 local a = L.HEADER_DESCRIPTIONS;
 for key,value in pairs({
-	--TODO: [-22] = "Naughty secrets..。",
-	[-34] = "世界任务是有时间限制的任务，可在特定地点进行，奖励不一。\n\n一定要经常查看 ATT 世界任务窗口(/attwq)，看看有什么限时的东西你应该去收集！",
-	--TODO: [-169] = "These items can be obtained by doing Emissary Quests or gaining a paragon box。",
-	--TODO: [-799] = "The following items can be created by using a Burden of Eternity on a Timeless Armor Token for a double dose of pointless RNG。",
-	--TODO: [-903] = "These items can drop from repeatable treasure chests，wish crickets，world quests or table missions。",
+		[-22] = "淘气的秘密…",
+		[-34] = "世界任务是有时间限制的任务，可在特定地点进行，奖励不一。\n\n一定要经常查看 ATT 世界任务窗口(/attwq)，看看有什么限时的东西你应该去收集！",
+		[-169] = "这些物品可以通过做使者任务或获得巅峰宝箱来获得。",
+		[-799] = "以下物品可以通过在永恒护甲代币上使用不朽之责获得双倍无意随机生成来创建。",
+		[-903] = "这些物品可以从可重复的宝箱、祈愿蟋蟀、世界任务或桌面任务中掉落。",
 })
 do a[key] = value; end
 
@@ -1229,7 +1220,7 @@ for key, value in pairs({
 	[194390] = "被盗的探险者协会文件",	-- Stolen Explorers' League Document
 	[194391] = "被盗的探险者协会文件",	-- Stolen Explorers' League Document
 	[194714] = "恶心的工作台",	-- Disgusting Workbench
-	--TODO: [195134] = "The Bomb",	-- The Bomb
+	[195134] = "大炸弹",	-- The Bomb
 	[195431] = "总部无线电",	-- Headquarters Radio
 	[195433] = "上古石板碎片",	-- Ancient Tablets
 	[195435] = "武器柜",	-- Weapons Cabinet
@@ -1241,9 +1232,9 @@ for key, value in pairs({
 	[195642] = "纳迦能量石",	-- Naga Power Stone
 	[195676] = "秘密实验室通话器",	-- Secret Lab Squakbox
 	[196393] = "损坏的圣物",	-- Broken Relic
-	--TODO: [196832] = "Upper Scrying Stone",	-- Upper Scrying Stone
-	--TODO: [196833] = "Lower Scrying Stone",	-- Lower Scrying Stone
-	--TODO: [201578] = "Wrenchmen Recruitment Poster",	-- Wrenchmen Recruitment Poster
+	[196832] = "上层占卜石",	-- Upper Scrying Stone
+	[196833] = "下层占卜石",	-- Lower Scrying Stone
+	[201578] = "技师招募海报",	-- Wrenchmen Recruitment Poster
 	[202080] = "达尔特的卵",	-- Dart's Nest
 	[202081] = "塔克的卵",	-- Takk's Nest
 	[202082] = "暴掠龙女王的卵",	-- Ravasaur Matriarch's Nest
@@ -1273,7 +1264,7 @@ for key, value in pairs({
 	[203305] = "纳萨林坩埚",	-- Crucible of Nazsharin
 	[203733] = "悬赏榜",	-- Bounty Board
 	[203734] = "西部荒野地契",	-- Westfall Deed
-	--TODO: [203755] = "Wrenchmen Recruitment Poster",	-- Wrenchmen Recruitment Poster
+	[203755] = "技师招募海报",	-- Wrenchmen Recruitment Poster
 	--TODO: [204050] = "Foebreaker Blueprints",	-- Foebreaker Blueprints
 	[204274] = "船长的日志",	-- Captain's Log
 	[204344] = "通缉！",	-- Wanted!
@@ -2630,8 +2621,8 @@ for key, value in pairs({
 	[332574] = "水晶猫咪雕像",	-- Crystalline Cat Figurine
 	[332575] = "水晶猫咪雕像",	-- Crystalline Cat Figurine
 	[332576] = "水晶猫咪雕像",	-- Crystalline Cat Figurine
-	--TODO: [332704] = "Corrupted Chest",	-- Corrupted Chest
-	--TODO: [334216] = "Black Empire Cache",	-- Black Empire Cache
+	[332704] = "腐化宝箱",	-- Corrupted Chest
+	[334216] = "黑暗帝国宝箱",	-- Black Empire Cache
 	[336415] = "丢弃的卷轴",	-- Discarded Scroll
 	[337237] = "失落宝物",	-- Lost Vault
 	[337241] = "贮藏的装备",	-- Stashed Equipment
@@ -2788,7 +2779,7 @@ for key, value in pairs({
 	[354853] = "出芽增生",	-- Sprouting Growth
 	[354856] = "软泥覆盖的箱子",	-- Slime-Coated Crate
 	[354911] = "鼓胀的心能之种",	-- Swollen Anima Seed
-	--TODO: [355000] = "Cache of the Night",	-- Cache of the Night
+	[355000] = "魅夜宝箱",	-- Cache of the Night
 	[355035] = "魂选符文宝匣",	-- Treasure: House of the Chosen
 	[355037] = "符文之缚宝匣",	-- Runebound Coffer
 	[355038] = "符文之缚宝匣",	-- Runebound Coffer
@@ -3019,30 +3010,30 @@ do a[key] = value; end
 local a = L.UNOBTAINABLE_ITEM_REASONS;
 for key,value in pairs({
 	-- Seasonal Filters
-		[1000] = {4, "|CFF00FFDE这要求美酒节处于激活状态.|r", "美酒节"},
-		[1001] = {4, "|CFF00FFDE这要求儿童周处于激活状态.|r", "儿童周"},
-		[1012] = {4, "|CFF00FFDE这要求暗月马戏团处于激活状态.|r", "暗月马戏团" },
-		[1002] = {4, "|CFF00FFDE这要求悼念日处于激活状态.|r", "悼念日"},
-		[1003] = {4, "|CFF00FFDE这要求冬幕节处于激活状态.|r", "冬幕节"},
-		[1009] = {4, "|CFF00FFDE这要求烟花庆典处于激活状态.|r", "烟花庆典" },
-		[1004] = {4, "|CFF00FFDE这要求万圣节处于激活状态.|r", "万圣节"},
-		[1005] = {4, "|CFF00FFDE这要求收获节处于激活状态.|r", "收获节"},
-		[1006] = {4, "|CFF00FFDE这要求情人节处于激活状态.|r", "情人节"},
-		[1007] = {4, "|CFF00FFDE这要求春节处于激活状态.|r", "春节"},
-		[1014] = {4, "|CFF00FFDEThis requires a Specific Micro Holiday to be Active.|r", "Micro Holiday"},
-		[1008] = {4, "|CFF00FFDE这要求仲夏火焰节处于激活状态.|r", "仲夏火焰节"},
-		[1010] = {4, "|CFF00FFDE这要求复活节处于激活状态.|r", "复活节"},
-		[1013] = {4, "|CFF00FFDE这要求感恩节处于激活状态.|r", "感恩节"},
-		[1011] = {4, "|CFF00FFDE这要求海盗日处于激活状态.|r", "海盗日"},
-		[1015] = {4, "|CFF00FFDE这要求荆棘谷钓鱼大赛处于激活状态.|r", "荆棘谷钓鱼大赛"},
-		[1016] = {4, "|CFF00FFDE这要求时光漫游处于激活状态.|r", "时光漫游"},
-		[1017] = {4, "|CFF00FFDE这要求魔兽世界周年庆典处于激活状态.|r", "魔兽世界周年庆典"},
+		[1000] = {4, "|CFF00FFDE这要求美酒节处于激活状态。|r", "美酒节"},
+		[1001] = {4, "|CFF00FFDE这要求儿童周处于激活状态。|r", "儿童周"},
+		[1012] = {4, "|CFF00FFDE这要求暗月马戏团处于激活状态。|r", "暗月马戏团" },
+		[1002] = {4, "|CFF00FFDE这要求悼念日处于激活状态。|r", "悼念日"},
+		[1003] = {4, "|CFF00FFDE这要求冬幕节处于激活状态。|r", "冬幕节"},
+		[1009] = {4, "|CFF00FFDE这要求烟花庆典处于激活状态。|r", "烟花庆典" },
+		[1004] = {4, "|CFF00FFDE这要求万圣节处于激活状态。|r", "万圣节"},
+		[1005] = {4, "|CFF00FFDE这要求收获节处于激活状态。|r", "收获节"},
+		[1006] = {4, "|CFF00FFDE这要求情人节处于激活状态。|r", "情人节"},
+		[1007] = {4, "|CFF00FFDE这要求春节处于激活状态。|r", "春节"},
+		[1014] = {4, "|CFF00FFDE这要求特殊小节日处于激活状态。|r", "小节日"},
+		[1008] = {4, "|CFF00FFDE这要求仲夏火焰节处于激活状态。|r", "仲夏火焰节"},
+		[1010] = {4, "|CFF00FFDE这要求复活节处于激活状态。|r", "复活节"},
+		[1013] = {4, "|CFF00FFDE这要求感恩节处于激活状态。|r", "感恩节"},
+		[1011] = {4, "|CFF00FFDE这要求海盗日处于激活状态。|r", "海盗日"},
+		[1015] = {4, "|CFF00FFDE这要求荆棘谷钓鱼大赛处于激活状态。|r", "荆棘谷钓鱼大赛"},
+		[1016] = {4, "|CFF00FFDE这要求时光漫游处于激活状态。|r", "时光漫游"},
+		[1017] = {4, "|CFF00FFDE这要求魔兽世界周年庆典处于激活状态。|r", "魔兽世界周年庆典"},
 })
 do a[key] = value; end
 
 local a = L.CUSTOM_COLLECTS_REASONS;
 for key,value in pairs({
-	["NPE"] = { icon = "|T"..("Interface\\Icons\\achievement_newplayerexperience.blp")..":0|t", color = "ff5bc41d", text = "新玩家体验", desc = "只有新角色可以收集这个." },
-	["SL_SKIP"] = { icon = "|T"..app.asset("Expansion_SL")..":0|t", color = "ff76879c", text = "跳过暗影国度", desc = "只有选择跳过暗影国度故事线的角色才能收集这个." },	--TODO: text: Threads of Fate
+		["NPE"] = { icon = "|T"..("Interface\\Icons\\achievement_newplayerexperience.blp")..":0|t", color = "ff5bc41d", text = "新玩家体验", desc = "只有新角色可以收集这个。" },
+		["SL_SKIP"] = { icon = "|T"..app.asset("Expansion_SL")..":0|t", color = "ff76879c", text = "命运丝线", desc = "只有选择跳过暗影国度故事线的角色才能收集这个。" },
 })
 do a[key] = value; end
