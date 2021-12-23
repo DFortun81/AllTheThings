@@ -207,7 +207,6 @@ root("Instances", tier(CLASSIC_TIER, {
 						{ "i", 17771, 10 },	-- Elementium Bar x10
 						{ "i", 18563, 1 },	-- Bindings of the Windseeker [Left]
 						{ "i", 18564, 1 },	-- Bindings of the Windseeker [Right]
-						{ "i", 19017, 1 },	-- Essence of the Firelord
 					},
 					-- #endif
 					["lvl"] = 60,
@@ -668,6 +667,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						-- #endif
 					})),
 					i(19017, {	-- Essence of the Firelord
+						["b"] = 1,
 						["description"] = "For this to drop, you must be on the Thunderaan the Windseeker quest.",
 						["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
 					}),

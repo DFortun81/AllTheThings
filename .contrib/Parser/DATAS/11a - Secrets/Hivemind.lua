@@ -31,7 +31,7 @@ _.Secrets =
 							o(280815, {	-- Letter 1: Shattrath City
 								["model"] = 1661948,
 								["questID"] = 40397,
-								["coord"] = { 65.6, 69.3, 594 },	-- Shattrath City
+								["coord"] = { 65.6, 69.3, SHATTRATH_CITY },	-- Shattrath City
 								["description"] = "|cFFFFFFFFLetter 1:|r The start of this puzzle is the |cFFFFD700Letter from Ms. Graham|r with a blue aura behind |cFFFFD700Griftah|r, which can be interacted with. Click it. The letter reads...\r\r|cFFFFFFFFThe key Factor in successul Wasp Ignition is a solid Ad campaign.|r\n",
 							}),
 							o(280836, {	-- Letter 2: Prepfoot Compound, Highmountain
