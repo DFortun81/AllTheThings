@@ -2595,6 +2595,7 @@ root("HiddenQuestTriggers", {
 		q(37199),	-- Garrison Visitor: Sappy - triggered during Goren invasion in Garrison
 		q(36799),	-- Garrison Nodes - Tracking Quest - triggers after unlocking the mine, picking herbs
 		q(36492),	-- Garrison Pet Battle — discord report, "for today's EU garrison menagerie fight, the Blingtron/protectron one"
+		q(35914),	-- Internal: Default Invasion Reward - triggers during the first garrison invasion as part of Draenor's base intro
 		q(36894),	-- Nemesis Flag, Draenei/Blood Elf — burning effigy in the Gladiator Sanctum
 		q(36891),	-- Nemesis Flag, Dwarf/Forsaken — burning effigy in the Gladiator Sanctum
 		q(36892),	-- Nemesis Flag, Gnome/Tauren — burning effigy in the Gladiator Sanctum

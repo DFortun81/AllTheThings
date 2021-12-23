@@ -924,9 +924,11 @@ _.HiddenQuestTriggers = {
 		q(31373),	-- The Order of the Cloud Serpent - completed with quest 32461
 		q(31375),	-- The Order of the Cloud Serpent - completed with quest 32461
 		q(33073),	-- [NOTUSED]Vignette: Ancient Saltsnap Turtle - completed with quest 33070
+		q(33079),	-- The Demons Among Us - Alliance - completed with quest 40593 & 40607
 		q(33267),	-- [Deprecated] - completed with quest 33461
 		q(33380),	-- REUSE - completed with quest 33622
 		q(33407),	-- REUSE - completed with quest 33622
+		q(33707),	-- Demons Among Us - Horde - completed with quest 40593 & 40607
 		q(33914),	-- Gut Guttra - completed with quest 33132
 		q(34426),	-- Yrel - completed with quest 34478 & 34427
 		q(34435),	-- Find Ga'nar - completed with quest 34434 & 34740
@@ -3464,8 +3466,8 @@ _.HiddenQuestTriggers = {
 	tier(WOD_TIER, {
 		--	QUESTING / LEVELING / VARIOUS
 		q(37187),	-- The Dark Portal
-		q(35914),	-- Default invasion reward flag during the first garrison invasion as part of Draenor's base intro
 		q(37193),	-- The King's Command - autocompleted when "Hero's Call: Jade Forest!" is picked up (questID 49556)
+		q(36825),	-- Fate of the Horde - triggered when turning in "Audience with the Warchief" as a demon hunter (questID 40976)
 
 		--	DUNGEONS & RAIDS
 		q(37212),	-- FLAG - Proving Grounds - Damage Bronze
