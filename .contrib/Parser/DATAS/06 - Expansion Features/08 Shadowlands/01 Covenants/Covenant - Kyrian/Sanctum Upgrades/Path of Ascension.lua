@@ -1487,7 +1487,7 @@ root("HiddenQuestTriggers", {
 	-- LOYALTY BRAZIERS | WILL UNFLAG IF BRAZIER IS USED AGAIN
 	q(62770),	-- Loyalty | no brazier #1 - CONFIRMED
 	q(62771),	-- Loyalty | no brazier #2 - CONFIRMED
-	q(65227),	-- Rightmost brazier added ib 9.1.5
+	q(65227),	-- Rightmost brazier added in 9.1.5
 
 	q(63165),	-- after earning To the Moon achievement
 	q(62989),	-- Arsenal: Doubt's Weapon Cache
