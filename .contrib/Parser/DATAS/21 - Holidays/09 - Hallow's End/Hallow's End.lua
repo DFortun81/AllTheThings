@@ -369,16 +369,16 @@ for i,o in ipairs(WANDS_WITH_COST) do
 	table.insert(WANDS_IDS, w.itemID);
 	table.insert(WANDS_WITHOUT_COST, w);
 end
-local SPECTRAL_GROG = i(104316, {	-- Spectral Grog
-	["maps"] = { DRAENOR_SHADOWMOON_VALLEY },
-	["crs"] = {
-		96637,	-- Boneship Reveler
-		96538,	-- Brackish Cultivator
-		96535,	-- Captain Bonerender
-		96545,	-- Growing Squashling
-		96536,	-- Salty Dreg
-	},
-});
+-- local SPECTRAL_GROG = i(104316, {	-- Spectral Grog
+-- 	["maps"] = { DRAENOR_SHADOWMOON_VALLEY },
+-- 	["crs"] = {
+-- 		96637,	-- Boneship Reveler
+-- 		96538,	-- Brackish Cultivator
+-- 		96535,	-- Captain Bonerender
+-- 		96545,	-- Growing Squashling
+-- 		96536,	-- Salty Dreg
+-- 	},
+-- });
 
 _.Holidays = { applyholiday(HALLOWS_END, {
 	-- #if ANYCLASSIC
