@@ -97,7 +97,7 @@ namespace ATT
             if (fields.Count > 0)
             {
                 // Write a comma for the start of the data dictionary contents.
-                if (objectType.ShouldWriteObjectType) builder.Append(',');
+                if (objectType != null && objectType.ShouldWriteObjectType) builder.Append(',');
 
                 // We don't need to write the "g" tag if that's the only field.
                 if (fields.Count == 1 && fields[0] == "g")
