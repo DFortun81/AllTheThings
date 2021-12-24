@@ -28,6 +28,7 @@ _.Zones =
 						["questID"] = 45479,
 						["g"] = {
 							q(43798, {	-- DANGER: Kosumoth the Hungering
+								["sourceQuest"] = 43761,	-- Step 12: Hungering Orb
 								["repeatable"] = true,
 								["g"] = {
 									i(140261),	-- Hungering Claw (PET!)

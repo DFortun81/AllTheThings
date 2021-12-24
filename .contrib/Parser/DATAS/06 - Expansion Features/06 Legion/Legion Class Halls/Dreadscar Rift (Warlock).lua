@@ -678,7 +678,6 @@ _.ExpansionFeatures =
 
 					--	TODO: not organized/sourced yet.
 						q(44228),	-- Champion Armaments
-						q(43895),	-- Sealing Fate: Gold
 						q(41155),	-- The Dark Riders
 						q(41156),	-- The Power Possessed
 						q(44227, {	-- Unleashing our Wrath

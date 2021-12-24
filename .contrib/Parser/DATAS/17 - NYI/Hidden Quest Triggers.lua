@@ -125,7 +125,7 @@ _.HiddenQuestTriggers = {
 		q(42994),	-- Wild Combatant's Ringmail Armor (Shaman - Horde)
 		q(43004),	-- Wild Combatant's Dreadplate Armor (Death Knight - Alliance)
 		q(43005),	-- Wild Combatant's Dreadplate Armor (Death Knight - Horde)
-		q(43005),	-- Wild Gladiator's Dreadplate Armor (Death Knight - Horde)
+		-- q(43005),	-- Wild Gladiator's Dreadplate Armor (Death Knight - Horde) -- TODO: wrong ID?
 		q(43006),	-- Wild Combatant's Scaled Armor (Paladin - Alliance)
 		q(43008),	-- Wild Combatant's Scaled Armor (Paladin - Horde)
 		q(43009),	-- Wild Combatant's Plate Armor (Warrior - Alliance)
@@ -180,7 +180,7 @@ _.HiddenQuestTriggers = {
 		q(43087),	-- Primal Combatant's Scaled Armor (Paladin - Horde)
 		q(43088),	-- Primal Combatant's Plate Armor (Warrior - Alliance)
 		q(43089),	-- Primal Combatant's Plate Armor (Warrior - Horde)
-		q(43089),	-- Primal Gladiator's Plate Armor (Warrior - Horde)
+		-- q(43089),	-- Primal Gladiator's Plate Armor (Warrior - Horde) -- TODO: wrong ID?
 		q(43092),	-- Primal Combatant's Felweave Armor (Warlock - Alliance)
 		q(43093),	-- Primal Combatant's Felweave Armor (Warlock - Horde)
 		q(43094),	-- Primal Combatant's Satin Armor (Priest - Alliance)
@@ -750,7 +750,7 @@ _.HiddenQuestTriggers = {
 		q(43224),	-- Primal Gladiator's Arsenal (Alliance)
 		q(43225),	-- Primal Gladiator's Arsenal (Horde)
 		q(43233),	-- Wild Combatant's Arsenal (Alliance)
-		q(43233),	-- Wild Combatant's Arsenal (Horde)
+		-- q(43233),	-- Wild Combatant's Arsenal (Horde)	-- TODO: wrong ID?
 		q(43226),	-- Wild Gladiator's Arsenal (Alliance)
 		q(43227),	-- Wild Gladiator's Arsenal (Alliance)
 		q(43231),	-- Warmongering Combatant's Arsenal (Alliance)
@@ -1363,9 +1363,9 @@ _.HiddenQuestTriggers = {
 		q(48858),	-- Light's Judgment active tracking quest?
 		q(48449),	-- Lightforged Warframe first time tracking quest?
 		q(48859),	-- Lightforged Warframe active tracking quest?
-		q(48450),	-- Fel Heart of Argus first time tracking quest?
+		-- q(48450),	-- Fel Heart of Argus first time tracking quest? -- TODO: wrong ID?
 		q(48860),	-- Fel Heart of Argus active tracking quest?
-		q(48450),	-- Shroud of Arcane Echoes first time tracking quest?
+		-- q(48450),	-- Shroud of Arcane Echoes first time tracking quest? -- TODO: wrong ID?
 		q(48579),	-- Shroud of Arcane Echoes active tracking quest?
 		q(48281),	-- getting into the Lightforged Warframe during Dawn of Justice
 		q(49161),	-- triggered when turning in #48461, "Where They Least Expect It"
@@ -1620,7 +1620,7 @@ _.HiddenQuestTriggers = {
 		q(47193),	-- Battle for Azsuna, for the achievement Defender of the Broken Isles
 		q(47194),	-- Battle for Highmountain — popped alongside the normal "Battle for Highmountain" final invasion quest.  possibly first-time quest?
 		q(47195),	-- Battle for Stormheim — same as above, first time i did the Stormheim invasion on that character
-		q(46956),	-- Azsuna - Assault Treasure
+		-- q(46956),	-- Azsuna - Assault Treasure	-- TODO: wrong ID?
 		q(46964),	-- Azsuna - Assault Treasure
 		q(46966),	-- Azsuna - Assault Treasure
 		q(46967),	-- Azsuna - Assault Treasure
@@ -1633,7 +1633,7 @@ _.HiddenQuestTriggers = {
 		q(46974),	-- Azsuna - Assault Treasure
 		q(46988),	-- Highmountain - Assault Treasure
 		q(46989),	-- Highmountain - Assault Treasure
-		q(46990),	-- Highmountain - Assault Treasure
+		q(46990),	-- Highmountain - Assault Treasure	Assault Treasure — opened Small Treasure Chest in Highmountain (44.2, 40.4)
 		q(46991),	-- Highmountain - Assault Treasure
 		q(46992),	-- Highmountain - Assault Treasure
 		q(46993),	-- Highmountain - Assault Treasure
@@ -1652,7 +1652,7 @@ _.HiddenQuestTriggers = {
 		q(46983),	-- Stormheim - Assault Treasure
 		q(46984),	-- Stormheim - Assault Treasure
 		q(46954),	-- Val'sharah - Assault Treasure
-		q(46956),	-- Val'sharah - Assault Treasure
+		-- q(46956),	-- Val'sharah - Assault Treasure	-- TODO: wrong ID?
 		q(46958),	-- Val'sharah - Assault Treasure
 		q(46959),	-- Val'sharah - Assault Treasure
 		q(46960),	-- Val'sharah - Assault Treasure
@@ -1728,8 +1728,6 @@ _.HiddenQuestTriggers = {
 
 		--	Treasures
 		q(40692),	-- 7.0 Suramar - Treasure 000 - The Drift - L (DLA) — suramar treasure in cliffside at 58.6, 33.8
-		q(46990),	-- Assault Treasure — opened Small Treasure Chest in Highmountain (44.2, 40.4)
-		q(43196),	-- Treasure 056 - Weeping Bluffs — stormheim treasure in cave, entrance at 32.6, 47.8
 		q(40601),	-- 7.0 Highmountain - Vignette - Pinerock Basin - Highmountain Beastmaster See Treasure (JLW) — looting treasure after Arru
 		q(49264),	-- opening a Void-Seeped Cache in Eredath
 		q(48361),	-- opening a Void-Seeped Cache in Eredath
@@ -3136,7 +3134,6 @@ _.HiddenQuestTriggers = {
 		q(62756),	-- Reaching Renown 19 Kyrian / unlocking Deepening Bond 4% stam increase
 		q(62757),	-- Reaching Renown 35 Kyrian / unlocking Deepening Bond 6% stam increase
 		q(62927),	-- Reaching Renown 39 Kyrian / unlocking Eternal Phalynx of Purity
-		q(63081),	-- triggered when earning "Itsy Bitsy Fighters" achievement
 		q(63426),	-- Skipping Kyrian intro
 
 		-- Maldraxxus

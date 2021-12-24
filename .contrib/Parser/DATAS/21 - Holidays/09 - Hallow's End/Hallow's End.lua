@@ -4086,14 +4086,14 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 			}),
 			i(20400),	-- Pumpkin Bag
 			-- #if AFTER 6.0.1
-			SPECTRAL_GROG,
+			-- SPECTRAL_GROG,
 			-- #endif
 		}),
 	},
 })};
 
 -- Remove the holiday flag.
-SPECTRAL_GROG.u = nil;
+-- SPECTRAL_GROG.u = nil;
 
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, { {
 	-- #if ANYCLASSIC

@@ -271,11 +271,14 @@ _.WorldEvents =
 					q(43244),	-- Invasion: Tanaris
 					q(42237),	-- Invasion: Tanaris
 					q(43245),	-- Invasion: Westfall
+					q(42235),	-- Invasion: Westfall
+					q(43287),	-- Defend (Westfall)
 					q(43300),	-- Repel (Azshara)
 					q(43292),	-- Repel (Dun Morogh)
 					q(43297),	-- Repel (Hillsbrad Foothills)
 					q(43290),	-- Repel (Northern Barrens)
 					q(43294),	-- Repel (Tanaris)
+					q(43242),	-- Demon Commander (Westfall)
 					q(42970, {	-- The Diamond King
 						["provider"] = { "n", 113655 },	-- Brann Bronzebeard
 						["sourceQuests"] = { 40717, 40718 },	-- Calling of the Council

@@ -149,12 +149,6 @@ _.Zones =
 					["classes"] = { WARLOCK },
 					["lvl"] = 110,
 				}),
-				q(46065, {	-- An Impossible Foe
-					["classes"] = { WARRIOR, ROGUE, DEATHKNIGHT, SHAMAN, MAGE, DRUID },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 117871 },	-- War Councilor Victoria
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(45482, {	-- Arcane: Fate of the Tideskorn
 					["sourceQuests"] = {
 						44821,	-- In Dire Need
@@ -401,9 +395,6 @@ _.Zones =
 					["provider"] = { "n", 86563 },	-- Archmage Khadgar
 					["sourceQuests"] = { 39718 },	-- Paradise Lost
 					["isBreadcrumb"] = true,
-				}),
-				q(42911, {	-- Drowned Mana
-					["provider"] = { "n", 108825 },	-- Conjurer Margoss
 				}),
 				q(45123, {	-- Elemental: The Folly of Levia Laurence
 					["sourceQuests"] = {

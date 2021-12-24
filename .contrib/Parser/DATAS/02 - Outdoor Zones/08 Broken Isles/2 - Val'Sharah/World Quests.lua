@@ -205,7 +205,6 @@ _.Zones =
 				q(41862),	-- Only Pets Can Prevent Forest Fires
 				q(42145),	-- Out of the Woodwork
 				q(41956),	-- Petrified Acolytes
-				q(42819),	-- Pocket Wizard
 				q(41964),	-- Poisoned Waters
 				q(41337, {	-- Pristine Stag Hide
 					["requireSkill"] = SKINNING,
@@ -252,7 +251,6 @@ _.Zones =
 				q(45921),	-- Thal'xur (Invasion wq)
 				q(46265),	-- The Fel and the Fawns (Invasion wq)
 				q(43755),	-- The Magic of Flight
-				q(42779),	-- The Sleeping Corruption (Epic elite - Shar'thos)
 				q(46261),	-- The Taste of Corruption (Invasion WQ)
 				q(44759),	-- The Vale of Dread (Invasion WQ)
 				q(43303),	-- Time to Rumble!

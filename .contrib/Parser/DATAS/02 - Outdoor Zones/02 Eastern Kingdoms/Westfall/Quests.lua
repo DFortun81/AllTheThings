@@ -73,15 +73,6 @@ _.Zones =
 					["lvl"] = 10,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(43287, {	-- Defend
-					["u"] = REMOVED_FROM_GAME,	-- (Legion prepatch)
-				}),
-				q(43287, {	-- Defend
-					["u"] = REMOVED_FROM_GAME,	-- (Legion prepatch)
-				}),
-				q(43242, {	-- Demon Commander
-					["u"] = REMOVED_FROM_GAME,	-- (Legion prepatch)
-				}),
 				q(26296, {	-- Evidence Collection
 					["sourceQuests"] = { 26292 },	-- To Moonbrook
 					["provider"] = { "i", 58117 },	-- Red Bandana
@@ -154,12 +145,6 @@ _.Zones =
 						i(58912),	-- Sentinel Hill Surcoat
 						i(58913),	-- Sentinel Hill Vest
 					},
-				}),
-				q(43245, {	-- Invasion: Westfall
-					["u"] = REMOVED_FROM_GAME,	-- (Legion pre-patch)
-				}),
-				q(42235, {	-- Invasion: Westfall
-					["u"] = REMOVED_FROM_GAME,	-- (Legion pre-patch)
 				}),
 				q(26229, {	-- "I TAKE Candle!"
 					["sourceQuests"] = { 26215 },	-- Meet Two-Shoed Lou

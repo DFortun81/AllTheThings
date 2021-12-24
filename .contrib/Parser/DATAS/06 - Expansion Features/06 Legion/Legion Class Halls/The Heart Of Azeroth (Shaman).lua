@@ -783,7 +783,6 @@ _.HiddenQuestTriggers = {
 	q(42999),	-- Shaman Order Hall - Tracking Quest: Return to Firelands 3 Mission Completed
 	q(43000),	-- Shaman Order Hall - Tracking Quest: Return to Firelands 4 Mission Completed
 	q(43001),	-- Shaman Order Hall - Tracking Quest: Return to Firelands 5 Mission Completed
-	q(43901),	-- Shaman Order Hall - Tracking Quest: All - Troop B Enabled
 	q(43946),	-- Shaman Order Hall - Enhancement Chosen Second
 	q(43947),	-- Shaman Order Hall - Elemental Chosen
 	q(43948),	-- Shaman Order Hall - Restoration Chosen Third
