@@ -24,21 +24,25 @@ root("Instances", tier(CLASSIC_TIER, {
 		["groups"] = {
 			n(QUESTS, {
 				q(27355, {	-- A Boon for the Powerful
-					-- #if AFTER SHADOWLANDS
-					["qg"] = 164942,	-- Evelyn Thorn <Warlock Trainer>
-					-- #else
-					["qg"] = 461,	-- Demisette Cloyce
-					-- #endif
 					["sourceQuest"] = 27272,	-- Demisette Sends Word [CATA] / A Message From Evelyn Thorn [SL+]
-					-- #if AFTER SHADOWLANDS
-					["coord"] = { 79.6, 69.8, STORMWIND_CITY },
-					-- #else
-					["coord"] = { 39.4, 84.8, STORMWIND_CITY },
-					-- #endif
 					["timeline"] = { "added 4.0.3.10000" },
 					["classes"] = { WARLOCK },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(20, 8, 20),
+					["qgs"] = {
+						-- #if AFTER SHADOWLANDS
+						164942,	-- Evelyn Thorn
+						-- #else
+						461,	-- Demisette Cloyce
+						-- #endif
+					},
+					["coords"] = {
+						-- #if AFTER SHADOWLANDS
+						{ 79.5, 69.9, STORMWIND_CITY },
+						-- #else
+						{ 39.4, 84.8, STORMWIND_CITY },
+						-- #endif
+					},
 					["groups"] = {
 						objective(1, {	-- 0/1 Tenebrous Orb
 							["provider"] = { "i", 60882 },	-- Tenebrous Orb
@@ -74,17 +78,21 @@ root("Instances", tier(CLASSIC_TIER, {
 					},
 				}),
 				q(27337, {	-- A Fitting Weapon [Alliance]
-					-- #if AFTER SHADOWLANDS
-					["qg"] = 164939,	-- Signilda Hardforge <Warrior Trainer>
-					-- #else
-					["qg"] = 914,	-- Ander Germaine
-					-- #endif
 					["sourceQuest"] = 27225,	-- A Summons from Ander Germaine
-					-- #if AFTER SHADOWLANDS
-					["coord"] = { 80.2, 70.2, STORMWIND_CITY },
-					-- #else
-					["coord"] = { 79.4, 69.0, STORMWIND_CITY },
-					-- #endif
+					["qgs"] = {
+						-- #if BEFORE SHADOWLANDS
+						914,	-- Ander Germaine
+						-- #else
+						164939,	-- Signilda Hardforge <Warrior Trainer>
+						-- #endif
+					},
+					["coords"] = {
+						-- #if AFTER SHADOWLANDS
+						{ 80.2, 70.2, STORMWIND_CITY },
+						-- #else
+						{ 79.4, 69.0, STORMWIND_CITY },
+						-- #endif
+					},
 					["timeline"] = { "added 4.0.3.10000" },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
@@ -190,14 +198,14 @@ root("Instances", tier(CLASSIC_TIER, {
 				}),
 				-- #endif
 				q(27351, {	-- A Royal Reward
-					-- #if AFTER SHADOWLANDS
-					["qg"] = 164946,	-- Veruca Darkstream <Rogue Trainer>
-					-- #else
 					["qgs"] = {
+						-- #if AFTER SHADOWLANDS
+						164946,	-- Veruca Darkstream <Rogue Trainer>
+						-- #else
 						51998,	-- Arthur Huwe
 						13283,	-- Lord Tony Romano
+						-- #endif
 					},
-					-- #endif
 					["sourceQuest"] = 27267,	-- Make Contact with SI:7
 					-- #if AFTER SHADOWLANDS
 					["coord"] = { 78.6, 70.6, STORMWIND_CITY },
@@ -329,18 +337,25 @@ root("Instances", tier(CLASSIC_TIER, {
 					},
 				}),
 				q(27344, {	-- A Well-Earned Reward
-					-- #if AFTER SHADOWLANDS
-					["qg"] = 164960,	-- Dalgrun Steelpine <Hunter Trainer>
-					["coord"] = { 79.2, 71.2, STORMWIND_CITY },
-					-- #else
-					["qg"] = 44247,	-- Wulf Hansreim
-					["coord"] = { 79.0, 71.0, STORMWIND_CITY },
-					-- #endif
 					["sourceQuest"] = 27266,	-- Wulf Calls [CATA] / Dalgrun Calls [SL+]
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { HUNTER },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(8, 20, 8),
+					["qgs"] = {
+						-- #if AFTER SHADOWLANDS
+						164960,	-- Dalgrun Steelpine <Hunter Trainer>
+						-- #else
+						44247,	-- Wulf Hansreim
+						-- #endif
+					},
+					["coords"] = {
+						-- #if AFTER SHADOWLANDS
+						{ 79.2, 71.2, STORMWIND_CITY },
+						-- #else
+						{ 79.0, 71.0, STORMWIND_CITY },
+						-- #endif
+					},
 					["groups"] = {
 						objective(1, {	-- 0/1 Godfrey's Crystal Scope
 							["provider"] = { "i", 60877 },	-- Godfrey's Crystal Scope
@@ -448,21 +463,25 @@ root("Instances", tier(CLASSIC_TIER, {
 					},
 				}),
 				q(27353, {	-- Blessings of the Elements
-					-- #if AFTER SHADOWLANDS
-					["qg"] = 164945,	-- Mulric Boldrock <Shaman Trainer>
-					-- #else
-					["qg"] = 20407,	-- Farseer Umbrua
-					-- #endif
 					["sourceQuest"] = 27270,	-- An Audience with the Farseer [CATA] / An Audience with Mulric [SL+]
-					-- #if AFTER SHADOWLANDS
-					["coord"] = { 78.8, 70.8, STORMWIND_CITY },
-					-- #else
-					["coord"] = { 64.6, 33.0, STORMWIND_CITY },
-					-- #endif
 					["timeline"] = { "added 4.0.3.10000" },
 					["classes"] = { SHAMAN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(20, 8, 20),
+					["qgs"] = {
+						-- #if AFTER SHADOWLANDS
+						164945,	-- Mulric Boldrock
+						-- #else
+						20407,	-- Farseer Umbrua
+						-- #endif
+					},
+					["coords"] = {
+						-- #if AFTER SHADOWLANDS
+						{ 78.2, 70.9, STORMWIND_CITY },
+						-- #else
+						{ 64.6, 33.0, STORMWIND_CITY },
+						-- #endif
+					},
 					["groups"] = {
 						objective(1, {	-- 0/1 Walden's Talisman
 							["provider"] = { "i", 60881 },	-- Walden's Talisman
@@ -997,17 +1016,21 @@ root("Instances", tier(CLASSIC_TIER, {
 				}),
 				-- #endif
 				q(27354, {	-- Mastering the Arcane [Alliance]
-					-- #if AFTER SHADOWLANDS
-					["qg"] = 164955,	-- Frazzle Frostfingers <Mage Trainer>
-					-- #else
-					["qg"] = 331,	-- Maginor Dumas
-					-- #endif
 					["sourceQuest"] = 27271,	-- Journey to the Wizard's Sanctum
-					-- #if AFTER SHADOWLANDS
-					["coord"] = { 80.0, 69.6, STORMWIND_CITY },
-					-- #else
-					["coord"] = { 49.2, 87.6, STORMWIND_CITY },
-					-- #endif
+					["qgs"] = {
+						-- #if BEFORE SHADOWLANDS
+						331,	-- Maginor Dumas
+						-- #else
+						164955,	-- Frazzle Frostfingers
+						-- #endif
+					},
+					["coords"] = {
+						-- #if AFTER SHADOWLANDS
+						{ 80.0, 69.6, STORMWIND_CITY },
+						-- #else
+						{ 49.2, 87.6, STORMWIND_CITY },
+						-- #endif
+					},
 					["timeline"] = { "added 4.0.3.13287" },
 					["classes"] = { MAGE },
 					["races"] = ALLIANCE_ONLY,
@@ -1477,21 +1500,25 @@ root("Instances", tier(CLASSIC_TIER, {
 				-- #endif
 				-- #endif
 				q(27343, {	-- The Hand of the Light
-					-- #if AFTER SHADOWLANDS
-					["qg"] = 164952,	-- Ezul'aan <Paladin Trainer>
-					-- #else
-					["qg"] = 928,	-- Lord Grayson Shadowbreaker
-					-- #endif
 					["sourceQuest"] = 27265,	-- Lord Grayson Shadowbreaker [CATA] / Ezul'aan Calls [SL+]
-					-- #if AFTER SHADOWLANDS
-					["coord"] = { 79.2, 69.6, STORMWIND_CITY },
-					-- #else
-					["coord"] = { 52.6, 45.0, STORMWIND_CITY },
-					-- #endif
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(20, 8, 20),
+					["qgs"] = {
+						-- #if AFTER SHADOWLANDS
+						164952,	-- Ezul'aan <Paladin Trainer>
+						-- #else
+						928,	-- Lord Grayson Shadowbreaker
+						-- #endif
+					},
+					["coords"] = {
+						-- #if AFTER SHADOWLANDS
+						{ 79.2, 69.6, STORMWIND_CITY },
+						-- #else
+						{ 52.6, 45.0, STORMWIND_CITY },
+						-- #endif
+					},
 					["groups"] = {
 						objective(1, {	-- 0/1 Commander's Holy Symbol
 							["provider"] = { "i", 60879 },	-- Commander's Holy Symbol
