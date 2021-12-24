@@ -1975,6 +1975,10 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange)
 	local coord;
 	local mapID = app.GetCurrentMapID();
 	local position = mapID and C_Map.GetPlayerMapPosition(mapID, "player");
+	local covID, covData = C_Covenants.GetActiveCovenantID();
+	if covID and covID > 0 then
+		covData = C_Covenants.GetCovenantData(covID);
+	end
 	if position then
 		local x,y = position:GetXY();
 		x = math.floor(x * 1000) / 10;
@@ -1989,11 +1993,11 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange)
 
 		questChange,
 		"name:"..(C_TaskQuest.GetQuestInfoByQuestID(id) or C_QuestLog.GetTitleForQuestID(id) or "???"),
-		"race:"..app.RaceID,
-		"class:"..app.ClassIndex,
+		"race:"..app.RaceID.." ("..app.Race..")",
+		"class:"..app.ClassIndex.." ("..app.Class..")",
 		"lvl:"..app.Level,
-		"cov:"..(C_Covenants.GetActiveCovenantID() or "0");
-		mapID and ("mapID:"..mapID) or "mapID:??",
+		"cov:"..(covData and covData.name or "N/A");
+		mapID and ("mapID:"..mapID.." ("..C_Map_GetMapInfo(mapID).name..")") or "mapID:??",
 		coord and ("coord:"..coord) or "coord:??",
 		"ver:"..app.Version,
 
