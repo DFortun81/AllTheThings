@@ -1339,19 +1339,54 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 53779 },	-- The Lies of a Loa
 				}),
-				n(BONUS_OBJECTIVES, {
-					["g"] = bubbleDown({ ["races"] = HORDE_ONLY }, {
-						-- TODO: Check SQ also probably cant do after a certain level
-						q(48934),	-- Mark of the Damned
-						q(47996),	-- Mawfiend Extermination
-						q(48093),	-- Nagating the Threat
-						q(48588),	-- Purge the Infection
-						q(48852),	-- Stopping Zardax
-						q(47756),	-- The Libation's Liberation
-						q(51689),	-- Tortollan Rescue
-						q(49406),	-- Zalamar Slaughter
+				n(BONUS_OBJECTIVES, sharedData({ ["races"] = HORDE_ONLY }, {
+					-- TODO: probably cant do after a certain level?
+					q(48934, {	-- Mark of the Damned
+						["sourceQuests"] = {
+							47247,	-- That Which Haunts the Dead
+							47491,	-- Remnants of the Damned
+						},
 					}),
-				}),
+					q(47996, {	-- Mawfiend Extermination
+						["sourceQuests"] = {
+							47924,	-- Profanity Filter
+						},
+					}),
+					q(48093, {	-- Nagating the Threat
+						["sourceQuests"] = {
+							48090,	-- Krag'wa's Chosen
+							48092,	-- Vengeance of the Frogs
+						},
+					}),
+					q(48588, {	-- Purge the Infection
+						["sourceQuests"] = {
+							48584,	-- The Blood of My Enemies
+							48590,	-- My Head and Shoulders
+						},
+					}),
+					q(48852, {	-- Stopping Zardax
+						["sourceQuests"] = {
+							48825,	-- Power Denied
+							48823,	-- Projection Desctruction
+						},
+					}),
+					q(47756, {	-- The Libation's Liberation
+						["sourceQuests"] = {
+							47631,	-- Rendezvous with the Libation
+						},
+					}),
+					q(51689, {	-- Tortollan Rescue
+						["sourceQuests"] = {
+							49125,	-- Negative Blood
+						},
+					}),
+					q(49406, {	-- Zalamar Slaughter
+						["sourceQuests"] = {
+							49078,	-- Poisoning the Brood
+							48800,	-- Mark of the Bat
+						},
+					}),
+				})),
 			}),
 		}),
 	}),

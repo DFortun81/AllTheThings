@@ -1534,13 +1534,19 @@ _.Zones =
 						i(161304),	-- Mad-Butcher's Mace (Alliance-only appearance granted by either Trapped Soul Warmace or Zak'rajan's Hexmace)
 					},
 				}),
-				n(BONUS_OBJECTIVES, {
-					-- TODO: Check SQ also probably cant do after a certain level
-					["g"] = bubbleDown({ ["races"] = HORDE_ONLY }, {
-						q(47647),	-- Monsters of Zem'lan
-						q(50805),	-- Skycaller Shutdown
+				n(BONUS_OBJECTIVES, sharedData({ ["races"] = HORDE_ONLY }, {
+					-- TODO: probably cant do after a certain level?
+					q(47647, {	-- Monsters of Zem'lan
+						["sourceQuests"] = {
+							51054,	-- Overdue Mutiny
+						},
 					}),
-				}),
+					q(50805, {	-- Skycaller Shutdown
+						["sourceQuests"] = {
+							50751,	-- Sanctuary Under Siege
+						},
+					}),
+				})),
 			}),
 		}),
 	}),

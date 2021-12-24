@@ -7,6 +7,13 @@ _.Zones =
 	m(BROKEN_ISLES, {
 		m(HIGHMOUNTAIN, {
 			n(RARES, {
+				n(SPECIAL, sharedData({["description"] = "Can be made hostile by Demon Hunters using 'Spectral Sight' or Paladins wielding 'Truthguard' allowing anyone to get credit."},{
+					n(109150, {	-- Malefica
+						["questID"] = 42862,
+						["crs"] = { 109155 },	-- Malefica
+						["coord"] = { 32.8, 66.6, HIGHMOUNTAIN },
+					}),
+				})),
 				v(40413,  {	-- "Sure-Shot" Arnie, Dargok Thunderuin & Ryael Dawndrifter (Amateur Hunters)
 					["description"] = "There are three hunters (Ryael Dawndrifter, \"Sure-Shot\" Arnie, and Dargok Thunderuin) who have surrounded Mara Swiftmane. Engage the amateur hunters in combat, and a Battered Chest will spawn near Mara Swiftmane. The hunters stun and trap themselves if the fight lasts long enough. Once the battle is over, Mara will thank you and leave you with the Battered Chest.",
 					["coord"] = { 43.1, 47.9, HIGHMOUNTAIN },

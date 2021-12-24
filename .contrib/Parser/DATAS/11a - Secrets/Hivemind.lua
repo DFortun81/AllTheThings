@@ -251,19 +251,19 @@ _.Secrets =
 				["g"] = {
 					n(132595, {	-- Rikei
 						["description"] = "Red Monocle",
-						["coord"] = { 71.8, 62.5, Suramar },
+						["coord"] = { 71.8, 62.5, SURAMAR },
 					}),
 					n(132596, {	-- Blom'an
 						["description"] = "Blue Monocle",
-						["coord"] = { 71.8, 62.5, Suramar },
+						["coord"] = { 71.8, 62.5, SURAMAR },
 					}),
 					n(132597, {	-- Giluzui
 						["description"] = "Green Monocle",
-						["coord"] = { 71.8, 62.5, Suramar },
+						["coord"] = { 71.8, 62.5, SURAMAR },
 					}),
 					n(132598, {	-- Yorilan
 						["description"] = "Yellow Monocle",
-						["coord"] = { 71.8, 62.5, Suramar },
+						["coord"] = { 71.8, 62.5, SURAMAR },
 					}),
 					o(280903, { -- Lost Cat Toy
 						["description"] = "The person in Dalaran have to pick up this Toy and will take random damage while doing so. It's important that this TOTAL(Damage+Absorbs+Overkill) damage is recorded.",

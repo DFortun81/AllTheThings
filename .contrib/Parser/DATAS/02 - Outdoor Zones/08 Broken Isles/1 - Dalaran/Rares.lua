@@ -7,31 +7,27 @@ _.Zones =
 	m(BROKEN_ISLES, {
 		m(LEGION_DALARAN, {
 			n(RARES, {
-				n(108628, {	-- Armond Thaco
-					["description"] = "Can be made hostile by Demon Hunters using 'Spectral Sight' or Paladins wielding 'Truthguard' allowing anyone to get credit.",
-					["questID"] = 42763,
-				}),
-				o(244965, {	-- Sheddle's Chest
-					["description"] = "Item spawns shortly after midnight on Saturday and stays up for 2 hours (during the Saturday to Sunday transition). To find this chest you go to the upper level of the |cFFFFD700Photonic Playground|r, which is connected to the toy shop (you will know it's the right area if you see |cFFFFD700Shandy Glossgleam|r there with his pool). You will either want to fly past |cFFFFD700Shandy Glossgleam|r or go up the stairs to reach the area. Once you walk in you will see the chest in between a white chair and a brown chair.",
-					["icon"] = "Interface\\Icons\\Garrison_SilverChest",
-					["g"] = {
-						i(129055),	-- Shoe Shine Kit Toy
-					},
-				}),
-				o(257999, {	-- Technique: Tome of the Tranquil Mind
-					["requireSkill"] = INSCRIPTION,
-					["coord"] = { 41.34, 36.05, 625 },
-					["g"] = {
-						i(141447),	-- Technique: Tome of the Tranquil Mind
-					},
-				}),
-				o(266851, {	-- Wand of Simulated Life
-					["description"] = "Item is sitting on a table upstairs in The Legerdemain Lounge.",
-					["icon"] = "Interface\\Icons\\Inv_misc_discoball_01",
-					["g"] = {
-						i(143534),	-- Wand of Simulated Life
-					},
-				}),
+				n(SPECIAL, sharedData({["description"] = "Can be made hostile by Demon Hunters using 'Spectral Sight' or Paladins wielding 'Truthguard' allowing anyone to get credit."},{
+					n(108628, {	-- Armond Thaco
+						["questID"] = 42763,
+						["coords"] = {
+							{ 60.8, 44.6, LEGION_DALARAN },
+							{ 55.4, 54.2, LEGION_DALARAN },
+							{ 50.6, 59.4, LEGION_DALARAN },
+						},
+					}),
+					n(108925, {	-- Lord Adder
+						["questID"] = 42813,
+						["crs"] = { 108938 },	-- Lord Adder
+						["coords"] = {
+							{ 46.6, 22.2, LEGION_DALARAN },
+							{ 49.4, 29.8, LEGION_DALARAN },
+							{ 44.2, 36.0, LEGION_DALARAN },
+							{ 50.4, 35.8, LEGION_DALARAN },
+							{ 60.8, 44.6, LEGION_DALARAN },
+						},
+					}),
+				})),
 			}),
 		}),
 	}),

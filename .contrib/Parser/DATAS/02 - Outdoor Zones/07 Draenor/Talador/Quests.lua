@@ -213,6 +213,7 @@ _.Zones =
 					n(BONUS_OBJECTIVES, {
 					-- TODO: Check SQ also probably cant do after a certain level
 						q(37421, {	-- Kuuro's Claim
+							["altQuests"] = { 37422 },	-- Zangarra (other building BO)
 							["coord"] = { 75.1, 23.4, TALADOR },
 							["sourceQuests"] = {
 								34558,	-- At Your Command (A)
@@ -422,6 +423,7 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(37422, {	-- Zangarra
+							["altQuests"] = { 37421, },	-- Kuuro's Claim (other building BO)
 							["coord"] = { 83.4, 28.6, TALADOR },
 							["sourceQuest"] = 34566,	-- At Your Command
 						}),
