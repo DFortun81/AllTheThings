@@ -1208,9 +1208,10 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					i(21213),  -- Preserved Holly
 				},
 			}),
-			q(8860, {	-- New Year Celebrations!
+			q(8860, {	-- New Year Celebrations! (Alliance)
 				["qg"] = 15732,	-- Wonderform Operator <Smokywood Pastures>
 				["description"] = "This quest is only available on December 31. Quest can be obtained from Wonderform Operator in any major city.",
+				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
 					-- #if AFTER WRATH
 					NORTHREND_DALARAN,
@@ -1228,15 +1229,19 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					TIRISFAL_GLADES,
 					WETLANDS,
 				},
+				-- #if BEFORE CATA
+				["isYearly"] = true,	-- NOTE: We actually don't know which expansion this changed to be a one time quest, but it eventually does. Keep a close eye on this for future expansions of WoW Classic.
+				-- #endif
 				["groups"] = {
 					objective(1, {	-- 0/1 Smokywood Supplies
 						["provider"] = { "i", 21545 },	-- Smokywood Supplies
 					}),
 				},
 			}),
-			q(8861, {	-- New Year Celebrations!
+			q(8861, {	-- New Year Celebrations! (Horde)
 				["qg"] = 15732,	-- Wonderform Operator <Smokywood Pastures>
 				["description"] = "This quest is only available on December 31. Quest can be obtained from Wonderform Operator in any major city.",
+				["races"] = HORDE_ONLY,
 				["maps"] = {
 					-- #if AFTER WRATH
 					NORTHREND_DALARAN,
@@ -1254,6 +1259,9 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					TIRISFAL_GLADES,
 					WETLANDS,
 				},
+				-- #if BEFORE CATA
+				["isYearly"] = true,	-- NOTE: We actually don't know which expansion this changed to be a one time quest, but it eventually does. Keep a close eye on this for future expansions of WoW Classic.
+				-- #endif
 				["groups"] = {
 					objective(1, {	-- 0/1 Smokywood Supplies
 						["provider"] = { "i", 21545 },	-- Smokywood Supplies
