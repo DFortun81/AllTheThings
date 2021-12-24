@@ -9142,14 +9142,18 @@ local itemFields = {
 		return true;
 	end,
 	["collectedAsFaction"] = function(t)
-		return t.collectedAsFactionOnly;
-	end,
-	["collectedAsFactionOnly"] = function(t)
 		if t.factionID then
 			if t.repeatable then
 				-- This is used by reputation tokens. (turn in items)
+				-- quick cache checks
 				if app.CurrentCharacter.Factions[t.factionID] then return 1; end
 				if app.AccountWideReputations and ATTAccountWideData.Factions[t.factionID] then return 2; end
+
+				-- use the extended faction logic from the associated Faction for consistency
+				local cachedFaction = app.SearchForObject("factionID", t.factionID);
+				if cachedFaction then return cachedFaction.collected; end
+
+				-- otherwise move on to the basic logic
 				if select(3, GetFactionInfoByID(t.factionID)) == 8 then
 					app.CurrentCharacter.Factions[t.factionID] = 1;
 					ATTAccountWideData.Factions[t.factionID] = 1;
@@ -9166,7 +9170,7 @@ local itemFields = {
 		end
 	end,
 	["collectedAsFactionOrQuest"] = function(t)
-		return t.collectedAsFactionOnly or t.collectedAsQuest;
+		return t.collectedAsFaction or t.collectedAsQuest;
 	end,
 	["collectedAsQuest"] = function(t)
 		return IsQuestFlaggedCompletedForObject(t);
