@@ -7,7 +7,6 @@ _.Zones =
 	m(BROKEN_ISLES, {
 		m(HIGHMOUNTAIN, {
 			n(WORLD_QUESTS, bubbleDown({ ["isWorldQuest"] = true, },{
-				q(43985),	-- A Dark Tide (Flotsam)
 				q(41705),	-- Assault on Thunder Totem
 				q(41026),	-- Back to the Shadows
 				q(46191),	-- Balinar (Invasion wq)
@@ -185,7 +184,6 @@ _.Zones =
 				q(41237),	-- Supplies Needed: Stonehide Leather
 				q(46195),	-- Swarming Skies (Invasion WQ)
 				q(42086),	-- The Feltotem
-				q(43448),	-- The Frozen King (Drugon the Frostblood)
 				q(43766),	-- The Magic of Flight
 				q(41232, {	-- Thick Ironhorn Hide
 					["requireSkill"] = SKINNING,

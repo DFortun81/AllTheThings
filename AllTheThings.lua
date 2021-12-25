@@ -1721,8 +1721,8 @@ local function GetUnobtainableTexture(groupORu)
 	local u = isTable and groupORu.u or groupORu;
 	-- non-unobtainable group
 	if not u then return; end
-	-- non-NYI item or spell which is BoE, use green dot
-	if isTable and (groupORu.itemID or groupORu.spellID) and u > 1 and not app.IsBoP(groupORu) then
+	-- non-NYI item or spell which is BoE and not a holiday (u<1000), use green dot
+	if isTable and (groupORu.itemID or groupORu.spellID) and u > 1 and u < 1000 and not app.IsBoP(groupORu) then
 		u = 3;
 	else
 		local record = L["UNOBTAINABLE_ITEM_REASONS"][u];
@@ -1975,6 +1975,10 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange)
 	local coord;
 	local mapID = app.GetCurrentMapID();
 	local position = mapID and C_Map.GetPlayerMapPosition(mapID, "player");
+	local covID, covData = C_Covenants.GetActiveCovenantID();
+	if covID and covID > 0 then
+		covData = C_Covenants.GetCovenantData(covID);
+	end
 	if position then
 		local x,y = position:GetXY();
 		x = math.floor(x * 1000) / 10;
@@ -1989,11 +1993,11 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange)
 
 		questChange,
 		"name:"..(C_TaskQuest.GetQuestInfoByQuestID(id) or C_QuestLog.GetTitleForQuestID(id) or "???"),
-		"race:"..app.RaceID,
-		"class:"..app.ClassIndex,
+		"race:"..app.RaceID.." ("..app.Race..")",
+		"class:"..app.ClassIndex.." ("..app.Class..")",
 		"lvl:"..app.Level,
-		"cov:"..(C_Covenants.GetActiveCovenantID() or "0");
-		mapID and ("mapID:"..mapID) or "mapID:??",
+		"cov:"..(covData and covData.name or "N/A");
+		mapID and ("mapID:"..mapID.." ("..C_Map_GetMapInfo(mapID).name..")") or "mapID:??",
 		coord and ("coord:"..coord) or "coord:??",
 		"ver:"..app.Version,
 
@@ -9138,14 +9142,18 @@ local itemFields = {
 		return true;
 	end,
 	["collectedAsFaction"] = function(t)
-		return t.collectedAsFactionOnly;
-	end,
-	["collectedAsFactionOnly"] = function(t)
 		if t.factionID then
 			if t.repeatable then
 				-- This is used by reputation tokens. (turn in items)
+				-- quick cache checks
 				if app.CurrentCharacter.Factions[t.factionID] then return 1; end
 				if app.AccountWideReputations and ATTAccountWideData.Factions[t.factionID] then return 2; end
+
+				-- use the extended faction logic from the associated Faction for consistency
+				local cachedFaction = app.SearchForObject("factionID", t.factionID);
+				if cachedFaction then return cachedFaction.collected; end
+
+				-- otherwise move on to the basic logic
 				if select(3, GetFactionInfoByID(t.factionID)) == 8 then
 					app.CurrentCharacter.Factions[t.factionID] = 1;
 					ATTAccountWideData.Factions[t.factionID] = 1;
@@ -9162,7 +9170,7 @@ local itemFields = {
 		end
 	end,
 	["collectedAsFactionOrQuest"] = function(t)
-		return t.collectedAsFactionOnly or t.collectedAsQuest;
+		return t.collectedAsFaction or t.collectedAsQuest;
 	end,
 	["collectedAsQuest"] = function(t)
 		return IsQuestFlaggedCompletedForObject(t);

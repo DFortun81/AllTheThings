@@ -104,3 +104,8 @@ _.Instances = { tier(CATA_TIER, {
 		},
 	}),
 })};
+root("HiddenQuestTriggers", {
+	tier(WOD_TIER, {
+		q(35435),	-- Well of Eternity Reward Quest - Heroic completion
+	}),
+});

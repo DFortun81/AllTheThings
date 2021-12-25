@@ -7,6 +7,22 @@ _.Zones =
 	m(BROKEN_ISLES, {
 		m(VALSHARAH, {
 			n(RARES, {
+				n(SPECIAL, sharedData({["description"] = "Can be made hostile by Demon Hunters using 'Spectral Sight' or Paladins wielding 'Truthguard' allowing anyone to get credit."},{
+					n(108978, {	-- Astry Fallenbough
+						["questID"] = 42817,
+						["coords"] = {
+							{ 53.0, 55.6, VALSHARAH },
+							{ 53.2, 56.8, VALSHARAH },
+							{ 53.4, 54.8, VALSHARAH },
+							{ 53.8, 57.0, VALSHARAH },
+						},
+					}),
+					n(108955, {	-- Maxwell Caprina
+						["questID"] = 42816,
+						["crs"] = { 108964 },	-- Maxwell Caprina
+						["coord"] = { 41.8, 60.0, VALSHARAH },
+					}),
+				})),
 				n(93758,  {	-- Antydas Nightcaller
 					["description"] = "This part of the 'Adventurer of Val'sharah' achievement doesn't involve killing a rare, but stealing an NPC's treasure.  The treasure chest is on the second floor of the building and can be found directly across the room from Antydas, hidden next to the sink.  Enjoy your foray into larceny!",
 					["questID"] = 38903,	-- 7.0 Val'sharah - Bluffs - Vignette: Nightcaller - Interaction - TRACKING - twh

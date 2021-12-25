@@ -31,7 +31,7 @@ _.Secrets =
 							o(280815, {	-- Letter 1: Shattrath City
 								["model"] = 1661948,
 								["questID"] = 40397,
-								["coord"] = { 65.6, 69.3, 594 },	-- Shattrath City
+								["coord"] = { 65.6, 69.3, SHATTRATH_CITY },	-- Shattrath City
 								["description"] = "|cFFFFFFFFLetter 1:|r The start of this puzzle is the |cFFFFD700Letter from Ms. Graham|r with a blue aura behind |cFFFFD700Griftah|r, which can be interacted with. Click it. The letter reads...\r\r|cFFFFFFFFThe key Factor in successul Wasp Ignition is a solid Ad campaign.|r\n",
 							}),
 							o(280836, {	-- Letter 2: Prepfoot Compound, Highmountain
@@ -251,19 +251,19 @@ _.Secrets =
 				["g"] = {
 					n(132595, {	-- Rikei
 						["description"] = "Red Monocle",
-						["coord"] = { 71.8, 62.5, Suramar },
+						["coord"] = { 71.8, 62.5, SURAMAR },
 					}),
 					n(132596, {	-- Blom'an
 						["description"] = "Blue Monocle",
-						["coord"] = { 71.8, 62.5, Suramar },
+						["coord"] = { 71.8, 62.5, SURAMAR },
 					}),
 					n(132597, {	-- Giluzui
 						["description"] = "Green Monocle",
-						["coord"] = { 71.8, 62.5, Suramar },
+						["coord"] = { 71.8, 62.5, SURAMAR },
 					}),
 					n(132598, {	-- Yorilan
 						["description"] = "Yellow Monocle",
-						["coord"] = { 71.8, 62.5, Suramar },
+						["coord"] = { 71.8, 62.5, SURAMAR },
 					}),
 					o(280903, { -- Lost Cat Toy
 						["description"] = "The person in Dalaran have to pick up this Toy and will take random damage while doing so. It's important that this TOTAL(Damage+Absorbs+Overkill) damage is recorded.",

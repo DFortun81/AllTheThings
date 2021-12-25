@@ -677,9 +677,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			applyclassicphase(PHASE_SIX, i(22670, {	-- Icebane Gauntlets
 				["timeline"] = { "removed 3.0.1" },
 			})),
-			applyclassicphase(PHASE_FIVE_CATCH_UP, i(22763, {	-- Ironvine Gloves
-				["timeline"] = { "removed 4.0.3" },
-			})),
+			applyclassicphase(PHASE_FIVE_CATCH_UP, i(22763)),	-- Ironvine Gloves
 			i(7927, {	-- Ornate Mithril Gloves
 				["timeline"] = { "removed 4.0.1" },
 			}),

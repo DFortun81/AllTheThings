@@ -99,3 +99,14 @@ _.Instances = { tier(MOP_TIER, {
 		},
 	}),
 })};
+root("HiddenQuestTriggers", {
+	tier(MOP_TIER, {
+		q(31637),	-- Scarlet Monastery Challenge Mode - Bronze Addition (Nth)
+		q(31629),	-- Scarlet Monastery Challenge Mode - Consolation (Nth)
+		q(31651),	-- Scarlet Monastery Challenge Mode - Gold Addition (Nth)
+		q(31644),	-- Scarlet Monastery Challenge Mode - Silver Addition (Nth)
+	}),
+	tier(WOD_TIER, {
+		q(35613),	-- Scarlet Monastery Reward Quest - Heroic completion
+	}),
+});

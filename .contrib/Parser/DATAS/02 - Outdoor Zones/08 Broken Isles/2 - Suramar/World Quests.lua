@@ -132,7 +132,6 @@ _.Zones =
 				}),
 				q(41931),	-- Mana Tap
 				q(42880),	-- Meeting their Quota
-				q(43513),	-- Na'zak the Fiend
 				q(41305, {	-- Nightborne Herb Trader
 					["requireSkill"] = HERBALISM,
 				}),

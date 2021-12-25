@@ -9,10 +9,22 @@ _.Zones =
 			n(QUESTS, {
 				q(28393, {	-- A Dangerous Alliance
 					["sourceQuests"] = { 28258 },	-- Meet with Ander Germaine
-					["provider"] = { "n", 914 },	-- Ander Germaine
 					["classes"] = { WARRIOR },
-					["coord"] = { 79.4, 69.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
+					["qgs"] = {
+						-- #if BEFORE SHADOWLANDS
+						914,	-- Ander Germaine
+						-- #else
+						164939,	-- Signilda Hardforge <Warrior Trainer>
+						-- #endif
+					},
+					["coords"] = {
+						-- #if AFTER SHADOWLANDS
+						{ 80.2, 70.2, STORMWIND_CITY },
+						-- #else
+						{ 79.4, 69.0, STORMWIND_CITY },
+						-- #endif
+					},
 					["g"] = {
 						i(65618),	-- Faceguard of the Crown
 						i(65639),	-- Headguard of the Crown
@@ -754,10 +766,22 @@ _.Zones =
 				}),
 				q(28401, {	-- Slaves of the Firelord
 					["sourceQuests"] = { 28287 },	-- Meet with Farseer Umbrua
-					["provider"] = { "n", 20407 },	-- Farseer Umbrua
 					["classes"] = { SHAMAN },
-					["coord"] = { 64.6, 33.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
+					["qgs"] = {
+						-- #if AFTER SHADOWLANDS
+						164945,	-- Mulric Boldrock
+						-- #else
+						20407,	-- Farseer Umbrua
+						-- #endif
+					},
+					["coords"] = {
+						-- #if AFTER SHADOWLANDS
+						{ 78.2, 70.9, STORMWIND_CITY },
+						-- #else
+						{ 64.6, 33.0, STORMWIND_CITY },
+						-- #endif
+					},
 					["g"] = {
 						i(65640),	-- Mask of the Farseer
 						i(65622),	-- Headcover of the Farseer
@@ -775,10 +799,23 @@ _.Zones =
 				}),
 				q(28399, {	-- Stones of Binding
 					["sourceQuests"] = { 28259 },	-- Meet with Demisette Cloyce
-					["provider"] = { "n", 461 },	-- Demisette Cloyce
 					["classes"] = { WARLOCK },
 					["coord"] = { 39.4, 84.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
+					["qgs"] = {
+						-- #if AFTER SHADOWLANDS
+						164942,	-- Evelyn Thorn
+						-- #else
+						461,	-- Demisette Cloyce
+						-- #endif
+					},
+					["coords"] = {
+						-- #if AFTER SHADOWLANDS
+						{ 79.5, 69.9, STORMWIND_CITY },
+						-- #else
+						{ 39.4, 84.8, STORMWIND_CITY },
+						-- #endif
+					},
 					["g"] = {
 						i(65621),	-- Horns of Justified Sins
 					},
@@ -847,10 +884,22 @@ _.Zones =
 				}),
 				q(28406, {	-- The Dark Iron Army
 					["sourceQuests"] = { 28262 },	-- Meet with Lord Tony Romano
-					["provider"] = { "n", 13283 },	-- Lord Tony Romano
 					["classes"] = { ROGUE },
-					["coord"] = { 79.6, 60.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
+					["qgs"] = {
+						-- #if BEFORE SHADOWLANDS
+						13283,	-- Lord Tony Romano
+						-- #else
+						164946,	-- Veruca Darkstream
+						-- #endif
+					},
+					["coords"] = {
+						-- #if AFTER SHADOWLANDS
+						{ 78.7, 70.6, STORMWIND_CITY },
+						-- #else
+						{ 79.6, 60.8, STORMWIND_CITY },
+						-- #endif
+					},
 					["g"] = {
 						i(65624),	-- SI:7 Special Issue Facemask
 					},
@@ -890,10 +939,22 @@ _.Zones =
 				}),
 				q(28394, {	-- The Golem Lord's Creations
 					["sourceQuests"] = { 28260 },	-- Meet with Wulf Hansreim
-					["provider"] = { "n", 44247 },	-- Wulf Hansreim
 					["classes"] = { HUNTER },
-					["coord"] = { 79.0, 71.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
+					["qgs"] = {
+						-- #if AFTER SHADOWLANDS
+						164960,	-- Dalgrun Steelpine <Hunter Trainer>
+						-- #else
+						44247,	-- Wulf Hansreim
+						-- #endif
+					},
+					["coords"] = {
+						-- #if AFTER SHADOWLANDS
+						{ 79.2, 71.2, STORMWIND_CITY },
+						-- #else
+						{ 79.0, 71.0, STORMWIND_CITY },
+						-- #endif
+					},
 					["g"] = {
 						i(65619),	-- Helm of the Crown
 					},
@@ -954,7 +1015,13 @@ _.Zones =
 				}),
 				q(28398, {	-- The Pyromancer's Grimoire
 					["sourceQuests"] = { 28263 },	-- Meet with Maginor Dumas
-					["provider"] = { "n", 331 },	-- Maginor Dumas
+					["qgs"] = {
+						-- #if AFTER SHADOWLANDS
+						164955,	-- Frazzle Frostfingers
+						-- #else
+						331,	-- Maginor Dumas
+						-- #endif
+					},
 					["classes"] = { MAGE },
 					["coord"] = { 49.2, 87.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
@@ -1070,10 +1137,22 @@ _.Zones =
 				}),
 				q(28405, {	-- Weapons of Darkness
 					["sourceQuests"] = { 28268 },	-- Meet with Lord Grayson Shadowbreaker
-					["provider"] = { "n", 928 },	-- Lord Grayson Shadowbreaker
 					["classes"] = { PALADIN },
-					["coord"] = { 52.6, 45.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
+					["qgs"] = {
+						-- #if AFTER SHADOWLANDS
+						164952,	-- Ezul'aan <Paladin Trainer>
+						-- #else
+						928,	-- Lord Grayson Shadowbreaker
+						-- #endif
+					},
+					["coords"] = {
+						-- #if AFTER SHADOWLANDS
+						{ 79.2, 69.6, STORMWIND_CITY },
+						-- #else
+						{ 52.6, 45.0, STORMWIND_CITY },
+						-- #endif
+					},
 					["g"] = {
 						i(65623),	-- Helm of the Order
 						i(65641),	-- Faceguard of the Order

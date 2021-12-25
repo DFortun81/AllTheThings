@@ -249,6 +249,11 @@ _.Instances = { tier(CATA_TIER, {
 		},
 	}),
 })};
-_.HiddenQuestTriggers = {
-	q(35415),	-- Reward for killing Anraphet
-};
+root("HiddenQuestTriggers", {
+	tier(WOD_TIER, {
+		q(35415),	-- Halls of Origination Reward Quest
+		q(35424),	-- Halls of Origination Reward Quest
+		q(35420),	-- Halls of Origination Bonus Rewards
+		q(35426),	-- Halls of Origination Bonus Rewards
+	}),
+});

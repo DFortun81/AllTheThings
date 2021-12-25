@@ -1014,7 +1014,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					}),
 				},
 			}),
-			q(60239, { 	-- A Winter Veil Gift (2021)
+			q(64639, { 	-- A Winter Veil Gift (2021)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
 					{ "i", 187561 },	-- Winter Veil Gift
@@ -1208,9 +1208,10 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					i(21213),  -- Preserved Holly
 				},
 			}),
-			q(8860, {	-- New Year Celebrations!
+			q(8860, {	-- New Year Celebrations! (Alliance)
 				["qg"] = 15732,	-- Wonderform Operator <Smokywood Pastures>
 				["description"] = "This quest is only available on December 31. Quest can be obtained from Wonderform Operator in any major city.",
+				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
 					-- #if AFTER WRATH
 					NORTHREND_DALARAN,
@@ -1228,15 +1229,19 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					TIRISFAL_GLADES,
 					WETLANDS,
 				},
+				-- #if BEFORE CATA
+				["isYearly"] = true,	-- NOTE: We actually don't know which expansion this changed to be a one time quest, but it eventually does. Keep a close eye on this for future expansions of WoW Classic.
+				-- #endif
 				["groups"] = {
 					objective(1, {	-- 0/1 Smokywood Supplies
 						["provider"] = { "i", 21545 },	-- Smokywood Supplies
 					}),
 				},
 			}),
-			q(8861, {	-- New Year Celebrations!
+			q(8861, {	-- New Year Celebrations! (Horde)
 				["qg"] = 15732,	-- Wonderform Operator <Smokywood Pastures>
 				["description"] = "This quest is only available on December 31. Quest can be obtained from Wonderform Operator in any major city.",
+				["races"] = HORDE_ONLY,
 				["maps"] = {
 					-- #if AFTER WRATH
 					NORTHREND_DALARAN,
@@ -1254,6 +1259,9 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					TIRISFAL_GLADES,
 					WETLANDS,
 				},
+				-- #if BEFORE CATA
+				["isYearly"] = true,	-- NOTE: We actually don't know which expansion this changed to be a one time quest, but it eventually does. Keep a close eye on this for future expansions of WoW Classic.
+				-- #endif
 				["groups"] = {
 					objective(1, {	-- 0/1 Smokywood Supplies
 						["provider"] = { "i", 21545 },	-- Smokywood Supplies
@@ -1480,6 +1488,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["isBreadcrumb"] = true,
 				["isYearly"] = true,
 			}),
+			-- #IF BEFORE SHADOWLANDS
 			{	-- You're a Mean One...
 				["allianceQuestData"] = q(7043, {	-- You're a Mean One... [A]
 					["sourceQuest"] = 7042,	-- Stolen Winter Veil Treats (Alliance)
@@ -1544,6 +1553,78 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					}),
 				},
 			},
+			-- #ELSE
+			q(7043, {	-- You're a Mean One... [A]
+				["sourceQuest"] = 7042,	-- Stolen Winter Veil Treats (Alliance)
+				["qgs"] = {
+					13433,	-- Wulmort Jinglepocket (Alliance)
+					13636,	-- Strange Snowman
+				},
+				["coords"] = {
+					{ 33.2, 67.8, IRONFORGE },	-- Wulmort Jinglepocket (Alliance)
+					{ 42.4, 41, HILLSBRAD_FOOTHILLS },	-- Strange Snowman
+				},
+				["isDaily"] = true,
+				["lvl"] = 30,
+				["groups"] = {
+					objective(1, {	-- 0/1 Stolen Treats
+						["provider"] = { "i", 17662 },	-- Stolen Treats
+						["cr"] = 13602,	-- The Abominable Greench
+					}),
+					i(149503, {	-- Stolen Gift
+						["description"] = "This gift is granted to any player below max level. This gift doesn't drop any of the rare seasonal items; it's currently not worth it.",
+						["timeline"] = { "added 7.2.5.23910" },
+						["lvl"] = { 30, 59 },
+						["groups"] = HOLIDAY_NON_COLLECTIBLE_GROUPS,
+					}),
+					i(93626, {	-- Stolen Present
+						["timeline"] = { "added 5.1.0.16309", "removed 6.0.1.18594" },
+					}),
+					i(73792, {	-- Stolen Present
+						["timeline"] = { "added 4.3.0.15005", "removed 5.1.0.16309" },
+					}),
+					i(116762, {	-- Stolen Present
+						["timeline"] = { "added 6.0.1.18594" },
+						["sym"] = {{"fill"}},	-- fill with cached content
+					}),
+				},
+			}),
+			q(6983, {	-- You're a Mean One... [H]
+				["sourceQuest"] = 6963,	-- Stolen Winter Veil Treats (Horde)
+				["qgs"] = {
+					13418,	-- Kaymard Copperpinch (Horde)
+					13636,	-- Strange Snowman
+				},
+				["coords"] = {
+					{ 52.4, 77, ORGRIMMAR },	-- Kaymard Copperpinch (Horde)
+					{ 42.4, 41, HILLSBRAD_FOOTHILLS },	-- Strange Snowman
+				},
+				["isDaily"] = true,
+				["lvl"] = 30,
+				["groups"] = {
+					objective(1, {	-- 0/1 Stolen Treats
+						["provider"] = { "i", 17662 },	-- Stolen Treats
+						["cr"] = 13602,	-- The Abominable Greench
+					}),
+					i(149503, {	-- Stolen Gift
+						["description"] = "This gift is granted to any player below max level. This gift doesn't drop any of the rare seasonal items; it's currently not worth it.",
+						["timeline"] = { "added 7.2.5.23910" },
+						["lvl"] = { 30, 59 },
+						["groups"] = HOLIDAY_NON_COLLECTIBLE_GROUPS,
+					}),
+					i(93626, {	-- Stolen Present
+						["timeline"] = { "added 5.1.0.16309", "removed 6.0.1.18594" },
+					}),
+					i(73792, {	-- Stolen Present
+						["timeline"] = { "added 4.3.0.15005", "removed 5.1.0.16309" },
+					}),
+					i(116762, {	-- Stolen Present
+						["timeline"] = { "added 6.0.1.18594" },
+						["sym"] = {{"fill"}},	-- fill with cached content
+					}),
+				},
+			}),
+			-- #ENDIF
 		}),
 		n(REWARDS, {
 			i(174865, {	-- A Tiny Winter Hat (Pepe)

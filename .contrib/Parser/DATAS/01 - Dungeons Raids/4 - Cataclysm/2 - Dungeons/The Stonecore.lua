@@ -190,3 +190,9 @@ _.Instances = { tier(CATA_TIER, {
 		},
 	}),
 })};
+root("HiddenQuestTriggers", {
+	tier(WOD_TIER, {
+		q(35911),	-- Stonecore Reward Quest - Normal completion
+		q(35913),	-- Stonecore (Heroic) Reward Quest - Heroic completion
+	}),
+});

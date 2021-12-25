@@ -262,6 +262,11 @@ _.Zones =
 						i(43696),	-- Half Empty Bottle of Prison Moonshine
 					},
 				}),
+				o(230428, {	-- Smoldering True Iron Deposit
+					["questID"] = 34649,
+					["coord"] = { 36.2, 32.3, FROSTFIRE_RIDGE },
+					["requireSkill"] = MINING,
+				}),
 				o(230424, {	-- Snow-covered Strongbox
 					["questID"] = 34647,
 					["coord"] = { 24.0, 12.9, FROSTFIRE_RIDGE },

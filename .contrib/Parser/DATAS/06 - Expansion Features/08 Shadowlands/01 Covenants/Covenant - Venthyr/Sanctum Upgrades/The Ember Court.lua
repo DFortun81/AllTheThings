@@ -2328,6 +2328,7 @@ root("HiddenQuestTriggers", {
 			q(59695),	-- triggered when using "Maldraxxi Challenge Banner"
 			q(61453),	-- triggered when using "Training Dummies" (181437)
 			q(61456),	-- triggered when using "Slippery Muck" (181440)
+			q(59683),	-- triggered when using "Bewitched Wardrobe" (177232)
 
 		-- Misc.
 			q(61918),	-- unflagged when completing Restock: Fashion Accessories (62078)
@@ -2341,6 +2342,7 @@ root("HiddenQuestTriggers", {
 			q(62520),	-- 'Clean' criteria for It's Certainly Never Boring
 
 			--q(61935),	-- Stonehad was miserable, Adrestes was elated if it matters. This was at the start of the court - no idea what that was.  It's the first court with decorations though.
+			--q(61536),	-- Miserable Aliothe, Uncomfortable Mikanikos, Unhappy Choofa, Unhappy Alexandros Mograine, triggered after opening Mikanikos chest
 
 			--q(61930),	-- Unknown
 			q(61936),	-- Triggered after Restock: Surveillance
@@ -2352,6 +2354,8 @@ root("HiddenQuestTriggers", {
 			--q(63353),	-- Achievement related to "Rendles Big Day"
 			--q(61932),	-- Maybe Bastion Etiquette
 			q(61458),	-- After using [Visions of Sire Denathrius] in Ember Court
+			q(61414),	-- Faulty Fireworks (+Safe)
+
 	-- Misc
 		q(62035),	-- unlocking Soulbreaker's Court Vestments set (TransmogSetID 2065, Soulbreaker's Court items)
 		q(62031),	-- unlocking Court Death Shroud Armor set (TransmogSetID 2068, Court Death Shroud items)

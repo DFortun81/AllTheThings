@@ -1452,19 +1452,21 @@ root("HiddenQuestTriggers", {
 	q(63150),	-- Athanos | Humility | no charms | no active braziers
 	q(63151),	-- Azaruux | Humility | no charms | no active braziers
 
-	-- UNKNOWN EXACT TRIGGERS (could be loyalty kills instead, but what is in loyalty kills then?)
-	--q(63074),	-- Kalisthene | Loyalty | Kleia
-	--q(63075),	-- Craven Corinth | Loyalty | Kleia
-	--q(63076),	-- ?
-	--q(63077),	-- ?
-	--q(63078),	-- Kalisthene | Loyalty | Pelagos | before loot | 1 brazier - CONFIRMED
-	--q(63079),	-- Echthra | Loyalty | Pelagos | after loot | no brazier - CONFIRMED
-	--q(63080),	-- Mad Mortimer | Loyalty | Pelagos
-	--q(63081),	-- ?
-	--q(63082),	-- Thran'tiok | Loyalty | Pelagos
-	--q(63082),	-- Azaruux | Loyalty | Pelagos | after loot | 1 brazier - CONFIRMED
-	--q(63083),	-- Craven Corinth | Loyalty | Kleia
-	--q(63083),	-- Splinterbark Nightmare | Loyalty | Pelagos | before loot | 1 brazier - CONFIRMED
+	-- HQTs for Bastion of Protection achievement
+	q(63074),	-- Kalisthene | Spiritforged Aegis
+	q(63075),	-- Craven Corinth | Spiritforged Aegis
+	
+	-- HQTs for The Hoot of the Issue achievement
+	q(63076),	-- Loyalty | Alderyn and Myn'ir | Mikanikos
+	q(63077),	-- Loyalty | Splinterbark Nightmare | Mikanikos
+
+	-- HQTs for It's Not What You Wear achievement
+	q(63078),	-- Loyalty | Herald's Footpads
+	q(63079),	-- Loyalty | Deep Echo Trident
+	q(63080),	-- Loyalty | Vial of Lichfrost
+	q(63081),	-- Loyalty | Phial of Serenity
+	q(63082),	-- Loyalty | Ring of Warding
+	q(63083),	-- Loyalty | Spiritforged Aegis
 
 	-- HQTs for It's How You Wear It achievement
 	q(63084),	-- Humility | Herald's Footpads
@@ -1474,17 +1476,18 @@ root("HiddenQuestTriggers", {
 	q(63088),	-- Humility | Ring of Warding
 	q(63089),	-- Humility | Spiritforged Aegis
 
-	-- I think this might be for Learning from the Masters achievement
-	--q(63093),	-- Kalisthene | Wisdom
-	--q(63094),	--
-	--q(63095),	--
-	--q(63096),	-- Athanos | Courage | Kleia
-	q(63097),	-- Athanos | Courage | Pelagos | Completing first 9 Path of Ascension 'Courage' challenges?
-	--q(63098),	-- Athanos | Wisdom | Mikanikos | Vial of Serenity | no charms
+	-- HQTs for Learning from the Masters achievement
+	q(63093),	-- Kalisthene | Wisdom | Kleia
+	q(63094),	-- Kalisthene | Wisdom | Pelagos
+	q(63095),	-- Kalisthene | Wisdom | Mikanikos
+	q(63096),	-- Athanos | Wisdom | Kleia
+	q(63097),	-- Athanos | Courage | Pelagos
+	q(63098),	-- Athanos | Wisdom | Mikanikos
 
 	-- LOYALTY BRAZIERS | WILL UNFLAG IF BRAZIER IS USED AGAIN
 	q(62770),	-- Loyalty | no brazier #1 - CONFIRMED
 	q(62771),	-- Loyalty | no brazier #2 - CONFIRMED
+	q(65227),	-- Rightmost brazier added in 9.1.5
 
 	q(63165),	-- after earning To the Moon achievement
 	q(62989),	-- Arsenal: Doubt's Weapon Cache

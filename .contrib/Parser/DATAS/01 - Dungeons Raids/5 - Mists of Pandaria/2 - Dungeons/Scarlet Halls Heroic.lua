@@ -89,3 +89,15 @@ _.Instances = { tier(MOP_TIER, {
 		},
 	}),
 })};
+root("HiddenQuestTriggers", {
+	tier(MOP_TIER, {
+		q(31636),	-- Scarlet Halls Challenge Mode - Bronze Addition (Nth)
+		q(31630),	-- Scarlet Halls Challenge Mode - Consolation (Nth)
+		q(31650),	-- Scarlet Halls Challenge Mode - Gold Addition (Nth)
+		q(31643),	-- Scarlet Halls Challenge Mode - Silver Addition (Nth)
+	}),
+	tier(WOD_TIER, {
+		q(35609),	-- Scarlet Halls - Bonus Objective Reward Quest - kill Armsmaster Harlan
+		q(35608),	-- Scarlet Halls Reward Quest - Heroic completion
+	}),
+});

@@ -204,6 +204,7 @@ local L = app.L;
 	L.AH_SCAN_SUCCESSFUL_1 = ": Успешно сканировано ";
 	L.AH_SCAN_SUCCESSFUL_2 = " предмет(ов).";
 	L.REAGENT_CACHE_OUT_OF_DATE = "Кэш реагентов устарел и будет обновлен, когда откроете Ваши профессии!";
+	L.ARTIFACT_CACHE_OUT_OF_DATE = "Кэш Артефактов устарел и будет обновлен, когда перелогинитесь!";
 	L.QUEST_LOOP = "Скорее всего ATT вырвался из цепочки зацикленных заданий.";
 	L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "Задание '%s' %s не позволит собрать Хлебную Кроху '%s' %s";
 	L.QUEST_OBJECTIVE_INVALID = "Недействительная Цель Задания";
@@ -745,6 +746,8 @@ for key,value in pairs({
 			[-676] = select(2, GetAchievementInfo(8791))..": Сезон 13",	-- Tyrannical Gladiator: Season 13
 			[-652] = "Доспехи Бездушного гладиатора за очки чести",		-- Honor Gear Grievous Season
 			[-651] = "Доспехи Гордого гладиатора за очки чести",		-- Honor Gear Prideful Season
+	-- Pets
+		[-795] = "Подземелья Боевых питомцев",						-- Pet Battle Dungeons
 	-- Secret Header
 		[-806] = "Часовой пояс",									-- Waist of Time
 	-- Chests
@@ -767,8 +770,6 @@ for key,value in pairs({
 		[-911] = "Охота: темные гончие",							-- Hunt: Shadehounds
 		[-912] = "Охота: крылатые пожиратели душ",					-- Hunt: Winged Soul Eaters
 		[-913] = "Мучители из Торгаста",							-- Tormentors of Torghast
-		[-914] = "Приключения",										-- Adventures
-		[-915] = "Проводник анимы",									-- Anima Conductor
 		[-977] = "Маэли Странница",									-- Maelie the Wanderer
 		[-979] = "Брокер Ве'кен & Брокер Ве'нотт",					-- Broker Ve'ken & Broker Ve'nott
 		-- SL Maldraxxus/Necrolord
@@ -827,8 +828,6 @@ for key,value in pairs({
 	------ ACHIEVEMENT HEADERS SECTION ------
 		[-10071] = "Видения Н'Зота",
 		[-10072] = "Нападение Н'Зота",
-		[-10073] = "Жуткое видение Оргримара",
-		[-10074] = "Жуткое видение Штормграда",
 		[-10075] = "Нападение: наступление аматетов",
 		[-10076] = "Нападение: Темная Империя",
 		[-10077] = "Нападение: враждебные кланы",
@@ -836,7 +835,7 @@ for key,value in pairs({
 		[-10079] = "Нападение: появление акиров",
 		[-10081] = "Заражённая область",
 		[-10082] = "Захваченная область",
-		-- Shadowlands Achievement Header
+		-- Shadowlands Achievement Headers
 			-- 9.1
 				[-10083] = "Нападения Ковенантов",					-- Covenant Assaults
 			--	hopefully temp objects, these currently do not have accessible object data on wowhead

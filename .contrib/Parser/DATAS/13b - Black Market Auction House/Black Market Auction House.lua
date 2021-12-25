@@ -22,15 +22,17 @@ root("BlackMarket", {
 		n(160081, {	-- Ta'xera <Matron of the Market>
 			["coord"] = { 52.40, 83.80, REVENDRETH },
 		}),
+		-- #IF BEFORE SHADOWLANDS
 		n(100986, {	-- Madam Goya [Underbelly]
 			["coord"] = { 71.37, 17.93, LEGION_THE_UNDERBELLY },
 		}),
-		n(94829, {	-- Zhang Yeoh [Garrison]
-			["coords"] = {
-				{ 44.96, 50.07, FROSTWALL },
-				{ 37.2, 35.8, LUNARFALL },
-			},
-		}),
+		-- #ENDIF
+		-- n(94829, {	-- Zhang Yeoh [Garrison]
+		-- 	["coords"] = {
+		-- 		{ 44.96, 50.07, FROSTWALL },
+		-- 		{ 37.2, 35.8, LUNARFALL },
+		-- 	},
+		-- }),
 	})),
 });
 root("BlackMarket", bubbleDown({ ["u"] = BLACK_MARKET, },{

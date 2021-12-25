@@ -133,3 +133,8 @@ _.Instances = { tier(CATA_TIER, {
 		},
 	}),
 })};
+root("HiddenQuestTriggers", {
+	tier(WOD_TIER, {
+		q(35358),	-- End Time Reward Quest - Heroic completion
+	}),
+});

@@ -204,6 +204,7 @@ local L = app.L;
 	--TODO: L.AH_SCAN_SUCCESSFUL_1 = ": Successfully scanned ";
 	--TODO: L.AH_SCAN_SUCCESSFUL_2 = " item(s).";
 	--TODO: L.REAGENT_CACHE_OUT_OF_DATE = "Reagent Cache is out-of-date and will be re-cached when opening your professions!";
+	--TODO: L.ARTIFACT_CACHE_OUT_OF_DATE = "Artifact Cache is out-of-date/inaccurate and will be re-cached when logging onto each character!";
 	--TODO: L.QUEST_LOOP = "Likely just broke out of an infinite source quest loop.";
 	--TODO: L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "Quest '%s' %s will prevent collection of Breadcrumb Quest '%s' %s";
 	--TODO: L.QUEST_OBJECTIVE_INVALID = "Invalid Quest Objective";
@@ -762,6 +763,8 @@ for key,value in pairs({
 			--TODO: [-676] = select(2, GetAchievementInfo(8791))..": Season 13",-- Tyrannical Gladiator: Season 13
 			--TODO: [-652] = "Honor Gear Grievous Season",			-- Honor Gear Grievous Season
 			--TODO: [-651] = "Honor Gear Prideful Season",			-- Honor Gear Prideful Season
+	-- Pets
+		--TODO: [-795] = "Pet Battle Dungeons",						-- Pet Battle Dungeons
 	-- Secret Header
 		[-806] = "금쪽같은 시간을 버려낸 허리띠",								-- Waist of Time
 	-- Chests
@@ -784,8 +787,6 @@ for key,value in pairs({
 		--TODO: [-911] = "Hunt: Shadehounds",						-- Hunt: Shadehounds
 		--TODO: [-912] = "Hunt: Winged Soul Eaters",				-- Hunt: Winged Soul Eaters
 		--TODO: [-913] = "Tormentors of Torghast",					-- Tormentors of Torghast
-		--TODO: [-914] = "Adventures",								-- Adventures
-		--TODO: [-915] = "Anima Conductor",							-- Anima Conductor
 		[-977] = "방랑자 멜리",											-- Maelie the Wanderer
 		[-979] = "중개자 베켄 & 중개자 베노트",								-- Broker Ve'ken & Broker Ve'nott
 		-- SL Maldraxxus/Necrolord
@@ -841,8 +842,6 @@ for key,value in pairs({
 	------ ACHIEVEMENT HEADERS SECTION ------
 		--TODO: [-10071] = "Visions of N'Zoth",
 		--TODO: [-10072] = "N'Zoth Assault",
-		--TODO: [-10073] = "Horrific Vision of Orgrimmar",
-		--TODO: [-10074] = "Horrific Vision of Stormwind",
 		[-10075] = "습격: 아마셋의 진군",									-- Assault: Amathet Advance
 		[-10076] = "습격: 검은 제국",										-- Assault: The Black Empire
 		[-10077] = "습격: 부족 전쟁",										-- Assault: The Warring Clans
@@ -850,7 +849,7 @@ for key,value in pairs({
 		[-10079] = "습격: 아퀴르 출현",									-- Assault: Aqir Unearthed
 		--TODO: [-10081] = "Corrupted Area",
 		--TODO: [-10082] = "Lost Area",
-		-- Shadowlands Achievement Header
+		-- Shadowlands Achievement Headers
 			-- 9.1
 				--TODO: [-10083] = "Covenant Assaults",				-- Covenant Assaults
 			--	hopefully temp objects, these currently do not have accessible object data on wowhead

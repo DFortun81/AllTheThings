@@ -13,13 +13,14 @@ _.Zones =
 						currency(1226),	-- 75x Nethershard
 					},
 				}),
-				i(147451, {	-- Armorcrafter's Commendation
-					q(46696, {	-- Fashion History and a Philosophy of Style
-						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
-						["description"] = "You must turn in the Commendation before this quest becomes available.",
-						["isWeekly"] = true,	-- Note!! It's not necessarily repeatable since you can only do it once per cycle.  Using Weekly as the Nether Disruptor will typically come up only once a week (has a 4 day duration).
-						["sourceQuest"] = 46774,	-- The Nether Disruptor
-					}),
+				q(46804, {	-- Fashion History and a Philosophy of Style
+					["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+					["description"] = "You must turn in the Commendation before this quest becomes available.",
+					["isWeekly"] = true,	-- Note!! It's not necessarily repeatable since you can only do it once per cycle.  Using Weekly as the Nether Disruptor will typically come up only once a week (has a 4 day duration).
+					["sourceQuest"] = 46774,	-- The Nether Disruptor
+					["cost"] = {
+						{ "i", 147451, 1 },	-- Armorcrafter's Commendation
+					},
 				}),
 				q(46696, {	-- The Legend of the Four Hammers
 					["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
