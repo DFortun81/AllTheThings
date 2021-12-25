@@ -1670,7 +1670,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			-- TODO: Sort out the contents of the Stolen Presents by patch (in time, don't need it until Cata)
 			i(116762, {	-- Stolen Present
 				["timeline"] = { "added 6.0.1.18594" },
-				["lvl"] = 60,
+				["lvl"] = 50,
 				["groups"] = {
 					-- Battle Pets/Companions
 					i(54436),	-- Blue Clockwork Rocket Bot
