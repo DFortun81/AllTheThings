@@ -33,8 +33,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(188701),	-- Fire Festival Batons (Midsummer)
 		i(188699),	-- Insulated Dancing Insoles (Midsummer)
 		i(188695),	-- Summer Cranial Skillet (Midsummer)
-		i(187560),	-- Shine and Pine (Winter Veil)
-		ach(15313),	-- Rockin' Rollin' Racer
 		-- Trial of Style 9.1.5 Items added
 		i(188240),	-- Augur's Walkers
 		i(188246),	-- Bloodbathed Slippers

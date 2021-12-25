@@ -203,6 +203,9 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			ach(12850),		-- At Least You're Being Careful (2018)
 			ach(13927),		-- Crashin' Splashin' (2019)
 			ach(14931),		-- Flying Festivities (2020)
+			ach(15313, {	-- Rockin' Rollin' Racer (2021)
+				i(187560),	-- Rockin' Rollin' Racer Pack
+			}),
 			ach(15181, {	-- Rock n' Roll (2021)
 				["provider"] = { "i", 187422 },	-- Rockin' Rollin' Racer Customizer 19.9.3
 				["timeline"] = { "added 9.1.5.40871" },
@@ -715,7 +718,9 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["timeline"] = { "added 9.1.5.40871" },	-- TODO: Add Removed Timestamp in 2022.
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["groups"] = {
-					-- TODO: Determine what gift you get from here.
+					i(187422, {	-- Rockin' Rollin' Racer Customizer 19.9.3
+						["timeline"] = { "added 9.1.5.40871" },
+					}),
 					i(128768, {	-- Candy Cane
 						["timeline"] = { "added 6.2.2.20395" },
 					}),
@@ -1023,11 +1028,6 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["timeline"] = { "added 9.1.5.40871" },	-- TODO: Add removed.
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["lvl"] = 10,
-				["groups"] = {
-					i(187422, {	-- Rockin' Rollin' Racer Customizer 19.9.3
-						["timeline"] = { "added 9.1.5.40871" },
-					}),
-				},
 			}),
 			q(7022, {	-- Greatfather Winter is Here! (Alliance)
 				["qg"] = 13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
