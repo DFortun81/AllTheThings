@@ -545,7 +545,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					{ "i", 21270 },	-- Gently Shaken Gift
 				},
 				["description"] = "Given prior to 2015 exclusively to non-spell casters.",
-				["classes"] = exclude({ PRIEST, MAGE, WARLOCK, SHAMAN }, ALL_CLASSES),
+				["classes"] = exclude({ PRIEST, MAGE, WARLOCK, SHAMAN, DRUID }, ALL_CLASSES),
 				["timeline"] = { "removed 6.2.3.20601" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["isYearly"] = true,
@@ -575,7 +575,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					{ "i", 21271 },	-- Gently Shaken Gift
 				},
 				["description"] = "Given prior to 2015 exclusively to spell casters.",
-				["classes"] = { PRIEST, MAGE, WARLOCK, SHAMAN },
+				["classes"] = { PRIEST, MAGE, WARLOCK, SHAMAN, DRUID },
 				["timeline"] = { "removed 6.2.3.20601" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["isYearly"] = true,
