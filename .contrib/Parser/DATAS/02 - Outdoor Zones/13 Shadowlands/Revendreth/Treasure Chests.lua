@@ -174,6 +174,7 @@ _.Zones =
 					["cost"] = { { "i", 172957, 1 } },	-- 1x Atonement Crypt Key
 					["g"] = {
 						i(180682),	-- Noble's Wardrobe
+						i(182723),	-- Mail Courier's Shoulderguards
 					},
 				}),
 				o(349796, {	-- Gilded Plum Chest
@@ -460,6 +461,7 @@ _.Zones =
 					["coord"] = { 42.5, 50.3, REVENDRETH },
 					["g"] = {
 						i(183826),	-- Big Floppy Hat
+						i(182723),	-- Mail Courier's Shoulderguards
 					},
 				}),
 				o(351542, {	-- Secret Treasure
@@ -482,6 +484,7 @@ _.Zones =
 					["crs"] = { 169865 },	-- Treasure Guardian <House Grinchin>
 					["g"] = {
 						i(180401),	-- Noble Justice
+						i(182723),	-- Mail Courier's Shoulderguards
 					},
 				}),
 				o(351544, {	-- Secret Treasure
@@ -491,6 +494,7 @@ _.Zones =
 					["coord"] = { 55.3, 35.9, REVENDRETH },
 					["g"] = {
 						i(180401),	-- Noble Justice
+						i(182723),	-- Mail Courier's Shoulderguards
 					},
 				}),
 				o(351545, {	-- Secret Treasure
