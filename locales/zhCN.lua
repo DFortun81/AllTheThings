@@ -262,11 +262,11 @@ local L = app.L;
 			L._BETA_LABEL = " |cff4AA7FF[测试]|R";
 
 		L.GENERAL_LABEL = "通用";
-		-- L.MERCH_BUTTON_LABEL = "Merch";
+		L.MERCH_BUTTON_LABEL = "商店";
 		L.TWITCH_BUTTON_TOOLTIP = "点击按钮复制 URL 到我的 Twitch 频道。\n\n可以在我直播的时候问问题，我会尽力回答！";
 		L.DISCORD_BUTTON_TOOLTIP = "点击按钮复制 URL 到All The Things Discord 服务器。\n\n可以与其他收藏家分享进步/挫折！";
 		L.PATREON_BUTTON_TOOLTIP = "点击按钮复制 URL 以进入 All The Things Patreon 页面。\n\n在这里您可以看到如何在经济上支持插件！";
-		L.MERCH_BUTTON_TOOLTIP = "点击按钮复制 URL 以进入 All The Things Merch 商店。\n\n在这里您可以在经济上支持插件并获得一些很酷的商品作为回报！ ";
+		L.MERCH_BUTTON_TOOLTIP = "点击按钮复制 URL 以进入 All The Things 商店。\n\n在这里您可以在经济上支持插件并获得一些很酷的商品作为回报！ ";
 		L.MODE_EXPLAIN_LABEL = "|cffFFFFFF您收集的内容汇总在这里。启用所有 |cffADD8E6彩色选项|cffFFFFFF 解锁 |cffADD8E6疯狂模式|cffFFFFFF。";
 		L.DEBUG_MODE = "|Cffff0000调试模式|r（显示所有）";
 		L.DEBUG_MODE_TOOLTIP = "就字面意思…游戏中的所有事情。时间。点滴。是的，所有的一切。即使是不可收藏的事物，如袋子、消耗品、试剂等也会出现在列表中。（甚至你自己！不，是真的。看。）\n\n这仅用于调试目的。不用于完成追踪。\n\n此模式绕过所有过滤，包括不可获得的。";
