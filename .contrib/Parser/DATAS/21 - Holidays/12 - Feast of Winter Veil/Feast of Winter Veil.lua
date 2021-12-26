@@ -1721,6 +1721,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					}),
 					i(151344, {	-- Hearthstation [H]
 						["races"] = HORDE_ONLY,
+					}),
 					-- Illusions
 					i(128649),	-- Illusion: Winter's Grasp
 					i(118572),	-- Illusion: Flames of Ragnaros
