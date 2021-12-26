@@ -1523,6 +1523,7 @@ for key,value in pairs({
 	[230402] = "행운 주화",	-- Lucky Coin
 	[230424] = "눈 덮인 금고",	-- Snow-Covered Strongbox
 	[230425] = "갉아먹은 뼈다귀",	-- Gnawed Bone
+	[230428] = "이글거리는 순철 광맥",	-- Smoldering True Iron Deposit
 	[230611] = "창백한 오크 전리품 주머니",	-- Pale Loot Sack
 	[230643] = "테로발톱 둥지",	-- Teroclaw Nest
 	[230664] = "토르바스의 수정검",	-- The Crystal Blade of Torvath
@@ -1671,6 +1672,7 @@ for key,value in pairs({
 	[234455] = "추방자의 유물",	-- Relics of the Outcasts
 	[234456] = "으스러진 손 금고",	-- Shattered Hand Lockbox
 	[234458] = "으스러진 손 보관함",	-- Shattered Hand Cache
+	[234461] = "산성송곳니 독",	-- Toxicfang Venom
 	[234471] = "살포로봇 5000 XT",	-- Spray-O-Matic 5000 XT
 	[234472] = "선원 자주크의 90% 럼주",	-- Sailor Zazzuk's 180-Proof Rum
 	[234473] = "대장정의 지원품",	-- Campaign Contributions
@@ -1768,6 +1770,7 @@ for key,value in pairs({
 	[237022] = "명령 게시판",	-- Command Board
 	[237511] = "이상한 포자",	-- Strange Spore
 	[237821] = "블레이드퓨리의 명령서",	-- Bladefury's Orders
+	[237946] = "영혼 궤짝",	-- Spirit Coffer
 	[239120] = "오쿠나 롱터스크의 가방",	-- Okuna Longtusk's Pack
 	[239143] = "따뜻한 우유 잔",	-- Glass of Warm Milk
 	--TODO: [239171] = "Glass of Warm Milk",	-- Glass of Warm Milk
@@ -2333,6 +2336,7 @@ for key,value in pairs({
 	[282478] = "빈 상자",	-- Empty Crate
 	[282498] = "사막 플루트",	-- Desert Flute
 	[282666] = "아구수의 단지",	-- Urn of Agussu
+	[282721] = "보물 상자",	-- Treasure Chest
 	[284426] = "묻힌 채광 기계",	-- Buried Mining Machine
 	[284448] = "숨겨진 학자의 상자",	-- Hidden Scholar's Chest
 	[284454] = "하얀 상어의 선물",	-- Da White Shark's Bounty
@@ -2462,6 +2466,7 @@ for key,value in pairs({
 	--TODO: [296916] = "Drust Stele: The Ritual",	-- Drust Stele: The Ritual
 	[296917] = "드러스트 석비: 나무",	-- Drust Stele: The Tree
 	[296918] = "드러스트 석비: 숨을 불어넣은 돌",	-- Drust Stele: Breath Into Stone
+	[297069] = "옷장",	-- Dresser
 	[297492] = "게시판",	-- Bulletin Board
 	[297627] = "드러스트 석비: 희생",	-- Drust Stele: Sacrifice
 	[297628] = "드러스트 석비: 피조물",	-- Drust Stele: Constructs

@@ -1522,6 +1522,7 @@ for key, value in pairs({
 	--TODO: [230402] = "Lucky Coin",	-- Lucky Coin
 	--TODO: [230424] = "Snow-Covered Strongbox",	-- Snow-Covered Strongbox
 	--TODO: [230425] = "Gnawed Bone",	-- Gnawed Bone
+	[230428] = "阴燃的真铁矿脉",	-- Smoldering True Iron Deposit
 	[230611] = "一袋白鬼战利品",	-- Pale Loot Sack
 	[230643] = "恐爪鸟巢穴",	-- Teroclaw Nest
 	--TODO: [230664] = "The Crystal Blade of Torvath",	-- The Crystal Blade of Torvath
@@ -1670,6 +1671,7 @@ for key, value in pairs({
 	--TODO: [234455] = "Relics of the Outcasts",	-- Relics of the Outcasts
 	--TODO: [234456] = "Shattered Hand Lockbox",	-- Shattered Hand Lockbox
 	--TODO: [234458] = "Shattered Hand Cache",	-- Shattered Hand Cache
+	--TODO: [234461] = "Toxicfang Venom",	-- Toxicfang Venom
 	--TODO: [234471] = "Spray-O-Matic 5000 XT",	-- Spray-O-Matic 5000 XT
 	[234472] = "水手扎祖克的高纯度朗姆酒",	-- Sailor Zazzuk's 180-Proof Rum	--TODO: This was manually translated
 	--TODO: [234473] = "Campaign Contributions",	-- Campaign Contributions
@@ -1767,6 +1769,7 @@ for key, value in pairs({
 	[237022] = "指令板",	-- Command Board
 	[237511] = "奇异孢子",	-- Strange Spore
 	[237821] = "刃怒的指令",	-- Bladefury's Orders
+	--TODO: [237946] = "Spirit Coffer",	-- Spirit Coffer
 	[239120] = "欧库纳·长牙的包裹",	-- Okuna Longtusk's Pack
 	[239143] = "一杯热牛奶",	-- Glass of Warm Milk
 	[239171] = "一杯热牛奶",	-- Glass of Warm Milk
@@ -2332,6 +2335,7 @@ for key, value in pairs({
 	[282478] = "空箱子",	-- Empty Crate
 	[282498] = "沙漠之笛",	-- Desert Flute
 	--TODO: [282666] = "Urn of Agussu",	-- Urn of Agussu
+	[282721] = "宝箱",	-- Treasure Chest
 	[284426] = "埋藏的采矿机",	-- Buried Mining Machine
 	[284448] = "隐蔽的学者宝箱",	-- Hidden Scholar's Chest
 	[284454] = "大白鲨的财宝",	-- Da White Shark's Bounty
@@ -2461,6 +2465,7 @@ for key, value in pairs({
 	[296916] = "德鲁斯特石碑：仪式",	-- Drust Stele: The Ritual
 	[296917] = "德鲁斯特石碑：巨树",	-- Drust Stele: The Tree
 	[296918] = "德鲁斯特石碑：岩石的气息",	-- Drust Stele: Breath Into Stone
+	[297069] = "衣柜",	-- Dresser
 	[297492] = "布告牌",	-- Bulletin Board
 	[297627] = "德鲁斯特石碑：祭品",	-- Drust Stele: Sacrifice
 	[297628] = "德鲁斯特石碑：构造体",	-- Drust Stele: Constructs
