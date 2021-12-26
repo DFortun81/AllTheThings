@@ -11541,7 +11541,14 @@ local fields = {
 		return select(1, GetSpellLink(t.spellID));
 	end,
 	["collectible"] = function(t)
-		return app.CollectibleRecipes;
+		if app.CollectibleRecipes then
+			if app.AccountWideRecipes then
+				return true;
+			end
+			if t.requireSkill and (app.GetTradeSkillCache())[t.requireSkill] then
+				return true;
+			end
+		end
 	end,
 	["collected"] = function(t)
 		if app.CurrentCharacter.Spells[t.spellID] then return 1; end
