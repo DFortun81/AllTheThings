@@ -204,7 +204,11 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			ach(13927),		-- Crashin' Splashin' (2019)
 			ach(14931),		-- Flying Festivities (2020)
 			ach(15313, {	-- Rockin' Rollin' Racer (2021)
-				i(187560),	-- Rockin' Rollin' Racer Pack
+				["providers"] = {
+					{ "i", 187422 },	-- Rockin' Rollin' Racer Customizer 19.9.3
+					{ "i", 187560 },	-- Rockin' Rollin' Racer Pack
+				},
+				["timeline"] = { "added 9.1.5.40871" },
 			}),
 			ach(15181, {	-- Rock n' Roll (2021)
 				["provider"] = { "i", 187422 },	-- Rockin' Rollin' Racer Customizer 19.9.3
@@ -1028,6 +1032,11 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["timeline"] = { "added 9.1.5.40871" },	-- TODO: Add removed.
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["lvl"] = 10,
+				["groups"] = {
+					i(187560, {	-- Rockin' Rollin' Racer Pack
+						["timeline"] = { "added 9.1.5.40871" },
+					}),
+				},
 			}),
 			q(7022, {	-- Greatfather Winter is Here! (Alliance)
 				["qg"] = 13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
@@ -1972,6 +1981,9 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 root("HiddenQuestTriggers", {
 	holiday(235485, {	-- Winter's Veil
 		q(45766, {["isYearly"]=true}),	-- finding Greatfather Winter in Highmountain (npc ID 104710)
+		q(64628, {	-- Triggered when learning the additional things for the Rockin' Rollin' Toy.
+			["timeline"] = { "added 9.1.5.40871" },
+		}),
 	}),
 });
 
