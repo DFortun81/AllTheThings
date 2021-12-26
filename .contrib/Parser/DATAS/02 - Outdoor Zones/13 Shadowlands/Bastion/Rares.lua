@@ -204,6 +204,7 @@ _.Zones =
 						i(183609),	-- Re-Powered Golliath Fists
 						i(183607),	-- Uncertain Aspirant's Spear
 						i(183610),	-- Warrior Poet's Poniard
+						i(183605),	-- Devourer Wrought Warglaive
 					},
 				}),
 				n(163460, { -- Dionae
