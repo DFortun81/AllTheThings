@@ -88,6 +88,9 @@ _.ExpansionFeatures =
 						i(188650, {	-- Grimoire of Knowledge
 							["timeline"] = { "added 9.1.5" },
 						}),
+						i(188651, {	-- Grimoire of Knowledge (Drops from the early Campaign Missions) [Night Fae as noticed]
+							["timeline"] = { "added 9.1.5" },
+						}),
 						-- Mounts
 						i(183617),	-- Chittering Animite
 						i(183052),	-- Darkwarren Hardshell
