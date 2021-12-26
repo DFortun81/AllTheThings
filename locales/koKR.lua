@@ -1936,7 +1936,7 @@ for key,value in pairs({
 	[243698] = "반짝이는 보물 상자",	-- Glimmering Treasure Chest
 	[243773] = "보물 상자",	-- Treasure Chest
 	[243798] = "야한 보석 상자",	-- A Steamy Jewelry Box
-	--TODO: [243899] = "Broken Ley Flame Burner",	-- Broken Ley Flame Burner
+	[243899] = "부서진 지맥불길 가열기",	-- Broken Ley Flame Burner
 	[243911] = "눈더미",	-- Snow Mound
 	--TODO: [244447] = "White Murloc Egg",	-- White Murloc Egg
 	[244453] = "쿨렌의 정찰 보고서",	-- Cullen's Scouting Report
