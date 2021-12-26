@@ -1716,6 +1716,11 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					i(45057),	-- Wind-Up Train Wrecker
 					i(188680),	-- Winter Veil Chorus Book
 					i(116691),	-- Zhevra Lounge Cushion
+					i(151343, {	-- Hearthstation [A]
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(151344, {	-- Hearthstation [H]
+						["races"] = HORDE_ONLY,
 					-- Illusions
 					i(128649),	-- Illusion: Winter's Grasp
 					i(118572),	-- Illusion: Flames of Ragnaros
