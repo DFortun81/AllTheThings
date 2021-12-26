@@ -1287,6 +1287,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = 30,
+				["timeline"] = { "removed 4.0.4" },	-- No longer in Retail, and seems to have disappeared after 4.0.3 based on Wowhead evidence
 			}),
 			q(6963, {	-- Stolen Winter Veil Treats (Horde)
 				["qg"] = 13418,	-- Kaymard Copperpinch <Smokywood Pastures>
@@ -1298,6 +1299,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = 30,
+				["timeline"] = { "removed 4.0.4" },	-- No longer in Retail, and seems to have disappeared after 4.0.3 based on Wowhead evidence
 			}),
 			q(7063, {	-- The Feast of Winter Veil (Alliance)
 				["providers"] = {
@@ -1696,6 +1698,9 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					i(139337),	-- Disposable Winter Veil Suits
 					i(128636),	-- Endothermic Blaster
 					i(116692),	-- Fuzzy Green Lounge Cushion
+					i(162973, {	-- Greatfather Winter's Hearthstone
+						["timeline"] = { "added 8.1" },	-- 8.0.1 it was added in the Gift, so will say 8.1 for this source
+					}),
 					i(46709),	-- MiniZep Controller
 					i(116689),	-- Pineapple Lounge Cushion
 					i(128776),	-- Red Wooden Sled
