@@ -260,7 +260,9 @@ _.Zones =
 					},
 				}),
 				o(337237, {	-- Lost Vault
-					-- TODO: ["coords"] = {},
+					["description"] = "Opening a Crypt Door with the Atonement Crypt Key has a chance to reveal this treasure.",
+					["sourceQuests"] = { 57928 },	-- Atonement Crypt Key
+					["cost"] = { { "i", 172957, 1 } },	-- 1x Atonement Crypt Key
 					["g"] = {
 						i(180400),	-- Inquisitions Final Judgment
 						i(180395),	-- Nathrezim Crusader's Hauberk
