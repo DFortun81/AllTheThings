@@ -1522,6 +1522,7 @@ for key,value in pairs({
 	[230402] = "Pièce porte-bonheur",	-- Lucky Coin
 	[230424] = "Coffre renforcé couvert de neige",	-- Snow-Covered Strongbox
 	[230425] = "Os rongé",	-- Gnawed Bone
+	[230428] = "Gisement fumant de vérifer",	-- Smoldering True Iron Deposit
 	[230611] = "Sac de butin de blafard",	-- Pale Loot Sack
 	[230643] = "Nid de terogriffe",	-- Teroclaw Nest
 	[230664] = "La lame de cristal de Torvath",	-- The Crystal Blade of Torvath
@@ -1670,6 +1671,7 @@ for key,value in pairs({
 	[234455] = "Reliques des parias",	-- Relics of the Outcasts
 	[234456] = "Coffret de la Main-Brisée",	-- Shattered Hand Lockbox
 	[234458] = "Cache de la Main-Brisée",	-- Shattered Hand Cache
+	[234461] = "Venin de croc-toxique",	-- Toxicfang Venom
 	[234471] = "Auto-vaporisateur 5000 XT",	-- Spray-O-Matic 5000 XT
 	[234472] = "Rhum à 90 degrés du marin Zazzuk",	-- Sailor Zazzuk's 180-Proof Rum
 	[234473] = "Cadeau de campagne électorale",	-- Campaign Contributions
@@ -1767,6 +1769,7 @@ for key,value in pairs({
 	[237022] = "Tableau de commandement",	-- Command Board
 	[237511] = "Spore étrange",	-- Strange Spore
 	[237821] = "Ordres de Lames-Furieuses",	-- Bladefury's Orders
+	[237946] = "Coffre spirituel",	-- Spirit Coffer
 	[239120] = "Sac d’Okuna Longue-Défense",	-- Okuna Longtusk's Pack
 	[239143] = "Verre de lait chaud",	-- Glass of Warm Milk
 	[239171] = "Verre de lait chaud",	-- Glass of Warm Milk
@@ -2332,6 +2335,7 @@ for key,value in pairs({
 	[282478] = "Caisse vide",	-- Empty Crate
 	[282498] = "Flûte du désert",	-- Desert Flute
 	[282666] = "Urne d’Agussu",	-- Urn of Agussu
+	[282721] = "Coffre au trésor",	-- Treasure Chest
 	[284426] = "Engin d’extraction enfoui",	-- Buried Mining Machine
 	[284448] = "Coffre d’érudit caché",	-- Hidden Scholar's Chest
 	[284454] = "Prime de la Squale",	-- Da White Shark's Bounty
@@ -2461,6 +2465,7 @@ for key,value in pairs({
 	[296916] = "Stèle drust : le rituel",	-- Drust Stele: The Ritual
 	[296917] = "Stèle drust : l’arbre",	-- Drust Stele: The Tree
 	[296918] = "Stèle drust : souffle de pierre",	-- Drust Stele: Breath Into Stone
+	[297069] = "Penderie",	-- Dresser
 	[297492] = "Panneau d’affichage",	-- Bulletin Board
 	[297627] = "Stèle drust : sacrifice",	-- Drust Stele: Sacrifice
 	[297628] = "Stèle drust : assemblages",	-- Drust Stele: Constructs

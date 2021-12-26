@@ -1524,6 +1524,7 @@ for key,value in pairs({
 	[230402] = "Glücksmünze",	-- Lucky Coin
 	[230424] = "Schneebedeckte Schließkassette",	-- Snow-Covered Strongbox
 	[230425] = "Abgenagter Knochen",	-- Gnawed Bone
+	[230428] = "Qualmendes Echteisenvorkommen",	-- Smoldering True Iron Deposit
 	[230611] = "Beutesack der Fahlen",	-- Pale Loot Sack
 	[230643] = "Terokrallennest",	-- Teroclaw Nest
 	[230664] = "Torvaths Kristallklinge",	-- The Crystal Blade of Torvath
@@ -1672,6 +1673,7 @@ for key,value in pairs({
 	[234455] = "Relikte der Ausgestoßenen",	-- Relics of the Outcasts
 	[234456] = "Kassette der Zerschmetterten Hand",	-- Shattered Hand Lockbox
 	[234458] = "Truhe der Zerschmetterten Hand",	-- Shattered Hand Cache
+	[234461] = "Giftzahntoxin",	-- Toxicfang Venom
 	[234471] = "Spray-o-Mat 5000 XT",	-- Spray-O-Matic 5000 XT
 	[234472] = "Seemann Zazzuks 180-prozentiger Rum",	-- Sailor Zazzuk's 180-Proof Rum
 	[234473] = "Kampagnenspenden",	-- Campaign Contributions
@@ -1769,6 +1771,7 @@ for key,value in pairs({
 	[237022] = "Kommandotafel",	-- Command Board
 	[237511] = "Seltsame Spore",	-- Strange Spore
 	[237821] = "Klingenwuts Befehle",	-- Bladefury's Orders
+	[237946] = "Geistertruhe",	-- Spirit Coffer
 	[239120] = "Bündel von Okuna Langhauer",	-- Okuna Longtusk's Pack
 	[239143] = "Glas warme Milch",	-- Glass of Warm Milk
 	[239171] = "Glas warme Milch",	-- Glass of Warm Milk
@@ -2334,6 +2337,7 @@ for key,value in pairs({
 	[282478] = "Leere Kiste",	-- Empty Crate
 	[282498] = "Wüstenflöte",	-- Desert Flute
 	[282666] = "Urne von Agussu",	-- Urn of Agussu
+	[282721] = "Schatztruhe",	-- Treasure Chest
 	[284426] = "Vergrabene Abbaumaschine",	-- Buried Mining Machine
 	[284448] = "Versteckte Truhe eines Gelehrten",	-- Hidden Scholar's Chest
 	[284454] = "Beute der Haibraut",	-- Da White Shark's Bounty
@@ -2463,6 +2467,7 @@ for key,value in pairs({
 	[296916] = "Druststele: Das Ritual",	-- Drust Stele: The Ritual
 	[296917] = "Druststele: Der Baum",	-- Drust Stele: The Tree
 	[296918] = "Druststele: Atem zu Stein",	-- Drust Stele: Breath Into Stone
+	[297069] = "Kommode",	-- Dresser
 	[297492] = "Anschlagbrett",	-- Bulletin Board
 	[297627] = "Druststele: Opfer",	-- Drust Stele: Sacrifice
 	[297628] = "Druststele: Konstrukte",	-- Drust Stele: Constructs

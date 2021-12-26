@@ -1509,6 +1509,7 @@ for key,value in pairs({
 	[230402] = "Счастливая монетка",	-- Lucky Coin
 	[230424] = "Покрытый снегом сейф",	-- Snow-Covered Strongbox
 	[230425] = "Изгрызенная кость",	-- Gnawed Bone
+	[230428] = "Дымящиеся залежи истинного железа",	-- Smoldering True Iron Deposit
 	[230611] = "Мешок с добычей бледнокожих",	-- Pale Loot Sack
 	[230643] = "Гнездо страхоклюва",	-- Teroclaw Nest
 	[230664] = "Хрустальный клинок Торвата",	-- The Crystal Blade of Torvath
@@ -1657,6 +1658,7 @@ for key,value in pairs({
 	[234455] = "Сокровища изгоев",	-- Relics of the Outcasts
 	[234456] = "Ларец клана Изувеченной Длани",	-- Shattered Hand Lockbox
 	[234458] = "Тайник клана Изувеченной Длани",	-- Shattered Hand Cache
+	[234461] = "Яд ядозубого рилака",	-- Toxicfang Venom
 	[234471] = "\"Распылитель 5000 XT\"",	-- Spray-O-Matic 5000 XT
 	[234472] = "Питье моряка Заззука",	-- Sailor Zazzuk's 180-Proof Rum
 	[234473] = "Взносы кампании",	-- Campaign Contributions
@@ -1754,6 +1756,7 @@ for key,value in pairs({
 	[237022] = "Доска приказов",	-- Command Board
 	[237511] = "Странная спора",	-- Strange Spore
 	[237821] = "Приказы Ярости Клинка",	-- Bladefury's Orders
+	[237946] = "Сундук духа",	-- Spirit Coffer
 	[239120] = "Рюкзак Окуны Большого Бивня",	-- Okuna Longtusk's Pack
 	[239143] = "Стакан теплого молока",	-- Glass of Warm Milk
 	[239171] = "Стакан теплого молока",	-- Glass of Warm Milk
@@ -2319,6 +2322,7 @@ for key,value in pairs({
 	[282478] = "Пустой ящик",	-- Empty Crate
 	[282498] = "Пустынная флейта",	-- Desert Flute
 	[282666] = "Урна Агассу",	-- Urn of Agussu
+	[282721] = "Сундук с сокровищами",	-- Treasure Chest
 	[284426] = "Закопанная буровая машина",	-- Buried Mining Machine
 	[284448] = "Спрятанный сундук ученого",	-- Hidden Scholar's Chest
 	[284454] = "Сокровище Белой Акулы",	-- Da White Shark's Bounty
@@ -2448,6 +2452,7 @@ for key,value in pairs({
 	[296916] = "Друстская стела: \"Ритуал\"",	-- Drust Stele: The Ritual
 	[296917] = "Друстская стела: \"Древо\"",	-- Drust Stele: The Tree
 	[296918] = "Друстская стела: \"Окаменение\"",	-- Drust Stele: Breath Into Stone
+	[297069] = "Гардероб",	-- Dresser
 	[297492] = "Доска объявлений",	-- Bulletin Board
 	[297627] = "Друстская стела: \"Жертва\"",	-- Drust Stele: Sacrifice
 	[297628] = "Друстская стела: \"Создания\"",	-- Drust Stele: Constructs

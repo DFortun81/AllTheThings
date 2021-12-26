@@ -1523,6 +1523,7 @@ for key,value in pairs({
 	[230402] = "Moeda da Sorte",	-- Lucky Coin
 	[230424] = "Caixa-forte Coberta de Neve",	-- Snow-Covered Strongbox
 	[230425] = "Osso Roído",	-- Gnawed Bone
+	[230428] = "Depósito de Ferro Verdadeiro Fumegante",	-- Smoldering True Iron Deposit
 	[230611] = "Saco de Tesouro Desbotado",	-- Pale Loot Sack
 	[230643] = "Ninho de Terogarra",	-- Teroclaw Nest
 	[230664] = "A Lâmina de Cristal de Torvath",	-- The Crystal Blade of Torvath
@@ -1671,6 +1672,7 @@ for key,value in pairs({
 	[234455] = "Relíquias dos Proscritos",	-- Relics of the Outcasts
 	[234456] = "Baú da Mão Despedaçada",	-- Shattered Hand Lockbox
 	[234458] = "Esconderijo da Mão Despedaçada",	-- Shattered Hand Cache
+	[234461] = "Veneno de Presanóxia",	-- Toxicfang Venom
 	[234471] = "Auto-Spray 5000 XT",	-- Spray-O-Matic 5000 XT
 	[234472] = "Rum 100% Etanólico do Marinheiro Zazzuk",	-- Sailor Zazzuk's 180-Proof Rum
 	[234473] = "Contribuições da Campanha",	-- Campaign Contributions
@@ -1768,6 +1770,7 @@ for key,value in pairs({
 	[237022] = "Quadro de Comando",	-- Command Board
 	[237511] = "Esporo Estranho",	-- Strange Spore
 	[237821] = "Ordens da Furiagume",	-- Bladefury's Orders
+	[237946] = "Cofre Espiritual",	-- Spirit Coffer
 	[239120] = "Pacote de Okuna Presalonga",	-- Okuna Longtusk's Pack
 	[239143] = "Copo de Leite Morno",	-- Glass of Warm Milk
 	[239171] = "Copo de Leite Morno",	-- Glass of Warm Milk
@@ -2333,6 +2336,7 @@ for key,value in pairs({
 	[282478] = "Caixote Vazio",	-- Empty Crate
 	[282498] = "Flauta do Deserto",	-- Desert Flute
 	[282666] = "Urna de Agussu",	-- Urn of Agussu
+	[282721] = "Baú do Tesouro",	-- Treasure Chest
 	[284426] = "Máquina de Mineração Enterrada",	-- Buried Mining Machine
 	[284448] = "Baú Escondido do Erudito",	-- Hidden Scholar's Chest
 	[284454] = "Recompensa do Tubarão Branco",	-- Da White Shark's Bounty
@@ -2462,6 +2466,7 @@ for key,value in pairs({
 	[296916] = "Estela Drusta: O Ritual",	-- Drust Stele: The Ritual
 	[296917] = "Estela Drusta: A Árvore",	-- Drust Stele: The Tree
 	[296918] = "Estela Drusta: Sopro em Pedra",	-- Drust Stele: Breath Into Stone
+	[297069] = "Cômoda",	-- Dresser
 	[297492] = "Quadro de Avisos",	-- Bulletin Board
 	[297627] = "Estela Drusta: Sacrifício",	-- Drust Stele: Sacrifice
 	[297628] = "Estela Drusta: Constructos",	-- Drust Stele: Constructs
