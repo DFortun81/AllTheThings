@@ -13303,6 +13303,11 @@ function app:CreateMiniListForGroup(group)
 		popout = app:GetWindow(suffix);
 		-- custom Update method for the popout so we don't have to force refresh
 		popout.Update = function(self, force, got)
+			-- mark the popout to expire after 5 min from now if it is visible
+			if self:IsVisible() then
+				self.ExpireTime = time() + 300;
+				-- print(popout.Suffix,"set to expire",time() + 10)
+			end
 			self:BaseUpdate(force or got, got)
 		end
 		-- popping out something without a source, try to determine it on-the-fly using same logic as harvester
@@ -15202,6 +15207,13 @@ local function UpdateWindow(self, force, got)
 
 			self:Refresh();
 			return true;
+		else
+			local expireTime = self.ExpireTime;
+			-- print("check ExpireTime",self.Suffix,expireTime)
+			if expireTime and expireTime > 0 and expireTime < time() then
+				-- print("window is expired, removing from window cache")
+				app.Windows[self.Suffix] = nil;
+			end
 		end
 	end
 end
