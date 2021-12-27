@@ -3599,7 +3599,7 @@ _.HiddenQuestTriggers = {
 		q(37682),	-- Short-Supply Reward
 		q(37683),	-- Short-Supply Reward
 		q(37684),	-- Short-Supply Reward
-		q(39376),	-- Short-Supply Reward
+		q(39376),	-- Short-Supply Reward Tanaan 50.4, 34.5
 		q(39377),	-- Short-Supply Reward
 		q(39378),	-- Short-Supply Reward
 		q(39398),	-- Short-Supply Reward

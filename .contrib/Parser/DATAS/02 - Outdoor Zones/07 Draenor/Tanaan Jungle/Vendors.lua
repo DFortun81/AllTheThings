@@ -57,42 +57,55 @@ _.Zones =
 					["g"] = {
 						i(124562, {	-- Baleful Armament
 							["cost"] = { { "c", 823, 10000 }, },	-- 10,000x Apexis Crystal
+							["sym"] = { { "fill" } },
 						}),
 						i(124550, {	-- Baleful Bracers
 							["cost"] = { { "c", 823, 5000 }, },		-- 5,000x Apexis Crystal
+							["sym"] = { { "fill" } },
 						}),
 						i(124559, {	-- Baleful Choker
 							["cost"] = { { "c", 823, 5000 }, },		-- 5,000x Apexis Crystal
+							["sym"] = { { "fill" } },
 						}),
 						i(124560, {	-- Baleful Cloak
 							["cost"] = { { "c", 823, 5000 }, },		-- 5,000x Apexis Crystal
+							["sym"] = { { "fill" } },
 						}),
 						i(124553, {	-- Baleful Gauntlets
 							["cost"] = { { "c", 823, 5000 }, },		-- 5,000x Apexis Crystal
+							["sym"] = { { "fill" } },
 						}),
 						i(124557, {	-- Baleful Girdle
 							["cost"] = { { "c", 823, 5000 }, },		-- 5,000x Apexis Crystal
+							["sym"] = { { "fill" } },
 						}),
 						i(124554, {	-- Baleful Hood
 							["cost"] = { { "c", 823, 5000 }, },		-- 5,000x Apexis Crystal
+							["sym"] = { { "fill" } },
 						}),
 						i(124555, {	-- Baleful Leggings
 							["cost"] = { { "c", 823, 5000 }, },		-- 5,000x Apexis Crystal
+							["sym"] = { { "fill" } },
 						}),
 						i(124558, {	-- Baleful Ring
 							["cost"] = { { "c", 823, 5000 }, },		-- 5,000x Apexis Crystal
+							["sym"] = { { "fill" } },
 						}),
 						i(124556, {	-- Baleful Spaulders
 							["cost"] = { { "c", 823, 5000 }, },		-- 5,000x Apexis Crystal
+							["sym"] = { { "fill" } },
 						}),
 						i(124552, {	-- Baleful Treads
 							["cost"] = { { "c", 823, 5000 }, },		-- 5,000x Apexis Crystal
+							["sym"] = { { "fill" } },
 						}),
 						i(124561, {	-- Baleful Trinket
 							["cost"] = { { "c", 823, 5000 }, },		-- 5,000x Apexis Crystal
+							["sym"] = { { "fill" } },
 						}),
 						i(124551, {	-- Baleful Tunic
 							["cost"] = { { "c", 823, 5000 }, },		-- 5,000x Apexis Crystal
+							["sym"] = { { "fill" } },
 						}),
 						i(128225, {	-- Empowered Apexis Fragment
 							["cost"] = { { "c", 823, 20000 }, },	-- 20,000x Apexis Crystal
