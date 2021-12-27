@@ -177,8 +177,7 @@ root("WorldEvents", m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Brawlg
 					i(127773, {	-- Gemcutter Module: Mastery
 						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 						["requireSkill"] = JEWELCRAFTING,
-						["spellID"] = 187636,
-						["coord"] = { 25.8, 39.7, TANAAN_JUNGLE },
+						["spellID"] = 0,
 					}),
 					i(98080),	-- Gorgeous Blouse
 					i(98091),	-- Last Season's Shirt

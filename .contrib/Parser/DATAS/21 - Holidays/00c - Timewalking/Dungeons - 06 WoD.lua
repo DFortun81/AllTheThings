@@ -558,8 +558,7 @@ root("Holidays", d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
 					i(127772, {	-- Gemcutter Module: Haste
 						["requireSkill"] = JEWELCRAFTING,
 						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
-						["spellID"] = 187635,
-						["coord"] = { 25.8, 39.7, TANAAN_JUNGLE },
+						["spellID"] = 0,
 					}),
 					i(110033),	-- Arcanic of the High Sage
 					i(110034),	-- Viryx's Indomitable Bulwark
