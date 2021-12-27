@@ -21480,7 +21480,7 @@ app.events.PLAYER_ENTERING_WORLD = function(...)
 	-- refresh any custom collects for this character
 	app.RefreshCustomCollectibility();
 	-- send a location trigger now that the character is 'in the world'
-	DelayedCallback(app.LocationTrigger, 3);
+	-- DelayedCallback(app.LocationTrigger, 3); -- maybe not necessary?
 end
 app.events.ADDON_LOADED = function(addonName)
 	if addonName == "Blizzard_AuctionHouseUI" then
