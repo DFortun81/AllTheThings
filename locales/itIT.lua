@@ -1521,6 +1521,7 @@ for key,value in pairs({
 	[230402] = "Moneta Fortunata",	-- Lucky Coin
 	[230424] = "Forziere Coperto di Neve",	-- Snow-Covered Strongbox
 	[230425] = "Osso Spolpato",	-- Gnawed Bone
+	[230428] = "Deposito Infuocato di Puroferro",	-- Smoldering True Iron Deposit
 	[230611] = "Sacco del Bottino dei Pallidi",	-- Pale Loot Sack
 	[230643] = "Nido di Grinfiafurente",	-- Teroclaw Nest
 	[230664] = "Lama di Cristallo di Torvath",	-- The Crystal Blade of Torvath
@@ -1669,6 +1670,7 @@ for key,value in pairs({
 	[234455] = "Reliquie degli Esiliati",	-- Relics of the Outcasts
 	[234456] = "Scrigno dei Manomozza",	-- Shattered Hand Lockbox
 	[234458] = "Cassa dei Manomozza",	-- Shattered Hand Cache
+	[234461] = "Veleno di Zannatossica",	-- Toxicfang Venom
 	[234471] = "Spruzzomatic 5000 XT",	-- Spray-O-Matic 5000 XT
 	[234472] = "Rum Invecchiato del Marinaio Zazzuk",	-- Sailor Zazzuk's 180-Proof Rum
 	[234473] = "Contributi alla Campagna",	-- Campaign Contributions
@@ -1766,6 +1768,7 @@ for key,value in pairs({
 	[237022] = "Bacheca degli Ordini",	-- Command Board
 	[237511] = "Strana Spora",	-- Strange Spore
 	[237821] = "Ordini di Lamafuriosa",	-- Bladefury's Orders
+	[237946] = "Scrigno dello Spirito",	-- Spirit Coffer
 	[239120] = "Zaino di Okuna Zannelunghe",	-- Okuna Longtusk's Pack
 	[239143] = "Bicchiere di Latte Caldo",	-- Glass of Warm Milk
 	[239171] = "Bicchiere di Latte Caldo",	-- Glass of Warm Milk
@@ -2331,6 +2334,7 @@ for key,value in pairs({
 	[282478] = "Cassa Vuota",	-- Empty Crate
 	[282498] = "Flauto del Deserto",	-- Desert Flute
 	[282666] = "Urna di Agussu",	-- Urn of Agussu
+	[282721] = "Cassa del Tesoro",	-- Treasure Chest
 	[284426] = "Macchina da Estrazione Sepolta",	-- Buried Mining Machine
 	[284448] = "Cassa Nascosta dello Studioso",	-- Hidden Scholar's Chest
 	[284454] = "Bottino dello Squalo Bianco",	-- Da White Shark's Bounty
@@ -2460,6 +2464,7 @@ for key,value in pairs({
 	[296916] = "Stele dei Drust: Rituale",	-- Drust Stele: The Ritual
 	[296917] = "Stele dei Drust: Albero",	-- Drust Stele: The Tree
 	[296918] = "Stele dei Drust: Soffio nella Pietra",	-- Drust Stele: Breath Into Stone
+	[297069] = "Cassettone",	-- Dresser
 	[297492] = "Bacheca",	-- Bulletin Board
 	[297627] = "Stele dei Drust: Sacrificio",	-- Drust Stele: Sacrifice
 	[297628] = "Stele dei Drust: Costrutti",	-- Drust Stele: Constructs

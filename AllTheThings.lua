@@ -11541,7 +11541,14 @@ local fields = {
 		return select(1, GetSpellLink(t.spellID));
 	end,
 	["collectible"] = function(t)
-		return app.CollectibleRecipes;
+		if app.CollectibleRecipes then
+			if app.AccountWideRecipes then
+				return true;
+			end
+			if t.requireSkill and (app.GetTradeSkillCache())[t.requireSkill] then
+				return true;
+			end
+		end
 	end,
 	["collected"] = function(t)
 		if app.CurrentCharacter.Spells[t.spellID] then return 1; end
@@ -16884,10 +16891,14 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				header.g = { group };
 				header.sort = true;
 				header.collectible = false;
-				-- header groups in minilist shouldn't be attached to some random other source location
+				-- header groups in minilist shouldn't be attached to some random other source location/data/info
 				-- since they will be comprised of groups from many different source locations
 				header.sourceParent = nil;
 				header.customCollect = nil;
+				header.u = nil;
+				header.races = nil;
+				header.r = nil;
+				header.c = nil;
 				return header;
 			else
 				return { g = { group }, ["sort"] = true, ["collectible"] = false, };
