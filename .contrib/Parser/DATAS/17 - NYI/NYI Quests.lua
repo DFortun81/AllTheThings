@@ -807,7 +807,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(33726),	-- Tuurem Task TBD
 			q(33320),	-- Two Birds One Power Core
 			q(35723),	-- Two-Toned Greaves
-			q(36865),	-- UBRS Event Dungeon Reward Quest
 			q(35768),	-- Ultra Healing Potion
 			q(35777),	-- Unbendable Card
 			q(33509),	-- Unexpected Assault
@@ -1013,7 +1012,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(36496),	-- The Lumber Mill
 			q(35394),	-- The Pale Threat
 			q(37800),	-- Tracking Quest: Start the Garrison Campaign
-			q(38131),	-- Vanilla 10-19
 			q(38003),	-- Vignette: Killed Gaiju
 			q(38004),	-- Vignette: Looted Treasure
 			q(37842),	-- Vignette: Yaeger-367

@@ -3553,6 +3553,7 @@ _.HiddenQuestTriggers = {
 		q(38165),	-- TBC 60-69
 		q(38109, {["_drop"] = { "g" }}),	-- Vanilla 10-19
 		q(38120, {["_drop"] = { "g" }}),	-- Vanilla 10-19
+		q(38131),	-- Vanilla 10-19
 		q(38115, {["_drop"] = { "g" }}),	-- WLK 70-79
 		q(38126, {["_drop"] = { "g" }}),	-- WLK 70-79
 		q(38137),	-- WLK 70-79

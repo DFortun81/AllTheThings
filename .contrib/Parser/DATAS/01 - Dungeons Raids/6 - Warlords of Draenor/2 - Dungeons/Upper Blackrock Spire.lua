@@ -298,6 +298,7 @@ _.Instances = { tier(WOD_TIER, {
 })};
 root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
+		q(36865),	-- UBRS Event Dungeon Reward Quest
 		q(34554),	-- Upper Blackrock Spire Challenge Mode - Bronze Addition (Nth)
 		q(34531),	-- Upper Blackrock Spire Challenge Mode - Consolation (Nth)
 		q(34742),	-- Upper Blackrock Spire Challenge Mode - Consolation (Nth)

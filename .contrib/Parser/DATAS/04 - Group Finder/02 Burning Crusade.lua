@@ -11,9 +11,9 @@ _.GroupFinder =
 			i(51970),	-- Enumerated Gloves*
 			i(51971),	-- Enumerated Belt*
 			i(51967),	-- Enumerated Sandals*
-			i(51961),	-- Vigorous Shoulderguards
+			i(51961),	-- Vigorous Shoulderguards	— 12/27/21
 			i(51959),	-- Vigorous Belt*
-			i(51962),	-- Vigorous Bracers*
+			i(51962),	-- Vigorous Bracers*		— 12/27/21
 			i(51960),	-- Vigorous Gloves [User confirmed; haven't seen]
 			i(51963),	-- Vigorous Stompers*		— 4/6/19, previously confirmed in Classic satchel - may have moved or be in both
 			i(51975),	-- Earthbound Shoulders
