@@ -1876,7 +1876,11 @@ _.HiddenQuestTriggers = {
 		q(49767),	-- Your Next Move - triggers when you pick up your first zone on the scouting map (e.g. Zuldazar as horde)
 		q(48432),	-- Unknown. Triggered as horde sometime after turning in "The Call for Allies" at 110 and before turning in "Hour of Reckoning." Could be phasing related?
 		q(54411),	-- triggers when speaking with Zidormi in Darkshore to travel back in time
-		q(58013),	-- Alliance war campaign, triggers when speaking to Anduin while on "This Ain't Mine" -- also triggered when looting the "Grimoire of the Other Side" as horde during "Spirits' belongings" -- also triggers when repairing the mirror by Charred Ramparts for the Venthyr mirror repair dailies...
+		q(58013),	-- Alliance war campaign, triggers when speaking to Anduin while on "This Ain't Mine"
+		-- 58013 triggered randomly during a Black Empire assault in uldum
+		-- also triggered when looting the "Grimoire of the Other Side" as horde during "Spirits' belongings"
+		-- also triggers when repairing the mirror by Charred Ramparts for the Venthyr mirror repair dailies...
+		-- 58013 ALSO triggered after my first time killing Honey Smasher, but that also popped for me while doing the Alliance war campaign "This Ain't Mine."  so wtf lol
 		q(51722),	-- triggers when completing "Uniting Kul Tiras" (Alliance WQ unlock).  Completing one triggers all 4 WQ unlock quests (main/alt quests for both Alliance and Horde)
 		q(53800),	-- Battle for Darkshore — triggered after defeating Sira Moonwarden in Darkshore warfront
 		q(52212),	-- Battle for Stormgarde — triggered after defeating Rokhan on Heroic difficulty
@@ -1962,7 +1966,6 @@ _.HiddenQuestTriggers = {
 		q(57700),	-- triggered after Honeyback Harvester event that got to round 23 or 24
 		q(56114),	-- triggered after Honeyback Harvester event that completed round 29
 		q(57699),	-- triggered after Honeyback Harvester event that completed round 29
-		--	58013 ALSO triggered after my first time killing Honey Smasher, but that also popped for me while doing the Alliance war campaign "This Ain't Mine."  so wtf lol
 		q(56171),	-- not sure -- i had just done a Honeyback Harvester event and Gurg the Hivethief spawned but ran away because there wasn't enough DPS to kill him.  looted the jelly after the event, then ran to turn in since i was closeby.  fed the bee ~13 - 14 Thin Jelly (brought me to 1700 Friendly) and ran out of the cave and saw this and 57701 pop in chat.
 		q(57701),	-- same as above
 		q(56107),	-- when nascent bee changed into Juvenile Harvester
@@ -2652,7 +2655,6 @@ _.HiddenQuestTriggers = {
 		q(58529),	-- Volatile Void Droplet (Rank 3 Formless Void). Renders the texts unusable.
 
 		--	Patch 8.3
-		-- 58013 triggered randomly during a Black Empire assault in uldum
 		q(55349),	-- Triggered shortly after "Network Diagnostics"
 		q(56935),	-- Triggered shortly after "Network Diagnostics"
 		q(58000),	-- Combining Coalescing Visions 1x
