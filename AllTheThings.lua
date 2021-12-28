@@ -4179,6 +4179,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			BuildContainsInfo(group, entries, "  ", app.noDepth and 99 or 1);
 			-- app.DEBUG_PRINT = nil;
 			if #entries > 0 then
+				local costCollectibles = group.costCollectibles;
 				-- print("#entries",#entries);
 				tinsert(info, { left = L["CONTAINS"] });
 				local containCount, item, group = math.min(app.Settings:GetTooltipSetting("ContainsCount") or 25, #entries);
@@ -4283,15 +4284,29 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 				
 				-- TODO: check if counting option enabled
+				local reagentCountMin, reagentCountMax, currencyCount = 0, 0, 0;
 				for i=1,#entries do
 					item = entries[i];
 					group = item.group;
-					if paramA == "itemID" and group.collectible and not group.collected then
-						app.BuildCrafted_ReagentCount = app.BuildCrafted_ReagentCount + app.ItemCanBeCraftedWithReagentCount(group.itemID, paramB);
+					if group.collectible and not group.collected then
+						local canBeBoughtFor = app.ItemCanBeBoughtWithCurrencyCount(group.itemID, paramB, costCollectibles);
+						if group.itemID and paramA == "itemID" and canBeBoughtFor == 0 then
+							local extraReagentMin, extraReagentMax = app.GetReagentNumToCraftItem(paramB, group.itemID)
+							reagentCountMin = reagentCountMin + extraReagentMin;
+							reagentCountMax = reagentCountMax + extraReagentMax;
+						end
+						currencyCount = currencyCount + canBeBoughtFor;
 					end
 				end;
-				if app.BuildCrafted_ReagentCount > 0 then
-					tinsert(info, { left = L["ITEMS_NEEDED_TO_CRAFT"] .. app.BuildCrafted_ReagentCount })
+				if reagentCountMin > 0 or reagentCountMax > 0 then
+					if reagentCountMin == reagentCountMax then
+						tinsert(info, { left = L["ITEMS_NEEDED_TO_CRAFT"] .. reagentCountMin });
+					else
+						tinsert(info, { left = L["ITEMS_NEEDED_TO_CRAFT"] .. reagentCountMin .. '-' .. reagentCountMax });
+					end
+				end
+				if currencyCount > 0 then
+					tinsert(info, { left = L["CURRENCY_NEEDED_TO_BUY"] .. currencyCount });
 				end
 			end
 		end
@@ -4349,29 +4364,71 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	end
 	return group;
 end
-app.ItemCanBeCraftedWithReagentCount = function(targetItemID, reagentItemID, craftModifier, checkedRecipes)
-	craftModifier = craftModifier or 1;
-	checkedRecipes = checkedRecipes or {};
-	local reagentCache = app.GetDataSubMember("Reagents", reagentItemID);
+app.GetAbsoluteReagentNumInRecipe = function(sourceItemID, targetItemID, reagents, recipeCache)
+	local reagentMinCount, reagentMaxCount = 0, 0;
 	
-	-- If reagentItemID is used in crafts
-	if reagentCache then
-		-- find what recipes that use reagentItemID can lead to targetItemID
-		for recipeID,info in pairs(reagentCache[1]) do
-			if not checkedRecipes[recipeID] then
-				local craftedItemID = info[1];
-				local reagentCount = info[2];
-				
-				if targetItemID == craftedItemID then
-					return craftModifier * reagentCount;
-				end
-				
-				checkedRecipes[recipeID] = true;
-				reagentCount = app.ItemCanBeCraftedWithReagentCount(targetItemID, craftedItemID, craftModifier * reagentCount, checkedRecipes);
-				
-				-- Non-zero count can only occur when we found target item
-				if reagentCount > 0 then
-					return reagentCount;
+	-- Doesn't make sense to handle recipes that require the item to create itself (like ore prospecting)
+	if #reagents == 1 and reagents[1] == targetItemID then
+		return 0, 0;
+	end
+	
+	for reagentID,quantity in pairs(reagents) do
+		if reagentID == sourceItemID then
+			reagentMinCount = reagentMinCount + quantity;
+            reagentMaxCount = reagentMaxCount + quantity;
+		else
+			local extraMin, extraMax = app.GetReagentNumToCraftItem(sourceItemID, reagentID, quantity);
+            reagentMinCount = reagentMinCount + extraMin;
+            reagentMaxCount = reagentMaxCount + extraMax;
+		end
+	end
+	return reagentMinCount, reagentMaxCount;
+end
+app.GetReagentNumToCraftItem = function(sourceItemID, targetItemID, neededQuantity, recipeCache)
+	-- print('GetReagentNumToCraftItem', sourceItemID, targetItemID, neededQuantity);
+	neededQuantity = neededQuantity or 1;
+	recipeCache = recipeCache or {};
+	local reagentMinCount, reagentMaxCount = nil, nil;
+	local itemRecipes = app.GetDataSubMember("ReagentsV2", targetItemID);
+	
+	if itemRecipes then
+		for recipeID,info in pairs(itemRecipes) do
+			local reagents = info[1];
+			local producedMin, producedMax = unpack(info[2]);
+			local recipeResult = recipeCache[recipeID];
+			local recipeResultMin, recipeResultMax;
+			
+			if recipeResult then
+				recipeResultMin, recipeResultMax = unpack(recipeResult);
+				print('debug test 1', reagentMinCount, reagentMaxCount);
+			else
+				recipeResultMin, recipeResultMax = app.GetAbsoluteReagentNumInRecipe(sourceItemID, targetItemID, reagents, recipeCache);
+				recipeCache[recipeID] = { recipeResultMin, recipeResultMax };
+				print('debug test 2', recipeResultMin, recipeResultMax);
+			end
+			
+			-- In some cases for multiple items the ceiling here will accumulate an error
+			local newMin = recipeResultMin * math.ceil(neededQuantity / producedMax);
+            local newMax = recipeResultMax * math.ceil(neededQuantity / producedMin);
+			
+			if reagentMinCount == nil or newMin < reagentMinCount then reagentMinCount = newMin; end
+			if reagentMaxCount == nil or newMax > reagentMaxCount then reagentMaxCount = newMax; end
+		end
+	else
+		reagentMinCount = 0;
+		reagentMaxCount = 0;
+	end
+	return reagentMinCount, reagentMaxCount;
+end
+app.ItemCanBeBoughtWithCurrencyCount = function(targetItemID, currencyItemID, costCollectibles)
+	-- TODO: this does not handle recursive and nested cases, like can Murloc items in Nazjatar
+	if costCollectibles and #costCollectibles > 0 then
+		for i=1,#costCollectibles do
+			if costCollectibles[i].itemID and costCollectibles[i].itemID == targetItemID then
+				for _,costComp in ipairs(costCollectibles[i].cost) do
+					if costComp[2] == currencyItemID then
+						return costComp[3];
+					end
 				end
 			end
 		end
@@ -4379,7 +4436,6 @@ app.ItemCanBeCraftedWithReagentCount = function(targetItemID, reagentItemID, cra
 	return 0;
 end
 app.BuildCrafted_IncludedItems = {};
-app.BuildCrafted_ReagentCount = 0;
 -- Appends sub-groups into the item group based on what the item is used to craft (via ReagentCache)
 app.BuildCrafted = function(item)
 	local itemID = item.itemID;
@@ -6120,7 +6176,6 @@ local function AttachTooltipSearchResults(self, search, method, paramA, paramB, 
 		-- print("build tooltip search",self.HasATTSearchResults,search)
 		-- tooltips can skip to level 1
 		app.SetSkipPurchases(1);
-		app.BuildCrafted_ReagentCount = 0;
 		AttachTooltipRawSearchResults(self, GetCachedSearchResults(search, method, paramA, paramB, ...));
 		app.SetSkipPurchases(0);
 	-- else print("skip tooltip search",self.HasATTSearchResults,search)
@@ -18705,6 +18760,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 		local C_TradeSkillUI_GetRecipeInfo = C_TradeSkillUI.GetRecipeInfo;
 		local C_TradeSkillUI_GetRecipeItemLink = C_TradeSkillUI.GetRecipeItemLink;
 		local C_TradeSkillUI_GetRecipeNumReagents = C_TradeSkillUI.GetRecipeNumReagents;
+		local C_TradeSkillUI_GetRecipeNumItemsProduced = C_TradeSkillUI.GetRecipeNumItemsProduced;
 		local C_TradeSkillUI_GetRecipeReagentInfo = C_TradeSkillUI.GetRecipeReagentInfo;
 		local C_TradeSkillUI_GetRecipeReagentItemLink = C_TradeSkillUI.GetRecipeReagentItemLink;
 
@@ -18763,6 +18819,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 				-- Cache learned recipes
 				local learned = {};
 				local reagentCache = app.GetDataMember("Reagents", {});
+				local reagentV2Cache = app.GetDataMember("ReagentsV2", {});
 				local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
 				local acctSpells, charSpells = ATTAccountWideData.Spells, app.CurrentCharacter.Spells;
 				local skipcaching;
@@ -18814,7 +18871,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 							local recipeLink = C_TradeSkillUI_GetRecipeItemLink(recipeID);
 							local craftedItemID = recipeLink and GetItemInfoInstant(recipeLink);
 							if craftedItemID then
-								local reagentLink, itemID, reagentCount;
+								local reagentLink, itemID, reagentCount, minItem, maxItem;
 								for i=1,C_TradeSkillUI_GetRecipeNumReagents(recipeID) do
 									reagentCount = select(3, C_TradeSkillUI_GetRecipeReagentInfo(recipeID, i));
 									reagentLink = C_TradeSkillUI_GetRecipeReagentItemLink(recipeID, i);
@@ -18833,11 +18890,24 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 												reagentCache[itemID][1][recipeID] = nil;
 												reagentCache[itemID][2][craftedItemID] = nil;
 											end
+											-- TODO: no idea if this is the correct way
+											if reagentV2Cache[craftedItemID] then
+												reagentV2Cache[craftedItemID][recipeID] = nil;
+												reagentV2Cache[craftedItemID][recipeID] = nil;
+											end
 										else
 											if not reagentCache[itemID] then reagentCache[itemID] = { {}, {} }; end
+											if not reagentV2Cache[craftedItemID] then reagentV2Cache[craftedItemID] = {}; end
+											if not reagentV2Cache[craftedItemID][recipeID] then reagentV2Cache[craftedItemID][recipeID] = { {} }; end
 											reagentCache[itemID][1][recipeID] = { craftedItemID, reagentCount };
-											-- if craftedItemID then reagentCache[itemID][2][craftedItemID] = reagentCount; end
 											reagentCache[itemID][2][craftedItemID] = reagentCount;
+											minItem, maxItem = C_TradeSkillUI_GetRecipeNumItemsProduced(recipeID);
+											
+											-- TODO: add other WoD and similar recipes that can produce more items than what API returns
+											if recipeID == 171690 then maxItem = 20; end
+											
+											reagentV2Cache[craftedItemID][recipeID][1][itemID] = reagentCount;
+											reagentV2Cache[craftedItemID][recipeID][2] = { minItem, maxItem };
 										end
 									end
 								end
