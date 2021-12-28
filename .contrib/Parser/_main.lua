@@ -1554,6 +1554,11 @@ quest = function(id, t)									-- Create a QUEST Object
 	return struct("questID", id, t);
 end
 q = quest;												-- Create a QUEST Object (alternative shortcut)
+qNYI = function (id, t)									-- Create a QUEST Object flagged with the NYI unobtainable flag
+	t = q(id, t);
+	t.u = NEVER_IMPLEMENTED;
+	return t;
+end
 questobjective = function(id, t)						-- Create a QUEST OBJECTIVE Object
 	return struct("objectiveID", id, t);
 end

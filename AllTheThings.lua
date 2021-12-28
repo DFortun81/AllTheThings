@@ -2050,14 +2050,8 @@ local PrintQuestInfo = function(questID, new, info)
 				return true;
 			end
 			local questRef = searchResults[1];
-			-- tack on an 'HQT' tag if ATT thinks this QuestID is a Hidden Quest Trigger
-			-- (sometimes 'real' quests are triggered complete when other 'real' quests are turned in and contribs may consider them HQT if not yet sourced
-			-- so when a quest flagged as HQT is accepted/completed directly, it will be more noticable of being incorrectly sourced
-			if GetRelativeField(questRef, "text", L["HIDDEN_QUEST_TRIGGERS"]) then
-				questID = questID .. " [HQT]";
-				-- Linkify the output
-				questID = app:Linkify(questID, "7aff92", "search:questID:" .. id);
-			elseif GetRelativeField(questRef, "text", L["NEVER_IMPLEMENTED"]) then
+			-- give a chat output if the user has just interacted with a quest flagged as NYI
+			if GetRelativeField(questRef, "text", L["NEVER_IMPLEMENTED"]) then
 				questID = questID .. " (Not in ATT " .. app.Version .. " [NYI])";
 				-- Linkify the output
 				local popupID = "quest-" .. id;
@@ -2065,6 +2059,13 @@ local PrintQuestInfo = function(questID, new, info)
 				app:SetupReportDialog(popupID, "NYI Quest: " .. id,
 					app.BuildDiscordQuestInfoTable(id, "nyi-quest", questChange)
 				);
+			-- tack on an 'HQT' tag if ATT thinks this QuestID is a Hidden Quest Trigger
+			-- (sometimes 'real' quests are triggered complete when other 'real' quests are turned in and contribs may consider them HQT if not yet sourced
+			-- so when a quest flagged as HQT is accepted/completed directly, it will be more noticable of being incorrectly sourced
+			elseif GetRelativeField(questRef, "text", L["HIDDEN_QUEST_TRIGGERS"]) then
+				questID = questID .. " [HQT]";
+				-- Linkify the output
+				questID = app:Linkify(questID, "7aff92", "search:questID:" .. id);
 			else
 				-- Linkify the output
 				questID = app:Linkify(questID, "149bfd", "search:questID:" .. id);

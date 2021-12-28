@@ -3595,57 +3595,56 @@ _.HiddenQuestTriggers = {
 		q(37646),	-- See New Brightstone, See Wolfed Out Thorn (Garrison Attack?)
 
 		--	Short-Supply Reward - UNKNOWN TRIGGERS
-		-- these may be similar to Korthia daily quest triggers, which allow additional loot for the first X 'attetmpts' each day?
-		q(37461),	-- Short-Supply Reward
-		q(37463),	-- Short-Supply Reward
-		q(37465),	-- Short-Supply Reward
-		q(37681),	-- Short-Supply Reward
-		q(37682),	-- Short-Supply Reward
-		q(37683),	-- Short-Supply Reward
-		q(37684),	-- Short-Supply Reward
-		q(39398),	-- Short-Supply Reward
-		q(39468),	-- Short-Supply Reward
-		q(39473),	-- Short-Supply Reward
-		q(39474),	-- Short-Supply Reward
-		q(39475),	-- Short-Supply Reward
-		q(39476),	-- Short-Supply Reward
-		q(39477),	-- Short-Supply Reward
-		q(39478),	-- Short-Supply Reward
-		q(39479),	-- Short-Supply Reward
-		q(39480),	-- Short-Supply Reward
-		q(39481),	-- Short-Supply Reward
-		q(39482),	-- Short-Supply Reward
-		q(39483),	-- Short-Supply Reward
-		q(39484),	-- Short-Supply Reward
-		q(39485),	-- Short-Supply Reward
+		qNYI(37461),	-- Short-Supply Reward
+		qNYI(37463),	-- Short-Supply Reward
+		qNYI(37465),	-- Short-Supply Reward
+		qNYI(37681),	-- Short-Supply Reward
+		qNYI(37682),	-- Short-Supply Reward
+		qNYI(37683),	-- Short-Supply Reward
+		qNYI(37684),	-- Short-Supply Reward
+		qNYI(39398),	-- Short-Supply Reward
+		qNYI(39468),	-- Short-Supply Reward
+		qNYI(39473),	-- Short-Supply Reward
+		qNYI(39474),	-- Short-Supply Reward
+		qNYI(39475),	-- Short-Supply Reward
+		qNYI(39476),	-- Short-Supply Reward
+		qNYI(39477),	-- Short-Supply Reward
+		qNYI(39478),	-- Short-Supply Reward
+		qNYI(39479),	-- Short-Supply Reward
+		qNYI(39480),	-- Short-Supply Reward
+		qNYI(39481),	-- Short-Supply Reward
+		qNYI(39482),	-- Short-Supply Reward
+		qNYI(39483),	-- Short-Supply Reward
+		qNYI(39484),	-- Short-Supply Reward
+		qNYI(39485),	-- Short-Supply Reward
 
 		-- Tracking Quest - UNKNOWN TRIGGERS
-		q(32935),	-- Tracking Quest
-		q(37423),	-- Tracking Quest
-		q(37424),	-- Tracking Quest
-		q(37425),	-- Tracking Quest
-		q(37426),	-- Tracking Quest
-		q(37427),	-- Tracking Quest
-		q(37428),	-- Tracking Quest
-		q(37429),	-- Tracking Quest
-		q(37430),	-- Tracking Quest
-		q(37431),	-- Tracking Quest
-		q(37432),	-- Tracking Quest
-		q(39727),	-- Tracking Quest
-		q(39728),	-- Tracking Quest
-		q(39736),	-- Tracking Quest
-		q(39737),	-- Tracking Quest
-		q(39738),	-- Tracking Quest
-		q(39739),	-- Tracking Quest
-		q(39740),	-- Tracking Quest
-		q(39749),	-- Tracking Quest - triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands
-		q(39748),	-- Tracking Quest - triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands
-					-- Unflagged/flagged on a lvl 1 Bank alt when logging in lol
-		q(39751),	-- Tracking Quest
-		q(39752),	-- Tracking Quest
-		q(39753),	-- Tracking Quest
-		q(40416),	-- Tracking Quest
-		q(40853),	-- Tracking Quest
+		qNYI(32935),	-- Tracking Quest
+		qNYI(37423),	-- Tracking Quest
+		qNYI(37424),	-- Tracking Quest
+		qNYI(37425),	-- Tracking Quest
+		qNYI(37426),	-- Tracking Quest
+		qNYI(37427),	-- Tracking Quest
+		qNYI(37428),	-- Tracking Quest
+		qNYI(37429),	-- Tracking Quest
+		qNYI(37430),	-- Tracking Quest
+		qNYI(37431),	-- Tracking Quest
+		qNYI(37432),	-- Tracking Quest
+		qNYI(39727),	-- Tracking Quest
+		qNYI(39728),	-- Tracking Quest
+		qNYI(39736),	-- Tracking Quest
+		qNYI(39737),	-- Tracking Quest
+		qNYI(39738),	-- Tracking Quest
+		qNYI(39739),	-- Tracking Quest
+		qNYI(39740),	-- Tracking Quest
+		qNYI(39749),	-- Tracking Quest - triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands
+		qNYI(39748),	-- Tracking Quest - triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands
+						-- Unflagged/flagged on a lvl 1 Bank alt when logging in lol
+		qNYI(39751),	-- Tracking Quest
+		qNYI(39752),	-- Tracking Quest
+		qNYI(39753),	-- Tracking Quest
+		qNYI(40416),	-- Tracking Quest
+		qNYI(40853),	-- Tracking Quest
 
 		--	???
 		q(33964),	-- Arak Flowerpicker
