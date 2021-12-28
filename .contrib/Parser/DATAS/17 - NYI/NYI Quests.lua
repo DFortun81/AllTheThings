@@ -390,7 +390,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(33910),	-- Aklana Rescue
 			q(35772),	-- Alchemist Field Guide
 			q(35770),	-- Alchemist Notebook
-			q(37247),	-- Angry Brewfest Letter
 			q(33545),	-- Arkonite Crystals
 			q(35742),	-- Attuned Alchemist Stone
 			q(34158),	-- Auchindoun Must Not Fall
@@ -725,9 +724,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(33418),	-- Tracking Quest - Failed
 			q(33748),	-- Tracking Quest - Saberon Servent Snip Scene
 			q(34705),	-- Tracking Quest - Shadowmoon Intro
-			q(36899),	-- Tracking Quest: Defender Illona
 			q(33693),	-- Tracking Quest: First Time at Capping Operation
-			q(36936),	-- Tracking Quest: Leorajh
 			q(33382),	-- Tracking Quest: Saw Maraad Storm Off
 			q(36900),	-- Tracking Quest: Talonpriest Ishaal
 			q(35703),	-- Tracking: Mill Treasure Barrier 1

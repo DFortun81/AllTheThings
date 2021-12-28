@@ -14,7 +14,7 @@ _.GroupFinder =
 			i(51961),	-- Vigorous Shoulderguards	— 12/27/21
 			i(51959),	-- Vigorous Belt*
 			i(51962),	-- Vigorous Bracers*		— 12/27/21
-			i(51960),	-- Vigorous Gloves [User confirmed; haven't seen]
+			i(51960),	-- Vigorous Gloves			— 12/27/21
 			i(51963),	-- Vigorous Stompers*		— 4/6/19, previously confirmed in Classic satchel - may have moved or be in both
 			i(51975),	-- Earthbound Shoulders
 			i(51981),	-- Earthbound Wristguards*
@@ -28,7 +28,7 @@ _.GroupFinder =
 			i(51993),	-- Turbulent Cloak*
 			i(160599),	-- Turbulent Cloak*
 			i(160600),	-- Turbulent Cloak (screenshot from Emsarrev on Discord)
-			i(51995),	-- Turbulent Necklace*
+			i(51995),	-- Turbulent Necklace*		— 12/27/21
 			i(160609),	-- Turbulent Necklace
 			i(160610),	-- Turbulent Necklace*		— 4/12/19
 			i(51991),	-- Turbulent Signet*

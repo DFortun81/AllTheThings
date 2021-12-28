@@ -3548,6 +3548,7 @@ _.HiddenQuestTriggers = {
 		q(38174, {["_drop"] = { "g" }}),	-- Legion 100-109 H
 		q(36140, {["_drop"] = { "g" }}),	-- Pandaria 88-90
 		q(36148, {["_drop"] = { "g" }}),	-- Pandaria 88-90
+		q(37648, {["_drop"] = { "g" }}),	-- Short-Supply Reward
 		q(38114, {["_drop"] = { "g" }}),	-- TBC 60-69
 		q(38125, {["_drop"] = { "g" }}),	-- TBC 60-69
 		q(38136),	-- TBC 60-69
@@ -3597,14 +3598,10 @@ _.HiddenQuestTriggers = {
 		q(37461),	-- Short-Supply Reward
 		q(37463),	-- Short-Supply Reward
 		q(37465),	-- Short-Supply Reward
-		q(37648),	-- Short-Supply Reward
 		q(37681),	-- Short-Supply Reward
 		q(37682),	-- Short-Supply Reward
 		q(37683),	-- Short-Supply Reward
 		q(37684),	-- Short-Supply Reward
-		q(39376),	-- Short-Supply Reward Tanaan 50.4, 34.5
-		q(39377),	-- Short-Supply Reward (Executor Riloth, first kill ever)
-		q(39378),	-- Short-Supply Reward (Jax'zor, first kill ever)
 		q(39398),	-- Short-Supply Reward
 		q(39468),	-- Short-Supply Reward
 		q(39473),	-- Short-Supply Reward
