@@ -1742,6 +1742,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(43963),	-- Reins of the Brown Polar Bear
 		i(43964),	-- Reins of the Black Polar Bear
 		i(46101),	-- Blue Skeletal Warhorse
+		mount(241851, {	-- Netherlord's Chaotic Wrathsteed
+			["classes"] = { WARLOCK },
+			["u"] = NEVER_IMPLEMENTED,
+		}),
 		-- SL
 		i(186491),	-- Spring Wilderling Harness
 		i(186639),	-- Pilfered Gearglider

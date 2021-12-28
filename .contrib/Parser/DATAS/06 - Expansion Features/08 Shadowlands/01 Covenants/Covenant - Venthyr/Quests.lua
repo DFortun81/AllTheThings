@@ -698,7 +698,9 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["maps"] = { 1689 },	-- Exoramas (Venthyr Renown 22 Scenario)
 				["provider"] = { "n", 170543 },	-- General Draven
 				["coord"] = { 27.4, 40.3, REVENDRETH },
-				["g"] = LFR_WEAPON_GROUP,
+				["g"] = appendGroups(LFR_WEAPON_GROUP, {
+					i(180948),	-- Battle Gargon Vrednic
+				}),
 			}),
 			q(59233, {	-- The Prince's New Crown
 				["sourceQuests"] = { 60996 },	-- Face Your Fears

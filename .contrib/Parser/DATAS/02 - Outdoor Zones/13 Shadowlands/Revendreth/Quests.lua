@@ -35,7 +35,10 @@ _.Zones =
 					["sourceQuests"] = { 62045 },	-- Ready for More
 					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
 					["g"] = {
-						i(182589),	-- Loyal Gorger (MOUNT!)
+						i(182589, {	-- Loyal Gorger
+							-- tagged with cost here so that it shows under the Rare for the start of the quest chain item
+							["cost"] = { { "i", 180583, 1 } },	-- Impressionable Gorger Spawn
+						}),
 					}
 				}),
 				q(58654, {	-- A Plea to the Harvesters

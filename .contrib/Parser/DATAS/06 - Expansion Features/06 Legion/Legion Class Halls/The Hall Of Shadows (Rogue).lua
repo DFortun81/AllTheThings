@@ -434,7 +434,9 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 98099 },	-- Lilian Voss
 							["sourceQuest"] = 46103,	-- Dread Infiltrators
 							["g"] = {
-								i(143493),	-- Shadowblade's Murderous Omen
+								i(143493, {		-- Shadowblade's Murderous Omen
+									["classes"] = { ROGUE },
+								}),
 							},
 						}),
 						q(46178, {	-- Hiding in Plain Sight (H)
@@ -443,7 +445,9 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 98099 },	-- Lilian Voss
 							["sourceQuest"] = 46103,	-- Dread Infiltrators
 							["g"] = {
-								i(143493),	-- Shadowblade's Murderous Omen
+								i(143493, {		-- Shadowblade's Murderous Omen
+									["classes"] = { ROGUE },
+								}),
 							},
 						}),
 						q(47607, {	-- High Fash-Djinn

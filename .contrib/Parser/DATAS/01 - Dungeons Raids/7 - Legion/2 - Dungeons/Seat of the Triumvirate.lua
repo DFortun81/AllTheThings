@@ -56,7 +56,7 @@ _.Instances = { tier(LEGION_TIER, {
 					["provider"] = { "n", 125246 },	-- Gaal <Blacksmith>
 					["coord"] = { 56.9, 68.6, 830 },
 					["g"] = {
-						i(152241, { -- Ensemble: Light-Woven Triumvirate Regalia
+						i(152241, sharedData({["modID"] = 2}, { -- Ensemble: Light-Woven Triumvirate Regalia
 							i(151337),	-- Head
 							i(151299),	-- Shoulder
 							i(151635),	-- Cloak
@@ -66,8 +66,8 @@ _.Instances = { tier(LEGION_TIER, {
 							i(151302),	-- Waist
 							i(151304),	-- Legs
 							i(151301),	-- Feet
-						}),
-						i(152242, { -- Ensemble: Burnished Triumvirate Armor
+						})),
+						i(152242, sharedData({["modID"] = 2}, { -- Ensemble: Burnished Triumvirate Armor
 							i(151336),	-- Head
 							i(151319),	-- Shoulder
 							i(151306),	-- Cloak
@@ -77,8 +77,8 @@ _.Instances = { tier(LEGION_TIER, {
 							i(151316),	-- Waist
 							i(151314),	-- Legs
 							i(151317),	-- Feet
-						}),
-						i(152243, { -- Ensemble: Sterling Triumvirate Chainmail
+						})),
+						i(152243, sharedData({["modID"] = 2}, { -- Ensemble: Sterling Triumvirate Chainmail
 							i(151324),	-- Head
 							i(151323),	-- Shoulder
 							i(151634),	-- Cloak
@@ -88,8 +88,8 @@ _.Instances = { tier(LEGION_TIER, {
 							i(151326),	-- Waist
 							i(151338),	-- Legs
 							i(151320),	-- Feet
-						}),
-						i(152244, { -- Ensemble: Venerated Triumvirate Battleplate
+						})),
+						i(152244, sharedData({["modID"] = 2}, { -- Ensemble: Venerated Triumvirate Battleplate
 							i(151333),	-- Head
 							i(151331),	-- Shoulder
 							i(151298),	-- Cloak
@@ -99,7 +99,7 @@ _.Instances = { tier(LEGION_TIER, {
 							i(151327),	-- Waist
 							i(151339),	-- Legs
 							i(151330),	-- Feet
-						}),
+						})),
 					},
 				}),
 			}),

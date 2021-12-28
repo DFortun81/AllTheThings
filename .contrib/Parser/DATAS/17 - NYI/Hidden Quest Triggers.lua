@@ -3591,6 +3591,7 @@ _.HiddenQuestTriggers = {
 		q(37646),	-- See New Brightstone, See Wolfed Out Thorn (Garrison Attack?)
 
 		--	Short-Supply Reward - UNKNOWN TRIGGERS
+		-- these may be similar to Korthia daily quest triggers, which allow additional loot for the first X 'attetmpts' each day?
 		q(37461),	-- Short-Supply Reward
 		q(37463),	-- Short-Supply Reward
 		q(37465),	-- Short-Supply Reward
@@ -3600,8 +3601,8 @@ _.HiddenQuestTriggers = {
 		q(37683),	-- Short-Supply Reward
 		q(37684),	-- Short-Supply Reward
 		q(39376),	-- Short-Supply Reward Tanaan 50.4, 34.5
-		q(39377),	-- Short-Supply Reward
-		q(39378),	-- Short-Supply Reward
+		q(39377),	-- Short-Supply Reward (Executor Riloth, first kill ever)
+		q(39378),	-- Short-Supply Reward (Jax'zor, first kill ever)
 		q(39398),	-- Short-Supply Reward
 		q(39468),	-- Short-Supply Reward
 		q(39473),	-- Short-Supply Reward

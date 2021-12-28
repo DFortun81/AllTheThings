@@ -316,7 +316,9 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 106521 },	-- Consular Celestos
 							["sourceQuests"] = { 46791 },	-- Carried On the Wind
 							["g"] = {
-								i(143489),	-- Raging Tempest Totem
+								i(143489, {		-- Raging Tempest Totem
+									["classes"] = { SHAMAN },
+								}),
 							},
 						}),
 						q(41899, {	-- Held Captive!
