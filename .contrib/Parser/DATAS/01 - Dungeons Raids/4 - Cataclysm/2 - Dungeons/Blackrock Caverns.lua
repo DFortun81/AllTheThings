@@ -185,7 +185,6 @@ _.Instances = { tier(CATA_TIER, {
 			}),
 			d(2, {	-- Heroic
 				["lvl"] = 85,
-				["ignoreBonus"] = true,
 				["groups"] = {
 					cr(39665, e(105, {	-- Rom'ogg Boncrusher
 						ach(5281),	-- Crushing Bones and Cracking Skulls

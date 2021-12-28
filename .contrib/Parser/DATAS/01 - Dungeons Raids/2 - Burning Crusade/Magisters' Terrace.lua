@@ -241,9 +241,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 				["description"] = "You must completed the 'Hard to Kill' quest chain on Normal Mode before Heroic Mode becomes available.",
 				["sourceQuest"] = 11492,	-- Hard to Kill
 				-- #endif
-				-- #if NOT ANYCLASSIC
-				["ignoreBonus"] = true,
-				-- #endif
 				["lvl"] = lvlsquish(70, 30, 70),
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {

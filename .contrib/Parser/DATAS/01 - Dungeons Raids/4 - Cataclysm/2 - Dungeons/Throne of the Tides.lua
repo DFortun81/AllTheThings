@@ -132,7 +132,6 @@ _.Instances = { tier(CATA_TIER, {
 			}),
 			d(2, {	-- Heroic
 				["lvl"] = 85,
-				["ignoreBonus"] = true,
 				["groups"] = {
 					cr(40586, e(101, {	-- Lady Naz'jar
 						{	-- Old Faithful

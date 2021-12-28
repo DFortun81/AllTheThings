@@ -126,7 +126,6 @@ _.Instances = { tier(CATA_TIER, {
 			}),
 			d(2,  {	-- Heroic
 				["lvl"] = 85,
-				["ignoreBonus"] = true,
 				["g"] = {
 					cr(39625, e(131, {	-- General Umbriss
 						ach(5297),	-- Umbrage for Umbriss

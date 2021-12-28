@@ -171,7 +171,6 @@ _.Instances = { tier(CATA_TIER, {
 			}),
 			d(2,   {	-- Heroic
 				["lvl"] = 85,
-				["ignoreBonus"] = true,
 				["groups"] = {
 					e(117, {	-- General Husam
 						["crs"] = { 44577 },	-- General Husam

@@ -685,7 +685,6 @@ root("Instances", tier(CLASSIC_TIER, {
 			-- #endif
 			d(2, {	-- Heroic
 				["timeline"] = { "added 4.0.3" },
-				["ignoreBonus"] = true,
 				["lvl"] = 85,
 				["groups"] = {
 					e(89, {	-- Glubtok

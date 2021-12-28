@@ -117,7 +117,6 @@ _.Instances = { tier(CATA_TIER, {
 			}),
 			d(2,   {	-- Heroic
 				["lvl"] = 85,
-				["ignoreBonus"] = true,
 				["groups"] = {
 					n(ACHIEVEMENTS, {
 						ach(5289),	-- Extra Credit Bonus Stage

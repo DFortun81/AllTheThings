@@ -167,7 +167,6 @@ _.Instances = { tier(WOTLK_TIER, {
 			}),
 			d(2,   {	-- Heroic
 				["lvl"] = 80,
-				["ignoreBonus"] = true,
 				["groups"] = {
 					n(ZONE_DROPS, {
 						i(37858, {	-- Awakened Handguards

@@ -291,9 +291,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					{ "i", 30637, 1 },	-- Flamewrought Key [H]
 				},
 				-- #endif
-				-- #if NOT ANYCLASSIC
-				["ignoreBonus"] = true,
-				-- #endif
 				["lvl"] = lvlsquish(70, 30, 70),
 				["groups"] = {
 					ach(667),	-- Heroic: Hellfire Ramparts

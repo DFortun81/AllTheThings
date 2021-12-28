@@ -229,9 +229,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					{ "i", 30633, 1 },	-- Auchenai Key
 				},
 				-- #endif
-				-- #if NOT ANYCLASSIC
-				["ignoreBonus"] = true,
-				-- #endif
 				["lvl"] = lvlsquish(70, 30, 70),
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {

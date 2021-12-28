@@ -136,7 +136,6 @@ _.Instances = { tier(CATA_TIER, {
 			}),
 			d(2, {	-- Heroic
 				["lvl"] = 85,
-				["ignoreBonus"] = true,
 				["groups"] = {
 					cr(43438, e(110, {	-- Corborus
 						i(157592),	-- Crackling Geode Mace
