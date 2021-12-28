@@ -229,7 +229,8 @@ app.L = {
 	["NESTED_QUEST_REQUIREMENTS"] = "Nested Quest Requirements";
 	["MAIN_LIST_REQUIRES_REFRESH"] = "[Open Main list to update progress]";
 	["DOES_NOT_CONTRIBUTE_TO_PROGRESS"] = "|cffe08207This group and its content do not contribute to the progress of this window!|r";
-	["ITEMS_NEEDED_TO_CRAFT"] = "Total items needed for crafting: ";
+	["ITEMS_NEEDED_TO_CRAFT"] = "Total items needed to craft not collected: ";
+	["CURRENCY_NEEDED_TO_BUY"] = "Total items needed to buy not collected: ";
 
 	-- Item Filter Window
 	["ITEM_FILTER_TEXT"] = "Item Filters";
