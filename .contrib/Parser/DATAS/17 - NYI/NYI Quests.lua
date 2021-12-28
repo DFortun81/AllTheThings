@@ -418,9 +418,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(35854),	-- Botanic Cure Guide
 			q(35786),	-- Bronze Victory
 			q(37305),	-- Bronze Victory
+			q(35571),	-- Brutality in the Basin, Violence in the Valley
 			q(33150),	-- Brute Beatdown
 			q(35829),	-- Buffed Crystal
 			q(34006),	-- Build Us A Backdoor
+			q(35578),	-- Building an Ancient of War
 			q(33881),	-- Can't Live With 'Em, Can't Learn Without 'Em
 			q(36146),	-- Cataclysm 84-85
 			q(36152),	-- Cataclysm 84-85
@@ -1083,6 +1085,28 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(39714),	-- Where Are the Children?
 
 			-- 6.2.3 - no NYI quests
+			
+			-- 6.x.x - quests in API with no name or patch info
+			q(33169),
+			q(33406),
+			q(33415),
+			q(33420),
+			q(33421),
+			q(33423),
+			q(33426),
+			q(33430),
+			q(33433),
+			q(33459),
+			q(33460),
+			q(33528),
+			q(34245),
+			q(34246),
+			q(34247),
+			q(36719),
+			q(36795),
+			q(36868),
+			q(36869),
+			q(36910),
 		}),
 	}),
 }));

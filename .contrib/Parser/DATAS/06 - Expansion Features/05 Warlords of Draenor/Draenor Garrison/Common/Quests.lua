@@ -2636,3 +2636,11 @@ root("HiddenQuestTriggers", {
 		q(37670),	-- [Deprecated] Tracking Quest - Hide Old Baros / Thorn / Brightstone - after picking up the rose quest item during quest "Garrison Campaign: Every Rose Has Its Thorn" (questID 36160)
 	}),
 });
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	tier(WOD_TIER, {
+		n(QUESTS, {
+			q(33111),	-- Bounty: Twisted Ancient
+			q(34213),	-- They Have My Son
+		}),
+	}),
+}));

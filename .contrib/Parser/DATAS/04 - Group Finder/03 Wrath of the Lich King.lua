@@ -14,7 +14,7 @@ _.GroupFinder =
 			i(112351),	-- Winterfrost Leather Helm*
 			i(113690),	-- Winterfrost Leather Gloves
 			i(113689),	-- Winterfrost Leather Knuckledusters	— confirmed by user on discord on April 22, 2020
-			i(112365),	-- Winterfrost Leather Belt				— confirmed by user on discord on April 22, 2020
+			i(112365),	-- Winterfrost Leather Belt				— 12/27/21
 			i(112366),	-- Winterfrost Leather Girdle
 			i(112360),	-- Winterfrost Leather Leggings			— confirmed by user on discord on April 22, 2020
 			i(112359),	-- Winterfrost Leather Waders

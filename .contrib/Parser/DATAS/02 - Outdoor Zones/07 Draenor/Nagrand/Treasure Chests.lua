@@ -386,6 +386,13 @@ root("Zones", {
 					["coord"] = { 75.2, 64.9, DRAENOR_NAGRAND },
 					["sym"] = COMMON_TREASURE_SYM,
 				}),
+				o(236633, {	-- Smuggler's Cache
+					["questID"] = 36857,
+					["coord"] = { 89.1, 33.1, DRAENOR_NAGRAND },
+					["g"] = {
+						currency(824),	-- Garrison Resources
+					},
+				}),
 				o(237946, {	-- Spirit Coffer
 					["questID"] = 37435,
 					["coord"] = { 40.4, 68.6, DRAENOR_NAGRAND },
@@ -492,6 +499,13 @@ root("Zones", {
 					["coord"] = { 76.1, 69.9, DRAENOR_NAGRAND },
 					["g"] = {
 						i(118678),	-- Ceremonial Warsong Spear
+					},
+				}),
+				o(232599, {	-- Warsong Spoils
+					["questID"] = 35593,
+					["coord"] = { 80.6, 60.6, DRAENOR_NAGRAND },
+					["g"] = {
+						currency(824),	-- Garrison Resources
 					},
 				}),
 				o(233521, {	-- Warsong Supplies

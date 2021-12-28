@@ -3464,6 +3464,7 @@ _.HiddenQuestTriggers = {
 	-------------------
 	tier(WOD_TIER, {
 		--	QUESTING / LEVELING / VARIOUS
+		q(35266),	-- Boosted Character - triggered for character that used WoD boost (level 90)
 		q(37187),	-- The Dark Portal
 		q(37193),	-- The King's Command - autocompleted when "Hero's Call: Jade Forest!" is picked up (questID 49556)
 		q(36825),	-- Fate of the Horde - triggered when turning in "Audience with the Warchief" as a demon hunter (questID 40976)

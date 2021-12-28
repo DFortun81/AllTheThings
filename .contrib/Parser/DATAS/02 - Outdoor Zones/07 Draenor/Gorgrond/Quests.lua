@@ -2126,7 +2126,7 @@ root("HiddenQuestTriggers", {
 		q(35149),	-- Sparring Arena - triggers if you choose to build the Sparring Arena for the first time
 	}),
 });
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(WOD_TIER, {
 		n(WEAPONS, {
 			i(119408),	-- Foereaver Polearm [This version wasn't added]
@@ -2136,4 +2136,4 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			q(33705),	-- Sacking the Saberon Stronghold
 		}),
 	}),
-});
+}));

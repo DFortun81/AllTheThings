@@ -1121,7 +1121,7 @@ root("HiddenQuestTriggers", {
 		q(49544),	-- triggers after handing in Hero's Call: Shadowmoon Valley! (questID 49562)
 	}),
 });
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(WOD_TIER, {
 		n(WEAPONS, {
 			i(117994),	-- RENAME Karabor Honor Guard Axe
@@ -1129,8 +1129,9 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 		n(QUESTS, {
 			q(35618),	-- Gidwin Goldbraids
+			q(33782),	-- Keeping the Balance
 			q(35621),	-- Tarenar Sunstrike
 			q(37113),	-- Thisalee Crow
 		}),
 	}),
-});
+}));

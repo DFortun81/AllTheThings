@@ -270,6 +270,8 @@ _.Instances = { tier(WOTLK_TIER, {
 })};
 _.HiddenQuestTriggers = {
 	tier(WOD_TIER, {
+		q(35452),	-- Utgarde Pinnacle - Bonus Objective Reward
+		q(35454),	-- Utgarde Pinnacle - Bonus Objective Reward
 		q(35449),	-- Utgarde Pinnacle Reward Quest - Normal completion
 		q(35453),	-- Utgarde Pinnacle Reward Quest - Heroic completion
 	}),

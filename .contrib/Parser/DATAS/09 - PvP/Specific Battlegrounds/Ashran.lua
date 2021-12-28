@@ -428,6 +428,20 @@ _.PVP =
 						["races"] = HORDE_ONLY,
 						["u"] = REMOVED_FROM_GAME,
 					}),
+					q(36791, {	-- Phantom Potion (A)
+						["repeatable"] = true,
+						["provider"] = { "n", 85749 },	-- Gimlet Ginfizz
+						["coord"] = { 44.2, 74.2, 1478 },
+						["races"] = ALLIANCE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(36935, {	-- Phantom Potion (H)
+						["repeatable"] = true,
+						["provider"] = { "n", 86366 },	-- Tyra Silverblood
+						["coord"] = { 45.6, 28.6, 1478 },
+						["races"] = HORDE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(39096, {	-- Slay Them All! (A)
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,
@@ -525,6 +539,20 @@ _.PVP =
 					q(36227, {	-- The Road of Glory (H)
 						["provider"] = { "n", 83869 },	-- Angry Zurge
 						["coord"] = { 45.8, 28.8, 1478 },
+						["races"] = HORDE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(36741, {	-- Vintage Free Action Potion (A)
+						["repeatable"] = true,
+						["provider"] = { "n", 85749 },	-- Gimlet Ginfizz
+						["coord"] = { 44.2, 74.2, 1478 },
+						["races"] = ALLIANCE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(36742, {	-- Vintage Free Action Potion (H)
+						["repeatable"] = true,
+						["provider"] = { "n", 86366 },	-- Tyra Silverblood
+						["coord"] = { 45.6, 28.6, 1478 },
 						["races"] = HORDE_ONLY,
 						["u"] = REMOVED_FROM_GAME,
 					}),
