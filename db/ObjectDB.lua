@@ -1176,6 +1176,7 @@ select(2, ...).ObjectNames = {
 	[250092] = "Treasure Chest",
 	[250097] = "Small Treasure Chest",
 	[250098] = "Small Treasure Chest",
+	[250102] = "Treasure Chest",
 	[250103] = "Small Treasure Chest",
 	[250104] = "Small Treasure Chest",
 	[250106] = "Small Treasure Chest",
