@@ -243,6 +243,7 @@ _.Zones =
 						{ 59.8, 59.9, TELDRASSIL },
 						{ 43.9, 44.0, TELDRASSIL },
 					},
+					["isBreadcrumb"] = true,
 				}),
 				q(14005, {	-- The Vengeance of Elune
 					["provider"] = { "n", 1992 },	-- Tarindrella

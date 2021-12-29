@@ -21,7 +21,7 @@ _.GroupFinder =
 			i(51968),			-- Enumerated Wrap*
 			i(51989),			-- Stalwart Bands			— 4/16/19
 			i(143582),			-- Stalwart Belt			— 4/16/19
-			i(143583),			-- Stalwart Grips			— 4/16/19
+			i(143583),			-- Stalwart Grips			— 12/28/21
 			i(51984),			-- Stalwart Shoulderpads*
 			un(REMOVED_FROM_GAME, i(51997)),	-- Stalwart Spaulders
 			i(51990),			-- Stalwart Treads			— 4/16/19
@@ -33,7 +33,7 @@ _.GroupFinder =
 			i(160607),			-- Tumultuous Necklace		— 11/10/19
 			i(51992),			-- Tumultuous Ring [INT]	— confirmed by discord user on April 21, 2020
 			i(160601),			-- Tumultuous Ring [AGI]	— 4/7/19
-			i(160602),			-- Tumultuous Ring [STR]	— 9/13/19
+			i(160602),			-- Tumultuous Ring [STR]	— 12/28/21
 			i(51964),			-- Vigorous Belt			— 4/7/19
 			i(51962),			-- Vigorous Bracers			— 4/7/19
 			i(51965),			-- Vigorous Handguards		— 4/8/19
