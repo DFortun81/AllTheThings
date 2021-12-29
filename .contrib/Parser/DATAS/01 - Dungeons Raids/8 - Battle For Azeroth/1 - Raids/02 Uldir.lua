@@ -929,20 +929,18 @@ _.Instances = { tier(BFA_TIER, {
 						ach(12533, {	-- Mythic: G'huun
 							title(381),	-- <Name> the Purifier
 						}),
-						ach(12542, {	-- Hall of Fame: G'huun (Alliance)
+						ach(12542, bubbleDownSelf({["timeline"] = { "added 8.0", "removed 8.1" } }, {	-- Hall of Fame: G'huun (Alliance)
 							["races"] = ALLIANCE_ONLY,  -- Alliance races
-							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								title(374),	-- <Name>, Famed Slayer of G'huun
 							},
-						}),
-						ach(12543, {	-- Hall of Fame: G'huun (Horde)
+						})),
+						ach(12543, bubbleDownSelf({["timeline"] = { "added 8.0", "removed 8.1" } }, {	-- Hall of Fame: G'huun (Horde)
 							["races"] = HORDE_ONLY,  -- Horde races
-							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								title(374),	-- <Name>, Famed Slayer of G'huun
 							},
-						}),
+						})),
 						ach(12551),		-- Double Dribble
 						i(160690),	-- Heptavium, Staff of Torturous Knowledge
 						i(160693),	-- Lancet of the Deft Hand

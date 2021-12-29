@@ -4,20 +4,20 @@
 
 root("Holidays", d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
 	tier(TBC_TIER, {
-		["maps"] = { SHATTRATH_CITY },
-		["g"] = {
-			q(47523, {	-- Disturbance Detected: Black Temple
-				["coord"] = { 54.6, 39,  SHATTRATH_CITY },
-				["provider"] = { "n", 123252 },	-- Vormu
-				["isWeekly"] = true,
-			}),
-			q(40168, {	-- The Swirling Vial
-				["provider"] = { "i", 129747 },	-- Swirling Timewarped Vial
-				["isWeekly"] = true,
-			}),
-			n(VENDORS, {
-				n(98685, {	-- Cupri
-					-- Mounts / Pets / Toys
+		q(47523, {	-- Disturbance Detected: Black Temple
+			["coord"] = { 54.6, 39,  SHATTRATH_CITY },
+			["provider"] = { "n", 123252 },	-- Vormu
+			["isWeekly"] = true,
+		}),
+		q(40168, {	-- The Swirling Vial
+			["provider"] = { "i", 129747 },	-- Swirling Timewarped Vial
+			["isWeekly"] = true,
+		}),
+		n(VENDORS, {
+			n(98685, {	-- Cupri
+				["coord"] = { 54.4, 38.8,  SHATTRATH_CITY },
+				["g"] = {
+				-- Mounts / Pets / Toys
 					i(129923, {	-- Reins of the Eclipse Dragonhawk
 						["cost"] = { { "c", 1166, 5000 }, },	-- 5,000x Timewarped Badge
 					}),
@@ -33,7 +33,7 @@ root("Holidays", d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
 					i(151184, {	-- Verdant Throwing Sphere
 						["cost"] = { { "c", 1166, 500 }, },		-- 500x Timewarped Badge
 					}),
-					-- Gear
+				-- Gear
 					i(129853, {	-- Aftershock Waistguard
 						["cost"] = { { "c", 1166, 25 }, },	-- 25x Timewarped Badge
 					}),
@@ -136,7 +136,7 @@ root("Holidays", d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
 					i(129855, {	-- Voodo-Woven Belt
 						["cost"] = { { "c", 1166, 25 }, },	-- 25x Timewarped Badge
 					}),
-					-- Heirloom / Reputation Items
+				-- Heirloom / Reputation Items
 					i(122338, {	-- Ancient Heirloom Armor Casing
 						["cost"] = { { "c", 1166, 750 }, },		-- 750x Timewarped Badge
 						["sym"] = { { "fill" } },	-- simply fill this item
@@ -192,7 +192,7 @@ root("Holidays", d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 1166, 50 }, },	-- 50x Timewarped Badge
 					}),
-					-- Containers
+				-- Containers
 					i(35348, {	-- Bag of Fishing Treasures
 						["cost"] = { { "c", 1166, 25 }, },	-- 25x Timewarped Badge
 						["g"] = {
@@ -228,8 +228,8 @@ root("Holidays", d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
 							i(33871),	-- Recipe: Stormchops
 						},
 					}),
-				}),
+				},
 			}),
-		},
+		}),
 	}),
 })));
