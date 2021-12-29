@@ -1693,6 +1693,12 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					i(54343),	-- Blue Crashin' Thrashin' Racer Controller
 					i(108632),	-- Crashin' Thrashin' Flamer Controller
 					i(104318),	-- Crashin' Thrashin' Flyer Controller
+					i(172223, {	-- Crashin' Thrashin' Battleship
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(172222, {	-- Crashin' Thrashin' Juggernaught
+						["races"] = HORDE_ONLY,
+					}),
 					i(37710),	-- Crashin' Thrashin' Racer Controller
 					i(116763),	-- Crashin' Thrashin' Shredder Controller
 					i(139337),	-- Disposable Winter Veil Suits
