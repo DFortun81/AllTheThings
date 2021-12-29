@@ -7,6 +7,29 @@ _.Zones =
 	m(NORTHREND, {
 		m(NORTHREND_DALARAN, {
 			n(QUESTS, {
+				n(REWARDS, {
+					i(46007,  {	-- Bag of Fishing Treasures
+						["description"] = "Fishing Daily Quest Reward",
+						["crs"] = { 28742 },	-- Marcia Chase
+						["g"] = {
+							i(46004),	-- Sealed Vial of Poison
+							i(44983),	-- Strand Crawler Pet
+							i(45984),	-- Unusual Compass Toy
+							i(33820),	-- Weather-Beaten Fishing Hat
+							i(45986, {	-- Tiny Titanium Lockbox
+								i(45995),	-- Forgotten Necklace
+								i(36444),	-- Ice Encrusted Amulet
+								i(36443),	-- Platinum Medallion
+								i(36442),	-- Silken Cord Amulet
+								i(36428),	-- Bouquet Ring
+								i(45994),	-- Lost Ring
+								i(36430),	-- Puzzle Ring
+								i(36429),	-- Spur Ring
+								i(45859),	-- The 5 Ring
+							}),
+						},
+					}),
+				}),
 				q(32413, {	-- A Return to Krasarang
 					["provider"] = { "n", 68586 },	-- Grand Magister Rommath
 					["races"] = { BLOODELF, ORC },
@@ -29,34 +52,15 @@ _.Zones =
 					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
 					["isWeekly"] = true,
 				}),
-				i(46007,  {	-- Bag of Fishing Treasures
-					["description"] = "Fishing Daily Quest Reward",
-					["crs"] = { 28742 },	-- Marcia Chase
-					["g"] = {
-						i(46004),	-- Sealed Vial of Poison
-						i(44983),	-- Strand Crawler Pet
-						i(45984),	-- Unusual Compass Toy
-						i(33820),	-- Weather-Beaten Fishing Hat
-						i(45986, {	-- Tiny Titanium Lockbox
-							i(45995),	-- Forgotten Necklace
-							i(36444),	-- Ice Encrusted Amulet
-							i(36443),	-- Platinum Medallion
-							i(36442),	-- Silken Cord Amulet
-							i(36428),	-- Bouquet Ring
-							i(45994),	-- Lost Ring
-							i(36430),	-- Puzzle Ring
-							i(36429),	-- Spur Ring
-							i(45859),	-- The 5 Ring
-						}),
-					},
-				}),
 				q(13833, {	-- Blood Is Thicker
 					["coord"] = { 53.0, 64.9, NORTHREND_DALARAN },
 					["isDaily"] = true,
 					["provider"] = { "n", 28742 },	-- Marcia Chase
 					["requireSkill"] = FISHING,
 					["g"] = {
-						i(46007),	-- Bag of Fishing Treasures
+						i(46007, {	-- Bag of Fishing Treasures
+							["sym"] = { { "fill" } },	-- fill the content
+						}),
 						crit(4, {	-- Chasing Marcia (Blood is Thicker)
 							["achievementID"] = 3217,	-- Chasing Marcia
 						}),
@@ -97,7 +101,9 @@ _.Zones =
 					["provider"] = { "n", 28742 },	-- Marcia Chase
 					["requireSkill"] = FISHING,
 					["g"] = {
-						i(46007),	-- Bag of Fishing Treasures
+						i(46007, {	-- Bag of Fishing Treasures
+							["sym"] = { { "fill" } },	-- fill the content
+						}),
 						crit(3, {	-- Chasing Marcia (Dangerously Delicious)
 							["achievementID"] = 3217,	-- Chasing Marcia
 						}),
@@ -109,7 +115,9 @@ _.Zones =
 					["provider"] = { "n", 28742 },	-- Marcia Chase
 					["requireSkill"] = FISHING,
 					["g"] = {
-						i(46007),	-- Bag of Fishing Treasures
+						i(46007, {	-- Bag of Fishing Treasures
+							["sym"] = { { "fill" } },	-- fill the content
+						}),
 						crit(5, {	-- Chasing Marcia (Disarmed!)
 							["achievementID"] = 3217,	-- Chasing Marcia
 						}),
@@ -173,7 +181,9 @@ _.Zones =
 					["provider"] = { "n", 28742 },	-- Marcia Chase
 					["requireSkill"] = FISHING,
 					["g"] = {
-						i(46007),	-- Bag of Fishing Treasures
+						i(46007, {	-- Bag of Fishing Treasures
+							["sym"] = { { "fill" } },	-- fill the content
+						}),
 						crit(2, {	-- Chasing Marcia (The Jewel of the Sewers)
 							["achievementID"] = 3217,	-- Chasing Marcia
 						}),
@@ -341,7 +351,9 @@ _.Zones =
 					["provider"] = { "n", 28742 },	-- Marcia Chase
 					["requireSkill"] = FISHING,
 					["g"] = {
-						i(46007),	-- Bag of Fishing Treasures
+						i(46007, {	-- Bag of Fishing Treasures
+							["sym"] = { { "fill" } },	-- fill the content
+						}),
 						crit(1, {	-- Chasing Marcia (The Ghostfish)
 							["achievementID"] = 3217,	-- Chasing Marcia
 						}),

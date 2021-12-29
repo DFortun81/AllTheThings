@@ -62,6 +62,7 @@ _.Zones =
 					69911,	-- Zandalari Warlord
 				},
 				["maps"] = {
+					-- Throne of Thunder Maps
 					508,	-- Overgrown Statuary
 					509,	-- Royal Amphitheater
 					510,	-- Forgotten Depths
@@ -70,6 +71,7 @@ _.Zones =
 					513,	-- Hall of Kings
 					514,	-- Pinnacle of Storms
 					515,	-- Hidden Cell
+					ISLE_OF_GIANTS,
 				},
 				["g"] = {
 					i(94056),	-- Battered Saurscale Belt
@@ -111,6 +113,8 @@ _.Zones =
 					i(94065),	-- Faded Spirit-Wrencher Robe
 					i(94029),	-- Faded Spirit-Wrencher Shoulders
 					i(94041),	-- Forgotten Peacekeeper Armguards
+					i(94040),	-- Forgotten Peacekeeper Belt
+					i(94037),	-- Forgotten Peacekeeper Boots
 					i(94039),	-- Forgotten Peacekeeper Breastplate
 					i(94038),	-- Forgotten Peacekeeper Gauntlets
 					i(94036),	-- Forgotten Peacekeeper Leggings
@@ -120,13 +124,12 @@ _.Zones =
 					i(94067),	-- Forlorn Loa-Binder Shoulders
 					i(94212),	-- Hex-Caster Gavel
 					i(94094),	-- Hexbelcher Rifle
-					i(82280),	-- Immaculate Amulet
-					i(82285),	-- Immaculate Spellblade
 					i(94216),	-- Lifestep Treads
 					i(94214),	-- Loa-Binder Disc
 					i(94035),	-- Primordial Bloodsoaked Belt
 					i(94034),	-- Primordial Bloodsoaked Breastplate
 					i(94032),	-- Primordial Bloodsoaked Gauntlets
+					i(94033),	-- Primordial Bloodsoaked Greaves
 					i(94030),	-- Primordial Bloodsoaked Legplates
 					i(94031),	-- Primordial Bloodsoaked Pauldrons
 					i(94043),	-- Primordial Bloodsoaked Vambraces
@@ -144,15 +147,17 @@ _.Zones =
 					i(94211),	-- Tarnished Fanatic's Headcover
 					i(94091),	-- Tarnished Fanatic's Pauldrons
 					i(94090),	-- Tarnished Fanatic's Shackles
+					i(94086),	-- Tarnished Fanatic's Warboots
 					i(94088),	-- Tarnished Fanatic's Wargreaves
 					i(94095),	-- Thunder Eagle Staff
 					i(94075),	-- Timeworn Shadowtooth Belt
 					i(94070),	-- Timeworn Shadowtooth Boots
+					i(94072),	-- Timeworn Shadowtooth Cuirass
+					i(102348),	-- Timeworn Shadowtooth Faceguard
 					i(94071),	-- Timeworn Shadowtooth Grips
 					i(94076),	-- Timeworn Shadowtooth Shoulderpads
 					i(94074),	-- Timeworn Shadowtooth Trousers
 					i(94073),	-- Timeworn Shadowtooth Wristwraps
-					i(82258),	-- Vine Boots
 					i(94100),	-- Weighty Stone Axe
 					i(94028),	-- Zandalari Head-Cleaver
 				},

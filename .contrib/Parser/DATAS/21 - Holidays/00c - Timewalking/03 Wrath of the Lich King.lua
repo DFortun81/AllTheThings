@@ -176,23 +176,7 @@ root("Holidays", d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
 					-- Containers
 					i(46007, {  -- Bag of Fishing Treasure
 						["cost"] = { { "c", 1166, 150 }, },	-- 150x Timewarped Badge
-						["g"] = {
-							i(46004),	-- Sealed Vial of Poison
-							i(44983),	-- Strand Crawler Pet
-							i(45984),	-- Unusual Compass Toy
-							i(33820),	-- Weather-Beaten Fishing Hat
-							i(45986, {	-- Tiny Titanium Lockbox
-								i(45995),	-- Forgotten Necklace
-								i(36444),	-- Ice Encrusted Amulet
-								i(36443),	-- Platinum Medallion
-								i(36442),	-- Silken Cord Amulet
-								i(36428),	-- Bouquet Ring
-								i(45994),	-- Lost Ring
-								i(36430),	-- Puzzle Ring
-								i(36429),	-- Spur Ring
-								i(45859),	-- The 5 Ring
-							}),
-						},
+						["sym"] = { { "fill" } },	-- fill the content
 					}),
 					i(44113, {	-- Small Spice Bag
 						["cost"] = { { "c", 1166, 25 }, },	-- 25x Timewarped Badge

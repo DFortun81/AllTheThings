@@ -6,13 +6,6 @@ _.WorldDrops =
 {
 	tier(MOP_TIER, {
 		n(-1000, {	-- Sets
-			i(94056),	-- Battered Saurscale Belt
-			i(94057),	-- Battered Saurscale Boots
-			i(94055),	-- Battered Saurscale Bracers
-			i(94052),	-- Battered Saurscale Chestpiece
-			i(94054),	-- Battered Saurscale Gloves
-			i(94053),	-- Battered Saurscale Leggings
-			i(94213),	-- Bloodtusk Shoulderpads
 			i(82139),	-- Brewer's Cord
 			i(82140),	-- Brewer's Cowl
 			i(82141),	-- Brewer's Handwraps
@@ -29,42 +22,6 @@ _.WorldDrops =
 			i(82072),	-- Brick Pauldrons
 			i(82073),	-- Brick Sabatons
 			i(82075),	-- Brick Vambraces
-			i(94079),	-- Brittle Flamereaver Belt
-			i(94084),	-- Brittle Flamereaver Bracers
-			i(94083),	-- Brittle Flamereaver Gloves
-			i(94081),	-- Brittle Flamereaver Hauberk
-			i(94082),	-- Brittle Flamereaver Leggings
-			i(94077),	-- Brittle Flamereaver Mask
-			i(94080),	-- Brittle Flamereaver Pauldrons
-			i(94078),	-- Brittle Flamereaver Treads
-			i(94261),	-- Deathbog Hauberk
-			i(94045),	-- Discarded Swampstalker Belt
-			i(94049),	-- Discarded Swampstalker Boots
-			i(94044),	-- Discarded Swampstalker Gloves
-			i(94046),	-- Discarded Swampstalker Headband
-			i(94047),	-- Discarded Swampstalker Leggings
-			i(94048),	-- Discarded Swampstalker Shoulders
-			i(94050),	-- Discarded Swampstalker Tunic
-			i(94051),	-- Discarded Swampstalker Wrists
-			i(94063),	-- Exiled Dabbler's Bracer
-			i(94059),	-- Exiled Dabbler's Cinch
-			i(94062),	-- Exiled Dabbler's Gloves
-			i(94061),	-- Exiled Dabbler's Leggings
-			i(94060),	-- Exiled Dabbler's Mantle
-			i(94058),	-- Exiled Dabbler's Robe
-			i(94262),	-- Faded Spirit-Wrencher Cage
-			i(94065),	-- Faded Spirit-Wrencher Robe
-			i(94029),	-- Faded Spirit-Wrencher Shoulders
-			i(94041),	-- Forgotten Peacekeeper Armguards
-			i(94040),	-- Forgotten Peacekeeper Belt
-			i(94037),	-- Forgotten Peacekeeper Boots
-			i(94039),	-- Forgotten Peacekeeper Breastplate
-			i(94038),	-- Forgotten Peacekeeper Gauntlets
-			i(94036),	-- Forgotten Peacekeeper Leggings
-			i(94042),	-- Forgotten Peacekeeper Shoulders
-			i(94066),	-- Forlorn Loa-Binder Cage
-			i(94064),	-- Forlorn Loa-Binder Robe
-			i(94067),	-- Forlorn Loa-Binder Shoulders
 			i(82084),	-- Growing Cord
 			i(82085),	-- Growing Cowl
 			i(82086),	-- Growing Handwraps
@@ -81,7 +38,6 @@ _.WorldDrops =
 			i(82237),	-- Highpeak Pauldrons
 			i(82238),	-- Highpeak Sabatons
 			i(82240),	-- Highpeak Vambraces
-			i(94216),	-- Lifestep Treads
 			i(82122),	-- Miner Breastplate
 			i(82123),	-- Miner Gauntlets
 			i(82124),	-- Miner Girdle
@@ -106,13 +62,6 @@ _.WorldDrops =
 			i(82097),	-- Mushan Hide Jerkin
 			i(82098),	-- Mushan Hide Shoulders
 			i(82099),	-- Mushan Hide Waistband
-			i(94035),	-- Primordial Bloodsoaked Belt
-			i(94034),	-- Primordial Bloodsoaked Breastplate
-			i(94032),	-- Primordial Bloodsoaked Gauntlets
-			i(94033),	-- Primordial Bloodsoaked Greaves
-			i(94030),	-- Primordial Bloodsoaked Legplates
-			i(94031),	-- Primordial Bloodsoaked Pauldrons
-			i(94043),	-- Primordial Bloodsoaked Vambraces
 			i(82029),	-- Reed Cord
 			i(82030),	-- Reed Cowl
 			i(82031),	-- Reed Handwraps
@@ -177,14 +126,6 @@ _.WorldDrops =
 			i(82152),	-- Swamp Jerkin
 			i(82153),	-- Swamp Shoulders
 			i(82154),	-- Swamp Waistband
-			i(94085),	-- Tarnished Fanatic's Battlevest
-			i(94089),	-- Tarnished Fanatic's Deathgrips
-			i(94087),	-- Tarnished Fanatic's Girdle
-			i(94211),	-- Tarnished Fanatic's Headcover
-			i(94091),	-- Tarnished Fanatic's Pauldrons
-			i(94090),	-- Tarnished Fanatic's Shackles
-			i(94086),	-- Tarnished Fanatic's Warboots
-			i(94088),	-- Tarnished Fanatic's Wargreaves
 			i(82287),	-- Temple Breastplate
 			i(82288),	-- Temple Gauntlets
 			i(82289),	-- Temple Girdle
@@ -201,14 +142,6 @@ _.WorldDrops =
 			i(82207),	-- Thresher Jerkin
 			i(82208),	-- Thresher Shoulders
 			i(82209),	-- Thresher Waistband
-			i(94075),	-- Timeworn Shadowtooth Belt
-			i(94070),	-- Timeworn Shadowtooth Boots
-			i(94072),	-- Timeworn Shadowtooth Cuirass
-			i(102348),	-- Timeworn Shadowtooth Faceguard
-			i(94071),	-- Timeworn Shadowtooth Grips
-			i(94076),	-- Timeworn Shadowtooth Shoulderpads
-			i(94074),	-- Timeworn Shadowtooth Trousers
-			i(94073),	-- Timeworn Shadowtooth Wristwraps
 			i(82194),	-- Trellised Cord
 			i(82195),	-- Trellised Cowl
 			i(82196),	-- Trellised Handwraps

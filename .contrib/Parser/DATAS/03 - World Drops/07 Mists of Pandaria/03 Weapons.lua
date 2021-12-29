@@ -15,8 +15,6 @@ _.WorldDrops =
 				i(82265),	-- Engraved Axe
 				i(87513),	-- Axe of the Iron Price
 				i(87516),	-- Scalebreaker Axe
-				i(94028),	-- Zandalari Head-Cleaver
-				i(94099),	-- Corroded Hacker
 			}),
 			filter(TWO_HANDED_AXES, {
 				i(82019),	-- Polished Broadaxe
@@ -26,7 +24,6 @@ _.WorldDrops =
 				i(82212),	-- Inlaid Broadaxe
 				i(82267),	-- Engraved Broadaxe
 				i(87421),	-- Fellworth's Repetitive Greataxe
-				i(94100),	-- Weighty Stone Axe
 			}),
 			filter(BOWS, {
 				i(82018),	-- Polished Bow
@@ -36,7 +33,6 @@ _.WorldDrops =
 				i(82211),	-- Inlaid Bow
 				i(82266),	-- Engraved Bow
 				i(87474),	-- Ennadee's Twirling Longbow
-				i(94101),	-- Restrung Voodoo Bow
 			}),
 			filter(CROSSBOWS, {
 				i(82016),	-- Polished Crossbow
@@ -62,9 +58,6 @@ _.WorldDrops =
 				i(87467),	-- Ravenclaw Harbinger
 				i(87508),	-- Lhakaz's Missing Ribspreader
 				i(87514),	-- Sharpened Multi-Prong Dagger
-				i(94096),	-- Discarded Strikeblade
-				i(94102),	-- Chiseled Fangs
-				i(94215),	-- Saurjaw Dagger
 			}),
 			filter(FIST_WEAPONS, {
 				i(82013),	-- Polished Knuckles
@@ -74,7 +67,6 @@ _.WorldDrops =
 				i(82219),	-- Inlaid Knuckles
 				i(82274),	-- Engraved Knuckles
 				i(87509),	-- Fist of Fate
-				i(94098),	-- Dull Hawktalons
 			}),
 			filter(GUNS, {
 				i(82012),	-- Polished Gun
@@ -85,7 +77,6 @@ _.WorldDrops =
 				i(82271),	-- Engraved Gun
 				i(87476),	-- Wall Guardian's Longrifle
 				i(87477),	-- Penate's Penance-Procuring Pistol
-				i(94094),	-- Hexbelcher Rifle
 			}),
 			filter(HELD_IN_OFF_HAND, {
 				i(82010),	-- Intricate Crystal
@@ -114,7 +105,6 @@ _.WorldDrops =
 				i(87465),	-- Solianti's Insect Smasher
 				i(87512),	-- Porter's Tooth-Marked Mace
 				i(87515),	-- Ced's Crusher
-				i(94212),	-- Hex-Caster Gavel
 			}),
 			filter(TWO_HANDED_MACES, {
 				i(82008),	-- Polished Hammer
@@ -133,7 +123,6 @@ _.WorldDrops =
 				i(82221),	-- Inlaid Spear
 				i(82276),	-- Engraved Spear
 				i(87420),	-- Ritter's Rat Render
-				i(94103),	-- Ritual Headcleaver Halberd
 			}),
 			filter(SHIELDS, {
 				i(82004),	-- Wall Shield
@@ -146,8 +135,6 @@ _.WorldDrops =
 				i(87487),	-- Turpster's Sonorous Shield
 				i(87488),	-- Don Carlos' Drifting Shield
 				i(90575),	-- Sutiru's Brazen Bulwark
-				i(94214),	-- Loa-Binder Disc
-				i(94218),	-- Skyking Bulwark
 			}),
 			filter(STAVES, {
 				i(82002),	-- Polished Staff
@@ -165,9 +152,6 @@ _.WorldDrops =
 				i(87417),	-- Staff of Broken Hopes
 				i(87419),	-- Kaleiki's Lost Training Staff
 				i(87422),	-- Matsuba's Breadmaker
-				i(94095),	-- Thunder Eagle Staff
-				i(94097),	-- Defective Soulgem Staff
-				i(94104),	-- Sky-Shaper Staff
 			}),
 			filter(ONE_HANDED_SWORDS, {
 				i(82001),	-- Polished Sword
@@ -179,8 +163,6 @@ _.WorldDrops =
 				i(87466),	-- Ritualistic Sickle
 				i(87510),	-- Buc-Zakai Bugslicer
 				i(87511),	-- Horrifying Meatsaw
-				i(94093),	-- Saur-Singer Spellblade
-				i(94217),	-- Stubby Talonblade
 			}),
 			filter(TWO_HANDED_SWORDS, {
 				i(82000),	-- Polished Greatsword
@@ -200,7 +182,6 @@ _.WorldDrops =
 				i(82286),	-- Immaculate Wand
 				i(87475),	-- Wand of Stultifying Smoke
 				i(87478),	-- Wand of the Exiled Path
-				i(94092),	-- Rustic Voodoo Wand
 			}),
 		}),
 	}),
