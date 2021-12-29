@@ -4392,7 +4392,7 @@ app.GetAbsoluteReagentNumInRecipe = function(sourceItemID, targetItemID, reagent
 			reagentMinCount = reagentMinCount + quantity;
             reagentMaxCount = reagentMaxCount + quantity;
 		else
-			local extraMin, extraMax = app.GetReagentNumToCraftItem(sourceItemID, reagentID, quantity);
+			local extraMin, extraMax = app.GetReagentNumToCraftItem(sourceItemID, reagentID, quantity, recipeCache);
             reagentMinCount = reagentMinCount + extraMin;
             reagentMaxCount = reagentMaxCount + extraMax;
 		end
@@ -4415,11 +4415,9 @@ app.GetReagentNumToCraftItem = function(sourceItemID, targetItemID, neededQuanti
 			
 			if recipeResult then
 				recipeResultMin, recipeResultMax = unpack(recipeResult);
-				print('debug test 1', reagentMinCount, reagentMaxCount);
 			else
 				recipeResultMin, recipeResultMax = app.GetAbsoluteReagentNumInRecipe(sourceItemID, targetItemID, reagents, recipeCache);
 				recipeCache[recipeID] = { recipeResultMin, recipeResultMax };
-				print('debug test 2', recipeResultMin, recipeResultMax);
 			end
 			
 			-- In some cases for multiple items the ceiling here will accumulate an error
