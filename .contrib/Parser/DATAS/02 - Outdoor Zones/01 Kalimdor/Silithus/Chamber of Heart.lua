@@ -61,14 +61,14 @@ root("Zones", {
 							["provider"] = { "i", 171320 },	-- Void Focus
 							["description"] = "Can be made with any crafting profession.",
 						}),
-						q(57276, {	-- Maintaining Focus (A)
+						q(57464, {	-- Maintaining Focus (A)
 							["races"] = ALLIANCE_ONLY,
 							["coord"] = { 46.1, 63.9, REPAIRED_CHAMBER_OF_HEART },
 							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57275,	-- Something in Your Mind
 							["cost"] = { { "i", 171176, 20 }, },	-- 20x Shred of Insanity
 						}),
-						q(57464, {	-- Maintaining Focus (H)
+						q(57276, {	-- Maintaining Focus (H)
 							["sourceQuest"] = 57275,	-- Something in Your Mind
 							["provider"] = { "n", 155496 },	-- Wrathion
 							["coord"] = { 46.1, 63.9, REPAIRED_CHAMBER_OF_HEART },
