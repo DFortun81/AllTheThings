@@ -204,6 +204,7 @@ local L = app.L;
 	--TODO: L.AH_SCAN_SUCCESSFUL_1 = ": Successfully scanned ";
 	--TODO: L.AH_SCAN_SUCCESSFUL_2 = " item(s).";
 	--TODO: L.REAGENT_CACHE_OUT_OF_DATE = "Reagent Cache is out-of-date and will be re-cached when opening your professions!";
+	--TODO: L.ARTIFACT_CACHE_OUT_OF_DATE = "Artifact Cache is out-of-date/inaccurate and will be re-cached when logging onto each character!";
 	--TODO: L.QUEST_LOOP = "Likely just broke out of an infinite source quest loop.";
 	--TODO: L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "Quest '%s' %s will prevent collection of Breadcrumb Quest '%s' %s";
 	--TODO: L.QUEST_OBJECTIVE_INVALID = "Invalid Quest Objective";
@@ -766,6 +767,8 @@ for key,value in pairs({
 			--TODO: [-676] = select(2, GetAchievementInfo(8791))..": Season 13",-- Tyrannical Gladiator: Season 13
 			--TODO: [-652] = "Honor Gear Grievous Season",			-- Honor Gear Grievous Season
 			--TODO: [-651] = "Honor Gear Prideful Season",			-- Honor Gear Prideful Season
+	-- Pets
+		--TODO: [-795] = "Pet Battle Dungeons",						-- Pet Battle Dungeons
 	-- Secret Header
 		[-806] = "Cintiempo libre",									-- Waist of Time
 	-- Chests
@@ -788,8 +791,6 @@ for key,value in pairs({
 		--TODO: [-911] = "Hunt: Shadehounds",						-- Hunt: Shadehounds
 		--TODO: [-912] = "Hunt: Winged Soul Eaters",				-- Hunt: Winged Soul Eaters
 		--TODO: [-913] = "Tormentors of Torghast",					-- Tormentors of Torghast
-		--TODO: [-914] = "Adventures",								-- Adventures
-		--TODO: [-915] = "Anima Conductor",							-- Anima Conductor
 		[-977] = "Maelie la Errante",								-- Maelie the Wanderer
 		[-979] = "Especulador Ve'ken & Especulador Ve'nott",		-- Broker Ve'ken & Broker Ve'nott
 		-- SL Maldraxxus/Necrolord
@@ -845,8 +846,6 @@ for key,value in pairs({
 	------ ACHIEVEMENT HEADERS SECTION ------
 		--TODO: [-10071] = "Visions of N'Zoth",
 		--TODO: [-10072] = "N'Zoth Assault",
-		--TODO: [-10073] = "Horrific Vision of Orgrimmar",
-		--TODO: [-10074] = "Horrific Vision of Stormwind",
 		[-10075] = "Asalto: Avance amathet",						-- Assault: Amathet Advance
 		[-10076] = "Asalto: El Imperio Negro",						-- Assault: The Black Empire
 		[-10077] = "Asalto: Clanes enfrentados",					-- Assault: The Warring Clans
@@ -854,7 +853,7 @@ for key,value in pairs({
 		[-10079] = "Asalto: Aqir desenterrados",					-- Assault: Aqir Unearthed
 		--TODO: [-10081] = "Corrupted Area",
 		--TODO: [-10082] = "Lost Area",
-		-- Shadowlands Achievement Header
+		-- Shadowlands Achievement Headers
 			-- 9.1
 				--TODO: [-10083] = "Covenant Assaults",				-- Covenant Assaults
 			--	hopefully temp objects, these currently do not have accessible object data on wowhead
@@ -1002,6 +1001,7 @@ for key,value in pairs({
 	[177964] = "Piedra de las profundidades",	-- Fathom Stone
 	[178144] = "Cofre trol",	-- Troll Chest
 	[178227] = "Cesta de tótems de Murgut",	-- Murgut's Totem Basket
+	[178609] = "Nieve de Vacaciones",	-- Holiday Snow
 	[179485] = "Trampa rota",	-- A Broken Trap
 	[179499] = "Cesta de tanino de ogro",	-- Ogre Tannin Basket
 	[179501] = "Alijo de Knot Thimblejack",	-- Knot Thimblejack's Cache
@@ -1026,6 +1026,11 @@ for key,value in pairs({
 	[180690] = "Arca del escarabajo grande",	-- Large Scarab Coffer
 	[180691] = "Arca del escarabajo",	-- Scarab Coffer
 	--TODO: [180717] = "The Scarab Gong",	-- The Scarab Gong
+	[180743] = "Presente envuelto con cuidado",	-- Carefully Wrapped Present
+	[180746] = "Obsequio ligeramente agitado",	-- Gently Shaken Gift
+	[180747] = "Presente con envoltorio alegre",	-- Gaily Wrapped Present
+	[180748] = "Presente que hace tic-tac",	-- Ticking Present
+	[180793] = "Obsequio festivo",	-- Festive Gift
 	[180794] = "Diario de Jandice Barov",	-- Journal of Jandice Barov
 	[180918] = "Se busca: Thaelis el Hambriento",	-- Wanted: Thaelis the Hungerer
 	[181011] = "Diario del magister Ocaso Marchito",	-- Magister Duskwither's Journal
@@ -1071,6 +1076,7 @@ for key,value in pairs({
 	[186585] = "Pergamino de piel de dragón",	-- Dragonskin Scroll
 	--TODO: [186881] = "Dark Iron Sabotage Plans",	-- Dark Iron Sabotage Plans
 	[186887] = "Calabaza iluminada",	-- Large Jack-o'-Lantern
+	[187236] = "Obsequio del Festival de Invierno",	-- Winter Veil Gift
 	[187273] = "Huella de casco sospechosa",	-- Suspicious Hoofprint
 	[187559] = "Fogata de la Horda",	-- Horde Bonfire
 	[187564] = "Fogata de la Alianza",	-- Alliance Bonfire
@@ -1521,6 +1527,7 @@ for key,value in pairs({
 	[230402] = "Moneda de la suerte",	-- Lucky Coin
 	[230424] = "Caja fuerte cubierta de nieve",	-- Snow-Covered Strongbox
 	[230425] = "Hueso mordisqueado",	-- Gnawed Bone
+	[230428] = "Depósito de verahierro humeante",	-- Smoldering True Iron Deposit
 	[230611] = "Saco de botín de pálido",	-- Pale Loot Sack
 	[230643] = "Nido de garráptero",	-- Teroclaw Nest
 	[230664] = "Espada de cristal de Torvath",	-- The Crystal Blade of Torvath
@@ -1669,6 +1676,7 @@ for key,value in pairs({
 	[234455] = "Reliquias de los desterrados",	-- Relics of the Outcasts
 	[234456] = "Arcón Mano Destrozada",	-- Shattered Hand Lockbox
 	[234458] = "Alijo Mano Destrozada",	-- Shattered Hand Cache
+	[234461] = "Veneno de colmillo tóxico",	-- Toxicfang Venom
 	[234471] = "Rociador 5000 XT",	-- Spray-O-Matic 5000 XT
 	[234472] = "Ron de 90 grados del marinero Zazzuk",	-- Sailor Zazzuk's 180-Proof Rum
 	[234473] = "Aportaciones de la campaña",	-- Campaign Contributions
@@ -1766,6 +1774,7 @@ for key,value in pairs({
 	[237022] = "Tablón de mando",	-- Command Board
 	[237511] = "Espora extraña",	-- Strange Spore
 	[237821] = "Órdenes de Furiafilo",	-- Bladefury's Orders
+	[237946] = "Arca de espíritus",	-- Spirit Coffer
 	[239120] = "Mochila de Okuna Colmillo Largo",	-- Okuna Longtusk's Pack
 	[239143] = "Vaso de leche caliente",	-- Glass of Warm Milk
 	[239171] = "Vaso de leche caliente",	-- Glass of Warm Milk
@@ -2331,6 +2340,7 @@ for key,value in pairs({
 	[282478] = "Cajón vacío",	-- Empty Crate
 	[282498] = "Flauta del desierto",	-- Desert Flute
 	[282666] = "Urna de Agussu",	-- Urn of Agussu
+	[282721] = "Arqueta",	-- Treasure Chest
 	[284426] = "Máquina minera enterrada",	-- Buried Mining Machine
 	[284448] = "Cofre de erudito oculto",	-- Hidden Scholar's Chest
 	[284454] = "Recompensa del Tiburón Blanco",	-- Da White Shark's Bounty
@@ -2460,6 +2470,7 @@ for key,value in pairs({
 	[296916] = "Estela Drust: El ritual",	-- Drust Stele: The Ritual
 	[296917] = "Estela Drust: El árbol",	-- Drust Stele: The Tree
 	[296918] = "Estela Drust: Transferencia de alma",	-- Drust Stele: Breath Into Stone
+	[297069] = "Cómoda",	-- Dresser
 	[297492] = "Tablón de anuncios",	-- Bulletin Board
 	[297627] = "Estela Drust: El sacrificio",	-- Drust Stele: Sacrifice
 	[297628] = "Estela Drust: Ensamblajes",	-- Drust Stele: Constructs
@@ -2595,6 +2606,7 @@ for key,value in pairs({
 	[334216] = "Alijo del Imperio Negro",	-- Black Empire Cache
 	[336415] = "Pergamino desechado",	-- Discarded Scroll
 	[337237] = "Cámara perdida",	-- Lost Vault
+	[337241] = "Equipamiento oculto",	-- Stashed Equipment
 	[339211] = "|cFFFFFFFFStep 2:|r Plato vacío",	-- |cFFFFFFFFStep 2:|r Empty Dish
 	[339283] = "Cofre de noble olvidado",	-- Forgotten Noble's Chest
 	[339601] = "Pergamino de los Eones",	-- Scroll of Aeons

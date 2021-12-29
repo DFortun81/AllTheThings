@@ -123,7 +123,10 @@ _.Zones =
 						["provider"] = { "n", 40641 },	-- Divemaster Birmingham
 						["coord"] = { 48.9, 49.1, 205 },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = { 25538 },	-- Odor Coater
+						["sourceQuests"] = {
+							25538,	-- Odor Coater
+							25539,	-- Clamming Up
+						},
 						["g"] = {
 							i(59727),	-- Queen Conch Chestguard
 							i(59726),	-- Sea Star Wristwraps

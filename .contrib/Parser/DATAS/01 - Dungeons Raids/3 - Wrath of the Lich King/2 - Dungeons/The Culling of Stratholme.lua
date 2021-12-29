@@ -161,7 +161,6 @@ _.Instances = { tier(WOTLK_TIER, {
 				})),
 			}),
 			d(2,   {	-- Heroic
-				["ignoreBonus"] = true,
 				["lvl"] = 80,
 				["g"] = {
 					cr(26529, e(611, {	-- Meathook

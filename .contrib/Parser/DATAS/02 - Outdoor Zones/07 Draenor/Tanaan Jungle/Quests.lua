@@ -753,15 +753,15 @@ _.Zones =
 		}),
 	}),
 };
-_.HiddenQuestTriggers = {
+root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
-		q(38836),	-- Aktar's Post (Aktar's Post visited)
-		q(39306),	-- Call to Arms (chosen during "Bring the Reinforcements")
-		q(39183),	-- FLAG - Immaculate Critical Strike Taladite (learning Immaculate Critical Strike Taladite at an Apexis Gemcutter)
-		q(39184),	-- FLAG - Immaculate Haste Taladite (learning Immaculate Haste Taladite at an Apexis Gemcutter)
-		q(39185),	-- FLAG - Immaculate Mastery Taladite (learning Immaculate Mastery Taladite at an Apexis Gemcutter)
-		q(39186),	-- FLAG - Immaculate Multistrike Taladite (learning Immaculate Multistrike Taladite at an Apexis Gemcutter)
-		q(39187),	-- FLAG - Immaculate Stamina Taladite (learning Immaculate Stamina Taladite at an Apexis Gemcutter)
+		q(38836),	-- Aktar's Post - Aktar's Post visited
+		q(39306),	-- Call to Arms - chosen during "Bring the Reinforcements"
+		q(39183),	-- FLAG - Immaculate Critical Strike Taladite - learning Immaculate Critical Strike Taladite at an Apexis Gemcutter
+		q(39184),	-- FLAG - Immaculate Haste Taladite - learning Immaculate Haste Taladite at an Apexis Gemcutter
+		q(39185),	-- FLAG - Immaculate Mastery Taladite - learning Immaculate Mastery Taladite at an Apexis Gemcutter
+		q(39186),	-- FLAG - Immaculate Multistrike Taladite - learning Immaculate Multistrike Taladite at an Apexis Gemcutter
+		q(39187),	-- FLAG - Immaculate Stamina Taladite - learning Immaculate Stamina Taladite at an Apexis Gemcutter
 		q(37886),	-- Max-level Choice Tracker: Tanaan 6.2 - Ironhold (A)
 		q(37946),	-- Max-level Choice Tracker: Tanaan 6.2 - Ironhold (H)
 		q(38583),	-- Max-Level Choice Tracker: Tanaan 6.2 - Group - Throne of Kil'jaeden (A)
@@ -776,18 +776,25 @@ _.HiddenQuestTriggers = {
 		q(38038),	-- Max-level Choice Tracker: Tanaan 6.2 - The Iron Front (H)
 		q(38042),	-- Max-level Choice Tracker: Tanaan 6.2 - Zeth'Gol (A)
 		q(38041),	-- Max-level Choice Tracker: Tanaan 6.2 - Zeth'Gol (H)
-		q(33069),	-- REUSEME (after killing Supreme Lord Kazzak and using Bonus Roll)
-		q(39416),	-- Skoller's Bag o' Squirrel Treats - after talking to Skoller and getting his toy (Skoller's Bag of Squirrel Treats)
+		q(39377),	-- Short-Supply Reward - Executor Riloth rare, first kill ever
+		q(39378),	-- Short-Supply Reward - Jax'zor rare, first kill ever
+		q(39376),	-- Short-Supply Reward - 50.4, 34.5 ??
+		q(39375),	-- Short-Supply Reward - triggers after looting Suspiciously Glowing Chest
+		q(39434),	-- Short-Supply Reward - triggers on the first rare kill (Baleful Spaulders itemID 128348)
+		q(39416),	-- Skoller's Bag o' Squirrel Treats - triggers after talking to Skoller and getting his toy (Skoller's Bag of Squirrel Treats)
 		q(37887),	-- Tanaan Garrison Max-level Choice Tracker: ANY CHOICE MADE (A)
 		q(37892),	-- Tanaan Garrison Max-level Choice Tracker: ANY CHOICE MADE (H)
 		q(37969),	-- Tanaan Jungle - Tracking Quest - Vol'mar Built - JMC
 		q(38433),	-- Tanaan Jungle - Tracking Quest - Lion's Watch Built - JMC
+		q(38234),	-- Tracking Event: Inscribed Ruin Found - triggers during quest "Get a Clue" (questID 38213), clue #3
+		q(38236),	-- Tracking Event: Note Found - triggers during quest "Get a Clue" (questID 38213), clue #1
+		q(38231),	-- Tracking Event: Shrine Found - triggers during quest "Get a Clue" (questID 38213), clue #2
 	}),
 	tier(BFA_TIER, {
 		q(50678),	-- learning Ensemble: Battlegear of the Frostwolves
 		q(50680),	-- learning Ensemble: Ceremonial Karabor Finery
 	}),
-};
+});
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(WOD_TIER, {
 		n(QUESTS, {

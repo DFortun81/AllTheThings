@@ -375,7 +375,7 @@ _.Zones =
 					["provider"] = { "n", 166723 },	-- Highlord Darion Morgraine
 					["coord"] = { 19.2, 57.0, 1648 },	-- pre-SL scenario
 				}),
-				i(63164, {	-- Mawsworn Orders
+				q(63164, {	-- Mawsworn Orders
 					["provider"] = { "i", 183070 },	-- Mawsworn Orders
 				}),
 				q(63134, {	-- Mawsworn Patrol Map

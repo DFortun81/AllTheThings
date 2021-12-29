@@ -584,7 +584,9 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 96469 },	-- Odyn
 							["sourceQuest"] = 46208,	-- A Godly Invitation
 							["g"] = {
-								i(142232),	-- Iron Reins of the Bloodthirsty War Wyrm
+								i(142232, {		-- Battlelord's Bloodthirsty War Wyrm
+									["classes"] = { WARRIOR },
+								}),
 							},
 						}),
 						q(40585, {	-- Thus Begins the War

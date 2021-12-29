@@ -204,6 +204,7 @@ local L = app.L;
 	L.AH_SCAN_SUCCESSFUL_1 = ": Успешно сканировано ";
 	L.AH_SCAN_SUCCESSFUL_2 = " предмет(ов).";
 	L.REAGENT_CACHE_OUT_OF_DATE = "Кэш реагентов устарел и будет обновлен, когда откроете Ваши профессии!";
+	L.ARTIFACT_CACHE_OUT_OF_DATE = "Кэш Артефактов устарел и будет обновлен, когда перелогинитесь!";
 	L.QUEST_LOOP = "Скорее всего ATT вырвался из цепочки зацикленных заданий.";
 	L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "Задание '%s' %s не позволит собрать Хлебную Кроху '%s' %s";
 	L.QUEST_OBJECTIVE_INVALID = "Недействительная Цель Задания";
@@ -745,6 +746,8 @@ for key,value in pairs({
 			[-676] = select(2, GetAchievementInfo(8791))..": Сезон 13",	-- Tyrannical Gladiator: Season 13
 			[-652] = "Доспехи Бездушного гладиатора за очки чести",		-- Honor Gear Grievous Season
 			[-651] = "Доспехи Гордого гладиатора за очки чести",		-- Honor Gear Prideful Season
+	-- Pets
+		[-795] = "Подземелья Боевых питомцев",						-- Pet Battle Dungeons
 	-- Secret Header
 		[-806] = "Часовой пояс",									-- Waist of Time
 	-- Chests
@@ -767,8 +770,6 @@ for key,value in pairs({
 		[-911] = "Охота: темные гончие",							-- Hunt: Shadehounds
 		[-912] = "Охота: крылатые пожиратели душ",					-- Hunt: Winged Soul Eaters
 		[-913] = "Мучители из Торгаста",							-- Tormentors of Torghast
-		[-914] = "Приключения",										-- Adventures
-		[-915] = "Проводник анимы",									-- Anima Conductor
 		[-977] = "Маэли Странница",									-- Maelie the Wanderer
 		[-979] = "Брокер Ве'кен & Брокер Ве'нотт",					-- Broker Ve'ken & Broker Ve'nott
 		-- SL Maldraxxus/Necrolord
@@ -827,8 +828,6 @@ for key,value in pairs({
 	------ ACHIEVEMENT HEADERS SECTION ------
 		[-10071] = "Видения Н'Зота",
 		[-10072] = "Нападение Н'Зота",
-		[-10073] = "Жуткое видение Оргримара",
-		[-10074] = "Жуткое видение Штормграда",
 		[-10075] = "Нападение: наступление аматетов",
 		[-10076] = "Нападение: Темная Империя",
 		[-10077] = "Нападение: враждебные кланы",
@@ -836,7 +835,7 @@ for key,value in pairs({
 		[-10079] = "Нападение: появление акиров",
 		[-10081] = "Заражённая область",
 		[-10082] = "Захваченная область",
-		-- Shadowlands Achievement Header
+		-- Shadowlands Achievement Headers
 			-- 9.1
 				[-10083] = "Нападения Ковенантов",					-- Covenant Assaults
 			--	hopefully temp objects, these currently do not have accessible object data on wowhead
@@ -984,6 +983,7 @@ for key,value in pairs({
 	[177964] = "Глубинный Камень",	-- Fathom Stone
 	[178144] = "Тролльский сундук",	-- Troll Chest
 	[178227] = "Корзина тотема Мургута",	-- Murgut's Totem Basket
+	[178609] = "Праздничный снег",	-- Holiday Snow
 	[179485] = "Сломанная ловушка",	-- A Broken Trap
 	[179499] = "Огрский дубильный чан",	-- Ogre Tannin Basket
 	[179501] = "Тайник Уззла Наперстяка",	-- Knot Thimblejack's Cache
@@ -1008,6 +1008,11 @@ for key,value in pairs({
 	[180690] = "Большой сундук Скарабея",	-- Large Scarab Coffer
 	[180691] = "Сундук Скарабея",	-- Scarab Coffer
 	[180717] = "Гонг Скарабея",	-- The Scarab Gong
+	[180743] = "Тщательно упакованный подарок",	-- Carefully Wrapped Present
+	[180746] = "Слегка помятый подарок",	-- Gently Shaken Gift
+	[180747] = "Подарок в яркой упаковке",	-- Gaily Wrapped Present
+	[180748] = "Тикающий подарок",	-- Ticking Present
+	[180793] = "Подарок в разноцветной упаковке",	-- Festive Gift
 	[180794] = "Дневник Джандис Баровой",	-- Journal of Jandice Barov
 	[180918] = "Разыскивается: Таэлис Ненасытный",	-- Wanted: Thaelis the Hungerer
 	[181011] = "Журнал магистра Блеклые Сумерки",	-- Magister Duskwither's Journal
@@ -1053,6 +1058,7 @@ for key,value in pairs({
 	[186585] = "Свиток из кожи дракона",	-- Dragonskin Scroll
 	--TODO: [186881] = "Dark Iron Sabotage Plans",	-- Dark Iron Sabotage Plans
 	[186887] = "Большой светильник из тыквы",	-- Large Jack-o'-Lantern
+	[187236] = "Подарок к Зимнему Покрову",	-- Winter Veil Gift
 	[187273] = "Подозрительный след копыта",	-- Suspicious Hoofprint
 	[187559] = "Большой костер Орды",	-- Horde Bonfire
 	[187564] = "Большой костер Альянса",	-- Alliance Bonfire
@@ -1503,6 +1509,7 @@ for key,value in pairs({
 	[230402] = "Счастливая монетка",	-- Lucky Coin
 	[230424] = "Покрытый снегом сейф",	-- Snow-Covered Strongbox
 	[230425] = "Изгрызенная кость",	-- Gnawed Bone
+	[230428] = "Дымящиеся залежи истинного железа",	-- Smoldering True Iron Deposit
 	[230611] = "Мешок с добычей бледнокожих",	-- Pale Loot Sack
 	[230643] = "Гнездо страхоклюва",	-- Teroclaw Nest
 	[230664] = "Хрустальный клинок Торвата",	-- The Crystal Blade of Torvath
@@ -1651,6 +1658,7 @@ for key,value in pairs({
 	[234455] = "Сокровища изгоев",	-- Relics of the Outcasts
 	[234456] = "Ларец клана Изувеченной Длани",	-- Shattered Hand Lockbox
 	[234458] = "Тайник клана Изувеченной Длани",	-- Shattered Hand Cache
+	[234461] = "Яд ядозубого рилака",	-- Toxicfang Venom
 	[234471] = "\"Распылитель 5000 XT\"",	-- Spray-O-Matic 5000 XT
 	[234472] = "Питье моряка Заззука",	-- Sailor Zazzuk's 180-Proof Rum
 	[234473] = "Взносы кампании",	-- Campaign Contributions
@@ -1748,6 +1756,7 @@ for key,value in pairs({
 	[237022] = "Доска приказов",	-- Command Board
 	[237511] = "Странная спора",	-- Strange Spore
 	[237821] = "Приказы Ярости Клинка",	-- Bladefury's Orders
+	[237946] = "Сундук духа",	-- Spirit Coffer
 	[239120] = "Рюкзак Окуны Большого Бивня",	-- Okuna Longtusk's Pack
 	[239143] = "Стакан теплого молока",	-- Glass of Warm Milk
 	[239171] = "Стакан теплого молока",	-- Glass of Warm Milk
@@ -2313,6 +2322,7 @@ for key,value in pairs({
 	[282478] = "Пустой ящик",	-- Empty Crate
 	[282498] = "Пустынная флейта",	-- Desert Flute
 	[282666] = "Урна Агассу",	-- Urn of Agussu
+	[282721] = "Сундук с сокровищами",	-- Treasure Chest
 	[284426] = "Закопанная буровая машина",	-- Buried Mining Machine
 	[284448] = "Спрятанный сундук ученого",	-- Hidden Scholar's Chest
 	[284454] = "Сокровище Белой Акулы",	-- Da White Shark's Bounty
@@ -2442,6 +2452,7 @@ for key,value in pairs({
 	[296916] = "Друстская стела: \"Ритуал\"",	-- Drust Stele: The Ritual
 	[296917] = "Друстская стела: \"Древо\"",	-- Drust Stele: The Tree
 	[296918] = "Друстская стела: \"Окаменение\"",	-- Drust Stele: Breath Into Stone
+	[297069] = "Гардероб",	-- Dresser
 	[297492] = "Доска объявлений",	-- Bulletin Board
 	[297627] = "Друстская стела: \"Жертва\"",	-- Drust Stele: Sacrifice
 	[297628] = "Друстская стела: \"Создания\"",	-- Drust Stele: Constructs
@@ -2577,6 +2588,7 @@ for key,value in pairs({
 	[334216] = "Тайник Темной Империи",	-- Black Empire Cache
 	[336415] = "Выброшенный свиток",	-- Discarded Scroll
 	[337237] = "Утерянное хранилище",	-- Lost Vault
+	[337241] = "Сложенное снаряжение",	-- Stashed Equipment
 	[339211] = "|cFFFFFFFFШаг 2:|r Пустая миска",	-- |cFFFFFFFFStep 2:|r Empty Dish
 	[339283] = "Позабытый сундук аристократа",	-- Forgotten Noble's Chest
 	[339601] = "Свиток веков",	-- Scroll of Aeons

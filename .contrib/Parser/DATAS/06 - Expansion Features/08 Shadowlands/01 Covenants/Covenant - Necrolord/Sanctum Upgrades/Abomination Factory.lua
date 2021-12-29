@@ -1490,6 +1490,7 @@ root("HiddenQuestTriggers", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_C
 			q(63099),	-- Opening 184589, Bag of Potions from Atticus
 			--q(62535),	-- Unknown Maybe critera for Corspe Run
 			q(60873),	-- Buying Bag of Sin Stones (180442) from Atticus
+			q(62988),	-- digging with Chordy in Revendreth
 
 		-- Crypt Couture criterias
 			q(62404),	-- using Ashen Ink (Crypt Couture)

@@ -136,7 +136,6 @@ _.Instances = { tier(CATA_TIER, {
 			}),
 			d(2, {	-- Heroic
 				["lvl"] = 85,
-				["ignoreBonus"] = true,
 				["groups"] = {
 					cr(43438, e(110, {	-- Corborus
 						i(157592),	-- Crackling Geode Mace
@@ -190,3 +189,9 @@ _.Instances = { tier(CATA_TIER, {
 		},
 	}),
 })};
+root("HiddenQuestTriggers", {
+	tier(WOD_TIER, {
+		q(35911),	-- Stonecore Reward Quest - Normal completion
+		q(35913),	-- Stonecore (Heroic) Reward Quest - Heroic completion
+	}),
+});

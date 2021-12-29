@@ -37,7 +37,9 @@ _.Zones =
 								["coord"] = { 62.5, 26.3, STORMSONG_VALLEY },
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
-									i(170069),	-- Honeyback Harvester's Harness
+									i(170069, {	-- Honeyback Harvester's Harness
+										["races"] = ALLIANCE_ONLY,
+									}),
 								},
 							}),
 							q(56144, {	-- Old Nasha's Paw

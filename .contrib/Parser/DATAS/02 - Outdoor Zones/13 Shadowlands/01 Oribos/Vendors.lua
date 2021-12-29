@@ -120,6 +120,14 @@ _.Zones =
 							},
 							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
+						i(190184, {	-- Incense of Infinity
+							["questID"] = 65623,
+							["cost"] = { { "g", 5000000 } },	-- 500g
+							["sym"] = {
+								{"select","tierID",SL_TIER},{"pop"},	-- SL Tier
+								{"where","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
+							},
+						}),
 						i(187869),	-- Scouting Map: Into the Shadowlands (TOY!)
 						i(188673),	-- Timebound Runimations
 						i(188174, {	-- Unchained Equipment Cache

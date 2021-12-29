@@ -38,6 +38,11 @@ root("Zones", {
 					["questID"] = 50045,
 					["coord"] = { 76.8, 62.1, NAZMIR },
 				}),
+				o(282721, {	-- Treasure Chest
+					["questID"] = 50893,
+					["isDaily"] = true, -- unconfirmed
+					["coord"] = { 73.8, 48.6, NAZMIR },
+				}),
 				o(279299, {	-- Venomous Seal
 					["questID"] = 49889,
 					["coord"] = { 46.2, 82.9, NAZMIR },

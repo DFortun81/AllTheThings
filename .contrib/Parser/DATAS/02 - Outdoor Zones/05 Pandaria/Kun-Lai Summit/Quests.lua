@@ -1446,44 +1446,6 @@ _.Zones =
 					["coord"] = { 70.0, 71.8, KUN_LAI_SUMMIT },
 					["sourceQuest"] = 30488,	-- The Missing Muskpaw
 				}),
-
-				spell(229385, {	-- Ban-Lu, Grandmaster's Companion
-					["classes"] = { MONK },
-					["lvl"] = 110,
-					["g"] = {
-						q(46343, {	-- The Trail of Ban-Lu
-							["provider"] = { "n", 120722 },	-- Master Bu
-							["sourceQuests"] = { 46342 },	-- Return to the Broken Peak
-						}),
-						q(46344, {	-- Smelly's Luckydo
-							["provider"] = { "n", 120744 },	-- Smelly Mountaintop
-							["sourceQuests"] = { 46343 },	-- The Trail of Ban-Lu
-						}),
-						q(46346, {	-- The Shadow of Ban-Lu
-							["provider"] = { "n", 120722 },	-- Master Bu
-							["sourceQuests"] = { 46344 },	-- Smelly's Luckydo
-						}),
-						q(46347, {	-- Clean-up on Aisle Sha
-							["provider"] = { "n", 120722 },	-- Master Bu
-							["sourceQuests"] = { 46346 },	-- The Shadow of Ban-Lu
-						}),
-						q(46348, {	-- The River to Ban-Lu
-							["provider"] = { "n", 120722 },	-- Master Bu
-							["sourceQuests"] = { 46347 },	-- Clean-up on Aisle Sha
-						}),
-						q(46349, {	-- Lilies for Ryuli
-							["provider"] = { "n", 120726 },	-- Waterspeaker Ryuli
-							["sourceQuests"] = { 46348 },	-- The River to Ban-Lu
-						}),
-						q(46350, {	-- The Trial of Ban-Lu
-							["provider"] = { "n", 120726 },	-- Waterspeaker Ryuli
-							["sourceQuests"] = { 46349 },	-- Lilies for Ryuli
-							["g"] = {
-								i(142225),	-- Ban-Lu, Grandmaster's Companion
-							},
-						}),
-					},
-				}),
 			}),
 		}),
 	}),

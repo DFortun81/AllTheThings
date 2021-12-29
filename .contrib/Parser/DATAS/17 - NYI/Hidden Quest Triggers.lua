@@ -41,9 +41,6 @@ _.HiddenQuestTriggers = {
 		--  UNKNOWN/NYI  --
 		-------------------
 		q(38995),	-- Unused
-		q(39749),	-- Tracking Quest (triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands)
-		q(39748),	-- Tracking Quest (triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands)
-					-- Unflagged/flagged on a lvl 1 Bank alt when logging in lol
 		q(48671),	-- Lockout Tracking - Normal - Fire
 		q(48674),	-- Lockout Tracking - Normal - Islands. Possibly used in multiple situations
 		q(48676),	-- Lockout Tracking - Normal - Forest.
@@ -102,34 +99,10 @@ _.HiddenQuestTriggers = {
 		q(54632),	-- Paragon of the Zandalari Empire
 
 	--	PVP quests
-		q(38109, {	-- Vanilla 10-19
-			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
-		}),
-		q(38120, {	-- Vanilla 10-19
-			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
-		}),
-		q(38110, {	-- Classic 20-29
-			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
-		}),
-		q(38121, {	-- Classic 20-29
-			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
-		}),
 		q(62298, {	-- Classic 20-49
 			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
 		}),
 		q(62299, {	-- Classic 20-49
-			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
-		}),
-		q(38111, {	-- Classic 30-39
-			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
-		}),
-		q(38122, {	-- Classic 30-39
-			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
-		}),
-		q(38112, {	-- Classic 40-49
-			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
-		}),
-		q(38123, {	-- Classic 40-49
 			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
 		}),
 		q(62347, {	-- Shadowlands (51-59) E
@@ -152,7 +125,7 @@ _.HiddenQuestTriggers = {
 		q(42994),	-- Wild Combatant's Ringmail Armor (Shaman - Horde)
 		q(43004),	-- Wild Combatant's Dreadplate Armor (Death Knight - Alliance)
 		q(43005),	-- Wild Combatant's Dreadplate Armor (Death Knight - Horde)
-		q(43005),	-- Wild Gladiator's Dreadplate Armor (Death Knight - Horde)
+		-- q(43005),	-- Wild Gladiator's Dreadplate Armor (Death Knight - Horde) -- TODO: wrong ID?
 		q(43006),	-- Wild Combatant's Scaled Armor (Paladin - Alliance)
 		q(43008),	-- Wild Combatant's Scaled Armor (Paladin - Horde)
 		q(43009),	-- Wild Combatant's Plate Armor (Warrior - Alliance)
@@ -207,7 +180,7 @@ _.HiddenQuestTriggers = {
 		q(43087),	-- Primal Combatant's Scaled Armor (Paladin - Horde)
 		q(43088),	-- Primal Combatant's Plate Armor (Warrior - Alliance)
 		q(43089),	-- Primal Combatant's Plate Armor (Warrior - Horde)
-		q(43089),	-- Primal Gladiator's Plate Armor (Warrior - Horde)
+		-- q(43089),	-- Primal Gladiator's Plate Armor (Warrior - Horde) -- TODO: wrong ID?
 		q(43092),	-- Primal Combatant's Felweave Armor (Warlock - Alliance)
 		q(43093),	-- Primal Combatant's Felweave Armor (Warlock - Horde)
 		q(43094),	-- Primal Combatant's Satin Armor (Priest - Alliance)
@@ -777,7 +750,7 @@ _.HiddenQuestTriggers = {
 		q(43224),	-- Primal Gladiator's Arsenal (Alliance)
 		q(43225),	-- Primal Gladiator's Arsenal (Horde)
 		q(43233),	-- Wild Combatant's Arsenal (Alliance)
-		q(43233),	-- Wild Combatant's Arsenal (Horde)
+		-- q(43233),	-- Wild Combatant's Arsenal (Horde)	-- TODO: wrong ID?
 		q(43226),	-- Wild Gladiator's Arsenal (Alliance)
 		q(43227),	-- Wild Gladiator's Arsenal (Alliance)
 		q(43231),	-- Warmongering Combatant's Arsenal (Alliance)
@@ -843,28 +816,6 @@ _.HiddenQuestTriggers = {
 		q(45436),	-- First Win of the Day (Skirmish)
 		q(45433),	-- First Win of the Day (3v3)
 		q(45434),	-- First Win of the Day (10v10)
-		q(36143, {	-- LFGDungeons - Lich King - Dungeon Normal 1st
-			["_drop"] = { "g" },	-- drop satchel
-		}),
-		q(36149, {	-- LFGDungeons - Lich King - Dungeon Normal Nth
-			["_drop"] = { "g" },	-- drop satchel
-		}),
-		q(36145),	-- LFGDungeons - Cataclysm - Dungeon Normal 1st
-		q(36151),	-- LFGDungeons - Cataclysm - Dungeon Normal Nth
-		q(36147, {	-- LFGDungeons - Pandaria - Dungeon Normal 1st
-			["_drop"] = { "g" },	-- drop satchel
-		}),
-		q(36139, {	-- LFGDungeons - Pandaria - Dungeon Normal Nth
-			["_drop"] = { "g" },	-- drop satchel
-		}),
-		q(31618, {	-- LFGDungeons - Mists - Normal Random - 1st
-			["_drop"] = { "g" },	-- drop satchel
-		}),
-		q(31619, {	-- LFGDungeons - Mists - Normal Random - Nth
-			["_drop"] = { "g" },	-- drop satchel
-		}),
-		q(37505),	-- LFGDungeons - Draenor - Raid Finder - 1st
-		q(37506),	-- LFGDungeons - Draenor - Raid Finder - Nth
 		q(49847),	-- Selected Pandaria at level 80 Special Duty Assignment" on horde
 		q(57668),	-- Triggering when using a portal to Orgrimmar as Horde/to Ironforge as Alliance after Dec 25th during the Feast of Winter Veil 2019
 		--- (seems to trigger only the first time you go there that day). Possibly used to determine loot eligibility?
@@ -953,9 +904,7 @@ _.HiddenQuestTriggers = {
 		q(9749),	-- They're Alive! Maybe... - completed with quest 9670
 		q(10207),	-- Forward Base: Reaver's Fall REUSE - completed with quest 10124
 		q(10815),	-- The Journal of Val'zareq: Portends of War - completed with quest 10793
-		q(10871, {	-- Ally of the Netherwingm - completed with quest 10870
-			["_drop"] = { "g" }
-		}),
+		q(10871, {["_drop"] = { "g" }}),	-- Ally of the Netherwingm - completed with quest 10870
 		q(10872),	-- Zuluhed the Whacked - completed with quest 144
 		q(10925),	-- Evil Draws Near - completed with quest 10923
 		q(14411),	-- The Wilds of Feralas - completed with quest 14410 & 26589
@@ -975,48 +924,60 @@ _.HiddenQuestTriggers = {
 		q(31373),	-- The Order of the Cloud Serpent - completed with quest 32461
 		q(31375),	-- The Order of the Cloud Serpent - completed with quest 32461
 		q(33073),	-- [NOTUSED]Vignette: Ancient Saltsnap Turtle - completed with quest 33070
+		q(33079),	-- The Demons Among Us - Alliance - completed with quest 40593 & 40607
+		q(33267),	-- [Deprecated] - completed with quest 33461
+		q(33380),	-- REUSE - completed with quest 33622
+		q(33407),	-- REUSE - completed with quest 33622
+		q(33707),	-- Demons Among Us - Horde - completed with quest 40593 & 40607
+		q(33914),	-- Gut Guttra - completed with quest 33132
 		q(34426),	-- Yrel - completed with quest 34478 & 34427
 		q(34435),	-- Find Ga'nar - completed with quest 34434 & 34740
 		q(34438),	-- Regarding Enormous Tanks - completed with quest 34958
+		q(34506),	-- Bonus Objective: Kill Grimfrost Ogres - completed with quest 33145
 		q(34817),	-- Altar Altercation - completed with quest 34423
+		q(35251),	-- The Bounty of Bladespire - completed with quest 33657
+		q(35340),	-- What Happened Here? - completed with quest 35322
 		q(35387),	-- Through the Nether - completed with quest 35085
 		q(35388),	-- The Void March - completed with quest 35086
 		q(35389),	-- Silence the Call - completed with quest 35084
 		q(35390),	-- The Shadow Over Oshu'gun - completed with quest 35088
 		q(35391),	-- Silence the Call - completed with quest 35083
 		q(35392),	-- The Nether Approaches - completed with quest 35087
+		q(35431),	-- The Best Poison - completed with quest 35205
+		q(35653),	-- Wood is Wood - completed with quest 36368 & 35505
+		q(36079),	-- A Hero's Welcome - completed with quest 34575
+		q(36461),	-- Locating the Lapidarist - completed with quest 36352
 		q(36501),	-- Iron Horde Invasion - completed with quest 36498
+		q(36569),	-- Unruly Visitors — completed with quest 36483
+		q(36570),	-- Unruly Visitors — completed with quest 36483
 		q(36635),	-- Your First Work Order - completed with quest 35168 & 37569
+		q(36796),	-- The Flock's Revenge - completed with quest 36790
+		q(36859),	-- Deprecated - completed with quest 36590
 		q(37185),	-- A Personal Summons - completed with quest 28790 & 28825
+		q(37186),	-- The Art of War - completed with quest 29611 & 29612
 		q(37189),	-- A Personal Summons - completed with quest 28825
 		q(37190),	-- Iron Horde Invasion - completed with quest 36499
 		q(37196),	-- Iron Horde Invasion - completed with quest 36498
 		q(37441),	-- Solanian's Belongings - completed with quest 37443
 		q(37564),	-- Your First Blacksmithing Work Order - completed with quest 35168 & 37569
 		q(37667),	-- Building for Professions - completed with quest 36100 & 37669
+		q(37933),	-- Uncovering the Artifact Fragments - completed with quest 36133 & possibly also 36198
+		q(38008),	-- The Road of Glory - completed with quest 36125 & 36227
+		q(38305),	-- Cenarius, Keeper of the Grove — completed with quest 40122
+		q(39058, {["_drop"] = { "g" }}),	-- Critters of Draenor — completed with quest 38299 & 38300
 		q(45405),	-- Breaching the Sanctum - completed with quest 44719
 		q(49563),	-- Warchief's Command: Frostfire Ridge! - completed with quest 49545
 
 		-- Frostfire Ridge
-		--q(36079),	-- A Hero's Welcome - TODO: figure out from where it gets completed
-		--q(33380),	-- REUSE - TODO: figure out from where it gets completed
-		--q(33407),	-- REUSE - TODO: figure out from where it gets completed
-		--q(35251),	-- The Bounty of Bladespire	- TODO: figure out from where it gets completed
+		--q(33264),	-- A Proper Burial - TODO: figure out from where it gets completed
 		--q(34734),	-- The Loyalty of Olin Umberhide - TODO: figure out from where it gets completed
 		--q(37062),	-- Tricks of the Trade - TODO: figure out from where it gets completed
 
-		-- Gorgrond
-		--q(35431),	-- The Best Poison - TODO: figure out from where it gets completed
-		--q(35653),	-- Wood is Wood - TODO: figure out from where it gets completed
-
-		-- Shadowmoon Valley
+		-- Shadowmoon Valley / probably Tanaan Jungle instead
 		--q(39396),	-- NOT USED - TODO: figure out from where it gets completed
-		--q(33267),	-- [Deprecated] - TODO: figure out from where it gets completed
 
 		-- Spires of Arak
-		--q(36796),	-- The Flock's Revenge - TODO: figure out from where it gets completed
 		--q(34565),	-- Tearing Up Talador - TODO: figure out from where it gets completed
-		--q(35340),	-- What Happened Here? - TODO: figure out from where it gets completed
 
 		-- Talador
 		--q(33923),	-- Demons? In Auchindoun? - TODO: figure out from where it gets completed
@@ -1072,37 +1033,10 @@ _.HiddenQuestTriggers = {
 		q(12452),	-- Dragonblight - triggers when turning in "The Fate of the Ruby Dragonshrine". duplicate version of a quest during early development
 		q(12693),	-- Sholazar Basin - Wolvar Faction Choice Tracker
 		q(12694),	-- Sholazar Basin - Oracle Faction Choice Tracker
-		q(39783),	-- Battle Pet - Terky
 
 		-------------------
 		--   CATACLYSM   --
 		-------------------
-		--	Dungeons & Raids
-		q(35348),	-- Blackrock Caverns Reward Quest
-		q(35351),	-- Blackrock Caverns Reward Quest
-		q(35349),	-- Blackrock Caverns Bonus Reward
-		q(35352),	-- Blackrock Caverns Bonus Reward. Killing Beauty
-		q(35587),	-- Deadmines heroic completion
-		q(35358),	-- End Time heroic completion
-		q(35404),	-- Grim Batol Reward Quest
-		q(35405),	-- Grim Batol Reward Quest
-		q(35439),	-- Hour of Twilight dungeon reward (Kill benedictus)
-		q(35414),	-- Lost City of the Tol'vir dungeon reward (Kill Siamat)
-		q(35311),	-- Shadowfang Keep heroic bonus objective complete
-		q(35309),	-- Shadowfang Keep heroic completion (Kill Lord Godfrey)
-		q(35911),	-- Stonecore Reward Quest
-		q(35913),	-- Stonecore (Heroic) reward quest
-		q(35401),	-- The Vortex Pinnacle Reward Quest
-		q(35363),	-- Throne of the Tides Reward Quest
-		q(35365),	-- Throne of the Tides Reward Quest (kill final boss, triggered in Timewalking)
-		q(35364),	-- Throne of the Tides Bonus Reward (kill Mindbender Ghur'sha)
-		q(35366),	-- Throne of the Tides Bonus Reward (kill Mindbender Ghur'sha, triggered in Timewalking)
-		q(35403),	-- Vortex Pinnacle dungeon reward (Kill Asaad)
-		q(35443),	-- Zul'Aman Reward Quest
-		q(35411),	-- Zul'Gurub Reward Quest
-		q(35412),	-- Zul'Gurub Bonus Objective Reward Quest. Killing Cache of Madness
-		q(35435),	-- Well of Eternity Reward Quest
-
 		-- QUESTING
 		q(28347),	-- Coffer of Promise TRACKING QUEST
 		q(25071),	-- FLAG - Purple Murloc
@@ -1148,7 +1082,6 @@ _.HiddenQuestTriggers = {
 		q(30373),	-- Jogu the drunk as farmhand
 		q(30365),	-- Chee chee farmhand tillers
 		--
-		q(37193),	-- looks like some unused version of "The King's Command", autocompleted when I picked up "Hero's Call: Jade Forest!" 49556 from Hero's Call Board
 		q(31485),	-- UNUSED — triggered after turning in quest #31281, "So You Want to Be a Chef..." in Valley of the Four Winds
 		q(31469),	-- UNUSED — triggered after turning in quest #31311, "Way of the Grill" in Vally of the Four Winds
 		q(30536),	-- FLAG - Weed War Training — triggered after turning in daily quest #30321, "Weed War II"
@@ -1207,28 +1140,18 @@ _.HiddenQuestTriggers = {
 		q(31969),	-- Jade Forest - Tracking flag used during horde quest "Priorities"
 		q(31195),	-- Jade Forest - Ooked the Dooker (literally the name. Triggers after killing Dook Ookem during "Lay of the Land" as horde)
 		q(29368),	-- Jade Forest - Tracking - added in cataclysm but triggered after completing the criteria for "Acid Rain" in MOP?
-		q(37186),	-- Jade Forest - The Art of War - version added during warlords of draenor, but no info exists anywhere for it
 		q(30486),	-- Jade Forest - Jade Dragon Phased Terrain Tracking - triggers after placing the Cho family heirloom during "Last Piece of the Puzzle"
 		q(30165),	-- Jade Forest - picked the blue serpent egg on "Choosing the One"
 		q(30166),	-- Jade Forest - picked the green serpent egg on "Choosing the One"
 		q(30167),	-- Jade Forest - picked the yellow/gold serpent egg on "Choosing the One"
-		q(37212),	-- FLAG - Proving Grounds - Damage Bronze
 		q(33089),	-- FLAG - Proving Grounds - Damage Bronze
-		q(37214),	-- FLAG - Proving Grounds - Damage Gold
 		q(33091),	-- FLAG - Proving Grounds - Damage Gold
 		q(33090),	-- FLAG - Proving Grounds - Damage Silver
-		q(37213),	-- FLAG - Proving Grounds - Damage Silver
-		q(37218),	-- FLAG - Proving Grounds - Healer Bronze
 		q(33095),	-- FLAG - Proving Grounds - Healer Bronze
-		q(37220),	-- FLAG - Proving Grounds - Healer Gold
 		q(33097),	-- FLAG - Proving Grounds - Healer Gold
 		q(33096),	-- FLAG - Proving Grounds - Healer Silver
-		q(37219),	-- FLAG - Proving Grounds - Healer Silver
 		q(33092),	-- FLAG - Proving Grounds - Tank Bronze
-		q(37215),	-- FLAG - Proving Grounds - Tank Bronze
 		q(33094),	-- FLAG - Proving Grounds - Tank Gold
-		q(37217),	-- FLAG - Proving Grounds - Tank Gold
-		q(37216),	-- FLAG - Proving Grounds - Tank Silver
 		q(33093),	-- FLAG - Proving Grounds - Tank Silver
 		q(32112),	-- FLAG - Been to Fight Club. Completing first fight
 		q(32899),	-- Daily Scenario Random (Nth)(Mists)
@@ -1292,57 +1215,6 @@ _.HiddenQuestTriggers = {
 		q(32666),	-- Warlock Green Fire Questline - Reached Kanrethad
 
 		--	DUNGEONS
-		q(35315),	-- Gate of the Setting Sun Reward Quest
-		q(35316),	-- Gate of the Setting Sun Reward Quest
-		q(31631),	-- Gate of the Setting Sun Challenge Mode - Bronze Addition (Nth)
-		q(31624),	-- Gate of the Setting Sun Challenge Mode - Consolation (Nth)
-		q(31645),	-- Gate of the Setting Sun Challenge Mode - Gold Addition (Nth)
-		q(31638),	-- Gate of the Setting Sun Challenge Mode - Silver Addition (Nth)
-		q(31499),	-- Jade Serpent Challenge Mode - Bronze Addition (Nth)
-		q(31498),	-- Jade Serpent Challenge Mode - Consolation (Nth)
-		q(31501),	-- Jade Serpent Challenge Mode - Gold Addition (Nth)
-		q(31500),	-- Jade Serpent Challenge Mode - Silver Addition (Nth)
-		q(31634),	-- Mogu'shan Palace Challenge Mode - Bronze Addition (Nth)
-		q(31627),	-- Mogu'shan Palace Challenge Mode - Consolation (Nth)
-		q(31648),	-- Mogu'shan Palace Challenge Mode - Gold Addition (Nth)
-		q(31641),	-- Mogu'shan Palace Challenge Mode - Silver Addition (Nth)
-		q(35318),	-- Mogu'shan Palace Reward Quest (was in a normal)
-		q(35321),	-- Mogu'shan Palace Reward Quest
-		q(31636),	-- Scarlet Halls Challenge Mode - Bronze Addition (Nth)
-		q(31630),	-- Scarlet Halls Challenge Mode - Consolation (Nth)
-		q(31650),	-- Scarlet Halls Challenge Mode - Gold Addition (Nth)
-		q(31643),	-- Scarlet Halls Challenge Mode - Silver Addition (Nth)
-		q(35609),	-- Scarlet Halls heroic bonus objective complete (kill Armsmaster Harlan)
-		q(35608),	-- Scarlet Halls heroic completion (Kill Flameweaver Koegler)
-		q(31637),	-- Scarlet Monastery Challenge Mode - Bronze Addition (Nth)
-		q(31629),	-- Scarlet Monastery Challenge Mode - Consolation (Nth)
-		q(31651),	-- Scarlet Monastery Challenge Mode - Gold Addition (Nth)
-		q(31644),	-- Scarlet Monastery Challenge Mode - Silver Addition (Nth)
-		q(35613),	-- Scarlet Monastery heroic completion
-		q(31635),	-- Scholomance Challenge Mode - Bronze Addition (Nth)
-		q(31628),	-- Scholomance Challenge Mode - Consolation (Nth)
-		q(31649),	-- Scholomance Challenge Mode - Gold Addition (Nth)
-		q(31642),	-- Scholomance Challenge Mode - Silver Addition (Nth)
-		q(35595),	-- Scholomance heroic completion
-		q(31632),	-- Shado-Pan Monastery Challenge Mode - Bronze Addition (Nth)
-		q(31625),	-- Shado-Pan Monastery Challenge Mode - Consolation (Nth)
-		q(31646),	-- Shado-Pan Monastery Challenge Mode - Gold Addition (Nth)
-		q(31639),	-- Shado-Pan Monastery Challenge Mode - Silver Addition (Nth)
-		q(35319),	-- Shado-Pan Monastery normal clear
-		q(35320),	-- Shado-Pan Monastery Reward Quest
-		q(35461),	-- Siege of Niuzao Reward Quest
-		q(31633),	-- Siege of Niuzao Temple Challenge Mode - Bronze Addition (Nth)
-		q(31626),	-- Siege of Niuzao Temple Challenge Mode - Consolation (Nth)
-		q(31647),	-- Siege of Niuzao Temple Challenge Mode - Gold Addition (Nth)
-		q(31640),	-- Siege of Niuzao Temple Challenge Mode - Silver Addition (Nth)
-		q(31621),	-- Stormstout Brewery Challenge Mode - Bronze Addition (Nth)
-		q(31620),	-- Stormstout Brewery Challenge Mode - Consolation (Nth)
-		q(31623),	-- Stormstout Brewery Challenge Mode - Gold Addition (Nth)
-		q(31622),	-- Stormstout Brewery Challenge Mode - Silver Addition (Nth)
-		q(35323),	-- Stormstout Brewery Reward Quest
-		q(35324),	-- Stormstout Brewery Reward Quest
-		q(35325),	-- Temple of the Jade Serpent Reward Quest (LFG)
-		q(35327),	-- Temple of the Jade Serpent Reward Quest
 		q(32898),	-- Daily Scenario Random (1st) (Mists) — normal scenario completion
 		q(32817),	-- Complete "Loyalty" Scenario — triggered when turning in "The King and the Council"
 		q(32818),	-- Complete "The Dark Heart of Pandaria" Scenario — triggered when turning in "The Warchief and the Darkness"
@@ -1434,216 +1306,11 @@ _.HiddenQuestTriggers = {
 		q(32962),	-- "Tom" Bone Apart - Tracking Quest — looting first chest after speaking with Zarhym.  second chest didn't have a quest, but didn't finish so not sure if there are other quests
 
 		-------------------
-		--      WOD      --
-		-------------------
-		-- Darkals HiddenQuestTriggers
-		q(39709),	-- First time this quest popped in WoD Garrison after opening some salvage crates. Then it unflagged on fresh toon, after I walked a little it got completed again
-		q(35653),	-- both these triggered turning in other quests in the lower area of draenor gorgrond
-		q(35431),	-- both these triggered turning in other quests in the lower area of draenor gorgrond
-		q(34565),	-- Was just walking in spires of arak and boom
-		q(35340),	-- ooks to have triggered when 35339 was turned in
-		q(36796),	-- turned in a group of quests in spires, might have triggered with 36790
-		--	QUESTING / LEVELING / VARIOUS
-		q(33550),	-- [NOTUSED]Vignette: Iron Horde Napmaster (triggers when looting The Crystal Blade of Torvath in WoD Shadowmoon Valley)
-		q(37187),	-- The Dark Portal
-		q(37677),	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Maraad
-		q(37676),	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Thrall
-		q(35983),	-- triggered during "Onslaught's End" when door to Cho'gal was opened
-		q(35253),	-- triggered during "Onslaught's End" when door to Teron'gor was opened
-		q(35297),	-- triggered during "Blazing of Glory" when you approach Khadgar around 67.6,60.5
-		q(34440),	-- triggered just before turning in "Ga'nar of the Frostwolf"
-		q(36426),	-- Dueling Orbs,	-- triggered when completing "Mysterious Ring" (34463)
-		q(35914),	-- Default invasion reward flag during the first garrison invasion as part of Draenor's base intro
-		q(36461),	-- Locating the Lapidarist - NYI version of the quest. seems to be a duplicate
-		q(37864),	-- Voidtalon (Pops after the player leaves the scenario.)
-
-		--	DUNGEONS & RAIDS
-		q(35960),	-- Auchindoun Reward Quest
-		q(35957),	-- Bloodmaul Slag Mines Reward Quest (triggered at the end of normal BSM)
-		q(34533),	-- Bloodmaul Slag Mines Challenge Mode - Bronze Addition (Nth)
-		q(34525),	-- Bloodmaul Slag Mines Challenge Mode - Consolation (Nth)
-		q(34535),	-- Bloodmaul Slag Mines Challenge Mode - Gold Addition (Nth)
-		q(34534),	-- Bloodmaul Slag Mines Challenge Mode - Silver Addition (Nth)
-		q(37501),	-- Draenor Challenge Mode - Bronze Addition (1st)
-		q(34539),	-- Draenor Challenge Mode - Bronze Addition (Nth)
-		q(37502),	-- Draenor Challenge Mode - Consolation (1st)
-		q(34527),	-- Draenor Challenge Mode - Consolation (Nth)
-		q(37503),	-- Draenor Challenge Mode - Gold Addition (1st)
-		q(34541),	-- Draenor Challenge Mode - Gold Addition (Nth)
-		q(37504),	-- Draenor Challenge Mode - Silver Addition (1st)
-		q(34540),	-- Draenor Challenge Mode - Silver Addition (Nth)
-		q(34548),	-- Iron Depot Challenge Mode - Bronze Addition (Nth)
-		q(34529),	-- Iron Depot Challenge Mode - Consolation (Nth)
-		q(34550),	-- Iron Depot Challenge Mode - Gold Addition (Nth)
-		q(34549),	-- Iron Depot Challenge Mode - Silver Addition (Nth)
-		q(34536),	-- Iron Docks Challenge Mode - Bronze Addition (Nth)
-		q(34526),	-- Iron Docks Challenge Mode - Consolation (Nth)
-		q(34538),	-- Iron Docks Challenge Mode - Gold Addition (Nth)
-		q(34537),	-- Iron Docks Challenge Mode - Silver Addition (Nth)
-		q(35958),	-- Iron Docks Reward Quest
-		q(34545),	-- Shadowmoon Burial Grounds Challenge Mode - Bronze Addition (Nth)
-		q(34528),	-- Shadowmoon Burial Grounds Challenge Mode - Consolation (Nth)
-		q(34547),	-- Shadowmoon Burial Grounds Challenge Mode - Gold Addition (Nth)
-		q(34546),	-- Shadowmoon Burial Grounds Challenge Mode - Silver Addition (Nth)
-		q(34551),	-- Shaper Dungeon [PH] Challenge Mode - Bronze Addition (Nth)
-		q(34530),	-- Shaper Dungeon [PH] Challenge Mode - Consolation (Nth)
-		q(34553),	-- Shaper Dungeon [PH] Challenge Mode - Gold Addition (Nth)
-		q(34552),	-- Shaper Dungeon [PH] Challenge Mode - Silver Addition (Nth)
-		q(35961),	-- Skyreach Reward Quest (triggered at the end of Normal Skyreach)
-		q(34542),	-- Spires of Arak Challenge Mode - Bronze Addition (Nth)
-		q(34524),	-- Spires of Arak Challenge Mode - Consolation (Nth)
-		q(34544),	-- Spires of Arak Challenge Mode - Gold Addition (Nth)
-		q(34543),	-- Spires of Arak Challenge Mode - Silver Addition (Nth)
-		q(34554),	-- Upper Blackrock Spire Challenge Mode - Bronze Addition (Nth)
-		q(34531),	-- Upper Blackrock Spire Challenge Mode - Consolation (Nth)
-		q(34742),	-- Upper Blackrock Spire Challenge Mode - Consolation (Nth)
-		q(34556),	-- Upper Blackrock Spire Challenge Mode - Gold Addition (Nth)
-		q(34555),	-- Upper Blackrock Spire Challenge Mode - Silver Addition (Nth)
-		q(35963),	-- Warlords Heroic Dungeon Reward Quest (triggered at the end of Mythic Grimrail Depot)
-		q(35962),	-- Warlords Max Level Dungeon Reward Quest (triggered at the end of Normal Grimrail Depot)
-		q(36277),	-- Warlords Max Level Dungeon Bonus Reward
-		q(34405),	-- DEPRECATED - REUSE — looting Blackrock Ore chest after Operator Thogar in LFR Blackrock Foundry
-
-		--	GARRISON
-		q(36793),	-- Frostfire Ridge - Founded Garrison - triggers after using the Master Surveyor during "Establish Your Garrison"
-		q(36799),	-- Garrison Nodes - Tracking Quest - triggered after unlocking the mine, picking herbs
-		q(37311),	-- Drafting Table Interact
-		q(36640),	-- Followers Obtained
-		q(38315),	-- DEPRECATED - triggered when turning in "Bringing the Bass" on alliance
-		q(38401),	-- DEPRECATED - triggered when turning in "Bringing the Bass" on alliance
-		q(38348),	-- Triggers when using "Music Roll: Silvermoon" or "Music Roll: Exodar". Appears to be a duplicate ID
-		q(39406),	-- Tracking Quest. Related to weekly naval mission in the shipyard
-		q(39407),	-- Tracking Quest. Related to weekly naval mission in the shipyard
-		q(39411),	-- Tracking Quest. Related to weekly naval mission in the shipyard
-		q(39723),	-- Tracking Quest. Related to rare naval missions in the shipyard
-		q(39724),	-- Tracking Quest. Related to rare naval missions in the shipyard
-		q(39725),	-- Tracking Quest. Related to rare naval missions in the shipyard
-		q(39750),	-- Tracking Quest. Related to rare naval missions in the shipyard
-		q(34679),	-- Nagrand - Alliance Stables Tracking Event
-		q(34680),	-- Nagrand - Alliance Workshop Tracking Event
-		q(37202),	-- Nagrand - Hemet Nesingwary Visitor Tracking Event
-		q(34812),	-- Nagrand - Horde Stables Tracking Event
-		q(34813),	-- Nagrand - Horde Workshop Tracking Event
-		q(34518),	-- Nagrand - Nagrand Corral
-		q(36898),	-- Tracking Quest: Delvar Ironfist
-		q(36877),	-- Tracking Quest: Tormmok — taking Tormmok as a bodyguard/wingman
-		q(36569),	-- Unruly Visitors — triggers when turning in "Battle Pet Roundup"
-		q(36570),	-- Unruly Visitors — triggers when turning in "Battle Pet Roundup"
-		q(39058, {	-- Critters of Draenor — looks like an unused version of #38299
-			["_drop"] = { "g" },	-- pulls in a couple pet items and causes their sources to list 'unsorted'
-		}),
-		q(36492),	-- Garrison Pet Battle — discord report, "for today's EU garrison menagerie fight, the Blingtron/protectron one"
-		q(36886),	-- Ogre Waygate — opening waygate in gorgrond
-		q(36294),	-- Lumber Mill — Phylarch the Evergreen first attack
-		q(36295),	-- Lumber Mill — Phylarch the Evergreen second attack
-		q(39414),	-- Gladiator's Sanctum - Triggers on construction of the gladiator's sanctum (Lunarfall)
-		q(36058),	-- Seal of Tempered Fate: Armory
-		q(36894),	-- Nemesis Flag, Draenei/Blood Elf — all these are for burning effigies of specific races in the Gladiator Sanctum
-		q(36891),	-- Nemesis Flag, Dwarf/Forsaken
-		q(36892),	-- Nemesis Flag, Gnome/Tauren
-		q(36956),	-- Nemesis Flag, Human
-		q(36890),	-- Nemesis Flag, Human/Orc
-		q(36893),	-- Nemesis Flag, Night Elf/Troll
-		q(36896),	-- Nemesis Flag, Pandaren (A/H)
-		q(36895),	-- Nemesis Flag, Worgen/Goblin
-		q(36905),	-- Ogre Waygate — Opening the Ogre Gateway in Talador during quest #36848, "Ogre Waygates"
-		q(39610),	-- triggered together with 39615 after applying Ball of Tangled Lights (Feast of Winter Veil decoration)
-		q(36901),	-- Tracking Quest: Vivianne — assigned Vivianne as bodyguard
-		q(36902),	-- Tracking Quest: Aeda Brightdawn — assigned Aeda Brightdawn as bodyguard
-		q(46952),	-- Flag Garrison Dog Quest
-		q(54705),	-- Level 17 human monk looting mailbox in garrisson <-- Hmm. Errors report also says using 7th legion scouting map.
-		q(37197),	-- See Rexxar Quest Giver 002 (Garrison Campaign for Darktide Roost)
-
-		-- ASSAULTS
-		q(36534),	-- Garrison Max-level Choice Tracker: (GROUP) Talador Shattrath City, West (When picking up Assault on the Heart of Shattrath on Horde character)
-		q(36547),	-- Garrison Max-level Choice Tracker: (GROUP) Talador Shattrath City, West (When picking up Assault on the Heart of Shattrath on Horde character)
-		q(36663),	-- Garrison Max-level Choice Tracker: ANY CHOICE MADE (When picking up Assault on the Heart of Shattrath on Horde character)
-		q(36664),	-- Garrison Max-level Choice Tracker: ANY CHOICE MADE (When picking up Assault on the Heart of Shattrath on Alliance character)
-		q(36537),	-- Garrison Max-level Choice Tracker: Spires Shadowmoon Cliffs
-		q(36558),	-- Garrison Max-level Choice Tracker: Spires Shadowmoon Cliffs
-		q(36532),	-- Garrison Max-level Choice Tracker: (GROUP) Gorgrond Blackrock Foundry
-		q(36545),	-- Garrison Max-level Choice Tracker: (GROUP) Gorgrond Blackrock Foundry
-		q(36527),	-- Garrison Max-level Choice Tracker: Frostfire Bloodmaul Compound
-		q(36549),	-- Garrison Max-level Choice Tracker: Frostfire Bloodmaul Compound
-		q(36528),	-- Garrison Max-level Choice Tracker: Shadowmoon Darktide Roost
-		q(36555),	-- Garrison Max-level Choice Tracker: Shadowmoon Darktide Roost
-		q(36533),	-- Garrison Max-level Choice Tracker: Gorgrond Primal Forest
-		q(36552),	-- Garrison Max-level Choice Tracker: Gorgrond Primal Forest
-		q(36531),	-- Garrison Max-level Choice Tracker: Shadowmoon Sanctum of Othaar
-		q(36556),	-- Garrison Max-level Choice Tracker: Shadowmoon Sanctum of Othaar
-		q(36539),	-- Garrison Max-level Choice Tracker: Spires Mushroom Swamp
-		q(36557),	-- Garrison Max-level Choice Tracker: Spires Mushroom Swamp
-		q(36540),	-- Garrison Max-level Choice Tracker: Nagrand Broken Precipice
-		q(36553),	-- Garrison Max-level Choice Tracker: Nagrand Broken Precipice
-		q(36541),	-- Garrison Max-level Choice Tracker: Nagrand Mok'gol Watchpost
-		q(36554),	-- Garrison Max-level Choice Tracker: Nagrand Mok'gol Watchpost
-		q(37646),	-- See New Brightstone, See Wolfed Out Thorn (Garrison Attack?)
-
-		-- GARRISON COMMAND TABLE
-		q(39413),
-		q(39415),
-		q(39710),
-		q(39711),	-- Tracking Quest: Garrison/Shipyard Mission Table
-
-		--	TREASURES
-		q(34521),	-- Treasure: Glowing Obsidian Shard (secondary quest triggered when looting Burning Pearl in Frostfire Ridge)
-		q(34968),	-- Treasure: Ice-Covered Supplies (secondary quest triggered when looting Forgotten Supplies in Frostfire Ridge)
-		q(34184),	-- Vignette: Aarkos - Killed Boss — first quest that triggers before looting Aarko's Family Treasure in Talador (we have the loot quest attached to the treasure)
-
-		--	WORLD BOSSES (probably?  'short-supply reward' is usually a bonus roll)
-		q(37460),	-- Gorgrond - Short-Supply Reward (Drov the Ruiner killed)
-		q(37672),	-- Short-Supply Reward (Rukhmar bonus roll)
-		q(37673),	-- Drov the Ruiner bonus roll / Triggered when killing Tarlna the Ageless (side note: accompanied by Pepe
-		q(37675),	-- Tarlna the Ageless bonus roll
-		q(39434),	-- Short-Supply Reward / First Rare killed in Tanaan
-		q(39375),	-- Short-Supply Reward / Suspiciously Glowing Chest in Tanaan
-		q(39376),	-- Short-Supply Reward
-		q(39377),	-- Short-Supply Reward
-		q(39378),	-- Short-Supply Reward
-
-		--	???
-		q(33964),	-- Arak Flowerpicker
-		q(36636),	-- Blueprint Read
-		q(36856),	-- Burning Missive
-		q(36849),	-- Burning Missive
-		q(36850),	-- Burning Missive
-		q(36851),	-- Burning Missive
-		q(36852),	-- Burning Missive
-		q(36853),	-- Burning Missive
-		q(36854),	-- Burning Missive
-		q(36855),	-- Burning Missive
-		q(34580),	-- Draenor Flowerpicker
-		q(34581),	-- Draenor Flowerpicker Note Found
-		q(34831),	-- Encounter Mushroom
-		q(33961),	-- Frostfire Flowerpicker
-		q(33966),	-- Gorgrond Flowerpicker
-		q(33963),	-- Nagrand Flowerpicker
-		q(34872),	-- Prized Repossessions Tracking
-		q(34985),	-- Prized Repossessions Tracking
-		q(34986),	-- Punching Through Tracking
-		q(34873),	-- Punching Through Tracking
-		q(35192),	-- See Reinforcements Teleport
-		q(33962),	-- Shadowmoon Flowerpicker
-		q(34053),	-- SoL Conversation Tracker
-		q(36942),	-- Soulbinder Aedraa
-		q(34871),	-- Supply Recovery Tracking
-		q(34984),	-- Supply Recovery Tracking
-		q(33960),	-- Talador Flowerpicker
-		q(33965),	-- Tanaan Flowerpicker
-		q(39128),	-- Tanaan Vignette
-		q(39713),	-- Tracking Quest. Pops immediately on new characters but no other info known. Possibly legendary ring related
-		q(34024),	-- Tracking Quest. This completes when you kill the Windfang Matriarch after helping Romuul.
-		q(33786),	-- ??????. This was completed around Fiona's caravan in Shadowmoon Valley - Draenor (not entirely sure what triggered it.)
-		q(52969),	-- Going through the Stormwind Portal to Stormshield while on the WoD timeline in Chromie time
-
-		-------------------
 		--    Legion     --
 		-------------------
 		--	Various tracking quests
 		q(42181),	-- triggered after turning in #39733, "The Lone Mountain"
 		q(43447),	-- Vignette: Wraithtalon — newer tracking quest for Wraithtalon rare in Val'sharah (on top of normal tracking quest - both pop at the same time)
-		q(33820),	-- Tracking Quest: Seen Escape Cinematic — triggered by cinematic during quest #34338, "The Descent"
-		q(36588),	-- Tracking - See Closed Chest — triggered immediately after accepting quest #34410, "The Beating Heart"
 		q(40087),	-- "Enter the Illidari: Shivarra" - Sevis Brightflame Sacrificed Tracking Event
 		q(40076),	-- Start Demon Hunter Tracking - triggers right after creating a demon hunter
 		q(39517),	-- Demon Hunter - picked Havoc during "Fel Secrets" on Mardum
@@ -1659,17 +1326,13 @@ _.HiddenQuestTriggers = {
 		q(42741),	-- Legion Expansion Started Tracking Quest
 		q(46733),	-- Legion Expansion Started Tracking Quest
 		q(40658),	-- Durotar - Tracking Quest - W1 - See Demon Attack ("Demons Among Us" quest)
-		q(33707),	-- Durotar - Demons Among Us - Horde - looks like a possible alpha version of the quest? triggers when turning in "Demons Among Us"
 		q(40768),	-- Orgrimmar - Tracking Quest - W1 - Intro to Illidari Complete - triggers when turning in "Keep Your Friends Close"
 		q(40616),	-- Tracking Quest - W1 - Saw Leader Die
-		q(36825),	-- Fate of the Horde - triggered when turning in "Audience with the Warchief" as a demon hunter
 		q(40521),	-- Tracking Quest - W1 - Demon Attack Complete (Horde) - triggered after turning in "Demons Among Them"
 		q(41306),	-- The Fallen Lion. Triggers with regular "The Fallen Lion" 40517
-		q(33079),	-- Triggers with "Demons Among Us" 40593
 		q(8237),	-- In the Blink of an Eye - dalaran transported to the broken isles
 		q(45533),	-- Legion Dungeon Reward Quest
 		q(44437),	-- Legion Sungeon Reward quest (Wrath of Azshara)
-		q(38305),	-- Cenarius, Keeper of the Grove — unused version of quest 40122
 		q(37526),	-- Farondis Murder Flag — triggers between turning in "The Tidestone: Shattered" and starting "Save Yourself" in Azsuna
 		q(41891),	-- Tainted Growth — got credit for this when turning in 38684, "Reading the Leaves"
 		q(43510),	-- Seal of Fate: Class Hall. Weekly quest, various sources
@@ -1700,9 +1363,9 @@ _.HiddenQuestTriggers = {
 		q(48858),	-- Light's Judgment active tracking quest?
 		q(48449),	-- Lightforged Warframe first time tracking quest?
 		q(48859),	-- Lightforged Warframe active tracking quest?
-		q(48450),	-- Fel Heart of Argus first time tracking quest?
+		-- q(48450),	-- Fel Heart of Argus first time tracking quest? -- TODO: wrong ID?
 		q(48860),	-- Fel Heart of Argus active tracking quest?
-		q(48450),	-- Shroud of Arcane Echoes first time tracking quest?
+		-- q(48450),	-- Shroud of Arcane Echoes first time tracking quest? -- TODO: wrong ID?
 		q(48579),	-- Shroud of Arcane Echoes active tracking quest?
 		q(48281),	-- getting into the Lightforged Warframe during Dawn of Justice
 		q(49161),	-- triggered when turning in #48461, "Where They Least Expect It"
@@ -1957,7 +1620,7 @@ _.HiddenQuestTriggers = {
 		q(47193),	-- Battle for Azsuna, for the achievement Defender of the Broken Isles
 		q(47194),	-- Battle for Highmountain — popped alongside the normal "Battle for Highmountain" final invasion quest.  possibly first-time quest?
 		q(47195),	-- Battle for Stormheim — same as above, first time i did the Stormheim invasion on that character
-		q(46956),	-- Azsuna - Assault Treasure
+		-- q(46956),	-- Azsuna - Assault Treasure	-- TODO: wrong ID?
 		q(46964),	-- Azsuna - Assault Treasure
 		q(46966),	-- Azsuna - Assault Treasure
 		q(46967),	-- Azsuna - Assault Treasure
@@ -1970,7 +1633,7 @@ _.HiddenQuestTriggers = {
 		q(46974),	-- Azsuna - Assault Treasure
 		q(46988),	-- Highmountain - Assault Treasure
 		q(46989),	-- Highmountain - Assault Treasure
-		q(46990),	-- Highmountain - Assault Treasure
+		q(46990),	-- Highmountain - Assault Treasure	Assault Treasure — opened Small Treasure Chest in Highmountain (44.2, 40.4)
 		q(46991),	-- Highmountain - Assault Treasure
 		q(46992),	-- Highmountain - Assault Treasure
 		q(46993),	-- Highmountain - Assault Treasure
@@ -1989,7 +1652,7 @@ _.HiddenQuestTriggers = {
 		q(46983),	-- Stormheim - Assault Treasure
 		q(46984),	-- Stormheim - Assault Treasure
 		q(46954),	-- Val'sharah - Assault Treasure
-		q(46956),	-- Val'sharah - Assault Treasure
+		-- q(46956),	-- Val'sharah - Assault Treasure	-- TODO: wrong ID?
 		q(46958),	-- Val'sharah - Assault Treasure
 		q(46959),	-- Val'sharah - Assault Treasure
 		q(46960),	-- Val'sharah - Assault Treasure
@@ -2065,8 +1728,6 @@ _.HiddenQuestTriggers = {
 
 		--	Treasures
 		q(40692),	-- 7.0 Suramar - Treasure 000 - The Drift - L (DLA) — suramar treasure in cliffside at 58.6, 33.8
-		q(46990),	-- Assault Treasure — opened Small Treasure Chest in Highmountain (44.2, 40.4)
-		q(43196),	-- Treasure 056 - Weeping Bluffs — stormheim treasure in cave, entrance at 32.6, 47.8
 		q(40601),	-- 7.0 Highmountain - Vignette - Pinerock Basin - Highmountain Beastmaster See Treasure (JLW) — looting treasure after Arru
 		q(49264),	-- opening a Void-Seeped Cache in Eredath
 		q(48361),	-- opening a Void-Seeped Cache in Eredath
@@ -2215,7 +1876,11 @@ _.HiddenQuestTriggers = {
 		q(49767),	-- Your Next Move - triggers when you pick up your first zone on the scouting map (e.g. Zuldazar as horde)
 		q(48432),	-- Unknown. Triggered as horde sometime after turning in "The Call for Allies" at 110 and before turning in "Hour of Reckoning." Could be phasing related?
 		q(54411),	-- triggers when speaking with Zidormi in Darkshore to travel back in time
-		q(58013),	-- Alliance war campaign, triggers when speaking to Anduin while on "This Ain't Mine" -- also triggered when looting the "Grimoire of the Other Side" as horde during "Spirits' belongings" -- also triggers when repairing the mirror by Charred Ramparts for the Venthyr mirror repair dailies...
+		q(58013),	-- Alliance war campaign, triggers when speaking to Anduin while on "This Ain't Mine"
+		-- 58013 triggered randomly during a Black Empire assault in uldum
+		-- also triggered when looting the "Grimoire of the Other Side" as horde during "Spirits' belongings"
+		-- also triggers when repairing the mirror by Charred Ramparts for the Venthyr mirror repair dailies...
+		-- 58013 ALSO triggered after my first time killing Honey Smasher, but that also popped for me while doing the Alliance war campaign "This Ain't Mine."  so wtf lol
 		q(51722),	-- triggers when completing "Uniting Kul Tiras" (Alliance WQ unlock).  Completing one triggers all 4 WQ unlock quests (main/alt quests for both Alliance and Horde)
 		q(53800),	-- Battle for Darkshore — triggered after defeating Sira Moonwarden in Darkshore warfront
 		q(52212),	-- Battle for Stormgarde — triggered after defeating Rokhan on Heroic difficulty
@@ -2278,6 +1943,7 @@ _.HiddenQuestTriggers = {
 		q(55241),	-- closing the second to last rift while on #55214, "Seam Stress"
 		q(50657),	-- not sure if this is part of the Vulpera allied race questline?  i turned in #53907, picked up #53908, learned the "Nomi's Vintage" toy, refreshed (nothing), went and took the portal from the vineyard to shal'aran, and this popped.  it popped immediately when i clicked the portal
 		q(55628),	-- Tracking Quest killed Mala'kili/Rohn'kor
+		q(54705),	-- Using 7th Legion Scouting Map
 		--q(55464),	-- Triggered with Tandred Proudmoore conversation?
 
 		--	HONEYBACK HIVE
@@ -2300,7 +1966,6 @@ _.HiddenQuestTriggers = {
 		q(57700),	-- triggered after Honeyback Harvester event that got to round 23 or 24
 		q(56114),	-- triggered after Honeyback Harvester event that completed round 29
 		q(57699),	-- triggered after Honeyback Harvester event that completed round 29
-		--	58013 ALSO triggered after my first time killing Honey Smasher, but that also popped for me while doing the Alliance war campaign "This Ain't Mine."  so wtf lol
 		q(56171),	-- not sure -- i had just done a Honeyback Harvester event and Gurg the Hivethief spawned but ran away because there wasn't enough DPS to kill him.  looted the jelly after the event, then ran to turn in since i was closeby.  fed the bee ~13 - 14 Thin Jelly (brought me to 1700 Friendly) and ran out of the cave and saw this and 57701 pop in chat.
 		q(57701),	-- same as above
 		q(56107),	-- when nascent bee changed into Juvenile Harvester
@@ -2990,7 +2655,6 @@ _.HiddenQuestTriggers = {
 		q(58529),	-- Volatile Void Droplet (Rank 3 Formless Void). Renders the texts unusable.
 
 		--	Patch 8.3
-		-- 58013 triggered randomly during a Black Empire assault in uldum
 		q(55349),	-- Triggered shortly after "Network Diagnostics"
 		q(56935),	-- Triggered shortly after "Network Diagnostics"
 		q(58000),	-- Combining Coalescing Visions 1x
@@ -3472,7 +3136,6 @@ _.HiddenQuestTriggers = {
 		q(62756),	-- Reaching Renown 19 Kyrian / unlocking Deepening Bond 4% stam increase
 		q(62757),	-- Reaching Renown 35 Kyrian / unlocking Deepening Bond 6% stam increase
 		q(62927),	-- Reaching Renown 39 Kyrian / unlocking Eternal Phalynx of Purity
-		q(63081),	-- triggered when earning "Itsy Bitsy Fighters" achievement
 		q(63426),	-- Skipping Kyrian intro
 
 		-- Maldraxxus
@@ -3629,7 +3292,6 @@ _.HiddenQuestTriggers = {
 		q(61161),	-- another "Party Crashers!" objective, automatically "accepted" when it started
 		q(61163),	-- also for the "Party Crashers" objective, but automatically "accepted" when it started
 		q(61929),	-- also completed when finishing "Theotar's Toast" objective
-		q(62112),	-- completed when killing Rare 'Sloppy' in Ember Court
 		q(61164),	-- triggered completed upon finishing the #62117 "Party Crashers"
 		q(61162),	-- for the #62113 version of "Party Crashers"
 		q(60930),	-- "Lower Your Standards," sort of a real quest?  but repeatable, only available when certain choices are made for ember court, pointless in general, doesn't seem worth tracking
@@ -3796,5 +3458,225 @@ _.HiddenQuestTriggers = {
 
 		-- Treasures of Korthia achievement
 		q(64045),	-- The Maw repeatable treasure, Stolen Anima Vessel
+	}),
+	-------------------
+	--      WOD      --
+	-------------------
+	tier(WOD_TIER, {
+		--	QUESTING / LEVELING / VARIOUS
+		q(35266),	-- Boosted Character - triggered for character that used WoD boost (level 90)
+		q(37187),	-- The Dark Portal
+		q(37193),	-- The King's Command - autocompleted when "Hero's Call: Jade Forest!" is picked up (questID 49556)
+		q(36825),	-- Fate of the Horde - triggered when turning in "Audience with the Warchief" as a demon hunter (questID 40976)
+
+		--	DUNGEONS & RAIDS
+		q(37212),	-- FLAG - Proving Grounds - Damage Bronze
+		q(37214),	-- FLAG - Proving Grounds - Damage Gold
+		q(37213),	-- FLAG - Proving Grounds - Damage Silver
+		q(37218),	-- FLAG - Proving Grounds - Healer Bronze
+		q(37220),	-- FLAG - Proving Grounds - Healer Gold
+		q(37219),	-- FLAG - Proving Grounds - Healer Silver
+		q(37215),	-- FLAG - Proving Grounds - Tank Bronze
+		q(37217),	-- FLAG - Proving Grounds - Tank Gold
+		q(37216),	-- FLAG - Proving Grounds - Tank Silver
+		q(37501),	-- Draenor Challenge Mode - Bronze Addition (1st)
+		q(37502),	-- Draenor Challenge Mode - Consolation (1st)
+		q(37503),	-- Draenor Challenge Mode - Gold Addition (1st)
+		q(37504),	-- Draenor Challenge Mode - Silver Addition (1st)
+		q(36145),	-- LFGDungeons - Cataclysm - Dungeon Normal 1st
+		q(36151),	-- LFGDungeons - Cataclysm - Dungeon Normal Nth
+		q(40829),	-- LFGDungeons - Draenor 6.2 - Raid Finder - 1st
+		q(37333),	-- LFGDungeons - Draenor - Heroic Random - 1st
+		q(37334),	-- LFGDungeons - Draenor - Heroic Random - Nth
+		q(37335),	-- LFGDungeons - Draenor - Normal Random - 1st
+		q(37336),	-- LFGDungeons - Draenor - Normal Random - Nth
+		q(37505),	-- LFGDungeons - Draenor - Raid Finder - 1st
+		q(37506),	-- LFGDungeons - Draenor - Raid Finder - Nth
+		q(36143, {["_drop"] = { "g" }}),	-- LFGDungeons - Lich King - Dungeon Normal 1st
+		q(36149, {["_drop"] = { "g" }}),	-- LFGDungeons - Lich King - Dungeon Normal Nth
+		q(31618, {["_drop"] = { "g" }}),	-- LFGDungeons - Mists - Normal Random - 1st
+		q(31619, {["_drop"] = { "g" }}),	-- LFGDungeons - Mists - Normal Random - Nth
+		q(36147, {["_drop"] = { "g" }}),	-- LFGDungeons - Pandaria - Dungeon Normal 1st
+		q(36139, {["_drop"] = { "g" }}),	-- LFGDungeons - Pandaria - Dungeon Normal Nth
+		q(40395, {["_drop"] = { "g" }}),	-- LFGDungeons - Timewalking "Heroic" Random - Nth
+		q(36144, {["_drop"] = { "g" }}),	-- LFG WLK 75-80
+		q(36150, {["_drop"] = { "g" }}),	-- LFG WLK 75-80
+		q(35963),	-- Warlords Heroic Dungeon Reward Quest - triggered at the end of Mythic Grimrail Depot
+		q(36277),	-- Warlords Max Level Dungeon Bonus Reward
+		q(35962),	-- Warlords Max Level Dungeon Reward Quest - triggered at the end of Normal Grimrail Depot
+
+		-- PVP
+		q(38116, {["_drop"] = { "g" }}),	-- Cata/Mop 80-89
+		q(38127, {["_drop"] = { "g" }}),	-- Cata/MoP 80-89
+		q(38138),	-- Cata/MoP 80-89
+		q(38156),	-- Cata/MoP 80-89
+		q(38167),	-- Cata/MoP 80-89
+		q(38149),	-- Classic 10-19
+		q(38160),	-- Classic 10-19
+		q(38110, {["_drop"] = { "g" }}),	-- Classic 20-29
+		q(38121, {["_drop"] = { "g" }}),	-- Classic 20-29
+		q(38132),	-- Classic 20-29
+		q(38150),	-- Classic 20-29
+		q(38161),	-- Classic 20-29
+		q(38111, {["_drop"] = { "g" }}),	-- Classic 30-39
+		q(38122, {["_drop"] = { "g" }}),	-- Classic 30-39
+		q(38133),	-- Classic 30-39
+		q(38151),	-- Classic 30-39
+		q(38162),	-- Classic 30-39
+		q(38112, {["_drop"] = { "g" }}),	-- Classic 40-49
+		q(38123, {["_drop"] = { "g" }}),	-- Classic 40-49
+		q(38134),	-- Classic 40-49
+		q(38152),	-- Classic 40-49
+		q(38163),	-- Classic 40-49
+		q(38113, {["_drop"] = { "g" }}),	-- Classic 50-59
+		q(38124, {["_drop"] = { "g" }}),	-- Classic 50-59
+		q(38135),	-- Classic 50-59
+		q(38153),	-- Classic 50-59
+		q(38164),	-- Classic 50-59
+		q(38118, {["_drop"] = { "g" }}),	-- Legion 100-109 A
+		q(38129, {["_drop"] = { "g" }}),	-- Legion 100-109 A
+		q(38140, {["_drop"] = { "g" }}),	-- Legion 100-109 A
+		q(38158, {["_drop"] = { "g" }}),	-- Legion 100-109 A
+		q(38169),	-- Legion 100-109 A
+		q(38171, {["_drop"] = { "g" }}),	-- Legion 100-109 A
+		q(38172, {["_drop"] = { "g" }}),	-- Legion 100-109 A
+		q(38119, {["_drop"] = { "g" }}),	-- Legion 100-109 H
+		q(38130, {["_drop"] = { "g" }}),	-- Legion 100-109 H
+		q(38141),	-- Legion 100-109 H
+		q(38159, {["_drop"] = { "g" }}),	-- Legion 100-109 H
+		q(38170),	-- Legion 100-109 H
+		q(38173, {["_drop"] = { "g" }}),	-- Legion 100-109 H
+		q(38174, {["_drop"] = { "g" }}),	-- Legion 100-109 H
+		q(36140, {["_drop"] = { "g" }}),	-- Pandaria 88-90
+		q(36148, {["_drop"] = { "g" }}),	-- Pandaria 88-90
+		q(37648, {["_drop"] = { "g" }}),	-- Short-Supply Reward
+		q(38114, {["_drop"] = { "g" }}),	-- TBC 60-69
+		q(38125, {["_drop"] = { "g" }}),	-- TBC 60-69
+		q(38136),	-- TBC 60-69
+		q(38154),	-- TBC 60-69
+		q(38165),	-- TBC 60-69
+		q(38109, {["_drop"] = { "g" }}),	-- Vanilla 10-19
+		q(38120, {["_drop"] = { "g" }}),	-- Vanilla 10-19
+		q(38131),	-- Vanilla 10-19
+		q(38115, {["_drop"] = { "g" }}),	-- WLK 70-79
+		q(38126, {["_drop"] = { "g" }}),	-- WLK 70-79
+		q(38137),	-- WLK 70-79
+		q(38155),	-- WLK 70-79
+		q(38166),	-- WLK 70-79
+		q(38117, {["_drop"] = { "g" }}),	-- WOD 90-99
+		q(38128, {["_drop"] = { "g" }}),	-- WOD 90-99
+		q(38139),	-- WOD 90-99
+		q(38157),	-- WOD 90-99
+		q(38168),	-- WOD 90-99
+
+		-- ASSAULTS
+		q(36534),	-- Garrison Max-level Choice Tracker: (GROUP) Talador Shattrath City, West (When picking up Assault on the Heart of Shattrath on Horde character)
+		q(36547),	-- Garrison Max-level Choice Tracker: (GROUP) Talador Shattrath City, West (When picking up Assault on the Heart of Shattrath on Horde character)
+		q(36663),	-- Garrison Max-level Choice Tracker: ANY CHOICE MADE (When picking up Assault on the Heart of Shattrath on Horde character)
+		q(36664),	-- Garrison Max-level Choice Tracker: ANY CHOICE MADE (When picking up Assault on the Heart of Shattrath on Alliance character)
+		q(36537),	-- Garrison Max-level Choice Tracker: Spires Shadowmoon Cliffs
+		q(36558),	-- Garrison Max-level Choice Tracker: Spires Shadowmoon Cliffs
+		q(36532),	-- Garrison Max-level Choice Tracker: (GROUP) Gorgrond Blackrock Foundry
+		q(36545),	-- Garrison Max-level Choice Tracker: (GROUP) Gorgrond Blackrock Foundry
+		q(36527),	-- Garrison Max-level Choice Tracker: Frostfire Bloodmaul Compound
+		q(36549),	-- Garrison Max-level Choice Tracker: Frostfire Bloodmaul Compound
+		q(36528),	-- Garrison Max-level Choice Tracker: Shadowmoon Darktide Roost
+		q(36555),	-- Garrison Max-level Choice Tracker: Shadowmoon Darktide Roost
+		q(36533),	-- Garrison Max-level Choice Tracker: Gorgrond Primal Forest
+		q(36552),	-- Garrison Max-level Choice Tracker: Gorgrond Primal Forest
+		q(36531),	-- Garrison Max-level Choice Tracker: Shadowmoon Sanctum of Othaar
+		q(36556),	-- Garrison Max-level Choice Tracker: Shadowmoon Sanctum of Othaar
+		q(36539),	-- Garrison Max-level Choice Tracker: Spires Mushroom Swamp
+		q(36557),	-- Garrison Max-level Choice Tracker: Spires Mushroom Swamp
+		q(36540),	-- Garrison Max-level Choice Tracker: Nagrand Broken Precipice
+		q(36553),	-- Garrison Max-level Choice Tracker: Nagrand Broken Precipice
+		q(36541),	-- Garrison Max-level Choice Tracker: Nagrand Mok'gol Watchpost
+		q(36554),	-- Garrison Max-level Choice Tracker: Nagrand Mok'gol Watchpost
+		q(37646),	-- See New Brightstone, See Wolfed Out Thorn (Garrison Attack?)
+
+		--	Short-Supply Reward - UNKNOWN TRIGGERS
+		qNYI(37461),	-- Short-Supply Reward
+		qNYI(37463),	-- Short-Supply Reward
+		qNYI(37465),	-- Short-Supply Reward
+		qNYI(37681),	-- Short-Supply Reward
+		qNYI(37682),	-- Short-Supply Reward
+		qNYI(37683),	-- Short-Supply Reward
+		qNYI(37684),	-- Short-Supply Reward
+		qNYI(39398),	-- Short-Supply Reward
+		qNYI(39468),	-- Short-Supply Reward
+		qNYI(39473),	-- Short-Supply Reward
+		qNYI(39474),	-- Short-Supply Reward
+		qNYI(39475),	-- Short-Supply Reward
+		qNYI(39476),	-- Short-Supply Reward
+		qNYI(39477),	-- Short-Supply Reward
+		qNYI(39478),	-- Short-Supply Reward
+		qNYI(39479),	-- Short-Supply Reward
+		qNYI(39480),	-- Short-Supply Reward
+		qNYI(39481),	-- Short-Supply Reward
+		qNYI(39482),	-- Short-Supply Reward
+		qNYI(39483),	-- Short-Supply Reward
+		qNYI(39484),	-- Short-Supply Reward
+		qNYI(39485),	-- Short-Supply Reward
+
+		-- Tracking Quest - UNKNOWN TRIGGERS
+		qNYI(32935),	-- Tracking Quest
+		qNYI(37423),	-- Tracking Quest
+		qNYI(37424),	-- Tracking Quest
+		qNYI(37425),	-- Tracking Quest
+		qNYI(37426),	-- Tracking Quest
+		qNYI(37427),	-- Tracking Quest
+		qNYI(37428),	-- Tracking Quest
+		qNYI(37429),	-- Tracking Quest
+		qNYI(37430),	-- Tracking Quest
+		qNYI(37431),	-- Tracking Quest
+		qNYI(37432),	-- Tracking Quest
+		qNYI(39727),	-- Tracking Quest
+		qNYI(39728),	-- Tracking Quest
+		qNYI(39736),	-- Tracking Quest
+		qNYI(39737),	-- Tracking Quest
+		qNYI(39738),	-- Tracking Quest
+		qNYI(39739),	-- Tracking Quest
+		qNYI(39740),	-- Tracking Quest
+		qNYI(39749),	-- Tracking Quest - triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands
+		qNYI(39748),	-- Tracking Quest - triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands
+						-- Unflagged/flagged on a lvl 1 Bank alt when logging in lol
+		qNYI(39751),	-- Tracking Quest
+		qNYI(39752),	-- Tracking Quest
+		qNYI(39753),	-- Tracking Quest
+		qNYI(40416),	-- Tracking Quest
+		qNYI(40853),	-- Tracking Quest
+
+		--	???
+		q(33964),	-- Arak Flowerpicker
+		q(36636),	-- Blueprint Read
+		q(36849),	-- Burning Missive
+		q(36850),	-- Burning Missive
+		q(36851),	-- Burning Missive
+		q(36852),	-- Burning Missive
+		q(36853),	-- Burning Missive
+		q(36854),	-- Burning Missive
+		q(36855),	-- Burning Missive
+		q(36856),	-- Burning Missive
+		q(34580),	-- Draenor Flowerpicker
+		q(34581),	-- Draenor Flowerpicker Note Found
+		q(34831),	-- Encounter Mushroom
+		q(33961),	-- Frostfire Flowerpicker
+		q(33966),	-- Gorgrond Flowerpicker
+		q(33963),	-- Nagrand Flowerpicker
+		q(34872),	-- Prized Repossessions Tracking
+		q(34985),	-- Prized Repossessions Tracking
+		q(34986),	-- Punching Through Tracking
+		q(34873),	-- Punching Through Tracking
+		q(35192),	-- See Reinforcements Teleport
+		q(33962),	-- Shadowmoon Flowerpicker
+		q(34053),	-- SoL Conversation Tracker
+		q(36942),	-- Soulbinder Aedraa
+		q(34871),	-- Supply Recovery Tracking
+		q(34984),	-- Supply Recovery Tracking
+		q(33960),	-- Talador Flowerpicker
+		q(33965),	-- Tanaan Flowerpicker
+		q(39128),	-- Tanaan Vignette
+		q(39713),	-- Tracking Quest - Pops immediately on new characters but no other info known. Possibly legendary ring related
+		q(52969),	-- Going through the Stormwind Portal to Stormshield while on the WoD timeline in Chromie time
 	}),
 };

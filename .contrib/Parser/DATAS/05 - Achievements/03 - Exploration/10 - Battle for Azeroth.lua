@@ -611,12 +611,18 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(43),	-- Snapdragon Scent Gland
 			crit(44),	-- Alpha Fin
 			crit(45),	-- Exposed Fish
-			crit(46),	-- Fathom Ray Wing
+			crit(46, {	-- Fathom Ray Wing
+				["_quests"] = { 57247, 56972 },	-- Fathom Ray Wing A/H
+			}),
 			crit(47),	-- Muck Slime
 			crit(48),	-- Brightspine Shell
-			crit(49),	-- Giant Crab leg
+			crit(49, {	-- Giant Crab leg
+				["_quests"] = { 57248, 56973 },	-- Giant Crab Leg A/H
+			}),
 			crit(50),	-- Fermented Deviate Fish
-			crit(51),	-- Eel Filet
+			crit(51, {	-- Eel Filet
+				["_quests"] = { 57246, 56971 },	-- Eel Filet A/H
+			}),
 		}),
 		ach(13482, {	-- Head Financier of Mechagon
 			ach(13472),	-- Deep Pockets
@@ -758,7 +764,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 					["_npcs"] = { 143313 },
 				}),
 				crit(4, {	-- Toadcruel
-					["_quests"] = { 50893 },
+					["_npcs"] = { 143311 },
 				}),
 			},
 		}),

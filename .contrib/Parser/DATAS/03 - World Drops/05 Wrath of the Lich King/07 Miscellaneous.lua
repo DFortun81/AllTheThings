@@ -5,7 +5,7 @@
 _.WorldDrops =
 {
 	tier(WOTLK_TIER, {
-		n(-383, {	-- Miscellaneous
+		filter(MISC, {
 			i(43297, {	-- Damaged Necklace (Quest Version)
 				["repeatable"] = true,
 				["questID"] = 13148,

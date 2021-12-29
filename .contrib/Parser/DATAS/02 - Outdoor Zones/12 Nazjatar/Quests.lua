@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root("Zones", {
 	m(1355, {	-- Nazjatar
 		n(QUESTS, {
 			--[[
@@ -827,6 +826,16 @@ _.Zones =
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 153617 },	-- Shandris Feathermoon
 			}),
+			q(57246,{	-- Eel Filet [A]
+				["races"] = ALLIANCE_ONLY,
+				["provider"] = { "i", 170167 },	-- Eel Filet
+				["repeatable"] = true,
+			}),
+			q(56971,{	-- Eel Filet [H]
+				["races"] = HORDE_ONLY,
+				["provider"] = { "i", 170167 },	-- Eel Filet
+				["repeatable"] = true,
+			}),
 			q(55362, {	-- Elemental Fury
 				["provider"] = { "n", 151741 },	-- Apprentice Odari
 				["coord"] = { 43.4, 49.8, 1355 },
@@ -881,6 +890,16 @@ _.Zones =
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 56156,	-- A Tempered Blade
 				["isBreadcrumb"] = true,
+			}),
+			q(57247,{	-- Fathom Ray Wing [A]
+				["races"] = ALLIANCE_ONLY,
+				["provider"] = { "i", 170176 },	-- Fathom Ray Wing
+				["repeatable"] = true,
+			}),
+			q(56972,{	-- Fathom Ray Wing [H]
+				["races"] = HORDE_ONLY,
+				["provider"] = { "i", 170176 },	-- Fathom Ray Wing
+				["repeatable"] = true,
 			}),
 			q(56149, {	-- Feed Them All (A)
 				["provider"] = { "n", 154235 },	-- Harvester Akaro
@@ -973,6 +992,16 @@ _.Zones =
 				["isDaily"] = true,
 				["sourceQuest"] = 55500,	-- Save a Friend
 				["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
+			}),
+			q(57248,{	-- Giant Crab Leg [A]
+				["races"] = ALLIANCE_ONLY,
+				["provider"] = { "i", 170171, },	-- Giant Crab Leg
+				["repeatable"] = true,
+			}),
+			q(56973,{	-- Giant Crab Leg [H]
+				["races"] = HORDE_ONLY,
+				["provider"] = { "i", 170171, },	-- Giant Crab Leg
+				["repeatable"] = true,
 			}),
 			q(56215, {	-- Glittering Shell
 				["provider"] = { "n", 151310 },	-- Poen Gillbrack
@@ -2588,8 +2617,9 @@ _.Zones =
 			}),
 		}),
 	}),
-};
-_.HiddenQuestTriggers = {
+});
+
+root("HiddenQuestTriggers", {
 --	LOOT QUESTS
 	q(57143),	-- looting an Eel Filet
 
@@ -2597,7 +2627,7 @@ _.HiddenQuestTriggers = {
 	q(57040),	-- recruiting Hunter Akana / Vim Brineheart for the day
 	q(57041),	-- recruiting Farseer Ori / Neri Sharpfin for the day
 	q(57042),	-- recruiting Bladesman Inowari / Poen Gillbrack for the day
-	
+
 	q(55969),	-- Using Troop Requisition (168480)
 
 --	HORRIBLE NAZJATAR BODYGUARD DIALOGUE QUESTS (usually trigger in areas where you're doing the daily quests for the bodyguard, OR after 1-2 minutes of idling post-pickup)
@@ -2698,4 +2728,4 @@ _.HiddenQuestTriggers = {
 	q(56723),	-- Killed Zomera
 	q(56721),	-- Killed Osgen
 	q(56727),	-- Killed Ungormath
-};
+});

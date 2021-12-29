@@ -318,6 +318,7 @@ _.Zones =
 					},
 				}),
 				q(33787, {	-- Fiona's Solution
+					["sourceQuests"] = { 33786 },	-- Crippled Caravan
 					["coord"] = { 53.5, 57.2, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 76204 },	-- Fiona
@@ -1027,6 +1028,14 @@ _.Zones =
 					["icon"] = "Interface\\Icons\\INV_Artifact_tome01",
 					--["objectID"] = 233229,	-- Shadow Council Tome of Curses
 				}),
+				q(33786, {	-- Crippled Caravan
+					["sourceQuests"] = {
+						35450,	-- The Southern Wilds
+						35459,	-- The Southern Wilds
+					},
+					["coord"] = { 57.0, 57.5, DRAENOR_SHADOWMOON_VALLEY },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				n(BONUS_OBJECTIVES, {
 					-- TODO: Check SQ
 					i(111418),	-- Mushroom Juice (Used for the Bonus Objective)
@@ -1087,30 +1096,32 @@ _.Zones =
 		}),
 	}),
 };
-_.HiddenQuestTriggers = {
+root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
-		q(36493),	-- Shadowmoon Valley - Tracking Quest: Can Open Othaar's Door
-		q(36797),	-- Shadowmoon Valley - Founded the garrison
-		q(35626),	-- Shadowmoon Valley - Friend of the Exarchs: Apprentice Artificer Andren selected
-		q(35629),	-- Shadowmoon Valley - Friend of the Exarchs: Vindicator Onaala selected
-		q(35628),	-- Shadowmoon Valley - Friend of the Exarchs: Rangari Chel selected
-		q(33151),	-- Shadowmoon Valley - Saw scout Valdez arrive in Twilight Glade
-		q(37451),	-- Shadowmoon Valley - see Qiana Moonshadow while on "Qiana Moonshadow"
-		q(34600),	-- Shadowmoon Valley - Tracking Quest: Saw Vorka, Rangari Leave
-		q(34622),	-- Shadowmoon Valley - Tracking Quest: Saw Ner'zhul Leave
-		q(33839),	-- Shadowmoon Valley - Tracking Quest: Saw Naaru Purified
-		q(34599),	-- Shadowmoon Valley - Tracking Quest: Saw Yrel Leave Twilight Glade
-		q(36907),	-- Shadowmoon Valley - Tracking Quest: Defense of Karabor - Celebration Finished
-		q(33086),	-- Shadowmoon Valley - Tracking Quest: The Root of Darkness - Stone 1
-		q(33165),	-- Shadowmoon Valley - Tracking Quest: The Root of Darkness - Stone 2
-		q(33167),	-- Shadowmoon Valley - Tracking Quest: The Root of Darkness - Stone 3
-		q(33166),	-- Shadowmoon Valley - Tracking Quest: The Root of Darkness - Stone 4
-		q(34896),	-- Shadowmoon Valley - Tracking Quest: Stealthed Rangari - triggers when approaching Rangari Navra (43.7, 51.7)
+		q(35626),	-- Apprentice Artificer Andren - Apprentice Artificer Andren selected during "Friend of the Exarchs" (questID 34788)
+		q(36797),	-- Founded Garrison - triggers after building Alliance Garrison
+		q(34024),	-- Fungal Heart - triggers when you kill the Windfang Matriarch during "The Clarity Elixir" (questID 33076)
+		q(35628),	-- Rangari Chel - Rangari Chel selected during "Friend of the Exarchs" (questID 34788)
+		q(33151),	-- Saw scout Valdez arrive in Twilight Glade
+		q(37451),	-- See Qiana Moonshadow (Follower Mission Turn in) - triggers while on "Qiana Moonshadow" (questID 34646)
 		q(37674),	-- Shadowmoon Valley 6.0:JP3 - Gloomshade Grove - Tracking Quest - See Shelly Hamby (Game of Thorns) - after killing King Deathbloom
-		q(49544),	-- Shadowmoon Valley - After handing in Hero's Call: Shadowmoon Valley! (Draenor)
+		q(36493),	-- Tracking Quest: Can Open Othaar's Door
+		q(36907),	-- Tracking Quest: Defense of Karabor - Celebration Finished
+		q(33839),	-- Tracking Quest: Saw Naaru Purified
+		q(34622),	-- Tracking Quest: Saw Ner'zhul Leave
+		q(34600),	-- Tracking Quest: Saw Vorka, Rangari Leave
+		q(34599),	-- Tracking Quest: Saw Yrel Leave Twilight Glade
+		q(33086),	-- Tracking Quest: The Root of Darkness - Stone 1
+		q(33165),	-- Tracking Quest: The Root of Darkness - Stone 2
+		q(33167),	-- Tracking Quest: The Root of Darkness - Stone 3
+		q(33166),	-- Tracking Quest: The Root of Darkness - Stone 4
+		q(34896),	-- Tracking Quest: Stealthed Rangari - triggers when approaching Rangari Navra (43.7, 51.7)
+		q(35629),	-- Vindicator Onaala - Vindicator Onaala selected during "Friend of the Exarchs" (questID 34788)
+		q(33550),	-- [NOTUSED]Vignette: Iron Horde Napmaster - triggers when looting The Crystal Blade of Torvath
+		q(49544),	-- triggers after handing in Hero's Call: Shadowmoon Valley! (questID 49562)
 	}),
-};
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+});
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(WOD_TIER, {
 		n(WEAPONS, {
 			i(117994),	-- RENAME Karabor Honor Guard Axe
@@ -1118,8 +1129,9 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 		n(QUESTS, {
 			q(35618),	-- Gidwin Goldbraids
+			q(33782),	-- Keeping the Balance
 			q(35621),	-- Tarenar Sunstrike
 			q(37113),	-- Thisalee Crow
 		}),
 	}),
-});
+}));

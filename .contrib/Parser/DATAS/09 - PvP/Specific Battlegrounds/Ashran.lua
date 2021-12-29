@@ -404,6 +404,44 @@ _.PVP =
 						["races"] = HORDE_ONLY,
 						["u"] = REMOVED_FROM_GAME,
 					}),
+					q(39217, {	-- Don't Hate, Excavate! (A)
+						["provider"] = { "n", 84223 },	-- Harrison Jones
+						["coord"] = { 42.8, 76.8, 1478 },
+						["races"] = ALLIANCE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(39233, {	-- Don't Hate, Excavate! (H)
+						["provider"] = { "n", 88448 },	-- Belloc Brightblade
+						["coord"] = { 45.8, 29.0, 1478 },
+						["races"] = HORDE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(36123, {	-- Into The Wilderness (A)
+						["provider"] = { "n", 82909 },	-- Chris Clarkie
+						["coord"] = { 43.4, 76.8, 1478 },
+						["races"] = ALLIANCE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(36228, {	-- Into The Wilderness (H)
+						["provider"] = { "n", 83869 },	-- Angry Zurge
+						["coord"] = { 45.8, 28.8, 1478 },
+						["races"] = HORDE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(36791, {	-- Phantom Potion (A)
+						["repeatable"] = true,
+						["provider"] = { "n", 85749 },	-- Gimlet Ginfizz
+						["coord"] = { 44.2, 74.2, 1478 },
+						["races"] = ALLIANCE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(36935, {	-- Phantom Potion (H)
+						["repeatable"] = true,
+						["provider"] = { "n", 86366 },	-- Tyra Silverblood
+						["coord"] = { 45.6, 28.6, 1478 },
+						["races"] = HORDE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(39096, {	-- Slay Them All! (A)
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,
@@ -444,6 +482,18 @@ _.PVP =
 							}),
 						},
 					}),
+					q(36133, {	-- Uncovering the Artifact Fragments (A)
+						["provider"] = { "n", 88682 },	-- Misirin Stouttoe
+						["coord"] = { 43.2, 77.0, 1478 },
+						["races"] = ALLIANCE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(36198, {	-- Uncovering the Artifact Fragments (H)
+						["provider"] = { "n", 94864 },	-- Cymre Brightblade
+						["coord"] = { 45.8, 29.0, 1478 },
+						["races"] = HORDE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(56336, {	-- Uncovering the Artifact Fragments (A)
 						["provider"] = { "n", 155283 },	-- Ecilam
 						["isWeekly"] = true,
@@ -455,6 +505,64 @@ _.PVP =
 						["isWeekly"] = true,
 						["coord"] = { 45.4, 27.1, 1478 },
 						["races"] = HORDE_ONLY,
+					}),
+					q(36130, {	-- Reporting For Duty (A)
+						["provider"] = { "n", 84173 },	-- Commander Anne Dunworthy
+						["coord"] = { 44.6, 74.0, 1478 },
+						["races"] = ALLIANCE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(36197, {	-- Reporting For Duty (H)
+						["provider"] = { "n", 84473 },	-- General Ushet Wolfbarger
+						["coord"] = { 45.0, 27.8, 1478 },
+						["races"] = HORDE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(36127, {	-- Survey Ashran (A)
+						["provider"] = { "n", 82901 },	-- Farseer Kylanda
+						["coord"] = { 44.8, 75.0, 1478 },
+						["races"] = ALLIANCE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(36226, {	-- Survey Ashran (H)
+						["provider"] = { "n", 84660 },	-- Mare Wildrunner
+						["coord"] = { 47.0, 26.8, 1478 },
+						["races"] = HORDE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(36125, {	-- The Road of Glory (A)
+						["provider"] = { "n", 82909 },	-- Chris Clarkie
+						["coord"] = { 43.4, 76.8, 1478 },
+						["races"] = ALLIANCE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(36227, {	-- The Road of Glory (H)
+						["provider"] = { "n", 83869 },	-- Angry Zurge
+						["coord"] = { 45.8, 28.8, 1478 },
+						["races"] = HORDE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(36741, {	-- Vintage Free Action Potion (A)
+						["repeatable"] = true,
+						["provider"] = { "n", 85749 },	-- Gimlet Ginfizz
+						["coord"] = { 44.2, 74.2, 1478 },
+						["races"] = ALLIANCE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(36742, {	-- Vintage Free Action Potion (H)
+						["repeatable"] = true,
+						["provider"] = { "n", 86366 },	-- Tyra Silverblood
+						["coord"] = { 45.6, 28.6, 1478 },
+						["races"] = HORDE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(36119, {	-- Welcome to Ashran (A)
+						["races"] = ALLIANCE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(36196, {	-- Welcome to Ashran (H)
+						["races"] = HORDE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(56338, {	-- Volrath Must Die
 						["provider"] = { "n", 84173 },	-- Commander Anne Dunworthy
@@ -584,18 +692,14 @@ _.PVP =
 							}),
 						},
 					}),
-					i(112113, {	-- Pandaren Hide
-						["allianceQuestID"] = 35942,	-- Pandaren Hide (A)
-						["hordeQuestID"] = 36038,	-- Pandaren Hide (H)
+					q(35942, {	-- Pandaren Hide [A]
+						["provider"] = { "i", 112113 },	-- Pandaren Hide
+						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 						["g"] = {
 							crit(1, {	-- Pandaren Hide (A)
 								["achievementID"] = 9104,	-- Bounty Hunter (A)
 								["races"] = ALLIANCE_ONLY,
-							}),
-							crit(1, {	-- Pandaren Hide (H)
-								["achievementID"] = 9103,	-- Bounty Hunter (H)
-								["races"] = HORDE_ONLY,
 							}),
 							i(170073),	-- Dented Ashmaul Strongbox
 							i(128216, {	-- Dented Ashmaul Strongbox
@@ -603,6 +707,18 @@ _.PVP =
 								["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_ALLIANCE, PVP_COMBATANT }, },
 								["u"] = REMOVED_FROM_GAME,
 							}),
+						},
+					}),
+					q(36038, {	-- Pandaren Hide [H]
+						["provider"] = { "i", 112113 },	-- Pandaren Hide
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+						["g"] = {
+							crit(1, {	-- Pandaren Hide (H)
+								["achievementID"] = 9103,	-- Bounty Hunter (H)
+								["races"] = HORDE_ONLY,
+							}),
+							i(170073),	-- Dented Ashmaul Strongbox
 							i(128215, {	-- Dented Ashmaul Strongbox
 								["races"] = HORDE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
@@ -691,6 +807,24 @@ _.PVP =
 								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
+					}),
+				}),
+				n(BONUS_OBJECTIVES, {
+					q(37479, {	-- Bonus Objective: Kill Alliance Leaders
+						["races"] = ALLIANCE_ONLY,
+						["isRepeatable"] = true,
+					}),
+					q(37480, {	-- Bonus Objective: Kill Alliance Leaders
+						["races"] = ALLIANCE_ONLY,
+						["isRepeatable"] = true,
+					}),
+					q(37481, {	-- Bonus Objective: Kill Horde Leaders
+						["races"] = HORDE_ONLY,
+						["isRepeatable"] = true,
+					}),
+					q(37482, {	-- Bonus Objective: Kill Horde Leaders
+						["races"] = HORDE_ONLY,
+						["isRepeatable"] = true,
 					}),
 				}),
 				n(VENDORS, {

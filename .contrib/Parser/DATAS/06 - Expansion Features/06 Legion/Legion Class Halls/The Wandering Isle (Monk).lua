@@ -643,7 +643,9 @@ _.ExpansionFeatures =
 							["classes"] = { MONK },
 							["coord"] = { 73.9, 88.9, KUN_LAI_SUMMIT },
 							["g"] = {
-								i(142225),	-- Ban-Lu, Grandmaster's Companion (MOUNT!)
+								i(142225, {		-- Ban-Lu, Grandmaster's Companion
+									["classes"] = { MONK },
+								}),
 							},
 						}),
 						q(42762, {	-- The Wanderer's Companion

@@ -39,7 +39,7 @@ _.GroupFinder =
 			i(51965),			-- Vigorous Handguards		— 4/8/19
 			un(REMOVED_FROM_GAME, i(51998)),	-- Vigorous Spaulders [Probably unobtainable - maybe old leather set that got changed into mail set]
 			i(51966),			-- Vigorous Spaulders*
-			i(51963),			-- Vigorous Stompers		— 4/8/19
+			i(51963),			-- Vigorous Stompers		— 12/27/21
 		}),
 		i(51999, {	-- Satchel of Helpful Goods 15-25
 			["u"] = REMOVED_FROM_GAME,

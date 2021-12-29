@@ -190,6 +190,11 @@ _.Zones =
 							["provider"] = { "n", 28653 },	-- Salanar the Horseman
 							["coord"] = { 52.2, 34.8, THE_SCARLET_ENCLAVE },
 							["sourceQuest"] = 12680,	-- Grand Theft Palomino
+							["g"] = {
+								mount(48778, {	-- Acherus Deathcharger
+									["classes"] = { DEATHKNIGHT },
+								}),
+							},
 						}),
 						q(12722, {	-- Lambs To The Slaughter
 							["provider"] = { "n", 28910 },	-- Baron Rivendare

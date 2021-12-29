@@ -423,33 +423,6 @@ _.Zones =
 					["coord"] = { 51.6, 31.2, SPIRES_OF_ARAK },
 					["provider"] = { "n", 79890 },	-- Ornekka
 				}),
-				q(37851, {	-- Amulet of Rukhmar: The Final Key
-					["sourceQuests"] = { 37850 },	-- Amulet of Rukhmar: The Second Key
-					["coord"] = { 73.4, 34.9, SPIRES_OF_ARAK },
-					["isDaily"] = true,
-				}),
-				q(37849, {	-- Amulet of Rukhmar: The First Key
-					["sourceQuests"] = { 37848 },	-- Treasure Contract: Amulet of Rukhmar
-					["coord"] = { 53.0, 14.8, SPIRES_OF_ARAK },
-					["isDaily"] = true,
-				}),
-				q(37850, {	-- Amulet of Rukhmar: The Second Key
-					["sourceQuests"] = { 37849 },	-- Amulet of Rukhmar: The First Key
-					["coord"] = { 60.5, 12.3, SPIRES_OF_ARAK },
-					["isDaily"] = true,
-				}),
-				q(37993, {	-- Amulet of Rukhmar: The Apexis Device
-					["sourceQuests"] = { 37851 },	-- Amulet of Rukhmar: The Final Key
-					["coord"] = { 69.9, 33.6, SPIRES_OF_ARAK },
-					["isDaily"] = true,
-					["races"] = HORDE_ONLY,
-				}),
-				q(37852, {	-- Amulet of Rukhmar: The Apexis Device
-					["sourceQuests"] = { 37851 },	-- Amulet of Rukhmar: The Final Key
-					["coord"] = { 69.9, 33.6, SPIRES_OF_ARAK },
-					["isDaily"] = true,
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(34886, {	-- Baby Bird
 					["sourceQuests"] = { 34838 },	-- Ikky's Egg
 					["coord"] = { 45.4, 36.6, SPIRES_OF_ARAK },
@@ -1284,42 +1257,35 @@ _.Zones =
 		}),
 	}),
 };
-_.HiddenQuestTriggers = {
+root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
-		q(36885),	-- Spires of Arak - Ogre Waygate
-		q(36364),	-- Spires - Treasure 041 - Toxicfang Venom
-		q(35874),	-- Spires of Arak - Apparatus - triggers after finishing "The Ebon Hunter" quest
-		q(36859),	-- Spires of Arak - Deprecated version of "The Howling Crag" bonus objective
-		q(35201),	-- Spires of Arak - Krixel
-		q(37417),	-- Spires of Arak - Feast of the Spires (alliance) - put down by the barkeep if you have the brewery
-		q(37416),	-- Spires of Arak - Feast of the Spires (horde) - put down by the barkeep if you have the brewery
-		q(36111),	-- Spires of Arak - Flight Home
-		q(36112),	-- Spires of Arak - Flight Home
-		q(36577),	-- Spires of Arak - Flying Machine Completed after landing during "Flame On"
-		q(36184),	-- Spires of Arak - Mother Lode - triggers when you accept "The Mother Lode" quest and the crash happens
-		q(37317),	-- Spires of Arak - Talon King Ikiss killed during "The False Talon King"
-		q(35291),	-- Spires of Arak - Trading Post selected (alliance)
-		q(37316),	-- Spires of Arak - Trading Post selected (alliance)
-		q(35284),	-- Spires of Arak - Trading Post selected (horde)
-		q(37314),	-- Spires of Arak - Trading Post selected (horde)
-		q(35290),	-- Spires of Arak - Inn selected (alliance)
-		q(37315),	-- Spires of Arak - Inn selected (alliance)
-		q(35283),	-- Spires of Arak - Inn selected (horde)
-		q(37313),	-- Spires of Arak - Inn selected (horde)
-		q(36798),	-- Spires of Arak - Rooby Roo fed 3x to reveal the treasure
-		q(35028),	-- Spires of Arak - Krikka and Vakora Tracking - triggers during "The Bloodmane" and "Words of the Raven Mother"
-		q(36724),	-- Spires of Arak - Reshad Tracking - triggers after turning in "Call of the Raven Mother"
+		q(35874),	-- Apparatus - triggers after finishing "The Ebon Hunter" (questID 35835 & 35797)
+		q(35290),	-- Inn - Inn selected (A)
+		q(37315),	-- Inn - Inn selected (A)
+		q(35283),	-- Inn - Inn selected (H)
+		q(37313),	-- Inn - Inn selected (H)
+		q(37417),	-- Feast of the Spires - put down by the barkeep if you have the brewery (A)
+		q(37416),	-- Feast of the Spires - put down by the barkeep if you have the brewery (H)
+		q(36111),	-- Flight Home
+		q(36112),	-- Flight Home
+		q(36577),	-- Flying Machine Completed - triggers after landing during "Flame On" (questID 35298)
+		q(35028),	-- Krikka and Vakora Tracking - triggers during "The Bloodmane" (questID 34923) and "Words of the Raven Mother" (questID 34922)
+		q(35201),	-- Krixel
+		q(36184),	-- Mother Lode - triggers when you accept "The Mother Lode" quest and the crash happens (questID 35080)
+		q(36885),	-- Ogre Waygate
+		q(36724),	-- Reshad Tracking - triggers after turning in "Call of the Raven Mother" (questID 35009)
+		q(36798),	-- Rooby Roo - fed 3x to reveal the treasure
+		q(37317),	-- Talon King Ikiss - killed during "The False Talon King" (questID 35011)
+		q(35291),	-- Trading Post - Trading Post selected (A)
+		q(37316),	-- Trading Post - Trading Post selected (A)
+		q(35284),	-- Trading Post - Trading Post selected (H)
+		q(37314),	-- Trading Post - Trading Post selected (H)
 	}),
-};
+});
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(WOD_TIER, {
 		n(WEAPONS, {
 			i(114946),	-- Admiral Taylor's Spellguard
-		}),
-		n(QUESTS, {
-			-- For Darkal
-			q(35340),	-- What Happened Here?
-			q(36796),	-- The Flock's Revenge
 		}),
 	}),
 });

@@ -9,6 +9,36 @@ _.Craftables =
 {
 	tier(SL_TIER, {
 		prof(INSCRIPTION, {
+			filter(111, {	-- Glyphs
+				i(187884, {	-- Mark of the Twilight Runestag
+					["questID"] = 64986,
+					["classes"] = { DRUID },
+				}),
+				i(187934, {	-- Mark of the Midnight Runestag
+					["questID"] = 65061,
+					["classes"] = { DRUID },
+				}),
+				i(187887, {	-- Mark of the Gloomstalker Dredbat
+					["questID"] = 65048,
+					["classes"] = { DRUID },
+				}),
+				i(187936, {	-- Mark of the Sable Ardenmoth
+					["questID"] = 65062,
+					["classes"] = { DRUID },
+				}),
+				i(187888, {	-- Mark of the Shimmering Ardenmoth
+					["questID"] = 64987,
+					["classes"] = { DRUID },
+				}),
+				i(187933, {	-- Mark of the Duskwing Raven
+					["questID"] = 65058,
+					["classes"] = { DRUID },
+				}),
+				i(187931, {	-- Mark of the Regal Dredbat
+					["questID"] = 65059,
+					["classes"] = { DRUID },
+				}),
+			}),
 			n(HEAD, {
 				i(180755),	-- Fae Revel Masque
 			}),

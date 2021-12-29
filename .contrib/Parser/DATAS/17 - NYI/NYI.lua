@@ -33,10 +33,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(188701),	-- Fire Festival Batons (Midsummer)
 		i(188699),	-- Insulated Dancing Insoles (Midsummer)
 		i(188695),	-- Summer Cranial Skillet (Midsummer)
-		i(187422),	-- Rockin' Rollin' Racer Customizer 19.9.3 (Winter Veil)
-		i(187560),	-- Shine and Pine (Winter Veil)
-		ach(15181),	-- Rock n' Roll
-		ach(15313),	-- Rockin' Rollin' Racer
 		-- Trial of Style 9.1.5 Items added
 		i(188240),	-- Augur's Walkers
 		i(188246),	-- Bloodbathed Slippers
@@ -1353,7 +1349,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(177166),	-- Lucky Braid
 		}),
 	}),
-	filter(50, {	-- Misc
+	filter(MISC, {
 		filter(113, {	-- Bags
 			i(130943),	-- Reusable Tote Bag
 			i(166699),	-- Desert Rucksack
@@ -1746,6 +1742,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(43963),	-- Reins of the Brown Polar Bear
 		i(43964),	-- Reins of the Black Polar Bear
 		i(46101),	-- Blue Skeletal Warhorse
+		mount(241851, {	-- Netherlord's Chaotic Wrathsteed
+			["classes"] = { WARLOCK },
+			["u"] = NEVER_IMPLEMENTED,
+		}),
 		-- SL
 		i(186491),	-- Spring Wilderling Harness
 		i(186639),	-- Pilfered Gearglider

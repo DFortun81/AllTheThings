@@ -414,28 +414,6 @@ _.Zones =
 					["coord"] = { 75.0, 22.7, DRAENOR_NAGRAND },
 					["sourceQuest"] = 34894,	-- A Rare Bloom
 				}),
-				q(37799, {	-- Gutrek's Cleaver: The Final Piece
-					["isDaily"] = true,
-					["sourceQuest"] = 37798,	-- Gutrek's Cleaver: The Second Piece
-				}),
-				q(37797, {	-- Gutrek's Cleaver: The First Piece
-					["isDaily"] = true,
-					["sourceQuest"] = 37788,	-- Treasure Contract: Gutrek's Cleaver
-				}),
-				q(37798, {	-- Gutrek's Cleaver: The Second Piece
-					["isDaily"] = true,
-					["sourceQuest"] = 37797,	-- Gutrek's Cleaver: The First Piece
-				}),
-				q(37811, {	-- Gutrek's Cleaver: The Spirit Forge
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-					["sourceQuest"] = 37799,	-- Gutrek's Cleaver: The Final Piece
-				}),
-				q(37992, {	-- Gutrek's Cleaver: The Spirit Forge
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-					["sourceQuest"] = 37799,	-- Gutrek's Cleaver: The Final Piece
-				}),
 				q(36220, {	-- How Tough Are You?
 					["provider"] = { "n", 84637 },	-- Gurgthock
 					["coord"] = { 63.0, 36.0, DRAENOR_NAGRAND },
@@ -1504,11 +1482,23 @@ _.Zones =
 		}),
 	}),
 };
-_.HiddenQuestTriggers = {
+root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
+		q(34679),	-- Alliance Stables Tracking Event
+		q(34680),	-- Alliance Workshop Tracking Event
+		q(37202),	-- Hemet Nesingwary Visitor Tracking Event
+		q(34812),	-- Horde Stables Tracking Event
+		q(34813),	-- Horde Workshop Tracking Event
+		q(34518),	-- Nagrand Corral
 		q(36906),	-- Ogre Waygate
+		q(37802),	-- Gutrek's Hilt Looted - triggers during "Gutrek's Cleaver: The First Piece" (questID 37797)
+		q(37803),	-- Gutrek's Pommel Looted - triggers during "Gutrek's Cleaver: The Second Piece" (questID 37798)
+		q(37804),	-- Gutrek's Blade Looted - triggers during "Gutrek's Cleaver: The Final Piece" (questID 37799)
+		q(37671),	-- Nagrand 6.0:JP3 - Broken Precipice - Tracking Quest - See Greblin Fastfizzle - triggers during "Garrison Campaign: The Broken Precipice" (questID 35985 & 36117)
+		-- TODO: verify
+		--q(37805),	-- Goblin Looted - triggers during "Gutrek's Cleaver: The Spirit Forge" (questID 37811 & 37992)
 	}),
-};
+});
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(WOD_TIER, {
 		n(QUESTS, {

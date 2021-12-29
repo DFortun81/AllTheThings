@@ -156,7 +156,6 @@ _.Instances = { tier(CATA_TIER, {
 			}),
 			d(2, {	-- Heroic
 				["lvl"] = 85,
-				["ignoreBonus"] = true,
 				["groups"] = {
 					n(ACHIEVEMENTS, {
 						ach(5296),	-- Faster Than the Speed of Light
@@ -249,6 +248,11 @@ _.Instances = { tier(CATA_TIER, {
 		},
 	}),
 })};
-_.HiddenQuestTriggers = {
-	q(35415),	-- Reward for killing Anraphet
-};
+root("HiddenQuestTriggers", {
+	tier(WOD_TIER, {
+		q(35415),	-- Halls of Origination Reward Quest
+		q(35424),	-- Halls of Origination Reward Quest
+		q(35420),	-- Halls of Origination Bonus Rewards
+		q(35426),	-- Halls of Origination Bonus Rewards
+	}),
+});

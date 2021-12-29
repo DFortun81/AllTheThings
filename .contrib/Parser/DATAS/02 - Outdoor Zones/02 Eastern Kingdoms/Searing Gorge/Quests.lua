@@ -29,7 +29,6 @@ _.Zones =
 				q(27470, {	-- A Potential Ally
 					["provider"] = { "n", 14625 },	-- Overseer Oilfist
 					["coord"] = { 38.1, 26.9, SEARING_GORGE },
-					["isBreadcrumb"] = true,
 				}),
 				q(27958, {	-- A Proper Antivenom
 					["provider"] = { "n", 47268 },	-- Prisanne Dustcropper

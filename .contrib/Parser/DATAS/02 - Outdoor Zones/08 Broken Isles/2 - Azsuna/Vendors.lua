@@ -145,7 +145,7 @@ _.Zones =
 							},
 						}),
 						i(139631, {	-- Vainglorious Draught
-							["questID"] = 43514,	-- A Vainglorious Past
+							["cost"] = 1500000,	-- 150g
 						}),
 						i(137779, {	-- Vantus Rune Technique: High Botanist Tel'arn (Rank 3)
 							["cost"] = 20000000,	-- 2,000g

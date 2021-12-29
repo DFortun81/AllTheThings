@@ -9,6 +9,17 @@ local L = app.L;
 local auctionFrame = CreateFrame("Frame");
 local window;
 
+-- Assign the FactionID.
+app.Faction = UnitFactionGroup("player");
+if app.Faction == "Horde" then
+	app.FactionID = Enum.FlightPathFaction.Horde;
+elseif app.Faction == "Alliance" then
+	app.FactionID = Enum.FlightPathFaction.Alliance;
+else
+	-- Neutral Pandaren or... something else. Scourge? Neat.
+	app.FactionID = 0;
+end
+
 -- Performance Cache
 -- While this may seem silly, caching references to commonly used APIs is actually a performance gain...
 local C_ArtifactUI_GetAppearanceInfoByID = C_ArtifactUI.GetAppearanceInfoByID;
@@ -463,10 +474,9 @@ end
 -- Returns an object which contains no data, but can return values from an overrides table, and be loaded/created when a specific field is attempted to be referenced
 -- i.e. Create a data group which contains no information but will attempt to populate itself when [loadField] is referenced
 app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
-	local dlo, o;
+	local o;
 	local params = {...};
-	local loader;
-	loader = {
+	local loader = {
 		__index = function(t, key)
 			-- load the object if it matches the load field and not yet loaded
 			if not o and key == loadField then
@@ -487,9 +497,15 @@ app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
 				return o[key];
 			end
 		end,
+		-- transfer field sets to the underlying object
+		__newindex = function(t, key, val)
+			if o then
+				o[key] = val;
+			end
+		end,
 	};
 	-- data is just an empty table with a loader metatable
-	dlo = setmetatable({}, loader);
+	local dlo = setmetatable({}, loader);
 	return dlo;
 end
 app.SetDataMember = SetDataMember;
@@ -1705,8 +1721,8 @@ local function GetUnobtainableTexture(groupORu)
 	local u = isTable and groupORu.u or groupORu;
 	-- non-unobtainable group
 	if not u then return; end
-	-- non-NYI item or spell which is BoE, use green dot
-	if isTable and (groupORu.itemID or groupORu.spellID) and u > 1 and not app.IsBoP(groupORu) then
+	-- non-NYI item or spell which is BoE and not a holiday (u<1000), use green dot
+	if isTable and (groupORu.itemID or groupORu.spellID) and u > 1 and u < 1000 and not app.IsBoP(groupORu) then
 		u = 3;
 	else
 		local record = L["UNOBTAINABLE_ITEM_REASONS"][u];
@@ -1959,6 +1975,10 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange)
 	local coord;
 	local mapID = app.GetCurrentMapID();
 	local position = mapID and C_Map.GetPlayerMapPosition(mapID, "player");
+	local covID, covData = C_Covenants.GetActiveCovenantID();
+	if covID and covID > 0 then
+		covData = C_Covenants.GetCovenantData(covID);
+	end
 	if position then
 		local x,y = position:GetXY();
 		x = math.floor(x * 1000) / 10;
@@ -1973,11 +1993,11 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange)
 
 		questChange,
 		"name:"..(C_TaskQuest.GetQuestInfoByQuestID(id) or C_QuestLog.GetTitleForQuestID(id) or "???"),
-		"race:"..app.RaceID,
-		"class:"..app.ClassIndex,
+		"race:"..app.RaceID.." ("..app.Race..")",
+		"class:"..app.ClassIndex.." ("..app.Class..")",
 		"lvl:"..app.Level,
-		"cov:"..(C_Covenants.GetActiveCovenantID() or "0");
-		mapID and ("mapID:"..mapID) or "mapID:??",
+		"cov:"..(covData and covData.name or "N/A");
+		mapID and ("mapID:"..mapID.." ("..C_Map_GetMapInfo(mapID).name..")") or "mapID:??",
 		coord and ("coord:"..coord) or "coord:??",
 		"ver:"..app.Version,
 
@@ -2007,8 +2027,7 @@ app.CheckInaccurateQuestInfo = function(questRef, questChange)
 end
 local PrintQuestInfo = function(questID, new, info)
 	if app.IsReady and app.Settings:GetTooltipSetting("Report:CompletedQuests") then
-		local searchResults = app.SearchForField("questID", questID);
-		local id = questID;
+		local questRef = app.SearchForObject("questID", questID);
 		local questChange;
 		if new == true then
 			questChange = "accepted";
@@ -2017,44 +2036,45 @@ local PrintQuestInfo = function(questID, new, info)
 		else
 			questChange = "completed";
 		end
-		if not searchResults or #searchResults <= 0 or GetRelativeField(searchResults[1], "text", L["UNSORTED_1"]) then
-			questID = questID .. " (Not in ATT " .. app.Version .. ")";
+		-- This quest doesn't meet the filter for this character, then ask to report in chat
+		if questChange == "accepted" then
+			DelayedCallback(app.CheckInaccurateQuestInfo, 0.5, questRef, questChange);
+		end
+		local chatMsg;
+		if not questRef or GetRelativeField(questRef, "text", L["UNSORTED_1"]) then
 			-- Linkify the output
-			local popupID = "quest-" .. id;
-			questID = app:Linkify(questID, "ff5c6c", "dialog:" .. popupID);
-			app:SetupReportDialog(popupID, "Missing Quest: " .. id,
-				app.BuildDiscordQuestInfoTable(id, "missing-quest", questChange)
+			local popupID = "quest-" .. questID .. questChange;
+			chatMsg = app:Linkify(questID .. " (Not in ATT " .. app.Version .. ")", "ff5c6c", "dialog:" .. popupID);
+			app:SetupReportDialog(popupID, "Missing Quest: " .. questID,
+				app.BuildDiscordQuestInfoTable(questID, "missing-quest", questChange)
 			);
 		else
-			if app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
-				return true;
-			end
-			local questRef = searchResults[1];
+			-- give a chat output if the user has just interacted with a quest flagged as NYI
+			if GetRelativeField(questRef, "text", L["NEVER_IMPLEMENTED"]) then
+				-- Linkify the output
+				local popupID = "quest-" .. questID .. questChange;
+				chatMsg = app:Linkify(questID .. " [NYI] ATT " .. app.Version, "ff5c6c", "dialog:" .. popupID);
+				app:SetupReportDialog(popupID, "NYI Quest: " .. questID,
+					app.BuildDiscordQuestInfoTable(questID, "nyi-quest", questChange)
+				);
 			-- tack on an 'HQT' tag if ATT thinks this QuestID is a Hidden Quest Trigger
 			-- (sometimes 'real' quests are triggered complete when other 'real' quests are turned in and contribs may consider them HQT if not yet sourced
 			-- so when a quest flagged as HQT is accepted/completed directly, it will be more noticable of being incorrectly sourced
-			if GetRelativeField(questRef, "text", L["HIDDEN_QUEST_TRIGGERS"]) then
-				questID = questID .. " [HQT]";
+			elseif GetRelativeField(questRef, "text", L["HIDDEN_QUEST_TRIGGERS"]) then
+				if app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
+					return true;
+				end
 				-- Linkify the output
-				questID = app:Linkify(questID, "7aff92", "search:questID:" .. id);
-			elseif GetRelativeField(questRef, "text", L["NEVER_IMPLEMENTED"]) then
-				questID = questID .. " (Not in ATT " .. app.Version .. " [NYI])";
-				-- Linkify the output
-				local popupID = "quest-" .. id;
-				questID = app:Linkify(questID, "ff5c6c", "dialog:" .. popupID);
-				app:SetupReportDialog(popupID, "NYI Quest: " .. id,
-					app.BuildDiscordQuestInfoTable(id, "nyi-quest", questChange)
-				);
+				chatMsg = app:Linkify(questID .. " [HQT]", "7aff92", "search:questID:" .. questID);
 			else
+				if app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
+					return true;
+				end
 				-- Linkify the output
-				questID = app:Linkify(questID, "149bfd", "search:questID:" .. id);
-			end
-			-- This quest doesn't meet the filter for this character, then ask to report in chat
-			if questChange == "accepted" then
-				DelayedCallback(app.CheckInaccurateQuestInfo, 1, questRef, questChange);
+				chatMsg = app:Linkify(questID, "149bfd", "search:questID:" .. questID);
 			end
 		end
-		print("Quest",questChange,questID,(info or ""));
+		print("Quest",questChange,chatMsg,(info or ""));
 	end
 end
 local DirtyQuests = {};
@@ -2062,8 +2082,7 @@ local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 	local total = rawget(t, "_TOTAL") or 0;
 	if value then
 		if not rawget(t, key) then
-			total = total + 1;
-			rawset(t, "_TOTAL", total);
+			rawset(t, "_TOTAL", total + 1);
 		end
 		rawset(t, key, value);
 		rawset(DirtyQuests, key, true);
@@ -2072,8 +2091,7 @@ local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 		app.CurrentCharacter.Quests[key] = 1;
 		PrintQuestInfo(key);
 	elseif value == false then
-		total = total - 1;
-		rawset(t, "_TOTAL", total);
+		rawset(t, "_TOTAL", total - 1);
 		rawset(DirtyQuests, "DIRTY", true);
 		-- no need to actually set the key in the table since it's been marked as incomplete
 		-- and this meta function only triggers on NEW key assignments
@@ -2084,6 +2102,14 @@ end});
 -- returns nil if nil provided, otherwise true/false based on the specific quest being completed by the current character
 local IsQuestFlaggedCompleted = function(questID)
 	return questID and CompletedQuests[questID];
+end
+-- Returns true if any provided questID is currently completed for the current character
+local IsAnyQuestFlaggedCompleted = function(quests)
+	if quests then
+		for _,questID in pairs(quests) do
+			if CompletedQuests[questID] then return 1; end
+		end
+	end
 end
 local IsQuestFlaggedCompletedForObject = function(t)
 	-- nil if not a quest-based object
@@ -3365,7 +3391,7 @@ local function FillPurchases(group, depth)
 	if depth <= 0 then return; end
 	-- do not fill purchases on certain items, can skip the skip though based on a level
 	if (app.SkipPurchases[-1] or 0) < (app.SkipPurchases[group.itemID or -1] or 0) then return; end
-	-- do not fill 'saved' groups (unless they are actual Maps or Instances, or a Difficulty header. Also 'saved' Items usually means tied to a questID directory)
+	-- do not fill 'saved' groups (unless they are actual Maps or Instances, or a Difficulty header. Also 'saved' Items usually means tied to a questID directly)
 	-- or groups directly under saved groups unless in Acct or Debug mode
 	if not app.MODE_DEBUG_OR_ACCOUNT and not (group.instanceID or group.mapID or group.difficultyID or group.itemID) then
 		if group.saved then return; end
@@ -3380,7 +3406,7 @@ local function FillPurchases(group, depth)
 		local usedToBuy = app.CreateNPC(-2, { ["text"] = L["CURRENCY_FOR"] } );
 		NestObject(group, usedToBuy);
 		PriorityNestObjects(usedToBuy, collectibles, true, app.RecursiveGroupRequirementsFilter);
-		-- if app.DEBUG_PRINT then print("Filled",#collectibles,"under",group.key,group.key and group[group.key],"as",#usedToBuy.g,"unique groups") end
+		-- if app.DEBUG_PRINT then print("Filled",#collectibles,"under",group.hash,"as",#usedToBuy.g,"unique groups") end
 		-- reduce the depth by one since a cost has been filled
 		depth = depth - 1;
 		-- mark this group as no-longer collectible as a cost since its collectible contents have been filled under itself
@@ -4075,6 +4101,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		-- Replace as the group
 		group = root;
 		-- Ensure no weird parent references attached to the base search result
+		group.sourceParent = nil;
 		group.parent = nil;
 
 		-- print(group.g and #group.g,"Merge total");
@@ -5543,9 +5570,26 @@ end
 -- Returns an Object based on a QuestID a lot of Quest information for displaying in a row
 local function GetPopulatedQuestObject(questID)
 	local cachedVersion = app.SearchForObject("questID", questID);
+	-- questID not sourced specifically as a questID, potentially only as an altQuest on another object...
+	if not cachedVersion then
+		local allCached = app.SearchForField("questID", questID);
+		if allCached then
+			for _,o in ipairs(allCached) do
+				if o.altQuests then
+					if contains(o.altQuests, questID) then
+						-- print("Found group for questID via altQuests",questID,"=>",o.hash)
+						cachedVersion = o;
+						break;
+					end
+				end
+			end
+		end
+	end
 	-- either want to duplicate the existing data for this quest, or create new data for a missing quest
 	local data = cachedVersion or { questID = questID, _missing = true };
 	local questObject = CreateObject(data, true);
+	-- if this quest exists but is Sourced under a _missing group, then it is technically missing itself
+	questObject._missing = GetRelativeValue(data, "_missing");
 	PopulateQuestObject(questObject);
 	return questObject;
 end
@@ -6058,19 +6102,16 @@ end
 local npcQuestsCache = {}
 function app.IsNPCQuestGiver(self, npcID)
 	if not npcID then return false; end
-	if npcQuestsCache[npcID] then
+	if npcQuestsCache[npcID] ~= nil then
 		return npcQuestsCache[npcID];
 	else
 		local group = app.SearchForField("creatureID", npcID);
-		if not group then
-			npcQuestsCache[npcID] = false;
-			return false;
-		end
-
-		for i,v in pairs(group) do
-			if v.visible and v.questID then
-				npcQuestsCache[npcID] = true;
-				return true;
+		if group then
+			for _,v in pairs(group) do
+				if v.visible and v.questID then
+					npcQuestsCache[npcID] = true;
+					return true;
+				end
 			end
 		end
 
@@ -6572,6 +6613,7 @@ app.BaseObjectFields = function(fields, type)
 		_cache = rawget(fields, key);
 		-- cloned groups will not directly have a parent, but they will instead have a sourceParent, so fill in with that instead
 		if not _cache then
+			-- TODO: evaluate performance cost of 'missing' keys hitting this logic (i.e. 'collectible' on headers, etc.)
 			-- special re-direct keys possible for 'any' Type of object
 			if key == "parent" then return t.sourceParent; end
 			if key == "hash" then return app.CreateHash(t); end
@@ -9020,6 +9062,7 @@ local itemFields = {
 	end,
 	["collectibleAsCost"] = function(t)
 		if not t.costCollectibles then
+			-- if t.itemID == 71686 then app.DEBUG_PRINT = true; end
 			local results, id;
 			-- Search by modItemID if possible for accuracy
 			if t.modItemID and t.modItemID ~= t.itemID then
@@ -9056,10 +9099,12 @@ local itemFields = {
 						collectible = collectible or app.CheckCollectible(t, ref, ref._cache);
 					end
 				end
+				-- app.DEBUG_PRINT = nil;
 				return collectible;
 			else
 				cache.SetCachedField(t, "costCollectibles", app.EmptyTable);
 			end
+			-- app.DEBUG_PRINT = nil;
 		else
 			-- Quick escape if current-character only and comes from something saved
 			if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return false; end
@@ -9097,14 +9142,18 @@ local itemFields = {
 		return true;
 	end,
 	["collectedAsFaction"] = function(t)
-		return t.collectedAsFactionOnly;
-	end,
-	["collectedAsFactionOnly"] = function(t)
 		if t.factionID then
 			if t.repeatable then
 				-- This is used by reputation tokens. (turn in items)
+				-- quick cache checks
 				if app.CurrentCharacter.Factions[t.factionID] then return 1; end
 				if app.AccountWideReputations and ATTAccountWideData.Factions[t.factionID] then return 2; end
+
+				-- use the extended faction logic from the associated Faction for consistency
+				local cachedFaction = app.SearchForObject("factionID", t.factionID);
+				if cachedFaction then return cachedFaction.collected; end
+
+				-- otherwise move on to the basic logic
 				if select(3, GetFactionInfoByID(t.factionID)) == 8 then
 					app.CurrentCharacter.Factions[t.factionID] = 1;
 					ATTAccountWideData.Factions[t.factionID] = 1;
@@ -9121,7 +9170,7 @@ local itemFields = {
 		end
 	end,
 	["collectedAsFactionOrQuest"] = function(t)
-		return t.collectedAsFactionOnly or t.collectedAsQuest;
+		return t.collectedAsFaction or t.collectedAsQuest;
 	end,
 	["collectedAsQuest"] = function(t)
 		return IsQuestFlaggedCompletedForObject(t);
@@ -9168,6 +9217,7 @@ app.BaseItemWithQuestIDAndFactionID = app.BaseObjectFields(fields);
 -- Appearance Lib (Item Source)
 local fields = RawCloneData(itemFields);
 fields.key = function(t) return "s"; end;
+-- TODO: if PL filter is ever a thing investigate https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.PlayerCanCollectSource
 fields.collectible = itemFields.collectibleAsTransmog;
 fields.collected = itemFields.collectedAsTransmog;
 app.BaseItemSource = app.BaseObjectFields(fields, "BaseItemSource");
@@ -10256,7 +10306,7 @@ local npcFields = {
 		return IsQuestFlaggedCompletedForObject(t);
 	end,
 	["savedAsQuest"] = function(t)
-		return IsQuestFlaggedCompleted(t.questID);
+		return IsQuestFlaggedCompleted(t.questID) or IsAnyQuestFlaggedCompleted(t.altQuests);
 	end,
 	["trackableAsQuest"] = app.ReturnTrue,
 	["repeatableAsQuest"] = function(t)
@@ -11129,7 +11179,8 @@ app.TryPopulateQuestRewards = function(questObject)
 		end
 		BuildGroups(questObject, questObject.g);
 	else
-		questObject.doUpdate = questObject.OnUpdate;
+		-- print("set questObject.doUpdate",questObject.questID)
+		questObject.doUpdate = true;
 	end
 
 	-- app.DEBUG_PRINT = nil;
@@ -11155,6 +11206,11 @@ app.CreateQuest = function(id, t)
 		return setmetatable(constructor(id, t, "questID"), app.BaseQuestWithReputation);
 	end
 	return setmetatable(constructor(id, t, "questID"), app.BaseQuest);
+end
+app.CreateQuestWithFactionData = function(t)
+	local questData = app.FactionID == Enum.FlightPathFaction.Horde and t.hqd or t.aqd;
+	for key,value in pairs(questData) do t[key] = value; end
+	return setmetatable(t, app.BaseQuest);
 end
 -- Causes a group to remain visible if it is replayable, regardless of collection status
 app.ShowIfReplayableQuest = function(data)
@@ -11336,7 +11392,8 @@ local function QueryCompletedQuests()
 			print(questDiff,"Quests Unflagged");
 		end
 	end
-	if math.abs(questDiff) > 50 then
+	questDiff = math.abs(questDiff);
+	if questDiff > 50 then
 		app.Settings:SetTooltipSetting("Report:CompletedQuests", false);
 	end
 	local completedKeys = {};
@@ -11352,7 +11409,7 @@ local function QueryCompletedQuests()
 			t[q] = false;	-- trigger the metatable function
 		end
 	end
-	if math.abs(questDiff) > 50 then
+	if questDiff > 50 then
 		app.Settings:SetTooltipSetting("Report:CompletedQuests", oldReportSetting);
 	end
 end
@@ -11378,7 +11435,7 @@ end
 app.RefreshQuestInfo = function(questID)
 	-- print("RefreshQuestInfo",questID)
 	if questID then
-		Callback(RefreshQuestCompletionState, questID);
+		RefreshQuestCompletionState(questID);
 	else
 		AfterCombatOrDelayedCallback(RefreshQuestCompletionState, 1);
 	end
@@ -11484,7 +11541,14 @@ local fields = {
 		return select(1, GetSpellLink(t.spellID));
 	end,
 	["collectible"] = function(t)
-		return app.CollectibleRecipes;
+		if app.CollectibleRecipes then
+			if app.AccountWideRecipes then
+				return true;
+			end
+			if t.requireSkill and (app.GetTradeSkillCache())[t.requireSkill] then
+				return true;
+			end
+		end
 	end,
 	["collected"] = function(t)
 		if app.CurrentCharacter.Spells[t.spellID] then return 1; end
@@ -12559,8 +12623,10 @@ UpdateGroups = function(parent, g, window)
 					UpdateGroups(group, group.g, window);
 				end
 				-- some objects are able to populate themselves via OnUpdate and track if needing to do another update via 'doUpdate'
-				-- print("update-doUpdate",group.hash)
-				if window and group.doUpdate then window.doUpdate = true; end
+				if window and group.doUpdate then
+					-- print("update-doUpdate",group.doUpdate,"=>",group.hash)
+					window.doUpdate = true;
+				end
 			else
 				UpdateGroup(parent, group, window);
 			end
@@ -13237,6 +13303,11 @@ function app:CreateMiniListForGroup(group)
 		popout = app:GetWindow(suffix);
 		-- custom Update method for the popout so we don't have to force refresh
 		popout.Update = function(self, force, got)
+			-- mark the popout to expire after 5 min from now if it is visible
+			if self:IsVisible() then
+				self.ExpireTime = time() + 300;
+				-- print(popout.Suffix,"set to expire",time() + 10)
+			end
 			self:BaseUpdate(force or got, got)
 		end
 		-- popping out something without a source, try to determine it on-the-fly using same logic as harvester
@@ -13718,7 +13789,7 @@ local function SetRowData(self, row, data)
 			end
 		-- an individual row can define whether the window should refresh again after it is displayed
 		elseif data.doUpdate then
-			-- print("window.doUpdate",data.hash)
+			-- print("window.doUpdate",data.doUpdate,"=>",data.hash)
 			data.doUpdate = nil;
 			self.doUpdate = true;
 		else
@@ -14425,12 +14496,11 @@ RowOnEnter = function (self)
 			if app.Settings:GetTooltipSetting("questID") then
 				GameTooltip:AddDoubleLine(L["QUEST_ID"], tostring(reference.questID));
 				if reference.altQuests and #reference.altQuests > 0 then
-					local altQuests="";
-					for i,questID in ipairs(reference.altQuests) do
-						if (i > 1) then altQuests = altQuests .. ","; end
-						altQuests = altQuests .. tostring(questID) .. GetCompletionIcon(IsQuestFlaggedCompleted(questID));
+					local altQuestInfo = {};
+					for _,questID in ipairs(reference.altQuests) do
+						tinsert(altQuestInfo, tostring(questID)..GetCompletionIcon(IsQuestFlaggedCompleted(questID)));
 					end
-					GameTooltip:AddDoubleLine(" ", "[" .. altQuests .. "]");
+					GameTooltip:AddDoubleLine(" ", "[" .. app.TableConcat(altQuestInfo, nil, nil, ",") .. "]");
 				end
 			end
 			if ATTAccountWideData.OneTimeQuests[reference.questID] then
@@ -14958,6 +15028,8 @@ RowOnEnter = function (self)
 		-- end
 		-- local fields = {
 		-- 	"__type",
+		-- 	"OnUpdate",
+		-- 	"doUpdate",
 		-- };
 		-- GameTooltip:AddLine("-- Extra Fields:");
 		-- for _,key in ipairs(fields) do
@@ -15135,6 +15207,13 @@ local function UpdateWindow(self, force, got)
 
 			self:Refresh();
 			return true;
+		else
+			local expireTime = self.ExpireTime;
+			-- print("check ExpireTime",self.Suffix,expireTime)
+			if expireTime and expireTime > 0 and expireTime < time() then
+				-- print("window is expired, removing from window cache")
+				app.Windows[self.Suffix] = nil;
+			end
 		end
 	end
 end
@@ -15995,6 +16074,8 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.text = L["UNSORTED_1"];
 			db.description = L["UNSORTED_DESC_2"];
+			-- since unsorted is technically auto-populated, anything nested under it is considered 'missing' in ATT
+			db._missing = true;
 			tinsert(g, db);
 			app.ToggleCacheMaps(true);
 			CacheFields(db);
@@ -16822,10 +16903,14 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				header.g = { group };
 				header.sort = true;
 				header.collectible = false;
-				-- header groups in minilist shouldn't be attached to some random other source location
+				-- header groups in minilist shouldn't be attached to some random other source location/data/info
 				-- since they will be comprised of groups from many different source locations
 				header.sourceParent = nil;
 				header.customCollect = nil;
+				header.u = nil;
+				header.races = nil;
+				header.r = nil;
+				header.c = nil;
 				return header;
 			else
 				return { g = { group }, ["sort"] = true, ["collectible"] = false, };
@@ -17367,7 +17452,7 @@ customWindowUpdates["ItemFinder"] = function(self, ...)
 					end
 				end
 			end;
-			-- add a bunch of raw, delay-loaded quests in order into the window
+			-- add a bunch of raw, delay-loaded items in order into the window
 			local groupCount = self.Limit / self.PartitionSize - 1;
 			local g, overrides = {}, {visible=true};
 			local partition, partitionStart, partitionGroups;
@@ -18572,16 +18657,8 @@ customWindowUpdates["quests"] = function(self, force, got)
 		-- add a bunch of raw, delay-loaded quests in order into the window
 		local groupCount = self.Limit / self.PartitionSize - 1;
 		local g, overrides = {}, {
-			visible = onlyMissing and function(o, key)
-				return o._missing;
-			end or true,
-			doUpdate = onlyMissing and function(o, key)
-				-- trigger a repeat update to the holding window after the DLO is loaded into the window and is not missing in DB
-				if not o._missing then
-					-- print("doUpdate override",o.hash)
-					return true;
-				end
-			end,
+			visible = true,
+			indent = 2,
 			back = function(o, key)
 				return o._missing and 1 or 0;
 			end,
@@ -18591,6 +18668,18 @@ customWindowUpdates["quests"] = function(self, force, got)
 				end
 			end,
 		};
+		if onlyMissing then
+			overrides.visible = function(o, key)
+				return o._missing;
+			end;
+			overrides.doUpdate = function(o, key)
+				-- trigger a repeat update to the holding window after the DLO is loaded into the window and is not missing in DB
+				if not o._missing then
+					-- print("doUpdate override",o.hash)
+					return true;
+				end
+			end;
+		end
 		local partition, partitionStart, partitionGroups;
 		local dlo = app.DelayLoadedObject;
 		for j=0,groupCount,1 do
@@ -18679,7 +18768,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 				end
 
 				-- Cache learned recipes
-				local learned = {};
+				local learned, recipeID = {};
 				local reagentCache = app.GetDataMember("Reagents", {});
 				local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
 				local acctSpells, charSpells = ATTAccountWideData.Spells, app.CurrentCharacter.Spells;
@@ -18791,6 +18880,10 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 								response = app:BuildSearchResponse(app.Categories.Craftables, "requireSkill", requireSkill);
 								if response then tinsert(data.g, {text=LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM,icon = app.asset("Category_Crafting"),g=response});  end
 							end
+						end
+						-- a profession which ATT has no data as being a profession? (PoA crafting)
+						if not data then
+							data = app.CreateProfession(tradeSkillID);
 						end
 						data.indent = 0;
 						data.visible = true;
@@ -20840,15 +20933,6 @@ app.events.VARIABLES_LOADED = function()
 	app.GUID = UnitGUID("player");
 	app.Me = "|c" .. RAID_CLASS_COLORS[class].colorStr .. name .. "-" .. (realm or GetRealmName()) .. "|r";
 	app.ClassName = "|c" .. RAID_CLASS_COLORS[class].colorStr .. className .. "|r";
-	app.Faction = UnitFactionGroup("player");
-	if app.Faction == "Horde" then
-		app.FactionID = Enum.FlightPathFaction.Horde;
-	elseif app.Faction == "Alliance" then
-		app.FactionID = Enum.FlightPathFaction.Alliance;
-	else
-		-- Neutral Pandaren or... something else. Scourge? Neat.
-		app.FactionID = 0;
-	end
 
 	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(L["TITLE"], {
 		type = "launcher",
@@ -21137,7 +21221,6 @@ app.events.VARIABLES_LOADED = function()
 
 		-- Mark all previously completed quests.
 		QueryCompletedQuests();
-		wipe(DirtyQuests);
 
 		-- Current character collections shouldn't use '2' ever... so clear any 'inaccurate' data
 		local currentQuestsCache = currentCharacter.Quests;
@@ -21148,7 +21231,7 @@ app.events.VARIABLES_LOADED = function()
 		-- Cache some collection states for account wide quests that aren't actually granted account wide and can be flagged using an achievementID. (Allied Races)
 		local collected;
 		-- achievement collection state isn't readily available when VARIABLES_LOADED fires, so we do it here to ensure we get a valid state for matching
-		for i,achievementQuests in ipairs({
+		for _,achievementQuests in ipairs({
 			{ 12453, { 49973, 49613, 49354, 49614 } },	-- Allied Races: Nightborne
 			{ 12517, { 53466, 53467, 53354, 53353, 53355, 52942, 52943, 52945, 52955, 51479 } },	-- Allied Races: Mag'har
 			{ 13156, { 53831, 53823, 53824, 54419, 53826, 54301, 54925, 54300, 53825, 53827, 53828, 54031, 54033, 54032, 54034, 53830, 53719 } },	-- Allied Races: Zandalari Troll
@@ -21176,7 +21259,7 @@ app.events.VARIABLES_LOADED = function()
 		}) do
 			-- If you completed the achievement, then mark the associated quests.
 			collected = select(4, GetAchievementInfo(achievementQuests[1]));
-			for j,questID in ipairs(achievementQuests[2]) do
+			for _,questID in ipairs(achievementQuests[2]) do
 				if collected then
 					-- Mark the quest as completed for the Account
 					accountWideData.Quests[questID] = 1;
@@ -21195,14 +21278,14 @@ app.events.VARIABLES_LOADED = function()
 			end
 		end
 		-- Cache some collection states for account wide quests that aren't actually granted account wide and can be flagged using a known sourceID.  (Secrets)
-		for i,appearanceQuests in ipairs({
+		for _,appearanceQuests in ipairs({
 			-- Waist of Time isn't technically once-per-account, so don't fake the cached data
 			-- { 98614, { 52829, 52830, 52831, 52898, 52899, 52900, 52901, 52902, 52903, 52904, 52905, 52906, 52907, 52908, 52909, 52910, 52911, 52912, 52913, 52914, 52915, 52916, 52917, 52918, 52919, 52920, 52921, 52922, 52822, 52823, 52824, 52826} },	-- Waist of Time
 		}) do
 			-- If you have the appearance, then mark the associated quests.
 			local sourceInfo = C_TransmogCollection_GetSourceInfo(appearanceQuests[1]);
 			collected = sourceInfo.isCollected;
-			for j,questID in ipairs(appearanceQuests[2]) do
+			for _,questID in ipairs(appearanceQuests[2]) do
 				if collected then
 					-- Mark the quest as completed for the Account
 					accountWideData.Quests[questID] = 1;
@@ -21221,7 +21304,7 @@ app.events.VARIABLES_LOADED = function()
 			end
 		end
 		-- Cache some collection states for misc. once-per-account quests
-		for i,questID in ipairs({
+		for _,questID in ipairs({
 			-- BFA Mission/Outpost Quests which trigger locking Account-Wide HQTs
 			52478,	-- Hillcrest Pasture (Mission Completion)
 			52479,	-- Hillcrest Pasture (BFA Horde Outpost Unlock)
@@ -21309,7 +21392,7 @@ app.events.VARIABLES_LOADED = function()
 
 		local anyComplete;
 		-- Check for fixing Blizzard's incompetence in consistency for shared account-wide quest eligibility which is only granted to some of the shared account-wide quests
-		for i,questGroup in ipairs({
+		for _,questGroup in ipairs({
 			{ 32008, 32009, 31878, 31879, 31880, 31881, 31882, 31883, 31884, 31885, },	-- Pet Battle Intro quests
 			{
 				53063, 	-- A Mission of Unity (BFA Alliance WQ Unlock)
@@ -21355,6 +21438,8 @@ app.events.VARIABLES_LOADED = function()
 			end
 			anyComplete = nil;
 		end
+
+		wipe(DirtyQuests);
 
 		app:RegisterEvent("QUEST_LOG_UPDATE");
 		app:RegisterEvent("QUEST_TURNED_IN");
@@ -21407,7 +21492,7 @@ app.events.PLAYER_ENTERING_WORLD = function(...)
 	-- refresh any custom collects for this character
 	app.RefreshCustomCollectibility();
 	-- send a location trigger now that the character is 'in the world'
-	DelayedCallback(app.LocationTrigger, 3);
+	-- DelayedCallback(app.LocationTrigger, 3); -- maybe not necessary?
 end
 app.events.ADDON_LOADED = function(addonName)
 	if addonName == "Blizzard_AuctionHouseUI" then

@@ -179,14 +179,7 @@ _.Zones =
 				},
 			}),
 			i(170167, {	-- Eel Filet
-				["allianceQuestID"] = 57246,	-- Eel Filet
-				["hordeQuestID"] = 56971,	-- Eel Filet
-				["description"] = "Turn in to |cFFFFD700Farseer Ori|r (Alliance) or |cFFFFD700Vim Brineheart|r (Horde) for 50 bodyguard experience and 250 reputation.",
-				["repeatable"] = true,
-				["coords"] = {
-					{ 39.4, 53.6, 1355 },	-- Alliance
-					{ 49.4, 65.2, 1355 },	-- Horde
-				},
+				["description"] = "Gives 250 reputation and 50 experience for your bodyguard.",
 				["crs"] = {	-- may drop from additional mobs.  check back and add crs as appropriate.
 					145338,	-- Abyssal Eel
 					152554,	-- Abyssal Spawn
@@ -194,11 +187,6 @@ _.Zones =
 					152551,	-- Deepcoil Constrictor
 					145343,	-- Deepcoil Serpent
 					150463,	-- Skittering Eel
-				},
-				["g"] = {
-					crit(51, {	-- Eel Filet
-						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-					}),
 				},
 			}),
 			i(170472, {	-- Encrusted Coin (possibly part of a secret?)
@@ -243,25 +231,13 @@ _.Zones =
 				},
 			}),
 			i(170176, {	-- Fathom Ray Wing
-				["allianceQuestID"] = 57247,	-- Fathom Ray Wing
-				["hordeQuestID"] = 56972,	-- Fathom Ray Wing
-				["description"] = "Turn in to |cFFFFD700Hunter Akana|r (Alliance) or |cFFFFD700Neri Sharpfin|r (Horde) for 250 reputation, plus 50 experience for your bodyguard.",
-				["repeatable"] = true,
-				["coords"] = {
-					{ 39.4, 53.4, 1355 },	-- Alliance
-					{ 49.6, 64.6, 1355 },	-- Horde
-				},
+				["description"] = "Gives 250 reputation and 50 experience for your bodyguard.",
 				["crs"] = {	-- may drop from additional mobs.  check back and add crs as appropriate.
 					150373,	-- Bloated Sky Ray
 					150467,	-- Colossal Sky Ray
 					150376,	-- Coral Skate
 					145967,	-- Fathom Ray
 					150696,	-- Fathom Ray Broodkeeper
-				},
-				["g"] = {
-					crit(46, {	-- Fathom Ray Wing
-						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-					}),
 				},
 			}),
 			i(170170, {	-- Fermented Deviate Fish
@@ -277,14 +253,7 @@ _.Zones =
 				},
 			}),
 			i(170171, {	-- Giant Crab Leg
-				["allianceQuestID"] = 57248,	-- Giant Crab Leg
-				["hordeQuestID"] = 56973,	-- Giant Crab Leg
-				["description"] = "Turn in to |cFFFFD700Bladesman Inowari|r (Alliance) or |cFFFFD700Poen Gillbrack|r (Horde) for 250 reputation, plus 50 experience for your bodyguard.",
-				["repeatable"] = true,
-				["coords"] = {
-					{ 37.9, 55.6, 1355 },	-- Alliance
-					{ 49.2, 62.0, 1355 },	-- Horde
-				},
+				["description"] = "Gives 250 reputation and 50 experience for your bodyguard.",
 				["crs"] = {	-- may drop from additional mobs.  check back and add crs as appropriate.
 					153026,	-- Braxicus
 					152462,	-- Chitterspine Ambusher
@@ -300,11 +269,6 @@ _.Zones =
 					152448,	-- Iridescent Glimmershell
 					145337,	-- Sandclaw Crab
 					152795,	-- Sandclaw Stoneshell
-				},
-				["g"] = {
-					crit(49, {	-- Giant Crab Leg
-						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-					}),
 				},
 			}),
 			i(170185, {	-- Intact Naga Skeleton

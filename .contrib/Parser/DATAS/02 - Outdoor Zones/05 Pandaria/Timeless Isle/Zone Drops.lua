@@ -243,6 +243,13 @@ _.Zones =
 				i(104217),	-- Charred Recipe
 				i(103643),	-- Dew of Eternal Morning
 				i(103641),	-- Singing Crystal
+				i(104316, {	-- Spectral Grog
+					["crs"] = {
+						72033,	-- Rattling Mariner
+						71987,	-- Spectral Pirate
+						72048,	-- Rattleskew
+					},
+				}),
 				i(103982, {	-- Burden of Eternity
 					["sym"] = { {"fill"} },	-- fill this item with cached data
 					["crs"] = {

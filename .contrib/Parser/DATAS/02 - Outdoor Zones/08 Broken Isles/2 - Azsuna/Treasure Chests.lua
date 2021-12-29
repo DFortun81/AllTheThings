@@ -167,7 +167,7 @@ _.Zones =
 					["questID"] = 38316,
 					["coord"] = { 40.6, 57.7, AZSUNA },
 				}),
-				o(240646, {	-- Treasure Chest (need to verify objectID)
+				o(250102, {	-- Treasure Chest
 					["questID"] = 42292,
 					["coord"] = { 41.4, 30.7, AZSUNA },
 				}),
@@ -196,7 +196,7 @@ _.Zones =
 					["questID"] = 42289,
 					["coord"] = { 51.5, 24.3, AZSUNA },
 				}),
-				o(240635, {	-- Treasure Chest (need to verify objectID)
+				o(240646, {	-- Treasure Chest
 					["questID"] = 37713,
 					["coord"] = { 44.5, 39.5, AZSUNA },
 				}),

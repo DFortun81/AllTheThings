@@ -185,7 +185,6 @@ _.Instances = { tier(CATA_TIER, {
 			}),
 			d(2, {	-- Heroic
 				["lvl"] = 85,
-				["ignoreBonus"] = true,
 				["groups"] = {
 					cr(39665, e(105, {	-- Rom'ogg Boncrusher
 						ach(5281),	-- Crushing Bones and Cracking Skulls
@@ -246,3 +245,11 @@ _.Instances = { tier(CATA_TIER, {
 		},
 	}),
 })};
+root("HiddenQuestTriggers", {
+	tier(WOD_TIER, {
+		q(35348),	-- Blackrock Caverns Reward Quest
+		q(35351),	-- Blackrock Caverns Reward Quest
+		q(35349),	-- Blackrock Caverns Bonus Reward
+		q(35352),	-- Blackrock Caverns Bonus Reward - killing Beauty
+	}),
+});

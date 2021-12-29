@@ -185,7 +185,6 @@ _.Zones =
 				ach(8730, {	-- Rolo's Riddle
 					["sourceQuests"] = { 32976 },	-- Rolo's Riddle
 				}),
-				ach(8714),	-- Timeless Champion
 				ach(8784, {	-- Timeless Legends
 					["coords"] = {
 						{ 22.4, 38.7, TIMELESS_ISLE },

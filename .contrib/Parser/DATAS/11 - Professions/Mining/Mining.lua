@@ -349,9 +349,7 @@ profession(MINING, {
 				},
 				["g"] = {
 					i(124444, {	-- Infernal Brimstone
-						["sourceQuest"] = 39830,	-- Hellfire Citadel: Hellfire and Brimstone
-						["recipeID"] = 191970,
-						["requiredSkill"] = MINING,
+						["sourceQuest"] = 38806,	-- Infernal Brimstone Sample
 					}),
 					q(38806, {	-- Infernal Brimstone Sample
 						["provider"] = { "i", 124502 },	-- Infernal Brimstone Sample

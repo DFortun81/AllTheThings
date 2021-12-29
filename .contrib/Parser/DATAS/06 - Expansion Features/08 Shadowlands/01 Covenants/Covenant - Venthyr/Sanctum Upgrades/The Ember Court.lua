@@ -175,78 +175,62 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 						n(QUESTS, {
 							n(SPECIAL, sharedData({
 								["description"] = "Requires joining another Venthyr player in their Ember Court scenario and interacting with the respective Exalted Guest.",
-								-- ["sourceQuest"] = ,
+								-- ["sourceQuest"] = ,	-- TODO: there is something that prevents being able to pick these up...
 							}, {
 								-- Tier 1
 								q(65132, {	-- Friend of a Friend: Choofa
-									-- ["qg"] = ,
-									-- ["sourceQuest"] = ,
+									["qg"] = 168449,
 								}),
 								q(65134, {	-- Friend of a Friend: Cryptkeeper Kassir
-									-- ["qg"] = ,
-									-- ["sourceQuest"] = ,
+									["qg"] = 168450,
 								}),
 								q(65138, {	-- Friend of a Friend: Plague Deviser Marileth
-									-- ["qg"] = ,
-									-- ["sourceQuest"] = ,
+									["qg"] = 171852,
 								}),
 								q(65140, {	-- Friend of a Friend: Sika
-									-- ["qg"] = ,
-									-- ["sourceQuest"] = ,
+									["qg"] = 171854,
 								}),
 
 								-- Tier 2
 								q(65135, {	-- Friend of a Friend: Droman Aliothe
-									-- ["qg"] = ,
-									-- ["sourceQuest"] = ,
+									["qg"] = 171847,
 								}),
 								q(65136, {	-- Friend of a Friend: Grandmaster Vole
-									-- ["qg"] = ,
-									-- ["sourceQuest"] = ,
+									["qg"] = 171848,
 								}),
 								q(65137, {	-- Friend of a Friend: Kleia & Pelagos
-									-- ["qg"] = ,
-									-- ["sourceQuest"] = ,
+									["qg"] = 171851, -- Pelagos -- TODO: maybe either?
 								}),
 								q(65141, {	-- Friend of a Friend: Stonehead
-									-- ["qg"] = ,
-									-- ["sourceQuest"] = ,
+									["qg"] = 171856,
 								}),
 
 								-- Tier 3
 								q(65128, {	-- Friend of a Friend: Alexandros Mograine
-									-- ["qg"] = ,
-									-- ["sourceQuest"] = ,
+									["qg"] = 171833,
 								}),
 								q(65129, {	-- Friend of a Friend: Hunt-Captain Korayn
-									-- ["qg"] = ,
-									-- ["sourceQuest"] = ,
+									["qg"] = 171836,
 								}),
 								q(65130, {	-- Friend of a Friend: Polemarch Adrestes
-									-- ["qg"] = ,
-									-- ["sourceQuest"] = ,
+									["qg"] = 168447,
 								}),
 								q(65131, {	-- Friend of a Friend: Rendle & Cudgelface
-									-- ["qg"] = ,
-									-- ["sourceQuest"] = ,
+									["qg"] = 171839,	-- Rendle -- TODO: maybe either?
 								}),
 
 								-- Tier 4
 								q(65121, {	-- Friend of a Friend: Baroness Vashj
-									-- ["qg"] = ,
-									-- ["sourceQuest"] = ,
+									["qg"] = 168444,
 								}),
 								q(65123, {	-- Friend of a Friend: Lady Moonberry
-									-- ["qg"] = ,
-									-- ["sourceQuest"] = ,
+									["qg"] = 171830,
 								}),
 								q(65124, {	-- Friend of a Friend: Mikanikos
-									-- ["qg"] = ,
-									-- ["sourceQuest"] = ,
+									["qg"] = 171831,
 								}),
 								q(65126, {	-- Friend of a Friend: The Countess
-									-- ["qg"] = ,
-									-- ["sourceQuest"] = ,
+									["qg"] = 165269,
 								}),
 							})),
 						}),
@@ -297,6 +281,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 							q(62115),	-- Party Crashers
 							q(62117),	-- Party Crashers
 							q(62147),	-- Party Pests
+							q(64255),	-- Party Time
 							q(62123),	-- Prison Break
 							q(65055),	-- Protective Braziers
 							q(62127),	-- Ride on the Wild Side
@@ -304,6 +289,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 							q(62124),	-- Ritual of Accusation
 							q(62119),	-- Roaring Fires
 							q(62114),	-- Sineater
+							q(62112),	-- Sloppy
 							q(62120),	-- Stolen Mementos
 							q(61725),	-- Stolen Mementos
 							q(65056),	-- Stop the Slip
@@ -2342,10 +2328,12 @@ root("HiddenQuestTriggers", {
 			q(59695),	-- triggered when using "Maldraxxi Challenge Banner"
 			q(61453),	-- triggered when using "Training Dummies" (181437)
 			q(61456),	-- triggered when using "Slippery Muck" (181440)
+			q(59683),	-- triggered when using "Bewitched Wardrobe" (177232)
 
 		-- Misc.
 			q(61918),	-- unflagged when completing Restock: Fashion Accessories (62078)
 			q(61919),	-- unflagged when completing Restock: Exploratory Meals (62094)
+			q(61925),	-- completed when completing a 'Restock' quest
 			q(62524),	-- triggered at end of Ember Court (Vashj/Koryan/Choofa/Stonehead)
 			q(62521),	-- 'Safe/Humble' criteria for It's Certainly Never Boring
 			q(62523),	-- 'Safe/Humble' criteria for It's Certainly Never Boring
@@ -2354,6 +2342,7 @@ root("HiddenQuestTriggers", {
 			q(62520),	-- 'Clean' criteria for It's Certainly Never Boring
 
 			--q(61935),	-- Stonehad was miserable, Adrestes was elated if it matters. This was at the start of the court - no idea what that was.  It's the first court with decorations though.
+			--q(61536),	-- Miserable Aliothe, Uncomfortable Mikanikos, Unhappy Choofa, Unhappy Alexandros Mograine, triggered after opening Mikanikos chest
 
 			--q(61930),	-- Unknown
 			q(61936),	-- Triggered after Restock: Surveillance
@@ -2365,6 +2354,8 @@ root("HiddenQuestTriggers", {
 			--q(63353),	-- Achievement related to "Rendles Big Day"
 			--q(61932),	-- Maybe Bastion Etiquette
 			q(61458),	-- After using [Visions of Sire Denathrius] in Ember Court
+			q(61414),	-- Faulty Fireworks (+Safe)
+
 	-- Misc
 		q(62035),	-- unlocking Soulbreaker's Court Vestments set (TransmogSetID 2065, Soulbreaker's Court items)
 		q(62031),	-- unlocking Court Death Shroud Armor set (TransmogSetID 2068, Court Death Shroud items)

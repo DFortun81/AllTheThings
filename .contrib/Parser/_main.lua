@@ -715,6 +715,7 @@ TCG_HEADER = -535;
 IN_GAME_SHOP = -36;
 HOLIDAYS = -3;
 WORLD_EVENTS = -519;
+HEIRLOOMS = -365;
 
 -- Anniversary
 FOURTH_ANNIVERSARY = -5353;
@@ -765,6 +766,7 @@ BOWS = 32;
 CROSSBOWS = 33;
 FIST_WEAPONS = 34;
 WARGLAIVES = 35;
+MISC = 50;
 MOUNTS = 100;
 BATTLE_PETS = 101;
 TOYS = 102;
@@ -1554,6 +1556,11 @@ quest = function(id, t)									-- Create a QUEST Object
 	return struct("questID", id, t);
 end
 q = quest;												-- Create a QUEST Object (alternative shortcut)
+qNYI = function (id, t)									-- Create a QUEST Object flagged with the NYI unobtainable flag
+	t = q(id, t);
+	t.u = NEVER_IMPLEMENTED;
+	return t;
+end
 questobjective = function(id, t)						-- Create a QUEST OBJECTIVE Object
 	return struct("objectiveID", id, t);
 end
@@ -1678,7 +1685,8 @@ crit = function(criteriaID, t)           -- Create an Achievement Criteria Objec
 		if not isarray(t) then
 			-- DO NOT do that lol
 			if t.achievementID then
-				-- print("Ach:",t.achievementID,"Crit:",criteriaID,"Use '_quests', '_npcs', or 'cost' to define where/how this Criteria is granted instead of directly nesting it in Source.")
+				-- print(table.concat({"Do not use AchievementID:",t.achievementID," inside Achievement Criteria:",criteriaID," ==> Use '_quests', '_npcs', or 'cost' to define where/how this Criteria is granted instead of directly nesting it in Source."}))
+				-- error(table.concat({"Do not use AchievementID:",t.achievementID," inside Achievement Criteria:",criteriaID," ==> Use '_quests', '_npcs', or 'cost' to define where/how this Criteria is granted instead of directly nesting it in Source."}))
 			end
 			if t.questID then
 				error(table.concat({"Do not use QuestID:",t.questID," inside Achievement Criteria:",criteriaID," ==> Use '_quests' to indicate a Criteria granted from completion of a single Quest."}))

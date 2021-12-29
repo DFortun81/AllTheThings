@@ -88,6 +88,9 @@ _.ExpansionFeatures =
 						i(188650, {	-- Grimoire of Knowledge
 							["timeline"] = { "added 9.1.5" },
 						}),
+						i(188651, {	-- Grimoire of Knowledge (Drops from the early Campaign Missions) [Night Fae as noticed]
+							["timeline"] = { "added 9.1.5" },
+						}),
 						-- Mounts
 						i(183617),	-- Chittering Animite
 						i(183052),	-- Darkwarren Hardshell
@@ -218,6 +221,7 @@ _.ExpansionFeatures =
 							i(187913, {	-- Apprentice Slimemancer's Boots (TOY!)
 								["timeline"] = { "added 9.1.5" },
 							}),
+							i(187862),	-- Snake Soul
 							-- i(181435),	-- Calcualted Strikes [Monk-Windwalker] / Source Drop
 							-- i(181462),	-- Coordinated Offensive [Monk] / Source Drop
 							-- i(181742),	-- Walk with the Ox [Monk-Brewmaster] / Source Drop
@@ -269,6 +273,7 @@ _.ExpansionFeatures =
 							i(187913, {	-- Apprentice Slimemancer's Boots (TOY!)
 								["timeline"] = { "added 9.1.5" },
 							}),
+							i(187862),	-- Snake Soul
 							-- i(181705),	-- Celestial Effervescence
 							-- i(182111),	-- Spiritual Resonance
 						},

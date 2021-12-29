@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 dofile("./DATAS/06 - Expansion Features/Common/Raid Caches.lua");
-_.Instances = { tier(LEGION_TIER, {
+root("Instances", { tier(LEGION_TIER, {
 	inst(875, {	-- Tomb of Sargeras
 		["isRaid"] = true,
 		["coord"] = { 64.3, 21.0, BROKEN_SHORE },
@@ -1432,8 +1432,9 @@ _.Instances = { tier(LEGION_TIER, {
 			})
 		},
 	}),
-})};
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+})});
+
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(LEGION_TIER, {
 		inst(875, {	-- Tomb of Sargeras
 			i(147036),	-- Fel-Stippled Legguards		(removed Beta)
@@ -1444,7 +1445,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(146304),	-- Fel Titan Hammer (test version for Maiden Mog Drop)
 		}),
 	}),
+}));
+
+root("HiddenQuestTriggers", {
+	q(48084),	-- Tracking Quest (KJ first kill?) / Heroic KJ
 });
-_.HiddenQuestTriggers = {
-	--q(48084),	-- Tracking Quest (KJ first kill?) or glyph of ember shards
-};

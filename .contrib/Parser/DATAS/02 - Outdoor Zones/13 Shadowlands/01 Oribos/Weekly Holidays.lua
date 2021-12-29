@@ -14,6 +14,8 @@ root("Zones", m(SHADOWLANDS, {
 						{"where", "difficultyID", 14},			-- Select only the Normal Difficulty Headers.
 						{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
 						{"is","encounterID"},					-- Only Encounter Headers
+						{"not","encounterID",2440},				-- No Kel'Thuzad
+						{"not","encounterID",2441},				-- No Sylvanas
 						{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
 						{"is", "itemID"},						-- Only Items!
 						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
@@ -27,6 +29,8 @@ root("Zones", m(SHADOWLANDS, {
 						{"where", "difficultyID", 15},			-- Select only the Heroic Difficulty Headers.
 						{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
 						{"is","encounterID"},					-- Only Encounter Headers
+						{"not","encounterID",2440},				-- No Kel'Thuzad
+						{"not","encounterID",2441},				-- No Sylvanas
 						{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
 						{"is", "itemID"},						-- Only Items!
 						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
@@ -39,6 +43,8 @@ root("Zones", m(SHADOWLANDS, {
 						{"where", "difficultyID", 14},			-- Select only the Normal Difficulty Headers.
 						{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
 						{"is","encounterID"},					-- Only Encounter Headers
+						{"not","encounterID",2440},				-- No Kel'Thuzad
+						{"not","encounterID",2441},				-- No Sylvanas
 						{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
 						{"is", "itemID"},						-- Only Items!
 						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
@@ -51,6 +57,8 @@ root("Zones", m(SHADOWLANDS, {
 						{"where", "difficultyID", 15},			-- Select only the Heroic Difficulty Headers.
 						{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
 						{"is","encounterID"},					-- Only Encounter Headers
+						{"not","encounterID",2440},				-- No Kel'Thuzad
+						{"not","encounterID",2441},				-- No Sylvanas
 						{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
 						{"is", "itemID"},						-- Only Items!
 						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },

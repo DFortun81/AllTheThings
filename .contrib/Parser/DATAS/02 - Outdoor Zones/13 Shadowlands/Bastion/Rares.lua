@@ -136,6 +136,12 @@ _.Zones =
 						i(183611),	-- Humble Ophelia's Greatblade
 						i(183604),	-- Piercing Timbre Crossbow
 						i(180569),	-- Mercia's Legacy: Chapter Seven (so the item is associated with the rare)
+						i(183613),	-- Glinting Daybreak Dagger
+						i(183612),	-- Loyal Champion's Hammer
+						i(183609),	-- Re-Powered Goliath Fists
+						i(183607),	-- Uncertain Aspirant's Spear
+						i(183605),	-- Devourer Wrought Warglaive
+						i(183610),	-- Warrior Poet's Poniard
 					},
 				}),
 				n(171010, { -- Corrupted Clawguard
@@ -198,6 +204,7 @@ _.Zones =
 						i(183609),	-- Re-Powered Golliath Fists
 						i(183607),	-- Uncertain Aspirant's Spear
 						i(183610),	-- Warrior Poet's Poniard
+						i(183605),	-- Devourer Wrought Warglaive
 					},
 				}),
 				n(163460, { -- Dionae

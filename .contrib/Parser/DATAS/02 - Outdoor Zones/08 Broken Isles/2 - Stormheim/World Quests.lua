@@ -162,7 +162,6 @@ _.Zones =
 				}),
 				q(41927),	-- Ruining the Runewood
 				q(43722),	-- Sacred Bones
-				q(42270),	-- Scourge of the Skies (Nithogg)
 				q(46017),	-- Shel'drozul (Invasion wq)
 				q(42178),	-- Shock Absorber
 				q(41300, {	-- Singed Fjarnskaggl

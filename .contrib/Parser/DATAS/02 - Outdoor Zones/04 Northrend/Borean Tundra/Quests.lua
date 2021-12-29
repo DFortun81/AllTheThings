@@ -1964,6 +1964,11 @@ _.Zones =
 		}),
 	}),
 };
+root("HiddenQuestTriggers", {
+	tier(WOD_TIER, {
+		q(39783),	-- Battle Pet - Terky
+	}),
+});
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(11939),	-- ?????

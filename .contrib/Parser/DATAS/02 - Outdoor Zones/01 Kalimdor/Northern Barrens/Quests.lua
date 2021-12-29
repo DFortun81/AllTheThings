@@ -172,7 +172,10 @@ _.Zones =
 					["provider"] = { "n", 3429 },	-- Thork
 					["coord"] = { 48.7, 59.5, NORTHERN_BARRENS },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 851,	-- Verog the Dervish
+					["sourceQuests"] = {
+						850,	-- Kolkar Leaders
+						851,	-- Verog the Dervish
+					},
 				}),
 				q(29112, {	-- Demon Seed
 					["provider"] = { "n", 52309 },	-- Balgor Whipshank
@@ -351,7 +354,10 @@ _.Zones =
 					["provider"] = { "n", 3389 },	-- Regthar Deathgate
 					["coord"] = { 37.9, 55.2, NORTHERN_BARRENS },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14073,	-- Deathgate's Reinforcements
+					["sourceQuests"] = {
+						850,	-- Kolkar Leaders
+						851,	-- Verog the Dervish
+					},
 					["g"] = {
 						i(59585),	-- Lushwater Cloak
 						i(59586),	-- Gloves of Unfocused Rage

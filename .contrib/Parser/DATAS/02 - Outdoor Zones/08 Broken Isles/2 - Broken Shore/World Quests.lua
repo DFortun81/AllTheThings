@@ -83,7 +83,6 @@ _.Zones =
 				q(46754, {	-- Magical Beasts
 					["classes"] = { MAGE },
 				}),
-				q(46948),	-- Malificus
 				q(46707),	-- Minion! Kill That One Too!
 				q(46756),	-- Mission: Felrage Destruction
 				q(46825),	-- Mud Mucking

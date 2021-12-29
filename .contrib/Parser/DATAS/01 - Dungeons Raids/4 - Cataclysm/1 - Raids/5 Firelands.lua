@@ -2,7 +2,166 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(CATA_TIER, {
+-- Tier tokens are weird in Firelands since they can directly create Tier pieces which are otherwise sold for gold... so we don't really want to put
+-- the 'cost' on the Tier items sold for gold since it would make it appear that they are sold using the Tier Token, when they are not.
+
+local HELM_CONQ = i(71677, {	-- Crown of the Fiery Conqueror
+	["sym"] = {
+		{"select","itemID",71282},	-- Balespider's Hood
+		{"select","itemID",71272},	-- Cowl of the Cleansing Flame
+		{"select","itemID",71277},	-- Hood of the Cleansing Flame
+		{"select","itemID",70948},	-- Immolation Faceguard
+		{"select","itemID",71093},	-- Immolation Headguard
+		{"select","itemID",71065},	-- Immolation Helmet
+	},
+});
+local HELM_PROT = i(71684, {	-- Crown of the Fiery Protector
+	["sym"] = {
+		{"select","itemID",71298},	-- Erupting Volcanic Faceguard
+		{"select","itemID",71293},	-- Erupting Volcanic Headpiece
+		{"select","itemID",71303},	-- Erupting Volcanic Helmet
+		{"select","itemID",70944},	-- Faceguard of the Molten Giant
+		{"select","itemID",71051},	-- Flamewaker's Headguard
+		{"select","itemID",71070},	-- Helmet of the Molten Giant
+	},
+});
+local HELM_VANQ = i(71670, {	-- Crown of the Fiery Vanquisher
+	["sym"] = {
+		{"select","itemID",71047},	-- Dark Phoenix Helmet
+		{"select","itemID",70954},	-- Elementium Deathplate Faceguard
+		{"select","itemID",71060},	-- Elementium Deathplate Helmet
+		{"select","itemID",71287},	-- Firehawk Hood
+		{"select","itemID",71108},	-- Obsidian Arborweave Cover
+		{"select","itemID",71098},	-- Obsidian Arborweave Headpiece
+		{"select","itemID",71103},	-- Obsidian Arborweave Helm
+	},
+});
+local SHOULDER_CONQ = i(71680, {	-- Shoulders of the Fiery Conqueror
+	["sym"] = {
+		{"select","itemID",71285},	-- Balespider's Mantle
+		{"select","itemID",71095},	-- Immolation Mantle
+		{"select","itemID",71067},	-- Immolation Pauldrons
+		{"select","itemID",70946},	-- Immolation Shoulderguards
+		{"select","itemID",71275},	-- Mantle of the Cleansing Flame
+		{"select","itemID",71280},	-- Shoulderwraps of the Cleansing Flame
+	},
+});
+local SHOULDER_PROT = i(71687, {	-- Shoulders of the Fiery Protector
+	["sym"] = {
+		{"select","itemID",71300},	-- Erupting Volcanic Mantle
+		{"select","itemID",71295},	-- Erupting Volcanic Shoulderwraps
+		{"select","itemID",71305},	-- Erupting Volcanic Spaulders
+		{"select","itemID",71053},	-- Flamewaker's Spaulders
+		{"select","itemID",71072},	-- Pauldrons of the Molten Giant
+		{"select","itemID",70941},	-- Shoulderguards of the Molten Giant
+	},
+});
+local SHOULDER_VANQ = i(71673, {	-- Shoulders of the Fiery Vanquisher
+	["sym"] = {
+		{"select","itemID",71049},	-- Dark Phoenix Spaulders
+		{"select","itemID",71062},	-- Elementium Deathplate Pauldrons
+		{"select","itemID",70951},	-- Elementium Deathplate Shoulderguards
+		{"select","itemID",71290},	-- Firehawk Mantle
+		{"select","itemID",71106},	-- Obsidian Arborweave Mantle
+		{"select","itemID",71111},	-- Obsidian Arborweave Shoulderwraps
+		{"select","itemID",71101},	-- Obsidian Arborweave Spaulders
+	},
+});
+local CHEST_CONQ = i(71679, {	-- Chest of the Fiery Conqueror
+	["sym"] = {
+		{"select","itemID",71284},	-- Balespider's Robes
+		{"select","itemID",71063},	-- Immolation Battleplate
+		{"select","itemID",71091},	-- Immolation Breastplate
+		{"select","itemID",70950},	-- Immolation Chestguard
+		{"select","itemID",71274},	-- Robes of the Cleansing Flame
+		{"select","itemID",71279},	-- Vestment of the Cleansing Flame
+	},
+});
+local CHEST_VANQ = i(71672, {	-- Chest of the Fiery Vanquisher
+	["sym"] = {
+		{"select","itemID",71045},	-- Dark Phoenix Tunic
+		{"select","itemID",71058},	-- Elementium Deathplate Breastplate
+		{"select","itemID",70955},	-- Elementium Deathplate Chestguard
+		{"select","itemID",71289},	-- Firehawk Robes
+		{"select","itemID",71100},	-- Obsidian Arborweave Raiment
+		{"select","itemID",71105},	-- Obsidian Arborweave Tunic
+		{"select","itemID",71110},	-- Obsidian Arborweave Vestment
+	},
+});
+local CHEST_PROT = i(71686, {	-- Chest of the Fiery Protector
+	["sym"] = {
+		{"select","itemID",71068},	-- Battleplate of the Molten Giant
+		{"select","itemID",70945},	-- Chestguard of the Molten Giant
+		{"select","itemID",71301},	-- Erupting Volcanic Cuirass
+		{"select","itemID",71291},	-- Erupting Volcanic Hauberk
+		{"select","itemID",71296},	-- Erupting Volcanic Tunic
+		{"select","itemID",71054},	-- Flamewaker's Tunic
+	},
+});
+local GLOVE_CONQ = i(71676, {	-- Gauntlets of the Fiery Conqueror
+	["sym"] = {
+		{"select","itemID",71281},	-- Balespider's Handwraps
+		{"select","itemID",71276},	-- Gloves of the Cleansing Flame
+		{"select","itemID",71271},	-- Handwraps of the Cleansing Flame
+		{"select","itemID",71064},	-- Immolation Gauntlets
+		{"select","itemID",71092},	-- Immolation Gloves
+		{"select","itemID",70949},	-- Immolation Handguards
+	},
+});
+local GLOVE_PROT = i(71683, {	-- Gauntlets of the Fiery Protector
+	["sym"] = {
+		{"select","itemID",71292},	-- Erupting Volcanic Gloves
+		{"select","itemID",71302},	-- Erupting Volcanic Grips
+		{"select","itemID",71297},	-- Erupting Volcanic Handwraps
+		{"select","itemID",71050},	-- Flamewaker's Gloves
+		{"select","itemID",71069},	-- Gauntlets of the Molten Giant
+		{"select","itemID",70943},	-- Handguards of the Molten Giant
+	},
+});
+local GLOVE_VANQ = i(71669, {	-- Gauntlets of the Fiery Vanquisher
+	["sym"] = {
+		{"select","itemID",71046},	-- Dark Phoenix Gloves
+		{"select","itemID",71059},	-- Elementium Deathplate Gauntlets
+		{"select","itemID",70953},	-- Elementium Deathplate Handguards
+		{"select","itemID",71286},	-- Firehawk Gloves
+		{"select","itemID",71107},	-- Obsidian Arborweave Gloves
+		{"select","itemID",71097},	-- Obsidian Arborweave Grips
+		{"select","itemID",71102},	-- Obsidian Arborweave Handwraps
+	},
+});
+local LEGS_CONQ = i(71678, {	-- Leggings of the Fiery Conqueror
+	["sym"] = {
+		{"select","itemID",71283},	-- Balespider's Leggings
+		{"select","itemID",71094},	-- Immolation Greaves
+		{"select","itemID",70947},	-- Immolation Legguards
+		{"select","itemID",71066},	-- Immolation Legplates
+		{"select","itemID",71278},	-- Leggings of the Cleansing Flame
+		{"select","itemID",71273},	-- Legwraps of the Cleansing Flame
+	},
+});
+local LEGS_PROT = i(71685, {	-- Leggings of the Fiery Protector
+	["sym"] = {
+		{"select","itemID",71294},	-- Erupting Volcanic Kilt
+		{"select","itemID",71304},	-- Erupting Volcanic Legguards
+		{"select","itemID",71299},	-- Erupting Volcanic Legwraps
+		{"select","itemID",71052},	-- Flamewaker's Legguards
+		{"select","itemID",70942},	-- Legguards of the Molten Giant
+		{"select","itemID",71071},	-- Legplates of the Molten Giant
+	},
+});
+local LEGS_VANQ = i(71671, {	-- Leggings of the Fiery Vanquisher
+	["sym"] = {
+		{"select","itemID",71048},	-- Dark Phoenix Legguards
+		{"select","itemID",71061},	-- Elementium Deathplate Greaves
+		{"select","itemID",70952},	-- Elementium Deathplate Legguards
+		{"select","itemID",71288},	-- Firehawk Leggings
+		{"select","itemID",71109},	-- Obsidian Arborweave Leggings
+		{"select","itemID",71099},	-- Obsidian Arborweave Legguards
+		{"select","itemID",71104},	-- Obsidian Arborweave Legwraps
+	},
+});
+
+root("Instances", tier(CATA_TIER, {
 	inst(78, {	-- Firelands
 		["isRaid"] = true,
 		["coord"] = { 47.3, 78.1, MOUNT_HYJAL },
@@ -384,6 +543,9 @@ _.Instances = { tier(CATA_TIER, {
 								crit(3),	-- Incendiary Cloud
 								crit(4),	-- Fiery Tornado
 							}),
+							CHEST_CONQ,	-- Chest of the Fiery Conqueror
+							CHEST_PROT,	-- Chest of the Fiery Protector
+							CHEST_VANQ,	-- Chest of the Fiery Vanquisher
 							i(71665),	-- Flametalon of Alysrazor (MOUNT!)
 							i(70733),	-- Alysra's Razor
 							i(70734),	-- Greathelm of the Voracious Maw
@@ -411,6 +573,9 @@ _.Instances = { tier(CATA_TIER, {
 								crit(4),	-- The Ridge of Ancient Flame
 								crit(5),	-- Shatterstone
 							}),
+							LEGS_CONQ,	-- Leggings of the Fiery Conqueror
+							LEGS_PROT,	-- Leggings of the Fiery Protector
+							LEGS_VANQ,	-- Leggings of the Fiery Vanquisher
 							i(152975),	-- Smoldering Treat (PET!)
 							i(71014),	-- Skullstealer Greataxe
 							i(71013),	-- Feeding Frenzy
@@ -432,6 +597,9 @@ _.Instances = { tier(CATA_TIER, {
 						["creatureID"] = 53494,
 						["g"] = {
 							ach(5830),	-- Share the Pain
+							GLOVE_CONQ,	-- Gauntlets of the Fiery Conqueror
+							GLOVE_PROT,	-- Gauntlets of the Fiery Protector
+							GLOVE_VANQ,	-- Gauntlets of the Fiery Vanquisher
 							i(152977),	-- Vibrating Stone (PET!)
 							i(71312),	-- Gatecrasher
 							i(70915),	-- Shard of Torment
@@ -456,9 +624,9 @@ _.Instances = { tier(CATA_TIER, {
 							}),
 							i(152978),	-- Fandral's Pet Carrier (PET!)
 							i(122304),	-- Fandral's Seed Pouch (TOY!)
-							i(71681),	-- Mantle of the Fiery Conqueror
-							i(71688),	-- Mantle of the Fiery Protector
-							i(71674),	-- Mantle of the Fiery Vanquisher
+							SHOULDER_CONQ,	-- Shoulders of the Fiery Conqueror
+							SHOULDER_PROT,	-- Shoulders of the Fiery Protector
+							SHOULDER_VANQ,	-- Shoulders of the Fiery Vanquisher
 							i(69897),	-- Fandral's Flamescythe
 							i(71347),	-- Stinger of the Flaming Scorpion
 							i(71348),	-- Flowform Choker
@@ -477,9 +645,9 @@ _.Instances = { tier(CATA_TIER, {
 						["creatureID"] = 52409,
 						["g"] = {
 							ach(5855),	-- Ragnar-O's
-							i(71675),	-- Helm of the Fiery Conqueror
-							i(71682),	-- Helm of the Fiery Protector
-							i(71668),	-- Helm of the Fiery Vanquisher
+							HELM_CONQ,	-- Crown of the Fiery Conqueror
+							HELM_PROT,	-- Crown of the Fiery Protector
+							HELM_VANQ,	-- Crown of the Fiery Vanquisher
 							i(69224),	-- Smoldering Egg of Millagazor (MOUNT!)
 							i(175158, {	-- Flames of Fury (Bag of Tricks addition)
 								["races"] = { VULPERA },
@@ -808,8 +976,9 @@ _.Instances = { tier(CATA_TIER, {
 			-- #endif
 		},
 	}),
-})};
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+}));
+
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(CATA_TIER, {
 		inst(78, {	-- Firelands
 			i(71570),	-- Bracers of Forked Lightning
@@ -823,4 +992,4 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(71581),	-- Smolderskull Bindings
 		}),
 	}),
-});
+}));

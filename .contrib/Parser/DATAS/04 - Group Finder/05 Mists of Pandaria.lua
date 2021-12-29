@@ -14,15 +14,15 @@ _.GroupFinder =
 				i(113767),	-- Blossoming Mantle*
 				i(113765),	-- Blossoming Robe*
 				i(113787),	-- Blossoming Slippers*
-				i(113772),	-- Firecracker Belt*		— confirmed by Carbion on discord on May 16, 2020
-				i(113770),	-- Firecracker Boots*		— confirmed by Carbion on discord on May 16, 2020
-				i(113731),	-- Firecracker Cap*			— confirmed by Carbion on discord on May 18, 2020
+				i(113772),	-- Firecracker Belt*		— 12/27/21
+				i(113770),	-- Firecracker Boots*		— 12/27/21
+				i(113731),	-- Firecracker Cap*			— 12/27/21
 				un(REMOVED_FROM_GAME, i(113773)),	-- Firecracker Girdle
-				i(113746),	-- Firecracker Gloves*		— confirmed w/screenshot in #errors on April 15, 2020
+				i(113746),	-- Firecracker Gloves*		— 12/27/21
 				un(REMOVED_FROM_GAME, i(113733)),	-- Firecracker Helm
-				i(113752),	-- Firecracker Mantle*		— confirmed by Carbion on discord on May 17, 2020
+				i(113752),	-- Firecracker Mantle*		— 12/27/21
 				un(REMOVED_FROM_GAME, i(113771)),	-- Firecracker Slippers
-				i(113740),	-- Firecracker Tunic*		— confirmed by Carbion on discord on May 16, 2020
+				i(113740),	-- Firecracker Tunic*		— 12/27/21
 				i(113730),	-- Venomtail Helm
 				i(113753),	-- Venomtail Shoulderguards *
 				i(113741),	-- Venomtail Chestguard*
@@ -42,7 +42,7 @@ _.GroupFinder =
 				i(113783),	-- Kyparite Stompers*
 				i(113750),	-- Kyparite Shoulderguards*
 				i(113735),	-- Drifting Cloud Necklace*
-				i(113755),	-- Ring of Flowing Water*
+				i(113755),	-- Ring of Flowing Water*	— 12/27/21
 				i(113734),	-- Tranquil Breeze Pendant of the Peerless
 				i(113756),	-- Loop of Inner Clarity*	— confirmed by Reaperman on discord on May 3, 2020
 			},

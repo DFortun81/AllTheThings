@@ -614,7 +614,9 @@ _.ExpansionFeatures =
 							["coord"] = { 35.6, 38.4, 717 },
 							["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
 							["g"] = {
-								mount(232412),	-- Netherlord's Chaotic Wrathsteed
+								mount(232412, {	-- Netherlord's Chaotic Wrathsteed
+									["classes"] = { WARLOCK },
+								}),
 							},
 						}),
 						q(40606, {	-- To Point the Way
@@ -678,7 +680,6 @@ _.ExpansionFeatures =
 
 					--	TODO: not organized/sourced yet.
 						q(44228),	-- Champion Armaments
-						q(43895),	-- Sealing Fate: Gold
 						q(41155),	-- The Dark Riders
 						q(41156),	-- The Power Possessed
 						q(44227, {	-- Unleashing our Wrath

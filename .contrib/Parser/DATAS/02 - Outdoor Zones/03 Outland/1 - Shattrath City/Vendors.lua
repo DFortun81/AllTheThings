@@ -588,8 +588,7 @@ local MADAME_RUBY_GROUPS = {
 	}),
 };
 local ZURII_YURIAL_GROUPS = {};
-_.Zones =
-{
+root("Zones", {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(SHATTRATH_CITY, {
 			n(VENDORS, {
@@ -944,6 +943,24 @@ _.Zones =
 						i(21909),	-- Pattern: Spellfire Gloves
 						i(21910),	-- Pattern: Spellfire Robe
 					},
+				}),
+				n(19227, {	-- Griftah
+					i(27982),	-- Charm of Potent and Powerful Passions
+					i(27941),	-- Compassionate Critter's Friend
+					i(34249),	-- Hula Girl Doll
+					i(27992),	-- Infallible Tikbalang Ward
+					i(27940),	-- Marvelous Madstone of Immortality
+					i(27976),	-- Polished Pendant of Edible Energy
+					i(74918),	-- Problem Solving Pendant
+					i(27945),	-- Shark's Tooth of Bona Fide Fluidic Mobility
+					i(27978),	-- Soap on a Rope
+					i(27979),	-- Stone of Stupendous Springing Strides
+					i(27944),	-- Talisman of True Treasure Tracking
+					i(156726, {	-- Yellow Crystal Monocle
+						["sourceQuest"] = 50183,	-- Star-Touched Chest
+						["timeline"] = { "added 8.1.028768" },
+					}),
+					-- TODO: presumably other monocles can be re-purchased here once having been obtained via the secret
 				}),
 				n(23484, {	-- Haldor the Compulsive
 					["coord"] = { 48.0, 26.8, SHATTRATH_CITY },
@@ -1376,7 +1393,7 @@ _.Zones =
 			}),
 		}),
 	})),
-};
+});
 
 -- Add in the items that aren't locked by phase.
 local COMMON_ENCHANTING_RECIPES = {

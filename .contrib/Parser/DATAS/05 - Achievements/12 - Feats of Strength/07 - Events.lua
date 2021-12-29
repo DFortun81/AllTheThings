@@ -35,6 +35,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		un(REMOVED_FROM_GAME, ach(6060)),		-- MiniZep Controller
 		un(REMOVED_FROM_GAME, a(ach(4786))),	-- Operation: Gnomeregan (Alliance)
 		un(REMOVED_FROM_GAME, ach(6059)),		-- Red Rider Air Rifle
+		un(FEAST_OF_WINTER_VEIL, ach(15313)),	-- Rockin' Rollin' Racer
 		un(REMOVED_FROM_GAME, ach(1637)),		-- Spirit of Competition
 		un(REMOVED_FROM_GAME, ach(2116)),		-- Tabard of the Argent Dawn
 		un(REMOVED_FROM_GAME, ach(2079)),		-- Tabard of the Protector

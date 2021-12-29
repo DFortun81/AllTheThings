@@ -685,7 +685,6 @@ root("Instances", tier(CLASSIC_TIER, {
 			-- #endif
 			d(2, {	-- Heroic
 				["timeline"] = { "added 4.0.3" },
-				["ignoreBonus"] = true,
 				["lvl"] = 85,
 				["groups"] = {
 					e(89, {	-- Glubtok
@@ -778,6 +777,7 @@ root("Instances", tier(CLASSIC_TIER, {
 root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
 		q(35586),	-- Deadmines Reward Quest - Normal completion
+		q(35587),	-- Deadmines Reward Quest - Heroic completion
 	}),
 });
 -- #endif

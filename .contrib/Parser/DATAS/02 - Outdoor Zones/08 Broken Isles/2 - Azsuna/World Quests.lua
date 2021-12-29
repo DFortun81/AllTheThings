@@ -54,7 +54,6 @@ _.Zones =
 				q(43079),	-- DANGER: Immolian
 				q(44190),	-- DANGER: Jade Darkhaven
 				q(44191),	-- DANGER: Karthax
-				q(43798),	-- DANGER: Kosumoth the Hungering
 				q(44192),	-- DANGER: Lysanis Shadesoul
 				q(43098),	-- DANGER: Marblub the Massive
 				q(43027),	-- DANGER: Mortiferous
@@ -64,7 +63,6 @@ _.Zones =
 				q(44194),	-- DANGER: Torrentius
 				q(43040),	-- DANGER: Valakar the Thirsty
 				q(42146),	-- Dazed and Confused and Adorable
-				q(44287),	-- DEADLY: Withered J'im
 				q(44054),	-- Demonicide
 				q(42276),	-- Disgusting, but Useful
 				q(46169),	-- Dro'zek (Invasion WQ)

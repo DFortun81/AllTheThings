@@ -1063,7 +1063,6 @@ app.L = {
 		[-379] = "Interface\\Icons\\inv_misc_blizzcon09_graphicscard",						-- Junkyard
 		[-380] = "Interface\\Icons\\inv_misc_key_06",										-- Workshop
 	-- Misc Armor Slots
-		[-383] = "Interface\\Icons\\inv_misc_gem_variety_02",								-- Miscellaneous
 		[-384] = "Interface\\Icons\\inv_jewelcrafting_70_maxlvlneck_green",					-- Neck
 		[-385] = "Interface\\Icons\\inv_70_dungeon_ring5a",									-- Finger
 		[-386] = "Interface\\Icons\\inv_qirajidol_obsidian",								-- Trinket
@@ -1924,6 +1923,7 @@ app.L = {
 		[-1433962] = "Broken Mirror D-3",										-- Broken Mirror
 	};
 	["HEADER_DESCRIPTIONS"] = {
+		[-18] = "Contains Things which are rewarded or are available from other content within the containing section.\nThey are consolidated here in an effort to reduce duplication from many possible Sources.",
 		[-22] = "Naughty secrets...",
 		[-34] = "World Quests are time-limited Quests available in specific locations with variable rewards.\n\nMake sure to check the ATT World Quests window (/attwq) often to see what time-limited Things you should go collect!",
 		[-169] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",

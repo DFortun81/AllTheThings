@@ -22,6 +22,7 @@ i(188650);	-- Grimoire of Knowledge
 i(188655);	-- Crystalline Memory Repository
 i(188656);	-- Fractal Thoughtbinder
 i(188657);	-- Mind-Expanding Prism
+i(190184);	-- Incense of Infinity
 
 -- BFA Black Empire Tokens
 i(173420);	-- Black Empire Cloth Belt

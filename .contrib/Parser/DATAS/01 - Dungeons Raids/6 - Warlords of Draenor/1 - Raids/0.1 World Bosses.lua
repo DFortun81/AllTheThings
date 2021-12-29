@@ -9,7 +9,7 @@ _.Instances = { tier(WOD_TIER, {
 		["g"] = {
 			e(1291, {	-- Drov the Ruiner
 				["isWeekly"] = true,
-				["questID"] = 37462,
+				["questID"] = 37460,
 				["isRaid"] = true,
 				["coord"] = { 44.1, 39.9, GORGROND },
 				["maps"] = {	-- all Gorgrond maps
@@ -67,8 +67,7 @@ _.Instances = { tier(WOD_TIER, {
 					i(127775, {	-- Gemcutter Module: Stamina
 						["requireSkill"] = JEWELCRAFTING,
 						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
-						["spellID"] = 187640,
-						["coord"] = { 25.8, 39.7, TANAAN_JUNGLE },
+						["spellID"] = 0,
 					}),
 					i(115434),	-- Down-Lined Leggings
 					i(115435),	-- Leggings of Flowing Feathers
@@ -149,3 +148,11 @@ _.Instances = { tier(WOD_TIER, {
 		},
 	}),
 })};
+root("HiddenQuestTriggers", {
+	tier(WOD_TIER, {
+		q(33069),	-- REUSEME - Supreme Lord Kazzak bonus roll
+		q(37675),	-- Short-Supply Reward - Tarlna the Ageless bonus roll & Drov the Ruiner bonus roll
+		q(37673),	-- Short-Supply Reward - Drov the Ruiner bonus roll
+		q(37672),	-- Short-Supply Reward - Rukhmar bonus roll
+	}),
+});

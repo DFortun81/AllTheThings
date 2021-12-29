@@ -4,7 +4,7 @@ profession(ARCHAEOLOGY, {
 		filter(BATTLE_PETS, {
 			i(117354),	-- Ancient Nest Guardian
 		}),
-		f(50,   {	-- Miscellaneous
+		filter(MISC, {
 			i(114204),	-- Apexis Crystal
 			i(114205),	-- Apexis Hieroglyph
 			i(114206),	-- Apexis Scroll
@@ -153,7 +153,7 @@ profession(ARCHAEOLOGY, {
 		}),
 	}),
 	currency(1174, {	-- Demonic
-		f(50,  {	-- Miscellaneous
+		filter(MISC, {
 			i(130917),	-- Flayed-Skin Chronicle
 			i(130920),	-- Houndstooth Hauberk
 			i(130916),	-- Imp's Cup
@@ -318,7 +318,7 @@ profession(ARCHAEOLOGY, {
 		}),
 	}),
 	currency(398,  {	-- Draenei
-		f(50,   {	-- Miscellaneous
+		filter(MISC, {
 			i(64457),	-- The Last Relic of Argus
 			i(64440),	-- Anklet with Golden Bells
 			i(64453),	-- Baroque Sword Scabbard
@@ -342,7 +342,7 @@ profession(ARCHAEOLOGY, {
 				i(117380),	-- Frostwolf Ghostpup
 			}),
 		}),
-		f(50,   {	-- Miscellaneous
+		filter(MISC, {
 			i(114171),	-- Ancestral Talisman
 			i(114163),	-- Barbed Fishing Hook
 			i(114157),	-- Blackrock Razor
@@ -617,7 +617,7 @@ profession(ARCHAEOLOGY, {
 		filter(BATTLE_PETS, {
 			i(161089),	-- Restored Revenant
 		}),
-		f(50,   {	-- Miscellaneous
+		filter(MISC, {
 			i(154922),	-- Ancient Runebound Tome
 			i(154921),	-- Ceremonial Bonesaw
 			i(154923),	-- Disembowling Sickle
@@ -728,7 +728,7 @@ profession(ARCHAEOLOGY, {
 		filter(BATTLE_PETS, {
 			i(64372),	-- Clockwork Gnome
 		}),
-		f(50,   {	-- Miscellaneous
+		filter(MISC, {
 			i(63113),	-- Belt Buckle with Anvilmar Crest
 			i(64339),	-- Bodacious Door Knocker
 			i(63112),	-- Bone Gaming Dice
@@ -773,7 +773,7 @@ profession(ARCHAEOLOGY, {
 			i(60955),	-- Fossilized Hatchling
 			i(69821),	-- Pterrordax Hatchling
 		}),
-		f(50,   {	-- Miscellaneous
+		filter(MISC, {
 			i(64355),	-- Ancient Shark Jaws
 			i(63121),	-- Beautiful Preserved Fern
 			i(63109),	-- Black Trilobite
@@ -798,7 +798,7 @@ profession(ARCHAEOLOGY, {
 		prof(INSCRIPTION, {
 			i(137782),	-- Vantus Rune Technique: Grand Magistrix Elisande (Rank 3)
 		}),
-		f(50,     {	-- Miscellaneous
+		filter(MISC, {
 			i(130907),	-- Inert Leystone Charm
 			i(130910),	-- Nobleman's Letter Opener
 			i(130909),	-- Pre-War Highborne Tapestry
@@ -967,7 +967,7 @@ profession(ARCHAEOLOGY, {
 		-- prof(JEWELCRAFTING, {
 		-- 	i(137867),	-- Design: Shadowruby Band (Rank 3)
 		-- }),
-		f(50,     {	-- Miscellaneous
+		filter(MISC, {
 			i(130914),	-- Drogbar Gem-Roller
 			i(130913),	-- Hand-Smoothed Pyrestone
 			i(130912),	-- Moosebone Fish-Hook
@@ -1079,7 +1079,7 @@ profession(ARCHAEOLOGY, {
 		}),
 	}),
 	currency(754,  {	-- Mantid
-		f(50,   {	-- Miscellaneous
+		filter(MISC, {
 			i(95376),	-- Ancient Sap Feeder
 			i(95375),	-- Banner of the Mantid Empire
 			i(95378),	-- Inert Sound Beacon
@@ -1177,7 +1177,7 @@ profession(ARCHAEOLOGY, {
 		}),
 	}),
 	currency(677,  {	-- Mogu
-		f(50,   {	-- Miscellaneous
+		filter(MISC, {
 			i(79909),	-- Cracked Mogu Runestone
 			i(79913),	-- Edicts of the Thunder King
 			i(79914),	-- Iron Amulet
@@ -1299,7 +1299,7 @@ profession(ARCHAEOLOGY, {
 		}),
 	}),
 	currency(400,  {	-- Nerubian
-		f(50,   {	-- Miscellaneous
+		filter(MISC, {
 			i(64479),	-- Ewer of Jormungar Blood
 			i(64477),	-- Gruesome Heart Box
 			i(64476),	-- Infested Ruby Ring
@@ -1317,7 +1317,7 @@ profession(ARCHAEOLOGY, {
 		n(ARMOR, {
 			i(64643),	-- Queen Azshara's Dressing Gown
 		}),
-		f(50,   {	-- Miscellaneous
+		filter(MISC, {
 			i(64647),	-- Carcanet of the Hundred Magi
 			i(64379),	-- Chest of Tiny Glass Animals
 			i(63407),	-- Cloak Clasp with Antlers
@@ -1349,7 +1349,7 @@ profession(ARCHAEOLOGY, {
 		}),
 	}),
 	currency(828,  {	-- Ogre
-		f(50,   {	-- Miscellaneous
+		filter(MISC, {
 			i(114191),	-- Eye of Har'gunn the Blind
 			i(114189),	-- Gladiator's Shield
 			i(114194),	-- Imperial Decree Stele
@@ -1504,7 +1504,7 @@ profession(ARCHAEOLOGY, {
 		n(ARMOR, {
 			i(64644),	-- Headdress of the First Shaman
 		}),
-		f(50,   {	-- Miscellaneous
+		filter(MISC, {
 			i(64436),	-- Fiendish Whip
 			i(64421),	-- Fierce Wolf Figurine
 			i(64418),	-- Gray Candle Stub
@@ -1517,7 +1517,7 @@ profession(ARCHAEOLOGY, {
 		}),
 	}),
 	currency(676,  {	-- Pandaren
-		f(50,   {	-- Miscellaneous
+		filter(MISC, {
 			i(79903),	-- Apothecary Tins
 			i(79901),	-- Carved Bronze Mirror
 			i(79900),	-- Empty Keg
@@ -1651,7 +1651,7 @@ profession(ARCHAEOLOGY, {
 		n(FINGER, {
 			i(64904),	-- Ring of the Boy Emperor
 		}),
-		f(50,     {	-- Miscellaneous
+		filter(MISC, {
 			i(64652),	-- Castle of Sand
 			i(64653),	-- Cat Statue with Emerald Eyes
 			i(64656),	-- Engraved Scimitar Hilt
@@ -1676,7 +1676,7 @@ profession(ARCHAEOLOGY, {
 		filter(BATTLE_PETS, {
 			i(69824),	-- Voodoo Figurine
 		}),
-		f(50,   {	-- Miscellaneous
+		filter(MISC, {
 			i(64348),	-- Atal'ai Scepter
 			i(64346),	-- Bracelet of Jade and Coins
 			i(63524),	-- Cinnabar Bijou
@@ -1700,7 +1700,7 @@ profession(ARCHAEOLOGY, {
 		}),
 	}),
 	currency(399,  {	-- Vrykul
-		f(50,   {	-- Miscellaneous
+		filter(MISC, {
 			i(64464),	-- Fanged Cloak Pin
 			i(64462),	-- Flint Striker
 			i(64459),	-- Intricate Treasure Chest Key
@@ -1720,7 +1720,7 @@ profession(ARCHAEOLOGY, {
 				i(161080),	-- Intact Direhorn Egg
 			}),
 		}),
-		f(50,   {	-- Miscellaneous
+		filter(MISC, {
 			i(154913),	-- Akun'Jar Vase
 			i(160743),	-- Blowgun of the Sethra
 			i(154917),	-- Bwonsamdi Voodoo Mask

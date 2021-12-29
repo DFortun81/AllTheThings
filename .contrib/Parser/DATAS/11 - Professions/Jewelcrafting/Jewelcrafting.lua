@@ -289,7 +289,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 				["recipeID"] = 25612
 			}
 		}),
-		filter(50, {	-- Miscellaneous
+		filter(MISC, {
 			{
 				["name"] = "Coarse Stone Statue",
 				["recipeID"] = 32801
@@ -6291,11 +6291,14 @@ neverimplemented(i(52165));	-- Perfect Mystic Alicite
 -- Apply the Never Implemented flag to the Never Implemented things.
 bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, _.NeverImplemented);
 
-_.HiddenQuestTriggers = {
+root("HiddenQuestTriggers", {
 	q(55631),	-- Jewelcrafting Diode shrine. harvesting gems from them triggered this quest. Nazmir location
-};
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+});
+
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
+		q(29969),	-- Broken Earthen Figurine
+		q(29970),	-- Broken Earthen Figurine
 		q(31545),	-- The Finer Things
 		q(31557),	-- The Finer Things
 		q(31558),	-- The Finer Things
@@ -6309,4 +6312,4 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(31566),	-- The Finer Things
 		q(31567),	-- The Finer Things
 	}),
-});
+}));

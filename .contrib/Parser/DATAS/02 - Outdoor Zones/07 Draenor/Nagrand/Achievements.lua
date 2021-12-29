@@ -135,3 +135,11 @@ _.Zones =
 		}),
 	}),
 };
+root("HiddenQuestTriggers", {
+	tier(WOD_TIER, {
+		q(37250),	-- Broken Precipice POI Tracking Quest - triggers after finding Krog the Dominator's Hammer (achievementID 9610)
+		q(37251),	-- Broken Precipice POI Tracking Quest - triggers after finding Thak the Conqueror's Bust (achievementID 9610)
+		q(37252),	-- Broken Precipice POI Tracking Quest - triggers after finding Thurg the Slave Lord's Necklace (achievementID 9610)
+		q(37253),	-- Broken Precipice POI Tracking Quest - triggers after finding Gorg the Subjugator's Idol (achievementID 9610)
+	}),
+});

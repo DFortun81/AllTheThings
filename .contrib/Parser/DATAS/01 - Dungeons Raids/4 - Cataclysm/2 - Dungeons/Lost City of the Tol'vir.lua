@@ -171,7 +171,6 @@ _.Instances = { tier(CATA_TIER, {
 			}),
 			d(2,   {	-- Heroic
 				["lvl"] = 85,
-				["ignoreBonus"] = true,
 				["groups"] = {
 					e(117, {	-- General Husam
 						["crs"] = { 44577 },	-- General Husam
@@ -245,6 +244,12 @@ _.Instances = { tier(CATA_TIER, {
 		},
 	}),
 })};
+root("HiddenQuestTriggers", {
+	tier(WOD_TIER, {
+		q(35413),	-- Lost City of the Tol'vir Reward Quest
+		q(35414),	-- Lost City of the Tol'vir Reward Quest
+	}),
+});
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(CATA_TIER, {
 		inst(69, {	-- Lost City of the Tol'vir
@@ -252,6 +257,3 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 	}),
 });
-_.HiddenQuestTriggers = {
-	q(35413),	-- Lost City of the Tol'vir Reward Quest
-};

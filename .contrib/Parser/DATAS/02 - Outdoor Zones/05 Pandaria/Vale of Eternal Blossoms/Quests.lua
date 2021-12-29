@@ -117,6 +117,18 @@ _.Zones =
 					["description"] = "The item that starts this quest is mailed to you after you finish the |cffefef01Hozen in the Mist|r achievement.",
 					["provider"] = { "i", 83770 },	-- Hozen in the Mist
 				}),
+				q(30630, {	-- Into the Vale (A)
+					["sourceQuests"] = { 31512 },	-- A Witness to History (A)
+					["provider"] = { "n", 59964 },	-- Pako the Speaker
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(33008, {	-- Into the Vale (H)
+					["sourceQuests"] = { 31511 },	-- A Witness to History (H)
+					["provider"] = { "n", 59964 },	-- Pako the Speaker
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(33231, {	-- Journey to the Timeless Isle
 					["provider"] = { "n", 73691 },	-- Chromie <The Timewalkers>
 					["isBreadcrumb"] = true,	-- Possible to skip if you just fly to the Isle after picking up Flash of Bronze
@@ -256,6 +268,20 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 64002 },    -- Sang-Bo
 					["coord"] = { 63.0, 21.2, VALE_OF_ETERNAL_BLOSSOMS },
+				}),
+				q(30631, {	-- The Shrine of Seven Stars
+					["sourceQuests"] = { 30630 },	-- Into the Vale (A)
+					["provider"] = { "n", 58468 },	-- Sun Tenderheart
+					["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(30649, {	-- The Shrine of Two Moons
+					["sourceQuests"] = { 33008 },	-- Into the Vale (H)
+					["provider"] = { "n", 58468 },	-- Sun Tenderheart
+					["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(31100, {	-- The Song of the Yaungol
 					["description"] = "The item that starts this quest is mailed to you after you finish the |cffefef01The Song of the Yaungol|r achievement.",

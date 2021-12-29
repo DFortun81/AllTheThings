@@ -1019,6 +1019,48 @@ _.ExpansionFeatures =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 38573,	-- Nothing Remains
 				}),
+				q(37851, {	-- Amulet of Rukhmar: The Final Key
+					["sourceQuests"] = { 37850 },	-- Amulet of Rukhmar: The Second Key
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
+					["isDaily"] = true,
+				}),
+				q(37849, {	-- Amulet of Rukhmar: The First Key
+					["sourceQuests"] = { 37848 },	-- Treasure Contract: Amulet of Rukhmar
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
+					["isDaily"] = true,
+				}),
+				q(37850, {	-- Amulet of Rukhmar: The Second Key
+					["sourceQuests"] = { 37849 },	-- Amulet of Rukhmar: The First Key
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
+					["isDaily"] = true,
+				}),
+				q(37852, {	-- Amulet of Rukhmar: The Apexis Device (A)
+					["sourceQuests"] = { 37851 },	-- Amulet of Rukhmar: The Final Key
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coord"] = { 34.6, 32.7, LUNARFALL },
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						crit(3, {
+							["achievementID"] = 9825,	-- Master Relic Hunter (A)
+						}),
+					},
+				}),
+				q(37993, {	-- Amulet of Rukhmar: The Apexis Device (H)
+					["sourceQuests"] = { 37851 },	-- Amulet of Rukhmar: The Final Key
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coord"] = { 40.2, 56.0, FROSTWALL },
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						crit(3, {
+							["achievementID"] = 9836,	-- Master Relic Hunter (H)
+						}),
+					},
+				}),
 				q(34653, {	-- Arakkoa Exodus
 					["sourceQuests"] = { 35537, 35554 },	-- News from Spires of Arak H/A
 					["isBreadcrumb"] = true,
@@ -1652,6 +1694,48 @@ _.ExpansionFeatures =
 						garrisonBuilding(29),	-- Herb Garden lvl 1
 					},
 				}),
+				q(37885, {	-- Dark Grimoire: Breaching the Barrier (A)
+					["sourceQuest"] = 37884,	-- Dark Grimoire: The Final Ingredient
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coord"] = { 34.6, 32.7, LUNARFALL },
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						crit(2, {
+							["achievementID"] = 9825,	-- Master Relic Hunter (A)
+						}),
+					},
+				}),
+				q(37994, {	-- Dark Grimoire: Breaching the Barrier (H)
+					["sourceQuest"] = 37884,	-- Dark Grimoire: The Final Ingredient
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coord"] = { 40.2, 56.0, FROSTWALL },
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						crit(2, {
+							["achievementID"] = 9836,	-- Master Relic Hunter (H)
+						}),
+					},
+				}),
+				q(37884, {	-- Dark Grimoire: The Final Ingredient
+					["sourceQuest"] = 37883,	-- Dark Grimoire: The Second Ingredient
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
+					["isDaily"] = true,
+				}),
+				q(37882, {	-- Dark Grimoire: The First Ingredient
+					["sourceQuest"] = 37881,	-- Treasure Contract: Explosive Discoveries
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
+					["isDaily"] = true,
+				}),
+				q(37883, {	-- Dark Grimoire: The Second Ingredient
+					["sourceQuest"] = 37882,	-- Dark Grimoire: The First Ingredient
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
+					["isDaily"] = true,
+				}),
 				q(37773, {	-- Death to Amethon!
 					["provider"] = { "n", 89805 },	-- Renzik "The Shiv"
 					["isDaily"] = true,
@@ -1740,6 +1824,48 @@ _.ExpansionFeatures =
 					["coord"] = { 49.7, 49.5, FROSTWALL },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34775,	-- Mission Probable
+				}),
+				q(37979, {	-- Dream of Argus: The Crystal Reborn (A)
+					["sourceQuest"] = 37978,	-- Dream of Argus: The Final Fragment
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coord"] = { 34.6, 32.7, LUNARFALL },
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						crit(6, {
+							["achievementID"] = 9825,	-- Master Relic Hunter (A)
+						}),
+					},
+				}),
+				q(37997, {	-- Dream of Argus: The Crystal Reborn (H)
+					["sourceQuest"] = 37978,	-- Dream of Argus: The Final Fragment
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coord"] = { 40.2, 56.0, FROSTWALL },
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						crit(6, {
+							["achievementID"] = 9836,	-- Master Relic Hunter (H)
+						}),
+					},
+				}),
+				q(37978, {	-- Dream of Argus: The Final Fragment
+					["sourceQuest"] = 37977,	-- Dream of Argus: The Second Fragment
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
+					["isDaily"] = true,
+				}),
+				q(37976, {	-- Dream of Argus: The First Fragment
+					["sourceQuest"] = 37973,	-- Treasure Contract: The Artificer
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
+					["isDaily"] = true,
+				}),
+				q(37977, {	-- Dream of Argus: The Second Fragment
+					["sourceQuest"] = 37976,	-- Dream of Argus: The First Fragment
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
+					["isDaily"] = true,
 				}),
 				q(39034, {	-- Emissary of War
 					["provider"] = { "n", 94870 },	-- Seer Kazal
@@ -1834,17 +1960,77 @@ _.ExpansionFeatures =
 					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
 					["isDaily"] = true,
 				}),
-				q(37919, {	-- Gronnsbane: The Blessing of Beasts
+				q(37919, {	-- Gronnsbane: The Blessing of Beasts (A)
 					["sourceQuest"] = 37918, -- Gronnsbane: The Blessing of Fire
 					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
-					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
+					["coord"] = { 34.6, 32.7, LUNARFALL },
 					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						crit(1, {
+							["achievementID"] = 9825,	-- Master Relic Hunter (A)
+						}),
+					},
+				}),
+				q(37995, {	-- Gronnsbane: The Blessing of Beasts (H)
+					["sourceQuest"] = 37918, -- Gronnsbane: The Blessing of Fire
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coord"] = { 40.2, 56.0, FROSTWALL },
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						crit(1, {
+							["achievementID"] = 9836,	-- Master Relic Hunter (H)
+						}),
+					},
 				}),
 				q(37916, {	-- Gronnsbane: The Broken Spear
 					["sourceQuest"] = 37914, -- Treasure Contract: The Thunderlord Sage
 					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
 					["isDaily"] = true,
+				}),
+				q(37799, {	-- Gutrek's Cleaver: The Final Piece
+					["sourceQuest"] = 37798,	-- Gutrek's Cleaver: The Second Piece
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
+					["isDaily"] = true,
+				}),
+				q(37797, {	-- Gutrek's Cleaver: The First Piece
+					["sourceQuest"] = 37788,	-- Treasure Contract: Gutrek's Cleaver
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
+					["isDaily"] = true,
+				}),
+				q(37798, {	-- Gutrek's Cleaver: The Second Piece
+					["sourceQuest"] = 37797,	-- Gutrek's Cleaver: The First Piece
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
+					["isDaily"] = true,
+				}),
+				q(37811, {	-- Gutrek's Cleaver: The Spirit Forge (A)
+					["sourceQuest"] = 37799,	-- Gutrek's Cleaver: The Final Piece
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coord"] = { 34.6, 32.7, LUNARFALL },
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						crit(4, {
+							["achievementID"] = 9825,	-- Master Relic Hunter (A)
+						}),
+					},
+				}),
+				q(37992, {	-- Gutrek's Cleaver: The Spirit Forge (H)
+					["sourceQuest"] = 37799,	-- Gutrek's Cleaver: The Final Piece
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coord"] = { 40.2, 56.0, FROSTWALL },
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						crit(4, {
+							["achievementID"] = 9836,	-- Master Relic Hunter (H)
+						}),
+					},
 				}),
 				q(36589, {	-- Heavy Arms
 					["races"] = HORDE_ONLY,
@@ -2192,6 +2378,48 @@ _.ExpansionFeatures =
 						{ "o", 237022 },	-- Command Board lvl 3
 					},
 				}),
+				q(37945, {	-- The Silent Skull: Taking from the Taker (A)
+					["sourceQuest"] = 37944,	-- The Silent Skull: The Third Reagent
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coord"] = { 34.6, 32.7, LUNARFALL },
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						crit(5, {
+							["achievementID"] = 9825,	-- Master Relic Hunter (A)
+						}),
+					},
+				}),
+				q(37996, {	-- The Silent Skull: Taking from the Taker (H)
+					["sourceQuest"] = 37944,	-- The Silent Skull: The Third Reagent
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coord"] = { 40.2, 56.0, FROSTWALL },
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						crit(5, {
+							["achievementID"] = 9836,	-- Master Relic Hunter (H)
+						}),
+					},
+				}),
+				q(37942, {	-- The Silent Skull: The First Reagent
+					["sourceQuest"] = 37941,	-- Treasure Contract: The Infected Orc
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
+					["isDaily"] = true,
+				}),
+				q(37943, {	-- The Silent Skull: The Second Reagent
+					["sourceQuest"] = 37942,	-- The Silent Skull: The First Reagent
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
+					["isDaily"] = true,
+				}),
+				q(37944, {	-- The Silent Skull: The Third Reagent
+					["sourceQuest"] = 37943,	-- The Silent Skull: The Second Reagent
+					["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
+					["isDaily"] = true,
+				}),
 				q(35459, {	-- The Southern Wilds
 					["sourceQuests"] = { 34019 },	-- Shadows Awaken
 					["coord"] = { 42.8, 45.2, LUNARFALL },
@@ -2258,6 +2486,15 @@ _.ExpansionFeatures =
 						{ "n", 89793 },	-- Harrison Jones
 						{ "n", 92223 },	-- Surveyor Daltry
 					},
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 33.2, LUNARFALL } },
+				}),
+				q(37881, {	-- Treasure Contract: Explosive Discoveries
+					["isDaily"] = true,
+					["providers"] = {
+						{ "n", 89793 },	-- Harrison Jones
+						{ "n", 92223 },	-- Surveyor Daltry
+					},
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 33.2, LUNARFALL } },
 				}),
 				q(37788, {	-- Treasure Contract: Gutrek's Cleaver
 					["isDaily"] = true,
@@ -2265,6 +2502,7 @@ _.ExpansionFeatures =
 						{ "n", 89793 },	-- Harrison Jones
 						{ "n", 92223 },	-- Surveyor Daltry
 					},
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 33.2, LUNARFALL } },
 				}),
 				q(37941, {	-- Treasure Contract: The Infected Orc
 					["isDaily"] = true,
@@ -2272,14 +2510,23 @@ _.ExpansionFeatures =
 						{ "n", 89793 },	-- Harrison Jones
 						{ "n", 92223 },	-- Surveyor Daltry
 					},
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 33.2, LUNARFALL } },
 				}),
-				q(37914, {	-- Treasure Contract: The Thunderlord Sage
+				q(37973, {	-- Treasure Contract: The Artificer
+					["isDaily"] = true,
 					["providers"] = {
 						{ "n", 89793 },	-- Harrison Jones
 						{ "n", 92223 },	-- Surveyor Daltry
 					},
 					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 33.2, LUNARFALL } },
+				}),
+				q(37914, {	-- Treasure Contract: The Thunderlord Sage
 					["isDaily"] = true,
+					["providers"] = {
+						{ "n", 89793 },	-- Harrison Jones
+						{ "n", 92223 },	-- Surveyor Daltry
+					},
+					["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 33.2, LUNARFALL } },
 				}),
 				q(37290, {	-- Upgrades in Ashran
 					["description"] = "You need to have Comprehensive Construction Outpost Guide (item 116395) in your inventory",
@@ -2336,14 +2583,64 @@ _.ExpansionFeatures =
 		})),
 	}),
 };
-
-_.HiddenQuestTriggers =
-{
-	q(39412),	-- Something having to do with Naval Missions most likely (triggered with 39414)
-	q(37647),	-- Tracking Quest - Hide Old Baros / Thorn / Brightstone (after picking up the rose quest item during quest "Garrison Campaign: Every Rose Has Its Thorn")
-	q(37670),	-- [Deprecated] Tracking Quest - Hide Old Baros / Thorn / Brightstone (after picking up the rose quest item during quest "Garrison Campaign: Every Rose Has Its Thorn")
-	q(39829),	-- Sleigh and Guards Shared Criteria (Winter Veil)
-	q(39610),	-- Winter Veil Active (Winter Veil)
-	q(38276),	-- 6.1 Garrison - World Boss Invasion Loot (killing Commander Dro'gan)
-	q(39409),	-- After completing the WoD mission "Ghost Wrangler" (mission ID: 305), although not sure why that would be tracked.
-};
+root("HiddenQuestTriggers", {
+	tier(WOD_TIER, {
+		q(38276),	-- 6.1 Garrison - World Boss Invasion Loot - killing Commander Dro'gan
+		q(38315),	-- DEPRECATED - triggered when turning in "Bringing the Bass" on alliance
+		q(38401),	-- DEPRECATED - triggered when turning in "Bringing the Bass" on alliance
+		q(37311),	-- Drafting Table Interact
+		q(46952),	-- Flag Garrison Dog Quest
+		q(36640),	-- Followers Obtained
+		q(37198),	-- Garrison Visitor: Sappy - triggered during Goren invasion in Garrison
+		q(37199),	-- Garrison Visitor: Sappy - triggered during Goren invasion in Garrison
+		q(36799),	-- Garrison Nodes - Tracking Quest - triggers after unlocking the mine, picking herbs
+		q(36492),	-- Garrison Pet Battle — discord report, "for today's EU garrison menagerie fight, the Blingtron/protectron one"
+		q(35914),	-- Internal: Default Invasion Reward - triggers during the first garrison invasion as part of Draenor's base intro
+		q(36894),	-- Nemesis Flag, Draenei/Blood Elf — burning effigy in the Gladiator Sanctum
+		q(36891),	-- Nemesis Flag, Dwarf/Forsaken — burning effigy in the Gladiator Sanctum
+		q(36892),	-- Nemesis Flag, Gnome/Tauren — burning effigy in the Gladiator Sanctum
+		q(36956),	-- Nemesis Flag, Human — burning effigy in the Gladiator Sanctum
+		q(36890),	-- Nemesis Flag, Human/Orc — burning effigy in the Gladiator Sanctum
+		q(36893),	-- Nemesis Flag, Night Elf/Troll — burning effigy in the Gladiator Sanctum
+		q(36896),	-- Nemesis Flag, Pandaren (A/H) — burning effigy in the Gladiator Sanctum
+		q(36895),	-- Nemesis Flag, Worgen/Goblin — burning effigy in the Gladiator Sanctum
+		q(36294),	-- Phylarch the Evergreen A - Lumber Mill first attack
+		q(36295),	-- Phylarch the Evergreen B - Lumber Mill second attack
+		q(36058),	-- Seal of Tempered Fate: Armory
+		q(37197),	-- See Rexxar Quest Giver 002 - Garrison Campaign for Darktide Roost
+		q(39829),	-- Sleigh and Guards Shared Criteria - Winter Veil
+		q(39406),	-- Tracking Quest - related to weekly naval mission in the shipyard
+		q(39407),	-- Tracking Quest - related to weekly naval mission in the shipyard
+		q(39408),	-- Tracking Quest - interact with the mission table.
+		q(39409),	-- Tracking Quest - after completing the WoD mission "Ghost Wrangler" (mission ID: 305), although not sure why that would be tracked.
+		q(39410),	-- Tracking Quest - first interaction with the Garrison Mission Table this week. Completed a bunch of mission + one of the followers leveled up
+		q(39411),	-- Tracking Quest - related to weekly naval mission in the shipyard
+		q(39412),	-- Tracking Quest - something having to do with Naval Missions most likely (triggered with 39414)
+		q(39413),	-- Tracking Quest - Garrison/Shipyard Mission Table
+		q(39414),	-- Tracking Quest - Gladiator's Sanctum - Triggers on construction of the gladiator's sanctum (Lunarfall)
+		q(39415),	-- Tracking Quest - Garrison/Shipyard Mission Table
+		q(37647),	-- Tracking Quest - Hide Old Baros / Thorn / Brightstone - after picking up the rose quest item during quest "Garrison Campaign: Every Rose Has Its Thorn" (questID 36160)
+		q(39709),	-- Tracking Quest - first time this quest popped in WoD Garrison after opening some salvage crates. Then it unflagged on fresh toon, after I walked a little it got completed again
+		q(39710),	-- Tracking Quest - Garrison/Shipyard Mission Table
+		q(39711),	-- Tracking Quest - Garrison/Shipyard Mission Table
+		q(39723),	-- Tracking Quest - related to rare naval missions in the shipyard
+		q(39724),	-- Tracking Quest - related to rare naval missions in the shipyard
+		q(39725),	-- Tracking Quest - related to rare naval missions in the shipyard
+		q(39750),	-- Tracking Quest - related to rare naval missions in the shipyard
+		q(36902),	-- Tracking Quest: Aeda Brightdawn — assigned Aeda Brightdawn as bodyguard
+		q(36898),	-- Tracking Quest: Delvar Ironfist - assigned Delvar Ironfist as a bodyguard/wingman
+		q(36877),	-- Tracking Quest: Tormmok — assigned Tormmok as a bodyguard/wingman
+		q(36901),	-- Tracking Quest: Vivianne — assigned Vivianne as bodyguard
+		q(38348),	-- Unlock "Silvermoon" - triggers when using "Music Roll: Silvermoon" or "Music Roll: Exodar", appears to be a duplicate ID
+		q(39610),	-- Winter Veil Active - triggers after using any Feast of Winter Veil decoration
+		q(37670),	-- [Deprecated] Tracking Quest - Hide Old Baros / Thorn / Brightstone - after picking up the rose quest item during quest "Garrison Campaign: Every Rose Has Its Thorn" (questID 36160)
+	}),
+});
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	tier(WOD_TIER, {
+		n(QUESTS, {
+			q(33111),	-- Bounty: Twisted Ancient
+			q(34213),	-- They Have My Son
+		}),
+	}),
+}));

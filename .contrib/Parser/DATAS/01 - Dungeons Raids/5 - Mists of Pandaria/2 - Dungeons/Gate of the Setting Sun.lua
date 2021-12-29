@@ -156,3 +156,15 @@ _.Instances = { tier(MOP_TIER, {
 		},
 	}),
 })};
+root("HiddenQuestTriggers", {
+	tier(MOP_TIER, {
+		q(31631),	-- Gate of the Setting Sun Challenge Mode - Bronze Addition (Nth)
+		q(31624),	-- Gate of the Setting Sun Challenge Mode - Consolation (Nth)
+		q(31645),	-- Gate of the Setting Sun Challenge Mode - Gold Addition (Nth)
+		q(31638),	-- Gate of the Setting Sun Challenge Mode - Silver Addition (Nth)
+	}),
+	tier(WOD_TIER, {
+		q(35315),	-- Gate of the Setting Sun Reward Quest
+		q(35316),	-- Gate of the Setting Sun Reward Quest
+	}),
+});

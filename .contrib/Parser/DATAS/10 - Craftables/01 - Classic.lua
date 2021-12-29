@@ -677,9 +677,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			applyclassicphase(PHASE_SIX, i(22670, {	-- Icebane Gauntlets
 				["timeline"] = { "removed 3.0.1" },
 			})),
-			applyclassicphase(PHASE_FIVE_CATCH_UP, i(22763, {	-- Ironvine Gloves
-				["timeline"] = { "removed 4.0.3" },
-			})),
+			applyclassicphase(PHASE_FIVE_CATCH_UP, i(22763)),	-- Ironvine Gloves
 			i(7927, {	-- Ornate Mithril Gloves
 				["timeline"] = { "removed 4.0.1" },
 			}),
@@ -1285,7 +1283,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(13916),	-- 92 Pound Mightfish
 			i(13917),	-- 103 Pound Mightfish
 		}),
-		filter(50, {	-- Miscellaneous
+		filter(MISC, {
 			i(13907),	-- 7 Pound Lobster
 			i(13908),	-- 9 Pound Lobster
 			i(13909),	-- 12 Pound Lobster
@@ -1542,7 +1540,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 		filter(FIST_WEAPONS, {
 			i(20954),	-- Heavy Iron Knuckles
 		}),
-		filter(50, {	-- Miscellaneous
+		filter(MISC, {
 			i(25880),	-- Coarse Stone Statue
 			i(25883),	-- Dense Stone Statue
 			i(25881),	-- Heavy Stone Statue

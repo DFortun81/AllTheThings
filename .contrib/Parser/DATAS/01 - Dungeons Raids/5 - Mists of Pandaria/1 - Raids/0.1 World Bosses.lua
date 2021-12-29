@@ -24,7 +24,7 @@ _.Instances = { tier(MOP_TIER, {
 					ach(8028),	-- Praise the Sun!
 					-- Mounts, Caches, and Quest Items!
 					i(95057),	-- Reins of the Thundering Cobalt Cloud Serpent
-					i(95602, {	-- Stormtouched Cache
+					i(95602, {	-- Stormtouched Cache	-- TODO: should be symlink for duplicate rewards
 						i(95972),	-- Abandoned Zandalari Arrowlinks
 						i(95976),	-- Abandoned Zandalari Bucklebreaker
 						i(95961),	-- Abandoned Zandalari Firecord
@@ -36,6 +36,7 @@ _.Instances = { tier(MOP_TIER, {
 						i(95973),	-- Abandoned Zandalari Waterchain
 						i(95979),	-- Columnbreaker Stompers [Crieve got November 24, 2018 on stream]
 						i(95966),	-- Deeproot Treads
+						i(95978),	-- Locksmasher Greaves [Yunim - 2021-12-04]
 						i(95963),	-- Silentflame Sandals
 						i(95968),	-- Vaultwalker Sabatons
 						i(94295),	-- Primal Egg
@@ -341,7 +342,7 @@ _.Instances = { tier(MOP_TIER, {
 				["g"] = {
 					ach(8123),	-- Millions of Years of Evolution vs. My Fist
 					i(94228),	-- Reins of the Cobalt Primordial Direhorn
-					i(95601, {	-- Shiny Pile of Refuse
+					i(95601, {	-- Shiny Pile of Refuse	-- TODO: should be symlink for duplicate rewards
 						i(95972),	-- Abandoned Zandalari Arrowlinks
 						i(95976),	-- Abandoned Zandalari Bucklebreaker
 						i(95961),	-- Abandoned Zandalari Firecord
@@ -355,6 +356,7 @@ _.Instances = { tier(MOP_TIER, {
 						i(95966),	-- Deeproot Treads
 						i(94295),	-- Primal Egg
 						i(95965),	-- Home-Warding Slippers
+						i(95978),	-- Locksmasher Greaves [Yunim - 2021-12-04]
 						i(95980),	-- Necklace of the Terra-Cotta Protector
 						i(95958),	-- Necklace of the Terra-Cotta Archer
 						i(95969),	-- Necklace of the Terra-Cotta Mender
@@ -525,7 +527,7 @@ _.Instances = { tier(MOP_TIER, {
 				["g"] = {
 					ach(6517),	-- Extinction Event
 					i(89783),	-- Son of Galleon's Saddle
-					i(90840, {	-- Marauder's Gleaming Sack of Gold
+					i(90840, {	-- Marauder's Gleaming Sack of Gold	-- TODO: should be symlink for duplicate rewards
 						-- Belts
 						i(86884),	-- Belt of Embodied Terror
 						i(86900),	-- Binder's Chain of Unending Summer
@@ -666,7 +668,7 @@ _.Instances = { tier(MOP_TIER, {
 						["itemID"] = 89317,	-- Claw of Anger
 						["questID"] = 31809,	-- Remnants of Anger
 					},
-					i(90839, {	-- Cache of Sha-Touched Gold
+					i(90839, {	-- Cache of Sha-Touched Gold	-- TODO: should be symlink for duplicate rewards
 						i(86884),	-- Belt of Embodied Terror
 						i(86900),	-- Binder's Chain of Unending Summer
 						i(86850),	-- Darting Damselfly Cuffs
@@ -903,7 +905,7 @@ _.Instances = { tier(MOP_TIER, {
 						}),
 					}),
 					-- Caches / Boxes
-					i(104272, {	-- Celestial Treasure Box
+					i(104272, {	-- Celestial Treasure Box	-- TODO: should be symlink for duplicate rewards
 						i(105824),	-- Aeth's Swiftcinder Cloak
 						i(105816),	-- Brave Niunai's Cloak
 						i(105812),	-- Cape of the Alpha

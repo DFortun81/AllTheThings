@@ -204,6 +204,7 @@ local L = app.L;
 	--TODO: L.AH_SCAN_SUCCESSFUL_1 = ": Successfully scanned ";
 	--TODO: L.AH_SCAN_SUCCESSFUL_2 = " item(s).";
 	--TODO: L.REAGENT_CACHE_OUT_OF_DATE = "Reagent Cache is out-of-date and will be re-cached when opening your professions!";
+	--TODO: L.ARTIFACT_CACHE_OUT_OF_DATE = "Artifact Cache is out-of-date/inaccurate and will be re-cached when logging onto each character!";
 	--TODO: L.QUEST_LOOP = "Likely just broke out of an infinite source quest loop.";
 	--TODO: L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "Quest '%s' %s will prevent collection of Breadcrumb Quest '%s' %s";
 	--TODO: L.QUEST_OBJECTIVE_INVALID = "Invalid Quest Objective";
@@ -762,6 +763,8 @@ for key,value in pairs({
 			--TODO: [-676] = select(2, GetAchievementInfo(8791))..": Season 13",-- Tyrannical Gladiator: Season 13
 			--TODO: [-652] = "Honor Gear Grievous Season",			-- Honor Gear Grievous Season
 			--TODO: [-651] = "Honor Gear Prideful Season",			-- Honor Gear Prideful Season
+	-- Pets
+		--TODO: [-795] = "Pet Battle Dungeons",						-- Pet Battle Dungeons
 	-- Secret Header
 		[-806] = "금쪽같은 시간을 버려낸 허리띠",								-- Waist of Time
 	-- Chests
@@ -784,8 +787,6 @@ for key,value in pairs({
 		--TODO: [-911] = "Hunt: Shadehounds",						-- Hunt: Shadehounds
 		--TODO: [-912] = "Hunt: Winged Soul Eaters",				-- Hunt: Winged Soul Eaters
 		--TODO: [-913] = "Tormentors of Torghast",					-- Tormentors of Torghast
-		--TODO: [-914] = "Adventures",								-- Adventures
-		--TODO: [-915] = "Anima Conductor",							-- Anima Conductor
 		[-977] = "방랑자 멜리",											-- Maelie the Wanderer
 		[-979] = "중개자 베켄 & 중개자 베노트",								-- Broker Ve'ken & Broker Ve'nott
 		-- SL Maldraxxus/Necrolord
@@ -841,8 +842,6 @@ for key,value in pairs({
 	------ ACHIEVEMENT HEADERS SECTION ------
 		--TODO: [-10071] = "Visions of N'Zoth",
 		--TODO: [-10072] = "N'Zoth Assault",
-		--TODO: [-10073] = "Horrific Vision of Orgrimmar",
-		--TODO: [-10074] = "Horrific Vision of Stormwind",
 		[-10075] = "습격: 아마셋의 진군",									-- Assault: Amathet Advance
 		[-10076] = "습격: 검은 제국",										-- Assault: The Black Empire
 		[-10077] = "습격: 부족 전쟁",										-- Assault: The Warring Clans
@@ -850,7 +849,7 @@ for key,value in pairs({
 		[-10079] = "습격: 아퀴르 출현",									-- Assault: Aqir Unearthed
 		--TODO: [-10081] = "Corrupted Area",
 		--TODO: [-10082] = "Lost Area",
-		-- Shadowlands Achievement Header
+		-- Shadowlands Achievement Headers
 			-- 9.1
 				--TODO: [-10083] = "Covenant Assaults",				-- Covenant Assaults
 			--	hopefully temp objects, these currently do not have accessible object data on wowhead
@@ -998,6 +997,7 @@ for key,value in pairs({
 	[177964] = "심연의 돌",	-- Fathom Stone
 	[178144] = "트롤 궤짝",	-- Troll Chest
 	[178227] = "머구트의 토템 광주리",	-- Murgut's Totem Basket
+	[178609] = "눈더미",	-- Holiday Snow
 	[179485] = "부서진 함정",	-- A Broken Trap
 	[179499] = "오우거 타닌 광주리",	-- Ogre Tannin Basket
 	[179501] = "노트 팀블잭의 은닉품",	-- Knot Thimblejack's Cache	--TODO: This was taken from classic Wowhead
@@ -1022,6 +1022,11 @@ for key,value in pairs({
 	[180690] = "큰 스카라베 상자",	-- Large Scarab Coffer
 	[180691] = "스카라베 상자",	-- Scarab Coffer
 	[180717] = "스카라베 징",	-- The Scarab Gong	--TODO: This was taken from classic Wowhead
+	[180743] = "정성스럽게 포장된 선물꾸러미",	-- Carefully Wrapped Present
+	[180746] = "누가 살짝 흔들어 본 선물",	-- Gently Shaken Gift
+	[180747] = "화려하게 포장된 선물꾸러미",	-- Gaily Wrapped Present
+	[180748] = "들썩거리는 선물상자",	-- Ticking Present
+	[180793] = "축제 선물",	-- Festive Gift
 	[180794] = "잔다이스 바로브의 일지",	-- Journal of Jandice Barov
 	[180918] = "현상 수배: 욕망의 탤리스",	-- Wanted: Thaelis the Hungerer
 	[181011] = "마법학자 더스크위더의 일지",	-- Magister Duskwither's Journal
@@ -1067,6 +1072,7 @@ for key,value in pairs({
 	[186585] = "용가죽 두루마리",	-- Dragonskin Scroll
 	--TODO: [186881] = "Dark Iron Sabotage Plans",	-- Dark Iron Sabotage Plans
 	[186887] = "커다란 호박등",	-- Large Jack-o'-Lantern
+	[187236] = "겨울맞이 축제 선물",	-- Winter Veil Gift
 	[187273] = "수상한 발굽 자국",	-- Suspicious Hoofprint
 	[187559] = "호드 화톳불",	-- Horde Bonfire
 	[187564] = "얼라이언스 화톳불",	-- Alliance Bonfire
@@ -1517,6 +1523,7 @@ for key,value in pairs({
 	[230402] = "행운 주화",	-- Lucky Coin
 	[230424] = "눈 덮인 금고",	-- Snow-Covered Strongbox
 	[230425] = "갉아먹은 뼈다귀",	-- Gnawed Bone
+	[230428] = "이글거리는 순철 광맥",	-- Smoldering True Iron Deposit
 	[230611] = "창백한 오크 전리품 주머니",	-- Pale Loot Sack
 	[230643] = "테로발톱 둥지",	-- Teroclaw Nest
 	[230664] = "토르바스의 수정검",	-- The Crystal Blade of Torvath
@@ -1665,6 +1672,7 @@ for key,value in pairs({
 	[234455] = "추방자의 유물",	-- Relics of the Outcasts
 	[234456] = "으스러진 손 금고",	-- Shattered Hand Lockbox
 	[234458] = "으스러진 손 보관함",	-- Shattered Hand Cache
+	[234461] = "산성송곳니 독",	-- Toxicfang Venom
 	[234471] = "살포로봇 5000 XT",	-- Spray-O-Matic 5000 XT
 	[234472] = "선원 자주크의 90% 럼주",	-- Sailor Zazzuk's 180-Proof Rum
 	[234473] = "대장정의 지원품",	-- Campaign Contributions
@@ -1762,6 +1770,7 @@ for key,value in pairs({
 	[237022] = "명령 게시판",	-- Command Board
 	[237511] = "이상한 포자",	-- Strange Spore
 	[237821] = "블레이드퓨리의 명령서",	-- Bladefury's Orders
+	[237946] = "영혼 궤짝",	-- Spirit Coffer
 	[239120] = "오쿠나 롱터스크의 가방",	-- Okuna Longtusk's Pack
 	[239143] = "따뜻한 우유 잔",	-- Glass of Warm Milk
 	--TODO: [239171] = "Glass of Warm Milk",	-- Glass of Warm Milk
@@ -1927,7 +1936,7 @@ for key,value in pairs({
 	[243698] = "반짝이는 보물 상자",	-- Glimmering Treasure Chest
 	[243773] = "보물 상자",	-- Treasure Chest
 	[243798] = "야한 보석 상자",	-- A Steamy Jewelry Box
-	--TODO: [243899] = "Broken Ley Flame Burner",	-- Broken Ley Flame Burner
+	[243899] = "부서진 지맥불길 가열기",	-- Broken Ley Flame Burner
 	[243911] = "눈더미",	-- Snow Mound
 	--TODO: [244447] = "White Murloc Egg",	-- White Murloc Egg
 	[244453] = "쿨렌의 정찰 보고서",	-- Cullen's Scouting Report
@@ -2327,6 +2336,7 @@ for key,value in pairs({
 	[282478] = "빈 상자",	-- Empty Crate
 	[282498] = "사막 플루트",	-- Desert Flute
 	[282666] = "아구수의 단지",	-- Urn of Agussu
+	[282721] = "보물 상자",	-- Treasure Chest
 	[284426] = "묻힌 채광 기계",	-- Buried Mining Machine
 	[284448] = "숨겨진 학자의 상자",	-- Hidden Scholar's Chest
 	[284454] = "하얀 상어의 선물",	-- Da White Shark's Bounty
@@ -2456,6 +2466,7 @@ for key,value in pairs({
 	--TODO: [296916] = "Drust Stele: The Ritual",	-- Drust Stele: The Ritual
 	[296917] = "드러스트 석비: 나무",	-- Drust Stele: The Tree
 	[296918] = "드러스트 석비: 숨을 불어넣은 돌",	-- Drust Stele: Breath Into Stone
+	[297069] = "옷장",	-- Dresser
 	[297492] = "게시판",	-- Bulletin Board
 	[297627] = "드러스트 석비: 희생",	-- Drust Stele: Sacrifice
 	[297628] = "드러스트 석비: 피조물",	-- Drust Stele: Constructs
@@ -2591,6 +2602,7 @@ for key,value in pairs({
 	--TODO: [334216] = "Black Empire Cache",	-- Black Empire Cache
 	[336415] = "버려진 두루마리",	-- Discarded Scroll
 	[337237] = "잃어버린 금고",	-- Lost Vault
+	[337241] = "장비 보관함",	-- Stashed Equipment
 	--TODO: [339211] = "|cFFFFFFFFStep 2:|r Empty Dish",	-- |cFFFFFFFFStep 2:|r Empty Dish
 	[339283] = "잊힌 귀족의 상자",	-- Forgotten Noble's Chest
 	[339601] = "영겁의 두루마리",	-- Scroll of Aeons

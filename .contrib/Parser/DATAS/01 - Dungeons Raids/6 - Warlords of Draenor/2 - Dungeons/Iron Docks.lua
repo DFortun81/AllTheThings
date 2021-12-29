@@ -233,3 +233,12 @@ _.Instances = { tier(WOD_TIER, {
 		},
 	}),
 })};
+root("HiddenQuestTriggers", {
+	tier(WOD_TIER, {
+		q(34536),	-- Iron Docks Challenge Mode - Bronze Addition (Nth)
+		q(34526),	-- Iron Docks Challenge Mode - Consolation (Nth)
+		q(34538),	-- Iron Docks Challenge Mode - Gold Addition (Nth)
+		q(34537),	-- Iron Docks Challenge Mode - Silver Addition (Nth)
+		q(35958),	-- Iron Docks Reward Quest
+	}),
+});

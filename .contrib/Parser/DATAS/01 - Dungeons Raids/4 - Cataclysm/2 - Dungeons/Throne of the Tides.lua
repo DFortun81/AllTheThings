@@ -132,7 +132,6 @@ _.Instances = { tier(CATA_TIER, {
 			}),
 			d(2, {	-- Heroic
 				["lvl"] = 85,
-				["ignoreBonus"] = true,
 				["groups"] = {
 					cr(40586, e(101, {	-- Lady Naz'jar
 						{	-- Old Faithful
@@ -191,3 +190,11 @@ _.Instances = { tier(CATA_TIER, {
 		},
 	}),
 })};
+root("HiddenQuestTriggers", {
+	tier(WOD_TIER, {
+		q(35363),	-- Throne of the Tides Reward Quest - Normal completion
+		q(35365),	-- Throne of the Tides Reward Quest - Heroic completion / Timewalking completion
+		q(35364),	-- Throne of the Tides Bonus Reward - kill Mindbender Ghur'sha (Normal)
+		q(35366),	-- Throne of the Tides Bonus Reward - kill Mindbender Ghur'sha (Heroic / Timewalking)
+	}),
+});

@@ -239,7 +239,7 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 					i(164407),	-- Twilight Dragon's Legplates
 					i(164409),	-- Twilight Dragon's Warboots
 				}),
-				n(-383, {	-- Miscellaneous
+				filter(MISC, {
 					i(163611, {	-- Seafarer's Coin Pouch
 						["description"] = "Contains roughly 1-4 dubloons, more if you have the research.",
 					}),

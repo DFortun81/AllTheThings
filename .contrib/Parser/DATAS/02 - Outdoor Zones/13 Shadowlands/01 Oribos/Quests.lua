@@ -606,7 +606,6 @@ _.Zones =
 					["description"] = "To get this Quest, you have to choose 'Replay Storyline' and pick 'Skip Storyline' right after.",
 					["sourceQuests"] = { 62704 },	-- The Threads of Fate
 					["altQuests"] = { 62713 },	-- Becoming a Skip character will exclude this Quest from being available
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["isBreadcrumb"] = true,
 				}),
 				q(62716, {	-- Re-Introductions
@@ -1082,7 +1081,7 @@ _.Zones =
 	}),
 };
 
-_.HiddenQuestTriggers = {
+root("HiddenQuestTriggers", {
 	q(64254),	-- triggers when using the second 9.1 skip (the one to Korthia) - returns info for "Supplies from Death's Advance" paragon quest, but text/reward are for Court of Harvesters
 	q(64514),	-- triggered while doing The Battle of Ardenweald scenario
 	q(64515),	-- triggered while doing The Battle of Ardenweald scenario
@@ -1098,8 +1097,10 @@ _.HiddenQuestTriggers = {
 	-- 9.1.5?
 	q(62923),	-- Swapped to Venthyr from Necrolord at R80? Probably a old hqt
 	q(64848),	-- Choosing Torghast as leveling
-};
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	q(65030),	-- accepting/completing 'Battlegrounds' [65031]
+});
+
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(60286),	-- A Token of Our Admiration
 		q(60157),	-- Answers from the Ascended
@@ -1182,4 +1183,4 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-});
+}));

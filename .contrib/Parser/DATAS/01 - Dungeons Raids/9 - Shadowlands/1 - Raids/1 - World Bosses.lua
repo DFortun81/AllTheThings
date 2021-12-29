@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(SL_TIER, {
+root("Instances", { tier(SL_TIER, {
 	n(WORLD_BOSSES, {
 		["isRaid"] = true,
 		["modID"] = 14,
@@ -104,6 +104,11 @@ _.Instances = { tier(SL_TIER, {
 				["isRaid"] = true,
 				["coord"] = { 32.1, 67.3, MALDRAXXUS },
 				["creatureID"] = 167525,	-- Mortanis
+				["sym"] = {	-- attach the Common Boss Drops when showing in a popout
+					{"select","tierID",SL_TIER},{"pop"},
+					{"where","headerID",WORLD_BOSSES},{"pop"},
+					{"where","headerID",COMMON_BOSS_DROPS},
+				},
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(183341),	-- Memory of a Guile Charm
 					i(183386),	-- Memory of Fujieda
@@ -122,6 +127,11 @@ _.Instances = { tier(SL_TIER, {
 				["isRaid"] = true,
 				["coord"] = { 27.2, 14.9, REVENDRETH },
 				["creatureID"] = 167526,	-- Nurgash Muckformed
+				["sym"] = {	-- attach the Common Boss Drops when showing in a popout
+					{"select","tierID",SL_TIER},{"pop"},
+					{"where","headerID",WORLD_BOSSES},{"pop"},
+					{"where","headerID",COMMON_BOSS_DROPS},
+				},
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(182638),	-- Memory of a Frenzied Monstrosity
 					i(183215),	-- Memory of an Erratic Fel Core
@@ -140,6 +150,11 @@ _.Instances = { tier(SL_TIER, {
 				["isRaid"] = true,
 				["coord"] = { 20.2, 63.6, ARDENWEALD },
 				["creatureID"] = 167527,	-- Oranomonos the Everbranching
+				["sym"] = {	-- attach the Common Boss Drops when showing in a popout
+					{"select","tierID",SL_TIER},{"pop"},
+					{"where","headerID",WORLD_BOSSES},{"pop"},
+					{"where","headerID",COMMON_BOSS_DROPS},
+				},
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(183274),	-- Memory of a Fevered Incantation
 					i(183261),	-- Memory of Surging Shots
@@ -158,6 +173,11 @@ _.Instances = { tier(SL_TIER, {
 				["isRaid"] = true,
 				["coord"] = { 26.3, 22.4, BASTION },
 				["creatureID"] = 167524,	-- Valinor, the Light of Eons
+				["sym"] = {	-- attach the Common Boss Drops when showing in a popout
+					{"select","tierID",SL_TIER},{"pop"},
+					{"where","headerID",WORLD_BOSSES},{"pop"},
+					{"where","headerID",COMMON_BOSS_DROPS},
+				},
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(183325),	-- Memory of Archbishop Benedictus
 					i(183311),	-- Memory of the Final Verdict
@@ -172,12 +192,12 @@ _.Instances = { tier(SL_TIER, {
 			}),
 		},
 	}),
-})};
+})});
 
-_.HiddenQuestTriggers = {
+root("HiddenQuestTriggers", {
 	q(64547),	-- Mor'geth kill questID
 	q(62810),	-- Mortanis kill questID
 	q(62812),	-- Nurgash Muckformed kill questID
 	q(62811),	-- Oranomonos kill questID
 	q(62809),	-- Valinor kill questID
-};
+});
