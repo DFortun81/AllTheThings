@@ -2027,8 +2027,7 @@ app.CheckInaccurateQuestInfo = function(questRef, questChange)
 end
 local PrintQuestInfo = function(questID, new, info)
 	if app.IsReady and app.Settings:GetTooltipSetting("Report:CompletedQuests") then
-		local searchResults = app.SearchForField("questID", questID);
-		local id = questID;
+		local questRef = app.SearchForObject("questID", questID);
 		local questChange;
 		if new == true then
 			questChange = "accepted";
@@ -2037,45 +2036,45 @@ local PrintQuestInfo = function(questID, new, info)
 		else
 			questChange = "completed";
 		end
-		if not searchResults or #searchResults <= 0 or GetRelativeField(searchResults[1], "text", L["UNSORTED_1"]) then
-			questID = questID .. " (Not in ATT " .. app.Version .. ")";
+		-- This quest doesn't meet the filter for this character, then ask to report in chat
+		if questChange == "accepted" then
+			DelayedCallback(app.CheckInaccurateQuestInfo, 0.5, questRef, questChange);
+		end
+		local chatMsg;
+		if not questRef or GetRelativeField(questRef, "text", L["UNSORTED_1"]) then
 			-- Linkify the output
-			local popupID = "quest-" .. id;
-			questID = app:Linkify(questID, "ff5c6c", "dialog:" .. popupID);
-			app:SetupReportDialog(popupID, "Missing Quest: " .. id,
-				app.BuildDiscordQuestInfoTable(id, "missing-quest", questChange)
+			local popupID = "quest-" .. questID .. questChange;
+			chatMsg = app:Linkify(questID .. " (Not in ATT " .. app.Version .. ")", "ff5c6c", "dialog:" .. popupID);
+			app:SetupReportDialog(popupID, "Missing Quest: " .. questID,
+				app.BuildDiscordQuestInfoTable(questID, "missing-quest", questChange)
 			);
 		else
-			if app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
-				return true;
-			end
-			local questRef = searchResults[1];
 			-- give a chat output if the user has just interacted with a quest flagged as NYI
 			if GetRelativeField(questRef, "text", L["NEVER_IMPLEMENTED"]) then
-				questID = questID .. " (Not in ATT " .. app.Version .. " [NYI])";
 				-- Linkify the output
-				local popupID = "quest-" .. id;
-				questID = app:Linkify(questID, "ff5c6c", "dialog:" .. popupID);
-				app:SetupReportDialog(popupID, "NYI Quest: " .. id,
-					app.BuildDiscordQuestInfoTable(id, "nyi-quest", questChange)
+				local popupID = "quest-" .. questID .. questChange;
+				chatMsg = app:Linkify(questID .. " [NYI] ATT " .. app.Version, "ff5c6c", "dialog:" .. popupID);
+				app:SetupReportDialog(popupID, "NYI Quest: " .. questID,
+					app.BuildDiscordQuestInfoTable(questID, "nyi-quest", questChange)
 				);
 			-- tack on an 'HQT' tag if ATT thinks this QuestID is a Hidden Quest Trigger
 			-- (sometimes 'real' quests are triggered complete when other 'real' quests are turned in and contribs may consider them HQT if not yet sourced
 			-- so when a quest flagged as HQT is accepted/completed directly, it will be more noticable of being incorrectly sourced
 			elseif GetRelativeField(questRef, "text", L["HIDDEN_QUEST_TRIGGERS"]) then
-				questID = questID .. " [HQT]";
+				if app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
+					return true;
+				end
 				-- Linkify the output
-				questID = app:Linkify(questID, "7aff92", "search:questID:" .. id);
+				chatMsg = app:Linkify(questID .. " [HQT]", "7aff92", "search:questID:" .. questID);
 			else
+				if app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
+					return true;
+				end
 				-- Linkify the output
-				questID = app:Linkify(questID, "149bfd", "search:questID:" .. id);
-			end
-			-- This quest doesn't meet the filter for this character, then ask to report in chat
-			if questChange == "accepted" then
-				DelayedCallback(app.CheckInaccurateQuestInfo, 1, questRef, questChange);
+				chatMsg = app:Linkify(questID, "149bfd", "search:questID:" .. questID);
 			end
 		end
-		print("Quest",questChange,questID,(info or ""));
+		print("Quest",questChange,chatMsg,(info or ""));
 	end
 end
 local DirtyQuests = {};
