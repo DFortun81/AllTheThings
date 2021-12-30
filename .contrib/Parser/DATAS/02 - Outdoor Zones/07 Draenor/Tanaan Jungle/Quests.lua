@@ -776,10 +776,10 @@ root("HiddenQuestTriggers", {
 		q(38038),	-- Max-level Choice Tracker: Tanaan 6.2 - The Iron Front (H)
 		q(38042),	-- Max-level Choice Tracker: Tanaan 6.2 - Zeth'Gol (A)
 		q(38041),	-- Max-level Choice Tracker: Tanaan 6.2 - Zeth'Gol (H)
-		q(39377),	-- Short-Supply Reward - Executor Riloth rare, first kill ever
-		q(39378),	-- Short-Supply Reward - Jax'zor rare, first kill ever
-		q(39376),	-- Short-Supply Reward - 50.4, 34.5 ??
-		q(39375),	-- Short-Supply Reward - triggers after looting Suspiciously Glowing Chest
+		q(39375, {["isDaily"]=true}),	-- Short-Supply Reward - Daily Rare/Treasure #1
+		q(39376, {["isDaily"]=true}),	-- Short-Supply Reward - Daily Rare/Treasure #2
+		q(39377, {["isDaily"]=true}),	-- Short-Supply Reward - Daily Rare/Treasure #3
+		q(39378, {["isDaily"]=true}),	-- Short-Supply Reward - Daily Rare/Treasure #4
 		q(39434),	-- Short-Supply Reward - triggers on the first rare kill (Baleful Spaulders itemID 128348)
 		q(39416),	-- Skoller's Bag o' Squirrel Treats - triggers after talking to Skoller and getting his toy (Skoller's Bag of Squirrel Treats)
 		q(37887),	-- Tanaan Garrison Max-level Choice Tracker: ANY CHOICE MADE (A)

@@ -52,7 +52,7 @@ _.Zones =
 						i(87603),	-- Thunderfall Gauntlets
 						i(87599),	-- Grower's Gloves
 						i(87600),	-- Marshsong Gloves
-					--	i(86591),	-- Magic Banana (should be a toy)
+						i(86591),	-- Magic Banana (should be a toy)
 						{	-- Glorious!
 							["achievementID"] = 7439,
 							["criteriaID"] = 2,

@@ -143,7 +143,11 @@ _.Zones =
 							["achievementID"] = 10070,	-- Jungle Stalker
 						}),
 						q(38428,{	-- A Fel Puppy Of My Own
-							i(129205),	-- A Tiny Infernal Collar (Fel Pup Pet)
+							["qgs"] = { 90426 },	-- Abandoned Fel Pup
+							["coord"] = { 31.7, 67.1, TANAAN_JUNGLE },
+							["g"] = {
+								i(129205),	-- A Tiny Infernal Collar (Fel Pup Pet)
+							},
 						}),
 					},
 				}),
