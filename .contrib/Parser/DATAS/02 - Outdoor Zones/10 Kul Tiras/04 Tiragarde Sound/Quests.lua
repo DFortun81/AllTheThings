@@ -286,8 +286,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 131654 },	-- Meredith
 					["g"] = {
-					--	i(163036),	-- Polished Pet Charm x10
-					--  Hiding Pet Charms from an One-Time Quest as it shouldnt show if you completed the quest.
+						i(163036),	-- Polished Pet Charm x10
 					},
 				}),
 				q(49740, {	-- Cease Fire!
@@ -909,8 +908,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 129098 },	-- Rodrigo <Flight Master>
 					["g"] = {
-					--	i(163036),	-- Polished Pet Charm x10
-					--  Hiding Pet Charms from an One-Time Quest as it shouldnt show if you completed the quest.
+						i(163036),	-- Polished Pet Charm x10
 					},
 				}),
 				q(49401, {	-- Rodrigo's Roost

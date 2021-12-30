@@ -194,18 +194,8 @@ root("Holidays", d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
 					}),
 				-- Containers
 					i(35348, {	-- Bag of Fishing Treasures
-						["cost"] = { { "c", 1166, 25 }, },	-- 25x Timewarped Badge
-						["g"] = {
-							i(35350),	-- Chuck's Bucket
-							i(33818),	-- Muckbreeeath's Bucket
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(35349),	-- Snarly's Bucket
-							i(33816),	-- Toothy's Bucket
-							i(33820, {	-- Weather-Beaten Fishing Hat
-								["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
-							}),
-							i(34109),	-- Weather-Beaten Journal
-						},
+						["cost"] = { { "c", 1166, 150 }, },	-- 150x Timewarped Badge
+						["sym"] = { { "fill" } },	-- fill the content
 					}),
 					i(33844, {	-- Barrel of Fish
 						["cost"] = { { "c", 1166, 25 }, },	-- 25x Timewarped Badge
