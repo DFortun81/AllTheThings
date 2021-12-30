@@ -1035,6 +1035,7 @@ _.Zones =
 					},
 					["coord"] = { 57.0, 57.5, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 				n(BONUS_OBJECTIVES, {
 					-- TODO: Check SQ

@@ -2,6 +2,9 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
+-- TODO: make parser clean up (u <= 0) because this technique is silly just to avoid bubbleDown contamination on Things not sourced elsewhere
+local BLOOD = i(124124);	-- Blood of Sargeras
+
 root("Holidays", d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
 	tier(LEGION_TIER, {
 		q(64710, {	-- Whispering Felflame Crystal
@@ -270,7 +273,7 @@ root("Holidays", d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
 					i(141018, {	-- Sargerei Blood Vessel
 						["cost"] = { { "c", 1166, 150 }, },		-- 150x Timewarped Badge
 						["g"] = {
-							i(124124),	-- Blood of Sargeras
+							BLOOD,
 						},
 					}),
 					i(146943, {	-- Court of Farondis Insignia
@@ -345,6 +348,8 @@ root("Holidays", d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
 		}),
 	}),
 })));
+
+BLOOD.u = nil;
 
 root("HiddenQuestTriggers", {
 	q(65176),	-- learning Ensemble: Ravencrest's Battleplate (188209)
