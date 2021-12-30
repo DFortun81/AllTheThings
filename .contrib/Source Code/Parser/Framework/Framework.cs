@@ -346,6 +346,11 @@ namespace ATT
             // If this item has an "unobtainable" flag on it, meaning for a different phase of content.
             if (data.TryGetValue("u", out long phase))
             {
+                // u <= 0 is irrelevant and can be removed. this allows for assigning a u value in source that we know will be removed later, so as
+                // to not need to delete the u value from a local variable which is wrapped in a bubbleDown function.
+                if (phase <= 0)
+                    data.Remove("u");
+
                 if (phase > MAX_PHASE_ID && !(phase >= 1000 && (phase < (MAX_PHASE_ID + 1) * 100)))
                 {
                     data.Remove("g");

@@ -320,7 +320,7 @@ namespace ATT
             }
 
             // check elements regardless of ordering
-            List<T> copy = y.ToList();
+            HashSet<T> copy = new HashSet<T>(y);
             foreach (T item in x)
             {
                 if (!copy.Remove(item))
