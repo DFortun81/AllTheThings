@@ -527,7 +527,8 @@ _.Zones =
 							n(137468, {	-- Gorging Raven
 								i(163710),	-- Merchant's Key
 							}),
-							i(163036),	-- Polished Pet Charm
+						--	i(163036),	-- Polished Pet Charm
+						--  Hiding Pet Charms from an One-Time Questobject as it shouldnt show if you completed the quest.
 						},
 					}),
 					o(297891, {	-- Runebound Cache
