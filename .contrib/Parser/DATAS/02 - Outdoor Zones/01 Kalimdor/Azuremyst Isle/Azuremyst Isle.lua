@@ -377,6 +377,25 @@ _.Zones =
 									-- #endif
 								},
 							}),
+							q(37445, {	-- Spare Parts
+								["qg"] = 17071,	-- Technician Zhanaa
+								["sourceQuest"] = 10302,	-- Volatile Mutations
+								["coord"] = { 50.5, 47.9, AMMEN_VALE },
+								["timeline"] = { "added 6.0.2.18833" },
+								["races"] = ALLIANCE_ONLY,
+								["groups"] = {
+									objective(1, {	-- 0/4 Emitter Spare Part
+										["provider"] = { "i", 22978 },	-- Emitter Spare Part
+										["coord"] = { 64.6, 84.4, AMMEN_VALE },
+									}),
+									i(24423),	-- Beaten Plate Leggings
+									i(24424),	-- Rough Leather Leggings
+									i(24425),	-- Hand Sewn Pants
+									-- #if AFTER LEGION
+									i(131250),	-- Coarse Mail Leggings
+									-- #endif
+								},
+							}),
 							q(26963, {	-- Steadying Your Shot
 								["qg"] = 16499,	-- Keilnei
 								-- #if AFTER MOP
