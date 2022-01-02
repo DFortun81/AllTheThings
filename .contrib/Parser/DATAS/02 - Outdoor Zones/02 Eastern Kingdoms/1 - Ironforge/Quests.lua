@@ -12,6 +12,10 @@ _.Zones =
 					["provider"] = { "n", 6294 },	-- Krom Stoutarm
 					["coord"] = { 74.6, 9.8, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
+					["timeline"] = {
+						"added 6.1.0.19480",
+						"removed 9.0",	-- seems inadvertent, maybe blizzard will fix eventually
+					},
 					["g"] = {
 						i(122339, {	-- Ancient Heirloom Scabbard
 							["sym"] = { { "fill" } },	-- simply fill this item
@@ -62,6 +66,10 @@ _.Zones =
 					["provider"] = { "n", 6294 },	-- Krom Stoutarm
 					["coord"] = { 74.6, 9.8, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
+					["timeline"] = {
+						"added 6.1.0.19480",
+						"removed 9.0",	-- seems inadvertent, maybe blizzard will fix eventually
+					},
 					["g"] = {
 						i(122340, {	-- Timeworn Heirloom Armor Casing
 							["sym"] = { { "fill" } },	-- simply fill this item
@@ -166,6 +174,10 @@ _.Zones =
 					["provider"] = { "n", 6294 },	-- Krom Stoutarm
 					["coord"] = { 74.6, 9.8, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
+					["timeline"] = {
+						"added 6.1.0.19480",
+						"removed 9.0",	-- seems inadvertent, maybe blizzard will fix eventually
+					},
 					["g"] = {
 						i(122338, {	-- Ancient Heirloom Armor Casing
 							["sym"] = { { "fill" } },	-- simply fill this item
@@ -243,6 +255,10 @@ _.Zones =
 					["provider"] = { "n", 6294 },	-- Krom Stoutarm
 					["coord"] = { 74.6, 9.8, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
+					["timeline"] = {
+						"added 6.1.0.19480",
+						"removed 9.0",	-- seems inadvertent, maybe blizzard will fix eventually
+					},
 					["g"] = {
 						i(122341, {	-- Timeworn Heirloom Scabbard
 							["sym"] = { { "fill" } },	-- simply fill this item

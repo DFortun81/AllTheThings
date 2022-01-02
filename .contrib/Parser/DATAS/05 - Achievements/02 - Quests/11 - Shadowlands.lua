@@ -321,6 +321,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 		ach(14758),		-- The World Beyond
 		ach(14737, {	-- What Bastion Remembered
 			["altQuests"] = { 59717, 59705 },	-- Things Remembered
+			["maps"] = { BASTION },
 			["g"] = {
 				crit(1),	-- Eridia, Hand of Purity
 				crit(2),	-- Kalisthene

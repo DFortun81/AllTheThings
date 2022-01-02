@@ -104,7 +104,6 @@ _.Zones =
 					["isDaily"] = true,
 				}),
 				i(187054, {	-- Lost Razorwing Egg
-					-- ["questID"] = 64280,	-- 1st daily drop / people report multiple per day & have received the mount, so idk what this questID is then...
 					["crs"] = {
 						177295,	-- Colossal Worldeater
 						177913,	-- Hungering Behemoth

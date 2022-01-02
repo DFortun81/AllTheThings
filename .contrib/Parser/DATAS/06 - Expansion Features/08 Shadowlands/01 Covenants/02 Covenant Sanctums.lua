@@ -196,15 +196,11 @@ _.ExpansionFeatures =
 					i(181556, {	-- Tribute of the Court / Revendreth
 						["description"] = "Rewarded by completing a Calling based in Revendreth.",
 						["g"] = {
-							-- i(181224),	-- Avowed Arcanist's Staff / Zone Reward
-							-- i(182136),	-- Chilled to the Core [Shaman-Enhance] / Source Drop
-							-- i(182127),	-- Shake the Foundations [Shaman-Elemental] / Source Drop
-							-- i(181508),	-- Fortifying Ingredients [Monk-Brewmaster] / Source Drop
-							-- i(181740),	-- Evasive Stride [Monk] / Source
 							i(180248),	-- Ambassador's Reserve (Ember Court Bonus Time)
 							i(187512, {	-- Tome of Small Sins (TOY!)
 								["timeline"] = { "added 9.1.5" },
 							}),
+							i(187880),	-- Goat Soul
 							i(187862),	-- Snake Soul
 						},
 					}),
@@ -222,17 +218,11 @@ _.ExpansionFeatures =
 								["timeline"] = { "added 9.1.5" },
 							}),
 							i(187862),	-- Snake Soul
-							-- i(181435),	-- Calcualted Strikes [Monk-Windwalker] / Source Drop
-							-- i(181462),	-- Coordinated Offensive [Monk] / Source Drop
-							-- i(181742),	-- Walk with the Ox [Monk-Brewmaster] / Source Drop
-							-- i(181640),	-- Tumbling Technique [Monk] / Source Drop
 						},
 					}),
 					i(181372, {	-- Tribute of the Ascended / Bastion
 						["description"] = "Rewarded by completing a Calling based in Bastion.",
 						["g"] = {
-							-- i(181770),	-- Bone Marrow Hops [Monk] / Source Drop
-							-- i(182138),	-- Mind Devourer [Priest-Shadow]
 							i(187419, {	-- Steward's First Feather (TOY!)
 								["timeline"] = { "added 9.1.5" },
 							}),
@@ -253,10 +243,10 @@ _.ExpansionFeatures =
 						["description"] = "Rewarded by completing a 'Challenges' Calling based in Revendreth.",
 						["g"] = {
 							i(176850),	-- Blank Invitation
-							-- i(182348),	-- Lavish Harvest
 							i(187512, {	-- Tome of Small Sins (TOY!)
 								["timeline"] = { "added 9.1.5" },
 							}),
+							i(187880),	-- Goat Soul
 							i(187862),	-- Snake Soul
 						},
 					}),
@@ -274,16 +264,11 @@ _.ExpansionFeatures =
 								["timeline"] = { "added 9.1.5" },
 							}),
 							i(187862),	-- Snake Soul
-							-- i(181705),	-- Celestial Effervescence
-							-- i(182111),	-- Spiritual Resonance
 						},
 					}),
 					i(181741, {	-- Tribute of the Paragon / Bastion
 						["description"] = "Rewarded by completing a 'Challenges' Calling based in Bastion.",
 						["g"] = {
-							-- i(182145),	-- Heavy Rainfall
-							-- i(181944),	-- Resonant Words
-							-- i(181867),	-- Swift Penitence
 							i(187419, {	-- Steward's First Feather (TOY!)
 								["timeline"] = { "added 9.1.5" },
 							}),
