@@ -714,7 +714,7 @@ _.Zones =
 				}),
 				q(10663, {	-- The Hermit Smith (H)
 					["provider"] = { "n", 19333 },	-- Grokom Deatheye
-					["coord"] = { 29.8, 31.2, TEROKKAR_FOREST },
+					["coord"] = { 29.8, 31.2, SHADOWMOON_VALLEY },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 10627,	-- Capture the Weapons
 				}),
