@@ -636,7 +636,6 @@ _.Zones =
 				}),
 				q(47428, {	-- Kitty?
 					["provider"] = { "n", 122169 },	-- Abby Lewis
-					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 47289 },	-- Teddies and Tea
 					["coords"] = {	-- Based on which toy you pick up last.
 						{ 55.6, 38.6, DRUSTVAR },	-- Mr. Munchykins
@@ -1106,7 +1105,6 @@ _.Zones =
 				q(47289, {	-- Teddies and Tea
 					["provider"] = { "n", 121603 },	-- Abby Lewis
 					["coord"] = { 54.4, 39.3, DRUSTVAR },
-					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48622 },	-- The Vanishing Lord
 					-- May have additional sourceQuests; needs confirmation.  Picked up after turning in "And Justice For All."
 					-- Not required for "Drust Do It."
@@ -1286,18 +1284,18 @@ _.Zones =
 						{ "n", 143745 },	-- Guardsman Bray <Waycrest Guard>
 					},
 				}),
-				o(270917, {	-- Glenbrook Register
-					q(45079, {	-- The Village of Glenbrook (A)
-						["coord"] = { 55.6, 41.1, DRUSTVAR },
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = { 47428 },	-- Kitty?
-						-- Not required for "Drust Do It."
-					}),
+				q(45079, {	-- The Village of Glenbrook (A)
+					["provider"] = { "o", 270917 },	-- Glenbrook Register
+					["coord"] = { 55.6, 41.1, DRUSTVAR },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = { 47428 },	-- Kitty?
+					-- Not required for "Drust Do It."
 				}),
 				q(53464, {	-- The Village of Glenbrook (H)
 					["provider"] = { "o", 270917 },	-- Glenbrook Register
 					["coord"] = { 55.6, 41.1, DRUSTVAR },
 					["races"] = HORDE_ONLY,
+					["sourceQuests"] = { 47428 },	-- Kitty?
 				}),
 				q(48108, {	-- The Waycrest Daughter
 					["provider"] = { "n", 124417 },	-- Cyril White
