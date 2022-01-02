@@ -1583,6 +1583,7 @@ for key,value in pairs({
 	[232596] = "Gran hacha ancestral",	-- Ancestral Greataxe
 	[232597] = "Mochila goblin",	-- Goblin Pack
 	[232598] = "Suministros de Bonvapor",	-- Steamwheedle Supplies
+	[232599] = "Botín Grito de Guerra",	-- Warsong Spoils
 	[232621] = "Espora extraña",	-- Strange Spore
 	[232624] = "Cofre de Mikkal",	-- Mikkal's Chest
 	[232985] = "Suministros de Bonvapor",	-- Steamwheedle Supplies
@@ -1768,6 +1769,7 @@ for key,value in pairs({
 	[236407] = "Alijo de ogro antiguo",	-- Ancient Ogre Cache
 	[236483] = "Obsequio de los ancestros",	-- Gift of the Ancients
 	[236610] = "Regalo de Espíritu",	-- Spirit's Gift
+	[236633] = "Alijo de contrabandista",	-- Smuggler's Cache
 	[236693] = "Munición de la Horda de Hierro",	-- Iron Horde Munitions
 	[236715] = "Calavera extraña",	-- Odd Skull
 	[236755] = "Arcón polvoriento",	-- Dusty Lockbox
@@ -2051,6 +2053,7 @@ for key,value in pairs({
 	[250092] = "Arqueta",	-- Treasure Chest
 	[250097] = "Arqueta pequeña",	-- Small Treasure Chest
 	[250098] = "Arqueta pequeña",	-- Small Treasure Chest
+	[250102] = "Arqueta",	-- Treasure Chest
 	[250103] = "Arqueta pequeña",	-- Small Treasure Chest
 	[250104] = "Arqueta pequeña",	-- Small Treasure Chest
 	[250106] = "Arqueta pequeña",	-- Small Treasure Chest

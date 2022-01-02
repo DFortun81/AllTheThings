@@ -1579,6 +1579,7 @@ for key,value in pairs({
 	[232596] = "Machadão do Ancestral",	-- Ancestral Greataxe
 	[232597] = "Bolsa Goblínica",	-- Goblin Pack
 	[232598] = "Suprimentos de Bondebico",	-- Steamwheedle Supplies
+	[232599] = "Espólios do Brado Guerreiro",	-- Warsong Spoils
 	[232621] = "Esporo Estranho",	-- Strange Spore
 	[232624] = "Baú de Mikkal",	-- Mikkal's Chest
 	[232985] = "Suprimentos de Bondebico",	-- Steamwheedle Supplies
@@ -1764,6 +1765,7 @@ for key,value in pairs({
 	[236407] = "Tesouro Ôgrico Ancestral",	-- Ancient Ogre Cache
 	[236483] = "Dádiva dos Ancestrais",	-- Gift of the Ancients
 	[236610] = "Dádiva do Espírito",	-- Spirit's Gift
+	[236633] = "Esconderijo do Contrabandista",	-- Smuggler's Cache
 	[236693] = "Munições da Horda de Ferro",	-- Iron Horde Munitions
 	[236715] = "Caveira Estranha",	-- Odd Skull
 	[236755] = "Cofre Empoeirado",	-- Dusty Lockbox
@@ -2047,6 +2049,7 @@ for key,value in pairs({
 	[250092] = "Baú do Tesouro",	-- Treasure Chest
 	[250097] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
 	[250098] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
+	[250102] = "Baú do Tesouro",	-- Treasure Chest
 	[250103] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
 	[250104] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
 	[250106] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest

@@ -1577,6 +1577,7 @@ for key,value in pairs({
 	[232596] = "Grandascia Ancestrale",	-- Ancestral Greataxe
 	[232597] = "Pacco dei Goblin",	-- Goblin Pack
 	[232598] = "Rifornimenti degli Spargifumo",	-- Steamwheedle Supplies
+	[232599] = "Spoglie dei Cantaguerra",	-- Warsong Spoils
 	[232621] = "Strana Spora",	-- Strange Spore
 	[232624] = "Cassa di Mikkal",	-- Mikkal's Chest
 	[232985] = "Rifornimenti degli Spargifumo",	-- Steamwheedle Supplies
@@ -1762,6 +1763,7 @@ for key,value in pairs({
 	[236407] = "Antica Cassa degli Ogre",	-- Ancient Ogre Cache
 	[236483] = "Dono degli Antichi",	-- Gift of the Ancients
 	[236610] = "Dono dello Spirito",	-- Spirit's Gift
+	[236633] = "Cassa del Contrabbandiere",	-- Smuggler's Cache
 	[236693] = "Munizioni dell'Orda di Ferro",	-- Iron Horde Munitions
 	[236715] = "Teschio Strano",	-- Odd Skull
 	[236755] = "Scrigno Impolverato",	-- Dusty Lockbox
@@ -2045,6 +2047,7 @@ for key,value in pairs({
 	[250092] = "Cassa del Tesoro",	-- Treasure Chest
 	[250097] = "Cassa del Tesoro Piccola",	-- Small Treasure Chest
 	[250098] = "Cassa del Tesoro Piccola",	-- Small Treasure Chest
+	[250102] = "Cassa del Tesoro",	-- Treasure Chest
 	[250103] = "Cassa del Tesoro Piccola",	-- Small Treasure Chest
 	[250104] = "Cassa del Tesoro Piccola",	-- Small Treasure Chest
 	[250106] = "Cassa del Tesoro Piccola",	-- Small Treasure Chest

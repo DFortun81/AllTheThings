@@ -1580,6 +1580,7 @@ for key,value in pairs({
 	[232596] = "Großaxt der Ahnen",	-- Ancestral Greataxe
 	[232597] = "Goblinbündel",	-- Goblin Pack
 	[232598] = "Dampfdruckvorräte",	-- Steamwheedle Supplies
+	[232599] = "Beute des Kriegshymnenklans",	-- Warsong Spoils
 	[232621] = "Seltsame Spore",	-- Strange Spore
 	[232624] = "Mikkals Truhe",	-- Mikkal's Chest
 	[232985] = "Dampfdruckvorräte",	-- Steamwheedle Supplies
@@ -1765,6 +1766,7 @@ for key,value in pairs({
 	[236407] = "Uraltes Ogerversteck",	-- Ancient Ogre Cache
 	[236483] = "Gabe der Urtume",	-- Gift of the Ancients
 	[236610] = "Geistergabe",	-- Spirit's Gift
+	[236633] = "Schmugglerversteck",	-- Smuggler's Cache
 	[236693] = "Munition der Eisernen Horde",	-- Iron Horde Munitions
 	[236715] = "Seltsamer Schädel",	-- Odd Skull
 	[236755] = "Staubige Truhe",	-- Dusty Lockbox
@@ -2048,6 +2050,7 @@ for key,value in pairs({
 	[250092] = "Schatztruhe",	-- Treasure Chest
 	[250097] = "Kleine Schatztruhe",	-- Small Treasure Chest
 	[250098] = "Kleine Schatztruhe",	-- Small Treasure Chest
+	[250102] = "Schatztruhe",	-- Treasure Chest
 	[250103] = "Kleine Schatztruhe",	-- Small Treasure Chest
 	[250104] = "Kleine Schatztruhe",	-- Small Treasure Chest
 	[250106] = "Kleine Schatztruhe",	-- Small Treasure Chest
