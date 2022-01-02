@@ -270,7 +270,7 @@ root("Holidays", d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
 					i(141018, {	-- Sargerei Blood Vessel
 						["cost"] = { { "c", 1166, 150 }, },		-- 150x Timewarped Badge
 						["g"] = {
-							i(124124),	-- Blood of Sargeras
+							i(124124, {["u"]=0}),	-- Blood of Sargeras
 						},
 					}),
 					i(146943, {	-- Court of Farondis Insignia

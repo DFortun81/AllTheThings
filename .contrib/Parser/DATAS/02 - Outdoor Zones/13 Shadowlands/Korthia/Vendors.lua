@@ -103,7 +103,7 @@ _.Zones =
 						}),
 						i(184665, {	-- Chronicle of Lost Memories
 							["cost"] = { { "c", 1931, 2000 } },	-- 2,000x Catalogued Research
-							["description"] = "|cFFfe040fYou will not receive a Covenant specific Legendary if you are not part of said Covenant. Until 9.1.5 anyway.|r",
+							["description"] = "|cFFfe040fYou will not receive a Covenant specific Legendary if you are not part of said Covenant.|r",
 							["_drop"] = { "customCollect" },	-- this is Covenant tagged in various other locations
 							["sym"] = {
 								{ "select", "tierID", SL_TIER },	-- SL Tier

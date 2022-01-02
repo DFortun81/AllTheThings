@@ -8,7 +8,7 @@ _.Zones =
 		m(NORTHREND_DALARAN, {
 			n(QUESTS, {
 				n(REWARDS, {
-					i(46007,  {	-- Bag of Fishing Treasures
+					i(46007, {	-- Bag of Fishing Treasures
 						["description"] = "Fishing Daily Quest Reward",
 						["crs"] = { 28742 },	-- Marcia Chase
 						["g"] = {

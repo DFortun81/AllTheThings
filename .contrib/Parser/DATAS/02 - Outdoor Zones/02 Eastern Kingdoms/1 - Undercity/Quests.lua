@@ -19,6 +19,10 @@ _.Zones =
 						{ 56.8, 89.8, ORGRIMMAR },
 					},
 					["races"] = HORDE_ONLY,
+					["timeline"] = {
+						"added 6.1.0.19480",
+						"removed 9.0",	-- seems inadvertent, maybe blizzard will fix eventually
+					},
 					["g"] = {
 						i(122339, {	-- Ancient Heirloom Scabbard
 							["sym"] = { { "fill" } },	-- simply fill this item
@@ -85,6 +89,10 @@ _.Zones =
 						{ 56.8, 89.8, ORGRIMMAR },
 					},
 					["races"] = HORDE_ONLY,
+					["timeline"] = {
+						"added 6.1.0.19480",
+						"removed 9.0",	-- seems inadvertent, maybe blizzard will fix eventually
+					},
 					["g"] = {
 						i(122340, {	-- Timeworn Heirloom Armor Casing
 							["sym"] = { { "fill" } },	-- simply fill this item
@@ -244,6 +252,10 @@ _.Zones =
 						{ 56.8, 89.8, ORGRIMMAR },
 					},
 					["races"] = HORDE_ONLY,
+					["timeline"] = {
+						"added 6.1.0.19480",
+						"removed 9.0",	-- seems inadvertent, maybe blizzard will fix eventually
+					},
 					["g"] = {
 						i(122338, {	-- Ancient Heirloom Armor Casing
 							["sym"] = { { "fill" } },	-- simply fill this item
@@ -417,6 +429,10 @@ _.Zones =
 						{ 56.8, 89.8, ORGRIMMAR },
 					},
 					["races"] = HORDE_ONLY,
+					["timeline"] = {
+						"added 6.1.0.19480",
+						"removed 9.0",	-- seems inadvertent, maybe blizzard will fix eventually
+					},
 					["g"] = {
 						i(122341, {	-- Timeworn Heirloom Scabbard
 							["sym"] = { { "fill" } },	-- simply fill this item

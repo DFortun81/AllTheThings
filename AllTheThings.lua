@@ -1256,6 +1256,9 @@ local function GetProgressTextForTooltip(data)
 			(data.total - data.progress) == (costTotal - data.costProgress) then
 			return L["COST_TEXT"];
 		end
+		if data.collectible or data.trackable then
+			return GetProgressColorText(data.progress or 0, data.total).. " "..(data.collectible and GetCollectionIcon(data.collected) or (data.trackable and GetCompletionIcon(data.saved)));
+		end
 		return GetProgressColorText(data.progress or 0, data.total);
 	elseif data.collectible then
 		return GetCollectionText(data.collected);
@@ -1270,7 +1273,6 @@ CS:Hide();
 
 -- Source ID Harvesting Lib
 local DressUpModel = CreateFrame('DressUpModel');
-local NPCModelHarvester = CreateFrame('DressUpModel', nil, OffScreenFrame);
 local inventorySlotsMap = {	-- Taken directly from CanIMogIt (Thanks!)
 	["INVTYPE_HEAD"] = {1},
 	["INVTYPE_NECK"] = {2},
@@ -1708,7 +1710,7 @@ local function VerifySourceID(item)
 	return true;
 end
 app.IsComplete = function(o)
-	if o.total then return o.total == o.progress; end
+	if o.total and o.total > 0 then return o.total == o.progress; end
 	if o.collectible then return o.collected; end
 	if o.trackable then return o.saved; end
 end
@@ -3112,7 +3114,7 @@ ResolveSymbolicLink = function(o)
 				if #sym > 3 then
 					local dict = {};
 					for k=2,#sym,2 do
-						dict[sym[k] ] = sym[k + 1];
+						dict[sym[k]] = sym[k + 1];
 					end
 					for k=#searchResults,1,-1 do
 						local s = searchResults[k];
@@ -3902,7 +3904,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		local showCompleted = app.Settings:GetTooltipSetting("SourceLocations:Completed");
 		local wrap = app.Settings:GetTooltipSetting("SourceLocations:Wrapping");
 		local abbrevs = L["ABBREVIATIONS"];
-		for i,j in ipairs(group.g or group) do
+		for _,j in ipairs(group.g or group) do
 			if j.parent and not j.parent.hideText and j.parent.parent
 				and (showCompleted or not app.IsComplete(j))
 				and not app.HasCost(j, paramA, paramB)
@@ -4877,13 +4879,6 @@ local cacheMapID = function(group, mapID, coords)
 	elseif not coords then
 		print("multi-nested map",mapID,group.key,group.key and group[group.key]);
 	end
-	-- if (currentMaps[mapID] or 0) == 0 then
-	-- 	currentMaps[mapID] = 1;
-	-- 	CacheField(group, "mapID", mapID);
-	-- elseif not nestOnce then
-	-- 	print("multi-nested map",mapID,currentMaps[mapID],group.key,group.key and group[group.key])
-	-- 	currentMaps[mapID] = currentMaps[mapID] + 1;
-	-- end
 end
 local cacheObjectID = function(group, objectID)
 	-- WARNING: DEV ONLY START
@@ -6606,22 +6601,29 @@ local ObjectDefaults = {
 	["progress"] = 0,
 	["total"] = 0,
 };
+local ObjectFunctions = {
+	-- cloned groups will not directly have a parent, but they will instead have a sourceParent, so fill in with that instead
+	["parent"] = function(t)
+		return t.sourceParent;
+	end,
+	-- way easier to just be able to dynamically reference a hash whenever instead of needing to ensure it is created first
+	["hash"] = function(t)
+		return app.CreateHash(t);
+	end,
+};
 -- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)
 app.BaseObjectFields = function(fields, type)
+	local base = {
+		["__type"] = function(t)
+			return type;
+		end,
+	};
 	return {
 	__index = function(t, key)
-		_cache = rawget(fields, key);
-		-- cloned groups will not directly have a parent, but they will instead have a sourceParent, so fill in with that instead
-		if not _cache then
-			-- TODO: evaluate performance cost of 'missing' keys hitting this logic (i.e. 'collectible' on headers, etc.)
-			-- special re-direct keys possible for 'any' Type of object
-			if key == "parent" then return t.sourceParent; end
-			if key == "hash" then return app.CreateHash(t); end
-			if key == "__type" then return type; end
-			-- use default key value if existing
-			return ObjectDefaults[key];
-		end
-		return _cache and _cache(t);
+		_cache = rawget(fields, key) or rawget(ObjectFunctions, key) or rawget(base, key);
+		if _cache then return _cache(t); end
+		-- use default key value if existing
+		return ObjectDefaults[key];
 	end
 };
 end
@@ -6759,7 +6761,6 @@ local function CacheInfo(t, field)
 	if field then return t[field]; end
 end
 app.AchievementFilter = 4;
-app.AchievementCharCompletedIndex = 13;
 local fields = {
 	["key"] = function(t)
 		return "achievementID";
@@ -6788,7 +6789,7 @@ local fields = {
 	end,
 	["collected"] = function(t)
 		if app.CurrentCharacter.Achievements[t.achievementID] then return 1; end
-		if select(app.AchievementCharCompletedIndex, GetAchievementInfo(t.achievementID)) then
+		if select(13, GetAchievementInfo(t.achievementID)) then
 			app.CurrentCharacter.Achievements[t.achievementID] = 1;
 			ATTAccountWideData.Achievements[t.achievementID] = 1;
 			return 1;
@@ -7551,13 +7552,15 @@ local fields = {
 						collectible = collectible or app.CheckCollectible(t, ref, ref._cache);
 					end
 				end
+				-- This instance of the Thing (t) is not actually collectible for this character if it is under a saved, non-repeatable parent
+				if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved and not t.parent.repeatable then return false; end
 				return collectible;
 			else
 				cache.SetCachedField(t, "costCollectibles", app.EmptyTable);
 			end
 		else
-			-- Quick escape if current-character only and comes from something saved
-			if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return false; end
+			-- This instance of the Thing (t) is not actually collectible for this character if it is under a saved, non-repeatable parent
+			if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved and not t.parent.repeatable then return false; end
 			-- Use the common collectibility check logic
 			local collectible;
 			for _,ref in pairs(t.costCollectibles) do
@@ -9100,14 +9103,16 @@ local itemFields = {
 					end
 				end
 				-- app.DEBUG_PRINT = nil;
+				-- This instance of the Thing (t) is not actually collectible for this character if it is under a saved, non-repeatable parent
+				if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved and not t.parent.repeatable then return false; end
 				return collectible;
 			else
 				cache.SetCachedField(t, "costCollectibles", app.EmptyTable);
 			end
 			-- app.DEBUG_PRINT = nil;
 		else
-			-- Quick escape if current-character only and comes from something saved
-			if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return false; end
+			-- This instance of the Thing (t) is not actually collectible for this character if it is under a saved, non-repeatable parent
+			if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved and not t.parent.repeatable then return false; end
 			-- Use the common collectibility check logic
 			local collectible;
 			for _,ref in pairs(t.costCollectibles) do
@@ -11541,14 +11546,18 @@ local fields = {
 		return select(1, GetSpellLink(t.spellID));
 	end,
 	["collectible"] = function(t)
-		if app.CollectibleRecipes then
-			if app.AccountWideRecipes then
-				return true;
-			end
-			if t.requireSkill and (app.GetTradeSkillCache())[t.requireSkill] then
-				return true;
-			end
-		end
+		return app.CollectibleRecipes;
+		-- if app.CollectibleRecipes then
+		-- 	if app.AccountWideRecipes then
+		-- 		return true;
+		-- 	end
+		-- 	if t.requireSkill and (app.GetTradeSkillCache())[t.requireSkill] then
+		-- 		return true;
+		-- 	end
+		-- 	if t.c and contains(t.c, app.ClassIndex) then
+		-- 		return true;
+		-- 	end
+		-- end
 	end,
 	["collected"] = function(t)
 		if app.CurrentCharacter.Spells[t.spellID] then return 1; end

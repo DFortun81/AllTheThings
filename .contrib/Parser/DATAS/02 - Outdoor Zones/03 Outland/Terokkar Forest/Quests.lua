@@ -6,6 +6,27 @@ _.Zones =
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(TEROKKAR_FOREST, {
 			n(QUESTS, {
+				n(REWARDS, {
+					i(35348, { -- Bag of Fishing Treasures
+						i(35350),	-- Chuck's Bucket
+						i(33818),	-- Muckbreeeath's Bucket
+						i(34834),	-- Recipe: Captain Rumsey's Lager
+						i(35349),	-- Snarly's Bucket
+						i(33816),	-- Toothy's Bucket
+						i(33820, {	-- Weather-Beaten Fishing Hat
+							["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+						}),
+						i(34109),	-- Weather-Beaten Journal
+						i(34837),	-- The 2 Ring
+					}),
+					i(34863, {  -- Bag of Fishing Treasures
+						i(33820, {	-- Weather-Beaten Fishing Hat
+							["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+						}),
+						i(34109),	-- Weather-Beaten Journal
+						i(35350),	-- Chuck's Bucket
+					}),
+				}),
 				q(11665, {  -- Crocolisks in the City
 					["provider"] = { "n", 25580 },	-- Old Man Barlo
 					["coord"] = { 38.6, 12.8, TEROKKAR_FOREST },
@@ -14,12 +35,7 @@ _.Zones =
 					["requireSkill"] = FISHING,
 					["g"] = {
 						i(35348, { -- Bag of Fishing Treasures
-							i(35350),	-- Chuck's Bucket
-							i(33818),	-- Muckbreath's Bucket
-							i(35349),	-- Snarly's Bucket
-							i(33816),	-- Toothy's Bucket
-							i(33820),	-- Weather-Beaten Fishing Hat
-							i(34837),	-- The 2 Ring
+							["sym"] = { { "fill" } },	-- fill the content
 						}),
 						crit(1, {	-- Crocolisks in the City
 							["achievementID"] = 905,	-- Old Man Barlowned
@@ -33,7 +49,7 @@ _.Zones =
 					["requireSkill"] = FISHING,
 					["g"] = {
 						i(34863, {  -- Bag of Fishing Treasures
-							i(33820),  -- Weather-Beaten Fishing Hat
+							["sym"] = { { "fill" } },	-- fill the content
 						}),
 						crit(3, {	-- Felblood Fillet
 							["achievementID"] = 905,	-- Old Man Barlowned
@@ -47,7 +63,7 @@ _.Zones =
 					["requireSkill"] = FISHING,
 					["g"] = {
 						i(34863, {  -- Bag of Fishing Treasures
-							i(33820),  -- Weather-Beaten Fishing Hat
+							["sym"] = { { "fill" } },	-- fill the content
 						}),
 						crit(5, {	-- Shrimpin' Ain't Easy
 							["achievementID"] = 905,	-- Old Man Barlowned
@@ -61,7 +77,7 @@ _.Zones =
 					["requireSkill"] = FISHING,
 					["g"] = {
 						i(34863, {  -- Bag of Fishing Treasures
-							i(33820),  -- Weather-Beaten Fishing Hat
+							["sym"] = { { "fill" } },	-- fill the content
 						}),
 						crit(4, {	-- The One That Got Away
 							["achievementID"] = 905,	-- Old Man Barlowned
@@ -75,7 +91,7 @@ _.Zones =
 					["requireSkill"] = FISHING,
 					["g"] = {
 						i(34863, {  -- Bag of Fishing Treasures
-							i(33820),  -- Weather-Beaten Fishing Hat
+							["sym"] = { { "fill" } },	-- fill the content
 						}),
 						crit(2, {	-- Bait Bandits
 							["achievementID"] = 905,	-- Old Man Barlowned

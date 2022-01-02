@@ -17,8 +17,6 @@ _.Zones =
 						179768,	-- Consumption (Rare Elite version)
 					},
 					["g"] = {
-					--	triggered 64280 and 64281 on my first kill, on subsequent days it's no longer 'rare,' and no quests pop, and it's also not lootable and doesn't grant achievement credit.  probably bugged but i'm not sure which quest to attach
-					--	^ 64243 pops now instead / not sure what happened to previous 2 quests!
 						crit(3, {	-- Consumption
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
