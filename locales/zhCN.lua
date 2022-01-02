@@ -1578,6 +1578,7 @@ for key, value in pairs({
 	[232596] = "先祖巨斧",	-- Ancestral Greataxe
 	[232597] = "地精包裹",	-- Goblin Pack
 	[232598] = "热砂补给品",	-- Steamwheedle Supplies
+	[232599] = "战歌战利品",	-- Warsong Spoils
 	--TODO: [232621] = "Strange Spore",	-- Strange Spore
 	[232624] = "米卡尔的箱子",	-- Mikkal's Chest
 	[232985] = "热砂补给品",	-- Steamwheedle Supplies
@@ -1763,6 +1764,7 @@ for key, value in pairs({
 	[236407] = "上古食人魔文物",	-- Ancient Ogre Cache
 	--TODO: [236483] = "Gift of the Ancients",	-- Gift of the Ancients
 	--TODO: [236610] = "Spirit's Gift",	-- Spirit's Gift
+	[236633] = "走私者的箱子",	-- Smuggler's Cache
 	[236693] = "钢铁部落军需品",	-- Iron Horde Munitions
 	[236715] = "奇怪的颅骨",	-- Odd Skull
 	[236755] = "尘封的宝箱",	-- Dusty Lockbox
@@ -2046,6 +2048,7 @@ for key, value in pairs({
 	[250092] = "宝箱",	-- Treasure Chest
 	[250097] = "小宝箱",	-- Small Treasure Chest
 	[250098] = "小宝箱",	-- Small Treasure Chest
+	[250102] = "宝箱",	-- Treasure Chest
 	[250103] = "小宝箱",	-- Small Treasure Chest
 	[250104] = "小宝箱",	-- Small Treasure Chest
 	[250106] = "小宝箱",	-- Small Treasure Chest

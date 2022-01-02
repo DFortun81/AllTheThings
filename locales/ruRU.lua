@@ -1565,6 +1565,7 @@ for key,value in pairs({
 	[232596] = "Большой топор предков",	-- Ancestral Greataxe
 	[232597] = "Рюкзак гоблина",	-- Goblin Pack
 	[232598] = "Припасы Хитрой Шестеренки",	-- Steamwheedle Supplies
+	[232599] = "Трофеи Песни Войны",	-- Warsong Spoils
 	[232621] = "Странная спора",	-- Strange Spore
 	[232624] = "Сундук Миккала",	-- Mikkal's Chest
 	[232985] = "Припасы Хитрой Шестеренки",	-- Steamwheedle Supplies
@@ -1750,6 +1751,7 @@ for key,value in pairs({
 	[236407] = "Древний огрский тайник",	-- Ancient Ogre Cache
 	[236483] = "Дар древних",	-- Gift of the Ancients
 	[236610] = "Дар духа",	-- Spirit's Gift
+	[236633] = "Тайник контрабандиста",	-- Smuggler's Cache
 	[236693] = "Боеприпасы Железной Орды",	-- Iron Horde Munitions
 	[236715] = "Странный череп",	-- Odd Skull
 	[236755] = "Пыльный сейф",	-- Dusty Lockbox
@@ -2033,6 +2035,7 @@ for key,value in pairs({
 	[250092] = "Сундук с сокровищами",	-- Treasure Chest
 	[250097] = "Маленький сундук с сокровищами",	-- Small Treasure Chest
 	[250098] = "Маленький сундук с сокровищами",	-- Small Treasure Chest
+	[250102] = "Сундук с сокровищами",	-- Treasure Chest
 	[250103] = "Маленький сундук с сокровищами",	-- Small Treasure Chest
 	[250104] = "Маленький сундук с сокровищами",	-- Small Treasure Chest
 	[250106] = "Маленький сундук с сокровищами",	-- Small Treasure Chest

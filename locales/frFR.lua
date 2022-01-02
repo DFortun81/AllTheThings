@@ -1578,6 +1578,7 @@ for key,value in pairs({
 	[232596] = "Bardiche ancestrale",	-- Ancestral Greataxe
 	[232597] = "Sac à dos gobelin",	-- Goblin Pack
 	[232598] = "Ravitaillement de Gentepression",	-- Steamwheedle Supplies
+	[232599] = "Butin des Chanteguerres",	-- Warsong Spoils
 	[232621] = "Spore étrange",	-- Strange Spore
 	[232624] = "Coffre de Mikkal",	-- Mikkal's Chest
 	[232985] = "Ravitaillement de Gentepression",	-- Steamwheedle Supplies
@@ -1763,6 +1764,7 @@ for key,value in pairs({
 	[236407] = "Ancienne cache ogre",	-- Ancient Ogre Cache
 	[236483] = "Présent des anciens",	-- Gift of the Ancients
 	[236610] = "Présent de l’esprit",	-- Spirit's Gift
+	[236633] = "Cache de contrebandier",	-- Smuggler's Cache
 	[236693] = "Munitions de la Horde de Fer",	-- Iron Horde Munitions
 	[236715] = "Crâne étrange",	-- Odd Skull
 	[236755] = "Coffret poussiéreux",	-- Dusty Lockbox
@@ -2046,6 +2048,7 @@ for key,value in pairs({
 	[250092] = "Coffre au trésor",	-- Treasure Chest
 	[250097] = "Petit coffre au trésor",	-- Small Treasure Chest
 	[250098] = "Petit coffre au trésor",	-- Small Treasure Chest
+	[250102] = "Coffre au trésor",	-- Treasure Chest
 	[250103] = "Petit coffre au trésor",	-- Small Treasure Chest
 	[250104] = "Petit coffre au trésor",	-- Small Treasure Chest
 	[250106] = "Petit coffre au trésor",	-- Small Treasure Chest

@@ -1579,6 +1579,7 @@ for key,value in pairs({
 	[232596] = "선조의 거대도끼",	-- Ancestral Greataxe
 	[232597] = "고블린 배낭",	-- Goblin Pack
 	[232598] = "스팀휘들 보급품",	-- Steamwheedle Supplies
+	[232599] = "전쟁노래 전리품",	-- Warsong Spoils
 	[232621] = "이상한 포자",	-- Strange Spore
 	[232624] = "미크칼의 상자",	-- Mikkal's Chest
 	[232985] = "스팀휘들 보급품",	-- Steamwheedle Supplies
@@ -1764,6 +1765,7 @@ for key,value in pairs({
 	[236407] = "고대 오우거 보관함",	-- Ancient Ogre Cache
 	--TODO: [236483] = "Gift of the Ancients",	-- Gift of the Ancients
 	--TODO: [236610] = "Spirit's Gift",	-- Spirit's Gift
+	[236633] = "밀수업자의 보관함",	-- Smuggler's Cache
 	[236693] = "강철 호드 탄약",	-- Iron Horde Munitions
 	[236715] = "이상한 해골",	-- Odd Skull
 	[236755] = "먼지투성이 금고",	-- Dusty Lockbox
@@ -2047,6 +2049,7 @@ for key,value in pairs({
 	[250092] = "보물 상자",	-- Treasure Chest
 	[250097] = "작은 보물 상자",	-- Small Treasure Chest
 	[250098] = "작은 보물 상자",	-- Small Treasure Chest
+	[250102] = "보물 상자",	-- Treasure Chest
 	[250103] = "작은 보물 상자",	-- Small Treasure Chest
 	[250104] = "작은 보물 상자",	-- Small Treasure Chest
 	[250106] = "작은 보물 상자",	-- Small Treasure Chest
