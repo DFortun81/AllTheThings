@@ -1,38 +1,21 @@
 # AllTheThings
 
-## [SL-2.6.6](https://github.com/DFortun81/AllTheThings/tree/SL-2.6.6) (2021-12-26)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.6.5...SL-2.6.6) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [SL-2.6.7](https://github.com/DFortun81/AllTheThings/tree/SL-2.6.7) (2022-01-02)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.6.6...SL-2.6.7) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
-
-### Highlights of this update
-
-#### Winter Veil (fixes) 🎄
-
-Yes, more fixes again!
-
-- "New Year Celebrations!" marked as a one-time quest (but look out if it actually is on the 31st).
-- Fixed some wrong quests, removed some removed from game quests.
-- Added new toy, heirloom and achievement.
-- Added Hearthstations and Greatfather Winter's Hearthstone to the Stolen Present.
-- Stolen Present drops for lvl 50+ this year! (It was only 60s last year)
-
-Have a nice New Year, everyone! 🎅
-
-#### Warlords of Draenor quests
-
-Added/fixed and moved lots of WoD quests.
-
-#### Big Chinese localization update
-
-Thanks to @adavak!
 
 ### Notable changes:
 
-- Fixed Kyrian Path of Ascension Crafting causing error.
-- Items which are collectible by being related to Factions now show properly for certain Factions in some situations (i.e. Scryer/Aldor items when not using Account-wide reputations or only exalted with one faction).
-- Adjusted collectible logic for Recipes to additionally check if the current character knows the respective recipe group if Account-Wide collection for Recipes is not active (since you can only collect recipes for professions you currently know if you only expect to collect on the current character).
-- SL World Bosses will now show the Common Boss Drops in ATT windows as well (i.e. Alpaca Soul/Conduits showing in `/attwq`).
-- New druid form glyphs added to the Inscription craftables (and odd one out quest in Stormwind).
-- Added Blinky, new shop pet pet.
-- Fixed Firelands Tier Tokens N/H so that they don't cross mingle without regard to their difficulty differences.
+- We won't force a location update after loading screens anymore. If you encounter minilist not updating after loading screen, report it on our Discord server.
+- Added a bit of logic for popout ATT windows to remove themselves from the window cache after being closed for over 5 minutes (allows for memory clean up and faster update processing when someone has opened many windows which have later been closed and unused for some time, especially if they have "Ad-Hoc Updates" off).
+- You should no longer see currencies under groups that you have already completed (i.e. pet charms from a one-time Treasure). This does not apply when you are in Account mode.
+- Added an icon to tooltips of groups which contain other collectibles, and themselves are collectible or trackable (i.e. be able to tell in the tooltip if you've killed a Rare or otherwise collectible NPC, or container, etc.) Feel free to comment on whether the position should be adjusted or modify the placement within the tooltip.
+- Fixed Source locations not showing in tooltips in some situations.
+- Recipe collectible status was rolled back to previous implementation due to some bugs.
+- Fixed a few mounts so that they show up in the main list dynamic category. We still have some mounts (and other categories, like toys) missing from these new lists so feel free to report which ones are missing.
+- Apparently various dungeons were set to show the wrong item information in the ATT lists for Heroic difficulties. This is rather, uh, not helpful. Now fixed.
+- More WoD (and other) quests.
+- Fixed showing all of BC timewalking content inside of Shattrath.
+- Gave the BC TW vendor proper coords so it does show up individually as expected.
+- Tome of Burning Jewels should now show possible recipe unlocks.
 - Other fixes.
