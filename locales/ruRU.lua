@@ -217,7 +217,8 @@ local L = app.L;
 	L.NESTED_QUEST_REQUIREMENTS = "Вложенные Требования Заданий";
 	L.MAIN_LIST_REQUIRES_REFRESH = "[Откройте Основной список, чтобы обновить прогресс]";
 	L.DOES_NOT_CONTRIBUTE_TO_PROGRESS = "|cffe08207Эта группа и её содержимое не влияют на прогресс данного окна!|r";
-
+	L.CURRENCY_NEEDED_TO_BUY = "Необходимо для покупки Не Собранных Штучек: ";
+	
 	-- Item Filter Window
 		L.ITEM_FILTER_TEXT = "Фильтровать предметы";
 		L.ITEM_FILTER_DESCRIPTION = "Вы можете отфильтровать предметы в ATT при помощи фильтра.";
