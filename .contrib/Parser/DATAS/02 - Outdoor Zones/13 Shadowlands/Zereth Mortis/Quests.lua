@@ -759,6 +759,141 @@ root("Zones", m(SHADOWLANDS, {
 				["provider"] = { "n", 180989 },	-- Hanoa the Exile
 				["coord"] = { 42.7, 31.4, ZERETH_MORTIS },
 			}),
+
+		-- Glimmercane Questline? Unknown when its suppose to unlock? Available after Sopranian Understanding
+			q(64641, {	-- Mysterious Greenery
+				--["sourceQuests"] = {  },
+				["provider"] = { "n", 180799 },	-- Glimmercane
+				["coord"] = { 55.3, 64.4, ZERETH_MORTIS },
+			}),
+			q(64642, {	-- Clearing the Ruins
+				["sourceQuests"] = { 64641 },	-- Mysterious Greenery
+				["provider"] = { "n", 179900 },	-- Koh Shira
+				["coord"] = { 60.5, 70, ZERETH_MORTIS },
+			}),
+			q(64643, {	-- Scavenging A Solution
+				["sourceQuests"] = { 64641 },	-- Mysterious Greenery
+				["provider"] = { "n", 179923 },	-- Koh Riva
+				["coord"] = { 60.5, 70.1, ZERETH_MORTIS },
+			}),
+			q(64644, {	-- A Splash of the Eternal
+				["sourceQuests"] = {
+					64642,	-- Clearing the Ruins
+					64643,	-- Scavenging A Solution
+				},
+				["provider"] = { "n", 180702 },	-- Glimmercane
+				["coord"] = { 60.7, 69.8, ZERETH_MORTIS },
+			}),
+			q(64645, {	-- Moment of Truth
+				["sourceQuests"] = { 64644 },	-- A Splash of the Eternal
+				["provider"] = { "n", 179900 },	-- Koh Shira
+				["coord"] = { 60.5, 70.1, ZERETH_MORTIS },
+			}),
+			q(64646, {	-- Ramping Up
+				["sourceQuests"] = { 64645 },	-- Moment of Truth
+				["provider"] = { "n", 180797 },	-- Koh Shira
+				["coord"] = { 63.2, 73.1, ZERETH_MORTIS },
+			}),
+			q(64647, {	-- Strange Gears
+				["sourceQuests"] = { 64645 },	-- Moment of Truth
+				--["provider"] = Automa on the Floor
+				["coord"] = { 29.3, 15.3, 2027 },
+			}),
+			q(64648, {	-- Reap What We Have Sown
+				["sourceQuests"] = {
+					64646,	-- Ramping Up
+					64647,	-- Strange Gears
+				},
+				["provider"] = { "n", 180800 },	-- Koh Shira
+				["coord"] = { 39.3, 55.5, 2027 },
+			}),
+			q(64649, {	-- A Mountain of Work to Do
+				["description"] = "Unable to accept this quest atm on ptr... but still showing mark on map.",
+				["sourceQuests"] = { 64648 },	-- Reap What We Have Sown
+				--["provider"] = { "n", 180797 },	-- Koh Shira
+				--["coord"] = { 63.2, 73.1, ZERETH_MORTIS },
+			}),
+		-- Tahli Questline Available with Sopranian Understanding
+			q(64829, {	-- Finding Tahli
+				--["sourceQuests"] = {  },
+				["provider"] = { "n", 180630 },	-- Elder Amir
+				["coord"] = { 61.4, 51.5, ZERETH_MORTIS },
+			}),
+			q(64745, {	-- Selfless Preservation
+				["sourceQuests"] = { 64829 },	-- Finding Tahli
+				["provider"] = { "n", 181273 },	-- Tahli
+				["coord"] = { 63.9, 40.8, ZERETH_MORTIS },
+			}),
+			q(64761, {	-- Core Competency
+				["sourceQuests"] = { 64745 },	-- Selfless Preservation
+				["provider"] = { "n", 181273 },	-- Tahli
+				["coord"] = { 61.2, 37.6, ZERETH_MORTIS },
+			}),
+			q(64759, {	-- Junk's Not Dead
+				["sourceQuests"] = { 64745 },	-- Selfless Preservation
+				["provider"] = { "n", 181273 },	-- Tahli
+				["coord"] = { 61.2, 37.6, ZERETH_MORTIS },
+			}),
+			q(64762, {	-- Revival of the Fittest
+				["sourceQuests"] = {
+					64761,	-- Core Competency
+					64759,	-- Junk's Not Dead
+				},
+				["provider"] = { "n", 181273 },	-- Tahli
+				["coord"] = { 61.2, 37.6, ZERETH_MORTIS },
+			}),
+			q(64763, {	-- Maintenance Mode
+				["sourceQuests"] = { 64762 },	-- Revival of the Fittest
+				["provider"] = { "n", 180610 },	-- Kodah
+				["coord"] = { 61.2, 37.6, ZERETH_MORTIS },
+			}),
+			q(64766, {	-- Access Request
+				["sourceQuests"] = { 64762 },	-- Revival of the Fittest
+				["provider"] = { "n", 180610 },	-- Kodah
+				["coord"] = { 61.2, 37.6, ZERETH_MORTIS },
+			}),
+			q(64767, {	-- The Final Song
+				["sourceQuests"] = {
+					64763,	-- Maintenance Mode
+					64766,	-- Access Request
+				},
+				["provider"] = { "n", 180610 },	-- Kodah
+				["coord"] = { 68.8, 29.7, ZERETH_MORTIS },
+			}),
+			q(65420, {	-- Judgment Call
+				["sourceQuests"] = { 64767 },	-- The Final Song
+				["provider"] = { "n", 181273 },	-- Tahli
+				["coord"] = { 70.1, 28.4, ZERETH_MORTIS },
+			}),
+			q(65426, {	-- The Lost Component
+				["sourceQuests"] = { 65420 },	-- Judgment Call
+				["provider"] = { "n", 181273 },	-- Tahli
+				["coord"] = { 61.5, 51.6, ZERETH_MORTIS },
+			}),
+			q(65427, {	-- A New Architect
+				["sourceQuests"] = { 65426 },	-- The Lost Component
+				["provider"] = { "n", 181135 },	-- Servitor Interface
+				["coord"] = { 70.2, 28.6, ZERETH_MORTIS },
+			}),
+			q(65380, {	-- Schematic Reassimilation: Deathrunner
+				["sourceQuests"] = { 65427 },	-- A New Architect
+				["provider"] = { "i", 189457 },	-- Schematic: Deathrunner
+			}),
+
+
+
+			-- Protoform Questline?
+			q(65419, {	-- Protoform Synthesis
+				--["sourceQuests"] = {  },
+				["provider"] = { "n", 181059 },	-- Pocopoc
+				--["coord"] = Everywhere?
+			}),
+			q(65401, {	-- Schematic Reassimilation: Adorned Vombata
+				["description"] = "Drops from Treasure Chest.",
+				--["sourceQuests"] = {  },
+				["provider"] = { "i", 189478 },	-- Schematic: Adorned Vombata
+				["coord"] = { 37.2, 78.2, ZERETH_MORTIS },
+			}),
 		}),
 		n(QUESTS, sharedData({ ["isDaily"] = true }, {
 			q(65268, {	-- Bzzzzt!
@@ -776,6 +911,17 @@ root("Zones", m(SHADOWLANDS, {
 				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
 				["provider"] = { "n", 180289 },	-- Mai Soh
 				["coord"] = { 58.3, 50, ZERETH_MORTIS },
+			}),
+			q(65256, {	-- Cluck, Cluck, Boom
+				--["sourceQuests"] = { 65305 },	-- The Way Forward (Chap 3)
+				["provider"] = { "n", 177958 },	-- Firim
+				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
+			}),
+			q(65363, {	-- Dangerous State
+				["description"] = "This Daily is available after researching Altonian Understanding",
+				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
+				["provider"] = { "n", 184434 },	-- Mai Ber
+				["coord"] = { 58.4, 49.7, ZERETH_MORTIS },
 			}),
 			q(65264, {	-- Operation: Relocation
 				--["sourceQuests"] = {  },	Available After Chap 2
@@ -824,6 +970,12 @@ root("Zones", m(SHADOWLANDS, {
 				["provider"] = { "n", 180289 },	-- Mai Soh
 				["coord"] = { 58.3, 50, ZERETH_MORTIS },
 			}),
+			q(65445, {	-- Necessary Resourcing
+				["description"] = "This Daily is available after researching Altonian Understanding",
+				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
+				["provider"] = { "n", 184434 },	-- Mai Ber
+				["coord"] = { 58.4, 49.7, ZERETH_MORTIS },
+			}),
 			q(65362, {	-- Not of the Body
 				["description"] = "This Daily is available after researching Altonian Understanding",
 				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
@@ -842,6 +994,11 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
 			}),
 			q(65142, {	-- Portal Play
+				--["sourceQuests"] = { 65305 },	-- The Way Forward (Chap 3)
+				["provider"] = { "n", 177958 },	-- Firim
+				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
+			}),
+			q(64977, {	-- Step Into the Ring
 				--["sourceQuests"] = { 65305 },	-- The Way Forward (Chap 3)
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
@@ -870,8 +1027,12 @@ root("HiddenQuestTrigger", {
 	q(63850),	-- Triggered when enter ZM (Might be WQ). Triggered again today while running around in ZM
 	q(63766),	-- Triggered when Exploring (Might have to do with The Matriarch(183505))
 	q(65621),	-- Triggered when HS to ZM
+
 	--q(64880),	-- Triggered in Oribos?
 	--q(65144),	-- Firims Cave?
+	--q(65539),	-- Flying unlock??
+
+
 	-- Gravid Repose
 	q(65330),	-- Interior Locus Arrangement at Gravid Repose
 	q(65337),	-- First Locus arrangement at Gravid Repose
@@ -884,10 +1045,34 @@ root("HiddenQuestTrigger", {
 	-- RP
 	q(65233),	-- RP after Jiro to Hero(65219)
 	q(65571),	-- RP after Chap 5 with Taelia
+	q(65619),	-- RP after Tahli Questline
 	--q(65028),	-- RP during q(64875, {	-- Something Wonderful??
 
-	-- Jiro Buffs?
-	--q(65167),	-- Echoed Jiro Nascii(183263) with spellID(362023) Same HQTs from different Jiros (42.7 44.8)
-	--q(65166),	-- Echoed Jiro Genesii(184943) with SpellID(362022 ) 45.4 38.8
-	--q(65144),	-- Echoed Jiro Creatii(184939) with SpellID(361831)  54.5 55.8
+	--[[ Jiro Buffs?
+	q(65167),	-- Echoed Jiro Nascii(183263) with spellID(362023) Same HQTs from different Jiros (42.7 44.8) Stackable ?
+		42.9, 31.9 (184944)
+		42.8, 44.8 (184944)
+		69.7, 33.5 (184947)
+		59.7, 37.4 (184947)
+		54.2, 83.9 (184941)
+		57.1, 61.4 (184941)
+		33.2, 54.2 (183263) (?)
+		43.8, 64.5 (183263) (?)
+	q(65166),	-- Echoed Jiro Genesii(184943) with SpellID(362022) 45.4 38.8
+		45.4, 38.8 (184943)
+		38,3б 32,2 (184943)
+		52.5, 29.0 (184946)
+		63.1, 19.5 (184946)
+		63.7, 56.1 (184940)
+		49.8, 76.5 (184940)
+		34.6, 56.4 (183262)
+		46.7, 67.5 (183262)
+	q(65144),	-- Echoed Jiro Creatii(184939) with SpellID(361831)  54.5 55.8
+		39.1, 42.6 (184492)
+		56.7, 26.1 (184945)
+		40.5, 60.8 (181571)
+		54.5, 55.8 (184939)
+		52.4, 61.6 (184939)
+		53.6, 43.8 (184945)
+	--]]
 });

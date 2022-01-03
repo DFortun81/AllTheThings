@@ -27,6 +27,9 @@ root("Zones", m(SHADOWLANDS, {
 					q(65230, {	-- Bot-Any
 						["coord"] = { 47.4, 80.3, ZERETH_MORTIS },
 					}),
+					q(64974, {	-- Clean Up, Automa Aisle
+						["coord"] = { 57.6, 47.5, ZERETH_MORTIS },
+					}),
 					q(65244, {	-- Devourable
 						["coord"] = { 42.1, 71, ZERETH_MORTIS },
 					}),
@@ -48,6 +51,9 @@ root("Zones", m(SHADOWLANDS, {
 					q(65262, {	-- Save the Vombata
 						["coord"] = { 43.5, 63.7, ZERETH_MORTIS },
 					}),
+					q(65252, {	-- Stomp It Now
+						["coord"] = { 37.9, 39.9, ZERETH_MORTIS },
+					}),
 					q(65234, {	-- Sweet On Them
 						["coord"] = { 63, 58, ZERETH_MORTIS },
 					}),
@@ -58,11 +64,17 @@ root("Zones", m(SHADOWLANDS, {
 					q(65417, {	-- Connecting It All (Same Name)
 						["coord"] = { 55, 48, ZERETH_MORTIS },
 					}),
+					q(65416, {	-- Connecting It All (Same Name)
+						["coord"] = { 53, 45.6, ZERETH_MORTIS },
+					}),
 					q(65408, {	-- Pattern Recognition
 						["coord"] = { 53.2, 86.8, ZERETH_MORTIS },
 					}),
 					q(65402, {	-- Pattern Recognition
 						["coord"] = { 32, 52.6, ZERETH_MORTIS },
+					}),
+					q(65407, {	-- Pattern Recognition
+						["coord"] = { 52.4, 57.1, ZERETH_MORTIS },
 					}),
 					q(65414, {	-- Perplexing Problem
 						["coord"] = { 63.1, 36.5, ZERETH_MORTIS },
