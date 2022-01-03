@@ -495,6 +495,21 @@ _.Zones =
 					["provider"] = { "n", 21700 },	-- Akama
 					["sourceQuests"] = { 10707 },	-- The Ata'mal Terrace
 					["coord"] = { 58.1, 48.1, SHADOWMOON_VALLEY },
+					["altQuests"] = { 11052 },	-- Akama's Promise
+					["groups"] = {
+						i(30932),	-- Akama's Sash
+						i(30999),	-- Ashtongue Blade
+						i(31000),	-- Bloodwarder's Rifle
+						i(30943),	-- Verdant Gloves
+						i(30984),	-- Spellbreaker's Buckler
+						i(31417),	-- Staff of the Ashtongue Deathsworn
+					},
+				}),
+				q(11052, {	-- Akama's Promise (awarded "Akama's Promise" criteria)
+					["provider"] = { "n", 21700 },	-- Akama
+					["sourceQuests"] = { 10707 },	-- The Ata'mal Terrace
+					["coord"] = { 58.1, 48.1, SHADOWMOON_VALLEY },
+					["altQuests"] = { 10708 },	-- Akama's Promise
 					["groups"] = {
 						i(30932),	-- Akama's Sash
 						i(30999),	-- Ashtongue Blade
@@ -1402,7 +1417,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(93387),	-- Akama's Seal of Courage
 		}),
 		-- #endif
-		q(11052),	-- OLD Akama's Promise (awarded "Akama's Promise" criteria)
 	}),
 });
 -- #endif

@@ -476,11 +476,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 29795 },	-- Koltira Deathweaver
 					["description"] = "On Orgrim's Hammer.",
-					["sourceQuests"] = {
-						13351,	-- Sneak Preview
-						-- TODO:: confirm below:
-						13278,	-- Coprous the Defiled
-					},
+					["sourceQuests"] = { 13351 },	-- Sneak Preview
 				}),
 				q(13353, {	-- Drag and Drop (H) (daily)
 					["races"] = HORDE_ONLY,
