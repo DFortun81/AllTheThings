@@ -78,7 +78,7 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 117573 }, -- Dread Commander Thalanor
 							["coord"] = { 43.4, 62.7, BROKEN_SHORE },
 							["classes"] = { DEATHKNIGHT },
-							["sourceQuest"] = 46246, -- Strike Them Down
+							["sourceQuests"] = { 46251 },	-- Shard Times
 						}),
 						q(46030, {	-- An Urgent Warning
 							["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2

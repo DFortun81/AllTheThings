@@ -490,7 +490,7 @@ _.ExpansionFeatures =
 							["lvl"] = 103,
 						}),
 						q(46333, {	-- Livin' on the Ledge
-							["sourceQuests"] = { 46246 },	-- Strike Them Down
+							["sourceQuests"] = { 46251 },	-- Shard Times
 							["provider"] = { "n", 118316 },	-- Illidari Enforcer
 							["classes"] = { DEMONHUNTER },
 							["coord"] = { 44.0, 62.7, BROKEN_SHORE },

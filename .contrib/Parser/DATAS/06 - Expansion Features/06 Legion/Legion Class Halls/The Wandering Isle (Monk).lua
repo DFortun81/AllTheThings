@@ -351,10 +351,11 @@ _.ExpansionFeatures =
 							["maps"] = { VALSHARAH },
 						}),
 						q(46353, {	-- Master Who?
+							-- TODO: are these SQ required for each class
 							["sourceQuests"] = {
 								46832,	-- Aalgen Point
 								46245,	-- Begin Construction
-								46246,	-- Strike Them Down
+								46251,	-- Shard Times
 								46845,	-- Vengeance Point
 							},
 							["provider"] = { "n", 118214 },	-- Yiska

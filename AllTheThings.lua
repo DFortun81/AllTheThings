@@ -3334,6 +3334,9 @@ ResolveSymbolicLink = function(o)
 			-- if app.DEBUG_PRINT then print("Symbolic Link for", o.key,o.key and o[o.key], "contains", #cloned, "values after filtering.") end
 			-- if any symlinks are left at the lowest level, go ahead and fill them
 			for _,s in ipairs(cloned) do
+				-- in symlinking a Thing to another Source, we are effectively declaring that it is Sourced within this Source, for the specific scope
+				s.sourceParent = nil;
+				s.parent = nil;
 				FillSymLinks(s);
 			end
 			return cloned;
@@ -5282,7 +5285,7 @@ local function SearchForLink(link)
 			end
 		end
 	else
-		local kind, id, paramA, paramB = strsplit(":", link);
+		local kind, id = strsplit(":", link);
 		kind = string.lower(kind);
 		if string.sub(kind,1,2) == "|c" then
 			kind = string.sub(kind,11);
@@ -5291,7 +5294,6 @@ local function SearchForLink(link)
 			kind = string.sub(kind,3);
 		end
 		if id then id = tonumber(select(1, strsplit("|[", id)) or id); end
-		--print(kind, id, paramA, paramB);
 		--print(string.gsub(string.gsub(link, "|c", "c"), "|h", "h"));
 		if kind == "itemid" then
 			return SearchForField("itemID", id);
@@ -20564,8 +20566,6 @@ SlashCmdList["AllTheThings"] = function(cmd)
 				print("Harvesting...");
 				local totalItems = 200000;
 				local itemsPerYield = 25;
-				local count = 0;
-				local retries = 0;
 				local counts = {};
 				local items = GetDataMember("ItemDB", {});
 				for itemID=1,totalItems do

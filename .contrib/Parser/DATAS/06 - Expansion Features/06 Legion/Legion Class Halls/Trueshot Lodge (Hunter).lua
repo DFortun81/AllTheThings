@@ -31,7 +31,7 @@ _.ExpansionFeatures =
 							["maps"] = { LEGION_DALARAN },
 						}),
 						q(46336, {	-- A Golden Ticket
-							["sourceQuests"] = { 46246 },	-- Strike Them Down
+							["sourceQuests"] = { 46251 },	-- Shard Times
 							["classes"] = { HUNTER },
 							["provider"] = { "n", 117810 },	-- Nimi Brightcastle
 							["coord"] = { 43.8, 63.2, BROKEN_SHORE },

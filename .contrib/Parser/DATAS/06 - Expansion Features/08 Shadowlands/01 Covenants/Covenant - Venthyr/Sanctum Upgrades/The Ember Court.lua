@@ -2065,6 +2065,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									}),
 									i(187133, {	-- Bewitching Little Hat
 										["cost"] = { { "c", 1820, 25 } },	-- 25x Infused Ruby
+										["u"] = HALLOWS_END,
 									}),
 									i(181517, {	-- Building: Dredger Pool
 										["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima

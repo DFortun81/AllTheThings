@@ -637,7 +637,7 @@ _.ExpansionFeatures =
 							["maps"] = { 736 },	-- The Nexus Vault
 						}),
 						q(45788, {	-- The Speaker Awaits
-							["sourceQuests"] = { 46246 },	-- Strike Them Down
+							["sourceQuests"] = { 46251 },	-- Shard Times
 							["classes"] = { PRIEST },
 							["maps"] = { BROKEN_SHORE },
 						}),
