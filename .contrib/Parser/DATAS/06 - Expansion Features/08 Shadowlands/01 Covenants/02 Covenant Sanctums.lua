@@ -191,6 +191,7 @@ _.ExpansionFeatures =
 								["timeline"] = { "added 9.1.5" },
 							}),
 							i(187880),	-- Goat Soul
+							i(187862),	-- Snake Soul
 						},
 					}),
 					i(181556, {	-- Tribute of the Court / Revendreth
@@ -217,6 +218,7 @@ _.ExpansionFeatures =
 							i(187913, {	-- Apprentice Slimemancer's Boots (TOY!)
 								["timeline"] = { "added 9.1.5" },
 							}),
+							i(187880),	-- Goat Soul
 							i(187862),	-- Snake Soul
 						},
 					}),
@@ -226,6 +228,8 @@ _.ExpansionFeatures =
 							i(187419, {	-- Steward's First Feather (TOY!)
 								["timeline"] = { "added 9.1.5" },
 							}),
+							i(187880),	-- Goat Soul
+							i(187862),	-- Snake Soul
 						},
 					}),
 
@@ -237,6 +241,7 @@ _.ExpansionFeatures =
 								["timeline"] = { "added 9.1.5" },
 							}),
 							i(187880),	-- Goat Soul
+							i(187862),	-- Snake Soul
 						},
 					}),
 					i(181557, {	-- Favor of the Court / Revendreth
@@ -263,6 +268,7 @@ _.ExpansionFeatures =
 							i(187913, {	-- Apprentice Slimemancer's Boots (TOY!)
 								["timeline"] = { "added 9.1.5" },
 							}),
+							i(187880),	-- Goat Soul
 							i(187862),	-- Snake Soul
 						},
 					}),
@@ -272,6 +278,8 @@ _.ExpansionFeatures =
 							i(187419, {	-- Steward's First Feather (TOY!)
 								["timeline"] = { "added 9.1.5" },
 							}),
+							i(187880),	-- Goat Soul
+							i(187862),	-- Snake Soul
 						},
 					}),
 				}),

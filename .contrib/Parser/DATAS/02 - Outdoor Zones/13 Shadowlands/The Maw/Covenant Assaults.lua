@@ -24,11 +24,28 @@ _.Zones =
 						crit(9),	-- Kill The Flame
 					}),
 				}),
+				n(REWARDS, {
+					i(187410, {	-- Death's Advance Battlefield Drape
+						["description"] = "Can be rewarded from any Maw Assault.",
+					}),
+				}),
 				q(63824, {	-- Kyrian Assault
 					["sourceQuests"] = { 63902 },	-- Good News, Everyone!
 					["provider"] = { "n", 177900 },	-- Xandria
 					["isWeekly"] = true,
 					["g"] = {
+						crit(4, {	-- Kyrian Assault
+							["achievementID"] = 15000,	-- United Front
+						}),
+						i(185993, {	-- Ascended War Chest
+							["sym"] = {
+								{"select","itemID",187410},	-- Death's Advance Battlefield Drape
+							},
+							["g"] = {
+								i(186546),	-- Copperback Etherwyrm (PET!)
+								i(187185),	-- Vesper of Faith (TOY!)
+							},
+						}),
 						n(QUESTS, {
 							q(63858, {	-- Courage of the Soul
 								["provider"] = { "n", 178227 },
@@ -141,17 +158,6 @@ _.Zones =
 								},
 							}),
 						}),
-						n(REWARDS, {
-							crit(4, {	-- Kyrian Assault
-								["achievementID"] = 15000,	-- United Front
-							}),
-							i(185993, {	-- Ascended War Chest
-						--	TODO: figure out the contents of this chest
-								i(186546),	-- Copperback Etherwyrm (PET!)
-								i(187410),	-- Death's Advance Battlefield Drape
-								i(187185),	-- Vesper of Faith (TOY!)
-							}),
-						}),
 						n(SPECIAL, {
 							n(179096, {	-- Sly
 								["description"] = "Speak to Orator Kloe and tell her you will help find the missing Vulpin.  Follow the footprints and reassure Sly 3 times (over the course of 3 Kyrian Assaults) to earn the achievement and pet.",
@@ -212,6 +218,18 @@ _.Zones =
 					["isWeekly"] = true,
 					["coord"] = { 33.8, 54.8, THE_MAW },
 					["g"] = {
+						crit(1, {	-- Necrolord Assault
+							["achievementID"] = 15000,	-- United Front
+						}),
+						i(185992, {	-- War Chest of the Undying Army
+							["sym"] = {
+								{"select","itemID",187410},	-- Death's Advance Battlefield Drape
+							},
+							["g"] = {
+								i(186103),	-- Undying Darkhound's Harness (MOUNT!)
+								i(186557),	-- Fodder (PET!)
+							},
+						}),
 						n(ACHIEVEMENTS, {
 							ach(15039, {	-- Up For Grabs
 								["description"] = "There are a few Mawsworn Caches that are accessible just via grappling, but this achievement is much easier to complete when using the Overcharged Centurion from the |cFF349cffPutting A Plan Together|r quest.\n\nUse the Centurion's |cFFFFFFFFPurestep Ascension|r ability to scale walls and get to the Mawsworn Caches.",
@@ -356,17 +374,6 @@ _.Zones =
 								},
 							}),
 						}),
-						n(REWARDS, {
-							crit(1, {	-- Necrolord Assault
-								["achievementID"] = 15000,	-- United Front
-							}),
-							i(185992, {	-- War Chest of the Undying Army
-						--	TODO: figure out the contents of this chest
-								i(186103),	-- Undying Darkhound's Harness (MOUNT!)
-								i(187410),	-- Death's Advance Battlefield Drape
-								i(186557),	-- Fodder (PET!)
-							}),
-						}),
 						n(TREASURES, {
 							-- TODO: can ONLY this mawsworn cache object drop the map? or should this be in the 'repeated' object below?
 							o(368205, {	-- Mawsworn Cache
@@ -474,6 +481,19 @@ _.Zones =
 					["isWeekly"] = true,
 					["coord"] = { 22.4, 43.3, THE_MAW },
 					["g"] = {
+						crit(3, {	-- Night Fae Assault
+							["achievementID"] = 15000,	-- United Front
+						}),
+						i(185991, {	-- War Chest of the Wild Hunt
+							["sym"] = {
+								{"select","itemID",187410},	-- Death's Advance Battlefield Drape
+							},
+							["g"] = {
+								i(186000),	-- Wild Hunt Legsplitter (MOUNT!)
+								i(186547),	-- Invasive Buzzer (PET!)
+								i(185052),	-- Hippo Soul
+							},
+						}),
 						n(QUESTS, {
 							q(63951, {	-- A Shady Place
 								["provider"] = { "n", 178890 },	-- Margrave Sin'dane
@@ -723,17 +743,6 @@ _.Zones =
 								},
 							}),
 						}),
-						n(REWARDS, {
-							crit(3, {	-- Night Fae Assault
-								["achievementID"] = 15000,	-- United Front
-							}),
-							i(185991, {	-- War Chest of the Wild Hunt
-								i(186000),	-- Wild Hunt Legsplitter (MOUNT!)
-								i(187410),	-- Death's Advance Battlefield Drape
-								i(186547),	-- Invasive Buzzer (PET!)
-								i(185052),	-- Hippo Soul
-							}),
-						}),
 					},
 				}),
 				q(64554, {	-- Venthyr Assault (as reported via the world quest API, sometimes?)
@@ -750,6 +759,17 @@ _.Zones =
 					["isWeekly"] = true,
 					["coord"] = { 29.9, 17.1, THE_MAW },
 					["g"] = {
+						crit(2, {	-- Venthyr Assault
+							["achievementID"] = 15000,	-- United Front
+						}),
+						i(185990, {	-- Harvester's War Chest
+							["sym"] = {
+								{"select","itemID",187410},	-- Death's Advance Battlefield Drape
+							},
+							["g"] = {
+								i(185996),	-- Harvester's Dredwing Saddle (MOUNT!)
+							},
+						}),
 						n(QUESTS, {
 							q(63837, {	-- A Tea for Every Occasion
 								["provider"] = { "n", 178178 },	-- Theotar
@@ -888,15 +908,6 @@ _.Zones =
 										["achievementID"] = 15033,	-- Taking the Tremaculum
 									}),
 								},
-							}),
-						}),
-						n(REWARDS, {
-							crit(2, {	-- Venthyr Assault
-								["achievementID"] = 15000,	-- United Front
-							}),
-							i(185990, {	-- Harvester's War Chest
-								i(185996),	-- Harvester's Dredwing Saddle (MOUNT!)
-								i(187410),	-- Death's Advance Battlefield Drape
 							}),
 						}),
 						n(TREASURES, {
