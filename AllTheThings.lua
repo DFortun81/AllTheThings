@@ -20737,7 +20737,6 @@ end)();
 app:RegisterEvent("ADDON_LOADED");
 app:RegisterEvent("BOSS_KILL");
 app:RegisterEvent("CHAT_MSG_ADDON");
-app:RegisterEvent("CRITERIA_UPDATE");
 app:RegisterEvent("PLAYER_ENTERING_WORLD");
 app:RegisterEvent("VARIABLES_LOADED");
 app:RegisterEvent("NEW_PET_ADDED");
@@ -21335,6 +21334,7 @@ app.events.VARIABLES_LOADED = function()
 		app:RegisterEvent("QUEST_REMOVED");
 		app:RegisterEvent("HEIRLOOMS_UPDATED");
 		app:RegisterEvent("ARTIFACT_UPDATE");
+		app:RegisterEvent("CRITERIA_UPDATE");
 		app:RegisterEvent("TOYS_UPDATED");
 		app:RegisterEvent("LOOT_OPENED");
 
