@@ -175,6 +175,7 @@ _.Zones =
 					["g"] = {
 						i(180682),	-- Noble's Wardrobe
 						i(182723),	-- Mail Courier's Shoulderguards
+						i(180401),	-- Noble Justice
 					},
 				}),
 				o(349796, {	-- Gilded Plum Chest
@@ -464,6 +465,7 @@ _.Zones =
 					["g"] = {
 						i(183826),	-- Big Floppy Hat
 						i(182723),	-- Mail Courier's Shoulderguards
+						i(180401),	-- Noble Justice
 					},
 				}),
 				o(351542, {	-- Secret Treasure
@@ -712,11 +714,13 @@ _.Zones =
 					},
 				}),
 				o(352703, {	-- The Harvest
-				--	TODO: apparently this has multiple notes/locations, add them as they pop up
 					["description"] = "Read the |cFFFFFFFFNote What Says Where You Put The Key|r near the treasure to figure out where the key is.\n\n– 'By one of those big lamps' = |cFFFFFFFF43.8, 41.4|r\n– 'In another storehouse' = |cFFFFFFFF38.2, 43.7|r",
 					["isDaily"] = true,
 					["questID"] = 60579,
 					["coord"] = { 38.5, 39.9, REVENDRETH },
+					["g"] = {
+						i(180401),	-- Noble Justice
+					},
 				}),
 				o(353792, {	-- Village Strongbox
 					--TODO: ["questID"] = xxxxx,
