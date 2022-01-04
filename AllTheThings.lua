@@ -15418,14 +15418,15 @@ app.DynamicCategory_Nested = function(self)
 end
 
 function app:GetDataCache()
-	local dynamicSetting = app.Settings:Get("Dynamic:Style");
+	local dynamicSetting = app.Settings:Get("Dynamic:Style") or 0;
+	-- copy the function which will handle the desired Dynamic style for this session
+	app.FillDynamicGroup = (dynamicSetting == 2 and app.DynamicCategory_Nested) or
+						   (dynamicSetting == 1 and app.DynamicCategory_Simple) or nil;
 	-- Attaches a dynamic OnUpdate to the category which auto-populates itself using the provided field and optional value when first receiving an Update to itself
 	local function DynamicCategory(group, field, value)
-		if dynamicSetting > 0 then
-			-- mark the top group as dynamic for the field which it used (so popouts under the dynamic header are considered unique from other dynamic popouts)
-			group.dynamic = field;
-			group.OnUpdate = dynamicSetting == 2 and app.DynamicCategory_Nested or app.DynamicCategory_Simple;
-		end
+		-- mark the top group as dynamic for the field which it used (so popouts under the dynamic header are considered unique from other dynamic popouts)
+		group.dynamic = field;
+		group.OnUpdate = app.FillDynamicGroup;
 		return group;
 	end
 	-- Update the Row Data by filtering raw data
@@ -15697,37 +15698,6 @@ function app:GetDataCache()
 		end
 
 		--[[
-		-- DYNAMIC TOY BOX (not filtered)
-		db = {};
-		db.g = {};
-		db.OnUpdate = function(self)
-			local numToys = C_ToyBox.GetNumToys();
-			if numToys and numToys > 0 then
-				local cache = self.g;
-				table.wipe(cache);
-				C_ToyBox.SetAllExpansionTypeFilters(true);
-				C_ToyBox.SetAllSourceTypeFilters(true);
-				C_ToyBox.SetUncollectedShown(true);
-				C_ToyBox.SetCollectedShown(true);
-				C_ToyBox.SetUnusableShown(true);
-				for index=1,numToys,1 do
-					local itemID = C_ToyBox.GetToyFromIndex(index);
-					if itemID and itemID > 0 then
-						tinsert(cache, app.CreateToy(itemID));
-					end
-				end
-				self.g = cache;
-				self.OnUpdate = nil;
-			end
-		end;
-		db.OnUpdate(db);
-		db.expanded = false;
-		db.text = TOY_BOX;
-		db.icon = "Interface\\ICONS\\INV_Misc_Toy_10";
-		tinsert(g, db);
-		]]--
-
-		--[[
 		-- Never Implemented
 		if app.Categories.NeverImplemented then
 			db = {};
@@ -15763,34 +15733,6 @@ function app:GetDataCache()
 		tinsert(g, db);
 		--]]
 
-		-- Illusions (Dynamic)
-		--[[ 9.1 TEST
-		local illusionInfo = C_TransmogCollection.GetIllusionInfo(illusionID);
-		local name, hyperlink = C_TransmogCollection.GetIllusionStrings(illusionID);
-		if illusionInfo then
-			return illusionInfo.visualID, name, hyperlink, illusionInfo.icon;
-		end
-		--]]
-		--[[
-		db = {};
-		db.g = (function()
-			local cache = GetTempDataMember("ILLUSION_CACHE");
-			if not cache then
-				cache = {};
-				SetTempDataMember("ILLUSION_CACHE", cache);
-				for i=1,10000,1 do
-					local visualID = select(1, C_TransmogCollection_GetIllusionSourceInfo(i));
-					if visualID and visualID > 0 then
-						tinsert(cache, app.CreateIllusion(i));
-					end
-				end
-			end
-			return cache;
-		end)();
-		db.expanded = false;
-		db.text = "Illusions (Dynamic)";
-		tinsert(g, db);
-		--]]
 		-- Items (Dynamic)
 		--[[
 		db = {};
@@ -15828,24 +15770,6 @@ function app:GetDataCache()
 		end)());
 		db.expanded = false;
 		db.text = "Artifacts (Dynamic)";
-		tinsert(g, db);
-
-		-- Titles (Dynamic)
-		db = app.CreateAchievement(2188, (function()
-			local cache = GetTempDataMember("TITLE_CACHE");
-			if not cache then
-				cache = {};
-				SetTempDataMember("TITLE_CACHE", cache);
-				for i=1,10000,1 do
-					if GetTitleName(i) then
-						tinsert(cache, app.CreateTitle(i));
-					end
-				end
-			end
-			return cache;
-		end)());
-		db.expanded = false;
-		db.text = "Titles (Dynamic)";
 		tinsert(g, db);
 
 		-- Factions (Dynamic)
@@ -15970,29 +15894,6 @@ function app:GetDataCache()
 		end)());
 		--]]
 
-
-		---[[
-		-- More attempts at dynamically built sections.
-		-- Titles
-		-- local titlesCategory = {};
-		-- titlesCategory.g = {};
-		-- titlesCategory.titles = {};
-		-- titlesCategory.expanded = false;
-		-- titlesCategory.text = PAPERDOLL_SIDEBAR_TITLES;
-		-- titlesCategory.icon = app.asset("Category_Titles");
-		-- tinsert(g, DynamicCategory(titlesCategory, "titleID"));
-		--]]
-
-		--[[
-		-- Toys
-		local toyCategory = {};
-		toyCategory.g = {};
-		toyCategory.toys = {};
-		toyCategory.expanded = false;
-		toyCategory.text = TOY_BOX;
-		toyCategory.icon = app.asset("Category_ToyBox");
-		table.insert(g, toyCategory);
-		]]--
 
 		-- Achievements (Dynamic!)
 		--[[
@@ -18871,31 +18772,10 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 					self.tradeSkillID = tradeSkillID;
 					local data = updates["Data"];
 					if not data then
+						data = app.CreateProfession(tradeSkillID);
 						app.BuildSearchResponse_IgnoreUnavailableRecipes = true;
-						for _,group in ipairs(app.Categories.Professions) do
-							if group.requireSkill == tradeSkillID then
-								data = CloneData(group);
-								local requireSkill = data.requireSkill;
-								local response = app:BuildSearchResponse(app.Categories.Instances, "requireSkill", requireSkill);
-								if response then tinsert(data.g, {text=GROUP_FINDER,icon = app.asset("Category_D&R"),g=response}); end
-								response = app:BuildSearchResponse(app.Categories.Achievements, "requireSkill", requireSkill);
-								if response then tinsert(data.g, {text=ACHIEVEMENTS,icon = app.asset("Category_Achievements"),g=response});  end
-								response = app:BuildSearchResponse(app.Categories.Zones, "requireSkill", requireSkill);
-								if response then tinsert(data.g, {text=BUG_CATEGORY2,icon = app.asset("Category_Zones"),g=response});  end
-								response = app:BuildSearchResponse(app.Categories.WorldDrops, "requireSkill", requireSkill);
-								if response then tinsert(data.g, {text=TRANSMOG_SOURCE_4,icon = app.asset("Category_WorldDrops"),g=response});  end
-								response = app:BuildSearchResponse(app.Categories.ExpansionFeatures, "requireSkill", requireSkill);
-								if response then tinsert(data.g, {text=GetCategoryInfo(15301),icon = app.asset("Category_ExpansionFeatures"),g=response});  end
-								response = app:BuildSearchResponse(app.Categories.WorldEvents, "requireSkill", requireSkill)
-								if response then tinsert(data.g, app.CreateDifficulty(18, {icon = app.asset("Category_Event"),g=response}));  end
-								response = app:BuildSearchResponse(app.Categories.Craftables, "requireSkill", requireSkill);
-								if response then tinsert(data.g, {text=LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM,icon = app.asset("Category_Crafting"),g=response});  end
-							end
-						end
-						-- a profession which ATT has no data as being a profession? (PoA crafting)
-						if not data then
-							data = app.CreateProfession(tradeSkillID);
-						end
+						NestObjects(data, app:BuildSearchResponse(app:GetDataCache().g, "requireSkill", data.requireSkill));
+						app.BuildSearchResponse_IgnoreUnavailableRecipes = nil;
 						data.indent = 0;
 						data.visible = true;
 						BuildGroups(data, data.g);
@@ -18904,7 +18784,6 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 						self.ExpandInfo = { Expand = true };
 					end
 					self.data = data;
-					app.BuildSearchResponse_IgnoreUnavailableRecipes = nil;
 				end
 				-- If something new was "learned", then refresh the data.
 				UpdateRawIDs("spellID", learned);
