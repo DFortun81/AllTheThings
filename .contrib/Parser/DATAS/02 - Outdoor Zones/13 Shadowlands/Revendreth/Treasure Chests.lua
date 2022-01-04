@@ -467,7 +467,6 @@ _.Zones =
 					},
 				}),
 				o(351542, {	-- Secret Treasure
-				--	TODO: check back and see if this ever drops from any other treasure chests/secret treasures/shows up on mission table/etc.  this is the chest i got it from and as of january 15th it's the only one listed as dropping it on wowhead!  definitely not a guaranteed drop even if it's PL; this was at least my second time looting this chest
 					["description"] = "Destroy the |cFFFFFFFFCracked Crate|r in the small alcove at |cFFFFFFFF74.6, 62.6|r.  Turn the |cFFFFFFFFHidden Valve|r found inside, and find the treasure in the hidden chamber that opens up in the floor.",
 					["questID"] = 60199,
 					["isDaily"] = true,
@@ -727,6 +726,7 @@ _.Zones =
 					["g"] = {
 						i(180393),	-- Depraved Darkblade's Epaulets
 						i(180386),	-- Herbalist's Pouch
+						i(180394),	-- Envy Laced Leggings
 					},
 				}),
 				o(357584, {	-- Vyrtha's Dredglaive
