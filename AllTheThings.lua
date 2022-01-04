@@ -11436,11 +11436,15 @@ local function RefreshQuestCompletionState(questID)
 	if DirtyQuests.DIRTY then
 		app:UpdateWindows();
 	end
+	-- re-register the criteria update event
+	app:RegisterEvent("CRITERIA_UPDATE");
 	wipe(DirtyQuests);
 	wipe(npcQuestsCache);
 end
 app.RefreshQuestInfo = function(questID)
 	-- print("RefreshQuestInfo",questID)
+	-- unregister criteria update until the quest refresh actually completes
+	app:UnregisterEvent("CRITERIA_UPDATE");
 	if questID then
 		RefreshQuestCompletionState(questID);
 	else
