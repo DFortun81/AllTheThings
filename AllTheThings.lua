@@ -15361,7 +15361,7 @@ app.DynamicCategory_Simple = function(self)
 	if fieldCache[self.dynamic] then
 		local rootATT = app:GetWindow("Prime").data;
 		local RecursiveFirstParentWithFieldValue = app.RecursiveFirstParentWithFieldValue;
-		local top, topText;
+		local top, topText, thing;
 		local topHeaders = {};
 		for id,sources in pairs(fieldCache[self.dynamic]) do
 			-- find the top-level parent of the Thing
@@ -15375,7 +15375,10 @@ app.DynamicCategory_Simple = function(self)
 					-- app.PrintTable(topHeaders[topText])
 				end
 				-- put a copy of the Thing into the matching top category (no uniques since only 1 per cached Thing)
-				NestObject(topHeaders[topText], app.MergedObject(sources, true));
+				-- remove it from being considered a cost within the dynamic category
+				thing = app.MergedObject(sources, true)
+				thing.collectibleAsCost = false;
+				NestObject(topHeaders[topText], thing);
 			end
 		end
 		-- sort all of the Things by name in each top header and put it under the dynamic group

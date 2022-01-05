@@ -14,18 +14,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		-- Dont tell the Users is actually obtainable but there is just no info
 		["description"] = "If this drops for you, please provide as much information as you can about how and where you got it.",
 	}),
-	i(103785, {	-- Tusks of Mannoroth [Heroic]
-		["description"] = "|CFFFF0000If you had this item drop in SoO Heroic please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well. Tag 105393",
-	}),
-	i(105393, {	-- Tusks of Mannoroth [Heroic Warforged]
-		["description"] = "|CFFFF0000If you had this item drop in SoO Heroic please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well. Tag 105393",
-	}),
-	i(104646, {	-- Tusks of Mannoroth [Mythic]
-		["description"] = "|CFFFF0000If you had this item drop in SoO please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well. Tag: 104646",
-	}),
-	i(105642, {	-- Tusks of Mannoroth [Mythic Warforged]
-		["description"] = "|CFFFF0000If you had this item drop in SoO please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well. Tag: 105642",
-	}),
 	tier(SL_TIER, {	-- Items that might get added after 9.1.5. If you are sure the item won't be added, please put it into the correct section
 		-- Holiday Stuff 9.1.5
 		i(188698),	-- Eagger Basket (Noblegarden Quest?)
