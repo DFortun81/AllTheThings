@@ -84,11 +84,13 @@ _.ExpansionFeatures =
 						i(188657, {	-- Mind-Expanding Prism
 							["timeline"] = { "added 9.1.5" },
 						}),
-						-- Seems odd this one showed up on SL Mission Table... probably a bug as it seems to be a replacement for Legion Follower XP items
 						i(188650, {	-- Grimoire of Knowledge
 							["timeline"] = { "added 9.1.5" },
 						}),
 						i(188651, {	-- Grimoire of Knowledge (Drops from the early Campaign Missions) [Night Fae as noticed]
+							["timeline"] = { "added 9.1.5" },
+						}),
+						i(188652, {	-- Grimoire of Knowledge (Drops from the Campaign Missions) [Night Fae as noticed]
 							["timeline"] = { "added 9.1.5" },
 						}),
 						-- Mounts

@@ -1488,7 +1488,7 @@ root("HiddenQuestTriggers", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_C
 			q(62573),	-- Abomination level 3 sitching Chef hat/Sticky Cat.
 			q(61512),	-- Completing Something Old, Something Used first time. Confirmed first time 30.09.2021
 			q(63099),	-- Opening 184589, Bag of Potions from Atticus
-			--q(62535),	-- Unknown Maybe critera for Corspe Run
+			q(62535),	-- Triggered when completing 'Corspe Run'
 			q(60873),	-- Buying Bag of Sin Stones (180442) from Atticus
 			q(62988),	-- digging with Chordy in Revendreth
 
