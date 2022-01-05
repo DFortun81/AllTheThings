@@ -18800,12 +18800,14 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 						self.ExpandInfo = { Expand = true };
 					end
 					self.data = data;
+					self.force = true
 				end
 				-- If something new was "learned", then refresh the data.
 				UpdateRawIDs("spellID", learned);
 				if #learned > 0 then
 					app:PlayRareFindSound();
 					app:TakeScreenShot();
+					self.force = true;
 				end
 			end
 		end
@@ -18817,7 +18819,8 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 		end
 		self.CacheAndUpdate = function(self)
 			self:CacheRecipes();
-			self:Update(true);
+			self:Update(self.force);
+			self.force = nil;
 		end
 
 		-- TSM Shenanigans
