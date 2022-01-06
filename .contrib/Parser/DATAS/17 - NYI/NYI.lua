@@ -1707,6 +1707,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		model(51323, i(104011)),	-- Stormcrow							(Never added in Game)
 		i(143752),	-- Sound Test Mount
 		i(182083),	-- Bonecleaver's Skullboar
+		i(128480),	-- Bristling Hellboar
 
 		i(44557),	-- Swift Ebonweave Carpet (NOT IN GAME)
 		i(44556),	-- Swift Spellfire Carpet (NOT IN GAME)

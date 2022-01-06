@@ -3756,31 +3756,45 @@ _.Zones =
 						i(91008, {	-- Black Dragon Turtle (Panda)
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
-						i(87795),	-- Black Dragon Turtle
+						i(87795, {	-- Black Dragon Turtle (All races except pandaren)
+							["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
+						}),
 						i(91009, {	-- Blue Dragon Turtle (Panda)
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
-						i(87796),	-- Blue Dragon Turtle
+						i(87796, {	-- Blue Dragon Turtle (All races except pandaren)
+							["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
+						}),
 						i(91005, {	-- Brown Dragon Turtle (Panda)
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
-						i(87797),	-- Brown Dragon Turtle
+						i(87797, {	-- Brown Dragon Turtle (all races except pandaren)
+							["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
+						}),
 						i(91011, {	-- Great Black Dragon Turtle (Panda)
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
-						i(87802),	-- Great Black Dragon Turtle
+						i(87802, {	-- Great Black Dragon Turtle (non-pandaren)
+							["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
+						}),
 						i(91013, {	-- Great Blue Dragon Turtle (Panda)
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
-						i(87803),	-- Great Blue Dragon Turtle
+						i(87803, {	-- Great Blue Dragon Turtle (non-pandaren)
+							["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
+						}),
 						i(91014, {	-- Great Brown Dragon Turtle (Panda)
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
-						i(87804),	-- Great Brown Dragon Turtle
+						i(87804, {	-- Great Brown Dragon Turtle (non-pandaren)
+							["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
+						}),
 						i(91012, {	-- Great Green Dragon Turtle (Panda)
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
-						i(87801),	-- Great Green Dragon Turtle
+						i(87801, {	-- Great Green Dragon Turtle (non-pandaren)
+							["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
+						}),
 						i(91015, {	-- Great Purple Dragon Turtle (Panda)
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
@@ -3788,19 +3802,27 @@ _.Zones =
 						i(91010, {	-- Great Red Dragon Turtle (Panda)
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
-						i(82811),	-- Great Red Dragon Turtle
+						i(82811, {	-- Great Red Dragon Turtle (non-pandaren)
+							["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
+						}),
 						i(91004, {	-- Green Dragon Turtle (Panda)
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
-						i(82765),	-- Green Dragon Turtle
+						i(82765, {	-- Green Dragon Turtle (non-pandaren)
+							["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
+						}),
 						i(91006, {	-- Purple Dragon Turtle (Panda)
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
-						i(87799),	-- Purple Dragon Turtle
+						i(87799, {	-- Purple Dragon Turtle (All races except pandaren)
+							["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
+						}),
 						i(91007, {	-- Red Dragon Turtle (Panda)
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
-						i(87800),	-- Red Dragon Turtle
+						i(87800, {	-- Red Dragon Turtle (All races except pandaren)
+							["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
+						}),
 						un(REMOVED_FROM_GAME, i(91016)),	-- Reins of the Great Red Dragon Turtle (Never Implemented?)
 					},
 				}),
