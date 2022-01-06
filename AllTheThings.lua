@@ -20874,6 +20874,15 @@ app.InitDataCoroutine = function()
 		63200,	-- Rang Insignia: Acquisitionist
 		63204,	-- Ritual Prism of Fortune
 		63202,	-- Vessel of Unfortunate Spirits
+
+		-- Blanchy (reported as Blanchy no longer shows to alts on an account which has obtained the mount)
+		-- TODO: In future, it would be nice if these quests could be flagged unobtainable based on the learned spellID of the mount
+		62038,	-- Handful of Oats
+		62042,	-- Grooming Brush
+		62047,	-- Sturdy Horseshoe
+		62049,	-- Bucket of Clean Water
+		62048,	-- Comfortable Saddle Blanket
+		62050,	-- Dredhollow Apple
 		-- etc.
 	}) do
 		-- If this Character has the Quest completed and it is not marked as completed for Account or not for specific Character
