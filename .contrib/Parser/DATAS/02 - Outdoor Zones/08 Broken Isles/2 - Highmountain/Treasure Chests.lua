@@ -2,11 +2,18 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root("Zones", {
 	m(BROKEN_ISLES, {
 		m(HIGHMOUNTAIN, {
 			n(TREASURES, {
+				i(131811, {	-- Rocfeather Skyhorn Kite
+					["cost"] = {
+						{ "i", 131809, 1 },	-- Gleaming Roc Feather
+						{ "i", 131927, 1 },	-- Shimmering Roc Feather
+						{ "i", 131926, 1 },	-- Delicate Roc Feather
+						{ "i", 131810, 1 },	-- Derelict Skyhorn Kite
+					},
+				}),
 				o(243798, {	-- A Steamy Jewelry Box
 					["questID"] = 39531,
 					["coord"] = { 63.5, 59.3, 750 },
@@ -184,9 +191,15 @@ _.Zones =
 			}),
 		}),
 	}),
-};
---[[
-root("HiddenQuestTriggers", {
-	q(44352),	-- HQT for Quest according to discord the one on the boat below thunder totem
 });
---]]
+
+root("HiddenQuestTriggers", {
+	m(BROKEN_ISLES, {
+		m(HIGHMOUNTAIN, {
+			n(TREASURES, {
+				-- q(44352),	-- HQT for Quest according to discord the one on the boat below thunder totem
+				q(40389),	-- creating Rocfeather Skyhorn Kite
+			}),
+		}),
+	}),
+});
