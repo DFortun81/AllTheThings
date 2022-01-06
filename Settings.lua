@@ -3607,6 +3607,23 @@ end);
 ShowModelsCheckBox:SetATTTooltip(L["SHOW_MODELS_CHECKBOX_TOOLTIP"]);
 ShowModelsCheckBox:SetPoint("TOPLEFT", ShowLoreCheckBox, "BOTTOMLEFT", 0, 4);
 
+local ShowCurrencyCalculationsCheckBox = settings:CreateCheckBox(L["SHOW_CURRENCY_CALCULATIONS_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Currencies"));
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("Currencies", self:GetChecked());
+end);
+ShowCurrencyCalculationsCheckBox:SetATTTooltip(L["SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP"]);
+ShowCurrencyCalculationsCheckBox:SetPoint("TOPLEFT", ShowModelsCheckBox, "BOTTOMLEFT", 0, 4);
+
 local ShowSharedAppearancesCheckBox = settings:CreateCheckBox(L["SHARED_APPEARANCES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SharedAppearances"));

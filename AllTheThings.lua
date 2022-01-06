@@ -4297,17 +4297,19 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				if #entries - containCount > 0 then
 					tinsert(info, { left = L["AND_"] .. (#entries - containCount) .. L["_MORE"] .. "..." });
 				end
-				local currencyCount = 0;
-				for i=1,#entries do
-					item = entries[i];
-					group = item.group;
-					if group.collectible and not group.collected then
-						local canBeBoughtFor = app.ItemCanBeBoughtWithCurrencyCount(group.itemID, paramB, costCollectibles);
-						currencyCount = currencyCount + canBeBoughtFor;
+				if app.Settings:GetTooltipSetting("Currencies") then
+					local currencyCount = 0;
+					for i=1,#entries do
+						item = entries[i];
+						group = item.group;
+						if group.collectible and not group.collected then
+							local canBeBoughtFor = app.ItemCanBeBoughtWithCurrencyCount(group.itemID, paramB, costCollectibles);
+							currencyCount = currencyCount + canBeBoughtFor;
+						end
 					end
-				end
-				if currencyCount > 0 then
-					tinsert(info, { left = L["CURRENCY_NEEDED_TO_BUY"] .. currencyCount });
+					if currencyCount > 0 then
+						tinsert(info, { left = L["CURRENCY_NEEDED_TO_BUY"], right = currencyCount });
+					end
 				end
 			end
 		end
