@@ -91,6 +91,8 @@ _.Zones =
 						i(8631),	-- Reins of the Striped Frostsaber
 						i(8632),	-- Reins of the Spotted Frostsaber
 						i(47100),	-- Reins of the Striped Dawnsaber
+						un(REMOVED_FROM_GAME, i(12302)),	-- Ancient Frostsaber
+						un(REMOVED_FROM_GAME, i(12303)),	-- Nightsaber
 					},
 				}),
 				n(50307, {	-- Lord Candren <Gilneas Quartermaster>

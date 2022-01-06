@@ -2507,6 +2507,8 @@ _.Zones =
 						i(5665),	-- Horn of the Dire Wolf
 						i(5668),	-- Horn of the Brown Wolf
 						i(46099),	-- Horn of the Black Wolf
+						un(REMOVED_FROM_GAME, i(12351)),	-- Arctic Wolf -- Unable to 100% verify this source.
+						un(REMOVED_FROM_GAME, i(12330)),	-- Red Wolf -- Unable to 100% verify this source.
 					},
 				}),
 				n(3317,   {	-- Ollanus <Cloth Armor Merchant>

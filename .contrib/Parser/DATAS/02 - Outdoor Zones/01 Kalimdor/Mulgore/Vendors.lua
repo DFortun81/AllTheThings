@@ -16,6 +16,8 @@ _.Zones =
 						i(15277),	-- Gray Kodo
 						i(15290),	-- Brown Kodo
 						i(46100),	-- White Kodo
+						un(REMOVED_FROM_GAME, i(15292)),	-- Green Kodo -- Unable to 100% verify this source.
+						un(REMOVED_FROM_GAME, i(15293)),	-- Teal Kodo -- Unable to 100% verify this source.
 					},
 				}),
 				n(5940, {	-- Harn Longcast <Fishing Supplies>

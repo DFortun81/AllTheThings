@@ -41,6 +41,15 @@ _.Zones =
 						}),
 					},
 				}),
+				n(6749, {	-- Erma
+					["coord"] = { 42.8, 65.8, ELWYNN_FOREST },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						un(REMOVED_FROM_GAME, i(12354)),	-- Palomino
+						un(REMOVED_FROM_GAME, i(12353)),	-- White Stallion
+						
+					},
+				}),
 				n(384, {	-- Katie Hunter <Horse Breeder>
 					["coord"] = { 84.2, 65.5, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
