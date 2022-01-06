@@ -1427,7 +1427,9 @@ _.ExpansionFeatures =
 							["coord"] = { 48.2, 71.0, ORGRIMMAR },
 							["g"] = {
 								ach(13206),	-- Allied Races: Vulpera
-								i(174066),	-- Caravan Hyena (MOUNT!)
+								i(174066, {	-- Caravan Hyena (MOUNT!)
+									["races"] = HORDE_ONLY,
+								}),
 							},
 						}),
 						-- Vulpera Starter Quests
