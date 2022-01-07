@@ -8,6 +8,19 @@ _.ExpansionFeatures =
 		m(1627, {	-- Torghast
 			n(176761, {	-- Adamant Vault
 				n(ZONE_DROPS, {
+					n(COMMON_BOSS_DROPS, {
+						["crs"] = {
+							179433,	-- Vault Aegis
+							176578,	-- Vault Sentinel
+							179526,	-- Troz'igal the Oppressor
+						},
+						["g"] = {
+							i(187093),	-- Gilded Ornamental Mantle
+							i(187091),	-- Gilded Twin-Scythe Shoulders
+							i(187876),	-- Saurolisk Hatchling Soul (AV)
+							i(185049),	-- Saurolisk Soul (AV)
+						},
+					}),
 					i(187417, {	-- Adamant Vaults Cell
 						["crs"] = {
 							179433,	-- Vault Aegis
@@ -26,23 +39,9 @@ _.ExpansionFeatures =
 							176578, -- Vault Sentinel
 						},
 					}),
-					i(187093, {	-- Gilded Ornamental Mantle
-						["crs"] = {
-							179433,	-- Vault Aegis
-							176578,	-- Vault Sentinel
-							179526,	-- Troz'igal the Oppressor
-						},
-					}),
 					i(187094, {	-- Gilded Spike Fortresses
 						["crs"] = {
 							179526,	-- Troz'igal the Oppressor
-						},
-					}),
-					i(187091, {	-- Gilded Twin-Scythe Shoulders
-						["crs"] = {
-							179526,	-- Troz'igal the Oppressor
-							179433,	-- Vault Aegis
-							176578,	-- Vault Sentinel
 						},
 					}),
 					i(187092, {	-- Gilded Shoulder-Shields
@@ -61,8 +60,6 @@ _.ExpansionFeatures =
 							179526,	-- Troz'igal the Oppressor
 						},
 					}),
-					i(185049),	-- Saurolisk Soul (AV)
-					i(187876),	-- Saurolisk Hatchling Soul (AV)
 				}),
 			}),
 			n(ZONE_DROPS, {
