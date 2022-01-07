@@ -229,6 +229,7 @@ app.L = {
 	["NESTED_QUEST_REQUIREMENTS"] = "Nested Quest Requirements";
 	["MAIN_LIST_REQUIRES_REFRESH"] = "[Open Main list to update progress]";
 	["DOES_NOT_CONTRIBUTE_TO_PROGRESS"] = "|cffe08207This group and its content do not contribute to the progress of this window!|r";
+	["CURRENCY_NEEDED_TO_BUY"] = "Items needed to buy not collected Things";
 
 	-- Item Filter Window
 	["ITEM_FILTER_TEXT"] = "Item Filters";
@@ -448,6 +449,8 @@ app.L = {
 	["KNOWN_BY_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the full list of characters on all servers that know this recipe in the tooltip.";
 	["SHOW_MODELS_CHECKBOX"] = "Model Preview";
 	["SHOW_MODELS_CHECKBOX_TOOLTIP"] = "Enable this option to show models within a preview instead of the icon on the tooltip.\n\nThis option may assist you in identifying what a Rare Spawn or Vendor looks like. It might be a good idea to keep this turned on for that reason.";
+	["SHOW_CURRENCY_CALCULATIONS_CHECKBOX"] = "Currency calculation";
+	["SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP"] = "Enable this option to show the approximate amount of items/currency required to buy Uncollected Things.\n\nOnly those collectible Things that can be directly purchased for an item/currency are counted. Containers that do not give items with a 100% chance are not counted.";
 	["SHARED_APPEARANCES_CHECKBOX"] = "Shared Appearances";
 	["SHARED_APPEARANCES_CHECKBOX_TOOLTIP"] = "Enable this option to see items that share a similar appearance in the tooltip.\n\nNOTE: Items that do not match the armor type are displayed in the list. This is to help you diagnose the Collection progress.\n\nIf you are ever confused by this, as of ATT v1.5.0, you can Right Click the item to open the item and its Shared Appearances into their own standalone Mini List.";
 	["INCLUDE_ORIGINAL_CHECKBOX"] = "Original Source";

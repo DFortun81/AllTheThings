@@ -4207,6 +4207,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			BuildContainsInfo(group, entries, "  ", app.noDepth and 99 or 1);
 			-- app.DEBUG_PRINT = nil;
 			if #entries > 0 then
+				local costCollectibles = group.costCollectibles;
 				-- print("#entries",#entries);
 				tinsert(info, { left = L["CONTAINS"] });
 				local containCount, item, group = math.min(app.Settings:GetTooltipSetting("ContainsCount") or 25, #entries);
@@ -4309,6 +4310,20 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				if #entries - containCount > 0 then
 					tinsert(info, { left = L["AND_"] .. (#entries - containCount) .. L["_MORE"] .. "..." });
 				end
+				if app.Settings:GetTooltipSetting("Currencies") then
+					local currencyCount = 0;
+					for i=1,#entries do
+						item = entries[i];
+						group = item.group;
+						if group.collectible and not group.collected then
+							local canBeBoughtFor = app.ItemCanBeBoughtWithCurrencyCount(group.itemID, paramB, costCollectibles);
+							currencyCount = currencyCount + canBeBoughtFor;
+						end
+					end
+					if currencyCount > 0 then
+						tinsert(info, { left = L["CURRENCY_NEEDED_TO_BUY"], right = currencyCount });
+					end
+				end
 			end
 		end
 	end
@@ -4364,6 +4379,21 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		app.InitialCachedSearch = nil;
 	end
 	return group;
+end
+app.ItemCanBeBoughtWithCurrencyCount = function(targetItemID, currencyItemID, costCollectibles)
+	-- TODO: this does not handle recursive and nested cases, like Murloc items in Nazjatar
+	if costCollectibles and #costCollectibles > 0 then
+		for i=1,#costCollectibles do
+			if costCollectibles[i].itemID and costCollectibles[i].itemID == targetItemID then
+				for _,costComp in ipairs(costCollectibles[i].cost) do
+					if costComp[2] == currencyItemID then
+						return costComp[3];
+					end
+				end
+			end
+		end
+	end
+	return 0;
 end
 app.BuildCrafted_IncludedItems = {};
 -- Appends sub-groups into the item group based on what the item is used to craft (via ReagentCache)
