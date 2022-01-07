@@ -3575,7 +3575,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			if itemString then
 				sourceID = GetSourceID(paramA);
 				-- print("ParamA SourceID",sourceID,paramA)
-				if app.Settings:GetTooltipSetting("itemString") then tinsert(info, { left = itemString }); end
+				if topLevelSearch and app.Settings:GetTooltipSetting("itemString") then tinsert(info, { left = itemString }); end
 				local _, itemID2, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, linkModID, numBonusIds, bonusID1 = strsplit(":", itemString);
 				if itemID2 then
 					itemID = tonumber(itemID2);
@@ -3590,7 +3590,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					for i,j in ipairs(group) do
 						if j.modItemID == paramB then
 							if j.u and j.u == 2 and (not app.IsBoP(j)) and (tonumber(numBonusIds) or 0) > 0 then
-								tinsert(info, { left = L["RECENTLY_MADE_OBTAINABLE"] });
+								if topLevelSearch then tinsert(info, { left = L["RECENTLY_MADE_OBTAINABLE"] }); end
 							end
 						end
 					end
@@ -3675,7 +3675,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 										else
 											text = "   ";
 										end
-										tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(ATTAccountWideData.Sources[sourceID])});
+										if topLevelSearch then tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(ATTAccountWideData.Sources[sourceID])}); end
 									end
 								else
 									local otherATTSources = app.SearchForField("s", otherSourceID);
@@ -3708,7 +3708,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 											else
 												text = "   ";
 											end
-											tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherItemID or "???") .. (otherATTSource.modID and (":" .. otherATTSource.modID) or "") .. ")") or ""), right = GetCollectionIcon(otherATTSource.collected)});
+											if topLevelSearch then tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherItemID or "???") .. (otherATTSource.modID and (":" .. otherATTSource.modID) or "") .. ")") or ""), right = GetCollectionIcon(otherATTSource.collected)}); end
 										end
 									else
 										local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
@@ -3720,7 +3720,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 											end
 											text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
 											if otherSource.isCollected then ATTAccountWideData.Sources[otherSourceID] = 1; end
-											tinsert(info, { left = text	.. " |CFFFF0000(" .. (link == RETRIEVING_DATA and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});	-- This is debug info for contribs, do not localize it
+											if topLevelSearch then tinsert(info, { left = text	.. " |CFFFF0000(" .. (link == RETRIEVING_DATA and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)}); end	-- This is debug info for contribs, do not localize it
 										end
 									end
 								end
@@ -3745,7 +3745,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 										else
 											text = "   ";
 										end
-										tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(ATTAccountWideData.Sources[sourceID])});
+										if topLevelSearch then tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(ATTAccountWideData.Sources[sourceID])}); end
 									end
 								else
 									local otherATTSources = app.SearchForField("s", otherSourceID);
@@ -3802,7 +3802,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 										end
 
 										if #failText > 0 then text = text .. " |CFFFF0000(" .. failText .. ")|r"; end
-										tinsert(info, { left = text, right = GetCollectionIcon(otherATTSource.collected)});
+										if topLevelSearch then tinsert(info, { left = text, right = GetCollectionIcon(otherATTSource.collected)}); end
 									else
 										local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
 										if otherSource and (otherSource.quality or 0) > 1 then
@@ -3813,7 +3813,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 											end
 											text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
 											if otherSource.isCollected then ATTAccountWideData.Sources[otherSourceID] = 1; end
-											tinsert(info, { left = text	.. " |CFFFF0000(" .. (link == RETRIEVING_DATA and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});	-- This is debug info for contribs, do not localize it
+											if topLevelSearch then tinsert(info, { left = text	.. " |CFFFF0000(" .. (link == RETRIEVING_DATA and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)}); end	-- This is debug info for contribs, do not localize it
 										end
 									end
 								end
@@ -3829,7 +3829,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							-- if this is true here, that means C_TransmogCollection_GetAllAppearanceSources() for this SourceID's VisualID
 							-- does not return this SourceID, so it doesn't get flagged by the refresh logic and we need to track it manually for
 							-- this Account as being 'collected'
-							tinsert(info, { left = Colorize(L["ADHOC_UNIQUE_COLLECTED_INFO"], "ffe35832") });
+							if topLevelSearch then tinsert(info, { left = Colorize(L["ADHOC_UNIQUE_COLLECTED_INFO"], "ffe35832") }); end
 							-- if the tooltip immediately refreshes for whatever reason the
 							-- store this SourceID as being collected* so it can be properly collected* during force refreshes in the future without requiring a tooltip search
 							if not ATTAccountWideData.BrokenUniqueSources then ATTAccountWideData.BrokenUniqueSources = {}; end
@@ -3838,19 +3838,19 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						end
 					end
 
-					if app.IsReady and sourceGroup.missing then
+					if topLevelSearch and app.IsReady and sourceGroup.missing then
 						tinsert(info, { left = Colorize("Item Source not found in the " .. app.Version .. " database.\n" .. L["SOURCE_ID_MISSING"], "ffff0000") });	-- Do not localize first part of the message, it is for contribs
 						tinsert(info, { left = Colorize(sourceID .. ":" .. tostring(sourceInfo.visualID), "ffe35832") });
 						tinsert(info, { left = Colorize(itemString, "ffe35832") });
 					end
-					if app.Settings:GetTooltipSetting("visualID") then tinsert(info, { left = L["VISUAL_ID"], right = tostring(sourceInfo.visualID) }); end
-					if app.Settings:GetTooltipSetting("sourceID") then tinsert(info, { left = L["SOURCE_ID"], right = sourceID .. " " .. GetCollectionIcon(sourceInfo.isCollected) }); end
+					if topLevelSearch and app.Settings:GetTooltipSetting("visualID") then tinsert(info, { left = L["VISUAL_ID"], right = tostring(sourceInfo.visualID) }); end
+					if topLevelSearch and app.Settings:GetTooltipSetting("sourceID") then tinsert(info, { left = L["SOURCE_ID"], right = sourceID .. " " .. GetCollectionIcon(sourceInfo.isCollected) }); end
 				end
 			end
-			if app.Settings:GetTooltipSetting("itemID") then tinsert(info, { left = L["ITEM_ID"], right = tostring(itemID) }); end
-			if modID and app.Settings:GetTooltipSetting("modID") then tinsert(info, { left = "Mod ID", right = tostring(modID) }); end
-			if bonusID and app.Settings:GetTooltipSetting("bonusID") then tinsert(info, { left = "Bonus ID", right = tostring(bonusID) }); end
-			if app.Settings:GetTooltipSetting("SpecializationRequirements") then
+			if topLevelSearch and app.Settings:GetTooltipSetting("itemID") then tinsert(info, { left = L["ITEM_ID"], right = tostring(itemID) }); end
+			if topLevelSearch and modID and app.Settings:GetTooltipSetting("modID") then tinsert(info, { left = "Mod ID", right = tostring(modID) }); end
+			if topLevelSearch and bonusID and app.Settings:GetTooltipSetting("bonusID") then tinsert(info, { left = "Bonus ID", right = tostring(bonusID) }); end
+			if topLevelSearch and app.Settings:GetTooltipSetting("SpecializationRequirements") then
 				local specs = GetFixedItemSpecInfo(itemID);
 				-- specs is already filtered/sorted to only current class
 				if specs and #specs > 0 then
@@ -3860,7 +3860,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 			end
 
-			if app.Settings:GetTooltipSetting("Progress") and IsArtifactRelicItem(itemID) then
+			if topLevelSearch and app.Settings:GetTooltipSetting("Progress") and IsArtifactRelicItem(itemID) then
 				-- If the item is a relic, then let's compare against equipped relics.
 				local relicType = select(3, C_ArtifactUI.GetRelicInfoByItemID(itemID));
 				local myArtifactData = app.CurrentCharacter.ArtifactRelicItemLevels;
@@ -3905,7 +3905,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	end
 
 	-- Create a list of sources
-	if app.Settings:GetTooltipSetting("SourceLocations") and (not paramA or (paramA ~= "encounterID" and app.Settings:GetTooltipSetting(paramA == "creatureID" and "SourceLocations:Creatures" or "SourceLocations:Things"))) then
+	if topLevelSearch and app.Settings:GetTooltipSetting("SourceLocations") and (not paramA or (paramA ~= "encounterID" and app.Settings:GetTooltipSetting(paramA == "creatureID" and "SourceLocations:Creatures" or "SourceLocations:Things"))) then
 		local temp, text = {};
 		local unfiltered, uTexture = {};
 		local showUnsorted = app.Settings:GetTooltipSetting("SourceLocations:Unsorted");
@@ -4165,36 +4165,38 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		end
 	end
 
-	-- Add various text to the group now that it has been consolidated from all sources
-	if group.isLimited then
-		tinsert(info, 1, { left = L.LIMITED_QUANTITY, wrap = false, color = "ff66ccff" });
-	end
-	-- Description for Items
-	if group.lore and app.Settings:GetTooltipSetting("Lore") then
-		tinsert(info, 1, { left = group.lore, wrap = true, color = "ff66ccff" });
-	end
-	if group.description and app.Settings:GetTooltipSetting("Descriptions") then
-		tinsert(info, 1, { left = group.description, wrap = true, color = "ff66ccff" });
-	end
-	if group.u and (not group.crs or group.itemID or group.s) then
-		tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][group.u][2] });
-	end
-	-- Pet Battles
-	if group.pb then
-		tinsert(info, { left = L["REQUIRES_PETBATTLES"] });
-	end
-	-- PvP
-	if group.pvp then
-		tinsert(info, { left = L["REQUIRES_PVP"] });
-	end
-	if paramA == "itemID" and paramB == 137642 then
-		if app.Settings:GetTooltipSetting("SummarizeThings") then
-			tinsert(info, 1, { left = L["MARKS_OF_HONOR_DESC"], wrap = false, color = "ffff8426" });
+	if topLevelSearch then
+		-- Add various text to the group now that it has been consolidated from all sources
+		if group.isLimited then
+			tinsert(info, 1, { left = L.LIMITED_QUANTITY, wrap = false, color = "ff66ccff" });
 		end
-	end
-	-- an item used for a faction which is repeatable
-	if group.itemID and group.factionID and group.repeatable then
-		tinsert(info, { left = L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(group.factionID)) or ("Faction #" .. tostring(group.factionID))) .. "'", wrap = true, color = "ff66ccff" });
+		-- Description for Items
+		if group.lore and app.Settings:GetTooltipSetting("Lore") then
+			tinsert(info, 1, { left = group.lore, wrap = true, color = "ff66ccff" });
+		end
+		if group.description and app.Settings:GetTooltipSetting("Descriptions") then
+			tinsert(info, 1, { left = group.description, wrap = true, color = "ff66ccff" });
+		end
+		if group.u and (not group.crs or group.itemID or group.s) then
+			tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][group.u][2] });
+		end
+		-- Pet Battles
+		if group.pb then
+			tinsert(info, { left = L["REQUIRES_PETBATTLES"] });
+		end
+		-- PvP
+		if group.pvp then
+			tinsert(info, { left = L["REQUIRES_PVP"] });
+		end
+		if paramA == "itemID" and paramB == 137642 then
+			if app.Settings:GetTooltipSetting("SummarizeThings") then
+				tinsert(info, 1, { left = L["MARKS_OF_HONOR_DESC"], wrap = false, color = "ffff8426" });
+			end
+		end
+		-- an item used for a faction which is repeatable
+		if group.itemID and group.factionID and group.repeatable then
+			tinsert(info, { left = L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(group.factionID)) or ("Faction #" .. tostring(group.factionID))) .. "'", wrap = true, color = "ff66ccff" });
+		end
 	end
 
 	-- delete sub-groups if there are none
@@ -4332,7 +4334,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	end
 
 	-- If the item is a recipe, then show which characters know this recipe.
-	if group.spellID and group.filterID ~= 100 and group.collectible and app.Settings:GetTooltipSetting("KnownBy") then
+	if topLevelSearch and group.spellID and group.filterID ~= 100 and group.collectible and app.Settings:GetTooltipSetting("KnownBy") then
 		local knownBy = {};
 		for guid,character in pairs(ATTCharacterData) do
 			if character.Spells and character.Spells[group.spellID] then
