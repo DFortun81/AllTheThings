@@ -2036,6 +2036,7 @@ select(2, ...).ObjectNames = {
 	[369438] = "Riftbound Cache",
 	[369439] = "Riftbound Cache",
 	[369440] = "Riftbound Cache",
+	[370469] = "Spectral Feed",
 	[9962198] = "Outcast's Makeshift Muckpool",
 	[9999890] = "Corrupted Loot",
 	[9999891] = "Main Objective Only",
