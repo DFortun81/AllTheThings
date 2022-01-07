@@ -26,6 +26,8 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["icon"] = 656577,
 				["sourceQuests"] = { 64961 },	-- Cat Soul
 				["cost"] = { { "i", 187811, 1 } },	-- Spectral Feed
+				["coord"] = { 58.4, 70.5, 1702 },	-- Heart of the Forest
+				["qg"] = 182093,	-- Ma'oh
 				["description"] = "After obtaining the Cat Soul, grab a |cFFFFFFFFSpectral Feed|r located at |cFFFFFFFF63.75, 61.69|r in Revendreth. Then return to Heart of the Forest with it, and go to the Queen's Conservatory portal downstairs.\nFind |cFFFFFFFFMa'oh|r next to the portal and |cFFFFFFFF/meow|r at them. Then use the |cFFFFFFFFSpectral Feed|r from your inventory while targeting them.",
 			}),
 			q(64941, {	-- Chicken Soul
