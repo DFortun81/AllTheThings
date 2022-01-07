@@ -138,10 +138,8 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 	}),
 })));
 
-for _,g in ipairs({WINGFLAYTER_THE_CRUEL, ORSTUS_AND_SOTIROS ,{GRATEFUL,REGURGITATED_KYRIAN_WINGS,AEGIS_OF_SALVATION}}) do
-	for	_,t in ipairs(g) do
-		t.customCollect = nil;
-	end
+for _,t in ipairs({WINGFLAYTER_THE_CRUEL,ORSTUS_AND_SOTIROS,GRATEFUL,REGURGITATED_KYRIAN_WINGS,AEGIS_OF_SALVATION}) do
+	t.customCollect = nil;
 end
 
 root("HiddenQuestTriggers", {

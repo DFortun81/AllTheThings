@@ -3435,9 +3435,8 @@ local function FillPurchases(group, depth)
 end
 local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	if not search or search:find("%[]") then return; end
-	local now = time();
 	local cache = searchCache[search];
-	if cache and (now - cache[1]) < cache[2] then return cache[3]; end
+	if cache then return cache; end
 
 	-- This method can be called nested, and some logic should only process for the initial call
 	local topLevelSearch;
@@ -3452,8 +3451,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	-- Determine if this tooltip needs more work the next time it refreshes.
 	if not paramA then paramA = ""; end
 	local working, info = false, {};
-	cache = { now, 100000000 };
-	searchCache[search] = cache;
 
 	-- Call to the method to search the database.
 	local rawlink;
@@ -4113,9 +4110,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 		-- Replace as the group
 		group = root;
-		-- Ensure no weird parent references attached to the base search result
-		group.sourceParent = nil;
-		group.parent = nil;
 
 		-- print(group.g and #group.g,"Merge total");
 		-- print("Final Group",group.key,group[group.key],group.collectible,group.collected,group.parent,group.sourceParent,rawget(group, "parent"),rawget(group, "sourceParent"));
@@ -4162,6 +4156,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 		-- Only need to build/update groups from the top level
 		if topLevelSearch then
+			-- Ensure no weird parent references attached to the base search result
+			group.sourceParent = nil;
+			group.parent = nil;
 
 			BuildGroups(group, group.g);
 			app.TopLevelUpdateGroup(group);
@@ -4200,12 +4197,18 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		tinsert(info, { left = L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(group.factionID)) or ("Faction #" .. tostring(group.factionID))) .. "'", wrap = true, color = "ff66ccff" });
 	end
 
-	if topLevelSearch and group.g and #group.g > 0 then
+	-- delete sub-groups if there are none
+	if group.g and #group.g == 0 then
+		group.g = nil;
+	end
+
+	if topLevelSearch and group.g then
 		if app.Settings:GetTooltipSetting("SummarizeThings") then
 			local entries, left, right = {};
-			-- app.DEBUG_PRINT = "CONTAINS-" .. group.key .. group[group.key];
+			-- app.DEBUG_PRINT = "CONTAINS-"..group.hash;
 			BuildContainsInfo(group, entries, "  ", app.noDepth and 99 or 1);
 			-- app.DEBUG_PRINT = nil;
+			-- print(entries and #entries,"contains entries")
 			if #entries > 0 then
 				local costCollectibles = group.costCollectibles;
 				-- print("#entries",#entries);
@@ -4343,41 +4346,32 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		end
 	end
 
-	-- If the user wants to show the progress of this search result, do so
-	if app.Settings:GetTooltipSetting("Progress") and (group.key ~= "spellID" or group.collectible) then
-		group.collectionText = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(group);
-	end
+	-- Check if finally leaving the top-level search
+	if topLevelSearch then
+		group.isBaseSearchResult = true;
+		app.InitialCachedSearch = nil;
 
-	-- If there was any informational text generated, then attach that info.
-	if #info > 0 then
-		group.tooltipInfo = info;
-		for _,item in ipairs(info) do
-			if item.color then item.a, item.r, item.g, item.b = HexToARGB(item.color); end
+		-- print("TopLevelSearch",working and "WORKING" or "DONE",search,group.text or (group.key and group.key .. group[group.key]),group)
+
+		-- Track if the result is not finished processing
+		group.working = working;
+
+		-- cache the finished result if it's completely processed
+		if not working then
+			searchCache[search] = group;
+		end
+
+		-- If the user wants to show the progress of this search result, do so
+		if app.Settings:GetTooltipSetting("Progress") and (group.key ~= "spellID" or group.collectible) then
+			group.collectionText = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(group);
+		end
+
+		-- If there was any informational text generated, then attach that info.
+		if #info > 0 then
+			group.tooltipInfo = info;
 		end
 	end
 
-	-- delete sub-groups if there are none
-	if group.g and #group.g == 0 then
-		group.g = nil;
-	end
-
-	-- Cache the result for a while depending on if there is more work to be done.
-	group.isSearchResult = true;
-	group.working = working;
-	cache[2] = (working and 0.01) or 100000000;
-	-- if working then print("still working...")
-	-- else print("Cached Search",search,paramA,paramB,group.tooltipInfo and #group.tooltipInfo); end
-	cache[3] = group;
-
-	-- Check if finally leaving the top-level search
-	if topLevelSearch then
-		--[[
-		if not working then
-			print("TopLevelSearch-Done",search,group.text or (group.key and group.key .. group[group.key]),group)
-		end--]]
-		group.isBaseSearchResult = true;
-		app.InitialCachedSearch = nil;
-	end
 	return group;
 end
 app.ItemCanBeBoughtWithCurrencyCount = function(targetItemID, currencyItemID, costCollectibles)
@@ -6081,7 +6075,11 @@ local function AttachTooltipRawSearchResults(self, group)
 		-- If there was info text generated for this search result, then display that first.
 		if group.tooltipInfo then
 			local left, right;
-			for i,entry in ipairs(group.tooltipInfo) do
+			for _,entry in ipairs(group.tooltipInfo) do
+				if entry.color then
+					entry.a, entry.r, entry.g, entry.b = HexToARGB(entry.color);
+				end
+
 				left = entry.left;
 				right = entry.right;
 				if right then
@@ -13324,7 +13322,7 @@ function app:CreateMiniListForGroup(group)
 		group = CreateObject(group);
 
 		-- being a search result means it has already received certain processing
-		if not group.isSearchResult then
+		if not group.isBaseSearchResult then
 			-- Fill any purchasable things for the sub-groups
 			-- if group.g then
 			-- 	for _,sub in ipairs(group.g) do
