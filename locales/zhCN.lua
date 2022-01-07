@@ -219,6 +219,7 @@ local L = app.L;
 	L.NESTED_QUEST_REQUIREMENTS = "多重任务需要";
 	L.MAIN_LIST_REQUIRES_REFRESH = "[打开主列表更新进度 ]";
 	L.DOES_NOT_CONTRIBUTE_TO_PROGRESS = "|cffe08207此群组及其内容不影响此窗口的进度！|r";
+	L.CURRENCY_NEEDED_TO_BUY = "需要购买物品未收集的事物";
 
 	-- Item Filter Window
 		L.ITEM_FILTER_TEXT = "物品过滤";
@@ -409,6 +410,8 @@ local L = app.L;
 		L.KNOWN_BY_CHECKBOX_TOOLTIP = "如果你想在鼠标提示中看到所有知道此配方的服务器上的角色的完整列表，请启用此选项。";
 		L.SHOW_MODELS_CHECKBOX = "模型预览";
 		L.SHOW_MODELS_CHECKBOX_TOOLTIP = "启用此选项可在预览中显示模型而不是鼠标提示上的图标。\n\n此选项可帮助你识别稀有生物或商人的模样。因为这个原因你可能想保持这个开启。";
+		L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX = "货币计算";
+		L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP = "启用此选项可显示购买未收集事物所需的大致物品/货币数量。\n\n仅计算可以直接用物品/货币购买的收集事物。不以 100% 几率提供物品的容器不计算在内。";
 		L.SHARED_APPEARANCES_CHECKBOX = "共享外观";
 		L.SHARED_APPEARANCES_CHECKBOX_TOOLTIP = "启用该选项可以在鼠标提示中看到外观相似的物品。\n\n注意：不符合装备类型的物品会显示在列表中。这是为了帮助你判断收藏进度。\n\n如果你对此感到困惑，从 ATT v1.5.0 开始，你可以右键单击物品，打开物品和它的共享外观，进入它们自己的独立小列表。";
 		L.INCLUDE_ORIGINAL_CHECKBOX = "原始来源";
