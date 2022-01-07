@@ -20913,6 +20913,9 @@ app.InitDataCoroutine = function()
 		62049,	-- Bucket of Clean Water
 		62048,	-- Comfortable Saddle Blanket
 		62050,	-- Dredhollow Apple
+
+		-- Druid forms
+		65047, 	-- Mark of the Nightwing Raven
 		-- etc.
 	}) do
 		-- If this Character has the Quest completed and it is not marked as completed for Account or not for specific Character
