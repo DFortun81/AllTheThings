@@ -38,6 +38,26 @@ _.Zones =
 						}),
 						i(186470, {	-- Recipe: Crafter's Mark of the Chained Isle
 							["cost"] = { { "c", 1931, 2500 } },	-- 2,500x Catalogued Research
+							["g"] = {
+								recipe(343676, {	-- Crafter's Mark of the Chained Isle
+									["requireSkill"] = ALCHEMY,
+								}),
+								recipe(343189, {	-- Crafter's Mark of the Chained Isle
+									["requireSkill"] = LEATHERWORKING,
+								}),
+								recipe(343188, {	-- Crafter's Mark of the Chained Isle
+									["requireSkill"] = BLACKSMITHING,
+								}),
+								recipe(343103, {	-- Crafter's Mark of the Chained Isle
+									["requireSkill"] = ENGINEERING,
+								}),
+								recipe(343694, {	-- Crafter's Mark of the Chained Isle
+									["requireSkill"] = JEWELCRAFTING,
+								}),
+								recipe(343200, {	-- Crafter's Mark of the Chained Isle
+									["requireSkill"] = TAILORING,
+								}),
+							},
 						}),
 						i(186717, {	-- Research Report: Adaptive Alloys
 							["questID"] = 64300,
@@ -454,6 +474,26 @@ _.Zones =
 						}),
 						i(186598, {	-- Recipe: Crafter's Mark III
 							["cost"] = { { "c", 1767, 2000 } },	-- 2,000x Stygia
+							["g"] = {
+								recipe(343677, {	-- Crafter's Mark III
+									["requireSkill"] = ALCHEMY,
+								}),
+								recipe(343695, {	-- Crafter's Mark III
+									["requireSkill"] = JEWELCRAFTING,
+								}),
+								recipe(343192, {	-- Crafter's Mark III
+									["requireSkill"] = LEATHERWORKING,
+								}),
+								recipe(343201, {	-- Crafter's Mark III
+									["requireSkill"] = TAILORING,
+								}),
+								recipe(343186, {	-- Crafter's Mark III
+									["requireSkill"] = BLACKSMITHING,
+								}),
+								recipe(343102, {	-- Crafter's Mark III
+									["requireSkill"] = ENGINEERING,
+								}),
+							},
 						}),
 						i(186453, {	-- Vault Anima Tracker
 							["questID"] = 64061,

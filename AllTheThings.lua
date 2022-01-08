@@ -18940,6 +18940,10 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 						if not previousState or not app.Settings:Get("AccountWide:Recipes") then
 							app:PlayFanfare();
 							app:TakeScreenShot();
+							if app.Settings:GetTooltipSetting("Report:Collected") then
+								local link = app:Linkify(spellID, "149bfd", "search:spellID:"..spellID);
+								print(NEW_RECIPE_LEARNED_TITLE, link);
+							end
 						end
 						wipe(searchCache);
 					end
