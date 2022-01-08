@@ -511,5 +511,9 @@ root("HiddenQuestTriggers", {
 });
 -- #endif
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	i(17733),	-- Fist of Stone
+	tier(CLASSIC_TIER, {
+		inst(232, {	-- Maraudon
+			i(17733),	-- Fist of Stone
+		}),
+	}),
 }));

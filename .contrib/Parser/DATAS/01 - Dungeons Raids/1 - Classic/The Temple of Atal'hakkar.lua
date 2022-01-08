@@ -740,7 +740,9 @@ root("HiddenQuestTriggers", {
 });
 -- #endif
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	q(27634, {	-- The God Hakkar
-		["timeline"] = { "created 4.0.3" },
+	n(QUESTS, {
+		q(27634, {	-- The God Hakkar
+			["timeline"] = { "created 4.0.3" },
+		}),
 	}),
 }));

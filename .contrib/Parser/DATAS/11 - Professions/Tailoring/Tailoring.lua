@@ -111,7 +111,10 @@ profession(TAILORING, {
 				}),
 				{
 					["name"] = "Black Silk Pack",
-					["recipeID"] = 6695
+					["recipeID"] = 6695,
+					-- #if AFTER SHADOWLANDS
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
 				},
 				{
 					["name"] = "Bottomless Bag",

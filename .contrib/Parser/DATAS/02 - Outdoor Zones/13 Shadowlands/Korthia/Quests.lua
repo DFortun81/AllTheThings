@@ -1038,11 +1038,13 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			["coord"] = { 63.4, 23.3, KORTHIA },
 		}),
 	}),
-	m(KORTHIA, {
-		i(186500),	-- Ensemble: Garb of the Twilight Grove(quest:63596)
-		i(186518),	-- Ensemble: Forsworn Aspirant's Regalia(quest:63600)
-		i(186505),	-- Ensemble: Rogue Necromancer's Vestments(quest:63629)
-		i(186513),	-- Ensemble: Radiant Court Attire(quest:63632)
-		i(186514),	-- Ensemble: Redeemed Inquisitor's Vestments(quest:63636)
+	tier(SL_TIER, {
+		filter(COSMETIC, {
+			i(186500),	-- Ensemble: Garb of the Twilight Grove(quest:63596)
+			i(186518),	-- Ensemble: Forsworn Aspirant's Regalia(quest:63600)
+			i(186505),	-- Ensemble: Rogue Necromancer's Vestments(quest:63629)
+			i(186513),	-- Ensemble: Radiant Court Attire(quest:63632)
+			i(186514),	-- Ensemble: Redeemed Inquisitor's Vestments(quest:63636)
+		}),
 	}),
 }));

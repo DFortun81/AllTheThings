@@ -1619,9 +1619,11 @@ root("HiddenQuestTriggers", {
 });
 -- #endif
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	q(7479),	-- Libram of Focus
-	q(7480),	-- Libram of Protection
-	q(7478),	-- Libram of Rapidity
-	q(7462),	-- The Treasure of the Shen'dralar
-	q(1318),	-- Unfinished Gordok Business
+	n(QUESTS, {
+		q(7479),	-- Libram of Focus
+		q(7480),	-- Libram of Protection
+		q(7478),	-- Libram of Rapidity
+		q(7462),	-- The Treasure of the Shen'dralar
+		q(1318),	-- Unfinished Gordok Business
+	}),
 }));

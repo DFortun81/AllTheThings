@@ -1539,7 +1539,7 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(58664),	-- Ultimate Makeover
 	}),
 	tier(SL_TIER, {
-		n(ABOMINATION_FACTORY, {
+		n(NECROLORD, {
 			i(183413, {	-- Ensemble: Stitched Alacrity of Maldraxxus
 				["questID"] = 62012,
 			}),

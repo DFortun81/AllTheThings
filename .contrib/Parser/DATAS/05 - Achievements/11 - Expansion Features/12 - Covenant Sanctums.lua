@@ -140,16 +140,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES, {
 				crit(1),	-- Defeat Alderyn and Myn'ir in a Trial of Loyalty as Mikanikos
 				crit(2),	-- Defeat Splinterbark Nightmare in a Trial of Loyalty as Mikanikos
 			}),
-			un(NEVER_IMPLEMENTED, ach(14351, sharedData({["u"] = NEVER_IMPLEMENTED}, {	-- The Path Towards Ascension 39
-				ach(14340),	-- The Path Towards Ascension 1
-				ach(14342),	-- The Path Towards Ascension 3
-				ach(14343),	-- The Path Towards Ascension 5
-				ach(14344),	-- The Path Towards Ascension 7
-				ach(14345),	-- The Path Towards Ascension 12
-				ach(14346),	-- The Path Towards Ascension 16
-				ach(14348),	-- The Path Towards Ascension 20
-				ach(14349),	-- The Path Towards Ascension 24
-			}))),
 			ach(14887, {	-- To the Moon
 				["description"] = "Requires the Path of Ascension building. Some people needed 50+ tries for this achievement, others needed 500+. There is no guaranteed way known. You need to /wave at Athanos while he knocks you off with any ability.",
 			}),

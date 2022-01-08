@@ -71,16 +71,16 @@ WISPS_OF_MEMORY.customCollect = nil;
 root("HiddenQuestTriggers", {
 	q(64074),	-- hitting Renown 45 - received mount, Ardenweald Wilderling
 	q(64406),	-- hitting Renown 48 [Death Knight] (received Memory of Rampant Transference)
-	q(64385),	-- hitting Renown 48 [Demon Hunter] (received Memory of ??)
+	q(64385),	-- hitting Renown 48 [Demon Hunter] (received Memory of Blazing Slaughter)
 	q(64397),	-- hitting Renown 48 [Druid] (received Memory of Celestial Spirits)
 	q(64388),	-- hitting Renown 48 [Hunter] (received Memory of the Fragments of the Elder Antlers)
 	q(64403),	-- hitting Renown 48 [Mage] (received Memory of the Fae Heart)
 	q(64380),	-- hitting Renown 48 [Monk] (received Memory of Faeline Harmony)
-	q(64382),	-- hitting Renown 48 [Paladin] (received Memory of ??)
+	q(64382),	-- hitting Renown 48 [Paladin] (received Memory of Seasons of Plenty)
 	q(64408),	-- hitting Renown 48 [Priest] (received Memory of Bwonsamdi's Pact)
 	q(64401),	-- hitting Renown 48 [Rogue] (received Memory of Toxic Onslaught)
 	q(64416),	-- hitting Renown 48 [Shaman] (received Memory of the Seeds of Rampant Growth)
-	-- q( ),	-- hitting Renown 48 [Warlock] (received Memory of ??)
+	-- q( ),	-- hitting Renown 48 [Warlock] (received Memory of the Decaying Soul Satchel)
 	q(64423),	-- hitting Renown 48 [Warrior] (received Memory of Nature's Fury)
 	q(64081),	-- hitting Renown 50
 	q(64449),	-- hitting Renown 52

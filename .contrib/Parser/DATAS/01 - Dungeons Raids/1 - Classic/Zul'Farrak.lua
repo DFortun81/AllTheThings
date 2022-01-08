@@ -422,5 +422,9 @@ root("HiddenQuestTriggers", {
 });
 -- #endif
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	i(9653),	-- Speedy Racer Goggles
+	tier(CLASSIC_TIER, {
+		inst(241, {	-- Zul'Farrak
+			i(9653),	-- Speedy Racer Goggles
+		}),
+	}),
 }));

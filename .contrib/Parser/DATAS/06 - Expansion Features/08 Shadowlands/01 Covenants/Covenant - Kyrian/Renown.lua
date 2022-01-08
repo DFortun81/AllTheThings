@@ -72,18 +72,18 @@ WISPS_OF_MEMORY.customCollect = nil;
 
 root("HiddenQuestTriggers", {
 	q(64138),	-- hitting Renown 45
-	q(64378),	-- hitting Renown 48 [Death Knight] (received Memory of ??)
+	q(64378),	-- hitting Renown 48 [Death Knight] (received Memory of the Final Sentence)
 	q(64379),	-- hitting Renown 48 [Demon Hunter] (received Memory of Blind Faith)
 	q(64395),	-- hitting Renown 48 [Druid] (received Memory of Kindred Affinity)
 	q(64392),	-- hitting Renown 48 [Hunter] (received Memory of the Pact of the Soulstalkers)
-	-- q( ),	-- hitting Renown 48 [Mage] (received Memory of ??)
+	-- q( ),	-- hitting Renown 48 [Mage] (received Memory of Harmonic Echo)
 	q(64413),	-- hitting Renown 48 [Monk] (received Memory of Call to Arms)
 	q(64417),	-- hitting Renown 48 [Paladin] (received Memory of Divine Resonance)
 	q(64405),	-- hitting Renown 48 [Priest] (received Memory of Spheres' Harmony)
-	q(64396),	-- hitting Renown 48 [Rogue] (received Memory of ??)
+	q(64396),	-- hitting Renown 48 [Rogue] (received Memory of Resounding Clarity)
 	q(64409),	-- hitting Renown 48 [Shaman] (received Memory of the Raging Vesper Vortex)
 	q(64412),	-- hitting Renown 48 [Warlock] (received Memory of the Languishing Soul Detritus)
-	-- q( ),	-- hitting Renown 48 [Warrior] (received Memory of ??)
+	q(64418),	-- hitting Renown 48 [Warrior] (received Memory of Elysian Might)
 	q(64145),	-- hitting Renown 50
 	q(64443),	-- hitting Renown 52
 	q(64137),	-- hitting Renown 56

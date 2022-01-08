@@ -1536,7 +1536,10 @@ _.ExpansionFeatures =
 					["g"] = {
 						q(53831, {	-- A Royal Occasion
 							["sourceQuests"] = { 50242 },	-- A Choice for Allies (H)
-							["provider"] = { "n", 133519 },	-- Rokhan
+							["providers"] = {
+								{ "n", 133519 },	-- Rokhan
+								{ "n", 133523 },	-- Ji Firepaw (not sure when they changed npc?)
+							},
 							["coord"] = { 38.2, 81.4, ORGRIMMAR },
 							["races"] = HORDE_ONLY,
 						}),

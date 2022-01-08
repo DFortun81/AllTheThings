@@ -1341,7 +1341,7 @@ for _,g in ipairs({ECHTHRA_GROUP,BINKIROS_GROUP,PHIXIN_GROUP,ZELESKOS_GROUP,{BRI
 end
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(ACHIEVEMENTS, {
+	n(KYRIAN, {
 		ach(14351, { -- The Path Towards Ascension 39
 			ach(14340),	-- The Path Towards Ascension 1
 			ach(14342),	-- The Path Towards Ascension 3
@@ -1455,7 +1455,7 @@ root("HiddenQuestTriggers", {
 	-- HQTs for Bastion of Protection achievement
 	q(63074),	-- Kalisthene | Spiritforged Aegis
 	q(63075),	-- Craven Corinth | Spiritforged Aegis
-	
+
 	-- HQTs for The Hoot of the Issue achievement
 	q(63076),	-- Loyalty | Alderyn and Myn'ir | Mikanikos
 	q(63077),	-- Loyalty | Splinterbark Nightmare | Mikanikos
