@@ -1538,4 +1538,20 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(58596),	-- Specter Of War: Visectus
 		q(58664),	-- Ultimate Makeover
 	}),
+	tier(SL_TIER, {
+		n(ABOMINATION_FACTORY, {
+			i(183413, {	-- Ensemble: Stitched Alacrity of Maldraxxus
+				["questID"] = 62012,
+			}),
+			i(183411, {	-- Ensemble: Stitched Authority of Maldraxxus
+				["questID"] = 62011,
+			}),
+			i(183414, {	-- Ensemble: Stitched Guile of Maldraxxus
+				["questID"] = 62013,
+			}),
+			i(183415, {	-- Ensemble: Stitched Rationale of Maldraxxus
+				["questID"] = 62014,
+			}),
+		}),
+	}),
 }));

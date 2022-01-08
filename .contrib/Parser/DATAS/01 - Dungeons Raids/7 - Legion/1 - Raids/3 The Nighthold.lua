@@ -1516,11 +1516,47 @@ _.Instances = { tier(LEGION_TIER, {
 		},
 	}),
 })};
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(LEGION_TIER, {
 		inst(786, {	-- The Nighthold
 			i(157764),	-- Claw of the Crystalline Scorpid
 			i(157765),	-- Draught of Souls
+			-- Added in 9.1 Why? Noone knows
+			cl(DEATHKNIGHT, {
+				i(180553),	-- Dreadwake Bonecage
+				i(180554),	-- Dreadwake Legplates
+				i(180555),	-- Dreadwake Pauldrons
+			}),
+			cl(DEMONHUNTER, {
+				i(180615),	-- Tunic of Second Sight
+				i(180616),	-- Legwraps of Second Sight
+				i(180617),	-- Shoulderguards of Second Sight
+			}),
+			cl(MONK, {
+				i(180562),	-- Tunic of Enveloped Dissonance
+				i(180563),	-- Leggings of Enveloped Dissonance
+				i(180564),	-- Pauldrons of Enveloped
+			}),
+			cl(PALADIN, {
+				i(180535),	-- Breastplate of the Highlord
+				i(180540),	-- Light's Vanguard Breastplate
+				i(180541),	-- Light's Vanguard Legplates
+				i(180542),	-- Light's Vanguard Shoulderplates
+			}),
+			cl(ROGUE, {
+				i(180556),	-- Doomblade Tunic
+				i(180557),	-- Doomblade Pants
+				i(180558),	-- Doomblade Spaulders
+			}),
+			i(180550),	-- Doomwalker Warboots
+			i(180551),	-- Flamelicked Girdle
+			i(180552),	-- Wristguards of the Dark Keepers
+			i(180560),	-- Girdle of Nefarious Strategy
+			i(180561),	-- Bracers of Impossible Choices
+			i(180566),	-- Well-Flattened Wristguards
+			i(180567),	-- Stutterstep Treads
+			i(180619),	-- Wristwraps of Broken Trust
+			i(180620),	-- High Shadow Councilor's Wrap
 		}),
 	}),
-});
+}));

@@ -290,6 +290,10 @@ _.Craftables =
 			spell(201943, {	-- Better Luck Next Time
 				["maps"] = { AZSUNA, BROKEN_SHORE, EYE_OF_AZSHARA, HIGHMOUNTAIN, STORMHEIM, SURAMAR, VALSHARAH },
 				["g"] = {
+					i(142528),	-- Crate of Bobbers: Can of Worms
+					i(142529),	-- Crate of Bobbers: Cat Head
+					i(142530),	-- Crate of Bobbers: Tugboat
+					i(143662),	-- Crate of Bobbers: Wooden Pepe
 					i(139408, {	-- Deck Sandals
 						["bonusID"] = 1812,
 					}),
@@ -424,6 +428,12 @@ _.Craftables =
 			}),
 			n(55, {	-- Consumables
 				i(142406),	-- Drums of the Mountain
+			}),
+			filter(TOYS, {
+				i(129961),	-- Flaming Hoop
+				i(129956),	-- Leather Love Seat
+				i(129960),	-- Leather Pet Bed
+				i(129958),	-- Leather Pet Leash
 			}),
 		}),
 		prof(TAILORING, {

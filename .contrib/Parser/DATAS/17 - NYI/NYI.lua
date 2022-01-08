@@ -14,163 +14,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		-- Dont tell the Users is actually obtainable but there is just no info
 		["description"] = "If this drops for you, please provide as much information as you can about how and where you got it.",
 	}),
-	tier(SL_TIER, {	-- Items that might get added after 9.1.5. If you are sure the item won't be added, please put it into the correct section
-		-- Holiday Stuff 9.1.5
-		i(188698),	-- Eagger Basket (Noblegarden Quest?)
-		i(188694),	-- Spring Florist's Pouch (Noblegarden)
-		i(188701),	-- Fire Festival Batons (Midsummer)
-		i(188699),	-- Insulated Dancing Insoles (Midsummer)
-		i(188695),	-- Summer Cranial Skillet (Midsummer)
-		-- Trial of Style 9.1.5 Items added
-		i(188240),	-- Augur's Walkers
-		i(188246),	-- Bloodbathed Slippers
-		i(188247),	-- Boots of the Blightbelcher
-		i(188242),	-- Cleric's Sabatons
-		i(188245),	-- Cold Cage Moccasins
-		i(188251),	-- Corrupted Cleats
-		i(188239),	-- Keeper's Strides
-		i(188250),	-- Pustule Prancers
-		i(188241),	-- Stalker's Treads
-		i(188238),	-- Thief's Footpads
-		-- Unknown (Maybe Trial of Style?)
-		i(187914),	-- Captain Noteo's Unused Eye Patch
-		-- Unknown
-		i(187861),	-- Magical Seeds
-		-- Set added in 9.1.0
-		-- Night Fae -- of the Twilight Grove -- Korthia Dailies? tracking quest should be 63596
-		i(186500),	-- Ensemble: Garb of the Twilight Grove
-		-- Kyrian -- Forsworn Aspirant's -- Korthia Dailies? tracking quest should be 63600
-		i(186518),	-- Ensemble: Forsworn Aspirant's Regalia
-		-- Necrolord -- Rogue Necromancer's -- Korthia Dailies? tracking quest should be 63629
-		i(186505),	-- Ensemble: Rogue Necromancer's Vestments
-		-- Venthyr -- Radiant Court -- Korthia Dailies? tracking quest should be 63632
-		i(186513),	-- Ensemble: Radiant Court Attire
-		-- Venthyr -- Redeemed Inquisitor's  -- Korthia Dailies? tracking quest should be 63636
-		i(186514),	-- Ensemble: Redeemed Inquisitor's Vestments
-		-- Possibly Timewalking Legion
-		cl(DEATHKNIGHT, {
-			i(180553),	-- Dreadwake Bonecage
-			i(180554),	-- Dreadwake Legplates
-			i(180555),	-- Dreadwake Pauldrons
-		}),
-		cl(DEMONHUNTER, {
-			i(180615),	-- Tunic of Second Sight
-			i(180616),	-- Legwraps of Second Sight
-			i(180617),	-- Shoulderguards of Second Sight
-		}),
-		cl(MONK, {
-			i(180562),	-- Tunic of Enveloped Dissonance
-			i(180563),	-- Leggings of Enveloped Dissonance
-			i(180564),	-- Pauldrons of Enveloped
-		}),
-		cl(PALADIN, {
-			i(180535),	-- Breastplate of the Highlord
-			i(180540),	-- Light's Vanguard Breastplate
-			i(180541),	-- Light's Vanguard Legplates
-			i(180542),	-- Light's Vanguard Shoulderplates
-		}),
-		cl(ROGUE, {
-			i(180556),	-- Doomblade Tunic
-			i(180557),	-- Doomblade Pants
-			i(180558),	-- Doomblade Spaulders
-		}),
-		i(180537),	-- Eredar Warcouncil Sabatons
-		i(180538),	-- Nathrezim Battle Girdle
-		i(180539),	-- Vambraces of Life's Assurance
-		i(180550),	-- Doomwalker Warboots
-		i(180551),	-- Flamelicked Girdle
-		i(180552),	-- Wristguards of the Dark Keepers
-		i(180559),	-- Boots of Endless Betrayal
-		i(180560),	-- Girdle of Nefarious Strategy
-		i(180561),	-- Bracers of Impossible Choices
-		i(180565),	-- Lifeless Buckled Girdle
-		i(180566),	-- Well-Flattened Wristguards
-		i(180567),	-- Stutterstep Treads
-		i(180618),	-- Stained Maggot Squishers
-		i(180619),	-- Wristwraps of Broken Trust
-		i(180620),	-- High Shadow Councilor's Wrap
-		--
-		i(180491),	-- Wingdancer's Spire
-		-- Mounts
-		i(182083),	-- Bonecleaver's Skullboar
-		i(181817),	-- Deathbringer's Flayedwing
-		-- Gear
-		i(171401),	-- Phaeweald Rapier
-		i(175941),	-- Spiritual Alchemy Stone (171323 is the version in game)
-		i(175942),	-- Spiritual Alchemy Stone (171323 is the version in game)
-		i(175943),	-- Spiritual Alchemy Stone (171323 is the version in game)
-		i(179775),	-- Conservator's Leather Tunic (reported as not being awarded from ensemble 184112)
-		i(179659),	-- Conservator's Silken Tunic
-		-- Pets
-		i(180838),	-- Blue Etherwyrm (Wild Etherwyrm is the equivalent wild pet in game, item was never used)
-		i(180837),	-- Blue Glimmerfly (Fluttering Glimmerfly is the equivalent wild pet in game, item was never used)
-		i(181259),	-- Clutch (wild pet in game, item was never used)
-		i(184461),	-- Clutch (wild pet in game, item was never used)
-		i(180590),	-- Lost Soul (wild pet in game, item was never used)
-		i(180860),	-- Orange Vulpin (Copperfur Kit is the equivalent wild pet in game, item was never used)
-		i(180840),	-- Pink Glimmerfly (Vibrant Glimmerfly is the equivalent wild pet in game, item was never used)
-		i(180861),	-- Red Vulpin (Rustfur Kit is the equivalent wild pet in game, item was never used)
-		i(180867),	-- Silver Crane (Wader Chick is the equivalent wild pet in game, item was never used)
-		i(180813),	-- Silver Teroclaw (Fledgling Teroclaw is the equivalent wild pet in game, item was never used)
-		i(183853),	-- Sinfall Screecher
-		i(183714),	-- Swamp Reed (Withering Creeper is the equivalent wild pet in game, item was never used)
-		-- Recipes
-		i(182666),	-- Formula: Enchanted Elethium Bar (learned from trainer not item)
-		i(183866),	-- Formula: Crafter's Mark III (was in beta but not live, possibly added in future?)
-		i(183869),	-- Pattern: Crafter's Mark III (was in beta but not live, possibly added in future?)
-		i(183871),	-- Pattern: Crafter's Mark III (was in beta but not live, possibly added in future?)
-		i(183864),	-- Plans: Crafter's Mark III (was in beta but not live, possibly added in future?)
-		i(183868),	-- Recipe: Crafter's Mark III (was in beta but not live, possibly added in future?)
-		i(183867),	-- Schematic: Crafter's Mark III (was in beta but not live, possibly added in future?)
-		i(183865),	-- Technique: Crafter's Mark III (was in beta but not live, possibly added in future?)
-		i(182665),	-- Recipe: Sins to Virtue
-		i(182669),	-- Pattern: Loosened Belt
-		i(182670),	-- Plans: Reinforced Girdle
-		-- Toy
-		i(182655),	-- Hill King's Roarbox (beta only? Retrieving data on 9.0.2)
-		i(174445),	-- Glimmerfly Cocoon (dropped from 4 beast rares in Bastion on beta but doesn't drop in live)
-		-- Other
-		i(183940),	-- Avowed Archivist's Tome (this was on a vendor and awarded "the Avowed" title in Beta but has not been seen in the actual expansion)
-		i(183413, {	-- Ensemble: Stitched Alacrity of Maldraxxus
-			["questID"] = 62012,
-			["cost"] = { { "i", 178061, 500 } },	-- Malleable Flesh
-			["classes"] = { HUNTER, SHAMAN },
-		}),
-		i(183411, {	-- Ensemble: Stitched Authority of Maldraxxus
-			["questID"] = 62011,
-			["cost"] = { { "i", 178061, 500 } },	-- Malleable Flesh
-			["classes"] = { PALADIN, WARRIOR, DEATHKNIGHT },
-		}),
-		i(183414, {	-- Ensemble: Stitched Guile of Maldraxxus
-			["questID"] = 62013,
-			["cost"] = { { "i", 178061, 500 } },	-- Malleable Flesh
-			["classes"] = { DRUID, ROGUE, MONK, DEMONHUNTER },
-		}),
-		i(183415, {	-- Ensemble: Stitched Rationale of Maldraxxus
-			["questID"] = 62014,
-			["cost"] = { { "i", 178061, 500 } },	-- Malleable Flesh
-			["classes"] = { PRIEST, MAGE, WARLOCK },
-		}),
-	}),
-	n(ACHIEVEMENTS, {
-		ach(14116),	-- All Bridges Burned
-		ach(14121),	-- Daring Defender
-		ach(14113),	-- Imagine a Dark, Dark World
-		ach(14122),	-- Long Trek Through Darkness
-		ach(14088),	-- Orgrimmar - Pained
-		ach(14090),	-- Orgrimmar - Dark Imagination
-		ach(14092),	-- Orgrimmar - Burned Bridge
-		ach(14099),	-- Orgrimmar - Daredevil
-		ach(14100),	-- Orgrimmar - Long Night
-		ach(14106),	-- Pained Expression
-		ach(14083),	-- Stormwind - Pained
-		ach(14084),	-- Stormwind - Dark Imagination
-		ach(14085),	-- Stormwind - Burned Bridge
-		ach(14086),	-- Stormwind - Daredevil
-		ach(14087),	-- Stormwind - Long Night
-		ach(13996),	-- The Dark Horde
-		ach(13995),	-- Twilight over the White City
-	}),
 	n(-220, {	-- Class "Spells"
 		cl(DEMONHUNTER, {
 			i(129738),	-- Verus
@@ -1107,8 +950,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(158329),	-- Hidden Gloves
 			-- SL
 			i(185774),	-- PH Green Head Candle
-			i(182306), -- Monster Mantle
-			i(186093), -- Shaded Spectacles
+			i(182306),	-- Monster Mantle
+			i(186093),	-- Shaded Spectacles
+			i(187914),	-- Captain Noteo's Unused Eye Patch
 		}),
 		filter(SHIRTS, {
 			i(52548),	-- Initiate's Tunic
@@ -1707,7 +1551,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		model(51323, i(104011)),	-- Stormcrow							(Never added in Game)
 		i(143752),	-- Sound Test Mount
 		i(182083),	-- Bonecleaver's Skullboar
-		i(128480),	-- Bristling Hellboar
+		i(128480),  -- Bristling Hellboar
+		i(181817),	-- Deathbringer's Flayedwing
 
 		i(44557),	-- Swift Ebonweave Carpet (NOT IN GAME)
 		i(44556),	-- Swift Spellfire Carpet (NOT IN GAME)
@@ -1815,6 +1660,19 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		-- SL
 		i(186545),	-- REUSE
 		i(180841),	-- Olive Dragon Turtle
+		-- Pets
+		i(180838),	-- Blue Etherwyrm (Wild Etherwyrm is the equivalent wild pet in game, item was never used)
+		i(180837),	-- Blue Glimmerfly (Fluttering Glimmerfly is the equivalent wild pet in game, item was never used)
+		i(181259),	-- Clutch (wild pet in game, item was never used)
+		i(184461),	-- Clutch (wild pet in game, item was never used)
+		i(180590),	-- Lost Soul (wild pet in game, item was never used)
+		i(180860),	-- Orange Vulpin (Copperfur Kit is the equivalent wild pet in game, item was never used)
+		i(180840),	-- Pink Glimmerfly (Vibrant Glimmerfly is the equivalent wild pet in game, item was never used)
+		i(180861),	-- Red Vulpin (Rustfur Kit is the equivalent wild pet in game, item was never used)
+		i(180867),	-- Silver Crane (Wader Chick is the equivalent wild pet in game, item was never used)
+		i(180813),	-- Silver Teroclaw (Fledgling Teroclaw is the equivalent wild pet in game, item was never used)
+		i(183853),	-- Sinfall Screecher
+		i(183714),	-- Swamp Reed (Withering Creeper is the equivalent wild pet in game, item was never used)
 	}),
 	f(110, {	-- Titles
 		title(54),	-- <Name> of the Ten Storms
@@ -1848,6 +1706,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		title(406),	-- Sparking <Name>
 		title(408),	-- Pilgrim <Name> the Mallet Bearer
 		title(424),	-- Deathbringer <Name>
+		i(183940),	-- Avowed Archivist's Tome (this was on a vendor and awarded "the Avowed" title in Beta but has not been seen in the actual expansion)
 		title(436),	-- <Name> the Avowed
 	}),
 	n(PROFESSIONS, {
@@ -3072,6 +2931,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(164377, {	-- Regenerating Banana Bunch
 			["timeline"] = { "created 8.0.1.26871" },
 		}),
+		i(182655),	-- Hill King's Roarbox (beta only? Retrieving data on 9.0.2)
+		i(174445),	-- Glimmerfly Cocoon (dropped from 4 beast rares in Bastion on beta but doesn't drop in live)
+		i(187861),	-- Magical Seeds
 	}),
 	d(24, {	-- Timewalking
 		-- Possible TW Gear (not in journal)
@@ -3250,6 +3112,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(134067),	-- Blackswell Scalemender's Mace
 			i(165273),	-- Fallback Weapon - 1H Sword
 			i(167143),	-- QA Combat Test 1h Sword
+			i(171401),	-- Phaeweald Rapier
 		}),
 		filter(POLEARMS, {
 			-- Load In Game
@@ -3338,6 +3201,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(115298),	-- Spectral Spire
 			i(182566),	-- NPE Weapon Staff AGI
 			i(182572),	-- NPE Weapon Staff INT
+			i(180491),	-- Wingdancer's Spire
 			-- ItemID/Retrieving
 			i(3738),	-- Brewing Rod
 			i(20522),	-- Feral Staff

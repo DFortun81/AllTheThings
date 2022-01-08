@@ -991,11 +991,16 @@ _.Instances = { tier(LEGION_TIER, {
 		},
 	}),
 })};
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(LEGION_TIER, {
 		inst(768, {	-- The Emerald Nightmare
 			i(138229),	-- Nightmare Boss 3 Relic Storm
 			i(157766),	-- Vial of Nightmare Fog
+			-- Added in 9.1 Why? Noone knows
+			i(180559),	-- Boots of Endless Betrayal
+			i(180565),	-- Lifeless Buckled Girdle
+			i(180618),	-- Stained Maggot Squishers
 		}),
 	}),
-});
+}));

@@ -1708,3 +1708,14 @@ root("HiddenQuestTriggers", tier(LEGION_TIER, {
 		}),
 	}),
 }));
+
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	tier(LEGION_TIER, {
+		inst(946, {	-- Antorus, the Burning Throne
+			-- Added in 9.1 Why? Noone knows
+			i(180537),	-- Eredar Warcouncil Sabatons
+			i(180538),	-- Nathrezim Battle Girdle
+			i(180539),	-- Vambraces of Life's Assurance
+		}),
+	}),
+}));

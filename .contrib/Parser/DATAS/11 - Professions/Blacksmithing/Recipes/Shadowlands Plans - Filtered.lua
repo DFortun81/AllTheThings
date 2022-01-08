@@ -66,3 +66,12 @@ profession(BLACKSMITHING, {
 		},
 	}),
 });
+
+root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+	tier(SL_TIER, {
+		prof(BLACKSMITHING, {
+			i(183864),	-- Plans: Crafter's Mark III (was in beta but not live, possibly added in future?)
+			i(182670),	-- Plans: Reinforced Girdle
+		}),
+	}),
+}));

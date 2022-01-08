@@ -30,3 +30,12 @@ profession(LEATHERWORKING, {
 		}),
 	}),
 });
+
+root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+	tier(SL_TIER, {
+		prof(LEATHERWORKING, {
+			i(183869),	-- Pattern: Crafter's Mark III (was in beta but not live, possibly added in future?)
+			i(182669),	-- Pattern: Loosened Belt
+		}),
+	}),
+}));

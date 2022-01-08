@@ -5491,7 +5491,7 @@ neverimplemented(i(162430));	-- Pattern: Embroidered Deep Sea Breeches (Rank 3)
 -- #endif
 
 -- #if AFTER SHADOWLANDS
-
+neverimplemented(i(183871));	-- Pattern: Crafter's Mark III (was in beta but not live, possibly added in future?)
 -- #endif
 
 -- Apply the Never Implemented flag to the Never Implemented things.
