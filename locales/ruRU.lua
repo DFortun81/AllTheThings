@@ -246,7 +246,7 @@ local L = app.L;
 	L.AFTER_REFRESH = "После Обновления";
 
 	-- General tab
-		-- Mod Title
+		-- Mode Title
 			L.MODE = "Режим";
 			L.TITLE_COMPLETIONIST = "Коллекционера ";
 			L.TITLE_UNIQUE_APPEARANCE = "Уникальный ";
@@ -258,6 +258,7 @@ local L = app.L;
 			L.TITLE_INSANE = "|cffADD8E6Безумный|R ";
 			L.TITLE_SOME_THINGS = "Некоторых Штучек ";
 			L.TITLE_LEVEL = "Уровня ";
+			L.TITLE_SOLO = "Соло ";
 			L._BETA_LABEL = " |cff4AA7FF[Бета]|R";
 
 		L.GENERAL_LABEL = "Общие";
