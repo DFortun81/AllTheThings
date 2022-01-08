@@ -49,6 +49,10 @@ _.PVP =
 							}),
 							q(7124,  {	-- Capture a Mine (H)
 								["races"] = HORDE_ONLY,
+								["qgs"] = {
+									12097,	-- Frostwolf Quartermaster
+									13776,	-- Corporal Teeka Bloodsnarl
+								},
 								["timeline"] = {
 									"added 1.11.1.10772",
 									"removed 8.0.1.25902", -- inaccessible since 15th Anniversary event

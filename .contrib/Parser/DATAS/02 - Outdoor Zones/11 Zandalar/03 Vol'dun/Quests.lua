@@ -454,7 +454,7 @@ _.Zones =
 				}),
 				q(48872, {	-- Expedite the Excavation
 					["sourceQuests"] = { 50536 },	-- Magic Decoder Device
-					["provider"] = { "n", 134148 },	-- Maaz
+					["provider"] = { "n", 134164 },	-- Amre
 					["coord"] = { 47.4, 72.8, VOLDUN },	-- Zul'Ahjin
 					["races"] = HORDE_ONLY,
 				}),

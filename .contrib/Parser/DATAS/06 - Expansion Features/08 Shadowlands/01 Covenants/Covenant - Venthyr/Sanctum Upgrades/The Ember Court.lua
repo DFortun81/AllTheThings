@@ -2339,6 +2339,7 @@ root("HiddenQuestTriggers", {
 			q(62521),	-- 'Safe/Humble' criteria for It's Certainly Never Boring
 			q(62523),	-- 'Safe/Humble' criteria for It's Certainly Never Boring
 			q(62525),	-- 'Relaxing' criteria for It's Certainly Never Boring
+			q(61529),	-- 'Relaxing' criteria for It's Certainly Never Boring
 			q(62526),	-- 'Exciting' criteria for It's Certainly Never Boring
 			q(62520),	-- 'Clean' criteria for It's Certainly Never Boring
 

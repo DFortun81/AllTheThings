@@ -111,6 +111,43 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["isDaily"] = true,
 									["questID"] = 61691,
 									["coord"] = { 51.7, 32.3, ARDENWEALD },
+									["g"] = {
+										n(173005,{	-- Lunarlight Bud
+											["questID"] = 61696,
+											["isDaily"] = true,
+											["coords"] = {
+												{ 52.5, 33.4, ARDENWEALD },
+											},
+										}),
+										n(173006,{	-- Lunarlight Bud
+											["questID"] = 61695,
+											["isDaily"] = true,
+											["coords"] = {
+												{ 52.5, 30.9, ARDENWEALD },
+											},
+										}),
+										n(173008,{	-- Lunarlight Bud
+											["questID"] = 61694,
+											["isDaily"] = true,
+											["coords"] = {
+												{ 51.0, 34.4, ARDENWEALD },
+											},
+										}),
+										n(173009,{	-- Lunarlight Bud
+											["questID"] = 61693,
+											["isDaily"] = true,
+											["coords"] = {
+												{ 50.0, 33.3, ARDENWEALD },
+											},
+										}),
+										n(173010,{	-- Lunarlight Bud
+											["questID"] = 61692,
+											["isDaily"] = true,
+											["coords"] = {
+												{ 50.2, 31.6, ARDENWEALD },
+											},
+										}),
+									},
 								}),
 							}),
 						}),

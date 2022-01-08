@@ -3034,11 +3034,6 @@ _.HiddenQuestTriggers = {
 		q(60802),	--   running over Lunarlight Buds (48.1, 70.8), user could not find associated treasure
 		q(60803),	--  /
 		q(60804),	-- /
-		q(60815),	-- \
-		q(60816),	--  \
-		q(60817),	--   running over Lunarlight Buds (55.4, 38.6) to light up Dim Lunarlight Pod and turn it into Lunarlight Pod
-		q(60818),	--  /
-		q(60819),	-- /
 		q(60810),	-- \
 		q(60811),	--  \
 		q(60812),	--   running over Lunarlight Buds (somewhere in/near Glitterfall Basin) to light up Dim Lunarlight Pod and turn it into Lunarlight Pod (questID #60792)
@@ -3051,11 +3046,6 @@ _.HiddenQuestTriggers = {
 		q(60809),	-- /
 		-- Ardenweald Covenant (Night Fae)
 		q(62745),	-- Triggered after finishing Chapter 1 of Night Fae covenant questline
-		q(61692),	-- \
-		q(61693),	--  \
-		q(61694),	--   all these quests are for running over Lunarlight Buds to open the Large Lunarlight Pod at 51.7, 32.3
-		q(61695),	--  /
-		q(61696),	-- /
 		q(57559),	-- Triggered after turning in For Queen and Grove! (58160) / A Call to Service (62695)
 		q(62706),	-- Triggered after turning in For Queen and Grove! (58160) / A Call to Service (62695)
 		q(63006),	-- Triggered after turning in For Queen and Grove! (58160)

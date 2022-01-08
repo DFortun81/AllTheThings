@@ -329,6 +329,43 @@ _.Zones =
 						["questID"] = 60793,
 						["isDaily"] = true,
 						["coord"] = { 55.4, 38.6, ARDENWEALD },
+						["g"] = {
+							n(170359,{	-- Lunarlight Bud
+								["questID"] = 60819,
+								["isDaily"] = true,
+								["coords"] = {
+									{ 55.2, 39.2, ARDENWEALD },
+								},
+							}),
+							n(170360,{	-- Lunarlight Bud
+								["questID"] = 60818,
+								["isDaily"] = true,
+								["coords"] = {
+									{ 56.1, 39.4, ARDENWEALD },
+								},
+							}),
+							n(170361,{	-- Lunarlight Bud
+								["questID"] = 60817,
+								["isDaily"] = true,
+								["coords"] = {
+									{ 55.3, 38.1, ARDENWEALD },
+								},
+							}),
+							n(170362,{	-- Lunarlight Bud
+								["questID"] = 60816,
+								["isDaily"] = true,
+								["coords"] = {
+									{ 56.1, 38.7, ARDENWEALD },
+								},
+							}),
+							n(170363,{	-- Lunarlight Bud
+								["questID"] = 60815,
+								["isDaily"] = true,
+								["coords"] = {
+									{ 55.7, 39.6, ARDENWEALD },
+								},
+							}),
+						},
 					}),
 					o(353686, {	-- Lunarlight Pod
 						-- TODO: not 100% on object ID/coord

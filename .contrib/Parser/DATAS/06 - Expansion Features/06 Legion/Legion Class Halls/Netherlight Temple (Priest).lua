@@ -643,9 +643,10 @@ _.ExpansionFeatures =
 						}),
 						q(45789, {	-- The Sunken Vault
 							["classes"] = { PRIEST },
+							["maps"] = { 839 },	-- THe Maelstrom
 							["lvl"] = 110,
 							["g"] = {
-								{ ["mountID"] = 229377 },	-- High Priest's Lightsworn Seeker
+								mount(229377),	-- High Priest's Lightsworn Seeker
 							},
 						}),
 						q(44407, {	-- The Third Legend
