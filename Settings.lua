@@ -99,7 +99,7 @@ local GeneralSettingsBase = {
 		["AccountWide:FlightPaths"] = true,
 		["AccountWide:Followers"] = true,
 		-- ["AccountWide:Heirlooms"] = true,
-		["AccountWide:Illusions"] = true,
+		-- ["AccountWide:Illusions"] = true,
 		-- ["AccountWide:Mounts"] = true,
 		["AccountWide:MusicRollsAndSelfieFilters"] = true,
 		["AccountWide:Quests"] = false,
@@ -435,8 +435,11 @@ settings.GetModeString = function(self)
 		local things = {};
 		local thingCount = 0;
 		local totalThingCount = 0;
+		local keyPrefix;
+		local solo = true;
 		for key,_ in pairs(GeneralSettingsBase.__index) do
-			if string.sub(key, 1, 6) == "Thing:" then
+			keyPrefix = string.sub(key, 1, 6);
+			if keyPrefix == "Thing:" then
 				totalThingCount = totalThingCount + 1;
 				if settings:Get(key) and
 					-- Quest Breadcrumbs only count when Quests are enabled
@@ -447,6 +450,9 @@ settings.GetModeString = function(self)
 					thingCount = thingCount + 1;
 					table.insert(things, string.sub(key, 7));
 				end
+			elseif solo and keyPrefix == "Accoun" and settings:Get(key) then
+				-- TODO: a bit wonky that a disabled Thing with AccountWide checked can make it non-solo...
+				solo = nil;
 			end
 		end
 		if thingCount == 0 then
@@ -465,6 +471,9 @@ settings.GetModeString = function(self)
 		elseif not settings:Get("Thing:Transmog") then
 			mode = L["TITLE_SOME_THINGS"] .. mode;
 		end
+		if solo then
+			mode = L["TITLE_SOLO"]..mode;
+		end
 	end
 	if self:Get("Filter:ByLevel") then
 		mode = L["TITLE_LEVEL"] .. app.Level .. " " .. mode;
@@ -482,8 +491,11 @@ settings.GetShortModeString = function(self)
 		local things = {};
 		local thingCount = 0;
 		local totalThingCount = 0;
+		local keyPrefix;
+		local solo = true;
 		for key,_ in pairs(GeneralSettingsBase.__index) do
-			if string.sub(key, 1, 6) == "Thing:" then
+			keyPrefix = string.sub(key, 1, 6);
+			if keyPrefix == "Thing:" then
 				totalThingCount = totalThingCount + 1;
 				if settings:Get(key) and
 					-- Quest Breadcrumbs only count when Quests are enabled
@@ -494,6 +506,8 @@ settings.GetShortModeString = function(self)
 					thingCount = thingCount + 1;
 					table.insert(things, string.sub(key, 7));
 				end
+			elseif solo and keyPrefix == "Accoun" and settings:Get(key) then
+				solo = nil;
 			end
 		end
 		local style;
@@ -508,6 +522,9 @@ settings.GetShortModeString = function(self)
 			end
 		else
 			style = "";
+		end
+		if solo then
+			style = "S"..style;
 		end
 		-- Waiting on Refresh to properly show values
 		if self.NeedsRefresh then

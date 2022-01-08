@@ -273,6 +273,7 @@ app.L = {
 				["TITLE_INSANE"] = "|cffADD8E6Insane|R ";
 				["TITLE_SOME_THINGS"] = "Some of the Things ";
 				["TITLE_LEVEL"] = "Level ";
+				["TITLE_SOLO"] = "Solo ";
 				["_BETA_LABEL"] = " |cff4AA7FF[Beta]|R";
 
 	["GENERAL_LABEL"] = "General";
