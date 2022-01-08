@@ -1013,7 +1013,7 @@ app.L = {
 	-- Warfront
 		[-237] = "Interface\\Icons\\achievement_zone_darkshore_01",							-- Warfront: The Battle for Darkshore
 	-- PvP
-		[-240] = "Interface\\Icons\\Achievement_BG_KillXEnemies_GeneralsRoom",				-- Rated
+		[-240] = "Interface\\Icons\\Achievement_rankedpvp_06",								-- Rated
 		[-242] = "Interface\\Icons\\Achievement_BG_KillXEnemies_GeneralsRoom",				-- Unrated
 		[-243] = "Interface\\Icons\\ability_hunter_markedfordeath",							-- Bounty
 	-- War Campaign
@@ -1344,11 +1344,11 @@ app.L = {
 	-- Is Used Somewhere
 		[-9965] = "Interface\\Icons\\achievement_level_110",						-- Class Hall
 		[-9966] = 1041860,															-- Dreanor Garrison
-		[-9983] = "Interface\\Icons\\Paladin_Protection",							-- Honor
+		[-9983] = "Interface\\Icons\\ability_pvp_gladiatormedallion",				-- Honor
 		[-10048] = "Interface\\Icons\\buff_feltreasures",							-- Mage Tower
 		[-10050] = "Interface\\Icons\\buff_epichunter",								-- Nether Disruptor
 		[-10057] = "Interface\\Icons\\Ability_Warrior_OffensiveStance",				-- War Effort
-		[-10058] = "Interface\\Icons\\Paladin_Protection",							-- World
+		[-10058] = app.asset("Category_Zones"),										-- World
 		[-10061] = "Interface\\Icons\\achievement_faction_celestials",				-- The Four Celestials
 		[-10067] = app.asset("Weapon_Type_Artifact"),								-- Artifacts
 	-- 8.3

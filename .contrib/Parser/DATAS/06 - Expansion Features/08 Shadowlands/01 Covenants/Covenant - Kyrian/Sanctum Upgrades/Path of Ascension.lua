@@ -1341,16 +1341,18 @@ for _,g in ipairs({ECHTHRA_GROUP,BINKIROS_GROUP,PHIXIN_GROUP,ZELESKOS_GROUP,{BRI
 end
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(KYRIAN, {
-		ach(14351, { -- The Path Towards Ascension 39
-			ach(14340),	-- The Path Towards Ascension 1
-			ach(14342),	-- The Path Towards Ascension 3
-			ach(14343),	-- The Path Towards Ascension 5
-			ach(14344),	-- The Path Towards Ascension 7
-			ach(14345),	-- The Path Towards Ascension 12
-			ach(14346),	-- The Path Towards Ascension 16
-			ach(14348),	-- The Path Towards Ascension 20
-			ach(14349),	-- The Path Towards Ascension 24
+	tier(SL_TIER, {
+		n(KYRIAN, {
+			ach(14351, { -- The Path Towards Ascension 39
+				ach(14340),	-- The Path Towards Ascension 1
+				ach(14342),	-- The Path Towards Ascension 3
+				ach(14343),	-- The Path Towards Ascension 5
+				ach(14344),	-- The Path Towards Ascension 7
+				ach(14345),	-- The Path Towards Ascension 12
+				ach(14346),	-- The Path Towards Ascension 16
+				ach(14348),	-- The Path Towards Ascension 20
+				ach(14349),	-- The Path Towards Ascension 24
+			}),
 		}),
 	}),
 	n(QUESTS, {
