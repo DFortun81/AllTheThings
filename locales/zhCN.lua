@@ -248,7 +248,7 @@ local L = app.L;
 	L.AFTER_REFRESH = "刷新后";
 
 	-- General tab
-		-- Mod Title
+		-- Mode Title
 			L.MODE = "模式";
 			L.TITLE_COMPLETIONIST = "完美主义 ";
 			L.TITLE_UNIQUE_APPEARANCE = "独特外观 ";
@@ -260,6 +260,7 @@ local L = app.L;
 			L.TITLE_INSANE = "|cffADD8E6疯狂|R ";
 			L.TITLE_SOME_THINGS = "随随便便 ";
 			L.TITLE_LEVEL = "等级 ";
+			L.TITLE_SOLO = "个人 ";
 			L._BETA_LABEL = " |cff4AA7FF[测试]|R";
 
 		L.GENERAL_LABEL = "通用";
