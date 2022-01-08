@@ -40,6 +40,7 @@ _.Zones =
 						i(183833),	-- Kash's Bag of Junk
 						i(184181),	-- Kash's Favored Hook
 						i(184189),	-- Stained Fleshgorer
+						i(181797),	-- Strange Cloth
 						i(184182),	-- Strengthened Abomination Hook
 					},
 				}),

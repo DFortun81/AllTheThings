@@ -184,6 +184,7 @@ local TooltipSettingsBase = {
 		["SummarizeThings"] = true,
 		["Warn:Difficulty"] = false,
 		["Warn:Removed"] = true,
+		["Currencies"] = false,
 	},
 };
 

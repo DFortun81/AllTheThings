@@ -241,6 +241,27 @@ _.Zones =
 						{ 69.0, 27.6, MALDRAXXUS },
 						{ 69.6, 33.5, MALDRAXXUS },
 					},
+					["g"] = sharedData({["coords"] = {
+						{ 63.8, 33.2, MALDRAXXUS },
+						{ 64.8, 35.8, MALDRAXXUS },
+						{ 65.5, 28.6, MALDRAXXUS },
+						{ 66.7, 29.0, MALDRAXXUS },
+						{ 70.1, 31.3, MALDRAXXUS },
+						{ 71.6, 35.2, MALDRAXXUS },
+					}},{
+						o(355040, {	-- Rune of Rituals
+							["questID"] = 61117,
+							["isDaily"] = true,
+						}),
+						o(355048, {	-- Rune of Rituals
+							["questID"] = 61118,
+							["isDaily"] = true,
+						}),
+						o(355049, {	-- Rune of Rituals
+							["questID"] = 61119,
+							["isDaily"] = true,
+						}),
+					}),
 				}),
 				o(345456, {		-- Runespeaker's Trove
 					["description"] = "You need |cFFFFFFFFPhaeton's Key|r from Runespeaker Phaeton at |cFFFFFFFF37.8, 70.1|r to open the chest. ",
