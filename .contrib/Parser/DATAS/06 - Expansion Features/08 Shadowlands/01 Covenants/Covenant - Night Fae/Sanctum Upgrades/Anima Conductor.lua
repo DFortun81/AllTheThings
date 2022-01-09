@@ -125,6 +125,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 											["isDaily"] = true,
 											["coords"] = {
 												{ 51.9, 31.5, ARDENWEALD },
+												{ 52.0, 30.9, ARDENWEALD },
 												{ 52.5, 30.9, ARDENWEALD },
 											},
 										}),
