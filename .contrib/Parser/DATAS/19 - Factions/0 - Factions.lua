@@ -15,7 +15,7 @@ _.Factions =
 			faction(72),	-- Stormwind
 			faction(1353),	-- Tushui Pandaren
 		})),
-		n(-304, sharedData({["races"] = ALLIANCE_ONLY,}, {	-- Battlegrounds
+		n(BATTLEGROUNDS, sharedData({["races"] = ALLIANCE_ONLY,}, {
 			faction(890),	-- Silverwing Sentinels
 			faction(730),	-- Stormpike Guards
 			faction(509),	-- The League of Arathor
@@ -70,7 +70,7 @@ _.Factions =
 			faction(81),	-- Thunder Bluff
 			faction(68),	-- Undercity
 		})),
-		n(-304, sharedData({["races"] = HORDE_ONLY,}, {	-- Battlegrounds
+		n(BATTLEGROUNDS, sharedData({["races"] = HORDE_ONLY,}, {
 			faction(729),	-- Frostwolf Clan
 			faction(510),	-- The Defilers
 			faction(889),	-- Warsong Outriders
