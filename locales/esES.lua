@@ -1332,7 +1332,6 @@ for key,value in pairs({
 	[213653] = "Lanza de pescar pandaren",	-- Pandaren Fishing Spear
 	[213741] = "Bastón jinyu antiguo",	-- Ancient Jinyu Staff
 	[213742] = "Martillo de los Diez Truenos",	-- Hammer of Ten Thunders
-	--TODO: [213743] = "Jade Infused Blade",	-- Jade Infused Blade
 	[213748] = "Piedra de ritual pandaren",	-- Pandaren Ritual Stone
 	[213749] = "Bastón del maestro oculto",	-- Staff of the Hidden Master
 	[213750] = "Tablilla de piedra de saurok",	-- Saurok Stone Tablet
@@ -2773,7 +2772,10 @@ for key,value in pairs({
 	[355035] = "Arca rúnica de los Elegidos",	-- Treasure: House of the Chosen
 	[355037] = "Arca vincularrunas",	-- Runebound Coffer
 	[355038] = "Arca vincularrunas",	-- Runebound Coffer
+	[355040] = "Runa de rituales",	-- Rune of Rituals
 	[355041] = "Alijo de la Luna",	-- Cache of the Moon
+	[355048] = "Runa de rituales",	-- Rune of Rituals
+	[355049] = "Runa de rituales",	-- Rune of Rituals
 	[355286] = "Ofrendas conmemorativas",	-- Memorial Offerings
 	[355296] = "Recompensa: control de bestias",	-- Bounty: Beast Control
 	[355355] = "Cofre armónico",	-- Harmonic Chest
@@ -2918,6 +2920,7 @@ for key,value in pairs({
 	[369438] = "Alijo vinculafalla",	-- Riftbound Cache
 	[369439] = "Alijo vinculafalla",	-- Riftbound Cache
 	[369440] = "Alijo vinculafalla",	-- Riftbound Cache
+	[370469] = "Pienso espectral",	-- Spectral Feed
 	[9962198] = "Charco mugroso improvisado de desterrado",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only

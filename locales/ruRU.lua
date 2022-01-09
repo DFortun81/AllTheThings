@@ -1314,7 +1314,6 @@ for key,value in pairs({
 	[213653] = "Пандаренская острога",	-- Pandaren Fishing Spear
 	[213741] = "Древний посох цзинь-юй",	-- Ancient Jinyu Staff
 	[213742] = "Молот Десяти Громов",	-- Hammer of Ten Thunders
-	[213743] = "Заряженный нефритом клинок",	-- Jade Infused Blade	--TODO: This was manually translated
 	[213748] = "Пандаренский ритуальный камень",	-- Pandaren Ritual Stone
 	[213749] = "Посох тайного мастера",	-- Staff of the Hidden Master
 	[213750] = "Каменная скрижаль сауроков",	-- Saurok Stone Tablet
@@ -2755,7 +2754,10 @@ for key,value in pairs({
 	[355035] = "Рунический сундук дома Избранных",	-- Treasure: House of the Chosen
 	[355037] = "Зачарованный рунами ящик",	-- Runebound Coffer
 	[355038] = "Зачарованный рунами ящик",	-- Runebound Coffer
+	[355040] = "Руна дома Ритуалов",	-- Rune of Rituals
 	[355041] = "Тайник луны",	-- Cache of the Moon
+	[355048] = "Руна дома Ритуалов",	-- Rune of Rituals
+	[355049] = "Руна дома Ритуалов",	-- Rune of Rituals
 	[355286] = "Подношения у мемориала",	-- Memorial Offerings
 	[355296] = "Награда: борьба с чудовищами",	-- Bounty: Beast Control
 	[355355] = "Сундук гармонии",	-- Harmonic Chest
@@ -2900,6 +2902,7 @@ for key,value in pairs({
 	[369438] = "Тайник Разлома",	-- Riftbound Cache
 	[369439] = "Тайник Разлома",	-- Riftbound Cache
 	[369440] = "Тайник Разлома",	-- Riftbound Cache
+	[370469] = "Призрачный корм",	-- Spectral Feed
 	[9962198] = "Самодельная лужа жижи изгоя",	-- Outcast's Makeshift Muckpool
 	[9999890] = "Оскверненная добыча",	-- Corrupted Loot
 	[9999891] = "Только Основная Задача",	-- Main Objective Only

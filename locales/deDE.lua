@@ -1329,7 +1329,6 @@ for key,value in pairs({
 	[213653] = "Pandarischer Fischspeer",	-- Pandaren Fishing Spear
 	[213741] = "Uralter Stab der Jinyu",	-- Ancient Jinyu Staff
 	[213742] = "Hammer der zehn Donner",	-- Hammer of Ten Thunders
-	--TODO: [213743] = "Jade Infused Blade",	-- Jade Infused Blade
 	[213748] = "Pandarischer Ritualstein",	-- Pandaren Ritual Stone
 	[213749] = "Stab des verborgenen Meisters",	-- Staff of the Hidden Master
 	[213750] = "Steintafel der Saurok",	-- Saurok Stone Tablet
@@ -2770,7 +2769,10 @@ for key,value in pairs({
 	[355035] = "Runenlade der Auserwählten",	-- Treasure: House of the Chosen
 	[355037] = "Runengebundene Lade",	-- Runebound Coffer
 	[355038] = "Runengebundene Lade",	-- Runebound Coffer
+	[355040] = "Rune der Rituale",	-- Rune of Rituals
 	[355041] = "Truhe des Mondes",	-- Cache of the Moon
+	[355048] = "Rune der Rituale",	-- Rune of Rituals
+	[355049] = "Rune der Rituale",	-- Rune of Rituals
 	[355286] = "Gedenkopfergaben",	-- Memorial Offerings
 	[355296] = "Kopfgeld: Wildtierkontrolle",	-- Bounty: Beast Control
 	[355355] = "Harmonische Truhe",	-- Harmonic Chest
@@ -2915,6 +2917,7 @@ for key,value in pairs({
 	[369438] = "Rissgebundene Truhe",	-- Riftbound Cache
 	[369439] = "Rissgebundene Truhe",	-- Riftbound Cache
 	[369440] = "Rissgebundene Truhe",	-- Riftbound Cache
+	[370469] = "Spektrales Futter",	-- Spectral Feed
 	[9962198] = "Behelfsmäßige Schlammlache des Ausgestoßenen",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
