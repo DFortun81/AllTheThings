@@ -1328,7 +1328,6 @@ for key, value in pairs({
 	[213653] = "熊猫人鱼叉",	-- Pandaren Fishing Spear	--TODO: This was manually translated
 	[213741] = "远古锦鱼人法杖",	-- Ancient Jinyu Staff
 	[213742] = "十雷之锤",	-- Hammer of Ten Thunders
-	[213743] = "镶玉之刃",	-- Jade Infused Blade	--TODO: This was manually translated
 	[213748] = "熊猫人仪式石",	-- Pandaren Ritual Stone
 	[213749] = "隐秘大师之杖",	-- Staff of the Hidden Master
 	[213750] = "蜥蜴人石板",	-- Saurok Stone Tablet
@@ -2769,7 +2768,10 @@ for key, value in pairs({
 	[355035] = "魂选符文宝匣",	-- Treasure: House of the Chosen
 	[355037] = "符文之缚宝匣",	-- Runebound Coffer
 	[355038] = "符文之缚宝匣",	-- Runebound Coffer
+	[355040] = "祭仪符文",	-- Rune of Rituals
 	[355041] = "月亮宝箱",	-- Cache of the Moon
+	[355048] = "祭仪符文",	-- Rune of Rituals
+	[355049] = "祭仪符文",	-- Rune of Rituals
 	[355286] = "祭品",	-- Memorial Offerings
 	[355296] = "悬赏：兽群控制",	-- Bounty: Beast Control
 	[355355] = "和谐宝箱",	-- Harmonic Chest
@@ -2914,6 +2916,7 @@ for key, value in pairs({
 	[369438] = "隙缚宝箱",	-- Riftbound Cache
 	[369439] = "隙缚宝箱",	-- Riftbound Cache
 	[369440] = "隙缚宝箱",	-- Riftbound Cache
+	--TODO: [370469] = "Spectral Feed",	-- Spectral Feed
 	[9962198] = "流亡者的简易泥池",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only

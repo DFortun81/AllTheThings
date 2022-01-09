@@ -1328,7 +1328,6 @@ for key,value in pairs({
 	[213653] = "판다렌 고기잡이용 작살",	-- Pandaren Fishing Spear
 	[213741] = "고대 진위 지팡이",	-- Ancient Jinyu Staff
 	[213742] = "열 천둥의 망치",	-- Hammer of Ten Thunders
-	--TODO: [213743] = "Jade Infused Blade",	-- Jade Infused Blade
 	[213748] = "판다렌 의식용 돌",	-- Pandaren Ritual Stone
 	[213749] = "은둔 고수의 봉",	-- Staff of the Hidden Master
 	[213750] = "사우록 돌 서판",	-- Saurok Stone Tablet
@@ -2769,7 +2768,10 @@ for key,value in pairs({
 	[355035] = "선택받은 룬궤짝",	-- Treasure: House of the Chosen
 	[355037] = "룬결속 함",	-- Runebound Coffer
 	[355038] = "룬결속 함",	-- Runebound Coffer
+	[355040] = "의식의 룬",	-- Rune of Rituals
 	[355041] = "달의 보관함",	-- Cache of the Moon
+	[355048] = "의식의 룬",	-- Rune of Rituals
+	[355049] = "의식의 룬",	-- Rune of Rituals
 	[355286] = "추모 제물",	-- Memorial Offerings
 	[355296] = "현상 수배: 야수 조절",	-- Bounty: Beast Control
 	[355355] = "조화의 상자",	-- Harmonic Chest
@@ -2914,6 +2916,7 @@ for key,value in pairs({
 	[369438] = "균열결속 보관함",	-- Riftbound Cache
 	[369439] = "균열결속 보관함",	-- Riftbound Cache
 	[369440] = "균열결속 보관함",	-- Riftbound Cache
+	--TODO: [370469] = "Spectral Feed",	-- Spectral Feed
 	[9962198] = "추방자의 급조한 진흙 웅덩이",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
