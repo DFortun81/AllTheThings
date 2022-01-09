@@ -666,6 +666,7 @@ for key,value in pairs({
 	-- Class Hall /Artifact
 		[-159] = "Ролл События",									-- Daily Dreamway Event Roll
 	-- Other
+		[-210] = "Новый персонаж Союзной расы",						-- Allied New Character
 		[-211] = "Новый персонаж",									-- New Character
 		[-212] = "Сундук с сокровищами",							-- Treasure Chest
 	-- Fishing

@@ -686,6 +686,7 @@ for key,value in pairs({
 	-- Class Hall /Artifact
 		--TODO: [-159] = "Event Roll",								-- Daily Dreamway Event Roll
 	-- Other
+		--TODO: [-210] = ALLIED.." "..NEW.." "..CHARACTER,			-- Allied New Character
 		--TODO: [-211] = NEW.." "..CHARACTER,						-- New Character
 		--TODO: [-212] = GetSpellInfo(225652).." "..GetSpellInfo(168498),-- Treasure Chest
 	-- Fishing

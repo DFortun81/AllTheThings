@@ -1496,7 +1496,7 @@ app.L = {
 	-- Events
 		[-176] = CALENDAR_FILTER_WEEKLY_HOLIDAYS,								-- Weekly Holidays
 	-- Item Sets
-		[-210] = NEW.." "..CHARACTER,											-- Allied New Character
+		[-210] = ALLIED.." "..NEW.." "..CHARACTER,								-- Allied New Character
 		[-211] = NEW.." "..CHARACTER,											-- New Character
 	-- Treasure Chest
 		[-212] = GetSpellInfo(225652).." "..GetSpellInfo(168498),				-- Treasure Chest

@@ -681,6 +681,8 @@ for key,value in pairs({
 		[-155] = string.format(SPELLBOOK_AVAILABLE_AT, 50).." ".."（直升）",	-- Level 50 (Boost)
 	-- Class Hall /Artifact
 		[-159] = "事件投骰",										-- Daily Dreamway Event Roll
+	-- Other
+		--TODO: [-210] = ALLIED.." "..NEW.." "..CHARACTER,			-- Allied New Character
 	-- Fishing
 		[-217] = "鱼竿",												-- Lures (for Fishing)
 		[-218] = "鱼饵",												-- Coastal (for Fishing)
