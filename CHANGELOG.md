@@ -1,21 +1,56 @@
 # AllTheThings
 
-## [SL-2.6.7](https://github.com/DFortun81/AllTheThings/tree/SL-2.6.7) (2022-01-02)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.6.6...SL-2.6.7) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [SL-2.6.8](https://github.com/DFortun81/AllTheThings/tree/SL-2.6.8) (2022-01-09)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.6.7...SL-2.6.8) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
+
+### Highlights of this update
+
+#### Calculating number of currency/items needed to purchase uncollected Things
+
+New toggle in the ATT Settings -> Interface tab. Enable to see how many items/currency you need to buy all missing collectible Things bought with it.
+
+Example: "Items needed to buy not collected Things: 14000" on the Polished Pet Charm tooltip.
+
+Caveats:
+
+- Only works for Things that can be purchased directly with currency/item.
+- Doesn't work for gold.
+- Doesn't work for items obtained from containers (both RNG-based and rewarding multiple items, plus special cases). Examples include:
+  - Legion legendaries BoA containers. Specifically, Wakening Essence will always show `0`, but this is due to how vendor data is stored in ATT.
+  - Purchasable Korthia gear will not contribute to Stygia calculation.
+  - Seafarer's Dubloon Salvages.
+  - Valor chests.
+
+Planned improvements:
+- Crafting reagents calculation.
+- Recursive calculation to account for items that are used to craft other items.
+
+Credit for this feature goes to @lOlbas/Æltona!
+
+#### Solo collection mode
+
+Added the collection Mode prefix 'Solo' to indicate that no other characters are being used to boost collection numbers (i.e. Account-Wide disabled wherever possible).
 
 ### Notable changes:
 
-- We won't force a location update after loading screens anymore. If you encounter minilist not updating after loading screen, report it on our Discord server.
-- Added a bit of logic for popout ATT windows to remove themselves from the window cache after being closed for over 5 minutes (allows for memory clean up and faster update processing when someone has opened many windows which have later been closed and unused for some time, especially if they have "Ad-Hoc Updates" off).
-- You should no longer see currencies under groups that you have already completed (i.e. pet charms from a one-time Treasure). This does not apply when you are in Account mode.
-- Added an icon to tooltips of groups which contain other collectibles, and themselves are collectible or trackable (i.e. be able to tell in the tooltip if you've killed a Rare or otherwise collectible NPC, or container, etc.) Feel free to comment on whether the position should be adjusted or modify the placement within the tooltip.
-- Fixed Source locations not showing in tooltips in some situations.
-- Recipe collectible status was rolled back to previous implementation due to some bugs.
-- Fixed a few mounts so that they show up in the main list dynamic category. We still have some mounts (and other categories, like toys) missing from these new lists so feel free to report which ones are missing.
-- Apparently various dungeons were set to show the wrong item information in the ATT lists for Heroic difficulties. This is rather, uh, not helpful. Now fixed.
-- More WoD (and other) quests.
-- Fixed showing all of BC timewalking content inside of Shattrath.
-- Gave the BC TW vendor proper coords so it does show up individually as expected.
-- Tome of Burning Jewels should now show possible recipe unlocks.
+- Greatly condensed Profession/Tradeskill list logic. Repeatedly crafting stuff will no longer cause micro-stutters while the tradeskill window is visible.
+- Restored some missing info in tooltips (for example, profession on the crafting reagents tooltip).
+- The setting 'Show Completed Things' will now work for newly learned Recipes as well, with a clickable link to see the recipe in an ATT popout window.
+- Simple Dynamic groups will no longer consider their Things as a 'cost' for other collectibles.
+- Re-designed the loading process for ATT, which should fix some bugs and make it faster.
+- Fixed a bug with cached saved variable data related to characters that transfer.
+- Some clean up for Maw Assaults.
+- Adamant Vaults updates.
+- Added the Crafter's Mark Recipes from The Maw & Korthia (finally).
+- Added Goat/Snake souls to all calling boxes.
+- Simplified/fixed the Sources of JC patterns from Battle for Mount Hyjal in Retail.
+- Fixed Legion Class Hall Mount chain pre-requisites.
+- Vial of the Sands specifically requires Alchemy to learn, in addition to being nested under Archaeology header.
+- Various quest fixes in BC, WotLK.
+- Pepe/Selfie Filters are ordered properly in the list now.
+- Some missing mounts were given source.
+- Fixed Covenant Anima Counductor Rares not being un-flagged from the Covenant properly.
+- Blanchy hand-ins and Mark of the Nightwing Raven marked as once per account quests.
+- More zhCN updates.
 - Other fixes.
