@@ -412,6 +412,9 @@ _.ExpansionFeatures =
 							["coord"] = { 42.9, 45.7, 739 },
 							["g"] = {
 								{ ["mountID"] = 229386 },	-- Huntmaster's Loyal Wolfhawk
+									i(142227, {		-- Huntmaster's Loyal Wolfhawk
+										["classes"] = { HUNTER },
+								}),
 							},
 						}),
 						q(40955, {	-- Oath of Service

@@ -989,7 +989,8 @@ app.L = {
 		[-170] = "Interface\\Icons\\spell_shaman_maelstromweapon",							-- Balance of Power
 	-- Events
 		[-176] = 3753381,																	-- Weekly Holidays
-	-- Item Sets
+	-- New Characters
+		[-210] = 1530081,																	-- Allied New Characters
 		[-211] = 1530081,																	-- New Characters
 	-- Treasure Chest
 		[-212] = app.asset("Interface_Tchest"),									            -- Treasure Chest
@@ -1495,6 +1496,7 @@ app.L = {
 	-- Events
 		[-176] = CALENDAR_FILTER_WEEKLY_HOLIDAYS,								-- Weekly Holidays
 	-- Item Sets
+		[-210] = NEW.." "..CHARACTER,											-- Allied New Character
 		[-211] = NEW.." "..CHARACTER,											-- New Character
 	-- Treasure Chest
 		[-212] = GetSpellInfo(225652).." "..GetSpellInfo(168498),				-- Treasure Chest

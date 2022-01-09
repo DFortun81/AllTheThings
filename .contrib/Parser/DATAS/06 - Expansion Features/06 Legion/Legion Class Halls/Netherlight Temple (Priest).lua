@@ -647,6 +647,9 @@ _.ExpansionFeatures =
 							["lvl"] = 110,
 							["g"] = {
 								mount(229377),	-- High Priest's Lightsworn Seeker
+								i(142224, {		-- High Priest's Lightsworn Seeker
+									["classes"] = { PRIEST },
+								}),
 							},
 						}),
 						q(44407, {	-- The Third Legend
