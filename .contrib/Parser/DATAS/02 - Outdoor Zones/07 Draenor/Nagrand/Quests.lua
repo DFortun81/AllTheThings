@@ -150,6 +150,7 @@ _.Zones =
 				q(39299, {	-- Black Marketeering
 					["provider"] = { "n", 83888 },	-- Mister Knuckles
 					["coord"] = { 53.8, 15.0, DRAENOR_NAGRAND },
+					["sourceQuest"] = 39278,	-- The Missing Manifest
 					["g"] = {
 						currency(824),	-- Garrison Resources
 					},

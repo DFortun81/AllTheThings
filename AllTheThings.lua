@@ -3401,9 +3401,13 @@ local function FillPurchases(group, depth)
 	-- default to 2 levels of filling, i.e. 0) Raid Essence -> 1) Tier Token -> 2) Item
 	depth = depth or 2;
 	-- if app.DEBUG_PRINT then print("FillPurchases?",group.hash,depth) end
-	if depth <= 0 then return; end
+	if depth < 1 then return; end
 	-- do not fill purchases on certain items, can skip the skip though based on a level
-	if (app.SkipPurchases[-1] or 0) < (app.SkipPurchases[group.itemID or -1] or 0) then return; end
+	local reqSkipLevel = group.itemID and app.SkipPurchases[group.itemID];
+	if reqSkipLevel then
+		local curSkipLevel = app.SkipPurchases[-1];
+		if curSkipLevel and curSkipLevel < reqSkipLevel then return; end;
+	end
 	-- do not fill 'saved' groups (unless they are actual Maps or Instances, or a Difficulty header. Also 'saved' Items usually means tied to a questID directly)
 	-- or groups directly under saved groups unless in Acct or Debug mode
 	if not app.MODE_DEBUG_OR_ACCOUNT and not (group.instanceID or group.mapID or group.difficultyID or group.itemID) then
@@ -3412,7 +3416,7 @@ local function FillPurchases(group, depth)
 		if rawParent and rawParent.saved then return; end
 	end
 
-	local collectibles = group.costCollectibles or (group.collectibleAsCost and group.costCollectibles or group.costCollectibles);
+	local collectibles = group.costCollectibles or (group.collectibleAsCost and group.costCollectibles);
 	-- if app.DEBUG_PRINT then print("GetPurchases",collectibles and #collectibles) end
 	if collectibles and #collectibles > 0 then
 		-- Nest new copies of the cost collectible objects of this group under itself
@@ -17077,7 +17081,6 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					end
 				end
 
-				if self.data then wipe(self.data); end
 				-- Swap out the map data for the header.
 				self.data = header;
 				self.data.u = nil;
@@ -17088,8 +17091,6 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					or self.data.classID and app.BaseCharacterClass
 					or self.data.achID and app.BaseMapWithAchievementID or app.BaseMap);
 
-				-- sort only the top layer of groups if not in an instance, force visible so sort goes through
-				-- print(GetInstanceInfo());
 				-- sort top level by name if not in an instance
 				if not GetRelativeValue(self.data, "instanceID") then
 					SortGroup(self.data, "name");

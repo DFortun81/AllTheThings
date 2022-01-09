@@ -116,6 +116,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 											["questID"] = 61696,
 											["isDaily"] = true,
 											["coords"] = {
+												{ 52.3, 32.4, ARDENWEALD },
 												{ 52.5, 33.4, ARDENWEALD },
 											},
 										}),
@@ -123,6 +124,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 											["questID"] = 61695,
 											["isDaily"] = true,
 											["coords"] = {
+												{ 51.9, 31.5, ARDENWEALD },
 												{ 52.5, 30.9, ARDENWEALD },
 											},
 										}),
@@ -131,6 +133,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 											["isDaily"] = true,
 											["coords"] = {
 												{ 51.0, 34.4, ARDENWEALD },
+												{ 51.5, 34.1, ARDENWEALD },
 											},
 										}),
 										n(173009,{	-- Lunarlight Bud
@@ -138,6 +141,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 											["isDaily"] = true,
 											["coords"] = {
 												{ 50.0, 33.3, ARDENWEALD },
+												{ 50.4, 33.0, ARDENWEALD },
 											},
 										}),
 										n(173010,{	-- Lunarlight Bud
@@ -145,6 +149,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 											["isDaily"] = true,
 											["coords"] = {
 												{ 50.2, 31.6, ARDENWEALD },
+												{ 50.5, 31.8, ARDENWEALD },
 											},
 										}),
 									},
