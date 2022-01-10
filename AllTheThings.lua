@@ -16927,6 +16927,9 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		-- GARRISONS
 			[-9966] = true,
 		};
+		-- self.Rebuild
+		(function()
+		local results, groups, nested, header, inInstance, difficultyID, topHeader, nextParent, headerID, groupKey, typeHeaderID;
 		self.Rebuild = function(self)
 			-- print("Rebuild",self.mapID);
 			-- check if this is the same 'map' for data purposes
@@ -16935,23 +16938,22 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				return;
 			end
 			wipe(self.CurrentMaps);
-			local results = SearchForField("mapID", self.mapID);
+			results = SearchForField("mapID", self.mapID);
 			if results then
 				-- print(#results,"Minilist Results for mapID",self.mapID)
 				-- Simplify the returned groups
-				local groups, nested = {};
-				local header = app.CreateMap(self.mapID, { g = groups });
+				groups = {};
+				header = app.CreateMap(self.mapID, { g = groups });
 				self.CurrentMaps[self.mapID] = true;
-				local inInstance = IsInInstance();
+				inInstance = IsInInstance();
 				for _,group in ipairs(results) do
 					-- do not use any raw Source groups in the final list
 					group = CreateObject(group);
 					-- print(group.key,group.key and group[group.key],group.text)
 					nested = nil;
 
-					-- Cache the difficultyID, if there is one. Also, ignore the event tag for anything that isn't Bizmo's Brawlpub.
-					local difficultyID = not GetRelativeField(group, "headerID", -496) and GetRelativeValue(group, "difficultyID");
-
+					-- Cache the difficultyID, if there is one
+					difficultyID = GetRelativeValue(group, "difficultyID");
 
 					-- groups which 'should' be a root of the minilist
 					if (group.instanceID or group.mapID or group.key == "classID")
@@ -16970,8 +16972,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 						group = nil;
 					else
 						-- Get the header chain for the group
-						local topHeader;
-						local nextParent, headerID = group.parent;
+						nextParent = group.parent;
 
 						-- Pre-nest some groups based on their type after grabbing the parent
 						-- Achievements / Achievement / Criteria
@@ -16981,6 +16982,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 						end
 
 						-- Building the header chain for each mapped Thing
+						topHeader = nil;
 						while nextParent do
 							headerID = nextParent.headerID;
 							if headerID then
@@ -17016,7 +17018,8 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 
 					-- couldn't nest this thing using custom headers, try to use the key of the group to figure it out
 					if not nested and group then
-						local groupKey, typeHeaderID = group.key;
+						groupKey = group.key;
+						typeHeaderID = nil;
 						-- determine the expected top header for this 'thing' based on its key
 						for headerID,key in pairs(topHeaders) do
 							if groupKey == key then
@@ -17199,6 +17202,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			self.ScrollBar:SetValue(1);
 			return true;
 		end
+		end)();
 		local function OpenMiniList(id, show)
 			-- print("OpenMiniList",id,show);
 			-- Determine whether or not to forcibly reshow the mini list.
