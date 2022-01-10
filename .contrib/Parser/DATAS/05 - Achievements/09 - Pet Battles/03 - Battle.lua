@@ -67,7 +67,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 				["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
 			}),
 			crit(10, {	-- Christoph VonFeasel (Darkmoon Island)
-				["coord"] = { 47.4, 62.2, 407 },
+				["_quests"] = { 36471 },	-- A New Darkmoon Challenger!
 			}),
 			crit(11, {	-- Courageous Yon
 				["coord"] = { 35.8, 73.6, KUN_LAI_SUMMIT },
@@ -97,7 +97,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 				["coord"] = { 48.0, 54.0, THE_JADE_FOREST },
 			}),
 			crit(20, {	-- Jeremy Feasel (Darkmoon Island)
-				["coord"] = { 47.8, 62.6, 407 },
+				["_quests"] = { 32175 },	-- Darkmoon Pet Battle!
 			}),
 			crit(21, {	-- Lorewalker Cho (Celestial Tournament)
 				["coord"] = { 34.8, 59.6, TIMELESS_ISLE },

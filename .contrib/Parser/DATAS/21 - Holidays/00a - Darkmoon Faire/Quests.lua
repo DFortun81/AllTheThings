@@ -116,14 +116,6 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 			["provider"] = { "i", 71951 },	-- Banner of the Fallen
 			["coord"] = { 51.9, 60.9, 407 },
 			["lvl"] = 10,
-			["g"] = {
-				crit(2, {	-- Banner of the Fallen
-					["achievementID"] = 6028,	-- Darkmoon Defender
-				}),
-				crit(5, {	-- Banner of the Fallen
-					["achievementID"] = 6029,	-- Darkmoon Despoiler
-				}),
-			},
 		}),
 		q(29447, {	-- A Curious Crystal
 			["u"] = REMOVED_FROM_GAME,
@@ -133,26 +125,13 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 			["provider"] = { "i", 71635 },	-- Imbued Crystal
 			["coord"] = { 51.9, 60.9, 407 },
 			["lvl"] = 10,
-			["g"] = {
-				crit(2, {	-- Imbued Crystal
-					["achievementID"] = 6027,	-- Darkmoon Dungeoneer
-				}),
-				crit(8, {	-- Imbued Crystal
-					["achievementID"] = 6029,	-- Darkmoon Despoiler
-				}),
-			},
 		}),
 		q(29506, {	-- A Fizzy Fusion
 			["requireSkill"] = ALCHEMY,
-			["description"] = "Requires |CFFFFD7005 Moonberry Juice|r to complete.",
 			["isMonthly"] = true,
 			["provider"] = { "n", 14844 },	-- Sylvannia
 			["coord"] = { 50.5, 69.5, 407 },
-			["g"] = {
-				crit(1, {	-- Alchemy
-					["achievementID"] = 6032,	-- Faire Favors
-				}),
-			},
+			["cost"] = { { "i", 1645, 5 } },	-- x5 Moonberry Juice
 		}),
 		q(29478, {	-- A Fizzy Fusion
 			["requireSkill"] = ALCHEMY,
@@ -163,14 +142,6 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 			["provider"] = { "i", 71636 },	-- Monstrous Egg
 			["coord"] = { 51.1, 82.0, 407 },
 			["lvl"] = 10,
-			["g"] = {
-				crit(3, {	-- Monstrous Egg
-					["achievementID"] = 6027,	-- Darkmoon Dungeoneer
-				}),
-				crit(9, {	-- Monstrous Egg
-					["achievementID"] = 6029,	-- Darkmoon Despoiler
-				}),
-			},
 		}),
 		q(29449, {	-- An Intriguing Grimoire
 			["u"] = REMOVED_FROM_GAME,
@@ -180,14 +151,6 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 			["provider"] = { "i", 71637 },	-- Mysterious Grimoire
 			["coord"] = { 53.2, 75.8, 407 },
 			["lvl"] = 10,
-			["g"] = {
-				crit(4, {	-- Mysterious Grimoire
-					["achievementID"] = 6027,	-- Darkmoon Dungeoneer
-				}),
-				crit(3, {	-- Mysterious Grimoire
-					["achievementID"] = 6029,	-- Darkmoon Despoiler
-				}),
-			},
 		}),
 		q(29450, {	-- A Wondrous Weapon
 			["u"] = REMOVED_FROM_GAME,
@@ -197,14 +160,6 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 			["provider"] = { "i", 71638 },	-- Ornate Weapon
 			["coord"] = { 51.9, 60.9, 407 },
 			["lvl"] = 10,
-			["g"] = {
-				crit(5, {	-- Ornate Weapon
-					["achievementID"] = 6027,	-- Darkmoon Dungeoneer
-				}),
-				crit(4, {	-- Ornate Weapon
-					["achievementID"] = 6029,	-- Darkmoon Despoiler
-				}),
-			},
 		}),
 		q(7885, {	-- Armor Kits
 			["requireSkill"] = LEATHERWORKING,
@@ -221,11 +176,6 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 			["isMonthly"] = true,
 			["provider"] = { "n", 14829 },	-- Yebb Neblegear
 			["coord"] = { 51.1, 82.0, 407 },
-			["g"] = {
-				crit(3, {	-- Blacksmithing
-					["achievementID"] = 6032,	-- Faire Favors
-				}),
-			},
 		}),
 		q(29468, {	-- Baby Needs Two Pair of Shoes
 			["u"] = NEVER_IMPLEMENTED,
@@ -233,14 +183,13 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 		}),
 		q(29520, {	-- Banners, Banners Everywhere!
 			["requireSkill"] = TAILORING,
-			["description"] = "Requires |CFFFFD70010 Shiny Bauble|r, |CFFFFD7005 Coarse Thread|r, |CFFFFD7005 Blue Dye|r to complete.",
 			["isMonthly"] = true,
 			["provider"] = { "n", 10445 },	-- Selina Dourman
 			["coord"] = { 55.56, 55.03, 407 },
-			["g"] = {
-				crit(11, {	-- Leatherworking
-					["achievementID"] = 6032,	-- Faire Favors
-				}),
+			["cost"] = {
+				{ "i", 2320, 1 },	-- Coarse Thread
+				{ "i", 2604, 1 },	-- Red Dye
+				{ "i", 6260, 1 },	-- Blue Dye
 			},
 		}),
 		q(29480, {	-- Banners, Banners Everywhere!
@@ -577,14 +526,13 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 		}),
 		q(29517, {	-- Eyes on the Prizes
 			["requireSkill"] = LEATHERWORKING,
-			["description"] = "Requires |CFFFFD7001 Coarse Thread|r, |CFFFFD7001 Red Dye|r, |CFFFFD7001 Blue Dye|r, to complete.",
 			["isMonthly"] = true,
 			["provider"] = { "n", 14841 },	-- Rinling
 			["coord"] = { 49.2, 60.7, 407 },
-			["g"] = {
-				crit(14, {	-- Tailoring
-					["achievementID"] = 6032,	-- Faire Favors
-				}),
+			["cost"] = {
+				{ "i", 6529, 10 },	-- Shiny Bauble
+				{ "i", 2320, 5 },	-- Coarse Thread
+				{ "i", 6260, 5 },	-- Blue Dye
 			},
 		}),
 		q(29472, {	-- Eyes on the Prizes
@@ -607,15 +555,10 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 		}),
 		q(29507, {	-- Fun for the Little Ones
 			["requireSkill"] = ARCHAEOLOGY,
-			["description"] = "Requires |CFFFFD70050 Fossil Archaeology Fragments|r to complete.",
 			["isMonthly"] = true,
 			["provider"] = { "n", 14847 },	-- Professor Thaddeus
 			["coord"] = { 51.9, 60.9, 407 },
-			["g"] = {
-				crit(2, {	-- Archaeology
-					["achievementID"] = 6032,	-- Faire Favors
-				}),
-			},
+			["cost"] = { { "c", 393, 15 } },	-- x15 Fossil Archaeology Fragments
 		}),
 		q(8222, {	-- Glowing Scorpid Blood
 			["u"] = REMOVED_FROM_GAME,
@@ -664,11 +607,6 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 			["isMonthly"] = true,
 			["provider"] = { "n", 14833 },	-- Chronos
 			["coord"] = { 54.9, 70.7, 407 },
-			["g"] = {
-				crit(8, {	-- Herbalism
-					["achievementID"] = 6032,	-- Faire Favors
-				}),
-			},
 		}),
 		q(29438, {	-- He Shoots, He Scores!
 			["isDaily"] = true,
@@ -676,9 +614,6 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 			["coord"] = { 49.2, 60.7, 407 },
 			["g"] = {
 				ach(6022),	-- Quick Shot
-				crit(2, {	-- Shooting Gallery
-					["achievementID"] = 6020,	-- Step Right Up
-				}),
 				i(93724),	-- Darkmoon Game Prize
 			},
 		}),
@@ -694,9 +629,6 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 				ach(9983, {	-- That's Whack!
 					i(123862),	-- Hogs' Studded Collar
 				}),
-				crit(5, {	-- Whack-A-Gnoll
-					["achievementID"] = 6020,	-- Step Right Up
-				}),
 				i(93724),	-- Darkmoon Game Prize
 			},
 		}),
@@ -705,11 +637,6 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 			["isMonthly"] = true,
 			["provider"] = { "n", 14833 },	-- Chronos
 			["coord"] = { 54.9, 70.7, 407 },
-			["g"] = {
-				crit(10, {	-- Jewelcrafting
-					["achievementID"] = 6032,	-- Faire Favors
-				}),
-			},
 		}),
 		q(29483, {	-- Keeping the Faire Sparkling
 			["requireSkill"] = JEWELCRAFTING,
@@ -793,15 +720,10 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 		}),
 		q(29509, {	-- Putting the Crunch in the Frog
 			["requireSkill"] = COOKING,
-			["description"] = "Requires |CFFFFD7005 Simple Flour|r to complete.",
 			["isMonthly"] = true,
 			["provider"] = { "n", 14845 },	-- Stamp Thunderhorn
 			["coord"] = { 52.8, 67.9, 407 },
-			["g"] = {
-				crit(4, {	-- Cooking
-					["achievementID"] = 6032,	-- Faire Favors
-				}),
-			},
+			["cost"] = { { "i", 30817, 5 } },	-- x5 Simple Flour
 		}),
 		q(29484, {	-- Putting the Crunch in the Frog
 			["u"] = REMOVED_FROM_GAME,
@@ -815,11 +737,6 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 			["isMonthly"] = true,
 			["provider"] = { "n", 14822 },	-- Sayge
 			["coord"] = { 53.2, 75.8, 407 },
-			["g"] = {
-				crit(5, {	-- Enchanting
-					["achievementID"] = 6032,	-- Faire Favors
-				}),
-			},
 		}),
 		q(29469, {	-- Rearm, Reuse, Recycle
 			["u"] = REMOVED_FROM_GAME,
@@ -829,11 +746,6 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 			["isMonthly"] = true,
 			["provider"] = { "n", 14841 },	-- Rinling
 			["coord"] = { 49.2, 60.7, 407 },
-			["g"] = {
-				crit(12, {	-- Mining
-					["achievementID"] = 6032,	-- Faire Favors
-				}),
-			},
 		}),
 		q(36477, {	-- Ring of Promises
 			["provider"] = { "i", 116068 },	-- Erinys
@@ -906,11 +818,6 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 			["isMonthly"] = true,
 			["provider"] = { "n", 14845 },	-- Stamp Thunderhorn
 			["coord"] = { 52.8, 67.9, 407 },
-			["g"] = {
-				crit(7, {	-- Fishing
-					["achievementID"] = 6032,	-- Faire Favors
-				}),
-			},
 		}),
 		q(12798, {	-- Swords Deck
 			["repeatable"] = true,
@@ -930,22 +837,12 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 			["isMonthly"] = true,
 			["provider"] = { "n", 14841 },	-- Rinling
 			["coord"] = { 49.2, 60.7, 407 },
-			["g"] = {
-				crit(6, {	-- Engineering
-					["achievementID"] = 6032,	-- Faire Favors
-				}),
-			},
 		}),
 		q(29519, {	-- Tan My Hide
 			["requireSkill"] = SKINNING,
 			["isMonthly"] = true,
 			["provider"] = { "n", 14833 },	-- Chronos
 			["coord"] = { 54.9, 70.7, 407 },
-			["g"] = {
-				crit(13, {	-- Skinning
-					["achievementID"] = 6032,	-- Faire Favors
-				}),
-			},
 		}),
 		q(29470, {	-- Tan My Hide
 			["requireSkill"] = SKINNING,
@@ -956,9 +853,6 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 			["isDaily"] = true,
 			["coord"] = { 51.5, 77.1, 407 },
 			["g"] = {
-				crit(3, {	-- Ring Toss
-					["achievementID"] = 6020,	-- Step Right Up
-				}),
 				ach(9894, {	-- Triumphant Turtle Tossing
 					i(122123),	-- Darkmoon Ring-Flinger
 				}),
@@ -975,28 +869,12 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 			["provider"] = { "i", 71953 },	-- Fallen Adventurer's Journal
 			["coord"] = { 51.9, 60.9, 407 },
 			["lvl"] = 10,
-			["g"] = {
-				crit(1, {	-- Adventurer's Journal
-					["achievementID"] = 6028,	-- Darkmoon Defender
-				}),
-				crit(1, {	-- Adventurer's Journal
-					["achievementID"] = 6029,	-- Darkmoon Despoiler
-				}),
-			},
 		}),
 		q(29457, {	-- The Enemy's Insignia
 			["isMonthly"] = true,
 			["provider"] = { "i", 71952 },	-- Captured Insignia
 			["coord"] = { 51.9, 60.9, 407 },
 			["lvl"] = 10,
-			["g"] = {
-				crit(3, {	-- Captured Insignia
-					["achievementID"] = 6028,	-- Darkmoon Defender
-				}),
-				crit(7, {	-- Captured Insignia
-					["achievementID"] = 6029,	-- Darkmoon Despoiler
-				}),
-			},
 		}),
 		q(29436, {	-- The Humanoid Cannonball
 			["provider"] = { "n", 15303 },	-- Maxima Blastenheimer
@@ -1004,9 +882,6 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 			["coord"] = { 52.4, 56.1, 407 },
 			["g"] = {
 				ach(6021),	-- Blastenheimer Bullseye
-				crit(1, {	-- Cannon Blast
-					["achievementID"] = 6020,	-- Step Right Up
-				}),
 				i(93724),	-- Darkmoon Game Prize
 			},
 		}),
@@ -1020,14 +895,6 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 			["provider"] = { "i", 71715 },	-- A Treatise on Strategy
 			["coord"] = { 51.9, 60.9, 407 },
 			["lvl"] = 10,
-			["g"] = {
-				crit(1, {	-- A Treatise on Strategy
-					["achievementID"] = 6027,	-- Darkmoon Dungeoneer
-				}),
-				crit(2, {	-- A Treatise on Strategy
-					["achievementID"] = 6029,	-- Darkmoon Despoiler
-				}),
-			},
 		}),
 		q(37911, {	-- The Real Big Race
 			["sourceQuests"] = { 37819 },	-- Welcome to the Darkmoon Races
@@ -1150,9 +1017,6 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 				ach(9885, {	-- Ace Tonk Commander
 					i(122122),	-- Darkmoon Tonk Controller
 				}),
-				crit(4, {	-- Tonk Battle
-					["achievementID"] = 6020,	-- Step Right Up
-				}),
 				i(93724),	-- Darkmoon Game Prize
 			},
 		}),
@@ -1161,11 +1025,6 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 			["provider"] = { "i", 71716 },	-- Soothsayer's Runes
 			["coord"] = { 51.9, 60.9, 407 },
 			["lvl"] = 60,
-			["g"] = {
-				crit(6, {	-- Soothsayer's Runes
-					["achievementID"] = 6029,	-- Darkmoon Despoiler
-				}),
-			},
 		}),
 		q(29465, {	-- Tools of Divination
 			["u"] = REMOVED_FROM_GAME,
@@ -1208,15 +1067,10 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 		}),
 		q(29515, {	-- Writing the Future
 			["requireSkill"] = INSCRIPTION,
-			["description"] = "Requires |CFFFFD7005 Light Parchment|r to complete.",
 			["isMonthly"] = true,
 			["provider"] = { "n", 14822 },	-- Sayge
 			["coord"] = { 53.2, 75.8, 407 },
-			["g"] = {
-				crit(9, {	-- Inscription
-					["achievementID"] = 6032,	-- Faire Favors
-				}),
-			},
+			["cost"] = { { "i", 39354, 5 } },	-- x5 Light Parchment
 		}),
 		q(29471, {	-- Writing the Future
 			["u"] = REMOVED_FROM_GAME,
