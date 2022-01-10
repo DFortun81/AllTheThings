@@ -309,9 +309,5 @@ root("HiddenQuestTriggers", {
 });
 -- #endif
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	tier(CLASSIC_TIER, {
-		inst(238, {	-- The Stockade
-			i(3222),	-- Wicked Dagger
-		}),
-	}),
+	i(3222),	-- Wicked Dagger
 }));
