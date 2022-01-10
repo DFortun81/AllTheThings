@@ -87,13 +87,27 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(3),		-- Purified Blessing of Fortitude
 		}),
 		ach(14763, {	-- Crypt Couture
-			crit(1),		-- Ashen Ink
-			crit(2),		-- Jagged Bonesaw
-			crit(3),		-- Discarded Grimoire
-			crit(4),		-- Sorcerer's Blade
-			crit(5),		-- Mucosal Pigment
-			crit(6),		-- Amethystine Dye
-			crit(7),		-- Ritualist's Mantle
+			crit(1, {	-- Ashen Ink
+				["cost"] = { { "i", 183690, 1 } },
+			}),
+			crit(2, {	-- Jagged Bonesaw
+				["cost"] = { { "i", 183692, 1 } },
+			}),
+			crit(3, {	-- Discarded Grimoire
+				["cost"] = { { "i", 183394, 1 } },
+			}),
+			crit(4, {	-- Sorcerer's Blade
+				["cost"] = { { "i", 183397, 1 } },
+			}),
+			crit(5, {	-- Mucosal Pigment
+				["cost"] = { { "i", 183691, 1 } },
+			}),
+			crit(6, {	-- Amethystine Dye
+				["cost"] = { { "i", 183401, 1 } },
+			}),
+			crit(7, {	-- Ritualist's Mantle
+				["cost"] = { { "i", 183399, 1 } },
+			}),
 		}),
 		ach(14761, {	-- Deciphering Death's Intentions
 			["description"] = "Most of the Maw Lore items can be found by killing Assassins, rares, or normal mobs.  The remaining ones drop from specific mobs, rares, or treasures that can be found throughout the Maw.",

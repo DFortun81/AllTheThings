@@ -101,11 +101,6 @@ _.Zones =
 						160048,	-- Plaguedoused Remnant
 						166335,	-- Slime Giant
 					},
-					["g"] = {
-						crit(5, {	-- Mucosal Pigment
-							["achievementID"] = 14763,	-- Crypt Couture
-						}),
-					},
 				}),
 				i(176987),	-- Ossein Scale Belt
 				i(176991),	-- Ossein Scale Cuffs
