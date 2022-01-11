@@ -71,28 +71,34 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 WISPS_OF_MEMORY.customCollect = nil;
 
 root("HiddenQuestTriggers", {
-	q(64138),	-- hitting Renown 45
-	q(64378),	-- hitting Renown 48 [Death Knight] (received Memory of the Final Sentence)
-	q(64379),	-- hitting Renown 48 [Demon Hunter] (received Memory of Blind Faith)
-	q(64395),	-- hitting Renown 48 [Druid] (received Memory of Kindred Affinity)
-	q(64392),	-- hitting Renown 48 [Hunter] (received Memory of the Pact of the Soulstalkers)
-	-- q( ),	-- hitting Renown 48 [Mage] (received Memory of Harmonic Echo)
-	q(64413),	-- hitting Renown 48 [Monk] (received Memory of Call to Arms)
-	q(64417),	-- hitting Renown 48 [Paladin] (received Memory of Divine Resonance)
-	q(64405),	-- hitting Renown 48 [Priest] (received Memory of Spheres' Harmony)
-	q(64396),	-- hitting Renown 48 [Rogue] (received Memory of Resounding Clarity)
-	q(64409),	-- hitting Renown 48 [Shaman] (received Memory of the Raging Vesper Vortex)
-	q(64412),	-- hitting Renown 48 [Warlock] (received Memory of the Languishing Soul Detritus)
-	q(64418),	-- hitting Renown 48 [Warrior] (received Memory of Elysian Might)
-	q(64145),	-- hitting Renown 50
-	q(64443),	-- hitting Renown 52
-	q(64137),	-- hitting Renown 56
-	q(64146),	-- hitting Renown 59
-	q(64372),	-- hitting Renown 60
-	q(64444),	-- hitting Renown 67
-	q(63601),	-- learning Ensemble: Aspiring Aspirant
-	q(64445),	-- Renown 76
-	-- 9.1.5 New HQTS
-	q(65107),	-- hitting Renown 15 (Anima instead of Soulkeeper Upgrade)
-	q(65108),	-- hitting Renown 24 (Anima instead of Soulkeeper Upgrade)
+	tier(SL_TIER, {
+		n(KYRIAN, {
+			n(RENOWN, {
+				q(64138),	-- hitting Renown 45
+				q(64378),	-- hitting Renown 48 [Death Knight] (received Memory of the Final Sentence)
+				q(64379),	-- hitting Renown 48 [Demon Hunter] (received Memory of Blind Faith)
+				q(64395),	-- hitting Renown 48 [Druid] (received Memory of Kindred Affinity)
+				q(64392),	-- hitting Renown 48 [Hunter] (received Memory of the Pact of the Soulstalkers)
+				q(64386),	-- hitting Renown 48 [Mage] (received Memory of Harmonic Echo)
+				q(64413),	-- hitting Renown 48 [Monk] (received Memory of Call to Arms)
+				q(64417),	-- hitting Renown 48 [Paladin] (received Memory of Divine Resonance)
+				q(64405),	-- hitting Renown 48 [Priest] (received Memory of Spheres' Harmony)
+				q(64396),	-- hitting Renown 48 [Rogue] (received Memory of Resounding Clarity)
+				q(64409),	-- hitting Renown 48 [Shaman] (received Memory of the Raging Vesper Vortex)
+				q(64412),	-- hitting Renown 48 [Warlock] (received Memory of the Languishing Soul Detritus)
+				q(64418),	-- hitting Renown 48 [Warrior] (received Memory of Elysian Might)
+				q(64145),	-- hitting Renown 50
+				q(64443),	-- hitting Renown 52
+				q(64137),	-- hitting Renown 56
+				q(64146),	-- hitting Renown 59
+				q(64372),	-- hitting Renown 60
+				q(64444),	-- hitting Renown 67
+				q(63601),	-- learning Ensemble: Aspiring Aspirant
+				q(64445),	-- Renown 76
+				-- 9.1.5 New HQTS
+				q(65107),	-- hitting Renown 15 (Anima instead of Soulkeeper Upgrade)
+				q(65108),	-- hitting Renown 24 (Anima instead of Soulkeeper Upgrade)
+			}),
+		}),
+	}),
 });

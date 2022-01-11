@@ -1522,6 +1522,7 @@ root("HiddenQuestTriggers", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_C
 			q(63407),	-- Leather Chest
 			q(63403),	-- Plate Helm
 			q(63406),	-- Plate Chest
+			q(63405),	-- Cloak / 182525
 
 			q(62037),	-- unlocking Mind of Maldraxxus set (TransmogSetID 2033, Duty-Bound Conjurer's items)
 			q(62036),	-- unlocking Zeal of Maldraxxus set (TransmogSetID 2038, Duty-Bound Wraith's items)
