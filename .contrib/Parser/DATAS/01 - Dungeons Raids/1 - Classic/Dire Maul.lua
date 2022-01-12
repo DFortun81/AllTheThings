@@ -550,6 +550,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 						{ "i", 14344, 4 },	-- Large Brilliant Shard
 						{ "i", 12753, 2 },	-- Skin of Shadow
 					},
+					["maxReputation"] = { 809, EXALTED },	-- Shen'dralar, Exalted.
 					["repeatable"] = true,
 					["lvl"] = 57,
 					["groups"] = {
@@ -572,6 +573,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 						{ "i", 14344, 2 },	-- Large Brilliant Shard
 						{ "i", 12735, 1 },	-- Frayed Abomination Stitching
 					},
+					["maxReputation"] = { 809, EXALTED },	-- Shen'dralar, Exalted.
 					["repeatable"] = true,
 					["lvl"] = 57,
 					["groups"] = {
@@ -594,6 +596,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 						{ "i", 14344, 2 },	-- Large Brilliant Shard
 						{ "i", 12938, 2 },	-- Blood of Heroes
 					},
+					["maxReputation"] = { 809, EXALTED },	-- Shen'dralar, Exalted.
 					["repeatable"] = true,
 					["lvl"] = 57,
 					["groups"] = {
