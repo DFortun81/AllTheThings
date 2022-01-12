@@ -85,7 +85,7 @@ settings.AUDIO_REMOVE_TABLE = {
 -- Settings Class
 local GeneralSettingsBase = {
 	__index = {
-		["AccountMode"] = false,
+		["AccountMode"] = true,
 		["Completionist"] = true,
 		["MainOnly"] = false,
 		["DebugMode"] = false,
@@ -93,7 +93,7 @@ local GeneralSettingsBase = {
 		["Repeatable"] = false,
 		["RepeatableFirstTime"] = false,
 		["AccountWide:Achievements"] = true,
-		["AccountWide:AzeriteEssences"] = false,
+		["AccountWide:AzeriteEssences"] = true,
 		-- ["AccountWide:BattlePets"] = true,
 		["AccountWide:Conduits"] = true,
 		["AccountWide:FlightPaths"] = true,
@@ -102,7 +102,7 @@ local GeneralSettingsBase = {
 		-- ["AccountWide:Illusions"] = true,
 		-- ["AccountWide:Mounts"] = true,
 		["AccountWide:MusicRollsAndSelfieFilters"] = true,
-		["AccountWide:Quests"] = false,
+		["AccountWide:Quests"] = true,
 		["AccountWide:Recipes"] = true,
 		["AccountWide:Reputations"] = true,
 		["AccountWide:RuneforgeLegendaries"] = true,
@@ -112,7 +112,7 @@ local GeneralSettingsBase = {
 		["Thing:Achievements"] = true,
 		["Thing:AzeriteEssences"] = true,
 		["Thing:BattlePets"] = true,
-		["Thing:Conduits"] = false,
+		["Thing:Conduits"] = true,
 		["Thing:FlightPaths"] = true,
 		["Thing:Followers"] = true,
 		["Thing:Heirlooms"] = true,
@@ -120,8 +120,8 @@ local GeneralSettingsBase = {
 		["Thing:Illusions"] = true,
 		["Thing:Mounts"] = true,
 		["Thing:MusicRollsAndSelfieFilters"] = true,
-		["Thing:Quests"] = false,
-		["Thing:QuestBreadcrumbs"] = false,
+		["Thing:Quests"] = true,
+		["Thing:QuestBreadcrumbs"] = true,
 		["Thing:Recipes"] = true,
 		["Thing:Reputations"] = true,
 		["Thing:RuneforgeLegendaries"] = true,
@@ -137,13 +137,36 @@ local GeneralSettingsBase = {
 	},
 };
 local FilterSettingsBase = {};
+local SeasonalSettingsBase = {
+	__index = {
+		["DoFiltering"] = false,
+		[1012] = true,
+		[1015] = true,
+		[1016] = true,
+		[1014] = true,
+		[1007] = true,
+		[1006] = true,
+		[1010] = true,
+		[1001] = true,
+		[1008] = true,
+		[1005] = true,
+		[1011] = true,
+		[1000] = true,
+		[1004] = true,
+		[1002] = true,
+		[1017] = true,
+		[1013] = true,
+		[1003] = true,
+	},
+};
 local TooltipSettingsBase = {
 	__index = {
-		["Auto:BountyList"] = true,
+		["Auto:BountyList"] = false,
 		["Auto:MiniList"] = true,
 		["Auto:ProfessionList"] = true,
-		["Auto:AH"] = true,
+		["Auto:AH"] = false,
 		["Celebrate"] = true,
+		["Coordinates"] = true,
 		["Screenshot"] = false,
 		["Channel"] = "master",
 		["ClassRequirements"] = true,
@@ -158,6 +181,7 @@ local TooltipSettingsBase = {
 		["MinimapSize"] = 36,
 		["MinimapStyle"] = true,
 		["Models"] = true,
+		["KnownBy"] = true,
 		["LiveScan"] = false,
 		["Locations"] = 5,
 		["Lore"] = true,
@@ -172,7 +196,7 @@ local TooltipSettingsBase = {
 		["SharedAppearances"] = true,
 		["Show:Remaining"] = false,
 		["Show:Percentage"] = true,
-		["UseMoreColors"] = false,
+		["UseMoreColors"] = true,
 		["Show:TooltipHelp"] = true,
 		["Skip:Cutscenes"] = false,
 		["SourceLocations"] = true,
@@ -182,9 +206,9 @@ local TooltipSettingsBase = {
 		["DropChances"] = true,
 		["SpecializationRequirements"] = true,
 		["SummarizeThings"] = true,
-		["Warn:Difficulty"] = false,
+		["Warn:Difficulty"] = true,
 		["Warn:Removed"] = true,
-		["Currencies"] = false,
+		["Currencies"] = true,
 	},
 };
 
@@ -212,6 +236,9 @@ local RawSettings;
 settings.Initialize = function(self)
 	PanelTemplates_SetNumTabs(self, #self.Tabs);
 
+	-- Setup the use of profiles
+	if not AllTheThingsProfiles then app.SetupProfiles(); end
+
 	-- Assign the default settings
 	if not settings:ApplyProfile() then
 		if not AllTheThingsSettings then AllTheThingsSettings = {}; end
@@ -221,6 +248,7 @@ settings.Initialize = function(self)
 		if not RawSettings.Seasonal then RawSettings.Seasonal = app.GetDataMember("SeasonalFilters") or {}; end
 		if not RawSettings.Unobtainable then RawSettings.Unobtainable = app.GetDataMember("UnobtainableItemFilters") or {}; end
 		setmetatable(RawSettings.General, GeneralSettingsBase);
+		setmetatable(RawSettings.Seasonal, SeasonalSettingsBase);
 		setmetatable(RawSettings.Tooltips, TooltipSettingsBase);
 	end
 
@@ -352,6 +380,7 @@ settings.ApplyProfile = function()
 			RawSettings = settings:NewProfile(key);
 		end
 		setmetatable(RawSettings.General, GeneralSettingsBase);
+		setmetatable(RawSettings.Seasonal, SeasonalSettingsBase);
 		setmetatable(RawSettings.Tooltips, TooltipSettingsBase);
 
 		-- apply window positions when applying a Profile
@@ -4248,7 +4277,7 @@ local tab = settings:CreateTab(L["PROFILES_TAB"]);
 local ProfilesLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 ProfilesLabel:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
 ProfilesLabel:SetJustifyH("LEFT");
-ProfilesLabel:SetText(L["PROFILES_TAB"]..L["_BETA_LABEL"]);
+ProfilesLabel:SetText(L["PROFILES_TAB"]);
 ProfilesLabel:Show();
 table.insert(settings.MostRecentTab.objects, ProfilesLabel);
 

@@ -20434,9 +20434,9 @@ app.SetupProfiles = function()
 	app.print("Initialized ATT Profiles!");
 
 	-- delete old variables
-	-- AllTheThingsSettings = nil;
-	-- AllTheThingsAD.UnobtainableItemFilters = nil;
-	-- AllTheThingsAD.SeasonalFilters = nil;
+	AllTheThingsSettings = nil;
+	AllTheThingsAD.UnobtainableItemFilters = nil;
+	AllTheThingsAD.SeasonalFilters = nil;
 
 	-- initialize settings again due to profiles existing now
 	app.Settings:Initialize();
@@ -20727,8 +20727,6 @@ app.Startup = function()
 		"Position",
 		"RandomSearchFilter",
 		"Reagents",
-		"SeasonalFilters",
-		"UnobtainableItemFilters",
 	}) do
 		rawset(oldsettings, key, rawget(AllTheThingsAD, key));
 	end
