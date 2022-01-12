@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root("Zones", {
 	m(905, {	-- Argus
 		m(885, {	-- Antoran Wastes
 			n(RARES, {
@@ -12,19 +11,16 @@ _.Zones =
 					["questID"] = 48817,	-- killID
 					["isDaily"] = true,
 					["coord"] = { 73.6, 71.8, 885 },
+					["sym"] = {
+						{"select","mapID",885},{"pop"},	-- get Antoran Wastes
+						{"where","headerID",SPECIAL},{"pop"},	-- get Special
+						{"where","filterID",CLOTH},{"pop"},	-- get Plate
+					},
 					["g"] = {
 						crit(56, {	-- Admiral Rel'var
 							["achievementID"] = 12078,	-- Commander of Argus
 						}),
 						i(153324),	-- Eredath Vigilant's Bastion
-						i(152883),	-- Zealous Felslinger's Boots
-						i(152889),	-- Zealous Felslinger's Cuffs
-						i(152888),	-- Zealous Felslinger's Epaulets
-						i(152881),	-- Zealous Felslinger's Girdle
-						i(152885),	-- Zealous Felslinger's Handwraps
-						i(152887),	-- Zealous Felslinger's Leggings
-						i(152884),	-- Zealous Felslinger's Robe
-						i(152886),	-- Zealous Felslinger's Visage
 					},
 				}),
 				n(127096, {	-- All-Seer Xanarian
@@ -143,19 +139,16 @@ _.Zones =
 					["questID"] = 49240,	-- killID
 					["isDaily"] = true,
 					["coord"] = { 57.6, 33.6, 885 },
+					["sym"] = {
+						{"select","mapID",830},{"pop"},	-- get Krokuun
+						{"where","headerID",SPECIAL},{"pop"},	-- get Special
+						{"where","filterID",PLATE},{"pop"},	-- get Plate
+					},
 					["g"] = {
 						crit(8, {	-- Mistress Il'thendra
 							["achievementID"] = 12078,	-- Commander of Argus
 						}),
 						i(153327),	-- Mystic Wakener's Dagger
-						i(152946),	-- World-Defiler's Casque
-						i(152944),	-- World-Defiler's Shoulderplates
-						i(152949),	-- World-Defiler's Cuirass
-						i(152942),	-- World-Defiler's Wristguards
-						i(152947),	-- World-Defiler's Gauntlets
-						i(152943),	-- World-Defiler's Girdle
-						i(152945),	-- World-Defiler's Tuille
-						i(152948),	-- World-Defiler's Sabatons
 					},
 				}),
 				n(127705, {	-- Mother Rosula
@@ -259,19 +252,16 @@ _.Zones =
 					["questID"] = 48824,	-- killID
 					["isDaily"] = true,
 					["coord"] = { 55.6, 21.8, 885 },
+					["sym"] = {
+						{"select","mapID",885},{"pop"},	-- get Antoran Wastes content
+						{"where","headerID",SPECIAL},{"pop"},	-- get the Special header
+						{"where","filterID",CLOTH},{"pop"},	-- get the Cloth header
+					},
 					["g"] = {
 						crit(53, {	-- Void Warden Valsuran
 							["achievementID"] = 12078,	-- Commander of Argus
 						}),
 						i(153319),	-- Ardent Vindicator's Greatmace
-						i(152883),	-- Zealous Felslinger's Boots
-						i(152889),	-- Zealous Felslinger's Cuffs
-						i(152888),	-- Zealous Felslinger's Epaulets
-						i(152881),	-- Zealous Felslinger's Girdle
-						i(152885),	-- Zealous Felslinger's Handwraps
-						i(152887),	-- Zealous Felslinger's Leggings
-						i(152884),	-- Zealous Felslinger's Robe
-						i(152886),	-- Zealous Felslinger's Visage
 					},
 				}),
 				n(126199, {	-- Vrax'thul
@@ -303,19 +293,16 @@ _.Zones =
 					["questID"] = 48820,	-- killID
 					["isDaily"] = true,
 					["coord"] = { 51.6, 54.6, 885 },
+					["sym"] = {
+						{"select","mapID",885},{"pop"},	-- get Antoran Wastes content
+						{"where","headerID",SPECIAL},{"pop"},	-- get the Special header
+						{"where","filterID",CLOTH},{"pop"},	-- get the Cloth header
+					},
 					["g"] = {
 						crit(2, {	-- Worldsplitter Skuul
 							["achievementID"] = 12078,	-- Commander of Argus
 						}),
 						i(153312),	-- Praetor's Ornamental Greatsword
-						i(152883),	-- Zealous Felslinger's Boots
-						i(152889),	-- Zealous Felslinger's Cuffs
-						i(152888),	-- Zealous Felslinger's Epaulets
-						i(152881),	-- Zealous Felslinger's Girdle
-						i(152885),	-- Zealous Felslinger's Handwraps
-						i(152887),	-- Zealous Felslinger's Leggings
-						i(152884),	-- Zealous Felslinger's Robe
-						i(152886),	-- Zealous Felslinger's Visage
 					},
 				}),
 				n(126338, {	-- Wrath-Lord Yarez
@@ -334,4 +321,4 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});
