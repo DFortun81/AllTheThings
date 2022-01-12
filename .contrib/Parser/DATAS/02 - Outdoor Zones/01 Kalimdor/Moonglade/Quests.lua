@@ -14,8 +14,16 @@ _.Zones =
 				q(29298, {	-- A Smoke-Stained Locket
 					["provider"] = { "i", 69854 },	-- Smoke-Stained Locket
 				}),
-				q(5061,  {	-- Aquatic Form
-					["hordeQuestID"] = 31,
+				q(5061,  {	-- Aquatic Form [A]
+					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "n", 11802 },	-- Dendrite Starblaze
+					["classes"] = { DRUID },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						un(REMOVED_FROM_GAME, i(16608)),	-- Aquarius Belt
+					},
+				}),
+				q(31,  {	-- Aquatic Form [H]
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11802 },	-- Dendrite Starblaze
 					["classes"] = { DRUID },

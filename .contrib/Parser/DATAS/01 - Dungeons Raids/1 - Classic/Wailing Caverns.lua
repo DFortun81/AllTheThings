@@ -113,16 +113,38 @@ root("Instances", tier(CLASSIC_TIER, {
 						["races"] = HORDE_ONLY,
 						["lvl"] = 10,
 					}),
-					q(3370,  {	-- In Nightmares
-						["hordeQuestID"] = 3369,
+					q(3370,  {	-- In Nightmares [A]
 						["qg"] = 8418,	-- Falla Sagewind
 						["sourceQuest"] = 6981,	-- The Glowing Shard
 						["description"] = "She lives in a house on top of the mountain.",
 						["coord"] = { 48.2, 32.8, THE_BARRENS },
 						["timeline"] = { "removed 4.0.3.13277" },
-						["cost"] = { { "i", 10649, 1 } },	-- Nightmare Shard
 						["lvl"] = 15,
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
+							objective(1, {
+								["provider"] = { "i", 10649 },	-- Nightmare Shard
+							}),
+							i(10657, {	-- Talbar Mantle
+								["timeline"] = { "removed 4.0.3.13277" },
+							}),
+							i(10658, {	-- Quagmire Galoshes
+								["timeline"] = { "removed 4.0.3.13277" },
+							}),
+						},
+					}),
+					q(3369,  {	-- In Nightmares [H]
+						["qg"] = 8418,	-- Falla Sagewind
+						["sourceQuest"] = 6981,	-- The Glowing Shard
+						["description"] = "She lives in a house on top of the mountain.",
+						["coord"] = { 48.2, 32.8, THE_BARRENS },
+						["timeline"] = { "removed 4.0.3.13277" },
+						["lvl"] = 15,
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							objective(1, {
+								["provider"] = { "i", 10649 },	-- Nightmare Shard
+							}),
 							i(10657, {	-- Talbar Mantle
 								["timeline"] = { "removed 4.0.3.13277" },
 							}),
