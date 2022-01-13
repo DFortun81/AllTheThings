@@ -85,7 +85,7 @@ settings.AUDIO_REMOVE_TABLE = {
 -- Settings Class
 local GeneralSettingsBase = {
 	__index = {
-		["AccountMode"] = true,
+		["AccountMode"] = false,
 		["Completionist"] = true,
 		["MainOnly"] = false,
 		["DebugMode"] = false,
