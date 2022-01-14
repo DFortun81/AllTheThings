@@ -15337,15 +15337,6 @@ function app:GetWindow(suffix, parent, onUpdate)
 			window.lockPersistable = true;
 		end
 
-		-- apply scaling from settings
-		if AllTheThingsSettings then
-			if suffix == "Prime" then
-				window:SetScale(app.Settings:GetTooltipSetting("MainListScale"));
-			else
-				window:SetScale(app.Settings:GetTooltipSetting("MiniListScale"));
-			end
-		end
-
 		window:Hide();
 
 		-- The Close Button. It's assigned as a local variable so you can change how it behaves.
@@ -20707,18 +20698,6 @@ app.Startup = function()
 		accountWideData.Toys = data;
 	end
 
-	-- clean up 'LockedWindows' (now stored in Profiles)
-	local lockedWindows = GetDataMember("LockedWindows");
-	if lockedWindows then
-		for name,_ in pairs(lockedWindows) do
-			local window = app.Windows[name];
-			if window then
-				window.isLocked = true;
-				window:StorePosition();
-			end
-		end
-	end
-
 	-- Clean up settings
 	local oldsettings = {};
 	for i,key in ipairs({
@@ -21040,6 +21019,9 @@ app.InitDataCoroutine = function()
 		-- print("Refresh")
 		app:RefreshData(false);
 	end
+
+	-- Setup the use of profiles after a short delay to ensure that the layout window positions are collected
+	if not AllTheThingsProfiles then DelayedCallback(app.SetupProfiles, 5); end
 
 	-- do a settings apply to ensure ATT windows which have now been created, are moved according to the current Profile
 	app.Settings:ApplyProfile();

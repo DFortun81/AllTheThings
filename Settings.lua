@@ -236,17 +236,14 @@ local RawSettings;
 settings.Initialize = function(self)
 	PanelTemplates_SetNumTabs(self, #self.Tabs);
 
-	-- Setup the use of profiles
-	if not AllTheThingsProfiles then app.SetupProfiles(); end
-
 	-- Assign the default settings
 	if not settings:ApplyProfile() then
 		if not AllTheThingsSettings then AllTheThingsSettings = {}; end
 		RawSettings = AllTheThingsSettings;
 		if not RawSettings.General then RawSettings.General = {}; end
 		if not RawSettings.Tooltips then RawSettings.Tooltips = {}; end
-		if not RawSettings.Seasonal then RawSettings.Seasonal = app.GetDataMember("SeasonalFilters") or {}; end
-		if not RawSettings.Unobtainable then RawSettings.Unobtainable = app.GetDataMember("UnobtainableItemFilters") or {}; end
+		if not RawSettings.Seasonal then RawSettings.Seasonal = {}; end
+		if not RawSettings.Unobtainable then RawSettings.Unobtainable = {}; end
 		setmetatable(RawSettings.General, GeneralSettingsBase);
 		setmetatable(RawSettings.Seasonal, SeasonalSettingsBase);
 		setmetatable(RawSettings.Tooltips, TooltipSettingsBase);
@@ -402,23 +399,32 @@ settings.SetWindowFromProfile = function(suffix)
 	local points = RawSettings and RawSettings.Windows and RawSettings.Windows[suffix];
 	local window = app.Windows[suffix];
 	-- print("SetWindowFromProfile",suffix,points,window)
-	if window and points then
-		window:ClearAllPoints();
-		for _,point in ipairs(points) do
-			if point.Point then
-				window:SetPoint(point.Point, UIParent, point.PointRef, point.X, point.Y);
-				-- print("SetPoint",suffix,point.Point, point.PointRef, point.X, point.Y)
+	if window then
+		if RawSettings then
+			if suffix == "Prime" then
+				window:SetScale(settings:GetTooltipSetting("MainListScale"));
+			else
+				window:SetScale(settings:GetTooltipSetting("MiniListScale"));
 			end
 		end
-		if points.Width then
-			window:SetWidth(points.Width);
-			-- print("SetWidth",suffix,points.Width)
+		if points then
+			window:ClearAllPoints();
+			for _,point in ipairs(points) do
+				if point.Point then
+					window:SetPoint(point.Point, UIParent, point.PointRef, point.X, point.Y);
+					-- print("SetPoint",suffix,point.Point, point.PointRef, point.X, point.Y)
+				end
+			end
+			if points.Width then
+				window:SetWidth(points.Width);
+				-- print("SetWidth",suffix,points.Width)
+			end
+			if points.Height then
+				window:SetHeight(points.Height);
+				-- print("SetHeight",suffix,points.Height)
+			end
+			window.isLocked = points.Locked;
 		end
-		if points.Height then
-			window:SetHeight(points.Height);
-			-- print("SetHeight",suffix,points.Height)
-		end
-		window.isLocked = points.Locked;
 	end
 end
 settings.Get = function(self, setting, container)
