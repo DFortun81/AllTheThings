@@ -1556,18 +1556,12 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(155473),	-- Banisher Cinch
 			}),
 			filter(MAIL, {
-				i(158590),	-- Crone-Seeker's Striders
 				i(158605),	-- Crone-Seeker's Grips
-				i(158621),	-- Crone-Seeker's Cincture
-				i(158633),	-- Crone-Seeker's Bindings
 				i(160199),	-- Crone-Seeker's Leggings
 				i(155481),	-- Crone-Seeker's Chain
 			}),
 			filter(PLATE, {
-				i(158591),	-- Waycrest Militia Footguards
 				i(158606),	-- Waycrest Militia Gloves
-				i(158622),	-- Waycrest Militia Buckle
-				i(158634),	-- Waycrest Militia Wristguards
 				i(160200),	-- Waycrest Militia Pants
 				i(155489),	-- Waycrest Militia Belt
 			}),

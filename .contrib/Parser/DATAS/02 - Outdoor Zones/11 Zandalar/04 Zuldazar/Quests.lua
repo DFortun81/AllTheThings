@@ -860,12 +860,15 @@ _.Zones =
 					["coord"] = { 57.8, 76.6, ZULDAZAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(159152),	-- Torcalin Grips
-						i(159153),	-- zanchuli Grips
-						i(159154),	-- Rastari Gloves
-						i(159155),	-- Jambani Handguards
 						i(158667),	-- Blue Flame Spelltorch
 						i(159124),	-- Golden Fleet Buckler
+						i(159152),	-- Torcalin Grips
+						i(159153),	-- Zanchuli Grips
+						i(159154),	-- Rastari Gloves
+						i(159155),	-- Jambani Handguards
+						i(160091, {	-- Sea Raider's Grips (confirmed)
+							["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
+						}),
 					},
 				}),
 				q(47740, {	-- House of the King
@@ -1985,37 +1988,26 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(BFA_TIER, {
 		n(ARMOR, {
 			filter(CLOTH, {
-				i(158657),	-- Zanchuli Shoes
 				i(158663),	-- Zanchuli Grasps
-				i(158675),	-- Zanchuli Bracelets
-				i(161236),	-- Zanchuli Bracers
-				i(161242),	-- Zanchuli Belt
-				i(161246),	-- Zanchuli Woolies
 				i(161248),	-- Zanchuli Pantaloons
 			}),
 			filter(LEATHER, {
 				i(158655),	-- Jambani Boots
-				i(158665),	-- Jambani Grasps
-				i(161243),	-- Jambani Cincture
 				i(161249),	-- Jambani Britches
+				i(161243),	-- Jambani Cincture
+				i(158665),	-- Jambani Grasps
 				i(161250),	-- Jambani Leggings
 			}),
 			filter(MAIL, {
-				i(158656),	-- Torcalin Striders
-				i(158662),	-- Torcalin Grasps
 				i(158673),	-- Torcalin Armguards
 				i(161238),	-- Torcalin Bands
 				i(161244),	-- Torcalin Cincture
+				i(158662),	-- Torcalin Grasps
 				i(161251),	-- Torcalin Leggings
 				i(161252),	-- Torcalin Pants
+				i(158656),	-- Torcalin Striders
 			}),
 			filter(PLATE, {
-				i(158658),	-- Rastari Greatboots
-				i(158664),	-- Rastari Grips
-				i(158674),	-- Rastari Wristwraps
-				i(161239),	-- Rastari Armbands
-				i(161245),	-- Rastari Cincture
-				i(161253),	-- Rastari Greaves
 				i(161254),	-- Rastari Pants
 			}),
 		}),
@@ -2030,7 +2022,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(153641),	-- Manual of Elemental Enchancement
 			i(154986),	-- Devilsaur Voodoo Figure
 			i(154974),	-- Tiki-Thumper
-			i(155272),	-- Loa-Defender's Waraxe
 			i(155582),	-- Loa-Claimer's Warglaives
 			i(158564),	-- Golden Devilsaur Fang
 			i(158566),	-- Scalebeast Claws

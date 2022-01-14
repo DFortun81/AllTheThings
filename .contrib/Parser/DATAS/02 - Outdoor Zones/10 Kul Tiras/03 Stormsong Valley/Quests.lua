@@ -1721,14 +1721,10 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 			filter(MAIL, {
 				i(158697),	-- Stormchaser Grips
-				i(158705),	-- Stormchaser Links
 				i(160391),	-- Stormchaser Coils
 			}),
 			filter(PLATE, {
-				i(158695),	-- Dread Corsair Handguards
-				i(158703),	-- Dread Corsair Chausses
 				i(160381),	-- Dread Corsair Clasp
-				i(160394),	-- Dread Corsair Shackles
 			}),
 		}),
 	}),

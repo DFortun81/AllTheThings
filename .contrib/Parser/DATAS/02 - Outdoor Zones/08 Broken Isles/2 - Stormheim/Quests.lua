@@ -116,6 +116,7 @@ _.Zones =
 					["sourceQuests"] = {
 						39593,	-- The Shattered Watcher
 						39592,	-- A Trial of Will
+						39591,	-- A Trial of Valor
 					},
 				}),
 				q(39591, {	-- A Trial of Valor

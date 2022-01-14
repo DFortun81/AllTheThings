@@ -151,7 +151,10 @@ _.Zones =
 						["provider"] = { "n", 74606 },	-- Kaz the Shrieker
 						["coord"] = { 46.5, 71.5, GORGROND },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 35400,	-- The Infected
+						["sourceQuests"] = {
+							35400,	-- The Infected
+							35406,  -- Super Seeds (H)
+						},
 					}),
 					q(35208,  {	-- Dark Iron Down
 						["provider"] = { "n", 81588 },	-- Thaelin Darkanvil
