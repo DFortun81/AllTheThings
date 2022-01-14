@@ -3147,9 +3147,6 @@ _.HiddenQuestTriggers = {
 		q(61992),	-- Pesticide secondary quest
 		q(61986),	-- Tahonta secondary quest
 		-- Maldraxxus Treasures
-		q(61120),	-- interacting with runes to unlock a Runebound Coffer (61115)
-		q(61121),	-- interacting with runes to unlock a Runebound Coffer (61115)
-		q(61122),	-- interacting with runes to unlock a Runebound Coffer (61115)
 		q(62248),	-- interacting with the Box of Torments
 		-- Maldraxxus WQs
 		q(62946),	-- "learning" the quest items while on #61612, "Jewelcrafting: Carved Crystal Ring"
