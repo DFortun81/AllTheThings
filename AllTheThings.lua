@@ -9305,14 +9305,11 @@ fields.collectible = function(t) return app.CollectibleRuneforgeLegendaries; end
 fields.collectibleAsCost = app.ReturnFalse;
 fields.collected = function(t)
 	local rfID = t.runeforgePowerID;
-	-- character collected
-	if app.CurrentCharacter.RuneforgeLegendaries[rfID] then return 1; end
 	-- account-wide collected
-	if app.AccountWideRuneforgeLegendaries and ATTAccountWideData.RuneforgeLegendaries[rfID] then return 2; end
+	if ATTAccountWideData.RuneforgeLegendaries[rfID] then return 1; end
 	-- fresh collected
 	local state = (C_LegendaryCrafting.GetRuneforgePowerInfo(rfID) or app.EmptyTable).state;
 	if state == 0 then
-		app.CurrentCharacter.RuneforgeLegendaries[rfID] = 1;
 		ATTAccountWideData.RuneforgeLegendaries[rfID] = 1;
 		return 1;
 	end
@@ -20516,7 +20513,8 @@ app.Startup = function()
 	if not currentCharacter.Quests then currentCharacter.Quests = {}; end
 	if not currentCharacter.Spells then currentCharacter.Spells = {}; end
 	if not currentCharacter.Titles then currentCharacter.Titles = {}; end
-	if not currentCharacter.RuneforgeLegendaries then currentCharacter.RuneforgeLegendaries = {}; end
+	-- not needed, account-wide by blizzard
+	currentCharacter.RuneforgeLegendaries = nil;
 	if not currentCharacter.Conduits then currentCharacter.Conduits = {}; end
 	currentCharacter.lastPlayed = time();
 	app.CurrentCharacter = currentCharacter;
