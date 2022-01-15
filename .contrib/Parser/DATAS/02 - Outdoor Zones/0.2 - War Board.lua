@@ -127,6 +127,7 @@ _.Zones =
 			}),
 			q(28560, {	-- Warchief's Command: Ghostlands!
 				["isBreadcrumb"] = true,
+				["description"] = "Flagged complete when completing |cffffffffMissing in the Ghostlands|r [9144].",
 			}),
 			q(49546, {	-- Warchief's Command: Gorgrond!
 				["isBreadcrumb"] = true,

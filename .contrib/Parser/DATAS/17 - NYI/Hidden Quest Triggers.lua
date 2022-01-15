@@ -3024,11 +3024,6 @@ _.HiddenQuestTriggers = {
 		q(62271),	-- Deifir the Untamed secondary quest
 		q(61198),	-- Triggers when successfully completing the pre-req sequence for the Shimmermist Runner rare
 		-- Ardenweald Treasures
-		q(60820),	-- \
-		q(60821),	--  \
-		q(60822),	--   flower triggers for opening Lunarlight Pod (60794) (don't have coords)
-		q(60823),	--  /
-		q(60824),	-- /
 		q(60800),	-- \
 		q(60801),	--  \
 		q(60802),	--   running over Lunarlight Buds (48.1, 70.8), user could not find associated treasure
@@ -3039,11 +3034,6 @@ _.HiddenQuestTriggers = {
 		q(60812),	--   running over Lunarlight Buds (somewhere in/near Glitterfall Basin) to light up Dim Lunarlight Pod and turn it into Lunarlight Pod (questID #60792)
 		q(60813),	--  /
 		q(60814),	-- /
-		q(60805),	-- \
-		q(60806),	--  \
-		q(60807),	--   running over Lunarlight Buds for Lunarlight Pod at 38.8, 53.6, for #60791
-		q(60808),	--  /
-		q(60809),	-- /
 		-- Ardenweald Covenant (Night Fae)
 		q(62745),	-- Triggered after finishing Chapter 1 of Night Fae covenant questline
 		q(57559),	-- Triggered after turning in For Queen and Grove! (58160) / A Call to Service (62695)

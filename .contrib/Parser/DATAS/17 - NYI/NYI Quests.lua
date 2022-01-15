@@ -728,7 +728,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(34705),	-- Tracking Quest - Shadowmoon Intro
 			q(33693),	-- Tracking Quest: First Time at Capping Operation
 			q(33382),	-- Tracking Quest: Saw Maraad Storm Off
-			q(36900),	-- Tracking Quest: Talonpriest Ishaal
 			q(35703),	-- Tracking: Mill Treasure Barrier 1
 			q(35793),	-- Transferable Vellum
 			q(36331),	-- Treasure: Above Ogre Race Track
@@ -1085,7 +1084,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(39714),	-- Where Are the Children?
 
 			-- 6.2.3 - no NYI quests
-			
+
 			-- 6.x.x - quests in API with no name or patch info
 			q(33169),
 			q(33406),

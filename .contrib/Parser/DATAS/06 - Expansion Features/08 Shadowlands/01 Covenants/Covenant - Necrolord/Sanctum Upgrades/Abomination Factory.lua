@@ -415,13 +415,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 											{ "i", 178061, 10 },	-- 10xMalleable Flesh
 										},
 									}),
-									q(60041, {
-										["name"] = "Construct Body: Chordy",
-										["cost"] = {
-											{ "i", 178061, 1 },	-- 1xMalleable Flesh
-										},
-										["_drop"] = { "g" },
-									}),
 									q(57597, {
 										["name"] = "Construct Body: Flytrap",
 										["cost"] = {
@@ -535,6 +528,9 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 									["provider"] = { "n", 167150 },	-- Rathan
 									["coord"] = { 55.1, 68.8, MALDRAXXUS },
+									["cost"] = {
+										{ "i", 178061, 1 },	-- 1xMalleable Flesh
+									},
 									["_drop"] = { "g" },
 								}),
 								q(60195, {	-- Build One More

@@ -12184,8 +12184,9 @@ function app.FilterItemClass_RequireFaction(item)
 end
 function app.FilterItemClass_CustomCollect(item)
 	if item.customCollect then
+		local customCollects = app.CurrentCharacter.CustomCollects;
 		for _,c in ipairs(item.customCollect) do
-			if not app.CurrentCharacter.CustomCollects[c] then
+			if not customCollects[c] then
 				return false;
 			end
 		end

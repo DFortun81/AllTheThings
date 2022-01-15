@@ -1700,7 +1700,7 @@ _.ExpansionFeatures =
 };
 
 
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(BFA_TIER, {
 		n(-254, {	-- Heritage Armor
 			i(174354),	-- Vulpera Heritage Footwraps
@@ -1710,8 +1710,9 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			q(48068),	-- A Cure for Ebonhorn
 			q(48435),	-- The Spiritwalkers
 		}),
+		q(53468),	-- something concerning Highmountain Tauren Warrior / Orgrimmar / 37.9, 80.9
 	}),
-});
+}));
 
 _.HiddenQuestTriggers = {
 	q(54868),	-- During Heritage for Taurens in the End

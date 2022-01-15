@@ -7,7 +7,10 @@ root("Instances", tier(CLASSIC_TIER, {
 		["lore"] = "Once the greatest gold production center in the human lands, the Dead Mines were abandoned when the Horde razed Stormwind city during the First War. Now the Defias Brotherhood has taken up residence and turned the dark tunnels into their private sanctum. It is rumored that the thieves have conscripted the clever goblins to help them build something terrible at the bottom of the mines - but what that may be is still uncertain. Rumor has it that the way into the Deadmines lies through the quiet, unassuming village of Moonbrook.",
 		-- #endif
 		-- #if AFTER CATA
-		["coord"] = { 25.59, 50.97, 55 },	-- Deadmines, The Deadmines [Westfall]
+		["coords"] = {
+			{ 25.6, 51.0, 55 },	-- Deadmines, The Deadmines [Westfall]
+			{ 42.6, 71.8, WESTFALL },	-- Building entrance
+		},
 		-- #else
 		["coord"] = { 42.2, 82.6, WESTFALL },
 		-- #endif

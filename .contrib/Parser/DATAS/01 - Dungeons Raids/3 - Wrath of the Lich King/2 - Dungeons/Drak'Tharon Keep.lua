@@ -7,6 +7,7 @@ _.Instances = { tier(WOTLK_TIER, {
 		["lvl"] = 61,
 		["mapID"] = 160,
 		["maps"] = { 161 },
+		["coord"] = { 28.6, 86.9, ZULDRAK },
 		["groups"] = {
 			n(QUESTS, {
 				q(30120,{	-- Cleansing Drak'Tharon

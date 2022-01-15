@@ -1059,9 +1059,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					n(14354, {	-- Pusillin
 						["description"] = "Talk to him and then chase him. Eventually he will go up a ramp and become killable.",
 						["groups"] = {
-							i(18249, {	-- Crescent Key
-								["timeline"] = { "removed 4.0.3" },
-							}),
+							i(18249),	-- Crescent Key
 							i(18261),	-- Book of Incantations
 							i(18267),	-- Recipe: Runn Tum Tuber Surprise
 						},

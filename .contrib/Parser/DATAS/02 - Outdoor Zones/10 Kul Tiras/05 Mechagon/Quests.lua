@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root("Zones", {
 	m(KULTIRAS, {
 		m(MECHAGON, {	-- Mechagon
 			n(QUESTS, {
@@ -1605,8 +1604,33 @@ _.Zones =
 			}),
 		}),
 	}),
-};
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+});
+
+root("HiddenQuestTriggers", {
+	m(KULTIRAS, {
+		m(MECHAGON, {	-- Mechagon
+			n(QUESTS, {
+				q(55480),	-- After charging very first Energy Cell during quest Your First Charge is Free!(56320)
+				q(56427),	-- Popped up when looting and accepting Cracked Numeric Cylinder for the Discs of Norgannon summoning function
+				q(56662),	-- Triggered when completed "Real Ultimate Power"
+				--q(56252),	-- Paint Bottle:Electric blue?
+				--q(55453),	-- Unknown Mecha
+				q(56238),	-- Triggered in the alternative world
+				q(56208),	-- HQT triggered when completing 55103 (Ideas Can Come from Anywhere)
+				q(56435),	-- Playing Ode to Tinkertown on the Gramophone
+				q(56511),	-- Playing Battle of Gnomeregan on the Gramophone
+				--q(56742),	-- Blueprint: Black Market Radio?
+				q(56360, {["repeatable"]=true}),	-- triggered when completing 'Other Interests'
+				q(56743),	-- triggered when completing 'Other Interests'
+				--q(55417),	-- Paint vial: Bronze/Red or Blueprint: Gramophone or Mining in Mechagon
+				q(55261),	-- Building "Lightning Zap 5000" as a result of the WQ "Toys For Destruction" (ID: 54090).
+				q(55902),	-- Building "Supercollider" (Spell ID: 292352) during "Toys for Destruction" (Quest ID: 54090)
+			}),
+		}),
+	}),
+});
+
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(54084),	-- [DNT]
 		q(56191),	-- Blueprint: TK32[DNT]
@@ -1654,20 +1678,4 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(55337),	-- Vehicle: TK19[DNT]
 		q(55338),	-- Vehicle: TK20[DNT]
 	}),
-});
-_.HiddenQuestTriggers = {
-	q(55480),	-- After charging very first Energy Cell during quest Your First Charge is Free!(56320)
-	q(56427),	-- Popped up when looting and accepting Cracked Numeric Cylinder for the Discs of Norgannon summoning function
-	q(56662),	-- Triggered when completed "Real Ultimate Power"
-	--q(56252),	-- Paint Bottle:Electric blue?
-	--q(55453),	-- Unknown Mecha
-	q(56238),	-- Triggered in the alternative world
-	q(56208),	-- HQT triggered when completing 55103 (Ideas Can Come from Anywhere)
-	q(56435),	-- Playing Ode to Tinkertown on the Gramophone
-	q(56511),	-- Playing Battle of Gnomeregan on the Gramophone
-	--q(56360),	-- Vinyl:Depths of Ulduar?
-	--q(56742),	-- Blueprint: Black Market Radio?
-	--q(55417),	-- Paint vial: Bronze/Red or Blueprint: Gramophone or Mining in Mechagon
-	q(55261),	-- Building "Lightning Zap 5000" as a result of the WQ "Toys For Destruction" (ID: 54090).
-	q(55902),	-- Building "Supercollider" (Spell ID: 292352) during "Toys for Destruction" (Quest ID: 54090)
-};
+}));
