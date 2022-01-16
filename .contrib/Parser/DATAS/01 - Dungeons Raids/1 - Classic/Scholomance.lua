@@ -1629,5 +1629,7 @@ root("HiddenQuestTriggers", {
 });
 -- #endif
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	q(5383),	-- Krastinov's Bag of Horrors
+	n(QUESTS, {
+		q(5383),	-- Krastinov's Bag of Horrors
+	}),
 }));

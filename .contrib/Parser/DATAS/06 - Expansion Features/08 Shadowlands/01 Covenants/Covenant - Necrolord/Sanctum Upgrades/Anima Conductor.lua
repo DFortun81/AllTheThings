@@ -155,10 +155,8 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 	}),
 })));
 
-for _,g in ipairs({GIEGER, SABRIEL ,{GRATEFUL,AMALGAMTED_FORWORNS_JOURNAL,TEMPERED_BONEPLASTE_WAISTGUARD}}) do
-	for	_,t in ipairs(g) do
-		t.customCollect = nil;
-	end
+for _,t in ipairs({GIEGER,SABRIEL,GRATEFUL,AMALGAMTED_FORWORNS_JOURNAL,TEMPERED_BONEPLASTE_WAISTGUARD}) do
+	t.customCollect = nil;
 end
 
 root("HiddenQuestTriggers", {

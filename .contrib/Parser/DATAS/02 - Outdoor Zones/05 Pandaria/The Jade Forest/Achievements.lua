@@ -69,7 +69,7 @@ _.Zones =
 							i(86198),	-- Hammer of Ten Thunders
 						},
 					}),
-					o(213743, {	-- Jade Infused Blade
+					n(64272, {	-- Jade Warrior Statue
 						["questID"] = 31307,
 						["coord"] = { 39.26, 46.65, THE_JADE_FOREST },
 						["g"] = {

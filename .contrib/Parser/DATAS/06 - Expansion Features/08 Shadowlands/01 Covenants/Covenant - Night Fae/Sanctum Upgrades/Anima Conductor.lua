@@ -111,6 +111,59 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["isDaily"] = true,
 									["questID"] = 61691,
 									["coord"] = { 51.7, 32.3, ARDENWEALD },
+									["g"] = {
+										n(173005,{	-- Lunarlight Bud
+											["questID"] = 61696,
+											["isDaily"] = true,
+											["coords"] = {
+												{ 52.3, 32.4, ARDENWEALD },
+												{ 52.5, 33.4, ARDENWEALD },
+												{ 52.5, 33.7, ARDENWEALD },
+												{ 53.1, 33.0, ARDENWEALD },
+											},
+										}),
+										n(173006,{	-- Lunarlight Bud
+											["questID"] = 61695,
+											["isDaily"] = true,
+											["coords"] = {
+												{ 51.8, 32.4, ARDENWEALD },
+												{ 51.9, 31.5, ARDENWEALD },
+												{ 52.0, 30.9, ARDENWEALD },
+												{ 52.3, 31.7, ARDENWEALD },
+												{ 52.5, 30.9, ARDENWEALD },
+											},
+										}),
+										n(173008,{	-- Lunarlight Bud
+											["questID"] = 61694,
+											["isDaily"] = true,
+											["coords"] = {
+												{ 51.0, 34.4, ARDENWEALD },
+												{ 51.4, 33.3, ARDENWEALD },
+												{ 51.5, 34.1, ARDENWEALD },
+												{ 51.8, 33.8, ARDENWEALD },
+											},
+										}),
+										n(173009,{	-- Lunarlight Bud
+											["questID"] = 61693,
+											["isDaily"] = true,
+											["coords"] = {
+												{ 50.0, 33.3, ARDENWEALD },
+												{ 50.4, 33.0, ARDENWEALD },
+												{ 50.6, 33.6, ARDENWEALD },
+												{ 50.9, 33.0, ARDENWEALD },
+											},
+										}),
+										n(173010,{	-- Lunarlight Bud
+											["questID"] = 61692,
+											["isDaily"] = true,
+											["coords"] = {
+												{ 50.1, 32.3, ARDENWEALD },
+												{ 50.2, 31.6, ARDENWEALD },
+												{ 50.5, 31.8, ARDENWEALD },
+												{ 51.2, 32.5, ARDENWEALD },
+											},
+										}),
+									},
 								}),
 							}),
 						}),
@@ -168,10 +221,8 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 	}),
 })));
 
-for _,g in ipairs({STAR_LAKE_AMPHITHEATER, VALFIR ,{GRATEFUL,GLIMMERLIGHT_STAFF,TWILIGHT_BLOOM,EVERCHILL_BRAMBLES,GLIMMERDUSTS_GRAND_DESIGN,MIKAI_DEATHSCYTHE,DREAMERS_MENDING,MURMURS_IN_THE_DARK,SILKY_SHIMMERMOTH,GREATAXE_OF_UNRELENTING_PURSUIT}}) do
-	for	_,t in ipairs(g) do
-		t.customCollect = nil;
-	end
+for _,t in ipairs({STAR_LAKE_AMPHITHEATER, VALFIR,GRATEFUL,GLIMMERLIGHT_STAFF,TWILIGHT_BLOOM,EVERCHILL_BRAMBLES,GLIMMERDUSTS_GRAND_DESIGN,MIKAI_DEATHSCYTHE,DREAMERS_MENDING,MURMURS_IN_THE_DARK,SILKY_SHIMMERMOTH,GREATAXE_OF_UNRELENTING_PURSUIT}) do
+	t.customCollect = nil;
 end
 
 root("HiddenQuestTriggers", {

@@ -1637,14 +1637,11 @@ profession(ARCHAEOLOGY, {
 		}),
 	}),
 	currency(401,  {	-- Tol'vir
-		prof(ALCHEMY, {
+		prof(ALCHEMY, bubbleDown({["requireSkill"] = ALCHEMY},{
 			i(64657, {	-- Canopic Jar
-				["requireSkill"] = ALCHEMY,
-				["g"] = {
-					i(67538),	-- Recipe: Vial of the Sands
-				},
+				i(67538),	-- Recipe: Vial of the Sands
 			}),
-		}),
+		})),
 		filter(BATTLE_PETS, {
 			i(60847),	-- Crawling Claw
 		}),

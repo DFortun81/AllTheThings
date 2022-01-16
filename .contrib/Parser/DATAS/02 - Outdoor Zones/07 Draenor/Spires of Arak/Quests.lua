@@ -886,6 +886,7 @@ _.Zones =
 				}),
 				q(35003, {	-- Ritual Severance
 					["sourceQuests"] = {
+						34999,	-- Hatred Undying
 						35001,	-- Gaze of the Raven God
 						35002,	-- Sons of Sethe
 					},
@@ -906,6 +907,7 @@ _.Zones =
 				}),
 				q(35004, {  -- Servants of a Dead God
 					["sourceQuests"] = {
+						34999,	-- Hatred Undying
 						35001,	-- Gaze of the Raven God
 						35002,	-- Sons of Sethe
 					},

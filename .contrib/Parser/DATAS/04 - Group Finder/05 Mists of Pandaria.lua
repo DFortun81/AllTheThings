@@ -24,14 +24,14 @@ _.GroupFinder =
 				un(REMOVED_FROM_GAME, i(113771)),	-- Firecracker Slippers
 				i(113740),	-- Firecracker Tunic*		— 12/27/21
 				i(113730),	-- Venomtail Helm
-				i(113753),	-- Venomtail Shoulderguards *
-				i(113741),	-- Venomtail Chestguard*
-				i(113747),	-- Venomtail Gauntlets*
-				i(113779),	-- Venomtail Girdle			— Confirmed by Shorty on Discord on August 23, 2020
+				i(113753),	-- Venomtail Shoulderguards*— 01/14/21
+				i(113741),	-- Venomtail Chestguard*	— 01/14/21
+				i(113747),	-- Venomtail Gauntlets*		— 01/14/21
+				i(113779),	-- Venomtail Girdle			— 01/14/21
 				i(113778),	-- Venomtail Belt*
-				i(113777),	-- Venomtail Boots
+				i(113777),	-- Venomtail Boots			— 01/14/21
 				i(113776),	-- Venomtail Treads
-				i(113732),	-- Venomtail Visor
+				i(113732),	-- Venomtail Visor			— 01/14/21
 				i(113738),	-- Kyparite Chestguard*
 				i(113784),	-- Kyparite Belt
 				i(113782),	-- Kyparite Boots
@@ -41,10 +41,10 @@ _.GroupFinder =
 				i(113728),	-- Kyparite Helm*
 				i(113783),	-- Kyparite Stompers*
 				i(113750),	-- Kyparite Shoulderguards*
-				i(113735),	-- Drifting Cloud Necklace*
-				i(113755),	-- Ring of Flowing Water*	— 12/27/21
-				i(113734),	-- Tranquil Breeze Pendant of the Peerless
-				i(113756),	-- Loop of Inner Clarity*	— confirmed by Reaperman on discord on May 3, 2020
+				i(113735),	-- Drifting Cloud Necklace*	— 01/14/21
+				i(113755),	-- Ring of Flowing Water*	— 01/14/21
+				i(113734),	-- Tranquil Breeze Pendant of the Peerless	— 01/14/21
+				i(113756),	-- Loop of Inner Clarity*	— 01/14/21
 			},
 		}),
 		i(114662, {	-- Tranquil Satchel of Helpful Goods 85-87, 88-90

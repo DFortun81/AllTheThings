@@ -232,6 +232,41 @@ _.Zones =
 						{ 32.2, 37.1, MALDRAXXUS },
 						{ 34.9, 30.9, MALDRAXXUS },
 					},
+					["g"] = {
+						o_repeated({
+							["coords"] = {
+								{ 24.4, 34.8, MALDRAXXUS },
+								{ 26.0, 48.0, MALDRAXXUS },
+								{ 26.6, 38.3, MALDRAXXUS },
+								{ 26.7, 31.4, MALDRAXXUS },
+								{ 26.8, 46.4, MALDRAXXUS },
+								{ 26.8, 46.5, MALDRAXXUS },
+								{ 27.5, 50.2, MALDRAXXUS },
+								{ 29.0, 28.3, MALDRAXXUS },
+								{ 30.5, 31.3, MALDRAXXUS },
+								{ 31.8, 22.7, MALDRAXXUS },
+								{ 32.4, 29.0, MALDRAXXUS },
+								{ 33.6, 22.3, MALDRAXXUS },
+								{ 35.3, 23.1, MALDRAXXUS },
+								{ 35.4, 27.9, MALDRAXXUS },
+								{ 35.5, 30.2, MALDRAXXUS },
+							},
+							["g"] = {
+								o(355194, {	-- Rune of Constructs
+									["questID"] = 61120,
+									["isDaily"] = true,
+								}),
+								o(355195, {	-- Rune of Constructs
+									["questID"] = 61121,
+									["isDaily"] = true,
+								}),
+								o(355196, {	-- Rune of Constructs
+									["questID"] = 61122,
+									["isDaily"] = true,
+								}),
+							},
+						}),
+					},
 				}),
 				o(355038, {		-- Runebound Coffer
 					["description"] = "To unlock it, you must find 3 nearby |cFFFFFFFFRunes of Rituals|r and click them to deactivate the corresponding runes on the chest.",
@@ -240,6 +275,33 @@ _.Zones =
 					["coords"] = {
 						{ 69.0, 27.6, MALDRAXXUS },
 						{ 69.6, 33.5, MALDRAXXUS },
+					},
+					["g"] = {
+						o_repeated({
+							["coords"] = {
+								{ 63.8, 33.2, MALDRAXXUS },
+								{ 64.8, 35.8, MALDRAXXUS },
+								{ 65.5, 28.6, MALDRAXXUS },
+								{ 65.7, 34.6, MALDRAXXUS },
+								{ 66.7, 29.0, MALDRAXXUS },
+								{ 70.1, 31.3, MALDRAXXUS },
+								{ 71.6, 35.2, MALDRAXXUS },
+							},
+							["g"] = {
+								o(355040, {	-- Rune of Rituals
+									["questID"] = 61117,
+									["isDaily"] = true,
+								}),
+								o(355048, {	-- Rune of Rituals
+									["questID"] = 61118,
+									["isDaily"] = true,
+								}),
+								o(355049, {	-- Rune of Rituals
+									["questID"] = 61119,
+									["isDaily"] = true,
+								}),
+							},
+						}),
 					},
 				}),
 				o(345456, {		-- Runespeaker's Trove

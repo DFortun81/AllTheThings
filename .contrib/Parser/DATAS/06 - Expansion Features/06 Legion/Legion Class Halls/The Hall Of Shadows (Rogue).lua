@@ -352,7 +352,7 @@ _.ExpansionFeatures =
 							["coord"] = { 45.0, 64.0, BROKEN_SHORE },
 							["classes"] = { ROGUE },
 							["provider"] = { "n", 119259 },	-- Apothecary Keever
-							["sourceQuest"] = 46246,	-- Strike Them Down
+							["sourceQuests"] = { 46251 },	-- Shard Times
 						}),
 						q(45835, {	-- False Orders (A)
 							["coord"] = { 57.7, 63.5, AZSUNA },

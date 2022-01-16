@@ -2065,6 +2065,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									}),
 									i(187133, {	-- Bewitching Little Hat
 										["cost"] = { { "c", 1820, 25 } },	-- 25x Infused Ruby
+										["u"] = HALLOWS_END,
 									}),
 									i(181517, {	-- Building: Dredger Pool
 										["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
@@ -2338,6 +2339,7 @@ root("HiddenQuestTriggers", {
 			q(62521),	-- 'Safe/Humble' criteria for It's Certainly Never Boring
 			q(62523),	-- 'Safe/Humble' criteria for It's Certainly Never Boring
 			q(62525),	-- 'Relaxing' criteria for It's Certainly Never Boring
+			q(61529),	-- 'Relaxing' criteria for It's Certainly Never Boring
 			q(62526),	-- 'Exciting' criteria for It's Certainly Never Boring
 			q(62520),	-- 'Clean' criteria for It's Certainly Never Boring
 

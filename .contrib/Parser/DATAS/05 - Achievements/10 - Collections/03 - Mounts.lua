@@ -63,7 +63,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 		ach(8302,  {	-- Mount Parade (H, 200 mounts)
 			["races"] = HORDE_ONLY,
 			["g"] = {
-				i(98259),	-- Armored Blue Dragonhawk
+				i(98104),	-- Armored Red Dragonhawk
 			},
 		}),
 		ach(7860,  {	-- We're Going to Need More Saddles (A, 150 mounts)
@@ -87,7 +87,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 		ach(2537,  {	-- Mountain o' Mounts (H, 100 mounts)
 			["races"] = HORDE_ONLY,
 			["g"] = {
-				i(44843),	-- Blue Dragonhawk
+				i(44842),	-- Red Dragonhawk
 			},
 		}),
 		ach(2143,  {	-- Leading the Cavalry (50 mounts)

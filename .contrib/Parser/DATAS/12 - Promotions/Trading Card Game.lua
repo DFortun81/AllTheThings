@@ -191,12 +191,16 @@ root("Promotions", n(TCG_HEADER, bubbleDown({
 			["timeline"] = { "added 3.2.2.10468" },
 		}),
 		i(93672, {	-- Dark Portal
+			["model"] = 803615,
+			["modelScale"] = 5,
 			["timeline"] = { "added 5.2.0.16408" },
 		}),
 		i(79769, {	-- Demon Hunter's Aspect
 			["timeline"] = { "added 4.3.2.15211" },
 		}),
 		i(38301, {	-- D.I.S.C.O.
+			["model"] = 201182,
+			["modelScale"] = 3,
 			["timeline"] = { "added 2.4.2.8301" },
 		}),
 		i(54452, {	-- Ethereal Portal
@@ -206,6 +210,7 @@ root("Promotions", n(TCG_HEADER, bubbleDown({
 			["timeline"] = { "added 2.2.0.7091" },
 		}),
 		i(45063, {	-- Foam Sword Rack
+			["model"] = 253206,
 			["timeline"] = { "added 3.1.0.9626" },
 		}),
 		i(69227, {	-- Fool's Gold
@@ -215,6 +220,7 @@ root("Promotions", n(TCG_HEADER, bubbleDown({
 			["timeline"] = { "added 2.1.3.6898" },
 		}),
 		i(35227, {	-- Goblin Weather Machine - Prototype 01-B
+			["model"] = 166247,
 			["timeline"] = { "added 2.4.0.8089" },
 		}),
 		i(67097, {	-- Grim Campfire
@@ -230,6 +236,8 @@ root("Promotions", n(TCG_HEADER, bubbleDown({
 			["timeline"] = { "added 4.3.0.15005" },
 		}),
 		i(46780, {	-- Ogre Pinata
+			["model"] = 306851,	-- Candypile = 306864
+			["modelScale"] = 9,
 			["timeline"] = { "added 3.2.0.10026" },
 		}),
 		i(34499, {	-- Paper Flying Machine Kit
@@ -248,6 +256,8 @@ root("Promotions", n(TCG_HEADER, bubbleDown({
 			["timeline"] = { "added 4.3.0.15005" },
 		}),
 		i(38578, {	-- The Flag of Ownership
+			["model"] = 200314,
+			["modelScale"] = 2,
 			["timeline"] = { "added 2.5.1" },
 		}),
 		i(69215, {	-- War Party Hitching Post

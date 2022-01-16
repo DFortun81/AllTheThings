@@ -454,7 +454,15 @@ _.Zones =
 						i(159038),	-- Loa Speaker's Bands
 						i(159039),	-- Nazmani Warplate Armguards
 						i(159041),	-- Ritual Flayer's Armbands
-						i(158631),	-- Wickerwoven Bindings	-- this is an alliance-only appearance that was granted to me when i learned Loa Speaker's Bands.  it doesn't appear to come from anywhere apart from this quest.
+						i(158631, {	-- Wickerwoven Bindings (confirmed)
+							["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
+						}),
+						i(158633, {	-- Crone-Seeker's Bindings (confirmed)
+							["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
+						}),
+						i(158634, {	-- Waycrest Militia Wristguards (confirmed)
+							["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
+						}),
 					},
 				}),
 				q(49314, {	-- Hunting Zardrax
@@ -589,7 +597,15 @@ _.Zones =
 						i(159013),	-- Nazmani Warplate Stompers
 						i(159016),	-- Ritual Flayer's Footwraps
 						i(158983),	-- Ritual Flayer's Grips
-						i(158588),	-- Wickerwoven Walkers -- this is an alliance-only appearance that was granted to me when i learned Loa Speaker's Sandals.  it doesn't appear to come from anywhere apart from this quest.
+						i(158588, {	-- Wickerwoven Walkers (confirmed)
+							["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
+						}),
+						i(158590, {	-- Crone-Seeker's Striders (confirmed)
+							["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
+						}),
+						i(158591, {	-- Waycrest Militia Footguards (confirmed)
+							["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
+						}),
 					},
 				}),
 				q(47264, {	-- Leave None Standing
@@ -684,6 +700,10 @@ _.Zones =
 						i(159090),	-- Crawgmother's Shortbow
 						i(159096),	-- Nagla's Headcracker
 						i(159095),	-- Bloodhunter Greatblade
+						i(161293, {	-- Thrasneck Greatblade (confirmed)
+							["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
+						}),
+						
 					},
 				}),
 				q(48854, {	-- Offer of Power
@@ -896,6 +916,19 @@ _.Zones =
 						i(158967, {	-- Ritual Flayer's Waistband
 							["races"] = HORDE_ONLY,
 						}),
+						--[[	
+						-- Alliance appearance with no other source, granted by learning Horde appearance
+						-- How to even mark those with faction then, quest is neutral, but you don't get the item as Alliance, but Horde can't transmog that
+						
+						i(155481),	-- Crone-Seeker's Chain (confirmed)
+						  ?	["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
+						}),
+						i(155489),	-- Waycrest Militia Belt (confirmed)
+						  ?	["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
+						}),
+		
+						
+						]]--
 					},
 				}),
 				q(48497, {	-- Show of Force
@@ -1001,15 +1034,23 @@ _.Zones =
 					["coord"] = { 44.1, 62.8, NAZMIR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(159025),	-- Nazmani Warplate Legplates
-						i(159026),	-- Loa Speaker's Legwraps
-						i(159027),	-- Death-Pledged Breeches
-						i(159028),	-- Ritual Flayer's Pants
 						i(159034),	-- Nazmani Warplate Greatbelt
+						i(159025),	-- Nazmani Warplate Legplates
 						i(159035),	-- Loa Speaker's Cincture
+						i(159026),	-- Loa Speaker's Legwraps
 						i(159036),	-- Death-Pledged Chain
+						i(159027),	-- Death-Pledged Breeches
 						i(159037),	-- Ritual Flayer's Girdle
-						i(158619),	-- Wickerwoven Waistband -- this is an alliance-only appearance that was granted to me when i learned Loa Speaker's Cincture.  it doesn't appear to come from anywhere apart from this quest.
+						i(159028),	-- Ritual Flayer's Pants
+						i(158619, {	-- Wickerwoven Waistband (confirmed)
+							["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
+						}),
+						i(158621, {	-- Crone-Seeker's Cincture (confirmed)
+							["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
+						}),
+						i(158622, {	-- Waycrest Militia Buckle (confirmed)
+							["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
+						}),
 					},
 				}),
 				q(48577, {	-- Terrorizing Their Eggs

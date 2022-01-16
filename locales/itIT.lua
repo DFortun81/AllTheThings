@@ -217,6 +217,7 @@ local L = app.L;
 	--TODO: L.NESTED_QUEST_REQUIREMENTS = "Nested Quest Requirements";
 	--TODO: L.MAIN_LIST_REQUIRES_REFRESH = "[Open Main list to update progress]";
 	--TODO: L.DOES_NOT_CONTRIBUTE_TO_PROGRESS = "|cffe08207This group and its content do not contribute to the progress of this window!|r";
+	--TODO: L.CURRENCY_NEEDED_TO_BUY = "Items needed to buy not collected Things";
 
 	-- Item Filter Window
 		--TODO: L.ITEM_FILTER_TEXT = "Item Filters";
@@ -245,7 +246,7 @@ local L = app.L;
 	--TODO: L.AFTER_REFRESH = "After Refresh";
 
 	-- General tab
-		-- Mod Title
+		-- Mode Title
 			--TODO: L.MODE = "Mode";
 			--TODO: L.TITLE_COMPLETIONIST = "Completionist ";
 			--TODO: L.TITLE_UNIQUE_APPEARANCE = "Unique ";
@@ -257,6 +258,7 @@ local L = app.L;
 			--TODO: L.TITLE_INSANE = "|cffADD8E6Insane|R ";
 			--TODO: L.TITLE_SOME_THINGS = "Some of the Things ";
 			--TODO: L.TITLE_LEVEL = "Level ";
+			--TODO: L.TITLE_SOLO = "Solo ";
 			--TODO: L._BETA_LABEL = " |cff4AA7FF[Beta]|R";
 
 		--TODO: L.GENERAL_LABEL = "General";
@@ -361,7 +363,6 @@ local L = app.L;
 		--TODO: L.ACCOUNT_WIDE_QUESTS_TOOLTIP = "|cff00AB00Track Account-wide|R\n\nQuest completion is typically per Character, but this will consider a Quest as completed if ANY Character has completed that specific Quest.";
 		--TODO: L.ACCOUNT_WIDE_RECIPES_TOOLTIP = "|cff00AB00Track Account-wide|R\n\nRecipes are not normally tracked account wide in Blizzard's database, but we can do that.\n\nIt is impossible to collect them all on one character, so with this, you can give your alts and their professions meaning.";
 		--TODO: L.ACCOUNT_WIDE_REPUTATIONS_TOOLTIP = "|cff00AB00Track Account-wide|R\n\nReputations are now tracked account wide in Blizzard's database for achievements, so turning this on may be a good idea.";
-		--TODO: L.ACCOUNT_WIDE_RUNEFORGELEGENDARIES_TOOLTIP = "|cff00AB00Track Account-wide|R\n\nNot sure this will help at all for collection... enjoy moving at least one character of every class through every Covenant and Renown progression...";
 		--TODO: L.ACCOUNT_WIDE_SOULBINDCONDUITS_TOOLTIP = "|cff00AB00Track Account-wide|R\n\nEnable this to consider a Soulbind Conduit as collected for all characters if at least one character has learned it.";
 		--TODO: L.ACCOUNT_WIDE_TITLES_TOOLTIP = "|cff00AB00Track Account-wide|R\n\nMost titles are tracked account wide, but some prestigious titles in WoW are locked to the character that earned them.\n\nToggle this if you don't care about that and want to see those titles marked Collected for your alts.";
 
@@ -410,6 +411,8 @@ local L = app.L;
 		--TODO: L.KNOWN_BY_CHECKBOX_TOOLTIP = "Enable this option if you want to see the full list of characters on all servers that know this recipe in the tooltip.";
 		--TODO: L.SHOW_MODELS_CHECKBOX = "Model Preview";
 		--TODO: L.SHOW_MODELS_CHECKBOX_TOOLTIP = "Enable this option to show models within a preview instead of the icon on the tooltip.\n\nThis option may assist you in identifying what a Rare Spawn or Vendor looks like. It might be a good idea to keep this turned on for that reason.";
+		--TODO: L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX = "Currency calculation";
+		--TODO: L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP = "Enable this option to show the approximate amount of items/currency required to buy Uncollected Things.\n\nOnly those collectible Things that can be directly purchased for an item/currency are counted. Containers that do not give items with a 100% chance are not counted.";
 		--TODO: L.SHARED_APPEARANCES_CHECKBOX = "Shared Appearances";
 		--TODO: L.SHARED_APPEARANCES_CHECKBOX_TOOLTIP = "Enable this option to see items that share a similar appearance in the tooltip.\n\nNOTE: Items that do not match the armor type are displayed in the list. This is to help you diagnose the Collection progress.\n\nIf you are ever confused by this, as of ATT v1.5.0, you can Right Click the item to open the item and its Shared Appearances into their own standalone Mini List.";
 		--TODO: L.INCLUDE_ORIGINAL_CHECKBOX = "Original Source";
@@ -678,6 +681,7 @@ for key,value in pairs({
 	-- Class Hall /Artifact
 		--TODO: [-159] = "Event Roll",								-- Daily Dreamway Event Roll
 	-- Other
+		--TODO: [-210] = ALLIED.." "..NEW.." "..CHARACTER,			-- Allied New Character
 		--TODO: [-211] = NEW.." "..CHARACTER,						-- New Character
 		--TODO: [-212] = GetSpellInfo(225652).." "..GetSpellInfo(168498),-- Treasure Chest
 	-- Fishing
@@ -1321,7 +1325,6 @@ for key,value in pairs({
 	[213653] = "Lancia da Pesca dei Pandaren",	-- Pandaren Fishing Spear
 	[213741] = "Antico Bastone dei Jinyu",	-- Ancient Jinyu Staff
 	[213742] = "Martello dei Dieci Tuoni",	-- Hammer of Ten Thunders
-	--TODO: [213743] = "Jade Infused Blade",	-- Jade Infused Blade
 	[213748] = "Pietra Rituale dei Pandaren",	-- Pandaren Ritual Stone
 	[213749] = "Bastone del Maestro Nascosto",	-- Staff of the Hidden Master
 	[213750] = "Tavoletta di Pietra dei Saurok",	-- Saurok Stone Tablet
@@ -1577,6 +1580,7 @@ for key,value in pairs({
 	[232596] = "Grandascia Ancestrale",	-- Ancestral Greataxe
 	[232597] = "Pacco dei Goblin",	-- Goblin Pack
 	[232598] = "Rifornimenti degli Spargifumo",	-- Steamwheedle Supplies
+	[232599] = "Spoglie dei Cantaguerra",	-- Warsong Spoils
 	[232621] = "Strana Spora",	-- Strange Spore
 	[232624] = "Cassa di Mikkal",	-- Mikkal's Chest
 	[232985] = "Rifornimenti degli Spargifumo",	-- Steamwheedle Supplies
@@ -1762,6 +1766,7 @@ for key,value in pairs({
 	[236407] = "Antica Cassa degli Ogre",	-- Ancient Ogre Cache
 	[236483] = "Dono degli Antichi",	-- Gift of the Ancients
 	[236610] = "Dono dello Spirito",	-- Spirit's Gift
+	[236633] = "Cassa del Contrabbandiere",	-- Smuggler's Cache
 	[236693] = "Munizioni dell'Orda di Ferro",	-- Iron Horde Munitions
 	[236715] = "Teschio Strano",	-- Odd Skull
 	[236755] = "Scrigno Impolverato",	-- Dusty Lockbox
@@ -2045,6 +2050,7 @@ for key,value in pairs({
 	[250092] = "Cassa del Tesoro",	-- Treasure Chest
 	[250097] = "Cassa del Tesoro Piccola",	-- Small Treasure Chest
 	[250098] = "Cassa del Tesoro Piccola",	-- Small Treasure Chest
+	[250102] = "Cassa del Tesoro",	-- Treasure Chest
 	[250103] = "Cassa del Tesoro Piccola",	-- Small Treasure Chest
 	[250104] = "Cassa del Tesoro Piccola",	-- Small Treasure Chest
 	[250106] = "Cassa del Tesoro Piccola",	-- Small Treasure Chest
@@ -2759,7 +2765,10 @@ for key,value in pairs({
 	[355035] = "Scrigno Runico Prescelto",	-- Treasure: House of the Chosen
 	[355037] = "Scrigno Runico",	-- Runebound Coffer
 	[355038] = "Scrigno Runico",	-- Runebound Coffer
+	[355040] = "Runa dei Rituali",	-- Rune of Rituals
 	[355041] = "Scrigno della Luna",	-- Cache of the Moon
+	[355048] = "Runa dei Rituali",	-- Rune of Rituals
+	[355049] = "Runa dei Rituali",	-- Rune of Rituals
 	[355286] = "Offerte Commemorative",	-- Memorial Offerings
 	[355296] = "Incarico: Contenimento bestiale",	-- Bounty: Beast Control
 	[355355] = "Forziere Armonico",	-- Harmonic Chest
@@ -2904,6 +2913,7 @@ for key,value in pairs({
 	[369438] = "Cassa Vincolata alla Fenditura",	-- Riftbound Cache
 	[369439] = "Cassa Vincolata alla Fenditura",	-- Riftbound Cache
 	[369440] = "Cassa Vincolata alla Fenditura",	-- Riftbound Cache
+	--TODO: [370469] = "Spectral Feed",	-- Spectral Feed
 	[9962198] = "Pozza di Fango Improvvisata dell'Esiliato",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only

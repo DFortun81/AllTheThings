@@ -73,11 +73,19 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			crit(34),		-- Blind Rat (Dalaran)
 			crit(35),		-- Stormstruck Beaver (Stormheim)
 		})),
-		petbattle(ach(8519, {		-- Celestial Family*
-			crit(1),		-- Xu-Fu, Cub of Xuen
-			crit(2),		-- Chi-Chi, Hatchling of Chi-Ji
-			crit(3),		-- Yu'la, Broodling of Yu'lon
-			crit(4),		-- Zao, Calfling of Niuzao
+		petbattle(ach(8519, {	-- Celestial Family
+			crit(1, {	-- Xu-Fu, Cub of Xuen
+				["cost"] = { { "i", 101771, 1} },
+			}),
+			crit(2, {	-- Chi-Chi, Hatchling of Chi-Ji
+				["cost"] = { { "i", 102145, 1} },
+			}),
+			crit(3, {	-- Yu'la, Broodling of Yu'lon
+				["cost"] = { { "i", 102147, 1} },
+			}),
+			crit(4, {	-- Zao, Calfling of Niuzao
+				["cost"] = { { "i", 102146, 1} },
+			}),
 		})),
 		petbattle(ach(6611, {		-- Continental Tamer*
 			crit(1),		-- Outland Tamer

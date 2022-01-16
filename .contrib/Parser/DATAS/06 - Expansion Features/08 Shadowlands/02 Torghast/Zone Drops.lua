@@ -6,17 +6,67 @@ _.ExpansionFeatures =
 {
 	tier(SL_TIER, {
 		m(1627, {	-- Torghast
+			n(176761, {	-- Adamant Vault
+				n(ZONE_DROPS, {
+					n(COMMON_BOSS_DROPS, {
+						["crs"] = {
+							179433,	-- Vault Aegis
+							176578,	-- Vault Sentinel
+							179526,	-- Troz'igal the Oppressor
+						},
+						["g"] = {
+							i(187093),	-- Gilded Ornamental Mantle
+							i(187091),	-- Gilded Twin-Scythe Shoulders
+							i(187876),	-- Saurolisk Hatchling Soul (AV)
+							i(185049),	-- Saurolisk Soul (AV)
+						},
+					}),
+					i(187417, {	-- Adamant Vaults Cell
+						["crs"] = {
+							179433,	-- Vault Aegis
+							176578,	-- Vault Sentinel
+						},
+					}),
+					i(187081, {	-- Blackflame Skull Crescent
+						["crs"] = {
+							179526,	-- Troz'igal the Oppressor
+							179433,	-- Vault Aegis
+						},
+					}),
+					i(186549, {	-- Gilded Darknight (PET!)
+						["crs"] = {
+							179526,	-- Troz'igal the Oppressor
+							176578, -- Vault Sentinel
+						},
+					}),
+					i(187094, {	-- Gilded Spike Fortresses
+						["crs"] = {
+							179526,	-- Troz'igal the Oppressor
+						},
+					}),
+					i(187092, {	-- Gilded Shoulder-Shields
+						["crs"] = {
+							179526,	-- Troz'igal the Oppressor
+							176578,	-- Vault Sentinel
+						},
+					}),
+					i(187084, {	-- Jailer's Eye Crescent
+						["crs"] = {
+							179526,	-- Troz'igal the Oppressor
+						},
+					}),
+					i(187025, {	-- Painbringer's Back-Prison
+						["crs"] = {
+							179526,	-- Troz'igal the Oppressor
+						},
+					}),
+				}),
+			}),
 			n(ZONE_DROPS, {
 			--	Epics
 				i(187096, {	-- Adamant Vault Shoulderplates
 					["crs"] = {
 						155945,	-- Gherus the Chained
-					},
-				}),
-				i(187081, {	-- Blackflame Skull Crescent
-					["crs"] = {
-						179526,	-- Troz'igal the Oppressor
-						179433,	-- Vault Aegis
 					},
 				}),
 				i(187044, {	-- Deathbringer's Epaulettes
@@ -30,36 +80,6 @@ _.ExpansionFeatures =
 				i(187030, {	-- Deathsworn Shoulderguards
 					["crs"] = {
 						151329,	-- Warden Skoldus
-					},
-				}),
-				i(187093, {	-- Gilded Ornamental Mantle
-					["crs"] = {
-						179433,	-- Vault Aegis
-						176578,	-- Vault Sentinel
-						179526,	-- Troz'igal the Oppressor
-					},
-				}),
-				i(187094, {	-- Gilded Spike Fortresses
-					["crs"] = {
-						179526,	-- Troz'igal the Oppressor
-					},
-				}),
-				i(187091, {	-- Gilded Twin-Scythe Shoulders
-					["crs"] = {
-						179526,	-- Troz'igal the Oppressor
-						179433,	-- Vault Aegis
-						176578,	-- Vault Sentinel
-					},
-				}),
-				i(187092, {	-- Gilded Shoulder-Shields
-					["crs"] = {
-						179526,	-- Troz'igal the Oppressor
-						176578,	-- Vault Sentinel
-					},
-				}),
-				i(187084, {	-- Jailer's Eye Crescent
-					["crs"] = {
-						179526,	-- Troz'igal the Oppressor
 					},
 				}),
 				i(187039, {	-- Malleare's Stygian Pauldrons
@@ -80,11 +100,6 @@ _.ExpansionFeatures =
 						170418,	-- Goxul the Devourer
 						159190,	-- Synod
 						151329,	-- Warden Skoldus
-					},
-				}),
-				i(187025, {	-- Painbringer's Back-Prison
-					["crs"] = {
-						179526,	-- Troz'igal the Oppressor
 					},
 				}),
 				i(187046, {	-- Pauldrons of Immaculate Laceration
@@ -155,12 +170,6 @@ _.ExpansionFeatures =
 					},
 				}),
 			--	Blues
-				i(187417, {	-- Adamant Vaults Cell
-					["crs"] = {
-						179433,	-- Vault Aegis
-						176578,	-- Vault Sentinel
-					},
-				}),
 				i(183193, {	-- Ashen Chomper (PET!)
 					["crs"] = {
 						151331,	-- Cellblock Sentinel
@@ -181,12 +190,6 @@ _.ExpansionFeatures =
 						151331,	-- Cellblock Sentinel
 						153165,	-- Custodian Thonar
 						151329,	-- Warden Skoldus
-					},
-				}),
-				i(186549, {	-- Gilded Darknight (PET!)
-					["crs"] = {
-						179526,	-- Troz'igal the Oppressor
-						176578, -- Vault Sentinel
 					},
 				}),
 				i(183116, {	-- Hissing Deathroach
@@ -238,8 +241,6 @@ _.ExpansionFeatures =
 						155251,	-- Elder Longbranch
 					},
 				}),
-				i(185049),	-- Saurolisk Soul (AV)
-				i(187876),	-- Saurolisk Hatchling Soul (AV)
 			}),
 		}),
 	}),

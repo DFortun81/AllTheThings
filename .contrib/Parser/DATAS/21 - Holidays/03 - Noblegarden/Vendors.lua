@@ -150,3 +150,11 @@ _.Holidays = bubbleDown({ ["u"] = NOBLEGARDEN }, {
 		}),
 	}),
 });
+
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	holiday(235477, {	-- Noblegarden
+		-- Holiday Stuff 9.1.5
+		i(188698),	-- Eagger Basket (Noblegarden Quest?)
+		i(188694),	-- Spring Florist's Pouch (Noblegarden)
+	}),
+}));

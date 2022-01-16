@@ -93,26 +93,26 @@ local GeneralSettingsBase = {
 		["Repeatable"] = false,
 		["RepeatableFirstTime"] = false,
 		["AccountWide:Achievements"] = true,
-		["AccountWide:AzeriteEssences"] = false,
+		["AccountWide:AzeriteEssences"] = true,
 		-- ["AccountWide:BattlePets"] = true,
 		["AccountWide:Conduits"] = true,
 		["AccountWide:FlightPaths"] = true,
 		["AccountWide:Followers"] = true,
 		-- ["AccountWide:Heirlooms"] = true,
-		["AccountWide:Illusions"] = true,
+		-- ["AccountWide:Illusions"] = true,
 		-- ["AccountWide:Mounts"] = true,
 		["AccountWide:MusicRollsAndSelfieFilters"] = true,
-		["AccountWide:Quests"] = false,
+		["AccountWide:Quests"] = true,
 		["AccountWide:Recipes"] = true,
 		["AccountWide:Reputations"] = true,
-		["AccountWide:RuneforgeLegendaries"] = true,
+		-- ["AccountWide:RuneforgeLegendaries"] = true,
 		["AccountWide:Titles"] = true,
 		-- ["AccountWide:Toys"] = true,
 		-- ["AccountWide:Transmog"] = true,
 		["Thing:Achievements"] = true,
 		["Thing:AzeriteEssences"] = true,
 		["Thing:BattlePets"] = true,
-		["Thing:Conduits"] = false,
+		["Thing:Conduits"] = true,
 		["Thing:FlightPaths"] = true,
 		["Thing:Followers"] = true,
 		["Thing:Heirlooms"] = true,
@@ -120,8 +120,8 @@ local GeneralSettingsBase = {
 		["Thing:Illusions"] = true,
 		["Thing:Mounts"] = true,
 		["Thing:MusicRollsAndSelfieFilters"] = true,
-		["Thing:Quests"] = false,
-		["Thing:QuestBreadcrumbs"] = false,
+		["Thing:Quests"] = true,
+		["Thing:QuestBreadcrumbs"] = true,
 		["Thing:Recipes"] = true,
 		["Thing:Reputations"] = true,
 		["Thing:RuneforgeLegendaries"] = true,
@@ -137,13 +137,36 @@ local GeneralSettingsBase = {
 	},
 };
 local FilterSettingsBase = {};
+local SeasonalSettingsBase = {
+	__index = {
+		["DoFiltering"] = false,
+		[1012] = true,
+		[1015] = true,
+		[1016] = true,
+		[1014] = true,
+		[1007] = true,
+		[1006] = true,
+		[1010] = true,
+		[1001] = true,
+		[1008] = true,
+		[1005] = true,
+		[1011] = true,
+		[1000] = true,
+		[1004] = true,
+		[1002] = true,
+		[1017] = true,
+		[1013] = true,
+		[1003] = true,
+	},
+};
 local TooltipSettingsBase = {
 	__index = {
-		["Auto:BountyList"] = true,
+		["Auto:BountyList"] = false,
 		["Auto:MiniList"] = true,
 		["Auto:ProfessionList"] = true,
-		["Auto:AH"] = true,
+		["Auto:AH"] = false,
 		["Celebrate"] = true,
+		["Coordinates"] = true,
 		["Screenshot"] = false,
 		["Channel"] = "master",
 		["ClassRequirements"] = true,
@@ -158,6 +181,7 @@ local TooltipSettingsBase = {
 		["MinimapSize"] = 36,
 		["MinimapStyle"] = true,
 		["Models"] = true,
+		["KnownBy"] = true,
 		["LiveScan"] = false,
 		["Locations"] = 5,
 		["Lore"] = true,
@@ -172,7 +196,7 @@ local TooltipSettingsBase = {
 		["SharedAppearances"] = true,
 		["Show:Remaining"] = false,
 		["Show:Percentage"] = true,
-		["UseMoreColors"] = false,
+		["UseMoreColors"] = true,
 		["Show:TooltipHelp"] = true,
 		["Skip:Cutscenes"] = false,
 		["SourceLocations"] = true,
@@ -182,8 +206,9 @@ local TooltipSettingsBase = {
 		["DropChances"] = true,
 		["SpecializationRequirements"] = true,
 		["SummarizeThings"] = true,
-		["Warn:Difficulty"] = false,
+		["Warn:Difficulty"] = true,
 		["Warn:Removed"] = true,
+		["Currencies"] = true,
 	},
 };
 
@@ -217,9 +242,10 @@ settings.Initialize = function(self)
 		RawSettings = AllTheThingsSettings;
 		if not RawSettings.General then RawSettings.General = {}; end
 		if not RawSettings.Tooltips then RawSettings.Tooltips = {}; end
-		if not RawSettings.Seasonal then RawSettings.Seasonal = app.GetDataMember("SeasonalFilters") or {}; end
-		if not RawSettings.Unobtainable then RawSettings.Unobtainable = app.GetDataMember("UnobtainableItemFilters") or {}; end
+		if not RawSettings.Seasonal then RawSettings.Seasonal = {}; end
+		if not RawSettings.Unobtainable then RawSettings.Unobtainable = {}; end
 		setmetatable(RawSettings.General, GeneralSettingsBase);
+		setmetatable(RawSettings.Seasonal, SeasonalSettingsBase);
 		setmetatable(RawSettings.Tooltips, TooltipSettingsBase);
 	end
 
@@ -351,6 +377,7 @@ settings.ApplyProfile = function()
 			RawSettings = settings:NewProfile(key);
 		end
 		setmetatable(RawSettings.General, GeneralSettingsBase);
+		setmetatable(RawSettings.Seasonal, SeasonalSettingsBase);
 		setmetatable(RawSettings.Tooltips, TooltipSettingsBase);
 
 		-- apply window positions when applying a Profile
@@ -372,23 +399,32 @@ settings.SetWindowFromProfile = function(suffix)
 	local points = RawSettings and RawSettings.Windows and RawSettings.Windows[suffix];
 	local window = app.Windows[suffix];
 	-- print("SetWindowFromProfile",suffix,points,window)
-	if window and points then
-		window:ClearAllPoints();
-		for _,point in ipairs(points) do
-			if point.Point then
-				window:SetPoint(point.Point, UIParent, point.PointRef, point.X, point.Y);
-				-- print("SetPoint",suffix,point.Point, point.PointRef, point.X, point.Y)
+	if window then
+		if RawSettings then
+			if suffix == "Prime" then
+				window:SetScale(settings:GetTooltipSetting("MainListScale"));
+			else
+				window:SetScale(settings:GetTooltipSetting("MiniListScale"));
 			end
 		end
-		if points.Width then
-			window:SetWidth(points.Width);
-			-- print("SetWidth",suffix,points.Width)
+		if points then
+			window:ClearAllPoints();
+			for _,point in ipairs(points) do
+				if point.Point then
+					window:SetPoint(point.Point, UIParent, point.PointRef, point.X, point.Y);
+					-- print("SetPoint",suffix,point.Point, point.PointRef, point.X, point.Y)
+				end
+			end
+			if points.Width then
+				window:SetWidth(points.Width);
+				-- print("SetWidth",suffix,points.Width)
+			end
+			if points.Height then
+				window:SetHeight(points.Height);
+				-- print("SetHeight",suffix,points.Height)
+			end
+			window.isLocked = points.Locked;
 		end
-		if points.Height then
-			window:SetHeight(points.Height);
-			-- print("SetHeight",suffix,points.Height)
-		end
-		window.isLocked = points.Locked;
 	end
 end
 settings.Get = function(self, setting, container)
@@ -434,8 +470,11 @@ settings.GetModeString = function(self)
 		local things = {};
 		local thingCount = 0;
 		local totalThingCount = 0;
+		local keyPrefix;
+		local solo = true;
 		for key,_ in pairs(GeneralSettingsBase.__index) do
-			if string.sub(key, 1, 6) == "Thing:" then
+			keyPrefix = string.sub(key, 1, 6);
+			if keyPrefix == "Thing:" then
 				totalThingCount = totalThingCount + 1;
 				if settings:Get(key) and
 					-- Quest Breadcrumbs only count when Quests are enabled
@@ -446,6 +485,9 @@ settings.GetModeString = function(self)
 					thingCount = thingCount + 1;
 					table.insert(things, string.sub(key, 7));
 				end
+			elseif solo and keyPrefix == "Accoun" and settings:Get(key) then
+				-- TODO: a bit wonky that a disabled Thing with AccountWide checked can make it non-solo...
+				solo = nil;
 			end
 		end
 		if thingCount == 0 then
@@ -464,6 +506,9 @@ settings.GetModeString = function(self)
 		elseif not settings:Get("Thing:Transmog") then
 			mode = L["TITLE_SOME_THINGS"] .. mode;
 		end
+		if solo then
+			mode = L["TITLE_SOLO"]..mode;
+		end
 	end
 	if self:Get("Filter:ByLevel") then
 		mode = L["TITLE_LEVEL"] .. app.Level .. " " .. mode;
@@ -481,8 +526,11 @@ settings.GetShortModeString = function(self)
 		local things = {};
 		local thingCount = 0;
 		local totalThingCount = 0;
+		local keyPrefix;
+		local solo = true;
 		for key,_ in pairs(GeneralSettingsBase.__index) do
-			if string.sub(key, 1, 6) == "Thing:" then
+			keyPrefix = string.sub(key, 1, 6);
+			if keyPrefix == "Thing:" then
 				totalThingCount = totalThingCount + 1;
 				if settings:Get(key) and
 					-- Quest Breadcrumbs only count when Quests are enabled
@@ -493,6 +541,8 @@ settings.GetShortModeString = function(self)
 					thingCount = thingCount + 1;
 					table.insert(things, string.sub(key, 7));
 				end
+			elseif solo and keyPrefix == "Accoun" and settings:Get(key) then
+				solo = nil;
 			end
 		end
 		local style;
@@ -507,6 +557,9 @@ settings.GetShortModeString = function(self)
 			end
 		else
 			style = "";
+		end
+		if solo then
+			style = "S"..style;
 		end
 		-- Waiting on Refresh to properly show values
 		if self.NeedsRefresh then
@@ -1056,7 +1109,6 @@ settings.UpdateMode = function(self, doRefresh)
 		app.AccountWideQuests = true;
 		app.AccountWideRecipes = true;
 		app.AccountWideReputations = true;
-		app.AccountWideRuneforgeLegendaries = true;
 		app.AccountWideSelfieFilters = true;
 		app.AccountWideTitles = true;
 		app.AccountWideToys = true;
@@ -1118,7 +1170,6 @@ settings.UpdateMode = function(self, doRefresh)
 		app.AccountWideQuests = self:Get("AccountWide:Quests");
 		app.AccountWideRecipes = self:Get("AccountWide:Recipes");
 		app.AccountWideReputations = self:Get("AccountWide:Reputations");
-		app.AccountWideRuneforgeLegendaries = self:Get("AccountWide:RuneforgeLegendaries");
 		app.AccountWideTitles = self:Get("AccountWide:Titles");
 		app.AccountWideToys = self:Get("AccountWide:Toys");
 		app.AccountWideTransmog = self:Get("AccountWide:Transmog");
@@ -2067,21 +2118,15 @@ RuneforgeLegendariesCheckBox:SetPoint("TOPLEFT", SoulbindConduitsCheckBox, "BOTT
 
 local RuneforgeLegendariesAccountWideCheckBox = child:CreateCheckBox("",
 function(self)
-	self:SetChecked(settings:Get("AccountWide:RuneforgeLegendaries"));
-	if settings:Get("DebugMode") or not settings:Get("Thing:RuneforgeLegendaries") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
+	-- always account-wide
+	self:SetChecked(true);
+	self:Disable();
+	self:SetAlpha(0.2);
 end,
 function(self)
-	settings:Set("AccountWide:RuneforgeLegendaries", self:GetChecked());
-	settings:UpdateMode(1);
+	-- no clicking
 end);
 RuneforgeLegendariesAccountWideCheckBox:SetCheckedTexture("Interface\\AddOns\\AllTheThings\\assets\\TrackAccountWide");
-RuneforgeLegendariesAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_RUNEFORGELEGENDARIES_TOOLTIP"]);
 RuneforgeLegendariesAccountWideCheckBox:SetPoint("RIGHT", RuneforgeLegendariesCheckBox, "LEFT", 4, 0);
 
 local ExtraThingsLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
@@ -3607,6 +3652,23 @@ end);
 ShowModelsCheckBox:SetATTTooltip(L["SHOW_MODELS_CHECKBOX_TOOLTIP"]);
 ShowModelsCheckBox:SetPoint("TOPLEFT", ShowLoreCheckBox, "BOTTOMLEFT", 0, 4);
 
+local ShowCurrencyCalculationsCheckBox = settings:CreateCheckBox(L["SHOW_CURRENCY_CALCULATIONS_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Currencies"));
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("Currencies", self:GetChecked());
+end);
+ShowCurrencyCalculationsCheckBox:SetATTTooltip(L["SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP"]);
+ShowCurrencyCalculationsCheckBox:SetPoint("TOPLEFT", ShowModelsCheckBox, "BOTTOMLEFT", 0, 4);
+
 local ShowSharedAppearancesCheckBox = settings:CreateCheckBox(L["SHARED_APPEARANCES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SharedAppearances"));
@@ -4066,24 +4128,28 @@ end);
 OpenWorldQuestsListAutomatically:SetATTTooltip(L["AUTO_WQ_LIST_CHECKBOX_TOOLTIP"]);
 OpenWorldQuestsListAutomatically:SetPoint("TOPLEFT", OpenRaidAssistantAutomatically, "BOTTOMLEFT", 0, 4);
 
+-- TODO: eventually AH module gets fixed...
 local ShowAuctionHouseModuleTab = settings:CreateCheckBox(L["AUCTION_TAB_CHECKBOX"],
 function(self)
-	self:SetChecked(settings:GetTooltipSetting("Auto:AH"));
+	self:SetChecked(false);
+	self:Disable();
+	self:SetAlpha(0.2);
+	-- self:SetChecked(settings:GetTooltipSetting("Auto:AH"));
 end,
 function(self)
-	settings:SetTooltipSetting("Auto:AH", self:GetChecked());
-	if app.Blizzard_AuctionHouseUILoaded then
-		if app.AuctionModuleTabID then
-			if self:GetChecked() then
-				PanelTemplates_EnableTab(AuctionHouseFrame, app.AuctionModuleTabID);
-				app:OpenAuctionModule();
-			else
-				PanelTemplates_DisableTab(AuctionHouseFrame, app.AuctionModuleTabID);
-			end
-		else
-			app:OpenAuctionModule();
-		end
-	end
+	-- settings:SetTooltipSetting("Auto:AH", self:GetChecked());
+	-- if app.Blizzard_AuctionHouseUILoaded then
+	-- 	if app.AuctionModuleTabID then
+	-- 		if self:GetChecked() then
+	-- 			PanelTemplates_EnableTab(AuctionHouseFrame, app.AuctionModuleTabID);
+	-- 			app:OpenAuctionModule();
+	-- 		else
+	-- 			PanelTemplates_DisableTab(AuctionHouseFrame, app.AuctionModuleTabID);
+	-- 		end
+	-- 	else
+	-- 		app:OpenAuctionModule();
+	-- 	end
+	-- end
 end);
 ShowAuctionHouseModuleTab:SetATTTooltip(L["AUCTION_TAB_CHECKBOX_TOOLTIP"]);
 ShowAuctionHouseModuleTab:SetPoint("TOPLEFT", OpenWorldQuestsListAutomatically, "BOTTOMLEFT", 0, 4);
@@ -4213,7 +4279,7 @@ local tab = settings:CreateTab(L["PROFILES_TAB"]);
 local ProfilesLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 ProfilesLabel:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
 ProfilesLabel:SetJustifyH("LEFT");
-ProfilesLabel:SetText(L["PROFILES_TAB"]..L["_BETA_LABEL"]);
+ProfilesLabel:SetText(L["PROFILES_TAB"]);
 ProfilesLabel:Show();
 table.insert(settings.MostRecentTab.objects, ProfilesLabel);
 

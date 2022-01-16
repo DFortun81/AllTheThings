@@ -151,8 +151,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 	}),
 })));
 
-for _,g in ipairs({HARIKA_THE_HORRID, FORGEMASTER_MADALAV ,{GRATEFUL,SHRIEKERS_VOICEBOX,DREDBATSKIN_JERKIN,FORGEMASTERS_MANYFOLD_RAPIER}}) do
-	for	_,t in ipairs(g) do
-		t.customCollect = nil;
-	end
+for _,t in ipairs({HARIKA_THE_HORRID,FORGEMASTER_MADALAV,GRATEFUL,SHRIEKERS_VOICEBOX,DREDBATSKIN_JERKIN,FORGEMASTERS_MANYFOLD_RAPIER}) do
+	t.customCollect = nil;
 end

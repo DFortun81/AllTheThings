@@ -550,6 +550,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 						{ "i", 14344, 4 },	-- Large Brilliant Shard
 						{ "i", 12753, 2 },	-- Skin of Shadow
 					},
+					["maxReputation"] = { 809, EXALTED },	-- Shen'dralar, Exalted.
 					["repeatable"] = true,
 					["lvl"] = 57,
 					["groups"] = {
@@ -572,6 +573,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 						{ "i", 14344, 2 },	-- Large Brilliant Shard
 						{ "i", 12735, 1 },	-- Frayed Abomination Stitching
 					},
+					["maxReputation"] = { 809, EXALTED },	-- Shen'dralar, Exalted.
 					["repeatable"] = true,
 					["lvl"] = 57,
 					["groups"] = {
@@ -594,6 +596,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 						{ "i", 14344, 2 },	-- Large Brilliant Shard
 						{ "i", 12938, 2 },	-- Blood of Heroes
 					},
+					["maxReputation"] = { 809, EXALTED },	-- Shen'dralar, Exalted.
 					["repeatable"] = true,
 					["lvl"] = 57,
 					["groups"] = {
@@ -1056,9 +1059,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					n(14354, {	-- Pusillin
 						["description"] = "Talk to him and then chase him. Eventually he will go up a ramp and become killable.",
 						["groups"] = {
-							i(18249, {	-- Crescent Key
-								["timeline"] = { "removed 4.0.3" },
-							}),
+							i(18249),	-- Crescent Key
 							i(18261),	-- Book of Incantations
 							i(18267),	-- Recipe: Runn Tum Tuber Surprise
 						},
@@ -1619,9 +1620,11 @@ root("HiddenQuestTriggers", {
 });
 -- #endif
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	q(7479),	-- Libram of Focus
-	q(7480),	-- Libram of Protection
-	q(7478),	-- Libram of Rapidity
-	q(7462),	-- The Treasure of the Shen'dralar
-	q(1318),	-- Unfinished Gordok Business
+	n(QUESTS, {
+		q(7479),	-- Libram of Focus
+		q(7480),	-- Libram of Protection
+		q(7478),	-- Libram of Rapidity
+		q(7462),	-- The Treasure of the Shen'dralar
+		q(1318),	-- Unfinished Gordok Business
+	}),
 }));

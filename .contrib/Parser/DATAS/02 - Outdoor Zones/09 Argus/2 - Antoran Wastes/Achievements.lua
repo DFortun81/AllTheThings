@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root("Zones", {
 	m(905, {	-- Argus
 		m(885, {	-- Antoran Wastes
 			n(ACHIEVEMENTS, {
@@ -68,7 +67,7 @@ _.Zones =
 						},
 					}),
 					o(277208, {	-- Timeworn Fel Chest
-						--["questID"] = ,	-- TODO: Need this questID
+						["questID"] = 49021,
 						["icon"] = "Interface\\Icons\\inv_misc_treasurechest04d",
 						["coord"] = { 75.7, 52.6, 885 },
 						["groups"] = {
@@ -81,7 +80,12 @@ _.Zones =
 			}),
 		}),
 	}),
-};
-_.HiddenQuestTriggers = {
-	q(49022),	-- It's clearing the rubble in front of "Forgotten Legion Supplies" (object id: 277204)
-};
+});
+
+root("HiddenQuestTriggers", {
+	m(905, {	-- Argus
+		m(885, {	-- Antoran Wastes
+			q(49022),	-- It's clearing the rubble in front of "Forgotten Legion Supplies" (object id: 277204)
+		}),
+	}),
+});

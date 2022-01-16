@@ -79,6 +79,8 @@ _.Zones =
 						i(8588),	-- Whistle of the Emerald Raptor
 						i(8591),	-- Whistle of the Turquoise Raptor
 						i(8592),	-- Whistle of the Violet Raptor
+						un(REMOVED_FROM_GAME, i(13317)),	-- Ivory Raptor -- Unable to 100% verify this source.
+						un(REMOVED_FROM_GAME, i(8586)),		-- Mottled Red Raptor -- Unable to 100% verify this source.
 					},
 				}),
 			}),

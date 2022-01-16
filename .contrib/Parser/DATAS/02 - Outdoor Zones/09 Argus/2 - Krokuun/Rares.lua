@@ -12,19 +12,16 @@ _.Zones =
 					["questID"] = 48564,	-- killID
 					["isDaily"] = true,
 					["coord"] = { 45.0, 58.8, 830 },
+					["sym"] = {
+						{"select","mapID",830},{"pop"},	-- get Krokuun
+						{"where","headerID",SPECIAL},{"pop"},	-- get Special
+						{"where","filterID",PLATE},{"pop"},	-- get Plate
+					},
 					["g"] = {
 						crit(25, {	-- Commander Endaxis
 							["achievementID"] = 12078,	-- Commander of Argus
 						}),
 						i(153255),	-- Isolon Anchorite's Cudgel
-						i(152946),	-- World-Defiler's Casque
-						i(152944),	-- World-Defiler's Shoulderplates
-						i(152949),	-- World-Defiler's Cuirass
-						i(152942),	-- World-Defiler's Wristguards
-						i(152947),	-- World-Defiler's Gauntlets
-						i(152943),	-- World-Defiler's Girdle
-						i(152945),	-- World-Defiler's Tuille
-						i(152948),	-- World-Defiler's Sabatons
 					},
 				}),
 				n(122912, {	-- Commander Sathrenael
@@ -44,19 +41,16 @@ _.Zones =
 					["questID"] = 48563,	-- killID
 					["isDaily"] = true,
 					["coord"] = { 39.2, 59.4, 830 },
+					["sym"] = {
+						{"select","mapID",830},{"pop"},	-- get Krokuun
+						{"where","headerID",SPECIAL},{"pop"},	-- get Special
+						{"where","filterID",PLATE},{"pop"},	-- get Plate
+					},
 					["g"] = {
 						crit(24, {	-- Commander Vecaya
 							["achievementID"] = 12078,	-- Commander of Argus
 						}),
 						i(153299),	-- Militant Exarch's Shortsword
-						i(152946),	-- World-Defiler's Casque
-						i(152944),	-- World-Defiler's Shoulderplates
-						i(152949),	-- World-Defiler's Cuirass
-						i(152942),	-- World-Defiler's Wristguards
-						i(152947),	-- World-Defiler's Gauntlets
-						i(152943),	-- World-Defiler's Girdle
-						i(152945),	-- World-Defiler's Tuille
-						i(152948),	-- World-Defiler's Sabatons
 					},
 				}),
 				n(125820, {	-- Imp Mother Laglath
@@ -75,19 +69,16 @@ _.Zones =
 					["questID"] = 48561,	-- killID
 					["isDaily"] = true,
 					["coord"] = { 38.6, 39.4, 833 },	-- Nath'raxas Spire
+					["sym"] = {
+						{"select","mapID",830},{"pop"},	-- get Krokuun
+						{"where","headerID",SPECIAL},{"pop"},	-- get Special
+						{"where","filterID",PLATE},{"pop"},	-- get Plate
+					},
 					["g"] = {
 						crit(21, {	-- Khazaduum
 							["achievementID"] = 12078,	-- Commander of Argus
 						}),
 						i(153316),	-- Praetor's Ornamental Edge
-						i(152946),	-- World-Defiler's Casque
-						i(152944),	-- World-Defiler's Shoulderplates
-						i(152949),	-- World-Defiler's Cuirass
-						i(152942),	-- World-Defiler's Wristguards
-						i(152947),	-- World-Defiler's Gauntlets
-						i(152943),	-- World-Defiler's Girdle
-						i(152945),	-- World-Defiler's Tuille
-						i(152948),	-- World-Defiler's Sabatons
 					},
 				}),
 				n(126419, {	-- Naroua, King of the Forest
@@ -141,19 +132,16 @@ _.Zones =
 					["questID"] = 48628,	-- killID
 					["isDaily"] = true,
 					["coord"] = { 55.4, 80.4, 830 },
+					["sym"] = {
+						{"select","mapID",830},{"pop"},	-- get Krokuun
+						{"where","headerID",SPECIAL},{"pop"},	-- get Special
+						{"where","filterID",PLATE},{"pop"},	-- get Plate
+					},
 					["g"] = {
 						crit(5, {	-- Talestra the Vile
 							["achievementID"] = 12078,	-- Commander of Argus
 						}),
 						i(153329),	-- Mystic Wakener's Blade
-						i(152946),	-- World-Defiler's Casque
-						i(152944),	-- World-Defiler's Shoulderplates
-						i(152949),	-- World-Defiler's Cuirass
-						i(152942),	-- World-Defiler's Wristguards
-						i(152947),	-- World-Defiler's Gauntlets
-						i(152943),	-- World-Defiler's Girdle
-						i(152945),	-- World-Defiler's Tuille
-						i(152948),	-- World-Defiler's Sabatons
 					},
 				}),
 				n(125479, {	-- Tar Spitter
@@ -172,19 +160,16 @@ _.Zones =
 					["questID"] = 48664,	-- killID
 					["isDaily"] = true,
 					["coord"] = { 69.6, 56.8, 830 },
+					["sym"] = {
+						{"select","mapID",830},{"pop"},	-- get Krokuun
+						{"where","headerID",SPECIAL},{"pop"},	-- get Special
+						{"where","filterID",PLATE},{"pop"},	-- get Plate
+					},
 					["g"] = {
 						crit(14, {	-- Tereck the Selector
 							["achievementID"] = 12078,	-- Commander of Argus
 						}),
 						i(153263),	-- Enclave Aspirant's Cleaver
-						i(152946),	-- World-Defiler's Casque
-						i(152944),	-- World-Defiler's Shoulderplates
-						i(152949),	-- World-Defiler's Cuirass
-						i(152942),	-- World-Defiler's Wristguards
-						i(152947),	-- World-Defiler's Gauntlets
-						i(152943),	-- World-Defiler's Girdle
-						i(152945),	-- World-Defiler's Tuille
-						i(152948),	-- World-Defiler's Sabatons
 					},
 				}),
 				n(125388, {	-- Vagath the Betrayed

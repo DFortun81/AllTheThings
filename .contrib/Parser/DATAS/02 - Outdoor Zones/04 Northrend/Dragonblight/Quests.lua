@@ -921,19 +921,13 @@ _.Zones =
 					["coord"] = { 28.9, 55.4, DRAGONBLIGHT },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26673 },	-- Image of Archmage Modera
-					["sourceQuests"] = {
-						12055,	-- A Strange Device
-						12004,	-- Prevent the Accord
-					},
+					["sourceQuest"] = 12055,	-- A Strange Device
 				}),
 				q(12061, {	-- Projections and Plans (H)
 					["coord"] = { 38.0, 46.2, DRAGONBLIGHT },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26471 },	-- Image of Archmage Aethas Sunreaver
-					["sourceQuests"] = {
-						12059,	-- A Strange Device
-						12005,	-- Prevent the Accord
-					},
+					["sourceQuest"] = 12055,	-- A Strange Device
 				}),
 				q(12080, {	-- Really Big Worm
 					["coord"] = { 58.9, 17.8, DRAGONBLIGHT },

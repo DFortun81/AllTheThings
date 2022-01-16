@@ -141,7 +141,10 @@ _.Zones =
 					["provider"] = { "n", 43886 },	-- Berrin Burnquill
 					["coord"] = { 47.9, 12.0, NORTHERN_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 26736,	-- Spared from Madness
+					["sourceQuests"] = {
+						 26736,	-- Spared from Madness
+						 26737,	-- Stopping Kurzen's Legacy
+					},
 				}),
 				q(9436,  {	-- Bloodscalp Insight (H)
 					["provider"] = { "n", 17094 },	-- Nemeth Hawkeye

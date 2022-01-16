@@ -18,6 +18,8 @@ _.Zones =
 						i(18773),	-- Swift White Mechanostrider
 						i(18774),	-- Swift Yellow Mechanostrider
 						i(13322),	-- Unpainted Mechanostrider
+						un(REMOVED_FROM_GAME, i(13327)),	-- Icy Blue Mechanostrider Mod A -- unable to 100% verify this vendor as source
+						un(REMOVED_FROM_GAME, i(13326)),	-- White Mechanostrider Mod B -- unable to 100% verify this vendor as source
 					},
 				}),
 				n(1261, {	-- Veron Amberstill <Ram Breeder>
@@ -30,6 +32,8 @@ _.Zones =
 						i(18786),	-- Swift Brown Ram
 						i(18787),	-- Swift Grey Ram
 						i(5873),	-- White Ram
+						un(REMOVED_FROM_GAME, i(13328)),	-- Black Ram -- unable to 100% verify this vendor as source
+						un(REMOVED_FROM_GAME, i(13329)),	-- Frost Ram -- unable to 100% verify this vendor as source
 					},
 				}),
 				n(1263, {	-- Yarlyn Amberstill

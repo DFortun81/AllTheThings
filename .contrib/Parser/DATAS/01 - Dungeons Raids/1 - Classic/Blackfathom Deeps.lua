@@ -7,7 +7,10 @@ root("Instances", tier(CLASSIC_TIER, {
 		["lore"] = "Situated along the Zoram Strand of Ashenvale, Blackfathom Deeps was once a glorious temple dedicated to the night elves' moon-goddess, Elune. However, the great Sundering shattered the temple - sinking it beneath the waves of the Veiled Sea. There it remained untouched - until, drawn by its ancient power - the naga and satyr emerged to plumb its secrets. Legends hold that the ancient beast, Aku'mai, has taken up residence within the temple's ruins. Aku'mai, a favored pet of the primordial Old Gods, has preyed upon the area ever since. Drawn to Aku'mai's presence, the cult known as the Twilight's Hammer has also come to bask in the Old Gods' evil presence.",
 		-- #endif
 		-- #if AFTER CATA
-		["coord"] =	{ 16.53, 11.01, ASHENVALE },
+		["coords"] = {
+			{ 16.5, 11.0, ASHENVALE },
+			{ 14.2, 14.0, ASHENVALE },	-- Cave entrance
+		},
 		-- #else
 		["coord"] = { 14.0, 11.1, ASHENVALE },
 		-- #endif
@@ -696,15 +699,17 @@ root("HiddenQuestTriggers", {
 });
 -- #endif
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	q(908),	-- Amongst the Ruins
-	q(909),	-- Baron Aquanis
-	q(26893, {	-- Blackfathom Deeps
-		["timeline"] = { "created 4.0.3.13277" },
-	}),
-	q(26461, {	-- Blackfathom Villainy
-		["timeline"] = { "created 6.0.1.18322" },
-	}),
-	q(26459, {	-- Researching the Corruption
-		["timeline"] = { "created 6.0.1.18322" },
+	n(QUESTS, {
+		q(908),	-- Amongst the Ruins
+		q(909),	-- Baron Aquanis
+		q(26893, {	-- Blackfathom Deeps
+			["timeline"] = { "created 4.0.3.13277" },
+		}),
+		q(26461, {	-- Blackfathom Villainy
+			["timeline"] = { "created 6.0.1.18322" },
+		}),
+		q(26459, {	-- Researching the Corruption
+			["timeline"] = { "created 6.0.1.18322" },
+		}),
 	}),
 }));

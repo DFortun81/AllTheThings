@@ -330,7 +330,7 @@ root("Instances", tier(CLASSIC_TIER, {
 			e(487, {	-- Nekrum & Sezzi'ziz
 				-- #if AFTER MOP
 				["crs"] = {
-					7271,	-- Nekrum Gutchewer
+					7796,	-- Nekrum Gutchewer
 					7275,	-- Shadowpriest Sezz'ziz
 				},
 				-- #else

@@ -363,5 +363,7 @@ root("HiddenQuestTriggers", {
 });
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	i(187568),	-- Duskwatch Arcblade (Removed during PTR...Was looking great)
+	d(24, {
+		i(187568),	-- Duskwatch Arcblade (Removed during PTR...Was looking great)
+	}),
 }));

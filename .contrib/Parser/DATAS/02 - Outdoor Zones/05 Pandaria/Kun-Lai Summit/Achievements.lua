@@ -52,14 +52,24 @@ _.Zones =
 						o(213768, {	-- Hozen Warrior Spear
 							["description"] = "Cave entrance is at |cFFFFD70052.8 71.3|r, go down and to the section with water, it is in a rock. Might take some time to spawn.",
 							["questID"] = 31413,
-							["coord"] = { 51.5, 74.0, KUN_LAI_SUMMIT },
+							["coords"] = {
+								{ 52.8, 71.3, KUN_LAI_SUMMIT },	-- Cave entrance
+								{ 23.9, 68.1, 384 },	-- The Deeper
+							},
 							["g"] = {
 								i(86394),	-- Hozen Warrior Spear
 							},
 						}),
-						i(86125, {	-- Kafa Press
-							["questID"] = 31304,
-							["provider"] = { "n", 64227 },	-- Frozen Trail Packer
+						n(64227, {	-- Frozen Trail Packer
+							["coords"] = {
+								{ 37.4, 77.9, KUN_LAI_SUMMIT },	-- Cave entrance
+								{ 35.2, 76.4, KUN_LAI_SUMMIT },
+							},
+							["g"] = {
+								i(86125, {	-- Kafa Press
+									["questID"] = 31304,
+								}),
+							},
 						}),
 						o(213751, {	-- Sprite's Cloth Chest
 							["description"] = "Cave entrance is at 73.2, 73.6.  This chest is personal loot and based on your current Spec, NOT your Loot Spec.",

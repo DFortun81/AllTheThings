@@ -3465,3 +3465,14 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 
 -- Remove the holiday flag.
 HUGE_SNOWBALL.u = nil;
+
+-- #if AFTER 9.1.5
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	holiday(235474, {	-- Midsummer
+		-- Holiday Stuff 9.1.5
+		i(188701),	-- Fire Festival Batons (Midsummer)
+		i(188699),	-- Insulated Dancing Insoles (Midsummer)
+		i(188695),	-- Summer Cranial Skillet (Midsummer)
+	}),
+}));
+-- #endif

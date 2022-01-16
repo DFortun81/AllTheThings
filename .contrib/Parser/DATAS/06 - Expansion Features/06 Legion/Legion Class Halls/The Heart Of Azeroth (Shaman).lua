@@ -165,7 +165,7 @@ _.ExpansionFeatures =
 						q(46791, {	-- Carried On the Wind
 							["classes"] = { SHAMAN },
 							["provider"] = { "n", 117888 },	-- Orono
-							["sourceQuests"] = { 46246 },	-- Strike Them Down
+							["sourceQuests"] = { 46251 },	-- Shard Times
 							["maps"] = { BROKEN_SHORE },
 						}),
 						q(41747, {	-- Champion: Avalanchion

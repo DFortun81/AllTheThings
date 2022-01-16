@@ -110,6 +110,32 @@ _.Zones =
 					}),
 					i(183870, {	-- Recipe: Crafter's Mark II
 						["cost"] = { { "c", 1767, 300 } },
+						["g"] = {
+							recipe(343678, {	-- Crafter's Mark II
+								["requireSkill"] = ALCHEMY,
+							}),
+							recipe(343696, {	-- Crafter's Mark II
+								["requireSkill"] = JEWELCRAFTING,
+							}),
+							recipe(343202, {	-- Crafter's Mark II
+								["requireSkill"] = TAILORING,
+							}),
+							recipe(343185, {	-- Crafter's Mark II
+								["requireSkill"] = BLACKSMITHING,
+							}),
+							recipe(343193, {	-- Crafter's Mark II
+								["requireSkill"] = LEATHERWORKING,
+							}),
+							recipe(343100, {	-- Crafter's Mark II
+								["requireSkill"] = ENGINEERING,
+							}),
+							recipe(343683, {	-- Crafter's Mark II
+								["requireSkill"] = ENCHANTING,
+							}),
+							recipe(343689, {	-- Crafter's Mark II
+								["requireSkill"] = INSCRIPTION,
+							}),
+						},
 					}),
 					i(184621, {	-- Ritual Prism of Fortune
 						["questID"] = 63204,

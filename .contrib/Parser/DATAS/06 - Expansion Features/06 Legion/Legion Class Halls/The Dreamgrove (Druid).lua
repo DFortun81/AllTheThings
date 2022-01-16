@@ -847,7 +847,7 @@ _.ExpansionFeatures =
 								["classes"] = { DRUID },
 								["provider"] = { "n", 118105 },	-- Grovewarden Proudhorn
 								["coord"] = { 43.6, 63.6, BROKEN_SHORE },
-								["sourceQuests"] = { 46246 },	-- Strike Them Down
+							["sourceQuests"] = { 46251 },	-- Shard Times
 							}),
 							q(46318, {	-- Defense of Aviana
 								["provider"] = { "n", 106299 },	-- Thisalee Crow

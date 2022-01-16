@@ -2830,9 +2830,6 @@ profession(COOKING, {
 					["provider"] = { "i", 33849 },	-- Mana Berry
 					["coord"] = { 48, 54, NETHERSTORM },
 				}),
-				crit(3, {	-- Manalicious
-					["achievementID"] = 906,	-- Kickin' It Up a Notch
-				}),
 				i(33844),	-- Barrel of Fish
 				i(33857),	-- Crate of Meat
 			},
@@ -2869,9 +2866,6 @@ profession(COOKING, {
 						{ "i", 27659, 3 },	-- Warp Burger
 						{ "i", 33838, 1 },	-- Giant Kaliri Wing
 					},
-				}),
-				crit(1, {	-- Revenge is Tasty
-					["achievementID"] = 906,	-- Kickin' It Up a Notch
 				}),
 				i(33844),	-- Barrel of Fish
 				i(33857),	-- Crate of Meat
@@ -2946,9 +2940,6 @@ profession(COOKING, {
 						{ "i", 27658, 4 },	-- Roasted Clefthoof
 					},
 				}),
-				crit(4, {	-- Soup for the Soul
-					["achievementID"] = 906,	-- Kickin' It Up a Notch
-				}),
 				i(33844),	-- Barrel of Fish
 				i(33857),	-- Crate of Meat
 			},
@@ -2970,9 +2961,6 @@ profession(COOKING, {
 						{ "i", 31672, 2 },	-- Mok'Nathal Shortribs
 						{ "i", 31673, 1 },	-- Crunchy Serpent
 					},
-				}),
-				crit(2, {	-- Super Hot Stew
-					["achievementID"] = 906,	-- Kickin' It Up a Notch
 				}),
 				i(33844),	-- Barrel of Fish
 				i(33857),	-- Crate of Meat

@@ -544,4 +544,10 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(59840),	-- Divine Gratitude
 		q(59986),	-- Wide Worlds of Catalysts
 	}),
+	tier(SL_TIER, {
+		n(NIGHT_FAE, {
+			i(179775),	-- Conservator's Leather Tunic (reported as not being awarded from ensemble 184112)
+			i(179659),	-- Conservator's Silken Tunic
+		})
+	}),
 }));

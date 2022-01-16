@@ -33,10 +33,18 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 			ach(125),		-- Northrend Cook
 			ach(877),		-- The Cake Is Not A Lie
 			ach(906,  {		-- Kickin' It Up a Notch
-				crit(1),		-- Revenge is Tasty
-				crit(2),		-- Super Hot Stew
-				crit(3),		-- Manalicious
-				crit(4),		-- Soup for the Soup
+				crit(1, {	-- Revenge is Tasty
+					["_quests"] = { 11377 },
+				}),
+				crit(2, {	-- Super Hot Stew
+					["_quests"] = { 11379 },
+				}),
+				crit(3, {	-- Manalicious
+					["_quests"] = { 11380 },
+				}),
+				crit(4, {	-- Soup for the Soul
+					["_quests"] = { 11381 },
+				}),
 			}),
 			ach(1779, {		-- The Northrend Gourmet (45)
 				crit(1, { ["cost"] = { { "i", 43491, 1 } } } ),	-- Bad Clams

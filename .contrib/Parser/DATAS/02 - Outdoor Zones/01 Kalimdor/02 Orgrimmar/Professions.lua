@@ -86,6 +86,11 @@ _.Zones =
 							["requireSkill"] = BLACKSMITHING,
 							["races"] = HORDE_ONLY,
 							["lvl"] = 32,
+							["cost"] = {
+								{ "i", 3851, 2 },	-- Solid Iron Maul
+								{ "i", 3482, 2 },	-- Silvered Bronze Boots
+								{ "i", 3483, 2 },	-- Silvered Bronze Gauntlets
+							},
 							["g"] = {
 								i(7980),	-- Plans: Barbaric Iron Helm
 							},

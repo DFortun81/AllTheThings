@@ -1359,13 +1359,9 @@ _.HiddenQuestTriggers = {
 		q(47869),	-- triggered when turning in "Light's Exodus," no info in wowhead
 		q(48668),	-- Lightforged Beacon: City Center — triggers during the cutscene while on "Into the Night"
 		q(47888),	-- triggered when turning in "Alone in the Abyss," no info on wowhead
-		q(48451),	-- Light's Judgment first time tracking quest?
 		q(48858),	-- Light's Judgment active tracking quest?
-		q(48449),	-- Lightforged Warframe first time tracking quest?
 		q(48859),	-- Lightforged Warframe active tracking quest?
-		-- q(48450),	-- Fel Heart of Argus first time tracking quest? -- TODO: wrong ID?
 		q(48860),	-- Fel Heart of Argus active tracking quest?
-		-- q(48450),	-- Shroud of Arcane Echoes first time tracking quest? -- TODO: wrong ID?
 		q(48579),	-- Shroud of Arcane Echoes active tracking quest?
 		q(48281),	-- getting into the Lightforged Warframe during Dawn of Justice
 		q(49161),	-- triggered when turning in #48461, "Where They Least Expect It"
@@ -3024,38 +3020,18 @@ _.HiddenQuestTriggers = {
 		q(62271),	-- Deifir the Untamed secondary quest
 		q(61198),	-- Triggers when successfully completing the pre-req sequence for the Shimmermist Runner rare
 		-- Ardenweald Treasures
-		q(60820),	-- \
-		q(60821),	--  \
-		q(60822),	--   flower triggers for opening Lunarlight Pod (60794) (don't have coords)
-		q(60823),	--  /
-		q(60824),	-- /
 		q(60800),	-- \
 		q(60801),	--  \
 		q(60802),	--   running over Lunarlight Buds (48.1, 70.8), user could not find associated treasure
 		q(60803),	--  /
 		q(60804),	-- /
-		q(60815),	-- \
-		q(60816),	--  \
-		q(60817),	--   running over Lunarlight Buds (55.4, 38.6) to light up Dim Lunarlight Pod and turn it into Lunarlight Pod
-		q(60818),	--  /
-		q(60819),	-- /
 		q(60810),	-- \
 		q(60811),	--  \
 		q(60812),	--   running over Lunarlight Buds (somewhere in/near Glitterfall Basin) to light up Dim Lunarlight Pod and turn it into Lunarlight Pod (questID #60792)
 		q(60813),	--  /
 		q(60814),	-- /
-		q(60805),	-- \
-		q(60806),	--  \
-		q(60807),	--   running over Lunarlight Buds for Lunarlight Pod at 38.8, 53.6, for #60791
-		q(60808),	--  /
-		q(60809),	-- /
 		-- Ardenweald Covenant (Night Fae)
 		q(62745),	-- Triggered after finishing Chapter 1 of Night Fae covenant questline
-		q(61692),	-- \
-		q(61693),	--  \
-		q(61694),	--   all these quests are for running over Lunarlight Buds to open the Large Lunarlight Pod at 51.7, 32.3
-		q(61695),	--  /
-		q(61696),	-- /
 		q(57559),	-- Triggered after turning in For Queen and Grove! (58160) / A Call to Service (62695)
 		q(62706),	-- Triggered after turning in For Queen and Grove! (58160) / A Call to Service (62695)
 		q(63006),	-- Triggered after turning in For Queen and Grove! (58160)
@@ -3157,12 +3133,6 @@ _.HiddenQuestTriggers = {
 		q(61992),	-- Pesticide secondary quest
 		q(61986),	-- Tahonta secondary quest
 		-- Maldraxxus Treasures
-		q(61120),	-- interacting with runes to unlock a Runebound Coffer (61115)
-		q(61121),	-- interacting with runes to unlock a Runebound Coffer (61115)
-		q(61122),	-- interacting with runes to unlock a Runebound Coffer (61115)
-		q(61117),	-- interacting with runes to unlock a Runebound Coffer (61116)
-		q(61118),	-- interacting with runes to unlock a Runebound Coffer (61116)
-		q(61119),	-- interacting with runes to unlock a Runebound Coffer (61116)
 		q(62248),	-- interacting with the Box of Torments
 		-- Maldraxxus WQs
 		q(62946),	-- "learning" the quest items while on #61612, "Jewelcrafting: Carved Crystal Ring"

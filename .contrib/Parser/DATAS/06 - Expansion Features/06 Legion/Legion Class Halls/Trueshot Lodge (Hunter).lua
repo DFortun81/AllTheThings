@@ -31,7 +31,7 @@ _.ExpansionFeatures =
 							["maps"] = { LEGION_DALARAN },
 						}),
 						q(46336, {	-- A Golden Ticket
-							["sourceQuests"] = { 46246 },	-- Strike Them Down
+							["sourceQuests"] = { 46251 },	-- Shard Times
 							["classes"] = { HUNTER },
 							["provider"] = { "n", 117810 },	-- Nimi Brightcastle
 							["coord"] = { 43.8, 63.2, BROKEN_SHORE },
@@ -412,6 +412,9 @@ _.ExpansionFeatures =
 							["coord"] = { 42.9, 45.7, 739 },
 							["g"] = {
 								{ ["mountID"] = 229386 },	-- Huntmaster's Loyal Wolfhawk
+									i(142227, {		-- Huntmaster's Loyal Wolfhawk
+										["classes"] = { HUNTER },
+								}),
 							},
 						}),
 						q(40955, {	-- Oath of Service

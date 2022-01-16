@@ -412,7 +412,7 @@ _.Instances = { tier(MOP_TIER, {
 					i(95163),	-- Ring of Shamuru
 				},
 			}),
-			e(861, {	-- Ordos, Fire-God of the Yaungol
+			e(861, bubbleDownSelf({["u"]=38},{	-- Ordos, Fire-God of the Yaungol / Ordos - Legendary Cloak Filter
 				["sourceQuests"] = { 33104 },	-- A Pandaren Legend
 				["isWeekly"] = true,
 				["questID"] = 33118,
@@ -423,97 +423,97 @@ _.Instances = { tier(MOP_TIER, {
 				},
 				["lvl"] = 80,	-- Confirmed by Lucetia November 5, 2018
 				["creatureID"] = 72057,	-- Ordos, Fire-God of the Yaungol
-				["u"] = 38,	-- Ordos - Legendary Cloak
 				["g"] = {
-					un(38, ach(8533)),	-- Ordos
-					un(38, i(104273, {	-- Flame-Scarred Cache of Offerings
+					ach(8533),	-- Ordos
+					i(104273, {	-- Flame-Scarred Cache of Offerings
 						["description"] = "Awarded if you fail your loot roll. Usually contains gold or crafting materials. May follow your actual spec instead of loot spec, please provide more information to ATT Discord.",
 						["g"] = {
-						--	NOTE FOR CONTRIBS: Only add items you receive to this. The old listings on WoWHead may be inaccurate or out of date.
+						--	NOTE FOR CONTRIBS: Only add items you receive to this if they are only currently obtainable from this container. The old listings on WoWHead may be inaccurate or out of date.
 						--	it's likely that the commented items drop also.  if they get confirmed, uncomment them and adjust the unobtainable filter here + in Siege of Orgrimmar
-							un(38, i(105838)),	-- Aeth's Swiftcinder Cloak Normal
-							un(38, i(105830)),	-- Brave Niunai's Cloak Normal (confirmed to drop from Ordos cache on July 23, 2020)
-							un(38, i(105826)),	-- Cape of the Alpha Normal (confirmed to drop from Ordos cache on July 23, 2020)
-							un(38, i(105832)),	-- Crimson Gauntlets of Death Normal (confirmed to drop from Ordos cache on July 23, 2020)
-							un(38, i(105829)),	-- Drape of the Omega Normal (confirmed to drop from Ordos cache on July 23, 2020)
-							un(38, i(105837)),	-- Gauntlets of Discarded Time Normal (confirmed to drop from Ordos cache on November 28, 2021)
-							un(38, i(105827)),	-- Kalaena's Arcane Handwraps (confirmed to drop from Ordos cache on April 28, 2020)
-							un(38, i(105833)),	-- Keengrip Arrowpullers Normal (confirmed to drop from Ordos cache on November 14, 2019)
-							un(38, i(105834)),	-- Marco's Crackling Gloves Normal (confirmed to drop from Ordos cache on May 6, 2020)
-						--	un(REMOVED_FROM_GAME, i(105835)),	-- Romy's Reliable Grips Normal
-						--	un(REMOVED_FROM_GAME, i(105828)),	-- Seebo's Sainted Touch Normal
-							un(38, i(105831)),	-- Siid's Silent Stranglers Normal (confirmed to drop from Ordos cache on December 29, 2019)
-							un(38, i(105839)),	-- Turtleshell Greatcloak Normal (confirmed to drop from Ordos cache on May 5, 2020)
-							un(38, i(105836)),	-- Zoid's Molten Gauntlets Normal (confirmed to drop from Ordos cache on December 31, 2019)
+							i(105838),	-- Aeth's Swiftcinder Cloak Normal
+							i(105830),	-- Brave Niunai's Cloak Normal (confirmed to drop from Ordos cache on July 23, 2020)
+							i(105826),	-- Cape of the Alpha Normal (confirmed to drop from Ordos cache on July 23, 2020)
+							i(105832),	-- Crimson Gauntlets of Death Normal (confirmed to drop from Ordos cache on July 23, 2020)
+							i(105829),	-- Drape of the Omega Normal (confirmed to drop from Ordos cache on July 23, 2020)
+							i(105837),	-- Gauntlets of Discarded Time Normal (confirmed to drop from Ordos cache on November 28, 2021)
+							i(105827),	-- Kalaena's Arcane Handwraps (confirmed to drop from Ordos cache on April 28, 2020)
+							i(105833),	-- Keengrip Arrowpullers Normal (confirmed to drop from Ordos cache on November 14, 2019)
+							i(105834),	-- Marco's Crackling Gloves Normal (confirmed to drop from Ordos cache on May 6, 2020)
+							-- i(105835),	-- Romy's Reliable Grips Normal
+							-- i(105828),	-- Seebo's Sainted Touch Normal
+							i(105831),	-- Siid's Silent Stranglers Normal (confirmed to drop from Ordos cache on December 29, 2019)
+							i(105839),	-- Turtleshell Greatcloak Normal (confirmed to drop from Ordos cache on May 5, 2020)
+							i(105836),	-- Zoid's Molten Gauntlets Normal (confirmed to drop from Ordos cache on December 31, 2019)
+							-- i(87522),	-- Star-Carrier Bracers (Discord - 2021-11-24), maybe symlink
 						},
-					})),
+					}),
 					-- Head
-					un(38, i(105804)),	-- Aladya's Spiritfire Greathelm
-					un(38, i(105810)),	-- Buc-Zakai Burning Hood
-					un(38, i(105806)),	-- Circlet of the Panser
-					un(38, i(105809)),	-- Crest of Burning Deeds
-					un(38, i(105808)),	-- Damien's Ice-Vein Mask
-					un(38, i(105805)),	-- Dominik's Casque of Raging Flame
-					un(38, i(105807)),	-- Magdalena's Murderous Crown
-					un(38, i(105811)),	-- Olivia's Graceful Gaze
-					un(38, i(105803)),	-- Stickney's Grey-Shade Hood
+					i(105804),	-- Aladya's Spiritfire Greathelm
+					i(105810),	-- Buc-Zakai Burning Hood
+					i(105806),	-- Circlet of the Panser
+					i(105809),	-- Crest of Burning Deeds
+					i(105808),	-- Damien's Ice-Vein Mask
+					i(105805),	-- Dominik's Casque of Raging Flame
+					i(105807),	-- Magdalena's Murderous Crown
+					i(105811),	-- Olivia's Graceful Gaze
+					i(105803),	-- Stickney's Grey-Shade Hood
 					-- Neck
-					un(38, i(105766)),	-- Anafielle's Spiked Choker
-					un(38, i(105765)),	-- Bladeforger Necklace
-					un(38, i(105763)),	-- Penate's Perilous Pendant
-					un(38, i(105764)),	-- Rising New Moon Talisman
-					un(38, i(105762)),	-- Smoldering Eye
+					i(105766),	-- Anafielle's Spiked Choker
+					i(105765),	-- Bladeforger Necklace
+					i(105763),	-- Penate's Perilous Pendant
+					i(105764),	-- Rising New Moon Talisman
+					i(105762),	-- Smoldering Eye
 					-- Shoulder
-					un(38, i(105795)),	-- Bo He Me's Deathwind Mantle
-					un(38, i(105800)),	-- Firearrow Shoulderpads
-					un(38, i(105798)),	-- Flame Healer's Shoulderguards
-					un(38, i(105799)),	-- Fleshsmoke Chain Shoulders
-					un(38, i(105796)),	-- Rossi's Rosin-Soaked Shoulderplates
-					un(38, i(105797)),	-- Shay-Nii's Popping Shoulderpads
-					un(38, i(105801)),	-- Spaulders of Dominating Dreams
-					un(38, i(105794)),	-- Starry Spaulders of Durability
-					un(38, i(105802)),	-- Yaungol Deathcult Shoulderguards
+					i(105795),	-- Bo He Me's Deathwind Mantle
+					i(105800),	-- Firearrow Shoulderpads
+					i(105798),	-- Flame Healer's Shoulderguards
+					i(105799),	-- Fleshsmoke Chain Shoulders
+					i(105796),	-- Rossi's Rosin-Soaked Shoulderplates
+					i(105797),	-- Shay-Nii's Popping Shoulderpads
+					i(105801),	-- Spaulders of Dominating Dreams
+					i(105794),	-- Starry Spaulders of Durability
+					i(105802),	-- Yaungol Deathcult Shoulderguards
 					-- Chest
-					un(38, i(105774)),	-- Catia's Flowing Robes
-					un(38, i(105771)),	-- Chestguard of Pyrrhic Immolation
-					un(38, i(105775)),	-- Gleaming Eye Spellplate
-					un(38, i(105767)),	-- Hoodrych's Bloodied Chestplate
-					un(38, i(105772)),	-- Moonhee's Mean Vest
-					un(38, i(105769)),	-- Omegal's Crushing Carapace
-					un(38, i(105768)),	-- Pamela's Muuscat Wrap
-					un(38, i(105773)),	-- Ulmaas' Robes of Crushing Magma
-					un(38, i(105770)),	-- Zoo-Per's Superior Chestguard
+					i(105774),	-- Catia's Flowing Robes
+					i(105771),	-- Chestguard of Pyrrhic Immolation
+					i(105775),	-- Gleaming Eye Spellplate
+					i(105767),	-- Hoodrych's Bloodied Chestplate
+					i(105772),	-- Moonhee's Mean Vest
+					i(105769),	-- Omegal's Crushing Carapace
+					i(105768),	-- Pamela's Muuscat Wrap
+					i(105773),	-- Ulmaas' Robes of Crushing Magma
+					i(105770),	-- Zoo-Per's Superior Chestguard
 					-- Wrists
-					un(38, i(105789)),	-- Bjam's Blasting Bracers
-					un(38, i(105792)),	-- Bowflight Wristguard
-					un(38, i(105793)),	-- Bracers of Simmering Fury
-					un(38, i(105791)),	-- Bracers of Unquestioning Belief
-					un(38, i(105787)),	-- Burnseal Bracers
-					un(38, i(105790)),	-- Firetotem Bracers
-					un(38, i(105786)),	-- Ordosian Cultist's Bracers
-					un(38, i(105788)),	-- Paululum's Doodled Wraps
-					un(38, i(105785)),	-- Vanguard's Burly Bracers
+					i(105789),	-- Bjam's Blasting Bracers
+					i(105792),	-- Bowflight Wristguard
+					i(105793),	-- Bracers of Simmering Fury
+					i(105791),	-- Bracers of Unquestioning Belief
+					i(105787),	-- Burnseal Bracers
+					i(105790),	-- Firetotem Bracers
+					i(105786),	-- Ordosian Cultist's Bracers
+					i(105788),	-- Paululum's Doodled Wraps
+					i(105785),	-- Vanguard's Burly Bracers
 					-- Waist
-					un(38, i(105782)),	-- Belt of Glowing Embers
-					un(38, i(105776)),	-- Belt of the Burning Soul
-					un(38, i(105784)),	-- Binkenstein's Burnished Belt
-					un(38, i(105778)),	-- Derevka's Gleaming Girdle
-					un(38, i(105783)),	-- Greatbelt of the Crendor
-					un(38, i(105779)),	-- Light Kindler Waistguard
-					un(38, i(105777)),	-- Remnar's Ruinous Girdle
-					un(38, i(105781)),	-- Venruki's Venerable Sash
-					un(38, i(105780)),	-- Windflame Girdle
+					i(105782),	-- Belt of Glowing Embers
+					i(105776),	-- Belt of the Burning Soul
+					i(105784),	-- Binkenstein's Burnished Belt
+					i(105778),	-- Derevka's Gleaming Girdle
+					i(105783),	-- Greatbelt of the Crendor
+					i(105779),	-- Light Kindler Waistguard
+					i(105777),	-- Remnar's Ruinous Girdle
+					i(105781),	-- Venruki's Venerable Sash
+					i(105780),	-- Windflame Girdle
 					-- Legs
-					un(38, i(105758)),	-- Arielle's Ancient Legwraps
-					un(38, i(105754)),	-- Desirae's Dashing Leggings
-					un(38, i(105760)),	-- Hamlet's Wind-Whipped Leggings
-					un(38, i(105759)),	-- Magmaplates of Jian Wu Xi Feng
-					un(38, i(105755)),	-- Moshne's Keen Kilt
-					un(38, i(105761)),	-- Partik's Purified Legplates
-					un(38, i(105756)),	-- Poxleitner's Leggings of Lights
-					un(38, i(105757)),	-- Shipley's Shady Silks
+					i(105758),	-- Arielle's Ancient Legwraps
+					i(105754),	-- Desirae's Dashing Leggings
+					i(105760),	-- Hamlet's Wind-Whipped Leggings
+					i(105759),	-- Magmaplates of Jian Wu Xi Feng
+					i(105755),	-- Moshne's Keen Kilt
+					i(105761),	-- Partik's Purified Legplates
+					i(105756),	-- Poxleitner's Leggings of Lights
+					i(105757),	-- Shipley's Shady Silks
 				},
-			}),
+			})),
 			e(725, {	-- Saylis's Warband [Galleon]
 				["isWeekly"] = true,
 				["questID"] = 32098,

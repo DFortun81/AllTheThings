@@ -430,9 +430,11 @@ _.PVP =
 			filter(MOUNTS, {
 				i(184014, {	-- Vicious War Spider (A)
 					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { "added 9.0.2", "removed 9.1.0" },
 				}),
 				i(184013, {	-- Vicious War Spider (H)
 					["races"] = HORDE_ONLY,
+					["timeline"] = { "added 9.0.2", "removed 9.1.0" },
 				}),
 			}),
 		})),

@@ -1427,7 +1427,9 @@ _.ExpansionFeatures =
 							["coord"] = { 48.2, 71.0, ORGRIMMAR },
 							["g"] = {
 								ach(13206),	-- Allied Races: Vulpera
-								i(174066),	-- Caravan Hyena (MOUNT!)
+								i(174066, {	-- Caravan Hyena (MOUNT!)
+									["races"] = HORDE_ONLY,
+								}),
 							},
 						}),
 						-- Vulpera Starter Quests
@@ -1534,7 +1536,10 @@ _.ExpansionFeatures =
 					["g"] = {
 						q(53831, {	-- A Royal Occasion
 							["sourceQuests"] = { 50242 },	-- A Choice for Allies (H)
-							["provider"] = { "n", 133519 },	-- Rokhan
+							["providers"] = {
+								{ "n", 133519 },	-- Rokhan
+								{ "n", 133523 },	-- Ji Firepaw (not sure when they changed npc?)
+							},
 							["coord"] = { 38.2, 81.4, ORGRIMMAR },
 							["races"] = HORDE_ONLY,
 						}),
@@ -1695,7 +1700,7 @@ _.ExpansionFeatures =
 };
 
 
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(BFA_TIER, {
 		n(-254, {	-- Heritage Armor
 			i(174354),	-- Vulpera Heritage Footwraps
@@ -1705,8 +1710,9 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			q(48068),	-- A Cure for Ebonhorn
 			q(48435),	-- The Spiritwalkers
 		}),
+		q(53468),	-- something concerning Highmountain Tauren Warrior / Orgrimmar / 37.9, 80.9
 	}),
-});
+}));
 
 _.HiddenQuestTriggers = {
 	q(54868),	-- During Heritage for Taurens in the End

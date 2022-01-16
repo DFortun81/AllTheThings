@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root("Zones", {
 	m(905, {	-- Argus
 		m(830, {	-- Krokuun
 			n(ACHIEVEMENTS, {
@@ -76,8 +75,14 @@ _.Zones =
 			}),
 		}),
 	}),
-};
-_.HiddenQuestTriggers = {
-	q(48876),	-- jumping on the rubble in front of "Krokul Emergency Cache" (object id: 276490)
-	q(48877),	-- I'm guessing for clearing the rubble in front of "Legion Power Chest" (object id: 276489)
-};
+});
+
+root("HiddenQuestTriggers",  {
+	m(905, {	-- Argus
+		m(830, {	-- Krokuun
+			q(48876),	-- jumping on the rubble in front of "Krokul Emergency Cache" (object id: 276490)
+			q(48877),	-- I'm guessing for clearing the rubble in front of "Legion Power Chest" (object id: 276489)
+			q(48878),	-- clearing rubble for "Lost Krokul Chest" (object id: 276491)
+		}),
+	}),
+});

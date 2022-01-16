@@ -536,6 +536,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(29),		-- Heroic: Lei Shi
 		}),
 		ach(2137, {		-- Glory of the Raider (10 player)
+			un(REMOVED_FROM_GAME, i(44175)),	-- Reins of the Plagued Proto-Drake
 			crit(1),		-- The Dedicated Few (10 player)
 			crit(2),		-- Arachnophobia (10 player)
 			crit(3),		-- Make Quick Werk of Him (10 player)
@@ -554,6 +555,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(16),		-- Just Can't Get Enough (10 player)
 		}),
 		ach(2138, {		-- Glory of the Raider (25 player)
+			un(REMOVED_FROM_GAME, i(44164)),	-- Reins of the Black Proto-Drake
 			crit(1),		-- The Dedicated Few (25 player)
 			crit(2),		-- Arachnophobia (25 player)
 			crit(3),		-- Make Quick Werk of Him (25 player)

@@ -175,6 +175,7 @@ _.Zones =
 					["g"] = {
 						i(180682),	-- Noble's Wardrobe
 						i(182723),	-- Mail Courier's Shoulderguards
+						i(180401),	-- Noble Justice
 					},
 				}),
 				o(349796, {	-- Gilded Plum Chest
@@ -464,10 +465,10 @@ _.Zones =
 					["g"] = {
 						i(183826),	-- Big Floppy Hat
 						i(182723),	-- Mail Courier's Shoulderguards
+						i(180401),	-- Noble Justice
 					},
 				}),
 				o(351542, {	-- Secret Treasure
-				--	TODO: check back and see if this ever drops from any other treasure chests/secret treasures/shows up on mission table/etc.  this is the chest i got it from and as of january 15th it's the only one listed as dropping it on wowhead!  definitely not a guaranteed drop even if it's PL; this was at least my second time looting this chest
 					["description"] = "Destroy the |cFFFFFFFFCracked Crate|r in the small alcove at |cFFFFFFFF74.6, 62.6|r.  Turn the |cFFFFFFFFHidden Valve|r found inside, and find the treasure in the hidden chamber that opens up in the floor.",
 					["questID"] = 60199,
 					["isDaily"] = true,
@@ -713,11 +714,13 @@ _.Zones =
 					},
 				}),
 				o(352703, {	-- The Harvest
-				--	TODO: apparently this has multiple notes/locations, add them as they pop up
 					["description"] = "Read the |cFFFFFFFFNote What Says Where You Put The Key|r near the treasure to figure out where the key is.\n\n– 'By one of those big lamps' = |cFFFFFFFF43.8, 41.4|r\n– 'In another storehouse' = |cFFFFFFFF38.2, 43.7|r",
 					["isDaily"] = true,
 					["questID"] = 60579,
 					["coord"] = { 38.5, 39.9, REVENDRETH },
+					["g"] = {
+						i(180401),	-- Noble Justice
+					},
 				}),
 				o(353792, {	-- Village Strongbox
 					--TODO: ["questID"] = xxxxx,
@@ -727,6 +730,7 @@ _.Zones =
 					["g"] = {
 						i(180393),	-- Depraved Darkblade's Epaulets
 						i(180386),	-- Herbalist's Pouch
+						i(180394),	-- Envy Laced Leggings
 					},
 				}),
 				o(357584, {	-- Vyrtha's Dredglaive

@@ -97,7 +97,7 @@ _.ExpansionFeatures =
 							["coord"] = { 43.6, 63.1, BROKEN_SHORE },
 							["classes"] = { WARRIOR },
 							["provider"] = { "n", 119527 },	-- Valarjar Warsinger
-							["sourceQuest"] = 46246,	-- Strike Them Down
+							["sourceQuests"] = { 46251 },	-- Shard Times
 						}),
 						q(43425, {	-- A Hero's Weapon
 							["coord"] = { 58.3, 84.6, 695 },

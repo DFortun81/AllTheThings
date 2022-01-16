@@ -1,13 +1,14 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root("Instances", tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
+local TOME_OF_POLYMORPH_TURTLE = i(22739);
+root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 	map(ZULGURUB, {
 		["lore"] = "Over a thousand years ago the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, called forth the avatar of an ancient and terrible blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire collapsed upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows, where they erected a great temple to Hakkar in order to prepare for his arrival into the physical world.",
 		["timeline"] = { "removed 4.0.3" },
 		["isRaid"] = true,
 		["lvl"] = 58,
-		["groups"] = {
+		["groups"] = bubbleDown({ ["timeline"] = { "removed 4.0.3" } }, {
 			n(FACTIONS, {
 				faction(270, {	-- Zandalar Tribe
 					["icon"] = "Interface\\Icons\\RACIAL_TROLL_BERSERK",
@@ -1437,7 +1438,7 @@ root("Instances", tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 					i(19946),	-- Tigule's Harpoon
 					i(19945),	-- Foror's Eyepatch
 					i(19947),	-- Nat Pagle's Broken Reel
-					i(22739),	-- Tome of Polymorph: Turtle
+					TOME_OF_POLYMORPH_TURTLE,
 				},
 			}),
 			n(14515, {	-- High Priestess Arlokk
@@ -1487,6 +1488,9 @@ root("Instances", tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 				i(20257),	-- Seafury Gauntlets
 				i(19855),	-- Bloodsoaked Legplates
 			}),
-		},
+		}),
 	}),
 })));
+
+-- The tome was added to Cataclysm Fishing Pools after being removed from ZG.
+TOME_OF_POLYMORPH_TURTLE.timeline = nil;

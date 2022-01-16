@@ -37,6 +37,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 		ach(14741, {	-- Aerial Ace
 			["description"] = "Speak to the NPC after completing the WQ and ask to complete the Paragon's Challenge.",
 			["altQuests"] = { 60911 },	-- Flight School: Flapping Frenzy
+			["maps"] = { BASTION },
 		}),
 		ach(15064, {	-- Breaking The Chains
 			i(186654),	-- Bracelet of Salarangor

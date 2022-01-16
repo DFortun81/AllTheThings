@@ -275,6 +275,14 @@ local function AfterCombatOrDelayedCallback(method, delaySec, ...)
 		DelayedCallback(method, delaySec, ...);
 	end
 end
+local function LocalizeGlobal(globalName, init)
+	local val = _G[globalName];
+	if init and not val then
+		val = {};
+		_G[globalName] = val;
+	end
+	return val;
+end
 local constructor = function(id, t, typeID)
 	if t then
 		if not rawget(t, "g") and rawget(t, 1) then
@@ -3334,6 +3342,9 @@ ResolveSymbolicLink = function(o)
 			-- if app.DEBUG_PRINT then print("Symbolic Link for", o.key,o.key and o[o.key], "contains", #cloned, "values after filtering.") end
 			-- if any symlinks are left at the lowest level, go ahead and fill them
 			for _,s in ipairs(cloned) do
+				-- in symlinking a Thing to another Source, we are effectively declaring that it is Sourced within this Source, for the specific scope
+				s.sourceParent = nil;
+				s.parent = nil;
 				FillSymLinks(s);
 			end
 			return cloned;
@@ -3390,9 +3401,13 @@ local function FillPurchases(group, depth)
 	-- default to 2 levels of filling, i.e. 0) Raid Essence -> 1) Tier Token -> 2) Item
 	depth = depth or 2;
 	-- if app.DEBUG_PRINT then print("FillPurchases?",group.hash,depth) end
-	if depth <= 0 then return; end
+	if depth < 1 then return; end
 	-- do not fill purchases on certain items, can skip the skip though based on a level
-	if (app.SkipPurchases[-1] or 0) < (app.SkipPurchases[group.itemID or -1] or 0) then return; end
+	local reqSkipLevel = group.itemID and app.SkipPurchases[group.itemID];
+	if reqSkipLevel then
+		local curSkipLevel = app.SkipPurchases[-1];
+		if curSkipLevel and curSkipLevel < reqSkipLevel then return; end;
+	end
 	-- do not fill 'saved' groups (unless they are actual Maps or Instances, or a Difficulty header. Also 'saved' Items usually means tied to a questID directly)
 	-- or groups directly under saved groups unless in Acct or Debug mode
 	if not app.MODE_DEBUG_OR_ACCOUNT and not (group.instanceID or group.mapID or group.difficultyID or group.itemID) then
@@ -3401,7 +3416,7 @@ local function FillPurchases(group, depth)
 		if rawParent and rawParent.saved then return; end
 	end
 
-	local collectibles = group.costCollectibles or (group.collectibleAsCost and group.costCollectibles or group.costCollectibles);
+	local collectibles = group.costCollectibles or (group.collectibleAsCost and group.costCollectibles);
 	-- if app.DEBUG_PRINT then print("GetPurchases",collectibles and #collectibles) end
 	if collectibles and #collectibles > 0 then
 		-- Nest new copies of the cost collectible objects of this group under itself
@@ -3424,9 +3439,8 @@ local function FillPurchases(group, depth)
 end
 local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	if not search or search:find("%[]") then return; end
-	local now = time();
 	local cache = searchCache[search];
-	if cache and (now - cache[1]) < cache[2] then return cache[3]; end
+	if cache then return cache; end
 
 	-- This method can be called nested, and some logic should only process for the initial call
 	local topLevelSearch;
@@ -3441,8 +3455,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	-- Determine if this tooltip needs more work the next time it refreshes.
 	if not paramA then paramA = ""; end
 	local working, info = false, {};
-	cache = { now, 100000000 };
-	searchCache[search] = cache;
 
 	-- Call to the method to search the database.
 	local rawlink;
@@ -3567,7 +3579,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			if itemString then
 				sourceID = GetSourceID(paramA);
 				-- print("ParamA SourceID",sourceID,paramA)
-				if app.Settings:GetTooltipSetting("itemString") then tinsert(info, { left = itemString }); end
+				if topLevelSearch and app.Settings:GetTooltipSetting("itemString") then tinsert(info, { left = itemString }); end
 				local _, itemID2, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, linkModID, numBonusIds, bonusID1 = strsplit(":", itemString);
 				if itemID2 then
 					itemID = tonumber(itemID2);
@@ -3582,7 +3594,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					for i,j in ipairs(group) do
 						if j.modItemID == paramB then
 							if j.u and j.u == 2 and (not app.IsBoP(j)) and (tonumber(numBonusIds) or 0) > 0 then
-								tinsert(info, { left = L["RECENTLY_MADE_OBTAINABLE"] });
+								if topLevelSearch then tinsert(info, { left = L["RECENTLY_MADE_OBTAINABLE"] }); end
 							end
 						end
 					end
@@ -3667,7 +3679,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 										else
 											text = "   ";
 										end
-										tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(ATTAccountWideData.Sources[sourceID])});
+										if topLevelSearch then tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(ATTAccountWideData.Sources[sourceID])}); end
 									end
 								else
 									local otherATTSources = app.SearchForField("s", otherSourceID);
@@ -3700,7 +3712,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 											else
 												text = "   ";
 											end
-											tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherItemID or "???") .. (otherATTSource.modID and (":" .. otherATTSource.modID) or "") .. ")") or ""), right = GetCollectionIcon(otherATTSource.collected)});
+											if topLevelSearch then tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherItemID or "???") .. (otherATTSource.modID and (":" .. otherATTSource.modID) or "") .. ")") or ""), right = GetCollectionIcon(otherATTSource.collected)}); end
 										end
 									else
 										local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
@@ -3712,7 +3724,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 											end
 											text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
 											if otherSource.isCollected then ATTAccountWideData.Sources[otherSourceID] = 1; end
-											tinsert(info, { left = text	.. " |CFFFF0000(" .. (link == RETRIEVING_DATA and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});	-- This is debug info for contribs, do not localize it
+											if topLevelSearch then tinsert(info, { left = text	.. " |CFFFF0000(" .. (link == RETRIEVING_DATA and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)}); end	-- This is debug info for contribs, do not localize it
 										end
 									end
 								end
@@ -3737,7 +3749,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 										else
 											text = "   ";
 										end
-										tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(ATTAccountWideData.Sources[sourceID])});
+										if topLevelSearch then tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(ATTAccountWideData.Sources[sourceID])}); end
 									end
 								else
 									local otherATTSources = app.SearchForField("s", otherSourceID);
@@ -3794,7 +3806,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 										end
 
 										if #failText > 0 then text = text .. " |CFFFF0000(" .. failText .. ")|r"; end
-										tinsert(info, { left = text, right = GetCollectionIcon(otherATTSource.collected)});
+										if topLevelSearch then tinsert(info, { left = text, right = GetCollectionIcon(otherATTSource.collected)}); end
 									else
 										local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
 										if otherSource and (otherSource.quality or 0) > 1 then
@@ -3805,7 +3817,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 											end
 											text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
 											if otherSource.isCollected then ATTAccountWideData.Sources[otherSourceID] = 1; end
-											tinsert(info, { left = text	.. " |CFFFF0000(" .. (link == RETRIEVING_DATA and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});	-- This is debug info for contribs, do not localize it
+											if topLevelSearch then tinsert(info, { left = text	.. " |CFFFF0000(" .. (link == RETRIEVING_DATA and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)}); end	-- This is debug info for contribs, do not localize it
 										end
 									end
 								end
@@ -3821,7 +3833,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							-- if this is true here, that means C_TransmogCollection_GetAllAppearanceSources() for this SourceID's VisualID
 							-- does not return this SourceID, so it doesn't get flagged by the refresh logic and we need to track it manually for
 							-- this Account as being 'collected'
-							tinsert(info, { left = Colorize(L["ADHOC_UNIQUE_COLLECTED_INFO"], "ffe35832") });
+							if topLevelSearch then tinsert(info, { left = Colorize(L["ADHOC_UNIQUE_COLLECTED_INFO"], "ffe35832") }); end
 							-- if the tooltip immediately refreshes for whatever reason the
 							-- store this SourceID as being collected* so it can be properly collected* during force refreshes in the future without requiring a tooltip search
 							if not ATTAccountWideData.BrokenUniqueSources then ATTAccountWideData.BrokenUniqueSources = {}; end
@@ -3830,19 +3842,19 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						end
 					end
 
-					if app.IsReady and sourceGroup.missing then
+					if topLevelSearch and app.IsReady and sourceGroup.missing then
 						tinsert(info, { left = Colorize("Item Source not found in the " .. app.Version .. " database.\n" .. L["SOURCE_ID_MISSING"], "ffff0000") });	-- Do not localize first part of the message, it is for contribs
 						tinsert(info, { left = Colorize(sourceID .. ":" .. tostring(sourceInfo.visualID), "ffe35832") });
 						tinsert(info, { left = Colorize(itemString, "ffe35832") });
 					end
-					if app.Settings:GetTooltipSetting("visualID") then tinsert(info, { left = L["VISUAL_ID"], right = tostring(sourceInfo.visualID) }); end
-					if app.Settings:GetTooltipSetting("sourceID") then tinsert(info, { left = L["SOURCE_ID"], right = sourceID .. " " .. GetCollectionIcon(sourceInfo.isCollected) }); end
+					if topLevelSearch and app.Settings:GetTooltipSetting("visualID") then tinsert(info, { left = L["VISUAL_ID"], right = tostring(sourceInfo.visualID) }); end
+					if topLevelSearch and app.Settings:GetTooltipSetting("sourceID") then tinsert(info, { left = L["SOURCE_ID"], right = sourceID .. " " .. GetCollectionIcon(sourceInfo.isCollected) }); end
 				end
 			end
-			if app.Settings:GetTooltipSetting("itemID") then tinsert(info, { left = L["ITEM_ID"], right = tostring(itemID) }); end
-			if modID and app.Settings:GetTooltipSetting("modID") then tinsert(info, { left = "Mod ID", right = tostring(modID) }); end
-			if bonusID and app.Settings:GetTooltipSetting("bonusID") then tinsert(info, { left = "Bonus ID", right = tostring(bonusID) }); end
-			if app.Settings:GetTooltipSetting("SpecializationRequirements") then
+			if topLevelSearch and app.Settings:GetTooltipSetting("itemID") then tinsert(info, { left = L["ITEM_ID"], right = tostring(itemID) }); end
+			if topLevelSearch and modID and app.Settings:GetTooltipSetting("modID") then tinsert(info, { left = "Mod ID", right = tostring(modID) }); end
+			if topLevelSearch and bonusID and app.Settings:GetTooltipSetting("bonusID") then tinsert(info, { left = "Bonus ID", right = tostring(bonusID) }); end
+			if topLevelSearch and app.Settings:GetTooltipSetting("SpecializationRequirements") then
 				local specs = GetFixedItemSpecInfo(itemID);
 				-- specs is already filtered/sorted to only current class
 				if specs and #specs > 0 then
@@ -3852,7 +3864,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 			end
 
-			if app.Settings:GetTooltipSetting("Progress") and IsArtifactRelicItem(itemID) then
+			if topLevelSearch and app.Settings:GetTooltipSetting("Progress") and IsArtifactRelicItem(itemID) then
 				-- If the item is a relic, then let's compare against equipped relics.
 				local relicType = select(3, C_ArtifactUI.GetRelicInfoByItemID(itemID));
 				local myArtifactData = app.CurrentCharacter.ArtifactRelicItemLevels;
@@ -3897,7 +3909,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	end
 
 	-- Create a list of sources
-	if app.Settings:GetTooltipSetting("SourceLocations") and (not paramA or (paramA ~= "encounterID" and app.Settings:GetTooltipSetting(paramA == "creatureID" and "SourceLocations:Creatures" or "SourceLocations:Things"))) then
+	if topLevelSearch and app.Settings:GetTooltipSetting("SourceLocations") and (not paramA or (paramA ~= "encounterID" and app.Settings:GetTooltipSetting(paramA == "creatureID" and "SourceLocations:Creatures" or "SourceLocations:Things"))) then
 		local temp, text = {};
 		local unfiltered, uTexture = {};
 		local showUnsorted = app.Settings:GetTooltipSetting("SourceLocations:Unsorted");
@@ -4102,9 +4114,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 		-- Replace as the group
 		group = root;
-		-- Ensure no weird parent references attached to the base search result
-		group.sourceParent = nil;
-		group.parent = nil;
 
 		-- print(group.g and #group.g,"Merge total");
 		-- print("Final Group",group.key,group[group.key],group.collectible,group.collected,group.parent,group.sourceParent,rawget(group, "parent"),rawget(group, "sourceParent"));
@@ -4151,51 +4160,63 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 		-- Only need to build/update groups from the top level
 		if topLevelSearch then
+			-- Ensure no weird parent references attached to the base search result
+			group.sourceParent = nil;
+			group.parent = nil;
 
 			BuildGroups(group, group.g);
 			app.TopLevelUpdateGroup(group);
 		end
 	end
 
-	-- Add various text to the group now that it has been consolidated from all sources
-	if group.isLimited then
-		tinsert(info, 1, { left = L.LIMITED_QUANTITY, wrap = false, color = "ff66ccff" });
-	end
-	-- Description for Items
-	if group.lore and app.Settings:GetTooltipSetting("Lore") then
-		tinsert(info, 1, { left = group.lore, wrap = true, color = "ff66ccff" });
-	end
-	if group.description and app.Settings:GetTooltipSetting("Descriptions") then
-		tinsert(info, 1, { left = group.description, wrap = true, color = "ff66ccff" });
-	end
-	if group.u and (not group.crs or group.itemID or group.s) then
-		tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][group.u][2] });
-	end
-	-- Pet Battles
-	if group.pb then
-		tinsert(info, { left = L["REQUIRES_PETBATTLES"] });
-	end
-	-- PvP
-	if group.pvp then
-		tinsert(info, { left = L["REQUIRES_PVP"] });
-	end
-	if paramA == "itemID" and paramB == 137642 then
-		if app.Settings:GetTooltipSetting("SummarizeThings") then
-			tinsert(info, 1, { left = L["MARKS_OF_HONOR_DESC"], wrap = false, color = "ffff8426" });
+	if topLevelSearch then
+		-- Add various text to the group now that it has been consolidated from all sources
+		if group.isLimited then
+			tinsert(info, 1, { left = L.LIMITED_QUANTITY, wrap = false, color = "ff66ccff" });
+		end
+		-- Description for Items
+		if group.lore and app.Settings:GetTooltipSetting("Lore") then
+			tinsert(info, 1, { left = group.lore, wrap = true, color = "ff66ccff" });
+		end
+		if group.description and app.Settings:GetTooltipSetting("Descriptions") then
+			tinsert(info, 1, { left = group.description, wrap = true, color = "ff66ccff" });
+		end
+		if group.u and (not group.crs or group.itemID or group.s) then
+			tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][group.u][2] });
+		end
+		-- Pet Battles
+		if group.pb then
+			tinsert(info, { left = L["REQUIRES_PETBATTLES"] });
+		end
+		-- PvP
+		if group.pvp then
+			tinsert(info, { left = L["REQUIRES_PVP"] });
+		end
+		if paramA == "itemID" and paramB == 137642 then
+			if app.Settings:GetTooltipSetting("SummarizeThings") then
+				tinsert(info, 1, { left = L["MARKS_OF_HONOR_DESC"], wrap = false, color = "ffff8426" });
+			end
+		end
+		-- an item used for a faction which is repeatable
+		if group.itemID and group.factionID and group.repeatable then
+			tinsert(info, { left = L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(group.factionID)) or ("Faction #" .. tostring(group.factionID))) .. "'", wrap = true, color = "ff66ccff" });
 		end
 	end
-	-- an item used for a faction which is repeatable
-	if group.itemID and group.factionID and group.repeatable then
-		tinsert(info, { left = L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(group.factionID)) or ("Faction #" .. tostring(group.factionID))) .. "'", wrap = true, color = "ff66ccff" });
+
+	-- delete sub-groups if there are none
+	if group.g and #group.g == 0 then
+		group.g = nil;
 	end
 
-	if topLevelSearch and group.g and #group.g > 0 then
+	if topLevelSearch and group.g then
 		if app.Settings:GetTooltipSetting("SummarizeThings") then
 			local entries, left, right = {};
-			-- app.DEBUG_PRINT = "CONTAINS-" .. group.key .. group[group.key];
+			-- app.DEBUG_PRINT = "CONTAINS-"..group.hash;
 			BuildContainsInfo(group, entries, "  ", app.noDepth and 99 or 1);
 			-- app.DEBUG_PRINT = nil;
+			-- print(entries and #entries,"contains entries")
 			if #entries > 0 then
+				local costCollectibles = group.costCollectibles;
 				-- print("#entries",#entries);
 				tinsert(info, { left = L["CONTAINS"] });
 				local containCount, item, group = math.min(app.Settings:GetTooltipSetting("ContainsCount") or 25, #entries);
@@ -4298,12 +4319,26 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				if #entries - containCount > 0 then
 					tinsert(info, { left = L["AND_"] .. (#entries - containCount) .. L["_MORE"] .. "..." });
 				end
+				if app.Settings:GetTooltipSetting("Currencies") then
+					local currencyCount = 0;
+					for i=1,#entries do
+						item = entries[i];
+						group = item.group;
+						if group.collectible and not group.collected then
+							local canBeBoughtFor = app.ItemCanBeBoughtWithCurrencyCount(group.itemID, paramB, costCollectibles);
+							currencyCount = currencyCount + canBeBoughtFor;
+						end
+					end
+					if currencyCount > 0 then
+						tinsert(info, { left = L["CURRENCY_NEEDED_TO_BUY"], right = currencyCount });
+					end
+				end
 			end
 		end
 	end
 
 	-- If the item is a recipe, then show which characters know this recipe.
-	if group.spellID and group.filterID ~= 100 and group.collectible and app.Settings:GetTooltipSetting("KnownBy") then
+	if topLevelSearch and group.spellID and group.filterID ~= 100 and group.collectible and app.Settings:GetTooltipSetting("KnownBy") then
 		local knownBy = {};
 		for guid,character in pairs(ATTCharacterData) do
 			if character.Spells and character.Spells[group.spellID] then
@@ -4317,42 +4352,48 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		end
 	end
 
-	-- If the user wants to show the progress of this search result, do so
-	if app.Settings:GetTooltipSetting("Progress") and (group.key ~= "spellID" or group.collectible) then
-		group.collectionText = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(group);
-	end
+	-- Check if finally leaving the top-level search
+	if topLevelSearch then
+		group.isBaseSearchResult = true;
+		app.InitialCachedSearch = nil;
 
-	-- If there was any informational text generated, then attach that info.
-	if #info > 0 then
-		group.tooltipInfo = info;
-		for _,item in ipairs(info) do
-			if item.color then item.a, item.r, item.g, item.b = HexToARGB(item.color); end
+		-- print("TopLevelSearch",working and "WORKING" or "DONE",search,group.text or (group.key and group.key .. group[group.key]),group)
+
+		-- Track if the result is not finished processing
+		group.working = working;
+
+		-- cache the finished result if it's completely processed
+		if not working then
+			searchCache[search] = group;
+		end
+
+		-- If the user wants to show the progress of this search result, do so
+		if app.Settings:GetTooltipSetting("Progress") and (group.key ~= "spellID" or group.collectible) then
+			group.collectionText = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(group);
+		end
+
+		-- If there was any informational text generated, then attach that info.
+		if #info > 0 then
+			group.tooltipInfo = info;
 		end
 	end
 
-	-- delete sub-groups if there are none
-	if group.g and #group.g == 0 then
-		group.g = nil;
-	end
-
-	-- Cache the result for a while depending on if there is more work to be done.
-	group.isSearchResult = true;
-	group.working = working;
-	cache[2] = (working and 0.01) or 100000000;
-	-- if working then print("still working...")
-	-- else print("Cached Search",search,paramA,paramB,group.tooltipInfo and #group.tooltipInfo); end
-	cache[3] = group;
-
-	-- Check if finally leaving the top-level search
-	if topLevelSearch then
-		--[[
-		if not working then
-			print("TopLevelSearch-Done",search,group.text or (group.key and group.key .. group[group.key]),group)
-		end--]]
-		group.isBaseSearchResult = true;
-		app.InitialCachedSearch = nil;
-	end
 	return group;
+end
+app.ItemCanBeBoughtWithCurrencyCount = function(targetItemID, currencyItemID, costCollectibles)
+	-- TODO: this does not handle recursive and nested cases, like Murloc items in Nazjatar
+	if costCollectibles and #costCollectibles > 0 then
+		for i=1,#costCollectibles do
+			if costCollectibles[i].itemID and costCollectibles[i].itemID == targetItemID then
+				for _,costComp in ipairs(costCollectibles[i].cost) do
+					if costComp[2] == currencyItemID then
+						return costComp[3];
+					end
+				end
+			end
+		end
+	end
+	return 0;
 end
 app.BuildCrafted_IncludedItems = {};
 -- Appends sub-groups into the item group based on what the item is used to craft (via ReagentCache)
@@ -5282,7 +5323,7 @@ local function SearchForLink(link)
 			end
 		end
 	else
-		local kind, id, paramA, paramB = strsplit(":", link);
+		local kind, id = strsplit(":", link);
 		kind = string.lower(kind);
 		if string.sub(kind,1,2) == "|c" then
 			kind = string.sub(kind,11);
@@ -5291,7 +5332,6 @@ local function SearchForLink(link)
 			kind = string.sub(kind,3);
 		end
 		if id then id = tonumber(select(1, strsplit("|[", id)) or id); end
-		--print(kind, id, paramA, paramB);
 		--print(string.gsub(string.gsub(link, "|c", "c"), "|h", "h"));
 		if kind == "itemid" then
 			return SearchForField("itemID", id);
@@ -6041,7 +6081,11 @@ local function AttachTooltipRawSearchResults(self, group)
 		-- If there was info text generated for this search result, then display that first.
 		if group.tooltipInfo then
 			local left, right;
-			for i,entry in ipairs(group.tooltipInfo) do
+			for _,entry in ipairs(group.tooltipInfo) do
+				if entry.color then
+					entry.a, entry.r, entry.g, entry.b = HexToARGB(entry.color);
+				end
+
 				left = entry.left;
 				right = entry.right;
 				if right then
@@ -6967,7 +7011,6 @@ app.CreateAchievementCriteria = function(id, t)
 end
 
 local function CheckAchievementCollectionStatus(achievementID)
-	-- this can fire prior to VARIABLES_LOADED, so we can only capture the achievement as collected in the DB if the variables have loaded
 	if ATTAccountWideData then
 		local id,name,_,accCompleted,_,_,_,_,flags,_,_,isGuild = GetAchievementInfo(achievementID)
 		if id and not isGuild and accCompleted and bit.band(flags,0x1) == 0 then
@@ -9262,14 +9305,11 @@ fields.collectible = function(t) return app.CollectibleRuneforgeLegendaries; end
 fields.collectibleAsCost = app.ReturnFalse;
 fields.collected = function(t)
 	local rfID = t.runeforgePowerID;
-	-- character collected
-	if app.CurrentCharacter.RuneforgeLegendaries[rfID] then return 1; end
 	-- account-wide collected
-	if app.AccountWideRuneforgeLegendaries and ATTAccountWideData.RuneforgeLegendaries[rfID] then return 2; end
+	if ATTAccountWideData.RuneforgeLegendaries[rfID] then return 1; end
 	-- fresh collected
 	local state = (C_LegendaryCrafting.GetRuneforgePowerInfo(rfID) or app.EmptyTable).state;
 	if state == 0 then
-		app.CurrentCharacter.RuneforgeLegendaries[rfID] = 1;
 		ATTAccountWideData.RuneforgeLegendaries[rfID] = 1;
 		return 1;
 	end
@@ -11434,11 +11474,15 @@ local function RefreshQuestCompletionState(questID)
 	if DirtyQuests.DIRTY then
 		app:UpdateWindows();
 	end
+	-- re-register the criteria update event
+	app:RegisterEvent("CRITERIA_UPDATE");
 	wipe(DirtyQuests);
 	wipe(npcQuestsCache);
 end
 app.RefreshQuestInfo = function(questID)
 	-- print("RefreshQuestInfo",questID)
+	-- unregister criteria update until the quest refresh actually completes
+	app:UnregisterEvent("CRITERIA_UPDATE");
 	if questID then
 		RefreshQuestCompletionState(questID);
 	else
@@ -12140,8 +12184,9 @@ function app.FilterItemClass_RequireFaction(item)
 end
 function app.FilterItemClass_CustomCollect(item)
 	if item.customCollect then
+		local customCollects = app.CurrentCharacter.CustomCollects;
 		for _,c in ipairs(item.customCollect) do
-			if not app.CurrentCharacter.CustomCollects[c] then
+			if not customCollects[c] then
 				return false;
 			end
 		end
@@ -12371,7 +12416,7 @@ function app.ObjectVisibilityFilter(group)
 	return group.visible;
 end
 
--- Default Filter Settings (changed in VARIABLES_LOADED and in the Options Menu)
+-- Default Filter Settings (changed in app.Startup and in the Options Menu)
 app.VisibilityFilter = app.ObjectVisibilityFilter;
 app.GroupFilter = app.FilterItemClass;
 app.GroupRequirementsFilter = app.NoFilter;
@@ -13281,7 +13326,7 @@ function app:CreateMiniListForGroup(group)
 		group = CreateObject(group);
 
 		-- being a search result means it has already received certain processing
-		if not group.isSearchResult then
+		if not group.isBaseSearchResult then
 			-- Fill any purchasable things for the sub-groups
 			-- if group.g then
 			-- 	for _,sub in ipairs(group.g) do
@@ -15290,15 +15335,6 @@ function app:GetWindow(suffix, parent, onUpdate)
 			window.lockPersistable = true;
 		end
 
-		-- apply scaling from settings
-		if AllTheThingsSettings then
-			if suffix == "Prime" then
-				window:SetScale(app.Settings:GetTooltipSetting("MainListScale"));
-			else
-				window:SetScale(app.Settings:GetTooltipSetting("MiniListScale"));
-			end
-		end
-
 		window:Hide();
 
 		-- The Close Button. It's assigned as a local variable so you can change how it behaves.
@@ -15355,7 +15391,7 @@ app.DynamicCategory_Simple = function(self)
 	if fieldCache[self.dynamic] then
 		local rootATT = app:GetWindow("Prime").data;
 		local RecursiveFirstParentWithFieldValue = app.RecursiveFirstParentWithFieldValue;
-		local top, topText;
+		local top, topText, thing;
 		local topHeaders = {};
 		for id,sources in pairs(fieldCache[self.dynamic]) do
 			-- find the top-level parent of the Thing
@@ -15369,7 +15405,10 @@ app.DynamicCategory_Simple = function(self)
 					-- app.PrintTable(topHeaders[topText])
 				end
 				-- put a copy of the Thing into the matching top category (no uniques since only 1 per cached Thing)
-				NestObject(topHeaders[topText], app.MergedObject(sources, true));
+				-- remove it from being considered a cost within the dynamic category
+				thing = app.MergedObject(sources, true)
+				thing.collectibleAsCost = false;
+				NestObject(topHeaders[topText], thing);
 			end
 		end
 		-- sort all of the Things by name in each top header and put it under the dynamic group
@@ -15416,14 +15455,15 @@ app.DynamicCategory_Nested = function(self)
 end
 
 function app:GetDataCache()
-	local dynamicSetting = app.Settings:Get("Dynamic:Style");
+	local dynamicSetting = app.Settings:Get("Dynamic:Style") or 0;
+	-- copy the function which will handle the desired Dynamic style for this session
+	app.FillDynamicGroup = (dynamicSetting == 2 and app.DynamicCategory_Nested) or
+						   (dynamicSetting == 1 and app.DynamicCategory_Simple) or nil;
 	-- Attaches a dynamic OnUpdate to the category which auto-populates itself using the provided field and optional value when first receiving an Update to itself
 	local function DynamicCategory(group, field, value)
-		if dynamicSetting > 0 then
-			-- mark the top group as dynamic for the field which it used (so popouts under the dynamic header are considered unique from other dynamic popouts)
-			group.dynamic = field;
-			group.OnUpdate = dynamicSetting == 2 and app.DynamicCategory_Nested or app.DynamicCategory_Simple;
-		end
+		-- mark the top group as dynamic for the field which it used (so popouts under the dynamic header are considered unique from other dynamic popouts)
+		group.dynamic = field;
+		group.OnUpdate = app.FillDynamicGroup;
 		return group;
 	end
 	-- Update the Row Data by filtering raw data
@@ -15695,37 +15735,6 @@ function app:GetDataCache()
 		end
 
 		--[[
-		-- DYNAMIC TOY BOX (not filtered)
-		db = {};
-		db.g = {};
-		db.OnUpdate = function(self)
-			local numToys = C_ToyBox.GetNumToys();
-			if numToys and numToys > 0 then
-				local cache = self.g;
-				table.wipe(cache);
-				C_ToyBox.SetAllExpansionTypeFilters(true);
-				C_ToyBox.SetAllSourceTypeFilters(true);
-				C_ToyBox.SetUncollectedShown(true);
-				C_ToyBox.SetCollectedShown(true);
-				C_ToyBox.SetUnusableShown(true);
-				for index=1,numToys,1 do
-					local itemID = C_ToyBox.GetToyFromIndex(index);
-					if itemID and itemID > 0 then
-						tinsert(cache, app.CreateToy(itemID));
-					end
-				end
-				self.g = cache;
-				self.OnUpdate = nil;
-			end
-		end;
-		db.OnUpdate(db);
-		db.expanded = false;
-		db.text = TOY_BOX;
-		db.icon = "Interface\\ICONS\\INV_Misc_Toy_10";
-		tinsert(g, db);
-		]]--
-
-		--[[
 		-- Never Implemented
 		if app.Categories.NeverImplemented then
 			db = {};
@@ -15761,34 +15770,6 @@ function app:GetDataCache()
 		tinsert(g, db);
 		--]]
 
-		-- Illusions (Dynamic)
-		--[[ 9.1 TEST
-		local illusionInfo = C_TransmogCollection.GetIllusionInfo(illusionID);
-		local name, hyperlink = C_TransmogCollection.GetIllusionStrings(illusionID);
-		if illusionInfo then
-			return illusionInfo.visualID, name, hyperlink, illusionInfo.icon;
-		end
-		--]]
-		--[[
-		db = {};
-		db.g = (function()
-			local cache = GetTempDataMember("ILLUSION_CACHE");
-			if not cache then
-				cache = {};
-				SetTempDataMember("ILLUSION_CACHE", cache);
-				for i=1,10000,1 do
-					local visualID = select(1, C_TransmogCollection_GetIllusionSourceInfo(i));
-					if visualID and visualID > 0 then
-						tinsert(cache, app.CreateIllusion(i));
-					end
-				end
-			end
-			return cache;
-		end)();
-		db.expanded = false;
-		db.text = "Illusions (Dynamic)";
-		tinsert(g, db);
-		--]]
 		-- Items (Dynamic)
 		--[[
 		db = {};
@@ -15826,24 +15807,6 @@ function app:GetDataCache()
 		end)());
 		db.expanded = false;
 		db.text = "Artifacts (Dynamic)";
-		tinsert(g, db);
-
-		-- Titles (Dynamic)
-		db = app.CreateAchievement(2188, (function()
-			local cache = GetTempDataMember("TITLE_CACHE");
-			if not cache then
-				cache = {};
-				SetTempDataMember("TITLE_CACHE", cache);
-				for i=1,10000,1 do
-					if GetTitleName(i) then
-						tinsert(cache, app.CreateTitle(i));
-					end
-				end
-			end
-			return cache;
-		end)());
-		db.expanded = false;
-		db.text = "Titles (Dynamic)";
 		tinsert(g, db);
 
 		-- Factions (Dynamic)
@@ -15968,29 +15931,6 @@ function app:GetDataCache()
 		end)());
 		--]]
 
-
-		---[[
-		-- More attempts at dynamically built sections.
-		-- Titles
-		-- local titlesCategory = {};
-		-- titlesCategory.g = {};
-		-- titlesCategory.titles = {};
-		-- titlesCategory.expanded = false;
-		-- titlesCategory.text = PAPERDOLL_SIDEBAR_TITLES;
-		-- titlesCategory.icon = app.asset("Category_Titles");
-		-- tinsert(g, DynamicCategory(titlesCategory, "titleID"));
-		--]]
-
-		--[[
-		-- Toys
-		local toyCategory = {};
-		toyCategory.g = {};
-		toyCategory.toys = {};
-		toyCategory.expanded = false;
-		toyCategory.text = TOY_BOX;
-		toyCategory.icon = app.asset("Category_ToyBox");
-		table.insert(g, toyCategory);
-		]]--
 
 		-- Achievements (Dynamic!)
 		--[[
@@ -16791,10 +16731,12 @@ customWindowUpdates["Bounty"] = function(self, force, got)
 			end
 		end
 		self:SetScript("OnEvent", function(self, e, ...)
-			self:UnregisterEvent("VARIABLES_LOADED");
-			Callback(RefreshBounties);
+			if select(1, ...) == "AllTheThings" then
+				self:UnregisterEvent("ADDON_LOADED");
+				Callback(RefreshBounties);
+			end
 		end);
-		self:RegisterEvent("VARIABLES_LOADED");
+		self:RegisterEvent("ADDON_LOADED");
 	end
 	if self:IsVisible() then
 		-- Update the window and all of its row data
@@ -16974,6 +16916,9 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		-- GARRISONS
 			[-9966] = true,
 		};
+		-- self.Rebuild
+		(function()
+		local results, groups, nested, header, inInstance, difficultyID, topHeader, nextParent, headerID, groupKey, typeHeaderID;
 		self.Rebuild = function(self)
 			-- print("Rebuild",self.mapID);
 			-- check if this is the same 'map' for data purposes
@@ -16982,23 +16927,22 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				return;
 			end
 			wipe(self.CurrentMaps);
-			local results = SearchForField("mapID", self.mapID);
+			results = SearchForField("mapID", self.mapID);
 			if results then
 				-- print(#results,"Minilist Results for mapID",self.mapID)
 				-- Simplify the returned groups
-				local groups, nested = {};
-				local header = app.CreateMap(self.mapID, { g = groups });
+				groups = {};
+				header = app.CreateMap(self.mapID, { g = groups });
 				self.CurrentMaps[self.mapID] = true;
-				local inInstance = IsInInstance();
+				inInstance = IsInInstance();
 				for _,group in ipairs(results) do
 					-- do not use any raw Source groups in the final list
 					group = CreateObject(group);
 					-- print(group.key,group.key and group[group.key],group.text)
 					nested = nil;
 
-					-- Cache the difficultyID, if there is one. Also, ignore the event tag for anything that isn't Bizmo's Brawlpub.
-					local difficultyID = not GetRelativeField(group, "headerID", -496) and GetRelativeValue(group, "difficultyID");
-
+					-- Cache the difficultyID, if there is one
+					difficultyID = GetRelativeValue(group, "difficultyID");
 
 					-- groups which 'should' be a root of the minilist
 					if (group.instanceID or group.mapID or group.key == "classID")
@@ -17017,8 +16961,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 						group = nil;
 					else
 						-- Get the header chain for the group
-						local topHeader;
-						local nextParent, headerID = group.parent;
+						nextParent = group.parent;
 
 						-- Pre-nest some groups based on their type after grabbing the parent
 						-- Achievements / Achievement / Criteria
@@ -17028,6 +16971,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 						end
 
 						-- Building the header chain for each mapped Thing
+						topHeader = nil;
 						while nextParent do
 							headerID = nextParent.headerID;
 							if headerID then
@@ -17063,7 +17007,8 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 
 					-- couldn't nest this thing using custom headers, try to use the key of the group to figure it out
 					if not nested and group then
-						local groupKey, typeHeaderID = group.key;
+						groupKey = group.key;
+						typeHeaderID = nil;
 						-- determine the expected top header for this 'thing' based on its key
 						for headerID,key in pairs(topHeaders) do
 							if groupKey == key then
@@ -17128,7 +17073,6 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					end
 				end
 
-				if self.data then wipe(self.data); end
 				-- Swap out the map data for the header.
 				self.data = header;
 				self.data.u = nil;
@@ -17139,8 +17083,6 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					or self.data.classID and app.BaseCharacterClass
 					or self.data.achID and app.BaseMapWithAchievementID or app.BaseMap);
 
-				-- sort only the top layer of groups if not in an instance, force visible so sort goes through
-				-- print(GetInstanceInfo());
 				-- sort top level by name if not in an instance
 				if not GetRelativeValue(self.data, "instanceID") then
 					SortGroup(self.data, "name");
@@ -17249,6 +17191,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			self.ScrollBar:SetValue(1);
 			return true;
 		end
+		end)();
 		local function OpenMiniList(id, show)
 			-- print("OpenMiniList",id,show);
 			-- Determine whether or not to forcibly reshow the mini list.
@@ -18869,31 +18812,10 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 					self.tradeSkillID = tradeSkillID;
 					local data = updates["Data"];
 					if not data then
+						data = app.CreateProfession(tradeSkillID);
 						app.BuildSearchResponse_IgnoreUnavailableRecipes = true;
-						for _,group in ipairs(app.Categories.Professions) do
-							if group.requireSkill == tradeSkillID then
-								data = CloneData(group);
-								local requireSkill = data.requireSkill;
-								local response = app:BuildSearchResponse(app.Categories.Instances, "requireSkill", requireSkill);
-								if response then tinsert(data.g, {text=GROUP_FINDER,icon = app.asset("Category_D&R"),g=response}); end
-								response = app:BuildSearchResponse(app.Categories.Achievements, "requireSkill", requireSkill);
-								if response then tinsert(data.g, {text=ACHIEVEMENTS,icon = app.asset("Category_Achievements"),g=response});  end
-								response = app:BuildSearchResponse(app.Categories.Zones, "requireSkill", requireSkill);
-								if response then tinsert(data.g, {text=BUG_CATEGORY2,icon = app.asset("Category_Zones"),g=response});  end
-								response = app:BuildSearchResponse(app.Categories.WorldDrops, "requireSkill", requireSkill);
-								if response then tinsert(data.g, {text=TRANSMOG_SOURCE_4,icon = app.asset("Category_WorldDrops"),g=response});  end
-								response = app:BuildSearchResponse(app.Categories.ExpansionFeatures, "requireSkill", requireSkill);
-								if response then tinsert(data.g, {text=GetCategoryInfo(15301),icon = app.asset("Category_ExpansionFeatures"),g=response});  end
-								response = app:BuildSearchResponse(app.Categories.WorldEvents, "requireSkill", requireSkill)
-								if response then tinsert(data.g, app.CreateDifficulty(18, {icon = app.asset("Category_Event"),g=response}));  end
-								response = app:BuildSearchResponse(app.Categories.Craftables, "requireSkill", requireSkill);
-								if response then tinsert(data.g, {text=LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM,icon = app.asset("Category_Crafting"),g=response});  end
-							end
-						end
-						-- a profession which ATT has no data as being a profession? (PoA crafting)
-						if not data then
-							data = app.CreateProfession(tradeSkillID);
-						end
+						NestObjects(data, app:BuildSearchResponse(app:GetDataCache().g, "requireSkill", data.requireSkill));
+						app.BuildSearchResponse_IgnoreUnavailableRecipes = nil;
 						data.indent = 0;
 						data.visible = true;
 						BuildGroups(data, data.g);
@@ -18902,13 +18824,14 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 						self.ExpandInfo = { Expand = true };
 					end
 					self.data = data;
-					app.BuildSearchResponse_IgnoreUnavailableRecipes = nil;
+					self.force = true
 				end
 				-- If something new was "learned", then refresh the data.
 				UpdateRawIDs("spellID", learned);
 				if #learned > 0 then
 					app:PlayRareFindSound();
 					app:TakeScreenShot();
+					self.force = true;
 				end
 			end
 		end
@@ -18920,7 +18843,8 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 		end
 		self.CacheAndUpdate = function(self)
 			self:CacheRecipes();
-			self:Update(true);
+			self:Update(self.force);
+			self.force = nil;
 		end
 
 		-- TSM Shenanigans
@@ -19010,6 +18934,10 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 						if not previousState or not app.Settings:Get("AccountWide:Recipes") then
 							app:PlayFanfare();
 							app:TakeScreenShot();
+							if app.Settings:GetTooltipSetting("Report:Collected") then
+								local link = app:Linkify(spellID, "149bfd", "search:spellID:"..spellID);
+								print(NEW_RECIPE_LEARNED_TITLE, link);
+							end
 						end
 						wipe(searchCache);
 					end
@@ -19659,14 +19587,6 @@ app.LoadDebugger = function()
 				["visible"] = 1,
 				["displayInfo"] = 1,
 			};
-			local function LocalizeGlobal(globalName, init)
-				local val = _G[globalName];
-				if init and not val then
-					val = {};
-					_G[globalName] = val;
-				end
-				return val;
-			end
 			local function CleanObject(obj)
 				local clean = {};
 				if obj[1] then
@@ -19882,9 +19802,7 @@ app.LoadDebugger = function()
 			-- Setup Event Handlers and register for events
 			self:SetScript("OnEvent", function(self, e, ...)
 				if app.DEBUG_PRINT then print(e, ...); end
-				if e == "VARIABLES_LOADED" then
-					InitDebuggerData();
-				elseif e == "ZONE_CHANGED_NEW_AREA" or e == "NEW_WMO_CHUNK" then
+				if e == "ZONE_CHANGED_NEW_AREA" or e == "NEW_WMO_CHUNK" then
 					AddObject();
 				elseif e == "MERCHANT_SHOW" or e == "MERCHANT_UPDATE" then
 					MerchantFrame_SetFilter(MerchantFrame, 1);
@@ -20065,7 +19983,6 @@ app.LoadDebugger = function()
 					end
 				end
 			end);
-			self:RegisterEvent("VARIABLES_LOADED");
 			self:RegisterEvent("QUEST_DETAIL");
 			self:RegisterEvent("QUEST_PROGRESS");
 			self:RegisterEvent("QUEST_LOOT_RECEIVED");
@@ -20365,6 +20282,9 @@ app.ProcessAuctionData = function()
 end
 
 app.OpenAuctionModule = function(self)
+	-- TODO: someday someone might fix this AH functionality...
+	if true then return; end
+
 	if IsAddOnLoaded("TradeSkillMaster") then -- Why, TradeSkillMaster, why are you like this?
 		C_Timer.After(2, function() end);
 	end
@@ -20506,12 +20426,610 @@ app.SetupProfiles = function()
 	app.print("Initialized ATT Profiles!");
 
 	-- delete old variables
-	-- AllTheThingsSettings = nil;
-	-- AllTheThingsAD.UnobtainableItemFilters = nil;
-	-- AllTheThingsAD.SeasonalFilters = nil;
+	AllTheThingsSettings = nil;
+	AllTheThingsAD.UnobtainableItemFilters = nil;
+	AllTheThingsAD.SeasonalFilters = nil;
 
 	-- initialize settings again due to profiles existing now
 	app.Settings:Initialize();
+end
+
+-- Called when the Addon is loaded to process initial startup information
+app.Startup = function()
+	local v = GetAddOnMetadata("AllTheThings", "Version");
+	-- if placeholder exists as the Version tag, then assume we are not on the Release version
+	if string.match(v, "version") then
+		app.Version = "[Git]";
+		-- adjust the Setting screen version display since it was already set from metadata
+		if app.Settings.version then
+			app.Settings.version:SetText("[Git]");
+		end
+	else
+		app.Version = "v" .. v;
+	end
+
+	AllTheThingsAD = LocalizeGlobal("AllTheThingsAD", true);	-- For account-wide data.
+	-- Cache the Localized Category Data
+	AllTheThingsAD.LocalizedCategoryNames = setmetatable(AllTheThingsAD.LocalizedCategoryNames or {}, { __index = app.CategoryNames });
+	app.CategoryNames = nil;
+
+	-- Cache the Localized Flight Path Data
+	--AllTheThingsAD.LocalizedFlightPathDB = setmetatable(AllTheThingsAD.LocalizedFlightPathDB or {}, { __index = app.FlightPathDB });
+	--app.FlightPathDB = nil;	-- TODO: Deprecate this.
+
+	-- Cache information about the player.
+	local class, classID = UnitClassBase("player");
+	local raceName, race, raceID = UnitRace("player");
+	app.Class = class;
+	app.ClassIndex = classID;
+	app.Level = UnitLevel("player");
+	local raceIndex = app.RaceDB[race];
+	if type(raceIndex) == "table" then
+		local factionGroup = UnitFactionGroup("player");
+		raceIndex = raceIndex[factionGroup];
+	end
+	app.Race = race;
+	app.RaceID = raceID;
+	app.RaceIndex = raceIndex;
+	-- 1 = unknown, 2 = male, 3 = female
+	app.Gender = UnitSex("player");
+	local name, realm = UnitName("player");
+	local className = GetClassInfo(classID);
+	app.GUID = UnitGUID("player");
+	app.Me = "|c" .. RAID_CLASS_COLORS[class].colorStr .. name .. "-" .. (realm or GetRealmName()) .. "|r";
+	app.ClassName = "|c" .. RAID_CLASS_COLORS[class].colorStr .. className .. "|r";
+
+	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(L["TITLE"], {
+		type = "launcher",
+		icon = app.asset("logo_32x32"),
+		OnClick = MinimapButtonOnClick,
+		OnEnter = MinimapButtonOnEnter,
+		OnLeave = MinimapButtonOnLeave,
+	});
+
+	-- Character Data Storage
+	local characterData = LocalizeGlobal("ATTCharacterData", true);
+	local currentCharacter = characterData[app.GUID];
+	if not currentCharacter then
+		currentCharacter = {};
+		characterData[app.GUID] = currentCharacter;
+	end
+	if name then currentCharacter.name = name; end
+	if realm then currentCharacter.realm = realm; end
+	if app.Me then currentCharacter.text = app.Me; end
+	if app.GUID then currentCharacter.guid = app.GUID; end
+	if app.Level then currentCharacter.lvl = app.Level; end
+	if app.FactionID then currentCharacter.factionID = app.FactionID; end
+	if app.ClassIndex then currentCharacter.classID = app.ClassIndex; end
+	if app.RaceIndex then currentCharacter.raceID = app.RaceIndex; end
+	if class then currentCharacter.class = class; end
+	if race then currentCharacter.race = race; end
+	if not currentCharacter.Achievements then currentCharacter.Achievements = {}; end
+	if not currentCharacter.ArtifactRelicItemLevels then currentCharacter.ArtifactRelicItemLevels = {}; end
+	if not currentCharacter.AzeriteEssenceRanks then currentCharacter.AzeriteEssenceRanks = {}; end
+	if not currentCharacter.Buildings then currentCharacter.Buildings = {}; end
+	if not currentCharacter.CustomCollects then currentCharacter.CustomCollects = {}; end
+	if not currentCharacter.Deaths then currentCharacter.Deaths = 0; end
+	if not currentCharacter.Factions then currentCharacter.Factions = {}; end
+	if not currentCharacter.FlightPaths then currentCharacter.FlightPaths = {}; end
+	if not currentCharacter.Followers then currentCharacter.Followers = {}; end
+	if not currentCharacter.Lockouts then currentCharacter.Lockouts = {}; end
+	if not currentCharacter.Quests then currentCharacter.Quests = {}; end
+	if not currentCharacter.Spells then currentCharacter.Spells = {}; end
+	if not currentCharacter.Titles then currentCharacter.Titles = {}; end
+	-- not needed, account-wide by blizzard
+	currentCharacter.RuneforgeLegendaries = nil;
+	if not currentCharacter.Conduits then currentCharacter.Conduits = {}; end
+	currentCharacter.lastPlayed = time();
+	app.CurrentCharacter = currentCharacter;
+
+	-- Convert over the deprecated Characters table.
+	local characters = GetDataMember("Characters");
+	if characters then
+		for guid,text in pairs(characters) do
+			if not characterData[guid] then
+				characterData[guid] = { ["text"] = text };
+			end
+		end
+	end
+
+	-- Convert over the deprecated AzeriteEssenceRanksPerCharacter table.
+	local azeriteEssenceRanksPerCharacter = GetDataMember("AzeriteEssenceRanksPerCharacter");
+	if azeriteEssenceRanksPerCharacter then
+		for guid,data in pairs(azeriteEssenceRanksPerCharacter) do
+			local character = characterData[guid];
+			if character then character.AzeriteEssenceRanks = data; end
+		end
+	end
+
+	-- Convert over the deprecated CollectedBuildingsPerCharacter table.
+	local collectedBuildingsPerCharacter = GetDataMember("CollectedBuildingsPerCharacter");
+	if collectedBuildingsPerCharacter then
+		for guid,buildings in pairs(collectedBuildingsPerCharacter) do
+			local character = characterData[guid];
+			if character then character.Buildings = buildings; end
+		end
+	end
+
+	-- Convert over the deprecated DeathsPerCharacter table.
+	local deathsPerCharacter = GetDataMember("DeathsPerCharacter");
+	if deathsPerCharacter then
+		for guid,deaths in pairs(deathsPerCharacter) do
+			local character = characterData[guid];
+			if character then character.Deaths = deaths; end
+		end
+	end
+
+	-- Convert over the deprecated CollectedFactionsPerCharacter table.
+	local collectedFactionsPerCharacter = GetDataMember("CollectedFactionsPerCharacter");
+	if collectedFactionsPerCharacter then
+		for guid,factions in pairs(collectedFactionsPerCharacter) do
+			local character = characterData[guid];
+			if character then character.Factions = factions; end
+		end
+	end
+
+	-- Convert over the deprecated CollectedFlightPathsPerCharacter table.
+	local collectedFlightPathsPerCharacter = GetDataMember("CollectedFlightPathsPerCharacter");
+	if collectedFlightPathsPerCharacter then
+		for guid,flightPaths in pairs(collectedFlightPathsPerCharacter) do
+			local character = characterData[guid];
+			if character then character.FlightPaths = flightPaths; end
+		end
+	end
+
+	-- Convert over the deprecated CollectedFollowersPerCharacter table.
+	local collectedFollowersPerCharacter = GetDataMember("CollectedFollowersPerCharacter");
+	if collectedFollowersPerCharacter then
+		for guid,followers in pairs(collectedFollowersPerCharacter) do
+			local character = characterData[guid];
+			if character then character.Followers = followers; end
+		end
+	end
+
+	-- Convert over the deprecated lockouts table.
+	local lockouts = GetDataMember("lockouts");
+	if lockouts then
+		for guid,locks in pairs(lockouts) do
+			local character = characterData[guid];
+			if character then character.Lockouts = locks; end
+		end
+	end
+
+	-- Convert over the deprecated CollectedQuestsPerCharacter table.
+	local collectedQuestsPerCharacter = GetDataMember("CollectedQuestsPerCharacter");
+	if collectedQuestsPerCharacter then
+		for guid,quests in pairs(collectedQuestsPerCharacter) do
+			local character = characterData[guid];
+			if character then character.Quests = quests; end
+		end
+	end
+
+	-- Convert over the deprecated CollectedSpellsPerCharacter table.
+	local collectedSpellsPerCharacter = GetDataMember("CollectedSpellsPerCharacter");
+	if collectedSpellsPerCharacter then
+		for guid,spells in pairs(collectedSpellsPerCharacter) do
+			local character = characterData[guid];
+			if character then character.Spells = spells; end
+		end
+	end
+
+	-- Convert over the deprecated CollectedTitlesPerCharacter table.
+	local collectedTitlesPerCharacter = GetDataMember("CollectedTitlesPerCharacter");
+	if collectedTitlesPerCharacter then
+		for guid,titles in pairs(collectedTitlesPerCharacter) do
+			local character = characterData[guid];
+			if character then character.Titles = titles; end
+		end
+	end
+
+	-- Account Wide Data Storage
+	ATTAccountWideData = LocalizeGlobal("ATTAccountWideData", true);
+	local accountWideData = ATTAccountWideData;
+	if not accountWideData.Achievements then accountWideData.Achievements = {}; end
+	if not accountWideData.Artifacts then accountWideData.Artifacts = {}; end
+	if not accountWideData.AzeriteEssenceRanks then accountWideData.AzeriteEssenceRanks = {}; end
+	if not accountWideData.Buildings then accountWideData.Buildings = {}; end
+	if not accountWideData.Factions then accountWideData.Factions = {}; end
+	if not accountWideData.FactionBonus then accountWideData.FactionBonus = {}; end
+	if not accountWideData.FlightPaths then accountWideData.FlightPaths = {}; end
+	if not accountWideData.Followers then accountWideData.Followers = {}; end
+	if not accountWideData.HeirloomRanks then accountWideData.HeirloomRanks = {}; end
+	if not accountWideData.Illusions then accountWideData.Illusions = {}; end
+	if not accountWideData.Quests then accountWideData.Quests = {}; end
+	if not accountWideData.Sources then accountWideData.Sources = {}; end
+	if not accountWideData.Spells then accountWideData.Spells = {}; end
+	if not accountWideData.Titles then accountWideData.Titles = {}; end
+	if not accountWideData.Toys then accountWideData.Toys = {}; end
+	if not accountWideData.OneTimeQuests then accountWideData.OneTimeQuests = {}; end
+	if not accountWideData.RuneforgeLegendaries then accountWideData.RuneforgeLegendaries = {}; end
+	if not accountWideData.Conduits then accountWideData.Conduits = {}; end
+
+	-- Update the total account wide death counter.
+	local deaths = 0;
+	for guid,character in pairs(characterData) do
+		if character and character.Deaths and character.Deaths > 0 then
+			deaths = deaths + character.Deaths;
+		end
+	end
+	accountWideData.Deaths = deaths;
+
+	-- Convert over the deprecated account wide tables.
+	local data = GetDataMember("CollectedAchievements");
+	if data then accountWideData.Achievements = data; end
+	data = GetDataMember("CollectedArtifacts");
+	if data then
+		if not data.V then
+			wipe(data);
+			C_Timer.After(30, function() app.print(L["ARTIFACT_CACHE_OUT_OF_DATE"]); end);
+		else
+			data.V = nil;
+		end
+		accountWideData.Artifacts = data;
+	elseif accountWideData.Artifacts.V then
+		accountWideData.Artifacts.V = nil;
+	end
+	data = GetDataMember("AzeriteEssenceRanks");
+	if data then accountWideData.AzeriteEssenceRanks = data; end
+	data = GetDataMember("CollectedBuildings");
+	if data then accountWideData.Buildings = data; end
+	data = GetDataMember("CollectedFactions");
+	if data then accountWideData.Factions = data; end
+	data = GetDataMember("CollectedFactionBonusReputation");
+	if data then accountWideData.FactionBonus = data; end
+	data = GetDataMember("CollectedFlightPaths");
+	if data then accountWideData.FlightPaths = data; end
+	data = GetDataMember("CollectedFollowers");
+	if data then accountWideData.Followers = data; end
+	data = GetDataMember("HeirloomUpgradeRanks");
+	if data then accountWideData.HeirloomRanks = data; end
+	data = GetDataMember("CollectedIllusions");
+	if data then accountWideData.Illusions = data; end
+	data = GetDataMember("CollectedQuests");
+	if data then accountWideData.Quests = data; end
+	data = GetDataMember("CollectedSources");
+	if data then accountWideData.Sources = data; end
+	data = GetDataMember("CollectedSpells");
+	if data then accountWideData.Spells = data; end
+	data = GetDataMember("CollectedTitles");
+	if data then accountWideData.Titles = data; end
+	data = GetDataMember("CollectedToys");
+	if data then
+		-- Rebuild toy collection. This should only happen once to fix toy collection states from a bug prior 14.January.2020
+		if not GetDataMember("ToyCacheRebuilt") then wipe(data); end
+		accountWideData.Toys = data;
+	end
+
+	-- Clean up settings
+	local oldsettings = {};
+	for i,key in ipairs({
+		"LocalizedCategoryNames",
+		--"LocalizedFlightPathDB",
+		"Position",
+		"RandomSearchFilter",
+		"Reagents",
+	}) do
+		rawset(oldsettings, key, rawget(AllTheThingsAD, key));
+	end
+	wipe(AllTheThingsAD);
+	for key,value in pairs(oldsettings) do
+		rawset(AllTheThingsAD, key, value);
+	end
+
+	-- Init the Settings before working with data
+	app.Settings:Initialize();
+
+	-- Attempt to register for the addon message prefix.
+	C_ChatInfo.RegisterAddonMessagePrefix("ATT");
+
+	StartCoroutine("InitDataCoroutine", app.InitDataCoroutine);
+end
+
+-- Function which is triggered after Startup
+app.InitDataCoroutine = function()
+	-- First, load the addon data
+	app:GetDataCache();
+
+	-- Then wait for the player to actually be 'in the game' to do further logic
+	while not app.InWorld do coroutine.yield(); end
+
+	local accountWideData = LocalizeGlobal("ATTAccountWideData");
+	local characterData = LocalizeGlobal("ATTCharacterData");
+	local currentCharacter = characterData[app.GUID];
+
+	-- Harvest the Spell IDs for Conversion.
+	app:UnregisterEvent("PET_JOURNAL_LIST_UPDATE");
+
+	-- Verify that reagent cache is of the correct format by checking a special key
+	local reagentCache, reagentCacheVer = app.GetDataMember("Reagents", {}), 2;
+	if not reagentCache[-1] or reagentCache[-1] < reagentCacheVer then
+		C_Timer.After(30, function() app.print(L["REAGENT_CACHE_OUT_OF_DATE"]); end);
+		wipe(reagentCache);
+		reagentCache[-1] = reagentCacheVer;
+	end
+
+	-- Mark all previously completed quests.
+	QueryCompletedQuests();
+
+	-- Current character collections shouldn't use '2' ever... so clear any 'inaccurate' data
+	local currentQuestsCache = currentCharacter.Quests;
+	for questID,completion in pairs(currentQuestsCache) do
+		if completion == 2 then currentQuestsCache[questID] = nil; end
+	end
+
+	-- Cache some collection states for account wide quests that aren't actually granted account wide and can be flagged using an achievementID. (Allied Races)
+	local collected;
+	-- achievement collection state isn't readily available when ADDON_LOADED fires, so we do it here to ensure we get a valid state for matching
+	for _,achievementQuests in ipairs({
+		{ 12453, { 49973, 49613, 49354, 49614 } },	-- Allied Races: Nightborne
+		{ 12517, { 53466, 53467, 53354, 53353, 53355, 52942, 52943, 52945, 52955, 51479 } },	-- Allied Races: Mag'har
+		{ 13156, { 53831, 53823, 53824, 54419, 53826, 54301, 54925, 54300, 53825, 53827, 53828, 54031, 54033, 54032, 54034, 53830, 53719 } },	-- Allied Races: Zandalari Troll
+		{ 12452, { 48066, 48067, 49756, 48079, 41884, 41764, 48185, 41799, 48190, 41800, 48434, 41815, 41840, 41882, 41841, 48403, 48433 } },	-- Allied Races: Highmountain Tauren
+		{ 12450, { 49787, 48962 } },	-- Allied Races: Void Elf
+		{ 12516, { 51813, 53351, 53342, 53352, 51474, 53566 } },	-- Allied Races: Dark Iron Dwarf
+		{ 12451, { 49698, 49266, 50071 } },	-- Allied Races: Lightforged Draenei
+		{ 13157, { 54706, 55039, 55043, 54708, 54721, 54723, 54725, 54726, 54727, 54728, 54730, 54731, 54729, 54732, 55136, 54733, 54734, 54735, 54851, 53720 } },	-- Allied Races: Kul Tiran
+		{ 14012, { 58214, 57486, 57487, 57488, 57490, 57491, 57492, 57493, 57494, 57496, 57495, 57497 } },	-- Allied Races: Mechagnome
+		{ 13207, { 53870, 53889, 53890, 53891, 53892, 53893, 53894, 53895, 53897, 53898, 54026, 53899, 58087, 53901, 53900, 53902, 54027, 53903, 53904, 53905, 54036, 53906, 53907, 53908, 57448 } },	-- Allied Races: Vulpera
+		-- Garrison Shipyard Equipment Blueprints
+		{ 10372, { 38932 } }, -- Equipment Blueprint: Bilge Pump
+		{ 10373, { 39366 } }, -- Equipment Blueprint: Felsmoke Launchers
+		{ 10374, { 39356 } }, -- Equipment Blueprint: High Intensity Fog Lights
+		{ 10375, { 39365 } }, -- Equipment Blueprint: Ghostly Spyglass
+		{ 10376, { 39364 } }, -- Equipment Blueprint: Gyroscopic Internal Stabilizer
+		{ 10377, { 39363 } }, -- Equipment Blueprint: Ice Cutter
+		{ 10378, { 39355 } }, -- Equipment Blueprint: Trained Shark Tank
+		{ 10379, { 39360 } }, -- Equipment Blueprint: True Iron Rudder
+		-- stupid pet tamer breadcrumbs that are once per account (there may be more breadcrumbs for the questline that need to be added here)
+		-- these aren't really 'once per account' in that only a single character gets credit.
+		-- all 5 quests of the faction are marked completed account-wide, and the other 5 can never be completed on that account
+		-- { 6603, { 32008 } },	-- Taming Eastern Kingdoms / Audrey Burnhep (A)
+		-- { 6602, { 32009 } },	-- Taming Kalimdor / Varzok (H)
+	}) do
+		-- If you completed the achievement, then mark the associated quests.
+		collected = select(4, GetAchievementInfo(achievementQuests[1]));
+		for _,questID in ipairs(achievementQuests[2]) do
+			if collected then
+				-- Mark the quest as completed for the Account
+				accountWideData.Quests[questID] = 1;
+				if CompletedQuests[questID] then
+					-- Throw up a warning to report if this was already completed by another character
+					-- if accountWideData.OneTimeQuests[questID] and accountWideData.OneTimeQuests[questID] ~= app.GUID then
+					-- 	app.report("One-Time-Quest ID #" .. questID .. " was previously marked as completed, but is also completed on the current character!");
+					-- end
+					-- this once-per-account quest only counts for a specific character
+					accountWideData.OneTimeQuests[questID] = app.GUID;
+				end
+			else
+				-- otherwise indicate the one-time-nature of the quest
+				accountWideData.OneTimeQuests[questID] = false;
+			end
+		end
+	end
+	-- Cache some collection states for account wide quests that aren't actually granted account wide and can be flagged using a known sourceID.  (Secrets)
+	for _,appearanceQuests in ipairs({
+		-- Waist of Time isn't technically once-per-account, so don't fake the cached data
+		-- { 98614, { 52829, 52830, 52831, 52898, 52899, 52900, 52901, 52902, 52903, 52904, 52905, 52906, 52907, 52908, 52909, 52910, 52911, 52912, 52913, 52914, 52915, 52916, 52917, 52918, 52919, 52920, 52921, 52922, 52822, 52823, 52824, 52826} },	-- Waist of Time
+	}) do
+		-- If you have the appearance, then mark the associated quests.
+		local sourceInfo = C_TransmogCollection_GetSourceInfo(appearanceQuests[1]);
+		collected = sourceInfo.isCollected;
+		for _,questID in ipairs(appearanceQuests[2]) do
+			if collected then
+				-- Mark the quest as completed for the Account
+				accountWideData.Quests[questID] = 1;
+				if CompletedQuests[questID] then
+					-- Throw up a warning to report if this was already completed by another character
+					-- if accountWideData.OneTimeQuests[questID] and accountWideData.OneTimeQuests[questID] ~= app.GUID then
+					-- 	app.report("One-Time-Quest ID #" .. questID .. " was previously marked as completed, but is also completed on the current character!");
+					-- end
+					-- this once-per-account quest only counts for a specific character
+					accountWideData.OneTimeQuests[questID] = app.GUID;
+				end
+			else
+				-- otherwise indicate the one-time-nature of the quest
+				accountWideData.OneTimeQuests[questID] = false;
+			end
+		end
+	end
+	-- Cache some collection states for misc. once-per-account quests
+	for _,questID in ipairs({
+		-- BFA Mission/Outpost Quests which trigger locking Account-Wide HQTs
+		52478,	-- Hillcrest Pasture (Mission Completion)
+		52479,	-- Hillcrest Pasture (BFA Horde Outpost Unlock)
+		52313,	-- Mudfisher Cove (Mission Completion)
+		52314,	-- Mudfisher Cove (BFA Horde Outpost Unlock)
+		52221,	-- Stonefist Watch (Mission Completion)
+		52222,	-- Stonefist Watch (BFA Horde Outpost Unlock)
+		52776,	-- Stonetusk Watch (Mission Completion)
+		52777,	-- Stonetusk Watch (BFA Horde Outpost Unlock)
+		52275,	-- Swiftwind Post (Mission Completion)
+		52276,	-- Swiftwind Post (BFA Horde Outpost Unlock)
+		52319,	-- Windfall Cavern (Mission Completion)
+		52320,	-- Windfall Cavern (BFA Horde Outpost Unlock)
+		52005,	-- The Wolf's Den (Mission Completion)
+		52127,	-- The Wolf's Den (BFA Horde Outpost Unlock)
+		53151,	-- Wolves For The Den (Mission Completion)
+		53152,	-- Wolves For The Den (BFA Horde Outpost Upgrade)
+
+		53006,	-- Grimwatt's Crash (Mission Completion)
+		53007,	-- Grimwatt's Crash (BFA Alliance Outpost Unlock)
+		52801,	-- Veiled Grotto (Mission Completion)
+		52802,	-- Veiled Grotto (BFA Alliance Outpost Unlock)
+		52962,	-- Mistvine Ledge (Mission Completion)
+		52963,	-- Mistvine Ledge (BFA Alliance Outpost Unlock)
+		52851,	-- Mugamba Overlook (Mission Completion)
+		52852,	-- Mugamba Overlook (BFA Alliance Outpost Unlock)
+		52886,	-- Verdant Hollow (Mission Completion)
+		52888,	-- Verdant Hollow (BFA Alliance Outpost Unlock)
+		53043,	-- Vulture's Nest (Mission Completion)
+		53044,	-- Vulture's Nest (BFA Alliance Outpost Unlock)
+
+		-- These are BOTH once-per-account (single character) completion & shared account-wide lockout groups (likely due to locking Account-Wide HQTs)
+		53063,	-- A Mission of Unity (BFA Alliance WQ Unlock)
+		53064,	-- A Mission of Unity (BFA Horde WQ Unlock)
+
+		53061,	-- The Azerite Advantage (BFA Alliance Island Unlock / AWHQT 51994)
+		53062,	-- The Azerite Advantage (BFA Horde Island Unlock / AWHQT 51994)
+
+		53055,	-- Pushing Our Influence (BFA Horde PreQ for 1st Foothold)
+		53056,	-- Pushing Our Influence (BFA Alliance PreQ for 1st Foothold)
+
+		53207,	-- The Warfront Looms (BFA Horde Warfront Breadcrumb)
+		53175,	-- The Warfront Looms (BFA Alliance Warfront Breadcrumb)
+
+		-- Shard Labor
+		61229,	-- forging the Crystal Mallet of the Heralds
+		61191,	-- ringing the Vesper of the Silver Wind
+		61183,	-- looting the Gift of the Silver Wind
+
+		-- Ve'nari Items (The Quest Bonus is Accwide but quests itself are not accwide)
+		63193,	-- Bangle of Seniority
+		63523,	-- Broker Traversam Enhancer
+		63183, 	-- Extradimensional Pockets
+		63201,	-- Loupe of Unusual Charm
+		61144,	-- Possibility Matrix
+		63200,	-- Rang Insignia: Acquisitionist
+		63204,	-- Ritual Prism of Fortune
+		63202,	-- Vessel of Unfortunate Spirits
+
+		-- Blanchy (reported as Blanchy no longer shows to alts on an account which has obtained the mount)
+		-- TODO: In future, it would be nice if these quests could be flagged unobtainable based on the learned spellID of the mount
+		62038,	-- Handful of Oats
+		62042,	-- Grooming Brush
+		62047,	-- Sturdy Horseshoe
+		62049,	-- Bucket of Clean Water
+		62048,	-- Comfortable Saddle Blanket
+		62050,	-- Dredhollow Apple
+
+		-- Druid forms
+		65047, 	-- Mark of the Nightwing Raven
+		-- etc.
+	}) do
+		-- If this Character has the Quest completed and it is not marked as completed for Account or not for specific Character
+		if CompletedQuests[questID] then
+			-- Throw up a warning to report if this was already completed by another character
+			-- if accountWideData.OneTimeQuests[questID] and accountWideData.OneTimeQuests[questID] ~= app.GUID then
+			-- 	app.report("One-Time-Quest ID #" .. questID .. " was previously marked as completed, but is also completed on the current character!");
+			-- end
+			-- Mark the quest as completed for the Account
+			accountWideData.Quests[questID] = 1;
+			-- Mark the character which completed the Quest
+			accountWideData.OneTimeQuests[questID] = app.GUID;
+		elseif not accountWideData.OneTimeQuests[questID] then
+			-- Mark that this Quest is a OneTimeQuest which hasn't been determined as completed by any Character yet
+			accountWideData.OneTimeQuests[questID] = false;
+		end
+	end
+
+	-- if we ever erroneously add an account-wide quest and find out it isn't (or Blizzard actually fixes it to give account-wide credit)
+	-- put it here so it reverts back to being handled as a normal quest
+	for _,questID in ipairs({
+		32008,	-- Audrey Burnhep (A)
+		32009,	-- Varzok (H)
+	}) do
+		accountWideData.OneTimeQuests[questID] = nil;
+	end
+
+	local anyComplete;
+	-- Check for fixing Blizzard's incompetence in consistency for shared account-wide quest eligibility which is only granted to some of the shared account-wide quests
+	for _,questGroup in ipairs({
+		{ 32008, 32009, 31878, 31879, 31880, 31881, 31882, 31883, 31884, 31885, },	-- Pet Battle Intro quests
+		{
+			53063, 	-- A Mission of Unity (BFA Alliance WQ Unlock)
+			53064, 	-- A Mission of Unity (BFA Horde WQ Unlock)
+		},
+		{
+			53061, 	-- The Azerite Advantage (BFA Alliance Island Unlock / AWHQT 51994)
+			53062,  -- The Azerite Advantage (BFA Horde Island Unlock / AWHQT 51994)
+		},
+		{
+			53055, 	-- Pushing Our Influence (BFA Horde PreQ for 1st Foothold)
+			53056,	-- Pushing Our Influence (BFA Alliance PreQ for 1st Foothold)
+		},
+		{
+			53207,	-- The Warfront Looms (BFA Horde Warfront Breadcrumb)
+			53175,	-- The Warfront Looms (BFA Alliance Warfront Breadcrumb)
+		},
+		{
+			31977 ,	-- The Returning Champion (Horde Winterspring Pass Pet Battle Quest)
+			31975 ,	-- The Returning Champion (Alliance Winterspring Pass Pet Battle Quest)
+		},
+		{
+			31980 ,	-- The Returning Champion (Horde Deadwind Pass Pet Battle Quest)
+			31976 ,	-- The Returning Champion (Alliance Deadwind Pass Pet Battle Quest)
+		},
+	}) do
+		for _,questID in ipairs(questGroup) do
+			-- If this Character has the Quest completed
+			if CompletedQuests[questID] then
+				-- Mark the quest as completed for the Account
+				accountWideData.Quests[questID] = 1;
+				anyComplete = true;
+			end
+		end
+		-- if any of the quest group is considered complete, then the rest need to be considered 'complete' as well since they can never be actually completed on the account
+		if anyComplete then
+			for _,questID in ipairs(questGroup) do
+				-- Mark the quest completion since it's not 'really' completed
+				if not accountWideData.Quests[questID] then
+					accountWideData.Quests[questID] = 2;
+				end
+			end
+		end
+		anyComplete = nil;
+	end
+
+	wipe(DirtyQuests);
+
+	app:RegisterEvent("QUEST_LOG_UPDATE");
+	app:RegisterEvent("QUEST_TURNED_IN");
+	app:RegisterEvent("QUEST_ACCEPTED");
+	app:RegisterEvent("QUEST_REMOVED");
+	app:RegisterEvent("HEIRLOOMS_UPDATED");
+	app:RegisterEvent("ARTIFACT_UPDATE");
+	app:RegisterEvent("CRITERIA_UPDATE");
+	app:RegisterEvent("TOYS_UPDATED");
+	app:RegisterEvent("LOOT_OPENED");
+
+	local needRefresh;
+	-- NOTE: The auto refresh only happens once per version
+	if not accountWideData.LastAutoRefresh or (accountWideData.LastAutoRefresh ~= app.Version) then
+		accountWideData.LastAutoRefresh = app.Version;
+		needRefresh = true;
+	end
+
+	-- check if we are in a Party Sync session when loading in
+	app.IsInPartySync = C_QuestSession.Exists();
+
+	-- finally can say the app is ready
+	-- even though RefreshData starts a coroutine, this failed to get set one time when called after the coroutine started...
+	app.IsReady = true;
+	-- print("ATT is Ready!");
+
+	RefreshSaves();
+
+	-- Let a frame go before hitting the initial refresh to make sure as much time as possible is allowed for the operation
+	-- print("Yield prior to Refresh")
+	coroutine.yield();
+
+	if needRefresh then
+		-- print("Force Refresh")
+		-- collection refresh includes data refresh
+		RefreshCollections();
+	else
+		-- print("Refresh")
+		app:RefreshData(false);
+	end
+
+	-- Setup the use of profiles after a short delay to ensure that the layout window positions are collected
+	if not AllTheThingsProfiles then DelayedCallback(app.SetupProfiles, 5); end
+
+	-- do a settings apply to ensure ATT windows which have now been created, are moved according to the current Profile
+	app.Settings:ApplyProfile();
+
+	-- now that the addon is ready, make sure the minilist is updated to the current location if necessary
+	DelayedCallback(app.LocationTrigger, 3);
 end
 
 -- Slash Command List
@@ -20564,8 +21082,6 @@ SlashCmdList["AllTheThings"] = function(cmd)
 				print("Harvesting...");
 				local totalItems = 200000;
 				local itemsPerYield = 25;
-				local count = 0;
-				local retries = 0;
 				local counts = {};
 				local items = GetDataMember("ItemDB", {});
 				for itemID=1,totalItems do
@@ -20858,9 +21374,7 @@ end)();
 app:RegisterEvent("ADDON_LOADED");
 app:RegisterEvent("BOSS_KILL");
 app:RegisterEvent("CHAT_MSG_ADDON");
-app:RegisterEvent("CRITERIA_UPDATE");
 app:RegisterEvent("PLAYER_ENTERING_WORLD");
-app:RegisterEvent("VARIABLES_LOADED");
 app:RegisterEvent("NEW_PET_ADDED");
 app:RegisterEvent("PET_JOURNAL_PET_DELETED");
 app:RegisterEvent("PLAYER_DIFFICULTY_CHANGED");
@@ -20890,612 +21404,6 @@ app.events.ARTIFACT_UPDATE = function(...)
 		end
 	end
 end
-app.events.VARIABLES_LOADED = function()
-	local function LocalizeGlobal(globalName, init)
-		local val = _G[globalName];
-		if init and not val then
-			val = {};
-			_G[globalName] = val;
-		end
-		return val;
-	end
-
-	local v = GetAddOnMetadata("AllTheThings", "Version");
-	-- if placeholder exists as the Version tag, then assume we are not on the Release version
-	if string.match(v, "version") then
-		app.Version = "[Git]";
-		-- adjust the Setting screen version display since it was already set from metadata
-		if app.Settings.version then
-			app.Settings.version:SetText("[Git]");
-		end
-	else
-		app.Version = "v" .. v;
-	end
-
-	AllTheThingsAD = LocalizeGlobal("AllTheThingsAD", true);	-- For account-wide data.
-	-- Cache the Localized Category Data
-	AllTheThingsAD.LocalizedCategoryNames = setmetatable(AllTheThingsAD.LocalizedCategoryNames or {}, { __index = app.CategoryNames });
-	app.CategoryNames = nil;
-
-	-- Cache the Localized Flight Path Data
-	--AllTheThingsAD.LocalizedFlightPathDB = setmetatable(AllTheThingsAD.LocalizedFlightPathDB or {}, { __index = app.FlightPathDB });
-	--app.FlightPathDB = nil;	-- TODO: Deprecate this.
-
-	-- Cache information about the player.
-	local class, classID = UnitClassBase("player");
-	local raceName, race, raceID = UnitRace("player");
-	app.Class = class;
-	app.ClassIndex = classID;
-	app.Level = UnitLevel("player");
-	local raceIndex = app.RaceDB[race];
-	if type(raceIndex) == "table" then
-		local factionGroup = UnitFactionGroup("player");
-		raceIndex = raceIndex[factionGroup];
-	end
-	app.Race = race;
-	app.RaceID = raceID;
-	app.RaceIndex = raceIndex;
-	-- 1 = unknown, 2 = male, 3 = female
-	app.Gender = UnitSex("player");
-	local name, realm = UnitName("player");
-	local className = GetClassInfo(classID);
-	app.GUID = UnitGUID("player");
-	app.Me = "|c" .. RAID_CLASS_COLORS[class].colorStr .. name .. "-" .. (realm or GetRealmName()) .. "|r";
-	app.ClassName = "|c" .. RAID_CLASS_COLORS[class].colorStr .. className .. "|r";
-
-	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(L["TITLE"], {
-		type = "launcher",
-		icon = app.asset("logo_32x32"),
-		OnClick = MinimapButtonOnClick,
-		OnEnter = MinimapButtonOnEnter,
-		OnLeave = MinimapButtonOnLeave,
-	});
-
-	-- Character Data Storage
-	local characterData = LocalizeGlobal("ATTCharacterData", true);
-	local currentCharacter = characterData[app.GUID];
-	if not currentCharacter then
-		currentCharacter = {};
-		characterData[app.GUID] = currentCharacter;
-	end
-	if not currentCharacter.text then currentCharacter.text = app.Me; end
-	if not currentCharacter.name and name then currentCharacter.name = name; end
-	if not currentCharacter.realm and realm then currentCharacter.realm = realm; end
-	if not currentCharacter.guid and app.GUID then currentCharacter.guid = app.GUID; end
-	if not currentCharacter.lvl and app.Level then currentCharacter.lvl = app.Level; end
-	if not currentCharacter.factionID and app.FactionID then currentCharacter.factionID = app.FactionID; end
-	if not currentCharacter.classID and app.ClassIndex then currentCharacter.classID = app.ClassIndex; end
-	if not currentCharacter.raceID and app.RaceIndex then currentCharacter.raceID = app.RaceIndex; end
-	if not currentCharacter.class and class then currentCharacter.class = class; end
-	if not currentCharacter.race and race then currentCharacter.race = race; end
-	if not currentCharacter.Achievements then currentCharacter.Achievements = {}; end
-	if not currentCharacter.ArtifactRelicItemLevels then currentCharacter.ArtifactRelicItemLevels = {}; end
-	if not currentCharacter.AzeriteEssenceRanks then currentCharacter.AzeriteEssenceRanks = {}; end
-	if not currentCharacter.Buildings then currentCharacter.Buildings = {}; end
-	if not currentCharacter.CustomCollects then currentCharacter.CustomCollects = {}; end
-	if not currentCharacter.Deaths then currentCharacter.Deaths = 0; end
-	if not currentCharacter.Factions then currentCharacter.Factions = {}; end
-	if not currentCharacter.FlightPaths then currentCharacter.FlightPaths = {}; end
-	if not currentCharacter.Followers then currentCharacter.Followers = {}; end
-	if not currentCharacter.Lockouts then currentCharacter.Lockouts = {}; end
-	if not currentCharacter.Quests then currentCharacter.Quests = {}; end
-	if not currentCharacter.Spells then currentCharacter.Spells = {}; end
-	if not currentCharacter.Titles then currentCharacter.Titles = {}; end
-	if not currentCharacter.RuneforgeLegendaries then currentCharacter.RuneforgeLegendaries = {}; end
-	if not currentCharacter.Conduits then currentCharacter.Conduits = {}; end
-	currentCharacter.lastPlayed = time();
-	app.CurrentCharacter = currentCharacter;
-
-	-- Convert over the deprecated Characters table.
-	local characters = GetDataMember("Characters");
-	if characters then
-		for guid,text in pairs(characters) do
-			if not characterData[guid] then
-				characterData[guid] = { ["text"] = text };
-			end
-		end
-	end
-
-	-- Convert over the deprecated AzeriteEssenceRanksPerCharacter table.
-	local azeriteEssenceRanksPerCharacter = GetDataMember("AzeriteEssenceRanksPerCharacter");
-	if azeriteEssenceRanksPerCharacter then
-		for guid,data in pairs(azeriteEssenceRanksPerCharacter) do
-			local character = characterData[guid];
-			if character then character.AzeriteEssenceRanks = data; end
-		end
-	end
-
-	-- Convert over the deprecated CollectedBuildingsPerCharacter table.
-	local collectedBuildingsPerCharacter = GetDataMember("CollectedBuildingsPerCharacter");
-	if collectedBuildingsPerCharacter then
-		for guid,buildings in pairs(collectedBuildingsPerCharacter) do
-			local character = characterData[guid];
-			if character then character.Buildings = buildings; end
-		end
-	end
-
-	-- Convert over the deprecated DeathsPerCharacter table.
-	local deathsPerCharacter = GetDataMember("DeathsPerCharacter");
-	if deathsPerCharacter then
-		for guid,deaths in pairs(deathsPerCharacter) do
-			local character = characterData[guid];
-			if character then character.Deaths = deaths; end
-		end
-	end
-
-	-- Convert over the deprecated CollectedFactionsPerCharacter table.
-	local collectedFactionsPerCharacter = GetDataMember("CollectedFactionsPerCharacter");
-	if collectedFactionsPerCharacter then
-		for guid,factions in pairs(collectedFactionsPerCharacter) do
-			local character = characterData[guid];
-			if character then character.Factions = factions; end
-		end
-	end
-
-	-- Convert over the deprecated CollectedFlightPathsPerCharacter table.
-	local collectedFlightPathsPerCharacter = GetDataMember("CollectedFlightPathsPerCharacter");
-	if collectedFlightPathsPerCharacter then
-		for guid,flightPaths in pairs(collectedFlightPathsPerCharacter) do
-			local character = characterData[guid];
-			if character then character.FlightPaths = flightPaths; end
-		end
-	end
-
-	-- Convert over the deprecated CollectedFollowersPerCharacter table.
-	local collectedFollowersPerCharacter = GetDataMember("CollectedFollowersPerCharacter");
-	if collectedFollowersPerCharacter then
-		for guid,followers in pairs(collectedFollowersPerCharacter) do
-			local character = characterData[guid];
-			if character then character.Followers = followers; end
-		end
-	end
-
-	-- Convert over the deprecated lockouts table.
-	local lockouts = GetDataMember("lockouts");
-	if lockouts then
-		for guid,locks in pairs(lockouts) do
-			local character = characterData[guid];
-			if character then character.Lockouts = locks; end
-		end
-	end
-
-	-- Convert over the deprecated CollectedQuestsPerCharacter table.
-	local collectedQuestsPerCharacter = GetDataMember("CollectedQuestsPerCharacter");
-	if collectedQuestsPerCharacter then
-		for guid,quests in pairs(collectedQuestsPerCharacter) do
-			local character = characterData[guid];
-			if character then character.Quests = quests; end
-		end
-	end
-
-	-- Convert over the deprecated CollectedSpellsPerCharacter table.
-	local collectedSpellsPerCharacter = GetDataMember("CollectedSpellsPerCharacter");
-	if collectedSpellsPerCharacter then
-		for guid,spells in pairs(collectedSpellsPerCharacter) do
-			local character = characterData[guid];
-			if character then character.Spells = spells; end
-		end
-	end
-
-	-- Convert over the deprecated CollectedTitlesPerCharacter table.
-	local collectedTitlesPerCharacter = GetDataMember("CollectedTitlesPerCharacter");
-	if collectedTitlesPerCharacter then
-		for guid,titles in pairs(collectedTitlesPerCharacter) do
-			local character = characterData[guid];
-			if character then character.Titles = titles; end
-		end
-	end
-
-	-- Account Wide Data Storage
-	ATTAccountWideData = LocalizeGlobal("ATTAccountWideData", true);
-	local accountWideData = ATTAccountWideData;
-	if not accountWideData.Achievements then accountWideData.Achievements = {}; end
-	if not accountWideData.Artifacts then accountWideData.Artifacts = {}; end
-	if not accountWideData.AzeriteEssenceRanks then accountWideData.AzeriteEssenceRanks = {}; end
-	if not accountWideData.Buildings then accountWideData.Buildings = {}; end
-	if not accountWideData.Factions then accountWideData.Factions = {}; end
-	if not accountWideData.FactionBonus then accountWideData.FactionBonus = {}; end
-	if not accountWideData.FlightPaths then accountWideData.FlightPaths = {}; end
-	if not accountWideData.Followers then accountWideData.Followers = {}; end
-	if not accountWideData.HeirloomRanks then accountWideData.HeirloomRanks = {}; end
-	if not accountWideData.Illusions then accountWideData.Illusions = {}; end
-	if not accountWideData.Quests then accountWideData.Quests = {}; end
-	if not accountWideData.Sources then accountWideData.Sources = {}; end
-	if not accountWideData.Spells then accountWideData.Spells = {}; end
-	if not accountWideData.Titles then accountWideData.Titles = {}; end
-	if not accountWideData.Toys then accountWideData.Toys = {}; end
-	if not accountWideData.OneTimeQuests then accountWideData.OneTimeQuests = {}; end
-	if not accountWideData.RuneforgeLegendaries then accountWideData.RuneforgeLegendaries = {}; end
-	if not accountWideData.Conduits then accountWideData.Conduits = {}; end
-
-	-- Update the total account wide death counter.
-	local deaths = 0;
-	for guid,character in pairs(characterData) do
-		if character and character.Deaths and character.Deaths > 0 then
-			deaths = deaths + character.Deaths;
-		end
-	end
-	accountWideData.Deaths = deaths;
-
-	-- Convert over the deprecated account wide tables.
-	local data = GetDataMember("CollectedAchievements");
-	if data then accountWideData.Achievements = data; end
-	data = GetDataMember("CollectedArtifacts");
-	if data then
-		if not data.V then
-			wipe(data);
-			C_Timer.After(30, function() app.print(L["ARTIFACT_CACHE_OUT_OF_DATE"]); end);
-		else
-			data.V = nil;
-		end
-		accountWideData.Artifacts = data;
-	elseif accountWideData.Artifacts.V then
-		accountWideData.Artifacts.V = nil;
-	end
-	data = GetDataMember("AzeriteEssenceRanks");
-	if data then accountWideData.AzeriteEssenceRanks = data; end
-	data = GetDataMember("CollectedBuildings");
-	if data then accountWideData.Buildings = data; end
-	data = GetDataMember("CollectedFactions");
-	if data then accountWideData.Factions = data; end
-	data = GetDataMember("CollectedFactionBonusReputation");
-	if data then accountWideData.FactionBonus = data; end
-	data = GetDataMember("CollectedFlightPaths");
-	if data then accountWideData.FlightPaths = data; end
-	data = GetDataMember("CollectedFollowers");
-	if data then accountWideData.Followers = data; end
-	data = GetDataMember("HeirloomUpgradeRanks");
-	if data then accountWideData.HeirloomRanks = data; end
-	data = GetDataMember("CollectedIllusions");
-	if data then accountWideData.Illusions = data; end
-	data = GetDataMember("CollectedQuests");
-	if data then accountWideData.Quests = data; end
-	data = GetDataMember("CollectedSources");
-	if data then accountWideData.Sources = data; end
-	data = GetDataMember("CollectedSpells");
-	if data then accountWideData.Spells = data; end
-	data = GetDataMember("CollectedTitles");
-	if data then accountWideData.Titles = data; end
-	data = GetDataMember("CollectedToys");
-	if data then
-		-- Rebuild toy collection. This should only happen once to fix toy collection states from a bug prior 14.January.2020
-		if not GetDataMember("ToyCacheRebuilt") then wipe(data); end
-		accountWideData.Toys = data;
-	end
-
-	-- clean up 'LockedWindows' (now stored in Profiles)
-	local lockedWindows = GetDataMember("LockedWindows");
-	if lockedWindows then
-		for name,_ in pairs(lockedWindows) do
-			local window = app.Windows[name];
-			if window then
-				window.isLocked = true;
-				window:StorePosition();
-			end
-		end
-	end
-
-	-- Clean up settings
-	local oldsettings = {};
-	for i,key in ipairs({
-		"LocalizedCategoryNames",
-		--"LocalizedFlightPathDB",
-		"Position",
-		"RandomSearchFilter",
-		"Reagents",
-		"SeasonalFilters",
-		"UnobtainableItemFilters",
-	}) do
-		rawset(oldsettings, key, rawget(AllTheThingsAD, key));
-	end
-	wipe(AllTheThingsAD);
-	for key,value in pairs(oldsettings) do
-		rawset(AllTheThingsAD, key, value);
-	end
-
-	-- Init the Settings before working with data
-	app.Settings:Initialize();
-
-	-- Attempt to register for the addon message prefix.
-	C_ChatInfo.RegisterAddonMessagePrefix("ATT");
-
-	-- Verify that reagent cache is of the correct format by checking a special key
-	local reagentCache, reagentCacheVer = app.GetDataMember("Reagents", {}), 2;
-	if not reagentCache[-1] or reagentCache[-1] < reagentCacheVer then
-		C_Timer.After(30, function() app.print(L["REAGENT_CACHE_OUT_OF_DATE"]); end);
-		wipe(reagentCache);
-	end
-	if reagentCache then
-		reagentCache[-1] = reagentCacheVer;
-		-- TODO: should these be converted to utilize 'cost' instead of being pseudo-crafted?
-		local craftedItem = { {}, {[31890] = 1} };	-- Blessings Deck
-		for i,itemID in ipairs({ 31882, 31889, 31888, 31885, 31884, 31887, 31886, 31883 }) do reagentCache[itemID] = craftedItem; end
-		craftedItem = { {}, {[31907] = 1} };	-- Furies Deck
-		for i,itemID in ipairs({ 31901, 31909, 31908, 31904, 31903, 31906, 31905, 31902 }) do reagentCache[itemID] = craftedItem; end
-		craftedItem = { {}, {[31914] = 1} };	-- Lunacy Deck
-		for i,itemID in ipairs({ 31910, 31918, 31917, 31913, 31912, 31916, 31915, 31911 }) do reagentCache[itemID] = craftedItem; end
-		craftedItem = { {}, {[31891] = 1} };	-- Storms Deck
-		for i,itemID in ipairs({ 31892, 31900, 31899, 31895, 31894, 31898, 31896, 31893 }) do reagentCache[itemID] = craftedItem; end
-	end
-
-	StartCoroutine("DataLoad", function()
-		-- First, load the addon data
-		app:GetDataCache();
-
-		-- Then wait for the player to actually be 'in the game' to do further logic
-		while not app.InWorld do coroutine.yield(); end
-
-		-- Harvest the Spell IDs for Conversion.
-		app:UnregisterEvent("PET_JOURNAL_LIST_UPDATE");
-
-		-- Mark all previously completed quests.
-		QueryCompletedQuests();
-
-		-- Current character collections shouldn't use '2' ever... so clear any 'inaccurate' data
-		local currentQuestsCache = currentCharacter.Quests;
-		for questID,completion in pairs(currentQuestsCache) do
-			if completion == 2 then currentQuestsCache[questID] = nil; end
-		end
-
-		-- Cache some collection states for account wide quests that aren't actually granted account wide and can be flagged using an achievementID. (Allied Races)
-		local collected;
-		-- achievement collection state isn't readily available when VARIABLES_LOADED fires, so we do it here to ensure we get a valid state for matching
-		for _,achievementQuests in ipairs({
-			{ 12453, { 49973, 49613, 49354, 49614 } },	-- Allied Races: Nightborne
-			{ 12517, { 53466, 53467, 53354, 53353, 53355, 52942, 52943, 52945, 52955, 51479 } },	-- Allied Races: Mag'har
-			{ 13156, { 53831, 53823, 53824, 54419, 53826, 54301, 54925, 54300, 53825, 53827, 53828, 54031, 54033, 54032, 54034, 53830, 53719 } },	-- Allied Races: Zandalari Troll
-			{ 12452, { 48066, 48067, 49756, 48079, 41884, 41764, 48185, 41799, 48190, 41800, 48434, 41815, 41840, 41882, 41841, 48403, 48433 } },	-- Allied Races: Highmountain Tauren
-			{ 12450, { 49787, 48962 } },	-- Allied Races: Void Elf
-			{ 12516, { 51813, 53351, 53342, 53352, 51474, 53566 } },	-- Allied Races: Dark Iron Dwarf
-			{ 12451, { 49698, 49266, 50071 } },	-- Allied Races: Lightforged Draenei
-			{ 13157, { 54706, 55039, 55043, 54708, 54721, 54723, 54725, 54726, 54727, 54728, 54730, 54731, 54729, 54732, 55136, 54733, 54734, 54735, 54851, 53720 } },	-- Allied Races: Kul Tiran
-			{ 14012, { 58214, 57486, 57487, 57488, 57490, 57491, 57492, 57493, 57494, 57496, 57495, 57497 } },	-- Allied Races: Mechagnome
-			{ 13207, { 53870, 53889, 53890, 53891, 53892, 53893, 53894, 53895, 53897, 53898, 54026, 53899, 58087, 53901, 53900, 53902, 54027, 53903, 53904, 53905, 54036, 53906, 53907, 53908, 57448 } },	-- Allied Races: Vulpera
-			-- Garrison Shipyard Equipment Blueprints
-			{ 10372, { 38932 } }, -- Equipment Blueprint: Bilge Pump
-			{ 10373, { 39366 } }, -- Equipment Blueprint: Felsmoke Launchers
-			{ 10374, { 39356 } }, -- Equipment Blueprint: High Intensity Fog Lights
-			{ 10375, { 39365 } }, -- Equipment Blueprint: Ghostly Spyglass
-			{ 10376, { 39364 } }, -- Equipment Blueprint: Gyroscopic Internal Stabilizer
-			{ 10377, { 39363 } }, -- Equipment Blueprint: Ice Cutter
-			{ 10378, { 39355 } }, -- Equipment Blueprint: Trained Shark Tank
-			{ 10379, { 39360 } }, -- Equipment Blueprint: True Iron Rudder
-			-- stupid pet tamer breadcrumbs that are once per account (there may be more breadcrumbs for the questline that need to be added here)
-			-- these aren't really 'once per account' in that only a single character gets credit.
-			-- all 5 quests of the faction are marked completed account-wide, and the other 5 can never be completed on that account
-			-- { 6603, { 32008 } },	-- Taming Eastern Kingdoms / Audrey Burnhep (A)
-			-- { 6602, { 32009 } },	-- Taming Kalimdor / Varzok (H)
-		}) do
-			-- If you completed the achievement, then mark the associated quests.
-			collected = select(4, GetAchievementInfo(achievementQuests[1]));
-			for _,questID in ipairs(achievementQuests[2]) do
-				if collected then
-					-- Mark the quest as completed for the Account
-					accountWideData.Quests[questID] = 1;
-					if CompletedQuests[questID] then
-						-- Throw up a warning to report if this was already completed by another character
-						-- if accountWideData.OneTimeQuests[questID] and accountWideData.OneTimeQuests[questID] ~= app.GUID then
-						-- 	app.report("One-Time-Quest ID #" .. questID .. " was previously marked as completed, but is also completed on the current character!");
-						-- end
-						-- this once-per-account quest only counts for a specific character
-						accountWideData.OneTimeQuests[questID] = app.GUID;
-					end
-				else
-					-- otherwise indicate the one-time-nature of the quest
-					accountWideData.OneTimeQuests[questID] = false;
-				end
-			end
-		end
-		-- Cache some collection states for account wide quests that aren't actually granted account wide and can be flagged using a known sourceID.  (Secrets)
-		for _,appearanceQuests in ipairs({
-			-- Waist of Time isn't technically once-per-account, so don't fake the cached data
-			-- { 98614, { 52829, 52830, 52831, 52898, 52899, 52900, 52901, 52902, 52903, 52904, 52905, 52906, 52907, 52908, 52909, 52910, 52911, 52912, 52913, 52914, 52915, 52916, 52917, 52918, 52919, 52920, 52921, 52922, 52822, 52823, 52824, 52826} },	-- Waist of Time
-		}) do
-			-- If you have the appearance, then mark the associated quests.
-			local sourceInfo = C_TransmogCollection_GetSourceInfo(appearanceQuests[1]);
-			collected = sourceInfo.isCollected;
-			for _,questID in ipairs(appearanceQuests[2]) do
-				if collected then
-					-- Mark the quest as completed for the Account
-					accountWideData.Quests[questID] = 1;
-					if CompletedQuests[questID] then
-						-- Throw up a warning to report if this was already completed by another character
-						-- if accountWideData.OneTimeQuests[questID] and accountWideData.OneTimeQuests[questID] ~= app.GUID then
-						-- 	app.report("One-Time-Quest ID #" .. questID .. " was previously marked as completed, but is also completed on the current character!");
-						-- end
-						-- this once-per-account quest only counts for a specific character
-						accountWideData.OneTimeQuests[questID] = app.GUID;
-					end
-				else
-					-- otherwise indicate the one-time-nature of the quest
-					accountWideData.OneTimeQuests[questID] = false;
-				end
-			end
-		end
-		-- Cache some collection states for misc. once-per-account quests
-		for _,questID in ipairs({
-			-- BFA Mission/Outpost Quests which trigger locking Account-Wide HQTs
-			52478,	-- Hillcrest Pasture (Mission Completion)
-			52479,	-- Hillcrest Pasture (BFA Horde Outpost Unlock)
-			52313,	-- Mudfisher Cove (Mission Completion)
-			52314,	-- Mudfisher Cove (BFA Horde Outpost Unlock)
-			52221,	-- Stonefist Watch (Mission Completion)
-			52222,	-- Stonefist Watch (BFA Horde Outpost Unlock)
-			52776,	-- Stonetusk Watch (Mission Completion)
-			52777,	-- Stonetusk Watch (BFA Horde Outpost Unlock)
-			52275,	-- Swiftwind Post (Mission Completion)
-			52276,	-- Swiftwind Post (BFA Horde Outpost Unlock)
-			52319,	-- Windfall Cavern (Mission Completion)
-			52320,	-- Windfall Cavern (BFA Horde Outpost Unlock)
-			52005,	-- The Wolf's Den (Mission Completion)
-			52127,	-- The Wolf's Den (BFA Horde Outpost Unlock)
-			53151,	-- Wolves For The Den (Mission Completion)
-			53152,	-- Wolves For The Den (BFA Horde Outpost Upgrade)
-
-			53006,	-- Grimwatt's Crash (Mission Completion)
-			53007,	-- Grimwatt's Crash (BFA Alliance Outpost Unlock)
-			52801,	-- Veiled Grotto (Mission Completion)
-			52802,	-- Veiled Grotto (BFA Alliance Outpost Unlock)
-			52962,	-- Mistvine Ledge (Mission Completion)
-			52963,	-- Mistvine Ledge (BFA Alliance Outpost Unlock)
-			52851,	-- Mugamba Overlook (Mission Completion)
-			52852,	-- Mugamba Overlook (BFA Alliance Outpost Unlock)
-			52886,	-- Verdant Hollow (Mission Completion)
-			52888,	-- Verdant Hollow (BFA Alliance Outpost Unlock)
-			53043,	-- Vulture's Nest (Mission Completion)
-			53044,	-- Vulture's Nest (BFA Alliance Outpost Unlock)
-
-			-- These are BOTH once-per-account (single character) completion & shared account-wide lockout groups (likely due to locking Account-Wide HQTs)
-			53063,	-- A Mission of Unity (BFA Alliance WQ Unlock)
-			53064,	-- A Mission of Unity (BFA Horde WQ Unlock)
-
-			53061,	-- The Azerite Advantage (BFA Alliance Island Unlock / AWHQT 51994)
-			53062,	-- The Azerite Advantage (BFA Horde Island Unlock / AWHQT 51994)
-
-			53055,	-- Pushing Our Influence (BFA Horde PreQ for 1st Foothold)
-			53056,	-- Pushing Our Influence (BFA Alliance PreQ for 1st Foothold)
-
-			53207,	-- The Warfront Looms (BFA Horde Warfront Breadcrumb)
-			53175,	-- The Warfront Looms (BFA Alliance Warfront Breadcrumb)
-
-			-- Shard Labor
-			61229,	-- forging the Crystal Mallet of the Heralds
-			61191,	-- ringing the Vesper of the Silver Wind
-			61183,	-- looting the Gift of the Silver Wind
-
-			-- Ve'nari Items (The Quest Bonus is Accwide but quests itself are not accwide)
-			63193,	-- Bangle of Seniority
-			63523,	-- Broker Traversam Enhancer
-			63183, 	-- Extradimensional Pockets
-			63201,	-- Loupe of Unusual Charm
-			61144,	-- Possibility Matrix
-			63200,	-- Rang Insignia: Acquisitionist
-			63204,	-- Ritual Prism of Fortune
-			63202,	-- Vessel of Unfortunate Spirits
-			-- etc.
-		}) do
-			-- If this Character has the Quest completed and it is not marked as completed for Account or not for specific Character
-			if CompletedQuests[questID] then
-				-- Throw up a warning to report if this was already completed by another character
-				-- if accountWideData.OneTimeQuests[questID] and accountWideData.OneTimeQuests[questID] ~= app.GUID then
-				-- 	app.report("One-Time-Quest ID #" .. questID .. " was previously marked as completed, but is also completed on the current character!");
-				-- end
-				-- Mark the quest as completed for the Account
-				accountWideData.Quests[questID] = 1;
-				-- Mark the character which completed the Quest
-				accountWideData.OneTimeQuests[questID] = app.GUID;
-			elseif not accountWideData.OneTimeQuests[questID] then
-				-- Mark that this Quest is a OneTimeQuest which hasn't been determined as completed by any Character yet
-				accountWideData.OneTimeQuests[questID] = false;
-			end
-		end
-
-		-- if we ever erroneously add an account-wide quest and find out it isn't (or Blizzard actually fixes it to give account-wide credit)
-		-- put it here so it reverts back to being handled as a normal quest
-		for _,questID in ipairs({
-			32008,	-- Audrey Burnhep (A)
-			32009,	-- Varzok (H)
-		}) do
-			accountWideData.OneTimeQuests[questID] = nil;
-		end
-
-		local anyComplete;
-		-- Check for fixing Blizzard's incompetence in consistency for shared account-wide quest eligibility which is only granted to some of the shared account-wide quests
-		for _,questGroup in ipairs({
-			{ 32008, 32009, 31878, 31879, 31880, 31881, 31882, 31883, 31884, 31885, },	-- Pet Battle Intro quests
-			{
-				53063, 	-- A Mission of Unity (BFA Alliance WQ Unlock)
-				53064, 	-- A Mission of Unity (BFA Horde WQ Unlock)
-			},
-			{
-				53061, 	-- The Azerite Advantage (BFA Alliance Island Unlock / AWHQT 51994)
-				53062,  -- The Azerite Advantage (BFA Horde Island Unlock / AWHQT 51994)
-			},
-			{
-				53055, 	-- Pushing Our Influence (BFA Horde PreQ for 1st Foothold)
-				53056,	-- Pushing Our Influence (BFA Alliance PreQ for 1st Foothold)
-			},
-			{
-				53207,	-- The Warfront Looms (BFA Horde Warfront Breadcrumb)
-				53175,	-- The Warfront Looms (BFA Alliance Warfront Breadcrumb)
-			},
-			{
-				31977 ,	-- The Returning Champion (Horde Winterspring Pass Pet Battle Quest)
-				31975 ,	-- The Returning Champion (Alliance Winterspring Pass Pet Battle Quest)
-			},
-			{
-				31980 ,	-- The Returning Champion (Horde Deadwind Pass Pet Battle Quest)
-				31976 ,	-- The Returning Champion (Alliance Deadwind Pass Pet Battle Quest)
-			},
-		}) do
-			for _,questID in ipairs(questGroup) do
-				-- If this Character has the Quest completed
-				if CompletedQuests[questID] then
-					-- Mark the quest as completed for the Account
-					accountWideData.Quests[questID] = 1;
-					anyComplete = true;
-				end
-			end
-			-- if any of the quest group is considered complete, then the rest need to be considered 'complete' as well since they can never be actually completed on the account
-			if anyComplete then
-				for _,questID in ipairs(questGroup) do
-					-- Mark the quest completion since it's not 'really' completed
-					if not accountWideData.Quests[questID] then
-						accountWideData.Quests[questID] = 2;
-					end
-				end
-			end
-			anyComplete = nil;
-		end
-
-		wipe(DirtyQuests);
-
-		app:RegisterEvent("QUEST_LOG_UPDATE");
-		app:RegisterEvent("QUEST_TURNED_IN");
-		app:RegisterEvent("QUEST_ACCEPTED");
-		app:RegisterEvent("QUEST_REMOVED");
-		app:RegisterEvent("HEIRLOOMS_UPDATED");
-		app:RegisterEvent("ARTIFACT_UPDATE");
-		app:RegisterEvent("TOYS_UPDATED");
-		app:RegisterEvent("LOOT_OPENED");
-
-		local needRefresh;
-		-- NOTE: The auto refresh only happens once per version
-		if not accountWideData.LastAutoRefresh or (accountWideData.LastAutoRefresh ~= app.Version) then
-			accountWideData.LastAutoRefresh = app.Version;
-			needRefresh = true;
-		end
-
-		-- check if we are in a Party Sync session when loading in
-		app.IsInPartySync = C_QuestSession.Exists();
-
-		-- finally can say the app is ready
-		-- even though RefreshData starts a coroutine, this failed to get set one time when called after the coroutine started...
-		app.IsReady = true;
-		-- print("ATT is Ready!");
-
-		RefreshSaves();
-
-		-- Let a frame go before hitting the initial refresh to make sure as much time as possible is allowed for the operation
-		-- print("Yield prior to Refresh")
-		coroutine.yield();
-
-		if needRefresh then
-			-- print("Force Refresh")
-			-- collection refresh includes data refresh
-			RefreshCollections();
-		else
-			-- print("Refresh")
-			app:RefreshData(false);
-		end
-
-		-- do a settings apply to ensure ATT windows which have now been created, are moved according to the current Profile
-		app.Settings:ApplyProfile();
-
-		-- now that the addon is ready, make sure the minilist is updated to the current location if necessary
-		DelayedCallback(app.LocationTrigger, 3);
-	end);
-end
 app.events.PLAYER_ENTERING_WORLD = function(...)
 	app.InWorld = true;
 	-- refresh any custom collects for this character
@@ -21503,15 +21411,23 @@ app.events.PLAYER_ENTERING_WORLD = function(...)
 	-- send a location trigger now that the character is 'in the world'
 	-- DelayedCallback(app.LocationTrigger, 3); -- maybe not necessary?
 end
-app.events.ADDON_LOADED = function(addonName)
-	if addonName == "Blizzard_AuctionHouseUI" then
+app.AddonLoadedTriggers = {
+	["AllTheThings"] = function()
+		app.Startup();
+	end,
+	["Blizzard_AuctionHouseUI"] = function()
 		app.Blizzard_AuctionHouseUILoaded = true;
 		if app.Settings:GetTooltipSetting("Auto:AH") then
 			app:OpenAuctionModule();
 		end
-	elseif addonName == "Blizzard_AchievementUI" and app.IsReady then
-		RefreshAchievementCollection();
-	end
+	end,
+	["Blizzard_AchievementUI"] = function()
+		if app.IsReady then RefreshAchievementCollection(); end
+	end,
+};
+app.events.ADDON_LOADED = function(addonName)
+	local addonTrigger = app.AddonLoadedTriggers[addonName];
+	if addonTrigger then addonTrigger(); end
 end
 app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zoneChannelID, localID, name, instanceID)
 	if prefix == "ATT" then

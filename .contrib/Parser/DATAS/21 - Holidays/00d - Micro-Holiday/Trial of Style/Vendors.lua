@@ -12,3 +12,18 @@ root("Holidays", holiday(1671631, {	-- Trial of Style
 		i(188244),	-- Virulent Gravetreaders
 	}),
 }));
+
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	holiday(1671631, {
+		i(188240),	-- Augur's Walkers
+		i(188246),	-- Bloodbathed Slippers
+		i(188247),	-- Boots of the Blightbelcher
+		i(188242),	-- Cleric's Sabatons
+		i(188245),	-- Cold Cage Moccasins
+		i(188251),	-- Corrupted Cleats
+		i(188239),	-- Keeper's Strides
+		i(188250),	-- Pustule Prancers
+		i(188241),	-- Stalker's Treads
+		i(188238),	-- Thief's Footpads
+	}),
+}));

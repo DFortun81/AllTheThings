@@ -107,7 +107,9 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 			crit(7),		-- Fire Ammonite Angler
 		}),
 		ach(9503),		-- Draenor Fisherman
-		ach(9547),		-- Everything Is Awesome!
+		ach(9547, {	-- Everything Is Awesome!
+			["cost"] = { { "i", 118414, 20 } },	-- 20x Awesomefish
+		}),
 		ach(9459),		-- Fat Sleeper Angler
 		ach(9455),		-- Fire Ammonite Angler
 		ach(1243),		-- Fish Don't Leave Footprints

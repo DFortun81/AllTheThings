@@ -6,14 +6,14 @@ _.GroupFinder =
 {
 	tier(CLASSIC_TIER, {
 		i(156683, {	-- Satchel of Helpful Goods [Level 7-50]
-			i(51982),			-- Earthbound Boots*
+			i(51982),			-- Earthbound Boots*		— 01/14/21
 			un(REMOVED_FROM_GAME, i(51978)),	-- Earthbound Girdle [Probably unobtainable]
 			i(143580),			-- Earthbound Girdle*
 			-- un(REMOVED_FROM_GAME, i(51979)),	-- Earthbound Grips (moved to BC satchel)
 			i(143581),			-- Earthbound Grips*
 			un(REMOVED_FROM_GAME, i(51980)),	-- Earthbound Handgrips [Probably unobtainable]
 			i(51976),			-- Earthbound Shoulderguards*
-			i(51981),			-- Earthbound Wristguards*
+			i(51981),			-- Earthbound Wristguards*	— 01/14/21
 			i(51972),			-- Enumerated Bracers*
 			i(51973),			-- Enumerated Handwraps*
 			i(51967),			-- Enumerated Sandals*

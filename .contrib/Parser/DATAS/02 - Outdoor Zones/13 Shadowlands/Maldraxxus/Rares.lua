@@ -31,14 +31,11 @@ _.Zones =
 						i(184188),	-- Collector's Corpse Gambrel
 						i(183692, {	-- Jagged Bonesaw
 							["description"] = "This may drop for any character on your account once the toy 'Acolyte's Guise' has been learned by a Necrolord character.",
-							["g"] = {
-								crit(2, {	-- Jagged Bonesaw
-									["achievementID"] = 14763,	-- Crypt Couture
-								}),
-							},
 						}),
+						i(183833),	-- Kash's Bag of Junk
 						i(184181),	-- Kash's Favored Hook
 						i(184189),	-- Stained Fleshgorer
+						i(181797),	-- Strange Cloth
 						i(184182),	-- Strengthened Abomination Hook
 					},
 				}),
@@ -436,11 +433,6 @@ _.Zones =
 						}),
 						i(183690, {	-- Ashen Ink
 							["description"] = "This may drop for any character on your account once the toy 'Acolyte's Guise' has been learned by a Necrolord character.",
-							["g"] = {
-								crit(1, {	-- Ashen Ink
-									["achievementID"] = 14763,	-- Crypt Couture
-								}),
-							},
 						}),
 						i(184285),	-- Boneclutched Shackles
 						i(181804, {	-- Trophy of the Reborn Bonelord

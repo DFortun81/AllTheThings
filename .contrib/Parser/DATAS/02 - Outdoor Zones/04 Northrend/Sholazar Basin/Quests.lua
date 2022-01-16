@@ -272,6 +272,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = {
 						12543,	-- An Offering for Soo-rahm
+						12550,	-- Dreadsaber Mastery: Stalking the Prey
 						12560,	-- Crocolisk Mastery: The Plan
 					},
 				}),
@@ -599,7 +600,6 @@ _.Zones =
 				q(12524, {	-- Venture Co. Misadventure
 					["coord"] = { 27.2, 59.8, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28032 },	-- Debaar
-					["sourceQuest"] = 12489,	-- Welcome to Scholazar Basin
 				}),
 				q(12525, {	-- Wipe That Grin Off His Face
 					["coord"] = { 27.2, 59.8, SHOLAZAR_BASIN },

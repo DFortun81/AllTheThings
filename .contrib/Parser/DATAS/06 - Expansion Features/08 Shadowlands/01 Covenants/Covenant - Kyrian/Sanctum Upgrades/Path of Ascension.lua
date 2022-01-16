@@ -720,7 +720,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 											},
 										}),
 									}),
-									n(172482, {	-- Mad Mortimer
+									n(172325, {	-- Mad Mortimer	-- TODO: Verify NPCID
 										["crs"] = {
 											172099, -- Mort
 											172101,	-- Ortim
@@ -940,7 +940,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 											DAUNTLESS_DUSKRUNNER,	-- (MOUNT!)
 										}),
 									}),
-									n(172482, {	-- Mad Mortimer
+									n(172325, {	-- Mad Mortimer	-- TODO: Verify NPCID
 										["crs"] = {
 											172099, -- Mort
 											172101,	-- Ortim
@@ -1095,7 +1095,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 											i(184452),	-- Reverent Helm
 										}),
 									}),
-									n(172482, {	-- Mad Mortimer
+									n(172325, {	-- Mad Mortimer	-- TODO: Verify NPCID
 										["crs"] = {
 											172099, -- Mort
 											172101,	-- Ortim
@@ -1341,16 +1341,18 @@ for _,g in ipairs({ECHTHRA_GROUP,BINKIROS_GROUP,PHIXIN_GROUP,ZELESKOS_GROUP,{BRI
 end
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(ACHIEVEMENTS, {
-		ach(14351, { -- The Path Towards Ascension 39
-			ach(14340),	-- The Path Towards Ascension 1
-			ach(14342),	-- The Path Towards Ascension 3
-			ach(14343),	-- The Path Towards Ascension 5
-			ach(14344),	-- The Path Towards Ascension 7
-			ach(14345),	-- The Path Towards Ascension 12
-			ach(14346),	-- The Path Towards Ascension 16
-			ach(14348),	-- The Path Towards Ascension 20
-			ach(14349),	-- The Path Towards Ascension 24
+	tier(SL_TIER, {
+		n(KYRIAN, {
+			ach(14351, { -- The Path Towards Ascension 39
+				ach(14340),	-- The Path Towards Ascension 1
+				ach(14342),	-- The Path Towards Ascension 3
+				ach(14343),	-- The Path Towards Ascension 5
+				ach(14344),	-- The Path Towards Ascension 7
+				ach(14345),	-- The Path Towards Ascension 12
+				ach(14346),	-- The Path Towards Ascension 16
+				ach(14348),	-- The Path Towards Ascension 20
+				ach(14349),	-- The Path Towards Ascension 24
+			}),
 		}),
 	}),
 	n(QUESTS, {
@@ -1455,7 +1457,7 @@ root("HiddenQuestTriggers", {
 	-- HQTs for Bastion of Protection achievement
 	q(63074),	-- Kalisthene | Spiritforged Aegis
 	q(63075),	-- Craven Corinth | Spiritforged Aegis
-	
+
 	-- HQTs for The Hoot of the Issue achievement
 	q(63076),	-- Loyalty | Alderyn and Myn'ir | Mikanikos
 	q(63077),	-- Loyalty | Splinterbark Nightmare | Mikanikos

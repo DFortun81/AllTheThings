@@ -2870,7 +2870,10 @@ _.ExpansionFeatures =
 					["coord"] = { 76.2, 24.4, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(46755),	-- Great Golden Kodo (MOUNT!)
+						i(46750, {	-- Great Golden Kodo
+							["cost"] = { { "c", 241, 5 } },	-- 5x Champion's Seal
+						}),
+						un(REMOVED_FROM_GAME, i(46755)),	-- Great Golden Kodo (MOUNT!)
 						i(44980, {	-- Mulgore Hatchling (PET!)
 							["cost"] = { { "c", 241, 40 }, },	-- 40x Champion's Seal
 						}),
@@ -2903,7 +2906,10 @@ _.ExpansionFeatures =
 							["cost"] = { { "i", 46114, 1 }, },		-- 1x Champion's Writ
 						}),
 						i(45583),	-- Undercity Tabard
-						i(46764),	-- White Skeletal Warhorse Mount
+						i(46746, {	-- White Skeletal Warhorse
+							["cost"] = { { "c", 241, 5 } },	-- 5x Champion's Seal
+						}),
+						un(REMOVED_FROM_GAME, i(46764)),	-- White Skeletal Warhorse Mount
 					},
 				}),
 				n(33594, {	-- Fizzix Blastbolt <Engineering Supplies>
@@ -2931,6 +2937,7 @@ _.ExpansionFeatures =
 						i(45595, {	-- Orgrimmar Wolf (MOUNT!)
 							["cost"] = { { "c", 241, 100 }, },	-- 100x Champion's Seal
 						}),
+						un(REMOVED_FROM_GAME, i(46749)),	-- Swift Burgundy Wolf
 						i(46757, {	-- Swift Burgundy Wolf (MOUNT!)
 							["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
 						}),
@@ -3176,9 +3183,10 @@ _.ExpansionFeatures =
 						i(45606, {	-- Sen'jin Fetish (PET!)
 							["cost"] = { { "c", 241, 40 }, },	-- 40x Champion's Seal
 						}),
-						i(46760, {	-- Swift Purple Raptor (MOUNT!)
+						i(46743, {	-- Swift Purple Raptor (MOUNT!)
 							["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
 						}),
+						un(REMOVED_FROM_GAME, i(46760)),	-- Swift Purple Raptor (MOUNT!)
 					},
 				}),
 				n(33557, {	-- Trellis Morningsun <Silvermoon Quartermaster>

@@ -636,7 +636,6 @@ _.Zones =
 				}),
 				q(47428, {	-- Kitty?
 					["provider"] = { "n", 122169 },	-- Abby Lewis
-					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 47289 },	-- Teddies and Tea
 					["coords"] = {	-- Based on which toy you pick up last.
 						{ 55.6, 38.6, DRUSTVAR },	-- Mr. Munchykins
@@ -1106,7 +1105,6 @@ _.Zones =
 				q(47289, {	-- Teddies and Tea
 					["provider"] = { "n", 121603 },	-- Abby Lewis
 					["coord"] = { 54.4, 39.3, DRUSTVAR },
-					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48622 },	-- The Vanishing Lord
 					-- May have additional sourceQuests; needs confirmation.  Picked up after turning in "And Justice For All."
 					-- Not required for "Drust Do It."
@@ -1286,18 +1284,18 @@ _.Zones =
 						{ "n", 143745 },	-- Guardsman Bray <Waycrest Guard>
 					},
 				}),
-				o(270917, {	-- Glenbrook Register
-					q(45079, {	-- The Village of Glenbrook (A)
-						["coord"] = { 55.6, 41.1, DRUSTVAR },
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = { 47428 },	-- Kitty?
-						-- Not required for "Drust Do It."
-					}),
+				q(45079, {	-- The Village of Glenbrook (A)
+					["provider"] = { "o", 270917 },	-- Glenbrook Register
+					["coord"] = { 55.6, 41.1, DRUSTVAR },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = { 47428 },	-- Kitty?
+					-- Not required for "Drust Do It."
 				}),
 				q(53464, {	-- The Village of Glenbrook (H)
 					["provider"] = { "o", 270917 },	-- Glenbrook Register
 					["coord"] = { 55.6, 41.1, DRUSTVAR },
 					["races"] = HORDE_ONLY,
+					["sourceQuests"] = { 47428 },	-- Kitty?
 				}),
 				q(48108, {	-- The Waycrest Daughter
 					["provider"] = { "n", 124417 },	-- Cyril White
@@ -1558,18 +1556,12 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(155473),	-- Banisher Cinch
 			}),
 			filter(MAIL, {
-				i(158590),	-- Crone-Seeker's Striders
 				i(158605),	-- Crone-Seeker's Grips
-				i(158621),	-- Crone-Seeker's Cincture
-				i(158633),	-- Crone-Seeker's Bindings
 				i(160199),	-- Crone-Seeker's Leggings
 				i(155481),	-- Crone-Seeker's Chain
 			}),
 			filter(PLATE, {
-				i(158591),	-- Waycrest Militia Footguards
 				i(158606),	-- Waycrest Militia Gloves
-				i(158622),	-- Waycrest Militia Buckle
-				i(158634),	-- Waycrest Militia Wristguards
 				i(160200),	-- Waycrest Militia Pants
 				i(155489),	-- Waycrest Militia Belt
 			}),

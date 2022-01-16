@@ -102,9 +102,17 @@ _.Zones =
 						}),
 					},
 				}),
+				o(370469, {	-- Spectral Feed
+					["coord"] = { 63.75, 61.69, REVENDRETH },
+					-- ["sourceQuest"] = ???,
+					["g"] = {
+						i(187811),	-- Spectral Feed
+					},
+				}),
 				n(181660, {	-- Lost Soul (Chicken)
-					["description"] = "Gather the Spectral Feed, located at 63.75, 61.69 in Revendreth. This has roughly a 60 minute respawn, and is lootable by others shortly after being looted by one player.\nAfter, head to the Lost Soul located at 63.18, 42.76 in Revendreth. Use /chicken on the soul, then use the Spectral Feed from your Bag.\nThe soul may have multiple spawn points, or a separate respawn timer than the Feed, it is unknown. However, you can only see the Soul when you have the Feed in your bags.",
+					["description"] = "Gather the |cFFFFFFFFSpectral Feed|r, located at |cFFFFFFFF63.75, 61.69|r in Revendreth. This has roughly a 60 minute respawn, and is lootable by others shortly after being looted by one player.\nAfter, head to the Lost Soul located at 63.18, 42.76 in Revendreth. Use |cFFFFFFFF/chicken|r on the soul, then use the |cFFFFFFFFSpectral Feed|r from your Bag.\nThe soul may have multiple spawn points, or a separate respawn timer than the Feed, it is unknown. However, you can only see the Soul when you have the Feed in your bags.",
 					["coord"] = { 63.18, 42.76, REVENDRETH },
+					["cost"] = { { "i", 187811, 1 } },	-- Spectral Feed
 					["g"] = {
 						i(187813),	-- Chicken Soul
 					},

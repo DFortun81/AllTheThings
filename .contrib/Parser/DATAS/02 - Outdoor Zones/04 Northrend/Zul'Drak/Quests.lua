@@ -98,10 +98,7 @@ _.Zones =
 				q(12662, {	-- Bringing Down Heb'Jin
 					["coord"] = { 59.3, 56.4, ZULDRAK },
 					["provider"] = { "n", 28480 },	-- Element-Tamer Dagoda
-					["sourceQuests"] = {
-						12640,	-- Sealing the Rifts
-						12639,	-- The Frozen Earth
-					},
+					["sourceQuest"] = 12640,	-- Sealing the Rifts
 					["g"] = {
 						i(39777),	-- Band of Misty Mojo
 						i(39836),	-- Supple Mantle of the Bloodletter

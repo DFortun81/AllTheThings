@@ -76,7 +76,10 @@ _.Zones =
 					["provider"] = { "n", 38849 },	-- Megs Dreadshredder
 					["coord"] = { 44.5, 52.6, TANARIS },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 25014,	-- Sandscraper's Treasure
+					["sourceQuests"] = {
+						25001,	-- Sandscraper
+						25014,	-- Sandscraper's Treasure
+					},
 					["isBreadcrumb"] = true,
 				}),
 				q(841,   {	-- Another Power Source?
@@ -506,6 +509,7 @@ _.Zones =
 					["provider"] = { "n", 38922 },	-- Examiner Andoren Dawnrise
 					["coord"] = { 33.2, 77.0, TANARIS },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 25018,	-- Andoren Will Know
 				}),
 				q(3914,  {	-- Linken's Sword
 					["u"] = REMOVED_FROM_GAME,

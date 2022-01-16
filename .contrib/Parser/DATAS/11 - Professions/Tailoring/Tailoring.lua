@@ -111,7 +111,10 @@ profession(TAILORING, {
 				}),
 				{
 					["name"] = "Black Silk Pack",
-					["recipeID"] = 6695
+					["recipeID"] = 6695,
+					-- #if AFTER SHADOWLANDS
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
 				},
 				{
 					["name"] = "Bottomless Bag",
@@ -5491,7 +5494,7 @@ neverimplemented(i(162430));	-- Pattern: Embroidered Deep Sea Breeches (Rank 3)
 -- #endif
 
 -- #if AFTER SHADOWLANDS
-
+neverimplemented(i(183871));	-- Pattern: Crafter's Mark III (was in beta but not live, possibly added in future?)
 -- #endif
 
 -- Apply the Never Implemented flag to the Never Implemented things.

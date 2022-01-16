@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(MOP_TIER, {
+root("Instances", tier(MOP_TIER, {
 	inst(369, {	-- Siege of Orgrimmar
 		["isRaid"] = true,
 		["coords"] = {
@@ -342,22 +342,22 @@ _.Instances = { tier(MOP_TIER, {
 				["ignoreBonus"] = true,
 				["description"] = "This version of the instance was the original Flexible difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
 				["g"] = {
-					n(ZONE_DROPS, {
-						un(REMOVED_FROM_GAME, i(105838)),	-- Aeth's Swiftcinder Cloak Normal
-						un(38, i(105830)),	-- Brave Niunai's Cloak Normal (confirmed to drop from Ordos cache on July 23, 2020)
-						un(38, i(105826)),	-- Cape of the Alpha Normal (confirmed to drop from Ordos cache on July 23, 2020)
-						un(38, i(105829)),	-- Drape of the Omega Normal (confirmed to drop from Ordos cache on July 23, 2020)
-						un(38, i(105839)),	-- Turtleshell Greatcloak Normal (confirmed to drop from Ordos cache on May 5, 2020)
-						un(38, i(105827)),	-- Kalaena's Arcane Handwraps (confirmed to drop from Ordos cache on April 28, 2020)
-						un(REMOVED_FROM_GAME, i(105828)),	-- Seebo's Sainted Touch Normal
-						un(38, i(105832)),	-- Crimson Gauntlets of Death Normal (confirmed to drop from Ordos cache on July 23, 2020)
-						un(38, i(105831)),	-- Siid's Silent Stranglers Normal (confirmed to drop from Ordos cache on December 29, 2019)
-						un(38, i(105833)),	-- Keengrip Arrowpullers Normal (confirmed to drop from Ordos cache on November 14, 2019)
-						un(38, i(105834)),	-- Marco's Crackling Gloves Normal (confirmed to drop from Ordos cache on May 6, 2020)
-						un(38, i(105837)),	-- Gauntlets of Discarded Time Normal (confirmed to drop from Ordos cache on November 28, 2021)
-						un(REMOVED_FROM_GAME, i(105835)),	-- Romy's Reliable Grips Normal
-						un(38, i(105836)),	-- Zoid's Molten Gauntlets Normal (confirmed to drop from Ordos cache on December 31, 2019)
-					}),
+					n(ZONE_DROPS, sharedData({["u"]=REMOVED_FROM_GAME},{
+						i(105838),	-- Aeth's Swiftcinder Cloak Normal
+						i(105830),	-- Brave Niunai's Cloak Normal
+						i(105826),	-- Cape of the Alpha Normal
+						i(105829),	-- Drape of the Omega Normal
+						i(105839),	-- Turtleshell Greatcloak Normal
+						i(105827),	-- Kalaena's Arcane Handwraps
+						i(105828),	-- Seebo's Sainted Touch Normal
+						i(105832),	-- Crimson Gauntlets of Death Normal
+						i(105831),	-- Siid's Silent Stranglers Normal
+						i(105833),	-- Keengrip Arrowpullers Normal
+						i(105834),	-- Marco's Crackling Gloves Normal
+						i(105837),	-- Gauntlets of Discarded Time Normal
+						i(105835),	-- Romy's Reliable Grips Normal
+						i(105836),	-- Zoid's Molten Gauntlets Normal
+					})),
 					n(71543, {	-- Immerseus
 						un(REMOVED_FROM_GAME, i(104671)),	-- Bolt-Burster Grips Normal
 						un(REMOVED_FROM_GAME, i(104678)),	-- Bracers of Purified Spirit Normal
@@ -3680,10 +3680,17 @@ _.Instances = { tier(MOP_TIER, {
 			}),
 		},
 	}),
-})};
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+}));
+
+root("HiddenQuestTriggers", {
+	q(33345),	-- Dark Shaman Weekly Attempt
+	q(42509),	-- Iron Juggernaut for Hunters attempting/receiving "Pile of Juggernaut Parts" (137654)
+	q(42538),	-- Siegecrafter Blackfuse for Hunters attempting/receiving "Blackfuse's Power Core" (138097)
+});
+
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(MOP_TIER, {
-		inst(369, {	-- Siege of Orgrimmar
+		m(556, {	-- Siege of Orgrimmar
 			i(104986),	-- Unrepentant Heels
 			i(102312),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Boss X Loot X - Agi DPS Trinket (5)
 			i(102313),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Boss X Loot X - Int Hit Trinket (5)
@@ -3694,7 +3701,4 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(103825),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Wildcard - Int Hit Ring
 		}),
 	}),
-});
-_.HiddenQuestTriggers = {
-	q(33345),	-- Dark Shaman Weekly Attempt
-};
+}));

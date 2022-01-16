@@ -165,7 +165,7 @@ _.Zones =
 							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 						}),
 						i(44535, {	-- Pattern: Swiftarrow Belt
-							["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
+							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 						}),
 						i(44537, {	-- Pattern: Swiftarrow Boots
 							["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather

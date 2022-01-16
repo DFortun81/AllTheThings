@@ -50,7 +50,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 86964 },	-- Bloodmane Earthbinder(Leorajh)
 						}),
 						q(36947, {	-- New Strength
-							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 86682 },	-- Retired Gorian Centurion(Tormmok)
 						}),
 						q(37070, {	-- Power of the Nether
@@ -114,3 +113,16 @@ _.ExpansionFeatures =
 	}),
 };
 
+root("HiddenQuestTriggers", {
+	tier(WOD_TIER, {
+		n(GARRISONS, {
+			n(BUILDINGS, {	-- Buildings
+				garrisonBuilding(28,  {	-- Barracks
+					q(36899),	-- Tracking Quest: Defender Illona (use as Body Guard)
+					q(36936),	-- Tracking Quest: Leorajh (use as Body Guard)
+					q(36900),	-- Tracking Quest: Talonpriest Ishaal (use as Body Guard)
+				}),
+			}),
+		}),
+	}),
+});

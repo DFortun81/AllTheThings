@@ -398,14 +398,19 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(155413),	-- Lastwind Bands
-						i(155414),	-- Exiled Veteran's Armguards
-						i(155415),	-- Resilient Outcast's Vambraces
-						i(155416),	-- Scorching Sands Wristwraps
-						i(159980),	-- Resilient Outcast's Guantlets
 						i(159981),	-- Lastwind Handwraps
-						i(159982),	-- Exiled Veteran's Crushers
+						i(155416),	-- Scorching Sands Wristwraps
 						i(159983),	-- Scorching Sands Handwraps
-						i(158696),	-- Tidespeaker Mitts (Alliance appearance granted by Lastwind Handwraps)
+						i(155415),	-- Resilient Outcast's Vambraces
+						i(159980),	-- Resilient Outcast's Guantlets
+						i(155414),	-- Exiled Veteran's Armguards
+						i(159982),	-- Exiled Veteran's Crushers
+						i(158696, {	-- Tidespeaker Mitts (confirmed)
+							["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
+						}),
+						i(158695, {	-- Dread Corsair Handguards (confirmed)
+							["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
+						}),
 					},
 				}),
 				q(50770, {	-- Effective Antivenom
@@ -454,7 +459,7 @@ _.Zones =
 				}),
 				q(48872, {	-- Expedite the Excavation
 					["sourceQuests"] = { 50536 },	-- Magic Decoder Device
-					["provider"] = { "n", 134148 },	-- Maaz
+					["provider"] = { "n", 134164 },	-- Amre
 					["coord"] = { 47.4, 72.8, VOLDUN },	-- Zul'Ahjin
 					["races"] = HORDE_ONLY,
 				}),
@@ -762,7 +767,9 @@ _.Zones =
 						i(155429),	-- Sezahjin's Tenderizer
 						i(155442),	-- Razgaji's Machete
 						i(155420),	-- Xombo's Prized Greataxe
-						i(161297),	-- Hacksaw Skinning Knife (Alliance-only appearance)
+						i(161297, {	-- Hacksaw Skinning Knife (confirmed)
+							["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
+						}),
 					},
 				}),
 				q(50980, {	-- My Hungry Neighbor
@@ -1074,7 +1081,12 @@ _.Zones =
 						i(161271),	-- Scorching Sands Bindings
 						i(161273),	-- Resilient Outcast's Wristguards
 						i(161275),	-- Exiled Veteran's Armbands
-						i(160385),	-- Tidespeaker Bracers (Alliance appearance granted by Lastwind WRistguards)
+						i(160385, {	-- Tidespeaker Bracers (confirmed)
+							["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
+						}),
+						i(160394, {	-- Dread Corsair Shackles (confirmed)
+							["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
+						}),
 					},
 				}),
 				q(50561, {	-- Sulthis' Stone
@@ -1186,7 +1198,9 @@ _.Zones =
 						i(155417),	-- Keeper's Crescent
 						i(155418),	-- Spireguard's Waraxe
 						i(155444),	-- Sethraliss-Blessed Greatblade
-						i(155146),	-- Swinestained Pummeler (Alliance-only appearance granted by Korthek's Staff)
+						i(155146, {	-- Swinestained Pummeler (confirmed)
+							["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
+						}),
 					},
 				}),
 				q(51061, {	-- The First Time I Died
@@ -1257,7 +1271,15 @@ _.Zones =
 						i(159993),	-- Lastwind Legwraps
 						i(159994),	-- Resilient Outcast's Breeches
 						i(159995),	-- Scorching Sands Pants
-						i(158704),	-- Tidespeaker Legwraps (Alliance-only appearance granted by Lastwind Legwraps)
+						i(158704, {	-- Tidespeaker Legwraps (confirmed)
+							["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
+						}),
+						i(158705, {	-- Stormchaser Links (confirmed)
+							["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
+						}),
+						i(158703, {	-- Dread Corsair Chausses (confirmed)
+							["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
+						}),
 					},
 				}),
 				q(49227, {	-- The Master Key
@@ -1508,6 +1530,9 @@ _.Zones =
 						i(161185),	-- Resilient Outcast's Legplates
 						i(161186),	-- Lastwind Pants
 						i(161187),	-- Exiled Veteran's Leg Armor
+						i(161296, {	-- Autumnvale Hunting Rifle (confirmed)
+							["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
+						}),
 					},
 				}),
 				q(48330, {	-- Zandalari Treasure Trove
@@ -1530,8 +1555,12 @@ _.Zones =
 						i(160028),	-- Soul-Cursed Warglaive
 						i(155433),	-- Soul-Cursed Warmaul
 						i(155430),	-- Trapped Soul Warmace
-						i(161301),	-- Storm's Wake Mace (Alliance-only appearance granted by either Trapped Soul Warmace or Zak'rajan's Hexmace)
-						i(161304),	-- Mad-Butcher's Mace (Alliance-only appearance granted by either Trapped Soul Warmace or Zak'rajan's Hexmace)
+						i(161301, {	-- Storm's Wake Mace (confirmed)
+							["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
+						}),
+						i(161304, {	-- Mad-Butcher's Mace (confirmed)
+							["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
+						}),
 					},
 				}),
 				n(BONUS_OBJECTIVES, sharedData({ ["races"] = HORDE_ONLY }, {

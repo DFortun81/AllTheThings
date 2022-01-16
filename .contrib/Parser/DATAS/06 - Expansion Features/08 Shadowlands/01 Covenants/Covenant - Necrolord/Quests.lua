@@ -67,12 +67,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["coord"] = { 70.4, 27.7, MALDRAXXUS },
 				["g"] = {
 					i(183394, {	-- Discarded Grimoire
-					--	["questID"] = 62266,
-						["g"] = {
-							crit(3, {	-- Discarded Grimoire
-								["achievementID"] = 14763,	-- Crypt Couture
-							}),
-						},
+						["description"] = "This may drop for any character on your account once the toy 'Acolyte's Guise' has been learned by a Necrolord character.",
 					}),
 				},
 			}),
@@ -242,12 +237,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["coord"] = { 46.5, 31.5, 1652 },	-- Vault of Souls
 				["g"] = {
 					i(183397, {	-- Sorcerer's Blade
-					--	["questID"] = 62306,
-						["g"] = {
-							crit(4, {	-- Sorceror's Blade
-								["achievementID"] = 14763,	-- Crypt Couture
-							}),
-						},
+						["description"] = "This may drop for any character on your account once the toy 'Acolyte's Guise' has been learned by a Necrolord character.",
 					}),
 				},
 			}),
@@ -470,12 +460,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["coord"] = { 67.9, 30.6, MALDRAXXUS },
 				["g"] = {
 					i(183399, {	-- Ritualist's Mantle
-					--	["questID"] = 62311,
-						["g"] = {
-							crit(7, {	-- Ritualist's Mantle
-								["achievementID"] = 14763,	-- Crypt Couture
-							}),
-						},
+						["description"] = "This may drop for any character on your account once the toy 'Acolyte's Guise' has been learned by a Necrolord character.",
 					}),
 				},
 			}),
@@ -646,12 +631,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["coord"] = { 71.7, 32.9, MALDRAXXUS },
 				["g"] = {
 					i(183401, {	-- Amethystine Dye
-					--	["questID"] = 62319,
-						["g"] = {
-							crit(6, {	-- Amethystine Dye
-								["achievementID"] = 14763,	-- Crypt Couture
-							}),
-						},
+						["description"] = "This may drop for any character on your account once the toy 'Acolyte's Guise' has been learned by a Necrolord character.",
 					}),
 				},
 			}),

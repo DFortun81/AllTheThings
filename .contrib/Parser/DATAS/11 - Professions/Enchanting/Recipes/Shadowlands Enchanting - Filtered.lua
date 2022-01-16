@@ -39,3 +39,12 @@ profession(ENCHANTING, {
 		},
 	}),
 });
+
+root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+	tier(SL_TIER, {
+		prof(ENCHANTING, {
+			i(182666),	-- Formula: Enchanted Elethium Bar (learned from trainer not item)
+			i(183866),	-- Formula: Crafter's Mark III (was in beta but not live, possibly added in future?)
+		}),
+	}),
+}));

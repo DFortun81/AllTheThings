@@ -236,6 +236,7 @@ _.Zones =
 					["crs"] = { 32862 },	-- Jor'kil the Soulripper
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "i", 46318 },	-- Hellscream's Missive
+					["sourceQuest"] = 13515,	-- Ending the Threat
 					["g"] = {
 						i(55128),	-- Silver Embossed Boots
 						i(55129),	-- Silver Plated Belt
