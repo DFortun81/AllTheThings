@@ -2770,6 +2770,9 @@ for key,value in pairs({
 	[355041] = "Cache de la Lune",	-- Cache of the Moon
 	[355048] = "Rune des Rituels",	-- Rune of Rituals
 	[355049] = "Rune des Rituels",	-- Rune of Rituals
+	[355194] = "Rune des Assemblages",	-- Rune of Constructs
+	[355195] = "Rune des Assemblages",	-- Rune of Constructs
+	[355196] = "Rune des Assemblages",	-- Rune of Constructs
 	[355286] = "Offrandes du souvenir",	-- Memorial Offerings
 	[355296] = "Prime : régulation de la faune",	-- Bounty: Beast Control
 	[355355] = "Coffre harmonique",	-- Harmonic Chest

@@ -2757,6 +2757,9 @@ for key,value in pairs({
 	[355041] = "Тайник луны",	-- Cache of the Moon
 	[355048] = "Руна дома Ритуалов",	-- Rune of Rituals
 	[355049] = "Руна дома Ритуалов",	-- Rune of Rituals
+	[355194] = "Руна дома Кадавров",	-- Rune of Constructs
+	[355195] = "Руна дома Кадавров",	-- Rune of Constructs
+	[355196] = "Руна дома Кадавров",	-- Rune of Constructs
 	[355286] = "Подношения у мемориала",	-- Memorial Offerings
 	[355296] = "Награда: борьба с чудовищами",	-- Bounty: Beast Control
 	[355355] = "Сундук гармонии",	-- Harmonic Chest
