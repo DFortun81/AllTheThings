@@ -6,14 +6,14 @@ _.GroupFinder =
 {
 	tier(CLASSIC_TIER, {
 		i(156683, {	-- Satchel of Helpful Goods [Level 7-50]
-			i(51982),			-- Earthbound Boots*		— 01/14/21
+			i(51982),			-- Earthbound Boots*		— 01/14/22
 			un(REMOVED_FROM_GAME, i(51978)),	-- Earthbound Girdle [Probably unobtainable]
-			i(143580),			-- Earthbound Girdle*
+			i(143580),			-- Earthbound Girdle*		— 01/15/21
 			-- un(REMOVED_FROM_GAME, i(51979)),	-- Earthbound Grips (moved to BC satchel)
 			i(143581),			-- Earthbound Grips*
 			un(REMOVED_FROM_GAME, i(51980)),	-- Earthbound Handgrips [Probably unobtainable]
-			i(51976),			-- Earthbound Shoulderguards*
-			i(51981),			-- Earthbound Wristguards*	— 01/14/21
+			i(51976),			-- Earthbound Shoulderguards*	— 01/15/22
+			i(51981),			-- Earthbound Wristguards*	— 01/14/22
 			i(51972),			-- Enumerated Bracers*
 			i(51973),			-- Enumerated Handwraps*
 			i(51967),			-- Enumerated Sandals*
@@ -30,9 +30,9 @@ _.GroupFinder =
 			i(160597),			-- Tumultuous Cloak			— 4/7/19
 			i(51996),			-- Tumultuous Necklace		— 4/19/19
 			i(160608),			-- Tumultuous Necklace		— 9/13/19
-			i(160607),			-- Tumultuous Necklace		— 11/10/19
+			i(160607),			-- Tumultuous Necklace		— 01/15/22
 			i(51992),			-- Tumultuous Ring [INT]	— confirmed by discord user on April 21, 2020
-			i(160601),			-- Tumultuous Ring [AGI]	— 4/7/19
+			i(160601),			-- Tumultuous Ring [AGI]	— 01/15/22
 			i(160602),			-- Tumultuous Ring [STR]	— 12/28/21
 			i(51964),			-- Vigorous Belt			— 4/7/19
 			i(51962),			-- Vigorous Bracers			— 4/7/19

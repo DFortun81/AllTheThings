@@ -930,13 +930,16 @@ _.HiddenQuestTriggers = {
 		q(33407),	-- REUSE - completed with quest 33622
 		q(33707),	-- Demons Among Us - Horde - completed with quest 40593 & 40607
 		q(33914),	-- Gut Guttra - completed with quest 33132
+		q(33923),	-- Demons? In Auchindoun? - completed with quest 33917
+		q(33974),	-- Dying Wish - completed with quest 33973
 		q(34426),	-- Yrel - completed with quest 34478 & 34427
 		q(34435),	-- Find Ga'nar - completed with quest 34434 & 34740
 		q(34438),	-- Regarding Enormous Tanks - completed with quest 34958
 		q(34506),	-- Bonus Objective: Kill Grimfrost Ogres - completed with quest 33145
+		q(34570),	-- REUSE - completed with quest 34154 & 34564
 		q(34817),	-- Altar Altercation - completed with quest 34423
 		q(35251),	-- The Bounty of Bladespire - completed with quest 33657
-		q(35340),	-- What Happened Here? - completed with quest 35322
+		q(35340),	-- What Happened Here? - completed with quest 35339
 		q(35387),	-- Through the Nether - completed with quest 35085
 		q(35388),	-- The Void March - completed with quest 35086
 		q(35389),	-- Silence the Call - completed with quest 35084
@@ -978,11 +981,7 @@ _.HiddenQuestTriggers = {
 
 		-- Spires of Arak
 		--q(34565),	-- Tearing Up Talador - TODO: figure out from where it gets completed
-
-		-- Talador
-		--q(33923),	-- Demons? In Auchindoun? - TODO: figure out from where it gets completed
-		--q(33974),	-- Dying Wish - TODO: figure out from where it gets completed
-		--q(34570),	-- REUSE - TODO: figure out from where it gets completed
+		
 
 		-------------------
 		---   CLASSIC   ---
@@ -3637,10 +3636,8 @@ _.HiddenQuestTriggers = {
 		q(34985),	-- Prized Repossessions Tracking
 		q(34986),	-- Punching Through Tracking
 		q(34873),	-- Punching Through Tracking
-		q(35192),	-- See Reinforcements Teleport
 		q(33962),	-- Shadowmoon Flowerpicker
 		q(34053),	-- SoL Conversation Tracker
-		q(36942),	-- Soulbinder Aedraa
 		q(34871),	-- Supply Recovery Tracking
 		q(34984),	-- Supply Recovery Tracking
 		q(33960),	-- Talador Flowerpicker

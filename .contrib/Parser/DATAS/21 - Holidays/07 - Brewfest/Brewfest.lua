@@ -2148,7 +2148,13 @@ _.Holidays = { applyholiday(BREWFEST, {
 		}),
 	},
 })};
-
+root("HiddenQuestTriggers", {
+	tier(WOD_TIER, {
+		q(37247, {	-- Angry Brewfest Letter - triggers when using "Angry Brewfest Letter" to cancel Brew of the Month subscription
+			["timeline"] = { "added 6.0.1" },
+		}),
+	}),
+});
 _.NeverImplemented = { bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	-- #if ANYCLASSIC
 	["npcID"] = -56,

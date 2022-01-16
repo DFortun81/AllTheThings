@@ -21,19 +21,19 @@ _.GroupFinder =
 			i(112349, {	-- Icefall Chain Helm
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			i(112350),	-- Icefall Mail Helm*					— confirmed by user on discord on July 24, 2020
+			i(112350),	-- Icefall Mail Helm*					— 01/15/22
 			i(113694, {	-- Icefall Chain Gloves					— Looted them, but before 7.3.5 -- Gold 25th October, 2020
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			i(113693),	-- Icefall Mail Gloves					— confirmed by user on discord on April 22, 2020
-			i(112364),	-- Icefall Mail Girdle*
+			i(113693),	-- Icefall Mail Gloves					— 01/15/22
+			i(112364),	-- Icefall Mail Girdle*					— 01/15/22
 			i(112363, {	-- Icefall Chain Belt
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			i(112358, {	-- Icefall Chain Leggings
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			i(112357),	-- Icefall Mail Leggings*
+			i(112357),	-- Icefall Mail Leggings*				— 01/15/22
 			i(112346),	-- Ice-Encrusted Plate Headguard*
 			i(113692),	-- Ice-Encrusted Gauntlets*
 			i(112361),	-- Ice-Encrusted Plate Belt*

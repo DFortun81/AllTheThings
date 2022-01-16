@@ -16,9 +16,9 @@ _.GroupFinder =
 			i(51962),	-- Vigorous Bracers*		— 12/27/21
 			i(51960),	-- Vigorous Gloves			— 12/27/21
 			i(51963),	-- Vigorous Stompers*		— 4/6/19, previously confirmed in Classic satchel - may have moved or be in both
-			i(51975),	-- Earthbound Shoulders
-			i(51981),	-- Earthbound Wristguards*
-			i(51979),	-- Earthbound Grips [User confirmed; haven't seen]
+			i(51975),	-- Earthbound Shoulders		- 01/15/22
+			i(51981),	-- Earthbound Wristguards*	- 01/15/22
+			i(51979),	-- Earthbound Grips			- 01/15/22
 			i(51977),	-- Earthbound Girdle*
 			i(51983),	-- Stalwart Shoulderguards*	— 4/13/19
 			i(51989),	-- Stalwart Bands*			— 4/12/19
@@ -26,13 +26,13 @@ _.GroupFinder =
 			i(51985),	-- Stalwart Belt*			— 4/12/19
 			i(51990),	-- Stalwart Treads*			— 4/13/19
 			i(51993),	-- Turbulent Cloak*
-			i(160599),	-- Turbulent Cloak*
+			i(160599),	-- Turbulent Cloak*			- 01/15/22
 			i(160600),	-- Turbulent Cloak (screenshot from Emsarrev on Discord)
 			i(51995),	-- Turbulent Necklace*		— 12/27/21
-			i(160609),	-- Turbulent Necklace
+			i(160609),	-- Turbulent Necklace		- 01/15/22
 			i(160610),	-- Turbulent Necklace*		— 4/12/19
 			i(51991),	-- Turbulent Signet*
-			i(160605),	-- Turbulent Signet*
+			i(160605),	-- Turbulent Signet*		- 01/15/22
 			i(160606),	-- Turbulent Signet*		— 4/11/19
 		}),
 		i(52004, {	-- Satchel of Helpful Goods 60-64
