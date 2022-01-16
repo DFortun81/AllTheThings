@@ -981,7 +981,7 @@ _.HiddenQuestTriggers = {
 
 		-- Spires of Arak
 		--q(34565),	-- Tearing Up Talador - TODO: figure out from where it gets completed
-		
+
 
 		-------------------
 		---   CLASSIC   ---
@@ -3019,11 +3019,6 @@ _.HiddenQuestTriggers = {
 		q(62271),	-- Deifir the Untamed secondary quest
 		q(61198),	-- Triggers when successfully completing the pre-req sequence for the Shimmermist Runner rare
 		-- Ardenweald Treasures
-		q(60800),	-- \
-		q(60801),	--  \
-		q(60802),	--   running over Lunarlight Buds (48.1, 70.8), user could not find associated treasure
-		q(60803),	--  /
-		q(60804),	-- /
 		q(60810),	-- \
 		q(60811),	--  \
 		q(60812),	--   running over Lunarlight Buds (somewhere in/near Glitterfall Basin) to light up Dim Lunarlight Pod and turn it into Lunarlight Pod (questID #60792)
