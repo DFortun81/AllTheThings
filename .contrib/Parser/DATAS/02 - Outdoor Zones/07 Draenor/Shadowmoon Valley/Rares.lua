@@ -105,7 +105,7 @@ _.Zones =
 				n(76380, {	-- Gorum
 					["questID"] = 33664,
 					["coords"] = {
-						{ 76.0, 32.3, DRAENOR_SHADOWMOON_VALLEY },	-- cave
+						{ 24.2, 32.3, DRAENOR_SHADOWMOON_VALLEY },	-- cave
 						{ 31.2, 34.5, 540 },	-- spawn
 					},
 					["g"] = {
