@@ -1043,8 +1043,8 @@ pet(186553, 3107);	-- Gurgl
 -----------------
 -- PATCH 9.2.0 --
 -----------------
--- *Have Source and is in pet Journal also
--- Protoform Synthesis
+-- *Have Source
+-- *Protoform Synthesis
 pet(189363, 3223);	-- Ambystan Darter
 pet(189369, 3179);	-- Archetype of Animation
 pet(189380, 3207);	-- Archetype of Cunning
@@ -1060,21 +1060,21 @@ pet(189367, 3220);	-- Archetype of Satisfaction
 pet(189382, 3181);	-- Archetype of Serenity
 pet(189364, 3204);	-- Archetype of Survival
 pet(189377, 3233);	-- Archetype of Vigilance
-pet(189376, 3235);	-- Gastropodling
+pet(189365, 3224);	-- Fierce Scarabid
 pet(189374, 3232);	-- Leaping Leporid
+pet(189376, 3235);	-- Microlicid
 pet(189368, 3226);	-- Multichicken
 pet(187734, 3171);	-- Omnipotential Core
 pet(189373, 3231);	-- Prototickles
 pet(187733, 3170);	-- Resonant Echo
 pet(189378, 3222);	-- Shelly
 pet(189370, 3227);	-- Stabilized Geomental
-pet(189365, 3224);	-- Stabilized Scarabid
 pet(189372, 3230);	-- Terror Jelly
 pet(187798, 3176);	-- Tunneling Vombata
 pet(189366, 3225);	-- Violent Poultrid
 pet(189379, 3234);	-- Viperid Menace
 -- Quest
-pet(189585, 3237);	-- E'rnee
+pet(189585, 3237);	-- *E'rnee
 
 -- Treasures
 pet(187735, 3172);	-- Geordy (Anima Shell?)
@@ -1084,26 +1084,6 @@ pet(188679, 3221);	--* Lightless Tormentor
 
 -- Rest of iDS
 --[[
-3173-- Bufonid Croaker Added Wild Pet
-3180-- Venomous Bufonid
-3190-- Vicious Leporid
-3191-- Timid Leporid Wild
-3196-- Proto Avian Fledgling
-3200-- Scarlet Proto Avian
-3202-- Tarachnid Stalker Wild
-3203-- Tarachnid Ambusher
-3205-- Metallic Scarabid
-3206-- Emerald Scarabid
-3208-- Red Viperid
-3209-- King Viperid
-3210-- Green Viperid
-3212-- Bloodsucker Vespoid
-3213-- Vombata Pup Wild pet
-3214-- Momma Vombata
 3215
-3216-- Ambystan Snapper Wild
-3217-- Aurelid Floater
 3218
-3219-- Predatory Gastropod
 --]]
-

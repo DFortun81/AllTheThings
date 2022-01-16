@@ -112,5 +112,63 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 		ach(15315),	-- Amidst Ourselves
 		ach(15396),	-- We Are All Made of Stars
 		ach(15494),	-- Damnation Aviation
+		ach(15417, {	-- Sepulcher of the First Ones
+			crit(1),	-- Vigilant Guardian
+			crit(2),	-- Skolex
+			crit(3),	-- Artificer Xy'mox
+			crit(4),	-- Dausegne
+			crit(5),	-- Prototype Pantheon
+			crit(6),	-- Lihuvim
+			crit(7),	-- Halondrus
+			crit(8),	-- Anduin Wrynn
+			crit(9),	-- Lords of Dread
+			crit(10),	-- Rygelon
+			crit(11),	-- The Jailer
+		}),
+		ach(15478, {	-- Heroic: Sepulcher of the First Ones
+			crit(1),	-- Vigilant Guardian
+			crit(2),	-- Skolex
+			crit(3),	-- Artificer Xy'mox
+			crit(4),	-- Dausegne
+			crit(5),	-- Prototype Pantheon
+			crit(6),	-- Lihuvim
+			crit(7),	-- Halondrus
+			crit(8),	-- Anduin Wrynn
+			crit(9),	-- Lords of Dread
+			crit(10),	-- Rygelon
+			crit(11),	-- The Jailer
+		}),
+		ach(15490, {	-- Mythic: Sepulcher of the First Ones
+			ach(15479),	-- Mythic: Vigilant Guardian
+			ach(15480),	-- Mythic: Skolex
+			ach(15481),	-- Mythic: Artificer Xy'mox
+			ach(15482),	-- Mythic: Dausegne
+			ach(15483),	-- Mythic: Prototype Pantheon
+			ach(15484),	-- Mythic: Lihuvim
+			ach(15485),	-- Mythic: Halondrus
+			ach(15486),	-- Mythic: Anduin Wrynn
+			ach(15487),	-- Mythic: Lords of Dread
+			ach(15488),	-- Mythic: Rygelon
+			ach(15489),	-- Mythic: The Jailer
+		}),
+		ach(15493, {	-- Ephemeral Plains
+			crit(1),	-- Vigilant Guardian
+			crit(2),	-- Skolex
+			crit(3),	-- Artificer Xy'mox
+			crit(4),	-- Halondrus
+		}),
+		ach(15492, {	-- Cornerstone of Creation
+			crit(1),	-- Dausegne
+			crit(2),	-- Prototype Pantheon
+			crit(3),	-- Lihuvim
+		}),
+		ach(15416, {	-- Domination's Grasp
+			crit(1),	-- Anduin Wrynn
+			crit(2),	-- Lords of Dread
+			crit(3),	-- Rygelon
+		}),
+		ach(15418, {	-- The Grand Design
+			crit(1),	-- The Jailer, Zovaal
+		}),
 	}),
 }));

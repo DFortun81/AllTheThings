@@ -702,9 +702,19 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 		}),
 		ach(15402, {	-- Cyphers of the First Ones
 			["description"] = "Have to research eveything in the talent tree to gain flying.",
+			["g"] = {
+				i(189455),	-- Schematic: Pale Regal Cervid
+			},
 		}),
 		ach(15392),	-- Dune Dominance
 		ach(15224),	-- Explore Zereth Mortis
 		ach(15331),	-- Treasures of Zereth Mortis
+		ach(15411, {	-- Synthe-supersized!
+			ach(15406),	-- Synthesized!
+			ach(15407),	-- Synthe-fived!
+			ach(15410),	-- Synthe-superfived!
+		}),
+		ach(15502),	-- Sand, Sand Everywhere!
+		ach(15404),	-- Cosmic Empowerment
 	}),
 }));

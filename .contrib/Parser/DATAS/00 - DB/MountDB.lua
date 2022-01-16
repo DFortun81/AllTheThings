@@ -1087,9 +1087,9 @@ i(188674, 359318);	-- Soaring Spelltome
 -- PATCH 9.2.0 --
 -----------------
 -- *Have Source
--- Protoform Synthesis
+-- *Protoform Synthesis
 i(187632, 359232);	-- Adorned Vombata
-i(187670, 359376);	-- Bronze Gastropod
+i(187670, 359376);	-- Bronze Helicid
 i(187663, 359364);	-- Bronzewing Vespoid
 i(187665, 359366);	-- Buzz
 i(187630, 359230);	-- Curious Crystalsniffer
@@ -1105,10 +1105,10 @@ i(187639, 342671); 	-- Pale Regal Cervid
 i(188808, 363701);	-- Patient Bufonid
 i(188809, 363703);	-- Prototype Leaper
 i(187668, 359373);	-- Raptora Swooper
-i(187641, 359277);	-- Sundered Zerethsteed
 i(188810, 363706);	-- Russet Bufonid
+i(187672, 359378);	-- Scarlet Helicid
+i(187641, 359277);	-- Sundered Zerethsteed
 i(187669, 346719);	-- Serenade
-i(187672, 359378);	-- Stabilized Gastropod
 i(187678, 359402);	-- Tarachnid Creeper
 i(187671, 359377);	-- Unsuccessful Prototype Fleetpod
 i(187660, 342678);	-- Vespoid Flutterer

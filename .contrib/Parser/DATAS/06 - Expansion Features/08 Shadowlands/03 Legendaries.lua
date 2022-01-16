@@ -55,6 +55,7 @@ _.ExpansionFeatures =
 						"added 9.1.0.39185",
 					},
 				}),
+				i(190584),	-- Memory of Unity (DK)
 			})),
 			cl(DEMONHUNTER, bubbleDown({ ["classes"] = { DEMONHUNTER, } }, {
 				i(183216),	-- Memory of a Burning Wound
@@ -93,6 +94,7 @@ _.ExpansionFeatures =
 						"added 9.1.0.39185",
 					},
 				}),
+				i(190587),	-- Memory of Unity (DH)
 			})),
 			cl(DRUID, bubbleDown({ ["classes"] = { DRUID, } }, {
 				i(183231),	-- Memory of a Cat-Eye Curio
@@ -139,6 +141,7 @@ _.ExpansionFeatures =
 						"added 9.1.0.39185",
 					},
 				}),
+				i(190588),	-- Memory of Unity (DRUID)
 			})),
 			cl(HUNTER, bubbleDown({ ["classes"] = { HUNTER, } }, {
 				i(183251),	-- Memory of a Craven Strategem
@@ -181,6 +184,7 @@ _.ExpansionFeatures =
 						"added 9.1.0.39185",
 					},
 				}),
+				i(190589),	-- Memory of Unity (HUNTER)
 			})),
 			cl(MAGE, bubbleDown({ ["classes"] = { MAGE, } }, {
 				i(183274),	-- Memory of a Fevered Incantation
@@ -223,6 +227,7 @@ _.ExpansionFeatures =
 						"added 9.1.0.39185",
 					},
 				}),
+				i(190590),	-- Memory of Unity (MAGE)
 			})),
 			cl(MONK, bubbleDown({ ["classes"] = { MONK, } }, {
 				i(183288),	-- Memory of a Celestial Infusion
@@ -265,6 +270,7 @@ _.ExpansionFeatures =
 						"added 9.1.0.39185",
 					},
 				}),
+				i(190591),	-- Memory of Unity (MONK)
 			})),
 			cl(PALADIN, bubbleDown({ ["classes"] = { PALADIN, } }, {
 				i(183307),	-- Memory of a Holy Sigil
@@ -307,6 +313,7 @@ _.ExpansionFeatures =
 						"added 9.1.0.39185",
 					},
 				}),
+				i(190592),	-- Memory of Unity (PALADIN)
 			})),
 			cl(PRIEST, bubbleDown({ ["classes"] = { PRIEST, } }, {
 				i(183318),	-- Memory of a Clear Mind
@@ -349,6 +356,7 @@ _.ExpansionFeatures =
 						"added 9.1.0.39185",
 					},
 				}),
+				i(190593),	-- Memory of Unity (PRIEST)
 			})),
 			cl(ROGUE, bubbleDown({ ["classes"] = { ROGUE, } }, {
 				i(183339),	-- Memory of a Concealed Blunderbuss
@@ -391,6 +399,7 @@ _.ExpansionFeatures =
 						"added 9.1.0.39185",
 					},
 				}),
+				i(190594),	-- Memory of Unity (ROGUE)
 			})),
 			cl(SHAMAN, bubbleDown({ ["classes"] = { SHAMAN, } }, {
 				i(183346),	-- Memory of an Ancestral Reminder
@@ -433,6 +442,7 @@ _.ExpansionFeatures =
 						"added 9.1.0.39185",
 					},
 				}),
+				i(190595),	-- Memory of Unity (SHAMAN)
 			})),
 			cl(WARLOCK, bubbleDown({ ["classes"] = { WARLOCK, } }, {
 				i(183362),	-- Memory of a Malefic Wrath
@@ -475,6 +485,7 @@ _.ExpansionFeatures =
 						"added 9.1.0.39185",
 					},
 				}),
+				i(190596),	-- Memory of Unity (WARLOCK)
 			})),
 			cl(WARRIOR, bubbleDown({ ["classes"] = { WARRIOR, } }, {
 				i(183382),	-- Memory of a Battlelord
@@ -517,6 +528,7 @@ _.ExpansionFeatures =
 						"added 9.1.0.39185",
 					},
 				}),
+				i(190598),	-- Memory of Unity (WARRIOR)
 			})),
 		})),
 	}),
