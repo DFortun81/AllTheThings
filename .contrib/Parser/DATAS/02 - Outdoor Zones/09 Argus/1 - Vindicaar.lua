@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root("Zones", {
 	m(905, {	-- Argus
 		m(886, {	-- Vindicaar
 			["icon"] = "Interface\\Icons\\inv_lightforgedmechsuit",
@@ -674,4 +673,15 @@ _.Zones =
 			},
 		}),
 	}),
-};
+});
+
+root("HiddenQuestTriggers", {
+	m(905, {	-- Argus
+		m(886, {	-- Vindicaar
+			-- TODO: verify these
+			-- q(48449),	-- Activating Light's Judgment
+			-- q(48450),	-- Activating Shroud of Arcane Echoes / Light's Judgment
+			-- q(48451),	-- Activating Shroud of Arcane Echoes
+		}),
+	}),
+});

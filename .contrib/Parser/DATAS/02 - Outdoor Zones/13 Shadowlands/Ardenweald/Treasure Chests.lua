@@ -395,12 +395,23 @@ _.Zones =
 						}),
 					}),
 					o(353686, {	-- Lunarlight Pod
-						-- TODO: not 100% on object ID/coord
 						["description"] = "When you first get to the treasure, it is called |cFFFFFFFFDim Lunarlight Pod|r.  To light it up and make it lootable, run through 5 nearby |cFFFFFFFFLunarlight Buds|r.\n\nYou can /tar the buds, so just run around in a circle close to the treasure and spam a target macro to find each one.",
 						["questID"] = 60794,
 						["isDaily"] = true,
 						["coord"] = { 61.2, 56.9, ARDENWEALD },
 						["g"] = sharedData({["isDaily"] = true}, {
+							n(170368,{	-- Lunarlight Bud
+								["questID"] = 60820,
+								["coords"] = {
+									{ 60.5, 56.4, ARDENWEALD },
+								},
+							}),
+							n(170367,{	-- Lunarlight Bud
+								["questID"] = 60821,
+								["coords"] = {
+									{ 60.4, 57.3, ARDENWEALD },
+								},
+							}),
 							n(170366,{	-- Lunarlight Bud
 								["questID"] = 60822,
 								["coords"] = {
@@ -411,18 +422,6 @@ _.Zones =
 								["questID"] = 60823,
 								["coords"] = {
 									{ 61.4, 56.3, ARDENWEALD },
-								},
-							}),
-							n(169303,{	-- Lunarlight Bud
-								["questID"] = 60820,
-								["coords"] = {
-									{ 60.5, 56.4, ARDENWEALD },
-								},
-							}),
-							n(170367,{	-- Lunarlight Bud
-								["questID"] = 60821,
-								["coords"] = {
-									{ 60.4, 57.3, ARDENWEALD },
 								},
 							}),
 							n(170364,{	-- Lunarlight Bud

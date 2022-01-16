@@ -67,7 +67,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 
 WISPS_OF_MEMORY.customCollect = nil;
 
-root("HiddenQuestTriggers", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_VEN" }, {
+root("HiddenQuestTriggers", tier(SL_TIER, {
 	n(VENTHYR, {
 		n(RENOWN, {
 			q(62750),	-- hitting Renown 19
@@ -85,7 +85,7 @@ root("HiddenQuestTriggers", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_C
 			q(64410),	-- hitting Renown 48 [Priest] (received Memory of Shadow Word: Manipulation)
 			q(64411),	-- hitting Renown 48 [Rogue] (received Memory of the Obedient)
 			q(64415),	-- hitting Renown 48 [Shaman] (received Memory of the Elemental Conduit)
-			-- q( ),	-- hitting Renown 48 [Warlock] (received Memory of the Contained Perpetual Explosion)
+			q(64422),	-- hitting Renown 48 [Warlock] (received Memory of the Contained Perpetual Explosion)
 			q(64407),	-- hitting Renown 48 [Warrior] (received Memory of the Sinful Surge)
 			q(64134),	-- hitting Renown 50
 			q(64452),	-- hitting Renown 52
@@ -103,4 +103,4 @@ root("HiddenQuestTriggers", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_C
 			q(65114),	-- hitting Renown 24 (Anima instead of Soulkeeper Upgrade)
 		}),
 	}),
-})));
+}));

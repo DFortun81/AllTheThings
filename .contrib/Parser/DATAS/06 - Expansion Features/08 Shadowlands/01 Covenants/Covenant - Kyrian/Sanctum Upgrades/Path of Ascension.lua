@@ -720,7 +720,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 											},
 										}),
 									}),
-									n(172482, {	-- Mad Mortimer
+									n(172325, {	-- Mad Mortimer	-- TODO: Verify NPCID
 										["crs"] = {
 											172099, -- Mort
 											172101,	-- Ortim
@@ -940,7 +940,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 											DAUNTLESS_DUSKRUNNER,	-- (MOUNT!)
 										}),
 									}),
-									n(172482, {	-- Mad Mortimer
+									n(172325, {	-- Mad Mortimer	-- TODO: Verify NPCID
 										["crs"] = {
 											172099, -- Mort
 											172101,	-- Ortim
@@ -1095,7 +1095,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 											i(184452),	-- Reverent Helm
 										}),
 									}),
-									n(172482, {	-- Mad Mortimer
+									n(172325, {	-- Mad Mortimer	-- TODO: Verify NPCID
 										["crs"] = {
 											172099, -- Mort
 											172101,	-- Ortim

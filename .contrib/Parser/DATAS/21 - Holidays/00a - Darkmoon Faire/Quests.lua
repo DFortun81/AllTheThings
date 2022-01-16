@@ -131,7 +131,10 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 			["isMonthly"] = true,
 			["provider"] = { "n", 14844 },	-- Sylvannia
 			["coord"] = { 50.5, 69.5, 407 },
-			["cost"] = { { "i", 1645, 5 } },	-- x5 Moonberry Juice
+			["cost"] = {
+				{ "i", 19299, 5 },	-- x5 Fizzy faire Drink
+				{ "i", 1645, 5 },	-- x5 Moonberry Juice
+			},
 		}),
 		q(29478, {	-- A Fizzy Fusion
 			["requireSkill"] = ALCHEMY,
@@ -514,6 +517,9 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 			["isMonthly"] = true,
 			["provider"] = { "i", 105891 },	-- Moonfang's Pelt
 			["coord"] = { 39.3, 43.6, 407 },
+			["g"] = {
+				currency(515),	-- 10x DMF Prize Ticket
+			},
 		}),
 		q(7903, {	-- Evil Bat Eyes
 			["u"] = REMOVED_FROM_GAME,

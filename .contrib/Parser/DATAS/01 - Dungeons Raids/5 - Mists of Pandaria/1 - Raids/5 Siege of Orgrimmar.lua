@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(MOP_TIER, {
+root("Instances", tier(MOP_TIER, {
 	inst(369, {	-- Siege of Orgrimmar
 		["isRaid"] = true,
 		["coords"] = {
@@ -3680,10 +3680,17 @@ _.Instances = { tier(MOP_TIER, {
 			}),
 		},
 	}),
-})};
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+}));
+
+root("HiddenQuestTriggers", {
+	q(33345),	-- Dark Shaman Weekly Attempt
+	q(42509),	-- Iron Juggernaut for Hunters attempting/receiving "Pile of Juggernaut Parts" (137654)
+	q(42538),	-- Siegecrafter Blackfuse for Hunters attempting/receiving "Blackfuse's Power Core" (138097)
+});
+
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(MOP_TIER, {
-		inst(369, {	-- Siege of Orgrimmar
+		m(556, {	-- Siege of Orgrimmar
 			i(104986),	-- Unrepentant Heels
 			i(102312),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Boss X Loot X - Agi DPS Trinket (5)
 			i(102313),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Boss X Loot X - Int Hit Trinket (5)
@@ -3694,7 +3701,4 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(103825),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Wildcard - Int Hit Ring
 		}),
 	}),
-});
-_.HiddenQuestTriggers = {
-	q(33345),	-- Dark Shaman Weekly Attempt
-};
+}));

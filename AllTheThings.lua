@@ -20282,6 +20282,9 @@ app.ProcessAuctionData = function()
 end
 
 app.OpenAuctionModule = function(self)
+	-- TODO: someday someone might fix this AH functionality...
+	if true then return; end
+
 	if IsAddOnLoaded("TradeSkillMaster") then -- Why, TradeSkillMaster, why are you like this?
 		C_Timer.After(2, function() end);
 	end

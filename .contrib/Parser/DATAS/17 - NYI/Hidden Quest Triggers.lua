@@ -1359,13 +1359,9 @@ _.HiddenQuestTriggers = {
 		q(47869),	-- triggered when turning in "Light's Exodus," no info in wowhead
 		q(48668),	-- Lightforged Beacon: City Center — triggers during the cutscene while on "Into the Night"
 		q(47888),	-- triggered when turning in "Alone in the Abyss," no info on wowhead
-		q(48451),	-- Light's Judgment first time tracking quest?
 		q(48858),	-- Light's Judgment active tracking quest?
-		q(48449),	-- Lightforged Warframe first time tracking quest?
 		q(48859),	-- Lightforged Warframe active tracking quest?
-		-- q(48450),	-- Fel Heart of Argus first time tracking quest? -- TODO: wrong ID?
 		q(48860),	-- Fel Heart of Argus active tracking quest?
-		-- q(48450),	-- Shroud of Arcane Echoes first time tracking quest? -- TODO: wrong ID?
 		q(48579),	-- Shroud of Arcane Echoes active tracking quest?
 		q(48281),	-- getting into the Lightforged Warframe during Dawn of Justice
 		q(49161),	-- triggered when turning in #48461, "Where They Least Expect It"

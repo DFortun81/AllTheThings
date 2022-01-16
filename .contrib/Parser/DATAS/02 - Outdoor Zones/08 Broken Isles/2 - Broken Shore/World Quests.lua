@@ -100,11 +100,7 @@ _.Zones =
 				q(46075),	-- Relic Hunting
 				q(46076),	-- Restless Spirits
 				q(46175, {	-- Rolling Thunder
-					["g"] = {
-						ach(11607, {	-- They See Me Rolling
-							["description"] = "You can only get this achievement when this quest is active.  If your barrel takes damage, you can let it regenerate before rolling to the end of the path and completing the quest.",
-						}),
-					},
+					ach(11607),	-- They See Me Rolling
 				}),
 				q(46001),	-- Rules of the Hunt
 				q(45550),	-- Salving the Corruption

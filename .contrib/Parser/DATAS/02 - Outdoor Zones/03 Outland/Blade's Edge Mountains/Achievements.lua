@@ -1,9 +1,8 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
--- #if IF AFTER WRATH
-_.Zones =
-{
+-- #if AFTER WRATH
+root("Zones", {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(BLADES_EDGE_MOUNTAINS, {
 			n(ACHIEVEMENTS, {
@@ -48,5 +47,5 @@ _.Zones =
 			}),
 		}),
 	})),
-};
+});
 -- #endif

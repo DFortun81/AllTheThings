@@ -445,18 +445,60 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									}),
 								},
 							}),
+							n(161270, {	-- Chordy
+								["sourceQuests"] = { 60041 },	-- Build-A-Bomination
+								["coord"] = { 55.1, 68.6, MALDRAXXUS },
+								["g"] = {
+									i(182489, {	-- Stitched Harbinger's Greatcloak
+										["description"] = "This cloak is only awarded to plate characters.",
+									}),
+									i(182498, {	-- Stitched Wraith's Cloak
+										["description"] = "This cloak is only awarded to leather characters.",
+									}),
+									i(182507, {	-- Stitched Conjurer's Cape
+										["description"] = "This cloak is only awarded to cloth characters.",
+									}),
+									i(182516, {	-- Stitched Tactician's Drape
+										["description"] = "This cloak is only awarded to mail characters.",
+									}),
+								},
+							}),
+							n(158300, {	-- Flytrap
+								["sourceQuests"] = { 57597 },	-- Construct Body: Flytrap
+								["coord"] = { 54.3, 68.1, MALDRAXXUS },
+								["g"] = {
+									i(182501),	-- Stitched Conjurer's Slippers
+									i(182483),	-- Stitched Harbinger's Stompers
+									i(182510),	-- Stitched Tactician's Sabatons
+									i(182492),	-- Stitched Wraith's Boots
+								},
+							}),
+							n(158301, {	-- Marz
+								["sourceQuests"] = { 57611 },	-- Construct Body: Marz
+								["coord"] = { 54.2, 68.6, MALDRAXXUS },
+								["g"] = {
+									i(182482),	-- Stitched Harbinger's Chestguard
+									i(182500),	-- Stitched Conjurer's Tunic
+									i(182491),	-- Stitched Wraith's Jerkin
+									i(182509),	-- Stitched Tactician's Hauberk
+								},
+							}),
+							n(159241, {	-- Roseboil
+								["sourceQuests"] = { 57605 },	-- Construct Body: Roseboil
+								["coord"] = { 55.1, 68.1, MALDRAXXUS },
+								["g"] = {
+									i(182496),	-- Stitched Wraith's Belt
+									i(182487),	-- Stitched Harbinger's Warbelt
+									i(182505),	-- Stitched Conjurer's Cinch
+									i(182514),	-- Stitched Tactician's Girdle
+								},
+							}),
 							n(QUESTS, {
 								q(61510, {	-- A Bountiful Haul
 									["sourceQuests"] = { 60041 },	-- Build-A-Bomination
 									["provider"] = { "n", 161270 },    -- Chordy
 									["coord"] = { 55.1, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
-									["g"] = {
-										i(182489),	-- Stitched Harbinger's Greatcloak
-										i(182498),	-- Stitched Wraith's Cloak
-										i(182507),	-- Stitched Conjurer's Cape
-										i(182516),	-- Stitched Tactician's Drape
-									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(62213, {    -- A Brokered Deal
@@ -496,12 +538,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										167162,	-- Marz (Ghost)
 									},
 									["isWeekly"] = true,
-									["g"] = {
-										i(182482),	-- Stitched Harbinger's Chestguard
-										i(182500),	-- Stitched Conjurer's Tunic
-										i(182491),	-- Stitched Wraith's Jerkin
-										i(182509),	-- Stitched Tactician's Hauberk
-									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(62256, {    -- Asset Extraction
@@ -543,12 +579,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["provider"] = { "n", 158300 },    -- Flytrap
 									["coord"] = { 54.3, 68.1, MALDRAXXUS },
 									["isWeekly"] = true,
-									["g"] = {
-										i(182501),	-- Stitched Conjurer's Slippers
-										i(182483),	-- Stitched Harbinger's Stompers
-										i(182510),	-- Stitched Tactician's Sabatons
-										i(182492),	-- Stitched Wraith's Boots
-									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(61522, {	-- Corpse Run
@@ -556,12 +586,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["provider"] = { "n", 158300 },    -- Flytrap
 									["coord"] = { 54.3, 68.1, MALDRAXXUS },
 									["isWeekly"] = true,
-									["g"] = {
-										i(182501),	-- Stitched Conjurer's Slippers
-										i(182483),	-- Stitched Harbinger's Stompers
-										i(182510),	-- Stitched Tactician's Sabatons
-										i(182492),	-- Stitched Wraith's Boots
-									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(61523, {	-- Corpse Run
@@ -569,12 +593,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["provider"] = { "n", 158300 },    -- Flytrap
 									["coord"] = { 54.3, 68.1, MALDRAXXUS },
 									["isWeekly"] = true,
-									["g"] = {
-										i(182501),	-- Stitched Conjurer's Slippers
-										i(182483),	-- Stitched Harbinger's Stompers
-										i(182510),	-- Stitched Tactician's Sabatons
-										i(182492),	-- Stitched Wraith's Boots
-									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(60765, {    -- Cure For All Ills
@@ -585,12 +603,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 									["coord"] = { 55.1, 68.1, MALDRAXXUS },
 									["isWeekly"] = true,
-									["g"] = {
-										i(182496),	-- Stitched Wraith's Belt
-										i(182487),	-- Stitched Harbinger's Warbelt
-										i(182505),	-- Stitched Conjurer's Cinch
-										i(182514),	-- Stitched Tactician's Girdle
-									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(62217, {	-- Field Training
@@ -601,12 +613,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 									["coord"] = { 54.2, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
-									["g"] = {
-										i(182482),	-- Stitched Harbinger's Chestguard
-										i(182500),	-- Stitched Conjurer's Tunic
-										i(182491),	-- Stitched Wraith's Jerkin
-										i(182509),	-- Stitched Tactician's Hauberk
-									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(58668, {	-- Find The Way
@@ -622,12 +628,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 									["coord"] = { 55.1, 68.1, MALDRAXXUS },
 									["isWeekly"] = true,
-									["g"] = {
-										i(182496),	-- Stitched Wraith's Belt
-										i(182487),	-- Stitched Harbinger's Warbelt
-										i(182505),	-- Stitched Conjurer's Cinch
-										i(182514),	-- Stitched Tactician's Girdle
-									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(58680, {	-- Loose Threads
@@ -650,12 +650,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["provider"] = { "n", 161270 },	-- Chordy
 									["coord"] = { 55.1, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
-									["g"] = {
-										i(182489),	-- Stitched Harbinger's Greatcloak
-										i(182498),	-- Stitched Wraith's Cloak
-										i(182507),	-- Stitched Conjurer's Cape
-										i(182516),	-- Stitched Tactician's Drape
-									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(58677, {	-- Skin in the Game
@@ -669,18 +663,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["coord"] = { 55.1, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
 									["g"] = {
-										i(182489, {	-- Stitched Harbinger's Greatcloak
-											["description"] = "This cloak is only awarded to plate characters.",
-										}),
-										i(182498, {	-- Stitched Wraith's Cloak
-											["description"] = "This cloak is only awarded to leather characters.",
-										}),
-										i(182507, {	-- Stitched Conjurer's Cape
-											["description"] = "This cloak is only awarded to cloth characters.",
-										}),
-										i(182516, {	-- Stitched Tactician's Drape
-											["description"] = "This cloak is only awarded to mail characters.",
-										}),
 									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
@@ -711,12 +693,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["provider"] = { "n", 161270 },	-- Chordy
 									["coord"] = { 55.1, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
-									["g"] = {
-										i(182489),	-- Stitched Harbinger's Greatcloak
-										i(182498),	-- Stitched Wraith's Cloak
-										i(182507),	-- Stitched Conjurer's Cape
-										i(182516),	-- Stitched Tactician's Drape
-									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(62216, {	-- Training Program
@@ -727,12 +703,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 									["coord"] = { 54.2, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
-									["g"] = {
-										i(182482),	-- Stitched Harbinger's Chestguard
-										i(182500),	-- Stitched Conjurer's Tunic
-										i(182491),	-- Stitched Wraith's Jerkin
-										i(182509),	-- Stitched Tactician's Hauberk
-									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(58686, {	-- Weapon of Mass Construction
@@ -799,6 +769,55 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									}),
 								},
 							}),
+							n(159226, {	-- Sabrina
+								["sourceQuests"] = { 57600 },	-- Construct Body: Sabrina
+								["coord"] = { 54.8, 68.8, MALDRAXXUS },
+								["g"] = {
+									i(182485),	-- Stitched Harbinger's Greaves
+									i(182494),	-- Stitched Wraith's Breeches
+									i(182512),	-- Stitched Tactician's Chausses
+									i(182503),	-- Stitched Conjurer's Leggings
+								},
+							}),
+							n(159198, {	-- The Professor
+								["sourceQuests"] = { 57601 },	-- Construct Body: The Professor
+								["coord"] = { 55.4, 68.2, MALDRAXXUS },
+								["g"] = {
+									i(182513),	-- Stitched Tactician's Spaulders
+									i(182504),	-- Stitched Conjurer's Mantle
+									i(182495),	-- Stitched Wraith's Shoulders
+									i(182486),	-- Stitched Harbinger's Pauldrons
+								},
+							}),
+							n(159212, {	-- Toothpick
+								["sourceQuests"] = { 58414 },	-- Construct Body: Toothpick
+								["coord"] = { 54.9, 67.8, MALDRAXXUS },
+								["g"] = {
+									i(182488),	-- Stitched Harbinger's Vambraces
+									i(182497),	-- Stitched Wraith's Armguards
+									i(182506),	-- Stitched Conjurer's Wristwraps
+									i(182515),	-- Stitched Tactician's Bracers
+									o(357771, {	-- Burried Cache (Ardenweald version)
+										["g"] = {
+											i(183755),	-- Ardenweald Wreath
+											i(183826),	-- Big Floppy Hat
+											i(183789),	-- Six-League Pack
+											i(181797),	-- Strange Cloth
+											i(183759),	-- Unusually Large Cranium
+											i(183760),	-- Venthyr Spectacles
+										},
+									}),
+									o(357937, {	-- Burried Cache (Revendreth version)
+										["g"] = {
+											i(183826),	-- Big Floppy Hat
+											i(183789),	-- Six-League Pack
+											i(181797),	-- Strange Cloth
+											i(183759),	-- Unusually Large Cranium
+											i(183760),	-- Venthyr Spectacles
+										},
+									}),
+								},
+							}),
 							n(QUESTS, {
 								q(62244, {	-- Digging Around
 									["sourceQuests"] = { 58414 },	-- Construct Body: Toothpick
@@ -809,21 +828,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["coord"] = { 54.9, 67.8, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
-									["g"] = {
-										i(182488),	-- Stitched Harbinger's Vambraces
-										i(182497),	-- Stitched Wraith's Armguards
-										i(182506),	-- Stitched Conjurer's Wristwraps
-										i(182515),	-- Stitched Tactician's Bracers
-										o(357937, {	-- Burried Cache (Revendreth version)
-											["g"] = {
-												i(183826),	-- Big Floppy Hat
-												i(183789),	-- Six-League Pack
-												i(181797),	-- Strange Cloth
-												i(183759),	-- Unusually Large Cranium
-												i(183760),	-- Venthyr Spectacles
-											},
-										}),
-									},
 								}),
 								q(59615, {	-- Every Dog Has Its Day
 									["description"] = "Kill Soul Harvester Anka at 70.1, 40.8 to obtain the Soul Harvester Key, which opens the cage and makes the quest available.  The key will only drop if you have tier 2 or higher Abomination Table.",
@@ -839,12 +843,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 									["coord"] = { 54.8, 68.8, MALDRAXXUS },
 									["isWeekly"] = true,
-									["g"] = {
-										i(182485),	-- Stitched Harbinger's Greaves
-										i(182494),	-- Stitched Wraith's Breeches
-										i(182512),	-- Stitched Tactician's Chausses
-										i(182503),	-- Stitched Conjurer's Leggings
-									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(60230, {	-- More the Merrier
@@ -860,22 +858,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["coord"] = { 54.9, 67.8, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
-									["g"] = {
-										i(182488),	-- Stitched Harbinger's Vambraces
-										i(182497),	-- Stitched Wraith's Armguards
-										i(182506),	-- Stitched Conjurer's Wristwraps
-										i(182515),	-- Stitched Tactician's Bracers
-										o(357771, {	-- Burried Cache (Ardenweald version)
-											["g"] = {
-												i(183755),	-- Ardenweald Wreath
-												i(183826),	-- Big Floppy Hat
-												i(183789),	-- Six-League Pack
-												i(181797),	-- Strange Cloth
-												i(183759),	-- Unusually Large Cranium
-												i(183760),	-- Venthyr Spectacles
-											},
-										}),
-									},
 								}),
 								q(62294, {	-- One Lich's Trash...
 									["sourceQuests"] = { 57601 },	-- Construct Body: The Professor
@@ -885,12 +867,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 									["coord"] = { 55.4, 68.2, MALDRAXXUS },
 									["isWeekly"] = true,
-									["g"] = {
-										i(182513),	-- Stitched Tactician's Spaulders
-										i(182504),	-- Stitched Conjurer's Mantle
-										i(182495),	-- Stitched Wraith's Shoulders
-										i(182486),	-- Stitched Harbinger's Pauldrons
-									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(61996, {	-- Say The Magic Words
@@ -901,12 +877,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 									["coord"] = { 54.8, 68.8, MALDRAXXUS },
 									["isWeekly"] = true,
-									["g"] = {
-										i(182485),	-- Stitched Harbinger's Greaves
-										i(182494),	-- Stitched Wraith's Breeches
-										i(182512),	-- Stitched Tactician's Chausses
-										i(182503),	-- Stitched Conjurer's Leggings
-									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(58515, {	-- Scrounging for Scrolls
@@ -917,12 +887,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 									["coord"] = { 55.4, 68.2, MALDRAXXUS },
 									["isWeekly"] = true,
-									["g"] = {
-										i(182513),	-- Stitched Tactician's Spaulders
-										i(182504),	-- Stitched Conjurer's Mantle
-										i(182495),	-- Stitched Wraith's Shoulders
-										i(182486),	-- Stitched Harbinger's Pauldrons
-									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(60283, {	-- Specter Of War: Visectus
@@ -938,12 +902,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 									["coord"] = { 54.8, 68.8, MALDRAXXUS },
 									["isWeekly"] = true,
-									["g"] = {
-										i(182485),	-- Stitched Harbinger's Greaves
-										i(182494),	-- Stitched Wraith's Breeches
-										i(182512),	-- Stitched Tactician's Chausses
-										i(182503),	-- Stitched Conjurer's Leggings
-									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(58525, {	-- The Two Sides of History
@@ -954,12 +912,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 									["coord"] = { 55.4, 68.2, MALDRAXXUS },
 									["isWeekly"] = true,
-									["g"] = {
-										i(182513),	-- Stitched Tactician's Spaulders
-										i(182504),	-- Stitched Conjurer's Mantle
-										i(182495),	-- Stitched Wraith's Shoulders
-										i(182486),	-- Stitched Harbinger's Pauldrons
-									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 							}),
@@ -1004,14 +956,32 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									}),
 								},
 							}),
+							n(159240, {	-- Gas Bag
+								["sourceQuests"] = { 57608 },	-- Construct Body: Gas Bag
+								["coord"] = { 54.2, 68.0, MALDRAXXUS },
+								["g"] = {
+									i(182499),	-- Stitched Conjurer's Cowl
+									i(182490),	-- Stitched Wraith's Visage
+									i(182481),	-- Stitched Harbinger's Greathelm
+									i(182508),	-- Stitched Tactician's Faceguard
+								},
+							}),
+							n(159214, {	-- Guillotine
+								["sourceQuests"] = { 58416 },	-- Construct Body: Guillotine
+								["coord"] = { 54.4, 67.9, MALDRAXXUS },
+								["g"] = {
+									i(182493),	-- Stitched Wraith's Stranglers
+									i(182484),	-- Stitched Harbinger's Crushers
+									i(182502),	-- Stitched Conjurer's Gloves
+									i(182511),	-- Stitched Tactician's Gauntlets
+								},
+							}),
 							n(QUESTS, {
 								q(59043, {	-- Baker's Dozen
 									["sourceQuests"] = { 60216 },	-- Construct Body: Mama Tomalin
 									["provider"] = { "n", 161678 },	-- Mama Tomalin
 									["coord"] = { 55.3, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
-									["g"] = {
-									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(60342, {	-- Cut 'Em Down to Size
@@ -1022,12 +992,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 									["coord"] = { 54.4, 67.9, MALDRAXXUS },
 									["isWeekly"] = true,
-									["g"] = {
-										i(182493),	-- Stitched Wraith's Stranglers
-										i(182484),	-- Stitched Harbinger's Crushers
-										i(182502),	-- Stitched Conjurer's Gloves
-										i(182511),	-- Stitched Tactician's Gauntlets
-									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(56470, {	-- Give A Dog A Bone
@@ -1035,8 +999,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["provider"] = { "n", 161678 },	-- Mama Tomalin
 									["coord"] = { 55.3, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
-									["g"] = {
-									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(62261, {	-- Grinder
@@ -1047,12 +1009,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 									["coord"] = { 54.4, 67.9, MALDRAXXUS },
 									["isWeekly"] = true,
-									["g"] = {
-										i(182493),	-- Stitched Wraith's Stranglers
-										i(182484),	-- Stitched Harbinger's Crushers
-										i(182502),	-- Stitched Conjurer's Gloves
-										i(182511),	-- Stitched Tactician's Gauntlets
-									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(60340, {	-- Hands on Approach
@@ -1063,12 +1019,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 									["coord"] = { 54.4, 67.9, MALDRAXXUS },
 									["isWeekly"] = true,
-									["g"] = {
-										i(182493),	-- Stitched Wraith's Stranglers
-										i(182484),	-- Stitched Harbinger's Crushers
-										i(182502),	-- Stitched Conjurer's Gloves
-										i(182511),	-- Stitched Tactician's Gauntlets
-									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(62407, {	-- Herbicidal Tendencies
@@ -1079,12 +1029,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 									["coord"] = { 54.2, 68.0, MALDRAXXUS },
 									["isWeekly"] = true,
-									["g"] = {
-										i(182499),	-- Stitched Conjurer's Cowl
-										i(182490),	-- Stitched Wraith's Visage
-										i(182481),	-- Stitched Harbinger's Greathelm
-										i(182508),	-- Stitched Tactician's Faceguard
-									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(58992, {	-- Pie Not?
@@ -1092,8 +1036,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["provider"] = { "n", 161678 },	-- Mama Tomalin
 									["coord"] = { 55.3, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
-									["g"] = {
-									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(59293, {	-- Special Formula
@@ -1104,12 +1046,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 									["coord"] = { 54.2, 68.0, MALDRAXXUS },
 									["isWeekly"] = true,
-									["g"] = {
-										i(182499),	-- Stitched Conjurer's Cowl
-										i(182490),	-- Stitched Wraith's Visage
-										i(182481),	-- Stitched Harbinger's Greathelm
-										i(182508),	-- Stitched Tactician's Faceguard
-									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(61635, {	-- Troubled Souls
@@ -1153,17 +1089,17 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									q(58411, {
 										["name"] = "Construct Body: Iron Phillip",
 										["cost"] = {
-											{ "i", 178061, 20 },	-- 20xMalleable Flesh
-											{ "i", 183744, 10 },	-- 10xSuperior Parts
-											{ "i", 183475, 1 },		-- 1xIndomitable Hide
+											{ "i", 178061, 20 },	-- 20x Malleable Flesh
+											{ "i", 183744, 10 },	-- 10x Superior Parts
+											{ "i", 183475, 1 },		-- 1x Indomitable Hide
 										},
 									}),
 									q(58413, {
 										["name"] = "Construct Body: Naxx",
 										["cost"] = {
-											{ "i", 178061, 20 },	-- 20xMalleable Flesh
-											{ "i", 183744, 10 },	-- 10xSuperior Parts
-											{ "i", 183519, 1 },		-- 1xNecromantic Oil
+											{ "i", 178061, 20 },	-- 20x Malleable Flesh
+											{ "i", 183744, 10 },	-- 10x Superior Parts
+											{ "i", 183519, 1 },		-- 1x Necromantic Oil
 										},
 									}),
 								},
@@ -1228,63 +1164,32 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									}),
 								},
 							}),
+							n(159199, {	-- Iron Phillip
+								["sourceQuests"] = { 58411 },	-- Construct Body: Iron Phillip
+								["coord"] = { 55.5, 68.4, MALDRAXXUS },
+								["g"] = {
+									i(181806),	-- Regrown Osteowings
+								},
+							}),
+							n(161678, {	-- Mama Tomalin
+								["sourceQuests"] = { 60216 },	-- Construct Body: Mama Tomalin
+								["coord"] = { 55.3, 68.6, MALDRAXXUS },
+								["g"] = {
+									i(181809),	-- Tomalins Seasoning Crystal
+								},
+							}),
+							n(158298, {	-- Naxx
+								["sourceQuests"] = { 58413 },	-- Construct Body: Naxx
+								["coord"] = { 54.8, 68.7, MALDRAXXUS },
+								["g"] = {
+									i(181802),	-- Standard of Death's Chosen
+								},
+							}),
 							n(QUESTS, {
-								q(59043, {	-- Baker's Dozen
-									["sourceQuests"] = { 60216 },	-- Construct Body: Mama Tomalin
-									["provider"] = { "n", 161678 },	-- Mama Tomalin
-									["coord"] = { 55.3, 68.6, MALDRAXXUS },
-									["isWeekly"] = true,
-									["g"] = {
-										i(181809),	-- Tomalins Seasoning Crystal
-									},
-									["_drop"] = { "g" },	-- Superior Parts is included from API
-								}),
-								q(57634, {	-- Bring Your Own
-									["sourceQuests"] = { 58411 },	-- Construct Body: Iron Phillip
-									["provider"] = { "n", 159199 },    -- Iron Phillip
-									["coord"] = { 55.5, 68.4, MALDRAXXUS },
-									-- Tier 5 is required to have the item sometimes show up.
-									["g"] = {
-										i(181806),	-- Regrown Osteowings
-									},
-									["isWeekly"] = true,
-									["_drop"] = { "g" },	-- Superior Parts is included from API
-								}),
-								q(62276, {	-- Drink to the Dead
-									["sourceQuests"] = { 58413 },	-- Construct Body: Naxx
-									["provider"] = { "n", 158298 },    -- Naxx
-									["coord"] = { 54.8, 68.7, MALDRAXXUS },
-									-- Tier 5 is required to have the item sometimes show up.
-									["g"] = {
-										i(181802),	-- Standard of Death's Chosen
-									},
-									["isWeekly"] = true,
-									["_drop"] = { "g" },	-- Superior Parts is included from API
-								}),
-								q(56470, {	-- Give A Dog A Bone
-									["sourceQuests"] = { 60216 },	-- Construct Body: Mama Tomalin
-									["provider"] = { "n", 161678 },	-- Mama Tomalin
-									["coord"] = { 55.3, 68.6, MALDRAXXUS },
-									["isWeekly"] = true,
-									["g"] = {
-										i(181809),	-- Tomalins Seasoning Crystal
-									},
-									["_drop"] = { "g" },	-- Superior Parts is included from API
-								}),
-								q(58992, {	-- Pie Not?
-									["sourceQuests"] = { 60216 },	-- Construct Body: Mama Tomalin
-									["provider"] = { "n", 161678 },	-- Mama Tomalin
-									["coord"] = { 55.3, 68.6, MALDRAXXUS },
-									["isWeekly"] = true,
-									["g"] = {
-										i(181809),	-- Tomalins Seasoning Crystal
-									},
-									["_drop"] = { "g" },	-- Superior Parts is included from API
-								}),
 								q(61637, {	-- Unity
 									["provider"] = { "n", 167150 },	-- Rathan
 									["coord"] = { 55.1, 68.8, MALDRAXXUS },
-									["cost"] = { { "i", 183717, 1 }, },	-- 1xBindings of Wellbeing
+									["cost"] = { { "i", 183717, 1 }, },	-- 1x Bindings of Wellbeing
 								}),
 							}),
 							n(REWARDS, {
