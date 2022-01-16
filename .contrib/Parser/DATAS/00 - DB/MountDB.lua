@@ -1086,7 +1086,7 @@ i(188674, 359318);	-- Soaring Spelltome
 -----------------
 -- PATCH 9.2.0 --
 -----------------
--- *Have Source and is Mounts also
+-- *Have Source
 -- Protoform Synthesis
 i(187632, 359232);	-- Adorned Vombata
 i(187670, 359376);	-- Bronze Gastropod
@@ -1114,7 +1114,7 @@ i(187671, 359377);	-- Unsuccessful Prototype Fleetpod
 i(187660, 342678);	-- Vespoid Flutterer
 
 -- M+
-i(187682, 359407);	-- Wastewarped Deathwalker
+i(187682, 359407);	-- *Wastewarped Deathwalker
 
 -- PvP
 i(189507, 365559);	--* Cosmic Gladiator's Soul Eater
@@ -1124,16 +1124,18 @@ i(187644, 349824);	-- Vicious Warstalker (A)
 i(187642, 349823);	-- Vicious Warstalker (H)
 
 -- Rare Drop?
-i(187676, 342680);	-- Deepstar Aurelid
+i(187676, 342680);	-- *Deepstar Aurelid
 
 -- Torghast?
 i(188736, 363297);	--* Colossal Soulshredder Mawrat
 i(188700, 363178);	-- Colossal Umbrahide Mawrat
 i(188696, 363136);	--* Colossal Ebonclaw Mawrat
 
+-- Achievements
+i(187673, 359381);	--* Cryptic Aurelid
+
 -- PH/UNKNOWN/NYI
 i(187640, 359276);	-- Anointed Protostag
-i(187673, 359381);	--* Cryptic Aurelid
 i(187629, 359229);	-- Heartlight Vombata
 -- Holy Lightstrider(spellID 356802)
 -- Carcinized Zerethsteed(SpellID 359545)

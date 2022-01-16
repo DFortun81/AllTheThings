@@ -205,5 +205,14 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		ach(15327, {	-- Tormented Hero: Shadowlands Season 2
 			title(451),	-- <Name>, the Tormented Hero
 		}),
+		ach(15496),	-- Shadowlands Keystone Explorer: Season Three
+		ach(15498),	-- Shadowlands Keystone Conqueror: Season Three (PH TITLE?!)
+		ach(15499, {	-- Shadowlands Keystone Master: Season Three
+			i(187682),	-- Wastewarped Deathwalker
+		}),
+		ach(15500, {	-- Keystone Hero: Tazavesh, the Veiled Market
+			crit(1),	-- Tazavesh: Streets of Wonder
+			crit(2),	-- Tazavesh: So'leah's Gambit
+		}),
 	}),
 }));

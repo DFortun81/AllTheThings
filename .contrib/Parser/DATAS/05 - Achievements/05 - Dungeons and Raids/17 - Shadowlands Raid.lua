@@ -102,12 +102,15 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 		ach(15131),		-- Whack-A-Soul
 		-- PTR
 		ach(15381),	-- Power ON
-		ach(15386),	-- Shimmering Secrets
-		ach(15315),	-- Amidst Ourselves
-		ach(15400),	-- Where the Wild Beasts Are
-		ach(15398),	-- Those Belong in a Museum!
 		ach(15401),	-- Wisdom Comes From the Desert
+		ach(15398),	-- Xy Never, Ever Marks the Spot.
+		ach(15397),	-- Four Ring Circus
+		ach(15400),	-- Where the Wild Beasts Are
+		ach(15419),	-- The Protoform Matrix
+		ach(15386),	-- Shimmering Secrets
 		ach(15399),	-- Coming to Terms
+		ach(15315),	-- Amidst Ourselves
 		ach(15396),	-- We Are All Made of Stars
+		ach(15494),	-- Damnation Aviation
 	}),
 }));

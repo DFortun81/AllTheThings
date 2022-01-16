@@ -573,6 +573,20 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(15),		-- The Hundred Club (25 player)
 			crit(16),		-- Just Can't Get Enough (25 player)
 		}),
+		ach(15491, {	-- Glory of the Sepulcher Raider
+			-- PH
+			ach(15381),	-- Power ON
+			ach(15401),	-- Wisdom Comes From the Desert
+			ach(15398),	-- Xy Never, Ever Marks the Spot.
+			ach(15397),	-- Four Ring Circus
+			ach(15400),	-- Where the Wild Beasts Are
+			ach(15419),	-- The Protoform Matrix
+			ach(15386),	-- Shimmering Secrets
+			ach(15399),	-- Coming to Terms
+			ach(15315),	-- Amidst Ourselves
+			ach(15396),	-- We Are All Made of Stars
+			ach(15494),	-- Damnation Aviation
+		}),
 		ach(14322, {	-- Glory of the Shadowlands Hero
 			i(184183),		-- Voracious Gorger
 			crit(1),		-- Bountiful Harvest

@@ -190,5 +190,12 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		ach(426, {		-- Warglaives of Azzinoth
 			["classes"] = { WARRIOR, ROGUE, DEATHKNIGHT, MONK, DEMONHUNTER },
 		}),
+		-- PTR 9.2
+		ach(15476, {	-- Hall of Fame: The Jailer (A)
+			-- PH
+		}),
+		ach(15475, {	-- Hall of Fame: The Jailer (H)
+			-- PH
+		}),
 	}),
 }));

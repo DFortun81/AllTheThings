@@ -2041,8 +2041,8 @@ select(2, ...).ObjectNames = {
 	[369438] = "Riftbound Cache",
 	[369439] = "Riftbound Cache",
 	[369440] = "Riftbound Cache",
-<<<<<<< HEAD
 	[370140] = "Damaged Jiro Stash",
+	[370469] = "Spectral Feed",
 	[373543] = "Library Vault",
 	[373548] = "Template Archive",
 	[373561] = "Forgotten Proto-Vault",
@@ -2075,9 +2075,6 @@ select(2, ...).ObjectNames = {
 	[375493] = "Unpollinated Bud",
 	[375495] = "Undulating Foliage",
 	[375530] = "Forgotten Treasure Vault",
-=======
-	[370469] = "Spectral Feed",
->>>>>>> origin/master
 	[9962198] = "Outcast's Makeshift Muckpool",
 	[9999890] = "Corrupted Loot",
 	[9999891] = "Main Objective Only",

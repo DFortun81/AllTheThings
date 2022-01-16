@@ -130,7 +130,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		un(REMOVED_FROM_GAME, ach(4600, {	-- Wrathful Gladiator's Frost Wyrm
 			un(REMOVED_FROM_GAME, i(50435)),	-- Wrathful Gladiator's Frost Wyrm
 		})),
-		-- PTR
+		-- PTR 9.2
 		pvp(ach(15384, {	-- Cosmic Gladiator's Soul Eater
 			i(189507),	-- Cosmic Gladiator's Soul Eater
 		})),

@@ -16,6 +16,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 		ach(14614),	-- Castle Vain (Castle Nathria)
 		ach(11716),	-- Cataclysmic Catwalk (PvP Season 11)
 		ach(12021),	-- Claws Out (PvP Season 23, 24, or 25)
+		ach(15408),	-- Cosmic Chic
 		ach(11723),	-- Cruel Intentions (PvP Season 21 or 22)
 		ach(13385),	-- Daz'aling Attire
 		ach(15110),	-- Dominating the Catwalk (Sanctum of Domination)
@@ -38,6 +39,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 			ach(10689),	-- Fashionista: Weapon & Off-Hand
 			ach(10688),	-- Fashionista: Wrist
 		}),
+		ach(15409),	-- First Wonders
 		ach(11754),	-- Glamour of Twilight (The Bastion of Twilight and Blackwing Descent)
 		ach(11755),	-- Hot Couture (Firelands)
 		un(REMOVED_FROM_GAME, ach(14831)),	-- I Live, I Die, I Queue Again (Shadowlands PvP Season 1)

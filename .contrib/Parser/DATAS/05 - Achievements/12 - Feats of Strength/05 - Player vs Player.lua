@@ -1340,7 +1340,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 				["races"] = HORDE_ONLY,
 			}),
 			ach(15350),	-- Rival I: Shadowlands Season 3
-			ach(15378),	-- Rival II: Shadowlands Season 
+			ach(15378),	-- Rival II: Shadowlands Season 3
 		}),
 		un(REMOVED_FROM_GAME, ach(1161, {		-- High Five: 2200
 			un(REMOVED_FROM_GAME, ach(404)),		-- High Five: 2000
@@ -1380,4 +1380,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		})),
 		un(REMOVED_FROM_GAME, ach(8391)),		-- Tournament Participation 2013
 	})),
+	-- PTR 9.2?? idk
+	ach(15347),	-- Cosmic Combatant (A)
+	ach(15346),	-- Cosmic Combatant (H)
 }));
