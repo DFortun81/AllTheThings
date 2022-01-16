@@ -8,7 +8,7 @@
 
 #### Settings and Profiles
 
-We have reviewed our default settings so hopefully they make more sense now. We now default to the Insane Character Completionist Mode. This should only affect new installs.
+We have reviewed our default settings so hopefully they make more sense now. We now default to the Insane Class Completionist Mode. This should only affect new installs.
 
 On a somewhat related note: Profiles are now out of beta and will be enabled for everyone. Your current settings will become your default profile. We will even remember your locked windows state and position/size per-profile!
 
