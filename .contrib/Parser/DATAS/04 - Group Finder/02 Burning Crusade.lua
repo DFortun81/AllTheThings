@@ -21,15 +21,15 @@ _.GroupFinder =
 			i(51979),	-- Earthbound Grips			- 01/15/22
 			i(51977),	-- Earthbound Girdle*
 			i(51983),	-- Stalwart Shoulderguards*	— 4/13/19
-			i(51989),	-- Stalwart Bands*			— 4/12/19
-			i(51987),	-- Stalwart Grips*			— 4/13/19
-			i(51985),	-- Stalwart Belt*			— 4/12/19
+			i(51989),	-- Stalwart Bands*			— 01/17/22
+			i(51987),	-- Stalwart Grips*			— 01/17/22
+			i(51985),	-- Stalwart Belt*			— 01/17/22
 			i(51990),	-- Stalwart Treads*			— 4/13/19
 			i(51993),	-- Turbulent Cloak*
 			i(160599),	-- Turbulent Cloak*			- 01/15/22
 			i(160600),	-- Turbulent Cloak (screenshot from Emsarrev on Discord)
 			i(51995),	-- Turbulent Necklace*		— 12/27/21
-			i(160609),	-- Turbulent Necklace		- 01/15/22
+			i(160609),	-- Turbulent Necklace		— 01/15/22
 			i(160610),	-- Turbulent Necklace*		— 4/12/19
 			i(51991),	-- Turbulent Signet*
 			i(160605),	-- Turbulent Signet*		- 01/15/22

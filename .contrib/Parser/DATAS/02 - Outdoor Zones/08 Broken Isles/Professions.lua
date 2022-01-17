@@ -753,16 +753,8 @@ _.Zones =
 						["provider"] = { "n", 102195 },	-- Fargo Flintlocke
 						["coord"] = { 65.2, 24.8, AZSUNA },
 					}),
-					q(40858, {	-- The Missing Pieces
-						["sourceQuest"] = 40855,	-- Our Man in Azsuna
-						["provider"] = { "n", 102195 },	-- Fargo Flintlocke
-						["coord"] = { 65.2, 24.8, AZSUNA },
-						["g"] = {
-							recipe(198976),	-- Schematic: Auto-Hammer [Rank 1]
-						},
-					}),
 					q(40859, {	-- The Latest Fashion: Headguns!
-						["sourceQuest"] = 40856,	-- It'll Cost You
+						["sourceQuest"] = 40855,	-- Our Man in Azsuna
 						["provider"] = { "n", 102195 },	-- Fargo Flintlocke
 						["coord"] = { 65.2, 24.8, AZSUNA },
 						["g"] = {
@@ -770,6 +762,17 @@ _.Zones =
 							recipe(198965),	-- Schematic: Tactical Headgun
 							recipe(198966),	-- Schematic: Bolt-Action Headgun
 							recipe(198967),	-- Schematic: Reinforced Headgun
+						},
+					}),
+					q(40858, {	-- The Missing Pieces
+						["sourceQuests"] = {
+							40856,	-- It'll Cost You
+							40859,	-- The Latest Fashion: Headguns!
+						},
+						["provider"] = { "n", 102195 },	-- Fargo Flintlocke
+						["coord"] = { 65.2, 24.8, AZSUNA },
+						["g"] = {
+							recipe(198976),	-- Schematic: Auto-Hammer [Rank 1]
 						},
 					}),
 					q(40863, {	-- Always the Last Thing
@@ -789,23 +792,34 @@ _.Zones =
 							recipe(198988),	-- Reaves Module: Snack Distrubition Mode
 						},
 					}),
-					q(40860, {	-- Resupplying the Line
+					q(46128, {	-- Time for a Recharge
 						["sourceQuests"] = { 40864 },	-- Modular Modifications
 						["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
 						["coord"] = { 38.6, 25.0, LEGION_DALARAN },
+						["g"] = {
+							recipe(235775),	-- Rechargeable Reaves Battery
+						},
+					}),
+					q(40860, {	-- Resupplying the Line
+						["sourceQuests"] = { 40858 },	-- The Missing Pieces
+						["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
+						["coord"] = { 38.6, 25.0, LEGION_DALARAN },
+					}),
+					q(40862, {	-- All Charged Up
+						["sourceQuests"] = { 40860 },	-- Resupplying the Line
+						["provider"] = { "n", 102197 },	-- Fargo Flintlocke
+						["coord"] = { 59.8, 62.2, VALSHARAH },
 					}),
 					q(40861, {	-- In My Sights
 						["sourceQuests"] = { 40860 },	-- Resupplying the Line
 						["provider"] = { "n", 102197 },	-- Fargo Flintlocke
 						["coord"] = { 59.8, 62.2, VALSHARAH },
 					}),
-					q(40862, {	-- All Charged Up
-						["sourceQuest"] = 40861,	-- In My Sights
-						["provider"] = { "n", 102197 },	-- Fargo Flintlocke
-						["coord"] = { 59.8, 62.2, VALSHARAH },
-					}),
 					q(40870, {	-- Here Comes the BOOM!
-						["sourceQuests"] = { 40862 },	-- All Charged Up
+						["sourceQuests"] = {
+							40862,	-- All Charged Up
+							40861,	-- In My Sights
+						},
 						["provider"] = { "n", 93520 },	-- Didi the Wrench
 						["coord"] = { 38.6, 25.0, LEGION_DALARAN },
 						["g"] = {
@@ -813,7 +827,10 @@ _.Zones =
 						},
 					}),
 					q(40869, {	-- Fire and Forget
-						["sourceQuests"] = { 40870 },	-- Here Comes the BOOM!
+						["sourceQuests"] = {
+							40862,	-- All Charged Up
+							40861,	-- In My Sights
+						},
 						["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
 						["coord"] = { 38.6, 25.0, LEGION_DALARAN },
 						["g"] = {
@@ -821,9 +838,17 @@ _.Zones =
 						},
 					}),
 					q(40865, {	-- It's Not Rocket Science
-						["sourceQuests"] = { 40869 },	-- Fire and Forget
+						["sourceQuests"] = {
+							40862,	-- All Charged Up
+							40861,	-- In My Sights
+						},
 						["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
 						["coord"] = { 38.6, 25.0, LEGION_DALARAN },
+					}),
+					q(40867, {	-- Bubble Baubles
+						["sourceQuests"] = { 40865 },	-- It's Not Rocket Science
+						["provider"] = { "n", 102198 },	-- Fargo Flintlocke
+						["coord"] = { 78.2, 57.2, STORMHEIM },
 					}),
 					q(40866, {	-- The Shell, You Say?
 						["sourceQuests"] = { 40865 },	-- It's Not Rocket Science
@@ -833,11 +858,6 @@ _.Zones =
 							-- recipe(201596),	-- Schematic: Sonic Environment Enhancer(Spell that is cast on you to learn the following recipe.  Not collectible)
 							recipe(200466),	-- Schematic: Sonic Environment Enhancer
 						},
-					}),
-					q(40867, {	-- Bubble Baubles
-						["sourceQuests"] = { 40865 },	-- It's Not Rocket Science
-						["provider"] = { "n", 102198 },	-- Fargo Flintlocke
-						["coord"] = { 78.2, 57.2, STORMHEIM },
 					}),
 					q(40868, {	-- Wibbly-Wobbly, Timey-Wimey
 						["sourceQuests"] = {
@@ -875,12 +895,12 @@ _.Zones =
 						},
 					}),
 					q(40874, {	-- I'd Do It Myself, But...
-						["sourceQuests"] = { 40873 },	-- Keep Yer Powder Dry
+						["sourceQuests"] = { 40872 },	-- Going Out With a Bang
 						["provider"] = { "n", 102196 },	-- Fargo Flintlocke
 						["coord"] = { 43.0, 62.8, AZSUNA },
 					}),
 					q(40875, {	-- Going to Waste
-						["sourceQuests"] = { 40874 },	-- I'd Do It Myself, But...
+						["sourceQuests"] = { 40872 },	-- Going Out With a Bang
 						["provider"] = { "n", 102196 },	-- Fargo Flintlocke
 						["coord"] = { 43.0, 62.8, AZSUNA },
 						["g"] = {
@@ -889,7 +909,11 @@ _.Zones =
 						},
 					}),
 					q(40876, {	-- 'Locke, Stock and Barrel
-						["sourceQuests"] = { 40875 },	-- Going to Waste
+						["sourceQuests"] = {
+							40873,	-- Keep Yer Powder Dry
+							40874,	-- I'd Do It Myself, But...
+							40875,	-- Going to Waste
+						},
 						["provider"] = { "n", 102196 },	-- Fargo Flintlocke
 						["coord"] = { 43.0, 62.8, AZSUNA },
 						["g"] = {
@@ -919,19 +943,31 @@ _.Zones =
 							recipe(198985),	-- Reaves Module: Failure Detection Mode
 						},
 					}),
-					q(40879, {	-- It's On With Automatons
+					q(40882, {	-- Court of Stars: Revamping the Recoil
 						["sourceQuests"] = {
 							40877,	-- Halls of Valor: Trigger Happy
 							40878,	-- Assault on Violet Hold: Cheating Death
 						},
-						["provider"] = { "n", 93520 },	-- Didi the Wrench
+						["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
 						["coord"] = { 38.6, 25.0, LEGION_DALARAN },
+						["maps"] = { 761, 762, 763 },	-- Court of Stars
 						["g"] = {
-							recipe(198990),	-- Reaves Module: Piloted Combat Mode
+							i(133671),	-- Schematic: Semi-Automagic Cranial Cannon
+							i(133672),	-- Schematic: Sawed-Off Cranial Cannon
+							i(133673),	-- Schematic: Double-Barreled Cranial Cannon
+							i(133674),	-- Schematic: Ironsight Cranial Cannon
 						},
 					}),
+					q(46119, {	-- Boon of the Builder
+						["sourceQuests"] = { 40882 },	-- Court of Stars: Revamping the Recoil
+						["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
+						["coord"] = { 38.6, 25.0, LEGION_DALARAN },
+					}),
 					q(40880, {	-- Short Circuit
-						["sourceQuests"] = { 40879 },	-- It's On With Automatons
+						["sourceQuests"] = {
+							40877,	-- Halls of Valor: Trigger Happy
+							40878,	-- Assault on Violet Hold: Cheating Death
+						},
 						["provider"] = { "n", 93520 },	-- Didi the Wrench
 						["coord"] = { 38.6, 25.0, LEGION_DALARAN },
 						["g"] = {
@@ -946,16 +982,12 @@ _.Zones =
 							i(141849),	-- Schematic: Reaves Module: Bling Mode
 						},
 					}),
-					q(40882, {	-- Court of Stars: Revamping the Recoil
+					q(40879, {	-- It's On With Automatons
 						["sourceQuests"] = { 40881 },	-- Oil Rags to Riches
-						["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
+						["provider"] = { "n", 93520 },	-- Didi the Wrench
 						["coord"] = { 38.6, 25.0, LEGION_DALARAN },
-						["maps"] = { 761, 762, 763 },	-- Court of Stars
 						["g"] = {
-							i(133671),	-- Schematic: Semi-Automagic Cranial Cannon
-							i(133672),	-- Schematic: Sawed-Off Cranial Cannon
-							i(133673),	-- Schematic: Double-Barreled Cranial Cannon
-							i(133674),	-- Schematic: Ironsight Cranial Cannon
+							recipe(198990),	-- Reaves Module: Piloted Combat Mode
 						},
 					}),
 				}),

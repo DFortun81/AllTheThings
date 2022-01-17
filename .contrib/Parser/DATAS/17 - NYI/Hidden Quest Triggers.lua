@@ -968,6 +968,7 @@ _.HiddenQuestTriggers = {
 		q(38008),	-- The Road of Glory - completed with quest 36125 & 36227
 		q(38305),	-- Cenarius, Keeper of the Grove — completed with quest 40122
 		q(39058, {["_drop"] = { "g" }}),	-- Critters of Draenor — completed with quest 38299 & 38300
+		q(39396),	-- NOT USED - completed with quest 39394 & 38463
 		q(45405),	-- Breaching the Sanctum - completed with quest 44719
 		q(49563),	-- Warchief's Command: Frostfire Ridge! - completed with quest 49545
 
@@ -975,9 +976,6 @@ _.HiddenQuestTriggers = {
 		--q(33264),	-- A Proper Burial - TODO: figure out from where it gets completed
 		--q(34734),	-- The Loyalty of Olin Umberhide - TODO: figure out from where it gets completed
 		--q(37062),	-- Tricks of the Trade - TODO: figure out from where it gets completed
-
-		-- Shadowmoon Valley / probably Tanaan Jungle instead
-		--q(39396),	-- NOT USED - TODO: figure out from where it gets completed
 
 		-- Spires of Arak
 		--q(34565),	-- Tearing Up Talador - TODO: figure out from where it gets completed

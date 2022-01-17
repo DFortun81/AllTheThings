@@ -13,8 +13,8 @@ _.GroupFinder =
 			i(112352),	-- Winterfrost Leather Cap
 			i(112351),	-- Winterfrost Leather Helm*
 			i(113690),	-- Winterfrost Leather Gloves
-			i(113689),	-- Winterfrost Leather Knuckledusters	— confirmed by user on discord on April 22, 2020
-			i(112365),	-- Winterfrost Leather Belt				— 12/27/21
+			i(113689),	-- Winterfrost Leather Knuckledusters	— 01/16/22
+			i(112365),	-- Winterfrost Leather Belt				— 01/17/22
 			i(112366),	-- Winterfrost Leather Girdle
 			i(112360),	-- Winterfrost Leather Leggings			— confirmed by user on discord on April 22, 2020
 			i(112359),	-- Winterfrost Leather Waders
@@ -34,11 +34,11 @@ _.GroupFinder =
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			i(112357),	-- Icefall Mail Leggings*				— 01/15/22
-			i(112346),	-- Ice-Encrusted Plate Headguard*
-			i(113692),	-- Ice-Encrusted Gauntlets*
+			i(112346),	-- Ice-Encrusted Plate Headguard*		— 01/17/22
+			i(113692),	-- Ice-Encrusted Gauntlets*				— 01/17/22
 			i(112361),	-- Ice-Encrusted Plate Belt*
 			i(112354),	-- Ice-Encrusted Plate Legguards*
-			i(113685),	-- Coldblood Longcloak*
+			i(113685),	-- Coldblood Longcloak*					— 01/17/22
 			i(113683),	-- Coldwrap Cloak						— confirmed by user on discord on April 22, 2020
 			i(113684),	-- Icecrust Cloak
 			i(113687),	-- Dark Rune Lavalliere*
