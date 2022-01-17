@@ -10,12 +10,14 @@ _.Holidays = { applyholiday(MICRO_HOLIDAY, holiday(1574965, {	-- Call of the Sca
 				["qg"] = 117435,	-- Field Marshal Snowfall
 				["coord"] = { 34.06, 80.43, SILITHUS },	-- Field Marshal Snowfall
 				["races"] = ALLIANCE_ONLY,
+				["isYearly"] = true,
 				["lvl"] = 40,
 			}),
 			q(45785, {	-- Call of the Scarab [H]
 				["qg"] = 117433,	-- Warlord Gorchuk
 				["coord"] = { 33.96, 81.91, SILITHUS },	-- Warlord Gorchuk
 				["races"] = HORDE_ONLY,
+				["isYearly"] = true,
 				["lvl"] = 40,
 			}),
 			q(45731, {	-- Chilled Meat [A]
