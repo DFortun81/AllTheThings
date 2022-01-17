@@ -11,9 +11,6 @@ _.Zones =
 					q(41178, {	-- Explosive Results
 						["isWeekly"] = true,
 					}),
-					q(41168, {	-- The Purple Hills of Eredath
-						["isWeekly"] = true,
-					}),
 					q(41179, {	-- What Once Was Lost
 						["isWeekly"] = true,
 					}),

@@ -429,12 +429,19 @@ root("Instances", tier(CLASSIC_TIER, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(40, 15, 40),
 				}),
+				-- #if BEFORE CATA
+				-- apparently there used to be A/H versions of these quests, then changed to one shared version in Cata?
 				q(2280, {	-- The Platinum Discs (2/3) [Horde]
 					["provider"] = { "i", 6064 },	-- Miniature Platinum Discs
-					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(40, 15, 40),
 				}),
+				-- #else
+				q(2280, {	-- The Platinum Discs (2/3) [Both]
+					["provider"] = { "i", 6064 },	-- Miniature Platinum Discs
+					["lvl"] = lvlsquish(40, 15, 40),
+				}),
+				-- #endif
 				q(2439, {	-- The Platinum Discs (3/3) [Alliance]
 					["qg"] = 5387,	-- High Explorer Magellas <Explorers' League>
 					["sourceQuest"] = 2279,	-- The Platinum Discs (2/3) [Alliance]
