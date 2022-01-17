@@ -5544,6 +5544,10 @@ local function PopulateQuestObject(questObject)
 	local questID = questObject.questID;
 	-- Check for a Task-specific icon
 	local info = C_QuestLog.GetQuestTagInfo(questID);
+	-- Tell the server to populate this quest for the Client
+	C_QuestLog.RequestLoadQuestByID(questID);
+	-- TODO: eventually handle the reward population async via QUEST_DATA_LOAD_RESULT event trigger somehow
+
 	-- if info then
 		-- print("WQ info:",questID);
 		-- for k,v in pairs(info) do
