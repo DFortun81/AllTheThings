@@ -606,7 +606,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(58674, {	-- A Gathering of Champions
-					["sourceQuests"] = { 58632 },	-- Ny'alotha, the Waking City: The Corruptor's End
+					["sourceQuest"] = 58631,	-- Into Dreams
 					["provider"] = { "n", 135614 },	-- Master Mathias Shaw
 					["coord"] = { 70.4, 27.0, BORALUS },
 					["races"] = ALLIANCE_ONLY,

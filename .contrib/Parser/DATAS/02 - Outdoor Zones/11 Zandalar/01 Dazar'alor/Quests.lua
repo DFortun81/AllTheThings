@@ -337,7 +337,7 @@ _.Zones =
 				q(58672, {	-- A Gathering of Champions
 					["coord"] = { 55.9, 30.3, THE_GREAT_SEAL },
 					["provider"] = { "n", 161458 },	-- Valeera Sanguinar
-					["sourceQuests"] = { 58632 },	-- Ny'alotha, the Waking City: The Corruptor's End
+					["sourceQuest"] = 58631,	-- Into Dreams
 					["races"] = HORDE_ONLY,
 				}),
 				q(51465, {	-- A Load of Scrap

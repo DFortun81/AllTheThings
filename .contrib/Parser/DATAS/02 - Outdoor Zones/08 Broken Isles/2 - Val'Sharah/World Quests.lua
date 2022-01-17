@@ -237,15 +237,9 @@ _.Zones =
 				q(41441, {	-- Superior Leystone Deposits
 					["requireSkill"] = MINING,
 				}),
-				q(41293, {	-- Supplies Needed: Dreamleaf
-					["requireSkill"] = HERBALISM,
-				}),
-				q(41316, {	-- Supplies Needed: Leystone
-					["requireSkill"] = MINING,
-				}),
-				q(41339, {	-- Supplies Needed: Stonehide Leather
-					["requireSkill"] = SKINNING,
-				}),
+				q(41293),	-- Supplies Needed: Dreamleaf
+				q(41316),	-- Supplies Needed: Leystone
+				q(41339),	-- Supplies Needed: Stonehide Leather
 				q(41996),	-- Tangeld Nightmare
 				q(41980),	-- Temple Defense
 				q(45921),	-- Thal'xur (Invasion wq)

@@ -258,7 +258,7 @@ _.Zones =
 					["provider"] = { "n", 18106 },	-- Jorin Deadeye
 					["coord"] = { 55.6, 37.6, NAGRAND },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 9906,	-- An Audacious Advance
+					["sourceQuest"] = 9907,	-- An Audacious Advance
 				}),
 				q(9917,  {	-- Do My Eyes Deceive Me
 					["provider"] = { "n", 18353 },	-- Huntress Bintook

@@ -1756,7 +1756,7 @@ app.GetIndicatorIcon = function(group)
 			return app.asset("known_green");
 		end
 	else
-		local asset = app.GetQuestIndicator(group);
+		local asset = app.GetQuestIndicator(group) or app.GetVignetteIndicator(group);
 		if asset then
 			return app.asset(asset);
 		elseif group.u then
@@ -20722,6 +20722,20 @@ app.Startup = function()
 	-- Attempt to register for the addon message prefix.
 	C_ChatInfo.RegisterAddonMessagePrefix("ATT");
 
+	-- Register remaining addon-related events
+	app:RegisterEvent("BOSS_KILL");
+	app:RegisterEvent("CHAT_MSG_ADDON");
+	app:RegisterEvent("PLAYER_ENTERING_WORLD");
+	app:RegisterEvent("NEW_PET_ADDED");
+	app:RegisterEvent("PET_JOURNAL_PET_DELETED");
+	app:RegisterEvent("PLAYER_DIFFICULTY_CHANGED");
+	app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_ADDED");
+	app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_REMOVED");
+	app:RegisterEvent("PET_BATTLE_OPENING_START")
+	app:RegisterEvent("PET_BATTLE_CLOSE")
+	app:RegisterEvent("VIGNETTE_MINIMAP_UPDATED")
+	app:RegisterEvent("VIGNETTES_UPDATED")
+
 	StartCoroutine("InitDataCoroutine", app.InitDataCoroutine);
 end
 
@@ -21370,18 +21384,8 @@ end
 	end
 end)();
 
--- Register Events required at the start
+-- Register Event for startup
 app:RegisterEvent("ADDON_LOADED");
-app:RegisterEvent("BOSS_KILL");
-app:RegisterEvent("CHAT_MSG_ADDON");
-app:RegisterEvent("PLAYER_ENTERING_WORLD");
-app:RegisterEvent("NEW_PET_ADDED");
-app:RegisterEvent("PET_JOURNAL_PET_DELETED");
-app:RegisterEvent("PLAYER_DIFFICULTY_CHANGED");
-app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_ADDED");
-app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_REMOVED");
-app:RegisterEvent("PET_BATTLE_OPENING_START")
-app:RegisterEvent("PET_BATTLE_CLOSE")
 
 -- Define Event Behaviours
 app.events.ARTIFACT_UPDATE = function(...)
@@ -21742,3 +21746,77 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 		SendSocialMessage("S\t" .. sourceID .. "\t" .. oldState .. "\t0");
 	end
 end
+
+-- Vignette Functionality Scope
+(function()
+app.CurrentVignettes = {
+	["npcID"] = {},
+	["objectID"] = {},
+};
+local C_VignetteInfo_GetVignetteInfo = C_VignetteInfo.GetVignetteInfo;
+local C_VignetteInfo_GetVignettes = C_VignetteInfo.GetVignettes;
+local tonumber, strsplit, ipairs = tonumber, strsplit, ipairs;
+
+local function DelVignette(vignetteGUID)
+	local vignetteInfo = C_VignetteInfo_GetVignetteInfo(vignetteGUID);
+	if vignetteInfo and vignetteInfo.objectGUID then
+		local type, _, _, _, _, id, _ = strsplit("-",vignetteInfo.objectGUID);
+		id = tonumber(id);
+		local searchType = type == "Creature" and "npcID" or "objectID";
+		-- app.PrintDebug("Hidden Vignette",searchType,id)
+		app.CurrentVignettes[searchType][id] = nil;
+	end
+end
+local function AddVignette(vignetteGUID)
+	local vignetteInfo = C_VignetteInfo_GetVignetteInfo(vignetteGUID);
+	if vignetteInfo and vignetteInfo.objectGUID then
+		local type, _, _, _, _, id, _ = strsplit("-",vignetteInfo.objectGUID);
+		id = tonumber(id);
+		local searchType = type == "Creature" and "npcID" or "objectID";
+		if vignetteInfo.isDead then
+			-- app.PrintDebug("Dead Vignette",searchType,id)
+			app.CurrentVignettes[searchType][id] = nil;
+		else
+			-- app.PrintDebug("Visible Vignette",searchType,id)
+			app.CurrentVignettes[searchType][id] = true;
+			-- potentially can add groups into another window?
+			local vignetteGroup = app.SearchForObject(searchType,id);
+			if vignetteGroup then
+				-- app.PrintDebug("Found Vignette Group")
+				-- force the related vignette group to be visible (this currently would only affect the Main list...)
+				vignetteGroup.visible = true;
+			end
+		end
+	end
+end
+local function CheckVignettes(vignettes)
+	if vignettes then
+		for _,vignetteGUID in ipairs(vignettes) do
+			AddVignette(vignetteGUID);
+		end
+	end
+end
+-- Given a Key and Id, will return the indicator (asset name) if this Object should show one based on it being a currently active/visible Vignette
+app.GetVignetteIndicator = function(t)
+	local key, id = t.key;
+	if key then
+		id = t[key];
+		local vignetteType = app.CurrentVignettes[key];
+		return vignetteType and id and vignetteType[id] and "Category_Secrets";
+	end
+end
+app.events.VIGNETTE_MINIMAP_UPDATED = function(vignetteGUID, onMinimap)
+	if onMinimap then
+		AddVignette(vignetteGUID);
+	else
+		DelVignette(vignetteGUID);
+	end
+	-- app.UpdateWindows(); -- maybe just a refresh?
+end
+app.events.VIGNETTES_UPDATED = function(...)
+	local vignettes = C_VignetteInfo_GetVignettes();
+	if vignettes then
+		CheckVignettes(vignettes);
+	end
+end
+end)();

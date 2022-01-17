@@ -323,6 +323,7 @@ _.Zones =
 					["coord"] = { 54.7, 34.0, DREAD_WASTES },
 					["provider"] = { "n", 64815 },	-- Kor'ik
 					["minReputation"] = { 1337, REVERED },
+					["sourceQuest"] = 31066,	-- A Cry From Darkness
 				}),
 				q(31111, {	-- Eradicating the Zan'thik
 					["coord"] = { 55.0, 35.8, DREAD_WASTES },
