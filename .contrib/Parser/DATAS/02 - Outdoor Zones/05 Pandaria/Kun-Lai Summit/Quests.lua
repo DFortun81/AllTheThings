@@ -1069,9 +1069,6 @@ _.Zones =
 						i(84524),	-- Yak Herder Boots
 					},
 				}),
-				q(31611, {	-- The Kun-Lai Kicker
-					["provider"] = { "n", 63367 },	-- Brewmaster Boof
-				}),
 				q(30582, {	-- The Late Mrs. Muskpaw
 					["cr"] = 59335,	-- Burilgi Despoiler
 					["coord"] = { 70.3, 71.9, KUN_LAI_SUMMIT },

@@ -16,9 +16,12 @@ _.Zones =
 					["coord"] = { 53.51, 65.75, THE_VEILED_STAIR },
 				}),
 				q(31611, {	-- The Kun-Lai Kicker
-					["provider"] = { "n", 63367 },	-- Brewmaster Boof
-					["coord"] = { 51.90, 43.73, THE_VEILED_STAIR },
 					["description"] = "If you don't see questgiver in The Veiled Stair, look in the Binan Village to the north.",
+					["provider"] = { "n", 63367 },	-- Brewmaster Boof
+					["coords"] = {
+						{ 72.6, 93.0, KUN_LAI_SUMMIT },
+						{ 51.90, 43.73, THE_VEILED_STAIR },
+					},
 				}),
 				q(31285, {	-- The Spring Drifter
 					["provider"] = { "n", 63367 },	-- Brewmaster Boof

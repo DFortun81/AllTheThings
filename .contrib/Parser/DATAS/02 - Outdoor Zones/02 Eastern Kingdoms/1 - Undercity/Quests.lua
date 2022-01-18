@@ -160,15 +160,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(6804)),	-- Windstorm Hammer
 					},
 				}),
-				q(737,   {	-- Forbidden Knowledge
-					["sourceQuests"] = { 736 },	-- The Star, the Hand and the Heart
-					["provider"] = { "n", 2934 },	-- Keeper Bel'dugur
-					["coord"] = { 53.8, 54.4, UNDERCITY },
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(4984)),	-- Skull of Impending Doom
-					},
-				}),
 				q(1961,  {	-- Gathering Materials
 					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,

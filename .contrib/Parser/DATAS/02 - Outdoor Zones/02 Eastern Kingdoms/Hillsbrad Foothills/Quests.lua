@@ -290,12 +290,6 @@ _.Zones =
 					["provider"] = { "n", 2216 },	-- Apothecary Lydon
 					["sourceQuest"] = 509,	-- Elixir of Agony
 				}),
-				q(515,   {	-- Elixir of Agony
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 2216 },	-- Apothecary Lydon
-					["sourceQuest"] = 513,	-- Elixir of Agony
-				}),
 				q(517,   {	-- Elixir of Agony
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
@@ -593,11 +587,6 @@ _.Zones =
 					["coord"] = { 40.2, 59.3, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28209 },	-- Freedom for Lydon
-				}),
-				q(1361,  {	-- Regthar Deathgate
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 2229 },	-- Krusk
 				}),
 				q(9425, {	-- Report to Tarren Mill
 					["u"] = REMOVED_FROM_GAME,

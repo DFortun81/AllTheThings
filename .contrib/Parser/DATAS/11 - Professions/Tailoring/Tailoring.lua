@@ -4814,6 +4814,153 @@ profession(TAILORING, {
 				},
 			},
 		}),
+		n(QUESTS, {
+			-- Tools of Trade Questline
+			q(53805, {	-- A Friend in Needle (A)
+				["provider"] = { "n", 145022 },	-- Timeweaver Delormi
+				["coord"] = { 76.6, 11.8, BORALUS },
+				["requireSkill"] = TAILORING,
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 120,
+			}),
+			q(53938, {	-- A Friend in Needle (H)
+				["provider"] = { "n", 145022 },	-- Timeweaver Delormi
+				["coord"] = { 43.5, 34.8, DAZARALOR },
+				["requireSkill"] = TAILORING,
+				["races"] = HORDE_ONLY,
+				["lvl"] = 120,
+			}),
+			q(53807, {	-- A Stitch in Time (A)
+				["provider"] = { "n", 145022 },	-- Timeweaver Delormi
+				["coord"] = { 76.6, 11.8, BORALUS },
+				["sourceQuest"] = 53805,	-- A Friend in Needle (A)
+				["requireSkill"] = TAILORING,
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 120,
+			}),
+			q(53940, {	-- A Stitch in Time (H)
+				["provider"] = { "n", 145022 },	-- Timeweaver Delormi
+				["coord"] = { 43.5, 34.8, DAZARALOR },
+				["sourceQuest"] = 53938,	-- A Friend in Needle (H)
+				["requireSkill"] = TAILORING,
+				["races"] = HORDE_ONLY,
+				["lvl"] = 120,
+			}),
+			q(55177, {	-- Tearing at the Seams (A)
+				["provider"] = { "n", 145022 },	-- Timeweaver Delormi
+				["sourceQuest"] = 53807,	-- A Stitch in Time (A)
+				["requireSkill"] = TAILORING,
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 120,
+			}),
+			q(55188, {	-- Tearing at the Seams (H)
+				["provider"] = { "n", 145022 },	-- Timeweaver Delormi
+				["sourceQuest"] = 53940,	-- A Stitch in Time (H)
+				["requireSkill"] = TAILORING,
+				["races"] = HORDE_ONLY,
+				["lvl"] = 120,
+			}),
+			q(53810, {	-- The Severed Thread
+				["provider"] = { "n", 151134 },	-- Timeweaver Delormi
+				["coord"] = { 62.0, 53.9, CAVERNS_OF_TIME },
+				["sourceQuests"] = {
+					55177,	-- Tearing at the Seams (A)
+					55188,	-- Tearing at the Seams (H)
+				},
+				["requireSkill"] = TAILORING,
+				["lvl"] = 120,
+			}),
+			q(53813, {	-- Rolling Up the Sleeves
+				["provider"] = { "n", 151134 },	-- Timeweaver Delormi
+				["coord"] = { 43.5, 34.8, CAVERNS_OF_TIME },
+				["sourceQuests"] = {
+					55177,	-- Tearing at the Seams (A)
+					55188,	-- Tearing at the Seams (H)
+				},
+				["requireSkill"] = TAILORING,
+				["lvl"] = 120,
+			}),
+			q(53858, {	-- Step Into Her Shoes
+				["provider"] = { "n", 151134 },	-- Timeweaver Delormi
+				["coord"] = { 39.1, 63.3, CAVERNS_OF_TIME },
+				["sourceQuests"] = {
+					53810,	-- The Severed Thread
+					53813,	-- Rolling Up the Sleeves
+				},
+				["requireSkill"] = TAILORING,
+				["lvl"] = 120,
+			}),
+			q(53866, {	-- If The Shoe Fits...
+				["provider"] = { "n", 151134 },	-- Timeweaver Delormi
+				["coord"] = { 63.8, 68.8, SURAMAR },
+				["sourceQuest"] = 53858,	-- Step Into Her Shoes
+				["requireSkill"] = TAILORING,
+				["lvl"] = 120,
+			}),
+			q(55214, {	-- Seam Stress
+				["provider"] = { "n", 151134 },	-- Timeweaver Delormi
+				["coord"] = { 64.2, 69.5, SURAMAR },
+				["sourceQuest"] = 53866,	-- If The Shoe Fits...
+				["requireSkill"] = TAILORING,
+				["lvl"] = 120,
+			}),
+			q(53868, {	-- Saving Nine
+				["provider"] = { "n", 151134 },	-- Timeweaver Delormi
+				["coord"] = { 7.2, 24.5, STORMSONG_VALLEY },
+				["sourceQuest"] = 55214,	-- Seam Stress
+				["requireSkill"] = TAILORING,
+				["lvl"] = 120,
+			}),
+			q(54483, {	-- Tailored Training (A)
+				["requireSkill"] = TAILORING,
+				["provider"] = { "n", 136071 },	-- Daniel Brineweaver <Tailoring Trainer>
+				["coord"] = { 76.8, 11.2, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 110,
+				["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
+			}),
+			q(54484, {	-- Tailored Training (H)
+				["requireSkill"] = TAILORING,
+				["provider"] = { "n", 122700 },	-- Pin'jin the Patient <Tailoring Trainer>
+				["coord"] = { 44.5, 33.9, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["lvl"] = 110,
+				["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
+			}),
+			q(53869, {	-- Killing Time
+				["provider"] = { "n", 151134 },	-- Timeweaver Delormi
+				["coord"] = { 71.6, 39.8, DRAGONBLIGHT },
+				["sourceQuest"] = 53868,	-- Saving Nine
+				["requireSkill"] = TAILORING,
+				["lvl"] = 120,
+			}),
+			q(53881, {	-- Cut from the Same Cloth (A)
+				["provider"] = { "n", 151134 },	-- Timeweaver Delormi
+				["coord"] = { 71.6, 39.8, DRAGONBLIGHT },
+				["sourceQuest"] = 53869,	-- Killing Time
+				["requireSkill"] = TAILORING,
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 120,
+				["g"] = {
+					recipe(292946, {	-- Recipe: Synchronous Thread
+						["requireSkill"] = TAILORING,
+					}),
+				},
+			}),
+			q(53962, {	-- Cut from the Same Cloth (H)
+				["provider"] = { "n", 151134 },	-- Timeweaver Delormi
+				["coord"] = { 71.6, 39.8, DRAGONBLIGHT },
+				["sourceQuest"] = 53869,	-- Killing Time
+				["requireSkill"] = TAILORING,
+				["races"] = HORDE_ONLY,
+				["lvl"] = 120,
+				["g"] = {
+					recipe(292946, {	-- Recipe: Synchronous Thread
+						["requireSkill"] = TAILORING,
+					}),
+				},
+			}),
+		}),
 	})),
 	applyclassicphase(SHADOWLANDS_PHASE_ONE, tier(SL_TIER, {
 		applytraining({

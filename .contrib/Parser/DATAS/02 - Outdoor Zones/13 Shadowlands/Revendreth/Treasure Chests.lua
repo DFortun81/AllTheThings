@@ -500,23 +500,25 @@ _.Zones =
 						i(182723),	-- Mail Courier's Shoulderguards
 					},
 				}),
-				o(351545, {	-- Secret Treasure
-					["description"] = "Lord Scowl is imprisoned in a cage next to the treasure.  Pick up a book from a nearby fallen cage, climb up the tree, give the book to Lord Scowl, and he will kick the treasure down to the ground for you.",
-					["questID"] = 60202,	-- also triggered 60851
-					["isDaily"] = true,
-					["coord"] = { 27.7, 48.7, REVENDRETH },
-					["crs"] = { 169993 },	-- Lord Scowl
-					["g"] = {
-						i(180323),	-- Blackbale Neckpiece
-						i(180320),	-- Darkvein Choker
-						i(180321),	-- Primrose Pendant
-						i(180322),	-- Sinfang Choker
-						i(180325),	-- Redelev Pendant
-						i(180319),	-- Sourwine Pendant
-						i(182970, {	-- Burgleclipped Portrait
-							["customCollect"] = "SL_COV_VEN",
-						}),
-					},
+				o(353336, {	-- Secret Treasure (map object -- contains the book for Lord Scowl)
+					o(351545, {	-- Secret Treasure
+						["description"] = "Lord Scowl is imprisoned in a cage next to the treasure.  Pick up a book from a nearby fallen cage, climb up the tree, give the book to Lord Scowl, and he will kick the treasure down to the ground for you.",
+						["questID"] = 60202,	-- also triggered 60851
+						["isDaily"] = true,
+						["coord"] = { 27.7, 48.7, REVENDRETH },
+						["crs"] = { 169993 },	-- Lord Scowl
+						["g"] = {
+							i(180323),	-- Blackbale Neckpiece
+							i(180320),	-- Darkvein Choker
+							i(180321),	-- Primrose Pendant
+							i(180322),	-- Sinfang Choker
+							i(180325),	-- Redelev Pendant
+							i(180319),	-- Sourwine Pendant
+							i(182970, {	-- Burgleclipped Portrait
+								["customCollect"] = "SL_COV_VEN",
+							}),
+						},
+					}),
 				}),
 				o(337241, {	-- Stashed Equipment
 					["description"] = "Opening a Crypt Door with the Atonement Crypt Key has a chance to reveal this treasure.",

@@ -855,6 +855,7 @@ _.Zones =
 					},
 				}),
 				q(27203, {	-- The Maelstrom
+					["isBreadcrumb"] = true,
 					["lvl"] = 82,
 					["coords"] = {
 						{ 50.4, 38.2, ORGRIMMAR },	-- Farseer Krogar

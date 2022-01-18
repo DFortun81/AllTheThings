@@ -84,13 +84,6 @@ _.Zones =
 					["coord"] = { 43.8, 78.8, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(28262, {	-- Meet with Lord Tony Romano
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 4214 },	-- Erion Shadewhisper
-					["classes"] = { ROGUE },
-					["coord"] = { 40.0, 39.6, DARNASSUS },
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(28289, {	-- Moonglade Calls
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 4217 },	-- Mathrengyl Bearwalker

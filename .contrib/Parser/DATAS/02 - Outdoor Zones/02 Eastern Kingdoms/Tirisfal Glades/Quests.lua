@@ -559,12 +559,6 @@ _.Zones =
 					["lvl"] = 35,
 					["isBreadcrumb"] = true,	-- for "Scourge First... Alliance Later"
 				}),
-				q(27083, {	-- The Battle Resumes! -- possible breadcrumb?
-					["provider"] = { "n", 10837 },	-- High Executor Derrington
-					["coord"] = { 83.3, 69.0, TIRISFAL_GLADES },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 35,
-				}),
 				q(375,   {	-- The Chill of Death
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,

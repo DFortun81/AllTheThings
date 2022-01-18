@@ -585,6 +585,19 @@ _.Zones =
 						{ 51.0, 26.2, IRONFORGE },	-- Valgar Highforge
 					},
 				}),
+				q(28262, {	-- Meet with Lord Tony Romano
+					["isBreadcrumb"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { ROGUE },
+					["qgs"] = {
+						4214,	-- Erion Shadewhisper
+						5165,	-- Hulfdan Blackbeard
+					},
+					["coords"] = {
+						{ 40.0, 39.6, DARNASSUS },	-- Erion Shadewhisper
+						{ 51.6, 14.6, IRONFORGE },	-- Hulfdan Blackbeard
+					},
+				}),
 				q(28263, {	-- Meet with Maginor Dumas
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
@@ -976,16 +989,6 @@ _.Zones =
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.3, 17.3, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(27203, {	-- The Maelstrom
-					["sourceQuests"] = {
-						27398, -- The Battle Is Won, The War Goes On
-						27443, -- The War Has Many Fronts
-						27727, -- Hero's Call: Deepholm!
-					},
-					["provider"] = { "n", 45226 },	-- Naraat the Earthspeaker
-					["coord"] = { 74.4, 18.8, STORMWIND_CITY },
-					["isBreadcrumb"] = true,
 				}),
 				q(29548, {	-- The Mission
 					["sourceQuests"] = {

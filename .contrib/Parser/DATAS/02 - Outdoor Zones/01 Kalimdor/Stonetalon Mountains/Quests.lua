@@ -378,10 +378,6 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4201 },	-- Ziz Fizziks
 					["sourceQuest"] = 1095,	-- Further Instructions
-				}),
-				q(1096,  {	-- Gerenzo Wrenchwhistle
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 4201 },	-- Ziz Fizziks
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6668)),	-- Draftsman Boots
 						un(REMOVED_FROM_GAME, i(6667)),	-- Engineer's Cloak

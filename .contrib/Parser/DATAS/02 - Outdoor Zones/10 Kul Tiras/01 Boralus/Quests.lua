@@ -250,23 +250,6 @@ _.Zones =
 						["coord"] = { 70.4, 26.9, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(57274, {	-- Quartermaster's Bounty
-						["provider"] = { "n", 143560 },	-- Marshal Gabriel
-						["isWeekly"] = true,
-						["coord"] = { 56.4, 25.8, BORALUS },
-						["u"] = REMOVED_FROM_GAME,	-- Replaced with a new quest in Season 4
-						["g"] = {
-							i(171095),			-- Warlord's Trophy
-						},
-					}),
-					q(58279, {	-- Quartermaster's Bounty
-						["provider"] = { "n", 143560 },	-- Marshal Gabriel
-						["isWeekly"] = true,
-						["coord"] = { 56.4, 25.8, BORALUS },
-						["g"] = {
-							i(171095),			-- Warlord's Trophy
-						},
-					}),
 					q(56499, {	-- Storming the Battlefields!
 						["provider"] = { "n", 143560 },	-- Marshal Gabriel
 						["races"] = ALLIANCE_ONLY,

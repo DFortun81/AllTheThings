@@ -1599,15 +1599,6 @@ _.Zones =
 						"added 4.0.3.13277",
 					},
 				}),
-				q(26838, {	-- Rebels Without a Clue
-					["provider"] = { "n", 3885 },	-- Sentinel Velene Starstrike
-					["coord"] = { 35.6, 71.5, ASHENVALE },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-					["timeline"] = {
-						"added 4.0.3.13277",
-					},
-				}),
 				q(9526, {	-- Reclaiming Felfire Hill
 					["qg"] = 17310,	-- Gnarl <Ancient of War>
 					["coord"] = { 84.2, 45.6, ASHENVALE },

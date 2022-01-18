@@ -72,12 +72,6 @@ _.Zones =
 					["coord"] = { 48.3, 71.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
-				q(809,   {	-- Ak'Zeloth
-					["sourceQuests"] = { 829 },	-- Neeru Fireblade
-					["provider"] = { "n", 3216 },	-- Neeru Fireblade
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(25264, {	-- Ak'Zeloth
 					["sourceQuests"] = { 25263 },	-- Arnak Fireblade
 					["provider"] = { "n", 3216 },	-- Arnak Fireblade
@@ -472,7 +466,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				
+
 
 
 
@@ -673,11 +667,6 @@ _.Zones =
 					["coord"] = { 53.8, 35.8, ORGRIMMAR },	-- Kranosh
 					["classes"] = { WARLOCK },
 				}),
-				q(1361,  {	-- Regthar Deathgate
-					["provider"] = { "n", 4485 },	-- Belgrom Rockmaul
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(25275, {	-- Report to the Labor Captain
 					["provider"] = { "n", 3144 },	-- Eitrigg
 					["coord"] = { 48.6, 71.0, ORGRIMMAR },
@@ -854,15 +843,6 @@ _.Zones =
 					["provider"] = { "n", 146630 },
 					["coord"] = { 48.4, 71.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-				}),
-				q(27203, {	-- The Maelstrom
-					["sourceQuests"] = {
-						27399, -- The Battle Is Won, The War Goes On
-						27442, -- The War Has Many Fronts
-						27722, -- Warchief's Command: Deepholm!
-					},
-					["provider"] = { "n", 45244 },	-- Farseer Krogar
-					["coord"] = { 50.4, 38.2, ORGRIMMAR },
 				}),
 				q(1018,  {	-- The New Frontier
 					["provider"] = { "n", 10880 },	-- Warcaller Gorlach

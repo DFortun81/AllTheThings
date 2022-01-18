@@ -887,15 +887,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(5614)),	-- Seraph's Strike
 					},
 				}),
-				q(973,   {	-- The Tower of Althalaxx
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 3663 },	-- Delgren the Purifier
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(5622)),	-- Clergy Ring
-						un(REMOVED_FROM_GAME, i(5613)),	-- Staff of the Purifier
-					},
-				}),
 				q(13519, {	-- The Twilight's Hammer
 					["provider"] = { "n", 32912 },	-- Sentinel Lendra
 					["coord"] = { 50.3, 20.3, DARKSHORE },

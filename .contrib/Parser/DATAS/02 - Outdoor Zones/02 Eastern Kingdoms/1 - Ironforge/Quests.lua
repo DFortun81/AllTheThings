@@ -81,15 +81,6 @@ _.Zones =
 					["coord"] = { 69.4, 50.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(737,   {	-- Forbidden Knowledge
-					["sourceQuests"] = { 736 },	-- The Star, the Hand and the Heart
-					["provider"] = { "n", 2786 },	-- Gerrig Bonegrip
-					["coord"] = { 50.8, 5.6, IRONFORGE },
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(4984)),	-- Skull of Impending Doom
-					},
-				}),
 				q(1682,  {	-- Grey Iron Weapons
 					["provider"] = { "n", 6031 },	-- Tormus Deepforge
 					["classes"] = { WARRIOR },
@@ -151,13 +142,6 @@ _.Zones =
 					["provider"] = { "n", 23127 },	-- Farseer Javad
 					["classes"] = { SHAMAN },
 					["coord"] = { 55.2, 29.0, IRONFORGE },	-- Farseer Javad
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(28262, {	-- Meet with Lord Tony Romano
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 5165 },	-- Hulfdan Blackbeard
-					["classes"] = { ROGUE },
-					["coord"] = { 51.6, 14.6, IRONFORGE },	-- Hulfdan Blackbeard
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1050,  {	-- Mythology of the Titans
@@ -238,16 +222,6 @@ _.Zones =
 						i(57584),	-- Battleaxe of the Sober Dwarf
 						i(57585),	-- Ambassador's Duplicitous Dagger
 						i(133692),	-- Ambassador's Deceitful Dagger
-					},
-				}),
-				q(2439,  {	-- The Platinum Discs
-					["sourceQuests"] = { 2278 },	-- The Platinum Discs
-					["provider"] = { "n", 5387 },	-- High Explorer Magellas
-					["coord"] = { 70.6, 17.0, IRONFORGE },
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(9587)),	-- Thawpelt Sack
 					},
 				}),
 				q(38402, {	-- The Same, But Different

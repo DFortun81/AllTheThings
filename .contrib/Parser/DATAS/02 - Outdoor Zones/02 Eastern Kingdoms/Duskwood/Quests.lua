@@ -294,12 +294,6 @@ _.Zones =
 					["sourceQuest"] = 26674,	-- Mistmantle's Revenge
 					["isBreadcrumb"] = true,
 				}),
-				q(26838, {	-- Rebels Without a Clue
-					["provider"] = { "n", 43731 },	-- Sister Elsington
-					["coord"] = { 20.0, 57.8, DUSKWOOD },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-				}),
 				q(26654, {	-- Return the Comb
 					["provider"] = { "n", 302 },	-- Blind Mary
 					["coord"] = { 82.0, 59.3, DUSKWOOD },

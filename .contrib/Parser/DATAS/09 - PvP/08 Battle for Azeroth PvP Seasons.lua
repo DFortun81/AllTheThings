@@ -1226,6 +1226,23 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(167384)),	-- Notorious Gladiator's Safeguard
 				}),
 			}),
+			n(QUESTS, {
+				q(57274, {	-- Quartermaster's Bounty
+					["providers"] = {
+						{ "n", 143560 },	-- Marshal Gabriel
+						{ "n", 143555 },	-- Xander Silberman
+					},
+					["isWeekly"] = true,
+					["coords"] = {
+						{ 56.4, 25.8, BORALUS },
+						{ 51.6, 58.2, ZANDALAR },
+					},
+					["timeline"] = { "added 8.2", "removed 8.3" },
+					["g"] = {
+						i(171095),			-- Warlord's Trophy
+					},
+				}),
+			}),
 			un(REMOVED_FROM_GAME, i(171198, {	-- Quartermaster's Prize
 				un(REMOVED_FROM_GAME, i(168316)),	-- Battleborn Sigil Notorious Combatant
 				un(REMOVED_FROM_GAME, i(171090)),	-- Battleborn Sigil Notorious Challenger
@@ -1628,6 +1645,22 @@ _.PVP =
 					i(172666),	-- Corrupted Gladiator's Medallion
 					i(172673),	-- Corrupted Gladiator's Safeguard
 					i(174472),	-- Corrupted Gladiator's Spite
+				}),
+			}),
+			n(QUESTS, {
+				q(58279, {	-- Quartermaster's Bounty
+					["isWeekly"] = true,
+					["providers"] = {
+						{ "n", 143555 },	-- Xander Silberman
+						{ "n", 143560 },	-- Marshal Gabriel
+					},
+					["coords"] = {
+						{ 51.6, 58.2, ZANDALAR },
+						{ 56.4, 25.8, BORALUS },
+					},
+					["g"] = {
+						i(171095),	-- Warlord's Trophy
+					},
 				}),
 			}),
 			un(REMOVED_FROM_GAME, i(172519, {	-- Quartermaster's Note
