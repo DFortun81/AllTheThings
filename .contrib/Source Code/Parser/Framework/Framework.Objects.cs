@@ -2250,6 +2250,30 @@ namespace ATT
                                 }
                             }
                         }
+                        else if (mostSignificantID == "objectiveID")
+                        {
+                            if (data2.TryGetValue("questID", out object fieldRef))
+                            {
+                                // The data we're merging has a Quest ID. (we only want to merge them if they're the same!)
+                                var q = Convert.ToInt64(fieldRef);
+                                foreach (var entryRef in container)
+                                {
+                                    // Cache the container entry for comparisons.
+                                    var temp = entryRef as Dictionary<string, object>;
+                                    if (temp == null) continue;
+
+                                    // Compare the most significant IDs and if they match, this is what I'm looking for!
+                                    if (temp.TryGetValue(mostSignificantID, out fieldRef) && fieldRef.Equals(id))
+                                    {
+                                        if (temp.TryGetValue("questID", out fieldRef) && fieldRef.Equals(q))
+                                        {
+                                            entry = temp;
+                                            break;
+                                        }
+                                    }
+                                }
+                            }
+                        }
                         else if (mostSignificantID == "azeriteEssenceID" || mostSignificantID == "spellID")
                         {
                             // For Essences, also keep track of the ranks to allow more than one per list.

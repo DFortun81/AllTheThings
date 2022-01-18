@@ -1109,6 +1109,35 @@ namespace ATT
                     case "achID":
                         DuplicateGroupListIntoObjects(groupIDs, data, type);
                         break;
+                    case "objectiveID":
+                        if (CurrentParentGroup != null)
+                        {
+                            var parent = CurrentParentGroup.Value;
+                            // duplicate from an achID/criteriaID source
+                            if (parent.Key == "questID")
+                            {
+                                if (!data.ContainsKey(parent.Key))
+                                {
+                                    data.Add(parent.Key, parent.Value);
+                                }
+                                else
+                                {
+                                    // child already contains the parent key value? weird but replace anyway
+                                    data[parent.Key] = parent.Value;
+                                }
+                            }
+                        }
+
+                        // verify the criteria has the achieve information before duplicating
+                        if (data.ContainsKey("questID"))
+                        {
+                            DuplicateGroupListIntoObjects(groupIDs, data, type);
+                        }
+                        else
+                        {
+                            Trace.WriteLine("Failed to duplicate criteria object due to missing 'questID': " + MiniJSON.Json.Serialize(data));
+                        }
+                        break;
                         // handle other types of duplication sources if necessary
                 }
             }
