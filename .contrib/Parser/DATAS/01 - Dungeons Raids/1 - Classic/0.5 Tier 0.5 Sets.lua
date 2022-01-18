@@ -1960,7 +1960,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["lvl"] = 58,
 					["groups"] = {
 						objective(1, {	-- 0/1 Isalien slain
-							["provider"] = { "n", 16101 },	-- Isalien
+							["provider"] = { "n", 16097 },	-- Isalien
 						}),
 						objective(2, {	-- 0/1 Lord Valthalak's Amulet
 							["provider"] = { "i", 22048 },	-- Lord Valthalak's Amulet
