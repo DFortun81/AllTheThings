@@ -1721,6 +1721,7 @@ app.IsComplete = function(o)
 	if o.total and o.total > 0 then return o.total == o.progress; end
 	if o.collectible then return o.collected; end
 	if o.trackable then return o.saved; end
+	return true;
 end
 app.GetSourceID = GetSourceID;
 app.MaximumItemInfoRetries = 400;
@@ -16849,6 +16850,17 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			self:SetVisible(true);
 			self:Update();
 		end
+		local function IsNotComplete(group) return not app.IsComplete(group); end
+		local function CheckGroup(group, func)
+			if func(group) then
+				return true;
+			end
+			if group.g then
+				for _,o in ipairs(group.g) do
+					if CheckGroup(o, func) then return true; end
+				end
+			end
+		end
 		-- Returns the consolidated data format for the next header level
 		-- Headers are forced not collectible, and will have their content sorted, and can be copied from the existing Source header
 		local function CreateHeaderData(group, header)
@@ -17121,21 +17133,26 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				end
 				if app.Settings:GetTooltipSetting("Warn:Difficulty") then
 					if difficultyID and difficultyID > 0 and self.data.g then
-						local completed,other = true, nil;
+						local missing, other;
 						for _,row in ipairs(self.data.g) do
-							if row.difficultyID or row.difficulties then
-								if (row.difficultyID or -1) == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-									if row.total and row.progress < row.total then
-										completed = false;
+							-- app.PrintDebug("Check Minilist Header for Progress for Difficulty",difficultyID,row.difficultyID,row.progress,row.total)
+							if not missing then
+								-- check group for the current difficulty for incomplete content
+								if (row.difficultyID == difficultyID) or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
+									if CheckGroup(row, IsNotComplete) then
+										-- app.PrintDebug("Current Difficulty is NOT complete")
+										missing = true;
 									end
-								else
-									if row.total and row.progress < row.total then
+								-- grab another incomplete difficulty name in case current difficulty is complete
+								elseif not other and row.difficultyID then
+									if CheckGroup(row, IsNotComplete) then
 										other = row.text;
 									end
 								end
 							end
 						end
-						if completed and other then
+						-- current difficulty is not missing anything, and we have another difficulty text to announce
+						if not missing and other then
 							print(L["DIFF_COMPLETED_1"] .. other .. L["DIFF_COMPLETED_2"]);
 						end
 					end
