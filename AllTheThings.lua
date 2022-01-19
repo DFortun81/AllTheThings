@@ -2489,10 +2489,10 @@ MergeObjects = function(g, g2, newCreate)
 	end
 end
 NestObjects = function(p, g, newCreate)
-	if not g or #g == 0 then return; end
+	if not g then return; end
 	if p.g then
 		MergeObjects(p.g, g, newCreate);
-	else
+	elseif #g > 0 then
 		p.g = {};
 		MergeObjects(p.g, g, newCreate);
 	end
@@ -16873,18 +16873,18 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		end
 		-- set of keys for headers which can be nested in the minilist automatically, but not confined to a direct top header
 		local subGroupKeys = {
-			["filterID"] = app.CreateFilter,
-			["professionID"] = app.CreateProfession,
-			["raceID"] = app.CreateRace,
-			["holidayID"] = app.CreateHoliday,
-			["instanceID"] = app.CreateInstance,
+			"filterID",
+			"professionID",
+			"raceID",
+			"holidayID",
+			"instanceID",
 		};
 		-- set of keys for headers which can be nested in the minilist within an Instance automatically, but not confined to a direct top header
 		local subGroupInstanceKeys = {
-			["filterID"] = app.CreateFilter,
-			["professionID"] = app.CreateProfession,
-			["raceID"] = app.CreateRace,
-			["holidayID"] = app.CreateHoliday,
+			"filterID",
+			"professionID",
+			"raceID",
+			"holidayID",
 		};
 		-- Keep a static collection of top-level groups in the list so they can just be referenced for adding new
 		local topHeaders = {
@@ -16922,7 +16922,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		};
 		-- self.Rebuild
 		(function()
-		local results, groups, nested, header, inInstance, difficultyID, topHeader, nextParent, headerID, groupKey, typeHeaderID;
+		local results, groups, nested, header, headerKeys, difficultyID, topHeader, nextParent, headerID, groupKey, typeHeaderID;
 		self.Rebuild = function(self)
 			-- print("Rebuild",self.mapID);
 			-- check if this is the same 'map' for data purposes
@@ -16938,7 +16938,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				groups = {};
 				header = app.CreateMap(self.mapID, { g = groups });
 				self.CurrentMaps[self.mapID] = true;
-				inInstance = IsInInstance();
+				headerKeys = IsInInstance() and subGroupInstanceKeys or subGroupKeys;
 				for _,group in ipairs(results) do
 					-- do not use any raw Source groups in the final list
 					group = CreateObject(group);
@@ -16959,9 +16959,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 							end
 						end
 						MergeProperties(header, group, true);
-						if group.g then
-							MergeObjects(groups, group.g);
-						end
+						NestObjects(header, group.g);
 						group = nil;
 					else
 						-- Get the header chain for the group
@@ -16991,7 +16989,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 									nested = true;
 								end
 							else
-								for hkey,hf in pairs(inInstance and subGroupInstanceKeys or subGroupKeys) do
+								for _,hkey in ipairs(headerKeys) do
 									if nextParent[hkey] then
 										-- create the specified group Type header
 										group = CreateHeaderData(group, nextParent);
