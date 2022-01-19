@@ -15624,7 +15624,7 @@ function app:GetDataCache()
 
 		-- Professions
 		if app.Categories.Professions then
-			db = {};
+			db = app.CreateNPC(-38);
 			db.g = app.Categories.Professions;
 			db.expanded = false;
 			db.text = TRADE_SKILLS;
