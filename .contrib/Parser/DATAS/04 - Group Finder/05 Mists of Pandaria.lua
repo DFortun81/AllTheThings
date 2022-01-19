@@ -30,7 +30,7 @@ _.GroupFinder =
 				i(113779),	-- Venomtail Girdle			— 01/14/22
 				i(113778),	-- Venomtail Belt*
 				i(113777),	-- Venomtail Boots			— 01/14/22
-				i(113776),	-- Venomtail Treads
+				i(113776),	-- Venomtail Treads			- might be removed
 				i(113732),	-- Venomtail Visor			— 01/14/22
 				i(113738),	-- Kyparite Chestguard*
 				i(113784),	-- Kyparite Belt

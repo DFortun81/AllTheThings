@@ -721,10 +721,7 @@ _.Zones =
 					["provider"] = { "n", 37837 },	-- Warlord Bloodhilt
 					["coord"] = { 41.6, 69.8, SOUTHERN_BARRENS },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = {
-						24618,	-- Claim the Battle Scar
-						24634,	-- Intelligence Warfare
-					},
+					["sourceQuest"] = 24634,	-- Intelligence Warfare
 					["g"] = {
 						i(53226),  -- Battlescar Monnion
 						i(53232),  -- Cloak of Harvested Fear

@@ -6,13 +6,13 @@ _.GroupFinder =
 {
 	tier(CLASSIC_TIER, {
 		i(156683, {	-- Satchel of Helpful Goods [Level 7-50]
-			i(51982),			-- Earthbound Boots*			— 01/14/22
+			i(51982),			-- Earthbound Boots				— 01/14/22
 			un(REMOVED_FROM_GAME, i(51978)),	-- Earthbound Girdle
-			i(143580),			-- Earthbound Girdle*			— 01/15/21
+			i(143580),			-- Earthbound Girdle			— 01/15/21
 			-- un(REMOVED_FROM_GAME, i(51979)),	-- Earthbound Grips (moved to BC satchel)
-			i(143581),			-- Earthbound Grips*
+			i(143581),			-- Earthbound Grips
 			un(REMOVED_FROM_GAME, i(51980)),	-- Earthbound Handgrips
-			i(51976),			-- Earthbound Shoulderguards*	— 01/15/22
+			i(51976),			-- Earthbound Shoulderguards	— 01/15/22
 			i(51981),			-- Earthbound Wristguards		— 01/14/22
 			i(51972),			-- Enumerated Bracers
 			i(51973),			-- Enumerated Handwraps
@@ -38,7 +38,7 @@ _.GroupFinder =
 			i(51962),			-- Vigorous Bracers				— 01/16/22
 			i(51965),			-- Vigorous Handguards			— 01/16/22
 			un(REMOVED_FROM_GAME, i(51998)),	-- Vigorous Spaulders
-			i(51966),			-- Vigorous Spaulders*			— 01/16/22
+			i(51966),			-- Vigorous Spaulders			— 01/16/22
 			i(51963),			-- Vigorous Stompers			— 01/16/22
 		}),
 		i(51999, {	-- Satchel of Helpful Goods 15-25

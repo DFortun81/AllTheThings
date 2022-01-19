@@ -2516,8 +2516,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(10126),	-- BETA Warboss Nekrogg's Orders
 		q(10151),	-- BETA Warboss Nekrogg's Orders
 		q(9346),	-- BETA When Helboars Fly
-		q(10088),	-- BETA When This Mine's a-Rockin'
-		q(10214),	-- BETA When This Mine's a-Rockin'
 		q(10090),	-- [Not Used] BETA The Legion's Plans
 		q(9510),	-- [Not Used] BETA Bristlehide Clefthoof Hides
 		q(9380),	-- [Not Used] BETA Hounded for More

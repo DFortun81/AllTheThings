@@ -902,7 +902,9 @@ _.HiddenQuestTriggers = {
 		-- TEMPORARY SOLUTION AS HQT FOR NOW
 		q(9734),	-- Return to the Marsh - completed with quest 9732 probably? (reported as with quest 11072)
 		q(9749),	-- They're Alive! Maybe... - completed with quest 9670
+		q(10088),	-- When This Mine's a-Rockin' - completed with quest 10079
 		q(10207),	-- Forward Base: Reaver's Fall REUSE - completed with quest 10124
+		q(10214),	-- When This Mine's a-Rockin' - completed with quest 10079
 		q(10815),	-- The Journal of Val'zareq: Portends of War - completed with quest 10793
 		q(10871, {["_drop"] = { "g" }}),	-- Ally of the Netherwingm - completed with quest 10870
 		q(10872),	-- Zuluhed the Whacked - completed with quest 144

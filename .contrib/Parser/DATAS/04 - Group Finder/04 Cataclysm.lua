@@ -15,14 +15,14 @@ _.GroupFinder =
 				i(113762),	-- Smoldercloth Robe*
 				i(113786),	-- Smoldercloth Slippers*
 				i(113727),	-- Smoldering Slagstone Ring	— Confirmed by milotic on GitHub on August 24, 2020
-				i(113769),	-- Ravaged Leather Boots*
+				i(113769),	-- Ravaged Leather Boots*		— 01/18/22
 				i(113705),	-- Ravaged Leather Bracers*
 				i(113698),	-- Ravaged Leather Cap*
-				i(113724),	-- Ravaged Leather Gauntlets	-- Confirmed by Warmech on Discord 2021-12-21
+				i(113724),	-- Ravaged Leather Gauntlets	— 01/18/22
 				i(113700),	-- Ravaged Leather Helm
-				i(113712),	-- Ravaged Leather Pants		-- Confirmed by Warmech on Discord 2021-12-21
+				i(113712),	-- Ravaged Leather Pants		— 01/18/22
 				i(113768),	-- Ravaged Leather Slippers*
-				i(113706),	-- Ravaged Leather Wristguards*
+				i(113706),	-- Ravaged Leather Wristguards*	— 01/18/22
 				i(113774),	-- Sparkmail Boots
 				i(113703),	-- Sparkmail Bracers
 				i(113717),	-- Sparkmail Chestguard			- Confirmed by Dani#8000 on Discord on October 20, 2020
