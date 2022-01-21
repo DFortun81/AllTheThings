@@ -51,7 +51,7 @@ root("Instances", tier(CLASSIC_TIER, {
 							}),
 						},
 					})),
-					q(4771, {	-- Alexi's Gambit
+					q(27140, {	-- Alexi's Gambit
 						["qg"] = 45110,	-- Alexi Barov <House of Barov>
 						["timeline"] = { "added 4.0.3", "removed 5.0.4" },
 						["lvl"] = 38,
