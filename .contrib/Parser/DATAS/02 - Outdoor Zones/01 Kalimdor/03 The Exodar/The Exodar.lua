@@ -14,6 +14,21 @@ local EGOMIS_GROUPS = {
 	}),
 };
 local REDEMPTION = recipe(7328);	-- Redemption
+-- #if BEFORE CATA
+local OnTooltipForCityFactionReputation = [[function(t)
+	local reputation = t.reputation;
+	if reputation < 42000 then
+		local isHuman = _.RaceIndex == 1;
+-- #if AFTER TBC
+		local repPerTurnIn = isHuman and 82.5 or 75;
+-- #else
+		local repPerTurnIn = isHuman and 55 or 50;
+-- #endif
+		local x, n = math.ceil((42000 - reputation) / repPerTurnIn), math.ceil(42000 / repPerTurnIn);
+		GameTooltip:AddDoubleLine("Runecloth Turn Ins", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+	end
+end]];
+-- #endif
 _.Zones =
 {
 	m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
@@ -36,6 +51,9 @@ _.Zones =
 				-- #endif
 				n(FACTIONS, {
 					faction(930, {	-- Exodar
+						-- #if BEFORE CATA
+						["OnTooltip"] = OnTooltipForCityFactionReputation,
+						-- #endif
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
