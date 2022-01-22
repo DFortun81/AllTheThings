@@ -102,6 +102,9 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 2465 },	-- Far Seer Mok'thardin
 						["sourceQuest"] = 571,	-- Mok'thardin's Enchantment
+						["g"] = {
+							un(REMOVED_FROM_GAME, i(4112)),	-- Choker of the High Shaman
+						},
 					}),
 					q(607,   {	-- Return to MacKinley
 						["u"] = REMOVED_FROM_GAME,
@@ -177,6 +180,9 @@ _.Zones =
 						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 2490 },	-- First Mate Crazz
 						["sourceQuest"] = 604,	-- The Bloodsail Buccaneers
+						["g"] = {
+							un(REMOVED_FROM_GAME, i(4138)),	-- Blackwater Tunic
+						},
 					}),
 					q(568,   {	-- The Defense of Grom'gol
 						["u"] = REMOVED_FROM_GAME,

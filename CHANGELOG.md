@@ -1,56 +1,25 @@
 # AllTheThings
 
-## [SL-2.6.8](https://github.com/DFortun81/AllTheThings/tree/SL-2.6.8) (2022-01-09)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.6.7...SL-2.6.8) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [SL-2.6.9](https://github.com/DFortun81/AllTheThings/tree/SL-2.6.9) (2022-01-16)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.6.8...SL-2.6.9) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
 
 ### Highlights of this update
 
-#### Calculating number of currency/items needed to purchase uncollected Things
+#### Settings and Profiles
 
-New toggle in the ATT Settings -> Interface tab. Enable to see how many items/currency you need to buy all missing collectible Things bought with it.
+We have reviewed our default settings so hopefully they make more sense now. We now default to the Insane Class Completionist Mode. This should only affect new installs.
 
-Example: "Items needed to buy not collected Things: 14000" on the Polished Pet Charm tooltip.
+On a somewhat related note: Profiles are now out of beta and will be enabled for everyone. Your current settings will become your default profile. We will even remember your locked windows state and position/size per-profile!
 
-Caveats:
+#### Auction House module
 
-- Only works for Things that can be purchased directly with currency/item.
-- Doesn't work for gold.
-- Doesn't work for items obtained from containers (both RNG-based and rewarding multiple items, plus special cases). Examples include:
-  - Legion legendaries BoA containers. Specifically, Wakening Essence will always show `0`, but this is due to how vendor data is stored in ATT.
-  - Purchasable Korthia gear will not contribute to Stygia calculation.
-  - Seafarer's Dubloon Salvages.
-  - Valor chests.
-
-Planned improvements:
-- Crafting reagents calculation.
-- Recursive calculation to account for items that are used to craft other items.
-
-Credit for this feature goes to @lOlbas/Æltona!
-
-#### Solo collection mode
-
-Added the collection Mode prefix 'Solo' to indicate that no other characters are being used to boost collection numbers (i.e. Account-Wide disabled wherever possible).
+AH Module disabled for the time being in ATT since it's currently not serving its intended purpose and just leading to confusion.
 
 ### Notable changes:
 
-- Greatly condensed Profession/Tradeskill list logic. Repeatedly crafting stuff will no longer cause micro-stutters while the tradeskill window is visible.
-- Restored some missing info in tooltips (for example, profession on the crafting reagents tooltip).
-- The setting 'Show Completed Things' will now work for newly learned Recipes as well, with a clickable link to see the recipe in an ATT popout window.
-- Simple Dynamic groups will no longer consider their Things as a 'cost' for other collectibles.
-- Re-designed the loading process for ATT, which should fix some bugs and make it faster.
-- Fixed a bug with cached saved variable data related to characters that transfer.
-- Some clean up for Maw Assaults.
-- Adamant Vaults updates.
-- Added the Crafter's Mark Recipes from The Maw & Korthia (finally).
-- Added Goat/Snake souls to all calling boxes.
-- Simplified/fixed the Sources of JC patterns from Battle for Mount Hyjal in Retail.
-- Fixed Legion Class Hall Mount chain pre-requisites.
-- Vial of the Sands specifically requires Alchemy to learn, in addition to being nested under Archaeology header.
-- Various quest fixes in BC, WotLK.
-- Pepe/Selfie Filters are ordered properly in the list now.
-- Some missing mounts were given source.
-- Fixed Covenant Anima Counductor Rares not being un-flagged from the Covenant properly.
-- Blanchy hand-ins and Mark of the Nightwing Raven marked as once per account quests.
-- More zhCN updates.
+- Another pass at attempting to improve the performance of the minilist.
+- Ongoing achievements cleanup: attaching required quests, maps, etc. Mainly in Darkmoon Faire and Covenant achievements.
+- Consolidated the listing of the special Plate/Cloth sets from Argus. They are now only listed in one place in the respective zones, but will show in the same way as before in the actual zone or creature tooltips.
+- Necrolord Abomination Factory rewards cleaned up to not be duplicated and showing rewards in `/attwq` when the quests are not actually rewarding an item.
 - Other fixes.

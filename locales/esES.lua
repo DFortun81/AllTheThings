@@ -2775,6 +2775,9 @@ for key,value in pairs({
 	[355041] = "Alijo de la Luna",	-- Cache of the Moon
 	[355048] = "Runa de rituales",	-- Rune of Rituals
 	[355049] = "Runa de rituales",	-- Rune of Rituals
+	[355194] = "Runa de ensamblajes",	-- Rune of Constructs
+	[355195] = "Runa de ensamblajes",	-- Rune of Constructs
+	[355196] = "Runa de ensamblajes",	-- Rune of Constructs
 	[355286] = "Ofrendas conmemorativas",	-- Memorial Offerings
 	[355296] = "Recompensa: control de bestias",	-- Bounty: Beast Control
 	[355355] = "Cofre armónico",	-- Harmonic Chest

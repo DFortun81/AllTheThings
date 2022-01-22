@@ -1951,7 +1951,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 				q(8990, {	-- The Right Piece of Lord Valthalak's Amulet [WARRIOR, ROGUE]
 					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8985,	-- More Components of Importance [WARRIOR, ROGUE]
-					["maps"] = { BLACKROCK_MOUNTAIN, WINTERSPRING },
+					["maps"] = { BLACKROCK_MOUNTAIN, DIRE_MAUL },
 					["classes"] = { WARRIOR, ROGUE },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
@@ -1960,7 +1960,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["lvl"] = 58,
 					["groups"] = {
 						objective(1, {	-- 0/1 Isalien slain
-							["provider"] = { "n", 16101 },	-- Isalien
+							["provider"] = { "n", 16097 },	-- Isalien
 						}),
 						objective(2, {	-- 0/1 Lord Valthalak's Amulet
 							["provider"] = { "i", 22048 },	-- Lord Valthalak's Amulet
@@ -1970,7 +1970,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 				q(8989, {	-- The Right Piece of Lord Valthalak's Amulet [DRUID, PALADIN, SHAMAN]
 					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8986,	-- More Components of Importance [DRUID, PALADIN, SHAMAN]
-					["maps"] = { BLACKROCK_MOUNTAIN },
+					["maps"] = { BLACKROCK_MOUNTAIN, BLACKROCK_SPIRE },
 					["classes"] = { DRUID, PALADIN, SHAMAN },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
@@ -1989,7 +1989,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 				q(8991, {	-- The Right Piece of Lord Valthalak's Amulet [PRIEST, MAGE]
 					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8987,	-- More Components of Importance [PRIEST, MAGE]
-					["maps"] = { BLACKROCK_MOUNTAIN },
+					["maps"] = { BLACKROCK_MOUNTAIN, STRATHOLME },
 					["classes"] = { PRIEST, MAGE },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
@@ -2011,7 +2011,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 				q(8992, {	-- The Right Piece of Lord Valthalak's Amulet [HUNTER, WARLOCK]
 					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8988,	-- More Components of Importance [HUNTER, WARLOCK]
-					["maps"] = { BLACKROCK_MOUNTAIN },
+					["maps"] = { BLACKROCK_MOUNTAIN, SCHOLOMANCE },
 					["classes"] = { HUNTER, WARLOCK },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer

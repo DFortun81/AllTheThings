@@ -40,12 +40,6 @@ _.Zones = {
 					["provider"] = { "n", 5901 },	-- Islen Waterseer
 					["sourceQuest"] = 5158,	-- Seeking Spiritual Aid
 				}),
-				q(842,   {	-- Crossroads Conscription
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3337 },	-- Kargal Battlescar
-					["sourceQuest"] = 840,	-- Conscript of the Horde
-				}),
 				q(1069,  {	-- Deepmoss Spider Eggs
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3446 },	-- Mebok Mizzyrix
@@ -151,12 +145,6 @@ _.Zones = {
 					["provider"] = { "n", 3341 },	-- Gann Stonespire
 					["sourceQuest"] = 843,	-- Bann's Reclamation
 				}),
-				q(849,   {	-- Revenge of Gann
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3341 },	-- Gann Stonespire
-					["sourceQuest"] = 846,	-- Revenge of Gann
-				}),
 				q(3923, {	-- Rilli Greasygob
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
@@ -185,11 +173,6 @@ _.Zones = {
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4049 },	-- Seereth Stonebreak
 					["sourceQuest"] = 1062,	-- Goblin Invaders
-				}),
-				q(1491, {	-- Smart Drinks
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 3446 },	-- Mebok Mizzyrix
-					["sourceQuest"] = 865,	-- Raptor Horns
 				}),
 				q(6382, {	-- The Ashenvale Hunt
 					["u"] = REMOVED_FROM_GAME,

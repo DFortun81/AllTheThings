@@ -2771,6 +2771,9 @@ for key, value in pairs({
 	[355041] = "月亮宝箱",	-- Cache of the Moon
 	[355048] = "祭仪符文",	-- Rune of Rituals
 	[355049] = "祭仪符文",	-- Rune of Rituals
+	[355194] = "造物符文",	-- Rune of Constructs
+	[355195] = "造物符文",	-- Rune of Constructs
+	[355196] = "造物符文",	-- Rune of Constructs
 	[355286] = "祭品",	-- Memorial Offerings
 	[355296] = "悬赏：兽群控制",	-- Bounty: Beast Control
 	[355355] = "和谐宝箱",	-- Harmonic Chest

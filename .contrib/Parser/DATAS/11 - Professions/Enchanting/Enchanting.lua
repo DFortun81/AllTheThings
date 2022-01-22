@@ -40,7 +40,11 @@ profession(ENCHANTING, {
 	}),
 	n(QUESTS, {
 		q(42971, {	-- Controlling the Elements
-			sp(217649),	-- Tome of Illusions: Elemental Lords
+			["provider"] = { "n", 42465 },	-- Therazane <The Stonemother>
+			["coord"] = { 56.4, 12.2, 207 },
+			["g"] = {
+				sp(217762),	-- Formula: Tome of Illusions: Elemental Lords
+			},
 		}),
 	}),
 });

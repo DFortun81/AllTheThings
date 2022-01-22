@@ -321,15 +321,6 @@ _.Zones =
 				}),
 				prof(ENGINEERING, {
 					-- later
-					q(46128, {	-- Time for a Recharge
-						["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
-						["g"] = {
-							recipe(235775),	-- Rechargeable Reaves Battery
-						},
-					}),
-					q(46119, {	-- Boon of the Builder
-						["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
-					}),
 					-- 7.3
 					q(48056, {	-- A Harsh Mistress
 						["provider"] = { "n", 93539 },	-- Hobart Grapplehammer

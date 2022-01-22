@@ -567,7 +567,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1156 },	-- Vyrin Swiftwind
 				}),
-				q(271,   {	-- Vyrin's Revenge (#2)
+				q(531,   {	-- Vyrin's Revenge (#2)
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 1187 },	-- Daryl the Youngling
 					["races"] = ALLIANCE_ONLY,

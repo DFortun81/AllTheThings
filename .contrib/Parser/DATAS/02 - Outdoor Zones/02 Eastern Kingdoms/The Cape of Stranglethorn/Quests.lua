@@ -451,13 +451,6 @@ _.Zones =
 						i(131561),	-- Landlubber Helm
 					},
 				}),
-				q(573,   {	-- Mok'thardin's Enchantment
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(4112)),	-- Choker of the High Shaman
-					},
-				}),
 				q(26606, {	-- Mukla's Demise
 					["sourceQuests"] = { 26605 },	-- Grubby Little Paws
 					["coord"] = { 59.4, 79.0, THE_CAPE_OF_STRANGLETHORN },
@@ -638,12 +631,6 @@ _.Zones =
 					["coord"] = { 41.7, 74.1, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
-				}),
-				q(608,   {	-- The Bloodsail Buccaneers
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME,  i(4138)),	-- Blackwater Tunic
-					},
 				}),
 				q(26609, {	-- The Bloodsail Buccaneers
 					["sourceQuests"] = {

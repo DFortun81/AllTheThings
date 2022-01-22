@@ -54,8 +54,9 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		ach(9926),				-- Hero of the Storm
 		ach(14283),				-- Heroic Edition: Ensorcelled Everwyrm
 		un(REMOVED_FROM_GAME, ach(3636)),		-- Jade Tiger (China only)
-		un(REMOVED_FROM_GAME, ach(13196, {			-- Meat Marauder
-			i(164571),			-- Meat Wagon
+		ach(13196, bubbleDownSelf({			-- Meat Marauder
+			["u"] = REMOVED_FROM_GAME,}, {
+				i(164571),	-- Meat Wagon
 		})),
 		un(REMOVED_FROM_GAME, ach(6185)),		-- Murkablo
 		un(REMOVED_FROM_GAME, ach(8793)),		-- Murkalot
@@ -64,10 +65,11 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		un(REMOVED_FROM_GAME, ach(11294)),		-- Murloc Battlemasters
 		un(REMOVED_FROM_GAME, ach(412)),		-- Murloc Costume
 		un(REMOVED_FROM_GAME, ach(3896)),		-- Onyx Panther (Korea only)
-		un(REMOVED_FROM_GAME, ach(10537, {		-- Patron of War
-			title(326, {	-- <Name>, Patron of War
-				["description"] = "Connect Twitch and Battle.net accounts and watch tournament streams",
-			}),
+		ach(10537, bubbleDownSelf({		-- Patron of War
+			["u"] = REMOVED_FROM_GAME,}, {
+				title(326, {	-- <Name>, Patron of War
+					["description"] = "Connect Twitch and Battle.net accounts and watch tournament streams",
+				}),
 		})),
 		un(REMOVED_FROM_GAME, ach(11931)),		-- Rides of War
 		un(REMOVED_FROM_GAME, ach(12454)),		-- Salute to Starcraft

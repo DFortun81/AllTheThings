@@ -198,7 +198,6 @@ _.Zones =
 				q(43721),	-- The Helarjar Have Surfaced
 				q(42013),	-- The Helmouth
 				q(43771),	-- The Magic of Flight
-				q(42269),	-- The Soultakers
 				q(46264),	-- Their Eyes Are Upon Us (Invasion wq)
 				q(46021),	-- Thel'draz (Invasion wq)
 				q(41342, {	-- Thick Bear Hide

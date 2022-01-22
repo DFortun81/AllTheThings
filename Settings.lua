@@ -134,6 +134,10 @@ local GeneralSettingsBase = {
 		["Show:PetBattles"] = true,
 		["Hide:PvP"] = false,
 		["Dynamic:Style"] = 1,
+		["CC:SL_COV_KYR"] = true,
+		["CC:SL_COV_VEN"] = true,
+		["CC:SL_COV_NFA"] = true,
+		["CC:SL_COV_NEC"] = true,
 	},
 };
 local FilterSettingsBase = {};

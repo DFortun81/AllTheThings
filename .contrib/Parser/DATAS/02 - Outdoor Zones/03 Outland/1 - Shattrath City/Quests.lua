@@ -243,12 +243,6 @@ _.Zones =
 					["coord"] = { 56.4, 49.2, SHATTRATH_CITY },
 					["provider"] = { "n", 22497 },	-- V'eru
 				}),
-				q(10983, {	-- Mog'dorg the Wizened
-					["isBreadcrumb"] = true,
-					["sourceQuest"] = 10984,	-- Speak with the Ogre
-					["coord"] = { 65.0, 68.4, SHATTRATH_CITY },
-					["provider"] = { "n", 22940 },	-- Grok
-				}),
 				q(10917,  {  -- The Outcast's Plight
 					["provider"] = { "n", 22429 },	-- Vekax
 					["coord"] = { 47.7, 18.8, SHATTRATH_CITY },
@@ -404,10 +398,6 @@ _.Zones =
 						i(142282),	-- Plans: Stormforged Axe
 					},
 				}),
-				q(10009, {	-- Crackin' Some Skulls
-					["provider"] = { "n", 18584 },	-- Sal'salabim
-					["sourceQuests"] = { 10004 },	-- Patience and Understanding *UNTESTED*
-				}),
 				q(12773, {	-- Darnassus
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { NIGHTELF },
@@ -466,10 +456,6 @@ _.Zones =
 					["races"] = { GNOME },
 					["provider"] = { "n", 29087 },	-- Bishop Lazaril
 					["sourceQuest"] = 12808,	-- A Desperate Alliance
-				}),
-				q(10010, {	-- It's Just That Easy?
-					["provider"] = { "n", 18584 },	-- Sal'salabim
-					["sourceQuests"] = { 10009 },	-- Crackin' Some Skulls *UNTESTED*
 				}),
 				q(10169, {	-- Losing Gracefully
 					["u"] = REMOVED_FROM_GAME,

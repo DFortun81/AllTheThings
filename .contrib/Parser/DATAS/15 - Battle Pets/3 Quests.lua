@@ -393,7 +393,6 @@ root("PetBattles", petbattle({
 			["coord"] = { 36.8, 77.4, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 			["sourceQuests"] = { 31585 },	-- Learning the Ropes
-
 		}),
 		q(31574, {	-- On The Mend (Naleen)
 			["provider"] = { "n", 63067 },	-- Naleen
@@ -471,7 +470,6 @@ root("PetBattles", petbattle({
 			["races"] = HORDE_ONLY,
 			["isBreadcrumb"] = true,
 			["DisablePartySync"] = true,
-			["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 			["altQuests"] = {
 				-- Alliance Shared Account-Wide Pet Battle Intro Quests
 				32008,	-- Audrey Burnhep (Will be marked completed if any Audrey Burnhep quest is completed)

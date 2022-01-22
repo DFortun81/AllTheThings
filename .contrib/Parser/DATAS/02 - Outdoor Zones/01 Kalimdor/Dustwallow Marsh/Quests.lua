@@ -87,11 +87,13 @@ _.Zones =
 					},
 				}),
 				q(1168,  {	-- Army of the Black Dragon
-					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4502 },	-- Tharg
+					["coord"] = { 37.3, 31.3, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(9705)),	-- Tharg's Shoelace
+						i(10702),	-- Enormous Ogre Boots
+						i(9706),	-- Tharg's Disk
 					},
 				}),
 				q(27419, {	-- Army of the Black Dragon

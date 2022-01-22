@@ -490,6 +490,18 @@ _.Zones =
 						i(131371),  -- Steel-Patched Armbands
 					},
 				}),
+				q(1361,  {	-- Regthar Deathgate
+					["u"] = REMOVED_FROM_GAME,
+					["races"] = HORDE_ONLY,
+					["qgs"] = {
+						4485,	-- Belgrom Rockmaul
+						2229,	-- Krusk
+					},
+					["coords"] = {
+						{ 75.0, 34.2, ORGRIMMAR },
+						{ 63.2, 20.6, HILLSBRAD_FOOTHILLS },
+					},
+				}),
 				q(26687, {	-- Reinforcements From Theramore
 					["provider"] = { "n", 39119 },	-- General Twinbraid
 					["coord"] = { 43.5, 78.3, SOUTHERN_BARRENS },
@@ -709,10 +721,7 @@ _.Zones =
 					["provider"] = { "n", 37837 },	-- Warlord Bloodhilt
 					["coord"] = { 41.6, 69.8, SOUTHERN_BARRENS },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = {
-						24618,	-- Claim the Battle Scar
-						24634,	-- Intelligence Warfare
-					},
+					["sourceQuest"] = 24634,	-- Intelligence Warfare
 					["g"] = {
 						i(53226),  -- Battlescar Monnion
 						i(53232),  -- Cloak of Harvested Fear

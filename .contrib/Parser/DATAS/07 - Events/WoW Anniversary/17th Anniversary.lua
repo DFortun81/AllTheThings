@@ -8,12 +8,6 @@ root("WorldEvents", n(SEVENTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM
 		i(185906, {	-- Anniversary Gift
 			i(185907),	-- Celebration Package
 			i(172013),	-- Celebration Firework
-			q(57249, {	-- A Timely Invitation
-				["provider"] = { "i", 171177 },	-- Invitation from the Timewalkers
-				["coord"] = { 53.6, 54.8, CAVERNS_OF_TIME },
-				["u"] = WOW_ANNIVERSARY,
-				["isYearly"] = true,
-			}),
 		}),
 	}),
 	n(QUESTS, {

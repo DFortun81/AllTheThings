@@ -585,6 +585,21 @@ _.Zones =
 					["coord"] = { 44.1, 22.9, NORTHERN_STRANGLETHORN },
 					["sourceQuest"] = 194,	-- Raptor Hunting
 				}),
+				q(26838, {	-- Rebels Without a Clue
+					["qgs"] = {
+						3885,	-- Sentinel Velene Starstrike
+						43731,	-- Sister Elsington
+					},
+					["coords"] = {
+						{ 35.6, 71.5, ASHENVALE },
+						{ 20.0, 57.8, DUSKWOOD },
+					},
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
+				}),
 				q(331,   {	-- Report to Doren
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
@@ -906,15 +921,6 @@ _.Zones =
 					["coord"] = { 63.0, 41.4, NORTHERN_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26302,	-- Chasing Yenniku's Fate
-				}),
-				q(2760,  {	-- The Mithril Order
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 7794 },	-- McGaven
-					["requireSkill"] = BLACKSMITHING,
-					["sourceQuests"] = {
-						2757,	-- Booty Bay or Bust! (Horde)
-						2759,	-- In Search of Galvan (Alliance)
-					},
 				}),
 				q(620, {	-- The Monogrammed Sash
 					["u"] = REMOVED_FROM_GAME,

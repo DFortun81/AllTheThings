@@ -1144,6 +1144,14 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 							{ "i", 22057, 1 },	-- Brazier of Invocation
 						},
 						["groups"] = {
+							objective(2, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
+								["questID"] = 8967,	-- The Left Piece of Lord Valthalak's Amulet [WARLOCK, DRUID]
+								["provider"] = { "i", 21984 },	-- Left Piece of Lord Valthalak's Amulet
+							}),
+							objective(2, {	-- 0/1 Right Piece of Lord Valthalak's Amulet
+								["questID"] = 8990,	-- The Right Piece of Lord Valthalak's Amulet [WARRIOR, ROGUE]
+								["provider"] = { "i", 22046 },	-- Right Piece of Lord Valthalak's Amulet
+							}),
 							i(22315), 	-- Hammer of Revitalization
 							i(22314), 	-- Huntsman's Harpoon
 							i(22304, {	-- Ironweave Gloves

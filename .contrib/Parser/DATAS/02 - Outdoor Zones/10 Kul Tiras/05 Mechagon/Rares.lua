@@ -946,13 +946,14 @@ root("Zones", {
 	}),
 });
 
-root("HiddenQuestTriggers", {
-	m(KULTIRAS, {
-		m(MECHAGON, {
-			n(RARES, {
-				q(55907),	-- killing scrapclaw on Alliance?
-				q(56307),	-- killing scrapclaw on Horde?
-			}),
-		}),
-	}),
-});
+-- TODO: someone go out to mechagon and test stuff :P
+-- root("HiddenQuestTriggers", {
+-- 	m(KULTIRAS, {
+-- 		m(MECHAGON, {
+-- 			n(RARES, {
+-- 				q(55907),	-- killing scrapclaw on Alliance?
+-- 				q(56307),	-- killing scrapclaw on Horde?
+-- 			}),
+-- 		}),
+-- 	}),
+-- });

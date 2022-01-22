@@ -7,51 +7,6 @@ _.Zones =
 	m(ZANDALAR, {
 		m(ZULDAZAR, {
 			n(PROFESSIONS, {
-				prof(HERBALISM, {
-					-- Siren's Pollen
-					q(51312, {	-- Aromatic Pollenator (A)
-						["provider"] = { "n", 159877 },	-- Dead Pollen-Covered Bee
-						["description"] = "This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 50 Kul Tiran Herbalism.",
-						["requireSkill"] = HERBALISM,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(51447, {	-- Aromatic Pollenator (H)
-						["provider"] = { "n", 159877 },	-- Dead Pollen-Covered Bee
-						["description"] = "This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 50 Zandalari Herbalism.",
-						["requireSkill"] = HERBALISM,
-						["races"] = HORDE_ONLY,
-					}),
-					q(48758, {	-- Disgustingly Damp Flower (A)
-						["provider"] = { "n", 159956 },	-- Disgustingly Damp Flower
-						["sourceQuest"] = 51313,	-- Learn From the Best
-						["description"] = "This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 150 Zandalari Herbalism.",
-						["requireSkill"] = HERBALISM,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(51451, {	-- Disgustingly Damp Flower (H)
-						["provider"] = { "n", 159956 },	-- Disgustingly Damp Flower
-						["sourceQuest"] = 51448,	-- Learn From the Best
-						["description"] = "This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 150 Zandalari Herbalism.",
-						["itemID"] = 159956,	-- Disgustingly Damp Flower
-						["requireSkill"] = HERBALISM,
-						["races"] = HORDE_ONLY,
-					}),
-					-- Anchor Weed
-					q(51360, {	-- Enormous Anchor Pod (A)
-						["provider"] = { "i", 160035 },	-- Enormous Anchor Pod
-						["sourceQuest"] = 51016,	-- Seeking More Knowledge (A)
-						["description"] = "This can drop from |cFFFFD700Anchor Weed|r at any herbalism level.  You can only turn it in at Level 150 Kul Tiran Herbalism.",
-						["requireSkill"] = HERBALISM,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(51480, {	-- Enormous Anchor Pod (H)
-						["provider"] = { "i", 160035 },	-- Enormous Anchor Pod
-						["sourceQuest"] = 51482,	-- Seeking More Knowledge (H)
-						["description"] = "This can drop from |cFFFFD700Anchor Weed|r at any herbalism level. You can only turn it in at Level 150 Zandalari Herbalism.",
-						["requireSkill"] = HERBALISM,
-						["races"] = HORDE_ONLY,
-					}),
-				}),
 				prof(JEWELCRAFTING, {
 					q(55582, {	-- Atal'Dazar: Not All That Glitters... (A)
 						["provider"] = { "n", 150894 },	-- Shrine of Nature

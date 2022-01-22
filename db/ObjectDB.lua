@@ -1808,6 +1808,7 @@ select(2, ...).ObjectNames = {
 	[353331] = "Faerie Stash",
 	[353332] = "Faerie Stash",
 	[353333] = "Faerie Stash",
+	[353336] = "Secret Treasure",
 	[353380] = "Halis's Lunch Pail",
 	[353472] = "Radiant Sword",
 	[353500] = "Silver Strongbox",

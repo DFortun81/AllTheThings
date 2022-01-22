@@ -166,6 +166,21 @@ _.Zones =
 					["coord"] = { 66.3, 55.4, BADLANDS },
 					["sourceQuests"] = { 27764 },	-- A Strange Request
 				}),
+				q(737, {	-- Forbidden Knowledge
+					["u"] = REMOVED_FROM_GAME,
+					["sourceQuests"] = { 736 },	-- The Star, the Hand and the Heart
+					["providers"] = {
+						{ "n", 2934 },	-- Keeper Bel'dugur
+						{ "n", 2786 },	-- Gerrig Bonegrip
+					},
+					["coords"] = {
+						{ 50.8, 5.6, IRONFORGE },
+						{ 53.8, 54.4, UNDERCITY },
+					},
+					["g"] = {
+						un(REMOVED_FROM_GAME, i(4984)),	-- Skull of Impending Doom
+					},
+				}),
 				q(27878, {	-- Forcible Acquisition
 					["provider"] = { "n", 46758 },	-- Aoren Sunglow
 					["coord"] = { 52.1, 51.5, BADLANDS },

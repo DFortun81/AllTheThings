@@ -429,12 +429,19 @@ root("Instances", tier(CLASSIC_TIER, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(40, 15, 40),
 				}),
+				-- #if BEFORE CATA
+				-- apparently there used to be A/H versions of these quests, then changed to one shared version in Cata?
 				q(2280, {	-- The Platinum Discs (2/3) [Horde]
 					["provider"] = { "i", 6064 },	-- Miniature Platinum Discs
-					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(40, 15, 40),
 				}),
+				-- #else
+				q(2280, {	-- The Platinum Discs (2/3) [Both]
+					["provider"] = { "i", 6064 },	-- Miniature Platinum Discs
+					["lvl"] = lvlsquish(40, 15, 40),
+				}),
+				-- #endif
 				q(2439, {	-- The Platinum Discs (3/3) [Alliance]
 					["qg"] = 5387,	-- High Explorer Magellas <Explorers' League>
 					["sourceQuest"] = 2279,	-- The Platinum Discs (2/3) [Alliance]
@@ -625,6 +632,7 @@ root("Instances", tier(CLASSIC_TIER, {
 			o(123329, {	-- Baelog's Chest
 				i(7740, {	-- Gni'kiv Medallion
 					["description"] = "Use this item along with the Shaft of Tsol to create the Staff of Prehistoria required to open the door to Ironaya.\n\nYou should ask whoever loots the Shaft of Tsol from Revelosh to trade it to you.",
+					["timeline"] = { "removed 4.1.0.10000" },
 				}),
 			}),
 			n(6912, {	-- Remains of a Paladin
@@ -639,9 +647,11 @@ root("Instances", tier(CLASSIC_TIER, {
 							{ "i", 7740, 1 },	-- Gni'kiv Medallion
 							{ "i", 7741, 1 },	-- The Shaft of Tsol
 						},
+						["timeline"] = { "removed 4.1.0.10000" },
 					}),
 					i(7741, {	-- The Shaft of Tsol
 						["description"] = "Use this item along with the Gni'kiv Medallion to create the Staff of Prehistoria required to open the door to Ironaya.\n\nYou should trade this to the person that looted the Gni'kiv Medallion.",
+						["timeline"] = { "removed 4.1.0.10000" },
 					}),
 					i(132736, {	-- Revelosh's Pauldrons
 						["timeline"] = { "added 7.0.3.22248"},

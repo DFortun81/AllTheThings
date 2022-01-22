@@ -596,8 +596,14 @@ _.Zones =
 					["sourceQuest"] = 27174,	-- Combat Training
 				}),
 				q(27083, {	-- The Battle Resumes! (H)
-					["provider"] = { "n", 45013 },	-- Damion Steel
-					["coord"] = { 49.2, 53.1, WESTERN_PLAGUELANDS },
+					["qgs"] = {
+						45013,	-- Damion Steel
+						10837,	-- High Executor Derrington
+					},
+					["coords"] = {
+						{ 83.3, 69.0, TIRISFAL_GLADES },
+						{ 49.2, 53.1, WESTERN_PLAGUELANDS },
+					},
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26938,	-- Combat Training
 				}),

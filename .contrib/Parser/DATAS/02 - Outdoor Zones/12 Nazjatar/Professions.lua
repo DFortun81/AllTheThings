@@ -6,22 +6,6 @@ _.Zones =
 {
 	m(1355, {	-- Nazjatar
 		n(PROFESSIONS, {
-			prof(HERBALISM, {
-				q(56098, {	-- Defensive in Death (A)
-					["provider"] = { "i", 168919 },	-- Zin'anthid Tentacle
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						recipe(298144),	-- Herbalism Technique: Zin'anthid (Rank 3)
-					},
-				}),
-				q(56430, {	-- Defensive in Death (H)
-					["provider"] = { "i", 169596 },	-- Zin'anthid Tentacle
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						recipe(298144),	-- Herbalism Technique: Zin'anthid (Rank 3)
-					},
-				}),
-			}),
 			prof(MINING, {
 				q(56103, {	-- Ounces of Osmenite (A)
 					["provider"] = { "i", 168939 },	-- Osmenite Shards

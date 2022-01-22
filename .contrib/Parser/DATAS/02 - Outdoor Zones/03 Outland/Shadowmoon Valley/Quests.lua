@@ -721,18 +721,6 @@ _.Zones =
 						i(30966),	-- Singed Vambraces
 					},
 				}),
-				q(10662, {	-- The Hermit Smith (A)
-					["provider"] = { "n", 19370 },	-- Ordinn Thunderfist
-					["coord"] = { 36.8, 54.8, SHADOWMOON_VALLEY },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 10627,	-- Capture the Weapons
-				}),
-				q(10663, {	-- The Hermit Smith (H)
-					["provider"] = { "n", 19333 },	-- Grokom Deatheye
-					["coord"] = { 29.8, 31.2, SHADOWMOON_VALLEY },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 10627,	-- Capture the Weapons
-				}),
 				q(10664, {	-- Additional Materials
 					["provider"] = { "n", 21465 },	-- David Wayne
 					["coord"] = { 77.4, 38.6, TEROKKAR_FOREST },
@@ -1217,6 +1205,7 @@ _.Zones =
 				}),
 				q(10663, {	-- The Hermit Smith (H)
 					["provider"] = { "n", 19333 },	-- Grokom Deatheye
+					["coord"] = { 29.8, 31.2, SHADOWMOON_VALLEY },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 10627 },	-- Capture the Weapons
 				}),

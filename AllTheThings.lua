@@ -1721,6 +1721,7 @@ app.IsComplete = function(o)
 	if o.total and o.total > 0 then return o.total == o.progress; end
 	if o.collectible then return o.collected; end
 	if o.trackable then return o.saved; end
+	return true;
 end
 app.GetSourceID = GetSourceID;
 app.MaximumItemInfoRetries = 400;
@@ -1756,7 +1757,7 @@ app.GetIndicatorIcon = function(group)
 			return app.asset("known_green");
 		end
 	else
-		local asset = app.GetQuestIndicator(group);
+		local asset = app.GetQuestIndicator(group) or app.GetVignetteIndicator(group);
 		if asset then
 			return app.asset(asset);
 		elseif group.u then
@@ -2489,10 +2490,10 @@ MergeObjects = function(g, g2, newCreate)
 	end
 end
 NestObjects = function(p, g, newCreate)
-	if not g or #g == 0 then return; end
+	if not g then return; end
 	if p.g then
 		MergeObjects(p.g, g, newCreate);
-	else
+	elseif #g > 0 then
 		p.g = {};
 		MergeObjects(p.g, g, newCreate);
 	end
@@ -5544,6 +5545,10 @@ local function PopulateQuestObject(questObject)
 	local questID = questObject.questID;
 	-- Check for a Task-specific icon
 	local info = C_QuestLog.GetQuestTagInfo(questID);
+	-- Tell the server to populate this quest for the Client
+	C_QuestLog.RequestLoadQuestByID(questID);
+	-- TODO: eventually handle the reward population async via QUEST_DATA_LOAD_RESULT event trigger somehow
+
 	-- if info then
 		-- print("WQ info:",questID);
 		-- for k,v in pairs(info) do
@@ -15620,7 +15625,7 @@ function app:GetDataCache()
 
 		-- Professions
 		if app.Categories.Professions then
-			db = {};
+			db = app.CreateNPC(-38);
 			db.g = app.Categories.Professions;
 			db.expanded = false;
 			db.text = TRADE_SKILLS;
@@ -16845,6 +16850,17 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			self:SetVisible(true);
 			self:Update();
 		end
+		local function IsNotComplete(group) return not app.IsComplete(group); end
+		local function CheckGroup(group, func)
+			if func(group) then
+				return true;
+			end
+			if group.g then
+				for _,o in ipairs(group.g) do
+					if CheckGroup(o, func) then return true; end
+				end
+			end
+		end
 		-- Returns the consolidated data format for the next header level
 		-- Headers are forced not collectible, and will have their content sorted, and can be copied from the existing Source header
 		local function CreateHeaderData(group, header)
@@ -16869,18 +16885,18 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		end
 		-- set of keys for headers which can be nested in the minilist automatically, but not confined to a direct top header
 		local subGroupKeys = {
-			["filterID"] = app.CreateFilter,
-			["professionID"] = app.CreateProfession,
-			["raceID"] = app.CreateRace,
-			["holidayID"] = app.CreateHoliday,
-			["instanceID"] = app.CreateInstance,
+			"filterID",
+			"professionID",
+			"raceID",
+			"holidayID",
+			"instanceID",
 		};
 		-- set of keys for headers which can be nested in the minilist within an Instance automatically, but not confined to a direct top header
 		local subGroupInstanceKeys = {
-			["filterID"] = app.CreateFilter,
-			["professionID"] = app.CreateProfession,
-			["raceID"] = app.CreateRace,
-			["holidayID"] = app.CreateHoliday,
+			"filterID",
+			"professionID",
+			"raceID",
+			"holidayID",
 		};
 		-- Keep a static collection of top-level groups in the list so they can just be referenced for adding new
 		local topHeaders = {
@@ -16918,7 +16934,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		};
 		-- self.Rebuild
 		(function()
-		local results, groups, nested, header, inInstance, difficultyID, topHeader, nextParent, headerID, groupKey, typeHeaderID;
+		local results, groups, nested, header, headerKeys, difficultyID, topHeader, nextParent, headerID, groupKey, typeHeaderID;
 		self.Rebuild = function(self)
 			-- print("Rebuild",self.mapID);
 			-- check if this is the same 'map' for data purposes
@@ -16934,7 +16950,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				groups = {};
 				header = app.CreateMap(self.mapID, { g = groups });
 				self.CurrentMaps[self.mapID] = true;
-				inInstance = IsInInstance();
+				headerKeys = IsInInstance() and subGroupInstanceKeys or subGroupKeys;
 				for _,group in ipairs(results) do
 					-- do not use any raw Source groups in the final list
 					group = CreateObject(group);
@@ -16955,9 +16971,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 							end
 						end
 						MergeProperties(header, group, true);
-						if group.g then
-							MergeObjects(groups, group.g);
-						end
+						NestObjects(header, group.g);
 						group = nil;
 					else
 						-- Get the header chain for the group
@@ -16987,7 +17001,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 									nested = true;
 								end
 							else
-								for hkey,hf in pairs(inInstance and subGroupInstanceKeys or subGroupKeys) do
+								for _,hkey in ipairs(headerKeys) do
 									if nextParent[hkey] then
 										-- create the specified group Type header
 										group = CreateHeaderData(group, nextParent);
@@ -17119,21 +17133,26 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				end
 				if app.Settings:GetTooltipSetting("Warn:Difficulty") then
 					if difficultyID and difficultyID > 0 and self.data.g then
-						local completed,other = true, nil;
+						local missing, other;
 						for _,row in ipairs(self.data.g) do
-							if row.difficultyID or row.difficulties then
-								if (row.difficultyID or -1) == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-									if row.total and row.progress < row.total then
-										completed = false;
+							-- app.PrintDebug("Check Minilist Header for Progress for Difficulty",difficultyID,row.difficultyID,row.progress,row.total)
+							if not missing then
+								-- check group for the current difficulty for incomplete content
+								if (row.difficultyID == difficultyID) or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
+									if CheckGroup(row, IsNotComplete) then
+										-- app.PrintDebug("Current Difficulty is NOT complete")
+										missing = true;
 									end
-								else
-									if row.total and row.progress < row.total then
+								-- grab another incomplete difficulty name in case current difficulty is complete
+								elseif not other and row.difficultyID then
+									if CheckGroup(row, IsNotComplete) then
 										other = row.text;
 									end
 								end
 							end
 						end
-						if completed and other then
+						-- current difficulty is not missing anything, and we have another difficulty text to announce
+						if not missing and other then
 							print(L["DIFF_COMPLETED_1"] .. other .. L["DIFF_COMPLETED_2"]);
 						end
 					end
@@ -20722,6 +20741,20 @@ app.Startup = function()
 	-- Attempt to register for the addon message prefix.
 	C_ChatInfo.RegisterAddonMessagePrefix("ATT");
 
+	-- Register remaining addon-related events
+	app:RegisterEvent("BOSS_KILL");
+	app:RegisterEvent("CHAT_MSG_ADDON");
+	app:RegisterEvent("PLAYER_ENTERING_WORLD");
+	app:RegisterEvent("NEW_PET_ADDED");
+	app:RegisterEvent("PET_JOURNAL_PET_DELETED");
+	app:RegisterEvent("PLAYER_DIFFICULTY_CHANGED");
+	app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_ADDED");
+	app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_REMOVED");
+	app:RegisterEvent("PET_BATTLE_OPENING_START")
+	app:RegisterEvent("PET_BATTLE_CLOSE")
+	app:RegisterEvent("VIGNETTE_MINIMAP_UPDATED")
+	app:RegisterEvent("VIGNETTES_UPDATED")
+
 	StartCoroutine("InitDataCoroutine", app.InitDataCoroutine);
 end
 
@@ -21370,18 +21403,8 @@ end
 	end
 end)();
 
--- Register Events required at the start
+-- Register Event for startup
 app:RegisterEvent("ADDON_LOADED");
-app:RegisterEvent("BOSS_KILL");
-app:RegisterEvent("CHAT_MSG_ADDON");
-app:RegisterEvent("PLAYER_ENTERING_WORLD");
-app:RegisterEvent("NEW_PET_ADDED");
-app:RegisterEvent("PET_JOURNAL_PET_DELETED");
-app:RegisterEvent("PLAYER_DIFFICULTY_CHANGED");
-app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_ADDED");
-app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_REMOVED");
-app:RegisterEvent("PET_BATTLE_OPENING_START")
-app:RegisterEvent("PET_BATTLE_CLOSE")
 
 -- Define Event Behaviours
 app.events.ARTIFACT_UPDATE = function(...)
@@ -21742,3 +21765,77 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 		SendSocialMessage("S\t" .. sourceID .. "\t" .. oldState .. "\t0");
 	end
 end
+
+-- Vignette Functionality Scope
+(function()
+app.CurrentVignettes = {
+	["npcID"] = {},
+	["objectID"] = {},
+};
+local C_VignetteInfo_GetVignetteInfo = C_VignetteInfo.GetVignetteInfo;
+local C_VignetteInfo_GetVignettes = C_VignetteInfo.GetVignettes;
+local tonumber, strsplit, ipairs = tonumber, strsplit, ipairs;
+
+local function DelVignette(vignetteGUID)
+	local vignetteInfo = C_VignetteInfo_GetVignetteInfo(vignetteGUID);
+	if vignetteInfo and vignetteInfo.objectGUID then
+		local type, _, _, _, _, id, _ = strsplit("-",vignetteInfo.objectGUID);
+		id = tonumber(id);
+		local searchType = type == "Creature" and "npcID" or "objectID";
+		-- app.PrintDebug("Hidden Vignette",searchType,id)
+		app.CurrentVignettes[searchType][id] = nil;
+	end
+end
+local function AddVignette(vignetteGUID)
+	local vignetteInfo = C_VignetteInfo_GetVignetteInfo(vignetteGUID);
+	if vignetteInfo and vignetteInfo.objectGUID then
+		local type, _, _, _, _, id, _ = strsplit("-",vignetteInfo.objectGUID);
+		id = tonumber(id);
+		local searchType = type == "Creature" and "npcID" or "objectID";
+		if vignetteInfo.isDead then
+			-- app.PrintDebug("Dead Vignette",searchType,id)
+			app.CurrentVignettes[searchType][id] = nil;
+		else
+			-- app.PrintDebug("Visible Vignette",searchType,id)
+			app.CurrentVignettes[searchType][id] = true;
+			-- potentially can add groups into another window?
+			local vignetteGroup = app.SearchForObject(searchType,id);
+			if vignetteGroup then
+				-- app.PrintDebug("Found Vignette Group")
+				-- force the related vignette group to be visible (this currently would only affect the Main list...)
+				vignetteGroup.visible = true;
+			end
+		end
+	end
+end
+local function CheckVignettes(vignettes)
+	if vignettes then
+		for _,vignetteGUID in ipairs(vignettes) do
+			AddVignette(vignetteGUID);
+		end
+	end
+end
+-- Given a Key and Id, will return the indicator (asset name) if this Object should show one based on it being a currently active/visible Vignette
+app.GetVignetteIndicator = function(t)
+	local key, id = t.key;
+	if key then
+		id = t[key];
+		local vignetteType = app.CurrentVignettes[key];
+		return vignetteType and id and vignetteType[id] and "Category_Secrets";
+	end
+end
+app.events.VIGNETTE_MINIMAP_UPDATED = function(vignetteGUID, onMinimap)
+	if onMinimap then
+		AddVignette(vignetteGUID);
+	else
+		DelVignette(vignetteGUID);
+	end
+	-- app.UpdateWindows(); -- maybe just a refresh?
+end
+app.events.VIGNETTES_UPDATED = function(...)
+	local vignettes = C_VignetteInfo_GetVignettes();
+	if vignettes then
+		CheckVignettes(vignettes);
+	end
+end
+end)();

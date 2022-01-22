@@ -7,40 +7,6 @@ _.Zones =
 	m(BROKEN_ISLES, {
 		m(SURAMAR, {
 			n(PROFESSIONS, {
-				prof(ARCHAEOLOGY, {
-					q(41173, {	-- A Beacon of Hope
-						["isWeekly"] = true,
-						["g"] = {
-							i(131717),	-- Starlight Beacon
-						},
-					}),
-					q(41166, {	-- Dark Secrets
-						["isWeekly"] = true,
-					}),
-					q(41172, {	-- Echoes of My Ancestors
-						["isWeekly"] = true,
-					}),
-					q(41175, {	-- Fit for an Elven Queen
-						["isWeekly"] = true,
-					}),
-					q(41181, {	-- Narrowing Down
-						["isWeekly"] = true,
-					}),
-					q(41176, {	-- Sifting Through the Rubble
-						["isWeekly"] = true,
-					}),
-					q(41182, {	-- Uncovering the Orb of Sciallax
-						["isWeekly"] = true,
-						["g"] = {
-							i(131731),	-- Glinting Shard of Sciallax
-							i(134076),	-- Crystallized Shard of Sciallax
-							i(134077),	-- Glowing Shard of Sciallax
-							i(134078),	-- Dark Shard of Sciallax
-							i(134079),	-- Ardent Shard of Sciallax
-							i(134081),	-- Adamant Shard of Sciallax
-						},
-					}),
-				}),
 				prof(COOKING, {
 					i(133817, {	-- Recipe: Suramar Surf and Turf
 						["cost"] = {

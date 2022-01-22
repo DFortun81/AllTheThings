@@ -645,15 +645,13 @@ _.Zones =
 					["coord"] = { 62.4, 20, THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
+					["sourceQuest"] = 924,	-- The Demon Seed
 					["timeline"] = {
 						"added 1.11.1.10772",
 						"removed 4.0.3.10000",
 					},
 					["g"] = {
-						{
-							["itemID"] = 4986,	-- Flawed Power Stone
-							["questID"] = 924,	-- The Demon Seed
-						},
+						i(4986),	-- Flawed Power Stone
 					},
 				}),
 				q(25173, {	-- From Bad to Worse

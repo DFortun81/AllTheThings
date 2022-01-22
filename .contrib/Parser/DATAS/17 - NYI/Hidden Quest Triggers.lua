@@ -902,7 +902,9 @@ _.HiddenQuestTriggers = {
 		-- TEMPORARY SOLUTION AS HQT FOR NOW
 		q(9734),	-- Return to the Marsh - completed with quest 9732 probably? (reported as with quest 11072)
 		q(9749),	-- They're Alive! Maybe... - completed with quest 9670
+		q(10088),	-- When This Mine's a-Rockin' - completed with quest 10079
 		q(10207),	-- Forward Base: Reaver's Fall REUSE - completed with quest 10124
+		q(10214),	-- When This Mine's a-Rockin' - completed with quest 10079
 		q(10815),	-- The Journal of Val'zareq: Portends of War - completed with quest 10793
 		q(10871, {["_drop"] = { "g" }}),	-- Ally of the Netherwingm - completed with quest 10870
 		q(10872),	-- Zuluhed the Whacked - completed with quest 144
@@ -930,13 +932,16 @@ _.HiddenQuestTriggers = {
 		q(33407),	-- REUSE - completed with quest 33622
 		q(33707),	-- Demons Among Us - Horde - completed with quest 40593 & 40607
 		q(33914),	-- Gut Guttra - completed with quest 33132
+		q(33923),	-- Demons? In Auchindoun? - completed with quest 33917
+		q(33974),	-- Dying Wish - completed with quest 33973
 		q(34426),	-- Yrel - completed with quest 34478 & 34427
 		q(34435),	-- Find Ga'nar - completed with quest 34434 & 34740
 		q(34438),	-- Regarding Enormous Tanks - completed with quest 34958
 		q(34506),	-- Bonus Objective: Kill Grimfrost Ogres - completed with quest 33145
+		q(34570),	-- REUSE - completed with quest 34154 & 34564
 		q(34817),	-- Altar Altercation - completed with quest 34423
 		q(35251),	-- The Bounty of Bladespire - completed with quest 33657
-		q(35340),	-- What Happened Here? - completed with quest 35322
+		q(35340),	-- What Happened Here? - completed with quest 35339
 		q(35387),	-- Through the Nether - completed with quest 35085
 		q(35388),	-- The Void March - completed with quest 35086
 		q(35389),	-- Silence the Call - completed with quest 35084
@@ -965,6 +970,7 @@ _.HiddenQuestTriggers = {
 		q(38008),	-- The Road of Glory - completed with quest 36125 & 36227
 		q(38305),	-- Cenarius, Keeper of the Grove — completed with quest 40122
 		q(39058, {["_drop"] = { "g" }}),	-- Critters of Draenor — completed with quest 38299 & 38300
+		q(39396),	-- NOT USED - completed with quest 39394 & 38463
 		q(45405),	-- Breaching the Sanctum - completed with quest 44719
 		q(49563),	-- Warchief's Command: Frostfire Ridge! - completed with quest 49545
 
@@ -973,16 +979,9 @@ _.HiddenQuestTriggers = {
 		--q(34734),	-- The Loyalty of Olin Umberhide - TODO: figure out from where it gets completed
 		--q(37062),	-- Tricks of the Trade - TODO: figure out from where it gets completed
 
-		-- Shadowmoon Valley / probably Tanaan Jungle instead
-		--q(39396),	-- NOT USED - TODO: figure out from where it gets completed
-
 		-- Spires of Arak
 		--q(34565),	-- Tearing Up Talador - TODO: figure out from where it gets completed
 
-		-- Talador
-		--q(33923),	-- Demons? In Auchindoun? - TODO: figure out from where it gets completed
-		--q(33974),	-- Dying Wish - TODO: figure out from where it gets completed
-		--q(34570),	-- REUSE - TODO: figure out from where it gets completed
 
 		-------------------
 		---   CLASSIC   ---
@@ -2497,7 +2496,7 @@ _.HiddenQuestTriggers = {
 		-- Caustic Mechaslime first kill
 		q(55927),	-- Crazed Trogg first kill
 		q(55917),	-- Deepwater Maw first kill
-		q(55544),	-- Doppel Ganger first kill
+		-- q(55544),	-- Doppel Ganger first kill
 		q(55932),	-- Earthbreaker Gulroc first kill
 		q(56994),	-- Enforcer KX-T57 first kill
 		q(55916),	-- Foul Manifestation first kill
@@ -3020,11 +3019,6 @@ _.HiddenQuestTriggers = {
 		q(62271),	-- Deifir the Untamed secondary quest
 		q(61198),	-- Triggers when successfully completing the pre-req sequence for the Shimmermist Runner rare
 		-- Ardenweald Treasures
-		q(60800),	-- \
-		q(60801),	--  \
-		q(60802),	--   running over Lunarlight Buds (48.1, 70.8), user could not find associated treasure
-		q(60803),	--  /
-		q(60804),	-- /
 		q(60810),	-- \
 		q(60811),	--  \
 		q(60812),	--   running over Lunarlight Buds (somewhere in/near Glitterfall Basin) to light up Dim Lunarlight Pod and turn it into Lunarlight Pod (questID #60792)
@@ -3637,10 +3631,8 @@ _.HiddenQuestTriggers = {
 		q(34985),	-- Prized Repossessions Tracking
 		q(34986),	-- Punching Through Tracking
 		q(34873),	-- Punching Through Tracking
-		q(35192),	-- See Reinforcements Teleport
 		q(33962),	-- Shadowmoon Flowerpicker
 		q(34053),	-- SoL Conversation Tracker
-		q(36942),	-- Soulbinder Aedraa
 		q(34871),	-- Supply Recovery Tracking
 		q(34984),	-- Supply Recovery Tracking
 		q(33960),	-- Talador Flowerpicker

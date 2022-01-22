@@ -771,9 +771,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				q(36353, {	-- For Old Times' Sake
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(33581, {	-- Forbidden Knowledge
 					["provider"] = { "n", 75323 },	-- Darkscryer Raastok
 					["coord"] = { 70.5, 57.3, TALADOR },
@@ -1738,8 +1735,10 @@ root("HiddenQuestTriggers", {
 		q(34904),	-- Portal Vision - triggers when the portal is summoned to get on the wall during "Dropping In" (questID 34913 & 34879)
 		q(34833),	-- Prune Ancient - triggers when you interact with the first ancient during "Forming the Scroll" (questID 34612 & 34635)
 		q(33732),	-- Sabotage Siege Weapons
+		q(35192),	-- See Reinforcements Teleport - triggers when Lord Morkurk is killed during "The Final Step" (questID 34912 & 34890)
 		q(34969),	-- Serena Summoned - triggers when approaching Gordal Fortress and Serena ports in
 		q(34503),	-- Screaming Telmor Citizen - triggers in Telmor
+		q(36942),	-- Soulbinder Aedraa - triggers when approaching Exarch Maladar during "Light's Rest" (questID 34452)
 		q(33931),	-- This Is Not a Quest - triggers when you loot Deceptia's Smoldering Boots
 		q(34857),	-- Tracking Flag: Orcs Kicked Out of Cave - triggers when going to turn in "Old Friends, New Enemies" (questID 35226)
 		q(35491),	-- Tracking Flag - Underseer Bloodmane Vignette - secondary quest trigger for Underseer Bloodmane rare

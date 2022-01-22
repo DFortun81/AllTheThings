@@ -1183,12 +1183,11 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 				}),
 			}),
 			prof(HERBALISM, {
-				["cost"] = {
-					{ "i", 19727, 1 },	-- Blood Scythe
-				},
-				["groups"] = {
-					i(19726),	-- Bloodvine
-				},
+				i(19726, {	-- Bloodvine
+					["cost"] = {
+						{ "i", 19727, 1 },	-- Blood Scythe
+					},
+				}),
 			}),
 			prof(MINING, {
 				i(19774),	-- Souldarite

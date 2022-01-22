@@ -6,77 +6,6 @@ _.Zones =
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(NAGRAND, {
 			n(QUESTS, {
-				q(10669, {	-- Against All Odds
-					["provider"] = { "n", 18417 },	-- Altruis the Sufferer
-					["sourceQuests"] = {
-						10640,	-- Altruis (Aldor)
-						10689,	-- Altruis (Scryer)
-					},
-				}),
-				q(10668, {	-- Against the Illidari
-					["provider"] = { "n", 18417 },	-- Altruis the Sufferer
-					["sourceQuests"] = {
-						10640,	-- Altruis (Aldor)
-						10689,	-- Altruis (Scryer)
-					},
-				}),
-				q(10641, {	-- Against the Legion
-					["provider"] = { "n", 18417 },	-- Altruis the Sufferer
-					["sourceQuests"] = {
-						10640,	-- Altruis (Aldor)
-						10689,	-- Altruis (Scryer)
-					},
-				}),
-				q(10646, {	-- Illidan's Pupil
-					["provider"] = { "n", 18417 },	-- Altruis
-					["sourceQuests"] = {
-						10641,	-- Against the Legion
-						10668,	-- Against the Illidari
-						10669,	-- Against All Odds
-					},
-				}),
-				q(10650, {	-- Return to the Aldor
-					["provider"] = { "n", 18417 },	-- Altruis the Sufferer
-					["sourceQuest"] = 10649,	-- The Book of Fel Names
-				}),
-				q(10669, {	-- Against All Odds
-					["provider"] = { "n", 18417 },	-- Altruis the Sufferer
-					["coord"] = { 27.3, 43.0, NAGRAND },
-					["sourceQuests"] = {
-						10640,	-- Altruis (Aldor)
-						10689,	-- Altruis (Scryer)
-					},
-				}),
-				q(10668, {	-- Against the Illidari
-					["provider"] = { "n", 18417 },	-- Altruis the Sufferer
-					["coord"] = { 27.3, 43.0, NAGRAND },
-					["sourceQuests"] = {
-						10640,	-- Altruis (Aldor)
-						10689,	-- Altruis (Scryer)
-					},
-				}),
-				q(10641, {	-- Against the Legion
-					["provider"] = { "n", 18417 },	-- Altruis the Sufferer
-					["coord"] = { 27.3, 43.0, NAGRAND },
-					["sourceQuests"] = {
-						10640,	-- Altruis (Aldor)
-						10689,	-- Altruis (Scryer)
-					},
-				}),
-				q(10646, {	-- Illidan's Pupil
-					["provider"] = { "n", 18417 },	-- Altruis
-					["coord"] = { 27.3, 43.0, NAGRAND },
-					["sourceQuests"] = {
-						10641,	-- Against the Legion
-						10668,	-- Against the Illidari
-						10669,	-- Against All Odds
-					},
-				}),
-				q(10691, {	-- Return to the Scryers
-					["provider"] = { "n", 18417 },	-- Altruis
-					["coord"] = { 27.3, 43.0, NAGRAND },
-					["sourceQuest"] = 10649,	-- The Book of Fel Names
-				}),
 				q(11042, {	-- A Mystifying Vision
 					["provider"] = { "n", 23268 },	-- Seer Jovar
 					["coord"] = { 55.4, 68.6, NAGRAND },
@@ -117,6 +46,30 @@ _.Zones =
 						9868,	-- The Totem of Kar'dash
 						9934,	-- Message to Garadar
 						10011,	-- Forge Camp: Annihilated
+					},
+				}),
+				q(10669, {	-- Against All Odds
+					["provider"] = { "n", 18417 },	-- Altruis the Sufferer
+					["coord"] = { 27.3, 43.0, NAGRAND },
+					["sourceQuests"] = {
+						10640,	-- Altruis (Aldor)
+						10689,	-- Altruis (Scryer)
+					},
+				}),
+				q(10668, {	-- Against the Illidari
+					["provider"] = { "n", 18417 },	-- Altruis the Sufferer
+					["coord"] = { 27.3, 43.0, NAGRAND },
+					["sourceQuests"] = {
+						10640,	-- Altruis (Aldor)
+						10689,	-- Altruis (Scryer)
+					},
+				}),
+				q(10641, {	-- Against the Legion
+					["provider"] = { "n", 18417 },	-- Altruis the Sufferer
+					["coord"] = { 27.3, 43.0, NAGRAND },
+					["sourceQuests"] = {
+						10640,	-- Altruis (Aldor)
+						10689,	-- Altruis (Scryer)
 					},
 				}),
 				q(9804,  {	-- Agitated Spirits of Skysong
@@ -258,7 +211,7 @@ _.Zones =
 					["provider"] = { "n", 18106 },	-- Jorin Deadeye
 					["coord"] = { 55.6, 37.6, NAGRAND },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 9906,	-- An Audacious Advance
+					["sourceQuest"] = 9907,	-- An Audacious Advance
 				}),
 				q(9917,  {	-- Do My Eyes Deceive Me
 					["provider"] = { "n", 18353 },	-- Huntress Bintook
@@ -371,6 +324,15 @@ _.Zones =
 					["provider"] = { "n", 18294 },	-- Kristen Dipswitch
 					["coord"] = { 71.4, 40.6, NAGRAND },
 					["description"] = "You have to rescue Kristen Dipswitch from Gankly Rottenfist to get offered the quest. When she is not getting attacked by Gankly you have to get her killed by a mob and wait ~90 minutes until she respanws."
+				}),
+				q(10646, {	-- Illidan's Pupil
+					["provider"] = { "n", 18417 },	-- Altruis
+					["coord"] = { 27.3, 43.0, NAGRAND },
+					["sourceQuests"] = {
+						10641,	-- Against the Legion
+						10668,	-- Against the Illidari
+						10669,	-- Against All Odds
+					},
 				}),
 				q(11502, {	-- In Defense of Halaa
 					["provider"] = { "n", 24866 },	-- Lakoor
@@ -669,11 +631,20 @@ _.Zones =
 					["coord"] = { 27.4, 42.0, NAGRAND },
 					["sourceQuest"] = 10001,	-- The Master Planner
 				}),
+				q(10650, {	-- Return to the Aldor
+					["provider"] = { "n", 18417 },	-- Altruis the Sufferer
+					["sourceQuest"] = 10649,	-- The Book of Fel Names
+				}),
 				q(10170, {	-- Return to the Greatmother
 					["provider"] = { "n", 18687 },	-- Mother Kashur
 					["coord"] = { 26.0, 60.6, NAGRAND },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 10168,	-- What the Soul Sees
+				}),
+				q(10691, {	-- Return to the Scryers
+					["provider"] = { "n", 18417 },	-- Altruis
+					["coord"] = { 27.3, 43.0, NAGRAND },
+					["sourceQuest"] = 10649,	-- The Book of Fel Names
 				}),
 				q(9931,  {	-- Returning the Favor
 					["provider"] = { "n", 18261 },	-- Lantresor of the Blade

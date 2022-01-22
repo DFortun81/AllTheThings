@@ -67,51 +67,6 @@ _.Zones =
 						["lvl"] = 120,
 					}),
 				}),
-				prof(HERBALISM, {
-					-- Akunda's Bite
-					q(51399, {	-- Foul Harvest
-						["provider"] = { "n", 137572 },	-- Patu
-						["coord"] = { 62.21, 25.81, VOLDUN },
-						["sourceQuests"] = {
-							51398,	-- An Unusual Mentor (A)
-							51432,	-- An Unusual Mentor (H)
-						},
-						["requireSkill"] = HERBALISM,
-					}),
-					q(51408, {	-- Giving Back to Nature
-						["provider"] = { "n", 137572 },	-- Patu
-						["coord"] = { 62.21, 25.81, VOLDUN },
-						["sourceQuest"] = 51399,	-- Foul Harvest
-						["requireSkill"] = HERBALISM,
-						["g"] = {
-							recipe(252412),	-- Akunda's Bite Rank 2
-						},
-					}),
-					q(51404, {	-- What Happens Next
-						["provider"] = { "i", 160117 },	-- Fully Charged Lightning Pod
-						["description"] = "This can drop from |cFFFFD700Akunda's Bite|r at Level 150 Kul Tiran / Zandalari Herbalism.",
-						["sourceQuest"] = 53142,	-- Foul Harvest
-						["requireSkill"] = HERBALISM,
-						["g"] = {
-							recipe(252413),	-- Akunda's Bite (Rank 3)
-						},
-					}),
-					-- Anchor Weed
-					q(51360, {	-- Enormous Anchor Pod (A)
-						["provider"] = { "i", 160035 },	-- Enormous Anchor Pod
-						["sourceQuest"] = 51016,	-- Seeking More Knowledge (A)
-						["description"] = "This can drop from |cFFFFD700Anchor Weed|r at any herbalism level.  You can only turn it in at Level 150 Kul Tiran Herbalism.",
-						["requireSkill"] = HERBALISM,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(51480, {	-- Enormous Anchor Pod (H)
-						["provider"] = { "i", 160035 },	-- Enormous Anchor Pod
-						["sourceQuest"] = 51482,	-- Seeking More Knowledge (H)
-						["description"] = "This can drop from |cFFFFD700Anchor Weed|r at any herbalism level. You can only turn it in at Level 150 Zandalari Herbalism.",
-						["requireSkill"] = HERBALISM,
-						["races"] = HORDE_ONLY,
-					}),
-				}),
 				prof(JEWELCRAFTING, {
 					q(55581, {	-- Sun-Speckled Dunes (A)
 						["provider"] = { "n", 150895 },	-- Shrine of the Sands

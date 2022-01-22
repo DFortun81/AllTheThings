@@ -2771,6 +2771,9 @@ for key,value in pairs({
 	[355041] = "달의 보관함",	-- Cache of the Moon
 	[355048] = "의식의 룬",	-- Rune of Rituals
 	[355049] = "의식의 룬",	-- Rune of Rituals
+	[355194] = "피조물의 룬",	-- Rune of Constructs
+	[355195] = "피조물의 룬",	-- Rune of Constructs
+	[355196] = "피조물의 룬",	-- Rune of Constructs
 	[355286] = "추모 제물",	-- Memorial Offerings
 	[355296] = "현상 수배: 야수 조절",	-- Bounty: Beast Control
 	[355355] = "조화의 상자",	-- Harmonic Chest
