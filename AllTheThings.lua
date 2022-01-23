@@ -20752,8 +20752,8 @@ app.Startup = function()
 	app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_REMOVED");
 	app:RegisterEvent("PET_BATTLE_OPENING_START")
 	app:RegisterEvent("PET_BATTLE_CLOSE")
-	app:RegisterEvent("VIGNETTE_MINIMAP_UPDATED")
-	app:RegisterEvent("VIGNETTES_UPDATED")
+	--app:RegisterEvent("VIGNETTE_MINIMAP_UPDATED")
+	--app:RegisterEvent("VIGNETTES_UPDATED")
 
 	StartCoroutine("InitDataCoroutine", app.InitDataCoroutine);
 end
