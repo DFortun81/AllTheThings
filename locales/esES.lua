@@ -2689,6 +2689,7 @@ for key,value in pairs({
 	[353331] = "Alijo de hada",	-- Faerie Stash
 	[353332] = "Alijo de hada",	-- Faerie Stash
 	[353333] = "Alijo de hada",	-- Faerie Stash
+	[353336] = "Tesoro secreto",	-- Secret Treasure
 	[353380] = "Cubo de comida de Halis",	-- Halis's Lunch Pail
 	[353472] = "Espada radiante",	-- Radiant Sword
 	[353500] = "Caja fuerte de plata",	-- Silver Strongbox

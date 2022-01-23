@@ -2671,6 +2671,7 @@ for key,value in pairs({
 	[353331] = "Тайник пикси",	-- Faerie Stash
 	[353332] = "Тайник пикси",	-- Faerie Stash
 	[353333] = "Тайник пикси",	-- Faerie Stash
+	[353336] = "Спрятанное сокровище",	-- Secret Treasure
 	[353380] = "Бадья с завтраком Халиса",	-- Halis's Lunch Pail
 	[353472] = "Сияющий меч",	-- Radiant Sword
 	[353500] = "Серебряный сундучок",	-- Silver Strongbox

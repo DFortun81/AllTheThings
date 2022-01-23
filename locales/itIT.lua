@@ -2683,6 +2683,7 @@ for key,value in pairs({
 	[353331] = "Scorte dei Silfidi",	-- Faerie Stash
 	[353332] = "Scorte dei Silfidi",	-- Faerie Stash
 	[353333] = "Scorte dei Silfidi",	-- Faerie Stash
+	[353336] = "Tesoro Segreto",	-- Secret Treasure
 	[353380] = "Cestino del Pranzo di Halis",	-- Halis's Lunch Pail
 	[353472] = "Spada Radiosa",	-- Radiant Sword
 	[353500] = "Forziere d'Argento",	-- Silver Strongbox
