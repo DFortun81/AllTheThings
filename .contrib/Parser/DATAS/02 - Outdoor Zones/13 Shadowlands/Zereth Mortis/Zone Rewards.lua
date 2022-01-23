@@ -4,6 +4,7 @@
 root("Zones", m(SHADOWLANDS, {
 	m(ZERETH_MORTIS, {
 		n(ZONE_REWARDS, {
+			i(190605),	-- Impossibly Ancient Cloak
 			i(190355),	-- Cryptic Cinch
 			i(190351),	-- Cryptic Grips
 			i(190352),	-- Cryptic Mask

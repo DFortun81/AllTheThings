@@ -24,6 +24,7 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 64.7, 33.7, ZERETH_MORTIS },
 				["questID"] = 65549,
 				["g"] = {
+					i(190733),	-- Circle of Akkaris
 					i(189903),	-- Sand Sifting Sandals
 					i(190053),	-- Underground Circler's Crossbow
 				},
@@ -125,12 +126,6 @@ root("Zones", m(SHADOWLANDS, {
 					i(189926),	-- Posion-Licked Spaulders
 				},
 			}),
-			n(180978, {	-- Hirukon <Aurelid Prime>
-				["coord"] = { 52.2, 75.2, ZERETH_MORTIS },
-				["g"] = {
-					i(187676),	-- Deepstar Aurelid
-				},
-			}),
 			n(178563, {	-- Hadeon the Stonebreaker <Scarabid Prime>
 				["coord"] = { 52.6, 25.1, ZERETH_MORTIS },
 				["questID"] = 65581,
@@ -140,6 +135,23 @@ root("Zones", m(SHADOWLANDS, {
 					i(189942),	-- Hadeon's Indomitable Faceguard
 					i(189919),	-- Skittering Scarabid Treads
 				},
+			}),
+			n(182155, {	-- High Reaver Damaris
+				["crs"] = { 182156 },	-- Edra, the Will Grazer
+				["coord"] = { 63.8, 27, ZERETH_MORTIS },
+				["questID"] = 65586
+
+			}),
+			n(180978, {	-- Hirukon <Aurelid Prime>
+				["coord"] = { 52.2, 75.2, ZERETH_MORTIS },
+				["g"] = {
+					i(187676),	-- Deepstar Aurelid
+				},
+			}),
+			n(182114, {	-- Iska, Outrider of Ruin
+				["crs"] = { 182120 },	-- Rhuv, Gorger of Ruin
+				["coord"] = { 63.8, 27, ZERETH_MORTIS },
+				--["questID"] =
 			}),
 			n(178508, {	-- Mother Phestis <Tarachnid Prime>
 				["coord"] = { 54, 34, ZERETH_MORTIS },
@@ -187,6 +199,11 @@ root("Zones", m(SHADOWLANDS, {
 					i(189984),	-- Drape of Idolized Symmetry
 					i(189177),	-- Revelation Key (PS)
 				},
+			}),
+			n(182158, {	-- Reanimatrox Marzan
+				["crs"] = { 182161 },	-- Phalangax, the Final Grasp
+				["coord"] = { 63.8, 27, ZERETH_MORTIS },
+				["questID"] = 65587, -- 65707 also popped?
 			}),
 			n(183927, {	-- Sand Matriarch Ileus
 				["coord"] = { 55.4, 47.1, ZERETH_MORTIS },

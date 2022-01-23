@@ -1099,6 +1099,7 @@ i(187666, 342668);	-- Desertwing Hunter
 i(187664, 359367);	-- Forged Spiteflyer
 i(187677, 359401);	-- Genesis Crawler
 i(187683, 359413);	-- Goldplate Bufonid
+i(190580, 367673);	-- Heartbond Lupine
 i(187679, 359403);	-- Ineffable Skitterer
 i(187667, 359372);	-- Mawdapted Raptora
 i(187639, 342671); 	-- Pale Regal Cervid

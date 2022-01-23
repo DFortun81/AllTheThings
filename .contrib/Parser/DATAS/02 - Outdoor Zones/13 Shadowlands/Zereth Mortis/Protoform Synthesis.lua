@@ -9,6 +9,7 @@ local CREVID_LATTICE = 187635;
 local GEOMENTAL_LATTICE = 189146;
 local HELICID_LATTICE = 189145;
 local LEPROID_LATTICE = 189147;
+local LUPINE_LATTICE = 190388;
 local POULTRID_LATTICE = 189148;
 local PROTO_AVIAN_LATTICE = 189149;
 local RAPTORA_LATTICE = 189150;
@@ -98,25 +99,204 @@ root("Zones", m(SHADOWLANDS, {
 				}),
 				-- Schematics
 				-- Pets
-
-				-- Mounts
-				q(65380, {	-- Schematic Reassimilation: Deathrunner
-					["description"] = "Available after unlocking-questline.",
-					["sourceQuests"] = { 65427 },	-- A New Architect
-					["provider"] = { "i", 189457 },	-- Schematic: Deathrunner
+				q(65332, {	-- Schematic Reassimilation: Fierce Scarabid
+					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
+					["provider"] = { "i", 189434 },	-- Schematic: Fierce Scarabid
+					["coord"] = { 61.2, 42.6, ZERETH_MORTIS },
 				}),
+				q(65333, {	-- Schematic Reassimilation: Multichicken
+					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
+					["provider"] = { "i", 189435 },	-- Schematic: Multichicken
+					["coord"] = { 53.8, 72.5, ZERETH_MORTIS },
+				}),
+				q(65348, {	-- Schematic Reassimilation: Omnipotential Core
+					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
+					["provider"] = { "i", 189440 },	-- Schematic: Omnipotential Core
+					["coord"] = { 58.3, 74.3, ZERETH_MORTIS },
+				}),
+				q(65354, {	-- Schematic Reassimilation: Prototickles
+					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
+					["provider"] = { "i", 189442 },	-- Schematic: Prototickles
+					["coord"] = { 52.3, 75.4, ZERETH_MORTIS },
+				}),
+				q(65359, {	-- Schematic Reassimilation: Shelly
+					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
+					["provider"] = { "i", 189446 },	-- Schematic: Shelly
+					["coord"] = { 57.9, 78, ZERETH_MORTIS },
+				}),
+				q(65355, {	-- Schematic Reassimilation: Terror Jelly
+					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
+					["provider"] = { "i", 189443 },	-- Schematic: Terror Jelly
+					["coord"] = { 67.2, 32.6, ZERETH_MORTIS },
+				}),
+				q(65361, {	-- Schematic Reassimilation: Tunneling Vombata
+					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
+					["provider"] = { "i", 189448 },	-- Schematic: Tunneling Vombata
+					["coord"] = { 74.7, 50.5, 2028 },
+				}),
+				q(65360, {	-- Schematic Reassimilation: Viperid Menace
+					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
+					["provider"] = { "i", 189447 },	-- Schematic: Viperid Menace
+					["coord"] = { 58.9, 77, ZERETH_MORTIS },
+				}),
+				--[[ Not Found Yet
+				q(65327, {	-- Schematic Reassimilation: Ambystan Darter
+					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
+					["provider"] = { "i", 189418 },	-- Schematic: Ambystan Darter
+					["coord"] = { , , ZERETH_MORTIS },
+				}),
+				q(65357, {	-- Schematic Reassimilation: Leaping Leporid
+					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
+					["provider"] = { "i", 189444 },	-- Schematic: Leaping Leporid
+					["coord"] = { , , ZERETH_MORTIS },
+				}),
+				q(65358, {	-- Schematic Reassimilation: Microlicid
+					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
+					["provider"] = { "i", 189445 },	-- Schematic: Microlicid
+					["coord"] = { , , ZERETH_MORTIS },
+				}),
+				q(65351, {	-- Schematic Reassimilation: Resonant Echo
+					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
+					["provider"] = { "i", 189441 },	-- Schematic: Resonant Echo
+					["coord"] = { , , ZERETH_MORTIS },
+				}),
+				q(65336, {	-- Schematic Reassimilation: Stabilized Geomental
+					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
+					["provider"] = { "i", 189437 },	-- Schematic: Stabilized Geomental
+					["coord"] = { , , ZERETH_MORTIS },
+				}),
+				q(65334, {	-- Schematic Reassimilation: Violent Poultrid
+					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
+					["provider"] = { "i", 189436 },	-- Schematic: Violent Poultrid
+					["coord"] = { , , ZERETH_MORTIS },
+				}),
+				--]]
+				-- Mounts
 				q(65401, {	-- Schematic Reassimilation: Adorned Vombata
-					["description"] = "Drops Grateful Boon.",
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189478 },	-- Schematic: Adorned Vombata
 					["coord"] = { 37.2, 78.2, ZERETH_MORTIS },
 				}),
+				q(65396, {	-- Schematic Reassimilation: Bronzewing Vespoid
+					["sourceQuests"] = { 65427 },	-- A New Architect
+					["provider"] = { "i", 189473 },	-- Schematic: Bronzewing Vespoid
+					["coord"] = { 48.8, 40.3, ZERETH_MORTIS },
+				}),
+				q(65397, {	-- Schematic Reassimilation: Buzz
+					["sourceQuests"] = { 65427 },	-- A New Architect
+					["provider"] = { "i", 189474 },	-- Schematic: Buzz
+				}),
+				q(65400, {	-- Schematic Reassimilation: Darkened Vombata
+					["sourceQuests"] = { 65427 },	-- A New Architect
+					["provider"] = { "i", 189477 },	-- Schematic: Darkened Vombata
+					["coord"] = { 64.2, 35.6, ZERETH_MORTIS },
+				}),
+				q(65380, {	-- Schematic Reassimilation: Deathrunner
+					["sourceQuests"] = { 65427 },	-- A New Architect
+					["provider"] = { "i", 189457 },	-- Schematic: Deathrunner
+					["coord"] = { 70.2, 28.6, ZERETH_MORTIS },
+				}),
+				q(65381, {	-- Schematic Reassimilation: Desertwing Hunter
+					["sourceQuests"] = { 65427 },	-- A New Architect
+					["provider"] = { "i", 189458 },	-- Schematic: Desertwing Hunter
+					["coord"] = { 62, 43.5, ZERETH_MORTIS },
+				}),
+				q(65398, {	-- Schematic Reassimilation: Forged Spiteflyer
+					["sourceQuests"] = { 65427 },	-- A New Architect
+					["provider"] = { "i", 189475 },	-- Schematic: Forged Spiteflyer
+					["coord"] = { 53.3, 25.7, ZERETH_MORTIS },
+				}),
+				q(65388, {	-- Schematic Reassimilation: Genesis Crawler
+					["sourceQuests"] = { 65427 },	-- A New Architect
+					["provider"] = { "i", 189465 },	-- Schematic: Genesis Crawler
+					["coord"] = { 31.5, 50.3, ZERETH_MORTIS },
+				}),
 				q(65375, {	-- Schematic Reassimilation: Pale Regal Cervid
-					["description"] = "From Achievement",
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189455 },	-- Schematic: Pale Regal Cervid
-					["coord"] = { 37.2, 78.2, ZERETH_MORTIS },
 				}),
+				q(65393, {	-- Schematic Reassimilation: Prototype Leaper
+					["sourceQuests"] = { 65427 },	-- A New Architect
+					["provider"] = { "i", 189469 },	-- Schematic: Prototype Leaper
+					["coord"] = { 67, 69.4, ZERETH_MORTIS },
+				}),
+				q(65383, {	-- Schematic Reassimilation: Raptora Swooper
+					["sourceQuests"] = { 65427 },	-- A New Architect
+					["provider"] = { "i", 189460 },	-- Schematic: Raptora Swooper
+					["coord"] = { 67.4, 40.2, ZERETH_MORTIS },
+				}),
+				q(65379, {	-- Schematic Reassimilation: Sundered Zerethsteed
+					["sourceQuests"] = { 65427 },	-- A New Architect
+					["provider"] = { "i", 189456 },	-- Schematic: Sundered Zerethsteed
+					["coord"] = { 60.6, 30.5, ZERETH_MORTIS },
+				}),
+				q(65389, {	-- Schematic Reassimilation: Tarachnid Creeper
+					["sourceQuests"] = { 65427 },	-- A New Architect
+					["provider"] = { "i", 189466 },	-- Schematic: Tarachnid Creeper
+					["coord"] = { 62.9, 22, ZERETH_MORTIS },
+				}),
+				q(65395, {	-- Schematic Reassimilation: Vespoid Flutterer
+					["sourceQuests"] = { 65427 },	-- A New Architect
+					["provider"] = { "i", 189472 },	-- Schematic: Vespoid Flutterer
+					["coord"] = { 50.3, 27.1, ZERETH_MORTIS },
+				}),
+				--[[ Not Found Yet
+				q(65385, {	-- Schematic Reassimilation: Bronze Helicid
+					["sourceQuests"] = { 65427 },	-- A New Architect
+					["provider"] = { "i", 189462 },	-- Schematic: Bronze Helicid
+					["coord"] = { , , ZERETH_MORTIS },
+				}),
+				q(65399, {	-- Schematic Reassimilation: Curious Crystalsniffer
+					["sourceQuests"] = { 65427 },	-- A New Architect
+					["provider"] = { "i", 189476 },	-- Schematic: Curious Crystalsniffer
+					["coord"] = { , , ZERETH_MORTIS },
+				}),
+				q(65391, {	-- Schematic Reassimilation: Goldplate Bufonid
+					["sourceQuests"] = { 65427 },	-- A New Architect
+					["provider"] = { "i", 189468 },	-- Schematic: Goldplate Bufonid
+					["coord"] = { , , ZERETH_MORTIS },
+				}),
+				q(65680, {	-- Schematic Reassimilation: Heartbond Lupine
+					["sourceQuests"] = { 65427 },	-- A New Architect
+					["provider"] = { "i", 190585 },	-- Schematic: Heartbond Lupine
+					["coord"] = { , , ZERETH_MORTIS },
+				}),
+				q(65390, {	-- Schematic Reassimilation: Ineffable Skitterer
+					["sourceQuests"] = { 65427 },	-- A New Architect
+					["provider"] = { "i", 189467 },	-- Schematic: Ineffable Skitterer
+					["coord"] = { , , ZERETH_MORTIS },
+				}),
+				q(65382, {	-- Schematic Reassimilation: Mawdapted Raptora
+					["sourceQuests"] = { 65427 },	-- A New Architect
+					["provider"] = { "i", 189459 },	-- Schematic: Mawdapted Raptora
+					["coord"] = { , , ZERETH_MORTIS },
+				}),
+				q(65392, {	-- Schematic Reassimilation: Patient Bufonid
+					["sourceQuests"] = { 65427 },	-- A New Architect
+					["provider"] = { "i", 189470 },	-- Schematic: Patient Bufonid
+					["coord"] = { , , ZERETH_MORTIS },
+				}),
+				q(65394, {	-- Schematic Reassimilation: Russet Bufonid
+					["sourceQuests"] = { 65427 },	-- A New Architect
+					["provider"] = { "i", 189471 },	-- Schematic: Russet Bufonid
+					["coord"] = { , , ZERETH_MORTIS },
+				}),
+				q(65387	, {	-- Schematic Reassimilation: Scarlet Helicid
+					["sourceQuests"] = { 65427 },	-- A New Architect
+					["provider"] = { "i", 189464 },	-- Schematic: Scarlet Helicid
+					["coord"] = { , , ZERETH_MORTIS },
+				}),
+				q(65384	, {	-- Schematic Reassimilation: Serenade
+					["sourceQuests"] = { 65427 },	-- A New Architect
+					["provider"] = { "i", 189461 },	-- Schematic: Serenade
+					["coord"] = { , , ZERETH_MORTIS },
+				}),
+				q(65386	, {	-- Schematic Reassimilation: Unsuccessful Prototype Fleetpod
+					["sourceQuests"] = { 65427 },	-- A New Architect
+					["provider"] = { "i", 189463 },	-- Schematic: Unsuccessful Prototype Fleetpod
+					["coord"] = { , , ZERETH_MORTIS },
+				}),
+				--]]
 			}),
 			filter(RECIPES, {
 				filter(BATTLE_PETS, {
@@ -161,6 +341,7 @@ root("Zones", m(SHADOWLANDS, {
 					recipe(365049),	-- Forged Spiteflyer
 					recipe(365055),	-- Genesis Crawler
 					recipe(365058),	-- Goldplate Bufonid
+					recipe(367704),	-- Heartbond Lupine
 					recipe(365057),	-- Ineffable Skitterer
 					recipe(365051),	-- Mawdapted Raptora
 					recipe(365040),	-- Pale Regal Cervid
@@ -452,6 +633,13 @@ root("Zones", m(SHADOWLANDS, {
 							{ "i", GENESIS, 400 },
 							{ "i", BUFONID_LATTICE, 1},
 							{ "i", 189171, 1 },	-- 1x Bauble of Pure Innovation
+						},
+					}),
+					i(190580, {	-- Heartbond Lupine
+						["cost"] = {
+							{ "i", GENESIS, 500 },
+							{ "i", LUPINE_LATTICE, 1},
+							{ "i", 189174, 1 },	-- 1x Lens of Focused Intention
 						},
 					}),
 					i(187679, {	-- Ineffable Skitterer

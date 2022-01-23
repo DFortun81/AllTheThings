@@ -28,11 +28,14 @@ root("Instances", tier(SL_TIER, {
 
 			}),
 			n(FLIGHT_PATHS, {
-				fp(2712, {	-- 9.2 Raid - Progenitor - Flight Path Console - Hub
+				fp(2712, {	-- Immortal Hearth
 					["cr"] = 182431,	-- Ancient Translocator
 				}),
-				fp(2713, {	-- 9.2 Raid - Progenitor - Flight Path Console - Terrestrial 01
+				fp(2713, {	-- Genesis Cradle Alpha
 					["cr"] = 182472,	-- Ancient Translocator
+				}),
+				fp(2715, {	-- Ephemeral Plains Alpha
+					["cr"] = 182522,	-- Ancient Translocator
 				}),
 			}),
 			d(17, {	-- LFR

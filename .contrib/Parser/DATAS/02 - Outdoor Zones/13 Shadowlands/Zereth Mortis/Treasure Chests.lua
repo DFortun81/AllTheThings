@@ -39,7 +39,7 @@ root("Zones", m(SHADOWLANDS, {
 				["questID"] = 65503,
 			}),
 			o(373561, {	-- Forgotten Proto-Vault
-				["description"] = "You can reach this chest only during the WQ Frog'it(65089)",
+				["description"] = "This chest only spawn during WQ Frog'it(65089).",
 				["coord"] = { 67.0, 69.4, ZERETH_MORTIS },
 				["questID"] = 65178,
 			}),
@@ -65,6 +65,9 @@ root("Zones", m(SHADOWLANDS, {
 				["description"] = "There are tablets around the Cave. The First one at (57.9,78.1) after that a new tablet will spawn in the room. This will happened four times in total.",
 				["coord"] = { 58.9, 77, ZERETH_MORTIS },
 				["questID"] = 65173,
+				["g"] = {
+					i(189447),	-- Schematic: Viperid Menace
+				},
 			}),
 			o(375272, {	-- Mawsworn Cache
 				["coord"] = { 60.6, 30.8, ZERETH_MORTIS },
@@ -179,6 +182,182 @@ root("Zones", m(SHADOWLANDS, {
 				["description"] = "Available inside the Blooming Fundary(63.2, 73.1) during Glimmercanes Questline(Need Sopranian Understanding).",
 				["coord"] = { 65.4, 47.1, 2027 },
 				["questID"] = 65566,
+			}),
+			-- Concordances
+			-- Requires Dealic Understanding
+			o(373587, {	-- Excitable Concordance
+				["description"] = "Requires Dealic Understanding.",
+				["coord"] = { 50.4, 51, ZERETH_MORTIS },
+				["questID"] = 65216,
+			}),
+			o(373584, {	-- Excitable Concordance
+				["description"] = "Requires Dealic Understanding.",
+				["coord"] = { 39, 31.3, ZERETH_MORTIS },
+				["questID"] = 65213,
+			}),
+			o(373562, {	-- Excitable Concordance
+				["description"] = "Requires Dealic Understanding.",
+				["coord"] = { 31.7, 54.6, ZERETH_MORTIS },
+				["questID"] = 65179,
+			}),
+			o(373581, {	-- Excitable Concordance
+				["description"] = "Requires Dealic Understanding.",
+				["coord"] = { 64.6, 60.4, ZERETH_MORTIS },
+				["questID"] = 65210,
+			}),
+			o(373585, {	-- Mercurial Concordance
+				["description"] = "Requires Trebalim Understanding.",
+				["coord"] = { 39.8, 25.7, ZERETH_MORTIS },
+				["questID"] = 65214,
+			}),
+			o(373588, {	-- Mercurial Concordance
+				["description"] = "Requires Trebalim Understanding.",
+				["coord"] = { 64.3, 24.0, ZERETH_MORTIS },
+				["questID"] = 65217,
+			}),
+			o(373582, {	-- Mercurial Concordance
+				["description"] = "Requires Trebalim Understanding.",
+				["coord"] = { 51.6, 91.3, ZERETH_MORTIS },
+				["questID"] = 65211,
+			}),
+			o(373563, {	-- Mercurial Concordance
+				["description"] = "Requires Trebalim Understanding.",
+				["coord"] = { 35.0, 71.5, ZERETH_MORTIS },
+				["questID"] = 65180,
+			}),
+			-- Protoform Chests
+			o(375391, {	-- Protoform Schematic
+				["description"] = "Hidden atop the ramp.",
+				["coord"] = { 35.0, 71.5, ZERETH_MORTIS },
+				["g"] = {
+					i(189473),	-- Schematic: Bronzewing Vespoid
+				},
+			}),
+			o(375388, {	-- Protoform Schematic
+				["description"] = "Inside the top cage",
+				["coord"] = { 64.2, 35.6, ZERETH_MORTIS },
+				["g"] = {
+					i(189477),	-- Schematic: Darkened Vombata
+				},
+			}),
+			o(375393, {	-- Protoform Schematic
+				["description"] = "On top a pillar. Need door of shadows/flying.",
+				["coord"] = { 62, 43.5, ZERETH_MORTIS },
+				["g"] = {
+					i(189458),	-- Schematic: Desertwing Hunter
+				},
+			}),
+			o(375748, {	-- Protoform Schematic
+				["description"] = "Under the platform.",
+				["coord"] = { 62, 43.5, ZERETH_MORTIS },
+				["g"] = {
+					i(189434),	-- Schematic: Fierce Scarabid
+				},
+			}),
+			o(375389, {	-- Protoform Schematic
+				["description"] = "Inside the vespoid nest.",
+				["coord"] = { 62, 43.5, ZERETH_MORTIS },
+				["g"] = {
+					i(189475),	-- Schematic: Forged Spiteflyer
+				},
+			}),
+			o(375694, {	-- Protoform Schematic
+				["description"] = "On top of the build and behind a pillar.",
+				["coord"] = { 31.5, 50.3, ZERETH_MORTIS },
+				["g"] = {
+					i(189465),	-- Schematic: Genesis Crawler
+				},
+			}),
+			o(375900, {	-- Protoform Schematic
+				["description"] = "Inside a Cave.",
+				["coord"] = { 53.8, 72.5, ZERETH_MORTIS },
+				["g"] = {
+					i(189435),	-- Schematic: Multichicken
+				},
+			}),
+			o(375383, {	-- Protoform Schematic
+				["description"] = "On top of the tree circle.",
+				["coord"] = { 58.3, 74.3, ZERETH_MORTIS },
+				["g"] = {
+					i(189440),	-- Schematic: Omnipotential Core
+				},
+			}),
+			o(375498, {	-- Protoform Schematic
+				["description"] = "Behind the chain. Hard to spot.",
+				["coord"] = { 52.3, 75.4, ZERETH_MORTIS },
+				["g"] = {
+					i(189442),	-- Schematic: Prototickles
+				},
+			}),
+			--o(375498, {	-- Protoform Schematic
+			--	["description"] = "This chest only spawn during WQ Frog'it(65089).",
+			--	["coord"] = { 67, 69.4, ZERETH_MORTIS },
+			--	["g"] = {
+			--		i(189469),	-- Schematic: Prototype Leaper
+			--	},
+			--}),
+			o(375371, {	-- Protoform Schematic
+				["description"] = "Inside the building.",
+				["coord"] = { 67.4, 40.2, ZERETH_MORTIS },
+				["g"] = {
+					i(189460),	-- Schematic: Raptora Swooper
+				},
+			}),
+			o(375486, {	-- Protoform Schematic
+				["description"] = "This can only be reached with help of Warlock/Door of Shadows/Dimensional Translators.",
+				["coord"] = { 57.9, 78, ZERETH_MORTIS },
+				["g"] = {
+					i(189446),	-- Schematic: Shelly
+				},
+			}),
+			o(375889, {	-- Protoform Schematic
+				["coord"] = { 60.6, 30.5, ZERETH_MORTIS },
+				["g"] = {
+					i(189456),	-- Schematic: Sundered Zerethsteed
+				},
+			}),
+			o(375370, {	-- Protoform Schematic
+				["description"] = "Inside the building.",
+				["coord"] = { 62.9, 22, ZERETH_MORTIS },
+				["g"] = {
+					i(189466),	-- Schematic: Tarachnid Creeper
+				},
+			}),
+			o(375387, {	-- Protoform Schematic
+				["description"] = "On top of the pillar.",
+				["coord"] = { 67.2, 32.6, ZERETH_MORTIS },
+				["g"] = {
+					i(189443),	-- Schematic: Terror Jelly
+				},
+			}),
+			o(375693, {	-- Protoform Schematic
+				["description"] = "Inside Locarian Esper, next to the rumble.",
+				["coord"] = { 74.7, 50.5, 2028 },
+				["g"] = {
+					i(189448),	-- Schematic: Tunneling Vombata
+				},
+			}),
+			o(375390, {	-- Protoform Schematic
+				["description"] = "On one of the first locus platforms in the sand.",
+				["coord"] = { 50.3, 27.1, ZERETH_MORTIS },
+				["g"] = {
+					i(189472),	-- Schematic: Vespoid Flutterer
+				},
+			}),
+			-- Weird Chest?
+			n(185502, {	-- Pulp-Covered Relic
+				["description"] = "Talk to this chest multiple times and kill add waves.",
+				["coords"] = {
+					{ 42, 34.2, ZERETH_MORTIS },
+					{ 53.4, 25.8, ZERETH_MORTIS },
+					{ 52.8, 45.8, ZERETH_MORTIS },
+					{ 50.4, 41.2, ZERETH_MORTIS },
+					{ 64.4, 63.4, ZERETH_MORTIS },
+					{ 42, 34.2, ZERETH_MORTIS },
+				},
+				["g"] = {
+					i(189474),	-- Schematic: Buzz
+				},
 			}),
 			-- Repeatable chests??
 			o(375362, {	-- Avian Chest
@@ -320,14 +499,4 @@ root("HiddenQuestTriggers", {
 	q(65209),	-- Tranquil Concordance at 49.3 71.6
 	q(65212),	-- Tranquil Concordance at 38.9 48.5
 	q(64940),	-- Tranquil Concordance at 32.2 62.9
-	-- Requires Dealic Understanding
-	q(65216),	-- Excitable Concordance at 50.4, 51 (OID:373587)
-	q(65213),	-- Excitable Concordance at 39.0 31.3 (OID:373584)
-	q(65179),	-- Excitable Concordance at 31.7, 54.6 (OID:373562)
-	q(65210),	-- Excitable Concordance at 64.6, 60.4 (OID:373581)
-	-- Requires Trebalim Understanding
-	q(65214),	-- Mercurial Concordance at 39.8, 25.7 (OID:373585)
-	q(65217),	-- Mercurial Concordance at 64.3 24.0 (OID:373588)
-	q(65211),	-- Mercurial Concordance at 51.6 91.3 (OID:373582)
-	q(65180),	-- Mercurial Concordance at 35.0 71.5 (OID:373563)
 });

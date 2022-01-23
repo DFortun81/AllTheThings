@@ -546,7 +546,21 @@ root("Zones", m(SHADOWLANDS, {
 			-- END
 
 
-
+			-- Unknown
+			q(65735, {	-- Wanted: Custos
+				--["sourceQuests"] = { },
+				["provider"] = { "o", 375972 },	-- Wanted: Custos
+				["coord"] = { 35.3, 65.4, ZERETH_MORTIS },
+			}),
+			q(65700, {	-- Wanted: Custos
+				--["sourceQuests"] = { },
+				["provider"] = { "n", 177958 },	-- Firim
+				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
+			}),
+			q(65674, {	-- What Is This Thing?
+				--["sourceQuests"] = { },
+				["provider"] = { "i", 190579 },	-- Unformed Essence
+			}),
 			-- Al'dalil/Cartel Xy Side Quest
 			q(64771, {	-- Enlightened Exodus
 				["sourceQuests"] = { 64958 },	-- The Forces Gather
@@ -872,6 +886,11 @@ root("Zones", m(SHADOWLANDS, {
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
 			}),
+			q(64579, {	-- Hallow Efforts
+				--["sourceQuests"] = { 65305 },	-- The Way Forward (Chap 3)
+				["provider"] = { "n", 177958 },	-- Firim
+				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
+			}),
 			q(64592, {	-- Historic Protection
 				["description"] = "This Daily is available after researching Altonian Understanding",
 				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
@@ -937,6 +956,11 @@ root("Zones", m(SHADOWLANDS, {
 				["sourceQuests"] = { 65305 },	-- The Way Forward (Chap 3)
 				["provider"] = { "n", 180630 },	-- Elder Amir
 				["coord"] = { 61.4, 51.5, ZERETH_MORTIS },
+			}),
+			-- Drop Dailies?
+			q(64852, {	-- Aeon Matrix
+				["sourceQuests"] = { 64579 },	-- Hallow Efforts
+				["provider"] = { "i", 187527 },	-- Aeon Matrix
 			}),
 		})),
 	}),
