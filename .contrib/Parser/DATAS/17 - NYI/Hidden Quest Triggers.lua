@@ -914,6 +914,7 @@ _.HiddenQuestTriggers = {
 		q(25198),	-- Winnoa Pineforest - completed with quest 24807
 		q(25305),	-- Never Look Back- completed with quest 25304
 		q(26379),	-- In Aid of the Refugees - completed with quest 13601
+		q(27309),	-- The Grimtotem Plot - completed with quest 27293
 		q(29051),	-- Cub's First Toy - completed with quest 29040
 		q(29052),	-- A Cub's Cravings - completed with quest 29035
 		q(29053),	-- 'Borrowing' From the Winterfall - completed with quest 29037
