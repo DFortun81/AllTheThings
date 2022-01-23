@@ -4,11 +4,6 @@
 [Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.6.9...SL-2.6.10) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
 
-### Highlights of this update
-
-#### Settings and Profiles
-
-
 ### Notable changes:
 
 - Delayed some event registration until after ATT is ready to handle them.
