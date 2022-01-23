@@ -4,7 +4,7 @@
 root("Zones", m(SHADOWLANDS, {
 	m(ZERETH_MORTIS, {
 		n(QUESTS, {
-			-- Chap 1
+			-- Chapter 1
 			q(64945, {	-- Stangers in a Strange Land
 				["sourceQuests"] = { 64944 },	-- A Hasty Voyage
 				["provider"] = { "n", 184003 },	-- Pelagos TODO: Double Check ID
@@ -61,7 +61,8 @@ root("Zones", m(SHADOWLANDS, {
 				["provider"] = { "n", 178016 },	-- Elder Ara
 				["coord"] = { 34.9, 64.9, ZERETH_MORTIS },
 			}),
-			--q(64958, {	-- The Forces Gather (Gives First Ach Crit when Completed)
+			-- Story Continues in Oribos
+			-- End
 
 			-- Chapter 2
 			q(64794, {	-- Knowing is Half the Battle
@@ -132,12 +133,17 @@ root("Zones", m(SHADOWLANDS, {
 				["provider"] = { "n", 183724 },	-- Lady Jaina Proudmoore
 				["coord"] = { 47.3, 63.6, ZERETH_MORTIS },
 			}),
-			q(64825, {	-- Seeking Haven (THE CRIT FOR CHAP 2.. THE END)
+			q(64825, {	-- Seeking Haven
 				["sourceQuests"] = { 64824 },	-- Fighting For The Forge
 				["provider"] = { "n", 183717 },	-- Lady Jaina Proudmoore
 				["coord"] = { 57, 53.6, ZERETH_MORTIS },
+				["g"] = {
+					crit(2, {	-- We Battle Onward
+						["achievementID"] = 15259,	-- Secrets of the First Ones
+					}),
+				},
 			}),
-
+			-- End
 
 			-- Chapter 3
 			q(64218, {	-- Danger Near and Far
@@ -197,9 +203,14 @@ root("Zones", m(SHADOWLANDS, {
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 179611 },	-- Pelagos
 				["coord"] = { 34, 48, ZERETH_MORTIS },
+				["g"] = {
+					crit(3, {	-- Forming an Understanding
+						["achievementID"] = 15259,	-- Secrets of the First Ones
+					}),
+					pet(3247),	-- Pocopoc
+				},
 			}),
-			-- END
-
+			-- End
 
 			-- Chapter 4
 			q(65335, {	-- News from Oribos
@@ -310,6 +321,11 @@ root("Zones", m(SHADOWLANDS, {
 				["sourceQuests"] = { 64843 },	-- Key Crafting
 				["provider"] = { "n", 184153 },	-- Elder Ara
 				["coord"] = { 47.3, 88.5, ZERETH_MORTIS },
+				["g"] = {
+					crit(4, {	-- Forging a New Path
+						["achievementID"] = 15259,	-- Secrets of the First Ones
+					}),
+				},
 			}),
 			-- End
 
@@ -380,22 +396,10 @@ root("Zones", m(SHADOWLANDS, {
 				["provider"] = { "n", 181367 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 57.2, 31.1, ZERETH_MORTIS },
 			}),
-			-- The End contiune Baston>Torghast.
+			-- Story Contiune Baston->Torghast.
+			-- End
 
-			-- Might cont here?
-			q(65259, {	-- The Heart of the Sepulcher
-				["provider"] = { "n", 181367 },	-- Highlord Bolvar Fordragon
-				["coord"] = { 35, 64.7, ZERETH_MORTIS },
-			}),
-
-
-			-- Chap 6
-			q(65324, {	-- Patterns Within Patterns
-				["sourceQuests"] = { 64816 },	-- Reality's Doorstep
-				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
-				["coord"] = { 35, 64.8, ZERETH_MORTIS },
-				["isWeekly"] = true,
-			}),
+			-- Chapter 6
 			q(64875, {	-- Something Wonderful
 				["sourceQuests"] = { 64816 },	-- Reality's Doorstep
 				["provider"] = { "n", 182556 },	-- Pelagos
@@ -435,6 +439,11 @@ root("Zones", m(SHADOWLANDS, {
 				["sourceQuests"] = { 64937 },	-- You Light Up My Left
 				["provider"] = { "n", 181706 },	-- Popopoc
 				["coord"] = { 38.1, 48.1, ZERETH_MORTIS },
+				["g"] = {
+					crit(6, {	-- A Means to an End
+						["achievementID"] = 15259,	-- Secrets of the First Ones
+					}),
+				},
 			}),
 			-- PROBABLY AFTER BORROWED POWER/POP GOES THE DEVOURER?
 			q(64889, {	-- Match Made in Zereth Mortis
@@ -444,10 +453,7 @@ root("Zones", m(SHADOWLANDS, {
 				["description"] = "to unlock cosmic transport",
 			}),
 			--
-
-
-			-- The End
-
+			-- End
 
 			-- Chapter 7
 			q(65328, {	-- Arbiter in the Making
@@ -542,9 +548,8 @@ root("Zones", m(SHADOWLANDS, {
 				["provider"] = { "n", 181545 },	-- Kleia
 				["coord"] = { 34.4, 48.5, ZERETH_MORTIS },
 			}),
-			-- Cont Oribos
-			-- END
-
+			-- Story Continues Oribos
+			-- End
 
 			-- Unknown
 			q(65735, {	-- Wanted: Custos
@@ -552,7 +557,7 @@ root("Zones", m(SHADOWLANDS, {
 				["provider"] = { "o", 375972 },	-- Wanted: Custos
 				["coord"] = { 35.3, 65.4, ZERETH_MORTIS },
 			}),
-			q(65700, {	-- Wanted: Custos
+			q(65700, {	-- Core Control
 				--["sourceQuests"] = { },
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
@@ -561,6 +566,21 @@ root("Zones", m(SHADOWLANDS, {
 				--["sourceQuests"] = { },
 				["provider"] = { "i", 190579 },	-- Unformed Essence
 			}),
+			q(65259, {	-- The Heart of the Sepulcher
+				["provider"] = { "n", 181367 },	-- Highlord Bolvar Fordragon
+				["coord"] = { 35, 64.7, ZERETH_MORTIS },
+			}),
+			q(65324, {	-- Patterns Within Patterns
+				["sourceQuests"] = { 64816 },	-- Reality's Doorstep
+				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
+				["coord"] = { 35, 64.8, ZERETH_MORTIS },
+				["isWeekly"] = true,
+				["g"] = {
+					i(190610),	-- Tribute of the Enlightened Elders
+				},
+			}),
+			--
+
 			-- Al'dalil/Cartel Xy Side Quest
 			q(64771, {	-- Enlightened Exodus
 				["sourceQuests"] = { 64958 },	-- The Forces Gather
@@ -602,7 +622,6 @@ root("Zones", m(SHADOWLANDS, {
 			}),
 			-- End
 
-
 			-- E'rnee Questline
 			q(65064, {	-- Look Who I Found!
 				["sourceQuests"] = { 64825 },	-- Seeking Haven
@@ -642,7 +661,6 @@ root("Zones", m(SHADOWLANDS, {
 			}),
 			-- End
 
-
 			-- Drim Questline (Those are probably unlocked ones you Leave Firim first time. They were available after Chap 1 at least but you dont get to the hideout before Chap 3)
 			q(65463, {	-- The Wellspring of the First Ones
 				["sourceQuests"] = { 64951 },	-- The Road to Haven (or The Forces Gather(64958) or something inbetween)
@@ -674,159 +692,6 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 74.1, 69, 2028 },
 			}),
 			-- End
-
-
-			-- Firim Quests (Those are probably unlocked ones you Leave Firim first time. They were available after Chap 1 at least but you dont get to the hideout before Chap 3)
-			q(65460, {	-- Your First Cantaric Protolock
-				["sourceQuests"] = { 64951 },	-- The Road to Haven (or The Forces Gather(64958) or something inbetween)
-				["provider"] = { "n", 177958 },	-- Firim
-				["coord"] = { 34.6, 48.1, ZERETH_MORTIS },
-			}),
-			q(65461, {	-- Your First Mezzonic Protolock
-				["sourceQuests"] = { 64951 },	-- The Road to Haven (or The Forces Gather(64958) or something inbetween)
-				["provider"] = { "n", 177958 },	-- Firim
-				["coord"] = { 34.6, 48.1, ZERETH_MORTIS },
-			}),
-			q(65466, {	-- Your First Fugueal Protolock
-				["sourceQuests"] = { 64951 },	-- The Road to Haven (or The Forces Gather(64958) or something inbetween)
-				["provider"] = { "n", 177958 },	-- Firim
-				["coord"] = { 34.6, 48.1, ZERETH_MORTIS },
-			}),
-			-- End
-
-
-			-- Cypher Research
-			q(65431, {	-- Further Research: Aealic
-				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
-				["provider"] = { "n", 181397 },	-- Cypher Console
-				["coord"] = { 33.8, 49.4, ZERETH_MORTIS },
-			}),
-			q(65432, {	-- Further Research: Dealic
-				["sourceQuests"] = { 65431 },	-- Further Research: Aealic
-				["provider"] = { "n", 181397 },	-- Cypher Console
-				["coord"] = { 33.8, 49.4, ZERETH_MORTIS },
-			}),
-			q(65433, {	-- Further Research: Trebalim
-				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
-				["provider"] = { "n", 181397 },	-- Cypher Console
-				["coord"] = { 33.8, 49.4, ZERETH_MORTIS },
-			}),
-			-- End
-
-			-- Hanoa Questline
-			q(64772, {	-- Broken Circle
-				["description"] = "This Questline is available after researching Altonian Understanding",
-				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
-				["provider"] = { "n", 181091 },	-- Hanoa the Exile
-				["coord"] = { 40.1, 42.1, ZERETH_MORTIS },
-			}),
-			q(64773, {	-- A Jiro Guide to Not Being Eaten
-				["sourceQuests"] = { 64772 },	-- Broken Circle
-				["provider"] = { "n", 181098 },	-- Olea Pau
-				["coord"] = { 38, 39.8, ZERETH_MORTIS },
-			}),
-			q(64713, {	-- Picking Up the Pieces... Literally
-				["sourceQuests"] = { 64772 },	-- Broken Circle
-				["provider"] = { "n", 180919 },	-- Olea Novi
-				["coord"] = { 36.7, 37.7, ZERETH_MORTIS },
-			}),
-			q(65370, {	-- Gut Check
-				["sourceQuests"] = { 64772 },	-- Broken Circle
-				["provider"] = { "n", 181102 },	-- Olea Manu
-				["coord"] = { 38.2, 35.3, ZERETH_MORTIS },
-			}),
-			q(64775, {	-- Mawdified Behavior
-				["sourceQuests"] = {
-					64773,	-- A Jiro Guide to Not Being Eaten
-					64713,	-- Picking Up the Pieces... Literally
-					65370,	-- Gut Check
-				},
-				["provider"] = { "n", 180984 },	-- Hanoa the Exile
-				["coord"] = { 39.5, 31.9, ZERETH_MORTIS },
-			}),
-			q(64739, {	-- Zovaal's Grasp
-				["sourceQuests"] = { 64775 },	-- Mawdified Behavior
-				["provider"] = { "n", 184469 },	-- Hanoa the Exile
-				["coord"] = { 39.4, 32.2, ZERETH_MORTIS },
-			}),
-			q(64778, {	-- Rift Recon
-				["sourceQuests"] = { 64739 },	-- Zovaal's Grasp
-				["provider"] = { "n", 18170 },	-- Olea Manu
-				["coord"] = { 42.7, 31.6, ZERETH_MORTIS },
-			}),
-			q(64780, {	-- Mawsteel, Maw Problems
-				["sourceQuests"] = { 64739 },	-- Zovaal's Grasp
-				["provider"] = { "n", 181177 },	-- Olea Novi
-				["coord"] = { 42.6, 31.6, ZERETH_MORTIS },
-			}),
-			q(64779, {	-- Pound of Flesh
-				["sourceQuests"] = { 64739 },	-- Zovaal's Grasp
-				["provider"] = { "n", 181174 },	-- Olea Pau
-				["coord"] = { 42.3, 31.5, ZERETH_MORTIS },
-			}),
-			q(65219, {	-- Jiro to Hero
-				["sourceQuests"] = {
-					64778,	-- Rift Recon
-					64780,	-- Mawsteel, Maw Problems
-					64779,	-- Pound of Flesh
-				},
-				["provider"] = { "n", 180989 },	-- Hanoa the Exile
-				["coord"] = { 42.7, 31.4, ZERETH_MORTIS },
-			}),
-
-		-- Glimmercane Questline? Unknown when its suppose to unlock? Available after Sopranian Understanding
-			q(64641, {	-- Mysterious Greenery
-				--["sourceQuests"] = {  },
-				["provider"] = { "n", 180799 },	-- Glimmercane
-				["coord"] = { 55.3, 64.4, ZERETH_MORTIS },
-			}),
-			q(64642, {	-- Clearing the Ruins
-				["sourceQuests"] = { 64641 },	-- Mysterious Greenery
-				["provider"] = { "n", 179900 },	-- Koh Shira
-				["coord"] = { 60.5, 70, ZERETH_MORTIS },
-			}),
-			q(64643, {	-- Scavenging A Solution
-				["sourceQuests"] = { 64641 },	-- Mysterious Greenery
-				["provider"] = { "n", 179923 },	-- Koh Riva
-				["coord"] = { 60.5, 70.1, ZERETH_MORTIS },
-			}),
-			q(64644, {	-- A Splash of the Eternal
-				["sourceQuests"] = {
-					64642,	-- Clearing the Ruins
-					64643,	-- Scavenging A Solution
-				},
-				["provider"] = { "n", 180702 },	-- Glimmercane
-				["coord"] = { 60.7, 69.8, ZERETH_MORTIS },
-			}),
-			q(64645, {	-- Moment of Truth
-				["sourceQuests"] = { 64644 },	-- A Splash of the Eternal
-				["provider"] = { "n", 179900 },	-- Koh Shira
-				["coord"] = { 60.5, 70.1, ZERETH_MORTIS },
-			}),
-			q(64646, {	-- Ramping Up
-				["sourceQuests"] = { 64645 },	-- Moment of Truth
-				["provider"] = { "n", 180797 },	-- Koh Shira
-				["coord"] = { 63.2, 73.1, ZERETH_MORTIS },
-			}),
-			q(64647, {	-- Strange Gears
-				["sourceQuests"] = { 64645 },	-- Moment of Truth
-				--["provider"] = Automa on the Floor
-				["coord"] = { 29.3, 15.3, 2027 },
-			}),
-			q(64648, {	-- Reap What We Have Sown
-				["sourceQuests"] = {
-					64646,	-- Ramping Up
-					64647,	-- Strange Gears
-				},
-				["provider"] = { "n", 180800 },	-- Koh Shira
-				["coord"] = { 39.3, 55.5, 2027 },
-			}),
-			q(64649, {	-- A Mountain of Work to Do
-				["description"] = "Unable to accept this quest atm on ptr... but still showing mark on map.",
-				["sourceQuests"] = { 64648 },	-- Reap What We Have Sown
-				--["provider"] = { "n", 180797 },	-- Koh Shira
-				--["coord"] = { 63.2, 73.1, ZERETH_MORTIS },
-			}),
 		}),
 		n(QUESTS, sharedData({ ["isDaily"] = true }, {
 			q(65268, {	-- Bzzzzt!
@@ -962,6 +827,24 @@ root("Zones", m(SHADOWLANDS, {
 				["sourceQuests"] = { 64579 },	-- Hallow Efforts
 				["provider"] = { "i", 187527 },	-- Aeon Matrix
 			}),
+			q(64860, {	-- Aetheric Lattice
+				["sourceQuests"] = { 64579 },	-- Hallow Efforts
+				["provider"] = { "i", 187788 },	-- Aetheric Lattice
+			}),
+			q(64861, {	-- Kismetric Disc
+				["sourceQuests"] = { 64579 },	-- Hallow Efforts
+				["provider"] = { "i", 187792 },	-- Kismetric Disc
+				["g"] = {
+					i(190062, {	-- Wicked Pocopoc
+						--["questID"] = ,
+						["g"] = {
+							crit(7, {	-- Wicked Pocopoc
+								["achievementID"] = 15508,	-- Fashion of the First Ones
+							}),
+						},
+					}),
+				},
+			}),
 		})),
 	}),
 }));
@@ -971,10 +854,21 @@ root("HiddenQuestTrigger", {
 	q(63766),	-- Triggered when Exploring (Might have to do with The Matriarch(183505))
 	q(65621),	-- Triggered when HS to ZM
 
+	q(65531),	-- Starts pocopoc fashion
+
+	-- Lego HQT??
+	--q(65681),	-- Druid
+
 	--q(64880),	-- Triggered in Oribos?
 	--q(65144),	-- Firims Cave?
 	--q(65539),	-- Flying unlock??
+	--q(65679),	-- Fully Upgrade Console? 183968 FP? Flying? WB?
 
+	-- More rare HQTS?
+	--q(65637),	-- Triggered when killing General Zarathura <Army of the Endless>
+	--q(65631),	-- Triggered when killing Akkaris
+	--q(65629),	-- Triggered when killing Akkaris
+	--q(65626),	-- Triggered when killing Mother Phestis <Tarachnid Prime>
 
 	-- Gravid Repose
 	q(65330),	-- Interior Locus Arrangement at Gravid Repose
@@ -990,6 +884,11 @@ root("HiddenQuestTrigger", {
 	q(65571),	-- RP after Chap 5 with Taelia
 	q(65619),	-- RP after Tahli Questline
 	--q(65028),	-- RP during q(64875, {	-- Something Wonderful??
+
+	-- Entering Cosmic Area first time
+	--q(65376),
+	--q(65377),
+	--q(65464),
 
 	--[[ Jiro Buffs?
 	q(65167),	-- Echoed Jiro Nascii(183263) with spellID(362023) Same HQTs from different Jiros (42.7 44.8) Stackable ?

@@ -935,6 +935,11 @@ _.ExpansionFeatures =
 					["sourceQuests"] = { 64812 },	-- Forge of Domination
 					["provider"] = { "n", 181384 },	-- The Primus
 					["coord"] = { 49.3, 58.6, 1912 },
+					["g"] = {
+						crit(5, {	-- Crown of Wills
+							["achievementID"] = 15259,	-- Secrets of the First Ones
+						}),
+					},
 				}),
 				-- The End of Chap 5
 

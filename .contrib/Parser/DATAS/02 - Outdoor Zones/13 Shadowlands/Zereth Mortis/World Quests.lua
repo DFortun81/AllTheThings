@@ -61,10 +61,10 @@ root("Zones", m(SHADOWLANDS, {
 					q(65406, {	-- Connecting It All
 						["coord"] = { 65.7, 41, ZERETH_MORTIS },
 					}),
-					q(65417, {	-- Connecting It All (Same Name)
+					q(65417, {	-- Connecting It All
 						["coord"] = { 55, 48, ZERETH_MORTIS },
 					}),
-					q(65416, {	-- Connecting It All (Same Name)
+					q(65416, {	-- Connecting It All
 						["coord"] = { 53, 45.6, ZERETH_MORTIS },
 					}),
 					q(65408, {	-- Pattern Recognition
@@ -79,10 +79,13 @@ root("Zones", m(SHADOWLANDS, {
 					q(65414, {	-- Perplexing Problem
 						["coord"] = { 63.1, 36.5, ZERETH_MORTIS },
 					}),
+					q(65405, {	-- Perplexing Problem
+						["coord"] = { 57.2,65.7, ZERETH_MORTIS },
+					}),
 					q(65412, {	-- Puzzling It Out
 						["coord"] = { 51.3, 25.8, ZERETH_MORTIS },
 					}),
-					q(65413, {	-- Puzzling It Out (Same Name Yes)
+					q(65413, {	-- Puzzling It Out
 						["coord"] = { 55.9, 84, ZERETH_MORTIS },
 					}),
 					q(65410, {	-- Puzzling Situation

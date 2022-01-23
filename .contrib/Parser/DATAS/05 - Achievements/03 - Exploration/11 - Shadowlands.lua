@@ -716,5 +716,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 		}),
 		ach(15502),	-- Sand, Sand Everywhere!
 		ach(15404),	-- Cosmic Empowerment
+		ach(15508),	-- Fashion of the First Ones
 	}),
 }));

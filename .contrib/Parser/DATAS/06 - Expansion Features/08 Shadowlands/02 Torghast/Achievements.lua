@@ -284,7 +284,6 @@ _.ExpansionFeatures =
 				}),
 				-- PTR
 				ach(15322, {	-- Flawless Master (Layer 16)
-					i(188736),	-- Colossal Soulshredder Mawrat (MOUNT!)
 					ach(15320),	-- Flawless: Upper Reaches (Layer 16)
 					ach(15319),	-- Flawless: Mort'regar (Layer 16)
 					ach(15317),	-- Flawless: The Soulforges (Layer 16)
@@ -306,7 +305,7 @@ _.ExpansionFeatures =
 				}),
 				ach(15257),	-- The Jailer's Gauntlet: Layer 7
 				ach(15258, {	-- The Jailer's Gauntlet: Layer 8
-					i(188696),	-- Colossal Ebonclaw Mawrat (MOUNT!)
+
 				}),
 				ach(15324, {	-- Tower Ranger
 					title(450),	-- <Name>, Tower Ranger

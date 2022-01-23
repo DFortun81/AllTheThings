@@ -5,6 +5,16 @@ root("Zones", m(SHADOWLANDS, {
 	m(ZERETH_MORTIS, {
 		n(ZONE_DROPS, {
 			i(186559),	-- Grappling Gauntlet
+			i(189704),	-- Dominance Key
+			-- Epic Randoms?
+			i(188047),	-- Haven Guard's Cudgel
+			i(188048),	-- Truthseeker's Staff
+			-- Chests also?
+			i(188044),	-- Discarded Cartel Al Signet
+			i(188106),	-- Unfathomable Pendant
+			i(188042),	-- Enlightened Dagger
+			i(190634),	-- Cypher-Etched Torque
+			-- Quest
 			i(190579),	-- Unformed Essence
 			-- Lattices
 			i(187634),	-- Ambystan Lattice
@@ -36,7 +46,6 @@ root("Zones", m(SHADOWLANDS, {
 			i(189165),	-- Glimmer of Predation
 			i(189166),	-- Glimmer of Renewal
 			i(189167),	-- Glimmer of Satisfaction
-			i(189168),	-- Glimmer of Serenity
 			i(189169),	-- Glimmer of Survival
 			i(189170),	-- Glimmer of Vigilance
 			-- Mount Protoform

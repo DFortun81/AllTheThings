@@ -97,6 +97,18 @@ root("Instances", tier(SL_TIER, {
 									["achievementID"] = 15417,	-- Sepulcher of the First Ones
 								}),
 								ach(15398),	-- Xy Never, Ever Marks the Spot.
+								i(188265),	-- Cache of Acquired Treasures
+								i(189827),	-- Cartel Xy's Proof of Initiation
+								i(189826),	-- Enforcer's Containment Cinch
+								i(189829),	-- Forerunner's Relic Blade
+								i(189821),	-- Illicit Artifact Holster
+								i(189822),	-- Imported Illidari Spaulders
+								i(188266),	-- Pulsating Riftshard
+								i(189830),	-- Replicated Relic Blade
+								i(189823),	-- Stolen Nathrian Slippers
+								i(189824),	-- Unlicensed Hyperlight Handlers
+								i(189825),	-- Veiled Auctioneer's Vambraces
+								i(189828),	-- Xy Captain's Crossbow
 							},
 						}),
 						e(2529, {	-- Halondrus the Reclaimer
@@ -230,6 +242,7 @@ root("Instances", tier(SL_TIER, {
 								i(189841),	-- Soulwarped Seal of Menethil
 								i(189839),	-- Soulwarped Seal of Wrynn
 								i(188262),	-- The Lion's Roar
+								i(189836),	-- Wrists of the Wicked Star
 								-- Tier
 								i(188868),	-- Visage of the First Eidolon
 								i(188892),	-- Mercurial Punisher's Hood
@@ -256,6 +269,14 @@ root("Instances", tier(SL_TIER, {
 									["achievementID"] = 15417,	-- Sepulcher of the First Ones
 								}),
 								ach(15315),	-- Amidst Ourselves
+								i(189846),	-- Alandien's Tortured Twinblades
+								i(189842),	-- Cuffs of the Covert Commander
+								i(189844),	-- Gauntlets of Unseen Guests
+								i(189843),	-- Grasps of Abducted Fate
+								i(188255),	-- Heart of the Swarm
+								i(188261),	-- Intrusive Thoughtcage
+								i(189845),	-- Ruined Crest of Lordaeron
+								i(189847),	-- Shroud of the Sire's Chosen
 								-- Tier
 								i(188867),	-- Shoulderplates of the First Eidolon
 								i(188896),	-- Mercurial Punisher's Shoulderpads
@@ -387,6 +408,19 @@ root("Instances", tier(SL_TIER, {
 							["achievementID"] = 15417,	-- Sepulcher of the First Ones
 						}),
 						ach(15398),	-- Xy Never, Ever Marks the Spot.
+						i(188265),	-- Cache of Acquired Treasures
+						i(189827),	-- Cartel Xy's Proof of Initiation
+						i(189826),	-- Enforcer's Containment Cinch
+						i(189829),	-- Forerunner's Relic Blade
+						i(189821),	-- Illicit Artifact Holster
+						i(189822),	-- Imported Illidari Spaulders
+						i(188266),	-- Pulsating Riftshard
+						i(189830),	-- Replicated Relic Blade
+						i(189823),	-- Stolen Nathrian Slippers
+						i(189824),	-- Unlicensed Hyperlight Handlers
+						i(189825),	-- Veiled Auctioneer's Vambraces
+						i(189828),	-- Xy Captain's Crossbow
+
 					},
 				}),
 				e(2540, {	-- Dausegne, the Fallen Oracle
@@ -510,6 +544,7 @@ root("Instances", tier(SL_TIER, {
 						i(189841),	-- Soulwarped Seal of Menethil
 						i(189839),	-- Soulwarped Seal of Wrynn
 						i(188262),	-- The Lion's Roar
+						i(189836),	-- Wrists of the Wicked Star
 						-- Tier
 						i(188868),	-- Visage of the First Eidolon
 						i(188892),	-- Mercurial Punisher's Hood
@@ -536,6 +571,14 @@ root("Instances", tier(SL_TIER, {
 							["achievementID"] = 15417,	-- Sepulcher of the First Ones
 						}),
 						ach(15315),	-- Amidst Ourselves
+						i(189846),	-- Alandien's Tortured Twinblades
+						i(189842),	-- Cuffs of the Covert Commander
+						i(189844),	-- Gauntlets of Unseen Guests
+						i(189843),	-- Grasps of Abducted Fate
+						i(188255),	-- Heart of the Swarm
+						i(188261),	-- Intrusive Thoughtcage
+						i(189845),	-- Ruined Crest of Lordaeron
+						i(189847),	-- Shroud of the Sire's Chosen
 						-- Tier
 						i(188867),	-- Shoulderplates of the First Eidolon
 						i(188896),	-- Mercurial Punisher's Shoulderpads
@@ -603,7 +646,12 @@ root("Instances", tier(SL_TIER, {
 			}),
 			d(15, {	-- Heroic
 				n(QUESTS, {
-
+					q(65717, {	-- Final Shape
+						["provider"] = { "i", 190773 },	-- Carcinized Protoform
+						["g"] = {
+							i(190771),	-- Carcinized Zerethsteed (MOUNT!)
+						},
+ 					}),
 				}),
 				n(ZONE_DROPS, {
 
@@ -657,6 +705,18 @@ root("Instances", tier(SL_TIER, {
 						crit(3, {	-- Artificer Xy'mox
 							["achievementID"] = 15478,	-- Heroic: Sepulcher of the First Ones
 						}),
+						i(188265),	-- Cache of Acquired Treasures
+						i(189827),	-- Cartel Xy's Proof of Initiation
+						i(189826),	-- Enforcer's Containment Cinch
+						i(189829),	-- Forerunner's Relic Blade
+						i(189821),	-- Illicit Artifact Holster
+						i(189822),	-- Imported Illidari Spaulders
+						i(188266),	-- Pulsating Riftshard
+						i(189830),	-- Replicated Relic Blade
+						i(189823),	-- Stolen Nathrian Slippers
+						i(189824),	-- Unlicensed Hyperlight Handlers
+						i(189825),	-- Veiled Auctioneer's Vambraces
+						i(189828),	-- Xy Captain's Crossbow
 					},
 				}),
 				e(2540, {	-- Dausegne, the Fallen Oracle
@@ -775,6 +835,7 @@ root("Instances", tier(SL_TIER, {
 						i(189841),	-- Soulwarped Seal of Menethil
 						i(189839),	-- Soulwarped Seal of Wrynn
 						i(188262),	-- The Lion's Roar
+						i(189836),	-- Wrists of the Wicked Star
 						-- Tier
 						i(188868),	-- Visage of the First Eidolon
 						i(188892),	-- Mercurial Punisher's Hood
@@ -800,6 +861,14 @@ root("Instances", tier(SL_TIER, {
 						crit(9, {	-- Lords of Dread
 							["achievementID"] = 15478,	-- Heroic: Sepulcher of the First Ones
 						}),
+						i(189846),	-- Alandien's Tortured Twinblades
+						i(189842),	-- Cuffs of the Covert Commander
+						i(189844),	-- Gauntlets of Unseen Guests
+						i(189843),	-- Grasps of Abducted Fate
+						i(188255),	-- Heart of the Swarm
+						i(188261),	-- Intrusive Thoughtcage
+						i(189845),	-- Ruined Crest of Lordaeron
+						i(189847),	-- Shroud of the Sire's Chosen
 						-- Tier
 						i(188867),	-- Shoulderplates of the First Eidolon
 						i(188896),	-- Mercurial Punisher's Shoulderpads
@@ -861,6 +930,7 @@ root("Instances", tier(SL_TIER, {
 						i(188253),	-- Scars of Fraternal Strife
 						i(189859),	-- Worldkiller Iris
 						i(189861),	-- Zovastrum, the Unmaking
+						i(190773),	-- Carcinized Protoform (MOUNT! - QUEST)
 					},
 				}),
 			}),
@@ -914,6 +984,18 @@ root("Instances", tier(SL_TIER, {
 					},
 					["g"] = {
 						ach(15481),	-- Mythic: Artificer Xy'mox
+						i(188265),	-- Cache of Acquired Treasures
+						i(189827),	-- Cartel Xy's Proof of Initiation
+						i(189826),	-- Enforcer's Containment Cinch
+						i(189829),	-- Forerunner's Relic Blade
+						i(189821),	-- Illicit Artifact Holster
+						i(189822),	-- Imported Illidari Spaulders
+						i(188266),	-- Pulsating Riftshard
+						i(189830),	-- Replicated Relic Blade
+						i(189823),	-- Stolen Nathrian Slippers
+						i(189824),	-- Unlicensed Hyperlight Handlers
+						i(189825),	-- Veiled Auctioneer's Vambraces
+						i(189828),	-- Xy Captain's Crossbow
 					},
 				}),
 				e(2540, {	-- Dausegne, the Fallen Oracle
@@ -1022,6 +1104,7 @@ root("Instances", tier(SL_TIER, {
 						i(189841),	-- Soulwarped Seal of Menethil
 						i(189839),	-- Soulwarped Seal of Wrynn
 						i(188262),	-- The Lion's Roar
+						i(189836),	-- Wrists of the Wicked Star
 						-- Tier
 						i(188868),	-- Visage of the First Eidolon
 						i(188892),	-- Mercurial Punisher's Hood
@@ -1045,6 +1128,14 @@ root("Instances", tier(SL_TIER, {
 					},
 					["g"] = {
 						ach(15487),	-- Mythic: Lords of Dread
+						i(189846),	-- Alandien's Tortured Twinblades
+						i(189842),	-- Cuffs of the Covert Commander
+						i(189844),	-- Gauntlets of Unseen Guests
+						i(189843),	-- Grasps of Abducted Fate
+						i(188255),	-- Heart of the Swarm
+						i(188261),	-- Intrusive Thoughtcage
+						i(189845),	-- Ruined Crest of Lordaeron
+						i(189847),	-- Shroud of the Sire's Chosen
 						-- Tier
 						i(188867),	-- Shoulderplates of the First Eidolon
 						i(188896),	-- Mercurial Punisher's Shoulderpads
@@ -1108,6 +1199,7 @@ root("Instances", tier(SL_TIER, {
 						i(188253),	-- Scars of Fraternal Strife
 						i(189859),	-- Worldkiller Iris
 						i(189861),	-- Zovastrum, the Unmaking
+						i(190768),	-- Zereth Overseer (MOUNT!)
 					},
 				}),
 			}),

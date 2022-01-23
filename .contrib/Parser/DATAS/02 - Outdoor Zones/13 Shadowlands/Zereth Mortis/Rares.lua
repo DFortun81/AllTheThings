@@ -16,7 +16,6 @@ root("Zones", m(SHADOWLANDS, {
 					i(189953),	-- Lush-Stained Footguards (Overgrowth?)
 					i(189954),	-- Lustrous Sentinel's Sabatons
 					i(189956),	-- Perverse Champion's Handguards
-					i(189958),	-- Tunneler's Penetrating Greathelm (akkaris?)
 				},
 			}),
 			n(179006, {	-- Akkaris <Annelid Prime>
@@ -24,8 +23,12 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 64.7, 33.7, ZERETH_MORTIS },
 				["questID"] = 65549,
 				["g"] = {
+					crit(7, {	-- Akkaris <Annelid Prime>
+						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
+					}),
 					i(190733),	-- Circle of Akkaris
 					i(189903),	-- Sand Sifting Sandals
+					i(189958),	-- Tunneler's Penetrating Greathelm
 					i(190053),	-- Underground Circler's Crossbow
 				},
 			}),
@@ -33,6 +36,9 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 50.3, 69, ZERETH_MORTIS },
 				["questID"] = 65553,
 				["g"] = {
+					crit(8, {	-- Chitali the Eldest <Cervid Prime>
+						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
+					}),
 					i(189994),	-- Chitali's Command
 					i(189906),	-- Mask of the Resolute Cervid
 					i(189947),	-- Majestic Watcher's Girdle
@@ -42,6 +48,9 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 47.5, 62.2, ZERETH_MORTIS },
 				["questID"] = 65273,
 				["g"] = {
+					crit(26, {	-- Corrupted Architect
+						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
+					}),
 					i(189940),	-- Architect's Polluting Touch
 					i(189907),	-- Crown of Contorted Thought
 					i(190009),	-- Hammer of Shattered Works
@@ -51,6 +60,9 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 53.6, 44.4, ZERETH_MORTIS },
 				["questID"] = 64716,
 				["g"] = {
+					crit(4, {	-- Destabilized Core
+						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
+					}),
 					i(189985),	-- Curtain of Untold Realms
 					i(189999),	-- Dark Sky Gavel
 					i(189930),	-- Restraints of Boundless Chaos
@@ -60,6 +72,9 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 47.5, 45.1, ZERETH_MORTIS },
 				["questID"] = 65555,
 				["g"] = {
+					crit(12, {	-- Euv'ouk
+						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
+					}),
 					i(190047),	-- Converted Broker's Staff
 					i(189949),	-- Shackles of the Bound Guardian
 				},
@@ -69,6 +84,9 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 61.8, 60.5, ZERETH_MORTIS },
 				["questID"] = 65557,
 				["g"] = {
+					crit(3, {	-- Feasting
+						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
+					}),
 					i(189936),	-- Feasting's Feeding Cloak
 					i(189969),	-- Vespoid's Clanging Legguards
 					i(189970),	-- Visor of Visceral Cravings
@@ -79,6 +97,9 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 64.5, 58.7, ZERETH_MORTIS },
 				["questID"] = 65544,
 				["g"] = {
+					crit(22, {	-- Furidian
+						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
+					}),
 					i(190004),	-- Furidian's Inscribed Barb
 					i(189963),	-- Sculpted Ouroboros Clasp
 					i(189932),	-- Slick Scale Chitinous
@@ -90,6 +111,9 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 68.9, 36.9, ZERETH_MORTIS },
 				["questID"] = 64719,
 				["g"] = {
+					crit(21, {	-- Garudeon <Raptora Prime>
+						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
+					}),
 					i(189937),	-- Garudeon's Blanket of Feathers
 					i(189951),	-- Sunbathed Avian Armor
 				},
@@ -98,6 +122,9 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 59.6, 18.6, ZERETH_MORTIS },
 				["questID"] = 65583,
 				["g"] = {
+					crit(15, {	-- General Zarathura <Army of the Endless>
+						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
+					}),
 					i(189968),	-- Dreadlord General's Tunic
 					i(189948),	-- Strangulating Chainlink Lasso
 				},
@@ -107,6 +134,9 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 52.9, 93.3, ZERETH_MORTIS },
 				["questID"] = 65579,
 				["g"] = {
+					crit(1, {	-- Gluttonous Overgrowth
+						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
+					}),
 					i(190008),	-- Enlightened Botanist's Machete
 					i(190049),	-- Perennial Punching Dagger
 					i(189929),	-- Vinebound Strap
@@ -121,6 +151,9 @@ root("Zones", m(SHADOWLANDS, {
 				},
 				["questID"] = 63988,
 				["g"] = {
+					crit(16, {	-- Gorkek <Bufonid Prime>
+						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
+					}),
 					i(189960),	-- Crouching Legs of the Bufonid
 					i(190001),	-- Gorkek's Glistening Throatguard
 					i(189926),	-- Posion-Licked Spaulders
@@ -130,21 +163,49 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 52.6, 25.1, ZERETH_MORTIS },
 				["questID"] = 65581,
 				["g"] = {
+					crit(14, {	-- Hadeon the Stonebreaker <Scarabid Prime>
+						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
+					}),
 					i(190000),	-- Carapace of Gliding Sands
 					i(190051),	-- Elder's Opulent Stave
 					i(189942),	-- Hadeon's Indomitable Faceguard
 					i(189919),	-- Skittering Scarabid Treads
 				},
 			}),
+			n(184804, {	-- Helmix
+				["description"] = "Will call out an emote\"The ground vibrates... something burrows beneath the surface!\" in the zone when spawned",
+				["crs"] = {
+					183749,	-- Helmix
+					183748,	-- Helmix
+				},
+				["coord"] = { 58.2, 68.3, ZERETH_MORTIS },
+				["questID"] = 65551,
+				["g"] = {
+					crit(27, {	-- Helmix
+						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
+					}),
+					i(189931),	-- Annelid's Hinge Wrappings
+					i(189965),	-- Armored Cuffs of the Unbroken
+					i(190056),	-- Enlightened Explorer's Lantern
+					i(190054),	-- Facet Sharpening Crossbow
+				},
+			}),
 			n(182155, {	-- High Reaver Damaris
 				["crs"] = { 182156 },	-- Edra, the Will Grazer
 				["coord"] = { 63.8, 27, ZERETH_MORTIS },
-				["questID"] = 65586
-
+				["questID"] = 65586,
+				["g"] = {
+					crit(2, {	-- High Reaver Damaris
+						["achievementID"] = 15392,	-- Dune Dominance
+					}),
+				},
 			}),
 			n(180978, {	-- Hirukon <Aurelid Prime>
 				["coord"] = { 52.2, 75.2, ZERETH_MORTIS },
 				["g"] = {
+					crit(23, {	-- Hirukon <Aurelid Prime>
+						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
+					}),
 					i(187676),	-- Deepstar Aurelid
 				},
 			}),
@@ -152,21 +213,33 @@ root("Zones", m(SHADOWLANDS, {
 				["crs"] = { 182120 },	-- Rhuv, Gorger of Ruin
 				["coord"] = { 63.8, 27, ZERETH_MORTIS },
 				--["questID"] =
+				["g"] = {
+					crit(1, {	-- Iska, Outrider of Ruin
+						["achievementID"] = 15392,	-- Dune Dominance
+					}),
+					i(190765),	-- Iska's Mawrat Leash (MOUNT!)
+				},
 			}),
 			n(178508, {	-- Mother Phestis <Tarachnid Prime>
 				["coord"] = { 54, 34, ZERETH_MORTIS },
 				["questID"] = 65547,
 				["g"] = {
+					crit(20, {	-- Mother Phestis <Tarachnid Prime>
+						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
+					}),
 					i(189950),	-- Constrained Prey's Binds
 					i(189769),	-- Fang of Phestis (Not Confirmed)
 					i(190045),	-- Flowing Sandbender's Staff
 					i(189923),	-- Tarachnid's Terrifying Visage
 				},
 			}),
-			n(179043, {	-- Orixal <Gastropod/Helicid Prime>
+			n(179043, {	-- Orixal <Helicid Prime>
 				["coord"] = { 58.4, 83.1, ZERETH_MORTIS },
 				["questID"] = 65582,
 				["g"] = {
+					crit(11, {	-- Orixal <Gastropod/Helicid Prime>
+						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
+					}),
 					i(189952),	-- Celestial Mollusk's Chestshell
 					i(189912),	-- Orixal's Moist Sash
 					i(189934),	-- Slime-Wake Sabatons
@@ -176,6 +249,9 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 58.6, 39, ZERETH_MORTIS },
 				["questID"] = 65257,
 				["g"] = {
+					crit(25, {	-- Otaris the Provoked
+						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
+					}),
 					i(189957),	-- Colossus' Focusing Headpiece
 					i(189909),	-- Pantaloons of Cold Recesses
 					i(189945),	-- Shoulders of the Missing Giant
@@ -185,6 +261,9 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 43.4, 87.6, ZERETH_MORTIS },
 				["questID"] = 65556,
 				["g"] = {
+					crit(2, {	-- Otiosen
+						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
+					}),
 					i(189925),	-- Amphibian's Nimble Leggings
 					i(190046),	-- Broker's Stolen Cane
 					i(189995),	-- Builder's Alignment Hammer
@@ -196,6 +275,9 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 39.5, 26.8, ZERETH_MORTIS },
 				["questID"] = 64668,
 				["g"] = {
+					crit(19, {	-- Protector of the First Ones
+						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
+					}),
 					i(189984),	-- Drape of Idolized Symmetry
 					i(189177),	-- Revelation Key (PS)
 				},
@@ -204,11 +286,19 @@ root("Zones", m(SHADOWLANDS, {
 				["crs"] = { 182161 },	-- Phalangax, the Final Grasp
 				["coord"] = { 63.8, 27, ZERETH_MORTIS },
 				["questID"] = 65587, -- 65707 also popped?
+				["g"] = {
+					crit(3, {	-- Reanimatrox Marzan
+						["achievementID"] = 15392,	-- Dune Dominance
+					}),
+				},
 			}),
 			n(183927, {	-- Sand Matriarch Ileus
 				["coord"] = { 55.4, 47.1, ZERETH_MORTIS },
 				["questID"] = 65574,
 				["g"] = {
+					crit(5, {	-- Sand Matriarch Ileus
+						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
+					}),
 					i(189927),	-- Broker's Gnawed Spaulders
 					i(189998),	-- Ornate Stone Mallet
 					i(189955),	-- Scarabid's Clattering Handguards
@@ -219,6 +309,9 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 42, 21.9, ZERETH_MORTIS },
 				["questID"] = 65549,
 				["g"] = {
+					crit(18, {	-- Shifting Stargorger
+						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
+					}),
 					i(189908),	-- Gorger's Leggings of Famine
 					i(189916),	-- Mutated Devourer's Harness
 					i(189941),	-- Voracious Diadem
@@ -228,6 +321,9 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 35.8, 71.2, ZERETH_MORTIS },
 				["questID"] = 65240,
 				["g"] = {
+					crit(10, {	-- Sorranos <Vombata Prime>
+						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
+					}),
 					i(189944),	-- Immovable Stance of the Vombata
 					i(189962),	-- Sorrano's Gleaming Pauldrons
 					i(189911),	-- Sublime Fur Mantle
@@ -238,6 +334,9 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 50.4, 39.8, ZERETH_MORTIS },
 				["questID"] = 65272,
 				["g"] = {
+					crit(9, {	-- Tahkwitz
+						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
+					}),
 					i(189915),	-- Tahkwitz' Cloth Ribbon
 					i(189933),	-- Vigilant Raptora's Crest
 				},
@@ -246,6 +345,9 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 54.5, 73.4, ZERETH_MORTIS },
 				["questID"] = 65550,
 				["g"] = {
+					crit(17, {	-- Tethos
+						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
+					}),
 					i(189928),	-- Centripetal Waistband
 					i(190055),	-- Coalescing Energy Implement
 					i(189967),	-- Hood of Star Topology
@@ -258,29 +360,20 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 44, 75, ZERETH_MORTIS },
 				["questID"] = 65580,
 				["g"] = {
+					crit(29, {	-- The Engulfer
+						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
+					}),
 					i(189921),	-- Devourer's Insaitable Grips
 					i(189913),	-- Engulfer's Tightening Cinch
-				},
-			}),
-			n(184804, {	-- The Unbroken
-				["description"] = "Will call out an emote in the zone when spawned",
-				["crs"] = {
-					183749,	-- The Unbroken
-					183748,	-- The Unbroken
-				},
-				["coord"] = { 58.2, 68.3, ZERETH_MORTIS },
-				["questID"] = 65551,
-				["g"] = {
-					i(189931),	-- Annelid's Hinge Wrappings
-					i(189965),	-- Armored Cuffs of the Unbroken
-					i(190056),	-- Enlightened Explorer's Lantern
-					i(190054),	-- Facet Sharpening Crossbow
 				},
 			}),
 			n(181360, {	-- Vexis <Lupine Prime>
 				["coord"] = { 39.5, 57.1, ZERETH_MORTIS },
 				["questID"] = 65239,
 				["g"] = {
+					crit(28, {	-- Vexis <Lupine Prime>
+						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
+					}),
 					i(189997),	-- The Lupine Prime's Might
 					i(189900),	-- Vexis' Gentle Heartcloth
 					i(190048),	-- Vexis' Wisest Fang
@@ -290,6 +383,9 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 47, 47, ZERETH_MORTIS },
 				["questID"] = 65584,
 				["g"] = {
+					crit(13, {	-- Vitiane
+						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
+					}),
 					i(189922),	-- Cowl of Shameful Proliferation
 					i(189935),	-- Harrowing Hope Squashers
 					i(189901),	-- Vitiane's Defiled Vestment
@@ -299,9 +395,17 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 63.7, 49.1, ZERETH_MORTIS },
 				["questID"] = 65241,
 				["g"] = {
+					crit(6, {	-- Xy'rath the Covetous
+						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
+					}),
 					i(190050),	-- Famished Broker's Ripper
 					i(189918),	-- Fleeting Broker's Strides
-					i(190238),	-- Xy'rath's Booby-Trapped Cache (TOY!)
+					i(190238, {	-- Xy'rath's Booby-Trapped Cache (TOY!)
+						o(375536, {	-- Xy'rath's Booby-Trapped Cache
+							i(190242),	-- Red Velvet Delicacy
+							i(190241),	-- Xy'rath's Spare Outfit
+						}),
+					}),
 					i(190052),	-- Xy'rath's Letter Opener
 					i(190007),	-- Xy'rath's Signature Saber
 				},
@@ -311,6 +415,9 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 43.3, 32.9, ZERETH_MORTIS },
 				["questID"] = 65251,
 				["g"] = {
+					crit(24, {	-- Zatojin <Vespoid Prime>
+						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
+					}),
 					i(189924),	-- Buzzing Predator's Legs
 					i(189902),	-- Hapless Traveler's Treads
 					i(189939),	-- Zatojin's Paralytic Grip

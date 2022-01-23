@@ -2,6 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 local SANDWORN_RELIC = 190189;
+local CYPHER = 1979;
 root("Zones", m(SHADOWLANDS, {
 	m(ZERETH_MORTIS, {
 		n(VENDORS, {
@@ -109,10 +110,24 @@ root("Zones", m(SHADOWLANDS, {
 			n(183962, {	-- Olea Manu
 				["description"] = "Only Available after Hanoas Questline",
 				["sourceQuests"] = { 65219 },	-- Jiro to Hero
-				["coord"] = { 37.1, 45.1, ZERETH_MORTIS },
+				["coord"] = { 37.2, 44.7, ZERETH_MORTIS },
 				["g"] = {
 					i(188793, {	-- Automated Cypher Analysis Tool
 						["questID"] = 65282,
+						["cost"] = { { "c", CYPHER, 150 }, },
+					}),
+					i(189980, {	-- Brutosaur Soul
+						["cost"] = { { "c", CYPHER, 1000 }, },
+					}),
+					i(189986, {	-- Armadillo Soul
+						["cost"] = { { "c", CYPHER, 500 }, },
+					}),
+					i(189973, {	-- Ray Soul
+						["cost"] = { { "c", CYPHER, 1000 }, },
+						["u"] = NEVER_IMPLEMENTED,
+					}),
+					i(190333, {	-- Jiro Circle of Song (TOY!)
+						["cost"] = { { "c", CYPHER, 100 }, },
 					}),
 				},
 			}),

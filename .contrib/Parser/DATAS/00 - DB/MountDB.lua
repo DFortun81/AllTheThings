@@ -1086,8 +1086,7 @@ i(188674, 359318);	-- Soaring Spelltome
 -----------------
 -- PATCH 9.2.0 --
 -----------------
--- *Have Source
--- *Protoform Synthesis
+-- Protoform Synthesis
 i(187632, 359232);	-- Adorned Vombata
 i(187670, 359376);	-- Bronze Helicid
 i(187663, 359364);	-- Bronzewing Vespoid
@@ -1114,30 +1113,35 @@ i(187678, 359402);	-- Tarachnid Creeper
 i(187671, 359377);	-- Unsuccessful Prototype Fleetpod
 i(187660, 342678);	-- Vespoid Flutterer
 
+-- Achievements
+i(187673, 359381);	-- Cryptic Aurelid
+
+-- Raid
+i(190771, 359545);	-- Carcinized Zerethsteed
+i(190768, 368158);	-- Zereth Overseer
+
 -- M+
-i(187682, 359407);	-- *Wastewarped Deathwalker
+i(187682, 359407);	-- Wastewarped Deathwalker
 
 -- PvP
-i(189507, 365559);	--* Cosmic Gladiator's Soul Eater
-i(187681, 347256);	--* Vicious War Gulper (A)
-i(187680, 347255);	--* Vicious War Gulper (H)
-i(187644, 349824);	-- Vicious Warstalker (A)
-i(187642, 349823);	-- Vicious Warstalker (H)
+i(189507, 365559);	-- Cosmic Gladiator's Soul Eater
+i(187681, 347256);	-- Vicious War Gulper (A)
+i(187680, 347255);	-- Vicious War Gulper (H)
 
--- Rare Drop?
-i(187676, 342680);	-- *Deepstar Aurelid
+-- Rare/Treasure
+i(187676, 342680);	-- Deepstar Aurelid
+i(190765, 368105);	-- Colossal Plaguespew Mawrat
+i(190766, 368128);	-- Colossal Wraithbound Mawrat
 
--- Torghast?
-i(188736, 363297);	--* Colossal Soulshredder Mawrat
+-- NOT SOURCED PROPERLY --
+	-- Torghast -- They keep changing rewards
+i(188736, 363297);	-- Colossal Soulshredder Mawrat
 i(188700, 363178);	-- Colossal Umbrahide Mawrat
-i(188696, 363136);	--* Colossal Ebonclaw Mawrat
-
--- Achievements
-i(187673, 359381);	--* Cryptic Aurelid
-
--- PH/UNKNOWN/NYI
+i(188696, 363136);	-- Colossal Ebonclaw Mawrat
 i(187640, 359276);	-- Anointed Protostag
 i(187629, 359229);	-- Heartlight Vombata
 -- Holy Lightstrider(spellID 356802)
--- Carcinized Zerethsteed(SpellID 359545)
+	-- PvP They havent said anything About these mounts yet
+i(187644, 349824);	-- Vicious Warstalker (A)
+i(187642, 349823);	-- Vicious Warstalker (H)
 end)();

@@ -32,6 +32,10 @@ root("PVP", pvp(n(-240, {	-- Rated
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-240, {	-- Rated
+		n(ACHIEVEMENTS, {
+			ach(15504),	-- Maldraxxus Coliseum matches
+			ach(15505),	-- Maldraxxus Coliseum victories
+		}),
 		filter(MOUNTS, {
 			i(166417)	-- Reins of the Onyx War Hyena
 		}),

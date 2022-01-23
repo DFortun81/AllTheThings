@@ -49,6 +49,7 @@ _.Instances = { tier(SL_TIER, {
 				crit(1),	-- Tazavesh: Streets of Wonder
 				crit(2),	-- Tazavesh: So'leah's Gambit
 			}),
+			ach(15506),	-- Shadowlands Keystone Hero: Season Three
 		}),
 		n(SOULSHAPES, {
 			i(182173),	-- Hyena Soul

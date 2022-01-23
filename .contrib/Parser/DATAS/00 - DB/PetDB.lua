@@ -1043,8 +1043,7 @@ pet(186553, 3107);	-- Gurgl
 -----------------
 -- PATCH 9.2.0 --
 -----------------
--- *Have Source
--- *Protoform Synthesis
+-- Protoform Synthesis
 pet(189363, 3223);	-- Ambystan Darter
 pet(189369, 3179);	-- Archetype of Animation
 pet(189380, 3207);	-- Archetype of Cunning
@@ -1073,17 +1072,17 @@ pet(189372, 3230);	-- Terror Jelly
 pet(187798, 3176);	-- Tunneling Vombata
 pet(189366, 3225);	-- Violent Poultrid
 pet(189379, 3234);	-- Viperid Menace
+
 -- Quest
-pet(189585, 3237);	-- *E'rnee
+pet(189585, 3237);	-- E'rnee
 
--- Treasures
-pet(187735, 3172);	-- Geordy (Anima Shell?)
-
--- Torghast
-pet(188679, 3221);	--* Lightless Tormentor
-
--- Rest of iDS
+-- NOT SOURCED PROPERLY --
+pet(187735, 3172);	-- Geordy (Anima Shell?) From Treasure?
+pet(188679, 3221);	-- Lightless Tormentor TorreG..always changing...
+-- No Item related to them.
 --[[
 3215
 3218
+added later
+3246
 --]]

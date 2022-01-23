@@ -111,6 +111,7 @@ _.WorldDrops =
 				["timeline"] = { "added 2.1.0.6678" },
 			}),
 			i(180532),	-- Laestrite Lockbox
+			i(188787),	-- Locked Broker Luggage
 			i(186160),	-- Locked Artifact Case
 			i(5758),	-- Mithril Lockbox
 			i(179311),	-- Oxxein Lockbox

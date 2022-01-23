@@ -11,6 +11,7 @@ root("Zones", m(SHADOWLANDS, {
 			2029,	-- Gravid Repose
 			2030,	-- Nexus of Actualization
 			2031,	-- Crypts of the Eternal
+			2066,	-- Catalyst Wards
 		},
 	}),
 }));

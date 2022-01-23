@@ -1055,6 +1055,7 @@ _.Zones =
 					["coord"] = { 57.1, 31.1, ORIBOS },	-- Ring of Fates
 				}),
 				-- PTR 9.2
+				-- Chapter 1
 				q(64942, {	-- Call of the Primus
 					--["sourceQuests"] = {},
 					["provider"] = { "n", 181655 },	-- The Primus
@@ -1065,17 +1066,32 @@ _.Zones =
 					["provider"] = { "n", 181655 },	-- The Primus
 					["coord"] = { 34.2, 52.3, 2042 },
 				}),
-				q(64958, {	-- The Forces Gather (Gives First Ach Crit when Completed)
+				q(64958, {	-- The Forces Gather
 					["sourceQuests"] = { 64957 },	-- The Old Waystone
 					["provider"] = { "n", 184698 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 49.5, 37.5, ORIBOS },	-- (Up Stairs)
+					["g"] = {
+						crit(1, {	-- Into the Unknown
+							["achievementID"] = 15259,	-- Secrets of the First Ones
+						}),
+					},
 				}),
-				-- Chap 7
+				-- Chapter 7
 				q(65239, {	-- Safe Haven
 					["sourceQuests"] = { 65238 },	-- Souls Entwined
 					["provider"] = { "n", 184584 },	-- Kleia
 					["coord"] = { 59.9, 56.1, ORIBOS },
+					["g"] = {
+						crit(7, {	-- Starting Over
+							["achievementID"] = 15259,	-- Secrets of the First Ones
+						}),
+					},
 				}),
+				-- TorreG
+				q(65625, {
+					["provider"] = { "n", 185576 },	-- Ve'nyo
+					["coord"] = { 55.7, 49.3, ORIBOS },
+				})
 			}),
 		}),
 	}),

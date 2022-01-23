@@ -214,5 +214,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			crit(1),	-- Tazavesh: Streets of Wonder
 			crit(2),	-- Tazavesh: So'leah's Gambit
 		}),
+		ach(15506),	-- Shadowlands Keystone Hero: Season Three
 	}),
 }));

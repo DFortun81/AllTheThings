@@ -298,6 +298,141 @@ root("Zones", m(SHADOWLANDS, {
 				}),
 				--]]
 			}),
+			n(TREASURES, {
+				o(375391, {	-- Protoform Schematic
+					["description"] = "Hidden atop the ramp.",
+					["coord"] = { 35.0, 71.5, ZERETH_MORTIS },
+					["g"] = {
+						i(189473),	-- Schematic: Bronzewing Vespoid
+					},
+				}),
+				o(375388, {	-- Protoform Schematic
+					["description"] = "Inside the top cage",
+					["coord"] = { 64.2, 35.6, ZERETH_MORTIS },
+					["g"] = {
+						i(189477),	-- Schematic: Darkened Vombata
+					},
+				}),
+				o(375393, {	-- Protoform Schematic
+					["description"] = "On top a pillar. Need door of shadows/flying.",
+					["coord"] = { 62, 43.5, ZERETH_MORTIS },
+					["g"] = {
+						i(189458),	-- Schematic: Desertwing Hunter
+					},
+				}),
+				o(375748, {	-- Protoform Schematic
+					["description"] = "Under the platform.",
+					["coord"] = { 62, 43.5, ZERETH_MORTIS },
+					["g"] = {
+						i(189434),	-- Schematic: Fierce Scarabid
+					},
+				}),
+				o(375389, {	-- Protoform Schematic
+					["description"] = "Inside the vespoid nest.",
+					["coord"] = { 62, 43.5, ZERETH_MORTIS },
+					["g"] = {
+						i(189475),	-- Schematic: Forged Spiteflyer
+					},
+				}),
+				o(375694, {	-- Protoform Schematic
+					["description"] = "On top of the build and behind a pillar.",
+					["coord"] = { 31.5, 50.3, ZERETH_MORTIS },
+					["g"] = {
+						i(189465),	-- Schematic: Genesis Crawler
+					},
+				}),
+				o(375900, {	-- Protoform Schematic
+					["description"] = "Inside a Cave.",
+					["coord"] = { 53.8, 72.5, ZERETH_MORTIS },
+					["g"] = {
+						i(189435),	-- Schematic: Multichicken
+					},
+				}),
+				o(375383, {	-- Protoform Schematic
+					["description"] = "On top of the tree circle.",
+					["coord"] = { 58.3, 74.3, ZERETH_MORTIS },
+					["g"] = {
+						i(189440),	-- Schematic: Omnipotential Core
+					},
+				}),
+				o(375498, {	-- Protoform Schematic
+					["description"] = "Behind the chain. Hard to spot.",
+					["coord"] = { 52.3, 75.4, ZERETH_MORTIS },
+					["g"] = {
+						i(189442),	-- Schematic: Prototickles
+					},
+				}),
+				--o(375498, {	-- Protoform Schematic
+				--	["description"] = "This chest only spawn during WQ Frog'it(65089).",
+				--	["coord"] = { 67, 69.4, ZERETH_MORTIS },
+				--	["g"] = {
+				--		i(189469),	-- Schematic: Prototype Leaper
+				--	},
+				--}),
+				o(375371, {	-- Protoform Schematic
+					["description"] = "Inside the building.",
+					["coord"] = { 67.4, 40.2, ZERETH_MORTIS },
+					["g"] = {
+						i(189460),	-- Schematic: Raptora Swooper
+					},
+				}),
+				o(375486, {	-- Protoform Schematic
+					["description"] = "This can only be reached with help of Warlock/Door of Shadows/Dimensional Translators.",
+					["coord"] = { 57.9, 78, ZERETH_MORTIS },
+					["g"] = {
+						i(189446),	-- Schematic: Shelly
+					},
+				}),
+				o(375889, {	-- Protoform Schematic
+					["coord"] = { 60.6, 30.5, ZERETH_MORTIS },
+					["g"] = {
+						i(189456),	-- Schematic: Sundered Zerethsteed
+					},
+				}),
+				o(375370, {	-- Protoform Schematic
+					["description"] = "Inside the building.",
+					["coord"] = { 62.9, 22, ZERETH_MORTIS },
+					["g"] = {
+						i(189466),	-- Schematic: Tarachnid Creeper
+					},
+				}),
+				o(375387, {	-- Protoform Schematic
+					["description"] = "On top of the pillar.",
+					["coord"] = { 67.2, 32.6, ZERETH_MORTIS },
+					["g"] = {
+						i(189443),	-- Schematic: Terror Jelly
+					},
+				}),
+				o(375693, {	-- Protoform Schematic
+					["description"] = "Inside Locarian Esper, next to the rumble.",
+					["coord"] = { 74.7, 50.5, 2028 },
+					["g"] = {
+						i(189448),	-- Schematic: Tunneling Vombata
+					},
+				}),
+				o(375390, {	-- Protoform Schematic
+					["description"] = "On one of the first locus platforms in the sand.",
+					["coord"] = { 50.3, 27.1, ZERETH_MORTIS },
+					["g"] = {
+						i(189472),	-- Schematic: Vespoid Flutterer
+					},
+				}),
+				o(375915, {	-- Glimmer of Serenity
+					["description"] = "Multiple spawn places.",
+					["coords"] = {
+						{ 50, 11, ZERETH_MORTIS },
+						{ 46.9, 11.2, ZERETH_MORTIS },
+						{ 64.7, 63.4, ZERETH_MORTIS },
+						{ 51.2, 28.3, ZERETH_MORTIS },
+						{ 50.7, 89, ZERETH_MORTIS },
+						{ 67.1, 15.9, ZERETH_MORTIS },
+						{ 43, 35.5, ZERETH_MORTIS },
+					},
+					["g"] = {
+						i(189168),	-- Glimmer of Serenity
+					},
+				}),
+			}),
 			filter(RECIPES, {
 				filter(BATTLE_PETS, {
 					recipe(364527),	-- Ambystan Darter
