@@ -2686,6 +2686,7 @@ for key,value in pairs({
 	[353331] = "Feenvorrat",	-- Faerie Stash
 	[353332] = "Feenvorrat",	-- Faerie Stash
 	[353333] = "Feenvorrat",	-- Faerie Stash
+	[353336] = "Geheimer Schatz",	-- Secret Treasure
 	[353380] = "Halis' Henkelmann",	-- Halis's Lunch Pail
 	[353472] = "Strahlendes Schwert",	-- Radiant Sword
 	[353500] = "Silberne Schließkassette",	-- Silver Strongbox

@@ -2685,6 +2685,7 @@ for key, value in pairs({
 	[353331] = "妖精藏匿物",	-- Faerie Stash
 	[353332] = "妖精藏匿物",	-- Faerie Stash
 	[353333] = "妖精藏匿物",	-- Faerie Stash
+	[353336] = "秘密财宝",	-- Secret Treasure
 	[353380] = "哈利斯的午餐桶",	-- Halis's Lunch Pail
 	[353472] = "光辉之剑",	-- Radiant Sword
 	[353500] = "白银保险箱",	-- Silver Strongbox

@@ -2685,6 +2685,7 @@ for key,value in pairs({
 	[353331] = "페어리 보관함",	-- Faerie Stash
 	[353332] = "페어리 보관함",	-- Faerie Stash
 	[353333] = "페어리 보관함",	-- Faerie Stash
+	[353336] = "비밀 보물",	-- Secret Treasure
 	[353380] = "할리스의 도시락",	-- Halis's Lunch Pail
 	[353472] = "찬란한 검",	-- Radiant Sword
 	[353500] = "은 금고",	-- Silver Strongbox
