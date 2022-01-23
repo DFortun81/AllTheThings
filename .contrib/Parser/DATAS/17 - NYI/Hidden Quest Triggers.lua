@@ -919,6 +919,7 @@ _.HiddenQuestTriggers = {
 		q(29053),	-- 'Borrowing' From the Winterfall - completed with quest 29037
 		q(29405),	-- The Lesson of the Iron Staff - completed with quest 30027 & 30033 & 30334 & 30335 & 30336 & 30337 & 30338
 		q(29597),	-- The End of the Exarch - completed with quest 29596
+		q(29673),	-- The Black Morass - completed with quest 10296
 		q(30817),	-- The Healing of Shen-zin Su - completed with quest 29799
 		q(30818),	-- A New Fate - completed with quest 29800
 		q(30988),	-- The Alliance Way - completed with quest 31013

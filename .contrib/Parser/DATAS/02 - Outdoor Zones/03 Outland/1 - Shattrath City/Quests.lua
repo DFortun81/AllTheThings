@@ -91,7 +91,6 @@ _.Zones =
 				}),
 				q(10024, {	-- Voren'thal's Visions
 					["description"] = "If you want to switch from Aldor to Scryers, use these quests to regain lost Scryers reputation.",
-					["repeatable"] = true,
 					["provider"] = { "n", 18596 },	-- Arcanist Adyria
 				}),
 				q(10025, {	-- More Basilisk Eyes
@@ -195,7 +194,6 @@ _.Zones =
 				}),
 				q(10017, {	-- Strained Supplies
 					["description"] = "If you want to switch from Scryers to Aldor, use these quests to regain lost Aldor reputation.",
-					["repeatable"] = true,
 					["provider"] = { "n", 18597 },	-- Sha'nir
 				}),
 				q(10019, {	-- More Venom Sacs
