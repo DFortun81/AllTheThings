@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root("Instances", tier(SL_TIER, {
-	inst(1195, {	-- Sanctum of Domination
+	inst(1195, {	-- Sepulcher of the First Ones
 		["isRaid"] = true,
 		["coord"] = { 80.9, 53.4, ZERETH_MORTIS },
 		["order"] = "03",
@@ -1209,52 +1209,158 @@ root("Instances", tier(SL_TIER, {
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(SL_TIER, {
-		n(ACHIEVEMENTS, {
-			ach(15424),	-- Vigilant Guardian (Raid Finder Sepulcher of the First Ones)
-			ach(15425),	-- Vigilant Guardian (Normal Sepulcher of the First Ones)
-			ach(15426),	-- Vigilant Guardian (Heroic Sepulcher of the First Ones)
-			ach(15427),	-- Vigilant Guardian (Mythic Sepulcher of the First Ones)
-			ach(15428),	-- Skolex (Raid Finder Sepulcher of the First Ones)
-			ach(15429),	-- Skolex (Normal Sepulcher of the First Ones)
-			ach(15430),	-- Skolex (Heroic Sepulcher of the First Ones)
-			ach(15431),	-- Skolex (Mythic Sepulcher of the First Ones)
-			ach(15432),	-- Artificer Xy'mox (Raid Finder Sepulcher of the First Ones)
-			ach(15433),	-- Artificer Xy'mox (Normal Sepulcher of the First Ones)
-			ach(15434),	-- Artificer Xy'mox (Heroic Sepulcher of the First Ones)
-			ach(15435),	-- Artificer Xy'mox (Mythic Sepulcher of the First Ones)
-			ach(15436),	-- Dausegne (Raid Finder Sepulcher of the First Ones)
-			ach(15437),	-- Dausegne (Normal Sepulcher of the First Ones)
-			ach(15438),	-- Dausegne (Heroic Sepulcher of the First Ones)
-			ach(15439),	-- Dausegne (Mythic Sepulcher of the First Ones)
-			ach(15440),	-- Prototype Pantheon (Raid Finder Sepulcher of the First Ones)
-			ach(15441),	-- Prototype Pantheon (Normal Sepulcher of the First Ones)
-			ach(15442),	-- Prototype Pantheon (Heroic Sepulcher of the First Ones)
-			ach(15443),	-- Prototype Pantheon (Mythic Sepulcher of the First Ones)
-			ach(15444),	-- Lihuvim (Raid Finder Sepulcher of the First Ones)
-			ach(15445),	-- Lihuvim (Normal Sepulcher of the First Ones)
-			ach(15446),	-- Lihuvim (Heroic Sepulcher of the First Ones)
-			ach(15447),	-- Lihuvim (Mythic Sepulcher of the First Ones)
-			ach(15448),	-- Halondrus (Raid Finder Sepulcher of the First Ones)
-			ach(15449),	-- Halondrus (Normal Sepulcher of the First Ones)
-			ach(15450),	-- Halondrus (Heroic Sepulcher of the First Ones)
-			ach(15451),	-- Halondrus (Mythic Sepulcher of the First Ones)
-			ach(15452),	-- Anduin (Raid Finder Sepulcher of the First Ones)
-			ach(15453),	-- Anduin (Normal Sepulcher of the First Ones)
-			ach(15454),	-- Anduin (Heroic Sepulcher of the First Ones)
-			ach(15455),	-- Anduin (Mythic Sepulcher of the First Ones)
-			ach(15456),	-- Lords of Dread (Raid Finder Sepulcher of the First Ones)
-			ach(15457),	-- Lords of Dread (Normal Sepulcher of the First Ones)
-			ach(15458),	-- Lords of Dread (Heroic Sepulcher of the First Ones)
-			ach(15459),	-- Lords of Dread (Mythic Sepulcher of the First Ones)
-			ach(15460),	-- Rygelon (Raid Finder Sepulcher of the First Ones)
-			ach(15461),	-- Rygelon (Normal Sepulcher of the First Ones)
-			ach(15462),	-- Rygelon (Heroic Sepulcher of the First Ones)
-			ach(15463),	-- Rygelon (Mythic Sepulcher of the First Ones)
-			ach(15464),	-- The Jailer (Raid Finder Sepulcher of the First Ones)
-			ach(15465),	-- The Jailer (Normal Sepulcher of the First Ones)
-			ach(15466),	-- The Jailer (Heroic Sepulcher of the First Ones)
-			ach(15467),	-- The Jailer (Mythic Sepulcher of the First Ones)
-			ach(15423),	-- <Hidden> Jailer Defeated
-		})
-	})
+		inst(1195, {	-- Sepulcher of the First Ones
+			n(ACHIEVEMENTS, {
+				ach(15424),	-- Vigilant Guardian (Raid Finder Sepulcher of the First Ones)
+				ach(15425),	-- Vigilant Guardian (Normal Sepulcher of the First Ones)
+				ach(15426),	-- Vigilant Guardian (Heroic Sepulcher of the First Ones)
+				ach(15427),	-- Vigilant Guardian (Mythic Sepulcher of the First Ones)
+				ach(15428),	-- Skolex (Raid Finder Sepulcher of the First Ones)
+				ach(15429),	-- Skolex (Normal Sepulcher of the First Ones)
+				ach(15430),	-- Skolex (Heroic Sepulcher of the First Ones)
+				ach(15431),	-- Skolex (Mythic Sepulcher of the First Ones)
+				ach(15432),	-- Artificer Xy'mox (Raid Finder Sepulcher of the First Ones)
+				ach(15433),	-- Artificer Xy'mox (Normal Sepulcher of the First Ones)
+				ach(15434),	-- Artificer Xy'mox (Heroic Sepulcher of the First Ones)
+				ach(15435),	-- Artificer Xy'mox (Mythic Sepulcher of the First Ones)
+				ach(15436),	-- Dausegne (Raid Finder Sepulcher of the First Ones)
+				ach(15437),	-- Dausegne (Normal Sepulcher of the First Ones)
+				ach(15438),	-- Dausegne (Heroic Sepulcher of the First Ones)
+				ach(15439),	-- Dausegne (Mythic Sepulcher of the First Ones)
+				ach(15440),	-- Prototype Pantheon (Raid Finder Sepulcher of the First Ones)
+				ach(15441),	-- Prototype Pantheon (Normal Sepulcher of the First Ones)
+				ach(15442),	-- Prototype Pantheon (Heroic Sepulcher of the First Ones)
+				ach(15443),	-- Prototype Pantheon (Mythic Sepulcher of the First Ones)
+				ach(15444),	-- Lihuvim (Raid Finder Sepulcher of the First Ones)
+				ach(15445),	-- Lihuvim (Normal Sepulcher of the First Ones)
+				ach(15446),	-- Lihuvim (Heroic Sepulcher of the First Ones)
+				ach(15447),	-- Lihuvim (Mythic Sepulcher of the First Ones)
+				ach(15448),	-- Halondrus (Raid Finder Sepulcher of the First Ones)
+				ach(15449),	-- Halondrus (Normal Sepulcher of the First Ones)
+				ach(15450),	-- Halondrus (Heroic Sepulcher of the First Ones)
+				ach(15451),	-- Halondrus (Mythic Sepulcher of the First Ones)
+				ach(15452),	-- Anduin (Raid Finder Sepulcher of the First Ones)
+				ach(15453),	-- Anduin (Normal Sepulcher of the First Ones)
+				ach(15454),	-- Anduin (Heroic Sepulcher of the First Ones)
+				ach(15455),	-- Anduin (Mythic Sepulcher of the First Ones)
+				ach(15456),	-- Lords of Dread (Raid Finder Sepulcher of the First Ones)
+				ach(15457),	-- Lords of Dread (Normal Sepulcher of the First Ones)
+				ach(15458),	-- Lords of Dread (Heroic Sepulcher of the First Ones)
+				ach(15459),	-- Lords of Dread (Mythic Sepulcher of the First Ones)
+				ach(15460),	-- Rygelon (Raid Finder Sepulcher of the First Ones)
+				ach(15461),	-- Rygelon (Normal Sepulcher of the First Ones)
+				ach(15462),	-- Rygelon (Heroic Sepulcher of the First Ones)
+				ach(15463),	-- Rygelon (Mythic Sepulcher of the First Ones)
+				ach(15464),	-- The Jailer (Raid Finder Sepulcher of the First Ones)
+				ach(15465),	-- The Jailer (Normal Sepulcher of the First Ones)
+				ach(15466),	-- The Jailer (Heroic Sepulcher of the First Ones)
+				ach(15467),	-- The Jailer (Mythic Sepulcher of the First Ones)
+				ach(15423),	-- <Hidden> Jailer Defeated
+			}),
+			i(189780),	-- <DNT> 9.2 Raid - Sepulcher of the First Ones - Boss 01 - Solitary Guardian - Shield
+			--?? Might be Dune rares
+			i(190108),	-- Aegis of Laughing Souls
+			i(190106),	-- Approaching Terror's Torch
+			i(188267),	-- Bells of the Endless Feast
+			i(190102),	-- Chains of Infectious Serrations
+			i(190105),	-- Chilling Domination Mace
+			-- Dune Rares?
+			i(190109),	-- Cudgel of Mortality's Chains
+			i(190104),	-- Deadeye's Spirit Piercer
+			i(190111),	-- Escutcheon of Beautiful Death
+			i(190110),	-- Flail of Balletic Carnage
+			i(190112),	-- Glimmering War Beacon
+			i(190334),	-- Origin
+			i(190103),	-- Pillar of Noxious Dissemination
+			i(190126),	-- Rotculler's Encroaching Shears
+			i(190107),	-- Staff of Broken Coils
+			-- Trash Drop?
+			i(190631),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - Trash Drops - Armor - Cloth Hands
+			i(190630),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - Trash Drops - Armor - Cloth Shoulder
+			i(190626),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - Trash Drops - Armor - Leather Head
+			i(190627),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - Trash Drops - Armor - Leather Legs
+			i(190629),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - Trash Drops - Armor - Mail Feet
+			i(190628),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - Trash Drops - Armor - Mail Head
+			i(190624),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - Trash Drops - Armor - Plate Hands
+			i(190625),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - Trash Drops - Armor - Plate Shoulders
+			i(190623),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - Trash Drops - Armor - Plate Shoulders
+			-- WB?
+			i(190622),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Accessory - Trinket - Omni
+			i(190620),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Armor - Cloth Head
+			i(190621),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Armor - Cloth Legs
+			i(190618),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Armor - Leather Chest
+			i(190619),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Armor - Leather Feet
+			i(190616),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Armor - Mail Belt
+			i(190617),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Armor - Mail Wrist
+			i(190615),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Armor - Plate Chest
+			i(190614),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Armor - Plate Head
+			--
+			i(190458),	-- Atrophy's Ominous Bulwark
+			i(190459),	-- Cold Dispiriting Barricade
+			i(190463),	-- Dismal Mystic's Glaive
+			i(190462),	-- Impaler's Graceful Lance
+			--
+			i(190735),	-- Varruth's Guillotine
+			-- Tiers that wasnt tiers anymore
+			i(188873),	-- Cloak of the First Eidolon
+			i(188870),	-- Girdle of the First Eidolon
+			i(188865),	-- Greaves of the First Eidolon
+			i(188869),	-- Vambraces of the First Eidolon
+
+			i(188897),	-- Mercurial Punisher's Belt
+			i(188899),	-- Mercurial Punisher's Boots
+			i(188900),	-- Mercurial Punisher's Mantle
+			i(188895),	-- Mercurial Punisher's Wristguards
+
+			i(188850),	-- Bracers of the Fixed Stars
+			i(188852),	-- Cincture of the Fixed Stars
+			i(188854),	-- Footwraps of the Fixed Stars
+			i(188871),	-- Wrap of the Fixed Stars
+
+			i(188872),	-- Godstalker's Camouflage
+			i(188857),	-- Godstalker's Fauld
+			i(188862),	-- Godstalker's Sabatons
+			i(188855),	-- Godstalker's Wristwraps
+
+			i(188840),	-- Erudite Occultist's Bracers
+			i(188841),	-- Erudite Occultist's Cord
+			i(188846),	-- Erudite Occultist's Shroud
+			i(188838),	-- Erudite Occultist's Treads
+
+			i(188913),	-- Demigaunts of the Grand Upwelling
+			i(188918),	-- Drape of the Grand Upwelling
+			i(188917),	-- Footwraps of the Grand Upwelling
+			i(188915),	-- Waistwrap of the Grand Upwelling
+
+			i(188936),	-- Luminous Chevalier's Drape
+			i(188935),	-- Luminous Chevalier's Girdle
+			i(188930),	-- Luminous Chevalier's Spurs
+			i(188934),	-- Luminous Chevalier's Vambraces
+
+			i(188876),	-- Bracelets of the Empyrean
+			i(188882),	-- Drape of the Empyrean
+			i(188877),	-- Sash of the Empyrean
+			i(188874),	-- Slippers of the Empyrean
+
+			i(188906),	-- Soulblade Baldric
+			i(188909),	-- Soulblade Cloak
+			i(188908),	-- Soulblade Footpads
+			i(188904),	-- Soulblade Wristguard
+
+			i(188921),	-- Theurgic Starspeaker's Belt
+			i(188919),	-- Theurgic Starspeaker's Bracers
+			i(188926),	-- Theurgic Starspeaker's Sabotons
+			i(188927),	-- Theurgic Starspeaker's Shawl
+
+			i(188885),	-- Bangles of the Demon Star
+			i(188883),	-- Boots of the Demon Star
+			i(188891),	-- Cape of the Demon Star
+			i(188886),	-- Waistwrap of the Demon Star
+
+			i(188945),	-- Favor of the Infinite Infantry
+			i(188944),	-- Greatbelt of the Infinite Infantry
+			i(188939),	-- March of the Infinite Infantry
+			i(188943),	-- Vambraces of the Infinite Infantry
+		}),
+	}),
 }));

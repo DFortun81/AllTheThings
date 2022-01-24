@@ -5,7 +5,7 @@
 root("Zones", m(SHADOWLANDS, {
 	m(ZERETH_MORTIS, {
 		n(EMISSARY_QUESTS, {
-			i(187781),	-- Automa Supplies
+			i(187781),	-- Olea Cache
 			i(187780, {	-- Enlightened Broker Supplies
 				i(190177),	-- Sphere of Enlightened Cogitation
 			}),

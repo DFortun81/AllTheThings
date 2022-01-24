@@ -64,6 +64,30 @@ root("Zones", m(SHADOWLANDS, {
 						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
 					},
 				}),
+				i(190654, {	-- Cache of Sepulcher Treasures (N) or 190655
+					["sym"] = {
+						{"select", "instanceID", 1195},			-- Sepulcher of the First Ones
+						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
+						{"where", "difficultyID", 14},			-- Select only the Normal Difficulty Headers.
+						{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
+						{"is","encounterID"},					-- Only Encounter Headers
+						{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
+						{"is", "itemID"},						-- Only Items!
+						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
+					},
+				}),
+				i(190656, {	-- Cache of Sepulcher Treasures (HC)
+					["sym"] = {
+						{"select", "instanceID", 1195},			-- Sepulcher of the First Ones
+						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
+						{"where", "difficultyID", 15},			-- Select only the Heroic Difficulty Headers.
+						{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
+						{"is","encounterID"},					-- Only Encounter Headers
+						{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
+						{"is", "itemID"},						-- Only Items!
+						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
+					},
+				}),
 			}),
 			n(QUESTS, sharedData({
 				["provider"] = { "n", 166307 },	-- Caretaker Kah-Toll

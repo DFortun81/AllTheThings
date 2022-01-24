@@ -8,14 +8,26 @@ root("Zones", m(SHADOWLANDS, {
 				["description"] = "Still need a proper Source.",
 				["g"] = {
 					i(189910),	-- Adornment of Jingling Fractals
-					i(190006),	-- Anima-Siphoning Sword
 					i(190002),	-- Bulwark of the Broken
+					i(189917),	-- Constellation Master's Smock
+					i(189996),	-- Elegantly Balanced Axe
 					i(189961),	-- Enduring Protector's Shoulderguards (Protector?)
 					i(189993),	-- Gavel of the Twisted Judicator
 					i(189959),	-- Legs of Graceful Landing
 					i(189953),	-- Lush-Stained Footguards (Overgrowth?)
 					i(189954),	-- Lustrous Sentinel's Sabatons
 					i(189956),	-- Perverse Champion's Handguards
+					--??
+					i(190124),	-- Interrogator's Vicious Dirk
+					i(190125),	-- Kris of Intricate Secrets
+					--
+					i(189943),	-- Greaves of Cosmic Designs
+					i(189904),	-- Meticulous Architect's Mitts
+					i(190057),	-- Protective Raptora's Wing-Glaive
+					i(190003),	-- Skyward Savior's Talon
+					i(190731),	-- Deceiver's Illusionary Signet
+					i(190732),	-- Strand of Tainted Relics
+					i(190729),	-- Vigorous Sentinel's Seal
 				},
 			}),
 			n(179006, {	-- Akkaris <Annelid Prime>
@@ -198,21 +210,26 @@ root("Zones", m(SHADOWLANDS, {
 					crit(2, {	-- High Reaver Damaris
 						["achievementID"] = 15392,	-- Dune Dominance
 					}),
+					i(190460),	-- High Reaver's Sickle
 				},
 			}),
 			n(180978, {	-- Hirukon <Aurelid Prime>
+				["description"] = "Still unknown how to spawn this boss. Probably something with Aurelid Lure(187923).",
 				["coord"] = { 52.2, 75.2, ZERETH_MORTIS },
 				["g"] = {
 					crit(23, {	-- Hirukon <Aurelid Prime>
 						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
 					}),
-					i(187676),	-- Deepstar Aurelid
+					i(187676),	-- Deepstar Aurelid (MOUNT!)
+					i(190005),	-- Hirukon's Radiant Reach
+					i(189905),	-- Hirukon's Syrupy Squeezers
+					i(189946),	-- Jellied Aurelid Mantle
 				},
 			}),
 			n(182114, {	-- Iska, Outrider of Ruin
 				["crs"] = { 182120 },	-- Rhuv, Gorger of Ruin
 				["coord"] = { 63.8, 27, ZERETH_MORTIS },
-				--["questID"] =
+				["questID"] = 65585,
 				["g"] = {
 					crit(1, {	-- Iska, Outrider of Ruin
 						["achievementID"] = 15392,	-- Dune Dominance
@@ -290,6 +307,8 @@ root("Zones", m(SHADOWLANDS, {
 					crit(3, {	-- Reanimatrox Marzan
 						["achievementID"] = 15392,	-- Dune Dominance
 					}),
+					i(190127),	-- Marzan's Dancing Twin-Scythe
+					i(190461),	-- Reanimator's Beguiling Baton
 				},
 			}),
 			n(183927, {	-- Sand Matriarch Ileus
@@ -363,8 +382,10 @@ root("Zones", m(SHADOWLANDS, {
 					crit(29, {	-- The Engulfer
 						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
 					}),
+					i(190006),	-- Anima-Siphoning Sword
 					i(189921),	-- Devourer's Insaitable Grips
 					i(189913),	-- Engulfer's Tightening Cinch
+					i(190730),	-- Matriarch's Shell Band
 				},
 			}),
 			n(181360, {	-- Vexis <Lupine Prime>
@@ -424,5 +445,26 @@ root("Zones", m(SHADOWLANDS, {
 				},
 			}),
 		})),
+	}),
+}));
+
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	tier(SL_TIER, {
+		i(187674),	-- [PH] Progenitor Jellyfish (Dark)
+		i(187675),	-- [PH] Progenitor Jellyfish (Dark Red)
+		i(189452),	-- 9.2 Mount Crafting Bag of Goodies
+		i(189428),	-- 9.2 Pet Battle Playtest Bag of Goodies
+		i(190383),	-- Progenitor Essentia Lattice
+		-- Cosmetic
+		i(190931),	-- Cape of the Regal Wanderer
+		i(190930),	-- Dark Shawl of the Enlightened
+		i(190935),	-- Distinguished Blade of Cartel Al
+		i(190929),	-- Ebony Protocloak
+		i(190937),	-- Edge of the Enlightened
+		i(190933),	-- Majestic Oracle's Drape
+		i(190932),	-- Protohide Drape
+		i(190928),	-- Sandtails Drape
+		i(190934),	-- Standard of the Wandering Brokers
+		i(190939),	-- Walking Staff of the Enlightened Journey
 	}),
 }));

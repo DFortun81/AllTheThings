@@ -14,8 +14,63 @@ root("Zones", m(SHADOWLANDS, {
 			i(188106),	-- Unfathomable Pendant
 			i(188042),	-- Enlightened Dagger
 			i(190634),	-- Cypher-Etched Torque
+			i(190633),	-- Cypher-Etched Band
+			i(190635),	-- Cypher-Etched Lavaliere
+			i(190632),	-- Cypher-Etched Ring
+			-- Weaps
+			i(188053),	-- Abandoned Automa Loop
+			i(188041),	-- Ageless Spellblade
+			i(188056),	-- Ancient Protector's Pulverizer
+			i(188040),	-- Burnished Arbalest
+			i(188043),	-- Eradicator of the Eternal Guard
+			i(188051),	-- Gatewarden's Warglaive
+			i(188039),	-- Harmonic Actuator
+			i(188047),	-- Haven Guard's Cudgel
+			i(188046),	-- Haven Guard's Mace
+			i(188038),	-- Haven Guard's Shield
+			i(188055),	-- Impossibly Ancient Band
+			i(188050),	-- Ineffable Spire
+			i(188049),	-- Transcendant Gavel
+			i(188048),	-- Truthseeker's Staff
+			i(188106),	-- Unfathomable Pendant
+			--
+			i(188045),	-- Salvaged Viperid Band
 			-- Quest
 			i(190579),	-- Unformed Essence
+			-- Greens?
+			i(188054),	-- Antecedent Drape
+			i(188026),	-- Anthemic Bracers
+			i(188022),	-- Anthemic Coif
+			i(188019),	-- Anthemic Cuirass
+			i(188021),	-- Anthemic Gauntlets
+			i(188020),	-- Anthemic Greaves
+			i(188023),	-- Anthemic Legguards
+			i(188025),	-- Anthemic Links
+			i(188024),	-- Anthemic Shoulders
+			i(188037),	-- Choral Amice
+			i(188008),	-- Choral Handwraps
+			i(188009),	-- Choral Hood
+			i(188010),	-- Choral Leggings
+			i(188011),	-- Choral Sash
+			i(188007),	-- Choral Slippers
+			i(188006),	-- Choral Vestments
+			i(188012),	-- Choral Wraps
+			i(188028),	-- Harmonium Breastplate
+			i(188030),	-- Harmonium Gauntlets
+			i(188033),	-- Harmonium Girdle
+			i(188027),	-- Harmonium Helm
+			i(188031),	-- Harmonium Legplates
+			i(188029),	-- Harmonium Percussive Stompers
+			i(188032),	-- Harmonium Spaulders
+			i(188034),	-- Harmonium Vambrace
+			i(188017),	-- Staccato Belt
+			i(188013),	-- Staccato Boots
+			i(188018),	-- Staccato Cuffs
+			i(188014),	-- Staccato Grips
+			i(188015),	-- Staccato Helm
+			i(188016),	-- Staccato Leggings
+			i(188036),	-- Staccato Mantle
+			i(188035),	-- Staccato Vest
 			-- Lattices
 			i(187634),	-- Ambystan Lattice
 			i(187636),	-- Aurelid Lattice
@@ -59,5 +114,33 @@ root("Zones", m(SHADOWLANDS, {
 			i(189172),	-- Crystallized Echo of the First Song
 			--]]
 		}),
+	}),
+}));
+
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	tier(SL_TIER, {
+		i(188105),	-- [PH] Copy Fine Razorwing Quill
+		i(188057),	-- [PH] Copy Harmonic Crowd Breaker
+		i(188052),	-- [PH] Copy Iron Maiden's Toolkit
+		i(188092),	-- [PH] Copy Korthian Anima Vessel
+		i(188058),	-- [PH] Copy Tome of Insight
+		i(188103),	-- [PH] Copy Vault Attendant's Cape
+		i(184231),	-- 9.0 Covenant - Bastion - Weapon - Warglaive AGI - Blue
+		i(184232),	-- 9.0 Covenant - Bastion - Weapon - Warglaive AGI - Copper
+		i(184233),	-- 9.0 Covenant - Bastion - Weapon - Warglaive AGI - Dark
+		i(184234),	-- 9.0 Covenant - Bastion - Weapon - Warglaive AGI - Gold
+		i(184235),	-- 9.0 Covenant - Bastion - Weapon - Warglaive AGI - Pink
+		i(188095),	-- [PH] Copy Korthian Anima Slicer
+		i(188094),	-- [PH] Copy Korthian Attendant's Blade
+		i(188101),	-- [PH] Copy Korthian Attendant's Cane
+		i(188100),	-- [PH] Copy Korthian Attendant's Scepter
+		i(188093),	-- [PH] Copy Korthian Energy Bow
+		i(188091),	-- [PH] Copy Korthian Keeper's Buckler
+		i(188097),	-- [PH] Copy Korthian Protector's Warhammer
+		i(188096),	-- [PH] Copy Vault Guardian's Decapitator
+		i(188102),	-- [PH] Copy Vault Guardian's Warglaive
+		i(188098),	-- [PH] Copy Vault Patroller's Mace
+		i(188104),	-- [PH] Copy Vault Patroller's Slicer
+		i(188099),	-- [PH] Copy Vault Patroller's Staff
 	}),
 }));

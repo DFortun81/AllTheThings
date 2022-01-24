@@ -68,6 +68,18 @@ root("Zones", m(SHADOWLANDS, {
 					i(190637),	-- Percussive Maintenance Instrument
 				},
 			}),
+			o(375354, {	-- Domination Cache
+				["description"] = "The surronding trash drops the key.",
+				["coord"] = { 60, 18, ZERETH_MORTIS },
+				["questID"] = 65465,
+				["cost"] = { { "i", 189704, 1}, },	-- 1xDominance Key
+				["g"] = {
+					crit(11, {	-- Domination Cache
+						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
+					}),
+					i(189863),	-- Spatial Opener
+				},
+			}),
 			o(375413, {	-- Drowned Broker Supplies
 				["description"] = "Need to have completed Dealic Understanding. At 34.5, 70.5 there is a Coreless Aurelid(185282), use Popopoc to on it to get the chest.",
 				["coord"] = { 34.8, 69.9, ZERETH_MORTIS },
@@ -103,6 +115,7 @@ root("Zones", m(SHADOWLANDS, {
 					crit(12, {	-- Filched Artifact
 						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
 					}),
+					i(189863),	-- Spatial Opener
 				},
 			}),
 			o(373561, {	-- Forgotten Proto-Vault
@@ -156,17 +169,6 @@ root("Zones", m(SHADOWLANDS, {
 					}),
 				}
 			}),
-			o(375354, {	-- Domination Cache
-				["description"] = "The surronding trash drops the key.",
-				["coord"] = { 60, 18, ZERETH_MORTIS },
-				["questID"] = 65465,
-				["cost"] = { { "i", 189704, 1}, },	-- 1xDominance Key
-				["g"] = {
-					crit(11, {	-- Domination Cache
-						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
-					}),
-				},
-			}),
 			o(375411, {	-- Mistaken Ovoid
 				["description"] = "Inside the cave behind the balls.",
 				["coord"] = { 53.6, 72.2, ZERETH_MORTIS },
@@ -194,6 +196,7 @@ root("Zones", m(SHADOWLANDS, {
 					crit(18, {	-- Offering to the First Ones
 						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
 					}),
+					i(190339),	-- Enlightened Offering
 				},
 			}),
 			o(375481, {	-- Pilfered Curio
@@ -269,24 +272,26 @@ root("Zones", m(SHADOWLANDS, {
 					crit(21, {	-- Stolen Scroll
 						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
 					}),
+					i(189863),	-- Spatial Opener
 				},
 			}),
 			o(369757, {	-- Submerged Chest
 				["description"] = "Bring Orb to pump.",
 				["coord"] = { 58.8, 73.1, ZERETH_MORTIS },
-				--["questID"] = 65270,
+				["questID"] = 64545,
 				["g"] = {
 					crit(2, {	-- Submerged Chest
 						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
 					}),
 					i(190061, {	-- Admiral Pocopoc
-						--["questID"] = ,
+						["questID"] = 65529,
 						["g"] = {
 							crit(6, {	-- Admiral Pocopoc
 								["achievementID"] = 15508,	-- Fashion of the First Ones
 							}),
 						},
 					}),
+					i(189863),	-- Spatial Opener
 				},
 			}),
 			o(374976, {	-- Symphonic Vault
@@ -297,6 +302,7 @@ root("Zones", m(SHADOWLANDS, {
 					crit(6, {	-- Symphonic Vault
 						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
 					}),
+					i(189863),	-- Spatial Opener
 				},
 			}),
 			o(375492, {	-- Syntactic Vault
@@ -352,6 +358,78 @@ root("Zones", m(SHADOWLANDS, {
 					}),
 					crit(26, {	-- Undulating Foliage
 						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
+					}),
+					i(189863),	-- Spatial Opener
+				},
+			}),
+			-- Sands
+			o(375397, {	-- Glinting Sand Pile
+				["description"] = "Inside Gravid Repose.",
+				--["coord"] = { , , ZERETH_MORTIS },
+				["cost"] = { { "i", 189863, 1 }, },	-- 1xSpatial Opener
+				["g"] = {
+					crit(2, {	-- Glinting Sand Pile
+						["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+					}),
+				},
+			}),
+			o(375399, {	-- Humming Sand Pile
+				["description"] = "Inside Gravid Repose.",
+				--["coord"] = { , , ZERETH_MORTIS },
+				["cost"] = { { "i", 189863, 1 }, },	-- 1xSpatial Opener
+				["g"] = {
+					crit(4, {	-- Humming Sand Pile
+						["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+					}),
+				},
+			}),
+			o(375396, {	-- Lumpy Sand Pile
+				["description"] = "Inside Gravid Repose.",
+				--["coord"] = { , , ZERETH_MORTIS },
+				["cost"] = { { "i", 189863, 1 }, },	-- 1xSpatial Opener
+				["g"] = {
+					crit(1, {	-- Lumpy Sand Pile
+						["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+					}),
+				},
+			}),
+			o(375400, {	-- Misshapen Sand Pile
+				["description"] = "Inside Gravid Repose.",
+				--["coord"] = { , , ZERETH_MORTIS },
+				["cost"] = { { "i", 189863, 1 }, },	-- 1xSpatial Opener
+				["g"] = {
+					crit(5, {	-- Misshapen Sand Pile
+						["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+					}),
+				},
+			}),
+			o(375398, {	-- Shifting Sand Pile
+				["description"] = "Inside Gravid Repose.",
+				--["coord"] = { , , ZERETH_MORTIS },
+				["cost"] = { { "i", 189863, 1 }, },	-- 1xSpatial Opener
+				["g"] = {
+					crit(3, {	-- Shifting Sand Pile
+						["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+					}),
+				},
+			}),
+			o(375401, {	-- Sparkling Sand Pile
+				["description"] = "Inside Gravid Repose.",
+				--["coord"] = { , , ZERETH_MORTIS },
+				["cost"] = { { "i", 189863, 1 }, },	-- 1xSpatial Opener
+				["g"] = {
+					crit(6, {	-- Sparkling Sand Pile
+						["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+					}),
+				},
+			}),
+			o(375402, {	-- Ticking Sand Pile
+				["description"] = "Inside Gravid Repose.",
+				--["coord"] = { , , ZERETH_MORTIS },
+				["cost"] = { { "i", 189863, 1 }, },	-- 1xSpatial Opener
+				["g"] = {
+					crit(7, {	-- Ticking Sand Pile
+						["achievementID"] = 15502,	-- Sand, Sand Everywhere!
 					}),
 				},
 			}),

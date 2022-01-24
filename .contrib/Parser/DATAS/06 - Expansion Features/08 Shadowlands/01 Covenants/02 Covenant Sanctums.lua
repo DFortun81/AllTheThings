@@ -157,6 +157,7 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 64963 },	-- A Defector's Request
 							["description"] = "Can only spawn after completing the quest |cFFFFD700A Defector's Request'(64963)|r.",
 						}),
+						i(190178),	-- Pouch of Protogenic Provisions
 					},
 				}),
 				n(COVENANT_CALLINGS, {

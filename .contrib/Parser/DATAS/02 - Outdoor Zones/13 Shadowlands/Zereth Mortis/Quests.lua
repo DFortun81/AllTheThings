@@ -832,6 +832,7 @@ root("Zones", m(SHADOWLANDS, {
 				["provider"] = { "i", 187788 },	-- Aetheric Lattice
 			}),
 			q(64861, {	-- Kismetric Disc
+				["description"] = "Starts with the item: Kismetric Circlet(187791) might not be daily..",
 				["sourceQuests"] = { 64579 },	-- Hallow Efforts
 				["provider"] = { "i", 187792 },	-- Kismetric Disc
 				["g"] = {

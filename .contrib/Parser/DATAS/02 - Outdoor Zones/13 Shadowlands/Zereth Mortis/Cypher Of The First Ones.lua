@@ -557,3 +557,9 @@ root("HiddenQuestTriggers", {
 	--q(65094),	-- Triggered when completed the puzzle, Cantaric At 38.5, 63.2 / AS:38.5 63.7 / AS2:53.0, 45.6
 	--q(65317),	-- Triggered when completed the puzzle, Fugueal At AS:44.3, 30.9
 });
+
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	tier(SL_TIER, {
+		i(190392),	-- Pocopoc Shield
+	}),
+}));

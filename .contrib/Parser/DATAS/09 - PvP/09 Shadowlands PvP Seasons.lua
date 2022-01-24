@@ -1094,7 +1094,7 @@ _.PVP =
 					i(186860),	-- Cosmic Gladiator's Xiphos
 				}),
 			}),
-			n(PVP_ELITE, bubbleDown({["modID"] = 14, ["bonusID"] = 7309}, {	-- Elite/Duelist Gear. Do not use more filters, Elite Gear has same ItemID has Gladiator Gear.
+			n(PVP_ELITE, bubbleDown({["modID"] = 57, ["bonusID"] = 7539}, {	-- Elite/Duelist Gear. Do not use more filters, Elite Gear has same ItemID has Gladiator Gear.
 				n(BACK, {
 					i(186780),	-- Cosmic Gladiator's Cloak
 					i(186781),	-- Cosmic Gladiator's Drape
