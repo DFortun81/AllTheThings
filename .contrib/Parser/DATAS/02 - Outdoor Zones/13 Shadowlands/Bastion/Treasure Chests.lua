@@ -30,7 +30,7 @@ _.Zones =
 				}),
 				o(356823, {	-- Cloudwalker's Coffer
 					["questID"] = 61698,
-					["isDaily"] = true,
+					["isWeekly"] = true,
 					["coord"] = { 61.1, 15.1, BASTION },
 					["g"] = {
 						i(180783, {	-- Design: Crown of the Righteous

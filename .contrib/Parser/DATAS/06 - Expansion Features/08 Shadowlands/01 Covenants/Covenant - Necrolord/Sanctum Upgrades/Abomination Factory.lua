@@ -1123,7 +1123,7 @@ root("HiddenQuestTriggers", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_C
 			q(63404),	-- Gloves
 			q(63409),	-- Waist
 			q(63402),	-- Legs
-			-- q(),	-- Feet
+			q(63408),	-- Feet
 
 		--	Unity Transmog
 			q(63407),	-- Leather Chest

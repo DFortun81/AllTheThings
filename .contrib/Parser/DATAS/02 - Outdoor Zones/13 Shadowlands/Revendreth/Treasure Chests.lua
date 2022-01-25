@@ -722,6 +722,7 @@ _.Zones =
 					["coord"] = { 38.5, 39.9, REVENDRETH },
 					["g"] = {
 						i(180401),	-- Noble Justice
+						i(182723),	-- Mail Courier's Shoulderguards
 					},
 				}),
 				o(353792, {	-- Village Strongbox

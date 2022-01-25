@@ -1072,6 +1072,8 @@ root("HiddenQuestTriggers", {
 	q(65077),	-- Swapping Cov to Venthyr at R80
 	q(65078),	-- Swapping Cov to NF at R80
 	q(65079),	-- Swapping Cov to Necrolord at R80
+	--q(62370),	-- Returning to the Venthyr before hitting rank 80 with anyone gave "Prove Your Worth" which flagged two quests as complete that aren't in ATT
+	--q(62380),	-- Returning to the Venthyr before hitting rank 80 with anyone gave "Prove Your Worth" which flagged two quests as complete that aren't in ATT
 	-- 9.1.5?
 	q(62923),	-- Swapped to Venthyr from Necrolord at R80? Probably a old hqt
 	q(64848),	-- Choosing Torghast as leveling

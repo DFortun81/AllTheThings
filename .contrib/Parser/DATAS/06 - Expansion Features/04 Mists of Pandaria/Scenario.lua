@@ -120,6 +120,7 @@ _.ExpansionFeatures =
 							i(92878),	-- Lavasoul Cloak
 							i(92886),	-- Lavasoul Collar
 							i(92884),	-- Lavasoul Ring
+							i(93120),	-- Lightning Rod Pauldrons			-- 18 Jan 2022
 							i(93053),	-- Mogubreaker Britches				-- 12/12/21
 							i(93052),	-- Mogubreaker Hood*				— 5/16/19
 							i(89446),	-- Mogu-Wrought Girdle				— 2021-11-12
@@ -158,6 +159,7 @@ _.ExpansionFeatures =
 							i(92888),	-- Stormcrier Choker
 							i(92880),	-- Stormcrier Cloak
 							i(92882),	-- Stormcrier Ring
+							i(93064),	-- Stormshaper Bracers				- 25 Jan 2022
 							i(93060),	-- Stormshaper Helm*				— 10/25/19
 							-- From wowhead comments
 							i(93122),	-- Lightning Rod Vambraces
@@ -408,7 +410,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 						i(93061),	-- Stormshaper Legguards
 						i(93062),	-- Stormshaper Spaulders
 						i(93063),	-- Stormshaper Belt
-						i(93064),	-- Stormshaper Bracers
 						i(93086),	-- Swashbuckling Vest
 						i(93087),	-- Swashbuckling Greaves
 						i(93088),	-- Swashbuckling Gauntlets
@@ -441,7 +442,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 						i(93116),	-- Lightning Rod Sabatons
 						i(93117),	-- Lightning Rod Gauntlets
 						i(93118),	-- Lightning Rod Helm
-						i(93120),	-- Lightning Rod Pauldrons
 						i(93121),	-- Lightning Rod Girdle
 					}),
 					n(BACK, {
