@@ -65,6 +65,7 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE },{
 			i(112324),			-- Nightmarish Hitching Post
 		}),
 		i(69846),			-- Winged Guardian
+		mount(359317),		-- Wen Lo, the River's Edge
 	}),
 	filter(BATTLE_PETS, {
 		i(106240),			-- Alterac Brew-Pup
