@@ -1757,7 +1757,7 @@ app.GetIndicatorIcon = function(group)
 			return app.asset("known_green");
 		end
 	else
-		local asset = app.GetQuestIndicator(group) or app.GetVignetteIndicator(group);
+		local asset = app.GetQuestIndicator(group) or group.indicatorIcon;
 		if asset then
 			return app.asset(asset);
 		elseif group.u then
