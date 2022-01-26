@@ -10372,6 +10372,11 @@ local npcFields = {
 			end
 		end
 	end,
+	["indicatorIcon"] = function(t)
+		if app.CurrentVignettes["npcID"][t.npcID] then
+			return "Category_Secrets";
+		end
+	end,
 };
 npcFields.icon = npcFields.iconAsDefault;
 app.BaseNPC = app.BaseObjectFields(npcFields);
@@ -10543,6 +10548,11 @@ local objectFields = {
 					return questID;
 				end
 			end
+		end
+	end,
+	["indicatorIcon"] = function(t)
+		if app.CurrentVignettes["objectID"][t.objectID] then
+			return "Category_Secrets";
 		end
 	end,
 
@@ -20752,8 +20762,8 @@ app.Startup = function()
 	app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_REMOVED");
 	app:RegisterEvent("PET_BATTLE_OPENING_START")
 	app:RegisterEvent("PET_BATTLE_CLOSE")
-	--app:RegisterEvent("VIGNETTE_MINIMAP_UPDATED")
-	--app:RegisterEvent("VIGNETTES_UPDATED")
+	app:RegisterEvent("VIGNETTE_MINIMAP_UPDATED")
+	app:RegisterEvent("VIGNETTES_UPDATED")
 
 	StartCoroutine("InitDataCoroutine", app.InitDataCoroutine);
 end
@@ -21774,54 +21784,44 @@ app.CurrentVignettes = {
 };
 local C_VignetteInfo_GetVignetteInfo = C_VignetteInfo.GetVignetteInfo;
 local C_VignetteInfo_GetVignettes = C_VignetteInfo.GetVignettes;
-local tonumber, strsplit, ipairs = tonumber, strsplit, ipairs;
+local tonumber, strsplit, ipairs, wipe = tonumber, strsplit, ipairs, wipe;
 
 local function DelVignette(vignetteGUID)
 	local vignetteInfo = C_VignetteInfo_GetVignetteInfo(vignetteGUID);
 	if vignetteInfo and vignetteInfo.objectGUID then
 		local type, _, _, _, _, id, _ = strsplit("-",vignetteInfo.objectGUID);
-		id = tonumber(id);
-		local searchType = type == "Creature" and "npcID" or "objectID";
-		-- app.PrintDebug("Hidden Vignette",searchType,id)
-		app.CurrentVignettes[searchType][id] = nil;
+		id = id and tonumber(id);
+		if id then
+			local searchType = type == "Creature" and "npcID" or "objectID";
+			-- app.PrintDebug("Hidden Vignette",searchType,id)
+			app.CurrentVignettes[searchType][id] = nil;
+		end
 	end
 end
 local function AddVignette(vignetteGUID)
 	local vignetteInfo = C_VignetteInfo_GetVignetteInfo(vignetteGUID);
 	if vignetteInfo and vignetteInfo.objectGUID then
+		-- app.PrintDebug("Add Vignette",vignetteInfo.objectGUID)
 		local type, _, _, _, _, id, _ = strsplit("-",vignetteInfo.objectGUID);
-		id = tonumber(id);
-		local searchType = type == "Creature" and "npcID" or "objectID";
-		if vignetteInfo.isDead then
-			-- app.PrintDebug("Dead Vignette",searchType,id)
-			app.CurrentVignettes[searchType][id] = nil;
-		else
-			-- app.PrintDebug("Visible Vignette",searchType,id)
-			app.CurrentVignettes[searchType][id] = true;
-			-- potentially can add groups into another window?
-			local vignetteGroup = app.SearchForObject(searchType,id);
-			if vignetteGroup then
-				-- app.PrintDebug("Found Vignette Group")
-				-- force the related vignette group to be visible (this currently would only affect the Main list...)
-				vignetteGroup.visible = true;
+		id = id and tonumber(id);
+		if id then
+			local searchType = type == "Creature" and "npcID" or "objectID";
+			if vignetteInfo.isDead then
+				-- app.PrintDebug("Dead Vignette",searchType,id)
+				app.CurrentVignettes[searchType][id] = nil;
+			else
+				-- app.PrintDebug("Visible Vignette",searchType,id)
+				-- app.PrintTable(vignetteInfo)
+				app.CurrentVignettes[searchType][id] = true;
+				-- potentially can add groups into another window?
+				local vignetteGroup = app.SearchForObject(searchType,id);
+				if vignetteGroup then
+					-- app.PrintDebug("Found Vignette Group")
+					-- force the related vignette group to be visible (this currently would only affect the Main list...)
+					vignetteGroup.visible = true;
+				end
 			end
 		end
-	end
-end
-local function CheckVignettes(vignettes)
-	if vignettes then
-		for _,vignetteGUID in ipairs(vignettes) do
-			AddVignette(vignetteGUID);
-		end
-	end
-end
--- Given a Key and Id, will return the indicator (asset name) if this Object should show one based on it being a currently active/visible Vignette
-app.GetVignetteIndicator = function(t)
-	local key, id = t.key;
-	if key then
-		id = t[key];
-		local vignetteType = app.CurrentVignettes[key];
-		return vignetteType and id and vignetteType[id] and "Category_Secrets";
 	end
 end
 app.events.VIGNETTE_MINIMAP_UPDATED = function(vignetteGUID, onMinimap)
@@ -21832,10 +21832,15 @@ app.events.VIGNETTE_MINIMAP_UPDATED = function(vignetteGUID, onMinimap)
 	end
 	-- app.UpdateWindows(); -- maybe just a refresh?
 end
-app.events.VIGNETTES_UPDATED = function(...)
+app.events.VIGNETTES_UPDATED = function()
+	-- clear current vignettes as they will now be re-populated
+	wipe(app.CurrentVignettes["objectID"]);
+	wipe(app.CurrentVignettes["npcID"]);
 	local vignettes = C_VignetteInfo_GetVignettes();
 	if vignettes then
-		CheckVignettes(vignettes);
+		for _,vignetteGUID in ipairs(vignettes) do
+			AddVignette(vignetteGUID);
+		end
 	end
 end
 end)();
