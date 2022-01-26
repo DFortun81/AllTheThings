@@ -579,7 +579,9 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 35, 64.8, ZERETH_MORTIS },
 				["isWeekly"] = true,
 				["g"] = {
-					i(190610),	-- Tribute of the Enlightened Elders
+					i(190610, {	-- Tribute of the Enlightened Elders
+						i(189462),	-- Schematic: Bronze Helicid
+					}),
 				},
 			}),
 			q(65748, {	-- You Supply The Effort
@@ -865,7 +867,7 @@ root("Zones", m(SHADOWLANDS, {
 				["provider"] = { "i", 187792 },	-- Kismetric Disc
 				["g"] = {
 					i(190062, {	-- Wicked Pocopoc
-						--["questID"] = ,
+						["questID"] = 65530,
 						["g"] = {
 							crit(7, {	-- Wicked Pocopoc
 								["achievementID"] = 15508,	-- Fashion of the First Ones

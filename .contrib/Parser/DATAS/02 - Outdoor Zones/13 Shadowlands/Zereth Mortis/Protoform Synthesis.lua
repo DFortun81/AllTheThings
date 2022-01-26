@@ -99,10 +99,20 @@ root("Zones", m(SHADOWLANDS, {
 				}),
 				-- Schematics
 				-- Pets
+				q(65327, {	-- Schematic Reassimilation: Ambystan Darter
+					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
+					["provider"] = { "i", 189418 },	-- Schematic: Ambystan Darter
+					["coord"] = { 78.1, 53.1, ZERETH_MORTIS },
+				}),
 				q(65332, {	-- Schematic Reassimilation: Fierce Scarabid
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189434 },	-- Schematic: Fierce Scarabid
 					["coord"] = { 61.2, 42.6, ZERETH_MORTIS },
+				}),
+				q(65357, {	-- Schematic Reassimilation: Leaping Leporid
+					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
+					["provider"] = { "i", 189444 },	-- Schematic: Leaping Leporid
+					["coord"] = { 58.3, 74.3, ZERETH_MORTIS },
 				}),
 				q(65333, {	-- Schematic Reassimilation: Multichicken
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
@@ -118,6 +128,10 @@ root("Zones", m(SHADOWLANDS, {
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189442 },	-- Schematic: Prototickles
 					["coord"] = { 52.3, 75.4, ZERETH_MORTIS },
+				}),
+				q(65351, {	-- Schematic Reassimilation: Resonant Echo
+					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
+					["provider"] = { "i", 189441 },	-- Schematic: Resonant Echo
 				}),
 				q(65359, {	-- Schematic Reassimilation: Shelly
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
@@ -140,24 +154,9 @@ root("Zones", m(SHADOWLANDS, {
 					["coord"] = { 58.9, 77, ZERETH_MORTIS },
 				}),
 				--[[ Not Found Yet
-				q(65327, {	-- Schematic Reassimilation: Ambystan Darter
-					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
-					["provider"] = { "i", 189418 },	-- Schematic: Ambystan Darter
-					["coord"] = { , , ZERETH_MORTIS },
-				}),
-				q(65357, {	-- Schematic Reassimilation: Leaping Leporid
-					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
-					["provider"] = { "i", 189444 },	-- Schematic: Leaping Leporid
-					["coord"] = { , , ZERETH_MORTIS },
-				}),
 				q(65358, {	-- Schematic Reassimilation: Microlicid
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189445 },	-- Schematic: Microlicid
-					["coord"] = { , , ZERETH_MORTIS },
-				}),
-				q(65351, {	-- Schematic Reassimilation: Resonant Echo
-					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
-					["provider"] = { "i", 189441 },	-- Schematic: Resonant Echo
 					["coord"] = { , , ZERETH_MORTIS },
 				}),
 				q(65336, {	-- Schematic Reassimilation: Stabilized Geomental
@@ -176,6 +175,10 @@ root("Zones", m(SHADOWLANDS, {
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189478 },	-- Schematic: Adorned Vombata
 					["coord"] = { 37.2, 78.2, ZERETH_MORTIS },
+				}),
+				q(65385, {	-- Schematic Reassimilation: Bronze Helicid
+					["sourceQuests"] = { 65427 },	-- A New Architect
+					["provider"] = { "i", 189462 },	-- Schematic: Bronze Helicid
 				}),
 				q(65396, {	-- Schematic Reassimilation: Bronzewing Vespoid
 					["sourceQuests"] = { 65427 },	-- A New Architect
@@ -241,11 +244,6 @@ root("Zones", m(SHADOWLANDS, {
 					["coord"] = { 50.3, 27.1, ZERETH_MORTIS },
 				}),
 				--[[ Not Found Yet
-				q(65385, {	-- Schematic Reassimilation: Bronze Helicid
-					["sourceQuests"] = { 65427 },	-- A New Architect
-					["provider"] = { "i", 189462 },	-- Schematic: Bronze Helicid
-					["coord"] = { , , ZERETH_MORTIS },
-				}),
 				q(65399, {	-- Schematic Reassimilation: Curious Crystalsniffer
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189476 },	-- Schematic: Curious Crystalsniffer
@@ -271,7 +269,7 @@ root("Zones", m(SHADOWLANDS, {
 					["provider"] = { "i", 189459 },	-- Schematic: Mawdapted Raptora
 					["coord"] = { , , ZERETH_MORTIS },
 				}),
-				q(65392, {	-- Schematic Reassimilation: Patient Bufonid
+				q(65392, {	-- Schematic Reassimilation: Patient Bufonid (Probably from new Quest)
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189470 },	-- Schematic: Patient Bufonid
 					["coord"] = { , , ZERETH_MORTIS },
@@ -353,6 +351,7 @@ root("Zones", m(SHADOWLANDS, {
 					["coord"] = { 58.3, 74.3, ZERETH_MORTIS },
 					["g"] = {
 						i(189440),	-- Schematic: Omnipotential Core
+						i(189444),	-- Schematic: Leaping Leporid
 					},
 				}),
 				o(375498, {	-- Protoform Schematic
@@ -362,13 +361,13 @@ root("Zones", m(SHADOWLANDS, {
 						i(189442),	-- Schematic: Prototickles
 					},
 				}),
-				--o(375498, {	-- Protoform Schematic
-				--	["description"] = "This chest only spawn during WQ Frog'it(65089).",
-				--	["coord"] = { 67, 69.4, ZERETH_MORTIS },
-				--	["g"] = {
-				--		i(189469),	-- Schematic: Prototype Leaper
-				--	},
-				--}),
+				o(375903, {	-- Protoform Schematic
+					["description"] = "This chest only spawn during WQ Frog'it(65089).",
+					["coord"] = { 67, 69.4, ZERETH_MORTIS },
+					["g"] = {
+						i(189469),	-- Schematic: Prototype Leaper
+					},
+				}),
 				o(375371, {	-- Protoform Schematic
 					["description"] = "Inside the building.",
 					["coord"] = { 67.4, 40.2, ZERETH_MORTIS },
@@ -417,6 +416,13 @@ root("Zones", m(SHADOWLANDS, {
 						i(189472),	-- Schematic: Vespoid Flutterer
 					},
 				}),
+				o(375479, {	-- Protoform Schematic
+					["description"] = "Underwater left to Ancient Bufonid",
+					["coord"] = { 78.1, 53.1, ZERETH_MORTIS },
+					["g"] = {
+						i(189472),	-- Schematic: Vespoid Flutterer
+					},
+				}),
 				o(375915, {	-- Glimmer of Serenity
 					["description"] = "Multiple spawn places.",
 					["coords"] = {
@@ -429,6 +435,7 @@ root("Zones", m(SHADOWLANDS, {
 						{ 43, 35.5, ZERETH_MORTIS },
 						{ 60.4, 25.3, ZERETH_MORTIS },
 						{ 52.9, 80.7, ZERETH_MORTIS },
+						{ 50.2, 32.2, ZERETH_MORTIS },
 					},
 					["g"] = {
 						i(189168),	-- Glimmer of Serenity
@@ -438,9 +445,12 @@ root("Zones", m(SHADOWLANDS, {
 					["description"] = "Multiple spawn places?",
 					["coords"] = {
 						{ 77.5, 59, ZERETH_MORTIS },
+						{ 77.4, 45.4, ZERETH_MORTIS },
+						{ 77.6, 60.4, ZERETH_MORTIS },
 					},
 					["g"] = {
 						i(189172),	-- Crystallized Echo of the First Song
+						i(189441),	-- Schematic: Resonant Echo
 					},
 				}),
 			}),

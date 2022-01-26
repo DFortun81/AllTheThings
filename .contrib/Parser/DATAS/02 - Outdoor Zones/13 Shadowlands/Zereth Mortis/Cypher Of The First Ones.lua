@@ -613,6 +613,12 @@ root("Zones", m(SHADOWLANDS, {
 					},
 					["questID"] = 65315,
 				}),
+				--o(373471, {	-- Mezzonic Cache
+				--	["coords"] = {
+				--		{ 55.7, 50, ZERETH_MORTIS },
+				--	},
+				--	["questID"] = 65091, Another HQT but same as above..
+				--}),
 				o(370494, {	-- Toccatian Cache
 					["coords"] = {
 						{ 46.8, 67, ZERETH_MORTIS },

@@ -4,6 +4,23 @@ profession(BLACKSMITHING, {
 			["categoryID"] = 1311,	-- Shadowlands Plans
 			["g"] = {
 				{
+					["categoryID"] = 1318,	-- Optional Reagents
+					["g"] = {
+						{
+							["recipeID"] = 359665,	-- Crafter's Mark IV
+							["name"] = "Crafter's Mark IV",
+						},
+						{
+							["recipeID"] = 359671,	-- Crafter's Mark of the First Ones
+							["name"] = "Crafter's Mark of the First Ones",
+						},
+						{
+							["recipeID"] = 359700,	-- Vestige of the Eternal
+							["name"] = "Vestige of the Eternal",
+						},
+					},
+				},
+				{
 					-- All Quest Recipes marked unobtainable(training) because they are only learned temporarily
 					-- for world quests then disappear from the spellbook after the quest is completed.
 					["categoryID"] = 1522,	-- Quest Recipes

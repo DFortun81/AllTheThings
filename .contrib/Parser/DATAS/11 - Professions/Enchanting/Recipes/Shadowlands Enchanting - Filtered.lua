@@ -13,6 +13,19 @@ profession(ENCHANTING, {
 					},
 				},
 				{
+					["categoryID"] = 1369,	-- Optional Reagents
+					["g"] = {
+						{
+							["recipeID"] = 360013,	-- Cosmic Protoweave
+							["name"] = "Cosmic Protoweave",
+						},
+						{
+							["recipeID"] = 360007,	-- Magically Regulated Automa Core
+							["name"] = "Magically Regulated Automa Core",
+						},
+					},
+				},
+				{
 					-- All Quest Recipes marked unobtainable(training) because they are only learned temporarily
 					-- for world quests then disappear from the spellbook after the quest is completed.
 					["categoryID"] = 1527,	-- Quest Recipes

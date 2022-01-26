@@ -51,6 +51,10 @@ root("Instances", tier(SL_TIER, {
 				i(188957),	-- Genesis Mote
 				i(189157),	-- Glimmer of Animation
 				i(189176),	-- Protoform Sentience Crown
+				i(187806, {	-- Vantus Rune Technique: Sepulcher of the First Ones (RECIPE!)
+					["recipeID"] = 359890,	-- Vantus Rune: Sepulcher of the First Ones
+					["requireSkill"] = INSCRIPTION,
+				}),
 			}),
 			d(17, {	-- LFR
 				n(ZONE_DROPS, {

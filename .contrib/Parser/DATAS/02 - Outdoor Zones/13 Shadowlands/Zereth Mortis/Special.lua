@@ -11,6 +11,13 @@ root("Zones", m(SHADOWLANDS, {
 					i(189990),	-- Bee Soul
 				},
 			}),
+			n(185452, {	-- Lost Soul
+				["description"] = "On top of an Orb.",
+				["coord"] = { 37, 34.2, ZERETH_MORTIS },
+				["g"] = {
+					i(189988),	-- Sheep Soul
+				},
+			}),
 			n(185279, {	-- Lost Soul
 				["description"] = "On top of an Orb.",
 				["coord"] = { 34.4, 71.3, ZERETH_MORTIS },

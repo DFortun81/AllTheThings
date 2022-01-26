@@ -27,6 +27,14 @@ root("Zones", m(SHADOWLANDS, {
 					i(190003),	-- Skyward Savior's Talon
 					i(190731),	-- Deceiver's Illusionary Signet
 					i(190729),	-- Vigorous Sentinel's Seal
+					i(187837, {	-- Schematic: Erratic Genesis Matrix (RECIPE!)
+						["recipeID"] = 360126,	-- Erratic Genesis Matrix
+						["requireSkill"] = ENGINEERING,
+					}),
+					i(187847, {	-- Design: Devourer Essence Stone (RECIPE!)
+						["recipeID"] = 360317,	-- Devourer Essence Stone
+						["requireSkill"] = JEWELCRAFTING,
+					}),
 				},
 			}),
 			n(179006, {	-- Akkaris <Annelid Prime>
@@ -102,6 +110,10 @@ root("Zones", m(SHADOWLANDS, {
 					i(189936),	-- Feasting's Feeding Cloak
 					i(189969),	-- Vespoid's Clanging Legguards
 					i(189970),	-- Visor of Visceral Cravings
+					i(187848, {	-- Recipe: Sustaining Armor Polish (RECIPE!)
+						["recipeID"] = 360318,
+						["requireSkill"] = ALCHEMY,
+					}),
 				},
 			}),
 			n(183646, {	-- Furidian
@@ -128,6 +140,7 @@ root("Zones", m(SHADOWLANDS, {
 					}),
 					i(189937),	-- Garudeon's Blanket of Feathers
 					i(189951),	-- Sunbathed Avian Armor
+					i(190602),	-- Symbol of the Raptora
 				},
 			}),
 			n(182318, {	-- General Zarathura <Army of the Endless>
@@ -334,6 +347,7 @@ root("Zones", m(SHADOWLANDS, {
 					i(189908),	-- Gorger's Leggings of Famine
 					i(189916),	-- Mutated Devourer's Harness
 					i(189941),	-- Voracious Diadem
+					i(189972),	-- Scorpid Soul (SOUL!)
 				},
 			}),
 			n(183722, {	-- Sorranos <Vombata Prime>
@@ -346,6 +360,10 @@ root("Zones", m(SHADOWLANDS, {
 					i(189944),	-- Immovable Stance of the Vombata
 					i(189962),	-- Sorrano's Gleaming Pauldrons
 					i(189911),	-- Sublime Fur Mantle
+					i(187826, {	-- Formula: Cosmic Protoweave (RECIPE!)
+						["recipeID"] = 187826,	-- Cosmic Protoweave
+						["requireSkill"] = ENCHANTING,
+					}),
 				},
 			}),
 			n(183925, {	-- Tahkwitz
@@ -358,6 +376,10 @@ root("Zones", m(SHADOWLANDS, {
 					}),
 					i(189915),	-- Tahkwitz' Cloth Ribbon
 					i(189933),	-- Vigilant Raptora's Crest
+					i(187832, {	-- Schematic: Pure-Air Sail Extensions (RECIPE!)
+						["recipeID"] = 187832,
+						["requireSkill"] = ENGINEERING,
+					}),
 				},
 			}),
 			n(181249, {	-- Tethos
@@ -371,6 +393,10 @@ root("Zones", m(SHADOWLANDS, {
 					i(190055),	-- Coalescing Energy Implement
 					i(189967),	-- Hood of Star Topology
 					i(189966),	-- Singing Metal Wristbands
+					i(187830, {	-- Design: Aealic Harmonizing Stone (RECIPE!)
+						["recipeID"] = 360016,	-- Aealic Harmonizing Stone
+						["requireSkill"] = JEWELCRAFTING,
+					}),
 				},
 			}),
 			n(183516, {	-- The Engulfer
@@ -429,6 +455,10 @@ root("Zones", m(SHADOWLANDS, {
 					}),
 					i(190052),	-- Xy'rath's Letter Opener
 					i(190007),	-- Xy'rath's Signature Saber
+					i(187828, {	-- Recipe: Infusion: Corpse Purification (RECIPE!)
+						["recipeID"] = 360014,
+						["requireSkill"] = ALCHEMY,
+					}),
 				},
 			}),
 			n(183764, {	-- Zatojin <Vespoid Prime>

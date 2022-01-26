@@ -226,6 +226,12 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 			q(65515, {	-- Pig Soul
 				["provider"] = { "i", 189987 },	-- Pig Soul
 			}),
+			q(65505, {	-- Scorpid Soul
+				["provider"] = { "i", 189972 },	-- Scorpid Soul
+			}),
+			q(65516, {	-- Sheep Soul
+				["provider"] = { "i", 189988 },	-- Sheep Soul
+			}),
 			q(65508, {	-- Tallstrider Soul
 				["provider"] = { "i", 189976 },	-- Tallstrider Soul
 			}),
@@ -238,12 +244,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 			}),
 			q(65506, {	-- Ray Soul
 				["provider"] = { "i", 189973 },	-- Ray Soul
-			}),
-			q(65505, {	-- Scorpid Soul
-				["provider"] = { "i", 189972 },	-- Scorpid Soul
-			}),
-			q(65516, {	-- Sheep Soul
-				["provider"] = { "i", 189988 },	-- Sheep Soul
 			}),
 			q(65512, {	-- Silithid Soul
 				["provider"] = { "i", 189982 },	-- Silithid Soul

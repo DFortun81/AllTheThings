@@ -234,13 +234,13 @@ root("Zones", m(SHADOWLANDS, {
 						["questID"] = 65282,
 						["cost"] = { { "c", CYPHER, 150 }, },
 					}),
-					i(189980, {	-- Brutosaur Soul
+					i(189980, {	-- Brutosaur Soul (SOUL!)
 						["cost"] = { { "c", CYPHER, 1000 }, },
 					}),
-					i(189986, {	-- Armadillo Soul
+					i(189986, {	-- Armadillo Soul (SOUL!)
 						["cost"] = { { "c", CYPHER, 500 }, },
 					}),
-					i(189973, {	-- Ray Soul
+					i(189973, {	-- Ray Soul (SOUL!)
 						["cost"] = { { "c", CYPHER, 1000 }, },
 						["u"] = NEVER_IMPLEMENTED,
 					}),
@@ -249,6 +249,16 @@ root("Zones", m(SHADOWLANDS, {
 					}),
 					i(187781, {	-- Olea Cache
 						["cost"] = { { "c", CYPHER, 700 }, },
+					}),
+					i(187824, {	-- Formula: Magically Regulated Automa Core (RECIPE!)
+						["recipeID"] = 360007,	-- Magically Regulated Automa Core
+						["requireSkill"] = ENCHANTING,
+						["cost"] = { { "c", CYPHER, 25 }, },
+					}),
+					i(187804, {	-- Recipe: Empty Kettle of Stone Soup (RECIPE!)
+						["recipeID"] = 359333,	-- Empty Kettle of Stone Soup
+						["requireSkill"] = COOKING,
+						["cost"] = { { "c", CYPHER, 25 }, },
 					}),
 				},
 			}),
@@ -263,6 +273,68 @@ root("Zones", m(SHADOWLANDS, {
 					i(190644),	-- Vessel of Profound Possibilities
 					i(187640),	-- Anointed Protostag (MOUNT!)
 					i(187629),	-- Heartlight Vombata (MOUNT!)
+					i(187750, {	-- Recipe: Crafter's Mark IV (RECIPE!)
+						recipe(359666, {	-- Crafter's Mark IV
+							["requireSkill"] = ALCHEMY,
+						}),
+						recipe(359665, {	-- Crafter's Mark IV
+							["requireSkill"] = BLACKSMITHING,
+						}),
+						recipe(359664, {	-- Crafter's Mark IV
+							["requireSkill"] = ENGINEERING,
+						}),
+						recipe(359663, {	-- Crafter's Mark IV
+							["requireSkill"] = JEWELCRAFTING,
+						}),
+						recipe(359662, {	-- Crafter's Mark IV
+							["requireSkill"] = LEATHERWORKING,
+						}),
+						recipe(359661, {	-- Crafter's Mark IV
+							["requireSkill"] = TAILORING,
+						}),
+					}),
+					i(187749, {	-- Recipe: Crafter's Mark of the First Ones (RECIPE!)
+						recipe(359673, {	-- Crafter's Mark of the First Ones
+							["requireSkill"] = ALCHEMY,
+						}),
+						recipe(359671, {	-- Crafter's Mark of the First Ones
+							["requireSkill"] = BLACKSMITHING,
+						}),
+						recipe(359674, {	-- Crafter's Mark of the First Ones
+							["requireSkill"] = ENGINEERING,
+						}),
+						recipe(359672, {	-- Crafter's Mark of the First Ones
+							["requireSkill"] = JEWELCRAFTING,
+						}),
+						recipe(359669, {	-- Crafter's Mark of the First Ones
+							["requireSkill"] = LEATHERWORKING,
+						}),
+						recipe(359670, {	-- Crafter's Mark of the First Ones
+							["requireSkill"] = TAILORING,
+						}),
+					}),
+					i(187785, {	-- Tome of the Eternal (RECIPE!)
+						recipe(359700, {	-- Vestige of the Eternal
+							["requireSkill"] = BLACKSMITHING,
+						}),
+						recipe(359701, {	-- Vestige of the Eternal
+							["requireSkill"] = JEWELCRAFTING,
+						}),
+						recipe(359702, {	-- Vestige of the Eternal
+							["requireSkill"] = LEATHERWORKING,
+						}),
+						recipe(359703, {	-- Vestige of the Eternal
+							["requireSkill"] = TAILORING,
+						}),
+					}),
+					i(187797, {	-- Technique: Contract: The Enlightened (RECIPE!)
+						["recipeID"] = 359786,	-- Contract: Enlightened Brokers
+						["requireSkill"] = INSCRIPTION,
+					}),
+					i(190379, {	-- Technique: Glyph of the Spectral Lupine (RECIPE!)
+						["recipeID"] = 367389,	-- Glyph of the Spectral Lupine
+						["requireSkill"] = INSCRIPTION,
+					}),
 					-- Memories
 					i(190584),	-- Memory of Unity (DK)
 					i(190587),	-- Memory of Unity (DH)
@@ -450,7 +522,6 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(190374),	-- Gemstone of Prismatic Brilliance
 			i(190390),	-- Protector's Diffusion Implement
 			i(190597),	-- Symbol of the Lupine
-			i(190602),	-- Symbol of the Raptora
 			i(190582),	-- Symbol of the Vombata
 			i(190726),	-- Extract of Prodigious Sands
 			--??

@@ -126,6 +126,7 @@ root("Zones", m(SHADOWLANDS, {
 					crit(5, {	-- Forgotten Proto-Vault
 						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
 					}),
+					i(189469),	-- Schematic: Prototype Leaper
 				},
 			}),
 			o(375369, {	-- Gnawed Valise
@@ -363,6 +364,7 @@ root("Zones", m(SHADOWLANDS, {
 						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
 					}),
 					i(189863),	-- Spatial Opener
+					i(190926),	-- Infested Automa Core
 				},
 			}),
 			-- Sands

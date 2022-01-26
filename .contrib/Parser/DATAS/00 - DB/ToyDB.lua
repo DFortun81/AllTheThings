@@ -797,6 +797,7 @@ i(187959);	-- PH - Banner of the Opportune
 -----------------
 i(190237);	-- Broker Translocation Matrix
 i(188952);	-- Dominated Hearthstone
+i(190926);	-- Infested Automa Core
 i(190333);	-- Jiro Circle of Song
 i(187860);	-- Mortis Mover
 i(187793);	-- Personal Containment Trap
@@ -808,6 +809,5 @@ i(190238);	-- Xy'rath's Booby-Trapped Cache
 i(190853);	-- Bushel of Mysterious Fruit
 i(190196);	-- Enlightened Hearthstone
 i(190754);	-- Firim's Specimen Container
-i(190926);	-- Infested Automa Core
 i(190734);	-- Makaris's Satchel of Mines
 end)();

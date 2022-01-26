@@ -4,6 +4,27 @@ profession(ENGINEERING, {
 			["categoryID"] = 1381,	-- Shadowlands Engineering
 			["g"] = {
 				{
+					["categoryID"] = 1386,	-- Optional Reagents
+					["g"] = {
+						{
+							["recipeID"] = 359664,	-- Crafter's Mark IV
+							["name"] = "Crafter's Mark IV",
+						},
+						{
+							["recipeID"] = 359674,	-- Crafter's Mark of the First Ones
+							["name"] = "Crafter's Mark of the First Ones",
+						},
+						{
+							["recipeID"] = 360126,	-- Erratic Genesis Matrix
+							["name"] = "Erratic Genesis Matrix",
+						},
+						{
+							["recipeID"] = 360088,	-- Pure-Air Sail Extensions
+							["name"] = "Pure-Air Sail Extensions",
+						},
+					},
+				},
+				{
 					-- All Quest Recipes marked unobtainable(training) because they are only learned temporarily
 					-- for world quests then disappear from the spellbook after the quest is completed.
 					["categoryID"] = 1528,	-- Quest Recipes

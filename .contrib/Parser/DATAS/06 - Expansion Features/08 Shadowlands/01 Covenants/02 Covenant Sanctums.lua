@@ -198,6 +198,10 @@ _.ExpansionFeatures =
 							}),
 							i(187880),	-- Goat Soul
 							i(187862),	-- Snake Soul
+							i(190381, {	-- Technique: Glyph of the Spectral Vulpine (RECIPE!)
+								["recipeID"] = 367393,
+								["requireSkill"] = INSCRIPTION,
+							}),
 						},
 					}),
 					i(181556, {	-- Tribute of the Court / Revendreth
@@ -248,6 +252,10 @@ _.ExpansionFeatures =
 							}),
 							i(187880),	-- Goat Soul
 							i(187862),	-- Snake Soul
+							i(190381, {	-- Technique: Glyph of the Spectral Vulpine (RECIPE!)
+								["recipeID"] = 367393,
+								["requireSkill"] = INSCRIPTION,
+							}),
 						},
 					}),
 					i(181557, {	-- Favor of the Court / Revendreth
