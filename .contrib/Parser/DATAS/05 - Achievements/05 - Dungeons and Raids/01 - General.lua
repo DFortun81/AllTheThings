@@ -574,7 +574,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(16),		-- Just Can't Get Enough (25 player)
 		}),
 		ach(15491, {	-- Glory of the Sepulcher Raider
-			-- PH
+			i(187675),	-- Shimmering Aurelid
 			ach(15381),	-- Power ON
 			ach(15401),	-- Wisdom Comes From the Desert
 			ach(15398),	-- Xy Never, Ever Marks the Spot.

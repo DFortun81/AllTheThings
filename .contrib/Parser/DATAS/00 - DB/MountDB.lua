@@ -1115,6 +1115,7 @@ i(187660, 342678);	-- Vespoid Flutterer
 
 -- Achievements
 i(187673, 359381);	-- Cryptic Aurelid
+i(187675, 359379);	-- Shimmering Aurelid
 
 -- Raid
 i(190771, 359545);	-- Carcinized Zerethsteed
@@ -1133,15 +1134,19 @@ i(187676, 342680);	-- Deepstar Aurelid
 i(190765, 368105);	-- Colossal Plaguespew Mawrat
 i(190766, 368128);	-- Colossal Wraithbound Mawrat
 
--- NOT SOURCED PROPERLY --
-	-- Torghast -- They keep changing rewards
+-- Vendor
+i(187640, 359276);	-- Anointed Protostag
+i(187629, 359229);	-- Heartlight Vombata
+
+-- Torghast -- They keep changing rewards
 i(188736, 363297);	-- Colossal Soulshredder Mawrat
 i(188700, 363178);	-- Colossal Umbrahide Mawrat
 i(188696, 363136);	-- Colossal Ebonclaw Mawrat
-i(187640, 359276);	-- Anointed Protostag
-i(187629, 359229);	-- Heartlight Vombata
--- Holy Lightstrider(spellID 356802)
-	-- PvP They havent said anything About these mounts yet
+
+-- Put Holy Talbuk as LIGHTFORGED DRAENEI Paladin.
+
+-- NOT SOURCED PROPERLY --
+-- PvP They havent said anything About these mounts yet
 i(187644, 349824);	-- Vicious Warstalker (A)
 i(187642, 349823);	-- Vicious Warstalker (H)
 end)();

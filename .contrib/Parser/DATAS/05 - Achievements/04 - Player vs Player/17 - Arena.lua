@@ -66,5 +66,24 @@ root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 			crit(5),	-- Blade's Edge Arena
 			crit(6),	-- Nagrand Arena
 		}),
+		-- PTR
+		ach(15540, {	-- Steadfast Soloist
+			ach(15511),	-- Solely Motivated
+			ach(15539),	-- Solo Aspirations
+		}),
+		ach(15544, {	-- Supreme Soloist
+			title(456),	-- Soloist <Name>
+			ach(15543),	-- Successful Solos
+			ach(15541),	-- Sole Survivor
+		}),
 	}),
 })));
+
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	tier(SL_TIER, {
+		n(ACHIEVEMENTS, {
+			ach(15517),	-- Solo Shuffle rounds participated in
+			ach(15516),	-- Solo Shuffle rounds won
+		}),
+	}),
+}));

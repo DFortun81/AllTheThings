@@ -432,6 +432,15 @@ root("Zones", m(SHADOWLANDS, {
 						i(189168),	-- Glimmer of Serenity
 					},
 				}),
+				o(375974, {	-- Crystallized Echo of the First Song
+					["description"] = "Multiple spawn places?",
+					["coords"] = {
+						{ 77.5, 59, ZERETH_MORTIS },
+					},
+					["g"] = {
+						i(189172),	-- Crystallized Echo of the First Song
+					},
+				}),
 			}),
 			filter(RECIPES, {
 				filter(BATTLE_PETS, {

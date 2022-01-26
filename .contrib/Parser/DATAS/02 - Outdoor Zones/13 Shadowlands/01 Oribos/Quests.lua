@@ -1091,7 +1091,18 @@ _.Zones =
 				q(65625, {
 					["provider"] = { "n", 185576 },	-- Ve'nyo
 					["coord"] = { 55.7, 49.3, ORIBOS },
-				})
+				}),
+				q(65649, {	-- A New Deal
+					["provider"] = { "n", 168011 },	-- Zo'sorg
+					["coord"] = { 35.6, 57.5, ORIBOS },
+					["g"] = {
+						i(188778),	-- Cosmic Gladiator's Devouring Malediction
+						i(188691),	-- Cosmic Gladiator's Echoing Resolve
+						i(188775),	-- Cosmic Gladiator's Eternal Aegis
+						i(188524),	-- Cosmic Gladiator's Fastidious Resolve
+						i(188766),	-- Cosmic Gladiator's Resonator
+					},
+				}),
 			}),
 		}),
 	}),

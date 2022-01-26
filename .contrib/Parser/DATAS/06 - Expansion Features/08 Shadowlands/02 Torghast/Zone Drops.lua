@@ -241,6 +241,10 @@ _.ExpansionFeatures =
 						155251,	-- Elder Longbranch
 					},
 				}),
+				-- PTR
+				i(188700, {	-- Colossal Umbrahide Mawrat (MOUNT!)
+					["description"] = "Only from Layer 13 or higher",
+				}),
 			}),
 		}),
 	}),

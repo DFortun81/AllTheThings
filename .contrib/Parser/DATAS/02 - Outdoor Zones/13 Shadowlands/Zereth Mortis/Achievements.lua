@@ -4,7 +4,9 @@
 root("Zones", m(SHADOWLANDS, {
 	m(ZERETH_MORTIS, {
 		n(ACHIEVEMENTS, {
-			ach(15391),	-- Adventurer of Zereth Mortis
+			ach(15391, {	-- Adventurer of Zereth Mortis
+				ach(15512),	-- Adventures in Zereth Mortis
+			}),
 			ach(15404),	-- Cosmic Empowerment
 			ach(15392),	-- Dune Dominance
 			ach(15224, {	-- Explore Zereth Mortis
@@ -29,9 +31,23 @@ root("Zones", m(SHADOWLANDS, {
 			ach(15336, {	-- From A to Zereth
 				i(187673),	-- Cryptic Aurelid (MOUNT!)
 			}),
+			ach(15515),	-- Path to Enlightenment
 			ach(15502),	-- Sand, Sand Everywhere!
-			ach(15259),	-- Secrets of the First Ones
-			ach(15331),	-- Treasures of Zereth Mortis
+			ach(15259, {	-- Secrets of the First Ones
+				ach(15518),	-- A Means to an End
+			}),
+			ach(15331, {	-- Treasures of Zereth Mortis
+				ach(15513),	-- Curious Collections
+			}),
+			ach(15514, {	-- Unlocking the Secrets
+				spell(366736),	-- Zereth Mortis Flying
+				crit(1),	-- Explore Zereth Mortis
+				crit(2),	-- Tales of the Exile
+				crit(3),	-- Curious Collections
+				crit(4),	-- Adventures in Zereth Mortis
+				crit(5),	-- Path to Enlightenment
+				crit(6),	-- A Means to an End
+			}),
 		}),
 	}),
 }));
@@ -41,6 +57,8 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		n(ACHIEVEMENTS, {
 			ach(15307),	-- 9.2 Campaign - Quest Launch [DNT]
 			ach(15345),	-- <Hidden> 9.2 Content Skip Unlock [DNT]
+			ach(15519),	-- <Hidden> 9.2 Flying Unlock [DNT]
+			ach(15510),	-- 9.2 Tracking - Protoform Synthesis - Mount Crafting Unlocked [DNT]
 		})
 	})
 }));

@@ -261,6 +261,8 @@ root("Zones", m(SHADOWLANDS, {
 					i(190384),	-- Eternal Augment Rune
 					i(190640),	-- Font of Ephemeral Power
 					i(190644),	-- Vessel of Profound Possibilities
+					i(187640),	-- Anointed Protostag (MOUNT!)
+					i(187629),	-- Heartlight Vombata (MOUNT!)
 					-- Memories
 					i(190584),	-- Memory of Unity (DK)
 					i(190587),	-- Memory of Unity (DH)
@@ -323,8 +325,15 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(190281),	-- Enlightened Researcher's Wraps
 				i(190249),	-- Enlightened Researcher's Wristbands
 				--
+				i(190981),	-- Broker's Oracular Mantle
+				i(190979),	-- Crystallic Oracular Smock
 				i(190751),	-- Dimensional Oracular Wrists
+				i(190980),	-- Empathic Oracular Mantle
+				i(190978),	-- Nova Oracular Smock
 				i(190752),	-- Recreative Oracular Wrists
+				i(190977),	-- Scouring Oracular Smock
+				i(190982),	-- Synchronous Oracular Mantle
+				i(190753),	-- Temporal Oracular Wrists
 			}),
 			filter(LEATHER, {
 				i(188068),	-- Staccato Bands
@@ -353,8 +362,15 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(190286),	-- Unbound Explorer's Trousers
 				i(190287),	-- Unbound Explorer's Waistwrap
 				--
+				i(190987),	-- Broker's Cryptic Shoulderpads
+				i(190985),	-- Crystallic Cryptic Mask
 				i(190748),	-- Dimensional Cryptic Grips
+				i(190986),	-- Empathic Cryptic Shoulderpads
+				i(190984),	-- Nova Cryptic Mask
 				i(190750),	-- Recreative Cryptic Grips
+				i(190983),	-- Scouring Cryptic Mask
+				i(190988),	-- Synchronous Cryptic Shoulderpads
+				i(190749),	-- Temporal Cryptic Grips
 			}),
 			filter(MAIL, {
 				i(188074),	-- Anthemic Boots
@@ -383,8 +399,15 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(190262),	-- Transcendent Vagabond's Waistguard
 				i(190296),	-- Transcendent Vagabond's Wristguards
 				--
+				i(190993),	-- Broker's Enigmatic Cowl
+				i(190991),	-- Crystallic Enigmatic Epaulettes
 				i(190742),	-- Dimensional Enigmatic Footguards
+				i(190992),	-- Empathic Enigmatic Cowl
+				i(190990),	-- Nova Enigmatic Epaulettes
 				i(190743),	-- Recreative Enigmatic Footguards
+				i(190989),	-- Scouring Enigmatic Epaulettes
+				i(190994),	-- Synchronous Enigmatic Cowl
+				i(190744),	-- Temporal Enigmatic Footguards
 			}),
 			filter(PLATE, {
 				i(188082),	-- Harmonium Armor
@@ -413,8 +436,15 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(190264),	-- Eternal Warder's Visor
 				i(190304),	-- Eternal Warder's Wristplates
 				--
+				i(190999),	-- Broker's Numerus Breastplate
+				i(190997),	-- Crystallic Numerus Crown
 				i(190745),	-- Dimensional Numerus Handguards
+				i(190998),	-- Empathic Numerus Breastplate
+				i(190996),	-- Nova Numerus Crown
 				i(190746),	-- Recreative Numerus Handguards
+				i(190995),	-- Scouring Numerus Crown
+				i(191000),	-- Synchronous Numerus Breastplate
+				i(190747),	-- Temporal Numerus Handguards
 			}),
 			i(190389),	-- Broker's Lucky Coin
 			i(190374),	-- Gemstone of Prismatic Brilliance
@@ -436,10 +466,7 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(188108),	-- Cypher Attunement Waist
 			i(188113),	-- Cypher Attunement Wrist
 			--
-			i(190749),	-- Temporal Cryptic Grips
-			i(190744),	-- Temporal Enigmatic Footguards
-			i(190747),	-- Temporal Numerus Handguards
-			i(190753),	-- Temporal Oracular Wrists
+			i(190956),	-- Decanter of Untapped Potential
 		}),
 	}),
 }));

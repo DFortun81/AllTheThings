@@ -8,35 +8,49 @@ root("Instances", tier(SL_TIER, {
 		["coord"] = { 80.9, 53.4, ZERETH_MORTIS },
 		["order"] = "03",
 		["maps"] = {
-			2047,	-- Entrance
-			2048,	-- Cornerstone of Creation
-			2050,	-- Anduin
-			2061,	-- Devouring Pit
-			2049,	-- Keeper's Bastion
+			2047,	-- Immortal Hearth
+			2048,	-- Genesis Cradle
+			2049,	-- The Endless Foundry
+			2050,	-- Domination's Grasp
+			2051,	-- Heart of Eternity
+			2052,	-- The Grand Design
+			2061,	-- Ephemeral Plains
 		},
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(15417),	-- Sepulcher of the First Ones
 				ach(15478),	-- Heroic: Sepulcher of the First Ones
 				ach(15490),	-- Mythic: Sepulcher of the First Ones
+				ach(15491, {	-- Glory of the Sepulcher Raider
+					i(187675),	-- Shimmering Aurelid
+				}),
 				ach(15493),	-- Ephemeral Plains
 				ach(15492),	-- Cornerstone of Creation
 				ach(15416),	-- Domination's Grasp
 				ach(15418),	-- The Grand Design
 			}),
-			n(COMMON_BOSS_DROPS, {
-
-			}),
 			n(FLIGHT_PATHS, {
 				fp(2712, {	-- Immortal Hearth
+					["name"] = "Immortal Hearth",
 					["cr"] = 182431,	-- Ancient Translocator
 				}),
 				fp(2713, {	-- Genesis Cradle Alpha
+					["name"] = "Genesis Cradle Alpha",
 					["cr"] = 182472,	-- Ancient Translocator
 				}),
+				fp(2714, {	-- Genesis Cradle Beta
+					["name"] = "Genesis Cradle Beta",
+					["cr"] = 182489,	-- Ancient Translocator
+				}),
 				fp(2715, {	-- Ephemeral Plains Alpha
+					["name"] = "Ephemeral Plains Alpha",
 					["cr"] = 182522,	-- Ancient Translocator
 				}),
+			}),
+			n(ZONE_DROPS, {
+				i(188957),	-- Genesis Mote
+				i(189157),	-- Glimmer of Animation
+				i(189176),	-- Protoform Sentience Crown
 			}),
 			d(17, {	-- LFR
 				n(ZONE_DROPS, {
@@ -46,7 +60,10 @@ root("Instances", tier(SL_TIER, {
 					["collectible"] = false,
 					["g"] = {
 						e(2512, {	-- Vigilant Guardian
-							["crs"] = { 180773 },	-- Vigilant Guardian
+							["crs"] = {
+								180773,	-- Vigilant Guardian
+								184522,	-- Vigilant Custodian
+							},
 							["g"] = {
 								crit(1, {	-- Vigilant Guardian
 									["achievementID"] = 15417,	-- Sepulcher of the First Ones
@@ -78,7 +95,6 @@ root("Instances", tier(SL_TIER, {
 								i(189810),	-- Ephemera-Softened Exoskeleton
 								i(189814),	-- Gluttonous Gardbrace
 								i(189811),	-- Infinitely Collapsing Coil
-								i(189818),	-- Jaws of the In-Between
 								i(189815),	-- Lurking Predator's Camouflage
 								i(189813),	-- Mantle of the Broken Beast
 								i(189817),	-- Rift-Scarred Solcrusher
@@ -305,6 +321,7 @@ root("Instances", tier(SL_TIER, {
 								i(188254),	-- Grim Eclipse
 								i(189850),	-- Handguards of Hidden Realms
 								i(189849),	-- Interdimensional Manica
+								i(191001),	-- Observer's Umbral Shiv
 								i(189854),	-- Rygelon's Heraldric Ring
 								i(189848),	-- Treads of Titanic Curiosity
 								-- Tier
@@ -336,6 +353,7 @@ root("Instances", tier(SL_TIER, {
 								ach(15494),	-- Damnation Aviation
 								i(189855),	-- Bindings of the Banished One
 								i(188252),	-- Chains of Domination
+								i(189818),	-- Domination's Deliverance
 								i(189857),	-- Epochal Oppressor's Greaves
 								i(189860),	-- Forbidden Truth
 								i(189862),	-- Gavel of the First Arbiter
@@ -357,7 +375,10 @@ root("Instances", tier(SL_TIER, {
 
 				}),
 				e(2512, {	-- Vigilant Guardian
-					["crs"] = { 180773 },	-- Vigilant Guardian
+					["crs"] = {
+						180773,	-- Vigilant Guardian
+						184522,	-- Vigilant Custodian
+					},
 					["g"] = {
 						crit(1, {	-- Vigilant Guardian
 							["achievementID"] = 15417,	-- Sepulcher of the First Ones
@@ -389,7 +410,6 @@ root("Instances", tier(SL_TIER, {
 						i(189810),	-- Ephemera-Softened Exoskeleton
 						i(189814),	-- Gluttonous Gardbrace
 						i(189811),	-- Infinitely Collapsing Coil
-						i(189818),	-- Jaws of the In-Between
 						i(189815),	-- Lurking Predator's Camouflage
 						i(189813),	-- Mantle of the Broken Beast
 						i(189817),	-- Rift-Scarred Solcrusher
@@ -545,6 +565,7 @@ root("Instances", tier(SL_TIER, {
 						i(189839),	-- Soulwarped Seal of Wrynn
 						i(188262),	-- The Lion's Roar
 						i(189836),	-- Wrists of the Wicked Star
+						i(190967),	-- Mourne Fragment (QUEST!)
 						-- Tier
 						i(188868),	-- Visage of the First Eidolon
 						i(188892),	-- Mercurial Punisher's Hood
@@ -607,6 +628,7 @@ root("Instances", tier(SL_TIER, {
 						i(188254),	-- Grim Eclipse
 						i(189850),	-- Handguards of Hidden Realms
 						i(189849),	-- Interdimensional Manica
+						i(191001),	-- Observer's Umbral Shiv
 						i(189854),	-- Rygelon's Heraldric Ring
 						i(189848),	-- Treads of Titanic Curiosity
 						-- Tier
@@ -633,6 +655,7 @@ root("Instances", tier(SL_TIER, {
 						ach(15494),	-- Damnation Aviation
 						i(189855),	-- Bindings of the Banished One
 						i(188252),	-- Chains of Domination
+						i(189818),	-- Domination's Deliverance
 						i(189857),	-- Epochal Oppressor's Greaves
 						i(189860),	-- Forbidden Truth
 						i(189862),	-- Gavel of the First Arbiter
@@ -657,7 +680,10 @@ root("Instances", tier(SL_TIER, {
 
 				}),
 				e(2512, {	-- Vigilant Guardian
-					["crs"] = { 180773 },	-- Vigilant Guardian
+					["crs"] = {
+						180773,	-- Vigilant Guardian
+						184522,	-- Vigilant Custodian
+					},
 					["g"] = {
 						crit(1, {	-- Vigilant Guardian
 							["achievementID"] = 15478,	-- Heroic: Sepulcher of the First Ones
@@ -687,7 +713,6 @@ root("Instances", tier(SL_TIER, {
 						i(189810),	-- Ephemera-Softened Exoskeleton
 						i(189814),	-- Gluttonous Gardbrace
 						i(189811),	-- Infinitely Collapsing Coil
-						i(189818),	-- Jaws of the In-Between
 						i(189815),	-- Lurking Predator's Camouflage
 						i(189813),	-- Mantle of the Broken Beast
 						i(189817),	-- Rift-Scarred Solcrusher
@@ -836,6 +861,7 @@ root("Instances", tier(SL_TIER, {
 						i(189839),	-- Soulwarped Seal of Wrynn
 						i(188262),	-- The Lion's Roar
 						i(189836),	-- Wrists of the Wicked Star
+						i(190966),	-- Mourne Fragment (QUEST!)
 						-- Tier
 						i(188868),	-- Visage of the First Eidolon
 						i(188892),	-- Mercurial Punisher's Hood
@@ -896,6 +922,7 @@ root("Instances", tier(SL_TIER, {
 						i(188254),	-- Grim Eclipse
 						i(189850),	-- Handguards of Hidden Realms
 						i(189849),	-- Interdimensional Manica
+						i(191001),	-- Observer's Umbral Shiv
 						i(189854),	-- Rygelon's Heraldric Ring
 						i(189848),	-- Treads of Titanic Curiosity
 						-- Tier
@@ -922,6 +949,7 @@ root("Instances", tier(SL_TIER, {
 						ach(15470),	-- Ahead of the Curve: The Jailer
 						i(189855),	-- Bindings of the Banished One
 						i(188252),	-- Chains of Domination
+						i(189818),	-- Domination's Deliverance
 						i(189857),	-- Epochal Oppressor's Greaves
 						i(189860),	-- Forbidden Truth
 						i(189862),	-- Gavel of the First Arbiter
@@ -942,7 +970,10 @@ root("Instances", tier(SL_TIER, {
 
 				}),
 				e(2512, {	-- Vigilant Guardian
-					["crs"] = { 180773 },	-- Vigilant Guardian
+					["crs"] = {
+						180773,	-- Vigilant Guardian
+						184522,	-- Vigilant Custodian
+					},
 					["g"] = {
 						ach(15479),	-- Mythic: Vigilant Guardian
 						i(189771),	-- Ancient Materium Tassets
@@ -968,7 +999,6 @@ root("Instances", tier(SL_TIER, {
 						i(189810),	-- Ephemera-Softened Exoskeleton
 						i(189814),	-- Gluttonous Gardbrace
 						i(189811),	-- Infinitely Collapsing Coil
-						i(189818),	-- Jaws of the In-Between
 						i(189815),	-- Lurking Predator's Camouflage
 						i(189813),	-- Mantle of the Broken Beast
 						i(189817),	-- Rift-Scarred Solcrusher
@@ -1105,6 +1135,7 @@ root("Instances", tier(SL_TIER, {
 						i(189839),	-- Soulwarped Seal of Wrynn
 						i(188262),	-- The Lion's Roar
 						i(189836),	-- Wrists of the Wicked Star
+						i(190959),	-- Mourne Fragment (QUEST!)
 						-- Tier
 						i(188868),	-- Visage of the First Eidolon
 						i(188892),	-- Mercurial Punisher's Hood
@@ -1161,6 +1192,7 @@ root("Instances", tier(SL_TIER, {
 						i(188254),	-- Grim Eclipse
 						i(189850),	-- Handguards of Hidden Realms
 						i(189849),	-- Interdimensional Manica
+						i(191001),	-- Observer's Umbral Shiv
 						i(189854),	-- Rygelon's Heraldric Ring
 						i(189848),	-- Treads of Titanic Curiosity
 						-- Tier
@@ -1191,6 +1223,7 @@ root("Instances", tier(SL_TIER, {
 						ach(15471),	-- Cutting Edge: The Jailer
 						i(189855),	-- Bindings of the Banished One
 						i(188252),	-- Chains of Domination
+						i(189818),	-- Domination's Deliverance
 						i(189857),	-- Epochal Oppressor's Greaves
 						i(189860),	-- Forbidden Truth
 						i(189862),	-- Gavel of the First Arbiter

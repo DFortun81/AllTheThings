@@ -479,6 +479,7 @@ _.Instances = { tier(SL_TIER, {
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(SL_TIER, {
 		inst(1194, {	-- Tazavesh, the Veiled Market
+			i(190958),	-- So'leah's Secret Technique
 			i(190652),	-- Ticking Sack of Terror
 		}),
 	}),

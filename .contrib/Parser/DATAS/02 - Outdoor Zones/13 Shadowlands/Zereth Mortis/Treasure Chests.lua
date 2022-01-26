@@ -225,6 +225,7 @@ root("Zones", m(SHADOWLANDS, {
 					crit(23, {	-- Protoflora Harvester
 						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
 					}),
+					i(190952),	-- Protoflora Harvester
 				},
 			}),
 			o(375478, {	-- Protomineral Extractor
@@ -235,6 +236,7 @@ root("Zones", m(SHADOWLANDS, {
 					crit(19, {	-- Protomineral Extractor
 						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
 					}),
+					i(190942),	-- Protomineral Extractor
 				},
 			}),
 			o(375493, {	-- Ripened Protopear

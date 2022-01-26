@@ -443,6 +443,9 @@ root("Zones", m(SHADOWLANDS, {
 					crit(6, {	-- A Means to an End
 						["achievementID"] = 15259,	-- Secrets of the First Ones
 					}),
+					crit(1, {	-- A Means to an End
+						["achievementID"] = 15518,	-- A Means to an End
+					}),
 				},
 			}),
 			-- PROBABLY AFTER BORROWED POWER/POP GOES THE DEVOURER?
@@ -579,6 +582,18 @@ root("Zones", m(SHADOWLANDS, {
 					i(190610),	-- Tribute of the Enlightened Elders
 				},
 			}),
+			q(65748, {	-- You Supply The Effort
+				["provider"] = { "n", 185713 },	-- Hadja
+				["coord"] = { 35.2, 65.7, ZERETH_MORTIS },
+			}),
+			q(65727, {	-- The Burrowed Bufonid
+				["provider"] = { "n", 180950 },	-- Avna
+				["coord"] = { 34.3, 65.9, ZERETH_MORTIS },
+			}),
+			q(65749, {	-- The Necessity Of Equipment
+				["provider"] = { "n", 177958 },	-- Firim
+				["coord"] = { 34.2, 48.6, ZERETH_MORTIS },
+			}),
 			--
 
 			-- Al'dalil/Cartel Xy Side Quest
@@ -619,6 +634,11 @@ root("Zones", m(SHADOWLANDS, {
 				["sourceQuests"] = { 64758 },	-- Following the Leader
 				["provider"] = { "n", 180936 },	-- Rana
 				["coord"] = { 31.7, 67.4, ZERETH_MORTIS },
+				["g"] = {
+					crit(2, {	--  Not Al Are Lost
+						["achievementID"] = 15515,	-- Path to Enlightenment
+					}),
+				},
 			}),
 			-- End
 
@@ -657,6 +677,9 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 49.2, 71.8, ZERETH_MORTIS },
 				["g"] = {
 					i(189585),	-- E'rnee
+					crit(1, {	--  Small Pet Problems
+						["achievementID"] = 15515,	-- Path to Enlightenment
+					}),
 				}
 			}),
 			-- End
@@ -690,6 +713,11 @@ root("Zones", m(SHADOWLANDS, {
 				},
 				["provider"] = { "o", 375283 },	-- Flow Restart Console (QG)
 				["coord"] = { 74.1, 69, 2028 },
+				["g"] = {
+					crit(3, {	--  A Return to Grace
+						["achievementID"] = 15515,	-- Path to Enlightenment
+					}),
+				},
 			}),
 			-- End
 		}),
@@ -862,7 +890,7 @@ root("HiddenQuestTrigger", {
 
 	--q(64880),	-- Triggered in Oribos?
 	--q(65144),	-- Firims Cave?
-	--q(65539),	-- Flying unlock??
+	q(65539),	-- Flying unlock
 	--q(65679),	-- Fully Upgrade Console? 183968 FP? Flying? WB?
 
 	-- More rare HQTS?

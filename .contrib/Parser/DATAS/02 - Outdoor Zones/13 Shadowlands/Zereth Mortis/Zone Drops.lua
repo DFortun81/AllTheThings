@@ -72,6 +72,7 @@ root("Zones", m(SHADOWLANDS, {
 			i(188036),	-- Staccato Mantle
 			i(188035),	-- Staccato Vest
 			-- Lattices
+			i(188957),	-- Genesis Mote
 			i(187634),	-- Ambystan Lattice
 			i(187636),	-- Aurelid Lattice
 			i(187633),	-- Bufonid Lattice
@@ -111,7 +112,6 @@ root("Zones", m(SHADOWLANDS, {
 			i(189171),	-- Bauble of Pure Innovation
 			i(189178),	-- Tools of Incomprehensible Experimentation
 			i(189175),	-- Mawforged Bridle
-			i(189172),	-- Crystallized Echo of the First Song
 			--]]
 		}),
 	}),

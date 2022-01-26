@@ -26,7 +26,6 @@ root("Zones", m(SHADOWLANDS, {
 					i(190057),	-- Protective Raptora's Wing-Glaive
 					i(190003),	-- Skyward Savior's Talon
 					i(190731),	-- Deceiver's Illusionary Signet
-					i(190732),	-- Strand of Tainted Relics
 					i(190729),	-- Vigorous Sentinel's Seal
 				},
 			}),
@@ -66,6 +65,7 @@ root("Zones", m(SHADOWLANDS, {
 					i(189940),	-- Architect's Polluting Touch
 					i(189907),	-- Crown of Contorted Thought
 					i(190009),	-- Hammer of Shattered Works
+					i(190732),	-- Strand of Tainted Relics
 				},
 			}),
 			n(180917, {	-- Destabilized Core
@@ -451,7 +451,6 @@ root("Zones", m(SHADOWLANDS, {
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(SL_TIER, {
 		i(187674),	-- [PH] Progenitor Jellyfish (Dark)
-		i(187675),	-- [PH] Progenitor Jellyfish (Dark Red)
 		i(189452),	-- 9.2 Mount Crafting Bag of Goodies
 		i(189428),	-- 9.2 Pet Battle Playtest Bag of Goodies
 		i(190383),	-- Progenitor Essentia Lattice
@@ -466,5 +465,14 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		i(190928),	-- Sandtails Drape
 		i(190934),	-- Standard of the Wandering Brokers
 		i(190939),	-- Walking Staff of the Enlightened Journey
+		i(190951),	-- Distinguished Blade of Cartel Al
+		i(190946),	-- Emerald-Heart Protomaul
+		i(190950),	-- Gavel of Lost Purpose
+		i(190945),	-- Greatmaul of the Ancient Sentinels
+		i(190947),	-- Halo-Stave of the Oracles
+		i(190943),	-- Jiro Tuning Hammer
+		i(190944),	-- Mace of Renewed Purpose
+		i(190948),	-- Staff of the Dormant Oracle
+		i(190949),	-- Stave of the Eternal Cycle
 	}),
 }));

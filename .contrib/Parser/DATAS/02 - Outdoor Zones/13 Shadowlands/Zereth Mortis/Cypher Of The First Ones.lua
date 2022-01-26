@@ -5,24 +5,23 @@ root("Zones", m(SHADOWLANDS, {
 	m(ZERETH_MORTIS, {
 		n(-988, {	-- Cypher of the First Ones
 			n(ACHIEVEMENTS, {
+				ach(15542),	-- Apocopocolypse Now
 				ach(15211, {	-- Completing the Code
 					i(187793),	-- Personal Containment Trap (TOY!)
 				}),
 				ach(15402, {	-- Cyphers of the First Ones
-					["description"] = "Have to research eveything in the talent tree to gain flying.",
-					["g"] = {
-						i(189455),	-- Schematic: Pale Regal Cervid
-						crit(1),	-- All Metrial Cyphers
-						crit(2),	-- All Aelic Cyphers
-						crit(3),	-- All Dealic Cyphers
-						crit(4),	-- All Trebalim Cyphers
-					},
+					i(189455),	-- Schematic: Pale Regal Cervid
+					crit(1),	-- All Metrial Cyphers
+					crit(2),	-- All Aelic Cyphers
+					crit(3),	-- All Dealic Cyphers
+					crit(4),	-- All Trebalim Cyphers
 				}),
 				ach(15508, {	-- Fashion of the First Ones
 					i(190182, {	-- Lovely Regal Pocopoc
 						--["questID"] = ,
 					}),
 				}),
+				ach(15509),	-- Tales of the Exile
 				ach(15229, {	-- Traversing the Spheres
 					i(187860),	-- Mortis Mover (TOY!)
 				}),
@@ -487,7 +486,80 @@ root("Zones", m(SHADOWLANDS, {
 					["coord"] = { 35.0, 71.5, ZERETH_MORTIS },
 					["questID"] = 65180,
 				}),
+				-- Firim
+				o(375973, {	-- Firim in Exile, Part 1
+					["coord"] = { 35.7, 55.4, ZERETH_MORTIS },
+					--["questID"] = ,
+					["g"] = {
+						i(189575),	-- Firim in Exile, Part 1
+					},
+				}),
+				o(375982, {	-- Firim in Exile, Part 2
+					["coord"] = { 41.8, 62.4, ZERETH_MORTIS },
+					--["questID"] = ,
+					["g"] = {
+						i(189576),	-- Firim in Exile, Part 2
+					},
+				}),
+				o(375983, {	-- Firim in Exile, Part 3
+					["coord"] = { 37.5, 46.1, ZERETH_MORTIS },
+					--["questID"] = ,
+					["g"] = {
+						i(189578),	-- Firim in Exile, Part 3
+					},
+				}),
+				o(375984, {	-- Firim in Exile, Part 4
+					["coord"] = { 49.9, 76.6, ZERETH_MORTIS },
+					--["questID"] = ,
+					["g"] = {
+						i(189579),	-- Firim in Exile, Part 4
+					},
+				}),
+				o(375985, {	-- Firim in Exile, Part 5
+					["coord"] = { 39, 31.1, ZERETH_MORTIS },
+					--["questID"] = ,
+					["g"] = {
+						i(189580),	-- Firim in Exile, Part 5
+					},
+				}),
+				o(375986, {	-- Firim in Exile, Part 6
+					["coord"] = { 67.4, 25.2, ZERETH_MORTIS },
+					--["questID"] = ,
+					["g"] = {
+						i(189581),	-- Firim in Exile, Part 6
+					},
+				}),
+				o(375987, {	-- Firim in Exile, Part 7
+					["coord"] = { 64.8, 33.6, ZERETH_MORTIS },
+					--["questID"] = ,
+					["g"] = {
+						i(189582),	-- Firim in Exile, Part 7
+					},
+				}),
+				o(375988, {	-- Firim in Exile, Epilogue
+					["coord"] = { 34.3, 48.8, ZERETH_MORTIS },
+					--["questID"] = ,
+					["g"] = {
+						i(189753),	-- Firim in Exile, Epilogue
+					},
+				}),
 				-- Puzzle Chests
+				o(375062, {	-- Cantaric Cache
+					["coords"] = {
+						{ 48.7, 87.5, ZERETH_MORTIS },
+						{ 55, 48.0, ZERETH_MORTIS },
+						{ 56, 79.6, ZERETH_MORTIS },
+					},
+					["questID"] = 65318,
+				}),
+				o(375068, {	-- Fugueal Cache
+					["coords"] = {
+						{ 38.5, 35.5, ZERETH_MORTIS },
+						{ 42.3, 68.8, ZERETH_MORTIS },
+						{ 39.2, 46.7, ZERETH_MORTIS },
+					},
+					["questID"] = 65322,
+				}),
 				o(375067, {	-- Glissandian Cache
 					["coords"] = {
 						{ 40, 72.9, ZERETH_MORTIS },
@@ -548,8 +620,6 @@ root("Zones", m(SHADOWLANDS, {
 
 root("HiddenQuestTriggers", {
 	-- Puzzle Chests AlexSoft = AS, Cantaric = Berlekamp's Switch Game, Mezzonic = Lights Out, Fugueal = 4 Properties Game, Glissandian = Bejeweled Puzzle, Toccatian = Crossed Lines
-	--q(65322),	-- Triggered when completed the puzzle, Fugueal At 38.5 35.5 / AS:42.3 68.8 / AS2:39.2, 46.7 AS3:36.5, 56.5
-	--q(65318),	-- Triggered when completed the puzzle, Cantaric at 48.7, 87.5 / AS:48.6 87.5 // AS2:55.0 48.0 // AS3/4:56.0 79.6
 	--q(65323),	-- Triggered when completed the puzzle, --- at 44.7, 76.1 AS:Toccatian 44.2, 90.1
 	--q(65093),	-- Triggered when completed the puzzle, Fugueal At M1:57.5 65.8 // M2:63.1, 37.4 / AS: 57.5 65.8 // AS2:63.1 37.4 // AS3:47.1 77.2
 	--q(65092),	-- Triggered when completed the puzzle, Glissandian At 58.9, 36.4 / AS:58.9 36.4 // AS2:41.8 31.3

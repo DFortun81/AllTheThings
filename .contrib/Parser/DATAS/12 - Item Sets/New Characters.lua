@@ -18,12 +18,16 @@ _.GearSets =
 						["races"] = { DWARF },
 					}),
 					mount(73630, {	-- Great Exarch's Elekk
-						["description"] = "|cFF40bf40Received on reaching Level 17 as a Draenei or Lightforged Paladin.|r",
-						["races"] = { DRAENEI, Lightforged },
+						["description"] = "|cFF40bf40Received on reaching Level 17 as a Draenei Paladin.|r",	-- Removed Lightforged here
+						["races"] = { DRAENEI },
 					}),
 					mount(69826, {	-- Great Sunwalker Kodo
 						["description"] = "|cFF40bf40Received on reaching Level 17 as a Tauren Paladin.|r",
 						["races"] = { TAUREN },
+					}),
+					mount(356802, {	-- Holy Lightstrider
+						["description"] = "|cFF40bf40Received on reaching Level X as a Lightforged Draenei Paladin.|r",	-- Guessing this is the new mount they get
+						["races"] = { LIGHTFORGED },
 					}),
 					mount(69820, {	-- Sunwalker Kodo
 						["description"] = "|cFF40bf40Received on reaching Level 10 as a Tauren Paladin.|r",
