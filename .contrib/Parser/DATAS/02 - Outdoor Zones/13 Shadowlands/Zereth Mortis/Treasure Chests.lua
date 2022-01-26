@@ -170,9 +170,10 @@ root("Zones", m(SHADOWLANDS, {
 				}
 			}),
 			o(375411, {	-- Mistaken Ovoid
-				["description"] = "Inside the cave behind the balls.",
+				["description"] = "Inside the cave. Need to collect 5xLost Ovoids.",
 				["coord"] = { 53.6, 72.2, ZERETH_MORTIS },
 				["questID"] = 65522,
+				["cost"] = { { "i", 190239, 5 } }, 	-- 5xLost Ovoid
 				["g"] = {
 					crit(16, {	-- Mistaken Ovoid
 						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
@@ -436,11 +437,6 @@ root("Zones", m(SHADOWLANDS, {
 				},
 			}),
 			-- Maybe Repeatable? No QuestID
-			o(373568, {	-- Locked Provis Cache
-				["description"] = "Use Firim's Spare Forge-tap to gain 15xEphemera Strands(187728) to get Ephemera Orb(187787), not guaranteed.",
-				["coord"] = { 42, 51.9, ZERETH_MORTIS },
-				["cost"] = { { "i", 188231, 1 }, },	-- 1xProvis Cache Key
-			}),
 			o(373579, {	-- Prying Eye Discovery
 				["description"] = "Only available during Portal Play Daily",
 				["coords"] = {
@@ -460,6 +456,12 @@ root("Zones", m(SHADOWLANDS, {
 				},
 			}),
 			-- Repeatable Chest IDK if it has questID
+			o(373568, {	-- Locked Provis Cache
+				["description"] = "Use Firim's Spare Forge-tap to gain 15xEphemera Strands(187728) to get Ephemera Orb(187787), not guaranteed.",
+				["coord"] = { 42, 51.9, ZERETH_MORTIS },
+				["questID"] = 65183,
+				["cost"] = { { "i", 188231, 1 }, },	-- 1xProvis Cache Key
+			}),
 			n(185502, {	-- Pulp-Covered Relic
 				["description"] = "Talk to this chest multiple times and kill add waves.",
 				--["questID"]
@@ -476,6 +478,13 @@ root("Zones", m(SHADOWLANDS, {
 				},
 			}),
 			-- Repeatable chests with QuestID
+			o(375538, {	-- Lost Ovoid
+				["questID"] = 65624,
+				["coord"] = { 53.6, 72.6, ZERETH_MORTIS },
+				["g"] = {
+					i(190239),	-- Lost Ovoid
+				},
+			}),
 			o(375404, {	-- Sandworn Chest
 				["description"] = "Key fragements drops in the area from mobs Sandworn Chest Key Fragment(190198)",
 				["coords"] = {

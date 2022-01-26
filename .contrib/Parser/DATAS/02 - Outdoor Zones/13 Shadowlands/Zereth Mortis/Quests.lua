@@ -898,6 +898,7 @@ root("HiddenQuestTrigger", {
 	--q(65631),	-- Triggered when killing Akkaris
 	--q(65629),	-- Triggered when killing Akkaris
 	--q(65626),	-- Triggered when killing Mother Phestis <Tarachnid Prime>
+	--q(65706),	-- Dune Rare?
 
 	-- Gravid Repose
 	q(65330),	-- Interior Locus Arrangement at Gravid Repose

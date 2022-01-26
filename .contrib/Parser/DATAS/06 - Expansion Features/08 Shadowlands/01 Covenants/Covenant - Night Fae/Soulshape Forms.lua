@@ -205,6 +205,9 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 			q(65514, {	-- Armadillo Soul
 				["provider"] = { "i", 189986 },	-- Armadillo Soul
 			}),
+			q(65509, {	-- Bat Soul
+				["provider"] = { "i", 189977 },	-- Bat Soul
+			}),
 			q(65518, {	-- Bee Soul
 				["provider"] = { "i", 189990 },	-- Bee Soul
 			}),
@@ -220,21 +223,18 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 			q(65517, {	-- Penguin Soul
 				["provider"] = { "i", 189989 },	-- Penguin Soul
 			}),
+			q(65515, {	-- Pig Soul
+				["provider"] = { "i", 189987 },	-- Pig Soul
+			}),
 			q(65508, {	-- Tallstrider Soul
 				["provider"] = { "i", 189976 },	-- Tallstrider Soul
 			}),
 			--[[ NO SOURCE YET
-			q(65509, {	-- Bat Soul
-				["provider"] = { "i", 189977 },	-- Bat Soul
-			}),
 			q(65640, {	-- Cervid Soul
 				["provider"] = { "i", 190337 },	-- Cervid Soul
 			}),
 			q(65513, {	-- Gromit Soul
 				["provider"] = { "i", 189983 },	-- Gromit Soul
-			}),
-			q(65515, {	-- Pig Soul
-				["provider"] = { "i", 189987 },	-- Pig Soul
 			}),
 			q(65506, {	-- Ray Soul
 				["provider"] = { "i", 189973 },	-- Ray Soul

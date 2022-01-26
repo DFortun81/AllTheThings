@@ -30,14 +30,6 @@ root("Zones", m(SHADOWLANDS, {
 				["description"] = "This item are only available from Firim after completing the Daily Quest: Materials of Creation(64717).",
 				["questID"] = 65027,
 				["g"] = {
-					i(187890, {	-- Anima-charged Yolk
-						["questID"] = 65019,
-						["g"] = {
-							crit(3, {	-- Anima-charged Yolk
-								["achievementID"] = 15229,	-- Traversing the Spheres
-							}),
-						},
-					}),
 					i(187891, {	-- Empyrean Essence
 						["questID"] = 65017,
 						["g"] = {
@@ -115,6 +107,14 @@ root("Zones", m(SHADOWLANDS, {
 						["cost"] = { { "i", 187728, 15 }, },	-- 15xEphemera Strands
 						["g"] = {
 							i(188231),	-- Provis Cache Key
+							i(187890, {	-- Anima-charged Yolk
+								["questID"] = 65019,
+								["g"] = {
+									crit(3, {	-- Anima-charged Yolk
+										["achievementID"] = 15229,	-- Traversing the Spheres
+									}),
+								},
+							}),
 						},
 					}),
 				},
@@ -552,6 +552,14 @@ root("Zones", m(SHADOWLANDS, {
 					},
 					["questID"] = 65318,
 				}),
+				o(373474, {	-- Cantaric Cache
+					["coords"] = {
+						{ 38.5, 63.2, ZERETH_MORTIS },
+						{ 53, 45.6, ZERETH_MORTIS },
+						{ 43.7, 21.5, ZERETH_MORTIS },
+					},
+					["questID"] = 65094,
+				}),
 				o(375068, {	-- Fugueal Cache
 					["coords"] = {
 						{ 38.5, 35.5, ZERETH_MORTIS },
@@ -599,6 +607,12 @@ root("Zones", m(SHADOWLANDS, {
 					},
 					["questID"] = 65320,
 				}),
+				o(375059, {	-- Mezzonic Cache
+					["coords"] = {
+						{ 35.8, 59.1, ZERETH_MORTIS },
+					},
+					["questID"] = 65315,
+				}),
 				o(370494, {	-- Toccatian Cache
 					["coords"] = {
 						{ 46.8, 67, ZERETH_MORTIS },
@@ -624,7 +638,6 @@ root("HiddenQuestTriggers", {
 	--q(65093),	-- Triggered when completed the puzzle, Fugueal At M1:57.5 65.8 // M2:63.1, 37.4 / AS: 57.5 65.8 // AS2:63.1 37.4 // AS3:47.1 77.2
 	--q(65092),	-- Triggered when completed the puzzle, Glissandian At 58.9, 36.4 / AS:58.9 36.4 // AS2:41.8 31.3
 	--q(65319),	-- Triggered when completed the puzzle, Toccatian At 67.8, 27.4 / AS:67.9 27.3 // AS2:65.6 47.6 // AS3/4:64.3 63.3
-	--q(65094),	-- Triggered when completed the puzzle, Cantaric At 38.5, 63.2 / AS:38.5 63.7 / AS2:53.0, 45.6
 	--q(65317),	-- Triggered when completed the puzzle, Fugueal At AS:44.3, 30.9
 });
 

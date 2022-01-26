@@ -322,7 +322,7 @@ root("Zones", m(SHADOWLANDS, {
 				}),
 				o(375748, {	-- Protoform Schematic
 					["description"] = "Under the platform.",
-					["coord"] = { 62, 43.5, ZERETH_MORTIS },
+					["coord"] = { 61.2, 42.6, ZERETH_MORTIS },
 					["g"] = {
 						i(189434),	-- Schematic: Fierce Scarabid
 					},
@@ -427,6 +427,8 @@ root("Zones", m(SHADOWLANDS, {
 						{ 50.7, 89, ZERETH_MORTIS },
 						{ 67.1, 15.9, ZERETH_MORTIS },
 						{ 43, 35.5, ZERETH_MORTIS },
+						{ 60.4, 25.3, ZERETH_MORTIS },
+						{ 52.9, 80.7, ZERETH_MORTIS },
 					},
 					["g"] = {
 						i(189168),	-- Glimmer of Serenity
