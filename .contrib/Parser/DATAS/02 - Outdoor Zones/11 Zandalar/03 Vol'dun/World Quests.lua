@@ -237,7 +237,6 @@ _.Zones =
 					["g"] = {
 						n(136323, {	-- Fangcaller Xorreth
 							["description"] = "This rare is only up when its associated world quest is active.",
-							["repeatable"] = true,
 							["questID"] = 51065,
 							["coord"] = { 53.60, 35.01, VOLDUN },
 							["g"] = {

@@ -181,7 +181,6 @@ root("Zones", {
 				q(54965, {	-- Chopped Bots -- TODO: verify sourceQuest. Not always available. Possibly on some kind of a rotation? -- also popped 55480
 					["provider"] = { "n", 150086 },	-- Bolten Springspark
 					["coord"] = { 63.1, 39.2, MECHAGON },
-					["races"] = HORDE_ONLY,
 				}),
 				q(56327, {	-- Chopped Bots
 					["provider"] = { "n", 150086 },	-- Bolten Springspark

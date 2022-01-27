@@ -56,7 +56,6 @@ _.Zones =
 				n(136183, {	-- Crushtacean
 					["questID"] = 52466,
 					["coord"] = { 51.1, 54.4, STORMSONG_VALLEY },	-- entrance
-					["isDaily"] = true,
 					["g"] = {
 						i(154857),	-- Bonesplinter Band
 						crit(19, {	-- Crushtacean
