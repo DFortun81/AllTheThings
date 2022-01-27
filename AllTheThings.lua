@@ -17143,26 +17143,27 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				end
 				if app.Settings:GetTooltipSetting("Warn:Difficulty") then
 					if difficultyID and difficultyID > 0 and self.data.g then
-						local missing, other;
+						local missing, found, other;
 						for _,row in ipairs(self.data.g) do
 							-- app.PrintDebug("Check Minilist Header for Progress for Difficulty",difficultyID,row.difficultyID,row.progress,row.total)
-							if not missing then
+							if not found and not missing then
 								-- check group for the current difficulty for incomplete content
 								if (row.difficultyID == difficultyID) or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
+									found = true;
 									if CheckGroup(row, IsNotComplete) then
 										-- app.PrintDebug("Current Difficulty is NOT complete")
 										missing = true;
 									end
-								-- grab another incomplete difficulty name in case current difficulty is complete
-								elseif not other and row.difficultyID then
+								-- grab another incomplete, unfiltered difficulty name in case current difficulty is complete
+								elseif not other and row.difficultyID and app.RecursiveGroupRequirementsFilter(row) then
 									if CheckGroup(row, IsNotComplete) then
 										other = row.text;
 									end
 								end
 							end
 						end
-						-- current difficulty is not missing anything, and we have another difficulty text to announce
-						if not missing and other then
+						-- current matching difficulty is not missing anything, and we have another difficulty text to announce
+						if found and not missing and other then
 							print(L["DIFF_COMPLETED_1"] .. other .. L["DIFF_COMPLETED_2"]);
 						end
 					end
