@@ -940,6 +940,7 @@ _.HiddenQuestTriggers = {
 		q(34435),	-- Find Ga'nar - completed with quest 34434 & 34740
 		q(34438),	-- Regarding Enormous Tanks - completed with quest 34958
 		q(34506),	-- Bonus Objective: Kill Grimfrost Ogres - completed with quest 33145
+		q(34565),	-- Tearing Up Talador - completed with quest 34898
 		q(34570),	-- REUSE - completed with quest 34154 & 34564
 		q(34817),	-- Altar Altercation - completed with quest 34423
 		q(35251),	-- The Bounty of Bladespire - completed with quest 33657
@@ -980,10 +981,6 @@ _.HiddenQuestTriggers = {
 		--q(33264),	-- A Proper Burial - TODO: figure out from where it gets completed
 		--q(34734),	-- The Loyalty of Olin Umberhide - TODO: figure out from where it gets completed
 		--q(37062),	-- Tricks of the Trade - TODO: figure out from where it gets completed
-
-		-- Spires of Arak
-		--q(34565),	-- Tearing Up Talador - TODO: figure out from where it gets completed
-
 
 		-------------------
 		---   CLASSIC   ---

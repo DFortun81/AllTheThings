@@ -18,6 +18,7 @@ _.PVP =
 					i(175864),	-- Sinful Aspirant's Silk Hood
 					i(175868),	-- Sinful Aspirant's Silk Leggings
 					i(175873),	-- Sinful Aspirant's Silk Mantle
+					i(175852),	-- Sinful Aspirant's Silk Robe
 					i(175857),	-- Sinful Aspirant's Silk Treads
 					i(175880),	-- Sinful Aspirant's Silk Wristwraps
 				}),
@@ -56,6 +57,7 @@ _.PVP =
 					i(175881),	-- Sinful Aspirant's Plate Cuffs
 					i(175861),	-- Sinful Aspirant's Plate Gauntlets
 					i(175875),	-- Sinful Aspirant's Plate Girdle
+					i(175850),	-- Sinful Aspirant's Plate Helm
 					i(175867),	-- Sinful Aspirant's Plate Legguards
 					i(175872),	-- Sinful Aspirant's Plate Shoulders
 					i(175856),	-- Sinful Aspirant's Plate Warboots
@@ -82,10 +84,8 @@ _.PVP =
 					i(178668),	-- Sinful Aspirant's Longspear
 					i(178471),	-- Sinful Aspirant's Mace
 					i(178478),	-- Sinful Aspirant's Orb
-					i(175850),	-- Sinful Aspirant's Plate Helm
 					i(178472),	-- Sinful Aspirant's Polearm
 					i(178664),	-- Sinful Aspirant's Recurve
-					i(175852),	-- Sinful Aspirant's Silk Robe
 					i(178473),	-- Sinful Aspirant's Staff
 					i(178474),	-- Sinful Aspirant's Sword
 					i(178479),	-- Sinful Aspirant's Warglaive
