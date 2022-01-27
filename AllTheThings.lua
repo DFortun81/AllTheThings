@@ -16860,7 +16860,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			self:SetVisible(true);
 			self:Update();
 		end
-		local function IsNotComplete(group) return not app.IsComplete(group); end
+		local function IsNotComplete(group) return not app.IsComplete(group) and app.RecursiveGroupRequirementsFilter(group); end
 		local function CheckGroup(group, func)
 			if func(group) then
 				return true;
@@ -16944,7 +16944,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		};
 		-- self.Rebuild
 		(function()
-		local results, groups, nested, header, headerKeys, difficultyID, topHeader, nextParent, headerID, groupKey, typeHeaderID;
+		local results, groups, nested, header, headerKeys, difficultyID, topHeader, nextParent, headerID, groupKey, typeHeaderID, isInInstance;
 		self.Rebuild = function(self)
 			-- print("Rebuild",self.mapID);
 			-- check if this is the same 'map' for data purposes
@@ -16960,15 +16960,18 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				groups = {};
 				header = app.CreateMap(self.mapID, { g = groups });
 				self.CurrentMaps[self.mapID] = true;
-				headerKeys = IsInInstance() and subGroupInstanceKeys or subGroupKeys;
+				isInInstance = IsInInstance();
+				headerKeys = isInInstance and subGroupInstanceKeys or subGroupKeys;
 				for _,group in ipairs(results) do
 					-- do not use any raw Source groups in the final list
+					-- app.PrintDebug("Clone",group.hash)
 					group = CreateObject(group);
+					-- app.PrintDebug("Done")
 					-- print(group.key,group.key and group[group.key],group.text)
 					nested = nil;
 
-					-- Cache the difficultyID, if there is one
-					difficultyID = GetRelativeValue(group, "difficultyID");
+					-- Cache the difficultyID, if there is one and we are in an actual instance where the group is being mapped
+					difficultyID = isInInstance and GetRelativeValue(group, "difficultyID");
 
 					-- groups which 'should' be a root of the minilist
 					if (group.instanceID or group.mapID or group.key == "classID")
@@ -17145,18 +17148,20 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					if difficultyID and difficultyID > 0 and self.data.g then
 						local missing, found, other;
 						for _,row in ipairs(self.data.g) do
-							-- app.PrintDebug("Check Minilist Header for Progress for Difficulty",difficultyID,row.difficultyID,row.progress,row.total)
+							-- app.PrintDebug("Check Minilist Header for Progress for Difficulty",difficultyID,row.difficultyID,row.difficulties)
 							if not found and not missing then
 								-- check group for the current difficulty for incomplete content
 								if (row.difficultyID == difficultyID) or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
 									found = true;
+									-- app.PrintDebug("Found current")
 									if CheckGroup(row, IsNotComplete) then
 										-- app.PrintDebug("Current Difficulty is NOT complete")
 										missing = true;
 									end
-								-- grab another incomplete, unfiltered difficulty name in case current difficulty is complete
-								elseif not other and row.difficultyID and app.RecursiveGroupRequirementsFilter(row) then
+								-- grab another difficulty with incomplete groups in case current difficulty is complete
+								elseif not other and row.difficultyID then
 									if CheckGroup(row, IsNotComplete) then
+										-- app.PrintDebug("Found another incomplete",row.text)
 										other = row.text;
 									end
 								end

@@ -797,7 +797,7 @@ root("Zones", {
 			q(56001, {	-- Drunk Angry Murlocs
 				["provider"] = { "n", 153884 },	-- King Mrgl-Mrgl
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade
-				["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.  If the recipe doesn't appear as a quest reward, send in a ticket and a GM will grant it to you.  This is a known issue!",
+				["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
 				["isDaily"] = true,
 				["coord"] = { 25.5, 26.5, 1355 },
 				["races"] = ALLIANCE_ONLY,
@@ -809,7 +809,7 @@ root("Zones", {
 				["provider"] = { "n", 153884 },	-- King Mrgl-Mrgl
 				["coord"] = { 25.5, 26.5, 1355 },
 				["sourceQuest"] = 55500,	-- Save A Friend
-				["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.  If the recipe doesn't appear as a quest reward, send in a ticket and a GM will grant it to you.  This is a known issue!",
+				["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
 				["g"] = {
