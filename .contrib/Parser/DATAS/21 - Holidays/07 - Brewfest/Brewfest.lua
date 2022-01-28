@@ -142,7 +142,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 	-- #endif
 	["groups"] = {
 		n(ACHIEVEMENTS, {
-			ach(3496, {	-- A Brew-FAST Mount
+			removeclassicphase(ach(3496, {	-- A Brew-FAST Mount
 				["providers"] = {
 					{ "i", 37828 },	-- Great Brewfest Kodo
 					{ "i", 33977 },	-- Swift Brewfest Ram
@@ -161,7 +161,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 					t.SetAchievementCollected(t.achievementID, collected);
 				end]],
 				-- #endif
-			}),
+			})),
 			ach(1260),	-- Almost Blind Luck
 			removeclassicphase(ach(1293, {	-- Blue Brewfest Stein [Removed]
 				["provider"] = { "i", 33016 },	-- Blue Brewfest Stein
@@ -237,7 +237,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 				["provider"] = { "i", 37892 },	-- Green Brewfest Stein
 				["timeline"] = { "added 3.0.1", "removed 4.0.1" },
 			}),
-			ach(303, {	-- Have Keg, Will Travel
+			removeclassicphase(ach(303, {	-- Have Keg, Will Travel
 				["providers"] = {
 					{ "i", 33976 },	-- Brewfest Ram
 					{ "i", 37828 },	-- Great Brewfest Kodo
@@ -260,7 +260,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 					t.SetAchievementCollected(t.achievementID, collected);
 				end]],
 				-- #endif
-			}),
+			})),
 			ach(1184, {	-- Strange Brew (A)
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
