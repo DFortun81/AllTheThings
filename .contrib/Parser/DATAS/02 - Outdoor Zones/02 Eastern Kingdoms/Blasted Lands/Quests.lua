@@ -259,6 +259,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						28858,	-- Blasted Lands: The Other Side of the World
+						28865,	-- Call of the Warmatron
 						28671,	-- Warchief's Command: Blasted Lands!
 					},
 				}),

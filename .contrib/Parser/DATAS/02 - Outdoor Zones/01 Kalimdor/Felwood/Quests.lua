@@ -940,6 +940,7 @@ _.Zones =
 					},
 				}),
 				q(28768, {	-- Winterspring!
+					["sourceQuest"] = 28368,	-- Fire in the Hole!	TODO: could be earlier, but was available at this point
 					["provider"] = { "n", 15395 },	-- Nafien
 					["coord"] = { 64.0, 10.4, FELWOOD },
 					["isBreadcrumb"] = true,

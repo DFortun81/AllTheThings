@@ -2717,72 +2717,78 @@ subroutines = {
 			]]--
 
 			-- Unsullied Gear
-			{"select", "itemID", 152740},	-- Unsullied Cloak
-			{"select", "itemID", 152738},	-- Unsullied Cloth Cap
-			{"select", "itemID", 152734},	-- Unsullied Cloth Mantle
-			{"select", "itemID", 153135},	-- Unsullied Cloth Robes
-			{"select", "itemID", 152742},	-- Unsullied Cloth Cuffs
-			{"select", "itemID", 153141},	-- Unsullied Cloth Mitts
-			{"select", "itemID", 153156},	-- Unsullied Cloth Sash
-			{"select", "itemID", 153154},	-- Unsullied Cloth Leggings
-			{"select", "itemID", 153144},	-- Unsullied Cloth Slippers
-			{"select", "itemID", 153139},	-- Unsullied Leather Headgear
-			{"select", "itemID", 153145},	-- Unsullied Leather Spaulders
-			{"select", "itemID", 153151},	-- Unsullied Leather Tunic
-			{"select", "itemID", 153142},	-- Unsullied Leather Armbands
-			{"select", "itemID", 152739},	-- Unsullied Leather Grips
-			{"select", "itemID", 153148},	-- Unsullied Leather Belt
-			{"select", "itemID", 152737},	-- Unsullied Leather Trousers
-			{"select", "itemID", 153136},	-- Unsullied Leather Treads
-			{"select", "itemID", 153147},	-- Unsullied Mail Coif
-			{"select", "itemID", 153137},	-- Unsullied Mail Spaulders
-			{"select", "itemID", 152741},	-- Unsullied Mail Chestguard
-			{"select", "itemID", 153158},	-- Unsullied Mail Bracers
-			{"select", "itemID", 153149},	-- Unsullied Mail Gloves
-			{"select", "itemID", 152744},	-- Unsullied Mail Girdle
-			{"select", "itemID", 153138},	-- Unsullied Mail Legguards
-			{"select", "itemID", 153152},	-- Unsullied Mail Boots
-			{"select", "itemID", 153155},	-- Unsullied Plate Helmet
-			{"select", "itemID", 153153},	-- Unsullied Plate Pauldrons
-			{"select", "itemID", 153143},	-- Unsullied Plate Breasplate
-			{"select", "itemID", 153150},	-- Unsullied Plate Vambraces
-			{"select", "itemID", 153157},	-- Unsullied Plate Gauntlets
-			{"select", "itemID", 153140},	-- Unsullied Plate Waistplate
-			{"select", "itemID", 153146},	-- Unsullied Plate Greaves
-			{"select", "itemID", 152743},	-- Unsullied Plate Sabatons
-			{"select", "itemID", 152736},	-- Unsullied Necklace
-			{"select", "itemID", 152735},	-- Unsullied Ring
-			{"select", "itemID", 152733},	-- Unsullied Trinket
-			{"select", "itemID", 152799},	-- Unsullied Relic
+			{"select", "itemID",
+				152740,	-- Unsullied Cloak
+				152738,	-- Unsullied Cloth Cap
+				152734,	-- Unsullied Cloth Mantle
+				153135,	-- Unsullied Cloth Robes
+				152742,	-- Unsullied Cloth Cuffs
+				153141,	-- Unsullied Cloth Mitts
+				153156,	-- Unsullied Cloth Sash
+				153154,	-- Unsullied Cloth Leggings
+				153144,	-- Unsullied Cloth Slippers
+				153139,	-- Unsullied Leather Headgear
+				153145,	-- Unsullied Leather Spaulders
+				153151,	-- Unsullied Leather Tunic
+				153142,	-- Unsullied Leather Armbands
+				152739,	-- Unsullied Leather Grips
+				153148,	-- Unsullied Leather Belt
+				152737,	-- Unsullied Leather Trousers
+				153136,	-- Unsullied Leather Treads
+				153147,	-- Unsullied Mail Coif
+				153137,	-- Unsullied Mail Spaulders
+				152741,	-- Unsullied Mail Chestguard
+				153158,	-- Unsullied Mail Bracers
+				153149,	-- Unsullied Mail Gloves
+				152744,	-- Unsullied Mail Girdle
+				153138,	-- Unsullied Mail Legguards
+				153152,	-- Unsullied Mail Boots
+				153155,	-- Unsullied Plate Helmet
+				153153,	-- Unsullied Plate Pauldrons
+				153143,	-- Unsullied Plate Breasplate
+				153150,	-- Unsullied Plate Vambraces
+				153157,	-- Unsullied Plate Gauntlets
+				153140,	-- Unsullied Plate Waistplate
+				153146,	-- Unsullied Plate Greaves
+				152743,	-- Unsullied Plate Sabatons
+				152736,	-- Unsullied Necklace
+				152735,	-- Unsullied Ring
+				152733,	-- Unsullied Trinket
+				152799,	-- Unsullied Relic
+			},
 			{"pop"},	-- Remove the Unsullied Tokens and push the children into the processing queue.
 			{"finalize"},	-- Push the Unsullied items to the finalized list.
 
 			-- World Bosses
-			{"select", "encounterID", 1790},	-- Ana-Mouz
-			{"select", "encounterID", 1956},	-- Apocron
-			{"select", "encounterID", 1883},	-- Brutallus
-			{"select", "encounterID", 1774},	-- Calamir
-			{"select", "encounterID", 1789},	-- Drugon the Frostblood
-			{"select", "encounterID", 1795},	-- Flotsam
-			{"select", "encounterID", 1770},	-- Humongris
-			{"select", "encounterID", 1769},	-- Levantus
-			{"select", "encounterID", 1884},	-- Malificus
-			{"select", "encounterID", 1783},	-- Na'zak the Fiend
-			{"select", "encounterID", 1749},	-- Nithogg
-			{"select", "encounterID", 1763},	-- Shar'thos
-			{"select", "encounterID", 1885},	-- Si'vash
-			{"select", "encounterID", 1756},	-- The Soultakers
-			{"select", "encounterID", 1796},	-- Withered J'im
+			{"select", "encounterID",
+				1790,	-- Ana-Mouz
+				1956,	-- Apocron
+				1883,	-- Brutallus
+				1774,	-- Calamir
+				1789,	-- Drugon the Frostblood
+				1795,	-- Flotsam
+				1770,	-- Humongris
+				1769,	-- Levantus
+				1884,	-- Malificus
+				1783,	-- Na'zak the Fiend
+				1749,	-- Nithogg
+				1763,	-- Shar'thos
+				1885,	-- Si'vash
+				1756,	-- The Soultakers
+				1796,	-- Withered J'im
+			},
 			{"pop"},	-- Remove the World Bosses and push the children into the processing queue.
 			{"finalize"},	-- Push the unprocessed Items to the finalized list.
 
 			-- Raids
-			{"select", "instanceID", 768},	-- Emerald Nightmare
-			{"select", "instanceID", 861},	-- Trial of Valor
-			{"select", "instanceID", 786},	-- The Nighthold
-			{"select", "instanceID", 875},	-- Tomb of Sargeras
+			{"select", "instanceID",
+				768,	-- Emerald Nightmare
+				861,	-- Trial of Valor
+				786,	-- The Nighthold
+				875,	-- Tomb of Sargeras
+			},
 
-			-- Process the Dungeons, Normal Mode Only Loot for boots.
+			-- Process the Raids, Normal Mode Only Loot for boots.
 			{"pop"},	-- Discard the Instance Headers and acquire all of their children.
 			{"where", "difficultyID", 14},	-- Select only the Normal Difficulty Headers.
 			{"pop"},	-- Discard the Difficulty Headers and acquire all of their children.
@@ -2791,19 +2797,21 @@ subroutines = {
 			{"finalize"},	-- Push the unprocessed Items to the finalized list.
 
 			-- Dungeons
-			{"select", "instanceID", 777},	-- Assault on Violet Hold
-			{"select", "instanceID", 740},	-- Blackrook Hold
-			{"select", "instanceID", 900},	-- Cathedral of Eternal Night
-			{"select", "instanceID", 800},	-- Court of Stars
-			{"select", "instanceID", 762},	-- Darkheart Thicket
-			{"select", "instanceID", 716},	-- Eye of Azshara
-			{"select", "instanceID", 721},	-- Halls of Valor
-			{"select", "instanceID", 727},	-- Maw of Souls
-			{"select", "instanceID", 767},	-- Neltharion's Lair
-			{"select", "instanceID", 860},	-- Return to Karazhan
-			{"select", "instanceID", 945},	-- Seat of the Triumvirate
-			{"select", "instanceID", 749},	-- The Arcway
-			{"select", "instanceID", 707},	-- Vault of the Wardens
+			{"select", "instanceID",
+				777,	-- Assault on Violet Hold
+				740,	-- Blackrook Hold
+				900,	-- Cathedral of Eternal Night
+				800,	-- Court of Stars
+				762,	-- Darkheart Thicket
+				716,	-- Eye of Azshara
+				721,	-- Halls of Valor
+				727,	-- Maw of Souls
+				767,	-- Neltharion's Lair
+				860,	-- Return to Karazhan
+				945,	-- Seat of the Triumvirate
+				749,	-- The Arcway
+				707,	-- Vault of the Wardens
+			},
 
 			-- Process the Dungeons, Mythic Mode Only Loot for boots.
 			{"pop"},	-- Discard the Instance Headers and acquire all of their children.
@@ -2813,13 +2821,15 @@ subroutines = {
 			{"finalize"},	-- Push the unprocessed Items to the finalized list.
 
 			-- World Quest Rewards
-			{"select", "mapID", 905},	-- Argus
-			{"select", "mapID", 630},	-- Azsuna
-			{"select", "mapID", 646},	-- Broken Shore
-			{"select", "mapID", 650},	-- Highmountain
-			{"select", "mapID", 634},	-- Stormheim
-			{"select", "mapID", 680},	-- Suramar
-			{"select", "mapID", 641},	-- Val'sharah
+			{"select", "mapID",
+				905,	-- Argus
+				630,	-- Azsuna
+				646,	-- Broken Shore
+				650,	-- Highmountain
+				634,	-- Stormheim
+				680,	-- Suramar
+				641,	-- Val'sharah
+			},
 
 			-- Process the World Quest Rewards
 			{"pop"},	-- Discard the Map Headers and acquire all of their children.
@@ -2853,17 +2863,19 @@ subroutines = {
 	["bfa_azerite_armor_chest_dungeons"] = function()
 		return {
 			-- Dungeons
-			{"select", "instanceID", 968},	-- Atal'Dazar
-			{"select", "instanceID", 1001},	-- Freehold
-			{"select", "instanceID", 1041},	-- King's Rest
-			{"select", "instanceID", 1178},	-- Operation: Mechagon ??
-			{"select", "instanceID", 1036},	-- Shrine of the Storm
-			{"select", "instanceID", 1023},	-- Siege of Boralus
-			{"select", "instanceID", 1030},	-- Temple of Sethraliss
-			{"select", "instanceID", 1012},	-- The MOTHERLODE!!
-			{"select", "instanceID", 1022},	-- The Underrot
-			{"select", "instanceID", 1002},	-- Tol Dagor
-			{"select", "instanceID", 1021},	-- Waycrest Manor
+			{"select", "instanceID",
+				968,	-- Atal'Dazar
+				1001,	-- Freehold
+				1041,	-- King's Rest
+				1178,	-- Operation: Mechagon ??
+				1036,	-- Shrine of the Storm
+				1023,	-- Siege of Boralus
+				1030,	-- Temple of Sethraliss
+				1012,	-- The MOTHERLODE!!
+				1022,	-- The Underrot
+				1002,	-- Tol Dagor
+				1021,	-- Waycrest Manor
+			},
 
 			-- Process the Dungeons, Normal Mode Only Loot for the azerite pieces.
 			{"pop"},	-- Discard the Instance Headers and acquire all of their children.
@@ -2892,12 +2904,14 @@ subroutines = {
 	["bfa_azerite_armor_chest_zonedrops"] = function()
 		return {
 			-- World Quest Rewards
-			{"select", "mapID", 896},	-- Drustvar
-			{"select", "mapID", 942},	-- Stormsong Valley
-			{"select", "mapID", 895},	-- Tiragarde Sound
-			{"select", "mapID", 863},	-- Nazmir
-			{"select", "mapID", 864},	-- Vol'dun
-			{"select", "mapID", 862},	-- Zuldazar
+			{"select", "mapID",
+				896,	-- Drustvar
+				942,	-- Stormsong Valley
+				895,	-- Tiragarde Sound
+				863,	-- Nazmir
+				864,	-- Vol'dun
+				862,	-- Zuldazar
+			},
 
 			-- Process the World Quest Rewards
 			{"pop"},	-- Discard the Map Headers and acquire all of their children.
@@ -3033,24 +3047,27 @@ end
 ResolveSymbolicLink = function(o)
 	if o and o.sym then
 		-- app.DEBUG_PRINT = true;
-		local searchResults, finalized = {}, {};
+		local searchResults, finalized, ipairs, tremove = {}, {}, ipairs, table.remove;
 		for j,sym in ipairs(o.sym) do
 			local cmd = sym[1];
-			-- if app.DEBUG_PRINT then print("sym: '",cmd,"' with [",sym[2],"] & [",sym[3],"] for",o.key,o.key and o[o.key]) end
+			-- app.PrintDebug("sym: '",cmd,"' with [",sym[2],"] & [",sym[3],"] for",o.key,o.key and o[o.key])
 			if cmd == "select" then
-				-- Instruction to search the full database for something.
-				local cache = app.SearchForField(sym[2], sym[3]);
-				if cache then
-					for _,s in ipairs(cache) do
-						if s == o or (s.hash and s.hash == o.hash) then
-							print("symlink selected itself and will be ignored in results!",o.hash);
-						else
-							tinsert(searchResults, s);
+				-- Instruction to search the full database for multiple of a given type
+				local field = sym[2];
+				local cache;
+				for i=3,#sym do
+					cache = app.SearchForField(field, sym[i]);
+					if cache then
+						for _,s in ipairs(cache) do
+							if s == o or (s.hash and s.hash == o.hash) then
+								print("symlink selected itself and will be ignored in results!",o.hash);
+							else
+								tinsert(searchResults, s);
+							end
 						end
+					else
+						print("Failed to select ", field, sym[i]);
 					end
-					-- ArrayAppend(searchResults, cache);
-				else
-					print("Failed to select ", sym[2], sym[3]);
 				end
 			elseif cmd == "selectparent" then
 				-- Instruction to select the parent object of the parent that owns the symbolic link.
@@ -3096,7 +3113,7 @@ ResolveSymbolicLink = function(o)
 				for k=#searchResults,1,-1 do
 					local s = searchResults[k];
 					if not s[key] or s[key] ~= value then
-						table.remove(searchResults, k);
+						tremove(searchResults, k);
 					end
 				end
 			elseif cmd == "extract" then
@@ -3135,7 +3152,7 @@ ResolveSymbolicLink = function(o)
 							end
 						end
 						if matched then
-							table.remove(searchResults, k);
+							tremove(searchResults, k);
 						end
 					end
 				else
@@ -3143,7 +3160,7 @@ ResolveSymbolicLink = function(o)
 					for k=#searchResults,1,-1 do
 						local s = searchResults[k];
 						if s[key] and s[key] == value then
-							table.remove(searchResults, k);
+							tremove(searchResults, k);
 						end
 					end
 				end
@@ -3152,36 +3169,36 @@ ResolveSymbolicLink = function(o)
 				local key = sym[2];
 				for k=#searchResults,1,-1 do
 					local s = searchResults[k];
-					if not s[key] then table.remove(searchResults, k); end
+					if not s[key] then tremove(searchResults, k); end
 				end
 			elseif cmd == "isnt" then
 				-- Instruction to include only search results where a key doesn't exist
 				local key = sym[2];
 				for k=#searchResults,1,-1 do
 					local s = searchResults[k];
-					if s[key] then table.remove(searchResults, k); end
+					if s[key] then tremove(searchResults, k); end
 				end
 			elseif cmd == "contains" then
 				-- Instruction to include only search results where a key value/table contains a value.
 				local key = sym[2];
 				local clone = {unpack(sym)};
-				table.remove(clone, 1);
-				table.remove(clone, 1);
+				tremove(clone, 1);
+				tremove(clone, 1);
 				if #clone > 0 then
 					for k=#searchResults,1,-1 do
 						local s = searchResults[k];
 						-- key doesn't exist at all on the result
 						if not s[key] then
-							table.remove(searchResults, k);
+							tremove(searchResults, k);
 						-- key exists with multiple values on the result
 						elseif type(s[key]) == "table" then
 							-- none of the values match the contains values
 							if not containsAny(clone, s[key]) then
-								table.remove(searchResults, k);
+								tremove(searchResults, k);
 							end
 						-- key exists with single value on the result
 						elseif not contains(clone, s[key]) then
-							table.remove(searchResults, k);
+							tremove(searchResults, k);
 						end
 					end
 				end
@@ -3189,8 +3206,8 @@ ResolveSymbolicLink = function(o)
 				-- Instruction to exclude search results where a key value contains a value.
 				local key = sym[2];
 				local clone = {unpack(sym)};
-				table.remove(clone, 1);
-				table.remove(clone, 1);
+				tremove(clone, 1);
+				tremove(clone, 1);
 				if #clone > 0 then
 					for k=#searchResults,1,-1 do
 						local s = searchResults[k];
@@ -3199,7 +3216,7 @@ ResolveSymbolicLink = function(o)
 							if key == "itemID" and s.g and s[key] == o[key] then
 								ArrayAppend(searchResults, s.g);
 							end
-							table.remove(searchResults, k);
+							tremove(searchResults, k);
 						end
 					end
 				end
@@ -3210,7 +3227,7 @@ ResolveSymbolicLink = function(o)
 					if s.itemID and IsArtifactRelicItem(s.itemID) then
 						-- We're good.
 					else
-						table.remove(searchResults, k);
+						tremove(searchResults, k);
 					end
 				end
 			elseif cmd == "finalize" then
@@ -3230,19 +3247,19 @@ ResolveSymbolicLink = function(o)
 			elseif cmd == "invtype" then
 				-- Instruction to include only search results where an item is of a specific inventory type.
 				local types = {unpack(sym)};
-				table.remove(types, 1);
+				tremove(types, 1);
 				if #types > 0 then
 					for k=#searchResults,1,-1 do
 						local s = searchResults[k];
 						if s.itemID and not contains(types, select(4, GetItemInfoInstant(s.itemID))) then
-							table.remove(searchResults, k);
+							tremove(searchResults, k);
 						end
 					end
 				end
 			elseif cmd == "relictype" then
 				-- Instruction to include only search results where an item is of a specific relic type.
 				local types = {unpack(sym)};
-				table.remove(types, 1);
+				tremove(types, 1);
 				if #types > 0 then
 					--[[
 					RELIC_SLOT_TYPE_ARCANE = "Arcane";
@@ -3265,7 +3282,7 @@ ResolveSymbolicLink = function(o)
 						if s.itemID and IsArtifactRelicItem(s.itemID) and contains(types, select(3, C_ArtifactUI.GetRelicInfoByItemID(s.itemID))) then
 							-- We're good.
 						else
-							table.remove(searchResults, k);
+							tremove(searchResults, k);
 						end
 					end
 				end
@@ -3291,8 +3308,8 @@ ResolveSymbolicLink = function(o)
 				local subroutine = subroutines[sym[2]];
 				if subroutine then
 					local args = {unpack(sym)};
-					table.remove(args, 1);
-					table.remove(args, 1);
+					tremove(args, 1);
+					tremove(args, 1);
 					local commands = subroutine(unpack(args));
 					if commands then
 						ArrayAppend(searchResults, ResolveSymbolicLink(setmetatable({sym=commands}, {__index=o})));
@@ -3308,9 +3325,9 @@ ResolveSymbolicLink = function(o)
 					local conditionFunction = sym[3];
 					if conditionFunction and conditionFunction(o) then
 						local args = {unpack(sym)};
-						table.remove(args, 1);
-						table.remove(args, 1);
-						table.remove(args, 1);
+						tremove(args, 1);
+						tremove(args, 1);
+						tremove(args, 1);
 						local commands = subroutine(unpack(args));
 						if commands then
 							ArrayAppend(searchResults, ResolveSymbolicLink(setmetatable({sym=commands}, {__index=o})));

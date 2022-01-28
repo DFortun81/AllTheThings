@@ -272,23 +272,6 @@ _.Zones =
 						}),
 					},
 				}),
-				n(156340, { -- Larionrider Orstus
-					["description"] = "Take the anima gateway and click the Black Bell.  Only a member of the |cFF516bfeKyrian Covenant|r who has channeled anima to Citadel of Loyalty can click the bell.",
-					["questID"] = 61634,
-					["isDaily"] = true,
-					["coord"] = { 24.5, 22.7, BASTION },
-					["crs"] = { 156339 },	-- Eliminator Sotiros
-					["g"] = {
-						crit(28, {	-- Orstus and Sotiros
-							["achievementID"] = 14307,	-- Adventurer of Bastion
-						}),
-						i(184401, {	-- Larion Pouncer (PET!)
-							["customCollect"] = "SL_COV_KYR",	-- Kyrian
-							["description"] = "To be eligible to receive the pet, your Anima Conductor must be upgraded to Rank 3.",
-						}),
-						i(184365),	-- Aegis of Salvation
-					},
-				}),
 				n(161529, { -- Nemaeus
 					["questID"] = 60569,
 					["isDaily"] = true,
