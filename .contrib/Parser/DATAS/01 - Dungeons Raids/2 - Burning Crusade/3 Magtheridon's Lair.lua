@@ -50,6 +50,12 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							["timeline"] = { "removed 2.3.0.10000" },
 							-- #endif
 						}),
+						removeclassicphase(ach(432, {	-- Champion of the Naaru (Achievement)
+							-- #if BEFORE 3.0.1
+							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(10888)); end]],
+							-- #endif
+							["timeline"] = { "removed 3.0.1" },
+						})),
 						title(36, {	-- Champion of the Naaru
 							["timeline"] = { "removed 3.0.2" },
 						}),
