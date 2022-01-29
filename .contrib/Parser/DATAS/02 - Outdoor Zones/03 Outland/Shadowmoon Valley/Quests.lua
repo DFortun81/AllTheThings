@@ -505,20 +505,6 @@ _.Zones =
 						i(31417),	-- Staff of the Ashtongue Deathsworn
 					},
 				}),
-				q(11052, {	-- Akama's Promise (awarded "Akama's Promise" criteria)
-					["provider"] = { "n", 21700 },	-- Akama
-					["sourceQuests"] = { 10707 },	-- The Ata'mal Terrace
-					["coord"] = { 58.1, 48.1, SHADOWMOON_VALLEY },
-					["altQuests"] = { 10708 },	-- Akama's Promise
-					["groups"] = {
-						i(30932),	-- Akama's Sash
-						i(30999),	-- Ashtongue Blade
-						i(31000),	-- Bloodwarder's Rifle
-						i(30943),	-- Verdant Gloves
-						i(30984),	-- Spellbreaker's Buckler
-						i(31417),	-- Staff of the Ashtongue Deathsworn
-					},
-				}),
 				q(10826, {	-- Marks of Sargeras
 					["provider"] = { "n", 22214 },	-- Harbinger Saronen
 					["coord"] = { 62.2, 29.8, SHADOWMOON_VALLEY },
@@ -539,24 +525,6 @@ _.Zones =
 					["sourceQuests"] = { 10826 },	-- Marks of Sargeras
 					["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 				}),
-				applyclassicphase(TBC_PHASE_THREE, q(10985, {	-- A Distraction for Akama (legacy version)
-					["provider"] = { "n", 18528 },	-- Xi'ri
-					["coord"] = { 65.2, 44.0, SHADOWMOON_VALLEY },
-					["sourceQuests"] = { 10949 },	-- Entry Into the Black Temple
-					["u"] = REMOVED_FROM_GAME,
-					["groups"] = {
-						i(32649),	-- Medallion of Karabor
-					},
-				})),
-				applyclassicphase(TBC_PHASE_THREE, q(13429, {	-- A Distraction for Akama
-					["altQuests"] = { 10985 },	-- A Distraction for Akama (legacy version)
-					["sourceQuests"] = { 10949 },	-- Entry Into the Black Temple
-					["provider"] = { "n", 18528 },	-- Xi'ri
-					["coord"] = { 65.2, 43.9, SHADOWMOON_VALLEY },
-					["groups"] = {
-						i(32649),	-- Medallion of Karabor
-					},
-				})),
 				q(10642, {	-- A Ghost in the Machine
 					["provider"] = { "n", 21774 },	-- Zorus the Judicator
 					["races"] = ALLIANCE_ONLY,
@@ -959,14 +927,6 @@ _.Zones =
 					["coord"] = { 36.2, 57.0, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				applyclassicphase(TBC_PHASE_THREE, q(10958, {	-- Seek Out the Ashtongue
-					["provider"] = { "n", 18528 },	-- Xi'ri
-					["coord"] = { 65.2, 44.0, SHADOWMOON_VALLEY },
-					["sourceQuests"] = {
-						10985,	-- A Distraction for Akama (Alliance)
-						13429,	-- A Distraction for Akama (Horde)
-					},
-				})),
 				q(10572, {	-- Setting Up the Bomb (A)
 					["provider"] = { "n", 21357 },	-- Wing Commander Nuainn
 					["coord"] = { 39.5, 53.7, SHADOWMOON_VALLEY },
@@ -1401,11 +1361,15 @@ _.HiddenQuestTriggers = {
 -- These quests never made it in.
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
+		q(10871),	-- BETA Ally of the Netherwing
+		q(10815),	-- BETA The Journal of Val'zareq: Portends of War
+		q(10872),	-- BETA Zuluhed the Whacked
 		-- #if AFTER MOP
 		q(32341, {	-- Demonstrate Your Power [Warlock Only]
 			i(93387),	-- Akama's Seal of Courage
 		}),
 		-- #endif
+		q(11052),	-- OLD Akama's Promise (awarded "Akama's Promise" criteria)
 	}),
 });
 -- #endif

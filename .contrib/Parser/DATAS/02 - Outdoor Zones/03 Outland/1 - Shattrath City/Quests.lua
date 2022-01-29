@@ -433,11 +433,6 @@ _.Zones =
 						i(142286),	-- Plans: Lavaforged Warhammer
 					},
 				}),
-				q(10949, {	-- Entry Into the Black Temple
-					["provider"] = { "n", 18481 },	-- A'dal
-					["coord"] = { 54.3, 44.3, SHATTRATH_CITY },
-					["sourceQuests"] = { 10948 },	-- The Hostage Soul
-				}),
 				q(11550, {	-- Enter, the Deceiver...
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 25167 },	-- General Tiras'alan
