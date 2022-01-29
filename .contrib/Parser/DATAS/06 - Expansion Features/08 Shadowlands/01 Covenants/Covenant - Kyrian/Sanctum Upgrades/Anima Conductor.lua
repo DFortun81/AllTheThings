@@ -20,6 +20,10 @@ local ORSTUS_AND_SOTIROS = n(156340, { -- Larionrider Orstus
 	["coord"] = { 24.5, 22.7, BASTION },
 	["crs"] = { 156339 },	-- Eliminator Sotiros
 	["g"] = {
+		-- TODO: this might be hidden currently due to custom collect bubbleDown, but will be fixed later when the achievement is moved into the achievement section directly
+		crit(28, {	-- Orstus and Sotiros
+			["achievementID"] = 14307,	-- Adventurer of Bastion
+		}),
 		i(184401, {	-- Larion Pouncer (PET!)
 			["description"] = "To be eligible to receive the pet, your Anima Conductor must be upgraded to Rank 3.",
 		}),

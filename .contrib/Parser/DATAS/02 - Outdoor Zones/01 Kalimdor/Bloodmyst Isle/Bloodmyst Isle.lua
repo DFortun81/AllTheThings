@@ -1023,7 +1023,7 @@ _.Zones =
 						},
 					}),
 					q(9633, {	-- The Way to Auberdine
-						["qg"] = 17424,	-- Anchorite Paetheus
+						["qg"] = 17614,	-- Huntress Kella Nightbow
 						["sourceQuest"] = 9632,	-- Newfound Allies
 						["coord"] = { 54.6, 53.9, AZUREMYST_ISLE },
 						["timeline"] = { "removed 4.0.3.10000" },

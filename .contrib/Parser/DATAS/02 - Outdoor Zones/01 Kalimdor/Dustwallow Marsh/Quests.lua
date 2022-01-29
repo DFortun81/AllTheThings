@@ -6,18 +6,6 @@ _.Zones =
 	m(KALIMDOR, {
 		m(DUSTWALLOW_MARSH, {
 			n(QUESTS, {
-				q(11144, {	-- [DEPRECATED]Confirming the Suspicion
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(11214, {	-- [DEPRECATED]Mission to Mudsprocket
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(11201, {	-- [DEPRECATED]The Grimtotem Plot
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(1258,  {	-- ... and Bugs
 					["provider"] = { "n", 4794 },	-- Morgan Stern
 					["coord"] = { 68.2, 48.6, DUSTWALLOW_MARSH },
@@ -109,6 +97,7 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 23579 },	-- Brogg
+					["coord"] = { 41.8, 73.9, DUSTWALLOW_MARSH },
 				}),
 				q(27408, {	-- Banner of the Stonemaul
 					["provider"] = { "n", 23579 },	-- Brogg
@@ -118,6 +107,7 @@ _.Zones =
 				q(11158, {	-- [DEPRECATED]Bloodfen Feathers
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 23579 },	-- Brogg
+					["coord"] = { 41.8, 73.9, DUSTWALLOW_MARSH },
 				}),
 				q(27407, {	-- Bloodfen Feathers
 					["provider"] = { "n", 23579 },	-- Brogg
@@ -132,6 +122,7 @@ _.Zones =
 				q(11217, {	-- [DEPRECATED]Catch a Dragon by the Tail
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 23570 },	-- Gizzix Grimegurgle
+					["coord"] = { 41.5, 72.9, DUSTWALLOW_MARSH },
 				}),
 				q(27413, {	-- Catch a Dragon by the Tail
 					["provider"] = { "n", 23570 },	-- Gizzix Grimegurgle
@@ -154,6 +145,7 @@ _.Zones =
 				q(1173,  {	-- Challenge Overlord Mok'Morokk
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4500 },	-- Overlord Mok'Morokk
+					["coord"] = { 36.2, 31.5, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(10704)),	-- Chillnail Splinter
@@ -176,6 +168,7 @@ _.Zones =
 				q(11162, {	-- Challenge to the Black Dragonflight
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 23579 },	-- Brogg
+					["coord"] = { 41.8, 73.9, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(33237)),	-- Brogg's Battle Harness
@@ -200,6 +193,7 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 23843 },	-- Mordant Grimsby
+					["coord"] = { 55.5, 26.1, DUSTWALLOW_MARSH },
 				}),
 				q(27190, {	-- Cleansing Witch Hill
 					["provider"] = { "n", 23843 },	-- Mordant Grimsby
@@ -212,6 +206,12 @@ _.Zones =
 						i(131650),	-- Grimsby's Chain Cinch
 					},
 				}),
+				q(11144, {	-- [DEPRECATED]Confirming the Suspicion
+					["provider"] = { "n", 23568 },	-- Captain Darill
+					["coord"] = { 46.6, 24.6, DUSTWALLOW_MARSH },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(27426, {	-- Confirming the Suspicion
 					["provider"] = { "n", 23568 },	-- Captain Darill
 					["coord"] = { 46.6, 24.6, DUSTWALLOW_MARSH },
@@ -219,6 +219,8 @@ _.Zones =
 					["sourceQuest"] = 27425,	-- A Grim Connection
 				}),
 				q(11174, {	-- [DEPRECATED]Corrosion Prevention
+					["provider"] = { "n", 23797 },	-- Moxie Steelgrille
+					["coord"] = { 53.5, 56.9, DUSTWALLOW_MARSH },
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27347, {	-- Corrosion Prevention
@@ -271,6 +273,7 @@ _.Zones =
 				q(11156, {	-- [DEPRECATED]Direhorn Raiders
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 23600 },	-- Apprentice Morlann
+					["coord"] = { 46.0, 57.4, DUSTWALLOW_MARSH },
 					["g"] = {
 						i(33240),	-- Grimtotem Earthbinder's Tunic
 						un(REMOVED_FROM_GAME, i(33262)),	-- Morlann's Seal
@@ -343,6 +346,7 @@ _.Zones =
 				q(1169,  {	-- Identifying the Brood
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4501 },	-- Draz'Zilb
+					["coord"] = { 37.1, 33.0, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(9703)),	-- Scorched Cape
@@ -370,11 +374,13 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 4944 },	-- Captain Garran Vimes
+					["coord"] = { 68.1, 48.5, DUSTWALLOW_MARSH },
 				}),
 				q(11124, {	-- [DEPRECATED]Inspecting the Ruins
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4926 },	-- Krog
+					["coord"] = { 36.4, 31.8, DUSTWALLOW_MARSH },
 				}),
 				q(27253, {	-- Inspecting the Ruins (marked as critical on map but not needed for criteria)
 					["provider"] = { "n", 4926 },	-- Krog
@@ -401,6 +407,7 @@ _.Zones =
 				q(1203,  {	-- Jarl Needs a Blade
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4792 },	-- "Swamp Eye" Jarl
+					["coord"] = { 55.4, 26.2, DUSTWALLOW_MARSH },
 					["sourceQuest"] = 1206,	-- Jarl Needs Eyes
 				}),
 				q(27186, {	-- Jarl Needs a Blade
@@ -417,6 +424,7 @@ _.Zones =
 				q(1206,  {	-- Jarl Needs Eyes
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4792 },	-- "Swamp Eye" Jarl
+					["coord"] = { 55.4, 26.2, DUSTWALLOW_MARSH },
 					["sourceQuest"] = 1218,	-- Soothing Spices
 				}),
 				q(27184, {	-- Jarl Needs Eyes
@@ -431,6 +439,7 @@ _.Zones =
 				q(11206, {	-- Justice Dispensed
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 6546 },	-- Tabetha
+					["coord"] = { 46.0, 57.0, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(33230)),	-- Leggings of the Long Road
@@ -459,6 +468,7 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 21042 },	-- Theramore Guard Badge
+					["coord"] = { 68.1, 48.5, DUSTWALLOW_MARSH },
 				}),
 				q(27264, {	-- Lieutenant Paval Reethe
 					["provider"] = { "n", 4944 },	-- Captain Garran Vimes
@@ -504,6 +514,12 @@ _.Zones =
 						i(57845),	-- Swamp Splints
 						i(131648),	-- Frog Stompers
 					},
+				}),
+				q(11214, {	-- [DEPRECATED]Mission to Mudsprocket
+					["provider"] = { "n", 23951 },	-- Lieutenant Aden
+					["coord"] = { 65.0, 47.0, DUSTWALLOW_MARSH },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27248, {	-- Mission to Mudsprocket
 					["provider"] = { "n", 23951 },	-- Lieutenant Aden
@@ -1017,18 +1033,22 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["classes"] = { MAGE },
 				}),
+				q(11201, {	-- [DEPRECATED]The Grimtotem Plot
+					["provider"] = { "n", 4926 },	-- Krog
+					["coord"] = { 36.4, 31.8, DUSTWALLOW_MARSH },
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(27293, {	-- The Grimtotem Plot
 					["provider"] = { "n", 4926 },	-- Krog
 					["coord"] = { 36.4, 31.8, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27292,	-- Return to Krog
 				}),
-				q(27309, {	-- The Grimtotem Plot
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(11169, {	-- The Grimtotem Weapon
-					["u"] = REMOVED_FROM_GAME,
+				q(11169, {	-- [DEPRECATED]The Grimtotem Weapon
 					["provider"] = { "n", 23601 },	-- Apprentice Garion
+					["coord"] = { 46.0, 57.2, DUSTWALLOW_MARSH },
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27336, {	-- The Grimtotem Weapon
 					["provider"] = { "n", 23601 },	-- Apprentice Garion
@@ -1042,9 +1062,10 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(11225, {	-- The Hermit of Witch Hill
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4501 },	-- Draz'Zilb
+					["coord"] = { 37.1, 33.0, DUSTWALLOW_MARSH },
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27182, {	-- The Hermit of Witch Hill
 					["provider"] = { "n", 4501 },	-- Draz'Zilb
@@ -1058,9 +1079,10 @@ _.Zones =
 					["classes"] = { MAGE },
 				}),
 				q(1238,  {	-- The Lost Report
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
+					["coord"] = { 55.4, 25.9, DUSTWALLOW_MARSH },
 					["provider"] = { "o", 20985 },	-- Loose Dirt
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27244, {	-- The Lost Report
 					["coord"] = { 55.4, 25.9, DUSTWALLOW_MARSH },
@@ -1081,8 +1103,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(11173, {	-- [DEPRECATED]The Reagent Thief
-					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 23601 },	-- Apprentice Garion
+					["coord"] = { 46.0, 57.2, DUSTWALLOW_MARSH },
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27339, {	-- The Reagent Thief
 					["provider"] = { "n", 23601 },	-- Apprentice Garion
@@ -1123,8 +1146,9 @@ _.Zones =
 					["sourceQuest"] = 27188,	-- What's Haunting Witch Hill?
 				}),
 				q(11172, {	-- [DEPRECATED]The Zeppelin Crash
-					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 23600 },	-- Apprentice Morlann
+					["coord"] = { 46.0, 57.4, DUSTWALLOW_MARSH },
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27346, {	-- The Zeppelin Crash
 					["provider"] = { "n", 23600 },	-- Apprentice Morlann
@@ -1208,6 +1232,12 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(33252)),	-- Gleaming Scale Breastplate
 					},
 				}),
+				q(11147, {	-- [DEPRECATED]Unleash the Raptors
+					["provider"] = { "n", 23723 },	-- Sergeant Lukas
+					["coord"] = { 46.5, 22.9, DUSTWALLOW_MARSH },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(27243, {	-- Unleash the Raptors
 					["provider"] = { "n", 23723 },	-- Sergeant Lukas
 					["coord"] = { 46.5, 22.9, DUSTWALLOW_MARSH },
@@ -1219,9 +1249,10 @@ _.Zones =
 						i(33265),	-- Pendant of Ferocity
 						i(131662),	-- Crested Chain Epaulets
 					},
-					["altQuests"] = { 11147 },	-- Unleash the Raptors
 				}),
 				q(11184, {	-- [DEPRECATED]WANTED: Goreclaw the Ravenous
+					["provider"] = { "o", 186426 },	-- Wanted Poster (Goreclaw)
+					["coord"] = { 41.7, 73.1, DUSTWALLOW_MARSH },
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27412, {	-- WANTED: Goreclaw the Ravenous
@@ -1238,6 +1269,7 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 23843 },	-- Mordant Grimsby
+					["coord"] = { 55.5, 26.1, DUSTWALLOW_MARSH },
 				}),
 				q(27188, {	-- What's Haunting Witch Hill?
 					["provider"] = { "n", 23843 },	-- Mordant Grimsby

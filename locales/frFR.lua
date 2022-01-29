@@ -2684,6 +2684,7 @@ for key,value in pairs({
 	[353331] = "Planque féerique",	-- Faerie Stash
 	[353332] = "Planque féerique",	-- Faerie Stash
 	[353333] = "Planque féerique",	-- Faerie Stash
+	[353336] = "Trésor secret",	-- Secret Treasure
 	[353380] = "Casse-croûte d’Halis",	-- Halis's Lunch Pail
 	[353472] = "Épée radieuse",	-- Radiant Sword
 	[353500] = "Coffre renforcé en argent",	-- Silver Strongbox

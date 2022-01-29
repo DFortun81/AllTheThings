@@ -7,59 +7,25 @@ _.ExpansionFeatures =
 	tier(SL_TIER, {
 		m(1627, {	-- Torghast
 			n(176761, {	-- Adamant Vault
-				n(ZONE_DROPS, {
-					n(COMMON_BOSS_DROPS, {
-						["crs"] = {
-							179433,	-- Vault Aegis
-							176578,	-- Vault Sentinel
-							179526,	-- Troz'igal the Oppressor
-						},
-						["g"] = {
-							i(187093),	-- Gilded Ornamental Mantle
-							i(187091),	-- Gilded Twin-Scythe Shoulders
-							i(187876),	-- Saurolisk Hatchling Soul (AV)
-							i(185049),	-- Saurolisk Soul (AV)
-						},
-					}),
-					i(187417, {	-- Adamant Vaults Cell
-						["crs"] = {
-							179433,	-- Vault Aegis
-							176578,	-- Vault Sentinel
-						},
-					}),
-					i(187081, {	-- Blackflame Skull Crescent
-						["crs"] = {
-							179526,	-- Troz'igal the Oppressor
-							179433,	-- Vault Aegis
-						},
-					}),
-					i(186549, {	-- Gilded Darknight (PET!)
-						["crs"] = {
-							179526,	-- Troz'igal the Oppressor
-							176578, -- Vault Sentinel
-						},
-					}),
-					i(187094, {	-- Gilded Spike Fortresses
-						["crs"] = {
-							179526,	-- Troz'igal the Oppressor
-						},
-					}),
-					i(187092, {	-- Gilded Shoulder-Shields
-						["crs"] = {
-							179526,	-- Troz'igal the Oppressor
-							176578,	-- Vault Sentinel
-						},
-					}),
-					i(187084, {	-- Jailer's Eye Crescent
-						["crs"] = {
-							179526,	-- Troz'igal the Oppressor
-						},
-					}),
-					i(187025, {	-- Painbringer's Back-Prison
-						["crs"] = {
-							179526,	-- Troz'igal the Oppressor
-						},
-					}),
+				n(COMMON_BOSS_DROPS, {
+					["crs"] = {
+						179433,	-- Vault Aegis
+						176578,	-- Vault Sentinel
+						179526,	-- Troz'igal the Oppressor
+					},
+					["g"] = {
+						i(187093),	-- Gilded Ornamental Mantle
+						i(187091),	-- Gilded Twin-Scythe Shoulders
+						i(187876),	-- Saurolisk Hatchling Soul (AV)
+						i(185049),	-- Saurolisk Soul (AV)
+						i(187417),	-- Adamant Vaults Cell
+						i(187081),	-- Blackflame Skull Crescent
+						i(186549),	-- Gilded Darknight (PET!)
+						i(187094),	-- Gilded Spike Fortresses
+						i(187092),	-- Gilded Shoulder-Shields
+						i(187084),	-- Jailer's Eye Crescent
+						i(187025),	-- Painbringer's Back-Prison
+					},
 				}),
 			}),
 			n(ZONE_DROPS, {

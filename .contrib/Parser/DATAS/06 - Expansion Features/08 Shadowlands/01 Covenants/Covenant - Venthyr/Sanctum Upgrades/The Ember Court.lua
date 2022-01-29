@@ -2344,7 +2344,7 @@ root("HiddenQuestTriggers", {
 			q(62520),	-- 'Clean' criteria for It's Certainly Never Boring
 
 			--q(61935),	-- Stonehad was miserable, Adrestes was elated if it matters. This was at the start of the court - no idea what that was.  It's the first court with decorations though.
-			--q(61536),	-- Miserable Aliothe, Uncomfortable Mikanikos, Unhappy Choofa, Unhappy Alexandros Mograine, triggered after opening Mikanikos chest
+			--q(61536),	-- Miserable Aliothe, Uncomfortable Mikanikos, Unhappy Choofa, Unhappy Alexandros Mograine, triggered after opening Mikanikos chest / New report: First Ember Court with Mikanikos
 
 			--q(61930),	-- Unknown
 			q(61936),	-- Triggered after Restock: Surveillance

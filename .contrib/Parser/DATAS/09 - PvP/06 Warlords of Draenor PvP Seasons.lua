@@ -4926,7 +4926,7 @@ _.PVP =
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
 									i(125474),	-- Wild Combatant's Plate Helmet (H)
-									i(125439),	-- Wild Combatant's Shoulderplates (H)
+									i(125476),	-- Wild Combatant's Shoulderplates (H)
 									i(125472),	-- Wild Combatant's Plate Breastplate (H)
 									i(125473),	-- Wild Combatant's Plate Gloves (H)
 									i(125475),	-- Wild Combatant's Legplates (H)
@@ -4960,7 +4960,7 @@ _.PVP =
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
 									i(125437),	-- Wild Combatant's Helm (H)
-									i(125476),	-- Wild Combatant's Spaulders (H)
+									i(125439),	-- Wild Combatant's Spaulders (H)
 									i(125435),	-- Wild Combatant's Tunic (H)
 									i(125436),	-- Wild Combatant's Gloves (H)
 									i(125438),	-- Wild Combatant's Legguards (H)
@@ -5062,7 +5062,7 @@ _.PVP =
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
 									i(125437),	-- Wild Combatant's Helm (H)
-									i(125476),	-- Wild Combatant's Spaulders (H)
+									i(125439),	-- Wild Combatant's Spaulders (H)
 									i(125435),	-- Wild Combatant's Tunic (H)
 									i(125436),	-- Wild Combatant's Gloves (H)
 									i(125438),	-- Wild Combatant's Legguards (H)
@@ -5096,7 +5096,7 @@ _.PVP =
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
 									i(125474),	-- Wild Combatant's Plate Helmet (H)
-									i(125439),	-- Wild Combatant's Shoulderplates (H)
+									i(125476),	-- Wild Combatant's Shoulderplates (H)
 									i(125472),	-- Wild Combatant's Plate Breastplate (H)
 									i(125473),	-- Wild Combatant's Plate Gloves (H)
 									i(125475),	-- Wild Combatant's Legplates (H)
@@ -5164,7 +5164,7 @@ _.PVP =
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
 									i(125437),	-- Wild Combatant's Helm (H)
-									i(125476),	-- Wild Combatant's Spaulders (H)
+									i(125439),	-- Wild Combatant's Spaulders (H)
 									i(125435),	-- Wild Combatant's Tunic (H)
 									i(125436),	-- Wild Combatant's Gloves (H)
 									i(125438),	-- Wild Combatant's Legguards (H)
@@ -5266,7 +5266,7 @@ _.PVP =
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
 									i(125474),	-- Wild Combatant's Plate Helmet (H)
-									i(125439),	-- Wild Combatant's Shoulderplates (H)
+									i(125476),	-- Wild Combatant's Shoulderplates (H)
 									i(125472),	-- Wild Combatant's Plate Breastplate (H)
 									i(125473),	-- Wild Combatant's Plate Gloves (H)
 									i(125475),	-- Wild Combatant's Legplates (H)

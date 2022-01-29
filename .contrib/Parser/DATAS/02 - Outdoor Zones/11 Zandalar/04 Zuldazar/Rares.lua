@@ -184,7 +184,6 @@ _.Zones =
 					},
 				}),
 				n(136413, {	-- Syrawon the Dominus
-					["repeatable"] = true,	-- temp
 					["questID"] = 51080,
 					["coord"] = { 53.80, 44.84, ZULDAZAR },
 					["g"] = {

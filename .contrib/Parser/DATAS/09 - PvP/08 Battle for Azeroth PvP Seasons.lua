@@ -368,6 +368,23 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(161674)),	-- Dread Gladiator's Medallion
 				}),
 			}),
+			n(QUESTS, {
+				q(53457, {	-- Quartermaster's Bounty
+					["providers"] = {
+						{ "n", 143560 },	-- Marshal Gabriel
+						{ "n", 143555 },	-- Xander Silberman
+					},
+					["isWeekly"] = true,
+					["coords"] = {
+						{ 56.4, 25.8, BORALUS },
+						{ 51.6, 58.2, ZANDALAR },
+					},
+					["timeline"] = { "added 8.0", "removed 8.2" },
+					["g"] = {
+						i(159570),			-- Battleborn Sigil
+					},
+				}),
+			}),
 			un(REMOVED_FROM_GAME, i(163827, {	-- Quartermaster's Coin
 				un(REMOVED_FROM_GAME, i(159570)),	-- Battleborn Sigil Dread Combatant
 				un(REMOVED_FROM_GAME, i(164580)),	-- Battleborn Sigil Dread Challenger
@@ -775,6 +792,23 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(165806)),	-- Sinister Gladiator's Maledict
 					un(REMOVED_FROM_GAME, i(165055)),	-- Sinister Gladiator's Medallion
 					un(REMOVED_FROM_GAME, i(165807)),	-- Sinister Gladiator's Safeguard
+				}),
+			}),
+			n(QUESTS, {
+				q(53457, {	-- Quartermaster's Bounty
+					["providers"] = {
+						{ "n", 143560 },	-- Marshal Gabriel
+						{ "n", 143555 },	-- Xander Silberman
+					},
+					["isWeekly"] = true,
+					["coords"] = {
+						{ 56.4, 25.8, BORALUS },
+						{ 51.6, 58.2, ZANDALAR },
+					},
+					["timeline"] = { "added 8.0", "removed 8.2" },
+					["g"] = {
+						i(164951),			-- Battleborn Sigil
+					},
 				}),
 			}),
 			un(REMOVED_FROM_GAME, i(163827, {	-- Quartermaster's Coin
@@ -1659,7 +1693,7 @@ _.PVP =
 						{ 56.4, 25.8, BORALUS },
 					},
 					["g"] = {
-						i(171095),	-- Warlord's Trophy
+						i(172895),	-- Warlord's Trophy
 					},
 				}),
 			}),

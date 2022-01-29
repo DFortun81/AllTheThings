@@ -2685,6 +2685,7 @@ for key,value in pairs({
 	[353331] = "Depósito das Fadas",	-- Faerie Stash
 	[353332] = "Depósito das Fadas",	-- Faerie Stash
 	[353333] = "Depósito das Fadas",	-- Faerie Stash
+	[353336] = "Tesouro Secreto",	-- Secret Treasure
 	[353380] = "Lancheira de Halis",	-- Halis's Lunch Pail
 	[353472] = "Espada Radiante",	-- Radiant Sword
 	[353500] = "Caixa-forte de Prata",	-- Silver Strongbox

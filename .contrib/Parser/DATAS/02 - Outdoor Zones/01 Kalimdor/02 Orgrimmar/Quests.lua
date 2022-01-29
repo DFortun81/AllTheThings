@@ -448,7 +448,7 @@ _.Zones =
 				}),
 				q(26293, {	-- Machines of War
 					["sourceQuests"] = { 28717 },	-- Warchief's Command: Twilight Highlands!
-					["provider"] = { "n", 14720 },	-- High Overlord Saurfang
+					["provider"] = { "n", 3144 },	-- Eitrigg
 					["coord"] = { 48.6, 71.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
@@ -714,7 +714,7 @@ _.Zones =
 				q(28909, {	-- Sauranok Will Point the Way
 					["sourceQuests"] = { 26294 },	-- Weapons of Mass Dysfunction
 					["isBreadcrumb"] = true,
-					["provider"] = { "n", 14720 },	-- High Overlord Saurfang
+					["provider"] = { "n", 3144 },	-- Eitrigg
 					["coord"] = { 48.6, 71.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),

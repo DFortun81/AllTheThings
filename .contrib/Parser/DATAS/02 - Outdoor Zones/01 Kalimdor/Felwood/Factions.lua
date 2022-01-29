@@ -48,6 +48,7 @@ _.Zones =
 								["provider"] = { "n", 11557 },	-- Meilosh
 								["coord"] = { 64.8, 5.2, FELWOOD },
 								["requireSkill"] = TAILORING,
+								["cost"] = { { "i", 14342, 2 } },	-- 2x Mooncloth
 								["g"] = {
 									recipe(19435),	-- Mooncloth Boots
 								},

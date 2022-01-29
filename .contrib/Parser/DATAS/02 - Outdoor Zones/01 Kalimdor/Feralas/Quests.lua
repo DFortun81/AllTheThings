@@ -275,6 +275,7 @@ _.Zones =
 				}),
 				q(25450, {	-- Improved Quality
 					["provider"] = { "n", 40226 },	-- Pratt McGrubben
+					["coord"] = { 45.4, 41.3, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25449,	-- The Mark of Quality
 					["g"] = {

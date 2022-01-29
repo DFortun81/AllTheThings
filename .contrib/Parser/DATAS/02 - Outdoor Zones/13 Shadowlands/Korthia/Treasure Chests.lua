@@ -444,6 +444,7 @@ _.Zones =
 						i(187023),	-- Instructor's Mantle
 						i(187020),	-- Necrobinder's Shoulderpads
 						i(187097),	-- Construct's Shoulderplates
+						i(187015),	-- Soulfeeder's Shoulderguards
 					},
 				}),
 			}),

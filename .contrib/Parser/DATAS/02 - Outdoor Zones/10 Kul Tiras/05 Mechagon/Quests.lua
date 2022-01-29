@@ -181,7 +181,7 @@ root("Zones", {
 				q(54965, {	-- Chopped Bots -- TODO: verify sourceQuest. Not always available. Possibly on some kind of a rotation? -- also popped 55480
 					["provider"] = { "n", 150086 },	-- Bolten Springspark
 					["coord"] = { 63.1, 39.2, MECHAGON },
-					["races"] = HORDE_ONLY,
+					["_drop"] = { "isDaily" },
 				}),
 				q(56327, {	-- Chopped Bots
 					["provider"] = { "n", 150086 },	-- Bolten Springspark
@@ -536,6 +536,7 @@ root("Zones", {
 					["provider"] = { "n", 153750 },	-- Koupal Oilshins
 					["coord"] = { 59.0, 31.6, MECHAGON },
 					["sourceQuest"] = 55729,	-- The Resistance Needs You!
+					["_drop"] = { "isDaily" },
 				}),
 				q(55734, {	-- Drill Rig Construction
 					["provider"] = { "n", 153670 },	-- Rustbolt Resistance Fighter (Prince Erazmin)

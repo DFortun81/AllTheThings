@@ -914,11 +914,13 @@ _.HiddenQuestTriggers = {
 		q(25198),	-- Winnoa Pineforest - completed with quest 24807
 		q(25305),	-- Never Look Back- completed with quest 25304
 		q(26379),	-- In Aid of the Refugees - completed with quest 13601
+		q(27309),	-- The Grimtotem Plot - completed with quest 27293
 		q(29051),	-- Cub's First Toy - completed with quest 29040
 		q(29052),	-- A Cub's Cravings - completed with quest 29035
 		q(29053),	-- 'Borrowing' From the Winterfall - completed with quest 29037
 		q(29405),	-- The Lesson of the Iron Staff - completed with quest 30027 & 30033 & 30334 & 30335 & 30336 & 30337 & 30338
 		q(29597),	-- The End of the Exarch - completed with quest 29596
+		q(29673),	-- The Black Morass - completed with quest 10296
 		q(30817),	-- The Healing of Shen-zin Su - completed with quest 29799
 		q(30818),	-- A New Fate - completed with quest 29800
 		q(30988),	-- The Alliance Way - completed with quest 31013
@@ -938,6 +940,7 @@ _.HiddenQuestTriggers = {
 		q(34435),	-- Find Ga'nar - completed with quest 34434 & 34740
 		q(34438),	-- Regarding Enormous Tanks - completed with quest 34958
 		q(34506),	-- Bonus Objective: Kill Grimfrost Ogres - completed with quest 33145
+		q(34565),	-- Tearing Up Talador - completed with quest 34898
 		q(34570),	-- REUSE - completed with quest 34154 & 34564
 		q(34817),	-- Altar Altercation - completed with quest 34423
 		q(35251),	-- The Bounty of Bladespire - completed with quest 33657
@@ -978,10 +981,6 @@ _.HiddenQuestTriggers = {
 		--q(33264),	-- A Proper Burial - TODO: figure out from where it gets completed
 		--q(34734),	-- The Loyalty of Olin Umberhide - TODO: figure out from where it gets completed
 		--q(37062),	-- Tricks of the Trade - TODO: figure out from where it gets completed
-
-		-- Spires of Arak
-		--q(34565),	-- Tearing Up Talador - TODO: figure out from where it gets completed
-
 
 		-------------------
 		---   CLASSIC   ---
@@ -1657,29 +1656,6 @@ _.HiddenQuestTriggers = {
 		q(46801),	-- Ship - Val'sharah — triggered when turning in "Holding the Ramparts" during Azsuna assault
 		q(47062),	-- Tracking Quest — triggered when killing Dread Vizier Gra'tork in Azsuna invasion scenario
 		q(47196),	-- Battle for Val'sharah — triggered when turning in actual invasion quest, #45856
-
-		--	Invasion points
-		--	secondary quests trigger multiple times throughout the week (aka if you complete it on tuesday and wednesday, both official + secondary quest pop both days).
-		--	secondary quests don't seem to be tied to which boss you kill OR loot (have gotten them when receiving rep tokens, unsullied tokens, blue drops, and even just AP/a grey item).
-		q(49195),	-- Greater Invasion Point: Occularus - weekly completion
-		q(49176),	-- Greater Invasion Point: Occularus - bonus roll used
-		q(49196),	-- Greater Invasion Point: Pit Lord Vilemus - weekly completion
-		q(49174),	-- Greater Invasion Point: Pit Lord Vilemus - bonus roll used
-		q(49197),	-- Greater Invasion Point: Sotanathor - weekly completion
-		q(49177),	-- Greater Invasion Point: Sotanathor - bonus roll used
-		--q(),	-- Greater Invasion Point: Sotanathor - sotanathor kill credit
-		q(49198),	-- Greater Invasion Point: Inquisitor Meto - weekly completion
-		q(49172),	-- Greater Invasion Point: Inquisitor Meto - bonus roll used
-		q(49199),	-- Greater Invasion Point: Matron Folnuna - weekly completion
-		q(49173),	-- Greater Invasion Point: Matron Folnuna - folnuna bonus roll
-		q(49213),	-- triggered upon completing Aurinor, but not the official quest.
-		q(49215),	-- triggered upon completing Bonich, but not the official quest.
-		q(49211),	-- triggered upon completing Cen'gar, but not the official quest.
-		q(49214),	-- triggered upon completing Naigtal, but not the official quest.
-		q(48675),	-- Lockout Tracking - Normal - Marsh — triggered on character's first completion of Naigtal
-		q(49212),	-- triggered upon completing Sangua, but not the official quest.
-		q(49210),	-- triggered upon completing Val, but not the official quest.
-		q(48672),	-- Lockout Tracking - Normal - Ice — val first completion?
 
 		--	Rares
 		q(43961),	-- Azsuna - WQ rare: Bestrix

@@ -267,7 +267,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 -- They must have started replacing them, but decided "nah this is dumb lol"
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
-		q(29673),	-- The Black Morass
 		q(29672),	-- The Opening of the Dark Portal
 	}),
 }));
