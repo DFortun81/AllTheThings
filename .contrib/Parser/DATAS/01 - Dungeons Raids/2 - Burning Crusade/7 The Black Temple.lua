@@ -32,6 +32,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 					["sourceQuest"] = 10949,	-- Entry Into the Black Temple
 					["coord"] = { 65.2, 44.0, SHADOWMOON_VALLEY },
 					["timeline"] = { "removed 3.0.1" },
+					["lvl"] = lvlsquish(70, 30, 70),
 					["groups"] = {
 						removeclassicphase(ach(431, {	-- Hand of A'dal (Achievement)
 							-- #if BEFORE 3.0.1
@@ -52,6 +53,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 					["altQuests"] = { 10985 },	-- A Distraction for Akama (legacy version)
 					["coord"] = { 65.2, 43.9, SHADOWMOON_VALLEY },
 					["timeline"] = { "added 3.0.1" },
+					["lvl"] = lvlsquish(70, 30, 70),
 					["groups"] = {
 						i(32649),	-- Medallion of Karabor
 					},
@@ -61,6 +63,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 					["qg"] = 18481,	-- A'dal
 					["sourceQuest"] = 10948,	-- The Hostage Soul
 					["coord"] = { 54.3, 44.3, SHATTRATH_CITY },
+					["lvl"] = lvlsquish(70, 30, 70),
 				}),
 				q(10957, {	-- Redemption of the Ashtongue
 					["qg"] = 23158,	-- Seer Kanai
@@ -82,6 +85,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 						13429,	-- A Distraction for Akama
 						-- #endif
 					},
+					["lvl"] = lvlsquish(70, 30, 70),
 				}),
 				q(10959, {	-- The Fall of the Betrayer
 					["qg"] = 23158,	-- Seer Kanai
@@ -94,6 +98,12 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 						}),
 						i(32757),	-- Blessed Medallion of Karabor
 					},
+				}),
+				q(10948, {	-- The Hostage Soul
+					["qg"] = 21700,	-- Akama
+					["sourceQuest"] = 10947,	-- An Artifact From the Past
+					["coord"] = { 58.1, 48.2, SHADOWMOON_VALLEY },
+					["lvl"] = lvlsquish(70, 30, 70),
 				}),
 			}),
 			n(VENDORS, {
