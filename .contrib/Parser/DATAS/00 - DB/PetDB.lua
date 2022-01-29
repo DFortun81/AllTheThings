@@ -1077,9 +1077,9 @@ pet(189379, 3234);	-- Viperid Menace
 pet(189585, 3237);	-- E'rnee
 -- Torghast
 pet(188679, 3221);	-- Lightless Tormentor
-
+-- Treasure
+pet(187735, 3172);	-- Geordy
 -- NOT SOURCED PROPERLY --
-pet(187735, 3172);	-- Geordy (Anima Shell?) From Treasure?
 -- No Item related to them.
 --[[
 3215

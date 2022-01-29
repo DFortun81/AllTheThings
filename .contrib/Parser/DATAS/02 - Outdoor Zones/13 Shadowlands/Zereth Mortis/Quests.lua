@@ -880,7 +880,7 @@ root("Zones", m(SHADOWLANDS, {
 	}),
 }));
 
-root("HiddenQuestTrigger", {
+root("HiddenQuestTriggers", {
 	q(63850),	-- Triggered when enter ZM (Might be WQ). Triggered again today while running around in ZM
 	q(63766),	-- Triggered when Exploring (Might have to do with The Matriarch(183505))
 	q(65621),	-- Triggered when HS to ZM

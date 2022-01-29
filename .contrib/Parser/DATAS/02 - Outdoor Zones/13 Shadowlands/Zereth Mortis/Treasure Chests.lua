@@ -12,7 +12,7 @@ root("Zones", m(SHADOWLANDS, {
 				i(190189),	-- Sandworn Relic
 			}),
 			o(375408, {	-- Architect's Reserve
-				["description"] = "Only Available after Tahli's Questline",
+				["description"] = "Only available after unlocking Protoform Synthesis: Mount.",
 				["coord"] = { 61.2, 37.2, ZERETH_MORTIS },
 				["questID"] = 65520,
 				["g"] = {
@@ -37,6 +37,7 @@ root("Zones", m(SHADOWLANDS, {
 					crit(27, {	-- Bushel of Progenitor Produce
 						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
 					}),
+					i(190853),	-- Bushel of Mysterious Fruit (TOY!)
 					i(189451, {	-- Chef Pocopoc
 						["questID"] = 65524,
 						["g"] = {
@@ -48,7 +49,7 @@ root("Zones", m(SHADOWLANDS, {
 				},
 			}),
 			o(375382, {	-- Crushed Supply Crate
-				["description"] = "To open it you need to pick up a Jiro Hammer(189768), which is near (@ 57.6 62.4 in 'bowl' of big orb).",
+				["description"] = "To open it you need to pick up a Jiro Hammer(189768). Ontop of the rock there is a repair tool that you can use to trade with the nearby Jiros for a Jiro Hammer.",
 				["coord"] = { 56.8, 64.2, ZERETH_MORTIS },
 				["questID"] = 65489,
 				["g"] = {
@@ -58,7 +59,7 @@ root("Zones", m(SHADOWLANDS, {
 				},
 			}),
 			o(370140, {	-- Damaged Jiro Stash
-				["description"] = "Above",
+				["description"] = "Jumping puzzle.",
 				["coord"] = { 38.2, 37.2, ZERETH_MORTIS },
 				["questID"] = 64667,
 				["g"] = {
@@ -69,7 +70,7 @@ root("Zones", m(SHADOWLANDS, {
 				},
 			}),
 			o(375354, {	-- Domination Cache
-				["description"] = "The surronding trash drops the key.",
+				["description"] = "The mob Mawsworn Inquisitor has a 1-2% drop chance for the key.",
 				["coord"] = { 60, 18, ZERETH_MORTIS },
 				["questID"] = 65465,
 				["cost"] = { { "i", 189704, 1}, },	-- 1xDominance Key
@@ -78,6 +79,7 @@ root("Zones", m(SHADOWLANDS, {
 						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
 					}),
 					i(189863),	-- Spatial Opener
+					i(190638),	-- Tormented Mawsteel Greatsword
 				},
 			}),
 			o(375413, {	-- Drowned Broker Supplies
@@ -99,6 +101,7 @@ root("Zones", m(SHADOWLANDS, {
 				},
 			}),
 			o(375376, {	-- Fallen Vault
+				["description"] = "Reaching this treasure is easy but the only way away is via Flying/HS or Teleport abilities.",
 				["coord"] = { 51.6, 9.9, ZERETH_MORTIS },
 				["questID"] = 65487,
 				["g"] = {
@@ -108,7 +111,7 @@ root("Zones", m(SHADOWLANDS, {
 				},
 			}),
 			o(375405, {	-- Filched Artifact
-				["description"] = "Jumping Puzzle on the spheres",
+				["description"] = "Jumping Puzzle, ontop of the tree ring.",
 				["coord"] = { 49.8, 87.3, ZERETH_MORTIS },
 				["questID"] = 65503,
 				["g"] = {
@@ -130,7 +133,7 @@ root("Zones", m(SHADOWLANDS, {
 				},
 			}),
 			o(375369, {	-- Gnawed Valise
-				["description"] = "On the big rock.",
+				["description"] = "Jumping Puzzle, Start on the top of the nearby vault. On the big rock.",
 				["coord"] = { 39, 73.2, ZERETH_MORTIS },
 				["questID"] = 65480,
 				["g"] = {
@@ -140,7 +143,7 @@ root("Zones", m(SHADOWLANDS, {
 				},
 			}),
 			o(375484, {	-- Grateful Boon
-				["description"] = "Touch all the pets around the npc.",
+				["description"] = "Pet all the pets in this area.",
 				["coord"] = { 37.2, 78.2, ZERETH_MORTIS },
 				["questID"] = 65545,
 				["g"] = {
@@ -151,7 +154,7 @@ root("Zones", m(SHADOWLANDS, {
 				},
 			}),
 			o(373543, {	-- Library Vault
-				["description"] = "There are tablets around the Cave. The First one at (57.9,78.1) after that a new tablet will spawn in the room. This will happened four times in total.",
+				["description"] = "There are tablets around the Cave. The correct one is located in the back at 57.9 78.9.",
 				["coord"] = { 58.9, 77, ZERETH_MORTIS },
 				["questID"] = 65173,
 				["g"] = {
@@ -171,7 +174,7 @@ root("Zones", m(SHADOWLANDS, {
 				}
 			}),
 			o(375411, {	-- Mistaken Ovoid
-				["description"] = "Inside the cave. Need to collect 5xLost Ovoids.",
+				["description"] = "Inside the cave. Need to collect 5xLost Ovoids around Zereth Mortis.",
 				["coord"] = { 53.6, 72.2, ZERETH_MORTIS },
 				["questID"] = 65522,
 				["cost"] = { { "i", 190239, 5 } }, 	-- 5xLost Ovoid
@@ -179,6 +182,7 @@ root("Zones", m(SHADOWLANDS, {
 					crit(16, {	-- Mistaken Ovoid
 						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
 					}),
+					i(189435),	-- Schematic: Multichicken
 				},
 			}),
 			o(375422, {	-- Overgrown Protofruit
@@ -189,6 +193,7 @@ root("Zones", m(SHADOWLANDS, {
 					crit(15, {	-- Overgrown Protofruit
 						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
 					}),
+					i(190953),	-- Protofruit Flesh
 				},
 			}),
 			o(375423, {	-- Offering to the First Ones
@@ -202,7 +207,7 @@ root("Zones", m(SHADOWLANDS, {
 				},
 			}),
 			o(375481, {	-- Pilfered Curio
-				["description"] = "Currently needs flying to reach this pillar.",
+				["description"] = "You need flying/teleport to get here, ontop of the pillar.",
 				["coord"] = { 60.8, 42.9, ZERETH_MORTIS },
 				["questID"] = 65542,
 				["g"] = {
@@ -220,7 +225,7 @@ root("Zones", m(SHADOWLANDS, {
 				},
 			}),
 			o(375485, {	-- Protoflora Harvester
-				["description"] = "Easiest to use Venthyr Teleport",
+				["description"] = "Jumping Puzzle. Go around to get ontop of the rock behind the treasure and jump down.",
 				["coord"] = { 52.8, 71.4, ZERETH_MORTIS },
 				["questID"] = 65546,
 				["g"] = {
@@ -231,7 +236,7 @@ root("Zones", m(SHADOWLANDS, {
 				},
 			}),
 			o(375478, {	-- Protomineral Extractor
-				["description"] = "Use the cosmic system to get to the top and use some form of glide",
+				["description"] = "Use the cosmic system to get to the top and use some form of glide/teleport/flying.",
 				["coord"] = { 46.6, 31, ZERETH_MORTIS },
 				["questID"] = 65540,
 				["g"] = {
@@ -242,7 +247,7 @@ root("Zones", m(SHADOWLANDS, {
 				},
 			}),
 			o(375493, {	-- Ripened Protopear
-				["description"] = "Available inside the Blooming Fundary(63.2, 73.1) during Glimmercanes Questline(Need Sopranian Understanding).",
+				["description"] = "Available inside the Blooming Foundary(63.2, 73.1) during Glimmercanes Questline(Need Sopranian Understanding). You need to collect 5 Pollen Cloud buffs(Green Clouds).",
 				["coord"] = { 65.4, 47.1, 2027 },
 				["questID"] = 65566,
 				["g"] = {
@@ -260,6 +265,7 @@ root("Zones", m(SHADOWLANDS, {
 				},
 			}),
 			o(375281, {	-- Stolen Relic
+				["description"] = "Jumping Puzzle.",
 				["coord"] = { 37.9, 65.2, ZERETH_MORTIS },
 				["questID"] = 65447,
 				["g"] = {
@@ -269,7 +275,7 @@ root("Zones", m(SHADOWLANDS, {
 				},
 			}),
 			o(375483, {	-- Stolen Scroll
-				["description"] = "I'm not sure how to get there. I used Venthyr teleport around the rocks.",
+				["description"] = "Jumping Puzzle, climb ontop of the slumbering vault in Haven.",
 				["coord"] = { 34, 67.6, ZERETH_MORTIS },
 				["questID"] = 65543,
 				["g"] = {
@@ -280,7 +286,7 @@ root("Zones", m(SHADOWLANDS, {
 				},
 			}),
 			o(369757, {	-- Submerged Chest
-				["description"] = "Bring Orb to pump.",
+				["description"] = "Bring Orb at 59,4, 76,8 to the pump.",
 				["coord"] = { 58.8, 73.1, ZERETH_MORTIS },
 				["questID"] = 64545,
 				["g"] = {
@@ -299,7 +305,7 @@ root("Zones", m(SHADOWLANDS, {
 				},
 			}),
 			o(374976, {	-- Symphonic Vault
-				["description"] = "The Broken Automa next to chest will give you sound queues, press the remaning 4 Broken Consonoles in the correct order",
+				["description"] = "The Broken Automa next to chest will give you sound queues, press the remaning 4 Broken Consonoles in the correct order. With your back against the entrance:\nTOP RIGHT\nDOWN LEFT\nDOWN RIGHT\nTOP LEFT.",
 				["coord"] = { 52.7, 63, ZERETH_MORTIS },
 				["questID"] = 65270,
 				["g"] = {
@@ -310,7 +316,7 @@ root("Zones", m(SHADOWLANDS, {
 				},
 			}),
 			o(375492, {	-- Syntactic Vault
-				["description"] = "Inside a cave. Now you need to touch 6 glowing things on columns with wierd symbols. Each action give buff. Need to stack 6 (touch same amount of pylons) times and then touch glowing thing. Coords:\n77.0, 58.9\n77.0, 60.3\n78.1, 53.3\n76.8, 46.6\n81.2, 50.4\n80.9, 56.2",
+				["description"] = "Inside a cave. Now you need to touch 6 glowing things on columns with symbols all over the island. Each action give buff. Need to stack 6 (touch same amount of pylons) times and then touch glowing thing. Coords:\n77.0, 58.9\n77.0, 60.3\n78.1, 53.3\n76.8, 46.6\n81.2, 50.4\n80.9, 56.2",
 				["coord"] = { 77.5, 58.2, ZERETH_MORTIS },
 				["questID"] = 65565,
 				["g"] = {
@@ -327,9 +333,8 @@ root("Zones", m(SHADOWLANDS, {
 					crit(4, {	-- Template Archive
 						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
 					}),
-					i(190632),	-- Cypher-Etched Ring
 					i(190060, {	-- Adventurous Pocopoc
-						--["questID"] = ,
+						["questID"] = 65527,
 						["g"] = {
 							crit(4, {	-- Adventurous Pocopoc
 								["achievementID"] = 15508,	-- Fashion of the First Ones
@@ -458,11 +463,14 @@ root("Zones", m(SHADOWLANDS, {
 				},
 			}),
 			-- Repeatable Chest IDK if it has questID
-			o(373568, {	-- Locked Provis Cache
+			o(373568, {	-- Provis Cache
 				["description"] = "Use Firim's Spare Forge-tap to gain 15xEphemera Strands(187728) to get Ephemera Orb(187787), not guaranteed.",
 				["coord"] = { 42, 51.9, ZERETH_MORTIS },
 				["questID"] = 65183,
 				["cost"] = { { "i", 188231, 1 }, },	-- 1xProvis Cache Key
+				["g"] = {
+					i(187735),	-- Geordy (PET!)
+				},
 			}),
 			n(185502, {	-- Pulp-Covered Relic
 				["description"] = "Talk to this chest multiple times and kill add waves.",

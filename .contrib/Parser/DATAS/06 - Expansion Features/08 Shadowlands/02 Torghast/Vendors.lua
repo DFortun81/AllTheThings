@@ -79,9 +79,3 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
-
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	tier(SL_TIER, {
-		i(190638),	-- Tormented Mawsteel Greatsword
-	}),
-}));

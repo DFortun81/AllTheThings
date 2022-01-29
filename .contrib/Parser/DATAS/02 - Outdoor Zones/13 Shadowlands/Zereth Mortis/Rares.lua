@@ -27,11 +27,7 @@ root("Zones", m(SHADOWLANDS, {
 					i(190003),	-- Skyward Savior's Talon
 					i(190731),	-- Deceiver's Illusionary Signet
 					i(190729),	-- Vigorous Sentinel's Seal
-					i(187837, {	-- Schematic: Erratic Genesis Matrix (RECIPE!)
-						["recipeID"] = 360126,	-- Erratic Genesis Matrix
-						["requireSkill"] = ENGINEERING,
-					}),
-					i(187847, {	-- Design: Devourer Essence Stone (RECIPE!)
+					i(187847, {	-- Design: Devourer Essence Stone (RECIPE!) (Stargorger?)
 						["recipeID"] = 360317,	-- Devourer Essence Stone
 						["requireSkill"] = JEWELCRAFTING,
 					}),
@@ -86,6 +82,10 @@ root("Zones", m(SHADOWLANDS, {
 					i(189985),	-- Curtain of Untold Realms
 					i(189999),	-- Dark Sky Gavel
 					i(189930),	-- Restraints of Boundless Chaos
+					i(187837, {	-- Schematic: Erratic Genesis Matrix (RECIPE!)
+						["recipeID"] = 360126,	-- Erratic Genesis Matrix
+						["requireSkill"] = ENGINEERING,
+					}),
 				},
 			}),
 			n(184409, {	-- Euv'ouk

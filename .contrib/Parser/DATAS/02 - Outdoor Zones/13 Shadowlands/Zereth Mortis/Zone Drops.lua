@@ -5,7 +5,9 @@ root("Zones", m(SHADOWLANDS, {
 	m(ZERETH_MORTIS, {
 		n(ZONE_DROPS, {
 			i(186559),	-- Grappling Gauntlet
-			i(189704),	-- Dominance Key
+			i(189704, {	-- Dominance Key
+				["cr"] = 181403,	-- Mawsworn Inquisitor
+			}),
 			-- Epic Randoms?
 			i(188047),	-- Haven Guard's Cudgel
 			i(188048),	-- Truthseeker's Staff
