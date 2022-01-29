@@ -214,6 +214,11 @@ root("Zones", m(SHADOWLANDS, {
 					["provider"] = { "i", 189465 },	-- Schematic: Genesis Crawler
 					["coord"] = { 31.5, 50.3, ZERETH_MORTIS },
 				}),
+				q(65680, {	-- Schematic Reassimilation: Heartbond Lupine
+					["sourceQuests"] = { 65427 },	-- A New Architect
+					["provider"] = { "i", 190585 },	-- Schematic: Heartbond Lupine
+					["coord"] = { 52.8, 63.6, ZERETH_MORTIS },
+				}),
 				q(65375, {	-- Schematic Reassimilation: Pale Regal Cervid
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189455 },	-- Schematic: Pale Regal Cervid
@@ -227,6 +232,11 @@ root("Zones", m(SHADOWLANDS, {
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189460 },	-- Schematic: Raptora Swooper
 					["coord"] = { 67.4, 40.2, ZERETH_MORTIS },
+				}),
+				q(65387, {	-- Schematic Reassimilation: Scarlet Helicid
+					["sourceQuests"] = { 65427 },	-- A New Architect
+					["provider"] = { "i", 189464 },	-- Schematic: Scarlet Helicid
+					["coord"] = { 47.7, 9.6, ZERETH_MORTIS },
 				}),
 				q(65379, {	-- Schematic Reassimilation: Sundered Zerethsteed
 					["sourceQuests"] = { 65427 },	-- A New Architect
@@ -254,11 +264,6 @@ root("Zones", m(SHADOWLANDS, {
 					["provider"] = { "i", 189468 },	-- Schematic: Goldplate Bufonid
 					["coord"] = { , , ZERETH_MORTIS },
 				}),
-				q(65680, {	-- Schematic Reassimilation: Heartbond Lupine
-					["sourceQuests"] = { 65427 },	-- A New Architect
-					["provider"] = { "i", 190585 },	-- Schematic: Heartbond Lupine
-					["coord"] = { , , ZERETH_MORTIS },
-				}),
 				q(65390, {	-- Schematic Reassimilation: Ineffable Skitterer
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189467 },	-- Schematic: Ineffable Skitterer
@@ -277,11 +282,6 @@ root("Zones", m(SHADOWLANDS, {
 				q(65394, {	-- Schematic Reassimilation: Russet Bufonid
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189471 },	-- Schematic: Russet Bufonid
-					["coord"] = { , , ZERETH_MORTIS },
-				}),
-				q(65387	, {	-- Schematic Reassimilation: Scarlet Helicid
-					["sourceQuests"] = { 65427 },	-- A New Architect
-					["provider"] = { "i", 189464 },	-- Schematic: Scarlet Helicid
 					["coord"] = { , , ZERETH_MORTIS },
 				}),
 				q(65384	, {	-- Schematic Reassimilation: Serenade
@@ -423,8 +423,15 @@ root("Zones", m(SHADOWLANDS, {
 						i(189472),	-- Schematic: Vespoid Flutterer
 					},
 				}),
+				o(375981, {	-- Protoform Schematic
+					["description"] = "Atop the arch.",
+					["coord"] = { 47.7, 9.6, ZERETH_MORTIS },
+					["g"] = {
+						i(189464),	-- Schematic: Scarlet Helicid
+					},
+				}),
 				o(375915, {	-- Glimmer of Serenity
-					["description"] = "Multiple spawn places.",
+					["description"] = "Multiple spawn places. Usually on top of an orb.",
 					["coords"] = {
 						{ 50, 11, ZERETH_MORTIS },
 						{ 46.9, 11.2, ZERETH_MORTIS },
@@ -436,6 +443,8 @@ root("Zones", m(SHADOWLANDS, {
 						{ 60.4, 25.3, ZERETH_MORTIS },
 						{ 52.9, 80.7, ZERETH_MORTIS },
 						{ 50.2, 32.2, ZERETH_MORTIS },
+						{ 67, 16, ZERETH_MORTIS },
+						{ 32.8, 39.3, ZERETH_MORTIS },
 					},
 					["g"] = {
 						i(189168),	-- Glimmer of Serenity
@@ -447,6 +456,7 @@ root("Zones", m(SHADOWLANDS, {
 						{ 77.5, 59, ZERETH_MORTIS },
 						{ 77.4, 45.4, ZERETH_MORTIS },
 						{ 77.6, 60.4, ZERETH_MORTIS },
+						{ 58.7, 89.8, ZERETH_MORTIS },
 					},
 					["g"] = {
 						i(189172),	-- Crystallized Echo of the First Song

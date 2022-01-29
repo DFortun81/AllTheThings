@@ -592,6 +592,26 @@ root("Zones", m(SHADOWLANDS, {
 				["provider"] = { "n", 180950 },	-- Avna
 				["coord"] = { 34.3, 65.9, ZERETH_MORTIS },
 			}),
+			q(65725, {	-- The Burrowed Bufonid
+				["sourceQuests"] = { 65727 },	-- The Burrowed Bufonid
+				["provider"] = { "n", 180950 },	-- Avna
+				["coord"] = { 34.3, 65.9, ZERETH_MORTIS },
+			}),
+			q(65726, {	-- The Burrowed Bufonid
+				["sourceQuests"] = { 65725 },	-- The Burrowed Bufonid
+				["provider"] = { "n", 180950 },	-- Avna
+				["coord"] = { 34.3, 65.9, ZERETH_MORTIS },
+			}),
+			q(65728, {	-- The Burrowed Bufonid
+				["sourceQuests"] = { 65726 },	-- The Burrowed Bufonid
+				["provider"] = { "n", 180950 },	-- Avna
+				["coord"] = { 34.3, 65.9, ZERETH_MORTIS },
+			}),
+			q(65729, {	-- The Burrowed Bufonid
+				["sourceQuests"] = { 65728 },	-- The Burrowed Bufonid
+				["provider"] = { "n", 180950 },	-- Avna
+				["coord"] = { 34.3, 65.9, ZERETH_MORTIS },
+			}),
 			q(65749, {	-- The Necessity Of Equipment
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.6, ZERETH_MORTIS },
@@ -886,6 +906,7 @@ root("HiddenQuestTriggers", {
 	q(65621),	-- Triggered when HS to ZM
 
 	q(65531),	-- Starts pocopoc fashion
+	q(65724),	-- Daily Bufonid Quest Trigger
 
 	-- Lego HQT??
 	--q(65681),	-- Druid
@@ -893,7 +914,7 @@ root("HiddenQuestTriggers", {
 	--q(64880),	-- Triggered in Oribos?
 	--q(65144),	-- Firims Cave?
 	q(65539),	-- Flying unlock
-	--q(65679),	-- Fully Upgrade Console? 183968 FP? Flying? WB?
+	--q(65679),	-- After Flying unlock on an alt
 
 	-- More rare HQTS?
 	--q(65637),	-- Triggered when killing General Zarathura <Army of the Endless>

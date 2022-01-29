@@ -4,6 +4,10 @@
 root("Zones", m(SHADOWLANDS, {
 	m(ZERETH_MORTIS, {
 		n(ZONE_DROPS, {
+			i(190585, {	-- Schematic: Heartbond Lupine
+				["description"] = "At the moment only drops from this Quest Objective Mob.",
+				["cr"] = 179939,	-- Maw-Frenzied Lupine
+			}),
 			i(186559),	-- Grappling Gauntlet
 			i(189704, {	-- Dominance Key
 				["cr"] = 181403,	-- Mawsworn Inquisitor

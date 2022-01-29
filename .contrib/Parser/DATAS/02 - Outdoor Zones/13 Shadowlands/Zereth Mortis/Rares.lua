@@ -8,7 +8,6 @@ root("Zones", m(SHADOWLANDS, {
 				["description"] = "Still need a proper Source.",
 				["g"] = {
 					i(189910),	-- Adornment of Jingling Fractals
-					i(190002),	-- Bulwark of the Broken
 					i(189917),	-- Constellation Master's Smock
 					i(189996),	-- Elegantly Balanced Axe
 					i(189961),	-- Enduring Protector's Shoulderguards (Protector?)
@@ -227,8 +226,9 @@ root("Zones", m(SHADOWLANDS, {
 				},
 			}),
 			n(180978, {	-- Hirukon <Aurelid Prime>
-				["description"] = "Still unknown how to spawn this boss. Probably something with Aurelid Lure(187923).",
+				["description"] = "Fishing with casting into 51.85 74.39 seems to trigger the event. There will be a zone wide announcement when Hirkuon starts to emerge.",
 				["coord"] = { 52.2, 75.2, ZERETH_MORTIS },
+				["questID"] = 65548,
 				["g"] = {
 					crit(23, {	-- Hirukon <Aurelid Prime>
 						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
@@ -308,6 +308,7 @@ root("Zones", m(SHADOWLANDS, {
 					crit(19, {	-- Protector of the First Ones
 						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
 					}),
+					i(190002),	-- Bulwark of the Broken
 					i(189984),	-- Drape of Idolized Symmetry
 					i(189177),	-- Revelation Key (PS)
 				},

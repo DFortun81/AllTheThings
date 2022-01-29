@@ -443,35 +443,7 @@ root("Zones", m(SHADOWLANDS, {
 					}),
 				},
 			}),
-			-- Maybe Repeatable? No QuestID
-			o(373579, {	-- Prying Eye Discovery
-				["description"] = "Only available during Portal Play Daily",
-				["coords"] = {
-					{ 35.2, 43.7, ZERETH_MORTIS },
-					{ 34.3, 44.3, ZERETH_MORTIS },
-				},
-				["questID"] = 65184,
-				["g"] = {
-					i(190096, {	-- Pocobold
-						["questID"] = 65534,
-						["g"] = {
-							crit(8, {	-- Pocobold
-								["achievementID"] = 15508,	-- Fashion of the First Ones
-							}),
-						},
-					}),
-				},
-			}),
-			-- Repeatable Chest IDK if it has questID
-			o(373568, {	-- Provis Cache
-				["description"] = "Use Firim's Spare Forge-tap to gain 15xEphemera Strands(187728) to get Ephemera Orb(187787), not guaranteed.",
-				["coord"] = { 42, 51.9, ZERETH_MORTIS },
-				["questID"] = 65183,
-				["cost"] = { { "i", 188231, 1 }, },	-- 1xProvis Cache Key
-				["g"] = {
-					i(187735),	-- Geordy (PET!)
-				},
-			}),
+			-- Unknown?
 			n(185502, {	-- Pulp-Covered Relic
 				["description"] = "Talk to this chest multiple times and kill add waves.",
 				--["questID"]
@@ -491,8 +463,38 @@ root("Zones", m(SHADOWLANDS, {
 			o(375538, {	-- Lost Ovoid
 				["questID"] = 65624,
 				["coord"] = { 53.6, 72.6, ZERETH_MORTIS },
+				["isDaily"] = True,
 				["g"] = {
 					i(190239),	-- Lost Ovoid
+				},
+			}),
+			o(373568, {	-- Provis Cache
+				["description"] = "Use Firim's Spare Forge-tap to gain 15xEphemera Strands(187728) to get Ephemera Orb(187787), not guaranteed.",
+				["coord"] = { 42, 51.9, ZERETH_MORTIS },
+				["questID"] = 65183,
+				["isWeekly"] = True,
+				["cost"] = { { "i", 188231, 1 }, },	-- 1xProvis Cache Key
+				["g"] = {
+					i(187735),	-- Geordy (PET!)
+				},
+			}),
+			o(373579, {	-- Prying Eye Discovery
+				["description"] = "Only high up on Pillars.",
+				["coords"] = {
+					{ 35.2, 43.7, ZERETH_MORTIS },
+					{ 34.3, 44.3, ZERETH_MORTIS },
+				},
+				["questID"] = 65184,
+				["repeatable"] = True,
+				["g"] = {
+					i(190096, {	-- Pocobold
+						["questID"] = 65534,
+						["g"] = {
+							crit(8, {	-- Pocobold
+								["achievementID"] = 15508,	-- Fashion of the First Ones
+							}),
+						},
+					}),
 				},
 			}),
 			o(375404, {	-- Sandworn Chest
@@ -508,6 +510,7 @@ root("Zones", m(SHADOWLANDS, {
 				},
 				["questID"] = 65611,
 				["cost"] = { { "i", 190197, 1 } },	-- Sandworn Chest Key
+				["repeatable"] = True,
 				["g"] = {
 					i(190189),	-- Sandworn Relic
 				},
