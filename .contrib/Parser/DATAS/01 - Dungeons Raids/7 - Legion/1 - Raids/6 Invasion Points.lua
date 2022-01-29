@@ -436,3 +436,30 @@ _.Instances = { tier(LEGION_TIER, {
 		},
 	}),
 })};
+
+root("HiddenQuestTriggers", {
+	tier(LEGION_TIER, {
+		--	Invasion points
+		--	secondary quests trigger multiple times throughout the week (aka if you complete it on tuesday and wednesday, both official + secondary quest pop both days).
+		--	secondary quests don't seem to be tied to which boss you kill OR loot (have gotten them when receiving rep tokens, unsullied tokens, blue drops, and even just AP/a grey item).
+		q(49195),	-- Greater Invasion Point: Occularus - weekly completion
+		q(49176),	-- Greater Invasion Point: Occularus - bonus roll used
+		q(49196),	-- Greater Invasion Point: Pit Lord Vilemus - weekly completion
+		q(49174),	-- Greater Invasion Point: Pit Lord Vilemus - bonus roll used
+		q(49197),	-- Greater Invasion Point: Sotanathor - weekly completion
+		q(49177),	-- Greater Invasion Point: Sotanathor - bonus roll used
+		q(49198),	-- Greater Invasion Point: Inquisitor Meto - weekly completion
+		q(49172),	-- Greater Invasion Point: Inquisitor Meto - bonus roll used
+		q(49199),	-- Greater Invasion Point: Matron Folnuna - weekly completion
+		q(49175),	-- Greater Invasion Point: Matron Folnuna - bonus roll used
+		-- q(49173),	-- TODO: a bonus roll perhaps?
+		q(49213),	-- triggered upon completing Aurinor, but not the official quest.
+		q(49215),	-- triggered upon completing Bonich, but not the official quest.
+		q(49211),	-- triggered upon completing Cen'gar, but not the official quest.
+		q(49214),	-- triggered upon completing Naigtal, but not the official quest.
+		q(48675),	-- Lockout Tracking - Normal - Marsh — triggered on character's first completion of Naigtal
+		q(49212),	-- triggered upon completing Sangua, but not the official quest.
+		q(49210),	-- triggered upon completing Val, but not the official quest.
+		q(48672),	-- Lockout Tracking - Normal - Ice — val first completion?
+	}),
+});

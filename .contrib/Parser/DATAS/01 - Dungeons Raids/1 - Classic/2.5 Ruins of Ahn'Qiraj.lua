@@ -511,7 +511,6 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						{
 							["itemID"] = 21294,		-- Book of Healing Touch XI
 							-- #if AFTER CATA
-							["timeline"] = { "removed 4.0.1.10000" },
 							["spellID"] = 0,
 							-- #else
 							["spellID"] = 25297,	-- Healing Touch XI
@@ -521,7 +520,6 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						{
 							["itemID"] = 21295,		-- Book of Starfire VII
 							-- #if AFTER CATA
-							["timeline"] = { "removed 4.0.1.10000" },
 							["spellID"] = 0,
 							-- #else
 							["spellID"] = 25298,	-- Starfire VII
@@ -531,7 +529,6 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						{
 							["itemID"] = 21296,		-- Book of Rejuvenation XI
 							-- #if AFTER CATA
-							["timeline"] = { "removed 4.0.1.10000" },
 							["spellID"] = 0,
 							-- #else
 							["spellID"] = 25299,	-- Rejuvenation XI
@@ -543,7 +540,6 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						{
 							["itemID"] = 21304,		-- Guide: Multi-Shot V
 							-- #if AFTER CATA
-							["timeline"] = { "removed 4.0.1.10000" },
 							["spellID"] = 0,
 							-- #else
 							["spellID"] = 25294,	-- Multi-Shot V
@@ -553,7 +549,6 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						{
 							["itemID"] = 21306,		-- Guide: Serpent Sting IX
 							-- #if AFTER CATA
-							["timeline"] = { "removed 4.0.1.10000" },
 							["spellID"] = 0,
 							-- #else
 							["spellID"] = 25295,	-- Serpent Sting IX
@@ -563,7 +558,6 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						{
 							["itemID"] = 21307,		-- Guide: Aspect of the Hawk VII
 							-- #if AFTER CATA
-							["timeline"] = { "removed 4.0.1.10000" },
 							["spellID"] = 0,
 							-- #else
 							["spellID"] = 25296,	-- Aspect of the Hawk VII
@@ -575,7 +569,6 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						{
 							["itemID"] = 21280,		-- Tome of Arcane Missiles VIII
 							-- #if AFTER CATA
-							["timeline"] = { "removed 4.0.1.10000" },
 							["spellID"] = 0,
 							-- #else
 							["spellID"] = 25345,	-- Arcane Missiles VIII
@@ -585,7 +578,6 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						{
 							["itemID"] = 21279,		-- Tome of Fireball XII
 							-- #if AFTER CATA
-							["timeline"] = { "removed 4.0.1.10000" },
 							["spellID"] = 0,
 							-- #else
 							["spellID"] = 25306,	-- Fireball XII
@@ -595,7 +587,6 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						{
 							["itemID"] = 21214,		-- Tome of Frostbolt XI
 							-- #if AFTER CATA
-							["timeline"] = { "removed 4.0.1.10000" },
 							["spellID"] = 0,
 							-- #else
 							["spellID"] = 25304,	-- Frostbolt XI
@@ -607,7 +598,6 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						{
 							["itemID"] = 21289,		-- Libram: Blessing of Might VII
 							-- #if AFTER CATA
-							["timeline"] = { "removed 4.0.1.10000" },
 							["spellID"] = 0,
 							-- #else
 							["spellID"] = 25291,	-- Blessing of Might VII
@@ -617,7 +607,6 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						{
 							["itemID"] = 21288,		-- Libram: Blessing of Wisdom VI
 							-- #if AFTER CATA
-							["timeline"] = { "removed 4.0.1.10000" },
 							["spellID"] = 0,
 							-- #else
 							["spellID"] = 25290,	-- Blessing of Wisdom VI
@@ -627,7 +616,6 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						{
 							["itemID"] = 21290,		-- Libram: Holy Light IX
 							-- #if AFTER CATA
-							["timeline"] = { "removed 4.0.1.10000" },
 							["spellID"] = 0,
 							-- #else
 							["spellID"] = 25292,	-- Holy Light IX
@@ -639,7 +627,6 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						{
 							["itemID"] = 21284,		-- Codex of Greater Heal V
 							-- #if AFTER CATA
-							["timeline"] = { "removed 4.0.1.10000" },
 							["spellID"] = 0,
 							-- #else
 							["spellID"] = 25314,	-- Greater Heal V
@@ -649,7 +636,6 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						{
 							["itemID"] = 21285,		-- Codex of Renew X
 							-- #if AFTER CATA
-							["timeline"] = { "removed 4.0.1.10000" },
 							["spellID"] = 0,
 							-- #else
 							["spellID"] = 25315,	-- Renew X
@@ -659,7 +645,6 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						{
 							["itemID"] = 21287,		-- Codex of Prayer of Healing V
 							-- #if AFTER CATA
-							["timeline"] = { "removed 4.0.1.10000" },
 							["spellID"] = 0,
 							-- #else
 							["spellID"] = 25316,	-- Prayer of Healing V
@@ -671,7 +656,6 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						{
 							["itemID"] = 21300,		-- Handbook of Backstab IX
 							-- #if AFTER CATA
-							["timeline"] = { "removed 4.0.1.10000" },
 							["spellID"] = 0,
 							-- #else
 							["spellID"] = 25300,	-- Backstab IX
@@ -681,7 +665,6 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						{
 							["itemID"] = 21302,		-- Handbook of Deadly Poison V
 							-- #if AFTER CATA
-							["timeline"] = { "removed 4.0.1.10000" },
 							["spellID"] = 0,
 							-- #else
 							["recipeID"] = 25347,	-- Deadly Poison V
@@ -690,7 +673,6 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						{
 							["itemID"] = 21303,		-- Handbook of Feint V
 							-- #if AFTER CATA
-							["timeline"] = { "removed 4.0.1.10000" },
 							["spellID"] = 0,
 							-- #else
 							["spellID"] = 25302,	-- Feint V
@@ -702,7 +684,6 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						{
 							["itemID"] = 21293,		-- Tablet of Grace of Air Totem III
 							-- #if AFTER CATA
-							["timeline"] = { "removed 4.0.1.10000" },
 							["spellID"] = 0,
 							-- #else
 							["spellID"] = 25359,	-- Grace of Air Totem III
@@ -712,7 +693,6 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						{
 							["itemID"] = 21291,		-- Tablet of Healing Wave X
 							-- #if AFTER CATA
-							["timeline"] = { "removed 4.0.1.10000" },
 							["spellID"] = 0,
 							-- #else
 							["spellID"] = 25357,	-- Healing Wave X
@@ -722,7 +702,6 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						{
 							["itemID"] = 21292,		-- Tablet of Strength of Earth Totem V
 							-- #if AFTER CATA
-							["timeline"] = { "removed 4.0.1.10000" },
 							["spellID"] = 0,
 							-- #else
 							["spellID"] = 25361,	-- Strength of Earth Totem V
@@ -734,7 +713,6 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						{
 							["itemID"] = 21283,		-- Grimoire of Corruption VII
 							-- #if AFTER CATA
-							["timeline"] = { "removed 4.0.1.10000" },
 							["spellID"] = 0,
 							-- #else
 							["spellID"] = 25311,	-- Corruption VII
@@ -744,7 +722,6 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						{
 							["itemID"] = 21282,		-- Grimoire of Immolate VIII
 							-- #if AFTER CATA
-							["timeline"] = { "removed 4.0.1.10000" },
 							["spellID"] = 0,
 							-- #else
 							["spellID"] = 25309,	-- Immolate VIII
@@ -754,7 +731,6 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						{
 							["itemID"] = 21281,		-- Grimoire of Shadow Bolt X
 							-- #if AFTER CATA
-							["timeline"] = { "removed 4.0.1.10000" },
 							["spellID"] = 0,
 							-- #else
 							["spellID"] = 25307,	-- Shadow Bolt X
@@ -766,7 +742,6 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						{
 							["itemID"] = 21298,		-- Manual of Battle Shout VII
 							-- #if AFTER CATA
-							["timeline"] = { "removed 4.0.1.10000" },
 							["spellID"] = 0,
 							-- #else
 							["spellID"] = 25289,	-- Battle Shout VII
@@ -776,7 +751,6 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						{
 							["itemID"] = 21297,		-- Manual of Heroic Strike IX
 							-- #if AFTER CATA
-							["timeline"] = { "removed 4.0.1.10000" },
 							["spellID"] = 0,
 							-- #else
 							["spellID"] = 25286,	-- Heroic Strike IX
@@ -786,7 +760,6 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						{
 							["itemID"] = 21299,		-- Manual of Revenge VI
 							-- #if AFTER CATA
-							["timeline"] = { "removed 4.0.1.10000" },
 							["spellID"] = 0,
 							-- #else
 							["spellID"] = 25288,	-- Revenge VI

@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
+root("Zones", {
 	m(EASTERN_KINGDOMS, {
 		m(STORMWIND_CITY, {
 			n(QUESTS, {
@@ -1312,16 +1311,21 @@ _.Zones =
 			}),
 		}),
 	}),
-};
+});
 
-_.HiddenQuestTriggers = {
-	q(53645),	-- triggered during 'Molten Core' (53342) when porting to Molten Core
-};
+root("HiddenQuestTriggers", {
+	m(EASTERN_KINGDOMS, {
+		m(STORMWIND_CITY, {
+			q(53645),	-- triggered during 'Molten Core' (53342) when porting to Molten Core
+			q(59255),	-- completed when turning in 'Fame Waits for Gnome One' (58708)
+		}),
+	}),
+});
 
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(60362),	-- Blank
 		q(31685),	-- Valley of the Four Winds
 		q(57766),	-- War with the Horde
 	}),
-});
+}));
