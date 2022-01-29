@@ -429,6 +429,7 @@ select(2, ...).ObjectNames = {
 	[209620] = "Darkmoon Treasure Chest",
 	[209673] = "Jade Tiger Pillar",
 	[209845] = "Mouthwatering Brew",
+	[210565] = "Dark Soil",
 	[211424] = "Alchemy Scroll",
 	[211754] = "Curious Text",
 	[211807] = "Mogu Chest",

@@ -194,7 +194,7 @@ _.ExpansionFeatures =
 							["coord"] = { 58.5, 37.2, AZSUNA },
 							["provider"] = { "n", 110686 },	-- Zabra Hexx
 						}),
-						n(46028, {	-- An Urgent Warning
+						q(46028, {	-- An Urgent Warning
 							["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
 						}),
 						q(43388, {	-- Apostate Liberation

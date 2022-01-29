@@ -11,15 +11,15 @@ root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 		["g"] = bubbleDown({ ["u"] = WOW_ANNIVERSARY }, {
 			ach(13928, {	-- Alterac Valley of Olde (A)
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
-					i(172022),	-- Stormpike Battle Ram (MOUNT!)
-				},
+			}),
+			i(172022, {	-- Stormpike Battle Ram (MOUNT!)
+				["races"] = ALLIANCE_ONLY,
 			}),
 			ach(13930, {	-- Alterac Valley of Olde (H)
 				["races"] = HORDE_ONLY,
-				["g"] = {
-					i(172023),	-- Frostwolf Snarler (MOUNT!)
-				},
+			}),
+			i(172023, {	-- Frostwolf Snarler (MOUNT!)
+				["races"] = HORDE_ONLY,
 			}),
 			n(QUESTS, {
 				q(57302, {	-- Alterac Valley Graveyards

@@ -194,9 +194,10 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 						{ "i", 139620, 1 },	-- A Complete Copy of "Nat Pagle's Guide to Extreme Anglin'."
 						-- #if AFTER 8.2.0.30918
 						{ "i", 170511, 1 },	-- Head of Nefarian (Paladin, for Artifact appearance)
-						-- #endif
+						-- #else
 						{ "i", 19003, 1 },	-- Head of Nefarian (A)
 						{ "i", 19002, 1 },	-- Head of Nefarian (H)
+						-- #endif
 					},
 					["lvl"] = 110,
 				}),
