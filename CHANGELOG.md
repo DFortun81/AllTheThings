@@ -1,18 +1,20 @@
 # AllTheThings
 
-## [SL-2.6.10](https://github.com/DFortun81/AllTheThings/tree/SL-2.6.10) (2022-01-23)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.6.9...SL-2.6.10) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [SL-2.6.11](https://github.com/DFortun81/AllTheThings/tree/SL-2.6.11) (2022-01-30)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.6.10...SL-2.6.11) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
+
+### Vignette tracking 🔍
+
+Added some logic concerning Vignette handling, such that Treasures/Rares which become visible on the map in some way will show an additional icon in the respective ATT window (i.e. wondering if that Secret Treasure in Revendreth is actually one you need? Now you will know which one 'specifically' is available [once you travel to Revendreth at least]).
 
 ### Notable changes:
 
-- Delayed some event registration until after ATT is ready to handle them.
-- Added an extra API call to population of quest objects (like in `/attwq`) to hopefully get data more accurately.
-- Fixed minilist Professions category not capturing certain 'Profession' content.
-- Micro-adjustments to minilist tech.
-- Adjusted the logic that checks if the current Instance difficulty is 'completed'. This should fix "You have completed this difficulty" messages for Timewalking.
-- Ongoing achievements cleanup: attaching required quests, maps, etc. Mainly in Necrolord achievements.
-- Fixed Legion engineering questline.
-- Random duplicate quests removed.
-- More quests added and fixed.
+- 'Warn Completed Difficulty' should be a little smarter now! Won't tell you to switch to removed difficulties or difficulties that don't have anything for your filters. And it should work with vanilla instances too!
+- Fixed the minilist putting difficulty headers within non-instance content (i.e. when a quest within a dungeon difficulty is started outside of the Dungeon it will no longer show within the difficulty outside the dungeon).
+- Adjusted Adamant Vaults drops since all bosses share a loot table.
+- New store mount! Water kitty!
+- Added some missing quests/fixed some quests that were marked as repeatable.
+- Some syncing of TBC content.
+- Small adjustments in Classic zones.
 - Other fixes.
