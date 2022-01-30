@@ -1,6 +1,15 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+local OnTooltipForNetherwing = [[function(t)
+	local reputation = t.reputation;
+	if reputation < 42000 then
+		local isHuman = _.RaceIndex == 1;
+		local repPerTurnIn = isHuman and 275 or 250;
+		local x, n = math.ceil((42000 - reputation) / repPerTurnIn), math.ceil(42000 / repPerTurnIn);
+		GameTooltip:AddDoubleLine("Turn in Netherwing Eggs.", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+	end
+end]];
 _.Zones =
 {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
@@ -103,7 +112,9 @@ _.Zones =
 				}),
 				-- #endif
 				n(FACTIONS, {
-					applyclassicphase(TBC_PHASE_THREE_NETHERWING, faction(1015)),	-- Netherwing
+					applyclassicphase(TBC_PHASE_THREE_NETHERWING, faction(1015, {	-- Netherwing
+						["OnTooltip"] = OnTooltipForNetherwing,
+					})),
 				}),
 				n(FLIGHT_PATHS, {
 					fp(140, {	-- Altar of Sha'tar, Shadowmoon Valley
