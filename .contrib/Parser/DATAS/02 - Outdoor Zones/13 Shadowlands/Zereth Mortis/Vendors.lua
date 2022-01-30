@@ -225,6 +225,12 @@ root("Zones", m(SHADOWLANDS, {
 					}),
 				}),
 			}),
+			n(185748, {	-- Mai Toa
+				["coord"] = { 58.6, 49.8, ZERETH_MORTIS },
+				["g"] = {
+					i(190880),	-- Catalyzed Apple Pie
+				},
+			}),
 			n(183962, {	-- Olea Manu
 				["description"] = "Only Available after Hanoas Questline",
 				["sourceQuests"] = { 65219 },	-- Jiro to Hero
@@ -518,7 +524,6 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(191000),	-- Synchronous Numerus Breastplate
 				i(190747),	-- Temporal Numerus Handguards
 			}),
-			i(190389),	-- Broker's Lucky Coin
 			i(190374),	-- Gemstone of Prismatic Brilliance
 			i(190390),	-- Protector's Diffusion Implement
 			i(190597),	-- Symbol of the Lupine

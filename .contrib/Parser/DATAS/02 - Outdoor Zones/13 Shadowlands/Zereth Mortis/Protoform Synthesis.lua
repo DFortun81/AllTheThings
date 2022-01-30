@@ -214,6 +214,10 @@ root("Zones", m(SHADOWLANDS, {
 					["provider"] = { "i", 189465 },	-- Schematic: Genesis Crawler
 					["coord"] = { 31.5, 50.3, ZERETH_MORTIS },
 				}),
+				q(65391, {	-- Schematic Reassimilation: Goldplate Bufonid
+					["sourceQuests"] = { 65427 },	-- A New Architect
+					["provider"] = { "i", 189468 },	-- Schematic: Goldplate Bufonid
+				}),
 				q(65680, {	-- Schematic Reassimilation: Heartbond Lupine
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 190585 },	-- Schematic: Heartbond Lupine
@@ -257,11 +261,6 @@ root("Zones", m(SHADOWLANDS, {
 				q(65399, {	-- Schematic Reassimilation: Curious Crystalsniffer
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189476 },	-- Schematic: Curious Crystalsniffer
-					["coord"] = { , , ZERETH_MORTIS },
-				}),
-				q(65391, {	-- Schematic Reassimilation: Goldplate Bufonid
-					["sourceQuests"] = { 65427 },	-- A New Architect
-					["provider"] = { "i", 189468 },	-- Schematic: Goldplate Bufonid
 					["coord"] = { , , ZERETH_MORTIS },
 				}),
 				q(65390, {	-- Schematic Reassimilation: Ineffable Skitterer
@@ -461,6 +460,15 @@ root("Zones", m(SHADOWLANDS, {
 					["g"] = {
 						i(189172),	-- Crystallized Echo of the First Song
 						i(189441),	-- Schematic: Resonant Echo
+					},
+				}),
+				o(375950, {	-- Bauble of Pure Innovation
+					["description"] = "Multiple spawn places?",
+					["coords"] = {
+						{ 34.5, 49.7, ZERETH_MORTIS },
+					},
+					["g"] = {
+						i(189171),	-- Bauble of Pure Innovation
 					},
 				}),
 			}),

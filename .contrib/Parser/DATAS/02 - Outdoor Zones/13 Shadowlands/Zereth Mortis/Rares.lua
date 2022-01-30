@@ -14,7 +14,6 @@ root("Zones", m(SHADOWLANDS, {
 					i(189993),	-- Gavel of the Twisted Judicator
 					i(189959),	-- Legs of Graceful Landing
 					i(189953),	-- Lush-Stained Footguards (Overgrowth?)
-					i(189954),	-- Lustrous Sentinel's Sabatons
 					i(189956),	-- Perverse Champion's Handguards
 					--??
 					i(190124),	-- Interrogator's Vicious Dirk
@@ -375,6 +374,7 @@ root("Zones", m(SHADOWLANDS, {
 					crit(9, {	-- Tahkwitz
 						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
 					}),
+					i(189954),	-- Lustrous Sentinel's Sabatons
 					i(189915),	-- Tahkwitz' Cloth Ribbon
 					i(189933),	-- Vigilant Raptora's Crest
 					i(187832, {	-- Schematic: Pure-Air Sail Extensions (RECIPE!)
@@ -446,6 +446,7 @@ root("Zones", m(SHADOWLANDS, {
 					crit(6, {	-- Xy'rath the Covetous
 						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
 					}),
+					i(190389),	-- Broker's Lucky Coin
 					i(190050),	-- Famished Broker's Ripper
 					i(189918),	-- Fleeting Broker's Strides
 					i(190238, {	-- Xy'rath's Booby-Trapped Cache (TOY!)

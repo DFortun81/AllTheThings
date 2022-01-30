@@ -8,6 +8,9 @@ root("Zones", m(SHADOWLANDS, {
 				["description"] = "At the moment only drops from this Quest Objective Mob.",
 				["cr"] = 179939,	-- Maw-Frenzied Lupine
 			}),
+			i(189468, {	-- Schematic: Goldplate Bufonid
+				["cr"] = 178803,	-- Accelerated Bufonid
+			}),
 			i(186559),	-- Grappling Gauntlet
 			i(189704, {	-- Dominance Key
 				["cr"] = 181403,	-- Mawsworn Inquisitor
@@ -112,10 +115,16 @@ root("Zones", m(SHADOWLANDS, {
 			i(189170),	-- Glimmer of Vigilance
 			-- Mount Protoform
 			i(189176),	-- Protoform Sentience Crown
-			i(189180),	-- Wind's Infinite Call
-			i(189173),	-- Eternal Ragepearl
+			i(189180, {	-- Wind's Infinite Call
+				["crs"] = {
+					182096,	-- Enhanced Avian
+					183674,	-- Enhanced Avian
+				},
+			}),
+			i(189173, {	-- Eternal Ragepearl
+				["description"] = "Only from Antecedent Isle.",
+			}),
 			--[[ Not Sure yet
-			i(189171),	-- Bauble of Pure Innovation
 			i(189178),	-- Tools of Incomprehensible Experimentation
 			i(189175),	-- Mawforged Bridle
 			--]]

@@ -596,21 +596,31 @@ root("Zones", m(SHADOWLANDS, {
 				["sourceQuests"] = { 65727 },	-- The Burrowed Bufonid
 				["provider"] = { "n", 180950 },	-- Avna
 				["coord"] = { 34.3, 65.9, ZERETH_MORTIS },
+				["cost"] = { { "i",	172053, 30 } },	-- 30xTenebrous Ribs
 			}),
 			q(65726, {	-- The Burrowed Bufonid
 				["sourceQuests"] = { 65725 },	-- The Burrowed Bufonid
 				["provider"] = { "n", 180950 },	-- Avna
 				["coord"] = { 34.3, 65.9, ZERETH_MORTIS },
+				["cost"] = { { "i",	173202, 200 } },	-- 200xShrouded Cloth
 			}),
 			q(65728, {	-- The Burrowed Bufonid
 				["sourceQuests"] = { 65726 },	-- The Burrowed Bufonid
 				["provider"] = { "n", 180950 },	-- Avna
 				["coord"] = { 34.3, 65.9, ZERETH_MORTIS },
+				["cost"] = { { "i",	173037, 10 } },	-- 10xElysian Thade
 			}),
 			q(65729, {	-- The Burrowed Bufonid
 				["sourceQuests"] = { 65728 },	-- The Burrowed Bufonid
 				["provider"] = { "n", 180950 },	-- Avna
 				["coord"] = { 34.3, 65.9, ZERETH_MORTIS },
+				["cost"] = { { "i",	187704, 5 } },	-- 5xProtoflesh
+			}),
+			q(65730, {	-- The Burrowed Bufonid
+				["sourceQuests"] = { 65729 },	-- The Burrowed Bufonid
+				["provider"] = { "n", 180950 },	-- Avna
+				["coord"] = { 34.3, 65.9, ZERETH_MORTIS },
+				["cost"] = { { "i",	190880, 5 } },	-- 5xCatalyzed Apple Pie
 			}),
 			q(65749, {	-- The Necessity Of Equipment
 				["provider"] = { "n", 177958 },	-- Firim
