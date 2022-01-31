@@ -1264,7 +1264,7 @@ _.Zones =
 				}),
 				q(53775, {	-- Shades of Disruption
 					["provider"] = { "n", 145190 },	-- Princess Talanji
-					["coord"] = { 66.4, 70.8, ZANCHUL },
+					["coord"] = { 66.4, 70.8, ZANCHUL_HALL_OF_THE_HIGH_PRIESTS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 53774 },	-- Wisdom of the Warchief
 				}),
@@ -1655,7 +1655,7 @@ _.Zones =
 				}),
 				q(53776, {	-- To the Broken Shore
 					["provider"] = { "n", 145225 },	-- Spirit of Vol'jin
-					["coord"] = { 67.6, 72.8, ZANCHUL },
+					["coord"] = { 67.6, 72.8, ZANCHUL_HALL_OF_THE_HIGH_PRIESTS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 53775 },	-- Shades of Disruption
 				}),
