@@ -1064,6 +1064,7 @@ for key,value in pairs({
 	[184300] = "Foco Necromântico",	-- Necromantic Focus
 	[184465] = "Baú da Legião",	-- Cache of the Legion
 	[184660] = "Cartaz de Procura-se",	-- Wanted Poster
+	[184684] = "Ovo de Esfola-pedra Vorasga",	-- Ravenous Flayer Egg
 	[184825] = "Tomo de Lashh'an",	-- Lashh'an Tome
 	[184945] = "Cartaz de Procura-se",	-- Wanted Poster
 	[184946] = "Cartaz de Procura-se",	-- Wanted Poster
@@ -1311,6 +1312,7 @@ for key,value in pairs({
 	[209620] = "Baú do Tesouro de Negraluna",	-- Darkmoon Treasure Chest
 	[209673] = "Pilar do Tigre de Jade",	-- Jade Tiger Pillar
 	[209845] = "Cerveja Água na Boca",	-- Mouthwatering Brew
+	[210565] = "Solo Negro",	-- Dark Soil
 	[211424] = "Pergaminho de Alquimia",	-- Alchemy Scroll
 	[211754] = "Texto Curioso",	-- Curious Text
 	--TODO: [211807] = "Mogu Chest",	-- Mogu Chest
