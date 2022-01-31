@@ -1064,6 +1064,7 @@ for key, value in pairs({
 	[184300] = "Necromantic Focus",	-- Necromantic Focus
 	[184465] = "军团宝箱",	-- Cache of the Legion
 	[184660] = "通缉布告",	-- Wanted Poster
+	[184684] = "贪婪剥石者的卵",	-- Ravenous Flayer Egg
 	[184825] = "拉什鸦巢宝典",	-- Lashh'an Tome
 	[184945] = "通缉布告",	-- Wanted Poster
 	[184946] = "通缉布告",	-- Wanted Poster
@@ -1311,6 +1312,7 @@ for key, value in pairs({
 	[209620] = "暗月宝箱",	-- Darkmoon Treasure Chest
 	[209673] = "玉虎立柱",	-- Jade Tiger Pillar
 	[209845] = "极品美酒",	-- Mouthwatering Brew
+	[210565] = "黑色泥土",	-- Dark Soil
 	--TODO: [211424] = "Alchemy Scroll",	-- Alchemy Scroll
 	[211754] = "奇怪的文字",	-- Curious Text
 	--TODO: [211807] = "Mogu Chest",	-- Mogu Chest

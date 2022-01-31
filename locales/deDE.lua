@@ -1065,6 +1065,7 @@ for key,value in pairs({
 	[184300] = "Nekromantischer Fokus",	-- Necromantic Focus
 	[184465] = "Behälter der Legion",	-- Cache of the Legion
 	[184660] = "Steckbrief",	-- Wanted Poster
+	[184684] = "Ei eines gefräßigen Schinders",	-- Ravenous Flayer Egg
 	[184825] = "Foliant der Lashh'an",	-- Lashh'an Tome
 	[184945] = "Steckbrief",	-- Wanted Poster
 	[184946] = "Steckbrief",	-- Wanted Poster
@@ -1312,6 +1313,7 @@ for key,value in pairs({
 	[209620] = "Dunkelmond-Schatzkiste",	-- Darkmoon Treasure Chest
 	[209673] = "Säule des Jadetigers",	-- Jade Tiger Pillar
 	[209845] = "Köstliches Gebräu",	-- Mouthwatering Brew
+	[210565] = "Dunkle Erde",	-- Dark Soil
 	[211424] = "Alchemieschriftrolle",	-- Alchemy Scroll
 	[211754] = "Seltsamer Text",	-- Curious Text
 	--TODO: [211807] = "Mogu Chest",	-- Mogu Chest

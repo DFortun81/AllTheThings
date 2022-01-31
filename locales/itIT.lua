@@ -1062,6 +1062,7 @@ for key,value in pairs({
 	[184300] = "Focalizzatore Negromantico",	-- Necromantic Focus
 	[184465] = "Cassa della Legione",	-- Cache of the Legion
 	[184660] = "Manifesto dei Ricercati",	-- Wanted Poster
+	[184684] = "Uovo di Scorticatore Vorace",	-- Ravenous Flayer Egg
 	[184825] = "Tomo Lashh'an",	-- Lashh'an Tome
 	[184945] = "Manifesto dei Ricercati",	-- Wanted Poster
 	[184946] = "Manifesto dei Ricercati",	-- Wanted Poster
@@ -1309,6 +1310,7 @@ for key,value in pairs({
 	[209620] = "Baule del Tesoro di Lunacupa",	-- Darkmoon Treasure Chest
 	[209673] = "Statua di Tigre di Giada",	-- Jade Tiger Pillar
 	[209845] = "Birra Ghiotta",	-- Mouthwatering Brew
+	[210565] = "Terreno Smosso",	-- Dark Soil
 	--TODO: [211424] = "Alchemy Scroll",	-- Alchemy Scroll
 	[211754] = "Testo Bizzarro",	-- Curious Text
 	--TODO: [211807] = "Mogu Chest",	-- Mogu Chest

@@ -1064,6 +1064,7 @@ for key,value in pairs({
 	[184300] = "강령술 집중 장치",	-- Necromantic Focus
 	[184465] = "군단 저장고",	-- Cache of the Legion
 	[184660] = "현상 수배 전단",	-- Wanted Poster
+	[184684] = "걸신들린 바위갈퀴 알",	-- Ravenous Flayer Egg
 	[184825] = "라쉬안 마법책",	-- Lashh'an Tome
 	[184945] = "현상 수배 전단",	-- Wanted Poster
 	[184946] = "현상 수배 전단",	-- Wanted Poster
@@ -1311,6 +1312,7 @@ for key,value in pairs({
 	[209620] = "다크문 보물 상자",	-- Darkmoon Treasure Chest
 	[209673] = "비취 호랑이 기둥",	-- Jade Tiger Pillar
 	[209845] = "군침도는 맥주",	-- Mouthwatering Brew
+	[210565] = "검은 토양",	-- Dark Soil
 	--TODO: [211424] = "Alchemy Scroll",	-- Alchemy Scroll
 	[211754] = "수수께끼의 문서",	-- Curious Text
 	--TODO: [211807] = "Mogu Chest",	-- Mogu Chest
