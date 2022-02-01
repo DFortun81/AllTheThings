@@ -201,3 +201,19 @@ root("HiddenQuestTriggers", {
 	q(62811),	-- Oranomonos kill questID
 	q(62809),	-- Valinor kill questID
 });
+
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	tier(SL_TIER, {
+		n(WORLD_BOSSES, {
+			i(190622),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Accessory - Trinket - Omni
+			i(190620),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Armor - Cloth Head
+			i(190621),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Armor - Cloth Legs
+			i(190618),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Armor - Leather Chest
+			i(190619),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Armor - Leather Feet
+			i(190616),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Armor - Mail Belt
+			i(190617),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Armor - Mail Wrist
+			i(190615),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Armor - Plate Chest
+			i(190614),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Armor - Plate Head
+		}),
+	}),
+}));

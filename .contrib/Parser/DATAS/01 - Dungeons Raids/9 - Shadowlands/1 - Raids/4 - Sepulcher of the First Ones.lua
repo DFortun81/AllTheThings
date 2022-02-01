@@ -1295,22 +1295,6 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				ach(15423),	-- <Hidden> Jailer Defeated
 			}),
 			i(189780),	-- <DNT> 9.2 Raid - Sepulcher of the First Ones - Boss 01 - Solitary Guardian - Shield
-			--?? Might be Dune rares
-			i(190108),	-- Aegis of Laughing Souls
-			i(190106),	-- Approaching Terror's Torch
-			i(188267),	-- Bells of the Endless Feast
-			i(190102),	-- Chains of Infectious Serrations
-			i(190105),	-- Chilling Domination Mace
-			-- Dune Rares?
-			i(190109),	-- Cudgel of Mortality's Chains
-			i(190104),	-- Deadeye's Spirit Piercer
-			i(190111),	-- Escutcheon of Beautiful Death
-			i(190110),	-- Flail of Balletic Carnage
-			i(190112),	-- Glimmering War Beacon
-			i(190334),	-- Origin
-			i(190103),	-- Pillar of Noxious Dissemination
-			i(190126),	-- Rotculler's Encroaching Shears
-			i(190107),	-- Staff of Broken Coils
 			-- Trash Drop?
 			i(190631),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - Trash Drops - Armor - Cloth Hands
 			i(190630),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - Trash Drops - Armor - Cloth Shoulder
@@ -1321,23 +1305,6 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(190624),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - Trash Drops - Armor - Plate Hands
 			i(190625),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - Trash Drops - Armor - Plate Shoulders
 			i(190623),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - Trash Drops - Armor - Plate Shoulders
-			-- WB?
-			i(190622),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Accessory - Trinket - Omni
-			i(190620),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Armor - Cloth Head
-			i(190621),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Armor - Cloth Legs
-			i(190618),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Armor - Leather Chest
-			i(190619),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Armor - Leather Feet
-			i(190616),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Armor - Mail Belt
-			i(190617),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Armor - Mail Wrist
-			i(190615),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Armor - Plate Chest
-			i(190614),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Armor - Plate Head
-			--
-			i(190458),	-- Atrophy's Ominous Bulwark
-			i(190459),	-- Cold Dispiriting Barricade
-			i(190463),	-- Dismal Mystic's Glaive
-			i(190462),	-- Impaler's Graceful Lance
-			--
-			i(190735),	-- Varruth's Guillotine
 			-- Tiers that wasnt tiers anymore
 			i(188873),	-- Cloak of the First Eidolon
 			i(188870),	-- Girdle of the First Eidolon

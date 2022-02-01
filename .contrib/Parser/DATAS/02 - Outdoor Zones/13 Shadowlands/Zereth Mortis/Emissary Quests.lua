@@ -7,6 +7,7 @@ root("Zones", m(SHADOWLANDS, {
 		n(EMISSARY_QUESTS, {
 			i(187781),	-- Olea Cache
 			i(187780, {	-- Enlightened Broker Supplies
+				i(189471),	-- Schematic: Russet Bufonid
 				i(190177),	-- Sphere of Enlightened Cogitation
 			}),
 		}),

@@ -588,6 +588,13 @@ root("Zones", m(SHADOWLANDS, {
 				["provider"] = { "n", 185713 },	-- Hadja
 				["coord"] = { 35.2, 65.7, ZERETH_MORTIS },
 			}),
+			q(65749, {	-- The Necessity Of Equipment
+				["provider"] = { "n", 177958 },	-- Firim
+				["coord"] = { 34.2, 48.6, ZERETH_MORTIS },
+			}),
+			--
+
+			-- Bufonid Daily Questline
 			q(65727, {	-- The Burrowed Bufonid
 				["provider"] = { "n", 180950 },	-- Avna
 				["coord"] = { 34.3, 65.9, ZERETH_MORTIS },
@@ -622,11 +629,21 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 34.3, 65.9, ZERETH_MORTIS },
 				["cost"] = { { "i",	190880, 5 } },	-- 5xCatalyzed Apple Pie
 			}),
-			q(65749, {	-- The Necessity Of Equipment
-				["provider"] = { "n", 177958 },	-- Firim
-				["coord"] = { 34.2, 48.6, ZERETH_MORTIS },
+			q(65731, {	-- The Burrowed Bufonid
+				["sourceQuests"] = { 65730 },	-- The Burrowed Bufonid
+				["provider"] = { "n", 180950 },	-- Avna
+				["coord"] = { 34.3, 65.9, ZERETH_MORTIS },
+				["cost"] = { { "i",	187171, 1 } },	-- 1xOrganic Melon
 			}),
-			--
+			q(65732, {	-- The Patient Bufonid
+				["sourceQuests"] = { 65731 },	-- The Burrowed Bufonid
+				["provider"] = { "n", 180950 },	-- Avna
+				["coord"] = { 34.3, 65.9, ZERETH_MORTIS },
+				["g"] = {
+					i(188808),	-- Patient Bufonid (MOUNT!)
+				},
+			}),
+			-- End
 
 			-- Al'dalil/Cartel Xy Side Quest
 			q(64771, {	-- Enlightened Exodus

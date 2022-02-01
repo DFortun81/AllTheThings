@@ -575,6 +575,13 @@ root("Zones", m(SHADOWLANDS, {
 					},
 					["questID"] = 65322,
 				}),
+				o(375068, {	-- Fugueal Cache
+					["coords"] = {
+						{ 44.3, 30.9, ZERETH_MORTIS },
+						{ 59.7, 22.8, ZERETH_MORTIS },
+					},
+					["questID"] = 65317,
+				}),
 				o(375067, {	-- Glissandian Cache
 					["coords"] = {
 						{ 40, 72.9, ZERETH_MORTIS },
@@ -640,6 +647,14 @@ root("Zones", m(SHADOWLANDS, {
 					},
 					["questID"] = 65314,
 				}),
+				o(375058, {	-- Toccatian Cache
+					["coords"] = {
+						{ 67.8, 27.4, ZERETH_MORTIS },
+						{ 65.6, 47.6, ZERETH_MORTIS },
+						{ 64.3, 63.3, ZERETH_MORTIS },
+					},
+					["questID"] = 65319,
+				}),
 			}),
 		}),
 	}),
@@ -649,8 +664,6 @@ root("HiddenQuestTriggers", {
 	-- Puzzle Chests AlexSoft = AS, Cantaric = Berlekamp's Switch Game, Mezzonic = Lights Out, Fugueal = 4 Properties Game, Glissandian = Bejeweled Puzzle, Toccatian = Crossed Lines
 	--q(65093),	-- Triggered when completed the puzzle, Fugueal At M1:57.5 65.8 // M2:63.1, 37.4 / AS: 57.5 65.8 // AS2:63.1 37.4 // AS3:47.1 77.2
 	--q(65092),	-- Triggered when completed the puzzle, Glissandian At 58.9, 36.4 / AS:58.9 36.4 // AS2:41.8 31.3
-	--q(65319),	-- Triggered when completed the puzzle, Toccatian At 67.8, 27.4 / AS:67.9 27.3 // AS2:65.6 47.6 // AS3/4:64.3 63.3
-	--q(65317),	-- Triggered when completed the puzzle, Fugueal At AS:44.3, 30.9
 });
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {

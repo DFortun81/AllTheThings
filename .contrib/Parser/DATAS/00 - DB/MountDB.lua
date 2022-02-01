@@ -1102,7 +1102,6 @@ i(190580, 367673);	-- Heartbond Lupine
 i(187679, 359403);	-- Ineffable Skitterer
 i(187667, 359372);	-- Mawdapted Raptora
 i(187639, 342671); 	-- Pale Regal Cervid
-i(188808, 363701);	-- Patient Bufonid
 i(188809, 363703);	-- Prototype Leaper
 i(187668, 359373);	-- Raptora Swooper
 i(188810, 363706);	-- Russet Bufonid
@@ -1128,6 +1127,9 @@ i(187682, 359407);	-- Wastewarped Deathwalker
 i(189507, 365559);	-- Cosmic Gladiator's Soul Eater
 i(187681, 347256);	-- Vicious War Gulper (A)
 i(187680, 347255);	-- Vicious War Gulper (H)
+
+-- Quest
+i(188808, 363701);	-- Patient Bufonid
 
 -- Rare/Treasure
 i(187676, 342680);	-- Deepstar Aurelid

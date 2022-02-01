@@ -15,10 +15,6 @@ root("Zones", m(SHADOWLANDS, {
 					i(189959),	-- Legs of Graceful Landing
 					i(189953),	-- Lush-Stained Footguards (Overgrowth?)
 					i(189956),	-- Perverse Champion's Handguards
-					--??
-					i(190124),	-- Interrogator's Vicious Dirk
-					i(190125),	-- Kris of Intricate Secrets
-					--
 					i(189943),	-- Greaves of Cosmic Designs
 					i(189904),	-- Meticulous Architect's Mitts
 					i(190057),	-- Protective Raptora's Wing-Glaive
@@ -29,6 +25,29 @@ root("Zones", m(SHADOWLANDS, {
 						["recipeID"] = 360317,	-- Devourer Essence Stone
 						["requireSkill"] = JEWELCRAFTING,
 					}),
+					i(190374),	-- Gemstone of Prismatic Brilliance
+					i(190390),	-- Protector's Diffusion Implement
+					i(190597),	-- Symbol of the Lupine
+					i(190582),	-- Symbol of the Vombata
+					i(190726),	-- Extract of Prodigious Sands
+					-- Dune Rares?
+					i(190124),	-- Interrogator's Vicious Dirk
+					i(190125),	-- Kris of Intricate Secrets
+					i(190108),	-- Aegis of Laughing Souls
+					i(190106),	-- Approaching Terror's Torch
+					i(188267),	-- Bells of the Endless Feast
+					i(190102),	-- Chains of Infectious Serrations
+					i(190105),	-- Chilling Domination Mace
+					i(190109),	-- Cudgel of Mortality's Chains
+					i(190111),	-- Escutcheon of Beautiful Death
+					i(190110),	-- Flail of Balletic Carnage
+					i(190112),	-- Glimmering War Beacon
+					i(190334),	-- Origin
+					i(190103),	-- Pillar of Noxious Dissemination
+					i(190458),	-- Atrophy's Ominous Bulwark
+					i(190463),	-- Dismal Mystic's Glaive
+					i(190462),	-- Impaler's Graceful Lance
+					i(190735),	-- Varruth's Guillotine
 				},
 			}),
 			n(179006, {	-- Akkaris <Annelid Prime>
@@ -115,7 +134,7 @@ root("Zones", m(SHADOWLANDS, {
 				},
 			}),
 			n(183646, {	-- Furidian
-				["description"] = "To open the vault there is corresponding symbols in the area. I only had to click The Star(64, 57.3) to open the chest. Maybe change this in later build.", -- See later if needs other information
+				["description"] = "To open the vault there is corresponding symbols in the area. Click those to open the vault.",
 				["coord"] = { 64.5, 58.7, ZERETH_MORTIS },
 				["questID"] = 65544,
 				["g"] = {
@@ -221,7 +240,9 @@ root("Zones", m(SHADOWLANDS, {
 					crit(2, {	-- High Reaver Damaris
 						["achievementID"] = 15392,	-- Dune Dominance
 					}),
+					i(190459),	-- Cold Dispiriting Barricade
 					i(190460),	-- High Reaver's Sickle
+					i(190107),	-- Staff of Broken Coils
 				},
 			}),
 			n(180978, {	-- Hirukon <Aurelid Prime>
@@ -247,6 +268,8 @@ root("Zones", m(SHADOWLANDS, {
 						["achievementID"] = 15392,	-- Dune Dominance
 					}),
 					i(190765),	-- Iska's Mawrat Leash (MOUNT!)
+					i(190126),	-- Rotculler's Encroaching Shears
+					i(190107),	-- Staff of Broken Coils
 				},
 			}),
 			n(178508, {	-- Mother Phestis <Tarachnid Prime>
@@ -320,6 +343,7 @@ root("Zones", m(SHADOWLANDS, {
 					crit(3, {	-- Reanimatrox Marzan
 						["achievementID"] = 15392,	-- Dune Dominance
 					}),
+					i(190104),	-- Deadeye's Spirit Piercer
 					i(190127),	-- Marzan's Dancing Twin-Scythe
 					i(190461),	-- Reanimator's Beguiling Baton
 				},

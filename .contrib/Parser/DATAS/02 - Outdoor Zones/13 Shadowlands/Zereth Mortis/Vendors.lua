@@ -524,11 +524,6 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(191000),	-- Synchronous Numerus Breastplate
 				i(190747),	-- Temporal Numerus Handguards
 			}),
-			i(190374),	-- Gemstone of Prismatic Brilliance
-			i(190390),	-- Protector's Diffusion Implement
-			i(190597),	-- Symbol of the Lupine
-			i(190582),	-- Symbol of the Vombata
-			i(190726),	-- Extract of Prodigious Sands
 			--??
 			i(188110),	-- Cypher Attunement Chestpiece
 			i(188117),	-- Cypher Attunement Cloak

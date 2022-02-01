@@ -237,6 +237,10 @@ root("Zones", m(SHADOWLANDS, {
 					["provider"] = { "i", 189460 },	-- Schematic: Raptora Swooper
 					["coord"] = { 67.4, 40.2, ZERETH_MORTIS },
 				}),
+				q(65394, {	-- Schematic Reassimilation: Russet Bufonid
+					["sourceQuests"] = { 65427 },	-- A New Architect
+					["provider"] = { "i", 189471 },	-- Schematic: Russet Bufonid
+				}),
 				q(65387, {	-- Schematic Reassimilation: Scarlet Helicid
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189464 },	-- Schematic: Scarlet Helicid
@@ -271,16 +275,6 @@ root("Zones", m(SHADOWLANDS, {
 				q(65382, {	-- Schematic Reassimilation: Mawdapted Raptora
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189459 },	-- Schematic: Mawdapted Raptora
-					["coord"] = { , , ZERETH_MORTIS },
-				}),
-				q(65392, {	-- Schematic Reassimilation: Patient Bufonid (Probably from new Quest)
-					["sourceQuests"] = { 65427 },	-- A New Architect
-					["provider"] = { "i", 189470 },	-- Schematic: Patient Bufonid
-					["coord"] = { , , ZERETH_MORTIS },
-				}),
-				q(65394, {	-- Schematic Reassimilation: Russet Bufonid
-					["sourceQuests"] = { 65427 },	-- A New Architect
-					["provider"] = { "i", 189471 },	-- Schematic: Russet Bufonid
 					["coord"] = { , , ZERETH_MORTIS },
 				}),
 				q(65384	, {	-- Schematic Reassimilation: Serenade
@@ -444,13 +438,15 @@ root("Zones", m(SHADOWLANDS, {
 						{ 50.2, 32.2, ZERETH_MORTIS },
 						{ 67, 16, ZERETH_MORTIS },
 						{ 32.8, 39.3, ZERETH_MORTIS },
+						{ 66.3, 27.2, ZERETH_MORTIS },
+						{ 64.7, 63.4, ZERETH_MORTIS },
 					},
 					["g"] = {
 						i(189168),	-- Glimmer of Serenity
 					},
 				}),
 				o(375974, {	-- Crystallized Echo of the First Song
-					["description"] = "Multiple spawn places?",
+					["description"] = "Spawns in multple places.",
 					["coords"] = {
 						{ 77.5, 59, ZERETH_MORTIS },
 						{ 77.4, 45.4, ZERETH_MORTIS },
@@ -519,7 +515,6 @@ root("Zones", m(SHADOWLANDS, {
 					recipe(365057),	-- Ineffable Skitterer
 					recipe(365051),	-- Mawdapted Raptora
 					recipe(365040),	-- Pale Regal Cervid
-					recipe(365061),	-- Patient Bufonid
 					recipe(365062),	-- Prototype Leaper
 					recipe(365052),	-- Raptora Swooper
 					recipe(365063),	-- Russet Bufonid
@@ -837,13 +832,6 @@ root("Zones", m(SHADOWLANDS, {
 								{ "i", 189176, 1 },	-- 1x Protoform Sentience Crown
 							},
 					}),
-					i(188808, {	-- Patient Bufonid
-						["cost"] = {
-							{ "i", GENESIS, 450 },
-							{ "i", BUFONID_LATTICE, 1},
-							{ "i", 189172, 1 },	-- 1x Crystallized Echo of the First Song
-						},
-					}),
 					i(188809, {	-- Prototype Leaper
 						["cost"] = {
 							{ "i", GENESIS, 250 },
@@ -909,6 +897,19 @@ root("Zones", m(SHADOWLANDS, {
 					}),
 				}),
 			}),
+		}),
+	}),
+}));
+
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	tier(SL_TIER, {
+		prof(PROTOFORM_SYNTHESIS, {
+			q(65392, {	-- Schematic Reassimilation: Patient Bufonid (Mount moved to Quest)
+				["sourceQuests"] = { 65427 },	-- A New Architect
+				["provider"] = { "i", 189470 },	-- Schematic: Patient Bufonid
+			}),
+			i(189470),	-- Schematic: Patient Bufonid
+			recipe(365061),	-- Patient Bufonid
 		}),
 	}),
 }));
