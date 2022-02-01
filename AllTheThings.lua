@@ -51,7 +51,7 @@ local IsTitleKnown = _G["IsTitleKnown"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local MAX_CREATURES_PER_ENCOUNTER = 9;
 local DESCRIPTION_SEPARATOR = "`";
-local rawget, rawset, tinsert = rawget, rawset, tinsert;
+local rawget, rawset, tinsert, string_lower, tostring, ipairs, pairs = rawget, rawset, tinsert, string.lower, tostring, ipairs, pairs;
 local ATTAccountWideData;
 local ALLIANCE_ONLY = {
 	1,
@@ -312,20 +312,128 @@ local containsValue = function(dict, value)
 		if value2 == value then return true; end
 	end
 end
+-- Sorting Logic
+(function()
 local defaultComparison = function(a,b)
+	-- If either object doesn't exist
+	if a then
+		if not b then
+			return true;
+		end
+	elseif b then
+		return false;
+	else
+		-- neither a or b exists, equality returns false
+		app.PrintDebug("Compare: BOTH NIL")
+		return false;
+	end
+	-- If comparing non-tables
+	if type(a) ~= "table" or type(b) ~= "table" then
+		app.PrintDebug("Compare: NON-TABLES",a,b)
+		return a < b;
+	end
+	local acomp, bcomp;
+	-- Maps 1st
+	acomp = a.mapID;
+	bcomp = b.mapID;
+	if acomp then
+		if not bcomp then return true; end
+	elseif bcomp then
+		return false;
+	end
+	-- Raids/Encounter 2nd
+	acomp = a.isRaid;
+	bcomp = b.isRaid;
+	-- app.PrintDebug("Raid Sorting a,b",acomp,bcomp,a.text,b.text)
+	if acomp then
+		if not bcomp then return true; end
+	elseif bcomp then
+		return false;
+	end
+	-- Quests 3rd
+	acomp = a.questID;
+	bcomp = b.questID;
+	if acomp then
+		if not bcomp then return true; end
+	elseif bcomp then
+		return false;
+	end
+	-- Items 4th
+	acomp = a.itemID;
+	bcomp = b.itemID;
+	if acomp then
+		if not bcomp then return true; end
+	elseif bcomp then
+		return false;
+	end
+	-- Any two similar-type groups via name
+	acomp = string_lower(tostring(a.name));
+	bcomp = string_lower(tostring(b.name));
+	app.PrintDebug("Compare: NAME",acomp,bcomp,acomp < bcomp)
+	return acomp < bcomp;
+end
+local defaultTextComparison = function(a,b)
+	-- If either object doesn't exist
+	if a then
+		if not b then
+			return true;
+		end
+	elseif b then
+		return false;
+	else
+		-- neither a or b exists, equality returns false
+		app.PrintDebug("Compare: BOTH NIL")
+		return false;
+	end
+	-- Any two similar-type groups with text
+	a = string_lower(tostring(a));
+	b = string_lower(tostring(b));
 	return a < b;
 end
+local defaultNameComparison = function(a,b)
+	-- If either object doesn't exist
+	if a then
+		if not b then
+			return true;
+		end
+	elseif b then
+		return false;
+	else
+		-- neither a or b exists, equality returns false
+		app.PrintDebug("Compare: BOTH NIL")
+		return false;
+	end
+	-- Any two similar-type groups with text
+	a = string_lower(tostring(a.name));
+	b = string_lower(tostring(b.name));
+	return a < b;
+end
+local defaultValueComparison = function(a,b)
+	-- If either object doesn't exist
+	if a then
+		if not b then
+			return true;
+		end
+	elseif b then
+		return false;
+	else
+		-- neither a or b exists, equality returns false
+		app.PrintDebug("Compare: BOTH NIL")
+		return false;
+	end
+	return a < b;
+end
+app.SortDefaults = {
+	["Global"] = defaultComparison,
+	["Text"] = defaultTextComparison,
+	["Name"] = defaultNameComparison,
+	["Value"] = defaultValueComparison,
+};
+-- local defaultStringComparison
 local function insertionSort(t, compare, nested)
 	if t then
 		if not compare then compare = defaultComparison; end
-		local j;
-		for i=2,#t,1 do
-			j = i;
-			while j > 1 and compare(t[j], t[j - 1]) do
-				t[j],t[j - 1] = t[j - 1],t[j];
-				j = j - 1;
-			end
-		end
+		table.sort(t, compare);
 		if nested then
 			for i=#t,1,-1 do
 				insertionSort(t[i].g, compare, nested);
@@ -343,15 +451,7 @@ local sortByNameSafely = function(a, b)
 	end
 	return false;
 end;
-local sortByTextSafely = function(a, b)
-	if a and a.text then
-		if b and b.text then
-			return a.text <= b.text;
-		end
-		return true;
-	end
-	return false;
-end;
+end)();
 -- Performs table.concat(tbl, sep, i, j) on the given table, but uses the specified field of table values if provided,
 -- with a default fallback value if the field does not exist on the table entry
 app.TableConcat = function(tbl, field, def, sep, i, j)
@@ -1922,7 +2022,7 @@ local function FilterSpecs(specs)
 				table.remove(specs, i);
 			end
 		end
-		insertionSort(specs);
+		app.insertionSort(specs, app.SortDefaults.Value);
 	end
 end
 -- Returns a string containing the spec icons, followed by their respective names if desired
@@ -1970,7 +2070,7 @@ local function GetFixedItemSpecInfo(itemID)
 					end
 				end
 			end
-			insertionSort(specs);
+			app.insertionSort(specs, app.SortDefaults.Value);
 		else
 			FilterSpecs(specs);
 		end
@@ -3619,7 +3719,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 			else
 				local kind, id = strsplit(":", paramA);
-				kind = string.lower(kind);
+				kind = string_lower(kind);
 				if id then id = tonumber(id); end
 				if kind == "itemid" then
 					paramA = "itemID";
@@ -3972,7 +4072,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		if #temp > 0 then
 			local listing = {};
 			local maximum = app.Settings:GetTooltipSetting("Locations");
-			insertionSort(temp);
+			app.insertionSort(temp, app.SortDefaults.Text);
 			for i,j in ipairs(temp) do
 				if not contains(listing, j) then
 					tinsert(listing, 1, j);
@@ -4364,7 +4464,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			end
 		end
 		if #knownBy > 0 then
-			insertionSort(knownBy, function(a, b) return (a.name or "") < (b.name or ""); end);
+			app.insertionSort(knownBy, function(a, b) return (a.name or "") < (b.name or ""); end);
 			local desc = L["KNOWN_BY"] .. app.TableConcat(knownBy, "text", "??", ", ");
 			tinsert(info, { left = string.gsub(desc, "-" .. GetRealmName(), ""), wrap = true, color = "ff66ccff" });
 		end
@@ -4826,7 +4926,7 @@ app.NestSourceQuests = function(root, addedQuests, depth)
 		end
 		-- sort quests with less sub-quests to the top
 		if prereqs then
-			insertionSort(prereqs, function(a, b) return (a.depth or 0) < (b.depth or 0); end);
+			app.insertionSort(prereqs, function(a, b) return (a.depth or 0) < (b.depth or 0); end);
 			NestObjects(root, prereqs);
 		end
 	end
@@ -5342,7 +5442,7 @@ local function SearchForLink(link)
 		end
 	else
 		local kind, id = strsplit(":", link);
-		kind = string.lower(kind);
+		kind = string_lower(kind);
 		if string.sub(kind,1,2) == "|c" then
 			kind = string.sub(kind,11);
 		end
@@ -5964,21 +6064,23 @@ local function RefreshCollections()
 	end);
 end
 local function GetGroupSortValue(group)
-	if group.g then
-		if group.total and group.total > 1 then
-			if group.progress and group.progress > 0 then
-				return (2 + (group.progress / group.total));
+	if group then
+		if group.g then
+			if group.total and group.total > 1 then
+				if group.progress and group.progress > 0 then
+					return (2 + (group.progress / group.total));
+				end
+				return (1 / group.total);
 			end
-			return (1 / group.total);
+			return 0;
+		elseif group.collectible then
+			if group.collected then
+				return -1;
+			elseif group.sortProgress then
+				return (-2 + group.sortProgress);
+			end
+			return -2;
 		end
-		return 0;
-	elseif group.collectible then
-		if group.collected then
-			return -1;
-		elseif group.sortProgress then
-			return (-2 + group.sortProgress);
-		end
-		return -2;
 	end
 	return -3;
 end
@@ -5989,36 +6091,17 @@ local function SortGroup(group, sortType, row, recur, conditionField)
 		if (not conditionField and group.visible) or (conditionField and group[conditionField]) then
 			-- print("sorting",group.key,group.key and group[group.key],"by",sortType,"recur",recur,"condition",conditionField)
 			if sortType == "name" then
-				local txtA, txtB;
-				insertionSort(group.g, function(a, b)
-					-- equivalent raid status, then compare name
-					if a.isRaid == b.isRaid then
-						txtA = a and string.lower(tostring(a.name or a.text)) or "";
-						txtB = b and string.lower(tostring(b.name or b.text)) or "";
-						if txtA then
-							if txtB then return txtA < txtB; end
-							return true;
-						end
-					-- otherwise return priority on raid status
-					elseif a.isRaid then
-						return true;
-					end
-					return false;
-				end);
+				app.insertionSort(group.g);
 			elseif sortType == "progress" then
 				local progA, progB;
-				insertionSort(group.g, function(a, b)
+				app.insertionSort(group.g, function(a, b)
 					progA = GetGroupSortValue(a);
 					progB = GetGroupSortValue(b);
-					if progA then
-						if progB then return progA > progB; end
-						return true;
-					end
-					return false;
+					return progA > progB;
 				end);
 			else
 				local sortA, sortB;
-				insertionSort(group.g, function(a, b)
+				app.insertionSort(group.g, function(a, b)
 					sortA = a and tostring(a[sortType]);
 					sortB = b and tostring(b[sortType]);
 					return sortA < sortB;
@@ -6667,6 +6750,7 @@ local ObjectDefaults = {
 	["progress"] = 0,
 	["total"] = 0,
 };
+local GetTimePreciseSec = GetTimePreciseSec;
 local ObjectFunctions = {
 	-- cloned groups will not directly have a parent, but they will instead have a sourceParent, so fill in with that instead
 	["parent"] = function(t)
@@ -6678,20 +6762,52 @@ local ObjectFunctions = {
 	end,
 };
 -- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)
-app.BaseObjectFields = function(fields, type)
+app.BaseObjectFields = not app.__perf and function(fields, type)
 	local base = {
 		["__type"] = function(t)
 			return type;
 		end,
 	};
 	return {
-	__index = function(t, key)
-		_cache = rawget(fields, key) or rawget(ObjectFunctions, key) or rawget(base, key);
-		if _cache then return _cache(t); end
-		-- use default key value if existing
-		return ObjectDefaults[key];
+		__index = function(t, key)
+			_cache = rawget(fields, key) or rawget(ObjectFunctions, key) or rawget(base, key);
+			if _cache then return _cache(t); end
+			-- use default key value if existing
+			return rawget(ObjectDefaults, key);
+		end
+	};
+end
+-- special performance tracking function for object properties
+or
+function(fields, type)
+	local base = {
+		["__type"] = function(t)
+			return type;
+		end,
+	};
+	-- init table for this object type
+	if type and not app.__perf[type] then
+		app.__perf[type] = {};
 	end
-};
+	return {
+		__index = function(t, key)
+			if key then
+				local typeData, result = rawget(app.__perf, type);
+				local now = GetTimePreciseSec();
+				_cache = rawget(fields, key) or rawget(ObjectFunctions, key) or rawget(base, key);
+				if _cache then
+					result = _cache(t);
+				else
+					result = rawget(ObjectDefaults, key);
+				end
+				if typeData then
+					rawset(typeData, key, (rawget(typeData, key) or 0) + 1);
+					rawset(typeData, key.."_Time", (rawget(typeData, key.."_Time") or 0) + (GetTimePreciseSec() - now));
+				end
+				return result;
+			end
+		end
+	};
 end
 -- Create a local cache table which can be used by a Type class of a Thing to easily store information based on a unique key field for any Thing object of that Type
 app.CreateCache = function(idField)
@@ -6739,13 +6855,15 @@ app.CreateCache = function(idField)
 	end;
 	return cache;
 end
--- Function which returns both collectible/collected for 't' based on a given 'ref' Thing, which has been previously determined as a
--- possible collectible which requires the 't' Thing as a cost. 'cache' is the type-cache for the 'ref' Thing
-app.CheckCollectible = function(t, ref, cache)
-	-- account or debug, skip filter/exclusion logic, or else make sure not altcollected
-	if (app.MODE_DEBUG_OR_ACCOUNT or not GetRelativeValue(t, "altcollected"))
-		-- don't include groups which do not meet the current filter requirements
-		and app.RecursiveGroupRequirementsFilter(ref) then
+-- Function which returns whether the given Thing can even be considered as a collectible currency based on current settings
+app.PreCheckCollectible = function(t)
+	return app.MODE_DEBUG_OR_ACCOUNT or not GetRelativeValue(t, "altcollected");
+end
+-- Function which returns both collectible/collected based on a given 'ref' Thing, which has been previously determined as a
+-- possible collectible without regard to filtering
+app.CheckCollectible = function(ref)
+	-- don't include groups which do not meet the current filter requirements
+	if app.RecursiveGroupRequirementsFilter(ref) then
 		-- Used as a cost for something which is collectible itself and not collected
 		-- if LOG then print("check collectible/collected",LOG,ref.key,ref[ref.key]) end
 		if ref.collectible then
@@ -6774,43 +6892,43 @@ app.CheckCollectible = function(t, ref, cache)
 					return true,ref.progress == ref.total;
 				end
 			else
-				if not cache then
-					-- print("cannot determine collectibility")
-					-- print("cost",t.key,t.key and t[t.key])
+				local refCache = ref._cache;
+				if refCache then
+					-- Already have a cached version of this reference with populated content
+					local expItem = refCache.GetCachedField(ref, "_populated");
+					if expItem then
+						if expItem.total and expItem.total > 0 then
+							return true,expItem.progress == expItem.total;
+						end
+						return;
+					end
+					-- print("Un-populated collectedAsCost",t.modItemID)
 					-- app.PrintTable(ref)
-					-- print(ref.__type, ref._cache)
-					return false,false;
-				end
-				-- Already have a cached version of this reference with populated content
-				local expItem = cache.GetCachedField(ref, "_populated");
-				if expItem then
+					-- create a cached copy of this ref if it is an Item
+					expItem = CreateObject(ref);
+					-- fill the copied Item's symlink if any
+					FillSymLinks(expItem);
+					-- Build the Item's groups if any
+					BuildGroups(expItem, expItem.g);
+					-- do an Update pass for the copied Item
+					app.TopLevelUpdateGroup(expItem);
+					-- print("Populated collectedAsCost (symlink)",t.modItemID)
+					-- app.PrintTable(expItem)
+					-- save it in the Item cache in case something else is able to purchase this reference
+					refCache.SetCachedField(ref, "_populated", expItem);
+					-- check if this expItem has been completed
 					if expItem.total and expItem.total > 0 then
 						return true,expItem.progress == expItem.total;
 					end
-					return;
 				end
-				-- print("Un-populated collectedAsCost",t.modItemID)
+				-- print("cannot determine collectibility")
+				-- print("cost",t.key,t.key and t[t.key])
 				-- app.PrintTable(ref)
-				-- create a cached copy of this ref if it is an Item
-				expItem = CreateObject(ref);
-				-- fill the copied Item's symlink if any
-				FillSymLinks(expItem);
-				-- Build the Item's groups if any
-				BuildGroups(expItem, expItem.g);
-				-- do an Update pass for the copied Item
-				app.TopLevelUpdateGroup(expItem);
-				-- print("Populated collectedAsCost (symlink)",t.modItemID)
-				-- app.PrintTable(expItem)
-				-- save it in the Item cache in case something else is able to purchase this reference
-				cache.SetCachedField(ref, "_populated", expItem);
-				-- check if this expItem has been completed
-				if expItem.total and expItem.total > 0 then
-					return true,expItem.progress == expItem.total;
-				end
+				-- print(ref.__type, ref._cache)
+				return false,false;
 			end
 		end
 	end
-	return false;
 end
 end)();
 
@@ -6892,7 +7010,7 @@ local fields = {
 		return 0;
 	end,
 };
-app.BaseAchievement = app.BaseObjectFields(fields);
+app.BaseAchievement = app.BaseObjectFields(fields, "BaseAchievement");
 app.CreateAchievement = function(id, t)
 	return setmetatable(constructor(id, t, "achID"), app.BaseAchievement);
 end
@@ -6911,7 +7029,7 @@ local categoryFields = {
 		return select(2, GetCategoryInfo(t.achievementCategoryID)) or -1;
 	end,
 };
-app.BaseAchievementCategory = app.BaseObjectFields(categoryFields);
+app.BaseAchievementCategory = app.BaseObjectFields(categoryFields, "BaseAchievementCategory");
 app.CreateAchievementCategory = function(id, t)
 	return setmetatable(constructor(id, t, "achievementCategoryID"), app.BaseAchievementCategory);
 end
@@ -7027,7 +7145,7 @@ local criteriaFields = {
 };
 criteriaFields.collectible = fields.collectible;
 criteriaFields.icon = fields.icon;
-app.BaseAchievementCriteria = app.BaseObjectFields(criteriaFields);
+app.BaseAchievementCriteria = app.BaseObjectFields(criteriaFields, "BaseAchievementCriteria");
 app.CreateAchievementCriteria = function(id, t)
 	return setmetatable(constructor(id, t, "criteriaID"), app.BaseAchievementCriteria);
 end
@@ -7183,7 +7301,7 @@ local fields = {
 		end
 	end,
 };
-app.BaseArtifact = app.BaseObjectFields(fields);
+app.BaseArtifact = app.BaseObjectFields(fields, "BaseArtifact");
 app.CreateArtifact = function(id, t)
 	return setmetatable(constructor(id, t, "artifactID"), app.BaseArtifact);
 end
@@ -7243,7 +7361,7 @@ local fields = {
 		return t.info.rank or 0;
 	end,
 };
-app.BaseAzeriteEssence = app.BaseObjectFields(fields);
+app.BaseAzeriteEssence = app.BaseObjectFields(fields, "BaseAzeriteEssence");
 app.CreateAzeriteEssence = function(id, t)
 	return setmetatable(constructor(id, t, "azeriteEssenceID"), app.BaseAzeriteEssence);
 end
@@ -7331,7 +7449,7 @@ local fields = {
 		return string.format("p:%d:1:3", t.speciesID);
 	end,
 };
-app.BaseSpecies = app.BaseObjectFields(fields);
+app.BaseSpecies = app.BaseObjectFields(fields, "BaseSpecies");
 app.CreateSpecies = function(id, t)
 	return setmetatable(constructor(id, t, "speciesID"), app.BaseSpecies);
 end
@@ -7383,7 +7501,7 @@ local fields = {
 		return select(5, C_PetBattles_GetAbilityInfoByID(t.petAbilityID));
 	end,
 };
-app.BasePetAbility = app.BaseObjectFields(fields);
+app.BasePetAbility = app.BaseObjectFields(fields, "BasePetAbility");
 app.CreatePetAbility = function(id, t)
 	return setmetatable(constructor(id, t, "petAbilityID"), app.BasePetAbility);
 end
@@ -7402,7 +7520,7 @@ local fields = {
 		return 101;
 	end,
 };
-app.BasePetType = app.BaseObjectFields(fields);
+app.BasePetType = app.BaseObjectFields(fields, "BasePetType");
 app.CreatePetType = function(id, t)
 	return setmetatable(constructor(id, t, "petTypeID"), app.BasePetType);
 end
@@ -7424,7 +7542,7 @@ local fields = {
 		return AllTheThings.CategoryIcons[t.categoryID] or "Interface/ICONS/INV_Garrison_Blueprints1";
 	end,
 };
-app.BaseCategory = app.BaseObjectFields(fields);
+app.BaseCategory = app.BaseObjectFields(fields, "BaseCategory");
 app.CreateCategory = function(id, t)
 	return setmetatable(constructor(id, t, "categoryID"), app.BaseCategory);
 end
@@ -7497,7 +7615,7 @@ local fields = {
 		return RAID_CLASS_COLORS[select(2, GetClassInfo(t.classID))];
 	end,
 };
-app.BaseCharacterClass = app.BaseObjectFields(fields);
+app.BaseCharacterClass = app.BaseObjectFields(fields, "BaseCharacterClass");
 app.CreateCharacterClass = function(id, t)
 	return setmetatable(constructor(id, t, "classID"), app.BaseCharacterClass);
 end
@@ -7553,7 +7671,7 @@ local unitFields = {
 		end
 	end,
 };
-app.BaseUnit = app.BaseObjectFields(unitFields);
+app.BaseUnit = app.BaseObjectFields(unitFields, "BaseUnit");
 app.CreateUnit = function(unit, t)
 	return setmetatable(constructor(unit, t, "unit"), app.BaseUnit);
 end
@@ -7576,6 +7694,9 @@ end
 local fields = {
 	["key"] = function(t)
 		return "currencyID";
+	end,
+	["_cache"] = function(t)
+		return cache;
 	end,
 	["text"] = function(t)
 		return cache.GetCachedField(t, "text", default_text);
@@ -7607,6 +7728,7 @@ local fields = {
 			if results and #results > 0 then
 				local costCollectibles, collectible = {};
 				cache.SetCachedField(t, "costCollectibles", costCollectibles);
+				local canBeCollectible = app.PreCheckCollectible(t);
 				for _,ref in pairs(results) do
 					-- different currencyID
 					if ref.currencyID ~= t.currencyID and
@@ -7614,32 +7736,39 @@ local fields = {
 						not GetRelativeField(t, "parent", ref) then
 						-- track this item as a cost collectible
 						tinsert(costCollectibles, ref);
-						collectible = collectible or app.CheckCollectible(t, ref, ref._cache);
+						if canBeCollectible then
+							collectible = collectible or app.CheckCollectible(ref);
+						end
 					end
 				end
 				-- This instance of the Thing (t) is not actually collectible for this character if it is under a saved, non-repeatable parent
-				if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved and not t.parent.repeatable then return false; end
+				if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved and not t.parent.repeatable then return; end
 				return collectible;
 			else
 				cache.SetCachedField(t, "costCollectibles", app.EmptyTable);
 			end
 		else
 			-- This instance of the Thing (t) is not actually collectible for this character if it is under a saved, non-repeatable parent
-			if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved and not t.parent.repeatable then return false; end
+			if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved and not t.parent.repeatable then return; end
+			-- Make sure this thing can actually be collectible
+			if not app.PreCheckCollectible(t) then return; end
 			-- Use the common collectibility check logic
 			local collectible;
 			for _,ref in pairs(t.costCollectibles) do
-				collectible = app.CheckCollectible(t, ref, ref._cache);
+				collectible = app.CheckCollectible(ref);
 				if collectible then return true; end
 			end
 		end
 	end,
 	["collectedAsCost"] = function(t)
-		local collectibles, collectible, collected = t.costCollectibles;
+		local collectibles = t.costCollectibles;
 		if not collectibles then return; end
+		-- Make sure this thing can actually be collectible
+		if not app.PreCheckCollectible(t) then return; end
+		local collectible, collected;
 		for _,ref in pairs(collectibles) do
 			-- Use the common collectibility check logic
-			collectible, collected = app.CheckCollectible(t, ref, ref._cache);
+			collectible, collected = app.CheckCollectible(ref);
 			if collectible and not collected then return false; end
 		end
 		return true;
@@ -7705,7 +7834,7 @@ local fields = {
 		if #c > 0 then
 			GameTooltip:AddLine(" ");
 			GameTooltip:AddLine("Deaths Per Character:");
-			insertionSort(c, function(a, b)
+			app.insertionSort(c, function(a, b)
 				return a.Deaths > b.Deaths;
 			end);
 			for i,data in ipairs(c) do
@@ -7717,7 +7846,7 @@ local fields = {
 		return OnUpdateForDeathTrackerLib;
 	end,
 };
-app.BaseDeathClass = app.BaseObjectFields(fields);
+app.BaseDeathClass = app.BaseObjectFields(fields, "BaseDeathClass");
 app.CreateDeathClass = function()
 	return setmetatable({}, app.BaseDeathClass);
 end
@@ -7804,7 +7933,7 @@ local fields = {
 		end
 	end,
 };
-app.BaseDifficulty = app.BaseObjectFields(fields);
+app.BaseDifficulty = app.BaseObjectFields(fields, "BaseDifficulty");
 app.CreateDifficulty = function(id, t)
 	return setmetatable(constructor(id, t, "difficultyID"), app.BaseDifficulty);
 end
@@ -7870,7 +7999,7 @@ local fields = {
 		return 1;
 	end,
 };
-app.BaseEncounter = app.BaseObjectFields(fields);
+app.BaseEncounter = app.BaseObjectFields(fields, "BaseEncounter");
 app.CreateEncounter = function(id, t)
 	return setmetatable(constructor(id, t, "encounterID"), app.BaseEncounter);
 end
@@ -8171,7 +8300,7 @@ local fields = {
 		return ((t.reputation or -42000) + 42000) / 84000;
 	end,
 };
-app.BaseFaction = app.BaseObjectFields(fields);
+app.BaseFaction = app.BaseObjectFields(fields, "BaseFaction");
 app.CreateFaction = function(id, t)
 	return setmetatable(constructor(id, t, "factionID"), app.BaseFaction);
 end
@@ -8196,11 +8325,14 @@ local fields = {
 	["text"] = function(t)
 		return L["FILTER_ID_TYPES"][t.filterID];
 	end,
+	["name"] = function(t)
+		return t.text;
+	end,
 	["icon"] = function(t)
 		return L["FILTER_ID_ICONS"][t.filterID];
 	end,
 };
-app.BaseFilter = app.BaseObjectFields(fields);
+app.BaseFilter = app.BaseObjectFields(fields, "BaseFilter");
 app.CreateFilter = function(id, t)
 	return setmetatable(constructor(id, t, "filterID"), app.BaseFilter);
 end
@@ -8387,7 +8519,7 @@ local fields = {
 		return t.info.sourceQuests;
 	end,
 };
-app.BaseFlightPath = app.BaseObjectFields(fields);
+app.BaseFlightPath = app.BaseObjectFields(fields, "BaseFlightPath");
 app.CreateFlightPath = function(id, t)
 	return setmetatable(constructor(id, t, "flightPathID"), app.BaseFlightPath);
 end
@@ -8469,7 +8601,7 @@ local fields = {
 		return displayIDs and #displayIDs > 0 and displayIDs[1].id;
 	end,
 };
-app.BaseFollower = app.BaseObjectFields(fields);
+app.BaseFollower = app.BaseObjectFields(fields, "BaseFollower");
 app.CreateFollower = function(id, t)
 	return setmetatable(constructor(id, t, "followerID"), app.BaseFollower);
 end
@@ -8527,7 +8659,7 @@ local fields = {
 		end
 	end,
 };
-app.BaseGarrisonBuilding = app.BaseObjectFields(fields);
+app.BaseGarrisonBuilding = app.BaseObjectFields(fields, "BaseGarrisonBuilding");
 app.CreateGarrisonBuilding = function(id, t)
 	return setmetatable(constructor(id, t, "buildingID"), app.BaseGarrisonBuilding);
 end
@@ -8543,7 +8675,7 @@ local fields = {
 		return "Interface/ICONS/INV_Icon_Mission_Complete_Order";
 	end,
 };
-app.BaseGarrisonMission = app.BaseObjectFields(fields);
+app.BaseGarrisonMission = app.BaseObjectFields(fields, "BaseGarrisonMission");
 app.CreateGarrisonMission = function(id, t)
 	return setmetatable(constructor(id, t, "missionID"), app.BaseGarrisonMission);
 end
@@ -8569,7 +8701,7 @@ local fields = {
 		return IsQuestFlaggedCompleted(t.questID) or t.info.researched;
 	end,
 };
-app.BaseGarrisonTalent = app.BaseObjectFields(fields);
+app.BaseGarrisonTalent = app.BaseObjectFields(fields, "BaseGarrisonTalent");
 app.CreateGarrisonTalent = function(id, t)
 	return setmetatable(constructor(id, t, "talentID"), app.BaseGarrisonTalent);
 end
@@ -8641,7 +8773,7 @@ local fields = {
 		end
 	end,
 };
-app.BaseGearSet = app.BaseObjectFields(fields);
+app.BaseGearSet = app.BaseObjectFields(fields, "BaseGearSet");
 app.CreateGearSet = function(id, t)
 	return setmetatable(constructor(id, t, "setID"), app.BaseGearSet);
 end
@@ -8693,7 +8825,7 @@ local fields = {
 		return t.info.invType or 99;
 	end,
 };
-app.BaseGearSource = app.BaseObjectFields(fields);
+app.BaseGearSource = app.BaseObjectFields(fields, "BaseGearSource");
 app.CreateGearSource = function(id)
 	return setmetatable({ s = id}, app.BaseGearSource);
 end
@@ -8722,7 +8854,7 @@ local fields = {
 		end
 	end,
 };
-app.BaseGearSetHeader = app.BaseObjectFields(fields);
+app.BaseGearSetHeader = app.BaseObjectFields(fields, "BaseGearSetHeader");
 app.CreateGearSetHeader = function(id, t)
 	return setmetatable(constructor(id, t, "setID"), app.BaseGearSetHeader);
 end
@@ -8751,7 +8883,7 @@ local fields = {
 		end
 	end,
 };
-app.BaseGearSetSubHeader = app.BaseObjectFields(fields);
+app.BaseGearSetSubHeader = app.BaseObjectFields(fields, "BaseGearSetSubHeader");
 app.CreateGearSetSubHeader = function(id, t)
 	return setmetatable(constructor(id, t, "setID"), app.BaseGearSetSubHeader);
 end
@@ -8858,13 +8990,14 @@ local fields = {
 		return not rawget(t, "icon") and texcoord;
 	end,
 };
-app.BaseHoliday = app.BaseObjectFields(fields);
+app.BaseHoliday = app.BaseObjectFields(fields, "BaseHoliday");
 app.CreateHoliday = function(id, t)
 	return setmetatable(constructor(id, t, "holidayID"), app.BaseHoliday);
 end
 end)();
 
 -- Illusion Lib
+-- TODO: add caching for consistency/move to sub-item lib?
 (function()
 local fields = {
 	["key"] = function(t)
@@ -8877,6 +9010,7 @@ local fields = {
 		if t.itemID then
 			local name, link = GetItemInfo(t.itemID);
 			if link then
+				rawset(t, "name", name);
 				name = "|cffff80ff[" .. name .. "]|r";
 				rawset(t, "link", link);
 				rawset(t, "text", name);
@@ -8885,6 +9019,9 @@ local fields = {
 		end
 		return t.silentLink;
 	end,
+	["name"] = function(t)
+		return t.text;
+	end,
 	["icon"] = function(t)
 		return "Interface/ICONS/INV_Enchant_Disenchant";
 	end,
@@ -8892,6 +9029,7 @@ local fields = {
 		if t.itemID then
 			local name, link = GetItemInfo(t.itemID);
 			if link then
+				rawset(t, "name", name);
 				name = "|cffff80ff[" .. name .. "]|r";
 				rawset(t, "link", link);
 				rawset(t, "text", name);
@@ -8917,7 +9055,7 @@ local fields = {
 		return select(3, C_TransmogCollection_GetIllusionSourceInfo(t.illusionID));
 	end,
 };
-app.BaseIllusion = app.BaseObjectFields(fields);
+app.BaseIllusion = app.BaseObjectFields(fields, "BaseIllusion");
 app.CreateIllusion = function(id, t)
 	return setmetatable(constructor(id, t, "illusionID"), app.BaseIllusion);
 end
@@ -8971,7 +9109,7 @@ local fields = {
 	end,
 	["isLockoutShared"] = app.ReturnFalse,
 };
-app.BaseInstance = app.BaseObjectFields(fields);
+app.BaseInstance = app.BaseObjectFields(fields, "BaseInstance");
 app.CreateInstance = function(id, t)
 	return setmetatable(constructor(id, t, "instanceID"), app.BaseInstance);
 end
@@ -9070,7 +9208,7 @@ local itemFields = {
 		return cache;
 	end,
 	["text"] = function(t)
-		return t.name;
+		return t.link;
 	end,
 	["icon"] = function(t)
 		return cache.GetCachedField(t, "icon", default_icon);
@@ -9079,7 +9217,7 @@ local itemFields = {
 		return cache.GetCachedField(t, "link", default_link);
 	end,
 	["name"] = function(t)
-		return t.link;
+		return cache.GetCachedField(t, "name");
 	end,
 	["specs"] = function(t)
 		return cache.GetCachedField(t, "specs", default_specs);
@@ -9150,38 +9288,43 @@ local itemFields = {
 			if not results and t.itemID then
 				id = t.itemID;
 				results = app.SearchForField("itemIDAsCost", id);
-				-- if app.DEBUG_PRINT then print("itemIDAsCost.itemID",id,results and #results) end
 			end
 			-- if app.DEBUG_PRINT then print("collectibleAsCost",t.modItemID,results and #results) end
 			if results and #results > 0 then
 				-- setup the costCollectibles initially
+				-- app.PrintDebug("> costs",t.hash,t.modItemID)
 				local costCollectibles, collectible = {};
 				cache.SetCachedField(t, "costCollectibles", costCollectibles);
+				local canBeCollectible = app.PreCheckCollectible(t);
 				for _,ref in pairs(results) do
 					-- different itemID, OR same itemID with different modID is allowed
 					if (ref.itemID ~= id or (ref.modItemID and ref.modItemID ~= t.modItemID)) and
 						-- is not a parent of the cost group itself
-						not GetRelativeField(t, "parent", ref) then
+						not GetRelativeField(t, "parent", ref)
+						then
 						-- track this item as a cost collectible
 						tinsert(costCollectibles, ref);
-						collectible = collectible or app.CheckCollectible(t, ref, ref._cache);
+						if canBeCollectible then
+							collectible = collectible or app.CheckCollectible(ref);
+						end
 					end
 				end
-				-- app.DEBUG_PRINT = nil;
+				-- app.PrintDebug("< costs")
 				-- This instance of the Thing (t) is not actually collectible for this character if it is under a saved, non-repeatable parent
 				if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved and not t.parent.repeatable then return false; end
 				return collectible;
 			else
 				cache.SetCachedField(t, "costCollectibles", app.EmptyTable);
 			end
-			-- app.DEBUG_PRINT = nil;
 		else
 			-- This instance of the Thing (t) is not actually collectible for this character if it is under a saved, non-repeatable parent
-			if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved and not t.parent.repeatable then return false; end
+			if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved and not t.parent.repeatable then return; end
+			-- Make sure this thing can actually be collectible
+			if not app.PreCheckCollectible(t) then return; end
 			-- Use the common collectibility check logic
 			local collectible;
 			for _,ref in pairs(t.costCollectibles) do
-				collectible = app.CheckCollectible(t, ref, ref._cache);
+				collectible = app.CheckCollectible(ref);
 				if collectible then return true; end
 			end
 		end
@@ -9202,11 +9345,14 @@ local itemFields = {
 		return app.CollectibleAsQuest(t);
 	end,
 	["collectedAsCost"] = function(t)
-		local collectibles, collectible, collected = t.costCollectibles;
+		local collectibles = t.costCollectibles;
 		if not collectibles then return; end
+		-- Make sure this thing can actually be collectible
+		if not app.PreCheckCollectible(t) then return; end
+		local collectible, collected;
 		for _,ref in pairs(collectibles) do
 			-- Use the common collectibility check logic
-			collectible, collected = app.CheckCollectible(t, ref, ref._cache);
+			collectible, collected = app.CheckCollectible(ref);
 			if collectible and not collected then return false; end
 		end
 		return true;
@@ -9263,26 +9409,26 @@ app.BaseItem = app.BaseObjectFields(itemFields, "BaseItem");
 local fields = RawCloneData(itemFields);
 fields.collectible = itemFields.collectibleAsAchievement;
 fields.collected = itemFields.collectedAsAchievement;
-app.BaseItemWithAchievementID = app.BaseObjectFields(fields);
+app.BaseItemWithAchievementID = app.BaseObjectFields(fields, "BaseItemWithAchievementID");
 
 local fields = RawCloneData(itemFields);
 fields.collectible = itemFields.collectibleAsFaction;
 fields.collected = itemFields.collectedAsFaction;
-app.BaseItemWithFactionID = app.BaseObjectFields(fields);
+app.BaseItemWithFactionID = app.BaseObjectFields(fields, "BaseItemWithFactionID");
 
 local fields = RawCloneData(itemFields);
 fields.collectible = itemFields.collectibleAsQuest;
 fields.collected = itemFields.collectedAsQuest;
 fields.trackable = itemFields.trackableAsQuest;
 fields.saved = itemFields.savedAsQuest;
-app.BaseItemWithQuestID = app.BaseObjectFields(fields);
+app.BaseItemWithQuestID = app.BaseObjectFields(fields, "BaseItemWithQuestID");
 
 local fields = RawCloneData(itemFields);
 fields.collectible = itemFields.collectibleAsFactionOrQuest;
 fields.collected = itemFields.collectedAsFactionOrQuest;
 fields.trackable = itemFields.trackableAsQuest;
 fields.saved = itemFields.savedAsQuest;
-app.BaseItemWithQuestIDAndFactionID = app.BaseObjectFields(fields);
+app.BaseItemWithQuestIDAndFactionID = app.BaseObjectFields(fields, "BaseItemWithQuestIDAndFactionID");
 
 -- Appearance Lib (Item Source)
 local fields = RawCloneData(itemFields);
@@ -9337,7 +9483,7 @@ fields.collected = function(t)
 	end
 end;
 fields.lvl = function(t) return 60; end;
-app.BaseRuneforgeLegendary = app.BaseObjectFields(fields);
+app.BaseRuneforgeLegendary = app.BaseObjectFields(fields, "BaseRuneforgeLegendary");
 app.CreateRuneforgeLegendary = function(id, t)
 	return setmetatable(constructor(id, t, "runeforgePowerID"), app.BaseRuneforgeLegendary);
 end
@@ -9367,12 +9513,11 @@ fields.collected = function(t)
 	end
 end;
 fields.lvl = function(t) return 60; end;
-app.BaseConduit = app.BaseObjectFields(fields);
+app.BaseConduit = app.BaseObjectFields(fields, "BaseConduit");
 app.CreateConduit = function(id, t)
 	return setmetatable(constructor(id, t, "conduitID"), app.BaseConduit);
 end
 end)();
-
 
 -- Heirloom Lib
 (function()
@@ -9403,7 +9548,7 @@ local fields = {
 	["trackable"] = app.ReturnTrue,
 };
 fields.collected = fields.saved;
-app.BaseHeirloomUnlocked = app.BaseObjectFields(fields);
+app.BaseHeirloomUnlocked = app.BaseObjectFields(fields, "BaseHeirloomUnlocked");
 
 local armorTextures = {
 	"Interface/ICONS/INV_Icon_HeirloomToken_Armor01",
@@ -9461,9 +9606,10 @@ local fields = {
 	end,
 };
 fields.collected = fields.saved;
-app.BaseHeirloomLevel = app.BaseObjectFields(fields);
+app.BaseHeirloomLevel = app.BaseObjectFields(fields, "BaseHeirloomLevel");
 
 -- copy base Item fields
+-- TODO: heirlooms need to cache item information as well
 local fields = RawCloneData(itemFields);
 fields.b = function(t) return 2; end
 fields.filterID = function(t) return 109; end
@@ -9633,7 +9779,7 @@ fields.toyID = function(t)
 		return t.itemID;
 	end
 
-app.BaseToy = app.BaseObjectFields(fields);
+app.BaseToy = app.BaseObjectFields(fields, "BaseToy");
 app.CreateToy = function(id, t)
 	return setmetatable(constructor(id, t, "itemID"), app.BaseToy);
 end
@@ -9706,7 +9852,7 @@ itemHarvesterFields.text = function(t)
 	if name then rawset(t, "collected", true); end
 	return name;
 end
-app.BaseItemHarvester = app.BaseObjectFields(itemHarvesterFields, "ItemHarvester");
+app.BaseItemHarvester = app.BaseObjectFields(itemHarvesterFields, "BaseItemHarvester");
 
 local ItemHarvester = CreateFrame("GameTooltip", "ATTItemHarvester", UIParent, "GameTooltipTemplate");
 local itemTooltipHarvesterFields = RawCloneData(itemHarvesterFields);
@@ -9913,7 +10059,7 @@ itemTooltipHarvesterFields.text = function(t)
 		return link;
 	end
 end
-app.BaseItemTooltipHarvester = app.BaseObjectFields(itemTooltipHarvesterFields, "ItemTooltipHarvester");
+app.BaseItemTooltipHarvester = app.BaseObjectFields(itemTooltipHarvesterFields, "BaseItemTooltipHarvester");
 app.CreateItemHarvester = function(id, t)
 	return setmetatable(constructor(id, t, "itemID"), app.BaseItemHarvester);
 end
@@ -10048,12 +10194,12 @@ local mapFields = {
 		return GetAchievementLink(t.achievementID);
 	end,
 };
-app.BaseMap = app.BaseObjectFields(mapFields);
+app.BaseMap = app.BaseObjectFields(mapFields, "BaseMap");
 
 local fields = RawCloneData(mapFields);
 fields.icon = mapFields.iconForAchievement;
 fields.link = mapFields.linkForAchievement;
-app.BaseMapWithAchievementID = app.BaseObjectFields(fields);
+app.BaseMapWithAchievementID = app.BaseObjectFields(fields, "BaseMapWithAchievementID");
 app.CreateMap = function(id, t)
 	t = constructor(id, t, "mapID");
 	if rawget(t, "achID") then
@@ -10100,8 +10246,12 @@ end)();
 (function()
 local C_MountJournal_GetMountInfoExtraByID = C_MountJournal.GetMountInfoExtraByID;
 local C_MountJournal_GetMountInfoByID = C_MountJournal.GetMountInfoByID;
+local C_MountJournal_GetMountIDs = C_MountJournal.GetMountIDs;
+local GetSpellInfo = GetSpellInfo;
+local GetSpellLink = GetSpellLink;
+local IsSpellKnown = IsSpellKnown;
 local SpellIDToMountID = setmetatable({}, { __index = function(t, id)
-	local allMountIDs = C_MountJournal.GetMountIDs();
+	local allMountIDs = C_MountJournal_GetMountIDs();
 	if allMountIDs and #allMountIDs > 0 then
 		for i,mountID in ipairs(allMountIDs) do
 			local spellID = select(2, C_MountJournal_GetMountInfoByID(mountID));
@@ -10111,18 +10261,44 @@ local SpellIDToMountID = setmetatable({}, { __index = function(t, id)
 		return rawget(t, id);
 	end
 end });
+local cache = app.CreateCache("spellID");
+local function CacheInfo(t, field)
+	local itemID = t.itemID;
+	local t, id = cache.GetCached(t);
+	local mountID = SpellIDToMountID[id];
+	if mountID then
+		local displayID, lore = C_MountJournal_GetMountInfoExtraByID(mountID);
+		t.displayID = displayID;
+		t.lore = lore;
+		t.name = C_MountJournal_GetMountInfoByID(mountID);
+		t.mountID = mountID;
+	end
+	local name, _, icon = GetSpellInfo(id);
+	t.text = "|cffb19cd9"..name.."|r";
+	t.icon = icon;
+	if itemID then
+		local itemName = select(2, GetItemInfo(itemID));
+		-- item info might not be available on first request, so don't cache the data
+		if itemName then
+			t.link = itemName;
+		end
+	else
+		t.link = GetSpellLink(id);
+	end
+	if field then return t[field]; end
+end
 local mountFields = {
 	["key"] = function(t)
 		return "spellID";
 	end,
 	["text"] = function(t)
-		return "|cffb19cd9" .. (select(1, GetSpellInfo(t.spellID)) or "???") .. "|r";
+		return cache.GetCachedField(t, "text", CacheInfo);
 	end,
 	["icon"] = function(t)
-		return select(3, GetSpellInfo(t.spellID));
+		return cache.GetCachedField(t, "icon", CacheInfo);
 	end,
 	["link"] = function(t)
-		return select(1, GetSpellLink(t.spellID));
+		return cache.GetCachedField(t, "link", CacheInfo);
 	end,
 	["filterID"] = function(t)
 		return 100;
@@ -10141,44 +10317,41 @@ local mountFields = {
 		return (t.parent and t.parent.b) or 1;
 	end,
 	["mountID"] = function(t)
-		return SpellIDToMountID[t.spellID];
+		return cache.GetCachedField(t, "mountID", CacheInfo);
 	end,
 	["lore"] = function(t)
-		local mountID = t.mountID;
-		if mountID then return select(2, C_MountJournal_GetMountInfoExtraByID(mountID)); end
+		return cache.GetCachedField(t, "lore", CacheInfo);
 	end,
 	["displayID"] = function(t)
-		local mountID = t.mountID;
-		if mountID then return select(1, C_MountJournal_GetMountInfoExtraByID(mountID)); end
+		return cache.GetCachedField(t, "displayID", CacheInfo);
 	end,
 	["name"] = function(t)
-		local mountID = t.mountID;
-		if mountID then return C_MountJournal_GetMountInfoByID(mountID); end
+		return cache.GetCachedField(t, "name", CacheInfo);
 	end,
-	["modItemIDForItem"] = function(t)
-		return t.itemID;	-- mounts ignore modID even if applied in source
-	end,
-	["tsmForItem"] = function(t)
+	-- ["modItemIDForItem"] = function(t)
+	-- 	return t.itemID;	-- mounts ignore modID even if applied in source
+	-- end,
+	["tsm"] = function(t)
 		if t.itemID then return string.format("i:%d", t.itemID); end
 		if t.parent and t.parent.itemID then return string.format("i:%d", t.parent.itemID); end
 	end,
-	["linkForItem"] = function(t)
-		return select(2, GetItemInfo(t.itemID)) or select(1, GetSpellLink(t.spellID));
-	end,
+	-- ["linkForItem"] = function(t)
+	-- 	return select(2, GetItemInfo(t.itemID)) or select(1, GetSpellLink(t.spellID));
+	-- end,
 };
-app.BaseMount = app.BaseObjectFields(mountFields);
+app.BaseMount = app.BaseObjectFields(mountFields, "BaseMount");
 
 local fields = RawCloneData(mountFields);
-fields.modItemID = mountFields.modItemIDForItem;
-fields.link = mountFields.linkForItem;
-fields.tsm = mountFields.tsmForItem;
-app.BaseMountWithItemID = app.BaseObjectFields(fields);
+-- fields.modItemID = mountFields.modItemIDForItem;
+-- fields.link = mountFields.linkForItem;
+-- fields.tsm = mountFields.tsmForItem;
+app.BaseMountWithItemID = app.BaseObjectFields(fields, "BaseMountWithItemID");
 app.CreateMount = function(id, t)
-	if t and rawget(t, "itemID") then
-		return setmetatable(constructor(id, t, "spellID"), app.BaseMountWithItemID);
-	else
+	-- if t and rawget(t, "itemID") then
+		-- return setmetatable(constructor(id, t, "spellID"), app.BaseMountWithItemID);
+	-- else
 		return setmetatable(constructor(id, t, "spellID"), app.BaseMount);
-	end
+	-- end
 end
 
 -- Refresh a specific Mount or all Mounts if not provided with a specific ID
@@ -10265,7 +10438,7 @@ local fields = {
 		return IsQuestFlaggedCompleted(t.questID);
 	end,
 };
-app.BaseMusicRoll = app.BaseObjectFields(fields);
+app.BaseMusicRoll = app.BaseObjectFields(fields, "BaseMusicRoll");
 app.CreateMusicRoll = function(questID, t)
 	return setmetatable(constructor(questID, t, "questID"), app.BaseMusicRoll);
 end
@@ -10308,7 +10481,7 @@ local fields = {
 		return 40;
 	end,
 };
-app.BaseSelfieFilter = app.BaseObjectFields(fields);
+app.BaseSelfieFilter = app.BaseObjectFields(fields, "BaseSelfieFilter");
 app.CreateSelfieFilter = function(id, t)
 	return setmetatable(constructor(id, t, "questID"), app.BaseSelfieFilter);
 end
@@ -10396,12 +10569,12 @@ local npcFields = {
 	end,
 };
 npcFields.icon = npcFields.iconAsDefault;
-app.BaseNPC = app.BaseObjectFields(npcFields);
+app.BaseNPC = app.BaseObjectFields(npcFields, "BaseNPC");
 
 local fields = RawCloneData(npcFields);
 fields.icon = npcFields.iconAsAchievement;
 --fields.link = npcFields.linkAsAchievement;	-- Go to Broken Shore -> Command Center ->
-app.BaseNPCWithAchievement = app.BaseObjectFields(fields);
+app.BaseNPCWithAchievement = app.BaseObjectFields(fields, "BaseNPCWithAchievement");
 
 local fields = RawCloneData(npcFields);
 fields.altcollected = npcFields.altcollectedAsQuest;
@@ -10410,7 +10583,7 @@ fields.collected = npcFields.collectedAsQuest;
 fields.trackable = npcFields.trackableAsQuest;
 fields.repeatable = npcFields.repeatableAsQuest;
 fields.saved = fields.savedAsQuest;
-app.BaseNPCWithQuest = app.BaseObjectFields(fields);
+app.BaseNPCWithQuest = app.BaseObjectFields(fields, "BaseNPCWithQuest");
 
 local fields = RawCloneData(npcFields);
 fields.icon = npcFields.iconAsAchievement;
@@ -10421,7 +10594,7 @@ fields.collected = npcFields.collectedAsQuest;
 fields.trackable = npcFields.trackableAsQuest;
 fields.repeatable = npcFields.repeatableAsQuest;
 fields.saved = fields.savedAsQuest;
-app.BaseNPCWithAchievementAndQuest = app.BaseObjectFields(fields);
+app.BaseNPCWithAchievementAndQuest = app.BaseObjectFields(fields, "BaseNPCWithAchievementAndQuest");
 
 local headerFields = {
 	["key"] = function(t)
@@ -10453,23 +10626,23 @@ local headerFields = {
 	end,
 	["trackableAsQuest"] = app.ReturnTrue,
 };
-app.BaseHeader = app.BaseObjectFields(headerFields);
+app.BaseHeader = app.BaseObjectFields(headerFields, "BaseHeader");
 local fields = RawCloneData(headerFields);
 fields.name = headerFields.nameAsAchievement;
 fields.icon = headerFields.iconAsAchievement;
 --fields.link = headerFields.linkAsAchievement;
-app.BaseHeaderWithAchievement = app.BaseObjectFields(fields);
+app.BaseHeaderWithAchievement = app.BaseObjectFields(fields, "BaseHeaderWithAchievement");
 local fields = RawCloneData(headerFields);
 fields.saved = headerFields.savedAsQuest;
 fields.trackable = headerFields.trackableAsQuest;
-app.BaseHeaderWithQuest = app.BaseObjectFields(fields);
+app.BaseHeaderWithQuest = app.BaseObjectFields(fields, "BaseHeaderWithQuest");
 local fields = RawCloneData(headerFields);
 fields.name = headerFields.nameAsAchievement;
 fields.icon = headerFields.iconAsAchievement;
 --fields.link = headerFields.linkAsAchievement;
 fields.saved = headerFields.savedAsQuest;
 fields.trackable = headerFields.trackableAsQuest;
-app.BaseHeaderWithAchievementAndQuest = app.BaseObjectFields(fields);
+app.BaseHeaderWithAchievementAndQuest = app.BaseObjectFields(fields, "BaseHeaderWithAchievementAndQuest");
 app.CreateNPC = function(id, t)
 	if t then
 		-- TEMP: clean MoH tagging from random Vendors
@@ -10606,12 +10779,12 @@ local objectFields = {
 		return anySaved;
 	end,
 };
-app.BaseObject = app.BaseObjectFields(objectFields);
+app.BaseObject = app.BaseObjectFields(objectFields, "BaseObject");
 
 local fields = RawCloneData(objectFields);
 fields.icon = objectFields.iconAsAchievement;
 --fields.link = objectFields.linkAsAchievement;
-app.BaseObjectWithAchievement = app.BaseObjectFields(fields);
+app.BaseObjectWithAchievement = app.BaseObjectFields(fields, "BaseObjectWithAchievement");
 
 local fields = RawCloneData(objectFields);
 fields.altcollected = objectFields.altcollectedAsQuest;
@@ -10620,7 +10793,7 @@ fields.collected = objectFields.collectedAsQuest;
 fields.trackable = objectFields.trackableAsQuest;
 fields.repeatable = objectFields.repeatableAsQuest;
 fields.saved = fields.savedAsQuest;
-app.BaseObjectWithQuest = app.BaseObjectFields(fields);
+app.BaseObjectWithQuest = app.BaseObjectFields(fields, "BaseObjectWithQuest");
 
 local fields = RawCloneData(objectFields);
 fields.icon = objectFields.iconAsAchievement;
@@ -10631,7 +10804,7 @@ fields.collected = objectFields.collectedAsQuest;
 fields.trackable = objectFields.trackableAsQuest;
 fields.repeatable = objectFields.repeatableAsQuest;
 fields.saved = fields.savedAsQuest;
-app.BaseObjectWithAchievementAndQuest = app.BaseObjectFields(fields);
+app.BaseObjectWithAchievementAndQuest = app.BaseObjectFields(fields, "BaseObjectWithAchievementAndQuest");
 app.CreateObject = function(id, t)
 	if t then
 		if rawget(t, "achID") then
@@ -10745,7 +10918,7 @@ local fields = {
 		return t.professionID;
 	end,
 };
-app.BaseProfession = app.BaseObjectFields(fields);
+app.BaseProfession = app.BaseObjectFields(fields, "BaseProfession");
 app.CreateProfession = function(id, t)
 	return setmetatable(constructor(id, t, "professionID"), app.BaseProfession);
 end
@@ -10786,7 +10959,7 @@ local fields = {
 		GameTooltip:AddDoubleLine("Your lifetime highest rank: ", _G["PVP_RANK_" .. (t.lifetimeRank) .. "_" .. (app.FactionID == 2 and 1 or 0)], 1, 1, 1, 1, 1, 1);
 	end
 };
-app.BasePVPRank = app.BaseObjectFields(fields);
+app.BasePVPRank = app.BaseObjectFields(fields, "BasePVPRank");
 app.CreatePVPRank = function(id, t)
 	return setmetatable(constructor(id, t, "pvpRankID"), app.BasePVPRank);
 end
@@ -10985,7 +11158,7 @@ local questFields = {
 		end
 	end,
 };
-app.BaseQuest = app.BaseObjectFields(questFields);
+app.BaseQuest = app.BaseObjectFields(questFields, "BaseQuest");
 
 -- consolidated representation of whether a Thing can be collectible via QuestID
 app.CollectibleAsQuest = function(t)
@@ -11277,7 +11450,7 @@ end
 local fields = RawCloneData(questFields);
 fields.collectible = questFields.collectibleAsReputation;
 fields.collected = questFields.collectedAsReputation;
-app.BaseQuestWithReputation = app.BaseObjectFields(fields);
+app.BaseQuestWithReputation = app.BaseObjectFields(fields, "BaseQuestWithReputation");
 app.CreateQuest = function(id, t)
 	if t and rawget(t, "maxReputation") then
 		return setmetatable(constructor(id, t, "questID"), app.BaseQuestWithReputation);
@@ -11390,7 +11563,7 @@ end
 -- 		end
 -- 	end,
 -- };
--- app.BaseQuestObjective = app.BaseObjectFields(fields);
+-- app.BaseQuestObjective = app.BaseObjectFields(fields, "BaseQuestObjective");
 -- app.CreateQuestObjective = function(id, t)
 -- 	return setmetatable(constructor(id, t, "objectiveID"), app.BaseQuestObjective);
 -- end
@@ -11430,7 +11603,7 @@ fields.name = function(t)
 end;
 fields.icon = function(t) return "Interface\\Icons\\INV_Misc_Head_Dragon_Black"; end;
 fields.isVignette = app.ReturnTrue;
-app.BaseVignette = app.BaseObjectFields(fields);
+app.BaseVignette = app.BaseObjectFields(fields, "BaseVignette");
 app.CreateVignette = function(id, t)
 	return setmetatable(constructor(id, t, "questID"), app.BaseVignette);
 end
@@ -11539,13 +11712,13 @@ local function default_icon(t)
 	-- Allied Races are different
 	local arInfo = C_AlliedRaces_GetRaceInfoByID(t.raceID);
 	if arInfo then
-		local race = string.lower(arInfo.raceFileString);
+		local race = string_lower(arInfo.raceFileString);
 		-- blizzard being inconsistent
 		if race == "kultiran" then race = "kultiranhuman"; end
 		icon = "Interface\\Icons\\achievement_alliedrace_"..race;
 	else
 		local info = C_CreatureInfo_GetRaceInfo(t.raceID);
-		local race = string.lower(info.clientFileString);
+		local race = string_lower(info.clientFileString);
 		-- blizzard being inconsistent
 		if race == "scourge" then race = "undead"; end
 		if race == "goblin" then
@@ -11579,7 +11752,7 @@ local raceFields = {
 		return cache.GetCachedField(t, "name", default_name);
 	end,
 };
-app.BaseRace = app.BaseObjectFields(raceFields);
+app.BaseRace = app.BaseObjectFields(raceFields, "BaseRace");
 app.CreateRace = function(id, t)
 	return setmetatable(constructor(id, t, "raceID"), app.BaseRace);
 end
@@ -11670,7 +11843,7 @@ local fields = {
 		return rawget(t, "modItemID");
 	end,
 };
-app.BaseRecipe = app.BaseObjectFields(fields);
+app.BaseRecipe = app.BaseObjectFields(fields, "BaseRecipe");
 app.CreateRecipe = function(id, t)
 	return setmetatable(constructor(id, t, "spellID"), app.BaseRecipe);
 end
@@ -11841,12 +12014,21 @@ local function GetTierInfo(tierID, key)
 		return rawget(rawget(tiers, tierID), key);
 	end
 end
+local EJ_GetTierInfo = EJ_GetTierInfo;
+local cache = app.CreateCache("tierID");
+local function CacheInfo(t, field)
+	local t, id = cache.GetCached(t);
+	t.name = EJ_GetTierInfo(id);
+end
 local fields = {
 	["key"] = function(t)
 		return "tierID";
 	end,
 	["text"] = function(t)
-		return EJ_GetTierInfo(t.tierID);
+		return t.name;
+	end,
+	["name"] = function(t)
+		return cache.GetCachedField(t, "name", CacheInfo);
 	end,
 	-- Keyed values from 'tiers' data
 	["icon"] = function(t)
@@ -11860,7 +12042,7 @@ local fields = {
 	end,
 };
 
-app.BaseTier = app.BaseObjectFields(fields);
+app.BaseTier = app.BaseObjectFields(fields, "BaseTier");
 app.CreateTier = function(id, t)
 	return setmetatable(constructor(id, t, "tierID"), app.BaseTier);
 end
@@ -11952,7 +12134,7 @@ local fields = {
 				end
 
 				-- Suffix
-				if first == string.lower(first) then
+				if first == string_lower(first) then
 					-- Player Name First with a space
 					rawset(t, "style", 2);
 					return 2;
@@ -12046,7 +12228,7 @@ local fields = {
 		end
 	end,
 };
-app.BaseTitle = app.BaseObjectFields(fields);
+app.BaseTitle = app.BaseObjectFields(fields, "BaseTitle");
 app.CreateTitle = function(id, t)
 	return setmetatable(constructor(id, t, "titleID"), app.BaseTitle);
 end
@@ -15114,8 +15296,9 @@ RowOnEnter = function (self)
 		-- end
 		-- local fields = {
 		-- 	"__type",
-		-- 	"OnUpdate",
-		-- 	"doUpdate",
+		-- 	"name",
+		-- 	"key",
+		-- 	"hash",
 		-- };
 		-- GameTooltip:AddLine("-- Extra Fields:");
 		-- for _,key in ipairs(fields) do
@@ -15443,6 +15626,10 @@ app.DynamicCategory_Simple = function(self)
 				NestObject(topHeaders[topText], thing);
 			end
 		end
+		-- dynamic groups are ignored for the source tooltips
+		self.sourceIgnored = true;
+		-- change the text color of the dynamic group to help indicate it is not included in the window total
+		self.text = Colorize(self.text, "ff7f40bf");
 		-- sort all of the Things by name in each top header and put it under the dynamic group
 		-- print("sorting headers",self.dynamic)
 		for _,header in pairs(topHeaders) do
@@ -15455,10 +15642,6 @@ app.DynamicCategory_Simple = function(self)
 		self.sort = true;
 		app.SortGroup(self, "name", nil, nil, "sort");
 		self.sort = nil;
-		-- dynamic groups are ignored for the source tooltips
-		self.sourceIgnored = true;
-		-- change the text color of the dynamic group to help indicate it is not included in the window total
-		self.text = Colorize(self.text, "ff7f40bf");
 		-- make sure these things are cached so they can be updated when collected
 		app.CacheFields(self);
 	else
@@ -15470,6 +15653,10 @@ end
 -- content which matches the specified .dynamic 'field' and .dynamic_value of the group
 app.DynamicCategory_Nested = function(self)
 	self.OnUpdate = nil;
+	-- dynamic groups are ignored for the source tooltips
+	self.sourceIgnored = true;
+	-- change the text color of the dynamic group to help indicate it is not included in the window total
+	self.text = Colorize(self.text, "ff7f40bf");
 	-- pull out all Things which should go into this category based on field & value
 	self.g = app:BuildSearchResponse(app:GetWindow("Prime").data.g, self.dynamic, self.dynamic_value, true);
 	-- reset indents and such
@@ -15478,10 +15665,6 @@ app.DynamicCategory_Nested = function(self)
 	self.sort = true;
 	app.SortGroup(self, "name", nil, nil, "sort");
 	self.sort = nil;
-	-- dynamic groups are ignored for the source tooltips
-	self.sourceIgnored = true;
-	-- change the text color of the dynamic group to help indicate it is not included in the window total
-	self.text = Colorize(self.text, "ff7f40bf");
 	-- make sure these things are cached so they can be updated when collected
 	app.CacheFields(self);
 end
@@ -15528,6 +15711,7 @@ function app:GetDataCache()
 		db.g = app.Categories.Instances;
 		db.expanded = false;
 		db.text = GROUP_FINDER;
+		db.name = db.text;
 		db.icon = app.asset("Category_D&R");
 		tinsert(g, db);
 
@@ -15537,6 +15721,7 @@ function app:GetDataCache()
 			db.g = app.Categories.Zones;
 			db.expanded = false;
 			db.text = BUG_CATEGORY2;
+			db.name = db.text;
 			db.icon = app.asset("Category_Zones")
 			tinsert(g, db);
 		end
@@ -15548,6 +15733,7 @@ function app:GetDataCache()
 			db.isWorldDropCategory = true;
 			db.expanded = false;
 			db.text = TRANSMOG_SOURCE_4;
+			db.name = db.text;
 			db.icon = app.asset("Category_WorldDrops");
 			tinsert(g, db);
 		end
@@ -15558,6 +15744,7 @@ function app:GetDataCache()
 			db.g = app.Categories.GroupFinder;
 			db.expanded = false;
 			db.text = DUNGEONS_BUTTON;
+			db.name = db.text;
 			db.icon = app.asset("Category_GroupFinder")
 			tinsert(g, db);
 		end
@@ -15579,6 +15766,7 @@ function app:GetDataCache()
 			db.lvl = 10;
 			db.expanded = false;
 			db.text = GetCategoryInfo(15301);
+			db.name = db.text;
 			db.icon = app.asset("Category_ExpansionFeatures");
 			tinsert(g, db);
 		end
@@ -15598,6 +15786,7 @@ function app:GetDataCache()
 		if app.Categories.WorldEvents then
 			db = {};
 			db.text = BATTLE_PET_SOURCE_7;
+			db.name = db.text;
 			db.description = "These events occur at different times in the game's timeline, typically as one time server wide events. Special celebrations such as Anniversary events and such may be found within this category.";
 			db.icon = app.asset("Category_Event");
 			db.g = app.Categories.WorldEvents;
@@ -15609,6 +15798,7 @@ function app:GetDataCache()
 		if app.Categories.Promotions then
 			db = {};
 			db.text = BATTLE_PET_SOURCE_8;
+			db.name = db.text;
 			db.description = "This section is for real world promotions that seeped extremely rare content into the game prior to some of them appearing within the In-Game Shop.";
 			db.icon = app.asset("Category_Promo");
 			db.g = app.Categories.Promotions;
@@ -15635,6 +15825,7 @@ function app:GetDataCache()
 			db.isPVPCategory = true;
 			db.expanded = false;
 			db.text = STAT_CATEGORY_PVP;
+			db.name = db.text;
 			db.icon = app.asset("Category_PvP");
 			tinsert(g, db);
 		end
@@ -15646,6 +15837,7 @@ function app:GetDataCache()
 			db.DontEnforceSkillRequirements = true;
 			db.expanded = false;
 			db.text = LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM;
+			db.name = db.text;
 			db.icon = app.asset("Category_Crafting");
 			tinsert(g, db);
 		end
@@ -15675,6 +15867,7 @@ function app:GetDataCache()
 			db.g = app.Categories.GearSets;
 			db.expanded = false;
 			db.text = LOOT_JOURNAL_ITEM_SETS;
+			db.name = db.text;
 			db.icon = app.asset("Category_ItemSets");
 			tinsert(g, db);
 		end
@@ -15685,6 +15878,7 @@ function app:GetDataCache()
 			db.g = app.Categories.InGameShop;
 			db.expanded = false;
 			db.text = BATTLE_PET_SOURCE_10;
+			db.name = db.text;
 			db.icon = app.asset("Category_InGameShop");
 			tinsert(g, db);
 		end
@@ -15743,12 +15937,14 @@ function app:GetDataCache()
 			-- Illusions - Dynamic
 			db = {};
 			db.text = L["FILTER_ID_TYPES"][103];
+			db.name = db.text;
 			db.icon = 132853;
 			tinsert(g, DynamicCategory(db, "illusionID"));
 
 			-- Mounts - Dynamic
 			db = {};
 			db.text = MOUNTS;
+			db.name = db.text;
 			db.icon = app.asset("Category_Mounts");
 			tinsert(g, DynamicCategory(db, "mountID"));
 
@@ -15756,6 +15952,7 @@ function app:GetDataCache()
 			db = {};
 			db.icon = app.asset("Category_Titles");
 			db.text = PAPERDOLL_SIDEBAR_TITLES;
+			db.name = db.text;
 			tinsert(g, DynamicCategory(db, "titleID"));
 
 			-- Toys - Dynamic
@@ -15763,6 +15960,7 @@ function app:GetDataCache()
 			db.icon = app.asset("Category_ToyBox");
 			db.f = 102;
 			db.text = TOY_BOX;
+			db.name = db.text;
 			tinsert(g, DynamicCategory(db, "toyID"));
 		end
 
@@ -15905,10 +16103,10 @@ function app:GetDataCache()
 								tinsert(sources, setmetatable({ s = sourceID }, app.BaseGearSource));
 							end
 						end
-						insertionSort(sources, SortGearSetSources);
+						app.insertionSort(sources, SortGearSetSources);
 					end
 				end
-				insertionSort(gearSets, SortGearSetInformation);
+				app.insertionSort(gearSets, SortGearSetInformation);
 
 				-- Let's build some headers!
 				local headers = {};
@@ -16290,7 +16488,7 @@ function app:GetDataCache()
 					end
 				end
 			end
-			insertionSort(self.g, achievementSort, true);
+			app.insertionSort(self.g, achievementSort, true);
 		end
 		achievementsCategory:OnUpdate();
 		]]--
@@ -16318,9 +16516,7 @@ function app:GetDataCache()
 					CacheFields(faction);
 				end
 			end
-			insertionSort(self.g, function(a, b)
-				return a.text < b.text;
-			end);
+			app.insertionSort(self.g);
 		end
 		factionsCategory:OnUpdate();
 		]]--
@@ -16388,31 +16584,6 @@ function app:GetDataCache()
 		-- 		BuildGroups(titlesCategory, titlesCategory.g);
 		-- 		self.OnUpdate = nil;
 		-- 	end
-		-- end
-
-		-- Update Toy data.
-		-- if toyCategory then
-		-- 	toyCategory.OnUpdate = function(self)
-		-- 		local headers = {};
-		-- 		for i,header in ipairs(self.g) do
-		-- 			if header.headerID and header.key == "headerID" then
-		-- 				headers[header.headerID] = header;
-		-- 				if not header.g then
-		-- 					header.g = {};
-		-- 				end
-		-- 			end
-		-- 		end
-		-- 		for i,_ in pairs(fieldCache["toyID"]) do
-		-- 			if not self.toys[i] then
-		-- 				self.toys[i] = buildCategoryEntry(self, headers, _, app.CreateToy(tonumber(i)));
-		-- 			end
-		-- 		end
-		-- 		insertionSort(self.g, sortByTextSafely);
-		-- 		for i,header in pairs(headers) do
-		-- 			insertionSort(header.g, sortByTextSafely);
-		-- 		end
-		-- 	end
-		-- 	toyCategory:OnUpdate();
 		-- end
 
 		-- Perform Heirloom caching/upgrade generation
@@ -17370,12 +17541,12 @@ customWindowUpdates["ItemFilter"] = function(self)
 					['visible'] = true,
 					['OnClick'] = function(row, button)
 						app:ShowPopupDialogWithEditBox(L["ITEM_FILTER_POPUP_TEXT"], "", function(text)
-							text = string.lower(text);
+							text = string_lower(text);
 							local f = tonumber(text);
 							if tostring(f) ~= text then
 								-- The string form did not match, the filter must have been by name.
 								for id,filter in pairs(L["FILTER_ID_TYPES"]) do
-									if string.match(string.lower(filter), text) then
+									if string.match(string_lower(filter), text) then
 										f = tonumber(id);
 										break;
 									end
@@ -17607,8 +17778,8 @@ customWindowUpdates["Harvester"] = function(self)
 						end
 						self.ScrollBar:SetValue(count);
 					else
-						insertionSort(AllTheThingsHarvestItems);
-						insertionSort(AllTheThingsArtifactsItems);
+						app.insertionSort(AllTheThingsHarvestItems);
+						app.insertionSort(AllTheThingsArtifactsItems);
 						-- revert Debug if it was enabled by the harvester
 						if self.forcedDebug then
 							app.print("Reverted Debug Mode");
@@ -19369,12 +19540,12 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 					end
 
 					-- Merge everything for this map into the list
-					insertionSort(mapObject.g, self.Sort);
+					app.insertionSort(mapObject.g);
 					if mapObject.g then
 						-- Sort the sub-groups as well
 						for i,mapGrp in ipairs(mapObject.g) do
 							if mapGrp.mapID then
-								insertionSort(mapGrp.g, self.Sort);
+								app.insertionSort(mapGrp.g);
 							end
 						end
 					end
@@ -19393,12 +19564,12 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 							NestObject(mapObject, questObject);
 						end
 					end
-					insertionSort(mapObject.g, self.Sort);
+					app.insertionSort(mapObject.g);
 					if mapObject.g then
 						-- Sort the sub-groups as well
 						for i,mapGrp in ipairs(mapObject.g) do
 							if mapGrp.mapID then
-								insertionSort(mapGrp.g, self.Sort);
+								app.insertionSort(mapGrp.g);
 							end
 						end
 					end
@@ -19492,94 +19663,6 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				-- Force Update Callback
 				Callback(self.Update, self, true);
 			end
-			self.Sort = function(a, b)
-				-- If either object doesn't exist
-				if not a then
-					-- print("a-nil");
-					if not b then
-						-- print("b-nil");
-						return false;
-					else
-						return false;
-					end
-				elseif not b then
-					-- print("b-nil");
-					return true;
-				end
-				-- Raids/Encounter 1st
-				if a.isRaid then
-					-- print("a-raid",a.text);
-					if not b.isRaid then
-						return true;
-					end
-					-- print("b-raid",b.text);
-					-- both Raid, compare on text
-					-- print("raid",a.text,b.text);
-					return string.lower(a.name or "") <= string.lower(b.name or "");
-				elseif b.isRaid then
-					-- print("b-raid",b.text);
-					return false;
-				end
-				-- Quests 2nd
-				if a.questID then
-					-- print("a-quest",a.text);
-					if not b.questID then
-						return true;
-					end
-					-- both Quest
-					-- print("quest",a.questID,b.questID);
-					return a.questID <= b.questID;
-				elseif b.questID then
-					return false;
-				end
-				-- Maps 3rd
-				if a.mapID then
-					if not b.mapID then
-						return true;
-					end
-					-- both Map, compare on text
-					--print("map",a.text,b.text);
-					return string.lower(a.text or "") <= string.lower(b.text or "");
-				elseif b.mapID then
-					return false;
-				end
-				-- Level 4th
-				-- if a.lvl then
-					-- if not b.lvl then
-						-- return true;
-					-- end
-					-- -- both Level, compare on level
-					-- -- equal Level, compare on text
-					-- if (a.lvl == b.lvl) then
-					-- -- print("lvl",a.text,b.text);
-						-- return string.lower(a.text or "") <= string.lower(b.text or "");
-					-- end
-					-- -- print("lvl",a.lvl,b.lvl);
-					-- return a.lvl <= b.lvl;
-				-- elseif b.lvl then
-					-- return false;
-				-- end
-				-- Items 5th
-				if a.itemID then
-					if not b.itemID then
-						return true;
-					end
-					-- both Item
-					-- print("item",a.itemID,b.itemID);
-					return a.itemID <= b.itemID;
-				elseif b.itemID then
-					return false;
-				end
-				-- Anything else with text
-				if a.name and b.name then
-					-- print("text",a.text,b.text);
-					return string.lower(a.name or "") <= string.lower(b.name or "");
-				end
-				-- false here may cause 'invalid order function' error when no other conditions match
-				-- print("a-b",a.key,b.key);
-				-- return a.key <= b.key;
-				return true;
-			end;
 		end
 
 		self:BaseUpdate(force or got);
@@ -20223,7 +20306,7 @@ app.ProcessAuctionData = function()
 			end
 		end
 		for f,entry in pairs(filteredItems) do
-			insertionSort(entry.g, function(a,b)
+			app.insertionSort(entry.g, function(a,b)
 				return a.u and not b.u;
 			end);
 		end
@@ -20324,7 +20407,7 @@ app.ProcessAuctionData = function()
 		end
 		tinsert(window.data.g, subdata);
 	end
-	insertionSort(window.data.g, function(a, b)
+	app.insertionSort(window.data.g, function(a, b)
 		return (b.priority or 0) > (a.priority or 0);
 	end);
 	BuildGroups(window.data, window.data.g);
@@ -21105,7 +21188,7 @@ SLASH_AllTheThings3 = "/att";
 SlashCmdList["AllTheThings"] = function(cmd)
 	if cmd then
 		-- print(cmd)
-		local args = { strsplit(" ", string.lower(cmd)) };
+		local args = { strsplit(" ", string_lower(cmd)) };
 		cmd = args[1];
 		-- app.print(args)
 		-- first arg is always the window/command to execute

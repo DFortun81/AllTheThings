@@ -281,13 +281,25 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 				["creatureID"] = 25315,
 				["groups"] = {
 					ach(698),	-- Sunwell Plateau
-					ach(725, {	-- Thori'dal, the Stars' Fury
-						["description"] = "You must equip the bow to earn this achievement.",
+					removeclassicphase(ach(725, {	-- Thori'dal, the Stars' Fury
+						["provider"] = { "i", 34334 },	-- Thori'dal, the Stars' Fury
 						["classes"] = { WARRIOR, ROGUE, HUNTER },
-						["cost"] = {
-							{ "i", 34334, 1 },	-- Thori'dal, the Stars' Fury (LEGENDARY!)
-						},
-					}),
+						-- #if BEFORE WRATH
+						["description"] = "Obtain Thori'dal, the Stars' Fury from Kil'jaeden in Sunwell Plateau.",
+						["OnUpdate"] = [[function(t)
+							local collected = false;
+							for i,provider in ipairs(t.providers) do
+								if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
+									collected = true;
+									break;
+								end
+							end
+							t.SetAchievementCollected(t.achievementID, collected);
+						end]],
+						-- #else
+						["description"] = "You must equip the bow to earn this achievement.",
+						-- #endif
+					})),
 					i(34334),	-- Thori'dal, the Stars' Fury (LEGENDARY!)
 					i(34247),	-- Apolyon, the Soul-Render
 					i(34337),	-- Golden Staff of the Sin'dorei

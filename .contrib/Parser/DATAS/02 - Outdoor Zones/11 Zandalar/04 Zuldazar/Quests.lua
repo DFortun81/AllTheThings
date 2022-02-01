@@ -905,6 +905,12 @@ _.Zones =
 					["coord"] = { 79.2, 42.1, ZULDAZAR },
 					["races"] = HORDE_ONLY,
 				}),
+				q(51520, {	-- Justice for the Fallen
+					["provider"] = { "n", 140725 },	-- Spirit of Vol'jin
+					["coord"] = { 57.6, 63.0, ZULDAZAR },
+					["races"] = HORDE_ONLY,
+					["sourceQuests"] = { 51519 },	-- Spirit Call
+				}),
 				q(56205, {	--  Just Ptrust Me On This
 					["sourceQuests"] = { 50944 },	-- Down, But Not Out
 					["provider"] = { "n", 127377 },	-- Pa'Ku
@@ -1256,6 +1262,12 @@ _.Zones =
 					["coord"] = { 64.1, 35.3, ZULDAZAR },
 					["races"] = HORDE_ONLY,
 				}),
+				q(53775, {	-- Shades of Disruption
+					["provider"] = { "n", 145190 },	-- Princess Talanji
+					["coord"] = { 66.4, 70.8, ZANCHUL_HALL_OF_THE_HIGH_PRIESTS },
+					["races"] = HORDE_ONLY,
+					["sourceQuests"] = { 53774 },	-- Wisdom of the Warchief
+				}),
 				q(49147, {	-- Show of Strength
 					["sourceQuests"] = {
 						49144,	-- Wrath of the Zandalari
@@ -1560,6 +1572,12 @@ _.Zones =
 					["coord"] = { 76.6, 48.5, ZULDAZAR },
 					["races"] = HORDE_ONLY,
 				}),
+				q(51521, {	-- The True Leader of Zandalar
+					["provider"] = { "n", 140725 },	-- Spirit of Vol'jin
+					["coord"] = { 57.6, 63.0, ZULDAZAR },
+					["races"] = HORDE_ONLY,
+					["sourceQuests"] = { 51520 },	-- Justice for the Fallen
+				}),
 				q(55247, {	-- The Trust You've Earned
 					["sourceQuests"] = { 55507 },	-- Torcali's Blessing
 					["provider"] = { "n", 151319 },	-- Li'zal <Priestess of Torcali>
@@ -1635,6 +1653,12 @@ _.Zones =
 					["coord"] = { 74.9, 24.9, ZULDAZAR },
 					["races"] = HORDE_ONLY,
 				}),
+				q(53776, {	-- To the Broken Shore
+					["provider"] = { "n", 145225 },	-- Spirit of Vol'jin
+					["coord"] = { 67.6, 72.8, ZANCHUL_HALL_OF_THE_HIGH_PRIESTS },
+					["races"] = HORDE_ONLY,
+					["sourceQuests"] = { 53775 },	-- Shades of Disruption
+				}),
 				q(55798, {	-- Wander Not Alone
 					["sourceQuests"] = { 55797 },	-- The Direhorn Mother's Fury
 					["provider"] = { "n", 151999 },	-- Jo'nok, Bulwark of Torcali <Zanchuli Council>
@@ -1692,6 +1716,12 @@ _.Zones =
 					["provider"] = { "n", 121706 },	-- Beastlord L'kala
 					["coord"] = { 66.8, 42.5, ZULDAZAR },
 					["races"] = HORDE_ONLY,
+				}),
+				q(53774, {	-- Wisdom of the Warchief
+					["provider"] = { "n", 141555 },	-- Baine Bloodhoof
+					["coord"] = { 41.4, 72.2, HALL_OF_CHRONICLERS },
+					["races"] = HORDE_ONLY,
+					["sourceQuests"] = { 51521 },	-- The True Leader of Zandalar
 				}),
 				q(50940, {	-- Wisdom of the Wingless
 					["sourceQuests"] = { 50397 },	-- Aerial Aspirations
@@ -1932,12 +1962,6 @@ _.Zones =
 					["coord"] = { 57.6, 62.6, ZULDAZAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 51518 },	-- The Lost Spirit
-				}),
-				q(51520, {	-- Justice for the Fallen
-					["provider"] = { "n", 140725 },	-- Spirit of Vol'jin
-					["coord"] = { 57.6, 63.0, ZULDAZAR },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 51519 },	-- Spirit Call
 				}),
 				q(52113, {	-- Vol'jin, Son of Sen'jin
 					["provider"] = { "n", 137878 },	-- Master Gadrin

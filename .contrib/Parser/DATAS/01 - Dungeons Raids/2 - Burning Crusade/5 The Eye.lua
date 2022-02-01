@@ -234,10 +234,24 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 						["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(10445) or C_QuestLog.IsQuestFlaggedCompleted(11007)); end]],
 						-- #endif
 					})),
+					removeclassicphase(ach(885, {	-- Ashes of Al'ar
+						["provider"] = { "i", 32458 },	-- Ashes of Al'ar
+						-- #if BEFORE WRATH
+						["description"] = "Obtain the Ashes of Al'ar from Kael'thas Sunstrider in Tempest Keep.",
+						["OnUpdate"] = [[function(t)
+							local collected = false;
+							for i,provider in ipairs(t.providers) do
+								if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
+									collected = true;
+									break;
+								end
+							end
+							t.SetAchievementCollected(t.achievementID, collected);
+						end]],
+						-- #endif
+					})),
+					i(32458),	-- Ashes of Al'ar (MOUNT!)
 					i(32405),	-- Verdant Sphere
-					i(32458, {	-- Ashes of Al'ar (MOUNT!)
-						ach(885),	-- Ashes of Al'ar
-					}),
 					i(30236, {	-- Chestguard of the Vanquished Champion
 						["classes"] = { PALADIN, ROGUE, SHAMAN },
 					}),

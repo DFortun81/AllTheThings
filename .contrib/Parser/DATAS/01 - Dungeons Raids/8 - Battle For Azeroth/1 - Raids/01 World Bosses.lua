@@ -182,8 +182,8 @@ _.Instances = { tier(BFA_TIER, {
 				["coord"] = { 69.0, 31.0, ZULDAZAR },
 				["lvl"] = { 50 },
 				["maps"] = {	-- all Zuldazar maps
-					1166,	-- Zanchul
-					1167,	-- Zanchul 2
+					ZANCHUL_COUNCIL_CHAMBERS,
+					ZANCHUL_HALL_OF_THE_HIGH_PRIESTS,
 					1176,	-- Breath of Pa'ku, middle level
 					1177,	-- Breath Of Pa'ku,	bottom level
 				},

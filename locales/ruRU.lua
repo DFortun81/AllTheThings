@@ -1050,6 +1050,7 @@ for key,value in pairs({
 	[184300] = "Средоточие некромантии",	-- Necromantic Focus
 	[184465] = "Тайник Легиона",	-- Cache of the Legion
 	[184660] = "Плакат \"Разыскивается\"",	-- Wanted Poster
+	[184684] = "Яйцо прожорливого камнедера",	-- Ravenous Flayer Egg
 	[184825] = "Фолиант Лашш",	-- Lashh'an Tome
 	[184945] = "Плакат \"Разыскивается\"",	-- Wanted Poster
 	[184946] = "Плакат \"Разыскивается\"",	-- Wanted Poster
@@ -1297,6 +1298,7 @@ for key,value in pairs({
 	[209620] = "Сундук с сокровищами Новолуния",	-- Darkmoon Treasure Chest
 	[209673] = "Пьедестал нефритового тигра",	-- Jade Tiger Pillar
 	[209845] = "Соблазнительный напиток",	-- Mouthwatering Brew
+	[210565] = "Темная земля",	-- Dark Soil
 	[211424] = "Алхимический свиток",	-- Alchemy Scroll
 	[211754] = "Любопытный текст",	-- Curious Text
 	[211807] = "Добыча могу",	-- Mogu Chest	--TODO: This was manually translated

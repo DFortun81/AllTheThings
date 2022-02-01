@@ -142,9 +142,23 @@ root("Instances", tier(CLASSIC_TIER, {
 					["coord"] = { 21.7, 8.6, SILITHUS },
 					["lvl"] = 60,
 					["groups"] = {
-						ach(428, {	-- Thunderfury, Blessed Blade of the Windseeker
+						removeclassicphase(ach(428, {	-- Thunderfury, Blessed Blade of the Windseeker
+							["provider"] = { "i", 19019 },	-- Thunderfury, Blessed Blade of the Windseeker
 							["classes"] = { DEATHKNIGHT, DEMONHUNTER, HUNTER, MAGE, MONK, PALADIN, ROGUE, WARLOCK, WARRIOR },
-						}),
+							-- #if BEFORE WRATH
+							["description"] = "Wielder of Thunderfury, Blessed Blade of the Windseeker.",
+							["OnUpdate"] = [[function(t)
+								local collected = false;
+								for i,provider in ipairs(t.providers) do
+									if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
+										collected = true;
+										break;
+									end
+								end
+								t.SetAchievementCollected(t.achievementID, collected);
+							end]],
+							-- #endif
+						})),
 						i(19019),	-- Thunderfury, Blessed Blade of the Windseeker
 					},
 				}),
@@ -666,19 +680,35 @@ root("Instances", tier(CLASSIC_TIER, {
 						["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(7787) or C_QuestLog.IsQuestFlaggedCompleted(8620)); end]],
 						-- #endif
 					})),
+					removeclassicphase(ach(429, {	-- Sulfuras, Hand of Ragnaros
+						["provider"] = { "i", 17182 },	-- Sulfuras, Hand of Ragnaros
+						["classes"] = { DEATHKNIGHT, DRUID, PALADIN, SHAMAN, WARRIOR },
+						-- #if BEFORE WRATH
+						["description"] = "Wielder of Sulfuras, Hand of Ragnaros.",
+						["OnUpdate"] = [[function(t)
+							local collected = false;
+							for i,provider in ipairs(t.providers) do
+								if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
+									collected = true;
+									break;
+								end
+							end
+							t.SetAchievementCollected(t.achievementID, collected);
+						end]],
+						-- #endif
+					})),
+					i(17182, {	-- Sulfuras, Hand of Ragnaros
+						["classes"] = { DEATHKNIGHT, DRUID, PALADIN, SHAMAN, WARRIOR },
+						["cost"] = {
+							{ "i", 17204, 1 },	-- Eye of Sulfuras
+							{ "i", 17193, 1 },	-- Sulfuron Hammer
+						},
+					}),
+					i(17204),	-- Eye of Sulfuras
 					i(19017, {	-- Essence of the Firelord
 						["b"] = 1,
 						["description"] = "For this to drop, you must be on the Thunderaan the Windseeker quest.",
 						["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
-					}),
-					i(17204, {	-- Eye of Sulfuras
-						["classes"] = { DEATHKNIGHT, DRUID, PALADIN, SHAMAN, WARRIOR },
-						["cost"] = { { "i", 17193, 1 } },	-- Sulfuron Hammer
-						["f"] = TWO_HANDED_MACES,	-- To match Sulfuras, Hand of Ragnaros and cause it to display even if Quest Items are filtered
-						["groups"] = {
-							ach(429),	-- Sulfuras, Hand of Ragnaros
-							i(17182),	-- Sulfuras, Hand of Ragnaros
-						},
 					}),
 					i(138018, {	-- Clothes Chest Pattern: Molten Core
 						["timeline"] = { "added 7.0.3.22248" },
