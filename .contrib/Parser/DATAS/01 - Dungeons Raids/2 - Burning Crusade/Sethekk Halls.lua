@@ -278,9 +278,23 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						-- #endif
 						["creatureID"] = 23035,
 						["groups"] = {
-							i(32768, {	-- Reins of the Raven Lord (MOUNT!)
-								ach(883),	-- Reins of the Raven Lord
-							}),
+							removeclassicphase(ach(883, {	-- Reins of the Raven Lord
+								["provider"] = { "i", 32768 },	-- Reins of the Raven Lord
+								-- #if BEFORE WRATH
+								["description"] = "Obtain the Reins of the Raven Lord from Anzu in Sethekk Halls.",
+								["OnUpdate"] = [[function(t)
+									local collected = false;
+									for i,provider in ipairs(t.providers) do
+										if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
+											collected = true;
+											break;
+										end
+									end
+									t.SetAchievementCollected(t.achievementID, collected);
+								end]],
+								-- #endif
+							})),
+							i(32768),	-- Reins of the Raven Lord (MOUNT!)
 							i(32781),	-- Talon of Anzu
 							i(32780),	-- The Boomstick
 							i(32769),	-- Belt of the Raven Lord

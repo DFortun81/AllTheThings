@@ -200,7 +200,22 @@ root("Instances", tier(TBC_TIER, applylegacyclassicphase(TBC_PHASE_FOUR, {
 						n(-82, {	-- Final Chest
 							["description"] = "This item could only be found after the fourth animal boss had been defeated within the required time limit for the event.\n\nOnly one player can receive this within a given raid lockout.",
 							["groups"] = {
-								ach(430),	-- Amani War Bear (FoS)
+								removeclassicphase(ach(430, {	-- Amani War Bear
+									["provider"] = { "i", 33809 },	-- Amani War Bear
+									-- #if BEFORE WRATH
+									["description"] = "Obtain the Amani War Bear from the final chest in Zul'Aman.",
+									["OnUpdate"] = [[function(t)
+										local collected = false;
+										for i,provider in ipairs(t.providers) do
+											if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
+												collected = true;
+												break;
+											end
+										end
+										t.SetAchievementCollected(t.achievementID, collected);
+									end]],
+									-- #endif
+								})),
 								i(33809),	-- Amani War Bear
 							},
 						}),

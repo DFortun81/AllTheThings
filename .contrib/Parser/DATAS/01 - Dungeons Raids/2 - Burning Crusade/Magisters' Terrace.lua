@@ -314,9 +314,23 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 						["creatureID"] = 24664,
 						["groups"] = {
 							ach(682),	-- Heroic: Magister's Terrace
-							i(35513, {	-- Swift White Hawkstrider (MOUNT!)
-								ach(884),	-- Swift White Hawkstrider
-							}),
+							removeclassicphase(ach(884, {	-- Swift White Hawkstrider
+								["provider"] = { "i", 35513 },	-- Swift White Hawkstrider
+								-- #if BEFORE WRATH
+								["description"] = "Obtain the Swift White Hawkstrider from Kael'thas in Magister's Terrace.",
+								["OnUpdate"] = [[function(t)
+									local collected = false;
+									for i,provider in ipairs(t.providers) do
+										if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
+											collected = true;
+											break;
+										end
+									end
+									t.SetAchievementCollected(t.achievementID, collected);
+								end]],
+								-- #endif
+							})),
+							i(35513),	-- Swift White Hawkstrider (MOUNT!)
 							i(35504),	-- Phoenix Hatchling (PET!)
 							i(34794),	-- Axe of Shattered Dreams
 							i(34798),	-- Band of Celerity
