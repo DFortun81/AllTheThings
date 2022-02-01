@@ -1422,6 +1422,7 @@ _.Zones =
 					["coord"] = { 36.6, 46.5, DRAGONBLIGHT },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26415 },	-- Senior Sergeant Juktok
+					["isBreadcrumb"] = true,
 				}),
 				q(12511, {	-- The Hills Have Us
 					["coord"] = { 77.1, 50.1, DRAGONBLIGHT },
