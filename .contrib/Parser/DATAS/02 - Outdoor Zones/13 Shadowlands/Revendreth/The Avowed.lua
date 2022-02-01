@@ -310,7 +310,7 @@ _.Zones =
 							["description"] = "Repairing the Broken Bell when this soul is present will increase your reputation from killing mobs, but you will take more damage.\n\nCharacters who are Friendly or higher with The Avowed will get +1 Avowed reputation per kill and occasionally +50 with Court of Harvesters.",	-- TODO: can't figure out how the CoH rep works.  not sure if it's only for the ~5 minutes the bell is resonating or if you're in the area of the bell, or both, or something totally different
 						}),
 						n(176049, {	-- Werimu the Traitor-King
-							["description"] = "Repairing the Broken Bell when this soul is present will increase your reputation from killing Inquisitors, but you will take more damage.",	-- TODO: add reputation info
+							["description"] = "Repairing the Broken Bell when this soul is present will increase your reputation from killing Inquisitors, but vengeful souls will periodically attack you.",	-- TODO: add reputation info
 						}),
 						n(176004, {	-- Yevkek the Slaver
 							["description"] = "Repairing the Broken Bell when this soul is present will increase your reputation from absolving Fugitive Souls, but enemy venthyr will detect you from further away.",	-- TODO: add reputation info

@@ -1974,7 +1974,7 @@ root("ExpansionFeatures", {
 							}),
 							n(162196, {	-- Obsidian Annihilator
 								["questID"] = 58681,
-								["coord"] = { 35.1, 17.3, 249 },
+								["coord"] = { 35.1, 17.3, 1527 },
 								["isDaily"] = true,
 								["g"] = {
 									i(174224),	-- Greatsword of Cruelty

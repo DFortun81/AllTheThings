@@ -548,6 +548,7 @@ root("Zones", {
 									{"sub", "legion_relinquished", {"INVTYPE_CLOAK"}, 3 },	-- Cloak Only!
 								},
 								["g"] = sharedData({["modID"] = 43},{	-- Relinquished modID
+									i(152778),	-- Conservatory Ward's Drape (Confirmed in Errors 18 Jan 2022)
 									i(146793),	-- Man'ari Magus Drape (reported in #errors on 20201113)
 									i(146794),	-- Sargerei Herald's Cloak (reported in #errors on November 21, 2020)
 									i(146795),	-- Terrorfiend Greatcloak (reported in #errors on March 3, 2021)

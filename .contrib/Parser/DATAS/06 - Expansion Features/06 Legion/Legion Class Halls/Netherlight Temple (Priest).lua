@@ -371,6 +371,11 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 110564 },	-- Alonsus Faol
 							["coord"] = { 50.9, 46.8, 702 },
 						}),
+						q(46781, {	-- Further Advancement
+							["classes"] = { PRIEST },
+							["provider"] = { "n", 109776 },	-- Moira Thaurissan <Queen of the Dark Iron>
+							--["sourceQuests"] = { 46057 },	-- ??
+						}),
 						q(46152, {	-- Furthering Knowledge
 							["classes"] = { PRIEST },
 							["u"] = REMOVED_FROM_GAME,
