@@ -272,6 +272,9 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 }));
 -- #endif
 _.HiddenQuestTriggers = {
+	tier(TBC_TIER, {
+		q(10737),	-- The Master's Touch Quest Completion Credit?
+	}),
 	tier(WOD_TIER, {
 		q(35521),	-- The Black Morass Reward Quest - Normal completion
 		q(35522),	-- The Black Morass Reward Quest - Heroic completion

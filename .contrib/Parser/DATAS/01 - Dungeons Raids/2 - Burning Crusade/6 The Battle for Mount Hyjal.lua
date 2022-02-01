@@ -1056,3 +1056,9 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 		},
 	}),
 })));
+
+_.HiddenQuestTriggers = {
+	tier(TBC_TIER, {
+		q(11087),	-- HYJAL FLAG
+	}),
+};
