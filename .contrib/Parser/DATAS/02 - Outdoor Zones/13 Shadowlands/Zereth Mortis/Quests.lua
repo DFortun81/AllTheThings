@@ -928,27 +928,20 @@ root("Zones", m(SHADOWLANDS, {
 }));
 
 root("HiddenQuestTriggers", {
+	-- Misc
+	q(65531),	-- Starts pocopoc fashion
+	q(65724),	-- Daily Bufonid Quest Trigger
+	q(65539),	-- Flying unlock
+	-- Would Need reconfirm
 	q(63850),	-- Triggered when enter ZM (Might be WQ). Triggered again today while running around in ZM
 	q(63766),	-- Triggered when Exploring (Might have to do with The Matriarch(183505))
 	q(65621),	-- Triggered when HS to ZM
-
-	q(65531),	-- Starts pocopoc fashion
-	q(65724),	-- Daily Bufonid Quest Trigger
-
-	-- Lego HQT??
-	--q(65681),	-- Druid
-
 	--q(64880),	-- Triggered in Oribos?
 	--q(65144),	-- Firims Cave?
-	q(65539),	-- Flying unlock
-	--q(65679),	-- After Flying unlock on an alt
+	--q(65679),	-- After Flying unlock on an alt?
 
-	-- More rare HQTS?
-	--q(65637),	-- Triggered when killing General Zarathura <Army of the Endless>
-	--q(65631),	-- Triggered when killing Akkaris
-	--q(65629),	-- Triggered when killing Akkaris
-	--q(65626),	-- Triggered when killing Mother Phestis <Tarachnid Prime>
-	--q(65706),	-- Dune Rare?
+	-- Lego
+	--q(65681),	-- Druid
 
 	-- Gravid Repose
 	q(65330),	-- Interior Locus Arrangement at Gravid Repose
@@ -958,6 +951,10 @@ root("HiddenQuestTriggers", {
 	q(65340),	-- Fourth Locus arrangement at Gravid Repose
 	q(65341),	-- Fifth Locus arrangement at Gravid Repose
 	q(65342),	-- Ultimate Locus arrangement at Gravid Repose
+	-- Entering Gravid Repose First Time
+	--q(65376),
+	--q(65377),
+	--q(65464),
 
 	-- RP
 	q(65233),	-- RP after Jiro to Hero(65219)
@@ -965,13 +962,9 @@ root("HiddenQuestTriggers", {
 	q(65619),	-- RP after Tahli Questline
 	--q(65028),	-- RP during q(64875, {	-- Something Wonderful??
 
-	-- Entering Cosmic Area first time
-	--q(65376),
-	--q(65377),
-	--q(65464),
-
-	--[[ Jiro Buffs?
-	q(65167),	-- Echoed Jiro Nascii(183263) with spellID(362023) Same HQTs from different Jiros (42.7 44.8) Stackable ?
+	-- Jiro Buffs
+	q(65167),	-- Echoed Jiro Nascii(183263) with spellID(362023) Same HQTs from different Jiros (42.7 44.8) Stackable?
+	--[[
 		42.9, 31.9 (184944)
 		42.8, 44.8 (184944)
 		69.7, 33.5 (184947)
@@ -980,7 +973,9 @@ root("HiddenQuestTriggers", {
 		57.1, 61.4 (184941)
 		33.2, 54.2 (183263) (?)
 		43.8, 64.5 (183263) (?)
+	--]]
 	q(65166),	-- Echoed Jiro Genesii(184943) with SpellID(362022) 45.4 38.8
+	--[[
 		45.4, 38.8 (184943)
 		38,3б 32,2 (184943)
 		52.5, 29.0 (184946)
@@ -989,7 +984,9 @@ root("HiddenQuestTriggers", {
 		49.8, 76.5 (184940)
 		34.6, 56.4 (183262)
 		46.7, 67.5 (183262)
+	--]]
 	q(65144),	-- Echoed Jiro Creatii(184939) with SpellID(361831)  54.5 55.8
+	--[[
 		39.1, 42.6 (184492)
 		56.7, 26.1 (184945)
 		40.5, 60.8 (181571)

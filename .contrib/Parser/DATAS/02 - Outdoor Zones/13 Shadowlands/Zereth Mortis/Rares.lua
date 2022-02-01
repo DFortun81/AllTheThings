@@ -39,14 +39,14 @@ root("Zones", m(SHADOWLANDS, {
 					i(190102),	-- Chains of Infectious Serrations
 					i(190105),	-- Chilling Domination Mace
 					i(190109),	-- Cudgel of Mortality's Chains
-					i(190111),	-- Escutcheon of Beautiful Death
-					i(190110),	-- Flail of Balletic Carnage
-					i(190112),	-- Glimmering War Beacon
+					i(190111),	-- Escutcheon of Beautiful Death Ach?
+					i(190110),	-- Flail of Balletic Carnage Ach?
+					i(190112),	-- Glimmering War Beacon Ach?
 					i(190334),	-- Origin
 					i(190103),	-- Pillar of Noxious Dissemination
 					i(190458),	-- Atrophy's Ominous Bulwark
 					i(190463),	-- Dismal Mystic's Glaive
-					i(190462),	-- Impaler's Graceful Lance
+					i(190462),	-- Impaler's Graceful Lance Ach?
 					i(190735),	-- Varruth's Guillotine
 				},
 			}),
@@ -503,6 +503,15 @@ root("Zones", m(SHADOWLANDS, {
 		})),
 	}),
 }));
+
+root("HiddenQuestTriggers", {
+	--q(65706),	-- Dune Rare?
+	--q(65558),	-- Edra, the Will Grazer?
+	--q(65637),	-- Triggered when killing General Zarathura <Army of the Endless>
+	--q(65631),	-- Triggered when killing Akkaris
+	--q(65629),	-- Triggered when killing Akkaris
+	--q(65626),	-- Triggered when killing Mother Phestis <Tarachnid Prime>
+});
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(SL_TIER, {

@@ -575,7 +575,7 @@ root("Zones", m(SHADOWLANDS, {
 					},
 					["questID"] = 65322,
 				}),
-				o(375068, {	-- Fugueal Cache
+				o(375061, {	-- Fugueal Cache
 					["coords"] = {
 						{ 44.3, 30.9, ZERETH_MORTIS },
 						{ 59.7, 22.8, ZERETH_MORTIS },
@@ -611,7 +611,7 @@ root("Zones", m(SHADOWLANDS, {
 						{ 55.7, 50, ZERETH_MORTIS },
 						{ 52.2, 72.1, ZERETH_MORTIS },
 					},
-					["questID"] = 64972,
+					["questID"] = 65091,
 				}),
 				o(375066, {	-- Mezzonic Cache
 					["coords"] = {
@@ -627,12 +627,6 @@ root("Zones", m(SHADOWLANDS, {
 					},
 					["questID"] = 65315,
 				}),
-				--o(373471, {	-- Mezzonic Cache
-				--	["coords"] = {
-				--		{ 55.7, 50, ZERETH_MORTIS },
-				--	},
-				--	["questID"] = 65091, Another HQT but same as above.. Second Time... Again Mezzonic
-				--}),
 				o(370494, {	-- Toccatian Cache
 					["coords"] = {
 						{ 46.8, 67, ZERETH_MORTIS },
@@ -647,7 +641,7 @@ root("Zones", m(SHADOWLANDS, {
 					},
 					["questID"] = 65314,
 				}),
-				o(375058, {	-- Toccatian Cache
+				o(375064, {	-- Toccatian Cache
 					["coords"] = {
 						{ 67.8, 27.4, ZERETH_MORTIS },
 						{ 65.6, 47.6, ZERETH_MORTIS },
