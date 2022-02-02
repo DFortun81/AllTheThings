@@ -1861,13 +1861,13 @@ app.GetIndicatorIcon = function(group)
 			return app.asset("known_green");
 		end
 	else
-		local asset = app.GetQuestIndicator(group) or group.indicatorIcon;
+		local asset = group.indicatorIcon;
 		if asset then
 			return app.asset(asset);
 		elseif group.u then
-			local unobTexture = GetUnobtainableTexture(group);
-			if unobTexture then
-				return unobTexture;
+			asset = GetUnobtainableTexture(group);
+			if asset then
+				return asset;
 			end
 		end
 	end
@@ -9263,6 +9263,9 @@ local itemFields = {
 		rawset(t, "modItemID", GetGroupItemIDWithModID(t) or t.itemID);
 		return rawget(t, "modItemID");
 	end,
+	["indicatorIcon"] = function(t)
+		return app.GetQuestIndicator(t);
+	end,
 	["trackableAsQuest"] = app.ReturnTrue,
 	["collectibleAsAchievement"] = function(t)
 		return app.CollectibleAchievements;
@@ -11056,7 +11059,9 @@ local questFields = {
 		end
 		return IsQuestFlaggedCompleted(t.questID);
 	end,
-
+	["indicatorIcon"] = function(t)
+		return app.GetQuestIndicator(t);
+	end,
 	["collectibleAsReputation"] = function(t)
 		local factionID = t.maxReputation[1];
 		-- If Collectible by providing reputation towards a Faction with which the character is below the rep-granting Standing, and the Faction itself is Collectible & Not Collected
