@@ -71,7 +71,7 @@ root("Zones", m(KALIMDOR, {
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 26044,	-- Where Are the Parts?
 			}),
-			q(6284, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" }, }, {	-- Arachnophobia
+			q(6284, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" } }, {	-- Arachnophobia
 				["provider"] = { "o", 177904 },	-- Wanted Poster: Besseleth
 				["coord"] = { 59.09, 75.76, STONETALON_MOUNTAINS },
 				["races"] = HORDE_ONLY,
@@ -96,7 +96,7 @@ root("Zones", m(KALIMDOR, {
 					i(57450),	-- Northwatch Amulet
 					i(57449),	-- Diplomat's Chestguard
 					i(57448),	-- Basecamp Leggings
-					i(131447),	-- Basecamp Breeches
+					i(131447, {["timeline"] = { "added 7.0.3.22248" }}),	-- Basecamp Breeches
 				},
 			}),
 			q(25930, {	-- Ascending the Vale
@@ -114,12 +114,12 @@ root("Zones", m(KALIMDOR, {
 					i(57479),	-- Flamethrower's Gloves
 					i(57478),	-- Vest of Ashes
 					i(57477),	-- Overlord's Favor
-					i(131464),	-- Tunic of Ashes
+					i(131464, {["timeline"] = { "added 7.0.3.22248" }}),	-- Tunic of Ashes
 				},
 			}),
 			q(6548, {	-- Avenge My Village
 				["qg"] = 11857,	-- Makaba Flathoof
-				["coord"] = { 35.23, 27.79, THE_BARRENS },
+				--["coord"] = { 35.23, 27.79, THE_BARRENS },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 12,
 				["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" },
@@ -139,7 +139,7 @@ root("Zones", m(KALIMDOR, {
 					i(57471),	-- Elf-Killer Breastplate
 					i(57470),	-- Incinerator's Gauntlets
 					i(57469),	-- Saurboz's Leggings
-					i(131463),	-- Saurboz's Handwraps
+					i(131463, {["timeline"] = { "added 7.0.3.22248" }}),	-- Saurboz's Handwraps
 				},
 			}),
 			q(26074, {	-- Beginning of the End
@@ -168,7 +168,7 @@ root("Zones", m(KALIMDOR, {
 					i(57429),	-- Fisherman's Belt
 					i(57430),	-- Irongoat Legguards
 					i(57428),	-- Fish Stunner
-					i(131879),	-- Fisherman's Links
+					i(131879, {["timeline"] = { "added 7.0.3.22248" }}),	-- Fisherman's Links
 				},
 			}),
 			q(26043, {	-- BEWARE OF CRAGJAW!
@@ -181,7 +181,7 @@ root("Zones", m(KALIMDOR, {
 					i(57482),	-- Anara's Belt
 					i(57481),	-- Fisherman's Gloves
 					i(57480),	-- Spy-Mistress' Necklace
-					i(131471),	-- Anara's Cord
+					i(131471, {["timeline"] = { "added 7.0.3.22248" }}),	-- Anara's Cord
 				},
 			}),
 			q(6461, {	-- Blood Feeders
@@ -191,7 +191,7 @@ root("Zones", m(KALIMDOR, {
 				["lvl"] = 13,
 				["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
 			}),
-			q(6283, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" }, }, { 	-- Bloodfury Bloodline
+			q(6283, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" } }, { 	-- Bloodfury Bloodline
 				["qg"] = 11860,	-- Maggran Earthbinder
 				["sourceQuest"] = 6282,	-- Harpies Threaten
 				["coord"] = { 47.17, 61.08, STONETALON_MOUNTAINS },
@@ -212,7 +212,7 @@ root("Zones", m(KALIMDOR, {
 					i(57436),	-- Well Oiled Helm
 					i(57437),	-- Barus' Backup Sword
 					i(57434),	-- Oiler's Ring
-					i(131881),	-- Barus' Armbands
+					i(131881, {["timeline"] = { "added 7.0.3.22248" }}),	-- Barus' Armbands
 				},
 			}),
 			q(6421, {	-- Boulderslide Ravine
@@ -238,7 +238,7 @@ root("Zones", m(KALIMDOR, {
 					i(57462),	-- Goldrinn Acolyte's Cowl
 					i(57461),	-- Egg Smasher
 					i(57464),	-- Hierophant's Blessed Hands
-					i(131457),	-- Brood-Killer Amice
+					i(131457, {["timeline"] = { "added 7.0.3.22248" }}),	-- Brood-Killer Amice
 				},
 			}),
 			q(25622, {	-- Burn, Baby, Burn!
@@ -283,7 +283,7 @@ root("Zones", m(KALIMDOR, {
 					i(57419),	-- Wand of Bought Time
 				},
 			}),
-			q(1079, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" }, }, {	-- Covert Ops - Alpha
+			q(1079, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" } }, {	-- Covert Ops - Alpha
 				["qg"] = 4077,	-- Gaxim Rustfizzle
 				["sourceQuests"] = {
 					1074,	-- Ineptitude + Chemicals = Fun (2/2)
@@ -296,7 +296,7 @@ root("Zones", m(KALIMDOR, {
 					i(5738),	-- Covert Ops Pack
 				},
 			})),
-			q(1080, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" }, }, {	-- Covert Ops - Beta
+			q(1080, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" } }, {	-- Covert Ops - Beta
 				["qg"] = 4077,	-- Gaxim Rustfizzle
 				["coord"] = { 59.6, 67.0, STONETALON_MOUNTAINS },
 				["sourceQuests"] = {
@@ -309,11 +309,6 @@ root("Zones", m(KALIMDOR, {
 					i(5738),	-- Covert Ops Pack
 				},
 			})),
-			q(6301, {	-- Cycle of Rebirth
-				["u"] = REMOVED_FROM_GAME,
-				["races"] = HORDE_ONLY,
-				["provider"] = { "n", 11864 },	-- Tammra Windfield
-			}),
 			q(6301, {	-- Cycle of Rebirth
 				["qg"] = 11864,	-- Tammra Windfield
 				["coord"] = { 47.44, 58.47, STONETALON_MOUNTAINS },
@@ -322,6 +317,7 @@ root("Zones", m(KALIMDOR, {
 					{ "i", 16205, 10 },	-- Gaea Seed
 				},
 				["lvl"] = 17,
+				["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" },
 			}),
 			q(26061, {	-- Da Voodoo: Ram Horns
 				["provider"] = { "n", 3995 },	-- Witch Doctor Jin'Zil
@@ -353,7 +349,7 @@ root("Zones", m(KALIMDOR, {
 					i(57468),	-- Valen's Cloak
 					i(57467),	-- Fancy Footwork
 					i(57466),	-- Negotiator's Armbands
-					i(131449),	-- Valen's Treads
+					i(131449, {["timeline"] = { "added 7.0.3.22248" }}),	-- Valen's Treads
 					i(57465),	-- Ambassador's Amulet
 				},
 			}),
@@ -381,25 +377,51 @@ root("Zones", m(KALIMDOR, {
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 26004,	-- Krom'gar Fortress
 			}),
-			q(6481,  {	-- Earthen Arise
-				["u"] = REMOVED_FROM_GAME,
+			q(6481, {	-- Earthen Arise
+				["qg"] = 11861,	-- Mor'rogal
+				["sourceQuest"] = 6421,	-- Boulderslide Ravine
+				["coord"] = { 47.17, 64.10, STONETALON_MOUNTAINS },
+				["races"] = HORDE_ONLY,
+				["lvl"] = 14,
+				["g"] = {
+					i(16981),	-- Owlbeard Bracers
+					i(1306),	-- Wolfmane Wristguards
+				},
+			}),
+			q(6481, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" } }, {	-- Earthen Arise
 				["provider"] = { "n", 11861 },	-- Mor'rogal
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					un(REMOVED_FROM_GAME, i(16981)),	-- Owlbeard Bracers
-					un(REMOVED_FROM_GAME, i(1306)),	-- Wolfmane Wristguards
+					i(16981),	-- Owlbeard Bracers
+					i(1306),	-- Wolfmane Wristguards
 				},
-			}),
-			q(6393,  {	-- Elemental War
-				["u"] = REMOVED_FROM_GAME,
-				["provider"] = { "n", 11862 },	-- Tsunaman
+			})),
+			q(6393, {	-- Elemental War
+				["qg"] = 11862,	-- Tsunaman
+				["coord"] = { 47.28, 64.31, STONETALON_MOUNTAINS },
 				["races"] = HORDE_ONLY,
+				["cost"] = {
+					{ "i", 16312, 10 },	-- Incendrites
+				},
+				["lvl"] = 19,
+				["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" },
 			}),
 			q(26011, {	-- Enemy of the Horde: Marshal Paltrow
 				["provider"] = { "n", 40903 },	-- Spy-Mistress Anara
 				["coord"] = { 65.7, 63.2, STONETALON_MOUNTAINS },
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 26004,	-- Krom'gar Fortress
+			}),
+			q(1083, {	-- Enraged Spirits
+				["qg"] = 4080,	-- Kaela Shadowspear
+				["sourceQuest"] = 1091,	-- Kaela's Update
+				["coord"] = { 59.9, 66.8, STONETALON_MOUNTAINS },
+				["races"] = ALLIANCE_ONLY,
+				["cost"] = {
+					{ "i", 5659, 8 },	-- Smoldering Embers
+				},
+				["lvl"] = 20,
+				["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" },
 			}),
 			q(26059, {	-- Eyes and Ears: Malaka'jin
 				["provider"] = { "n", 41023 },	-- Overlord Krom'gar
@@ -434,32 +456,60 @@ root("Zones", m(KALIMDOR, {
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 25652,	-- Commandeer That Balloon!
 			}),
-			q(1094,  {	-- Further Instructions
-				["u"] = REMOVED_FROM_GAME,
-				["provider"] = { "n", 4201 },	-- Ziz Fizziks
+			q(1094, {	-- Further Instructions (1/2)
+				["qg"] = 4201,	-- Ziz Fizziks
 				["sourceQuest"] = 1093,	-- Super Reaper 6000
-			}),
-			q(1096,  {	-- Gerenzo Wrenchwhistle
-				["u"] = REMOVED_FROM_GAME,
-				["provider"] = { "n", 4201 },	-- Ziz Fizziks
-				["sourceQuest"] = 1095,	-- Further Instructions
-				["g"] = {
-					un(REMOVED_FROM_GAME, i(6668)),	-- Draftsman Boots
-					un(REMOVED_FROM_GAME, i(6667)),	-- Engineer's Cloak
+				["coord"] = { 59.00, 62.53, STONETALON_MOUNTAINS },
+				["cost"] = {
+					{ "i", 5735, 1 },	-- Sealed Envelope
 				},
+				["lvl"] = 16,
+				["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" },
 			}),
-			q(1090, {	-- Gerenzo's Orders
-				["u"] = REMOVED_FROM_GAME,
-				["races"] = HORDE_ONLY,
+			q(1095, {	-- Further Instructions (2/2)
+				["qg"] = 3442,	-- Sputtervalve
+				["sourceQuest"] = 1094,	-- Further Instructions (1/2)
+				--["coord"] = { 62.97, 37.19, THE_BARRENS },
+				["lvl"] = 16,
+				["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" },
 			}),
-			q(1092,  {	-- Gerenzo's Orders
-				["u"] = REMOVED_FROM_GAME,
-				["provider"] = { "n", 4276 },	-- Piznik
-				["races"] = HORDE_ONLY,
-				["g"] = {
-					un(REMOVED_FROM_GAME, i(6666)),	-- Dredge Boots
+			q(1096, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" } }, {	-- Gerenzo Wrenchwhistle
+				["qg"] = 4201,	-- Ziz Fizziks
+				["sourceQuest"] = 1095,	-- Further Instructions (2/2)
+				["coord"] = { 59.00, 62.53, STONETALON_MOUNTAINS },
+				["cost"] = {
+					{ "i", 5736, 1 },	-- Gerenzo's Mechanical Arm
 				},
+				["lvl"] = 16,
+				["g"] = {
+					{
+						["itemID"] = 5736,	-- Gerenzo's Mechanical Arm
+						["questID"] = 1096,	-- Gerenzo Wrenchwhistle
+						["cr"] = 4202,	-- Gerenzo Wrenchwhistle
+						["coord"] = { 63.6, 39.6, STONETALON_MOUNTAINS },
+					},
+					i(6667),	-- Engineer's Cloak
+					i(6668),	-- Draftsman Boots
+				},
+			})),
+			q(1090, {	-- Gerenzo's Orders (1/2)
+				["qg"] = 4276,	-- Piznik
+				["coord"] = { 71.80, 60.05, STONETALON_MOUNTAINS },
+				["lvl"] = 17,
+				["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" },
 			}),
+			q(1092, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" } }, {	-- Gerenzo's Orders (2/2)
+				["qg"] = 4276,	-- Piznik
+				["sourceQuest"] = 1090,	-- Gerenzo's Orders (1/2)
+				["coord"] = { 71.80, 60.05, STONETALON_MOUNTAINS },
+				["cost"] = {
+					{ "i", 5733, 1 },	-- Unidentified Ore
+				},
+				["lvl"] = 17,
+				["g"] = {
+					i(6666),	-- Dredge Boots
+				},
+			})),
 			q(25875, {	-- Gnome on the Inside
 				["provider"] = { "n", 41233 },	-- Scout Commander Barus
 				["coord"] = { 48.3, 51.8, STONETALON_MOUNTAINS },

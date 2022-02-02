@@ -2911,8 +2911,8 @@ root("Zones", m(KALIMDOR, {
 						i(8588),	-- Whistle of the Emerald Raptor
 						i(8591),	-- Whistle of the Turquoise Raptor
 						i(8592),	-- Whistle of the Violet Raptor
-						i(13317, { ["timeline"] = "removed 1.4.0" }),	-- Ivory Raptor -- Unable to 100% verify this source.
-						i(8586, { ["timeline"] = "removed 1.4.0" }),	-- Mottled Red Raptor -- Unable to 100% verify this source.
+						i(13317, { ["timeline"] = {"removed 1.4.0"}}),	-- Ivory Raptor -- Unable to 100% verify this source.
+						i(8586, { ["timeline"] = {"removed 1.4.0"}}),	-- Mottled Red Raptor -- Unable to 100% verify this source.
 					},
 				}),
 			})),
