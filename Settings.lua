@@ -4481,7 +4481,7 @@ refreshProfiles = function()
 		end
 	end
 	-- sort the profiles
-	app.insertionSort(settingProfileItems, app.SortDefaults.Text);
+	app.Sort(settingProfileItems, app.SortDefaults.Text);
 
 	local profileCount, existingBoxes, lastProfileSelect = 0, ProfileSelector.ATT and ProfileSelector.ATT.CB_Count or 0;
 	local maxProfileNameWidth = ProfileSelector:GetWidth() - 50;
