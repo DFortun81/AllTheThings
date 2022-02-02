@@ -1240,7 +1240,6 @@ root("Zones", {
 			}),
 			q(55529, {	-- No Backs
 				["provider"] = { "n", 152084 },	-- Mrrl
-				["races"] = ALLIANCE_ONLY,
 				["coords"] = {
 					{ 46.9, 61.4, 1355 },	-- Alliance
 					{ 39.1, 54.3, 1355 },	-- Horde

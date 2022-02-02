@@ -679,10 +679,10 @@ root("Zones", {
 root("HiddenQuestTriggers", {
 	m(905, {	-- Argus
 		m(886, {	-- Vindicaar
-			-- TODO: verify these
-			-- q(48449),	-- Activating Light's Judgment
-			-- q(48450),	-- Activating Shroud of Arcane Echoes / Light's Judgment
-			-- q(48451),	-- Activating Shroud of Arcane Echoes
+			-- Vindicaar Matrix Abilities
+			q(48449),	-- Shroud of Arcane Echoes/Warframe
+			q(48450),	-- Shroud of Arcane Echoes/Fel Heart
+			q(48451),	-- Shroud of Arcane Echoes/Light's Judgement/Fel Heart
 		}),
 	}),
 });

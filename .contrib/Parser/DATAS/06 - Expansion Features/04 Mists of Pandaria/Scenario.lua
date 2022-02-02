@@ -120,11 +120,14 @@ _.ExpansionFeatures =
 							i(92878),	-- Lavasoul Cloak
 							i(92886),	-- Lavasoul Collar
 							i(92884),	-- Lavasoul Ring
+							i(93115),	-- Lightning Rod Breastplate		-- 2021-12-10
 							i(93120),	-- Lightning Rod Pauldrons			-- 18 Jan 2022
 							i(93053),	-- Mogubreaker Britches				-- 12/12/21
 							i(93052),	-- Mogubreaker Hood*				— 5/16/19
+							i(89444),	-- Mogu-Wrought Breastplate			-- 2021-12-19
 							i(89446),	-- Mogu-Wrought Girdle				— 2021-11-12
 							i(89466),	-- Scarshell Spaulders				- 2021-11-13
+							i(89467),	-- Scarshell Vest					-- 2022-01-29
 							i(93140),	-- Scavenged Pandaren Axe
 							i(93142),	-- Scavenged Pandaren Axe
 							i(93130),	-- Scavenged Pandaren Broadaxe
