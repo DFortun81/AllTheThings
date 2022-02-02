@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(SL_TIER, {
+root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 	inst(1187, {	-- Theater of Pain
 		["coord"] = { 53.1, 53.0, MALDRAXXUS },
 		["maps"] = {
@@ -102,7 +102,7 @@ _.Instances = { tier(SL_TIER, {
 						i(183225),	-- Memory of Lycara
 					},
 				}),
-			}),	
+			}),
 			d(1, {	-- Normal
 				e(2397, {	-- An Affront of Challengers
 					["crs"] = {
@@ -308,4 +308,4 @@ _.Instances = { tier(SL_TIER, {
 			}),
 		},
 	}),
-})};
+})));
