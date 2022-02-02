@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root("Instances", tier(SL_TIER, {
+root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 	inst(1195, {	-- Sepulcher of the First Ones
 		["isRaid"] = true,
 		["coord"] = { 80.9, 53.4, ZERETH_MORTIS },
@@ -1242,7 +1242,7 @@ root("Instances", tier(SL_TIER, {
 			}),
 		},
 	}),
-}));
+})));
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(SL_TIER, {

@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(SL_TIER, {
+root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 	inst(1194, {	-- Tazavesh, the Veiled Market
 		["coord"] = { 88.9, 44.3, TAZAVESH_THE_VEILED_MARKET_WORLD },
 		["maps"] = {
@@ -135,7 +135,7 @@ _.Instances = { tier(SL_TIER, {
 					}),
 				},
 			}),
-			d(2, {	-- Heroic
+			d(2, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {	-- Heroic
 				e(2437, {	-- Zo'phex the Sentinel
 					["creatureID"] = 175616,	-- Zo'phex
 					["g"] = {
@@ -292,7 +292,7 @@ _.Instances = { tier(SL_TIER, {
 						i(185818),	-- So'leah's Secret Technique
 					},
 				}),
-			}),
+			})),
 			d(23, {	-- Mythic
 				["difficulties"] = { 8, 23 },
 				["g"] = {
@@ -474,7 +474,7 @@ _.Instances = { tier(SL_TIER, {
 			}),
 		},
 	}),
-})};
+})));
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(SL_TIER, {
