@@ -430,18 +430,22 @@ app.SortDefaults = {
 	["Value"] = defaultValueComparison,
 };
 -- local defaultStringComparison
-local function insertionSort(t, compare, nested)
+local function Sort(t, compare, nested)
 	if t then
 		if not compare then compare = defaultComparison; end
 		table.sort(t, compare);
 		if nested then
 			for i=#t,1,-1 do
-				insertionSort(t[i].g, compare, nested);
+				Sort(t[i].g, compare, nested);
 			end
 		end
 	end
 end
-app.insertionSort = insertionSort;
+-- Safely-sorts a table using a provided comparison function and whether to propogate to nested groups
+-- Wrapping in a pcall since sometimes the sorted values are able to change while being within the sort method. This causes the 'invalid sort order function' error
+app.Sort = function(t, compare, nested)
+	pcall(Sort, t, compare, nested);
+end
 local sortByNameSafely = function(a, b)
 	if a and a.name then
 		if b and b.name then
@@ -1857,13 +1861,13 @@ app.GetIndicatorIcon = function(group)
 			return app.asset("known_green");
 		end
 	else
-		local asset = app.GetQuestIndicator(group) or group.indicatorIcon;
+		local asset = group.indicatorIcon;
 		if asset then
 			return app.asset(asset);
 		elseif group.u then
-			local unobTexture = GetUnobtainableTexture(group);
-			if unobTexture then
-				return unobTexture;
+			asset = GetUnobtainableTexture(group);
+			if asset then
+				return asset;
 			end
 		end
 	end
@@ -2022,7 +2026,7 @@ local function FilterSpecs(specs)
 				table.remove(specs, i);
 			end
 		end
-		app.insertionSort(specs, app.SortDefaults.Value);
+		app.Sort(specs, app.SortDefaults.Value);
 	end
 end
 -- Returns a string containing the spec icons, followed by their respective names if desired
@@ -2070,7 +2074,7 @@ local function GetFixedItemSpecInfo(itemID)
 					end
 				end
 			end
-			app.insertionSort(specs, app.SortDefaults.Value);
+			app.Sort(specs, app.SortDefaults.Value);
 		else
 			FilterSpecs(specs);
 		end
@@ -4072,7 +4076,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		if #temp > 0 then
 			local listing = {};
 			local maximum = app.Settings:GetTooltipSetting("Locations");
-			app.insertionSort(temp, app.SortDefaults.Text);
+			app.Sort(temp, app.SortDefaults.Text);
 			for i,j in ipairs(temp) do
 				if not contains(listing, j) then
 					tinsert(listing, 1, j);
@@ -4464,7 +4468,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			end
 		end
 		if #knownBy > 0 then
-			app.insertionSort(knownBy, function(a, b) return (a.name or "") < (b.name or ""); end);
+			app.Sort(knownBy, function(a, b) return (a.name or "") < (b.name or ""); end);
 			local desc = L["KNOWN_BY"] .. app.TableConcat(knownBy, "text", "??", ", ");
 			tinsert(info, { left = string.gsub(desc, "-" .. GetRealmName(), ""), wrap = true, color = "ff66ccff" });
 		end
@@ -4926,7 +4930,7 @@ app.NestSourceQuests = function(root, addedQuests, depth)
 		end
 		-- sort quests with less sub-quests to the top
 		if prereqs then
-			app.insertionSort(prereqs, function(a, b) return (a.depth or 0) < (b.depth or 0); end);
+			app.Sort(prereqs, function(a, b) return (a.depth or 0) < (b.depth or 0); end);
 			NestObjects(root, prereqs);
 		end
 	end
@@ -6091,17 +6095,17 @@ local function SortGroup(group, sortType, row, recur, conditionField)
 		if (not conditionField and group.visible) or (conditionField and group[conditionField]) then
 			-- print("sorting",group.key,group.key and group[group.key],"by",sortType,"recur",recur,"condition",conditionField)
 			if sortType == "name" then
-				app.insertionSort(group.g);
+				app.Sort(group.g);
 			elseif sortType == "progress" then
 				local progA, progB;
-				app.insertionSort(group.g, function(a, b)
+				app.Sort(group.g, function(a, b)
 					progA = GetGroupSortValue(a);
 					progB = GetGroupSortValue(b);
 					return progA > progB;
 				end);
 			else
 				local sortA, sortB;
-				app.insertionSort(group.g, function(a, b)
+				app.Sort(group.g, function(a, b)
 					sortA = a and tostring(a[sortType]);
 					sortB = b and tostring(b[sortType]);
 					return sortA < sortB;
@@ -7834,7 +7838,7 @@ local fields = {
 		if #c > 0 then
 			GameTooltip:AddLine(" ");
 			GameTooltip:AddLine("Deaths Per Character:");
-			app.insertionSort(c, function(a, b)
+			app.Sort(c, function(a, b)
 				return a.Deaths > b.Deaths;
 			end);
 			for i,data in ipairs(c) do
@@ -9258,6 +9262,9 @@ local itemFields = {
 	["modItemID"] = function(t)
 		rawset(t, "modItemID", GetGroupItemIDWithModID(t) or t.itemID);
 		return rawget(t, "modItemID");
+	end,
+	["indicatorIcon"] = function(t)
+		return app.GetQuestIndicator(t);
 	end,
 	["trackableAsQuest"] = app.ReturnTrue,
 	["collectibleAsAchievement"] = function(t)
@@ -11052,7 +11059,9 @@ local questFields = {
 		end
 		return IsQuestFlaggedCompleted(t.questID);
 	end,
-
+	["indicatorIcon"] = function(t)
+		return app.GetQuestIndicator(t);
+	end,
 	["collectibleAsReputation"] = function(t)
 		local factionID = t.maxReputation[1];
 		-- If Collectible by providing reputation towards a Faction with which the character is below the rep-granting Standing, and the Faction itself is Collectible & Not Collected
@@ -16103,10 +16112,10 @@ function app:GetDataCache()
 								tinsert(sources, setmetatable({ s = sourceID }, app.BaseGearSource));
 							end
 						end
-						app.insertionSort(sources, SortGearSetSources);
+						app.Sort(sources, SortGearSetSources);
 					end
 				end
-				app.insertionSort(gearSets, SortGearSetInformation);
+				app.Sort(gearSets, SortGearSetInformation);
 
 				-- Let's build some headers!
 				local headers = {};
@@ -16488,7 +16497,7 @@ function app:GetDataCache()
 					end
 				end
 			end
-			app.insertionSort(self.g, achievementSort, true);
+			app.Sort(self.g, achievementSort, true);
 		end
 		achievementsCategory:OnUpdate();
 		]]--
@@ -16516,7 +16525,7 @@ function app:GetDataCache()
 					CacheFields(faction);
 				end
 			end
-			app.insertionSort(self.g);
+			app.Sort(self.g);
 		end
 		factionsCategory:OnUpdate();
 		]]--
@@ -17778,8 +17787,8 @@ customWindowUpdates["Harvester"] = function(self)
 						end
 						self.ScrollBar:SetValue(count);
 					else
-						app.insertionSort(AllTheThingsHarvestItems);
-						app.insertionSort(AllTheThingsArtifactsItems);
+						app.Sort(AllTheThingsHarvestItems);
+						app.Sort(AllTheThingsArtifactsItems);
 						-- revert Debug if it was enabled by the harvester
 						if self.forcedDebug then
 							app.print("Reverted Debug Mode");
@@ -19540,12 +19549,12 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 					end
 
 					-- Merge everything for this map into the list
-					app.insertionSort(mapObject.g);
+					app.Sort(mapObject.g);
 					if mapObject.g then
 						-- Sort the sub-groups as well
 						for i,mapGrp in ipairs(mapObject.g) do
 							if mapGrp.mapID then
-								app.insertionSort(mapGrp.g);
+								app.Sort(mapGrp.g);
 							end
 						end
 					end
@@ -19564,12 +19573,12 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 							NestObject(mapObject, questObject);
 						end
 					end
-					app.insertionSort(mapObject.g);
+					app.Sort(mapObject.g);
 					if mapObject.g then
 						-- Sort the sub-groups as well
 						for i,mapGrp in ipairs(mapObject.g) do
 							if mapGrp.mapID then
-								app.insertionSort(mapGrp.g);
+								app.Sort(mapGrp.g);
 							end
 						end
 					end
@@ -20306,7 +20315,7 @@ app.ProcessAuctionData = function()
 			end
 		end
 		for f,entry in pairs(filteredItems) do
-			app.insertionSort(entry.g, function(a,b)
+			app.Sort(entry.g, function(a,b)
 				return a.u and not b.u;
 			end);
 		end
@@ -20407,7 +20416,7 @@ app.ProcessAuctionData = function()
 		end
 		tinsert(window.data.g, subdata);
 	end
-	app.insertionSort(window.data.g, function(a, b)
+	app.Sort(window.data.g, function(a, b)
 		return (b.priority or 0) > (a.priority or 0);
 	end);
 	BuildGroups(window.data, window.data.g);

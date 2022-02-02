@@ -261,9 +261,9 @@ root("Zones", {
 						["description"] = "This rare is only up when its associated world quest is active.",
 						["questID"] = 50467,
 						["coord"] = { 49.8, 67.0, NAZMIR },
-						["g"] = bubbleDown({["bonusID"] = 4776,
+						["g"] = {
 							i(160973),	-- Accursed Tuskwand
-						}),
+						},
 					}),
 				}),
 				q(54707, {	-- Siegeotron (Faction Assault WQ)

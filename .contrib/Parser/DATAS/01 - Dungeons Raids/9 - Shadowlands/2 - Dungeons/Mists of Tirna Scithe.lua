@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(SL_TIER, {
+root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 	inst(1184, {	-- Mists of Tirna Scithe
 		["coord"] = { 35.6, 54.2, ARDENWEALD },
 		["maps"] = {
@@ -238,4 +238,4 @@ _.Instances = { tier(SL_TIER, {
 			}),
 		},
 	}),
-})};
+})));

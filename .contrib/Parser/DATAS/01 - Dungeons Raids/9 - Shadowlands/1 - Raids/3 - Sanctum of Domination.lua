@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(SL_TIER, {
+root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 	inst(1193, {	-- Sanctum of Domination
 		["isRaid"] = true,
 		["coord"] = { 69.8, 31.8, THE_MAW },
@@ -1262,16 +1262,17 @@ _.Instances = { tier(SL_TIER, {
 			}),
 		},
 	}),
-})};
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+})));
+
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(SL_TIER, {
 		inst(1193, {	-- Sanctum of Domination
 			i(181374),	-- Sylvanas Shadowlands Bow
 		}),
 	}),
-});
+}));
 
-_.HiddenQuestTriggers = {
+root("HiddenQuestTriggers", {
 	--q(63074),	-- Stygian ember loot >-- seems a too low number for this.
 	q(64604),	-- Stygian Ember from Bonesteel [] (Normal / Heroic)
 	q(64616),	-- Stygian Ember from Bonesteel (Normal / Heroic)
@@ -1391,4 +1392,4 @@ _.HiddenQuestTriggers = {
 	q(64504),	-- Sylvanas Windrunner (Mythic)
 
 	q(64707),	-- Sylvanas Windrunner Cinematic?
-};
+});

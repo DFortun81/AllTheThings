@@ -679,6 +679,13 @@ _.Zones =
 					["coord"] = { 65.7, 30.2, ZULDAZAR },
 					["races"] = HORDE_ONLY,
 				}),
+				q(55246, {	-- Even Greener Pastures
+					--["sourceQuests"] = { 55258 },	--
+					["provider"] = { "n", 151319 },	-- Li'zal
+					["isDaily"] = true,
+					["coord"] = { 68.1, 41.7, ZULDAZAR },
+					["races"] = HORDE_ONLY,
+				}),
 				q(52748, {	-- Eyes on the Skies
 					["sourceQuests"] = { 50900 },	-- Maybe When You're Older
 					["provider"] = { "n", 135308 },	-- Wingminder Goja

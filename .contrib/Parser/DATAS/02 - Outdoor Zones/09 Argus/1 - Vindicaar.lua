@@ -548,6 +548,7 @@ root("Zones", {
 									{"sub", "legion_relinquished", {"INVTYPE_CLOAK"}, 3 },	-- Cloak Only!
 								},
 								["g"] = sharedData({["modID"] = 43},{	-- Relinquished modID
+									i(152778),	-- Conservatory Ward's Drape (Confirmed in Errors 18 Jan 2022)
 									i(146793),	-- Man'ari Magus Drape (reported in #errors on 20201113)
 									i(146794),	-- Sargerei Herald's Cloak (reported in #errors on November 21, 2020)
 									i(146795),	-- Terrorfiend Greatcloak (reported in #errors on March 3, 2021)
@@ -678,10 +679,10 @@ root("Zones", {
 root("HiddenQuestTriggers", {
 	m(905, {	-- Argus
 		m(886, {	-- Vindicaar
-			-- TODO: verify these
-			-- q(48449),	-- Activating Light's Judgment
-			-- q(48450),	-- Activating Shroud of Arcane Echoes / Light's Judgment
-			-- q(48451),	-- Activating Shroud of Arcane Echoes
+			-- Vindicaar Matrix Abilities
+			q(48449),	-- Shroud of Arcane Echoes/Warframe
+			q(48450),	-- Shroud of Arcane Echoes/Fel Heart
+			q(48451),	-- Shroud of Arcane Echoes/Light's Judgement/Fel Heart
 		}),
 	}),
 });

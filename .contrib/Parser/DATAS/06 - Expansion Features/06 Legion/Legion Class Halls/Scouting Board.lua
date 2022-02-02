@@ -2,8 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-_.ExpansionFeatures =
-{
+root("ExpansionFeatures", {
 	tier(LEGION_TIER, {
 		n(CLASS_HALL, {
 			["icon"] = "Interface\\Icons\\achievement_level_110",
@@ -347,12 +346,15 @@ _.ExpansionFeatures =
 			},
 		}),
 	}),
-};
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+});
+
+root("HiddenQuestTriggers", {
+	q(48309),	-- looting 'Discharged Shock Lance' [152320] when completing a mission
+	q(48310),	-- Tracking Quest for Druids?
+});
+
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(49620),	-- completed some missions on the Legion Mission Board
 	}),
-});
-_.HiddenQuestTriggers = {
-	q(48310),	-- Tracking Quest for Druids?
-};
+}));

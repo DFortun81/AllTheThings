@@ -1699,7 +1699,6 @@ _.ExpansionFeatures =
 	})
 };
 
-
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(BFA_TIER, {
 		n(-254, {	-- Heritage Armor
@@ -1714,6 +1713,7 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	}),
 }));
 
-_.HiddenQuestTriggers = {
+root("HiddenQuestTriggers", {
 	q(54868),	-- During Heritage for Taurens in the End
-};
+	q(54869),	-- Starting Heritage for Taurens.
+});

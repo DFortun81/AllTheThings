@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(SL_TIER, {
+root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 	inst(1186, {	-- Spires of Ascension
 		["coord"] = { 58.5, 28.5, BASTION },
 		["maps"] = {
@@ -290,4 +290,4 @@ _.Instances = { tier(SL_TIER, {
 			}),
 		},
 	}),
-})};
+})));

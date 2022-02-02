@@ -4,7 +4,7 @@
 
 SLIME_SERPENT_DESC = "Requires solo kill of the last 2 bosses in either heroic or mythic Plaguefall."
 
-_.Instances = { tier(SL_TIER, {
+root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 	inst(1183, {	-- Plaguefall
 		["coord"] = { 59.3, 64.8, MALDRAXXUS },
 		["maps"] = {
@@ -257,4 +257,4 @@ _.Instances = { tier(SL_TIER, {
 			}),
 		},
 	}),
-})};
+})));

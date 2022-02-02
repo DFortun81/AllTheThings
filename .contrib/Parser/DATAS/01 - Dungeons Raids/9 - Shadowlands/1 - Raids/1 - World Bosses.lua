@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root("Instances", { tier(SL_TIER, {
+root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 	n(WORLD_BOSSES, {
 		["isRaid"] = true,
 		["modID"] = 14,
@@ -67,7 +67,7 @@ root("Instances", { tier(SL_TIER, {
 					i(187882),	-- Alpaca Soul
 				},
 			}),
-			e(2550, {	-- Antros <Keeper of the Antecedents>
+			e(2550, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {	-- Antros <Keeper of the Antecedents>
 				["crs"] = {
 					182466,	-- Antros
 					182863,	-- Sav'thul
@@ -75,8 +75,8 @@ root("Instances", { tier(SL_TIER, {
 				["isWeekly"] = true,
 				["questID"] = 65143,	-- (WQ)
 				["coord"] = { 48, 5, ZERETH_MORTIS }
-			}),
-			e(2456, {	-- Mor'geth <Tormentor of the Damned>
+			})),
+			e(2456, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {	-- Mor'geth <Tormentor of the Damned>
 				["isWeekly"] = true,
 				["questID"] = 64531,	-- Mor'geth (WQ)
 				["isRaid"] = true,
@@ -97,7 +97,7 @@ root("Instances", { tier(SL_TIER, {
 					i(186366),	-- Stygian Chain Greaves
 					i(187447),	-- Soul Cage Fragment
 				}),
-			}),
+			})),
 			e(2431, {	-- Mortanis
 				["isWeekly"] = true,
 				["questID"] = 61816,	-- Mortanis (WQ)
@@ -192,7 +192,7 @@ root("Instances", { tier(SL_TIER, {
 			}),
 		},
 	}),
-})});
+})));
 
 root("HiddenQuestTriggers", {
 	q(64547),	-- Mor'geth kill questID

@@ -274,6 +274,7 @@ _.Zones =
 					["coord"] = { 53.0, 66.0, HOWLING_FJORD },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 24125 },	-- Cormath the Courier
+					["sourceQuest"] = 11309,	-- Parts for the Job
 					["isBreadcrumb"] = true,
 				}),
 				q(13268, {	-- Cloth Scavenging (A)
