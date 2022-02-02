@@ -874,8 +874,10 @@ root("Instances", tier(CLASSIC_TIER, {
 					["qg"] = 168596,	-- Gormok Ogrefist
 					["sourceQuest"] = 28290,	-- Meet with Grezz Ragefist (Cata+) / Meet with Gormok Ogrefist (SL+)
 					["coord"] = { 73.6, 45.6, ORGRIMMAR },
+					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(50, 20, 50),
 					["groups"] = {
 						i(65625),	-- Faceguard of the Horde
 						i(65642),	-- Headguard of the Horde
@@ -1026,6 +1028,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						{ 79.4, 52.0, SILVERMOON_CITY },
 						{ 84.6, 73.2, UNDERCITY },	-- Gregory Charles (Undercity)
 					},
+					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1044,6 +1047,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						{ 57.2, 89.0, THUNDER_BLUFF },	-- Sark Ragetotem
 						{ 47.2, 15.2, UNDERCITY },	-- Christoph Walker
 					},
+					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1062,6 +1066,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						{ 57.2, 89.0, THUNDER_BLUFF },	-- Sark Ragetotem
 						{ 47.2, 15.2, UNDERCITY },	-- Christoph Walker
 					},
+					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1116,6 +1121,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						{ 79.4, 52.0, SILVERMOON_CITY },
 						{ 84.6, 73.2, UNDERCITY },	-- Gregory Charles (Undercity)
 					},
+					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1148,8 +1154,10 @@ root("Instances", tier(CLASSIC_TIER, {
 					["qg"] = 45337,	-- Tyelis
 					["sourceQuest"] = 28307,	-- Meet with Tyelis (Cata+) / Journey to Orgrimmar [Blood Elf] (SL+)
 					["coord"] = { 49.0, 71.0, ORGRIMMAR },
+					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { PRIEST },
 					["races"] = { BLOODELF },
+					["lvl"] = lvlsquish(50, 20, 50),
 					["groups"] = {
 						i(65634),	-- Crown of the Sunchaser
 					},
@@ -1158,8 +1166,10 @@ root("Instances", tier(CLASSIC_TIER, {
 					["qg"] = 45347,	-- Brother Silverhallow
 					["sourceQuest"] = 28323,	-- Meet with Brother Silverhallow (Cata+) / Journey to Orgrimmar [Goblin] (SL+)
 					["coord"] = { 37.8, 87.4, ORGRIMMAR },
+					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { PRIEST },
 					["races"] = { GOBLIN },
+					["lvl"] = lvlsquish(50, 20, 50),
 					["groups"] = {
 						i(65637),	-- Crown of Golden Worship
 					},
@@ -1168,8 +1178,10 @@ root("Instances", tier(CLASSIC_TIER, {
 					["qg"] = 45339,	-- Dark Cleric Cecille
 					["sourceQuest"] = 28304,	-- Meet with Dark Cleric Cecille (Cata+) / Journey to Orgrimmar [Goblin] (SL+)
 					["coord"] = { 48.2, 72.8, ORGRIMMAR },
+					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
+					["lvl"] = lvlsquish(50, 20, 50),
 					["groups"] = {
 						i(65633),	-- Crown of Forsaken Faith
 					},
@@ -1178,8 +1190,10 @@ root("Instances", tier(CLASSIC_TIER, {
 					["qg"] = 44735,	-- Seer Liwatha
 					["sourceQuest"] = 28308,	-- Meet with Seer Liwatha (Cata+) / Journey to Orgrimmar [Tauren] (SL+)
 					["coord"] = { 45.4, 53.4, ORGRIMMAR },
+					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { PRIEST },
 					["races"] = { TAUREN },
+					["lvl"] = lvlsquish(50, 20, 50),
 					["groups"] = {
 						i(65635),	-- Crown of the Earthmother
 						-- You get these when completing the quest
@@ -1193,100 +1207,113 @@ root("Instances", tier(CLASSIC_TIER, {
 					["qg"] = 45137,	-- Shadow-Walker Zuru
 					["sourceQuest"] = 28309,	-- Meet with Shadow-Walker Zuru (Cata+) / Journey to Orgrimmar [Troll] (SL+)
 					["coord"] = { 35.4, 69.2, ORGRIMMAR },
+					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
+					["lvl"] = lvlsquish(50, 20, 50),
 					["groups"] = {
 						i(65636),	-- Crown of the Shadow-Walker
 					},
 				}),
 
-				n(-75, {	-- Detention Block
-					q(27569, {	-- Dark Iron Tacticians
-						["provider"] = { "n", 45894 },	-- Prospector Seymour
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = { 27568 },	-- Infilitrating Shadowforge City [Alliance]
-					}),
-					q(27568, {	-- Infiltrating Shadowforge City [Alliance]
-						["provider"] = { "n", 45891 },	-- Oralius
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(27582, {	-- Infiltrating Shadowforge City [Horde]
-						["provider"] = { "n", 45839 },	-- Galamav the Marksman
-						["races"] = HORDE_ONLY,
-					}),
-					q(27565, {	-- Into the Prison [Alliance]
-						["provider"] = { "n", 45892 },	-- Jalinda Sprig
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(27579, {	-- Into the Prison [Horde]
-						["provider"] = { "n", 45821 },	-- Tha'trak Proudtusk
-						["races"] = HORDE_ONLY,
-					}),
-					q(27585, {	-- The 109th Division
-						["provider"] = { "n", 45820 },	-- Razal'blade
-						["races"] = HORDE_ONLY,
-						["sourceQuests"] = { 27582 },	-- Infiltrating Shadowforge City [Horde]
-					}),
-					q(27596, {	-- The Heart of the Mountain
-						["provider"] = { "n", 45850 },	-- Maxwort Uberglint
-					}),
-					q(27603, {	-- The Sealed Gate
-						["provider"] = { "n", 45849 },	-- Tinkee Steamboil
-					}),
-					q(27567, {	-- Twilight?! No! [Alliance]
-						["provider"] = { "n", 45898 },	-- Kevin Dawson
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = { 27565 },	-- Into the Prison [Alliance]
-					}),
-					q(27581, {	-- Twilight?! No! [Horde]
-						["provider"] = { "n", 45818 },	-- Lexlort
-						["races"] = HORDE_ONLY,
-						["sourceQuests"] = { 27579 },	-- Into the Prison [Horde]
-					}),
+				q(27569, {	-- Dark Iron Tacticians
+					["qg"] = 45894,	-- Prospector Seymour
+					["sourceQuest"] = 27568,	-- Infilitrating Shadowforge City [Alliance]
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
-				n(-76, {	-- Shadowforge City
-					q(27578, {	-- Morgan's Fruition
-						["groups"] = {
-							i(65956),	-- Maxwell's Cloak
-							i(65932),	-- Thaurissan's Breastplatee
-							i(65980),	-- Dark Iron Band
-						},
-						["provider"] = { "n", 45890 },   -- Marshal Maxwell
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = { 27573 },	-- The Dark Iron Pact [Alliance]
-					}),
-					q(27593, {	-- Rebirth of the K.E.F
-						["groups"] = {
-							i(68054),	-- Dark Iron Band
-							i(68052),	-- Kargath Cloak
-							i(68053),	-- Thaurissan's Breastplatee
-						},
-						["provider"] = { "n", 45840 },	-- Warlord Goretooth
-						["races"] = HORDE_ONLY,
-						["sourceQuests"] = { 27591 },  -- The Dark Iron Pact [Horde]
-					}),
-					q(27573, {	-- The Dark Iron Pact [Alliance]
-						["provider"] = { "n", 45899 },	-- Mountaineer Orfus
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = { 27571 },	-- The Grim Guzzler [Alliance]
-					}),
-					q(27591, {	-- The Dark Iron Pact [Horde]
-						["provider"] = { "n", 45824 },	--  Thunderheart
-						["races"] = HORDE_ONLY,
-						["sourceQuests"] = { 27589 },	-- The Grim Guzzler [Horde]
-					}),
-					q(27571, {	-- The Grim Guzzler [Alliance]
-						["provider"] = { "n", 45888 },	-- Mayara Brightwing
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = { 27569 },	-- Dark Iron Tacticians
-					}),
-					q(27589, {	-- The Grim Guzzler [Horde]
-						["provider"] = { "n", 45817 },	-- Hierophant Theodora Mulvadania
-						["races"] = HORDE_ONLY,
-						["sourceQuests"] = { 27585 },	-- The 109th Division
-					}),
+				q(27568, {	-- Infiltrating Shadowforge City [Alliance]
+					["qg"] = 45891,	-- Oralius
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
-
+				q(27582, {	-- Infiltrating Shadowforge City [Horde]
+					["qg"] = 45839,	-- Galamav the Marksman
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+				}),
+				q(27565, {	-- Into the Prison [Alliance]
+					["qg"] = 45892,	-- Jalinda Sprig
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(27579, {	-- Into the Prison [Horde]
+					["qg"] = 45821,	-- Tha'trak Proudtusk
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+				}),
+				q(27585, {	-- The 109th Division
+					["qg"] = 45820,	-- Razal'blade
+					["sourceQuest"] = 27582,	-- Infiltrating Shadowforge City [Horde]
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+				}),
+				q(27596, {	-- The Heart of the Mountain
+					["qg"] = 45850,	-- Maxwort Uberglint
+					["timeline"] = { "added 4.0.3.13277" },
+				}),
+				q(27603, {	-- The Sealed Gate
+					["qg"] = 45849,	-- Tinkee Steamboil
+					["timeline"] = { "added 4.0.3.13277" },
+				}),
+				q(27567, {	-- Twilight?! No! [Alliance]
+					["qg"] = 45898,	-- Kevin Dawson
+					["sourceQuest"] = 27565,	-- Into the Prison [Alliance]
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(27581, {	-- Twilight?! No! [Horde]
+					["qg"] = 45818,	-- Lexlort
+					["sourceQuest"] = 27579,	-- Into the Prison [Horde]
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+				}),
+				q(27578, {	-- Morgan's Fruition
+					["qg"] = 45890,   -- Marshal Maxwell
+					["sourceQuest"] = 27573,	-- The Dark Iron Pact [Alliance]
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(65956),	-- Maxwell's Cloak
+						i(65932),	-- Thaurissan's Breastplatee
+						i(65980),	-- Dark Iron Band
+					},
+				}),
+				q(27593, {	-- Rebirth of the K.E.F
+					["qg"] = 45840,	-- Warlord Goretooth
+					["sourceQuest"] = 27591,  -- The Dark Iron Pact [Horde]
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(68054),	-- Dark Iron Band
+						i(68052),	-- Kargath Cloak
+						i(68053),	-- Thaurissan's Breastplatee
+					},
+				}),
+				q(27573, {	-- The Dark Iron Pact [Alliance]
+					["qg"] = 45899,	-- Mountaineer Orfus
+					["sourceQuest"] = 27571,	-- The Grim Guzzler [Alliance]
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(27591, {	-- The Dark Iron Pact [Horde]
+					["qg"] = 45824,	--  Thunderheart
+					["sourceQuest"] = 27589,	-- The Grim Guzzler [Horde]
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+				}),
+				q(27571, {	-- The Grim Guzzler [Alliance]
+					["qg"] = 45888,	-- Mayara Brightwing
+					["sourceQuest"] = 27569,	-- Dark Iron Tacticians
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(27589, {	-- The Grim Guzzler [Horde]
+					["qg"] = 45817,	-- Hierophant Theodora Mulvadania
+					["sourceQuest"] = 27585,	-- The 109th Division
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+				}),
 			}),
 			n(VENDORS, {
 				n(12944, {	-- Lokhtos Darkbargainer <The Thorium Brotherhood>
@@ -1988,3 +2015,6 @@ root("HiddenQuestTriggers", {
 	}),
 });
 -- #endif
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	q(3911),	-- The Last Element
+}));
