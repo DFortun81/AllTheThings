@@ -575,23 +575,6 @@ _.Zones =
 						["coord"] = { 64.3, 69.8, BASTION },
 					}),
 				}),
-				ach(14731, {	-- To All the Squirrels I've Loved and Lost
-					["collectible"] = false,
-					["g"] = {
-						crit(1, {	-- Dreadfur Kit
-							["crs"] = { 170242 },	-- Dreadfur Kit
-							["coord"] = { 55.0, 13.6, BASTION },
-						}),
-						crit(2, {	-- Darkened Wyrmling
-							["crs"] = { 170006 },	-- Darkened Wyrmling
-							["coord"] = { 37.7, 27.4, BASTION },
-						}),
-						crit(3, {	-- Soulwing Flitter
-							["crs"] = { 168397 },	-- Soulwing Flitter
-							["coord"] = { 48.1, 77.7, BASTION },
-						}),
-					},
-				}),
 				pvp(ach(14514)),	-- Tour of Duty: Bastion
 				ach(14768, {	-- What is that Melody?
 					crit(1, {		-- Hymn of Purity

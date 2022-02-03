@@ -242,23 +242,6 @@ _.Zones =
 					["cost"] = { { "i", 183902, 1 } },	-- 1x A Faintly Glowing Seed
 					["crs"] = { 171690 },	-- Gwyncierw
 				}),
-				ach(14731, {	-- To All the Squirrels I've Loved and Lost
-					["collectible"] = false,
-					["g"] = {
-						crit(4, {	-- Starmoth
-							["crs"] = { 164701, 165857, 169979 },	-- Starmoth
-							["coord"] = { 64.2, 42.1, ARDENWEALD },
-						}),
-						crit(5, {	-- Timber Kit
-							["crs"] = { 166973 },	-- Timber Kit
-							["coord"] = { 42.0, 27.3, ARDENWEALD },
-						}),
-						crit(6,	{	-- Runewood Hoarder
-							["crs"] = { 174837 },	-- Runewood Hoarder
-							["coord"] = { 58.6, 47.1, ARDENWEALD },
-						}),
-					},
-				}),
 				ach(14511, {	-- Tour of Duty: Ardenweald
 					["pvp"] = true,
 				}),

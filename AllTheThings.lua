@@ -15920,6 +15920,7 @@ function app:GetDataCache()
 		flightPathsCategory.expanded = false;
 		flightPathsCategory.icon = app.asset("Category_FlightPaths");
 		flightPathsCategory.text = Colorize(L["FLIGHT_PATHS"], "ff7f40bf");
+		db.name = L["FLIGHT_PATHS"];
 		tinsert(g, flightPathsCategory);
 
 		-- Dynamic Categories
@@ -15928,6 +15929,7 @@ function app:GetDataCache()
 			-- Battle Pets - Dynamic
 			local db = {};
 			db.text = AUCTION_CATEGORY_BATTLE_PETS;
+			db.name = db.text;
 			db.icon = app.asset("Category_PetJournal");
 			tinsert(g, DynamicCategory(db, "speciesID"));
 
