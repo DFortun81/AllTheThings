@@ -95,7 +95,7 @@ _.Zones =
 						}),
 					},
 				}),
-				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11885, {	-- Adversarial Blood
+				applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11885, {	-- Adversarial Blood
 					["provider"] = { "n", 23306 },	-- Hazzik
 					["sourceQuest"] = 11029,	-- A Shabby Disguise
 					["coord"] = { 64.2, 66.9, TEROKKAR_FOREST },
@@ -103,7 +103,7 @@ _.Zones =
 						i(32720),	-- Time-Lost Offering
 					},
 				})),
-				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11029, {	-- A Shabby Disguise
+				applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11029, {	-- A Shabby Disguise
 					["provider"] = { "n", 23306 },	-- Hazzik
 					["sourceQuest"] = 11056,	-- Hazzik's Bargain
 					["coord"] = { 64.2, 66.9, TEROKKAR_FOREST },
@@ -118,22 +118,22 @@ _.Zones =
 						}),
 					},
 				})),
-				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11024, {	-- An Ally in Lower City
+				applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11024, {	-- An Ally in Lower City
 					["provider"] = { "n", 23038 },	-- Sky Commander Adaris
 					["sourceQuest"] = 11021,	-- Ishaal's Almanac
 					["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
 				})),
-				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11028, {	-- Countdown to Doom
+				applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11028, {	-- Countdown to Doom
 					["provider"] = { "n", 22292 },	-- Rilak the Redeemed
 					["sourceQuest"] = 11024,	-- An Ally in Lower City
 					["coord"] = { 52.6, 21.0, SHATTRATH_CITY },
 				})),
-				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11085, {	-- Escape from Skettis
+				applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11085, {	-- Escape from Skettis
 					["provider"] = { "n", 23383 },	-- Skyguard Prisoner
 					["coord"] = { 75, 86.2, TEROKKAR_FOREST },
 					["isDaily"] = true,
 				})),
-				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11008, {	-- Fires Over Skettis
+				applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11008, {	-- Fires Over Skettis
 					["provider"] = { "n", 23048 },	-- Sky Sergeant Doryn
 					["sourceQuest"] = 11098,	-- To Skettis!
 					["coord"] = { 64.5, 66.7, TEROKKAR_FOREST },
@@ -145,7 +145,7 @@ _.Zones =
 						ach(1275),	-- Bombs Away
 					},
 				})),
-				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11056, {	-- Hazzik's Bargain
+				applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11056, {	-- Hazzik's Bargain
 					["provider"] = { "n", 23306 },	-- Hazzik
 					["sourceQuest"] = 11028,	-- Countdown to Doom
 					["coord"] = { 64.2, 66.9, TEROKKAR_FOREST },
@@ -159,7 +159,7 @@ _.Zones =
 						}),
 					},
 				})),
-				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11093, {	-- Hungry Nether Rays
+				applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11093, {	-- Hungry Nether Rays
 					["provider"] = { "n", 23415 },	-- Skyguard Handler Deesak
 					["coord"] = { 63.6, 65.8, TEROKKAR_FOREST },
 					["cost"] = {
@@ -170,12 +170,12 @@ _.Zones =
 						i(22831),	-- Elixir of Major Agility
 					},
 				})),
-				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11021, {	-- Ishaal's Almanac
+				applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11021, {	-- Ishaal's Almanac
 					["provider"] = { "i", 32523 },	-- Ishaal's Almanac
 					["coord"] = { 69.2, 78.2, TEROKKAR_FOREST },
 					["cr"] = 23066,	-- Talonpriest Ishaal
 				})),
-				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11006, {	-- More Shadow Dust
+				applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11006, {	-- More Shadow Dust
 					["provider"] = { "n", 23042 },	-- Severin <Skyguard Medic>
 					["sourceQuest"] = 11004,	-- World of Shadows
 					["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
@@ -187,12 +187,12 @@ _.Zones =
 						i(32446),	-- Elixir of Shadows
 					},
 				})),
-				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11005, {	-- Secrets of the Talonpriests
+				applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11005, {	-- Secrets of the Talonpriests
 					["provider"] = { "n", 23038 },	-- Sky Commander Adaris
 					["sourceQuest"] = 11004,	-- World of Shadows
 					["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
 				})),
-				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11074, {	-- Tokens of the Descendants
+				applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11074, {	-- Tokens of the Descendants
 					["provider"] = { "n", 23306 },	-- Hazzik
 					["sourceQuest"] = 11885,	-- Adversarial Blood
 					["coord"] = { 64.2, 66.9, TEROKKAR_FOREST },
@@ -207,7 +207,7 @@ _.Zones =
 						i(32720),	-- Time-Lost Offering
 					},
 				})),
-				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11073, {  -- Terokk's Downfall
+				applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11073, {  -- Terokk's Downfall
 					["provider"] = { "n", 23038 },	-- Sky Commander Adaris
 					["sourceQuest"] = 11885,	-- Adversarial Blood
 					["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
@@ -223,7 +223,7 @@ _.Zones =
 						i(32829),	-- Windcharger's Lance
 					},
 				})),
-				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11004, {	-- World of Shadows
+				applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11004, {	-- World of Shadows
 					["provider"] = { "n", 23042 },	-- Severin <Skyguard Medic>
 					["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
 					["cost"] = {
