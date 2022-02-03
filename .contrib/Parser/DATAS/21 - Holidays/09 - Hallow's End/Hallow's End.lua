@@ -1435,10 +1435,23 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 					}),
 				},
 			}),
-			ach(980, {	-- The Horseman's Reins
+			removeclassicphase(ach(980, {	-- The Horseman's Reins
 				["provider"] = { "i", 37012 },	-- The Horseman's Reins
 				["timeline"] = { "added 2.0.1" },
-			}),
+				-- #if BEFORE WRATH
+				["description"] = "Obtain The Horseman's Reins from The Headless Horseman in the Scarlet Monastery during Hallow's End.",
+				["OnUpdate"] = [[function(t)
+					local collected = false;
+					for i,provider in ipairs(t.providers) do
+						if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
+							collected = true;
+							break;
+						end
+					end
+					t.SetAchievementCollected(t.achievementID, collected);
+				end]],
+				-- #endif
+			})),
 		}),
 		n(23682, {	-- Headless Horseman
 			-- #if AFTER WRATH

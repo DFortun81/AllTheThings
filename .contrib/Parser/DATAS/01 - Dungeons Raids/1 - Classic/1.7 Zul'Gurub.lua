@@ -1347,6 +1347,22 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 				i(19871),	-- Talisman of Protection
 			}),
 			n(11382, {	-- Bloodlord Mandokir
+				removeclassicphase(ach(881, {	-- Swift Razzashi Raptor
+					["provider"] = { "i", 19872 },	-- Swift Razzashi Raptor
+					-- #if BEFORE WRATH
+					["description"] = "Obtain the Swift Razzashi Raptor from Bloodlord Mandokir in Zul'Gurub.",
+					["OnUpdate"] = [[function(t)
+						local collected = false;
+						for i,provider in ipairs(t.providers) do
+							if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
+								collected = true;
+								break;
+							end
+						end
+						t.SetAchievementCollected(t.achievementID, collected);
+					end]],
+					-- #endif
+				})),
 				i(19872),	-- Swift Razzashi Raptor
 				i(19867),	-- Bloodlord's Defender
 				i(19874),	-- Halberd of Smiting
@@ -1398,6 +1414,22 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 				},
 			}),
 			n(14509, {	-- High Priest Thekal
+				removeclassicphase(ach(880, {	-- Swift Zulian Tiger
+					["provider"] = { "i", 19902 },	-- Swift Zulian Tiger
+					-- #if BEFORE WRATH
+					["description"] = "Obtain the Swift Zulian Tiger from High Priest Thekal in Zul'Gurub.",
+					["OnUpdate"] = [[function(t)
+						local collected = false;
+						for i,provider in ipairs(t.providers) do
+							if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
+								collected = true;
+								break;
+							end
+						end
+						t.SetAchievementCollected(t.achievementID, collected);
+					end]],
+					-- #endif
+				})),
 				i(19902),	-- Swift Zulian Tiger
 				i(19896),	-- Thekal's Grasp
 				i(19901),	-- Zulian Slicer

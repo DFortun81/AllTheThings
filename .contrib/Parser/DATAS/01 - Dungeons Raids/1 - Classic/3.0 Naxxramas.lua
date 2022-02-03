@@ -43,6 +43,28 @@ applyclassicphase(PHASE_SIX,
 						["maps"] = { CAVERNS_OF_TIME },
 						["isRaid"] = true,
 						["groups"] = {
+							removeclassicphase(ach(425, {	-- Atiesh, Greatstaff of the Guardian
+								["providers"] = {
+									{ "i", 22631 },	-- Atiesh, Greatstaff of the Guardian (Priest)
+									{ "i", 22589 },	-- Atiesh, Greatstaff of the Guardian (Mage)
+									{ "i", 22630 },	-- Atiesh, Greatstaff of the Guardian (Warlock)
+									{ "i", 22632 },	-- Atiesh, Greatstaff of the Guardian (Druid)
+								},
+								["classes"] = { PRIEST, MAGE, WARLOCK, DRUID },
+								-- #if BEFORE WRATH
+								["description"] = "Wielder of Atiesh, Greatstaff of the Guardian.",
+								["OnUpdate"] = [[function(t)
+									local collected = false;
+									for i,provider in ipairs(t.providers) do
+										if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
+											collected = true;
+											break;
+										end
+									end
+									t.SetAchievementCollected(t.achievementID, collected);
+								end]],
+								-- #endif
+							})),
 							q(9251, {	-- Atiesh, the Befouled Greatstaff
 								["qg"] = 15192,	-- Anachronos
 								["sourceQuest"] = 9250,	-- Frame of Atiesh
