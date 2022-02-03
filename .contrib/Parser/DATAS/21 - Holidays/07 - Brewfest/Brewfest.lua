@@ -233,10 +233,15 @@ _.Holidays = { applyholiday(BREWFEST, {
 			ach(1186, {	-- Down With The Dark Iron
 				["timeline"] = { "added 3.0.1", "removed 8.2.0" },
 			}),
-			ach(4782, {	-- Green Brewfest Stein [Removed]
+			removeclassicphase(ach(4782, {	-- Green Brewfest Stein [Removed]
 				["provider"] = { "i", 37892 },	-- Green Brewfest Stein
 				["timeline"] = { "added 3.0.1", "removed 4.0.1" },
-			}),
+				-- #if BEFORE WRATH
+				["OnUpdate"] = [[function(t)
+					t.SetAchievementCollected(t.achievementID, GetItemCount(37892, true) > 0);
+				end]],
+				-- #endif
+			})),
 			removeclassicphase(ach(303, {	-- Have Keg, Will Travel
 				["providers"] = {
 					{ "i", 33976 },	-- Brewfest Ram
@@ -351,10 +356,15 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["cost"] = { { "i", 33026, 1 } },	-- The Golden Link
 				}),
 			}),
-			ach(1292, {	-- Yellow Brewfest Stein [Removed]
+			removeclassicphase(ach(1292, {	-- Yellow Brewfest Stein [Removed]
 				["provider"] = { "i", 32912 },	-- Yellow Brewfest Stein
-				["timeline"] = { "added 2.0.1", "removed 3.0.1" },
-			}),
+				["timeline"] = { "added 2.0.1", "removed 2.4.3" },
+				-- #if BEFORE WRATH
+				["OnUpdate"] = [[function(t)
+					t.SetAchievementCollected(t.achievementID, GetItemCount(32912, true) > 0);
+				end]],
+				-- #endif
+			})),
 		}),
 		n(23872, {	-- Coren Direbrew
 			-- #if AFTER 3.0.1

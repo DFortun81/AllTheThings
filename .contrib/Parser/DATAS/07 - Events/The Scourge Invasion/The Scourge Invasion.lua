@@ -17,6 +17,24 @@ root("WorldEvents", n(-540, -- The Scourge Invasion
 			WINTERSPRING,
 		},
 		["groups"] = {
+			n(ACHIEVEMENTS, {
+				removeclassicphase(ach(2116, {	-- Tabard of the Argent Dawn
+					["provider"] = { "i", 22999 },	-- Tabard of the Argent Dawn
+					-- #if BEFORE WRATH
+					["description"] = "Obtained a Tabard of the Argent Dawn from the Scourge Invasion event.",
+					["OnUpdate"] = [[function(t)
+						local collected = false;
+						for i,provider in ipairs(t.providers) do
+							if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
+								collected = true;
+								break;
+							end
+						end
+						t.SetAchievementCollected(t.achievementID, collected);
+					end]],
+					-- #endif
+				})),
+			}),
 			n(QUESTS, {
 				q(9094, {	-- Argent Dawn Gloves
 					["qg"] = 16787,	-- Argent Outfitter <The Argent Dawn>
@@ -449,7 +467,6 @@ root("WorldEvents", n(-540, -- The Scourge Invasion
 				q(9343, {	-- Tabard of the Argent Dawn
 					["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
 					["sourceQuest"] = 9153,	-- Under the Shadow
-					["repeatable"] = true,
 					["coords"] = {
 						{ 54.7, 62.2, STORMWIND_CITY },
 						{ 34.0, 66.4, IRONFORGE },
@@ -483,7 +500,6 @@ root("WorldEvents", n(-540, -- The Scourge Invasion
 					["cost"] = {
 						{ "i", 22484, 10 },	-- Necrotic Rune
 					},
-					["repeatable"] = true,
 					["lvl"] = 50,
 					["groups"] = {
 						i(22999),	-- Tabard of the Argent Dawn

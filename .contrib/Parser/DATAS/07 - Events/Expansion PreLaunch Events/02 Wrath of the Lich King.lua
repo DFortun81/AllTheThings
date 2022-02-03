@@ -14,7 +14,23 @@ _.WorldEvents =
 					},
 				})),
 				n(28194, {	-- Prince Tenris Mirkblood
-					un(REMOVED_FROM_GAME, ach(2456)),	-- Vampire Hunter
+					removeclassicphase(ach(2456, {	-- Vampire Hunter
+						["provider"] = { "i", 38658 },	-- Vampiric Batling Pet
+						["timeline"] = { "removed 3.0.3" },
+						-- #if BEFORE WRATH
+						["description"] = "Slew Prince Tenris Mirkblood and acquired his Vampiric Batling pet.",
+						["OnUpdate"] = [[function(t)
+							local collected = false;
+							for i,provider in ipairs(t.providers) do
+								if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
+									collected = true;
+									break;
+								end
+							end
+							t.SetAchievementCollected(t.achievementID, collected);
+						end]],
+						-- #endif
+					})),
 					un(REMOVED_FROM_GAME, i(38658)),	-- Vampiric Batling Pet
 					un(REMOVED_FROM_GAME, i(39769)),	-- Arcanite Ripper
 				}),
