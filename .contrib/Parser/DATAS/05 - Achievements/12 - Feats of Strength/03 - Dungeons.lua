@@ -206,7 +206,9 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			title(451),	-- <Name>, the Tormented Hero
 		}),
 		ach(15496),	-- Shadowlands Keystone Explorer: Season Three
-		ach(15498),	-- Shadowlands Keystone Conqueror: Season Three (PH TITLE?!)
+		ach(15498, {	-- Shadowlands Keystone Conqueror: Season Three
+			title(457),	-- <Name> the Cryptic
+		}),
 		ach(15499, {	-- Shadowlands Keystone Master: Season Three
 			i(187682),	-- Wastewarped Deathwalker
 		}),
@@ -214,6 +216,8 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			crit(1),	-- Tazavesh: Streets of Wonder
 			crit(2),	-- Tazavesh: So'leah's Gambit
 		}),
-		ach(15506),	-- Shadowlands Keystone Hero: Season Three
+		ach(15506, {	-- Shadowlands Keystone Hero: Season Three
+			title(458),	-- <Name>, the Cryptic Hero
+		}),
 	}),
 }));

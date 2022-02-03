@@ -663,5 +663,15 @@ root("HiddenQuestTriggers", {
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(SL_TIER, {
 		i(190392),	-- Pocopoc Shield
+		n(ACHIEVEMENTS, {
+			ach(15559),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Aealic
+			ach(15560),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Dealic
+			ach(15561),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Trebalim
+			ach(15562),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Cachial
+			ach(15563),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Altonian
+			ach(15564),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Sopranian
+			ach(15565),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Bassalim
+			ach(15566),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Metrial
+		}),
 	}),
 }));

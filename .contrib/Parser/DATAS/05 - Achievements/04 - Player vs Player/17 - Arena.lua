@@ -82,6 +82,7 @@ root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(SL_TIER, {
 		n(ACHIEVEMENTS, {
+			-- Removed in later build
 			ach(15517),	-- Solo Shuffle rounds participated in
 			ach(15516),	-- Solo Shuffle rounds won
 		}),
