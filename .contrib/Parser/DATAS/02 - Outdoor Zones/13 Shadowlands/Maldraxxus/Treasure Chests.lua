@@ -2,444 +2,441 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
-	m(SHADOWLANDS, {
-		m(MALDRAXXUS, {
-			n(TREASURES, {
-				o(353627, {		-- Battlefront Rations
-					["description"] = "To unlock it, you must obtain |cFF0070ddBattlefront Ration Key|r from Thalrix the Slicer or one of the Supply Officer mobs in the area nearby.",
-					["questID"] = 60772,
-					["isDaily"] = true,
-					["coord"] = { 37.8, 45.6, MALDRAXXUS },
-					["cost"] = { { "i", 180277, 1 } },	-- 1x Battlefront Ration Key
-					["crs"] = {
-						157037,	-- Grabber Ga'shock <Supply Officer>
-						157036,	-- Pilfer Bur'tok <Supply Officer>
-						157028,	-- Thalrix the Slicer
-					},
-				}),
-				o(352086, {		-- Blackhound Cache
-					["description"] = "Requires |cFF40bf40Necrolord Covenant|r using Visectus to open. Interactible Toys, Soulshape, etc. no longer work, as you get teleported out.\n\nIf the door is already open, a character from any covenant may walk in and loot the treasure.",
-					["questID"] = 60368,
-					["isDaily"] = true,
-					["coord"] = { 44.0, 39.8, MALDRAXXUS },
-					["g"] = {
-					--	Epic
-						i(181800, {	-- Standard of the Blackhound Warband
-							["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant drop only
-						}),
-					--	Blue
-						i(184318),	-- Battlecry of Krexus
-						i(183619),	-- Everlasting Boneforged Greataxe
-					--	Green
-						i(183827),	-- Blacksteel Backplate
-						i(183824, {	-- Cache of Spare Weapons
-							["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant drop only
-						}),
-					},
-				}),
-				n(171337, {		-- Bloated Lootfly
-					["description"] = "This is a critter that flies around.  Find it, kill it, and loot it to collect the treasure.",
-					["questID"] = 61111,
-					["isDaily"] = true,
-					["coords"] = {	-- general coordinates for both known current spawn areas (west of the House of Eyes and south of the Keres' Rest FP)
-						{ 49.0, 24.6, MALDRAXXUS },
-						{ 49.8, 21.8, MALDRAXXUS },
-						{ 50.2, 19.0, MALDRAXXUS },
-						{ 50.8, 22.0, MALDRAXXUS },
-						{ 51.6, 35.2, MALDRAXXUS },
-						{ 51.8, 18.4, MALDRAXXUS },
-						{ 52.6, 20.0, MALDRAXXUS },
-						{ 54.2, 37.2, MALDRAXXUS },
-						{ 54.8, 33.4, MALDRAXXUS },
-						{ 54.8, 40.2, MALDRAXXUS },
-					},
-				}),
-				o(353231, {		-- Bonebound Chest
-					["description"] = "There are 2 versions of this chest. One is at the cave entrance at |cFFFFFFFF37.9, 76.3|r. One is at the Unyielding Assembly at building entrance |cFFFFFFFF35.9, 80.2|r.",
-					["questID"] = 60662,	-- same quest triggers for both versions of chest
-					["isDaily"] = true,
-					["coords"] = {
-						{ 36.2, 81.6, MALDRAXXUS },	-- Unyielding Assembly version of chest
-						{ 61.1, 22.6, 1651 },	-- Molten Forge version of chest
-					},
-				}),
-				o(352433, {		-- Cache of Eyes
-					["description"] = "Coordinates are to the entrance of Sightless Hold.  The cache spawns in numerous locations within the cave.  The pet is not a 100% drop and the chest is not always up, but there is no cooldown or lockout for opening the chest.",
-					["coord"] = { 54.0, 12.3, MALDRAXXUS },
-					["g"] = {
-						i(181171),	-- Luminous Webspinner (PET!)
-					},
-				}),
-				o(345456, {		-- Chest of Eyes
-					["description"] = "The path to the treasure starts at |cFFFFFFFF51.6, 13.7|r.  Climb up the side of the crumbled building until you get close to the treasure, then turn right and walk up the cliff to it.",
-				--	["questID"] = 59244,
-					["coord"] = { 48.3, 16.3, MALDRAXXUS },
-					["g"] = {
-						crit(8, {	-- Chest of Eyes
-							["achievementID"] = 14312,	-- Treasures of Maldraxxus
-						}),
-						i(183696),	-- Sp-eye-glass
-					},
-				}),
-				o(345455, {		-- Construct Supply Chest
-				--	TODO: see if chest has reset after 2/15 rollover
-					["description"] = "To unlock it, you must obtain |cFF0070ddConstruct Supply Key|r from Thalrix the Slicer or one of the Supply Officer mobs in the area nearby.",
-					["questID"] = 59243,
-					["isDaily"] = true,
-					["coord"] = { 38.8, 41.9, MALDRAXXUS },
-					["cost"] = { { "i", 175757, 1 } },	-- Construct Supply Key
-					["crs"] = {
-						157037,	-- Grabber Ga'shock <Supply Officer>
-						157036,	-- Pilfer Bur'tok <Supply Officer>
-						157028,	-- Thalrix the Slicer
-					},
-				}),
-				o(358855, {		-- Damaged Safe Fall Pack
-					["coord"] = { 60.0, 44.6, MALDRAXXUS },
-					["g"] = {
-						i(183831),	-- Safe Fall Kit
-					},
-				}),
-				o(364483, {		-- Empty Nightcap Cask
-					["description"] = "Coordinates are to the entrance of Molten Forge. The cask is found at 50.3, 17.4 once you enter the Molten Forge.",
-					["coord"] = { 37.9, 76.3, MALDRAXXUS },
-					["g"] = {
-						i(183752),	-- Empty Nightcap Cask
-					},
-				}),
-				o(341424, {		-- Forgotten Mementos
-					["description"] = "Unlock the gate to the treasure by clicking the chain at |cFFFFFFFF25.8, 53.9|r.\n\nThe treasure will respawn about 5 minutes after being looted by another player.",
-				--	["questID"] = 58710,
-					["coord"] = { 22.5, 30.5, MALDRAXXUS },
-					["g"] = {
-						crit(7, {	-- Forgotten Mementos
-							["achievementID"] = 14312,	-- Treasures of Maldraxxus
-						}),
-					},
-				}),
-				o(358531, {		-- Giant Cache of Epic Treasure
-					["questID"] = 62602,
-					["coord"] = { 41.4, 19.7, MALDRAXXUS },
-					["g"] = {
-						p(3047),	-- Spinebug
-					},
-				}),
-				o(355947, {		-- Glutharn's Stash
-					["description"] = "In a cave behind the slime waterfall.",
-				--	["questID"] = 61484,
-					["coord"] = { 72.1, 52.7, MALDRAXXUS },
-					["g"] = {
-						crit(10, {	-- Glutharn's Stash
-							["achievementID"] = 14312,	-- Treasures of Maldraxxus
-						}),
-					},
-				}),
-				o(353380, {		-- Halis's Lunch Pail
-				--	["questID"] = 60730,
-					["coord"] = { 30.7, 28.7, MALDRAXXUS },
-					["g"] = {
-						crit(3, {	-- Halis's Lunch Pail
-							["achievementID"] = 14312,	-- Treasures of Maldraxxus
-						}),
-					},
-				}),
-				n(169664, {		-- Kyrian Corpse
-					["coord"] = { 32.7, 21.2, MALDRAXXUS },
-					["g"] = {
-						i(180085, {	-- Kyrian Keepsake
-						--	["questID"] = 60587,	-- quest pops for opening the keepsake, not looting it
-							["g"] = {
-								crit(2, {	-- Kyrian Keepsake
-									["achievementID"] = 14312,	-- Treasures of Maldraxxus
-								}),
-								i(175708),	-- Reconstructed Family Locket
-							},
-						}),
-					},
-				}),
-				o(353626, {		-- Locked Toolbox
-					["description"] = "To unlock it, you must obtain |cFF0070ddLocked Toolbox Key|r from Thalrix the Slicer or one of the Supply Officer mobs in the area nearby.",
-					["questID"] = 60771,
-					["isDaily"] = true,
-					["coord"] = { 38.1, 42.6, MALDRAXXUS },
-					["cost"] = { { "i", 180276, 1 } },	-- Locked Toolbox Key
-					["crs"] = {
-						157037,	-- Grabber Ga'shock <Supply Officer>
-						157036,	-- Pilfer Bur'tok <Supply Officer>
-						157028,	-- Thalrix the Slicer
-					},
-				}),
-				o(351980, {		-- Misplaced Supplies
-					["description"] = "On top of the mushroom.",
-				--	["questID"] = 59245,	-- 60311 triggered for me on this treasure
-					["coord"] = { 62.4, 59.9, MALDRAXXUS },
-					["g"] = {
-						crit(9, {	-- Misplaced Supplies
-							["achievementID"] = 14312,	-- Treasures of Maldraxxus
-						}),
-					},
-				}),
-				o(347444, {		-- Ornate Bone Shield
-				--	["questID"] = 59358,
-					["coord"] = { 47.2, 62.1, MALDRAXXUS },
-					["g"] = {
-						crit(1, {	-- Ornate Bone Shield
-							["achievementID"] = 14312,	-- Treasures of Maldraxxus
-						}),
-						i(180749),	-- Hauk's Battle-Scarred Bulwark
-					},
-				}),
-				o(355886, {		-- Plaguefallen Chest
-					["description"] = "To access this chest, you need the |cFFFFFFFFPlaguefallen|r debuff.  You can either pick up a Plaguefallen Potion from |cFFFFFFFF58.4, 73.3|r in Plague Watch, or stand in green slime until you have 10 stacks of |cFFFFFFFFConcentrated Plague|r (living through the stacks requires significant self-healing, but picking up the potion far away from the cave gives you very little time to get there).\n\nWith the debuff, you have 2 minutes to make it to the cave at |cFFFFFFFF62.3, 76.6|r (behind Scunner's platform) and use the pipe at the back of the cave to teleport to the chest.\n\nYou MUST still have the debuff to loot the chest, so don't alt-tab after you get teleported!",
-				--	["questID"] = 61474,
-					["coord"] = { 62.4, 76.5, MALDRAXXUS },
-					["lvl"] = { 60 },
-					["g"] = {
-						crit(12, {	-- Plaguefallen Chest
-							["achievementID"] = 14312,	-- Treasures of Maldraxxus
-						}),
-						i(183515),	-- Iridescent Ooze (PET!)
-					},
-				}),
-				o(345458, {		-- Prize Bag
-					["description"] = "Spawns periodically around the arena.",
-					["coord"] = { 50.3, 47.1, MALDRAXXUS },
-					["g"] = {
-						i(180854),	-- Competitor's Medallion
-						i(180855),	-- Competitor's Signet
-					},
-				}),
-				o(345456, {		-- Ritualist's Cache
-					["description"] = "Loot the |cFFFFFFFFRitual Pages|r from the front-right corner of the room.  Take them to the back-right corner and use the |cFFFFFFFFBook of Binding Rituals|r, and then you can loot the chest.",
-				--	["questID"] = 61514,
-					["coord"] = { 64.6, 24.8, MALDRAXXUS },
-					["g"] = {
-						crit(13, {	-- Ritualist's Cache
-							["achievementID"] = 14312,	-- Treasures of Maldraxxus
-						}),
-						i(183517, {	-- Page 76 of the Necronom-i-nom
-							["questID"] = 62372,
-						}),
-					},
-				}),
-				o(355037, {		-- Runebound Coffer
-					["description"] = "To unlock it, you must find 3 nearby |cFFFFFFFFRunes of Constructs|r and click them to deactivate the corresponding runes on the chest.",
-					["questID"] = 61115,
-					["isDaily"] = true,
-					["coords"] = {
-						{ 32.2, 37.1, MALDRAXXUS },
-						{ 34.9, 30.9, MALDRAXXUS },
-					},
-					["g"] = {
-						o_repeated({
-							["coords"] = {
-								{ 24.4, 34.8, MALDRAXXUS },
-								{ 26.0, 48.0, MALDRAXXUS },
-								{ 26.6, 38.3, MALDRAXXUS },
-								{ 26.7, 31.4, MALDRAXXUS },
-								{ 26.8, 46.4, MALDRAXXUS },
-								{ 26.8, 46.5, MALDRAXXUS },
-								{ 27.5, 50.2, MALDRAXXUS },
-								{ 29.0, 28.3, MALDRAXXUS },
-								{ 30.5, 31.3, MALDRAXXUS },
-								{ 31.8, 22.7, MALDRAXXUS },
-								{ 32.4, 29.0, MALDRAXXUS },
-								{ 33.6, 22.3, MALDRAXXUS },
-								{ 35.3, 23.1, MALDRAXXUS },
-								{ 35.4, 27.9, MALDRAXXUS },
-								{ 35.5, 30.2, MALDRAXXUS },
-							},
-							["g"] = {
-								o(355194, {	-- Rune of Constructs
-									["questID"] = 61120,
-									["isDaily"] = true,
-								}),
-								o(355195, {	-- Rune of Constructs
-									["questID"] = 61121,
-									["isDaily"] = true,
-								}),
-								o(355196, {	-- Rune of Constructs
-									["questID"] = 61122,
-									["isDaily"] = true,
-								}),
-							},
-						}),
-					},
-				}),
-				o(355038, {		-- Runebound Coffer
-					["description"] = "To unlock it, you must find 3 nearby |cFFFFFFFFRunes of Rituals|r and click them to deactivate the corresponding runes on the chest.",
-					["questID"] = 61116,
-					["isDaily"] = true,
-					["coords"] = {
-						{ 69.0, 27.6, MALDRAXXUS },
-						{ 69.6, 33.5, MALDRAXXUS },
-					},
-					["g"] = {
-						o_repeated({
-							["coords"] = {
-								{ 63.8, 33.2, MALDRAXXUS },
-								{ 64.8, 35.8, MALDRAXXUS },
-								{ 65.5, 28.6, MALDRAXXUS },
-								{ 65.7, 34.6, MALDRAXXUS },
-								{ 66.7, 29.0, MALDRAXXUS },
-								{ 70.1, 31.3, MALDRAXXUS },
-								{ 71.6, 35.2, MALDRAXXUS },
-							},
-							["g"] = {
-								o(355040, {	-- Rune of Rituals
-									["questID"] = 61117,
-									["isDaily"] = true,
-								}),
-								o(355048, {	-- Rune of Rituals
-									["questID"] = 61118,
-									["isDaily"] = true,
-								}),
-								o(355049, {	-- Rune of Rituals
-									["questID"] = 61119,
-									["isDaily"] = true,
-								}),
-							},
-						}),
-					},
-				}),
-				o(345456, {		-- Runespeaker's Trove
-					["description"] = "You need |cFFFFFFFFPhaeton's Key|r from Runespeaker Phaeton at |cFFFFFFFF37.8, 70.1|r to open the chest. ",
-				--	["questID"] = 61491,
-					["coord"] = { 31.7, 70.0, MALDRAXXUS },	-- Treasure
-					["cost"] = { { "i", 181777, 1 } },	-- Phaeton's Key
-					["cr"] = 170563,	-- Runespeaker Phaeton
-					["g"] = {
-						crit(11, {	-- Runespeaker's Trove
-							["achievementID"] = 14312,	-- Treasures of Maldraxxus
-						}),
-						i(183516),	-- Stained Bonefused Mantle
-					},
-				}),
-				o(358315, {		-- Skeletal Hand Fragments
-					["description"] = "You must possess the Animated Ulna and Animated Radius to interact with this object.",
-					["coord"] = { 47.4, 62.1, MALDRAXXUS },
-					["questID"] = 62318,
-					["g"] = {
-						i(183113, {	-- Flexing Phalanges
-							i(183114),	-- Carpal (PET!)
-						}),
-					},
-				}),
-				o(354856, {		-- Slime-Coated Crate
-					["questID"] = 61093,
-					["isDaily"] = true,
-					["coords"] = {
-						{ 65.0, 82.1, MALDRAXXUS },
-						{ 65.8, 76.0, MALDRAXXUS },
-						{ 65.8, 88.3, MALDRAXXUS },
-						{ 68.4, 85.9, MALDRAXXUS },
-						{ 68.5, 79.6, MALDRAXXUS },
-						{ 70.4, 75.3, MALDRAXXUS },
-						{ 72.1, 88.8, MALDRAXXUS },
-					},
-					["g"] = {
-						i(181262),	-- Bubbling Pustule (PET!)
-						i(184447);	-- Kevin's Party Supplies (TOY!)
-					},
-				}),
-				o_repeated({	-- Sprouting Growth
-				-- Rewards
-					i(181173),	-- Skittering Venomspitter (PET!)
-				-- Objects
-					o(354853, {	-- Sprouting Growth
-						["questID"] = 61089,
-						["isDaily"] = true,
-						["coords"] = {
-							{ 45.0, 35.5, MALDRAXXUS },
-							{ 46.8, 31.7, MALDRAXXUS },
+root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
+	m(MALDRAXXUS, {
+		n(TREASURES, {
+			o(353627, {		-- Battlefront Rations
+				["description"] = "To unlock it, you must obtain |cFF0070ddBattlefront Ration Key|r from Thalrix the Slicer or one of the Supply Officer mobs in the area nearby.",
+				["questID"] = 60772,
+				["isDaily"] = true,
+				["coord"] = { 37.8, 45.6, MALDRAXXUS },
+				["cost"] = { { "i", 180277, 1 } },	-- 1x Battlefront Ration Key
+				["crs"] = {
+					157037,	-- Grabber Ga'shock <Supply Officer>
+					157036,	-- Pilfer Bur'tok <Supply Officer>
+					157028,	-- Thalrix the Slicer
+				},
+			}),
+			o(352086, {		-- Blackhound Cache
+				["description"] = "Requires |cFF40bf40Necrolord Covenant|r using Visectus to open. Interactible Toys, Soulshape, etc. no longer work, as you get teleported out.\n\nIf the door is already open, a character from any covenant may walk in and loot the treasure.",
+				["questID"] = 60368,
+				["isDaily"] = true,
+				["coord"] = { 44.0, 39.8, MALDRAXXUS },
+				["g"] = {
+				--	Epic
+					i(181800, {	-- Standard of the Blackhound Warband
+						["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant drop only
+					}),
+				--	Blue
+					i(184318),	-- Battlecry of Krexus
+					i(183619),	-- Everlasting Boneforged Greataxe
+				--	Green
+					i(183827),	-- Blacksteel Backplate
+					i(183824, {	-- Cache of Spare Weapons
+						["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant drop only
+					}),
+				},
+			}),
+			n(171337, {		-- Bloated Lootfly
+				["description"] = "This is a critter that flies around.  Find it, kill it, and loot it to collect the treasure.",
+				["questID"] = 61111,
+				["isDaily"] = true,
+				["coords"] = {	-- general coordinates for both known current spawn areas (west of the House of Eyes and south of the Keres' Rest FP)
+					{ 49.0, 24.6, MALDRAXXUS },
+					{ 49.8, 21.8, MALDRAXXUS },
+					{ 50.2, 19.0, MALDRAXXUS },
+					{ 50.8, 22.0, MALDRAXXUS },
+					{ 51.6, 35.2, MALDRAXXUS },
+					{ 51.8, 18.4, MALDRAXXUS },
+					{ 52.6, 20.0, MALDRAXXUS },
+					{ 54.2, 37.2, MALDRAXXUS },
+					{ 54.8, 33.4, MALDRAXXUS },
+					{ 54.8, 40.2, MALDRAXXUS },
+				},
+			}),
+			o(353231, {		-- Bonebound Chest
+				["description"] = "There are 2 versions of this chest. One is at the cave entrance at |cFFFFFFFF37.9, 76.3|r. One is at the Unyielding Assembly at building entrance |cFFFFFFFF35.9, 80.2|r.",
+				["questID"] = 60662,	-- same quest triggers for both versions of chest
+				["isDaily"] = true,
+				["coords"] = {
+					{ 36.2, 81.6, MALDRAXXUS },	-- Unyielding Assembly version of chest
+					{ 61.1, 22.6, 1651 },	-- Molten Forge version of chest
+				},
+			}),
+			o(352433, {		-- Cache of Eyes
+				["description"] = "Coordinates are to the entrance of Sightless Hold.  The cache spawns in numerous locations within the cave.  The pet is not a 100% drop and the chest is not always up, but there is no cooldown or lockout for opening the chest.",
+				["coord"] = { 54.0, 12.3, MALDRAXXUS },
+				["g"] = {
+					i(181171),	-- Luminous Webspinner (PET!)
+				},
+			}),
+			o(345456, {		-- Chest of Eyes
+				["description"] = "The path to the treasure starts at |cFFFFFFFF51.6, 13.7|r.  Climb up the side of the crumbled building until you get close to the treasure, then turn right and walk up the cliff to it.",
+			--	["questID"] = 59244,
+				["coord"] = { 48.3, 16.3, MALDRAXXUS },
+				["g"] = {
+					crit(8, {	-- Chest of Eyes
+						["achievementID"] = 14312,	-- Treasures of Maldraxxus
+					}),
+					i(183696),	-- Sp-eye-glass
+				},
+			}),
+			o(345455, {		-- Construct Supply Chest
+			--	TODO: see if chest has reset after 2/15 rollover
+				["description"] = "To unlock it, you must obtain |cFF0070ddConstruct Supply Key|r from Thalrix the Slicer or one of the Supply Officer mobs in the area nearby.",
+				["questID"] = 59243,
+				["isDaily"] = true,
+				["coord"] = { 38.8, 41.9, MALDRAXXUS },
+				["cost"] = { { "i", 175757, 1 } },	-- Construct Supply Key
+				["crs"] = {
+					157037,	-- Grabber Ga'shock <Supply Officer>
+					157036,	-- Pilfer Bur'tok <Supply Officer>
+					157028,	-- Thalrix the Slicer
+				},
+			}),
+			o(358855, {		-- Damaged Safe Fall Pack
+				["coord"] = { 60.0, 44.6, MALDRAXXUS },
+				["g"] = {
+					i(183831),	-- Safe Fall Kit
+				},
+			}),
+			o(364483, {		-- Empty Nightcap Cask
+				["description"] = "Coordinates are to the entrance of Molten Forge. The cask is found at 50.3, 17.4 once you enter the Molten Forge.",
+				["coord"] = { 37.9, 76.3, MALDRAXXUS },
+				["g"] = {
+					i(183752),	-- Empty Nightcap Cask
+				},
+			}),
+			o(341424, {		-- Forgotten Mementos
+				["description"] = "Unlock the gate to the treasure by clicking the chain at |cFFFFFFFF25.8, 53.9|r.\n\nThe treasure will respawn about 5 minutes after being looted by another player.",
+			--	["questID"] = 58710,
+				["coord"] = { 22.5, 30.5, MALDRAXXUS },
+				["g"] = {
+					crit(7, {	-- Forgotten Mementos
+						["achievementID"] = 14312,	-- Treasures of Maldraxxus
+					}),
+				},
+			}),
+			o(358531, {		-- Giant Cache of Epic Treasure
+				["questID"] = 62602,
+				["coord"] = { 41.4, 19.7, MALDRAXXUS },
+				["g"] = {
+					p(3047),	-- Spinebug
+				},
+			}),
+			o(355947, {		-- Glutharn's Stash
+				["description"] = "In a cave behind the slime waterfall.",
+			--	["questID"] = 61484,
+				["coord"] = { 72.1, 52.7, MALDRAXXUS },
+				["g"] = {
+					crit(10, {	-- Glutharn's Stash
+						["achievementID"] = 14312,	-- Treasures of Maldraxxus
+					}),
+				},
+			}),
+			o(353380, {		-- Halis's Lunch Pail
+			--	["questID"] = 60730,
+				["coord"] = { 30.7, 28.7, MALDRAXXUS },
+				["g"] = {
+					crit(3, {	-- Halis's Lunch Pail
+						["achievementID"] = 14312,	-- Treasures of Maldraxxus
+					}),
+				},
+			}),
+			n(169664, {		-- Kyrian Corpse
+				["coord"] = { 32.7, 21.2, MALDRAXXUS },
+				["g"] = {
+					i(180085, {	-- Kyrian Keepsake
+					--	["questID"] = 60587,	-- quest pops for opening the keepsake, not looting it
+						["g"] = {
+							crit(2, {	-- Kyrian Keepsake
+								["achievementID"] = 14312,	-- Treasures of Maldraxxus
+							}),
+							i(175708),	-- Reconstructed Family Locket
 						},
 					}),
-					o(354852, {	-- Sprouting Growth
-						["questID"] = 61090,
-						["isDaily"] = true,
+				},
+			}),
+			o(353626, {		-- Locked Toolbox
+				["description"] = "To unlock it, you must obtain |cFF0070ddLocked Toolbox Key|r from Thalrix the Slicer or one of the Supply Officer mobs in the area nearby.",
+				["questID"] = 60771,
+				["isDaily"] = true,
+				["coord"] = { 38.1, 42.6, MALDRAXXUS },
+				["cost"] = { { "i", 180276, 1 } },	-- Locked Toolbox Key
+				["crs"] = {
+					157037,	-- Grabber Ga'shock <Supply Officer>
+					157036,	-- Pilfer Bur'tok <Supply Officer>
+					157028,	-- Thalrix the Slicer
+				},
+			}),
+			o(351980, {		-- Misplaced Supplies
+				["description"] = "On top of the mushroom.",
+			--	["questID"] = 59245,	-- 60311 triggered for me on this treasure
+				["coord"] = { 62.4, 59.9, MALDRAXXUS },
+				["g"] = {
+					crit(9, {	-- Misplaced Supplies
+						["achievementID"] = 14312,	-- Treasures of Maldraxxus
+					}),
+				},
+			}),
+			o(347444, {		-- Ornate Bone Shield
+			--	["questID"] = 59358,
+				["coord"] = { 47.2, 62.1, MALDRAXXUS },
+				["g"] = {
+					crit(1, {	-- Ornate Bone Shield
+						["achievementID"] = 14312,	-- Treasures of Maldraxxus
+					}),
+					i(180749),	-- Hauk's Battle-Scarred Bulwark
+				},
+			}),
+			o(355886, {		-- Plaguefallen Chest
+				["description"] = "To access this chest, you need the |cFFFFFFFFPlaguefallen|r debuff.  You can either pick up a Plaguefallen Potion from |cFFFFFFFF58.4, 73.3|r in Plague Watch, or stand in green slime until you have 10 stacks of |cFFFFFFFFConcentrated Plague|r (living through the stacks requires significant self-healing, but picking up the potion far away from the cave gives you very little time to get there).\n\nWith the debuff, you have 2 minutes to make it to the cave at |cFFFFFFFF62.3, 76.6|r (behind Scunner's platform) and use the pipe at the back of the cave to teleport to the chest.\n\nYou MUST still have the debuff to loot the chest, so don't alt-tab after you get teleported!",
+			--	["questID"] = 61474,
+				["coord"] = { 62.4, 76.5, MALDRAXXUS },
+				["lvl"] = { 60 },
+				["g"] = {
+					crit(12, {	-- Plaguefallen Chest
+						["achievementID"] = 14312,	-- Treasures of Maldraxxus
+					}),
+					i(183515),	-- Iridescent Ooze (PET!)
+				},
+			}),
+			o(345458, {		-- Prize Bag
+				["description"] = "Spawns periodically around the arena.",
+				["coord"] = { 50.3, 47.1, MALDRAXXUS },
+				["g"] = {
+					i(180854),	-- Competitor's Medallion
+					i(180855),	-- Competitor's Signet
+				},
+			}),
+			o(345456, {		-- Ritualist's Cache
+				["description"] = "Loot the |cFFFFFFFFRitual Pages|r from the front-right corner of the room.  Take them to the back-right corner and use the |cFFFFFFFFBook of Binding Rituals|r, and then you can loot the chest.",
+			--	["questID"] = 61514,
+				["coord"] = { 64.6, 24.8, MALDRAXXUS },
+				["g"] = {
+					crit(13, {	-- Ritualist's Cache
+						["achievementID"] = 14312,	-- Treasures of Maldraxxus
+					}),
+					i(183517, {	-- Page 76 of the Necronom-i-nom
+						["questID"] = 62372,
+					}),
+				},
+			}),
+			o(355037, {		-- Runebound Coffer
+				["description"] = "To unlock it, you must find 3 nearby |cFFFFFFFFRunes of Constructs|r and click them to deactivate the corresponding runes on the chest.",
+				["questID"] = 61115,
+				["isDaily"] = true,
+				["coords"] = {
+					{ 32.2, 37.1, MALDRAXXUS },
+					{ 34.9, 30.9, MALDRAXXUS },
+				},
+				["g"] = {
+					o_repeated({
 						["coords"] = {
-							{ 73.5, 49.7, MALDRAXXUS },
-							{ 75.6, 45.5, MALDRAXXUS },
-							{ 76.0, 49.4, MALDRAXXUS },
+							{ 24.4, 34.8, MALDRAXXUS },
+							{ 26.0, 48.0, MALDRAXXUS },
+							{ 26.6, 38.3, MALDRAXXUS },
+							{ 26.7, 31.4, MALDRAXXUS },
+							{ 26.8, 46.4, MALDRAXXUS },
+							{ 26.8, 46.5, MALDRAXXUS },
+							{ 27.5, 50.2, MALDRAXXUS },
+							{ 29.0, 28.3, MALDRAXXUS },
+							{ 30.5, 31.3, MALDRAXXUS },
+							{ 31.8, 22.7, MALDRAXXUS },
+							{ 32.4, 29.0, MALDRAXXUS },
+							{ 33.6, 22.3, MALDRAXXUS },
+							{ 35.3, 23.1, MALDRAXXUS },
+							{ 35.4, 27.9, MALDRAXXUS },
+							{ 35.5, 30.2, MALDRAXXUS },
+						},
+						["g"] = {
+							o(355194, {	-- Rune of Constructs
+								["questID"] = 61120,
+								["isDaily"] = true,
+							}),
+							o(355195, {	-- Rune of Constructs
+								["questID"] = 61121,
+								["isDaily"] = true,
+							}),
+							o(355196, {	-- Rune of Constructs
+								["questID"] = 61122,
+								["isDaily"] = true,
+							}),
 						},
 					}),
-					o(352596, {	-- Sprouting Growth
-						["questID"] = 60556,
-						["isDaily"] = true,
+				},
+			}),
+			o(355038, {		-- Runebound Coffer
+				["description"] = "To unlock it, you must find 3 nearby |cFFFFFFFFRunes of Rituals|r and click them to deactivate the corresponding runes on the chest.",
+				["questID"] = 61116,
+				["isDaily"] = true,
+				["coords"] = {
+					{ 69.0, 27.6, MALDRAXXUS },
+					{ 69.6, 33.5, MALDRAXXUS },
+				},
+				["g"] = {
+					o_repeated({
 						["coords"] = {
-							{ 34.8, 55.0, MALDRAXXUS },
-							{ 36.5, 49.9, MALDRAXXUS },
-							{ 38.6, 47.0, MALDRAXXUS },
-							{ 40.0, 43.9, MALDRAXXUS },
-							{ 40.9, 47.1, MALDRAXXUS },
+							{ 63.8, 33.2, MALDRAXXUS },
+							{ 64.8, 35.8, MALDRAXXUS },
+							{ 65.5, 28.6, MALDRAXXUS },
+							{ 65.7, 34.6, MALDRAXXUS },
+							{ 66.7, 29.0, MALDRAXXUS },
+							{ 70.1, 31.3, MALDRAXXUS },
+							{ 71.6, 35.2, MALDRAXXUS },
+						},
+						["g"] = {
+							o(355040, {	-- Rune of Rituals
+								["questID"] = 61117,
+								["isDaily"] = true,
+							}),
+							o(355048, {	-- Rune of Rituals
+								["questID"] = 61118,
+								["isDaily"] = true,
+							}),
+							o(355049, {	-- Rune of Rituals
+								["questID"] = 61119,
+								["isDaily"] = true,
+							}),
 						},
 					}),
-				}),
-				o(355872, {		-- Stolen Jar
-					["description"] = "There are two caves - the treasure is in the lower one.",
-				--	["questID"] = 61451,
-					["coord"] = { 65.6, 50.8, MALDRAXXUS },
-					["g"] = {
-						crit(5, {	-- Stolen Jar
-							["achievementID"] = 14312,	-- Treasures of Maldraxxus
-						}),
-						i(182618, {	-- Reclaimed Vessel
-							["questID"] = 62085,	-- ...Why Me?
-						}),
-					},
-				}),
-				o(348521, {		-- Strange Growth
-					["questID"] = 59428,	-- 59429 also triggered simultaneously; adding it to HQT for now
-					["coord"] = { 55.9, 38.9, MALDRAXXUS },
-					["crs"] = { 165037 },	-- Strange Growth
-					["g"] = {
-						i(182607, {	-- Hairy Egg
-							i(182606),	-- Bloodlouse Larva
-						}),
-					},
-				}),
-				o(355880, {		-- The Necronom-i-nom
-					["sourceQuests"] = {
-						59917,	-- Kill Them, Of Course
-						58620,	-- Slaylines
-					},
-				--	["questID"] = 61470,
-					["coord"] = { 42.3, 23.3, MALDRAXXUS },
-					["g"] = {
-						crit(6, {	-- Necro Tome
-							["achievementID"] = 14312,	-- Treasures of Maldraxxus
-						}),
-						i(182732),	-- The Necronom-i-nom (TOY!)
-						i(183120),	-- Partially Digested Encyclopedia (maybe drops when Toy is known?)
-					},
-				}),
-				o(355865, {		-- Vat of Conspicuous Slime
-					["description"] = "Pick up the |cFFFFFFFFEmpty Plague Bottle|r from the table next to the vat.",
-				--	["questID"] = 61444,
-					["coord"] = { 59.8, 79.0, MALDRAXXUS },
-					["g"] = {
-						crit(4, {	-- Vat of Conspicuous Slime
-							["achievementID"] = 14312,	-- Treasures of Maldraxxus
-						}),
-						i(181825),	-- Phial of Ravenous Slime (TOY!)
-					},
-				}),
-				o(350802, {		-- Web Sealed Chest
-					["questID"] = 60109,
+				},
+			}),
+			o(345456, {		-- Runespeaker's Trove
+				["description"] = "You need |cFFFFFFFFPhaeton's Key|r from Runespeaker Phaeton at |cFFFFFFFF37.8, 70.1|r to open the chest. ",
+			--	["questID"] = 61491,
+				["coord"] = { 31.7, 70.0, MALDRAXXUS },	-- Treasure
+				["cost"] = { { "i", 181777, 1 } },	-- Phaeton's Key
+				["cr"] = 170563,	-- Runespeaker Phaeton
+				["g"] = {
+					crit(11, {	-- Runespeaker's Trove
+						["achievementID"] = 14312,	-- Treasures of Maldraxxus
+					}),
+					i(183516),	-- Stained Bonefused Mantle
+				},
+			}),
+			o(358315, {		-- Skeletal Hand Fragments
+				["description"] = "You must possess the Animated Ulna and Animated Radius to interact with this object.",
+				["coord"] = { 47.4, 62.1, MALDRAXXUS },
+				["questID"] = 62318,
+				["g"] = {
+					i(183113, {	-- Flexing Phalanges
+						i(183114),	-- Carpal (PET!)
+					}),
+				},
+			}),
+			o(354856, {		-- Slime-Coated Crate
+				["questID"] = 61093,
+				["isDaily"] = true,
+				["coords"] = {
+					{ 65.0, 82.1, MALDRAXXUS },
+					{ 65.8, 76.0, MALDRAXXUS },
+					{ 65.8, 88.3, MALDRAXXUS },
+					{ 68.4, 85.9, MALDRAXXUS },
+					{ 68.5, 79.6, MALDRAXXUS },
+					{ 70.4, 75.3, MALDRAXXUS },
+					{ 72.1, 88.8, MALDRAXXUS },
+				},
+				["g"] = {
+					i(181262),	-- Bubbling Pustule (PET!)
+					i(184447);	-- Kevin's Party Supplies (TOY!)
+				},
+			}),
+			o_repeated({	-- Sprouting Growth
+			-- Rewards
+				i(181173),	-- Skittering Venomspitter (PET!)
+			-- Objects
+				o(354853, {	-- Sprouting Growth
+					["questID"] = 61089,
 					["isDaily"] = true,
-					["coord"] = { 54.9, 26.1, MALDRAXXUS },
-					["g"] = {
-						i(183602),	-- Sticky Webbing
+					["coords"] = {
+						{ 45.0, 35.5, MALDRAXXUS },
+						{ 46.8, 31.7, MALDRAXXUS },
+					},
+				}),
+				o(354852, {	-- Sprouting Growth
+					["questID"] = 61090,
+					["isDaily"] = true,
+					["coords"] = {
+						{ 73.5, 49.7, MALDRAXXUS },
+						{ 75.6, 45.5, MALDRAXXUS },
+						{ 76.0, 49.4, MALDRAXXUS },
+					},
+				}),
+				o(352596, {	-- Sprouting Growth
+					["questID"] = 60556,
+					["isDaily"] = true,
+					["coords"] = {
+						{ 34.8, 55.0, MALDRAXXUS },
+						{ 36.5, 49.9, MALDRAXXUS },
+						{ 38.6, 47.0, MALDRAXXUS },
+						{ 40.0, 43.9, MALDRAXXUS },
+						{ 40.9, 47.1, MALDRAXXUS },
 					},
 				}),
 			}),
+			o(355872, {		-- Stolen Jar
+				["description"] = "There are two caves - the treasure is in the lower one.",
+			--	["questID"] = 61451,
+				["coord"] = { 65.6, 50.8, MALDRAXXUS },
+				["g"] = {
+					crit(5, {	-- Stolen Jar
+						["achievementID"] = 14312,	-- Treasures of Maldraxxus
+					}),
+					i(182618, {	-- Reclaimed Vessel
+						["questID"] = 62085,	-- ...Why Me?
+					}),
+				},
+			}),
+			o(348521, {		-- Strange Growth
+				["questID"] = 59428,	-- 59429 also triggered simultaneously; adding it to HQT for now
+				["coord"] = { 55.9, 38.9, MALDRAXXUS },
+				["crs"] = { 165037 },	-- Strange Growth
+				["g"] = {
+					i(182607, {	-- Hairy Egg
+						i(182606),	-- Bloodlouse Larva
+					}),
+				},
+			}),
+			o(355880, {		-- The Necronom-i-nom
+				["sourceQuests"] = {
+					59917,	-- Kill Them, Of Course
+					58620,	-- Slaylines
+				},
+			--	["questID"] = 61470,
+				["coord"] = { 42.3, 23.3, MALDRAXXUS },
+				["g"] = {
+					crit(6, {	-- Necro Tome
+						["achievementID"] = 14312,	-- Treasures of Maldraxxus
+					}),
+					i(182732),	-- The Necronom-i-nom (TOY!)
+					i(183120),	-- Partially Digested Encyclopedia (maybe drops when Toy is known?)
+				},
+			}),
+			o(355865, {		-- Vat of Conspicuous Slime
+				["description"] = "Pick up the |cFFFFFFFFEmpty Plague Bottle|r from the table next to the vat.",
+			--	["questID"] = 61444,
+				["coord"] = { 59.8, 79.0, MALDRAXXUS },
+				["g"] = {
+					crit(4, {	-- Vat of Conspicuous Slime
+						["achievementID"] = 14312,	-- Treasures of Maldraxxus
+					}),
+					i(181825),	-- Phial of Ravenous Slime (TOY!)
+				},
+			}),
+			o(350802, {		-- Web Sealed Chest
+				["questID"] = 60109,
+				["isDaily"] = true,
+				["coord"] = { 54.9, 26.1, MALDRAXXUS },
+				["g"] = {
+					i(183602),	-- Sticky Webbing
+				},
+			}),
 		}),
 	}),
-};
+})));
 
-_.HiddenQuestTriggers = {
+root("HiddenQuestTriggers", {
 --	Treasures of Maldraxxus achievement
 	q(59244),	-- Chest of Eyes
 	q(58709),	-- Forgotten Mementos - clicking the chain
@@ -457,4 +454,4 @@ _.HiddenQuestTriggers = {
 	q(61470),	-- The Necronom-i-nom
 	q(61444),	-- Vat of Conspicuous Slime
 	q(62582),	-- Using Cache of Spare Weapons
-};
+});
