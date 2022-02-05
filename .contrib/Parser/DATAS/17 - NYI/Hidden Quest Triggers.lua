@@ -917,6 +917,7 @@ _.HiddenQuestTriggers = {
 		q(27309),	-- The Grimtotem Plot - completed with quest 27293
 		q(29051),	-- Cub's First Toy - completed with quest 29040
 		q(29052),	-- A Cub's Cravings - completed with quest 29035
+		q(29039),	-- Hunting Practice - completed with quest 29038
 		q(29053),	-- 'Borrowing' From the Winterfall - completed with quest 29037
 		q(29405),	-- The Lesson of the Iron Staff - completed with quest 30027 & 30033 & 30334 & 30335 & 30336 & 30337 & 30338
 		q(29597),	-- The End of the Exarch - completed with quest 29596
