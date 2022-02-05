@@ -324,12 +324,10 @@ local defaultComparison = function(a,b)
 		return false;
 	else
 		-- neither a or b exists, equality returns false
-		app.PrintDebug("Compare: BOTH NIL")
 		return false;
 	end
 	-- If comparing non-tables
 	if type(a) ~= "table" or type(b) ~= "table" then
-		app.PrintDebug("Compare: NON-TABLES",a,b)
 		return a < b;
 	end
 	local acomp, bcomp;
@@ -344,7 +342,6 @@ local defaultComparison = function(a,b)
 	-- Raids/Encounter 2nd
 	acomp = a.isRaid;
 	bcomp = b.isRaid;
-	-- app.PrintDebug("Raid Sorting a,b",acomp,bcomp,a.text,b.text)
 	if acomp then
 		if not bcomp then return true; end
 	elseif bcomp then
@@ -369,7 +366,6 @@ local defaultComparison = function(a,b)
 	-- Any two similar-type groups via name
 	acomp = string_lower(tostring(a.name));
 	bcomp = string_lower(tostring(b.name));
-	app.PrintDebug("Compare: NAME",acomp,bcomp,acomp < bcomp)
 	return acomp < bcomp;
 end
 local defaultTextComparison = function(a,b)
@@ -382,7 +378,6 @@ local defaultTextComparison = function(a,b)
 		return false;
 	else
 		-- neither a or b exists, equality returns false
-		app.PrintDebug("Compare: BOTH NIL")
 		return false;
 	end
 	-- Any two similar-type groups with text
@@ -400,7 +395,6 @@ local defaultNameComparison = function(a,b)
 		return false;
 	else
 		-- neither a or b exists, equality returns false
-		app.PrintDebug("Compare: BOTH NIL")
 		return false;
 	end
 	-- Any two similar-type groups with text
@@ -418,7 +412,6 @@ local defaultValueComparison = function(a,b)
 		return false;
 	else
 		-- neither a or b exists, equality returns false
-		app.PrintDebug("Compare: BOTH NIL")
 		return false;
 	end
 	return a < b;
@@ -6045,6 +6038,23 @@ local function RefreshCollections()
 
 		-- Refresh Achievements
 		RefreshAchievementCollection();
+		coroutine.yield();
+
+		-- Double check if any once-per-account quests which haven't been detected as being completed are completed by this character
+		local acctQuests, oneTimeQuests = ATTAccountWideData.Quests, ATTAccountWideData.OneTimeQuests;
+		for questID,questGuid in pairs(oneTimeQuests) do
+			-- If this Character has the Quest completed and it is not marked as completed for Account or not for specific Character
+			if CompletedQuests[questID] then
+				-- Throw up a warning to report if this was already completed by another character
+				if questGuid and questGuid ~= charGuid then
+					app.PrintDebug("One-Time-Quest ID #" .. questID .. " was previously marked as completed, but is also completed on the current character!");
+				end
+				-- Mark the quest as completed for the Account
+				acctQuests[questID] = 1;
+				-- Mark the character which completed the Quest
+				oneTimeQuests[questID] = charGuid;
+			end
+		end
 		coroutine.yield();
 
 		-- Refresh Sources from Cache if tracking Transmog
