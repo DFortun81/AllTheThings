@@ -225,8 +225,13 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["coord"] = { 24.2, 38.6, MALDRAXXUS },
 								}),
 								q(59747, {    -- A Lost Soul
+									["description"] = "Pull the chain on the right side of the vault as you enter.",
 									["provider"] = { "n", 166096 },	-- Miru Soulblossom
-									["coord"] = { 32.9, 33.3, 1649 },	-- Etheric Vault
+									["coords"] = {
+										{ 32.9, 33.3, 1649 },	-- Etheric Vault
+										{ 58.3, 36.2, 1649 },	-- Chain to pull [60166]
+										{ 24.5, 31.5, MALDRAXXUS },	-- Vault entrance
+									},
 								}),
 								q(58727, {	-- A Place To Call Home
 									["sourceQuests"] = { 58671 },	-- Bottled Up Inside
@@ -796,6 +801,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										["name"] = "Construct Body: Iron Phillip",
 										["cost"] = {
 											{ "i", 178061, 20 },	-- 20x Malleable Flesh
+											{ "i", 171828, 20 },	-- 20x Laestrite Ore
 											{ "i", 183744, 10 },	-- 10x Superior Parts
 											{ "i", 183475, 1 },		-- 1x Indomitable Hide
 										},
@@ -804,6 +810,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										["name"] = "Construct Body: Naxx",
 										["cost"] = {
 											{ "i", 178061, 20 },	-- 20x Malleable Flesh
+											{ "i", 173202, 12 },	-- 12x Shrouded Cloth
 											{ "i", 183744, 10 },	-- 10x Superior Parts
 											{ "i", 183519, 1 },		-- 1x Necromantic Oil
 										},
