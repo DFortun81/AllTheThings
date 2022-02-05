@@ -979,6 +979,7 @@ _.Zones =
 					["lvl"] = 120,
 				}),
 				q(52069, {	-- More Fodder
+					["sourceQuests"] = { 49831 },	-- From the Depths
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 131343 },	-- Williams
 					["coord"] = { 33.2, 45.6, STORMSONG_VALLEY },
