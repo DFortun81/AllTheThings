@@ -1970,15 +1970,23 @@ end
 -- Ex. 87654 (ModID 23)=> 87654.23
 -- Ex. 102938 (ModID 1) (BonusID 4746) => 102938.014746
 local function GetGroupItemIDWithModID(t, rawItemID, rawModID, rawBonusID)
-	if t and t.itemID then
-		return t.itemID + ((t.modID or 0) / 100) + ((t.bonusID or 0) / 1000000);
-	elseif tonumber(rawItemID) then
-		local i, m, b = tonumber(rawItemID) or 0, tonumber(rawModID) or 0, tonumber(rawBonusID) or 0;
-		-- Ignore bonusID 3524 as added to all ATT item links with a ModID
-		if b == 3524 then b = 0; end
-		-- print("modItemID-raw",i,m,b,i + (m / 100) + (b / 1000000))
-		return i + (m / 100) + (b / 1000000);
+	local i, m, b;
+	if t then
+		i = t.itemID or 0;
+		m = t.modID;
+		b = t.bonusID;
+	else
+		i = rawItemID and tonumber(rawItemID) or 0;
+		m = rawModID and tonumber(rawModID);
+		b = rawBonusID and tonumber(rawBonusID);
 	end
+	if m then
+		i = i + (m / 100);
+	end
+	if b and b ~= 3524 then
+		i = i + (b / 1000000);
+	end
+	return i;
 end
 -- Returns the ItemID, ModID, BonusID of the provided ModItemID
 -- Ex. 12345.05		=> 12345, 5
