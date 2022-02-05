@@ -1065,8 +1065,8 @@ root("HiddenQuestTriggers", {
 	q(64515),	-- triggered while doing The Battle of Ardenweald scenario
 	q(63416),	-- triggers when accepting the first of your 'Zone Meta Quests' on a Skip Character
 	q(64782),	-- Occurred when joining Night Fae/Kyrian in the initial Thread of Fate quest 62000
-	--q(62370),	-- Swapping Cov to NF with NF already R40
-	--q(62384),	-- Swapping Cov to NF with NF already R40
+	q(62370),	-- Swapping Cov to NF with NF already R40
+	q(62384),	-- Swapping Cov to NF with NF already R40
 	-- 9.1.5 Swapping at R80. Flag/Unflag
 	q(65076),	-- Swapping Cov to Kyrian at R80
 	q(65077),	-- Swapping Cov to Venthyr at R80
