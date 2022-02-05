@@ -439,8 +439,8 @@ _.Zones =
 					},
 				}),
 				q(10005, {	-- Letting Earthbinder Tavgren Know (A)
-					["provider"] = { "n", 21006 },	-- Lieutenant Meridian
-					["coord"] = { 69.6, 44.6, TEROKKAR_FOREST },
+					["provider"] = { "n", 18459 },	-- Jenai Starwhisper
+					["coord"] = { 57.0, 53.6, TEROKKAR_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 10446,	-- The Final Code
 					["groups"] = {
