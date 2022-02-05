@@ -1010,7 +1010,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(10841),	-- BETA The Vengeful Harbringer
 		q(9941),	-- BETA Tracking Down the Culprits
 		q(9942),	-- BETA Tracking Down the Culprits
-		q(11072),	-- OLD Adversarial Blood
 	}),
 });
 -- #endif

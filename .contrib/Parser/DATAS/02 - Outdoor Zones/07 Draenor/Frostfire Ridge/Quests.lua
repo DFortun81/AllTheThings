@@ -1305,7 +1305,7 @@ root("HiddenQuestTriggers", {
 		q(37652),	-- Vignette: Jabberjaw - secondary trigger for Jabberjaw rare
 	}),
 });
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(WOD_TIER, {
 		n(ARMOR, {
 			filter(CLOTH, {
@@ -1334,4 +1334,4 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			q(35057),	-- Vignette XP reward - Frostfire
 		}),
 	}),
-});
+}));

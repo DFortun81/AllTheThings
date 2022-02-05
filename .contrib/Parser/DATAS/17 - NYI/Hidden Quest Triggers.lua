@@ -900,24 +900,26 @@ _.HiddenQuestTriggers = {
 		--------------------
 		-- NYI VERSIONS OF QUESTS WHICH ARE COMPLETED TOGETHER WITH IMPLEMENTED VERSION OF THESE QUESTS
 		-- TEMPORARY SOLUTION AS HQT FOR NOW
-		q(9734),	-- Return to the Marsh - completed with quest 9732 probably? (reported as with quest 11072)
+		q(9733),	-- Warning the Cenarion Circle - completed with quest 9724
+		q(9734),	-- Return to the Marsh - completed with quest 9732
 		q(9749),	-- They're Alive! Maybe... - completed with quest 9670
 		q(10088),	-- When This Mine's a-Rockin' - completed with quest 10079
 		q(10207),	-- Forward Base: Reaver's Fall REUSE - completed with quest 10124
 		q(10214),	-- When This Mine's a-Rockin' - completed with quest 10079
 		q(10815),	-- The Journal of Val'zareq: Portends of War - completed with quest 10793
 		q(10871, {["_drop"] = { "g" }}),	-- Ally of the Netherwingm - completed with quest 10870
-		q(10872),	-- Zuluhed the Whacked - completed with quest 144
+		q(10872),	-- Zuluhed the Whacked - completed with quest 10866
 		q(10925),	-- Evil Draws Near - completed with quest 10923
+		q(11072),	-- Adversarial Blood - completed with quest 11885
 		q(14411),	-- The Wilds of Feralas - completed with quest 14410 & 26589
 		q(14414),	-- The Wilds of Feralas - completed with quest 14410 & 26589
 		q(25198),	-- Winnoa Pineforest - completed with quest 24807
 		q(25305),	-- Never Look Back- completed with quest 25304
 		q(26379),	-- In Aid of the Refugees - completed with quest 13601
 		q(27309),	-- The Grimtotem Plot - completed with quest 27293
+		q(29039),	-- Hunting Practice - completed with quest 29038
 		q(29051),	-- Cub's First Toy - completed with quest 29040
 		q(29052),	-- A Cub's Cravings - completed with quest 29035
-		q(29039),	-- Hunting Practice - completed with quest 29038
 		q(29053),	-- 'Borrowing' From the Winterfall - completed with quest 29037
 		q(29405),	-- The Lesson of the Iron Staff - completed with quest 30027 & 30033 & 30334 & 30335 & 30336 & 30337 & 30338
 		q(29597),	-- The End of the Exarch - completed with quest 29596
@@ -1217,7 +1219,13 @@ _.HiddenQuestTriggers = {
 		q(32898),	-- Daily Scenario Random (1st) (Mists) — normal scenario completion
 		q(32817),	-- Complete "Loyalty" Scenario — triggered when turning in "The King and the Council"
 		q(32818),	-- Complete "The Dark Heart of Pandaria" Scenario — triggered when turning in "The Warchief and the Darkness"
-
+		q(31614),	-- LFGDungeons - Mists - Heroic Random - 1st
+		q(31615),	-- LFGDungeons - Mists - Heroic Random - Nth
+		q(31274),	-- LFGDungeons - Mists - Raid Finder - 1st
+		q(31275),	-- LFGDungeons - Mists - Raid Finder - Nth
+		q(32897),	-- LFGDungeons - Mists - Scenario - Heroic Daily - 1st/Nth
+		q(31987),	-- LFGDungeons - Theramore Launch Event
+		
 		--	RAIDS
 		q(32752),	-- Dark Animus Dead (killed Dark Animus on heroic in ToT)
 		q(32750),	-- Durumu Dead (killed Durumu on normal in ToT)

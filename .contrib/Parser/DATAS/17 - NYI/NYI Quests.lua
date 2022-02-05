@@ -88,14 +88,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(29340),	-- Short-Supply Reward
 			q(29341),	-- Short-Supply Reward
 		}),
-		tier(MOP_TIER, {
-			q(31614),	-- LFGDungeons - Mists - Heroic Random - 1st
-			q(31615),	-- LFGDungeons - Mists - Heroic Random - Nth
-			q(31274),	-- LFGDungeons - Mists - Raid Finder - 1st
-			q(31275),	-- LFGDungeons - Mists - Raid Finder - Nth
-			q(32897),	-- LFGDungeons - Mists - Scenario - Heroic Daily - 1st/Nth
-			q(31987),	-- LFGDungeons - Theramore Launch Event
-		}),
 		tier(LEGION_TIER, {	-- These Quests might be ingame, very unlikely however.
 			q(45536),	-- 2v2 Weekly Quest UI
 			q(45337),	-- 3v3 Weekly Quest UI
@@ -363,7 +355,20 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		q(46256),	-- X Treasures Found, 1 Challenge Attempted
 		q(46255),	-- X Unstable Portals Disrupted, 1 World Boss Defeated
 	}),
-
+	tier(MOP_TIER, {
+		n(QUESTS, {
+			-- 5.0.1
+			q(29534),	-- Collect Things
+			q(29549),	-- Flightmaster Down
+			q(29551),	-- Grove Stalkers
+			q(29531),	-- Kill Stuff
+			q(29550),	-- Saving Snowpuff
+			q(29554),	-- Sunken Junk
+			q(29541),	-- Take Care of It
+			q(29546),	-- Tipping the Scales
+		}),
+	}),
+	
 	tier(WOD_TIER, {
 		n(QUESTS, {
 			-- 6.0.1
