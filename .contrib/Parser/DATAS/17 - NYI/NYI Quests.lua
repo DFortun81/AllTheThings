@@ -368,7 +368,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(29546),	-- Tipping the Scales
 		}),
 	}),
-	
 	tier(WOD_TIER, {
 		n(QUESTS, {
 			-- 6.0.1
@@ -966,7 +965,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(34317, { ["name"] = "<UNUSED>", }),	-- <UNUSED>
 				q(34623, { ["name"] = "<UNUSED>", }),	-- <UNUSED>
 			})),
-			
+
 			-- 6.0.2
 			n(-2061, bubbleDown({ ["timeline"] = { "created 6.0.2" } }, {
 				q(37598, { ["name"] = "Abrogator Stones", }),	-- Abrogator Stones
@@ -1030,12 +1029,12 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(37593, { ["name"] = "Your Second Leatherworking Work Order", }),	-- Your Second Leatherworking Work Order
 				q(37594, { ["name"] = "Your Second Tailoring Work Order", }),	-- Your Second Tailoring Work Order
 			})),
-			
+
 			-- 6.0.3
 			n(-2062, bubbleDown({ ["timeline"] = { "created 6.0.3" } }, {
 				q(33466, { ["name"] = "Rally the Artificers", }),	-- Rally the Artificers
 			})),
-			
+
 			-- 6.1.0
 			n(-2063, bubbleDown({ ["timeline"] = { "created 6.1.0" } }, {
 				q(35256, { ["name"] = "A Heart Unbroken", }),	-- A Heart Unbroken
@@ -1113,7 +1112,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(38261, { ["name"] = "UNUSED", }),	-- UNUSED
 				q(38022, { ["name"] = "[DEPRECATED]Assault on the Temple of Sha'naar", }),	-- [DEPRECATED]Assault on the Temple of Sha'naar
 			})),
-			
+
 			-- 6.2.1
 			n(-2066, bubbleDown({ ["timeline"] = { "created 6.2.1" } }, {
 				q(39292, { ["name"] = "Ashran Dominance", }),	-- Ashran Dominance
@@ -1126,7 +1125,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(36661, { ["name"] = "The Power of the Red", }),	-- The Power of the Red
 				q(38855, { ["name"] = "zzDEPRECATEDzz Fighting on the Front", }),	-- zzDEPRECATEDzz Fighting on the Front
 			})),
-			
+
 			-- 6.2.2
 			n(-2067, bubbleDown({ ["timeline"] = { "created 6.2.2" } }, {
 				q(35499, { ["name"] = "Blow up towers", }),	-- Blow up towers
@@ -1139,7 +1138,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(37113, { ["name"] = "Thisalee Crow", }),	-- Thisalee Crow
 				q(39714, { ["name"] = "Where Are the Children?", }),	-- Where Are the Children?
 			})),
-			
+
 			-- 6.2.3 - no NYI quests
 
 			-- 6.x.x - quests in API with no name or patch info
@@ -1174,6 +1173,74 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(37920),
 				q(37925),
 				q(37926),
+			}),
+		}),
+	}),
+	tier(SL_TIER, {
+		n(QUESTS, {
+			n(-2090, bubbleDown({ ["timeline"] = { "created 9.0.1" } }, {
+				q(60463, { ["name"] = "Anima Appeal", }),	-- Anima Appeal
+				q(62168, { ["name"] = "Bonescript Dispatches", }),	-- Bonescript Dispatches
+			})),
+			n(-2091, bubbleDown({ ["timeline"] = { "created 9.0.2" } }, {
+				q(61524, { ["name"] = "The Ember Court", }),	-- The Ember Court
+				q(63041, { ["name"] = "Short-Supply Reward", ["_drop"] = {"g"} }),	-- Short-Supply Reward
+				q(63192, { ["name"] = "Path of Ascension: Trial of Humility", ["_drop"] = {"g"} }),
+			})),
+			n(-2092, bubbleDown({ ["timeline"] = { "created 9.0.5" } }, {
+
+			})),
+			n(-2093, bubbleDown({ ["timeline"] = { "created 9.1.0" } }, {
+				q(63418, { ["name"] = "Exploited Explorers", }),	-- Exploited Explorers
+				q(63419, { ["name"] = "Spores Galore", }),	-- Spores Galore
+				q(63671, { ["name"] = "Favor: The Nathrezim Documents", }),	-- Favor: The Nathrezim Documents
+				q(63735, { ["name"] = "Recover the Research", }),	-- Recover the Research
+				q(63751, { ["name"] = "A Terrible Power", }),	-- A Terrible Power
+				q(63947, { ["name"] = "Raiders in the Ruins [PH]", }),	-- Raiders in the Ruins [PH]
+				q(63948, { ["name"] = "Seeking the Seeker's Staff [PH]", }),	-- Seeking the Seeker's Staff [PH]
+				q(64231, { ["name"] = "[DNT] Training Quest", }),	-- [DNT] Training Quest
+				q(64235, { ["name"] = "[DNT] Training Kill Quest", }),	-- [DNT] Training Kill Quest
+				q(64306, { ["name"] = "Quest Completion Criteria", }),	-- Quest Completion Criteria
+				q(64509, { ["name"] = "Stylish Cover", }),	-- Stylish Cover
+				q(64517, { ["name"] = "Byron Test - Item Gained", }),	-- Byron Test - Item Gained
+				q(64518, { ["name"] = "Byron Test - Obtain Any Item", }),	-- Byron Test - Obtain Any Item
+				q(64546, { ["name"] = "Visions of Sire Denathrius", ["_drop"] = {"g"} }),	-- Visions of Sire Denathrius
+				q(64640, { ["name"] = "AubriesTestQuestForJeff", }),	-- AubriesTestQuestForJeff
+				q(64654, { ["name"] = "Champion: Ben Howell", }),	-- Champion: Ben Howell
+
+			})),
+			n(-2094, bubbleDown({ ["timeline"] = { "created 9.1.5" } }, {
+				q(64996, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
+				q(64997, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
+				q(64998, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
+				q(64999, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
+				q(65000, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
+				q(65001, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
+				q(65002, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
+				q(65003, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
+			})),
+			n(-2095, bubbleDown({ ["timeline"] = { "created 9.2.0" } }, {
+
+			})),
+			n(-2096, {
+				q(60124),
+				q(63420),
+				q(63430),
+				q(63431),
+				q(63432),
+				q(63729),
+				q(63862, {
+					["description"] = "Area: |cFFf09f26Korthia|r",
+					["lvl"] = 60,
+				}),
+				q(63946, {
+					["description"] = "Category: |cFFf09f26The Archivists' Codex|r",
+					["lvl"] = 60,
+				}),
+				q(64569, {
+					["description"] = "Area: |cFFf09f26Bastion|r",
+					["lvl"] = 60,
+				}),
 			}),
 		}),
 	}),
