@@ -2407,7 +2407,6 @@ local questRetries = {};
 local QuestUtils_GetQuestName, C_QuestLog_RequestLoadQuestByID = QuestUtils_GetQuestName, C_QuestLog.RequestLoadQuestByID;
 local QuestTitleFromID = setmetatable({}, { __index = function(t, id)
 	if id then
-		C_QuestLog_RequestLoadQuestByID(id);
 		local title = QuestUtils_GetQuestName(id);
 		if title and title ~= "" then
 			-- print("QuestUtils_GetQuestName",id,title)
@@ -2416,6 +2415,7 @@ local QuestTitleFromID = setmetatable({}, { __index = function(t, id)
 			return title
 		end
 
+		C_QuestLog_RequestLoadQuestByID(id);
 		QuestHarvester:SetOwner(UIParent, "ANCHOR_NONE");
 		QuestHarvester:SetHyperlink("quest:"..id);
 		title = AllTheThingsQuestHarvesterTextLeft1:GetText();
