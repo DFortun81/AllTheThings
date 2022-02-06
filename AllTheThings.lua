@@ -312,6 +312,7 @@ local containsValue = function(dict, value)
 		if value2 == value then return true; end
 	end
 end
+
 -- Sorting Logic
 (function()
 local defaultComparison = function(a,b)
@@ -448,7 +449,74 @@ local sortByNameSafely = function(a, b)
 	end
 	return false;
 end;
+local function GetGroupSortValue(group)
+	if group then
+		if group.g then
+			if group.total and group.total > 1 then
+				if group.progress and group.progress > 0 then
+					return (2 + (group.progress / group.total));
+				end
+				return (1 / group.total);
+			end
+			return 0;
+		elseif group.collectible then
+			if group.collected then
+				return -1;
+			elseif group.sortProgress then
+				return (-2 + group.sortProgress);
+			end
+			return -2;
+		end
+	end
+	return -3;
+end
+-- Sorts a group using the provided sortType, whether to recurse through nested groups, and whether sorting should only take place given the group having a conditional field
+local function SortGroup(group, sortType, row, recur, conditionField)
+	if group.g then
+		-- either sort visible groups or by conditional
+        if (not conditionField and group.visible) or (conditionField and group[conditionField]) then
+			-- app.PrintDebug("sorting",group.key,group.key and group[group.key],"by",sortType,"recur",recur,"condition",conditionField)
+			if sortType == "name" then
+				app.Sort(group.g);
+			elseif sortType == "progress" then
+				local progA, progB;
+				app.Sort(group.g, function(a, b)
+					progA = GetGroupSortValue(a);
+					progB = GetGroupSortValue(b);
+					return progA > progB;
+				end);
+			else
+				local sortA, sortB;
+				app.Sort(group.g, function(a, b)
+					sortA = a and tostring(a[sortType]);
+					sortB = b and tostring(b[sortType]);
+					return sortA < sortB;
+				end);
+			end
+			-- since this group was sorted, clear any SortInfo which may have caused it
+			group.SortInfo = nil;
+		end
+		-- TODO: Add more sort types?
+		if recur then
+			for _,o in ipairs(group.g) do
+				SortGroup(o, sortType, nil, recur, conditionField);
+			end
+		end
+	end
+	if row then
+		row:GetParent():GetParent():Update();
+		app.print("Finished Sorting.");
+	end
+end
+app.SortGroup = SortGroup;
+-- Allows defining SortGroup data which is only executed when the group is actually expanded
+local function SortGroupDelayed(group, sortType, row, recur, conditionField)
+	app.PrintDebug("Delayed Sort defined for",group.text)
+	group.SortInfo = { sortType, row, recur, conditionField };
+end
+app.SortGroupDelayed = SortGroupDelayed;
 end)();
+
 -- Performs table.concat(tbl, sep, i, j) on the given table, but uses the specified field of table values if provided,
 -- with a default fallback value if the field does not exist on the table entry
 app.TableConcat = function(tbl, field, def, sep, i, j)
@@ -6094,71 +6162,6 @@ local function RefreshCollections()
 		app.print(L["DONE_REFRESHING"]);
 	end);
 end
-local function GetGroupSortValue(group)
-	if group then
-		if group.g then
-			if group.total and group.total > 1 then
-				if group.progress and group.progress > 0 then
-					return (2 + (group.progress / group.total));
-				end
-				return (1 / group.total);
-			end
-			return 0;
-		elseif group.collectible then
-			if group.collected then
-				return -1;
-			elseif group.sortProgress then
-				return (-2 + group.sortProgress);
-			end
-			return -2;
-		end
-	end
-	return -3;
-end
--- Sorts a group using the provided sortType, whether to recurse through nested groups, and whether sorting should only take place given the group having a conditional field
-local function SortGroup(group, sortType, row, recur, conditionField)
-	if group.g then
-		-- either sort visible groups or by conditional
-        if (not conditionField and group.visible) or (conditionField and group[conditionField]) then
-			-- app.PrintDebug("sorting",group.key,group.key and group[group.key],"by",sortType,"recur",recur,"condition",conditionField)
-			if sortType == "name" then
-				app.Sort(group.g);
-			elseif sortType == "progress" then
-				local progA, progB;
-				app.Sort(group.g, function(a, b)
-					progA = GetGroupSortValue(a);
-					progB = GetGroupSortValue(b);
-					return progA > progB;
-				end);
-			else
-				local sortA, sortB;
-				app.Sort(group.g, function(a, b)
-					sortA = a and tostring(a[sortType]);
-					sortB = b and tostring(b[sortType]);
-					return sortA < sortB;
-				end);
-			end
-			-- since this group was sorted, clear any SortInfo which may have caused it
-			group.SortInfo = nil;
-		end
-		-- TODO: Add more sort types?
-		if recur then
-			for _,o in ipairs(group.g) do
-				SortGroup(o, sortType, nil, recur, conditionField);
-			end
-		end
-	end
-	if row then
-		row:GetParent():GetParent():Update();
-		app.print("Finished Sorting.");
-	end
-end
-app.SortGroup = SortGroup;
--- Allows defining SortGroup data which is only executed when the group is actually expanded
-local function SortGroupDelayed(group, sortType, row, recur, conditionField)
-	group.SortInfo = { sortType, row, recur, conditionField };
-end
-app.SortGroupDelayed = SortGroupDelayed;
 
 app.ToggleMainList = function()
 	app:GetWindow("Prime"):Toggle();
@@ -14348,10 +14351,10 @@ local function RowOnClick(self, button)
 			elseif IsShiftKeyDown() then
 				if app.Settings:GetTooltipSetting("Sort:Progress") then
 					app.print("Sorting selection by total progress...");
-					StartCoroutine("Sorting", function() SortGroup(reference, "progress", self, false) end);
+					StartCoroutine("Sorting", function() app.SortGroup(reference, "progress", self, false) end);
 				else
 					app.print("Sorting selection alphabetically...");
-					StartCoroutine("Sorting", function() SortGroup(reference, "name", self, false) end);
+					StartCoroutine("Sorting", function() app.SortGroup(reference, "name", self, false) end);
 				end
 			else
 				if self.index > 0 then
@@ -14481,11 +14484,8 @@ local function RowOnClick(self, button)
 					local link = reference.link or reference.silentLink;
 					if (link and HandleModifiedItemClick(link)) or ChatEdit_InsertLink(link or BuildSourceTextForChat(reference, 0)) then return true; end
 
-					-- If you're looking at the Profession Window, Shift Clicking will replace the search string instead.
-					if app:GetWindow("Tradeskills"):IsShown() then
-
-					elseif button == "LeftButton" then
-						-- Default behaviour is to Refresh Collections.
+					if button == "LeftButton" then
+						-- Default behavior is to Refresh Collections.
 						RefreshCollections();
 					end
 					return true;
@@ -15722,6 +15722,7 @@ function app:GetDataCache()
 	local function DynamicCategory(group, field, value)
 		-- mark the top group as dynamic for the field which it used (so popouts under the dynamic header are considered unique from other dynamic popouts)
 		group.dynamic = field;
+		group.dynamic_value = value;
 		group.OnUpdate = app.FillDynamicGroup;
 		return group;
 	end
@@ -17346,10 +17347,10 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 
 				-- sort top level by name if not in an instance
 				if not GetRelativeValue(self.data, "instanceID") then
-					SortGroup(self.data, "name");
+					app.SortGroup(self.data, "name");
 				end
 				-- and conditionally sort the entire list (sort groups which contain 'mapped' content)
-				SortGroup(self.data, "name", nil, true, "sort");
+				app.SortGroup(self.data, "name", nil, true, "sort");
 
 				-- Expand all symlinks in the minilist for clarity
 				FillSymLinks(self.data, true);
