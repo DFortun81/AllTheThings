@@ -341,34 +341,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26150,	-- A Visit With Maybell
 				}),
---[[
-				q(7937),	-- Your Fortune Awaits You... (DMF, item-granted. Possibly removed)
-]]--
 			}),
 		}),
 	}),
 };
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	tier(WOD_TIER, {
-		n(QUESTS, {
-			q(33425),	-- Blue/Yellow Sprint 15 INTERNAL REPEATABLE
-			q(33428),	-- Elwynn Forest Racing
-			q(33422),	-- Elwynn Long Distance Practice
-			q(33429),	-- Elwynn Long Distance Trial: 25
-			q(33409),	-- Elwynn Run
-			q(33432),	-- Elwynn South Distance Practice
-			q(33431),	-- Elwynn South Distance Trial: 30
-			q(33485),	-- Multiplayer Race
-			q(33561),	-- Multiplayer Race
-			q(33424),	-- Northshire Dash 12
-			q(33609),	-- Northshire Dash Practice
-			q(33492),	-- Northshire Sprint Practice
-			q(33350),	-- Redridge Group Trial
-			q(33416),	-- South Sprint 12
-			q(33398),	-- South Sprint Practice
-			q(33349),	-- STARTER QUEST - RED->PURPLE 15
-			q(33434),	-- Westfall Race 30
-			q(33455),	-- Westfall Race Practice UNUSED
-		}),
-	}),
-});

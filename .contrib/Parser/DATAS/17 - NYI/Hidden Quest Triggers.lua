@@ -923,6 +923,7 @@ _.HiddenQuestTriggers = {
 		q(29405),	-- The Lesson of the Iron Staff - completed with quest 30027 & 30033 & 30334 & 30335 & 30336 & 30337 & 30338
 		q(29597),	-- The End of the Exarch - completed with quest 29596
 		q(29673),	-- The Black Morass - completed with quest 10296
+		q(29969),	-- Broken Earthen Figurine - completed with quest 28776
 		q(30817),	-- The Healing of Shen-zin Su - completed with quest 29799
 		q(30818),	-- A New Fate - completed with quest 29800
 		q(30988),	-- The Alliance Way - completed with quest 31013
@@ -951,7 +952,7 @@ _.HiddenQuestTriggers = {
 		q(35388),	-- The Void March - completed with quest 35086
 		q(35389),	-- Silence the Call - completed with quest 35084
 		q(35390),	-- The Shadow Over Oshu'gun - completed with quest 35088
-		q(35391),	-- Silence the Call - completed with quest 35083
+		q(35391),	-- Disrupt The Rituals - completed with quest 35083
 		q(35392),	-- The Nether Approaches - completed with quest 35087
 		q(35431),	-- The Best Poison - completed with quest 35205
 		q(35653),	-- Wood is Wood - completed with quest 36368 & 35505
@@ -3454,6 +3455,8 @@ _.HiddenQuestTriggers = {
 		q(35962),	-- Warlords Max Level Dungeon Reward Quest - triggered at the end of Normal Grimrail Depot
 
 		-- PVP
+		q(36146),	-- Cataclysm 84-85
+		q(36152),	-- Cataclysm 84-85
 		q(38116, {["_drop"] = { "g" }}),	-- Cata/Mop 80-89
 		q(38127, {["_drop"] = { "g" }}),	-- Cata/MoP 80-89
 		q(38138),	-- Cata/MoP 80-89

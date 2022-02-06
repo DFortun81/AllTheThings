@@ -321,7 +321,7 @@ _.Zones =
 	}),
 };
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	tier(WOD_TIER, {
+	tier(MOP_TIER, {
 		n(QUESTS, {
 			q(29407),	-- The First Sign of Winter
 		}),

@@ -1128,11 +1128,5 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(117994),	-- RENAME Karabor Honor Guard Axe
 			i(117993),	-- RENAME Rangari Boot Knife
 		}),
-		n(QUESTS, {
-			q(35618),	-- Gidwin Goldbraids
-			q(33782),	-- Keeping the Balance
-			q(35621),	-- Tarenar Sunstrike
-			q(37113),	-- Thisalee Crow
-		}),
 	}),
 }));

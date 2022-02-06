@@ -676,7 +676,7 @@ _.Zones =
 					})),
 					q(10481, {	-- Enraged Spirits of Air
 						["qg"] = 21024,	-- Earthmender Torlok
-						["sourceQuest"] = 10458,	-- Enraged Spirits of Fire and Earth
+						["sourceQuest"] = 10480,	-- Enraged Spirits of Water
 						["coord"] = { 42.2, 45.0, SHADOWMOON_VALLEY },
 						["lvl"] = lvlsquish(67, 67, 25),
 						["groups"] = {
@@ -1587,7 +1587,6 @@ _.Zones =
 							{ 35.2, 40.4, SHADOWMOON_VALLEY },
 							{ 35.4, 41.8, SHADOWMOON_VALLEY },
 						},
-						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(67, 67, 25),
 						["groups"] = {
 							objective(1, {	-- 0/1 Lianthe's Key

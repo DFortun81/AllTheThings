@@ -10,7 +10,7 @@ _.GroupFinder =
 			un(REMOVED_FROM_GAME, i(51978)),	-- Earthbound Girdle
 			i(143580),			-- Earthbound Girdle			— 01/15/21
 			-- un(REMOVED_FROM_GAME, i(51979)),	-- Earthbound Grips (moved to BC satchel)
-			i(143581),			-- Earthbound Grips
+			i(143581),			-- Earthbound Grips				— 02/06/22
 			un(REMOVED_FROM_GAME, i(51980)),	-- Earthbound Handgrips
 			i(51976),			-- Earthbound Shoulderguards	— 01/15/22
 			i(51981),			-- Earthbound Wristguards		— 01/14/22

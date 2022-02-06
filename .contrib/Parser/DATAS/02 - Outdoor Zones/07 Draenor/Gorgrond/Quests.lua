@@ -2134,9 +2134,5 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		n(WEAPONS, {
 			i(119408),	-- Foereaver Polearm [This version wasn't added]
 		}),
-		n(QUESTS, {
-			q(34413),	-- Lumberstruck
-			q(33705),	-- Sacking the Saberon Stronghold
-		}),
 	}),
 }));
