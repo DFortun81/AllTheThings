@@ -1494,7 +1494,7 @@ local function BuildSourceText(group, l)
 		-- if group.headerID then
 		-- 	if group.headerID == 0 then
 		-- 		if group.crs and #group.crs == 1 then
-		-- 			return BuildSourceText(parent, l + 1) .. DESCRIPTION_SEPARATOR .. (NPCNameFromID[group.crs[1]] or RETRIEVING_DATA) .. " (Drop)";
+		-- 			return BuildSourceText(parent, l + 1) .. DESCRIPTION_SEPARATOR .. (app.NPCNameFromID[group.crs[1]] or RETRIEVING_DATA) .. " (Drop)";
 		-- 		end
 		-- 		return BuildSourceText(parent, l + 1) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA);
 		-- 	end
@@ -2400,10 +2400,14 @@ local IsQuestFlaggedCompletedForObject = function(t)
 end
 
 -- Quest Harvesting Lib (http://www.wowinterface.com/forums/showthread.php?t=46934)
-local questRetries = {};
+-- This is pretty heavily utilized, so will keep it local
 local QuestHarvester = CreateFrame("GameTooltip", "AllTheThingsQuestHarvester", UIParent, "GameTooltipTemplate");
+(function()
+local questRetries = {};
+local QuestUtils_GetQuestName, C_QuestLog_RequestLoadQuestByID = QuestUtils_GetQuestName, C_QuestLog.RequestLoadQuestByID;
 local QuestTitleFromID = setmetatable({}, { __index = function(t, id)
 	if id then
+		C_QuestLog_RequestLoadQuestByID(id);
 		local title = QuestUtils_GetQuestName(id);
 		if title and title ~= "" then
 			-- print("QuestUtils_GetQuestName",id,title)
@@ -2440,15 +2444,34 @@ local QuestTitleFromID = setmetatable({}, { __index = function(t, id)
 		end
 	end
 end});
+app.QuestTitleFromID = QuestTitleFromID;
+app.events.QUEST_DATA_LOAD_RESULT = function(questID, success)
+	if success then
+		local title = QuestUtils_GetQuestName(questID);
+		if title and title ~= "" then
+			-- app.PrintDebug("Available QuestData",questID,title)
+			rawset(questRetries, questID, nil);
+			rawset(QuestTitleFromID, questID, title);
+		end
+		-- TODO: trigger a slight delayed refresh to visible ATT windows since a quest name was now populated
+	else
+		-- this quest name cannot be populated by the server
+		-- app.PrintDebug("No Server QuestData",questID)
+		rawset(questRetries, questID, nil);
+		rawset(QuestTitleFromID, questID, "Quest #"..questID.."*");
+	end
+end
+end)();
 
 -- NPC & Title Name Harvesting Lib (https://us.battle.net/forums/en/wow/topic/20758497390?page=1#post-4, Thanks Gello!)
+(function()
 local NPCTitlesFromID = {};
 local NPCHarvester = CreateFrame("GameTooltip", "AllTheThingsNPCHarvester", UIParent, "GameTooltipTemplate");
-local NPCNameFromID = setmetatable({}, { __index = function(t, id)
+app.NPCNameFromID = setmetatable({}, { __index = function(t, id)
 	if not id then return; end
 	if id > 0 then
-		NPCHarvester:SetOwner(UIParent,"ANCHOR_NONE")
-		NPCHarvester:SetHyperlink(format("unit:Creature-0-0-0-0-%d-0000000000",id))
+		NPCHarvester:SetOwner(UIParent,"ANCHOR_NONE");
+		NPCHarvester:SetHyperlink(format("unit:Creature-0-0-0-0-%d-0000000000",id));
 		local title = AllTheThingsNPCHarvesterTextLeft1:GetText();
 		if title and NPCHarvester:NumLines() > 2 then
 			rawset(NPCTitlesFromID, id, AllTheThingsNPCHarvesterTextLeft2:GetText());
@@ -2465,6 +2488,8 @@ local NPCNameFromID = setmetatable({}, { __index = function(t, id)
 	end
 	return RETRIEVING_DATA;
 end});
+app.NPCTitlesFromID = NPCTitlesFromID;
+end)();
 
 -- Search Caching
 local searchCache = {};
@@ -8177,7 +8202,7 @@ local function CacheInfo(t, field)
 	local friendshipInfo = { GetFriendshipReputation(id) };
 	local name = factionInfo[1] or friendshipInfo[4];
 	local lore = factionInfo[2];
-	_t.name = name or (t.creatureID and NPCNameFromID[t.creatureID]) or (FACTION .. " #" .. id);
+	_t.name = name or (t.creatureID and app.NPCNameFromID[t.creatureID]) or (FACTION .. " #" .. id);
 	if lore then
 		_t.lore = lore;
 	elseif not name then
@@ -10218,7 +10243,7 @@ local mapFields = {
 		return app.TryColorizeName(t, t.name);
 	end,
 	["name"] = function(t)
-		return t.creatureID and NPCNameFromID[t.creatureID] or app.GetMapName(t.mapID);
+		return t.creatureID and app.NPCNameFromID[t.creatureID] or app.GetMapName(t.mapID);
 	end,
 	["icon"] = function(t)
 		return t.creatureID and L["HEADER_ICONS"][t.creatureID] or app.asset("Category_Zones");
@@ -10503,7 +10528,7 @@ local fields = {
 	["description"] = function(t)
 		if t.crs and #t.crs > 0 then
 			for i,id in ipairs(t.crs) do
-				return L["SELFIE_DESC"] .. (select(2, GetItemInfo(122674)) or "Selfie Camera MkII") .. L["SELFIE_DESC_2"] .. (NPCNameFromID[id] or "???")
+				return L["SELFIE_DESC"] .. (select(2, GetItemInfo(122674)) or "Selfie Camera MkII") .. L["SELFIE_DESC_2"] .. (app.NPCNameFromID[id] or "???")
 				.. "|r" .. (t.maps and (" in |cffff8000" .. (app.GetMapName(t.maps[1]) or "???") .. "|r.") or ".");
 			end
 		end
@@ -10558,10 +10583,10 @@ local npcFields = {
 		return app.TryColorizeName(t, t.name);
 	end,
 	["name"] = function(t)
-		return NPCNameFromID[t.npcID];
+		return app.NPCNameFromID[t.npcID];
 	end,
 	["title"] = function(t)
-		return NPCTitlesFromID[t.npcID];
+		return app.NPCTitlesFromID[t.npcID];
 	end,
 	["displayID"] = function(t)
 		return app.NPCDisplayIDFromID[t.npcID];
@@ -10575,7 +10600,7 @@ local npcFields = {
 			or app.DifficultyIcons[GetRelativeValue(t, "difficultyID") or 1];
 	end,
 	["nameAsAchievement"] = function(t)
-		return NPCNameFromID[t.npcID] or select(2, GetAchievementInfo(t.achievementID));
+		return app.NPCNameFromID[t.npcID] or select(2, GetAchievementInfo(t.achievementID));
 	end,
 	["iconAsAchievement"] = function(t)
 		return select(10, GetAchievementInfo(t.achievementID)) or t.iconAsDefault;
@@ -10753,7 +10778,7 @@ local objectFields = {
 	end,
 
 	["nameAsAchievement"] = function(t)
-		return NPCNameFromID[t.npcID] or select(2, GetAchievementInfo(t.achievementID));
+		return app.NPCNameFromID[t.npcID] or select(2, GetAchievementInfo(t.achievementID));
 	end,
 	["iconAsAchievement"] = function(t)
 		return select(10, GetAchievementInfo(t.achievementID)) or t.iconAsDefault;
@@ -11024,7 +11049,7 @@ local questFields = {
 		return app.TryColorizeName(t, t.name);
 	end,
 	["name"] = function(t)
-		return QuestTitleFromID[t.questID];
+		return app.QuestTitleFromID[t.questID];
 	end,
 	["objectiveInfo"] = function(t)
 		local questID = t.questID;
@@ -11624,7 +11649,7 @@ local function BuildTextFromNPCIDs(t, npcIDs)
 	local retry, name;
 	local textTbl = {};
 	for i,npcID in ipairs(npcIDs) do
-		name = NPCNameFromID[npcID];
+		name = app.NPCNameFromID[npcID];
 		retry = retry or not name or name == RETRIEVING_DATA;
 		if not retry then
 			textTbl[i * 2 - 1] = name;
@@ -14769,7 +14794,7 @@ RowOnEnter = function (self)
 						providerString = providerString .. ' (' .. providerID .. ')';
 					end
 				elseif providerType == "n" then
-					providerString = (providerID > 0 and NPCNameFromID[providerID]) or ("Creature: " .. RETRIEVING_DATA)
+					providerString = (providerID > 0 and app.NPCNameFromID[providerID]) or ("Creature: " .. RETRIEVING_DATA)
 					if app.Settings:GetTooltipSetting("creatureID") then
 						providerString = providerString .. ' (' .. providerID .. ')';
 					end
@@ -14827,11 +14852,11 @@ RowOnEnter = function (self)
 		if reference.qgs and app.Settings:GetTooltipSetting("QuestGivers") then
 			if app.Settings:GetTooltipSetting("creatureID") then
 				for i,qg in ipairs(reference.qgs) do
-					GameTooltip:AddDoubleLine(i == 1 and L["QUEST_GIVER"] or " ", tostring(NPCNameFromID[qg]) .. " (" .. qg .. ")");
+					GameTooltip:AddDoubleLine(i == 1 and L["QUEST_GIVER"] or " ", tostring(app.NPCNameFromID[qg]) .. " (" .. qg .. ")");
 				end
 			else
 				for i,qg in ipairs(reference.qgs) do
-					GameTooltip:AddDoubleLine(i == 1 and L["QUEST_GIVER"] or " ", tostring(NPCNameFromID[qg]));
+					GameTooltip:AddDoubleLine(i == 1 and L["QUEST_GIVER"] or " ", tostring(app.NPCNameFromID[qg]));
 				end
 			end
 		end
@@ -14841,11 +14866,11 @@ RowOnEnter = function (self)
 				GameTooltip:AddDoubleLine(CREATURE, "[" .. tostring(#reference.crs) .. " Creatures]");
 			elseif app.Settings:GetTooltipSetting("creatureID") then
 				for i,cr in ipairs(reference.crs) do
-					GameTooltip:AddDoubleLine(i == 1 and CREATURE or " ", tostring(NPCNameFromID[cr]) .. " (" .. cr .. ")");
+					GameTooltip:AddDoubleLine(i == 1 and CREATURE or " ", tostring(app.NPCNameFromID[cr]) .. " (" .. cr .. ")");
 				end
 			else
 				for i,cr in ipairs(reference.crs) do
-					GameTooltip:AddDoubleLine(i == 1 and CREATURE or " ", tostring(NPCNameFromID[cr]));
+					GameTooltip:AddDoubleLine(i == 1 and CREATURE or " ", tostring(app.NPCNameFromID[cr]));
 				end
 			end
 		end
@@ -21179,6 +21204,7 @@ app.InitDataCoroutine = function()
 	app:RegisterEvent("CRITERIA_UPDATE");
 	app:RegisterEvent("TOYS_UPDATED");
 	app:RegisterEvent("LOOT_OPENED");
+	app:RegisterEvent("QUEST_DATA_LOAD_RESULT");
 
 	local needRefresh;
 	-- NOTE: The auto refresh only happens once per version
