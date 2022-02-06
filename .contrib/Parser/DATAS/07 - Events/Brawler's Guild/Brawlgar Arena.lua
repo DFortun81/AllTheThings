@@ -2,11 +2,28 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 
-root("WorldEvents", m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Brawlgar Arena
+root("WorldEvents", m(503, 
+	-- bubbleDown({ ["u"] = REMOVED_FROM_GAME }, 
+	{	-- Brawlgar Arena
 	["races"] = HORDE_ONLY,
 	["lvl"] = 120,
 	["icon"] = "Interface\\Icons\\INV_MISC_HEAD_ORC2_BRN",
 	["g"] = {
+		n(REWARDS, {
+			--	attaching questIDs and sourceQuests here makes the SQ list not display correctly (the items display instead of the quests).
+			i(92718, {	-- Brawler's Purse
+				["description"] = "\nAwarded for winning a Brawl. If you haven't already finished the quest chain for Bruce, save these for the 'Soul Splinters' quest.\n",
+			}),
+			i(92719, {	-- Bulging Brawler's Purse
+				["description"] = "\nAwarded for winning a Brawl. If you haven't already finished the quest chain for Bruce, save these for the 'Soul Splinters' quest.\n",
+			}),
+			i(164938, {	-- G.G. Gearbox
+				["description"] = "\nAwarded for beating the G.G. Engineering Challenge Card encounter. You need this to complete the 'The Precious 13-Tooth Gogglegear' quest.\n",
+			}),
+			i(164931, {	-- Rumbler's Purse
+				["description"] = "\nAwarded for winning a Rumble. If you haven't already finished the quest chain for Bruce, save these for the 'Super Soul Splinters' quest.\n",
+			}),
+		}),
 		n(QUESTS, {
 			q(36702, {	-- Meatball
 				["provider"] = { "n", 86272 },	-- Meatball
@@ -398,4 +415,4 @@ root("WorldEvents", m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Brawlg
 			}),
 		}),
 	},
-})));
+}));
