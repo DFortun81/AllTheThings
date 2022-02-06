@@ -2692,7 +2692,6 @@ local function HasExpandedSubgroup(group)
 			end
 		end
 	end
-	return false;
 end
 
 local ResolveSymbolicLink;
@@ -6110,7 +6109,7 @@ end
 local function SortGroup(group, sortType, row, recur, conditionField)
 	if group.g then
 		-- either sort visible groups or by conditional
-		if (not conditionField and group.visible) or (conditionField and group[conditionField]) then
+		if (conditionField and group[conditionField] or group.visible) then
 			-- print("sorting",group.key,group.key and group[group.key],"by",sortType,"recur",recur,"condition",conditionField)
 			if sortType == "name" then
 				app.Sort(group.g);
@@ -6129,6 +6128,8 @@ local function SortGroup(group, sortType, row, recur, conditionField)
 					return sortA < sortB;
 				end);
 			end
+			-- since this group was sorted, clear any SortInfo which may have caused it
+			group.SortInfo = nil;
 		end
 		-- TODO: Add more sort types?
 		if recur then
@@ -6143,6 +6144,11 @@ local function SortGroup(group, sortType, row, recur, conditionField)
 	end
 end
 app.SortGroup = SortGroup;
+-- Allows defining SortGroup data which is only executed when the group is actually expanded
+local function SortGroupDelayed(group, sortType, row, recur, conditionField)
+	group.SortInfo = { sortType, row, recur, conditionField };
+end
+app.SortGroupDelayed = SortGroupDelayed;
 
 app.ToggleMainList = function()
 	app:GetWindow("Prime"):Toggle();
@@ -12908,7 +12914,7 @@ UpdateGroup = function(parent, group, window)
 end
 UpdateGroups = function(parent, g, window)
 	if g then
-		for key, group in ipairs(g) do
+		for _,group in ipairs(g) do
 			if group.OnUpdate then
 				if not group:OnUpdate() then
 					UpdateGroup(parent, group, window);
@@ -15435,6 +15441,11 @@ local function ProcessGroup(data, object)
 	if app.VisibilityFilter(object) then
 		tinsert(data, object);
 		if object.g and object.expanded then
+			-- Delayed sort operation for this group prior to being shown
+			local sortInfo = object.SortInfo;
+			if sortInfo then
+				app.SortGroup(object, sortInfo[1], sortInfo[2], sortInfo[3], sortInfo[4]);
+			end
 			for j, group in ipairs(object.g) do
 				ProcessGroup(data, group);
 			end
@@ -15658,17 +15669,15 @@ app.DynamicCategory_Simple = function(self)
 		-- change the text color of the dynamic group to help indicate it is not included in the window total
 		self.text = Colorize(self.text, "ff7f40bf");
 		-- sort all of the Things by name in each top header and put it under the dynamic group
-		-- print("sorting headers",self.dynamic)
 		for _,header in pairs(topHeaders) do
-			app.SortGroup(header, "name");
+			-- delay-sort the groups in each categorized header
+			app.SortGroupDelayed(header, "name");
 			NestObject(self, header);
 		end
 		-- reset indents and such
 		BuildGroups(self, self.g);
-		-- sort the top level groups initially (group not yet visible)
-		self.sort = true;
-		app.SortGroup(self, "name", nil, nil, "sort");
-		self.sort = nil;
+		-- delay-sort the top level groups
+		app.SortGroupDelayed(self, "name");
 		-- make sure these things are cached so they can be updated when collected
 		app.CacheFields(self);
 	else
@@ -15688,10 +15697,8 @@ app.DynamicCategory_Nested = function(self)
 	self.g = app:BuildSearchResponse(app:GetWindow("Prime").data.g, self.dynamic, self.dynamic_value, true);
 	-- reset indents and such
 	BuildGroups(self, self.g);
-	-- sort the top level groups initially (group not yet visible)
-	self.sort = true;
-	app.SortGroup(self, "name", nil, nil, "sort");
-	self.sort = nil;
+	-- delay-sort the top level groups
+	app.SortGroupDelayed(self, "name");
 	-- make sure these things are cached so they can be updated when collected
 	app.CacheFields(self);
 end
@@ -16594,9 +16601,9 @@ function app:GetDataCache()
 				end
 				-- reset indents and such
 				BuildGroups(flightPathsCategory, flightPathsCategory.g);
-				-- sort the top level groups initially (group not yet visible)
+				-- delay-sort the top level groups
 				flightPathsCategory.sort = true;
-				app.SortGroup(flightPathsCategory, "name", nil, nil, "sort");
+				app.SortGroupDelayed(flightPathsCategory, "name");
 				flightPathsCategory.sort = nil;
 				-- dynamic groups are ignored for the source tooltips
 				flightPathsCategory.sourceIgnored = true;
