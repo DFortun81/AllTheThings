@@ -2453,7 +2453,8 @@ app.events.QUEST_DATA_LOAD_RESULT = function(questID, success)
 			rawset(questRetries, questID, nil);
 			rawset(QuestTitleFromID, questID, title);
 		end
-		-- TODO: trigger a slight delayed refresh to visible ATT windows since a quest name was now populated
+		-- trigger a slight delayed refresh to visible ATT windows since a quest name was now populated
+		app:RefreshWindows();
 	else
 		-- this quest name cannot be populated by the server
 		-- app.PrintDebug("No Server QuestData",questID)
@@ -13576,8 +13577,8 @@ end
 
 app.Windows = {};
 app._UpdateWindows = function(force, got)
-	-- print("_UpdateWindows",force,got)
-	for _, window in pairs(app.Windows) do
+	-- app.PrintDebug("_UpdateWindows",force,got)
+	for _,window in pairs(app.Windows) do
 		window:Update(force, got);
 	end
 end
@@ -13585,6 +13586,17 @@ function app:UpdateWindows(force, got)
 	-- no need to update windows when a refresh is pending
 	if app.refreshDataQueued then return; end
 	AfterCombatOrDelayedCallback(app._UpdateWindows, 0.1, force, got);
+end
+app._RefreshWindows = function()
+	-- app.PrintDebug("_RefreshWindows")
+	for _,window in pairs(app.Windows) do
+		window:Refresh();
+	end
+end
+function app:RefreshWindows()
+	-- no need to update windows when a refresh is pending
+	if app.refreshDataQueued then return; end
+	AfterCombatOrDelayedCallback(app._RefreshWindows, 0.1);
 end
 local CreateRow;
 function app:CreateMiniListForGroup(group)
