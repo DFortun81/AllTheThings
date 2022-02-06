@@ -18898,9 +18898,11 @@ customWindowUpdates["quests"] = function(self, force, got)
 		self.PartitionSize = 1000;
 		self.Limit = 70000;
 		force = true;
+		local HaveQuestData = HaveQuestData;
 
 		-- custom params for initialization
 		local onlyMissing = app.GetCustomWindowParam("quests", "missing");
+		local onlyCached = app.GetCustomWindowParam("quests", "cached");
 		-- print("Quests - onlyMissing",onlyMissing)
 
 		-- info about the Window
@@ -18928,9 +18930,15 @@ customWindowUpdates["quests"] = function(self, force, got)
 			end,
 		};
 		if onlyMissing then
-			overrides.visible = function(o, key)
-				return o._missing;
-			end;
+			if onlyCached then
+				overrides.visible = function(o, key)
+					return o._missing and HaveQuestData(o.questID);
+				end;
+			else
+				overrides.visible = function(o, key)
+					return o._missing;
+				end;
+			end
 			overrides.doUpdate = function(o, key)
 				-- trigger a repeat update to the holding window after the DLO is loaded into the window and is not missing in DB
 				if not o._missing then
