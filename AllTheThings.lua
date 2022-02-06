@@ -3559,6 +3559,15 @@ local function FillPurchases(group, depth)
 	end
 	return group;
 end
+-- Fields on groups which can be utilized in tooltips to show additional Source location info for that group (by order of priority)
+app.TooltipSourceFields = {
+	"professionID",
+	"mapID",
+	"maps",
+	"instanceID",
+	"npcID",
+	"questID"
+};
 local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	if not search or search:find("%[]") then return; end
 	local cache = searchCache[search];
@@ -4338,6 +4347,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			-- app.DEBUG_PRINT = nil;
 			-- print(entries and #entries,"contains entries")
 			if #entries > 0 then
+				local tooltipSourceFields = app.TooltipSourceFields;
 				local costCollectibles = group.costCollectibles;
 				-- print("#entries",#entries);
 				tinsert(info, { left = L["CONTAINS"] });
@@ -4377,7 +4387,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					if group.itemID and paramA ~= "npcID" and paramA ~= "encounterID" then
 						-- Add the Zone name
 						local field, id;
-						for _,v in ipairs({"professionID","mapID","maps","instanceID","npcID","questID"}) do
+						for _,v in ipairs(tooltipSourceFields) do
 							if not field then
 								id = RecursiveParentField(group, v);
 								-- print("check",v,id)
