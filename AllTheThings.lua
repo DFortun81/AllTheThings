@@ -20955,6 +20955,7 @@ app.InitDataCoroutine = function()
 
 	-- Cache some collection states for account wide quests that aren't actually granted account wide and can be flagged using an achievementID. (Allied Races)
 	local collected;
+	local acctQuests, oneTimeQuests = accountWideData.Quests, accountWideData.OneTimeQuests;
 	-- achievement collection state isn't readily available when ADDON_LOADED fires, so we do it here to ensure we get a valid state for matching
 	for _,achievementQuests in ipairs({
 		{ 12453, { 49973, 49613, 49354, 49614 } },	-- Allied Races: Nightborne
@@ -20987,18 +20988,15 @@ app.InitDataCoroutine = function()
 		for _,questID in ipairs(achievementQuests[2]) do
 			if collected then
 				-- Mark the quest as completed for the Account
-				accountWideData.Quests[questID] = 1;
-				if CompletedQuests[questID] then
-					-- Throw up a warning to report if this was already completed by another character
-					-- if accountWideData.OneTimeQuests[questID] and accountWideData.OneTimeQuests[questID] ~= app.GUID then
-					-- 	app.report("One-Time-Quest ID #" .. questID .. " was previously marked as completed, but is also completed on the current character!");
-					-- end
+				acctQuests[questID] = 1;
+				if not oneTimeQuests[questID] and CompletedQuests[questID] then
 					-- this once-per-account quest only counts for a specific character
-					accountWideData.OneTimeQuests[questID] = app.GUID;
+					oneTimeQuests[questID] = app.GUID;
 				end
-			else
-				-- otherwise indicate the one-time-nature of the quest
-				accountWideData.OneTimeQuests[questID] = false;
+			end
+			-- otherwise indicate the one-time-nature of the quest
+			if oneTimeQuests[questID] == nil then
+				oneTimeQuests[questID] = false;
 			end
 		end
 	end
@@ -21013,18 +21011,15 @@ app.InitDataCoroutine = function()
 		for _,questID in ipairs(appearanceQuests[2]) do
 			if collected then
 				-- Mark the quest as completed for the Account
-				accountWideData.Quests[questID] = 1;
-				if CompletedQuests[questID] then
-					-- Throw up a warning to report if this was already completed by another character
-					-- if accountWideData.OneTimeQuests[questID] and accountWideData.OneTimeQuests[questID] ~= app.GUID then
-					-- 	app.report("One-Time-Quest ID #" .. questID .. " was previously marked as completed, but is also completed on the current character!");
-					-- end
+				acctQuests[questID] = 1;
+				if not oneTimeQuests[questID] and CompletedQuests[questID] then
 					-- this once-per-account quest only counts for a specific character
-					accountWideData.OneTimeQuests[questID] = app.GUID;
+					oneTimeQuests[questID] = app.GUID;
 				end
-			else
-				-- otherwise indicate the one-time-nature of the quest
-				accountWideData.OneTimeQuests[questID] = false;
+			end
+			-- otherwise indicate the one-time-nature of the quest
+			if oneTimeQuests[questID] == nil then
+				oneTimeQuests[questID] = false;
 			end
 		end
 	end
@@ -21103,18 +21098,15 @@ app.InitDataCoroutine = function()
 		-- etc.
 	}) do
 		-- If this Character has the Quest completed and it is not marked as completed for Account or not for specific Character
-		if CompletedQuests[questID] then
-			-- Throw up a warning to report if this was already completed by another character
-			-- if accountWideData.OneTimeQuests[questID] and accountWideData.OneTimeQuests[questID] ~= app.GUID then
-			-- 	app.report("One-Time-Quest ID #" .. questID .. " was previously marked as completed, but is also completed on the current character!");
-			-- end
+		if not oneTimeQuests[questID] and CompletedQuests[questID] then
 			-- Mark the quest as completed for the Account
-			accountWideData.Quests[questID] = 1;
+			acctQuests[questID] = 1;
 			-- Mark the character which completed the Quest
-			accountWideData.OneTimeQuests[questID] = app.GUID;
-		elseif not accountWideData.OneTimeQuests[questID] then
-			-- Mark that this Quest is a OneTimeQuest which hasn't been determined as completed by any Character yet
-			accountWideData.OneTimeQuests[questID] = false;
+			oneTimeQuests[questID] = app.GUID;
+		end
+		-- otherwise indicate the one-time-nature of the quest
+		if oneTimeQuests[questID] == nil then
+			oneTimeQuests[questID] = false;
 		end
 	end
 
@@ -21124,7 +21116,7 @@ app.InitDataCoroutine = function()
 		32008,	-- Audrey Burnhep (A)
 		32009,	-- Varzok (H)
 	}) do
-		accountWideData.OneTimeQuests[questID] = nil;
+		oneTimeQuests[questID] = nil;
 	end
 
 	local anyComplete;
@@ -21160,7 +21152,7 @@ app.InitDataCoroutine = function()
 			-- If this Character has the Quest completed
 			if CompletedQuests[questID] then
 				-- Mark the quest as completed for the Account
-				accountWideData.Quests[questID] = 1;
+				acctQuests[questID] = 1;
 				anyComplete = true;
 			end
 		end
@@ -21168,8 +21160,8 @@ app.InitDataCoroutine = function()
 		if anyComplete then
 			for _,questID in ipairs(questGroup) do
 				-- Mark the quest completion since it's not 'really' completed
-				if not accountWideData.Quests[questID] then
-					accountWideData.Quests[questID] = 2;
+				if not acctQuests[questID] then
+					acctQuests[questID] = 2;
 				end
 			end
 		end
