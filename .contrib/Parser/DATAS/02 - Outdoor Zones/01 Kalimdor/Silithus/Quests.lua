@@ -194,6 +194,7 @@ _.Zones =
 					["repeatable"] = true,
 					["coord"] = { 53.15, 35.12, SILITHUS },
 					["sourceQuest"] = 8318,	-- Secret Communication
+					["cost"] = { { "i", 20404, 10 } },	-- 10x Encrypted Twilight Text
 				}),
 				q(8309,  {	-- Glyph Chasing
 					["provider"] = { "n", 15170 },	-- Rutgar Glyphshaper
@@ -252,6 +253,7 @@ _.Zones =
 				q(8318,  {	-- Secret Communication
 					["provider"] = { "n", 15306 },		-- Bor Wildmane
 					["coord"] = { 53.15, 35.12, SILITHUS },
+					["cost"] = { { "i", 20404, 10 } },	-- 10x Encrypted Twilight Text
 				}),
 				q(8857,  {	-- Secrets of the Colossus - Ashi - Was only possible during the 10 hours of AQ opening
 					["u"] = REMOVED_FROM_GAME,
@@ -317,6 +319,7 @@ _.Zones =
 					["coord"] = { 68.66, 63.03, SILITHUS },
 					["sourceQuest"] = 8323,	-- True Believers
 					["description"] = "Decoded True Believer Clippings will arrive in your mailbox approximately 12 hours after this quest is turned in.",
+					["cost"] = { { "i", 20404, 10 } },	-- 10x Encrypted Twilight Text
 					["g"] = {
 						i(20469, {	-- Decoded True Believer Clippings
 							i(20547),	-- Pattern: Runed Stygian Boots
@@ -440,6 +443,7 @@ _.Zones =
 					["provider"] = { "n", 15194 },	-- Hermit Ortell
 					["coord"] = { 68.7, 63.0, SILITHUS },
 					["sourceQuest"] = 8279,	-- The Twilight Lexicon
+					["cost"] = { { "i", 20404, 10 } },	-- 10x Encrypted Twilight Text
 				}),
 				q(8320,  {	-- Twilight Geolords
 					["provider"] = { "n", 15270 },	-- Huum Wildmane

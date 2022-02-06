@@ -6109,8 +6109,8 @@ end
 local function SortGroup(group, sortType, row, recur, conditionField)
 	if group.g then
 		-- either sort visible groups or by conditional
-		if (conditionField and group[conditionField] or group.visible) then
-			-- print("sorting",group.key,group.key and group[group.key],"by",sortType,"recur",recur,"condition",conditionField)
+        if (not conditionField and group.visible) or (conditionField and group[conditionField]) then
+			-- app.PrintDebug("sorting",group.key,group.key and group[group.key],"by",sortType,"recur",recur,"condition",conditionField)
 			if sortType == "name" then
 				app.Sort(group.g);
 			elseif sortType == "progress" then
