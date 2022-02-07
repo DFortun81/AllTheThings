@@ -16660,16 +16660,6 @@ function app:GetDataCache()
 			end;
 		end
 
-		-- Update Title data.
-		-- if titlesCategory then
-		-- 	titlesCategory.OnUpdate = function(self)
-		-- 		titlesCategory.g = app:BuildSearchResponse(app:GetWindow("Prime").data.g, "titleID");
-		-- 		-- reset indents and such
-		-- 		BuildGroups(titlesCategory, titlesCategory.g);
-		-- 		self.OnUpdate = nil;
-		-- 	end
-		-- end
-
 		-- Perform Heirloom caching/upgrade generation
 		app.CacheHeirlooms();
 
@@ -16733,6 +16723,8 @@ end
 function app:BuildSearchResponse(groups, field, value, clear)
 	if groups then
 		local t, response, v;
+		local includeUnavailableRecipes = not app.BuildSearchResponse_IgnoreUnavailableRecipes;
+		local ignoreBoEFilter = app.FilterItemClass_IgnoreBoEFilter;
 		for _,group in ipairs(groups) do
 			v = group[field];
 			response = nil;
@@ -16740,7 +16732,7 @@ function app:BuildSearchResponse(groups, field, value, clear)
 				(v == value or
 					(field == "requireSkill" and app.SpellIDToSkillID[app.SpecializationSpellIDs[v] or 0] == value))) then
 				-- some recipes are faction locked and cannot be learned by the current character, so don't include them if specified
-				if not app.BuildSearchResponse_IgnoreUnavailableRecipes or not group.spellID or app.FilterItemClass_IgnoreBoEFilter(group) then
+				if includeUnavailableRecipes or not group.spellID or ignoreBoEFilter(group) then
 					local clone = clear and CreateObject(group, true) or CreateObject(group);
 					if t then tinsert(t, clone);
 					else t = { clone }; end
