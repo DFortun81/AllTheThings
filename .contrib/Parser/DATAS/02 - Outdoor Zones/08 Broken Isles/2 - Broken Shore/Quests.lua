@@ -122,11 +122,13 @@ _.Zones =
 					["coord"] = { 44.6, 63.2, BROKEN_SHORE },
 				}),
 				q(47137, {	-- Champions of Legionfall
-				--#if AFTER 9.1.5
-					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
-				--#else
-					["sourceQuests"] = { 46247 },	-- Defending Broken Isles
-				--#endif
+					["sourceQuests"] = {
+						--#if AFTER 9.1.5
+						46734,	-- Assault on Broken Shore
+						--#else
+						46247,	-- Defending Broken Isles
+						--#endif
+					},
 					["description"] = "In addition to the prerequisite quests listed, you must complete your class's Order Hall Campaign to pick up this quest.",
 					["provider"] = { "n", 116576 },	-- Maiev Shadowsong
 					["coord"] = { 44.4, 63.4, BROKEN_SHORE },
