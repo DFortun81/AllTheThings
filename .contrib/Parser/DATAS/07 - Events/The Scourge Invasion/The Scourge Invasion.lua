@@ -383,7 +383,6 @@ root("WorldEvents", n(-540, -- The Scourge Invasion
 					["cost"] = {
 						{ "i", 22484, 15 },	-- Necrotic Rune
 					},
-					["repeatable"] = true,
 					["lvl"] = 50,
 					["groups"] = {
 						MAJOR_HEALING_POTION,	-- Major Healing Potion
@@ -426,7 +425,6 @@ root("WorldEvents", n(-540, -- The Scourge Invasion
 					["cost"] = {
 						{ "i", 22484, 15 },	-- Necrotic Rune
 					},
-					["repeatable"] = true,
 					["lvl"] = 50,
 					["groups"] = {
 						MAJOR_MANA_POTION,	-- Major Mana Potion

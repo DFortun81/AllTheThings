@@ -13,32 +13,38 @@ root("WorldEvents", n(-541,	-- The Silithyst Must Flow
 		["groups"] = {
 			q(9416, {	-- Report to General Kirika
 				["qg"] = 17081,	-- Scout Bloodfist
-				-- #if AFTER 7.2.0
-				["coord"] = { 53.0, 34.6, SILITHUS },
-				-- #else
-				["coord"] = { 49.0, 36.7, SILITHUS },
-				-- #endif
+				["coords"] = {
+					-- #if AFTER 7.2.0
+					{ 53.0, 34.6, SILITHUS },
+					-- #else
+					{ 49.0, 36.7, SILITHUS },
+					-- #endif
+				},
 				["races"] = HORDE_ONLY,
 				["lvl"] = lvlsquish(53, 15, 53),
 			}),
 			q(9415, {	-- Report to Marshal Bluewall
 				["qg"] = 17082,	-- Rifleman Torrig
-				-- #if AFTER 7.2.0
-				["coord"] = { 54.5, 32.9, SILITHUS },
-				-- #else
-				["coord"] = { 50.7, 34.7, SILITHUS },
-				-- #endif
+				["coords"] = {
+					-- #if AFTER 7.2.0
+					{ 54.5, 32.9, SILITHUS },
+					-- #else
+					{ 50.7, 34.7, SILITHUS },
+					-- #endif
+				},
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = lvlsquish(53, 15, 53),
 			}),
 			q(9419, {	-- Scouring the Desert [ALLIANCE]
 				["qg"] = 17080,	-- Marshal Bluewall
 				["sourceQuest"] = 9415,	-- Report to Marshal Bluewall
-				-- #if AFTER 7.2.0
-				["coord"] = { 39.6, 46.8, SILITHUS },
-				-- #else
-				["coord"] = { 33.3, 51.1, SILITHUS },
-				-- #endif
+				["coords"] = {
+					-- #if AFTER 7.2.0
+					{ 39.6, 46.8, SILITHUS },
+					-- #else
+					{ 33.3, 51.1, SILITHUS },
+					-- #endif
+				},
 				["timeline"] = { "removed 7.2.0" },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = lvlsquish(53, 15, 53),
@@ -52,11 +58,13 @@ root("WorldEvents", n(-541,	-- The Silithyst Must Flow
 			q(9422, {	-- Scouring the Desert [HORDE]
 				["qg"] = 17079,	-- General Kirika
 				["sourceQuest"] = 9416,	-- Report to General Kirika
-				-- #if AFTER 7.2.0
-				["coord"] = { 54.6, 62.8, SILITHUS },
-				-- #else
-				["coord"] = { 50.8, 69.5, SILITHUS },
-				-- #endif
+				["coords"] = {
+					-- #if AFTER 7.2.0
+					{ 54.6, 62.8, SILITHUS },
+					-- #else
+					{ 50.8, 69.5, SILITHUS },
+					-- #endif
+				},
 				["timeline"] = { "removed 7.2.0" },
 				["races"] = HORDE_ONLY,
 				["lvl"] = lvlsquish(53, 15, 53),
