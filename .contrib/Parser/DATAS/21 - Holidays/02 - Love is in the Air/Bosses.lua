@@ -60,103 +60,141 @@ _.Holidays = {
 			})),
 			tier(WOTLK_TIER, {
 				inst(277, {	-- Halls of Stone
-					d(2, {	-- Heroic
-						n(27975, {	-- Maiden of Grief
-							BOUQUET_EBON
+					["maps"] = { 140 },
+					["g"] = {
+						d(2, {	-- Heroic
+							n(27975, {	-- Maiden of Grief
+								BOUQUET_EBON
+							}),
 						}),
-					}),
+					},
 				}),
 				inst(285, {	-- Utgarde Keep
-					d(1, {	-- Normal
-						n(23953, {	-- Prince Keleseth
-							BOUQUET_RED,
+					["maps"] = { 133, 134, 135 },
+					["g"] = {
+						d(1, {	-- Normal
+							n(23953, {	-- Prince Keleseth
+								BOUQUET_RED,
+							}),
 						}),
-					}),
+					},
 				}),
 			}),
 			tier(CATA_TIER, {
 				inst(66, {	-- Blackrock Caverns
-					d(1, {	-- Normal
-						n(39679, {	-- Corla, Herald of Twilight
-							BOUQUET_RED,
+					["maps"] = { 283, 284 },
+					["g"] = {
+						d(1, {	-- Normal
+							n(39679, {	-- Corla, Herald of Twilight
+								BOUQUET_RED,
+							}),
 						}),
-					}),
-					d(2, {	-- Heroic
-						n(39679, {	-- Corla, Herald of Twilight
-							BOUQUET_RED,
+						d(2, {	-- Heroic
+							n(39679, {	-- Corla, Herald of Twilight
+								BOUQUET_RED,
+							}),
 						}),
-					}),
+					},
 				}),
 				inst(184, {	-- End Time
-					d(2, {	-- Heroic
-						n(54445, {	-- Echo of Jaina
-							BOUQUET_RED,
+					["maps"] = { 401, 402, 403, 404, 405, 406 },
+					["g"] = {
+						d(2, {	-- Heroic
+							n(54445, {	-- Echo of Jaina
+								BOUQUET_RED,
+							}),
+							n(54123, {	-- Echo of Sylvanas
+								BOUQUET_EBON
+							}),
 						}),
-						n(54123, {	-- Echo of Sylvanas
-							BOUQUET_EBON
-						}),
-					}),
+					},
 				}),
 				inst(71, {	-- Grim Batol
-					d(1, {	-- Normal
-						n(40319, {	-- Drahga Shadowburner
-							BOUQUET_RED,
+					["maps"] = { 293 },
+					["g"] = {
+						d(1, {	-- Normal
+							n(40319, {	-- Drahga Shadowburner
+								BOUQUET_RED,
+							}),
 						}),
-					}),
-					d(2, {	-- Heroic
-						n(40319, {	-- Drahga Shadowburner
-							BOUQUET_RED,
+						d(2, {	-- Heroic
+							n(40319, {	-- Drahga Shadowburner
+								BOUQUET_RED,
+							}),
 						}),
-					}),
+					},
 				}),
 				inst(186, {	-- Hour of Twilight
-					d(2, {	-- Heroic
-						n(54968, {	-- Asira Dawnslayer
-							BOUQUET_RED,
+					["maps"] = { 399, 400 },
+					["g"] = {
+						d(2, {	-- Heroic
+							n(54968, {	-- Asira Dawnslayer
+								BOUQUET_RED,
+							}),
 						}),
-					}),
+					},
 				}),
 				inst(64, {	-- Shadowfang Keep
-					d(2, {	-- Heroic
-						n(46964, {	-- Lord Godfrey
-							BOUQUET_EBON,
-							BOUQUET_RED,
+					["maps"] = {
+						SHADOWFANG_KEEP,
+						SHADOWFANG_KEEP_LEVEL2,
+						SHADOWFANG_KEEP_LEVEL3,
+						SHADOWFANG_KEEP_LEVEL4,
+						SHADOWFANG_KEEP_LEVEL5,
+						SHADOWFANG_KEEP_LEVEL6,
+						SHADOWFANG_KEEP_LEVEL7
+					},
+					["g"] = {
+						d(2, {	-- Heroic
+							n(46964, {	-- Lord Godfrey
+								BOUQUET_EBON,
+								BOUQUET_RED,
+							}),
 						}),
-					}),
+					},
 				}),
 				inst(63, {	-- The Deadmines
-					d(2, {	-- Heroic
-						n(47626, {	-- Admiral Ripsnarl
-							BOUQUET_EBON,
-							BOUQUET_RED,
+					["maps"] = { 292 },
+					["g"] = {
+						d(2, {	-- Heroic
+							n(47626, {	-- Admiral Ripsnarl
+								BOUQUET_EBON,
+								BOUQUET_RED,
+							}),
 						}),
-					}),
+					},
 				}),
 				inst(67, {	-- The Stonecore
-					d(1, {	-- Normal
-						n(42333, {	-- High Priestess Azil
-							BOUQUET_RED,
+					["maps"] = { 324 },
+					["g"] = {
+						d(1, {	-- Normal
+							n(42333, {	-- High Priestess Azil
+								BOUQUET_RED,
+							}),
 						}),
-					}),
-					d(2, {	-- Heroic
-						n(42333, {	-- High Priestess Azil
-							BOUQUET_RED,
+						d(2, {	-- Heroic
+							n(42333, {	-- High Priestess Azil
+								BOUQUET_RED,
+							}),
 						}),
-					}),
+					},
 				}),
 			}),
 			tier(WOD_TIER, {
 				inst(537, {	-- Shadowmoon Burial Grounds
-					d(1, {	-- Normal
-						cr(75509, e(1139, {	-- Sadana Bloodfury
-							BOUQUET_EBON
-						})),
-					}),
-					--[[d(23, {	-- Mythic
-						cr(75509, e(1139, {	-- Sadana Bloodfury
-							BOUQUET_EBON
-						})),
-					}),]]--
+					["maps"] = { 574, 575, 576 },
+					["g"] = {
+						d(1, {	-- Normal
+							cr(75509, e(1139, {	-- Sadana Bloodfury
+								BOUQUET_EBON
+							})),
+						}),
+						--[[d(23, {	-- Mythic
+							cr(75509, e(1139, {	-- Sadana Bloodfury
+								BOUQUET_EBON
+							})),
+						}),]]--
+					},
 				}),
 			}),
 		}),
