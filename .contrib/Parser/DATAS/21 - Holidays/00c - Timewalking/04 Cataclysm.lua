@@ -12,12 +12,12 @@ root("Holidays", d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
 				{ 49.8, 37.6, ORGRIMMAR },
 			},
 		}),
-		q(40786, {	-- The Smoldering Ember (A)
+		q(40787, {	-- The Smoldering Ember (A)
 			["provider"] = { "i", 133378 },	-- Smoldering Timewarped Ember
 			["isWeekly"] = true,
 			["races"] = ALLIANCE_ONLY,
 		}),
-		q(40787, {	-- The Smoldering Ember (H)
+		q(40786, {	-- The Smoldering Ember (H)
 			["provider"] = { "i", 133377 },	-- Smoldering Timewarped Ember
 			["isWeekly"] = true,
 			["races"] = HORDE_ONLY,
