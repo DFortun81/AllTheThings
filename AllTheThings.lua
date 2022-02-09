@@ -8612,6 +8612,7 @@ end
 end)();
 
 -- Follower Lib
+-- TODO: use caching instead of 'info'
 (function()
 local C_Garrison_GetFollowerInfo = C_Garrison.GetFollowerInfo;
 local C_Garrison_GetFollowerLink = C_Garrison.GetFollowerLink;
@@ -8630,6 +8631,9 @@ local fields = {
 		return {};
 	end,
 	["text"] = function(t)
+		return t.info.name;
+	end,
+	["name"] = function(t)
 		return t.info.name;
 	end,
 	["icon"] = function(t)
