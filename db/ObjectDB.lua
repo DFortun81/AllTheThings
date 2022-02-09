@@ -75,6 +75,7 @@ select(2, ...).ObjectNames = {
 	[148504] = "A Conspicuous Gravestone",
 	[149036] = "Marvon's Chest",
 	[149502] = "Hoard of the Black Dragonflight",
+	[151286] = "Kaldorei Tome of Summoning",
 	[160836] = "Relic Coffer",
 	[161495] = "Secret Safe",
 	[161504] = "A Small Pack",

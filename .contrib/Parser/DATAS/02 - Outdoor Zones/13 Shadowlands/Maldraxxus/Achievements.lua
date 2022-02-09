@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
+root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 	m(MALDRAXXUS, {
 		n(ACHIEVEMENTS, {
 			petbattle(ach(14881, {	-- Abhorrent Adversaries of the Afterlife
