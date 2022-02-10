@@ -133,6 +133,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						removeclassicphase(ach(2359, {	-- Swift Flight Form
 							["timeline"] = { "removed 4.0.1" },
 							["classes"] = { DRUID },
+							["f"] = 100,
 							-- #if BEFORE WRATH
 							["description"] = "Completed the druid quest to obtain Swift Flight Form.",
 							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(11001)); end]],
@@ -290,6 +291,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						["groups"] = {
 							removeclassicphase(ach(883, {	-- Reins of the Raven Lord
 								["provider"] = { "i", 32768 },	-- Reins of the Raven Lord
+								["f"] = 100,
 								-- #if BEFORE WRATH
 								["description"] = "Obtain the Reins of the Raven Lord from Anzu in Sethekk Halls.",
 								["OnUpdate"] = [[function(t)
