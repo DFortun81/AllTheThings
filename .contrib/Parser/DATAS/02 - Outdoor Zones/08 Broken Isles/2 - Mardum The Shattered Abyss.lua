@@ -28,6 +28,11 @@ _.Zones =
 						["coord"] = { 28.5, 63.0, 672 },
 						["sourceQuests"] = { 40077 },	-- Treads of Illidari Supremacy
 						["provider"] = { "n", 98229 },	-- Kayn Sunfury
+						["g"] = {
+							mount(200175, {	-- Felsaber
+								["classes"] = { DEMONHUNTER },
+							}),
+						},
 					}),
 					q(39279, {	-- Assault on Mardum
 						["sourceQuests"] = { 40077 },	-- Treads of Illidari Supremacy
