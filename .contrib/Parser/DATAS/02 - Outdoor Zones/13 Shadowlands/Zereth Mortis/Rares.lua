@@ -533,8 +533,6 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		i(190951),	-- Distinguished Blade of Cartel Al
 		i(190946),	-- Emerald-Heart Protomaul
 		i(190950),	-- Gavel of Lost Purpose
-		i(190945),	-- Greatmaul of the Ancient Sentinels
-		i(190947),	-- Halo-Stave of the Oracles
 		i(190943),	-- Jiro Tuning Hammer
 		i(190944),	-- Mace of Renewed Purpose
 		i(190948),	-- Staff of the Dormant Oracle

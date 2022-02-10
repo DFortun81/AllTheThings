@@ -54,7 +54,7 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE },{
 		i(156564),			-- Shu-zen, the Divine Sentinel
 		mount(308078),		-- Squeakers, the Trickster
 		mount(326390),		-- Steamscale Incinerator
-		mount(317177),		-- Sunwarmed Purrkin
+		--mount(317177),		-- Sunwarmed Purrkin
 		i(92724, {			-- Swift Windsteed
 			["u"] = REMOVED_FROM_GAME,
 		}),

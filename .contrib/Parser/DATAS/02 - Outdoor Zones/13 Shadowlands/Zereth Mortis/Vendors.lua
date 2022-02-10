@@ -6,6 +6,34 @@ local CYPHER = 1979;
 root("Zones", m(SHADOWLANDS, {
 	m(ZERETH_MORTIS, {
 		n(VENDORS, {
+			o(375368, {	-- Creation Catalyst Console
+				["coord"] = { 47.4, 88.6, ZERETH_MORTIS },
+				["sym"] = {
+					{"select", "itemID",
+						191010,	-- Dreadful Chest Module
+						191014,	-- Dreadful Hand Module
+						191005,	-- Dreadful Helm Module
+						191018,	-- Dreadful Leg Module
+						191006,	-- Dreadful Shoulder Module
+						191011,	-- Mystic Chest Module
+						191015,	-- Mystic Hand Module
+						191002,	-- Mystic Helm Module
+						191019,	-- Mystic Leg Module
+						191007,	-- Mystic Shoulder Module
+						191012,	-- Venerated Chest Module
+						191016,	-- Venerated Hand Module
+						191003,	-- Venerated Helm Module
+						191020,	-- Venerated Leg Module
+						191008,	-- Venerated Shoulder Module
+						191013,	-- Zenith Chest Module
+						191017,	-- Zenith Hand Module
+						191004,	-- Zenith Helm Module
+						191021,	-- Zenith Leg Module
+						191009,	-- Zenith Shoulder Module
+					},
+				},
+
+			}),
 			n(185587, {	-- Elder Rafiq
 				["coord"] = { 60.6, 51, ZERETH_MORTIS },
 				["g"] = sharedData({ ["modID"] = 28 }, {
@@ -255,6 +283,10 @@ root("Zones", m(SHADOWLANDS, {
 					}),
 					i(187781, {	-- Olea Cache
 						["cost"] = { { "c", CYPHER, 700 }, },
+						["g"] = {
+							i(190945),	-- Greatmaul of the Ancient Sentinels
+							i(190947),	-- Halo-Stave of the Oracles
+						},
 					}),
 					i(187824, {	-- Formula: Magically Regulated Automa Core (RECIPE!)
 						["recipeID"] = 360007,	-- Magically Regulated Automa Core

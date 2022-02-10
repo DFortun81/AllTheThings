@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
+root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.5" } }, {
 	inst(1195, {	-- Sepulcher of the First Ones
 		["isRaid"] = true,
 		["coord"] = { 80.9, 53.4, ZERETH_MORTIS },
@@ -58,7 +58,14 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 			}),
 			d(17, {	-- LFR
 				n(ZONE_DROPS, {
-
+					i(190629),	-- Cartel's Larcenous Toecaps
+					i(190630),	-- Devouring Pellicle Shoulderpads
+					i(190624),	-- Gauntlets of the End
+					i(190626),	-- Hood of Empty Eternities
+					i(190628),	-- Lupine's Synthetic Headgear
+					i(190625),	-- Pauldrons of Possible Afterlives
+					i(190627),	-- Subversive Lord's Leggings
+					i(190631),	-- Vandalized Ephemera Mitts
 				}),
 				ach(15493, {	-- Ephemeral Plains
 					["collectible"] = false,
@@ -147,18 +154,26 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 								i(188263),	-- Reclaimer's Intensity Core
 								i(189833),	-- Taciturn Keeper's Lapis
 								-- Tier
-								i(188866),	-- Chausses of the First Eidolon
-								i(188893),	-- Mercurial Punisher's Breeches
-								i(188848),	-- Leggings of the Fixed Stars
-								i(188860),	-- Godstalker's Tassets
-								i(188842),	-- Erudite Occultist's Leggings
-								i(188911),	-- Legguards of the Grand Upwelling
-								i(188931),	-- Luminous Chevalier's Robes
-								i(188878),	-- Leggings of the Empyrean
-								i(188902),	-- Soulblade Leggings
-								i(188924),	-- Theurgic Starspeaker's Tassets
-								i(188887),	-- Leggings of the Demon Star
-								i(188940),	-- Legplates of the Infinite Infantry
+								i(191018, {	-- Dreadful Leg Module
+									i(188866),	-- Chausses of the First Eidolon
+									i(188893),	-- Mercurial Punisher's Breeches
+									i(188887),	-- Leggings of the Demon Star
+								}),
+								i(191019, {	-- Mystic Leg Module
+									i(188848),	-- Leggings of the Fixed Stars
+									i(188860),	-- Godstalker's Tassets
+									i(188842),	-- Erudite Occultist's Leggings
+								}),
+								i(191020, {	-- Venerated Leg Module
+									i(188931),	-- Luminous Chevalier's Robes
+									i(188878),	-- Leggings of the Empyrean
+									i(188924),	-- Theurgic Starspeaker's Tassets
+								}),
+								i(191021, {	-- Zenith Leg Module
+									i(188911),	-- Legguards of the Grand Upwelling
+									i(188902),	-- Soulblade Leggings
+									i(188940),	-- Legplates of the Infinite Infantry
+								}),
 							},
 						}),
 					},
@@ -229,18 +244,26 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 								i(189802),	-- Loquacious Keeper's Peridot
 								i(188269),	-- Pocket Protoforge
 								-- Tier
-								i(188863),	-- Gauntlets of the First Eidolon
-								i(188898),	-- Mercurial Punisher's Grips
-								i(188853),	-- Handwraps of the Fixed Stars
-								i(188861),	-- Godstalker's Gauntlets
-								i(188845),	-- Erudite Occultist's Handwraps
-								i(188916),	-- Grips of the Grand Upwelling
-								i(188928),	-- Luminous Chevalier's Gauntlets
-								i(188881),	-- Caress of the Empyrean
-								i(188907),	-- Soulblade Grasps
-								i(188925),	-- Theurgic Starspeaker's Runebindings
-								i(188890),	-- Grasps of the Demon Star
-								i(188937),	-- Grasps of the Infinite Infantry
+								i(191014, {	-- Dreadful Hand Module
+									i(188863),	-- Gauntlets of the First Eidolon
+									i(188898),	-- Mercurial Punisher's Grips
+									i(188890),	-- Grasps of the Demon Star
+								}),
+								i(191015, {	-- Mystic Hand Module
+									i(188853),	-- Handwraps of the Fixed Stars
+									i(188861),	-- Godstalker's Gauntlets
+									i(188845),	-- Erudite Occultist's Handwraps
+								}),
+								i(191016, {	-- Venerated Hand Module
+									i(188928),	-- Luminous Chevalier's Gauntlets
+									i(188881),	-- Caress of the Empyrean
+									i(188925),	-- Theurgic Starspeaker's Runebindings
+								}),
+								i(191017, {	-- Zenith Hand Module
+									i(188916),	-- Grips of the Grand Upwelling
+									i(188907),	-- Soulblade Grasps
+									i(188937),	-- Grasps of the Infinite Infantry
+								}),
 							},
 						}),
 					},
@@ -264,19 +287,26 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 								i(188262),	-- The Lion's Roar
 								i(189836),	-- Wrists of the Wicked Star
 								-- Tier
-								i(188868),	-- Visage of the First Eidolon
-								i(188892),	-- Mercurial Punisher's Hood
-								i(188847),	-- Headpiece of the Fixed Stars
-								i(188859),	-- Godstalker's Sallet
-								i(188844),	-- Erudite Occultist's Hood
-								i(188910),	-- Crown of the Grand Upwelling
-								i(188933),	-- Luminous Chevalier's Casque
-								i(188880),	-- Amice of the Empyrean
-								i(188901),	-- Soulblade Guise
-								i(188923),	-- Theurgic Starspeaker's Howl
-								i(188889),	-- Horns of the Demon Star
-								i(188942),	-- Gaze of the Infinite Infantry
-
+								i(191005, {	-- Dreadful Helm Module
+									i(188868),	-- Visage of the First Eidolon
+									i(188892),	-- Mercurial Punisher's Hood
+									i(188889),	-- Horns of the Demon Star
+								}),
+								i(191002, {	-- Mystic Helm Module
+									i(188847),	-- Headpiece of the Fixed Stars
+									i(188859),	-- Godstalker's Sallet
+									i(188844),	-- Erudite Occultist's Hood
+								}),
+								i(191003, {	-- Venerated Helm Module
+									i(188933),	-- Luminous Chevalier's Casque
+									i(188880),	-- Amice of the Empyrean
+									i(188923),	-- Theurgic Starspeaker's Howl
+								}),
+								i(191004, {	-- Zenith Helm Module
+									i(188910),	-- Crown of the Grand Upwelling
+									i(188901),	-- Soulblade Guise
+									i(188942),	-- Gaze of the Infinite Infantry
+								}),
 							},
 						}),
 						e(2543, {	-- Lords of Dread
@@ -298,18 +328,26 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 								i(189845),	-- Ruined Crest of Lordaeron
 								i(189847),	-- Shroud of the Sire's Chosen
 								-- Tier
-								i(188867),	-- Shoulderplates of the First Eidolon
-								i(188896),	-- Mercurial Punisher's Shoulderpads
-								i(188851),	-- Shoulderpads of the Fixed Stars
-								i(188856),	-- Godstalker's Pauldrons
-								i(188843),	-- Erudite Occultist's Mantle
-								i(188914),	-- Tassets of the Grand Upwelling
-								i(188932),	-- Luminous Chevalier's Epaulettes
-								i(188879),	-- Capelet of the Empyrean
-								i(188905),	-- Soulblade Nightwings
-								i(188920),	-- Theurgic Starspeaker's Adornment
-								i(188888),	-- Mantle of the Demon Star
-								i(188941),	-- Pauldrons of the Infinite Infantry
+								i(191006, {	-- Dreadful Shoulder Module
+									i(188867),	-- Shoulderplates of the First Eidolon
+									i(188896),	-- Mercurial Punisher's Shoulderpads
+									i(188888),	-- Mantle of the Demon Star
+								}),
+								i(191007, {	-- Mystic Shoulder Module
+									i(188851),	-- Shoulderpads of the Fixed Stars
+									i(188856),	-- Godstalker's Pauldrons
+									i(188843),	-- Erudite Occultist's Mantle
+								}),
+								i(191008, {	-- Venerated Shoulder Module
+									i(188932),	-- Luminous Chevalier's Epaulettes
+									i(188879),	-- Capelet of the Empyrean
+									i(188920),	-- Theurgic Starspeaker's Adornment
+								}),
+								i(191009, {	-- Zenith Shoulder Module
+									i(188914),	-- Tassets of the Grand Upwelling
+									i(188905),	-- Soulblade Nightwings
+									i(188941),	-- Pauldrons of the Infinite Infantry
+								}),
 							},
 						}),
 						e(2549, {	-- Rygelon
@@ -329,18 +367,26 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 								i(189854),	-- Rygelon's Heraldric Ring
 								i(189848),	-- Treads of Titanic Curiosity
 								-- Tier
-								i(188864),	-- Carapace of the First Eidolon
-								i(188894),	-- Mercurial Punisher's Jerkin
-								i(188849),	-- Chestguard of the Fixed Stars
-								i(188858),	-- Godstalker's Hauberk
-								i(188839),	-- Erudite Occultist's Robes
-								i(188912),	-- Cuirass of the Grand Upwelling
-								i(188929),	-- Luminous Chevalier's Plackart
-								i(188875),	-- Habit of the Empyrean
-								i(188903),	-- Soulblade Leathers
-								i(188922),	-- Theurgic Starspeaker's Ringmail
-								i(188884),	-- Robes of the Demon Star
-								i(188938),	-- Breastplate of the Infinite Infantry
+								i(191010, {	-- Dreadful Chest Module
+									i(188864),	-- Carapace of the First Eidolon
+									i(188894),	-- Mercurial Punisher's Jerkin
+									i(188884),	-- Robes of the Demon Star
+								}),
+								i(191011, {	-- Mystic Chest Module
+									i(188849),	-- Chestguard of the Fixed Stars
+									i(188858),	-- Godstalker's Hauberk
+									i(188839),	-- Erudite Occultist's Robes
+								}),
+								i(191012, {	-- Venerated Chest Module
+									i(188929),	-- Luminous Chevalier's Plackart
+									i(188875),	-- Habit of the Empyrean
+									i(188922),	-- Theurgic Starspeaker's Ringmail
+								}),
+								i(191013, {	-- Zenith Chest Module
+									i(188912),	-- Cuirass of the Grand Upwelling
+									i(188903),	-- Soulblade Leathers
+									i(188938),	-- Breastplate of the Infinite Infantry
+								}),
 							},
 						}),
 					},
@@ -376,7 +422,14 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 
 				}),
 				n(ZONE_DROPS, {
-
+					i(190629),	-- Cartel's Larcenous Toecaps
+					i(190630),	-- Devouring Pellicle Shoulderpads
+					i(190624),	-- Gauntlets of the End
+					i(190626),	-- Hood of Empty Eternities
+					i(190628),	-- Lupine's Synthetic Headgear
+					i(190625),	-- Pauldrons of Possible Afterlives
+					i(190627),	-- Subversive Lord's Leggings
+					i(190631),	-- Vandalized Ephemera Mitts
 				}),
 				e(2512, {	-- Vigilant Guardian
 					["crs"] = {
@@ -510,18 +563,26 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189802),	-- Loquacious Keeper's Peridot
 						i(188269),	-- Pocket Protoforge
 						-- Tier
-						i(188863),	-- Gauntlets of the First Eidolon
-						i(188898),	-- Mercurial Punisher's Grips
-						i(188853),	-- Handwraps of the Fixed Stars
-						i(188861),	-- Godstalker's Gauntlets
-						i(188845),	-- Erudite Occultist's Handwraps
-						i(188916),	-- Grips of the Grand Upwelling
-						i(188928),	-- Luminous Chevalier's Gauntlets
-						i(188881),	-- Caress of the Empyrean
-						i(188907),	-- Soulblade Grasps
-						i(188925),	-- Theurgic Starspeaker's Runebindings
-						i(188890),	-- Grasps of the Demon Star
-						i(188937),	-- Grasps of the Infinite Infantry
+						i(191014, {	-- Dreadful Hand Module
+							i(188863),	-- Gauntlets of the First Eidolon
+							i(188898),	-- Mercurial Punisher's Grips
+							i(188890),	-- Grasps of the Demon Star
+						}),
+						i(191015, {	-- Mystic Hand Module
+							i(188853),	-- Handwraps of the Fixed Stars
+							i(188861),	-- Godstalker's Gauntlets
+							i(188845),	-- Erudite Occultist's Handwraps
+						}),
+						i(191016, {	-- Venerated Hand Module
+							i(188928),	-- Luminous Chevalier's Gauntlets
+							i(188881),	-- Caress of the Empyrean
+							i(188925),	-- Theurgic Starspeaker's Runebindings
+						}),
+						i(191017, {	-- Zenith Hand Module
+							i(188916),	-- Grips of the Grand Upwelling
+							i(188907),	-- Soulblade Grasps
+							i(188937),	-- Grasps of the Infinite Infantry
+						}),
 					},
 				}),
 				e(2529, {	-- Halondrus the Reclaimer
@@ -540,18 +601,26 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(188263),	-- Reclaimer's Intensity Core
 						i(189833),	-- Taciturn Keeper's Lapis
 						-- Tier
-						i(188866),	-- Chausses of the First Eidolon
-						i(188893),	-- Mercurial Punisher's Breeches
-						i(188848),	-- Leggings of the Fixed Stars
-						i(188860),	-- Godstalker's Tassets
-						i(188842),	-- Erudite Occultist's Leggings
-						i(188911),	-- Legguards of the Grand Upwelling
-						i(188931),	-- Luminous Chevalier's Robes
-						i(188878),	-- Leggings of the Empyrean
-						i(188902),	-- Soulblade Leggings
-						i(188924),	-- Theurgic Starspeaker's Tassets
-						i(188887),	-- Leggings of the Demon Star
-						i(188940),	-- Legplates of the Infinite Infantry
+						i(191018, {	-- Dreadful Leg Module
+							i(188866),	-- Chausses of the First Eidolon
+							i(188893),	-- Mercurial Punisher's Breeches
+							i(188887),	-- Leggings of the Demon Star
+						}),
+						i(191019, {	-- Mystic Leg Module
+							i(188848),	-- Leggings of the Fixed Stars
+							i(188860),	-- Godstalker's Tassets
+							i(188842),	-- Erudite Occultist's Leggings
+						}),
+						i(191020, {	-- Venerated Leg Module
+							i(188931),	-- Luminous Chevalier's Robes
+							i(188878),	-- Leggings of the Empyrean
+							i(188924),	-- Theurgic Starspeaker's Tassets
+						}),
+						i(191021, {	-- Zenith Leg Module
+							i(188911),	-- Legguards of the Grand Upwelling
+							i(188902),	-- Soulblade Leggings
+							i(188940),	-- Legplates of the Infinite Infantry
+						}),
 					},
 				}),
 				e(2546, {	-- Anduin Wrynn
@@ -571,19 +640,26 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189836),	-- Wrists of the Wicked Star
 						i(190967),	-- Mourne Fragment (QUEST!)
 						-- Tier
-						i(188868),	-- Visage of the First Eidolon
-						i(188892),	-- Mercurial Punisher's Hood
-						i(188847),	-- Headpiece of the Fixed Stars
-						i(188859),	-- Godstalker's Sallet
-						i(188844),	-- Erudite Occultist's Hood
-						i(188910),	-- Crown of the Grand Upwelling
-						i(188933),	-- Luminous Chevalier's Casque
-						i(188880),	-- Amice of the Empyrean
-						i(188901),	-- Soulblade Guise
-						i(188923),	-- Theurgic Starspeaker's Howl
-						i(188889),	-- Horns of the Demon Star
-						i(188942),	-- Gaze of the Infinite Infantry
-
+						i(191005, {	-- Dreadful Helm Module
+							i(188868),	-- Visage of the First Eidolon
+							i(188892),	-- Mercurial Punisher's Hood
+							i(188889),	-- Horns of the Demon Star
+						}),
+						i(191002, {	-- Mystic Helm Module
+							i(188847),	-- Headpiece of the Fixed Stars
+							i(188859),	-- Godstalker's Sallet
+							i(188844),	-- Erudite Occultist's Hood
+						}),
+						i(191003, {	-- Venerated Helm Module
+							i(188933),	-- Luminous Chevalier's Casque
+							i(188880),	-- Amice of the Empyrean
+							i(188923),	-- Theurgic Starspeaker's Howl
+						}),
+						i(191004, {	-- Zenith Helm Module
+							i(188910),	-- Crown of the Grand Upwelling
+							i(188901),	-- Soulblade Guise
+							i(188942),	-- Gaze of the Infinite Infantry
+						}),
 					},
 				}),
 				e(2543, {	-- Lords of Dread
@@ -605,18 +681,26 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189845),	-- Ruined Crest of Lordaeron
 						i(189847),	-- Shroud of the Sire's Chosen
 						-- Tier
-						i(188867),	-- Shoulderplates of the First Eidolon
-						i(188896),	-- Mercurial Punisher's Shoulderpads
-						i(188851),	-- Shoulderpads of the Fixed Stars
-						i(188856),	-- Godstalker's Pauldrons
-						i(188843),	-- Erudite Occultist's Mantle
-						i(188914),	-- Tassets of the Grand Upwelling
-						i(188932),	-- Luminous Chevalier's Epaulettes
-						i(188879),	-- Capelet of the Empyrean
-						i(188905),	-- Soulblade Nightwings
-						i(188920),	-- Theurgic Starspeaker's Adornment
-						i(188888),	-- Mantle of the Demon Star
-						i(188941),	-- Pauldrons of the Infinite Infantry
+						i(191006, {	-- Dreadful Shoulder Module
+							i(188867),	-- Shoulderplates of the First Eidolon
+							i(188896),	-- Mercurial Punisher's Shoulderpads
+							i(188888),	-- Mantle of the Demon Star
+						}),
+						i(191007, {	-- Mystic Shoulder Module
+							i(188851),	-- Shoulderpads of the Fixed Stars
+							i(188856),	-- Godstalker's Pauldrons
+							i(188843),	-- Erudite Occultist's Mantle
+						}),
+						i(191008, {	-- Venerated Shoulder Module
+							i(188932),	-- Luminous Chevalier's Epaulettes
+							i(188879),	-- Capelet of the Empyrean
+							i(188920),	-- Theurgic Starspeaker's Adornment
+						}),
+						i(191009, {	-- Zenith Shoulder Module
+							i(188914),	-- Tassets of the Grand Upwelling
+							i(188905),	-- Soulblade Nightwings
+							i(188941),	-- Pauldrons of the Infinite Infantry
+						}),
 					},
 				}),
 				e(2549, {	-- Rygelon
@@ -636,18 +720,26 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189854),	-- Rygelon's Heraldric Ring
 						i(189848),	-- Treads of Titanic Curiosity
 						-- Tier
-						i(188864),	-- Carapace of the First Eidolon
-						i(188894),	-- Mercurial Punisher's Jerkin
-						i(188849),	-- Chestguard of the Fixed Stars
-						i(188858),	-- Godstalker's Hauberk
-						i(188839),	-- Erudite Occultist's Robes
-						i(188912),	-- Cuirass of the Grand Upwelling
-						i(188929),	-- Luminous Chevalier's Plackart
-						i(188875),	-- Habit of the Empyrean
-						i(188903),	-- Soulblade Leathers
-						i(188922),	-- Theurgic Starspeaker's Ringmail
-						i(188884),	-- Robes of the Demon Star
-						i(188938),	-- Breastplate of the Infinite Infantry
+						i(191010, {	-- Dreadful Chest Module
+							i(188864),	-- Carapace of the First Eidolon
+							i(188894),	-- Mercurial Punisher's Jerkin
+							i(188884),	-- Robes of the Demon Star
+						}),
+						i(191011, {	-- Mystic Chest Module
+							i(188849),	-- Chestguard of the Fixed Stars
+							i(188858),	-- Godstalker's Hauberk
+							i(188839),	-- Erudite Occultist's Robes
+						}),
+						i(191012, {	-- Venerated Chest Module
+							i(188929),	-- Luminous Chevalier's Plackart
+							i(188875),	-- Habit of the Empyrean
+							i(188922),	-- Theurgic Starspeaker's Ringmail
+						}),
+						i(191013, {	-- Zenith Chest Module
+							i(188912),	-- Cuirass of the Grand Upwelling
+							i(188903),	-- Soulblade Leathers
+							i(188938),	-- Breastplate of the Infinite Infantry
+						}),
 					},
 				}),
 				e(2537, {	-- The Jailer
@@ -681,7 +773,14 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
  					}),
 				}),
 				n(ZONE_DROPS, {
-
+					i(190629),	-- Cartel's Larcenous Toecaps
+					i(190630),	-- Devouring Pellicle Shoulderpads
+					i(190624),	-- Gauntlets of the End
+					i(190626),	-- Hood of Empty Eternities
+					i(190628),	-- Lupine's Synthetic Headgear
+					i(190625),	-- Pauldrons of Possible Afterlives
+					i(190627),	-- Subversive Lord's Leggings
+					i(190631),	-- Vandalized Ephemera Mitts
 				}),
 				e(2512, {	-- Vigilant Guardian
 					["crs"] = {
@@ -808,18 +907,26 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189802),	-- Loquacious Keeper's Peridot
 						i(188269),	-- Pocket Protoforge
 						-- Tier
-						i(188863),	-- Gauntlets of the First Eidolon
-						i(188898),	-- Mercurial Punisher's Grips
-						i(188853),	-- Handwraps of the Fixed Stars
-						i(188861),	-- Godstalker's Gauntlets
-						i(188845),	-- Erudite Occultist's Handwraps
-						i(188916),	-- Grips of the Grand Upwelling
-						i(188928),	-- Luminous Chevalier's Gauntlets
-						i(188881),	-- Caress of the Empyrean
-						i(188907),	-- Soulblade Grasps
-						i(188925),	-- Theurgic Starspeaker's Runebindings
-						i(188890),	-- Grasps of the Demon Star
-						i(188937),	-- Grasps of the Infinite Infantry
+						i(191014, {	-- Dreadful Hand Module
+							i(188863),	-- Gauntlets of the First Eidolon
+							i(188898),	-- Mercurial Punisher's Grips
+							i(188890),	-- Grasps of the Demon Star
+						}),
+						i(191015, {	-- Mystic Hand Module
+							i(188853),	-- Handwraps of the Fixed Stars
+							i(188861),	-- Godstalker's Gauntlets
+							i(188845),	-- Erudite Occultist's Handwraps
+						}),
+						i(191016, {	-- Venerated Hand Module
+							i(188928),	-- Luminous Chevalier's Gauntlets
+							i(188881),	-- Caress of the Empyrean
+							i(188925),	-- Theurgic Starspeaker's Runebindings
+						}),
+						i(191017, {	-- Zenith Hand Module
+							i(188916),	-- Grips of the Grand Upwelling
+							i(188907),	-- Soulblade Grasps
+							i(188937),	-- Grasps of the Infinite Infantry
+						}),
 					},
 				}),
 				e(2529, {	-- Halondrus the Reclaimer
@@ -837,18 +944,26 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(188263),	-- Reclaimer's Intensity Core
 						i(189833),	-- Taciturn Keeper's Lapis
 						-- Tier
-						i(188866),	-- Chausses of the First Eidolon
-						i(188893),	-- Mercurial Punisher's Breeches
-						i(188848),	-- Leggings of the Fixed Stars
-						i(188860),	-- Godstalker's Tassets
-						i(188842),	-- Erudite Occultist's Leggings
-						i(188911),	-- Legguards of the Grand Upwelling
-						i(188931),	-- Luminous Chevalier's Robes
-						i(188878),	-- Leggings of the Empyrean
-						i(188902),	-- Soulblade Leggings
-						i(188924),	-- Theurgic Starspeaker's Tassets
-						i(188887),	-- Leggings of the Demon Star
-						i(188940),	-- Legplates of the Infinite Infantry
+						i(191018, {	-- Dreadful Leg Module
+							i(188866),	-- Chausses of the First Eidolon
+							i(188893),	-- Mercurial Punisher's Breeches
+							i(188887),	-- Leggings of the Demon Star
+						}),
+						i(191019, {	-- Mystic Leg Module
+							i(188848),	-- Leggings of the Fixed Stars
+							i(188860),	-- Godstalker's Tassets
+							i(188842),	-- Erudite Occultist's Leggings
+						}),
+						i(191020, {	-- Venerated Leg Module
+							i(188931),	-- Luminous Chevalier's Robes
+							i(188878),	-- Leggings of the Empyrean
+							i(188924),	-- Theurgic Starspeaker's Tassets
+						}),
+						i(191021, {	-- Zenith Leg Module
+							i(188911),	-- Legguards of the Grand Upwelling
+							i(188902),	-- Soulblade Leggings
+							i(188940),	-- Legplates of the Infinite Infantry
+						}),
 					},
 				}),
 				e(2546, {	-- Anduin Wrynn
@@ -867,18 +982,26 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189836),	-- Wrists of the Wicked Star
 						i(190966),	-- Mourne Fragment (QUEST!)
 						-- Tier
-						i(188868),	-- Visage of the First Eidolon
-						i(188892),	-- Mercurial Punisher's Hood
-						i(188847),	-- Headpiece of the Fixed Stars
-						i(188859),	-- Godstalker's Sallet
-						i(188844),	-- Erudite Occultist's Hood
-						i(188910),	-- Crown of the Grand Upwelling
-						i(188933),	-- Luminous Chevalier's Casque
-						i(188880),	-- Amice of the Empyrean
-						i(188901),	-- Soulblade Guise
-						i(188923),	-- Theurgic Starspeaker's Howl
-						i(188889),	-- Horns of the Demon Star
-						i(188942),	-- Gaze of the Infinite Infantry
+						i(191005, {	-- Dreadful Helm Module
+							i(188868),	-- Visage of the First Eidolon
+							i(188892),	-- Mercurial Punisher's Hood
+							i(188889),	-- Horns of the Demon Star
+						}),
+						i(191002, {	-- Mystic Helm Module
+							i(188847),	-- Headpiece of the Fixed Stars
+							i(188859),	-- Godstalker's Sallet
+							i(188844),	-- Erudite Occultist's Hood
+						}),
+						i(191003, {	-- Venerated Helm Module
+							i(188933),	-- Luminous Chevalier's Casque
+							i(188880),	-- Amice of the Empyrean
+							i(188923),	-- Theurgic Starspeaker's Howl
+						}),
+						i(191004, {	-- Zenith Helm Module
+							i(188910),	-- Crown of the Grand Upwelling
+							i(188901),	-- Soulblade Guise
+							i(188942),	-- Gaze of the Infinite Infantry
+						}),
 
 					},
 				}),
@@ -900,18 +1023,26 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189845),	-- Ruined Crest of Lordaeron
 						i(189847),	-- Shroud of the Sire's Chosen
 						-- Tier
-						i(188867),	-- Shoulderplates of the First Eidolon
-						i(188896),	-- Mercurial Punisher's Shoulderpads
-						i(188851),	-- Shoulderpads of the Fixed Stars
-						i(188856),	-- Godstalker's Pauldrons
-						i(188843),	-- Erudite Occultist's Mantle
-						i(188914),	-- Tassets of the Grand Upwelling
-						i(188932),	-- Luminous Chevalier's Epaulettes
-						i(188879),	-- Capelet of the Empyrean
-						i(188905),	-- Soulblade Nightwings
-						i(188920),	-- Theurgic Starspeaker's Adornment
-						i(188888),	-- Mantle of the Demon Star
-						i(188941),	-- Pauldrons of the Infinite Infantry
+						i(191006, {	-- Dreadful Shoulder Module
+							i(188867),	-- Shoulderplates of the First Eidolon
+							i(188896),	-- Mercurial Punisher's Shoulderpads
+							i(188888),	-- Mantle of the Demon Star
+						}),
+						i(191007, {	-- Mystic Shoulder Module
+							i(188851),	-- Shoulderpads of the Fixed Stars
+							i(188856),	-- Godstalker's Pauldrons
+							i(188843),	-- Erudite Occultist's Mantle
+						}),
+						i(191008, {	-- Venerated Shoulder Module
+							i(188932),	-- Luminous Chevalier's Epaulettes
+							i(188879),	-- Capelet of the Empyrean
+							i(188920),	-- Theurgic Starspeaker's Adornment
+						}),
+						i(191009, {	-- Zenith Shoulder Module
+							i(188914),	-- Tassets of the Grand Upwelling
+							i(188905),	-- Soulblade Nightwings
+							i(188941),	-- Pauldrons of the Infinite Infantry
+						}),
 					},
 				}),
 				e(2549, {	-- Rygelon
@@ -930,18 +1061,26 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189854),	-- Rygelon's Heraldric Ring
 						i(189848),	-- Treads of Titanic Curiosity
 						-- Tier
-						i(188864),	-- Carapace of the First Eidolon
-						i(188894),	-- Mercurial Punisher's Jerkin
-						i(188849),	-- Chestguard of the Fixed Stars
-						i(188858),	-- Godstalker's Hauberk
-						i(188839),	-- Erudite Occultist's Robes
-						i(188912),	-- Cuirass of the Grand Upwelling
-						i(188929),	-- Luminous Chevalier's Plackart
-						i(188875),	-- Habit of the Empyrean
-						i(188903),	-- Soulblade Leathers
-						i(188922),	-- Theurgic Starspeaker's Ringmail
-						i(188884),	-- Robes of the Demon Star
-						i(188938),	-- Breastplate of the Infinite Infantry
+						i(191010, {	-- Dreadful Chest Module
+							i(188864),	-- Carapace of the First Eidolon
+							i(188894),	-- Mercurial Punisher's Jerkin
+							i(188884),	-- Robes of the Demon Star
+						}),
+						i(191011, {	-- Mystic Chest Module
+							i(188849),	-- Chestguard of the Fixed Stars
+							i(188858),	-- Godstalker's Hauberk
+							i(188839),	-- Erudite Occultist's Robes
+						}),
+						i(191012, {	-- Venerated Chest Module
+							i(188929),	-- Luminous Chevalier's Plackart
+							i(188875),	-- Habit of the Empyrean
+							i(188922),	-- Theurgic Starspeaker's Ringmail
+						}),
+						i(191013, {	-- Zenith Chest Module
+							i(188912),	-- Cuirass of the Grand Upwelling
+							i(188903),	-- Soulblade Leathers
+							i(188938),	-- Breastplate of the Infinite Infantry
+						}),
 					},
 				}),
 				e(2537, {	-- The Jailer
@@ -971,7 +1110,14 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 
 				}),
 				n(ZONE_DROPS, {
-
+					i(190629),	-- Cartel's Larcenous Toecaps
+					i(190630),	-- Devouring Pellicle Shoulderpads
+					i(190624),	-- Gauntlets of the End
+					i(190626),	-- Hood of Empty Eternities
+					i(190628),	-- Lupine's Synthetic Headgear
+					i(190625),	-- Pauldrons of Possible Afterlives
+					i(190627),	-- Subversive Lord's Leggings
+					i(190631),	-- Vandalized Ephemera Mitts
 				}),
 				e(2512, {	-- Vigilant Guardian
 					["crs"] = {
@@ -1086,18 +1232,26 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189802),	-- Loquacious Keeper's Peridot
 						i(188269),	-- Pocket Protoforge
 						-- Tier
-						i(188863),	-- Gauntlets of the First Eidolon
-						i(188898),	-- Mercurial Punisher's Grips
-						i(188853),	-- Handwraps of the Fixed Stars
-						i(188861),	-- Godstalker's Gauntlets
-						i(188845),	-- Erudite Occultist's Handwraps
-						i(188916),	-- Grips of the Grand Upwelling
-						i(188928),	-- Luminous Chevalier's Gauntlets
-						i(188881),	-- Caress of the Empyrean
-						i(188907),	-- Soulblade Grasps
-						i(188925),	-- Theurgic Starspeaker's Runebindings
-						i(188890),	-- Grasps of the Demon Star
-						i(188937),	-- Grasps of the Infinite Infantry
+						i(191014, {	-- Dreadful Hand Module
+							i(188863),	-- Gauntlets of the First Eidolon
+							i(188898),	-- Mercurial Punisher's Grips
+							i(188890),	-- Grasps of the Demon Star
+						}),
+						i(191015, {	-- Mystic Hand Module
+							i(188853),	-- Handwraps of the Fixed Stars
+							i(188861),	-- Godstalker's Gauntlets
+							i(188845),	-- Erudite Occultist's Handwraps
+						}),
+						i(191016, {	-- Venerated Hand Module
+							i(188928),	-- Luminous Chevalier's Gauntlets
+							i(188881),	-- Caress of the Empyrean
+							i(188925),	-- Theurgic Starspeaker's Runebindings
+						}),
+						i(191017, {	-- Zenith Hand Module
+							i(188916),	-- Grips of the Grand Upwelling
+							i(188907),	-- Soulblade Grasps
+							i(188937),	-- Grasps of the Infinite Infantry
+						}),
 					},
 				}),
 				e(2529, {	-- Halondrus the Reclaimer
@@ -1113,18 +1267,26 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(188263),	-- Reclaimer's Intensity Core
 						i(189833),	-- Taciturn Keeper's Lapis
 						-- Tier
-						i(188866),	-- Chausses of the First Eidolon
-						i(188893),	-- Mercurial Punisher's Breeches
-						i(188848),	-- Leggings of the Fixed Stars
-						i(188860),	-- Godstalker's Tassets
-						i(188842),	-- Erudite Occultist's Leggings
-						i(188911),	-- Legguards of the Grand Upwelling
-						i(188931),	-- Luminous Chevalier's Robes
-						i(188878),	-- Leggings of the Empyrean
-						i(188902),	-- Soulblade Leggings
-						i(188924),	-- Theurgic Starspeaker's Tassets
-						i(188887),	-- Leggings of the Demon Star
-						i(188940),	-- Legplates of the Infinite Infantry
+						i(191018, {	-- Dreadful Leg Module
+							i(188866),	-- Chausses of the First Eidolon
+							i(188893),	-- Mercurial Punisher's Breeches
+							i(188887),	-- Leggings of the Demon Star
+						}),
+						i(191019, {	-- Mystic Leg Module
+							i(188848),	-- Leggings of the Fixed Stars
+							i(188860),	-- Godstalker's Tassets
+							i(188842),	-- Erudite Occultist's Leggings
+						}),
+						i(191020, {	-- Venerated Leg Module
+							i(188931),	-- Luminous Chevalier's Robes
+							i(188878),	-- Leggings of the Empyrean
+							i(188924),	-- Theurgic Starspeaker's Tassets
+						}),
+						i(191021, {	-- Zenith Leg Module
+							i(188911),	-- Legguards of the Grand Upwelling
+							i(188902),	-- Soulblade Leggings
+							i(188940),	-- Legplates of the Infinite Infantry
+						}),
 					},
 				}),
 				e(2546, {	-- Anduin Wrynn
@@ -1141,18 +1303,26 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189836),	-- Wrists of the Wicked Star
 						i(190959),	-- Mourne Fragment (QUEST!)
 						-- Tier
-						i(188868),	-- Visage of the First Eidolon
-						i(188892),	-- Mercurial Punisher's Hood
-						i(188847),	-- Headpiece of the Fixed Stars
-						i(188859),	-- Godstalker's Sallet
-						i(188844),	-- Erudite Occultist's Hood
-						i(188910),	-- Crown of the Grand Upwelling
-						i(188933),	-- Luminous Chevalier's Casque
-						i(188880),	-- Amice of the Empyrean
-						i(188901),	-- Soulblade Guise
-						i(188923),	-- Theurgic Starspeaker's Howl
-						i(188889),	-- Horns of the Demon Star
-						i(188942),	-- Gaze of the Infinite Infantry
+						i(191005, {	-- Dreadful Helm Module
+							i(188868),	-- Visage of the First Eidolon
+							i(188892),	-- Mercurial Punisher's Hood
+							i(188889),	-- Horns of the Demon Star
+						}),
+						i(191002, {	-- Mystic Helm Module
+							i(188847),	-- Headpiece of the Fixed Stars
+							i(188859),	-- Godstalker's Sallet
+							i(188844),	-- Erudite Occultist's Hood
+						}),
+						i(191003, {	-- Venerated Helm Module
+							i(188933),	-- Luminous Chevalier's Casque
+							i(188880),	-- Amice of the Empyrean
+							i(188923),	-- Theurgic Starspeaker's Howl
+						}),
+						i(191004, {	-- Zenith Helm Module
+							i(188910),	-- Crown of the Grand Upwelling
+							i(188901),	-- Soulblade Guise
+							i(188942),	-- Gaze of the Infinite Infantry
+						}),
 
 					},
 				}),
@@ -1172,18 +1342,26 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189845),	-- Ruined Crest of Lordaeron
 						i(189847),	-- Shroud of the Sire's Chosen
 						-- Tier
-						i(188867),	-- Shoulderplates of the First Eidolon
-						i(188896),	-- Mercurial Punisher's Shoulderpads
-						i(188851),	-- Shoulderpads of the Fixed Stars
-						i(188856),	-- Godstalker's Pauldrons
-						i(188843),	-- Erudite Occultist's Mantle
-						i(188914),	-- Tassets of the Grand Upwelling
-						i(188932),	-- Luminous Chevalier's Epaulettes
-						i(188879),	-- Capelet of the Empyrean
-						i(188905),	-- Soulblade Nightwings
-						i(188920),	-- Theurgic Starspeaker's Adornment
-						i(188888),	-- Mantle of the Demon Star
-						i(188941),	-- Pauldrons of the Infinite Infantry
+						i(191006, {	-- Dreadful Shoulder Module
+							i(188867),	-- Shoulderplates of the First Eidolon
+							i(188896),	-- Mercurial Punisher's Shoulderpads
+							i(188888),	-- Mantle of the Demon Star
+						}),
+						i(191007, {	-- Mystic Shoulder Module
+							i(188851),	-- Shoulderpads of the Fixed Stars
+							i(188856),	-- Godstalker's Pauldrons
+							i(188843),	-- Erudite Occultist's Mantle
+						}),
+						i(191008, {	-- Venerated Shoulder Module
+							i(188932),	-- Luminous Chevalier's Epaulettes
+							i(188879),	-- Capelet of the Empyrean
+							i(188920),	-- Theurgic Starspeaker's Adornment
+						}),
+						i(191009, {	-- Zenith Shoulder Module
+							i(188914),	-- Tassets of the Grand Upwelling
+							i(188905),	-- Soulblade Nightwings
+							i(188941),	-- Pauldrons of the Infinite Infantry
+						}),
 					},
 				}),
 				e(2549, {	-- Rygelon
@@ -1200,18 +1378,26 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189854),	-- Rygelon's Heraldric Ring
 						i(189848),	-- Treads of Titanic Curiosity
 						-- Tier
-						i(188864),	-- Carapace of the First Eidolon
-						i(188894),	-- Mercurial Punisher's Jerkin
-						i(188849),	-- Chestguard of the Fixed Stars
-						i(188858),	-- Godstalker's Hauberk
-						i(188839),	-- Erudite Occultist's Robes
-						i(188912),	-- Cuirass of the Grand Upwelling
-						i(188929),	-- Luminous Chevalier's Plackart
-						i(188875),	-- Habit of the Empyrean
-						i(188903),	-- Soulblade Leathers
-						i(188922),	-- Theurgic Starspeaker's Ringmail
-						i(188884),	-- Robes of the Demon Star
-						i(188938),	-- Breastplate of the Infinite Infantry
+						i(191010, {	-- Dreadful Chest Module
+							i(188864),	-- Carapace of the First Eidolon
+							i(188894),	-- Mercurial Punisher's Jerkin
+							i(188884),	-- Robes of the Demon Star
+						}),
+						i(191011, {	-- Mystic Chest Module
+							i(188849),	-- Chestguard of the Fixed Stars
+							i(188858),	-- Godstalker's Hauberk
+							i(188839),	-- Erudite Occultist's Robes
+						}),
+						i(191012, {	-- Venerated Chest Module
+							i(188929),	-- Luminous Chevalier's Plackart
+							i(188875),	-- Habit of the Empyrean
+							i(188922),	-- Theurgic Starspeaker's Ringmail
+						}),
+						i(191013, {	-- Zenith Chest Module
+							i(188912),	-- Cuirass of the Grand Upwelling
+							i(188903),	-- Soulblade Leathers
+							i(188938),	-- Breastplate of the Infinite Infantry
+						}),
 					},
 				}),
 				e(2537, {	-- The Jailer
@@ -1295,15 +1481,6 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				ach(15423),	-- <Hidden> Jailer Defeated
 			}),
 			i(189780),	-- <DNT> 9.2 Raid - Sepulcher of the First Ones - Boss 01 - Solitary Guardian - Shield
-			-- Trash Drop?
-			i(190631),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - Trash Drops - Armor - Cloth Hands
-			i(190630),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - Trash Drops - Armor - Cloth Shoulder
-			i(190626),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - Trash Drops - Armor - Leather Head
-			i(190627),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - Trash Drops - Armor - Leather Legs
-			i(190629),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - Trash Drops - Armor - Mail Feet
-			i(190628),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - Trash Drops - Armor - Mail Head
-			i(190624),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - Trash Drops - Armor - Plate Hands
-			i(190625),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - Trash Drops - Armor - Plate Shoulders
 			i(190623),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - Trash Drops - Armor - Plate Shoulders
 			-- Tiers that wasnt tiers anymore
 			i(188873),	-- Cloak of the First Eidolon

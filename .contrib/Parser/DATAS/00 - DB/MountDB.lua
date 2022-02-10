@@ -1114,7 +1114,7 @@ i(187660, 342678);	-- Vespoid Flutterer
 
 -- Achievements
 i(187673, 359381);	-- Cryptic Aurelid
-i(187675, 359379);	-- Shimmering Aurelid
+--i(187675, 359379);	-- Shimmering Aurelid
 
 -- Raid
 i(190771, 359545);	-- Carcinized Zerethsteed
@@ -1149,6 +1149,6 @@ i(188696, 363136);	-- Colossal Ebonclaw Mawrat
 
 -- NOT SOURCED PROPERLY --
 -- PvP They havent said anything About these mounts yet
-i(187644, 349824);	-- Vicious Warstalker (A)
-i(187642, 349823);	-- Vicious Warstalker (H)
+--i(187644, 349824);	-- Vicious Warstalker (A)
+--i(187642, 349823);	-- Vicious Warstalker (H)
 end)();

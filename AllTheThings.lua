@@ -10281,7 +10281,7 @@ local function CacheInfo(t, field)
 		t.mountID = mountID;
 	end
 	local name, _, icon = GetSpellInfo(id);
-	t.text = "AlexSoft"; --"|cffb19cd9"..name.."|r";
+	t.text = "|cffb19cd9"..name.."|r";
 	t.icon = icon;
 	if itemID then
 		local itemName = select(2, GetItemInfo(itemID));
