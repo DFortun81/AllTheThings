@@ -1110,40 +1110,41 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 						["description"] = "Talk to him for him to break down the door.",
 					}),
 					applyclassicphase(PHASE_FIVE, n(16097, -- Isalien
-					-- #if AFTER 4.0.3
-					{
-					-- This Update function unmarks the removed from game flag for folks with the brazier.
-					["OnUpdate"] = [[function(t)
-						t.OnUpdate = nil;
-						if GetItemCount(22057, true) > 0 then
-							t.u = nil;
-							for i,o in ipairs(t.g) do
-								if o.u and o.u == 11 then
-									o.u = nil;
-								end
-							end
-						else
-							t.u = 11;
-							for i,o in ipairs(t.g) do
-								if not o.u then
-									o.u = 11;
-								end
-							end
-						end
-					end]],
-					-- #else
+					-- #if BEFORE 4.0.3
 					bubbleDown({
 						["timeline"] = { "removed 4.0.3" },
 						-- #if NOT ANYCLASSIC
 						["u"] = 11,
 						-- #endif
-					}, {
+					},
 					-- #endif
+					{
 						["description"] = "This boss can be summoned using items from the |cff3399ff(Dungeon Set 2 questline)|r.",
 						["cost"] = {
 							{ "i", 22050, 1 },	-- Brazier of Beckoning [Isalien]
 							{ "i", 22057, 1 },	-- Brazier of Invocation
 						},
+						-- #if AFTER 4.0.3
+						-- This Update function unmarks the removed from game flag for folks with the brazier.
+						["OnUpdate"] = [[function(t)
+							t.OnUpdate = nil;
+							if GetItemCount(22057, true) > 0 then
+								t.u = nil;
+								for i,o in ipairs(t.g) do
+									if o.u and o.u == 11 then
+										o.u = nil;
+									end
+								end
+							else
+								t.u = 11;
+								for i,o in ipairs(t.g) do
+									if not o.u then
+										o.u = 11;
+									end
+								end
+							end
+						end]],
+						-- #endif
 						["groups"] = {
 							objective(2, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
 								["questID"] = 8967,	-- The Left Piece of Lord Valthalak's Amulet [WARLOCK, DRUID]

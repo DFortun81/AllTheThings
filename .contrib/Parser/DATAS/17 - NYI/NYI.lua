@@ -3308,6 +3308,7 @@ root("NeverImplemented", {
 	-- Maps that don't have any data but still exist in game
 	m(465),		-- Le Glas
 	m(516),		-- Isle of Thunder (One of last initial scenaraio)
+	m(843),		-- Shado-Pan Showdown
 	m(892),		-- Azuremyst Isle (Argus Opening)
 	m(893),		-- Azuremyst Isle (Argus Opening)
 	m(889),		-- Arcatraz - scenario map

@@ -473,7 +473,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 					i(32311),	-- Design: Dazzling Seaspray Emerald [TBC]
 					i(32277),	-- Design: Delicate Crimson Spinel
 					i(32309),	-- Design: Enduring Seaspray Emerald [TBC]
-					i(35765),	-- Design: Forceful Seaspray Emerald
+					applyclassicphase(TBC_PHASE_FIVE, i(35765)),	-- Design: Forceful Seaspray Emerald
 					i(32293),	-- Design: Gleaming Lionseye [TBC]
 					i(32306),	-- Design: Glinting Pyrestone [TBC]
 					i(32301),	-- Design: Glowing Shadowsong Amethyst [TBC]
@@ -482,16 +482,16 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 					i(32305),	-- Design: Luminous Pyrestone [TBC]
 					i(32288),	-- Design: Lustrous Empyrean Sapphire [TBC]
 					i(32304),	-- Design: Potent Pyrestone
-					i(35763),	-- Design: Quick Lionseye
+					applyclassicphase(TBC_PHASE_FIVE, i(35763)),	-- Design: Quick Lionseye
 					i(32310),	-- Design: Radiant Seaspray Emerald
-					i(35762),	-- Design: Reckless Pyrestone
+					applyclassicphase(TBC_PHASE_FIVE, i(35762)),	-- Design: Reckless Pyrestone
 					i(32292),	-- Design: Rigid Lionseye [TBC]
 					i(32302),	-- Design: Royal Shadowsong Amethyst [TBC]
 					i(32282),	-- Design: Runed Crimson Spinel [TBC]
 					i(32291),	-- Design: Smooth Lionseye
 					i(32286),	-- Design: Solid Empyrean Sapphire
 					i(32287),	-- Design: Sparkling Empyrean Sapphire
-					i(35764),	-- Design: Steady Seaspray Emerald
+					applyclassicphase(TBC_PHASE_FIVE, i(35764)),	-- Design: Steady Seaspray Emerald
 					i(32284),	-- Design: Subtle Lionseye
 					i(32281),	-- Design: Teardrop Crimson Spinel [TBC]
 					i(32294),	-- Design: Thick Lionseye [TBC]
@@ -519,7 +519,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 							"removed 4.0", -- Renamed and not available after Cata
 						},
 					}),
-					i(35765),	-- Design: Forceful Seaspray Emerald
+					applyclassicphase(TBC_PHASE_FIVE, i(35765)),	-- Design: Forceful Seaspray Emerald
 					i(32306),	-- Design: Glinting Shadowsong Amethyst [CATA+]
 					i(32300, {	-- Design: Glinting Shadowsong Amethyst [OLD]
 						["timeline"] = {
@@ -536,9 +536,9 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 							"removed 4.0", -- Renamed and not available after Cata
 						},
 					}),
-					i(35763),	-- Design: Quick Lionseye
+					applyclassicphase(TBC_PHASE_FIVE, i(35763)),	-- Design: Quick Lionseye
 					i(32310),	-- Design: Radiant Seaspray Emerald
-					i(35762),	-- Design: Reckless Pyrestone
+					applyclassicphase(TBC_PHASE_FIVE, i(35762)),	-- Design: Reckless Pyrestone
 					i(32305, {	-- Design: Reckless Pyrestone [OLD]
 						["timeline"] = {
 							"added 2.1.0.6624",
@@ -563,7 +563,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 							"removed 4.0", -- Renamed and not available after Cata
 						},
 					}),
-					i(35764),	-- Design: Steady Seaspray Emerald
+					applyclassicphase(TBC_PHASE_FIVE, i(35764)),	-- Design: Steady Seaspray Emerald
 					i(32284),	-- Design: Subtle Lionseye
 					i(32294, {	-- Design: Subtle Lionseye [OLD]
 						["timeline"] = {

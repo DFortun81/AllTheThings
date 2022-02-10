@@ -1764,12 +1764,3 @@ root("HiddenQuestTriggers", {
 		q(34523),	-- Warlock Speaking to Gul'dan - triggers near Gul'Rok
 	}),
 });
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	tier(WOD_TIER, {
-		n(QUESTS, {
-			q(34691),	-- Just the Beginning
-			q(34677),	-- NOT USED
-			q(35161),	-- Vignette XP reward - Talador
-		}),
-	}),
-});

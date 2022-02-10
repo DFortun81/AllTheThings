@@ -4,7 +4,7 @@
 
 root("Zones", m(KALIMDOR, {
 	m(STONETALON_MOUNTAINS, {
-		n(QUESTS, bubbleDown({ ["timeline"] = { "added 4.0.3.13277" }, }, {
+		n(QUESTS, bubbleDown({ ["timeline"] = { "added 4.0.3.13277" } }, {
 			q(1071,  {	-- A Gnome's Respite
 				["sourceQuest"] = 1085,	-- On Guard in Stonetalon
 				["provider"] = { "n", 4077 },	-- Gaxim Rustfizzle

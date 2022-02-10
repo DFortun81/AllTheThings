@@ -1262,6 +1262,7 @@ root("Zones", m(KALIMDOR, {
 						1519, -- Call to Earth (1/3 Mulgore)
 					},
 					["lvl"] = 4,
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
 					["g"] = {
 						objective(1, {	-- 0/2 Felstalker Hoof
 							["provider"] = { "i", 6640, 2 },	-- Felstalker Hoof
@@ -1876,7 +1877,7 @@ root("Zones", m(KALIMDOR, {
 					["qg"] = 39379,	-- Gor the Enforcer
 					["coord"] = { 44.9, 14.7, DUROTAR },
 					["sourceQuest"] = 25260,	-- Fizzled
-					["races"] = { ORC, TROLL, MAGHAR, HIGHMOUNTAIN_TAUREN, VULPERA },
+					["races"] = HORDE_ONLY,
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
 				q(6365,  {	-- Meats to Orgrimmar
@@ -1891,7 +1892,7 @@ root("Zones", m(KALIMDOR, {
 					["sourceQuest"] = 25266,	-- Warchief's Emissary
 					["timeline"] = { "added 4.0.3.13277" },
 					["providers"] = {
-						-- #if AFTER CATA
+						-- #if BEFORE WOD
 						{ "n", 39609 },	-- Kor'kron Loyalist (Cata)
 						-- #else
 						{ "n", 86884 },	-- Darkspear Loyalist (Wod, Legion)
@@ -2414,13 +2415,14 @@ root("Zones", m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(6082, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" } }, {	-- Taming the Beast (3/3)
+				q(6082, {	-- Taming the Beast (3/3)
 					["qg"] = 3171,	-- Thotar <Hunter Trainer>
 					["sourceQuest"] = 6083,	-- Taming the Beast (2/3)
 					["coord"] = { 51.8, 43.4, DUROTAR },
 					["races"] = { ORC, UNDEAD, TROLL },
 					["classes"] = { HUNTER },
 					["lvl"] = 10,
+					["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" },
 					["groups"] = {
 						objective(1, {	-- 0/1 Taming Rod
 							["provider"] = { "i", 15920 },	-- Taming Rod
@@ -2429,7 +2431,7 @@ root("Zones", m(KALIMDOR, {
 						recipe(2641),	-- Dismiss Pet
 						recipe(1515),	-- Tame Beast
 					},
-				})),
+				}),
 				q(25195, {	-- That's the End of That Raptor
 					["qg"] = 39324,	-- Zen'Taji
 					["coord"] = { 35.8, 41.3, DUROTAR },
@@ -2652,18 +2654,19 @@ root("Zones", m(KALIMDOR, {
 						i(141294),	-- Mark of Orgrimmar
 					},
 				})),
-				q(6081, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" } }, {	-- Training the Beast
+				q(6081, {	-- Training the Beast
 					["qg"] = 3171,	-- Thotar <Hunter Trainer>
 					["sourceQuest"] = 6082,	-- Taming the Beast (3/3)
 					["coord"] = { 51.8, 43.4, DUROTAR },
 					["races"] = { ORC, UNDEAD, TROLL },
 					["classes"] = { HUNTER },
 					["lvl"] = 10,
+					["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" },
 					["groups"] = {
 						recipe(6991),		-- Feed Pet
 						recipe(982),		-- Revive Pet
 					},
-				})),
+				}),
 				q(2380, {	-- To Orgrimmar!
 					["qg"] = 3170,	-- Kaplak
 					["coord"] = { 51.98, 43.70, DUROTAR },

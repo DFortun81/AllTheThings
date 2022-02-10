@@ -157,6 +157,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 											["questID"] = 61692,
 											["isDaily"] = true,
 											["coords"] = {
+												{ 49.9, 32.1, ARDENWEALD },
 												{ 50.1, 32.3, ARDENWEALD },
 												{ 50.2, 31.6, ARDENWEALD },
 												{ 50.5, 31.8, ARDENWEALD },

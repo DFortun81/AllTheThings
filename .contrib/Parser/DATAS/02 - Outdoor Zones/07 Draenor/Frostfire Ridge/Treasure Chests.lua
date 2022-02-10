@@ -154,7 +154,6 @@ _.Zones =
 					["modelScale"] = 10,
 					["questID"] = 33926,
 					["model"] = 248066,
-					["modelScale"] = 1.5,
 					["coord"] = { 21.7, 9.61, FROSTFIRE_RIDGE },
 					["g"] = {
 						i(108738, {	-- Giant Draenor Clam

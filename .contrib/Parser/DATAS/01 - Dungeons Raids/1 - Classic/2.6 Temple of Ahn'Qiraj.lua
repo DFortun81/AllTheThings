@@ -1060,6 +1060,23 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 				},
 			}),
 			n(ZONE_DROPS, {
+				removeclassicphase(ach(424, {	-- Why? Because It's Red
+					["provider"] = { "i", 21321 },	-- Red Qiraji Resonating Crystal
+					["f"] = 100,
+					-- #if BEFORE WRATH
+					["description"] = "Obtain a Red Qiraji Resonating Crystal.",
+					["OnUpdate"] = [[function(t)
+						local collected = false;
+						for i,provider in ipairs(t.providers) do
+							if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
+								collected = true;
+								break;
+							end
+						end
+						t.SetAchievementCollected(t.achievementID, collected);
+					end]],
+					-- #endif
+				})),
 				i(21218),	-- Blue Qiraji Resonating Crystal
 				i(21323),	-- Green Qiraji Resonating Crystal
 				i(21321),	-- Red Qiraji Resonating Crystal

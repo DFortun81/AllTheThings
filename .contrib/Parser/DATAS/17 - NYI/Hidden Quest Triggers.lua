@@ -900,27 +900,30 @@ _.HiddenQuestTriggers = {
 		--------------------
 		-- NYI VERSIONS OF QUESTS WHICH ARE COMPLETED TOGETHER WITH IMPLEMENTED VERSION OF THESE QUESTS
 		-- TEMPORARY SOLUTION AS HQT FOR NOW
-		q(9734),	-- Return to the Marsh - completed with quest 9732 probably? (reported as with quest 11072)
+		q(9733),	-- Warning the Cenarion Circle - completed with quest 9724
+		q(9734),	-- Return to the Marsh - completed with quest 9732
 		q(9749),	-- They're Alive! Maybe... - completed with quest 9670
 		q(10088),	-- When This Mine's a-Rockin' - completed with quest 10079
-		q(10207),	-- Forward Base: Reaver's Fall REUSE - completed with quest 10124
+		q(10125),	-- Mission: Disrupt Communications - completed with quest 10144 & 10208
+		q(10207),	-- Forward Base: Reaver's Fall REUSE - completed with quest 10124 & 10143
 		q(10214),	-- When This Mine's a-Rockin' - completed with quest 10079
 		q(10815),	-- The Journal of Val'zareq: Portends of War - completed with quest 10793
-		q(10871, {["_drop"] = { "g" }}),	-- Ally of the Netherwingm - completed with quest 10870
-		q(10872),	-- Zuluhed the Whacked - completed with quest 144
 		q(10925),	-- Evil Draws Near - completed with quest 10923
+		q(11072),	-- Adversarial Blood - completed with quest 11885
 		q(14411),	-- The Wilds of Feralas - completed with quest 14410 & 26589
 		q(14414),	-- The Wilds of Feralas - completed with quest 14410 & 26589
 		q(25198),	-- Winnoa Pineforest - completed with quest 24807
 		q(25305),	-- Never Look Back- completed with quest 25304
 		q(26379),	-- In Aid of the Refugees - completed with quest 13601
 		q(27309),	-- The Grimtotem Plot - completed with quest 27293
+		q(29039),	-- Hunting Practice - completed with quest 29038
 		q(29051),	-- Cub's First Toy - completed with quest 29040
 		q(29052),	-- A Cub's Cravings - completed with quest 29035
 		q(29053),	-- 'Borrowing' From the Winterfall - completed with quest 29037
 		q(29405),	-- The Lesson of the Iron Staff - completed with quest 30027 & 30033 & 30334 & 30335 & 30336 & 30337 & 30338
 		q(29597),	-- The End of the Exarch - completed with quest 29596
 		q(29673),	-- The Black Morass - completed with quest 10296
+		q(29969),	-- Broken Earthen Figurine - completed with quest 28776
 		q(30817),	-- The Healing of Shen-zin Su - completed with quest 29799
 		q(30818),	-- A New Fate - completed with quest 29800
 		q(30988),	-- The Alliance Way - completed with quest 31013
@@ -949,7 +952,7 @@ _.HiddenQuestTriggers = {
 		q(35388),	-- The Void March - completed with quest 35086
 		q(35389),	-- Silence the Call - completed with quest 35084
 		q(35390),	-- The Shadow Over Oshu'gun - completed with quest 35088
-		q(35391),	-- Silence the Call - completed with quest 35083
+		q(35391),	-- Disrupt The Rituals - completed with quest 35083
 		q(35392),	-- The Nether Approaches - completed with quest 35087
 		q(35431),	-- The Best Poison - completed with quest 35205
 		q(35653),	-- Wood is Wood - completed with quest 36368 & 35505
@@ -1216,6 +1219,12 @@ _.HiddenQuestTriggers = {
 		q(32898),	-- Daily Scenario Random (1st) (Mists) — normal scenario completion
 		q(32817),	-- Complete "Loyalty" Scenario — triggered when turning in "The King and the Council"
 		q(32818),	-- Complete "The Dark Heart of Pandaria" Scenario — triggered when turning in "The Warchief and the Darkness"
+		q(31614),	-- LFGDungeons - Mists - Heroic Random - 1st
+		q(31615),	-- LFGDungeons - Mists - Heroic Random - Nth
+		q(31274),	-- LFGDungeons - Mists - Raid Finder - 1st
+		q(31275),	-- LFGDungeons - Mists - Raid Finder - Nth
+		q(32897),	-- LFGDungeons - Mists - Scenario - Heroic Daily - 1st/Nth
+		q(31987),	-- LFGDungeons - Theramore Launch Event
 
 		--	RAIDS
 		q(32752),	-- Dark Animus Dead (killed Dark Animus on heroic in ToT)
@@ -3200,7 +3209,7 @@ _.HiddenQuestTriggers = {
 		q(60768),	-- opening the cage to get Dal's Courier Badge on "A Stolen Stone Fiend"
 		q(62940),	-- opening the crate while on #61619, "Alchemy: Elixir of Humility"
 		-- Venthyr Covenant
-		q(62827),	-- uhhhhh i killed myself by jumping into nothingness from one of the platforms / while on FP through Oribos
+		q(62827),	-- uhhhhh i killed myself by jumping into nothingness from one of the platforms / while on FP through Oribos / first entering Oribos @ lvl 60
 		q(62950),	-- clicking "Activate" after putting "Thrill Seeker" in Nadjia's soulbind tree
 		q(62749),	-- triggered when turning in #62921, "Our True Purpose"
 		q(63063),	-- looks like an unused version of #63056, "Sanctum Upgrade: Mirror Network"
@@ -3446,6 +3455,8 @@ _.HiddenQuestTriggers = {
 		q(35962),	-- Warlords Max Level Dungeon Reward Quest - triggered at the end of Normal Grimrail Depot
 
 		-- PVP
+		q(36146),	-- Cataclysm 84-85
+		q(36152),	-- Cataclysm 84-85
 		q(38116, {["_drop"] = { "g" }}),	-- Cata/Mop 80-89
 		q(38127, {["_drop"] = { "g" }}),	-- Cata/MoP 80-89
 		q(38138),	-- Cata/MoP 80-89

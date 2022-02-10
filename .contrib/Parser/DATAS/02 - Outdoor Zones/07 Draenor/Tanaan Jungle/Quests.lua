@@ -795,10 +795,3 @@ root("HiddenQuestTriggers", {
 		q(50680),	-- learning Ensemble: Ceremonial Karabor Finery
 	}),
 });
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	tier(WOD_TIER, {
-		n(QUESTS, {
-			q(39129),	-- Ill Tempered
-		}),
-	}),
-});

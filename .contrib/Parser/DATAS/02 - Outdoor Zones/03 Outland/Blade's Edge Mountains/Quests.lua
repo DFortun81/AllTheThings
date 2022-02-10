@@ -38,7 +38,7 @@ _.Zones =
 						}),
 					},
 				}),
-				applyclassicphase(TBC_PHASE_THREE_OGRILA, q(11060, {	-- A Crystalforged Darkrune
+				applyclassicphase(TBC_PHASE_TWO_OGRILA, q(11060, {	-- A Crystalforged Darkrune
 					["qg"] = 23300,	-- Gahk
 					["coord"] = { 28.4, 58, BLADES_EDGE_MOUNTAINS },
 					["minReputation"] = { 1038, HONORED },	-- Ogri'la, Honored.
@@ -102,7 +102,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(65, 20, 65),
 				}),
-				applyclassicphase(TBC_PHASE_THREE_OGRILA, q(11061, {	-- A Father's Duty
+				applyclassicphase(TBC_PHASE_TWO_OGRILA, q(11061, {	-- A Father's Duty
 					["qg"] = 23316,	-- Torkus
 					["sourceQuest"] = 11030,	-- Our Boy Wants To Be A Skyguard Ranger
 					["coord"] = { 28.4, 57.6, BLADES_EDGE_MOUNTAINS },
@@ -111,13 +111,13 @@ _.Zones =
 					},
 					["lvl"] = lvlsquish(70, 20, 70),
 				})),
-				applyclassicphase(TBC_PHASE_THREE_OGRILA, q(11079, {	-- A Fel Whip For Gahk
+				applyclassicphase(TBC_PHASE_TWO_OGRILA, q(11079, {	-- A Fel Whip For Gahk
 					["qg"] = 23300,	-- Gahk
 					["sourceQuest"] = 11061,	-- A Father's Duty
 					["coord"] = { 28.5, 58.1, BLADES_EDGE_MOUNTAINS },
 					["lvl"] = lvlsquish(70, 20, 70),
 				})),
-				applyclassicphase(TBC_PHASE_THREE_OGRILA, q(11091, {	-- A Special Thank You
+				applyclassicphase(TBC_PHASE_TWO_OGRILA, q(11091, {	-- A Special Thank You
 					["qg"] = 23233,	-- Chu'a'lor
 					["sourceQuest"] = 11059,	-- Guardian of the Monument
 					["coord"] = { 28.8, 57.4, BLADES_EDGE_MOUNTAINS },
@@ -134,19 +134,19 @@ _.Zones =
 						}),
 					},
 				}),
-				applyclassicphase(TBC_PHASE_THREE_OGRILA, q(11058, {	-- An Apexis Relic
+				applyclassicphase(TBC_PHASE_TWO_OGRILA, q(11058, {	-- An Apexis Relic
 					["qg"] = 23233,	-- Chu'a'lor
 					["sourceQuest"] = 11025,	-- The Crystals
 					["coord"] = { 28.8, 57.4, BLADES_EDGE_MOUNTAINS },
 					["lvl"] = lvlsquish(70, 20, 70),
 				})),
-				applyclassicphase(TBC_PHASE_THREE_OGRILA, q(11119, {	-- Assault on Bash'ir Landing!
+				applyclassicphase(TBC_PHASE_TWO_OGRILA, q(11119, {	-- Assault on Bash'ir Landing!
 					["qg"] = 23334,	-- Sky Commander Keller
 					["sourceQuest"] = 11010,	-- Bombing Run
 					["coord"] = { 60.8, 69.1, BLADES_EDGE_MOUNTAINS },
 					["lvl"] = lvlsquish(70, 20, 70),
 				})),
-				applyclassicphase(TBC_PHASE_THREE_OGRILA, q(11051, {	-- Banish More Demons
+				applyclassicphase(TBC_PHASE_TWO_OGRILA, q(11051, {	-- Banish More Demons
 					["qg"] = 23253,	-- Kronk
 					["sourceQuest"] = 11026,	-- Banish the Demons
 					["coord"] = { 28.8, 57.8, BLADES_EDGE_MOUNTAINS },
@@ -161,7 +161,7 @@ _.Zones =
 						i(32777),	-- Kronk's Grab Bag
 					},
 				})),
-				applyclassicphase(TBC_PHASE_THREE_OGRILA, q(11026, {	-- Banish the Demons
+				applyclassicphase(TBC_PHASE_TWO_OGRILA, q(11026, {	-- Banish the Demons
 					["qg"] = 23253,	-- Kronk
 					["coord"] = { 28.8, 57.8, BLADES_EDGE_MOUNTAINS },
 					["minReputation"] = { 1038, HONORED },	-- Ogri'la, Honored.
@@ -205,7 +205,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(65, 20, 65),
 				}),
-				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11023, {	-- Bomb Them Again!
+				applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11023, {	-- Bomb Them Again!
 					["qg"] = 23120,	-- Sky Sergeant Vanderlip
 					["sourceQuest"] = 11010,	-- Bombing Run
 					["coord"] = { 27.6, 52.9, BLADES_EDGE_MOUNTAINS },
@@ -215,14 +215,14 @@ _.Zones =
 						ach(1276),	-- Blade's Edge Bomberman
 					},
 				})),
-				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11102, {	-- Bombing Run (druid)
+				applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11102, {	-- Bombing Run (druid)
 					["qg"] = 23120,	-- Sky Sergeant Vanderlip
 					["sourceQuest"] = 11062,	-- The Skyguard Outpost
 					["coord"] = { 27.6, 52.9, BLADES_EDGE_MOUNTAINS },
 					["classes"] = { DRUID },
 					["lvl"] = lvlsquish(70, 20, 70),
 				})),
-				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11010, {	-- Bombing Run (all others)
+				applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11010, {	-- Bombing Run (all others)
 					["qg"] = 23120,	-- Sky Sergeant Vanderlip
 					["sourceQuest"] = 11062,	-- The Skyguard Outpost
 					["coord"] = { 27.6, 52.9, BLADES_EDGE_MOUNTAINS },
@@ -500,7 +500,7 @@ _.Zones =
 					["coord"] = { 55.5, 44.8, BLADES_EDGE_MOUNTAINS },
 					["lvl"] = lvlsquish(70, 20, 70),
 				}),
-				applyclassicphase(TBC_PHASE_THREE_OGRILA, q(11059, {	-- Guardian of the Monument
+				applyclassicphase(TBC_PHASE_TWO_OGRILA, q(11059, {	-- Guardian of the Monument
 					["qg"] = 23233,	-- Chu'a'lor
 					["sourceQuest"] = 11025,	-- The Crystals
 					["coord"] = { 28.8, 57.4, BLADES_EDGE_MOUNTAINS },
@@ -712,7 +712,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(65, 20, 65),
 				}),
-				applyclassicphase(TBC_PHASE_THREE_OGRILA, q(11030, {	-- Our Boy Wants To Be A Skyguard Ranger
+				applyclassicphase(TBC_PHASE_TWO_OGRILA, q(11030, {	-- Our Boy Wants To Be A Skyguard Ranger
 					["qg"] = 23316,	-- Torkus
 					["sourceQuest"] = 11025,	-- The Crystals
 					["coord"] = { 28.4, 57.6, BLADES_EDGE_MOUNTAINS },
@@ -1069,7 +1069,7 @@ _.Zones =
 					},
 					["lvl"] = 70,
 				})),
-				applyclassicphase(TBC_PHASE_THREE_OGRILA, q(11025, {	-- The Crystals
+				applyclassicphase(TBC_PHASE_TWO_OGRILA, q(11025, {	-- The Crystals
 					["qg"] = 23233,	-- Chu'a'lor
 					["coord"] = { 28.8, 57.4, BLADES_EDGE_MOUNTAINS },
 					["lvl"] = lvlsquish(70, 20, 70),
@@ -1164,14 +1164,14 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(64, 10, 64),
 				}),
-				applyclassicphase(TBC_PHASE_THREE_OGRILA, q(11080, {	-- The Relic's Emanation
+				applyclassicphase(TBC_PHASE_TWO_OGRILA, q(11080, {	-- The Relic's Emanation
 					["qg"] = 23233,	-- Chu'a'lor
 					["sourceQuest"] = 11058,	-- An Apexis Relic
 					["coord"] = { 28.8, 57.4, BLADES_EDGE_MOUNTAINS },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 20, 70),
 				})),
-				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11062, {	-- The Skyguard Outpost
+				applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11062, {	-- The Skyguard Outpost
 					["qg"] = 23233,	-- Chu'a'lor
 					["sourceQuest"] = 11030,	-- Our Boy Wants To Be A Skyguard Ranger
 					["coord"] = { 28.4, 57.6, BLADES_EDGE_MOUNTAINS },
@@ -1246,7 +1246,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(65, 20, 65),
 				}),
-				applyclassicphase(TBC_PHASE_THREE_OGRILA, q(11057, {	-- The Trouble Below
+				applyclassicphase(TBC_PHASE_TWO_OGRILA, q(11057, {	-- The Trouble Below
 					["qg"] = 23233,	-- Chu'a'lor
 					["coord"] = { 28.8, 57.4, BLADES_EDGE_MOUNTAINS },
 					["isBreadcrumb"] = true,
@@ -1289,7 +1289,7 @@ _.Zones =
 					},
 					["lvl"] = lvlsquish(65, 20, 65),
 				}),
-				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11078, {	-- To Rule The Skies
+				applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11078, {	-- To Rule The Skies
 					["qg"] = 23334,	-- Sky Commander Keller
 					["sourceQuests"] = {
 						11010,	-- Bombing Run
@@ -1386,14 +1386,14 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(65, 20, 65),
 				}),
-				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11066, {	-- Wrangle More Aether Rays!
+				applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11066, {	-- Wrangle More Aether Rays!
 					["qg"] = 23335,	-- Skyguard Khatie
 					["sourceQuest"] = 11065,	-- Wrangle Some Aether Rays!
 					["coord"] = { 28.0, 51.5, BLADES_EDGE_MOUNTAINS },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 20, 70),
 				})),
-				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11065, {	-- Wrangle Some Aether Rays!
+				applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11065, {	-- Wrangle Some Aether Rays!
 					["qg"] = 23335,	-- Skyguard Khatie
 					["sourceQuest"] = 11010,	-- Bombing Run
 					["coord"] = { 28.0, 51.5, BLADES_EDGE_MOUNTAINS },
@@ -1418,7 +1418,7 @@ _.Zones =
 						i(31791),	-- Wildlord's Band
 					},
 				}),
-				applyclassicphase(TBC_PHASE_THREE_OGRILA, q(11027, {	-- Yous Have Da Darkrune?
+				applyclassicphase(TBC_PHASE_TWO_OGRILA, q(11027, {	-- Yous Have Da Darkrune?
 					["qg"] = 23300,	-- Gahk
 					["sourceQuest"] = 11060,	-- A Crystalforged Darkrune
 					["coord"] = { 28.4, 58, BLADES_EDGE_MOUNTAINS },

@@ -202,6 +202,7 @@ root("Instances", tier(TBC_TIER, applylegacyclassicphase(TBC_PHASE_FOUR, {
 							["groups"] = {
 								removeclassicphase(ach(430, {	-- Amani War Bear
 									["provider"] = { "i", 33809 },	-- Amani War Bear
+									["f"] = 100,
 									-- #if BEFORE WRATH
 									["description"] = "Obtain the Amani War Bear from the final chest in Zul'Aman.",
 									["OnUpdate"] = [[function(t)

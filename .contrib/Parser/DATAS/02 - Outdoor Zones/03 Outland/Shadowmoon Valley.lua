@@ -245,7 +245,9 @@ _.Zones =
 					q(10708, {	-- Akama's Promise (awarded "Akama's Promise" criteria)
 						["qg"] = 21700,	-- Akama
 						["sourceQuest"] = 10707,	-- The Ata'mal Terrace
+						-- #if AFTER WRATH
 						["altQuests"] = { 11052 },	-- Akama's Promise
+						-- #endif
 						["coord"] = { 58.1, 48.1, SHADOWMOON_VALLEY },
 						["groups"] = {
 							i(30932),	-- Akama's Sash
@@ -256,6 +258,22 @@ _.Zones =
 							i(31417),	-- Staff of the Ashtongue Deathsworn
 						},
 					}),
+					-- #if AFTER WRATH
+					q(11052, {	-- OLD Akama's Promise (awarded "Akama's Promise" criteria)
+						["qg"] = 21700,	-- Akama
+						["sourceQuest"] = 10707,	-- The Ata'mal Terrace
+						["altQuests"] = { 10708 },	-- Akama's Promise
+						["coord"] = { 58.1, 48.1, SHADOWMOON_VALLEY },
+						["groups"] = {
+							i(30932),	-- Akama's Sash
+							i(30999),	-- Ashtongue Blade
+							i(31000),	-- Bloodwarder's Rifle
+							i(30943),	-- Verdant Gloves
+							i(30984),	-- Spellbreaker's Buckler
+							i(31417),	-- Staff of the Ashtongue Deathsworn
+						},
+					}),
+					-- #endif
 					q(10640, {	-- Altruis (Aldor)
 						["qg"] = 21860,	-- Exarch Onaala
 						["sourceQuest"] = 10637,	-- A Necessary Distraction
@@ -272,6 +290,9 @@ _.Zones =
 						["sourceQuest"] = 10866,	-- Zuluhed the Whacked
 						["coord"] = { 69.8, 61.4, SHADOWMOON_VALLEY },
 						["_drop"] = { "races" },	-- stop this from being marked as horde only when it is not horde only
+						-- #if AFTER WRATH
+						["altQuests"] = { 10871 },	-- Ally of the Netherwing
+						-- #endif
 						["groups"] = {
 							i(31492),	-- Claw of the Netherwing Flight
 							i(31491),	-- Netherwing Defender's Shield
@@ -280,6 +301,22 @@ _.Zones =
 							i(31493),	-- Netherwing Spiritualist's Charm
 						},
 					}),
+					-- #if AFTER WRATH
+					q(10871, {	-- Ally of the Netherwing
+						["qg"] = 22112,	-- Karynaku
+						["sourceQuest"] = 10866,	-- Zuluhed the Whacked
+						["coord"] = { 69.8, 61.4, SHADOWMOON_VALLEY },
+						["_drop"] = { "races" },	-- stop this from being marked as horde only when it is not horde only
+						["altQuests"] = { 10870 },	-- Ally of the Netherwing
+						["groups"] = {
+							i(31492),	-- Claw of the Netherwing Flight
+							i(31491),	-- Netherwing Defender's Shield
+							i(31490),	-- Netherwing Protector's Shield
+							i(31494),	-- Netherwing Sorceror's Charm
+							i(31493),	-- Netherwing Spiritualist's Charm
+						},
+					}),
+					-- #endif
 					q(10527, {	-- Ar'tor, Son of Oronok
 						["qg"] = 21183,	-- Oronok Torn-heart
 						["sourceQuest"] = 10519,	-- The Cipher of Damnation - Truth and History
@@ -639,7 +676,7 @@ _.Zones =
 					})),
 					q(10481, {	-- Enraged Spirits of Air
 						["qg"] = 21024,	-- Earthmender Torlok
-						["sourceQuest"] = 10458,	-- Enraged Spirits of Fire and Earth
+						["sourceQuest"] = 10480,	-- Enraged Spirits of Water
 						["coord"] = { 42.2, 45.0, SHADOWMOON_VALLEY },
 						["lvl"] = lvlsquish(67, 67, 25),
 						["groups"] = {
@@ -1131,7 +1168,6 @@ _.Zones =
 							{ 35.2, 40.4, SHADOWMOON_VALLEY },
 							{ 35.4, 41.8, SHADOWMOON_VALLEY },
 						},
-						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(67, 67, 25),
 						["groups"] = {
 							objective(1, {	-- 0/10 Sketh'lon Feather
@@ -1551,7 +1587,6 @@ _.Zones =
 							{ 35.2, 40.4, SHADOWMOON_VALLEY },
 							{ 35.4, 41.8, SHADOWMOON_VALLEY },
 						},
-						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(67, 67, 25),
 						["groups"] = {
 							objective(1, {	-- 0/1 Lianthe's Key
@@ -1771,8 +1806,19 @@ _.Zones =
 						["sourceQuest"] = 10858,	-- Karynaku
 						["coord"] = { 69.8, 61.4, SHADOWMOON_VALLEY },
 						["_drop"] = { "races" },	-- stop this from being marked as horde only when it is not horde only
+						-- #if AFTER WRATH
+						["altQuests"] = { 10872 },	-- Zuluhed the Whacked
+						-- #endif
 					}),
-					
+					-- #if AFTER WRATH
+					q(10872, {	-- Zuluhed the Whacked
+						["qg"] = 22112,	-- Karynaku
+						["sourceQuest"] = 10858,	-- Karynaku
+						["coord"] = { 69.8, 61.4, SHADOWMOON_VALLEY },
+						["_drop"] = { "races" },	-- stop this from being marked as horde only when it is not horde only
+						["altQuests"] = { 10866 },	-- Zuluhed the Whacked
+					}),	
+					-- #endif
 					-- #if AFTER MOP
 					-- Crieve note: Thinking this is gonna move to a special section in events or something.
 					q(32324, {	-- Seek the Signal
@@ -2141,15 +2187,17 @@ _.HiddenQuestTriggers = {
 -- These quests never made it in.
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
-		q(10871),	-- BETA Ally of the Netherwing
+		-- #if BEFORE WRATH
 		q(10815),	-- BETA The Journal of Val'zareq: Portends of War
+		q(10871),	-- BETA Ally of the Netherwing
 		q(10872),	-- BETA Zuluhed the Whacked
+		q(11052),	-- OLD Akama's Promise (awarded "Akama's Promise" criteria)
+		-- #endif
 		-- #if AFTER MOP
 		q(32341, {	-- Demonstrate Your Power [Warlock Only]
 			i(93387),	-- Akama's Seal of Courage
 		}),
 		-- #endif
-		q(11052),	-- OLD Akama's Promise (awarded "Akama's Promise" criteria)
 	}),
 });
 -- #endif

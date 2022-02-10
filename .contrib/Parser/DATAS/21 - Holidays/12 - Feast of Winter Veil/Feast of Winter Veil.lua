@@ -55,7 +55,6 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 	["holidayID"] = 235485,
 	-- #endif
 	["groups"] = {
-		-- #if AFTER WRATH
 		n(ACHIEVEMENTS, {
 			ach(1691, {	-- Merrymaker
 				title(102),	-- Merrymaker
@@ -180,10 +179,15 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				crit(3),	-- Hot Apple Cider
 			}),
 			ach(252),	-- With a Little Helper from My Friends
-			ach(1705, {	-- Clockwork Rocket Bot (2007)
+			removeclassicphase(ach(1705, {	-- Clockwork Rocket Bot (2007)
 				["provider"] = { "i", 34425 },	-- Clockwork Rocket Bot
 				["timeline"] = { "added 2.3.0.7561" },
-			}),
+				-- #if BEFORE WRATH
+				["OnUpdate"] = [[function(t)
+					t.SetAchievementCollected(t.achievementID, GetItemCount(34425, true) > 0);
+				end]],
+				-- #endif
+			})),
 			ach(1706, {	-- Crashin' Thrashin' Racer (2008)
 				["provider"] = { "i", 37710 },	-- Crashin' Thrashin' Racer Controller
 				["timeline"] = { "added 2.4.3.8601" },
@@ -215,7 +219,6 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["timeline"] = { "added 9.1.5.40871" },
 			}),
 		}),
-		-- #endif
 		-- #if AFTER 7.3.0.24727
 		filter(BATTLE_PETS, {
 			petbattle(p(2114, {	-- Globe Yeti

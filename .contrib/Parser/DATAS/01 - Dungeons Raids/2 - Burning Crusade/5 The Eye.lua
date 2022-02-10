@@ -236,6 +236,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 					})),
 					removeclassicphase(ach(885, {	-- Ashes of Al'ar
 						["provider"] = { "i", 32458 },	-- Ashes of Al'ar
+						["f"] = 100,
 						-- #if BEFORE WRATH
 						["description"] = "Obtain the Ashes of Al'ar from Kael'thas Sunstrider in Tempest Keep.",
 						["OnUpdate"] = [[function(t)

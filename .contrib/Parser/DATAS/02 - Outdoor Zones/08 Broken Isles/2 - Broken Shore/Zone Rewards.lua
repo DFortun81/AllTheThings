@@ -78,6 +78,11 @@ _.Zones =
 				i(134361),	-- Portalguard Warboots
 				i(134376),	-- Netherstone Choker
 				i(146867),	-- Wrathguard Choker
+				-- Misc.
+				i(147729, {	-- Netherchunk
+					-- can drop from pretty much any demon-related creature in Legion, but is mainly available on the Broken Shore
+					currency(1226),	-- Nethershard
+				}),
 			}),
 		}),
 	}),

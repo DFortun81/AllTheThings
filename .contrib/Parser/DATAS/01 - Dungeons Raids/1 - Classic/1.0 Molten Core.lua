@@ -112,6 +112,13 @@ root("Instances", tier(CLASSIC_TIER, {
 						objective(4, {	-- 0/1 Hand of Sulfuron
 							["provider"] = { "i", 17330 },	-- Hand of Sulfuron
 						}),
+						removeclassicphase(ach(2496, {	-- The Fifth Element
+							-- #if BEFORE 3.0.1
+							["sourceQuest"] = 6824,	-- Hands of the Enemy
+							["description"] = "Obtain an Aqual Quintessence.",
+							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(6824)); end]],
+							-- #endif
+						})),
 					},
 				})),
 				q(6804, bubbleDown({ ["timeline"] = REMOVED_WITH_WRATH }, {	-- Poisoned Water

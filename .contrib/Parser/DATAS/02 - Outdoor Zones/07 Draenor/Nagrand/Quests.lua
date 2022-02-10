@@ -1500,13 +1500,3 @@ root("HiddenQuestTriggers", {
 		--q(37805),	-- Goblin Looted - triggers during "Gutrek's Cleaver: The Spirit Forge" (questID 37811 & 37992)
 	}),
 });
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	tier(WOD_TIER, {
-		n(QUESTS, {
-			q(38204),	-- Assault on the Gorian Proving Grounds (A)
-			q(38205),	-- Assault on the Gorian Proving Grounds (H)
-			q(37523),	-- Assault on the Gorian Proving Grounds (A)
-			q(37524),	-- Assault on the Gorian Proving Grounds (H)
-		}),
-	}),
-});

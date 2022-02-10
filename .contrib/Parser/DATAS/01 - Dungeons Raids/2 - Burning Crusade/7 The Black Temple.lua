@@ -435,7 +435,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 								["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(10959)); end]],
 								-- #endif
 							})),
-							removeclassicphase(ach(426, {	-- Warglaives of Azzinoth
+							applyclassicphase(TBC_PHASE_THREE_GLAIVEPRIO, removeclassicphase(ach(426, {	-- Warglaives of Azzinoth
 								["providers"] = {
 									{ "i", 32837 },	-- Warglaive of Azzinoth (LEGENDARY! MH)
 									{ "i", 32838 },	-- Warglaive of Azzinoth (LEGENDARY! OH)
@@ -456,12 +456,12 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 								-- #else
 								["description"] = "Once you have both, simply equip them for this achievement.",
 								-- #endif
-							})),
+							}))),
 							i(122196, {	-- Music Roll: The Burning Legion
 								["timeline"] = { "added 6.1.0.19445" },
 							}),
-							i(32837),	-- Warglaive of Azzinoth (LEGENDARY! MH)
-							i(32838),	-- Warglaive of Azzinoth (LEGENDARY! OH)
+							applyclassicphase(TBC_PHASE_THREE_GLAIVEPRIO, i(32837)),	-- Warglaive of Azzinoth (LEGENDARY! MH)
+							applyclassicphase(TBC_PHASE_THREE_GLAIVEPRIO, i(32838)),	-- Warglaive of Azzinoth (LEGENDARY! OH)
 							i(31089),	-- Chestguard of the Forgotten Conqueror
 							i(31091),	-- Chestguard of the Forgotten Protector
 							i(31090),	-- Chestguard of the Forgotten Vanquisher

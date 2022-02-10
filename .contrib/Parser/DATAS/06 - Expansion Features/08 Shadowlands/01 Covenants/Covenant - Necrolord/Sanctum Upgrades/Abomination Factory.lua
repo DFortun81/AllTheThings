@@ -207,14 +207,14 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["provider"] = { "n", 161270 },    -- Chordy
 									["coord"] = { 55.1, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
-									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 								}),
 								q(62213, {    -- A Brokered Deal
 									["sourceQuests"] = { 58410 },	-- Construct Body: Atticus
 									["provider"] = { "n", 159238 },    -- Atticus
 									["coord"] = { 55.3, 68.3, MALDRAXXUS },
 									["isWeekly"] = true,
-									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 									["maps"] = {
 										1717,	-- Chill's Reach
 									},
@@ -225,8 +225,13 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["coord"] = { 24.2, 38.6, MALDRAXXUS },
 								}),
 								q(59747, {    -- A Lost Soul
+									["description"] = "Pull the chain on the right side of the vault as you enter.",
 									["provider"] = { "n", 166096 },	-- Miru Soulblossom
-									["coord"] = { 32.9, 33.3, 1649 },	-- Etheric Vault
+									["coords"] = {
+										{ 32.9, 33.3, 1649 },	-- Etheric Vault
+										{ 58.3, 36.2, 1649 },	-- Chain to pull [60166]
+										{ 24.5, 31.5, MALDRAXXUS },	-- Vault entrance
+									},
 								}),
 								q(58727, {	-- A Place To Call Home
 									["sourceQuests"] = { 58671 },	-- Bottled Up Inside
@@ -246,14 +251,14 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										167162,	-- Marz (Ghost)
 									},
 									["isWeekly"] = true,
-									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 								}),
 								q(62256, {    -- Asset Extraction
 									["sourceQuests"] = { 58410 },	-- Construct Body: Atticus
 									["provider"] = { "n", 159238 },    -- Atticus
 									["coord"] = { 55.3, 68.3, MALDRAXXUS },
 									["isWeekly"] = true,
-									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 								}),
 								q(60049, {	-- At Your Service
 									["sourceQuests"] = { 58727 },	-- A Place To Call Home
@@ -287,21 +292,21 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["provider"] = { "n", 158300 },    -- Flytrap
 									["coord"] = { 54.3, 68.1, MALDRAXXUS },
 									["isWeekly"] = true,
-									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 								}),
 								q(61522, {	-- Corpse Run
 									["sourceQuests"] = { 57597 },	-- Construct Body: Flytrap
 									["provider"] = { "n", 158300 },    -- Flytrap
 									["coord"] = { 54.3, 68.1, MALDRAXXUS },
 									["isWeekly"] = true,
-									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 								}),
 								q(61523, {	-- Corpse Run
 									["sourceQuests"] = { 57597 },	-- Construct Body: Flytrap
 									["provider"] = { "n", 158300 },    -- Flytrap
 									["coord"] = { 54.3, 68.1, MALDRAXXUS },
 									["isWeekly"] = true,
-									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 								}),
 								q(60765, {    -- Cure For All Ills
 									["sourceQuests"] = { 57605 },	-- Construct Body: Roseboil
@@ -311,7 +316,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 									["coord"] = { 55.1, 68.1, MALDRAXXUS },
 									["isWeekly"] = true,
-									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 								}),
 								q(62217, {	-- Field Training
 									["sourceQuests"] = { 57611 },	-- Construct Body: Marz
@@ -321,7 +326,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 									["coord"] = { 54.2, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
-									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 								}),
 								q(58668, {	-- Find The Way
 									["sourceQuests"] = { 58665 },	-- Rebellious Souls
@@ -336,7 +341,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 									["coord"] = { 55.1, 68.1, MALDRAXXUS },
 									["isWeekly"] = true,
-									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 								}),
 								q(58680, {	-- Loose Threads
 									["sourceQuests"] = { 58668 },	-- Find The Way
@@ -358,7 +363,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["provider"] = { "n", 161270 },	-- Chordy
 									["coord"] = { 55.1, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
-									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 								}),
 								q(58677, {	-- Skin in the Game
 									["sourceQuests"] = { 58668 },	-- Find The Way
@@ -370,7 +375,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["provider"] = { "n", 161270 },	-- Chordy
 									["coord"] = { 55.1, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
-									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 								}),
 								q(60264, {    -- Soul Survivor
 									["sourceQuests"] = { 59747 },    -- A Lost Soul
@@ -387,7 +392,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["provider"] = { "n", 159238 },    -- Atticus
 									["coord"] = { 55.3, 68.3, MALDRAXXUS },
 									["isWeekly"] = true,
-									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 								}),
 								q(58670, {	-- The Slaughter Daughter
 									["sourceQuests"] = { 59042 },	-- A Good Heart
@@ -399,7 +404,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["provider"] = { "n", 161270 },	-- Chordy
 									["coord"] = { 55.1, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
-									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 								}),
 								q(62216, {	-- Training Program
 									["sourceQuests"] = { 57611 },	-- Construct Body: Marz
@@ -409,7 +414,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 									["coord"] = { 54.2, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
-									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 								}),
 								q(58686, {	-- Weapon of Mass Construction
 									["sourceQuests"] = {
@@ -533,7 +538,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 									["coord"] = { 54.9, 67.8, MALDRAXXUS },
 									["isWeekly"] = true,
-									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 								}),
 								q(59615, {	-- Every Dog Has Its Day
 									["description"] = "Kill Soul Harvester Anka at 70.1, 40.8 to obtain the Soul Harvester Key, which opens the cage and makes the quest available.  The key will only drop if you have tier 2 or higher Abomination Table.",
@@ -549,7 +554,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 									["coord"] = { 54.8, 68.8, MALDRAXXUS },
 									["isWeekly"] = true,
-									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 								}),
 								q(60230, {	-- More the Merrier
 									["provider"] = { "n", 167150 },	-- Rathan
@@ -563,7 +568,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 									["coord"] = { 54.9, 67.8, MALDRAXXUS },
 									["isWeekly"] = true,
-									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 								}),
 								q(62294, {	-- One Lich's Trash...
 									["sourceQuests"] = { 57601 },	-- Construct Body: The Professor
@@ -573,7 +578,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 									["coord"] = { 55.4, 68.2, MALDRAXXUS },
 									["isWeekly"] = true,
-									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 								}),
 								q(61996, {	-- Say The Magic Words
 									["sourceQuests"] = { 57600 },	-- Construct Body: Sabrina
@@ -583,7 +588,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 									["coord"] = { 54.8, 68.8, MALDRAXXUS },
 									["isWeekly"] = true,
-									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 								}),
 								q(58515, {	-- Scrounging for Scrolls
 									["sourceQuests"] = { 57601 },	-- Construct Body: The Professor
@@ -593,7 +598,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 									["coord"] = { 55.4, 68.2, MALDRAXXUS },
 									["isWeekly"] = true,
-									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 								}),
 								q(60283, {	-- Specter Of War: Visectus
 									["provider"] = { "n", 161668 },	-- Summoner Gerard
@@ -608,7 +613,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 									["coord"] = { 54.8, 68.8, MALDRAXXUS },
 									["isWeekly"] = true,
-									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 								}),
 								q(58525, {	-- The Two Sides of History
 									["sourceQuests"] = { 57601 },	-- Construct Body: The Professor
@@ -618,7 +623,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 									["coord"] = { 55.4, 68.2, MALDRAXXUS },
 									["isWeekly"] = true,
-									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 								}),
 							}),
 							i(184354, {-- Soul Harvester Key
@@ -688,7 +693,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["provider"] = { "n", 161678 },	-- Mama Tomalin
 									["coord"] = { 55.3, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
-									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 								}),
 								q(60342, {	-- Cut 'Em Down to Size
 									["sourceQuests"] = { 58416 },	-- Construct Body: Guillotine
@@ -698,14 +703,14 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 									["coord"] = { 54.4, 67.9, MALDRAXXUS },
 									["isWeekly"] = true,
-									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 								}),
 								q(56470, {	-- Give A Dog A Bone
 									["sourceQuests"] = { 60216 },	-- Construct Body: Mama Tomalin
 									["provider"] = { "n", 161678 },	-- Mama Tomalin
 									["coord"] = { 55.3, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
-									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 								}),
 								q(62261, {	-- Grinder
 									["sourceQuests"] = { 58416 },	-- Construct Body: Guillotine
@@ -715,7 +720,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 									["coord"] = { 54.4, 67.9, MALDRAXXUS },
 									["isWeekly"] = true,
-									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 								}),
 								q(60340, {	-- Hands on Approach
 									["sourceQuests"] = { 58416 },	-- Construct Body: Guillotine
@@ -725,7 +730,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 									["coord"] = { 54.4, 67.9, MALDRAXXUS },
 									["isWeekly"] = true,
-									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 								}),
 								q(62407, {	-- Herbicidal Tendencies
 									["sourceQuests"] = { 57608 },	-- Construct Body: Gas Bag
@@ -735,14 +740,14 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 									["coord"] = { 54.2, 68.0, MALDRAXXUS },
 									["isWeekly"] = true,
-									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 								}),
 								q(58992, {	-- Pie Not?
 									["sourceQuests"] = { 60216 },	-- Construct Body: Mama Tomalin
 									["provider"] = { "n", 161678 },	-- Mama Tomalin
 									["coord"] = { 55.3, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
-									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 								}),
 								q(59293, {	-- Special Formula
 									["sourceQuests"] = { 57608 },	-- Construct Body: Gas Bag
@@ -752,7 +757,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 									["coord"] = { 54.2, 68.0, MALDRAXXUS },
 									["isWeekly"] = true,
-									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 								}),
 								q(61635, {	-- Troubled Souls
 									["provider"] = { "n", 167150 },	-- Rathan
@@ -796,6 +801,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										["name"] = "Construct Body: Iron Phillip",
 										["cost"] = {
 											{ "i", 178061, 20 },	-- 20x Malleable Flesh
+											{ "i", 171828, 20 },	-- 20x Laestrite Ore
 											{ "i", 183744, 10 },	-- 10x Superior Parts
 											{ "i", 183475, 1 },		-- 1x Indomitable Hide
 										},
@@ -804,6 +810,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										["name"] = "Construct Body: Naxx",
 										["cost"] = {
 											{ "i", 178061, 20 },	-- 20x Malleable Flesh
+											{ "i", 173202, 12 },	-- 12x Shrouded Cloth
 											{ "i", 183744, 10 },	-- 10x Superior Parts
 											{ "i", 183519, 1 },		-- 1x Necromantic Oil
 										},
@@ -816,7 +823,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["provider"] = { "n", 159199 },    -- Iron Phillip
 									["coord"] = { 55.5, 68.4, MALDRAXXUS },
 									["isWeekly"] = true,
-									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 								}),
 								q(58379, {	-- Construct Part: Indomitable Hide
 									["sourceQuests"] = { 61638 },	-- Iron Solution
@@ -839,7 +846,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["provider"] = { "n", 158298 },    -- Naxx
 									["coord"] = { 54.8, 68.7, MALDRAXXUS },
 									["isWeekly"] = true,
-									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 								}),
 								q(61638, {	-- Iron Solution
 									["provider"] = { "n", 167150 },	-- Rathan
@@ -969,6 +976,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 								i(184037, {	-- Maldraxxus Candles
 									["description"] = "These become available after you build rank 5 Abomination table.",
 								}),
+								i(183166),	-- Nidore Ocularis
 								i(178547),	-- Questionable Fried Poultry
 								i(178546),	-- Questionable Meat Product
 								i(178681),	-- Slim Shinbone

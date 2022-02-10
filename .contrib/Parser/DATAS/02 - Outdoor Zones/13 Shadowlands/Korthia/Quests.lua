@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root("Zones", m(SHADOWLANDS, {
+root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 	m(KORTHIA, {
 		n(QUESTS, {
 			n(REWARDS, {
@@ -83,7 +83,6 @@ root("Zones", m(SHADOWLANDS, {
 					i(187184),	-- Vesper of Clarity (TOY!)
 				},
 			}),
-		--	confirmed on live
 			q(63672, {	-- A Cry From the Heart
 				["sourceQuests"] = { 63656 },	-- The Meaning of Wrath
 				["description"] = "Requires Renown 52.",
@@ -167,10 +166,27 @@ root("Zones", m(SHADOWLANDS, {
 				["provider"] = { "n", 177452 },	-- Bonesmith Heirmir
 				["coord"] = { 34.9, 35.3, KORTHIA },
 			}),
+			q(63899, {	-- Book of Binding: The Mad Witch
+				["sourceQuests"] = { 64506 },	-- What Must Be Found
+				["description"] = "At the end of the top level of the cave.",
+				["provider"] = { "i", 187206 },	-- Book of Binding: The Mad Witch
+				["coord"] = { 27.2, 56.8, KORTHIA },
+			}),
+			q(63908, {	-- Bulwark of Divine Intent
+				["sourceQuests"] = { 64532 },	-- The Final Relics
+				["description"] = "Requires having purchased |cFF0070ddResearch Report: Ancient Shrines|r, allowing you to interact with the phasing swords.",
+				["provider"] = { "i", 186014 },	-- Bulwark of Divine Intent
+				["coord"] = { 18.5, 38.0, KORTHIA },
+			}),
 			q(63733, {	-- Carving Out a Path
 				["sourceQuests"] = { 63732 },	-- Interrupt the Interrogations
 				["provider"] = { "n", 178713 },	-- Archivist Roh-Dahl
 				["coord"] = { 58.9, 58.1, KORTHIA },
+			}),
+			q(63912, {	-- Celestial Shadowlands Chart
+				["sourceQuests"] = { 64506 },	-- What Must Be Found
+				["provider"] = { "i", 187201 },	-- Celestial Shadowlands Chart
+				["coord"] = { 45.5, 56.0, KORTHIA },
 			}),
 			q(64290, {	-- Collecting Research
 				["sourceQuests"] = { 64289 },	-- Picking Up the Pieces
@@ -204,6 +220,15 @@ root("Zones", m(SHADOWLANDS, {
 				["provider"] = { "n", 177459 },	-- Protector Kah-Rev
 				["coord"] = { 49.5, 65.0, KORTHIA },
 			}),
+			q(63892, {	-- Diviner's Rune Chits
+				["sourceQuests"] = { 64506 },	-- What Must Be Found
+				["description"] = "The item that starts this quest and the Rune Chits themselves can drop from Korthian treasures.",
+				["provider"] = { "i", 187055 },	-- Pouch of Rune Chits
+				["cost"] = { { "i", 185962, 20 } },    -- 20x Rune Chit
+				["g"] = {
+					i(187154),	-- Ancient Korthian Runes (TOY!)
+				},
+			}),
 			q(64211, {	-- Doorway in the Dark (A)
 				["sourceQuests"] = { 63593 },	-- New Sigil of the Kyrian
 				["provider"] = { "n", 177194 },	-- The Primus
@@ -226,6 +251,13 @@ root("Zones", m(SHADOWLANDS, {
 				["description"] = "Requires Renown 50.",
 				["provider"] = { "n", 177167 },	-- Baroness Vashj
 				["coord"] = { 60.6, 27.5, KORTHIA },
+			}),
+			q(63915, {	-- Drum of Driving
+				["sourceQuests"] = { 64506 },	-- What Must Be Found
+				["description"] = "Requires someone with Tier 3 Archivist's Codex reputation to repair the teleportation pad.",
+				["provider"] = { "i", 187204 },	-- Drum of Driving
+				["coord"] = { 39.3, 52.4, KORTHIA },
+				["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
 			}),
 			q(63855, {	-- Ease of Passage
 				["sourceQuests"] = { 63848 },	-- A Show of Gratitude
@@ -318,6 +350,12 @@ root("Zones", m(SHADOWLANDS, {
 				["provider"] = { "n", 177202 },	-- Ve'nari
 				["coord"] = { 58.3, 14.3, KORTHIA },
 			}),
+			q(63923, {	-- Lang Family Wood-Carving
+				["sourceQuests"] = { 64532 },	-- The Final Relics
+				["description"] = "Requires having purchased |cFF0070ddResearch Report: Ancient Shrines|r, allowing you to interact with the phasing swords.",
+				["provider"] = { "i", 187209 },	-- Lang Family Wood-Carving
+				["coord"] = { 24.3, 56.6, KORTHIA },
+			}),
 			q(63706, {	-- Let the Anima Flow
 				["sourceQuests"] = { 63703 },	-- Vault of Secrets
 				["provider"] = { "n", 177449 },	-- Bonesmith Heirmir
@@ -332,6 +370,18 @@ root("Zones", m(SHADOWLANDS, {
 				["sourceQuests"] = { 63710 },	-- The Anima Trail
 				["provider"] = { "n", 177451 },	-- Tal-Galan - TODO: verify NPC once on live, it's currently named "Tal-Galan (temp)"
 				["coord"] = { 34.9, 35.3, KORTHIA },
+			}),
+			q(64519, {	-- Lost Vaults
+				["sourceQuests"] = {
+					64511,	-- Missing Relics
+				--	TODO: "Missing Relics" is the previous quest in the chain.  i didn't get access to this until i had turned in the 2 quests below, which took me to Tier 3 research.
+				--	not sure if the quests are the prerequisite, the research, or both.  fragment turn-ins are SUPER janky atm on PTR so i can't test trying to get the rep without turning in any reliquaries
+					63915,	-- Drum of Driving
+					63917,	-- Everliving Statuette
+				},
+				["minReputation"] = { 2472, 7500 },	-- Tier 3
+				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+				["coord"] = { 62.7, 22.5, KORTHIA },
 			}),
 			q(64511, {	-- Missing Relics
 				["sourceQuests"] = { 64506 },	-- What Must Be Found
@@ -407,6 +457,13 @@ root("Zones", m(SHADOWLANDS, {
 				["provider"] = { "n", 177850 },	-- Protector Rih-Mat
 				["coord"] = { 55.6, 22.2, KORTHIA },
 			}),
+			q(63916, {	-- Sack of Strange Soil
+				["sourceQuests"] = { 64506 },	-- What Must Be Found
+				["description"] = "Requires someone with Tier 3 Archivist's Codex reputation to repair the teleportation pad.",
+				["provider"] = { "i", 187205 },	-- Sack of Strange Soil
+				["coord"] = { 45.0, 35.5, KORTHIA },
+				["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
+			}),
 			q(63709, {	-- Secrets of the Vault
 				["sourceQuests"] = {
 					63706,	-- Let the Anima Flow
@@ -415,6 +472,15 @@ root("Zones", m(SHADOWLANDS, {
 				},
 				["provider"] = { "n", 177423 },	-- Tal-Galan
 				["coord"] = { 57.4, 29.8, KORTHIA },
+			}),
+			q(63922, {	-- Shadow Slicing Shortsword
+				["sourceQuests"] = { 64532 },	-- The Final Relics
+				["description"] = "Requires having purchased |cFF0070ddResearch Report: Ancient Shrines|r, allowing you to interact with the phasing swords.",
+				["provider"] = { "i", 187208 },	-- Shadow Slicing Shortsword
+				["coord"] = { 39.4, 42.6, KORTHIA },
+				["g"] = {
+					i(187159),	-- Shadow Slicing Shortsword (TOY!)
+				},
 			}),
 			q(63949, {	-- Shaping Fate
 				["sourceQuests"] = { 63902 },	-- Good News, Everyone!
@@ -435,6 +501,11 @@ root("Zones", m(SHADOWLANDS, {
 					}),
 				},
 			}),
+			q(63911, {	-- Singing Steel Ingot
+				["sourceQuests"] = { 64506 },	-- What Must Be Found
+				["provider"] = { "i", 187200 },	-- Singing Steel Ingot
+				["coord"] = { 62.1, 56.8, KORTHIA },
+			}),
 			q(63903, {	-- Storming the Sanctum
 				["sourceQuests"] = { 63727 },	-- The Primus Returns
 				["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
@@ -444,6 +515,11 @@ root("Zones", m(SHADOWLANDS, {
 				["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 				["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 62.8, 24.9, KORTHIA },
+			}),
+			q(63860, {	-- Talisman of the Eternal Scholar
+				["sourceQuests"] = { 64506 },	-- What Must Be Found
+				["provider"] = { "i", 185914 },	-- Damaged Talisman
+				["coord"] = { 40.6, 41.3, KORTHIA },
 			}),
 			q(63710, {	-- The Anima Trail
 				["sourceQuests"] = { 63709 },	-- Secrets of the Vault
@@ -455,6 +531,17 @@ root("Zones", m(SHADOWLANDS, {
 				["description"] = "Requires Renown 47.",	-- on Kyrian, presume all covenants are the same
 				["provider"] = { "n", 177194 },	-- The Primus
 				["coord"] = { 63.1, 25.3, KORTHIA },
+			}),
+			q(64532, {	-- The Final Relics
+			--	TODO: unsure if reqs are these 3 quests, Tier 5 research, or both
+				["sourceQuests"] = {
+					63914,	-- Cipher of Understanding
+					63920,	-- Enigmatic Decrypting Device
+					63913,	-- Unstable Sin'dorei Explosive
+				},
+				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+				["minReputation"] = { 2472, 25000 },	-- Tier 5
+				["coord"] = { 62.7, 22.5, KORTHIA },
 			}),
 			q(63705, {	-- The Knowledge Keepers
 				["sourceQuests"] = { 63703 },	-- Vault of Secrets
@@ -529,102 +616,8 @@ root("Zones", m(SHADOWLANDS, {
 				["provider"] = { "n", 177227 },	-- Tal-Galan
 				["coord"] = { 63.8, 23.7, KORTHIA },
 			}),
-
-		--	ptr data
-			q(63899, {	-- Book of Binding: The Mad Witch
-				["sourceQuests"] = { 64506 },	-- What Must Be Found
-				["description"] = "At the end of the top level of the cave.",
-				["provider"] = { "i", 187206 },	-- Book of Binding: The Mad Witch
-				["coord"] = { 27.2, 56.8, KORTHIA },
-			}),
-			q(63908, {	-- Bulwark of Divine Intent
-				["sourceQuests"] = { 64532 },	-- The Final Relics
-				["description"] = "Requires having purchased |cFF0070ddResearch Report: Ancient Shrines|r, allowing you to interact with the phasing swords.",
-				["provider"] = { "i", 186014 },	-- Bulwark of Divine Intent
-				["coord"] = { 18.5, 38.0, KORTHIA },
-			}),
-			q(63912, {	-- Celestial Shadowlands Chart
-				["sourceQuests"] = { 64506 },	-- What Must Be Found
-				["provider"] = { "i", 187201 },	-- Celestial Shadowlands Chart
-				["coord"] = { 45.5, 56.0, KORTHIA },
-			}),
-			q(63892, {	-- Diviner's Rune Chits
-				["sourceQuests"] = { 64506 },	-- What Must Be Found
-				["description"] = "The item that starts this quest and the Rune Chits themselves can drop from Korthian treasures.",
-				["provider"] = { "i", 187055 },	-- Pouch of Rune Chits
-			--	["cost"] = { { "i", 185962, 20 } },	-- 20x Rune Chit
-				["g"] = {
-					objective(1, {    -- 0/20 Rune Chits
-						["cost"] = { { "i", 185962, 20 } },    -- 20x Rune Chit
-					}),
-					i(187154),	-- Ancient Korthian Runes (TOY!)
-				},
-			}),
-			q(63915, {	-- Drum of Driving
-				["sourceQuests"] = { 64506 },	-- What Must Be Found
-				["description"] = "Requires someone with Tier 3 Archivist's Codex reputation to repair the teleportation pad.",
-				["provider"] = { "i", 187204 },	-- Drum of Driving
-				["coord"] = { 39.3, 52.4, KORTHIA },
-				["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
-			}),
-			q(63923, {	-- Lang Family Wood-Carving
-				["sourceQuests"] = { 64532 },	-- The Final Relics
-				["description"] = "Requires having purchased |cFF0070ddResearch Report: Ancient Shrines|r, allowing you to interact with the phasing swords.",
-				["provider"] = { "i", 187209 },	-- Lang Family Wood-Carving
-				["coord"] = { 24.3, 56.6, KORTHIA },
-			}),
-			q(64519, {	-- Lost Vaults
-				["sourceQuests"] = {
-					64511,	-- Missing Relics
-				--	TODO: "Missing Relics" is the previous quest in the chain.  i didn't get access to this until i had turned in the 2 quests below, which took me to Tier 3 research.
-				--	not sure if the quests are the prerequisite, the research, or both.  fragment turn-ins are SUPER janky atm on PTR so i can't test trying to get the rep without turning in any reliquaries
-					63915,	-- Drum of Driving
-					63917,	-- Everliving Statuette
-				},
-				["minReputation"] = { 2472, 7500 },	-- Tier 3
-				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-				["coord"] = { 62.7, 22.5, KORTHIA },
-			}),
-			q(63916, {	-- Sack of Strange Soil
-				["sourceQuests"] = { 64506 },	-- What Must Be Found
-				["description"] = "Requires someone with Tier 3 Archivist's Codex reputation to repair the teleportation pad.",
-				["provider"] = { "i", 187205 },	-- Sack of Strange Soil
-				["coord"] = { 45.0, 35.5, KORTHIA },
-				["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
-			}),
-			q(63922, {	-- Shadow Slicing Shortsword
-				["sourceQuests"] = { 64532 },	-- The Final Relics
-				["description"] = "Requires having purchased |cFF0070ddResearch Report: Ancient Shrines|r, allowing you to interact with the phasing swords.",
-				["provider"] = { "i", 187208 },	-- Shadow Slicing Shortsword
-				["coord"] = { 39.4, 42.6, KORTHIA },
-				["g"] = {
-					i(187159),	-- Shadow Slicing Shortsword (TOY!)
-				},
-			}),
-			q(63911, {	-- Singing Steel Ingot
-				["sourceQuests"] = { 64506 },	-- What Must Be Found
-				["provider"] = { "i", 187200 },	-- Singing Steel Ingot
-				["coord"] = { 62.1, 56.8, KORTHIA },
-			}),
-			q(63860, {	-- Talisman of the Eternal Scholar
-				["sourceQuests"] = { 64506 },	-- What Must Be Found
-				["provider"] = { "i", 185914 },	-- Damaged Talisman
-				["coord"] = { 40.6, 41.3, KORTHIA },
-			}),
-			q(64532, {	-- The Final Relics
-			--	TODO: unsure if reqs are these 3 quests, Tier 5 research, or both
-				["sourceQuests"] = {
-					63914,	-- Cipher of Understanding
-					63920,	-- Enigmatic Decrypting Device
-					63913,	-- Unstable Sin'dorei Explosive
-				},
-				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-				["minReputation"] = { 2472, 25000 },	-- Tier 5
-				["coord"] = { 62.7, 22.5, KORTHIA },
-			}),
-
-		--	Korthia Daily
-		--	confirmed on live
+		--	Dailies
+		--	Confirmed
 			q(64271, {	-- A More Civilized Way
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178795 },	-- Nadjia the Mistblade
@@ -668,6 +661,12 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 64.7, 25.6, KORTHIA },
 			}),
 			q(63790, {	-- Broker's Bounty: Lord Azzorak
+				["sourceQuests"] = { 64556 },	-- In Need of Assistance
+				["provider"] = { "o", 368772 },	-- Sigilscored Scroll
+				["isDaily"] = true,
+				["coord"] = { 64.7, 25.6, KORTHIA },
+			}),
+			q(63792, {	-- Broker's Bounty: Nocturnus the Unraveler
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "o", 368772 },	-- Sigilscored Scroll
 				["isDaily"] = true,
@@ -788,6 +787,15 @@ root("Zones", m(SHADOWLANDS, {
 				["isDaily"] = true,
 				["coord"] = { 60.7, 27.9, KORTHIA },
 			}),
+			q(64017, {	-- Oozing with Character (Bloop)
+				["sourceQuests"] = { 64556 },	-- In Need of Assistance
+				["provider"] = { "n", 178806 },	-- Plague Deviser Marileth
+				["isDaily"] = true,
+				["coord"] = { 60.5, 27.6, KORTHIA },
+				["g"] = {
+					ach(15056),		-- Friend of Bloop
+				},
+			}),
 			q(64016, {	-- Oozing with Character (Ooz)
 				["sourceQuests"] = { 63727 },	-- The Primus Returns
 				["provider"] = { "n", 178806 },	-- Plague Deviser Marileth
@@ -904,13 +912,7 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 61.4, 23.2, KORTHIA },
 			}),
 
-		--	ptr data
-			q(63792, {	-- Broker's Bounty: Nocturnus the Unraveler
-				["sourceQuests"] = { 64556 },	-- In Need of Assistance
-				["provider"] = { "o", 368772 },	-- Sigilscored Scroll
-				["isDaily"] = true,
-				["coord"] = { 64.7, 25.6, KORTHIA },
-			}),
+		--	9.1.0 PTR Data
 			q(63788, {	-- Continued Efforts: Sanctuary of Guidance
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178800 },	-- Voitha
@@ -959,15 +961,6 @@ root("Zones", m(SHADOWLANDS, {
 				["isDaily"] = true,
 				["coord"] = { 61.6, 24.1, KORTHIA },
 			}),
-			q(64017, {	-- Oozing with Character (Bloop)
-				["sourceQuests"] = { 64556 },	-- In Need of Assistance
-				["provider"] = { "n", 178806 },	-- Plague Deviser Marileth
-				["isDaily"] = true,
-				["coord"] = { 60.5, 27.6, KORTHIA },
-				["g"] = {
-					ach(15056),		-- Friend of Bloop
-				},
-			}),
 			q(65146, {	-- Relic Hunter
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 				["coord"] = { 62.8, 22.6, KORTHIA },
@@ -1011,7 +1004,7 @@ root("Zones", m(SHADOWLANDS, {
 			}),
 		}),
 	}),
-}));
+})));
 
 root("HiddenQuestTriggers", {
 	q(64563),	-- triggered when turning in #64556, "In Need of Assistance"

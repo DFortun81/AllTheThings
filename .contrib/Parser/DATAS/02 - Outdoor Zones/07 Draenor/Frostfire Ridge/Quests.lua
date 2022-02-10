@@ -1305,7 +1305,7 @@ root("HiddenQuestTriggers", {
 		q(37652),	-- Vignette: Jabberjaw - secondary trigger for Jabberjaw rare
 	}),
 });
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(WOD_TIER, {
 		n(ARMOR, {
 			filter(CLOTH, {
@@ -1324,14 +1324,5 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		n(WEAPONS, {
 			i(118186),	-- Frostwolf Wisdom Stick
 		}),
-		n(QUESTS, {
-			q(35346),	-- Abatha, the Alchemist
-			q(35292),	-- Ang'kra, the Alchemist
-			q(37625),	-- Assault on Magnarok (A)
-			q(34063),	-- Enemies Above
-			q(34079),	-- Mission Successful
-			q(33562),	-- Trophy: Gorg'ak's Obsidian Spines
-			q(35057),	-- Vignette XP reward - Frostfire
-		}),
 	}),
-});
+}));

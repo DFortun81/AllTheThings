@@ -132,6 +132,9 @@ _.WorldDrops =
 				i(4417),	-- Schematic: Large Seaforium Charge
 				i(16044),	-- Schematic: Lifelike Mechanical Toad
 				i(4408),	-- Schematic: Mechanical Squirrel Box
+				i(10604, { -- Schematic: Mithril Heavy-Bore Rifle
+					["recipeID"] = 12614,
+				}),
 				i(4412),	-- Schematic: Moonsight Rifle
 				i(10606),	-- Schematic: Parachute Cloak
 				i(4414),	-- Schematic: Portable Bronze Mortar

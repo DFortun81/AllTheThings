@@ -24,7 +24,6 @@ _.Zones =
 						["sourceQuests"] = { 39326 },	-- Missing Shipments
 						["provider"] = { "n", 92458 },	-- Deucus Valdera
 						["coord"] = { 41.6, 32.8, LEGION_DALARAN },
-						["sourceQuests"] = { 39326 },	-- Missing Shipments
 						["isBreadcrumb"] = true,
 					}),
 					q(39390, {	-- A Mysterious Text

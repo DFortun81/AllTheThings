@@ -39,6 +39,11 @@ _.GearSets =
 					}),
 				},
 			}),
+			cl(WARLOCK ,{
+				mount(5784, {	-- Felsteed
+					["description"] = "|cFF40bf40Received on reaching Level 10 as a Warlock.|r",
+				}),
+			})
 		},
 	}),
 };

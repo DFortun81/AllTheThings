@@ -2401,7 +2401,7 @@ _.Zones =
 -- #if AFTER TBC
 -- These quests trigger after specific events occur in the zone.
 _.HiddenQuestTriggers = {
-	q(10454),	-- Hellfire Peninsula - Flag: OFF THE RAILS. Triggered just after turning in Forward Base: Reaver's Fall as horde
+	q(10454),	-- Hellfire Peninsula - Flag: OFF THE RAILS. Triggered just after turning in quest 10124 & 10143
 };
 
 -- These quests never made it in.
@@ -2456,7 +2456,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 		q(10135),	-- BETA Mission: Be the Messenger [Horde]
 		q(10148),	-- BETA Mission: Be the Messenger [Alliance]
-		q(10125),	-- BETA Mission: Disrupt Communications
 		q(10401, {	-- BETA Mission: End All, Be All [Horde]
 			-- Items on the current version of the quest, these don't need to be marked removed (and shouldn't be)
 			--i(28041),	-- Bladefist's Breadth

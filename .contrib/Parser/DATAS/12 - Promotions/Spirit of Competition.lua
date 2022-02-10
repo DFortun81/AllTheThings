@@ -5,12 +5,44 @@ root("Promotions", n(-531, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Spirit
 	["description"] = "This is a Battlegrounds-based event that coincides with the beginning of the Summer Olympic games. The only time this was celebrated was in 2008 to correspond to the Beijing Olympics, and although there appeared to be the intention to repeat this event, it never returned.",
 	["timeline"] = { "added 2.0.1" },
 	["groups"] = {
-		ach(1637),	-- Spirit of Competition
+		removeclassicphase(ach(1637, {	-- Spirit of Competition
+			["provider"] = { "i", 37297 },	-- Spirit of Competition
+			["races"] = HORDE_ONLY,
+			-- #if BEFORE WRATH
+			["description"] = "Proud owner of a Spirit of Competition pet from the 2008 Spirit of Competition event.",
+			["OnUpdate"] = [[function(t)
+				local collected = false;
+				for i,provider in ipairs(t.providers) do
+					if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
+						collected = true;
+						break;
+					end
+				end
+				t.SetAchievementCollected(t.achievementID, collected);
+			end]],
+			-- #endif
+		})),
 		i(37297, {	-- Gold Medallion (Spirit of Competition)
 			["description"] = "Win a battleground during the Spirit of Competition event to get this.",
 		}),
 		
-		ach(1636),	-- Competitor's Tabard
+		removeclassicphase(ach(1636, {	-- Competitor's Tabard
+			["provider"] = { "i", 36941 },	-- Competitor's Tabard
+			["races"] = HORDE_ONLY,
+			-- #if BEFORE WRATH
+			["description"] = "Proud owner of a Competitor's Tabard from the 2008 Spirit of Competition event.",
+			["OnUpdate"] = [[function(t)
+				local collected = false;
+				for i,provider in ipairs(t.providers) do
+					if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
+						collected = true;
+						break;
+					end
+				end
+				t.SetAchievementCollected(t.achievementID, collected);
+			end]],
+			-- #endif
+		})),
 		i(36941, {	-- Competitor's Tabard
 			["description"] = "Participate in a battleground during the Spirit of Competition event to get this.",
 		}),

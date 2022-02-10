@@ -885,10 +885,3 @@ root("HiddenQuestTriggers", {
 		q(37676),	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Thrall
 	}),
 });
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	tier(WOD_TIER, {
-		n(QUESTS, {
-			q(35499),	-- Blow up towers
-		}),
-	}),
-});

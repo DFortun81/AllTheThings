@@ -191,6 +191,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						["g"] = {
 							ach(14408),	-- Heroic: De Other Side
 							i(182178),	-- Raptor Soul (Soulshape!)
+							i(186998),	-- Pattern: Pallid Oracle Bones
 							i(179353),	-- Harness of Twisted Whims
 							i(179354),	-- Reality-Shatter Vambraces
 							i(179351),	-- Mueh'zala's Hexthread Sarong

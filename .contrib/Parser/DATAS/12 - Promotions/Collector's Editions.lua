@@ -218,7 +218,6 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 					["altQuests"] = { 63448 },	-- A Deluxe Delivery (Cities)
 					["coord"] = { 28.0, 75.8, STRANGLETHORN_VALE },
 					["maps"] = {
-						STRANGLETHORN_VALE,
 						THE_EXODAR,
 						IRONFORGE,
 						STORMWIND_CITY,
