@@ -1450,6 +1450,7 @@ _.HiddenQuestTriggers = {
 		q(42646),	-- triggered after getting Extra Thick Mojo in Durotar when on the Legion intro quest To Be Prepared
 		q(42647),	-- triggered after getting Extra Thick Mojo in Durotar when on the Legion intro quest To Be Prepared
 		q(42648),	-- triggered after getting Extra Thick Mojo in Durotar when on the Legion intro quest To Be Prepared
+		q(45341),	-- After obtaining the Chef's Hat toy
 
 		-- Artifact Power questlines
 		q(45851),	-- Dual Boss Trait Complete - triggered after bm hunter artifact power questline
