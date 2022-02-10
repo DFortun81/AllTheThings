@@ -947,6 +947,8 @@ end
 		local cache = GetTempDataMember("PROFESSION_CACHE");
 		if not cache or invalidate then
 			cache = {};
+			-- "Professions" that anyone can "know"
+			-- Junkyard Tinkering
 			cache[2720] = true;
 			SetTempDataMember("PROFESSION_CACHE", cache);
 			local prof1, prof2, archaeology, fishing, cooking, firstAid = GetProfessions();
@@ -964,6 +966,7 @@ end
 					end
 				end
 			end
+			app.print("Refreshed Player's Learned Professions");
 		end
 		return cache;
 	end
@@ -8679,6 +8682,7 @@ end
 end)();
 
 -- Garrison Lib
+-- TODO: use caching
 (function()
 local C_Garrison_GetBuildingInfo = C_Garrison.GetBuildingInfo;
 local C_Garrison_GetMissionName = C_Garrison.GetMissionName;
@@ -8689,6 +8693,9 @@ local fields = {
 	end,
 	["text"] = function(t)
 		return t.link or select(2, C_Garrison_GetBuildingInfo(t.buildingID));
+	end,
+	["name"] = function(t)
+		return select(2, C_Garrison_GetBuildingInfo(t.buildingID));
 	end,
 	["filterID"] = function(t)
 		return t.itemID and 200;
@@ -21221,6 +21228,7 @@ app.InitDataCoroutine = function()
 	app:RegisterEvent("TOYS_UPDATED");
 	app:RegisterEvent("LOOT_OPENED");
 	app:RegisterEvent("QUEST_DATA_LOAD_RESULT");
+	app:RegisterEvent("LEARNED_SPELL_IN_TAB");
 
 	local needRefresh;
 	-- NOTE: The auto refresh only happens once per version
@@ -21739,6 +21747,12 @@ app.events.BOSS_KILL = function(id, name, ...)
 	-- print("BOSS_KILL", id, name, ...);
 	app:UnregisterEvent("LOOT_CLOSED");
 	app:RegisterEvent("LOOT_CLOSED");
+end
+app.events.LEARNED_SPELL_IN_TAB = function(spellID, skillInfoIndex, isGuildPerkSpell)
+	-- seems to be a reliable way to notice a player has changed professions? not sure how else often it actually triggers... hopefully not to excessive...
+	if skillInfoIndex == 7 then
+		DelayedCallback(app.GetTradeSkillCache, 2, true);
+	end
 end
 app.events.LOOT_CLOSED = function()
 	-- Once the loot window closes after killing a boss, THEN trigger the update.
