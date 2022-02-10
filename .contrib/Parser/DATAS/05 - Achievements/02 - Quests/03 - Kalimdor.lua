@@ -5,13 +5,86 @@
 root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 	achcat(ACHIEVEMENT_CATEGORY_KALIMDOR_QUESTS, {
 		ach(5443, {		-- E'ko Madness (Winterspring)
-			crit(1),		-- Winterspring Furbolg
-			crit(2),		-- Wildkin
-			crit(3),		-- Shardtooth Bears
-			crit(4),		-- Frostmaul Giants
-			crit(5),		-- Frostsabers
-			crit(6),		-- Chillwind Chimaera
-			crit(7),		-- Ice Thistle Yeti
+			["maps"] = { WINTERSPRING },
+			["g"] = {
+				crit(1, {	-- Winterspring Furbolg
+					["crs"] = {
+						10738,	-- High Chief Winterfall
+						7442,	-- Winterfall Pathfinder
+						10916,	-- Winterfall Runner
+						7438,	-- Winterfall Ursa
+					},
+					["coords"] = {
+						{ 29.0, 49.0, WINTERSPRING },
+						{ 66.4, 52.2, WINTERSPRING },
+						{ 36.8, 55.6, WINTERSPRING },
+					},
+				}),
+				crit(2, {	-- Wildkin
+					["crs"] = {
+						7454,	-- Berserk Owlbeast
+						7452,	-- Crazed Owlbeast
+						7453,	-- Moontouched Owlbeast
+						7450,	-- Ragged Owlbeast
+						7451,	-- Raging Owlbeast
+					},
+					["coords"] = {
+						{ 63.0, 30.4, WINTERSPRING },
+						{ 65.2, 76.6, WINTERSPRING },
+						{ 57.6, 75.6, WINTERSPRING }
+					},
+				}),
+				crit(3, {	-- Shardtooth Bears
+					["crs"] = {
+						7444,	-- Shardtooth Bear
+						7443,	-- Shardtooth Mauler
+					},
+					["coords"] = {
+						{ 30.6, 56.8, WINTERSPRING },
+						{ 55.2, 30.6, WINTERSPRING },
+						{ 55.8, 38.8, WINTERSPRING },
+					},
+				}),
+				crit(4, {	-- Frostmaul Giants
+					["crs"] = {
+						7428,	-- Frostmaul Giant
+					},
+					["coords"] = {
+						{ 56.6, 86.6, WINTERSPRING },
+						{ 63.2, 89.8, WINTERSPRING },
+					},
+				}),
+				crit(5, {	-- Frostsabers
+					["crs"] = {
+						7431,	-- Frostsaber
+						10737,	-- Shy-Rotam
+					},
+					["coords"] = {
+						{ 46.2, 17.6, WINTERSPRING },
+						{ 51.4, 22.0, WINTERSPRING },
+					},
+				}),
+				crit(6, {	-- Chillwind Chimaera
+					["crs"] = {
+						7448,	-- Chillwind Chimera
+					},
+					["coords"] = {
+						{ 58.0, 23.8, WINTERSPRING },
+					},
+				}),
+				crit(7, {	-- Ice Thistle Yeti
+					["crs"] = {
+						7459,	-- Ice Thistle Matriarch
+						7460,	-- Ice Thistle Patriarch
+						7458,	-- Ice Thistle Yeti
+						49235,	-- Icewhomp
+						7457,	-- Rogue Ice Thistle
+					},
+					["coords"] = {
+						{ 67.6, 54.2, WINTERSPRING },
+					},
+				}),
+			},
 		}),
 		a(ach(5453)),	-- Ghosts in the Dark (Darkshore)
 		ach(5448),		-- Glutton for Fiery Punishment (Azshara)

@@ -1225,7 +1225,7 @@ _.HiddenQuestTriggers = {
 		q(31275),	-- LFGDungeons - Mists - Raid Finder - Nth
 		q(32897),	-- LFGDungeons - Mists - Scenario - Heroic Daily - 1st/Nth
 		q(31987),	-- LFGDungeons - Theramore Launch Event
-		
+
 		--	RAIDS
 		q(32752),	-- Dark Animus Dead (killed Dark Animus on heroic in ToT)
 		q(32750),	-- Durumu Dead (killed Durumu on normal in ToT)
@@ -3209,7 +3209,7 @@ _.HiddenQuestTriggers = {
 		q(60768),	-- opening the cage to get Dal's Courier Badge on "A Stolen Stone Fiend"
 		q(62940),	-- opening the crate while on #61619, "Alchemy: Elixir of Humility"
 		-- Venthyr Covenant
-		q(62827),	-- uhhhhh i killed myself by jumping into nothingness from one of the platforms / while on FP through Oribos
+		q(62827),	-- uhhhhh i killed myself by jumping into nothingness from one of the platforms / while on FP through Oribos / first entering Oribos @ lvl 60
 		q(62950),	-- clicking "Activate" after putting "Thrill Seeker" in Nadjia's soulbind tree
 		q(62749),	-- triggered when turning in #62921, "Our True Purpose"
 		q(63063),	-- looks like an unused version of #63056, "Sanctum Upgrade: Mirror Network"
