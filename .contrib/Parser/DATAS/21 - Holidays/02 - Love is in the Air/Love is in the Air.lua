@@ -142,7 +142,7 @@ _.Holidays = { applyholiday(LOVE_IS_IN_THE_AIR, {
 				}),
 			}),
 		}),
-		n(-139, {	-- Bosses
+		n(BOSSES, {
 			n(36296, {	-- Apothecary Hummel
 				i(147907, {	-- Heart-Shaped Carton
 					i(49715),	-- Forever-Lovely Rose
@@ -892,7 +892,7 @@ _.Holidays = { applyholiday(LOVE_IS_IN_THE_AIR, {
 			}),
 		}),
 		-- #endif
-		
+
 		-- #if ANYCLASSIC
 		-- TODO: Classic isn't ready for this holiday yet, prepping now! (it came out today whoooops)
 		i(22206),	-- Bouquet of Red Roses

@@ -1062,7 +1062,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 			n(ZONE_DROPS, {
 				removeclassicphase(ach(424, {	-- Why? Because It's Red
 					["provider"] = { "i", 21321 },	-- Red Qiraji Resonating Crystal
-					["f"] = 100,
+					["filterID"] = MOUNTS,
 					-- #if BEFORE WRATH
 					["description"] = "Obtain a Red Qiraji Resonating Crystal.",
 					["OnUpdate"] = [[function(t)
