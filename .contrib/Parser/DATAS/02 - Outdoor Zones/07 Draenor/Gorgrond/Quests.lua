@@ -550,7 +550,9 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 36488,	-- Thieving Dwarves
 					}),
-					n(BONUS_OBJECTIVES, {
+					n(BONUS_OBJECTIVES, sharedData({
+						["lockCriteria"] = { 1, "lvl", 40 },	-- Cannot be completed once reaching level 40
+					},{
 						-- TODO: Check SQ also probably cant do after a certain level
 						q(36473,  {	-- Affliction Ridge
 							["coord"] = { 47.1, 64.4, GORGROND },
@@ -570,7 +572,7 @@ _.Zones =
 								35151,	-- Your Base, Your Choice
 							},
 						}),
-					}),
+					})),
 				}),
 				n(-357,  {	-- Sparring Arena
 					q(35210,  {	-- A Great Escape
@@ -1200,7 +1202,9 @@ _.Zones =
 							36208,	-- The Crystal Shard
 						},
 					}),
-					n(BONUS_OBJECTIVES, {
+					n(BONUS_OBJECTIVES, sharedData({
+						["lockCriteria"] = { 1, "lvl", 40 },	-- Cannot be completed once reaching level 40
+					},{
 						-- TODO: Check SQ also probably cant do after a certain level
 						q(36504, {	-- Evermorn Springs
 							["coord"] = { 43.0, 79.9, GORGROND },
@@ -1214,7 +1218,7 @@ _.Zones =
 							["coord"] = { 47.8, 72.8, GORGROND },
 							["sourceQuest"] = 35151,	-- Your Base, Your Choice
 						}),
-					}),
+					})),
 				}),
 				q(36037, {	-- A Centurion Without a Cause
 					["provider"] = { "n", 83820 },	-- High Centurion Tormmok
@@ -2048,7 +2052,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 35041,	-- Xuk It!
 				}),
-				n(BONUS_OBJECTIVES, {
+				n(BONUS_OBJECTIVES, sharedData({
+					["lockCriteria"] = { 1, "lvl", 40 },	-- Cannot be completed once reaching level 40
+				},{
 					-- TODO: Check SQ
 					q(36815, {	-- Assault on the Everbloom Wilds (A)
 						["coord"] = { 64.0, 40.0, GORGROND },
@@ -2101,7 +2107,7 @@ _.Zones =
 					q(36480, {	-- Valley of Destruction
 						["coord"] = { 46.4, 47.2, GORGROND },
 					}),
-				}),
+				})),
 			}),
 		}),
 	}),

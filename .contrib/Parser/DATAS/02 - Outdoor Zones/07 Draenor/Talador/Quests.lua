@@ -210,7 +210,9 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34879,	-- Dropping In
 					}),
-					n(BONUS_OBJECTIVES, {
+					n(BONUS_OBJECTIVES, sharedData({
+						["lockCriteria"] = { 1, "lvl", 40 },	-- Cannot be completed once reaching level 40
+					},{
 					-- TODO: Check SQ also probably cant do after a certain level
 						q(37421, {	-- Kuuro's Claim
 							["altQuests"] = { 37422 },	-- Zangarra (other building BO)
@@ -224,7 +226,7 @@ _.Zones =
 							["coord"] = { 65.4, 32.0, TALADOR },
 							["races"] = HORDE_ONLY,
 						}),
-					}),
+					})),
 				}),
 				n(-361, {	-- Artillery Tower
 					q(34982, {	-- Armor Up
@@ -416,7 +418,9 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34569,	-- The Quarry Quandary
 					}),
-					n(BONUS_OBJECTIVES, {
+					n(BONUS_OBJECTIVES, sharedData({
+						["lockCriteria"] = { 1, "lvl", 40 },	-- Cannot be completed once reaching level 40
+					},{
 					-- TODO: Check SQ also probably cant do after a certain level
 						q(35236, {	-- Orunai Coast
 							["coord"] = { 56.9, 13.0, TALADOR },
@@ -427,7 +431,7 @@ _.Zones =
 							["coord"] = { 83.4, 28.6, TALADOR },
 							["sourceQuest"] = 34566,	-- At Your Command
 						}),
-					}),
+					})),
 				}),
 				q(34802, {	-- A Pilgrimage Gone Awry
 					["provider"] = { "n", 80028 },	-- Nadur
@@ -1658,7 +1662,9 @@ _.Zones =
 						34571,	-- Out of Jovite (artillery tower)
 					},
 				}),
-				n(BONUS_OBJECTIVES, {
+				n(BONUS_OBJECTIVES, sharedData({
+					["lockCriteria"] = { 1, "lvl", 40 },	-- Cannot be completed once reaching level 40
+				},{
 					-- TODO: Check SQ
 					q(37635, {	-- Assault on Shattrath Harbor (A)
 						["coord"] = { 44.0, 23.0, TALADOR },
@@ -1697,7 +1703,7 @@ _.Zones =
 					q(34660, {	-- Zorkra's Fall
 						["coord"] = { 54.2, 88.7, TALADOR },
 					}),
-				}),
+				})),
 			}),
 		}),
 	}),

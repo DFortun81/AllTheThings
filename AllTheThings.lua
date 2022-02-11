@@ -11053,6 +11053,20 @@ local C_QuestLog_IsOnQuest = C_QuestLog.IsOnQuest;
 local C_QuestLog_IsQuestReplayable = C_QuestLog.IsQuestReplayable;
 local C_QuestLog_IsQuestReplayedRecently = C_QuestLog.IsQuestReplayedRecently;
 local C_QuestLog_ReadyForTurnIn = C_QuestLog.ReadyForTurnIn;
+local IsSpellKnown = IsSpellKnown;
+
+local criteriaFuncs = {
+    ["lvl"] = function(v)
+        return app.Level >= v;
+    end,
+    ["questID"] = function(v)
+        return CompletedQuests[v];
+    end,
+    ["spellID"] = function(v)
+        return IsSpellKnown(v);
+    end,
+}
+
 local questFields = {
 	["key"] = function(t)
 		return "questID";
@@ -11201,12 +11215,14 @@ local questFields = {
 				for i,questID in ipairs(t.nextQuests) do
 					if IsQuestFlaggedCompleted(questID) then
 						rawset(t, "breadcrumbLockedBy", questID);
+						rawset(t, "locked", questID);
 						return questID;
 					else
 						-- this questID may not even be available to pick up, so try to find an object with this questID to determine if the object is complete
 						nq = app.SearchForObject("questID", questID);
 						if nq and (IsQuestFlaggedCompleted(nq.questID) or nq.altcollected or nq.breadcrumbLockedBy) then
 							rawset(t, "breadcrumbLockedBy", questID);
+							rawset(t, "locked", questID);
 							return questID;
 						end
 					end
@@ -11240,6 +11256,43 @@ local questFields = {
 			return completed;
 		end
 	end,
+	["locked"] = function(t)
+		local questID = t.questID;
+		if not IsQuestFlaggedCompleted(questID) then
+			local lockCriteria = t.lc;
+			if lockCriteria then
+				print("lockCriteria for",questID)
+				local criteriaRequired = lockCriteria[1];
+				local critKey, critFunc;
+				for i=2,#lockCriteria,1 do
+					critKey = lockCriteria[i];
+					critFunc = criteriaFuncs[critKey];
+					i = i + 1;
+					if critFunc then
+						print("Lock Criteria check",questID,critKey,lockCriteria[i],critFunc(lockCriteria[i]))
+						if critFunc(lockCriteria[i]) then
+							criteriaRequired = criteriaRequired - 1;
+						end
+					else
+						app.print("Unknown 'lockCriteria' key:",critKey);
+					end
+					-- enough criteria met to consider this quest locked
+					if criteriaRequired <= 0 then
+						print("Quest",questID,"is considered locked")
+						-- we can rawset this since there's no real way for a player to 'remove' this lock during a session
+						-- and this does not come into play during party sync
+						rawset(t, "locked", true);
+						return true;
+					end
+				end
+			elseif t.breadcrumbLockedBy then
+				return true;
+			end
+		end
+		-- rawset means that this will persist as a non-locked quest until reload, so quests that become locked while playing will not immediately update
+		-- maybe can revise that somehow without also having this entire logic be calculated billions of times when nothing changes....
+		rawset(t, "locked", false);
+	end,
 };
 app.BaseQuest = app.BaseObjectFields(questFields, "BaseQuest");
 
@@ -11256,16 +11309,14 @@ app.CollectibleAsQuest = function(t)
 			(not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"))
 			-- debug mode
 			and (app.MODE_DEBUG
-				-- must not be a breadcrumb
-				or (not t.isBreadcrumb)
-				-- unless collecting breadcrumbs
+				-- or must not be a breadcrumb and be account mode, or able to access the quest on current character
+				or (not t.isBreadcrumb and (app.MODE_ACCOUNT or not t.locked))
+				-- unless collecting breadcrumbs (rename to 'difficult' quests?)
 				or (app.CollectibleBreadcrumbs and
 					-- in account mode
 					(app.MODE_ACCOUNT
 					-- or party sync without the quest being disabled for it
-					or (app.IsInPartySync and not t.DisablePartySync)
-					-- or simply being able to access the breadcrumb
-					or not t.breadcrumbLockedBy)))
+					or (app.IsInPartySync and not t.DisablePartySync))))
 			-- account-wide quests (special case since quests are only available once per account, so can only consider them collectible if they've never been completed otherwise)
 			and (app.AccountWideQuests
 				-- otherwise must not be a once-per-account quest which has already been flagged as completed on a different character

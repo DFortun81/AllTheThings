@@ -1423,7 +1423,9 @@ _.Zones =
 					["provider"] = { "n", 84632 },	-- Marybelle Walsh
 					["coord"] = { 77.4, 47.3, DRAENOR_NAGRAND },
 				}),
-				n(BONUS_OBJECTIVES, {
+				n(BONUS_OBJECTIVES, sharedData({
+					["lockCriteria"] = { 1, "lvl", 40 },	-- Cannot be completed once reaching level 40
+				},{
 					-- TODO: Check SQ
 					q(37629, {	-- Assault on Mok'gol Watchpost (A)
 						["coord"] = { 44.0, 36.0, DRAENOR_NAGRAND },
@@ -1478,7 +1480,7 @@ _.Zones =
 					q(37280, {	-- Snarlpaw Ledge
 						["coord"] = { 79.1, 29.0, DRAENOR_NAGRAND },
 					}),
-				}),
+				})),
 			}),
 		}),
 	}),

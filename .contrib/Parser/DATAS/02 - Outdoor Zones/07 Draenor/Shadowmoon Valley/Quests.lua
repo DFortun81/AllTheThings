@@ -1037,7 +1037,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				n(BONUS_OBJECTIVES, {
+				n(BONUS_OBJECTIVES, sharedData({
+					["lockCriteria"] = { 1, "lvl", 40 },	-- Cannot be completed once reaching level 40
+				},{
 					-- TODO: Check SQ
 					i(111418),	-- Mushroom Juice (Used for the Bonus Objective)
 					q(37633, {	-- Assault on Darktide Roost (A)
@@ -1092,7 +1094,7 @@ _.Zones =
 						["coord"] = { 60.3, 65.0, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 					}),
-				}),
+				})),
 			}),
 		}),
 	}),
