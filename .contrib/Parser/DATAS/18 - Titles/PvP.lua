@@ -529,7 +529,7 @@ _.Titles =
 		title(441, {	-- Unchained Gladiator <Name>
 			["timeline"] = {
 				"added 9.1.0",
-				"removed 9.2.0",
+				"removed 9.1.2",
 			},
 		}),
 		-- RBG titles

@@ -28,6 +28,9 @@ root("Zones", m(SHADOWLANDS, {
 					i(189989),	-- Penguin Soul
 				},
 			}),
+			prof(FISHING, {
+				i(189983),	-- Gormit Soul
+			}),
 		})
 	}),
 }));

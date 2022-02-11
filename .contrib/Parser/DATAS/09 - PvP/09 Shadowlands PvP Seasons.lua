@@ -436,7 +436,7 @@ root("PVP", pvp(tier(SL_TIER, {
 			}),
 		}),
 	})),
-	n(SEASON_UNCHAINED, bubbleDown({ ["timeline"] = { "added 9.1.0", "removed 9.2.0" } }, {
+	n(SEASON_UNCHAINED, bubbleDown({ ["timeline"] = { "added 9.1.0", "removed 9.1.2" } }, {
 		n(PVP_ASPIRANT, {
 			n(BACK, {
 				i(185240),	-- Unchained Aspirant's Cape
@@ -849,7 +849,7 @@ root("PVP", pvp(tier(SL_TIER, {
 			}),
 		}),
 	})),
-	n(SEASON_COSMIC, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
+	n(SEASON_COSMIC, bubbleDown({ ["timeline"] = { "added 9.1.2" } }, {
 		n(PVP_ASPIRANT, {
 			n(BACK, {
 				i(186944),	-- Cosmic Aspirant's Cape

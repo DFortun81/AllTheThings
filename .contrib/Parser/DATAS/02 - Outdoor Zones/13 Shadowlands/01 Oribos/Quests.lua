@@ -1069,15 +1069,15 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				--["sourceQuests"] = {},
 				["provider"] = { "n", 181655 },	-- The Primus
 				["coord"] = { 32.6, 51, 2042 },
-				["timeline"] = { "added 9.2.0" },
+				["timeline"] = { "added 9.1.2" },
 			}),
 			q(64944, { -- A Hasty Voyage
 				["sourceQuests"] = { 64942 },	-- Call of the Primus
 				["provider"] = { "n", 181655 },	-- The Primus
 				["coord"] = { 34.2, 52.3, 2042 },
-				["timeline"] = { "added 9.2.0" },
+				["timeline"] = { "added 9.1.2" },
 			}),
-			q(64958, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- The Forces Gather
+			q(64958, bubbleDownSelf({ ["timeline"] = { "added 9.1.2" } }, {	-- The Forces Gather
 				["sourceQuests"] = { 64957 },	-- The Old Waystone
 				["provider"] = { "n", 184698 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 49.5, 37.5, ORIBOS },	-- (Up Stairs)
@@ -1088,7 +1088,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				},
 			})),
 			-- Chapter 7
-			q(65239, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Safe Haven
+			q(65239, bubbleDownSelf({ ["timeline"] = { "added 9.1.2" } }, {	-- Safe Haven
 				["sourceQuests"] = { 65238 },	-- Souls Entwined
 				["provider"] = { "n", 184584 },	-- Kleia
 				["coord"] = { 59.9, 56.1, ORIBOS },
@@ -1102,13 +1102,13 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			q(65625, {	-- The Jailer's Gauntlet
 				["provider"] = { "n", 185576 },	-- Ve'nyo
 				["coord"] = { 55.7, 49.3, ORIBOS },
-				["timeline"] = { "added 9.2.0" },
+				["timeline"] = { "added 9.1.2" },
 			}),
 			-- PvP
 			q(65649, {	-- A New Deal
 				["provider"] = { "n", 168011 },	-- Zo'sorg
 				["coord"] = { 35.6, 57.5, ORIBOS },
-				["timeline"] = { "added 9.2.0" },
+				["timeline"] = { "added 9.1.2" },
 				["g"] = {
 					i(188778),	-- Cosmic Gladiator's Devouring Malediction
 					i(188691),	-- Cosmic Gladiator's Echoing Resolve

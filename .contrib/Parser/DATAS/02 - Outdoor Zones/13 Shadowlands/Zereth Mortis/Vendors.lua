@@ -274,10 +274,6 @@ root("Zones", m(SHADOWLANDS, {
 					i(189986, {	-- Armadillo Soul (SOUL!)
 						["cost"] = { { "c", CYPHER, 500 }, },
 					}),
-					i(189973, {	-- Ray Soul (SOUL!)
-						["cost"] = { { "c", CYPHER, 1000 }, },
-						["u"] = NEVER_IMPLEMENTED,
-					}),
 					i(190333, {	-- Jiro Circle of Song (TOY!)
 						["cost"] = { { "c", CYPHER, 100 }, },
 					}),

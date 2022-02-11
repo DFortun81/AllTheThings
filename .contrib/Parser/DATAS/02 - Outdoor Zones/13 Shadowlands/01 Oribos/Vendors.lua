@@ -471,7 +471,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 							["cost"] = { { "c", 1792, 1500 } },
 							["classes"] = { DRUID },
 						}),
-						n(SEASON_COSMIC, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
+						n(SEASON_COSMIC, bubbleDown({ ["timeline"] = { "added 9.1.2" } }, {
 							n(WEAPONS, {
 								i(186959),	-- Cosmic Aspirant's Barrier
 								i(186948),	-- Cosmic Aspirant's Battleaxe
@@ -588,7 +588,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 								i(186968),	-- Cosmic Aspirant's Sigil of Adaptation
 							}),
 						})),
-						n(SEASON_UNCHAINED, bubbleDown({ ["timeline"] = { "added 9.1.0", "removed 9.2.0" } }, {
+						n(SEASON_UNCHAINED, bubbleDown({ ["timeline"] = { "added 9.1.0", "removed 9.1.2" } }, {
 							n(WEAPONS, {
 								i(185295, {	-- Unchained Aspirant's Barrier
 									["cost"] = { { "c", 1792, 425 } },	-- 425x Honor
@@ -1159,7 +1159,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 								i(137642),	-- Mark of Honor
 							},
 						}),
-						n(SEASON_COSMIC, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
+						n(SEASON_COSMIC, bubbleDown({ ["timeline"] = { "added 9.1.2" } }, {
 							n(WEAPONS, {
 								i(186863),	-- Cosmic Gladiator's Ballista
 								i(189562),	-- Cosmic Gladiator's Barrier
@@ -1284,7 +1284,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 								i(186871),	-- Cosmic Gladiator's Sigil of Adaptation
 							}),
 						})),
-						n(SEASON_UNCHAINED, bubbleDown({ ["timeline"] = { "added 9.1.0", "removed 9.2.0" } }, {
+						n(SEASON_UNCHAINED, bubbleDown({ ["timeline"] = { "added 9.1.0", "removed 9.1.2" } }, {
 							n(WEAPONS, {
 								i(188660, {	-- Unchained Gladiator's Barrier
 									["cost"] = { { "c", 1602, 450 } },	-- 450x Conquest

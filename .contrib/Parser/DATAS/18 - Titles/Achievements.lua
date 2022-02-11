@@ -259,12 +259,12 @@ _.Titles =
 		}),
 		title(449, {	-- Gauntlet Runner <Name>
 			["timeline"] = {
-				"added 9.2.0",
+				"added 9.1.2",
 			},
 		}),
 		title(450, {	-- <Name>, Tower Ranger
 			["timeline"] = {
-				"added 9.2.0",
+				"added 9.1.2",
 			},
 		}),
 	}),

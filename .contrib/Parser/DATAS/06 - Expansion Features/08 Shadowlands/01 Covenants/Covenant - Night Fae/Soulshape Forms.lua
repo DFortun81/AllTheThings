@@ -220,11 +220,17 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 			q(65507, {	-- Elekk Soul
 				["provider"] = { "i", 189975 },	-- Elekk Soul
 			}),
+			q(65513, {	-- Gromit Soul
+				["provider"] = { "i", 189983 },	-- Gromit Soul
+			}),
 			q(65517, {	-- Penguin Soul
 				["provider"] = { "i", 189989 },	-- Penguin Soul
 			}),
 			q(65515, {	-- Pig Soul
 				["provider"] = { "i", 189987 },	-- Pig Soul
+			}),
+			q(65506, {	-- Ray Soul
+				["provider"] = { "i", 189973 },	-- Ray Soul
 			}),
 			q(65505, {	-- Scorpid Soul
 				["provider"] = { "i", 189972 },	-- Scorpid Soul
@@ -238,12 +244,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 			--[[ NO SOURCE YET
 			q(65640, {	-- Cervid Soul
 				["provider"] = { "i", 190337 },	-- Cervid Soul
-			}),
-			q(65513, {	-- Gromit Soul
-				["provider"] = { "i", 189983 },	-- Gromit Soul
-			}),
-			q(65506, {	-- Ray Soul
-				["provider"] = { "i", 189973 },	-- Ray Soul
 			}),
 			q(65512, {	-- Silithid Soul
 				["provider"] = { "i", 189982 },	-- Silithid Soul

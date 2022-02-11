@@ -135,7 +135,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 					}),
 				},
 			}),
-			d(2, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {	-- Heroic
+			d(2, bubbleDown({ ["timeline"] = { "added 9.1.2" } }, {	-- Heroic
 				e(2437, {	-- Zo'phex the Sentinel
 					["creatureID"] = 175616,	-- Zo'phex
 					["g"] = {
