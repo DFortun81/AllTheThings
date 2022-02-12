@@ -13048,6 +13048,8 @@ function app.CompletionistItemCollectionHelper(sourceID, oldState)
 				local name, link = GetItemInfo(sourceInfo.itemID);
 				print(format(L["ITEM_ID_ADDED_MISSING"], link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID));
 			end
+			Callback(app.PlayFanfare);
+			Callback(app.TakeScreenShot);
 		end
 
 		-- Update the groups for the sourceID results
@@ -13071,8 +13073,8 @@ function app.UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
 			end
 		end
 
-		-- Show the collection message.
-		if app.IsReady and app.Settings:GetTooltipSetting("Report:Collected") then
+		-- Show the collection message if learning this Source actually contributed as a new Unique appearance
+		if (oldState == 0 or #unlockedSourceIDs > 1) and app.IsReady and app.Settings:GetTooltipSetting("Report:Collected") then
 			-- Search for the item that actually was unlocked.
 			local searchResults = SearchForField("s", sourceID);
 			if searchResults and #searchResults > 0 then
@@ -13088,6 +13090,8 @@ function app.UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
 				print(format(L[#unlockedSourceIDs > 0 and "ITEM_ID_ADDED_SHARED_MISSING" or "ITEM_ID_ADDED_MISSING"],
 					link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID, #unlockedSourceIDs));
 			end
+			Callback(app.PlayFanfare);
+			Callback(app.TakeScreenShot);
 		end
 
 		-- Update the groups for the sourceIDs
@@ -21924,8 +21928,6 @@ app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
 		if oldState ~= 1 then
 			ATTAccountWideData.Sources[sourceID] = 1;
 			app.ActiveItemCollectionHelper(sourceID, oldState);
-			Callback(app.PlayFanfare);
-			Callback(app.TakeScreenShot);
 			wipe(searchCache);
 			SendSocialMessage("S\t" .. sourceID .. "\t" .. oldState .. "\t1");
 		end
