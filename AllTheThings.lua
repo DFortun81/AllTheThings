@@ -1306,7 +1306,7 @@ local function HexToARGB(hex)
 	return tonumber("0x"..hex:sub(1,2)), tonumber("0x"..hex:sub(3,4)), tonumber("0x"..hex:sub(5,6)), tonumber("0x"..hex:sub(7,8));
 end
 local function HexToRGB(hex)
-	return tonumber("0x"..hex:sub(1,2)), tonumber("0x"..hex:sub(3,4)), tonumber("0x"..hex:sub(5,6));
+	return tonumber("0x"..hex:sub(1,2)) / 255, tonumber("0x"..hex:sub(3,4)) / 255, tonumber("0x"..hex:sub(5,6)) / 255;
 end
 local function RGBToHex(r, g, b)
 	return string.format("ff%02x%02x%02x",
@@ -11054,18 +11054,35 @@ local C_QuestLog_IsQuestReplayable = C_QuestLog.IsQuestReplayable;
 local C_QuestLog_IsQuestReplayedRecently = C_QuestLog.IsQuestReplayedRecently;
 local C_QuestLog_ReadyForTurnIn = C_QuestLog.ReadyForTurnIn;
 local IsSpellKnown = IsSpellKnown;
+local GetSpellInfo = GetSpellInfo;
 
 local criteriaFuncs = {
     ["lvl"] = function(v)
         return app.Level >= v;
     end,
+	["label_lvl"] = "Player Level",
+    ["text_lvl"] = function(v)
+        return v;
+    end,
+
     ["questID"] = function(v)
         return CompletedQuests[v];
     end,
-    ["spellID"] = function(v)
-        return IsSpellKnown(v);
+	["label_questID"] = "Completed Quest",
+    ["text_questID"] = function(v)
+		local questObj = app.SearchForObject("questID", v);
+        return questObj.text;
     end,
-}
+
+    ["spellID"] = function(v)
+        return IsSpellKnown(v) or app.CurrentCharacter.Spells[v];
+    end,
+	["label_spellID"] = "Learned Spell/Mount/Recipe",
+    ["text_spellID"] = function(v)
+        return select(1, GetSpellInfo(v));
+    end,
+};
+app.QuestLockCriteriaFunctions = criteriaFuncs;
 
 local questFields = {
 	["key"] = function(t)
@@ -11264,17 +11281,20 @@ local questFields = {
 				print("lockCriteria for",questID)
 				local criteriaRequired = lockCriteria[1];
 				local critKey, critFunc;
-				for i=2,#lockCriteria,1 do
+				local i, limit = 2, #lockCriteria;
+				while i < limit do
 					critKey = lockCriteria[i];
 					critFunc = criteriaFuncs[critKey];
+					print("key",i,critKey)
 					i = i + 1;
+					print("i",i)
 					if critFunc then
 						print("Lock Criteria check",questID,critKey,lockCriteria[i],critFunc(lockCriteria[i]))
 						if critFunc(lockCriteria[i]) then
 							criteriaRequired = criteriaRequired - 1;
 						end
 					else
-						app.print("Unknown 'lockCriteria' key:",critKey);
+						app.print("Unknown 'lockCriteria' key:",critKey,lockCriteria[i]);
 					end
 					-- enough criteria met to consider this quest locked
 					if criteriaRequired <= 0 then
@@ -11284,6 +11304,7 @@ local questFields = {
 						rawset(t, "locked", true);
 						return true;
 					end
+					i = i + 1;
 				end
 			elseif t.breadcrumbLockedBy then
 				return true;
@@ -15353,7 +15374,7 @@ RowOnEnter = function (self)
 						if nq then
 							tinsert(nextq, nq);
 						else
-							tinsert(nextq, app.CreateQuest(questID));
+							tinsert(nextq, app.CreateQuest(nextQuestID));
 						end
 						if IsQuestFlaggedCompleted(nextQuestID) then
 							isBreadcrumbAvailable = false;
@@ -15373,6 +15394,40 @@ RowOnEnter = function (self)
 			elseif not reference.DisablePartySync then
 				-- There is no information about next quests that invalidates the breadcrumb
 				GameTooltip:AddLine(L["BREADCRUMB_PARTYSYNC_3"]);
+			end
+		end
+
+		-- Show information about it becoming locked due to some criteira
+		-- TODO: localize these when finalized
+		local lockCriteria = reference.lc;
+		if lockCriteria then
+			-- it is already locked
+			if reference.locked then
+				if not reference.DisablePartySync then
+					-- should be possible in party sync
+					GameTooltip:AddLine(L["BREADCRUMB_PARTYSYNC_3"]);
+				else
+					-- known to not be possible in party sync
+					-- TODO: text to indicate that the quest cannot be completed on this character, even using Party Sync
+					GameTooltip:AddLine("This is likely not able to be completed by this character even using Party Sync. If you manage otherwise, please let us know on Discord!");
+				end
+			else
+				-- list the reasons this may become locked
+				local critKey, critValue;
+				local critFuncs = app.QuestLockCriteriaFunctions;
+				local critFunc;
+				GameTooltip:AddLine("Becomes unavailable if "..lockCriteria[1].." of the following are met:", HexToRGB("d15517"));
+				for i=2,#lockCriteria,1 do
+					critKey = lockCriteria[i];
+					i = i + 1;
+					critValue = lockCriteria[i];
+					critFunc = critFuncs[critKey];
+					if critFunc then
+						local label = critFuncs["label_"..critKey];
+						local text = critFuncs["text_"..critKey](critValue);
+						GameTooltip:AddLine(GetCompletionIcon(critFunc(critValue)).." "..label..": "..text);
+					end
+				end
 			end
 		end
 
@@ -21185,12 +21240,12 @@ app.InitDataCoroutine = function()
 
 		-- Blanchy (reported as Blanchy no longer shows to alts on an account which has obtained the mount)
 		-- TODO: In future, it would be nice if these quests could be flagged unobtainable based on the learned spellID of the mount
-		62038,	-- Handful of Oats
-		62042,	-- Grooming Brush
-		62047,	-- Sturdy Horseshoe
-		62049,	-- Bucket of Clean Water
-		62048,	-- Comfortable Saddle Blanket
-		62050,	-- Dredhollow Apple
+		-- 62038,	-- Handful of Oats
+		-- 62042,	-- Grooming Brush
+		-- 62047,	-- Sturdy Horseshoe
+		-- 62049,	-- Bucket of Clean Water
+		-- 62048,	-- Comfortable Saddle Blanket
+		-- 62050,	-- Dredhollow Apple
 
 		-- Druid forms
 		65047, 	-- Mark of the Nightwing Raven
@@ -21214,6 +21269,13 @@ app.InitDataCoroutine = function()
 	for _,questID in ipairs({
 		32008,	-- Audrey Burnhep (A)
 		32009,	-- Varzok (H)
+
+		62038,	-- Handful of Oats
+		62042,	-- Grooming Brush
+		62047,	-- Sturdy Horseshoe
+		62049,	-- Bucket of Clean Water
+		62048,	-- Comfortable Saddle Blanket
+		62050,	-- Dredhollow Apple
 	}) do
 		oneTimeQuests[questID] = nil;
 	end
