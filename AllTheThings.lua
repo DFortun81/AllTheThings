@@ -6227,10 +6227,13 @@ app.TryColorizeName = function(group, name)
 			end
 		-- specific races
 		elseif group.races then
-			-- this group requires a horde-only race
-			if containsAny(group.races, HORDE_ONLY) then
+			local hrace = containsAny(group.races, HORDE_ONLY);
+			local arace = containsAny(group.races, ALLIANCE_ONLY);
+			if hrace and not arace then
+				-- this group requires a horde-only race, and not any alliance race
 				return Colorize(name, "ffcc6666");
-			else -- assuming no other factions exist and that .races will only ever have horde or alliance races
+			elseif arace and not hrace then
+				-- this group requires a alliance-only race, and not any horde race
 				return Colorize(name, "ff407fbf");
 			end
 		-- un-acquirable color
