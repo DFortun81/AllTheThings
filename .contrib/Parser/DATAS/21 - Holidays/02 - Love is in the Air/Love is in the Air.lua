@@ -2,15 +2,17 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 local BOUQUET_RED = i(22206);
-local BOUQUET_EBON = i(44731);
-_.Holidays = { applyholiday(LOVE_IS_IN_THE_AIR, {
+local BOUQUET_EBON = i(44731, {
+	["timeline"] = { "added 3.0.3.9138" },
+});
+root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 	-- #if ANYCLASSIC
 	["npcID"] = -50,
 	-- #else
 	["holidayID"] = 235468,
 	-- #endif
 	["groups"] = {
-		-- #if AFTER CATA
+		-- #if AFTER WRATH
 		n(ACHIEVEMENTS, {
 			ach(1693, {	-- Fool For Love
 				title(103),	-- the Love Fool
@@ -127,11 +129,11 @@ _.Holidays = { applyholiday(LOVE_IS_IN_THE_AIR, {
 				}),
 			}),
 			ach(1694, {	-- Lovely Luck Is On Your Side
-				["cost"] = { { "i", 151770, 1 } },	-- 1x Lovely Black Dress
+				["provider"] = { "i", 151770 },	-- 1x Lovely Black Dress
 			}),
 			ach(4624),	-- Tough Love
 			ach(1700, {	-- Perma-Peddle
-				["cost"] = { { "i", 22235, 1 } },	-- 1x Truesilver Shafted Arrow
+				["provider"] = { "i", 22235 },	-- 1x Truesilver Shafted Arrow
 			}),
 			ach(9389),	-- It Might Just Save Your Life
 			ach(9392, {	-- Love Magnet
@@ -142,56 +144,199 @@ _.Holidays = { applyholiday(LOVE_IS_IN_THE_AIR, {
 				}),
 			}),
 		}),
+		-- #endif
+		-- #if BEFORE WRATH
+		n(COMMON_BOSS_DROPS, {
+			i(22206, {	-- Bouquet of Red Roses
+				["maps"] = {
+					SCHOLOMANCE,
+					STRATHOLME,
+					DIRE_MAUL,
+					BLACKROCK_DEPTHS,
+				},
+				["crs"] = {
+					10901,	-- Lorekeeper Polkelt
+					10811,	-- Archivist Galford
+					11488,	-- Illyanna Ravenoak
+					8929,	-- Princess Moira Bronzebeard <Princess of Ironforge>
+				},
+			}),
+		}),
+		-- #else
 		n(BOSSES, {
-			n(36296, {	-- Apothecary Hummel
-				i(147907, {	-- Heart-Shaped Carton
-					i(49715),	-- Forever-Lovely Rose
-					i(50446),	-- Toxic Wasteling
-					i(50741),	-- Vile Fumigator's Mask
-					i(50471),	-- The Heartbreaker
-				}),
-				i(54537, {	-- Heart-Shaped Box
-					i(49715),	-- Forever-Lovely Rose
-					i(50446),	-- Toxic Wasteling
-					i(50741),	-- Vile Fumigator's Mask
-					i(50471),	-- The Heartbreaker
-					i(50250, {	-- X-45 Heartbreaker
-						ach(4627),	-- X-45 Heartbreaker
+			n(36296, {	-- Apothecary Hummel <Crown Chemical Co.>
+				["description"] = "You can loot the Heart-Shaped Box once a day per character by queueing for the encounter in the Dungeon Finder.",
+				--["questID"] = 25485, -- NOTE: This is what it should be, but it's not checking off correctly.
+				["timeline"] = { "added 3.3.0" },
+				["maps"] = {
+					SHADOWFANG_KEEP,
+					SHADOWFANG_KEEP_LEVEL2,
+					SHADOWFANG_KEEP_LEVEL3,
+					SHADOWFANG_KEEP_LEVEL4,
+					SHADOWFANG_KEEP_LEVEL5,
+					SHADOWFANG_KEEP_LEVEL6,
+					SHADOWFANG_KEEP_LEVEL7
+				},
+				-- #if AFTER MOP
+				["sym"] = {
+					{ "selectparent" },	-- Select the holiday root.
+					{ "pop" },	-- Get the Rewards.
+					{ "where", "headerID", REWARDS },	-- Select the "Rewards" header.
+					{ "pop" },	-- Get the Rewards.
+					{ "exclude", "itemID", 22218 },	-- Exclude Handful of Rose Petals
+				},
+				-- #endif
+				["groups"] = {
+					i(50320, {	-- Faded Lovely Greeting Card [A]
+						["timeline"] = { "added 3.3.2.11403" },
+>>>>>>> Stashed changes
 					}),
-				}),
-
-				un(REMOVED_FROM_GAME, i(51808)),	-- Choker of the Pure Heart [Level 80]
-				un(REMOVED_FROM_GAME, i(68173)),	-- Choker of the Pure Heart [Level 85]
-				un(REMOVED_FROM_GAME, i(93394)),	-- Choker of the Pure Heart [Level 90]
-				un(REMOVED_FROM_GAME, i(117369)),	-- Choker of the Pure Heart [Level 100]
-				i(143908),	-- Choker of the Pure Heart [Level 110]
-
-				un(REMOVED_FROM_GAME, i(51805)),	-- Heartbreak Charm [Level 80]
-				un(REMOVED_FROM_GAME, i(68176)),	-- Heartbreak Charm [Level 85]
-				un(REMOVED_FROM_GAME, i(93391)),	-- Heartbreak Charm [Level 90]
-				un(REMOVED_FROM_GAME, i(117366)),	-- Heartbreak Charm [Level 100]
-				i(143906),	-- Heartbreak Charm [Level 110]
-
-				un(REMOVED_FROM_GAME, i(51806)),	-- Shard of Pirouetting Happiness [Level 80]
-				un(REMOVED_FROM_GAME, i(68172)),	-- Shard of Pirouetting Happiness [Level 85]
-				un(REMOVED_FROM_GAME, i(93395)),	-- Shard of Pirouetting Happiness [Level 90]
-				un(REMOVED_FROM_GAME, i(117370)),	-- Shard of Pirouetting Happiness [Level 100]
-				i(143907),	-- Shard of Pirouetting Happiness [Level 110]
-
-				un(REMOVED_FROM_GAME, i(51807)),	-- Sweet Perfume Brooch [Level 80]
-				un(REMOVED_FROM_GAME, i(68174)),	-- Sweet Perfume Brooch [Level 85]
-				un(REMOVED_FROM_GAME, i(93393)),	-- Sweet Perfume Brooch [Level 90]
-				un(REMOVED_FROM_GAME, i(117368)),	-- Sweet Perfume Brooch [Level 100]
-				i(143909),	-- Sweet Perfume Brooch [Level 110]
-
-				un(REMOVED_FROM_GAME, i(51804)),	-- Winking Eye of Love [Level 80]
-				un(REMOVED_FROM_GAME, i(68175)),	-- Winking Eye of Love [Level 85]
-				un(REMOVED_FROM_GAME, i(93392)),	-- Winking Eye of Love [Level 90]
-				un(REMOVED_FROM_GAME, i(117367)),	-- Winking Eye of Love [Level 100]
-				i(143905),	-- Winking Eye of Love [Level 110]
-				i(21813),	-- Bag of Heart Candies
-				i(49909),	-- Box of Chocolates
-				i(34258),	-- Love Rocket
+					i(49641, {	-- Faded Lovely Greeting Card [H]
+						["timeline"] = { "added 3.3.2.11403" },
+					}),
+					i(54537, {	-- Heart-Shaped Box
+						["timeline"] = { "added 3.3.0" },
+						-- Minimum level this box drops (not 100% sure)
+						-- #if AFTER 9.0.1
+						["lvl"] = 50,
+						-- #elseif AFTER 8.0.1
+						["lvl"] = 110,
+						-- #elseif AFTER 7.2.5
+						["lvl"] = 98,
+						-- #endif
+						["groups"] = {
+							ach(4627, {	-- X-45 Heartbreaker
+								["timeline"] = { "added 3.3.0" },
+							}),
+							i(50250, {	-- X-45 Heartbreaker
+								["timeline"] = { "added 3.3.0" },
+							}),
+							i(49715, {	-- Forever-Lovely Rose
+								["timeline"] = { "added 3.3.0" },
+							}),
+							i(50446, {	-- Toxic Wasteling
+								["timeline"] = { "added 3.3.0" },
+							}),
+							i(50741, {	-- Vile Fumigator's Mask
+								["timeline"] = { "added 3.3.0" },
+							}),
+							i(50471, {	-- The Heartbreaker
+								["timeline"] = { "added 3.3.0" },
+							}),
+						},
+					}),
+					i(147907, {	-- Heart-Shaped Carton
+						["timeline"] = { "added 7.2.5.23910" },
+						["groups"] = {
+							i(49715, {	-- Forever-Lovely Rose
+								["timeline"] = { "added 3.3.0" },
+							}),
+							i(50446, {	-- Toxic Wasteling
+								["timeline"] = { "added 3.3.0" },
+							}),
+							i(50741, {	-- Vile Fumigator's Mask
+								["timeline"] = { "added 3.3.0" },
+							}),
+							i(50471, {	-- The Heartbreaker
+								["timeline"] = { "added 3.3.0" },
+							}),
+						},
+					}),
+					
+					-- Legion+
+					i(143908, {	-- Choker of the Pure Heart [Level 110]
+						["timeline"] = { "added 7.0.1" },
+					}),
+					i(143906, {	-- Heartbreak Charm [Level 110]
+						["timeline"] = { "added 7.0.1" },
+					}),
+					i(143907, {	-- Shard of Pirouetting Happiness [Level 110]
+						["timeline"] = { "added 7.0.1" },
+					}),
+					i(143909, {	-- Sweet Perfume Brooch [Level 110]
+						["timeline"] = { "added 7.0.1" },
+					}),
+					i(143905, {	-- Winking Eye of Love [Level 110]
+						["timeline"] = { "added 7.0.1" },
+					}),
+					
+					-- Warlords of Draenor
+					i(117369, {	-- Choker of the Pure Heart [Level 100]
+						["timeline"] = { "added 6.0.1", "removed 7.0.1" },
+					}),
+					i(117366, {	-- Heartbreak Charm [Level 100]
+						["timeline"] = { "added 6.0.1", "removed 7.0.1" },
+					}),
+					i(117370, {	-- Shard of Pirouetting Happiness [Level 100]
+						["timeline"] = { "added 6.0.1", "removed 7.0.1" },
+					}),
+					i(117368, {	-- Sweet Perfume Brooch [Level 100]
+						["timeline"] = { "added 6.0.1", "removed 7.0.1" },
+					}),
+					i(117367, {	-- Winking Eye of Love [Level 100]
+						["timeline"] = { "added 6.0.1", "removed 7.0.1" },
+					}),
+					
+					-- Mists of Pandaria
+					i(93394, {	-- Choker of the Pure Heart [Level 90]
+						["timeline"] = { "added 5.0.1", "removed 6.0.1" },
+					}),
+					i(93391, {	-- Heartbreak Charm [Level 90]
+						["timeline"] = { "added 5.0.1", "removed 6.0.1" },
+					}),
+					i(93395, {	-- Shard of Pirouetting Happiness [Level 90]
+						["timeline"] = { "added 5.0.1", "removed 6.0.1" },
+					}),
+					i(93393, {	-- Sweet Perfume Brooch [Level 90]
+						["timeline"] = { "added 5.0.1", "removed 6.0.1" },
+					}),
+					i(93392, {	-- Winking Eye of Love [Level 90]
+						["timeline"] = { "added 5.0.1", "removed 6.0.1" },
+					}),
+					
+					-- Cata
+					i(68176, {	-- Heartbreak Charm [Level 85]
+						["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+					}),
+					i(68173, {	-- Choker of the Pure Heart [Level 85]
+						["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+					}),
+					i(68172, {	-- Shard of Pirouetting Happiness [Level 85]
+						["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+					}),
+					i(68174, {	-- Sweet Perfume Brooch [Level 85]
+						["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+					}),
+					i(68175, {	-- Winking Eye of Love [Level 85]
+						["timeline"] = { "added 4.0.1", "removed 5.0.1" },
+					}),
+					
+					-- Wrath
+					i(51808, {	-- Choker of the Pure Heart [Level 80]
+						["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+					}),
+					i(51805, {	-- Heartbreak Charm [Level 80]
+						["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+					}),
+					i(51806, {	-- Shard of Pirouetting Happiness [Level 80]
+						["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+					}),
+					i(51807, {	-- Sweet Perfume Brooch [Level 80]
+						["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+					}),
+					i(51804, {	-- Winking Eye of Love [Level 80]
+						["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+					}),
+					--[[
+					i(21813),	-- Bag of Heart Candies
+					i(49909, {	-- Box of Chocolates
+						["timeline"] = { "added 3.3.2.11403" },
+					}),
+					i(34258, {	-- Love Rocket
+						["timeline"] = { "added 2.3.0.7382" },
+					}),
+					]]--
+				},
 			}),
 			tier(WOTLK_TIER, {
 				inst(277, {	-- Halls of Stone
@@ -215,6 +360,7 @@ _.Holidays = { applyholiday(LOVE_IS_IN_THE_AIR, {
 					},
 				}),
 			}),
+			-- #if AFTER CATA
 			tier(CATA_TIER, {
 				inst(66, {	-- Blackrock Caverns
 					["maps"] = { 283, 284 },
@@ -315,6 +461,8 @@ _.Holidays = { applyholiday(LOVE_IS_IN_THE_AIR, {
 					},
 				}),
 			}),
+			-- #endif
+			-- #if AFTER WOD
 			tier(WOD_TIER, {
 				inst(537, {	-- Shadowmoon Burial Grounds
 					["maps"] = { 574, 575, 576 },
@@ -332,14 +480,42 @@ _.Holidays = { applyholiday(LOVE_IS_IN_THE_AIR, {
 					},
 				}),
 			}),
+			-- #endif
 		}),
+		-- #endif
 		n(QUESTS, {
-			q(9029,  {	-- A Bubbling Cauldron
-				["u"] = REMOVED_FROM_GAME,
+			q(9029, {	-- A Bubbling Cauldron
+				["provider"] = { "o", 181073 },	-- Fragrant Cauldron
+				["sourceQuests"] = {
+					9028,	-- The Source Revealed [A]
+					8984,	-- The Source Revealed [H]
+				},
+				["coord"] = { 89.3, 75.1, ALTERAC_MOUNTAINS },
+				["timeline"] = { "removed 3.3.0" },
+				["isYearly"] = true,
+				["groups"] = {
+					i(22281, {	-- Blue Dinner Suit
+						["timeline"] = { "removed 7.2.5.24116" },
+					}),
+					i(22282, {	-- Purple Dinner Suit
+						["timeline"] = { "removed 7.2.5.24116" },
+					}),
+					i(22277, {	-- Red Dinner Suit
+						["timeline"] = { "removed 7.2.5.24116" },
+					}),
+					i(22278, {	-- Lovely Blue Dress
+						["timeline"] = { "removed 7.2.5.24116" },
+					}),
+					i(22280, {	-- Lovely Purple Dress
+						["timeline"] = { "removed 7.2.5.24116" },
+					}),
+					i(22276, {	-- Lovely Red Dress
+						["timeline"] = { "removed 7.2.5.24116" },
+					}),
+				},
 			}),
 			q(24635, {	-- A Cloudlet of Classy Cologne
-				["provider"] = { "n", 37675 },	-- Public Relations Agent
-				["isDaily"] = true,
+				["qg"] = 37675,	-- Public Relations Agent
 				["coords"] = {
 					{ 45.0, 57.4, DARNASSUS },
 					{ 33.8, 66.6, IRONFORGE },
@@ -348,78 +524,94 @@ _.Holidays = { applyholiday(LOVE_IS_IN_THE_AIR, {
 					{ 62.2, 75.2, STORMWIND_CITY },
 					{ 74.0, 56.2, THE_EXODAR },
 					{ 43.6, 53.4, THUNDER_BLUFF },
-					{ 66.0, 38.4,  UNDERCITY },
+					{ 66.0, 38.4, UNDERCITY },
+				},
+				["timeline"] = { "added 3.3.0" },
+				["isDaily"] = true,
+				["groups"] = {
+					objective(1, {	-- 0/10 Samples Given
+						["provider"] = { "i", 49669 },	-- Crown Cologne Sprayer
+					}),
 				},
 			}),
 			q(24657, {	-- A Friendly Chat... (A)
-				["sourceQuests"] = { 24849 },	-- Hot On The Trail (A)
-				["provider"] = { "n", 38325 },	-- Marion Sutton
+				["qg"] = 38325,	-- Marion Sutton
+				["sourceQuest"] = 24849,	-- Hot On The Trail (A)
 				["coord"] = { 60.4, 76.2, STORMWIND_CITY },
+				["timeline"] = { "added 3.3.0" },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(24576, {	-- A Friendly Chat... (H)
-				["races"] = HORDE_ONLY,
-				["sourceQuests"] = { 24851 },	-- Hot On The Trail (H)
 				["providers"] = {
 					{ "n", 37172 },	-- Detective Snap Snagglebolt
 					{ "n", 38328 },	-- Roka
 				},
+				["sourceQuest"] = 24851,	-- Hot On The Trail (H)
 				["coords"] = {
 					{ 50.0, 65.0, ORGRIMMAR },	-- Detective Snap Snagglebolt
 					{ 57.6, 61.0, ORGRIMMAR },	-- Roka
 				},
+				["timeline"] = { "added 3.3.0" },
+				["races"] = HORDE_ONLY,
 			}),
 			q(24609, {	-- A Gift for a Lord of Ironforge
-				["provider"] = { "n", 37887 },	-- Kwee Q. Peddlefeet
-				["isDaily"] = true,
+				["qg"] = 37887,	-- Kwee Q. Peddlefeet
 				["coord"] = { 33.4, 65.8, IRONFORGE },
+				["timeline"] = { "added 3.3.0" },
 				["races"] = ALLIANCE_ONLY,
+				["isDaily"] = true,
 			}),
 			q(24612, {	-- A Gift for High Overlord Saurfang
-				["provider"] = { "n", 37887 },	-- Kwee Q. Peddlefeet
-				["isDaily"] = true,
+				["qg"] = 37887,	-- Kwee Q. Peddlefeet
 				["coord"] = { 52.8, 76.8, ORGRIMMAR },
+				["timeline"] = { "added 3.3.0" },
 				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
 			}),
 			q(24613, {	-- A Gift for the Banshee Queen
-				["provider"] = { "n", 37887 },	-- Kwee Q. Peddlefeet
-				["isDaily"] = true,
+				["qg"] = 37887,	-- Kwee Q. Peddlefeet
 				["coord"] = { 66.4, 38.2,  UNDERCITY },
+				["timeline"] = { "added 3.3.0" },
 				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
 			}),
 			q(24614, {	-- A Gift for the High Chieftain
-				["provider"] = { "n", 37887 },	-- Kwee Q. Peddlefeet
-				["isDaily"] = true,
+				["qg"] = 37887,	-- Kwee Q. Peddlefeet
 				["coord"] = { 44.0, 52.8, THUNDER_BLUFF },
+				["timeline"] = { "added 3.3.0" },
 				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
 			}),
 			q(24610, {	-- A Gift for the High Priestess of Elune
-				["provider"] = { "n", 37887 },	-- Kwee Q. Peddlefeet
-				["isDaily"] = true,
+				["qg"] = 37887,	-- Kwee Q. Peddlefeet
 				["coord"] = { 45.2, 57.4, DARNASSUS },
+				["timeline"] = { "added 3.3.0" },
 				["races"] = ALLIANCE_ONLY,
+				["isDaily"] = true,
 			}),
 			q(24597, {	-- A Gift for the King of Stormwind
-				["provider"] = { "n", 37887 },	-- Kwee Q. Peddlefeet
-				["isDaily"] = true,
+				["qg"] = 37887,	-- Kwee Q. Peddlefeet
 				["coord"] = { 62.4, 75.0, STORMWIND_CITY },
+				["timeline"] = { "added 3.3.0" },
 				["races"] = ALLIANCE_ONLY,
+				["isDaily"] = true,
 			}),
 			q(24611, {	-- A Gift for the Prophet
-				["provider"] = { "n", 37887 },	-- Kwee Q. Peddlefeet
-				["isDaily"] = true,
+				["qg"] = 37887,	-- Kwee Q. Peddlefeet
 				["coord"] = { 73.8, 56.8, THE_EXODAR },
+				["timeline"] = { "added 3.3.0" },
 				["races"] = ALLIANCE_ONLY,
+				["isDaily"] = true,
 			}),
 			q(24615, {	-- A Gift for the Regent Lord of Quel'Thalas
-				["provider"] = { "n", 37887 },	-- Kwee Q. Peddlefeet
-				["isDaily"] = true,
+				["qg"] = 37887,	-- Kwee Q. Peddlefeet
 				["coord"] = { 64.2, 66.4, SILVERMOON_CITY },
+				["timeline"] = { "added 3.3.0" },
 				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
 			}),
 			q(24629, {	-- A Perfect Puff of Perfume
-				["provider"] = { "n", 37675 },	-- Public Relations Agent
-				["isDaily"] = true,
+				["qg"] = 37675,	-- Public Relations Agent
 				["coords"] = {
 					{ 45.0, 57.4, DARNASSUS },
 					{ 33.8, 66.6, IRONFORGE },
@@ -430,15 +622,27 @@ _.Holidays = { applyholiday(LOVE_IS_IN_THE_AIR, {
 					{ 43.6, 53.4, THUNDER_BLUFF },
 					{ 66.0, 38.4,  UNDERCITY },
 				},
+				["timeline"] = { "added 3.3.0" },
+				["isDaily"] = true,
 			}),
-			q(9024,  {	-- Aristan's Hunch
+			q(9024, {	-- Aristan's Hunch
+				["qg"] = 16105,	-- Aristan Mottar
+				["sourceQuest"] = 8903,	-- Dangerous Love (A)
+				["coord"] = { 54.6, 65.6, STORMWIND_CITY },
+				["timeline"] = { "removed 3.3.0" },
 				["races"] = ALLIANCE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
 				["isYearly"] = true,
+				["groups"] = {
+					objective(1, {	-- 0/1 Cologne Bottle
+						["provider"] = { "i", 21833 },	-- Cologne Bottle
+					}),
+					objective(2, {	-- 0/1 Perfume Bottle
+						["provider"] = { "i", 21829 },	-- Perfume Bottle
+					}),
+				},
 			}),
 			q(24636, {	-- Bonbon Blitz
-				["provider"] = { "n", 37675 },	-- Public Relations Agent
-				["isDaily"] = true,
+				["qg"] = 37675,	-- Public Relations Agent
 				["coords"] = {
 					{ 45.0, 57.4, DARNASSUS },
 					{ 33.8, 66.6, IRONFORGE },
@@ -449,360 +653,838 @@ _.Holidays = { applyholiday(LOVE_IS_IN_THE_AIR, {
 					{ 43.6, 53.4, THUNDER_BLUFF },
 					{ 66.0, 38.4,  UNDERCITY },
 				},
-			}),
-			q(44558, {	-- Crushing the Crown (A)
-				["sourceQuests"] = { 24657 },	-- A Friendly Chat... (A)
-				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
+				["timeline"] = { "added 3.3.0" },
 				["isDaily"] = true,
+			}),
+			q(44558, {	-- Crushing the Crown (A) [Legion+]
+				["qg"] = 38066,	-- Detective Snip Snagglebolt
+				["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
 				["coord"] = { 61.5, 75.2, STORMWIND_CITY },
+				["timeline"] = { "added 7.1.5.23194" },
+				["maps"] = { SILVERPINE_FOREST },
 				["races"] = ALLIANCE_ONLY,
-			}),
-			q(24658, {	-- Crushing the Crown
-				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
 				["isDaily"] = true,
+				["groups"] = {
+					objective(1, {	-- Chemical Wagon Destroyed
+						["provider"] = { "n", 38035 },	-- Chemical Wagon
+						["cost"] = { { "i", 50130, 1 } },	-- Snagglebolt's Khorium Bomb
+					}),
+					objective(2, {	-- 0/12 Crown Chemical Co. Employees Slain
+						["providers"] = {
+							{ "n", 114275 },	-- Crown Technician <Crown Chemical Co.>
+							{ "n", 114278 },	-- Crown Supply Guard <Crown Chemical Co.>
+							{ "n", 114279 },	-- Exploited Crown Intern <Crown Chemical Co.>
+							{ "n", 116285 },	-- Test Subject <Crown Chemical Co.>
+						},
+					}),
+				},
+			}),
+			q(24658, {	-- Crushing the Crown (A) [Elwynn Forest]
+				["qg"] = 38066,	-- Detective Snip Snagglebolt
+				["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
 				["coord"] = { 61.5, 75.2, STORMWIND_CITY },
+				["timeline"] = { "added 3.3.0", "removed 7.1.5.23194" },
+				["maps"] = { ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
-			}),
-			q(24659, {	-- Crushing the Crown
-				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
+				["lvl"] = { 5, 13 },
 				["isDaily"] = true,
+				["groups"] = {
+					objective(1, {	-- Chemical Wagon Destroyed
+						["provider"] = { "n", 38035 },	-- Chemical Wagon
+						["cost"] = { { "i", 50130, 1 } },	-- Snagglebolt's Khorium Bomb
+					}),
+					objective(2, {	-- 0/5 Crown Lackey slain
+						["provider"] = { "n", 37214 },	-- Crown Lackey
+					}),
+				},
+			}),
+			q(24659, {	-- Crushing the Crown (A) [Darkshore]
+				["qg"] = 38066,	-- Detective Snip Snagglebolt
+				["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
 				["coord"] = { 61.5, 75.2, STORMWIND_CITY },
+				["timeline"] = { "added 3.3.0", "removed 7.1.5.23194" },
+				["maps"] = { DARKSHORE },
 				["races"] = ALLIANCE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
-			}),
-			q(24660, {	-- Crushing the Crown
-				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
+				["lvl"] = { 14, 22 },
 				["isDaily"] = true,
+				["groups"] = {
+					objective(1, {	-- Chemical Wagon Destroyed
+						["provider"] = { "n", 38035 },	-- Chemical Wagon
+						["cost"] = { { "i", 50130, 1 } },	-- Snagglebolt's Khorium Bomb
+					}),
+					objective(2, {	-- 0/5 Crown Thug slain
+						["provider"] = { "n", 37917 },	-- Crown Thug
+					}),
+				},
+			}),
+			q(24660, {	-- Crushing the Crown (A) [Duskwood]
+				["qg"] = 38066,	-- Detective Snip Snagglebolt
+				["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
 				["coord"] = { 61.5, 75.2, STORMWIND_CITY },
+				["timeline"] = { "added 3.3.0", "removed 7.1.5.23194" },
+				["maps"] = { DUSKWOOD },
 				["races"] = ALLIANCE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
-			}),
-			q(24662, {	-- Crushing the Crown
-				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
+				["lvl"] = { 23, 31 },
 				["isDaily"] = true,
+				["groups"] = {
+					objective(1, {	-- Chemical Wagon Destroyed
+						["provider"] = { "n", 38035 },	-- Chemical Wagon
+						["cost"] = { { "i", 50130, 1 } },	-- Snagglebolt's Khorium Bomb
+					}),
+					objective(2, {	-- 0/5 Crown Duster slain
+						["provider"] = { "n", 37984 },	-- Crown Duster
+					}),
+				},
+			}),
+			q(24662, {	-- Crushing the Crown (A) [Dustwallow Marsh]
+				["qg"] = 38066,	-- Detective Snip Snagglebolt
+				["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
 				["coord"] = { 61.5, 75.2, STORMWIND_CITY },
+				["timeline"] = { "added 3.3.0", "removed 7.1.5.23194" },
+				["maps"] = { DUSTWALLOW_MARSH },
 				["races"] = ALLIANCE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
-			}),
-			q(24663, {	-- Crushing the Crown
-				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
+				["lvl"] = { 32, 40 },
 				["isDaily"] = true,
+				["groups"] = {
+					objective(1, {	-- Chemical Wagon Destroyed
+						["provider"] = { "n", 38035 },	-- Chemical Wagon
+						["cost"] = { { "i", 50130, 1 } },	-- Snagglebolt's Khorium Bomb
+					}),
+					objective(2, {	-- 0/5 Crown Hoodlum slain
+						["provider"] = { "n", 38006 },	-- Crown Hoodlum
+					}),
+				},
+			}),
+			q(24663, {	-- Crushing the Crown (A) [The Hinterlands]
+				["qg"] = 38066,	-- Detective Snip Snagglebolt
+				["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
 				["coord"] = { 61.5, 75.2, STORMWIND_CITY },
+				["timeline"] = { "added 3.3.0", "removed 7.1.5.23194" },
+				["maps"] = { THE_HINTERLANDS },
 				["races"] = ALLIANCE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
-			}),
-			q(24664, {	-- Crushing the Crown
-				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
+				["lvl"] = { 41, 50 },
 				["isDaily"] = true,
+				["groups"] = {
+					objective(1, {	-- Chemical Wagon Destroyed
+						["provider"] = { "n", 38035 },	-- Chemical Wagon
+						["cost"] = { { "i", 50130, 1 } },	-- Snagglebolt's Khorium Bomb
+					}),
+					objective(2, {	-- 0/5 Crown Agent slain
+						["provider"] = { "n", 38016 },	-- Crown Agent
+					}),
+				},
+			}),
+			q(24664, {	-- Crushing the Crown (A) [Winterspring]
+				["qg"] = 38066,	-- Detective Snip Snagglebolt
+				["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
 				["coord"] = { 61.5, 75.2, STORMWIND_CITY },
+				["timeline"] = { "added 3.3.0", "removed 7.1.5.23194" },
+				["maps"] = { WINTERSPRING },
 				["races"] = ALLIANCE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
-			}),
-			q(24665, {	-- Crushing the Crown
-				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
+				["lvl"] = { 51, 60 },
 				["isDaily"] = true,
+				["groups"] = {
+					objective(1, {	-- Chemical Wagon Destroyed
+						["provider"] = { "n", 38035 },	-- Chemical Wagon
+						["cost"] = { { "i", 50130, 1 } },	-- Snagglebolt's Khorium Bomb
+					}),
+					objective(2, {	-- 0/5 Crown Sprinkler slain
+						["provider"] = { "n", 38023 },	-- Crown Sprinkler
+					}),
+				},
+			}),
+			q(24665, {	-- Crushing the Crown (A) [Terokkar Forest]
+				["qg"] = 38066,	-- Detective Snip Snagglebolt
+				["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
 				["coord"] = { 61.5, 75.2, STORMWIND_CITY },
+				["timeline"] = { "added 3.3.0", "removed 7.1.5.23194" },
+				["maps"] = { TERROKAR_FOREST },
 				["races"] = ALLIANCE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
-			}),
-			q(24666, {	-- Crushing the Crown
-				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
+				["lvl"] = { 61, 70 },
 				["isDaily"] = true,
+				["groups"] = {
+					objective(1, {	-- Chemical Wagon Destroyed
+						["provider"] = { "n", 38035 },	-- Chemical Wagon
+						["cost"] = { { "i", 50130, 1 } },	-- Snagglebolt's Khorium Bomb
+					}),
+					objective(2, {	-- 0/5 Crown Underling slain
+						["provider"] = { "n", 38030 },	-- Crown Underling
+					}),
+				},
+			}),
+			q(24666, {	-- Crushing the Crown (A) [Crystalsong Forest]
+				["qg"] = 38066,	-- Detective Snip Snagglebolt
+				["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
 				["coord"] = { 61.5, 75.2, STORMWIND_CITY },
+				["timeline"] = { "added 3.3.0", "removed 7.1.5.23194" },
+				["maps"] = { CRYSTALSONG_FOREST },
 				["races"] = ALLIANCE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
-			}),
-			q(28934, {	-- Crushing the Crown
-				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
+				["lvl"] = { 71, 80 },
 				["isDaily"] = true,
+				["groups"] = {
+					objective(1, {	-- Chemical Wagon Destroyed
+						["provider"] = { "n", 38035 },	-- Chemical Wagon
+						["cost"] = { { "i", 50130, 1 } },	-- Snagglebolt's Khorium Bomb
+					}),
+					objective(2, {	-- 0/5 Crown Sprayer slain
+						["provider"] = { "n", 38032 },	-- Crown Sprayer
+					}),
+				},
+			}),
+			q(28934, {	-- Crushing the Crown (A) [Uldum]
+				["qg"] = 38066,	-- Detective Snip Snagglebolt
+				["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
 				["coord"] = { 61.5, 75.2, STORMWIND_CITY },
+				["timeline"] = { "added 4.0.6.13596", "removed 7.1.5.23194" },
+				["maps"] = { ULDUM },
 				["races"] = ALLIANCE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
-			}),
-			q(44546, {	-- Crushing the Crown (H)
-				["sourceQuests"] = { 24576 },	-- A Friendly Chat... (H)
-				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
+				["lvl"] = 81,
 				["isDaily"] = true,
-				["coord"] = { 50.0, 65.0, ORGRIMMAR },
-				["races"] = HORDE_ONLY,
+				["groups"] = {
+					objective(1, {	-- Chemical Wagon Destroyed
+						["provider"] = { "n", 38035 },	-- Chemical Wagon
+						["cost"] = { { "i", 50130, 1 } },	-- Snagglebolt's Khorium Bomb
+					}),
+					objective(2, {	-- 0/5 Crown Technician slain
+						["provider"] = { "n", 51613 },	-- Crown Technician
+					}),
+				},
 			}),
-			q(24638, {	-- Crushing the Crown
-				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
+			q(44546, {	-- Crushing the Crown (H) [Legion+]
+				["qg"] = 37172,	-- Detective Snap Snagglebolt
+				["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
+				["coord"] = { 50.0, 65.0, ORGRIMMAR },
+				["timeline"] = { "added 7.1.5.23194" },
+				["maps"] = { SILVERPINE_FOREST },
+				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
-				["coord"] = { 50.0, 65.0, ORGRIMMAR },
-				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
+				["groups"] = {
+					objective(1, {	-- Chemical Wagon Destroyed
+						["provider"] = { "n", 38035 },	-- Chemical Wagon
+						["cost"] = { { "i", 50130, 1 } },	-- Snagglebolt's Khorium Bomb
+					}),
+					objective(2, {	-- 0/12 Crown Chemical Co. Employees Slain
+						["providers"] = {
+							{ "n", 114275 },	-- Crown Technician <Crown Chemical Co.>
+							{ "n", 114278 },	-- Crown Supply Guard <Crown Chemical Co.>
+							{ "n", 114279 },	-- Exploited Crown Intern <Crown Chemical Co.>
+							{ "n", 116285 },	-- Test Subject <Crown Chemical Co.>
+						},
+					}),
+				},
 			}),
-			q(24645, {	-- Crushing the Crown
-				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
+			q(24638, {	-- Crushing the Crown (H) [Durotar]
+				["qg"] = 37172,	-- Detective Snap Snagglebolt
+				["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
+				["coord"] = { 50.0, 65.0, ORGRIMMAR },
+				["timeline"] = { "added 3.3.0", "removed 7.1.5.23194" },
+				["maps"] = { DUROTAR },
+				["races"] = HORDE_ONLY,
+				["lvl"] = { 5, 13 },
 				["isDaily"] = true,
-				["coord"] = { 50.0, 65.0, ORGRIMMAR },
-				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
+				["groups"] = {
+					objective(1, {	-- Chemical Wagon Destroyed
+						["provider"] = { "n", 38035 },	-- Chemical Wagon
+						["cost"] = { { "i", 50130, 1 } },	-- Snagglebolt's Khorium Bomb
+					}),
+					objective(2, {	-- 0/5 Crown Lackey slain
+						["provider"] = { "n", 37214 },	-- Crown Lackey
+					}),
+				},
 			}),
-			q(24647, {	-- Crushing the Crown
-				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
+			q(24645, {	-- Crushing the Crown (H) [Silverpine Forest]
+				["qg"] = 37172,	-- Detective Snap Snagglebolt
+				["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
+				["coord"] = { 50.0, 65.0, ORGRIMMAR },
+				["timeline"] = { "added 3.3.0", "removed 7.1.5.23194" },
+				["maps"] = { SILVERPINE_FOREST },
+				["races"] = HORDE_ONLY,
+				["lvl"] = { 14, 22 },
 				["isDaily"] = true,
-				["coord"] = { 50.0, 65.0, ORGRIMMAR },
-				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
+				["groups"] = {
+					objective(1, {	-- Chemical Wagon Destroyed
+						["provider"] = { "n", 38035 },	-- Chemical Wagon
+						["cost"] = { { "i", 50130, 1 } },	-- Snagglebolt's Khorium Bomb
+					}),
+					objective(2, {	-- 0/5 Crown Thug slain
+						["provider"] = { "n", 37917 },	-- Crown Thug
+					}),
+				},
 			}),
-			q(24648, {	-- Crushing the Crown
-				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
+			q(24647, {	-- Crushing the Crown (H) [Hillsbrad Foothills]
+				["qg"] = 37172,	-- Detective Snap Snagglebolt
+				["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
+				["coord"] = { 50.0, 65.0, ORGRIMMAR },
+				["timeline"] = { "added 3.3.0", "removed 7.1.5.23194" },
+				["maps"] = { HILLSBRAD_FOOTHILLS },
+				["races"] = HORDE_ONLY,
+				["lvl"] = { 23, 31 },
 				["isDaily"] = true,
-				["coord"] = { 50.0, 65.0, ORGRIMMAR },
-				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
+				["groups"] = {
+					objective(1, {	-- Chemical Wagon Destroyed
+						["provider"] = { "n", 38035 },	-- Chemical Wagon
+						["cost"] = { { "i", 50130, 1 } },	-- Snagglebolt's Khorium Bomb
+					}),
+					objective(2, {	-- 0/5 Crown Duster slain
+						["provider"] = { "n", 37984 },	-- Crown Duster
+					}),
+				},
 			}),
-			q(24649, {	-- Crushing the Crown
-				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
+			q(24648, {	-- Crushing the Crown (H) [Dustwallow Marsh]
+				["qg"] = 37172,	-- Detective Snap Snagglebolt
+				["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
+				["coord"] = { 50.0, 65.0, ORGRIMMAR },
+				["timeline"] = { "added 3.3.0", "removed 7.1.5.23194" },
+				["maps"] = { DUSTWALLOW_MARSH },
+				["races"] = HORDE_ONLY,
+				["lvl"] = { 32, 40 },
 				["isDaily"] = true,
-				["coord"] = { 50.0, 65.0, ORGRIMMAR },
-				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
+				["groups"] = {
+					objective(1, {	-- Chemical Wagon Destroyed
+						["provider"] = { "n", 38035 },	-- Chemical Wagon
+						["cost"] = { { "i", 50130, 1 } },	-- Snagglebolt's Khorium Bomb
+					}),
+					objective(2, {	-- 0/5 Crown Hoodlum slain
+						["provider"] = { "n", 38006 },	-- Crown Hoodlum
+					}),
+				},
 			}),
-			q(24650, {	-- Crushing the Crown
-				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
+			q(24649, {	-- Crushing the Crown (H) [The Hinterlands]
+				["qg"] = 37172,	-- Detective Snap Snagglebolt
+				["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
+				["coord"] = { 50.0, 65.0, ORGRIMMAR },
+				["timeline"] = { "added 3.3.0", "removed 7.1.5.23194" },
+				["maps"] = { THE_HINTERLANDS },
+				["races"] = HORDE_ONLY,
+				["lvl"] = { 41, 50 },
 				["isDaily"] = true,
-				["coord"] = { 50.0, 65.0, ORGRIMMAR },
-				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
+				["groups"] = {
+					objective(1, {	-- Chemical Wagon Destroyed
+						["provider"] = { "n", 38035 },	-- Chemical Wagon
+						["cost"] = { { "i", 50130, 1 } },	-- Snagglebolt's Khorium Bomb
+					}),
+					objective(2, {	-- 0/5 Crown Agent slain
+						["provider"] = { "n", 38016 },	-- Crown Agent
+					}),
+				},
 			}),
-			q(24651, {	-- Crushing the Crown
-				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
+			q(24650, {	-- Crushing the Crown (H) [Winterspring]
+				["qg"] = 37172,	-- Detective Snap Snagglebolt
+				["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
+				["coord"] = { 50.0, 65.0, ORGRIMMAR },
+				["timeline"] = { "added 3.3.0", "removed 7.1.5.23194" },
+				["maps"] = { WINTERSPRING },
+				["races"] = HORDE_ONLY,
+				["lvl"] = { 51, 60 },
 				["isDaily"] = true,
-				["coord"] = { 50.0, 65.0, ORGRIMMAR },
-				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
+				["groups"] = {
+					objective(1, {	-- Chemical Wagon Destroyed
+						["provider"] = { "n", 38035 },	-- Chemical Wagon
+						["cost"] = { { "i", 50130, 1 } },	-- Snagglebolt's Khorium Bomb
+					}),
+					objective(2, {	-- 0/5 Crown Sprinkler slain
+						["provider"] = { "n", 38023 },	-- Crown Sprinkler
+					}),
+				},
 			}),
-			q(24652, {	-- Crushing the Crown
-				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
+			q(24651, {	-- Crushing the Crown (H) [Terokkar Forest]
+				["qg"] = 37172,	-- Detective Snap Snagglebolt
+				["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
+				["coord"] = { 50.0, 65.0, ORGRIMMAR },
+				["timeline"] = { "added 3.3.0", "removed 7.1.5.23194" },
+				["maps"] = { TERROKAR_FOREST },
+				["races"] = HORDE_ONLY,
+				["lvl"] = { 61, 70 },
 				["isDaily"] = true,
-				["coord"] = { 50.0, 65.0, ORGRIMMAR },
-				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
+				["groups"] = {
+					objective(1, {	-- Chemical Wagon Destroyed
+						["provider"] = { "n", 38035 },	-- Chemical Wagon
+						["cost"] = { { "i", 50130, 1 } },	-- Snagglebolt's Khorium Bomb
+					}),
+					objective(2, {	-- 0/5 Crown Underling slain
+						["provider"] = { "n", 38030 },	-- Crown Underling
+					}),
+				},
 			}),
-			q(28935, {	-- Crushing the Crown
-				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
+			q(24652, {	-- Crushing the Crown (H) [Crystalsong Forest]
+				["qg"] = 37172,	-- Detective Snap Snagglebolt
+				["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
+				["coord"] = { 50.0, 65.0, ORGRIMMAR },
+				["timeline"] = { "added 3.3.0", "removed 7.1.5.23194" },
+				["maps"] = { CRYSTALSONG_FOREST },
+				["races"] = HORDE_ONLY,
+				["lvl"] = { 71, 80 },
 				["isDaily"] = true,
-				["coord"] = { 50.0, 65.0, ORGRIMMAR },
-				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
+				["groups"] = {
+					objective(1, {	-- Chemical Wagon Destroyed
+						["provider"] = { "n", 38035 },	-- Chemical Wagon
+						["cost"] = { { "i", 50130, 1 } },	-- Snagglebolt's Khorium Bomb
+					}),
+					objective(2, {	-- 0/5 Crown Sprayer slain
+						["provider"] = { "n", 38032 },	-- Crown Sprayer
+					}),
+				},
 			}),
-			q(8903,  {	-- Dangerous Love
+			q(28935, {	-- Crushing the Crown (H) [Uldum]
+				["qg"] = 37172,	-- Detective Snap Snagglebolt
+				["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
+				["coord"] = { 50.0, 65.0, ORGRIMMAR },
+				["timeline"] = { "added 4.0.6.13596", "removed 7.1.5.23194" },
+				["maps"] = { ULDUM },
+				["races"] = HORDE_ONLY,
+				["lvl"] = 81,
+				["isDaily"] = true,
+				["groups"] = {
+					objective(1, {	-- Chemical Wagon Destroyed
+						["provider"] = { "n", 38035 },	-- Chemical Wagon
+						["cost"] = { { "i", 50130, 1 } },	-- Snagglebolt's Khorium Bomb
+					}),
+					objective(2, {	-- 0/5 Crown Technician slain
+						["provider"] = { "n", 51613 },	-- Crown Technician
+					}),
+				},
+			}),
+			q(8903, {	-- Dangerous Love (A)
+				["qg"] = 16105,	-- Aristan Mottar
+				["coord"] = { 54.6, 65.6, STORMWIND_CITY },
+				["timeline"] = { "removed 3.3.0" },
 				["races"] = ALLIANCE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
+				["isYearly"] = true,
+				["groups"] = {
+					objective(1, {	-- 0/1 Stormwind Guard's Card
+						["provider"] = { "i", 22143 },	-- Stormwind Guard's Card
+					}),
+				},
+			}),
+			q(8904, {	-- Dangerous Love (H)
+				["qg"] = 16108,	-- Fenstad Argyle
+				["coord"] = { 66.8, 44.4, UNDERCITY },
+				["timeline"] = { "removed 3.3.0" },
+				["races"] = HORDE_ONLY,
+				["isYearly"] = true,
+				["groups"] = {
+					objective(1, {	-- 0/1 Guardian's Moldy Card
+						["provider"] = { "i", 22145 },	-- Guardian's Moldy Card
+					}),
+				},
+			}),
+			q(8897, {	-- Dearest Colara, [Stormwind City]
+				["providers"] = {
+					{ "n", 16005 },	-- Lieutenant Jocryn Heldric
+					{ "i", 21921 },	-- Carefully Penned Note
+				},
+				["coord"] = { 57, 59.8, STORMWIND_CITY },
+				["timeline"] = { "removed 3.3.0" },
+				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 			}),
-			q(8904,  {	-- Dangerous Love
-				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
-				["isYearly"] = true,
-			}),
-			q(11558, {	-- Dangerous Love
-				["u"] = REMOVED_FROM_GAME,
-			}),
-			q(8897,  {	-- Dearest Colara,
+			q(8898, {	-- Dearest Colara, [Ironforge]
+				["providers"] = {
+					{ "n", 16009 },	-- Tormek Stoneriver
+					{ "i", 21920 },	-- Creased Letter
+				},
+				["coord"] = { 32.4, 66, IRONFORGE },
+				["timeline"] = { "removed 3.3.0" },
+				["maps"] = { STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
 				["isYearly"] = true,
 			}),
-			q(8898,  {	-- Dearest Colara,
+			q(8899, {	-- Dearest Colara, [Darnassus]
+				["providers"] = {
+					{ "n", 16001 },	-- Aldris Fourclouds
+					{ "i", 21925 },	-- Immaculate Letter
+				},
+				["coord"] = { 42, 42, DARNASSUS },
+				["timeline"] = { "removed 3.3.0" },
+				["maps"] = { STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
 				["isYearly"] = true,
 			}),
-			q(8899,  {	-- Dearest Colara,
-				["races"] = ALLIANCE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
-				["isYearly"] = true,
-			}),
-			q(8900,  {	-- Dearest Elenia,
+			q(8900, {	-- Dearest Elenia, [Orgrimmar]
+				["providers"] = {
+					{ "n", 16007 },	-- Orok Deathbane
+					{ "i", 21926 },	-- Slightly Creased Note
+				},
+				["coord"] = { 51.2, 70.2, ORGRIMMAR },
+				["timeline"] = { "removed 3.3.0" },
+				["maps"] = { UNDERCITY },
 				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
 				["isYearly"] = true,
 			}),
-			q(8901,  {	-- Dearest Elenia,
+			q(8901, {	-- Dearest Elenia, [Thunder Bluff]
+				["providers"] = {
+					{ "n", 16008 },	-- Temma of the Wells
+					{ "i", 22264 },	-- Carefully Written Letter
+				},
+				["coord"] = { 44.8, 59.6, THUNDER_BLUFF },
+				["timeline"] = { "removed 3.3.0" },
+				["maps"] = { UNDERCITY },
 				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
 				["isYearly"] = true,
 			}),
-			q(8902,  {	-- Dearest Elenia,
+			q(8902, {	-- Dearest Elenia, [Undercity]
+				["providers"] = {
+					{ "n", 16003 },	-- Deathguard Tor
+					{ "i", 22265 },	-- Lovingly Composed Letter
+				},
+				["coord"] = { 60.6, 59.6, TIRISFAL_GLADES },
+				["timeline"] = { "removed 3.3.0" },
+				["maps"] = { UNDERCITY },
 				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
 				["isYearly"] = true,
 			}),
-			q(8979,  {	-- Fenstad's Hunch
+			q(8979, {	-- Fenstad's Hunch
+				["qg"] = 16108,	-- Fenstad Argyle
+				["sourceQuest"] = 8904,	-- Dangerous Love (H)
+				["coord"] = { 66.8, 44.4, UNDERCITY },
+				["timeline"] = { "removed 3.3.0" },
 				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
 				["isYearly"] = true,
+				["groups"] = {
+					objective(1, {	-- 0/1 Cologne Bottle
+						["provider"] = { "i", 21833 },	-- Cologne Bottle
+					}),
+					objective(2, {	-- 0/1 Perfume Bottle
+						["provider"] = { "i", 21829 },	-- Perfume Bottle
+					}),
+				},
 			}),
 			q(24848, {	-- Fireworks At The Gilded Rose
-				["sourceQuests"] = { 24656 },	-- Pilfering Perfume (A)
-				["provider"] = { "n", 38066 },	-- Inspector Snip Snagglebolt
+				["qg"] = 38066,	-- Inspector Snip Snagglebolt
+				["sourceQuest"] = 24656,	-- Pilfering Perfume (A)
 				["coord"] = { 61.6, 75.2, STORMWIND_CITY },
+				["timeline"] = { "added 3.3.0" },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(44560, {	-- Follow the Recipe (A)
 				["provider"] = { "o", 259806 },	-- Love Potion Recipe
-				["isDaily"] = true,
 				["coord"] = { 45.2, 73.8, SILVERPINE_FOREST },
+				["timeline"] = { "added 3.3.0" },
 				["races"] = ALLIANCE_ONLY,
+				["isDaily"] = true,
 			}),
 			q(44559, {	-- Follow the Recipe (H)
 				["provider"] = { "o", 259806 },	-- Love Potion Recipe
-				["isDaily"] = true,
 				["coord"] = { 45.2, 73.8, SILVERPINE_FOREST },
+				["timeline"] = { "added 3.3.0" },
 				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
 			}),
-			q(8981,  {	-- Gift Giving
-				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
-				["isYearly"] = true,
-			}),
-			q(8993,  {	-- Gift Giving
+			q(8993, {	-- Gift Giving (A)
+				["qg"] = 16075,	-- Kwee Q. Peddlefeet
+				["coords"] = {
+					{ 38.2, 80.4, DARNASSUS },
+					{ 41.0, 55.2, IRONFORGE },
+					{ 78.6, 17.6, STORMWIND_CITY },
+				},
+				["timeline"] = { "removed 3.3.0" },
 				["races"] = ALLIANCE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
 				["isYearly"] = true,
+				-- #if BEFORE 3.3.0
+				["groups"] = {
+					objective(1, {	-- 0/1 Alliance Gift Collection
+						["provider"] = { "i", 22262 },	-- Alliance Gift Collection
+					}),
+					i(21812),	-- Box of Chocolates
+					i(22218),	-- Handful of Rose Petals
+					i(22200),	-- Silver Shafted Arrow
+					i(34258),	-- Love Rocket
+				},
+				-- #endif
+			}),
+			q(8981, {	-- Gift Giving (H)
+				["qg"] = 16075,	-- Kwee Q. Peddlefeet
+				["coords"] = {
+					{ 33.4, 37.8, ORGRIMMAR },
+					{ 60.8, 50.6, THUNDER_BLUFF },
+					{ 54.8, 90.0, UNDERCITY },
+				},
+				["timeline"] = { "removed 3.3.0" },
+				["races"] = HORDE_ONLY,
+				["isYearly"] = true,
+				-- #if BEFORE 3.3.0
+				["groups"] = {
+					objective(1, {	-- 0/1 Horde Gift Collection
+						["provider"] = { "i", 22263 },	-- Horde Gift Collection
+					}),
+					i(21812),	-- Box of Chocolates
+					i(22218),	-- Handful of Rose Petals
+					i(22200),	-- Silver Shafted Arrow
+					i(34258),	-- Love Rocket
+				},
+				-- #endif
 			}),
 			q(24849, {	-- Hot On The Trail (A)
-				["sourceQuests"] = { 24848 },	-- Fireworks At The Gilded Rose
-				["provider"] = { "n", 38325 },	-- Marion Sutton
+				["qg"] = 38325,	-- Marion Sutton
+				["sourceQuest"] = 24848,	-- Fireworks At The Gilded Rose
 				["coord"] = { 60.4, 76.2, STORMWIND_CITY },
+				["timeline"] = { "added 3.3.0" },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(24851, {	-- Hot On The Trail (H)
-				["sourceQuests"] = { 24850 },	-- Snivel's Sweetheart
-				["provider"] = { "n", 38328 },	-- Roka
+				["qg"] = 38328,	-- Roka
+				["sourceQuest"] = 24850,	-- Snivel's Sweetheart
 				["coord"] = { 57.6, 61.0, ORGRIMMAR },
+				["timeline"] = { "added 3.3.0" },
 				["races"] = HORDE_ONLY,
 			}),
 			q(24792, {	-- Man on the Inside (A)
-				["sourceQuests"] = { 24657 },	-- A Friendly Chat... (A)
-				["provider"] = { "n", 38066 },	-- Inspector Snip Snagglebolt
-				["races"] = ALLIANCE_ONLY,
+				["qg"] = 38066,	-- Inspector Snip Snagglebolt
+				["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
+				["timeline"] = { "added 3.3.0", "removed 4.0.3" },
 				["maps"] = { STORMWIND_CITY },
-				["u"] = REMOVED_FROM_GAME,
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(24793, {	-- Man on the Inside (H)
-				["sourceQuests"] = { 24576 },	-- A Friendly Chat... (H)
-				["provider"] = { "n", 38066 },	-- Inspector Snip Snagglebolt
-				["races"] = HORDE_ONLY,
+				["qg"] = 38066,	-- Inspector Snip Snagglebolt
+				["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
+				["timeline"] = { "added 3.3.0", "removed 4.0.3" },
 				["maps"] = { ORGRIMMAR },
-				["u"] = REMOVED_FROM_GAME,
+				["races"] = HORDE_ONLY,
 			}),
-			q(9025,  {	-- Morgan's Discovery
+			q(9025, {	-- Morgan's Discovery
+				["qg"] = 279,	-- Morgan Pestle
+				["sourceQuest"] = 9024,	-- Aristan's Hunch
+				["coord"] = { 56.2, 64.8, STORMWIND_CITY },
+				["timeline"] = { "removed 3.3.0" },
 				["races"] = ALLIANCE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
 				["isYearly"] = true,
+				-- #if BEFORE 3.3.0
+				["groups"] = {
+					i(21812),	-- Box of Chocolates
+					i(22218),	-- Handful of Rose Petals
+				},
+				-- #endif
 			}),
 			q(24656, {	-- Pilfering Perfume (A)
-				["sourceQuests"] = { 24655 },	-- Something Stinks (A)
-				["provider"] = { "n", 38066 },	-- Inspector Snip Snagglebolt
+				["qg"] = 38066,	-- Inspector Snip Snagglebolt
+				["sourceQuest"] = 24655,	-- Something Stinks (A)
 				["coord"] = { 61.6, 75.2, STORMWIND_CITY },
+				["timeline"] = { "added 3.3.0" },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(24541, {	-- Pilfering Perfume (H)
-				["sourceQuests"] = { 24536 },	-- Something Stinks (H)
-				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
+				["qg"] = 37172,	-- Detective Snap Snagglebolt
+				["sourceQuest"] = 24536,	-- Something Stinks (H)
 				["coord"] = { 50.0, 65.0, ORGRIMMAR },
+				["timeline"] = { "added 3.3.0" },
 				["races"] = HORDE_ONLY,
 			}),
 			q(24850, {	-- Snivel's Sweetheart
-				["sourceQuests"] = { 24541 },	-- Pilfering Perfume (H)
-				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
+				["qg"] = 37172,	-- Detective Snap Snagglebolt
+				["sourceQuest"] = 24541,	-- Pilfering Perfume (H)
 				["coord"] = { 50.0, 65.0, ORGRIMMAR },
+				["timeline"] = { "added 3.3.0" },
 				["races"] = HORDE_ONLY,
 			}),
 			q(24745, {	-- Something is in the Air (and it Ain't Love) (A)
 				["provider"] = { "i", 50320 },	-- Faded Lovely Greeting Card (A)
-				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { "added 3.3.2.11403" },
 				["maps"] = { SHADOWFANG_KEEP },
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(14483, {	-- Something is in the Air (and it Ain't Love) (H)
 				["provider"] = { "i", 49641 },	-- Faded Lovely Greeting Card (H)
-				["races"] = HORDE_ONLY,
+				["timeline"] = { "added 3.3.2.11403" },
 				["maps"] = { SHADOWFANG_KEEP },
+				["races"] = HORDE_ONLY,
 			}),
 			q(24655, {	-- Something Stinks (A)
-				["sourceQuests"] = { 24804 },	-- Uncommon Scents (A)
-				["provider"] = { "n", 38066 },	-- Inspector Snip Snagglebolt
+				["qg"] = 38066,	-- Inspector Snip Snagglebolt
+				["sourceQuest"] = 24804,	-- Uncommon Scents (A)
 				["coord"] = { 61.6, 75.2, STORMWIND_CITY },
+				["timeline"] = { "added 3.3.0" },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(24536, {	-- Something Stinks (H)
-				["sourceQuests"] = { 24805 },	-- Uncommon Scents (H)
-				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
+				["qg"] = 37172,	-- Detective Snap Snagglebolt
+				["sourceQuest"] = 24805,	-- Uncommon Scents (H)
 				["coord"] = { 50.0, 65.0, ORGRIMMAR },
+				["timeline"] = { "added 3.3.0" },
 				["races"] = HORDE_ONLY,
 			}),
-			q(9028,  {	-- The Source Revealed (A)
+			q(9028, {	-- The Source Revealed (A)
+				["qg"] = 16106,	-- Evert Sorisam
+				["sourceQuest"] = 9027,	-- Tracing the Source (A) (2/2)
+				["coord"] = { 39.8, 46.8, STORMWIND_CITY },
+				["timeline"] = { "removed 3.3.0" },
 				["races"] = ALLIANCE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
 				["isYearly"] = true,
 			}),
-			q(8984,  {	-- The Source Revealed (H)
+			q(8984, {	-- The Source Revealed (H)
+				["qg"] = 16109,	-- Mara Rennick
+				["sourceQuest"] = 8983,	-- Tracing the Source (H) (2/2)
+				["coord"] = { 70.8, 28.8, UNDERCITY },
+				["timeline"] = { "removed 3.3.0" },
 				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
 				["isYearly"] = true,
 			}),
-			q(9026,  {	-- Tracing the Source (A)
+			q(9026, {	-- Tracing the Source (A) (1/2)
+				["qg"] = 16105,	-- Aristan Mottar
+				["sourceQuest"] = 9025,	-- Morgan's Discovery
+				["coord"] = { 54.6, 65.6, STORMWIND_CITY },
+				["timeline"] = { "removed 3.3.0" },
 				["races"] = ALLIANCE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
 				["isYearly"] = true,
 			}),
-			q(9027,  {	-- Tracing the Source (A)
+			q(9027, {	-- Tracing the Source (A) (2/2)
+				["qg"] = 6740,	-- Innkeeper Allison <Innkeeper>
+				["sourceQuest"] = 9026,	-- Tracing the Source (A) (1/2)
+				["coord"] = { 52.8, 65.4, STORMWIND_CITY },
+				["timeline"] = { "removed 3.3.0" },
 				["races"] = ALLIANCE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
 				["isYearly"] = true,
 			}),
-			q(8982,  {	-- Tracing the Source (H)
+			q(8982, {	-- Tracing the Source (H) (1/2)
+				["qg"] = 16108,	-- Fenstad Argyle
+				["sourceQuest"] = 8980,	-- Zinge's Assessment
+				["coord"] = { 66.8, 44.4, UNDERCITY },
+				["timeline"] = { "removed 3.3.0" },
 				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
 				["isYearly"] = true,
 			}),
-			q(8983,  {	-- Tracing the Source (H)
+			q(8983, {	-- Tracing the Source (H) (2/2)
+				["qg"] = 6741,	-- Innkeeper Norman <Innkeeper>
+				["sourceQuest"] = 8982,	-- Tracing the Source (H) (1/2)
+				["coord"] = { 67.6, 38.2, UNDERCITY },
+				["timeline"] = { "removed 3.3.0" },
 				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
 				["isYearly"] = true,
 			}),
 			q(24804, {	-- Uncommon Scents (A)
-				["isBreadcrumb"] = true,
-				["provider"] = { "n", 38293 },	-- Junior Inspector
+				["qg"] = 38293,	-- Junior Inspector
 				["coords"] = {
 					{ 44.8, 56.6, DARNASSUS },
 					{ 35.0, 68.8, IRONFORGE },
 					{ 76.2, 57.2, THE_EXODAR },
 				},
+				["timeline"] = { "added 3.3.0" },
 				["races"] = ALLIANCE_ONLY,
+				["isBreadcrumb"] = true,
 			}),
 			q(24805, {	-- Uncommon Scents (H)
-				["isBreadcrumb"] = true,
-				["provider"] = { "n", 38295 },	-- Junior Detective
+				["qg"] = 38295,	-- Junior Detective
 				["coords"] = {
 					{ 64.2, 70.0, SILVERMOON_CITY },
 					{ 42.2, 55.75, THUNDER_BLUFF },
 					{ 64.6, 37.4,  UNDERCITY },
 				},
+				["timeline"] = { "added 3.3.0" },
 				["races"] = HORDE_ONLY,
+				["isBreadcrumb"] = true,
 			}),
 			q(14488, {	-- You've Been Served
+				["qg"] = 38208,	-- Investigator Fezzen Brasstacks
 				["sourceQuests"] = {
 					24792,	-- Man on the Inside (A)
 					24793,	-- Man on the Inside (H)
 				},
-				["provider"] = { "n", 38208 },	-- Investigator Fezzen Brasstacks
-				["isDaily"] = true,
+				["timeline"] = { "added 3.3.0", "removed 4.0.3" },
 				["maps"] = { SHADOWFANG_KEEP },
-				["u"] = REMOVED_FROM_GAME,
+				["isDaily"] = true,
 			}),
-			q(8980,  {	-- Zinge's Assessment
+			q(8980, {	-- Zinge's Assessment
+				["qg"] = 5204,	-- Apothecary Zinge <Royal Apothecary Society>
+				["sourceQuest"] = 8979,	-- Fenstad's Hunch
+				["coord"] = { 50.0, 68.6, UNDERCITY },
+				["timeline"] = { "removed 3.3.0" },
 				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
 				["isYearly"] = true,
+				-- #if BEFORE 3.3.0
+				["groups"] = {
+					i(21812),	-- Box of Chocolates
+					i(22218),	-- Handful of Rose Petals
+				},
+				-- #endif
 			}),
 		}),
+		n(REWARDS, {
+			-- #if BEFORE 3.3.2.11403
+			["providers"] = {
+				{ "i", 21979 },	-- Gift of Adoration: Darnassus
+				{ "i", 22155 },	-- Pledge of Adoration: Darnassus
+				{ "i", 21980 },	-- Gift of Adoration: Ironforge
+				{ "i", 22154 },	-- Pledge of Adoration: Ironforge
+				{ "i", 21981 },	-- Gift of Adoration: Stormwind
+				{ "i", 21975 },	-- Pledge of Adoration: Stormwind
+				{ "i", 22164 },	-- Gift of Adoration: Orgrimmar
+				{ "i", 22156 },	-- Pledge of Adoration: Orgrimmar
+				{ "i", 22165 },	-- Gift of Adoration: Thunder Bluff
+				{ "i", 22158 },	-- Pledge of Adoration: Thunder Bluff
+				{ "i", 22166 },	-- Gift of Adoration: Undercity
+				{ "i", 22157 },	-- Pledge of Adoration: Undercity
+			},
+			["description"] = "These items are contained within the Gifts and Pledges of Adoration.",
+			-- #endif
+			["groups"] = {
+				i(21813, {	-- Bag of Heart Candies
+					i(21816),	-- Heart Candy (Be Mine!)
+					i(21817),	-- Heart Candy (I LOVE YOU)
+					i(21818),	-- Heart Candy (I'll follow you all around Azeroth.)
+					i(21819),	-- Heart Candy (All yours.)
+					i(21820),	-- Heart Candy (You're the best!)
+					i(21821),	-- Heart Candy (I'm all yours!)
+					i(21822),	-- Heart Candy (You're mine!)
+					i(21823),	-- Heart Candy (Hot lips!)
+				}),
+				i(49909, {	-- Box of Chocolates
+					["timeline"] = { "added 3.3.2.11403" },
+					["groups"] = {
+						i(22236),	-- Buttermilk Delight
+						i(22237),	-- Dark Desire
+						i(22239),	-- Sweet Surprise
+						i(22238),	-- Very Berry Cream
+					},
+				}),
+				i(21812, {	-- Box of Chocolates
+					["timeline"] = { "removed 3.3.2.11403" },
+					["groups"] = {
+						i(22236),	-- Buttermilk Delight
+						i(22237),	-- Dark Desire
+						i(22239),	-- Sweet Surprise
+						i(22238),	-- Very Berry Cream
+					},
+				}),
+				i(22218),	-- Handful of Rose Petals
+				-- #if BEFORE 3.3.2.11403
+				i(22261),	-- Love Fool
+				-- #endif
+				i(34258, {	-- Love Rocket
+					["timeline"] = { "added 2.3.0.7382" },
+				}),
+				-- #if BEFORE 3.3.2.11403
+				i(22279, {	-- Lovely Black Dress
+					["timeline"] = { "removed 7.2.5.24116" },
+				}),
+				i(34480, {	-- Romantic Picnic Basket
+					["timeline"] = { "added 2.4.0.7897" },
+				}),
+				i(22200),	-- Silver Shafted Arrow
+				i(22235),	-- Truesilver Shafted Arrow
+				i(22259, {	-- Unbestowed Friendship Bracelet
+					["timeline"] = { "removed 3.3.2.11403" },
+				}),
+				-- #endif
+			},
+		}),
+		n(COMMON_VENDOR_ITEMS, {
+			["description"] = "The following items can be purchased from innkeepers.",
+			["groups"] = {
+				i(21833, {	-- Cologne Bottle
+					["timeline"] = { "removed 3.3.2.11403" },
+					["_drop"] = { "f", "spellID" },
+				}),
+				i(21829, {	-- Perfume Bottle
+					["timeline"] = { "removed 3.3.2.11403" },
+					["_drop"] = { "f", "spellID" },
+				}),
+				i(21815, {	-- Love Token
+					["timeline"] = { "removed 3.3.2.11403" },
+					["_drop"] = { "f" },
+				}),
+			},
+		}),
+		-- #if AFTER 3.3.2.11403
 		n(VENDORS, {
 			n(37674, {	-- Lovely Merchant <Crown Chemical Co.>
 				["coords"] = {
@@ -815,46 +1497,91 @@ _.Holidays = { applyholiday(LOVE_IS_IN_THE_AIR, {
 					{ 43.6, 53.6, THUNDER_BLUFF },
 					{ 66.0, 38.6, UNDERCITY },
 				},
+				["timeline"] = { "added 3.3.2.11403" },
 				["groups"] = {
 					i(50161, {	-- Dinner Suit Box
+						["timeline"] = { "added 3.3.2.11403" },
 						["cost"] = { { "i", 49927, 20 } },	-- 20x Love Token
 						["groups"] = {
-							i(151765),	-- Blue Dinner Suit
-							i(151764),	-- Purple Dinner Suit
-							i(151766),	-- Red Dinner Suit
+							i(151765, {	-- Blue Dinner Suit
+								["timeline"] = { "added 7.2.5.24116" },
+							}),
+							i(151764, {	-- Purple Dinner Suit
+								["timeline"] = { "added 7.2.5.24116" },
+							}),
+							i(151766, {	-- Red Dinner Suit
+								["timeline"] = { "added 7.2.5.24116" },
+							}),
+							i(22281, {	-- Blue Dinner Suit
+								["timeline"] = { "removed 7.2.5.24116" },
+							}),
+							i(22282, {	-- Purple Dinner Suit
+								["timeline"] = { "removed 7.2.5.24116" },
+							}),
+							i(22277, {	-- Red Dinner Suit
+								["timeline"] = { "removed 7.2.5.24116" },
+							}),
 						},
 					}),
 					i(50160, {	-- Lovely Dress Box
+						["timeline"] = { "added 3.3.2.11403" },
 						["cost"] = { { "i", 49927, 20 } },	-- 20x Love Token
 						["groups"] = {
-							i(151770),	-- Lovely Black Dress
-							i(151768),	-- Lovely Blue Dress
-							i(151767),	-- Lovely Purple Dress
-							i(151769),	-- Lovely Red Dress
+							i(151770, {	-- Lovely Black Dress
+								["timeline"] = { "added 7.2.5.24116" },
+							}),
+							i(151768, {	-- Lovely Blue Dress
+								["timeline"] = { "added 7.2.5.24116" },
+							}),
+							i(151767, {	-- Lovely Purple Dress
+								["timeline"] = { "added 7.2.5.24116" },
+							}),
+							i(151769, {	-- Lovely Red Dress
+								["timeline"] = { "added 7.2.5.24116" },
+							}),
+							i(22279, {	-- Lovely Black Dress
+								["timeline"] = { "removed 7.2.5.24116" },
+							}),
+							i(22278, {	-- Lovely Blue Dress
+								["timeline"] = { "removed 7.2.5.24116" },
+							}),
+							i(22280, {	-- Lovely Purple Dress
+								["timeline"] = { "removed 7.2.5.24116" },
+							}),
+							i(22276, {	-- Lovely Red Dress
+								["timeline"] = { "removed 7.2.5.24116" },
+							}),
 						},
 					}),
 					i(142341, {	-- Love Boat
+						["timeline"] = { "added 7.1.0.22731" },
 						["cost"] = { { "i", 49927, 270 } },	-- 270x Love Token
 					}),
 					i(165670, {	-- Peddlefeet's Lovely Hearthstone
+						["timeline"] = { "added 8.1.0.28724" },
 						["cost"] = { { "i", 49927, 150 } },	-- 150x Love Token
 					}),
 					i(34480, {	-- Romantic Picnic Basket
+						["timeline"] = { "added 2.4.0.7897" },
 						["cost"] = { { "i", 49927, 10 } },	-- 10x Love Token
 					}),
 					i(144339, {	-- Sturdy Love Fool
+						["timeline"] = { "added 7.1.5.23360" },
 						["cost"] = { { "i", 49927, 100 } },	-- 100x Love Token
 					}),
 					i(116155, {	-- Lovebird Hatchling
+						["timeline"] = { "added 6.0.1.18566" },
 						["cost"] = { { "i", 49927, 40 } },	-- 40x Love Token
 					}),
 					i(22235, {	-- Truesilver Shafted Arrow
 						["cost"] = { { "i", 49927, 40 } },	-- 40x Love Token
 					}),
 					i(72146, {	-- Swift Lovebird
+						["timeline"] = { "added 4.3.0.15005" },
 						["cost"] = { { "i", 49927, 270 } },	-- 270x Love Token
 					}),
 					i(49909, {	-- Box of Chocolates
+						["timeline"] = { "added 3.3.2.11403" },
 						["cost"] = { { "i", 49927, 10 } },	-- 10x Love Token
 						["groups"] = {
 							i(22236),	-- Buttermilk Delight
@@ -865,42 +1592,456 @@ _.Holidays = { applyholiday(LOVE_IS_IN_THE_AIR, {
 					}),
 					i(21813, {	-- Bag of Heart Candies
 						["cost"] = { { "i", 49927, 2 } },	-- 2x Love Token
-						["groups"] = {
-							i(21816),	-- Heart Candy (Be Mine!)
-							i(21817),	-- Heart Candy (I LOVE YOU)
-							i(21818),	-- Heart Candy (I'll follow you all around Azeroth.)
-							i(21819),	-- Heart Candy (All yours.)
-							i(21820),	-- Heart Candy (You're the best!)
-							i(21821),	-- Heart Candy (I'm all yours!)
-							i(21822),	-- Heart Candy (You're mine!)
-							i(21823),	-- Heart Candy (Hot lips!)
-						},
 					}),
 					i(22218, {	-- Handful of Rose Petals
 						["cost"] = { { "i", 49927, 2 } },	-- 2x Love Token
 					}),
 					i(34258, {	-- Love Rocket
+						["timeline"] = { "added 2.3.0.7382" },
+						["cost"] = { { "i", 49927, 5 } },	-- 5x Love Token
+					}),
+					i(50163, {	-- Lovely Rose
+						["timeline"] = { "added 3.3.2.11403" },
 						["cost"] = { { "i", 49927, 5 } },	-- 5x Love Token
 					}),
 					i(22200, {	-- Silver Shafted Arrow
 						["cost"] = { { "i", 49927, 5 } },	-- 5x Love Token
 					}),
+					i(116648, {	-- Manufactured Love Prism
+						["timeline"] = { "added 6.0.1.18594" },
+						["cost"] = { { "i", 49927, 40 } },	-- 40x Love Token
+					}),
 					i(134860, {	-- Peddlefeet's Buffing Creme
+						["timeline"] = { "added 7.0.3.22248" },
 						["cost"] = { { "i", 49927, 1 } },	-- 1x Love Token
+					}),
+					i(49927, {	-- Love Token
+						["timeline"] = { "added 3.3.0.10596" },
+						["cost"] = { { "i", 49916, 1 } },	-- 1x Lovely Charm Bracelet
 					}),
 				},
 			}),
 		}),
 		-- #endif
-
-		-- #if ANYCLASSIC
-		-- TODO: Classic isn't ready for this holiday yet, prepping now! (it came out today whoooops)
-		i(22206),	-- Bouquet of Red Roses
-		i(34480),	-- Romantic Picnic Basket
-		i(22235),	-- Truesilver Shafted Arrow
-		-- #endif
+		n(ZONE_DROPS, {
+			["description"] = "Apply a perfume or cologne buff to your character and speak to a guard in a major city to receive one of these items. Items exclusively found within each container will be listed within.",
+			["timeline"] = { "removed 3.3.2.11403" },
+			["cost"] = {
+				{ "i", 21833, 1 },	-- Cologne Bottle
+				{ "i", 21829, 1 },	-- Perfume Bottle
+				{ "i", 21815, 1 },	-- Love Token
+			},
+			["groups"] = {
+				i(22262, {	-- Alliance Gift Collection
+					["cost"] = {
+						{ "i", 22133, 1 },	-- Darnassus Gift Collection
+						{ "i", 22132, 1 },	-- Ironforge Gift Collection
+						{ "i", 22131, 1 },	-- Stormwind Gift Collection
+					},
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { DARNASSUS, IRONFORGE, STORMWIND_CITY },
+					["_drop"] = { "f" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(22263, {	-- Horde Gift Collection
+					["cost"] = {
+						{ "i", 22136, 1 },	-- Orgrimmar Gift Collection
+						{ "i", 22135, 1 },	-- Thunder Bluff Gift Collection
+						{ "i", 22134, 1 },	-- Undercity Gift Collection
+					},
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { ORGRIMMAR, THUNDER_BLUFF, UNDERCITY },
+					["_drop"] = { "f" },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				-- Darnassus
+				i(22133, {	-- Darnassus Gift Collection
+					["cost"] = {
+						{ "i", 22291, 1 },	-- Box of Woodcrafts
+						{ "i", 22289, 1 },	-- Stack of Cards
+						{ "i", 22290, 1 },	-- Darnassus Pledge Collection
+					},
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { DARNASSUS },
+					["_drop"] = { "f", "spellID" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(22290, {	-- Darnassus Pledge Collection
+					["cost"] = { { "i", 22120, 5 } },	-- Pledge of Loyalty: Darnassus
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { DARNASSUS },
+					["_drop"] = { "f", "spellID" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(22291, {	-- Box of Woodcrafts
+					["cost"] = { { "i", 21960, 5 } },	-- Handmade Woodcraft
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { DARNASSUS },
+					["_drop"] = { "f", "spellID" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(22289, {	-- Stack of Cards
+					["cost"] = { { "i", 22140, 5 } },	-- Sentinel's Card
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { DARNASSUS },
+					["_drop"] = { "f", "spellID" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(22140, {	-- Sentinel's Card
+					["providers"] = {
+						{ "i", 22155 },	-- Pledge of Adoration: Darnassus
+						{ "i", 22159 },	-- Pledge of Friendship: Darnassus
+					},
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { DARNASSUS },
+					["_drop"] = { "f", "spellID" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(22120, {	-- Pledge of Loyalty: Darnassus
+					["providers"] = {
+						{ "i", 22155 },	-- Pledge of Adoration: Darnassus
+						{ "i", 22159 },	-- Pledge of Friendship: Darnassus
+					},
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { DARNASSUS },
+					["_drop"] = { "f", "spellID" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(21960, {	-- Handmade Woodcraft
+					["providers"] = {
+						{ "i", 21979 },	-- Gift of Adoration: Darnassus
+						{ "i", 22167 },	-- Gift of Friendship: Darnassus
+					},
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { DARNASSUS },
+					["_drop"] = { "f", "spellID" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				-- Ironforge
+				i(22132, {	-- Ironforge Gift Collection
+					["cost"] = {
+						{ "i", 22288, 1 },	-- Case of Homebrew
+						{ "i", 22287, 1 },	-- Parcel of Cards
+						{ "i", 22286, 1 },	-- Ironforge Pledge Collection
+					},
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { IRONFORGE },
+					["_drop"] = { "f", "spellID" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(22286, {	-- Ironforge Pledge Collection
+					["cost"] = { { "i", 22119, 5 } },	-- Pledge of Loyalty: Ironforge
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { IRONFORGE },
+					["_drop"] = { "f", "spellID" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(22288, {	-- Case of Homebrew
+					["cost"] = { { "i", 22173, 5 } },	-- Dwarven Homebrew
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { IRONFORGE },
+					["_drop"] = { "f", "spellID" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(22287, {	-- Parcel of Cards
+					["cost"] = { { "i", 22141, 5 } },	-- Ironforge Guard's Card
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { IRONFORGE },
+					["_drop"] = { "f", "spellID" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(22141, {	-- Ironforge Guard's Card
+					["providers"] = {
+						{ "i", 22154 },	-- Pledge of Adoration: Ironforge
+						{ "i", 22160 },	-- Pledge of Friendship: Ironforge
+					},
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { IRONFORGE },
+					["_drop"] = { "f", "spellID" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(22119, {	-- Pledge of Loyalty: Ironforge
+					["providers"] = {
+						{ "i", 22154 },	-- Pledge of Adoration: Ironforge
+						{ "i", 22160 },	-- Pledge of Friendship: Ironforge
+					},
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { IRONFORGE },
+					["_drop"] = { "f", "spellID" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(22173, {	-- Dwarven Homebrew
+					["providers"] = {
+						{ "i", 21980 },	-- Gift of Adoration: Ironforge
+						{ "i", 22168 },	-- Gift of Friendship: Ironforge
+					},
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { IRONFORGE },
+					["_drop"] = { "f", "spellID" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				-- Stormwind City
+				i(22131, {	-- Stormwind Gift Collection
+					["cost"] = {
+						{ "i", 22283, 1 },	-- Sack of Homemade Bread
+						{ "i", 22284, 1 },	-- Bundle of Cards
+						{ "i", 22285, 1 },	-- Stormwind Pledge Collection
+					},
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { STORMWIND_CITY },
+					["_drop"] = { "f", "spellID" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(22285, {	-- Stormwind Pledge Collection
+					["cost"] = { { "i", 22117, 5 } },	-- Pledge of Loyalty: Stormwind
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { STORMWIND_CITY },
+					["_drop"] = { "f", "spellID" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(22283, {	-- Sack of Homemade Bread
+					["cost"] = { { "i", 22176, 5 } },	-- Homemade Bread
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { STORMWIND_CITY },
+					["_drop"] = { "f", "spellID" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(22284, {	-- Bundle of Cards
+					["cost"] = { { "i", 22143, 5 } },	-- Stormwind Guard's Card
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { STORMWIND_CITY },
+					["_drop"] = { "f", "spellID" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(22143, {	-- Stormwind Guard's Card
+					["providers"] = {
+						{ "i", 21975 },	-- Pledge of Adoration: Stormwind
+						{ "i", 22178 },	-- Pledge of Friendship: Stormwind
+					},
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { STORMWIND_CITY },
+					["_drop"] = { "f", "spellID" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(22117, {	-- Pledge of Loyalty: Stormwind
+					["providers"] = {
+						{ "i", 21975 },	-- Pledge of Adoration: Stormwind
+						{ "i", 22178 },	-- Pledge of Friendship: Stormwind
+					},
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { STORMWIND_CITY },
+					["_drop"] = { "f", "spellID" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(22176, {	-- Homemade Bread
+					["providers"] = {
+						{ "i", 21981 },	-- Gift of Adoration: Stormwind
+						{ "i", 22170 },	-- Gift of Friendship: Stormwind
+					},
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { STORMWIND_CITY },
+					["_drop"] = { "f", "spellID" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				-- Orgrimmar
+				i(22136, {	-- Orgrimmar Gift Collection
+					["cost"] = {
+						{ "i", 22292, 1 },	-- Box of Fresh Pies
+						{ "i", 22293, 1 },	-- Package of Cards
+						{ "i", 22294, 1 },	-- Orgrimmar Pledge Collection
+					},
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { ORGRIMMAR },
+					["_drop"] = { "f", "spellID" },
+					["races"] = HORDE_ONLY,
+				}),
+				i(22294, {	-- Orgrimmar Pledge Collection
+					["cost"] = { { "i", 22123, 5 } },	-- Pledge of Loyalty: Orgrimmar
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { ORGRIMMAR },
+					["_drop"] = { "f", "spellID" },
+					["races"] = HORDE_ONLY,
+				}),
+				i(22292, {	-- Box of Fresh Pies
+					["cost"] = { { "i", 22175, 5 } },	-- Freshly Baked Pie
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { ORGRIMMAR },
+					["_drop"] = { "f", "spellID" },
+					["races"] = HORDE_ONLY,
+				}),
+				i(22293, {	-- Package of Cards
+					["cost"] = { { "i", 22142, 5 } },	-- Grunt's Card
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { ORGRIMMAR },
+					["_drop"] = { "f", "spellID" },
+					["races"] = HORDE_ONLY,
+				}),
+				i(22142, {	-- Grunt's Card
+					["providers"] = {
+						{ "i", 22156 },	-- Pledge of Adoration: Orgrimmar
+						{ "i", 22161 },	-- Pledge of Friendship: Orgrimmar
+					},
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { ORGRIMMAR },
+					["_drop"] = { "f", "spellID" },
+					["races"] = HORDE_ONLY,
+				}),
+				i(22123, {	-- Pledge of Loyalty: Orgrimmar
+					["providers"] = {
+						{ "i", 22156 },	-- Pledge of Adoration: Orgrimmar
+						{ "i", 22161 },	-- Pledge of Friendship: Orgrimmar
+					},
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { ORGRIMMAR },
+					["_drop"] = { "f", "spellID" },
+					["races"] = HORDE_ONLY,
+				}),
+				i(22175, {	-- Freshly Baked Pie
+					["providers"] = {
+						{ "i", 22164 },	-- Gift of Adoration: Orgrimmar
+						{ "i", 22169 },	-- Gift of Friendship: Orgrimmar
+					},
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { ORGRIMMAR },
+					["_drop"] = { "f", "spellID" },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				-- Thunder Bluff
+				i(22135, {	-- Thunder Bluff Gift Collection
+					["cost"] = {
+						{ "i", 22296, 1 },	-- Basket of Flowers
+						{ "i", 22295, 1 },	-- Satchel of Cards
+						{ "i", 22297, 1 },	-- Thunder Bluff Pledge Collection
+					},
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { THUNDER_BLUFF },
+					["_drop"] = { "f", "spellID" },
+					["races"] = HORDE_ONLY,
+				}),
+				i(22297, {	-- Thunder Bluff Pledge Collection
+					["cost"] = { { "i", 22122, 5 } },	-- Pledge of Loyalty: Thunder Bluff
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { THUNDER_BLUFF },
+					["_drop"] = { "f", "spellID" },
+					["races"] = HORDE_ONLY,
+				}),
+				i(22296, {	-- Basket of Flowers
+					["cost"] = { { "i", 22177, 5 } },	-- Freshly Picked Flowers
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { THUNDER_BLUFF },
+					["_drop"] = { "f", "spellID" },
+					["races"] = HORDE_ONLY,
+				}),
+				i(22295, {	-- Satchel of Cards
+					["cost"] = { { "i", 22144, 5 } },	-- Bluffwatcher's Card
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { THUNDER_BLUFF },
+					["_drop"] = { "f", "spellID" },
+					["races"] = HORDE_ONLY,
+				}),
+				i(22144, {	-- Bluffwatcher's Card
+					["providers"] = {
+						{ "i", 22158 },	-- Pledge of Adoration: Thunder Bluff
+						{ "i", 22162 },	-- Pledge of Friendship: Thunder Bluff
+					},
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { THUNDER_BLUFF },
+					["_drop"] = { "f", "spellID" },
+					["races"] = HORDE_ONLY,
+				}),
+				i(22122, {	-- Pledge of Loyalty: Thunder Bluff
+					["providers"] = {
+						{ "i", 22158 },	-- Pledge of Adoration: Thunder Bluff
+						{ "i", 22162 },	-- Pledge of Friendship: Thunder Bluff
+					},
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { THUNDER_BLUFF },
+					["_drop"] = { "f", "spellID" },
+					["races"] = HORDE_ONLY,
+				}),
+				i(22177, {	-- Freshly Picked Flowers
+					["providers"] = {
+						{ "i", 22165 },	-- Gift of Adoration: Thunder Bluff
+						{ "i", 22171 },	-- Gift of Friendship: Thunder Bluff
+					},
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { THUNDER_BLUFF },
+					["_drop"] = { "f", "spellID" },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				-- Undercity
+				i(22134, {	-- Undercity Gift Collection
+					["cost"] = {
+						{ "i", 22298, 1 },	-- Book of Romantic Poems
+						{ "i", 22299, 1 },	-- Sheaf of Cards
+						{ "i", 22300, 1 },	-- Undercity Pledge Collection
+					},
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { UNDERCITY },
+					["_drop"] = { "f", "spellID" },
+					["races"] = HORDE_ONLY,
+				}),
+				i(22300, {	-- Undercity Pledge Collection
+					["cost"] = { { "i", 22121, 5 } },	-- Pledge of Loyalty: Undercity
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { UNDERCITY },
+					["_drop"] = { "f", "spellID" },
+					["races"] = HORDE_ONLY,
+				}),
+				i(22298, {	-- Book of Romantic Poems
+					["cost"] = { { "i", 22174, 5 } },	-- Romantic Poem
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { UNDERCITY },
+					["_drop"] = { "f", "spellID" },
+					["races"] = HORDE_ONLY,
+				}),
+				i(22299, {	-- Sheaf of Cards
+					["cost"] = { { "i", 22145, 5 } },	-- Guardian's Moldy Card
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { UNDERCITY },
+					["_drop"] = { "f", "spellID" },
+					["races"] = HORDE_ONLY,
+				}),
+				i(22145, {	-- Guardian's Moldy Card
+					["providers"] = {
+						{ "i", 22157 },	-- Pledge of Adoration: Undercity
+						{ "i", 22163 },	-- Pledge of Friendship: Undercity
+					},
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { UNDERCITY },
+					["_drop"] = { "f", "spellID" },
+					["races"] = HORDE_ONLY,
+				}),
+				i(22121, {	-- Pledge of Loyalty: Undercity
+					["providers"] = {
+						{ "i", 22157 },	-- Pledge of Adoration: Undercity
+						{ "i", 22163 },	-- Pledge of Friendship: Undercity
+					},
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { UNDERCITY },
+					["_drop"] = { "f", "spellID" },
+					["races"] = HORDE_ONLY,
+				}),
+				i(22174, {	-- Romantic Poem
+					["providers"] = {
+						{ "i", 22166 },	-- Gift of Adoration: Undercity
+						{ "i", 22172 },	-- Gift of Friendship: Undercity
+					},
+					["timeline"] = { "removed 3.3.2.11403" },
+					["maps"] = { UNDERCITY },
+					["_drop"] = { "f", "spellID" },
+					["races"] = HORDE_ONLY,
+				}),
+			},
+		}),
 	},
-})};
+}));
 
 _.NeverImplemented = { bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	-- #if ANYCLASSIC
@@ -909,6 +2050,7 @@ _.NeverImplemented = { bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	["holidayID"] = 235468,
 	-- #endif
 	["groups"] = {
+		q(11558),	-- Dangerous Love (H)
 		i(147374, {	-- Wooden Toy Shield [Alliance]
 			["timeline"] = { "created 7.3.0.24484" },
 		}),
