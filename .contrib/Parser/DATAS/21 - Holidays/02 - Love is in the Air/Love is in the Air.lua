@@ -797,7 +797,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 				["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
 				["coord"] = { 61.5, 75.2, STORMWIND_CITY },
 				["timeline"] = { "added 3.3.0", "removed 7.1.5.23194" },
-				["maps"] = { TERROKAR_FOREST },
+				["maps"] = { TEROKKAR_FOREST },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = { 61, 70 },
 				["isDaily"] = true,
@@ -991,7 +991,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 				["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
 				["coord"] = { 50.0, 65.0, ORGRIMMAR },
 				["timeline"] = { "added 3.3.0", "removed 7.1.5.23194" },
-				["maps"] = { TERROKAR_FOREST },
+				["maps"] = { TEROKKAR_FOREST },
 				["races"] = HORDE_ONLY,
 				["lvl"] = { 61, 70 },
 				["isDaily"] = true,
