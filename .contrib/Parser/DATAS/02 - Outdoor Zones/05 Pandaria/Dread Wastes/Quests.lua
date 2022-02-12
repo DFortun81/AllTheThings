@@ -402,11 +402,6 @@ _.Zones =
 						i(84634),	-- Sunst Armored Chestpiece
 					},
 				}),
-				q(31129, {	-- Fate of the Stormstouts (NYI - appears to be an used duplicate?)
-					["u"] = NEVER_IMPLEMENTED,
-					["coord"] = { 50.4, 12.0, DREAD_WASTES },
-					["provider"] = { "n", 62779 },	-- Chen Stormstout
-				}),
 				q(31076, {	-- Fate of the Stormstouts
 					["coord"] = { 50.4, 12.0, DREAD_WASTES },
 					["provider"] = { "n", 62779 },	-- Chen Stormstout
@@ -936,9 +931,6 @@ _.Zones =
 					["coord"] = { 54.9, 34.0, DREAD_WASTES },
 					["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
 					["sourceQuest"] = 31006,	-- The Klaxxi Council
-				}),
-				q(31174, {	-- The Dread Vos (NYI - completes when you turn in "Amber is Life")
-					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(31689, {	-- The Dreadsworn
 					["coord"] = { 55.0, 35.4, DREAD_WASTES },

@@ -915,7 +915,10 @@ _.HiddenQuestTriggers = {
 		q(25198),	-- Winnoa Pineforest - completed with quest 24807
 		q(25305),	-- Never Look Back- completed with quest 25304
 		q(26379),	-- In Aid of the Refugees - completed with quest 13601
+		q(26893),	-- Blackfathom Deeps - completed with quest 26894
 		q(27309),	-- The Grimtotem Plot - completed with quest 27293
+		q(27861),	-- The Crucible of Carnage: The Bloodeye Bruiser! - completed with quest 27863
+		q(27862),	-- The Crucible of Carnage: The Bloodeye Bruiser! - completed with quest 27863
 		q(29039),	-- Hunting Practice - completed with quest 29038
 		q(29051),	-- Cub's First Toy - completed with quest 29040
 		q(29052),	-- A Cub's Cravings - completed with quest 29035
@@ -923,11 +926,24 @@ _.HiddenQuestTriggers = {
 		q(29405),	-- The Lesson of the Iron Staff - completed with quest 30027 & 30033 & 30334 & 30335 & 30336 & 30337 & 30338
 		q(29597),	-- The End of the Exarch - completed with quest 29596
 		q(29673),	-- The Black Morass - completed with quest 10296
+		q(29809),	-- Efficient Excavations - completed with quest 28132
 		q(29969),	-- Broken Earthen Figurine - completed with quest 28776
+		q(29970),	-- Broken Earthen Figurine - completed with quest 28776
+		q(30490),	-- Yakity Yak - completed with quest 30587
+		q(30596),	-- A Zandalari Troll? - completed with quest 30619 & 30620
+		q(30615),	-- A Zandalari Troll? - completed with quest 30619 & 30620
+		q(30673),	-- Holed Up - completed with quest 30682
+		q(30680),	-- Holed Up - completed with quest 30682
+		q(30681),	-- Holed Up - completed with quest 30682
+		q(30744),	-- Kota Blend - completed with quest 30825
+		q(30766),	-- Profiting off of the Past - completed with quest 30595
 		q(30817),	-- The Healing of Shen-zin Su - completed with quest 29799
 		q(30818),	-- A New Fate - completed with quest 29800
 		q(30988),	-- The Alliance Way - completed with quest 31013
 		q(31033),	-- Adventurers Wanted: Ragefire Chasm - completed with quest 31034 & 31036 & 31037
+		q(31129),	-- Fate of the Stormstouts - completed with quest 31076
+		q(31174),	-- The Dread Vos - completed with quest 31019
+		q(31206),	-- The Crucible of Carnage: The Bloodeye Bruiser! - completed with quest 27863
 		q(31373),	-- The Order of the Cloud Serpent - completed with quest 32461
 		q(31375),	-- The Order of the Cloud Serpent - completed with quest 32461
 		q(33073),	-- [NOTUSED]Vignette: Ancient Saltsnap Turtle - completed with quest 33070
@@ -979,7 +995,11 @@ _.HiddenQuestTriggers = {
 		q(39396),	-- NOT USED - completed with quest 39394 & 38463
 		q(45405),	-- Breaching the Sanctum - completed with quest 44719
 		q(49563),	-- Warchief's Command: Frostfire Ridge! - completed with quest 49545
-
+		
+		-- Kun-lai Summit
+		--q(30765),	-- Regaining Honor - TODO: figure out from where it gets completed
+					-- probably triggers around the completion of "A Terrible Sacrifice"
+		
 		-- Frostfire Ridge
 		--q(33264),	-- A Proper Burial - TODO: figure out from where it gets completed
 		--q(34734),	-- The Loyalty of Olin Umberhide - TODO: figure out from where it gets completed
@@ -3451,6 +3471,7 @@ _.HiddenQuestTriggers = {
 		q(40395, {["_drop"] = { "g" }}),	-- LFGDungeons - Timewalking "Heroic" Random - Nth
 		q(36144, {["_drop"] = { "g" }}),	-- LFG WLK 75-80
 		q(36150, {["_drop"] = { "g" }}),	-- LFG WLK 75-80
+		q(37648, {["_drop"] = { "g" }}),	-- Short-Supply Reward
 		q(35963),	-- Warlords Heroic Dungeon Reward Quest - triggered at the end of Mythic Grimrail Depot
 		q(36277),	-- Warlords Max Level Dungeon Bonus Reward
 		q(35962),	-- Warlords Max Level Dungeon Reward Quest - triggered at the end of Normal Grimrail Depot
@@ -3501,7 +3522,6 @@ _.HiddenQuestTriggers = {
 		q(38174, {["_drop"] = { "g" }}),	-- Legion 100-109 H
 		q(36140, {["_drop"] = { "g" }}),	-- Pandaria 88-90
 		q(36148, {["_drop"] = { "g" }}),	-- Pandaria 88-90
-		q(37648, {["_drop"] = { "g" }}),	-- Short-Supply Reward
 		q(38114, {["_drop"] = { "g" }}),	-- TBC 60-69
 		q(38125, {["_drop"] = { "g" }}),	-- TBC 60-69
 		q(38136),	-- TBC 60-69

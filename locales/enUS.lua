@@ -1448,7 +1448,8 @@ app.L = {
 		[-2093] = app.asset("Expansion_SL"),									-- Patch 9.1.0
 		[-2094] = app.asset("Expansion_SL"),									-- Patch 9.1.5
 		[-2095] = app.asset("Expansion_SL"),									-- Patch 9.2.0
-		[-2096] = app.asset("Expansion_SL"),									-- Patch 9.x.x - unknown patch
+		[-2096] = app.asset("Expansion_SL"),									-- Patch 9.2.5
+		[-2097] = app.asset("Expansion_SL"),									-- Patch 9.x.x - unknown patch
 	};
 	["HEADER_NAMES"] = {
 	-- Commonly used
@@ -2059,7 +2060,8 @@ app.L = {
 		[-2093] = "9.1.0",														-- Patch 9.1.0
 		[-2094] = "9.1.5",														-- Patch 9.1.5
 		[-2095] = "9.2.0",														-- Patch 9.2.0
-		[-2096] = "9.x.x",														-- Patch 9.x.x - unknown patch
+		[-2096] = "9.2.5",														-- Patch 9.2.5
+		[-2097] = "9.x.x",														-- Patch 9.x.x - unknown patch
 	};
 	["HEADER_DESCRIPTIONS"] = {
 		[-18] = "Contains Things which are rewarded or are available from other content within the containing section.\nThey are consolidated here in an effort to reduce duplication from many possible Sources.",

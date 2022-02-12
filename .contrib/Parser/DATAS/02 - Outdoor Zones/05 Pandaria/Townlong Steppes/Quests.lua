@@ -469,9 +469,6 @@ _.Zones =
 						i(88583),	-- Ban's Bag of Bombs
 					},
 				}),
-				q(30974, {	-- Raising Spirits (NYI - never left beta)
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				q(30774, {	-- Ranger Rescue
 					["coord"] = { 67.2, 52.2, TOWNLONG_STEPPES },
 					["provider"] = { "n", 60684 },	-- Suna Silentstrike

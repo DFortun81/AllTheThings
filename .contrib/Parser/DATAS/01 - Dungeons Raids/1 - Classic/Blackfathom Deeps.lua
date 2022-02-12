@@ -702,9 +702,6 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(908),	-- Amongst the Ruins
 		q(909),	-- Baron Aquanis
-		q(26893, {	-- Blackfathom Deeps
-			["timeline"] = { "created 4.0.3.13277" },
-		}),
 		q(26461, {	-- Blackfathom Villainy
 			["timeline"] = { "created 6.0.1.18322" },
 		}),

@@ -18,10 +18,7 @@ _.Zones =
 				q(30746, {	-- A Fair Trade
 					["coord"] = { 42.4, 69.6, KUN_LAI_SUMMIT },
 					["provider"] = { "n", 60503 },	-- Uncle Keenbean
-					["sourceQuests"] = {
-						30744,	-- Kota Blend
-						30825,	-- Kota Blend
-					},
+					["sourceQuest"] = 30825,	-- Kota Blend
 				}),
 				q(30820, {	-- A Funeral
 					["coord"] = { 63.1, 29.3, KUN_LAI_SUMMIT },
@@ -59,16 +56,16 @@ _.Zones =
 						i(88385),	-- Hozen Idol
 					},
 				}),
+				q(30283, {	-- A Smashing Impression
+					["coord"] = { 56.0, 91.8, KUN_LAI_SUMMIT },
+					["provider"] = { "n", 58469 },	-- Ren Firetongue
+					["isDaily"] = true,
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(30751, {	-- A Terrible Sacrifice
 					["coord"] = { 29.2, 62.3, KUN_LAI_SUMMIT },
 					["provider"] = { "n", 61820 },	-- Lao-Chin the Iron Belly
 					["sourceQuest"] = 30724,	-- To the Wall!
-				}),
-				q(30596, {	-- A Zandalari Troll? (A) (Triggers when completing "Mogu?! Oh No-gu!")
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(30615, {	-- A Zandalari Troll? (H)
-					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(30506, {	-- Admiral Taylor has Awakened (3 versions of this quest from 3 different npc's but completing one gives credit for all 3)
 					["coord"] = { 70.8, 90.4, KUN_LAI_SUMMIT },
@@ -458,6 +455,12 @@ _.Zones =
 						30460,	-- Hit Medicine
 					},
 				}),
+				q(30339, {	-- Getting your Hands Dirty
+					["coord"] = { 55.0, 92.0, KUN_LAI_SUMMIT },
+					["provider"] = { "n", 59341 },	-- Merchant Tantan
+					["isDaily"] = true,
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(30824, {	-- Gourmet Kafa
 					["coord"] = { 40.2, 81.5, KUN_LAI_SUMMIT },
 					["provider"] = { "n", 60678 },	-- Cousin Littlebrew
@@ -483,15 +486,6 @@ _.Zones =
 				q(30460, {	-- Hit Medicine
 					["coord"] = { 71.5, 92.8, KUN_LAI_SUMMIT },
 					["provider"] = { "n", 59077 },	-- Apothecary Cheng
-				}),
-				q(30673, {	-- Holed Up (NYI - duplicate/removed)
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(30680, {	-- Holed Up (NYI - duplicate/removed)
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(30681, {	-- Holed Up (NYI - duplicate/removed)
-					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(30682, {	-- Holed Up
 					["coord"] = { 42.9, 88.3, KUN_LAI_SUMMIT },
@@ -575,11 +569,6 @@ _.Zones =
 				q(30825, {	-- Kota Blend
 					["coord"] = { 40.3, 81.5, KUN_LAI_SUMMIT },
 					["provider"] = { "n", 60677 },	-- Uncle Tallmug
-				}),
-				q(30744, {	-- Kota Blend (NYI? likely duplicate)
-					["u"] = NEVER_IMPLEMENTED,
-					["coord"] = { 42.5, 69.4, KUN_LAI_SUMMIT },
-					["provider"] = { "n", 60503 },	-- Uncle Keenbean
 				}),
 				q(30994, {	-- Lao-Chin's Gambit
 					["coord"] = { 29.3, 62.2, KUN_LAI_SUMMIT },
@@ -795,9 +784,6 @@ _.Zones =
 					["coord"] = { 59.6, 78.2, KUN_LAI_SUMMIT },
 					["provider"] = { "n", 59821 },	-- Bao Jian
 				}),
-				q(30766, {	-- Profiting off of the Past (NYI - duplicate)
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				q(30469, {	-- Repossession
 					["coord"] = { 74.9, 88.8, KUN_LAI_SUMMIT },
 					["provider"] = { "n", 59263 },	-- Merchant Shi
@@ -817,12 +803,6 @@ _.Zones =
 						i(82521),	-- Summit Guardian Legguards
 						i(82522),	-- Wallwatcher Legguards
 					},
-				}),
-				q(30710, {	-- Provoking the Trolls
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(30765, {	-- Regaining Honor	-- probably triggers around the completion of "A Terrible Sacrifice"
-					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(31809, {	-- Remnants of Anger
 					["provider"] = { "i", 89317 },	-- Claw of Anger
@@ -935,6 +915,12 @@ _.Zones =
 					["coord"] = { 57.3, 47.9, KUN_LAI_SUMMIT },
 					["provider"] = { "n", 61297 },	-- Image of Lorewalker Cho
 					["sourceQuest"] = 30798,	-- Breaking the Emperor's Shield
+				}),
+				q(30340, {	-- Stick in the Mud
+					["coord"] = { 55.0, 92.0, KUN_LAI_SUMMIT },
+					["provider"] = { "n", 59341 },	-- Merchant Tantan
+					["isDaily"] = true,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(31392, {	-- Temple of the White Tiger (A)
 					["coord"] = { 72.0, 94.2, KUN_LAI_SUMMIT },
@@ -1228,6 +1214,12 @@ _.Zones =
 					["provider"] = { "n", 60785 },	-- Sage Liao
 					["sourceQuest"] = 30794,	-- Emergency Care
 				}),
+				q(30281, {	-- The Silent Approach
+					["coord"] = { 55.2, 92.0, KUN_LAI_SUMMIT },
+					["provider"] = { "n", 58470 },	-- He Softfoot
+					["isDaily"] = true,
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(30608, {	-- The Snackrifice
 					["coord"] = { 50.5, 64.0, KUN_LAI_SUMMIT },
 					["provider"] = { "n", 59894 },	-- Brother Yakshoe
@@ -1267,6 +1259,12 @@ _.Zones =
 						30661,	-- The Ordo Warbringer
 						30663,	-- The Ordo Warbringer
 					},
+				}),
+				q(30482, {	-- The Soul-Gatherer
+					["coord"] = { 55.2, 92.0, KUN_LAI_SUMMIT },
+					["provider"] = { "n", 58470 },	-- He Softfoot
+					["isDaily"] = true,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(30799, {	-- The Tomb of Shadows
 					["coord"] = { 57.1, 47.8, KUN_LAI_SUMMIT },
@@ -1434,9 +1432,6 @@ _.Zones =
 					["coord"] = { 58.5, 83.9, KUN_LAI_SUMMIT },
 					["provider"] = { "n", 157180 },	-- Abandoned Stormstout Kegs
 					["sourceQuest"] = 57071,	-- No Brew Left Behind
-				}),
-				q(30490, {	-- Yakity Yak (this version is not in game)
-					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(30587, {	-- Yakity Yak
 					["cr"] = 59718,	-- Burilgi Despoiler

@@ -1010,9 +1010,6 @@ _.Zones =
 					["coord"] = { 53.0, 52.0, VALLEY_OF_THE_FOUR_WINDS },
 					["provider"] = { "n", 58708 },	-- Sho
 				}),
-				q(31530, {	-- Mission: The Hozen Dozen -- Present in Beta but never made it to live servers
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				q(30322, {	-- Money Matters
 					["isDaily"] = true,
 					["coord"] = { 53.2, 51.8, VALLEY_OF_THE_FOUR_WINDS },

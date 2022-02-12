@@ -257,7 +257,7 @@ root("Instances", tier(CLASSIC_TIER, {
 							["timeline"] = { "added 5.0.1.15589" },
 						}),
 						i(131712, {	-- Scaled Vest of the Shaman
-							["timeline"] = { "created 7.0.3.22248" },
+							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(82895, {	-- Searing Belt
 							["timeline"] = { "added 5.0.1.15589" },
@@ -269,7 +269,7 @@ root("Instances", tier(CLASSIC_TIER, {
 							["timeline"] = { "added 5.0.1.15589" },
 						}),
 						i(131711, {	-- Stone Guard Greaves
-							["timeline"] = { "created 7.0.3.22248" },
+							["timeline"] = { "added 7.0.3.22248" },
 						}),
 					},
 				}),

@@ -2188,7 +2188,6 @@ _.HiddenQuestTriggers = {
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		-- #if BEFORE WRATH
-		q(10815),	-- BETA The Journal of Val'zareq: Portends of War
 		q(10871),	-- BETA Ally of the Netherwing
 		q(10872),	-- BETA Zuluhed the Whacked
 		q(11052),	-- OLD Akama's Promise (awarded "Akama's Promise" criteria)
