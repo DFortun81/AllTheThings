@@ -21,15 +21,6 @@ _.Zones =
 						["provider"] = { "n", 55940 },	-- Jojo Ironbrow
 						["sourceQuests"] = { 29665, 29794, 29797 },	-- From Bad to Worse, None Left Behind, Medical Supplies
 					}),
-					q(10593, {	-- An Ancient Evil [Horde]
-						["races"] = HORDE_ONLY,
-						["u"] = REMOVED_FROM_GAME,
-						["g"] = {
-							i(30696, {	-- Scourgebane
-								["u"] = REMOVED_FROM_GAME,
-							}),
-						},
-					}),
 					q(29410, {	-- Aysa of the Tushui
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
 						["sourceQuests"] = { 29409 },	-- The Disciple's Challenge

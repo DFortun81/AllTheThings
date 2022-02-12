@@ -189,7 +189,6 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 				["groups"] = {
 					i(50320, {	-- Faded Lovely Greeting Card [A]
 						["timeline"] = { "added 3.3.2.11403" },
->>>>>>> Stashed changes
 					}),
 					i(49641, {	-- Faded Lovely Greeting Card [H]
 						["timeline"] = { "added 3.3.2.11403" },

@@ -46,6 +46,15 @@ root("Instances", tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
+				q(10593, {	-- An Ancient Evil [Horde]
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						i(30696, {	-- Scourgebane
+							["u"] = REMOVED_FROM_GAME,
+						}),
+					},
+				}),
 				q(8257, {	-- Blood of Morphaz
 					["qg"] = 8405,	-- Ogtinc
 					["sourceQuest"] = 8256,	-- The Ichor of Undeath
