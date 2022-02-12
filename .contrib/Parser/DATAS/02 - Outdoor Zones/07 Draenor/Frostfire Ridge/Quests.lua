@@ -1188,9 +1188,7 @@ _.Zones =
 					["provider"] = { "n", 76862 },	-- Gog'rak
 					["sourceQuest"] = 33468,	-- Save Wolf Home
 				}),
-				n(BONUS_OBJECTIVES, sharedData({
-					["lockCriteria"] = { 1, "lvl", 40 },	-- Cannot be completed once reaching level 40
-				},{
+				n(BONUS_OBJECTIVES, {
 					-- TODO: Check SQ
 					q(37626, {	-- Assault on Magnarok (H)
 						["coord"] = { 70.0, 30.0, FROSTFIRE_RIDGE },
@@ -1270,7 +1268,7 @@ _.Zones =
 							}),
 						},
 					}),
-				})),
+				}),
 			}),
 		}),
 	}),

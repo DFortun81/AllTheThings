@@ -426,9 +426,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				n(BONUS_OBJECTIVES, sharedData({
-					["lockCriteria"] = { 1, "lvl", 40 },	-- Cannot be completed once reaching level 40
-				},{
+				n(BONUS_OBJECTIVES, {
 					-- TODO: Check SQ
 					q(37891, {	-- Assault on Ironhold Harbor (A)
 						["coord"] = { 58.4, 60.2, TANAAN_JUNGLE },
@@ -750,7 +748,7 @@ _.Zones =
 						["isDaily"] = true,
 						--["sourceQuest"] = 38453,	-- Garrison Campaign: The Bane of the Bleeding Hollow
 					}),
-				})),
+				}),
 			}),
 		}),
 	}),

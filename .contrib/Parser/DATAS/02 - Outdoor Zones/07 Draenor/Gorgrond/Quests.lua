@@ -2052,9 +2052,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 35041,	-- Xuk It!
 				}),
-				n(BONUS_OBJECTIVES, sharedData({
-					["lockCriteria"] = { 1, "lvl", 40 },	-- Cannot be completed once reaching level 40
-				},{
+				n(BONUS_OBJECTIVES, {
 					-- TODO: Check SQ
 					q(36815, {	-- Assault on the Everbloom Wilds (A)
 						["coord"] = { 64.0, 40.0, GORGROND },
@@ -2107,7 +2105,7 @@ _.Zones =
 					q(36480, {	-- Valley of Destruction
 						["coord"] = { 46.4, 47.2, GORGROND },
 					}),
-				})),
+				}),
 			}),
 		}),
 	}),

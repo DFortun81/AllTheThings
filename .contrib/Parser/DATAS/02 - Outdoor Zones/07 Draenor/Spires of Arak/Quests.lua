@@ -1215,9 +1215,7 @@ _.Zones =
 					["coord"] = { 54.8, 54.1, SPIRES_OF_ARAK },
 					["provider"] = { "n", 80740 },	-- Ravenspeaker Sekara
 				}),
-				n(BONUS_OBJECTIVES, sharedData({
-					["lockCriteria"] = { 1, "lvl", 40 },	-- Cannot be completed once reaching level 40
-				},{
+				n(BONUS_OBJECTIVES, {
 					-- TODO: Check SQ
 					q(36860, {	-- Assault on Lost Veil Anzu
 						["coord"] = { 73.0, 43.0, SPIRES_OF_ARAK },
@@ -1256,7 +1254,7 @@ _.Zones =
 					q(35649, {	-- The Writhing Mire
 						["coord"] = { 33.2, 43.3, SPIRES_OF_ARAK },
 					}),
-				})),
+				}),
 			}),
 		}),
 	}),
