@@ -751,7 +751,7 @@ root("PetBattles", petbattle({
 		-- Cata
 		q(31970, {	-- Grand Master Obalis
 			["provider"] = { "n", 66824 },	-- Obalis
-			["coord"] = { 56.6, 41.8, 249 },
+			["coord"] = { 56.6, 41.8, ULDUM },
 			["sourceQuests"] = {
 				31966,	-- Battle Pet Tamers: Cataclysm (A)
 				31967,	-- Battle Pet Tamers: Cataclysm (H)
@@ -763,13 +763,13 @@ root("PetBattles", petbattle({
 		q(31985, {	-- The Triumphant Return (A)
 			["sourceQuests"] = { 31970 },	-- Grand Master Obalis
 			["provider"] = { "n", 66824 },	-- Obalis
-			["coord"] = { 56.6, 41.8, 249 },
+			["coord"] = { 56.6, 41.8, ULDUM },
 			["races"] = ALLIANCE_ONLY,
 			["isBreadcrumb"] = true,
 		}),
 		q(31986, {	-- The Triumphant Return (H)
 			["provider"] = { "n", 66824 },	-- Obalis
-			["coord"] = { 56.6, 41.8, 249 },
+			["coord"] = { 56.6, 41.8, ULDUM },
 			["races"] = HORDE_ONLY,
 			["isBreadcrumb"] = true,
 		}),
@@ -1066,7 +1066,7 @@ root("PetBattles", petbattle({
 		q(31971, {	-- Grand Master Obalis
 			["sourceQuests"] = { 31970 },	-- Grand Master Obalis
 			["provider"] = { "n", 66824 },	-- Obalis
-			["coord"] = { 56.6, 41.8, 249 },
+			["coord"] = { 56.6, 41.8, ULDUM },
 			["isDaily"] = true,
 			["sym"] = {
 				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies

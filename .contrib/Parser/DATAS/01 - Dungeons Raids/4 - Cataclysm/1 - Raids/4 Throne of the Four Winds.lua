@@ -8,7 +8,7 @@ _.Instances = { tier(CATA_TIER, {
 		["sharedLockout"] = 1,
 		["lvl"] = 85,
 		["mapID"] = 328,
-		["coord"] = { 38.37, 80.63, 249 },	-- Throne of the Four Winds, Uldum
+		["coord"] = { 38.37, 80.63, ULDUM },	-- Throne of the Four Winds
 		["groups"] = {
 			ach(4851),	-- Throne of the Four Winds
 			d(1, {	-- Normal

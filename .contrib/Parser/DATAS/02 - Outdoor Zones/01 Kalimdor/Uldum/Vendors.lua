@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(249, {	-- Uldum
+		m(ULDUM, {
 			n(VENDORS, {
 				n(48617, {	-- Blacksmith Abasi <Ramkahen Quartermaster>
-					["coord"] = { 54.0, 33.2, 249 },
+					["coord"] = { 54.0, 33.2, ULDUM },
 					["g"] = {
 						i(63044),	-- Reins of the Brown Riding Camel (MOUNT!)
 						i(63045),	-- Reins of the Tan Riding Camel (MOUNT!)

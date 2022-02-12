@@ -124,8 +124,8 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			crit(28, {	-- Nicki Tinytech
 				["coord"] = { 64.4, 49.2, HELLFIRE_PENINSULA },
 			}),
-			crit(29, {	-- Obalis (Uldum)
-				["coord"] = { 56.6, 41.8, 249 },
+			crit(29, {	-- Obalis
+				["coord"] = { 56.6, 41.8, ULDUM },
 			}),
 			crit(30, {	-- Okrut Dragonwaste
 				["coord"] = { 59.0, 77.0, DRAGONBLIGHT },

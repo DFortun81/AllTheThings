@@ -312,7 +312,7 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 40634 },	-- Thunder on the Sands
 							["provider"] = { "n", 47684 },	-- King Phaoris
 							["classes"] = { MONK },
-							["coord"] = { 54.9, 32.8, 249 },	-- Uldum
+							["coord"] = { 54.9, 32.8, ULDUM },
 							["maps"] = {
 								716,	-- Skywall (The Thundering Heavens scenario)
 							},
@@ -671,7 +671,7 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 40633 },	-- Off To Adventure!
 							["provider"] = { "n", 47684 },	-- King Phaoris
 							["classes"] = { MONK },
-							["coord"] = { 54.9, 32.8, 249 },
+							["coord"] = { 54.9, 32.8, ULDUM },
 						}),
 						q(41945, {	-- Tianji of the Ox
 							["sourceQuests"] = {	-- technically "Rise, Champions" but you have to do li li/chen to turn in rise, and li li/chen have rise as a SQ
