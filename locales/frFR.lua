@@ -957,6 +957,7 @@ for key,value in pairs({
 	[148504] = "Une tombe ostentatoire",	-- A Conspicuous Gravestone
 	[149036] = "Coffre de Marvon",	-- Marvon's Chest
 	[149502] = "Trésor du Vol noir",	-- Hoard of the Black Dragonflight
+	[151286] = "Tome d'invocation kaldorei",	-- Kaldorei Tome of Summoning
 	[160836] = "Coffret à relique",	-- Relic Coffer
 	[161495] = "Coffre secret",	-- Secret Safe
 	[161504] = "Un petit paquet",	-- A Small Pack
@@ -1034,6 +1035,7 @@ for key,value in pairs({
 	[180794] = "Journal de Jandice Barov",	-- Journal of Jandice Barov
 	[180918] = "Avis de recherche : Thaelis l'Affameur",	-- Wanted: Thaelis the Hungerer
 	[181011] = "Journal du magistère Ternesoir",	-- Magister Duskwither's Journal
+	[181073] = "Chaudron parfumé",	-- Fragrant Cauldron
 	[181074] = "Butin de l'arène",	-- Arena Spoils
 	[181083] = "Possessions de Sothos et Jarien",	-- Sothos and Jarien's Heirlooms	--TODO: This was taken from classic Wowhead
 	[181147] = "Avis de recherche",	-- Wanted Poster
@@ -2834,6 +2836,7 @@ for key,value in pairs({
 	[358318] = "Portrait purotin de R. Suavel",	-- R. Suavel Dredger Portrait
 	[358319] = "Message de l’ensorceleur",	-- Sorceror's Note
 	[358382] = "Avis de recherche : Chélicère",	-- Wanted: Chelicera
+	[358399] = "Sac de six lieues",	-- Six-League Pack
 	[358531] = "Cache géante de trésors épiques",	-- Giant Cache of Epic Treasure
 	[358533] = "Fournitures oubliées",	-- Forgotten Supplies
 	[358855] = "Sac à dos de chute amortie endommagé",	-- Damaged Safe Fall Pack

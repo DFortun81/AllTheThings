@@ -962,6 +962,7 @@ for key,value in pairs({
 	[148504] = "Una lápida llamativa",	-- A Conspicuous Gravestone
 	[149036] = "Cofre de Marvon",	-- Marvon's Chest
 	[149502] = "Tesoro oculto del Vuelo Negro",	-- Hoard of the Black Dragonflight
+	[151286] = "Escrito sobre invocación kaldorei",	-- Kaldorei Tome of Summoning
 	[160836] = "Arca de reliquias",	-- Relic Coffer
 	[161495] = "Caja fuerte secreta",	-- Secret Safe
 	[161504] = "Un paquetito",	-- A Small Pack
@@ -1039,6 +1040,7 @@ for key,value in pairs({
 	[180794] = "Diario de Jandice Barov",	-- Journal of Jandice Barov
 	[180918] = "Se busca: Thaelis el Hambriento",	-- Wanted: Thaelis the Hungerer
 	[181011] = "Diario del magister Ocaso Marchito",	-- Magister Duskwither's Journal
+	[181073] = "Caldera apetitosa",	-- Fragrant Cauldron
 	[181074] = "Botín de la arena",	-- Arena Spoils	--TODO: This was taken from classic Wowhead
 	--TODO: [181083] = "Sothos and Jarien's Heirlooms",	-- Sothos and Jarien's Heirlooms
 	[181147] = "Cartel de Se busca",	-- Wanted Poster
@@ -2839,6 +2841,7 @@ for key,value in pairs({
 	[358318] = "Retrato de dragador de R. Suavel",	-- R. Suavel Dredger Portrait
 	[358319] = "Nota de hechicero",	-- Sorceror's Note
 	[358382] = "Se busca: Quelícera",	-- Wanted: Chelicera
+	[358399] = "Talega de seis leguas",	-- Six-League Pack
 	[358531] = "Alijo gigantesco de tesoro épico",	-- Giant Cache of Epic Treasure
 	[358533] = "Suministros olvidados",	-- Forgotten Supplies
 	[358855] = "Mochila de Caída segura dañada",	-- Damaged Safe Fall Pack

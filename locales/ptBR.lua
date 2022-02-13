@@ -958,6 +958,7 @@ for key,value in pairs({
 	[148504] = "Lápide Evidente",	-- A Conspicuous Gravestone
 	[149036] = "Baú do Marlon",	-- Marvon's Chest
 	[149502] = "Tesouro da Revoada Negra",	-- Hoard of the Black Dragonflight	--TODO: This was taken from classic Wowhead
+	[151286] = "Tomo Kaldorei da Evocação",	-- Kaldorei Tome of Summoning	--TODO: This was taken from classic Wowhead
 	[160836] = "Arca de Relíquia",	-- Relic Coffer
 	[161495] = "Cofre Secreto",	-- Secret Safe
 	[161504] = "Um Pacote Pequeno",	-- A Small Pack	--TODO: This was taken from classic Wowhead
@@ -1035,6 +1036,7 @@ for key,value in pairs({
 	[180794] = "Diário de Janice Barov",	-- Journal of Jandice Barov
 	[180918] = "Procura-se: Thaelis, o Famélico",	-- Wanted: Thaelis the Hungerer
 	[181011] = "Diário do Magíster Ocaso",	-- Magister Duskwither's Journal
+	[181073] = "Caldeirão Cheiroso",	-- Fragrant Cauldron
 	--TODO: [181074] = "Arena Spoils",	-- Arena Spoils
 	--TODO: [181083] = "Sothos and Jarien's Heirlooms",	-- Sothos and Jarien's Heirlooms
 	[181147] = "Cartaz de Procura-se",	-- Wanted Poster
@@ -2835,6 +2837,7 @@ for key,value in pairs({
 	[358318] = "Retrato do Dragador R. Suavão",	-- R. Suavel Dredger Portrait
 	[358319] = "Nota do Feiticeiro",	-- Sorceror's Note
 	[358382] = "Procura-se: Quelícera",	-- Wanted: Chelicera
+	[358399] = "Bolsa de Seis Léguas",	-- Six-League Pack
 	[358531] = "Baú Gigante de Tesouro Épico",	-- Giant Cache of Epic Treasure
 	[358533] = "Suprimentos Esquecidos",	-- Forgotten Supplies
 	[358855] = "Mochila de Queda Segura Danificada",	-- Damaged Safe Fall Pack

@@ -959,6 +959,7 @@ for key,value in pairs({
 	[148504] = "Ein verdächtiger Grabstein",	-- A Conspicuous Gravestone
 	[149036] = "Marvons Truhe",	-- Marvon's Chest
 	[149502] = "Hort des schwarzen Drachenschwarms",	-- Hoard of the Black Dragonflight
+	[151286] = "Kaldoreifoliant der Beschwörung",	-- Kaldorei Tome of Summoning
 	[160836] = "Reliktkasten",	-- Relic Coffer
 	[161495] = "Geheimsafe",	-- Secret Safe
 	[161504] = "Ein kleines Pack",	-- A Small Pack
@@ -1036,6 +1037,7 @@ for key,value in pairs({
 	[180794] = "Tagebuch von Jandice Barov",	-- Journal of Jandice Barov
 	[180918] = "GESUCHT: Thaelis der Manadurstige",	-- Wanted: Thaelis the Hungerer
 	[181011] = "Magister Nachtschimmers Tagebuch",	-- Magister Duskwither's Journal
+	[181073] = "Duftender Kessel",	-- Fragrant Cauldron
 	[181074] = "Arenabeute",	-- Arena Spoils
 	[181083] = "Sothos' und Jariens Erbstücke",	-- Sothos and Jarien's Heirlooms
 	[181147] = "Steckbrief",	-- Wanted Poster
@@ -2836,6 +2838,7 @@ for key,value in pairs({
 	[358318] = "Gräberporträt von R. Suavel",	-- R. Suavel Dredger Portrait
 	[358319] = "Notiz des Zauberers",	-- Sorceror's Note
 	[358382] = "Gesucht: Chelicera",	-- Wanted: Chelicera
+	[358399] = "Sechsmeilenrucksack",	-- Six-League Pack
 	[358531] = "Epischer Riesenschatz",	-- Giant Cache of Epic Treasure
 	[358533] = "Vergessene Vorräte",	-- Forgotten Supplies
 	[358855] = "Beschädigter Rucksack des sicheren Fallens",	-- Damaged Safe Fall Pack

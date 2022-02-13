@@ -958,6 +958,7 @@ for key, value in pairs({
 	[148504] = "明显的墓碑",	-- A Conspicuous Gravestone
 	[149036] = "玛尔冯的箱子",	-- Marvon's Chest
 	[149502] = "黑龙的财宝",	-- Hoard of the Black Dragonflight	--TODO: This was taken from classic Wowhead
+	[151286] = "卡多雷召唤宝典",	-- Kaldorei Tome of Summoning	--TODO: This was taken from classic Wowhead
 	[160836] = "古物宝库",	-- Relic Coffer
 	[161495] = "秘密保险箱",	-- Secret Safe
 	[161504] = "小背包",	-- A Small Pack	--TODO: This was taken from classic Wowhead
@@ -1035,6 +1036,7 @@ for key, value in pairs({
 	[180794] = "詹迪斯·巴罗夫的日记",	-- Journal of Jandice Barov	--TODO: This was taken from classic Wowhead
 	[180918] = "通缉：饥饿者泰里斯",	-- Wanted: Thaelis the Hungerer
 	[181011] = "魔导师达斯维瑟的日记",	-- Magister Duskwither's Journal	--TODO: This was manually translated
+	--TODO: [181073] = "Fragrant Cauldron",	-- Fragrant Cauldron
 	[181074] = "竞技场的泥土",	-- Arena Spoils	--TODO: This was taken from classic Wowhead
 	--TODO: [181083] = "Sothos and Jarien's Heirlooms",	-- Sothos and Jarien's Heirlooms
 	[181147] = "通缉布告",	-- Wanted Poster
@@ -2835,6 +2837,7 @@ for key, value in pairs({
 	--TODO: [358318] = "R. Suavel Dredger Portrait",	-- R. Suavel Dredger Portrait
 	[358319] = "巫师的笔记",	-- Sorceror's Note
 	[358382] = "通缉：螫肢",	-- Wanted: Chelicera
+	[358399] = "六里包",	-- Six-League Pack
 	[358531] = "巨大的史诗财宝箱",	-- Giant Cache of Epic Treasure
 	[358533] = "被遗忘的补给品",	-- Forgotten Supplies
 	[358855] = "损坏的安全降落包",	-- Damaged Safe Fall Pack
