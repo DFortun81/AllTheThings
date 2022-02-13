@@ -33,7 +33,7 @@ app.L = {
 	["KNOWN_BY"] = "Known by ";
 	["REQUIRES"] = "Requires";
 	["RACE_LOCKED"] = "Race Locked";
-	["PLEASE_REPORT_MESSAGE"] = ": Please report this to the ATT Discord in #errors! Thanks!";
+	["PLEASE_REPORT_MESSAGE"] = ": Please report this to the ATT Discord in #retail-errors! Thanks!";
 	["REPORT_TIP"] = "\n(Ctrl+C to copy multiline report to your clipboard)";
 	["NOT_AVAILABLE_IN_PL"] = "Not available in Personal Loot.";
 	["MARKS_OF_HONOR_DESC"] = "Marks of Honor must be viewed in a Popout window to see all of the normal 'Contains' content.\n(Type '/att ' in chat then Shift-Click to link the item)\n\n|cFFfe040fAfter purchasing and using an ensemble, relogging & a forced ATT refresh (in this order)\nmay be required to register all the items correctly.|r";
@@ -591,7 +591,7 @@ app.L = {
 	["REQUIRES_LEVEL"] = "Requires Level";
 	["SECRETS_HEADER"] = "Secrets";
 	["LIMITED_QUANTITY"] = "This has a limited quantity and may not always be present on the vendor.";
-	["SOURCE_ID_MISSING"] = "Please report this Item and where it was acquired to the ATT Discord in #errors!";
+	["SOURCE_ID_MISSING"] = "Please report this Item and where it was acquired to the ATT Discord in #retail-errors!";
 
 	-- Filter Text
 	["ACHIEVEMENT_ID"] = "Achievement ID";

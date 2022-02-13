@@ -8,7 +8,10 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		un(REMOVED_FROM_GAME, ach(430)),	-- Amani War Bear
 		ach(4626),			-- And I'll Form the Head!
 		ach(885),			-- Ashes of Al'ar
-		un(LOVE_IS_IN_THE_AIR, ach(4627)),	-- X-45 Heartbreaker
+		un(LOVE_IS_IN_THE_AIR, ach(4627, {	-- X-45 Heartbreaker
+			["provider"] = { "i", 50250 },	-- X-45 Heartbreaker
+			["timeline"] = { "added 3.3.0" },
+		})),
 		un(REMOVED_FROM_GAME, ach(2316, {	-- Brutal Nether Drake
 			un(REMOVED_FROM_GAME, i(43516)),	-- Brutal Nether Drake
 		})),

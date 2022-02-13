@@ -10414,12 +10414,81 @@ local mountFields = {
 	["collectible"] = function(t)
 		return app.CollectibleMounts;
 	end,
+	["costCollectibles"] = function(t)
+		return cache.GetCachedField(t, "costCollectibles");
+	end,
+	["collectibleAsCost"] = function(t)
+		local id = t.itemID;
+		if id then
+			if not t.costCollectibles then
+				-- search by plain itemID only
+				local results = app.SearchForField("itemIDAsCost", id);
+				app.PrintDebug("collectibleAsCost",id,results and #results)
+				if results and #results > 0 then
+					-- setup the costCollectibles initially
+					app.PrintDebug("> costs",t.hash,t.modItemID)
+					local costCollectibles, collectible = {};
+					cache.SetCachedField(t, "costCollectibles", costCollectibles);
+					local canBeCollectible = app.PreCheckCollectible(t);
+					for _,ref in pairs(results) do
+						-- different itemID
+						if ref.itemID ~= id and
+							-- is not a parent of the cost group itself
+							not GetRelativeField(t, "parent", ref)
+							then
+							-- track this item as a cost collectible
+							tinsert(costCollectibles, ref);
+							if canBeCollectible then
+								collectible = collectible or app.CheckCollectible(ref);
+							end
+						end
+					end
+					app.PrintDebug("< costs")
+					-- This instance of the Thing (t) is not actually collectible for this character if it is under a saved, non-repeatable parent
+					if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved and not t.parent.repeatable then return false; end
+					return collectible;
+				else
+					cache.SetCachedField(t, "costCollectibles", app.EmptyTable);
+				end
+			else
+				-- This instance of the Thing (t) is not actually collectible for this character if it is under a saved, non-repeatable parent
+				if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved and not t.parent.repeatable then return; end
+				-- Make sure this thing can actually be collectible
+				if not app.PreCheckCollectible(t) then return; end
+				-- Use the common collectibility check logic
+				local collectible;
+				for _,ref in pairs(t.costCollectibles) do
+					collectible = app.CheckCollectible(ref);
+					if collectible then return true; end
+				end
+			end
+		end
+	end,
 	["collected"] = function(t)
 		if ATTAccountWideData.Spells[t.spellID] then return 1; end
 		if IsSpellKnown(t.spellID) or (t.questID and IsQuestFlaggedCompleted(t.questID)) then
 			ATTAccountWideData.Spells[t.spellID] = 1;
 			return 1;
 		end
+	end,
+	["collectedAsCost"] = function(t)
+		local collectibles = t.costCollectibles;
+		if not collectibles then return; end
+		-- Make sure this thing can actually be collectible
+		if not app.PreCheckCollectible(t) then return; end
+		local collectible, collected;
+		for _,ref in pairs(collectibles) do
+			-- Use the common collectibility check logic
+			collectible, collected = app.CheckCollectible(ref);
+			if collectible and not collected then return false; end
+		end
+		return true;
+	end,
+	["costTotal"] = function(t)
+		return t.collectibleAsCost and 1 or 0;
+	end,
+	["costProgress"] = function(t)
+		return t.collectedAsCost and 1 or 0;
 	end,
 	["b"] = function(t)
 		return (t.parent and t.parent.b) or 1;
@@ -10436,23 +10505,14 @@ local mountFields = {
 	["name"] = function(t)
 		return cache.GetCachedField(t, "name", CacheInfo);
 	end,
-	-- ["modItemIDForItem"] = function(t)
-	-- 	return t.itemID;	-- mounts ignore modID even if applied in source
-	-- end,
 	["tsm"] = function(t)
 		if t.itemID then return string.format("i:%d", t.itemID); end
 		if t.parent and t.parent.itemID then return string.format("i:%d", t.parent.itemID); end
 	end,
-	-- ["linkForItem"] = function(t)
-	-- 	return select(2, GetItemInfo(t.itemID)) or select(1, GetSpellLink(t.spellID));
-	-- end,
 };
 app.BaseMount = app.BaseObjectFields(mountFields, "BaseMount");
 
 local fields = RawCloneData(mountFields);
--- fields.modItemID = mountFields.modItemIDForItem;
--- fields.link = mountFields.linkForItem;
--- fields.tsm = mountFields.tsmForItem;
 app.BaseMountWithItemID = app.BaseObjectFields(fields, "BaseMountWithItemID");
 app.CreateMount = function(id, t)
 	-- if t and rawget(t, "itemID") then
@@ -17448,6 +17508,9 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 								elseif row.expanded then
 									ExpandGroupsRecursively(row, false, true);
 								end
+							-- Zone Drops should also be expanded within instances
+							elseif row.headerID == 0 then
+								if not row.expanded then ExpandGroupsRecursively(row, true, true); expanded = true; end
 							end
 						end
 					end

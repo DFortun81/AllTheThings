@@ -518,6 +518,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					},
 				}),
 			}),
+			o(358399, {	-- Six-League Pack
+				["coord"] = { 58.6, 84.8, REVENDRETH },
+				["g"] = {
+					i(183789),	-- Six-League Pack
+				},
+			}),
 			o(337241, {	-- Stashed Equipment
 				["description"] = "Opening a Crypt Door with the Atonement Crypt Key has a chance to reveal this treasure.",
 				["sourceQuests"] = { 57928 },	-- Atonement Crypt Key

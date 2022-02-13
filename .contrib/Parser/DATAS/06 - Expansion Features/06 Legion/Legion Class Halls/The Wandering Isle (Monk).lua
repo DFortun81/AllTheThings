@@ -812,6 +812,7 @@ _.HiddenQuestTriggers = {
 	q(43067),	-- Monk Order Hall - Tracking Quest: Vrykul Scouting 3 — during "Tracking the Tideskorn"
 	q(43068),	-- Monk Order Hall - Tracking Quest: Vrykul Scouting 4 — during "Tracking the Tideskorn"
 	q(43069),	-- Monk Order Hall - Tracking Quest: Vrykul Scouting 5 — during "Tracking the Tideskorn"
+	q(43662),	-- Unlock Hidden Mistweaver appearance
 	q(43970),	-- Monk Order Hall - Brewmaster Chosen
 	q(43971),	-- Monk Order Hall - Windwalker Chosen
 	q(43972),	-- Monk Order Hall - Mistweaver Chosen

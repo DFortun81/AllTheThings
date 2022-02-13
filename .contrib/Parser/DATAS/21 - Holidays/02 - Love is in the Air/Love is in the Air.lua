@@ -204,9 +204,6 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 						["lvl"] = 98,
 						-- #endif
 						["groups"] = {
-							ach(4627, {	-- X-45 Heartbreaker
-								["timeline"] = { "added 3.3.0" },
-							}),
 							i(50250, {	-- X-45 Heartbreaker
 								["timeline"] = { "added 3.3.0" },
 							}),
@@ -236,12 +233,12 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 							i(50741, {	-- Vile Fumigator's Mask
 								["timeline"] = { "added 3.3.0" },
 							}),
-							i(50471, {	-- The Heartbreaker
-								["timeline"] = { "added 3.3.0" },
-							}),
+							-- i(50471, {	-- The Heartbreaker	-- doesn't seem to be possible from the lower-level box
+							-- 	["timeline"] = { "added 3.3.0" },
+							-- }),
 						},
 					}),
-					
+
 					-- Legion+
 					i(143908, {	-- Choker of the Pure Heart [Level 110]
 						["timeline"] = { "added 7.0.1" },
@@ -258,7 +255,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 					i(143905, {	-- Winking Eye of Love [Level 110]
 						["timeline"] = { "added 7.0.1" },
 					}),
-					
+
 					-- Warlords of Draenor
 					i(117369, {	-- Choker of the Pure Heart [Level 100]
 						["timeline"] = { "added 6.0.1", "removed 7.0.1" },
@@ -275,7 +272,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 					i(117367, {	-- Winking Eye of Love [Level 100]
 						["timeline"] = { "added 6.0.1", "removed 7.0.1" },
 					}),
-					
+
 					-- Mists of Pandaria
 					i(93394, {	-- Choker of the Pure Heart [Level 90]
 						["timeline"] = { "added 5.0.1", "removed 6.0.1" },
@@ -292,7 +289,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 					i(93392, {	-- Winking Eye of Love [Level 90]
 						["timeline"] = { "added 5.0.1", "removed 6.0.1" },
 					}),
-					
+
 					-- Cata
 					i(68176, {	-- Heartbreak Charm [Level 85]
 						["timeline"] = { "added 4.0.1", "removed 5.0.1" },
@@ -309,7 +306,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 					i(68175, {	-- Winking Eye of Love [Level 85]
 						["timeline"] = { "added 4.0.1", "removed 5.0.1" },
 					}),
-					
+
 					-- Wrath
 					i(51808, {	-- Choker of the Pure Heart [Level 80]
 						["timeline"] = { "added 3.0.1", "removed 4.0.1" },
@@ -1653,7 +1650,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 					["_drop"] = { "f" },
 					["races"] = HORDE_ONLY,
 				}),
-				
+
 				-- Darnassus
 				i(22133, {	-- Darnassus Gift Collection
 					["cost"] = {
@@ -1717,7 +1714,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 					["_drop"] = { "f", "spellID" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				
+
 				-- Ironforge
 				i(22132, {	-- Ironforge Gift Collection
 					["cost"] = {
@@ -1781,7 +1778,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 					["_drop"] = { "f", "spellID" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				
+
 				-- Stormwind City
 				i(22131, {	-- Stormwind Gift Collection
 					["cost"] = {
@@ -1845,7 +1842,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 					["_drop"] = { "f", "spellID" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				
+
 				-- Orgrimmar
 				i(22136, {	-- Orgrimmar Gift Collection
 					["cost"] = {
@@ -1909,7 +1906,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 					["_drop"] = { "f", "spellID" },
 					["races"] = HORDE_ONLY,
 				}),
-				
+
 				-- Thunder Bluff
 				i(22135, {	-- Thunder Bluff Gift Collection
 					["cost"] = {
@@ -1973,7 +1970,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 					["_drop"] = { "f", "spellID" },
 					["races"] = HORDE_ONLY,
 				}),
-				
+
 				-- Undercity
 				i(22134, {	-- Undercity Gift Collection
 					["cost"] = {

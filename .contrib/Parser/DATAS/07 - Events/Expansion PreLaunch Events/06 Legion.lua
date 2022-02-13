@@ -194,28 +194,6 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 7.0.3.22248", "
 				}),
 			}),
 			n(QUESTS, {
-				q(44421, {	-- Anomalous Anomalies
-					["provider"] = { "n", 113986 },	-- Archmage Khadgar
-					["sourceQuests"] = { 44182 },	-- City Under Siege
-				}),
-				q(44500, {	-- Author! Author!
-					["provider"] = { "n", 113986 },	-- Archmage Khadgar
-					["sourceQuests"] = { 44421 },	-- Author! Author!
-				}),
-				q(40717, {	-- Calling of the Council
-					["provider"] = { "n", 114550 },	-- Khadgar's Upgraded Servant
-					["races"] = ALLIANCE_ONLY,
-					["description"] = "You can start this quest by going to Dalaran (Legion) and talking to Archivist Elysiana in The Violet Citadel.",
-				}),
-				q(40718, {	-- Calling of the Council
-					["provider"] = { "n", 114550 },	-- Khadgar's Upgraded Servant
-					["races"] = HORDE_ONLY,
-					["description"] = "You can start this quest by going to Dalaran (Legion) and talking to Archivist Elysiana in The Violet Citadel.",
-				}),
-				q(44182, {	-- City Under Siege
-					["provider"] = { "n", 114561 },	-- Khadgar's Upgraded Servant
-					["sourceQuests"] = { 40755 },	-- Hiding in the Stacks
-				}),
 				q(43298),	-- Defend (Azshara)
 				q(43291),	-- Defend (Dun Morogh)
 				q(43296),	-- Defend (Hillsbrad Foothills)
@@ -226,16 +204,6 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 7.0.3.22248", "
 				q(43286),	-- Demon Commander (Hillsbrad Foothills)
 				-- try to find ID for Demon Commander (Northern Barrens)
 				q(43243),	-- Demon Commander (Tanaris)
-				q(40755, {	-- Hiding in the Stacks
-					["provider"] = { "n", 101547 },	-- Archmage Khadgar
-					["sourceQuests"] = { 42970 },	-- The Diamond King
-					["groups"] = {
-						i(139905),	-- Gloves of thee Arcane Purge
-						i(139934),	-- Handguards of Demonsbane
-						i(139965),	-- Grips of the Fel Destroyer
-						i(139997),	-- Gauntlets of Legion Devastation
-					},
-				}),
 				q(44184, {	-- In the Blink of an Eye
 					["provider"] = { "n", 114562 },	-- Khadgar's Upgraded Servant
 					["sourceQuests"] = { 44500 },	-- Author! Author!
@@ -258,10 +226,6 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 7.0.3.22248", "
 				q(43290),	-- Repel (Northern Barrens)
 				q(43294),	-- Repel (Tanaris)
 				q(43242),	-- Demon Commander (Westfall)
-				q(42970, {	-- The Diamond King
-					["provider"] = { "n", 113655 },	-- Brann Bronzebeard
-					["sourceQuests"] = { 40717, 40718 },	-- Calling of the Council
-				}),
 			}),
 			n(RARES, {
 				n(112527, {	-- Doomsayer
