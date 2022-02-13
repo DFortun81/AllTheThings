@@ -324,6 +324,7 @@ root("Zones", m(KALIMDOR, {
 				i(34486),	-- Old Crafty
 			}),
 			prof(INSCRIPTION, {
+				--[[
 				n(46716, {	-- Nerog <Inscription Trainer> "TEST"
 					["coord"] = { 55.1, 55.9, ORGRIMMAR },
 					["g"] = {
@@ -434,6 +435,7 @@ root("Zones", m(KALIMDOR, {
 						}),
 					},
 				}),
+				--]]
 				n(QUESTS, {
 					q(27686, {	-- Forged Documents
 						["provider"] = { "i", 63276 },	-- Forged Documents
