@@ -1124,6 +1124,14 @@ root("Zones", m(KALIMDOR, {
 	}),
 }));
 
+root("HiddenQuestTriggers", {
+	m(KALIMDOR, {
+		m(ORGRIMMAR, {
+			q(54948),	-- something in orgrimmar on lvl 60 necrolord goblin warlock
+		}),
+	}),
+});
+
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(CATA_TIER, {
 		n(ARMOR, {

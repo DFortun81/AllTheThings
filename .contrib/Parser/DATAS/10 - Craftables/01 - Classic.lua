@@ -826,10 +826,10 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(12212),	-- Jungle Stew
 			i(5472),	-- Kaldorei Spider Kabob
 			i(5480, {	-- Lean Venison
-				["timeline"] = { "removed 4.0.3.10000" },
+				["timeline"] = { "removed 4.0.3.10000", "added 9.1" },
 			}),
 			i(12209, {	-- Lean Wolf Steak
-				["timeline"] = { "removed 5.0.4.10000" },
+				["timeline"] = { "removed 5.0.4.10000", "added 9.1" },
 			}),
 			-- #if AFTER WOD
 			applyclassicphase(WOD_PHASE_ONE, i(126934)),	-- Lemon Herb Filet
