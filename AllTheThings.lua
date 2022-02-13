@@ -990,7 +990,6 @@ end
 					end
 				end
 			end
-			app.print("Refreshed Player's Learned Professions");
 		end
 		return cache;
 	end
