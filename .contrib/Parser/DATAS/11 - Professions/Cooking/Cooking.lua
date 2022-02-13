@@ -22,7 +22,7 @@ profession(COOKING, {
 				},
 				{
 					["name"] = "Big Bear Steak",
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3.10000", "timewalking 9.1" },
 					["recipeID"] = 3397
 				},
 				{
@@ -213,14 +213,12 @@ profession(COOKING, {
 				},
 				{
 					["name"] = "Lean Venison",
-				--	["timeline"] = { "removed 4.0.3.10000" },
-				--	Added in 9.1
+					["timeline"] = { "removed 4.0.3.10000", "timewalking 9.1" },
 					["recipeID"] = 6419
 				},
 				{
 					["name"] = "Lean Wolf Steak",
-				--	["timeline"] = { "removed 5.0.4.10000" },
-				-- 	Added in 9.1
+					["timeline"] = { "removed 5.0.4.10000", "timewalking 9.1" },
 					["recipeID"] = 15853
 				},
 				-- #if AFTER WOD
