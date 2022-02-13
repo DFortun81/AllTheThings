@@ -153,6 +153,7 @@ select(2, ...).ObjectNames = {
 	[180794] = "Journal of Jandice Barov",
 	[180918] = "Wanted: Thaelis the Hungerer",
 	[181011] = "Magister Duskwither's Journal",
+	[181073] = "Fragrant Cauldron",
 	[181074] = "Arena Spoils",
 	[181083] = "Sothos and Jarien's Heirlooms",
 	[181147] = "Wanted Poster",
