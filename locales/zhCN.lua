@@ -24,7 +24,7 @@ local L = app.L;
 	L.KNOWN_BY = "已知 ";
 	L.REQUIRES = "要求";
 	L.RACE_LOCKED = "种族锁定";
-	L.PLEASE_REPORT_MESSAGE = "：请把错误报告给 ATT Discord 的 #errors！谢谢！";
+	L.PLEASE_REPORT_MESSAGE = "：请把错误报告给 ATT Discord 的 #retail-errors！谢谢！";
 	L.REPORT_TIP = "\n（Ctrl+C 将多行报告复制到剪贴板）";
 	L.NOT_AVAILABLE_IN_PL = "在个人拾取中不可用。";
 	L.MARKS_OF_HONOR_DESC = "荣耀印记必须在弹出窗口中查看才能看到所有正常的'包含'内容。\n(在聊天中输入'/att' 然后 Shift-点击链接的物品)\n\n|cFFfe040f之后购买和一起使用，重新登录和强制 ATT 刷新（按此顺序）\n可能需要正确注册所有物品。|r";
@@ -551,7 +551,7 @@ local L = app.L;
 		L.REQUIRES_LEVEL = "需要等级";
 		L.SECRETS_HEADER = "解密";
 		L.LIMITED_QUANTITY = "此物品有数量限制，在商人处并非总是可见。";
-		L.SOURCE_ID_MISSING = "请在 #errors 中向 ATT Discord 报告此物品及其获取地点！";
+		L.SOURCE_ID_MISSING = "请在 #retail-errors 中向 ATT Discord 报告此物品及其获取地点！";
 
 	-- Filter Text
 		L.ACHIEVEMENT_ID = "成就 ID";
