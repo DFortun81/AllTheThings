@@ -1769,6 +1769,24 @@ _.Zones =
 		}),
 	}),
 };
+root("HiddenQuestTriggers",{
+	tier(MOP_TIER, {
+		q(29702),	-- Gorrok TRACKING
+		q(30486),	-- Jade Dragon Phased Terrain Tracking - triggers after placing the Cho family heirloom during "Last Piece of the Puzzle" (questID 30485 & 31362)
+		q(29695),	-- Kiryn TRACKING
+		q(31195),	-- Ooked the Dooker - triggers after killing Dook Ookem during "Lay of the Land" (questID 29822)
+		q(31969),	-- Priorities Tracking - triggers during "Priorities" (questID 31772)
+		q(29697),	-- Rivett TRACKING
+		q(29704),	-- Shokia TRACKING
+		q(29368),	-- Tracking - triggeres after completing the criteria for "Acid Rain" (questID 29827)
+		q(31829),	-- Tracking Event: Alliance Gunship Leaves — triggers after turning in "The Pearlfin Situation" and "Road Rations" (questID 29883 & 29885)
+		q(30165),	-- Tracking Event: Picked Blue Serpent - picked the blue serpent egg during "Choosing the One" (questID 30138)
+		q(30167),	-- Tracking Event: Picked Gold Serpent - picked the gold serpent egg during "Choosing the One" (questID 30138)
+		q(30166),	-- Tracking Event: Picked Green Serpent - picked the green serpent egg during "Choosing the One" (questID 30138)
+		q(29604),	-- Tracking Event: Saw East Temple Arrival Cinematic
+		q(29884),	-- Tracking Event: Spies Leave — triggers after turning in "The Pearlfin Situation" and "Road Rations" (questID 29883 & 29885)
+	}),
+});		
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(MOP_TIER, {
 		n(ARMOR, {

@@ -1106,8 +1106,12 @@ root("HiddenQuestTriggers", {
 		q(33151),	-- Saw scout Valdez arrive in Twilight Glade
 		q(37451),	-- See Qiana Moonshadow (Follower Mission Turn in) - triggers while on "Qiana Moonshadow" (questID 34646)
 		q(37674),	-- Shadowmoon Valley 6.0:JP3 - Gloomshade Grove - Tracking Quest - See Shelly Hamby (Game of Thorns) - after killing King Deathbloom
+		q(31155),	-- Tracking Event - Saved Arekk - triggers during "A Matter of Life and Death" (questID 33419)
+		q(31153),	-- Tracking Event - Saved Diaani - triggers during "A Matter of Life and Death" (questID 33419)
+		q(31154),	-- Tracking Event - Saved Zuulo - triggers during "A Matter of Life and Death" (questID 33419)
 		q(36493),	-- Tracking Quest: Can Open Othaar's Door
 		q(36907),	-- Tracking Quest: Defense of Karabor - Celebration Finished
+		q(33903),	-- Tracking Quest: Romuul & Yrel Leave for Teluuna
 		q(33839),	-- Tracking Quest: Saw Naaru Purified
 		q(34622),	-- Tracking Quest: Saw Ner'zhul Leave
 		q(34600),	-- Tracking Quest: Saw Vorka, Rangari Leave
@@ -1118,8 +1122,8 @@ root("HiddenQuestTriggers", {
 		q(33166),	-- Tracking Quest: The Root of Darkness - Stone 4
 		q(34896),	-- Tracking Quest: Stealthed Rangari - triggers when approaching Rangari Navra (43.7, 51.7)
 		q(35629),	-- Vindicator Onaala - Vindicator Onaala selected during "Friend of the Exarchs" (questID 34788)
-		q(33550),	-- [NOTUSED]Vignette: Iron Horde Napmaster - triggers when looting The Crystal Blade of Torvath
-		q(49544),	-- triggers after handing in Hero's Call: Shadowmoon Valley! (questID 49562)
+		q(33550),	-- [NOTUSED]Vignette: Iron Horde Napmaster - triggers when looting "The Crystal Blade of Torvath"
+		q(49544),	-- triggers after handing in "Hero's Call: Shadowmoon Valley!" (questID 49562)
 	}),
 });
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {

@@ -1442,3 +1442,21 @@ _.Zones =
 		}),
 	}),
 };
+root("HiddenQuestTriggers",{
+	tier(MOP_TIER, {
+		q(30453),	-- Binan Village Intro Event Tracking Event - triggeres when flying into Binan village through the Ancient Passage on mount
+		q(31310),	-- Interrogation Tracking - triggers during "Revelations" (questID 30946)
+		q(30854),	-- Lha-Po Tracking Quest - triggers after turning in "One Traveler's Misfortune" (questID 30683)
+		q(31205),	-- Lorewalker Cho Tracking Quest - triggers after turning in "Fisherman's Tale" (questID 30935)
+		q(31300),	-- Shomi Beach Tracking - triggeres shortly after killing Captain Ripflesh during "Justice" (questID 30805)
+		q(31299),	-- Shomi Ruins Tracking - triggers when you walk into the Zandalari Vanguard Ruins / Zouchin Village
+		q(31301),	-- Shomi Strand Tracking - triggers when you find Sage Liao in Zouchin Strand
+		q(31463),	-- Spirit of Anger Defeated - triggers after second test during "A Celestial Experience" (questID 31394 & 31395)
+		q(31462),	-- Spirit of Violence Defeated - triggers after first test during "A Celestial Experience" (questID 31394 & 31395)
+		q(31461),	-- Spoke to Xuen - triggers during "A Celestial Experience" (questID 31394 & 31395)
+		q(31464),	-- Opposing Faction Leader Defeated - triggers after third test during "A Celestial Experience" (questID 31394 & 31395)
+		q(30647),	-- Tracking Quest: Opened the Golden Valley - triggers when the gates to the Vale of Eternal Blossom are opened
+		q(31807),	-- Tracking Quest: Opened the Golden Valley II - triggers after the dialog finishes with the 4 celestials at the gates
+		q(31298),	-- Zouchin Village - Intro Tracking
+	}),
+});

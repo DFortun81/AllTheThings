@@ -394,7 +394,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(31654),	-- Doors to Vale OPEN
 				q(29817),	-- Drunken Tigers
 				q(31600),	-- Enable Scenarios
-				q(31035),	-- Enemies Below
 				q(30886),	-- Example Pandaren Race Quest
 				q(30609),	-- Exit Strategy
 				q(29728),	-- Explosive Evidence
@@ -437,9 +436,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(30316),	-- Longshot
 				q(30377),	-- Minimum Safe Distance
 				q(31655),	-- Mishi Tracking 1
-				q(31530),	-- Mission: The Hozen Dozen
 				q(30009),	-- Muster of Fort Grookin
 				q(29696),	-- My Stars!
+				q(33019),	-- NC S1 Q2
+				q(33023),	-- NC S1 Q6
+				q(33025),	-- NC S2 Q2
 				q(29814),	-- Need a Chaser
 				q(29897),	-- No Such Thing As A Free Lunch
 				q(30198),	-- NOT USED
@@ -503,7 +504,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(29693),	-- The General's Edge
 				q(31017),	-- The Humble Grummle
 				q(29720),	-- The Jade Witch
-				q(31016),	-- The Lorewalkers
 				q(29557),	-- The Mission Continues
 				q(29819),	-- The New Master
 				q(31533),	-- The Perfect Feather
@@ -543,29 +543,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(29729, { ["_drop"] = { "g" }, }), -- Without a Trace
 				q(29773),	-- Wugou, the Spirit of Earth
 				q(29886),	-- Zen Healing
-				q(31445),	-- zzOld
-				q(30553),	-- [DNT] A Curious Crystal TRACKER
-				q(30557),	-- [DNT] A Captured Banner TRACKER
-				q(30556),	-- [DNT] A Wondrous Weapon TRACKER
-				q(30554),	-- [DNT] An Exotic Egg TRACKER
-				q(30555),	-- [DNT] An Intriguing Grimoire TRACKER
-				q(30539),	-- [DNT] Baby Needs Two Pair of Shoes TRACKER
-				q(30551),	-- [DNT] Banners, Banners Everywhere! TRACKER
-				q(30548),	-- [DNT] Eyes on the Prizes TRACKER
-				q(30545),	-- [DNT] Herbs for Healing TRACKER
-				q(30547),	-- [DNT] Keeping the Faire Sparkling TRACKER
-				q(30543),	-- [DNT] Putting the Carnies Back Together Again TRACKER
-				q(30540),	-- [DNT] Putting the Crunch in the Frog TRACKER
-				q(30541),	-- [DNT] Putting Trash to Good Use TRACKER
-				q(30549),	-- [DNT] Rearm, Reuse, Recycle TRACKER
-				q(30544),	-- [DNT] Spoilin' for Salty Sea Dogs TRACKER
-				q(30550),	-- [DNT] Tan My Hide TRACKER
-				q(30542),	-- [DNT] Talkin' Tonks TRACKER
-				q(30559),	-- [DNT] The Captured Journal TRACKER
-				q(30558),	-- [DNT] The Enemy's Insignia TRACKER
-				q(30552),	-- [DNT] The Master Strategist TRACKER
-				q(30560),	-- [DNT] Tools of Divination TRACKER
-				q(30546),	-- [DNT] Writing the Future TRACKER
 				q(31763),	-- [KILL GIANT SERPENT] [GET RID OF THIS?]
 				q(31764),	-- [PUT OUT THE FIRES]
 				q(31759),	-- [RESCUE GOLDEN LOTUS SQUAD] [GET RID OF THIS?]
@@ -629,7 +606,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(35107, { ["name"] = "Book of Alchemical Secrets", }),	-- Book of Alchemical Secrets
 				q(35855, { ["name"] = "Book of Draenic Cures", }),	-- Book of Draenic Cures
 				q(35854, { ["name"] = "Botanic Cure Guide", }),	-- Botanic Cure Guide
-				q(33111, { ["name"] = "Bounty: Twisted Ancient", }),	-- Bounty: Twisted Ancient
 				q(35786, { ["name"] = "Bronze Victory", }),	-- Bronze Victory
 				q(37305, { ["name"] = "Bronze Victory", }),	-- Bronze Victory
 				q(35571, { ["name"] = "Brutality in the Basin, Violence in the Valley", }),	-- Brutality in the Basin, Violence in the Valley

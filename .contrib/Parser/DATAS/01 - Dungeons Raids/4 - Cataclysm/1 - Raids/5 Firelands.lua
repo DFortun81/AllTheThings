@@ -652,6 +652,7 @@ root("Instances", tier(CATA_TIER, {
 							i(175158, {	-- Flames of Fury (Bag of Tricks addition)
 								["races"] = { VULPERA },
 								["questID"] = 59029,
+								--["questID"] = 59030,	-- secondary questID, sorted in HQTs
 								["timeline"] = { "added 8.3.0.33115" },
 							}),
 							i(71798),	-- Sho'ravon, Greatstaff of Annihilation
@@ -949,6 +950,7 @@ root("Instances", tier(CATA_TIER, {
 							i(175158, {	-- Flames of Fury (Bag of Tricks addition)
 								["races"] = { VULPERA },
 								["questID"] = 59029,
+								--["questID"] = 59030,	-- secondary questID, sorted in HQTs
 								["timeline"] = { "added 8.3.0.33115" },
 							}),
 							i(71797),	-- Sho'ravon, Greatstaff of Annihilation

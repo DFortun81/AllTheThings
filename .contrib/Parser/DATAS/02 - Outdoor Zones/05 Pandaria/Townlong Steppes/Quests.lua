@@ -990,7 +990,20 @@ _.Zones =
 		}),
 	}),
 };
-
-root("HiddenQuestTriggers", {
-	q(31214),	-- FLAG - Chose Nurong
+root("HiddenQuestTriggers",{
+	tier(MOP_TIER, {
+		q(31123),	-- Chose Arms Warrior
+		q(31124),	-- Chose Brewmaster
+		q(31050),	-- Chose Fire Mage
+		q(31051),	-- Chose Frost Mage
+		q(31052),	-- Chose Priest
+		q(31122),	-- Chose Prot Warrior
+		q(31214),	-- FLAG - Chose Nurong
+		q(31607),	-- Tracking Event: Finished Spiteful Spirits & Hatred Becomes Us
+		q(31053),	-- Tracking Event: Started Shado-Pan Dailies
+		q(31125),	-- Unlocked Chao
+		q(31126),	-- Unlocked Lao-Chen
+		q(31054),	-- Unlocked Yalia Sagewhisper
+		--q(31486),	-- Looting a Bag of Wu Kao Supplies - WRONG QUEST ID
+	}),
 });

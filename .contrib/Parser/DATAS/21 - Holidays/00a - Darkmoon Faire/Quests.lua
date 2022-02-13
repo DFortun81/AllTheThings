@@ -1096,10 +1096,54 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 		}),
 	}),
 })));
-
+root("HiddenQuestTriggers",{
+	tier(MOP_TIER, {
+		q(30557),	-- [DNT] A Captured Banner TRACKER - triggers after completing A Captured Banner (questID 29456)
+		q(30553),	-- [DNT] A Curious Crystal TRACKER - triggers after completing A Curious Crystal (questID 29443)
+		q(30562),	-- [DNT] A Fizzy Fusion TRACKER - triggers after completing A Fizzy Fusion (questID 29506)
+		q(30556),	-- [DNT] A Wondrous Weapon TRACKER - triggers after completing A Wondrous Weapon (questID 29446)
+		q(30554),	-- [DNT] An Exotic Egg TRACKER - triggers after completing An Exotic Egg (questID 29444)
+		q(30555),	-- [DNT] An Intriguing Grimoire TRACKER - triggers after completing An Intriguing Grimoire (questID 29445)
+		q(30539),	-- [DNT] Baby Needs Two Pair of Shoes TRACKER - triggers after completing Baby Needs Two Pair of Shoes (questID 29508)
+		q(30551),	-- [DNT] Banners, Banners Everywhere! TRACKER - triggers after completing Banners, Banners Everywhere! (questID 29520)
+		q(30548),	-- [DNT] Eyes on the Prizes TRACKER - triggers after completing Eyes on the Prizes (questID 29517)
+		q(30561),	-- [DNT] Fun for the Little Ones TRACKER - triggers after completing Fun For the Little Ones (questID 29507)
+		q(30545),	-- [DNT] Herbs for Healing TRACKER - triggers after completing Herbs for Healing (questID 29514)
+		q(30547),	-- [DNT] Keeping the Faire Sparkling TRACKER - triggers after completing Keeping the Faire Sparkling (questID 29516)
+		q(30543),	-- [DNT] Putting the Carnies Back Together Again TRACKER
+		q(30540),	-- [DNT] Putting the Crunch in the Frog TRACKER - triggers after completing Putting the Crunch in the Frog (questID 29509)
+		q(30541),	-- [DNT] Putting Trash to Good Use TRACKER - triggers after completing Putting Trash to Good Use (questID 29510)
+		q(30544),	-- [DNT] Spoilin' for Salty Sea Dogs TRACKER - triggers after completing Spoilin' for Salty Sea Dogs (questID 29513)
+		q(30542),	-- [DNT] Talkin' Tonks TRACKER - triggers after completing Talkin' Tonks (questID 29511)
+		q(30550),	-- [DNT] Tan My Hide TRACKER - triggers after completing Tan My Hide (questID 29519)
+		q(30559),	-- [DNT] The Captured Journal TRACKER - triggers after completing The Captured Journal (questID 29458)
+		q(30558),	-- [DNT] The Enemy's Insignia TRACKER - triggers after completing The Enemy's Insignia (questID 29457)
+		q(30552),	-- [DNT] The Master Strategist TRACKER - triggers after completing The Master Strategist (questID 29451)
+		q(30560),	-- [DNT] Tools of Divination TRACKER - triggers after completing Tools of Divination (questID 29464)
+		q(30546),	-- [DNT] Writing the Future TRACKER - triggers after completing Writing the Future (questID 29515)
+	}),
+	tier(BFA_TIER, {
+		q(45038),	-- Hexsweeper lvl 1
+		q(45039),	-- Hexsweeper lvl 2
+		q(45040),	-- Hexsweeper lvl 3
+		q(45041),	-- Hexsweeper lvl 4
+		q(45042),	-- Hexsweeper lvl 5
+		q(59312),	-- Hexsweeper lvl X
+		q(57827),	-- Rune Matching easy
+		q(57828),	-- Rune Matching normal
+		q(57829),	-- Rune Matching hard
+		q(57835),	-- Totems lvl 1
+		q(57836),	-- Totems lvl 2
+		q(57837),	-- Totems lvl 3
+		q(57838),	-- Totems lvl 4
+		q(57839),	-- Totems lvl 5
+		q(58572),	-- playing console game, remembthon something
+		q(57776),	-- unknown tracking quest that appeared after speaking to Selina Dourman
+	}),
+});	
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
-		q(7906),	-- Darkmoon Cards - Beast (NYI?)
+		q(7906),	-- Darkmoon Cards - Beast
 		q(11334),	-- He Shoots, He Scores!
 		q(11345),	-- Prizes for Pellets
 		q(29601),	-- The Darkmoon Field Guide

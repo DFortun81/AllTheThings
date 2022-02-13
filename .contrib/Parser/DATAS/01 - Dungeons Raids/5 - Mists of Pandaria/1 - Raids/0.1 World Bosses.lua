@@ -1216,3 +1216,14 @@ _.Instances = { tier(MOP_TIER, {
 		},
 	}),
 })};
+root("HiddenQuestTriggers",{
+	tier(MOP_TIER, {
+		q(33226),	-- Short-Supply Reward - Celestials bonus roll
+		q(32923),	-- Short-Supply Reward - Galleon bonus roll
+		q(32919),	-- Short-Supply Reward - Nalak bonus roll
+		q(33109),	-- Short-Supply Reward - Nalak secondary killID
+		q(32922),	-- Short-Supply Reward - Oondasta bonus roll
+		q(33225),	-- Short-Supply Reward - Ordos bonus roll
+		q(32924),	-- Short-Supply Reward - Sha of Anger bonus roll
+	}),
+});
