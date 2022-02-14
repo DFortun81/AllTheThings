@@ -9,7 +9,6 @@ _.ExpansionFeatures =
 			cl(PRIEST, {
 				["classes"] = { PRIEST },
 				["mapID"] = 702,	-- Netherlight Temple (Priest)
-				["maps"] = { 748 },	-- Niskara
 				["g"] = {
 					n(QUESTS, {
 						n(ARTIFACTS, {

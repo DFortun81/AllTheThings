@@ -4,25 +4,25 @@
 
 root("WorldDrops", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	n(ARMOR, {
-		n(CLOTH, {
+		filter(CLOTH, {
 			i(163940),	-- Extra-Light Light Emitting Cord
 			i(163941),	-- Hauer's Gloves of Strategy
 			i(163938),	-- Kalieve's Kickers
 			i(163939),	-- Mallusof's Pantaloons of Stability
 		}),
-		n(LEATHER, {
+		filter(LEATHER, {
 			i(163945),	-- Mystra's Magnificient Mitts
 			i(163943),	-- Neleimour's Patterned Leggings
 			i(163942),	-- Slippers of the Unruly Fairies
 			i(163944),	-- Waatah's Double-Knotted Cord
 		}),
-		n(MAIL, {
+		filter(MAIL, {
 			i(163931),	-- Chain Links of Fraying Awe
 			i(163946),	-- Gayeong's Gentle Step
 			i(163948),	-- Moarse's Coarse-Chain Gauntlets
 			i(163947),	-- Robust Legwraps of D'nusa
 		}),
-		n(PLATE, {
+		filter(PLATE, {
 			i(163949),	-- Celedhring's Unrelenting Stride
 			i(163951),	-- Cinch of the Sainted General
 			i(163950),	-- Edla's Embellished Legguards

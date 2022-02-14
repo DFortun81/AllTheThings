@@ -10,7 +10,6 @@ _.ExpansionFeatures =
 				["classes"] = { PALADIN },
 				["maps"] = {
 					LIGHTS_HOPE_CHAPEL,
-					748,	-- Niskara
 				},
 				["g"] = {
 					n(QUESTS, {

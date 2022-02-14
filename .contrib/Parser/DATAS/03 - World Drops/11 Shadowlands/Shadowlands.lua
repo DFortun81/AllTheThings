@@ -4,22 +4,22 @@
 
 root("WorldDrops", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 	n(ARMOR, {
-		n(CLOTH, {
+		filter(CLOTH, {
 			i(184787),	-- Elohin's Burden of Patience
 			i(184788),	-- Kit Jin's Sultry Cinch
 			i(184786),	-- Joyia's Raiment of Conviction
 		}),
-		n(LEATHER, {
+		filter(LEATHER, {
 			i(184790),	-- Archdruid Van-Yali's Greenthumbs
 			i(184791),	-- Azsharys' Lunar Veil
 			i(184789),	-- Nyte's Mischievous Treads
 		}),
-		n(MAIL, {
+		filter(MAIL, {
 			i(184792),	-- Haru Kiemund's Sabatons
 			i(184793),	-- Huntmaster Sullivan's Greaves
 			i(184794),	-- Viller's Traveling Chain
 		}),
-		n(PLATE, {
+		filter(PLATE, {
 			i(184796),	-- Baetheas' Ironclad Warboots
 			i(184808),	-- Desm's Fistos
 			i(184809),	-- Tabone's Branded Pauldrons
