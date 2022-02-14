@@ -9,6 +9,7 @@ _.ExpansionFeatures =
 			cl(PRIEST, {
 				["classes"] = { PRIEST },
 				["mapID"] = 702,	-- Netherlight Temple (Priest)
+				["maps"] = { 748 },	-- Niskara
 				["g"] = {
 					n(QUESTS, {
 						n(ARTIFACTS, {
@@ -520,6 +521,7 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 41993 },	-- Salvation From On High
 							["classes"] = { PRIEST },
 							["provider"] = { "n", 106011 },	-- Jace  Darkweaver
+							["maps"] = { 714 },	-- Niskara
 							["coord"] = { 33.5, 33.1, BROKEN_SHORE },
 						}),
 						q(43270, {	-- Rise, Champions

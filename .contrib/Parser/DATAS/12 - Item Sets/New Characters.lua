@@ -43,5 +43,3 @@ _.GearSets =
 		},
 	}),
 };
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-});

@@ -594,6 +594,7 @@ FINGER = -385;
 -- Meta Slot
 ARMOR = -318;
 WEAPONS = -319;
+SETS = -1000;
 TITANFORGED = -355;
 
 -- D&R

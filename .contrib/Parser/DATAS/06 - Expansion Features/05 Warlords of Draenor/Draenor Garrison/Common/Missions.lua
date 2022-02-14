@@ -737,7 +737,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(114387),	-- Hood of Hooded Nightmares
 					i(114391),	-- Trousers of Hooded Nightmares
 					i(114399),	-- Cord of Hooded Nightmares
-					i(114460),	-- Fireflash Cord
 				}),
 				filter(LEATHER, {
 					i(114314),	-- Shadow-Gorged Chestguard
@@ -745,7 +744,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(114388),	-- Hood of Falling Leaves
 					i(114392),	-- Legguards of Falling Leaves
 					i(114400),	-- Belt of Falling Leaves
-					i(114461),	-- Spireflame Belt
 				}),
 				filter(MAIL, {
 					i(114315),	-- Chestguard of Meditative Focus
@@ -753,7 +751,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(114389),	-- Element-Binder Helm
 					i(114393),	-- Element-Binder Legguards
 					i(114401),	-- Element-Binder Belt
-					i(114462),	-- Belt of Elemental Torment
 				}),
 				filter(PLATE, {
 					i(114316),	-- Salt-Scorched Breastplate
@@ -761,7 +758,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(114390),	-- Greathelm of Grievous Storms
 					i(114394),	-- Legplates of Grievous Storms
 					i(114402),	-- Girdle of Grievous Storms
-					i(114463),	-- Girdle of Vaulted Skies
 				}),
 			}),
 		}),
