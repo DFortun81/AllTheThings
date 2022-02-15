@@ -166,7 +166,7 @@ _.Instances = { tier(LEGION_TIER, {
 						["achievementID"] = 11160,	-- Unleashed Monstrosities
 					}),
 					i(139573, {	-- The Warmace of Shirvallah (Shaman Artifact)
-						artifact(880),	-- Find Hidden Artifact Skin
+						-- ["sourceQuest"] = , TODO
 					}),
 					i(141539),	-- Ragged Azsharan Sail Fragment
 					i(141466),	-- Blackwater Raider Handguards
@@ -227,7 +227,7 @@ _.Instances = { tier(LEGION_TIER, {
 					}),
 					i(142109),	-- Vantus Rune Technique: Helya [Rank 3]
 					i(139573, {	-- The Warmace of Shirvallah (Shaman Artifact)
-						artifact(880),	-- Find Hidden Artifact Skin
+						-- ["sourceQuest"] = , TODO
 					}),
 					i(141473),	-- Krakentooth Necklace
 					i(141441),	-- Chum-Chopper Gauntlets

@@ -175,13 +175,35 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 			},
 		}),
 		ach(11725, {	-- Fisherfriend of the Isles
-			i(152583),		-- Underlight Emerald
-			crit(1),		-- Ilyssia of the Waters
-			crit(2),		-- Corbyn
-			crit(3),		-- Akule Riverhorn
-			crit(4),		-- Impus
-			crit(5),		-- Sha'leth
-			crit(6),		-- Keeper Raynae
+			["description"] = "The Fishing Masters are on a daily rotation, so only one is up at a time.  The order is:\n\n1. Sha'leth\n2. Impus\n3. Ilyssia of the Waters\n4. Keeper Raynae\n5. Akule Riverhorn\n6. Corbyn\n\nMake sure you're close enough to the Fishing Master to get the |cFFFFD700Something's Fishy|r buff, or you won't be able to fish up the items (the buff may not show up until you dismount).\n\nThe quickest way to reach Best Friend is to fish in a group.\n",
+			["providers"] = {
+				{ "n", 120456 },	-- Keeper Raynae
+				{ "n", 120457 },	-- Akule Riverhorn
+				{ "n", 120458 },	-- Corbyn
+				{ "n", 120459 },	-- Sha'leth
+				{ "n", 120460 },	-- Impus
+			},
+			["g"] = {
+				i(152583),	-- Underlight Emerald
+				crit(1, {	-- Ilyssia of the Waters
+					["_npcs"] = { 120266 },
+				}),
+				crit(2, {	-- Corbyn
+					["_npcs"] = { 120458 },
+				}),
+				crit(3, {	-- Akule Riverhorn
+					["_npcs"] = { 120457 },
+				}),
+				crit(4, {	-- Impus
+					["_npcs"] = { 120460 },
+				}),
+				crit(5, {	-- Sha'leth
+					["_npcs"] = { 120459 },
+				}),
+				crit(6, {	-- Keeper Raynae
+					["_npcs"] = { 120456 },
+				}),
+			},
 		}),
 		ach(10598, {	-- Fishing 'Round the Isles
 			crit(1, {		-- Huge Mossgill Perch

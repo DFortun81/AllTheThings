@@ -224,9 +224,6 @@ _.Zones =
 							97381,	-- Screek
 							97384,	-- Segacedi
 						},
-						["g"] = {
-							artifact(900),	--  Hidden Artifact Skin
-						},
 					}),
 					i(139570, {	-- The Cypher of Broken Bone
 						["crs"] = {
@@ -237,9 +234,6 @@ _.Zones =
 							97388,	-- Xullorax
 							97381,	-- Screek
 							97384,	-- Segacedi
-						},
-						["g"] = {
-							artifact(611),	-- Assassination Rogue Hidden Artifact Skin
 						},
 					}),
 				}),

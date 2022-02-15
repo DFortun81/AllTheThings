@@ -352,22 +352,6 @@ _.Zones =
 								["description"] = "If you can't find Nat Pagle to give you this quest, going into the bank just south of the fountain seems to force him to spawn right on you.",
 								["g"] = {
 									artifact(841),	-- Base Skin
-									ach(11725, {	-- Fisherfriend of the Isles
-										["description"] = "When you complete this achievement, you get an item that unlocks the two remaining appearances. See the other Broken Isles zones for more information.",
-										["providers"] = {
-											{ "n", 120456 },	-- Keeper Raynae
-											{ "n", 120457 },	-- Akule Riverhorn
-											{ "n", 120458 },	-- Corbyn
-											{ "n", 120459 },	-- Sha'leth
-											{ "n", 120460 },	-- Impus
-										},
-										["g"] = {
-											i(152583, {	-- Underlight Emerald
-												artifact(988),	-- Fisherfriend of the Isles
-												artifact(989),	-- Fisherfriend of the Isles
-											})
-										},
-									}),
 								},
 							}),
 						},
