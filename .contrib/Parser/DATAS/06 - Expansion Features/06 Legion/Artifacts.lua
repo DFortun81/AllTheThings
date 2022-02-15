@@ -1783,7 +1783,7 @@ _.ExpansionFeatures =
 						}),
 						HiddenAppearance("Interface\\Icons\\inv_staff_2h_artifactshaohao_d_03", {
 							artifact(519, {	-- Find Hidden Artifact Skin
-								["provder"] = { "i", 139562 },	-- Breath of the Undying Serpent
+								["provider"] = { "i", 139562 },	-- Breath of the Undying Serpent
 							}),
 							artifact(518),	-- Complete 30 Legion Dungeons Hidden
 							artifact(507),	-- Complete 200 WQ Hidden
