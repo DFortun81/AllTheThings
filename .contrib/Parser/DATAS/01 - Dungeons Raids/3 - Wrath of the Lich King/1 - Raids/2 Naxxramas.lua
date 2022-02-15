@@ -835,7 +835,7 @@ _.Instances = { tier(WOTLK_TIER, {
 							i(40626),	-- Breastplate of the Lost Protector
 							i(40627),	-- Breastplate of the Lost Vanquisher
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
-								artifact(870),	-- Find Hidden Artifact Skin
+								["sourceQuest"] = 38990,	-- The Call of Icecrown
 							}),
 						},
 					})),

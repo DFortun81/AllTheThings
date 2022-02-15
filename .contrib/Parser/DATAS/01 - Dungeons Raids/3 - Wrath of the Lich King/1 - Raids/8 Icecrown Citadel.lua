@@ -2655,7 +2655,7 @@ _.Instances = { tier(WOTLK_TIER, {
 							i(50804),	-- Icecrown Spire Sandals
 							i(50803),	-- Saurfang's Cold-Forged Band
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
-								artifact(870),	-- Find Hidden Artifact Skin
+								["sourceQuest"] = 38990,	-- The Call of Icecrown
 							}),
 						},
 					}),
@@ -2857,7 +2857,7 @@ _.Instances = { tier(WOTLK_TIER, {
 							i(51802),	-- Windrunner's Heartseeker
 							i(122229),	-- Music Roll: Invincible
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
-								artifact(870),	-- Find Hidden Artifact Skin
+								["sourceQuest"] = 38990,	-- The Call of Icecrown
 							}),
 						},
 					}),
@@ -2978,7 +2978,7 @@ _.Instances = { tier(WOTLK_TIER, {
 							i(51899),	-- Icecrown Spire Sandals
 							i(51900),	-- Saurfang's Cold-Forged Band
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
-								artifact(870),	-- Find Hidden Artifact Skin
+								["sourceQuest"] = 38990,	-- The Call of Icecrown
 							}),
 						},
 					}),
@@ -3192,7 +3192,7 @@ _.Instances = { tier(WOTLK_TIER, {
 							i(51940),	-- Windrunner's Heartseeker
 							i(122229),	-- Music Roll: Invincible
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
-								artifact(870),	-- Find Hidden Artifact Skin
+								["sourceQuest"] = 38990,	-- The Call of Icecrown
 							}),
 						},
 					}),
@@ -3315,7 +3315,7 @@ _.Instances = { tier(WOTLK_TIER, {
 							i(50015),	-- Belt of the Blood Nova
 							i(50362),	-- Deathbringer's Will
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
-								artifact(870),	-- Find Hidden Artifact Skin
+								["sourceQuest"] = 38990,	-- The Call of Icecrown
 							}),
 						},
 					}),
@@ -3532,7 +3532,7 @@ _.Instances = { tier(WOTLK_TIER, {
 							i(49981),	-- Fal'inrush, Defender of Quel'thalas
 							i(122229),	-- Music Roll: Invincible
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
-								artifact(870),	-- Find Hidden Artifact Skin
+								["sourceQuest"] = 38990,	-- The Call of Icecrown
 							}),
 						},
 					}),
@@ -3658,7 +3658,7 @@ _.Instances = { tier(WOTLK_TIER, {
 							i(50671),	-- Belt of the Blood Nova
 							i(50363),	-- Deathbringer's Will
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
-								artifact(870),	-- Find Hidden Artifact Skin
+								["sourceQuest"] = 38990,	-- The Call of Icecrown
 							}),
 						},
 					}),
@@ -3888,7 +3888,7 @@ _.Instances = { tier(WOTLK_TIER, {
 							i(50733),	-- Fal'inrush, Defender of Quel'thalas
 							i(122229),	-- Music Roll: Invincible
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
-								artifact(870),	-- Find Hidden Artifact Skin
+								["sourceQuest"] = 38990,	-- The Call of Icecrown
 							}),
 						},
 					}),

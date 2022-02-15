@@ -1102,7 +1102,9 @@ _.ExpansionFeatures =
 							artifact(385),	-- Defeat all Legion dungeon bosses with appearance
 						}),
 						HiddenAppearance("Interface\\Icons\\inv_sword_1h_artifactruneblade_d_06", {
-							artifact(870),	-- Find Hidden Artifact Skin
+							artifact(870, {	-- Find Hidden Artifact Skin
+								["provider"] = { "i", 139547 },	-- Runes of the Darkening
+							}),
 							artifact(869),	-- Complete 30 Legion Dungeons Hidden
 							artifact(871),	-- Complete 200 WQ Hidden
 							artifact(872),	-- Kill 1,000 Players Hidden
@@ -1140,7 +1142,9 @@ _.ExpansionFeatures =
 							artifact(385),	-- Defeat all Legion dungeon bosses with appearance
 						}),
 						HiddenAppearance("Interface\\Icons\\inv_sword_1h_artifactruneblade_d_06", {
-							artifact(870),	-- Find Hidden Artifact Skin
+							artifact(870, {	-- Find Hidden Artifact Skin
+								["provider"] = { "i", 139547 },	-- Runes of the Darkening
+							}),
 							artifact(869),	-- Complete 30 Legion Dungeons Hidden
 							artifact(871),	-- Complete 200 WQ Hidden
 							artifact(872),	-- Kill 1,000 Players Hidden

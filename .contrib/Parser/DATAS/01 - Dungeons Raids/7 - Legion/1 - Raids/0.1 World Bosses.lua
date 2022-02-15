@@ -406,7 +406,7 @@ _.Instances = { tier(LEGION_TIER, {
 						["achievementID"] = 11160,	-- Unleashed Monstrosities
 					}),
 					i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
-						artifact(870),	-- Find Hidden Artifact Skin
+						["sourceQuest"] = 38990,	-- The Call of Icecrown
 					}),
 					i(141506),	-- Soultrapper's Pendant
 					i(141434),	-- Cord of Kept Souls
