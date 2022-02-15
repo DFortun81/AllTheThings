@@ -5,7 +5,7 @@
 _.WorldDrops =
 {
 	tier(MOP_TIER, {
-		n(-1000, {	-- Sets
+		n(SETS, {
 			i(82139),	-- Brewer's Cord
 			i(82140),	-- Brewer's Cowl
 			i(82141),	-- Brewer's Handwraps

@@ -5,7 +5,7 @@
 _.WorldDrops =
 {
 	tier(CATA_TIER, {
-		n(-1000, {	-- Sets
+		n(SETS, {
 			i(55635),	-- Aboraz Bindings
 			i(55653),	-- Aboraz Boots
 			i(55680),	-- Aboraz Britches

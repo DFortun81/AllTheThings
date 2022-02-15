@@ -5,7 +5,7 @@
 _.WorldDrops =
 {
 	tier(TBC_TIER, {
-		n(-1000, {	-- Sets
+		n(SETS, {
 			i(24575),	-- Outlander's Girdle
 			i(24582),	-- Outlander's Boots
 			i(24583),	-- Outlander's Tunic
