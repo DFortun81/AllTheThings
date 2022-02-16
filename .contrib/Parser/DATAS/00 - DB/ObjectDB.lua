@@ -96,7 +96,11 @@ _.ObjectNames = {
 	[112888] = "Dusty Shelf",
 	[112948] = "Intrepid's Locked Strongbox",
 	[113757] = "Shadowforge Cache",
+	-- #if AFTER WRATH
 	[113768] = [[GetSpellInfo(61820),	-- Brightly Colored Egg]],
+	-- #else
+	[113768] = "Brightly Colored Egg",
+	-- #endif
 	[113791] = "Brazier of Everfount",
 	[123329] = "Baelog's Chest",
 	[124388] = "Garrett Family Chest",
@@ -2328,7 +2332,11 @@ _.ObjectIcons = {
 	[37099] = "Interface/Icons/INV_Misc_StoneTablet_03",	-- Atal'ai Tablet
 	[62483] = "Interface/Icons/INV_WorseRobot",
 	[112948] = "Interface/Icons/battleground_strongbox_skirmish_horde",	-- Intrepid's Locked Strongbox
-	[113768] = "Interface/Icons/inv_egg_06",	-- GetSpellInfo(61820)
+	-- #if AFTER WRATH
+	[113768] = "Interface/Icons/inv_egg_06",	-- Brightly Colored Egg
+	-- #else
+	[113768] = [[_.asset("Holiday_noblegarden")]],	-- Brightly Colored Egg
+	-- #endif
 	[131474] = "Interface/Icons/Creatureportrait_Nexus_Floating_Disc",	-- The Discs of Norgannon
 	[138492] = "Interface/Icons/inv_enchanting_wod_crystal2",	-- Shards of Myzrael
 	[141832] = "Interface/Icons/inv_hammer_19",	-- Gong of Zul'Farrak

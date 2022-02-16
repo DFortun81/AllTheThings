@@ -1,7 +1,8 @@
 -------------------------------------------------------
 --   O B J E C T   D A T A B A S E   M O D U L E   --
 -------------------------------------------------------
-select(2, ...).ObjectNames = {
+local _ = select(2, ...);
+_.ObjectNames = {
 	[31] = "Old Lion Statue",
 	[55] = "A half-eaten body",
 	[56] = "Rolf's corpse",
@@ -2116,7 +2117,7 @@ select(2, ...).ObjectNames = {
 	[1278968767] = "Rune",
 	[1278968768] = "Rune",
 };
-select(2, ...).ObjectIcons = {
+_.ObjectIcons = {
 	[31] = "Interface/Icons/INV_Mount_AllianceLionG",
 	[55] = "Interface/Icons/INV_Misc_Bone_HumanSkull_01",
 	[56] = "Interface/Icons/INV_Misc_Bone_HumanSkull_01",
@@ -3074,7 +3075,7 @@ select(2, ...).ObjectIcons = {
 	[13000036] = "Interface/Icons/ability_socererking_arcaneacceleration",
 	[13000037] = "Interface/Icons/inv_hivemind",
 };
-select(2, ...).ObjectModels = {
+_.ObjectModels = {
 	[31] = 189908,
 	[55] = 198343,
 	[56] = 198343,
