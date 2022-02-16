@@ -1128,7 +1128,7 @@ end
 applyData = function(data, t)
 	if data and t then
 		for key, value in pairs(data) do
-			if not t[key] then
+			if t[key] == nil then	-- dont' replace existing data
 				t[key] = value;
 			end
 		end

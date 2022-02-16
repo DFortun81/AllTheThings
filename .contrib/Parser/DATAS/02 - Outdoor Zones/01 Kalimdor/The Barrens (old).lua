@@ -50,11 +50,6 @@ _.Zones = {
 					["provider"] = { "n", 3387 },	-- Jorn Skyseer
 					["sourceQuest"] = 882,	-- Ishamuhale
 				}),
-				q(1095,  {	-- Further Instructions
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 3442 },	-- Sputtervale
-					["sourceQuest"] = 1094,	-- Further Instructions
-				}),
 				q(843,   {	-- Gann's Reclamation
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,

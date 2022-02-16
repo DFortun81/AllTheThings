@@ -31,11 +31,6 @@ _.Zones =
 				p(675, {	-- Stormwind Rat
 					["crs"] = { 62954 },	-- Stormwind Rat
 				}),
-				q(3861, {	-- CLUCK!
-					["provider"] = { "n", 620 },	-- Chicken
-					["description"] = "Target any chicken, then use |cFFFFD700/chicken|r repeatedly until the quest becomes available.",
-					["repeatable"] = true,
-				}),
 			})),
 		}),
 	}),

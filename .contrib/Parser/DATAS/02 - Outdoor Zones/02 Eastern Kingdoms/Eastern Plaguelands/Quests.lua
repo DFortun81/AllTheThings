@@ -216,7 +216,7 @@ _.Zones =
 					["provider"] = { "n", 45500 },	-- Urk Gagbaz
 					["coord"] = { 35.0, 68.2, EASTERN_PLAGUELANDS },
 				}),
-				q(5408,  {	-- Corruptor's Scourgestones
+				q(5508,  {	-- Corruptor's Scourgestones
 					["provider"] = { "n", 11039 },	-- Duke Nicholas Zverenhoff
 					["coord"] = { 75.76, 53.81, EASTERN_PLAGUELANDS },
 					["u"] = REMOVED_FROM_GAME,	-- Removed in Patch 4.0.3
@@ -403,13 +403,6 @@ _.Zones =
 						{ 61.6, 42.6, EASTERN_PLAGUELANDS },
 						{ 50.6, 20.1, EASTERN_PLAGUELANDS },
 						{ 73.6, 51.9, EASTERN_PLAGUELANDS },
-					},
-				}),
-				q(9237,  {	-- Glacial Cloak
-					["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(22658)),	-- Glacial Cloak
 					},
 				}),
 				q(27369, {	-- Greasing the Wheel
@@ -991,10 +984,6 @@ _.Zones =
 					["sourceQuests"] = { 27462 },	-- To Take the Barracks
 					["provider"] = { "n", 16112 },	-- Crusade Commander Korfax
 					["coord"] = { 75.3, 76.1, EASTERN_PLAGUELANDS },
-				}),
-				q(5281,  {	-- The Restless Souls
-					["provider"] = { "n", 11038 },	-- Caretaker Alen
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(9141,  {	-- They Call Me "The Rooster"
 					["provider"] = { "n", 16212 },	-- Dispatch Commander Metz <The Argent Dawn>

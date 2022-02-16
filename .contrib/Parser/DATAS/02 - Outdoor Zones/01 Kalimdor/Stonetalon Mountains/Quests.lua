@@ -377,20 +377,12 @@ root("Zones", m(KALIMDOR, {
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 26004,	-- Krom'gar Fortress
 			}),
-			q(6481, {	-- Earthen Arise
+			q(6481, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" } }, {	-- Earthen Arise
 				["qg"] = 11861,	-- Mor'rogal
 				["sourceQuest"] = 6421,	-- Boulderslide Ravine
 				["coord"] = { 47.17, 64.10, STONETALON_MOUNTAINS },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 14,
-				["g"] = {
-					i(16981),	-- Owlbeard Bracers
-					i(1306),	-- Wolfmane Wristguards
-				},
-			}),
-			q(6481, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" } }, {	-- Earthen Arise
-				["provider"] = { "n", 11861 },	-- Mor'rogal
-				["races"] = HORDE_ONLY,
 				["g"] = {
 					i(16981),	-- Owlbeard Bracers
 					i(1306),	-- Wolfmane Wristguards
@@ -469,7 +461,7 @@ root("Zones", m(KALIMDOR, {
 			q(1095, {	-- Further Instructions (2/2)
 				["qg"] = 3442,	-- Sputtervalve
 				["sourceQuest"] = 1094,	-- Further Instructions (1/2)
-				--["coord"] = { 62.97, 37.19, THE_BARRENS },
+				["coord"] = { 62.97, 37.19, NORTHERN_BARRENS },
 				["lvl"] = 16,
 				["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" },
 			}),
@@ -1055,13 +1047,6 @@ root("Zones", m(KALIMDOR, {
 					i(57509),	-- Orthus' Amulet
 					i(131486),	-- Cinch of the Grieving Father
 				},
-			}),
-			q(6562,  {	-- Trouble in the Deeps
-				["u"] = REMOVED_FROM_GAME,
-				["provider"] = { "n", 11862 },	-- Tsunaman
-				["races"] = HORDE_ONLY,
-				["coord"] = { 47.2, 64.3, STONETALON_MOUNTAINS },
-				["isBreadcrumb"] = true,
 			}),
 			q(25880, {	-- Warn Master Thal'darah
 				["provider"] = { "n", 41233 },	-- Scout Commander Barus

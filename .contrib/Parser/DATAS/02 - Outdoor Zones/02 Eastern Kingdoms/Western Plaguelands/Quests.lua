@@ -269,14 +269,6 @@ _.Zones =
 						i(131623),	-- Ravensun Gloves
 					},
 				}),
-				q(5408,  {	-- Corruptor's Scourgestones
-					["provider"] = { "n", 11039 },		-- Duke Nicholas Zverenhoff
-					["u"] = REMOVED_FROM_GAME,			-- Removed in Patch 4.0.3
-					["coord"] = { 75.76, 53.81, EASTERN_PLAGUELANDS },
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(12844)),	-- Argent Dawn Valor Token -- Removed in Patch 4.0.3
-					},
-				}),
 				q(4972, {	-- Counting Out Time
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10667 },	-- Chromie
@@ -406,7 +398,7 @@ _.Zones =
 						i(131632),	-- Dusty Gahrron Chainmail
 					},
 				}),
-				q(5408,  {	-- Minion's Scourgestones [A]
+				q(5402,  {	-- Minion's Scourgestones [A]
 					["provider"] = { "n", 10840 },		-- Argent Officer Pureheart
 					["u"] = REMOVED_FROM_GAME,			-- Removed in Patch 4.0.3
 					["coord"] = { 43.0, 84.0, WESTERN_PLAGUELANDS },

@@ -177,11 +177,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(4909)),	-- Kodo Hunter's Leggings
 					},
 				}),
-				q(5722,  {	-- Searching for the Lost Satchel
-					["provider"] = { "n", 11833 },	-- Rahauro
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(1131,  {	-- Steelsnap
 					["sourceQuests"] = { 1130 },	-- Melor Sends Word
 					["provider"] = { "n", 3441 },	-- Melor Stonehoof

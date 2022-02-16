@@ -26,10 +26,6 @@ _.Zones =
 				p(419, {	-- Small Frog
 					["crs"] = { 61071 },	-- Small Frog
 				}),
-				q(3861, {	-- CLUCK!
-					["provider"] = { "n", 620 },	-- Chicken
-					["repeatable"] = true,
-				}),
 			})),
 		}),
 	}),
