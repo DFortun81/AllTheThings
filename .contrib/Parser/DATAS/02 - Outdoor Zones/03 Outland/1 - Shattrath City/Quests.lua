@@ -6,17 +6,6 @@ _.Zones =
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(SHATTRATH_CITY, {
 			n(QUESTS, {
-				-- TODO: https://wowwiki-archive.fandom.com/wiki/Wind_Trader_Zhareem
-				q(11369, {	-- WANTED: A Black Stalker Egg
-					["qg"] = 24369,	-- Wind Trader Zhareem
-					["coord"] = { 75, 37, SHATTRATH_CITY },
-					["maps"] = { COILFANG_RESERVOIR_UNDERBOG },
-					["isDaily"] = true,
-					["lvl"] = 70,
-					["cost"] = {
-						{ "i", 33826, 1 },	-- Black Stalker Egg
-					},
-				}),
 				q(10552, {	-- Allegiance to the Scryers
 					["sourceQuest"] = 10211,	-- City of Light
 					["coord"] = { 54.7, 44.3, SHATTRATH_CITY },
@@ -348,10 +337,10 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { DWARF },
 				}),
-				q(12753, {	-- A Desperate Alliance
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = { NIGHTELF },
-				}),
+				-- q(12753, {	-- A Desperate Alliance [Wrong QuestID]
+				-- 	["u"] = REMOVED_FROM_GAME,
+				-- 	["races"] = { NIGHTELF },
+				-- }),
 				q(12775, {	-- A Desperate Alliance
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { HUMAN },
@@ -367,10 +356,6 @@ _.Zones =
 				q(10210, {	-- A'dal
 					["provider"] = { "n", 19684 },	-- Haggard War Veteran
 					["coord"] = { 59.6, 41.4, SHATTRATH_CITY },
-				}),
-				q(11216, {	-- Archmage Alturus
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 23948 },	-- Apprentice Tasserel
 				}),
 				q(10211, {	-- City of Light
 					["provider"] = { "n", 18166 },	-- Archmage Khadgar
@@ -485,10 +470,6 @@ _.Zones =
 					["provider"] = { "n", 29087 },	-- Bishop Lazaril
 					["sourceQuest"] = 12775,	-- A Desperate Alliance
 				}),
-				q(13082, {	-- The Boon of A'dal
-					["provider"] = { "n", 18481 },	-- A'dal
-					["sourceQuests"] = { 13081 },	-- The Will of the Naaru *UNTESTED*
-				}),
 				q(10550, {	-- The Bundle of Bloodthistle
 					["provider"] = { "n", 21411 },	-- Tobias the Filth Gorger
 					["sourceQuests"] = { 10547 },	-- Of Thistleheads and Eggs...
@@ -521,10 +502,18 @@ _.Zones =
 					["provider"] = { "n", 28318 },	-- Grand Apothecary Putress
 					["sourceQuest"] = 12784,	-- Desperate Research
 				}),
-				q(11369, {	-- Wanted: A Black Stalker Egg
-					["provider"] = { "n", 24369 },	-- Wind Trader Zhareem
+				-- TODO: https://wowwiki-archive.fandom.com/wiki/Wind_Trader_Zhareem
+				q(11369, {	-- WANTED: A Black Stalker Egg
+					["qg"] = 24369,	-- Wind Trader Zhareem
 					["coord"] = { 75, 37, SHATTRATH_CITY },
+					["maps"] = { COILFANG_RESERVOIR_UNDERBOG },
 					["isDaily"] = true,
+					["lvl"] = 70,
+					["g"] = {
+						objective(1, {
+							["provider"] = { "i", 33826 },	-- Black Stalker Egg
+						}),
+					},
 				}),
 				q(11384, {	-- WANTED: A Warp Splinter Clipping
 					["provider"] = { "n", 24369 },	-- Wind Trader Zhareem

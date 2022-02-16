@@ -3010,11 +3010,6 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						["coord"] = { 36.0, 51.5, STORMSONG_VALLEY },
 						["timeline"] = { "added 8.0.1" },
 					}),
-					q(11761, {	-- Desecrate this Fire! — Stranglethorn Vale
-						["provider"] = { "o", 187944 },	-- Alliance Bonfire
-						["coord"] = { 33.8, 73.3, STRANGLETHORN_VALE },
-						["timeline"] = { "removed 4.0.1" },
-					}),
 					q(44624, {	-- Desecrate this Fire! — Suramar
 						["provider"] = { "o", 259927 },	-- Alliance Bonfire
 						["coord"] = { 22.8, 58.2, SURAMAR },

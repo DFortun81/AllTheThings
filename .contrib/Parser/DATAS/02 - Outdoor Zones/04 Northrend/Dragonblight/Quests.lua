@@ -1459,24 +1459,6 @@ _.Zones =
 						i(38101),	-- Stonepath Sabatons
 					},
 				}),
-				q(12794, {	-- The Magical Kingdom of Dalaran (A)
-					["coord"] = { 29.0, 55.4, DRAGONBLIGHT },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 26673 },	-- Image of Archmage Modera
-					["isBreadcrumb"] = true,
-				}),
-				q(12791, {	-- The Magical Kingdom of Dalaran (H)
-					["providers"] = {
-						{ "n", 26471 },	-- Image of Archmage Aethas Sunreaver
-						{ "n", 29162 },	-- Magister Tyr'ganal
-					},
-					["coords"] = {
-						{ 38.0, 46.2, DRAGONBLIGHT },	-- Image of Archmage Aethas Sunreaver
-						{ 76.8, 63.2, DRAGONBLIGHT },	-- Magister Tyr'ganal
-					},
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
-				}),
 				q(12053, {	-- The Might of the Horde
 					["coord"] = { 36.6, 46.5, DRAGONBLIGHT },
 					["races"] = HORDE_ONLY,
