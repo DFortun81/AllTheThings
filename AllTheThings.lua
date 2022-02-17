@@ -2183,7 +2183,7 @@ end
 
 -- Quest Completion Lib
 -- Builds a table to be used in the SetupReportDialog to display text which is copied into Discord for player reports
-app.BuildDiscordQuestInfoTable = function(id, infoText, questChange)
+app.BuildDiscordQuestInfoTable = function(id, infoText, questChange, questRef)
 	local coord;
 	local mapID = app.GetCurrentMapID();
 	local position = mapID and C_Map.GetPlayerMapPosition(mapID, "player");
@@ -2208,6 +2208,7 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange)
 		"race:"..app.RaceID.." ("..app.Race..")",
 		"class:"..app.ClassIndex.." ("..app.Class..")",
 		"lvl:"..app.Level,
+		"u:"..tostring(questRef and questRef.u),
 		"cov:"..(covData and covData.name or "N/A");
 		mapID and ("mapID:"..mapID.." ("..C_Map_GetMapInfo(mapID).name..")") or "mapID:??",
 		coord and ("coord:"..coord) or "coord:??",
@@ -2226,10 +2227,11 @@ app.CheckInaccurateQuestInfo = function(questRef, questChange)
 		if not (app.RequiredSkillFilter(questRef)
 			and app.ClassRequirementFilter(questRef)
 			and app.RaceRequirementFilter(questRef)
-			and app.RequireCustomCollectFilter(questRef)) then
+			and app.RequireCustomCollectFilter(questRef)
+			and app.ItemIsInGame(questRef)) then
 			local popupID = "quest-filter-" .. id;
 			if app:SetupReportDialog(popupID, "Inaccurate Quest Info: " .. id,
-				app.BuildDiscordQuestInfoTable(id, "inaccurate-quest", questChange)
+				app.BuildDiscordQuestInfoTable(id, "inaccurate-quest", questChange, questRef)
 			) then
 				local reportMsg = app:Linkify(L["REPORT_INACCURATE_QUEST"], "f7b531", "dialog:" .. popupID);
 				Callback(app.print, reportMsg);
@@ -12522,6 +12524,9 @@ function app.FilterItemClass_SeasonalItem(item)
 		return false;
 	end
 	return true;
+end
+function app.ItemIsInGame(item)
+	return not item.u or item.u > 2;
 end
 function app.FilterItemClass_UnobtainableItem(item)
 	-- specifically match on false for being disabled as a filter
