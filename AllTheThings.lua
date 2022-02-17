@@ -1727,18 +1727,20 @@ CreateObject = function(t, rootOnly)
 			else
 				t = app.CreateItem(t.itemID, t);
 			end
-		elseif t.classID then
-			t = app.CreateCharacterClass(t.classID, t);
 		elseif t.npcID or t.creatureID then
 			t = app.CreateNPC(t.npcID or t.creatureID, t);
-		elseif t.headerID then
-			t = app.CreateNPC(t.headerID, t);
 		elseif t.questID then
 			if t.isVignette then
 				t = app.CreateVignette(t.questID, t);
 			else
 				t = app.CreateQuest(t.questID, t);
 			end
+
+		-- Non-Thing groups
+		elseif t.classID then
+			t = app.CreateCharacterClass(t.classID, t);
+		elseif t.headerID then
+			t = app.CreateNPC(t.headerID, t);
 		elseif t.tierID then
 			t = app.CreateTier(t.tierID, t);
 		elseif t.unit then
