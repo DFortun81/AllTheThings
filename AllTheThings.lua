@@ -8645,32 +8645,47 @@ end
 end)();
 
 -- Follower Lib
--- TODO: use caching instead of 'info'
 (function()
 local C_Garrison_GetFollowerInfo = C_Garrison.GetFollowerInfo;
 local C_Garrison_GetFollowerLink = C_Garrison.GetFollowerLink;
 local C_Garrison_GetFollowerLinkByID = C_Garrison.GetFollowerLinkByID;
 local C_Garrison_IsFollowerCollected = C_Garrison.IsFollowerCollected;
+
+local cache = app.CreateCache("followerID");
+local function CacheInfo(t, field)
+	local _t, id = cache.GetCached(t);
+	local info = C_Garrison_GetFollowerInfo(id);
+	if info then
+		_t.name = info.name;
+		_t.text = info.name;
+		_t.lvl = info.level;
+		_t.icon = info.portraitIconID;
+		_t.title = info.className;
+		_t.displayID = info.displayIDs and info.displayIDs[1] and info.displayIDs[1].id;
+	end
+	if field then return t[field]; end
+end
 local fields = {
 	["key"] = function(t)
 		return "followerID";
 	end,
-	["info"] = function(t)
-		local info = C_Garrison_GetFollowerInfo(t.followerID);
-		if info then
-			rawset(t, "info", info);
-			return info;
-		end
-		return {};
-	end,
 	["text"] = function(t)
-		return t.info.name;
+		return cache.GetCachedField(t, "text", CacheInfo);
 	end,
 	["name"] = function(t)
-		return t.info.name;
+		return cache.GetCachedField(t, "name", CacheInfo);
 	end,
 	["icon"] = function(t)
-		return t.info.portraitIconID;
+		return cache.GetCachedField(t, "icon", CacheInfo);
+	end,
+	["lvl"] = function(t)
+		return cache.GetCachedField(t, "lvl", CacheInfo);
+	end,
+	["title"] = function(t)
+		return cache.GetCachedField(t, "title", CacheInfo);
+	end,
+	["displayID"] = function(t)
+		return cache.GetCachedField(t, "displayID", CacheInfo);
 	end,
 	["link"] = function(t)
 		if app.CurrentCharacter.Followers[t.followerID] then
@@ -8678,6 +8693,9 @@ local fields = {
 		else
 			return C_Garrison_GetFollowerLinkByID(t.followerID);
 		end
+	end,
+	["description"] = function(t)
+		return L["FOLLOWERS_COLLECTION_DESC"];
 	end,
 	["collectible"] = function(t)
 		return app.CollectibleFollowers;
@@ -8690,19 +8708,6 @@ local fields = {
 			return 1;
 		end
 		if app.AccountWideFollowers and ATTAccountWideData.Followers[t.followerID] then return 2; end
-	end,
-	["description"] = function(t)
-		return L["FOLLOWERS_COLLECTION_DESC"];
-	end,
-	["lvl"] = function(t)
-		return t.info.level;
-	end,
-	["title"] = function(t)
-		return t.info.className;
-	end,
-	["displayID"] = function(t)
-		local displayIDs = t.info.displayIDs;
-		return displayIDs and #displayIDs > 0 and displayIDs[1].id;
 	end,
 };
 app.BaseFollower = app.BaseObjectFields(fields, "BaseFollower");
