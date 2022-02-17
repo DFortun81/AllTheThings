@@ -9,9 +9,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(190196),	-- Enlightened Hearthstone
 		i(190754),	-- Firim's Specimen Container
 		-- Pets
-		pet(3215),
-		pet(3218),
-		pet(3246),
+		--pet(3215),
+		--pet(3218),
+		--pet(3246),
 		-- Mounts
 		i(187674),	-- [PH] Progenitor Jellyfish (Dark)
 		i(187644),	-- Vicious Warstalker (A)

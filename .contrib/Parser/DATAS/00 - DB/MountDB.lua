@@ -1086,6 +1086,7 @@ i(188674, 359318);	-- Soaring Spelltome
 -----------------
 -- PATCH 9.2.0 --
 -----------------
+-- #if AFTER 9.2.0
 -- Protoform Synthesis
 i(187632, 359232);	-- Adorned Vombata
 i(187670, 359376);	-- Bronze Helicid
@@ -1150,4 +1151,5 @@ i(188696, 363136);	-- Colossal Ebonclaw Mawrat
 -- NYI --
 i(187644, 349824);	-- Vicious Warstalker (A)
 i(187642, 349823);	-- Vicious Warstalker (H)
+-- #endif
 end)();

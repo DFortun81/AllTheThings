@@ -3,7 +3,7 @@
 ---------------------------------------------------
 root("Zones", m(SHADOWLANDS, {
 	m(ZERETH_MORTIS, {
-		petbattle(filter(BATTLE_PETS, {
+		petbattle(filter(BATTLE_PETS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			pet(3216, {	-- Ambystan Snapper
 				["cr"] = 183277,
 			}),
@@ -61,6 +61,6 @@ root("Zones", m(SHADOWLANDS, {
 			pet(3191, {	-- Timid Leporid
 				["cr"] = 182234,
 			}),
-		})),
+		}))),
 	}),
 }));

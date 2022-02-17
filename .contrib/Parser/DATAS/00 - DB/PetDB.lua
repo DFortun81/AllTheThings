@@ -1043,6 +1043,7 @@ pet(186553, 3107);	-- Gurgl
 -----------------
 -- PATCH 9.2.0 --
 -----------------
+-- #if AFTER 9.2.0
 -- Protoform Synthesis
 pet(189363, 3223);	-- Ambystan Darter
 pet(189369, 3179);	-- Archetype of Animation
@@ -1088,3 +1089,4 @@ pet(191039, 3247);	-- Pocopoc Traveler
 3218
 3246
 --]]
+-- #endif
