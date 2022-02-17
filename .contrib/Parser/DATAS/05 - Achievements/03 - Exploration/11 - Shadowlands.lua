@@ -905,32 +905,46 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(12),		-- Wild Gormling
 		}),
 		-- PTR
-		ach(15391, {	-- Adventurer of Zereth Mortis
+		ach(15391, sharedDataSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Adventurer of Zereth Mortis
 			ach(15512),	-- Adventures in Zereth Mortis
-		}),
-		ach(15211, {	-- Completing the Code
+		})),
+		ach(15211, sharedDataSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Completing the Code
 			i(187793),	-- Personal Containment Trap (TOY!)
-		}),
-		ach(15402, {	-- Cyphers of the First Ones
+		})),
+		ach(15402, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Cyphers of the First Ones
 			["description"] = "Have to research eveything in the talent tree to gain flying.",
 			["g"] = {
 				i(189455),	-- Schematic: Pale Regal Cervid
 			},
+		})),
+		ach(15392, {	-- Dune Dominance
+			["timeline"] = { "added 9.2.0" },
 		}),
-		ach(15392),	-- Dune Dominance
-		ach(15224),	-- Explore Zereth Mortis
-		ach(15331, {	-- Treasures of Zereth Mortis
+		ach(15224, {	-- Explore Zereth Mortis
+			["timeline"] = { "added 9.2.0" },
+		}),
+		ach(15331, sharedDataSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Treasures of Zereth Mortis
 			ach(15513),	-- Curious Collections
-		}),
-		ach(15411, {	-- Synthe-supersized!
+		})),
+		ach(15411, sharedDataSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Synthe-supersized!
 			ach(15406),	-- Synthesized!
 			ach(15407),	-- Synthe-fived!
 			ach(15410),	-- Synthe-superfived!
+		})),
+		ach(15502, {	-- Sand, Sand Everywhere!
+			["timeline"] = { "added 9.2.0" },
 		}),
-		ach(15502),	-- Sand, Sand Everywhere!
-		ach(15404),	-- Cosmic Empowerment
-		ach(15508),	-- Fashion of the First Ones
-		ach(15542),	-- Apocopocolypse Now
-		ach(15509),	-- Tales of the Exile
+		ach(15404, {	-- Cosmic Empowerment
+			["timeline"] = { "added 9.2.0" },
+		}),
+		ach(15508, {	-- Fashion of the First Ones
+			["timeline"] = { "added 9.2.0" },
+		}),
+		ach(15542, {	-- Apocopocolypse Now
+			["timeline"] = { "added 9.2.0" },
+		}),
+		ach(15509, {	-- Tales of the Exile
+			["timeline"] = { "added 9.2.0" },
+		}),
 	}),
 }));

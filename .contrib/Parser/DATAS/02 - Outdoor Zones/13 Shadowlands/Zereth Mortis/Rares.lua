@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root("Zones", m(SHADOWLANDS, {
+root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 	m(ZERETH_MORTIS, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
 			n(179006, {	-- Akkaris <Annelid Prime>
@@ -492,4 +492,4 @@ root("Zones", m(SHADOWLANDS, {
 			}),
 		})),
 	}),
-}));
+})));

@@ -101,18 +101,40 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 		ach(15105),		-- Tormentor's Tango
 		ach(15131),		-- Whack-A-Soul
 		-- PTR
-		ach(15381),	-- Power ON
-		ach(15401),	-- Wisdom Comes From the Desert
-		ach(15398),	-- Xy Never, Ever Marks the Spot.
-		ach(15397),	-- Four Ring Circus
-		ach(15400),	-- Where the Wild Beasts Are
-		ach(15419),	-- The Protoform Matrix
-		ach(15386),	-- Shimmering Secrets
-		ach(15399),	-- Coming to Terms
-		ach(15315),	-- Amidst Ourselves
-		ach(15396),	-- We Are All Made of Stars
-		ach(15494),	-- Damnation Aviation
-		ach(15417, {	-- Sepulcher of the First Ones
+		ach(15381, {	-- Power ON
+			["timeline"] = { "added 9.2.0" },
+		}),
+		ach(15401, {	-- Wisdom Comes From the Desert
+			["timeline"] = { "added 9.2.0" },
+		}),
+		ach(15398, {	-- Xy Never, Ever Marks the Spot.
+			["timeline"] = { "added 9.2.0" },
+		}),
+		ach(15397, {	-- Four Ring Circus
+			["timeline"] = { "added 9.2.0" },
+		}),
+		ach(15400, {	-- Where the Wild Beasts Are
+			["timeline"] = { "added 9.2.0" },
+		}),
+		ach(15419, {	-- The Protoform Matrix
+			["timeline"] = { "added 9.2.0" },
+		}),
+		ach(15386, {	-- Shimmering Secrets
+			["timeline"] = { "added 9.2.0" },
+		}),
+		ach(15399, {	-- Coming to Terms
+			["timeline"] = { "added 9.2.0" },
+		}),
+		ach(15315, {	-- Amidst Ourselves
+			["timeline"] = { "added 9.2.0" },
+		}),
+		ach(15396, {	-- We Are All Made of Stars
+			["timeline"] = { "added 9.2.0" },
+		}),
+		ach(15494, {	-- Damnation Aviation
+			["timeline"] = { "added 9.2.0" },
+		}),
+		ach(15417, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Sepulcher of the First Ones
 			crit(1),	-- Vigilant Guardian
 			crit(2),	-- Skolex
 			crit(3),	-- Artificer Xy'mox
@@ -124,8 +146,8 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(9),	-- Lords of Dread
 			crit(10),	-- Rygelon
 			crit(11),	-- The Jailer
-		}),
-		ach(15478, {	-- Heroic: Sepulcher of the First Ones
+		})),
+		ach(15478, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Heroic: Sepulcher of the First Ones
 			crit(1),	-- Vigilant Guardian
 			crit(2),	-- Skolex
 			crit(3),	-- Artificer Xy'mox
@@ -137,8 +159,8 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(9),	-- Lords of Dread
 			crit(10),	-- Rygelon
 			crit(11),	-- The Jailer
-		}),
-		ach(15490, {	-- Mythic: Sepulcher of the First Ones
+		})),
+		ach(15490, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Mythic: Sepulcher of the First Ones
 			ach(15479),	-- Mythic: Vigilant Guardian
 			ach(15480),	-- Mythic: Skolex
 			ach(15481),	-- Mythic: Artificer Xy'mox
@@ -150,25 +172,25 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			ach(15487),	-- Mythic: Lords of Dread
 			ach(15488),	-- Mythic: Rygelon
 			ach(15489),	-- Mythic: The Jailer
-		}),
-		ach(15493, {	-- Ephemeral Plains
+		})),
+		ach(15493, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Ephemeral Plains
 			crit(1),	-- Vigilant Guardian
 			crit(2),	-- Skolex
 			crit(3),	-- Artificer Xy'mox
 			crit(4),	-- Halondrus
-		}),
-		ach(15492, {	-- Cornerstone of Creation
+		})),
+		ach(15492, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Cornerstone of Creation
 			crit(1),	-- Dausegne
 			crit(2),	-- Prototype Pantheon
 			crit(3),	-- Lihuvim
-		}),
-		ach(15416, {	-- Domination's Grasp
+		})),
+		ach(15416, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Domination's Grasp
 			crit(1),	-- Anduin Wrynn
 			crit(2),	-- Lords of Dread
 			crit(3),	-- Rygelon
-		}),
-		ach(15418, {	-- The Grand Design
+		})),
+		ach(15418, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- The Grand Design
 			crit(1),	-- The Jailer, Zovaal
-		}),
+		})),
 	}),
 }));

@@ -37,7 +37,7 @@ root("Zones", m(SHADOWLANDS, {
 					},
 				}),
 				i(186531, {	-- Cache of Sanctum Treasures (N)
-					["timeline"] = { "added 9.1.0", "removed 9.1.2" },
+					["timeline"] = { "added 9.1.0", "removed 9.2.0" },
 					["sym"] = {
 						{"select", "instanceID", 1193},			-- Sanctum of Domination
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -52,7 +52,7 @@ root("Zones", m(SHADOWLANDS, {
 					},
 				}),
 				i(186533, {	-- Cache of Sanctum Treasures (HC)
-					["timeline"] = { "added 9.1.0", "removed 9.1.2" },
+					["timeline"] = { "added 9.1.0", "removed 9.2.0" },
 					["sym"] = {
 						{"select", "instanceID", 1193},			-- Sanctum of Domination
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -67,7 +67,7 @@ root("Zones", m(SHADOWLANDS, {
 					},
 				}),
 				i(190654, {	-- Cache of Sepulcher Treasures (N) or 190655
-					["timeline"] = { "added 9.1.2" },
+					["timeline"] = { "added 9.2.0" },
 					["sym"] = {
 						{"select", "instanceID", 1195},			-- Sepulcher of the First Ones
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -80,7 +80,7 @@ root("Zones", m(SHADOWLANDS, {
 					},
 				}),
 				i(190656, {	-- Cache of Sepulcher Treasures (HC)
-					["timeline"] = { "added 9.1.2" },
+					["timeline"] = { "added 9.2.0" },
 					["sym"] = {
 						{"select", "instanceID", 1195},			-- Sepulcher of the First Ones
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.

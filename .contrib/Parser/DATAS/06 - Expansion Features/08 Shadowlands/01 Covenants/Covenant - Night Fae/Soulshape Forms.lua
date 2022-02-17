@@ -202,6 +202,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["provider"] = { "i", 185047 },	-- Yak Soul
 			}),
 			-- PTR 9.2
+			-- #if AFTER 9.2.0
 			q(65514, {	-- Armadillo Soul
 				["provider"] = { "i", 189986 },	-- Armadillo Soul
 			}),
@@ -252,6 +253,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["provider"] = { "i", 189991 },	-- Snail Soul
 			}),
 			--]]
+			-- #endif
 		}),
 	}),
 })));

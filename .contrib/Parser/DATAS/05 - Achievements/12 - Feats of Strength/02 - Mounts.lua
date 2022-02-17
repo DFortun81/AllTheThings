@@ -105,8 +105,8 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		un(REMOVED_FROM_GAME, ach(8678, {	-- Tyrannical Gladiator's Cloud Serpent
 			un(REMOVED_FROM_GAME, i(104325)),	-- Tyrannical Gladiator's Cloud Serpent
 		})),
-		un(REMOVED_FROM_GAME, ach(14999, {	-- Unchained Gladiator's Soul Eater
-			un(REMOVED_FROM_GAME, i(186177)),	-- Unchained Gladiator's Soul Eater
+		ach(14999, bubbleDownSelf({ ["timeline"] = { "added 9.1.0", "removed 9.2.0" } }, {	-- Unchained Gladiator's Soul Eater
+			i(186177),	-- Unchained Gladiator's Soul Eater
 		})),
 		un(REMOVED_FROM_GAME, ach(888, {	-- Vengeful Nether Drake
 			un(REMOVED_FROM_GAME, i(37676)),	-- Vengeful Nether Drake
@@ -134,8 +134,8 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			un(REMOVED_FROM_GAME, i(50435)),	-- Wrathful Gladiator's Frost Wyrm
 		})),
 		-- PTR 9.2
-		pvp(ach(15384, {	-- Cosmic Gladiator's Soul Eater
+		pvp(ach(15384, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Cosmic Gladiator's Soul Eater
 			i(189507),	-- Cosmic Gladiator's Soul Eater
-		})),
+		}))),
 	}),
 }));

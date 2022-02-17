@@ -131,7 +131,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(184755),	-- Reinforced High Collar
 					i(182207),	-- Illusion: Sinsedge
 					i(190644, {	-- Vessel of Profound Possibilities
-						["timeline"] = { "added 9.1.2" },
+						["timeline"] = { "added 9.2.0" },
 						["sym"] = {
 							{"select","tierID",SL_TIER},{"pop"},	-- SL Tier
 							{"where","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)

@@ -11,7 +11,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			1671,	-- Ring of Transference
 			1672,	-- Broker's Den
 			1673,	-- Ring of Transference
-			-- #if AFTER 9.1.2
+			-- #if AFTER 9.2.0
 			2042,	-- The Cruible
 			-- #endif
 		},

@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root("Zones", m(SHADOWLANDS, {
+root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 	m(ZERETH_MORTIS, {
 		n(QUESTS, {
 			-- Chapter 1
@@ -1077,7 +1077,7 @@ root("Zones", m(SHADOWLANDS, {
 			}),
 		})),
 	}),
-}));
+})));
 
 root("HiddenQuestTriggers", {
 	-- Misc

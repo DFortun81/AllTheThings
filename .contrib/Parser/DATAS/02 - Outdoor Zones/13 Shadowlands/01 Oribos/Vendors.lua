@@ -51,7 +51,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(184729),	-- Masque of the Path
 					i(184756),	-- Smoothed Loop of Contemplation
 					i(190644, {	-- Vessel of Profound Possibilities
-						["timeline"] = { "added 9.1.2" },
+						["timeline"] = { "added 9.2.0" },
 						["sym"] = {
 							{"select","tierID",SL_TIER},{"pop"},	-- SL Tier
 							{"where","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
@@ -226,7 +226,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(184736),	-- Robe of the March Warden
 					i(184745),	-- Tunic of the March Warden
 					i(190644, {	-- Vessel of Profound Possibilities
-						["timeline"] = { "added 9.1.2" },
+						["timeline"] = { "added 9.2.0" },
 						["sym"] = {
 							{"select","tierID",SL_TIER},{"pop"},	-- SL Tier
 							{"where","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
@@ -285,7 +285,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(184755),	-- Reinforced High Collar
 					i(182207),	-- Illusion: Sinsedge
 					i(190644, {	-- Vessel of Profound Possibilities
-						["timeline"] = { "added 9.1.2" },
+						["timeline"] = { "added 9.2.0" },
 						["sym"] = {
 							{"select","tierID",SL_TIER},{"pop"},	-- SL Tier
 							{"where","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
@@ -354,7 +354,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 							currency(2009),	-- Cosmic Flux
 						},
 					}),
-					i(191030, bubbleDownSelf({ ["timeline"] = { "added 9.1.2" } }, {	-- Cosmic Flux Parcel
+					i(191030, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Cosmic Flux Parcel
 						["cost"] = { { "i", 187219, 1 } },	-- 1x Attendant's Token of Merit
 						["g"] = {
 							i(186017),	-- Korthite Crystal
@@ -450,7 +450,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(184752),	-- Gormscale Leggings
 					i(184753),	-- Tree-Scaler's Britches
 					i(190644, {	-- Vessel of Profound Possibilities
-						["timeline"] = { "added 9.1.2" },
+						["timeline"] = { "added 9.2.0" },
 						["sym"] = {
 							{"select","tierID",SL_TIER},{"pop"},	-- SL Tier
 							{"where","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
@@ -563,7 +563,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 								["classes"] = { DRUID },
 							}),
 						}),
-						n(SEASON_COSMIC, bubbleDown({ ["timeline"] = { "added 9.1.2" } }, {
+						n(SEASON_COSMIC, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 							n(WEAPONS, {
 								i(186959, {	-- Cosmic Aspirant's Barrier
 									["cost"] = { { "c", 1792, 450 } },
@@ -874,7 +874,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 								}),
 							}),
 						})),
-						n(SEASON_UNCHAINED, bubbleDown({ ["timeline"] = { "added 9.1.0", "removed 9.1.2" } }, {
+						n(SEASON_UNCHAINED, bubbleDown({ ["timeline"] = { "added 9.1.0", "removed 9.2.0" } }, {
 							n(WEAPONS, {
 								i(185295, {	-- Unchained Aspirant's Barrier
 									["cost"] = { { "c", 1792, 425 } },	-- 425x Honor
@@ -1445,7 +1445,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 								i(137642),	-- Mark of Honor
 							},
 						}),
-						n(SEASON_COSMIC, bubbleDown({ ["timeline"] = { "added 9.1.2" } }, {
+						n(SEASON_COSMIC, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 							n(WEAPONS, {
 								i(186863, {	-- Cosmic Gladiator's Ballista
 									["cost"] = { { "c", 1602, 1800 } },
@@ -1774,7 +1774,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 								}),
 							}),
 						})),
-						n(SEASON_UNCHAINED, bubbleDown({ ["timeline"] = { "added 9.1.0", "removed 9.1.2" } }, {
+						n(SEASON_UNCHAINED, bubbleDown({ ["timeline"] = { "added 9.1.0", "removed 9.2.0" } }, {
 							n(WEAPONS, {
 								i(188660, {	-- Unchained Gladiator's Barrier
 									["cost"] = { { "c", 1602, 450 } },	-- 450x Conquest

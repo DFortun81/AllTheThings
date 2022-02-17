@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root("Zones", m(SHADOWLANDS, {
+root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 	m(ZERETH_MORTIS, {
 		n(ZONE_REWARDS, {
 			i(189544),	-- Anima Webbing
@@ -51,4 +51,4 @@ root("Zones", m(SHADOWLANDS, {
 			i(190389),	-- Broker's Lucky Coin
 		}),
 	}),
-}));
+})));

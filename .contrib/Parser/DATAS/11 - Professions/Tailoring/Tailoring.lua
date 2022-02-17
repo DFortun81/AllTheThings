@@ -5033,11 +5033,13 @@ profession(TAILORING, {
 				},
 				{
 					["name"] = "Crafter's Mark IV",
-					["recipeID"] = 359661
+					["recipeID"] = 359661,
+					["timeline"] = { "added 9.2.0" },
 				},
 				{
 					["name"] = "Crafter's Mark of the First Ones",
-					["recipeID"] = 359670
+					["recipeID"] = 359670,
+					["timeline"] = { "added 9.2.0" },
 				},
 				{
 					["name"] = "Novice Crafter's Mark",
@@ -5045,7 +5047,8 @@ profession(TAILORING, {
 				},
 				{
 					["name"] = "Vestige of the Eternal",
-					["recipeID"] = 359703
+					["recipeID"] = 359703,
+					["timeline"] = { "added 9.2.0" },
 				},
 			}
 		},

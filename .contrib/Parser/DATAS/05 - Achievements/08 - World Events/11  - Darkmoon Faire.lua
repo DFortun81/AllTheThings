@@ -328,18 +328,20 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, bubbleDown({ ["u"
 			ach(9786),	-- Wayfarer (25 tolls)
 		}),
 		-- PTR
-		ach(15215, {	-- Can't Stop the Feeling
+		ach(15215, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Can't Stop the Feeling
 			ach(15214),	-- What a Feeling
+		})),
+		ach(15221, {	-- Dancing Machine
+			["timeline"] = { "added 9.2.0" },
 		}),
-		ach(15221),	-- Dancing Machine
-		ach(15213, {	-- Don't Stop Dancing
+		ach(15213, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Don't Stop Dancing
 			ach(15212),	-- First Dance
-		}),
-		ach(15223, {	-- Feeling It
+		})),
+		ach(15223, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Feeling It
 			ach(15222),	-- You Got the Beat
-		}),
-		ach(15217, {	-- Maniac on the Dance Floor
+		})),
+		ach(15217, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Maniac on the Dance Floor
 			ach(15216),	-- Make You Sweat
-		}),
+		})),
 	}),
 })));

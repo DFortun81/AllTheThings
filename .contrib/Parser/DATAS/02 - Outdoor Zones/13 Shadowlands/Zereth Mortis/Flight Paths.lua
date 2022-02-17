@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root("Zones", m(SHADOWLANDS, {
+root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 	m(ZERETH_MORTIS, {
 		n(FLIGHT_PATHS, {
 			fp(2734, {	-- Antecedent Isle
@@ -43,4 +43,4 @@ root("Zones", m(SHADOWLANDS, {
 			}),
 		}),
 	}),
-}));
+})));

@@ -9,18 +9,22 @@ profession(ENGINEERING, {
 						{
 							["recipeID"] = 359664,	-- Crafter's Mark IV
 							["name"] = "Crafter's Mark IV",
+							["timeline"] = { "added 9.2.0" },
 						},
 						{
 							["recipeID"] = 359674,	-- Crafter's Mark of the First Ones
 							["name"] = "Crafter's Mark of the First Ones",
+							["timeline"] = { "added 9.2.0" },
 						},
 						{
 							["recipeID"] = 360126,	-- Erratic Genesis Matrix
 							["name"] = "Erratic Genesis Matrix",
+							["timeline"] = { "added 9.2.0" },
 						},
 						{
 							["recipeID"] = 360088,	-- Pure-Air Sail Extensions
 							["name"] = "Pure-Air Sail Extensions",
+							["timeline"] = { "added 9.2.0" },
 						},
 					},
 				},

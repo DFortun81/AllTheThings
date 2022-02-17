@@ -67,7 +67,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					i(187882),	-- Alpaca Soul
 				},
 			}),
-			e(2550, bubbleDown({ ["timeline"] = { "added 9.1.2" } }, {	-- Antros <Keeper of the Antecedents>
+			e(2550, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {	-- Antros <Keeper of the Antecedents>
 				["crs"] = {
 					182466,	-- Antros
 					182863,	-- Sav'thul

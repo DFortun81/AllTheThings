@@ -210,6 +210,7 @@ _.ExpansionFeatures =
 				-- PTR
 				i(188700, {	-- Colossal Umbrahide Mawrat (MOUNT!)
 					["description"] = "Only from Layer 13 or higher",
+					["timeline"] = { "added 9.2.0" },
 				}),
 			}),
 		}),

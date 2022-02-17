@@ -347,15 +347,17 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			crit(10),	-- The Dreadful Blend
 		}),
 		-- PTR
-		ach(15336, {	-- From A to Zereth
+		ach(15336, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- From A to Zereth
 			i(187673),	-- Cryptic Aurelid (MOUNT!)
-		}),
-		ach(15259, {	-- Secrets of the First Ones
+		})),
+		ach(15259, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Secrets of the First Ones
 			ach(15518),	-- A Means to an End
-		}),
-		ach(15229, {	-- Traversing the Spheres
+		})),
+		ach(15229, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Traversing the Spheres
 			i(187860),	-- Mortis Mover (TOY!)
+		})),
+		ach(15515, {	-- Path to Enlightenment
+			["timeline"] = { "added 9.2.0" }
 		}),
-		ach(15515),	-- Path to Enlightenment
 	}),
 }));

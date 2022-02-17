@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root("Zones", m(SHADOWLANDS, {
+root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 	m(ZERETH_MORTIS, {
 		["achievementID"] = 15224,	-- Explore Zereth Mortis
 	--	["lore"] = "",
@@ -14,4 +14,4 @@ root("Zones", m(SHADOWLANDS, {
 			2066,	-- Catalyst Wards
 		},
 	}),
-}));
+})));

@@ -997,7 +997,7 @@ root("Zones", m(KALIMDOR, {
 				["coord"] = { 74.6, 47.4, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["classes"] = { WARLOCK },
-				["timeline"] = { "added 9.1.2" },
+				["timeline"] = { "added 9.2.0" },
 			}),
 			q(60346, {	-- What's Your Specialty? (Druid)
 				["customCollect"] = "NPE",	-- New Player Experience

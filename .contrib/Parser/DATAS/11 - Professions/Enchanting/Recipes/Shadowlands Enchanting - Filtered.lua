@@ -18,10 +18,12 @@ profession(ENCHANTING, {
 						{
 							["recipeID"] = 360013,	-- Cosmic Protoweave
 							["name"] = "Cosmic Protoweave",
+							["timeline"] = { "added 9.2.0" },
 						},
 						{
 							["recipeID"] = 360007,	-- Magically Regulated Automa Core
 							["name"] = "Magically Regulated Automa Core",
+							["timeline"] = { "added 9.2.0" },
 						},
 					},
 				},

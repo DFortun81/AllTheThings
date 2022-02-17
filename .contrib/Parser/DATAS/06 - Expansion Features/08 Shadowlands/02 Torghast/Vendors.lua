@@ -58,6 +58,7 @@ _.ExpansionFeatures =
 							["cost"] = { { "c", 1728, 300 } },	-- 300x Phantasma
 						}),
 						-- PTR 9.2
+						-- #if AFTER 9.2.0
 						i(188743),	-- Ashen Mawsworn Crossbow	L14 300P	FC
 						i(188737),	-- Ebon Mawsworn Crossbow	L15 300P	FC/CI
 						i(188747),	-- Ashen Mawsworn Halberd	L15 300P	FC/CI
@@ -73,6 +74,7 @@ _.ExpansionFeatures =
 						i(188688),	-- Burnished Eye Crescent Drop from L15 FC Kosarus the Fallen(153451)
 						i(188686),	-- Burnished Soul Restraint Drop from L16 FC Gherus the Chained(155945)
 						i(188687),	-- Burnished Skull Crescent No Info.
+						-- #endif
 					},
 				}),
 			}),

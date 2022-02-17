@@ -9,6 +9,7 @@ profession(ALCHEMY, {
 						{
 							["recipeID"] = 359870,	-- Cosmic Healing Potion
 							["name"] = "Cosmic Healing Potion",
+							["timeline"] = { "added 9.2.0" },
 						},
 					},
 				},
@@ -43,18 +44,22 @@ profession(ALCHEMY, {
 						{
 							["recipeID"] = 359666,	-- Crafter's Mark IV
 							["name"] = "Crafter's Mark IV",
+							["timeline"] = { "added 9.2.0" },
 						},
 						{
 							["recipeID"] = 359673,	-- Crafter's Mark of the First Ones
 							["name"] = "Crafter's Mark of the First Ones",
+							["timeline"] = { "added 9.2.0" },
 						},
 						{
 							["recipeID"] = 360014,	-- Infusion: Corpse Purification
 							["name"] = "Infusion: Corpse Purification",
+							["timeline"] = { "added 9.2.0" },
 						},
 						{
 							["recipeID"] = 360318,	-- Sustaining Armor Polish
 							["name"] = "Sustaining Armor Polish",
+							["timeline"] = { "added 9.2.0" },
 						},
 					},
 				},

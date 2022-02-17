@@ -2270,7 +2270,8 @@ profession(COOKING, {
 			["groups"] = {
 				{
 					["name"] = "Empty Kettle of Stone Soup",
-					["recipeID"] = 359333
+					["recipeID"] = 359333,
+					["timeline"] = { "added 9.2.0" },
 				},
 				{
 					["name"] = "Feast of Gluttonous Hedonism",

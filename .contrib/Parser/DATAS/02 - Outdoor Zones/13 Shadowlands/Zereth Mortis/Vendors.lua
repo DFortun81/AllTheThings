@@ -3,7 +3,7 @@
 ---------------------------------------------------
 local SANDWORN_RELIC = 190189;
 local CYPHER = 1979;
-root("Zones", m(SHADOWLANDS, {
+root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 	m(ZERETH_MORTIS, {
 		n(VENDORS, {
 			o(375368, {	-- Creation Catalyst Console
@@ -409,4 +409,4 @@ root("Zones", m(SHADOWLANDS, {
 			}),
 		}),
 	}),
-}));
+})));

@@ -6,7 +6,7 @@ _.ExpansionFeatures =
 {
 	tier(SL_TIER, {
 		m(1627, {	-- Torghast
-			n(SPECIAL, {
+			n(SPECIAL, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				n(185453, {	-- Lost Soul
 					["description"] = "Obtained Layer 16 --",
 					["g"] = {
@@ -37,7 +37,7 @@ _.ExpansionFeatures =
 						i(189976),	-- Tallstrider Soul
 					},
 				}),
-			}),
+			})),
 		}),
 	}),
 };

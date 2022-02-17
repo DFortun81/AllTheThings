@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root("Zones", m(SHADOWLANDS, {
+root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 	m(ZERETH_MORTIS, {
 		n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, ["sourceQuests"] = { 64230 } }, {
 			q(65081, {	-- An Apple A Day
@@ -92,7 +92,7 @@ root("Zones", m(SHADOWLANDS, {
 			}),
 		})),
 	}),
-}));
+})));
 
 root("HiddenQuestTriggers", {
 	q(65418),	-- Triggered when completing a puzzle WQ

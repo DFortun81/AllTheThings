@@ -573,7 +573,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(15),		-- The Hundred Club (25 player)
 			crit(16),		-- Just Can't Get Enough (25 player)
 		}),
-		ach(15491, {	-- Glory of the Sepulcher Raider
+		ach(15491, sharedDataSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Glory of the Sepulcher Raider
 			i(187675),	-- Shimmering Aurelid
 			ach(15381),	-- Power ON
 			ach(15401),	-- Wisdom Comes From the Desert
@@ -586,7 +586,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			ach(15315),	-- Amidst Ourselves
 			ach(15396),	-- We Are All Made of Stars
 			ach(15494),	-- Damnation Aviation
-		}),
+		})),
 		ach(14322, {	-- Glory of the Shadowlands Hero
 			i(184183),		-- Voracious Gorger
 			crit(1),		-- Bountiful Harvest

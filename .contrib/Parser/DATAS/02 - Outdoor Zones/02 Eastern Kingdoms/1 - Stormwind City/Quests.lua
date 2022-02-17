@@ -1192,7 +1192,7 @@ root("Zones", {
 					["coord"] = { 79.5, 69.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARLOCK },
-					["timeline"] = { "added 9.1.2" },
+					["timeline"] = { "added 9.2.0" },
 				}),
 				q(58910, {	-- What's Your Specialty? (Druid)
 					["customCollect"] = "NPE",	-- New Player Experience
