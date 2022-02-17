@@ -7036,13 +7036,13 @@ end)();
 (function()
 local cache = app.CreateCache("achievementID");
 local function CacheInfo(t, field)
-	local t, id = cache.GetCached(t);
+	local _t, id = cache.GetCached(t);
 	--local IDNumber, Name, Points, Completed, Month, Day, Year, Description, Flags, Image, RewardText, isGuildAch = GetAchievementInfo(t.achievementID);
 	local _, name, _, _, _, _, _, _, _, icon = GetAchievementInfo(id);
-	t.link = GetAchievementLink(id);
-	t.name = name or ("Achievement #"..id);
-	t.icon = icon or QUESTION_MARK_ICON;
-	if field then return t[field]; end
+	_t.link = GetAchievementLink(id);
+	_t.name = name or ("Achievement #"..id);
+	_t.icon = icon or QUESTION_MARK_ICON;
+	if field then return _t[field]; end
 end
 app.AchievementFilter = 4;
 local fields = {
@@ -7477,18 +7477,18 @@ local C_PetJournal_GetPetInfoBySpeciesID = C_PetJournal.GetPetInfoBySpeciesID;
 
 local cache = app.CreateCache("speciesID");
 local function CacheInfo(t, field)
-	local t, id = cache.GetCached(t);
+	local _t, id = cache.GetCached(t);
 	-- speciesName, speciesIcon, petType, companionID, tooltipSource, tooltipDescription, isWild,
 	-- canBattle, isTradeable, isUnique, obtainable, creatureDisplayID = C_PetJournal.GetPetInfoBySpeciesID(speciesID)
 	local speciesName, speciesIcon, petType, _, _, tooltipDescription, _, _, _, _, _, creatureDisplayID = C_PetJournal_GetPetInfoBySpeciesID(id);
 	if speciesName then
-		t.name = speciesName;
-		t.icon = speciesIcon;
-		t.petTypeID = petType;
-		t.lore = tooltipDescription;
-		t.displayID = creatureDisplayID;
-		t.text = "|cff0070dd"..speciesName.."|r";
-		if field then return t[field]; end
+		_t.name = speciesName;
+		_t.icon = speciesIcon;
+		_t.petTypeID = petType;
+		_t.lore = tooltipDescription;
+		_t.displayID = creatureDisplayID;
+		_t.text = "|cff0070dd"..speciesName.."|r";
+		if field then return _t[field]; end
 	end
 end
 local function default_link(t)
@@ -8043,13 +8043,13 @@ end)();
 (function()
 local cache = app.CreateCache("encounterID");
 local function CacheInfo(t, field)
-	local t, id = cache.GetCached(t);
+	local _t, id = cache.GetCached(t);
 	local name, lore, _, _, link = EJ_GetEncounterInfo(id);
-	t.name = name;
-	t.lore = lore;
-	t.link = link;
-	t.displayID = select(4, EJ_GetCreatureInfo(1, id));
-	if field then return t[field]; end
+	_t.name = name;
+	_t.lore = lore;
+	_t.link = link;
+	_t.displayID = select(4, EJ_GetCreatureInfo(1, id));
+	if field then return _t[field]; end
 end
 local function default_displayInfo(t)
 	local displayInfos, id, displayInfo = {}, t.encounterID;
@@ -8253,7 +8253,7 @@ local function CacheInfo(t, field)
 			end
 		 end
 	end
-	if field then return t[field]; end
+	if field then return _t[field]; end
 end
 local fields = {
 	["key"] = function(t)
@@ -8663,7 +8663,7 @@ local function CacheInfo(t, field)
 		_t.title = info.className;
 		_t.displayID = info.displayIDs and info.displayIDs[1] and info.displayIDs[1].id;
 	end
-	if field then return t[field]; end
+	if field then return _t[field]; end
 end
 local fields = {
 	["key"] = function(t)
@@ -8717,20 +8717,52 @@ end
 end)();
 
 -- Garrison Lib
--- TODO: use caching
 (function()
 local C_Garrison_GetBuildingInfo = C_Garrison.GetBuildingInfo;
 local C_Garrison_GetMissionName = C_Garrison.GetMissionName;
 local C_Garrison_GetTalentInfo = C_Garrison.GetTalentInfo;
+
+local cache = app.CreateCache("buildingID");
+local function CacheInfo(t, field)
+	local _t, id = cache.GetCached(t);
+	local _, name, _, icon, lore, _, _, _, _, _, uncollected = C_Garrison_GetBuildingInfo(id);
+	_t.name = name;
+	_t.text = name;
+	_t.lore = lore;
+	_t.icon = _t.icon or icon;
+	if not uncollected then
+		app.CurrentCharacter.Buildings[t.buildingID] = 1;
+		ATTAccountWideData.Buildings[t.buildingID] = 1;
+	end
+	-- item on a building can replace fields
+	if t.itemID then
+		local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
+		if link then
+			_t.icon = icon or _t.icon;
+			_t.link = link;
+		end
+	end
+	if field then return _t[field]; end
+end
+
 local fields = {
 	["key"] = function(t)
 		return "buildingID";
 	end,
 	["text"] = function(t)
-		return t.link or select(2, C_Garrison_GetBuildingInfo(t.buildingID));
+		return t.link or cache.GetCachedField(t, "text", CacheInfo);
+	end,
+	["link"] = function(t)
+		return cache.GetCachedField(t, "link", CacheInfo);
 	end,
 	["name"] = function(t)
-		return select(2, C_Garrison_GetBuildingInfo(t.buildingID));
+		return cache.GetCachedField(t, "name", CacheInfo);
+	end,
+	["lore"] = function(t)
+		return cache.GetCachedField(t, "lore", CacheInfo);
+	end,
+	["icon"] = function(t)
+		return cache.GetCachedField(t, "icon", CacheInfo);
 	end,
 	["filterID"] = function(t)
 		return t.itemID and 200;
@@ -8739,37 +8771,14 @@ local fields = {
 		return t.itemID and app.CollectibleRecipes;
 	end,
 	["collected"] = function(t)
-		if app.CurrentCharacter.Buildings[t.buildingID] then return 1; end
-		if not select(11, C_Garrison_GetBuildingInfo(t.buildingID)) then
-			app.CurrentCharacter.Buildings[t.buildingID] = 1;
-			ATTAccountWideData.Buildings[t.buildingID] = 1;
+		local id = t.buildingID;
+		if app.CurrentCharacter.Buildings[id] then return 1; end
+		if not select(11, C_Garrison_GetBuildingInfo(id)) then
+			app.CurrentCharacter.Buildings[id] = 1;
+			ATTAccountWideData.Buildings[id] = 1;
 			return 1;
 		end
-		if app.AccountWideRecipes and ATTAccountWideData.Buildings[t.buildingID] then return 2; end
-	end,
-	["lore"] = function(t)
-		return select(5, C_Garrison_GetBuildingInfo(t.buildingID));
-	end,
-	["icon"] = function(t)
-		if t.itemID then
-			local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
-			if link then
-				rawset(t, "icon", icon);
-				rawset(t, "link", link);
-				return icon;
-			end
-		end
-		return select(4, C_Garrison_GetBuildingInfo(t.buildingID));
-	end,
-	["link"] = function(t)
-		if t.itemID then
-			local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
-			if link then
-				rawset(t, "icon", icon);
-				rawset(t, "link", link);
-				return link;
-			end
-		end
+		if app.AccountWideRecipes and ATTAccountWideData.Buildings[id] then return 2; end
 	end,
 };
 app.BaseGarrisonBuilding = app.BaseObjectFields(fields, "BaseGarrisonBuilding");
@@ -9184,7 +9193,7 @@ local function CacheInfo(t, field)
 	_t.lore = lore;
 	_t.icon = icon;
 	_t.link = link;
-	if field then return t[field]; end
+	if field then return _t[field]; end
 end
 local fields = {
 	["key"] = function(t)
@@ -10380,28 +10389,28 @@ end });
 local cache = app.CreateCache("spellID");
 local function CacheInfo(t, field)
 	local itemID = t.itemID;
-	local t, id = cache.GetCached(t);
+	local _t, id = cache.GetCached(t);
 	local mountID = SpellIDToMountID[id];
 	if mountID then
 		local displayID, lore = C_MountJournal_GetMountInfoExtraByID(mountID);
-		t.displayID = displayID;
-		t.lore = lore;
-		t.name = C_MountJournal_GetMountInfoByID(mountID);
-		t.mountID = mountID;
+		_t.displayID = displayID;
+		_t.lore = lore;
+		_t.name = C_MountJournal_GetMountInfoByID(mountID);
+		_t.mountID = mountID;
 	end
 	local name, _, icon = GetSpellInfo(id);
-	t.text = "|cffb19cd9"..name.."|r";
-	t.icon = icon;
+	_t.text = "|cffb19cd9"..name.."|r";
+	_t.icon = icon;
 	if itemID then
 		local itemName = select(2, GetItemInfo(itemID));
 		-- item info might not be available on first request, so don't cache the data
 		if itemName then
-			t.link = itemName;
+			_t.link = itemName;
 		end
 	else
-		t.link = GetSpellLink(id);
+		_t.link = GetSpellLink(id);
 	end
-	if field then return t[field]; end
+	if field then return _t[field]; end
 end
 local mountFields = {
 	["key"] = function(t)
@@ -11002,7 +11011,7 @@ end)();
 
 -- Profession Lib
 (function()
-app.SkillIDToSpellID = setmetatable({
+app.SkillIDToSpellID = {
 	[171] = 2259,	-- Alchemy
 	[794] = 158762,	-- Arch
 	[261] = 5149,	-- Beast Training
@@ -11043,7 +11052,7 @@ app.SkillIDToSpellID = setmetatable({
 	[125586] = 125586,	-- Way of the Pot
 	[125587] = 125587,	-- Way of the Steamer
 	[125584] = 125584,	-- Way of the Wok
-}, {__index = function(t,k) end})
+};
 app.SpellIDToSkillID = {};
 for skillID,spellID in pairs(app.SkillIDToSpellID) do
 	app.SpellIDToSkillID[spellID] = skillID;
