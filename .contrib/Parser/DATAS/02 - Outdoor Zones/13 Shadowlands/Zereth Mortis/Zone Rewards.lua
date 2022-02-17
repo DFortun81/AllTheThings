@@ -4,6 +4,12 @@
 root("Zones", m(SHADOWLANDS, {
 	m(ZERETH_MORTIS, {
 		n(ZONE_REWARDS, {
+			i(189544),	-- Anima Webbing
+			i(189864),	-- Anima Gossamer
+			currency(1979),	-- Cyphers of the First Ones
+			currency(2009),	-- Cosmic Flux
+			i(190189),	-- Sandworn Relic
+			--
 			i(190605),	-- Impossibly Ancient Cloak
 			i(190355),	-- Cryptic Cinch
 			i(190351),	-- Cryptic Grips
@@ -36,6 +42,13 @@ root("Zones", m(SHADOWLANDS, {
 			i(190342),	-- Oracular Slippers
 			i(190341),	-- Oracular Smock
 			i(190348),	-- Oracular Wrists
+			--
+			i(190634),	-- Cypher-Etched Torque
+			i(190633),	-- Cypher-Etched Band
+			i(190635),	-- Cypher-Etched Lavaliere
+			i(190632),	-- Cypher-Etched Ring
+			--
+			i(190389),	-- Broker's Lucky Coin
 		}),
 	}),
 }));

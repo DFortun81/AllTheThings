@@ -26,6 +26,23 @@ root("Zones", m(SHADOWLANDS, {
 					i(187860),	-- Mortis Mover (TOY!)
 				}),
 			}),
+			n(184750, {	-- Core Configuration Console
+				["description"] = "This was never tested on the PTR",
+				["g"] = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+					i(189707),	-- Pocopoc's Bronze and Gold Body
+					i(189708),	-- Pocopoc's Beryllium and Silver Body
+					i(189709),	-- Pocopoc's Cobalt and Copper Body
+					i(189710),	-- Pocopoc's Ruby and Platinum Body
+					i(189711),	-- Pocopoc's Gold and Ruby Components
+					i(189712),	-- Pocopoc's Silver and Beryllium Components
+					i(189713),	-- Pocopoc's Copper and Cobalt Components
+					i(189714),	-- Pocopoc's Platinum and Emerald Components
+					i(189715),	-- Pocopoc's Diamond Vambraces
+					i(189716),	-- Pocopoc's Face Decoration
+					i(189717),	-- Pocopoc's Shielded Core
+					i(189718),	-- Pocopoc's Upgraded Core
+				}),
+			}),
 			i(187908, {	-- Firim's Spare Forge-tap
 				["description"] = "This item are only available from Firim after completing the Daily Quest: Materials of Creation(64717).",
 				["questID"] = 65027,
@@ -47,7 +64,7 @@ root("Zones", m(SHADOWLANDS, {
 						},
 					}),
 					i(187885, {	-- Honeycombed Lattice
-						["questID"] = 65011,
+						["questID"] = 65011, -- NEW HQT? 65622
 						["g"] = {
 							crit(2, {	-- Honeycombed Lattice
 								["achievementID"] = 15229,	-- Traversing the Spheres
@@ -106,7 +123,6 @@ root("Zones", m(SHADOWLANDS, {
 					i(187787, {	-- Ephemera Orb
 						["cost"] = { { "i", 187728, 15 }, },	-- 15xEphemera Strands
 						["g"] = {
-							i(188231),	-- Provis Cache Key
 							i(187890, {	-- Anima-charged Yolk
 								["questID"] = 65019,
 								["g"] = {
@@ -115,6 +131,8 @@ root("Zones", m(SHADOWLANDS, {
 									}),
 								},
 							}),
+							i(187735),	-- Geordy (PET!)
+							i(188231),	-- Provis Cache Key
 						},
 					}),
 				},
@@ -274,22 +292,24 @@ root("Zones", m(SHADOWLANDS, {
 				},
 			}),
 			n(QUESTS, {
-				-- Puzzle Quests (CHECK SQ ON LIVE)
+				q(65674, {	-- What Is This Thing?
+					["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
+					["provider"] = { "i", 190579 },	-- Unformed Essence
+				}),
+				-- Puzzle Quests
 				q(65460, {	-- Your First Cantaric Protolock
 					["description"] = "Requires Cachial.",
-					["sourceQuests"] = { 64951 },	-- The Road to Haven (or The Forces Gather(64958) or something inbetween)
+					["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 					["provider"] = { "n", 177958 },	-- Firim
 					["coord"] = { 34.6, 48.1, ZERETH_MORTIS },
 				}),
 				q(65461, {	-- Your First Mezzonic Protolock
-					["description"] = "Requires Cachial.",
-					["sourceQuests"] = { 64951 },	-- The Road to Haven (or The Forces Gather(64958) or something inbetween)
+					["sourceQuests"] = { 65460 },	-- Your First Mezzonic Protolock
 					["provider"] = { "n", 177958 },	-- Firim
 					["coord"] = { 34.6, 48.1, ZERETH_MORTIS },
 				}),
 				q(65466, {	-- Your First Fugueal Protolock
-					["description"] = "Requires Cachial.",
-					["sourceQuests"] = { 64951 },	-- The Road to Haven (or The Forces Gather(64958) or something inbetween)
+					["sourceQuests"] = { 65461 },	-- Your First Mezzonic Protolock
 					["provider"] = { "n", 177958 },	-- Firim
 					["coord"] = { 34.6, 48.1, ZERETH_MORTIS },
 				}),
@@ -309,10 +329,17 @@ root("Zones", m(SHADOWLANDS, {
 					["provider"] = { "n", 181397 },	-- Cypher Console
 					["coord"] = { 33.8, 49.4, ZERETH_MORTIS },
 				}),
+				--
+				q(65700, {	-- Core Control
+					["description"] = "Requires Trebalim Understanding.",
+					["sourceQuests"] = { 65433 },	-- Further Research: Trebalim
+					["provider"] = { "n", 177958 },	-- Firim
+					["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
+				}),
 				-- Hanoa Questline (Terrace of Formation)
 				q(64772, {	-- Broken Circle
 					["description"] = "Requires Altonian Understanding.",
-					["sourceQuests"] = { 65432 },	-- Further Research: Dealic
+					["sourceQuests"] = { 65431 },	-- Further Research: Aealic
 					["provider"] = { "n", 181091 },	-- Hanoa the Exile
 					["coord"] = { 40.1, 42.1, ZERETH_MORTIS },
 				}),
@@ -369,9 +396,9 @@ root("Zones", m(SHADOWLANDS, {
 					["provider"] = { "n", 180989 },	-- Hanoa the Exile
 					["coord"] = { 42.7, 31.4, ZERETH_MORTIS },
 				}),
-				-- Glimmercane Questline (Untamed Verdure)
+				-- Glimmercane Questline
 				q(64641, {	-- Mysterious Greenery
-					["description"] = "Requires Altonian Understanding.",
+					["description"] = "Requires Sorpranian Understanding.",
 					["sourceQuests"] = { 65432 },	-- Further Research: Dealic
 					["provider"] = { "n", 180799 },	-- Glimmercane
 					["coord"] = { 55.3, 64.4, ZERETH_MORTIS },
@@ -489,50 +516,71 @@ root("Zones", m(SHADOWLANDS, {
 				-- Firim
 				o(375973, {	-- Firim in Exile, Part 1
 					["coord"] = { 35.7, 55.4, ZERETH_MORTIS },
-					--["questID"] = ,
+					["questID"] = 65739,
 					["g"] = {
+						crit(1, {	-- Firim in Exile, Part 1
+							["achievementID"] = 15509,	-- Tales of the Exile
+						}),
 						i(189575),	-- Firim in Exile, Part 1
 					},
 				}),
 				o(375982, {	-- Firim in Exile, Part 2
 					["coord"] = { 41.8, 62.4, ZERETH_MORTIS },
-					--["questID"] = ,
+					["questID"] = 65741,
 					["g"] = {
+						crit(2, {	-- Firim in Exile, Part 2
+							["achievementID"] = 15509,	-- Tales of the Exile
+						}),
 						i(189576),	-- Firim in Exile, Part 2
 					},
 				}),
 				o(375983, {	-- Firim in Exile, Part 3
 					["coord"] = { 37.5, 46.1, ZERETH_MORTIS },
-					--["questID"] = ,
+					["questID"] = 65742,
 					["g"] = {
+						crit(3, {	-- Firim in Exile, Part 3
+							["achievementID"] = 15509,	-- Tales of the Exile
+						}),
 						i(189578),	-- Firim in Exile, Part 3
 					},
 				}),
 				o(375984, {	-- Firim in Exile, Part 4
 					["coord"] = { 49.9, 76.6, ZERETH_MORTIS },
-					--["questID"] = ,
+					["questID"] = 65743,
 					["g"] = {
+						crit(4, {	-- Firim in Exile, Part 4
+							["achievementID"] = 15509,	-- Tales of the Exile
+						}),
 						i(189579),	-- Firim in Exile, Part 4
 					},
 				}),
 				o(375985, {	-- Firim in Exile, Part 5
 					["coord"] = { 39, 31.1, ZERETH_MORTIS },
-					--["questID"] = ,
+					["questID"] = 65744,
 					["g"] = {
+						crit(5, {	-- Firim in Exile, Part 5
+							["achievementID"] = 15509,	-- Tales of the Exile
+						}),
 						i(189580),	-- Firim in Exile, Part 5
 					},
 				}),
 				o(375986, {	-- Firim in Exile, Part 6
 					["coord"] = { 67.4, 25.2, ZERETH_MORTIS },
-					--["questID"] = ,
+					["questID"] = 65745,
 					["g"] = {
+						crit(6, {	-- Firim in Exile, Part 6
+							["achievementID"] = 15509,	-- Tales of the Exile
+						}),
 						i(189581),	-- Firim in Exile, Part 6
 					},
 				}),
 				o(375987, {	-- Firim in Exile, Part 7
 					["coord"] = { 64.8, 33.6, ZERETH_MORTIS },
-					--["questID"] = ,
+					["questID"] = 65746,
 					["g"] = {
+						crit(7, {	-- Firim in Exile, Part 7
+							["achievementID"] = 15509,	-- Tales of the Exile
+						}),
 						i(189582),	-- Firim in Exile, Part 7
 					},
 				}),
@@ -543,7 +591,8 @@ root("Zones", m(SHADOWLANDS, {
 						i(189753),	-- Firim in Exile, Epilogue
 					},
 				}),
-				-- Puzzle Chests
+			}),
+			n(TREASURES, sharedData({ ["isDaily"] = true }, {	-- Puzzle Chests
 				o(375062, {	-- Cantaric Cache
 					["coords"] = {
 						{ 48.7, 87.5, ZERETH_MORTIS },
@@ -582,6 +631,14 @@ root("Zones", m(SHADOWLANDS, {
 					},
 					["questID"] = 65317,
 				}),
+				--o(375061, {	-- Fugueal Cache
+				--	["coords"] = {
+				--		{ 57.5, 65.8, ZERETH_MORTIS },
+				--		{ 63.1, 37.4, ZERETH_MORTIS },
+				--		{ 47.1, 77.2, ZERETH_MORTIS },
+				--	},
+				--	["questID"] = 65093,
+				--}),
 				o(375067, {	-- Glissandian Cache
 					["coords"] = {
 						{ 40, 72.9, ZERETH_MORTIS },
@@ -649,16 +706,10 @@ root("Zones", m(SHADOWLANDS, {
 					},
 					["questID"] = 65319,
 				}),
-			}),
+			})),
 		}),
 	}),
 }));
-
-root("HiddenQuestTriggers", {
-	-- Puzzle Chests AlexSoft = AS, Cantaric = Berlekamp's Switch Game, Mezzonic = Lights Out, Fugueal = 4 Properties Game, Glissandian = Bejeweled Puzzle, Toccatian = Crossed Lines
-	--q(65093),	-- Triggered when completed the puzzle, Fugueal At M1:57.5 65.8 // M2:63.1, 37.4 / AS: 57.5 65.8 // AS2:63.1 37.4 // AS3:47.1 77.2
-	--q(65092),	-- Triggered when completed the puzzle, Glissandian At 58.9, 36.4 / AS:58.9 36.4 // AS2:41.8 31.3
-});
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(SL_TIER, {
@@ -672,6 +723,14 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			ach(15564),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Sopranian
 			ach(15565),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Bassalim
 			ach(15566),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Metrial
+			ach(15568),	-- 	9.2 ZM - Cypher System - Talent Research Started - Metrial
+			ach(15569),	-- 	9.2 ZM - Cypher System - Talent Research Started - Aealic
+			ach(15570),	-- 	9.2 ZM - Cypher System - Talent Research Started - Dealic
+			ach(15571),	-- 	9.2 ZM - Cypher System - Talent Research Started - Trebalim
+			ach(15572),	-- 	9.2 ZM - Cypher System - Talent Research Started - Cachial
+			ach(15573),	-- 	9.2 ZM - Cypher System - Talent Research Started - Altonian
+			ach(15574),	-- 	9.2 ZM - Cypher System - Talent Research Started - Sopranian
+			ach(15575),	-- 	9.2 ZM - Cypher System - Talent Research Started - Bassalim
 		}),
 	}),
 }));

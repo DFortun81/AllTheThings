@@ -101,6 +101,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.5" } },
 								}),
 								ach(15401),	-- Wisdom Comes From the Desert
 								i(189819),	-- Assimilated Safeguard
+								i(188267),	-- Bells of the Endless Feast
 								i(189816),	-- Crystallized Viscera Spike
 								i(189812),	-- Devourer's Sandblown Hidebinders
 								i(189810),	-- Ephemera-Softened Exoskeleton
@@ -462,6 +463,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.5" } },
 						}),
 						ach(15401),	-- Wisdom Comes From the Desert
 						i(189819),	-- Assimilated Safeguard
+						i(188267),	-- Bells of the Endless Feast
 						i(189816),	-- Crystallized Viscera Spike
 						i(189812),	-- Devourer's Sandblown Hidebinders
 						i(189810),	-- Ephemera-Softened Exoskeleton
@@ -811,6 +813,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.5" } },
 							["achievementID"] = 15478,	-- Heroic: Sepulcher of the First Ones
 						}),
 						i(189819),	-- Assimilated Safeguard
+						i(188267),	-- Bells of the Endless Feast
 						i(189816),	-- Crystallized Viscera Spike
 						i(189812),	-- Devourer's Sandblown Hidebinders
 						i(189810),	-- Ephemera-Softened Exoskeleton
@@ -1144,6 +1147,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.5" } },
 					["g"] = {
 						ach(15480),	-- Mythic: Skolex
 						i(189819),	-- Assimilated Safeguard
+						i(188267),	-- Bells of the Endless Feast
 						i(189816),	-- Crystallized Viscera Spike
 						i(189812),	-- Devourer's Sandblown Hidebinders
 						i(189810),	-- Ephemera-Softened Exoskeleton

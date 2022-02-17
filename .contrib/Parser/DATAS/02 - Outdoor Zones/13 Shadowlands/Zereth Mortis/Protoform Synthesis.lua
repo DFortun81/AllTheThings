@@ -114,6 +114,11 @@ root("Zones", m(SHADOWLANDS, {
 					["provider"] = { "i", 189444 },	-- Schematic: Leaping Leporid
 					["coord"] = { 58.3, 74.3, ZERETH_MORTIS },
 				}),
+				q(65358, {	-- Schematic Reassimilation: Microlicid
+					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
+					["provider"] = { "i", 189445 },	-- Schematic: Microlicid
+					["coord"] = { 28.1, 50, ZERETH_MORTIS },
+				}),
 				q(65333, {	-- Schematic Reassimilation: Multichicken
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189435 },	-- Schematic: Multichicken
@@ -154,11 +159,6 @@ root("Zones", m(SHADOWLANDS, {
 					["coord"] = { 58.9, 77, ZERETH_MORTIS },
 				}),
 				--[[ Not Found Yet
-				q(65358, {	-- Schematic Reassimilation: Microlicid
-					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
-					["provider"] = { "i", 189445 },	-- Schematic: Microlicid
-					["coord"] = { , , ZERETH_MORTIS },
-				}),
 				q(65336, {	-- Schematic Reassimilation: Stabilized Geomental
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189437 },	-- Schematic: Stabilized Geomental
@@ -423,6 +423,15 @@ root("Zones", m(SHADOWLANDS, {
 						i(189464),	-- Schematic: Scarlet Helicid
 					},
 				}),
+				o(375502, {	-- Protoform Schematic
+					["description"] = "Hidden in tree leafs.",
+					["coord"] = { 28.1, 50, ZERETH_MORTIS },
+					["g"] = {
+						i(189445),	-- Schematic: Microlicid
+					},
+				}),
+			}),
+			n(TREASURES, sharedData({ ["repeatable"] = true }, {
 				o(375915, {	-- Glimmer of Serenity
 					["description"] = "Multiple spawn places. Usually on top of an orb.",
 					["coords"] = {
@@ -439,7 +448,8 @@ root("Zones", m(SHADOWLANDS, {
 						{ 67, 16, ZERETH_MORTIS },
 						{ 32.8, 39.3, ZERETH_MORTIS },
 						{ 66.3, 27.2, ZERETH_MORTIS },
-						{ 64.7, 63.4, ZERETH_MORTIS },
+						{ 37.7, 29.1, ZERETH_MORTIS },
+						{ 61.5, 18.3, ZERETH_MORTIS },
 					},
 					["g"] = {
 						i(189168),	-- Glimmer of Serenity
@@ -467,7 +477,7 @@ root("Zones", m(SHADOWLANDS, {
 						i(189171),	-- Bauble of Pure Innovation
 					},
 				}),
-			}),
+			})),
 			filter(RECIPES, {
 				filter(BATTLE_PETS, {
 					recipe(364527),	-- Ambystan Darter

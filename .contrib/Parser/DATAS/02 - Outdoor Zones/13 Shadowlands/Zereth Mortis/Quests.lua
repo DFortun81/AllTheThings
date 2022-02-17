@@ -10,13 +10,13 @@ root("Zones", m(SHADOWLANDS, {
 				["provider"] = { "n", 184003 },	-- Pelagos TODO: Double Check ID
 				["coord"] = { 24.9, 53.6, ZERETH_MORTIS },
 			}),
-			q(65456, {	-- A Lot to Pack
+			q(65456, {	-- Long Lost Firim
 				["sourceQuests"] = { 64945 },	-- Stangers in a Strange Land
 				["provider"] = { "n", 181561 },	-- Firim
 				["coord"] = { 28.9, 53.5, ZERETH_MORTIS },
 			}),
 			q(64947, {	-- Give Me a Hand
-				["sourceQuests"] = { 64956 },	-- A Lot to Pack
+				["sourceQuests"] = { 64956 },	-- Long Lost Firim
 				["provider"] = { "n", 181561 },	-- Firim
 				["coord"] = { 28.9, 53.5, ZERETH_MORTIS },
 			}),
@@ -63,10 +63,56 @@ root("Zones", m(SHADOWLANDS, {
 			}),
 			-- Story Continues in Oribos
 			-- End
-
-			-- Chapter 2
-			q(64794, {	-- Knowing is Half the Battle
+			q(65748, {	-- You Supply The Effort
 				["sourceQuests"] = { 64958 },	-- The Forces Gather
+				["provider"] = { "n", 185713 },	-- Hadja
+				["coord"] = { 35.2, 65.7, ZERETH_MORTIS },
+			}),
+			q(65735, {	-- Wanted: Custos
+				["sourceQuests"] = { 64958 },	-- The Forces Gather
+				["provider"] = { "o", 375972 },	-- Wanted: Custos
+				["coord"] = { 35.3, 65.4, ZERETH_MORTIS },
+			}),
+			-- Chapter 2
+			q(65768, {	-- Our Forward Scouts
+				["sourceQuests"] = { 64958 },	-- The Forces Gather
+				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
+				["coord"] = { 35, 64.7, ZERETH_MORTIS },
+				["g"] = {
+					i(188025),	-- Anthemic Links
+					i(188011),	-- Choral Sash
+					i(188033),	-- Harmonium Girdle
+					i(188017),	-- Staccato Belt
+				},
+			}),
+			q(65771, {	-- Favor of the First Ones
+				["sourceQuests"] = { 64958 },	-- The Forces Gather
+				["provider"] = { "n", 178015 },	-- Elder Zoor
+				["coord"] = { 34.8, 65, ZERETH_MORTIS },
+				["g"] = {
+					i(190749),	-- Temporal Cryptic Grips
+					i(190744),	-- Temporal Enigmatic Footguards
+					i(190747),	-- Temporal Numerus Handguards
+					i(190753),	-- Temporal Oracular Wrists
+				},
+			}),
+			q(65772, {	-- Necessary Harvest
+				["sourceQuests"] = { 64958 },	-- The Forces Gather
+				["provider"] = { "n", 178016 },	-- Elder Ara
+				["coord"] = { 34.8, 64.2, ZERETH_MORTIS },
+				["g"] = {
+					i(190750),	-- Recreative Cryptic Grips
+					i(190743),	-- Recreative Enigmatic Footguards
+					i(190746),	-- Recreative Numerus Handguards
+					i(190752),	-- Recreative Oracular Wrists
+				},
+			}),
+			q(64794, {	-- Knowing is Half the Battle
+				["sourceQuests"] = {
+					64958,	-- Our Forward Scouts
+					65771,	-- Favor of the First Ones
+					65772,	-- Necessary Harvest
+				},
 				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 35, 64.6, ZERETH_MORTIS },
 			}),
@@ -79,6 +125,12 @@ root("Zones", m(SHADOWLANDS, {
 				["sourceQuests"] = { 64796 },	-- Scour The Sands
 				["provider"] = { "n", 182046 },	-- Shandris Feathermoon
 				["coord"] = { 48, 44.9, ZERETH_MORTIS },
+				["g"] = {
+					i(188024),	-- Anthemic Shoulders
+					i(188037),	-- Choral Amice
+					i(188032),	-- Harmonium Spaulders
+					i(188036),	-- Staccato Mantle
+				},
 			}),
 			q(64814, {	-- Battle for the Forge
 				["sourceQuests"] = { 64797 },	-- Harmony and Discord
@@ -103,7 +155,6 @@ root("Zones", m(SHADOWLANDS, {
 				["provider"] = { "n", 183615 },	-- Highlord Darion Mograine
 				["coord"] = { 41.9, 48.1, ZERETH_MORTIS },
 			}),
-
 			q(64820, {	-- This Is Your Fault, Fix it
 				["sourceQuests"] = { 64818 },	-- Reinforcements May Be Necessary
 				["provider"] = { "n", 177486 },	-- Elder Kreth
@@ -111,12 +162,12 @@ root("Zones", m(SHADOWLANDS, {
 			}),
 			q(64821, {	-- Nothing is True
 				["sourceQuests"] = { 64818 },	-- Reinforcements May Be Necessary
-				["provider"] = { "n", 181183 },	-- Highlord Darion Mograine
+				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 35, 64.8, ZERETH_MORTIS },
 			}),
 			q(64822, {	-- A Break in Communcation
 				["sourceQuests"] = { 64818 },	-- Reinforcements May Be Necessary
-				["provider"] = { "n", 181183 },	-- Highlord Darion Mograine
+				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 35, 64.8, ZERETH_MORTIS },
 			}),
 			q(64823, {	-- Doppelganger Duel
@@ -125,7 +176,7 @@ root("Zones", m(SHADOWLANDS, {
 					64821,	-- Nothing is True
 					64822,	-- A Break in Communcation
 				},
-				["provider"] = { "n", 181183 },	-- Highlord Darion Mograine
+				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 35, 64.8, ZERETH_MORTIS },
 			}),
 			q(64824, {	-- Fighting For The Forge
@@ -141,10 +192,12 @@ root("Zones", m(SHADOWLANDS, {
 					crit(2, {	-- We Battle Onward
 						["achievementID"] = 15259,	-- Secrets of the First Ones
 					}),
+					i(190748),	-- Dimensional Cryptic Grips
+					i(190742),	-- Dimensional Enigmatic Footguards
+					i(190745),	-- Dimensional Numerus Handguards
+					i(190751),	-- Dimensional Oracular Wrists
 				},
 			}),
-			-- End
-
 			-- Chapter 3
 			q(64218, {	-- Danger Near and Far
 				["sourceQuests"] = { 64825 },	-- Seeking Haven
@@ -198,6 +251,21 @@ root("Zones", m(SHADOWLANDS, {
 				["sourceQuests"] = { 65149 },	-- Surveying Cyphers
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.6, 48.1, ZERETH_MORTIS },
+				["g"] = {
+					i(190987),	-- Broker's Cryptic Shoulderpads
+					i(190993),	-- Broker's Enigmatic Cowl
+					i(190999),	-- Broker's Numerus Breastplate
+					i(190981),	-- Broker's Oracular Mantle
+					i(190986),	-- Empathic Cryptic Shoulderpads
+					i(190992),	-- Empathic Enigmatic Cowl
+					i(190998),	-- Empathic Numerus Breastplate
+					i(190980),	-- Empathic Oracular Mantle
+					i(190988),	-- Synchronous Cryptic Shoulderpads
+					i(190994),	-- Synchronous Enigmatic Cowl
+					i(191000),	-- Synchronous Numerus Breastplate
+					i(190982),	-- Synchronous Oracular Mantle
+					spell(366935),	-- Zereth Mortis Effort
+				},
 			}),
 			q(65305, {	-- The Way Forward
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
@@ -207,11 +275,18 @@ root("Zones", m(SHADOWLANDS, {
 					crit(3, {	-- Forming an Understanding
 						["achievementID"] = 15259,	-- Secrets of the First Ones
 					}),
-					pet(3247),	-- Pocopoc
+					i(188019),	-- Anthemic Cuirass
+					i(188006),	-- Choral Vestments
+					i(188031),	-- Harmonium Legplates
+					i(188035),	-- Staccato Vest
 				},
 			}),
 			-- End
-
+			q(65749, {	-- The Necessity Of Equipment
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
+				["provider"] = { "n", 177958 },	-- Firim
+				["coord"] = { 34.2, 48.6, ZERETH_MORTIS },
+			}),
 			-- Chapter 4
 			q(65335, {	-- News from Oribos
 				["sourceQuests"] = { 65305 },	-- The Way Forward
@@ -228,7 +303,7 @@ root("Zones", m(SHADOWLANDS, {
 				["provider"] = { "n", 184532 },	-- Elder Ara
 				["coord"] = { 34.8, 64.8, ZERETH_MORTIS },
 			}),
-			q(64831, {	-- Fragments of the First Ones
+			q(64831, {	-- Remnants of the First Ones
 				["sourceQuests"] = { 64833 },	-- Forging Unity from Diversity
 				["provider"] = { "n", 183139 },	-- Elder Ara
 				["coord"] = { 56.2, 57.9, ZERETH_MORTIS },
@@ -240,7 +315,7 @@ root("Zones", m(SHADOWLANDS, {
 			}),
 			q(64837, {	-- The Pilgrim's Journey
 				["sourceQuests"] = {
-					64831,	-- Fragments of the First Ones
+					64831,	-- Remnants of the First Ones
 					64832,	-- Reclaiming Provis Esper
 				},
 				["provider"] = { "n", 183168 },	-- Elder Ara
@@ -303,7 +378,7 @@ root("Zones", m(SHADOWLANDS, {
 				["provider"] = { "n", 181814 },	-- General Draven
 				["coord"] = { 47.6, 80.3, ZERETH_MORTIS },
 			}),
-			q(64842, {	-- Catalyst Crush
+			q(64842, {	-- Flora Frenzy
 				["sourceQuests"] = {
 					64331,	-- Herbal Remedies
 					64840,	-- Unchecked Growth
@@ -311,9 +386,23 @@ root("Zones", m(SHADOWLANDS, {
 				},
 				["provider"] = { "n", 184442 },	-- Feroz
 				["coord"] = { 47.7, 79.9, ZERETH_MORTIS },
+				["g"] = {
+					i(190985),	-- Crystallic Cryptic Mask
+					i(190991),	-- Crystallic Enigmatic Epaulettes
+					i(190997),	-- Crystallic Numerus Crown
+					i(190979),	-- Crystallic Oracular Smock
+					i(190984),	-- Nova Cryptic Mask
+					i(190990),	-- Nova Enigmatic Epaulettes
+					i(190996),	-- Nova Numerus Crown
+					i(190978),	-- Nova Oracular Smock
+					i(190983),	-- Scouring Cryptic Mask
+					i(190989),	-- Scouring Enigmatic Epaulettes
+					i(190995),	-- Scouring Numerus Crown
+					i(190977),	-- Scouring Oracular Smock
+				},
 			}),
 			q(64843, {	-- Key Crafting
-				["sourceQuests"] = { 64842 },	-- Catalyst Crush
+				["sourceQuests"] = { 64842 },	-- Flora Frenzy
 				["provider"] = { "n", 181814 },	-- General Draven
 				["coord"] = { 47.6, 80.3, ZERETH_MORTIS },
 			}),
@@ -325,10 +414,18 @@ root("Zones", m(SHADOWLANDS, {
 					crit(4, {	-- Forging a New Path
 						["achievementID"] = 15259,	-- Secrets of the First Ones
 					}),
+					i(188023),	-- Anthemic Legguards
+					i(188010),	-- Choral Leggings
+					i(188028),	-- Harmonium Breastplate
+					i(188016),	-- Staccato Leggings
 				},
 			}),
 			-- End
-
+			q(65774, {	-- The Catalyst Awakens
+				["sourceQuests"] = { 64844 },	-- The Pilgrimage Ends
+				["provider"] = { "n", 182257 },	-- Vilo
+				["coord"] = { 34.7, 64.1, ZERETH_MORTIS },
+			}),
 			-- Chapter 5
 			q(64799, {	-- The Broken Crown
 				["sourceQuests"] = { 64844 },	-- The Pilgrimage Ends
@@ -387,6 +484,20 @@ root("Zones", m(SHADOWLANDS, {
 				["sourceQuests"] = { 64809 },	-- One Half of the Equation
 				["provider"] = { "n", 181372 },	-- Taelia Fordragon
 				["coord"] = { 57.2, 31.2, ZERETH_MORTIS },
+				["g"] = {
+					i(190987),	-- Broker's Cryptic Shoulderpads
+					i(190993),	-- Broker's Enigmatic Cowl
+					i(190999),	-- Broker's Numerus Breastplate
+					i(190981),	-- Broker's Oracular Mantle
+					i(190986),	-- Empathic Cryptic Shoulderpads
+					i(190992),	-- Empathic Enigmatic Cowl
+					i(190998),	-- Empathic Numerus Breastplate
+					i(190980),	-- Empathic Oracular Mantle
+					i(190988),	-- Synchronous Cryptic Shoulderpads
+					i(190994),	-- Synchronous Enigmatic Cowl
+					i(191000),	-- Synchronous Numerus Breastplate
+					i(190982),	-- Synchronous Oracular Mantle
+				},
 			}),
 			q(64806, {	-- Where the Memories Resides
 				["sourceQuests"] = {
@@ -396,10 +507,8 @@ root("Zones", m(SHADOWLANDS, {
 				["provider"] = { "n", 181367 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 57.2, 31.1, ZERETH_MORTIS },
 			}),
-			-- Story Contiune Baston->Torghast.
-			-- End
-
-			-- Chapter 6
+			-- Story Contiunes Baston and Torghast, End
+			-- Chapter 6, Starts in Torghast
 			q(64875, {	-- Something Wonderful
 				["sourceQuests"] = { 64816 },	-- Reality's Doorstep
 				["provider"] = { "n", 182556 },	-- Pelagos
@@ -414,6 +523,20 @@ root("Zones", m(SHADOWLANDS, {
 				["sourceQuests"] = { 64876 },	-- Music of the Spheres
 				["provider"] = { "n", 181706 },	-- Popopoc
 				["coord"] = { 34.1, 47.3, ZERETH_MORTIS },
+				["g"] = {
+					i(190985),	-- Crystallic Cryptic Mask
+					i(190991),	-- Crystallic Enigmatic Epaulettes
+					i(190997),	-- Crystallic Numerus Crown
+					i(190979),	-- Crystallic Oracular Smock
+					i(190984),	-- Nova Cryptic Mask
+					i(190990),	-- Nova Enigmatic Epaulettes
+					i(190996),	-- Nova Numerus Crown
+					i(190978),	-- Nova Oracular Smock
+					i(190983),	-- Scouring Cryptic Mask
+					i(190989),	-- Scouring Enigmatic Epaulettes
+					i(190995),	-- Scouring Numerus Crown
+					i(190977),	-- Scouring Oracular Smock
+				},
 			}),
 			q(65245, {	-- Pop Goes the Devourer!
 				["sourceQuests"] = { 64878 },	-- What A Long Strange Trip
@@ -425,20 +548,51 @@ root("Zones", m(SHADOWLANDS, {
 				["provider"] = { "n", 181706 },	-- Popopoc
 				["coord"] = { 47.2, 29.4, ZERETH_MORTIS },
 			}),
+			q(64889, {	-- Match Made in Zereth Mortis
+				["sourceQuests"] = {
+					65245,	-- Pop Goes the Devourer!
+					64888,	-- Borrowed Power
+				},
+				["provider"] = { "n", 181706 },	-- Popopoc
+				["coord"] = { 47.2, 29.4, ZERETH_MORTIS },
+				["description"] = "to unlock cosmic transport",
+			}),
+			q(64935, {	-- Between A Rock & A Rock
+				["sourceQuests"] = {
+					65245,	-- Pop Goes the Devourer!
+					64888,	-- Borrowed Power
+				},
+				["provider"] = { "o", 375517 },	-- Suspicious Rubble Pile
+				["coord"] = { 48.4, 27.1, ZERETH_MORTIS },
+			}),
 			q(64936, {	-- Searching High and Low
-				["sourceQuests"] = { 64888 },	-- Borrowed Power
+				["sourceQuests"] = {
+					64889,	-- Match Made in Zereth Mortis
+					64935,	-- Between A Rock & A Rock
+				},
 				["provider"] = { "n", 183701 },	-- Popopoc
-				["coord"] = { 50.7, 28.3, ZERETH_MORTIS },
+				["coord"] = { 48.8, 31.6, ZERETH_MORTIS },
 			}),
 			q(64937, {	-- You Light Up My Left
 				["sourceQuests"] = { 64936 },	-- Searching High and Low
 				["provider"] = { "n", 184949 },	-- Popopoc
 				["coord"] = { 48, 34, ZERETH_MORTIS },
+				["g"] = {
+					i(188022),	-- Anthemic Coif
+					i(188009),	-- Choral Slippers
+					i(188029),	-- Harmonium Percussive Stompers
+					i(188013),	-- Staccato Boots
+				},
 			}),
 			q(65237, {	-- Oracle, Heal Thyself
 				["sourceQuests"] = { 64937 },	-- You Light Up My Left
 				["provider"] = { "n", 181706 },	-- Popopoc
 				["coord"] = { 38.1, 48.1, ZERETH_MORTIS },
+			}),
+			q(65328, {	-- Arbiter in the Making
+				["sourceQuests"] = { 65237 },	-- Oracle, Heal Thyself
+				["provider"] = { "n", 181090 },	-- Pelagos
+				["coord"] = { 34.3, 48.6, ZERETH_MORTIS },
 				["g"] = {
 					crit(6, {	-- A Means to an End
 						["achievementID"] = 15259,	-- Secrets of the First Ones
@@ -448,22 +602,7 @@ root("Zones", m(SHADOWLANDS, {
 					}),
 				},
 			}),
-			-- PROBABLY AFTER BORROWED POWER/POP GOES THE DEVOURER?
-			q(64889, {	-- Match Made in Zereth Mortis
-				["description"] = "to unlock cosmic transport",
-			}),
-			q(64935, {	-- Between A Rock & A Rock
-				["description"] = "to unlock cosmic transport",
-			}),
-			--
-			-- End
-
 			-- Chapter 7
-			q(65328, {	-- Arbiter in the Making
-				["sourceQuests"] = { 65237 },	-- Oracle, Heal Thyself
-				["provider"] = { "n", 181090 },	-- Pelagos
-				["coord"] = { 34.3, 48.6, ZERETH_MORTIS },
-			}),
 			q(64879, {	-- A Monumental Discovery
 				["sourceQuests"] = { 65328 },	-- Arbiter in the Making
 				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
@@ -502,6 +641,12 @@ root("Zones", m(SHADOWLANDS, {
 				},
 				["provider"] = { "n", 180903 },	-- Firim
 				["coord"] = { 55.9, 29.9, ZERETH_MORTIS },
+				["g"] = {
+					i(188021),	-- Anthemic Gauntlets
+					i(188008),	-- Choral Handwraps
+					i(188030),	-- Harmonium Gauntlets
+					i(188014),	-- Staccato Grips
+				},
 			}),
 			q(64727, {	-- The Infinite Circle
 				["sourceQuests"] = { 64722 },	-- Knocking On Death's Door
@@ -545,57 +690,134 @@ root("Zones", m(SHADOWLANDS, {
 				["sourceQuests"] = { 64731 },	-- For Every Soul
 				["provider"] = { "n", 180942 },	-- Saezurah
 				["coord"] = { 53.3, 47.1, 2031 },
+				["g"] = {
+					i(190987),	-- Broker's Cryptic Shoulderpads
+					i(190993),	-- Broker's Enigmatic Cowl
+					i(190999),	-- Broker's Numerus Breastplate
+					i(190981),	-- Broker's Oracular Mantle
+					i(190986),	-- Empathic Cryptic Shoulderpads
+					i(190992),	-- Empathic Enigmatic Cowl
+					i(190998),	-- Empathic Numerus Breastplate
+					i(190980),	-- Empathic Oracular Mantle
+					i(190988),	-- Synchronous Cryptic Shoulderpads
+					i(190994),	-- Synchronous Enigmatic Cowl
+					i(191000),	-- Synchronous Numerus Breastplate
+					i(190982),	-- Synchronous Oracular Mantle
+				},
 			}),
-			q(65238, {	-- Souls Entwined (Critiera)
+			q(65238, {	-- Souls Entwined
 				["sourceQuests"] = { 64729 },	-- Lifetimes To Consider
 				["provider"] = { "n", 181545 },	-- Kleia
 				["coord"] = { 34.4, 48.5, ZERETH_MORTIS },
-			}),
-			-- Story Continues Oribos
-			-- End
-
-			-- Unknown
-			q(65735, {	-- Wanted: Custos
-				--["sourceQuests"] = { },
-				["provider"] = { "o", 375972 },	-- Wanted: Custos
-				["coord"] = { 35.3, 65.4, ZERETH_MORTIS },
-			}),
-			q(65700, {	-- Core Control
-				--["sourceQuests"] = { },
-				["provider"] = { "n", 177958 },	-- Firim
-				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
-			}),
-			q(65674, {	-- What Is This Thing?
-				--["sourceQuests"] = { },
-				["provider"] = { "i", 190579 },	-- Unformed Essence
-			}),
-			q(65259, {	-- The Heart of the Sepulcher
-				["provider"] = { "n", 181367 },	-- Highlord Bolvar Fordragon
-				["coord"] = { 35, 64.7, ZERETH_MORTIS },
-			}),
-			q(65324, {	-- Patterns Within Patterns
-				["sourceQuests"] = { 64816 },	-- Reality's Doorstep
-				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
-				["coord"] = { 35, 64.8, ZERETH_MORTIS },
-				["isWeekly"] = true,
-				["g"] = {
-					i(190610, {	-- Tribute of the Enlightened Elders
-						i(189462),	-- Schematic: Bronze Helicid
+				["g"] = {	-- In Class Order
+					crit(7, {	-- Starting Over
+						["achievementID"] = 15259,	-- Secrets of the First Ones
 					}),
+					i(190470),	-- Cinch of Unity
+					i(190472),	-- Cinch of Unity
+					i(190471),	-- Cinch of Unity
+					i(190466),	-- Clasp of Unity
+					i(190473),	-- Clasp of Unity
+					i(190464),	-- Cord of Unity
+					i(190468),	-- Cord of Unity
+					i(190469),	-- Cord of Unity
+					i(190474),	-- Girdle of Unity
+					i(190475),	-- Girdle of Unity
+					i(190467),	-- Girdle of Unity
+					i(190465),	-- Cinch of Unity
 				},
 			}),
-			q(65748, {	-- You Supply The Effort
-				["provider"] = { "n", 185713 },	-- Hadja
-				["coord"] = { 35.2, 65.7, ZERETH_MORTIS },
+			-- Story Continues in Oribos, End
+			-- Al'dalil/Cartel Xy Side Quest (Chap 1)
+			q(64771, {	-- Enlightened Exodus
+				["sourceQuests"] = { 64958 },	-- The Forces Gather
+				["provider"] = { "n", 181003 },	-- Al'dalil
+				["coord"] = { 33.7, 64.7, ZERETH_MORTIS },
 			}),
-			q(65749, {	-- The Necessity Of Equipment
-				["provider"] = { "n", 177958 },	-- Firim
-				["coord"] = { 34.2, 48.6, ZERETH_MORTIS },
+			q(64741, {	-- Security Check
+				["sourceQuests"] = { 64771 },	-- Enlightened Exodus
+				["provider"] = { "n", 181003 },	-- Al'dalil
+				["coord"] = { 33.7, 64.7, ZERETH_MORTIS },
 			}),
-			--
-
-			-- Bufonid Daily Questline
+			q(64742, {	-- Traces of Tampering
+				["sourceQuests"] = { 64741 },	-- Security Check
+				["provider"] = { "n", 181003 },	-- Al'dalil
+				["coord"] = { 33.7, 64.7, ZERETH_MORTIS },
+			}),
+			q(64744, {	-- Broker Decloaker
+				["sourceQuests"] = { 64742 },	-- Traces of Tampering
+				["provider"] = { "n", 181003 },	-- Al'dalil
+				["coord"] = { 33.7, 59.8, ZERETH_MORTIS },
+			}),
+			q(64743, {	-- Xy Are You Doing This?
+				["sourceQuests"] = { 64742 },	-- Traces of Tampering
+				["provider"] = { "n", 181003 },	-- Al'dalil
+				["coord"] = { 33.7, 59.8, ZERETH_MORTIS },
+			}),
+			q(64758, {	-- Following the Leader
+				["sourceQuests"] = {
+					64744,	-- Broker Decloaker
+					64743,	-- Xy Are You Doing This?
+				},
+				["provider"] = { "n", 180936 },	-- Rana
+				["coord"] = { 33.8, 59.8, ZERETH_MORTIS },
+			}),
+			q(64760, {	-- Technical Difficulties
+				["sourceQuests"] = { 64758 },	-- Following the Leader
+				["provider"] = { "n", 180936 },	-- Rana
+				["coord"] = { 31.7, 67.4, ZERETH_MORTIS },
+				["g"] = {
+					crit(2, {	--  Not Al Are Lost
+						["achievementID"] = 15515,	-- Path to Enlightenment
+					}),
+					i(190597),	-- Symbol of the Lupine
+					i(190602),	-- Symbol of the Raptora
+					i(190582),	-- Symbol of the Vombata
+				},
+			}),
+			-- Drim Questline (Chap 1)
+			q(65463, {	-- The Wellspring of the First Ones
+				["sourceQuests"] = { 64958 },	-- The Forces Gather
+				["provider"] = { "n", 181084 },	-- Drim
+				["coord"] = { 61.4, 49.3, ZERETH_MORTIS },
+				["isBreadcrumb"] = true,
+			}),
+			q(65349, {	-- Lost Grace
+				["sourceQuests"] = { 65463 },	-- The Wellspring of the First Ones (MIGHT BE SHAMAN ONLY?!) Might be Breadcrumb!
+				["provider"] = { "n", 182146 },	-- Olem
+				["coord"] = { 61.9, 53.5, ZERETH_MORTIS },
+			}),
+			q(65350, {	-- Restore the Flow
+				["sourceQuests"] = { 65349 },	-- Lost Grace
+				["provider"] = { "n", 184537 },	-- Nadir
+				["coord"] = { 55, 50.3, ZERETH_MORTIS },
+			}),
+			q(65353, {	-- An Automa-free Diet
+				["sourceQuests"] = { 65349 },	-- Lost Grace
+				["provider"] = { "n", 184537 },	-- Nadir
+				["coord"] = { 55, 50.3, ZERETH_MORTIS },
+			}),
+			q(65448, {	--  A Return to Grace
+				["sourceQuests"] = { 65350 },	-- Restore the Flow
+				["provider"] = { "o", 375283 },	-- Percolation Array
+				["coord"] = { 74.1, 69, 2028 },
+				["g"] = {
+					crit(3, {	--  A Return to Grace
+						["achievementID"] = 15515,	-- Path to Enlightenment
+					}),
+					i(188026),	-- Anthemic Bracers
+					i(188012),	-- Choral Wraps
+					i(188034),	-- Harmonium Vambrace
+					i(188018),	-- Staccato Cuffs
+				},
+			}),
+			-- Bufonid Daily Questline (During Chap 2)
 			q(65727, {	-- The Burrowed Bufonid
+				["sourceQuests"] = {
+					64958,	-- Our Forward Scouts
+					65771,	-- Favor of the First Ones
+					65772,	-- Necessary Harvest
+				},
 				["provider"] = { "n", 180950 },	-- Avna
 				["coord"] = { 34.3, 65.9, ZERETH_MORTIS },
 			}),
@@ -643,57 +865,9 @@ root("Zones", m(SHADOWLANDS, {
 					i(188808),	-- Patient Bufonid (MOUNT!)
 				},
 			}),
-			-- End
-
-			-- Al'dalil/Cartel Xy Side Quest
-			q(64771, {	-- Enlightened Exodus
-				["sourceQuests"] = { 64958 },	-- The Forces Gather
-				["provider"] = { "n", 181003 },	-- Al'dalil
-				["coord"] = { 33.7, 64.7, ZERETH_MORTIS },
-			}),
-			q(64741, {	-- Security Check
-				["sourceQuests"] = { 64771 },	-- Enlightened Exodus
-				["provider"] = { "n", 181003 },	-- Al'dalil
-				["coord"] = { 33.7, 64.7, ZERETH_MORTIS },
-			}),
-			q(64742, {	-- Traces of Tampering
-				["sourceQuests"] = { 64741 },	-- Security Check
-				["provider"] = { "n", 181003 },	-- Al'dalil
-				["coord"] = { 33.7, 64.7, ZERETH_MORTIS },
-			}),
-			q(64744, {	-- Broker Decloaker
-				["sourceQuests"] = { 64742 },	-- Traces of Tampering
-				["provider"] = { "n", 181003 },	-- Al'dalil
-				["coord"] = { 33.7, 59.8, ZERETH_MORTIS },
-			}),
-			q(64743, {	-- Xy Are You Doing This?
-				["sourceQuests"] = { 64742 },	-- Traces of Tampering
-				["provider"] = { "n", 181003 },	-- Al'dalil
-				["coord"] = { 33.7, 59.8, ZERETH_MORTIS },
-			}),
-			q(64758, {	-- Following the Leader
-				["sourceQuests"] = {
-					64744,	-- Broker Decloaker
-					64743,	-- Xy Are You Doing This?
-				},
-				["provider"] = { "n", 180936 },	-- Rana
-				["coord"] = { 33.8, 59.8, ZERETH_MORTIS },
-			}),
-			q(64760, {	-- Technical Difficulties
-				["sourceQuests"] = { 64758 },	-- Following the Leader
-				["provider"] = { "n", 180936 },	-- Rana
-				["coord"] = { 31.7, 67.4, ZERETH_MORTIS },
-				["g"] = {
-					crit(2, {	--  Not Al Are Lost
-						["achievementID"] = 15515,	-- Path to Enlightenment
-					}),
-				},
-			}),
-			-- End
-
-			-- E'rnee Questline
+			-- E'rnee Questline (Chap 2)
 			q(65064, {	-- Look Who I Found!
-				["sourceQuests"] = { 64825 },	-- Seeking Haven
+				["sourceQuests"] = { 65305 },	-- The Way Forward
 				["provider"] = { "n", 184486 },	-- Tamra
 				["coord"] = { 34.7, 66.3, ZERETH_MORTIS },
 			}),
@@ -732,52 +906,30 @@ root("Zones", m(SHADOWLANDS, {
 				}
 			}),
 			-- End
-
-			-- Drim Questline (Those are probably unlocked ones you Leave Firim first time. They were available after Chap 1 at least but you dont get to the hideout before Chap 3)
-			q(65463, {	-- The Wellspring of the First Ones
-				["sourceQuests"] = { 64951 },	-- The Road to Haven (or The Forces Gather(64958) or something inbetween)
-				["provider"] = { "n", 181084 },	-- Drim
-				["coord"] = { 61.4, 49.3, ZERETH_MORTIS },
-				["isBreadcrumb"] = true,
+			q(65259, {	-- The Heart of the Sepulcher
+				["provider"] = { "n", 181367 },	-- Highlord Bolvar Fordragon
+				["coord"] = { 35, 64.7, ZERETH_MORTIS },
 			}),
-			q(65349, {	-- Lost Grace
-				["sourceQuests"] = { 65463 },	-- The Wellspring of the First Ones (MIGHT BE SHAMAN ONLY?!) Might be Breadcrumb!
-				["provider"] = { "n", 182146 },	-- Olem
-				["coord"] = { 61.9, 53.5, ZERETH_MORTIS },
-			}),
-			q(65350, {	-- Restore the Flow
-				["sourceQuests"] = { 65349 },	-- Lost Grace
-				["provider"] = { "n", 184537 },	-- Nadir
-				["coord"] = { 55, 50.3, ZERETH_MORTIS },
-			}),
-			q(65353, {	-- An Automa-free Diet
-				["sourceQuests"] = { 65349 },	-- Lost Grace
-				["provider"] = { "n", 184537 },	-- Nadir
-				["coord"] = { 55, 50.3, ZERETH_MORTIS },
-			}),
-			q(65448, {	--  A Return to Grace
-				["sourceQuests"] = {
-					65350,	-- Restore the Flow
-					65353,	-- An Automa-free Diet
-				},
-				["provider"] = { "o", 375283 },	-- Flow Restart Console (QG)
-				["coord"] = { 74.1, 69, 2028 },
+			q(65324, {	-- Patterns Within Patterns (Chap 3)
+				["sourceQuests"] = { 65305 },	-- The Way Forwards
+				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
+				["coord"] = { 35, 64.8, ZERETH_MORTIS },
+				["repeatable"] = true,
 				["g"] = {
-					crit(3, {	--  A Return to Grace
-						["achievementID"] = 15515,	-- Path to Enlightenment
+					i(190610, {	-- Tribute of the Enlightened Elders
+						i(189462),	-- Schematic: Bronze Helicid
 					}),
 				},
 			}),
-			-- End
 		}),
 		n(QUESTS, sharedData({ ["isDaily"] = true }, {
 			q(65268, {	-- Bzzzzt!
-				--["sourceQuests"] = {  },	Available After Chap 2
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 181179 },	-- Elder Nirav
 				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
 			}),
 			q(64964, {	-- Choose Your Fighter
-				--["sourceQuests"] = {  },	Available After Chap 2
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 181179 },	-- Elder Nirav
 				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
 			}),
@@ -788,7 +940,7 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 58.3, 50, ZERETH_MORTIS },
 			}),
 			q(65256, {	-- Cluck, Cluck, Boom
-				--["sourceQuests"] = { 65305 },	-- The Way Forward (Chap 3)
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
 			}),
@@ -799,37 +951,37 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 58.4, 49.7, ZERETH_MORTIS },
 			}),
 			q(65264, {	-- Operation: Relocation
-				--["sourceQuests"] = {  },	Available After Chap 2
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 181179 },	-- Elder Nirav
 				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
 			}),
 			q(65269, {	-- Obvious Plant
-				["sourceQuests"] = { 65305 },	-- The Way Forward (Chap 3)
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 181179 },	-- Elder Nirav
 				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
 			}),
 			q(65265, {	-- Buried Remnants
-			--	["sourceQuests"] = { 65305 },	-- The Way Forward (Chap 3)
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 181179 },	-- Elder Nirav
 				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
 			}),
 			q(65226, {	-- Fleet-footed and Fastidious
-				--["sourceQuests"] = { 65305 },	-- The Way Forward (Chap 3)
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
 			}),
 			q(65255, {	-- Forcing the Cycle
-				["sourceQuests"] = { 65305 },	-- The Way Forward (Chap 3)
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
 			}),
 			q(65177, {	-- Fruit of the Bloom
-				["sourceQuests"] = { 65305 },	-- The Way Forward (Chap 3)
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
 			}),
 			q(64579, {	-- Hallow Efforts
-				--["sourceQuests"] = { 65305 },	-- The Way Forward (Chap 3)
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
 			}),
@@ -840,7 +992,7 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 58.3, 50, ZERETH_MORTIS },
 			}),
 			q(64717, {	-- Materials of Creation
-				--["sourceQuests"] = { 65305 },	-- The Way Forward (Chap 3)
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
 			}),
@@ -863,23 +1015,23 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 58.3, 50, ZERETH_MORTIS },
 			}),
 			q(65072, {	-- Not Safe For Work
-				["sourceQuests"] = { 65305 },	-- The Way Forward (Chap 3)
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 180630 },	-- Elder Amir
 				["coord"] = { 61.4, 51.5, ZERETH_MORTIS },
 			}),
 			q(64785, {	-- Overgrown Story
 				["description"] = "Has containment trap for the achievement",
-				--["sourceQuests"] = { 65305 },	-- The Way Forward (Chap 3)
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
 			}),
 			q(65142, {	-- Portal Play
-				--["sourceQuests"] = { 65305 },	-- The Way Forward (Chap 3)
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
 			}),
 			q(64977, {	-- Step Into the Ring
-				--["sourceQuests"] = { 65305 },	-- The Way Forward (Chap 3)
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
 			}),
@@ -890,16 +1042,16 @@ root("Zones", m(SHADOWLANDS, {
 				["coord"] = { 58.4, 49.7, ZERETH_MORTIS },
 			}),
 			q(64854, {	-- Trappings of Success
-				--["sourceQuests"] = { 65305 },	-- The Way Forward (Chap 3)
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
 			}),
 			q(65096, {	-- Your Death Or Mine
-				["sourceQuests"] = { 65305 },	-- The Way Forward (Chap 3)
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 180630 },	-- Elder Amir
 				["coord"] = { 61.4, 51.5, ZERETH_MORTIS },
 			}),
-			-- Drop Dailies?
+			-- Drop Quests
 			q(64852, {	-- Aeon Matrix
 				["sourceQuests"] = { 64579 },	-- Hallow Efforts
 				["provider"] = { "i", 187527 },	-- Aeon Matrix
@@ -909,7 +1061,7 @@ root("Zones", m(SHADOWLANDS, {
 				["provider"] = { "i", 187788 },	-- Aetheric Lattice
 			}),
 			q(64861, {	-- Kismetric Disc
-				["description"] = "Starts with the item: Kismetric Circlet(187791) might not be daily..",
+				["description"] = "Starts with the item: Kismetric Circlet(187791)",
 				["sourceQuests"] = { 64579 },	-- Hallow Efforts
 				["provider"] = { "i", 187792 },	-- Kismetric Disc
 				["g"] = {
@@ -936,10 +1088,11 @@ root("HiddenQuestTriggers", {
 	q(63850),	-- Triggered when enter ZM (Might be WQ). Triggered again today while running around in ZM
 	q(63766),	-- Triggered when Exploring (Might have to do with The Matriarch(183505))
 	q(65621),	-- Triggered when HS to ZM
-	--q(64880),	-- Triggered in Oribos?
+	--q(64880),	-- Triggered in Oribos / Triggered in Oribos after taking new Quest // Flying to Elysian Hold
 	--q(65144),	-- Firims Cave?
 	--q(65679),	-- After Flying unlock on an alt?
-
+	-- Unknown
+	--q(65707) also popped Reanimatrox Marzan / when questing close to rare
 	-- Lego
 	--q(65681),	-- Druid
 
@@ -951,16 +1104,45 @@ root("HiddenQuestTriggers", {
 	q(65340),	-- Fourth Locus arrangement at Gravid Repose
 	q(65341),	-- Fifth Locus arrangement at Gravid Repose
 	q(65342),	-- Ultimate Locus arrangement at Gravid Repose
+	--q(65457),	-- Unlock all?
 	-- Entering Gravid Repose First Time
 	--q(65376),
 	--q(65377),
 	--q(65464),
 
+	--[[ Secret Gravid Repose
+	q(65378),
+	q(65343),
+	q(65344),
+	q(65345),
+	q(65346),
+	q(65347),
+	-- Sand Chests
+	q(65494),
+	q(65495),
+	q(65496),
+	q(65497),
+	q(65498),
+	q(65499),
+	q(65500),
+	--]]
+
+	--q(65706),	-- Dune Rare?
+	--q(65558),	-- Edra, the Will Grazer? / Killing Damaris
+	--q(65637),	-- Triggered when killing General Zarathura <Army of the Endless>
+	--q(65631),	-- Triggered when killing Akkaris
+	--q(65629),	-- Triggered when killing Akkaris
+	--q(65626),	-- Triggered when killing Mother Phestis <Tarachnid Prime>
+
 	-- RP
 	q(65233),	-- RP after Jiro to Hero(65219)
 	q(65571),	-- RP after Chap 5 with Taelia
 	q(65619),	-- RP after Tahli Questline
+	q(65693),	-- RP Elder Ara 34.8, 64.8  after q(64844, {	-- The Pilgrimage Ends
 	--q(65028),	-- RP during q(64875, {	-- Something Wonderful??
+
+	-- Treasure
+	--q(65670),	-- Syntactic Vault When clicking pillars
 
 	-- Jiro Buffs
 	q(65167),	-- Echoed Jiro Nascii(183263) with spellID(362023) Same HQTs from different Jiros (42.7 44.8) Stackable?

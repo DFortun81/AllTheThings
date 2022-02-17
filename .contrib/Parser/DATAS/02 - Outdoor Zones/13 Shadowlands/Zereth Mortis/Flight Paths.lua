@@ -24,7 +24,7 @@ root("Zones", m(SHADOWLANDS, {
 			fp(2728, {	-- Pilgrim's Grace
 				["name"] = "Pilgrim's Grace, Zereth Mortis",
 				["coord"] = { 61.6, 50.2, ZERETH_MORTIS },
-				["cr"] = 183963,	-- Ancient Translocator
+				["cr"] = 183969,	-- Ancient Translocator
 			}),
 			fp(2737, {	-- Sepulcher of the First Ones
 				["name"] = "Sepulcher of the First Ones, Zereth Mortis",

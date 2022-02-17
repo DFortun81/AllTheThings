@@ -4,52 +4,6 @@
 root("Zones", m(SHADOWLANDS, {
 	m(ZERETH_MORTIS, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
-			n(REWARDS, {
-				["description"] = "Still need a proper Source.",
-				["g"] = {
-					i(189910),	-- Adornment of Jingling Fractals
-					i(189917),	-- Constellation Master's Smock
-					i(189996),	-- Elegantly Balanced Axe
-					i(189961),	-- Enduring Protector's Shoulderguards (Protector?)
-					i(189993),	-- Gavel of the Twisted Judicator
-					i(189959),	-- Legs of Graceful Landing
-					i(189953),	-- Lush-Stained Footguards (Overgrowth?)
-					i(189956),	-- Perverse Champion's Handguards
-					i(189943),	-- Greaves of Cosmic Designs
-					i(189904),	-- Meticulous Architect's Mitts
-					i(190057),	-- Protective Raptora's Wing-Glaive
-					i(190003),	-- Skyward Savior's Talon
-					i(190731),	-- Deceiver's Illusionary Signet
-					i(190729),	-- Vigorous Sentinel's Seal
-					i(187847, {	-- Design: Devourer Essence Stone (RECIPE!) (Stargorger?)
-						["recipeID"] = 360317,	-- Devourer Essence Stone
-						["requireSkill"] = JEWELCRAFTING,
-					}),
-					i(190374),	-- Gemstone of Prismatic Brilliance
-					i(190390),	-- Protector's Diffusion Implement
-					i(190597),	-- Symbol of the Lupine
-					i(190582),	-- Symbol of the Vombata
-					i(190726),	-- Extract of Prodigious Sands
-					-- Dune Rares?
-					i(190124),	-- Interrogator's Vicious Dirk
-					i(190125),	-- Kris of Intricate Secrets
-					i(190108),	-- Aegis of Laughing Souls
-					i(190106),	-- Approaching Terror's Torch
-					i(188267),	-- Bells of the Endless Feast
-					i(190102),	-- Chains of Infectious Serrations
-					i(190105),	-- Chilling Domination Mace
-					i(190109),	-- Cudgel of Mortality's Chains
-					i(190111),	-- Escutcheon of Beautiful Death Ach?
-					i(190110),	-- Flail of Balletic Carnage Ach?
-					i(190112),	-- Glimmering War Beacon Ach?
-					i(190334),	-- Origin
-					i(190103),	-- Pillar of Noxious Dissemination
-					i(190458),	-- Atrophy's Ominous Bulwark
-					i(190463),	-- Dismal Mystic's Glaive
-					i(190462),	-- Impaler's Graceful Lance Ach?
-					i(190735),	-- Varruth's Guillotine
-				},
-			}),
 			n(179006, {	-- Akkaris <Annelid Prime>
 				["description"] = "Shares Daily HQT with Stargorger",
 				["coord"] = { 64.7, 33.7, ZERETH_MORTIS },
@@ -74,6 +28,7 @@ root("Zones", m(SHADOWLANDS, {
 					i(189994),	-- Chitali's Command
 					i(189906),	-- Mask of the Resolute Cervid
 					i(189947),	-- Majestic Watcher's Girdle
+					i(190729),	-- Vigorous Sentinel's Seal
 				},
 			}),
 			n(183953, {	-- Corrupted Architect
@@ -96,6 +51,7 @@ root("Zones", m(SHADOWLANDS, {
 					crit(4, {	-- Destabilized Core
 						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
 					}),
+					i(189910),	-- Adornment of Jingling Fractals
 					i(189985),	-- Curtain of Untold Realms
 					i(189999),	-- Dark Sky Gavel
 					i(189930),	-- Restraints of Boundless Chaos
@@ -167,6 +123,7 @@ root("Zones", m(SHADOWLANDS, {
 					crit(15, {	-- General Zarathura <Army of the Endless>
 						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
 					}),
+					i(190731),	-- Deceiver's Illusionary Signet
 					i(189968),	-- Dreadlord General's Tunic
 					i(189948),	-- Strangulating Chainlink Lasso
 				},
@@ -246,14 +203,46 @@ root("Zones", m(SHADOWLANDS, {
 				},
 			}),
 			n(180978, {	-- Hirukon <Aurelid Prime>
-				["description"] = "Fishing with casting into 51.85 74.39 seems to trigger the event. There will be a zone wide announcement when Hirkuon starts to emerge.",
+				["description"] = "To see how to summon this boss use Debug Mode.",
 				["coord"] = { 52.2, 75.2, ZERETH_MORTIS },
 				["questID"] = 65548,
 				["g"] = {
+					i(187923, {	-- Aurelid Lure
+						["description"] = "This is a one time use.\nStep 1: Fish up Strange Goop from the water around Hirukon.\nStep 2: Talk to Vashj in Maldraxxus.\nStep 3: Collect the Three items needed.\nStep 4: Collect the Aurelid Lure from Vashj.",
+						["cr"] = 182194,	--- Baroness Vashj
+						["coord"] = { 57.6, 92, MALDRAXXUS },
+						["g"] = {
+							i(187662, {	-- Strange Goop
+								["description"] = "To start the questline fish up this item from around Hirukon spawn point.",
+								["coord"] = { 52.2, 75.2, ZERETH_MORTIS },
+							}),
+							o(373438, {	-- Coilclutch Vine
+								["description"] = "Found in the Shimmering Expanse",
+								["coord"] = { 34.7, 75, 205 },
+								["g"] = {
+									i(187916),	-- Coilclutch Vine
+								},
+							}),
+							o(373439, {	--  Flipper Fish School
+								["description"] = "Found in the Nazjatar",
+								["coord"] = { 72.8, 24.3, 1355 },
+								["g"] = {
+									i(187922),	-- Flipper Fish
+								},
+							}),
+							o(373437, {	-- Pungent Blobfish Cluster
+								["description"] = "Found in the Colifang Reservoir",
+								["coord"] = { 52.2, 37.9, 102 },
+								["g"] = {
+									i(187915),	-- Pungent Blobfish
+								},
+							}),
+						},
+					}),
 					crit(23, {	-- Hirukon <Aurelid Prime>
 						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
 					}),
-					i(187676),	-- Deepstar Aurelid (MOUNT!)
+					i(187676),	-- Deepstar Polyp (MOUNT!)
 					i(190005),	-- Hirukon's Radiant Reach
 					i(189905),	-- Hirukon's Syrupy Squeezers
 					i(189946),	-- Jellied Aurelid Mantle
@@ -338,7 +327,7 @@ root("Zones", m(SHADOWLANDS, {
 			n(182158, {	-- Reanimatrox Marzan
 				["crs"] = { 182161 },	-- Phalangax, the Final Grasp
 				["coord"] = { 63.8, 27, ZERETH_MORTIS },
-				["questID"] = 65587, -- 65707 also popped?
+				["questID"] = 65587,
 				["g"] = {
 					crit(3, {	-- Reanimatrox Marzan
 						["achievementID"] = 15392,	-- Dune Dominance
@@ -384,6 +373,7 @@ root("Zones", m(SHADOWLANDS, {
 					i(189944),	-- Immovable Stance of the Vombata
 					i(189962),	-- Sorrano's Gleaming Pauldrons
 					i(189911),	-- Sublime Fur Mantle
+					i(190582),	-- Symbol of the Vombata
 					i(187826, {	-- Formula: Cosmic Protoweave (RECIPE!)
 						["recipeID"] = 187826,	-- Cosmic Protoweave
 						["requireSkill"] = ENCHANTING,
@@ -446,6 +436,7 @@ root("Zones", m(SHADOWLANDS, {
 					crit(28, {	-- Vexis <Lupine Prime>
 						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
 					}),
+					i(190597),	-- Symbol of the Lupine
 					i(189997),	-- The Lupine Prime's Might
 					i(189900),	-- Vexis' Gentle Heartcloth
 					i(190048),	-- Vexis' Wisest Fang
@@ -470,7 +461,6 @@ root("Zones", m(SHADOWLANDS, {
 					crit(6, {	-- Xy'rath the Covetous
 						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
 					}),
-					i(190389),	-- Broker's Lucky Coin
 					i(190050),	-- Famished Broker's Ripper
 					i(189918),	-- Fleeting Broker's Strides
 					i(190238, {	-- Xy'rath's Booby-Trapped Cache (TOY!)
@@ -501,41 +491,5 @@ root("Zones", m(SHADOWLANDS, {
 				},
 			}),
 		})),
-	}),
-}));
-
-root("HiddenQuestTriggers", {
-	--q(65706),	-- Dune Rare?
-	--q(65558),	-- Edra, the Will Grazer?
-	--q(65637),	-- Triggered when killing General Zarathura <Army of the Endless>
-	--q(65631),	-- Triggered when killing Akkaris
-	--q(65629),	-- Triggered when killing Akkaris
-	--q(65626),	-- Triggered when killing Mother Phestis <Tarachnid Prime>
-});
-
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	tier(SL_TIER, {
-		i(187674),	-- [PH] Progenitor Jellyfish (Dark)
-		i(189452),	-- 9.2 Mount Crafting Bag of Goodies
-		i(189428),	-- 9.2 Pet Battle Playtest Bag of Goodies
-		i(190383),	-- Progenitor Essentia Lattice
-		-- Cosmetic
-		i(190931),	-- Cape of the Regal Wanderer
-		i(190930),	-- Dark Shawl of the Enlightened
-		i(190935),	-- Distinguished Blade of Cartel Al
-		i(190929),	-- Ebony Protocloak
-		i(190937),	-- Edge of the Enlightened
-		i(190933),	-- Majestic Oracle's Drape
-		i(190932),	-- Protohide Drape
-		i(190928),	-- Sandtails Drape
-		i(190934),	-- Standard of the Wandering Brokers
-		i(190939),	-- Walking Staff of the Enlightened Journey
-		i(190951),	-- Distinguished Blade of Cartel Al
-		i(190946),	-- Emerald-Heart Protomaul
-		i(190950),	-- Gavel of Lost Purpose
-		i(190943),	-- Jiro Tuning Hammer
-		i(190944),	-- Mace of Renewed Purpose
-		i(190948),	-- Staff of the Dormant Oracle
-		i(190949),	-- Stave of the Eternal Cycle
 	}),
 }));

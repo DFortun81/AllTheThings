@@ -1085,18 +1085,17 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					crit(1, {	-- Into the Unknown
 						["achievementID"] = 15259,	-- Secrets of the First Ones
 					}),
+					i(188041),	-- Ageless Spellblade
+					i(188043),	-- Eradicator of the Eternal Guard
+					i(188047),	-- Haven Guard's Cudgel
 				},
 			})),
 			-- Chapter 7
-			q(65239, bubbleDownSelf({ ["timeline"] = { "added 9.1.2" } }, {	-- Safe Haven
+			q(65329, bubbleDownSelf({ ["timeline"] = { "added 9.1.2" } }, {	-- Safe Haven
 				["sourceQuests"] = { 65238 },	-- Souls Entwined
 				["provider"] = { "n", 184584 },	-- Kleia
 				["coord"] = { 59.9, 56.1, ORIBOS },
-				["g"] = {
-					crit(7, {	-- Starting Over
-						["achievementID"] = 15259,	-- Secrets of the First Ones
-					}),
-				},
+				["isBreadcrumb"] = true,
 			})),
 			-- TorreG
 			q(65625, {	-- The Jailer's Gauntlet

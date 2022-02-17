@@ -1004,6 +1004,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["sourceQuests"] = { 64808 },	-- What Makes us Strong
 				["provider"] = { "n", 181284 },	-- Anduin Wrynn
 				["coord"] = { 59.2, 88.3, BASTION },
+				["g"] = {
+					i(188020),	-- Anthemic Greaves
+					i(188009),	-- Choral Hood
+					i(188027),	-- Harmonium Helm
+					i(188015),	-- Staccato Helm
+				},
 			}),
 			q(64812, {	-- Forge of Domination
 				["sourceQuests"] = { 64798 },	-- What We Overcome

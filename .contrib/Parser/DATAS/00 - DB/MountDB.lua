@@ -1114,7 +1114,7 @@ i(187660, 342678);	-- Vespoid Flutterer
 
 -- Achievements
 i(187673, 359381);	-- Cryptic Aurelid
---i(187675, 359379);	-- Shimmering Aurelid
+--i(187675, 359379);	-- Shimmering Aurelid SpellID still gone..
 
 -- Raid
 i(190771, 359545);	-- Carcinized Zerethsteed
@@ -1132,7 +1132,7 @@ i(187680, 347255);	-- Vicious War Gulper (H)
 i(188808, 363701);	-- Patient Bufonid
 
 -- Rare/Treasure
-i(187676, 342680);	-- Deepstar Aurelid
+i(187676, 342680);	-- Deepstar Polyp
 i(190765, 368105);	-- Colossal Plaguespew Mawrat
 i(190766, 368128);	-- Colossal Wraithbound Mawrat
 
@@ -1145,10 +1145,9 @@ i(188736, 363297);	-- Colossal Soulshredder Mawrat
 i(188700, 363178);	-- Colossal Umbrahide Mawrat
 i(188696, 363136);	-- Colossal Ebonclaw Mawrat
 
--- Put Holy Talbuk as LIGHTFORGED DRAENEI Paladin.
+-- Put Holy Talbuk as LIGHTFORGED DRAENEI Paladin. Might not exist anymore??
 
--- NOT SOURCED PROPERLY --
--- PvP They havent said anything About these mounts yet
---i(187644, 349824);	-- Vicious Warstalker (A)
---i(187642, 349823);	-- Vicious Warstalker (H)
+-- NYI --
+i(187644, 349824);	-- Vicious Warstalker (A)
+i(187642, 349823);	-- Vicious Warstalker (H)
 end)();

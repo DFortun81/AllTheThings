@@ -984,6 +984,14 @@ root("Zones", m(KALIMDOR, {
 				["coord"] = { 52.5, 88.0, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 			}),
+			q(65424, {	-- Whatever You Sayaad
+				["description"] = "Start this quest via your own Sayaad(Succubus/Incubus Pet).",
+				["provider"] = { "n", 184600 },	-- Warlock Minion
+				["coord"] = { 74.6, 47.4, ORGRIMMAR },
+				["races"] = HORDE_ONLY,
+				["classes"] = { WARLOCK },
+				["timeline"] = { "added 9.1.2" },
+			}),
 			q(60346, {	-- What's Your Specialty? (Druid)
 				["customCollect"] = "NPE",	-- New Player Experience
 				["sourceQuests"] = { 60345 },	-- License to Ride

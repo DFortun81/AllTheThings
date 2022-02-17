@@ -148,7 +148,7 @@ root("Zones", m(SHADOWLANDS, {
 							{"where", "headerID", ZONE_DROPS },		-- Select Zone Drops
 							{"pop"},								-- Discard the Header and acquire all of their children.
 							{"is", "itemID"},						-- Only Items!
-							{"invtype", "INVTYPE_NECK", "INVTYPE_FINGER", "INVTYPE_TRINKET" },
+							{"invtype", "INVTYPE_TRINKET" },
 						},
 					}),
 					i(190763, {	-- Broker's Belt
@@ -179,6 +179,16 @@ root("Zones", m(SHADOWLANDS, {
 							{"pop"},								-- Discard the Header and acquire all of their children.
 							{"is", "itemID"},						-- Only Items!
 							{"invtype", "INVTYPE_WRIST" },
+						},
+					}),
+					i(190764, {	-- Broker's Braid
+						["sym"] = {
+							{"select", "mapID", ZERETH_MORTIS },	-- Select Zereth Mortis
+							{"pop"},								-- Discard the Header and acquire all of their children.
+							{"where", "headerID", ZONE_DROPS },		-- Select Zone Drops
+							{"pop"},								-- Discard the Header and acquire all of their children.
+							{"is", "itemID"},						-- Only Items!
+							{"invtype", "INVTYPE_NECK" },
 						},
 					}),
 					i(190760, {	-- Broker's Chestpiece
@@ -231,6 +241,16 @@ root("Zones", m(SHADOWLANDS, {
 							{"invtype", "INVTYPE_LEGS" },
 						},
 					}),
+					i(190764, {	-- Broker's Ring
+						["sym"] = {
+							{"select", "mapID", ZERETH_MORTIS },	-- Select Zereth Mortis
+							{"pop"},								-- Discard the Header and acquire all of their children.
+							{"where", "headerID", ZONE_DROPS },		-- Select Zone Drops
+							{"pop"},								-- Discard the Header and acquire all of their children.
+							{"is", "itemID"},						-- Only Items!
+							{"invtype", "INVTYPE_FINGER" },
+						},
+					}),
 					i(190755, {	-- Broker's Shoulders
 						["sym"] = {
 							{"select", "mapID", ZERETH_MORTIS },	-- Select Zereth Mortis
@@ -264,6 +284,9 @@ root("Zones", m(SHADOWLANDS, {
 				["sourceQuests"] = { 65219 },	-- Jiro to Hero
 				["coord"] = { 37.2, 44.7, ZERETH_MORTIS },
 				["g"] = {
+					i(189986, {	-- Armadillo Soul (SOUL!)
+						["cost"] = { { "c", CYPHER, 500 }, },
+					}),
 					i(188793, {	-- Automated Cypher Analysis Tool
 						["questID"] = 65282,
 						["cost"] = { { "c", CYPHER, 150 }, },
@@ -271,8 +294,10 @@ root("Zones", m(SHADOWLANDS, {
 					i(189980, {	-- Brutosaur Soul (SOUL!)
 						["cost"] = { { "c", CYPHER, 1000 }, },
 					}),
-					i(189986, {	-- Armadillo Soul (SOUL!)
-						["cost"] = { { "c", CYPHER, 500 }, },
+					i(187824, {	-- Formula: Magically Regulated Automa Core (RECIPE!)
+						["recipeID"] = 360007,	-- Magically Regulated Automa Core
+						["requireSkill"] = ENCHANTING,
+						["cost"] = { { "c", CYPHER, 25 }, },
 					}),
 					i(190333, {	-- Jiro Circle of Song (TOY!)
 						["cost"] = { { "c", CYPHER, 100 }, },
@@ -284,10 +309,8 @@ root("Zones", m(SHADOWLANDS, {
 							i(190947),	-- Halo-Stave of the Oracles
 						},
 					}),
-					i(187824, {	-- Formula: Magically Regulated Automa Core (RECIPE!)
-						["recipeID"] = 360007,	-- Magically Regulated Automa Core
-						["requireSkill"] = ENCHANTING,
-						["cost"] = { { "c", CYPHER, 25 }, },
+					i(191039, {	-- Pocopoc Traveler
+						["cost"] = { { "c", CYPHER, 500 }, },
 					}),
 					i(187804, {	-- Recipe: Empty Kettle of Stone Soup (RECIPE!)
 						["recipeID"] = 359333,	-- Empty Kettle of Stone Soup
@@ -299,14 +322,27 @@ root("Zones", m(SHADOWLANDS, {
 			n(182257, {	-- Vilo
 				["coord"] = { 34.8, 64.1, ZERETH_MORTIS },
 				["g"] = {
-					i(189174),	-- Lens of Focused Intention
-					i(190237),	-- Broker Translocation Matrix (TOY!)
-					i(190611),	-- Tabard of the Enlightened
-					i(190384),	-- Eternal Augment Rune
-					i(190640),	-- Font of Ephemeral Power
-					i(190644),	-- Vessel of Profound Possibilities
 					i(187640),	-- Anointed Protostag (MOUNT!)
+					i(190237),	-- Broker Translocation Matrix (TOY!)
+					i(190956, {	-- Decanter of Untapped Potential
+						--["questID"] = ,
+						["cost"] = { { "g", 25000000 } },	-- 2500g
+						["sym"] = {
+							{"select","tierID",SL_TIER},{"pop"},	-- SL Tier
+							{"where","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
+						},
+					}),
+					i(190384),	-- Eternal Augment Rune
+					i(190640, {	-- Font of Ephemeral Power
+						["questID"] = 65694,
+						["cost"] = { { "g", 5000000 } },	-- 500g
+						["sym"] = {
+							{"select","tierID",SL_TIER},{"pop"},	-- SL Tier
+							{"where","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
+						},
+					}),
 					i(187629),	-- Heartlight Vombata (MOUNT!)
+					i(189174),	-- Lens of Focused Intention
 					i(187750, {	-- Recipe: Crafter's Mark IV (RECIPE!)
 						recipe(359666, {	-- Crafter's Mark IV
 							["requireSkill"] = ALCHEMY,
@@ -347,20 +383,7 @@ root("Zones", m(SHADOWLANDS, {
 							["requireSkill"] = TAILORING,
 						}),
 					}),
-					i(187785, {	-- Tome of the Eternal (RECIPE!)
-						recipe(359700, {	-- Vestige of the Eternal
-							["requireSkill"] = BLACKSMITHING,
-						}),
-						recipe(359701, {	-- Vestige of the Eternal
-							["requireSkill"] = JEWELCRAFTING,
-						}),
-						recipe(359702, {	-- Vestige of the Eternal
-							["requireSkill"] = LEATHERWORKING,
-						}),
-						recipe(359703, {	-- Vestige of the Eternal
-							["requireSkill"] = TAILORING,
-						}),
-					}),
+					i(190611),	-- Tabard of the Enlightened
 					i(187797, {	-- Technique: Contract: The Enlightened (RECIPE!)
 						["recipeID"] = 359786,	-- Contract: Enlightened Brokers
 						["requireSkill"] = INSCRIPTION,
@@ -382,190 +405,8 @@ root("Zones", m(SHADOWLANDS, {
 					i(190595),	-- Memory of Unity (SHAMAN)
 					i(190596),	-- Memory of Unity (WARLOCK)
 					i(190598),	-- Memory of Unity (WARRIOR)
-					-- Belt
-					i(190470),	-- Cinch of Unity
-					i(190472),	-- Cinch of Unity
-					i(190471),	-- Cinch of Unity
-					i(190466),	-- Clasp of Unity
-					i(190473),	-- Clasp of Unity
-					i(190464),	-- Cord of Unity
-					i(190468),	-- Cord of Unity
-					i(190469),	-- Cord of Unity
-					i(190474),	-- Girdle of Unity
-					i(190475),	-- Girdle of Unity
-					i(190467),	-- Girdle of Unity
-					i(190465),	-- Cinch of Unity
 				},
 			}),
-		}),
-	}),
-}));
-
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	tier(SL_TIER, {
-		n(ARMOR, {
-			filter(CLOTH, {
-				i(188065),	-- Choral Bands
-				i(188064),	-- Choral Belt
-				i(188063),	-- Choral Breeches
-				i(188062),	-- Choral Cowl
-				i(188061),	-- Choral Gloves
-				i(188066),	-- Choral Mantle
-				i(188060),	-- Choral Shoes
-				i(188059),	-- Choral Tunic
-				--
-				i(190244),	-- Enlightened Researcher's Boots
-				i(190279),	-- Enlightened Researcher's Breeches
-				i(190248),	-- Enlightened Researcher's Cord
-				i(190245),	-- Enlightened Researcher's Grips
-				i(190277),	-- Enlightened Researcher's Handwraps
-				i(190247),	-- Enlightened Researcher's Leggings
-				i(190282),	-- Enlightened Researcher's Mantle
-				i(190246),	-- Enlightened Researcher's Mask
-				i(190275),	-- Enlightened Researcher's Raiment
-				i(190280),	-- Enlightened Researcher's Sash
-				i(190274),	-- Enlightened Researcher's Shawl
-				i(190276),	-- Enlightened Researcher's Treads
-				i(190243),	-- Enlightened Researcher's Tunic
-				i(190278),	-- Enlightened Researcher's Visage
-				i(190281),	-- Enlightened Researcher's Wraps
-				i(190249),	-- Enlightened Researcher's Wristbands
-				--
-				i(190981),	-- Broker's Oracular Mantle
-				i(190979),	-- Crystallic Oracular Smock
-				i(190751),	-- Dimensional Oracular Wrists
-				i(190980),	-- Empathic Oracular Mantle
-				i(190978),	-- Nova Oracular Smock
-				i(190752),	-- Recreative Oracular Wrists
-				i(190977),	-- Scouring Oracular Smock
-				i(190982),	-- Synchronous Oracular Mantle
-				i(190753),	-- Temporal Oracular Wrists
-			}),
-			filter(LEATHER, {
-				i(188068),	-- Staccato Bands
-				i(188072),	-- Staccato Bracers
-				i(188069),	-- Staccato Cap
-				i(188089),	-- Staccato Jerkin
-				i(188070),	-- Staccato Pants
-				i(188090),	-- Staccato Pauldrons
-				i(188067),	-- Staccato Treads
-				i(188071),	-- Staccato Waistband
-				--
-				i(190254),	-- Unbound Explorer's Belt
-				i(190255),	-- Unbound Explorer's Bindings
-				i(190288),	-- Unbound Explorer's Bracers
-				i(190272),	-- Unbound Explorer's Chestguard
-				i(190285),	-- Unbound Explorer's Cowl
-				i(190306),	-- Unbound Explorer's Epaulets
-				i(190250),	-- Unbound Explorer's Footpads
-				i(190284),	-- Unbound Explorer's Gloves
-				i(190251),	-- Unbound Explorer's Handlers
-				i(190252),	-- Unbound Explorer's Headgear
-				i(190305),	-- Unbound Explorer's Jerkin
-				i(190253),	-- Unbound Explorer's Legguards
-				i(190273),	-- Unbound Explorer's Shoulderguards
-				i(190283),	-- Unbound Explorer's Striders
-				i(190286),	-- Unbound Explorer's Trousers
-				i(190287),	-- Unbound Explorer's Waistwrap
-				--
-				i(190987),	-- Broker's Cryptic Shoulderpads
-				i(190985),	-- Crystallic Cryptic Mask
-				i(190748),	-- Dimensional Cryptic Grips
-				i(190986),	-- Empathic Cryptic Shoulderpads
-				i(190984),	-- Nova Cryptic Mask
-				i(190750),	-- Recreative Cryptic Grips
-				i(190983),	-- Scouring Cryptic Mask
-				i(190988),	-- Synchronous Cryptic Shoulderpads
-				i(190749),	-- Temporal Cryptic Grips
-			}),
-			filter(MAIL, {
-				i(188074),	-- Anthemic Boots
-				i(188079),	-- Anthemic Clasp
-				i(188077),	-- Anthemic Cuisses
-				i(188075),	-- Anthemic Grasps
-				i(188073),	-- Anthemic Hauberk
-				i(188076),	-- Anthemic Helm
-				i(188078),	-- Anthemic Pauldrons
-				i(188080),	-- Anthemic Wristlinks
-				--
-				i(190295),	-- Transcendent Vagabond's Chain
-				i(190263),	-- Transcendent Vagabond's Clasps
-				i(190259),	-- Transcendent Vagabond's Coif
-				i(190289),	-- Transcendent Vagabond's Cuirass
-				i(190257),	-- Transcendent Vagabond's Footguards
-				i(190293),	-- Transcendent Vagabond's Greaves
-				i(190291),	-- Transcendent Vagabond's Grips
-				i(190258),	-- Transcendent Vagabond's Handguards
-				i(190292),	-- Transcendent Vagabond's Helm
-				i(190260),	-- Transcendent Vagabond's Pants
-				i(190256),	-- Transcendent Vagabond's Scales
-				i(190261),	-- Transcendent Vagabond's Shoulderpads
-				i(190294),	-- Transcendent Vagabond's Spaulders
-				i(190290),	-- Transcendent Vagabond's Striders
-				i(190262),	-- Transcendent Vagabond's Waistguard
-				i(190296),	-- Transcendent Vagabond's Wristguards
-				--
-				i(190993),	-- Broker's Enigmatic Cowl
-				i(190991),	-- Crystallic Enigmatic Epaulettes
-				i(190742),	-- Dimensional Enigmatic Footguards
-				i(190992),	-- Empathic Enigmatic Cowl
-				i(190990),	-- Nova Enigmatic Epaulettes
-				i(190743),	-- Recreative Enigmatic Footguards
-				i(190989),	-- Scouring Enigmatic Epaulettes
-				i(190994),	-- Synchronous Enigmatic Cowl
-				i(190744),	-- Temporal Enigmatic Footguards
-			}),
-			filter(PLATE, {
-				i(188082),	-- Harmonium Armor
-				i(188087),	-- Harmonium Belt
-				i(188088),	-- Harmonium Binders
-				i(188083),	-- Harmonium Boots
-				i(188084),	-- Harmonium Grips
-				i(188085),	-- Harmonium Pillars
-				i(188086),	-- Harmonium Shoulderplates
-				i(188081),	-- Harmonium Visor
-				--
-				i(190298),	-- Eternal Warder's Breastplate
-				i(190303),	-- Eternal Warder's Buckle
-				i(190265),	-- Eternal Warder's Chestplate
-				i(190300),	-- Eternal Warder's Crushers
-				i(190268),	-- Eternal Warder's Cuisses
-				i(190297),	-- Eternal Warder's Faceplate
-				i(190267),	-- Eternal Warder's Gauntlets
-				i(190270),	-- Eternal Warder's Girdle
-				i(190299),	-- Eternal Warder's Greaves
-				i(190301),	-- Eternal Warder's Legplates
-				i(190269),	-- Eternal Warder's Pauldrons
-				i(190266),	-- Eternal Warder's Sabatons
-				i(190302),	-- Eternal Warder's Shoulderplates
-				i(190271),	-- Eternal Warder's Vambraces
-				i(190264),	-- Eternal Warder's Visor
-				i(190304),	-- Eternal Warder's Wristplates
-				--
-				i(190999),	-- Broker's Numerus Breastplate
-				i(190997),	-- Crystallic Numerus Crown
-				i(190745),	-- Dimensional Numerus Handguards
-				i(190998),	-- Empathic Numerus Breastplate
-				i(190996),	-- Nova Numerus Crown
-				i(190746),	-- Recreative Numerus Handguards
-				i(190995),	-- Scouring Numerus Crown
-				i(191000),	-- Synchronous Numerus Breastplate
-				i(190747),	-- Temporal Numerus Handguards
-			}),
-			--??
-			i(188110),	-- Cypher Attunement Chestpiece
-			i(188117),	-- Cypher Attunement Cloak
-			i(188109),	-- Cypher Attunement Feet
-			i(188116),	-- Cypher Attunement Hands
-			i(188114),	-- Cypher Attunement Head
-			i(188115),	-- Cypher Attunement Legs
-			i(188111),	-- Cypher Attunement Neck
-			i(188112),	-- Cypher Attunement Ring
-			i(188107),	-- Cypher Attunement Shoulder
-			i(188108),	-- Cypher Attunement Waist
-			i(188113),	-- Cypher Attunement Wrist
-			--
-			i(190956),	-- Decanter of Untapped Potential
 		}),
 	}),
 }));

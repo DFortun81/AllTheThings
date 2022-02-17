@@ -800,6 +800,7 @@ i(190853);	-- Bushel of Mysterious Fruit
 i(188952);	-- Dominated Hearthstone
 i(190926);	-- Infested Automa Core
 i(190333);	-- Jiro Circle of Song
+i(190734);	-- Makaris's Satchel of Mines
 i(187860);	-- Mortis Mover
 i(187793);	-- Personal Containment Trap
 i(190457);	-- Protopological Cube
@@ -809,5 +810,4 @@ i(190238);	-- Xy'rath's Booby-Trapped Cache
 -- NOT SOURCED PROPERLY --
 i(190196);	-- Enlightened Hearthstone
 i(190754);	-- Firim's Specimen Container
-i(190734);	-- Makaris's Satchel of Mines
 end)();

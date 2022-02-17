@@ -1079,11 +1079,12 @@ pet(189585, 3237);	-- E'rnee
 pet(188679, 3221);	-- Lightless Tormentor
 -- Treasure
 pet(187735, 3172);	-- Geordy
+-- Vendor
+pet(191039, 3247);	-- Pocopoc Traveler
 -- NOT SOURCED PROPERLY --
 -- No Item related to them.
 --[[
 3215
 3218
-added later
 3246
 --]]

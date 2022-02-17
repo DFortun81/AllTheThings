@@ -939,10 +939,23 @@ _.ExpansionFeatures =
 						crit(5, {	-- Crown of Wills
 							["achievementID"] = 15259,	-- Secrets of the First Ones
 						}),
+						i(187785, {	-- Tome of the Eternal (RECIPE!)
+							recipe(359700, {	-- Vestige of the Eternal
+								["requireSkill"] = BLACKSMITHING,
+							}),
+							recipe(359701, {	-- Vestige of the Eternal
+								["requireSkill"] = JEWELCRAFTING,
+							}),
+							recipe(359702, {	-- Vestige of the Eternal
+								["requireSkill"] = LEATHERWORKING,
+							}),
+							recipe(359703, {	-- Vestige of the Eternal
+								["requireSkill"] = TAILORING,
+							}),
+						}),
 					},
 				}),
 				-- The End of Chap 5
-
 				-- Chap 6
 				q(64816, {	-- Reality's Doorstep
 					["sourceQuests"] = { 64813 },	-- The Crown of Wills

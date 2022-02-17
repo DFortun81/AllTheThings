@@ -333,7 +333,7 @@ _.ExpansionFeatures =
 							["coord"] = { 58.3, 84.6, 695 },
 							["classes"] = { WARRIOR },
 							["provider"] = { "n", 96469 },	-- Odyn
-							["sourceQuest"] = 43585,	-- Preparing For War
+							["sourceQuest"] = 42204,	-- Jorhuttam
 						}),
 						q(43604, {	-- Maw of Souls: Ymiron's Broken Blade
 							["crs"] = { 96756 },	-- Ymiron, the Fallen King

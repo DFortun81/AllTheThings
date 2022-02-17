@@ -76,6 +76,13 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(184742),	-- Rattling Bonefists
 					i(184736),	-- Robe of the March Warden
 					i(184745),	-- Tunic of the March Warden
+					i(190644, {	-- Vessel of Profound Possibilities
+						["timeline"] = { "added 9.1.2" },
+						["sym"] = {
+							{"select","tierID",SL_TIER},{"pop"},	-- SL Tier
+							{"where","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
+						},
+					}),
 					n(NECROLORD, sharedData({["customCollect"] = { "SL_COV_NEC" }},{
 						i(181807, {	-- Barbarous Osteowings
 							["cost"] = 5000000, -- 500g

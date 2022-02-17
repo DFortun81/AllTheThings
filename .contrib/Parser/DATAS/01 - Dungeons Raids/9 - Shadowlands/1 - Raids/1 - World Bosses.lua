@@ -94,7 +94,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 				["questID"] = 64531,	-- Mor'geth (WQ)
 				["isRaid"] = true,
 				["coord"] = { 69.1, 44.2, THE_MAW },
-				["maps"] = { 1543, 1820, 1821, 1822, 1823 },	-- all maps in the Maw
+				["maps"] = { 1820, 1821, 1822, 1823 },	-- all maps in the Maw
 				["creatureID"] = 178958,	-- Mor'geth <Tormentor of the Damned>
 				["g"] = bubbleDown({ ["modID"] = 3 }, {
 					i(187507),	-- Adaptive Armor Fragment

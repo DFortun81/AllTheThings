@@ -4,6 +4,9 @@
 root("Zones", m(SHADOWLANDS, {
 	m(ZERETH_MORTIS, {
 		n(ZONE_DROPS, {
+			-- Quest
+			i(190579),	-- Unformed Essence
+			-- Schematic
 			i(190585, {	-- Schematic: Heartbond Lupine
 				["description"] = "At the moment only drops from this Quest Objective Mob.",
 				["cr"] = 179939,	-- Maw-Frenzied Lupine
@@ -11,41 +14,17 @@ root("Zones", m(SHADOWLANDS, {
 			i(189468, {	-- Schematic: Goldplate Bufonid
 				["cr"] = 178803,	-- Accelerated Bufonid
 			}),
-			i(186559),	-- Grappling Gauntlet
+			-- Key
 			i(189704, {	-- Dominance Key
 				["cr"] = 181403,	-- Mawsworn Inquisitor
 			}),
-			-- Epic Randoms?
-			i(188047),	-- Haven Guard's Cudgel
-			i(188048),	-- Truthseeker's Staff
-			-- Chests also?
-			i(188044),	-- Discarded Cartel Al Signet
-			i(188106),	-- Unfathomable Pendant
-			i(188042),	-- Enlightened Dagger
-			i(190634),	-- Cypher-Etched Torque
-			i(190633),	-- Cypher-Etched Band
-			i(190635),	-- Cypher-Etched Lavaliere
-			i(190632),	-- Cypher-Etched Ring
-			-- Weaps
-			i(188053),	-- Abandoned Automa Loop
-			i(188041),	-- Ageless Spellblade
-			i(188056),	-- Ancient Protector's Pulverizer
-			i(188040),	-- Burnished Arbalest
-			i(188043),	-- Eradicator of the Eternal Guard
-			i(188051),	-- Gatewarden's Warglaive
-			i(188039),	-- Harmonic Actuator
-			i(188047),	-- Haven Guard's Cudgel
-			i(188046),	-- Haven Guard's Mace
-			i(188038),	-- Haven Guard's Shield
-			i(188055),	-- Impossibly Ancient Band
-			i(188050),	-- Ineffable Spire
-			i(188049),	-- Transcendant Gavel
-			i(188048),	-- Truthseeker's Staff
-			i(188106),	-- Unfathomable Pendant
-			--
-			i(188045),	-- Salvaged Viperid Band
-			-- Quest
-			i(190579),	-- Unformed Essence
+			-- Cosmetic
+			i(190951, {	-- Distinguished Blade of Cartel Al
+				["cr"] = 181407,	-- Mawsworn Striker
+			}),
+			i(190735, {	-- Varruth's Guillotine
+				["cr"] = 181407,	-- Mawsworn Striker
+			}),
 			-- Greens?
 			i(188054),	-- Antecedent Drape
 			i(188026),	-- Anthemic Bracers
@@ -80,6 +59,27 @@ root("Zones", m(SHADOWLANDS, {
 			i(188016),	-- Staccato Leggings
 			i(188036),	-- Staccato Mantle
 			i(188035),	-- Staccato Vest
+			-- Weaps
+			i(188053),	-- Abandoned Automa Loop
+			i(188041),	-- Ageless Spellblade
+			i(188056),	-- Ancient Protector's Pulverizer
+			i(188040),	-- Burnished Arbalest
+			i(188042),	-- Enlightened Dagger
+			i(188043),	-- Eradicator of the Eternal Guard
+			i(188051),	-- Gatewarden's Warglaive
+			i(188039),	-- Harmonic Actuator
+			i(188047),	-- Haven Guard's Cudgel
+			i(188046),	-- Haven Guard's Mace
+			i(188038),	-- Haven Guard's Shield
+			i(188055),	-- Impossibly Ancient Band
+			i(188050),	-- Ineffable Spire
+			i(188049),	-- Transcendant Gavel
+			i(188048),	-- Truthseeker's Staff
+			i(188106),	-- Unfathomable Pendant
+			-- Accessory
+			i(188044),	-- Discarded Cartel Al Signet
+			i(188106),	-- Unfathomable Pendant
+			i(188045),	-- Salvaged Viperid Band
 			-- Lattices
 			i(188957),	-- Genesis Mote
 			i(187634),	-- Ambystan Lattice
@@ -114,7 +114,9 @@ root("Zones", m(SHADOWLANDS, {
 			i(189169),	-- Glimmer of Survival
 			i(189170),	-- Glimmer of Vigilance
 			-- Mount Protoform
-			i(189176),	-- Protoform Sentience Crown
+			i(189176, {	-- Protoform Sentience Crown
+				["description"] = "Drops from Automas.",
+			}),
 			i(189180, {	-- Wind's Infinite Call
 				["crs"] = {
 					182096,	-- Enhanced Avian
@@ -129,33 +131,5 @@ root("Zones", m(SHADOWLANDS, {
 			i(189175),	-- Mawforged Bridle
 			--]]
 		}),
-	}),
-}));
-
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	tier(SL_TIER, {
-		i(188105),	-- [PH] Copy Fine Razorwing Quill
-		i(188057),	-- [PH] Copy Harmonic Crowd Breaker
-		i(188052),	-- [PH] Copy Iron Maiden's Toolkit
-		i(188092),	-- [PH] Copy Korthian Anima Vessel
-		i(188058),	-- [PH] Copy Tome of Insight
-		i(188103),	-- [PH] Copy Vault Attendant's Cape
-		i(184231),	-- 9.0 Covenant - Bastion - Weapon - Warglaive AGI - Blue
-		i(184232),	-- 9.0 Covenant - Bastion - Weapon - Warglaive AGI - Copper
-		i(184233),	-- 9.0 Covenant - Bastion - Weapon - Warglaive AGI - Dark
-		i(184234),	-- 9.0 Covenant - Bastion - Weapon - Warglaive AGI - Gold
-		i(184235),	-- 9.0 Covenant - Bastion - Weapon - Warglaive AGI - Pink
-		i(188095),	-- [PH] Copy Korthian Anima Slicer
-		i(188094),	-- [PH] Copy Korthian Attendant's Blade
-		i(188101),	-- [PH] Copy Korthian Attendant's Cane
-		i(188100),	-- [PH] Copy Korthian Attendant's Scepter
-		i(188093),	-- [PH] Copy Korthian Energy Bow
-		i(188091),	-- [PH] Copy Korthian Keeper's Buckler
-		i(188097),	-- [PH] Copy Korthian Protector's Warhammer
-		i(188096),	-- [PH] Copy Vault Guardian's Decapitator
-		i(188102),	-- [PH] Copy Vault Guardian's Warglaive
-		i(188098),	-- [PH] Copy Vault Patroller's Mace
-		i(188104),	-- [PH] Copy Vault Patroller's Slicer
-		i(188099),	-- [PH] Copy Vault Patroller's Staff
 	}),
 }));

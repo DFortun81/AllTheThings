@@ -4,13 +4,6 @@
 root("Zones", m(SHADOWLANDS, {
 	m(ZERETH_MORTIS, {
 		n(TREASURES, {
-			n(REWARDS, {
-				i(189544),	-- Anima Webbing
-				i(189864),	-- Anima Gossamer
-				currency(2009),	-- Cosmic Flux
-				currency(1979),	-- Cyphers of the First Ones
-				i(190189),	-- Sandworn Relic
-			}),
 			o(375408, {	-- Architect's Reserve
 				["description"] = "Only available after unlocking Protoform Synthesis: Mount.",
 				["coord"] = { 61.2, 37.2, ZERETH_MORTIS },
@@ -49,7 +42,7 @@ root("Zones", m(SHADOWLANDS, {
 				},
 			}),
 			o(375382, {	-- Crushed Supply Crate
-				["description"] = "To open it you need to pick up a Jiro Hammer(189768). Ontop of the rock there is a repair tool that you can use to trade with the nearby Jiros for a Jiro Hammer.",
+				["description"] = "To open it you need to pick up a Jiro Hammer(189768). Ontop of the rock there is a repair tool that you can use to trade with the nearby Jiros(Hiu Fi 185151) for a Jiro Hammer.",
 				["coord"] = { 56.8, 64.2, ZERETH_MORTIS },
 				["questID"] = 65489,
 				["g"] = {
@@ -108,6 +101,7 @@ root("Zones", m(SHADOWLANDS, {
 					crit(9, {	-- Fallen Vault
 						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
 					}),
+					i(189863),	-- Spatial Opener
 				},
 			}),
 			o(375405, {	-- Filched Artifact
@@ -143,7 +137,7 @@ root("Zones", m(SHADOWLANDS, {
 				},
 			}),
 			o(375484, {	-- Grateful Boon
-				["description"] = "Pet all the pets in this area.",
+				["description"] = "Pet all the creatures in the area. The creature will sit down after being petted. The Jiro will yell when you are done.",
 				["coord"] = { 37.2, 78.2, ZERETH_MORTIS },
 				["questID"] = 65545,
 				["g"] = {
@@ -443,10 +437,13 @@ root("Zones", m(SHADOWLANDS, {
 					}),
 				},
 			}),
-			-- Unknown?
-			n(185502, {	-- Pulp-Covered Relic
+			o(375403, {	-- Pulp-Covered Relic
 				["description"] = "Talk to this chest multiple times and kill add waves.",
-				--["questID"]
+				["crs"] = {
+					185502,	-- Pulp-Covered Relic
+					185265,	-- Pulp-Covered Relic
+				},
+				["questID"] = 65501,
 				["coords"] = {
 					{ 42, 34.2, ZERETH_MORTIS },
 					{ 53.4, 25.8, ZERETH_MORTIS },
@@ -474,15 +471,13 @@ root("Zones", m(SHADOWLANDS, {
 				["questID"] = 65183,
 				["isWeekly"] = True,
 				["cost"] = { { "i", 188231, 1 }, },	-- 1xProvis Cache Key
-				["g"] = {
-					i(187735),	-- Geordy (PET!)
-				},
 			}),
 			o(373579, {	-- Prying Eye Discovery
 				["description"] = "Only high up on Pillars.",
 				["coords"] = {
 					{ 35.2, 43.7, ZERETH_MORTIS },
 					{ 34.3, 44.3, ZERETH_MORTIS },
+					{ 48, 66.3, ZERETH_MORTIS },
 				},
 				["questID"] = 65184,
 				["repeatable"] = True,
@@ -513,6 +508,7 @@ root("Zones", m(SHADOWLANDS, {
 				["repeatable"] = True,
 				["g"] = {
 					i(190189),	-- Sandworn Relic
+					i(190734),	-- Makaris's Satchel of Mines (TOY!)
 				},
 			}),
 			-- Repeatable chests Without QuestID
@@ -567,7 +563,8 @@ root("Zones", m(SHADOWLANDS, {
 					{ 48.8, 42.4, ZERETH_MORTIS },
 				},
 				["g"] = {
-					i(190766),	-- Spectral Mawrat's Tail
+					i(190766),	-- Spectral Mawrat's Tail (MOUNT!)
+					i(190734),	-- Makaris's Satchel of Mines (TOY!)
 				},
 			}),
 			o(375366, {	-- Tarachnid Eggs
