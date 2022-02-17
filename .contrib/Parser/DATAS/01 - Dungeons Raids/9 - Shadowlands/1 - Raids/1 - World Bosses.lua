@@ -67,12 +67,34 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					i(187882),	-- Alpaca Soul
 				},
 			}),
+			e(2550, bubbleDown({ ["timeline"] = { "added 9.1.2" } }, {	-- Antros <Keeper of the Antecedents>
+				["crs"] = {
+					182466,	-- Antros
+					182863,	-- Sav'thul
+				},
+				["isWeekly"] = true,
+				["isRaid"] = true,
+				["questID"] = 65143,	-- (WQ)
+				["coord"] = { 48, 5, ZERETH_MORTIS },
+				["g"] = bubbleDown({ ["modID"] = 3 }, {
+					i(187507),	-- Adaptive Armor Fragment
+					i(187506),	-- Condensed Anima Sphere
+					i(190619),	-- Antecedent's Aliform Joggers
+					i(190614),	-- Antros' Entrusted Bascinet
+					i(190616),	-- Controlled Sequence Clasp
+					i(190615),	-- Cosmic Guardian's Casing
+					i(190621),	-- Dealic Deterrent Stockings
+					i(190617),	-- Destruction-Core Handlers
+					i(190618),	-- Lattice of the Distant Keeper
+					i(190620),	-- Sav'thul's Calamitous Tantour
+				}),
+			})),
 			e(2456, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {	-- Mor'geth <Tormentor of the Damned>
 				["isWeekly"] = true,
 				["questID"] = 64531,	-- Mor'geth (WQ)
 				["isRaid"] = true,
-				--["coord"] = { , ,  },
-				["maps"] = { 1543, 1820, 1821, 1822, 1823 },	-- all maps in the Maw
+				["coord"] = { 69.1, 44.2, THE_MAW },
+				["maps"] = { 1820, 1821, 1822, 1823 },	-- all maps in the Maw
 				["creatureID"] = 178958,	-- Mor'geth <Tormentor of the Damned>
 				["g"] = bubbleDown({ ["modID"] = 3 }, {
 					i(187507),	-- Adaptive Armor Fragment
@@ -192,3 +214,11 @@ root("HiddenQuestTriggers", {
 	q(62811),	-- Oranomonos kill questID
 	q(62809),	-- Valinor kill questID
 });
+
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	tier(SL_TIER, {
+		n(WORLD_BOSSES, {
+			i(190622),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Accessory - Trinket - Omni
+		}),
+	}),
+}));

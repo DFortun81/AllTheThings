@@ -2269,6 +2269,10 @@ profession(COOKING, {
 			["categoryID"] = 1326,
 			["groups"] = {
 				{
+					["name"] = "Empty Kettle of Stone Soup",
+					["recipeID"] = 359333
+				},
+				{
 					["name"] = "Feast of Gluttonous Hedonism",
 					["recipeID"] = 308403
 				},

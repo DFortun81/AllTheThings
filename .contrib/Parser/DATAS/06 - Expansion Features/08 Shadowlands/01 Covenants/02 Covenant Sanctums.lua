@@ -157,6 +157,7 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 64963 },	-- A Defector's Request
 							["description"] = "Can only spawn after completing the quest |cFFFFD700A Defector's Request'(64963)|r.",
 						}),
+						i(190178),	-- Pouch of Protogenic Provisions
 					},
 				}),
 				n(COVENANT_CALLINGS, {
@@ -197,6 +198,10 @@ _.ExpansionFeatures =
 							}),
 							i(187880),	-- Goat Soul
 							i(187862),	-- Snake Soul
+							i(190381, {	-- Technique: Glyph of the Spectral Vulpine (RECIPE!)
+								["recipeID"] = 367393,
+								["requireSkill"] = INSCRIPTION,
+							}),
 						},
 					}),
 					i(181556, {	-- Tribute of the Court / Revendreth
@@ -247,6 +252,10 @@ _.ExpansionFeatures =
 							}),
 							i(187880),	-- Goat Soul
 							i(187862),	-- Snake Soul
+							i(190381, {	-- Technique: Glyph of the Spectral Vulpine (RECIPE!)
+								["recipeID"] = 367393,
+								["requireSkill"] = INSCRIPTION,
+							}),
 						},
 					}),
 					i(181557, {	-- Favor of the Court / Revendreth

@@ -82,5 +82,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		}),
 		un(REMOVED_FROM_GAME, ach(1292)),		-- Yellow Brewfest Stein
 		un(REMOVED_FROM_GAME, ach(4790)),		-- Zalazane's Fall
+		-- PTR
+		--ach(15218),	-- WoW's 18th Anniversary
 	}),
 }));

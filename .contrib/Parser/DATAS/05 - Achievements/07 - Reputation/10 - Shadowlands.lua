@@ -13,5 +13,16 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 		}),
 		ach(15069),		-- The Archivist's Codex
 		ach(14656),		-- Trading Partners
+		-- PTR
+		ach(15219),	-- Automa
+		ach(15220),	-- The Enlightened
+	}),
+}));
+
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	tier(SL_TIER, {
+		n(ACHIEVEMENTS, {
+			ach(15219),	-- Automa (Removed in one of the builds)
+		}),
 	}),
 }));

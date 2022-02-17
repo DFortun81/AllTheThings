@@ -54,7 +54,7 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE },{
 		i(156564),			-- Shu-zen, the Divine Sentinel
 		mount(308078),		-- Squeakers, the Trickster
 		mount(326390),		-- Steamscale Incinerator
-		mount(317177),		-- Sunwarmed Purrkin
+		--mount(317177),		-- Sunwarmed Purrkin
 		i(92724, {			-- Swift Windsteed
 			["u"] = REMOVED_FROM_GAME,
 		}),
@@ -65,7 +65,7 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE },{
 			i(112324),			-- Nightmarish Hitching Post
 		}),
 		i(69846),			-- Winged Guardian
-		mount(359317),		-- Wen Lo, the River's Edge
+		--mount(359317),		-- Wen Lo, the River's Edge
 	}),
 	filter(BATTLE_PETS, {
 		i(106240),			-- Alterac Brew-Pup
@@ -73,7 +73,7 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE },{
 		battlepet(156, {	-- Bananas
 			["u"] = REMOVED_FROM_GAME,
 		}),
-		pet(3153),			-- Blinky
+		--pet(3153),			-- Blinky
 		i(98550),			-- Blossoming Ancient
 		i(128424),			-- Brightpaw
 		i(160588),			-- Cap'n Crackers

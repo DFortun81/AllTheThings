@@ -346,5 +346,16 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			crit(9),	-- Kill The Flame
 			crit(10),	-- The Dreadful Blend
 		}),
+		-- PTR
+		ach(15336, {	-- From A to Zereth
+			i(187673),	-- Cryptic Aurelid (MOUNT!)
+		}),
+		ach(15259, {	-- Secrets of the First Ones
+			ach(15518),	-- A Means to an End
+		}),
+		ach(15229, {	-- Traversing the Spheres
+			i(187860),	-- Mortis Mover (TOY!)
+		}),
+		ach(15515),	-- Path to Enlightenment
 	}),
 }));

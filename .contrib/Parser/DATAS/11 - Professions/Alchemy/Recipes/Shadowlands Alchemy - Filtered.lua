@@ -4,6 +4,15 @@ profession(ALCHEMY, {
 			["categoryID"] = 1294,	-- Shadowlands Alchemy
 			["g"] = {
 				{
+					["categoryID"] = 1296,	-- Combat Potions
+					["g"] = {
+						{
+							["recipeID"] = 359870,	-- Cosmic Healing Potion
+							["name"] = "Cosmic Healing Potion",
+						},
+					},
+				},
+				{
 					["categoryID"] = 1517,	-- Other
 					["g"] = {
 						{
@@ -25,6 +34,27 @@ profession(ALCHEMY, {
 						{
 							["recipeID"] = 354882,	-- Widow Burst
 							["name"] = "Widow Burst",
+						},
+					},
+				},
+				{
+					["categoryID"] = 786,	-- Optional Reagents
+					["g"] = {
+						{
+							["recipeID"] = 359666,	-- Crafter's Mark IV
+							["name"] = "Crafter's Mark IV",
+						},
+						{
+							["recipeID"] = 359673,	-- Crafter's Mark of the First Ones
+							["name"] = "Crafter's Mark of the First Ones",
+						},
+						{
+							["recipeID"] = 360014,	-- Infusion: Corpse Purification
+							["name"] = "Infusion: Corpse Purification",
+						},
+						{
+							["recipeID"] = 360318,	-- Sustaining Armor Polish
+							["name"] = "Sustaining Armor Polish",
 						},
 					},
 				},

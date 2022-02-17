@@ -1186,6 +1186,14 @@ root("Zones", {
 					["coord"] = { 73.6, 91.3, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(65425, {	-- Whatever You Sayaad
+					["description"] = "Start this quest via your own Sayaad(Succubus/Incubus Pet).",
+					["provider"] = { "n", 184600 },	-- Warlock Minion
+					["coord"] = { 79.5, 69.8, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { WARLOCK },
+					["timeline"] = { "added 9.1.2" },
+				}),
 				q(58910, {	-- What's Your Specialty? (Druid)
 					["customCollect"] = "NPE",	-- New Player Experience
 					["sourceQuests"] = { 58909 },	-- License to Ride

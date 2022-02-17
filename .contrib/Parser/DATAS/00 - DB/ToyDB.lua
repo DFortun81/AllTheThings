@@ -790,4 +790,24 @@ i(188680);	-- Winter Veil Chorus Book
 i(187958);	-- PH - Banner of the Opportune
 i(187957);	-- PH - Banner of the Opportune
 i(187959);	-- PH - Banner of the Opportune
+
+
+-----------------
+-- PATCH 9.2.0 --
+-----------------
+i(190237);	-- Broker Translocation Matrix
+i(190853);	-- Bushel of Mysterious Fruit
+i(188952);	-- Dominated Hearthstone
+i(190926);	-- Infested Automa Core
+i(190333);	-- Jiro Circle of Song
+i(190734);	-- Makaris's Satchel of Mines
+i(187860);	-- Mortis Mover
+i(187793);	-- Personal Containment Trap
+i(190457);	-- Protopological Cube
+i(190177);	-- Sphere of Enlightened Cogitation
+i(190238);	-- Xy'rath's Booby-Trapped Cache
+
+-- NOT SOURCED PROPERLY --
+i(190196);	-- Enlightened Hearthstone
+i(190754);	-- Firim's Specimen Container
 end)();

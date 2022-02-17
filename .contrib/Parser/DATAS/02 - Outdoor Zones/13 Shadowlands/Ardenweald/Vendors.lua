@@ -59,6 +59,13 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						["cost"] = 14120000,	-- 1,412g
 						["timeline"] = { "added 9.1.5" },
 					}),
+					i(190644, {	-- Vessel of Profound Possibilities
+						["timeline"] = { "added 9.1.2" },
+						["sym"] = {
+							{"select","tierID",SL_TIER},{"pop"},	-- SL Tier
+							{"where","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
+						},
+					}),
 				},
 			}),
 			n(172634, {	-- Brightgleam

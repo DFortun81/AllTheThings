@@ -4,6 +4,229 @@
 -- Everything in this file hasn't been implemented yet.
 
 root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+	n(-2095, {	-- 9.2.0
+		-- Toys
+		i(190196),	-- Enlightened Hearthstone
+		i(190754),	-- Firim's Specimen Container
+		-- Pets
+		pet(3215),
+		pet(3218),
+		pet(3246),
+		-- Mounts
+		i(187674),	-- [PH] Progenitor Jellyfish (Dark)
+		i(187644),	-- Vicious Warstalker (A)
+		i(187642),	-- Vicious Warstalker (H)
+		i(189917),	-- Constellation Master's Smock
+		-- Recipes
+		i(187847, {	-- Design: Devourer Essence Stone (RECIPE!) (Stargorger?)
+			["recipeID"] = 360317,	-- Devourer Essence Stone
+			["requireSkill"] = JEWELCRAFTING,
+		}),
+		-- Dune Rares?
+		i(190124),	-- Interrogator's Vicious Dirk
+		i(190125),	-- Kris of Intricate Secrets
+		i(190108),	-- Aegis of Laughing Souls
+		i(190106),	-- Approaching Terror's Torch
+		i(190102),	-- Chains of Infectious Serrations
+		i(190105),	-- Chilling Domination Mace
+		i(190109),	-- Cudgel of Mortality's Chains
+		i(190103),	-- Pillar of Noxious Dissemination
+		i(190458),	-- Atrophy's Ominous Bulwark
+		i(190463),	-- Dismal Mystic's Glaive
+		-- From Dune Achievement?
+		i(190111),	-- Escutcheon of Beautiful Death Ach?
+		i(190110),	-- Flail of Balletic Carnage Ach?
+		i(190112),	-- Glimmering War Beacon Ach?
+		i(190462),	-- Impaler's Graceful Lance Ach?
+		-- BoE World drop?
+		i(190334),	-- Origin
+		-- Rare
+		i(189996),	-- Elegantly Balanced Axe
+		i(189961),	-- Enduring Protector's Shoulderguards (Protector?)
+		i(189993),	-- Gavel of the Twisted Judicator
+		i(189959),	-- Legs of Graceful Landing
+		i(189953),	-- Lush-Stained Footguards (Overgrowth?)
+		i(189956),	-- Perverse Champion's Handguards
+		i(189943),	-- Greaves of Cosmic Designs
+		i(189904),	-- Meticulous Architect's Mitts
+		i(190057),	-- Protective Raptora's Wing-Glaive
+		i(190003),	-- Skyward Savior's Talon
+		-- Green
+		i(190374),	-- Gemstone of Prismatic Brilliance
+		i(190390),	-- Protector's Diffusion Implement
+		i(190726),	-- Extract of Prodigious Sands
+		-- Cosmetic
+		-- Cloak
+		i(190931),	-- Cape of the Regal Wanderer
+		i(190930),	-- Dark Shawl of the Enlightened
+		i(190929),	-- Ebony Protocloak
+		i(190933),	-- Majestic Oracle's Drape
+		i(190932),	-- Protohide Drape
+		i(190928),	-- Sandtails Drape
+		-- Wep
+		i(190935),	-- Distinguished Blade of Cartel Al
+		i(190937),	-- Edge of the Enlightened
+		i(190934),	-- Standard of the Wandering Brokers
+		i(190946),	-- Emerald-Heart Protomaul
+		i(190950),	-- Gavel of Lost Purpose
+		i(190943),	-- Jiro Tuning Hammer
+		i(190944),	-- Mace of Renewed Purpose
+		i(190948),	-- Staff of the Dormant Oracle
+		i(190949),	-- Stave of the Eternal Cycle
+
+
+		-- Shit that probably wont come on live
+		-- Misc
+		i(189452),	-- 9.2 Mount Crafting Bag of Goodies
+		i(189428),	-- 9.2 Pet Battle Playtest Bag of Goodies
+		i(190383),	-- Progenitor Essentia Lattice
+		n(ARMOR, {
+			filter(CLOTH, {
+				i(188065),	-- Choral Bands
+				i(188064),	-- Choral Belt
+				i(188063),	-- Choral Breeches
+				i(188062),	-- Choral Cowl
+				i(188061),	-- Choral Gloves
+				i(188066),	-- Choral Mantle
+				i(188060),	-- Choral Shoes
+				i(188059),	-- Choral Tunic
+				--
+				i(190244),	-- Enlightened Researcher's Boots
+				i(190279),	-- Enlightened Researcher's Breeches
+				i(190248),	-- Enlightened Researcher's Cord
+				i(190245),	-- Enlightened Researcher's Grips
+				i(190277),	-- Enlightened Researcher's Handwraps
+				i(190247),	-- Enlightened Researcher's Leggings
+				i(190282),	-- Enlightened Researcher's Mantle
+				i(190246),	-- Enlightened Researcher's Mask
+				i(190275),	-- Enlightened Researcher's Raiment
+				i(190280),	-- Enlightened Researcher's Sash
+				i(190274),	-- Enlightened Researcher's Shawl
+				i(190276),	-- Enlightened Researcher's Treads
+				i(190243),	-- Enlightened Researcher's Tunic
+				i(190278),	-- Enlightened Researcher's Visage
+				i(190281),	-- Enlightened Researcher's Wraps
+				i(190249),	-- Enlightened Researcher's Wristbands
+			}),
+			filter(LEATHER, {
+				i(188068),	-- Staccato Bands
+				i(188072),	-- Staccato Bracers
+				i(188069),	-- Staccato Cap
+				i(188089),	-- Staccato Jerkin
+				i(188070),	-- Staccato Pants
+				i(188090),	-- Staccato Pauldrons
+				i(188067),	-- Staccato Treads
+				i(188071),	-- Staccato Waistband
+				--
+				i(190254),	-- Unbound Explorer's Belt
+				i(190255),	-- Unbound Explorer's Bindings
+				i(190288),	-- Unbound Explorer's Bracers
+				i(190272),	-- Unbound Explorer's Chestguard
+				i(190285),	-- Unbound Explorer's Cowl
+				i(190306),	-- Unbound Explorer's Epaulets
+				i(190250),	-- Unbound Explorer's Footpads
+				i(190284),	-- Unbound Explorer's Gloves
+				i(190251),	-- Unbound Explorer's Handlers
+				i(190252),	-- Unbound Explorer's Headgear
+				i(190305),	-- Unbound Explorer's Jerkin
+				i(190253),	-- Unbound Explorer's Legguards
+				i(190273),	-- Unbound Explorer's Shoulderguards
+				i(190283),	-- Unbound Explorer's Striders
+				i(190286),	-- Unbound Explorer's Trousers
+				i(190287),	-- Unbound Explorer's Waistwrap
+			}),
+			filter(MAIL, {
+				i(188074),	-- Anthemic Boots
+				i(188079),	-- Anthemic Clasp
+				i(188077),	-- Anthemic Cuisses
+				i(188075),	-- Anthemic Grasps
+				i(188073),	-- Anthemic Hauberk
+				i(188076),	-- Anthemic Helm
+				i(188078),	-- Anthemic Pauldrons
+				i(188080),	-- Anthemic Wristlinks
+				--
+				i(190295),	-- Transcendent Vagabond's Chain
+				i(190263),	-- Transcendent Vagabond's Clasps
+				i(190259),	-- Transcendent Vagabond's Coif
+				i(190289),	-- Transcendent Vagabond's Cuirass
+				i(190257),	-- Transcendent Vagabond's Footguards
+				i(190293),	-- Transcendent Vagabond's Greaves
+				i(190291),	-- Transcendent Vagabond's Grips
+				i(190258),	-- Transcendent Vagabond's Handguards
+				i(190292),	-- Transcendent Vagabond's Helm
+				i(190260),	-- Transcendent Vagabond's Pants
+				i(190256),	-- Transcendent Vagabond's Scales
+				i(190261),	-- Transcendent Vagabond's Shoulderpads
+				i(190294),	-- Transcendent Vagabond's Spaulders
+				i(190290),	-- Transcendent Vagabond's Striders
+				i(190262),	-- Transcendent Vagabond's Waistguard
+				i(190296),	-- Transcendent Vagabond's Wristguards
+			}),
+			filter(PLATE, {
+				i(188082),	-- Harmonium Armor
+				i(188087),	-- Harmonium Belt
+				i(188088),	-- Harmonium Binders
+				i(188083),	-- Harmonium Boots
+				i(188084),	-- Harmonium Grips
+				i(188085),	-- Harmonium Pillars
+				i(188086),	-- Harmonium Shoulderplates
+				i(188081),	-- Harmonium Visor
+				--
+				i(190298),	-- Eternal Warder's Breastplate
+				i(190303),	-- Eternal Warder's Buckle
+				i(190265),	-- Eternal Warder's Chestplate
+				i(190300),	-- Eternal Warder's Crushers
+				i(190268),	-- Eternal Warder's Cuisses
+				i(190297),	-- Eternal Warder's Faceplate
+				i(190267),	-- Eternal Warder's Gauntlets
+				i(190270),	-- Eternal Warder's Girdle
+				i(190299),	-- Eternal Warder's Greaves
+				i(190301),	-- Eternal Warder's Legplates
+				i(190269),	-- Eternal Warder's Pauldrons
+				i(190266),	-- Eternal Warder's Sabatons
+				i(190302),	-- Eternal Warder's Shoulderplates
+				i(190271),	-- Eternal Warder's Vambraces
+				i(190264),	-- Eternal Warder's Visor
+				i(190304),	-- Eternal Warder's Wristplates
+			}),
+			--
+			i(188110),	-- Cypher Attunement Chestpiece
+			i(188117),	-- Cypher Attunement Cloak
+			i(188109),	-- Cypher Attunement Feet
+			i(188116),	-- Cypher Attunement Hands
+			i(188114),	-- Cypher Attunement Head
+			i(188115),	-- Cypher Attunement Legs
+			i(188111),	-- Cypher Attunement Neck
+			i(188112),	-- Cypher Attunement Ring
+			i(188107),	-- Cypher Attunement Shoulder
+			i(188108),	-- Cypher Attunement Waist
+			i(188113),	-- Cypher Attunement Wrist
+			--
+			i(188105),	-- [PH] Copy Fine Razorwing Quill
+			i(188057),	-- [PH] Copy Harmonic Crowd Breaker
+			i(188052),	-- [PH] Copy Iron Maiden's Toolkit
+			i(188092),	-- [PH] Copy Korthian Anima Vessel
+			i(188058),	-- [PH] Copy Tome of Insight
+			i(188103),	-- [PH] Copy Vault Attendant's Cape
+			i(184231),	-- 9.0 Covenant - Bastion - Weapon - Warglaive AGI - Blue
+			i(184232),	-- 9.0 Covenant - Bastion - Weapon - Warglaive AGI - Copper
+			i(184233),	-- 9.0 Covenant - Bastion - Weapon - Warglaive AGI - Dark
+			i(184234),	-- 9.0 Covenant - Bastion - Weapon - Warglaive AGI - Gold
+			i(184235),	-- 9.0 Covenant - Bastion - Weapon - Warglaive AGI - Pink
+			i(188095),	-- [PH] Copy Korthian Anima Slicer
+			i(188094),	-- [PH] Copy Korthian Attendant's Blade
+			i(188101),	-- [PH] Copy Korthian Attendant's Cane
+			i(188100),	-- [PH] Copy Korthian Attendant's Scepter
+			i(188093),	-- [PH] Copy Korthian Energy Bow
+			i(188091),	-- [PH] Copy Korthian Keeper's Buckler
+			i(188097),	-- [PH] Copy Korthian Protector's Warhammer
+			i(188096),	-- [PH] Copy Vault Guardian's Decapitator
+			i(188102),	-- [PH] Copy Vault Guardian's Warglaive
+			i(188098),	-- [PH] Copy Vault Patroller's Mace
+			i(188104),	-- [PH] Copy Vault Patroller's Slicer
+			i(188099),	-- [PH] Copy Vault Patroller's Staff
+		}),
+	}),
 	i(163255, {	-- 7th Legionnaire's Treads
 		-- CRIEVE NOTE: Keep this here until we get solid proof and an accurate source.
 		["description"] = "There's been a lot of discussion about this item and whether or not it exists. If this drops for you, please provide as much information as you can about how and where you got it. It does not commonly drop like the other items in Arathi and it is suspected not to be available from the Warfront Victory or Warfront Victory Quest Crate either.\n\n - Crieve",

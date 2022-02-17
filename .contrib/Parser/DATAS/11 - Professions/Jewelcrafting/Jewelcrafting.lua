@@ -5155,6 +5155,10 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 					["recipeID"] = 311951
 				},
 				{
+					["name"] = "Mass Prospect Progenium",
+					["recipeID"] = 359492
+				},
+				{
 					["name"] = "Mass Prospect Sinvyr",
 					["recipeID"] = 311952
 				},
@@ -5169,6 +5173,10 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 			["categoryID"] = 1421,
 			["groups"] = {
 				{
+					["name"] = "Aealic Harmonizing Stone",
+					["recipeID"] = 360016
+				},
+				{
 					["name"] = "Crafter's Mark I",
 					["recipeID"] = 343697
 				},
@@ -5177,9 +5185,25 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 					["recipeID"] = 343696
 				},
 				{
+					["name"] = "Crafter's Mark IV",
+					["recipeID"] = 359663
+				},
+				{
+					["name"] = "Crafter's Mark of the First Ones",
+					["recipeID"] = 359672
+				},
+				{
+					["name"] = "Devourer Essence Stone",
+					["recipeID"] = 360317
+				},
+				{
 					["name"] = "Novice Crafter's Mark",
 					["recipeID"] = 343693
-				}
+				},
+				{
+					["name"] = "Vestige of the Eternal",
+					["recipeID"] = 359701
+				},
 			}
 		},
 		{

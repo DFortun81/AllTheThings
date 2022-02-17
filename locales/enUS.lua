@@ -903,6 +903,7 @@ app.L = {
 		[-38] = app.asset("Category_Professions"),											-- Professions
 		[-40] = "Interface\\Icons\\Inv_misc_book_17",										-- Legacy
 		[-41] = "Interface\\Icons\\TRADE_ARCHAEOLOGY",										-- Cache of Madness
+		[-42] = app.asset("Category_Crafting"),												-- Crafted Item
 	-- World Events (These are used by ATT CLassic)
 		[-47] = "Interface\\Icons\\achievement_worldevent_lunar",							-- Lunar Festival
 		[-52] = "Interface\\Icons\\inv_misc_toy_04",										-- Children's Week
@@ -1189,6 +1190,7 @@ app.L = {
 	-- Shadowlands PvP Seasons
 		[-693] = "Interface\\Icons\\inv_shadebeastmount",									-- Sinful Gladiator: Shadowlands Season 1
 		[-694] = "Interface\\Icons\\inv_shadebeastmount_blue",								-- Unchained Gladiator: Shadowlands Season 2
+		[-695] = "Interface\\Icons\\inv_shadebeastmount_red",								-- Cosmic Gladiator: Shadowlands Season 3
 	-- More PvP Seasons are likely to come dont use IDs here
 	-- Pets
 		[-795] = app.asset("Pet_Dungeon"),													-- Pet Battle Dungeons
@@ -1273,6 +1275,8 @@ app.L = {
 		[-985] = 1392911,																	-- Coldheart Interstitia
 		[-986] = 2178500,																	-- Mort'regar
 		[-987] = 2178509,																	-- The Upper Reaches
+		-- 9.2
+		[-988] = select(10, GetAchievementInfo(15402)),										-- Cypher of the First Ones
 		--
 	-- Sets
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",						-- Sets
@@ -1312,6 +1316,7 @@ app.L = {
 		[-5364] = "Interface\\Icons\\inv_misc_celebrationcake_01",							-- 15th Anniversary
 		[-5365] = "Interface\\Icons\\inv_misc_celebrationcake_01",							-- 16th Anniversary
 		[-5366] = "Interface\\Icons\\inv_misc_celebrationcake_01",							-- 17th Anniversary
+		[-5367] = "Interface\\Icons\\inv_misc_celebrationcake_01",							-- 18th Anniversary
 	--
 		[-6013] = app.asset("Category_Factions"),											-- Faction
 		[-6014] = "Interface\\Icons\\Spell_Arcane_PortalUnderCity",							-- Cities
@@ -1482,6 +1487,7 @@ app.L = {
 		[-38] = TRADE_SKILLS,													-- Professions
 		[-40] = LFG_LIST_LEGACY,												-- Legacy
 		[-41] = "Cache of Madness",												-- Cache of Madness
+		[-42] = LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM,					-- Crafted Item
 	-- World Events (These are used by ATT CLassic)
 		[-47] = select(1,GetCategoryInfo(160)),									-- Lunar Festival
 		[-52] = select(1,GetCategoryInfo(163)),									-- Children's Week
@@ -1777,6 +1783,7 @@ app.L = {
 	-- Shadowlands PvP Seasons
 		[-693] = select(2, GetAchievementInfo(14690)),							-- Sinful Gladiator: Shadowlands Season 1
 		[-694] = select(2, GetAchievementInfo(14973)),							-- Unchained Gladiator: Shadowlands Season 2
+		[-695] = select(2, GetAchievementInfo(15353)),							-- Cosmic Gladiator: Shadowlands Season 3
 	-- More PvP Seasons are likely to come dont use IDs here
 	-- Pets
 		[-795] = "Pet Battle Dungeons",											-- Pet Battle Dungeons
@@ -1876,6 +1883,8 @@ app.L = {
 		[-985] = select(2, GetAchievementInfo(14483)),							-- Coldheart Interstitia
 		[-986] = select(2, GetAchievementInfo(14488)),							-- Mort'regar
 		[-987] = select(2, GetAchievementInfo(14493)),							-- The Upper Reaches
+		-- 9.2
+		[-988] = select(2, GetAchievementInfo(15402)),							-- Cypher of the First Ones
 	-- Sets
 		[-1000] = WARDROBE_SETS, 												-- Sets
 	-- Warrior order hall lore items
@@ -1922,6 +1931,7 @@ app.L = {
 		[-5364] = select(2,GetAchievementInfo(13917)),							-- 15th Anniversary
 		[-5365] = select(2,GetAchievementInfo(14271)),							-- 16th Anniversary
 		[-5366] = select(2,GetAchievementInfo(14942)),							-- 17th Anniversary
+		[-5367] = select(2,GetAchievementInfo(15218)),							-- 18th Anniversary
 
 		[-6013] = FACTION,														-- Faction
 		[-6014] = BUG_CATEGORY4,												-- Cities

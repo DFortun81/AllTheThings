@@ -258,6 +258,12 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 				i(19182),	-- Tattered Darkmoon Faire Prize Ticket
 			},
 		}),
+		q(64783, {	-- Dance Dance Darkmoon
+			["provider"] = { "n", 181097 },	-- Simon Sezdans <Dance Master>
+			--["coord"]
+			["timeline"] = { "added 9.1.2" },
+			["repeatable"] = true,
+		}),
 		applyclassicphase(PHASE_THREE, q(7907, {	-- Darkmoon Beast Deck
 			["providers"] = {
 				{ "i", 19228 },	-- Beasts Deck

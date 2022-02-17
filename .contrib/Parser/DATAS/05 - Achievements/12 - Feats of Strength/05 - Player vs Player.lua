@@ -1281,7 +1281,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 				title(434),	-- Sinful Gladiator <Name>
 			}),
 		})),
-		n(SEASON_UNCHAINED, {
+		n(SEASON_UNCHAINED, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 			ach(14969),		-- Challenger I: Shadowlands Season 2
 			ach(15233, {	-- Challenger II: Shadowlands Season 2
 				["timeline"] = { "added 9.1.5" },
@@ -1315,6 +1315,32 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			ach(15234, {	-- Rival II: Shadowlands Season 2
 				["timeline"] = { "added 9.1.5" },
 			}),
+		})),
+		n(SEASON_COSMIC, {
+			ach(15349),		-- Challenger I: Shadowlands Season 3
+			ach(15379),		-- Challenger II: Shadowlands Season 3
+			ach(15348, {	-- Combatant I: Shadowlands Season 3
+				title(78, {	-- Combatant <Name>
+					["collectible"] = false,
+				}),
+			}),
+			ach(15380),		-- Combatant II: Shadowlands Season 3
+			-- ach(15346),	-- Cosmic Combatant
+			-- ach(15347),	-- Cosmic Combatant
+			ach(15353, {	-- Cosmic Gladiator: Shadowlands Season 3
+				title(452),	-- Cosmic Gladiator <Name>
+			}),
+			ach(15351),		-- Duelist: Shadowlands Season 3
+			ach(15354),		-- Elite: Shadowlands Season 3
+			ach(15352),		-- Gladiator: Shadowlands Season 3
+			ach(15355, {	-- Hero of the Alliance: Cosmic
+				["races"] = ALLIANCE_ONLY,
+			}),
+			ach(15356, {	-- Hero of the Horde: Cosmic
+				["races"] = HORDE_ONLY,
+			}),
+			ach(15350),	-- Rival I: Shadowlands Season 3
+			ach(15378),	-- Rival II: Shadowlands Season 3
 		}),
 		un(REMOVED_FROM_GAME, ach(1161, {		-- High Five: 2200
 			un(REMOVED_FROM_GAME, ach(404)),		-- High Five: 2000
@@ -1354,4 +1380,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		})),
 		un(REMOVED_FROM_GAME, ach(8391)),		-- Tournament Participation 2013
 	})),
+	-- PTR 9.2?? idk
+	ach(15347),	-- Cosmic Combatant (A)
+	ach(15346),	-- Cosmic Combatant (H)
 }));

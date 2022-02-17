@@ -10,6 +10,19 @@ profession(INSCRIPTION, {
 							["recipeID"] = 354000,
 							["name"] = "Contract: Death's Advance",
 						},
+						{
+							["recipeID"] = 359786,
+							["name"] = "Contract: Enlightened Brokers",
+						},
+					},
+				},
+				{
+					["categoryID"] = 1412,	-- Mass Milling"
+					["g"] = {
+						{
+							["recipeID"] = 359490,
+							["name"] = "Mass Mill First Flower",
+						},
 					},
 				},
 				{
@@ -75,6 +88,9 @@ profession(INSCRIPTION, {
 					recipe(360899),	-- Mark of the Sable Ardenmoth
 					recipe(360545),	-- Mark of the Shimmering Ardenmoth
 					recipe(360539),	-- Mark of the Twilight Runestag
+					-- PTR
+					recipe(367389),	-- Glyph of the Spectral Lupine
+					recipe(367393),	-- Glyph of the Spectral Vulpine
 				})),
 				category(1416, {	-- Vantus Runes
 					recipe(311453, {	-- Vantus Rune: Castle Nathria
@@ -83,6 +99,7 @@ profession(INSCRIPTION, {
 					recipe(354394, {	-- Vantus Rune: Sanctum of Domination
 						["name"] = "Sanctum of Domination",
 					}),
+					recipe(359890),	-- Vantus Rune: Sepulcher of the First Ones
 				}),
 			},
 		},

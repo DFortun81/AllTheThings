@@ -130,6 +130,13 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(184727),	-- Courtier's Shoulderguard
 					i(184755),	-- Reinforced High Collar
 					i(182207),	-- Illusion: Sinsedge
+					i(190644, {	-- Vessel of Profound Possibilities
+						["timeline"] = { "added 9.1.2" },
+						["sym"] = {
+							{"select","tierID",SL_TIER},{"pop"},	-- SL Tier
+							{"where","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
+						},
+					}),
 					n(VENTHYR, sharedData({["customCollect"] = { "SL_COV_VEN" }},{
 						i(183708, {	-- Glittering Gold Sinstone Chain
 							["cost"] = { { "c", ANIMA, 3500 } },

@@ -930,6 +930,39 @@ _.ExpansionFeatures =
 					["isWeekly"] = true,
 					["name"] = "Upper Reaches, Layer 12",
 				}),
+			-- PTR 9.2
+				q(64813, {	-- The Crown of Wills
+					["sourceQuests"] = { 64812 },	-- Forge of Domination
+					["provider"] = { "n", 181384 },	-- The Primus
+					["coord"] = { 49.3, 58.6, 1912 },
+					["g"] = {
+						crit(5, {	-- Crown of Wills
+							["achievementID"] = 15259,	-- Secrets of the First Ones
+						}),
+						i(187785, {	-- Tome of the Eternal (RECIPE!)
+							recipe(359700, {	-- Vestige of the Eternal
+								["requireSkill"] = BLACKSMITHING,
+							}),
+							recipe(359701, {	-- Vestige of the Eternal
+								["requireSkill"] = JEWELCRAFTING,
+							}),
+							recipe(359702, {	-- Vestige of the Eternal
+								["requireSkill"] = LEATHERWORKING,
+							}),
+							recipe(359703, {	-- Vestige of the Eternal
+								["requireSkill"] = TAILORING,
+							}),
+						}),
+					},
+				}),
+				-- The End of Chap 5
+				-- Chap 6
+				q(64816, {	-- Reality's Doorstep
+					["sourceQuests"] = { 64813 },	-- The Crown of Wills
+					["provider"] = { "n", 181379 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 49.1, 69.5, 1912 },
+					["isBreadcrumb"] = true,
+				}),
 			}),
 		}),
 	}),
@@ -994,6 +1027,30 @@ _.HiddenQuestTriggers = {
 		-- 9.1.5
 		--q(64848), Enter Torghast as lvl 56 NF Druid
 		q(65308), -- Leveling in Torghast
+
+
+		-- Jailers Gauntlet
+		q(65288),	-- Layer 1
+
+		q(65289),	-- Layer 2
+		q(65275),	-- Layer 2 (Weird) PET?
+
+		q(65290),	-- Layer 3
+		--q(64347),	-- Layer 3 (Already in AV probably because it ended in AV) /Might be Death-Bound Shard
+
+		q(65291),	-- Layer 4
+		q(65276),	-- Layer 4 (Weird) Toy?
+
+		q(65292),	-- Layer 5
+
+		q(65293),	-- Layer 6
+		q(65277),	-- Layer 6 (Werid) Title?
+
+		q(65294),	-- Layer 7 (Probably)
+
+		q(65295),	-- Layer 8 (Probably)
+		q(65278),	-- Layer 8 (Weird) Mount?
+
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {

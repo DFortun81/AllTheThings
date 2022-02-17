@@ -125,6 +125,35 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES, {
 			}),
 			ach(14569),	-- Twisting Corridors: Layer 7
 		}),
+		-- PTR
+		ach(15322, {	-- Flawless Master (Layer 16)
+			i(188736),	-- Colossal Soulshredder Mawrat (MOUNT!)
+			ach(15320),	-- Flawless: Upper Reaches (Layer 16)
+			ach(15319),	-- Flawless: Mort'regar (Layer 16)
+			ach(15317),	-- Flawless: The Soulforges (Layer 16)
+			ach(15318),	-- Flawless: Coldheart Interstitia (Layer 16)
+			ach(15314),	-- Flawless: Skoldus Hall (Layer 16)
+			ach(15316),	-- Flawless: Fracture Chambers (Layer 16)
+		}),
+		ach(15251, {	-- The Jailer's Gauntlet: Layer 1
+			i(188679),	-- Lightless Tormentor (PET!)
+		}),
+		ach(15252, {	-- The Jailer's Gauntlet: Layer 2
+			i(188952),	-- Dominated Hearthstone (TOY!)
+		}),
+		ach(15253, {	-- The Jailer's Gauntlet: Layer 3
+			title(449),	-- Gauntlet Runner <Name>
+		}),
+		ach(15254, {	-- The Jailer's Gauntlet: Layer 4
+			i(188696),	-- Colossal Ebonclaw Mawrat (MOUNT!)
+		}),
+		ach(15255),	-- The Jailer's Gauntlet: Layer 5
+		ach(15256),	-- The Jailer's Gauntlet: Layer 6
+		ach(15257),	-- The Jailer's Gauntlet: Layer 7
+		ach(15258),	-- The Jailer's Gauntlet: Layer 8
+		ach(15324, {	-- Tower Ranger
+			title(450),	-- <Name>, Tower Ranger
+		}),
 
 	-- These may have existed on beta? But don't appear to be in the release version, only the layer 1 achieves have been seen.
 	-- Leaving them here commented out for now, we can delete later if they never show up.
@@ -182,5 +211,25 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES, {
 		--	ach(14593),	-- Torghast: The Upper Reaches: Layer 7
 		--	ach(14594),	-- Torghast: The Upper Reaches: Layer 8
 	--	}),
+	}),
+}));
+
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	tier(SL_TIER, {
+		n(ACHIEVEMENTS, {
+			ach(15282),	-- Torghast Tracking 9.2 - Layer 13 Unlocked - Account [DNT]
+			ach(15283),	-- Torghast Tracking 9.2 - Layer 14 Unlocked - Account [DNT]
+			ach(15284),	-- Torghast Tracking 9.2 - Layer 15 Unlocked - Account [DNT]
+			ach(15285),	-- Torghast Tracking 9.2 - Layer 16 Unlocked - Account [DNT]
+			ach(15286),	-- Torghast Tracking 9.2 - Layer 13 Unlocked - Character [DNT]
+			ach(15287),	-- Torghast Tracking 9.2 - Layer 14 Unlocked - Character [DNT]
+			ach(15288),	-- Torghast Tracking 9.2 - Layer 15 Unlocked - Character [DNT]
+			ach(15289),	-- Torghast Tracking 9.2 - Layer 16 Unlocked - Character [DNT]
+			ach(15414),	-- Torghast Tracking 9.2 - Boss Rush Unlocked - Character [DNT]
+			ach(15412),	-- Torghast Tracking 9.2 - Boss Rush Unlocked - Account [DNT]
+			ach(15415),	-- Torghast Tracking 9.2 - Boss Rush Plus Unlocked - Character [DNT]
+			ach(15413),	-- Torghast Tracking 9.2 - Boss Rush Plus Unlocked - Account [DNT]
+			ach(15503),	-- 9.2 Tracking - Legendary Crafting - Unity Learned
+		}),
 	}),
 }));
