@@ -191,15 +191,6 @@ _.Zones =
 									}),
 								},
 							}),
-							q(8229, {	-- Could I get a Fishing Flier?
-								["provider"] = { "n", 15119 },	-- Barrus
-								["coord"] = { 28.6, 74.6, IRONFORGE },
-								["isBreadcrumb"] = true,
-								["repeatable"] = true,
-								["requireSkill"] = FISHING,
-								["races"] = ALLIANCE_ONLY,
-								["lvl"] = 50,
-							}),
 							q(29344, {	-- Fish fer Squrky
 								["provider"] = { "n", 5161 },	-- Grimnur Stonebrand
 								["coord"] = { 48.4, 8.2, IRONFORGE },

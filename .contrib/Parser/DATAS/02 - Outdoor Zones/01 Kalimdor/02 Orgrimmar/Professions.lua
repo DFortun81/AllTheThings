@@ -291,15 +291,6 @@ root("Zones", m(KALIMDOR, {
 								}),
 							},
 						}),
-						q(8228, {	-- Could I get a Fishing Flier?
-							["provider"] = { "n", 15116 },	-- Grinkle
-							["coord"] = { 52.2, 77.0, ORGRIMMAR },
-							["requireSkill"] = FISHING,
-							["isBreadcrumb"] = true,
-							["repeatable"] = true,
-							["races"] = HORDE_ONLY,
-							["lvl"] = 35,
-						}),
 						q(26556, {	-- No Dumping Allowed
 							["provider"] = { "n", 43239 },	-- Razgar
 							["coord"] = { 65.7, 41.1, ORGRIMMAR },
@@ -324,6 +315,7 @@ root("Zones", m(KALIMDOR, {
 				i(34486),	-- Old Crafty
 			}),
 			prof(INSCRIPTION, {
+				--[[
 				n(46716, {	-- Nerog <Inscription Trainer> "TEST"
 					["coord"] = { 55.1, 55.9, ORGRIMMAR },
 					["g"] = {
@@ -434,6 +426,7 @@ root("Zones", m(KALIMDOR, {
 						}),
 					},
 				}),
+				--]]
 				n(QUESTS, {
 					q(27686, {	-- Forged Documents
 						["provider"] = { "i", 63276 },	-- Forged Documents

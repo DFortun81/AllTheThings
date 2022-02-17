@@ -339,12 +339,6 @@ _.Zones =
 				q(39212, {	-- Sholazar Basin -- Adventure Guide
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(12974, {	-- The Champion's Call!
-					["coord"] = { 49.3, 45.9, NORTHREND_DALARAN },
-					["provider"] = { "n", 30137 },	-- Shifty Vickers
-					["description"] = "Patrols the center area of Underbelly.",
-					["isBreadcrumb"] = true,
-				}),
 				q(13830, {	-- The Ghostfish
 					["coord"] = { 53.0, 64.9, NORTHREND_DALARAN },
 					["isDaily"] = true,
@@ -357,6 +351,38 @@ _.Zones =
 						crit(1, {	-- Chasing Marcia (The Ghostfish)
 							["achievementID"] = 3217,	-- Chasing Marcia
 						}),
+					},
+				}),
+				q(12794, {	-- The Magical Kingdom of Dalaran (A)
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["providers"] = {
+						{ "n", 23729 },	-- Baron Ulrik von Stromhearth
+						{ "n", 26673 },	-- Image of Archmage Modera
+						{ "n", 29158 },	-- Magister Dath'omere
+						{ "n", 29161 }, --	Magistrix Haelenai
+					},
+					["coords"] = {
+						{ 58.6, 68.2, BOREAN_TUNDRA },
+						{ 29.0, 55.4, DRAGONBLIGHT },
+						{ 58.8, 62.8, HOWLING_FJORD },
+						{ 32.0, 59.8, GRIZZLY_HILLS },
+					},
+				}),
+				q(12791, {	-- The Magical Kingdom of Dalaran (H)
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["providers"] = {
+						{ "n", 26471 },	-- Image of Archmage Aethas Sunreaver
+						{ "n", 29160 },	-- Magistrix Phaelista
+						{ "n", 29162 },	-- Magister Tyr'ganal
+						{ "n", 29159 },	-- Magister Varenthas
+					},
+					["coords"] = {
+						{ 20.6, 64.2, GRIZZLY_HILLS },
+						{ 79.4, 29.4, HOWLING_FJORD },
+						{ 38.0, 46.2, DRAGONBLIGHT },	-- Image of Archmage Aethas Sunreaver
+						{ 76.8, 63.2, DRAGONBLIGHT },	-- Magister Tyr'ganal
 					},
 				}),
 				--[[

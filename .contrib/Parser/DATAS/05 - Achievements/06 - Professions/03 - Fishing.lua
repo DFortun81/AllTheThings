@@ -175,13 +175,35 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 			},
 		}),
 		ach(11725, {	-- Fisherfriend of the Isles
-			i(152583),		-- Underlight Emerald
-			crit(1),		-- Ilyssia of the Waters
-			crit(2),		-- Corbyn
-			crit(3),		-- Akule Riverhorn
-			crit(4),		-- Impus
-			crit(5),		-- Sha'leth
-			crit(6),		-- Keeper Raynae
+			["description"] = "The Fishing Masters are on a daily rotation, so only one is up at a time.  The order is:\n\n1. Sha'leth\n2. Impus\n3. Ilyssia of the Waters\n4. Keeper Raynae\n5. Akule Riverhorn\n6. Corbyn\n\nMake sure you're close enough to the Fishing Master to get the |cFFFFD700Something's Fishy|r buff, or you won't be able to fish up the items (the buff may not show up until you dismount).\n\nThe quickest way to reach Best Friend is to fish in a group.\n",
+			["providers"] = {
+				{ "n", 120456 },	-- Keeper Raynae
+				{ "n", 120457 },	-- Akule Riverhorn
+				{ "n", 120458 },	-- Corbyn
+				{ "n", 120459 },	-- Sha'leth
+				{ "n", 120460 },	-- Impus
+			},
+			["g"] = {
+				i(152583),	-- Underlight Emerald
+				crit(1, {	-- Ilyssia of the Waters
+					["_npcs"] = { 120266 },
+				}),
+				crit(2, {	-- Corbyn
+					["_npcs"] = { 120458 },
+				}),
+				crit(3, {	-- Akule Riverhorn
+					["_npcs"] = { 120457 },
+				}),
+				crit(4, {	-- Impus
+					["_npcs"] = { 120460 },
+				}),
+				crit(5, {	-- Sha'leth
+					["_npcs"] = { 120459 },
+				}),
+				crit(6, {	-- Keeper Raynae
+					["_npcs"] = { 120456 },
+				}),
+			},
 		}),
 		ach(10598, {	-- Fishing 'Round the Isles
 			crit(1, {		-- Huge Mossgill Perch
@@ -337,17 +359,41 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 		ach(12755),		-- Scent of the Sea
 		ach(9461),		-- Sea Scorpion Angler
 		ach(13489, {	-- Secret Fish of Mechagon
-			i(167698),	-- Secret Fish Goggles
-			crit(1),	-- Bottom Feeding Stinkfish
-			crit(2),	-- Bolted Steelhead
-			crit(3),	-- Pond Hopping Springfish
-			crit(4),	-- Shadowy Cave Eel
-			crit(5),	-- Mechanical Blowfish
-			crit(6),	-- Spitting Clownfish
-			crit(7),	-- Sludge-Fouled Carp
-			crit(8),	-- Energized Lighting Cod
-			crit(9),	-- Solarsprocket Barbel
-			crit(10),	-- Tasty Steelfin
+			["requireSkill"] = FISHING,
+			["maps"] = { MECHAGON },
+			["g"] = {
+				i(167698),	-- Secret Fish Goggles
+				crit(1, {	-- Bottom Feeding Stinkfish
+					["_quests"] = { 55299 },
+				}),
+				crit(2, {	-- Bolted Steelhead
+					["_quests"] = { 55305 },
+				}),
+				crit(3, {	-- Pond Hopping Springfish
+					["_quests"] = { 55306 },
+				}),
+				crit(4, {	-- Shadowy Cave Eel
+					["_quests"] = { 55307 },
+				}),
+				crit(5, {	-- Mechanical Blowfish
+					["_quests"] = { 55308 },
+				}),
+				crit(6, {	-- Spitting Clownfish
+					["_quests"] = { 55309 },
+				}),
+				crit(7, {	-- Sludge-Fouled Carp
+					["_quests"] = { 55310 },
+				}),
+				crit(8, {	-- Energized Lighting Cod
+					["_quests"] = { 55311 },
+				}),
+				crit(9, {	-- Solarsprocket Barbel
+					["_quests"] = { 55312 },
+				}),
+				crit(10, {	-- Tasty Steelfin
+					["_quests"] = { 55313 },
+				}),
+			},
 		}),
 		ach(13502, {	-- Secret Fish and Where to Find Them
 			["description"] = "First, acquire the Secret Fish Goggles from Danielle Anglers in Mechagon.\n\nWhen you use the goggles, you gain a 1-hour buff that allows you to see Secret Fish, which appear in bubbles around your character. When you see one, approach it and click on it, and you'll get a fish. That fish will be a BfA, or zone-relevant common fish, or one of the requirements for this achievement (assuming you fulfill the requirements for each fish).",

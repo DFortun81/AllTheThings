@@ -402,11 +402,6 @@ _.Zones =
 						i(84634),	-- Sunst Armored Chestpiece
 					},
 				}),
-				q(31129, {	-- Fate of the Stormstouts (NYI - appears to be an used duplicate?)
-					["u"] = NEVER_IMPLEMENTED,
-					["coord"] = { 50.4, 12.0, DREAD_WASTES },
-					["provider"] = { "n", 62779 },	-- Chen Stormstout
-				}),
 				q(31076, {	-- Fate of the Stormstouts
 					["coord"] = { 50.4, 12.0, DREAD_WASTES },
 					["provider"] = { "n", 62779 },	-- Chen Stormstout
@@ -937,9 +932,6 @@ _.Zones =
 					["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
 					["sourceQuest"] = 31006,	-- The Klaxxi Council
 				}),
-				q(31174, {	-- The Dread Vos (NYI - completes when you turn in "Amber is Life")
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				q(31689, {	-- The Dreadsworn
 					["coord"] = { 55.0, 35.4, DREAD_WASTES },
 					["provider"] = { "n", 62774 },	-- Malik the Unscathed
@@ -1161,6 +1153,20 @@ _.Zones =
 		}),
 	}),
 };
+root("HiddenQuestTriggers",{
+	tier(MOP_TIER, {
+		q(31282),	-- Kaz'tik Tracking Quest - triggers after freeing Kaz'tik from amber
+		q(31343),	-- Kovok Tracking - triggers after turning in "Reunited" (questID 31091), allows Kovok to follow you
+		q(31484),	-- Hisek Tracking Quest
+		q(32012),	-- Kovok tracking [GROWING]
+		q(31992),	-- [FLAG] Dread Wastes Buff Bitflag - Enhancement 01 - Angel of Death
+		q(31993),	-- [FLAG] Dread Wastes Buff Bitflag - Enhancement 02 - Iron Mantid
+		q(31994),	-- [FLAG] Dread Wastes Buff Bitflag - Enhancement 03 - Raining Blood
+		q(31995),	-- [FLAG] Dread Wastes Buff Bitflag - Augmentation 01 - Speed King
+		q(31996),	-- [FLAG] Dread Wastes Buff Bitflag - Augmentation 02 - Seek and Destroy
+		q(31997),	-- [FLAG] Dread Wastes Buff Bitflag - Augmentation 03 - Speed King
+	}),
+});
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(MOP_TIER, {
 		n(WEAPONS, {

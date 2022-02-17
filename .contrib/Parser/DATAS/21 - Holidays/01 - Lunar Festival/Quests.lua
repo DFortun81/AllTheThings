@@ -233,7 +233,7 @@ _.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 			q(29742, {	-- Menkhaf the Elder
 				["provider"] = { "n", 55211 },	-- Elder Menkhaf
 				["isYearly"] = true,
-				["coord"] = { 65.5, 18.7, 249 },
+				["coord"] = { 65.5, 18.7, ULDUM },
 				["g"] = {
 					crit(2, {	-- Elder Menkhaf in Uldum
 						["achievementID"] = 6006,	-- Elders of Cataclysm
@@ -253,7 +253,7 @@ _.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 			q(29741, {	-- Sekhemi the Elder
 				["provider"] = { "n", 55210 },	-- Elder Sekhemi
 				["isYearly"] = true,
-				["coord"] = { 31.5, 63.0, 249 },
+				["coord"] = { 31.5, 63.0, ULDUM },
 				["g"] = {
 					crit(3, {	-- Elder Sekhemi in Uldum
 						["achievementID"] = 6006,	-- Elders of Cataclysm

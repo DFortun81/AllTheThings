@@ -1212,22 +1212,22 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["coord"] = { 42.7, 45.6, MOUNT_HYJAL },
 					}),
 					crit(5, {	-- Twilight Highlands, Firebeard's Patrol
-						["coord"] = { 60.4, 58.2,TWILIGHT_HIGHLANDS },
+						["coord"] = { 60.4, 58.2, TWILIGHT_HIGHLANDS },
 					}),
 					crit(6, {	-- Twilight Highlands, Highbank
-						["coord"] = { 79.5, 78.5,TWILIGHT_HIGHLANDS },
+						["coord"] = { 79.5, 78.5, TWILIGHT_HIGHLANDS },
 					}),
 					crit(7, {	-- Twilight Highlands, Thundermar
-						["coord"] = { 49.6, 30.4,TWILIGHT_HIGHLANDS },
+						["coord"] = { 49.6, 30.4, TWILIGHT_HIGHLANDS },
 					}),
 					crit(8, {	-- Twilight Highlands, Victor's Point
-						["coord"] = { 43.6, 57.3,TWILIGHT_HIGHLANDS },
+						["coord"] = { 43.6, 57.3, TWILIGHT_HIGHLANDS },
 					}),
 					crit(9, {	-- Uldum, Oasis of Vir'sar
-						["coord"] = { 26.6, 7.30, 249 },
+						["coord"] = { 26.6, 7.30, ULDUM },
 					}),
 					crit(10, {	-- Uldum, Ramkahen
-						["coord"] = { 54.7, 33.0, 249 },
+						["coord"] = { 54.7, 33.0, ULDUM },
 					}),
 					crit(11, {	-- Vashj'ir, Darkbreak Cove
 						["coord"] = { 54.7, 72.2, 203 },
@@ -1268,10 +1268,10 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["coord"] = { 75.4, 16.5,TWILIGHT_HIGHLANDS },
 					}),
 					crit(8, {	-- Uldum, Oasis of Vir'sar
-						["coord"] = { 26.6, 7.30, 249 },
+						["coord"] = { 26.6, 7.30, ULDUM },
 					}),
 					crit(9, {	-- Uldum, Ramkahen
-						["coord"] = { 54.7, 33.0, 249 },
+						["coord"] = { 54.7, 33.0, ULDUM },
 					}),
 					crit(10, {	-- Vashj'ir, Deepmist Grotto
 						["coord"] = { 63.4, 60.2, 203 },
@@ -3132,11 +3132,11 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["timeline"] = { "added 5.0.1" },
 					}),
 					q(29016, {	-- Candy Bucket — Uldum, Oasis of Vir'sar, Neutral
-						["coord"] = { 26.6, 7.30, 249 },
+						["coord"] = { 26.6, 7.30, ULDUM },
 						["timeline"] = { "added 4.1.0.13726" },
 					}),
 					q(29017, {	-- Candy Bucket — Uldum, Ramkahen, Neutral
-						["coord"] = { 54.7, 33.0, 249 },
+						["coord"] = { 54.7, 33.0, ULDUM },
 						["timeline"] = { "added 4.1.0.13726" },
 					}),
 					q(29018, {	-- Candy Bucket — Un'Goro Crater, Marshal's Stand, Neutral

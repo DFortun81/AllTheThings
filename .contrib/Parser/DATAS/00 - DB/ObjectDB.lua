@@ -96,7 +96,11 @@ _.ObjectNames = {
 	[112888] = "Dusty Shelf",
 	[112948] = "Intrepid's Locked Strongbox",
 	[113757] = "Shadowforge Cache",
+	-- #if AFTER WRATH
 	[113768] = [[GetSpellInfo(61820),	-- Brightly Colored Egg]],
+	-- #else
+	[113768] = "Brightly Colored Egg",
+	-- #endif
 	[113791] = "Brazier of Everfount",
 	[123329] = "Baelog's Chest",
 	[124388] = "Garrett Family Chest",
@@ -267,6 +271,7 @@ _.ObjectNames = {
 	[180794] = "Journal of Jandice Barov",
 	[180918] = "Wanted: Thaelis the Hungerer",
 	[181011] = "Magister Duskwither's Journal",
+	[181073] = "Fragrant Cauldron",
 	[181074] = "Arena Spoils",
 	[181083] = "Sothos and Jarien's Heirlooms",
 	[181147] = "Wanted Poster",
@@ -2099,6 +2104,7 @@ _.ObjectNames = {
 	[358318] = "R. Suavel Dredger Portrait",
 	[358319] = "Sorceror's Note",
 	[358382] = "Wanted: Chelicera",
+	[358399] = "Six-League Pack",
 	[358531] = "Giant Cache of Epic Treasure",
 	[358533] = "Forgotten Supplies",
 	[358855] = "Damaged Safe Fall Pack",
@@ -2437,7 +2443,11 @@ _.ObjectIcons = {
 	[37099] = "Interface/Icons/INV_Misc_StoneTablet_03",	-- Atal'ai Tablet
 	[62483] = "Interface/Icons/INV_WorseRobot",
 	[112948] = "Interface/Icons/battleground_strongbox_skirmish_horde",	-- Intrepid's Locked Strongbox
-	[113768] = "Interface/Icons/inv_egg_06",	-- GetSpellInfo(61820)
+	-- #if AFTER WRATH
+	[113768] = "Interface/Icons/inv_egg_06",	-- Brightly Colored Egg
+	-- #else
+	[113768] = [[_.asset("Holiday_noblegarden")]],	-- Brightly Colored Egg
+	-- #endif
 	[131474] = "Interface/Icons/Creatureportrait_Nexus_Floating_Disc",	-- The Discs of Norgannon
 	[138492] = "Interface/Icons/inv_enchanting_wod_crystal2",	-- Shards of Myzrael
 	[141832] = "Interface/Icons/inv_hammer_19",	-- Gong of Zul'Farrak

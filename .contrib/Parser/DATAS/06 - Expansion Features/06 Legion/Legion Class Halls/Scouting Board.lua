@@ -56,7 +56,10 @@ root("ExpansionFeatures", {
 								un(REMOVED_FROM_GAME, i(141176)),	-- Haunted Ravencrest Keepsake (Mythic)
 							})),
 							q(44865, {	-- Butler to the Great
+								["sourceQuest"] = 44803,	-- Return to Karazhan: Master of the House
+								["lvl"] = 110,
 								["provider"] = { "n", 115551 },	-- Phantom Valet
+								["maps"] = { DEADWIND_PASS },
 								["g"] = {
 									follower(733),	-- Moroes
 								},

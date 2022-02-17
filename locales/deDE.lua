@@ -22,7 +22,7 @@ local L = app.L;
 	--TODO: L.KNOWN_BY = "Known by ";
 	--TODO: L.REQUIRES = "Requires";
 	--TODO: L.RACE_LOCKED = "Race Locked";
-	--TODO: L.PLEASE_REPORT_MESSAGE = ": Please report this to the ATT Discord in #errors! Thanks!";
+	--TODO: L.PLEASE_REPORT_MESSAGE = ": Please report this to the ATT Discord in #retail-errors! Thanks!";
 	--TODO: L.REPORT_TIP = "\n(Ctrl+C to copy multiline report to your clipboard)";
 	--TODO: L.NOT_AVAILABLE_IN_PL = "Not available in Personal Loot.";
 	--TODO: L.MARKS_OF_HONOR_DESC = "Marks of Honor must be viewed in a Popout window to see all of the normal 'Contains' content.\n(Type '/att ' in chat then Shift-Click to link the item)\n\n|cFFfe040fAfter purchasing and using an ensemble, relogging & a forced ATT refresh (in this order)\nmay be required to register all the items correctly.|r";
@@ -553,7 +553,7 @@ local L = app.L;
 		--TODO: L.REQUIRES_LEVEL = "Requires Level";
 		--TODO: L.SECRETS_HEADER = "Secrets";
 		--TODO: L.LIMITED_QUANTITY = "This has a limited quantity and may not always be present on the vendor.";
-		--TODO: L.SOURCE_ID_MISSING = "Please report this Item and where it was acquired to the ATT Discord in #errors!";
+		--TODO: L.SOURCE_ID_MISSING = "Please report this Item and where it was acquired to the ATT Discord in #retail-errors!";
 
 	-- Artifact Relic Completion
 		--TODO: L.ARTIFACT_RELIC_CACHE = "Open your Artifact UI for all of your Artifact Weapons to cache whether this is an upgrade or not. This is useful for determining if you can trade this item to a Twink or not.";
@@ -959,6 +959,7 @@ for key,value in pairs({
 	[148504] = "Ein verdächtiger Grabstein",	-- A Conspicuous Gravestone
 	[149036] = "Marvons Truhe",	-- Marvon's Chest
 	[149502] = "Hort des schwarzen Drachenschwarms",	-- Hoard of the Black Dragonflight
+	[151286] = "Kaldoreifoliant der Beschwörung",	-- Kaldorei Tome of Summoning
 	[160836] = "Reliktkasten",	-- Relic Coffer
 	[161495] = "Geheimsafe",	-- Secret Safe
 	[161504] = "Ein kleines Pack",	-- A Small Pack
@@ -1036,6 +1037,7 @@ for key,value in pairs({
 	[180794] = "Tagebuch von Jandice Barov",	-- Journal of Jandice Barov
 	[180918] = "GESUCHT: Thaelis der Manadurstige",	-- Wanted: Thaelis the Hungerer
 	[181011] = "Magister Nachtschimmers Tagebuch",	-- Magister Duskwither's Journal
+	[181073] = "Duftender Kessel",	-- Fragrant Cauldron
 	[181074] = "Arenabeute",	-- Arena Spoils
 	[181083] = "Sothos' und Jariens Erbstücke",	-- Sothos and Jarien's Heirlooms
 	[181147] = "Steckbrief",	-- Wanted Poster
@@ -2836,6 +2838,7 @@ for key,value in pairs({
 	[358318] = "Gräberporträt von R. Suavel",	-- R. Suavel Dredger Portrait
 	[358319] = "Notiz des Zauberers",	-- Sorceror's Note
 	[358382] = "Gesucht: Chelicera",	-- Wanted: Chelicera
+	[358399] = "Sechsmeilenrucksack",	-- Six-League Pack
 	[358531] = "Epischer Riesenschatz",	-- Giant Cache of Epic Treasure
 	[358533] = "Vergessene Vorräte",	-- Forgotten Supplies
 	[358855] = "Beschädigter Rucksack des sicheren Fallens",	-- Damaged Safe Fall Pack

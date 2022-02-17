@@ -32,8 +32,16 @@ _.Zones =
 					["crs"] = { 61160 },	-- Tiny Harvester
 				}),
 				q(3861, {	-- CLUCK!
-					["description"] = "Spam the macro '/chicken' at a Chicken for it to grant you this quest. The vendor, Farmer Saldean, sells the Special Chicken Feed you need.",
+					["description"] = "Target any chicken, then use |cFFFFD700/chicken|r repeatedly for it to grant you this quest. The vendor, Farmer Saldean, sells the Special Chicken Feed you need.",
 					["repeatable"] = true,
+					["maps"] = {
+						DUSKWOOD,
+						ELWYNN_FOREST,
+						NORTHERN_BARRENS,
+						REDRIDGE_MOUNTAINS,
+						TIRISFAL_GLADES,
+					},
+					["provider"] = { "i", 11109 },	-- Special Chicken Feed
 					["g"] = {
 						i(11110) -- Chicken Egg
 					},

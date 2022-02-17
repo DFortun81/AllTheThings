@@ -312,7 +312,7 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 40634 },	-- Thunder on the Sands
 							["provider"] = { "n", 47684 },	-- King Phaoris
 							["classes"] = { MONK },
-							["coord"] = { 54.9, 32.8, 249 },	-- Uldum
+							["coord"] = { 54.9, 32.8, ULDUM },
 							["maps"] = {
 								716,	-- Skywall (The Thundering Heavens scenario)
 							},
@@ -671,7 +671,7 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 40633 },	-- Off To Adventure!
 							["provider"] = { "n", 47684 },	-- King Phaoris
 							["classes"] = { MONK },
-							["coord"] = { 54.9, 32.8, 249 },
+							["coord"] = { 54.9, 32.8, ULDUM },
 						}),
 						q(41945, {	-- Tianji of the Ox
 							["sourceQuests"] = {	-- technically "Rise, Champions" but you have to do li li/chen to turn in rise, and li li/chen have rise as a SQ
@@ -812,6 +812,7 @@ _.HiddenQuestTriggers = {
 	q(43067),	-- Monk Order Hall - Tracking Quest: Vrykul Scouting 3 — during "Tracking the Tideskorn"
 	q(43068),	-- Monk Order Hall - Tracking Quest: Vrykul Scouting 4 — during "Tracking the Tideskorn"
 	q(43069),	-- Monk Order Hall - Tracking Quest: Vrykul Scouting 5 — during "Tracking the Tideskorn"
+	q(43662),	-- Unlock Hidden Mistweaver appearance
 	q(43970),	-- Monk Order Hall - Brewmaster Chosen
 	q(43971),	-- Monk Order Hall - Windwalker Chosen
 	q(43972),	-- Monk Order Hall - Mistweaver Chosen

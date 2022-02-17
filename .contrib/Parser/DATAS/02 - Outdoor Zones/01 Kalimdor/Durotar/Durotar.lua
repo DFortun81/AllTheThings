@@ -1880,12 +1880,13 @@ root("Zones", m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
+				-- #if AFTER CATA
 				q(6365,  {	-- Meats to Orgrimmar
 					["qg"] = 3881,	-- Grimtak
 					["coord"] = { 50.7, 42.8, DUROTAR },
-					["races"] = { ORC, TROLL, MAGHAR },
-					["timeline"] = { "added 1.11.1.10772" },
+					["races"] = HORDE_ONLY,
 				}),
+				-- #endif
 				q(25267, {	-- Message for Garrosh (Cata) / Vol'jin (WoD) / Saurfang (Legion) <-- Need more work
 					["coord"] = { 57.6, 9.6, DUROTAR },
 					["races"] = { GOBLIN },
@@ -2088,6 +2089,7 @@ root("Zones", m(KALIMDOR, {
 					},
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
+				-- #if AFTER CATA
 				q(6384,  {	-- Ride to Orgrimmar
 					["qg"] = 41140,	-- Burok
 					["coord"] = { 53.0, 43.6, DUROTAR },
@@ -2100,6 +2102,7 @@ root("Zones", m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #endif
 				q(3089, {	-- Rune-Inscribed Parchment
 					["qg"] = 3143,	-- Gornek
 					["sourceQuest"] = 788,	-- Cutting Teeth

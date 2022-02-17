@@ -22,7 +22,7 @@ local L = app.L;
 	--TODO: L.KNOWN_BY = "Known by ";
 	--TODO: L.REQUIRES = "Requires";
 	--TODO: L.RACE_LOCKED = "Race Locked";
-	--TODO: L.PLEASE_REPORT_MESSAGE = ": Please report this to the ATT Discord in #errors! Thanks!";
+	--TODO: L.PLEASE_REPORT_MESSAGE = ": Please report this to the ATT Discord in #retail-errors! Thanks!";
 	--TODO: L.REPORT_TIP = "\n(Ctrl+C to copy multiline report to your clipboard)";
 	--TODO: L.NOT_AVAILABLE_IN_PL = "Not available in Personal Loot.";
 	--TODO: L.MARKS_OF_HONOR_DESC = "Marks of Honor must be viewed in a Popout window to see all of the normal 'Contains' content.\n(Type '/att ' in chat then Shift-Click to link the item)\n\n|cFFfe040fAfter purchasing and using an ensemble, relogging & a forced ATT refresh (in this order)\nmay be required to register all the items correctly.|r";
@@ -552,7 +552,7 @@ local L = app.L;
 		--TODO: L.REQUIRES_LEVEL = "Requires Level";
 		--TODO: L.SECRETS_HEADER = "Secrets";
 		--TODO: L.LIMITED_QUANTITY = "This has a limited quantity and may not always be present on the vendor.";
-		--TODO: L.SOURCE_ID_MISSING = "Please report this Item and where it was acquired to the ATT Discord in #errors!";
+		--TODO: L.SOURCE_ID_MISSING = "Please report this Item and where it was acquired to the ATT Discord in #retail-errors!";
 
 	-- Artifact Relic Completion
 		--TODO: L.ARTIFACT_RELIC_CACHE = "Open your Artifact UI for all of your Artifact Weapons to cache whether this is an upgrade or not. This is useful for determining if you can trade this item to a Twink or not.";
@@ -956,6 +956,7 @@ for key,value in pairs({
 	[148504] = "Lapide Notevole",	-- A Conspicuous Gravestone
 	[149036] = "Cassa di Marvon",	-- Marvon's Chest
 	[149502] = "Hoard of the Black Dragonflight",	-- Hoard of the Black Dragonflight	--TODO: This was taken from classic Wowhead
+	[151286] = "Kaldorei Tome of Summoning",	-- Kaldorei Tome of Summoning	--TODO: This was taken from classic Wowhead
 	[160836] = "Reliquiario",	-- Relic Coffer
 	[161495] = "Cassaforte Segreta",	-- Secret Safe
 	[161504] = "A Small Pack",	-- A Small Pack	--TODO: This was taken from classic Wowhead
@@ -1033,6 +1034,7 @@ for key,value in pairs({
 	[180794] = "Journal of Jandice Barov",	-- Journal of Jandice Barov	--TODO: This was taken from classic Wowhead
 	[180918] = "Ricercato: Thaelis il Famelico",	-- Wanted: Thaelis the Hungerer
 	[181011] = "Diario del Magistro Lungovespro",	-- Magister Duskwither's Journal
+	[181073] = "Calderone Profumato",	-- Fragrant Cauldron
 	[181074] = "Arena Spoils",	-- Arena Spoils	--TODO: This was taken from classic Wowhead
 	[181083] = "Sothos and Jarien's Heirlooms",	-- Sothos and Jarien's Heirlooms	--TODO: This was taken from classic Wowhead
 	[181147] = "Manifesto dei Ricercati",	-- Wanted Poster
@@ -2833,6 +2835,7 @@ for key,value in pairs({
 	[358318] = "Ritratto del Dragatore di R. Suavel",	-- R. Suavel Dredger Portrait
 	[358319] = "Nota dell'Occultista",	-- Sorceror's Note
 	[358382] = "Ricercato: Chelicera",	-- Wanted: Chelicera
+	[358399] = "Zaino delle Sei Leghe",	-- Six-League Pack
 	[358531] = "Cassa Gigante di Tesori Epici",	-- Giant Cache of Epic Treasure
 	[358533] = "Rifornimenti Dimenticati",	-- Forgotten Supplies
 	[358855] = "Zaino della Caduta Sicura Danneggiato",	-- Damaged Safe Fall Pack

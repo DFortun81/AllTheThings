@@ -274,6 +274,13 @@ root("Zones", m(KALIMDOR, {
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
+			q(31014, {	-- Hellscream's Gift
+				["provider"] = { "n", 62092 },	-- Garrosh Hellscream
+				["coord"] = { 70.6, 30.8, ORGRIMMAR },
+				["sourceQuests"] = { 31013 },	-- The Horde Way
+				["races"] = { PANDAREN_HORDE },
+				["u"] = REMOVED_FROM_GAME,
+			}),
 			q(5726, {	-- Hidden Enemies (1/5)
 				["qg"] = 4949,	-- Thrall <Warchief>
 				["coord"] = { 32.0, 37.8, ORGRIMMAR },
@@ -1125,6 +1132,14 @@ root("Zones", m(KALIMDOR, {
 	}),
 }));
 
+root("HiddenQuestTriggers", {
+	m(KALIMDOR, {
+		m(ORGRIMMAR, {
+			q(54948),	-- something in orgrimmar on lvl 60 necrolord goblin warlock
+		}),
+	}),
+});
+
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(CATA_TIER, {
 		n(ARMOR, {
@@ -1132,12 +1147,6 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(49314),	-- Sparkling Onyxia Tooth Pendant
 				i(49312),	-- Purified Onyxia Blood Talisman
 			}),
-		}),
-	}),
-	n(QUESTS, {
-		tier(MOP_TIER, {
-			q(31723),	-- Valley of the Four Winds
-
 		}),
 	}),
 }));

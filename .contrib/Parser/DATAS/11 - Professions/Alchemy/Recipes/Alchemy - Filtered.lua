@@ -32,7 +32,7 @@ profession(ALCHEMY, {
 						},
 						{
 							["recipeID"] = 17577,--[[Greater Arcane Protection Potion]]
-							["u"] = REMOVED_FROM_GAME,
+							["timeline"] = { "added 1.11.1.5462", "removed 4.0", "timewalking 9.1" },
 						},
 						{
 							["recipeID"] = 17575,--[[Greater Frost Protection Potion]]

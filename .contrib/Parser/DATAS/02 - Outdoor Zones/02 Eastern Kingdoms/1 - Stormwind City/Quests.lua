@@ -120,6 +120,13 @@ root("Zones", {
 						un(REMOVED_FROM_GAME, i(2933)),	-- Seal of Wrynn
 					},
 				}),
+				q(30989,   {	-- An Old Pit Fighter
+					["provider"] = { "n", 61796 },	-- King Varian Wrynn
+					["coord"] = { 82.6, 28.2, STORMWIND_CITY },
+					["sourceQuests"] = { 30987 },	-- Joining the Alliance
+					["races"] = { PANDAREN_ALLIANCE },
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(58496, {	-- An Unwelcome Advisor
 					["description"] = "This quest is automatically offered.",
 					["provider"] = { "n", 107574 },	-- Anduin Wrynn <King of Stormwind>
@@ -1333,7 +1340,6 @@ root("HiddenQuestTriggers", {
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(60362),	-- Blank
-		q(31685),	-- Valley of the Four Winds
 		q(57766),	-- War with the Horde
 	}),
 }));

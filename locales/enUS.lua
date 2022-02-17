@@ -33,7 +33,7 @@ app.L = {
 	["KNOWN_BY"] = "Known by ";
 	["REQUIRES"] = "Requires";
 	["RACE_LOCKED"] = "Race Locked";
-	["PLEASE_REPORT_MESSAGE"] = ": Please report this to the ATT Discord in #errors! Thanks!";
+	["PLEASE_REPORT_MESSAGE"] = ": Please report this to the ATT Discord in #retail-errors! Thanks!";
 	["REPORT_TIP"] = "\n(Ctrl+C to copy multiline report to your clipboard)";
 	["NOT_AVAILABLE_IN_PL"] = "Not available in Personal Loot.";
 	["MARKS_OF_HONOR_DESC"] = "Marks of Honor must be viewed in a Popout window to see all of the normal 'Contains' content.\n(Type '/att ' in chat then Shift-Click to link the item)\n\n|cFFfe040fAfter purchasing and using an ensemble, relogging & a forced ATT refresh (in this order)\nmay be required to register all the items correctly.|r";
@@ -591,7 +591,7 @@ app.L = {
 	["REQUIRES_LEVEL"] = "Requires Level";
 	["SECRETS_HEADER"] = "Secrets";
 	["LIMITED_QUANTITY"] = "This has a limited quantity and may not always be present on the vendor.";
-	["SOURCE_ID_MISSING"] = "Please report this Item and where it was acquired to the ATT Discord in #errors!";
+	["SOURCE_ID_MISSING"] = "Please report this Item and where it was acquired to the ATT Discord in #retail-errors!";
 
 	-- Filter Text
 	["ACHIEVEMENT_ID"] = "Achievement ID";
@@ -1453,7 +1453,8 @@ app.L = {
 		[-2093] = app.asset("Expansion_SL"),									-- Patch 9.1.0
 		[-2094] = app.asset("Expansion_SL"),									-- Patch 9.1.5
 		[-2095] = app.asset("Expansion_SL"),									-- Patch 9.2.0
-		[-2096] = app.asset("Expansion_SL"),									-- Patch 9.x.x - unknown patch
+		[-2096] = app.asset("Expansion_SL"),									-- Patch 9.2.5
+		[-2097] = app.asset("Expansion_SL"),									-- Patch 9.x.x - unknown patch
 	};
 	["HEADER_NAMES"] = {
 	-- Commonly used
@@ -2069,7 +2070,8 @@ app.L = {
 		[-2093] = "9.1.0",														-- Patch 9.1.0
 		[-2094] = "9.1.5",														-- Patch 9.1.5
 		[-2095] = "9.2.0",														-- Patch 9.2.0
-		[-2096] = "9.x.x",														-- Patch 9.x.x - unknown patch
+		[-2096] = "9.2.5",														-- Patch 9.2.5
+		[-2097] = "9.x.x",														-- Patch 9.x.x - unknown patch
 	};
 	["HEADER_DESCRIPTIONS"] = {
 		[-18] = "Contains Things which are rewarded or are available from other content within the containing section.\nThey are consolidated here in an effort to reduce duplication from many possible Sources.",

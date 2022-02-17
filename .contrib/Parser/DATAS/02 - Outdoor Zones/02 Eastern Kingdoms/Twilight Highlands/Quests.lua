@@ -1569,15 +1569,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 48472 },	-- Colin Thundermar
 				}),
-				q(31206, {	-- The Crucible of Carnage: The Bloodeye Bruiser! (NYI/removed?  no information about where to pick this version up)
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(27862, {	-- The Crucible of Carnage: The Bloodeye Bruiser! (NYI/removed?  no information about where to pick this version up)
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(27861, {	-- The Crucible of Carnage: The Bloodeye Bruiser! (NYI/removed?  no information about where to pick this version up)
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				q(27866, {	-- The Crucible of Carnage: Calder's Creation!
 					["sourceQuests"] = {
 						27864,	-- The Crucible of Carnage: The Deadly Dragonmaw!
@@ -1586,7 +1577,7 @@ _.Zones =
 					["coord"] = { 50.6, 58.3, TWILIGHT_HIGHLANDS },
 					["provider"] = { "n", 46935 },	-- Gurgthock
 				}),
-				q(27863, {	-- The Crucible of Carnage: The Bloodeye Bruiser! -- aa
+				q(27863, {	-- The Crucible of Carnage: The Bloodeye Bruiser!
 					["coord"] = { 50.7, 58.2, TWILIGHT_HIGHLANDS },
 					["provider"] = { "n", 46935 },	-- Gurgthock
 					["sourceQuest"] = 28038,	-- Blood in the Highlands

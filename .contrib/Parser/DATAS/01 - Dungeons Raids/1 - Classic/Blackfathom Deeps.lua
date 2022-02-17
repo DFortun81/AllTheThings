@@ -43,6 +43,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
+				-- #if BEFORE CATA
 				q(6921, {	-- Amongst the Ruins
 					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
 					["coord"] = { 11.6, 34.3, ASHENVALE },
@@ -55,6 +56,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
+				-- #else
 				q(6921, {	-- Amongst the Ruins [CATA]
 					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
 					["timeline"] = { "added 4.0.3", "removed 6.0.2" },
@@ -66,6 +68,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
+				-- #endif
 				q(6922, {	-- Baron Aquanis
 					["provider"] = { "i", 16782 },	-- Strange Water Globe
 					["timeline"] = { "removed 6.0.2" },
@@ -702,9 +705,6 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(908),	-- Amongst the Ruins
 		q(909),	-- Baron Aquanis
-		q(26893, {	-- Blackfathom Deeps
-			["timeline"] = { "created 4.0.3.13277" },
-		}),
 		q(26461, {	-- Blackfathom Villainy
 			["timeline"] = { "created 6.0.1.18322" },
 		}),

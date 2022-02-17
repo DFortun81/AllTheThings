@@ -3039,14 +3039,14 @@ namespace ATT
                 var builder = new StringBuilder("-------------------------------------------------------\n--   O B J E C T   D A T A B A S E   M O D U L E   --\n-------------------------------------------------------\n");
                 var keys = OBJECT_NAMES.Keys.ToList();
                 keys.Sort();
-                builder.Append("select(2, ...).ObjectNames = {").AppendLine();
+                builder.AppendLine("local _ = select(2, ...);").Append("_.ObjectNames = {").AppendLine();
                 foreach (var key in keys)
                 {
                     if (OBJECTS_WITH_REFERENCES.ContainsKey(key))
                     {
                         var name = OBJECT_NAMES[key];
                         builder.Append("\t[").Append(key).Append("] = ");
-                        if (name.StartsWith("GetSpellInfo") || name.StartsWith("GetItem") || name.StartsWith("select(") || name.StartsWith("~"))
+                        if (name.StartsWith("GetSpellInfo") || name.StartsWith("GetItem") || name.StartsWith("select(") || name.StartsWith("~") || name.StartsWith("_."))
                         {
                             builder.Append(name).Append(",").AppendLine();
                         }
@@ -3056,18 +3056,24 @@ namespace ATT
                 builder.AppendLine("};");
                 keys = OBJECT_ICONS.Keys.ToList();
                 keys.Sort();
-                builder.Append("select(2, ...).ObjectIcons = {").AppendLine();
+                builder.Append("_.ObjectIcons = {").AppendLine();
                 foreach (var key in keys)
                 {
                     if (OBJECTS_WITH_REFERENCES.ContainsKey(key))
                     {
-                        builder.Append("\t[").Append(key).Append("] = \"").Append(OBJECT_ICONS[key]).Append("\",").AppendLine();
+                        var icon = OBJECT_ICONS[key];
+                        builder.Append("\t[").Append(key).Append("] = ");
+                        if (icon.StartsWith("GetSpellInfo") || icon.StartsWith("GetItem") || icon.StartsWith("select(") || icon.StartsWith("~") || icon.StartsWith("_."))
+                        {
+                            builder.Append(icon).Append(",").AppendLine();
+                        }
+                        else builder.Append("\"").Append(icon).Append("\",").AppendLine();
                     }
                 }
                 builder.AppendLine("};");
                 keys = OBJECT_MODELS.Keys.ToList();
                 keys.Sort();
-                builder.Append("select(2, ...).ObjectModels = {").AppendLine();
+                builder.Append("_.ObjectModels = {").AppendLine();
                 foreach (var key in keys)
                 {
                     if (OBJECTS_WITH_REFERENCES.ContainsKey(key))

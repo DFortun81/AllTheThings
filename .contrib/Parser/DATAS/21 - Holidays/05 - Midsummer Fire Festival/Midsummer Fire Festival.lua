@@ -491,7 +491,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						}),
 						ach(6011,  {	-- Flame Warden of Cataclysm
 							crit(1, {	-- Uldum
-								["coord"] = { 53.0, 32.0, 249 },
+								["coord"] = { 53.0, 32.0, ULDUM },
 							}),
 							crit(2, {	-- Deepholm
 								["coord"] = { 49.4, 51.4, 207 },
@@ -650,7 +650,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 								["coord"] = { 53.2, 46.5, TWILIGHT_HIGHLANDS },
 							}),
 							crit(2, {	-- Uldum
-								["coord"] = { 53.0, 34.4, 249 },
+								["coord"] = { 53.0, 34.4, ULDUM },
 							}),
 						}),
 					}),
@@ -928,7 +928,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 								["coord"] = { 49.4, 51.4, 207 },
 							}),
 							crit(5, {	-- Uldum
-								["coord"] = { 53.0, 34.0, 249 },
+								["coord"] = { 53.0, 34.0, ULDUM },
 							}),
 						}),
 					}),
@@ -1081,7 +1081,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 								["coord"] = { 47.0, 28.3, TWILIGHT_HIGHLANDS },
 							}),
 							crit(2, {	-- Uldum
-								["coord"] = { 53.4, 32.0, 249 },
+								["coord"] = { 53.4, 32.0, ULDUM },
 							}),
 						}),
 					}),
@@ -2429,7 +2429,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(28948, {	-- Desecrate this Fire! — Uldum
 						["provider"] = { "o", 208094 },	-- Horde Bonfire
-						["coord"] = { 53.0, 34.4, 249 },
+						["coord"] = { 53.0, 34.4, ULDUM },
 						["timeline"] = { "added 4.0.1" },
 					}),
 					q(28920, {	-- Desecrate this Fire! — Un'Goro Crater
@@ -2754,7 +2754,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(28950, {	-- Honor the Flame — Uldum
 						["qg"] = 51653,	-- Uldum Flame Warden
-						["coord"] = { 53.0, 32.0, 249 },
+						["coord"] = { 53.0, 32.0, ULDUM },
 						["timeline"] = { "added 4.0.1" },
 					}),
 					q(28932, {	-- Honor the Flame — Un'goro Crater
@@ -3010,11 +3010,6 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						["coord"] = { 36.0, 51.5, STORMSONG_VALLEY },
 						["timeline"] = { "added 8.0.1" },
 					}),
-					q(11761, {	-- Desecrate this Fire! — Stranglethorn Vale
-						["provider"] = { "o", 187944 },	-- Alliance Bonfire
-						["coord"] = { 33.8, 73.3, STRANGLETHORN_VALE },
-						["timeline"] = { "removed 4.0.1" },
-					}),
 					q(44624, {	-- Desecrate this Fire! — Suramar
 						["provider"] = { "o", 259927 },	-- Alliance Bonfire
 						["coord"] = { 22.8, 58.2, SURAMAR },
@@ -3065,7 +3060,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(28947, {	-- Desecrate this Fire! — Uldum
 						["provider"] = { "o", 208093 },	-- Alliance Bonfire
-						["coord"] = { 53.4, 32.0, 249 },
+						["coord"] = { 53.4, 32.0, ULDUM },
 						["timeline"] = { "added 4.0.1" },
 					}),
 					q(28921, {	-- Desecrate this Fire! — Un'Goro Crater
@@ -3369,7 +3364,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(28949, {	-- Honor the Flame — Uldum
 						["qg"] = 51652,	-- Uldum Flame Keeper
-						["coord"] = { 53.2, 34.5, 249 },
+						["coord"] = { 53.2, 34.5, ULDUM },
 						["timeline"] = { "added 4.0.1" },
 					}),
 					q(28933, {	-- Honor the Flame — Un'goro Crater

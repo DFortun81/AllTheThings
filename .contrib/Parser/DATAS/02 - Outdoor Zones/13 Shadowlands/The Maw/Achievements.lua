@@ -5,12 +5,6 @@
 root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 	m(THE_MAW, {
 		n(ACHIEVEMENTS, {
-			ach(14744, {	-- Better to Be Lucky Than Dead
-				ach(14743),	-- Deadly Serious
-			}),
-			ach(14895, {	-- Ghast Five
-				ach(14894),		-- To 'Ghast, Two Curios
-			}),
 			ach(14745, {	-- Grand Theft Shadehound
 				["crs"] = {
 					173139,	-- Bridled Shadehound (random spawn)

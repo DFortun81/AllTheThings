@@ -39,6 +39,10 @@ _.Instances = { tier(CLASSIC_TIER, {
 					["provider"] = { "n", 9077 },	-- Warlord Goretooth
 					["sourceQuest"] = 4903,	-- Warlord's Command
 				}),
+				q(4742, {	-- Seal of Ascension
+					-- TODO: can fill with objectives for Classic if desired
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(27440, {	-- Trolls, Ogres, and Orcs, Oh My!
 					i(65933),	-- Highlord's Chestpiece
 					i(65957),	-- Overlord's Legplates
@@ -149,9 +153,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 				i(13170),	-- Skyshroud Leggings
 				i(13166),	-- Slamshot Shoulders
 				i(13169),	-- Tressermane Leggings
-				i(12336, {	-- Gemstone of Spirestone
-					un(REMOVED_FROM_GAME, q(4742)),	-- Seal of Ascension
-				}),
+				i(12336),	-- Gemstone of Spirestone
 			})),
 			cr(9236, e(389, {	-- Shadow Hunter Vosh'gajin
 				i(12651),	-- Blackcrow
@@ -196,9 +198,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 					},
 				}),
 				-- #endif
-				i(12335, {	-- Gemstone of Smolderthorn
-					un(REMOVED_FROM_GAME, q(4742)),	-- Seal of Ascension
-				}),
+				i(12335),	-- Gemstone of Smolderthorn
 			})),
 			n(9596, {	-- Bannok Grimaxe (Rare)
 				["coords"] = {
@@ -293,9 +293,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 				un(REMOVED_FROM_GAME, i(16679)),	-- Beaststalker's Mantle
 				un(REMOVED_FROM_GAME, i(13148)),	-- Chillpike [Disappeared sometime around 3.0]
 				un(REMOVED_FROM_GAME, i(13164)),	-- Heart of the Scale
-				i(12337, {	-- Gemstone of Bloodaxe
-					un(REMOVED_FROM_GAME, q(4742)),	-- Seal of Ascension
-				}),
+				i(12337),	-- Gemstone of Bloodaxe
 			})),
 			n(-40, {	-- Legacy
 				n(ZONE_DROPS, {

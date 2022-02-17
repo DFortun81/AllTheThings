@@ -136,19 +136,6 @@ _.Zones =
 					["description"] = "When you find Scrappy, use an |Cff0070ddEnergy Cell|r to revive him and then feed him two |CffffffffMechano-Treats|r.  He runs around after being revived, so if you can't find him try using a /tar macro in the general Rustbolt area.",
 					["coord"] = { 70.7, 36.3, MECHAGON },
 				}),
-				ach(13489, {	-- Secret Fish of Mechagon
-					i(167698),	-- Secret Fish Goggles
-					crit(1),	-- Bottom Feeding Stinkfish
-					crit(2),	-- Bolted Steelhead
-					crit(3),	-- Pond Hopping Springfish
-					crit(4),	-- Shadowy Cave Eel
-					crit(5),	-- Mechanical Blowfish
-					crit(6),	-- Spitting Clownfish
-					crit(7),	-- Sludge-Fouled Carp
-					crit(8),	-- Energized Lighting Cod
-					crit(9),	-- Solarsprocket Barbel
-					crit(10),	-- Tasty Steelfin
-				}),
 				pvp(ach(13570)),	-- Tour of Duty: Mechagon
 			}),
 		}),

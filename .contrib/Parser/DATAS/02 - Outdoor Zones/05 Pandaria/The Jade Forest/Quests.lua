@@ -287,6 +287,12 @@ _.Zones =
 					["provider"] = { "o", 214871 },	-- Shattered Destroyer
 					["coord"] = { 48.5, 20.6, THE_JADE_FOREST },
 				}),
+				q(30442, {	-- Blanche's Boomer Brew
+					["coord"] = { 38.0, 30.0, THE_JADE_FOREST },
+					["provider"] = { "n", 59569 },	-- Brewmaster Blanche
+					["isDaily"] = true,
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(29631, {	-- Burning Bright
 					["sourceQuests"] = { 29627 },	-- A Proper Weapon
 					["provider"] = { "n", 55094 },	-- Guard Shan Long
@@ -1763,6 +1769,24 @@ _.Zones =
 		}),
 	}),
 };
+root("HiddenQuestTriggers",{
+	tier(MOP_TIER, {
+		q(29702),	-- Gorrok TRACKING
+		q(30486),	-- Jade Dragon Phased Terrain Tracking - triggers after placing the Cho family heirloom during "Last Piece of the Puzzle" (questID 30485 & 31362)
+		q(29695),	-- Kiryn TRACKING
+		q(31195),	-- Ooked the Dooker - triggers after killing Dook Ookem during "Lay of the Land" (questID 29822)
+		q(31969),	-- Priorities Tracking - triggers during "Priorities" (questID 31772)
+		q(29697),	-- Rivett TRACKING
+		q(29704),	-- Shokia TRACKING
+		q(29368),	-- Tracking - triggeres after completing the criteria for "Acid Rain" (questID 29827)
+		q(31829),	-- Tracking Event: Alliance Gunship Leaves — triggers after turning in "The Pearlfin Situation" and "Road Rations" (questID 29883 & 29885)
+		q(30165),	-- Tracking Event: Picked Blue Serpent - picked the blue serpent egg during "Choosing the One" (questID 30138)
+		q(30167),	-- Tracking Event: Picked Gold Serpent - picked the gold serpent egg during "Choosing the One" (questID 30138)
+		q(30166),	-- Tracking Event: Picked Green Serpent - picked the green serpent egg during "Choosing the One" (questID 30138)
+		q(29604),	-- Tracking Event: Saw East Temple Arrival Cinematic
+		q(29884),	-- Tracking Event: Spies Leave — triggers after turning in "The Pearlfin Situation" and "Road Rations" (questID 29883 & 29885)
+	}),
+});		
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(MOP_TIER, {
 		n(ARMOR, {
@@ -1872,34 +1896,5 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(90331),	-- Face Smasher Warhammer
 			i(80981),	-- Scavenged Rotor Blade
 		}),
-	}),
-	n(QUESTS, {
-		q(30003),	-- A Book By Its Cover
-		q(29766),	-- A Good Start
-		q(29722),	-- A Lesson in Bravery
-		q(29878),	-- Building a Better Hozen Trap
-		q(29724),	-- Burial at Sea
-		q(29856),	-- Cairn of Bone
-		q(29880),	-- Catch and Release!
-		q(29728),	-- Explosive Evidence
-		q(29938),	-- Friends and Foes
-		q(29712),	-- Horde Justice
-		q(29696),	-- My Stars!
-		q(29869),	-- One Hand Clapping
-		q(29837),	-- Sacred Scroll
-		q(29842),	-- Seeking Answers
-		q(29718),	-- Sixteen Fluid Ounces of Prevention
-		q(29744),	-- Some "Pupil of Nature"
-		q(29713),	-- Standard Protocol
-		q(29693),	-- The General's Edge
-		q(29720),	-- The Jade Witch
-		q(30458),	-- The Scouts Return
-		q(29715),	-- The Witch in the Woods
-		q(29895),	-- Trail of the White Pawn
-		q(29714),	-- Wet Work!
-		q(29732),	-- What Goes Down, Must Come Up!
-		q(29858),	-- Wisdom of the Ages
-		q(29729),	-- Without a Trace
-		q(29886),	-- Zen Healing
 	}),
 });

@@ -64,7 +64,7 @@ profession(LEATHERWORKING, {
 						},
 						{	-- Stormshroud Shoulders
 							["recipeID"] = 19090,
-							["u"] = REMOVED_FROM_GAME,
+							["timeline"] = { "added 1.11.1.5462", "removed 4.0.3", "timewalking 9.1" },
 						},
 						{	-- Wild Leather Shoulders
 							["recipeID"] = 10529,
@@ -127,7 +127,7 @@ profession(LEATHERWORKING, {
 						},
 						{	-- Stormshroud Armor
 							["recipeID"] = 19079,
-							["u"] = REMOVED_FROM_GAME,
+							["timeline"] = { "added 1.11.1.5462", "removed 4.0.3", "timewalking 9.1" },
 						},
 						{	-- Wild Leather Vest
 							["recipeID"] = 10544,
@@ -199,7 +199,7 @@ profession(LEATHERWORKING, {
 						},
 						{	-- Stormshroud Gloves
 							["recipeID"] = 26279,
-							["u"] = REMOVED_FROM_GAME,
+							["timeline"] = { "added 1.11.1.5462", "removed 4.0.3", "timewalking 9.1" },
 						},
 					}
 				},

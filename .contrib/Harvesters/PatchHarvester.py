@@ -12,7 +12,7 @@ logging.basicConfig(
 )
 
 
-def get_thing_patch(thing_type: str, thing_id: int):
+def get_thing_patch(thing_type: str, thing_id: int) -> str:
     url = f"https://ptr.wowhead.com/{thing_type}={thing_id}"
 
     page = requests.get(url)
@@ -27,7 +27,7 @@ def get_thing_patch(thing_type: str, thing_id: int):
     return match.group(1)
 
 
-def harvest_things(thing_type: str, max_id_path: str, db_path: str):
+def harvest_things(thing_type: str, max_id_path: str, db_path: str) -> None:
     thing_prefix = thing_type[0]
     with open(max_id_path) as f:
         max_id = int(f.readline())
@@ -36,7 +36,7 @@ def harvest_things(thing_type: str, max_id_path: str, db_path: str):
         line = ""
         for line in f:
             pass
-        match = re.search(fr"{thing_prefix}\((\d+)", str(line))
+        match = re.search(rf"{thing_prefix}\((\d+)", str(line))
         if match is not None:
             max_harvested_id = int(match.group(1))
 

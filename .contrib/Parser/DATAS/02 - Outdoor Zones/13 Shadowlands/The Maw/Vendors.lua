@@ -7,70 +7,28 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 		n(VENDORS, {
 			n(162804, {	-- Ve'nari
 				i(180949, {	-- Animaflow Stabilizer
-					["questID"] = 61600,
 					["cost"] = { { "c", 1767, 1650 } },
-					["g"] = {
-						crit(5, {
-							["achievementID"] = 14895,	-- 'Ghast Five
-						}),
-					},
 				}),
 				i(184653, {	-- Animated Levitating Chain
-					["questID"] = 63217,
 					["cost"] = { { "c", 1767, 1050 } },
-					["g"] = {
-						crit(4, {
-							["achievementID"] = 14895,	-- 'Ghast Five
-						}),
-					},
 				}),
 				i(184617, {	-- Bangle of Seniority
-					["questID"] = 63193,
 					["cost"] = { { "c", 1767, 1135 } },
-					["g"] = {
-						crit(8, {
-							["achievementID"] = 14895,	-- 'Ghast Five
-						}),
-					},
 				}),
 				i(184901, {	-- Broker Traversal Enhancer
-					["questID"] = 63523,
 					["cost"] = { { "c", 1767, 875 } },
-					["g"] = {
-						crit(13, {
-							["achievementID"] = 14895,	-- 'Ghast Five
-						}),
-					},
 				}),
 				i(180817, {	-- Cypher of Relocation
 					["cost"] = { { "c", 1767, 60 } },
 				}),
 				i(184613, {	-- Encased Riftwalker Essence
-					["questID"] = 63177,
 					["cost"] = { { "c", 1767, 1130 } },
-					["g"] = {
-						crit(3, {
-							["achievementID"] = 14895,	-- 'Ghast Five
-						}),
-					},
 				}),
 				i(184615, {	-- Extradimensional Pockets
-					["questID"] = 63183,
 					["cost"] = { { "c", 1767, 800 } },
-					["g"] = {
-						crit(2, {
-							["achievementID"] = 14895,	-- 'Ghast Five
-						}),
-					},
 				}),
 				i(184619, {	-- Loupe of Unusual Charm
-					["questID"] = 63201,
 					["cost"] = { { "c", 1767, 1330 } },
-					["g"] = {
-						crit(12, {
-							["achievementID"] = 14895,	-- 'Ghast Five
-						}),
-					},
 				}),
 				i(184651, {	-- Maw-Touched Miasma
 					["cost"] = { { "c", 1767, 230 } },
@@ -90,22 +48,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					["cost"] = { { "c", 1767, 3760 } },
 				}),
 				i(180952, {	-- Possibility Matrix
-					["questID"] = 61144,
 					["cost"] = { { "c", 1767, 1525 } },
-					["g"] = {
-						crit(11, {
-							["achievementID"] = 14895,	-- 'Ghast Five
-						}),
-					},
 				}),
 				i(184618, {	-- Rank Insignia: Acquisitionist
-					["questID"] = 63200,
 					["cost"] = { { "c", 1767, 1575 } },
-					["g"] = {
-						crit(10, {
-							["achievementID"] = 14895,	-- 'Ghast Five
-						}),
-					},
 				}),
 				i(183870, {	-- Recipe: Crafter's Mark II
 					["cost"] = { { "c", 1767, 300 } },
@@ -137,26 +83,13 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					},
 				}),
 				i(184621, {	-- Ritual Prism of Fortune
-					["questID"] = 63204,
 					["cost"] = { { "c", 1767, 1025 } },
-					["g"] = {
-						crit(7, {
-							["achievementID"] = 14895,	-- 'Ghast Five
-						}),
-					},
 				}),
 				i(184605, {	-- Sigil of the Unseen
-					["questID"] = 63092,
 					["cost"] = { { "c", 1767, 666 } },
 				}),
 				i(184588, {	-- Soul-Stabilizing Talisman
-					["questID"] = 63091,
 					["cost"] = { { "c", 1767, 775 } },
-					["g"] = {
-						crit(6, {
-							["achievementID"] = 14895,	-- 'Ghast Five
-						}),
-					},
 				}),
 				i(180953, {	-- Soultwinning Scepter
 					["cost"] = { { "c", 1767, 205 } },
@@ -176,15 +109,29 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					["cost"] = { { "c", 1767, 1900 } },
 				}),
 				i(184620, {	-- Vessel of Unfortunate Spirits
-					["questID"] = 63202,
 					["cost"] = { { "c", 1767, 527 } },
-					["g"] = {
-						crit(1, {
-							["achievementID"] = 14895,	-- 'Ghast Five
-						}),
-					},
 				}),
 			}),
 		}),
 	}),
 })));
+
+root("HiddenQuestTriggers", {
+	m(SHADOWLANDS, {
+		m(THE_MAW, {
+			q(61600),	-- Animaflow Stabilizer
+			q(63217),	-- Animated Levitating Chain
+			q(63193),	-- Bangle of Seniority
+			q(63523),	-- Broker Traversal Enhancer
+			q(63177),	-- Encased Riftwalker Essence
+			q(63183),	-- Extradimensional Pockets
+			q(63201),	-- Loupe of Unusual Charm
+			q(61144),	-- Possibility Matrix
+			q(63200),	-- Rank Insignia: Acquisitionist
+			q(63204),	-- Ritual Prism of Fortune
+			q(63092),	-- Sigil of the Unseen
+			q(63091),	-- Soul-Stabilizing Talisman
+			q(63202),	-- Vessel of Unfortunate Spirits
+		}),
+	}),
+});

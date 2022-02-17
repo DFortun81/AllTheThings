@@ -135,38 +135,32 @@ _.Zones =
 							}),
 						},
 					}),
-					ach(11725, {	-- Fisherfriend of the Isles
-						["collectible"] = false,
-						["description"] = "The Fishing Masters are on a daily rotation, so only one is up at a time.  The order is:\n\n1. Sha'leth\n2. Impus\n3. Ilyssia of the Waters\n4. Keeper Raynae\n5. Akule Riverhorn\n6. Corbyn\n\nMake sure you're close enough to the Fishing Master to get the |cFFFFD700Something's Fishy|r buff, or you won't be able to fish up the items (the buff may not show up until you dismount).\n\nThe quickest way to reach Best Friend is to fish in a group.\n",
-						["g"] = {
-							faction(2100, {	-- Corbyn
-								["creatureID"] = 120458,
-								["coord"] = { 90.6, 10.6, STORMHEIM },
-								["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF90.6, 10.6|r on Shield's Rest.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-								["requireSkill"] = FISHING,
-								["groups"] = {
-									i(146961, {		-- Shiny Bauble
-										-- extra info for the item can go here
-									}),
-									i(147307, {	-- Crate of Bobbers: Carved Wooden Helm (TOY!)
-										["cost"] = { { "i", 146961, 100 }, },	-- 100x Shiny Bauble
-									}),
-									i(152574, {	-- Corbyn's Beacon (TOY!)
-										["cost"] = { { "i", 146961, 50 }, },	-- 50x Shiny Bauble
-									}),
-									i(133713, {	-- Moosehorn Hook
-										["cost"] = { { "i", 146961, 25 }, },	-- 25x Shiny Bauble
-									}),
-									i(133715, {	-- Ancient Vrykul Ring
-										["cost"] = { { "i", 146961, 25 }, },	-- 25x Shiny Bauble
-									}),
-									i(133716, {	-- Soggy Drakescale
-										["cost"] = { { "i", 146961, 25 }, },	-- 25x Shiny Bauble
-									}),
-									i(124110, {	-- Stormray
-										["cost"] = { { "i", 146961, 10 }, },	-- 10x Shiny Bauble
-									}),
-								},
+					faction(2100, {	-- Corbyn
+						["creatureID"] = 120458,
+						["coord"] = { 90.6, 10.6, STORMHEIM },
+						["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF90.6, 10.6|r on Shield's Rest.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
+						["requireSkill"] = FISHING,
+						["groups"] = {
+							i(146961, {		-- Shiny Bauble
+								-- extra info for the item can go here
+							}),
+							i(147307, {	-- Crate of Bobbers: Carved Wooden Helm (TOY!)
+								["cost"] = { { "i", 146961, 100 }, },	-- 100x Shiny Bauble
+							}),
+							i(152574, {	-- Corbyn's Beacon (TOY!)
+								["cost"] = { { "i", 146961, 50 }, },	-- 50x Shiny Bauble
+							}),
+							i(133713, {	-- Moosehorn Hook
+								["cost"] = { { "i", 146961, 25 }, },	-- 25x Shiny Bauble
+							}),
+							i(133715, {	-- Ancient Vrykul Ring
+								["cost"] = { { "i", 146961, 25 }, },	-- 25x Shiny Bauble
+							}),
+							i(133716, {	-- Soggy Drakescale
+								["cost"] = { { "i", 146961, 25 }, },	-- 25x Shiny Bauble
+							}),
+							i(124110, {	-- Stormray
+								["cost"] = { { "i", 146961, 10 }, },	-- 10x Shiny Bauble
 							}),
 						},
 					}),

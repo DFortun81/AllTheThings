@@ -38,7 +38,7 @@ root("BlackMarket", {
 root("BlackMarket", bubbleDown({ ["u"] = BLACK_MARKET, },{
 	f(113, {	-- Bags
 		i(183634),	-- Papa's Mint Condition Bag (9.1)
-		}),
+	}),
 	filter(103, {	-- Illusions
 		i(138838),	-- Illusion: Deathfrost
 		i(118572),	-- Illusion: Flame of Ragnaros

@@ -117,6 +117,7 @@ TELDRASSIL = 57;
 THE_BARRENS = NORTHERN_BARRENS;
 THOUSAND_NEEDLES = 64;
 THUNDER_BLUFF = 88;
+ULDUM = 249;
 UNGORO_CRATER = 78;
 WINTERSPRING = 83;
 
@@ -593,11 +594,13 @@ FINGER = -385;
 -- Meta Slot
 ARMOR = -318;
 WEAPONS = -319;
+SETS = -1000;
 TITANFORGED = -355;
 
 -- D&R
 COMMON_BOSS_DROPS = -1;
 WORLD_BOSSES = -7;
+BOSSES = -139;
 SCENARIOS = -10069;
 
 -- Pet
@@ -1129,7 +1132,7 @@ end
 applyData = function(data, t)
 	if data and t then
 		for key, value in pairs(data) do
-			if not t[key] then
+			if t[key] == nil then	-- dont' replace existing data
 				t[key] = value;
 			end
 		end
@@ -1691,8 +1694,8 @@ crit = function(criteriaID, t)           -- Create an Achievement Criteria Objec
 		if not isarray(t) then
 			-- DO NOT do that lol
 			if t.achievementID then
-				-- print(table.concat({"Do not use AchievementID:",t.achievementID," inside Achievement Criteria:",criteriaID," ==> Use '_quests', '_npcs', or 'cost' to define where/how this Criteria is granted instead of directly nesting it in Source."}))
-				-- error(table.concat({"Do not use AchievementID:",t.achievementID," inside Achievement Criteria:",criteriaID," ==> Use '_quests', '_npcs', or 'cost' to define where/how this Criteria is granted instead of directly nesting it in Source."}))
+				-- print(table.concat({"Do not use AchievementID:",t.achievementID," inside Achievement Criteria:",criteriaID," ==> Use '_quests', '_npcs', 'cost', or 'provider' to define where/how this Criteria is granted instead of directly nesting it in Source."}))
+				-- error(table.concat({"Do not use AchievementID:",t.achievementID," inside Achievement Criteria:",criteriaID," ==> Use '_quests', '_npcs', 'cost', or 'provider' to define where/how this Criteria is granted instead of directly nesting it in Source."}))
 			end
 			if t.questID then
 				error(table.concat({"Do not use QuestID:",t.questID," inside Achievement Criteria:",criteriaID," ==> Use '_quests' to indicate a Criteria granted from completion of a single Quest."}))

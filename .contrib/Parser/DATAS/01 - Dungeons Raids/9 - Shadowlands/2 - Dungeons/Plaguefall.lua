@@ -13,17 +13,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 		},
 		["lvl"] = { 50 },
 		["g"] = {
-			n(ACHIEVEMENTS, {
-				ach(14634, {	-- Nine Afterlives
-					["collectible"] = false,
-					["g"] = {
-						crit(1, {	-- Hairball
-							["description"] = "Close to the top-left corner of the final boss's map.  On the left side of the slime pool, kill a green ooze and then turn left.  Hairball is in a tiny alcove filled with fish skeletons and candles.",
-							["crs"] = { 174195 },	-- Hairball
-						}),
-					},
-				}),
-			}),
 			n(QUESTS, {
 				-- do not delete header!
 			}),

@@ -128,19 +128,19 @@ root("Instances", tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
+				-- #if BEFORE 4.0.3
 				q(3525, {	-- Extinguishing the Idol (Before Cataclysm)
 					["qg"] = 8516,	-- Belnistrasz
 					["sourceQuest"] = 3523,	-- Scourge of the Downs (Before Cataclysm)
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 32,
-					-- #if BEFORE 4.0.3
 					["groups"] = {
 						i(10710, {	-- Dragonclaw Ring
 							["timeline"] = { "removed 6.0.2" },
 						}),
 					},
-					-- #endif
 				}),
+				-- #else
 				q(3525, {	-- Extinguishing the Idol (After Cataclysm)
 					["qg"] = 8516,	-- Belnistrasz
 					["sourceQuest"] = 27019,	-- Scourge of the Downs (After Cataclysm)
@@ -152,6 +152,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
+				-- #endif
 				q(27063, {	-- Looming Threat [Alliance]
 					["qg"] = 40032,	-- Telaron Windflight
 					["coord"] = { 50.7, 17.2, FERALAS },

@@ -475,11 +475,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14034,	-- Club Foote
 				}),
+				-- #if BEFORE CATA
 				q(6365,  {	-- Meats to Orgrimmar
 					["provider"] = { "n", 3489 },	-- Zargh
 					["coord"] = { 50.6, 57.8, NORTHERN_BARRENS },
-					["races"] = { ORC, TROLL, MAGHAR },
+					["races"] = { ORC, TROLL },
 				}),
+				-- #endif
 				q(9267,  {	-- Mending Old Wounds (repeatable quest to repair lost rep with Ratchet from getting Insane title)
 					["provider"] = { "n", 16418 },	-- Mupsi Shacklefridd
 					["coord"] = { 65.8, 72.0, NORTHERN_BARRENS },
@@ -633,12 +635,14 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 29027,	-- Nugget Slugs
 				}),
+				-- #if BEFORE CATA
 				q(6384,  {	-- Ride to Orgrimmar
 					["provider"] = { "n", 3615 },	-- Devrak
 					["coord"] = { 48.6, 58.6, NORTHERN_BARRENS },
 					["sourceQuest"] = 6365,	-- Meats to Orgrimmar
-					["races"] = { ORC, TROLL, MAGHAR },
+					["races"] = { ORC, TROLL },
 				}),
+				-- #endif
 				q(866,   {	-- Root Samples
 					["provider"] = { "n", 3446 },	-- Mebok Mizzyrix
 					["coord"] = { 67.8, 71.6, NORTHERN_BARRENS },

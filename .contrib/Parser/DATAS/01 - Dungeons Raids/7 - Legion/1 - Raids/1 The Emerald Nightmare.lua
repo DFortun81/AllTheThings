@@ -122,7 +122,7 @@ _.Instances = { tier(LEGION_TIER, {
 							i(139637),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 1]
 							i(137749),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 2]
 							i(139569, {	-- Claw of N'Zoth
-								artifact(950),	-- Shadow Priest Hidden Artifact Appearance
+								-- ["sourceQuest"] = , TODO
 							}),
 							i(139188),	-- Celestially Aligned Hood
 							i(139206),	-- Otherworldy Leather Mantle
@@ -153,10 +153,10 @@ _.Instances = { tier(LEGION_TIER, {
 							i(139635),	-- Vantus Rune Technique: Ursoc [Rank 1]
 							i(137747),	-- Vantus Rune Technique: Ursoc [Rank 2]
 							i(139557, {	-- Last Breath of the Forest
-								artifact(473),	-- Talonclaw Hidden Appearance
+								-- ["sourceQuest"] = , TODO
 							}),
 							i(139553, {	-- Mark of the Glade Guardian
-								artifact(283),	-- Guardian Druid Hidden Artifact Appearance
+								-- ["sourceQuest"] = , TODO
 							}),
 							i(139239),	-- Cursed Beartooth Necklace
 							i(139217),	-- Matted Fur Pauldrons
@@ -187,7 +187,7 @@ _.Instances = { tier(LEGION_TIER, {
 								i(139638),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 1]
 								i(137750),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 2]
 								i(139562, {	-- Breath of the Undying Serpent
-									artifact(519),	-- Mistweaver Hidden Artifact Appearance
+										-- ["sourceQuest"] = , TODO
 								}),
 								i(136903),	-- Nightmare Whelpling (PET!)
 								i(139205),	-- Cowl of Fright
@@ -341,7 +341,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(139637),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 1]
 					i(137749),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 2]
 					i(139569, {	-- Claw of N'Zoth
-						artifact(950),	-- Shadow Priest Hidden Artifact Appearance
+						-- ["sourceQuest"] = , TODO
 					}),
 					i(139188),	-- Celestially Aligned Hood
 					i(139206),	-- Otherworldy Leather Mantle
@@ -390,10 +390,10 @@ _.Instances = { tier(LEGION_TIER, {
 					i(139635),	-- Vantus Rune Technique: Ursoc [Rank 1]
 					i(137747),	-- Vantus Rune Technique: Ursoc [Rank 2]
 					i(139557, {	-- Last Breath of the Forest
-						artifact(473),	-- Talonclaw Hidden Appearance
+						-- ["sourceQuest"] = , TODO
 					}),
 					i(139553, {	-- Mark of the Glade Guardian
-						artifact(283),	-- Guardian Druid Hidden Artifact Appearance
+						-- ["sourceQuest"] = , TODO
 					}),
 					i(139239),	-- Cursed Beartooth Necklace
 					i(139217),	-- Matted Fur Pauldrons
@@ -425,7 +425,7 @@ _.Instances = { tier(LEGION_TIER, {
 						i(139638),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 1]
 						i(137750),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 2]
 						i(139562, {	-- Breath of the Undying Serpent
-							artifact(519),	-- Mistweaver Hidden Artifact Appearance
+							-- ["sourceQuest"] = , TODO
 						}),
 						i(136903),	-- Nightmare Whelpling (PET!)
 						i(139205),	-- Cowl of Fright
@@ -577,7 +577,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(139637),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 1]
 					i(137749),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 2]
 					i(139569, {	-- Claw of N'Zoth
-						artifact(950),	-- Shadow Priest Hidden Artifact Appearance
+						-- ["sourceQuest"] = , TODO
 					}),
 					i(139188),	-- Celestially Aligned Hood
 					i(139206),	-- Otherworldy Leather Mantle
@@ -626,10 +626,10 @@ _.Instances = { tier(LEGION_TIER, {
 					i(139635),	-- Vantus Rune Technique: Ursoc [Rank 1]
 					i(137747),	-- Vantus Rune Technique: Ursoc [Rank 2]
 					i(139557, {	-- Last Breath of the Forest
-						artifact(473),	-- Talonclaw Hidden Appearance
+						-- ["sourceQuest"] = , TODO
 					}),
 					i(139553, {	-- Mark of the Glade Guardian
-						artifact(283),	-- Guardian Druid Hidden Artifact Appearance
+						-- ["sourceQuest"] = , TODO
 					}),
 					i(139239),	-- Cursed Beartooth Necklace
 					i(139217),	-- Matted Fur Pauldrons
@@ -661,7 +661,7 @@ _.Instances = { tier(LEGION_TIER, {
 						i(139638),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 1]
 						i(137750),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 2]
 						i(139562, {	-- Breath of the Undying Serpent
-							artifact(519),	-- Mistweaver Hidden Artifact Appearance
+							-- ["sourceQuest"] = , TODO
 						}),
 						i(136903),	-- Nightmare Whelpling (PET!)
 						i(139205),	-- Cowl of Fright
@@ -816,7 +816,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(139637),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 1]
 					i(137749),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 2]
 					i(139569, {	-- Claw of N'Zoth
-						artifact(950),	-- Shadow Priest Hidden Artifact Appearance
+						-- ["sourceQuest"] = , TODO
 					}),
 					i(139188),	-- Celestially Aligned Hood
 					i(139206),	-- Otherworldy Leather Mantle
@@ -867,10 +867,10 @@ _.Instances = { tier(LEGION_TIER, {
 					i(139635),	-- Vantus Rune Technique: Ursoc [Rank 1]
 					i(137747),	-- Vantus Rune Technique: Ursoc [Rank 2]
 					i(139557, {	-- Last Breath of the Forest
-						artifact(473),	-- Talonclaw Hidden Appearance
+						-- ["sourceQuest"] = , TODO
 					}),
 					i(139553, {	-- Mark of the Glade Guardian
-						artifact(283),	-- Guardian Druid Hidden Artifact Appearance
+						-- ["sourceQuest"] = , TODO
 					}),
 					i(139239),	-- Cursed Beartooth Necklace
 					i(139217),	-- Matted Fur Pauldrons
@@ -903,7 +903,7 @@ _.Instances = { tier(LEGION_TIER, {
 						i(139638),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 1]
 						i(137750),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 2]
 						i(139562, {	-- Breath of the Undying Serpent
-							artifact(519),	-- Mistweaver Hidden Artifact Appearance
+							-- ["sourceQuest"] = , TODO
 						}),
 						i(136903),	-- Nightmare Whelpling (PET!)
 						i(139205),	-- Cowl of Fright

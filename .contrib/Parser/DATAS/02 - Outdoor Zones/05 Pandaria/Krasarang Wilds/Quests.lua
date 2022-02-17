@@ -1072,6 +1072,14 @@ _.Zones =
 		}),
 	}),
 };
-_.HiddenQuestTriggers = {
-	q(32477),	-- Going back and forth in time via Taradormi
-};
+root("HiddenQuestTriggers",{
+	tier(MOP_TIER, {
+		q(30719),	-- FLAG - Cradle of Chi-Ji Progress Bit 01
+		q(30720),	-- FLAG - Cradle of Chi-Ji Progress Bit 02 - triggered after turning in Dextrous Izissha quest, 6th for Champion of Chi-Ji, triggered on another character after turning in Minh Do-Tan, which is the 2nd
+		q(30721),	-- FLAG - Cradle of Chi-Ji Progress Bit 03
+		q(30722),	-- FLAG - Cradle of Chi-Ji Progress Bit 04
+		q(30087),	-- FLAG - Kung Fu Intro — triggers either when flying close to the magical barrier or after accepting The "Arcanic Oubliette" (questID 30274)
+		q(31371),	-- Tracking Event: Player Has Completed One Anglers Daily
+		q(32477),	-- Tracking Event: Player is Back in Time - going back and forth in time via Taradormi
+	}),
+});

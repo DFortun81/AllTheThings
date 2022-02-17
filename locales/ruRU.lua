@@ -22,7 +22,7 @@ local L = app.L;
 	L.KNOWN_BY = "Изучено ";
 	L.REQUIRES = "Требуется";
 	--TODO: L.RACE_LOCKED = "Race Locked";
-	L.PLEASE_REPORT_MESSAGE = ": Пожалуйста, сообщите об этом на Discord-сервере ATT в канале #errors! Спасибо!";
+	L.PLEASE_REPORT_MESSAGE = ": Пожалуйста, сообщите об этом на Discord-сервере ATT в канале #retail-errors! Спасибо!";
 	L.REPORT_TIP = "\n(Ctrl+C, чтобы скопировать многострочный отчёт в буфер обмена)";
 	L.NOT_AVAILABLE_IN_PL = "Недоступно в Персональной добыче.";
 	L.MARKS_OF_HONOR_DESC = "Почётные знаки должны быть рассмотрены во всплывающем окне, чтобы видеть всё их 'Содержимое'.\n(Введите '/att' в чат и затем Shift+Клик для ссылки на предмет)\n\n|cFFfe040fПосле покупки и использования Набора может потребоваться полностью выйти из игры и вручную обновить коллекцию (в таком порядке),\nчтобы корректно зарегистрировать все предметы.|r";
@@ -552,7 +552,7 @@ local L = app.L;
 		L.REQUIRES_LEVEL = "Требуется Уровень";
 		L.SECRETS_HEADER = "Секреты";
 		L.LIMITED_QUANTITY = "Предмет имеется в ограниченном количестве и может не всегда быть доступен у торговца.";
-		L.SOURCE_ID_MISSING = "Пожалуйста, сообщите в канале #errors на нашем сервере Discord, где Вы нашли эту вещь!";
+		L.SOURCE_ID_MISSING = "Пожалуйста, сообщите в канале #retail-errors на нашем сервере Discord, где Вы нашли эту вещь!";
 
 	-- Icons and Collection Text
 		L.COLLECTED = "|T" .. app.asset("known") .. ":0|t |cff15abffСобрано|r";	-- Acquired the colors and icon from CanIMogIt.
@@ -944,6 +944,7 @@ for key,value in pairs({
 	[148504] = "Подозрительное надгробие",	-- A Conspicuous Gravestone
 	[149036] = "Сундук Марвона",	-- Marvon's Chest
 	[149502] = "Сокровищница черных драконов",	-- Hoard of the Black Dragonflight
+	[151286] = "Калдорайский фолиант Призыва",	-- Kaldorei Tome of Summoning
 	[160836] = "Реликварий",	-- Relic Coffer
 	[161495] = "Потайной сейф",	-- Secret Safe
 	[161504] = "Небольшая сумка",	-- A Small Pack
@@ -1021,6 +1022,7 @@ for key,value in pairs({
 	[180794] = "Дневник Джандис Баровой",	-- Journal of Jandice Barov
 	[180918] = "Разыскивается: Таэлис Ненасытный",	-- Wanted: Thaelis the Hungerer
 	[181011] = "Журнал магистра Блеклые Сумерки",	-- Magister Duskwither's Journal
+	[181073] = "Котел Ароматов",	-- Fragrant Cauldron
 	[181074] = "Трофеи арены",	-- Arena Spoils
 	[181083] = "Наследие Сотоса и Джариена",	-- Sothos and Jarien's Heirlooms
 	[181147] = "Плакат \"Разыскивается\"",	-- Wanted Poster
@@ -2821,6 +2823,7 @@ for key,value in pairs({
 	[358318] = "\"Портрет землероя\" Р. Лоска",	-- R. Suavel Dredger Portrait
 	[358319] = "Записка чародея",	-- Sorceror's Note
 	[358382] = "Разыскивается: Хелицера",	-- Wanted: Chelicera
+	[358399] = "Шестимильный вьюк",	-- Six-League Pack
 	[358531] = "Огромный тайник с эпическим сокровищем",	-- Giant Cache of Epic Treasure
 	[358533] = "Забытые припасы",	-- Forgotten Supplies
 	[358855] = "Поврежденный набор для безопасного падения",	-- Damaged Safe Fall Pack

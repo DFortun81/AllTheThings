@@ -46,6 +46,23 @@ root("Instances", tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
+				q(10593, {	-- An Ancient Evil
+					["qg"] = 10181,	-- Lady Sylvanas Windrunner <Banshee Queen>
+					["sourceQuest"] = 10592,	-- Wisdom of the Banshee Queen
+					["coord"] = { 57.8, 92, UNDERCITY },
+					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["classes"] = { PALADIN },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 50,
+					["groups"] = {
+						objective(1, {	-- 0/1 Putrid Vine
+							["provider"] = { "i", 22444 },	-- Putrid Vine
+						}),
+						i(30696, {	-- Scourgebane
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
+				}),
 				q(8257, {	-- Blood of Morphaz
 					["qg"] = 8405,	-- Ogtinc
 					["sourceQuest"] = 8256,	-- The Ichor of Undeath
@@ -140,6 +157,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					["coord"] = { 42.8, 84.0, WESTERN_PLAGUELANDS },
 					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 					["groups"] = {
 						objective(1, {	-- 0/2 Amber Voodoo Feather

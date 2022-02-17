@@ -215,6 +215,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { FERALAS },
 					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
 					["lvl"] = 54,
 				}),
 				q(7499, {	-- Codex of Defense

@@ -212,7 +212,7 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 				},
 			}),
 			i(163481, {	-- Glittering Scarab
-				["coord"] = { 58.8, 46.2, 249 },
+				["coord"] = { 58.8, 46.2, ULDUM },
 				["g"] = {
 					q(53176, {	-- Glittering Scarab
 						["provider"] = { "n", 46134 },	-- High Commander Kamses

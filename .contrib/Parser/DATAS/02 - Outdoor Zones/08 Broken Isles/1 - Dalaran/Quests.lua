@@ -149,6 +149,11 @@ _.Zones =
 					["classes"] = { WARLOCK },
 					["lvl"] = 110,
 				}),
+				q(44421, {	-- Anomalous Anomalies
+					["provider"] = { "n", 113986 },	-- Archmage Khadgar
+					["sourceQuests"] = { 44182 },	-- City Under Siege
+					["coord"] = { 47.6, 74.6, DEADWIND_PASS },
+				}),
 				q(45482, {	-- Arcane: Fate of the Tideskorn
 					["sourceQuests"] = {
 						44821,	-- In Dire Need
@@ -208,6 +213,11 @@ _.Zones =
 						i(141357),	-- Violet Guardian's Helm
 						i(141356),	-- Violet Guardian's Faceguard
 					},
+				}),
+				q(44500, {	-- Author! Author!
+					["provider"] = { "n", 113986 },	-- Archmage Khadgar
+					["sourceQuests"] = { 44421 },	-- Author! Author!
+					["coord"] = { 47.6, 74.6, DEADWIND_PASS },
 				}),
 				q(44782, {	-- Away From Prying Eyes
 					["sourceQuests"] = { 47000 },	-- The Council's Call
@@ -299,6 +309,24 @@ _.Zones =
 						{ "n", 115466 },	-- Archmage Ansirem Runeweaver
 					},
 					["coord"] = { 28.5, 49.5, LEGION_DALARAN },
+				}),
+				q(40717, {	-- Calling of the Council
+					["description"] = "You can start this quest by going to Dalaran (Legion) and talking to Archivist Elysiana in The Violet Citadel.",
+					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore	-- TODO: confirm sourceQuests
+					["provider"] = { "n", 114550 },	-- Khadgar's Upgraded Servant
+					["races"] = ALLIANCE_ONLY,
+					-- ["coord"] = { },
+				}),
+				q(40718, {	-- Calling of the Council
+					["description"] = "You can start this quest by going to Dalaran (Legion) and talking to Archivist Elysiana in The Violet Citadel.",
+					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore	-- TODO: confirm sourceQuests
+					["provider"] = { "n", 114550 },	-- Khadgar's Upgraded Servant
+					["races"] = HORDE_ONLY,
+					-- ["coord"] = { },
+				}),
+				q(44182, {	-- City Under Siege
+					["provider"] = { "n", 114561 },	-- Khadgar's Upgraded Servant
+					["sourceQuests"] = { 40755 },	-- Hiding in the Stacks
 				}),
 				q(45414, {	-- Confirming Suspicions
 					["sourceQuests"] = { 45413 },	-- Gathering Information
@@ -578,6 +606,21 @@ _.Zones =
 					},
 					["classes"] = { DEMONHUNTER },
 					["lvl"] = 110,
+				}),
+				q(40755, {	-- Hiding in the Stacks
+					["provider"] = { "n", 101547 },	-- Archmage Khadgar
+					["sourceQuests"] = { 42970 },	-- The Diamond King
+					["coord"] = { 47.0, 75.0, DEADWIND_PASS },
+					["maps"] = {
+						794,	-- Karazhan
+						795,	-- Karazhan
+					},
+					["groups"] = {
+						i(139905),	-- Gloves of thee Arcane Purge
+						i(139934),	-- Handguards of Demonsbane
+						i(139965),	-- Grips of the Fel Destroyer
+						i(139997),	-- Gauntlets of Legion Devastation
+					},
 				}),
 				q(47006, {	-- Holy: The Bradensbrook Investigation
 					["sourceQuests"] = {
@@ -978,6 +1021,11 @@ _.Zones =
 						"removed 8.0"
 					}
 				}),
+				q(42970, {	-- The Diamond King
+					["provider"] = { "n", 113655 },	-- Brann Bronzebeard
+					["sourceQuests"] = { 40717, 40718 },	-- Calling of the Council [A/H]
+					["coord"] = { 41.2, 74.8, DEADWIND_PASS },
+				}),
 				q(45420, {	-- The Eye of Aman'Thul
 					["sourceQuests"] = { 45417 },	-- The Nighthold: Lord of the Shadow Council
 					["provider"] = { "n", 106522 },	-- Archmage Khadgar
@@ -1186,3 +1234,7 @@ _.Zones =
 		}),
 	}),
 };
+
+root("HiddenQuestTriggers", {
+	q(58658),	-- selecting an option to hide Vulpera hyena mount canopy/sunshade
+});

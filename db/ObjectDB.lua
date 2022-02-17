@@ -1,7 +1,8 @@
 -------------------------------------------------------
 --   O B J E C T   D A T A B A S E   M O D U L E   --
 -------------------------------------------------------
-select(2, ...).ObjectNames = {
+local _ = select(2, ...);
+_.ObjectNames = {
 	[31] = "Old Lion Statue",
 	[55] = "A half-eaten body",
 	[56] = "Rolf's corpse",
@@ -153,6 +154,7 @@ select(2, ...).ObjectNames = {
 	[180794] = "Journal of Jandice Barov",
 	[180918] = "Wanted: Thaelis the Hungerer",
 	[181011] = "Magister Duskwither's Journal",
+	[181073] = "Fragrant Cauldron",
 	[181074] = "Arena Spoils",
 	[181083] = "Sothos and Jarien's Heirlooms",
 	[181147] = "Wanted Poster",
@@ -1959,6 +1961,7 @@ select(2, ...).ObjectNames = {
 	[358318] = "R. Suavel Dredger Portrait",
 	[358319] = "Sorceror's Note",
 	[358382] = "Wanted: Chelicera",
+	[358399] = "Six-League Pack",
 	[358531] = "Giant Cache of Epic Treasure",
 	[358533] = "Forgotten Supplies",
 	[358855] = "Damaged Safe Fall Pack",
@@ -2225,7 +2228,7 @@ select(2, ...).ObjectNames = {
 	[1278968767] = "Rune",
 	[1278968768] = "Rune",
 };
-select(2, ...).ObjectIcons = {
+_.ObjectIcons = {
 	[31] = "Interface/Icons/INV_Mount_AllianceLionG",
 	[55] = "Interface/Icons/INV_Misc_Bone_HumanSkull_01",
 	[56] = "Interface/Icons/INV_Misc_Bone_HumanSkull_01",
@@ -3183,7 +3186,7 @@ select(2, ...).ObjectIcons = {
 	[13000036] = "Interface/Icons/ability_socererking_arcaneacceleration",
 	[13000037] = "Interface/Icons/inv_hivemind",
 };
-select(2, ...).ObjectModels = {
+_.ObjectModels = {
 	[31] = 189908,
 	[55] = 198343,
 	[56] = 198343,

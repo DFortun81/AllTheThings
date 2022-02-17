@@ -51,9 +51,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["isDaily"] = true,
 				["coord"] = { 25.8, 31.2, THE_MAW },
 				["g"] = {
-					crit(1, {	-- Adjutant Dekaris
-						["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
-					}),
 					i(186222, {	-- Grips of the Coldheart Adjutant
 						["timeline"] = { "added 9.1.0.38312" },
 					}),
@@ -90,9 +87,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["isDaily"] = true,
 				["coord"] = { 19.6, 42.0, THE_MAW },
 				["g"] = {
-					crit(2, {	-- Apholeias, Herald of Loss
-						["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
-					}),
 					i(184106),	-- Gimble
 					i(182327),	-- Dominion Etching: Loss
 				},
@@ -102,9 +96,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["questID"] = 57469,
 				["isDaily"] = true,
 				["g"] = {
-					crit(3, {	-- Borr-Geth
-						["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
-					}),
 					i(184312),	-- Borr-Geth's Fiery Brimstone
 					i(186223),	-- Coif of the Molten Terror
 				},
@@ -133,9 +124,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					{ 28.6, 19.4, THE_MAW },	-- Venthyr assault spawnpoint
 				},
 				["g"] = {
-					crit(4, {	-- Conjured Death
-						["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
-					}),
 					i(183887),	-- Suirhtaned, Blade of the Heir
 				},
 			}),
@@ -157,9 +145,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["isDaily"] = true,
 				["coord"] = { 59.3, 51.9, THE_MAW },
 				["g"] = {
-					crit(5, {	-- Darithis the Bleak
-						["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
-					}),
 					i(186220),	-- Stygian Chestcage
 				},
 			}),
@@ -168,9 +153,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["isDaily"] = true,
 				["coord"] = { 49.0, 81.6, THE_MAW },
 				["g"] = {
-					crit(6, {	-- Darklord Taraxis
-						["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
-					}),
 					i(183901, {	-- Bonestorm Top (TOY!)
 						["timeline"] = { "added 9.1.0.38312" },
 					}),
@@ -225,9 +207,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["isDaily"] = true,
 				["coord"] = { 28.6, 60.6, THE_MAW },
 				["g"] = {
-					crit(7, {	-- Dolos
-						["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
-					}),
 					i(186209),	-- Blood-Spattered Gloves of Death
 				},
 			}),
@@ -250,9 +229,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["isDaily"] = true,
 				["coord"] = { 22.8, 52.4, THE_MAW },
 				["g"] = {
-					crit(8, {	-- Eketra
-						["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
-					}),
 					i(186563),	-- Spear of the Impaler
 				},
 			}),
@@ -261,9 +237,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["isDaily"] = true,
 				["coord"] = { 42.2, 21.0, THE_MAW },
 				["g"] = {
-					crit(9, {	-- Ekphoras, Herald of Grief
-						["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
-					}),
 					i(184105),	-- Gyre
 					i(182328),	-- Dominion Etching: Grief
 				},
@@ -273,9 +246,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["isDaily"] = true,
 				["coord"] = { 19.3, 46.1, THE_MAW },
 				["g"] = {
-					crit(10, {	-- Eternas the Tormentor
-						["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
-					}),
 					i(183407),	-- Dread (PET!)
 					i(186212, {	-- Eternas' Braided Waistcord
 						["timeline"] = { "added 9.1.0.38312" },
@@ -289,9 +259,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["coord"] = { 21.0, 70.2, THE_MAW },
 				["cost"] = { { "i", 182329, 1 } },	-- 1x Domination's Calling
 				["g"] = {
-					crit(11, {	-- Exos, Herald of Domination
-						["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
-					}),
 					i(186606),	-- Nilganihmaht's Signet Ring
 					i(184108),	-- Vorpal Amulet
 					i(183066),	-- Korrath's Grimoire: Aleketh
@@ -340,9 +307,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["isDaily"] = true,
 				["coord"] = { 35.6, 52.2, THE_MAW },
 				["g"] = {
-					crit(21, {	-- Ikras the Devourer
-						["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
-					}),
 					i(186214),	-- Maw Snakeskin Boots
 				},
 			}),
@@ -379,9 +343,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["questID"] = 60987,
 				["isDaily"] = true,
 				["g"] = {
-					crit(12, {	-- Morguliax
-						["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
-					}),
 					i(184292),	-- Ancient Elethium Coin
 					i(185892, {	-- Stygia-Etched Decapitator
 						["timeline"] = { "added 9.1.0.38312" },
@@ -393,9 +354,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["isDaily"] = true,
 				["coord"] = { 46.0, 74.2, THE_MAW },
 				["g"] = {
-					crit(13, {	-- Nascent Devourer
-						["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
-					}),
 					i(186236, {	-- Devourer's Shadehide Jerkin
 						["timeline"] = { "added 9.1.0.38312" },
 					}),
@@ -406,9 +364,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["isDaily"] = true,
 				["coord"] = { 48.6, 18.4, THE_MAW },
 				["g"] = {
-					crit(14, {	-- Obolos
-						["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
-					}),
 					i(186238, {	-- Mantle of the Prime Collector
 						["timeline"] = { "added 9.1.0.38312" },
 					}),
@@ -444,9 +399,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["questID"] = 61519,
 				["isDaily"] = true,
 				["g"] = {
-					crit(15, {	-- Orophea
-						["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
-					}),
 					i(186211, {	-- Pantaloons of the Condemned Bard
 						["timeline"] = { "added 9.1.0.38312" },
 					}),
@@ -500,9 +452,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["isDaily"] = true,
 				["coord"] = { 32.8, 66.6, THE_MAW },
 				["g"] = {
-					crit(16, {	-- Shadeweaver Zeris
-						["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
-					}),
 					i(185945),	-- Shadeweaver's Spire
 					i(183066),	-- Korrath's Grimoire: Aleketh
 					i(183067),	-- Korrath's Grimoire: Belidir
@@ -529,9 +478,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["isDaily"] = true,
 				["coord"] = { 36.0, 41.4, THE_MAW },
 				["g"] = {
-					crit(17, {	-- Soulforger Rhovus
-						["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
-					}),
 					i(186613, {	-- Rhovus' Linked Greaves
 						["timeline"] = { "added 9.1.0.38312" },
 					}),
@@ -571,9 +517,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["isDaily"] = true,
 				["coord"] = { 28.6, 12.6, THE_MAW },
 				["g"] = {
-					crit(18, {	-- Talaporas, Herald of Pain
-						["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
-					}),
 					i(184107),	-- Borogove Cloak
 					i(182326),	-- Dominion Etching: Pain
 				},
@@ -583,9 +526,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["isDaily"] = true,
 				["coord"] = { 27.6, 71.6, THE_MAW },
 				["g"] = {
-					crit(19, {	-- Thanassos
-						["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
-					}),
 					i(186234),	-- Girdle of the Death Speaker
 				},
 			}),
@@ -630,9 +570,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["isDaily"] = true,
 				["coord"] = { 37.9, 61.4, THE_MAW },
 				["g"] = {
-					crit(20, {	-- Yero the Skittish
-						["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
-					}),
 					i(186228),	-- Helm of the Skittish Hero
 				},
 			}),

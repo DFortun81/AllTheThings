@@ -6318,22 +6318,3 @@ bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, _.NeverImplemented);
 root("HiddenQuestTriggers", {
 	q(55631),	-- Jewelcrafting Diode shrine. harvesting gems from them triggered this quest. Nazmir location
 });
-
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(29969),	-- Broken Earthen Figurine
-		q(29970),	-- Broken Earthen Figurine
-		q(31545),	-- The Finer Things
-		q(31557),	-- The Finer Things
-		q(31558),	-- The Finer Things
-		q(31559),	-- The Finer Things
-		q(31560),	-- The Finer Things
-		q(31561),	-- The Finer Things
-		q(31562),	-- The Finer Things
-		q(31563),	-- The Finer Things
-		q(31564),	-- The Finer Things
-		q(31565),	-- The Finer Things
-		q(31566),	-- The Finer Things
-		q(31567),	-- The Finer Things
-	}),
-}));

@@ -448,27 +448,51 @@ local sortByNameSafely = function(a, b)
 		return true;
 	end
 	return false;
-end;
+end
 local function GetGroupSortValue(group)
-	if group then
-		if group.g then
-			if group.total and group.total > 1 then
-				if group.progress and group.progress > 0 then
-					return (2 + (group.progress / group.total));
-				end
-				return (1 / group.total);
+	-- sub-groups on top
+	-- >= 1
+	if group.g then
+		local total = group.total;
+		if total then
+			local progress = group.progress;
+			-- completed groups at the very top, ordered by their own total
+			if total == progress then
+				-- 3 <= p
+				return 2 + total;
+			-- partially completed next
+			elseif progress and progress > 0 then
+				-- 1 < p <= 2
+				return 1 + (progress / total);
+			-- no completion, ordered by their own total in reverse
+			-- 0 < p <= 1
+			else
+				return (1 / total);
 			end
-			return 0;
-		elseif group.collectible then
-			if group.collected then
-				return -1;
-			elseif group.sortProgress then
-				return (-2 + group.sortProgress);
-			end
-			return -2;
 		end
+	-- collectibles next
+	-- >= 0
+	elseif group.collectible then
+		-- = 0.5
+		if group.collected then
+			return 0.5;
+		else
+			-- 0 <= p < 0.5
+			return (group.sortProgress or 0) / 2;
+		end
+	-- trackables next
+	-- -1 <= p <= -0.5
+	elseif group.trackable then
+		if group.saved then
+			return -0.5;
+		else
+			return -1;
+		end
+	-- remaining last
+	-- = -2
+	else
+		return -2;
 	end
-	return -3;
 end
 -- Sorts a group using the provided sortType, whether to recurse through nested groups, and whether sorting should only take place given the group having a conditional field
 local function SortGroup(group, sortType, row, recur, conditionField)
@@ -966,7 +990,6 @@ end
 					end
 				end
 			end
-			app.print("Refreshed Player's Learned Professions");
 		end
 		return cache;
 	end
@@ -1704,18 +1727,20 @@ CreateObject = function(t, rootOnly)
 			else
 				t = app.CreateItem(t.itemID, t);
 			end
-		elseif t.classID then
-			t = app.CreateCharacterClass(t.classID, t);
 		elseif t.npcID or t.creatureID then
 			t = app.CreateNPC(t.npcID or t.creatureID, t);
-		elseif t.headerID then
-			t = app.CreateNPC(t.headerID, t);
 		elseif t.questID then
 			if t.isVignette then
 				t = app.CreateVignette(t.questID, t);
 			else
 				t = app.CreateQuest(t.questID, t);
 			end
+
+		-- Non-Thing groups
+		elseif t.classID then
+			t = app.CreateCharacterClass(t.classID, t);
+		elseif t.headerID then
+			t = app.CreateNPC(t.headerID, t);
 		elseif t.tierID then
 			t = app.CreateTier(t.tierID, t);
 		elseif t.unit then
@@ -2158,7 +2183,7 @@ end
 
 -- Quest Completion Lib
 -- Builds a table to be used in the SetupReportDialog to display text which is copied into Discord for player reports
-app.BuildDiscordQuestInfoTable = function(id, infoText, questChange)
+app.BuildDiscordQuestInfoTable = function(id, infoText, questChange, questRef)
 	local coord;
 	local mapID = app.GetCurrentMapID();
 	local position = mapID and C_Map.GetPlayerMapPosition(mapID, "player");
@@ -2183,6 +2208,7 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange)
 		"race:"..app.RaceID.." ("..app.Race..")",
 		"class:"..app.ClassIndex.." ("..app.Class..")",
 		"lvl:"..app.Level,
+		"u:"..tostring(questRef and questRef.u),
 		"cov:"..(covData and covData.name or "N/A");
 		mapID and ("mapID:"..mapID.." ("..C_Map_GetMapInfo(mapID).name..")") or "mapID:??",
 		coord and ("coord:"..coord) or "coord:??",
@@ -2201,10 +2227,11 @@ app.CheckInaccurateQuestInfo = function(questRef, questChange)
 		if not (app.RequiredSkillFilter(questRef)
 			and app.ClassRequirementFilter(questRef)
 			and app.RaceRequirementFilter(questRef)
-			and app.RequireCustomCollectFilter(questRef)) then
+			and app.RequireCustomCollectFilter(questRef)
+			and app.ItemIsInGame(questRef)) then
 			local popupID = "quest-filter-" .. id;
 			if app:SetupReportDialog(popupID, "Inaccurate Quest Info: " .. id,
-				app.BuildDiscordQuestInfoTable(id, "inaccurate-quest", questChange)
+				app.BuildDiscordQuestInfoTable(id, "inaccurate-quest", questChange, questRef)
 			) then
 				local reportMsg = app:Linkify(L["REPORT_INACCURATE_QUEST"], "f7b531", "dialog:" .. popupID);
 				Callback(app.print, reportMsg);
@@ -3673,7 +3700,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	-- This method can be called nested, and some logic should only process for the initial call
 	local topLevelSearch;
 	if not app.InitialCachedSearch then
-		-- print("TopLevelSearch",paramA,paramB)
+		-- app.PrintDebug("TopLevelSearch",paramA,paramB,...)
 		wipe(app.BuildCrafted_IncludedItems);
 		wipe(app.ExpandSubGroups_IncludedItems);
 		app.InitialCachedSearch = search;
@@ -6227,10 +6254,13 @@ app.TryColorizeName = function(group, name)
 			end
 		-- specific races
 		elseif group.races then
-			-- this group requires a horde-only race
-			if containsAny(group.races, HORDE_ONLY) then
+			local hrace = containsAny(group.races, HORDE_ONLY);
+			local arace = containsAny(group.races, ALLIANCE_ONLY);
+			if hrace and not arace then
+				-- this group requires a horde-only race, and not any alliance race
 				return Colorize(name, "ffcc6666");
-			else -- assuming no other factions exist and that .races will only ever have horde or alliance races
+			elseif arace and not hrace then
+				-- this group requires a alliance-only race, and not any horde race
 				return Colorize(name, "ff407fbf");
 			end
 		-- un-acquirable color
@@ -6304,12 +6334,12 @@ end
 local function AttachTooltipSearchResults(self, search, method, paramA, paramB, ...)
 	-- Don't attach tooltip results multiple times
 	if not self.HasATTSearchResults then
-		-- print("build tooltip search",self.HasATTSearchResults,search)
+		-- app.PrintDebug("build tooltip search",self.HasATTSearchResults,search)
 		-- tooltips can skip to level 1
 		app.SetSkipPurchases(1);
 		AttachTooltipRawSearchResults(self, GetCachedSearchResults(search, method, paramA, paramB, ...));
 		app.SetSkipPurchases(0);
-	-- else print("skip tooltip search",self.HasATTSearchResults,search)
+	-- else app.PrintDebug("skip tooltip search",self.HasATTSearchResults,search)
 	end
 end
 
@@ -7006,13 +7036,13 @@ end)();
 (function()
 local cache = app.CreateCache("achievementID");
 local function CacheInfo(t, field)
-	local t, id = cache.GetCached(t);
+	local _t, id = cache.GetCached(t);
 	--local IDNumber, Name, Points, Completed, Month, Day, Year, Description, Flags, Image, RewardText, isGuildAch = GetAchievementInfo(t.achievementID);
 	local _, name, _, _, _, _, _, _, _, icon = GetAchievementInfo(id);
-	t.link = GetAchievementLink(id);
-	t.name = name or ("Achievement #"..id);
-	t.icon = icon or QUESTION_MARK_ICON;
-	if field then return t[field]; end
+	_t.link = GetAchievementLink(id);
+	_t.name = name or ("Achievement #"..id);
+	_t.icon = icon or QUESTION_MARK_ICON;
+	if field then return _t[field]; end
 end
 app.AchievementFilter = 4;
 local fields = {
@@ -7447,18 +7477,18 @@ local C_PetJournal_GetPetInfoBySpeciesID = C_PetJournal.GetPetInfoBySpeciesID;
 
 local cache = app.CreateCache("speciesID");
 local function CacheInfo(t, field)
-	local t, id = cache.GetCached(t);
+	local _t, id = cache.GetCached(t);
 	-- speciesName, speciesIcon, petType, companionID, tooltipSource, tooltipDescription, isWild,
 	-- canBattle, isTradeable, isUnique, obtainable, creatureDisplayID = C_PetJournal.GetPetInfoBySpeciesID(speciesID)
 	local speciesName, speciesIcon, petType, _, _, tooltipDescription, _, _, _, _, _, creatureDisplayID = C_PetJournal_GetPetInfoBySpeciesID(id);
 	if speciesName then
-		t.name = speciesName;
-		t.icon = speciesIcon;
-		t.petTypeID = petType;
-		t.lore = tooltipDescription;
-		t.displayID = creatureDisplayID;
-		t.text = "|cff0070dd"..speciesName.."|r";
-		if field then return t[field]; end
+		_t.name = speciesName;
+		_t.icon = speciesIcon;
+		_t.petTypeID = petType;
+		_t.lore = tooltipDescription;
+		_t.displayID = creatureDisplayID;
+		_t.text = "|cff0070dd"..speciesName.."|r";
+		if field then return _t[field]; end
 	end
 end
 local function default_link(t)
@@ -8013,13 +8043,13 @@ end)();
 (function()
 local cache = app.CreateCache("encounterID");
 local function CacheInfo(t, field)
-	local t, id = cache.GetCached(t);
+	local _t, id = cache.GetCached(t);
 	local name, lore, _, _, link = EJ_GetEncounterInfo(id);
-	t.name = name;
-	t.lore = lore;
-	t.link = link;
-	t.displayID = select(4, EJ_GetCreatureInfo(1, id));
-	if field then return t[field]; end
+	_t.name = name;
+	_t.lore = lore;
+	_t.link = link;
+	_t.displayID = select(4, EJ_GetCreatureInfo(1, id));
+	if field then return _t[field]; end
 end
 local function default_displayInfo(t)
 	local displayInfos, id, displayInfo = {}, t.encounterID;
@@ -8223,7 +8253,7 @@ local function CacheInfo(t, field)
 			end
 		 end
 	end
-	if field then return t[field]; end
+	if field then return _t[field]; end
 end
 local fields = {
 	["key"] = function(t)
@@ -8615,32 +8645,47 @@ end
 end)();
 
 -- Follower Lib
--- TODO: use caching instead of 'info'
 (function()
 local C_Garrison_GetFollowerInfo = C_Garrison.GetFollowerInfo;
 local C_Garrison_GetFollowerLink = C_Garrison.GetFollowerLink;
 local C_Garrison_GetFollowerLinkByID = C_Garrison.GetFollowerLinkByID;
 local C_Garrison_IsFollowerCollected = C_Garrison.IsFollowerCollected;
+
+local cache = app.CreateCache("followerID");
+local function CacheInfo(t, field)
+	local _t, id = cache.GetCached(t);
+	local info = C_Garrison_GetFollowerInfo(id);
+	if info then
+		_t.name = info.name;
+		_t.text = info.name;
+		_t.lvl = info.level;
+		_t.icon = info.portraitIconID;
+		_t.title = info.className;
+		_t.displayID = info.displayIDs and info.displayIDs[1] and info.displayIDs[1].id;
+	end
+	if field then return _t[field]; end
+end
 local fields = {
 	["key"] = function(t)
 		return "followerID";
 	end,
-	["info"] = function(t)
-		local info = C_Garrison_GetFollowerInfo(t.followerID);
-		if info then
-			rawset(t, "info", info);
-			return info;
-		end
-		return {};
-	end,
 	["text"] = function(t)
-		return t.info.name;
+		return cache.GetCachedField(t, "text", CacheInfo);
 	end,
 	["name"] = function(t)
-		return t.info.name;
+		return cache.GetCachedField(t, "name", CacheInfo);
 	end,
 	["icon"] = function(t)
-		return t.info.portraitIconID;
+		return cache.GetCachedField(t, "icon", CacheInfo);
+	end,
+	["lvl"] = function(t)
+		return cache.GetCachedField(t, "lvl", CacheInfo);
+	end,
+	["title"] = function(t)
+		return cache.GetCachedField(t, "title", CacheInfo);
+	end,
+	["displayID"] = function(t)
+		return cache.GetCachedField(t, "displayID", CacheInfo);
 	end,
 	["link"] = function(t)
 		if app.CurrentCharacter.Followers[t.followerID] then
@@ -8648,6 +8693,9 @@ local fields = {
 		else
 			return C_Garrison_GetFollowerLinkByID(t.followerID);
 		end
+	end,
+	["description"] = function(t)
+		return L["FOLLOWERS_COLLECTION_DESC"];
 	end,
 	["collectible"] = function(t)
 		return app.CollectibleFollowers;
@@ -8661,19 +8709,6 @@ local fields = {
 		end
 		if app.AccountWideFollowers and ATTAccountWideData.Followers[t.followerID] then return 2; end
 	end,
-	["description"] = function(t)
-		return L["FOLLOWERS_COLLECTION_DESC"];
-	end,
-	["lvl"] = function(t)
-		return t.info.level;
-	end,
-	["title"] = function(t)
-		return t.info.className;
-	end,
-	["displayID"] = function(t)
-		local displayIDs = t.info.displayIDs;
-		return displayIDs and #displayIDs > 0 and displayIDs[1].id;
-	end,
 };
 app.BaseFollower = app.BaseObjectFields(fields, "BaseFollower");
 app.CreateFollower = function(id, t)
@@ -8682,20 +8717,52 @@ end
 end)();
 
 -- Garrison Lib
--- TODO: use caching
 (function()
 local C_Garrison_GetBuildingInfo = C_Garrison.GetBuildingInfo;
 local C_Garrison_GetMissionName = C_Garrison.GetMissionName;
 local C_Garrison_GetTalentInfo = C_Garrison.GetTalentInfo;
+
+local cache = app.CreateCache("buildingID");
+local function CacheInfo(t, field)
+	local _t, id = cache.GetCached(t);
+	local _, name, _, icon, lore, _, _, _, _, _, uncollected = C_Garrison_GetBuildingInfo(id);
+	_t.name = name;
+	_t.text = name;
+	_t.lore = lore;
+	_t.icon = _t.icon or icon;
+	if not uncollected then
+		app.CurrentCharacter.Buildings[t.buildingID] = 1;
+		ATTAccountWideData.Buildings[t.buildingID] = 1;
+	end
+	-- item on a building can replace fields
+	if t.itemID then
+		local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
+		if link then
+			_t.icon = icon or _t.icon;
+			_t.link = link;
+		end
+	end
+	if field then return _t[field]; end
+end
+
 local fields = {
 	["key"] = function(t)
 		return "buildingID";
 	end,
 	["text"] = function(t)
-		return t.link or select(2, C_Garrison_GetBuildingInfo(t.buildingID));
+		return t.link or cache.GetCachedField(t, "text", CacheInfo);
+	end,
+	["link"] = function(t)
+		return cache.GetCachedField(t, "link", CacheInfo);
 	end,
 	["name"] = function(t)
-		return select(2, C_Garrison_GetBuildingInfo(t.buildingID));
+		return cache.GetCachedField(t, "name", CacheInfo);
+	end,
+	["lore"] = function(t)
+		return cache.GetCachedField(t, "lore", CacheInfo);
+	end,
+	["icon"] = function(t)
+		return cache.GetCachedField(t, "icon", CacheInfo);
 	end,
 	["filterID"] = function(t)
 		return t.itemID and 200;
@@ -8704,37 +8771,14 @@ local fields = {
 		return t.itemID and app.CollectibleRecipes;
 	end,
 	["collected"] = function(t)
-		if app.CurrentCharacter.Buildings[t.buildingID] then return 1; end
-		if not select(11, C_Garrison_GetBuildingInfo(t.buildingID)) then
-			app.CurrentCharacter.Buildings[t.buildingID] = 1;
-			ATTAccountWideData.Buildings[t.buildingID] = 1;
+		local id = t.buildingID;
+		if app.CurrentCharacter.Buildings[id] then return 1; end
+		if not select(11, C_Garrison_GetBuildingInfo(id)) then
+			app.CurrentCharacter.Buildings[id] = 1;
+			ATTAccountWideData.Buildings[id] = 1;
 			return 1;
 		end
-		if app.AccountWideRecipes and ATTAccountWideData.Buildings[t.buildingID] then return 2; end
-	end,
-	["lore"] = function(t)
-		return select(5, C_Garrison_GetBuildingInfo(t.buildingID));
-	end,
-	["icon"] = function(t)
-		if t.itemID then
-			local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
-			if link then
-				rawset(t, "icon", icon);
-				rawset(t, "link", link);
-				return icon;
-			end
-		end
-		return select(4, C_Garrison_GetBuildingInfo(t.buildingID));
-	end,
-	["link"] = function(t)
-		if t.itemID then
-			local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
-			if link then
-				rawset(t, "icon", icon);
-				rawset(t, "link", link);
-				return link;
-			end
-		end
+		if app.AccountWideRecipes and ATTAccountWideData.Buildings[id] then return 2; end
 	end,
 };
 app.BaseGarrisonBuilding = app.BaseObjectFields(fields, "BaseGarrisonBuilding");
@@ -9149,7 +9193,7 @@ local function CacheInfo(t, field)
 	_t.lore = lore;
 	_t.icon = icon;
 	_t.link = link;
-	if field then return t[field]; end
+	if field then return _t[field]; end
 end
 local fields = {
 	["key"] = function(t)
@@ -10345,28 +10389,28 @@ end });
 local cache = app.CreateCache("spellID");
 local function CacheInfo(t, field)
 	local itemID = t.itemID;
-	local t, id = cache.GetCached(t);
+	local _t, id = cache.GetCached(t);
 	local mountID = SpellIDToMountID[id];
 	if mountID then
 		local displayID, lore = C_MountJournal_GetMountInfoExtraByID(mountID);
-		t.displayID = displayID;
-		t.lore = lore;
-		t.name = C_MountJournal_GetMountInfoByID(mountID);
-		t.mountID = mountID;
+		_t.displayID = displayID;
+		_t.lore = lore;
+		_t.name = C_MountJournal_GetMountInfoByID(mountID);
+		_t.mountID = mountID;
 	end
 	local name, _, icon = GetSpellInfo(id);
-	t.text = "|cffb19cd9"..name.."|r";
-	t.icon = icon;
+	_t.text = "|cffb19cd9"..name.."|r";
+	_t.icon = icon;
 	if itemID then
 		local itemName = select(2, GetItemInfo(itemID));
 		-- item info might not be available on first request, so don't cache the data
 		if itemName then
-			t.link = itemName;
+			_t.link = itemName;
 		end
 	else
-		t.link = GetSpellLink(id);
+		_t.link = GetSpellLink(id);
 	end
-	if field then return t[field]; end
+	if field then return _t[field]; end
 end
 local mountFields = {
 	["key"] = function(t)
@@ -10387,12 +10431,81 @@ local mountFields = {
 	["collectible"] = function(t)
 		return app.CollectibleMounts;
 	end,
+	["costCollectibles"] = function(t)
+		return cache.GetCachedField(t, "costCollectibles");
+	end,
+	["collectibleAsCost"] = function(t)
+		local id = t.itemID;
+		if id then
+			if not t.costCollectibles then
+				-- search by plain itemID only
+				local results = app.SearchForField("itemIDAsCost", id);
+				app.PrintDebug("collectibleAsCost",id,results and #results)
+				if results and #results > 0 then
+					-- setup the costCollectibles initially
+					app.PrintDebug("> costs",t.hash,t.modItemID)
+					local costCollectibles, collectible = {};
+					cache.SetCachedField(t, "costCollectibles", costCollectibles);
+					local canBeCollectible = app.PreCheckCollectible(t);
+					for _,ref in pairs(results) do
+						-- different itemID
+						if ref.itemID ~= id and
+							-- is not a parent of the cost group itself
+							not GetRelativeField(t, "parent", ref)
+							then
+							-- track this item as a cost collectible
+							tinsert(costCollectibles, ref);
+							if canBeCollectible then
+								collectible = collectible or app.CheckCollectible(ref);
+							end
+						end
+					end
+					app.PrintDebug("< costs")
+					-- This instance of the Thing (t) is not actually collectible for this character if it is under a saved, non-repeatable parent
+					if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved and not t.parent.repeatable then return false; end
+					return collectible;
+				else
+					cache.SetCachedField(t, "costCollectibles", app.EmptyTable);
+				end
+			else
+				-- This instance of the Thing (t) is not actually collectible for this character if it is under a saved, non-repeatable parent
+				if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved and not t.parent.repeatable then return; end
+				-- Make sure this thing can actually be collectible
+				if not app.PreCheckCollectible(t) then return; end
+				-- Use the common collectibility check logic
+				local collectible;
+				for _,ref in pairs(t.costCollectibles) do
+					collectible = app.CheckCollectible(ref);
+					if collectible then return true; end
+				end
+			end
+		end
+	end,
 	["collected"] = function(t)
 		if ATTAccountWideData.Spells[t.spellID] then return 1; end
 		if IsSpellKnown(t.spellID) or (t.questID and IsQuestFlaggedCompleted(t.questID)) then
 			ATTAccountWideData.Spells[t.spellID] = 1;
 			return 1;
 		end
+	end,
+	["collectedAsCost"] = function(t)
+		local collectibles = t.costCollectibles;
+		if not collectibles then return; end
+		-- Make sure this thing can actually be collectible
+		if not app.PreCheckCollectible(t) then return; end
+		local collectible, collected;
+		for _,ref in pairs(collectibles) do
+			-- Use the common collectibility check logic
+			collectible, collected = app.CheckCollectible(ref);
+			if collectible and not collected then return false; end
+		end
+		return true;
+	end,
+	["costTotal"] = function(t)
+		return t.collectibleAsCost and 1 or 0;
+	end,
+	["costProgress"] = function(t)
+		return t.collectedAsCost and 1 or 0;
 	end,
 	["b"] = function(t)
 		return (t.parent and t.parent.b) or 1;
@@ -10409,23 +10522,14 @@ local mountFields = {
 	["name"] = function(t)
 		return cache.GetCachedField(t, "name", CacheInfo);
 	end,
-	-- ["modItemIDForItem"] = function(t)
-	-- 	return t.itemID;	-- mounts ignore modID even if applied in source
-	-- end,
 	["tsm"] = function(t)
 		if t.itemID then return string.format("i:%d", t.itemID); end
 		if t.parent and t.parent.itemID then return string.format("i:%d", t.parent.itemID); end
 	end,
-	-- ["linkForItem"] = function(t)
-	-- 	return select(2, GetItemInfo(t.itemID)) or select(1, GetSpellLink(t.spellID));
-	-- end,
 };
 app.BaseMount = app.BaseObjectFields(mountFields, "BaseMount");
 
 local fields = RawCloneData(mountFields);
--- fields.modItemID = mountFields.modItemIDForItem;
--- fields.link = mountFields.linkForItem;
--- fields.tsm = mountFields.tsmForItem;
 app.BaseMountWithItemID = app.BaseObjectFields(fields, "BaseMountWithItemID");
 app.CreateMount = function(id, t)
 	-- if t and rawget(t, "itemID") then
@@ -10907,7 +11011,7 @@ end)();
 
 -- Profession Lib
 (function()
-app.SkillIDToSpellID = setmetatable({
+app.SkillIDToSpellID = {
 	[171] = 2259,	-- Alchemy
 	[794] = 158762,	-- Arch
 	[261] = 5149,	-- Beast Training
@@ -10948,7 +11052,7 @@ app.SkillIDToSpellID = setmetatable({
 	[125586] = 125586,	-- Way of the Pot
 	[125587] = 125587,	-- Way of the Steamer
 	[125584] = 125584,	-- Way of the Wok
-}, {__index = function(t,k) end})
+};
 app.SpellIDToSkillID = {};
 for skillID,spellID in pairs(app.SkillIDToSpellID) do
 	app.SpellIDToSkillID[spellID] = skillID;
@@ -12435,6 +12539,9 @@ function app.FilterItemClass_SeasonalItem(item)
 	end
 	return true;
 end
+function app.ItemIsInGame(item)
+	return not item.u or item.u > 2;
+end
 function app.FilterItemClass_UnobtainableItem(item)
 	-- specifically match on false for being disabled as a filter
 	if item.u and app.Settings:GetValue("Unobtainable", item.u) == false then
@@ -13048,6 +13155,8 @@ function app.CompletionistItemCollectionHelper(sourceID, oldState)
 				local name, link = GetItemInfo(sourceInfo.itemID);
 				print(format(L["ITEM_ID_ADDED_MISSING"], link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID));
 			end
+			Callback(app.PlayFanfare);
+			Callback(app.TakeScreenShot);
 		end
 
 		-- Update the groups for the sourceID results
@@ -13071,23 +13180,29 @@ function app.UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
 			end
 		end
 
-		-- Show the collection message.
+		-- only consider new SourceID as unlocking all shared appearances, otherwise it only unlocks additional appearances
+		-- (i.e. current item was collected in Main Only due to alternate piece, but then learning the raw item itself or something... idk)
+		local newAppearancesLearned = oldState == 0 and #unlockedSourceIDs or (#unlockedSourceIDs - 1);
+
+		-- Show the collection message if learning this Source actually contributed as a new Unique appearance
 		if app.IsReady and app.Settings:GetTooltipSetting("Report:Collected") then
 			-- Search for the item that actually was unlocked.
 			local searchResults = SearchForField("s", sourceID);
 			if searchResults and #searchResults > 0 then
 				local firstMatch = searchResults[1];
-				print(format(L[#unlockedSourceIDs > 0 and "ITEM_ID_ADDED_SHARED" or "ITEM_ID_ADDED"],
-					firstMatch.text or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), firstMatch.itemID, #unlockedSourceIDs));
+				print(format(L[newAppearancesLearned > 0 and "ITEM_ID_ADDED_SHARED" or "ITEM_ID_ADDED"],
+					firstMatch.text or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), firstMatch.itemID, newAppearancesLearned));
 			else
 				-- Use the Blizzard API... We don't have this item in the addon.
 				-- NOTE: The itemlink that gets passed is BASE ITEM LINK, not the full item link.
 				-- So this may show green items where an epic was obtained. (particularly with Legion drops)
 				-- This is okay since items of this type share their appearance regardless of the power of the item.
 				local name, link = GetItemInfo(sourceInfo.itemID);
-				print(format(L[#unlockedSourceIDs > 0 and "ITEM_ID_ADDED_SHARED_MISSING" or "ITEM_ID_ADDED_MISSING"],
-					link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID, #unlockedSourceIDs));
+				print(format(L[newAppearancesLearned > 0 and "ITEM_ID_ADDED_SHARED_MISSING" or "ITEM_ID_ADDED_MISSING"],
+					link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID, newAppearancesLearned));
 			end
+			Callback(app.PlayFanfare);
+			Callback(app.TakeScreenShot);
 		end
 
 		-- Update the groups for the sourceIDs
@@ -14995,7 +15110,7 @@ RowOnEnter = function (self)
 		if reference.achievementID then
 			if reference.criteriaID then
 				GameTooltip:AddDoubleLine(L["CRITERIA_FOR"], GetAchievementLink(reference.achievementID));
-				AttachTooltipSearchResults(GameTooltip, "achievementID:" .. reference.achievementID .. ":" .. reference.criteriaID, SearchForField, "achievementID", reference.achievementID, reference.criteriaID);
+				-- AttachTooltipSearchResults(GameTooltip, "achievementID:" .. reference.achievementID .. ":" .. reference.criteriaID, SearchForField, "achievementID", reference.achievementID, reference.criteriaID);
 			else
 				AttachTooltipSearchResults(GameTooltip, "achievementID:" .. reference.achievementID, SearchForField, "achievementID", reference.achievementID);
 			end
@@ -15034,6 +15149,7 @@ RowOnEnter = function (self)
 			if reference.sourceIgnored then
 				GameTooltip:AddLine(L["DOES_NOT_CONTRIBUTE_TO_PROGRESS"], 1, 1, 1, 1, true);
 			end
+		-- else app.PrintDebug("skipped common tooltip info due to search results")
 		end
 
 		-- Further conditional texts that can be displayed
@@ -15379,24 +15495,25 @@ RowOnEnter = function (self)
 			end
 		end
 
-		-- ROW DEBUGGING
-		-- GameTooltip:AddDoubleLine("Self",tostring(reference));
-		-- GameTooltip:AddLine("-- Ref Fields:");
-		-- for key,val in pairs(reference) do
-		-- 	GameTooltip:AddDoubleLine(key,tostring(val));
-		-- end
-		-- local fields = {
-		-- 	"__type",
-		-- 	"name",
-		-- 	"key",
-		-- 	"hash",
-		-- };
-		-- GameTooltip:AddLine("-- Extra Fields:");
-		-- for _,key in ipairs(fields) do
-		-- 	GameTooltip:AddDoubleLine(key,tostring(reference[key]));
-		-- end
-		-- GameTooltip:AddDoubleLine("Row Indent",tostring(CalculateRowIndent(reference)));
-		-- END DEBUGGING
+		--[[ ROW DEBUGGING ]
+		GameTooltip:AddDoubleLine("Self",tostring(reference));
+		GameTooltip:AddLine("-- Ref Fields:");
+		for key,val in pairs(reference) do
+			GameTooltip:AddDoubleLine(key,tostring(val));
+		end
+		local fields = {
+			"__type",
+			"name",
+			"key",
+			"hash",
+		};
+		GameTooltip:AddLine("-- Extra Fields:");
+		for _,key in ipairs(fields) do
+			GameTooltip:AddDoubleLine(key,tostring(reference[key]));
+		end
+		GameTooltip:AddDoubleLine("sortProgress",app.GetGroupSortValue(reference));
+		GameTooltip:AddDoubleLine("Row Indent",tostring(CalculateRowIndent(reference)));
+		-- END DEBUGGING]]
 
 		-- print("OnRowEnter-Show");
 		GameTooltip.MiscFieldsComplete = true;
@@ -17415,6 +17532,9 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 								elseif row.expanded then
 									ExpandGroupsRecursively(row, false, true);
 								end
+							-- Zone Drops should also be expanded within instances
+							elseif row.headerID == 0 then
+								if not row.expanded then ExpandGroupsRecursively(row, true, true); expanded = true; end
 							end
 						end
 					end
@@ -21924,8 +22044,6 @@ app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
 		if oldState ~= 1 then
 			ATTAccountWideData.Sources[sourceID] = 1;
 			app.ActiveItemCollectionHelper(sourceID, oldState);
-			Callback(app.PlayFanfare);
-			Callback(app.TakeScreenShot);
 			wipe(searchCache);
 			SendSocialMessage("S\t" .. sourceID .. "\t" .. oldState .. "\t1");
 		end

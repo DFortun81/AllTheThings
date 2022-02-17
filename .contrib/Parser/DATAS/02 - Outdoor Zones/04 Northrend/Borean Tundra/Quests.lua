@@ -1112,11 +1112,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 11716,	-- The Wondrous Bloodspore
 				}),
-				q(11945, {	-- Preparing for the Worst
-					["provider"] = { "n", 26213 },	-- Utaik
-					["coord"] = { 63.9, 45.7, BOREAN_TUNDRA },
-					["isDaily"] = true,
-				}),
 				q(11587, {	-- Prison Break
 					["provider"] = { "n", 25262 },	-- Librarian Donathan
 					["coord"] = { 45.2, 33.3, BOREAN_TUNDRA },
@@ -1650,12 +1645,6 @@ _.Zones =
 					["coord"] = { 54.6, 35.7, BOREAN_TUNDRA },
 					["provider"] = { "o", 187565 },	-- Elder Atkanok
 					["sourceQuest"] = 11605,	-- The Honored Ancestors
-				}),
-				q(12794, {	-- The Magical Kingdom of Dalaran
-					["coord"] = { 58.6, 68.2, BOREAN_TUNDRA },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 29158 },	-- Magister Dath'omere
-					["isBreadcrumb"] = true,
 				}),
 				q(11708, {	-- The Mechagnomes
 					["coord"] = { 56.9, 18.7, BOREAN_TUNDRA },

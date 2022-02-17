@@ -5,81 +5,213 @@
 root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 	achcat(ACHIEVEMENT_CATEGORY_SHADOWLANDS_EXP, {
 		ach(14895, {	-- 'Ghast Five (5 of these criteria)
-			ach(14894),		-- To 'Ghast, Two Curios (2 of these criteria)
-			crit(1),		-- Vessel of Unfortunate Spirits
-			crit(2),		-- Extradimensional Pockets
-			crit(3),		-- Encased Riftwalker Essence
-			crit(4),		-- Animated Levitating Chain
-			crit(5),		-- Animaflow Stabilizer
-			crit(6),		-- Soul-Stabilizing Salve
-			crit(7),		-- Ritual Prism of Fortune
-			crit(8),		-- Bangle of Seniority
-			crit(9),		-- Talisman of Destined Defiance
-			crit(10),		-- Rank Insignia: Acquisitionist
-			crit(11),		-- Possibility Matrix
-			crit(12),		-- Loupe of Unusual Charm
+			["maps"] = { THE_MAW },
+			["g"] = {
+				ach(14894),		-- To 'Ghast, Two Curios (2 of these criteria)
+				crit(1, {		-- Vessel of Unfortunate Spirits
+					["provider"] = { "i", 184620 },
+				}),
+				crit(2, {		-- Extradimensional Pockets
+					["provider"] = { "i", 184615 },
+				}),
+				crit(3, {		-- Encased Riftwalker Essence
+					["provider"] = { "i", 184613 },
+				}),
+				crit(4, {		-- Animated Levitating Chain
+					["provider"] = { "i", 184653 },
+				}),
+				crit(5, {		-- Animaflow Stabilizer
+					["provider"] = { "i", 180949 },
+				}),
+				crit(6, {		-- Soul-Stabilizing Salve
+					["provider"] = { "i", 184588 },	-- TODO: confirm between crit 6 & 9
+				}),
+				crit(7, {		-- Ritual Prism of Fortune
+					["provider"] = { "i", 184621 },
+				}),
+				crit(8, {		-- Bangle of Seniority
+					["provider"] = { "i", 184617 },
+				}),
+				crit(9, {		-- Talisman of Destined Defiance
+					["provider"] = { "i", 184605 },	-- TODO: confirm between crit 6 & 9
+				}),
+				crit(10, {	-- Rank Insignia: Acquisitionist
+					["provider"] = { "i", 184618 },
+				}),
+				crit(11, {	-- Possibility Matrix
+					["provider"] = { "i", 180952,  },
+				}),
+				crit(12, {	-- Loupe of Unusual Charm
+					["provider"] = { "i", 184619 },
+				}),
+				crit(13, {	-- Broker Traversal Enhancer
+					["provider"] = { "i", 184901 },
+				}),
+			},
 		}),
 		ach(14774, {	-- Ardenweald Gourmand
-			crit(1),		-- Glittersnap Snowpeas
-			crit(2),		-- Glazed Glowberries
-			crit(3),		-- Candied Brightbark
-			crit(4),		-- Torchberry Bundle
-			crit(5),		-- Grilled Slumbershrooms
-			crit(6),		-- Charred Runeflank
-			crit(7),		-- Poached Strider Egg
-			crit(8),		-- Flask of Ardendew
-			crit(9),		-- Mulled Faewine
-			crit(10),		-- Wintermelon Brandy
-			crit(11),		-- Honeyplum Pie
-			crit(12),		-- Sylberry Snowcake
-			crit(13),		-- Ripe Wintermelon
-			crit(14),		-- Wild Hunter's Stew
-			crit(15),		-- Steamed Gorm Tail
-			crit(16),		-- Midnight Starpepper
+			["description"] = "All food is sold by Tanor in Ardenweald at |cFFFFFFFF65.0, 19.6|r.",
+			["coord"] = { 65.0, 19.6, ARDENWEALD },
+			["crs"] = { 164725 },	-- Tanor <Food & Drink>
+			["g"] = {
+				crit(1,  {["provider"] = { "i", 178228 }}),	-- Glittersnap Snowpeas
+				crit(2,  {["provider"] = { "i", 173761 }}),	-- Glazed Glowberries
+				crit(3,  {["provider"] = { "i", 173759 }}),	-- Candied Brightbark
+				crit(4,  {["provider"] = { "i", 178252 }}),	-- Torchberry Bundle
+				crit(5,  {["provider"] = { "i", 178216 }}),	-- Grilled Slumbershrooms
+				crit(6,  {["provider"] = { "i", 178226 }}),	-- Charred Runeflank
+				crit(7,  {["provider"] = { "i", 178223 }}),	-- Poached Strider Egg
+				crit(8,  {["provider"] = { "i", 173762 }}),	-- Flask of Ardendew
+				crit(9,  {["provider"] = { "i", 178219 }}),	-- Mulled Faewine
+				crit(10, {["provider"] = { "i", 178218 }}),	-- Wintermelon Brandy
+				crit(11, {["provider"] = { "i", 178222 }}),	-- Honeyplum Pie
+				crit(12, {["provider"] = { "i", 173760 }}),	-- Sylberry Snowcake
+				crit(13, {["provider"] = { "i", 178247 }}),	-- Ripe Wintermelon
+				crit(14, {["provider"] = { "i", 178225 }}),	-- Wild Hunter's Stew
+				crit(15, {["provider"] = { "i", 178224 }}),	-- Steamed Gorm Tail
+				crit(16, {["provider"] = { "i", 178227 }}),	-- Midnight Starpepper
+			},
 		}),
 		ach(14353, {	-- Ardenweald's a Stage
-			crit(1),		-- Xavius
-			crit(2),		-- Gul'dan
-			crit(3),		-- Kil'jaeden
-			crit(4),		-- Argus, The Unmaker
-			crit(5),		-- Jaina
-			crit(6),		-- Azshara
-			crit(7),		-- N'Zoth
+			["description"] = "You have to be in the Night Fae covenant to personally summon mobs, but anyone can kill and loot the mobs if they are summoned by someone else.  Only one mob is summonable per day.",
+			["coord"] = { 41.5, 44.8, ARDENWEALD },
+			["crs"] = { 171743 },	-- Dapperdew
+			["g"] = {
+				crit(1, {	-- Xavius
+					["_npcs"] = { 166146 },
+				}),
+				crit(2, {	-- Gul'dan
+					["_npcs"] = { 166140 },
+				}),
+				crit(3, {	-- Kil'jaeden
+					["_npcs"] = { 166139 },
+				}),
+				crit(4, {	-- Argus, The Unmaker
+					["_npcs"] = { 166138 },
+				}),
+				crit(5, {	-- Jaina
+					["_npcs"] = { 166142 },
+				}),
+				crit(6, {	-- Azshara
+					["_npcs"] = { 166135 },
+				}),
+				crit(7, {	-- N'Zoth
+					["_npcs"] = { 166145 },
+				}),
+			},
 		}),
-		ach(14769),		-- Bat!
-		ach(14272),		-- Best Bud With Benefits
+		ach(14769, {	-- Bat!
+			["crs"] = { 161015 },	-- Dredbat Statue
+			["coords"] = {	-- there doesn't seem to be a way to track individual bat statue collection, no questID or anything
+				{ 21.7, 50.2, REVENDRETH },
+				{ 25.1, 37.5, REVENDRETH },
+				{ 31.9, 59.2, REVENDRETH },
+				{ 35.0, 35.0, REVENDRETH },
+				{ 56.2, 62.2, REVENDRETH },
+				{ 57.3, 61.3, REVENDRETH },
+				{ 60.4, 61.1, REVENDRETH },
+				{ 64.0, 62.0, REVENDRETH },
+			},
+		}),
+		ach(14272, {	-- Best Bud With Benefits
+			["sourceQuests"] = { 58327 },	-- Snacks for Stonehead
+			["maps"] = { REVENDRETH },
+		}),
 		ach(14744, {	-- Better to be Lucky than Dead
-			ach(14743),		-- Deadly Serious
-			crit(1),		-- Adjutant Dekaris
-			crit(2),		-- Apholeias, Herald of Loss
-			crit(3),		-- Borr-Geth
-			crit(4),		-- Conjured Death
-			crit(5),		-- Darithis the Bleak
-			crit(6),		-- Darklord Taraxis
-			crit(7),		-- Dolos
-			crit(8),		-- Eketra
-			crit(9),		-- Ekphoras, Herald of Grief
-			crit(10),		-- Eternas the Tormentor
-			crit(11),		-- Exos, Herald of Domination
-			crit(12),		-- Morguliax
-			crit(13),		-- Nascent Thunderer
-			crit(14),		-- Obolos
-			crit(15),		-- Orophea
-			crit(16),		-- Shadeweaver Zeris
-			crit(17),		-- Soulforger Rhovus
-			crit(18),		-- Talaporas, Herald of Pain
-			crit(19),		-- Thanassos
-			crit(20),		-- Yero the Skittish
-			crit(21),		-- Ikras the Devourer
+			["maps"] = { THE_MAW },
+			["g"] = {
+				ach(14743),		-- Deadly Serious
+				crit(1, {	-- Adjutant Dekaris
+					["_npcs"] = { 157964 },
+				}),
+				crit(2, {	-- Apholeias, Herald of Loss
+					["_npcs"] = { 170301 },
+				}),
+				crit(3, {	-- Borr-Geth
+					["_npcs"] = { 157833 },
+				}),
+				crit(4, {	-- Conjured Death
+					["_npcs"] = { 171317 },
+				}),
+				crit(5, {	-- Darithis the Bleak
+					["_npcs"] = { 160770 },
+				}),
+				crit(6, {	-- Darklord Taraxis
+					["_npcs"] = { 158025 },
+				}),
+				crit(7, {	-- Dolos
+					["_npcs"] = { 170711 },
+				}),
+				crit(8, {	-- Eketra
+					["_npcs"] = { 170774 },
+				}),
+				crit(9, {	-- Ekphoras, Herald of Grief
+					["_npcs"] = { 169827 },
+				}),
+				crit(10, {	-- Eternas the Tormentor
+					["_npcs"] = { 154330 },
+				}),
+				crit(11, {	-- Exos, Herald of Domination
+					["_npcs"] = { 170303 },
+				}),
+				crit(12, {	-- Morguliax
+					["_npcs"] = { 162849 },
+				}),
+				crit(13, {	-- Nascent Thunderer
+					["_npcs"] = { 158278 },
+				}),
+				crit(14, {	-- Obolos
+					["_npcs"] = { 164064 },
+				}),
+				crit(15, {	-- Orophea
+					["_npcs"] = { 172577 },
+				}),
+				crit(16, {	-- Shadeweaver Zeris
+					["_npcs"] = { 170634 },
+				}),
+				crit(17, {	-- Soulforger Rhovus
+					["_npcs"] = { 166398 },
+				}),
+				crit(18, {	-- Talaporas, Herald of Pain
+					["_npcs"] = { 170302 },
+				}),
+				crit(19, {	-- Thanassos
+					["_npcs"] = { 170731 },
+				}),
+				crit(20, {	-- Yero the Skittish
+					["_npcs"] = { 172862 },
+				}),
+				crit(21, {	-- Ikras the Devourer
+					["_npcs"] = { 175012 },
+				}),
+			},
 		}),
 		ach(14802, {	-- Bloodsport
-			crit(1),		-- Azmogal
-			crit(2),		-- Unbreaklable Urtz
-			crit(3),		-- Xantuth the Blighted
-			crit(4),		-- Mistress Dyrax
-			crit(5),		-- Devmorta
-			crit(6),		-- Ti'or
-			crit(7),		-- Sabriel the Bonecleaver
+			--	TODO: does this require being on/having completed The Ladder or can you get credit before 'unlocking' the arena?
+			["maps"] = { MALDRAXXUS },
+			["g"] = {
+				crit(1, {	-- Azmogal
+					["_npcs"] = { 162873 },
+				}),
+				crit(2, {	-- Unbreaklable Urtz
+					["_npcs"] = { 162853 },
+				}),
+				crit(3, {	-- Xantuth the Blighted
+					["_npcs"] = { 162872 },
+				}),
+				crit(4, {	-- Mistress Dyrax
+					["_npcs"] = { 162880 },
+				}),
+				crit(5, {	-- Devmorta
+					["_npcs"] = { 162875 },
+				}),
+				crit(6, {	-- Ti'or
+					["_npcs"] = { 162874 },
+				}),
+				crit(7, {	-- Sabriel the Bonecleaver
+					["_npcs"] = { 168147 },
+				}),
+			},
 		}),
 		ach(14767, {	-- Count Your Blessings
 			crit(1),		-- Purified Blessing of Grace
@@ -594,16 +726,53 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(15),	-- Golmak the Monstrosity slain
 		}),
 		ach(14634, {	-- Nine Afterlives
-			i(184449),		-- Jiggles's Favorite Toy
-			crit(1),		-- Hairball
-			crit(2),		-- Snots
-			crit(3),		-- Pus-In-Boots
-			crit(4),		-- Envy
-			crit(5),		-- Mr. Jigglesworth
-			crit(6),		-- Lime
-			crit(7),		-- Mayhem
-			crit(8),		-- Moldstopheles
-			crit(9),		-- Meowmalade
+			["g"] = {
+				i(184449),		-- Jiggles's Favorite Toy
+				crit(1, {	-- Hairball
+					["description"] = "Close to the top-left corner of the final boss's map.  On the left side of the slime pool, kill a green ooze and then turn left.  Hairball is in a tiny alcove filled with fish skeletons and candles.",
+					["crs"] = { 174195 },	-- Hairball
+					["maps"] = {
+						1674,	-- Plaguefall
+						1697,	-- Plaguefall
+					},
+				}),
+				crit(2, {	-- Snots
+					["coord"] = { 31.9, 57.0, MALDRAXXUS },
+					["crs"] = { 174221 },	-- Snots
+				}),
+				crit(3, {	-- Pus-In-Boots
+					["description"] = "Under the bridge.",
+					["coord"] = { 50.2, 60.2, MALDRAXXUS },
+					["crs"] = { 174223 },	-- Pus-In-Boots
+				}),
+				crit(4, {	-- Envy
+					["coord"] = { 65.2, 50.6, MALDRAXXUS },
+					["crs"] = { 174224 },	-- Envy
+				}),
+				crit(5, {	-- Mr. Jigglesworth
+					["coord"] = { 64.8, 22.2, MALDRAXXUS },
+					["crs"] = { 174226 },	-- Mr. Jigglesworth
+				}),
+				crit(6, {	-- Lime
+					["description"] = "Lime is on the bone arch that runs over the road.",
+					["coord"] = { 51.0, 27.5, MALDRAXXUS },
+					["crs"] = { 174230 },	-- Lime
+				}),
+				crit(7, {	-- Mayhem
+					["coord"] = { 49.4, 17.5, MALDRAXXUS },
+					["crs"] = { 174234 },	-- Mayhem
+				}),
+				crit(8, {	-- Moldstopheles
+					["description"] = "Moldstopheles is on an offshoot on the side of the big mushroom.",
+					["coord"] = { 47.5, 33.7, MALDRAXXUS },
+					["crs"] = { 174236 },	-- Moldstopheles
+				}),
+				crit(9, {	-- Meowmalade
+					["description"] = "Napping inside a small crate.",
+					["coord"] = { 34.3, 53.1, MALDRAXXUS },
+					["crs"] = { 174237 },	-- Meowmalade
+				}),
+			},
 		}),
 		ach(14746),		-- Prepare for Trouble!
 		ach(14734, {	-- Rallying Cry of the Ascended

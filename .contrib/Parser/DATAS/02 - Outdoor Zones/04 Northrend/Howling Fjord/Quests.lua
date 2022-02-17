@@ -1501,18 +1501,6 @@ _.Zones =
 					["coord"] = { 35.0, 80.9, HOWLING_FJORD },
 					["sourceQuest"] = 11510,	-- "Scoodles"
 				}),
-				q(12794, {	-- The Magical Kingdom of Dalaran (A)
-					["provider"] = { "n", 23729 },	-- Baron Ulrik von Stromhearth
-					["coord"] = { 58.8, 62.8, HOWLING_FJORD },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-				}),
-				q(12791, {	-- The Magical Kingdom of Dalaran (H)
-					["coord"] = { 79.4, 29.4, HOWLING_FJORD },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 29159 },	-- Magister Varenthas
-					["isBreadcrumb"] = true,
-				}),
 				q(11167, {	-- The New Plague
 					["coord"] = { 78.5, 28.9, HOWLING_FJORD },
 					["races"] = HORDE_ONLY,
@@ -1633,12 +1621,6 @@ _.Zones =
 						i(35885),	-- Tribal Chestguard
 						i(35886),	-- Worgtooth Pendant
 					},
-				}),
-				q(11472, {	-- The Way to His Heart...
-					["coord"] = { 24.6, 58.8, HOWLING_FJORD },
-					["provider"] = { "n", 24810 },	-- Anuniaq
-					["isDaily"] = true,
-					["sourceQuest"] = 11469,	-- Swabbin' Soap
 				}),
 				q(11229, {	-- The Windrunner Fleet
 					["coord"] = { 26.2, 24.6, HOWLING_FJORD },

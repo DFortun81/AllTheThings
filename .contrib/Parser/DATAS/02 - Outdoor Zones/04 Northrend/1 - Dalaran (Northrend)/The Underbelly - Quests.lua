@@ -15,7 +15,9 @@ _.Zones =
 						},
 					}),
 					q(12974, {	-- The Champion's Call!
+						["coord"] = { 49.3, 45.9, NORTHREND_DALARAN },
 						["provider"] = { "n", 30137 },	-- Shifty Vickers
+						["description"] = "Patrols the center area of Underbelly.",
 						["isBreadcrumb"] = true,
 					}),
 				}),

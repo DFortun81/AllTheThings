@@ -24,11 +24,11 @@ _.Zones =
 							["cr"] = 126334,	-- Jani
 						}),
 						crit(7, {	-- Pa'ku Respected
-							["coord"] = { 71.5, 49.4, DAZARALOR },
+							["coord"] = { 71.5, 49.4, ZULDAZAR },
 							["cr"] = 127377,	-- Pa'ku
 						}),
 						crit(8, {	-- Rezan Respected
-							["coord"] = { 70.8, 29.8, DAZARALOR },
+							["coord"] = { 70.8, 29.8, ZULDAZAR },
 							["cr"] = 124948,	-- Rezan
 						}),
 					}

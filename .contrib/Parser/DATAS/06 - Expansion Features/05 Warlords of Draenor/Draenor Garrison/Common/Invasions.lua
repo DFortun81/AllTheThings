@@ -65,7 +65,7 @@ _.ExpansionFeatures =
 						ach(9203),		-- Shadow Council Invasion
 						ach(9206),		-- Shadowmoon Clan Invasion
 					}),
-					n(-139, {	-- Bosses
+					n(BOSSES, {
 						n(90802, {	-- Annihilon
 							["description"] = "Void Prison summons this boss. It has a chance to be obtained during a Shadowmoon Invasion.",
 							["cost"] = { { "i", 122475, 1 } },	-- 1x Void Prison

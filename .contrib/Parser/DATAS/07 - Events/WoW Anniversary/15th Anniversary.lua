@@ -1078,7 +1078,7 @@ root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 							i(142098),	-- Drudge Remains (PET!)
 							i(122229),	-- Music Roll: Invincible
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
-								artifact(870),	-- Find Hidden Artifact Skin
+								["sourceQuest"] = 38990,	-- The Call of Icecrown
 							}),
 						},
 					}),

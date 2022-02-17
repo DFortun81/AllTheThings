@@ -981,13 +981,13 @@ _.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		}),
 		category(929, {	-- Bags
 			i(34490),	-- Bag of Many Hides
-			applyclassicphase(TBC_PHASE_THREE, i(34099, {	-- Knothide Ammo Pouch
+			applyclassicphase(TBC_PHASE_FOUR, i(34099, {	-- Knothide Ammo Pouch
 				["timeline"] = {
 					"added 2.3.0.7382",
 					"removed 4.0.1.13287",
 				},
 			})),
-			applyclassicphase(TBC_PHASE_THREE, i(34100, {	-- Knothide Quiver
+			applyclassicphase(TBC_PHASE_FOUR, i(34100, {	-- Knothide Quiver
 				["timeline"] = {
 					"added 2.3.0.7382",
 					"removed 4.0.1.13287",

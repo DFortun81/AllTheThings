@@ -6,7 +6,7 @@ _.Instances = { tier(CATA_TIER, {
 	inst(68, {	-- The Vortex Pinnacle
 		["lvl"] = 80,
 		["mapID"] = 325,
-		["coord"] = { 76.76, 84.44, 249 },	-- Vortex Pinnacle, Uldum
+		["coord"] = { 76.76, 84.44, ULDUM },	-- Vortex Pinnacle
 		["groups"] = {
 			n(QUESTS, {
 				q(28779, {	-- A Long Way from Home

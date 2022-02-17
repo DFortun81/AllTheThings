@@ -16,14 +16,6 @@ _.Zones =
 					["provider"] = { "n", 113986 },	--
 				}),
 --]]
-				q(44865, {	-- Butler to the Great
-					["sourceQuest"] = 44803,	-- Return to Karazhan: Master of the House
-					["lvl"] = 110,
-					["provider"] = { "n", 115551 },	-- Phantom Valet
-					["g"] = {
-						follower(733),	-- Moroes
-					},
-				}),
 --[[
 				q(40717, {	-- Calling of the Council
 					["provider"] = { "n", 114550 },	--

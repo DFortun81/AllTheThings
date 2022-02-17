@@ -717,7 +717,17 @@ _.Zones =
 		}),
 	}),
 };
-
 root("HiddenQuestTriggers",{
-	q(32261),	-- Alliance Quest Choice: PvP
+	tier(MOP_TIER, {
+		q(32260),	-- Alliance Quest Choice: PvE
+		q(32261),	-- Alliance Quest Choice: PvP
+		q(32259),	-- Horde Quest Choice: PvE
+		q(32258),	-- Horde Quest Choice: PvP
+		q(32289),	-- Loot plans, kill boat captain
+		q(32626),	-- Loot Room Key Tracking Quest — triggers when looting "Haywire Sunreaver Construct" (first rare kill of the week)
+		q(32611),	-- Rare Drop Tracking Quest — tracks whether you have looted an Incantation for this week
+		q(32609),	-- Rare Chest Tracking Quest — triggers after looting "Trove of the Thunder King"
+		q(32723),	-- reuse me
+		q(32629),	-- Thunderwing Captured Tracking Quest
+	}),
 });

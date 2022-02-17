@@ -24,7 +24,7 @@ local L = app.L;
 	L.KNOWN_BY = "已知 ";
 	L.REQUIRES = "要求";
 	L.RACE_LOCKED = "种族锁定";
-	L.PLEASE_REPORT_MESSAGE = "：请把错误报告给 ATT Discord 的 #errors！谢谢！";
+	L.PLEASE_REPORT_MESSAGE = "：请把错误报告给 ATT Discord 的 #retail-errors！谢谢！";
 	L.REPORT_TIP = "\n（Ctrl+C 将多行报告复制到剪贴板）";
 	L.NOT_AVAILABLE_IN_PL = "在个人拾取中不可用。";
 	L.MARKS_OF_HONOR_DESC = "荣耀印记必须在弹出窗口中查看才能看到所有正常的'包含'内容。\n(在聊天中输入'/att' 然后 Shift-点击链接的物品)\n\n|cFFfe040f之后购买和一起使用，重新登录和强制 ATT 刷新（按此顺序）\n可能需要正确注册所有物品。|r";
@@ -551,7 +551,7 @@ local L = app.L;
 		L.REQUIRES_LEVEL = "需要等级";
 		L.SECRETS_HEADER = "解密";
 		L.LIMITED_QUANTITY = "此物品有数量限制，在商人处并非总是可见。";
-		L.SOURCE_ID_MISSING = "请在 #errors 中向 ATT Discord 报告此物品及其获取地点！";
+		L.SOURCE_ID_MISSING = "请在 #retail-errors 中向 ATT Discord 报告此物品及其获取地点！";
 
 	-- Filter Text
 		L.ACHIEVEMENT_ID = "成就 ID";
@@ -958,6 +958,7 @@ for key, value in pairs({
 	[148504] = "明显的墓碑",	-- A Conspicuous Gravestone
 	[149036] = "玛尔冯的箱子",	-- Marvon's Chest
 	[149502] = "黑龙的财宝",	-- Hoard of the Black Dragonflight	--TODO: This was taken from classic Wowhead
+	[151286] = "卡多雷召唤宝典",	-- Kaldorei Tome of Summoning	--TODO: This was taken from classic Wowhead
 	[160836] = "古物宝库",	-- Relic Coffer
 	[161495] = "秘密保险箱",	-- Secret Safe
 	[161504] = "小背包",	-- A Small Pack	--TODO: This was taken from classic Wowhead
@@ -1035,6 +1036,7 @@ for key, value in pairs({
 	[180794] = "詹迪斯·巴罗夫的日记",	-- Journal of Jandice Barov	--TODO: This was taken from classic Wowhead
 	[180918] = "通缉：饥饿者泰里斯",	-- Wanted: Thaelis the Hungerer
 	[181011] = "魔导师达斯维瑟的日记",	-- Magister Duskwither's Journal	--TODO: This was manually translated
+	--TODO: [181073] = "Fragrant Cauldron",	-- Fragrant Cauldron
 	[181074] = "竞技场的泥土",	-- Arena Spoils	--TODO: This was taken from classic Wowhead
 	--TODO: [181083] = "Sothos and Jarien's Heirlooms",	-- Sothos and Jarien's Heirlooms
 	[181147] = "通缉布告",	-- Wanted Poster
@@ -2835,6 +2837,7 @@ for key, value in pairs({
 	--TODO: [358318] = "R. Suavel Dredger Portrait",	-- R. Suavel Dredger Portrait
 	[358319] = "巫师的笔记",	-- Sorceror's Note
 	[358382] = "通缉：螫肢",	-- Wanted: Chelicera
+	[358399] = "六里包",	-- Six-League Pack
 	[358531] = "巨大的史诗财宝箱",	-- Giant Cache of Epic Treasure
 	[358533] = "被遗忘的补给品",	-- Forgotten Supplies
 	[358855] = "损坏的安全降落包",	-- Damaged Safe Fall Pack

@@ -636,7 +636,9 @@ _.ExpansionFeatures =
 							artifact(976),	-- Defeat all Legion dungeon bosses with appearance
 						}),
 						HiddenAppearance("Interface\\Icons\\inv_polearm_2h_artifacteagle_d_05", {
-							artifact(473),	-- Find Hidden Artifact Skin
+							artifact(473, {	-- Find Hidden Artifact Skin
+								["provider"] = { "i", 139557 },	-- Last Breath of the Forest
+							}),
 							artifact(483),	-- Complete 30 Legion Dungeons Hidden
 							artifact(484),	-- Complete 200 WQ Hidden
 							artifact(485),	-- Kill 1,000 Players Hidden
@@ -676,7 +678,9 @@ _.ExpansionFeatures =
 							artifact(904),	-- Defeat all Legion dungeon bosses with appearance
 						}),
 						HiddenAppearance("Interface\\Icons\\inv_knife_1h_artifactgarona_d_05", {
-							artifact(611),	-- Find Hidden Artifact Skin
+							artifact(611, {	-- Find Hidden Artifact Skin
+								["provider"] = { "i", 139570 },	-- The Cypher of Broken Bone
+							}),
 							artifact(610),	-- Complete 30 Legion Dungeons Hidden
 							artifact(609),	-- Complete 200 WQ Hidden
 							artifact(612),	-- Kill 1,000 Players Hidden
@@ -714,7 +718,9 @@ _.ExpansionFeatures =
 							artifact(904),	-- Defeat all Legion dungeon bosses with appearance
 						}),
 						HiddenAppearance("Interface\\Icons\\inv_knife_1h_artifactgarona_d_05", {
-							artifact(611),	-- Find Hidden Artifact Skin
+							artifact(611, {	-- Find Hidden Artifact Skin
+								["provider"] = { "i", 139570 },	-- The Cypher of Broken Bone
+							}),
 							artifact(610),	-- Complete 30 Legion Dungeons Hidden
 							artifact(609),	-- Complete 200 WQ Hidden
 							artifact(612),	-- Kill 1,000 Players Hidden
@@ -986,7 +992,9 @@ _.ExpansionFeatures =
 							artifact(263),	-- Defeat all Legion dungeon bosses with appearance
 						}),
 						HiddenAppearance("Interface\\Icons\\inv_knife_1h_artifactcthun_d_06", {
-							artifact(950),	-- Find Hidden Artifact Skin
+							artifact(950, {	-- Find Hidden Artifact Skin
+								["provider"] = { "i", 139569 },	-- Claw of N'Zoth
+							}),
 							artifact(949),	-- Complete 30 Legion Dungeons Hidden
 							artifact(951),	-- Complete 200 WQ Hidden
 							artifact(952),	-- Kill 1,000 Players Hidden
@@ -1024,7 +1032,9 @@ _.ExpansionFeatures =
 							artifact(263),	-- Defeat all Legion dungeon bosses with appearance
 						}),
 						HiddenAppearance("Interface\\Icons\\inv_offhand_1h_artifactcthun_d_06", {
-							artifact(950),	-- Find Hidden Artifact Skin
+							artifact(950, {	-- Find Hidden Artifact Skin
+								["provider"] = { "i", 139569 },	-- Claw of N'Zoth
+							}),
 							artifact(949),	-- Complete 30 Legion Dungeons Hidden
 							artifact(951),	-- Complete 200 WQ Hidden
 							artifact(952),	-- Kill 1,000 Players Hidden
@@ -1102,7 +1112,9 @@ _.ExpansionFeatures =
 							artifact(385),	-- Defeat all Legion dungeon bosses with appearance
 						}),
 						HiddenAppearance("Interface\\Icons\\inv_sword_1h_artifactruneblade_d_06", {
-							artifact(870),	-- Find Hidden Artifact Skin
+							artifact(870, {	-- Find Hidden Artifact Skin
+								["provider"] = { "i", 139547 },	-- Runes of the Darkening
+							}),
 							artifact(869),	-- Complete 30 Legion Dungeons Hidden
 							artifact(871),	-- Complete 200 WQ Hidden
 							artifact(872),	-- Kill 1,000 Players Hidden
@@ -1140,7 +1152,9 @@ _.ExpansionFeatures =
 							artifact(385),	-- Defeat all Legion dungeon bosses with appearance
 						}),
 						HiddenAppearance("Interface\\Icons\\inv_sword_1h_artifactruneblade_d_06", {
-							artifact(870),	-- Find Hidden Artifact Skin
+							artifact(870, {	-- Find Hidden Artifact Skin
+								["provider"] = { "i", 139547 },	-- Runes of the Darkening
+							}),
 							artifact(869),	-- Complete 30 Legion Dungeons Hidden
 							artifact(871),	-- Complete 200 WQ Hidden
 							artifact(872),	-- Kill 1,000 Players Hidden
@@ -1218,7 +1232,9 @@ _.ExpansionFeatures =
 							artifact(315),	-- Defeat all Legion dungeon bosses with appearance
 						}),
 						HiddenAppearance("Interface\\Icons\\inv_mace_1h_artifactdoomhammer_d_06", {
-							artifact(880),	-- Find Hidden Artifact Skin
+							artifact(880, {	-- Find Hidden Artifact Skin
+								["provider"] = { "i", 139573, }	-- The Warmace of Shirvallah (Shaman Artifact)
+							}),
 							artifact(878),	-- Complete 30 Legion Dungeons Hidden
 							artifact(879),	-- Complete 200 WQ Hidden
 							artifact(877),	-- Kill 1,000 Players Hidden
@@ -1256,7 +1272,9 @@ _.ExpansionFeatures =
 							artifact(315),	-- Defeat all Legion dungeon bosses with appearance
 						}),
 						HiddenAppearance("Interface\\Icons\\inv_offhand_1h_artifactdoomhammer_d_06", {
-							artifact(880),	-- Find Hidden Artifact Skin
+							artifact(880, {	-- Find Hidden Artifact Skin
+								["provider"] = { "i", 139573, }	-- The Warmace of Shirvallah (Shaman Artifact)
+							}),
 							artifact(878),	-- Complete 30 Legion Dungeons Hidden
 							artifact(879),	-- Complete 200 WQ Hidden
 							artifact(877),	-- Kill 1,000 Players Hidden
@@ -1294,7 +1312,9 @@ _.ExpansionFeatures =
 							artifact(687),	-- Defeat all Legion dungeon bosses with appearance
 						}),
 						HiddenAppearance("Interface\\Icons\\inv_hand_1h_artifactstormfist_d_06", {
-							artifact(900),	-- Find Hidden Artifact Skin
+							artifact(900, {	-- Find Hidden Artifact Skin
+								["provider"] = { "i", 139572 },	-- Lost Codex of the Amani
+							}),
 							artifact(898),	-- Complete 30 Legion Dungeons Hidden
 							artifact(899),	-- Complete 200 WQ Hidden
 							artifact(897),	-- Kill 1,000 Players Hidden
@@ -1332,7 +1352,9 @@ _.ExpansionFeatures =
 							artifact(687),	-- Defeat all Legion dungeon bosses with appearance
 						}),
 						HiddenAppearance("Interface\\Icons\\inv_shield_1h_artifactstormfist_d_06", {
-							artifact(900),	-- Find Hidden Artifact Skin
+							artifact(900, {	-- Find Hidden Artifact Skin
+								["provider"] = { "i", 139572 },	-- Lost Codex of the Amani
+							}),
 							artifact(898),	-- Complete 30 Legion Dungeons Hidden
 							artifact(899),	-- Complete 200 WQ Hidden
 							artifact(897),	-- Kill 1,000 Players Hidden
@@ -1370,7 +1392,9 @@ _.ExpansionFeatures =
 							artifact(790),	-- Defeat all Legion dungeon bosses with appearance
 						}),
 						HiddenAppearance("Interface\\Icons\\inv_mace_1h_artifactazshara_d_06", {
-							artifact(926),	-- Find Hidden Artifact Skin
+							artifact(926, {	-- Find Hidden Artifact Skin
+								["provider"] = { "i", 139574 },	-- Coil of the Drowned Queen
+							}),
 							artifact(925),	-- Complete 30 Legion Dungeons Hidden
 							artifact(927),	-- Complete 200 WQ Hidden
 							artifact(928),	-- Kill 1,000 Players Hidden
@@ -1408,7 +1432,9 @@ _.ExpansionFeatures =
 							artifact(790),	-- Defeat all Legion dungeon bosses with appearance
 						}),
 						HiddenAppearance("Interface\\Icons\\inv_shield_1h_artifactazshara_d_06", {
-							artifact(926),	-- Find Hidden Artifact Skin
+							artifact(926, {	-- Find Hidden Artifact Skin
+								["provider"] = { "i", 139574 },	-- Coil of the Drowned Queen
+							}),
 							artifact(925),	-- Complete 30 Legion Dungeons Hidden
 							artifact(927),	-- Complete 200 WQ Hidden
 							artifact(928),	-- Kill 1,000 Players Hidden
@@ -1756,7 +1782,9 @@ _.ExpansionFeatures =
 							artifact(936),	-- Defeat all Legion dungeon bosses with appearance
 						}),
 						HiddenAppearance("Interface\\Icons\\inv_staff_2h_artifactshaohao_d_03", {
-							artifact(519),	-- Find Hidden Artifact Skin
+							artifact(519, {	-- Find Hidden Artifact Skin
+								["provider"] = { "i", 139562 },	-- Breath of the Undying Serpent
+							}),
 							artifact(518),	-- Complete 30 Legion Dungeons Hidden
 							artifact(507),	-- Complete 200 WQ Hidden
 							artifact(520),	-- Kill 1,000 Players Hidden
@@ -2120,7 +2148,9 @@ _.ExpansionFeatures =
 							artifact(993),	-- Defeat all Legion dungeon bosses with appearance
 						}),
 						HiddenAppearance("Interface\\Icons\\inv_hand_1h_artifactursoc_d_01", {
-							artifact(283),	-- Find Hidden Artifact Skin
+							artifact(283, {	-- Find Hidden Artifact Skin
+								["provider"] = { "i", 139553 },	-- Mark of the Glade Guardian
+							}),
 							artifact(273),	-- Complete 30 Legion Dungeons Hidden
 							artifact(284),	-- Complete 200 WQ Hidden
 							artifact(285),	-- Kill 1,000 Players Hidden
@@ -2169,7 +2199,9 @@ _.ExpansionFeatures =
 							artifact(993),	-- Defeat all Legion dungeon bosses with appearance
 						}),
 						HiddenAppearance("Interface\\Icons\\inv_hand_1h_artifactursoc_d_01", {
-							artifact(283),	-- Find Hidden Artifact Skin
+							artifact(283, {	-- Find Hidden Artifact Skin
+								["provider"] = { "i", 139553 },	-- Mark of the Glade Guardian
+							}),
 							artifact(273),	-- Complete 30 Legion Dungeons Hidden
 							artifact(284),	-- Complete 200 WQ Hidden
 							artifact(285),	-- Kill 1,000 Players Hidden
@@ -2333,21 +2365,11 @@ _.ExpansionFeatures =
 				prof(FISHING, {
 					i(133755, {	-- Underlight Angler
 						artifact(841),	-- Base Skin
-						ach(11725, {	-- Fisherfriend of the Isles
-							["providers"] = {
-								{ "n", 120456 },	-- Keeper Raynae
-								{ "n", 120457 },	-- Akule Riverhorn
-								{ "n", 120458 },	-- Corbyn
-								{ "n", 120459 },	-- Sha'leth
-								{ "n", 120460 },	-- Impus
-							},
-							["description"] = "When you complete this achievement, you get an item that unlocks the two remaining appearances. See the other Broken Isles zones for more information.",
-							["g"] = {
-								i(152583, {	-- Underlight Emerald
-									artifact(988),	-- Fisherfriend of the Isles
-									artifact(989),	-- Fisherfriend of the Isles
-								})
-							},
+						artifact(988, {	-- Fisherfriend of the Isles
+							["provider"] = { "i", 152583 },	-- Underlight Emerald
+						}),
+						artifact(989, {	-- Fisherfriend of the Isles
+							["provider"] = { "i", 152583 },	-- Underlight Emerald
 						}),
 					}),
 				}),

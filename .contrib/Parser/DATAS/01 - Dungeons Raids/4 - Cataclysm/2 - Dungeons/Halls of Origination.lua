@@ -10,7 +10,7 @@ _.Instances = { tier(CATA_TIER, {
 			298,	-- Tomb of the Earthrager
 			299,	-- The Four Seats
 		},
-		["coord"] = { 71.81, 52.16, 249 },	-- Halls of Origination, Uldum
+		["coord"] = { 71.81, 52.16, ULDUM },	-- Halls of Origination
 		["groups"] = {
 			n(QUESTS, {
 				q(28746, {	-- Penetrating Their Defenses

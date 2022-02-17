@@ -31,7 +31,6 @@ _.Zones =
 				["lvl"] = 85,
 			}),
 			un(REMOVED_FROM_GAME, q(36499)),	-- Iron Horde Invasion (LEGACY - pre WoD)
-			un(REMOVED_FROM_GAME, q(4494)),	-- March of the Silithid
 			q(29612, {	-- The Art of War
 				["description"] = "Players who have completed Vashj'ir will receive this version of The Art of War.",
 			}),

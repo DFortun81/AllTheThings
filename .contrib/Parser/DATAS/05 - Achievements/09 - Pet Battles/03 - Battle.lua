@@ -7,34 +7,44 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 		ach(14881, {	-- Abhorrent Adversaries of the Afterlife
 			i(184512),	-- Winterleaf Spriggan
 			crit(1,  {	-- Crystalsnap
-				--["coord"] = { 31.2, 74.2, VALE_OF_ETERNAL_BLOSSOMS },
+				["coord"] = { 52.7, 74.2, BASTION },
+				["crs"] = { 175777 },	-- Crystalsnap
 			}),
 			crit(2,  {	-- Briarpaw
-				--["coord"] = { 50.0, 31.2, DRAENOR_SHADOWMOON_VALLEY },
+				["coord"] = { 34.2, 44.4, ARDENWEALD },
+				["crs"] = { 175778 },	-- Briarpaw
 			}),
 			crit(3,  {	-- Chittermaw
-				--["coord"] = { 28.6, 33.8, HOWLING_FJORD },
+				["coord"] = { 26.6, 62.0, ARDENWEALD },
+				["crs"] = { 175779 },	-- Chittermaw
 			}),
 			crit(4,  {	-- Mistwing
-				--["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
+				["coord"] = { 49.8, 41.6, ARDENWEALD },
+				["crs"] = { 175780 },	-- Mistwing
 			}),
 			crit(5,  {	-- Sewer Creeper
-				--["coord"] = { 30.6, 41.8, SHADOWMOON_VALLEY },
+				["coord"] = { 25.66, 23.62, REVENDRETH },
+				["crs"] = { 175781 },	-- Sewer Creeper
 			}),
 			crit(6,  {	-- The Countess
-				--["coord"] = { 49.8, 57.0, 207 },
+				["coord"] = { 53.0, 41.8, REVENDRETH },
+				["crs"] = { 175782 },	-- The Countess
 			}),
 			crit(7,  {	-- Digallo
-				--["coord"] = { 61.4, 32.8, MOUNT_HYJAL },
+				["coord"] = { 25.8, 30.8, BASTION },
+				["crs"] = { 175783 },	-- Digallo
 			}),
 			crit(8,  {	-- Gelatinous
-				--["coord"] = { 57.0, 42.2, TOWNLONG_STEPPES },
+				["coord"] = { 61.8, 78.8, MALDRAXXUS },
+				["crs"] = { 175784 },	-- Gelatinous
 			}),
 			crit(9,  {	-- Kostos <Challenger of the Small>
-				--["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
+				["coord"] = { 46.6, 49.4, BASTION },
+				["crs"] = { 175785 },	-- Kostos
 			}),
 			crit(10, {	-- Glurp
-				--["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
+				["coord"] = { 26.4, 26.8, MALDRAXXUS },
+				["crs"] = { 175786 },	-- Glurp
 			}),
 		}),
 		ach(9069,  {	-- An Awfully Big Adventure
@@ -124,8 +134,8 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			crit(28, {	-- Nicki Tinytech
 				["coord"] = { 64.4, 49.2, HELLFIRE_PENINSULA },
 			}),
-			crit(29, {	-- Obalis (Uldum)
-				["coord"] = { 56.6, 41.8, 249 },
+			crit(29, {	-- Obalis
+				["coord"] = { 56.6, 41.8, ULDUM },
 			}),
 			crit(30, {	-- Okrut Dragonwaste
 				["coord"] = { 59.0, 77.0, DRAGONBLIGHT },
@@ -193,7 +203,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			crit(17),	-- Minixis (Antoran Wastes)
 			crit(18),	-- One-of-Many (Antoran Wastes)
 		}),
-		ach(14625, {	-- Battle in the Shadowlands  -- TODO: copy to zones achiev files.
+		ach(14625, {	-- Battle in the Shadowlands
 			i(184508),	-- Mawsworn Pet Leash
 			crit(1,  {	-- Ardenweald's Tricksters
 				["_quests"] = { 61949 },	-- Ardenweald's Tricksters
@@ -723,7 +733,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 		}),
 		ach(14879, {	-- Family Exorcist
 			i(184509),	-- Spriggan Trickster
-			ach(14868, {	-- Aquatic Apparitions  -- TODO: copy to zones achiev files.
+			ach(14868, {	-- Aquatic Apparitions
 				crit(1,  {	-- Sylla
 					["coord"] = { 39.8, 52.4, REVENDRETH },
 					["cr"] = 173315,	-- Sylla
@@ -769,7 +779,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 					["cr"] = 173377,	-- Faryl
 				}),
 			}),
-			ach(14869, {	-- Beast Busters  -- TODO: copy to zones achiev files.
+			ach(14869, {	-- Beast Busters
 				crit(1,  {	-- Sylla
 					["coord"] = { 39.8, 52.4, REVENDRETH },
 					["cr"] = 173315,	-- Sylla
@@ -815,7 +825,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 					["cr"] = 173377,	-- Faryl
 				}),
 			}),
-			ach(14870, {	-- Creepy Critters  -- TODO: copy to zones achiev files.
+			ach(14870, {	-- Creepy Critters
 				crit(1,  {	-- Sylla
 					["coord"] = { 39.8, 52.4, REVENDRETH },
 					["cr"] = 173315,	-- Sylla
@@ -861,7 +871,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 					["cr"] = 173377,	-- Faryl
 				}),
 			}),
-			ach(14871, {	-- Deathly Dragonkin -- TODO: copy to zones achiev files.
+			ach(14871, {	-- Deathly Dragonkin
 				crit(1,  {	-- Sylla
 					["coord"] = { 39.8, 52.4, REVENDRETH },
 					["cr"] = 173315,	-- Sylla
@@ -907,7 +917,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 					["cr"] = 173377,	-- Faryl
 				}),
 			}),
-			ach(14872, {	-- Eerie Elementals -- TODO: copy to zones achiev files.
+			ach(14872, {	-- Eerie Elementals
 				crit(1,  {	-- Sylla
 					["coord"] = { 39.8, 52.4, REVENDRETH },
 					["cr"] = 173315,	-- Sylla
@@ -953,7 +963,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 					["cr"] = 173377,	-- Faryl
 				}),
 			}),
-			ach(14873, {	-- Flickering Fliers -- TODO: copy to zones achiev files.
+			ach(14873, {	-- Flickering Fliers
 				crit(1,  {	-- Sylla
 					["coord"] = { 39.8, 52.4, REVENDRETH },
 					["cr"] = 173315,	-- Sylla
@@ -999,7 +1009,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 					["cr"] = 173377,	-- Faryl
 				}),
 			}),
-			ach(14874, {	-- Haunted Humanoids -- TODO: copy to zones achiev files.
+			ach(14874, {	-- Haunted Humanoids
 				crit(1,  {	-- Sylla
 					["coord"] = { 39.8, 52.4, REVENDRETH },
 					["cr"] = 173315,	-- Sylla
@@ -1045,7 +1055,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 					["cr"] = 173377,	-- Faryl
 				}),
 			}),
-			ach(14875, {	-- Mummified Magics -- TODO: copy to zones achiev files.
+			ach(14875, {	-- Mummified Magics
 				crit(1,  {	-- Sylla
 					["coord"] = { 39.8, 52.4, REVENDRETH },
 					["cr"] = 173315,	-- Sylla
@@ -1091,7 +1101,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 					["cr"] = 173377,	-- Faryl
 				}),
 			}),
-			ach(14876, {	-- Macabre Mechanicals -- TODO: copy to zones achiev files.
+			ach(14876, {	-- Macabre Mechanicals
 				crit(1,  {	-- Sylla
 					["coord"] = { 39.8, 52.4, REVENDRETH },
 					["cr"] = 173315,	-- Sylla
@@ -1137,7 +1147,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 					["cr"] = 173377,	-- Faryl
 				}),
 			}),
-			ach(14877, {	-- Unholy Undead -- TODO: copy to zones achiev files.
+			ach(14877, {	-- Unholy Undead
 				crit(1,  {	-- Sylla
 					["coord"] = { 39.8, 52.4, REVENDRETH },
 					["cr"] = 173315,	-- Sylla
