@@ -2940,7 +2940,6 @@ _.HiddenQuestTriggers = {
 		q(61188),	-- Triggered after looting Impressionable Gorger Spawn
 		q(61843),	-- Triggered after completing Nipping at the Undergrowth (61839)
 		q(63090),	-- looting weekly chest of Sinstone Fragments next to Archivist Fane
-		q(60982),	-- After completing "A letter from Nadja"
 		-- Revendreth Rares
 		q(62464),	-- Azgar secondary quest
 		q(60581),	-- Endlurker secondary quest
@@ -3160,7 +3159,7 @@ _.HiddenQuestTriggers = {
 		-- Treasures of Korthia achievement
 		q(64045),	-- The Maw repeatable treasure, Stolen Anima Vessel
 	}),
-	
+
 	-------------------
 	--      MOP      --
 	-------------------
@@ -3175,7 +3174,7 @@ _.HiddenQuestTriggers = {
 		q(32364),	-- triggered after turning in #32448, "Ties with the Past," part of the Dominance Offensive campaign
 		q(32437),	-- Tracking Event: Saw Sarannha 1 — triggered at the end of "The Divine Bell," part of the Dominance Offensive campaign
 		q(32438),	-- Tracking Event: Saw Sarannha 2 — triggered at the end of "The Divine Bell," part of the Dominance Offensive campaign
-		
+
 		--	QUESTING / LEVELING / VARIOUS
 		q(29698),	-- Tracking Event: Alliance Banner Found
 		q(29699),	-- Tracking Event: Alliance Chest Found
@@ -3200,7 +3199,7 @@ _.HiddenQuestTriggers = {
 		q(32112),	-- FLAG - Been to Fight Club. Completing first fight
 		q(32725),	-- Warlock Green Fire Questline - Reached Kanrethad
 		q(32666),	-- Warlock Green Fire Questline - Reached Kanrethad
-		
+
 		--	DUNGEONS & RAIDS
 		q(31614),	-- LFGDungeons - Mists - Heroic Random - 1st
 		q(31615),	-- LFGDungeons - Mists - Heroic Random - Nth
@@ -3232,7 +3231,7 @@ _.HiddenQuestTriggers = {
 		q(33094),	-- FLAG - Proving Grounds - Tank Gold
 		q(33093),	-- FLAG - Proving Grounds - Tank Silver
 	}),
-	
+
 	-------------------
 	--      WOD      --
 	-------------------

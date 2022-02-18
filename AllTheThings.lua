@@ -1117,7 +1117,7 @@ end
 -- Attempts to return the displayID for the data, or every displayID if 'all' is specified
 local function GetDisplayID(data, all)
 	-- don't create a displayID for groups with a sourceID/itemID already
-	if data.s or data.itemID then return nil; end
+	if data.s or data.itemID then return; end
 	if all then
 		local displayInfo, _ = {};
 		-- specific displayID
@@ -1969,16 +1969,13 @@ local function SetIndicatorIcon(self, data)
 	end
 end
 local function SetPortraitIcon(self, data)
-	self.lastData = data;
 	local displayID = GetDisplayID(data);
 	if displayID then
 		SetPortraitTextureFromDisplayID(self, displayID);
-		self:SetWidth(self:GetHeight());
 		self:SetTexCoord(0, 1, 0, 1);
 		return true;
 	elseif data.unit and not data.icon then
 		SetPortraitTexture(self, data.unit);
-		self:SetWidth(self:GetHeight());
 		self:SetTexCoord(0, 1, 0, 1);
 		return true;
 	end
@@ -1986,7 +1983,6 @@ local function SetPortraitIcon(self, data)
 	-- Fallback to a traditional icon.
 	if data.atlas then
 		self:SetAtlas(data.atlas);
-		self:SetWidth(self:GetHeight());
 		self:SetTexCoord(0, 1, 0, 1);
 		if data["atlas-background"] then
 			self.Background:SetAtlas(data["atlas-background"]);
@@ -2006,7 +2002,6 @@ local function SetPortraitIcon(self, data)
 		end
 		return true;
 	elseif data.icon then
-		self:SetWidth(self:GetHeight());
 		self:SetTexture(data.icon);
 		local texcoord = data.texcoord;
 		if texcoord then
@@ -14282,17 +14277,20 @@ local function SetRowData(self, row, data)
 			row.Background:SetAlpha(back or 0.2);
 			row.Background:Show();
 		end
-		if SetIndicatorIcon(row.Indicator, data) then
-			row.Indicator:SetPoint("LEFT", leftmost, relative, x - iconSize, 0);
-			row.Indicator:Show();
+		local rowIndicator = row.Indicator;
+		if SetIndicatorIcon(rowIndicator, data) then
+			rowIndicator:SetPoint("LEFT", leftmost, relative, x - iconSize, 0);
+			rowIndicator:Show();
 			-- row.indent = row.indent - iconSize;
 		end
-		if SetPortraitIcon(row.Texture, data) then
-			row.Texture.Background:SetPoint("TOPLEFT", row.Texture);
-			row.Texture.Border:SetPoint("TOPLEFT", row.Texture);
-			row.Texture:SetPoint("LEFT", leftmost, relative, x, 0);
-			row.Texture:Show();
-			leftmost = row.Texture;
+		local rowTexture = row.Texture;
+		if SetPortraitIcon(rowTexture, data) then
+			rowTexture.Background:SetPoint("TOPLEFT", rowTexture);
+			rowTexture.Border:SetPoint("TOPLEFT", rowTexture);
+			rowTexture:SetPoint("LEFT", leftmost, relative, x, 0);
+			rowTexture:SetWidth(rowTexture:GetHeight());
+			rowTexture:Show();
+			leftmost = rowTexture;
 			relative = "RIGHT";
 			x = rowPad / 2;
 		end
@@ -14303,26 +14301,28 @@ local function SetRowData(self, row, data)
 			summary = GetSpecsString(specs, false, false) .. summary;
 			iconAdjust = iconAdjust - #specs;
 		end
-		row.Summary:SetText(summary);
+		local rowSummary = row.Summary;
+		local rowLabel = row.Label;
+		rowSummary:SetText(summary);
 		-- for whatever reason, the Client does not properly align the Points when textures are used within the 'text' of the object, with each texture added causing a 1px offset on alignment
-		row.Summary:SetPoint("RIGHT", iconAdjust, 0);
-		row.Summary:Show();
-		row.Label:SetPoint("LEFT", leftmost, relative, x, 0);
-		if row.Summary and row.Summary:IsShown() then
-			row.Label:SetPoint("RIGHT", row.Summary, "LEFT", 0, 0);
+		rowSummary:SetPoint("RIGHT", iconAdjust, 0);
+		rowSummary:Show();
+		rowLabel:SetPoint("LEFT", leftmost, relative, x, 0);
+		if rowSummary and rowSummary:IsShown() then
+			rowLabel:SetPoint("RIGHT", rowSummary, "LEFT", 0, 0);
 		else
-			row.Label:SetPoint("RIGHT");
+			rowLabel:SetPoint("RIGHT");
 		end
-		row.Label:SetText(text);
+		rowLabel:SetText(text);
 		if data.font then
-			row.Label:SetFontObject(data.font);
-			row.Summary:SetFontObject(data.font);
+			rowLabel:SetFontObject(data.font);
+			rowSummary:SetFontObject(data.font);
 		else
-			row.Label:SetFontObject("GameFontNormal");
-			row.Summary:SetFontObject("GameFontNormal");
+			rowLabel:SetFontObject("GameFontNormal");
+			rowSummary:SetFontObject("GameFontNormal");
 		end
-		row:SetHeight(select(2, row.Label:GetFont()) + 4);
-		row.Label:Show();
+		row:SetHeight(select(2, rowLabel:GetFont()) + 4);
+		rowLabel:Show();
 		row:Show();
 	else
 		row:Hide();

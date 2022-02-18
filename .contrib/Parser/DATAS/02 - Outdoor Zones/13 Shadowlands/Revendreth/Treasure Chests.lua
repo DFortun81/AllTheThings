@@ -662,8 +662,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					["coord"] = { 66.4, 65.4, REVENDRETH },
 				}),
 				o(354189, {	-- Stoneborn Satchel
-					["altQuests"] = { 60982 },	-- shrug emoji, had these coordinates+this name linked up with two separate questIDs, so who knows what's going on there
-					["questID"] = 60896,
+					["questID"] = 60982,
 					["isDaily"] = true,
 					["coord"] = { 58.0, 67.2, REVENDRETH },
 				}),
