@@ -7836,15 +7836,15 @@ local fields = {
 						end
 					end
 				end
-				-- This instance of the Thing (t) is not actually collectible for this character if it is under a saved, non-repeatable parent
-				if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved and not t.parent.repeatable then return; end
+				-- This instance of the Thing (t) is not actually collectible for this character if it is under a saved parent
+				if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return; end
 				return collectible;
 			else
 				cache.SetCachedField(t, "costCollectibles", app.EmptyTable);
 			end
 		else
-			-- This instance of the Thing (t) is not actually collectible for this character if it is under a saved, non-repeatable parent
-			if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved and not t.parent.repeatable then return; end
+			-- This instance of the Thing (t) is not actually collectible for this character if it is under a saved parent
+			if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return; end
 			-- Make sure this thing can actually be collectible
 			if not app.PreCheckCollectible(t) then return; end
 			-- Use the common collectibility check logic
@@ -9430,15 +9430,15 @@ local itemFields = {
 					end
 				end
 				-- app.PrintDebug("< costs")
-				-- This instance of the Thing (t) is not actually collectible for this character if it is under a saved, non-repeatable parent
-				if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved and not t.parent.repeatable then return false; end
+				-- This instance of the Thing (t) is not actually collectible for this character if it is under a saved parent
+				if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return; end
 				return collectible;
 			else
 				cache.SetCachedField(t, "costCollectibles", app.EmptyTable);
 			end
 		else
-			-- This instance of the Thing (t) is not actually collectible for this character if it is under a saved, non-repeatable parent
-			if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved and not t.parent.repeatable then return; end
+			-- This instance of the Thing (t) is not actually collectible for this character if it is under a saved parent
+			if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return; end
 			-- Make sure this thing can actually be collectible
 			if not app.PreCheckCollectible(t) then return; end
 			-- Use the common collectibility check logic
@@ -10455,16 +10455,16 @@ local mountFields = {
 							end
 						end
 					end
-					app.PrintDebug("< costs")
-					-- This instance of the Thing (t) is not actually collectible for this character if it is under a saved, non-repeatable parent
-					if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved and not t.parent.repeatable then return false; end
+					-- app.PrintDebug("< costs")
+					-- This instance of the Thing (t) is not actually collectible for this character if it is under a saved parent
+					if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return; end
 					return collectible;
 				else
 					cache.SetCachedField(t, "costCollectibles", app.EmptyTable);
 				end
 			else
-				-- This instance of the Thing (t) is not actually collectible for this character if it is under a saved, non-repeatable parent
-				if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved and not t.parent.repeatable then return; end
+				-- This instance of the Thing (t) is not actually collectible for this character if it is under a saved parent
+				if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return; end
 				-- Make sure this thing can actually be collectible
 				if not app.PreCheckCollectible(t) then return; end
 				-- Use the common collectibility check logic
