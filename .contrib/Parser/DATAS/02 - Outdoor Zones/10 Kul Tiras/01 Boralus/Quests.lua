@@ -7,7 +7,7 @@ _.Zones =
 	m(KULTIRAS, {
 		m(BORALUS, {
 			n(QUESTS, {
-				n(PVP, {
+				pvp(n(PVP, {
 					n(AZERITE_ESSENCES, {
 						i(169902, {	-- Finger-Bone Trophy of Battle (Rank 1)
 							["description"] = "Requires earning 500 Conquest and opening your weekly chest.\n",
@@ -272,7 +272,7 @@ _.Zones =
 							}),
 						},
 					}),
-				}),
+				})),
 				n(-397, {	-- Outposts
 					["description"] = "Alliance Outposts allow you to set up additional bases in Zandalar.  You can buy Scouting Reports from Vindicator Jaelaana, the vendor next to Wind's Redemption.  Each one will start a mission on your Mission Command Table.  After you complete the initial questline, you'll be offered additional missions to upgrade your outposts.",
 					["g"] = {
