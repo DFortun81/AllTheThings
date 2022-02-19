@@ -7,6 +7,20 @@ _.Zones =
 	m(PANDARIA, {
 		m(VALE_OF_ETERNAL_BLOSSOMS, {
 			n(QUESTS, {
+				q(32011, {	-- A Celestial Task (A)
+					["provider"] = { "n", 64032 },	-- Sage Whiteheart
+					["coord"] = { 84.6, 63.6, VALE_OF_ETERNAL_BLOSSOMS },
+					["isBreadcrumb"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(32010, {	-- A Celestial Task (H)
+					["provider"] = { "n", 64001 },	-- Sage Lotusbloom
+					["coord"] = { 62.7, 23.3, VALE_OF_ETERNAL_BLOSSOMS },
+					["isBreadcrumb"] = true,
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(33229, {	-- A Flash of Bronze... (A)
 					["provider"] = { "n", 73691 },	-- Chromie <The Timewalkers>
 					["isBreadcrumb"] = true,
@@ -213,12 +227,14 @@ _.Zones =
 					["coord"] = { 85.2, 62.6, VALE_OF_ETERNAL_BLOSSOMS },
 					["provider"] = { "n", 64029 },	-- Elder Lin
 					["isWeekly"] = true,
+					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(32017, {	-- Elder Charms of Good Fortune
 					["coord"] = { 62.0, 20.6, VALE_OF_ETERNAL_BLOSSOMS },
 					["provider"] = { "n", 63996 },	-- Elder Lin
 					["isWeekly"] = true,
+					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(30194, {	-- Encroaching Storm

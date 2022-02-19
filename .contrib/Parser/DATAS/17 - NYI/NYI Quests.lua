@@ -551,9 +551,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 			
 			-- 5.0.4
-			n(-2050, bubbleDown({ ["timeline"] = { "created 5.0.1" } }, {
-				q(32010),	-- A Celestial Task
-				q(32011),	-- A Celestial Task
+			n(-2051, bubbleDown({ ["timeline"] = { "created 5.0.4" } }, {
 				q(31940),	-- Battle Pet Trainers: Pandaria
 				q(31988),	-- Daily Selected Scenario
 				q(31968),	-- Doubt Begins To Surface
@@ -566,7 +564,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(31939),	-- Test
 				q(31979),	-- The Returning Champion
 				q(31816),	-- Traitor Gluk
-				q(32396),	-- wr
+				q(32396),	-- Uncompletable Binding Quest [DND]
 				q(32013),	-- [Coming in Patch 5.1]
 				q(32014),	-- [Coming Soon...]
 				q(32015),	-- [Coming Soon...]
