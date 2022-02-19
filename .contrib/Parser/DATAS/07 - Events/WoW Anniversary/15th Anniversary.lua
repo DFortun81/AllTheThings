@@ -118,6 +118,13 @@ root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
+				q(56258, {	-- Ivus the Forest Lord
+					["qg"] = 154476,	-- Archdruid Renferal
+					["coord"] = { 43.9, 12.6, 1537 },
+					["cost"] = { { "i", 17423, 1 } },	-- Storm Crystal
+					["races"] = ALLIANCE_ONLY,
+					["isWeekly"] = true,
+				}),
 				q(57638, {	-- Korrak the Bloodrager
 					["provider"] = { "n", 158515 },	-- Lieutenant Haggerdin
 					["coord"] = { 43.6, 16.0, 1537 },
@@ -141,6 +148,13 @@ root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 					["coord"] = { 45.0, 48.0, 1537 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
+				}),
+				q(56259, {	-- Lokholar the Ice Lord
+					["qg"] = 154474,	-- Primalist Thurloga
+					["coord"] = { 50.1, 85.1, 1537 },
+					["cost"] = { { "i", 17306, 1 } },	-- Stormpike Soldier's Blood
+					["races"] = HORDE_ONLY,
+					["isWeekly"] = true,
 				}),
 				q(57641, {	-- Master Ryson's All Seeing Eye
 					--	unsure if this has faction requirements or anything along those lines
@@ -167,6 +181,18 @@ root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 					["coord"] = { 50.6, 82.0, 1537 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
+				}),
+				q(56256, {	-- The Battle for Alterac (A)
+					["provider"] = { "n", 154478 },	-- Prospector Stonehewer
+				--	["coord"] = { , ALTERAC_VALLEY },
+					["isWeekly"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(56257, {	-- The Battle for Alterac (H)
+					["provider"] = { "n", 154473 },	-- Voggah Deathgrip
+					["coord"] = { 55.0, 87.2, ALTERAC_VALLEY },
+					["isWeekly"] = true,
+					["races"] = HORDE_ONLY,
 				}),
 				q(57312, {	-- The Graveyards of Alterac
 					["provider"] = { "n", 158579 },	-- Corporal Teeka Bloodsnarl

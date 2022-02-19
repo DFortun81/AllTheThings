@@ -379,11 +379,6 @@ root("Zones", m(KALIMDOR, {
 				["description"] = "This quest is automatically offered to Horde players upon reaching level 30.",
 				["races"] = HORDE_ONLY,
 			}),
-			q(7241,  {	-- In Defense of Frostwolf
-				["provider"] = { "n", 13842 },	-- Frostwolf Ambassador Rokhstrom
-				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
-			}),
 			q(44663, {	-- In the Blink of an Eye
 				["sourceQuests"] = {
 					41002,	-- A Weapon of the Horde
