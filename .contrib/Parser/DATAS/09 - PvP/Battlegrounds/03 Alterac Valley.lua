@@ -708,6 +708,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				}),
 				q(7142, {	-- The Battle for Alterac (Horde)
 					["qg"] = 13817,	-- Voggah Deathgrip
+					-- #if AFTER CATA
 					["coord"] = { 58.6, 34.2, HILLSBRAD_FOOTHILLS },
 					-- #else
 					["coord"] = { 63.6, 60.4, ALTERAC_MOUNTAINS },
