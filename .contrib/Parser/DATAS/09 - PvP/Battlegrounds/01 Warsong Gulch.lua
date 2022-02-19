@@ -3,7 +3,7 @@
 -----------------------------------------------
 
 root("PVP", pvp(n(BATTLEGROUNDS, {
-	m(92, {	-- Warsong Gulch
+	m(WARSONG_GULCH, {
 		["maps"] = {
 			859,	-- Warsong Gulch
 			1339,	-- Warsong Gulch

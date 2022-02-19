@@ -3,7 +3,7 @@
 -----------------------------------------------
 
 root("PVP", pvp(n(BATTLEGROUNDS, {
-	m(1334, {	-- Wintergrasp
+	m(WINTERGRASP, {
 		["achievementID"] = 1752,	--  Master of Wintergrasp
 		["g"] = {
 			n(ACHIEVEMENTS, {

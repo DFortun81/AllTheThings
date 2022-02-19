@@ -9,7 +9,7 @@ local RUTHERFORD_TWING = 144064;
 -- #endif
 
 root("PVP", pvp(n(BATTLEGROUNDS, {
-	m(93, {	-- Arathi Basin
+	m(ARATHI_BASIN, {
 		["maps"] = {
 			837,	-- Arathi Basin
 			844,	-- Arathi Basin

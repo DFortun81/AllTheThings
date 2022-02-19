@@ -3,7 +3,7 @@
 -----------------------------------------------
 
 root("PVP", pvp(n(BATTLEGROUNDS, {
-	m(112, {	-- Eye of the Storm
+	m(EYE_OF_THE_STORM, {
 		["achievementID"] = 208,	-- Eye of the Storm Victory
 		["maps"] = { 397 },	-- Eye of the Storm (BG)
 		["g"] = {
