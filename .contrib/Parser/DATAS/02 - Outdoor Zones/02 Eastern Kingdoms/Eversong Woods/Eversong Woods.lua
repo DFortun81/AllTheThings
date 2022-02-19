@@ -308,6 +308,13 @@ _.Zones =
 								["lvl"] = lvlsquish(2, 1, 2),
 								-- #endif
 							}),
+							q(31170, {	-- Monk Training
+								["qg"] = 15278,	-- Magistrix Erona
+								["coord"] = { 61.0, 45.1, SUNSTRIDER_ISLE },
+								["races"] = { BLOODELF },
+								["classes"] = { MONK },
+								["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+							}),
 							q(9676, {	-- Paladin Training
 								["qg"] = 15278,	-- Magistrix Erona
 								-- #if AFTER MOP
@@ -573,6 +580,13 @@ _.Zones =
 									i(21001),	-- Striding Pants
 									i(21000),	-- Vigorous Bracers
 								},
+							}),
+							q(31171, {	-- Tiger Palm
+								["qg"] = 63332,	-- Pao
+								["coord"] = { 63.6, 42.6, SUNSTRIDER_ISLE },
+								["races"] = { BLOODELF },
+								["classes"] = { MONK },
+								["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
 							}),
 							q(8326, {	-- Unfortunate Measures
 								["qg"] = 15278,	-- Magistrix Erona

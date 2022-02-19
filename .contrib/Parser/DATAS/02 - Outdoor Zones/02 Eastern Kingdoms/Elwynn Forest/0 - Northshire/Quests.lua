@@ -77,6 +77,13 @@ _.Zones =
 							29083,	-- The Rear is Clear (non-human)
 						},
 					}),
+					q(31141, {	-- Calligraphed Letter
+						["provider"] = { "n", 197 },	-- Marshal McBride
+						["coord"] = { 33.5, 53.0, 425 },
+						["races"] = { HUMAN },
+						["classes"] = { MONK },
+						["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+					}),
 					q(26390, {	-- Ending the Invasion!
 						["provider"] = { "n", 197 },	-- Marshal McBride
 						["coord"] = { 33.5, 53.0, 425 },
@@ -283,6 +290,13 @@ _.Zones =
 						["races"] = { HUMAN },
 						["classes"] = { PALADIN },
 						["sourceQuest"] = 28762,	-- Beating Them Back!
+					}),
+					q(31142, {	-- Palm of the Tiger
+						["provider"] = { "n", 63258 },	-- Bao
+						["coord"] = { 41.0, 52.2, 425 },
+						["races"] = { HUMAN },
+						["classes"] = { MONK },
+						["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
 					}),
 					q(54,    {	-- Report to Goldshire
 						["provider"] = { "n", 197 },	-- Marshal McBride

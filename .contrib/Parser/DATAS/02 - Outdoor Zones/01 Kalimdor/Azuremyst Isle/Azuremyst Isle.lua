@@ -237,6 +237,11 @@ _.Zones =
 								["classes"] = { MAGE },
 								["lvl"] = lvlsquish(3, 1, 3),
 							}),
+							q(31172, {	-- Monk Training
+								["races"] = { DRAENEI },
+								["classes"] = { MONK },
+								["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+							}),
 							q(9287,  {	-- Paladin Training
 								["qg"] = 16501,	-- Aurelon
 								-- #if AFTER MOP
@@ -474,7 +479,7 @@ _.Zones =
 								["coord"] = { 50.6, 48.6, AMMEN_VALE },
 								["timeline"] = { "added 5.0.1.15640", "removed 7.0.3.10000" },
 								["classes"] = { MONK },
-								["races"] = ALLIANCE_ONLY,
+								["races"] = { DRAENEI },
 								["lvl"] = lvlsquish(3, 1, 3),
 							}),
 							q(9313,  {	-- Travel to Azure Watch

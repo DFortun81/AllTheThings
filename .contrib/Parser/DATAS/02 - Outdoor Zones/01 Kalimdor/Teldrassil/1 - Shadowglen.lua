@@ -26,10 +26,11 @@ root("Zones", m(KALIMDOR, {
 						["isBreadcrumb"] = true,
 					}),
 					q(31168, {	-- Calligraphed Sigil
-						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 2077 },	-- Melithar Staghelm
-						["classes"] = { MONK },
+						["coord"] = { 45.8, 73.0, 460 },
 						["races"] = { NIGHTELF, WORGEN },
+						["classes"] = { MONK },
+						["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
 					}),
 					q(28715, {	-- Demonic Thieves
 						["provider"] = { "n", 2077 },	-- Melithar Staghelm
@@ -120,6 +121,13 @@ root("Zones", m(KALIMDOR, {
 							{ 47.1, 55.9, 460 },
 							{ 41.4, 45.8, TELDRASSIL },
 						},
+					}),
+					q(31169, {	-- The Art of the Monk
+						["provider"] = { "n", 63331 },	-- Laoxi
+						["coord"] = { 48.6, 52.8, 460 },
+						["races"] = { NIGHTELF, WORGEN },
+						["classes"] = { MONK },
+						["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
 					}),
 					q(28713, {	-- The Balance of Nature
 						["provider"] = { "n", 2079 },	-- Ilthalaine

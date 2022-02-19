@@ -598,6 +598,11 @@ root("Zones", m(KALIMDOR, {
 							["classes"] = { MAGE },
 							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3.10000" },
 						}),
+						q(31162, {	-- The Arts of a Monk
+							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+							["races"] = { TROLL },
+							["classes"] = { MONK },
+						}),
 						q(24765, {	-- The Basics: Hitting Things (Druid)
 							["provider"] = { "n", 38243 },	-- Zen'tabra
 							["coords"] = {
@@ -867,6 +872,13 @@ root("Zones", m(KALIMDOR, {
 							},
 							["sourceQuest"] = 25131,	-- Vile Familiars
 						}),
+						q(31156, {	-- Calligraphed Parchment
+							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+							["provider"] = { "n", 3143 },	-- Gornek
+							["coord"] = { 44.8, 66.6, VALLEY_OF_TRIALS },
+							["races"] = { ORC },
+							["classes"] = { MONK },
+						}),
 						q(25126, {	-- Cutting Teeth
 							["provider"] = { "n", 3143 },	-- Gornek
 							["coords"] = {
@@ -946,6 +958,13 @@ root("Zones", m(KALIMDOR, {
 							},
 							["sourceQuest"] = 25132,	-- Burning Blade Medallion
 							["isBreadcrumb"] = true,
+						}),
+						q(31157, {	-- Tiger Palm
+							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+							["provider"] = { "n", 63296 },	-- Gato
+							["coord"] = { 42.6, 68.4, VALLEY_OF_TRIALS },
+							["races"] = { ORC },
+							["classes"] = { MONK },
 						}),
 						q(25129, {	-- Sarkoth
 							["provider"] = { "n", 3287 },	-- Hana'zua

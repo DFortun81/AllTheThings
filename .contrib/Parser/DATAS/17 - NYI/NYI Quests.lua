@@ -405,6 +405,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(31115),	-- FLAG - Freed Han
 				q(31219),	-- FLAG - Unlocked Nurong
 				q(31218),	-- FLAG - Unlocked Tenwu
+				q(31665),	-- FLAG - Vegetron 4000 Converted
 				q(29549),	-- Flightmaster Down
 				q(30364),	-- Fly, Spy!
 				q(31098),	-- Founding of the Order of the Cloud Serpent

@@ -1155,6 +1155,7 @@ _.Zones =
 };
 root("HiddenQuestTriggers",{
 	tier(MOP_TIER, {
+		q(31666),	-- FLAG - Wind-Reaver's Dagger - second trigger for Wind-Reaver's Dagger of Quick Strikes treasure
 		q(31282),	-- Kaz'tik Tracking Quest - triggers after freeing Kaz'tik from amber
 		q(31343),	-- Kovok Tracking - triggers after turning in "Reunited" (questID 31091), allows Kovok to follow you
 		q(31484),	-- Hisek Tracking Quest

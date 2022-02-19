@@ -734,6 +734,12 @@ _.Zones =
 					["isDaily"] = true,
 					["u"] = REMOVED_FROM_GAME,
 				}),
+				q(30300, {	-- The Key to Success
+					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+					["provider"] = { "n", 59334 },	-- Sun Tenderheart
+					["isDaily"] = true,
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(31390, {	-- The Klaxxi (A)
 					["coord"] = { 84.4, 61.6, VALE_OF_ETERNAL_BLOSSOMS },
 					["races"] = ALLIANCE_ONLY,
@@ -1024,3 +1030,8 @@ _.Zones =
 		}),
 	}),
 };
+root("HiddenQuestTriggers",{
+	tier(MOP_TIER, {
+		q(31652),	-- Roll Club: Serpent's Spine Tracking Quest
+	}),
+});
