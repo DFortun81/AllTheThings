@@ -209,6 +209,18 @@ _.Zones =
 					["coord"] = { 62.7, 23.3, VALE_OF_ETERNAL_BLOSSOMS },
 					["races"] = HORDE_ONLY,
 				}),
+				q(32016, {	-- Elder Charms of Good Fortune
+					["coord"] = { 85.2, 62.6, VALE_OF_ETERNAL_BLOSSOMS },
+					["provider"] = { "n", 64029 },	-- Elder Lin
+					["isWeekly"] = true,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(32017, {	-- Elder Charms of Good Fortune
+					["coord"] = { 62.0, 20.6, VALE_OF_ETERNAL_BLOSSOMS },
+					["provider"] = { "n", 63996 },	-- Elder Lin
+					["isWeekly"] = true,
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(30194, {	-- Encroaching Storm
 					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 					["provider"] = { "n", 59338 },	-- Che Wildwalker

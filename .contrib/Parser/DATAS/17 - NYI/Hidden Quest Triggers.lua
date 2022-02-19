@@ -909,6 +909,7 @@ _.HiddenQuestTriggers = {
 		q(31469),	-- UNUSED — completed with quest 31311
 		q(31485),	-- UNUSED - completed with quest 31281
 		q(31877),	-- The Inkmasters of the Arboretum - completed with quest 31876
+		q(32105),	-- Pristine Monument Ledger - completed with quest 31805
 		q(32107),	-- Flying Tiger Gourami - completed with quest 31443
 		q(32516),	-- The Bloodletter - completed with quest 32495 & 32530
 		q(33073),	-- [NOTUSED]Vignette: Ancient Saltsnap Turtle - completed with quest 33070
@@ -3205,6 +3206,7 @@ _.HiddenQuestTriggers = {
 		q(31615),	-- LFGDungeons - Mists - Heroic Random - Nth
 		q(31274),	-- LFGDungeons - Mists - Raid Finder - 1st
 		q(31275),	-- LFGDungeons - Mists - Raid Finder - Nth
+		q(32097),	-- Short-Supply Reward
 
 		-- SCENARIOS
 		q(32817),	-- Complete "Loyalty" Scenario — triggeres when turning in "The King and the Council"
@@ -3218,7 +3220,7 @@ _.HiddenQuestTriggers = {
 		q(32894),	-- LFGDungeons - Mists - Scenario - Heroic Random - Nth Bonus
 		q(31616, { ["_drop"] = { "g" }, }), -- LFGDungeons - Mists - Scenario - Normal Random - 1st
 		q(31617, { ["_drop"] = { "g" }, }), -- LFGDungeons - Mists - Scenario - Normal Random - Nth
-		q(31987),	-- LFGDungeons - Theramore Launch Event
+		q(31987, { ["_drop"] = { "g" }, }), -- LFGDungeons - Theramore Launch Event
 
 		-- PROVING GROUNDS
 		q(33089),	-- FLAG - Proving Grounds - Damage Bronze
