@@ -998,9 +998,9 @@ root("HiddenQuestTriggers",{
 		q(31051),	-- Chose Frost Mage
 		q(31052),	-- Chose Priest
 		q(31122),	-- Chose Prot Warrior
-		q(31212),	-- FLAG - Chose Tenwu
-		q(31213),	-- FLAG - Chose Taoshi
 		q(31214),	-- FLAG - Chose Nurong
+		q(31213),	-- FLAG - Chose Taoshi
+		q(31212),	-- FLAG - Chose Tenwu
 		q(31607),	-- Tracking Event: Finished Spiteful Spirits & Hatred Becomes Us
 		q(31053),	-- Tracking Event: Started Shado-Pan Dailies
 		q(31125),	-- Unlocked Chao
