@@ -342,7 +342,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	tier(MOP_TIER, {
 		n(QUESTS, {
 			-- 5.0.1
-			n(P501, bubbleDown({ ["timeline"] = { "created 5.0.1" } }, {
+			tier(MOP_TIER, 0.1, bubbleDown({ ["timeline"] = { "created 5.0.1" } }, {
 				q(30003),	-- A Book By Its Cover
 				q(30019),	-- A Breach in the Wall
 				q(30537),	-- A Fizzy Fusion
@@ -568,7 +568,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(32014),	-- [Coming Soon...]
 				q(32015),	-- [Coming Soon...]
 			})),
-			
+
 			-- 5.1.0
 			n(P510, bubbleDown({ ["timeline"] = {"created 5.1.0"} }, {
 				q(32367),	-- A Bit of Yak

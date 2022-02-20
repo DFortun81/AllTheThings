@@ -12194,10 +12194,21 @@ local function GetTierInfo(tierID, key)
 	end
 end
 local EJ_GetTierInfo = EJ_GetTierInfo;
+local math_floor = math.floor;
 local cache = app.CreateCache("tierID");
 local function CacheInfo(t, field)
-	local t, id = cache.GetCached(t);
-	t.name = EJ_GetTierInfo(id);
+	local _t, id = cache.GetCached(t);
+	-- patch can be included in the id
+	local tierID = math_floor(id);
+	rawset(t, "tierKey", tierID);
+	-- silly decimals... shift over by 4 and cut off the rest then shift back 2
+	local patch = math_floor(10000 * (id - tierID)) / 100;
+	if patch > 0 then
+		_t.name = tostring(tierID).."."..tostring(patch);
+	else
+		_t.name = EJ_GetTierInfo(tierID);
+	end
+	if field then return _t[field]; end
 end
 local fields = {
 	["key"] = function(t)
@@ -12211,13 +12222,13 @@ local fields = {
 	end,
 	-- Keyed values from 'tiers' data
 	["icon"] = function(t)
-		return GetTierInfo(t.tierID, "icon");
+		return GetTierInfo(t.tierKey or t.tierID, "icon");
 	end,
 	["lore"] = function(t)
-		return GetTierInfo(t.tierID, "lore");
+		return GetTierInfo(t.tierKey or t.tierID, "lore");
 	end,
 	["lvl"] = function(t)
-		return GetTierInfo(t.tierID, "lvl");
+		return GetTierInfo(t.tierKey or t.tierID, "lvl");
 	end,
 };
 

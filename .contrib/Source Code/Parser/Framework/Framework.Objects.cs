@@ -1871,7 +1871,7 @@ namespace ATT
                             // Integer Data Type Fields
                             if (ATT.Export.ObjectData.ContainsObjectType(field))
                             {
-                                item[field] = Convert.ToInt64(value);
+                                item[field] = value;
                                 return;
                             }
 
@@ -2115,9 +2115,9 @@ namespace ATT
                 {
                     // Cache the ID of the data we're merging into the container.
                     string mostSignificantID = objectData.ObjectType;
-                    if(data2.TryGetValue(mostSignificantID, out object mostSignificantValue) && mostSignificantValue.GetType().IsNumeric())
+                    if (data2.TryGetValue(mostSignificantID, out object mostSignificantValue) && mostSignificantValue.GetType().IsNumeric())
                     {
-                        var id = Convert.ToInt64(mostSignificantValue);
+                        var id = mostSignificantValue;
 
                         // Iterate through the list and search for an entry that matches the data
                         if (mostSignificantID == "itemID")
@@ -2335,9 +2335,10 @@ namespace ATT
                         }
 
                         // capture Raw Quest listing which appear multiple times, ignore Quests tied to Items, or removed Quests (because it's chaos)
-                        if (mostSignificantID == "questID" && ProcessingSourceData && AllQuests.ContainsKey(id))
+                        long longId = Convert.ToInt64(id);
+                        if (mostSignificantID == "questID" && ProcessingSourceData && AllQuests.ContainsKey(longId))
                         {
-                            DuplicateSourceQuests.Add(id);
+                            DuplicateSourceQuests.Add(longId);
                         }
                     }
                 }

@@ -1789,7 +1789,21 @@ spell = function(id, t)									-- Create a SPELL Object
 	return struct("spellID", id, t);
 end
 sp = spell;												-- Create a SPELL Object (alternative shortcut)
-tier = function(id, t)									-- Create a TIER Object
+tier = function(id, patch, t)							-- Create a TIER Object
+	-- patch is optional
+	if not t then
+		t = patch;
+	else
+		id = id + (patch / 100);
+		if isarray(t) then
+			local groups = {};
+			for _,group in ipairs(t) do
+				table.insert(groups, group);
+			end
+			t = { ["g"] = groups };
+		end
+		print("patch tier",id)
+	end;
 	return struct("tierID", id, t);
 end
 title = function(id, t)									-- Create a TITLE Object
