@@ -911,6 +911,8 @@ _.HiddenQuestTriggers = {
 		q(31877),	-- The Inkmasters of the Arboretum - completed with quest 31876
 		q(32105),	-- Pristine Monument Ledger - completed with quest 31805
 		q(32107),	-- Flying Tiger Gourami - completed with quest 31443
+		q(32196),	-- A Kind of Magic - DEPRECATED - completed with quest 32143
+		q(32341, { ["_drop"] = { "g" }, }), -- Demonstrate Your Power - completed with quest 32340
 		q(32516),	-- The Bloodletter - completed with quest 32495 & 32530
 		q(33073),	-- [NOTUSED]Vignette: Ancient Saltsnap Turtle - completed with quest 33070
 		q(33079),	-- The Demons Among Us - Alliance - completed with quest 40593 & 40607
@@ -3197,7 +3199,9 @@ _.HiddenQuestTriggers = {
 		q(33900),	-- Tracking Quest: Activated Arkonite 3
 		q(33901),	-- Tracking Quest: Activated Arkonite 4
 		q(33899),	-- Tracking Quest: Turn on the Holograms
-		q(32112),	-- FLAG - Been to Fight Club. Completing first fight
+		q(32112),	-- FLAG - Been to Fight Club - completing first fight
+		q(32113),	-- FLAG - Been to Fight Club Today
+		q(32444),	-- FLAG - Earned Brawler Title (Weekly)
 		q(32725),	-- Warlock Green Fire Questline - Reached Kanrethad
 		q(32666),	-- Warlock Green Fire Questline - Reached Kanrethad
 

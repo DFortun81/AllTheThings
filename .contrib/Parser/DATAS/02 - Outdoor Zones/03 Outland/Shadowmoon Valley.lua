@@ -2192,11 +2192,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(10872),	-- BETA Zuluhed the Whacked
 		q(11052),	-- OLD Akama's Promise (awarded "Akama's Promise" criteria)
 		-- #endif
-		-- #if AFTER MOP
-		q(32341, {	-- Demonstrate Your Power [Warlock Only]
-			i(93387),	-- Akama's Seal of Courage
-		}),
-		-- #endif
 	}),
 });
 -- #endif

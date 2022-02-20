@@ -568,6 +568,37 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(32014),	-- [Coming Soon...]
 				q(32015),	-- [Coming Soon...]
 			})),
+			
+			-- 5.1.0
+			n(P510, bubbleDown({ ["timeline"] = {"created 5.1.0"} }, {
+				q(32367),	-- A Bit of Yak
+				q(32375),	-- A Dash of That
+				q(32366),	-- A Lick of Fire
+				q(32195),	-- Anger Remains
+				q(32147),	-- Attack Daily 06
+				q(32360),	-- Awaiting the Black Harvest
+				q(32173),	-- Build Portal 01
+				q(32174),	-- Build Portal 01
+				q(32159),	-- Circle of Life
+				q(32129),	-- Defense Daily 06
+				q(32311),	-- Enlistment Orders
+				q(32312),	-- Enlistment Orders
+				q(32313),	-- Hunt Helheim
+				q(32306),	-- Lumber Collection Tracking
+				q(32155),	-- Necessary Breaks
+				q(32369),	-- Secrets of the Past
+				q(32314),	-- Slaughter Selenora
+				q(32359),	-- The Eye of the Naaru
+				q(32358),	-- The Soulcore
+				q(32415),	-- Their Tracks
+				q(32433),	-- Undermining the Under Miner
+				q(32458),	-- With the Wind's Blessing...
+				q(32459),	-- With the Wind's Blessing...
+				q(32425),	-- [NYI] A Return to Lion's Landing
+				q(32422),	-- [NYI] Into Violet Hold
+				q(32407),	-- [NYI] Magus Commerce Exchange
+				q(32424),	-- [NYI] What Had To Be Done
+			})),
 		}),
 	}),
 	tier(WOD_TIER, {
