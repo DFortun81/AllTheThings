@@ -130,7 +130,7 @@ root("Zones", m(KALIMDOR, {
 					["cr"] = 12577,	-- Jarrodenus <Hippogryph Master>
 					["coord"] = { 11.8, 77.6, AZSHARA },
 					["races"] = ALLIANCE_ONLY,
-					["timeline"] = { "added 1.11.1.10772" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 				}),
 				fp(683, {	-- Valormok, Azshara
 					["cr"] = 8610,	-- Kroum <Wind Rider Master>
@@ -1198,6 +1198,7 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 29.6, 40.6, AZSHARA },
 					["classes"] = { MAGE },
 					["lvl"] = 50,
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 				}),
 				q(14383, {	-- The Terrible Tinkers of the Ruined Reaches
 					["sourceQuests"] = { 14377 },	-- Befriending Giants

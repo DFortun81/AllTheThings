@@ -247,6 +247,7 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 7.0.3.22248", "
 						{ 52.6, 57.6, ORGRIMMAR },
 						{ 41.2, 78.8, THE_STORMWIND },
 					},
+					["timeline"] = { "added 7.0.3.22290" },
 					["g"] = {
 						i(136924),	-- Felbat Pup Pet
 						i(141604),	-- Glaive of the Fallen

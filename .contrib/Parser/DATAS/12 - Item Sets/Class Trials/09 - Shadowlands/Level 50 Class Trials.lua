@@ -155,9 +155,9 @@ root("GearSets", n(CLASS_TRIAL, {
 					})),
 					n(-9932, {	-- Windwalker
 						i(171988, {	-- Adventurer's Footlocker
-							i(170651),	-- Mistdancer Spire
-							i(170659),	-- Mistdancer Staff
-							i(170660),	-- Mistdancer Sword
+							un(45, i(170651)),	-- Mistdancer Spire
+							un(45, i(170659)),	-- Mistdancer Staff
+							un(45, i(170660)),	-- Mistdancer Sword
 						}),
 						i(153859),	-- Mistdancer Sword
 						i(153840),	-- Mistdancer Helm
@@ -211,11 +211,11 @@ root("GearSets", n(CLASS_TRIAL, {
 					})),
 					n(-9944, {	-- Retribution
 						i(171988, {	-- Adventurer's Footlocker
-							i(170676),	-- Sunsoul Bulwark
-							i(170673),	-- Sunsoul Scepter
-							i(170675),	-- Sunsoul Sword
+							un(45, i(170676)),	-- Sunsoul Bulwark
+							un(45, i(170673)),	-- Sunsoul Scepter
+							un(45, i(170675)),	-- Sunsoul Sword
 						}),
-						i(153893),	-- Sunsoul Warmaul
+						un(45, i(153893)),	-- Sunsoul Warmaul
 						i(153870),	-- Sunsoul Helm
 						i(153895),	-- Sunsoul Pendant
 						i(153872),	-- Sunsoul Pauldrons
@@ -251,7 +251,9 @@ root("GearSets", n(CLASS_TRIAL, {
 				}),
 				cl(ROGUE, {
 					i(171988, {	-- Adventurer's Footlocker
-						i(170712),	-- Lightdrinker Sword
+						un(45, i(170712)),	-- Lightdrinker Sword
+						un(45, i(170710)),	-- Lightdrinker Dagger
+						un(45, i(170711)),	-- Lightdrinker Shiv
 					}),
 					i(153959),	-- Lightdrinker Dagger
 					i(153960),	-- Lightdrinker Shiv
@@ -273,8 +275,8 @@ root("GearSets", n(CLASS_TRIAL, {
 				cl(SHAMAN, {
 					n(-9939, {	-- Elemental
 						i(171988, {	-- Adventurer's Footlocker
-							i(170725),	-- Streamtalker Aegis
-							i(170724),	-- Streamtalker Claws
+							un(45, i(170725)),	-- Streamtalker Aegis
+							un(45, i(170724)),	-- Streamtalker Claws
 						}),
 						i(153979),	-- Streamtalker Aegis
 						i(153973),	-- Streamtalker Claws
@@ -295,7 +297,7 @@ root("GearSets", n(CLASS_TRIAL, {
 					}),
 					n(-9940, {	-- Enhancement
 						i(171988, {	-- Adventurer's Footlocker
-							i(170726),	-- Streamtalker Talons
+							un(45, i(170726)),	-- Streamtalker Talons
 						}),
 						i(153983),	-- Streamtalker Talons
 						i(153987),	-- Streamtalker Helm
