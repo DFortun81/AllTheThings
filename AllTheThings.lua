@@ -6855,6 +6855,11 @@ local ObjectFunctions = {
 	["hash"] = function(t)
 		return app.CreateHash(t);
 	end,
+	-- modItemID doesn't exist for Items which NEVER use a modID or bonusID (illusions, music rolls, mounts, etc.)
+	["modItemID"] = function(t)
+		rawset(t, "modItemID", t.itemID);
+		return rawget(t, "modItemID");
+	end,
 };
 -- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)
 app.BaseObjectFields = not app.__perf and function(fields, type)
@@ -8928,10 +8933,6 @@ local fields = {
 		return ATTAccountWideData.Sources[rawget(t, "s")];
 	end,
 	["modItemID"] = function(t)
-		-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
-		-- Crieve question: What is this and why does it exist?
-		-- Run answer: Because items with different ModID's are actually treated as different items.
-		--   Eventually maybe we can have a better key to distinguish
 		rawset(t, "modItemID", GetGroupItemIDWithModID(t) or t.itemID);
 		return rawget(t, "modItemID");
 	end,
@@ -9153,10 +9154,6 @@ local fields = {
 				return link;
 			end
 		end
-	end,
-	["modItemID"] = function(t)
-		rawset(t, "modItemID", GetGroupItemIDWithModID(t) or t.itemID);
-		return rawget(t, "modItemID");
 	end,
 	["collectible"] = function(t)
 		return app.CollectibleIllusions;
@@ -10599,10 +10596,6 @@ local fields = {
 	["filterID"] = function(t)
 		return 108;
 	end,
-	["modItemID"] = function(t)
-		rawset(t, "modItemID", GetGroupItemIDWithModID(t) or t.itemID);
-		return rawget(t, "modItemID");
-	end,
 	["lvl"] = function(t)
 		return 40;
 	end,
@@ -12018,11 +12011,6 @@ local fields = {
 	["b"] = function(t)
 		-- If not tracking Recipes Account-Wide, then pretend that every Recipe is BoP
 		return t.itemID and app.AccountWideRecipes and 2 or 1;
-	end,
-	-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID or 0 if no ModID is present
-	["modItemID"] = function(t)
-		rawset(t, "modItemID", GetGroupItemIDWithModID(t) or t.itemID);
-		return rawget(t, "modItemID");
 	end,
 };
 app.BaseRecipe = app.BaseObjectFields(fields, "BaseRecipe");
