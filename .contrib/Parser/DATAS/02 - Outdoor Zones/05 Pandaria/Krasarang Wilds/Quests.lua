@@ -179,14 +179,6 @@ _.Zones =
 						i(88044),	-- Dojani Waistband
 					},
 				}),
-
-
-				q(31486, {	-- Everything I Know About Cooking
-					["provider"] = { "n", 62872 },	-- Cranfur the Noodler
-					["coord"] = { 53.5, 76.4, KRASARANG_WILDS },
-				}),
-
-
 				q(30080, {	-- Finding Yi-Mo
 					["provider"] = { "n", 57744 },	-- Mei Barrelbottom
 					["coord"] = { 79.7, 1.57, KRASARANG_WILDS },
@@ -582,15 +574,6 @@ _.Zones =
 					["provider"] = { "n", 57744 },	-- Mei Barrelbottom
 					["coord"] = { 79.7, 1.57, KRASARANG_WILDS },
 				}),
-
-
-				q(31392, {	-- Temple of the White Tiger
-					["provider"] = { "n", 60289 },	-- Leni Kelpenstout
-					["coord"] = { 54.5, 77.1, KRASARANG_WILDS },
-					["races"] = ALLIANCE_ONLY,
-				}),
-
-
 				q(30274, {	-- The Arcanic Oubliette
 					["coord"] = { 70.6, 28.4, KRASARANG_WILDS },
 					["races"] = ALLIANCE_ONLY,
@@ -744,16 +727,6 @@ _.Zones =
 						i(81541),	-- Balmy Drape
 					},
 				}),
-
-
-				q(31255, {	-- The Road to Kun-Lai
-					["sourceQuests"] = { 49541 },	-- Warchief's Command: Kun-Lai Summit!
-					["provider"] = { "n", 63778 },	-- Messenger Grummle
-					["coord"] = { 41.7, 29.9, KRASARANG_WILDS },
-					["races"] = HORDE_ONLY,
-				}),
-
-
 				q(30357, {	-- The Stoneplow Convoy (A)
 					["sourceQuests"] = {
 						30354,	-- No Sister Left Behind
@@ -1032,11 +1005,6 @@ _.Zones =
 					["sourceQuests"] = { 36608 },	-- Finding Nat Pagle
 					["provider"] = { "n", 63721 },	-- Nat Pagle
 					["races"] = HORDE_ONLY,
-				}),
-				q(31254, {	-- The Road to Kun-Lai
-					["sourceQuests"] = { 59559 },	-- Hero's Call: Kun-Lai Summit!
-					["provider"] = { "n", 63778 },	-- Messenger Grummle
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(30738, {	-- Thelonius
 					["provider"] = { "n", 60506 },	-- Thelonius

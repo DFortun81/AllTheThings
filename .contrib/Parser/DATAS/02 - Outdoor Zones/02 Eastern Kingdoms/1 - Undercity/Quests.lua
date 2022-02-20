@@ -231,12 +231,6 @@ _.Zones =
 					["coord"] = { 61.8, 42.0, UNDERCITY },
 					["races"] = { UNDEAD },
 				}),
-				q(28289, {	-- Moonglade Calls
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 52319 },	-- Mala Skywatcher
-					["classes"] = { DRUID },
-					["coord"] = { 55.0, 50.4, UNDERCITY },
-				}),
 				q(38346, {	-- Numismatics
 					["sourceQuests"] = { 38306 },	-- Mystery Notebook
 					["provider"] = { "n", 6566 },	-- Estelle Gendry

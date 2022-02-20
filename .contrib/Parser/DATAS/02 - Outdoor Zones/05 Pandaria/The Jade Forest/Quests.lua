@@ -404,21 +404,6 @@ _.Zones =
 					["coord"] = { 46.4, 96.3, THE_JADE_FOREST },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(31486, {	-- Everything I Know About Cooking (A)
-				--	this had SQs listed, but it was available to me on an alliance character that had done 0 quests in jade forest, not even the intro, so i think it was an oversight.
-					["requireSkill"] = COOKING,	-- this is technically a 'cooking' quest, but can be picked up by characters without the profession.
-					["provider"] = { "n", 56707 },	-- Chin
-					["coord"] = { 46.2, 45.4, THE_JADE_FOREST },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 86,
-				}),
-				q(31279, {	-- Everything I Know About Cooking (H)
-					["requireSkill"] = COOKING,
-					["provider"] = { "n", 62322 },	-- Graceful Swan
-					["coord"] = { 48.1, 34.5, THE_JADE_FOREST },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 86,
-				}),
 				q(30004, {	-- Everything In Its Place
 					["sourceQuests"] = {
 						30001,	-- Moth-Ridden
@@ -1278,24 +1263,6 @@ _.Zones =
 					["coord"] = { 28.8, 32.6, THE_JADE_FOREST },
 					["races"] = HORDE_ONLY,
 				}),
-				q(31392, {	-- Temple of the White Tiger (A)
-					["provider"] = { "n", 55809 },	-- Peiji Goldendraft
-					["coord"] = { 45.7, 43.7, THE_JADE_FOREST },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(31393, {	-- Temple of the White Tiger (H)
-				--	TODO: Flew by the area before and it wasn't here. Possibly requires "Boom Goes the Doonamite!" ?
-					["providers"] = {
-						{ "n", 55809 },	-- Peiji Goldendraft
-						{ "n", 63751 },	-- Farmhand Ko
-						{ "n", 64448 },	-- Hopsmaster Chang
-						{ "n", 64521 },	-- Wanderer Chu
-						{ "n", 66247 },	-- Tigermaster Liu-Do
-					},
-					["coord"] = { 45.7, 43.6, THE_JADE_FOREST },
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
-				}),
 				q(29933, {	-- The Bees' Knees
 					["minReputation"] = { 1228, FRIENDLY },
 					["sourceQuests"] = { 29879 },	-- Swallowed Whole
@@ -1470,18 +1437,6 @@ _.Zones =
 						i(90350),	-- Satin Robe of Eminent Domain
 						i(90349),	-- Silk Robe of Eminent Domain
 					},
-				}),
-				q(31254, {	-- The Road to Kun-Lai (A)
-					["sourceQuests"] = { 49559 },	-- Hero's Call: Kun-Lai Summit!
-					["provider"] = { "n", 63778 },	-- Messenger Grummle
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(31255, {	-- The Road to Kun-Lai (H)
-				--	TODO: Flew by the area before and it wasn't here. Possibly requires "Boom Goes the Doonamite!" ?
-					["sourceQuests"] = { 49541 },	-- Warchief's Command: Kun-Lai Summit!
-					["provider"] = { "n", 63778 },	-- Messenger Grummle
-					["coord"] = { 45.7, 43.8, THE_JADE_FOREST },
-					["races"] = HORDE_ONLY,
 				}),
 				q(29637, {	-- The Rumpus
 					["sourceQuests"] = { 29636 },	-- A Test of Endurance
@@ -1786,7 +1741,7 @@ root("HiddenQuestTriggers",{
 		q(29604),	-- Tracking Event: Saw East Temple Arrival Cinematic
 		q(29884),	-- Tracking Event: Spies Leave — triggers after turning in "The Pearlfin Situation" and "Road Rations" (questID 29883 & 29885)
 	}),
-});		
+});
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(MOP_TIER, {
 		n(ARMOR, {

@@ -727,9 +727,6 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 			["coord"] = { 54.9, 70.7, 407 },
 			["u"] = REMOVED_FROM_GAME, -- First Aid removed in 8.0.1 BfA Prepatch
 		}),
-		q(29484, {	-- Putting the Crunch in the Frog
-			["u"] = REMOVED_FROM_GAME,
-		}),
 		q(29509, {	-- Putting the Crunch in the Frog
 			["requireSkill"] = COOKING,
 			["isMonthly"] = true,
@@ -1146,7 +1143,7 @@ root("HiddenQuestTriggers",{
 		q(58572),	-- playing console game, remembthon something
 		q(57776),	-- unknown tracking quest that appeared after speaking to Selina Dourman
 	}),
-});	
+});
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(7906),	-- Darkmoon Cards - Beast

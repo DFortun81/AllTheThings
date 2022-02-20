@@ -177,9 +177,9 @@ _.Zones =
 			q(28688, {	-- Warchief's Command: Northern Stranglethorn Vale!
 				["isBreadcrumb"] = true,
 			}),
-			q(28711, {	-- Warchief's Command: Northrend!
-				["isBreadcrumb"] = true,
-			}),
+			-- q(???, {	-- Warchief's Command: Northrend! Doesn't exist?
+			-- 	["isBreadcrumb"] = true,
+			-- }),
 			q(28705, {	-- Warchief's Command: Outland!
 				["isBreadcrumb"] = true,
 			}),

@@ -128,12 +128,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(28289, {	-- Moonglade Calls
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 3034 },	-- Sheal Runetotem
-					["classes"] = { DRUID },
-					["coord"] = { 77.0, 27.4, THUNDER_BLUFF },
-				}),
 				q(3782,  {	-- Morrowgrain Research
 					["sourceQuests"] = { 3761 },	-- Un'Goro Soil
 					["provider"] = { "n", 5769 },	-- Arch Druid Hamuul Runetotem

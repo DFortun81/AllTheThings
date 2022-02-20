@@ -101,12 +101,6 @@ _.Zones =
 						i(35905),	-- Vinewoven Tunic
 					},
 				}),
-				q(29608, {	-- Allies in Dalaran -- TODO:: figure out where this leads
-					["provider"] = { "n", 23736 },	-- Pricilla Winterwind
-					["coord"] = { 59.7, 63.2, HOWLING_FJORD },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,	-- Gold said this gets invalidated by something, but idk what.
-				}),
 				q(11326, {	-- Alpha Worg (A)
 					["coord"] = { 29.6, 5.6, HOWLING_FJORD },
 					["races"] = ALLIANCE_ONLY,
@@ -441,11 +435,6 @@ _.Zones =
 					["coord"] = { 55.9, 55.7, HOWLING_FJORD },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
-				}),
-				q(29609, {	-- Friends in Dalaran
-					["coord"] = { 79.0, 29.7, HOWLING_FJORD },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 27344 },	-- Adeline Chambers
 				}),
 				q(11464, {	-- Gambling Debt
 					["provider"] = { "n", 24541 },	-- Taruk

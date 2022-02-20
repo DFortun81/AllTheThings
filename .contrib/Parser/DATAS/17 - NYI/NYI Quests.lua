@@ -526,7 +526,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(29709),	-- Tracking Event: Opened Shackle 3
 				q(29610),	-- Tracking Event: Player's First Arrival
 				q(29603),	-- Tracking Event: Provisioner Found
-				q(30564),	-- 	Tracking Event: Talked to Dog at Farm
 				q(30415),	-- Tracking Quest - Successful
 				q(29895),	-- Trail of the White Pawn
 				q(30520),	-- Tummy Trouble
@@ -549,7 +548,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(31759),	-- [RESCUE GOLDEN LOTUS SQUAD] [GET RID OF THIS?]
 				q(31731),	-- [SINK SHIPS] (Not Used?)
 			})),
-			
+
 			-- 5.0.4
 			n(-2122, bubbleDown({ ["timeline"] = { "created 5.0.4" } }, {
 				q(31940),	-- Battle Pet Trainers: Pandaria
@@ -1392,19 +1391,19 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(60463, { ["name"] = "Anima Appeal", }),	-- Anima Appeal
 				q(62168, { ["name"] = "Bonescript Dispatches", }),	-- Bonescript Dispatches
 			})),
-			
+
 			-- 9.0.2
 			n(-2181, bubbleDown({ ["timeline"] = { "created 9.0.2" } }, {
 				q(63192, { ["name"] = "Path of Ascension: Trial of Humility", ["_drop"] = {"g"} }),	-- Path of Ascension: Trial of Humility
 				q(63041, { ["name"] = "Short-Supply Reward", ["_drop"] = {"g"} }),	-- Short-Supply Reward
 				q(61524, { ["name"] = "The Ember Court", }),	-- The Ember Court
 			})),
-			
+
 			-- 9.0.5
 			n(-2182, bubbleDown({ ["timeline"] = { "created 9.0.5" } }, {
 
 			})),
-			
+
 			-- 9.1.0
 			n(-2183, bubbleDown({ ["timeline"] = { "created 9.1.0" } }, {
 				q(63751, { ["name"] = "A Terrible Power", }),	-- A Terrible Power
@@ -1425,7 +1424,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(64231, { ["name"] = "[DNT] Training Quest", }),	-- [DNT] Training Quest
 
 			})),
-			
+
 			-- 9.1.5
 			n(-2184, bubbleDown({ ["timeline"] = { "created 9.1.5" } }, {
 				q(64996, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
@@ -1437,17 +1436,17 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(65002, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
 				q(65003, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
 			})),
-			
+
 			-- 9.2.0
 			n(-2185, bubbleDown({ ["timeline"] = { "created 9.2.0" } }, {
 
 			})),
-			
+
 			-- 9.2.5
 			n(-2186, bubbleDown({ ["timeline"] = { "created 9.2.5" } }, {
 
 			})),
-			
+
 			-- 9.x.x
 			n(-2187, {
 				q(60124),

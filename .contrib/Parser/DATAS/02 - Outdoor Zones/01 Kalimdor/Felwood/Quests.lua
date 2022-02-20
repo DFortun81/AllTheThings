@@ -814,13 +814,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(15705)),	-- Tidecrest Blade
 					},
 				}),
-				q(28479, {	-- The Ruins of Kel'theril	-- breadcrumb?
-					["provider"] = { "n", 10920 },	-- Kelek Skykeeper
-					["coords"] = {
-						{ 51.2, 80.3, FELWOOD },
-						{ 46.8, 53.8, WINTERSPRING },
-					},
-				}),
 				q(28337, {	-- The Shredders of Irontree
 					["provider"] = { "n", 48493 },	-- Alton Redding
 					["coord"] = { 56.8, 18.4, FELWOOD },

@@ -77,19 +77,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(6973)),	-- Fire Hardened Leggings
 					},
 				}),
-				q(28287, {	-- Meet with Farseer Umbrua
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 52292 },	-- Droha
-					["classes"] = { SHAMAN },
-					["coord"] = { 43.8, 78.8, DARNASSUS },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(28289, {	-- Moonglade Calls
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 4217 },	-- Mathrengyl Bearwalker
-					["classes"] = { DRUID },
-					["coord"] = { 40.4, 27.6, DARNASSUS },
-				}),
 				q(26756, {	-- Nessa Shadowsong
 					["provider"] = { "n", 4241 },	-- Mydrannul
 					["coord"] = { 64.6, 53.0, DARNASSUS },

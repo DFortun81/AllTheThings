@@ -300,14 +300,6 @@ _.Zones =
 						i(65661),	-- Blue Mini Jouster
 					},
 				}),
-				q(29331, {	-- Elemental Bonds: The Vow -- originally offered in the molten front map but is this also offered in mount hyjal?
-					["g"] = {
-						i(71268),	-- Mantle of Doubt
-						i(71267),	-- Mantle of Desire
-						i(71270),	-- Mantle of Patience
-						i(71269),	-- Mantle of Fury
-					},
-				}),
 				q(25303, {	-- Elementary!
 					["coord"] = { 25.8, 41.6, MOUNT_HYJAL },
 					["provider"] = { "o", 202712 },	-- The Twilight Apocrypha
@@ -1342,10 +1334,6 @@ _.Zones =
 					["provider"] = { "n", 40578 },	-- Farden Talonshrike
 					["coord"] = { 37.2, 56.1, MOUNT_HYJAL },
 					["sourceQuest"] = 25525,	-- Wave One
-				}),
-				q(29282, {	-- Well Armed -- todo: unknown source quest
-					["provider"] = { "n", 52669 },	-- Matoclaw
-					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 				}),
 				q(29148, {	-- Wings Aflame
 					["provider"] = { "n", 52669 },	-- Matoclaw

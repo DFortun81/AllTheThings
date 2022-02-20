@@ -808,16 +808,6 @@ _.Zones =
 					["coord"] = { 55.0, 34.0, ULDUM },
 					["sourceQuest"] = 27628,	-- Send Word to Phaoris
 				}),
-				q(28845, {	-- The Vortex Pinnacle
-					["provider"] = { "n", 45772 },	-- General Ammantep
-					["coord"] = { 45.2, 37.7, ULDUM },
-					["isBreadcrumb"] = true,
-					["sourceQuests"] = {
-						27519,	-- Under the Choking Sands
-						27520,	-- Minions of Al'Akir
-						27706,	-- The Scepter of Orsis
-					},
-				}),
 				q(28198, {	-- The Weakest Link
 					["provider"] = { "n", 46134 },	-- High Commander Kamses
 					["coord"] = { 58.8, 46.1, ULDUM },

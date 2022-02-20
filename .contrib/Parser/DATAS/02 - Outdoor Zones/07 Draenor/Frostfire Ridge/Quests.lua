@@ -303,14 +303,6 @@ _.Zones =
 					["coord"] = { 52.5, 40.4, FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
 				}),
-				q(32985, {	-- Fury of Frostfire
-					["provider"] = { "n", 74330 },	-- Farseer Drek'Thar
-					["coord"] = { 70.0, 38.2, FROSTFIRE_RIDGE },
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(119145),	-- Firefury Totem
-					},
-				}),
 				q(32783, {	-- Ga'nar's Vengeance
 					["provider"] = { "n", 70860 },	-- Durotan
 					["coord"] = { 43.1, 41.3, 526 },

@@ -42,6 +42,18 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				]]--
+				q(29608, {	-- Allies in Dalaran -- TODO:: figure out where this leads
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,	-- Gold said this gets invalidated by something, but idk what.
+					["coords"] = {
+						{ 59.7, 63.2, HOWLING_FJORD },	-- Pricilla Winterwind
+						{ 58.9, 68.2, BOREAN_TUNDRA },	-- Tomas Riverwell
+					},
+					["qgs"] = {
+						23736,	-- Pricilla Winterwind
+						26879,	-- Tomas Riverwell
+					},
+				}),
 				q(13986, {	-- An Injured Colleague
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
@@ -144,6 +156,17 @@ _.Zones =
 					["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
 					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
 					["isWeekly"] = true,
+				}),
+				q(29609, {	-- Friends in Dalaran
+					["races"] = HORDE_ONLY,
+					["qgs"] = {
+						27344,	-- Adeline Chambers
+						25288,	-- Turida Coldwind
+					},
+					["coords"] = {
+						{ 79.0, 29.7, HOWLING_FJORD },	-- Adeline Chambers
+						{ 40.3, 51.3, BOREAN_TUNDRA },	-- Turida Coldwind
+					},
 				}),
 				--[[
 				q(32405, {	-- Hand of the Silver Covenant

@@ -1076,12 +1076,6 @@ _.Zones =
 						26377,	-- Unsolid Ground
 					},
 				}),
-				q(28824, {	-- Wayward Child
-					["lvl"] = 82,
-					["provider"] = { "n", 42465 },	-- Therazane
-					["coord"] = { 56.3, 12.2, 207 },
-					["sourceQuests"] = { 26871 },	-- A Rock Amongst Many
-				}),
 				q(26500, {	-- We're Surrounded
 					["lvl"] = 82,
 					["provider"] = { "n", 43160 },	-- Earthbreaker Dolomite

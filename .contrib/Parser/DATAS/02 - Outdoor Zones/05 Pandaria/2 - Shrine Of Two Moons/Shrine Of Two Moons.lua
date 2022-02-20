@@ -76,7 +76,6 @@ _.Zones =
 						["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
 						["u"] = REMOVED_FROM_GAME,
 					}),
-				--	q(31279),	-- Everything I Know About Cooking
 					q(33249, {	-- Proving Grounds
 						["coord"] = { 46.6, 56.5, 392 },
 						["races"] = HORDE_ONLY,

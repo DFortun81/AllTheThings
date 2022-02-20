@@ -19,12 +19,6 @@ _.Zones =
 				p(417, {	-- Rat
 					["crs"] = { 61366 },
 				}),
-				q(31823, {	-- Level Up!
-					["provider"] = { "n", 63073 },	-- Ansel Fincap
-					["coord"] = { 60.8, 54.2, TIRISFAL_GLADES },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 31577,	-- On The Mend
-				}),
 			})),
 		}),
 	}),

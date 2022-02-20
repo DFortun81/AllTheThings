@@ -664,10 +664,7 @@ _.Instances = { tier(MOP_TIER, {
 					}),
 					-- Mounts, Caches, and Quest Items!
 					i(87771),	-- Heavenly Onyx Cloud Serpent
-					{
-						["itemID"] = 89317,	-- Claw of Anger
-						["questID"] = 31809,	-- Remnants of Anger
-					},
+					i(89317),	-- Claw of Anger
 					i(90839, {	-- Cache of Sha-Touched Gold	-- TODO: should be symlink for duplicate rewards
 						i(86884),	-- Belt of Embodied Terror
 						i(86900),	-- Binder's Chain of Unending Summer

@@ -18,9 +18,20 @@ _.Instances = { tier(CATA_TIER, {
 					},
 				}),
 				q(28845, {	-- The Vortex Pinnacle
-					["provider"] = { "n", 49943 },	-- Itesh
 					["isBreadcrumb"] = true,
-					["sourceQuests"] = { 28779 },	-- A Long Way from Home
+					["qgs"] = {
+						45772,	-- General Ammantep
+						49943,	-- Itesh
+					},
+					["coords"] = {
+						{ 45.2, 37.7, ULDUM },	-- General Ammantep
+					},
+					["sourceQuests"] = {
+						27519,	-- Under the Choking Sands
+						27520,	-- Minions of Al'Akir
+						27706,	-- The Scepter of Orsis
+						28779,	-- A Long Way from Home
+					},
 				}),
 				q(28760, {	-- Vengeance for Orsis
 					["provider"] = { "n", 49943 },	-- Itesh

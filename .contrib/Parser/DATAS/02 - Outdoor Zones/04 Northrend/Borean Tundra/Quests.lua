@@ -115,11 +115,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 11929,	-- The Fall of Taunka'le Village
 				}),
-				q(29608, {	-- Allies in Dalaran
-					["coord"] = { 58.9, 68.2, BOREAN_TUNDRA },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 26879 },	-- Tomas Riverwell
-				}),
 				q(11701, {	-- Back to the Airstrip
 					["coord"] = { 73.4, 18.7, BOREAN_TUNDRA },
 					["races"] = ALLIANCE_ONLY,
@@ -502,11 +497,6 @@ _.Zones =
 						i(37277),	-- Ermine Ruff Cloak
 						i(37545),	-- Graven Shoveltusk Pendant
 					},
-				}),
-				q(29609, {	-- Friends in Dalaran
-					["provider"] = { "n", 25288 },	-- Turida Coldwind
-					["coord"] = { 40.3, 51.3, BOREAN_TUNDRA },
-					["races"] = HORDE_ONLY,
 				}),
 				q(11904, {	-- Fruits of Our Labor
 					["coord"] = { 58.2, 62.8, BOREAN_TUNDRA },

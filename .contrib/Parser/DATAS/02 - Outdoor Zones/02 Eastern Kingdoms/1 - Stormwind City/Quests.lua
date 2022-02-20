@@ -524,6 +524,19 @@ root("Zones", {
 						un(REMOVED_FROM_GAME, i(10748)),	-- Wanderlust Boots
 					},
 				}),
+				q(28287, {	-- Meet with Farseer Umbrua
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { SHAMAN },
+					["isBreadcrumb"] = true,
+					["qgs"] = {
+						52292,	-- Droha
+						23127,	-- Farseer Javad
+					},
+					["coords"] = {
+						{ 43.8, 78.8, DARNASSUS },	-- Droha
+						{ 55.2, 29.0, IRONFORGE },	-- Farseer Javad
+					},
+				}),
 				q(60965, {	-- Mists of Pandaria: Onward to Adventure in Pandaria
 					["repeatable"] = true,
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
@@ -671,12 +684,6 @@ root("Zones", {
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.3, 17.3, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(28289, {	-- Moonglade Calls
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 44395 },	-- Celestine of the Harvest
-					["classes"] = { DRUID },
-					["coord"] = { 57.6, 24.8, STORMWIND_CITY },
 				}),
 				q(6187,  {	-- Order Must Be Restored
 					["providers"] = {

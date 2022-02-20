@@ -555,7 +555,10 @@ _.Zones =
 				}),
 				q(28479, {	-- The Ruins of Kel'Theril
 					["provider"] = { "n", 10920 },	-- Kelek Skykeeper
-					["coord"] = { 46.8, 53.8, WINTERSPRING },
+					["coords"] = {
+						{ 51.2, 80.3, FELWOOD },
+						{ 46.8, 53.8, WINTERSPRING },
+					},
 				}),
 				q(28856, {	-- The Sands of Silithus
 					["provider"] = { "n", 11118 },	-- Innkeeper Vizzie

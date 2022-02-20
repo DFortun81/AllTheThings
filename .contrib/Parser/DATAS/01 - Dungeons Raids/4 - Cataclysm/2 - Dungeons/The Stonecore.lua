@@ -21,7 +21,10 @@ _.Instances = { tier(CATA_TIER, {
 					["provider"] = { "n", 50048 },	-- Earthwarden Yrsa
 				}),
 				q(28824, {	-- Wayward Child
-					["provider"] = { "n", 42465 },	-- Therazane <The Stonemother>
+					["qg"] = 42465,	-- Therazane <The Stonemother>
+					["coord"] = { 56.3, 12.2, 207 },
+					["sourceQuest"] = 26871,	-- A Rock Amongst Many
+					["lvl"] = 82,
 					["groups"] = {
 						i(66897),	-- Crystal Shimmer Cloak
 						i(66894),	-- Leggings of the Lost Child

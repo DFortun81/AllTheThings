@@ -603,16 +603,6 @@ _.Zones =
 						{ "n", 63622 },	-- Wu Kao Rogue
 					},
 				}),
-				q(31392, {	-- Temple of the White Tiger (A)
-					["coord"] = { 74.8, 81.3, TOWNLONG_STEPPES },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 66247 },	-- Tigermaster Liu-Do
-				}),
-				q(31393, {	-- Temple of the White Tiger (H)
-					["coord"] = { 74.8, 81.3, TOWNLONG_STEPPES },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 66247 },	-- Tigermaster Liu-Do
-				}),
 				q(30900, {	-- Terror of the Dread Wastes
 					["coord"] = { 74.2, 85.0, TOWNLONG_STEPPES },
 					["provider"] = { "n", 61021 },	-- Taoshi
@@ -1006,6 +996,6 @@ root("HiddenQuestTriggers",{
 		q(31125),	-- Unlocked Chao
 		q(31126),	-- Unlocked Lao-Chen
 		q(31054),	-- Unlocked Yalia Sagewhisper
-		--q(31486),	-- Looting a Bag of Wu Kao Supplies - WRONG QUEST ID
+		--q(?????),	-- Looting a Bag of Wu Kao Supplies - WRONG QUEST ID
 	}),
 });

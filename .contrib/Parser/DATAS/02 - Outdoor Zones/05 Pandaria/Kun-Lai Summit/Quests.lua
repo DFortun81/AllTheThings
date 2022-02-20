@@ -389,11 +389,6 @@ _.Zones =
 						i(84530),	-- Swordmistress' Greatsword
 					},
 				}),
-				q(31279, {	-- Everything I Know About Cooking
-					["coord"] = { 64.2, 61.3, KUN_LAI_SUMMIT },
-					["provider"] = { "n", 59405 },	-- Li Goldendraft
-					["requireSkill"] = COOKING,
-				}),
 				q(30571, {	-- Farmhand Freedom
 					["coord"] = { 60.2, 85.7, KUN_LAI_SUMMIT },
 					["provider"] = { "n", 59573 },	-- Farmer Chow
@@ -923,29 +918,42 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(31392, {	-- Temple of the White Tiger (A)
-					["coord"] = { 72.0, 94.2, KUN_LAI_SUMMIT },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
-					["providers"] = {
-						{ "n", 63751 },	-- Farmhand Ko
-						{ "n", 64448 },	-- Hopsmaster Chang
-						{ "n", 60289 },	-- Leni Kelpenstout
-						{ "n", 55809 },	-- Peiji Goldendraft
-						{ "n", 66247 },	-- Tigermaster Liu-Do
-						{ "n", 64521 },	-- Wanderer Chu
+					["coords"] = {
+						{ 72.0, 94.2, KUN_LAI_SUMMIT },
+						{ 54.5, 77.1, KRASARANG_WILDS },	-- Leni Kelpenstout
+						{ 45.7, 43.7, THE_JADE_FOREST },	-- Peiji Goldendraft
+						{ 74.8, 81.3, TOWNLONG_STEPPES },	-- Tigermaster Liu-Do
+						{ 55.8, 51.8, VALLEY_OF_THE_FOUR_WINDS },	-- Hopsmaster Chang
+					},
+					["qgs"] = {
+						63751,	-- Farmhand Ko
+						64448,	-- Hopsmaster Chang
+						60289,	-- Leni Kelpenstout
+						55809,	-- Peiji Goldendraft
+						66247,	-- Tigermaster Liu-Do
+						64521,	-- Wanderer Chu
 					},
 				}),
 				q(31393, {	-- Temple of the White Tiger (H)
-					["coord"] = { 72.0, 94.2, KUN_LAI_SUMMIT },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
-					["providers"] = {
-						{ "n", 63751 },	-- Farmhand Ko
-						{ "n", 64448 },	-- Hopsmaster Chang
-						{ "n", 60289 },	-- Leni Kelpenstout
-						{ "n", 55809 },	-- Peiji Goldendraft
-						{ "n", 66247 },	-- Tigermaster Liu-Do
-						{ "n", 64521 },	-- Wanderer Chu
+					["coords"] = {
+						{ 72.0, 94.2, KUN_LAI_SUMMIT },
+						{ 54.5, 77.1, KRASARANG_WILDS },	-- Leni Kelpenstout
+						--	TODO: Flew by the area before and it wasn't here. Possibly requires "Boom Goes the Doonamite!" ?
+						{ 45.7, 43.7, THE_JADE_FOREST },	-- Peiji Goldendraft
+						{ 74.8, 81.3, TOWNLONG_STEPPES },	-- Tigermaster Liu-Do
+						{ 55.8, 51.8, VALLEY_OF_THE_FOUR_WINDS },	-- Hopsmaster Chang
+					},
+					["qgs"] = {
+						63751,	-- Farmhand Ko
+						64448,	-- Hopsmaster Chang
+						60289,	-- Leni Kelpenstout
+						55809,	-- Peiji Goldendraft
+						66247,	-- Tigermaster Liu-Do
+						64521,	-- Wanderer Chu
 					},
 				}),
 				q(31207, {	-- The Arena of Annihilation
@@ -963,10 +971,6 @@ _.Zones =
 						i(90460),	-- Cloudbender Kobo's Chilled Crossbow
 						i(90459),	-- Liuyang's Light-Lit Longshank
 					},
-				}),
-				q(32398, {	-- The Bell Speaks (H)
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 68337 },	-- Ishi
 				}),
 				q(30603, {	-- The Broketooth Ravage
 					["coord"] = { 49.1, 70.4, KUN_LAI_SUMMIT },
@@ -1197,17 +1201,32 @@ _.Zones =
 						30496,	-- The Waterspeaker's Staff
 					},
 				}),
+				q(31254, {	-- The Road to Kun-Lai
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = { 49559 },	-- Hero's Call: Kun-Lai Summit!
+					["qgs"] = {
+						63778,	-- Messenger Grummle
+					},
+					["coords"] = {
+						{ 70.0, 23.6, VALLEY_OF_THE_FOUR_WINDS },	-- Messenger Grummle
+					},
+				}),
 				q(31255, {	-- The Road to Kun-Lai
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 63778 },	-- Messenger Grummle
+					["sourceQuests"] = { 49541 },	-- Warchief's Command: Kun-Lai Summit!
+					["qgs"] = {
+						63778,	-- Messenger Grummle
+					},
+					["coords"] = {
+						{ 70.0, 23.6, VALLEY_OF_THE_FOUR_WINDS },
+						{ 41.7, 29.9, KRASARANG_WILDS },
+				--	TODO: Flew by the area before and it wasn't here. Possibly requires "Boom Goes the Doonamite!" ?
+						{ 45.7, 43.8, THE_JADE_FOREST },
+					},
 				}),
 				q(38936, {	-- The Road to Kun-Lai (Adventure guide)
 					["isBreadcrumb"] = true,
 					["description"] = "This quest needs to be accepted from the 'Adventure Guide'.",
-				}),
-				q(31254, {	-- The Road to Kun-Lai
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 63778 },	-- Messenger Grummle
 				}),
 				q(30806, {	-- The Scent of Life
 					["coord"] = { 60.6, 21.3, KUN_LAI_SUMMIT },
