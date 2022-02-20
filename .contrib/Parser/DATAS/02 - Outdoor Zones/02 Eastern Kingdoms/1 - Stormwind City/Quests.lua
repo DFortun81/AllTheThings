@@ -910,7 +910,7 @@ root("Zones", {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(39691, {	-- The Call of War
-					["provider"] = { "n", 39691 },	-- Archmage Khadgar
+					["provider"] = { "n", 97296 },	-- Archmage Khadgar
 					["classes"] = { DEMONHUNTER },
 					["coord"] = { 72.4, 47.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,

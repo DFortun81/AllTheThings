@@ -1574,6 +1574,16 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 78466 },	-- Gazlowe
 					["sourceQuest"] = 34775,	-- Mission Probable
 				}),
+				q(33111, {	-- Bounty: Twisted Ancient
+					["providers"] = {
+						{ "o", 232397 },	-- Bulletin Board
+						{ "o", 232398 },	-- Bulletin Board
+						{ "o", 232400 },	-- Bulletin Board
+					},
+					["coord"] = { 43.5, 45.0, LUNARFALL },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(38356, {	-- Bringing the Bass
 					["sourceQuests"] = { 36615 },	-- My Very Own Castle
 					["provider"] = { "n", 91589 },	-- Fix "Smallie" Biggswrench

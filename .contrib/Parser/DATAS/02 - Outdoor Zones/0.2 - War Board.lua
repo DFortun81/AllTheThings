@@ -162,9 +162,6 @@ _.Zones =
 			q(49549, {	-- Warchief's Command: Nagrand! (Draenor)
 				["isBreadcrumb"] = true,
 			}),
-			q(39189, {	-- Warchief's Command: Nagrand! (NYI - duplicate?)
-				["u"] = NEVER_IMPLEMENTED,
-			}),
 			q(39196, {	-- Warchief's Command: Nagrand! (Outland)
 				["isBreadcrumb"] = true,
 			}),

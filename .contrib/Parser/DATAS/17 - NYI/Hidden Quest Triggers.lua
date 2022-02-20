@@ -894,6 +894,7 @@ _.HiddenQuestTriggers = {
 		q(30680),	-- Holed Up - completed with quest 30682
 		q(30681),	-- Holed Up - completed with quest 30682
 		q(30744),	-- Kota Blend - completed with quest 30825
+		q(30765),	-- Regaining Honor - completed with quest 30724
 		q(30766),	-- Profiting off of the Past - completed with quest 30595
 		q(30817),	-- The Healing of Shen-zin Su - completed with quest 29799
 		q(30818),	-- A New Fate - completed with quest 29800
@@ -901,21 +902,27 @@ _.HiddenQuestTriggers = {
 		q(30988),	-- The Alliance Way - completed with quest 31013
 		q(31016),	-- The Lorewalkers - completed with quest 31367 & 31368
 		q(31033),	-- Adventurers Wanted: Ragefire Chasm - completed with quest 31034 & 31036 & 31037
+		q(31035),	-- Enemies Below - completed with quest 26865 & 26866 & 26867
 		q(31129),	-- Fate of the Stormstouts - completed with quest 31076
 		q(31174),	-- The Dread Vos - completed with quest 31019
 		q(31206),	-- The Crucible of Carnage: The Bloodeye Bruiser! - completed with quest 27863
 		q(31373),	-- The Order of the Cloud Serpent - completed with quest 32461
 		q(31375),	-- The Order of the Cloud Serpent - completed with quest 32461
+		q(31445),	-- zzOld - completed with quest 31369 & 31370
 		q(31469),	-- UNUSED — completed with quest 31311
 		q(31485),	-- UNUSED - completed with quest 31281
+		q(31530),	-- Mission: The Hozen Dozen - completed with quest 31529
+		q(31806, { ["_drop"] = { "g" }, }), -- Test Quest - completed with quest 31802
 		q(31877),	-- The Inkmasters of the Arboretum - completed with quest 31876
 		q(32105),	-- Pristine Monument Ledger - completed with quest 31805
 		q(32107),	-- Flying Tiger Gourami - completed with quest 31443
 		q(32196),	-- A Kind of Magic - DEPRECATED - completed with quest 32143
 		q(32341, { ["_drop"] = { "g" }, }), -- Demonstrate Your Power - completed with quest 32340
 		q(32516),	-- The Bloodletter - completed with quest 32495 & 32530
+		q(33071),	-- The Call of War - completed with quest 39691
 		q(33073),	-- [NOTUSED]Vignette: Ancient Saltsnap Turtle - completed with quest 33070
 		q(33079),	-- The Demons Among Us - Alliance - completed with quest 40593 & 40607
+		q(33264),	-- A Proper Burial - completed with quest 33125
 		q(33267),	-- [Deprecated] - completed with quest 33461
 		q(33380),	-- REUSE - completed with quest 33622
 		q(33407),	-- REUSE - completed with quest 33622
@@ -930,6 +937,7 @@ _.HiddenQuestTriggers = {
 		q(34506),	-- Bonus Objective: Kill Grimfrost Ogres - completed with quest 33145
 		q(34565),	-- Tearing Up Talador - completed with quest 34898
 		q(34570),	-- REUSE - completed with quest 34154 & 34564
+		q(34734),	-- The Loyalty of Olin Umberhide - completed with quest 34729
 		q(34817),	-- Altar Altercation - completed with quest 34423
 		q(35251),	-- The Bounty of Bladespire - completed with quest 33657
 		q(35340),	-- What Happened Here? - completed with quest 35339
@@ -941,6 +949,7 @@ _.HiddenQuestTriggers = {
 		q(35392),	-- The Nether Approaches - completed with quest 35087
 		q(35431),	-- The Best Poison - completed with quest 35205
 		q(35653),	-- Wood is Wood - completed with quest 36368 & 35505
+		q(36061),	-- [Deprecated] Ogron Boss - completed with quest 37511
 		q(36079),	-- A Hero's Welcome - completed with quest 34575
 		q(36461),	-- Locating the Lapidarist - completed with quest 36352
 		q(36501),	-- Iron Horde Invasion - completed with quest 36498
@@ -962,19 +971,12 @@ _.HiddenQuestTriggers = {
 		q(38305),	-- Cenarius, Keeper of the Grove — completed with quest 40122
 		q(39058, {["_drop"] = { "g" }}),	-- Critters of Draenor — completed with quest 38299 & 38300
 		q(39127),	-- Beyond the Wall - completed with quest 31386 & 31388
+		q(39189),	-- Warchief's Command: Nagrand! - completed with quest 9957 & 9960 & 9961 & 39182 & 39188
 		q(39396),	-- NOT USED - completed with quest 39394 & 38463
+		q(39692, { ["_drop"] = { "g" }, }), -- The Call of War - completed with quest 39691
 		q(39978),	-- Meet the Recruits - completed with quest 32715
 		q(45405),	-- Breaching the Sanctum - completed with quest 44719
 		q(49563),	-- Warchief's Command: Frostfire Ridge! - completed with quest 49545
-
-		-- Kun-lai Summit
-		--q(30765),	-- Regaining Honor - TODO: figure out from where it gets completed
-					-- probably triggers around the completion of "A Terrible Sacrifice"
-
-		-- Frostfire Ridge
-		--q(33264),	-- A Proper Burial - TODO: figure out from where it gets completed
-		--q(34734),	-- The Loyalty of Olin Umberhide - TODO: figure out from where it gets completed
-		--q(37062),	-- Tricks of the Trade - TODO: figure out from where it gets completed
 
 		-------------------
 		---   CLASSIC   ---
