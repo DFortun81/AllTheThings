@@ -4434,6 +4434,10 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		if group.u and (not group.crs or group.itemID or group.s) then
 			tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][group.u][2], wrap = true });
 		end
+		-- an item used for a faction which is repeatable
+		if group.itemID and group.factionID and group.repeatable then
+			tinsert(info, { left = L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(group.factionID)) or ("Faction #" .. tostring(group.factionID))) .. "'", wrap = true, color = "ff66ccff" });
+		end
 		-- Pet Battles
 		if group.pb then
 			tinsert(info, { left = L["REQUIRES_PETBATTLES"] });
@@ -4447,9 +4451,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				tinsert(info, 1, { left = L["MARKS_OF_HONOR_DESC"], color = "ffff8426" });
 			end
 		end
-		-- an item used for a faction which is repeatable
-		if group.itemID and group.factionID and group.repeatable then
-			tinsert(info, { left = L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(group.factionID)) or ("Faction #" .. tostring(group.factionID))) .. "'", wrap = true, color = "ff66ccff" });
+		-- Ignored for Source/Progress
+		if group.sourceIgnored then
+			tinsert(info, { left = L["DOES_NOT_CONTRIBUTE_TO_PROGRESS"] });
 		end
 	end
 
@@ -4846,6 +4850,7 @@ local ThingKeys = {
 	["questID"] = true,
 	["objectID"] = true,
 	["encounterID"] = true,
+	["artifactID"] = true,
 	["achievementID"] = true,	-- special handling
 };
 -- Builds a 'Source' group from the parent of the group (or other listings of this group) and lists it under the group itself for
@@ -5128,6 +5133,7 @@ end
 app.CacheField = CacheField;
 -- These are the fields we store.
 fieldCache["achievementID"] = {};
+fieldCache["achievementCategoryID"] = {};
 fieldCache["artifactID"] = {};
 fieldCache["azeriteEssenceID"] = {};
 fieldCache["creatureID"] = {};
@@ -5189,6 +5195,9 @@ fieldConverters = {
 	-- Simple Converters
 	["achievementID"] = function(group, value)
 		CacheField(group, "achievementID", value);
+	end,
+	["achievementCategoryID"] = function(group, value)
+		CacheField(group, "achievementCategoryID", value);
 	end,
 	["achID"] = function(group, value)
 		CacheField(group, "achievementID", value);
@@ -15121,6 +15130,10 @@ RowOnEnter = function (self)
 			if app.Settings:GetTooltipSetting("Descriptions") and reference.description then
 				GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1);
 			end
+			-- an item used for a faction which is repeatable
+			if reference.itemID and reference.factionID and reference.repeatable then
+				GameTooltip:AddLine(L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(group.factionID)) or ("Faction #" .. tostring(group.factionID))) .. "'", 0.4, 0.8, 1, 1, true);
+			end
 			-- Unobtainable
 			if reference.u then
 				GameTooltip:AddLine(L["UNOBTAINABLE_ITEM_REASONS"][reference.u][2], 1, 1, 1, 1, true);
@@ -15136,6 +15149,10 @@ RowOnEnter = function (self)
 			-- Ignored for Source/Progress
 			if reference.sourceIgnored then
 				GameTooltip:AddLine(L["DOES_NOT_CONTRIBUTE_TO_PROGRESS"], 1, 1, 1, 1, true);
+			end
+			-- Has a symlink for additonal information
+			if reference.sym then
+				GameTooltip:AddLine(L["SYM_ROW_INFORMATION"], 1, 1, 1, 1, true);
 			end
 		-- else app.PrintDebug("skipped common tooltip info due to search results")
 		end
@@ -17520,13 +17537,14 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 								elseif row.expanded then
 									ExpandGroupsRecursively(row, false, true);
 								end
-							-- Zone Drops should also be expanded within instances
-							elseif row.headerID == 0 then
+							-- Zone Drops/Common Boss Drops should also be expanded within instances
+							elseif row.headerID == 0 or row.headerID == -1 then
 								if not row.expanded then ExpandGroupsRecursively(row, true, true); expanded = true; end
 							end
 						end
 					end
 				end
+				app.PrintDebug("Warn:Difficulty")
 				if app.Settings:GetTooltipSetting("Warn:Difficulty") then
 					if difficultyID and difficultyID > 0 and self.data.g then
 						local missing, found, other;

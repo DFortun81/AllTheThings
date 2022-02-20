@@ -249,6 +249,7 @@ app.L = {
 	["TOP_ROW_TO_LOCK"] = "|cff3399ffAlt + Click to Lock this Window";
 	["TOP_ROW_TO_UNLOCK"] = "|cffcf0000Alt + Click to Unlock this Window";
 	["QUEST_ROW_INSTRUCTIONS"] = "Right Click to see any Quest Chain Requirements";
+	["SYM_ROW_INFORMATION"] = "Right Click to see additional content which is Sourced in another location";
 	["QUEST_ONCE_PER_ACCOUNT"] = "Once-Per-Account Quest";
 	["QUEST_ONCE_PER_ACCOUNT_FORMAT"] = "Completed By: %s";
 

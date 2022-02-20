@@ -14,20 +14,29 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, {
 		})),
 		un(DAY_OF_THE_DEAD, ach(9428)),	-- Calavera
 		un(DAY_OF_THE_DEAD, ach(3456)),	-- Dead Man's Party
-		un(LOVE_IS_IN_THE_AIR, ach(1693, {		-- Fool For Love
-			title(103),				-- the Love Fool
-			crit(1),				-- Charming
-			crit(2),				-- Shafted!
-			crit(3),				-- Flirt with Disaster
-			crit(4),				-- Lonely?
-			crit(5),				-- Dangerous Love
-			crit(6),				-- The Rocket's Pink Glare
-			crit(7),				-- Nation of Adoration
-			crit(8),				-- Fistful of Love
-			crit(9),				-- Sweet Tooth
-			crit(10),				-- Be Mine!
-			crit(11),				-- My Love is Like a Red, Red Rose
-			crit(12),				-- I Pitied The Fool
+		un(LOVE_IS_IN_THE_AIR, ach(1693, {	-- Fool For Love
+			-- Meta Achievement should symlink the contained Achievements from Source
+			["sym"] = {
+				{"select","achievementID",
+					260,	-- Charming
+					1188,	-- Shafted!
+					1279,	-- Flirt With Disaster [Alliance]
+					1280,	-- Flirt With Disaster [Horde]
+					1291,	-- Lonely?
+					1695,	-- Dangerous Love
+					1696,	-- The Rocket's Pink Glare
+					1697,	-- Nation of Adoration [Alliance]
+					1698,	-- Nation of Adoration [Horde]
+					1699,	-- Fistful of Love
+					1702,	-- Sweet Tooth
+					1701,	-- Be Mine!
+					1703,	-- My Love is Like a Red, Red Rose
+					1704,	-- I Pitied The Fool
+				},
+			},
+			["g"] = {
+				title(103),	-- the Love Fool
+			},
 		})),
 		un(CHILDRENS_WEEK, ach(1793, {		-- For the Children
 			title_gendered(105, 104),	-- Patron / Matron
