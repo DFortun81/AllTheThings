@@ -2,8 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-_.ExpansionFeatures =
-{
+root("ExpansionFeatures", {
 	tier(BFA_TIER, {
 		n(-10057, {	-- War Effort
 			n(-233, {	-- War Front: The Battle for Stromgarde
@@ -66,4 +65,14 @@ _.ExpansionFeatures =
 			}),
 		}),
 	}),
-};
+});
+
+root("HiddenQuestTriggers", {
+	tier(BFA_TIER, {
+		n(-10057, {	-- War Effort
+			n(-233, {	-- War Front: The Battle for Stromgarde
+				q(51342, {["repeatable"]=true}),	-- completion of Normal warfront
+			}),
+		}),
+	}),
+});

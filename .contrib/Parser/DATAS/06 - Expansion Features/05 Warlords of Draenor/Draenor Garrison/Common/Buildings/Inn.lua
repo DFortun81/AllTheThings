@@ -647,6 +647,7 @@ _.ExpansionFeatures =
 						}),
 						q(37159, {	-- Aviana's Request
 							["provider"] = { "n", 87999 },	--  Skylord Omnuron
+							["maps"] = { 601, 602 },	-- Skyreach
 							["g"] = {
 								i(119093),	-- Aviana's Feather
 							},
@@ -682,18 +683,21 @@ _.ExpansionFeatures =
 						}),
 						q(37165, {	-- Cenarion Concerns
 							["provider"] = { "n", 88004 },	--  Zen'kiki
+							["maps"] = { 620, 621 },	-- The Everbloom
 							["g"] = {
 								i(118935),	-- Ever-Blooming Frond
 							},
 						}),
 						q(37160, {	-- Cleaving Time
 							["provider"] = { "n", 88007 },	-- Gamon
+							["maps"] = { 606, 607, 608, 609 },	-- Grimrail Depot
 							["g"] = {
 								i(118937),	-- Gamon's Braid
 							},
 						}),
 						q(37151, {	-- Cold Steel
 							["provider"] = { "n", 88026 },	-- John J. Keeshan
+							["maps"] = { 606, 607, 608, 609 },	-- Grimrail Depot
 							["g"] = {
 								i(118918),	-- Bloody Bandanna
 							},
@@ -725,10 +729,20 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(33814, {	-- Fast Expansion
-							["provider"] = { "n", 81152 },	-- Scout Valdez
-							["coord"] = { 31.0, 31.1, LUNARFALL },	-- Garrison lvl 3
 							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,
+							["qgs"] = {
+								81152,	-- Scout Valdez
+								81153,	-- Scout Valdez
+							},
+							["sourceQuests"] = {
+								33059,	-- The Fate of Karabor
+								33081,	-- Escape From Shaz'gul
+							},
+							["coords"] = {
+								{ 31.0, 31.1, LUNARFALL },	-- Garrison lvl 3
+								{ 40.6, 54.8, DRAENOR_SHADOWMOON_VALLEY },
+							},
 						}),
 						q(37239, {	-- Fate of the Fallen
 							["provider"] = { "n", 88003 },	--  Cowled Ranger
@@ -740,6 +754,7 @@ _.ExpansionFeatures =
 						}),
 						q(37157, {	-- Feeling A Bit Morose
 							["provider"] = { "n", 87994 },	-- Moroes <Tower Steward>
+							["maps"] = { 595 },	-- Iron Docks
 							["g"] = {
 								i(119092),	-- Moroes' Famous Polish
 							},
@@ -754,12 +769,14 @@ _.ExpansionFeatures =
 						}),
 						q(37150, {	-- For the Birds
 							["provider"] = { "n", 88025 },	-- Mylune
+							["maps"] = { 620, 621 },	-- The Everbloom
 							["g"] = {
 								i(118921),	-- Everbloom Peachick
 							},
 						}),
 						q(37179, {	-- For the Children!
 							["provider"] = { "n", 88009 },	-- Millhouse Manastorm
+							["maps"] = { BLACKROCK_SPIRE, 617, 618 },	-- Upper Blackrock Spire
 							["g"] = {
 								i(118938),	-- Manastorm's Duplicator
 								follower(455),	-- Millhouse Manastorm
@@ -868,6 +885,7 @@ _.ExpansionFeatures =
 						}),
 						q(37163, {	-- Shadowy Secrets
 							["provider"] = { "n", 88002 },	-- Highlord Darion Mograine
+							["maps"] = { 574, 575, 576 },	-- Shadowmoon Burial Grounds
 							["g"] = {
 								i(119003),	-- Void Totem
 							},
@@ -931,6 +949,7 @@ _.ExpansionFeatures =
 						}),
 						q(37164, {	-- The Huntresses
 							["provider"] = { "n", 88003 },	--  Cowled Ranger
+							["maps"] = { 574, 575, 576 },	-- Shadowmoon Burial Grounds
 							["g"] = {
 								i(118923),	-- Sentinel's Companion
 							},
@@ -953,6 +972,7 @@ _.ExpansionFeatures =
 						}),
 						q(37156, {	-- The Soulcutter
 							["provider"] = { "n", 87996 },	--  Lillian Voss
+							["maps"] = { 593 },	-- Auchindoun
 							["g"] = {
 								i(119039),	-- Lilian's Warning Sign
 							},

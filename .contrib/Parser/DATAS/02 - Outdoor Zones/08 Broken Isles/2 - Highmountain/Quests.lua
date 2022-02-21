@@ -1081,7 +1081,6 @@ _.HiddenQuestTriggers = {
 	--q(40473),	-- Tracking Quest - Highmountain Treasure Chest
 	--q(44352),	-- Tracking Quest - Highmountain Treasure Chest (UNderwater Cave) (All Chests seems to have a QuestID attached already...)
 	q(43957),	-- Jade Darkhaven
-	q(39991),	-- Blessing of Cenarius (Seems to complete with 39988 but actually never made it out of beta according wowhead)
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {

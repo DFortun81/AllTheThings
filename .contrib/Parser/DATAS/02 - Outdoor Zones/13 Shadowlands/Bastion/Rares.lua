@@ -284,10 +284,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			}),
 			n(160882, { -- Nikara Blackheart
 				["description"] = "Requires 3 people to summon.  After all 3 have channeled the incense, the vesper will ring and Sophia will appear.  Protect her by defeating 2 waves of Forsworn attackers, and then the rare will spawn.\n\nAfter Nikara is defeated, Sophia will leave behind a chest called Sophia's Gift.",
-				["questID"] = 58319,
+				["questID"] = 63411,
 				["isDaily"] = true,
 				["coord"] = { 51.8, 68.6, BASTION },
 				["g"] = {
+					o(339625, {	-- Sophia's Gift
+						["questID"] = 58319,
+						["isDaily"] = true,
+					}),
 					crit(8, {	-- Nikara Blackheart
 						["achievementID"] = 14307,	-- Adventurer of Bastion
 					}),

@@ -349,9 +349,6 @@ _.Zones =
 						["sourceQuest"] = 25924,	-- Call of Duty
 						["races"] = HORDE_ONLY,
 					}),
-					q(35738, {	-- Shallow End of the Gene Pool (In beta never added to game.)
-						["u"] = NEVER_IMPLEMENTED,
-					}),
 					q(25498, {	-- Shark Bait (In beta never added to game.)
 						["u"] = NEVER_IMPLEMENTED,
 					}),
@@ -476,7 +473,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(25474),	-- BETA Once More, With Eeling [DEPRICATED]
 		q(25435),	-- Pressure is Mounting
 		q(25506),	-- Sea-Food Chain
-		
+
 	}),
 	tier(CATA_TIER, {
 		n(WEAPONS, {

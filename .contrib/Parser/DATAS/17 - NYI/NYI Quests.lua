@@ -604,7 +604,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	tier(WOD_TIER, {
 		n(QUESTS, {
 			-- 6.0.1
-			n(P601, bubbleDown({ ["timeline"] = { "created 6.0.1" } }, {
+			tier(WOD_TIER, 0.1, bubbleDown({ ["timeline"] = { "created 6.0.1" } }, {
 				q(33772, { ["name"] = "6.0 Invasion Opt-Out", }),	-- 6.0 Invasion Opt-Out
 				q(34311, { ["name"] = "6.0 Invasion: Opted Out", }),	-- 6.0 Invasion: Opted Out
 				q(36211, { ["name"] = "6.0 Tanaan - Boots Bootstrap", }),	-- 6.0 Tanaan - Boots Bootstrap

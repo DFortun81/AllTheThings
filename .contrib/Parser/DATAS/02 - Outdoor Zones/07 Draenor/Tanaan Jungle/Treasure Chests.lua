@@ -144,11 +144,12 @@ _.Zones =
 				o(241671, {	-- Forgotten Shard of the Cipher
 					["questID"] = 38740,
 					["coord"] = { 63.3, 28.0, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
-					["description"] = "You need to be on the quest above or have completed it to loot this item.",
+					["sourceQuests"] = {
+						39394,	-- The Cipher of Damnation [A]
+						38463,	-- The Cipher of Damnation [H]
+					},
 					["g"] = {
-						q(39394,{	-- The Cipher of Damnation
-							i(128309),  -- Shard of Cyrukh Pet
-						}),
+						i(128309),  -- Shard of Cyrukh Pet
 					},
 				}),
 				o(241712, {	-- Ironbeard's Treasure
@@ -192,11 +193,12 @@ _.Zones =
 				o(241565, {	-- Looted Bleeding Hollow Treasure
 					["questID"] = 38683,
 					["coord"] = { 26.7, 44.3, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
-					["description"] = "You need to be on the quest above or have completed it to loot this item.",
+					["sourceQuests"] = {
+						38560,	-- Garrison Campaign: The Bane of the Bleeding Hollow [A]
+						38453,	-- Garrison Campaign: The Bane of the Bleeding Hollow [H]
+					},
 					["g"] = {
-						q(38560,{	-- Garrison Campaign: The Bane of the Bleeding Hollow
-							i(127709),	-- Throbbing Blood Orb
-						}),
+						i(127709),	-- Throbbing Blood Orb
 					},
 				}),
 				o(241673, {	-- Looted Bleeding Hollow Treasure

@@ -1717,7 +1717,6 @@ root("HiddenQuestTriggers", {
 		q(34895),	-- Dropping Bombs Tracking
 		q(34983),	-- Dropping Bombs Tracking
 		q(35047),	-- Dropping Bombs Tracking
-		q(36426),	-- Dueling Orbs
 		q(34835),	-- Gather Energy - triggers when interacting with an energy orb in Zangarra during "Gathering the Spark" (questID 34619 & 34636)
 		q(34834),	-- General Commentary - triggers when you interact with the second ancient during "Forming the Scroll" (questID 34612 & 34635)
 		q(33727),	-- Heal Up
@@ -1729,7 +1728,6 @@ root("HiddenQuestTriggers", {
 		q(37302),	-- Mage Tower
 		q(37303),	-- Mage Tower
 		q(35051),	-- Mage Tower Complete - triggers when obtaining your follower after "Due Cause to Celebrate"
-		q(34772),	-- Morkeths Cage
 		q(34946),	-- Morkurk Greeting
 		q(36905),	-- Ogre Waygate
 		q(34904),	-- Portal Vision - triggers when the portal is summoned to get on the wall during "Dropping In" (questID 34913 & 34879)

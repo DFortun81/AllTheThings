@@ -83,11 +83,6 @@ _.Instances = { tier(WOD_TIER, {
 				}),
 			}),
 			d(2, {		-- Heroic
-				n(QUESTS, {
-					q(37156, {
-						i(119039),	-- Lilian's Warning Sign Toy
-					}),
-				}),
 				e(1185, {	-- Vigilant Kaathar
 					["crs"] = { 75839 },
 					["sym"] = {

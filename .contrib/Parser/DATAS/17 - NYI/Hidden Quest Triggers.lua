@@ -2823,7 +2823,6 @@ _.HiddenQuestTriggers = {
 		q(57705),	-- Herculon kill quest
 		q(62201),	-- Herculon secondary loot quest
 		q(63421),	-- Nemaeus secondary quest
-		q(63411),	-- Nikara Blackheart secondary quest
 		q(63410),	-- Selena the Reborn secondary quest
 		q(63423),	-- Sigilback secondary quest
 		q(62197),	-- Wingflayer the Cruel secondary quest
@@ -3440,8 +3439,6 @@ _.HiddenQuestTriggers = {
 		q(36854),	-- Burning Missive
 		q(36855),	-- Burning Missive
 		q(36856),	-- Burning Missive
-		q(34580),	-- Draenor Flowerpicker
-		q(34581),	-- Draenor Flowerpicker Note Found
 		q(34831),	-- Encounter Mushroom
 		q(33961),	-- Frostfire Flowerpicker
 		q(33966),	-- Gorgrond Flowerpicker

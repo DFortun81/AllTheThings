@@ -327,7 +327,9 @@ _.ExpansionFeatures =
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(34335, {	-- Garrison Campaign: Crows In The Field
+						["qg"] = 78192,	-- Choluna
 						["races"] = HORDE_ONLY,
+						["maps"] = { GORGROND },	 -- TODO replace with coords
 					}),
 					q(35861, {	-- Garrison Campaign: Darktide Roost (A)
 						["provider"] = { "n", 81492 },	-- Bodrick Gray
@@ -376,9 +378,6 @@ _.ExpansionFeatures =
 					q(34284, {	-- Garrison Campaign: The Search for Owynn Graddock
 						["provider"] = { "n", 81492 },	-- Bodrick Grey <SI:7>
 						["coord"] = { 38.0, 37.6, LUNARFALL },	-- garrison lvl 3
-					}),
-					q(35195, {	-- Socrethar's Fury
-						i(119134),	-- Toy
 					}),
 					q(38253, {	-- Garrison Campaign: War Council
 						["sourceQuests"] = { 36615 },	-- My Very Own Castle
@@ -1662,7 +1661,7 @@ _.ExpansionFeatures =
 						{ 37.6, 50.3, FROSTWALL },	-- lvl 3
 					},
 				}),
-				q(36684, {	-- Challenge at the Ring of Blood
+				q(36687, {	-- Challenge at the Ring of Blood
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "o", 236165 },	-- War Planning Map
@@ -1674,7 +1673,7 @@ _.ExpansionFeatures =
 						currency(823),	-- Apexis Crystal x1000
 					},
 				}),
-				q(36684, {	-- Challenge at the Ring of Blood
+				q(36700, {	-- Challenge at the Ring of Blood
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "o", 236206 },	-- War Planning Map
@@ -2446,16 +2445,10 @@ _.ExpansionFeatures =
 				}),
 				q(39042, {	-- The Very Best
 					["provider"] = { "n", 94870 },	-- Seer Kazal
-					["coord"] = { 33.6, 37.6, LUNARFALL },
-					["isWeekly"] = true,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						i(122457),	-- Ultimate Battle-Training Stone
+					["coords"] = {
+						{ 33.6, 37.6, LUNARFALL },
+						{ 41.8, 46.8, FROSTWALL },
 					},
-				}),
-				q(39042, {	-- The Very Best
-					["provider"] = { "n", 94870 },	-- Seer Kazal
-					["coord"] = { 41.8, 46.8, FROSTWALL },
 					["isWeekly"] = true,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {

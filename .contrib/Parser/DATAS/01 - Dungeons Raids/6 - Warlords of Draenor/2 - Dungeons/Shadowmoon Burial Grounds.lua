@@ -80,14 +80,6 @@ _.Instances = { tier(WOD_TIER, {
 				}),
 			}),
 			d(2, {	-- Heroic
-				n(QUESTS, {
-					q(37163, {
-						i(119003),	-- Void Totem
-					}),
-					q(37164, {
-						i(118923),	-- Sentinel's Companion is a pet
-					}),
-				}),
 				e(1139, {	-- Sadana Bloodfury
 					["crs"] = { 75509 },
 					["sym"] = {

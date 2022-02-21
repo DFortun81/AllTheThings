@@ -7,14 +7,6 @@ _.Zones =
 	m(DRAENOR, {
 		m(DRAENOR_SHADOWMOON_VALLEY, {
 			n(QUESTS, {
-				q(36176, {	-- A Call for Huntsman
-					["providers"] = {
-						{ "i", 114877 },	-- Dirty Note
-						{ "n", 75043 },		-- Karnoth
-					},
-					["races"] = ALLIANCE_ONLY,
-					["requireSkill"] = LEATHERWORKING,
-				}),
 				q(33795, {	-- Across the Stars
 					["sourceQuests"] = { 34043 },	-- Darkest Night
 					["coord"] = { 35.4, 36.8, DRAENOR_SHADOWMOON_VALLEY },
@@ -276,16 +268,6 @@ _.Zones =
 						}),
 						i(111818),	-- The Tannery, Level 1
 					},
-				}),
-				q(33814, {	-- Fast Expansion
-					["isBreadcrumb"] = true,
-					["sourceQuests"] = {
-						33059,	-- The Fate of Karabor
-						33081,	-- Escape From Shaz'gul
-					},
-					["coord"] = { 40.6, 54.8, DRAENOR_SHADOWMOON_VALLEY },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 81153 },	-- Scout Valdez
 				}),
 				q(36311, {	-- Father and Son
 					["sourceQuests"] = { 36309 },	-- The Strength of Iron

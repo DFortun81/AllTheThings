@@ -1355,10 +1355,6 @@ _.Zones =
 						i(118033),	-- Wildwood Wrangler Gloves
 					},
 				}),
-				q(34335, {	-- Garrison Campaign: Crows In The Field
-					["provider"] = { "n", 78192 },	-- Choluna
-					["races"] = HORDE_ONLY,
-				}),
 				q(36832, {	-- Get the Xuk Outta Here!
 					["provider"] = { "n", 85980 },	-- Spirit of Bony Xuk
 					["coord"] = { 44.1, 48.8, GORGROND },

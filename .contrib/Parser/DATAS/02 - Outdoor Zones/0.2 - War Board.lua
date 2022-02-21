@@ -53,7 +53,6 @@ _.Zones =
 				["description"] = "This breadcrumb can only be picked up from the Adventure Guide (shift+J).",
 				["lvl"] = { 15 },
 			}),
-			q(36499),	-- Iron Horde Invasion
 			un(REMOVED_FROM_GAME, q(29157)),	-- The Zandalari Menace
 			q(49817, {	-- To Northrend! (Horde)
 				["isBreadcrumb"] = true,

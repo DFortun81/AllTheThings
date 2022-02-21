@@ -1802,7 +1802,6 @@ tier = function(id, patch, t)							-- Create a TIER Object
 			end
 			t = { ["g"] = groups };
 		end
-		print("patch tier",id)
 	end;
 	return struct("tierID", id, t);
 end

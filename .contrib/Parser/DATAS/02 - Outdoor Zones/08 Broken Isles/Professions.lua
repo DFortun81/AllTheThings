@@ -68,9 +68,15 @@ _.Zones =
 						["coord"] = { 41.6, 32.8, LEGION_DALARAN },
 					}),
 					q(39334, {	-- Thanks for Flasking
-						["sourceQuests"] = { 39430 },	-- Flasking for a Favor
-						["provider"] = { "n", 92242 },	-- Barm Stonebreaker
-						["coord"] = { 55.2, 84.2, HIGHMOUNTAIN },
+						["sourceQuest"] = 39430,	-- Flasking for a Favor
+						["qgs"] = {
+							92242,	-- Barm Stonebreaker
+							93974,	-- Leyweaver Erenyi
+						},
+						["coords"] = {
+							{ 55.2, 84.2, HIGHMOUNTAIN },
+							{ 70.4, 46.6, VALSHARAH },
+						},
 					}),
 					q(39335, {	-- Neltharion's Lair: Potent Powder
 						["sourceQuests"] = { 39430 },	-- Flasking for a Favor
@@ -89,14 +95,10 @@ _.Zones =
 						["coord"] = { 41.6, 32.8, LEGION_DALARAN },
 					}),
 					q(39431, {	-- Mending the Filter
+						["requireSkill"] = ALCHEMY,
 						["sourceQuests"] = { 39337 },	-- Forlorn Filter
 						["provider"] = { "o", 249211 },	-- Torn Shaldorei Silk
 						["coord"] = { 54.2, 54.7, VALSHARAH },
-					}),
-					q(39334, {	-- Thanks for Flasking
-						["sourceQuests"] = { 39430 },	-- Flasking for a Favor
-						["provider"] = { "n", 93974 },	-- Leyweaver Erenyi
-						["coord"] = { 70.4, 46.6, VALSHARAH },
 					}),
 					q(39339, {	-- A Fragile Crucible
 						["sourceQuests"] = { 39334 },	-- Thanks for Flasking

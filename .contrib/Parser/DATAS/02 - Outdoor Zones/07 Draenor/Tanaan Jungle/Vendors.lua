@@ -153,8 +153,8 @@ _.Zones =
 						}),
 						i(128471),	-- Frostwolf Grint's Battlegear (TOY!)
 						i(127269, {	-- Ship Blueprint: Battleship
-							["questID"] = 39604,	-- I Sunk Your Battleship
 							["cost"] = 5500000,	-- 550g
+							["sourceQuest"] = 39604,	-- I Sunk Your Battleship
 						}),
 						i(128294, {	-- Trade Agreement: Arakkoa Outcasts
 							["questID"] = 37485,
@@ -215,8 +215,8 @@ _.Zones =
 						}),
 						i(128462),	-- Karabor Councilor's Attire (TOY!)
 						i(128492, {	-- Ship Blueprint: Battleship
-							["questID"] = 39601,	-- I Sunk Your Battleship
 							["cost"] = 5500000,	-- 550g
+							["sourceQuest"] = 39601,	-- I Sunk Your Battleship
 						}),
 						i(128294, {	-- Trade Agreement: Arakkoa Outcasts
 							["questID"] = 37485,

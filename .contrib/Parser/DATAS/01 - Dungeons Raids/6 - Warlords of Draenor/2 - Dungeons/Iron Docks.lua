@@ -97,11 +97,6 @@ _.Instances = { tier(WOD_TIER, {
 				n(ACHIEVEMENTS, {
 					ach(9081),	-- Expert Timing
 				}),
-				n(QUESTS, {
-					q(37157, {	-- Feeling a Bit Morose
-						i(119092),	-- Moroes' Famous Polish (TOY!)
-					}),
-				}),
 				e(1235, {	-- Fleshrender Nok'gar
 					["crs"] = {
 						81297,	-- Dreadfang

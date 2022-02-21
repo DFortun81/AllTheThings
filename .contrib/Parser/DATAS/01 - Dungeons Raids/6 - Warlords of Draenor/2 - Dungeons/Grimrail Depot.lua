@@ -17,11 +17,6 @@ _.Instances = { tier(WOD_TIER, {
 				}),
 			}),
 			d(1,  {	-- Normal
-				n(QUESTS, {
-					q(37151, {	-- Cold Steel
-						i(118918),  -- Bloody Bandanna
-					}),
-				}),
 				e(1138, {	-- Rocketspark and Borka
 					["crs"] = {
 						77816,	-- Borka the Brute
@@ -77,11 +72,6 @@ _.Instances = { tier(WOD_TIER, {
 				}),
 			}),
 			d(2,  {	-- Heroic
-				n(QUESTS, {
-					q(37160, {	-- Cleaving Time
-						i(118937),  -- Gamon's Braid Toy
-					}),
-				}),
 				e(1138, {	-- Rocketspark and Borka
 					["crs"] = {
 						77816,	-- Borka the Brute

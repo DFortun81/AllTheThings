@@ -17,11 +17,6 @@ _.Instances = { tier(WOD_TIER, {
 				}),
 			}),
 			d(1, {	-- Normal
-				n(QUESTS, {
-					q(37150, {
-						i(118921),	-- Everbloom Peachick (PET!)
-					}),
-				}),
 				e(1214, {	-- Witherbark
 					["crs"] = { 81522 },	-- Witherbark
 					["sym"] = {
@@ -108,11 +103,6 @@ _.Instances = { tier(WOD_TIER, {
 				}),
 			}),
 			d(2, {	-- Heroic
-				n(QUESTS, {
-					q(37165, {
-						i(118935),	-- Ever-Blooming Frond
-					}),
-				}),
 				e(1214, {	-- Witherbark
 					["crs"] = { 81522 },	-- Witherbark
 					["sym"] = {
