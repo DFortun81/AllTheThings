@@ -194,10 +194,10 @@ root("GroupFinder", n(-10, bubbleDown({ ["timeline"] = { "added 8.2.5" } }, {	--
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(LEGION_TIER, {
-		n(P703, {	-- Patch 7.0.3
+		tier(LEGION_TIER, 0.3, {	-- Patch 7.0.3
 			i(140717),	-- Marksman's Recurve Bow
 		}),
-		n(P725, {	-- Patch 7.2.5
+		tier(LEGION_TIER, 2.5, {	-- Patch 7.2.5
 			i(150612),	-- Marksman's Recurve Bow
 		}),
 	}),

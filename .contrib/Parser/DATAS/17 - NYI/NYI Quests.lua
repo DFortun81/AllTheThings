@@ -550,7 +550,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 5.0.4
-			n(P504, bubbleDown({ ["timeline"] = { "created 5.0.4" } }, {
+			tier(MOP_TIER, 0.4, bubbleDown({ ["timeline"] = { "created 5.0.4" } }, {
 				q(31940),	-- Battle Pet Trainers: Pandaria
 				q(31988),	-- Daily Selected Scenario
 				q(31968),	-- Doubt Begins To Surface
@@ -570,7 +570,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 5.1.0
-			n(P510, bubbleDown({ ["timeline"] = {"created 5.1.0"} }, {
+			tier(MOP_TIER, 1.0, bubbleDown({ ["timeline"] = {"created 5.1.0"} }, {
 				q(32367),	-- A Bit of Yak
 				q(32375),	-- A Dash of That
 				q(32366),	-- A Lick of Fire
@@ -668,8 +668,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(33456, { ["name"] = "Catapult Vision", }),	-- Catapult Vision
 				q(33457, { ["name"] = "Catapult Vision", }),	-- Catapult Vision
 				q(33458, { ["name"] = "Catapult Vision", }),	-- Catapult Vision
-				q(36687, { ["name"] = "Challenge at the Ring of Blood", }),	-- Challenge at the Ring of Blood
-				q(36700, { ["name"] = "Challenge at the Ring of Blood", }),	-- Challenge at the Ring of Blood
 				q(35252, { ["name"] = "Chest Reward Tracking Quest", }),	-- Chest Reward Tracking Quest
 				q(37114, { ["name"] = "Choluna", }),	-- Choluna
 				q(33880, { ["name"] = "Collect Crystals [PH]", }),	-- Collect Crystals [PH]
@@ -700,8 +698,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(35756, { ["name"] = "Disturbing Ritual Mask", }),	-- Disturbing Ritual Mask
 				q(34966, { ["name"] = "Doug Test - Daily Repeatable", }),	-- Doug Test - Daily Repeatable
 				q(35783, { ["name"] = "Draenic Survivalist Cloak", }),	-- Draenic Survivalist Cloak
-				q(34580, { ["name"] = "Draenor Flowerpicker", }),	-- Draenor Flowerpicker
-				q(34581, { ["name"] = "Draenor Flowerpicker Note Found", }),	-- Draenor Flowerpicker Note Found
 				q(34722, { ["name"] = "Durotan Been Askin' For Ya", }),	-- Durotan Been Askin' For Ya
 				q(33428, { ["name"] = "Elwynn Forest Racing", }),	-- Elwynn Forest Racing
 				q(33422, { ["name"] = "Elwynn Long Distance Practice", }),	-- Elwynn Long Distance Practice
@@ -808,7 +804,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(34079, { ["name"] = "Mission Successful", }),	-- Mission Successful
 				q(35775, { ["name"] = "Moldy Book", }),	-- Moldy Book
 				q(35203, { ["name"] = "More Materials", }),	-- More Materials
-				q(34772, { ["name"] = "Morkeths Cage", }),	-- Morkeths Cage
 				q(35774, { ["name"] = "Mostly Stable Elixir", }),	-- Mostly Stable Elixir
 				q(36188, { ["name"] = "Moving On Up", }),	-- Moving On Up
 				q(33557, { ["name"] = "Muddy Waters", }),	-- Muddy Waters
@@ -816,7 +811,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(33561, { ["name"] = "Multiplayer Race", }),	-- Multiplayer Race
 				q(34181, { ["name"] = "Mutation Station", }),	-- Mutation Station
 				q(34304, { ["name"] = "Mutation Station", }),	-- Mutation Station
-				q(34518, { ["name"] = "Nagrand Corral", }),	-- Nagrand Corral
 				q(36052, { ["name"] = "Nagrand - Treasure 037 - Misplaced Artifacts", }),	-- Nagrand - Treasure 037 - Misplaced Artifacts
 				q(36072, { ["name"] = "Nagrand - Treasure 056 - Abu'Gar's Favorite Lure", }),	-- Nagrand - Treasure 056 - Abu'Gar's Favorite Lure
 				q(35711, { ["name"] = "Nagrand - Treasure 059 - Abu'gar's Tenacity", }),	-- Nagrand - Treasure 059 - Abu'gar's Tenacity
@@ -1200,7 +1194,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 6.0.2
-			n(P602, bubbleDown({ ["timeline"] = { "created 6.0.2" } }, {
+			tier(WOD_TIER, 0.2, bubbleDown({ ["timeline"] = { "created 6.0.2" } }, {
 				q(37598, { ["name"] = "Abrogator Stones", }),	-- Abrogator Stones
 				q(37599, { ["name"] = "Abrogator Stones", }),	-- Abrogator Stones
 				q(37600, { ["name"] = "Abrogator Stones", }),	-- Abrogator Stones
@@ -1264,12 +1258,12 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 6.0.3
-			n(P603, bubbleDown({ ["timeline"] = { "created 6.0.3" } }, {
+			tier(WOD_TIER, 0.3, bubbleDown({ ["timeline"] = { "created 6.0.3" } }, {
 				q(33466, { ["name"] = "Rally the Artificers", }),	-- Rally the Artificers
 			})),
 
 			-- 6.1.0
-			n(P610, bubbleDown({ ["timeline"] = { "created 6.1.0" } }, {
+			tier(WOD_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 6.1.0" } }, {
 				q(35256, { ["name"] = "A Heart Unbroken", }),	-- A Heart Unbroken
 				q(38204, { ["name"] = "Assault on the Gorian Proving Grounds", }),	-- Assault on the Gorian Proving Grounds (A)
 				q(38205, { ["name"] = "Assault on the Gorian Proving Grounds", }),	-- Assault on the Gorian Proving Grounds (H)
@@ -1306,7 +1300,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			-- 6.1.2 - no NYI quests
 
 			-- 6.2.0
-			n(P620, bubbleDown({ ["timeline"] = { "created 6.2.0" } }, {
+			tier(WOD_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 6.2.0" } }, {
 				q(38592, { ["name"] = "6.2 Tanaan Max-level Choice Reward Summary: Group", }),	-- 6.2 Tanaan Max-level Choice Reward Summary: Group
 				q(38594, { ["name"] = "6.2 Tanaan Max-level Choice Reward Summary: Group", }),	-- 6.2 Tanaan Max-level Choice Reward Summary: Group
 				q(37888, { ["name"] = "6.2 Tanaan Max-level Choice Reward Summary: Solo", }),	-- 6.2 Tanaan Max-level Choice Reward Summary: Solo
@@ -1353,7 +1347,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 6.2.1
-			n(P621, bubbleDown({ ["timeline"] = { "created 6.2.1" } }, {
+			tier(WOD_TIER, 2.1, bubbleDown({ ["timeline"] = { "created 6.2.1" } }, {
 				q(39292, { ["name"] = "Ashran Dominance", }),	-- Ashran Dominance
 				q(38260, { ["name"] = "Beachhead", }),	-- Beachhead
 				q(38575, { ["name"] = "Beachhead", }),	-- Beachhead
@@ -1366,7 +1360,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 6.2.2
-			n(P622, bubbleDown({ ["timeline"] = { "created 6.2.2" } }, {
+			tier(WOD_TIER, 2.2, bubbleDown({ ["timeline"] = { "created 6.2.2" } }, {
 				q(35499, { ["name"] = "Blow up towers", }),	-- Blow up towers
 				q(39052, { ["name"] = "Blueprints Are Important", }),	-- Blueprints Are Important
 				q(33560, { ["name"] = "Light's Rest", }),	-- Light's Rest
@@ -1418,25 +1412,25 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	tier(SL_TIER, {
 		n(QUESTS, {
 			-- 9.0.1
-			n(P901, bubbleDown({ ["timeline"] = { "created 9.0.1" } }, {
+			tier(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { "created 9.0.1" } }, {
 				q(60463, { ["name"] = "Anima Appeal", }),	-- Anima Appeal
 				q(62168, { ["name"] = "Bonescript Dispatches", }),	-- Bonescript Dispatches
 			})),
 
 			-- 9.0.2
-			n(P902, bubbleDown({ ["timeline"] = { "created 9.0.2" } }, {
+			tier(SL_TIER, 0.2, bubbleDown({ ["timeline"] = { "created 9.0.2" } }, {
 				q(63192, { ["name"] = "Path of Ascension: Trial of Humility", ["_drop"] = {"g"} }),	-- Path of Ascension: Trial of Humility
 				q(63041, { ["name"] = "Short-Supply Reward", ["_drop"] = {"g"} }),	-- Short-Supply Reward
 				q(61524, { ["name"] = "The Ember Court", }),	-- The Ember Court
 			})),
 
 			-- 9.0.5
-			n(P905, bubbleDown({ ["timeline"] = { "created 9.0.5" } }, {
+			tier(SL_TIER, 0.5, bubbleDown({ ["timeline"] = { "created 9.0.5" } }, {
 
 			})),
 
 			-- 9.1.0
-			n(P910, bubbleDown({ ["timeline"] = { "created 9.1.0" } }, {
+			tier(SL_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 9.1.0" } }, {
 				q(63751, { ["name"] = "A Terrible Power", }),	-- A Terrible Power
 				q(64640, { ["name"] = "AubriesTestQuestForJeff", }),	-- AubriesTestQuestForJeff
 				q(64517, { ["name"] = "Byron Test - Item Gained", }),	-- Byron Test - Item Gained
@@ -1457,7 +1451,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 9.1.5
-			n(P915, bubbleDown({ ["timeline"] = { "created 9.1.5" } }, {
+			tier(SL_TIER, 1.5, bubbleDown({ ["timeline"] = { "created 9.1.5" } }, {
 				q(64996, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
 				q(64997, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
 				q(64998, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
@@ -1469,12 +1463,12 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 9.2.0
-			n(P920, bubbleDown({ ["timeline"] = { "created 9.2.0" } }, {
+			tier(SL_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 9.2.0" } }, {
 
 			})),
 
 			-- 9.2.5
-			n(P925, bubbleDown({ ["timeline"] = { "created 9.2.5" } }, {
+			tier(SL_TIER, 2.5, bubbleDown({ ["timeline"] = { "created 9.2.5" } }, {
 
 			})),
 

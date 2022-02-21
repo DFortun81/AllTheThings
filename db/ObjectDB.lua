@@ -681,6 +681,7 @@ _.ObjectNames = {
 	[232251] = "Pippers' Buried Supplies",
 	[232252] = "Pippers' Buried Supplies",
 	[232397] = "Bulletin Board",
+	[232398] = "Bulletin Board",
 	[232400] = "Bulletin Board",
 	[232406] = "Adventurer's Pack",
 	[232416] = "Command Board",

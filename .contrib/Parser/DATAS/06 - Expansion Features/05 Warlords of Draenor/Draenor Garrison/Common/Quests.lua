@@ -1672,6 +1672,7 @@ _.ExpansionFeatures =
 					["g"] = {
 						currency(823),	-- Apexis Crystal x1000
 					},
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(36700, {	-- Challenge at the Ring of Blood
 					["races"] = HORDE_ONLY,
@@ -1684,6 +1685,7 @@ _.ExpansionFeatures =
 					["g"] = {
 						currency(823),	-- Apexis Crystal x1000
 					},
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(36404, {	-- Clearing the Garden
 					["sourceQuest"] = 36592,	-- Bigger is Better

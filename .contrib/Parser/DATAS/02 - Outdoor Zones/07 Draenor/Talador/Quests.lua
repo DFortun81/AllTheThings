@@ -1728,6 +1728,7 @@ root("HiddenQuestTriggers", {
 		q(37302),	-- Mage Tower
 		q(37303),	-- Mage Tower
 		q(35051),	-- Mage Tower Complete - triggers when obtaining your follower after "Due Cause to Celebrate"
+		q(34772),	-- Morkeths Cage
 		q(34946),	-- Morkurk Greeting
 		q(36905),	-- Ogre Waygate
 		q(34904),	-- Portal Vision - triggers when the portal is summoned to get on the wall during "Dropping In" (questID 34913 & 34879)

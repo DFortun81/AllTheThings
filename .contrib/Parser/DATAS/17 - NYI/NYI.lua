@@ -4,7 +4,7 @@
 -- Everything in this file hasn't been implemented yet.
 
 root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
-	n(-2185, {	-- 9.2.0
+	tier(SL_TIER, 2.0, {	-- 9.2.0
 		-- Toys
 		i(190196),	-- Enlightened Hearthstone
 		i(190754),	-- Firim's Specimen Container
