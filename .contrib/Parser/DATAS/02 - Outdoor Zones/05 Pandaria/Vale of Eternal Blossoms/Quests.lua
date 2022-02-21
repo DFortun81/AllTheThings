@@ -456,6 +456,20 @@ _.Zones =
 					["isDaily"] = true,
 					["u"] = REMOVED_FROM_GAME,
 				}),
+				q(32719, {	-- Mogu Runes of Fate (A)
+					["provider"] = { "n", 64029 },	-- Elder Lin
+					["coord"] = { 85.2, 62.6, VALE_OF_ETERNAL_BLOSSOMS },
+					["isWeekly"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(32718, {	-- Mogu Runes of Fate (H)
+					["provider"] = { "n", 63996 },	-- Elder Liao
+					["coord"] = { 62.0, 20.6, VALE_OF_ETERNAL_BLOSSOMS },
+					["isWeekly"] = true,
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(31295, {	-- Mogu within the Ruins of Guo-Lai
 					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 					["provider"] = { "n", 59338 },	-- Che Wildwalker

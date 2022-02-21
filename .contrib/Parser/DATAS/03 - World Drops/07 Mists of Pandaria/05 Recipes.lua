@@ -26,6 +26,17 @@ _.WorldDrops =
 						recipe(139192),	-- Sky Golem
 					},	
 				}),
+				i(94847, {	-- Schematic: Chief Engineer Jard's Journal
+					["spellID"] = 0,	-- Not learnable.
+					["u"] = REMOVED_FROM_GAME,
+					["_drop"] = { "g" },
+					["g"] = {
+						q(32630, {	-- Chief Engineer Jard's Journal
+							["u"] = REMOVED_FROM_GAME,
+							["_drop"] = { "g" },
+						}),
+					},	
+				}),
 			}),
 			prof(INSCRIPTION, {
 				i(102534),	-- Technique: Crafted Malevolent Gladiator's Medallion of Tenacity

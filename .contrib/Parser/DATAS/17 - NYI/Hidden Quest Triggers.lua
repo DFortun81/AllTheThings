@@ -919,6 +919,7 @@ _.HiddenQuestTriggers = {
 		q(32196),	-- A Kind of Magic - DEPRECATED - completed with quest 32143
 		q(32341, { ["_drop"] = { "g" }, }), -- Demonstrate Your Power - completed with quest 32340
 		q(32516),	-- The Bloodletter - completed with quest 32495 & 32530
+		q(32534),	-- The Skumblade Threat - completed with quest 32204 & 32535
 		q(33071),	-- The Call of War - completed with quest 39691
 		q(33073),	-- [NOTUSED]Vignette: Ancient Saltsnap Turtle - completed with quest 33070
 		q(33079),	-- The Demons Among Us - Alliance - completed with quest 40593 & 40607

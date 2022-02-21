@@ -103,11 +103,19 @@ _.Zones =
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
 				}),
+				q(32576, {	-- Competing Magic (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(32579, {	-- Competing Magic (A)
 					["isDaily"] = true,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(32520, {	-- Competing Magic (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32561, {	-- Competing Magic (H)
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
 				}),
@@ -180,7 +188,23 @@ _.Zones =
 					["isDaily"] = true,
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(32584, {	-- Encroaching Force (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32585, {	-- Encroaching Force (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(32521, {	-- Encroaching Force (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32563, {	-- Encroaching Force (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32565, {	-- Encroaching Force (H)
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
 				}),
@@ -653,9 +677,6 @@ _.Zones =
 					["coord"] = { 46.8, 66.9, ISLE_OF_THUNDER },
 					["provider"] = { "n", 67660 },	-- Archmage Aethas Sunreaver
 				}),
-				q(32534, {	-- The Skumblade Threat (NYI)
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				q(32572, {	-- The Sleepless Legion (A)
 					["isDaily"] = true,
 					["races"] = ALLIANCE_ONLY,
@@ -721,10 +742,24 @@ root("HiddenQuestTriggers",{
 	tier(MOP_TIER, {
 		q(32260),	-- Alliance Quest Choice: PvE
 		q(32261),	-- Alliance Quest Choice: PvP
+		q(32720),	-- Choose Your Assignment
+		q(32721),	-- Choose Your Assignment
 		q(32259),	-- Horde Quest Choice: PvE
 		q(32258),	-- Horde Quest Choice: PvP
 		q(32289),	-- Loot plans, kill boat captain
 		q(32626),	-- Loot Room Key Tracking Quest — triggers when looting "Haywire Sunreaver Construct" (first rare kill of the week)
+		q(32695),	-- Quest Reward Summary: PvE Stage 0-2
+		q(32701),	-- Quest Reward Summary: PvE Stage 0-2
+		q(32694),	-- Quest Reward Summary: PvP Stage 1-5
+		q(32700),	-- Quest Reward Summary: PvP Stage 1-5
+		q(32696),	-- Quest Reward Summary: PvE Stage 2
+		q(32702),	-- Quest Reward Summary: PvE Stage 2
+		q(32697),	-- Quest Reward Summary: PvE Stage 3
+		q(32703),	-- Quest Reward Summary: PvE Stage 3
+		q(32698),	-- Quest Reward Summary: PvE Stage 4-5
+		q(32704),	-- Quest Reward Summary: PvE Stage 4-5
+		q(32699),	-- Quest Reward Summary: PvE Stage 5
+		q(32705),	-- Quest Reward Summary: PvE Stage 5
 		q(32611),	-- Rare Drop Tracking Quest — tracks whether you have looted an Incantation for this week
 		q(32609),	-- Rare Chest Tracking Quest — triggers after looting "Trove of the Thunder King"
 		q(32723),	-- reuse me

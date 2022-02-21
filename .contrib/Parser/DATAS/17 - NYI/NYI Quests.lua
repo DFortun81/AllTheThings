@@ -599,6 +599,45 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(32407),	-- [NYI] Magus Commerce Exchange
 				q(32424),	-- [NYI] What Had To Be Done
 			})),
+			
+			-- 5.2.0
+			tier(MOP_TIER, 2.0, bubbleDown({ ["timeline"] = {"created 5.2.0"} }, {
+				q(32475),	-- A Spark of Life
+				q(32727),	-- Contributed to Server Percentage Daily Tracking Quest
+				q(32566),	-- DEBUG: Eligible for All Quests
+				q(32492),	-- Destroy Cauldrons
+				q(32267),	-- Destroy enemy portal near camp (streaming attackers, defended, enemy can use)
+				q(32273),	-- Destroy summoning circles in enemy camp (BloodElf_PowerOrb_Red)
+				q(32270),	-- Disarm mines near enemy camp (poke them with a stick =P)
+				q(32263),	-- Find scout near enemy camp (injured, port him back)
+				q(32281),	-- Fleshcrafter's End
+				q(32472),	-- Frighten Pterodactyls [PH]
+				q(32205),	-- Gather Scout Reports
+				q(32570),	-- Gather Scout Reports
+				q(32622),	-- Intro Flight
+				q(32651),	-- Intro Flight
+				q(32286),	-- Kill Mogu Blood-seekers (Roaming pairs, actively fighting scouts, and performing rituals on corpses)
+				q(32210),	-- Kill mogu boss for key, use object behind jumping puzzle
+				q(32203),	-- Kill Mogu Spirits
+				q(32229),	-- Kill Roaming Troll War Party
+				q(32202),	-- Kill Trolls
+				q(32280),	-- Metalocalypse
+				q(32504),	-- Mission: The Secrets of Stormwind
+				q(32211),	-- Nalak the Storm Lord
+				q(32758),	-- Reader for the Dead Tongue
+				q(32253),	-- REMOVE (No Longer Used)
+				q(32717),	-- REUSE ME
+				q(32467),	-- Sacrificial Prevention [PH]
+				q(32271),	-- Set magical mines around camp (using modern warfare lightning)
+				q(32482),	-- Shwayder's Test Quest
+				q(32272),	-- Start and defend summoning ritual near enemy camp
+				q(32231),	-- Trailing Light in the Dark
+				q(32569),	-- Trailing Light in the Dark
+				q(32290),	-- Unused
+				q(32490),	-- UNUSED
+				q(32508),	-- Welcome to the Island
+				q(32291),	-- [PH] The Fall of Shan Bu
+			})),
 		}),
 	}),
 	tier(WOD_TIER, {
