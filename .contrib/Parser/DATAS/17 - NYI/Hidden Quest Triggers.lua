@@ -3458,5 +3458,6 @@ _.HiddenQuestTriggers = {
 		q(33965),	-- Tanaan Flowerpicker
 		q(39128),	-- Tanaan Vignette
 		q(39713),	-- Tracking Quest - Pops immediately on new characters but no other info known. Possibly legendary ring related
+		q(47285),	-- Triggers together with obtaining Equipment Blueprint: Tuskarr Fishing Net
 	}),
 };
