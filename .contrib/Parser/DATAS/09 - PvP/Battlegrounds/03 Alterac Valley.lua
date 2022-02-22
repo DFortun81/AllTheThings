@@ -1022,6 +1022,11 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					},
 				}),
 			}),
+			n(REWARDS, {
+				i(20560, {	-- Alterac Valley Mark of Honor
+					["timeline"] = { "removed 3.3.3" },
+				}),
+			}),
 			n(VENDORS, {
 				n(13216, {	-- Gaelden Hammersmith <Stormpike Supply Officer>
 					["coord"] = { 44.3, 18.3, ALTERAC_VALLEY },

@@ -1015,6 +1015,11 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					["lvl"] = 50,
 				}),
 			}),
+			n(REWARDS, {
+				i(20559, {	-- Arathi Basin Mark of Honor
+					["timeline"] = { "removed 3.3.3" },
+				}),
+			}),
 			n(VENDORS, {
 				n(15126, {	-- Rutherford Twing
 					-- #if AFTER CATA
