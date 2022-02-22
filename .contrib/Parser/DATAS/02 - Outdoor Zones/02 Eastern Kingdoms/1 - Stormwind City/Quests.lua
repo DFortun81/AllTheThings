@@ -998,11 +998,6 @@ root("Zones", {
 					["coord"] = { 85.6, 32.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(40519, {	-- The Legion Returns (Alliance)
-					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 56.3, 17.3, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(29548, {	-- The Mission
 					["sourceQuests"] = {
 						29547,	-- The King's Command

@@ -16,15 +16,6 @@ _.Zones =
 					}),
 				}),
 				prof(FISHING, {
-					n(ARTIFACTS, {
-						["description"] = "Prerequisites:\n\n  Be level 45.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry.\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
-						["lvl"] = { 45 },
-						["g"] = {
-							q(40960, {	-- Luminous Pearl
-								["provider"] = { "i", 133887 },	-- Luminous Pearl
-							}),
-						},
-					}),
 					ach(10596, {	-- Bigger Fish to Fry
 						["collectible"] = false,
 						["g"] = {
@@ -167,30 +158,6 @@ _.Zones =
 					i(137695),	-- Schematic: Reaves Module: Wormhole Generator Mode
 				}),
 				prof(SKINNING, {
-					q(40149, {	-- Drakol'nir Must Die
-						["sourceQuests"] = {
-							40147,	-- Mother's Prized Knife
-							40148,	-- Red-Eyed Revenge
-						},
-						["requireSkill"] = SKINNING,
-						["coord"] = { 45.7, 25.6, STORMHEIM },
-						["provider"] = { "n", 98721 },	-- Seymour
-						["groups"] = {
-							i(130102),	-- Mother's Skinning Knife (TOY!)
-						},
-					}),
-					q(40147, {	-- Mother's Prized Knife
-						["sourceQuests"] = { 40146 },	-- Seymour and Agnes
-						["requireSkill"] = SKINNING,
-						["coord"] = { 45.7, 25.6, STORMHEIM },
-						["provider"] = { "n", 98721 },	-- Seymour
-					}),
-					q(40148, {	-- Red-Eyed Revenge
-						["sourceQuests"] = { 40146 },	-- Seymour and Agnes
-						["requireSkill"] = SKINNING,
-						["coord"] = { 45.7, 25.6, STORMHEIM },
-						["provider"] = { "n", 98721 },	-- Seymour
-					}),
 					i(139894, {	-- Skinning Technique: Unbroken Claw
 						["requireSkill"] = SKINNING,
 						["crs"] = {
@@ -201,12 +168,6 @@ _.Zones =
 								["recipeID"] = 194171,	-- Unbroken Claw
 							},
 						},
-					}),
-					q(40143, {	-- Unfinished Treatise on the Properties of Stormscale
-						["sourceQuests"] = { 40142 },	-- The Core of the Stormscale
-						["requireSkill"] = SKINNING,
-						["description"] = "The item that starts this quest can be skinned from any scaled creature found across the Broken Isles.",
-						["itemID"] = 129865,	-- Unfinished Treatise on the Properties of Stormscale
 					}),
 				}),
 			}),

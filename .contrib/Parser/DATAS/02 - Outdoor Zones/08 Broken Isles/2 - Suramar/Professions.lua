@@ -37,15 +37,6 @@ _.Zones =
 					}),
 				}),
 				prof(FISHING, {
-					n(ARTIFACTS, {
-						["description"] = "Prerequisites:\n\n  Be level 45.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry.\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
-						["lvl"] = { 45 },
-						["g"] = {
-							q(40960, {	-- Luminous Pearl
-								["provider"] = { "i", 133887 },	-- Luminous Pearl
-							}),
-						},
-					}),
 					ach(10596, {	-- Bigger Fish to Fry
 						["collectible"] = false,
 						["g"] = {
@@ -196,45 +187,6 @@ _.Zones =
 					}),
 					i(137845),	-- Design: Maelstrom Band (Rank 3)
 					i(137695),	-- Schematic: Reaves Module: Wormhole Generator Mode
-				}),
-				prof(SKINNING, {
-					q(40158),	-- Darkheart Thicket: Demons Be Different
-					q(40154),	-- Eye of Azshara: The Scales of Serpentrix
-					q(40139),	-- Halls of Valor: The Hide of Fenryr
-					q(40151),	-- Immaculate Stormscale
-					q(40137),	-- Leather for Ske'rit
-					q(40153),	-- Return to Karazhan: Scales of Legend
-					q(40152),	-- Scales for Ske'rit
-					q(40140, {	-- Ske'rit's Leather Handbook
-						["requireSkill"] = SKINNING,
-						["sourceQuests"] = {
-							40138,	-- Trial of the Crusader: Hides of Legend
-							40139,	-- Halls of Valor: The Hide of Fenryr
-						},
-						["provider"] = { "n", 98720 },	-- Ske'rit
-						["g"] = {
-							sp(194819),	-- Skinning Technique: Stonehide Leather (Rank 3)
-						},
-					}),
-					q(40155, {	-- Ske'rit's Scale-Skinning Suggestions
-						["sourceQuests"] = {
-							40153,	-- Return to Karazhan: Scales of Legend
-							40154,	-- Eye of Azshara: The Scales of Serpentrix
-						},
-						["provider"] = { "n", 98720 },	-- Ske'rit
-						["g"] = {
-							sp(194822),	-- Skinning Technique: Stormscale (Rank 3)
-						},
-					}),
-					q(40138, {	-- Trial of the Crusader: Hides of Legend
-						["requireSkill"] = SKINNING,
-					}),
-					q(40143, {	-- Unfinished Treatise on the Properties of Stormscale
-						["sourceQuests"] = { 40142 },	-- The Core of the Stormscale
-						["requireSkill"] = SKINNING,
-						["description"] = "The item that starts this quest can be skinned from any scaled creature found across the Broken Isles.",
-						["itemID"] = 129865,	-- Unfinished Treatise on the Properties of Stormscale
-					}),
 				}),
 				prof(TAILORING, {
 					q(44741, {	-- Return to Karazhan: The Big Bag Theory

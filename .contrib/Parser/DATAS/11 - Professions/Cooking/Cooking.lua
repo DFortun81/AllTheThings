@@ -2671,18 +2671,25 @@ profession(COOKING, {
 			n(QUESTS, {
 				q(40989, {	-- The Prodigal Sous Chef
 					["description"] = "If you cooked with Nomi while questing in Pandaria, you will receive this quest instead of 'Too Many Chefs'.",
+					-- ["sourceQuest"] = ,
+					["provider"] = { "n", 102546 },	-- Nomi
 					["groups"] = {
 						i(133826),	-- Recipe: Dried Mackerel Strips [Rank 1]
 					},
 				}),
 				q(40988, {	-- Too Many Chefs
 					["description"] = "If you did not cook with Nomi while questing in Pandaria, you will receive this quest instead of 'The Prodigal Sous Chef'.",
+					["provider"] = { "n", 102546 },	-- Nomi
 					["groups"] = {
 						i(133826),	-- Recipe: Dried Mackerel Strips [Rank 1]
 					},
 				}),
 				q(40991, {	-- Opening the Test Kitchen
-					ach(10591),	-- All Grown Up
+					["sourceQuests"] = { 40990 },	-- A Good Recipe List
+					["provider"] = { "n", 101846 },	-- Nomi
+					["g"] = {
+						ach(10591),	-- All Grown Up
+					},
 				}),
 			}),
 			n(VENDORS, {

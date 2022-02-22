@@ -199,7 +199,6 @@ _.Zones =
 								},
 							}),
 							-- #if AFTER MOP
-							-- #if AFTER CATA
 							q(10068, {	-- Frost Nova (MOP) / Arcane Missiles (Cata+) / Well Watcher Solanian (TBC)
 								["qg"] = 15279,	-- Julia Sunstriker <Mage Trainer>
 								["sourceQuest"] = 8328,	-- Mage Training
@@ -217,6 +216,9 @@ _.Zones =
 								["lvl"] = lvlsquish(2, 1, 2),
 								-- #endif
 							}),
+							-- #endif
+							-- #if AFTER CATA
+							-- #if BEFORE MOP
 							q(10072, {	-- Healing the Wounded (Cata+) / Learning the Word (MOP) / Well Watcher Solanian (TBC)
 								["qg"] = 15284,	-- Matron Arena <Priest Trainer>
 								["sourceQuest"] = 8564,	-- Priest Training

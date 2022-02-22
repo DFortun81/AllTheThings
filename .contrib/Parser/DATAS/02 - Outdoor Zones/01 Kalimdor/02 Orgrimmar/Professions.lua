@@ -5,55 +5,6 @@
 root("Zones", m(KALIMDOR, {
 	m(ORGRIMMAR, {
 		n(PROFESSIONS, {
-			prof(ALCHEMY, {
-				n(QUESTS, {
-					q(29481, {	-- Elixir Master
-						["provider"] = { "n", 3347 },	-- Yelmak
-						["coord"] = { 55.6, 45.8, ORGRIMMAR },	-- Yelmak
-						["description"] = "Requires 300 Classic Alchemy.",
-						["requireSkill"] = ALCHEMY,
-						["repeatable"] = true,
-						--[[["altQuests"] = {
-							29481,	-- Elixir Master
-							29067,	-- Potion Master
-							29482,	-- Transmutation Master
-							10902,	-- Elixir Master (Removed)
-							10897,	-- Potion Master (Removed)
-							10899,	-- Transmutation Master (Removed)
-						},]]
-					}),
-					q(29067, {	-- Potion Master
-						["provider"] = { "n", 3347 },	-- Yelmak
-						["coord"] = { 55.6, 45.8, ORGRIMMAR },	-- Yelmak
-						["description"] = "Requires 300 Classic Alchemy.",
-						["requireSkill"] = ALCHEMY,
-						["repeatable"] = true,
-						--[[["altQuests"] = {
-							29481,	-- Elixir Master
-							29067,	-- Potion Master
-							29482,	-- Transmutation Master
-							10902,	-- Elixir Master (Removed)
-							10897,	-- Potion Master (Removed)
-							10899,	-- Transmutation Master (Removed)
-						},]]
-					}),
-					q(29482, {	-- Transmutation Master
-						["provider"] = { "n", 3347 },	-- Yelmak
-						["coord"] = { 55.6, 45.8, ORGRIMMAR },	-- Yelmak
-						["description"] = "Requires 300 Classic Alchemy.",
-						["requireSkill"] = ALCHEMY,
-						["repeatable"] = true,
-						--[[["altQuests"] = {
-							29481,	-- Elixir Master
-							29067,	-- Potion Master
-							29482,	-- Transmutation Master
-							10902,	-- Elixir Master (Removed)
-							10897,	-- Potion Master (Removed)
-							10899,	-- Transmutation Master (Removed)
-						},]]
-					}),
-				}),
-			}),
 			prof(BLACKSMITHING, {
 				n(QUESTS, {
 					q(2751, {	-- Barbaric Battlements

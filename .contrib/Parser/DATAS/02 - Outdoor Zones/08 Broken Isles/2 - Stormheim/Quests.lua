@@ -1109,9 +1109,7 @@ _.Zones =
 				q(42399),	-- Ready to Work
 				q(47052),	-- Retribution: Fate of the Tideskorn
 				q(40603),	-- Seeking the Valkyra
-				q(40146),	-- Seymour and Agnes
 				q(40404),	-- Show Legion Portal
-				q(40131),	-- Stonehide Leather Sample
 				q(41163),	-- The Apocalypse Bringer
 				q(40541),	-- The Charge Within
 				q(41802),	-- The Gates of Valor
@@ -1123,7 +1121,6 @@ _.Zones =
 				q(38685),	-- The Nameless King
 				q(41170),	-- The Relic Renewed
 				q(45406),	-- The Storm's Fury
-				q(40143),	-- Unfinished Treatise on the Properties of Stormscale
 				q(38642),	-- Vrykul Longboat
 				q(38472),	-- Whitewater Typhoon
 				q(38626),	-- Worg Pack

@@ -9,8 +9,14 @@ profession(SKINNING, {
 			["description"] = "These mobs are only available during a World Quest. They can only be skinned one time, similarly to the Slice of Bacon cooking quests.",
 			["groups"] = {
 				i(124116, {	-- Felhide
-					i(129863, {	-- Felhide Sample
-						["questID"] = 40156,	-- Felhide Sample
+					q(40156, {	-- Felhide Sample
+						["provider"] = { "i", 129863 },	-- Felhide Sample
+						["maps"] = {
+							AZSUNA,
+							HIGHMOUNTAIN,
+							STORMHEIM,
+							VALSHARAH,
+						},
 						["groups"] = {
 							recipe(194167),	-- Felhide [Rank 1]
 						},
@@ -37,30 +43,52 @@ profession(SKINNING, {
 			},
 		}),
 		i(151566, {	-- Fiendish Leather
-			i(151866, {	-- Tainted Scraps
-				["questID"] = 48040,	-- Tainted Scraps (Quest)
+			q(48040, {	-- Tainted Scraps
+				["provider"] = { "i", 151866 },	-- Tainted Scraps
+				["maps"] = {
+					885,	-- Antoran Wastes
+					830,	-- Krokuun
+					882,	-- Eredath
+				},
 				["groups"] = {
 					recipe(247842),	-- Fiendish Leather [Rank 1]
 				},
 			}),
-			i(151867, {	-- Spoiled Fiendish Leather
-				["questID"] = 48041,	-- A Larger Cut
-				["sourceQuest"] = 48040,	-- Source Quest: Tainted Scraps
+			q(48041, {	-- A Larger Cut
+				["provider"] = { "i", 151867 },	-- Spoiled Fiendish Leather
+				["sourceQuest"] = 48040,	-- Tainted Scraps
+				["maps"] = {
+					885,	-- Antoran Wastes
+					830,	-- Krokuun
+					882,	-- Eredath
+				},
 				["groups"] = {
 					recipe(247843),	-- Fiendish Leather [Rank 2]
 				},
 			}),
-			i(151868, {	-- Corrupted Tooth
-				["questID"] = 48042,	-- Order of Operations
+			q(48042, {	-- Order of Operations
+				["provider"] = { "i", 151868 },	-- Corrupted Tooth
 				["sourceQuest"] = 48041,	-- A Larger Cut
+				["maps"] = {
+					885,	-- Antoran Wastes
+					830,	-- Krokuun
+					882,	-- Eredath
+				},
 				["groups"] = {
 					recipe(247844),	-- Fiendish Leather [Rank 3]
 				},
 			}),
 		}),
 		i(124115, {	-- Stormscale
-			i(129862, {	-- Stormscale Sample
-				["questID"] = 40141,	-- Stormscale Sample
+			q(40141, {	-- Stormscale Sample
+				["provider"] = { "i", 129862 },	-- Stormscale Sample
+				["maps"] = {
+					AZSUNA,
+					HIGHMOUNTAIN,
+					STORMHEIM,
+					VALSHARAH,
+					SURAMAR,
+				},
 			}),
 			q(40142, {	-- The Core of the Stormscale
 				["sourceQuest"] = 40141,	-- Stormscale Sample
@@ -69,17 +97,26 @@ profession(SKINNING, {
 					recipe(194164),	-- Stormscale [Rank 1]
 				},
 			}),
-			i(129865, {	-- Unfinished Treatise on the Properties of Stormscale
-				["questID"] = 40143,	-- Unfinished Treatise on the Properties of Stormscale
-				["sourceQuest"] = 40142,	-- The Core of the Stormscale
+			q(40143, {	-- Unfinished Treatise on the Properties of Stormscale
+				["provider"] = { "i", 129865 },	-- Unfinished Treatise on the Properties of Stormscale
+				["sourceQuests"] = { 40142 },	-- The Core of the Stormscale
+				["maps"] = {
+					AZSUNA,
+					HIGHMOUNTAIN,
+					STORMHEIM,
+					VALSHARAH,
+					SURAMAR,
+				},
 			}),
 			q(40144, {	-- Glielle
 				["sourceQuest"] = 40143,	-- Unfinished Treatise on the Properties of Stormscale
 				["provider"] = { "n", 93541 },	-- Kondal Huntsworn <Skinning Trainer>
+				["coord"] = { 35.9, 28.5, LEGION_DALARAN },
 			}),
 			q(40145, {	-- Under Down
 				["sourceQuest"] = 40144,	-- Glielle
 				["provider"] = { "n", 98791 },	-- Glielle <Skinning Trainer>
+				["coord"] = { 47.0, 45.2, AZSUNA },
 				["groups"] = {
 					recipe(194165),	-- Stormscale [Rank 2]
 				},
@@ -87,14 +124,17 @@ profession(SKINNING, {
 			q(40146, {	-- Seymour and Agnes
 				["sourceQuest"] = 40143,	-- Unfinished Treatise on the Properties of Stormscale
 				["provider"] = { "n", 93541 },	-- Kondal Huntsworn <Skinning Trainer>
+				["coord"] = { 35.9, 28.5, LEGION_DALARAN },
 			}),
 			q(40147, {	-- Mother's Prized Knife
-				["sourceQuest"] = 40146,	-- Source Quest: Seymour and Agnes
+				["sourceQuest"] = 40146,	-- Seymour and Agnes
 				["provider"] = { "n", 98721 },	-- Seymour <Skinning Trainer>
+				["coord"] = { 45.7, 25.6, STORMHEIM },
 			}),
 			q(40148, {	-- Red-Eyed Revenge
 				["sourceQuest"] = 40146,	-- Seymour and Agnes
 				["provider"] = { "n", 98721 },	-- Seymour <Skinning Trainer>
+				["coord"] = { 45.7, 25.6, STORMHEIM },
 			}),
 			q(40149, {	-- Drakol'nir Must Die
 				["sourceQuests"] = {
@@ -102,17 +142,26 @@ profession(SKINNING, {
 					40148	-- Seymour and Agnes
 				},
 				["provider"] = { "n", 98721 },	-- Seymour <Skinning Trainer>
+				["coord"] = { 45.7, 25.6, STORMHEIM },
 				["groups"] = {
 					i(130102),	-- Mother's Skinning Knife
 				},
 			}),
-			i(129867, {	-- Immaculate Stormscale
-				["questID"] = 40151,	-- Immaculate Stormscale
+			q(40151, {	-- Immaculate Stormscale
+				["provider"] = { "i", 129867 },	-- Immaculate Stormscale
 				["sourceQuest"] = 40145,	-- Under Down
+				["maps"] = {
+					AZSUNA,
+					HIGHMOUNTAIN,
+					STORMHEIM,
+					VALSHARAH,
+					SURAMAR,
+				},
 			}),
 			q(40152, {	-- Scales for Ske'rit
 				["sourceQuest"] = 40151,	-- Immaculate Stormscale
 				["provider"] = { "n", 93541 },	-- Kondal Huntsworn <Skinning Trainer>
+				["maps"] = { LEGION_DALARAN },	-- TODO replace with coord
 			}),
 			q(40153, {	-- Return to Karazhan: Scales of Legend
 				["sourceQuest"] = 40152,	-- Scales for Ske'rit
@@ -134,19 +183,34 @@ profession(SKINNING, {
 			}),
 		}),
 		i(124113, {	-- Stonehide Leather
-			i(129860, {	-- Stonehide Leather Sample
-				["questID"] = 40131,	-- Stonehide Leather Sample
+			q(40131, {	-- Stonehide Leather Sample
+				["provider"] = { "i", 129860 },	-- Stonehide Leather Sample
+				["maps"] = {
+					AZSUNA,
+					HIGHMOUNTAIN,
+					STORMHEIM,
+					VALSHARAH,
+					SURAMAR,
+				},
 			}),
 			q(40132, {	-- In One Piece
 				["sourceQuest"] = 40131,	-- Stonehide Leather Sample
 				["provider"] = { "n", 93541 },	-- Kondal Huntsworn <Skinning Trainer>
+				["coord"] = { 35.9, 28.6, LEGION_DALARAN },
 				["groups"] = {
 					recipe(194161),	-- Stonehide Leather [Rank 1]
 				},
 			}),
-			i(129864, {	-- Scrap of Pants
-				["questID"] = 40133,	-- Scrap of Pants
+			q(40133, {	-- Scrap of Pants
 				["sourceQuest"] = 40132,	-- In One Piece
+				["provider"] = { "i", 129864 },	-- Scrap of Pants
+				["maps"] = {
+					AZSUNA,
+					HIGHMOUNTAIN,
+					STORMHEIM,
+					VALSHARAH,
+					SURAMAR,
+				},
 			}),
 			q(40134, {	-- Highmountain Hides
 				["sourceQuest"] = 40133,	-- Scrap of Pants
@@ -164,13 +228,21 @@ profession(SKINNING, {
 					recipe(194162),	-- Stonehide Leather [Rank 2]
 				},
 			}),
-			i(129866, {	-- Immaculate Stonehide Leather
-				["questID"] = 40136,	-- Immaculate Stonehide Leather
+			q(40136, {	-- Immaculate Stonehide Leather
 				["sourceQuest"] = 40135,	-- In One Piece
+				["provider"] = { "i", 129866 },	-- Immaculate Stonehide Leather
+				["maps"] = {
+					AZSUNA,
+					HIGHMOUNTAIN,
+					STORMHEIM,
+					VALSHARAH,
+					SURAMAR,
+				},
 			}),
 			q(40137, {	-- Leather for Ske'rit
 				["sourceQuest"] = 40136,	-- Immaculate Stonehide Leather
 				["provider"] = { "n", 93541 },	-- Kondal Huntsworn <Skinning Trainer>
+				["maps"] = { SURAMAR },
 			}),
 			q(40138, {	-- Trial of the Crusader: Hides of Legend
 				["sourceQuest"] = 40137,	-- Leather for Ske'rit
@@ -187,7 +259,7 @@ profession(SKINNING, {
 				},
 				["provider"] = { "n", 98720 },	-- Ske'rit <Skinning Trainer>
 				["groups"] = {
-					recipe(194163),	-- Stonehide Leather [Rank 3]
+					recipe(194163),    -- Stonehide Leather [Rank 3]
 				},
 			}),
 		}),
@@ -197,10 +269,6 @@ profession(SKINNING, {
 	}),
 	filter(TOYS, {
 		i(130102),	--  Mother's Skinning Knife
-	}),
-	q(40134, {	-- Highmountain Hides
-		["groups"] = { i(130064) },	-- Deadeye Monocle
-		["requireSkill"] = SKINNING,
 	}),
 	--[==[--
 	filter(RECIPES, {

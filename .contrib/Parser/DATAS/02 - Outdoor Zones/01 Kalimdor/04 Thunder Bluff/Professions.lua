@@ -7,55 +7,6 @@ _.Zones =
 	m(KALIMDOR, {
 		m(THUNDER_BLUFF, {
 			n(PROFESSIONS, {
-				prof(ALCHEMY, {
-					n(QUESTS, {
-						q(29481, {	-- Elixir Master
-							["provider"] = { "n", 3009 },	-- Bena Winterhoof
-							["coord"] = { 46.8, 33.6, THUNDER_BLUFF },
-							["description"] = "Requires 300 Classic Alchemy.",
-							["requireSkill"] = ALCHEMY,
-							["repeatable"] = true,
-							--[[["altQuests"] = {
-								29481,	-- Elixir Master
-								29067,	-- Potion Master
-								29482,	-- Transmutation Master
-								10902,	-- Elixir Master (Removed)
-								10897,	-- Potion Master (Removed)
-								10899,	-- Transmutation Master (Removed)
-							},]]
-						}),
-						q(29067, {	-- Potion Master
-							["provider"] = { "n", 3009 },	-- Bena Winterhoof
-							["coord"] = { 46.8, 33.6, THUNDER_BLUFF },
-							["description"] = "Requires 300 Classic Alchemy.",
-							["requireSkill"] = ALCHEMY,
-							["repeatable"] = true,
-							--[[["altQuests"] = {
-								29481,	-- Elixir Master
-								29067,	-- Potion Master
-								29482,	-- Transmutation Master
-								10902,	-- Elixir Master (Removed)
-								10897,	-- Potion Master (Removed)
-								10899,	-- Transmutation Master (Removed)
-							},]]
-						}),
-						q(29482, {	-- Transmutation Master
-							["provider"] = { "n", 3009 },	-- Bena Winterhoof
-							["coord"] = { 46.8, 33.6, THUNDER_BLUFF },
-							["description"] = "Requires 300 Classic Alchemy.",
-							["requireSkill"] = ALCHEMY,
-							["repeatable"] = true,
-							--[[["altQuests"] = {
-								29481,	-- Elixir Master
-								29067,	-- Potion Master
-								29482,	-- Transmutation Master
-								10902,	-- Elixir Master (Removed)
-								10897,	-- Potion Master (Removed)
-								10899,	-- Transmutation Master (Removed)
-							},]]
-						}),
-					}),
-				}),
 				prof(COOKING, {
 					n(ACHIEVEMENTS, {
 						ach(5843, {	-- Let's Do Lunch: Thunder Bluff

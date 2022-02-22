@@ -7,55 +7,6 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {
 		m(STORMWIND_CITY, {
 			n(PROFESSIONS, {
-				prof(ALCHEMY, {
-					n(QUESTS, {
-						q(29481, {	-- Elixir Master
-							["provider"] = { "n", 5499 },	-- Lilyssia Nightbreeze
-							["coord"] = { 55.6, 85.8, STORMWIND_CITY },
-							["description"] = "Requires 300 Classic Alchemy.",
-							["requireSkill"] = ALCHEMY,
-							["repeatable"] = true,
-							--[[["altQuests"] = {
-								29481,	-- Elixir Master
-								29067,	-- Potion Master
-								29482,	-- Transmutation Master
-								10902,	-- Elixir Master (Removed)
-								10897,	-- Potion Master (Removed)
-								10899,	-- Transmutation Master (Removed)
-							},]]
-						}),
-						q(29067, {	-- Potion Master
-							["provider"] = { "n", 5499 },	-- Lilyssia Nightbreeze
-							["coord"] = { 55.6, 85.8, STORMWIND_CITY },
-							["description"] = "Requires 300 Classic Alchemy.",
-							["requireSkill"] = ALCHEMY,
-							["repeatable"] = true,
-							--[[["altQuests"] = {
-								29481,	-- Elixir Master
-								29067,	-- Potion Master
-								29482,	-- Transmutation Master
-								10902,	-- Elixir Master (Removed)
-								10897,	-- Potion Master (Removed)
-								10899,	-- Transmutation Master (Removed)
-							},]]
-						}),
-						q(29482, {	-- Transmutation Master
-							["provider"] = { "n", 5499 },	-- Lilyssia Nightbreeze
-							["coord"] = { 55.6, 85.8, STORMWIND_CITY },
-							["description"] = "Requires 300 Classic Alchemy.",
-							["requireSkill"] = ALCHEMY,
-							["repeatable"] = true,
-							--[[["altQuests"] = {
-								29481,	-- Elixir Master
-								29067,	-- Potion Master
-								29482,	-- Transmutation Master
-								10902,	-- Elixir Master (Removed)
-								10897,	-- Potion Master (Removed)
-								10899,	-- Transmutation Master (Removed)
-							},]]
-						}),
-					}),
-				}),
 				prof(BLACKSMITHING, {
 					n(QUESTS, {
 						q(2759, {	-- In Search of Galvan

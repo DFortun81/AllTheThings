@@ -605,6 +605,9 @@ _.Zones =
 				},
 			}),
 			q(40519, {	-- The Legion Returns (Alliance)
+				["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+				["coord"] = { 56.3, 17.3, STORMWIND_CITY },
+				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
 			}),
 			q(49846, {	-- Wars on Two Fronts [Cataclysm]

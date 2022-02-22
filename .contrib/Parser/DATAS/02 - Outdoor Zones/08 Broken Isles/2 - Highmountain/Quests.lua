@@ -1013,12 +1013,10 @@ _.Zones =
 				q(40347),	-- Gurbog da Basher
 				q(39436),	-- Haglands Treasure
 				q(39827),	-- Haglands Treasure
-				q(40134),	-- Highmountain Hides
 				q(42233),	-- Highmountain Tribes
 				q(41186),	-- History of Highmountain
 				q(45572),	-- Holding Our Ground
 				q(42286),	-- Houndmaster Stroxis
-				q(40136),	-- Immaculate Stonehide Leather
 				q(42376),	-- Inquisitor Tivos
 				q(43815),	-- Karthax
 				q(39989),	-- Keepers of the Hammer
@@ -1045,7 +1043,6 @@ _.Zones =
 				q(39465),	-- Skywhisker Taskmaster
 				q(40175),	-- Sleeping Bear
 				q(40681),	-- Snarf
-				q(40141),	-- Stormscale Sample
 				q(46743),	-- Supplies From Highmountain
 				q(41187),	-- Surveying Student
 				q(40184),	-- Tauren Tanning

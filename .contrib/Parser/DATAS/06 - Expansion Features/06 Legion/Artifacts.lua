@@ -2364,7 +2364,9 @@ _.ExpansionFeatures =
 				}),
 				prof(FISHING, {
 					i(133755, {	-- Underlight Angler
-						artifact(841),	-- Base Skin
+						artifact(841, {	-- Base Skin
+							["sourceQuest"] = 41010,	-- Fish Frenzy
+						}),
 						artifact(988, {	-- Fisherfriend of the Isles
 							["provider"] = { "i", 152583 },	-- Underlight Emerald
 						}),

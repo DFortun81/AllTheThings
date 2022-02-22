@@ -24,7 +24,6 @@ profession(ALCHEMY, {
 			["qg"] = 6868,	-- Jarkal Mossmeld
 			["sourceQuest"] = 2202,	-- Uldaman Reagent Run
 			["coord"] = { 2.6, 46, BADLANDS },
-			["requireSkill"] = ALCHEMY,
 			["races"] = HORDE_ONLY,
 			["cost"] = {
 				{ "i", 7867, 3 },	-- Vessel of Dragon's Blood
@@ -43,7 +42,6 @@ profession(ALCHEMY, {
 					}),
 				}),
 				recipe(11452, {	-- Restorative Potion
-					["requireSkill"] = ALCHEMY,
 					-- #if AFTER CATA
 					["u"] = REMOVED_FROM_GAME,
 					-- #endif
@@ -54,7 +52,6 @@ profession(ALCHEMY, {
 			["qg"] = 1470,	-- Ghak Healtouch
 			["sourceQuest"] = 2500,	-- Badlands Reagent Run
 			["coord"] = { 37.07, 49.38, LOCH_MODAN },
-			["requireSkill"] = ALCHEMY,
 			["races"] = ALLIANCE_ONLY,
 			["cost"] = {
 				{ "i", 7867, 3 },	-- Vessel of Dragon's Blood
@@ -73,7 +70,6 @@ profession(ALCHEMY, {
 					}),
 				}),
 				recipe(11452, {	-- Restorative Potion
-					["requireSkill"] = ALCHEMY,
 					-- #if AFTER CATA
 					["u"] = REMOVED_FROM_GAME,
 					-- #endif
@@ -82,7 +78,6 @@ profession(ALCHEMY, {
 		}),
 		q(1581, {	-- Elixirs for the Bladeleafs
 			["qg"] = 2083,	-- Syral Bladeleaf
-			["requireSkill"] = ALCHEMY,
 			["coord"] = { 55.8, 50.4, TELDRASSIL },
 			["races"] = ALLIANCE_ONLY,
 			["cost"] = {
@@ -100,7 +95,6 @@ profession(ALCHEMY, {
 				{ 52.2, 36.4, HELLFIRE_PENINSULA },	-- Apothecary Antonivich <Master Alchemy Trainer>
 				{ 53.8, 65.8, HELLFIRE_PENINSULA },	-- Alchemist Gribble <Alchemy Trainer>
 			},
-			["requireSkill"] = ALCHEMY,
 			["altQuests"] = {
 				--10906,	-- Master of Elixirs (1/2)
 				10905,	-- Master of Potions (1/2)
@@ -119,7 +113,6 @@ profession(ALCHEMY, {
 			["description"] = "Upon finishing this quest, you will become a Elixir Master and be locked out of becoming a Transmutation or Potion Master.",
 			["coord"] = { 45.8, 20.4, SHATTRATH_CITY },
 			["maps"] = { CAVERNS_OF_TIME_BLACK_MORASS },
-			["requireSkill"] = ALCHEMY,
 			["altQuests"] = {
 				10902,	-- Master of Elixirs (2/2)
 				--10897,	-- Master of Potions (2/2)
@@ -147,7 +140,6 @@ profession(ALCHEMY, {
 				{ 52.2, 36.4, HELLFIRE_PENINSULA },	-- Apothecary Antonivich <Master Alchemy Trainer>
 				{ 53.8, 65.8, HELLFIRE_PENINSULA },	-- Alchemist Gribble <Alchemy Trainer>
 			},
-			["requireSkill"] = ALCHEMY,
 			["altQuests"] = {
 				10906,	-- Master of Elixirs (1/2)
 				--10905,	-- Master of Potions (1/2)
@@ -166,7 +158,6 @@ profession(ALCHEMY, {
 			["description"] = "Upon finishing this quest, you will become a Potion Master and be locked out of becoming a Transmutation or Elixir Master.",
 			["coord"] = { 44.1, 36.6, ZANGARMARSH },
 			["maps"] = { TEMPEST_KEEP_BOTANICA },
-			["requireSkill"] = ALCHEMY,
 			["altQuests"] = {
 				10902,	-- Master of Elixirs (2/2)
 				--10897,	-- Master of Potions (2/2)
@@ -194,7 +185,6 @@ profession(ALCHEMY, {
 				{ 52.2, 36.4, HELLFIRE_PENINSULA },	-- Apothecary Antonivich <Master Alchemy Trainer>
 				{ 53.8, 65.8, HELLFIRE_PENINSULA },	-- Alchemist Gribble <Alchemy Trainer>
 			},
-			["requireSkill"] = ALCHEMY,
 			["altQuests"] = {
 				10906,	-- Master of Elixirs (1/2)
 				10905,	-- Master of Potions (1/2)
@@ -212,7 +202,6 @@ profession(ALCHEMY, {
 			["sourceQuest"] = 10907,	-- Master of Transmutation (1/2)
 			["description"] = "Upon finishing this quest, you will become a Transmutation Master and be locked out of becoming a Potion or Elixir Master.",
 			["coord"] = { 44.1, 36.6, NETHERSTORM },
-			["requireSkill"] = ALCHEMY,
 			["altQuests"] = {
 				10902,	-- Master of Elixirs (2/2)
 				10897,	-- Master of Potions (2/2)
@@ -227,6 +216,66 @@ profession(ALCHEMY, {
 			["u"] = TBC_PHASE_ONE,
 			-- #endif
 			["lvl"] = 68,
+		}),
+		q(29481, {	-- Elixir Master
+			["description"] = "Requires 300 Classic Alchemy.",
+			["repeatable"] = true,
+			["qgs"] = {
+				4160,	-- Ainethil
+				3347,	-- Yelmak
+				3009,	-- Bena Winterhoof
+				5177,	-- Tally Berryfizz
+				5499,	-- Lilyssia Nightbreeze
+				4611,	-- Doctor Herbert Halsey
+			},
+			["coords"] = {
+				{ 54.0, 38.6, DARNASSUS },	-- Ainethil
+				{ 55.6, 45.8, ORGRIMMAR },	-- Yelmak
+				{ 46.8, 33.6, THUNDER_BLUFF },	-- Bena Winterhoof
+				{ 66.6, 55.0, IRONFORGE },	-- Tally Berryfizz
+				{ 55.6, 85.8, STORMWIND_CITY },	-- Lilyssia Nightbreeze
+				{ 47.6, 72.8, UNDERCITY },	-- Doctor Herbert Halsey
+			},
+		}),
+		q(29067, {	-- Potion Master
+			["description"] = "Requires 300 Classic Alchemy.",
+			["repeatable"] = true,
+			["qgs"] = {
+				4160,	-- Ainethil
+				3347,	-- Yelmak
+				3009,	-- Bena Winterhoof
+				5177,	-- Tally Berryfizz
+				5499,	-- Lilyssia Nightbreeze
+				4611,	-- Doctor Herbert Halsey
+			},
+			["coords"] = {
+				{ 54.0, 38.6, DARNASSUS },	-- Ainethil
+				{ 55.6, 45.8, ORGRIMMAR },	-- Yelmak
+				{ 46.8, 33.6, THUNDER_BLUFF },	-- Bena Winterhoof
+				{ 66.6, 55.0, IRONFORGE },	-- Tally Berryfizz
+				{ 55.6, 85.8, STORMWIND_CITY },	-- Lilyssia Nightbreeze
+				{ 47.6, 72.8, UNDERCITY },	-- Doctor Herbert Halsey
+			},
+		}),
+		q(29482, {	-- Transmutation Master
+			["description"] = "Requires 300 Classic Alchemy.",
+			["repeatable"] = true,
+			["qgs"] = {
+				4160,	-- Ainethil
+				3347,	-- Yelmak
+				3009,	-- Bena Winterhoof
+				5177,	-- Tally Berryfizz
+				5499,	-- Lilyssia Nightbreeze
+				4611,	-- Doctor Herbert Halsey
+			},
+			["coords"] = {
+				{ 54.0, 38.6, DARNASSUS },	-- Ainethil
+				{ 55.6, 45.8, ORGRIMMAR },	-- Yelmak
+				{ 46.8, 33.6, THUNDER_BLUFF },	-- Bena Winterhoof
+				{ 66.6, 55.0, IRONFORGE },	-- Tally Berryfizz
+				{ 55.6, 85.8, STORMWIND_CITY },	-- Lilyssia Nightbreeze
+				{ 47.6, 72.8, UNDERCITY },	-- Doctor Herbert Halsey
+			},
 		}),
 	}),
 });

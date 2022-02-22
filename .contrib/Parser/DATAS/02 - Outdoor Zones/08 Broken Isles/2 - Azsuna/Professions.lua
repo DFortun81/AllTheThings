@@ -209,35 +209,9 @@ _.Zones =
 							}),
 						},
 					}),
-					n(ARTIFACTS, {
-						["description"] = "Prerequisites:\n\n  Be level 45.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry.\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
-						["lvl"] = { 45 },
-						["g"] = {
-							q(40960, {	-- Luminous Pearl
-								["provider"] = { "i", 133887 },	-- Luminous Pearl
-							}),
-						},
-					}),
 					i(137695),	-- Schematic: Reaves Module: Wormhole Generator Mode
 					i(137775, {	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 3]
 						["description"] = "I got it after about ~20-30 min of fishing from a Cursed Queenfish pool in the lake near Narthalas Academy. No legendary pole equipped or any special lures.",
-					}),
-				}),
-				prof(SKINNING, {
-					q(40145, {	-- Under Down
-						["sourceQuests"] = { 40144 },	-- Glielle
-						["requireSkill"] = SKINNING,
-						["coord"] = { 47.0, 45.2, AZSUNA },
-						["provider"] = { "n", 98791 },	-- Glielle
-						["g"] = {
-							recipe(194165),	-- Skinning Technique: Stormscale (Rank 2)
-						},
-					}),
-					q(40143, {	-- Unfinished Treatise on the Properties of Stormscale
-						["sourceQuests"] = { 40142 },	-- The Core of the Stormscale
-						["requireSkill"] = SKINNING,
-						["description"] = "The item that starts this quest can be skinned from any scaled creature found across the Broken Isles.",
-						["itemID"] = 129865,	-- Unfinished Treatise on the Properties of Stormscale
 					}),
 				}),
 			}),

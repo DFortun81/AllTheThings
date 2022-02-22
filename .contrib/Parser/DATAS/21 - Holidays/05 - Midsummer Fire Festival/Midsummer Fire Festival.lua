@@ -2191,6 +2191,23 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 			}),
 
 			-- Bonfire Quests
+			n(FACTION_HEADER_NEUTRAL, sharedData({ ["isYearly"] = true, }, {
+				q(29036, {	-- Honor the Flame — Deepholm
+					["qg"] = 51698,	-- Deepholm Flame Guardian
+					["coord"] = { 49.4, 51.4, 207 },
+					["timeline"] = { "added 4.0.1" },
+				}),
+				q(29030, {	-- Honor the Flame — Hyjal
+					["qg"] = 51682,	-- Hyjal Flame Guardian
+					["coord"] = { 62.8, 22.6, MOUNT_HYJAL },
+					["timeline"] = { "added 4.0.1" },
+				}),
+				q(29031, {	-- Honor the Flame — Vashj'ir
+					["qg"] = 51697,	-- Vashj'ir Flame Guardian
+					["coord"] = { 49.4, 42.0, 205 },	-- Shimmering Expanse
+					["timeline"] = { "added 4.0.1" },
+				}),
+			})),
 			n(FACTION_HEADER_ALLIANCE, {
 				["timeline"] = { "added 2.4.0.7994" },
 				["races"] = ALLIANCE_ONLY,
@@ -2545,11 +2562,6 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						["coord"] = { 37.0, 46.2, DARKSHORE },
 						-- #endif
 					}),
-					q(29036, {	-- Honor the Flame — Deepholm
-						["qg"] = 51698,	-- Deepholm Flame Guardian
-						["coord"] = { 49.4, 51.4, 207 },
-						["timeline"] = { "added 4.0.1" },
-					}),
 					q(11812, {	-- Honor the Flame — Desolace
 						["qg"] = 25894,	-- Desolace Flame Warden
 						-- #if AFTER CATA
@@ -2618,11 +2630,6 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						["qg"] = 32804,	-- Howling Fjord Flame Warden
 						["coord"] = { 58.0, 16.0, HOWLING_FJORD },
 						["timeline"] = { "added 3.0.1" },
-					}),
-					q(29030, {	-- Honor the Flame — Hyjal
-						["qg"] = 51682,	-- Hyjal Flame Guardian
-						["coord"] = { 62.8, 22.6, MOUNT_HYJAL },
-						["timeline"] = { "added 4.0.1" },
 					}),
 					q(11820, {	-- Honor the Flame — Loch Modan
 						["qg"] = 25902,	-- Loch Modan Flame Warden
@@ -2766,11 +2773,6 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						["qg"] = 69572,	-- Vale of Eternal Blossoms Flame Warden
 						["coord"] = { 79.6, 37.2, VALE_OF_ETERNAL_BLOSSOMS },
 						["timeline"] = { "added 5.0.1" },
-					}),
-					q(29031, {	-- Honor the Flame — Vashj'ir
-						["qg"] = 51697,	-- Vashj'ir Flame Guardian
-						["coord"] = { 49.4, 42.0, 205 },	-- Shimmering Expanse
-						["timeline"] = { "added 4.0.1" },
 					}),
 					q(11827, {	-- Honor the Flame — Western Plaguelands
 						["qg"] = 25909,	-- Western Plaguelands Flame Warden
@@ -3162,11 +3164,6 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						["coord"] = { 80.0, 53.0, CRYSTALSONG_FOREST },
 						["timeline"] = { "added 3.0.1" },
 					}),
-					q(29036, {	-- Honor the Flame — Deepholm
-						["qg"] = 51698,	-- Deepholm Flame Guardian
-						["coord"] = { 49.4, 51.4, 207 },
-						["timeline"] = { "added 4.0.1" },
-					}),
 					q(11845, {	-- Honor the Flame — Desolace
 						["qg"] = 25928,	-- Desolace Flame Keeper
 						["coord"] = { 26.1, 76.9, DESOLACE },
@@ -3234,11 +3231,6 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						["qg"] = 32812,	-- Howling Fjord Flame Keeper
 						["coord"] = { 48.0, 13.0, HOWLING_FJORD },
 						["timeline"] = { "added 3.0.1" },
-					}),
-					q(29030, {	-- Honor the Flame — Hyjal
-						["qg"] = 51682,	-- Hyjal Flame Guardian
-						["coord"] = { 62.8, 22.6, MOUNT_HYJAL },
-						["timeline"] = { "added 4.0.1" },
 					}),
 					q(11852, {	-- Honor the Flame — Mulgore
 						["qg"] = 25936,	-- Mulgore Flame Keeper
@@ -3376,11 +3368,6 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						["qg"] = 69551,	-- Vale of Eternal Blossoms Flame Keeper
 						["coord"] = { 77.8, 33.1, VALE_OF_ETERNAL_BLOSSOMS },
 						["timeline"] = { "added 5.0.1" },
-					}),
-					q(29031, {	-- Honor the Flame — Vashj'ir
-						["qg"] = 51697,	-- Vashj'ir Flame Guardian
-						["coord"] = { 49.4, 42.0, 205 },	-- Shimmering Expanse
-						["timeline"] = { "added 4.0.1" },
 					}),
 					q(54750, {	-- Honor the Flame — Vol'dun
 						["qg"] = 148986,    -- Vol'dun Flame Keeper

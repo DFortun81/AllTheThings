@@ -14,6 +14,18 @@ profession(FISHING, {
 				MALDRAXXUS,
 			},
 		}),
+		i(133887, {	-- Luminous Pearl
+			["description"] = "Pre-requisites:\n\n  Be level 45.\n  Have level 100 Legion Fishing.\n  Complete the achievement 'Bigger Fish to Fry'.\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for this item.",
+			["lvl"] = { 45 },
+			["sym"] = { {"select", "achievementID", 10596} },	-- Bigger Fish to Fry (maybe this isn't weird to link here as a easy way to see missing pre-requisites?)
+			["maps"] = {
+				AZSUNA,
+				HIGHMOUNTAIN,
+				STORMHEIM,
+				VALSHARAH,
+				SURAMAR,
+			},
+		}),
 	}),
 	filter(57,   {	-- Fishing Poles
 		i(19970),	-- Arcanite Fishing Pole
@@ -422,6 +434,23 @@ profession(FISHING, {
 		q(24431, {	-- Waterlogged Recipe
 			["repeatable"] = true,
 			["provider"] = { "i", 49667 },	-- Waterlogged Recipe
+		}),
+		q(40960, {	-- Luminous Pearl
+			["provider"] = { "i", 133887 },	-- Luminous Pearl
+		}),
+		q(40961, {	-- The Dalaran Fountain
+			["sourceQuest"] = 40960,	-- Luminous Pearl
+			["provider"] = { "n", 90417 },	-- Archmage Khadgar
+			["coord"] = { 28.8, 48.6, LEGION_DALARAN },
+		}),
+		q(41010, {	-- Fish Frenzy
+			["description"] = "If you can't find Nat Pagle to give you this quest, going into the bank just south of the fountain seems to force him to spawn right on you.",
+			["sourceQuest"] = 40961,	-- The Dalaran Fountain
+			["provider"] = { "n", 102639 },	-- Nat Pagle
+			["maps"] = { LEGION_DALARAN },	-- TODO replace with coord?
+			["g"] = {
+				artifact(841),	-- Base Skin
+			},
 		}),
 	}),
 	n(WEAPONS, {
