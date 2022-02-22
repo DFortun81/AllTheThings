@@ -151,6 +151,32 @@ root("WorldEvents", m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bizmo'
 					i(166724),	-- Bruce (MOUNT!)
 				},
 			}),
+			
+			-- 5.3 Season 1 boss quests (had to be obtainable in later season too)
+			q(32836, { ["u"] = REMOVED_FROM_GAME, }),	-- A Knockoff Grumplefloot
+			q(32837, { ["u"] = REMOVED_FROM_GAME, }),	-- Grandpa Grumplefloot
+			q(32838, { ["u"] = REMOVED_FROM_GAME, }),	-- A Tale of Romance and Chivalry
+			q(32839, { ["u"] = REMOVED_FROM_GAME, }),	-- The Bear and the Lady Fair
+			q(32840, { ["u"] = REMOVED_FROM_GAME, }),	-- Boom Boom's Fuse
+			q(32841, { ["u"] = REMOVED_FROM_GAME, }),	-- Master Boom Boom
+			q(32842, { ["u"] = REMOVED_FROM_GAME, }),	-- Teeth Like Swords
+			q(32843, { ["u"] = REMOVED_FROM_GAME, }),	-- Razorgrin
+			q(32844, { ["u"] = REMOVED_FROM_GAME, }),	-- Secret of the Ooze
+			q(32845, { ["u"] = REMOVED_FROM_GAME, }),	-- Splat
+			q(32846, { ["u"] = REMOVED_FROM_GAME, }),	-- Modified Chomping Apparatus
+			q(32847, { ["u"] = REMOVED_FROM_GAME, }),	-- Mecha-Bruce
+			q(32848, { ["u"] = REMOVED_FROM_GAME, }),	-- Frost-Tipped Eggshell
+			q(32849, { ["u"] = REMOVED_FROM_GAME, }),	-- Dippy and Doopy
+			q(32850, { ["u"] = REMOVED_FROM_GAME, }),	-- Last Year's Model
+			q(32851, { ["u"] = REMOVED_FROM_GAME, }),	-- Blingtron 3000
+			q(32852, { ["u"] = REMOVED_FROM_GAME, }),	-- The Digmaster's Earthblade
+			q(32853, { ["u"] = REMOVED_FROM_GAME, }),	-- Mingus Diggs
+			q(32854, { ["u"] = REMOVED_FROM_GAME, }),	-- Well-Worn Blindfold
+			q(32855, { ["u"] = REMOVED_FROM_GAME, }),	-- The Blind Hero
+			q(32856, { ["u"] = REMOVED_FROM_GAME, }),	-- Paper-Covered Rock
+			q(32857, { ["u"] = REMOVED_FROM_GAME, }),	-- Ro-Shambo
+			q(32858, { ["u"] = REMOVED_FROM_GAME, }),	-- Raptorhide Boxing Gloves
+			q(32859, { ["u"] = REMOVED_FROM_GAME, }),	-- Ty'thar
 		}),
 		n(VENDORS, {
 			n(70752,  {	-- Card Trader Leila
