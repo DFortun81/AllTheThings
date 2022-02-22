@@ -51,25 +51,25 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				q(55510, {	-- No Mercy for the Merciless
 					["provider"] = { "n", 151795 },	-- Commander Zanneth
 					["isWeekly"] = true,
-					["coord"] = { 49.6, 20.4, 1334 },
+					["coord"] = { 49.6, 20.4, WINTERGRASP },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(55511, {	-- Slay them all!
 					["provider"] = { "n", 151611 },	-- Commander Dardosh
 					["isWeekly"] = true,
-					["coord"] = { 49.6, 20.4, 1334 },
+					["coord"] = { 49.6, 20.4, WINTERGRASP },
 					["races"] = HORDE_ONLY,
 				}),
 				q(55508, {	-- Victory in Wintergrasp
 					["provider"] = { "n", 152003 },	-- Tactical Officer Ahbramis
 					["isWeekly"] = true,
-					["coord"] = { 50.2, 17.8, 1334 },
+					["coord"] = { 50.2, 17.8, WINTERGRASP },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(55509, {	-- Victory in Wintergrasp
 					["provider"] = { "n", 152004 },	-- Tactical Officer Kilrath
 					["isWeekly"] = true,
-					["coord"] = { 50.2, 17.8, 1334 },
+					["coord"] = { 50.2, 17.8, WINTERGRASP },
 					["races"] = HORDE_ONLY,
 				}),
 			}),

@@ -4,7 +4,7 @@
 
 root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 	achcat(ACHIEVEMENT_CATEGORY_ALTERAC_VALLEY, {
-		["maps"] = { 91 },	-- Alterac Valley
+		["maps"] = { ALTERAC_VALLEY },
 		["g"] = {
 			ach(13928, {	-- Alterac Valley of Olde (A)
 				["races"] = ALLIANCE_ONLY,

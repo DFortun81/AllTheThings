@@ -5,7 +5,7 @@
 root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 	achcat(ACHIEVEMENT_CATEGORY_EYE_OF_THE_STORM, {
 		["maps"] = {
-			112,	-- Eye of the Storm (BG)
+			EYE_OF_THE_STORM,
 			397,	-- Eye of the Storm (BG)
 		},
 		["g"] = {

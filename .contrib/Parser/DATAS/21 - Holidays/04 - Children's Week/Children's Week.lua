@@ -182,7 +182,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 						["achievementID"] = 1786,	-- School of Hard Knocks
 						["criteriaID"] = 3,	-- Assault a flag in Arathi Basin
 						["maps"] = {
-							93,	-- Arathi Basin
+							ARATHI_BASIN,
 							837,	-- Arathi Basin
 							844,	-- Arathi Basin
 							1383,	-- Arathi Basin
@@ -193,21 +193,21 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 						["achievementID"] = 1786,	-- School of Hard Knocks
 						["criteriaID"] = 2,	-- Assault a tower in Alterac Valley
 						["maps"] = {
-							91,	-- Alterac Valley
+							ALTERAC_VALLEY,
 						},
 					},
 					{	-- Capture the flag in Eye of the Storm
 						["achievementID"] = 1786,	-- School of Hard Knocks
 						["criteriaID"] = 1,	-- Capture the flag in Eye of the Storm
 						["maps"] = {
-							112,	-- Eye of the Storm
+							EYE_OF_THE_STORM,
 						},
 					},
 					{	-- Return a fallen flag in Warsong Gulch
 						["achievementID"] = 1786,	-- School of Hard Knocks
 						["criteriaID"] = 4,	-- Return a fallen flag in Warsong Gulch
 						["maps"] = {
-							92,	-- Warsong Gulch
+							WARSONG_GULCH,
 							859,	-- Warsong Gulch
 							1339,	-- Warsong Gulch
 						},
