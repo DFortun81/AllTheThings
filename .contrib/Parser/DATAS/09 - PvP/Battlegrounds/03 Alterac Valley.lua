@@ -33,6 +33,59 @@ local OnTooltipForAlteracValley = [[function(t)
 		end
 	end
 end]];
+local HERO_OF_ALTERAC_ALLIANCE_OnUpdate = [[function(t)
+	if t.collectible then
+		if not t.av then
+			local f = _.SearchForField("factionID", 730);
+			if f and #f > 0 then
+				t.av = f[1];
+			else
+				return true;
+			end
+		end
+		t.SetAchievementCollected(t.achievementID, t.av.standing == 8);
+	end
+end]];
+local HERO_OF_ALTERAC_HORDE_OnUpdate = [[function(t)
+	if t.collectible then
+		if not t.av then
+			local f = _.SearchForField("factionID", 729);
+			if f and #f > 0 then
+				t.av = f[1];
+			else
+				return true;
+			end
+		end
+		t.SetAchievementCollected(t.achievementID, t.av.standing == 8);
+	end
+end]];
+local HERO_OF_ALTERAC_OnUpdate = [[function(t)
+	if t.collectible then
+		if not t.av then
+			local f = _.SearchForField("factionID", 730);
+			if f and #f > 0 then
+				t.av = f[1];
+			else
+				return true;
+			end
+		end
+		t.SetAchievementCollected(t.achievementID, t.wsg.standing == 8 and t.ab.standing == 8 and t.av.standing == 8);
+	end
+end]];
+local HERO_OF_ALTERAC_OnClick = [[function(row, button)
+	if button == "RightButton" then
+		local t = row.ref;
+		local clone = _.CreateMiniListForGroup(_.CreateAchievement(t[t.key], { t.av })).data;
+		clone.description = t.description;
+		return true;
+	end
+end]];
+local HERO_OF_ALTERAC_OnTooltip = [[function(t)
+	if t.collectible then
+		GameTooltip:AddLine(" ");
+		GameTooltip:AddDoubleLine(" |T" .. t.av.icon .. ":0|t " .. t.av.text, _.L[t.av.standing == 8 and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"], 1, 1, 1);
+	end
+end]];
 local REMOVED_WITH_ANNIVERSARY_15 = { "removed 8.2.5.31958" };
 root("PVP", pvp(n(BATTLEGROUNDS, {
 	m(ALTERAC_VALLEY, {
@@ -73,7 +126,118 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				}),
 			}),
 			n(ACHIEVEMENTS, {
-				
+				ach(708, applyclassicphase(PHASE_TWO, {	-- Hero of the Frostwolf Clan
+					["races"] = HORDE_ONLY,
+					-- #if BEFORE 3.0.1
+					["OnClick"] = HERO_OF_ALTERAC_OnClick,
+					["OnTooltip"] = HERO_OF_ALTERAC_OnTooltip,
+					["OnUpdate"] = HERO_OF_ALTERAC_HORDE_OnUpdate,
+					["description"] = "Raise your reputation with the Frostwolf Clan to Exalted.",
+					-- #endif
+				})),
+				ach(709, applyclassicphase(PHASE_TWO, {	-- Hero of the Stormpike Guard
+					["races"] = ALLIANCE_ONLY,
+					-- #if BEFORE 3.0.1
+					["OnClick"] = HERO_OF_ALTERAC_OnClick,
+					["OnTooltip"] = HERO_OF_ALTERAC_OnTooltip,
+					["OnUpdate"] = HERO_OF_ALTERAC_ALLIANCE_OnUpdate,
+					["description"] = "Raise your reputation with the Stormpike Guard to Exalted.",
+					-- #endif
+				})),
+				ach(1167, {	-- Master of Alterac Valley
+					-- Meta Achievement should symlink the contained Achievements from Source
+					["sym"] = {
+						{"select","achievementID",
+							219,	-- Alterac Valley Veteran
+							221,	-- Alterac Grave Robber
+							222,	-- Tower Defense
+							1151,	-- Loyal Defender (A)
+							224,	-- Loyal Defender (H)
+							225,	-- Everything Counts (A)
+							1164,	-- Everything Counts (H)
+							223,	-- The Sickly Gazelle
+							873,	-- Frostwolf Perfection
+							220,	-- Stormpike Perfection
+							582,	-- Alterac Valley All-Star
+							706,	-- Frostwolf Howler
+							707,	-- Stormpike Battle Charger
+							1166,	-- To the Looter Go the Spoils
+						},
+					},
+					
+				}),
+				ach(218, {	-- Alterac Valley Victory
+					["rank"] = 1,
+				}),
+				ach(219, {	-- Alterac Valley Veteran
+					["rank"] = 100,
+				}),
+				ach(221),	-- Alterac Grave Robber
+				ach(222),	-- Tower Defense
+				ach(1151, {	-- Loyal Defender (A)
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(224, {	-- Loyal Defender (H)
+					["races"] = HORDE_ONLY,
+				}),
+				ach(225, {	-- Everything Counts (A)
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(1164, {	-- Everything Counts (H)
+					["races"] = HORDE_ONLY,
+				}),
+				ach(223),	-- The Sickly Gazelle
+				ach(873, {	-- Frostwolf Perfection
+					["races"] = HORDE_ONLY,
+				}),
+				ach(220, {	-- Stormpike Perfection
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(582, {	-- Alterac Valley All-Star
+					crit(1),	-- Assault a graveyard
+					crit(2),	-- Defend a graveyard
+					crit(3),	-- Assault a tower
+					crit(4),	-- Defend a tower
+					crit(5),	-- Kill someone in the Field of Strife
+				}),
+				removeclassicphase(ach(706, {	-- Frostwolf Howler
+					["provider"] = { "i", 19029 },	-- Horn of the Frostwolf Howler
+					["races"] = HORDE_ONLY,
+					["f"] = 100,
+					-- #if BEFORE WRATH
+					["description"] = "Obtain a Frostwolf Howler from Alterac Valley.",
+					["OnUpdate"] = [[function(t)
+						local collected = false;
+						for i,provider in ipairs(t.providers) do
+							if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
+								collected = true;
+								break;
+							end
+						end
+						t.SetAchievementCollected(t.achievementID, collected);
+					end]],
+					-- #endif
+				})),
+				removeclassicphase(ach(707, {	-- Stormpike Battle Charger
+					["provider"] = { "i", 19030 },	-- Stormpike Battle Charger
+					["races"] = ALLIANCE_ONLY,
+					["f"] = 100,
+					-- #if BEFORE WRATH
+					["description"] = "Obtain a Stormpike Battle Charger from Alterac Valley.",
+					["OnUpdate"] = [[function(t)
+						local collected = false;
+						for i,provider in ipairs(t.providers) do
+							if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
+								collected = true;
+								break;
+							end
+						end
+						t.SetAchievementCollected(t.achievementID, collected);
+					end]],
+					-- #endif
+				})),
+				ach(1166),	-- To the Looter Go the Spoils
+				ach(226),	-- The Alterac Blitz
 			}),
 			-- #if BEFORE TBC
 			n(EXPLORATION, {
