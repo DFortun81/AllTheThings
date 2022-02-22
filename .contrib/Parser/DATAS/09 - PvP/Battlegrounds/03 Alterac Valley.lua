@@ -59,19 +59,6 @@ local HERO_OF_ALTERAC_HORDE_OnUpdate = [[function(t)
 		t.SetAchievementCollected(t.achievementID, t.av.standing == 8);
 	end
 end]];
-local HERO_OF_ALTERAC_OnUpdate = [[function(t)
-	if t.collectible then
-		if not t.av then
-			local f = _.SearchForField("factionID", 730);
-			if f and #f > 0 then
-				t.av = f[1];
-			else
-				return true;
-			end
-		end
-		t.SetAchievementCollected(t.achievementID, t.wsg.standing == 8 and t.ab.standing == 8 and t.av.standing == 8);
-	end
-end]];
 local HERO_OF_ALTERAC_OnClick = [[function(row, button)
 	if button == "RightButton" then
 		local t = row.ref;

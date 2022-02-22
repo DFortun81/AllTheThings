@@ -46,7 +46,6 @@ root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 						1166,	-- To the Looter Go the Spoils
 					},
 				},
-				
 			}),
 			ach(218, {	-- Alterac Valley Victory
 				["rank"] = 1,
