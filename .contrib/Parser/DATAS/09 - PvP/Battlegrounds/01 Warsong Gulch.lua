@@ -403,14 +403,14 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				}),
 				q(7868, {	-- Outrider Advanced Care Package
 					["qg"] = 14754,	-- Kelm Hargunth <Warsong Supply Officer>
-					["minReputation"] = { 889, REVERED },	-- Warsong Outriders, Revered.
+					["minReputation"] = { 889, FRIENDLY },	-- Warsong Outriders, Friendly.
 					-- #if AFTER CATA
 					["coord"] = { 40.2, 20.0, NORTHERN_BARRENS },
 					-- #else
 					["coord"] = { 46.6, 8.4, THE_BARRENS },
 					-- #endif
 					["races"] = HORDE_ONLY,
-					["lvl"] = 45,
+					["lvl"] = lvlsquish(45, 45, 10),
 					["groups"] = {
 						i(19153),	-- Outrider Advanced Care Package
 					},
@@ -431,7 +431,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				}),
 				q(7867, {	-- Outrider Standard Care Package
 					["qg"] = 14754,	-- Kelm Hargunth <Warsong Supply Officer>
-					["minReputation"] = { 889, HONORED },	-- Warsong Outriders, Honored.
+					["minReputation"] = { 889, FRIENDLY },	-- Warsong Outriders, Friendly.
 					-- #if AFTER CATA
 					["coord"] = { 40.2, 20.0, NORTHERN_BARRENS },
 					-- #else
@@ -450,9 +450,9 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					-- #else
 					["coord"] = { 61.6, 83.8, ASHENVALE },
 					-- #endif
-					["minReputation"] = { 890, REVERED },	-- Silverwing Sentinels, Revered.
+					["minReputation"] = { 890, FRIENDLY },	-- Silverwing Sentinels, Friendly.
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 45,
+					["lvl"] = lvlsquish(45, 45, 10),
 					["groups"] = {
 						i(19152),	-- Sentinel Advanced Care Package
 					},
@@ -478,7 +478,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					-- #else
 					["coord"] = { 61.6, 83.8, ASHENVALE },
 					-- #endif
-					["minReputation"] = { 890, HONORED },	-- Silverwing Sentinels, Honored.
+					["minReputation"] = { 890, FRIENDLY },	-- Silverwing Sentinels, Friendly.
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 35, 44 },
 					["groups"] = {
