@@ -22,6 +22,9 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		un(REMOVED_FROM_GAME, ach(13958, {	-- Corrupted Gladiator's Proto-Drake
 			un(REMOVED_FROM_GAME, i(156884)),	-- Corrupted Gladiator's Proto-Drake
 		})),
+		pvp(ach(15384, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Cosmic Gladiator's Soul Eater
+			i(189507),	-- Cosmic Gladiator's Soul Eater
+		}))),
 		un(REMOVED_FROM_GAME, ach(11001, {	-- Cruel Gladiator's Storm Dragon
 			un(REMOVED_FROM_GAME, i(141845)),	-- Cruel Gladiator's Storm Dragon
 		})),
@@ -133,9 +136,5 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		un(REMOVED_FROM_GAME, ach(4600, {	-- Wrathful Gladiator's Frost Wyrm
 			un(REMOVED_FROM_GAME, i(50435)),	-- Wrathful Gladiator's Frost Wyrm
 		})),
-		-- PTR 9.2
-		pvp(ach(15384, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Cosmic Gladiator's Soul Eater
-			i(189507),	-- Cosmic Gladiator's Soul Eater
-		}))),
 	}),
 }));

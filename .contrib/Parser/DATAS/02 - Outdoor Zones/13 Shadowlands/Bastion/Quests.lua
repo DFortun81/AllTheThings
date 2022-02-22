@@ -275,6 +275,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "n", 167583 },	-- Disciple Apolon
 				["coord"] = { 40.9, 55.1, BASTION },
 			}),
+			q(64812, {	-- Forge of Domination
+				["sourceQuests"] = { 64798 },	-- What We Overcome
+				["provider"] = { "n", 181280 },	-- Highlord Bolvar Fordragon
+				["coord"] = { 59.2, 88.2, BASTION },
+				["timeline"] = { "added 9.2.0" },
+			}),
 			q(62730, {	-- Fruit of the Gods
 				["provider"] = { "n", 170284 },	-- Elios
 				["coord"] = { 53.2, 46.4, BASTION },
@@ -942,10 +948,33 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "n", 166227 },	-- Kleia
 				["coord"] = { 37.3, 76.4, BASTION },
 			}),
+			q(64808, {	-- What Makes us Strong
+				["sourceQuests"] = { 64807 },	-- What We Wish to Forget
+				["provider"] = { "n", 181284 },	-- Anduin Wrynn
+				["coord"] = { 59.1, 88.5, BASTION },
+				["timeline"] = { "added 9.2.0" },
+			}),
 			q(58977, {	-- What's In a Memory?
 				["sourceQuests"] = { 58800 },	-- The Mnemonic Locus
 				["provider"] = { "n", 167034 },	-- Mikanikos
 				["coord"] = { 57.5, 61.8, BASTION },
+			}),
+			q(64798, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- What We Overcome
+				["sourceQuests"] = { 64808 },	-- What Makes us Strong
+				["provider"] = { "n", 181284 },	-- Anduin Wrynn
+				["coord"] = { 59.2, 88.3, BASTION },
+				["g"] = {
+					i(188020),	-- Anthemic Greaves
+					i(188009),	-- Choral Hood
+					i(188027),	-- Harmonium Helm
+					i(188015),	-- Staccato Helm
+				},
+			})),
+			q(64807, {	-- What We Wish to Forget
+				["sourceQuests"] = { 64806 },	-- Where the Memories Resides
+				["provider"] = { "n", 181280 },	-- Highlord Bolvar Fordragon
+				["coord"] = { 59.2, 88.2, BASTION },
+				["timeline"] = { "added 9.2.0" },
 			}),
 			q(57554, {	-- Wicked Gateways
 				["sourceQuests"] = { 57549 },	-- In Agthia's Memory
@@ -988,36 +1017,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["sourceQuests"] = { 59196 },	-- Go in Service
 				["provider"] = { "n", 165045 },	-- Kalisthene
 				["coord"] = { 52.8, 47.8, BASTION },
-			}),
-			-- PTR 9.2
-			q(64807, {	-- What We Wish to Forget
-				["sourceQuests"] = { 64806 },	-- Where the Memories Resides
-				["provider"] = { "n", 181280 },	-- Highlord Bolvar Fordragon
-				["coord"] = { 59.2, 88.2, BASTION },
-				["timeline"] = { "added 9.2.0" },
-			}),
-			q(64808, {	-- What Makes us Strong
-				["sourceQuests"] = { 64807 },	-- What We Wish to Forget
-				["provider"] = { "n", 181284 },	-- Anduin Wrynn
-				["coord"] = { 59.1, 88.5, BASTION },
-				["timeline"] = { "added 9.2.0" },
-			}),
-			q(64798, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- What We Overcome
-				["sourceQuests"] = { 64808 },	-- What Makes us Strong
-				["provider"] = { "n", 181284 },	-- Anduin Wrynn
-				["coord"] = { 59.2, 88.3, BASTION },
-				["g"] = {
-					i(188020),	-- Anthemic Greaves
-					i(188009),	-- Choral Hood
-					i(188027),	-- Harmonium Helm
-					i(188015),	-- Staccato Helm
-				},
-			})),
-			q(64812, {	-- Forge of Domination
-				["sourceQuests"] = { 64798 },	-- What We Overcome
-				["provider"] = { "n", 181280 },	-- Highlord Bolvar Fordragon
-				["coord"] = { 59.2, 88.2, BASTION },
-				["timeline"] = { "added 9.2.0" },
 			}),
 			n(BONUS_OBJECTIVES, {
 				q(62737, {	-- Aspirant For a Day (pre-60)

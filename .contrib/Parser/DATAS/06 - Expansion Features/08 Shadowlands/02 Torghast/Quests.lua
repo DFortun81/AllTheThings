@@ -27,6 +27,13 @@ _.ExpansionFeatures =
 					["provider"] = { "i", 178585 },	-- The Forgotten Key
 					["cr"] = 151329,	-- Warden Skoldus
 				}),
+				q(64816, {	-- Reality's Doorstep
+					["sourceQuests"] = { 64813 },	-- The Crown of Wills
+					["provider"] = { "n", 181379 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 49.1, 69.5, 1912 },
+					["isBreadcrumb"] = true,
+					["timeline"] = { "added 9.2.0" },
+				}),
 				q(60269, {	-- Reawakening
 					["sourceQuests"] = { 60268 },	-- Deep Within
 					["provider"] = { "n", 164937 },	-- Runecarver
@@ -58,6 +65,30 @@ _.ExpansionFeatures =
 						-- 1969,	-- TG108_Floor
 					},
 				}),
+				q(64813, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- The Crown of Wills
+					["sourceQuests"] = { 64812 },	-- Forge of Domination
+					["provider"] = { "n", 181384 },	-- The Primus
+					["coord"] = { 49.3, 58.6, 1912 },
+					["g"] = {
+						crit(5, {	-- Crown of Wills
+							["achievementID"] = 15259,	-- Secrets of the First Ones
+						}),
+						i(187785, {	-- Tome of the Eternal (RECIPE!)
+							recipe(359700, {	-- Vestige of the Eternal
+								["requireSkill"] = BLACKSMITHING,
+							}),
+							recipe(359701, {	-- Vestige of the Eternal
+								["requireSkill"] = JEWELCRAFTING,
+							}),
+							recipe(359702, {	-- Vestige of the Eternal
+								["requireSkill"] = LEATHERWORKING,
+							}),
+							recipe(359703, {	-- Vestige of the Eternal
+								["requireSkill"] = TAILORING,
+							}),
+						}),
+					},
+				})),
 				q(62719, {	-- The Final Pieces
 					["sourceQuests"] = { 60272 },    -- The Weak Link
 					["provider"] = { "n", 164937 },    -- Runecarver
@@ -381,45 +412,6 @@ _.ExpansionFeatures =
 						follower(1282)	-- Yira'lya
 					},
 				}),
-
-			--	unverifed on live yet 9.1 Champions
-				--[[
-				q(64654, {	-- Champion: Ben Howell
-					["customCollect"] = "",	--
-					["sourceQuests"] = {  },	--
-					["provider"] = { "n",  },	--
-					["g"] = {
-						follower(1344),	-- Ben Howell
-					},
-				}),
-				--]]
-
-			--	unverifed on live yet; adding to alphabetized list above as they are verified in game
-				--[[
-				q(60137, {	-- The Fracture Chambers
-					["sourceQuests"] = { 61099 },	-- Skoldus Hall
-					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-				}),
-				q(60141, {	-- Coldheart Interstitia
-					["sourceQuests"] = { 60139 },	-- The Soulforges
-					["provider"] = { "n", 170153 },	-- Lady Jaina Proudmoore
-					["coord"] = { 39.8, 68.2, ORIBOS },
-				}),
-				q(60140, {	-- Mort'regar
-					["sourceQuests"] = { 60141 },	-- Coldheart Interstitia
-					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-				}),
-				q(60757, {	-- Skeleton Key
-					["sourceQuests"] = { 60140 },	-- Mort'regar
-					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-				}),
-				q(61730, {	-- The Upper Reaches
-					["sourceQuests"] = { 60146 },	-- The Upper Reaches
-					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 39.9, 68.5, ORIBOS },
-				}),
-				]]--
-
 			--	Bonus Quests
 				q(62229, {	-- Ashraka's Intelligence
 					["sourceQuests"] = { 60136 },	-- Into Torghast
@@ -929,40 +921,6 @@ _.ExpansionFeatures =
 				q(63891, {	-- Upper Reaches, Layer 12
 					["isWeekly"] = true,
 					["name"] = "Upper Reaches, Layer 12",
-				}),
-			-- PTR 9.2
-				q(64813, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- The Crown of Wills
-					["sourceQuests"] = { 64812 },	-- Forge of Domination
-					["provider"] = { "n", 181384 },	-- The Primus
-					["coord"] = { 49.3, 58.6, 1912 },
-					["g"] = {
-						crit(5, {	-- Crown of Wills
-							["achievementID"] = 15259,	-- Secrets of the First Ones
-						}),
-						i(187785, {	-- Tome of the Eternal (RECIPE!)
-							recipe(359700, {	-- Vestige of the Eternal
-								["requireSkill"] = BLACKSMITHING,
-							}),
-							recipe(359701, {	-- Vestige of the Eternal
-								["requireSkill"] = JEWELCRAFTING,
-							}),
-							recipe(359702, {	-- Vestige of the Eternal
-								["requireSkill"] = LEATHERWORKING,
-							}),
-							recipe(359703, {	-- Vestige of the Eternal
-								["requireSkill"] = TAILORING,
-							}),
-						}),
-					},
-				})),
-				-- The End of Chap 5
-				-- Chap 6
-				q(64816, {	-- Reality's Doorstep
-					["sourceQuests"] = { 64813 },	-- The Crown of Wills
-					["provider"] = { "n", 181379 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 49.1, 69.5, 1912 },
-					["isBreadcrumb"] = true,
-					["timeline"] = { "added 9.2.0" },
 				}),
 			}),
 		}),

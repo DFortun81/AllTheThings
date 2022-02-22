@@ -140,6 +140,12 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 				title(448),	-- <Name>, Famed Bane of the Banshee Queen
 			},
 		})),
+		ach(15476, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Hall of Fame: The Jailer (A)
+			-- PH
+		})),
+		ach(15475, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Hall of Fame: The Jailer (H)
+			-- PH
+		})),
 		ach(13423, bubbleDownSelf({["timeline"] = { "added 8.1", "removed 8.2" } }, {	-- Hall of Fame: Uu'nat, Harbinger of the Void (Alliance)
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
@@ -190,12 +196,5 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		ach(426, {		-- Warglaives of Azzinoth
 			["classes"] = { WARRIOR, ROGUE, DEATHKNIGHT, MONK, DEMONHUNTER },
 		}),
-		-- PTR 9.2
-		ach(15476, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Hall of Fame: The Jailer (A)
-			-- PH
-		})),
-		ach(15475, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Hall of Fame: The Jailer (H)
-			-- PH
-		})),
 	}),
 }));

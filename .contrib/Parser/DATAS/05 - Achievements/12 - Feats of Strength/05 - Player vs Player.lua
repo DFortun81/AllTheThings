@@ -1325,8 +1325,8 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 				}),
 			}),
 			ach(15380),		-- Combatant II: Shadowlands Season 3
-			-- ach(15346),	-- Cosmic Combatant
-			-- ach(15347),	-- Cosmic Combatant
+			ach(15347),		-- Cosmic Combatant (A)
+			ach(15346),		-- Cosmic Combatant (H)
 			ach(15353, {	-- Cosmic Gladiator: Shadowlands Season 3
 				title(452),	-- Cosmic Gladiator <Name>
 			}),
@@ -1380,11 +1380,4 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		})),
 		un(REMOVED_FROM_GAME, ach(8391)),		-- Tournament Participation 2013
 	})),
-	-- PTR 9.2?? idk
-	ach(15347, {	-- Cosmic Combatant (A)
-		["timeline"] = { "added 9.2.0" },
-	}),
-	ach(15346, {	-- Cosmic Combatant (H)
-		["timeline"] = { "added 9.2.0" },
-	}),
 }));

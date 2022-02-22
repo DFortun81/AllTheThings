@@ -20,6 +20,18 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					["coord"] = { 34.7, 56.5, ORIBOS },
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
+				q(65649, {	-- A New Deal
+					["provider"] = { "n", 168011 },	-- Zo'sorg
+					["coord"] = { 35.6, 57.5, ORIBOS },
+					["timeline"] = { "added 9.2.0" },
+					["g"] = {
+						i(188778),	-- Cosmic Gladiator's Devouring Malediction
+						i(188691),	-- Cosmic Gladiator's Echoing Resolve
+						i(188775),	-- Cosmic Gladiator's Eternal Aegis
+						i(188524),	-- Cosmic Gladiator's Fastidious Resolve
+						i(188766),	-- Cosmic Gladiator's Resonator
+					},
+				}),
 				q(65031, {	-- Battlegrounds
 					["provider"] = { "n", 167486 },	-- Tal-Inara
 					["coord"] = { 40.5, 65.9, ORIBOS },
@@ -139,6 +151,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(184165),	-- Seal of Fordragon
 				},
 			}),
+			q(64944, { -- A Hasty Voyage
+				["sourceQuests"] = { 64942 },	-- Call of the Primus
+				["provider"] = { "n", 181655 },	-- The Primus
+				["coord"] = { 34.2, 52.3, 2042 },
+				["timeline"] = { "added 9.2.0" },
+			}),
 			q(61107, {	-- A Land of Strife
 				["sourceQuests"] = { 61096 },	-- The Arbiter's Will
 				["provider"] = { "n", 171338 },	-- Overseer Kah-Sher
@@ -244,6 +262,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["isBreadcrumb"] = true,
 				["timeline"] = { "added 9.1.5" },
 				["customCollect"] = "SL_SKIP",	-- SL Skip Character
+			}),
+			q(64942, {	-- Call of the Primus
+				--["sourceQuests"] = {},
+				["provider"] = { "n", 181655 },	-- The Primus
+				["coord"] = { 32.6, 51, 2042 },
+				["timeline"] = { "added 9.2.0" },
 			}),
 			q(64007, {	-- Charge of the Covenants
 				["sourceQuests"] = { 63665 },	-- Opening to Oribos
@@ -382,6 +406,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "n", 162928 },	-- Overseer Kah-Delen
 				["coord"] = { 54.4, 54.2, ORIBOS },
 			}),
+			q(65329, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Safe Haven
+				["sourceQuests"] = { 65238 },	-- Souls Entwined
+				["provider"] = { "n", 184584 },	-- Kleia
+				["coord"] = { 59.9, 56.1, ORIBOS },
+				["isBreadcrumb"] = true,
+			})),
 			q(51355, {	-- Secretest Fish
 				["description"] = "Can be found in Secret Fish Bubbles anywhere in Shadowlands zones. You must be wearing the Secret Fish Goggles to see/loot the bubbles.",
 				["provider"] = { "i", 158932 },	-- Secretest Fish
@@ -472,6 +502,19 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["sourceQuests"] = { 62569 },	-- The Jailer's Grasp
 				["timeline"] = { "added 9.1.0" },
 			}),
+			q(64958, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- The Forces Gather
+				["sourceQuests"] = { 64957 },	-- The Old Waystone
+				["provider"] = { "n", 184698 },	-- Highlord Bolvar Fordragon
+				["coord"] = { 49.5, 37.5, ORIBOS },	-- (Up Stairs)
+				["g"] = {
+					crit(1, {	-- Into the Unknown
+						["achievementID"] = 15259,	-- Secrets of the First Ones
+					}),
+					i(188041),	-- Ageless Spellblade
+					i(188043),	-- Eradicator of the Eternal Guard
+					i(188047),	-- Haven Guard's Cudgel
+				},
+			})),
 			q(62457, {	-- The Great Vault
 				["provider"] = { "n", 173350 },	-- Ba'vol
 				["coord"] = { 64.4, 35.8, ORIBOS },
@@ -499,6 +542,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					{ "n", 175912 },	-- Thrall (this NPC gives the quest and triggers the RP properly)
 				},
 				["coord"] = { 40.0, 68.4, ORIBOS },
+			}),
+			q(65625, {	-- The Jailer's Gauntlet
+				["provider"] = { "n", 185576 },	-- Ve'nyo
+				["coord"] = { 55.7, 49.3, ORIBOS },
+				["timeline"] = { "added 9.2.0" },
 			}),
 			q(62569, {	-- The Jailer's Grasp
 				["sourceQuests"] = { 61559 },	-- A Mourneblade Born
@@ -1061,60 +1109,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "n", 171589 },	-- General Draven
 				["coord"] = { 44.8, 68.9, ORIBOS },
 				["lvl"] = { 60 },
-			}),
-
-			-- PTR 9.2
-			-- Chapter 1
-			q(64942, {	-- Call of the Primus
-				--["sourceQuests"] = {},
-				["provider"] = { "n", 181655 },	-- The Primus
-				["coord"] = { 32.6, 51, 2042 },
-				["timeline"] = { "added 9.2.0" },
-			}),
-			q(64944, { -- A Hasty Voyage
-				["sourceQuests"] = { 64942 },	-- Call of the Primus
-				["provider"] = { "n", 181655 },	-- The Primus
-				["coord"] = { 34.2, 52.3, 2042 },
-				["timeline"] = { "added 9.2.0" },
-			}),
-			q(64958, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- The Forces Gather
-				["sourceQuests"] = { 64957 },	-- The Old Waystone
-				["provider"] = { "n", 184698 },	-- Highlord Bolvar Fordragon
-				["coord"] = { 49.5, 37.5, ORIBOS },	-- (Up Stairs)
-				["g"] = {
-					crit(1, {	-- Into the Unknown
-						["achievementID"] = 15259,	-- Secrets of the First Ones
-					}),
-					i(188041),	-- Ageless Spellblade
-					i(188043),	-- Eradicator of the Eternal Guard
-					i(188047),	-- Haven Guard's Cudgel
-				},
-			})),
-			-- Chapter 7
-			q(65329, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Safe Haven
-				["sourceQuests"] = { 65238 },	-- Souls Entwined
-				["provider"] = { "n", 184584 },	-- Kleia
-				["coord"] = { 59.9, 56.1, ORIBOS },
-				["isBreadcrumb"] = true,
-			})),
-			-- TorreG
-			q(65625, {	-- The Jailer's Gauntlet
-				["provider"] = { "n", 185576 },	-- Ve'nyo
-				["coord"] = { 55.7, 49.3, ORIBOS },
-				["timeline"] = { "added 9.2.0" },
-			}),
-			-- PvP
-			q(65649, {	-- A New Deal
-				["provider"] = { "n", 168011 },	-- Zo'sorg
-				["coord"] = { 35.6, 57.5, ORIBOS },
-				["timeline"] = { "added 9.2.0" },
-				["g"] = {
-					i(188778),	-- Cosmic Gladiator's Devouring Malediction
-					i(188691),	-- Cosmic Gladiator's Echoing Resolve
-					i(188775),	-- Cosmic Gladiator's Eternal Aegis
-					i(188524),	-- Cosmic Gladiator's Fastidious Resolve
-					i(188766),	-- Cosmic Gladiator's Resonator
-				},
 			}),
 		}),
 	}),
