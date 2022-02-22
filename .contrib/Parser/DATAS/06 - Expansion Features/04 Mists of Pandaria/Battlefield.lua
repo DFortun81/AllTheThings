@@ -12,19 +12,112 @@ local LATENT_KORKRON_BOOTS = 97827;
 root("ExpansionFeatures", tier(MOP_TIER, bubbleDown({ ["timeline"] = { "added 5.3.0", "removed 5.4.0" } }, {
 	n(-398, {	-- Battlefield: Barrens
 		["description"] = "During 5.3 a big battle occured in Barrens.",
-		["maps"] = { NORTHERN_BARRENS },
+		["maps"] = {
+			VALE_OF_ETERNAL_BLOSSOMS,
+			DUROTAR,
+			NORTHERN_BARRENS,
+		},
 		["g"] = {
 			n(QUESTS, {
-				q(32872, {	-- Battlefield: Barrens Ally
+				q(32892, {	-- War is Coming
+					["isBreadcrumb"] = true,
+				}),
+				q(32808, {	-- A Little Field Work
+					["qg"] = 61962,	-- Lorewalker Cho
+					["coord"] = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
+					["sourceQuests"] = { 32807 },	-- The Warchief and the Darkness
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32809, {	-- Gathering Intelligence
+					["qg"] = 71027,	-- Amber Kearnen
+					["coord"] = { 54.4, 9.8, DUROTAR },
+					["sourceQuests"] = { 32808 },	-- A Little Field Work
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32810, {	-- The Darkspear Rebellion
+					["qg"] = 71027,	-- Amber Kearnen
+					["coord"] = { 54.4, 9.8, DUROTAR },
+					["sourceQuests"] = { 32809 },	-- Gathering Intelligence
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32871, {	-- Vol'jin of the Darkspear
+					["qg"] = 71320,	-- Zen'tabra
+					["coord"] = { 51.8, 39.2, DUROTAR },
+					["sourceQuests"] = { 32810 },	-- The Darkspear Rebellion
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32811, {	-- Battlefield: Barrens
+					["qg"] = 70978,	-- Vol'jin
+					["coord"] = { 49.7, 40.1, DUROTAR },
+					["sourceQuests"] = { 32871 },	-- Vol'jin of the Darkspear
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32895, {	-- The Road to War
+					["qg"] = 71336,	-- Gleep Chatterswitch
+					["coord"] = { 85.8, 59.6, VALE_OF_ETERNAL_BLOSSOMS },
+					["sourceQuests"] = { 32811 },	-- Battlefield: Barrens
+					["races"] = ALLIANCE_ONLY,
+					["isWeekly"] = true,
+					["isBreadcrumb"] = true,
+				}),
+				q(32872, {	-- Battlefield: Barrens
 					["qg"] = 71333,	-- Ki'ta Arrowtusk
+					["coord"] = { 49.8, 40.0, DUROTAR },
+					["sourceQuests"] = {
+						32811,	-- Battlefield: Barrens
+						32895,	-- The Road to War
+					},
 					["races"] = ALLIANCE_ONLY,
 					["isWeekly"] = true,
 					["groups"] = {
 						i(RADICAL_MOJO),
 					},
 				}),
-				q(32862, {	-- Battlefield: Barrens Horde
+				q(32812, {	-- The Darkspear Rebellion
+					["qg"] = 61962,	-- Lorewalker Cho
+					["coord"] = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
+					["sourceQuests"] = { 32807 },	-- The Warchief and the Darkness
+					["races"] = HORDE_ONLY,
+				}),
+				q(32867, {	-- Vol'jin of the Darkspear
 					["qg"] = 71333,	-- Ki'ta Arrowtusk
+					["coord"] = { 49.8, 40.0, DUROTAR },
+					["sourceQuests"] = { 32812 },	-- The Darkspear Rebellion
+					["races"] = HORDE_ONLY,
+				}),
+				q(32819, {	-- Battlefield: Barrens
+					["qg"] = 70978,	-- Vol'jin
+					["coord"] = { 49.7, 40.1, DUROTAR },
+					["sourceQuests"] = { 32867 },	-- Vol'jin of the Darkspear
+					["races"] = HORDE_ONLY,
+				}),
+				q(32813, {	-- Battle of Sen'jin Village
+					["qg"] = 70978,	-- Vol'jin
+					["coord"] = { 49.7, 40.1, DUROTAR },
+					["sourceQuests"] = { 32819 },	-- Battlefield: Barrens
+					["races"] = HORDE_ONLY,
+				}),
+				q(32814, {	-- Battle of Razor Hill
+					["qg"] = 70978,	-- Vol'jin
+					["coord"] = { 49.7, 40.1, DUROTAR },
+					["sourceQuests"] = { 32813 },	-- Battle of Sen'jin Village
+					["races"] = HORDE_ONLY,
+				}),
+				q(32896, {	-- The Road to War
+					["qg"] = 71483,	-- Abrogar Dusthoof
+					["coord"] = { 62.2, 23.8, VALE_OF_ETERNAL_BLOSSOMS },
+					["sourceQuests"] = { 32814 },	-- Battle of Razor Hill
+					["races"] = HORDE_ONLY,
+					["isWeekly"] = true,
+					["isBreadcrumb"] = true,
+				}),
+				q(32862, {	-- Battlefield: Barrens
+					["qg"] = 71333,	-- Ki'ta Arrowtusk
+					["coord"] = { 49.8, 40.0, DUROTAR },
+					["sourceQuests"] = {
+						32814,	-- Battle of Razor Hill
+						32896,	-- The Road to War
+					},
 					["races"] = HORDE_ONLY,
 					["isWeekly"] = true,
 					["groups"] = {
@@ -216,3 +309,13 @@ root("ExpansionFeatures", tier(MOP_TIER, bubbleDown({ ["timeline"] = { "added 5.
 		},
 	}),
 })));
+root("HiddenQuestTriggers",{
+	tier(MOP_TIER, {
+		q(32860),	-- Battle of Razor Hill Tracking Quest
+		q(32890),	-- FLAG - Caravan Tutorial
+		q(32891),	-- FLAG - Commander Tutorial
+		q(32865),	-- Gathering Intelligence - Nazgrim Tracking
+		q(32864),	-- Gathering Intelligence - Riko Tracking
+		q(32866),	-- Gathering Intelligence - Zaela Tracking
+	}),
+});

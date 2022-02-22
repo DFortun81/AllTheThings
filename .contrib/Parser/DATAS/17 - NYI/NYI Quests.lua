@@ -638,6 +638,13 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(32508),	-- Welcome to the Island
 				q(32291),	-- [PH] The Fall of Shan Bu
 			})),
+			
+			-- 5.3.0
+			tier(MOP_TIER, 3.0, bubbleDown({ ["timeline"] = {"created 5.3.0"} }, {
+				q(32825),	-- Re-Use Me
+				q(32826),	-- Re-Use Me
+				q(32827),	-- Re-Use Me
+			})),
 		}),
 	}),
 	tier(WOD_TIER, {

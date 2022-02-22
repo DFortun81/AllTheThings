@@ -309,6 +309,7 @@ _.ExpansionFeatures =
 					["description"] = "Quests may only be completed ONCE per character. Items you receive from the Cache of Treasures are class and spec specific. Not all items are available to all classes able to equip them.|r",
 					["g"] = {
 						q(32806, {	-- The King and the Council
+							["sourceQuests"] = { 32892 },	-- War is Coming
 							["providers"] = {
 								{ "n", 61962 },	-- Lorewalker Cho
 								{ "n", 63577 },	-- Lorewalker Cho

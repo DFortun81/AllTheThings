@@ -1206,7 +1206,8 @@ _.HiddenQuestTriggers = {
 		q(42647),	-- triggered after getting Extra Thick Mojo in Durotar when on the Legion intro quest To Be Prepared
 		q(42648),	-- triggered after getting Extra Thick Mojo in Durotar when on the Legion intro quest To Be Prepared
 		q(45341),	-- After obtaining the Chef's Hat toy
-
+		q(47285),	-- Triggers together with obtaining Equipment Blueprint: Tuskarr Fishing Net
+		
 		-- Artifact Power questlines
 		q(45851),	-- Dual Boss Trait Complete - triggered after bm hunter artifact power questline
 		q(45852),	-- Healer Trait Complete - triggered after resto shaman / holy pal artifact power questlines
@@ -3458,6 +3459,5 @@ _.HiddenQuestTriggers = {
 		q(33965),	-- Tanaan Flowerpicker
 		q(39128),	-- Tanaan Vignette
 		q(39713),	-- Tracking Quest - Pops immediately on new characters but no other info known. Possibly legendary ring related
-		q(47285),	-- Triggers together with obtaining Equipment Blueprint: Tuskarr Fishing Net
 	}),
 };
