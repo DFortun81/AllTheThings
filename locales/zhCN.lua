@@ -239,6 +239,7 @@ local L = app.L;
 	L.TOP_ROW_TO_LOCK = "|cff3399ffAlt+点击锁定窗口";
 	L.TOP_ROW_TO_UNLOCK = "|cffcf0000Alt+点击解锁窗口";
 	L.QUEST_ROW_INSTRUCTIONS = "右击查看任何任务链要求";
+	--TODO: L.SYM_ROW_INFORMATION = "Right Click to see additional content which is Sourced in another location";
 	L.QUEST_ONCE_PER_ACCOUNT = "帐号一次性任务";
 	L.QUEST_ONCE_PER_ACCOUNT_FORMAT = "完成：%s";
 
@@ -700,6 +701,8 @@ for key,value in pairs({
 		[-394] = "天灾工厂",											-- The Plagueworks
 	-- BFA Outposts
 		[-397] = "哨站",												-- Outposts
+	-- 5.3
+		[-398] = "战场：贫瘠之地",											-- Battlefield: Barrens
 	-- T0.5 & Classic
 		[-420] = "等级 0.5 套装",										-- Tier 0.5 Sets
 		[-422] = "阿塔莱防御者",											-- Atal'ai Defenders

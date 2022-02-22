@@ -237,6 +237,7 @@ local L = app.L;
 	--TODO: L.TOP_ROW_TO_LOCK = "|cff3399ffAlt + Click to Lock this Window";
 	--TODO: L.TOP_ROW_TO_UNLOCK = "|cffcf0000Alt + Click to Unlock this Window";
 	--TODO: L.QUEST_ROW_INSTRUCTIONS = "Right Click to see any Quest Chain Requirements";
+	--TODO: L.SYM_ROW_INFORMATION = "Right Click to see additional content which is Sourced in another location";
 	--TODO: L.QUEST_ONCE_PER_ACCOUNT = "Once-Per-Account Quest";
 	--TODO: L.QUEST_ONCE_PER_ACCOUNT_FORMAT = "Completed By: %s";
 
@@ -704,6 +705,8 @@ for key,value in pairs({
 		--TODO: [-394] = "The Plagueworks",							-- The Plagueworks
 	-- BFA Outposts
 		--TODO: [-397] = "Outposts",								-- Outposts
+	-- 5.3
+		[-398] = "전쟁터: 불모의 땅",										-- Battlefield: Barrens
 	-- T0.5 & Classic
 		--TODO: [-420] = "Tier 0.5 Sets",							-- Tier 0.5 Sets
 		--TODO: [-422] = "Atal'ai Defenders",						-- Atal'ai Defenders
