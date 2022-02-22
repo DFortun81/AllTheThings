@@ -1133,6 +1133,17 @@ end
 isarray = function(t)
 	return type(t) == 'table' and (#t > 0 or next(t) == nil);
 end
+-- Ensures that 't' has a 'groups' field containing the array data of the table
+togroups = function(t)
+	if isarray(t) then
+		local groups = {};
+		for _,group in ipairs(t) do
+			table.insert(groups, group);
+		end
+		t = { ["groups"] = groups };
+	end
+	return t;
+end
 addObject = function(o, t)
 	table.insert(t, o);
 	return t;
@@ -1168,14 +1179,7 @@ end
 -- Performs sharedData logic but also applies the data to the top-level table
 sharedDataSelf = function(data, t)
 	-- if this is an array, convert to .g container first to prevent merge confusion
-	if isarray(t) then
-		local copy = {};
-		for i=#t,1 do
-			table.insert(copy, 1, t[i]);
-			table.remove(t, i);
-		end
-		t.groups = copy;
-	end
+	t = togroups(t);
 	-- then apply the data to itself
 	applyData(data, t);
 	-- then apply regular sharedData on the group
@@ -1201,14 +1205,7 @@ end
 -- Performs bubbleDown logic but also applies the data to the top-level table
 bubbleDownSelf = function(data, t)
 	-- if this is an array, convert to .g container first to prevent merge confusion
-	if isarray(t) then
-		local copy = {};
-		for i=#t,1 do
-			table.insert(copy, 1, t[i]);
-			table.remove(t, i);
-		end
-		t.groups = copy;
-	end
+	t = togroups(t);
 	-- then apply regular bubbleDown on the group
 	return bubbleDown(data, t);
 end
@@ -1638,13 +1635,7 @@ tier = function(id, patch, t)							-- Create a TIER Object
 		t = patch;
 	else
 		id = id + (patch / 100);
-		if isarray(t) then
-			local groups = {};
-			for _,group in ipairs(t) do
-				table.insert(groups, group);
-			end
-			t = { ["g"] = groups };
-		end
+		t = togroups(t);
 	end;
 	return struct("tierID", id, t);
 end
