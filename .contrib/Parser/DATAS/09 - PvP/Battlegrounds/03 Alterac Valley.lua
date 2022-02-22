@@ -13,19 +13,19 @@ local OnTooltipForAlteracValley = [[function(t)
 		local repPerFlagKill = isHuman and 427.9 or 389;
 		local x, n = math.ceil((42000 - reputation) / repPerFlagKill), math.ceil(42000 / repPerFlagKill);
 		GameTooltip:AddDoubleLine("Kill the General", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		
+
 		repPerFlagKill = isHuman and 137.5 or 125;
 		x, n = math.ceil((42000 - reputation) / repPerFlagKill), math.ceil(42000 / repPerFlagKill);
 		GameTooltip:AddDoubleLine("Kill a Captain", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		
+
 		repPerFlagKill = isHuman and 13.2 or 12;
 		x, n = math.ceil((42000 - reputation) / repPerFlagKill), math.ceil(42000 / repPerFlagKill);
 		GameTooltip:AddDoubleLine("Kill a Commander", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		
+
 		repPerFlagKill = isHuman and 5.5 or 5;
 		x, n = math.ceil((42000 - reputation) / repPerFlagKill), math.ceil(42000 / repPerFlagKill);
 		GameTooltip:AddDoubleLine("Kill an Air Master", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		
+
 		if reputation < 21000 then
 			repPerFlagKill = isHuman and 5.5 or 5;
 			x, n = math.ceil((42000 - reputation) / repPerFlagKill), math.ceil(42000 / repPerFlagKill);
@@ -151,7 +151,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 							1166,	-- To the Looter Go the Spoils
 						},
 					},
-					
+
 				}),
 				ach(218, {	-- Alterac Valley Victory
 					["rank"] = 1,
@@ -190,7 +190,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				removeclassicphase(ach(706, {	-- Frostwolf Howler
 					["provider"] = { "i", 19029 },	-- Horn of the Frostwolf Howler
 					["races"] = HORDE_ONLY,
-					["f"] = 100,
+					["filterID"] = MOUNTS,
 					-- #if BEFORE WRATH
 					["description"] = "Obtain a Frostwolf Howler from Alterac Valley.",
 					["OnUpdate"] = [[function(t)
@@ -208,7 +208,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				removeclassicphase(ach(707, {	-- Stormpike Battle Charger
 					["provider"] = { "i", 19030 },	-- Stormpike Battle Charger
 					["races"] = ALLIANCE_ONLY,
-					["f"] = 100,
+					["filterID"] = MOUNTS,
 					-- #if BEFORE WRATH
 					["description"] = "Obtain a Stormpike Battle Charger from Alterac Valley.",
 					["OnUpdate"] = [[function(t)
