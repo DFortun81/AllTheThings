@@ -322,7 +322,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			n(182257, {	-- Vilo
 				["coord"] = { 34.8, 64.1, ZERETH_MORTIS },
 				["g"] = {
-					i(187640),	-- Anointed Protostag (MOUNT!)
+					i(187640, {	-- Anointed Protostag (MOUNT!)
+						["cost"] = { { "c", ANIMA, 5000 } },
+					}),
 					i(190237),	-- Broker Translocation Matrix (TOY!)
 					i(190956, {	-- Decanter of Untapped Potential
 						--["questID"] = ,
@@ -341,7 +343,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 							{"where","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
 						},
 					}),
-					i(187629),	-- Heartlight Vombata (MOUNT!)
+					i(187629, {	-- Heartlight Vombata (MOUNT!)
+						["cost"] = { { "c", ANIMA, 5000 } },
+					}),
 					i(189174),	-- Lens of Focused Intention
 					i(187750, {	-- Recipe: Crafter's Mark IV (RECIPE!)
 						recipe(359666, {	-- Crafter's Mark IV

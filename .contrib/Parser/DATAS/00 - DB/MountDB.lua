@@ -1126,14 +1126,14 @@ i(187682, 359407);	-- Wastewarped Deathwalker
 
 -- PvP
 i(189507, 365559);	-- Cosmic Gladiator's Soul Eater
-i(187681, 347256);	-- Vicious War Gulper (A)
-i(187680, 347255);	-- Vicious War Gulper (H)
+i(187681, 347256);	-- Vicious War Croaker (A)
+i(187680, 347255);	-- Vicious War Croaker (H)
 
 -- Quest
 i(188808, 363701);	-- Patient Bufonid
 
 -- Rare/Treasure
-i(187676, 342680);	-- Deepstar Polyp
+i(187676, 342680);	-- Deepstar Aurelid
 i(190765, 368105);	-- Colossal Plaguespew Mawrat
 i(190766, 368128);	-- Colossal Wraithbound Mawrat
 

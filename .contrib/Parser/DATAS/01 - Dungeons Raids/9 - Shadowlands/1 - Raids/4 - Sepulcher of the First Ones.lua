@@ -1409,10 +1409,16 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					["g"] = {
 						ach(15489),	-- Mythic: The Jailer
 						ach(15476, {	-- Hall of Fame: The Jailer (A)
-							-- PH
+							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								title(454),	-- <Name>, Famed Slayer of The Banished One
+							},
 						}),
 						ach(15475, {	-- Hall of Fame: The Jailer (H)
-							-- PH
+							["races"] = HORDE_ONLY,
+							["g"] = {
+								title(454),	-- <Name>, Famed Slayer of The Banished One
+							},
 						}),
 						ach(15471),	-- Cutting Edge: The Jailer
 						i(189855),	-- Bindings of the Banished One

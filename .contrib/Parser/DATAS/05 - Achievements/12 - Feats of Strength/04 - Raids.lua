@@ -141,10 +141,16 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			},
 		})),
 		ach(15476, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Hall of Fame: The Jailer (A)
-			-- PH
+			["races"] = ALLIANCE_ONLY,
+			["g"] = {
+				title(454),	-- <Name>, Famed Slayer of The Banished One
+			},
 		})),
 		ach(15475, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Hall of Fame: The Jailer (H)
-			-- PH
+			["races"] = HORDE_ONLY,
+			["g"] = {
+				title(454),	-- <Name>, Famed Slayer of The Banished One
+			},
 		})),
 		ach(13423, bubbleDownSelf({["timeline"] = { "added 8.1", "removed 8.2" } }, {	-- Hall of Fame: Uu'nat, Harbinger of the Void (Alliance)
 			["races"] = ALLIANCE_ONLY,
