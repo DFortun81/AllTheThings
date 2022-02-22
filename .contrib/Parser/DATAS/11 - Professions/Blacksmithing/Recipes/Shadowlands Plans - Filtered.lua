@@ -9,14 +9,17 @@ profession(BLACKSMITHING, {
 						{
 							["recipeID"] = 359665,	-- Crafter's Mark IV
 							["name"] = "Crafter's Mark IV",
+							["timeline"] = { "added 9.2.0" },
 						},
 						{
 							["recipeID"] = 359671,	-- Crafter's Mark of the First Ones
 							["name"] = "Crafter's Mark of the First Ones",
+							["timeline"] = { "added 9.2.0" },
 						},
 						{
 							["recipeID"] = 359700,	-- Vestige of the Eternal
 							["name"] = "Vestige of the Eternal",
+							["timeline"] = { "added 9.2.0" },
 						},
 					},
 				},

@@ -1132,46 +1132,6 @@ root("Zones", m(KALIMDOR, {
 					["lvl"] = 4,
 					["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" },
 				}),
-				q(32872, bubbleDownSelf({ ["timeline"] = { "added 5.3.0.16767", "removed 5.4.0.17359"} }, {	-- Battlefield: Barrens Ally
-					["qg"] = 71333,	-- Ki'ta Arrowtusk
-					["races"] = ALLIANCE_ONLY,
-					["isWeekly"] = true,
-					["groups"] = {
-						objective(1, {	-- 0/150 Kor'kron Lumber
-							["provider"] = { "i", 97530 },	-- Kor'kron Lumber
-						}),
-						objective(2, {	-- 0/150 Kor'kron Oil
-							["provider"] = { "i", 97544 }, -- Kor'kron Oil
-						}),
-						objective(3, {	-- 0/150 Kor'kron Meat
-							["provider"] = { "i", 97545 }, -- Kor'kron Meat
-						}),
-						objective(4, {	-- 0/150 Kor'kron Stone
-							["provider"] = { "i", 97543 }, -- Kor'kron Stone
-						}),
-						i(97849),	-- Radical Mojo
-					},
-				})),
-				q(32862, bubbleDownSelf({ ["timeline"] = { "added 5.3.0.16767", "removed 5.4.0.17359"} }, {	-- Battlefield: Barrens Horde
-					["qg"] = 71333,	-- Ki'ta Arrowtusk
-					["races"] = HORDE_ONLY,
-					["isWeekly"] = true,
-					["groups"] = {
-						objective(1, {	-- 0/150 Kor'kron Lumber
-							["provider"] = { "i", 97530 },	-- Kor'kron Lumber
-						}),
-						objective(2, {	-- 0/150 Kor'kron Oil
-							["provider"] = { "i", 97544 }, -- Kor'kron Oil
-						}),
-						objective(3, {	-- 0/150 Kor'kron Meat
-							["provider"] = { "i", 97545 }, -- Kor'kron Meat
-						}),
-						objective(4, {	-- 0/150 Kor'kron Stone
-							["provider"] = { "i", 97543 }, -- Kor'kron Stone
-						}),
-						i(97849),	-- Radical Mojo
-					},
-				})),
 				q(25648, {	-- Beyond Durotar
 					["qg"] = 39379,	-- Gor the Enforcer
 					["coord"] = { 44.9, 14.7, DUROTAR },
@@ -2897,27 +2857,6 @@ root("Zones", m(KALIMDOR, {
 						i(97919),	-- Whole-Body Shinka' (TOY!)
 						i(97942),	-- Sen'jin Spirit Drum (TOY!)
 						i(98552),	-- Xan'tish's Flute (TOY!)
-					},
-				})),
-				n(71226, bubbleDown({ ["timeline"] = { "added 5.3.0.16876", "removed 5.4.0.10000" } }, {	-- Ravika <Darkspear Quartermaster> 5.3 Version
-					["description"] = "Rebellion Quatermaster during Barrens Battlefield.",
-					["g"] = {
-						i(97901),	-- Griftah's Authentic Troll Shoes
-						i(97919),	-- Whole-Body Shinka' Toy (TOY!)
-						i(97942),	-- Sen'jin Spirit Drum Toy (TOY!)
-						i(98552),	-- Xan'tish's Flute Toy (TOY!)
-						i(97921),	-- Bom'bay's Color-Seein' Sauce (TOY!)
-						i(97821),	-- Gahz'rooki's Summoning Stone (PET!)
-						i(97829),	-- Latent Kor'kron Helm (they had unique stats before 6.0)
-						i(97831),	-- Latent Kor'kron Spaulders (they had unique stats before 6.0)
-						i(97826),	-- Latent Kor'kron Chestpiece (they had unique stats before 6.0)
-						i(97828),	-- Latent Kor'kron Gloves (they had unique stats before 6.0)
-						i(97832),	-- Latent Kor'kron Belt (they had unique stats before 6.0)
-						i(97830),	-- Latent Kor'kron Leggings (they had unique stats before 6.0)
-						i(97827),	-- Latent Kor'kron Boots (they had unique stats before 6.0)
-						i(97990),	-- Raptorhide Boxing Gloves (QUEST!)
-						i(98561),	-- Darkspear Battle Standard
-						i(98563),	-- Rainstick
 					},
 				})),
 				n(5942, {	-- Zansoa <Fishing Supplies>

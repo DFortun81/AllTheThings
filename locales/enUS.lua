@@ -1087,6 +1087,8 @@ app.L = {
 		[-396] = "Interface\\Icons\\achievement_dungeon_icecrown_frostwinghalls",			-- The Frostwing Halls
 	-- BFA Outposts
 		[-397] = "Interface\\Icons\\inv_icon_daily_mission_scroll",							-- Outposts
+	-- 5.3
+		[-398] = "Interface\\Icons\\ability_vehicle_oiljets",								-- Battlefield: Barrens
 	-- T0.5 & Classic
 		[-420] = "Interface\\Icons\\INV_Chest_Plate03",										-- Tier 0.5 Sets
 	-- BFA War Chest
@@ -1612,6 +1614,8 @@ app.L = {
 		[-396] = C_Map.GetAreaInfo(7932),										-- The Frostwing Halls
 	-- BFA Outposts
 		[-397] = "Outposts",													-- Outposts
+	-- 5.3
+		[-398] = "Battlefield: Barrens",										-- Battlefield: Barrens
 	-- T0.5 & Classic
 		[-420] = "Tier 0.5 Sets",												-- Tier 0.5 Sets
 		[-422] = "Atal'ai Defenders",											-- Atal'ai Defenders
