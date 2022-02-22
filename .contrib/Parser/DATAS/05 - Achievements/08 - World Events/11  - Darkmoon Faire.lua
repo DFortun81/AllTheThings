@@ -38,8 +38,14 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, bubbleDown({ ["u"
 			ach(9251),	-- Ringmaster (25)
 			ach(9250),	-- Flying High (10)
 		}),
+		ach(15215, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Can't Stop the Feeling
+			ach(15214),	-- What a Feeling
+		})),
 		ach(6019, {	-- Come One, Come All!
 			["maps"] = { 407 },
+		}),
+		ach(15221, {	-- Dancing Machine
+			["timeline"] = { "added 9.2.0" },
 		}),
 		ach(6028, {	-- Darkmoon Defender
 			["maps"] = { 407 },
@@ -118,6 +124,9 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, bubbleDown({ ["u"
 			ach(9759),	-- Darkmoon Racer Jockey (20 tolls)
 			ach(9756),	-- Darkmoon Racer Novice (25 tolls)
 		}),
+		ach(15213, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Don't Stop Dancing
+			ach(15212),	-- First Dance
+		})),
 		ach(6032, {	-- Faire Favors
 			["maps"] = { 407 },
 			["g"] = {
@@ -224,10 +233,16 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, bubbleDown({ ["u"
 				}),
 			},
 		}),
+		ach(15223, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Feeling It
+			ach(15222),	-- You Got the Beat
+		})),
 		ach(11918),	-- Hey, You're a Rockstar!
 		ach(6025, {	-- I Was Promised a Pony
 			["maps"] = { 407 },
 		}),
+		ach(15217, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Maniac on the Dance Floor
+			ach(15216),	-- Make You Sweat
+		})),
 		ach(11921),	-- Mosh Pit
 		ach(11920),	-- Perfect Performance
 		ach(9785, {	-- Powermonger: Gold (11 tolls)
@@ -327,21 +342,5 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, bubbleDown({ ["u"
 			ach(9787),	-- Wanderluster: Bronze (20 tolls)
 			ach(9786),	-- Wayfarer (25 tolls)
 		}),
-		-- PTR
-		ach(15215, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Can't Stop the Feeling
-			ach(15214),	-- What a Feeling
-		})),
-		ach(15221, {	-- Dancing Machine
-			["timeline"] = { "added 9.2.0" },
-		}),
-		ach(15213, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Don't Stop Dancing
-			ach(15212),	-- First Dance
-		})),
-		ach(15223, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Feeling It
-			ach(15222),	-- You Got the Beat
-		})),
-		ach(15217, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Maniac on the Dance Floor
-			ach(15216),	-- Make You Sweat
-		})),
 	}),
 })));

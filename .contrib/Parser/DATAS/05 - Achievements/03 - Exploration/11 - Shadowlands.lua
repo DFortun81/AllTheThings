@@ -49,6 +49,12 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 				}),
 			},
 		}),
+		ach(15391, sharedDataSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Adventurer of Zereth Mortis
+			ach(15512),	-- Adventures in Zereth Mortis
+		})),
+		ach(15542, {	-- Apocopocolypse Now
+			["timeline"] = { "added 9.2.0" },
+		}),
 		ach(14774, {	-- Ardenweald Gourmand
 			["description"] = "All food is sold by Tanor in Ardenweald at |cFFFFFFFF65.0, 19.6|r.",
 			["coord"] = { 65.0, 19.6, ARDENWEALD },
@@ -213,6 +219,12 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 				}),
 			},
 		}),
+		ach(15211, sharedDataSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Completing the Code
+			i(187793),	-- Personal Containment Trap (TOY!)
+		})),
+		ach(15404, {	-- Cosmic Empowerment
+			["timeline"] = { "added 9.2.0" },
+		}),
 		ach(14767, {	-- Count Your Blessings
 			crit(1),		-- Purified Blessing of Grace
 			crit(2),		-- Purified Blessing of Power
@@ -241,6 +253,12 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 				["cost"] = { { "i", 183399, 1 } },
 			}),
 		}),
+		ach(15402, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Cyphers of the First Ones
+			["description"] = "Have to research eveything in the talent tree to gain flying.",
+			["g"] = {
+				i(189455),	-- Schematic: Pale Regal Cervid
+			},
+		})),
 		ach(14761, {	-- Deciphering Death's Intentions
 			["description"] = "Most of the Maw Lore items can be found by killing Assassins, rares, or normal mobs.  The remaining ones drop from specific mobs, rares, or treasures that can be found throughout the Maw.",
 			["maps"] = { THE_MAW },
@@ -313,6 +331,9 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 				}),
 			},
 		}),
+		ach(15392, {	-- Dune Dominance
+			["timeline"] = { "added 9.2.0" },
+		}),
 		ach(15053, {	-- Explore Korthia
 			crit(1),	-- Estuary of Awakening
 			crit(2),	-- Hope's Ascent
@@ -337,6 +358,153 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(10),		-- The Altar of Damnation
 			crit(11),		-- The Beastwarrens
 			crit(12),		-- Zovaal's Cauldron
+		}),
+		ach(15224, {	-- Explore Zereth Mortis
+			["timeline"] = { "added 9.2.0" },
+		}),
+		ach(15508, {	-- Fashion of the First Ones
+			["timeline"] = { "added 9.2.0" },
+		}),
+		ach(14788, {	-- Fractured Faerie Tales
+			["maps"] = { ARDENWEALD },
+			["g"] = {
+				crit(1, {	-- A Meandering Story
+					["_quests"] = { 62619 },	-- A Meandering Story
+				}),
+				crit(2, {	-- A Wandering Tale
+					["_quests"] = { 62620 },	-- A Wandering Tale
+				}),
+				crit(3, {	-- An Escapist Novel
+					["_quests"] = { 62621 },	-- An Escapist Novel
+				}),
+				crit(4, {	-- A Travel Journal
+					["_quests"] = { 62622 },	-- A Travel Journal
+				}),
+				crit(5, {	-- A Naughty Story
+					["_quests"] = { 62623 },	-- A Naughty Story
+				}),
+			},
+		}),
+		ach(14745),		-- Grand Theft Shadehound
+		ach(14943),		-- Guarmageddon
+		ach(14626),		-- Harvester of Sorrow
+		ach(14738, {	-- Hunting Party
+			crit(1),		-- Complete Hunt: Shadehounds
+			crit(2),		-- Complete Hunt: Soul Eaters
+			crit(3),		-- Complete Hunt: Death Elemental
+			crit(4),		-- Complete Hunt: Winged Soul Eaters
+		}),
+		ach(14733),		-- In the Hot Seat
+		ach(14660, {	-- It's About Sending a Message (all criteria below)
+			ach(14659),		-- Handling His Henchmen (5 of the criteria below)
+			crit(1),		-- Drifting Sorrow
+			crit(2),		-- Dartanos
+			crit(3),		-- Razkazzar
+			crit(4),		-- Orrholyn
+			crit(5),		-- Huwerath
+			crit(6),		-- Soulsmith Yol-Mattar
+			--crit(7),		-- Warren Mongrel (as of 9.0.2 this one is in the list for 14659 but not in the list for 14660?!)
+			crit(7),		-- Cyrixia
+			crit(8),		-- Agonix
+			crit(9),		-- Krala
+			crit(10),		-- Akros
+			crit(11),		-- Malevolent Stygia
+			crit(12),		-- Sanngror the Torturer
+			crit(13),		-- Houndmaster Vasanok
+			crit(14),		-- Sanngror the Torturer
+			crit(15),		-- Valis the Cruel
+			crit(16),		-- Odalrik
+			crit(17),		-- Stygian Incinerator
+			crit(18),		-- Dath Rezara
+			crit(19),		-- Ratgusher
+		}),
+		ach(14721, {	-- It's in the Mix
+			i(183903),		-- Smelly Jelly
+			crit(1),		-- Pulsing Leech
+			crit(2),		-- Gelloh
+			crit(3),		-- Oily Invertebrate
+			crit(4),		-- Boneslurp
+			crit(5),		-- Violet Mistake
+			crit(6),		-- Burnblister
+			crit(7),		-- Corrupted Sediment
+		}),
+		ach(14747),		-- Make it Double!
+		ach(15054, {	-- Minions of the Cold Dark
+			crit(1),	-- Versya the Damned slain
+			crit(2),	-- Gralebboih slain
+			crit(3),	-- Promathiz slain
+			crit(4),	-- Sentinel Pyrophus slain
+			crit(5),	-- Gruukuuek the Elder slain
+			crit(6),	-- Zul'gath the Flayer slain
+			crit(7),	-- Mugrem the Soul Devourer slain
+			crit(8),	-- The Mass of Souls slain
+			crit(9),	-- Algel the Hunter slain
+			crit(10),	-- Sentinel Shakorzeth slain
+			crit(11),	-- Kazj the Sentinel slain
+			crit(12),	-- Intercessor Razzram slain
+			crit(13),	-- Malleus Grakizz slain
+			crit(14),	-- Manifestation of Pain slain
+			crit(15),	-- Golmak the Monstrosity slain
+		}),
+		ach(14634, {	-- Nine Afterlives
+			["g"] = {
+				i(184449),		-- Jiggles's Favorite Toy
+				crit(1, {	-- Hairball
+					["description"] = "Close to the top-left corner of the final boss's map.  On the left side of the slime pool, kill a green ooze and then turn left.  Hairball is in a tiny alcove filled with fish skeletons and candles.",
+					["crs"] = { 174195 },	-- Hairball
+					["maps"] = {
+						1674,	-- Plaguefall
+						1697,	-- Plaguefall
+					},
+				}),
+				crit(2, {	-- Snots
+					["coord"] = { 31.9, 57.0, MALDRAXXUS },
+					["crs"] = { 174221 },	-- Snots
+				}),
+				crit(3, {	-- Pus-In-Boots
+					["description"] = "Under the bridge.",
+					["coord"] = { 50.2, 60.2, MALDRAXXUS },
+					["crs"] = { 174223 },	-- Pus-In-Boots
+				}),
+				crit(4, {	-- Envy
+					["coord"] = { 65.2, 50.6, MALDRAXXUS },
+					["crs"] = { 174224 },	-- Envy
+				}),
+				crit(5, {	-- Mr. Jigglesworth
+					["coord"] = { 64.8, 22.2, MALDRAXXUS },
+					["crs"] = { 174226 },	-- Mr. Jigglesworth
+				}),
+				crit(6, {	-- Lime
+					["description"] = "Lime is on the bone arch that runs over the road.",
+					["coord"] = { 51.0, 27.5, MALDRAXXUS },
+					["crs"] = { 174230 },	-- Lime
+				}),
+				crit(7, {	-- Mayhem
+					["coord"] = { 49.4, 17.5, MALDRAXXUS },
+					["crs"] = { 174234 },	-- Mayhem
+				}),
+				crit(8, {	-- Moldstopheles
+					["description"] = "Moldstopheles is on an offshoot on the side of the big mushroom.",
+					["coord"] = { 47.5, 33.7, MALDRAXXUS },
+					["crs"] = { 174236 },	-- Moldstopheles
+				}),
+				crit(9, {	-- Meowmalade
+					["description"] = "Napping inside a small crate.",
+					["coord"] = { 34.3, 53.1, MALDRAXXUS },
+					["crs"] = { 174237 },	-- Meowmalade
+				}),
+			},
+		}),
+		ach(14746),		-- Prepare for Trouble!
+		ach(14734, {	-- Rallying Cry of the Ascended
+			crit(1),		-- Vesper of Courage
+			crit(2),		-- Vesper of Wisdom
+			crit(3),		-- Vesper of Humility
+			crit(4),		-- Vesper of Loyalty
+			crit(5),		-- Vesper of Purity
+		}),
+		ach(15502, {	-- Sand, Sand Everywhere!
+			["timeline"] = { "added 9.2.0" },
 		}),
 		ach(14825, {	-- Shadowlands Voyager
 			ach(15388, {	-- Shadowlands Explorer
@@ -644,146 +812,16 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 				},
 			}),
 		}),
-		ach(14788, {	-- Fractured Faerie Tales
-			["maps"] = { ARDENWEALD },
-			["g"] = {
-				crit(1, {	-- A Meandering Story
-					["_quests"] = { 62619 },	-- A Meandering Story
-				}),
-				crit(2, {	-- A Wandering Tale
-					["_quests"] = { 62620 },	-- A Wandering Tale
-				}),
-				crit(3, {	-- An Escapist Novel
-					["_quests"] = { 62621 },	-- An Escapist Novel
-				}),
-				crit(4, {	-- A Travel Journal
-					["_quests"] = { 62622 },	-- A Travel Journal
-				}),
-				crit(5, {	-- A Naughty Story
-					["_quests"] = { 62623 },	-- A Naughty Story
-				}),
-			},
-		}),
-		ach(14745),		-- Grand Theft Shadehound
-		ach(14943),		-- Guarmageddon
-		ach(14626),		-- Harvester of Sorrow
-		ach(14738, {	-- Hunting Party
-			crit(1),		-- Complete Hunt: Shadehounds
-			crit(2),		-- Complete Hunt: Soul Eaters
-			crit(3),		-- Complete Hunt: Death Elemental
-			crit(4),		-- Complete Hunt: Winged Soul Eaters
-		}),
-		ach(14733),		-- In the Hot Seat
-		ach(14660, {	-- It's About Sending a Message (all criteria below)
-			ach(14659),		-- Handling His Henchmen (5 of the criteria below)
-			crit(1),		-- Drifting Sorrow
-			crit(2),		-- Dartanos
-			crit(3),		-- Razkazzar
-			crit(4),		-- Orrholyn
-			crit(5),		-- Huwerath
-			crit(6),		-- Soulsmith Yol-Mattar
-			--crit(7),		-- Warren Mongrel (as of 9.0.2 this one is in the list for 14659 but not in the list for 14660?!)
-			crit(7),		-- Cyrixia
-			crit(8),		-- Agonix
-			crit(9),		-- Krala
-			crit(10),		-- Akros
-			crit(11),		-- Malevolent Stygia
-			crit(12),		-- Sanngror the Torturer
-			crit(13),		-- Houndmaster Vasanok
-			crit(14),		-- Sanngror the Torturer
-			crit(15),		-- Valis the Cruel
-			crit(16),		-- Odalrik
-			crit(17),		-- Stygian Incinerator
-			crit(18),		-- Dath Rezara
-			crit(19),		-- Ratgusher
-		}),
-		ach(14721, {	-- It's in the Mix
-			i(183903),		-- Smelly Jelly
-			crit(1),		-- Pulsing Leech
-			crit(2),		-- Gelloh
-			crit(3),		-- Oily Invertebrate
-			crit(4),		-- Boneslurp
-			crit(5),		-- Violet Mistake
-			crit(6),		-- Burnblister
-			crit(7),		-- Corrupted Sediment
-		}),
-		ach(14747),		-- Make it Double!
-		ach(15054, {	-- Minions of the Cold Dark
-			crit(1),	-- Versya the Damned slain
-			crit(2),	-- Gralebboih slain
-			crit(3),	-- Promathiz slain
-			crit(4),	-- Sentinel Pyrophus slain
-			crit(5),	-- Gruukuuek the Elder slain
-			crit(6),	-- Zul'gath the Flayer slain
-			crit(7),	-- Mugrem the Soul Devourer slain
-			crit(8),	-- The Mass of Souls slain
-			crit(9),	-- Algel the Hunter slain
-			crit(10),	-- Sentinel Shakorzeth slain
-			crit(11),	-- Kazj the Sentinel slain
-			crit(12),	-- Intercessor Razzram slain
-			crit(13),	-- Malleus Grakizz slain
-			crit(14),	-- Manifestation of Pain slain
-			crit(15),	-- Golmak the Monstrosity slain
-		}),
-		ach(14634, {	-- Nine Afterlives
-			["g"] = {
-				i(184449),		-- Jiggles's Favorite Toy
-				crit(1, {	-- Hairball
-					["description"] = "Close to the top-left corner of the final boss's map.  On the left side of the slime pool, kill a green ooze and then turn left.  Hairball is in a tiny alcove filled with fish skeletons and candles.",
-					["crs"] = { 174195 },	-- Hairball
-					["maps"] = {
-						1674,	-- Plaguefall
-						1697,	-- Plaguefall
-					},
-				}),
-				crit(2, {	-- Snots
-					["coord"] = { 31.9, 57.0, MALDRAXXUS },
-					["crs"] = { 174221 },	-- Snots
-				}),
-				crit(3, {	-- Pus-In-Boots
-					["description"] = "Under the bridge.",
-					["coord"] = { 50.2, 60.2, MALDRAXXUS },
-					["crs"] = { 174223 },	-- Pus-In-Boots
-				}),
-				crit(4, {	-- Envy
-					["coord"] = { 65.2, 50.6, MALDRAXXUS },
-					["crs"] = { 174224 },	-- Envy
-				}),
-				crit(5, {	-- Mr. Jigglesworth
-					["coord"] = { 64.8, 22.2, MALDRAXXUS },
-					["crs"] = { 174226 },	-- Mr. Jigglesworth
-				}),
-				crit(6, {	-- Lime
-					["description"] = "Lime is on the bone arch that runs over the road.",
-					["coord"] = { 51.0, 27.5, MALDRAXXUS },
-					["crs"] = { 174230 },	-- Lime
-				}),
-				crit(7, {	-- Mayhem
-					["coord"] = { 49.4, 17.5, MALDRAXXUS },
-					["crs"] = { 174234 },	-- Mayhem
-				}),
-				crit(8, {	-- Moldstopheles
-					["description"] = "Moldstopheles is on an offshoot on the side of the big mushroom.",
-					["coord"] = { 47.5, 33.7, MALDRAXXUS },
-					["crs"] = { 174236 },	-- Moldstopheles
-				}),
-				crit(9, {	-- Meowmalade
-					["description"] = "Napping inside a small crate.",
-					["coord"] = { 34.3, 53.1, MALDRAXXUS },
-					["crs"] = { 174237 },	-- Meowmalade
-				}),
-			},
-		}),
-		ach(14746),		-- Prepare for Trouble!
-		ach(14734, {	-- Rallying Cry of the Ascended
-			crit(1),		-- Vesper of Courage
-			crit(2),		-- Vesper of Wisdom
-			crit(3),		-- Vesper of Humility
-			crit(4),		-- Vesper of Loyalty
-			crit(5),		-- Vesper of Purity
-		}),
 		ach(14339),		-- Shard Labor
 		ach(14658),		-- Soulkeeper's Burden
+		ach(15411, sharedDataSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Synthe-supersized!
+			ach(15406),	-- Synthesized!
+			ach(15407),	-- Synthe-fived!
+			ach(15410),	-- Synthe-superfived!
+		})),
+		ach(15509, {	-- Tales of the Exile
+			["timeline"] = { "added 9.2.0" },
+		}),
 		ach(14771, {	-- The Afterlife Express
 			crit(1),		-- Chalice Carriage
 			crit(2),		-- Old Gate Carriage
@@ -877,6 +915,9 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(9),	-- Infested Vestige
 			crit(10),	-- Offering Box
 		}),
+		ach(15331, sharedDataSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Treasures of Zereth Mortis
+			ach(15513),	-- Curious Collections
+		})),
 		ach(14770, {	-- What We Ride in the Shadows
 			crit(1),		-- Old Gate
 			crit(2),		-- Hole in the Wall
@@ -903,48 +944,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(10),		-- Mystic Gulper
 			crit(11),		-- Roving Gladechewer
 			crit(12),		-- Wild Gormling
-		}),
-		-- PTR
-		ach(15391, sharedDataSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Adventurer of Zereth Mortis
-			ach(15512),	-- Adventures in Zereth Mortis
-		})),
-		ach(15211, sharedDataSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Completing the Code
-			i(187793),	-- Personal Containment Trap (TOY!)
-		})),
-		ach(15402, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Cyphers of the First Ones
-			["description"] = "Have to research eveything in the talent tree to gain flying.",
-			["g"] = {
-				i(189455),	-- Schematic: Pale Regal Cervid
-			},
-		})),
-		ach(15392, {	-- Dune Dominance
-			["timeline"] = { "added 9.2.0" },
-		}),
-		ach(15224, {	-- Explore Zereth Mortis
-			["timeline"] = { "added 9.2.0" },
-		}),
-		ach(15331, sharedDataSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Treasures of Zereth Mortis
-			ach(15513),	-- Curious Collections
-		})),
-		ach(15411, sharedDataSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Synthe-supersized!
-			ach(15406),	-- Synthesized!
-			ach(15407),	-- Synthe-fived!
-			ach(15410),	-- Synthe-superfived!
-		})),
-		ach(15502, {	-- Sand, Sand Everywhere!
-			["timeline"] = { "added 9.2.0" },
-		}),
-		ach(15404, {	-- Cosmic Empowerment
-			["timeline"] = { "added 9.2.0" },
-		}),
-		ach(15508, {	-- Fashion of the First Ones
-			["timeline"] = { "added 9.2.0" },
-		}),
-		ach(15542, {	-- Apocopocolypse Now
-			["timeline"] = { "added 9.2.0" },
-		}),
-		ach(15509, {	-- Tales of the Exile
-			["timeline"] = { "added 9.2.0" },
 		}),
 	}),
 }));

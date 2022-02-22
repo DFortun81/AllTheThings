@@ -51,6 +51,15 @@ root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 				["collectible"] = false,
 			}),
 		}),
+		ach(15540, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Steadfast Soloist
+			ach(15511),	-- Solely Motivated
+			ach(15539),	-- Solo Aspirations
+		})),
+		ach(15544, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Supreme Soloist
+			title(456),	-- Soloist <Name>
+			ach(15543),	-- Successful Solos
+			ach(15541),	-- Sole Survivor
+		})),
 		ach(5267, {	-- Three's Company: 2700
 			ach(5266),	-- Three's Company: 2400
 			ach(1160),	-- Three's Company: 2200
@@ -66,16 +75,6 @@ root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 			crit(5),	-- Blade's Edge Arena
 			crit(6),	-- Nagrand Arena
 		}),
-		-- PTR
-		ach(15540, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Steadfast Soloist
-			ach(15511),	-- Solely Motivated
-			ach(15539),	-- Solo Aspirations
-		})),
-		ach(15544, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Supreme Soloist
-			title(456),	-- Soloist <Name>
-			ach(15543),	-- Successful Solos
-			ach(15541),	-- Sole Survivor
-		})),
 	}),
 })));
 

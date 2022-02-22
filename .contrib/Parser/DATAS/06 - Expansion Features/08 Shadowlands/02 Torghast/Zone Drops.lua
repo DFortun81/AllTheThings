@@ -151,6 +151,10 @@ _.ExpansionFeatures =
 						159190,	-- Synod
 					},
 				}),
+				i(188700, {	-- Colossal Umbrahide Mawrat (MOUNT!)
+					["description"] = "Only from Layer 13 or higher",
+					["timeline"] = { "added 9.2.0" },
+				}),
 				i(183192, {	-- Frenzied Mawrat
 					["crs"] = {
 						151331,	-- Cellblock Sentinel
@@ -206,11 +210,6 @@ _.ExpansionFeatures =
 						155250,	-- Decayspeaker
 						155251,	-- Elder Longbranch
 					},
-				}),
-				-- PTR
-				i(188700, {	-- Colossal Umbrahide Mawrat (MOUNT!)
-					["description"] = "Only from Layer 13 or higher",
-					["timeline"] = { "added 9.2.0" },
 				}),
 			}),
 		}),

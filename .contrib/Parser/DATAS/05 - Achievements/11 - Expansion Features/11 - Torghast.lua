@@ -36,6 +36,15 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES, {
 			ach(15081),	-- Flawless: Skoldus Hall
 			ach(15082),	-- Flawless: Fracture Chambers
 		}),
+		ach(15322, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Flawless Master (Layer 16)
+			i(188736),	-- Colossal Soulshredder Mawrat (MOUNT!)
+			ach(15320),	-- Flawless: Upper Reaches (Layer 16)
+			ach(15319),	-- Flawless: Mort'regar (Layer 16)
+			ach(15317),	-- Flawless: The Soulforges (Layer 16)
+			ach(15318),	-- Flawless: Coldheart Interstitia (Layer 16)
+			ach(15314),	-- Flawless: Skoldus Hall (Layer 16)
+			ach(15316),	-- Flawless: Fracture Chambers (Layer 16)
+		})),
 		ach(14776),		-- For the Hoarder!
 		ach(14473),		-- Fracture Chambers
 		ach(14498, {	-- Gatekeepers of Torghast
@@ -107,34 +116,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES, {
 			crit(6),	-- The Upper Reaches
 		}),
 		ach(14754),		-- The Forgotten One
-		ach(14478),		-- The Soulforges
-		ach(14493),		-- The Upper Reaches
-		ach(14570, {	-- Twisting Corridors: Layer 8
-			i(184166),	-- Corridor Creeper
-			ach(14468),	-- Twisting Corridors: Layer 1
-			ach(14469, {	-- Twisting Corridors: Layer 2
-				i(183412),		-- Death Seeker (PET!)
-			}),
-			ach(14470),	-- Twisting Corridors: Layer 3
-			ach(14471, {	-- Twisting Corridors: Layer 4
-				i(184223),	-- Helm of the Dominated
-			}),
-			ach(14472),	-- Twisting Corridors: Layer 5
-			ach(14568, {	-- Twisting Corridors: Layer 6
-				title(438),	-- Spirestalker
-			}),
-			ach(14569),	-- Twisting Corridors: Layer 7
-		}),
-		-- PTR
-		ach(15322, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Flawless Master (Layer 16)
-			i(188736),	-- Colossal Soulshredder Mawrat (MOUNT!)
-			ach(15320),	-- Flawless: Upper Reaches (Layer 16)
-			ach(15319),	-- Flawless: Mort'regar (Layer 16)
-			ach(15317),	-- Flawless: The Soulforges (Layer 16)
-			ach(15318),	-- Flawless: Coldheart Interstitia (Layer 16)
-			ach(15314),	-- Flawless: Skoldus Hall (Layer 16)
-			ach(15316),	-- Flawless: Fracture Chambers (Layer 16)
-		})),
 		ach(15251, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- The Jailer's Gauntlet: Layer 1
 			i(188679),	-- Lightless Tormentor (PET!)
 		})),
@@ -159,10 +140,27 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES, {
 		ach(15258, {	-- The Jailer's Gauntlet: Layer 8
 			["timeline"] = { "added 9.2.0" },
 		}),
+		ach(14478),		-- The Soulforges
+		ach(14493),		-- The Upper Reaches
 		ach(15324, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Tower Ranger
 			title(450),	-- <Name>, Tower Ranger
 		})),
-
+		ach(14570, {	-- Twisting Corridors: Layer 8
+			i(184166),	-- Corridor Creeper
+			ach(14468),	-- Twisting Corridors: Layer 1
+			ach(14469, {	-- Twisting Corridors: Layer 2
+				i(183412),		-- Death Seeker (PET!)
+			}),
+			ach(14470),	-- Twisting Corridors: Layer 3
+			ach(14471, {	-- Twisting Corridors: Layer 4
+				i(184223),	-- Helm of the Dominated
+			}),
+			ach(14472),	-- Twisting Corridors: Layer 5
+			ach(14568, {	-- Twisting Corridors: Layer 6
+				title(438),	-- Spirestalker
+			}),
+			ach(14569),	-- Twisting Corridors: Layer 7
+		}),
 	-- These may have existed on beta? But don't appear to be in the release version, only the layer 1 achieves have been seen.
 	-- Leaving them here commented out for now, we can delete later if they never show up.
 	--	ach(14587, {	-- Torghast: Coldheart Interstitia: Layer 9

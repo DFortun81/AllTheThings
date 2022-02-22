@@ -4,6 +4,9 @@
 
 root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 	achcat(ACHIEVEMENT_CATEGORY_SHADOWLANDS_RAID, {
+		ach(15315, {	-- Amidst Ourselves
+			["timeline"] = { "added 9.2.0" },
+		}),
 		ach(14293),		-- Blind as a Bat
 		ach(14608),		-- Burning Bright
 		ach(15065, {	-- Eye Wish You Were Here
@@ -28,10 +31,35 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			ach(14362),	-- Mythic: The Council of Blood
 		}),
 		ach(14610),		-- Clear Conscience
+		ach(15399, {	-- Coming to Terms
+			["timeline"] = { "added 9.2.0" },
+		}),
+		ach(15492, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Cornerstone of Creation
+			crit(1),	-- Dausegne
+			crit(2),	-- Prototype Pantheon
+			crit(3),	-- Lihuvim
+		})),
+		ach(15494, {	-- Damnation Aviation
+			["timeline"] = { "added 9.2.0" },
+		}),
 		ach(14294),		-- Dirtflap's Revenge
+		ach(15416, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Domination's Grasp
+			crit(1),	-- Anduin Wrynn
+			crit(2),	-- Lords of Dread
+			crit(3),	-- Rygelon
+		})),
+		ach(15493, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Ephemeral Plains
+			crit(1),	-- Vigilant Guardian
+			crit(2),	-- Skolex
+			crit(3),	-- Artificer Xy'mox
+			crit(4),	-- Halondrus
+		})),
 		ach(14525),		-- Feed Me, Seymour!
 		ach(14376),		-- Feed the Beast
 		ach(15040),		-- Flawless Fate
+		ach(15397, {	-- Four Ring Circus
+			["timeline"] = { "added 9.2.0" },
+		}),
 		ach(15127, {	-- Heroic: Sanctum of Domination
 			crit(1),	-- The Tarragrue
 			crit(2),	-- The Eye of the Jailer
@@ -44,6 +72,19 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(9),	-- Kel'Thuzad
 			crit(10),	-- Sylvanas Windrunner
 		}),
+		ach(15478, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Heroic: Sepulcher of the First Ones
+			crit(1),	-- Vigilant Guardian
+			crit(2),	-- Skolex
+			crit(3),	-- Artificer Xy'mox
+			crit(4),	-- Dausegne
+			crit(5),	-- Prototype Pantheon
+			crit(6),	-- Lihuvim
+			crit(7),	-- Halondrus
+			crit(8),	-- Anduin Wrynn
+			crit(9),	-- Lords of Dread
+			crit(10),	-- Rygelon
+			crit(11),	-- The Jailer
+		})),
 		ach(14524),		-- I Don't Know What I Expected
 		ach(15058),		-- I Used to Bullseye Deeprun Rats Back Home
 		ach(15132),		-- Knowledge is Power
@@ -61,8 +102,24 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				title(447),	-- Breaker of Chains
 			}),
 		}),
+		ach(15490, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Mythic: Sepulcher of the First Ones
+			ach(15479),	-- Mythic: Vigilant Guardian
+			ach(15480),	-- Mythic: Skolex
+			ach(15481),	-- Mythic: Artificer Xy'mox
+			ach(15482),	-- Mythic: Dausegne
+			ach(15483),	-- Mythic: Prototype Pantheon
+			ach(15484),	-- Mythic: Lihuvim
+			ach(15485),	-- Mythic: Halondrus
+			ach(15486),	-- Mythic: Anduin Wrynn
+			ach(15487),	-- Mythic: Lords of Dread
+			ach(15488),	-- Mythic: Rygelon
+			ach(15489),	-- Mythic: The Jailer
+		})),
 		ach(14998),		-- Name A Better Duo, I'll Wait
 		ach(14619),		-- Pour Decision Making
+		ach(15381, {	-- Power ON
+			["timeline"] = { "added 9.2.0" },
+		}),
 		ach(14617),		-- Private Stock
 		ach(15126, {	-- Sanctum of Domination
 			crit(1),	-- The Tarragrue
@@ -75,64 +132,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(8),	-- Fatescribe Roh-Kalo
 			crit(9),	-- Kel'Thuzad
 			crit(10),	-- Sylvanas Windrunner
-		}),
-		ach(15124, {	-- Shackles of Fate
-			crit(1),	-- Guardian of the First Ones
-			crit(2),	-- Fatescribe Roh-Kalo
-			crit(3),	-- Kel'Thuzad
-		}),
-		ach(14523),		-- Taking Care of Business
-		ach(15123, {	-- The Dark Bastille
-			crit(1),	-- Remnant of Ner'zhul
-			crit(2),	-- Soulrender Dormazain
-			crit(3),	-- Painsmith Raznal
-		}),
-		ach(15122, {	-- The Jailer's Vanguard
-			crit(1),	-- The Tarragrue
-			crit(2),	-- The Eye of the Jailer
-			crit(3),	-- The Nine
-		}),
-		ach(15125, {	-- The Reckoning
-			crit(1),	-- Sylvanas Windrunner
-		}),
-		ach(15133),		-- This World is a Prism
-		ach(15003),		-- To the Nines
-		ach(15108),		-- Together Forever
-		ach(15105),		-- Tormentor's Tango
-		ach(15131),		-- Whack-A-Soul
-		-- PTR
-		ach(15381, {	-- Power ON
-			["timeline"] = { "added 9.2.0" },
-		}),
-		ach(15401, {	-- Wisdom Comes From the Desert
-			["timeline"] = { "added 9.2.0" },
-		}),
-		ach(15398, {	-- Xy Never, Ever Marks the Spot.
-			["timeline"] = { "added 9.2.0" },
-		}),
-		ach(15397, {	-- Four Ring Circus
-			["timeline"] = { "added 9.2.0" },
-		}),
-		ach(15400, {	-- Where the Wild Beasts Are
-			["timeline"] = { "added 9.2.0" },
-		}),
-		ach(15419, {	-- The Protoform Matrix
-			["timeline"] = { "added 9.2.0" },
-		}),
-		ach(15386, {	-- Shimmering Secrets
-			["timeline"] = { "added 9.2.0" },
-		}),
-		ach(15399, {	-- Coming to Terms
-			["timeline"] = { "added 9.2.0" },
-		}),
-		ach(15315, {	-- Amidst Ourselves
-			["timeline"] = { "added 9.2.0" },
-		}),
-		ach(15396, {	-- We Are All Made of Stars
-			["timeline"] = { "added 9.2.0" },
-		}),
-		ach(15494, {	-- Damnation Aviation
-			["timeline"] = { "added 9.2.0" },
 		}),
 		ach(15417, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Sepulcher of the First Ones
 			crit(1),	-- Vigilant Guardian
@@ -147,50 +146,50 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(10),	-- Rygelon
 			crit(11),	-- The Jailer
 		})),
-		ach(15478, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Heroic: Sepulcher of the First Ones
-			crit(1),	-- Vigilant Guardian
-			crit(2),	-- Skolex
-			crit(3),	-- Artificer Xy'mox
-			crit(4),	-- Dausegne
-			crit(5),	-- Prototype Pantheon
-			crit(6),	-- Lihuvim
-			crit(7),	-- Halondrus
-			crit(8),	-- Anduin Wrynn
-			crit(9),	-- Lords of Dread
-			crit(10),	-- Rygelon
-			crit(11),	-- The Jailer
-		})),
-		ach(15490, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Mythic: Sepulcher of the First Ones
-			ach(15479),	-- Mythic: Vigilant Guardian
-			ach(15480),	-- Mythic: Skolex
-			ach(15481),	-- Mythic: Artificer Xy'mox
-			ach(15482),	-- Mythic: Dausegne
-			ach(15483),	-- Mythic: Prototype Pantheon
-			ach(15484),	-- Mythic: Lihuvim
-			ach(15485),	-- Mythic: Halondrus
-			ach(15486),	-- Mythic: Anduin Wrynn
-			ach(15487),	-- Mythic: Lords of Dread
-			ach(15488),	-- Mythic: Rygelon
-			ach(15489),	-- Mythic: The Jailer
-		})),
-		ach(15493, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Ephemeral Plains
-			crit(1),	-- Vigilant Guardian
-			crit(2),	-- Skolex
-			crit(3),	-- Artificer Xy'mox
-			crit(4),	-- Halondrus
-		})),
-		ach(15492, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Cornerstone of Creation
-			crit(1),	-- Dausegne
-			crit(2),	-- Prototype Pantheon
-			crit(3),	-- Lihuvim
-		})),
-		ach(15416, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Domination's Grasp
-			crit(1),	-- Anduin Wrynn
-			crit(2),	-- Lords of Dread
-			crit(3),	-- Rygelon
-		})),
+		ach(15124, {	-- Shackles of Fate
+			crit(1),	-- Guardian of the First Ones
+			crit(2),	-- Fatescribe Roh-Kalo
+			crit(3),	-- Kel'Thuzad
+		}),
+		ach(15386, {	-- Shimmering Secrets
+			["timeline"] = { "added 9.2.0" },
+		}),
+		ach(14523),		-- Taking Care of Business
+		ach(15123, {	-- The Dark Bastille
+			crit(1),	-- Remnant of Ner'zhul
+			crit(2),	-- Soulrender Dormazain
+			crit(3),	-- Painsmith Raznal
+		}),
 		ach(15418, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- The Grand Design
 			crit(1),	-- The Jailer, Zovaal
 		})),
+		ach(15122, {	-- The Jailer's Vanguard
+			crit(1),	-- The Tarragrue
+			crit(2),	-- The Eye of the Jailer
+			crit(3),	-- The Nine
+		}),
+		ach(15419, {	-- The Protoform Matrix
+			["timeline"] = { "added 9.2.0" },
+		}),
+		ach(15125, {	-- The Reckoning
+			crit(1),	-- Sylvanas Windrunner
+		}),
+		ach(15133),		-- This World is a Prism
+		ach(15003),		-- To the Nines
+		ach(15108),		-- Together Forever
+		ach(15105),		-- Tormentor's Tango
+		ach(15396, {	-- We Are All Made of Stars
+			["timeline"] = { "added 9.2.0" },
+		}),
+		ach(15131),		-- Whack-A-Soul
+		ach(15400, {	-- Where the Wild Beasts Are
+			["timeline"] = { "added 9.2.0" },
+		}),
+		ach(15401, {	-- Wisdom Comes From the Desert
+			["timeline"] = { "added 9.2.0" },
+		}),
+		ach(15398, {	-- Xy Never, Ever Marks the Spot.
+			["timeline"] = { "added 9.2.0" },
+		}),
 	}),
 }));

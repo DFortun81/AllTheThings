@@ -150,6 +150,15 @@ _.ExpansionFeatures =
 					ach(15081),	-- Flawless: Skoldus Hall (Layer 12)
 					ach(15082),	-- Flawless: Fracture Chambers (Layer 12)
 				}),
+				ach(15322, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Flawless Master (Layer 16)
+					i(188736),	-- Colossal Soulshredder Mawrat (MOUNT!)
+					ach(15320),	-- Flawless: Upper Reaches (Layer 16)
+					ach(15319),	-- Flawless: Mort'regar (Layer 16)
+					ach(15317),	-- Flawless: The Soulforges (Layer 16)
+					ach(15318),	-- Flawless: Coldheart Interstitia (Layer 16)
+					ach(15314),	-- Flawless: Skoldus Hall (Layer 16)
+					ach(15316),	-- Flawless: Fracture Chambers (Layer 16)
+				})),
 				ach(14776),		-- For the Hoarder!
 				ach(14498, {	-- Gatekeepers of Torghast
 					crit(1,  {		-- Dark Aspirant Corrus
@@ -266,32 +275,6 @@ _.ExpansionFeatures =
 				ach(14754, {	-- The Forgotten One
 					["sourceQuests"] = { 60272 },	-- The Weak Link
 				}),
-				ach(14468),		-- Torghast: Twisting Corridors: Layer 1
-				ach(14469, {	-- Torghast: Twisting Corridors: Layer 2
-					i(183412),		-- Death Seeker (PET!)
-				}),
-				ach(14470),		-- Torghast: Twisting Corridors: Layer 3
-				ach(14471, {	-- Torghast: Twisting Corridors: Layer 4
-					i(184223),		-- Helm of the Dominated (TOY!)
-				}),
-				ach(14472),		-- Torghast: Twisting Corridors: Layer 5
-				ach(14568, {	-- Torghast: Twisting Corridors: Layer 6
-					title(438),		-- Spirestalker
-				}),
-				ach(14569),		-- Torghast: Twisting Corridors: Layer 7
-				ach(14570, {	-- Torghast: Twisting Corridors: Layer 8
-					i(184166),		-- Corridor Creeper (MOUNT!)
-				}),
-				-- PTR
-				ach(15322, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Flawless Master (Layer 16)
-					i(188736),	-- Colossal Soulshredder Mawrat (MOUNT!)
-					ach(15320),	-- Flawless: Upper Reaches (Layer 16)
-					ach(15319),	-- Flawless: Mort'regar (Layer 16)
-					ach(15317),	-- Flawless: The Soulforges (Layer 16)
-					ach(15318),	-- Flawless: Coldheart Interstitia (Layer 16)
-					ach(15314),	-- Flawless: Skoldus Hall (Layer 16)
-					ach(15316),	-- Flawless: Fracture Chambers (Layer 16)
-				})),
 				ach(15251, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- The Jailer's Gauntlet: Layer 1
 					i(188679),	-- Lightless Tormentor (PET!)
 				})),
@@ -315,6 +298,22 @@ _.ExpansionFeatures =
 				}),
 				ach(15258, {	-- The Jailer's Gauntlet: Layer 8
 					["timeline"] = { "added 9.2.0" },
+				}),
+				ach(14468),		-- Torghast: Twisting Corridors: Layer 1
+				ach(14469, {	-- Torghast: Twisting Corridors: Layer 2
+					i(183412),		-- Death Seeker (PET!)
+				}),
+				ach(14470),		-- Torghast: Twisting Corridors: Layer 3
+				ach(14471, {	-- Torghast: Twisting Corridors: Layer 4
+					i(184223),		-- Helm of the Dominated (TOY!)
+				}),
+				ach(14472),		-- Torghast: Twisting Corridors: Layer 5
+				ach(14568, {	-- Torghast: Twisting Corridors: Layer 6
+					title(438),		-- Spirestalker
+				}),
+				ach(14569),		-- Torghast: Twisting Corridors: Layer 7
+				ach(14570, {	-- Torghast: Twisting Corridors: Layer 8
+					i(184166),		-- Corridor Creeper (MOUNT!)
 				}),
 				ach(15324, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Tower Ranger
 					title(450),	-- <Name>, Tower Ranger

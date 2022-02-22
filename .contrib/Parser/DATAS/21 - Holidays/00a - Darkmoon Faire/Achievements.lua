@@ -18,32 +18,31 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 				}),
 			},
 		}),
+		ach(15215, {	-- Can't Stop the Feeling
+			ach(15214),	-- What a Feeling
+		}),
 		ach(6019),	-- Come One, Come All!
+		ach(15221),	-- Dancing Machine
 		ach(6028),	-- Darkmoon Defender
 		ach(6029),	-- Darkmoon Despoiler
 		ach(6027),	-- Darkmoon Dungeoneer
+		ach(15213, {	-- Don't Stop Dancing
+			ach(15212),	-- First Dance
+		}),
 		ach(6032),	-- Faire Favors
 		ach(6026),	-- Fairgoer's Feast
+		ach(15223, {	-- Feeling It
+			ach(15222),	-- You Got the Beat
+		}),
 		ach(6025),	-- I Was Promised a Pony
+		ach(15217, {	-- Maniac on the Dance Floor
+			ach(15216),	-- Make You Sweat
+		}),
 		ach(6030, {	-- Taking the Show on the Road (A)
 			["races"] = ALLIANCE_ONLY,
 		}),
 		ach(6031, {	-- Taking the Show on the Road (H)
 			["races"] = HORDE_ONLY,
-		}),
-		-- PTR
-		ach(15215, {	-- Can't Stop the Feeling
-		ach(15214),	-- What a Feeling
-		}),
-		ach(15221),	-- Dancing Machine
-		ach(15213, {	-- Don't Stop Dancing
-			ach(15212),	-- First Dance
-		}),
-		ach(15223, {	-- Feeling It
-			ach(15222),	-- You Got the Beat
-		}),
-		ach(15217, {	-- Maniac on the Dance Floor
-			ach(15216),	-- Make You Sweat
 		}),
 	}),
 })));
