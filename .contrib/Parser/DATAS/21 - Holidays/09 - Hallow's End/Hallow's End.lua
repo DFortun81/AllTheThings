@@ -1438,6 +1438,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 			removeclassicphase(ach(980, {	-- The Horseman's Reins
 				["provider"] = { "i", 37012 },	-- The Horseman's Reins
 				["timeline"] = { "added 2.0.1" },
+				["f"] = 100,
 				-- #if BEFORE WRATH
 				["description"] = "Obtain The Horseman's Reins from The Headless Horseman in the Scarlet Monastery during Hallow's End.",
 				["OnUpdate"] = [[function(t)
