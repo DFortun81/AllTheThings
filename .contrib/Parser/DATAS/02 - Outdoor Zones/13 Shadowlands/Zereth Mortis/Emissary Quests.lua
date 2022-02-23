@@ -13,7 +13,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(187780, {	-- Enlightened Broker Supplies
 						i(190234, {	-- Enlightened Portal Research
 							-- ["questID"] =
-							["requireSkill"] = ENGINNERING,
+							["requireSkill"] = ENGINEERING,
 						}),
 						i(189973),	-- Ray Soul (SOUL!)
 						i(189471),	-- Schematic: Russet Bufonid

@@ -460,7 +460,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			o(375538, {	-- Lost Ovoid
 				["questID"] = 65624,
 				["coord"] = { 53.6, 72.6, ZERETH_MORTIS },
-				["isDaily"] = True,
+				["isDaily"] = true,
 				["g"] = {
 					i(190239),	-- Lost Ovoid
 				},
@@ -469,7 +469,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["description"] = "Use Firim's Spare Forge-tap to gain 15xEphemera Strands(187728) to get Ephemera Orb(187787), not guaranteed.",
 				["coord"] = { 42, 51.9, ZERETH_MORTIS },
 				["questID"] = 65183,
-				["isWeekly"] = True,
+				["isWeekly"] = true,
 				["cost"] = { { "i", 188231, 1 }, },	-- 1xProvis Cache Key
 			}),
 			o(373579, {	-- Prying Eye Discovery
@@ -480,7 +480,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					{ 48, 66.3, ZERETH_MORTIS },
 				},
 				["questID"] = 65184,
-				["repeatable"] = True,
+				["repeatable"] = true,
 				["g"] = {
 					i(190096, {	-- Pocobold
 						["questID"] = 65534,
@@ -505,7 +505,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				},
 				["questID"] = 65611,
 				["cost"] = { { "i", 190197, 1 } },	-- Sandworn Chest Key
-				["repeatable"] = True,
+				["repeatable"] = true,
 				["g"] = {
 					i(190189),	-- Sandworn Relic
 					i(190734),	-- Makaris's Satchel of Mines (TOY!)
