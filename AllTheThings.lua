@@ -10400,8 +10400,10 @@ local function CacheInfo(t, field)
 		_t.mountID = mountID;
 	end
 	local name, _, icon = GetSpellInfo(id);
-	_t.text = "|cffb19cd9"..name.."|r";
-	_t.icon = icon;
+	if name then
+		_t.text = "|cffb19cd9"..name.."|r";
+		_t.icon = icon;
+	end
 	if itemID then
 		local itemName = select(2, GetItemInfo(itemID));
 		-- item info might not be available on first request, so don't cache the data
