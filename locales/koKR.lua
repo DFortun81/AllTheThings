@@ -1563,7 +1563,7 @@ for key,value in pairs({
 	[232251] = "피퍼스가 파묻은 보급품",	-- Pippers' Buried Supplies
 	[232252] = "피퍼스가 파묻은 보급품",	-- Pippers' Buried Supplies
 	[232397] = "게시판",	-- Bulletin Board	--TODO: manually translated
-	--TODO: [232398] = "Bulletin Board",	-- Bulletin Board
+	[232398] = "게시판",	-- Bulletin Board	--TODO: manually translated
 	[232400] = "게시판",	-- Bulletin Board	--TODO: manually translated
 	--TODO: [232406] = "Adventurer's Pack",	-- Adventurer's Pack
 	[232416] = "명령 게시판",	-- Command Board

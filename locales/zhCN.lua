@@ -1563,7 +1563,7 @@ for key, value in pairs({
 	[232251] = "派普斯埋藏的补给品",	-- Pippers' Buried Supplies
 	[232252] = "派普斯埋藏的补给品",	-- Pippers' Buried Supplies
 	[232397] = "布告牌",	-- Bulletin Board	--TODO: manually translated
-	--TODO: [232398] = "Bulletin Board",	-- Bulletin Board
+	[232398] = "布告牌",	-- Bulletin Board	--TODO: manually translated
 	[232400] = "布告牌",	-- Bulletin Board	--TODO: manually translated
 	[232406] = "冒险者的包裹",	-- Adventurer's Pack
 	[232416] = "指令板",	-- Command Board
