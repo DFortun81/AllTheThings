@@ -94,7 +94,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				},
 			}),
 			o(375376, {	-- Fallen Vault
-				["description"] = "Reaching this treasure is easy but the only way away is via Flying/HS or Teleport abilities.",
+				["description"] = "Use the Fogotten Translocator nearby to teleport up.",
 				["coord"] = { 51.6, 9.9, ZERETH_MORTIS },
 				["questID"] = 65487,
 				["g"] = {
@@ -116,7 +116,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				},
 			}),
 			o(373561, {	-- Forgotten Proto-Vault
-				["description"] = "This chest only spawn during WQ Frog'it(65089).",
+				["description"] = "This chest only spawn during WQ Frog'it (65089).",
 				["coord"] = { 67.0, 69.4, ZERETH_MORTIS },
 				["questID"] = 65178,
 				["g"] = {

@@ -33,6 +33,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			}),
 			q(65089, {	-- Frog'it
 				["coord"] = { 60, 68.8, ZERETH_MORTIS },
+				["sym"] = {
+					{"select","objectID",373561},	-- Forgotten Proto-Vault
+				},
 			}),
 			q(65231, {	-- Plundered Knowledge
 				["coord"] = { 67.2, 39.1, ZERETH_MORTIS },
@@ -86,6 +89,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			}),
 			q(65410, {	-- Puzzling Situation
 				["coord"] = { 55.7, 50, ZERETH_MORTIS },
+			}),
+			q(65411, {	-- Puzzling Situation
+				-- ["coord"] = { XX, YY, ZERETH_MORTIS },
 			}),
 			q(65403, {	-- Puzzling Situation
 				["coord"] = { 38.4, 70.4, ZERETH_MORTIS },

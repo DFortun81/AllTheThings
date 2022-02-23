@@ -16,7 +16,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["coord"] = { 28.9, 53.5, ZERETH_MORTIS },
 			}),
 			q(64947, {	-- Give Me a Hand
-				["sourceQuests"] = { 64956 },	-- Long Lost Firim
+				["sourceQuests"] = { 65456 },	-- Long Lost Firim
 				["provider"] = { "n", 181561 },	-- Firim
 				["coord"] = { 28.9, 53.5, ZERETH_MORTIS },
 			}),
@@ -164,6 +164,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["sourceQuests"] = { 64818 },	-- Reinforcements May Be Necessary
 				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 35, 64.8, ZERETH_MORTIS },
+				["g"] = {
+					i(187839),	-- Tonal Jammer
+				},
 			}),
 			q(64822, {	-- A Break in Communcation
 				["sourceQuests"] = { 64818 },	-- Reinforcements May Be Necessary
@@ -1029,6 +1032,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
+				["g"] = {
+					i(188170),	-- Portal Initiator
+				},
 			}),
 			q(64977, {	-- Step Into the Ring
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
