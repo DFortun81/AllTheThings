@@ -3,7 +3,7 @@
 -----------------------------------------------
 
 root("PVP", pvp(n(BATTLEGROUNDS, {
-	m(WINTERGRASP, {
+	m(WINTERGRASP_BG, {
 		["achievementID"] = 1752,	--  Master of Wintergrasp
 		["g"] = {
 			n(ACHIEVEMENTS, {
@@ -51,32 +51,32 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				q(55510, {	-- No Mercy for the Merciless
 					["provider"] = { "n", 151795 },	-- Commander Zanneth
 					["isWeekly"] = true,
-					["coord"] = { 49.6, 20.4, WINTERGRASP },
+					["coord"] = { 49.6, 20.4, WINTERGRASP_BG },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(55511, {	-- Slay them all!
 					["provider"] = { "n", 151611 },	-- Commander Dardosh
 					["isWeekly"] = true,
-					["coord"] = { 49.6, 20.4, WINTERGRASP },
+					["coord"] = { 49.6, 20.4, WINTERGRASP_BG },
 					["races"] = HORDE_ONLY,
 				}),
 				q(55508, {	-- Victory in Wintergrasp
 					["provider"] = { "n", 152003 },	-- Tactical Officer Ahbramis
 					["isWeekly"] = true,
-					["coord"] = { 50.2, 17.8, WINTERGRASP },
+					["coord"] = { 50.2, 17.8, WINTERGRASP_BG },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(55509, {	-- Victory in Wintergrasp
 					["provider"] = { "n", 152004 },	-- Tactical Officer Kilrath
 					["isWeekly"] = true,
-					["coord"] = { 50.2, 17.8, WINTERGRASP },
+					["coord"] = { 50.2, 17.8, WINTERGRASP_BG },
 					["races"] = HORDE_ONLY,
 				}),
 			}),
 			n(VENDORS, {
 				n(39173, {	-- Champion Ros'slai <Wintergrasp Quartermaster>
 					["itemID"] = 137642,	-- Mark of Honor
-					["coord"] = { 51.8, 17.4, WINTERGRASP },
+					["coord"] = { 51.8, 17.4, WINTERGRASP_BG },
 					["races"] = HORDE_ONLY,
 					["g"] = pvp({
 						i(41742, {	-- Design: Enigmatic Skyflare Diamond
@@ -378,7 +378,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					}),
 				}),
 				n(32294, {	-- Knight Dameron <Wintergrasp Quartermaster>
-					["coord"] = { 51.6, 17.6, WINTERGRASP },
+					["coord"] = { 51.6, 17.6, WINTERGRASP_BG },
 					["itemID"] = 137642,	-- Mark of Honor
 					["races"] = ALLIANCE_ONLY,
 					["g"] = pvp({
@@ -597,7 +597,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				}),
 				n(39172, {	-- Marshal Magruder <Wintergrasp Quartermaster>
 					["itemID"] = 137642,	-- Mark of Honor
-					["coord"] = { 51.6, 17.6, WINTERGRASP },
+					["coord"] = { 51.6, 17.6, WINTERGRASP_BG },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = pvp({
 						i(48974, {	-- Titan-Forged Armwraps of Dominance
@@ -700,7 +700,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				}),
 				n(30489, {	-- Morgan Day <Jewelcrafter>
 					["itemID"] = 137642,	-- Mark of Honor
-					["coord"] = { 48.8, 17.6, WINTERGRASP },
+					["coord"] = { 48.8, 17.6, WINTERGRASP_BG },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = pvp({
 						i(41742, {	-- Design: Enigmatic Skyflare Diamond
@@ -777,7 +777,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					}),
 				}),
 				n(32296, {	-- Stone Guard Mukar <Wintergrasp Quartermaster>
-					["coord"] = { 51.6, 17.6, WINTERGRASP },
+					["coord"] = { 51.6, 17.6, WINTERGRASP_BG },
 					["itemID"] = 137642,	-- Mark of Honor
 					["races"] = HORDE_ONLY,
 					["g"] = pvp({
@@ -975,7 +975,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					}),
 				}),
 				n(31101, {	-- Hoodoo Master Fu'jin
-					["coord"] = { 51.6, 21.0, WINTERGRASP },
+					["coord"] = { 51.6, 21.0, WINTERGRASP_BG },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(44067, {	-- Inscription of Triumph
@@ -987,7 +987,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					},
 				}),
 				n(31051, {	-- Sorceress Kaylana
-					["coord"] = { 48.4, 21.08, WINTERGRASP },
+					["coord"] = { 48.4, 21.08, WINTERGRASP_BG },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(44067, {	-- Inscription of Triumph
