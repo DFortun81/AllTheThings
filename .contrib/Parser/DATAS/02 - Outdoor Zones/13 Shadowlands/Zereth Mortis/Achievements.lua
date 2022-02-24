@@ -8,7 +8,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				ach(15512),	-- Adventures in Zereth Mortis
 			}),
 			ach(15404),	-- Cosmic Empowerment
-			ach(15392),	-- Dune Dominance
+			ach(15392, {	-- Dune Dominance
+				i(190111),	-- Escutcheon of Beautiful Death
+				i(190110),	-- Flail of Balletic Carnage
+				i(190112),	-- Glimmering War Beacon
+				i(190462),	-- Impaler's Graceful Lance
+			}),
 			ach(15224, {	-- Explore Zereth Mortis
 				crit(1),	-- Path of Inception
 				crit(2),	-- Haven

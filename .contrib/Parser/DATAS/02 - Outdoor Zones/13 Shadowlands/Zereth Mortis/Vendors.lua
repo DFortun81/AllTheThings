@@ -6,6 +6,7 @@ local CYPHER = 1979;
 root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 	m(ZERETH_MORTIS, {
 		n(VENDORS, {
+			--[[ Taking this out until we know how it will work on retail. On ptr it was weird
 			o(375368, {	-- Creation Catalyst Console
 				["coord"] = { 47.4, 88.6, ZERETH_MORTIS },
 				["sym"] = {
@@ -32,8 +33,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 						191009,	-- Zenith Shoulder Module
 					},
 				},
-
 			}),
+			--]]
 			n(185587, {	-- Elder Rafiq
 				["coord"] = { 60.6, 51, ZERETH_MORTIS },
 				["g"] = sharedData({ ["modID"] = 28 }, {
@@ -141,14 +142,16 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			n(185713, {	-- Hadja
 				["coord"] = { 35.2, 65.7, ZERETH_MORTIS },
 				["g"] = sharedData({ ["cost"] = { { "c", ANIMA, 500 }, }, }, {
-					i(190764, {	-- Broker's Accessory
+					i(191036, {	-- Broker's Accessory
 						["sym"] = {
-							{"select", "mapID", ZERETH_MORTIS },	-- Select Zereth Mortis
-							{"pop"},								-- Discard the Header and acquire all of their children.
-							{"where", "headerID", ZONE_DROPS },		-- Select Zone Drops
-							{"pop"},								-- Discard the Header and acquire all of their children.
-							{"is", "itemID"},						-- Only Items!
-							{"invtype", "INVTYPE_TRINKET" },
+							{"select", "itemID",
+								190389,	-- Broker's Lucky Coin
+								190726,	-- Extract of Prodigious Sands
+								190390,	-- Protector's Diffusion Implement
+								190597,	-- Symbol of the Lupine
+								190602,	-- Symbol of the Raptora
+								190582,	-- Symbol of the Vombata
+							},
 						},
 					}),
 					i(190763, {	-- Broker's Belt
@@ -181,14 +184,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 							{"invtype", "INVTYPE_WRIST" },
 						},
 					}),
-					i(190764, {	-- Broker's Braid
+					i(191037, {	-- Broker's Braid
 						["sym"] = {
-							{"select", "mapID", ZERETH_MORTIS },	-- Select Zereth Mortis
-							{"pop"},								-- Discard the Header and acquire all of their children.
-							{"where", "headerID", ZONE_DROPS },		-- Select Zone Drops
-							{"pop"},								-- Discard the Header and acquire all of their children.
-							{"is", "itemID"},						-- Only Items!
-							{"invtype", "INVTYPE_NECK" },
+							{"select", "itemID", 188106 }	-- Unfathomable Pendant
 						},
 					}),
 					i(190760, {	-- Broker's Chestpiece
@@ -243,12 +241,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					}),
 					i(190764, {	-- Broker's Ring
 						["sym"] = {
-							{"select", "mapID", ZERETH_MORTIS },	-- Select Zereth Mortis
-							{"pop"},								-- Discard the Header and acquire all of their children.
-							{"where", "headerID", ZONE_DROPS },		-- Select Zone Drops
-							{"pop"},								-- Discard the Header and acquire all of their children.
-							{"is", "itemID"},						-- Only Items!
-							{"invtype", "INVTYPE_FINGER" },
+							{"select", "itemID",
+								188053,	-- Abandoned Automa Loop
+								188044,	-- Discarded Cartel Al Signet
+								188106,	-- Unfathomable Pendant
+								188045,	-- Salvaged Viperid Band
+							},
 						},
 					}),
 					i(190755, {	-- Broker's Shoulders
@@ -263,61 +261,25 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					}),
 					i(190741, {	-- Broker's Weaponry
 						["sym"] = {
-							{"select", "mapID", ZERETH_MORTIS },	-- Select Zereth Mortis
-							{"pop"},								-- Discard the Header and acquire all of their children.
-							{"where", "headerID", ZONE_DROPS },		-- Select Zone Drops
-							{"pop"},								-- Discard the Header and acquire all of their children.
-							{"is", "itemID"},						-- Only Items!
-							{"invtype", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE" },
+							{"select", "itemID",
+								188041,	-- Ageless Spellblade
+								188056,	-- Ancient Protector's Pulverizer
+								188040,	-- Burnished Arbalest
+								188042,	-- Enlightened Dagger
+								188043,	-- Eradicator of the Eternal Guard
+								188051,	-- Gatewarden's Warglaive
+								188039,	-- Harmonic Actuator
+								188047,	-- Haven Guard's Cudgel
+								188046,	-- Haven Guard's Mace
+								188038,	-- Haven Guard's Shield
+								188055,	-- Impossibly Ancient Band
+								188050,	-- Ineffable Spire
+								188049,	-- Transcendant Gavel
+								188048,	-- Truthseeker's Staff
+							},
 						},
 					}),
 				}),
-			}),
-			n(185748, {	-- Mai Toa
-				["coord"] = { 58.6, 49.8, ZERETH_MORTIS },
-				["g"] = {
-					i(190880),	-- Catalyzed Apple Pie
-				},
-			}),
-			n(183962, {	-- Olea Manu
-				["description"] = "Only Available after Hanoas Questline",
-				["sourceQuests"] = { 65219 },	-- Jiro to Hero
-				["coord"] = { 37.2, 44.7, ZERETH_MORTIS },
-				["g"] = {
-					i(189986, {	-- Armadillo Soul (SOUL!)
-						["cost"] = { { "c", CYPHER, 500 }, },
-					}),
-					i(188793, {	-- Automated Cypher Analysis Tool
-						["questID"] = 65282,
-						["cost"] = { { "c", CYPHER, 150 }, },
-					}),
-					i(189980, {	-- Brutosaur Soul (SOUL!)
-						["cost"] = { { "c", CYPHER, 1000 }, },
-					}),
-					i(187824, {	-- Formula: Magically Regulated Automa Core (RECIPE!)
-						["recipeID"] = 360007,	-- Magically Regulated Automa Core
-						["requireSkill"] = ENCHANTING,
-						["cost"] = { { "c", CYPHER, 25 }, },
-					}),
-					i(190333, {	-- Jiro Circle of Song (TOY!)
-						["cost"] = { { "c", CYPHER, 100 }, },
-					}),
-					i(187781, {	-- Olea Cache
-						["cost"] = { { "c", CYPHER, 700 }, },
-						["g"] = {
-							i(190945),	-- Greatmaul of the Ancient Sentinels
-							i(190947),	-- Halo-Stave of the Oracles
-						},
-					}),
-					i(191039, {	-- Pocopoc Traveler
-						["cost"] = { { "c", CYPHER, 500 }, },
-					}),
-					i(187804, {	-- Recipe: Empty Kettle of Stone Soup (RECIPE!)
-						["recipeID"] = 359333,	-- Empty Kettle of Stone Soup
-						["requireSkill"] = COOKING,
-						["cost"] = { { "c", CYPHER, 25 }, },
-					}),
-				},
 			}),
 			n(182257, {	-- Vilo
 				["coord"] = { 34.8, 64.1, ZERETH_MORTIS },

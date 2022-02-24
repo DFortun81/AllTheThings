@@ -490,7 +490,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["cost"] = { { "i", 188231, 1 }, },	-- 1xProvis Cache Key
 			}),
 			o(373579, {	-- Prying Eye Discovery
-				["description"] = "Only high up on Pillars.",
 				["coords"] = {
 					{ 35.2, 43.7, ZERETH_MORTIS },
 					{ 34.3, 44.3, ZERETH_MORTIS },

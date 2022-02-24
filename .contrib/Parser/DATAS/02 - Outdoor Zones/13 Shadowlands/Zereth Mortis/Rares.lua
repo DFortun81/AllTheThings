@@ -69,7 +69,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
 					}),
 					i(190047),	-- Converted Broker's Staff
+					i(189956),	-- Perverse Champion's Handguards
 					i(189949),	-- Shackles of the Bound Guardian
+					i(189993),	-- Twisted Judicator's Gavel
 				},
 			}),
 			n(178229, {	-- Feasting
@@ -137,6 +139,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
 					}),
 					i(190008),	-- Enlightened Botanist's Machete
+					i(189953),	-- Lush-Stained Footguards
 					i(190049),	-- Perennial Punching Dagger
 					i(189929),	-- Vinebound Strap
 				},
@@ -197,6 +200,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					crit(2, {	-- High Reaver Damaris
 						["achievementID"] = 15392,	-- Dune Dominance
 					}),
+					i(190106),	-- Approaching Terror's Torch
+					i(190104),	-- Deadeye's Spirit Piercer
+					i(190105),	-- Chilling Domination Mace
 					i(190459),	-- Cold Dispiriting Barricade
 					i(190460),	-- High Reaver's Sickle
 					i(190107),	-- Staff of Broken Coils
@@ -211,6 +217,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 						["description"] = "This is a one time use.\nStep 1: Fish up Strange Goop from the water around Hirukon.\nStep 2: Talk to Vashj in Maldraxxus.\nStep 3: Collect the Three items needed.\nStep 4: Collect the Aurelid Lure from Vashj.",
 						["cr"] = 182194,	--- Baroness Vashj
 						["coord"] = { 57.6, 92, MALDRAXXUS },
+						["questID"] = 65039,
 						["g"] = {
 							i(187662, {	-- Strange Goop
 								["description"] = "To start the questline fish up this item from around Hirukon spawn point.",
@@ -242,7 +249,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					crit(23, {	-- Hirukon <Aurelid Prime>
 						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
 					}),
-					i(187676),	-- Deepstar Polyp (MOUNT!)
+					i(187676, {	-- Deepstar Polyp (MOUNT!)
+						["description"] = "This mount has 100% drop chance if you do the summon.",
+					}),
 					i(190005),	-- Hirukon's Radiant Reach
 					i(189905),	-- Hirukon's Syrupy Squeezers
 					i(189946),	-- Jellied Aurelid Mantle
@@ -257,6 +266,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 						["achievementID"] = 15392,	-- Dune Dominance
 					}),
 					i(190765),	-- Iska's Mawrat Leash (MOUNT!)
+					i(190458),	-- Atrophy's Omnious Bulwark
+					i(190102),	-- Chains of Infectious Serrations
 					i(190126),	-- Rotculler's Encroaching Shears
 					i(190107),	-- Staff of Broken Coils
 				},
@@ -321,6 +332,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					}),
 					i(190002),	-- Bulwark of the Broken
 					i(189984),	-- Drape of Idolized Symmetry
+					i(189961),	-- Enduring Protector's Shoulderguards
+					i(190390),	-- Protector's Diffusion Implement
 					i(189177),	-- Revelation Key (PS)
 				},
 			}),
@@ -332,9 +345,13 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					crit(3, {	-- Reanimatrox Marzan
 						["achievementID"] = 15392,	-- Dune Dominance
 					}),
+					i(190108),	-- Aegis of Laughing Souls
+					i(190109),	-- Cudgel of Mortality's Chains
 					i(190104),	-- Deadeye's Spirit Piercer
+					i(190463),	-- Dismal Mystic's Glaive
 					i(190127),	-- Marzan's Dancing Twin-Scythe
 					i(190461),	-- Reanimator's Beguiling Baton
+					i(190107),	-- Staff of Broken Coils
 				},
 			}),
 			n(183927, {	-- Sand Matriarch Ileus
@@ -361,6 +378,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(189916),	-- Mutated Devourer's Harness
 					i(189941),	-- Voracious Diadem
 					i(189972),	-- Scorpid Soul (SOUL!)
+					i(187847, {	-- Design: Devourer Essence Stone (RECIPE!)
+						["recipeID"] = 360317,	-- Devourer Essence Stone
+						["requireSkill"] = JEWELCRAFTING,
+					}),
 				},
 			}),
 			n(183722, {	-- Sorranos <Vombata Prime>
@@ -427,6 +448,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(189921),	-- Devourer's Insaitable Grips
 					i(189913),	-- Engulfer's Tightening Cinch
 					i(190730),	-- Matriarch's Shell Band
+					i(187847, {	-- Design: Devourer Essence Stone (RECIPE!)
+						["recipeID"] = 360317,	-- Devourer Essence Stone
+						["requireSkill"] = JEWELCRAFTING,
+					}),
 				},
 			}),
 			n(181360, {	-- Vexis <Lupine Prime>
@@ -436,6 +461,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					crit(28, {	-- Vexis <Lupine Prime>
 						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
 					}),
+					i(189959),	-- Legs of Graceful Landing
 					i(190597),	-- Symbol of the Lupine
 					i(189997),	-- The Lupine Prime's Might
 					i(189900),	-- Vexis' Gentle Heartcloth
@@ -486,8 +512,13 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
 					}),
 					i(189924),	-- Buzzing Predator's Legs
+					i(190726),	-- Extract of Prodigious Sands
 					i(189902),	-- Hapless Traveler's Treads
 					i(189939),	-- Zatojin's Paralytic Grip
+					i(187848, {	-- Recipe: Sustaining Armor Polish (RECIPE!)
+						["recipeID"] = 360318,
+						["requireSkill"] = ALCHEMY,
+					}),
 				},
 			}),
 		})),

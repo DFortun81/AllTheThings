@@ -26,10 +26,16 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			i(190951, {	-- Distinguished Blade of Cartel Al
 				["cr"] = 181407,	-- Mawsworn Striker
 			}),
+			i(190950, {	-- Gavel of Lost Purpose
+				["cr"] = 181407,	-- Mawsworn Striker
+			}),
+			i(190948, {	-- Staff of the Dormant Oracle
+				["cr"] = 181407,	-- Mawsworn Striker
+			}),
 			i(190735, {	-- Varruth's Guillotine
 				["cr"] = 181407,	-- Mawsworn Striker
 			}),
-			-- Greens?
+			-- Greens
 			i(188054),	-- Antecedent Drape
 			i(188026),	-- Anthemic Bracers
 			i(188022),	-- Anthemic Coif
@@ -63,8 +69,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			i(188016),	-- Staccato Leggings
 			i(188036),	-- Staccato Mantle
 			i(188035),	-- Staccato Vest
-			-- Weaps
-			i(188053),	-- Abandoned Automa Loop
+			-- Weapons
 			i(188041),	-- Ageless Spellblade
 			i(188056),	-- Ancient Protector's Pulverizer
 			i(188040),	-- Burnished Arbalest
@@ -75,15 +80,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			i(188047),	-- Haven Guard's Cudgel
 			i(188046),	-- Haven Guard's Mace
 			i(188038),	-- Haven Guard's Shield
-			i(188055),	-- Impossibly Ancient Band
 			i(188050),	-- Ineffable Spire
 			i(188049),	-- Transcendant Gavel
 			i(188048),	-- Truthseeker's Staff
-			i(188106),	-- Unfathomable Pendant
-			-- Accessory
-			i(188044),	-- Discarded Cartel Al Signet
-			i(188106),	-- Unfathomable Pendant
-			i(188045),	-- Salvaged Viperid Band
 			-- Lattices
 			i(188957),	-- Genesis Mote
 			i(187634),	-- Ambystan Lattice

@@ -1040,6 +1040,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
 				["g"] = {
 					i(188170),	-- Portal Initiator
+					i(190754, {	-- Firim's Specimen Container
+						["description"] = "Not Guaranteed",
+					}),
 				},
 			}),
 			q(64977, {	-- Step Into the Ring
@@ -1097,14 +1100,17 @@ root("HiddenQuestTriggers", {
 	q(65724),	-- Daily Bufonid Quest Trigger
 	q(65539),	-- Flying unlock
 	-- Would Need reconfirm
-	q(63850),	-- Triggered when enter ZM (Might be WQ). Triggered again today while running around in ZM
-	q(63766),	-- Triggered when Exploring (Might have to do with The Matriarch(183505))
-	q(65621),	-- Triggered when HS to ZM
-	--q(64880),	-- Triggered in Oribos / Triggered in Oribos after taking new Quest // Flying to Elysian Hold
+
+
+	--q(63766),	-- Triggered when Exploring (Might have to do with The Matriarch(183505))
+	--q(65621),	-- Triggered when HS to ZM
+
+	q(63850),	-- Tracking - Small Consoles
+	q(64880),	-- Unlocking Alt-Skip
+	q(65679),	-- Unlocking A Portal from Oribos to ZM
+
+
 	--q(65144),	-- Firims Cave?
-	--q(65679),	-- After Flying unlock on an alt?
-	-- Unknown
-	--q(65707) also popped Reanimatrox Marzan / when questing close to rare
 	-- Lego
 	--q(65681),	-- Druid
 
@@ -1117,10 +1123,10 @@ root("HiddenQuestTriggers", {
 	q(65341),	-- Fifth Locus arrangement at Gravid Repose
 	q(65342),	-- Ultimate Locus arrangement at Gravid Repose
 	--q(65457),	-- Unlock all?
-	-- Entering Gravid Repose First Time
-	--q(65376),
-	--q(65377),
-	--q(65464),
+
+	q(65376),	-- Entering Gravid Repose First Time
+	q(65377),	-- Entering Gravid Repose First Time
+	q(65464),	-- Entering Gravid Repose First Time
 
 	--[[ Secret Gravid Repose
 	q(65378),
@@ -1138,13 +1144,17 @@ root("HiddenQuestTriggers", {
 	q(65499),
 	q(65500),
 	--]]
+	--
 
-	--q(65706),	-- Dune Rare?
+	--q(65706),	-- Rhuv, Gorger of Ruin / Killing Iska
+	--q(65707),	-- Phalangax, the Final Grasp / Killing Marzan /Reanimatrox Marzan / when questing close to rare
 	--q(65558),	-- Edra, the Will Grazer? / Killing Damaris
 	--q(65637),	-- Triggered when killing General Zarathura <Army of the Endless>
 	--q(65631),	-- Triggered when killing Akkaris
 	--q(65629),	-- Triggered when killing Akkaris
 	--q(65626),	-- Triggered when killing Mother Phestis <Tarachnid Prime>
+
+	q(65785),	-- Triggered after the summoner of Hirukon kills them.
 
 	-- RP
 	q(65233),	-- RP after Jiro to Hero(65219)

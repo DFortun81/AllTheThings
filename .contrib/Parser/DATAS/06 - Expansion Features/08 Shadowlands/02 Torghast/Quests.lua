@@ -1010,6 +1010,8 @@ _.HiddenQuestTriggers = {
 		q(65295),	-- Layer 8 (Probably)
 		q(65278),	-- Layer 8 (Weird) Mount?
 
+		q(65298),	-- Unlocking Layer 5-8
+
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {

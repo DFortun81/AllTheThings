@@ -6,6 +6,25 @@ local i = function(itemID)
 	_.ItemToyDB[itemID] = 1;
 end
 
+-----------------------
+-- PATCH 1.11.1.5462 --
+-----------------------
+
+i(1973);	-- Orb of Deception
+i(13379);	-- Piccolo of the Flaming Fire
+i(17712);	-- Winter Veil Disguise Kit
+i(17716);	-- Snowmaster 9000
+
+
+
+
+
+
+
+
+
+
+
 i(116856);	-- "Blooming Rose" Contender's Costume
 i(116888);	-- "Night Demon" Contender's Costume
 i(116889);	-- "Purple Phantom" Contender's Costume
@@ -20,7 +39,6 @@ i(147838);	-- Akazamzarak's Spare Hat
 i(163211);	-- Akunda's Firesticks
 i(119217);	-- Alliance Flag of Victory (Alliance)
 i(119220);	-- Alliance Gladiator's Banner (Never Implemented)
-i(153204);	-- All-Seer's Eye
 i(89614);	-- Anatomical Dummy
 i(69776);	-- Ancient Amber
 i(141296);	-- Ancient Mana Basin
@@ -354,7 +372,6 @@ i(104262);	-- Odd Polished Stone
 i(118224);	-- Ogre Brewing Kit
 i(46780);	-- Ogre Pinata
 i(163795);	-- Oomgut Ritual Drum
-i(1973);	-- Orb of Deception
 i(35275);	-- Orb of the Sin'dorei
 i(45014);	-- Orgrimmar Banner (Horde)
 i(120276);	-- Outrider's Bridle Chain
@@ -374,7 +391,6 @@ i(108745);	-- Personal Hologram
 i(127864);	-- Personal Spotlight
 i(118221);	-- Petrification Stone
 i(123851);	-- Photo B.O.M.B.
-i(13379);	-- Piccolo of the Flaming Fire
 i(32566);	-- Picnic Basket
 i(147867);	-- Pilfered Sweeper
 i(116689);	-- Pineapple Lounge Cushion
@@ -407,7 +423,6 @@ i(122283);	-- Rukhmar's Sacred Memory
 i(138876);	-- Runas' Crystal Grinder
 i(82467);	-- Ruthers' Harness
 i(122674);	-- S.E.L.F.I.E. Camera MkII
-i(153253);	-- S.F.E. Interceptor
 i(128794);	-- Sack of Spectral Spiders
 i(71628);	-- Sack of Starfish
 i(92738);	-- Safari Hat
@@ -428,7 +443,6 @@ i(119421);	-- Sha'tari Defender's Medallion (Alliance)
 i(170196);	-- Shirakess Warning Sign
 i(129055);	-- Shoe Shine Kit
 i(88387);	-- Shushen's Spittoon
-i(153293);	-- Sightless Eye
 i(45017);	-- Silvermoon City Banner (Horde)
 i(116400);	-- Silver-Plated Turkey Shooter
 i(88381);	-- Silversage Incense
@@ -437,7 +451,6 @@ i(128328);	-- Skoller's Bag of Squirrel Treats
 i(143544);	-- Skull of Corruption
 i(127669);	-- Skull of the Mad Chief
 i(138415);	-- Slightly-Chewed Insult Book
-i(17716);	-- Snowmaster 9000 (Engineering)
 i(137663);	-- Soft Foam Sword
 i(184415);	-- Soothing Vesper
 i(119182);	-- Soul Evacuation Crystal (Alliance)
@@ -547,7 +560,6 @@ i(97919);	-- Whole-Body Shrinka'
 i(129938);	-- Will of Northrend
 i(45057);	-- Wind-Up Train Wrecker
 i(119212);	-- Winning Hand
-i(17712);	-- Winter Veil Disguise Kit
 i(64651);	-- Wisp Amulet
 i(141306);	-- Wisp in a Bottle
 i(163745);	-- Witherbark Gong
@@ -566,6 +578,15 @@ i(69896);	-- Yellow Balloon
 i(153180);	-- Yellow Conservatory Scroll
 i(156649);	-- Zandalari Effigy Amulet
 i(116691);	-- Zhevra Lounge Cushion
+
+
+-----------------
+-- PATCH 7.3.0 --
+-----------------
+i(153204);	-- All-Seer's Eye
+i(153293);	-- Sightless Eye
+i(153253);	-- S.F.E. Interceptor
+
 
 ---------------
 -- PATCH 8.1 --
@@ -799,6 +820,7 @@ i(187959);	-- PH - Banner of the Opportune
 i(190237);	-- Broker Translocation Matrix
 i(190853);	-- Bushel of Mysterious Fruit
 i(188952);	-- Dominated Hearthstone
+i(190754);	-- Firim's Specimen Container
 i(190926);	-- Infested Automa Core
 i(190333);	-- Jiro Circle of Song
 i(190734);	-- Makaris's Satchel of Mines
@@ -808,8 +830,7 @@ i(190457);	-- Protopological Cube
 i(190177);	-- Sphere of Enlightened Cogitation
 i(190238);	-- Xy'rath's Booby-Trapped Cache
 
--- NOT SOURCED PROPERLY --
+-- NYI --
 i(190196);	-- Enlightened Hearthstone
-i(190754);	-- Firim's Specimen Container
 -- #endif
 end)();

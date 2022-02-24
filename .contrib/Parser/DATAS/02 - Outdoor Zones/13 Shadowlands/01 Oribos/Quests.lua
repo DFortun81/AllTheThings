@@ -511,8 +511,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						["achievementID"] = 15259,	-- Secrets of the First Ones
 					}),
 					i(188041),	-- Ageless Spellblade
+					i(188040),	-- Burnished Arbalest
 					i(188043),	-- Eradicator of the Eternal Guard
+					i(188039),	-- Harmonic Actuator
 					i(188047),	-- Haven Guard's Cudgel
+					i(188038),	-- Haven Guard's Shield
+					i(188050),	-- Ineffable Spire
+					i(188049),	-- Transcendant Gavel
+					i(188048),	-- Truthseeker's Staff
 				},
 			})),
 			q(62457, {	-- The Great Vault

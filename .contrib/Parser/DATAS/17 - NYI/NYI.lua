@@ -4,57 +4,33 @@
 -- Everything in this file hasn't been implemented yet.
 
 root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
-	tier(SL_TIER, 2.0, {	-- 9.2.0
+	tier(SL_TIER, 2.0, {
 		-- Toys
 		i(190196),	-- Enlightened Hearthstone
-		i(190754),	-- Firim's Specimen Container
 		-- Pets
-		--pet(3215),
-		--pet(3218),
-		--pet(3246),
+		pet(3215),
+		pet(3246),
 		-- Mounts
 		i(187674),	-- [PH] Progenitor Jellyfish (Dark)
 		i(187644),	-- Vicious Warstalker (A)
 		i(187642),	-- Vicious Warstalker (H)
-		i(189917),	-- Constellation Master's Smock
-		-- Recipes
-		i(187847, {	-- Design: Devourer Essence Stone (RECIPE!) (Stargorger?)
-			["recipeID"] = 360317,	-- Devourer Essence Stone
-			["requireSkill"] = JEWELCRAFTING,
-		}),
-		-- Dune Rares?
+		-- Weird Weps
 		i(190124),	-- Interrogator's Vicious Dirk
 		i(190125),	-- Kris of Intricate Secrets
-		i(190108),	-- Aegis of Laughing Souls
-		i(190106),	-- Approaching Terror's Torch
-		i(190102),	-- Chains of Infectious Serrations
-		i(190105),	-- Chilling Domination Mace
-		i(190109),	-- Cudgel of Mortality's Chains
+		-- Dune Rares?
 		i(190103),	-- Pillar of Noxious Dissemination
-		i(190458),	-- Atrophy's Ominous Bulwark
-		i(190463),	-- Dismal Mystic's Glaive
-		-- From Dune Achievement?
-		i(190111),	-- Escutcheon of Beautiful Death Ach?
-		i(190110),	-- Flail of Balletic Carnage Ach?
-		i(190112),	-- Glimmering War Beacon Ach?
-		i(190462),	-- Impaler's Graceful Lance Ach?
 		-- BoE World drop?
 		i(190334),	-- Origin
 		-- Rare
 		i(189996),	-- Elegantly Balanced Axe
-		i(189961),	-- Enduring Protector's Shoulderguards (Protector?)
-		i(189993),	-- Gavel of the Twisted Judicator
-		i(189959),	-- Legs of Graceful Landing
-		i(189953),	-- Lush-Stained Footguards (Overgrowth?)
-		i(189956),	-- Perverse Champion's Handguards
+		i(189917),	-- Constellation Master's Smock
 		i(189943),	-- Greaves of Cosmic Designs
 		i(189904),	-- Meticulous Architect's Mitts
+		i(189964),	-- Multi-Faceted Belt
 		i(190057),	-- Protective Raptora's Wing-Glaive
 		i(190003),	-- Skyward Savior's Talon
 		-- Green
 		i(190374),	-- Gemstone of Prismatic Brilliance
-		i(190390),	-- Protector's Diffusion Implement
-		i(190726),	-- Extract of Prodigious Sands
 		-- Cosmetic
 		-- Cloak
 		i(190931),	-- Cape of the Regal Wanderer
@@ -68,10 +44,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(190937),	-- Edge of the Enlightened
 		i(190934),	-- Standard of the Wandering Brokers
 		i(190946),	-- Emerald-Heart Protomaul
-		i(190950),	-- Gavel of Lost Purpose
 		i(190943),	-- Jiro Tuning Hammer
 		i(190944),	-- Mace of Renewed Purpose
-		i(190948),	-- Staff of the Dormant Oracle
 		i(190949),	-- Stave of the Eternal Cycle
 
 
@@ -225,6 +199,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(188098),	-- [PH] Copy Vault Patroller's Mace
 			i(188104),	-- [PH] Copy Vault Patroller's Slicer
 			i(188099),	-- [PH] Copy Vault Patroller's Staff
+
+			i(190641),	-- Instructor's Divine Bell
+			i(184123),	-- Sinful Gladiator's Cape
+			i(184145),	-- Sinful Aspirant's Greatcloak
 		}),
 	}),
 	i(163255, {	-- 7th Legionnaire's Treads

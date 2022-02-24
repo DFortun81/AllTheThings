@@ -35,6 +35,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			i(190367),	-- Numerus Handguards
 			i(190366),	-- Numerus Sabatons
 			i(190370),	-- Numerus Shoulderplates
+			i(190344),	-- Orcaular Hood
 			i(190346),	-- Oracular Mantle
 			i(190343),	-- Oracular Mitts
 			i(190345),	-- Oracular Pantaloons
@@ -47,7 +48,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			i(190633),	-- Cypher-Etched Band
 			i(190635),	-- Cypher-Etched Lavaliere
 			i(190632),	-- Cypher-Etched Ring
-			--
+			-- Rings
+			i(188053),	-- Abandoned Automa Loop
+			i(188044),	-- Discarded Cartel Al Signet
+			i(188055),	-- Impossibly Ancient Band
+			i(188045),	-- Salvaged Viperid Band
+			-- Neck
+			i(188106),	-- Unfathomable Pendant
+			-- Trinkets
 			i(190389),	-- Broker's Lucky Coin
 		}),
 	}),

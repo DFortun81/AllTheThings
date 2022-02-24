@@ -91,7 +91,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["coord"] = { 55.7, 50, ZERETH_MORTIS },
 			}),
 			q(65411, {	-- Puzzling Situation
-				-- ["coord"] = { XX, YY, ZERETH_MORTIS },
+				["coord"] = { 35.2, 59.1, ZERETH_MORTIS },
 			}),
 			q(65403, {	-- Puzzling Situation
 				["coord"] = { 38.4, 70.4, ZERETH_MORTIS },

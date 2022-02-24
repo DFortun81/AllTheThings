@@ -707,6 +707,54 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					["questID"] = 65319,
 				}),
 			})),
+			n(VENDORS, {
+				n(185748, {	-- Mai Toa
+					["coord"] = { 58.6, 49.8, ZERETH_MORTIS },
+					["g"] = {
+						i(190880),	-- Catalyzed Apple Pie
+					},
+				}),
+				n(183962, {	-- Olea Manu
+					["description"] = "Only Available after Hanoas Questline",
+					["sourceQuests"] = { 65219 },	-- Jiro to Hero
+					["coord"] = { 37.2, 44.7, ZERETH_MORTIS },
+					["g"] = {
+						i(189986, {	-- Armadillo Soul (SOUL!)
+							["cost"] = { { "c", CYPHER, 500 }, },
+						}),
+						i(188793, {	-- Automated Cypher Analysis Tool
+							["questID"] = 65282,
+							["cost"] = { { "c", CYPHER, 150 }, },
+						}),
+						i(189980, {	-- Brutosaur Soul (SOUL!)
+							["cost"] = { { "c", CYPHER, 1000 }, },
+						}),
+						i(187824, {	-- Formula: Magically Regulated Automa Core (RECIPE!)
+							["recipeID"] = 360007,	-- Magically Regulated Automa Core
+							["requireSkill"] = ENCHANTING,
+							["cost"] = { { "c", CYPHER, 25 }, },
+						}),
+						i(190333, {	-- Jiro Circle of Song (TOY!)
+							["cost"] = { { "c", CYPHER, 100 }, },
+						}),
+						i(187781, {	-- Olea Cache
+							["cost"] = { { "c", CYPHER, 700 }, },
+							["g"] = {
+								i(190945),	-- Greatmaul of the Ancient Sentinels
+								i(190947),	-- Halo-Stave of the Oracles
+							},
+						}),
+						i(191039, {	-- Pocopoc Traveler
+							["cost"] = { { "c", CYPHER, 500 }, },
+						}),
+						i(187804, {	-- Recipe: Empty Kettle of Stone Soup (RECIPE!)
+							["recipeID"] = 359333,	-- Empty Kettle of Stone Soup
+							["requireSkill"] = COOKING,
+							["cost"] = { { "c", CYPHER, 25 }, },
+						}),
+					},
+				}),
+			}),
 		}),
 	}),
 })));
