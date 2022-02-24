@@ -12,6 +12,5 @@ root("Promotions", n(-580, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- The Gr
 
 root("NeverImplemented", filter(TOYS, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	i(187958),	-- PH - Banner of the Opportune
-	i(187957),	-- PH - Banner of the Opportune
 	i(187959),	-- PH - Banner of the Opportune
 })));
