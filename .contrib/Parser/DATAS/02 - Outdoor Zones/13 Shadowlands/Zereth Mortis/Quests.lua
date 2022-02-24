@@ -878,6 +878,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["sourceQuests"] = { 65064 },	-- Look Who I Found!
 				["provider"] = { "n", 182346 },	-- Tamra
 				["coord"] = { 49.2, 71.8, ZERETH_MORTIS },
+				["g"] = {
+					i(189479),	-- Chromatic Rosid
+				},
 			}),
 			q(65067, {	-- Broker Beaker
 				["sourceQuests"] = { 65064 },	-- Look Who I Found!
@@ -946,6 +949,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
+				["g"] = {
+					i(188697),	-- Kinematic Micro-Life Recalibrator
+				},
 			}),
 			q(65363, {	-- Dangerous State
 				["description"] = "This Daily is available after researching Altonian Understanding",

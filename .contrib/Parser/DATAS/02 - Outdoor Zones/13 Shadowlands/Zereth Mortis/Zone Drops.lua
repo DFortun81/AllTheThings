@@ -18,6 +18,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			i(189704, {	-- Dominance Key
 				["cr"] = 181403,	-- Mawsworn Inquisitor
 			}),
+			i(190198),	-- Sandworn Chest Key Fragment
+			i(190197, {	-- Sandworn Chest Key
+				["cost"] = { { "i", 190198, 5 } },	-- Sandworn Chest Key Fragment
+			}),
 			-- Cosmetic
 			i(190951, {	-- Distinguished Blade of Cartel Al
 				["cr"] = 181407,	-- Mawsworn Striker
