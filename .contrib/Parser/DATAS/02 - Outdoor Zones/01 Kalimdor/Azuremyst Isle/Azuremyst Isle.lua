@@ -631,7 +631,6 @@ _.Zones =
 					exploration(3564, "256:256:488:24"),	-- Emberglade
 					exploration(3915, "256:128:356:0"),		-- Fairbridge Strand
 					exploration(3577, "256:256:507:350"),	-- Geezle's Camp
-					exploration(3578, "0:0:0:0"),			-- Menagerie Wreckage
 					exploration(3916, "256:256:449:183"),	-- Moongraze Woods
 					exploration(3573, "256:256:352:378"),	-- Odesyus' Landing
 					exploration(3567, "256:256:281:305"),	-- Pod Cluster

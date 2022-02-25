@@ -20,12 +20,13 @@ _.Zones =
 				exploration(3858, "256:256:478:19"),	-- Razorthorn Shelf
 				exploration(3887, "128:256:316:268"),	-- Refugee Caravan
 				exploration(3893, "256:256:310:345"),	-- Ring of Observance
+				exploration(3957, { ["timeline"] = { "created 2.0.1" } }),	-- Sha'tari Outpost [NOTE: Only Crieve could complete this, using Exploration Restoration, but not reliably achievable.]
 				exploration(3888, "256:256:245:289"),	-- Shadow Tomb
 				exploration(3703, "512:512:104:4"),		-- Shattrath City
 				exploration(3679, "512:320:449:348"),	-- Skettis / Skethyl Mountains (3693) [Both of these proc'd it]
 				exploration(3683, "256:256:397:165"),	-- Stonebreaker Hold
-				exploration(3519, "0:0:0:0"),			-- Terokkar Forest [NOTE: Might have been the Shatari Base Camp that triggered this.]
-				exploration(3760, "256:256:116:4"),		-- The Barrier Hills
+				exploration(3760),		-- The Barrier Hills (Nagrand)
+				exploration(3696, "256:256:116:4"),		-- The Barrier Hills
 				exploration(3697, "128:128:0:0"),		-- The Bone Wastes
 				exploration(3675, "256:512:455:34"),	-- Tuurem
 				exploration(3889, "256:256:222:362"),	-- Veil Rhaze

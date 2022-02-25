@@ -13,7 +13,6 @@ _.Zones =
 				exploration(3874, "256:256:396:10"),		-- Eco-Dome Farfield
 				exploration(3877, "256:256:356:261"),		-- Eco-Dome Midrealm
 				exploration(3878, "256:256:481:208"),		-- Ethereum Staging Grounds
-				exploration(3740, "0:0:0:0"),				-- Forge Base: Gehenna
 				exploration(3739, "256:256:237:22"),		-- Forge Base: Oblivion
 				exploration(3868, "256:256:132:294"),		-- Gyro-Plank Bridge
 				exploration(3732, "256:145:490:523"),		-- Kirin'Var Village
