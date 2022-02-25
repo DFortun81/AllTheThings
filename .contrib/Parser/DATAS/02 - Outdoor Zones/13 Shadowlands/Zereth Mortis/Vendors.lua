@@ -2,7 +2,6 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 local SANDWORN_RELIC = 190189;
-local CYPHER = 1979;
 root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 	m(ZERETH_MORTIS, {
 		n(VENDORS, {

@@ -1094,108 +1094,111 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 	}),
 })));
 
-root("HiddenQuestTriggers", {
-	-- Misc
-	q(65531),	-- Starts pocopoc fashion
-	q(65724),	-- Daily Bufonid Quest Trigger
-	q(65539),	-- Flying unlock
-	-- Would Need reconfirm
+root("HiddenQuestTriggers", m(SHADOWLANDS, {
+	m(ZERETH_MORTIS, {
+		-- Misc
+		q(65531),	-- Starts pocopoc fashion
+		q(65724),	-- Daily Bufonid Quest Trigger
+		q(65539),	-- Flying unlock
+		q(66014),	-- random trigger after logging in on 3rd day of patch & granted to character with ZM skip
+		-- Would Need reconfirm
 
 
-	--q(63766),	-- Triggered when Exploring (Might have to do with The Matriarch(183505))
-	--q(65621),	-- Triggered when HS to ZM
+		--q(63766),	-- Triggered when Exploring (Might have to do with The Matriarch(183505))
+		--q(65621),	-- Triggered when HS to ZM
 
-	q(63850),	-- Tracking - Small Consoles
-	q(64880),	-- Unlocking Alt-Skip
-	q(65679),	-- Unlocking A Portal from Oribos to ZM
+		q(63850),	-- Tracking - Small Consoles
+		q(64880),	-- Unlocking Alt-Skip
+		q(65679),	-- Unlocking A Portal from Oribos to ZM
 
 
-	--q(65144),	-- Firims Cave?
-	-- Lego
-	--q(65681),	-- Druid
+		--q(65144),	-- Firims Cave?
+		-- Lego
+		--q(65681),	-- Druid
 
-	-- Gravid Repose
-	q(65330),	-- Interior Locus Arrangement at Gravid Repose
-	q(65337),	-- First Locus arrangement at Gravid Repose
-	q(65339),	-- Second Locus arrangement at Gravid Repose
-	q(65338),	-- Third Locus arrangement at Gravid Repose
-	q(65340),	-- Fourth Locus arrangement at Gravid Repose
-	q(65341),	-- Fifth Locus arrangement at Gravid Repose
-	q(65342),	-- Ultimate Locus arrangement at Gravid Repose
-	--q(65457),	-- Unlock all?
+		-- Gravid Repose
+		q(65330),	-- Interior Locus Arrangement at Gravid Repose
+		q(65337),	-- First Locus arrangement at Gravid Repose
+		q(65339),	-- Second Locus arrangement at Gravid Repose
+		q(65338),	-- Third Locus arrangement at Gravid Repose
+		q(65340),	-- Fourth Locus arrangement at Gravid Repose
+		q(65341),	-- Fifth Locus arrangement at Gravid Repose
+		q(65342),	-- Ultimate Locus arrangement at Gravid Repose
+		--q(65457),	-- Unlock all?
 
-	q(65376),	-- Entering Gravid Repose First Time
-	q(65377),	-- Entering Gravid Repose First Time
-	q(65464),	-- Entering Gravid Repose First Time
+		q(65376),	-- Entering Gravid Repose First Time
+		q(65377),	-- Entering Gravid Repose First Time
+		q(65464),	-- Entering Gravid Repose First Time
 
-	--[[ Secret Gravid Repose
-	q(65378),
-	q(65343),
-	q(65344),
-	q(65345),
-	q(65346),
-	q(65347),
-	-- Sand Chests
-	q(65494),
-	q(65495),
-	q(65496),
-	q(65497),
-	q(65498),
-	q(65499),
-	q(65500),
-	--]]
-	--
+		--[[ Secret Gravid Repose
+		q(65378),
+		q(65343),
+		q(65344),
+		q(65345),
+		q(65346),
+		q(65347),
+		-- Sand Chests
+		q(65494),
+		q(65495),
+		q(65496),
+		q(65497),
+		q(65498),
+		q(65499),
+		q(65500),
+		--]]
+		--
 
-	--q(65706),	-- Rhuv, Gorger of Ruin / Killing Iska
-	--q(65707),	-- Phalangax, the Final Grasp / Killing Marzan /Reanimatrox Marzan / when questing close to rare
-	--q(65558),	-- Edra, the Will Grazer? / Killing Damaris
-	--q(65637),	-- Triggered when killing General Zarathura <Army of the Endless>
-	--q(65631),	-- Triggered when killing Akkaris
-	--q(65629),	-- Triggered when killing Akkaris
-	--q(65626),	-- Triggered when killing Mother Phestis <Tarachnid Prime>
+		q(65706),	-- Rhuv, Gorger of Ruin
+		--q(65707),	-- Phalangax, the Final Grasp / Killing Marzan /Reanimatrox Marzan / when questing close to rare
+		--q(65558),	-- Edra, the Will Grazer? / Killing Damaris
+		--q(65637),	-- Triggered when killing General Zarathura <Army of the Endless>
+		--q(65631),	-- Triggered when killing Akkaris
+		--q(65629),	-- Triggered when killing Akkaris
+		--q(65626),	-- Triggered when killing Mother Phestis <Tarachnid Prime>
 
-	q(65785),	-- Triggered after the summoner of Hirukon kills them.
+		q(65785),	-- Triggered after the summoner of Hirukon kills them.
 
-	-- RP
-	q(65233),	-- RP after Jiro to Hero(65219)
-	q(65571),	-- RP after Chap 5 with Taelia
-	q(65619),	-- RP after Tahli Questline
-	q(65693),	-- RP Elder Ara 34.8, 64.8  after q(64844, {	-- The Pilgrimage Ends
-	--q(65028),	-- RP during q(64875, {	-- Something Wonderful??
+		-- RP
+		q(65233),	-- RP after Jiro to Hero(65219)
+		q(65571),	-- RP after Chap 5 with Taelia
+		q(65619),	-- RP after Tahli Questline
+		q(65693),	-- RP Elder Ara 34.8, 64.8  after q(64844, {	-- The Pilgrimage Ends
+		--q(65028),	-- RP during q(64875, {	-- Something Wonderful??
 
-	-- Treasure
-	--q(65670),	-- Syntactic Vault When clicking pillars
+		-- Treasure
+		--q(65670),	-- Syntactic Vault When clicking pillars
 
-	-- Jiro Buffs
-	q(65167),	-- Echoed Jiro Nascii(183263) with spellID(362023) Same HQTs from different Jiros (42.7 44.8) Stackable?
-	--[[
-		42.9, 31.9 (184944)
-		42.8, 44.8 (184944)
-		69.7, 33.5 (184947)
-		59.7, 37.4 (184947)
-		54.2, 83.9 (184941)
-		57.1, 61.4 (184941)
-		33.2, 54.2 (183263) (?)
-		43.8, 64.5 (183263) (?)
-	--]]
-	q(65166),	-- Echoed Jiro Genesii(184943) with SpellID(362022) 45.4 38.8
-	--[[
-		45.4, 38.8 (184943)
-		38,3б 32,2 (184943)
-		52.5, 29.0 (184946)
-		63.1, 19.5 (184946)
-		63.7, 56.1 (184940)
-		49.8, 76.5 (184940)
-		34.6, 56.4 (183262)
-		46.7, 67.5 (183262)
-	--]]
-	q(65144),	-- Echoed Jiro Creatii(184939) with SpellID(361831)  54.5 55.8
-	--[[
-		39.1, 42.6 (184492)
-		56.7, 26.1 (184945)
-		40.5, 60.8 (181571)
-		54.5, 55.8 (184939)
-		52.4, 61.6 (184939)
-		53.6, 43.8 (184945)
-	--]]
-});
+		-- Jiro Buffs
+		q(65167),	-- Echoed Jiro Nascii(183263) with spellID(362023) Same HQTs from different Jiros (42.7 44.8) Stackable?
+		--[[
+			42.9, 31.9 (184944)
+			42.8, 44.8 (184944)
+			69.7, 33.5 (184947)
+			59.7, 37.4 (184947)
+			54.2, 83.9 (184941)
+			57.1, 61.4 (184941)
+			33.2, 54.2 (183263) (?)
+			43.8, 64.5 (183263) (?)
+		--]]
+		q(65166),	-- Echoed Jiro Genesii(184943) with SpellID(362022) 45.4 38.8
+		--[[
+			45.4, 38.8 (184943)
+			38,3б 32,2 (184943)
+			52.5, 29.0 (184946)
+			63.1, 19.5 (184946)
+			63.7, 56.1 (184940)
+			49.8, 76.5 (184940)
+			34.6, 56.4 (183262)
+			46.7, 67.5 (183262)
+		--]]
+		q(65144),	-- Echoed Jiro Creatii(184939) with SpellID(361831)  54.5 55.8
+		--[[
+			39.1, 42.6 (184492)
+			56.7, 26.1 (184945)
+			40.5, 60.8 (181571)
+			54.5, 55.8 (184939)
+			52.4, 61.6 (184939)
+			53.6, 43.8 (184945)
+		--]]
+	}),
+}));

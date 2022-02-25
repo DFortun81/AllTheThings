@@ -770,3 +770,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 		}),
 	}),
 })));
+
+root("Zones", m(SHADOWLANDS, {
+	m(REVENDRETH, {
+		n(TREASURES, {
+			q(60896),	-- triggers sometimes when looting stoneborne satchels. perhaps for receiving 'Sinvyr Ore' or 'Stone Heart' quest turn in items
+		}),
+	}),
+}));

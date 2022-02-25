@@ -66,7 +66,6 @@ _.ExpansionFeatures =
 						i(188688),	-- Burnished Eye Crescent Drop from L15 FC Kosarus the Fallen(153451)
 						i(188750),	-- Burnished Mawsworn Greatsword	L15 300P	FC
 						i(188687),	-- Burnished Skull Crescent No Info.
-						i(188686),	-- Burnished Soul Restraint Drop from L16 FC Gherus the Chained(155945)
 						i(188690),	-- Corrupted Skull Crescent L14 150g AV		FC
 						i(188737),	-- Ebon Mawsworn Crossbow	L15 300P	FC/CI
 						i(188746),	-- Ebon Mawsworn Halberd No Info

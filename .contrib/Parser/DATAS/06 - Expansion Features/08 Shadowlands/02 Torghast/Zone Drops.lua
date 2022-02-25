@@ -2,8 +2,7 @@
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
 
-_.ExpansionFeatures =
-{
+root("ExpansionFeatures", {
 	tier(SL_TIER, {
 		m(1627, {	-- Torghast
 			n(176761, {	-- Adamant Vault
@@ -151,10 +150,6 @@ _.ExpansionFeatures =
 						159190,	-- Synod
 					},
 				}),
-				i(188700, {	-- Colossal Umbrahide Mawrat (MOUNT!)
-					["description"] = "Only from Layer 13 or higher",
-					["timeline"] = { "added 9.2.0" },
-				}),
 				i(183192, {	-- Frenzied Mawrat
 					["crs"] = {
 						151331,	-- Cellblock Sentinel
@@ -212,6 +207,21 @@ _.ExpansionFeatures =
 					},
 				}),
 			}),
+			-- 9.2 Additions
+			n(ZONE_DROPS, sharedData({["timeline"] = { "added 9.2.0" },},{
+				i(188686, {	-- Burnished Soul Restraint
+					["crs"] = {
+						171422,	-- Arch-Suppressor Laguas
+						155945,	-- Gherus the Chained
+					},
+				}),
+				i(188700, {	-- Sturdy Silver Mawrat Harness (MOUNT!)
+					["description"] = "Only from Layer 13 or higher",
+					["crs"] = {
+						171422,	-- Arch-Suppressor Laguas
+					},
+				}),
+			})),
 		}),
 	}),
-};
+});
