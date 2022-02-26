@@ -254,10 +254,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			}),
 		}),
 		ach(15402, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Cyphers of the First Ones
-			["description"] = "Have to research eveything in the talent tree to gain flying.",
-			["g"] = {
-				i(189455),	-- Schematic: Pale Regal Cervid
-			},
+			i(189455),	-- Schematic: Pale Regal Cervid
 		})),
 		ach(14761, {	-- Deciphering Death's Intentions
 			["description"] = "Most of the Maw Lore items can be found by killing Assassins, rares, or normal mobs.  The remaining ones drop from specific mobs, rares, or treasures that can be found throughout the Maw.",

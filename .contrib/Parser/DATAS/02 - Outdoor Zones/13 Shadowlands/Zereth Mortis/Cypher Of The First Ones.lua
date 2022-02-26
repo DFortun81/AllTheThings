@@ -45,7 +45,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				}),
 			}),
 			i(187908, {	-- Firim's Spare Forge-tap
-				["description"] = "This item are only available from Firim after completing the Daily Quest: Materials of Creation(64717).",
+				["description"] = "This item is only available from Firim after completing the Daily Quest: Materials of Creation(64717) or Hallow Efforts(64579).",
 				["questID"] = 65027,
 				["g"] = {
 					i(187891, {	-- Empyrean Essence
@@ -65,7 +65,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 						},
 					}),
 					i(187885, {	-- Honeycombed Lattice
-						["questID"] = 65011, -- NEW HQT? 65622
+						["questID"] = 65622,
 						["g"] = {
 							crit(2, {	-- Honeycombed Lattice
 								["achievementID"] = 15229,	-- Traversing the Spheres
@@ -90,7 +90,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					}),
 					i(190129, {	-- Serene Pigment
 						["description"] = "no me",
-						--["questID"] = ,
+						["questID"] = 65560,
 						["g"] = {
 							crit(10, {	-- Serene Pigment
 								["achievementID"] = 15229,	-- Traversing the Spheres
@@ -139,7 +139,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				},
 			}),
 			i(187909, {	-- Unstable Containment Trap
-				["description"] = "This item are only available from Firim after completing the Daily Quest: Overgrown Story(64785).",
+				["description"] = "This item is only available from Firim after completing the Daily Quest: Overgrown Story(64785).",
+				["questID"] = 65028,
 				["g"] = {
 					n(181352, {	-- Bitterbeak
 						["coord"] = { 41.7, 62.3, ZERETH_MORTIS },

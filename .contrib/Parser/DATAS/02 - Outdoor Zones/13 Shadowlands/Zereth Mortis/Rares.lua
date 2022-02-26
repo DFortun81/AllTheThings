@@ -5,9 +5,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 	m(ZERETH_MORTIS, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
 			n(179006, {	-- Akkaris <Annelid Prime>
-				["description"] = "Shares Daily HQT with Stargorger",
 				["coord"] = { 64.7, 33.7, ZERETH_MORTIS },
-				["questID"] = 65549,
+				["questID"] = 65552,
 				["g"] = {
 					crit(7, {	-- Akkaris <Annelid Prime>
 						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
@@ -288,7 +287,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				},
 			}),
 			n(179043, {	-- Orixal <Helicid Prime>
-				["coord"] = { 58.4, 83.1, ZERETH_MORTIS },
+				["coords"] = {
+					{ 58.4, 83.1, ZERETH_MORTIS },
+					{ 56.6, 69, ZERETH_MORTIS },
+				},
 				["questID"] = 65582,
 				["g"] = {
 					crit(11, {	-- Orixal <Gastropod/Helicid Prime>
@@ -369,7 +371,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				},
 			}),
 			n(184413, {	-- Shifting Stargorger
-				["description"] = "Shares Daily HQT with Akkaris",
 				["coord"] = { 42, 21.9, ZERETH_MORTIS },
 				["questID"] = 65549,
 				["g"] = {
@@ -398,7 +399,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(189911),	-- Sublime Fur Mantle
 					i(190582),	-- Symbol of the Vombata
 					i(187826, {	-- Formula: Cosmic Protoweave (RECIPE!)
-						["recipeID"] = 187826,	-- Cosmic Protoweave
+						["recipeID"] = 360013,	-- Cosmic Protoweave
 						["requireSkill"] = ENCHANTING,
 					}),
 				},
@@ -416,7 +417,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(189915),	-- Tahkwitz' Cloth Ribbon
 					i(189933),	-- Vigilant Raptora's Crest
 					i(187832, {	-- Schematic: Pure-Air Sail Extensions (RECIPE!)
-						["recipeID"] = 187832,
+						["recipeID"] = 360088,
 						["requireSkill"] = ENGINEERING,
 					}),
 				},

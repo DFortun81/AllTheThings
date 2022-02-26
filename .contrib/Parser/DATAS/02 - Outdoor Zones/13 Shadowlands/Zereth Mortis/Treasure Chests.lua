@@ -523,6 +523,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					{ 35.2, 43.7, ZERETH_MORTIS },
 					{ 34.3, 44.3, ZERETH_MORTIS },
 					{ 48, 66.3, ZERETH_MORTIS },
+					{ 51.8, 77.8, ZERETH_MORTIS },
 				},
 				["questID"] = 65184,
 				["repeatable"] = true,

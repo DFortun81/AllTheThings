@@ -7,7 +7,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			q(65081, {	-- An Apple A Day
 				["coord"] = { 47.9, 88.7, ZERETH_MORTIS },
 			}),
-			q(65232, {	-- Annelid-ilation
+			q(65232, {	-- Annelid-ilation (Confirmed)
 				["coord"] = { 57.2, 66.5, ZERETH_MORTIS },
 			}),
 			q(65119, {	-- Automa Ops
@@ -16,10 +16,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			q(65117, {	-- Bad Samples
 				["coord"] = { 44.1, 30.8, ZERETH_MORTIS },
 			}),
-			q(65230, {	-- Bot-Any
+			q(65230, {	-- Bot-Any (Confirmed)
 				["coord"] = { 47.4, 80.3, ZERETH_MORTIS },
 			}),
-			q(64974, {	-- Clean Up, Automa Aisle
+			q(64974, {	-- Clean Up, Automa Aisle (Confirmed)
 				["coord"] = { 57.6, 47.5, ZERETH_MORTIS },
 			}),
 			q(65244, {	-- Devourable
@@ -28,10 +28,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			q(64960, {	-- Feed the Worms
 				["coord"] = { 56.8, 31.9, ZERETH_MORTIS },
 			}),
-			q(65102, {	-- Fish Eyes
+			q(65102, {	-- Fish Eyes (Confirmed)
 				["coord"] = { 47.8, 64, ZERETH_MORTIS },
 			}),
-			q(65089, {	-- Frog'it
+			q(65089, {	-- Frog'it (Confirmed)
 				["coord"] = { 60, 68.8, ZERETH_MORTIS },
 				["sym"] = {
 					{"select","objectID",373561},	-- Forgotten Proto-Vault
@@ -43,13 +43,13 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			q(65115, {	-- Researching The Solution
 				["coord"] = { 44.6, 30.9, ZERETH_MORTIS },
 			}),
-			q(65262, {	-- Save the Vombata
+			q(65262, {	-- Save the Vombata (Confirmed)
 				["coord"] = { 43.5, 63.7, ZERETH_MORTIS },
 			}),
-			q(65252, {	-- Stomp It Now
+			q(65252, {	-- Stomp It Now (Confirmed)
 				["coord"] = { 37.9, 39.9, ZERETH_MORTIS },
 			}),
-			q(65234, {	-- Sweet On Them
+			q(65234, {	-- Sweet On Them (Confirmed)
 				["coord"] = { 63, 58, ZERETH_MORTIS },
 			}),
 		})),
@@ -63,13 +63,13 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			q(65416, {	-- Connecting It All
 				["coord"] = { 53, 45.6, ZERETH_MORTIS },
 			}),
-			q(65408, {	-- Pattern Recognition
+			q(65408, {	-- Pattern Recognition (Confirmed)
 				["coord"] = { 53.2, 86.8, ZERETH_MORTIS },
 			}),
 			q(65402, {	-- Pattern Recognition
 				["coord"] = { 32, 52.6, ZERETH_MORTIS },
 			}),
-			q(65407, {	-- Pattern Recognition
+			q(65407, {	-- Pattern Recognition (Confirmed)
 				["coord"] = { 52.4, 57.1, ZERETH_MORTIS },
 			}),
 			q(65414, {	-- Perplexing Problem

@@ -4,6 +4,11 @@
 root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 	m(ZERETH_MORTIS, {
 		n(QUESTS, {
+			n(REWARDS, {
+				i(190754, {	-- Firim's Specimen Container
+					["description"] = "Chance from Firim Dailies.",
+				}),
+			}),
 			-- Chapter 1
 			q(64945, {	-- Stangers in a Strange Land
 				["sourceQuests"] = { 64944 },	-- A Hasty Voyage
@@ -929,6 +934,67 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			}),
 		}),
 		n(QUESTS, sharedData({ ["isDaily"] = true }, {
+			-- Confirmed
+			q(65256, {	-- Cluck, Cluck, Boom
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
+				["provider"] = { "n", 177958 },	-- Firim
+				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
+				["g"] = {
+					i(188697),	-- Kinematic Micro-Life Recalibrator
+				},
+			}),
+			q(64717, {	-- Materials of Creation
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
+				["provider"] = { "n", 177958 },	-- Firim
+				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
+			}),
+			q(65072, {	-- Not Safe For Work
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
+				["provider"] = { "n", 180630 },	-- Elder Amir
+				["coord"] = { 61.4, 51.5, ZERETH_MORTIS },
+			}),
+			q(64785, {	-- Overgrown Story
+				["description"] = "Has containment trap for the achievement",
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
+				["provider"] = { "n", 177958 },	-- Firim
+				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
+			}),
+			q(65142, {	-- Portal Play
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
+				["provider"] = { "n", 177958 },	-- Firim
+				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
+				["g"] = {
+					i(188170),	-- Portal Initiator
+				},
+			}),
+			q(64852, {	-- Aeon Matrix
+				["sourceQuests"] = {
+					64579,	-- Hallow Efforts
+					64717	-- Materials of Creation
+				},
+				["provider"] = { "i", 187527 },	-- Aeon Matrix
+			}),
+			q(64861, {	-- Kismetric Disc
+				["description"] = "Starts with the item: Kismetric Circlet(187791)",
+				["sourceQuests"] = {
+					64579,	-- Hallow Efforts
+					64717	-- Materials of Creation
+				},
+				["provider"] = { "i", 187792 },	-- Kismetric Disc
+				["g"] = {
+					i(190062, {	-- Wicked Pocopoc
+						["questID"] = 65530,
+						["g"] = {
+							crit(7, {	-- Wicked Pocopoc
+								["achievementID"] = 15508,	-- Fashion of the First Ones
+							}),
+						},
+					}),
+				},
+			}),
+
+
+
 			q(65268, {	-- Bzzzzt!
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 181179 },	-- Elder Nirav
@@ -944,14 +1010,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
 				["provider"] = { "n", 180289 },	-- Mai Soh
 				["coord"] = { 58.3, 50, ZERETH_MORTIS },
-			}),
-			q(65256, {	-- Cluck, Cluck, Boom
-				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
-				["provider"] = { "n", 177958 },	-- Firim
-				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
-				["g"] = {
-					i(188697),	-- Kinematic Micro-Life Recalibrator
-				},
 			}),
 			q(65363, {	-- Dangerous State
 				["description"] = "This Daily is available after researching Altonian Understanding",
@@ -1000,11 +1058,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["provider"] = { "n", 180289 },	-- Mai Soh
 				["coord"] = { 58.3, 50, ZERETH_MORTIS },
 			}),
-			q(64717, {	-- Materials of Creation
-				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
-				["provider"] = { "n", 177958 },	-- Firim
-				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
-			}),
 			q(65325, {	-- Motes of Knowledge
 				["description"] = "This Daily is available after researching Altonian Understanding",
 				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
@@ -1022,28 +1075,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
 				["provider"] = { "n", 180289 },	-- Mai Soh
 				["coord"] = { 58.3, 50, ZERETH_MORTIS },
-			}),
-			q(65072, {	-- Not Safe For Work
-				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
-				["provider"] = { "n", 180630 },	-- Elder Amir
-				["coord"] = { 61.4, 51.5, ZERETH_MORTIS },
-			}),
-			q(64785, {	-- Overgrown Story
-				["description"] = "Has containment trap for the achievement",
-				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
-				["provider"] = { "n", 177958 },	-- Firim
-				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
-			}),
-			q(65142, {	-- Portal Play
-				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
-				["provider"] = { "n", 177958 },	-- Firim
-				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
-				["g"] = {
-					i(188170),	-- Portal Initiator
-					i(190754, {	-- Firim's Specimen Container
-						["description"] = "Not Guaranteed",
-					}),
-				},
 			}),
 			q(64977, {	-- Step Into the Ring
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
@@ -1067,28 +1098,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["coord"] = { 61.4, 51.5, ZERETH_MORTIS },
 			}),
 			-- Drop Quests
-			q(64852, {	-- Aeon Matrix
-				["sourceQuests"] = { 64579 },	-- Hallow Efforts
-				["provider"] = { "i", 187527 },	-- Aeon Matrix
-			}),
 			q(64860, {	-- Aetheric Lattice
-				["sourceQuests"] = { 64579 },	-- Hallow Efforts
-				["provider"] = { "i", 187788 },	-- Aetheric Lattice
-			}),
-			q(64861, {	-- Kismetric Disc
-				["description"] = "Starts with the item: Kismetric Circlet(187791)",
-				["sourceQuests"] = { 64579 },	-- Hallow Efforts
-				["provider"] = { "i", 187792 },	-- Kismetric Disc
-				["g"] = {
-					i(190062, {	-- Wicked Pocopoc
-						["questID"] = 65530,
-						["g"] = {
-							crit(7, {	-- Wicked Pocopoc
-								["achievementID"] = 15508,	-- Fashion of the First Ones
-							}),
-						},
-					}),
+				["sourceQuests"] = {
+					64579,	-- Hallow Efforts
+					64717	-- Materials of Creation
 				},
+				["provider"] = { "i", 187788 },	-- Aetheric Lattice
 			}),
 		})),
 	}),
@@ -1100,7 +1115,7 @@ root("HiddenQuestTriggers", m(SHADOWLANDS, {
 		q(65531),	-- Starts pocopoc fashion
 		q(65724),	-- Daily Bufonid Quest Trigger
 		q(65539),	-- Flying unlock
-		q(66014),	-- random trigger after logging in on 3rd day of patch & granted to character with ZM skip
+		q(66014),	-- random trigger after logging in on 3rd day of patch & granted to character with ZM skip / Might have to with enchancement unlock?
 		-- Would Need reconfirm
 
 
@@ -1148,9 +1163,11 @@ root("HiddenQuestTriggers", m(SHADOWLANDS, {
 		--]]
 		--
 
-		q(65706),	-- Rhuv, Gorger of Ruin
-		--q(65707),	-- Phalangax, the Final Grasp / Killing Marzan /Reanimatrox Marzan / when questing close to rare
-		--q(65558),	-- Edra, the Will Grazer? / Killing Damaris
+		q(65706),	-- Triggered when killing Rhuv, Gorger of Ruin
+		q(65707),	-- Triggered when killing Phalangax, the Final Grasp
+		q(65558),	-- Triggered when killing Edra, the Will Grazer
+
+
 		--q(65637),	-- Triggered when killing General Zarathura <Army of the Endless>
 		--q(65631),	-- Triggered when killing Akkaris
 		--q(65629),	-- Triggered when killing Akkaris
@@ -1163,10 +1180,11 @@ root("HiddenQuestTriggers", m(SHADOWLANDS, {
 		q(65571),	-- RP after Chap 5 with Taelia
 		q(65619),	-- RP after Tahli Questline
 		q(65693),	-- RP Elder Ara 34.8, 64.8  after q(64844, {	-- The Pilgrimage Ends
-		--q(65028),	-- RP during q(64875, {	-- Something Wonderful??
 
 		-- Treasure
 		--q(65670),	-- Syntactic Vault When clicking pillars
+
+		--q(65011),	 Old HQT for i(187885, {	-- Honeycombed Lattice
 
 		-- Jiro Buffs
 		q(65167),	-- Echoed Jiro Nascii(183263) with spellID(362023) Same HQTs from different Jiros (42.7 44.8) Stackable?
