@@ -256,6 +256,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					["provider"] = { "i", 189466 },	-- Schematic: Tarachnid Creeper
 					["coord"] = { 62.9, 22, ZERETH_MORTIS },
 				}),
+				q(65386	, {	-- Schematic Reassimilation: Unsuccessful Prototype Fleetpod
+					["sourceQuests"] = { 65427 },	-- A New Architect
+					["provider"] = { "i", 189463 },	-- Schematic: Unsuccessful Prototype Fleetpod
+					--["coord"] = { , , ZERETH_MORTIS },
+				}),
 				q(65395, {	-- Schematic Reassimilation: Vespoid Flutterer
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189472 },	-- Schematic: Vespoid Flutterer
@@ -280,11 +285,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				q(65384	, {	-- Schematic Reassimilation: Serenade
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189461 },	-- Schematic: Serenade
-					["coord"] = { , , ZERETH_MORTIS },
-				}),
-				q(65386	, {	-- Schematic Reassimilation: Unsuccessful Prototype Fleetpod
-					["sourceQuests"] = { 65427 },	-- A New Architect
-					["provider"] = { "i", 189463 },	-- Schematic: Unsuccessful Prototype Fleetpod
 					["coord"] = { , , ZERETH_MORTIS },
 				}),
 				--]]
@@ -343,7 +343,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					["description"] = "On top of the tree circle.",
 					["coord"] = { 58.3, 74.3, ZERETH_MORTIS },
 					["g"] = {
-						i(189440),	-- Schematic: Omnipotential Core
 						i(189444),	-- Schematic: Leaping Leporid
 					},
 				}),
@@ -428,6 +427,20 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					["coord"] = { 28.1, 50, ZERETH_MORTIS },
 					["g"] = {
 						i(189445),	-- Schematic: Microlicid
+					},
+				}),
+				o(375270, {	-- Protoform Schematic
+					["description"] = "Requires Aealic Understanding and Chapter 6. Rondure Locus Arrangement is found at 50.5, 27.6 Close to Tertius Locus. Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
+					-- ["coord"] = { 28.1, 50, ZERETH_MORTIS },
+					["g"] = {
+						i(189440),	-- Schematic: Omnipotential Core
+					},
+				}),
+				o(375746, {	-- Protoform Schematic
+					["description"] = "Requires Sopranian Understanding and Chapter 6. Camber Locus Arrangement is found at 47.7 34.5, on the back side of the Vessel's room. (accessible from flying or via the Ultimus Locus). Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.\n\nSuccefully completing this minigame will reward a schematic.",
+					-- ["coord"] = { 28.1, 50, ZERETH_MORTIS },
+					["g"] = {
+						i(189463),	-- Schematic: Unsuccessful Prototype Fleetpod
 					},
 				}),
 			}),

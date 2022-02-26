@@ -146,6 +146,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 							{"select", "itemID",
 								190389,	-- Broker's Lucky Coin
 								190726,	-- Extract of Prodigious Sands
+								190374,	-- Gemstone of Prismatic Brilliance
 								190390,	-- Protector's Diffusion Implement
 								190597,	-- Symbol of the Lupine
 								190602,	-- Symbol of the Raptora
@@ -271,7 +272,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 								188047,	-- Haven Guard's Cudgel
 								188046,	-- Haven Guard's Mace
 								188038,	-- Haven Guard's Shield
-								188055,	-- Impossibly Ancient Band
 								188050,	-- Ineffable Spire
 								188049,	-- Transcendant Gavel
 								188048,	-- Truthseeker's Staff

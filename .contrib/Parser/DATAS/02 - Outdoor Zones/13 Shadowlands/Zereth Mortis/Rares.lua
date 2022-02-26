@@ -127,6 +127,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					}),
 					i(190731),	-- Deceiver's Illusionary Signet
 					i(189968),	-- Dreadlord General's Tunic
+					i(190125),	-- Kris of Intricate Secrets
 					i(189948),	-- Strangulating Chainlink Lasso
 				},
 			}),
@@ -268,6 +269,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(190765),	-- Iska's Mawrat Leash (MOUNT!)
 					i(190458),	-- Atrophy's Omnious Bulwark
 					i(190102),	-- Chains of Infectious Serrations
+					i(190103),	-- Pillar of Noxious Dissemination
 					i(190126),	-- Rotculler's Encroaching Shears
 					i(190107),	-- Staff of Broken Coils
 				},
@@ -410,6 +412,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
 					}),
 					i(189954),	-- Lustrous Sentinel's Sabatons
+					i(190003),	-- Skyward Savior's Talon
 					i(189915),	-- Tahkwitz' Cloth Ribbon
 					i(189933),	-- Vigilant Raptora's Crest
 					i(187832, {	-- Schematic: Pure-Air Sail Extensions (RECIPE!)
@@ -489,6 +492,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					}),
 					i(190050),	-- Famished Broker's Ripper
 					i(189918),	-- Fleeting Broker's Strides
+					i(189964),	-- Multi-Faceted Belt
 					i(190238, {	-- Xy'rath's Booby-Trapped Cache (TOY!)
 						o(375536, {	-- Xy'rath's Booby-Trapped Cache
 							i(190242),	-- Red Velvet Delicacy

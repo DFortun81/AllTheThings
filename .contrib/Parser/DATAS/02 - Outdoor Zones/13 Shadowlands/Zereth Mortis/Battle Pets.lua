@@ -25,6 +25,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			pet(3209, {	-- King Viperid
 				["cr"] = 182760,
 			}),
+			pet(3215, {	-- Mawtouched Geomental
+				["description"] = "Requires to eat a Questionable Mawshroom from Korthia to see.",
+				["cr"] = 183231,
+			}),
 			pet(3205, {	-- Metallic Scarabid
 				["cr"] = 182568,
 			}),

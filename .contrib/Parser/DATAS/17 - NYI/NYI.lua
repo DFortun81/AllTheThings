@@ -8,17 +8,13 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		-- Toys
 		i(190196),	-- Enlightened Hearthstone
 		-- Pets
-		pet(3215),
-		pet(3246),
+		pet(3246),	-- Tezpet
 		-- Mounts
 		i(187674),	-- [PH] Progenitor Jellyfish (Dark)
 		i(187644),	-- Vicious Warstalker (A)
 		i(187642),	-- Vicious Warstalker (H)
-		-- Weird Weps
-		i(190124),	-- Interrogator's Vicious Dirk
-		i(190125),	-- Kris of Intricate Secrets
 		-- Dune Rares?
-		i(190103),	-- Pillar of Noxious Dissemination
+		i(190124),	-- Interrogator's Vicious Dirk
 		-- BoE World drop?
 		i(190334),	-- Origin
 		-- Rare
@@ -26,11 +22,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(189917),	-- Constellation Master's Smock
 		i(189943),	-- Greaves of Cosmic Designs
 		i(189904),	-- Meticulous Architect's Mitts
-		i(189964),	-- Multi-Faceted Belt
 		i(190057),	-- Protective Raptora's Wing-Glaive
-		i(190003),	-- Skyward Savior's Talon
-		-- Green
-		i(190374),	-- Gemstone of Prismatic Brilliance
 		-- Cosmetic
 		-- Cloak
 		i(190931),	-- Cape of the Regal Wanderer
@@ -232,12 +224,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	}),
 	n(ARMOR, {
 		filter(CLOTH, {
-			cl(MAGE, {
-			}),
-			cl(PRIEST, {
-			}),
-			cl(WARLOCK, {
-			}),
 			-- Load in Game
 			-- Vanilla
 			i(1216),	-- Frost Bracers
@@ -415,8 +401,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(153289),	-- Eredar Priestess' Tunic
 		}),
 		filter(LEATHER, {
-			cl(DRUID, {
-			}),
 			cl(ROGUE, {
 				i(7950),	-- Armor of Thero-Shan
 				i(7948),	-- Girdle of Thero-Shan
@@ -655,10 +639,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(178305),	-- unused
 		}),
 		filter(MAIL, {
-			cl(SHAMAN, {
-			}),
-			cl(HUNTER, {
-			}),
 			-- Load in GAME
 			-- Vanilla
 			i(18320),	-- Demonheart Spaulders
@@ -834,12 +814,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(68844),	-- Unknown
 		}),
 		filter(PLATE, {
-			cl(DEATHKNIGHT, {
-			}),
-			cl(PALADIN, {
-			}),
-			cl(WARRIOR, {
-			}),
 			-- Load In Game
 			-- TBC
 			i(25797),	-- Crushing Grasp Says (added in cata wowhead)
