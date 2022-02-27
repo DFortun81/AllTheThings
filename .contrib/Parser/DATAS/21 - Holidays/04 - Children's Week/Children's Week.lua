@@ -102,36 +102,28 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 			}),
 			ach(1792),	-- Aw, Isn't It Cute?
 			ach(1788, {	-- Bad Example
-				{	-- Dalaran Brownie
-					["achievementID"] = 1788,	-- Bad Example
-					["criteriaID"] = 6,	-- Dalaran Brownie
+				crit(6, {	-- Dalaran Brownie
 					["cost"] = { { "i", 42431, 1 } },	-- Dalaran Brownie
 					["maps"] = {
 						NORTHREND_DALARAN,
 						LEGION_DALARAN,
 					},
-				},
-				{	-- Dalaran Doughnut
-					["achievementID"] = 1788,	-- Bad Example
-					["criteriaID"] = 7,	-- Dalaran Doughnut
+				}),
+				crit(7, {	-- Dalaran Doughnut
 					["cost"] = { { "i", 42430, 1 } },	-- Dalaran Doughnut
 					["maps"] = {
 						NORTHREND_DALARAN,
 						LEGION_DALARAN,
 					},
-				},
-				{	-- Delicious Chocolate Cake
-					["achievementID"] = 1788,	-- Bad Example
-					["criteriaID"] = 4,	-- Delicious Chocolate Cake
+				}),
+				crit(4, {	-- Delicious Chocolate Cake
 					["cost"] = { { "i", 33924, 1 } },	-- Delicious Chocolate Cake
 					["maps"] = {
 						NORTHREND_DALARAN,
 						LEGION_DALARAN,
 					},
-				},
-				{	-- Lovely Cake Slice
-					["achievementID"] = 1788,	-- Bad Example
-					["criteriaID"] = 5,	-- Lovely Cake Slice
+				}),
+				crit(5, {	-- Lovely Cake Slice
 					["cost"] = { { "i", 42438, 1 } },	-- Lovely Cake
 					["cr"] = 64099,	-- Pink Peony [TODO: Remove, add vendor to zone]
 					["coord"] = { 46.88, 34.02, 393 },	-- Pink Peony [Shrine of Seven Stars]
@@ -139,10 +131,8 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 						NORTHREND_DALARAN,
 						LEGION_DALARAN,
 					},
-				},
-				{	-- Red Velvet Cupcake
-					["achievementID"] = 1788,	-- Bad Example
-					["criteriaID"] = 3,	-- Red Velvet Cupcake
+				}),
+				crit(3, {	-- Red Velvet Cupcake
 					["cost"] = { { "i", 42429, 1 } },	-- Red Velvet Cupcake
 					["cr"] = 64099,	-- Pink Peony [TODO: Remove, add vendor to zone]
 					["coord"] = { 46.88, 34.02, 393 },	-- Pink Peony [Shrine of Seven Stars]
@@ -150,15 +140,11 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 						NORTHREND_DALARAN,
 						LEGION_DALARAN,
 					},
-				},
-				{	-- Tasty Cupcake
-					["achievementID"] = 1788,	-- Bad Example
-					["criteriaID"] = 2,	-- Tasty Cupcake
+				}),
+				crit(2, {	-- Tasty Cupcake
 					["cost"] = { { "i", 43490, 1 } },	-- Tasty Cupcake
-				},
-				{	-- Tigule's Strawberry Ice Cream
-					["achievementID"] = 1788,	-- Bad Example
-					["criteriaID"] = 1,	-- Tigule's Strawberry Ice Cream
+				}),
+				crit(1, {	-- Tigule's Strawberry Ice Cream
 					["cost"] = { { "i", 7228, 1 } },	-- Tigule's Strawberry Ice Cream
 					["crs"] = { -- TODO: Remove, add vendors to zones
 						-- Katrina Shimmerstar & Rachelle Gothena are listed on WoWHead, but only appear during Hallow's End.
@@ -181,7 +167,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 						STORMWIND_CITY,
 						86,	-- Orgrimmar
 					},
-				},
+				}),
 			}),
 			ach(1789),	-- Daily Chores
 			ach(1790, {	-- Hail To The King, Baby
@@ -192,9 +178,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 			}),
 			ach(1791),	-- Home Alone
 			ach(1786, {	-- School of Hard Knocks
-				{	-- Assault a flag in Arathi Basin
-					["achievementID"] = 1786,	-- School of Hard Knocks
-					["criteriaID"] = 3,	-- Assault a flag in Arathi Basin
+				crit(3, {	-- Assault a flag in Arathi Basin
 					["maps"] = {
 						ARATHI_BASIN,
 						837,	-- Arathi Basin
@@ -202,49 +186,37 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 						1383,	-- Arathi Basin
 						1366,	-- Arathi Basin
 					},
-				},
-				{	-- Assault a tower in Alterac Valley
-					["achievementID"] = 1786,	-- School of Hard Knocks
-					["criteriaID"] = 2,	-- Assault a tower in Alterac Valley
+				}),
+				crit(2, {	-- Assault a tower in Alterac Valley
 					["maps"] = {
 						ALTERAC_VALLEY,
 					},
-				},
-				{	-- Capture the flag in Eye of the Storm
-					["achievementID"] = 1786,	-- School of Hard Knocks
-					["criteriaID"] = 1,	-- Capture the flag in Eye of the Storm
+				}),
+				crit(1, {	-- Capture the flag in Eye of the Storm
 					["maps"] = {
 						EYE_OF_THE_STORM,
 					},
-				},
-				{	-- Return a fallen flag in Warsong Gulch
-					["achievementID"] = 1786,	-- School of Hard Knocks
-					["criteriaID"] = 4,	-- Return a fallen flag in Warsong Gulch
+				}),
+				crit(4, {	-- Return a fallen flag in Warsong Gulch
 					["maps"] = {
 						WARSONG_GULCH,
 						859,	-- Warsong Gulch
 						1339,	-- Warsong Gulch
 					},
-				},
+				}),
 			}),
 			ach(275, {	-- Veteran Nanny
 				["maps"] = { SHATTRATH_CITY },
 				["groups"] = {
-					{	-- Egbert
-						["achievementID"] = 275,	-- Veteran Nanny
-						["criteriaID"] = 3,	-- Egbert
+					crit(3, {	-- Egbert
 						["cost"] = { { "i", 32616, 1 } },	-- Egbert's Egg
-					},
-					{	-- Peanut
-						["achievementID"] = 275,	-- Veteran Nanny
-						["criteriaID"] = 1,	-- Peanut
+					}),
+					crit(1, {	-- Peanut
 						["cost"] = { { "i", 32622, 1 } },	-- Elekk Training Collar
-					},
-					{	-- Willy
-						["achievementID"] = 275,	-- Veteran Nanny
-						["criteriaID"] = 2,	-- Willy
+					}),
+					crit(2, {	-- Willy
 						["cost"] = { { "i", 32617, 1 } },	-- Sleepy Willy
-					},
+					}),
 				},
 			}),
 		}),
