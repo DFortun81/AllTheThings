@@ -1207,7 +1207,7 @@ _.HiddenQuestTriggers = {
 		q(42648),	-- triggered after getting Extra Thick Mojo in Durotar when on the Legion intro quest To Be Prepared
 		q(45341),	-- After obtaining the Chef's Hat toy
 		q(47285),	-- Triggers together with obtaining Equipment Blueprint: Tuskarr Fishing Net
-		
+
 		-- Artifact Power questlines
 		q(45851),	-- Dual Boss Trait Complete - triggered after bm hunter artifact power questline
 		q(45852),	-- Healer Trait Complete - triggered after resto shaman / holy pal artifact power questlines
@@ -2471,6 +2471,7 @@ _.HiddenQuestTriggers = {
 		]]--
 
 		-- N'Zoth assaults
+		-- TODO: would be nice to have these slowly migrated to actual treasure objects like other zone objects
 		q(55689),	-- Uldum - Amathet cache
 		q(55690),	-- Uldum - Amathet cache
 		q(55691),	-- Uldum - Amathet cache

@@ -30,6 +30,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			}),
 			q(65102, {	-- Fish Eyes (Confirmed)
 				["coord"] = { 47.8, 64, ZERETH_MORTIS },
+				["g"] = {
+					i(187999),	-- Fishing Portal
+				},
 			}),
 			q(65089, {	-- Frog'it (Confirmed)
 				["coord"] = { 60, 68.8, ZERETH_MORTIS },

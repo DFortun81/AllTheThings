@@ -473,6 +473,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					185265,	-- Pulp-Covered Relic
 				},
 				["questID"] = 65501,
+				["isDaily"] = true,
 				["coords"] = {
 					{ 42, 34.2, ZERETH_MORTIS },
 					{ 53.4, 25.8, ZERETH_MORTIS },

@@ -1182,7 +1182,7 @@ root("HiddenQuestTriggers", m(SHADOWLANDS, {
 		q(65693),	-- RP Elder Ara 34.8, 64.8  after q(64844, {	-- The Pilgrimage Ends
 
 		-- Treasure
-		--q(65670),	-- Syntactic Vault When clicking pillars
+		q(65670),	-- Syntactic Vault When unlocking the box
 
 		--q(65011),	 Old HQT for i(187885, {	-- Honeycombed Lattice
 

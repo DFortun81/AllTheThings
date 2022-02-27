@@ -27,7 +27,7 @@ root("ExpansionFeatures", {
 					},
 				}),
 			}),
-			n(ZONE_DROPS, {
+			n(COMMON_BOSS_DROPS, {
 			--	Epics
 				i(187096, {	-- Adamant Vault Shoulderplates
 					["crs"] = {
@@ -45,6 +45,7 @@ root("ExpansionFeatures", {
 				i(187030, {	-- Deathsworn Shoulderguards
 					["crs"] = {
 						151329,	-- Warden Skoldus
+						153174,	-- Watchers of Death
 					},
 				}),
 				i(187039, {	-- Malleare's Stygian Pauldrons
@@ -208,7 +209,12 @@ root("ExpansionFeatures", {
 				}),
 			}),
 			-- 9.2 Additions
-			n(ZONE_DROPS, sharedData({["timeline"] = { "added 9.2.0" },},{
+			n(COMMON_BOSS_DROPS, sharedData({["timeline"] = { "added 9.2.0" },},{
+				i(188687, {	-- Burnished Skull Crescent
+					["crs"] = {
+						153382,	-- Maw of the Maw
+					},
+				}),
 				i(188686, {	-- Burnished Soul Restraint
 					["crs"] = {
 						171422,	-- Arch-Suppressor Laguas

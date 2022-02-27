@@ -481,10 +481,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(186613, {	-- Rhovus' Linked Greaves
 						["timeline"] = { "added 9.1.0.38312" },
 					}),
-					i(185473, {	-- Soulforger's Tools
-						["description"] = "Used for the |cFFb19cd9Bound Shadehound|r secret mount. Only available to characters who have collected the |cFFa335eeIntact Rune Codex|r.",
-						["questID"] = 63667,
-					}),
 					i(183141),	-- Stygic Magma
 				},
 			}),
