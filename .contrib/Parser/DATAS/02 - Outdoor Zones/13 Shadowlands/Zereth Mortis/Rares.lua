@@ -115,6 +115,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(189937),	-- Garudeon's Blanket of Feathers
 					i(189951),	-- Sunbathed Avian Armor
 					i(190602),	-- Symbol of the Raptora
+					i(190057),	-- Protective Raptora's Wing-Glaive
 				},
 			}),
 			n(182318, {	-- General Zarathura <Army of the Endless>
