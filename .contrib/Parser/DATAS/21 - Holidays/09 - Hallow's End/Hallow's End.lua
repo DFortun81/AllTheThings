@@ -389,17 +389,23 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 	["groups"] = {
 		n(ACHIEVEMENTS, {
 			ach(1656, {	-- Hallowed Be Thy Name
-				--[[
+				-- Meta Achievement should symlink the contained Achievements from Source
 				["sym"] = {
-					-- #if ANYCLASSIC
-					{ "select", "headerID", -58 },	-- Select the header for this section.
-					-- #else
-					{ "select", "holidayID", 235462 },
-					-- #endif
-					{ "pop" },	-- Pop out the children.
-					{ "where", "headerID", ACHIEVEMENTS },	-- Select the achievement header.
+					{"select","achievementID",
+						972,				-- Trick or Treat!
+						288,				-- Out With It
+						255,				-- Bring Me The Head of... Oh Wait
+						289,				-- The Savior of Hallow's End
+						981,				-- That Sparkling Smile
+						1040,				-- Rotten Hallow (A)
+						1041,				-- Rotten Hallow (H)
+						1261,				-- G.N.E.R.D. Rage
+						291,				-- Check Your Head
+						283,				-- The Masquerade
+						292,				-- Sinister Calling
+						971,				-- Tricks and Treats of Azeroth
+					},
 				},
-				]]--
 				["groups"] = {
 					title(92),	-- %s the Hallowed
 				},

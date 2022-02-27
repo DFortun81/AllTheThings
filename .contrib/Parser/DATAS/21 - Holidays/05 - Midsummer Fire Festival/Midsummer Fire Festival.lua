@@ -341,334 +341,391 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 		}),
 		-- #if AFTER WRATH
 		n(ACHIEVEMENTS, {
-			ach(1038, bubbleDown({["races"] = ALLIANCE_ONLY},{	-- The Flame Warden
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
-					title(44),	-- Flame Warden
-					ach(1034, {	-- The Fires of Azeroth
-						ach(1022,  {	-- Flame Warden of Eastern Kingdoms
-							crit(1,  {	-- Arathi Highlands
-								["coord"] = { 44.3, 45.8, ARATHI_HIGHLANDS },
-							}),
-							crit(2,  {	-- Badlands
-								["coord"] = { 18.9, 56.1, BADLANDS },
-							}),
-							crit(3,  {	-- Blasted Lands
-								["coord"] = { 55.5, 15.0, BLASTED_LANDS },
-							}),
-							crit(4,  {	-- Burning Steppes
-								["coord"] = { 68.2, 60.6, BURNING_STEPPES },
-							}),
-							crit(5,  {	-- Dun Morogh
-								["coord"] = { 53.8, 45.2, DUN_MOROGH },
-							}),
-							crit(6,  {	-- Duskwood
-								["coord"] = { 73.8, 54.7, DUSKWOOD },
-							}),
-							crit(7,  {	-- Elwynn Forest
-								["coord"] = { 43.5, 62.7, ELWYNN_FOREST },
-							}),
-							crit(8,  {	-- Loch Modan
-								["coord"] = { 32.3, 41.0, LOCH_MODAN },
-							}),
-							crit(9,  {	-- Northern Stranglethorn
-								["coord"] = { 52.0, 63.6, NORTHERN_STRANGLETHORN },
-							}),
-							crit(10, {	-- Redridge Mountains
-								["coord"] = { 25.0, 53.5, REDRIDGE_MOUNTAINS },
-							}),
-							crit(11, {	-- Swamp of Sorrows
-								["coord"] = { 70.1, 15.4, SWAMP_OF_SORROWS },
-							}),
-							crit(12, {	-- The Cape of Stranglethorn
-								["coord"] = { 51.9, 67.8, THE_CAPE_OF_STRANGLETHORN },
-							}),
-							crit(13, {	-- The Hinterlands
-								["coord"] = { 14.4, 50.2, THE_HINTERLANDS },
-							}),
-							crit(14, {	-- Western Plaguelands
-								["coord"] = { 43.5, 82.2, WESTERN_PLAGUELANDS },
-							}),
-							crit(15, {	-- Westfall
-								["coord"] = { 44.6, 62.1, WESTFALL },
-							}),
-							crit(16, {	-- Wetlands
-								["coord"] = { 13.5, 47.1, WETLANDS },
-							}),
-						}),
-						ach(1023,  {	-- Flame Warden of Kalimdor
-							crit(1,  {	-- Ashenvale
-								["coord"] = { 13.0, 47.0, ASHENVALE },
-							}),
-							crit(2,  {	-- Azuremyst Isle
-								["coord"] = { 44.0, 53.0, AZUREMYST_ISLE },
-							}),
-							crit(3,  {	-- Bloodmyst Isle
-								["coord"] = { 55.0, 69.0, BLOODMYST_ISLE },
-							}),
-							crit(4,  {	-- Darkshore
-								["coord"] = { 49.0, 23.0, DARKSHORE },
-							}),
-							crit(5,  {	-- Desolace
-								["coord"] = { 65.0, 17.0, DESOLACE },
-							}),
-							crit(6,  {	-- Dustwallow Marsh
-								["coord"] = { 62.0, 40.0, DUSTWALLOW_MARSH },
-							}),
-							crit(7,  {	-- Feralas
-								["coord"] = { 47.0, 44.0, FERALAS },
-							}),
-							crit(8,  {	-- Silithus
-								["coord"] = { 60.0, 33.0, SILITHUS },
-							}),
-							crit(9,  {	-- Southern Barrens
-								["coord"] = { 48.0, 72.0, SOUTHERN_BARRENS },
-							}),
-							crit(10, {	-- Stonetalon Mountains
-								["coord"] = { 49.0, 51.0, STONETALON_MOUNTAINS },
-							}),
-							crit(11, {	-- Tanaris
-								["coord"] = { 52.0, 29.0, TANARIS },
-							}),
-							crit(12, {	-- Teldrassil
-								["coord"] = { 54.8, 52.9, TELDRASSIL },
-							}),
-							crit(13, {	-- Un'goro Crater
-								["coord"] = { 60.0, 63.0, UNGORO_CRATER },
-							}),
-							crit(14, {	-- Winterspring
-								["coord"] = { 62.0, 35.0, WINTERSPRING },
-							}),
-						}),
-						ach(1024,  {	-- Flame Warden of Outland
-							crit(1, {	-- Blade's Edge Mountains
-								["coord"] = { 42.0, 66.0, BLADES_EDGE_MOUNTAINS },
-							}),
-							crit(2, {	-- Hellfire Peninsula
-								["coord"] = { 62.0, 58.0, HELLFIRE_PENINSULA },
-							}),
-							crit(3, {	-- Nagrand
-								["coord"] = { 51.0, 34.0, NAGRAND },
-							}),
-							crit(4, {	-- Netherstorm
-								["coord"] = { 31.0, 63.0, NETHERSTORM },
-							}),
-							crit(5, {	-- Shadowmoon Valley
-								["coord"] = { 40.0, 55.0, SHADOWMOON_VALLEY },
-							}),
-							crit(6, {	-- Terokkar Forest
-								["coord"] = { 55.0, 55.0, TEROKKAR_FOREST },
-							}),
-							crit(7, {	-- Zangarmarsh
-								["coord"] = { 69.0, 52.0, ZANGARMARSH },
-							}),
-						}),
-						ach(6008,  {	-- Flame Warden of Northrend
-							crit(1, {	-- Dragonblight
-								["coord"] = { 75.0, 44.0, DRAGONBLIGHT },
-							}),
-							crit(2, {	-- Crystalsong Forest
-								["coord"] = { 78.0, 75.0, CRYSTALSONG_FOREST },
-							}),
-							crit(3, {	-- Howling Fjord
-								["coord"] = { 58.0, 16.0, HOWLING_FJORD },
-							}),
-							crit(4, {	-- Sholazar Basin
-								["coord"] = { 47.0, 66.0, SHOLAZAR_BASIN },
-							}),
-							crit(5, {	-- Storm Peaks
-								["coord"] = { 42.0, 87.0, THE_STORM_PEAKS },
-							}),
-							crit(6, {	-- Zul'Drak
-								["coord"] = { 41.0, 61.0, ZULDRAK },
-							}),
-							crit(7, {	-- Grizzly Hills
-								["coord"] = { 34.0, 61.0, GRIZZLY_HILLS },
-							}),
-							crit(8, {	-- Borean Tundra
-								["coord"] = { 55.0, 20.0, BOREAN_TUNDRA },
-							}),
-						}),
-						ach(6011,  {	-- Flame Warden of Cataclysm
-							crit(1, {	-- Uldum
-								["coord"] = { 53.0, 32.0, ULDUM },
-							}),
-							crit(2, {	-- Deepholm
-								["coord"] = { 49.4, 51.4, 207 },
-							}),
-							crit(3, {	-- Twilight Highlands
-								["coord"] = { 47.2, 29.0, TWILIGHT_HIGHLANDS },
-							}),
-							crit(4, {	-- Vashj'ir
-								["coord"] = { 49.4, 42.0, 205 },	-- Shimmering Expanse
-							}),
-							crit(5, {	-- Hyjal
-								["coord"] = { 62.8, 22.6, MOUNT_HYJAL },
-							}),
-						}),
+			n(FACTION_HEADER_ALLIANCE, bubbleDown({ ["races"] = ALLIANCE_ONLY }, {
+				ach(1038, {		-- The Flame Warden (Alliance)
+					-- Meta Achievement should symlink the contained Achievements from Source
+					["sym"] = {
+						{"select","achievementID",
+							1034,				-- The Fires of Azeroth (A)
+							1035,				-- Desecration of the Horde (A)
+							263,				-- Ice the Frost Lord
+							271,				-- Burning Hot Pole Dance
+							1145,				-- King of the Fire Festival
+							272,				-- Torch Juggler
+						},
+					},
+					["groups"] = {
+						title(44),				-- Flame Warden
+					},
+				}),
+				
+				ach(1035, {		-- Desecration of the Horde (A)
+					["sym"] = {
+						{"select","achievementID",
+							1028,	-- Extinguishing Eastern Kingdoms (A)
+							1029,	-- Extinguishing Kalimdor (A)
+							1030,	-- Extinguishing Outland (A)
+							6007,	-- Extinguishing Northrend (A)
+							6013,	-- Extinguishing the Cataclysm (A)
+						},
+					},
+				}),
+				
+				ach(11276, {	-- Extinguishing Draenor (A)
+					["coord"] = { 72.8, 65.2, FROSTFIRE_RIDGE },
+				}),
+				ach(1028, {		-- Extinguishing Eastern Kingdoms (A)
+					crit(1,  {	-- Arathi Highlands
+						["coord"] = { 69.0, 43.1, ARATHI_HIGHLANDS },
 					}),
-					ach(1035, {	-- Desecration of the Horde
-						ach(1028, {	-- Extinguishing Eastern Kingdoms
-							crit(1,  {	-- Arathi Highlands
-								["coord"] = { 69.0, 43.1, ARATHI_HIGHLANDS },
-							}),
-							crit(2,  {	-- Badlands
-								["coord"] = { 24.1, 37.3, BADLANDS },
-							}),
-							crit(3,  {	-- Blasted Lands
-								["coord"] = { 46.3, 14.4, BLASTED_LANDS },
-							}),
-							crit(4,  {	-- Burning Steppes
-								["coord"] = { 51.5, 29.3, BURNING_STEPPES },
-							}),
-							crit(5,  {	-- Eversong Woods
-								["coord"] = { 46.3, 50.3, EVERSONG_WOODS },
-							}),
-							crit(6,  {	-- Ghostlands
-								["coord"] = { 47.0, 25.9, GHOSTLANDS },
-							}),
-							crit(7,  {	-- Hillsbrad Foothills
-								["coord"] = { 54.5, 50.1, HILLSBRAD_FOOTHILLS },
-							}),
-							crit(8,  {	-- Northern Stranglethorn
-								["coord"] = { 40.7, 52.0, NORTHERN_STRANGLETHORN },
-							}),
-							crit(9,  {	-- Silverpine Forest
-								["coord"] = { 49.6, 38.7, SILVERPINE_FOREST },
-							}),
-							crit(10, {	-- Swamp of Sorrows
-								["coord"] = { 76.7, 14.4, SWAMP_OF_SORROWS },
-							}),
-							crit(11, {	-- The Cape of Stranglethorn
-								["coord"] = { 50.6, 70.8, THE_CAPE_OF_STRANGLETHORN },
-							}),
-							crit(12, {	-- The Hinterlands
-								["coord"] = { 76.4, 74.5, THE_HINTERLANDS },
-							}),
-							crit(13, {	-- Tirisfal Glades
-								["coord"] = { 57.0, 51.9, TIRISFAL_GLADES },
-							}),
-							crit(14, {	-- Western Plaguelands
-								["coord"] = { 28.9, 56.8, WESTERN_PLAGUELANDS },
-							}),
-						}),
-						ach(1029, {	-- Extinguishing Kalimdor
-							crit(1,  {	-- Ashenvale
-								["coord"] = { 51.6, 66.8, ASHENVALE },
-							}),
-							crit(2,  {	-- Azshara
-								["coord"] = { 60.4, 53.5, AZSHARA },
-							}),
-							crit(3,  {	-- Desolace
-								["coord"] = { 26.1, 77.4, DESOLACE },
-							}),
-							crit(4,  {	-- Durotar
-								["coord"] = { 52.0, 47.0, DUROTAR },
-							}),
-							crit(5,  {	-- Dustwallow Marsh
-								["coord"] = { 33.2, 30.8, DUSTWALLOW_MARSH },
-							}),
-							crit(6,  {	-- Feralas
-								["coord"] = { 72.5, 47.6, FERALAS },
-							}),
-							crit(7,  {	-- Mulgore
-								["coord"] = { 52.0, 59.3, MULGORE },
-							}),
-							crit(8,  {	-- Northern Barrens
-								["coord"] = { 49.9, 54.2, NORTHERN_BARRENS },
-							}),
-							crit(9,  {	-- Silithus
-								["coord"] = { 50.8, 41.8, SILITHUS },
-							}),
-							crit(10, {	-- Southern Barrens
-								["coord"] = { 40.7, 67.2, SOUTHERN_BARRENS },
-							}),
-							crit(11, {	-- Stonetalon Mountains
-								["coord"] = { 53.0, 62.4, STONETALON_MOUNTAINS },
-							}),
-							crit(12, {	-- Tanaris
-								["coord"] = { 49.8, 28.2, TANARIS },
-							}),
-							crit(13, {	-- Un'Goro Crater
-								["coord"] = { 56.3, 65.8, UNGORO_CRATER },
-							}),
-							crit(14, {	-- Winterspring
-								["coord"] = { 58.2, 47.3, WINTERSPRING },
-							}),
-						}),
-						ach(1030, {	-- Extinguishing Outland
-							crit(1, {	-- Blade's Edge Mountains
-								["coord"] = { 49.9, 59.0, BLADES_EDGE_MOUNTAINS },
-							}),
-							crit(2, {	-- Hellfire Peninsula
-								["coord"] = { 57.3, 41.8, HELLFIRE_PENINSULA },
-							}),
-							crit(3, {	-- Nagrand
-								["coord"] = { 51.1, 34.2, NAGRAND },
-							}),
-							crit(4, {	-- Netherstorm
-								["coord"] = { 32.3, 68.4, NETHERSTORM },
-							}),
-							crit(5, {	-- Shadowmoon Valley
-								["coord"] = { 33.6, 30.3, SHADOWMOON_VALLEY },
-							}),
-							crit(6, {	-- Terokkar Forest
-								["coord"] = { 51.9, 43.3, TEROKKAR_FOREST },
-							}),
-							crit(7, {	-- Zangarmarsh
-								["coord"] = { 35.6, 51.9, ZANGARMARSH },
-							}),
-						}),
-						ach(6007, {	-- Extinguishing Northrend
-							crit(1, {	-- Borean Tundra
-								["coord"] = { 51.1, 11.9, BOREAN_TUNDRA },
-							}),
-							crit(2, {	-- Storm Peaks
-								["coord"] = { 40.3, 85.6, THE_STORM_PEAKS },
-							}),
-							crit(3, {	-- Zul'Drak
-								["coord"] = { 43.2, 71.4, ZULDRAK },
-							}),
-							crit(4, {	-- Grizzly Hills
-								["coord"] = { 19.1, 61.3, GRIZZLY_HILLS },
-							}),
-							crit(5, {	-- Howling Fjord
-								["coord"] = { 48.4, 13.5, HOWLING_FJORD },
-							}),
-							crit(6, {	-- Crystalsong Forest
-								["coord"] = { 80.5, 53.0, CRYSTALSONG_FOREST },
-							}),
-							crit(7, {	-- Sholazar Basin
-								["coord"] = { 47.3, 61.7, SHOLAZAR_BASIN },
-							}),
-							crit(8, {	-- Dragonblight
-								["coord"] = { 38.5, 48.4, DRAGONBLIGHT },
-							}),
-						}),
-						ach(6013, {	-- Extinguishing the Cataclysm
-							crit(1, {	-- Twilight Highlands
-								["coord"] = { 53.2, 46.5, TWILIGHT_HIGHLANDS },
-							}),
-							crit(2, {	-- Uldum
-								["coord"] = { 53.0, 34.4, ULDUM },
-							}),
-						}),
+					crit(2,  {	-- Badlands
+						["coord"] = { 24.1, 37.3, BADLANDS },
 					}),
-					ach(263),	-- Ice the Frost Lord
-					ach(271,  {	-- Burning Hot Pole Dance
-						["description"] = "You need the Mantle of the Fire Festival, Vestment of Summer, and the Sandals of Summer to complete the Midsummer set.",
+					crit(3,  {	-- Blasted Lands
+						["coord"] = { 46.3, 14.4, BLASTED_LANDS },
 					}),
-					ach(1145, {	-- King of the Fire Festival
-						["sourceQuests"] = { 9365, 9339 },	-- A Thief's Reward (A, H)
+					crit(4,  {	-- Burning Steppes
+						["coord"] = { 51.5, 29.3, BURNING_STEPPES },
 					}),
-					ach(272,  {	-- Torch Juggler
-						["maps"] = { NORTHREND_DALARAN },
+					crit(5,  {	-- Eversong Woods
+						["coord"] = { 46.3, 50.3, EVERSONG_WOODS },
 					}),
-				},
-			})),
-			ach(8045, bubbleDown({["races"] = ALLIANCE_ONLY},{	-- Flame Warden of Pandaria
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+					crit(6,  {	-- Ghostlands
+						["coord"] = { 47.0, 25.9, GHOSTLANDS },
+					}),
+					crit(7,  {	-- Hillsbrad Foothills
+						["coord"] = { 54.5, 50.1, HILLSBRAD_FOOTHILLS },
+					}),
+					crit(8,  {	-- Northern Stranglethorn
+						["coord"] = { 40.7, 52.0, NORTHERN_STRANGLETHORN },
+					}),
+					crit(9,  {	-- Silverpine Forest
+						["coord"] = { 49.6, 38.7, SILVERPINE_FOREST },
+					}),
+					crit(10, {	-- Swamp of Sorrows
+						["coord"] = { 76.7, 14.4, SWAMP_OF_SORROWS },
+					}),
+					crit(11, {	-- The Cape of Stranglethorn
+						["coord"] = { 50.6, 70.8, THE_CAPE_OF_STRANGLETHORN },
+					}),
+					crit(12, {	-- The Hinterlands
+						["coord"] = { 76.4, 74.5, THE_HINTERLANDS },
+					}),
+					crit(13, {	-- Tirisfal Glades
+						["coord"] = { 57.0, 51.9, TIRISFAL_GLADES },
+					}),
+					crit(14, {	-- Western Plaguelands
+						["coord"] = { 28.9, 56.8, WESTERN_PLAGUELANDS },
+					}),
+				}),
+				ach(1029, {		-- Extinguishing Kalimdor (A)
+					crit(1,  {	-- Ashenvale
+						["coord"] = { 51.6, 66.8, ASHENVALE },
+					}),
+					crit(2,  {	-- Azshara
+						["coord"] = { 60.4, 53.5, AZSHARA },
+					}),
+					crit(3,  {	-- Desolace
+						["coord"] = { 26.1, 77.4, DESOLACE },
+					}),
+					crit(4,  {	-- Durotar
+						["coord"] = { 52.0, 47.0, DUROTAR },
+					}),
+					crit(5,  {	-- Dustwallow Marsh
+						["coord"] = { 33.2, 30.8, DUSTWALLOW_MARSH },
+					}),
+					crit(6,  {	-- Feralas
+						["coord"] = { 72.5, 47.6, FERALAS },
+					}),
+					crit(7,  {	-- Mulgore
+						["coord"] = { 52.0, 59.3, MULGORE },
+					}),
+					crit(8,  {	-- Northern Barrens
+						["coord"] = { 49.9, 54.2, NORTHERN_BARRENS },
+					}),
+					crit(9,  {	-- Silithus
+						["coord"] = { 50.8, 41.8, SILITHUS },
+					}),
+					crit(10, {	-- Southern Barrens
+						["coord"] = { 40.7, 67.2, SOUTHERN_BARRENS },
+					}),
+					crit(11, {	-- Stonetalon Mountains
+						["coord"] = { 53.0, 62.4, STONETALON_MOUNTAINS },
+					}),
+					crit(12, {	-- Tanaris
+						["coord"] = { 49.8, 28.2, TANARIS },
+					}),
+					crit(13, {	-- Un'Goro Crater
+						["coord"] = { 56.3, 65.8, UNGORO_CRATER },
+					}),
+					crit(14, {	-- Winterspring
+						["coord"] = { 58.2, 47.3, WINTERSPRING },
+					}),
+				}),
+				ach(6007, {		-- Extinguishing Northrend (A)
+					crit(1, {	-- Borean Tundra
+						["coord"] = { 51.1, 11.9, BOREAN_TUNDRA },
+					}),
+					crit(2, {	-- Storm Peaks
+						["coord"] = { 40.3, 85.6, THE_STORM_PEAKS },
+					}),
+					crit(3, {	-- Zul'Drak
+						["coord"] = { 43.2, 71.4, ZULDRAK },
+					}),
+					crit(4, {	-- Grizzly Hills
+						["coord"] = { 19.1, 61.3, GRIZZLY_HILLS },
+					}),
+					crit(5, {	-- Howling Fjord
+						["coord"] = { 48.4, 13.5, HOWLING_FJORD },
+					}),
+					crit(6, {	-- Crystalsong Forest
+						["coord"] = { 80.5, 53.0, CRYSTALSONG_FOREST },
+					}),
+					crit(7, {	-- Sholazar Basin
+						["coord"] = { 47.3, 61.7, SHOLAZAR_BASIN },
+					}),
+					crit(8, {	-- Dragonblight
+						["coord"] = { 38.5, 48.4, DRAGONBLIGHT },
+					}),
+				}),
+				ach(1030, {		-- Extinguishing Outland (A)
+					crit(1, {	-- Blade's Edge Mountains
+						["coord"] = { 49.9, 59.0, BLADES_EDGE_MOUNTAINS },
+					}),
+					crit(2, {	-- Hellfire Peninsula
+						["coord"] = { 57.3, 41.8, HELLFIRE_PENINSULA },
+					}),
+					crit(3, {	-- Nagrand
+						["coord"] = { 51.1, 34.2, NAGRAND },
+					}),
+					crit(4, {	-- Netherstorm
+						["coord"] = { 32.3, 68.4, NETHERSTORM },
+					}),
+					crit(5, {	-- Shadowmoon Valley
+						["coord"] = { 33.6, 30.3, SHADOWMOON_VALLEY },
+					}),
+					crit(6, {	-- Terokkar Forest
+						["coord"] = { 51.9, 43.3, TEROKKAR_FOREST },
+					}),
+					crit(7, {	-- Zangarmarsh
+						["coord"] = { 35.6, 51.9, ZANGARMARSH },
+					}),
+				}),
+				ach(8042, {		-- Extinguishing Pandaria (A)
+					["coord"] = { 77.9, 33.9, VALE_OF_ETERNAL_BLOSSOMS },
+				}),
+				ach(6013, {		-- Extinguishing the Cataclysm (A)
+					crit(1, {	-- Twilight Highlands
+						["coord"] = { 53.2, 46.5, TWILIGHT_HIGHLANDS },
+					}),
+					crit(2, {	-- Uldum
+						["coord"] = { 53.0, 34.4, ULDUM },
+					}),
+				}),
+				ach(11278, {	-- Extinguishing the Broken Isles (A)
+					["coord"] = { 30.3, 45.4, SURAMAR },
+				}),
+				ach(13343, {	-- Extinguishing Zandalar (A)
+					crit(1, {	-- Zuldazar
+						["coord"] = { 53.3, 48.1, ZULDAZAR },
+					}),
+					crit(2, {	-- Nazmir
+						["coord"] = { 40.0, 74.0, NAZMIR },
+					}),
+					crit(3, {	-- Vol'dun
+						["coord"] = { 55.9, 47.4, VOLDUN },
+					}),
+				}),
+				
+				ach(6011,  {	-- Flame Warden of Cataclysm (A)
+					crit(1, {	-- Uldum
+						["coord"] = { 53.0, 32.0, ULDUM },
+					}),
+					crit(2, {	-- Deepholm
+						["coord"] = { 49.4, 51.4, 207 },
+					}),
+					crit(3, {	-- Twilight Highlands
+						["coord"] = { 47.2, 29.0, TWILIGHT_HIGHLANDS },
+					}),
+					crit(4, {	-- Vashj'ir
+						["coord"] = { 49.4, 42.0, 205 },	-- Shimmering Expanse
+					}),
+					crit(5, {	-- Hyjal
+						["coord"] = { 62.8, 22.6, MOUNT_HYJAL },
+					}),
+				}),
+				ach(11283, {	-- Flame Warden of Draenor (A)
+					crit(1, {	-- Spires of Arak
+						["coord"] = { 48.0, 44.6, SPIRES_OF_ARAK },
+					}),
+					crit(2, {	-- Talador
+						["coord"] = { 43.4, 71.8, TALADOR },
+					}),
+					crit(3, {	-- Nagrand
+						["coord"] = { 80.4, 47.6, DRAENOR_NAGRAND },
+					}),
+					crit(4, {	-- Gorgrond
+						["coord"] = { 43.8, 93.8, GORGROND },
+					}),
+					crit(5, {	-- Shadowmoon Valley
+						["coord"] = { 42.6, 36.0, DRAENOR_SHADOWMOON_VALLEY },
+					}),
+				}),
+				ach(1022,  {	-- Flame Warden of Eastern Kingdoms (A)
+					crit(1,  {	-- Arathi Highlands
+						["coord"] = { 44.3, 45.8, ARATHI_HIGHLANDS },
+					}),
+					crit(2,  {	-- Badlands
+						["coord"] = { 18.9, 56.1, BADLANDS },
+					}),
+					crit(3,  {	-- Blasted Lands
+						["coord"] = { 55.5, 15.0, BLASTED_LANDS },
+					}),
+					crit(4,  {	-- Burning Steppes
+						["coord"] = { 68.2, 60.6, BURNING_STEPPES },
+					}),
+					crit(5,  {	-- Dun Morogh
+						["coord"] = { 53.8, 45.2, DUN_MOROGH },
+					}),
+					crit(6,  {	-- Duskwood
+						["coord"] = { 73.8, 54.7, DUSKWOOD },
+					}),
+					crit(7,  {	-- Elwynn Forest
+						["coord"] = { 43.5, 62.7, ELWYNN_FOREST },
+					}),
+					crit(8,  {	-- Loch Modan
+						["coord"] = { 32.3, 41.0, LOCH_MODAN },
+					}),
+					crit(9,  {	-- Northern Stranglethorn
+						["coord"] = { 52.0, 63.6, NORTHERN_STRANGLETHORN },
+					}),
+					crit(10, {	-- Redridge Mountains
+						["coord"] = { 25.0, 53.5, REDRIDGE_MOUNTAINS },
+					}),
+					crit(11, {	-- Swamp of Sorrows
+						["coord"] = { 70.1, 15.4, SWAMP_OF_SORROWS },
+					}),
+					crit(12, {	-- The Cape of Stranglethorn
+						["coord"] = { 51.9, 67.8, THE_CAPE_OF_STRANGLETHORN },
+					}),
+					crit(13, {	-- The Hinterlands
+						["coord"] = { 14.4, 50.2, THE_HINTERLANDS },
+					}),
+					crit(14, {	-- Western Plaguelands
+						["coord"] = { 43.5, 82.2, WESTERN_PLAGUELANDS },
+					}),
+					crit(15, {	-- Westfall
+						["coord"] = { 44.6, 62.1, WESTFALL },
+					}),
+					crit(16, {	-- Wetlands
+						["coord"] = { 13.5, 47.1, WETLANDS },
+					}),
+				}),
+				ach(1023,  {	-- Flame Warden of Kalimdor (A)
+					crit(1,  {	-- Ashenvale
+						["coord"] = { 13.0, 47.0, ASHENVALE },
+					}),
+					crit(2,  {	-- Azuremyst Isle
+						["coord"] = { 44.0, 53.0, AZUREMYST_ISLE },
+					}),
+					crit(3,  {	-- Bloodmyst Isle
+						["coord"] = { 55.0, 69.0, BLOODMYST_ISLE },
+					}),
+					crit(4,  {	-- Darkshore
+						["coord"] = { 49.0, 23.0, DARKSHORE },
+					}),
+					crit(5,  {	-- Desolace
+						["coord"] = { 65.0, 17.0, DESOLACE },
+					}),
+					crit(6,  {	-- Dustwallow Marsh
+						["coord"] = { 62.0, 40.0, DUSTWALLOW_MARSH },
+					}),
+					crit(7,  {	-- Feralas
+						["coord"] = { 47.0, 44.0, FERALAS },
+					}),
+					crit(8,  {	-- Silithus
+						["coord"] = { 60.0, 33.0, SILITHUS },
+					}),
+					crit(9,  {	-- Southern Barrens
+						["coord"] = { 48.0, 72.0, SOUTHERN_BARRENS },
+					}),
+					crit(10, {	-- Stonetalon Mountains
+						["coord"] = { 49.0, 51.0, STONETALON_MOUNTAINS },
+					}),
+					crit(11, {	-- Tanaris
+						["coord"] = { 52.0, 29.0, TANARIS },
+					}),
+					crit(12, {	-- Teldrassil
+						["coord"] = { 54.8, 52.9, TELDRASSIL },
+					}),
+					crit(13, {	-- Un'goro Crater
+						["coord"] = { 60.0, 63.0, UNGORO_CRATER },
+					}),
+					crit(14, {	-- Winterspring
+						["coord"] = { 62.0, 35.0, WINTERSPRING },
+					}),
+				}),
+				ach(13341, {	-- Flame Warden of Kul Tiras (A)
+					crit(1, {	-- Tiragarde Sound
+						["coord"] = { 76.3, 49.9, TIRAGARDE_SOUND },
+					}),
+					crit(2, {	-- Stormsong Valley
+						["coord"] = { 35.8, 51.2, STORMSONG_VALLEY },
+					}),
+					crit(3, {	-- Drustvar
+						["coord"] = { 40.2, 47.7, DRUSTVAR },
+					}),
+				}),
+				ach(6008,  {	-- Flame Warden of Northrend (A)
+					crit(1, {	-- Dragonblight
+						["coord"] = { 75.0, 44.0, DRAGONBLIGHT },
+					}),
+					crit(2, {	-- Crystalsong Forest
+						["coord"] = { 78.0, 75.0, CRYSTALSONG_FOREST },
+					}),
+					crit(3, {	-- Howling Fjord
+						["coord"] = { 58.0, 16.0, HOWLING_FJORD },
+					}),
+					crit(4, {	-- Sholazar Basin
+						["coord"] = { 47.0, 66.0, SHOLAZAR_BASIN },
+					}),
+					crit(5, {	-- Storm Peaks
+						["coord"] = { 42.0, 87.0, THE_STORM_PEAKS },
+					}),
+					crit(6, {	-- Zul'Drak
+						["coord"] = { 41.0, 61.0, ZULDRAK },
+					}),
+					crit(7, {	-- Grizzly Hills
+						["coord"] = { 34.0, 61.0, GRIZZLY_HILLS },
+					}),
+					crit(8, {	-- Borean Tundra
+						["coord"] = { 55.0, 20.0, BOREAN_TUNDRA },
+					}),
+				}),
+				ach(1024,  {	-- Flame Warden of Outland (A)
+					crit(1, {	-- Blade's Edge Mountains
+						["coord"] = { 42.0, 66.0, BLADES_EDGE_MOUNTAINS },
+					}),
+					crit(2, {	-- Hellfire Peninsula
+						["coord"] = { 62.0, 58.0, HELLFIRE_PENINSULA },
+					}),
+					crit(3, {	-- Nagrand
+						["coord"] = { 51.0, 34.0, NAGRAND },
+					}),
+					crit(4, {	-- Netherstorm
+						["coord"] = { 31.0, 63.0, NETHERSTORM },
+					}),
+					crit(5, {	-- Shadowmoon Valley
+						["coord"] = { 40.0, 55.0, SHADOWMOON_VALLEY },
+					}),
+					crit(6, {	-- Terokkar Forest
+						["coord"] = { 55.0, 55.0, TEROKKAR_FOREST },
+					}),
+					crit(7, {	-- Zangarmarsh
+						["coord"] = { 69.0, 52.0, ZANGARMARSH },
+					}),
+				}),
+				ach(8045, {		-- Flame Warden of Pandaria (A)
 					crit(1, {	-- Dread Wastes
 						["coord"] = { 56.1, 69.5, DREAD_WASTES },
 					}),
@@ -690,31 +747,8 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					crit(7, {	-- Valley of the Four Winds
 						["coord"] = { 51.8, 51.4, VALLEY_OF_THE_FOUR_WINDS },
 					}),
-				},
-			})),
-			ach(11283, bubbleDown({["races"] = ALLIANCE_ONLY},{	-- Flame Warden of Draenor
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
-					crit(1, {	-- Spires of Arak
-						["coord"] = { 48.0, 44.6, SPIRES_OF_ARAK },
-					}),
-					crit(2, {	-- Talador
-						["coord"] = { 43.4, 71.8, TALADOR },
-					}),
-					crit(3, {	-- Nagrand
-						["coord"] = { 80.4, 47.6, DRAENOR_NAGRAND },
-					}),
-					crit(4, {	-- Gorgrond
-						["coord"] = { 43.8, 93.8, GORGROND },
-					}),
-					crit(5, {	-- Shadowmoon Valley
-						["coord"] = { 42.6, 36.0, DRAENOR_SHADOWMOON_VALLEY },
-					}),
-				},
-			})),
-			ach(11280, bubbleDown({["races"] = ALLIANCE_ONLY},{	-- Flame Warden of the Broken Isles
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				}),
+				ach(11280, {	-- Flame Warden of the Broken Isles (A)
 					crit(1, {	-- Azsuna
 						["coord"] = { 48.2, 29.6, AZSUNA },
 					}),
@@ -730,376 +764,394 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					crit(5, {	-- Suramar
 						["coord"] = { 23.0, 58.4, SURAMAR },
 					}),
-				},
+				}),
+				
+				ach(1034, {		-- The Fires of Azeroth (A)
+					["sym"] = {
+						{"select","achievementID",
+							1022,	-- Flame Warden of Eastern Kingdoms (A)
+							1023,	-- Flame Warden of Kalimdor (A)
+							1024,	-- Flame Warden of Outland (A)
+							6008,	-- Flame Warden of Northrend (A)
+							6011,	-- Flame Warden of Cataclysm (A)
+						},
+					},
+				}),
 			})),
-			ach(13341, bubbleDown({["races"] = ALLIANCE_ONLY},{	-- Flame Warden of Kul Tiras
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+			n(FACTION_HEADER_HORDE, bubbleDown({ ["races"] = HORDE_ONLY }, {
+				ach(1039, {		-- The Flame Keeper (Horde)
+					-- Meta Achievement should symlink the contained Achievements from Source
+					["sym"] = {
+						{"select","achievementID",
+							1036,				-- The Fires of Azeroth (H)
+							1037,				-- Desecration of the Alliance (H)
+							263,				-- Ice the Frost Lord
+							271,				-- Burning Hot Pole Dance
+							1145,				-- King of the Fire Festival
+							272,				-- Torch Juggler
+						},
+					},
+					["groups"] = {
+						title(45),				-- Flame Keeper
+					},
+				}),
+				
+				ach(1037, {		-- Desecration of the Alliance (H)
+					["sym"] = {
+						{"select","achievementID",
+							1031,	-- Extinguishing Eastern Kingdoms (H)
+							1032,	-- Extinguishing Kalimdor (H)
+							1033,	-- Extinguishing Outland (H)
+							6010,	-- Extinguishing Northrend (H)
+							6014,	-- Extinguishing the Cataclysm (H)
+						},
+					},
+				}),
+				
+				ach(11277, {	-- Extinguishing Draenor (H)
+					["coord"] = { 42.8, 35.9, DRAENOR_SHADOWMOON_VALLEY },
+				}),
+				ach(1031, {		-- Extinguishing Eastern Kingdoms (H)
+					crit(1,  {	-- Arathi Highlands
+						["coord"] = { 44.8, 46.1, ARATHI_HIGHLANDS },
+					}),
+					crit(2,  {	-- Badlands
+						["coord"] = { 18.5, 56.1, BADLANDS },
+					}),
+					crit(3,  {	-- Blasted Lands
+						["coord"] = { 55.2, 15.3, BLASTED_LANDS },
+					}),
+					crit(4,  {	-- Burning Steppes
+						["coord"] = { 68.6, 59.9, BURNING_STEPPES },
+					}),
+					crit(5,  {	-- Dun Morogh
+						["coord"] = { 53.8, 44.7, DUN_MOROGH },
+					}),
+					crit(6,  {	-- Duskwood
+						["coord"] = { 73.2, 54.9, DUSKWOOD },
+					}),
+					crit(7,  {	-- Elwynn Forest
+						["coord"] = { 43.2, 63.0, ELWYNN_FOREST },
+					}),
+					crit(8,  {	-- Loch Modan
+						["coord"] = { 32.3, 40.4, LOCH_MODAN },
+					}),
+					crit(9,  {	-- Northern Stranglethorn
+						["coord"] = { 51.6, 63.3, NORTHERN_STRANGLETHORN },
+					}),
+					crit(10, {	-- Redridge Mountains
+						["coord"] = { 24.4, 53.9, REDRIDGE_MOUNTAINS },
+					}),
+					crit(11, {	-- Swamp of Sorrows
+						["coord"] = { 70.1, 14.8, SWAMP_OF_SORROWS },
+					}),
+					crit(12, {	-- The Cape of Stranglethorn
+						["coord"] = { 51.7, 67.3, THE_CAPE_OF_STRANGLETHORN },
+					}),
+					crit(13, {	-- The Hinterlands
+						["coord"] = { 14.5, 50.0, THE_HINTERLANDS },
+					}),
+					crit(14, {	-- Western Plaguelands
+						["coord"] = { 43.6, 82.5, WESTERN_PLAGUELANDS },
+					}),
+					crit(15, {	-- Westfall
+						["coord"] = { 45.2, 62.3, WESTFALL },
+					}),
+					crit(16, {	-- Wetlands
+						["coord"] = { 13.3, 47.3, WETLANDS },
+					}),
+				}),
+				ach(1032, {		-- Extinguishing Kalimdor (H)
+					crit(1,  {	-- Ashenvale
+						["coord"] = { 86.7, 41.4, ASHENVALE },
+					}),
+					crit(2,  {	-- Azuremyst Isle
+						["coord"] = { 44.7, 52.5, AZUREMYST_ISLE },
+					}),
+					crit(3,  {	-- Bloodmyst Isle
+						["coord"] = { 56.0, 68.5, BLOODMYST_ISLE },
+					}),
+					crit(4,  {	-- Darkshore
+						["coord"] = { 49.0, 22.5, DARKSHORE },
+					}),
+					crit(5,  {	-- Desolace
+						["coord"] = { 65.8, 17.0, DESOLACE },
+					}),
+					crit(6,  {	-- Dustwallow Marsh
+						["coord"] = { 62.1, 40.3, DUSTWALLOW_MARSH },
+					}),
+					crit(7,  {	-- Feralas
+						["coord"] = { 46.6, 43.8, FERALAS },
+					}),
+					crit(8,  {	-- Silithus
+						["coord"] = { 60.5, 33.4, SILITHUS },
+					}),
+					crit(9,  {	-- Southern Barrens
+						["coord"] = { 48.2, 72.4, SOUTHERN_BARRENS },
+					}),
+					crit(10, {	-- Stonetalon Mountains
+						["coord"] = { 49.6, 51.1, STONETALON_MOUNTAINS },
+					}),
+					crit(11, {	-- Tanaris
+						["coord"] = { 52.7, 30.0, TANARIS },
+					}),
+					crit(12, {	-- Teldrassil
+						["coord"] = { 54.7, 52.7, TELDRASSIL },
+					}),
+					crit(13, {	-- Un'Goro Crater
+						["coord"] = { 60.0, 62.9, UNGORO_CRATER },
+					}),
+					crit(14, {	-- Winterspring
+						["coord"] = { 61.3, 47.1, WINTERSPRING },
+					}),
+				}),
+				ach(13342, {	-- Extinguishing Kul Tiras (H)
 					crit(1, {	-- Tiragarde Sound
-						["coord"] = { 76.3, 49.9, TIRAGARDE_SOUND },
+						["coord"] = { 76.3, 49.7, TIRAGARDE_SOUND },
 					}),
 					crit(2, {	-- Stormsong Valley
-						["coord"] = { 35.8, 51.2, STORMSONG_VALLEY },
+						["coord"] = { 36.0, 51.5, STORMSONG_VALLEY },
 					}),
 					crit(3, {	-- Drustvar
-						["coord"] = { 40.2, 47.7, DRUSTVAR },
+						["coord"] = { 40.2, 47.3, DRUSTVAR },
 					}),
-				},
-			})),
-			ach(8042,  {	-- Extinguishing Pandaria
-				["coord"] = { 77.9, 33.9, VALE_OF_ETERNAL_BLOSSOMS },
-				["races"] = ALLIANCE_ONLY,
-			}),
-			ach(11276, {	-- Extinguishing Draenor
-				["coord"] = { 72.8, 65.2, FROSTFIRE_RIDGE },
-				["races"] = ALLIANCE_ONLY,
-			}),
-			ach(11278, {	-- Extinguishing the Broken Isles
-				["coord"] = { 30.3, 45.4, SURAMAR },
-				["races"] = ALLIANCE_ONLY,
-			}),
-			ach(13343, bubbleDown({["races"] = ALLIANCE_ONLY},{	-- Extinguishing Zandalar
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {	-- Extinguishing Zandalar
-					crit(1, {	-- Zuldazar
-						["coord"] = { 53.3, 48.1, ZULDAZAR },
+				}),
+				ach(6010, {		-- Extinguishing Northrend (H)
+					crit(1, {	-- Dragonblight
+						["coord"] = { 75.1, 43.7, DRAGONBLIGHT },
 					}),
-					crit(2, {	-- Nazmir
-						["coord"] = { 40.0, 74.0, NAZMIR },
+					crit(2, {	-- Borean Tundra
+						["coord"] = { 55.1, 20.2, BOREAN_TUNDRA },
 					}),
-					crit(3, {	-- Vol'dun
-						["coord"] = { 55.9, 47.4, VOLDUN },
+					crit(3, {	-- Howling Fjord
+						["coord"] = { 57.7, 15.7, HOWLING_FJORD },
 					}),
-				},
-			})),
-			ach(1039, bubbleDown({["races"] = HORDE_ONLY},{	-- The Flame Keeper
-				["races"] = HORDE_ONLY,
-				["groups"] = {
-					title(45),	-- Flame Keeper
-					ach(1036, {	-- The Fires of Azeroth
-						ach(1025, {	-- Flame Keeper of Eastern Kingdoms
-							crit(1,  {	-- Arathi Highlands
-								["coord"] = { 69.4, 42.6, ARATHI_HIGHLANDS },
-							}),
-							crit(2,  {	-- Badlands
-								["coord"] = { 23.1, 37.4, BADLANDS },
-							}),
-							crit(3,  {	-- Blasted Lands
-								["coord"] = { 46.2, 13.8, BLASTED_LANDS },
-							}),
-							crit(4,  {	-- Burning Steppes
-								["coord"] = { 51.1, 29.2, BURNING_STEPPES },
-							}),
-							crit(5,  {	-- Eversong Woods
-								["coord"] = { 46.4, 50.6, EVERSONG_WOODS },
-							}),
-							crit(6,  {	-- Ghostlands
-								["coord"] = { 46.6, 26.3, GHOSTLANDS },
-							}),
-							crit(7,  {	-- Hillsbrad Foothills
-								["coord"] = { 54.7, 50.1, HILLSBRAD_FOOTHILLS },
-							}),
-							crit(8,  {	-- Northern Stranglethorn
-								["coord"] = { 40.6, 50.9, NORTHERN_STRANGLETHORN },
-							}),
-							crit(9,  {	-- Silverpine Forest
-								["coord"] = { 49.6, 38.2, SILVERPINE_FOREST },
-							}),
-							crit(10, {	-- Swamp of Sorrows
-								["coord"] = { 76.3, 13.8, SWAMP_OF_SORROWS },
-							}),
-							crit(11, {	-- The Cape of Stranglethorn
-								["coord"] = { 50.4, 70.4, THE_CAPE_OF_STRANGLETHORN },
-							}),
-							crit(12, {	-- The Hinterlands
-								["coord"] = { 76.6, 75.0, THE_HINTERLANDS },
-							}),
-							crit(13, {	-- Tirisfal Glades
-								["coord"] = { 57.2, 51.8, TIRISFAL_GLADES },
-							}),
-							crit(14, {	-- Western Plaguelands
-								["coord"] = { 29.2, 57.3, WESTERN_PLAGUELANDS },
-							}),
-						}),
-						ach(1026, {	-- Flame Keeper of Kalimdor
-							crit(1,  {	-- Ashenvale
-								["coord"] = { 51.4, 66.1, ASHENVALE },
-							}),
-							crit(2,  {	-- Azshara
-								["coord"] = { 60.8, 53.5, AZSHARA },
-							}),
-							crit(3,  {	-- Desolace
-								["coord"] = { 26.1, 76.9, DESOLACE },
-							}),
-							crit(4,  {	-- Durotar
-								["coord"] = { 52.0, 47.0, DUROTAR },
-							}),
-							crit(5,  {	-- Dustwallow Marsh
-								["coord"] = { 33.0, 30.0, DUSTWALLOW_MARSH },
-							}),
-							crit(6,  {	-- Feralas
-								["coord"] = { 72.4, 47.8, FERALAS },
-							}),
-							crit(7,  {	-- Mulgore
-								["coord"] = { 51.8, 59.3, MULGORE },
-							}),
-							crit(8,  {	-- Northern Barrens
-								["coord"] = { 50.0, 55.0, NORTHERN_BARRENS },
-							}),
-							crit(9,  {	-- Silithus
-								["coord"] = { 50.9, 41.3, SILITHUS },
-							}),
-							crit(10, {	-- Southern Barrens
-								["coord"] = { 41.0, 68.0, SOUTHERN_BARRENS },
-							}),
-							crit(11, {	-- Stonetalon Mountains
-								["coord"] = { 52.9, 62.5, STONETALON_MOUNTAINS },
-							}),
-							crit(12, {	-- Tanaris
-								["coord"] = { 49.8, 27.9, TANARIS },
-							}),
-							crit(13, {	-- Un'goro Crater
-								["coord"] = { 56.0, 66.0, UNGORO_CRATER },
-							}),
-							crit(14, {	-- Winterspring
-								["coord"] = { 58.1, 47.5, WINTERSPRING },
-							}),
-						}),
-						ach(1027, {	-- Flame Keeper of Outland
-							crit(1, {	-- Blade's Edge Mountains
-								["coord"] = { 50.0, 59.0, BLADES_EDGE_MOUNTAINS },
-							}),
-							crit(2, {	-- Hellfire Peninsula
-								["coord"] = { 55.0, 40.0, HELLFIRE_PENINSULA },
-							}),
-							crit(3, {	-- Nagrand
-								["coord"] = { 51.0, 34.0, NAGRAND },
-							}),
-							crit(4, {	-- Netherstorm
-								["coord"] = { 32.0, 68.0, NETHERSTORM },
-							}),
-							crit(5, {	-- Shadowmoon Valley
-								["coord"] = { 33.0, 30.0, SHADOWMOON_VALLEY },
-							}),
-							crit(6, {	-- Terokkar Forest
-								["coord"] = { 52.0, 43.0, TEROKKAR_FOREST },
-							}),
-							crit(7, {	-- Zangarmarsh
-								["coord"] = { 35.0, 51.0, ZANGARMARSH },
-							}),
-						}),
-						ach(6009, {	-- Flame Keeper of Northrend
-							crit(1, {	-- Dragonblight
-								["coord"] = { 39.0, 48.0, DRAGONBLIGHT },
-							}),
-							crit(2, {	-- Borean Tundra
-								["coord"] = { 51.0, 12.0, BOREAN_TUNDRA },
-							}),
-							crit(3, {	-- Howling Fjord
-								["coord"] = { 48.0, 13.0, HOWLING_FJORD },
-							}),
-							crit(4, {	-- Sholazar Basin
-								["coord"] = { 47.0, 62.0, SHOLAZAR_BASIN },
-							}),
-							crit(5, {	-- Storm Peaks
-								["coord"] = { 40.0, 86.0, THE_STORM_PEAKS },
-							}),
-							crit(6, {	-- Zul'Drak
-								["coord"] = { 43.0, 71.0, ZULDRAK },
-							}),
-							crit(7, {	-- Grizzly Hills
-								["coord"] = { 19.0, 61.0, GRIZZLY_HILLS },
-							}),
-							crit(8, {	-- Crystalsong Forest
-								["coord"] = { 80.0, 53.0, CRYSTALSONG_FOREST },
-							}),
-						}),
-						ach(6012, {	-- Flame Keeper of Cataclysm
-							crit(1, {	-- Vashj'ir
-								["coord"] = { 49.4, 42.0, 205 },	-- Shimmering Expanse
-							}),
-							crit(2, {	-- Twilight Highlands
-								["coord"] = { 53.0, 46.0, TWILIGHT_HIGHLANDS },
-							}),
-							crit(3, {	-- Hyjal
-								["coord"] = { 62.8, 22.6, MOUNT_HYJAL },
-							}),
-							crit(4, {	-- Deepholm
-								["coord"] = { 49.4, 51.4, 207 },
-							}),
-							crit(5, {	-- Uldum
-								["coord"] = { 53.0, 34.0, ULDUM },
-							}),
-						}),
+					crit(4, {	-- Sholazar Basin
+						["coord"] = { 47.9, 66.0, SHOLAZAR_BASIN },
 					}),
-					ach(1037, {	-- Desecration of the Alliance
-						ach(1031, {	-- Extinguishing Eastern Kingdoms
-							crit(1,  {	-- Arathi Highlands
-								["coord"] = { 44.8, 46.1, ARATHI_HIGHLANDS },
-							}),
-							crit(2,  {	-- Badlands
-								["coord"] = { 18.5, 56.1, BADLANDS },
-							}),
-							crit(3,  {	-- Blasted Lands
-								["coord"] = { 55.2, 15.3, BLASTED_LANDS },
-							}),
-							crit(4,  {	-- Burning Steppes
-								["coord"] = { 68.6, 59.9, BURNING_STEPPES },
-							}),
-							crit(5,  {	-- Dun Morogh
-								["coord"] = { 53.8, 44.7, DUN_MOROGH },
-							}),
-							crit(6,  {	-- Duskwood
-								["coord"] = { 73.2, 54.9, DUSKWOOD },
-							}),
-							crit(7,  {	-- Elwynn Forest
-								["coord"] = { 43.2, 63.0, ELWYNN_FOREST },
-							}),
-							crit(8,  {	-- Loch Modan
-								["coord"] = { 32.3, 40.4, LOCH_MODAN },
-							}),
-							crit(9,  {	-- Northern Stranglethorn
-								["coord"] = { 51.6, 63.3, NORTHERN_STRANGLETHORN },
-							}),
-							crit(10, {	-- Redridge Mountains
-								["coord"] = { 24.4, 53.9, REDRIDGE_MOUNTAINS },
-							}),
-							crit(11, {	-- Swamp of Sorrows
-								["coord"] = { 70.1, 14.8, SWAMP_OF_SORROWS },
-							}),
-							crit(12, {	-- The Cape of Stranglethorn
-								["coord"] = { 51.7, 67.3, THE_CAPE_OF_STRANGLETHORN },
-							}),
-							crit(13, {	-- The Hinterlands
-								["coord"] = { 14.5, 50.0, THE_HINTERLANDS },
-							}),
-							crit(14, {	-- Western Plaguelands
-								["coord"] = { 43.6, 82.5, WESTERN_PLAGUELANDS },
-							}),
-							crit(15, {	-- Westfall
-								["coord"] = { 45.2, 62.3, WESTFALL },
-							}),
-							crit(16, {	-- Wetlands
-								["coord"] = { 13.3, 47.3, WETLANDS },
-							}),
-						}),
-						ach(1032, {	-- Extinguishing Kalimdor
-							crit(1,  {	-- Ashenvale
-								["coord"] = { 86.7, 41.4, ASHENVALE },
-							}),
-							crit(2,  {	-- Azuremyst Isle
-								["coord"] = { 44.7, 52.5, AZUREMYST_ISLE },
-							}),
-							crit(3,  {	-- Bloodmyst Isle
-								["coord"] = { 56.0, 68.5, BLOODMYST_ISLE },
-							}),
-							crit(4,  {	-- Darkshore
-								["coord"] = { 49.0, 22.5, DARKSHORE },
-							}),
-							crit(5,  {	-- Desolace
-								["coord"] = { 65.8, 17.0, DESOLACE },
-							}),
-							crit(6,  {	-- Dustwallow Marsh
-								["coord"] = { 62.1, 40.3, DUSTWALLOW_MARSH },
-							}),
-							crit(7,  {	-- Feralas
-								["coord"] = { 46.6, 43.8, FERALAS },
-							}),
-							crit(8,  {	-- Silithus
-								["coord"] = { 60.5, 33.4, SILITHUS },
-							}),
-							crit(9,  {	-- Southern Barrens
-								["coord"] = { 48.2, 72.4, SOUTHERN_BARRENS },
-							}),
-							crit(10, {	-- Stonetalon Mountains
-								["coord"] = { 49.6, 51.1, STONETALON_MOUNTAINS },
-							}),
-							crit(11, {	-- Tanaris
-								["coord"] = { 52.7, 30.0, TANARIS },
-							}),
-							crit(12, {	-- Teldrassil
-								["coord"] = { 54.7, 52.7, TELDRASSIL },
-							}),
-							crit(13, {	-- Un'Goro Crater
-								["coord"] = { 60.0, 62.9, UNGORO_CRATER },
-							}),
-							crit(14, {	-- Winterspring
-								["coord"] = { 61.3, 47.1, WINTERSPRING },
-							}),
-						}),
-						ach(1033, {	-- Extinguishing Outland
-							crit(1, {	-- Blade's Edge Mountains
-								["coord"] = { 41.8, 65.9, BLADES_EDGE_MOUNTAINS },
-							}),
-							crit(2, {	-- Hellfire Peninsula
-								["coord"] = { 61.9, 58.5, HELLFIRE_PENINSULA },
-							}),
-							crit(3, {	-- Nagrand
-								["coord"] = { 49.7, 69.6, NAGRAND },
-							}),
-							crit(4, {	-- Netherstorm
-								["coord"] = { 31.1, 62.7, NETHERSTORM },
-							}),
-							crit(5, {	-- Shadowmoon Valley
-								["coord"] = { 39.6, 54.3, SHADOWMOON_VALLEY },
-							}),
-							crit(6, {	-- Terokkar Forest
-								["coord"] = { 54.2, 55.4, TEROKKAR_FOREST },
-							}),
-							crit(7, {	-- Zangarmarsh
-								["coord"] = { 68.6, 52.0, ZANGARMARSH },
-							}),
-						}),
-						ach(6010, {	-- Extinguishing Northrend
-							crit(1, {	-- Dragonblight
-								["coord"] = { 75.1, 43.7, DRAGONBLIGHT },
-							}),
-							crit(2, {	-- Borean Tundra
-								["coord"] = { 55.1, 20.2, BOREAN_TUNDRA },
-							}),
-							crit(3, {	-- Howling Fjord
-								["coord"] = { 57.7, 15.7, HOWLING_FJORD },
-							}),
-							crit(4, {	-- Sholazar Basin
-								["coord"] = { 47.9, 66.0, SHOLAZAR_BASIN },
-							}),
-							crit(5, {	-- Storm Peaks
-								["coord"] = { 41.4, 87.0, THE_STORM_PEAKS },
-							}),
-							crit(6, {	-- Zul'Drak
-								["coord"] = { 40.4, 61.0, ZULDRAK },
-							}),
-							crit(7, {	-- Grizzly Hills
-								["coord"] = { 34.1, 60.7, GRIZZLY_HILLS },
-							}),
-							crit(8, {	-- Crystalsong Forest
-								["coord"] = { 77.7, 74.9, CRYSTALSONG_FOREST },
-							}),
-						}),
-						ach(6014, {	-- Extinguishing the Cataclysm
-							crit(1, {	-- Twilight Highlands
-								["coord"] = { 47.0, 28.3, TWILIGHT_HIGHLANDS },
-							}),
-							crit(2, {	-- Uldum
-								["coord"] = { 53.4, 32.0, ULDUM },
-							}),
-						}),
+					crit(5, {	-- Storm Peaks
+						["coord"] = { 41.4, 87.0, THE_STORM_PEAKS },
 					}),
-					ach(271,  {	-- Burning Hot Pole Dance
-						["description"] = "You need the Mantle of the Fire Festival, Vestment of Summer, and the Sandals of Summer to complete the Midsummer set.",
+					crit(6, {	-- Zul'Drak
+						["coord"] = { 40.4, 61.0, ZULDRAK },
 					}),
-					ach(263),	-- Ice the Frost Lord
-					ach(1145, {	-- King of the Fire Festival
-						["sourceQuests"] = { 9365, 9339 },	-- A Thief's Reward (A, H)
+					crit(7, {	-- Grizzly Hills
+						["coord"] = { 34.1, 60.7, GRIZZLY_HILLS },
 					}),
-					ach(272, {	-- Torch Juggler
-						["maps"] = { NORTHREND_DALARAN },
+					crit(8, {	-- Crystalsong Forest
+						["coord"] = { 77.7, 74.9, CRYSTALSONG_FOREST },
 					}),
-				},
-			})),
-			ach(8044, bubbleDown({["races"] = HORDE_ONLY},{	-- Flame Keeper of Pandaria
-				["races"] = HORDE_ONLY,
-				["groups"] = {
+				}),
+				ach(1033, {		-- Extinguishing Outland (H)
+					crit(1, {	-- Blade's Edge Mountains
+						["coord"] = { 41.8, 65.9, BLADES_EDGE_MOUNTAINS },
+					}),
+					crit(2, {	-- Hellfire Peninsula
+						["coord"] = { 61.9, 58.5, HELLFIRE_PENINSULA },
+					}),
+					crit(3, {	-- Nagrand
+						["coord"] = { 49.7, 69.6, NAGRAND },
+					}),
+					crit(4, {	-- Netherstorm
+						["coord"] = { 31.1, 62.7, NETHERSTORM },
+					}),
+					crit(5, {	-- Shadowmoon Valley
+						["coord"] = { 39.6, 54.3, SHADOWMOON_VALLEY },
+					}),
+					crit(6, {	-- Terokkar Forest
+						["coord"] = { 54.2, 55.4, TEROKKAR_FOREST },
+					}),
+					crit(7, {	-- Zangarmarsh
+						["coord"] = { 68.6, 52.0, ZANGARMARSH },
+					}),
+				}),
+				ach(8043,  {	-- Extinguishing Pandaria (H)
+					["coord"] = { 79.8, 37.0, VALE_OF_ETERNAL_BLOSSOMS },
+				}),
+				ach(11279, {	-- Extinguishing the Broken Isles (H)
+					["coord"] = { 22.8, 58.2, SURAMAR },
+				}),
+				ach(6014, {		-- Extinguishing the Cataclysm (H)
+					crit(1, {	-- Twilight Highlands
+						["coord"] = { 47.0, 28.3, TWILIGHT_HIGHLANDS },
+					}),
+					crit(2, {	-- Uldum
+						["coord"] = { 53.4, 32.0, ULDUM },
+					}),
+				}),
+				
+				ach(6012, {		-- Flame Keeper of Cataclysm (H)
+					crit(1, {	-- Vashj'ir
+						["coord"] = { 49.4, 42.0, 205 },	-- Shimmering Expanse
+					}),
+					crit(2, {	-- Twilight Highlands
+						["coord"] = { 53.0, 46.0, TWILIGHT_HIGHLANDS },
+					}),
+					crit(3, {	-- Hyjal
+						["coord"] = { 62.8, 22.6, MOUNT_HYJAL },
+					}),
+					crit(4, {	-- Deepholm
+						["coord"] = { 49.4, 51.4, 207 },
+					}),
+					crit(5, {	-- Uldum
+						["coord"] = { 53.0, 34.0, ULDUM },
+					}),
+				}),
+				ach(11284, {	-- Flame Keeper of Draenor (H)
+					crit(1, {	-- Spires of Arak
+						["coord"] = { 48.0, 44.6, SPIRES_OF_ARAK },
+					}),
+					crit(2, {	-- Talador
+						["coord"] = { 43.4, 71.8, TALADOR },
+					}),
+					crit(3, {	-- Nagrand
+						["coord"] = { 80.4, 47.6, DRAENOR_NAGRAND },
+					}),
+					crit(4, {	-- Gorgrond
+						["coord"] = { 43.8, 93.8, GORGROND },
+					}),
+					crit(5, {	-- Frostfire Ridge
+						["coord"] = { 72.6, 65.0, FROSTFIRE_RIDGE },
+					}),
+				}),
+				ach(1025, {		-- Flame Keeper of Eastern Kingdoms (H)
+					crit(1,  {	-- Arathi Highlands
+						["coord"] = { 69.4, 42.6, ARATHI_HIGHLANDS },
+					}),
+					crit(2,  {	-- Badlands
+						["coord"] = { 23.1, 37.4, BADLANDS },
+					}),
+					crit(3,  {	-- Blasted Lands
+						["coord"] = { 46.2, 13.8, BLASTED_LANDS },
+					}),
+					crit(4,  {	-- Burning Steppes
+						["coord"] = { 51.1, 29.2, BURNING_STEPPES },
+					}),
+					crit(5,  {	-- Eversong Woods
+						["coord"] = { 46.4, 50.6, EVERSONG_WOODS },
+					}),
+					crit(6,  {	-- Ghostlands
+						["coord"] = { 46.6, 26.3, GHOSTLANDS },
+					}),
+					crit(7,  {	-- Hillsbrad Foothills
+						["coord"] = { 54.7, 50.1, HILLSBRAD_FOOTHILLS },
+					}),
+					crit(8,  {	-- Northern Stranglethorn
+						["coord"] = { 40.6, 50.9, NORTHERN_STRANGLETHORN },
+					}),
+					crit(9,  {	-- Silverpine Forest
+						["coord"] = { 49.6, 38.2, SILVERPINE_FOREST },
+					}),
+					crit(10, {	-- Swamp of Sorrows
+						["coord"] = { 76.3, 13.8, SWAMP_OF_SORROWS },
+					}),
+					crit(11, {	-- The Cape of Stranglethorn
+						["coord"] = { 50.4, 70.4, THE_CAPE_OF_STRANGLETHORN },
+					}),
+					crit(12, {	-- The Hinterlands
+						["coord"] = { 76.6, 75.0, THE_HINTERLANDS },
+					}),
+					crit(13, {	-- Tirisfal Glades
+						["coord"] = { 57.2, 51.8, TIRISFAL_GLADES },
+					}),
+					crit(14, {	-- Western Plaguelands
+						["coord"] = { 29.2, 57.3, WESTERN_PLAGUELANDS },
+					}),
+				}),
+				ach(1026, {		-- Flame Keeper of Kalimdor (H)
+					crit(1,  {	-- Ashenvale
+						["coord"] = { 51.4, 66.1, ASHENVALE },
+					}),
+					crit(2,  {	-- Azshara
+						["coord"] = { 60.8, 53.5, AZSHARA },
+					}),
+					crit(3,  {	-- Desolace
+						["coord"] = { 26.1, 76.9, DESOLACE },
+					}),
+					crit(4,  {	-- Durotar
+						["coord"] = { 52.0, 47.0, DUROTAR },
+					}),
+					crit(5,  {	-- Dustwallow Marsh
+						["coord"] = { 33.0, 30.0, DUSTWALLOW_MARSH },
+					}),
+					crit(6,  {	-- Feralas
+						["coord"] = { 72.4, 47.8, FERALAS },
+					}),
+					crit(7,  {	-- Mulgore
+						["coord"] = { 51.8, 59.3, MULGORE },
+					}),
+					crit(8,  {	-- Northern Barrens
+						["coord"] = { 50.0, 55.0, NORTHERN_BARRENS },
+					}),
+					crit(9,  {	-- Silithus
+						["coord"] = { 50.9, 41.3, SILITHUS },
+					}),
+					crit(10, {	-- Southern Barrens
+						["coord"] = { 41.0, 68.0, SOUTHERN_BARRENS },
+					}),
+					crit(11, {	-- Stonetalon Mountains
+						["coord"] = { 52.9, 62.5, STONETALON_MOUNTAINS },
+					}),
+					crit(12, {	-- Tanaris
+						["coord"] = { 49.8, 27.9, TANARIS },
+					}),
+					crit(13, {	-- Un'goro Crater
+						["coord"] = { 56.0, 66.0, UNGORO_CRATER },
+					}),
+					crit(14, {	-- Winterspring
+						["coord"] = { 58.1, 47.5, WINTERSPRING },
+					}),
+				}),
+				ach(6009, {		-- Flame Keeper of Northrend (H)
+					crit(1, {	-- Dragonblight
+						["coord"] = { 39.0, 48.0, DRAGONBLIGHT },
+					}),
+					crit(2, {	-- Borean Tundra
+						["coord"] = { 51.0, 12.0, BOREAN_TUNDRA },
+					}),
+					crit(3, {	-- Howling Fjord
+						["coord"] = { 48.0, 13.0, HOWLING_FJORD },
+					}),
+					crit(4, {	-- Sholazar Basin
+						["coord"] = { 47.0, 62.0, SHOLAZAR_BASIN },
+					}),
+					crit(5, {	-- Storm Peaks
+						["coord"] = { 40.0, 86.0, THE_STORM_PEAKS },
+					}),
+					crit(6, {	-- Zul'Drak
+						["coord"] = { 43.0, 71.0, ZULDRAK },
+					}),
+					crit(7, {	-- Grizzly Hills
+						["coord"] = { 19.0, 61.0, GRIZZLY_HILLS },
+					}),
+					crit(8, {	-- Crystalsong Forest
+						["coord"] = { 80.0, 53.0, CRYSTALSONG_FOREST },
+					}),
+				}),
+				ach(1027, {		-- Flame Keeper of Outland (H)
+					crit(1, {	-- Blade's Edge Mountains
+						["coord"] = { 50.0, 59.0, BLADES_EDGE_MOUNTAINS },
+					}),
+					crit(2, {	-- Hellfire Peninsula
+						["coord"] = { 55.0, 40.0, HELLFIRE_PENINSULA },
+					}),
+					crit(3, {	-- Nagrand
+						["coord"] = { 51.0, 34.0, NAGRAND },
+					}),
+					crit(4, {	-- Netherstorm
+						["coord"] = { 32.0, 68.0, NETHERSTORM },
+					}),
+					crit(5, {	-- Shadowmoon Valley
+						["coord"] = { 33.0, 30.0, SHADOWMOON_VALLEY },
+					}),
+					crit(6, {	-- Terokkar Forest
+						["coord"] = { 52.0, 43.0, TEROKKAR_FOREST },
+					}),
+					crit(7, {	-- Zangarmarsh
+						["coord"] = { 35.0, 51.0, ZANGARMARSH },
+					}),
+				}),
+				ach(8044, {		-- Flame Keeper of Pandaria (H)
 					crit(1, {	-- Dread Wastes
 						["coord"] = { 56.1, 69.5, DREAD_WASTES },
 					}),
@@ -1121,31 +1173,8 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					crit(7, {	-- Valley of the Four Winds
 						["coord"] = { 51.8, 51.4, VALLEY_OF_THE_FOUR_WINDS },
 					}),
-				},
-			})),
-			ach(11284, bubbleDown({["races"] = HORDE_ONLY},{	-- Flame Keeper of Draenor
-				["races"] = HORDE_ONLY,
-				["groups"] = {
-					crit(1, {	-- Spires of Arak
-						["coord"] = { 48.0, 44.6, SPIRES_OF_ARAK },
-					}),
-					crit(2, {	-- Talador
-						["coord"] = { 43.4, 71.8, TALADOR },
-					}),
-					crit(3, {	-- Nagrand
-						["coord"] = { 80.4, 47.6, DRAENOR_NAGRAND },
-					}),
-					crit(4, {	-- Gorgrond
-						["coord"] = { 43.8, 93.8, GORGROND },
-					}),
-					crit(5, {	-- Frostfire Ridge
-						["coord"] = { 72.6, 65.0, FROSTFIRE_RIDGE },
-					}),
-				},
-			})),
-			ach(11282, bubbleDown({["races"] = HORDE_ONLY},{	-- Flame Keeper of the Broken Isles
-				["races"] = HORDE_ONLY,
-				["groups"] = {
+				}),
+				ach(11282, {	-- Flame Keeper of the Broken Isles (H)
 					crit(1, {	-- Azsuna
 						["coord"] = { 48.2, 29.6, AZSUNA },
 					}),
@@ -1161,11 +1190,8 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					crit(5, {	-- Suramar
 						["coord"] = { 30.4, 45.4, SURAMAR },
 					}),
-				},
-			})),
-			ach(13340, bubbleDown({["races"] = HORDE_ONLY},{	-- Flame Keeper of Zandalar
-				["races"] = HORDE_ONLY,
-				["groups"] = {
+				}),
+				ach(13340, {	-- Flame Keeper of Zandalar (H)
 					crit(1, {	-- Zuldazar
 						["coord"] = { 53.3, 48.1, ZULDAZAR },
 					}),
@@ -1175,34 +1201,30 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					crit(3, {	-- Vol'dun
 						["coord"] = { 56.0, 47.8, VOLDUN },
 					}),
-				},
+				}),
+				
+				ach(1036, {		-- The Fires of Azeroth (H)
+					["sym"] = {
+						{"select","achievementID",
+							1025,	-- Flame Keeper of Eastern Kingdoms (H)
+							1026,	-- Flame Keeper of Kalimdor (H)
+							1027,	-- Flame Keeper of Outland (H)
+							6009,	-- Flame Keeper of Northrend (H)
+							6012,	-- Flame Keeper of Cataclysm (H)
+						},
+					},
+				}),
 			})),
-			ach(8043,  {	-- Extinguishing Pandaria
-				["coord"] = { 79.8, 37.0, VALE_OF_ETERNAL_BLOSSOMS },
-				["races"] = HORDE_ONLY,
+			ach(271,  {	-- Burning Hot Pole Dance
+				["description"] = "You need the Mantle of the Fire Festival, Vestment of Summer, and the Sandals of Summer to complete the Midsummer set.",
 			}),
-			ach(11277, {	-- Extinguishing Draenor
-				["coord"] = { 42.8, 35.9, DRAENOR_SHADOWMOON_VALLEY },
-				["races"] = HORDE_ONLY,
+			ach(263),	-- Ice the Frost Lord
+			ach(1145, {	-- King of the Fire Festival
+				["sourceQuests"] = { 9365, 9339 },	-- A Thief's Reward (A, H)
 			}),
-			ach(11279, {	-- Extinguishing the Broken Isles
-				["coord"] = { 22.8, 58.2, SURAMAR },
-				["races"] = HORDE_ONLY,
+			ach(272,  {	-- Torch Juggler
+				["maps"] = { NORTHREND_DALARAN },
 			}),
-			ach(13342, bubbleDown({["races"] = HORDE_ONLY},{	-- Extinguishing Kul Tiras
-				["races"] = HORDE_ONLY,
-				["groups"] = {
-					crit(1, {	-- Tiragarde Sound
-						["coord"] = { 76.3, 49.7, TIRAGARDE_SOUND },
-					}),
-					crit(2, {	-- Stormsong Valley
-						["coord"] = { 36.0, 51.5, STORMSONG_VALLEY },
-					}),
-					crit(3, {	-- Drustvar
-						["coord"] = { 40.2, 47.3, DRUSTVAR },
-					}),
-				},
-			})),
 		}),
 		-- #endif
 		n(QUESTS, {

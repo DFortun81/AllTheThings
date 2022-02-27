@@ -1,9 +1,24 @@
 --------------------------------------------------
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
-
-root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, bubbleDown({ ["u"] = CHILDRENS_WEEK },{
-	achcat(ACHIEVEMENT_CATEGORY_CHILDRENS_WEEK, {
+root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, {
+	applyholiday(CHILDRENS_WEEK, achcat(ACHIEVEMENT_CATEGORY_CHILDRENS_WEEK, {
+		ach(1793, {	-- For the Children
+			-- Meta Achievement should symlink the contained Achievements from Source
+			["sym"] = {
+				{"select","achievementID",
+					1791,				-- Home Alone
+					1788,				-- Bad Example
+					1789,				-- Daily Chores
+					1792,				-- Aw, Isn't It Cute?
+					1786,				-- School of Hard Knocks
+					1790,				-- Hail To The King, Baby
+				},
+			},
+			["groups"] = {
+				title_gendered(105, 104),	-- Patron / Matron
+			},
+		}),
 		ach(1792),	-- Aw, Isn't It Cute?
 		ach(1788, {	-- Bad Example
 			crit(1),	-- Tigule's Strawberry Ice Cream
@@ -28,5 +43,5 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, bubbleDown({ ["u"
 			crit(2),	-- Willy
 			crit(3),	-- Egbert
 		}),
-	}),
-})));
+	})),
+}));

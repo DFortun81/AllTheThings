@@ -1,9 +1,32 @@
 --------------------------------------------------
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
-
-root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, bubbleDown({ ["u"] = LOVE_IS_IN_THE_AIR },{
-	achcat(ACHIEVEMENT_CATEGORY_LOVE_IS_IN_THE_AIR, {
+root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, {
+	applyholiday(LOVE_IS_IN_THE_AIR, achcat(ACHIEVEMENT_CATEGORY_LOVE_IS_IN_THE_AIR, {
+		ach(1693, {	-- Fool For Love
+			-- Meta Achievement should symlink the contained Achievements from Source
+			["sym"] = {
+				{"select","achievementID",
+					260,	-- Charming
+					1188,	-- Shafted!
+					1279,	-- Flirt With Disaster [Alliance]
+					1280,	-- Flirt With Disaster [Horde]
+					1291,	-- Lonely?
+					1695,	-- Dangerous Love
+					1696,	-- The Rocket's Pink Glare
+					1697,	-- Nation of Adoration [Alliance]
+					1698,	-- Nation of Adoration [Horde]
+					1699,	-- Fistful of Love
+					1702,	-- Sweet Tooth
+					1701,	-- Be Mine!
+					1703,	-- My Love is Like a Red, Red Rose
+					1704,	-- I Pitied The Fool
+				},
+			},
+			["groups"] = {
+				title(103),	-- the Love Fool
+			},
+		}),
 		ach(1701, {	-- Be Mine!
 			crit(1, {	-- Be Mine!
 				["cost"] = { { "i", 21816, 1 } },	-- 1x Heart Candy (Be Mine!)
@@ -128,5 +151,5 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, bubbleDown({ ["u"
 			ach(9392),	-- Love Magnet (10)
 		}),
 		ach(4624),	-- Tough Love (Shadowfang Keep)
-	}),
-})));
+	})),
+}));

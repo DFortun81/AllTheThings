@@ -142,6 +142,21 @@ _.Holidays = { applyholiday(BREWFEST, {
 	-- #endif
 	["groups"] = {
 		n(ACHIEVEMENTS, {
+			ach(1683, {	-- Brewmaster
+				-- Meta Achievement should symlink the contained Achievements from Source
+				["sym"] = {
+					{"select","achievementID",
+						1185,				-- The Brewfest Diet
+						2796,				-- Brew of the Month
+						295,				-- Direbrewfest
+						303,				-- Have Keg, Will Travel
+						1936,				-- Does Your Wolpertinger Linger?
+					},
+				},
+				["groups"] = {
+					title(101),				-- Brewmaster
+				},
+			}),
 			removeclassicphase(ach(3496, {	-- A Brew-FAST Mount
 				["providers"] = {
 					{ "i", 37828 },	-- Great Brewfest Kodo
@@ -215,9 +230,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 				crit(12, {	-- Aromatic Honey Brew
 					["cost"] = { { "i", 37490, 1 } },	-- Aromatic Honey Brew
 				}),
-			}),
-			ach(1683, {	-- Brewmaster
-				title(101),	-- Brewmaster
 			}),
 			ach(295),	-- Direbrewfest
 			ach(293),	-- Disturbing the Peace

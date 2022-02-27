@@ -1,9 +1,32 @@
 --------------------------------------------------
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
-
-root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, bubbleDown({ ["u"] = LUNAR_FESTIVAL },{
-	achcat(ACHIEVEMENT_CATEGORY_LUNAR_FESTIVAL, {
+root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, {
+	applyholiday(LUNAR_FESTIVAL, achcat(ACHIEVEMENT_CATEGORY_LUNAR_FESTIVAL, {
+		ach(913, {	-- To Honor One's Elders
+			-- Meta Achievement should symlink the contained Achievements from Source
+			["sym"] = {
+				{"select","achievementID",
+					-- #if AFTER CATA
+					6006,				-- Elders of Cataclysm
+					-- #endif
+					912,				-- Elders of Eastern Kingdoms
+					911,				-- Elders of Kalimdor
+					910,				-- Elders of the Dungeons
+					914,				-- Elders of the Horde
+					915,				-- Elders of the Alliance
+					1396,				-- Elders of Northrend
+					609,				-- 50 Coins of Ancestry
+					626,				-- Lunar Festival Finery
+					1281,				-- The Rocket's Red Glare
+					1552,				-- Frenzied Firecracker
+					937,				-- Elune's Blessing
+				},
+			},
+			["groups"] = {
+				title(43),				-- Elder
+			},
+		}),
 		ach(609, {	-- 50 Coins of Ancestry
 			ach(608),	-- 25 Coins of Ancestry
 			ach(607),	-- 10 Coins of Ancestry
@@ -112,5 +135,5 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, bubbleDown({ ["u"
 		ach(1552),	-- Frenzied Firecracker
 		ach(626),	-- Lunar Festival Finery
 		ach(1281),	-- The Rocket's Red Glare
-	}),
-})));
+	})),
+}));

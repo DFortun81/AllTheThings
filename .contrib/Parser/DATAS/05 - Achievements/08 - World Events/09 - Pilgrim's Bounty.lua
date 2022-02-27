@@ -1,9 +1,32 @@
 --------------------------------------------------
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
-
-root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, bubbleDown({ ["u"] = PILGRIMS_BOUNTY },{
-	achcat(ACHIEVEMENT_CATEGORY_PILGRIMS_BOUNTY, {
+root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, {
+	applyholiday(PILGRIMS_BOUNTY, achcat(ACHIEVEMENT_CATEGORY_PILGRIMS_BOUNTY, {
+		ach(3478, {	-- Pilgrim
+			-- Meta Achievement should symlink the contained Achievements from Source
+			["sym"] = {
+				{"select","achievementID",
+					3579,				-- "FOOD FIGHT!"
+					3576,				-- Now We're Cookin' (A)
+					3577,				-- Now We're Cookin' (H)
+					3556,				-- Pilgrim's Paunch (A)
+					3557,				-- Pilgrim's Paunch (H)
+					3580,				-- Pilgrim's Peril (A)
+					3581,				-- Pilgrim's Peril (H)
+					3596,				-- Pilgrim's Progress (A)
+					3597,				-- Pilgrim's Progress (H)
+					3558,				-- Sharing is Caring
+					3582,				-- Terokkar Turkey Time
+					3578,				-- The Turkinator
+					3559,				-- Turkey Lurkey
+				},
+			},
+			["groups"] = {
+				title(133),				-- the Pilgrim
+				i(44810),				-- Turkey Cage
+			},
+		}),
 		ach(3579),	-- "FOOD FIGHT!"
 		ach(3576, {	-- Now We're Cookin' (A)
 			["races"] = ALLIANCE_ONLY,
@@ -102,5 +125,5 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, bubbleDown({ ["u"
 			crit(9),	-- Undead Rogue
 			crit(10),	-- Worgen Rogue
 		}),
-	}),
-})));
+	})),
+}));

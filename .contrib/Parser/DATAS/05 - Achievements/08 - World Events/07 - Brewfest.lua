@@ -1,9 +1,23 @@
 --------------------------------------------------
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
-
-root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, bubbleDown({ ["u"] = BREWFEST },{
-	achcat(ACHIEVEMENT_CATEGORY_BREWFEST, {
+root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, {
+	applyholiday(BREWFEST, achcat(ACHIEVEMENT_CATEGORY_BREWFEST, {
+		ach(1683, {	-- Brewmaster
+			-- Meta Achievement should symlink the contained Achievements from Source
+			["sym"] = {
+				{"select","achievementID",
+					1185,				-- The Brewfest Diet
+					2796,				-- Brew of the Month
+					295,				-- Direbrewfest
+					303,				-- Have Keg, Will Travel
+					1936,				-- Does Your Wolpertinger Linger?
+				},
+			},
+			["groups"] = {
+				title(101),				-- Brewmaster
+			},
+		}),
 		ach(1260),		-- Almost Blind Luck
 		ach(2796),		-- Brew of the Month
 		ach(1183, {		-- Brew of the Year
@@ -62,5 +76,5 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, bubbleDown({ ["u"
 			crit(7),		-- The Essential Brewfest Pretzel
 			crit(8),		-- The Golden Link
 		}),
-	}),
-})));
+	})),
+}));

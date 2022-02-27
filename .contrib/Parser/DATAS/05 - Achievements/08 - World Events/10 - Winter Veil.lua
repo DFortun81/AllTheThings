@@ -1,9 +1,31 @@
 --------------------------------------------------
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
-
-root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, bubbleDown({ ["u"] = FEAST_OF_WINTER_VEIL },{
-	achcat(ACHIEVEMENT_CATEGORY_WINTER_VEIL, {
+root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, {
+	applyholiday(FEAST_OF_WINTER_VEIL, achcat(ACHIEVEMENT_CATEGORY_WINTER_VEIL, {
+		ach(1691, {	-- Merrymaker
+			-- Meta Achievement should symlink the contained Achievements from Source
+			["sym"] = {
+				{"select","achievementID",
+					273,			-- On Metzen!
+					252,			-- With a Little Helper from My Friends
+					1255,			-- Scrooge (A)
+					259,			-- Scrooge (H)
+					1282,			-- Fa-la-la-la-Ogri'la
+					277,			-- 'Tis the Season
+					279,			-- Simply Abominable
+					1687,			-- Let It Snow
+					1686,			-- Bros. Before Ho Ho Ho's (A)
+					1685,			-- Bros. Before Ho Ho Ho's (H)
+					1688,			-- The Winter Veil Gourmet
+					1689,			-- He Knows If You've Been Naughty
+					1690,			-- A Frosty Shake
+				},
+			},
+			["groups"] = {
+				title(102),				-- Merrymaker
+			},
+		}),
 		ach(277),		-- 'Tis the Season
 		ach(1690),		-- A Frosty Shake (Dalaran - NR)
 		ach(5853,  {	-- A-Caroling We Will Go (A)
@@ -122,5 +144,5 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, bubbleDown({ ["u"
 			crit(3),		-- Hot Apple Cider
 		}),
 		ach(252),		-- With a Little Helper from My Friends
-	}),
-})));
+	})),
+}));

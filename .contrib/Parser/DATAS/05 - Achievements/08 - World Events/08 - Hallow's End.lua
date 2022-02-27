@@ -1,9 +1,30 @@
 --------------------------------------------------
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
-
-root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, bubbleDown({ ["u"] = HALLOWS_END },{
-	achcat(ACHIEVEMENT_CATEGORY_HALLOWS_END, {
+root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, {
+	applyholiday(HALLOWS_END, achcat(ACHIEVEMENT_CATEGORY_HALLOWS_END, {
+		ach(1656, {	-- Hallowed Be Thy Name
+			-- Meta Achievement should symlink the contained Achievements from Source
+			["sym"] = {
+				{"select","achievementID",
+					972,				-- Trick or Treat!
+					288,				-- Out With It
+					255,				-- Bring Me The Head of... Oh Wait
+					289,				-- The Savior of Hallow's End
+					981,				-- That Sparkling Smile
+					1040,				-- Rotten Hallow (A)
+					1041,				-- Rotten Hallow (H)
+					1261,				-- G.N.E.R.D. Rage
+					291,				-- Check Your Head
+					283,				-- The Masquerade
+					292,				-- Sinister Calling
+					971,				-- Tricks and Treats of Azeroth
+				},
+			},
+			["groups"] = {
+				title(92),				-- the Hallowed
+			},
+		}),
 		ach(10365),	-- A Frightening Friend
 		ach(284,  {	-- A Mask for All Occasions
 			crit(1),	-- Blood Elf Female Mask
@@ -405,5 +426,5 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, bubbleDown({ ["u"
 				crit(13),	-- Vashj'ir, Tenebrous Cavern
 			},
 		}),
-	}),
-})));
+	})),
+}));

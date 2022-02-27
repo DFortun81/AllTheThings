@@ -33,6 +33,24 @@ _.Holidays = { applyholiday(PILGRIMS_BOUNTY, {
 		-- #if AFTER WRATH
 		n(ACHIEVEMENTS, {
 			ach(3478, {	-- Pilgrim
+				-- Meta Achievement should symlink the contained Achievements from Source
+				["sym"] = {
+					{"select","achievementID",
+						3579,				-- "FOOD FIGHT!"
+						3576,				-- Now We're Cookin' (A)
+						3577,				-- Now We're Cookin' (H)
+						3556,				-- Pilgrim's Paunch (A)
+						3557,				-- Pilgrim's Paunch (H)
+						3580,				-- Pilgrim's Peril (A)
+						3581,				-- Pilgrim's Peril (H)
+						3596,				-- Pilgrim's Progress (A)
+						3597,				-- Pilgrim's Progress (H)
+						3558,				-- Sharing is Caring
+						3582,				-- Terokkar Turkey Time
+						3578,				-- The Turkinator
+						3559,				-- Turkey Lurkey
+					},
+				},
 				["timeline"] = { "added 3.2.2.10505" },
 				["groups"] = {
 					title(133, {	-- <Name> the Pilgrim [NOTE: WoWHead's ID is incorrect, don't look at this and freak out like I did. - Crieve]

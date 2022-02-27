@@ -1,9 +1,40 @@
 --------------------------------------------------
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
-
-root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, bubbleDown({ ["u"] = MIDSUMMER_FIRE_FESTIVAL },{
-	achcat(ACHIEVEMENT_CATEGORY_MIDSUMMER, {
+root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, {
+	applyholiday(MIDSUMMER_FIRE_FESTIVAL, achcat(ACHIEVEMENT_CATEGORY_MIDSUMMER, {
+		a(ach(1038, {	-- The Flame Warden (Alliance)
+			-- Meta Achievement should symlink the contained Achievements from Source
+			["sym"] = {
+				{"select","achievementID",
+					1034,				-- The Fires of Azeroth
+					1035,				-- Desecration of the Horde/Alliance
+					263,				-- Ice the Frost Lord
+					271,				-- Burning Hot Pole Dance
+					1145,				-- King of the Fire Festival
+					272,				-- Torch Juggler
+				},
+			},
+			["groups"] = {
+				title(44),				-- Flame Warden
+			},
+		})),
+		h(ach(1039, {	-- The Flame Keeper (Horde)
+			-- Meta Achievement should symlink the contained Achievements from Source
+			["sym"] = {
+				{"select","achievementID",
+					1036,				-- The Fires of Azeroth
+					1037,				-- Desecration of the Horde/Alliance
+					263,				-- Ice the Frost Lord
+					271,				-- Burning Hot Pole Dance
+					1145,				-- King of the Fire Festival
+					272,				-- Torch Juggler
+				},
+			},
+			["groups"] = {
+				title(45),				-- Flame Keeper
+			},
+		})),
 		ach(271),	-- Burning Hot Pole Dance
 		ach(1037,  {	-- Desecration of the Alliance
 			["races"] = HORDE_ONLY,
@@ -452,5 +483,5 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, bubbleDown({ ["u"
 			},
 		}),
 		ach(272),		-- Torch Juggler
-	}),
-})));
+	})),
+}));

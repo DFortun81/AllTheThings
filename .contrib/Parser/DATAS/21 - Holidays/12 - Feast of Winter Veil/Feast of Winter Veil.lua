@@ -57,7 +57,27 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 	["groups"] = {
 		n(ACHIEVEMENTS, {
 			ach(1691, {	-- Merrymaker
-				title(102),	-- Merrymaker
+				-- Meta Achievement should symlink the contained Achievements from Source
+				["sym"] = {
+					{"select","achievementID",
+						273,			-- On Metzen!
+						252,			-- With a Little Helper from My Friends
+						1255,			-- Scrooge (A)
+						259,			-- Scrooge (H)
+						1282,			-- Fa-la-la-la-Ogri'la
+						277,			-- 'Tis the Season
+						279,			-- Simply Abominable
+						1687,			-- Let It Snow
+						1686,			-- Bros. Before Ho Ho Ho's (A)
+						1685,			-- Bros. Before Ho Ho Ho's (H)
+						1688,			-- The Winter Veil Gourmet
+						1689,			-- He Knows If You've Been Naughty
+						1690,			-- A Frosty Shake
+					},
+				},
+				["groups"] = {
+					title(102),				-- Merrymaker
+				},
 			}),
 			ach(277),	-- 'Tis the Season
 			ach(5853, {	-- A-Caroling We Will Go (A)

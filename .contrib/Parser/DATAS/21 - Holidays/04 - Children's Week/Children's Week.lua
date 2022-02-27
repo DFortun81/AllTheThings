@@ -85,134 +85,147 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 		-- #if AFTER WRATH
 		n(ACHIEVEMENTS, {
 			ach(1793, {	-- For the Children
-				title_gendered(105, 104),	-- Patron / Matron
-				ach(1792),	-- Aw, Isn't It Cute?
-				ach(1788, {	-- Bad Example
-					{	-- Dalaran Brownie
-						["achievementID"] = 1788,	-- Bad Example
-						["criteriaID"] = 6,	-- Dalaran Brownie
-						["cost"] = { { "i", 42431, 1 } },	-- Dalaran Brownie
-						["maps"] = {
-							NORTHREND_DALARAN,
-							LEGION_DALARAN,
-						},
+				-- Meta Achievement should symlink the contained Achievements from Source
+				["sym"] = {
+					{"select","achievementID",
+						1791,				-- Home Alone
+						1788,				-- Bad Example
+						1789,				-- Daily Chores
+						1792,				-- Aw, Isn't It Cute?
+						1786,				-- School of Hard Knocks
+						1790,				-- Hail To The King, Baby
 					},
-					{	-- Dalaran Doughnut
-						["achievementID"] = 1788,	-- Bad Example
-						["criteriaID"] = 7,	-- Dalaran Doughnut
-						["cost"] = { { "i", 42430, 1 } },	-- Dalaran Doughnut
-						["maps"] = {
-							NORTHREND_DALARAN,
-							LEGION_DALARAN,
-						},
-					},
-					{	-- Delicious Chocolate Cake
-						["achievementID"] = 1788,	-- Bad Example
-						["criteriaID"] = 4,	-- Delicious Chocolate Cake
-						["cost"] = { { "i", 33924, 1 } },	-- Delicious Chocolate Cake
-						["maps"] = {
-							NORTHREND_DALARAN,
-							LEGION_DALARAN,
-						},
-					},
-					{	-- Lovely Cake Slice
-						["achievementID"] = 1788,	-- Bad Example
-						["criteriaID"] = 5,	-- Lovely Cake Slice
-						["cost"] = { { "i", 42438, 1 } },	-- Lovely Cake
-						["cr"] = 64099,	-- Pink Peony [TODO: Remove, add vendor to zone]
-						["coord"] = { 46.88, 34.02, 393 },	-- Pink Peony [Shrine of Seven Stars]
-						["maps"] = {
-							NORTHREND_DALARAN,
-							LEGION_DALARAN,
-						},
-					},
-					{	-- Red Velvet Cupcake
-						["achievementID"] = 1788,	-- Bad Example
-						["criteriaID"] = 3,	-- Red Velvet Cupcake
-						["cost"] = { { "i", 42429, 1 } },	-- Red Velvet Cupcake
-						["cr"] = 64099,	-- Pink Peony [TODO: Remove, add vendor to zone]
-						["coord"] = { 46.88, 34.02, 393 },	-- Pink Peony [Shrine of Seven Stars]
-						["maps"] = {
-							NORTHREND_DALARAN,
-							LEGION_DALARAN,
-						},
-					},
-					{	-- Tasty Cupcake
-						["achievementID"] = 1788,	-- Bad Example
-						["criteriaID"] = 2,	-- Tasty Cupcake
-						["cost"] = { { "i", 43490, 1 } },	-- Tasty Cupcake
-					},
-					{	-- Tigule's Strawberry Ice Cream
-						["achievementID"] = 1788,	-- Bad Example
-						["criteriaID"] = 1,	-- Tigule's Strawberry Ice Cream
-						["cost"] = { { "i", 7228, 1 } },	-- Tigule's Strawberry Ice Cream
-						["crs"] = { -- TODO: Remove, add vendors to zones
-							-- Katrina Shimmerstar & Rachelle Gothena are listed on WoWHead, but only appear during Hallow's End.
-							14480,	-- Alowicious Czervik
-							47383,	-- Brivelthwerp
-							18914,	-- Caregiver Isel
-							14481,	-- Emmithue Smails
-							49893,	-- Lisa McKeever
-							18913,	-- Matron Tikkit
-							24934,	-- Snack-O-Matic IV
-						},
-						["coords"] = {
-							{ 53.32, 79.27, ORGRIMMAR },	-- Alowicious Czervik
-							{ 69.87, 85.18, THOUSAND_NEEDLES },	-- Brivelthwerp
-							{ 54.22, 76.11, NAGRAND },	-- Caregiver Isel
-							{ 56.73, 34.51, NAGRAND },	-- Matron Tikkit
-							{ 53.66, 53.01, ORGRIMMAR },	-- Snack-O-Matic IV
-						},
-						["maps"] = {
-							STORMWIND_CITY,
-							86,	-- Orgrimmar
-						},
-					},
-				}),
-				ach(1789),	-- Daily Chores
-				ach(1790, {	-- Hail To The King, Baby
+				},
+				["groups"] = {
+					title_gendered(105, 104),	-- Patron / Matron
+				},
+			}),
+			ach(1792),	-- Aw, Isn't It Cute?
+			ach(1788, {	-- Bad Example
+				{	-- Dalaran Brownie
+					["achievementID"] = 1788,	-- Bad Example
+					["criteriaID"] = 6,	-- Dalaran Brownie
+					["cost"] = { { "i", 42431, 1 } },	-- Dalaran Brownie
 					["maps"] = {
-						136,	-- Lower Pinnacle, Utgarde Pinnacle
-						137,	-- Upper Pinnacle, Utgarde Pinnacle
+						NORTHREND_DALARAN,
+						LEGION_DALARAN,
 					},
-				}),
-				ach(1791),	-- Home Alone
-				ach(1786, {	-- School of Hard Knocks
-					{	-- Assault a flag in Arathi Basin
-						["achievementID"] = 1786,	-- School of Hard Knocks
-						["criteriaID"] = 3,	-- Assault a flag in Arathi Basin
-						["maps"] = {
-							ARATHI_BASIN,
-							837,	-- Arathi Basin
-							844,	-- Arathi Basin
-							1383,	-- Arathi Basin
-							1366,	-- Arathi Basin
-						},
+				},
+				{	-- Dalaran Doughnut
+					["achievementID"] = 1788,	-- Bad Example
+					["criteriaID"] = 7,	-- Dalaran Doughnut
+					["cost"] = { { "i", 42430, 1 } },	-- Dalaran Doughnut
+					["maps"] = {
+						NORTHREND_DALARAN,
+						LEGION_DALARAN,
 					},
-					{	-- Assault a tower in Alterac Valley
-						["achievementID"] = 1786,	-- School of Hard Knocks
-						["criteriaID"] = 2,	-- Assault a tower in Alterac Valley
-						["maps"] = {
-							ALTERAC_VALLEY,
-						},
+				},
+				{	-- Delicious Chocolate Cake
+					["achievementID"] = 1788,	-- Bad Example
+					["criteriaID"] = 4,	-- Delicious Chocolate Cake
+					["cost"] = { { "i", 33924, 1 } },	-- Delicious Chocolate Cake
+					["maps"] = {
+						NORTHREND_DALARAN,
+						LEGION_DALARAN,
 					},
-					{	-- Capture the flag in Eye of the Storm
-						["achievementID"] = 1786,	-- School of Hard Knocks
-						["criteriaID"] = 1,	-- Capture the flag in Eye of the Storm
-						["maps"] = {
-							EYE_OF_THE_STORM,
-						},
+				},
+				{	-- Lovely Cake Slice
+					["achievementID"] = 1788,	-- Bad Example
+					["criteriaID"] = 5,	-- Lovely Cake Slice
+					["cost"] = { { "i", 42438, 1 } },	-- Lovely Cake
+					["cr"] = 64099,	-- Pink Peony [TODO: Remove, add vendor to zone]
+					["coord"] = { 46.88, 34.02, 393 },	-- Pink Peony [Shrine of Seven Stars]
+					["maps"] = {
+						NORTHREND_DALARAN,
+						LEGION_DALARAN,
 					},
-					{	-- Return a fallen flag in Warsong Gulch
-						["achievementID"] = 1786,	-- School of Hard Knocks
-						["criteriaID"] = 4,	-- Return a fallen flag in Warsong Gulch
-						["maps"] = {
-							WARSONG_GULCH,
-							859,	-- Warsong Gulch
-							1339,	-- Warsong Gulch
-						},
+				},
+				{	-- Red Velvet Cupcake
+					["achievementID"] = 1788,	-- Bad Example
+					["criteriaID"] = 3,	-- Red Velvet Cupcake
+					["cost"] = { { "i", 42429, 1 } },	-- Red Velvet Cupcake
+					["cr"] = 64099,	-- Pink Peony [TODO: Remove, add vendor to zone]
+					["coord"] = { 46.88, 34.02, 393 },	-- Pink Peony [Shrine of Seven Stars]
+					["maps"] = {
+						NORTHREND_DALARAN,
+						LEGION_DALARAN,
 					},
-				}),
+				},
+				{	-- Tasty Cupcake
+					["achievementID"] = 1788,	-- Bad Example
+					["criteriaID"] = 2,	-- Tasty Cupcake
+					["cost"] = { { "i", 43490, 1 } },	-- Tasty Cupcake
+				},
+				{	-- Tigule's Strawberry Ice Cream
+					["achievementID"] = 1788,	-- Bad Example
+					["criteriaID"] = 1,	-- Tigule's Strawberry Ice Cream
+					["cost"] = { { "i", 7228, 1 } },	-- Tigule's Strawberry Ice Cream
+					["crs"] = { -- TODO: Remove, add vendors to zones
+						-- Katrina Shimmerstar & Rachelle Gothena are listed on WoWHead, but only appear during Hallow's End.
+						14480,	-- Alowicious Czervik
+						47383,	-- Brivelthwerp
+						18914,	-- Caregiver Isel
+						14481,	-- Emmithue Smails
+						49893,	-- Lisa McKeever
+						18913,	-- Matron Tikkit
+						24934,	-- Snack-O-Matic IV
+					},
+					["coords"] = {
+						{ 53.32, 79.27, ORGRIMMAR },	-- Alowicious Czervik
+						{ 69.87, 85.18, THOUSAND_NEEDLES },	-- Brivelthwerp
+						{ 54.22, 76.11, NAGRAND },	-- Caregiver Isel
+						{ 56.73, 34.51, NAGRAND },	-- Matron Tikkit
+						{ 53.66, 53.01, ORGRIMMAR },	-- Snack-O-Matic IV
+					},
+					["maps"] = {
+						STORMWIND_CITY,
+						86,	-- Orgrimmar
+					},
+				},
+			}),
+			ach(1789),	-- Daily Chores
+			ach(1790, {	-- Hail To The King, Baby
+				["maps"] = {
+					136,	-- Lower Pinnacle, Utgarde Pinnacle
+					137,	-- Upper Pinnacle, Utgarde Pinnacle
+				},
+			}),
+			ach(1791),	-- Home Alone
+			ach(1786, {	-- School of Hard Knocks
+				{	-- Assault a flag in Arathi Basin
+					["achievementID"] = 1786,	-- School of Hard Knocks
+					["criteriaID"] = 3,	-- Assault a flag in Arathi Basin
+					["maps"] = {
+						ARATHI_BASIN,
+						837,	-- Arathi Basin
+						844,	-- Arathi Basin
+						1383,	-- Arathi Basin
+						1366,	-- Arathi Basin
+					},
+				},
+				{	-- Assault a tower in Alterac Valley
+					["achievementID"] = 1786,	-- School of Hard Knocks
+					["criteriaID"] = 2,	-- Assault a tower in Alterac Valley
+					["maps"] = {
+						ALTERAC_VALLEY,
+					},
+				},
+				{	-- Capture the flag in Eye of the Storm
+					["achievementID"] = 1786,	-- School of Hard Knocks
+					["criteriaID"] = 1,	-- Capture the flag in Eye of the Storm
+					["maps"] = {
+						EYE_OF_THE_STORM,
+					},
+				},
+				{	-- Return a fallen flag in Warsong Gulch
+					["achievementID"] = 1786,	-- School of Hard Knocks
+					["criteriaID"] = 4,	-- Return a fallen flag in Warsong Gulch
+					["maps"] = {
+						WARSONG_GULCH,
+						859,	-- Warsong Gulch
+						1339,	-- Warsong Gulch
+					},
+				},
 			}),
 			ach(275, {	-- Veteran Nanny
 				["maps"] = { SHATTRATH_CITY },
