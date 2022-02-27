@@ -479,8 +479,13 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			}),
 		}),
 		ach(6622,  {	-- Big City Pet Brawler
-			crit(1),	-- Big City Pet Brawlin' - Horde
-			crit(2),	-- Big City Pet Brawlin' - Alliance
+			-- Meta Achievement should symlink the contained Achievements from Source
+			["sym"] = {
+				{"select","achievementID",
+					6584,	-- Big City Pet Brawlin' - Alliance
+					6621,	-- Big City Pet Brawlin' - Horde
+				},
+			},
 		}),
 		ach(6584,  {	-- Big City Pet Brawlin' - Alliance
 			crit(1),	-- Stormwind
@@ -505,1382 +510,1083 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 		ach(9463,  {	-- Draenic Pet Battler
 			i(111999),	-- Menagerie, Level 3 [Blueprints]
 		}),
-		pvp(ach(13279, {	-- Family Battler
-			i(165907),	-- Wicker Wraith
-			ach(13280, {	-- Hobbyist Aquarist
-				crit(1),	-- Captain Hermes
-				crit(2),	-- Eddie Fixit
-				crit(3),	-- Dilbert McClint
-				crit(4),	-- Fizzie Sparkwhistle
-				crit(5),	-- Michael Skarn
-				crit(6),	-- Ellie Vern
-				crit(7),	-- Leana Darkwind
-				crit(8),	-- Kwint
-				crit(9),	-- Delia Hanako
-				crit(10),	-- Burly
-				crit(11),	-- Lozu
-				crit(12),	-- Grady Prett
-				crit(13),	-- Korval Darkbeard
-				crit(14),	-- Keeyo
-				crit(15),	-- Sizzik
-				crit(16),	-- Kusa
-				crit(17),	-- Karaga
-				crit(18),	-- Talia Sparkbrow
-				crit(19),	-- Zujai
-			}),
-			ach(13270, {	-- Beast Mode
-				crit(1),	-- Captain Hermes
-				crit(2),	-- Eddie Fixit
-				crit(3),	-- Dilbert McClint
-				crit(4),	-- Fizzie Sparkwhistle
-				crit(5),	-- Michael Skarn
-				crit(6),	-- Ellie Vern
-				crit(7),	-- Leana Darkwind
-				crit(8),	-- Kwint
-				crit(9),	-- Delia Hanako
-				crit(10),	-- Burly
-				crit(11),	-- Lozu
-				crit(12),	-- Grady Prett
-				crit(13),	-- Korval Darkbeard
-				crit(14),	-- Keeyo
-				crit(15),	-- Sizzik
-				crit(16),	-- Kusa
-				crit(17),	-- Karaga
-				crit(18),	-- Talia Sparkbrow
-				crit(19),	-- Zujai
-			}),
-			ach(13271, {	-- Critters with Huge Teeth
-				crit(1),	-- Captain Hermes
-				crit(2),	-- Eddie Fixit
-				crit(3),	-- Dilbert McClint
-				crit(4),	-- Fizzie Sparkwhistle
-				crit(5),	-- Michael Skarn
-				crit(6),	-- Ellie Vern
-				crit(7),	-- Leana Darkwind
-				crit(8),	-- Kwint
-				crit(9),	-- Delia Hanako
-				crit(10),	-- Burly
-				crit(11),	-- Lozu
-				crit(12),	-- Grady Prett
-				crit(13),	-- Korval Darkbeard
-				crit(14),	-- Keeyo
-				crit(15),	-- Sizzik
-				crit(16),	-- Kusa
-				crit(17),	-- Karaga
-				crit(18),	-- Talia Sparkbrow
-				crit(19),	-- Zujai
-			}),
-			ach(13272, {	-- Dragons Make Everything Better
-				crit(1),	-- Captain Hermes
-				crit(2),	-- Eddie Fixit
-				crit(3),	-- Dilbert McClint
-				crit(4),	-- Fizzie Sparkwhistle
-				crit(5),	-- Michael Skarn
-				crit(6),	-- Ellie Vern
-				crit(7),	-- Leana Darkwind
-				crit(8),	-- Kwint
-				crit(9),	-- Delia Hanako
-				crit(10),	-- Burly
-				crit(11),	-- Lozu
-				crit(12),	-- Grady Prett
-				crit(13),	-- Korval Darkbeard
-				crit(14),	-- Keeyo
-				crit(15),	-- Sizzik
-				crit(16),	-- Kusa
-				crit(17),	-- Karaga
-				crit(18),	-- Talia Sparkbrow
-				crit(19),	-- Zujai
-			}),
-			ach(13273, {	-- Element of Success
-				crit(1),	-- Captain Hermes
-				crit(2),	-- Eddie Fixit
-				crit(3),	-- Dilbert McClint
-				crit(4),	-- Fizzie Sparkwhistle
-				crit(5),	-- Michael Skarn
-				crit(6),	-- Ellie Vern
-				crit(7),	-- Leana Darkwind
-				crit(8),	-- Kwint
-				crit(9),	-- Delia Hanako
-				crit(10),	-- Burly
-				crit(11),	-- Lozu
-				crit(12),	-- Grady Prett
-				crit(13),	-- Korval Darkbeard
-				crit(14),	-- Keeyo
-				crit(15),	-- Sizzik
-				crit(16),	-- Kusa
-				crit(17),	-- Karaga
-				crit(18),	-- Talia Sparkbrow
-				crit(19),	-- Zujai
-			}),
-			ach(13274, {	-- Fun With Flying
-				crit(1),	-- Captain Hermes
-				crit(2),	-- Eddie Fixit
-				crit(3),	-- Dilbert McClint
-				crit(4),	-- Fizzie Sparkwhistle
-				crit(5),	-- Michael Skarn
-				crit(6),	-- Ellie Vern
-				crit(7),	-- Leana Darkwind
-				crit(8),	-- Kwint
-				crit(9),	-- Delia Hanako
-				crit(10),	-- Burly
-				crit(11),	-- Lozu
-				crit(12),	-- Grady Prett
-				crit(13),	-- Korval Darkbeard
-				crit(14),	-- Keeyo
-				crit(15),	-- Sizzik
-				crit(16),	-- Kusa
-				crit(17),	-- Karaga
-				crit(18),	-- Talia Sparkbrow
-				crit(19),	-- Zujai
-			}),
-			ach(13281, {	-- Human Resources
-				crit(1),	-- Captain Hermes
-				crit(2),	-- Eddie Fixit
-				crit(3),	-- Dilbert McClint
-				crit(4),	-- Fizzie Sparkwhistle
-				crit(5),	-- Michael Skarn
-				crit(6),	-- Ellie Vern
-				crit(7),	-- Leana Darkwind
-				crit(8),	-- Kwint
-				crit(9),	-- Delia Hanako
-				crit(10),	-- Burly
-				crit(11),	-- Lozu
-				crit(12),	-- Grady Prett
-				crit(13),	-- Korval Darkbeard
-				crit(14),	-- Keeyo
-				crit(15),	-- Sizzik
-				crit(16),	-- Kusa
-				crit(17),	-- Karaga
-				crit(18),	-- Talia Sparkbrow
-				crit(19),	-- Zujai
-			}),
-			ach(13275, {	-- Magician's Secrets
-				crit(1),	-- Captain Hermes
-				crit(2),	-- Eddie Fixit
-				crit(3),	-- Dilbert McClint
-				crit(4),	-- Fizzie Sparkwhistle
-				crit(5),	-- Michael Skarn
-				crit(6),	-- Ellie Vern
-				crit(7),	-- Leana Darkwind
-				crit(8),	-- Kwint
-				crit(9),	-- Delia Hanako
-				crit(10),	-- Burly
-				crit(11),	-- Lozu
-				crit(12),	-- Grady Prett
-				crit(13),	-- Korval Darkbeard
-				crit(14),	-- Keeyo
-				crit(15),	-- Sizzik
-				crit(16),	-- Kusa
-				crit(17),	-- Karaga
-				crit(18),	-- Talia Sparkbrow
-				crit(19),	-- Zujai
-			}),
-			ach(13277, {	-- Machine Learning
-				crit(1),	-- Captain Hermes
-				crit(2),	-- Eddie Fixit
-				crit(3),	-- Dilbert McClint
-				crit(4),	-- Fizzie Sparkwhistle
-				crit(5),	-- Michael Skarn
-				crit(6),	-- Ellie Vern
-				crit(7),	-- Leana Darkwind
-				crit(8),	-- Kwint
-				crit(9),	-- Delia Hanako
-				crit(10),	-- Burly
-				crit(11),	-- Lozu
-				crit(12),	-- Grady Prett
-				crit(13),	-- Korval Darkbeard
-				crit(14),	-- Keeyo
-				crit(15),	-- Sizzik
-				crit(16),	-- Kusa
-				crit(17),	-- Karaga
-				crit(18),	-- Talia Sparkbrow
-				crit(19),	-- Zujai
-			}),
-			ach(13278, {	-- Not Quite Dead Yet
-				crit(1),	-- Captain Hermes
-				crit(2),	-- Eddie Fixit
-				crit(3),	-- Dilbert McClint
-				crit(4),	-- Fizzie Sparkwhistle
-				crit(5),	-- Michael Skarn
-				crit(6),	-- Ellie Vern
-				crit(7),	-- Leana Darkwind
-				crit(8),	-- Kwint
-				crit(9),	-- Delia Hanako
-				crit(10),	-- Burly
-				crit(11),	-- Lozu
-				crit(12),	-- Grady Prett
-				crit(13),	-- Korval Darkbeard
-				crit(14),	-- Keeyo
-				crit(15),	-- Sizzik
-				crit(16),	-- Kusa
-				crit(17),	-- Karaga
-				crit(18),	-- Talia Sparkbrow
-				crit(19),	-- Zujai
-			}),
+		
+		ach(13279, {	-- Family Battler
+			-- Meta Achievement should symlink the contained Achievements from Source
+			["sym"] = {
+				{"select","achievementID",
+					13280,	-- Hobbyist Aquarist
+					13270,	-- Beast Mode
+					13271,	-- Critters with Huge Teeth
+					13272,	-- Dragons Make Everything Better
+					13273,	-- Element of Success
+					13274,	-- Fun With Flying
+					13281,	-- Human Resources
+					13275,	-- Magician's Secrets
+					13277,	-- Machine Learning
+					13278,	-- Not Quite Dead Yet
+				},
+			},
+			["groups"] = {
+				i(165907),	-- Wicker Wraith
+				ach(13280),	-- Hobbyist Aquarist
+				ach(13270),	-- Beast Mode
+				ach(13271),	-- Critters with Huge Teeth
+				ach(13272),	-- Dragons Make Everything Better
+				ach(13273),	-- Element of Success
+				ach(13274),	-- Fun With Flying
+				ach(13281),	-- Human Resources
+				ach(13275),	-- Magician's Secrets
+				ach(13277),	-- Machine Learning
+				ach(13278),	-- Not Quite Dead Yet
+			},
+		}),
+		pvp(ach(12290, {-- Family Brawler
+			-- Meta Achievement should symlink the contained Achievements from Source
+			["sym"] = {
+				{"select","achievementID",
+					12279,	-- Mechanical Brawler
+					12280,	-- Aquatic Brawler
+					12281,	-- Beast Brawler
+					12282,	-- Elemental Brawler
+					12283,	-- Magic Brawler
+					12284,	-- Critter Brawler
+					12285,	-- Undead Brawler
+					12286,	-- Flying Brawler
+					12287,	-- Dragonkin Brawler
+					12289,	-- Humanoid Brawler
+				},
+				{ "isnt", "criteriaID" }
+			},
+			["groups"] = {
+				i(156666),	-- Master Trainer's Tabard
+				ach(12279),	-- Mechanical Brawler
+				ach(12280),	-- Aquatic Brawler
+				ach(12281),	-- Beast Brawler
+				ach(12282),	-- Elemental Brawler
+				ach(12283),	-- Magic Brawler
+				ach(12284),	-- Critter Brawler
+				ach(12285),	-- Undead Brawler
+				ach(12286),	-- Flying Brawler
+				ach(12287),	-- Dragonkin Brawler
+				ach(12289),	-- Humanoid Brawler
+			},
 		})),
-		ach(12290, {	-- Family Brawler
-			i(156666),	-- Master Trainer's Tabard
-			ach(12279),	-- Mechanical Brawler
-			ach(12280),	-- Aquatic Brawler
-			ach(12281),	-- Beast Brawler
-			ach(12282),	-- Elemental Brawler
-			ach(12283),	-- Magic Brawler
-			ach(12284),	-- Critter Brawler
-			ach(12285),	-- Undead Brawler
-			ach(12286),	-- Flying Brawler
-			ach(12287),	-- Dragonkin Brawler
-			ach(12289),	-- Humanoid Brawler
-		}),
 		ach(14879, {	-- Family Exorcist
-			i(184509),	-- Spriggan Trickster
-			ach(14868, {	-- Aquatic Apparitions
-				crit(1,  {	-- Sylla
-					["coord"] = { 39.8, 52.4, REVENDRETH },
-					["cr"] = 173315,	-- Sylla
-				}),
-				crit(2,  {	-- Eyegor
-					["coord"] = { 67.6, 66.0, REVENDRETH },
-					["cr"] = 173324,	-- Eyegor
-				}),
-				crit(3,  {	-- Addius the Tormentor
-					["coord"] = { 61.2, 41.0, REVENDRETH },
-					["cr"] = 173331,	-- Addius the Tormentor
-				}),
-				crit(4,  {	-- Rotgut
-					["coord"] = { 34.0, 55.2, MALDRAXXUS },
-					["cr"] = 173263,	-- Rotgut
-				}),
-				crit(5,  {	-- Dundley Stickyfingers
-					["coord"] = { 63.2, 46.8, MALDRAXXUS },
-					["cr"] = 173267,	-- Dundley Stickyfingers
-				}),
-				crit(6,  {	-- Caregiver Maximillian
-					["coord"] = { 46.8, 50.0, MALDRAXXUS },
-					["cr"] = 173257,	-- Caregiver Maximillian
-				}),
-				crit(7,  {	-- Zolla
-					["coord"] = { 51.4, 38.2, BASTION },
-					["cr"] = 173130,	-- Zolla
-				}),
-				crit(8,  {	-- Thenia
-					["coord"] = { 54.6, 56.0, BASTION },
-					["cr"] = 173129,	-- Thenia
-				}),
-				crit(9,  {	-- Stratios
-					["coord"] = { 34.8, 62.8, BASTION },
-					["cr"] = 173131,	-- Stratios
-				}),
-				crit(10, {	-- Glitterdust
-					["coord"] = { 58.2, 56.8, ARDENWEALD },
-					["cr"] = 173372,	-- Glitterdust
-				}),
-				crit(11, {	-- Faryl
-					["coord"] = { 51.2, 44.2, ARDENWEALD },
-					["cr"] = 173377,	-- Faryl
-				}),
-			}),
-			ach(14869, {	-- Beast Busters
-				crit(1,  {	-- Sylla
-					["coord"] = { 39.8, 52.4, REVENDRETH },
-					["cr"] = 173315,	-- Sylla
-				}),
-				crit(2,  {	-- Eyegor
-					["coord"] = { 67.6, 66.0, REVENDRETH },
-					["cr"] = 173324,	-- Eyegor
-				}),
-				crit(3,  {	-- Addius the Tormentor
-					["coord"] = { 61.2, 41.0, REVENDRETH },
-					["cr"] = 173331,	-- Addius the Tormentor
-				}),
-				crit(4,  {	-- Rotgut
-					["coord"] = { 34.0, 55.2, MALDRAXXUS },
-					["cr"] = 173263,	-- Rotgut
-				}),
-				crit(5,  {	-- Dundley Stickyfingers
-					["coord"] = { 63.2, 46.8, MALDRAXXUS },
-					["cr"] = 173267,	-- Dundley Stickyfingers
-				}),
-				crit(6,  {	-- Caregiver Maximillian
-					["coord"] = { 46.8, 50.0, MALDRAXXUS },
-					["cr"] = 173257,	-- Caregiver Maximillian
-				}),
-				crit(7,  {	-- Zolla
-					["coord"] = { 51.4, 38.2, BASTION },
-					["cr"] = 173130,	-- Zolla
-				}),
-				crit(8,  {	-- Thenia
-					["coord"] = { 54.6, 56.0, BASTION },
-					["cr"] = 173129,	-- Thenia
-				}),
-				crit(9,  {	-- Stratios
-					["coord"] = { 34.8, 62.8, BASTION },
-					["cr"] = 173131,	-- Stratios
-				}),
-				crit(10, {	-- Glitterdust
-					["coord"] = { 58.2, 56.8, ARDENWEALD },
-					["cr"] = 173372,	-- Glitterdust
-				}),
-				crit(11, {	-- Faryl
-					["coord"] = { 51.2, 44.2, ARDENWEALD },
-					["cr"] = 173377,	-- Faryl
-				}),
-			}),
-			ach(14870, {	-- Creepy Critters
-				crit(1,  {	-- Sylla
-					["coord"] = { 39.8, 52.4, REVENDRETH },
-					["cr"] = 173315,	-- Sylla
-				}),
-				crit(2,  {	-- Eyegor
-					["coord"] = { 67.6, 66.0, REVENDRETH },
-					["cr"] = 173324,	-- Eyegor
-				}),
-				crit(3,  {	-- Addius the Tormentor
-					["coord"] = { 61.2, 41.0, REVENDRETH },
-					["cr"] = 173331,	-- Addius the Tormentor
-				}),
-				crit(4,  {	-- Rotgut
-					["coord"] = { 34.0, 55.2, MALDRAXXUS },
-					["cr"] = 173263,	-- Rotgut
-				}),
-				crit(5,  {	-- Dundley Stickyfingers
-					["coord"] = { 63.2, 46.8, MALDRAXXUS },
-					["cr"] = 173267,	-- Dundley Stickyfingers
-				}),
-				crit(6,  {	-- Caregiver Maximillian
-					["coord"] = { 46.8, 50.0, MALDRAXXUS },
-					["cr"] = 173257,	-- Caregiver Maximillian
-				}),
-				crit(7,  {	-- Zolla
-					["coord"] = { 51.4, 38.2, BASTION },
-					["cr"] = 173130,	-- Zolla
-				}),
-				crit(8,  {	-- Thenia
-					["coord"] = { 54.6, 56.0, BASTION },
-					["cr"] = 173129,	-- Thenia
-				}),
-				crit(9,  {	-- Stratios
-					["coord"] = { 34.8, 62.8, BASTION },
-					["cr"] = 173131,	-- Stratios
-				}),
-				crit(10, {	-- Glitterdust
-					["coord"] = { 58.2, 56.8, ARDENWEALD },
-					["cr"] = 173372,	-- Glitterdust
-				}),
-				crit(11, {	-- Faryl
-					["coord"] = { 51.2, 44.2, ARDENWEALD },
-					["cr"] = 173377,	-- Faryl
-				}),
-			}),
-			ach(14871, {	-- Deathly Dragonkin
-				crit(1,  {	-- Sylla
-					["coord"] = { 39.8, 52.4, REVENDRETH },
-					["cr"] = 173315,	-- Sylla
-				}),
-				crit(2,  {	-- Eyegor
-					["coord"] = { 67.6, 66.0, REVENDRETH },
-					["cr"] = 173324,	-- Eyegor
-				}),
-				crit(3,  {	-- Addius the Tormentor
-					["coord"] = { 61.2, 41.0, REVENDRETH },
-					["cr"] = 173331,	-- Addius the Tormentor
-				}),
-				crit(4,  {	-- Rotgut
-					["coord"] = { 34.0, 55.2, MALDRAXXUS },
-					["cr"] = 173263,	-- Rotgut
-				}),
-				crit(5,  {	-- Dundley Stickyfingers
-					["coord"] = { 63.2, 46.8, MALDRAXXUS },
-					["cr"] = 173267,	-- Dundley Stickyfingers
-				}),
-				crit(6,  {	-- Caregiver Maximillian
-					["coord"] = { 46.8, 50.0, MALDRAXXUS },
-					["cr"] = 173257,	-- Caregiver Maximillian
-				}),
-				crit(7,  {	-- Zolla
-					["coord"] = { 51.4, 38.2, BASTION },
-					["cr"] = 173130,	-- Zolla
-				}),
-				crit(8,  {	-- Thenia
-					["coord"] = { 54.6, 56.0, BASTION },
-					["cr"] = 173129,	-- Thenia
-				}),
-				crit(9,  {	-- Stratios
-					["coord"] = { 34.8, 62.8, BASTION },
-					["cr"] = 173131,	-- Stratios
-				}),
-				crit(10, {	-- Glitterdust
-					["coord"] = { 58.2, 56.8, ARDENWEALD },
-					["cr"] = 173372,	-- Glitterdust
-				}),
-				crit(11, {	-- Faryl
-					["coord"] = { 51.2, 44.2, ARDENWEALD },
-					["cr"] = 173377,	-- Faryl
-				}),
-			}),
-			ach(14872, {	-- Eerie Elementals
-				crit(1,  {	-- Sylla
-					["coord"] = { 39.8, 52.4, REVENDRETH },
-					["cr"] = 173315,	-- Sylla
-				}),
-				crit(2,  {	-- Eyegor
-					["coord"] = { 67.6, 66.0, REVENDRETH },
-					["cr"] = 173324,	-- Eyegor
-				}),
-				crit(3,  {	-- Addius the Tormentor
-					["coord"] = { 61.2, 41.0, REVENDRETH },
-					["cr"] = 173331,	-- Addius the Tormentor
-				}),
-				crit(4,  {	-- Rotgut
-					["coord"] = { 34.0, 55.2, MALDRAXXUS },
-					["cr"] = 173263,	-- Rotgut
-				}),
-				crit(5,  {	-- Dundley Stickyfingers
-					["coord"] = { 63.2, 46.8, MALDRAXXUS },
-					["cr"] = 173267,	-- Dundley Stickyfingers
-				}),
-				crit(6,  {	-- Caregiver Maximillian
-					["coord"] = { 46.8, 50.0, MALDRAXXUS },
-					["cr"] = 173257,	-- Caregiver Maximillian
-				}),
-				crit(7,  {	-- Zolla
-					["coord"] = { 51.4, 38.2, BASTION },
-					["cr"] = 173130,	-- Zolla
-				}),
-				crit(8,  {	-- Thenia
-					["coord"] = { 54.6, 56.0, BASTION },
-					["cr"] = 173129,	-- Thenia
-				}),
-				crit(9,  {	-- Stratios
-					["coord"] = { 34.8, 62.8, BASTION },
-					["cr"] = 173131,	-- Stratios
-				}),
-				crit(10, {	-- Glitterdust
-					["coord"] = { 58.2, 56.8, ARDENWEALD },
-					["cr"] = 173372,	-- Glitterdust
-				}),
-				crit(11, {	-- Faryl
-					["coord"] = { 51.2, 44.2, ARDENWEALD },
-					["cr"] = 173377,	-- Faryl
-				}),
-			}),
-			ach(14873, {	-- Flickering Fliers
-				crit(1,  {	-- Sylla
-					["coord"] = { 39.8, 52.4, REVENDRETH },
-					["cr"] = 173315,	-- Sylla
-				}),
-				crit(2,  {	-- Eyegor
-					["coord"] = { 67.6, 66.0, REVENDRETH },
-					["cr"] = 173324,	-- Eyegor
-				}),
-				crit(3,  {	-- Addius the Tormentor
-					["coord"] = { 61.2, 41.0, REVENDRETH },
-					["cr"] = 173331,	-- Addius the Tormentor
-				}),
-				crit(4,  {	-- Rotgut
-					["coord"] = { 34.0, 55.2, MALDRAXXUS },
-					["cr"] = 173263,	-- Rotgut
-				}),
-				crit(5,  {	-- Dundley Stickyfingers
-					["coord"] = { 63.2, 46.8, MALDRAXXUS },
-					["cr"] = 173267,	-- Dundley Stickyfingers
-				}),
-				crit(6,  {	-- Caregiver Maximillian
-					["coord"] = { 46.8, 50.0, MALDRAXXUS },
-					["cr"] = 173257,	-- Caregiver Maximillian
-				}),
-				crit(7,  {	-- Zolla
-					["coord"] = { 51.4, 38.2, BASTION },
-					["cr"] = 173130,	-- Zolla
-				}),
-				crit(8,  {	-- Thenia
-					["coord"] = { 54.6, 56.0, BASTION },
-					["cr"] = 173129,	-- Thenia
-				}),
-				crit(9,  {	-- Stratios
-					["coord"] = { 34.8, 62.8, BASTION },
-					["cr"] = 173131,	-- Stratios
-				}),
-				crit(10, {	-- Glitterdust
-					["coord"] = { 58.2, 56.8, ARDENWEALD },
-					["cr"] = 173372,	-- Glitterdust
-				}),
-				crit(11, {	-- Faryl
-					["coord"] = { 51.2, 44.2, ARDENWEALD },
-					["cr"] = 173377,	-- Faryl
-				}),
-			}),
-			ach(14874, {	-- Haunted Humanoids
-				crit(1,  {	-- Sylla
-					["coord"] = { 39.8, 52.4, REVENDRETH },
-					["cr"] = 173315,	-- Sylla
-				}),
-				crit(2,  {	-- Eyegor
-					["coord"] = { 67.6, 66.0, REVENDRETH },
-					["cr"] = 173324,	-- Eyegor
-				}),
-				crit(3,  {	-- Addius the Tormentor
-					["coord"] = { 61.2, 41.0, REVENDRETH },
-					["cr"] = 173331,	-- Addius the Tormentor
-				}),
-				crit(4,  {	-- Rotgut
-					["coord"] = { 34.0, 55.2, MALDRAXXUS },
-					["cr"] = 173263,	-- Rotgut
-				}),
-				crit(5,  {	-- Dundley Stickyfingers
-					["coord"] = { 63.2, 46.8, MALDRAXXUS },
-					["cr"] = 173267,	-- Dundley Stickyfingers
-				}),
-				crit(6,  {	-- Caregiver Maximillian
-					["coord"] = { 46.8, 50.0, MALDRAXXUS },
-					["cr"] = 173257,	-- Caregiver Maximillian
-				}),
-				crit(7,  {	-- Zolla
-					["coord"] = { 51.4, 38.2, BASTION },
-					["cr"] = 173130,	-- Zolla
-				}),
-				crit(8,  {	-- Thenia
-					["coord"] = { 54.6, 56.0, BASTION },
-					["cr"] = 173129,	-- Thenia
-				}),
-				crit(9,  {	-- Stratios
-					["coord"] = { 34.8, 62.8, BASTION },
-					["cr"] = 173131,	-- Stratios
-				}),
-				crit(10, {	-- Glitterdust
-					["coord"] = { 58.2, 56.8, ARDENWEALD },
-					["cr"] = 173372,	-- Glitterdust
-				}),
-				crit(11, {	-- Faryl
-					["coord"] = { 51.2, 44.2, ARDENWEALD },
-					["cr"] = 173377,	-- Faryl
-				}),
-			}),
-			ach(14875, {	-- Mummified Magics
-				crit(1,  {	-- Sylla
-					["coord"] = { 39.8, 52.4, REVENDRETH },
-					["cr"] = 173315,	-- Sylla
-				}),
-				crit(2,  {	-- Eyegor
-					["coord"] = { 67.6, 66.0, REVENDRETH },
-					["cr"] = 173324,	-- Eyegor
-				}),
-				crit(3,  {	-- Addius the Tormentor
-					["coord"] = { 61.2, 41.0, REVENDRETH },
-					["cr"] = 173331,	-- Addius the Tormentor
-				}),
-				crit(4,  {	-- Rotgut
-					["coord"] = { 34.0, 55.2, MALDRAXXUS },
-					["cr"] = 173263,	-- Rotgut
-				}),
-				crit(5,  {	-- Dundley Stickyfingers
-					["coord"] = { 63.2, 46.8, MALDRAXXUS },
-					["cr"] = 173267,	-- Dundley Stickyfingers
-				}),
-				crit(6,  {	-- Caregiver Maximillian
-					["coord"] = { 46.8, 50.0, MALDRAXXUS },
-					["cr"] = 173257,	-- Caregiver Maximillian
-				}),
-				crit(7,  {	-- Zolla
-					["coord"] = { 51.4, 38.2, BASTION },
-					["cr"] = 173130,	-- Zolla
-				}),
-				crit(8,  {	-- Thenia
-					["coord"] = { 54.6, 56.0, BASTION },
-					["cr"] = 173129,	-- Thenia
-				}),
-				crit(9,  {	-- Stratios
-					["coord"] = { 34.8, 62.8, BASTION },
-					["cr"] = 173131,	-- Stratios
-				}),
-				crit(10, {	-- Glitterdust
-					["coord"] = { 58.2, 56.8, ARDENWEALD },
-					["cr"] = 173372,	-- Glitterdust
-				}),
-				crit(11, {	-- Faryl
-					["coord"] = { 51.2, 44.2, ARDENWEALD },
-					["cr"] = 173377,	-- Faryl
-				}),
-			}),
-			ach(14876, {	-- Macabre Mechanicals
-				crit(1,  {	-- Sylla
-					["coord"] = { 39.8, 52.4, REVENDRETH },
-					["cr"] = 173315,	-- Sylla
-				}),
-				crit(2,  {	-- Eyegor
-					["coord"] = { 67.6, 66.0, REVENDRETH },
-					["cr"] = 173324,	-- Eyegor
-				}),
-				crit(3,  {	-- Addius the Tormentor
-					["coord"] = { 61.2, 41.0, REVENDRETH },
-					["cr"] = 173331,	-- Addius the Tormentor
-				}),
-				crit(4,  {	-- Rotgut
-					["coord"] = { 34.0, 55.2, MALDRAXXUS },
-					["cr"] = 173263,	-- Rotgut
-				}),
-				crit(5,  {	-- Dundley Stickyfingers
-					["coord"] = { 63.2, 46.8, MALDRAXXUS },
-					["cr"] = 173267,	-- Dundley Stickyfingers
-				}),
-				crit(6,  {	-- Caregiver Maximillian
-					["coord"] = { 46.8, 50.0, MALDRAXXUS },
-					["cr"] = 173257,	-- Caregiver Maximillian
-				}),
-				crit(7,  {	-- Zolla
-					["coord"] = { 51.4, 38.2, BASTION },
-					["cr"] = 173130,	-- Zolla
-				}),
-				crit(8,  {	-- Thenia
-					["coord"] = { 54.6, 56.0, BASTION },
-					["cr"] = 173129,	-- Thenia
-				}),
-				crit(9,  {	-- Stratios
-					["coord"] = { 34.8, 62.8, BASTION },
-					["cr"] = 173131,	-- Stratios
-				}),
-				crit(10, {	-- Glitterdust
-					["coord"] = { 58.2, 56.8, ARDENWEALD },
-					["cr"] = 173372,	-- Glitterdust
-				}),
-				crit(11, {	-- Faryl
-					["coord"] = { 51.2, 44.2, ARDENWEALD },
-					["cr"] = 173377,	-- Faryl
-				}),
-			}),
-			ach(14877, {	-- Unholy Undead
-				crit(1,  {	-- Sylla
-					["coord"] = { 39.8, 52.4, REVENDRETH },
-					["cr"] = 173315,	-- Sylla
-				}),
-				crit(2,  {	-- Eyegor
-					["coord"] = { 67.6, 66.0, REVENDRETH },
-					["cr"] = 173324,	-- Eyegor
-				}),
-				crit(3,  {	-- Addius the Tormentor
-					["coord"] = { 61.2, 41.0, REVENDRETH },
-					["cr"] = 173331,	-- Addius the Tormentor
-				}),
-				crit(4,  {	-- Rotgut
-					["coord"] = { 34.0, 55.2, MALDRAXXUS },
-					["cr"] = 173263,	-- Rotgut
-				}),
-				crit(5,  {	-- Dundley Stickyfingers
-					["coord"] = { 63.2, 46.8, MALDRAXXUS },
-					["cr"] = 173267,	-- Dundley Stickyfingers
-				}),
-				crit(6,  {	-- Caregiver Maximillian
-					["coord"] = { 46.8, 50.0, MALDRAXXUS },
-					["cr"] = 173257,	-- Caregiver Maximillian
-				}),
-				crit(7,  {	-- Zolla
-					["coord"] = { 51.4, 38.2, BASTION },
-					["cr"] = 173130,	-- Zolla
-				}),
-				crit(8,  {	-- Thenia
-					["coord"] = { 54.6, 56.0, BASTION },
-					["cr"] = 173129,	-- Thenia
-				}),
-				crit(9,  {	-- Stratios
-					["coord"] = { 34.8, 62.8, BASTION },
-					["cr"] = 173131,	-- Stratios
-				}),
-				crit(10, {	-- Glitterdust
-					["coord"] = { 58.2, 56.8, ARDENWEALD },
-					["cr"] = 173372,	-- Glitterdust
-				}),
-				crit(11, {	-- Faryl
-					["coord"] = { 51.2, 44.2, ARDENWEALD },
-					["cr"] = 173377,	-- Faryl
-				}),
-			}),
+			-- Meta Achievement should symlink the contained Achievements from Source
+			["sym"] = {
+				{"select","achievementID",
+					14868,	-- Aquatic Apparitions
+					14869,	-- Beast Busters
+					14870,	-- Creepy Critters
+					14871,	-- Deathly Dragonkin
+					14872,	-- Eerie Elementals
+					14873,	-- Flickering Fliers
+					14874,	-- Haunted Humanoids
+					14875,	-- Mummified Magics
+					14876,	-- Macabre Mechanicals
+					14877,	-- Unholy Undead
+				},
+				{ "isnt", "criteriaID" }
+			},
+			["groups"] = {
+				i(184509),	-- Spriggan Trickster
+				ach(14868, {	-- Aquatic Apparitions
+					crit(1,  {	-- Sylla
+						["coord"] = { 39.8, 52.4, REVENDRETH },
+						["cr"] = 173315,	-- Sylla
+					}),
+					crit(2,  {	-- Eyegor
+						["coord"] = { 67.6, 66.0, REVENDRETH },
+						["cr"] = 173324,	-- Eyegor
+					}),
+					crit(3,  {	-- Addius the Tormentor
+						["coord"] = { 61.2, 41.0, REVENDRETH },
+						["cr"] = 173331,	-- Addius the Tormentor
+					}),
+					crit(4,  {	-- Rotgut
+						["coord"] = { 34.0, 55.2, MALDRAXXUS },
+						["cr"] = 173263,	-- Rotgut
+					}),
+					crit(5,  {	-- Dundley Stickyfingers
+						["coord"] = { 63.2, 46.8, MALDRAXXUS },
+						["cr"] = 173267,	-- Dundley Stickyfingers
+					}),
+					crit(6,  {	-- Caregiver Maximillian
+						["coord"] = { 46.8, 50.0, MALDRAXXUS },
+						["cr"] = 173257,	-- Caregiver Maximillian
+					}),
+					crit(7,  {	-- Zolla
+						["coord"] = { 51.4, 38.2, BASTION },
+						["cr"] = 173130,	-- Zolla
+					}),
+					crit(8,  {	-- Thenia
+						["coord"] = { 54.6, 56.0, BASTION },
+						["cr"] = 173129,	-- Thenia
+					}),
+					crit(9,  {	-- Stratios
+						["coord"] = { 34.8, 62.8, BASTION },
+						["cr"] = 173131,	-- Stratios
+					}),
+					crit(10, {	-- Glitterdust
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
+						["cr"] = 173372,	-- Glitterdust
+					}),
+					crit(11, {	-- Faryl
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
+						["cr"] = 173377,	-- Faryl
+					}),
+				}),
+				ach(14869, {	-- Beast Busters
+					crit(1,  {	-- Sylla
+						["coord"] = { 39.8, 52.4, REVENDRETH },
+						["cr"] = 173315,	-- Sylla
+					}),
+					crit(2,  {	-- Eyegor
+						["coord"] = { 67.6, 66.0, REVENDRETH },
+						["cr"] = 173324,	-- Eyegor
+					}),
+					crit(3,  {	-- Addius the Tormentor
+						["coord"] = { 61.2, 41.0, REVENDRETH },
+						["cr"] = 173331,	-- Addius the Tormentor
+					}),
+					crit(4,  {	-- Rotgut
+						["coord"] = { 34.0, 55.2, MALDRAXXUS },
+						["cr"] = 173263,	-- Rotgut
+					}),
+					crit(5,  {	-- Dundley Stickyfingers
+						["coord"] = { 63.2, 46.8, MALDRAXXUS },
+						["cr"] = 173267,	-- Dundley Stickyfingers
+					}),
+					crit(6,  {	-- Caregiver Maximillian
+						["coord"] = { 46.8, 50.0, MALDRAXXUS },
+						["cr"] = 173257,	-- Caregiver Maximillian
+					}),
+					crit(7,  {	-- Zolla
+						["coord"] = { 51.4, 38.2, BASTION },
+						["cr"] = 173130,	-- Zolla
+					}),
+					crit(8,  {	-- Thenia
+						["coord"] = { 54.6, 56.0, BASTION },
+						["cr"] = 173129,	-- Thenia
+					}),
+					crit(9,  {	-- Stratios
+						["coord"] = { 34.8, 62.8, BASTION },
+						["cr"] = 173131,	-- Stratios
+					}),
+					crit(10, {	-- Glitterdust
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
+						["cr"] = 173372,	-- Glitterdust
+					}),
+					crit(11, {	-- Faryl
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
+						["cr"] = 173377,	-- Faryl
+					}),
+				}),
+				ach(14870, {	-- Creepy Critters
+					crit(1,  {	-- Sylla
+						["coord"] = { 39.8, 52.4, REVENDRETH },
+						["cr"] = 173315,	-- Sylla
+					}),
+					crit(2,  {	-- Eyegor
+						["coord"] = { 67.6, 66.0, REVENDRETH },
+						["cr"] = 173324,	-- Eyegor
+					}),
+					crit(3,  {	-- Addius the Tormentor
+						["coord"] = { 61.2, 41.0, REVENDRETH },
+						["cr"] = 173331,	-- Addius the Tormentor
+					}),
+					crit(4,  {	-- Rotgut
+						["coord"] = { 34.0, 55.2, MALDRAXXUS },
+						["cr"] = 173263,	-- Rotgut
+					}),
+					crit(5,  {	-- Dundley Stickyfingers
+						["coord"] = { 63.2, 46.8, MALDRAXXUS },
+						["cr"] = 173267,	-- Dundley Stickyfingers
+					}),
+					crit(6,  {	-- Caregiver Maximillian
+						["coord"] = { 46.8, 50.0, MALDRAXXUS },
+						["cr"] = 173257,	-- Caregiver Maximillian
+					}),
+					crit(7,  {	-- Zolla
+						["coord"] = { 51.4, 38.2, BASTION },
+						["cr"] = 173130,	-- Zolla
+					}),
+					crit(8,  {	-- Thenia
+						["coord"] = { 54.6, 56.0, BASTION },
+						["cr"] = 173129,	-- Thenia
+					}),
+					crit(9,  {	-- Stratios
+						["coord"] = { 34.8, 62.8, BASTION },
+						["cr"] = 173131,	-- Stratios
+					}),
+					crit(10, {	-- Glitterdust
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
+						["cr"] = 173372,	-- Glitterdust
+					}),
+					crit(11, {	-- Faryl
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
+						["cr"] = 173377,	-- Faryl
+					}),
+				}),
+				ach(14871, {	-- Deathly Dragonkin
+					crit(1,  {	-- Sylla
+						["coord"] = { 39.8, 52.4, REVENDRETH },
+						["cr"] = 173315,	-- Sylla
+					}),
+					crit(2,  {	-- Eyegor
+						["coord"] = { 67.6, 66.0, REVENDRETH },
+						["cr"] = 173324,	-- Eyegor
+					}),
+					crit(3,  {	-- Addius the Tormentor
+						["coord"] = { 61.2, 41.0, REVENDRETH },
+						["cr"] = 173331,	-- Addius the Tormentor
+					}),
+					crit(4,  {	-- Rotgut
+						["coord"] = { 34.0, 55.2, MALDRAXXUS },
+						["cr"] = 173263,	-- Rotgut
+					}),
+					crit(5,  {	-- Dundley Stickyfingers
+						["coord"] = { 63.2, 46.8, MALDRAXXUS },
+						["cr"] = 173267,	-- Dundley Stickyfingers
+					}),
+					crit(6,  {	-- Caregiver Maximillian
+						["coord"] = { 46.8, 50.0, MALDRAXXUS },
+						["cr"] = 173257,	-- Caregiver Maximillian
+					}),
+					crit(7,  {	-- Zolla
+						["coord"] = { 51.4, 38.2, BASTION },
+						["cr"] = 173130,	-- Zolla
+					}),
+					crit(8,  {	-- Thenia
+						["coord"] = { 54.6, 56.0, BASTION },
+						["cr"] = 173129,	-- Thenia
+					}),
+					crit(9,  {	-- Stratios
+						["coord"] = { 34.8, 62.8, BASTION },
+						["cr"] = 173131,	-- Stratios
+					}),
+					crit(10, {	-- Glitterdust
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
+						["cr"] = 173372,	-- Glitterdust
+					}),
+					crit(11, {	-- Faryl
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
+						["cr"] = 173377,	-- Faryl
+					}),
+				}),
+				ach(14872, {	-- Eerie Elementals
+					crit(1,  {	-- Sylla
+						["coord"] = { 39.8, 52.4, REVENDRETH },
+						["cr"] = 173315,	-- Sylla
+					}),
+					crit(2,  {	-- Eyegor
+						["coord"] = { 67.6, 66.0, REVENDRETH },
+						["cr"] = 173324,	-- Eyegor
+					}),
+					crit(3,  {	-- Addius the Tormentor
+						["coord"] = { 61.2, 41.0, REVENDRETH },
+						["cr"] = 173331,	-- Addius the Tormentor
+					}),
+					crit(4,  {	-- Rotgut
+						["coord"] = { 34.0, 55.2, MALDRAXXUS },
+						["cr"] = 173263,	-- Rotgut
+					}),
+					crit(5,  {	-- Dundley Stickyfingers
+						["coord"] = { 63.2, 46.8, MALDRAXXUS },
+						["cr"] = 173267,	-- Dundley Stickyfingers
+					}),
+					crit(6,  {	-- Caregiver Maximillian
+						["coord"] = { 46.8, 50.0, MALDRAXXUS },
+						["cr"] = 173257,	-- Caregiver Maximillian
+					}),
+					crit(7,  {	-- Zolla
+						["coord"] = { 51.4, 38.2, BASTION },
+						["cr"] = 173130,	-- Zolla
+					}),
+					crit(8,  {	-- Thenia
+						["coord"] = { 54.6, 56.0, BASTION },
+						["cr"] = 173129,	-- Thenia
+					}),
+					crit(9,  {	-- Stratios
+						["coord"] = { 34.8, 62.8, BASTION },
+						["cr"] = 173131,	-- Stratios
+					}),
+					crit(10, {	-- Glitterdust
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
+						["cr"] = 173372,	-- Glitterdust
+					}),
+					crit(11, {	-- Faryl
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
+						["cr"] = 173377,	-- Faryl
+					}),
+				}),
+				ach(14873, {	-- Flickering Fliers
+					crit(1,  {	-- Sylla
+						["coord"] = { 39.8, 52.4, REVENDRETH },
+						["cr"] = 173315,	-- Sylla
+					}),
+					crit(2,  {	-- Eyegor
+						["coord"] = { 67.6, 66.0, REVENDRETH },
+						["cr"] = 173324,	-- Eyegor
+					}),
+					crit(3,  {	-- Addius the Tormentor
+						["coord"] = { 61.2, 41.0, REVENDRETH },
+						["cr"] = 173331,	-- Addius the Tormentor
+					}),
+					crit(4,  {	-- Rotgut
+						["coord"] = { 34.0, 55.2, MALDRAXXUS },
+						["cr"] = 173263,	-- Rotgut
+					}),
+					crit(5,  {	-- Dundley Stickyfingers
+						["coord"] = { 63.2, 46.8, MALDRAXXUS },
+						["cr"] = 173267,	-- Dundley Stickyfingers
+					}),
+					crit(6,  {	-- Caregiver Maximillian
+						["coord"] = { 46.8, 50.0, MALDRAXXUS },
+						["cr"] = 173257,	-- Caregiver Maximillian
+					}),
+					crit(7,  {	-- Zolla
+						["coord"] = { 51.4, 38.2, BASTION },
+						["cr"] = 173130,	-- Zolla
+					}),
+					crit(8,  {	-- Thenia
+						["coord"] = { 54.6, 56.0, BASTION },
+						["cr"] = 173129,	-- Thenia
+					}),
+					crit(9,  {	-- Stratios
+						["coord"] = { 34.8, 62.8, BASTION },
+						["cr"] = 173131,	-- Stratios
+					}),
+					crit(10, {	-- Glitterdust
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
+						["cr"] = 173372,	-- Glitterdust
+					}),
+					crit(11, {	-- Faryl
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
+						["cr"] = 173377,	-- Faryl
+					}),
+				}),
+				ach(14874, {	-- Haunted Humanoids
+					crit(1,  {	-- Sylla
+						["coord"] = { 39.8, 52.4, REVENDRETH },
+						["cr"] = 173315,	-- Sylla
+					}),
+					crit(2,  {	-- Eyegor
+						["coord"] = { 67.6, 66.0, REVENDRETH },
+						["cr"] = 173324,	-- Eyegor
+					}),
+					crit(3,  {	-- Addius the Tormentor
+						["coord"] = { 61.2, 41.0, REVENDRETH },
+						["cr"] = 173331,	-- Addius the Tormentor
+					}),
+					crit(4,  {	-- Rotgut
+						["coord"] = { 34.0, 55.2, MALDRAXXUS },
+						["cr"] = 173263,	-- Rotgut
+					}),
+					crit(5,  {	-- Dundley Stickyfingers
+						["coord"] = { 63.2, 46.8, MALDRAXXUS },
+						["cr"] = 173267,	-- Dundley Stickyfingers
+					}),
+					crit(6,  {	-- Caregiver Maximillian
+						["coord"] = { 46.8, 50.0, MALDRAXXUS },
+						["cr"] = 173257,	-- Caregiver Maximillian
+					}),
+					crit(7,  {	-- Zolla
+						["coord"] = { 51.4, 38.2, BASTION },
+						["cr"] = 173130,	-- Zolla
+					}),
+					crit(8,  {	-- Thenia
+						["coord"] = { 54.6, 56.0, BASTION },
+						["cr"] = 173129,	-- Thenia
+					}),
+					crit(9,  {	-- Stratios
+						["coord"] = { 34.8, 62.8, BASTION },
+						["cr"] = 173131,	-- Stratios
+					}),
+					crit(10, {	-- Glitterdust
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
+						["cr"] = 173372,	-- Glitterdust
+					}),
+					crit(11, {	-- Faryl
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
+						["cr"] = 173377,	-- Faryl
+					}),
+				}),
+				ach(14875, {	-- Mummified Magics
+					crit(1,  {	-- Sylla
+						["coord"] = { 39.8, 52.4, REVENDRETH },
+						["cr"] = 173315,	-- Sylla
+					}),
+					crit(2,  {	-- Eyegor
+						["coord"] = { 67.6, 66.0, REVENDRETH },
+						["cr"] = 173324,	-- Eyegor
+					}),
+					crit(3,  {	-- Addius the Tormentor
+						["coord"] = { 61.2, 41.0, REVENDRETH },
+						["cr"] = 173331,	-- Addius the Tormentor
+					}),
+					crit(4,  {	-- Rotgut
+						["coord"] = { 34.0, 55.2, MALDRAXXUS },
+						["cr"] = 173263,	-- Rotgut
+					}),
+					crit(5,  {	-- Dundley Stickyfingers
+						["coord"] = { 63.2, 46.8, MALDRAXXUS },
+						["cr"] = 173267,	-- Dundley Stickyfingers
+					}),
+					crit(6,  {	-- Caregiver Maximillian
+						["coord"] = { 46.8, 50.0, MALDRAXXUS },
+						["cr"] = 173257,	-- Caregiver Maximillian
+					}),
+					crit(7,  {	-- Zolla
+						["coord"] = { 51.4, 38.2, BASTION },
+						["cr"] = 173130,	-- Zolla
+					}),
+					crit(8,  {	-- Thenia
+						["coord"] = { 54.6, 56.0, BASTION },
+						["cr"] = 173129,	-- Thenia
+					}),
+					crit(9,  {	-- Stratios
+						["coord"] = { 34.8, 62.8, BASTION },
+						["cr"] = 173131,	-- Stratios
+					}),
+					crit(10, {	-- Glitterdust
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
+						["cr"] = 173372,	-- Glitterdust
+					}),
+					crit(11, {	-- Faryl
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
+						["cr"] = 173377,	-- Faryl
+					}),
+				}),
+				ach(14876, {	-- Macabre Mechanicals
+					crit(1,  {	-- Sylla
+						["coord"] = { 39.8, 52.4, REVENDRETH },
+						["cr"] = 173315,	-- Sylla
+					}),
+					crit(2,  {	-- Eyegor
+						["coord"] = { 67.6, 66.0, REVENDRETH },
+						["cr"] = 173324,	-- Eyegor
+					}),
+					crit(3,  {	-- Addius the Tormentor
+						["coord"] = { 61.2, 41.0, REVENDRETH },
+						["cr"] = 173331,	-- Addius the Tormentor
+					}),
+					crit(4,  {	-- Rotgut
+						["coord"] = { 34.0, 55.2, MALDRAXXUS },
+						["cr"] = 173263,	-- Rotgut
+					}),
+					crit(5,  {	-- Dundley Stickyfingers
+						["coord"] = { 63.2, 46.8, MALDRAXXUS },
+						["cr"] = 173267,	-- Dundley Stickyfingers
+					}),
+					crit(6,  {	-- Caregiver Maximillian
+						["coord"] = { 46.8, 50.0, MALDRAXXUS },
+						["cr"] = 173257,	-- Caregiver Maximillian
+					}),
+					crit(7,  {	-- Zolla
+						["coord"] = { 51.4, 38.2, BASTION },
+						["cr"] = 173130,	-- Zolla
+					}),
+					crit(8,  {	-- Thenia
+						["coord"] = { 54.6, 56.0, BASTION },
+						["cr"] = 173129,	-- Thenia
+					}),
+					crit(9,  {	-- Stratios
+						["coord"] = { 34.8, 62.8, BASTION },
+						["cr"] = 173131,	-- Stratios
+					}),
+					crit(10, {	-- Glitterdust
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
+						["cr"] = 173372,	-- Glitterdust
+					}),
+					crit(11, {	-- Faryl
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
+						["cr"] = 173377,	-- Faryl
+					}),
+				}),
+				ach(14877, {	-- Unholy Undead
+					crit(1,  {	-- Sylla
+						["coord"] = { 39.8, 52.4, REVENDRETH },
+						["cr"] = 173315,	-- Sylla
+					}),
+					crit(2,  {	-- Eyegor
+						["coord"] = { 67.6, 66.0, REVENDRETH },
+						["cr"] = 173324,	-- Eyegor
+					}),
+					crit(3,  {	-- Addius the Tormentor
+						["coord"] = { 61.2, 41.0, REVENDRETH },
+						["cr"] = 173331,	-- Addius the Tormentor
+					}),
+					crit(4,  {	-- Rotgut
+						["coord"] = { 34.0, 55.2, MALDRAXXUS },
+						["cr"] = 173263,	-- Rotgut
+					}),
+					crit(5,  {	-- Dundley Stickyfingers
+						["coord"] = { 63.2, 46.8, MALDRAXXUS },
+						["cr"] = 173267,	-- Dundley Stickyfingers
+					}),
+					crit(6,  {	-- Caregiver Maximillian
+						["coord"] = { 46.8, 50.0, MALDRAXXUS },
+						["cr"] = 173257,	-- Caregiver Maximillian
+					}),
+					crit(7,  {	-- Zolla
+						["coord"] = { 51.4, 38.2, BASTION },
+						["cr"] = 173130,	-- Zolla
+					}),
+					crit(8,  {	-- Thenia
+						["coord"] = { 54.6, 56.0, BASTION },
+						["cr"] = 173129,	-- Thenia
+					}),
+					crit(9,  {	-- Stratios
+						["coord"] = { 34.8, 62.8, BASTION },
+						["cr"] = 173131,	-- Stratios
+					}),
+					crit(10, {	-- Glitterdust
+						["coord"] = { 58.2, 56.8, ARDENWEALD },
+						["cr"] = 173372,	-- Glitterdust
+					}),
+					crit(11, {	-- Faryl
+						["coord"] = { 51.2, 44.2, ARDENWEALD },
+						["cr"] = 173377,	-- Faryl
+					}),
+				}),
+			},
 		}),
-		ach(9696, {	-- Family Familiar
-			i(140761),	-- Nightmare Treant
-			ach(9686, {	-- Aquatic Acquiescence
-				crit(1, {	-- Nightwatcher Merayl (Azsuna)
-					["_quests"] = { 42159 },
-				}),
-				crit(2, {	-- Bodhi Sunwayver (Dalaran)
-					["_quests"] = { 40299 },
-				}),
-				crit(3, {	-- Tiffany Nelson (Dalaran)
-					["_quests"] = { 40277 },
-				}),
-				crit(4, {	-- Amalia (Dalaran)
-					["_quests"] = { 42442 },
-				}),
-				crit(5, {	-- Sir Galveston (Dalaran)
-					["_quests"] = { 40298 },
-				}),
-				crit(6, {	-- Bredda Tenderhide (Highmountain)
-					["_quests"] = { 40280 },
-				}),
-				crit(7, {	-- Grixis Tinypop (Highmountain)
-					["_quests"] = { 40282 },
-				}),
-				crit(8, {	-- Odrogg (Highmountain)
-					["_quests"] = { 41687 },
-				}),
-				crit(9, {	-- Robert Craig (Stormheim)
-					["_quests"] = { 40278 },
-				}),
-				crit(10, {	-- Trapper Jarrun (Stormheim)
-					["_quests"] = { 41944 },
-				}),
-				crit(11, {	-- Aulier (Suramar)
-					["_quests"] = { 41895 },
-				}),
-				crit(12, {	-- Master Tamer Flummox (Suramar)
-					["_quests"] = { 40337 },
-				}),
-				crit(13, {	-- Varenne (Suramar)
-					["_quests"] = { 41990 },
-				}),
-				crit(14, {	-- Durian Strongfruit (Val'sharah)
-					["_quests"] = { 40279 },
-				}),
-				crit(15, {	-- Xorvasc (Val'sharah)
-					["_quests"] = { 41860 },
-				}),
-			}),
-			ach(9687, {	-- Best of the Beasts
-				crit(1, {	-- Nightwatcher Merayl (Azsuna)
-					["_quests"] = { 42159 },
-				}),
-				crit(2, {	-- Bodhi Sunwayver (Dalaran)
-					["_quests"] = { 40299 },
-				}),
-				crit(3, {	-- Tiffany Nelson (Dalaran)
-					["_quests"] = { 40277 },
-				}),
-				crit(4, {	-- Amalia (Dalaran)
-					["_quests"] = { 42442 },
-				}),
-				crit(5, {	-- Sir Galveston (Dalaran)
-					["_quests"] = { 40298 },
-				}),
-				crit(6, {	-- Bredda Tenderhide (Highmountain)
-					["_quests"] = { 40280 },
-				}),
-				crit(7, {	-- Grixis Tinypop (Highmountain)
-					["_quests"] = { 40282 },
-				}),
-				crit(8, {	-- Odrogg (Highmountain)
-					["_quests"] = { 41687 },
-				}),
-				crit(9, {	-- Robert Craig (Stormheim)
-					["_quests"] = { 40278 },
-				}),
-				crit(10, {	-- Trapper Jarrun (Stormheim)
-					["_quests"] = { 41944 },
-				}),
-				crit(11, {	-- Aulier (Suramar)
-					["_quests"] = { 41895 },
-				}),
-				crit(12, {	-- Master Tamer Flummox (Suramar)
-					["_quests"] = { 40337 },
-				}),
-				crit(13, {	-- Varenne (Suramar)
-					["_quests"] = { 41990 },
-				}),
-				crit(14, {	-- Durian Strongfruit (Val'sharah)
-					["_quests"] = { 40279 },
-				}),
-				crit(15, {	-- Xorvasc (Val'sharah)
-					["_quests"] = { 41860 },
-				}),
-			}),
-			ach(9688, {	-- Mousing Around
-				crit(1, {	-- Nightwatcher Merayl (Azsuna)
-					["_quests"] = { 42159 },
-				}),
-				crit(2, {	-- Bodhi Sunwayver (Dalaran)
-					["_quests"] = { 40299 },
-				}),
-				crit(3, {	-- Tiffany Nelson (Dalaran)
-					["_quests"] = { 40277 },
-				}),
-				crit(4, {	-- Amalia (Dalaran)
-					["_quests"] = { 42442 },
-				}),
-				crit(5, {	-- Sir Galveston (Dalaran)
-					["_quests"] = { 40298 },
-				}),
-				crit(6, {	-- Bredda Tenderhide (Highmountain)
-					["_quests"] = { 40280 },
-				}),
-				crit(7, {	-- Grixis Tinypop (Highmountain)
-					["_quests"] = { 40282 },
-				}),
-				crit(8, {	-- Odrogg (Highmountain)
-					["_quests"] = { 41687 },
-				}),
-				crit(9, {	-- Robert Craig (Stormheim)
-					["_quests"] = { 40278 },
-				}),
-				crit(10, {	-- Trapper Jarrun (Stormheim)
-					["_quests"] = { 41944 },
-				}),
-				crit(11, {	-- Aulier (Suramar)
-					["_quests"] = { 41895 },
-				}),
-				crit(12, {	-- Master Tamer Flummox (Suramar)
-					["_quests"] = { 40337 },
-				}),
-				crit(13, {	-- Varenne (Suramar)
-					["_quests"] = { 41990 },
-				}),
-				crit(14, {	-- Durian Strongfruit (Val'sharah)
-					["_quests"] = { 40279 },
-				}),
-				crit(15, {	-- Xorvasc (Val'sharah)
-					["_quests"] = { 41860 },
-				}),
-			}),
-			ach(9689, {	-- Dragons!
-				crit(1, {	-- Nightwatcher Merayl (Azsuna)
-					["_quests"] = { 42159 },
-				}),
-				crit(2, {	-- Bodhi Sunwayver (Dalaran)
-					["_quests"] = { 40299 },
-				}),
-				crit(3, {	-- Tiffany Nelson (Dalaran)
-					["_quests"] = { 40277 },
-				}),
-				crit(4, {	-- Amalia (Dalaran)
-					["_quests"] = { 42442 },
-				}),
-				crit(5, {	-- Sir Galveston (Dalaran)
-					["_quests"] = { 40298 },
-				}),
-				crit(6, {	-- Bredda Tenderhide (Highmountain)
-					["_quests"] = { 40280 },
-				}),
-				crit(7, {	-- Grixis Tinypop (Highmountain)
-					["_quests"] = { 40282 },
-				}),
-				crit(8, {	-- Odrogg (Highmountain)
-					["_quests"] = { 41687 },
-				}),
-				crit(9, {	-- Robert Craig (Stormheim)
-					["_quests"] = { 40278 },
-				}),
-				crit(10, {	-- Trapper Jarrun (Stormheim)
-					["_quests"] = { 41944 },
-				}),
-				crit(11, {	-- Aulier (Suramar)
-					["_quests"] = { 41895 },
-				}),
-				crit(12, {	-- Master Tamer Flummox (Suramar)
-					["_quests"] = { 40337 },
-				}),
-				crit(13, {	-- Varenne (Suramar)
-					["_quests"] = { 41990 },
-				}),
-				crit(14, {	-- Durian Strongfruit (Val'sharah)
-					["_quests"] = { 40279 },
-				}),
-				crit(15, {	-- Xorvasc (Val'sharah)
-					["_quests"] = { 41860 },
-				}),
-			}),
-			ach(9690, {	-- Ragnaros, Watch and Learn
-				crit(1, {	-- Nightwatcher Merayl (Azsuna)
-					["_quests"] = { 42159 },
-				}),
-				crit(2, {	-- Bodhi Sunwayver (Dalaran)
-					["_quests"] = { 40299 },
-				}),
-				crit(3, {	-- Tiffany Nelson (Dalaran)
-					["_quests"] = { 40277 },
-				}),
-				crit(4, {	-- Amalia (Dalaran)
-					["_quests"] = { 42442 },
-				}),
-				crit(5, {	-- Sir Galveston (Dalaran)
-					["_quests"] = { 40298 },
-				}),
-				crit(6, {	-- Bredda Tenderhide (Highmountain)
-					["_quests"] = { 40280 },
-				}),
-				crit(7, {	-- Grixis Tinypop (Highmountain)
-					["_quests"] = { 40282 },
-				}),
-				crit(8, {	-- Odrogg (Highmountain)
-					["_quests"] = { 41687 },
-				}),
-				crit(9, {	-- Robert Craig (Stormheim)
-					["_quests"] = { 40278 },
-				}),
-				crit(10, {	-- Trapper Jarrun (Stormheim)
-					["_quests"] = { 41944 },
-				}),
-				crit(11, {	-- Aulier (Suramar)
-					["_quests"] = { 41895 },
-				}),
-				crit(12, {	-- Master Tamer Flummox (Suramar)
-					["_quests"] = { 40337 },
-				}),
-				crit(13, {	-- Varenne (Suramar)
-					["_quests"] = { 41990 },
-				}),
-				crit(14, {	-- Durian Strongfruit (Val'sharah)
-					["_quests"] = { 40279 },
-				}),
-				crit(15, {	-- Xorvasc (Val'sharah)
-					["_quests"] = { 41860 },
-				}),
-			}),
-			ach(9691, {	-- Flock Together
-				crit(1, {	-- Nightwatcher Merayl (Azsuna)
-					["_quests"] = { 42159 },
-				}),
-				crit(2, {	-- Bodhi Sunwayver (Dalaran)
-					["_quests"] = { 40299 },
-				}),
-				crit(3, {	-- Tiffany Nelson (Dalaran)
-					["_quests"] = { 40277 },
-				}),
-				crit(4, {	-- Amalia (Dalaran)
-					["_quests"] = { 42442 },
-				}),
-				crit(5, {	-- Sir Galveston (Dalaran)
-					["_quests"] = { 40298 },
-				}),
-				crit(6, {	-- Bredda Tenderhide (Highmountain)
-					["_quests"] = { 40280 },
-				}),
-				crit(7, {	-- Grixis Tinypop (Highmountain)
-					["_quests"] = { 40282 },
-				}),
-				crit(8, {	-- Odrogg (Highmountain)
-					["_quests"] = { 41687 },
-				}),
-				crit(9, {	-- Robert Craig (Stormheim)
-					["_quests"] = { 40278 },
-				}),
-				crit(10, {	-- Trapper Jarrun (Stormheim)
-					["_quests"] = { 41944 },
-				}),
-				crit(11, {	-- Aulier (Suramar)
-					["_quests"] = { 41895 },
-				}),
-				crit(12, {	-- Master Tamer Flummox (Suramar)
-					["_quests"] = { 40337 },
-				}),
-				crit(13, {	-- Varenne (Suramar)
-					["_quests"] = { 41990 },
-				}),
-				crit(14, {	-- Durian Strongfruit (Val'sharah)
-					["_quests"] = { 40279 },
-				}),
-				crit(15, {	-- Xorvasc (Val'sharah)
-					["_quests"] = { 41860 },
-				}),
-			}),
-			ach(9692, {	-- Murlocs, Harpies, and Wolvar, Oh My!
-				crit(1, {	-- Nightwatcher Merayl (Azsuna)
-					["_quests"] = { 42159 },
-				}),
-				crit(2, {	-- Bodhi Sunwayver (Dalaran)
-					["_quests"] = { 40299 },
-				}),
-				crit(3, {	-- Tiffany Nelson (Dalaran)
-					["_quests"] = { 40277 },
-				}),
-				crit(4, {	-- Amalia (Dalaran)
-					["_quests"] = { 42442 },
-				}),
-				crit(5, {	-- Sir Galveston (Dalaran)
-					["_quests"] = { 40298 },
-				}),
-				crit(6, {	-- Bredda Tenderhide (Highmountain)
-					["_quests"] = { 40280 },
-				}),
-				crit(7, {	-- Grixis Tinypop (Highmountain)
-					["_quests"] = { 40282 },
-				}),
-				crit(8, {	-- Odrogg (Highmountain)
-					["_quests"] = { 41687 },
-				}),
-				crit(9, {	-- Robert Craig (Stormheim)
-					["_quests"] = { 40278 },
-				}),
-				crit(10, {	-- Trapper Jarrun (Stormheim)
-					["_quests"] = { 41944 },
-				}),
-				crit(11, {	-- Aulier (Suramar)
-					["_quests"] = { 41895 },
-				}),
-				crit(12, {	-- Master Tamer Flummox (Suramar)
-					["_quests"] = { 40337 },
-				}),
-				crit(13, {	-- Varenne (Suramar)
-					["_quests"] = { 41990 },
-				}),
-				crit(14, {	-- Durian Strongfruit (Val'sharah)
-					["_quests"] = { 40279 },
-				}),
-				crit(15, {	-- Xorvasc (Val'sharah)
-					["_quests"] = { 41860 },
-				}),
-			}),
-			ach(9693, {	-- Master of Magic
-				crit(1, {	-- Nightwatcher Merayl (Azsuna)
-					["_quests"] = { 42159 },
-				}),
-				crit(2, {	-- Bodhi Sunwayver (Dalaran)
-					["_quests"] = { 40299 },
-				}),
-				crit(3, {	-- Tiffany Nelson (Dalaran)
-					["_quests"] = { 40277 },
-				}),
-				crit(4, {	-- Amalia (Dalaran)
-					["_quests"] = { 42442 },
-				}),
-				crit(5, {	-- Sir Galveston (Dalaran)
-					["_quests"] = { 40298 },
-				}),
-				crit(6, {	-- Bredda Tenderhide (Highmountain)
-					["_quests"] = { 40280 },
-				}),
-				crit(7, {	-- Grixis Tinypop (Highmountain)
-					["_quests"] = { 40282 },
-				}),
-				crit(8, {	-- Odrogg (Highmountain)
-					["_quests"] = { 41687 },
-				}),
-				crit(9, {	-- Robert Craig (Stormheim)
-					["_quests"] = { 40278 },
-				}),
-				crit(10, {	-- Trapper Jarrun (Stormheim)
-					["_quests"] = { 41944 },
-				}),
-				crit(11, {	-- Aulier (Suramar)
-					["_quests"] = { 41895 },
-				}),
-				crit(12, {	-- Master Tamer Flummox (Suramar)
-					["_quests"] = { 40337 },
-				}),
-				crit(13, {	-- Varenne (Suramar)
-					["_quests"] = { 41990 },
-				}),
-				crit(14, {	-- Durian Strongfruit (Val'sharah)
-					["_quests"] = { 40279 },
-				}),
-				crit(15, {	-- Xorvasc (Val'sharah)
-					["_quests"] = { 41860 },
-				}),
-			}),
-			ach(9694, {	-- Roboteer
-				crit(1, {	-- Nightwatcher Merayl (Azsuna)
-					["_quests"] = { 42159 },
-				}),
-				crit(2, {	-- Bodhi Sunwayver (Dalaran)
-					["_quests"] = { 40299 },
-				}),
-				crit(3, {	-- Tiffany Nelson (Dalaran)
-					["_quests"] = { 40277 },
-				}),
-				crit(4, {	-- Amalia (Dalaran)
-					["_quests"] = { 42442 },
-				}),
-				crit(5, {	-- Sir Galveston (Dalaran)
-					["_quests"] = { 40298 },
-				}),
-				crit(6, {	-- Bredda Tenderhide (Highmountain)
-					["_quests"] = { 40280 },
-				}),
-				crit(7, {	-- Grixis Tinypop (Highmountain)
-					["_quests"] = { 40282 },
-				}),
-				crit(8, {	-- Odrogg (Highmountain)
-					["_quests"] = { 41687 },
-				}),
-				crit(9, {	-- Robert Craig (Stormheim)
-					["_quests"] = { 40278 },
-				}),
-				crit(10, {	-- Trapper Jarrun (Stormheim)
-					["_quests"] = { 41944 },
-				}),
-				crit(11, {	-- Aulier (Suramar)
-					["_quests"] = { 41895 },
-				}),
-				crit(12, {	-- Master Tamer Flummox (Suramar)
-					["_quests"] = { 40337 },
-				}),
-				crit(13, {	-- Varenne (Suramar)
-					["_quests"] = { 41990 },
-				}),
-				crit(14, {	-- Durian Strongfruit (Val'sharah)
-					["_quests"] = { 40279 },
-				}),
-				crit(15, {	-- Xorvasc (Val'sharah)
-					["_quests"] = { 41860 },
-				}),
-			}),
-			ach(9695, {	-- The Lil' Necromancer
-				crit(1, {	-- Nightwatcher Merayl (Azsuna)
-					["_quests"] = { 42159 },
-				}),
-				crit(2, {	-- Bodhi Sunwayver (Dalaran)
-					["_quests"] = { 40299 },
-				}),
-				crit(3, {	-- Tiffany Nelson (Dalaran)
-					["_quests"] = { 40277 },
-				}),
-				crit(4, {	-- Amalia (Dalaran)
-					["_quests"] = { 42442 },
-				}),
-				crit(5, {	-- Sir Galveston (Dalaran)
-					["_quests"] = { 40298 },
-				}),
-				crit(6, {	-- Bredda Tenderhide (Highmountain)
-					["_quests"] = { 40280 },
-				}),
-				crit(7, {	-- Grixis Tinypop (Highmountain)
-					["_quests"] = { 40282 },
-				}),
-				crit(8, {	-- Odrogg (Highmountain)
-					["_quests"] = { 41687 },
-				}),
-				crit(9, {	-- Robert Craig (Stormheim)
-					["_quests"] = { 40278 },
-				}),
-				crit(10, {	-- Trapper Jarrun (Stormheim)
-					["_quests"] = { 41944 },
-				}),
-				crit(11, {	-- Aulier (Suramar)
-					["_quests"] = { 41895 },
-				}),
-				crit(12, {	-- Master Tamer Flummox (Suramar)
-					["_quests"] = { 40337 },
-				}),
-				crit(13, {	-- Varenne (Suramar)
-					["_quests"] = { 41990 },
-				}),
-				crit(14, {	-- Durian Strongfruit (Val'sharah)
-					["_quests"] = { 40279 },
-				}),
-				crit(15, {	-- Xorvasc (Val'sharah)
-					["_quests"] = { 41860 },
-				}),
-			}),
+		ach(9696, {		-- Family Familiar
+			-- Meta Achievement should symlink the contained Achievements from Source
+			["sym"] = {
+				{"select","achievementID",
+					9686,	-- Aquatic Acquiescence
+					9687,	-- Best of the Beasts
+					9688,	-- Mousing Around
+					9689,	-- Dragons!
+					9690,	-- Ragnaros, Watch and Learn
+					9691,	-- Flock Together
+					9692,	-- Murlocs, Harpies, and Wolvar, Oh My!
+					9693,	-- Master of Magic
+					9694,	-- Roboteer
+					9695,	-- The Lil' Necromancer
+				},
+				{ "isnt", "criteriaID" }
+			},
+			["groups"] = {
+				i(140761),	-- Nightmare Treant
+				ach(9686, {	-- Aquatic Acquiescence
+					crit(1, {	-- Nightwatcher Merayl (Azsuna)
+						["_quests"] = { 42159 },
+					}),
+					crit(2, {	-- Bodhi Sunwayver (Dalaran)
+						["_quests"] = { 40299 },
+					}),
+					crit(3, {	-- Tiffany Nelson (Dalaran)
+						["_quests"] = { 40277 },
+					}),
+					crit(4, {	-- Amalia (Dalaran)
+						["_quests"] = { 42442 },
+					}),
+					crit(5, {	-- Sir Galveston (Dalaran)
+						["_quests"] = { 40298 },
+					}),
+					crit(6, {	-- Bredda Tenderhide (Highmountain)
+						["_quests"] = { 40280 },
+					}),
+					crit(7, {	-- Grixis Tinypop (Highmountain)
+						["_quests"] = { 40282 },
+					}),
+					crit(8, {	-- Odrogg (Highmountain)
+						["_quests"] = { 41687 },
+					}),
+					crit(9, {	-- Robert Craig (Stormheim)
+						["_quests"] = { 40278 },
+					}),
+					crit(10, {	-- Trapper Jarrun (Stormheim)
+						["_quests"] = { 41944 },
+					}),
+					crit(11, {	-- Aulier (Suramar)
+						["_quests"] = { 41895 },
+					}),
+					crit(12, {	-- Master Tamer Flummox (Suramar)
+						["_quests"] = { 40337 },
+					}),
+					crit(13, {	-- Varenne (Suramar)
+						["_quests"] = { 41990 },
+					}),
+					crit(14, {	-- Durian Strongfruit (Val'sharah)
+						["_quests"] = { 40279 },
+					}),
+					crit(15, {	-- Xorvasc (Val'sharah)
+						["_quests"] = { 41860 },
+					}),
+				}),
+				ach(9687, {	-- Best of the Beasts
+					crit(1, {	-- Nightwatcher Merayl (Azsuna)
+						["_quests"] = { 42159 },
+					}),
+					crit(2, {	-- Bodhi Sunwayver (Dalaran)
+						["_quests"] = { 40299 },
+					}),
+					crit(3, {	-- Tiffany Nelson (Dalaran)
+						["_quests"] = { 40277 },
+					}),
+					crit(4, {	-- Amalia (Dalaran)
+						["_quests"] = { 42442 },
+					}),
+					crit(5, {	-- Sir Galveston (Dalaran)
+						["_quests"] = { 40298 },
+					}),
+					crit(6, {	-- Bredda Tenderhide (Highmountain)
+						["_quests"] = { 40280 },
+					}),
+					crit(7, {	-- Grixis Tinypop (Highmountain)
+						["_quests"] = { 40282 },
+					}),
+					crit(8, {	-- Odrogg (Highmountain)
+						["_quests"] = { 41687 },
+					}),
+					crit(9, {	-- Robert Craig (Stormheim)
+						["_quests"] = { 40278 },
+					}),
+					crit(10, {	-- Trapper Jarrun (Stormheim)
+						["_quests"] = { 41944 },
+					}),
+					crit(11, {	-- Aulier (Suramar)
+						["_quests"] = { 41895 },
+					}),
+					crit(12, {	-- Master Tamer Flummox (Suramar)
+						["_quests"] = { 40337 },
+					}),
+					crit(13, {	-- Varenne (Suramar)
+						["_quests"] = { 41990 },
+					}),
+					crit(14, {	-- Durian Strongfruit (Val'sharah)
+						["_quests"] = { 40279 },
+					}),
+					crit(15, {	-- Xorvasc (Val'sharah)
+						["_quests"] = { 41860 },
+					}),
+				}),
+				ach(9688, {	-- Mousing Around
+					crit(1, {	-- Nightwatcher Merayl (Azsuna)
+						["_quests"] = { 42159 },
+					}),
+					crit(2, {	-- Bodhi Sunwayver (Dalaran)
+						["_quests"] = { 40299 },
+					}),
+					crit(3, {	-- Tiffany Nelson (Dalaran)
+						["_quests"] = { 40277 },
+					}),
+					crit(4, {	-- Amalia (Dalaran)
+						["_quests"] = { 42442 },
+					}),
+					crit(5, {	-- Sir Galveston (Dalaran)
+						["_quests"] = { 40298 },
+					}),
+					crit(6, {	-- Bredda Tenderhide (Highmountain)
+						["_quests"] = { 40280 },
+					}),
+					crit(7, {	-- Grixis Tinypop (Highmountain)
+						["_quests"] = { 40282 },
+					}),
+					crit(8, {	-- Odrogg (Highmountain)
+						["_quests"] = { 41687 },
+					}),
+					crit(9, {	-- Robert Craig (Stormheim)
+						["_quests"] = { 40278 },
+					}),
+					crit(10, {	-- Trapper Jarrun (Stormheim)
+						["_quests"] = { 41944 },
+					}),
+					crit(11, {	-- Aulier (Suramar)
+						["_quests"] = { 41895 },
+					}),
+					crit(12, {	-- Master Tamer Flummox (Suramar)
+						["_quests"] = { 40337 },
+					}),
+					crit(13, {	-- Varenne (Suramar)
+						["_quests"] = { 41990 },
+					}),
+					crit(14, {	-- Durian Strongfruit (Val'sharah)
+						["_quests"] = { 40279 },
+					}),
+					crit(15, {	-- Xorvasc (Val'sharah)
+						["_quests"] = { 41860 },
+					}),
+				}),
+				ach(9689, {	-- Dragons!
+					crit(1, {	-- Nightwatcher Merayl (Azsuna)
+						["_quests"] = { 42159 },
+					}),
+					crit(2, {	-- Bodhi Sunwayver (Dalaran)
+						["_quests"] = { 40299 },
+					}),
+					crit(3, {	-- Tiffany Nelson (Dalaran)
+						["_quests"] = { 40277 },
+					}),
+					crit(4, {	-- Amalia (Dalaran)
+						["_quests"] = { 42442 },
+					}),
+					crit(5, {	-- Sir Galveston (Dalaran)
+						["_quests"] = { 40298 },
+					}),
+					crit(6, {	-- Bredda Tenderhide (Highmountain)
+						["_quests"] = { 40280 },
+					}),
+					crit(7, {	-- Grixis Tinypop (Highmountain)
+						["_quests"] = { 40282 },
+					}),
+					crit(8, {	-- Odrogg (Highmountain)
+						["_quests"] = { 41687 },
+					}),
+					crit(9, {	-- Robert Craig (Stormheim)
+						["_quests"] = { 40278 },
+					}),
+					crit(10, {	-- Trapper Jarrun (Stormheim)
+						["_quests"] = { 41944 },
+					}),
+					crit(11, {	-- Aulier (Suramar)
+						["_quests"] = { 41895 },
+					}),
+					crit(12, {	-- Master Tamer Flummox (Suramar)
+						["_quests"] = { 40337 },
+					}),
+					crit(13, {	-- Varenne (Suramar)
+						["_quests"] = { 41990 },
+					}),
+					crit(14, {	-- Durian Strongfruit (Val'sharah)
+						["_quests"] = { 40279 },
+					}),
+					crit(15, {	-- Xorvasc (Val'sharah)
+						["_quests"] = { 41860 },
+					}),
+				}),
+				ach(9690, {	-- Ragnaros, Watch and Learn
+					crit(1, {	-- Nightwatcher Merayl (Azsuna)
+						["_quests"] = { 42159 },
+					}),
+					crit(2, {	-- Bodhi Sunwayver (Dalaran)
+						["_quests"] = { 40299 },
+					}),
+					crit(3, {	-- Tiffany Nelson (Dalaran)
+						["_quests"] = { 40277 },
+					}),
+					crit(4, {	-- Amalia (Dalaran)
+						["_quests"] = { 42442 },
+					}),
+					crit(5, {	-- Sir Galveston (Dalaran)
+						["_quests"] = { 40298 },
+					}),
+					crit(6, {	-- Bredda Tenderhide (Highmountain)
+						["_quests"] = { 40280 },
+					}),
+					crit(7, {	-- Grixis Tinypop (Highmountain)
+						["_quests"] = { 40282 },
+					}),
+					crit(8, {	-- Odrogg (Highmountain)
+						["_quests"] = { 41687 },
+					}),
+					crit(9, {	-- Robert Craig (Stormheim)
+						["_quests"] = { 40278 },
+					}),
+					crit(10, {	-- Trapper Jarrun (Stormheim)
+						["_quests"] = { 41944 },
+					}),
+					crit(11, {	-- Aulier (Suramar)
+						["_quests"] = { 41895 },
+					}),
+					crit(12, {	-- Master Tamer Flummox (Suramar)
+						["_quests"] = { 40337 },
+					}),
+					crit(13, {	-- Varenne (Suramar)
+						["_quests"] = { 41990 },
+					}),
+					crit(14, {	-- Durian Strongfruit (Val'sharah)
+						["_quests"] = { 40279 },
+					}),
+					crit(15, {	-- Xorvasc (Val'sharah)
+						["_quests"] = { 41860 },
+					}),
+				}),
+				ach(9691, {	-- Flock Together
+					crit(1, {	-- Nightwatcher Merayl (Azsuna)
+						["_quests"] = { 42159 },
+					}),
+					crit(2, {	-- Bodhi Sunwayver (Dalaran)
+						["_quests"] = { 40299 },
+					}),
+					crit(3, {	-- Tiffany Nelson (Dalaran)
+						["_quests"] = { 40277 },
+					}),
+					crit(4, {	-- Amalia (Dalaran)
+						["_quests"] = { 42442 },
+					}),
+					crit(5, {	-- Sir Galveston (Dalaran)
+						["_quests"] = { 40298 },
+					}),
+					crit(6, {	-- Bredda Tenderhide (Highmountain)
+						["_quests"] = { 40280 },
+					}),
+					crit(7, {	-- Grixis Tinypop (Highmountain)
+						["_quests"] = { 40282 },
+					}),
+					crit(8, {	-- Odrogg (Highmountain)
+						["_quests"] = { 41687 },
+					}),
+					crit(9, {	-- Robert Craig (Stormheim)
+						["_quests"] = { 40278 },
+					}),
+					crit(10, {	-- Trapper Jarrun (Stormheim)
+						["_quests"] = { 41944 },
+					}),
+					crit(11, {	-- Aulier (Suramar)
+						["_quests"] = { 41895 },
+					}),
+					crit(12, {	-- Master Tamer Flummox (Suramar)
+						["_quests"] = { 40337 },
+					}),
+					crit(13, {	-- Varenne (Suramar)
+						["_quests"] = { 41990 },
+					}),
+					crit(14, {	-- Durian Strongfruit (Val'sharah)
+						["_quests"] = { 40279 },
+					}),
+					crit(15, {	-- Xorvasc (Val'sharah)
+						["_quests"] = { 41860 },
+					}),
+				}),
+				ach(9692, {	-- Murlocs, Harpies, and Wolvar, Oh My!
+					crit(1, {	-- Nightwatcher Merayl (Azsuna)
+						["_quests"] = { 42159 },
+					}),
+					crit(2, {	-- Bodhi Sunwayver (Dalaran)
+						["_quests"] = { 40299 },
+					}),
+					crit(3, {	-- Tiffany Nelson (Dalaran)
+						["_quests"] = { 40277 },
+					}),
+					crit(4, {	-- Amalia (Dalaran)
+						["_quests"] = { 42442 },
+					}),
+					crit(5, {	-- Sir Galveston (Dalaran)
+						["_quests"] = { 40298 },
+					}),
+					crit(6, {	-- Bredda Tenderhide (Highmountain)
+						["_quests"] = { 40280 },
+					}),
+					crit(7, {	-- Grixis Tinypop (Highmountain)
+						["_quests"] = { 40282 },
+					}),
+					crit(8, {	-- Odrogg (Highmountain)
+						["_quests"] = { 41687 },
+					}),
+					crit(9, {	-- Robert Craig (Stormheim)
+						["_quests"] = { 40278 },
+					}),
+					crit(10, {	-- Trapper Jarrun (Stormheim)
+						["_quests"] = { 41944 },
+					}),
+					crit(11, {	-- Aulier (Suramar)
+						["_quests"] = { 41895 },
+					}),
+					crit(12, {	-- Master Tamer Flummox (Suramar)
+						["_quests"] = { 40337 },
+					}),
+					crit(13, {	-- Varenne (Suramar)
+						["_quests"] = { 41990 },
+					}),
+					crit(14, {	-- Durian Strongfruit (Val'sharah)
+						["_quests"] = { 40279 },
+					}),
+					crit(15, {	-- Xorvasc (Val'sharah)
+						["_quests"] = { 41860 },
+					}),
+				}),
+				ach(9693, {	-- Master of Magic
+					crit(1, {	-- Nightwatcher Merayl (Azsuna)
+						["_quests"] = { 42159 },
+					}),
+					crit(2, {	-- Bodhi Sunwayver (Dalaran)
+						["_quests"] = { 40299 },
+					}),
+					crit(3, {	-- Tiffany Nelson (Dalaran)
+						["_quests"] = { 40277 },
+					}),
+					crit(4, {	-- Amalia (Dalaran)
+						["_quests"] = { 42442 },
+					}),
+					crit(5, {	-- Sir Galveston (Dalaran)
+						["_quests"] = { 40298 },
+					}),
+					crit(6, {	-- Bredda Tenderhide (Highmountain)
+						["_quests"] = { 40280 },
+					}),
+					crit(7, {	-- Grixis Tinypop (Highmountain)
+						["_quests"] = { 40282 },
+					}),
+					crit(8, {	-- Odrogg (Highmountain)
+						["_quests"] = { 41687 },
+					}),
+					crit(9, {	-- Robert Craig (Stormheim)
+						["_quests"] = { 40278 },
+					}),
+					crit(10, {	-- Trapper Jarrun (Stormheim)
+						["_quests"] = { 41944 },
+					}),
+					crit(11, {	-- Aulier (Suramar)
+						["_quests"] = { 41895 },
+					}),
+					crit(12, {	-- Master Tamer Flummox (Suramar)
+						["_quests"] = { 40337 },
+					}),
+					crit(13, {	-- Varenne (Suramar)
+						["_quests"] = { 41990 },
+					}),
+					crit(14, {	-- Durian Strongfruit (Val'sharah)
+						["_quests"] = { 40279 },
+					}),
+					crit(15, {	-- Xorvasc (Val'sharah)
+						["_quests"] = { 41860 },
+					}),
+				}),
+				ach(9694, {	-- Roboteer
+					crit(1, {	-- Nightwatcher Merayl (Azsuna)
+						["_quests"] = { 42159 },
+					}),
+					crit(2, {	-- Bodhi Sunwayver (Dalaran)
+						["_quests"] = { 40299 },
+					}),
+					crit(3, {	-- Tiffany Nelson (Dalaran)
+						["_quests"] = { 40277 },
+					}),
+					crit(4, {	-- Amalia (Dalaran)
+						["_quests"] = { 42442 },
+					}),
+					crit(5, {	-- Sir Galveston (Dalaran)
+						["_quests"] = { 40298 },
+					}),
+					crit(6, {	-- Bredda Tenderhide (Highmountain)
+						["_quests"] = { 40280 },
+					}),
+					crit(7, {	-- Grixis Tinypop (Highmountain)
+						["_quests"] = { 40282 },
+					}),
+					crit(8, {	-- Odrogg (Highmountain)
+						["_quests"] = { 41687 },
+					}),
+					crit(9, {	-- Robert Craig (Stormheim)
+						["_quests"] = { 40278 },
+					}),
+					crit(10, {	-- Trapper Jarrun (Stormheim)
+						["_quests"] = { 41944 },
+					}),
+					crit(11, {	-- Aulier (Suramar)
+						["_quests"] = { 41895 },
+					}),
+					crit(12, {	-- Master Tamer Flummox (Suramar)
+						["_quests"] = { 40337 },
+					}),
+					crit(13, {	-- Varenne (Suramar)
+						["_quests"] = { 41990 },
+					}),
+					crit(14, {	-- Durian Strongfruit (Val'sharah)
+						["_quests"] = { 40279 },
+					}),
+					crit(15, {	-- Xorvasc (Val'sharah)
+						["_quests"] = { 41860 },
+					}),
+				}),
+				ach(9695, {	-- The Lil' Necromancer
+					crit(1, {	-- Nightwatcher Merayl (Azsuna)
+						["_quests"] = { 42159 },
+					}),
+					crit(2, {	-- Bodhi Sunwayver (Dalaran)
+						["_quests"] = { 40299 },
+					}),
+					crit(3, {	-- Tiffany Nelson (Dalaran)
+						["_quests"] = { 40277 },
+					}),
+					crit(4, {	-- Amalia (Dalaran)
+						["_quests"] = { 42442 },
+					}),
+					crit(5, {	-- Sir Galveston (Dalaran)
+						["_quests"] = { 40298 },
+					}),
+					crit(6, {	-- Bredda Tenderhide (Highmountain)
+						["_quests"] = { 40280 },
+					}),
+					crit(7, {	-- Grixis Tinypop (Highmountain)
+						["_quests"] = { 40282 },
+					}),
+					crit(8, {	-- Odrogg (Highmountain)
+						["_quests"] = { 41687 },
+					}),
+					crit(9, {	-- Robert Craig (Stormheim)
+						["_quests"] = { 40278 },
+					}),
+					crit(10, {	-- Trapper Jarrun (Stormheim)
+						["_quests"] = { 41944 },
+					}),
+					crit(11, {	-- Aulier (Suramar)
+						["_quests"] = { 41895 },
+					}),
+					crit(12, {	-- Master Tamer Flummox (Suramar)
+						["_quests"] = { 40337 },
+					}),
+					crit(13, {	-- Varenne (Suramar)
+						["_quests"] = { 41990 },
+					}),
+					crit(14, {	-- Durian Strongfruit (Val'sharah)
+						["_quests"] = { 40279 },
+					}),
+					crit(15, {	-- Xorvasc (Val'sharah)
+						["_quests"] = { 41860 },
+					}),
+				}),
+			},
 		}),
 		ach(12100, {	-- Family Fighter
-			i(153040),	-- Felclaw Marsuul
-			ach(12089, {	-- Aquatic Assault
-				crit(1),	-- Ruinhoof (Krokuun)
-				crit(2),	-- Foulclaw (krokuun)
-				crit(3),	-- Baneglow (Krokuun)
-				crit(4),	-- Retch (Krokuun)
-				crit(5),	-- Deathscreech (Krokuun)
-				crit(6),	-- Gnasher (Krokuun)
-				crit(7),	-- Bucky (Eredath)
-				crit(8),	-- Snozz (Eredath)
-				crit(9),	-- Gloamwing (Eredath)
-				crit(10),	-- Shadeflicker (Eredath)
-				crit(11),	-- Corrupted Blood of Argus (Eredath)
-				crit(12),	-- Mar'cuus (Eredath)
-				crit(13),	-- Watcher (Antoran Wastes)
-				crit(14),	-- Bloat (Antoran Wastes)
-				crit(15),	-- Earseeker (Antoran Wastes)
-				crit(16),	-- Pilfer (Antoran Wastes)
-				crit(17),	-- Minixis (Antoran Wastes)
-				crit(18),	-- One-of-Many (Antoran Wastes)
-			}),
-			ach(12091, {	-- Beast Blitz
-				crit(1),	-- Ruinhoof (Krokuun)
-				crit(2),	-- Foulclaw (krokuun)
-				crit(3),	-- Baneglow (Krokuun)
-				crit(4),	-- Retch (Krokuun)
-				crit(5),	-- Deathscreech (Krokuun)
-				crit(6),	-- Gnasher (Krokuun)
-				crit(7),	-- Bucky (Eredath)
-				crit(8),	-- Snozz (Eredath)
-				crit(9),	-- Gloamwing (Eredath)
-				crit(10),	-- Shadeflicker (Eredath)
-				crit(11),	-- Corrupted Blood of Argus (Eredath)
-				crit(12),	-- Mar'cuus (Eredath)
-				crit(13),	-- Watcher (Antoran Wastes)
-				crit(14),	-- Bloat (Antoran Wastes)
-				crit(15),	-- Earseeker (Antoran Wastes)
-				crit(16),	-- Pilfer (Antoran Wastes)
-				crit(17),	-- Minixis (Antoran Wastes)
-				crit(18),	-- One-of-Many (Antoran Wastes)
-			}),
-			ach(12092, {	-- Critical Critters
-				crit(1),	-- Ruinhoof (Krokuun)
-				crit(2),	-- Foulclaw (krokuun)
-				crit(3),	-- Baneglow (Krokuun)
-				crit(4),	-- Retch (Krokuun)
-				crit(5),	-- Deathscreech (Krokuun)
-				crit(6),	-- Gnasher (Krokuun)
-				crit(7),	-- Bucky (Eredath)
-				crit(8),	-- Snozz (Eredath)
-				crit(9),	-- Gloamwing (Eredath)
-				crit(10),	-- Shadeflicker (Eredath)
-				crit(11),	-- Corrupted Blood of Argus (Eredath)
-				crit(12),	-- Mar'cuus (Eredath)
-				crit(13),	-- Watcher (Antoran Wastes)
-				crit(14),	-- Bloat (Antoran Wastes)
-				crit(15),	-- Earseeker (Antoran Wastes)
-				crit(16),	-- Pilfer (Antoran Wastes)
-				crit(17),	-- Minixis (Antoran Wastes)
-				crit(18),	-- One-of-Many (Antoran Wastes)
-			}),
-			ach(12093, {	-- Draconic Destruction
-				crit(1),	-- Ruinhoof (Krokuun)
-				crit(2),	-- Foulclaw (krokuun)
-				crit(3),	-- Baneglow (Krokuun)
-				crit(4),	-- Retch (Krokuun)
-				crit(5),	-- Deathscreech (Krokuun)
-				crit(6),	-- Gnasher (Krokuun)
-				crit(7),	-- Bucky (Eredath)
-				crit(8),	-- Snozz (Eredath)
-				crit(9),	-- Gloamwing (Eredath)
-				crit(10),	-- Shadeflicker (Eredath)
-				crit(11),	-- Corrupted Blood of Argus (Eredath)
-				crit(12),	-- Mar'cuus (Eredath)
-				crit(13),	-- Watcher (Antoran Wastes)
-				crit(14),	-- Bloat (Antoran Wastes)
-				crit(15),	-- Earseeker (Antoran Wastes)
-				crit(16),	-- Pilfer (Antoran Wastes)
-				crit(17),	-- Minixis (Antoran Wastes)
-				crit(18),	-- One-of-Many (Antoran Wastes)
-			}),
-			ach(12094, {	-- Elemental Escalation
-				crit(1),	-- Ruinhoof (Krokuun)
-				crit(2),	-- Foulclaw (krokuun)
-				crit(3),	-- Baneglow (Krokuun)
-				crit(4),	-- Retch (Krokuun)
-				crit(5),	-- Deathscreech (Krokuun)
-				crit(6),	-- Gnasher (Krokuun)
-				crit(7),	-- Bucky (Eredath)
-				crit(8),	-- Snozz (Eredath)
-				crit(9),	-- Gloamwing (Eredath)
-				crit(10),	-- Shadeflicker (Eredath)
-				crit(11),	-- Corrupted Blood of Argus (Eredath)
-				crit(12),	-- Mar'cuus (Eredath)
-				crit(13),	-- Watcher (Antoran Wastes)
-				crit(14),	-- Bloat (Antoran Wastes)
-				crit(15),	-- Earseeker (Antoran Wastes)
-				crit(16),	-- Pilfer (Antoran Wastes)
-				crit(17),	-- Minixis (Antoran Wastes)
-				crit(18),	-- One-of-Many (Antoran Wastes)
-			}),
-			ach(12095, {	-- Fierce Fliers
-				crit(1),	-- Ruinhoof (Krokuun)
-				crit(2),	-- Foulclaw (krokuun)
-				crit(3),	-- Baneglow (Krokuun)
-				crit(4),	-- Retch (Krokuun)
-				crit(5),	-- Deathscreech (Krokuun)
-				crit(6),	-- Gnasher (Krokuun)
-				crit(7),	-- Bucky (Eredath)
-				crit(8),	-- Snozz (Eredath)
-				crit(9),	-- Gloamwing (Eredath)
-				crit(10),	-- Shadeflicker (Eredath)
-				crit(11),	-- Corrupted Blood of Argus (Eredath)
-				crit(12),	-- Mar'cuus (Eredath)
-				crit(13),	-- Watcher (Antoran Wastes)
-				crit(14),	-- Bloat (Antoran Wastes)
-				crit(15),	-- Earseeker (Antoran Wastes)
-				crit(16),	-- Pilfer (Antoran Wastes)
-				crit(17),	-- Minixis (Antoran Wastes)
-				crit(18),	-- One-of-Many (Antoran Wastes)
-			}),
-			ach(12096, {	-- Humanoid Havoc
-				crit(1),	-- Ruinhoof (Krokuun)
-				crit(2),	-- Foulclaw (krokuun)
-				crit(3),	-- Baneglow (Krokuun)
-				crit(4),	-- Retch (Krokuun)
-				crit(5),	-- Deathscreech (Krokuun)
-				crit(6),	-- Gnasher (Krokuun)
-				crit(7),	-- Bucky (Eredath)
-				crit(8),	-- Snozz (Eredath)
-				crit(9),	-- Gloamwing (Eredath)
-				crit(10),	-- Shadeflicker (Eredath)
-				crit(11),	-- Corrupted Blood of Argus (Eredath)
-				crit(12),	-- Mar'cuus (Eredath)
-				crit(13),	-- Watcher (Antoran Wastes)
-				crit(14),	-- Bloat (Antoran Wastes)
-				crit(15),	-- Earseeker (Antoran Wastes)
-				crit(16),	-- Pilfer (Antoran Wastes)
-				crit(17),	-- Minixis (Antoran Wastes)
-				crit(18),	-- One-of-Many (Antoran Wastes)
-			}),
-			ach(12097, {	-- Magical Mayhem
-				crit(1),	-- Ruinhoof (Krokuun)
-				crit(2),	-- Foulclaw (krokuun)
-				crit(3),	-- Baneglow (Krokuun)
-				crit(4),	-- Retch (Krokuun)
-				crit(5),	-- Deathscreech (Krokuun)
-				crit(6),	-- Gnasher (Krokuun)
-				crit(7),	-- Bucky (Eredath)
-				crit(8),	-- Snozz (Eredath)
-				crit(9),	-- Gloamwing (Eredath)
-				crit(10),	-- Shadeflicker (Eredath)
-				crit(11),	-- Corrupted Blood of Argus (Eredath)
-				crit(12),	-- Mar'cuus (Eredath)
-				crit(13),	-- Watcher (Antoran Wastes)
-				crit(14),	-- Bloat (Antoran Wastes)
-				crit(15),	-- Earseeker (Antoran Wastes)
-				crit(16),	-- Pilfer (Antoran Wastes)
-				crit(17),	-- Minixis (Antoran Wastes)
-				crit(18),	-- One-of-Many (Antoran Wastes)
-			}),
-			ach(12098, {	-- Mechanical Melee
-				crit(1),	-- Ruinhoof (Krokuun)
-				crit(2),	-- Foulclaw (krokuun)
-				crit(3),	-- Baneglow (Krokuun)
-				crit(4),	-- Retch (Krokuun)
-				crit(5),	-- Deathscreech (Krokuun)
-				crit(6),	-- Gnasher (Krokuun)
-				crit(7),	-- Bucky (Eredath)
-				crit(8),	-- Snozz (Eredath)
-				crit(9),	-- Gloamwing (Eredath)
-				crit(10),	-- Shadeflicker (Eredath)
-				crit(11),	-- Corrupted Blood of Argus (Eredath)
-				crit(12),	-- Mar'cuus (Eredath)
-				crit(13),	-- Watcher (Antoran Wastes)
-				crit(14),	-- Bloat (Antoran Wastes)
-				crit(15),	-- Earseeker (Antoran Wastes)
-				crit(16),	-- Pilfer (Antoran Wastes)
-				crit(17),	-- Minixis (Antoran Wastes)
-				crit(18),	-- One-of-Many (Antoran Wastes)
-			}),
-			ach(12099, {	-- Unstoppable Undead
-				crit(1),	-- Ruinhoof (Krokuun)
-				crit(2),	-- Foulclaw (krokuun)
-				crit(3),	-- Baneglow (Krokuun)
-				crit(4),	-- Retch (Krokuun)
-				crit(5),	-- Deathscreech (Krokuun)
-				crit(6),	-- Gnasher (Krokuun)
-				crit(7),	-- Bucky (Eredath)
-				crit(8),	-- Snozz (Eredath)
-				crit(9),	-- Gloamwing (Eredath)
-				crit(10),	-- Shadeflicker (Eredath)
-				crit(11),	-- Corrupted Blood of Argus (Eredath)
-				crit(12),	-- Mar'cuus (Eredath)
-				crit(13),	-- Watcher (Antoran Wastes)
-				crit(14),	-- Bloat (Antoran Wastes)
-				crit(15),	-- Earseeker (Antoran Wastes)
-				crit(16),	-- Pilfer (Antoran Wastes)
-				crit(17),	-- Minixis (Antoran Wastes)
-				crit(18),	-- One-of-Many (Antoran Wastes)
-			}),
+			-- Meta Achievement should symlink the contained Achievements from Source
+			["sym"] = {
+				{"select","achievementID",
+					12089,	-- Aquatic Assault
+					12091,	-- Beast Blitz
+					12092,	-- Critical Critters
+					12093,	-- Draconic Destruction
+					12094,	-- Elemental Escalation
+					12095,	-- Fierce Fliers
+					12096,	-- Humanoid Havoc
+					12097,	-- Magical Mayhem
+					12098,	-- Mechanical Melee
+					12099,	-- Unstoppable Undead
+				},
+				{ "isnt", "criteriaID" }
+			},
+			["groups"] = {
+				i(153040),	-- Felclaw Marsuul
+				ach(12089),	-- Aquatic Assault
+				ach(12091),	-- Beast Blitz
+				ach(12092),	-- Critical Critters
+				ach(12093),	-- Draconic Destruction
+				ach(12094),	-- Elemental Escalation
+				ach(12095),	-- Fierce Fliers
+				ach(12096),	-- Humanoid Havoc
+				ach(12097),	-- Magical Mayhem
+				ach(12098),	-- Mechanical Melee
+				ach(12099),	-- Unstoppable Undead
+			},
 		}),
-		ach(6592, {	-- Legendary Pet Battler (5000)
-			ach(6591),	-- Grand Master Pet Battler (1000)
-			ach(6462),	-- Master Pet Battler (250)
-			ach(6593),	-- Experienced Pet Battler (50)
-			ach(6594),	-- Cat Fight! (10)
+		
+		ach(6592, {    -- Legendary Pet Battler (5000)
+			ach(6591),    -- Grand Master Pet Battler (1000)
+			ach(6462),    -- Master Pet Battler (250)
+			ach(6593),    -- Experienced Pet Battler (50)
+			ach(6594),    -- Cat Fight! (10)
 		}),
-		pvp(ach(6599, {	-- Legendary Pet Brawler (5000)
-			ach(6598),	-- Grand Master Pet Brawler (1000)
-			ach(6597),	-- Master Pet Brawler (250)
-			ach(6596),	-- Experienced Pet Brawler (50)
-			ach(6595),	-- Pet Brawler (10)
+		pvp(ach(6599, {    -- Legendary Pet Brawler (5000)
+			ach(6598),    -- Grand Master Pet Brawler (1000)
+			ach(6597),    -- Master Pet Brawler (250)
+			ach(6596),    -- Experienced Pet Brawler (50)
+			ach(6595),    -- Pet Brawler (10)
 		})),
 		ach(13766, {	-- Malowned
 			i(170102),	-- Burnout
