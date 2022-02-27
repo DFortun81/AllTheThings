@@ -417,9 +417,6 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			filter(TOYS, {
 				i(163922),	-- Used for a toy, you never can get the actual item
 				i(163923),	-- Used for a toy, you never can get the actual item
-				i(164372),	-- Jinyu Light Globe
-				i(164377),	-- Regenerating Banana Bunch
-				i(164371),	-- Yaungol Oil Stove
 			}),
 			i(164286),	-- Plundered Runecaster's Mantle
 			i(164285),	-- Plundered Shoveltusk-Hide Shoulders

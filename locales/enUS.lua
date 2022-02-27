@@ -820,6 +820,7 @@ app.L = {
 		[101] = "Interface\\Icons\\Tracking_WildPet",							-- Battle Pets
 		[102] = app.asset("Category_ToyBox"),									-- Toy Box
 		[103] = "Interface\\Icons\\inv_inscription_weaponscroll03",				-- Illusions
+		[110] = app.asset("Category_Titles"),									-- Titles
 		[111] = "Interface\\Icons\\Inv_glyph_minorwarrior",						-- Glyph
 		[113] = "Interface\\Icons\\INV_Misc_Bag_08",							-- Bag
 		[114] = "Interface\\Icons\\inv_blacksmith_leystonehoofplates_orange",	-- Mount Equipment
@@ -1003,6 +1004,7 @@ app.L = {
 		[-217] = "Interface\\Icons\\INV_Fishing_Lure_Worm",									-- Lures (for Fishing)
 		[-218] = "Interface\\Icons\\Achievement_Profession_Fishing_NorthrendAngler",		-- Coastal (for Fishing)
 	-- Class
+		[-219] = "Interface\\Icons\\inv_misc_questionmark",									-- Sourceless
 		[-220] = "Interface\\MINIMAP\\TRACKING\\Class",										-- Class
 	-- Bonus Objectives
 		[-221] = 237387,																	-- Bonus Objectives
@@ -1528,6 +1530,7 @@ app.L = {
 	-- Fishing
 		[-217] = "Lures",														-- Lures (for Fishing)
 		[-218] = "Coastal",														-- Coastal (for Fishing)
+		[-219] = "Sourceless",													-- Sourceless
 	-- Class
 		[-220] = CLASS,															-- Class
 	-- Bonus Objectives

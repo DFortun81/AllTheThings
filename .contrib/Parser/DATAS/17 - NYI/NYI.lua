@@ -4,6 +4,21 @@
 -- Everything in this file hasn't been implemented yet.
 
 root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+	n(SOURCELESS, {
+		["description"] = "This Category contains Things that probably exist in the game but no known source.",
+		["g"] = {
+			i(163255, {	-- 7th Legionnaire's Treads
+				-- CRIEVE NOTE: Keep this here until we get solid proof and an accurate source.
+				["description"] = "There's been a lot of discussion about this item and whether or not it exists. If this drops for you, please provide as much information as you can about how and where you got it. It does not commonly drop like the other items in Arathi and it is suspected not to be available from the Warfront Victory or Warfront Victory Quest Crate either.\n\n - Crieve",
+				["modID"] = 5,
+			}),
+			i(108905, {	-- Jagged Turtleshell Blade
+				-- Keep this here until we get solid and an accurate source.
+				-- Dont tell the Users is actually obtainable but there is just no info
+				["description"] = "If this drops for you, please provide as much information as you can about how and where you got it.",
+			}),
+		},
+	}),
 	tier(SL_TIER, 2.0, {
 		-- Toys
 		i(190196),	-- Enlightened Hearthstone
@@ -22,7 +37,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(189917),	-- Constellation Master's Smock
 		i(189943),	-- Greaves of Cosmic Designs
 		i(189904),	-- Meticulous Architect's Mitts
-		i(190057),	-- Protective Raptora's Wing-Glaive
 		-- Cosmetic
 		-- Cloak
 		i(190931),	-- Cape of the Regal Wanderer
@@ -197,1569 +211,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(184145),	-- Sinful Aspirant's Greatcloak
 		}),
 	}),
-	i(163255, {	-- 7th Legionnaire's Treads
-		-- CRIEVE NOTE: Keep this here until we get solid proof and an accurate source.
-		["description"] = "There's been a lot of discussion about this item and whether or not it exists. If this drops for you, please provide as much information as you can about how and where you got it. It does not commonly drop like the other items in Arathi and it is suspected not to be available from the Warfront Victory or Warfront Victory Quest Crate either.\n\n - Crieve",
-		["modID"] = 5,
-	}),
-	i(108905, {	-- Jagged Turtleshell Blade
-		-- Keep this here until we get solid and an accurate source.
-		-- Dont tell the Users is actually obtainable but there is just no info
-		["description"] = "If this drops for you, please provide as much information as you can about how and where you got it.",
-	}),
-	n(-220, {	-- Class "Spells"
-		cl(DEMONHUNTER, {
-			i(129738),	-- Verus
-		}),
-		cl(HUNTER, {
-			i(147770),	-- Tome of the PTR Beast
-		}),
-		cl(MAGE, {
-			i(44600),	-- Tome of Polymorph: Serpent (Never made it out of beta)
-			i(44811),	-- Tome of Polymorph: Turkey
-		}),
-		cl(SHAMAN, {
-			i(136971),	-- Tome of Hex: Snake
-		}),
-	}),
-	n(ARMOR, {
-		filter(CLOTH, {
-			-- Load in Game
-			-- Vanilla
-			i(1216),	-- Frost Bracers
-			i(4990),	-- Scorched Bands
-			i(18341),	-- Quel'dorei Sash
-			-- TBC
-			i(23433),	-- Blood Robes (Says added in cata wowhead)
-			i(23434),	-- Robes of the Shard (Says added in cata wowhead)
-			i(25793),	-- Curate's Footwraps (Says added in cata wowhead)
-			-- added 2.3.0
-			i(34107),	-- Tattered Shoulderpads (Says added in cata wowhead)
-			-- Cata
-			i(59797),	-- Abalone-Linked Robes
-			i(62988),	-- Sash of the Unhonored
-			i(66013),	-- Mantle of the Glorious Song
-			i(62640),	-- Fallback Armor - Cloth Waist
-			i(62641),	-- Fallback Armor - Cloth Feet
-			i(62642),	-- Fallback Armor - Cloth Chest
-			i(62643),	-- Fallback Armor - Cloth Hand
-			i(62644),	-- Fallback Armor - Cloth Head
-			i(62645),	-- Fallback Armor - Cloth Legs
-			i(62646),	-- Fallback Armor - Cloth Robe
-			i(62647),	-- Fallback Armor - Cloth Shoulder
-			i(62648),	-- Fallback Armor - Cloth Wrist
-			-- WoD
-			-- Quest set never used
-			i(114247),	-- Firefly Bracers
-			i(114254),	-- Firefly Robes
-			i(114255),	-- Firefly Sandals
-			i(114259),	-- Firefly Gloves
-			i(114263),	-- Firefly Hood
-			i(114267),	-- Firefly Trousers
-			i(114271),	-- Firefly Mantle
-			i(114275),	-- Firefly Cord
-			--
-			i(116001),	-- Cord of Skulls
-			-- Legion
-			i(138420),	-- Pilfered Ettin String
-			-- BFA
-			i(156753),	-- Turnabout Gloves
-			-- Quest Set
-			i(153389),	-- Galetorn Crown
-			i(153390),	-- Galetorn Gloves
-			i(153391),	-- Galetorn Sash
-			i(153392),	-- Galetorn Cuffs
-			i(153393),	-- Galetorn Slippers
-			i(153394),	-- Galetorn Robes
-			i(153395),	-- Galetorn Leggings
-			i(153396),	-- Galetorn Mantle
-			i(154960),	-- Loa-Shaper's Crown
-			i(154961),	-- Loa-Shaper's Gloves
-			i(154962),	-- Loa-Shaper's Cinch
-			i(154963),	-- Loa-Shaper's Cuffs
-			i(154964),	-- Loa-Shaper's Sandals
-			i(154965),	-- Loa-Shaper's Robe
-			i(154966),	-- Loa-Shaper's Kilt
-			i(154967),	-- Loa-Shaper's Mantle
-			i(158467),	-- Loa-Shaper's Cinch
-			i(158492),	-- Galetorn Crown
-			i(158493),	-- Galetorn Gloves
-			i(158494),	-- Galetorn Sash
-			i(158495),	-- Galetorn Cuffs
-			i(158496),	-- Galetorn Slippers
-			i(158497),	-- Galetorn Robes
-			i(158498),	-- Galetorn Leggings
-			i(158499),	-- Galetorn Mantle
-			i(158544),	-- Loa-Shaper's Crown
-			i(158545),	-- Loa-Shaper's Gloves
-			i(158546),	-- Loa-Shaper's Cinch
-			i(158547),	-- Loa-Shaper's Cuffs
-			i(158548),	-- Loa-Shaper's Sandals
-			i(158549),	-- Loa-Shaper's Robe
-			i(158550),	-- Loa-Shaper's Kilt
-			i(158551),	-- Loa-Shaper's Mantle
-			-- ItemID/Retrieving
-			-- Vanilla
-			i(4989),	-- Mage Dragon Robe (intended to be quest reward, never made it to live?)
-			i(6478),	-- Rat Stompers
-			i(12107),	-- Whispersilk Leggings
-			i(13080),	-- Widow's Clutch
-			-- TBC
-			i(26015),	-- Anchorite Neophyte's Cuffs (Says added in cata wowhead)
-			i(27720),	-- Robes of the Aldor (Says added in cata wowhead)<-- Maggy/Shattra
-			i(30287),	-- Mantle of Arcane Mastery (Says added in cata wowhead)
-			-- Wrath
-			i(37210),	-- Seafarer Cinch (removed in beta) <-- Borean Tundra
-			i(37225),	-- Sweltering Sandals (removed in beta) <-- Borean Tundra
-			i(37273),	-- Crimson Keeper Mitts <-- Borean Tundra
-			i(37296),	-- BT59 Cloth Spell Gloves4 (Says added in cata wowhead)
-			i(37295),	-- HF28 Cloth Spell Head4 (Says added in cata wowhead)
-			i(39364),	-- Hood of the Titan Defender (Says added in cata wowhead)
-			-- added 3.0.2
-			i(43878),	-- Mantle of Unholy Power (Says added in cata wowhead)
-			-- added 3.1.0
-			i(45629),	-- Shadoweave Belt (Says added in cata wowhead) <-- Proof
-			-- added 3.2.0
-			i(47103),	-- Rotting Handwraps (Says added in cata wowhead)
-			-- Cata
-			i(54542),	-- Robes of Restored Hope
-			i(54550),	-- Hood of Vigorous Defense
-			i(54977),	-- Revitalizing Sandals
-			i(57528),	-- Hogger's Mangy Handgrips <-- Ewlynn
-			i(60728),	-- Keeshan's Burlap Vest <-- Redridge
-			i(65746),	-- Leggings of Valorous Defense
-			-- WoD
-			i(104355),	-- Titan Rocket Boots
-			i(105710),	-- Lasso Bracers, Humanoid
-			i(105928),	-- Magic Bunny Hat
-			-- Testing gear
-			i(107866),	-- 7.0 PH Cloth Treads
-			i(107871),	-- 7.0 PH Cloth Gloves
-			i(107874),	-- 7.0 PH Cloth Hood
-			i(107878),	-- 7.0 PH Cloth Leggings
-			i(107881),	-- 7.0 PH Cloth Robe
-			i(107884),	-- 7.0 PH Cloth Mantle
-			i(107887),	-- 7.0 PH Cloth Cord
-			i(107890),	-- 7.0 PH Cloth Wristwraps
-			-- Testing gear added 6.0.1 all are quest items also
-			i(109272),	-- 7.0 QA Combat Test Caster Belt 1
-			i(109278),	-- 7.0 QA Combat Test Caster Robes 1
-			i(109290),	-- 7.0 QA Combat Test Caster Shoulders 1
-			i(109296),	-- 7.0 QA Combat Test Caster Belt 2
-			i(109297),	-- 7.0 QA Combat Test Caster Gloves 1
-			i(109298),	-- 7.0 QA Combat Test Caster Helm 1
-			i(109299),	-- 7.0 QA Combat Test Caster Legs 1
-			i(109302),	-- 7.0 QA Combat Test Caster Robes 2
-			i(109303),	-- 7.0 QA Combat Test Caster Shoulders 2
-			i(109339),	-- 7.0 QA Combat Test Caster Belt 3
-			i(109340),	-- 7.0 QA Combat Test Caster Gloves 2
-			i(109341),	-- 7.0 QA Combat Test Caster Helm 2
-			i(109342),	-- 7.0 QA Combat Test Caster Legs 2
-			i(109343),	-- 7.0 QA Combat Test Caster Robes 3
-			i(109344),	-- 7.0 QA Combat Test Caster Shoulders 3
-			i(109363),	-- 7.0 QA Combat Test Caster Gloves 3
-			i(109379),	-- 7.0 QA Combat Test Caster Boots
-			i(109398),	-- 7.0 QA Combat Test Caster Bracer 1
-			i(109405),	-- 7.0 QA Combat Test Caster Helm 3
-			i(109411),	-- 7.0 QA Combat Test Caster Legs 3
-			i(109419),	-- 7.0 QA Combat Test Caster Legs 4
-			i(109423),	-- 7.0 QA Combat Test Caster Robes 4
-			i(109437),	-- 7.0 QA Combat Test Caster Helm 4
-			i(109451),	-- 7.0 QA Combat Test Caster Boots 2
-			i(109463),	-- 7.0 QA Combat Test Caster Bracer 2
-			i(109473),	-- 7.0 QA Combat Test Caster Shoulders 4
-			i(109477),	-- 7.0 QA Combat Test Caster Belt 4
-			i(109521),	-- 7.0 QA Combat Test Caster Gloves 4
-			i(109540),	-- 7.0 QA Combat Test Caster Boots 3
-			i(109542),	-- 7.0 QA Combat Test Caster Bracer 3
-			i(109546),	-- 7.0 QA Combat Test Caster Bracer 4
-			--
-			i(120318),	-- Sol-Shaper's Sandals
-			-- BFA
-			i(159170),	-- Freehold Handwraps
-			i(159183),	-- Foxhollow Cord
-			i(159190),	-- Foxhollow Bracelets
-			i(159216),	-- Sagehold Sash
-			i(159221),	-- Sagehold Slippers
-			i(154866),	-- Heartsbane Cord
-			i(154867),	-- Heartsbane Crown
-			i(154868),	-- Heartsbane Gloves
-			i(154869),	-- Heartsbane Leggings
-			i(154870),	-- Heartsbane Robes
-			i(154871),	-- Heartsbane Sandals
-			i(154873),	-- Heartsbane Cuffs
-			-- Testing 8.2.0
-			i(167111),	-- QA Combat Test Caster Belt 1
-			i(167112),	-- QA Combat Test Caster Robes 1
-			i(167113),	-- QA Combat Test Caster Shoulders 1
-			i(167114),	-- QA Combat Test Caster Gloves 1
-			i(167115),	-- QA Combat Test Caster Helm 1
-			i(167116),	-- QA Combat Test Caster Legs 1
-			i(167117),	-- QA Combat Test Caster Boots
-			i(167118),	-- QA Combat Test Caster Bracer 1
-			-- Legion
-			i(153289),	-- Eredar Priestess' Tunic
-		}),
-		filter(LEATHER, {
-			cl(ROGUE, {
-				i(7950),	-- Armor of Thero-Shan
-				i(7948),	-- Girdle of Thero-Shan
-				i(7952),	-- Boots of Thero-Shan
-				i(7951),	-- Hands of Thero-Shan
-				i(7953),	-- Mask of Thero-Shan
-				i(7949),	-- Leggings of Thero-Shan
-				-- Cata
-				i(54692),	-- Armor of Thero-Shan
-				-- Legion
-				-- Transmog set item that never became available
-				i(130327),	-- Artful Britches
-			}),
-			cl(MONK, {
-			}),
-			-- Load in Game
-			--TBC
-			i(25795),	-- Gloves of Preservation (not added version)(Says added in cata wowhead) <-- Shattered Halls
-			i(25796),	-- Lurking Shadow Spaulders (only beta) (Says added in cata wowhead)<-- Shattered Halls
-			-- Wrath
-			i(37176),	-- Cavern Leather Treads (Says added in cata wowhead)
-			i(37316),	-- HF28 Leather Physical Legs4  (Says added in cata wowhead)
-			-- Cata
-			i(56701),	-- Jinxed Vest (never made it to live)
-			i(59796),	-- Treads of Decapod Death <-- Vashir
-			i(63012),	-- Skull Kickers
-			-- WoD
-			i(107660),	-- Battle Aged Leather Pauldrons (didnt make it out of beta)
-			-- Quest Set
-			i(114248),	-- Bloodthorn Bracers
-			i(114251),	-- Bloodthorn Chestguard
-			i(114256),	-- Bloodthorn Boots
-			i(114260),	-- Bloodthorn Gauntlets
-			i(114264),	-- Bloodthorn Hood
-			i(114268),	-- Bloodthorn Legguards
-			i(114272),	-- Bloodthorn Spaulders
-			i(114276),	-- Bloodthorn Belt
-			-- Legion
-			i(129127),	-- Ebon Stalker's Boots
-			-- BFA
-			i(156751),	-- Nightbinder Grips
-			i(166786),	-- Disenchant Test Item
-			-- Test Set
-			i(166239),	-- Testus Maximus Breastplate
-			-- Quest Sets
-			i(153373),	-- Sea-Treated Armbands
-			i(153374),	-- Sea-Treated Grips
-			i(153375),	-- Sea-Treated Belt
-			i(153376),	-- Sea-Treated Boots
-			i(153377),	-- Sea-Treated Vest
-			i(153378),	-- Sea-Treated Mask
-			i(153379),	-- Sea-Treated Shoulderguards
-			i(153380),	-- Sea-Treated Trousers
-			i(154944),	-- Dinohide Armbands
-			i(154945),	-- Dinohide Grips
-			i(154946),	-- Dinohide Belt
-			i(154947),	-- Dinohide Boots
-			i(154948),	-- Dinohide Vest
-			i(154949),	-- Dinohide Mask
-			i(154950),	-- Dinohide Shoulderguards
-			i(154951),	-- Dinohide Trousers
-			i(158476),	-- Sea-Treated Armbands
-			i(158477),	-- Sea-Treated Grips
-			i(158478),	-- Sea-Treated Belt
-			i(158479),	-- Sea-Treated Boots
-			i(158480),	-- Sea-Treated Vest
-			i(158481),	-- Sea-Treated Mask
-			i(158482),	-- Sea-Treated Shoulderguards
-			i(158483),	-- Sea-Treated Trousers
-			i(158528),	-- Dinohide Armbands
-			i(158529),	-- Dinohide Grips
-			i(158530),	-- Dinohide Belt
-			i(158531),	-- Dinohide Boots
-			i(158532),	-- Dinohide Vest
-			i(158533),	-- Dinohide Mask
-			i(158534),	-- Dinohide Shoulderguards
-			i(158535),	-- Dinohide Trousers
-			-- ItemID/Retrieving
-			-- Vanilla
-			i(5821),	-- Darkstalker Boots
-			i(12104),	-- Brindlethorn Tunic
-			i(14550),	-- Bladebane Armguards
-			i(20524),	-- Shadowhide Leggings
-			i(21613),	-- Wormhide Boots (Says added in cata wowhead)
-			i(21614),	-- Wormhide Protector (Says added in cata wowhead)
-			-- TBC
-			i(19986),	-- Pirate's Eye Patch
-			i(22273),	-- Moonshadow Hood (Says added in cata wowhead)
-			i(26029),	-- Watchman's Bracers
-			i(27719),	-- Aldor Leggings of Puissance (never made it to live)(Says added in cata wowhead)
-			i(28145),	-- Tranquillien Wraps (Says added in cata wowhead)
-			i(30288),	-- Cenarion Warden's Gloves (Says added in cata wowhead)
-			-- Wrath
-			i(37385),	-- Seared Harness
-			i(37386),	-- Ruby Heart Spaulders
-			i(37400),	-- Whalehunter Cuffs
-			i(38525),	-- Jailor's Padded Cover (Says added in cata wowhead)
-			i(39410),	-- Gauntlets of Rampant Destruction (Says added in cata wowhead)
-			i(39707),	-- Verdant Tundra Cap
-			i(41757),	-- Vest of Unyielding Companionship (was in Wrath beta)
-			i(42875),	-- Worg-Hide Pants (Says added in cata wowhead)
-			i(43895),	-- Leggings of Silent Echoes (Says added in cata wowhead)
-			-- Cata
-			i(54543),	-- Orca-Tooth Treads
-			i(54649),	-- Cow King's Hide
-			i(54650),	-- Forest's Embrace
-			i(54652),	-- Righteous Armor
-			i(54655),	-- Stormshroud Armor (Leather) (prof
-			i(54658),	-- Lionfur Armor
-			i(54665),	-- Maatparm's Fungus Lined Vest
-			i(54666),	-- Ceremonial Leather Harness
-			i(54667),	-- Vest of the Dragon Slayer
-			i(54668),	-- Murloc Scale Breastplate
-			i(54670),	-- Hillman's Leather Vest
-			i(54671),	-- Starsight Tunic
-			i(54673),	-- Barkshell Tunic
-			i(54674),	-- Gloomshroud Armor
-			i(54677),	-- Raptorbane Armor
-			i(54680),	-- Raptor Hide Harness
-			i(54681),	-- Thick Murloc Armor
-			i(54683),	-- Dusky Leather Armor (Prof)
-			i(54684),	-- Guardian Armor (Prof)
-			i(54685),	-- Archer's Jerkin
-			i(54686),	-- Barbaric Harness
-			i(54687),	-- Sentinel Breastplate
-			i(54689),	-- Marshwarden's Tunic
-			i(54691),	-- Nightscape Tunic(Prof)
-			i(54694),	-- Wolf Rider's Padded Armor
-			i(54695),	-- Surveyor's Tunic
-			i(54696),	-- Scorpashi Breastplate
-			i(54698),	-- Ceremonial Leather Loincloth
-			i(54703),	-- Bogwalker Boots
-			i(54708),	-- Ceremonial Leather Gloves
-			i(54707),	-- Researcher's Gloves
-			i(54711),	-- Wendigo Collar
-			i(54716),	-- Juicy Bracers
-			i(54723),	-- Living Leggings
-			i(54724),	-- Shadowcraft Bracers
-			i(54725),	-- Shadowcraft Gloves
-			i(54726),	-- Clouddrift Mantle
-			i(54727),	-- Traveler's Boots
-			i(54731),	-- not used
-			i(59790),	-- Gnash-Crusher Helm
-			-- Art Templates
-			i(62697),	-- Art Template Leather Belt - Leather_Cataclysm_B_01 - Brown
-			i(62698),	-- Art Template Leather Boot - Leather_Cataclysm_B_01 - Brown
-			i(62699),	-- Art Template Leather Chest - Leather_Cataclysm_B_01 - Brown
-			i(62700),	-- Art Template Leather Hand - Leather_Cataclysm_B_01 - Brown
-			i(62701),	-- Art Template Leather Head - Leather_Cataclysm_B_01 - Brown
-			i(62702),	-- Art Template Leather Legs - Leather_Cataclysm_B_01 - Brown
-			i(62703),	-- Art Template Leather Shoulder - Leather_Cataclysm_B_01 - Brown
-			i(62704),	-- Art Template Leather Wrist - Leather_Cataclysm_B_01 - Brown
-			-- WoD
-			i(107203),	-- Lasso Bracers, Powerup
-			-- added 6.0.3
-			i(107337),	-- Practice Power Bracers
-			-- Testing Gear
-			i(107864),	-- 7.0 PH Leather Vest
-			i(107868),	-- 7.0 PH Leather Boots
-			i(107869),	-- 7.0 PH Leather Gloves
-			i(107876),	-- 7.0 PH Leather Helm
-			i(107880),	-- 7.0 PH Leather Breeches
-			i(107882),	-- 7.0 PH Leather Spaulders
-			i(107889),	-- 7.0 PH Leather Belt
-			i(107893),	-- 7.0 PH Leather Wristwraps
-			-- Testing Gear (Quest item?)
-			i(109264),	-- 6.0 QA Combat Test Leather Bracer
-			i(109276),	-- 6.0 QA Combat Test Leather Legs
-			i(109287),	-- 6.0 QA Combat Test Leather Helm 2
-			i(109294),	-- 6.0 QA Combat Test Leather Belt
-			i(109305),	-- 6.0 QA Combat Test Leather Gloves
-			i(109306),	-- 6.0 QA Combat Test Leather Helm 3
-			i(109307),	-- 6.0 QA Combat Test Leather Legs 2
-			i(109308),	-- 6.0 QA Combat Test Leather Shoulders
-			i(109345),	-- 6.0 QA Combat Test Leather Chest
-			i(109346),	-- 6.0 QA Combat Test Leather Gloves
-			i(109347),	-- 6.0 QA Combat Test Leather Helm 4
-			i(109348),	-- 6.0 QA Combat Test Leather Legs 3
-			i(109349),	-- 6.0 QA Combat Test Leather Shoulders 2
-			i(109358),	-- 6.0 QA Combat Test Leather Belt 2
-			i(109366),	-- 6.0 QA Combat Test Leather Gloves 2
-			i(109375),	-- 6.0 QA Combat Test Leather Helm
-			i(109388),	-- 6.0 QA Combat Test Leather Robes
-			i(109400),	-- 6.0 QA Combat Test Leather Chest 2
-			i(109414),	-- 6.0 QA Combat Test Leather Boots
-			i(109415),	-- 6.0 QA Combat Test Leather Bracer 2
-			i(109428),	-- 6.0 QA Combat Test Leather Belt 3
-			i(109432),	-- 6.0 QA Combat Test Leather Shoulders 3
-			i(109440),	-- 6.0 QA Combat Test Leather Chest 3
-			i(109444),	-- 6.0 QA Combat Test Leather Belt 4
-			i(109469),	-- 6.0 QA Combat Test Leather Boots 3
-			i(109475),	-- 6.0 QA Combat Test Leather Legs 4
-			i(109479),	-- 6.0 QA Combat Test Leather Bracer 3
-			i(109486),	-- 6.0 QA Combat Test Leather Shoulders 4
-			i(109493),	-- 6.0 QA Combat Test Leather Gloves 2
-			i(109513),	-- 6.0 QA Combat Test Leather Boots 2
-			i(109547),	-- 6.0 QA Combat Test Leather Bracer 4
-			-- Testing Gear
-			i(120363),	-- 7.0 QA Combat Test Leather Boots 4
-			-- Legion
-			i(129046),	-- 7.0 PH Leather Helm
-			-- BFA
-			i(154849),	-- Crimsonwood Bracers
-			i(154852),	-- Crimsonwood Gloves
-			i(154856),	-- Crimsonwood Belt
-			i(159201),	-- Briarback Treads
-			i(159203),	-- Briarback Gloves
-			-- Tiragarde Sound BoE Set
-			i(159175),	-- Mistfall Belt
-			i(159176),	-- Mistfall Bracers
-			i(159177),	-- Mistfall Gloves
-			i(159178),	-- Mistfall Boots
-			i(159180),	-- Mistfall Legguards
-			i(159181),	-- Mistfall Spaulders
-			i(159182),	-- Mistfall Chainmail
-			-- ??(They are leather even tho name is cloth)
-			i(165253),	-- Fallback Armor - Cloth Waist
-			i(165254),	-- Fallback Armor - Cloth Feet
-			i(165255),	-- Fallback Armor - Cloth Chest
-			i(165256),	-- Fallback Armor - Cloth Hand
-			i(165257),	-- Fallback Armor - Cloth Head
-			i(165258),	-- Fallback Armor - Cloth Legs
-			i(165259),	-- Fallback Armor - Cloth Shoulder
-			i(165260),	-- Fallback Armor - Cloth Wrist
-			-- Testing Set
-			i(167103),	-- QA Combat Test Leather Bracer
-			i(167104),	-- QA Combat Test Leather Legs
-			i(167105),	-- QA Combat Test Leather Belt
-			i(167106),	-- QA Combat Test Leather Gloves 1
-			i(167107),	-- QA Combat Test Leather Shoulders
-			i(167108),	-- QA Combat Test Leather Chest
-			i(167109),	-- QA Combat Test Leather Helm
-			i(167110),	-- QA Combat Test Leather Boots
-			-- SL
-			i(178148),	-- 9.0 Dungeon - PH Item
-			i(178305),	-- unused
-		}),
-		filter(MAIL, {
-			-- Load in GAME
-			-- Vanilla
-			i(18320),	-- Demonheart Spaulders
-			i(18304),	-- Greenroot Mail (never added to live)
-			-- TBC
-			i(25794),	-- Bone Studded Girdle (not out of beta)
-			-- Wrath
-			i(37454),	-- HF28 Mail Physical Chest4
-			-- Cata
-			i(63002),	-- Bat Claw Boots
-			-- Quest sets?
-			i(114249),	-- Leafscale Bracers
-			i(114252),	-- Leafscale Chestguard
-			i(114257),	-- Leafscale Boots
-			i(114261),	-- Leafscale Gauntlets
-			i(114265),	-- Leafscale Helm
-			i(114269),	-- Leafscale Legguards
-			i(114273),	-- Leafscale Spaulders
-			i(114277),	-- Leafscale Belt
-			-- Legion
-			i(129152),	-- Boulderfall Stompers
-			-- BFA
-			i(156754),	-- Throatcrusher Grips
-			-- Questsets?
-			i(153381),	-- Aiguille-Scaler's Wristguards
-			i(153382),	-- Aiguille-Scaler's Gloves
-			i(153383),	-- Aiguille-Scaler's Leggings
-			i(153384),	-- Aiguille-Scaler's Coif
-			i(153385),	-- Aiguille-Scaler's Boots
-			i(153386),	-- Aiguille-Scaler's Girdle
-			i(153387),	-- Aiguille-Scaler's Chestguard
-			i(153388),	-- Aiguille-Scaler's Spaulders
-			i(154952),	-- Saurscale Wristguards
-			i(154953),	-- Saurscale Gloves
-			i(154954),	-- Saurscale Leggings
-			i(154955),	-- Saurscale Coif
-			i(154956),	-- Saurscale Boots
-			i(154957),	-- Saurscale Girdle
-			i(154958),	-- Saurscale Chestguard
-			i(154959),	-- Saurscale Spaulders
-			i(158484),	-- Aiguille-Scaler's Wristguards
-			i(158485),	-- Aiguille-Scaler's Gloves
-			i(158486),	-- Aiguille-Scaler's Leggings
-			i(158487),	-- Aiguille-Scaler's Coif
-			i(158488),	-- Aiguille-Scaler's Boots
-			i(158489),	-- Aiguille-Scaler's Girdle
-			i(158490),	-- Aiguille-Scaler's Chestguard
-			i(158491),	-- Aiguille-Scaler's Spaulders
-			i(158536),	-- Saurscale Wristguards
-			i(158537),	-- Saurscale Gloves
-			i(158538),	-- Saurscale Leggings
-			i(158539),	-- Saurscale Coif
-			i(158540),	-- Saurscale Boots
-			i(158541),	-- Saurscale Girdle
-			i(158542),	-- Saurscale Chestguard
-			i(158543),	-- Saurscale Spaulders
-			-- ItemID/Retrieving
-			-- Vanilla
-			i(12105),	-- Pridemail Leggings
-			i(13090),	-- Breastplate of the Chosen
-			i(12615),	-- Savage Mail Tunic (never added to live)
-			i(12616),	-- Savage Boots (never added to live)
-			i(12617),	-- Savage Pauldrons (never added to live)
-			i(21584),	-- Bracers of Eternal Reckoning (never added to live)(Says added in cata wowhead)
-			i(21588),	-- Wristguards of Elemental Fury (never added to live)
-			i(21612),	-- Wormscale Stompers (never added to live)(Says added in cata wowhead)
-			-- TBC
-			i(30289),	-- Cenarion Warden's Belt (Says added in cata wowhead)
-			i(38387),	-- Grizzled Hat
-			i(38388),	-- Cap of the North
-			i(38389),	-- Comfy Raccoonskin Hat
-			i(38390),	-- The Rugged Marksman
-			-- Wrath
-			i(37420),	-- Sharkproof Boots
-			i(38527),	-- Onslaught Scalemail Hauberk (Says added in cata wowhead)
-			i(39440),	-- Greaves of the Titan Protectorate (Says added in cata wowhead)
-			i(41758),	-- Blood-Bond Helm
-			i(42886),	-- Gloves of the Howling Peaks
-			i(43460),	-- Giantmaim Girdle
-			i(43936),	-- Battlesurgeon's Gauntlets
-			i(54549),	-- Saline-Soaked Spaulders
-			i(43475),	-- Grips of the Chilling Revenant (Says added in cata wowhead)
-			i(37433),	-- Layered Scale Boots
-			i(37444),	-- Wavekeeper's Helm (Says added in cata wowhead)
-			-- Cata
-			i(56493),	-- Razorshell Boots
-			i(56496),	-- Windbound Belt
-			i(56500),	-- Windbound Shoulders
-			i(56501),	-- Razorshell Belt
-			i(56506),	-- Windbound Leggings
-			i(56510),	-- Windbound Chest
-			i(54551),	-- Defiant Bracers
-			i(56492),	-- Windbound Boots
-			i(56485),	-- Windbound Bracers
-			i(56486),	-- Windbound Gloves
-			i(56487),	-- Razorshell Bracers
-			i(56488),	-- Razorshell Shoulders
-			i(56507),	-- Razorshell Helm
-			i(56514),	-- Windbound Helm
-			i(59789),	-- Sea-Snack Footguards
-			i(65744),	-- Nimble Command Shoulderguards
-			-- Art Template
-			i(62715),	-- Art Template Mail Belt - Mail_Cataclysm_B_01 - Blue
-			i(62716),	-- Art Template Mail Boot - Mail_Cataclysm_B_01 - Blue
-			i(62717),	-- Art Template Mail Chest - Mail_Cataclysm_B_01 - Blue
-			i(62718),	-- Art Template Mail Hand - Mail_Cataclysm_B_01 - Blue
-			i(62719),	-- Art Template Mail Head - Mail_Cataclysm_B_01 - Blue
-			i(62720),	-- Art Template Mail Legs - Mail_Cataclysm_B_01 - Blue
-			i(62721),	-- Art Template Mail Shoulder - Mail_Cataclysm_B_01 - Blue
-			i(62722),	-- Art Template Mail Wrist - Mail_Cataclysm_B_01 - Blue
-			-- WoD
-			-- Testning Gear
-			i(107863),	-- 7.0 PH Mail Vest
-			i(107867),	-- 7.0 PH Mail Sabatons
-			i(107872),	-- 7.0 PH Mail Gauntlets
-			i(107875),	-- 7.0 PH Mail Helm
-			i(107879),	-- 7.0 PH Mail Leggings
-			i(107885),	-- 7.0 PH Mail Monnion
-			i(107888),	-- 7.0 PH Mail Belt
-			i(107892),	-- 7.0 PH Mail Wristwraps
-			i(109265),	-- 7.0 QA Combat Test Mail Helm
-			i(109270),	-- 7.0 QA Combat Test Mail Legs 1
-			i(109280),	-- 7.0 QA Combat Test Mail Bracer 1
-			i(109313),	-- 7.0 QA Combat Test Mail Belt 1
-			i(109314),	-- 7.0 QA Combat Test Mail Chest 1
-			i(109315),	-- 7.0 QA Combat Test Mail Gloves 1
-			i(109316),	-- 7.0 QA Combat Test Mail Helm 2
-			i(109317),	-- 7.0 QA Combat Test Mail Legs 2
-			i(109318),	-- 7.0 QA Combat Test Mail Shoulders 1
-			i(109350),	-- 7.0 QA Combat Test Mail Chest 2
-			i(109351),	-- 7.0 QA Combat Test Mail Gloves 2
-			i(109352),	-- 7.0 QA Combat Test Mail Helm 3
-			i(109353),	-- 7.0 QA Combat Test Mail Legs 3
-			i(109354),	-- 7.0 QA Combat Test Mail Shoulders 2
-			i(109359),	-- 7.0 QA Combat Test Mail Belt 2
-			i(109371),	-- 7.0 QA Combat Test Mail Bracer 2
-			i(109382),	-- 7.0 QA Combat Test Mail Helm 4
-			i(109393),	-- 7.0 QA Combat Test Mail Boots 1
-			i(109396),	-- 7.0 QA Combat Test Mail Boots 2
-			i(109416),	-- 7.0 QA Combat Test Mail Belt 3
-			i(109425),	-- 7.0 QA Combat Test Mail Shoulders 3
-			i(109433),	-- 7.0 QA Combat Test Mail Boots 3
-			i(109441),	-- 7.0 QA Combat Test Mail Legs 4
-			i(109457),	-- 7.0 QA Combat Test Mail Gloves 3
-			i(109484),	-- 7.0 QA Combat Test Mail Shoulders 4
-			i(109488),	-- 7.0 QA Combat Test Mail Belt 4
-			i(109504),	-- 7.0 QA Combat Test Mail Gloves 4
-			i(109510),	-- 7.0 QA Combat Test Mail Chest 3
-			i(109517),	-- 6.0 QA Combat Test Mail Chest 4
-			i(109541),	-- 7.0 QA Combat Test Mail Boots 4
-			i(109543),	-- 7.0 QA Combat Test Mail Bracer 3
-			i(109548),	-- 7.0 QA Combat Test Mail Bracer 4
-			-- Legion
-			i(140011),	-- Duskwatch Adjudicator's Pauldrons
-			-- Bfa
-			i(152745),	-- REUSE ME
-			i(154861),	-- Barrowknoll Boots
-			i(159208),	-- Eventide Cinch
-			i(159210),	-- Eventide Gloves
-			i(159213),	-- Eventide Leggings
-			-- 8.2.0
-			i(167119),	-- QA Combat Test Mail Helm
-			i(167120),	-- QA Combat Test Mail Legs 1
-			i(167121),	-- QA Combat Test Mail Bracer 1
-			i(167122),	-- QA Combat Test Mail Belt 1
-			i(167123),	-- QA Combat Test Mail Chest 1
-			i(167124),	-- QA Combat Test Mail Gloves 1
-			i(167125),	-- QA Combat Test Mail Shoulders 1
-			i(167126),	-- QA Combat Test Mail Boots 1
-			-- SL
-			i(178304),	-- unused
-			--
-			i(68844),	-- Unknown
-		}),
-		filter(PLATE, {
-			-- Load In Game
-			-- TBC
-			i(25797),	-- Crushing Grasp Says (added in cata wowhead)
-			i(26041),	-- Vigilant Vambraces (added in cata wowhead)
-			i(27965),	-- TEST 130 Epic Paladin DPS Chest
-			i(29237),	-- Warpath Bracers Says (added in cata wowhead)
-			-- Ramparts?
-			i(24137),	-- PH Plate Ramparts Reward (Says added in cata wowhead)
-			-- Wrath
-			i(37175),	-- Glassy Silver Bracers (Says added in cata wowhead)
-			i(37468),	-- HF28 Plate Physical Boots Says added in cata wowhead)
-			i(38524),	-- Carapace of the Scarlet Commander (Says added in cata wowhead)
-			-- Cata
-			i(49450),	-- Defusing Cinch
-			i(59795),	-- Harp Shell Shoulderplates
-			-- Mop
-			-- Recolors added in mop of ICC gear
-			i(81709),	-- Belt of Broken Bones
-			i(81710),	-- Grinning Skull Greatboots
-			-- Questing Set
-			i(114250),	-- Ruby Plate Bracers
-			i(114253),	-- Ruby Plate Breastplate
-			i(114258),	-- Ruby Plate Greaves
-			i(114262),	-- Ruby Plate Gauntlets
-			i(114266),	-- Ruby Plate Greathelm
-			i(114270),	-- Ruby Plate Legplates
-			i(114274),	-- Ruby Plate Shoulderguard
-			i(114278),	-- Ruby Plate Girdle
-			-- BFA
-			i(156752),	-- Skullbreaker Gauntlets
-			-- Test Gear
-			i(160673),	-- Primus Breastplate
-			i(160674),	-- Secondus Breastplate
-			i(160675),	-- Tertius Breastplate
-			i(160676),	-- Quartius Breastplate
-			i(160677),	-- Pentius Breastplate
-			-- Questing Set
-			i(153365),	-- Dead-Watcher Greaves
-			i(153366),	-- Dead-Watcher Helmet
-			i(153367),	-- Dead-Watcher Breastplate
-			i(153368),	-- Dead-Watcher Waistplate
-			i(153369),	-- Dead-Watcher Pauldrons
-			i(153370),	-- Dead-Watcher Gauntlets
-			i(153371),	-- Dead-Watcher Vambraces
-			i(153372),	-- Dead-Watcher Sabatons
-			i(154936),	-- Dead-Watcher Greaves
-			i(154937),	-- Dead-Watcher Helmet
-			i(154938),	-- Dead-Watcher Breastplate
-			i(154939),	-- Dead-Watcher Waistplate
-			i(154940),	-- Dead-Watcher Pauldrons
-			i(154941),	-- Dead-Watcher Gauntlets
-			i(154942),	-- Dead-Watcher Vambraces
-			i(154943),	-- Dead-Watcher Sabatons
-			i(158468),	-- Dead-Watcher Greaves
-			i(158469),	-- Dead-Watcher Helmet
-			i(158470),	-- Dead-Watcher Breastplate
-			i(158471),	-- Dead-Watcher Waistplate
-			i(158472),	-- Dead-Watcher Pauldrons
-			i(158473),	-- Dead-Watcher Gauntlets
-			i(158474),	-- Dead-Watcher Vambraces
-			i(158475),	-- Dead-Watcher Sabatons
-			i(158520),	-- Dead-Watcher Greaves
-			i(158521),	-- Dead-Watcher Helmet
-			i(158522),	-- Dead-Watcher Breastplate
-			i(158523),	-- Dead-Watcher Waistplate
-			i(158524),	-- Dead-Watcher Pauldrons
-			i(158525),	-- Dead-Watcher Gauntlets
-			i(158526),	-- Dead-Watcher Vambraces
-			i(158527),	-- Dead-Watcher Sabatons
-			-- SL
-			i(170051),	-- Lost Pauldron of Might
-			i(170052),	-- Lost Helm of Might
-			-- ItemID/Retrieving
-			-- Vanilla
-			i(5822),	-- Hedgeseed Gauntlets
-			i(12106),	-- Boulderskin Breastplate
-			i(21587),	-- Wristguards of Castigation (added in cata wowhead)
-			-- TBC
-			i(27718),	-- Aldor Defender's Legplates (Says added in cata wowhead)
-			-- Wrath
-			i(37477),	-- Lost Crusader Chestplate (Says added in cata wowhead)
-			i(37485),	-- Clam Collector Gauntlets
-			i(37510),	-- Wristguards of Edification
-			i(37511),	-- Crucible Waistguard
-			i(38524),	-- Carapace of the Scarlet Commander (Says added in cata wowhead)
-			i(39460),	-- Sabatons of the Rampaging Construct (Says added in cata wowhead)
-			i(41759),	-- Shackles of Perpetual Friendship
-			i(42885),	-- Mountaineer's Helm (Says added in cata wowhead)
-			i(43848),	-- Bracers of Icy Resolve (Says added in cata wowhead)
-			i(43938),	-- Belt of Rising Hope
-			-- Cata
-			i(47091),	-- Unfaltering Armguards (4.0)
-			i(54544),	-- Scrapped Spaulders
-			i(54552),	-- Retaliation Gauntlets
-			i(54751),	-- Silverscale Chestguard
-			i(59768),	-- Bracers of Burbling Freedom
-			i(59772),	-- Bracers of Burbling Freedom (Yes, Same name)
-			i(63054),	-- Fallback Armor - Plate Waist
-			i(63055),	-- Fallback Armor - Plate Feet
-			i(63056),	-- Fallback Armor - Plate Chest
-			i(63057),	-- Fallback Armor - Plate Hand
-			i(63058),	-- Fallback Armor - Plate Head
-			i(63059),	-- Fallback Armor - Plate Legs
-			i(63060),	-- Fallback Armor - Plate Shoulder
-			i(63061),	-- Fallback Armor - Plate Wrist
-			i(65743),	-- Helm of Vicious Direction
-			-- WoD
-			-- Testing Gear
-			i(107862),	-- 7.0 PH Plate Chestplate
-			i(107865),	-- 7.0 PH Plate Warboots
-			i(107870),	-- 7.0 PH Plate Gauntlets
-			i(107873),	-- 7.0 PH Plate Helm
-			i(107877),	-- 7.0 PH Plate Legguards
-			i(107883),	-- 7.0 PH Plate Shoulders
-			i(107886),	-- 7.0 PH Plate Girdle
-			i(107891),	-- 7.0 PH Plate Wristwraps
-			-- Draenic Set (Quest items?)
-			i(107985),	-- Draenic Steel Warboots
-			i(107986),	-- Draenic Steel Gauntlets
-			i(107987),	-- Draenic Steel Helm
-			i(107988),	-- Draenic Steel Legguards
-			i(107989),	-- Draenic Steel Shoulders
-			i(107990),	-- Draenic Steel Girdle
-			i(107991),	-- Draenic Steel Wristwraps
-			i(107992),	-- Draenic Steel Chestplate
-			i(107993),	-- Draenic Steel Warboots
-			i(107994),	-- Draenic Steel Gauntlets
-			i(107995),	-- Draenic Steel Helm
-			i(107996),	-- Draenic Steel Legguards
-			i(107997),	-- Draenic Steel Shoulders
-			i(107998),	-- Draenic Steel Girdle
-			i(107999),	-- Draenic Steel Wristwraps
-			i(108000),	-- Draenic Steel Chestplate
-			i(108001),	-- Draenic Steel Warboots
-			i(108002),	-- Draenic Steel Gauntlets
-			i(108003),	-- Draenic Steel Helm
-			i(108004),	-- Draenic Steel Legguards
-			i(108005),	-- Draenic Steel Shoulders
-			i(108006),	-- Draenic Steel Girdle
-			i(108007),	-- Draenic Steel Wristwraps
-			i(108008),	-- Draenic Steel Chestplate
-			i(108009),	-- Draenic Steel Warboots
-			i(108010),	-- Draenic Steel Gauntlets
-			i(108011),	-- Draenic Steel Helm
-			i(108012),	-- Draenic Steel Legguards
-			i(108013),	-- Draenic Steel Shoulders
-			i(108014),	-- Draenic Steel Girdle
-			i(108015),	-- Draenic Steel Wristwraps
-			i(108016),	-- Draenic Steel Chestplate
-			i(108017),	-- Draenic Steel Warboots
-			i(108018),	-- Draenic Steel Gauntlets
-			i(108019),	-- Draenic Steel Helm
-			i(108020),	-- Draenic Steel Legguards
-			i(108021),	-- Draenic Steel Shoulders
-			i(108022),	-- Draenic Steel Girdle
-			i(108023),	-- Draenic Steel Wristwraps
-			i(108024),	-- Draenic Steel Chestplate
-			i(108025),	-- Draenic Steel Warboots
-			i(108026),	-- Draenic Steel Gauntlets
-			i(108027),	-- Draenic Steel Helm
-			i(108028),	-- Draenic Steel Legguards
-			i(108029),	-- Draenic Steel Shoulders
-			i(108030),	-- Draenic Steel Girdle
-			i(108031),	-- Draenic Steel Wristwraps
-			i(108032),	-- Draenic Steel Chestplate
-			i(108033),	-- Draenic Steel Warboots
-			i(108034),	-- Draenic Steel Gauntlets
-			i(108035),	-- Draenic Steel Helm
-			i(108036),	-- Draenic Steel Legguards
-			i(108037),	-- Draenic Steel Shoulders
-			i(108038),	-- Draenic Steel Girdle
-			i(108039),	-- Draenic Steel Wristwraps
-			-- Testing Gear
-			i(109268),	-- 7.0 QA Combat Test Plate Bracer 1
-			i(109275),	-- 7.0 QA Combat Test Plate Chest 1
-			i(109284),	-- 7.0 QA Combat Test Plate Shoulders 1
-			i(109289),	-- 7.0 QA Combat Test Plate Gloves 1
-			i(109321),	-- 7.0 QA Combat Test Plate Belt 1
-			i(109322),	-- 7.0 QA Combat Test Plate Chest 2
-			i(109323),	-- 7.0 QA Combat Test Plate Gloves 2
-			i(109324),	-- 7.0 QA Combat Test Plate Helm 1
-			i(109325),	-- 7.0 QA Combat Test Plate Legs 1
-			i(109326),	-- 7.0 QA Combat Test Plate Shoulders 2
-			i(109327),	-- 7.0 QA Combat Test Plate Belt 2
-			i(109328),	-- 7.0 QA Combat Test Plate Chest 3
-			i(109329),	-- 7.0 QA Combat Test Plate Gloves 3
-			i(109330),	-- 7.0 QA Combat Test Plate Helm 2
-			i(109331),	-- 7.0 QA Combat Test Plate Legs 2
-			i(109332),	-- 7.0 QA Combat Test Plate Shoulders 3
-			i(109333),	-- 7.0 QA Combat Test Plate Belt 3
-			i(109334),	-- 7.0 QA Combat Test Plate Chest 4
-			i(109335),	-- 7.0 QA Combat Test Plate Gloves 4
-			i(109336),	-- 7.0 QA Combat Test Plate Helm 3
-			i(109337),	-- 7.0 QA Combat Test Plate Legs 3
-			i(109338),	-- 7.0 QA Combat Test Plate Shoulders 4
-			i(109372),	-- 7.0 QA Combat Test Plate Belt 4
-			i(109409),	-- 7.0 QA Combat Test Plate Bracer 2
-			i(109422),	-- 7.0 QA Combat Test Plate Bracer 3
-			i(109436),	-- 7.0 QA Combat Test Plate Bracer 4
-			i(109439),	-- 7.0 QA Combat Test Plate Helm 4
-			i(109450),	-- 7.0 QA Combat Test Plate Legs 4
-			i(109455),	-- 7.0 QA Combat Test Plate Boots
-			i(109461),	-- 7.0 QA Combat Test Plate Boots 2
-			i(109501),	-- 7.0 QA Combat Test Plate Boots 3
-			-- BFA
-			i(159159),	-- Ashvane Company Gauntlets
-			i(159160),	-- Ashvane Company Girdle
-			i(159165),	-- Ashvane Company Bracers
-			-- Testing Set
-			i(167127),	-- QA Combat Test Plate Bracer 1
-			i(167128),	-- QA Combat Test Plate Chest 1
-			i(167129),	-- QA Combat Test Plate Shoulders 1
-			i(167130),	-- QA Combat Test Plate Gloves 1
-			i(167131),	-- QA Combat Test Plate Belt 1
-			i(167132),	-- QA Combat Test Plate Helm 1
-			i(167133),	-- QA Combat Test Plate Legs 1
-			i(167134),	-- QA Combat Test Plate Boots
-		}),
-		n(BACK, {
-			-- Load In Game
-			-- TBC
-			i(28045),	-- Cloak of the Demon Stalker (Patch 3.3.3?)
-			-- Wratb
-			i(37174),	-- Rippling Azure Cloak (Says added in cata wowhead)
-			-- Cata
-			i(56355),	-- Skin of Stone
-			-- WoD
-			i(112230),	-- Storm Scale Cloak
-			i(112231),	-- Drape of Nimble Deflection
-			i(112232),	-- Three-Kodohide Cloak
-			i(112233),	-- Cloak of Bloody Forces
-			i(114297),	-- Feather-Cord Cloak
-			i(114298),	-- Cloak of Bent Dreams
-			i(114299),	-- Suture-Slice Cloak
-			i(114300),	-- Grimchop Greatcloak
-			i(114301),	-- Axebreak Darkcloak
-			i(114360),	-- Eagle Eye Windcloak
-			i(114361),	-- Drape of Dark Shadows
-			i(114362),	-- Cloak of Keening Spirits
-			i(114363),	-- Gutwrencher's Greatcloak
-			i(114364),	-- Towerkin Cloak
-			i(114421),	-- Arrowleaf Longcloak
-			i(114422),	-- Mindbreaker Drape
-			i(114423),	-- Drape of Mindmending
-			i(114424),	-- Blade-Ring Greatcloak
-			i(114425),	-- Bleak Shore Cloak
-			-- Legion
-			i(134579),	-- Vanguard Cape
-			i(134605),	-- Vanguard Cloak
-			i(134609),	-- Scorching Cape
-			i(134617),	-- Scorching Drape
-			i(134693),	-- Enveloping Cape
-			i(134699),	-- Enveloping Drape
-			i(150489),	-- Shroud of Forgiveness
-			i(150714),	-- Travel-Worn Shawl
-			i(157751),	-- Drape of New Beginnings
-			-- BFA
-			i(153397),	-- Salt Starched Shawl
-			i(154968),	-- Drape of the Golden City
-			i(155384),	-- Singed Skycaller Drape (Never added)
-			i(156755),	-- Drape of Revengeance
-			i(158500),	-- Salt Starched Shawl
-			i(158552),	-- Drape of the Golden City
-			i(158582),	-- Wickerweave Cloak (Bfa Beta Only)
-			i(165792),	-- Worn Cloak (future WQ?)
-			i(174857),	-- Hidden Cloak (Vulpera?)
-			--SL
-			i(169822),	-- Flowing Cloak
-			-- ItemID/Retrieving
-			-- Vanilla
-			i(22230),	-- Frightmaw Hide (Says added in cata wowhead)
-			-- Wrath
-			i(35876),	-- Talbuk Cape (Says added in cata wowhead)
-			i(39828),	-- Punisher's Cloak (Says added in cata wowhead)
-			-- Cata
-			i(65815),	-- Drape of the mortal guardians beta only
-			-- WoD
-			i(108814),	-- 6.0 PH Cloak Agi
-			i(108822),	-- 6.0 PH Cloak STR
-			i(108823),	-- 6.0 PH Cloak Int
-			i(109282),	-- 7.0 QA Combat Test Cloak 1
-			i(109453),	-- 7.0 QA Combat Test Cloak 2
-			i(109496),	-- 7.0 QA Combat Test Cloak 4
-			i(109538),	-- 7.0 QA Combat Test Cloak 3
-			-- BFA
-			i(154841),	-- Corlain Gauntlets
-			i(154846),	-- Corlain Sabatons
-			i(159195),	-- Brineworks Greaves
-			i(159197),	-- Brineworks Stompers
-			i(165261),	-- Fallback Armor - Cloak
-			--SL
-			i(167150),	-- QA Combat Test Cloak 1(9.0.5?)
-		}),
-		filter(COSMETIC, {
-			i(52488),	-- Jeweler's Sapphire Monocle (other version got added)
-			i(116399),	-- Emerald Sunglasses (WoD Beta)
-			i(133996),	-- Was testing version, they added i(134022))	-- Burgy Blackheart's Handsome Hat
-			-- Hidden
-			i(134110),	-- Hidden Helm
-			i(134111),	-- Hidden Cloak
-			i(142504),	-- Hidden Tabard
-			i(134112),	-- Hidden Shoulder
-			i(143539),	-- Hidden Belt
-			i(168659),	-- Hidden Chestpiece
-			i(168664),	-- Hidden Boots
-			i(168665),	-- Hidden Bracers
-			i(142503),	-- Hidden Shirt
-			i(168665),	-- Hidden Bracers
-			i(158329),	-- Hidden Gloves
-			-- SL
-			i(185774),	-- PH Green Head Candle
-			i(182306),	-- Monster Mantle
-			i(186093),	-- Shaded Spectacles
-			i(187914),	-- Captain Noteo's Unused Eye Patch
-		}),
-		filter(SHIRTS, {
-			i(52548),	-- Initiate's Tunic
-			i(53869),	-- War Paint (Shirt) NOT GOOD FOR THE LADIES (NYI)
-			i(53879),	-- Rugged Work Shirt
-			i(53880),	-- Super Girly Shirt
-			i(60619),	-- No Shirt
-			i(62061),	-- Irradiated Gnome Shirt
-			i(63074),	-- "Behind You!" Shirt
-			i(129294),	-- Bonespeaker Tatoos
-			i(137118),	-- The Crone's Shirt
-			i(137552),	-- Purple Shirt
-		}),
-		filter(TABARDS, {
-			i(23388),	-- Tranquillen Tabard
-			i(147204),	-- Black Apron - TEST
-		}),
-		filter(51, {	-- Neck
-			-- Load In Game
-			-- Vanilla
-			i(13811),	-- Necklace of the Dawn
-			i(23058),	-- Life Channeling Necklace (Says added in cata wowhead)
-			-- Wrath
-			i(33197),	-- Mossy Necklace (Says added in cata wowhead)
-			-- Legion
-			i(157750),	-- Pendant of Good Fortune
-			-- ItemID/Retrieving
-			-- Vanilla
-			i(7550),	-- Warrior's Honor
-			i(18023),	-- Blood Ruby Pendant
-			-- TBC
-			i(28043),	-- Demon Stalker Pendant (Says added in cata wowhead)
-			i(31930),	-- Enigmatic Charm (Says added in cata wowhead)
-			i(31931),	-- Fiery Charm (Says added in cata wowhead)
-			i(31932),	-- Living Charm (Says added in cata wowhead)
-			i(31933),	-- Dark Charm (Says added in cata wowhead)
-			i(31934),	-- Frigid Charm (Says added in cata wowhead)
-			i(33198),	-- Necklace of Decay (Says added in cata wowhead)
-			i(33199),	-- Pendant of Old (Says added in cata wowhead)
-			i(33200),	-- Ancient Ceremonial Necklace (Says added in cata wowhead)
-			i(33201),	-- Silver Moonstone Pendant (Says added in cata wowhead)
-			-- Wrath
-			i(37544),	-- Drakebone Necklace (Says added in cata wowhead)
-			i(42856),	-- Frosthowl Amulet (Says added in cata wowhead)
-			i(44389),	-- Curative Necklace (Says added in cata wowhead)
-			i(44390),	-- Venomous Pendant (Says added in cata wowhead)
-			i(44391),	-- Cast Steel Choker
-			i(44392),	-- Necklace of Permeation
-			-- Cata
-			i(59665),	-- Emerald Dragonet Choker
-			-- WoD
-			i(108812),	-- 6.0 PH Neck Agi
-			i(108818),	-- 6.0 PH Neck Str
-			i(108819),	-- 6.0 PH Neck Int
-			i(109267),	-- 6.0 QA Combat Test Healer Neck
-			i(109293),	-- 6.0 QA Combat Test Healer Neck 2
-			i(109295),	-- 6.0 QA Combat Test Agility DPS Neck
-			i(109300),	-- 6.0 QA Combat Test Caster DPS Neck
-			i(109369),	-- 6.0 QA Combat Test Agility DPS Neck 2
-			i(109427),	-- 6.0 QA Combat Test Agility DPS Neck 3
-			i(109452),	-- 6.0 QA Combat Test Caster DPS Neck 2
-			i(109459),	-- 6.0 QA Combat Test Caster DPS Neck 3
-			i(109522),	-- 6.0 QA Combat Test Caster DPS Neck 4
-			i(109526),	-- 7.0 QA Combat Test Neck 4
-			-- BFA
-			i(167137),	-- QA Combat Test Neck 1
-			-- SL
-			i(177146),	-- Shaleshell Pendant
-			i(177165),	-- Shaleshell Pendant
-			i(179386),	-- Tidesage Necklace (Might be another quest in Stormsong Valley)
-			i(185943),	-- Lost Adventurer's Medallion
-			i(186633),	-- Mawrat Mongrel's Collar
-			i(186983),	-- Attendant's Chain
-		}),
-		filter(52, {	-- Finger
-			-- Load In Game
-			-- Vanilla
-			i(13812),	-- Ring of the Dawn
-			i(19065),	-- Emerald Circle
-			-- Legion
-			i(141907),	-- Arena Victory Bonus
-			i(143604),	-- Rating Min Item Level Reward
-			i(144455),	-- Rating Min Item Level Reward
-			i(147397),	-- Rating Min Item Level Reward
-			i(147421),	-- Rating Min Item Level Reward
-			i(150368),	-- Rating Min Item Level Reward
-			i(150369),	-- Rating Min Item Level Reward
-			i(150370),	-- Rating Min Item Level Reward
-			i(157748),	-- Simple Golden Ring
-			i(157749),	-- Ornate Silver Loop
-			-- BFA
-			i(174050),	-- Corrupted Ring - Revel in Violence
-			i(174051),	-- Corrupted Ring - Spontaneous Fury
-			i(174056),	-- Corrupted Ring - Face the Truth
-			i(174057),	-- Corrupted Ring - Mesmerizing
-			-- ItemID/Retrieving
-			-- Vanilla
-			i(4988),	-- Burning Obsidian Band
-			i(17000),	-- Band of the Wraith
-			i(17108),	-- Mark of Deflection
-			-- TBC
-			i(28044),	-- Band of the Demon Stalker
-			i(33097),	-- Mushroom Ring (Says added in cata wowhead)
-			i(33193),	-- Mossy Band (Says added in cata wowhead)
-			i(33194),	-- Ancient Ceremonial Band (Says added in cata wowhead)
-			i(33195),	-- Cracked Stone Band (Says added in cata wowhead)
-			i(33196),	-- Softly-Glowing Ring (Says added in cata wowhead)
-			-- Wrath
-			i(34712),	-- Prismatic Signet (Says added in cata wowhead)
-			i(37531),	-- Circle of Frigid Wind (Says added in cata wowhead)
-			i(41756),	-- Heart's Blood Signet
-			i(46842),	-- Crusader's Band
-			-- Cata
-			i(57708),	-- QA Test Finger 500 Strength
-			i(57709),	-- QA Test Finger Strength
-			i(57710),	-- QA Test Finger 2000 Strength
-			i(57713),	-- QA Test Finger 500 Agility
-			i(57721),	-- QA Test Finger 10000 attack power
-			i(57723),	-- QA Test Finger 500 intellect
-			i(57727),	-- QA Test Finger Spell Power
-			i(57738),	-- QA Test Finger 250 Mastery
-			i(58816),	-- QA Test Finger 250 Hit
-			-- MoP
-			i(98037),	-- QA Test Finger Dodge
-			i(98038),	-- QA Test Finger Parry
-			-- WoD
-			i(108813),	-- 6.0 PH Ring Agi
-			i(108820),	-- 6.0 PH Ring Str
-			i(108821),	-- 6.0 PH Ring Int
-			i(109277),	-- 7.0 QA Combat Test Ring 1
-			i(109365),	-- 6.0 QA Combat Test Caster DPS Ring
-			i(109391),	-- 6.0 QA Combat Test Agility DPS Ring 2
-			i(109410),	-- 6.0 QA Combat Test Caster DPS Ring 2
-			i(109418),	-- 6.0 QA Combat Test Agility DPS Ring 3
-			i(109447),	-- 6.0 QA Combat Test Caster DPS Ring 3
-			i(109454),	-- 6.0 QA Combat Test Caster DPS Ring 4
-			i(109478),	-- 6.0 QA Combat Test Agility DPS Ring 4
-			i(109512),	-- 6.0 QA Combat Test Caster DPS Ring 5
-			i(109516),	-- 7.0 QA Combat Test Ring 5
-			i(110704),	-- QA Test Finger Versatility
-			-- BFA
-			i(167135),	-- QA Combat Test Ring 1
-			i(167136),	-- QA Combat Test Ring 2
-			i(173421),	-- Black Empire Signet
-			-- SL
-			i(175717),	-- Inquisitor's Signet
-			i(177145),	-- Sea Sapphire Band
-			i(177153),	-- Beaten Copper Loop
-			i(177164),	-- Sea Sapphire Band
-			i(177167),	-- Beaten Copper Loop
-		}),
-		n(-386, {	-- Trinket
-			-- Load In Game
-			-- Wrath
-			i(38572),	-- Bounty Procurement Enhancer (Says added in cata wowhead)
-			i(39819),	-- Bloodbinder's Runestone (Says added in cata wowhead)
-			-- Cata
-			i(54547),	-- Cracked Jewelry Box
-			-- WoD
-			i(114960),	-- Spires unused
-			-- Legion
-			i(157746),	-- Graven Keepsake
-			i(157747),	-- Illuminated Charm
-			-- BFA
-			i(161222),	-- Latency Manipulator
-			i(161223),	-- Agency Manipulator
-			i(161289),	-- Rikal's Shark Teeth
-			-- ItemID/Retrieving
-			-- Vanilla
-			i(12805),	-- Orb of Fire
-			i(18355),	-- Ferras Collar
-			i(18438),	-- Sergeant's Mark
-			i(20084),	-- Hunting Net
-			i(20525),	-- Earthen Sigil
-			--Wrath
-			i(37561),	-- Touch of the Elements (Says added in cata wowhead)
-			i(38383),	-- Valonforth's Folly (Says added in cata wowhead)
-			i(38526),	--Binding of the Imprisoned Soul (Says added in cata wowhead)
-			i(46839),	-- Frostwolf Insignia Rank 7
-			i(46840),	-- Frostwolf Insignia Rank 7
-			-- WoD
-			i(109263),	-- 6.0 QA Combat Test Agility DPS Trinket
-			i(109286),	-- 7.0 QA Combat Test Caster DPS Trinket 1
-			i(109360),	-- 6.0 QA Combat Test Agility DPS Trinket 2
-			i(109370),	-- 7.0 QA Combat Test Caster DPS Trinket 2
-			i(109376),	-- 6.0 QA Combat Test Strength DPS Trinket
-			i(109378),	-- 6.0 QA Combat Test Tank Trinket
-			i(109386),	-- 6.0 QA Combat Test Agility DPS Trinket 3
-			i(109394),	-- 6.0 QA Combat Test Tank Trinket 2
-			i(109403),	-- 6.0 QA Combat Test Strength DPS Trinket 2
-			i(109407),	-- 6.0 QA Combat Test Caster DPS Trinket 3
-			i(109413),	-- 7.0 QA Combat Test Caster DPS Trinket 4
-			i(109442),	-- 6.0 QA Combat Test Agility DPS Trinket 4
-			i(109446),	-- 6.0 QA Combat Test Strength DPS Trinket 3
-			i(109467),	-- 6.0 QA Combat Test Strength DPS Trinket 4
-			i(109480),	-- 6.0 QA Combat Test Tank Trinket 3
-			i(109495),	-- 6.0 QA Combat Test Tank Trinket 4
-			i(109515),	-- 6.0 QA Combat Test Tank Trinket 5
-			i(113017),	-- 7.0 QRP Template PH Int Trinket #2
-			i(113018),	-- 7.0 QRP Template PH Str Trinket #1
-			i(113019),	-- 7.0 QRP Template PH Str Trinket #2
-			i(113020),	-- 7.0 QRP Template PH Agi Trinket #1
-			i(113021),	-- 7.0 QRP Template PH Agi Trinket #2
-			i(113022),	-- 7.0 QRP Template PH Int Trinket #1
-			-- Legion
-			i(150367),	-- Test Trinket
-			i(151967),	-- Electrostatic Lasso
-			-- BFA
-			i(167138),	-- QA Combat Test Trinket 1 (SL?)
-			i(167139),	-- QA Combat Test Trinket 2 (SL?)
-			i(173426),	-- Black Empire trinkets
-			-- SL
-			i(175726),	-- Primalist's Kelpling
-			i(175727),	-- Elder's Stormseed
-			i(177147),	-- Seabeast Tusk
-			i(177148),	-- Lucky Braid
-			i(177149),	-- Shimmering Rune
-			i(177150),	-- Petrified Basilisk Scale
-			i(177151),	-- Oceanographer's Weather Log
-			i(177152),	-- Privateer's Spyglass
-			i(177154),	-- Seabeast Tusk
-			i(177155),	-- Shimmering Rune
-			i(177156),	-- Petrified Basilisk Scale
-			i(177157),	-- Bijou of the Golden City
-			i(177158),	-- Enchanted Devilsaur Claw
-			i(177166),	-- Lucky Braid
-		}),
-	}),
-	filter(MISC, {
-		filter(113, {	-- Bags
-			i(130943),	-- Reusable Tote Bag
-			i(166699),	-- Desert Rucksack
-			i(92746),	-- Portable Refrigerator
-			i(38307),	-- Crafty's Bottomless Inscription Bag
-			i(166700),	-- Durable Sailor's Duffel
-		}),
-		filter(55, {		-- Consumables
-			i(44871),	-- Greater Inscription of the Axe
-			i(44872),	-- Greater Inscription of the Crag
-			i(44873),	-- Greater Inscription of the Pinnacle
-			i(44874),	-- Greater Inscription of the Storm
-			i(45705),	-- Argent Tournament Invitation
-		}),
-		filter(104, {	-- Quest Items
-			i(157772),	-- A Royal Concern
-			i(157775),	-- A Royal Concern
-			i(142362),	-- zzz old fel-etched bone
-			i(142371),	-- zzz old inferno stone
-			i(142373),	-- zzz old locket f eldr thalas
-			i(142376),	-- zzz old glowing blood thislte petal
-			i(142378),	-- zzz old vial of ancient mana
-			i(17347),	-- unknown
-			i(17409),	-- Encrusted Crystal Fragment
-			i(169696),	-- reuse me [mtmm]]
-			i(169702),	-- reuse me [mtmm]]
-			i(169703),	-- reuse me [mtmm]]
-			i(20883),	-- Unknown
-			i(20936),	-- Unknown
-			i(20937),	-- Unknownwwwwwwwwwww
-			i(169958),	-- Fragment of the Void
-			i(169959),	-- Fragment of the Void
-			i(169960),	-- Fragment of the Void
-			i(156927),	-- Great Hall Recall)
-			i(168023),	-- dnt smashed transporter relay
-			i(168030),	-- dnt hyperbolic circuit
-			i(168031),	-- dnt transference disc
-		}),
-		-- M+ PTR Testing
-		i(181850),	-- Set Keystone Map: Plaguefall
-		i(181852),	-- Set Keystone Map: Halls of Atonement
-		i(181854),	-- Set Keystone Map: Theater of Pain
-		i(181856),	-- Set Keystone Map: Sanguine Depths
-		i(184849),	-- Set Keystone Map: The Necrotic Wake
-		i(181851),	-- Set Keystone Map: Mists of Tirna Scithe
-		i(181853),	-- Set Keystone Map: Spires of Ascension
-		i(181855),	-- Set Keystone Map: De Other Side
-		i(159734),	-- Add Keystone Affix: Fortified
-		i(159730),	-- Add Keystone Affix: Tyrannical
-		i(159732),	-- Add Keystone Affix: Bursting
-		i(159739),	-- Add Keystone Affix: Sanguine
-		i(183948),	-- Add Keystone Affix: Spiteful
-		i(159735),	-- Add Keystone Affix: Grievous
-		i(159731),	-- Add Keystone Affix: Bolstering
-		i(159738),	-- Add Keystone Affix: Raging
-		i(183949),	-- Add Keystone Affix: Inspiring
-		i(159733),	-- Add Keystone Affix: Explosive
-		i(159736),	-- Add Keystone Affix: Necrotic
-		i(159737),	-- Add Keystone Affix: Quaking
-		i(159742),	-- Add Keystone Affix: Volcanic
-		i(183947),	-- Add Keystone Affix: Storming
-		i(187524),	-- Add Keystone Affix: Tormented
-		i(166381),	-- Set Keystone Level: 10
-		i(166379),	-- Set Keystone Level: 12
-		i(166377),	-- Set Keystone Level: 14
-		i(166381),	-- Set Keystone Level: 11
-		i(166378),	-- Set Keystone Level: 13
-		i(175181),	-- Retrieving Data
-		i(175213),	-- Retrieving Data
-		i(178302),	-- Retrieving Data
-		i(178307),	-- Retrieving Data
-		i(178312),	-- Retrieving Data
-		i(178314),	-- Retrieving Data
-		i(178318),	-- Retrieving Data
-		i(178323),	-- Retrieving Data
-		i(178326),	-- Retrieving Data
-		i(178330),	-- Retrieving Data
-		i(178480),	-- Retrieving Data
-		i(178665),	-- Retrieving Data
-		i(183434),	-- Retrieving Data
-		i(183431),	-- Retrieving Data
-		i(178488),	-- Retrieving Data
-		i(178489),	-- Retrieving Data
-		i(178673),	-- Retrieving Data
-		i(159681),	-- Set Keystone Map: Darkheart Thicket
-		i(159683),	-- Set Keystone Map: Black Rook Hold
-		i(159684),	-- Set Keystone Map: Cathedral of Eternal Night
-		i(159685),	-- Set Keystone Map: Court of Stars
-		i(159686),	-- Set Keystone Map: Eye of Azshara
-		i(159687),	-- Set Keystone Map: Halls of Valor
-		i(159688),	-- Set Keystone Map: Maw of Souls
-		i(159689),	-- Set Keystone Map: Lower Karazhan
-		i(159690),	-- Set Keystone Map: Upper Karazhan
-		i(159691),	-- Set Keystone Map: Seat of the Triumvirate
-		i(159692),	-- Set Keystone Map: The Arcway
-		i(159693),	-- Set Keystone Map: Vault of the Wardens
-		i(159694),	-- Set Keystone Level: 15
-		i(159695),	-- Set Keystone Level: 16
-		i(159696),	-- Set Keystone Level: 17
-		i(159697),	-- Set Keystone Level: 18
-		i(159698),	-- Set Keystone Level: 19
-		i(159699),	-- Set Keystone Level: 20
-		i(159700),	-- Set Keystone Level: 21
-		i(159701),	-- Set Keystone Level: 22
-		i(159702),	-- Set Keystone Level: 23
-		i(159703),	-- Set Keystone Level: 24
-		i(159704),	-- Set Keystone Level: 25
-		i(159705),	-- Set Keystone Level: 26
-		i(159706),	-- Set Keystone Level: 27
-		i(159707),	-- Set Keystone Level: 28
-		i(159708),	-- Set Keystone Level: 29
-		i(159709),	-- Set Keystone Level: 30
-		i(79907),	-- Spear of Xuen (Old Version)
-		i(129742),	-- Badge of Timewalking Justice cap
-		i(31496),	-- Unknown
-		i(31498),	-- Unknown
-		i(31500),	-- Unknown
-		i(31502),	-- Unknown
-		i(5126),	-- Unknown
-		i(5127),	-- Unknown
-		i(5129),	-- Unknown
-		i(5130),	-- Unknown
-		i(5131),	-- Unknown
-		i(5132),	-- Unknown
-		i(175246),	-- N'lyeth (Unused)
-		i(169177),	-- Blueprint: TK32(DNT))
-		i(168171),	-- ph objective
-		i(168244),	-- ph treasure
-		i(168272),	-- ph amatheed cache
-		i(169154),	-- ph nzoth cache
-		i(170501),	-- ph mogu cache
-		i(172381),	-- ph objective 2
-		i(169178),	-- Blueprint: TK33(DNT))
-		i(169179),	-- Blueprint: TK34(DNT))
-		i(169180),	-- Blueprint: TK35(DNT))
-		i(169181),	-- Blueprint: TK36(DNT))
-		i(169182),	-- Blueprint: TK37(DNT))
-		i(169183),	-- Blueprint: TK38(DNT))
-		i(169184),	-- Blueprint: TK39(DNT))
-		i(169185),	-- Blueprint: TK40(DNT))
-		i(169186),	-- Blueprint: TK41(DNT))
-		i(169187),	-- Blueprint: TK42(DNT))
-		i(169188),	-- Blueprint: TK43(DNT))
-		i(169189),	-- Blueprint: TK44(DNT))
-		i(165884),	-- Treasure Map of molten clay
-		i(165899),	-- Treasure Map of whispering reef
-		i(165900),	-- Treasure Map of verdant wilds
-		i(165901),	-- Treasure Map of ungol ruins
-		i(165902),	-- Treasure Map of rotting mire
-		i(165903),	-- Treasure Map of dread chain
-		i(165904),	-- Treasure Map of havenswood
-		i(165905),	-- Treasure Map of jorundall
-		i(165906),	-- Treasure Map of skittering hollow
-		i(169192),	-- Unknown
-		i(78892),	-- Perfect Geode (PTR Only)
-		i(31503),	-- Unknown
-		i(107474),	-- ph6 engorged innards
-		i(103535),	-- Bulging Bag of Charms (was planned for asia store)
-		i(31507),	-- Unknown
-		i(36963),	-- Unknown
-		i(90568),	-- Unknown
-		i(90569),	-- Unknown
-		i(98001),	-- Saurok Collection
-		i(98005),	-- Saurok Collection
-		i(100949),	-- Thunderlord Cache Reward
-		spell(5169),	-- defias disguise
-		i(45818),	-- Unknown
-		i(46056),	-- Unknown
-		i(167026),	-- cache of crucible treasures
-		i(164774),	-- unknown
-		spell(5264),	-- dsouth sea defias disguise
-		spell(5268),	-- dark iron dwarf disguise
-		spell(5267),	-- dalaran wizard disguise
-		i(9023),		-- Codex of Shadow Proctection Rank3 (Never added)
-		i(21243),	-- Bloated Mightfish
-		i(132118),	-- Aggramar's Blessing (Didnt make it out of beta)
-		i(134006),	-- Dwyer's Spare Caber
-		i(134008),	-- Simple Rosary of Light
-		i(134824),	-- "Sir Pugsington" Costume
-		i(137602),	-- Unknown
-		i(151060),	--
-		i(42975),	-- Ace of Lords
-		i(42977),	-- Two of Lords
-		i(42978),	-- Three of Lords
-		i(42979),	-- Four of Lords
-		i(42980),	-- Five of Lords
-		i(42981),	-- Six of Lords
-		i(42982),	-- seven of Lords
-		i(42983),	-- eight of Lords
-		i(42976),	-- Lords Deck
-		i(158782),	-- Warchief's Prideful
-		i(158841),	-- High King's Pride
-		i(140787),	--
-		i(140921),	--
-		i(132107),	--
-		i(132250),	--
-		i(101537),	-- Timeless Coins
-		i(103975),	-- Elder Charm of Good Fortune
-		i(103976),	-- Mogu Rune of Fate
-		i(107459),	-- Black Iron Fragment
-		i(108595),	-- Recall Stone
-		i(108882),	-- Bloodmaul Blasting Charge
-		i(82460),	-- Unknown
-		i(82462),	-- Unknown
-		i(82463),	-- Unknown
-		i(155010),	-- REUSE MD DNT
-		i(155011),	-- REUSE MD DNT
-		i(155012),	-- REUSE MD DNT
-		i(130186),	-- Intern Items - BJI
-		i(146801),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
-		i(146800),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
-		i(146799),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
-		i(115371),	-- [PLACEHOLDER TIER 3 ITEM]
-		i(164258),	-- Cache of Uldir Treasures
-		i(164259),	-- Cache of Uldir Treasures
-		i(164260),	-- Cache of Uldir Treasures
-		i(100894),	-- Deathtoll's Reward
-		i(100897),	-- Skel'tik the Baleful's Reward
-		i(100898),	-- Kull Bloodseeker's Reward
-		i(109012),	-- Frostwolf Ancestral Totem
-		i(124644),	-- Unknown
-		i(93660),	-- Thunder-Laced Egg
-		i(136621),	-- Unknown
-		i(40796),	-- Unknown
-		i(42147),	-- Unknown
-		i(43254),	-- Unknown
-		i(35728),	-- Greater Inscription of the blade (arena realm only)
-		i(35729),	-- Greater Inscription of the knight (arena realm only)
-		i(35730),	-- Greater Inscription of the oracle (arena realm only)
-		i(35731),	-- Greater Inscription of the orb (arena realm only)
-		i(44125),	-- zzzOLDLesser Inscription of Template - PH
-		i(44126),	-- zzzOLDGreater Inscription of Template - PH
-		i(92563),	-- The Eye of the Storm
-		i(136411),	-- Unknown
-		i(22233),	-- Zigris' Footlocker
-		i(35874),	-- Whizzlespark's Portable Pet Mansion
-		i(111810),	-- Barracks, Level 1 - unused version (used version is 111956)
-		i(134013),	-- Chef's Hat [Likely the cosmetic effect from when you use the toy]
-		i(130156),	-- Crane Bag
-		i(116130),	-- Draenic Crystal Fragments (Did not make it out of beta)
-		i(25497),	-- Broken Balanced Stone Dirk
-		i(28025),	-- Video Mount
-		i(28261),	-- Video Invis Broken Fitz's Throwing Axe
-		i(25641),	-- Broken Fitz's Throwing Axe
-		i(33564),	-- World Drop Certificate
-		i(47558),	-- Regalia of the Grand Protector
-		i(47559),	-- Regalia of the Grand Vanquisher
-		i(20560),
-		i(41596),
-		i(43016),
-		i(52446),
-		i(62898),
-		i(166680),	-- Echo of Elune (maybe you will be able to get it with a hotfix?)
-		i(166358),	-- Proper Parrot/ Proper Parrot was supposed to be added in 8.1, tied to the quest Be More Uniform. A few days after 8.1 went live, it was removed from the pet journal. Nobody obtained it from the quest.
-		p(2341),		-- Feathers (possibly tied to a quest?)
-		i(164769),	-- Unknown
-		i(33565),	-- Uncommon Drop Certificate
-		i(105914),	-- Danger Detector Boots
-		i(105915),	-- Danger Detector Harness
-		i(70104),	-- Unknown
-		i(45924),	-- Certificate of Appreciation
-		i(34548),	-- Cache of the Shattered Sun
-		i(8502),	-- Bronze Lotterybox
-		i(8503),	-- Heavy Bronze Lotterybox
-		i(8504),	-- Iron Lotterybox
-		i(8505),	-- Heavy Iron Lotterybox
-		i(8506),	-- Mithril Lotterybox
-		i(8507),	-- Heavy Mithril Lotterybox
-		i(165730),	-- Cache of Dazar'alor Treasures
-		i(165731),	-- Cache of Dazar'alor Treasures
-		i(165732),	-- Cache of Dazar'alor Treasures
-		i(13247),	-- Quartermaster Zigris' Footlocker
-		i(19804),	-- Pale Ghoulfish
-		i(21135),	-- Broken Assassin's Throwing Axe
-		i(164765),	-- Unknown
-		i(120370),
-		i(162549),	-- Personal Anchor
-		i(158922),	-- Zany Zombiefied Raptor (Did not make it)
-		i(165357),	-- Wolf's Den (162530) is used
-		i(120371),
-		i(23351),
-		i(23470),
-		i(46103),
-		i(49402),
-		i(49405),
-		i(49410),
-		i(49414),
-		i(49418),
-		i(49422),
-		i(54331),
-		i(55047),
-		i(21163),
-		i(137278),	-- Wardens Vendor List
-		i(137279),	-- nightfallen Vendor List
-		i(137280),	-- highmountain Vendor List
-		i(137281),	-- court of farondis Vendor List
-		i(137282),	-- valarjar Vendor List
-		i(137283),	-- dreamweavers Vendor List
-		i(34544),	-- Essence of the immortals
-		i(54757),	-- Double Link Tunic
-		i(54765),	-- Burnished Leggings
-		i(54766),	-- Burnished Gloves
-		i(54767),	-- Burnished Girdle
-		i(54768),	-- Burnished Boots
-		i(54769),	-- Rough Bronze Bracers -- Do Not Remove until somebody provides proof as obtained. Guild Tab shows somebody might be able to craft it, but its a visual bug. 27th Oct 2020 -- Gold
-		i(54778),	-- Burnished Boots (Again)
-		i(54781),	-- Thorbia's Gauntlets
-		i(54783),	-- Silvered Bronze Shoulders
-		i(54789),	-- Art Template Plate Belt - Plate_Common_C_01 - Rust
-		i(47058),	-- Unknown
-		i(59791),	-- Unknown
-		i(60221),	-- Furlbrow Cloak
-		i(60774),	-- Unknown
-		i(60775),	-- Unknown
-		i(60777),	-- Unknown
-		i(60780),	-- Unknown
-		i(60781),	-- Unknown
-		i(50329),	-- Unknown
-		i(55216),	-- Fiery Transform
-		i(55217),	-- Aqua Transform
-		i(55218),	-- Rocky Transform
-		i(55219),	-- Vaporous Transform
-		i(142360),	-- Blazing Ember Signet
-	}),
-	filter(MOUNTS, {
-		a(model(9475, i(13325))),		-- Fluorescent Green Mechanostrider (Never added in Game)
-		h(model(11641, i(14062, {		-- Kodo Mount						(Never added in Game)
-			{ ["mountID"] = 18363, ["u"] = NEVER_IMPLEMENTED }
-		}))),
-		a(model(10662, n(11148, {	-- Purple Mechanostrider				(Never added in Game)
-			{ ["mountID"] = 17455, ["u"] = NEVER_IMPLEMENTED }
-		}))),
-		a(model(10664, n(11149, {	-- Red and Blue Mechanostrider			(Never added in Game)
-			{ ["mountID"] = 17456, ["u"] = NEVER_IMPLEMENTED }
-		}))),
-		a(model(9476, n(10180, {	-- Unpainted Mechanostrider				(Never added in Game)
-			{ ["mountID"] = 15781, ["u"] = NEVER_IMPLEMENTED }
-		}))),
-		i(168673),	-- keys to the silver mono-wheel (no mount in yet)
-		model(17890, i(25596)),	-- Peep's Whistle						(Never added in Game)
-		i(8627),	-- Reins of the Nightsaber								(Never added in Game)
-		a(model(6447, i(8628))),	-- Reins of the Spotted Nightsaber		(Never added in Game)
-		a(model(6443, i(8630, {		-- Reins of the Bengal Tiger			(Never added in Game)
-			{ ["mountID"] = 10790 }
-		}))),
-		a(model(4805, i(8633, {		-- Reins of the Leopard					(Never added in Game)
-			{ ["mountID"] = 10788 }
-		}))),
-		a(model(4805, i(12325))),	-- Reins of the Primal Leopard			(Never added in Game)
-		a(model(6442, i(12326))),	-- Reins of the Tawny Sabercat			(Never added in Game)
-		a(model(9714, i(12327))),	-- Reins of the Golden Sabercat			(Never added in Game)
-		i(156885, {	-- Gold Gladiator's Proto-Drake
-			["mountID"] = 262028,
-		}),
-		i(156883, {	-- Green Gladiator's Proto-Drake
-			["mountID"] = 262026,
-		}),
-		i(156882, {	-- Pale Gladiator's Proto-Drake
-			["mountID"] = 262025,
-		}),
-		model(41089, i(84753)),		-- Reins of the White Riding Yak		(Never added in Game)
-		model(43707, i(87784)),		-- Reins of the Jungle Riding Crane		(Never added in Game)
-		model(43709, i(87786)),		-- Reins of the Black Riding Yak		(Never added in Game)
-		model(43710, i(87787)),		-- Reins of the Brown Riding Yak		(Never added in Game)
-		model(43715, i(87792)),		-- Reins of the Orange Water Strider	(Never added in Game)
-		model(43714, i(87793)),		-- Reins of the Jade Water Strider		(Never added in Game)
-		model(51323, i(104011)),	-- Stormcrow							(Never added in Game)
-		i(143752),	-- Sound Test Mount
-		i(182083),	-- Bonecleaver's Skullboar
-		i(128480),  -- Bristling Hellboar
-		i(181817),	-- Deathbringer's Flayedwing
-
-		i(44557),	-- Swift Ebonweave Carpet (NOT IN GAME)
-		i(44556),	-- Swift Spellfire Carpet (NOT IN GAME)
-		i(44555),	-- Swift Mooncloth Carpet (NOT IN GAME)
-		i(84728),	-- Reins of the Crimson Riding Crane
-		i(87785),	-- Reins of the Albino Riding Crane
-		i(87794),	-- Reins of the Golden Water Strider
-		i(116657),	-- Ancient Leatherhide
-		i(129744),	-- Iron Warhorse
-		i(137576),	-- Dim Coldflame Core
-		i(137615),	-- Molten Flarecore
-		i(163063),	-- Reins of the spectral phoenix (old trash 100 rep award)
-		i(163188),	-- Surf Jelly (testing version)
-		i(163186),	-- Tempestuous Skystallion (Old 400 Mounts Reward)
-		i(13323),	-- Purple Mechanostrider
-		i(13324),	-- Red and Blue Mechanostrider
-		i(16343),	-- Blood Guard's Mount
-		i(18768),	-- Reins of the Swift Dawnsaber
-		i(23193),	-- Naxxramas Deathcharger Reins
-		i(28482),	-- Great Elite Elekk
-		i(43963),	-- Reins of the Brown Polar Bear
-		i(43964),	-- Reins of the Black Polar Bear
-		i(46101),	-- Blue Skeletal Warhorse
-		mount(241851, {	-- Netherlord's Chaotic Wrathsteed
-			["classes"] = { WARLOCK },
-			["u"] = NEVER_IMPLEMENTED,
-		}),
-		-- SL
-		i(186491),	-- Spring Wilderling Harness
-		i(186639),	-- Pilfered Gearglider
-		i(186640),	-- Silver Gearglider
-	}),
 	filter(BATTLE_PETS, {
 		model(65527, i(129108, {	-- Son of Goredome						(Never added in Game)
 			p(1751),
@@ -1849,40 +300,198 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(183853),	-- Sinfall Screecher
 		i(183714),	-- Swamp Reed (Withering Creeper is the equivalent wild pet in game, item was never used)
 	}),
-	f(110, {	-- Titles
-		title(54),	-- <Name> of the Ten Storms
-		title(55),	-- <Name> of the Emerald Dream
-		title(57),	-- Prophet <Name>
-		title(58),	-- <Name> the Malefic
-		title(60),	-- <Name> of the Ebon Blade
-		title(63),	-- Assassin <Name>
-		title(64),	-- Grand Master Alchemist <Name>
-		title(65),	-- Grand Master Blacksmith <Name>
-		title(66),	-- Iron Chef <Name>
-		title(67),	-- Grand Master Enchanter <Name>
-		title(68),	-- Grand Master Engineer <Name>
-		title(69),	-- Doctor <Name>
-		title(70),	-- Grand Master Angler <Name>
-		title(71),	-- Grand Master Herbalist <Name>
-		title(72),	-- Grand Master Scribe <Name>
-		title(73),	-- Grand Master Jewelcrafter <Name>
-		title(74),	-- Grand Master Leatherworker <Name>
-		title(75),	-- Grand Master Miner <Name>
-		title(76),	-- Grand Master Skinner <Name>
-		title(77),	-- Grand Master Tailor <Name>
-		title(82),	-- <Name> the Lion Hearted
-		title(83),	-- <Name>, Champion of Elune
-		title(84),	-- <Name>, Hero of Orgrimmar
-		title(85),	-- Plainsrunner <Name>
-		title(86),	-- <Name> of the Darkspear
-		title(87),	-- <Name> the Forsaken
-		title(91),	-- <Name>, Hero of Northrend
-		title(330),	-- Master Assassin <Name>
-		title(406),	-- Sparking <Name>
-		title(408),	-- Pilgrim <Name> the Mallet Bearer
-		title(424),	-- Deathbringer <Name>
-		i(183940),	-- Avowed Archivist's Tome (this was on a vendor and awarded "the Avowed" title in Beta but has not been seen in the actual expansion)
-		title(436),	-- <Name> the Avowed
+	filter(MOUNTS, {
+		a(model(9475, i(13325))),		-- Fluorescent Green Mechanostrider (Never added in Game)
+		h(model(11641, i(14062, {		-- Kodo Mount						(Never added in Game)
+			{ ["mountID"] = 18363, ["u"] = NEVER_IMPLEMENTED }
+		}))),
+		a(model(10662, n(11148, {	-- Purple Mechanostrider				(Never added in Game)
+			{ ["mountID"] = 17455, ["u"] = NEVER_IMPLEMENTED }
+		}))),
+		a(model(10664, n(11149, {	-- Red and Blue Mechanostrider			(Never added in Game)
+			{ ["mountID"] = 17456, ["u"] = NEVER_IMPLEMENTED }
+		}))),
+		a(model(9476, n(10180, {	-- Unpainted Mechanostrider				(Never added in Game)
+			{ ["mountID"] = 15781, ["u"] = NEVER_IMPLEMENTED }
+		}))),
+		i(168673),	-- keys to the silver mono-wheel (no mount in yet)
+		model(17890, i(25596)),	-- Peep's Whistle						(Never added in Game)
+		i(8627),	-- Reins of the Nightsaber								(Never added in Game)
+		a(model(6447, i(8628))),	-- Reins of the Spotted Nightsaber		(Never added in Game)
+		a(model(6443, i(8630, {		-- Reins of the Bengal Tiger			(Never added in Game)
+			{ ["mountID"] = 10790 }
+		}))),
+		a(model(4805, i(8633, {		-- Reins of the Leopard					(Never added in Game)
+			{ ["mountID"] = 10788 }
+		}))),
+		a(model(4805, i(12325))),	-- Reins of the Primal Leopard			(Never added in Game)
+		a(model(6442, i(12326))),	-- Reins of the Tawny Sabercat			(Never added in Game)
+		a(model(9714, i(12327))),	-- Reins of the Golden Sabercat			(Never added in Game)
+		i(156885, {	-- Gold Gladiator's Proto-Drake
+			["mountID"] = 262028,
+		}),
+		i(156883, {	-- Green Gladiator's Proto-Drake
+			["mountID"] = 262026,
+		}),
+		i(156882, {	-- Pale Gladiator's Proto-Drake
+			["mountID"] = 262025,
+		}),
+		model(41089, i(84753)),		-- Reins of the White Riding Yak		(Never added in Game)
+		model(43707, i(87784)),		-- Reins of the Jungle Riding Crane		(Never added in Game)
+		model(43709, i(87786)),		-- Reins of the Black Riding Yak		(Never added in Game)
+		model(43710, i(87787)),		-- Reins of the Brown Riding Yak		(Never added in Game)
+		model(43715, i(87792)),		-- Reins of the Orange Water Strider	(Never added in Game)
+		model(43714, i(87793)),		-- Reins of the Jade Water Strider		(Never added in Game)
+		model(51323, i(104011)),	-- Stormcrow							(Never added in Game)
+		i(143752),	-- Sound Test Mount
+		i(182083),	-- Bonecleaver's Skullboar
+		i(128480),  -- Bristling Hellboar
+		i(181817),	-- Deathbringer's Flayedwing
+
+		i(44557),	-- Swift Ebonweave Carpet (NOT IN GAME)
+		i(44556),	-- Swift Spellfire Carpet (NOT IN GAME)
+		i(44555),	-- Swift Mooncloth Carpet (NOT IN GAME)
+		i(84728),	-- Reins of the Crimson Riding Crane
+		i(87785),	-- Reins of the Albino Riding Crane
+		i(87794),	-- Reins of the Golden Water Strider
+		i(116657),	-- Ancient Leatherhide
+		i(129744),	-- Iron Warhorse
+		i(137576),	-- Dim Coldflame Core
+		i(137615),	-- Molten Flarecore
+		i(163063),	-- Reins of the spectral phoenix (old trash 100 rep award)
+		i(163188),	-- Surf Jelly (testing version)
+		i(163186),	-- Tempestuous Skystallion (Old 400 Mounts Reward)
+		i(13323),	-- Purple Mechanostrider
+		i(13324),	-- Red and Blue Mechanostrider
+		i(16343),	-- Blood Guard's Mount
+		i(18768),	-- Reins of the Swift Dawnsaber
+		i(23193),	-- Naxxramas Deathcharger Reins
+		i(28482),	-- Great Elite Elekk
+		i(43963),	-- Reins of the Brown Polar Bear
+		i(43964),	-- Reins of the Black Polar Bear
+		i(46101),	-- Blue Skeletal Warhorse
+		mount(241851, {	-- Netherlord's Chaotic Wrathsteed
+			["classes"] = { WARLOCK },
+			["u"] = NEVER_IMPLEMENTED,
+		}),
+		-- SL
+		i(186491),	-- Spring Wilderling Harness
+		i(186639),	-- Pilfered Gearglider
+		i(186640),	-- Silver Gearglider
+	}),
+	filter(TITLES, {
+		tier(WOTLK_TIER, {
+			tier(WOTLK_TIER, 0.1, {
+				title(64),	-- Grand Master Alchemist <Name>
+				title(65),	-- Grand Master Blacksmith <Name>
+				title(66),	-- Iron Chef <Name>
+				title(67),	-- Grand Master Enchanter <Name>
+				title(68),	-- Grand Master Engineer <Name>
+				title(69),	-- Doctor <Name>
+				title(70),	-- Grand Master Angler <Name>
+				title(71),	-- Grand Master Herbalist <Name>
+				title(72),	-- Grand Master Scribe <Name>
+				title(73),	-- Grand Master Jewelcrafter <Name>
+				title(74),	-- Grand Master Leatherworker <Name>
+				title(75),	-- Grand Master Miner <Name>
+				title(76),	-- Grand Master Skinner <Name>
+				title(77),	-- Grand Master Tailor <Name>
+			}),
+			n(P3xx, {
+				title(54),	-- <Name> of the Ten Storms
+				title(55),	-- <Name> of the Emerald Dream
+				title(57),	-- Prophet <Name>
+				title(58),	-- <Name> the Malefic
+				title(60),	-- <Name> of the Ebon Blade
+				title(63),	-- Assassin <Name>
+				title(82),	-- <Name> the Lion Hearted
+				title(83),	-- <Name>, Champion of Elune
+				title(84),	-- <Name>, Hero of Orgrimmar
+				title(85),	-- Plainsrunner <Name>
+				title(86),	-- <Name> of the Darkspear
+				title(87),	-- <Name> the Forsaken
+				title(91),	-- <Name>, Hero of Northrend
+			}),
+		}),
+		tier(LEGION_TIER, {
+			tier(LEGION_TIER, 0.1, {
+				title(330),	-- Master Assassin <Name>
+			}),
+		}),
+		tier(BFA_TIER, {
+			tier(BFA_TIER, 2.0, {
+				title(406),	-- Sparking <Name>
+			}),
+		}),
+		tier(SL_TIER, {
+			tier(SL_TIER, 0.1, {
+				i(183940, {	-- Avowed Archivist's Tome
+					title(436),	-- <Name> the Avowed
+				}),
+				title(424),	-- Deathbringer <Name>
+				title(408),	-- Pilgrim <Name> the Mallet Bearer
+			}),
+		}),
+	}),
+	filter(TOYS, {
+		tier(WOD_TIER, {
+			tier(WOD_TIER, 0.1, {
+				i(119179),	-- Iron Star Roller
+			}),
+			tier(WOD_TIER, 0.2	, {
+				i(119220),	-- Alliance Gladiator's Banner
+				i(119221),	-- Horde Gladiator's Banner
+			}),
+			n(P6xx, {
+				i(100902),	-- Unknown
+				i(100903),	-- Unknown
+				i(108638),	-- Unknown
+				i(108640),	-- Unknown
+				i(108639),	-- Unknown
+				i(122220),	-- Unknown
+				i(122225),	-- Unknown
+				i(122227),	-- Unknown
+				i(122230),	-- Unknown
+				i(122235),	-- Unknown
+			}),
+		}),
+		tier(LEGION_TIER, {
+			tier(LEGION_TIER, 0.3, {
+				i(140779),	-- Falanaar Echo
+				i(129111),	-- Kvaldir Raiding Horn
+				i(141300),	-- Magi Focusing Crystal
+				i(130867),	-- Tag Toy
+				i(130249),	-- Waywatcher's Boon
+				i(136848),	-- Worn Doll - Test
+			}),
+			tier(LEGION_TIER, 1.0, {
+				i(143545),	-- Fel Focusing Crystal
+			}),
+		}),
+		tier(BFA_TIER, {
+			tier(BFA_TIER, 0.1, {
+				i(164372),	-- Jinyu Light Globe
+				i(164377),	-- Regenerating Banana Bunch
+				i(164371),	-- Yaungol Oil Stove
+			}),
+			tier(BFA_TIER, 1.0, {
+				i(166851),	-- Kojo's Master Matching Set
+			}),
+			tier(BFA_TIER, 2.0, {
+				i(166782),	-- Pearl of the Abyss
+			}),
+		}),
+		tier(SL_TIER, {
+			tier(SL_TIER, 0.1, {
+				i(174445),	-- Glimmerfly Cocoon
+				i(182655),	-- Hill King's Roarbox
+			}),
+			tier(SL_TIER, 1.5, {
+				i(187958),	-- PH - Banner of the Opportune
+				i(187959),	-- PH - Banner of the Opportune
+				i(187861),	-- Magical Seeds
+			}),
+		}),
 	}),
 	n(PROFESSIONS, {
 		prof(ALCHEMY, {
@@ -3063,70 +1672,1158 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 		i(5657),	-- Recipe: Instant Toxin
 	}),
-	filter(TOYS, {
-		i(140779),	-- Falanaar Echo
-		i(136848),	-- Worn Doll Test
-		i(143545),	-- Fel Focusing Crystal
-		i(141300),	-- Magi Focusing Crystal
-		i(38568),	-- Drakkari Charm Bracelet
+	n(ARMOR, {
+		d(24, {	-- Timewalking
+			-- Possible TW Gear (not in journal)
+			i(150450),	-- Nether Shadow Tunic
+			i(150448),	-- Pauldrons of Abyssal Fury
+			i(150461),	-- Praetorian's Legguards
+			i(150465),	-- Myrmidon's Treads
+			i(150472),	-- Grips of Silent Justice
+			i(150449),	-- Wraps of Precise Flight
+			i(150457),	-- Bands of the Coming Storm
+			i(150502),	-- Touch of Inspiration
+			i(150458),	-- Choker of Endless Nightmares
+			i(150501),	-- Translucent Spellthread Necklace
+			i(150508),	-- Pendant of Titans
+			i(150515),	-- Nadina's Pendant of Purity
+			i(166405),	-- Blindside (TW Vendor?)
+			i(166364),	-- Song of the Fallen (TW Vendor?)
+			i(161118),	-- Marrow Shatter (TW Vendor/Tw drop?)
+		}),
 		i(134017),	-- Don Carlos' Famous Hat (testing version?)
-		i(38569),	-- Unknown
-		i(166851),	-- Kojo's Master Matching Set (PTR Only)
-		i(132132),	-- Glowing Runstone
-		i(157776),	-- Dire Missive
-		i(170484),	-- dnt torn journal page #14
-		i(170487),	-- dnt torn journal page #23
-		i(170488),	-- dnt torn journal page #7
-		i(129111),	-- Kvaldir Raiding Horn
-		i(130249),	-- Waywatcher's Boon
-		i(38570),	-- Unknown
-		i(119220),	-- Alliance Gladiator's Banner
-		i(119221),	-- Horde Gladiator's Banner
-		i(100902),	-- Unknown
-		i(100903),	-- Unknown
-		i(108638),	-- Unknown
-		i(108639),	-- Unknown
-		i(130867),	-- Tag Toy
-		i(122220),	-- Unknown
-		i(122225),	-- Unknown
-		i(122227),	-- Unknown
-		i(122230),	-- Unknown
-		i(122235),	-- Unknown
-		i(108640),	-- Unknown
-		i(166782),	-- Unknown
-		i(119179, {	-- Iron Star Roller
-			["timeline"] = { "created 6.0.1.18738" },
+		filter(CLOTH, {
+			-- Load in Game
+			-- Vanilla
+			i(1216),	-- Frost Bracers
+			i(4990),	-- Scorched Bands
+			i(18341),	-- Quel'dorei Sash
+			-- TBC
+			i(23433),	-- Blood Robes (Says added in cata wowhead)
+			i(23434),	-- Robes of the Shard (Says added in cata wowhead)
+			i(25793),	-- Curate's Footwraps (Says added in cata wowhead)
+			-- added 2.3.0
+			i(34107),	-- Tattered Shoulderpads (Says added in cata wowhead)
+			-- Cata
+			i(59797),	-- Abalone-Linked Robes
+			i(62988),	-- Sash of the Unhonored
+			i(66013),	-- Mantle of the Glorious Song
+			i(62640),	-- Fallback Armor - Cloth Waist
+			i(62641),	-- Fallback Armor - Cloth Feet
+			i(62642),	-- Fallback Armor - Cloth Chest
+			i(62643),	-- Fallback Armor - Cloth Hand
+			i(62644),	-- Fallback Armor - Cloth Head
+			i(62645),	-- Fallback Armor - Cloth Legs
+			i(62646),	-- Fallback Armor - Cloth Robe
+			i(62647),	-- Fallback Armor - Cloth Shoulder
+			i(62648),	-- Fallback Armor - Cloth Wrist
+			-- WoD
+			-- Quest set never used
+			i(114247),	-- Firefly Bracers
+			i(114254),	-- Firefly Robes
+			i(114255),	-- Firefly Sandals
+			i(114259),	-- Firefly Gloves
+			i(114263),	-- Firefly Hood
+			i(114267),	-- Firefly Trousers
+			i(114271),	-- Firefly Mantle
+			i(114275),	-- Firefly Cord
+			--
+			i(116001),	-- Cord of Skulls
+			-- Legion
+			i(138420),	-- Pilfered Ettin String
+			-- BFA
+			i(156753),	-- Turnabout Gloves
+			-- Quest Set
+			i(153389),	-- Galetorn Crown
+			i(153390),	-- Galetorn Gloves
+			i(153391),	-- Galetorn Sash
+			i(153392),	-- Galetorn Cuffs
+			i(153393),	-- Galetorn Slippers
+			i(153394),	-- Galetorn Robes
+			i(153395),	-- Galetorn Leggings
+			i(153396),	-- Galetorn Mantle
+			i(154960),	-- Loa-Shaper's Crown
+			i(154961),	-- Loa-Shaper's Gloves
+			i(154962),	-- Loa-Shaper's Cinch
+			i(154963),	-- Loa-Shaper's Cuffs
+			i(154964),	-- Loa-Shaper's Sandals
+			i(154965),	-- Loa-Shaper's Robe
+			i(154966),	-- Loa-Shaper's Kilt
+			i(154967),	-- Loa-Shaper's Mantle
+			i(158467),	-- Loa-Shaper's Cinch
+			i(158492),	-- Galetorn Crown
+			i(158493),	-- Galetorn Gloves
+			i(158494),	-- Galetorn Sash
+			i(158495),	-- Galetorn Cuffs
+			i(158496),	-- Galetorn Slippers
+			i(158497),	-- Galetorn Robes
+			i(158498),	-- Galetorn Leggings
+			i(158499),	-- Galetorn Mantle
+			i(158544),	-- Loa-Shaper's Crown
+			i(158545),	-- Loa-Shaper's Gloves
+			i(158546),	-- Loa-Shaper's Cinch
+			i(158547),	-- Loa-Shaper's Cuffs
+			i(158548),	-- Loa-Shaper's Sandals
+			i(158549),	-- Loa-Shaper's Robe
+			i(158550),	-- Loa-Shaper's Kilt
+			i(158551),	-- Loa-Shaper's Mantle
+			-- ItemID/Retrieving
+			-- Vanilla
+			i(4989),	-- Mage Dragon Robe (intended to be quest reward, never made it to live?)
+			i(6478),	-- Rat Stompers
+			i(12107),	-- Whispersilk Leggings
+			i(13080),	-- Widow's Clutch
+			-- TBC
+			i(26015),	-- Anchorite Neophyte's Cuffs (Says added in cata wowhead)
+			i(27720),	-- Robes of the Aldor (Says added in cata wowhead)<-- Maggy/Shattra
+			i(30287),	-- Mantle of Arcane Mastery (Says added in cata wowhead)
+			-- Wrath
+			i(37210),	-- Seafarer Cinch (removed in beta) <-- Borean Tundra
+			i(37225),	-- Sweltering Sandals (removed in beta) <-- Borean Tundra
+			i(37273),	-- Crimson Keeper Mitts <-- Borean Tundra
+			i(37296),	-- BT59 Cloth Spell Gloves4 (Says added in cata wowhead)
+			i(37295),	-- HF28 Cloth Spell Head4 (Says added in cata wowhead)
+			i(39364),	-- Hood of the Titan Defender (Says added in cata wowhead)
+			-- added 3.0.2
+			i(43878),	-- Mantle of Unholy Power (Says added in cata wowhead)
+			-- added 3.1.0
+			i(45629),	-- Shadoweave Belt (Says added in cata wowhead) <-- Proof
+			-- added 3.2.0
+			i(47103),	-- Rotting Handwraps (Says added in cata wowhead)
+			-- Cata
+			i(54542),	-- Robes of Restored Hope
+			i(54550),	-- Hood of Vigorous Defense
+			i(54977),	-- Revitalizing Sandals
+			i(57528),	-- Hogger's Mangy Handgrips <-- Ewlynn
+			i(60728),	-- Keeshan's Burlap Vest <-- Redridge
+			i(65746),	-- Leggings of Valorous Defense
+			-- WoD
+			i(104355),	-- Titan Rocket Boots
+			i(105710),	-- Lasso Bracers, Humanoid
+			i(105928),	-- Magic Bunny Hat
+			-- Testing gear
+			i(107866),	-- 7.0 PH Cloth Treads
+			i(107871),	-- 7.0 PH Cloth Gloves
+			i(107874),	-- 7.0 PH Cloth Hood
+			i(107878),	-- 7.0 PH Cloth Leggings
+			i(107881),	-- 7.0 PH Cloth Robe
+			i(107884),	-- 7.0 PH Cloth Mantle
+			i(107887),	-- 7.0 PH Cloth Cord
+			i(107890),	-- 7.0 PH Cloth Wristwraps
+			-- Testing gear added 6.0.1 all are quest items also
+			i(109272),	-- 7.0 QA Combat Test Caster Belt 1
+			i(109278),	-- 7.0 QA Combat Test Caster Robes 1
+			i(109290),	-- 7.0 QA Combat Test Caster Shoulders 1
+			i(109296),	-- 7.0 QA Combat Test Caster Belt 2
+			i(109297),	-- 7.0 QA Combat Test Caster Gloves 1
+			i(109298),	-- 7.0 QA Combat Test Caster Helm 1
+			i(109299),	-- 7.0 QA Combat Test Caster Legs 1
+			i(109302),	-- 7.0 QA Combat Test Caster Robes 2
+			i(109303),	-- 7.0 QA Combat Test Caster Shoulders 2
+			i(109339),	-- 7.0 QA Combat Test Caster Belt 3
+			i(109340),	-- 7.0 QA Combat Test Caster Gloves 2
+			i(109341),	-- 7.0 QA Combat Test Caster Helm 2
+			i(109342),	-- 7.0 QA Combat Test Caster Legs 2
+			i(109343),	-- 7.0 QA Combat Test Caster Robes 3
+			i(109344),	-- 7.0 QA Combat Test Caster Shoulders 3
+			i(109363),	-- 7.0 QA Combat Test Caster Gloves 3
+			i(109379),	-- 7.0 QA Combat Test Caster Boots
+			i(109398),	-- 7.0 QA Combat Test Caster Bracer 1
+			i(109405),	-- 7.0 QA Combat Test Caster Helm 3
+			i(109411),	-- 7.0 QA Combat Test Caster Legs 3
+			i(109419),	-- 7.0 QA Combat Test Caster Legs 4
+			i(109423),	-- 7.0 QA Combat Test Caster Robes 4
+			i(109437),	-- 7.0 QA Combat Test Caster Helm 4
+			i(109451),	-- 7.0 QA Combat Test Caster Boots 2
+			i(109463),	-- 7.0 QA Combat Test Caster Bracer 2
+			i(109473),	-- 7.0 QA Combat Test Caster Shoulders 4
+			i(109477),	-- 7.0 QA Combat Test Caster Belt 4
+			i(109521),	-- 7.0 QA Combat Test Caster Gloves 4
+			i(109540),	-- 7.0 QA Combat Test Caster Boots 3
+			i(109542),	-- 7.0 QA Combat Test Caster Bracer 3
+			i(109546),	-- 7.0 QA Combat Test Caster Bracer 4
+			--
+			i(120318),	-- Sol-Shaper's Sandals
+			-- BFA
+			i(159170),	-- Freehold Handwraps
+			i(159183),	-- Foxhollow Cord
+			i(159190),	-- Foxhollow Bracelets
+			i(159216),	-- Sagehold Sash
+			i(159221),	-- Sagehold Slippers
+			i(154866),	-- Heartsbane Cord
+			i(154867),	-- Heartsbane Crown
+			i(154868),	-- Heartsbane Gloves
+			i(154869),	-- Heartsbane Leggings
+			i(154870),	-- Heartsbane Robes
+			i(154871),	-- Heartsbane Sandals
+			i(154873),	-- Heartsbane Cuffs
+			-- Testing 8.2.0
+			i(167111),	-- QA Combat Test Caster Belt 1
+			i(167112),	-- QA Combat Test Caster Robes 1
+			i(167113),	-- QA Combat Test Caster Shoulders 1
+			i(167114),	-- QA Combat Test Caster Gloves 1
+			i(167115),	-- QA Combat Test Caster Helm 1
+			i(167116),	-- QA Combat Test Caster Legs 1
+			i(167117),	-- QA Combat Test Caster Boots
+			i(167118),	-- QA Combat Test Caster Bracer 1
+			-- Legion
+			i(153289),	-- Eredar Priestess' Tunic
 		}),
-		i(164371, {	-- Yaungol Oil Stove
-			["timeline"] = { "created 8.0.1.26871" },
+		filter(LEATHER, {
+			cl(ROGUE, {
+				i(7950),	-- Armor of Thero-Shan
+				i(7948),	-- Girdle of Thero-Shan
+				i(7952),	-- Boots of Thero-Shan
+				i(7951),	-- Hands of Thero-Shan
+				i(7953),	-- Mask of Thero-Shan
+				i(7949),	-- Leggings of Thero-Shan
+				-- Cata
+				i(54692),	-- Armor of Thero-Shan
+				-- Legion
+				-- Transmog set item that never became available
+				i(130327),	-- Artful Britches
+			}),
+			cl(MONK, {
+			}),
+			-- Load in Game
+			--TBC
+			i(25795),	-- Gloves of Preservation (not added version)(Says added in cata wowhead) <-- Shattered Halls
+			i(25796),	-- Lurking Shadow Spaulders (only beta) (Says added in cata wowhead)<-- Shattered Halls
+			-- Wrath
+			i(37176),	-- Cavern Leather Treads (Says added in cata wowhead)
+			i(37316),	-- HF28 Leather Physical Legs4  (Says added in cata wowhead)
+			-- Cata
+			i(56701),	-- Jinxed Vest (never made it to live)
+			i(59796),	-- Treads of Decapod Death <-- Vashir
+			i(63012),	-- Skull Kickers
+			-- WoD
+			i(107660),	-- Battle Aged Leather Pauldrons (didnt make it out of beta)
+			-- Quest Set
+			i(114248),	-- Bloodthorn Bracers
+			i(114251),	-- Bloodthorn Chestguard
+			i(114256),	-- Bloodthorn Boots
+			i(114260),	-- Bloodthorn Gauntlets
+			i(114264),	-- Bloodthorn Hood
+			i(114268),	-- Bloodthorn Legguards
+			i(114272),	-- Bloodthorn Spaulders
+			i(114276),	-- Bloodthorn Belt
+			-- Legion
+			i(129127),	-- Ebon Stalker's Boots
+			-- BFA
+			i(156751),	-- Nightbinder Grips
+			i(166786),	-- Disenchant Test Item
+			-- Test Set
+			i(166239),	-- Testus Maximus Breastplate
+			-- Quest Sets
+			i(153373),	-- Sea-Treated Armbands
+			i(153374),	-- Sea-Treated Grips
+			i(153375),	-- Sea-Treated Belt
+			i(153376),	-- Sea-Treated Boots
+			i(153377),	-- Sea-Treated Vest
+			i(153378),	-- Sea-Treated Mask
+			i(153379),	-- Sea-Treated Shoulderguards
+			i(153380),	-- Sea-Treated Trousers
+			i(154944),	-- Dinohide Armbands
+			i(154945),	-- Dinohide Grips
+			i(154946),	-- Dinohide Belt
+			i(154947),	-- Dinohide Boots
+			i(154948),	-- Dinohide Vest
+			i(154949),	-- Dinohide Mask
+			i(154950),	-- Dinohide Shoulderguards
+			i(154951),	-- Dinohide Trousers
+			i(158476),	-- Sea-Treated Armbands
+			i(158477),	-- Sea-Treated Grips
+			i(158478),	-- Sea-Treated Belt
+			i(158479),	-- Sea-Treated Boots
+			i(158480),	-- Sea-Treated Vest
+			i(158481),	-- Sea-Treated Mask
+			i(158482),	-- Sea-Treated Shoulderguards
+			i(158483),	-- Sea-Treated Trousers
+			i(158528),	-- Dinohide Armbands
+			i(158529),	-- Dinohide Grips
+			i(158530),	-- Dinohide Belt
+			i(158531),	-- Dinohide Boots
+			i(158532),	-- Dinohide Vest
+			i(158533),	-- Dinohide Mask
+			i(158534),	-- Dinohide Shoulderguards
+			i(158535),	-- Dinohide Trousers
+			-- ItemID/Retrieving
+			-- Vanilla
+			i(5821),	-- Darkstalker Boots
+			i(12104),	-- Brindlethorn Tunic
+			i(14550),	-- Bladebane Armguards
+			i(20524),	-- Shadowhide Leggings
+			i(21613),	-- Wormhide Boots (Says added in cata wowhead)
+			i(21614),	-- Wormhide Protector (Says added in cata wowhead)
+			-- TBC
+			i(19986),	-- Pirate's Eye Patch
+			i(22273),	-- Moonshadow Hood (Says added in cata wowhead)
+			i(26029),	-- Watchman's Bracers
+			i(27719),	-- Aldor Leggings of Puissance (never made it to live)(Says added in cata wowhead)
+			i(28145),	-- Tranquillien Wraps (Says added in cata wowhead)
+			i(30288),	-- Cenarion Warden's Gloves (Says added in cata wowhead)
+			-- Wrath
+			i(37385),	-- Seared Harness
+			i(37386),	-- Ruby Heart Spaulders
+			i(37400),	-- Whalehunter Cuffs
+			i(38525),	-- Jailor's Padded Cover (Says added in cata wowhead)
+			i(39410),	-- Gauntlets of Rampant Destruction (Says added in cata wowhead)
+			i(39707),	-- Verdant Tundra Cap
+			i(41757),	-- Vest of Unyielding Companionship (was in Wrath beta)
+			i(42875),	-- Worg-Hide Pants (Says added in cata wowhead)
+			i(43895),	-- Leggings of Silent Echoes (Says added in cata wowhead)
+			-- Cata
+			i(54543),	-- Orca-Tooth Treads
+			i(54649),	-- Cow King's Hide
+			i(54650),	-- Forest's Embrace
+			i(54652),	-- Righteous Armor
+			i(54655),	-- Stormshroud Armor (Leather) (prof
+			i(54658),	-- Lionfur Armor
+			i(54665),	-- Maatparm's Fungus Lined Vest
+			i(54666),	-- Ceremonial Leather Harness
+			i(54667),	-- Vest of the Dragon Slayer
+			i(54668),	-- Murloc Scale Breastplate
+			i(54670),	-- Hillman's Leather Vest
+			i(54671),	-- Starsight Tunic
+			i(54673),	-- Barkshell Tunic
+			i(54674),	-- Gloomshroud Armor
+			i(54677),	-- Raptorbane Armor
+			i(54680),	-- Raptor Hide Harness
+			i(54681),	-- Thick Murloc Armor
+			i(54683),	-- Dusky Leather Armor (Prof)
+			i(54684),	-- Guardian Armor (Prof)
+			i(54685),	-- Archer's Jerkin
+			i(54686),	-- Barbaric Harness
+			i(54687),	-- Sentinel Breastplate
+			i(54689),	-- Marshwarden's Tunic
+			i(54691),	-- Nightscape Tunic(Prof)
+			i(54694),	-- Wolf Rider's Padded Armor
+			i(54695),	-- Surveyor's Tunic
+			i(54696),	-- Scorpashi Breastplate
+			i(54698),	-- Ceremonial Leather Loincloth
+			i(54703),	-- Bogwalker Boots
+			i(54708),	-- Ceremonial Leather Gloves
+			i(54707),	-- Researcher's Gloves
+			i(54711),	-- Wendigo Collar
+			i(54716),	-- Juicy Bracers
+			i(54723),	-- Living Leggings
+			i(54724),	-- Shadowcraft Bracers
+			i(54725),	-- Shadowcraft Gloves
+			i(54726),	-- Clouddrift Mantle
+			i(54727),	-- Traveler's Boots
+			i(54731),	-- not used
+			i(59790),	-- Gnash-Crusher Helm
+			-- Art Templates
+			i(62697),	-- Art Template Leather Belt - Leather_Cataclysm_B_01 - Brown
+			i(62698),	-- Art Template Leather Boot - Leather_Cataclysm_B_01 - Brown
+			i(62699),	-- Art Template Leather Chest - Leather_Cataclysm_B_01 - Brown
+			i(62700),	-- Art Template Leather Hand - Leather_Cataclysm_B_01 - Brown
+			i(62701),	-- Art Template Leather Head - Leather_Cataclysm_B_01 - Brown
+			i(62702),	-- Art Template Leather Legs - Leather_Cataclysm_B_01 - Brown
+			i(62703),	-- Art Template Leather Shoulder - Leather_Cataclysm_B_01 - Brown
+			i(62704),	-- Art Template Leather Wrist - Leather_Cataclysm_B_01 - Brown
+			-- WoD
+			i(107203),	-- Lasso Bracers, Powerup
+			-- added 6.0.3
+			i(107337),	-- Practice Power Bracers
+			-- Testing Gear
+			i(107864),	-- 7.0 PH Leather Vest
+			i(107868),	-- 7.0 PH Leather Boots
+			i(107869),	-- 7.0 PH Leather Gloves
+			i(107876),	-- 7.0 PH Leather Helm
+			i(107880),	-- 7.0 PH Leather Breeches
+			i(107882),	-- 7.0 PH Leather Spaulders
+			i(107889),	-- 7.0 PH Leather Belt
+			i(107893),	-- 7.0 PH Leather Wristwraps
+			-- Testing Gear (Quest item?)
+			i(109264),	-- 6.0 QA Combat Test Leather Bracer
+			i(109276),	-- 6.0 QA Combat Test Leather Legs
+			i(109287),	-- 6.0 QA Combat Test Leather Helm 2
+			i(109294),	-- 6.0 QA Combat Test Leather Belt
+			i(109305),	-- 6.0 QA Combat Test Leather Gloves
+			i(109306),	-- 6.0 QA Combat Test Leather Helm 3
+			i(109307),	-- 6.0 QA Combat Test Leather Legs 2
+			i(109308),	-- 6.0 QA Combat Test Leather Shoulders
+			i(109345),	-- 6.0 QA Combat Test Leather Chest
+			i(109346),	-- 6.0 QA Combat Test Leather Gloves
+			i(109347),	-- 6.0 QA Combat Test Leather Helm 4
+			i(109348),	-- 6.0 QA Combat Test Leather Legs 3
+			i(109349),	-- 6.0 QA Combat Test Leather Shoulders 2
+			i(109358),	-- 6.0 QA Combat Test Leather Belt 2
+			i(109366),	-- 6.0 QA Combat Test Leather Gloves 2
+			i(109375),	-- 6.0 QA Combat Test Leather Helm
+			i(109388),	-- 6.0 QA Combat Test Leather Robes
+			i(109400),	-- 6.0 QA Combat Test Leather Chest 2
+			i(109414),	-- 6.0 QA Combat Test Leather Boots
+			i(109415),	-- 6.0 QA Combat Test Leather Bracer 2
+			i(109428),	-- 6.0 QA Combat Test Leather Belt 3
+			i(109432),	-- 6.0 QA Combat Test Leather Shoulders 3
+			i(109440),	-- 6.0 QA Combat Test Leather Chest 3
+			i(109444),	-- 6.0 QA Combat Test Leather Belt 4
+			i(109469),	-- 6.0 QA Combat Test Leather Boots 3
+			i(109475),	-- 6.0 QA Combat Test Leather Legs 4
+			i(109479),	-- 6.0 QA Combat Test Leather Bracer 3
+			i(109486),	-- 6.0 QA Combat Test Leather Shoulders 4
+			i(109493),	-- 6.0 QA Combat Test Leather Gloves 2
+			i(109513),	-- 6.0 QA Combat Test Leather Boots 2
+			i(109547),	-- 6.0 QA Combat Test Leather Bracer 4
+			-- Testing Gear
+			i(120363),	-- 7.0 QA Combat Test Leather Boots 4
+			-- Legion
+			i(129046),	-- 7.0 PH Leather Helm
+			-- BFA
+			i(154849),	-- Crimsonwood Bracers
+			i(154852),	-- Crimsonwood Gloves
+			i(154856),	-- Crimsonwood Belt
+			i(159201),	-- Briarback Treads
+			i(159203),	-- Briarback Gloves
+			-- Tiragarde Sound BoE Set
+			i(159175),	-- Mistfall Belt
+			i(159176),	-- Mistfall Bracers
+			i(159177),	-- Mistfall Gloves
+			i(159178),	-- Mistfall Boots
+			i(159180),	-- Mistfall Legguards
+			i(159181),	-- Mistfall Spaulders
+			i(159182),	-- Mistfall Chainmail
+			-- ??(They are leather even tho name is cloth)
+			i(165253),	-- Fallback Armor - Cloth Waist
+			i(165254),	-- Fallback Armor - Cloth Feet
+			i(165255),	-- Fallback Armor - Cloth Chest
+			i(165256),	-- Fallback Armor - Cloth Hand
+			i(165257),	-- Fallback Armor - Cloth Head
+			i(165258),	-- Fallback Armor - Cloth Legs
+			i(165259),	-- Fallback Armor - Cloth Shoulder
+			i(165260),	-- Fallback Armor - Cloth Wrist
+			-- Testing Set
+			i(167103),	-- QA Combat Test Leather Bracer
+			i(167104),	-- QA Combat Test Leather Legs
+			i(167105),	-- QA Combat Test Leather Belt
+			i(167106),	-- QA Combat Test Leather Gloves 1
+			i(167107),	-- QA Combat Test Leather Shoulders
+			i(167108),	-- QA Combat Test Leather Chest
+			i(167109),	-- QA Combat Test Leather Helm
+			i(167110),	-- QA Combat Test Leather Boots
+			-- SL
+			i(178148),	-- 9.0 Dungeon - PH Item
+			i(178305),	-- unused
 		}),
-		i(164372, {	-- Jinyu Light Globe
-			["timeline"] = { "created 8.0.1.26871" },
+		filter(MAIL, {
+			-- Load in GAME
+			-- Vanilla
+			i(18320),	-- Demonheart Spaulders
+			i(18304),	-- Greenroot Mail (never added to live)
+			-- TBC
+			i(25794),	-- Bone Studded Girdle (not out of beta)
+			-- Wrath
+			i(37454),	-- HF28 Mail Physical Chest4
+			-- Cata
+			i(63002),	-- Bat Claw Boots
+			-- Quest sets?
+			i(114249),	-- Leafscale Bracers
+			i(114252),	-- Leafscale Chestguard
+			i(114257),	-- Leafscale Boots
+			i(114261),	-- Leafscale Gauntlets
+			i(114265),	-- Leafscale Helm
+			i(114269),	-- Leafscale Legguards
+			i(114273),	-- Leafscale Spaulders
+			i(114277),	-- Leafscale Belt
+			-- Legion
+			i(129152),	-- Boulderfall Stompers
+			-- BFA
+			i(156754),	-- Throatcrusher Grips
+			-- Questsets?
+			i(153381),	-- Aiguille-Scaler's Wristguards
+			i(153382),	-- Aiguille-Scaler's Gloves
+			i(153383),	-- Aiguille-Scaler's Leggings
+			i(153384),	-- Aiguille-Scaler's Coif
+			i(153385),	-- Aiguille-Scaler's Boots
+			i(153386),	-- Aiguille-Scaler's Girdle
+			i(153387),	-- Aiguille-Scaler's Chestguard
+			i(153388),	-- Aiguille-Scaler's Spaulders
+			i(154952),	-- Saurscale Wristguards
+			i(154953),	-- Saurscale Gloves
+			i(154954),	-- Saurscale Leggings
+			i(154955),	-- Saurscale Coif
+			i(154956),	-- Saurscale Boots
+			i(154957),	-- Saurscale Girdle
+			i(154958),	-- Saurscale Chestguard
+			i(154959),	-- Saurscale Spaulders
+			i(158484),	-- Aiguille-Scaler's Wristguards
+			i(158485),	-- Aiguille-Scaler's Gloves
+			i(158486),	-- Aiguille-Scaler's Leggings
+			i(158487),	-- Aiguille-Scaler's Coif
+			i(158488),	-- Aiguille-Scaler's Boots
+			i(158489),	-- Aiguille-Scaler's Girdle
+			i(158490),	-- Aiguille-Scaler's Chestguard
+			i(158491),	-- Aiguille-Scaler's Spaulders
+			i(158536),	-- Saurscale Wristguards
+			i(158537),	-- Saurscale Gloves
+			i(158538),	-- Saurscale Leggings
+			i(158539),	-- Saurscale Coif
+			i(158540),	-- Saurscale Boots
+			i(158541),	-- Saurscale Girdle
+			i(158542),	-- Saurscale Chestguard
+			i(158543),	-- Saurscale Spaulders
+			-- ItemID/Retrieving
+			-- Vanilla
+			i(12105),	-- Pridemail Leggings
+			i(13090),	-- Breastplate of the Chosen
+			i(12615),	-- Savage Mail Tunic (never added to live)
+			i(12616),	-- Savage Boots (never added to live)
+			i(12617),	-- Savage Pauldrons (never added to live)
+			i(21584),	-- Bracers of Eternal Reckoning (never added to live)(Says added in cata wowhead)
+			i(21588),	-- Wristguards of Elemental Fury (never added to live)
+			i(21612),	-- Wormscale Stompers (never added to live)(Says added in cata wowhead)
+			-- TBC
+			i(30289),	-- Cenarion Warden's Belt (Says added in cata wowhead)
+			i(38387),	-- Grizzled Hat
+			i(38388),	-- Cap of the North
+			i(38389),	-- Comfy Raccoonskin Hat
+			i(38390),	-- The Rugged Marksman
+			-- Wrath
+			i(37420),	-- Sharkproof Boots
+			i(38527),	-- Onslaught Scalemail Hauberk (Says added in cata wowhead)
+			i(39440),	-- Greaves of the Titan Protectorate (Says added in cata wowhead)
+			i(41758),	-- Blood-Bond Helm
+			i(42886),	-- Gloves of the Howling Peaks
+			i(43460),	-- Giantmaim Girdle
+			i(43936),	-- Battlesurgeon's Gauntlets
+			i(54549),	-- Saline-Soaked Spaulders
+			i(43475),	-- Grips of the Chilling Revenant (Says added in cata wowhead)
+			i(37433),	-- Layered Scale Boots
+			i(37444),	-- Wavekeeper's Helm (Says added in cata wowhead)
+			-- Cata
+			i(56493),	-- Razorshell Boots
+			i(56496),	-- Windbound Belt
+			i(56500),	-- Windbound Shoulders
+			i(56501),	-- Razorshell Belt
+			i(56506),	-- Windbound Leggings
+			i(56510),	-- Windbound Chest
+			i(54551),	-- Defiant Bracers
+			i(56492),	-- Windbound Boots
+			i(56485),	-- Windbound Bracers
+			i(56486),	-- Windbound Gloves
+			i(56487),	-- Razorshell Bracers
+			i(56488),	-- Razorshell Shoulders
+			i(56507),	-- Razorshell Helm
+			i(56514),	-- Windbound Helm
+			i(59789),	-- Sea-Snack Footguards
+			i(65744),	-- Nimble Command Shoulderguards
+			-- Art Template
+			i(62715),	-- Art Template Mail Belt - Mail_Cataclysm_B_01 - Blue
+			i(62716),	-- Art Template Mail Boot - Mail_Cataclysm_B_01 - Blue
+			i(62717),	-- Art Template Mail Chest - Mail_Cataclysm_B_01 - Blue
+			i(62718),	-- Art Template Mail Hand - Mail_Cataclysm_B_01 - Blue
+			i(62719),	-- Art Template Mail Head - Mail_Cataclysm_B_01 - Blue
+			i(62720),	-- Art Template Mail Legs - Mail_Cataclysm_B_01 - Blue
+			i(62721),	-- Art Template Mail Shoulder - Mail_Cataclysm_B_01 - Blue
+			i(62722),	-- Art Template Mail Wrist - Mail_Cataclysm_B_01 - Blue
+			-- WoD
+			-- Testning Gear
+			i(107863),	-- 7.0 PH Mail Vest
+			i(107867),	-- 7.0 PH Mail Sabatons
+			i(107872),	-- 7.0 PH Mail Gauntlets
+			i(107875),	-- 7.0 PH Mail Helm
+			i(107879),	-- 7.0 PH Mail Leggings
+			i(107885),	-- 7.0 PH Mail Monnion
+			i(107888),	-- 7.0 PH Mail Belt
+			i(107892),	-- 7.0 PH Mail Wristwraps
+			i(109265),	-- 7.0 QA Combat Test Mail Helm
+			i(109270),	-- 7.0 QA Combat Test Mail Legs 1
+			i(109280),	-- 7.0 QA Combat Test Mail Bracer 1
+			i(109313),	-- 7.0 QA Combat Test Mail Belt 1
+			i(109314),	-- 7.0 QA Combat Test Mail Chest 1
+			i(109315),	-- 7.0 QA Combat Test Mail Gloves 1
+			i(109316),	-- 7.0 QA Combat Test Mail Helm 2
+			i(109317),	-- 7.0 QA Combat Test Mail Legs 2
+			i(109318),	-- 7.0 QA Combat Test Mail Shoulders 1
+			i(109350),	-- 7.0 QA Combat Test Mail Chest 2
+			i(109351),	-- 7.0 QA Combat Test Mail Gloves 2
+			i(109352),	-- 7.0 QA Combat Test Mail Helm 3
+			i(109353),	-- 7.0 QA Combat Test Mail Legs 3
+			i(109354),	-- 7.0 QA Combat Test Mail Shoulders 2
+			i(109359),	-- 7.0 QA Combat Test Mail Belt 2
+			i(109371),	-- 7.0 QA Combat Test Mail Bracer 2
+			i(109382),	-- 7.0 QA Combat Test Mail Helm 4
+			i(109393),	-- 7.0 QA Combat Test Mail Boots 1
+			i(109396),	-- 7.0 QA Combat Test Mail Boots 2
+			i(109416),	-- 7.0 QA Combat Test Mail Belt 3
+			i(109425),	-- 7.0 QA Combat Test Mail Shoulders 3
+			i(109433),	-- 7.0 QA Combat Test Mail Boots 3
+			i(109441),	-- 7.0 QA Combat Test Mail Legs 4
+			i(109457),	-- 7.0 QA Combat Test Mail Gloves 3
+			i(109484),	-- 7.0 QA Combat Test Mail Shoulders 4
+			i(109488),	-- 7.0 QA Combat Test Mail Belt 4
+			i(109504),	-- 7.0 QA Combat Test Mail Gloves 4
+			i(109510),	-- 7.0 QA Combat Test Mail Chest 3
+			i(109517),	-- 6.0 QA Combat Test Mail Chest 4
+			i(109541),	-- 7.0 QA Combat Test Mail Boots 4
+			i(109543),	-- 7.0 QA Combat Test Mail Bracer 3
+			i(109548),	-- 7.0 QA Combat Test Mail Bracer 4
+			-- Legion
+			i(140011),	-- Duskwatch Adjudicator's Pauldrons
+			-- Bfa
+			i(152745),	-- REUSE ME
+			i(154861),	-- Barrowknoll Boots
+			i(159208),	-- Eventide Cinch
+			i(159210),	-- Eventide Gloves
+			i(159213),	-- Eventide Leggings
+			-- 8.2.0
+			i(167119),	-- QA Combat Test Mail Helm
+			i(167120),	-- QA Combat Test Mail Legs 1
+			i(167121),	-- QA Combat Test Mail Bracer 1
+			i(167122),	-- QA Combat Test Mail Belt 1
+			i(167123),	-- QA Combat Test Mail Chest 1
+			i(167124),	-- QA Combat Test Mail Gloves 1
+			i(167125),	-- QA Combat Test Mail Shoulders 1
+			i(167126),	-- QA Combat Test Mail Boots 1
+			-- SL
+			i(178304),	-- unused
+			--
+			i(68844),	-- Unknown
 		}),
-		i(164377, {	-- Regenerating Banana Bunch
-			["timeline"] = { "created 8.0.1.26871" },
+		filter(PLATE, {
+			-- Load In Game
+			-- TBC
+			i(25797),	-- Crushing Grasp Says (added in cata wowhead)
+			i(26041),	-- Vigilant Vambraces (added in cata wowhead)
+			i(27965),	-- TEST 130 Epic Paladin DPS Chest
+			i(29237),	-- Warpath Bracers Says (added in cata wowhead)
+			-- Ramparts?
+			i(24137),	-- PH Plate Ramparts Reward (Says added in cata wowhead)
+			-- Wrath
+			i(37175),	-- Glassy Silver Bracers (Says added in cata wowhead)
+			i(37468),	-- HF28 Plate Physical Boots Says added in cata wowhead)
+			i(38524),	-- Carapace of the Scarlet Commander (Says added in cata wowhead)
+			-- Cata
+			i(49450),	-- Defusing Cinch
+			i(59795),	-- Harp Shell Shoulderplates
+			-- Mop
+			-- Recolors added in mop of ICC gear
+			i(81709),	-- Belt of Broken Bones
+			i(81710),	-- Grinning Skull Greatboots
+			-- Questing Set
+			i(114250),	-- Ruby Plate Bracers
+			i(114253),	-- Ruby Plate Breastplate
+			i(114258),	-- Ruby Plate Greaves
+			i(114262),	-- Ruby Plate Gauntlets
+			i(114266),	-- Ruby Plate Greathelm
+			i(114270),	-- Ruby Plate Legplates
+			i(114274),	-- Ruby Plate Shoulderguard
+			i(114278),	-- Ruby Plate Girdle
+			-- BFA
+			i(156752),	-- Skullbreaker Gauntlets
+			-- Test Gear
+			i(160673),	-- Primus Breastplate
+			i(160674),	-- Secondus Breastplate
+			i(160675),	-- Tertius Breastplate
+			i(160676),	-- Quartius Breastplate
+			i(160677),	-- Pentius Breastplate
+			-- Questing Set
+			i(153365),	-- Dead-Watcher Greaves
+			i(153366),	-- Dead-Watcher Helmet
+			i(153367),	-- Dead-Watcher Breastplate
+			i(153368),	-- Dead-Watcher Waistplate
+			i(153369),	-- Dead-Watcher Pauldrons
+			i(153370),	-- Dead-Watcher Gauntlets
+			i(153371),	-- Dead-Watcher Vambraces
+			i(153372),	-- Dead-Watcher Sabatons
+			i(154936),	-- Dead-Watcher Greaves
+			i(154937),	-- Dead-Watcher Helmet
+			i(154938),	-- Dead-Watcher Breastplate
+			i(154939),	-- Dead-Watcher Waistplate
+			i(154940),	-- Dead-Watcher Pauldrons
+			i(154941),	-- Dead-Watcher Gauntlets
+			i(154942),	-- Dead-Watcher Vambraces
+			i(154943),	-- Dead-Watcher Sabatons
+			i(158468),	-- Dead-Watcher Greaves
+			i(158469),	-- Dead-Watcher Helmet
+			i(158470),	-- Dead-Watcher Breastplate
+			i(158471),	-- Dead-Watcher Waistplate
+			i(158472),	-- Dead-Watcher Pauldrons
+			i(158473),	-- Dead-Watcher Gauntlets
+			i(158474),	-- Dead-Watcher Vambraces
+			i(158475),	-- Dead-Watcher Sabatons
+			i(158520),	-- Dead-Watcher Greaves
+			i(158521),	-- Dead-Watcher Helmet
+			i(158522),	-- Dead-Watcher Breastplate
+			i(158523),	-- Dead-Watcher Waistplate
+			i(158524),	-- Dead-Watcher Pauldrons
+			i(158525),	-- Dead-Watcher Gauntlets
+			i(158526),	-- Dead-Watcher Vambraces
+			i(158527),	-- Dead-Watcher Sabatons
+			-- SL
+			i(170051),	-- Lost Pauldron of Might
+			i(170052),	-- Lost Helm of Might
+			-- ItemID/Retrieving
+			-- Vanilla
+			i(5822),	-- Hedgeseed Gauntlets
+			i(12106),	-- Boulderskin Breastplate
+			i(21587),	-- Wristguards of Castigation (added in cata wowhead)
+			-- TBC
+			i(27718),	-- Aldor Defender's Legplates (Says added in cata wowhead)
+			-- Wrath
+			i(37477),	-- Lost Crusader Chestplate (Says added in cata wowhead)
+			i(37485),	-- Clam Collector Gauntlets
+			i(37510),	-- Wristguards of Edification
+			i(37511),	-- Crucible Waistguard
+			i(38524),	-- Carapace of the Scarlet Commander (Says added in cata wowhead)
+			i(39460),	-- Sabatons of the Rampaging Construct (Says added in cata wowhead)
+			i(41759),	-- Shackles of Perpetual Friendship
+			i(42885),	-- Mountaineer's Helm (Says added in cata wowhead)
+			i(43848),	-- Bracers of Icy Resolve (Says added in cata wowhead)
+			i(43938),	-- Belt of Rising Hope
+			-- Cata
+			i(47091),	-- Unfaltering Armguards (4.0)
+			i(54544),	-- Scrapped Spaulders
+			i(54552),	-- Retaliation Gauntlets
+			i(54751),	-- Silverscale Chestguard
+			i(59768),	-- Bracers of Burbling Freedom
+			i(59772),	-- Bracers of Burbling Freedom (Yes, Same name)
+			i(63054),	-- Fallback Armor - Plate Waist
+			i(63055),	-- Fallback Armor - Plate Feet
+			i(63056),	-- Fallback Armor - Plate Chest
+			i(63057),	-- Fallback Armor - Plate Hand
+			i(63058),	-- Fallback Armor - Plate Head
+			i(63059),	-- Fallback Armor - Plate Legs
+			i(63060),	-- Fallback Armor - Plate Shoulder
+			i(63061),	-- Fallback Armor - Plate Wrist
+			i(65743),	-- Helm of Vicious Direction
+			-- WoD
+			-- Testing Gear
+			i(107862),	-- 7.0 PH Plate Chestplate
+			i(107865),	-- 7.0 PH Plate Warboots
+			i(107870),	-- 7.0 PH Plate Gauntlets
+			i(107873),	-- 7.0 PH Plate Helm
+			i(107877),	-- 7.0 PH Plate Legguards
+			i(107883),	-- 7.0 PH Plate Shoulders
+			i(107886),	-- 7.0 PH Plate Girdle
+			i(107891),	-- 7.0 PH Plate Wristwraps
+			-- Draenic Set (Quest items?)
+			i(107985),	-- Draenic Steel Warboots
+			i(107986),	-- Draenic Steel Gauntlets
+			i(107987),	-- Draenic Steel Helm
+			i(107988),	-- Draenic Steel Legguards
+			i(107989),	-- Draenic Steel Shoulders
+			i(107990),	-- Draenic Steel Girdle
+			i(107991),	-- Draenic Steel Wristwraps
+			i(107992),	-- Draenic Steel Chestplate
+			i(107993),	-- Draenic Steel Warboots
+			i(107994),	-- Draenic Steel Gauntlets
+			i(107995),	-- Draenic Steel Helm
+			i(107996),	-- Draenic Steel Legguards
+			i(107997),	-- Draenic Steel Shoulders
+			i(107998),	-- Draenic Steel Girdle
+			i(107999),	-- Draenic Steel Wristwraps
+			i(108000),	-- Draenic Steel Chestplate
+			i(108001),	-- Draenic Steel Warboots
+			i(108002),	-- Draenic Steel Gauntlets
+			i(108003),	-- Draenic Steel Helm
+			i(108004),	-- Draenic Steel Legguards
+			i(108005),	-- Draenic Steel Shoulders
+			i(108006),	-- Draenic Steel Girdle
+			i(108007),	-- Draenic Steel Wristwraps
+			i(108008),	-- Draenic Steel Chestplate
+			i(108009),	-- Draenic Steel Warboots
+			i(108010),	-- Draenic Steel Gauntlets
+			i(108011),	-- Draenic Steel Helm
+			i(108012),	-- Draenic Steel Legguards
+			i(108013),	-- Draenic Steel Shoulders
+			i(108014),	-- Draenic Steel Girdle
+			i(108015),	-- Draenic Steel Wristwraps
+			i(108016),	-- Draenic Steel Chestplate
+			i(108017),	-- Draenic Steel Warboots
+			i(108018),	-- Draenic Steel Gauntlets
+			i(108019),	-- Draenic Steel Helm
+			i(108020),	-- Draenic Steel Legguards
+			i(108021),	-- Draenic Steel Shoulders
+			i(108022),	-- Draenic Steel Girdle
+			i(108023),	-- Draenic Steel Wristwraps
+			i(108024),	-- Draenic Steel Chestplate
+			i(108025),	-- Draenic Steel Warboots
+			i(108026),	-- Draenic Steel Gauntlets
+			i(108027),	-- Draenic Steel Helm
+			i(108028),	-- Draenic Steel Legguards
+			i(108029),	-- Draenic Steel Shoulders
+			i(108030),	-- Draenic Steel Girdle
+			i(108031),	-- Draenic Steel Wristwraps
+			i(108032),	-- Draenic Steel Chestplate
+			i(108033),	-- Draenic Steel Warboots
+			i(108034),	-- Draenic Steel Gauntlets
+			i(108035),	-- Draenic Steel Helm
+			i(108036),	-- Draenic Steel Legguards
+			i(108037),	-- Draenic Steel Shoulders
+			i(108038),	-- Draenic Steel Girdle
+			i(108039),	-- Draenic Steel Wristwraps
+			-- Testing Gear
+			i(109268),	-- 7.0 QA Combat Test Plate Bracer 1
+			i(109275),	-- 7.0 QA Combat Test Plate Chest 1
+			i(109284),	-- 7.0 QA Combat Test Plate Shoulders 1
+			i(109289),	-- 7.0 QA Combat Test Plate Gloves 1
+			i(109321),	-- 7.0 QA Combat Test Plate Belt 1
+			i(109322),	-- 7.0 QA Combat Test Plate Chest 2
+			i(109323),	-- 7.0 QA Combat Test Plate Gloves 2
+			i(109324),	-- 7.0 QA Combat Test Plate Helm 1
+			i(109325),	-- 7.0 QA Combat Test Plate Legs 1
+			i(109326),	-- 7.0 QA Combat Test Plate Shoulders 2
+			i(109327),	-- 7.0 QA Combat Test Plate Belt 2
+			i(109328),	-- 7.0 QA Combat Test Plate Chest 3
+			i(109329),	-- 7.0 QA Combat Test Plate Gloves 3
+			i(109330),	-- 7.0 QA Combat Test Plate Helm 2
+			i(109331),	-- 7.0 QA Combat Test Plate Legs 2
+			i(109332),	-- 7.0 QA Combat Test Plate Shoulders 3
+			i(109333),	-- 7.0 QA Combat Test Plate Belt 3
+			i(109334),	-- 7.0 QA Combat Test Plate Chest 4
+			i(109335),	-- 7.0 QA Combat Test Plate Gloves 4
+			i(109336),	-- 7.0 QA Combat Test Plate Helm 3
+			i(109337),	-- 7.0 QA Combat Test Plate Legs 3
+			i(109338),	-- 7.0 QA Combat Test Plate Shoulders 4
+			i(109372),	-- 7.0 QA Combat Test Plate Belt 4
+			i(109409),	-- 7.0 QA Combat Test Plate Bracer 2
+			i(109422),	-- 7.0 QA Combat Test Plate Bracer 3
+			i(109436),	-- 7.0 QA Combat Test Plate Bracer 4
+			i(109439),	-- 7.0 QA Combat Test Plate Helm 4
+			i(109450),	-- 7.0 QA Combat Test Plate Legs 4
+			i(109455),	-- 7.0 QA Combat Test Plate Boots
+			i(109461),	-- 7.0 QA Combat Test Plate Boots 2
+			i(109501),	-- 7.0 QA Combat Test Plate Boots 3
+			-- BFA
+			i(159159),	-- Ashvane Company Gauntlets
+			i(159160),	-- Ashvane Company Girdle
+			i(159165),	-- Ashvane Company Bracers
+			-- Testing Set
+			i(167127),	-- QA Combat Test Plate Bracer 1
+			i(167128),	-- QA Combat Test Plate Chest 1
+			i(167129),	-- QA Combat Test Plate Shoulders 1
+			i(167130),	-- QA Combat Test Plate Gloves 1
+			i(167131),	-- QA Combat Test Plate Belt 1
+			i(167132),	-- QA Combat Test Plate Helm 1
+			i(167133),	-- QA Combat Test Plate Legs 1
+			i(167134),	-- QA Combat Test Plate Boots
 		}),
-		i(182655),	-- Hill King's Roarbox (beta only? Retrieving data on 9.0.2)
-		i(174445),	-- Glimmerfly Cocoon (dropped from 4 beast rares in Bastion on beta but doesn't drop in live)
-		i(187861),	-- Magical Seeds
-	}),
-	d(24, {	-- Timewalking
-		-- Possible TW Gear (not in journal)
-		i(150450),	-- Nether Shadow Tunic
-		i(150448),	-- Pauldrons of Abyssal Fury
-		i(150461),	-- Praetorian's Legguards
-		i(150465),	-- Myrmidon's Treads
-		i(150472),	-- Grips of Silent Justice
-		i(150449),	-- Wraps of Precise Flight
-		i(150457),	-- Bands of the Coming Storm
-		i(150502),	-- Touch of Inspiration
-		i(150458),	-- Choker of Endless Nightmares
-		i(150501),	-- Translucent Spellthread Necklace
-		i(150508),	-- Pendant of Titans
-		i(150515),	-- Nadina's Pendant of Purity
-		i(166405),	-- Blindside (TW Vendor?)
-		i(166364),	-- Song of the Fallen (TW Vendor?)
-		i(161118),	-- Marrow Shatter (TW Vendor/Tw drop?)
+		n(BACK, {
+			-- Load In Game
+			-- TBC
+			i(28045),	-- Cloak of the Demon Stalker (Patch 3.3.3?)
+			-- Wratb
+			i(37174),	-- Rippling Azure Cloak (Says added in cata wowhead)
+			-- Cata
+			i(56355),	-- Skin of Stone
+			-- WoD
+			i(112230),	-- Storm Scale Cloak
+			i(112231),	-- Drape of Nimble Deflection
+			i(112232),	-- Three-Kodohide Cloak
+			i(112233),	-- Cloak of Bloody Forces
+			i(114297),	-- Feather-Cord Cloak
+			i(114298),	-- Cloak of Bent Dreams
+			i(114299),	-- Suture-Slice Cloak
+			i(114300),	-- Grimchop Greatcloak
+			i(114301),	-- Axebreak Darkcloak
+			i(114360),	-- Eagle Eye Windcloak
+			i(114361),	-- Drape of Dark Shadows
+			i(114362),	-- Cloak of Keening Spirits
+			i(114363),	-- Gutwrencher's Greatcloak
+			i(114364),	-- Towerkin Cloak
+			i(114421),	-- Arrowleaf Longcloak
+			i(114422),	-- Mindbreaker Drape
+			i(114423),	-- Drape of Mindmending
+			i(114424),	-- Blade-Ring Greatcloak
+			i(114425),	-- Bleak Shore Cloak
+			-- Legion
+			i(134579),	-- Vanguard Cape
+			i(134605),	-- Vanguard Cloak
+			i(134609),	-- Scorching Cape
+			i(134617),	-- Scorching Drape
+			i(134693),	-- Enveloping Cape
+			i(134699),	-- Enveloping Drape
+			i(150489),	-- Shroud of Forgiveness
+			i(150714),	-- Travel-Worn Shawl
+			i(157751),	-- Drape of New Beginnings
+			-- BFA
+			i(153397),	-- Salt Starched Shawl
+			i(154968),	-- Drape of the Golden City
+			i(155384),	-- Singed Skycaller Drape (Never added)
+			i(156755),	-- Drape of Revengeance
+			i(158500),	-- Salt Starched Shawl
+			i(158552),	-- Drape of the Golden City
+			i(158582),	-- Wickerweave Cloak (Bfa Beta Only)
+			i(165792),	-- Worn Cloak (future WQ?)
+			i(174857),	-- Hidden Cloak (Vulpera?)
+			--SL
+			i(169822),	-- Flowing Cloak
+			-- ItemID/Retrieving
+			-- Vanilla
+			i(22230),	-- Frightmaw Hide (Says added in cata wowhead)
+			-- Wrath
+			i(35876),	-- Talbuk Cape (Says added in cata wowhead)
+			i(39828),	-- Punisher's Cloak (Says added in cata wowhead)
+			-- Cata
+			i(65815),	-- Drape of the mortal guardians beta only
+			-- WoD
+			i(108814),	-- 6.0 PH Cloak Agi
+			i(108822),	-- 6.0 PH Cloak STR
+			i(108823),	-- 6.0 PH Cloak Int
+			i(109282),	-- 7.0 QA Combat Test Cloak 1
+			i(109453),	-- 7.0 QA Combat Test Cloak 2
+			i(109496),	-- 7.0 QA Combat Test Cloak 4
+			i(109538),	-- 7.0 QA Combat Test Cloak 3
+			-- BFA
+			i(154841),	-- Corlain Gauntlets
+			i(154846),	-- Corlain Sabatons
+			i(159195),	-- Brineworks Greaves
+			i(159197),	-- Brineworks Stompers
+			i(165261),	-- Fallback Armor - Cloak
+			--SL
+			i(167150),	-- QA Combat Test Cloak 1(9.0.5?)
+		}),
+		filter(COSMETIC, {
+			i(52488),	-- Jeweler's Sapphire Monocle (other version got added)
+			i(116399),	-- Emerald Sunglasses (WoD Beta)
+			i(133996),	-- Was testing version, they added i(134022))	-- Burgy Blackheart's Handsome Hat
+			-- Hidden
+			i(134110),	-- Hidden Helm
+			i(134111),	-- Hidden Cloak
+			i(142504),	-- Hidden Tabard
+			i(134112),	-- Hidden Shoulder
+			i(143539),	-- Hidden Belt
+			i(168659),	-- Hidden Chestpiece
+			i(168664),	-- Hidden Boots
+			i(168665),	-- Hidden Bracers
+			i(142503),	-- Hidden Shirt
+			i(168665),	-- Hidden Bracers
+			i(158329),	-- Hidden Gloves
+			-- SL
+			i(185774),	-- PH Green Head Candle
+			i(182306),	-- Monster Mantle
+			i(186093),	-- Shaded Spectacles
+			i(187914),	-- Captain Noteo's Unused Eye Patch
+		}),
+		filter(SHIRTS, {
+			i(52548),	-- Initiate's Tunic
+			i(53869),	-- War Paint (Shirt) NOT GOOD FOR THE LADIES (NYI)
+			i(53879),	-- Rugged Work Shirt
+			i(53880),	-- Super Girly Shirt
+			i(60619),	-- No Shirt
+			i(62061),	-- Irradiated Gnome Shirt
+			i(63074),	-- "Behind You!" Shirt
+			i(129294),	-- Bonespeaker Tatoos
+			i(137118),	-- The Crone's Shirt
+			i(137552),	-- Purple Shirt
+		}),
+		filter(TABARDS, {
+			i(23388),	-- Tranquillen Tabard
+			i(147204),	-- Black Apron - TEST
+		}),
+		filter(51, {	-- Neck
+			-- Load In Game
+			-- Vanilla
+			i(13811),	-- Necklace of the Dawn
+			i(23058),	-- Life Channeling Necklace (Says added in cata wowhead)
+			-- Wrath
+			i(33197),	-- Mossy Necklace (Says added in cata wowhead)
+			-- Legion
+			i(157750),	-- Pendant of Good Fortune
+			-- ItemID/Retrieving
+			-- Vanilla
+			i(7550),	-- Warrior's Honor
+			i(18023),	-- Blood Ruby Pendant
+			-- TBC
+			i(28043),	-- Demon Stalker Pendant (Says added in cata wowhead)
+			i(31930),	-- Enigmatic Charm (Says added in cata wowhead)
+			i(31931),	-- Fiery Charm (Says added in cata wowhead)
+			i(31932),	-- Living Charm (Says added in cata wowhead)
+			i(31933),	-- Dark Charm (Says added in cata wowhead)
+			i(31934),	-- Frigid Charm (Says added in cata wowhead)
+			i(33198),	-- Necklace of Decay (Says added in cata wowhead)
+			i(33199),	-- Pendant of Old (Says added in cata wowhead)
+			i(33200),	-- Ancient Ceremonial Necklace (Says added in cata wowhead)
+			i(33201),	-- Silver Moonstone Pendant (Says added in cata wowhead)
+			-- Wrath
+			i(37544),	-- Drakebone Necklace (Says added in cata wowhead)
+			i(42856),	-- Frosthowl Amulet (Says added in cata wowhead)
+			i(44389),	-- Curative Necklace (Says added in cata wowhead)
+			i(44390),	-- Venomous Pendant (Says added in cata wowhead)
+			i(44391),	-- Cast Steel Choker
+			i(44392),	-- Necklace of Permeation
+			-- Cata
+			i(59665),	-- Emerald Dragonet Choker
+			-- WoD
+			i(108812),	-- 6.0 PH Neck Agi
+			i(108818),	-- 6.0 PH Neck Str
+			i(108819),	-- 6.0 PH Neck Int
+			i(109267),	-- 6.0 QA Combat Test Healer Neck
+			i(109293),	-- 6.0 QA Combat Test Healer Neck 2
+			i(109295),	-- 6.0 QA Combat Test Agility DPS Neck
+			i(109300),	-- 6.0 QA Combat Test Caster DPS Neck
+			i(109369),	-- 6.0 QA Combat Test Agility DPS Neck 2
+			i(109427),	-- 6.0 QA Combat Test Agility DPS Neck 3
+			i(109452),	-- 6.0 QA Combat Test Caster DPS Neck 2
+			i(109459),	-- 6.0 QA Combat Test Caster DPS Neck 3
+			i(109522),	-- 6.0 QA Combat Test Caster DPS Neck 4
+			i(109526),	-- 7.0 QA Combat Test Neck 4
+			-- BFA
+			i(167137),	-- QA Combat Test Neck 1
+			-- SL
+			i(177146),	-- Shaleshell Pendant
+			i(177165),	-- Shaleshell Pendant
+			i(179386),	-- Tidesage Necklace (Might be another quest in Stormsong Valley)
+			i(185943),	-- Lost Adventurer's Medallion
+			i(186633),	-- Mawrat Mongrel's Collar
+			i(186983),	-- Attendant's Chain
+		}),
+		filter(52, {	-- Finger
+			-- Load In Game
+			-- Vanilla
+			i(13812),	-- Ring of the Dawn
+			i(19065),	-- Emerald Circle
+			-- Legion
+			i(141907),	-- Arena Victory Bonus
+			i(143604),	-- Rating Min Item Level Reward
+			i(144455),	-- Rating Min Item Level Reward
+			i(147397),	-- Rating Min Item Level Reward
+			i(147421),	-- Rating Min Item Level Reward
+			i(150368),	-- Rating Min Item Level Reward
+			i(150369),	-- Rating Min Item Level Reward
+			i(150370),	-- Rating Min Item Level Reward
+			i(157748),	-- Simple Golden Ring
+			i(157749),	-- Ornate Silver Loop
+			-- BFA
+			i(174050),	-- Corrupted Ring - Revel in Violence
+			i(174051),	-- Corrupted Ring - Spontaneous Fury
+			i(174056),	-- Corrupted Ring - Face the Truth
+			i(174057),	-- Corrupted Ring - Mesmerizing
+			-- ItemID/Retrieving
+			-- Vanilla
+			i(4988),	-- Burning Obsidian Band
+			i(17000),	-- Band of the Wraith
+			i(17108),	-- Mark of Deflection
+			-- TBC
+			i(28044),	-- Band of the Demon Stalker
+			i(33097),	-- Mushroom Ring (Says added in cata wowhead)
+			i(33193),	-- Mossy Band (Says added in cata wowhead)
+			i(33194),	-- Ancient Ceremonial Band (Says added in cata wowhead)
+			i(33195),	-- Cracked Stone Band (Says added in cata wowhead)
+			i(33196),	-- Softly-Glowing Ring (Says added in cata wowhead)
+			-- Wrath
+			i(34712),	-- Prismatic Signet (Says added in cata wowhead)
+			i(37531),	-- Circle of Frigid Wind (Says added in cata wowhead)
+			i(41756),	-- Heart's Blood Signet
+			i(46842),	-- Crusader's Band
+			-- Cata
+			i(57708),	-- QA Test Finger 500 Strength
+			i(57709),	-- QA Test Finger Strength
+			i(57710),	-- QA Test Finger 2000 Strength
+			i(57713),	-- QA Test Finger 500 Agility
+			i(57721),	-- QA Test Finger 10000 attack power
+			i(57723),	-- QA Test Finger 500 intellect
+			i(57727),	-- QA Test Finger Spell Power
+			i(57738),	-- QA Test Finger 250 Mastery
+			i(58816),	-- QA Test Finger 250 Hit
+			-- MoP
+			i(98037),	-- QA Test Finger Dodge
+			i(98038),	-- QA Test Finger Parry
+			-- WoD
+			i(108813),	-- 6.0 PH Ring Agi
+			i(108820),	-- 6.0 PH Ring Str
+			i(108821),	-- 6.0 PH Ring Int
+			i(109277),	-- 7.0 QA Combat Test Ring 1
+			i(109365),	-- 6.0 QA Combat Test Caster DPS Ring
+			i(109391),	-- 6.0 QA Combat Test Agility DPS Ring 2
+			i(109410),	-- 6.0 QA Combat Test Caster DPS Ring 2
+			i(109418),	-- 6.0 QA Combat Test Agility DPS Ring 3
+			i(109447),	-- 6.0 QA Combat Test Caster DPS Ring 3
+			i(109454),	-- 6.0 QA Combat Test Caster DPS Ring 4
+			i(109478),	-- 6.0 QA Combat Test Agility DPS Ring 4
+			i(109512),	-- 6.0 QA Combat Test Caster DPS Ring 5
+			i(109516),	-- 7.0 QA Combat Test Ring 5
+			i(110704),	-- QA Test Finger Versatility
+			-- BFA
+			i(167135),	-- QA Combat Test Ring 1
+			i(167136),	-- QA Combat Test Ring 2
+			i(173421),	-- Black Empire Signet
+			-- SL
+			i(175717),	-- Inquisitor's Signet
+			i(177145),	-- Sea Sapphire Band
+			i(177153),	-- Beaten Copper Loop
+			i(177164),	-- Sea Sapphire Band
+			i(177167),	-- Beaten Copper Loop
+		}),
+		n(-386, {	-- Trinket
+			-- Load In Game
+			-- Wrath
+			i(38572),	-- Bounty Procurement Enhancer (Says added in cata wowhead)
+			i(39819),	-- Bloodbinder's Runestone (Says added in cata wowhead)
+			-- Cata
+			i(54547),	-- Cracked Jewelry Box
+			-- WoD
+			i(114960),	-- Spires unused
+			-- Legion
+			i(157746),	-- Graven Keepsake
+			i(157747),	-- Illuminated Charm
+			-- BFA
+			i(161222),	-- Latency Manipulator
+			i(161223),	-- Agency Manipulator
+			i(161289),	-- Rikal's Shark Teeth
+			-- ItemID/Retrieving
+			-- Vanilla
+			i(12805),	-- Orb of Fire
+			i(18355),	-- Ferras Collar
+			i(18438),	-- Sergeant's Mark
+			i(20084),	-- Hunting Net
+			i(20525),	-- Earthen Sigil
+			--Wrath
+			i(37561),	-- Touch of the Elements (Says added in cata wowhead)
+			i(38383),	-- Valonforth's Folly (Says added in cata wowhead)
+			i(38526),	--Binding of the Imprisoned Soul (Says added in cata wowhead)
+			i(46839),	-- Frostwolf Insignia Rank 7
+			i(46840),	-- Frostwolf Insignia Rank 7
+			-- WoD
+			i(109263),	-- 6.0 QA Combat Test Agility DPS Trinket
+			i(109286),	-- 7.0 QA Combat Test Caster DPS Trinket 1
+			i(109360),	-- 6.0 QA Combat Test Agility DPS Trinket 2
+			i(109370),	-- 7.0 QA Combat Test Caster DPS Trinket 2
+			i(109376),	-- 6.0 QA Combat Test Strength DPS Trinket
+			i(109378),	-- 6.0 QA Combat Test Tank Trinket
+			i(109386),	-- 6.0 QA Combat Test Agility DPS Trinket 3
+			i(109394),	-- 6.0 QA Combat Test Tank Trinket 2
+			i(109403),	-- 6.0 QA Combat Test Strength DPS Trinket 2
+			i(109407),	-- 6.0 QA Combat Test Caster DPS Trinket 3
+			i(109413),	-- 7.0 QA Combat Test Caster DPS Trinket 4
+			i(109442),	-- 6.0 QA Combat Test Agility DPS Trinket 4
+			i(109446),	-- 6.0 QA Combat Test Strength DPS Trinket 3
+			i(109467),	-- 6.0 QA Combat Test Strength DPS Trinket 4
+			i(109480),	-- 6.0 QA Combat Test Tank Trinket 3
+			i(109495),	-- 6.0 QA Combat Test Tank Trinket 4
+			i(109515),	-- 6.0 QA Combat Test Tank Trinket 5
+			i(113017),	-- 7.0 QRP Template PH Int Trinket #2
+			i(113018),	-- 7.0 QRP Template PH Str Trinket #1
+			i(113019),	-- 7.0 QRP Template PH Str Trinket #2
+			i(113020),	-- 7.0 QRP Template PH Agi Trinket #1
+			i(113021),	-- 7.0 QRP Template PH Agi Trinket #2
+			i(113022),	-- 7.0 QRP Template PH Int Trinket #1
+			-- Legion
+			i(150367),	-- Test Trinket
+			i(151967),	-- Electrostatic Lasso
+			-- BFA
+			i(167138),	-- QA Combat Test Trinket 1 (SL?)
+			i(167139),	-- QA Combat Test Trinket 2 (SL?)
+			i(173426),	-- Black Empire trinkets
+			-- SL
+			i(175726),	-- Primalist's Kelpling
+			i(175727),	-- Elder's Stormseed
+			i(177147),	-- Seabeast Tusk
+			i(177148),	-- Lucky Braid
+			i(177149),	-- Shimmering Rune
+			i(177150),	-- Petrified Basilisk Scale
+			i(177151),	-- Oceanographer's Weather Log
+			i(177152),	-- Privateer's Spyglass
+			i(177154),	-- Seabeast Tusk
+			i(177155),	-- Shimmering Rune
+			i(177156),	-- Petrified Basilisk Scale
+			i(177157),	-- Bijou of the Golden City
+			i(177158),	-- Enchanted Devilsaur Claw
+			i(177166),	-- Lucky Braid
+		}),
 	}),
 	n(WEAPONS, {
 		filter(BOWS, {
@@ -3475,6 +3172,346 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			-- ItemID/Retrieving
 			i(165682),	-- Fallback Weapon - Warglaives
 		}),
+	}),
+	n(CLASSES, {
+		cl(DEMONHUNTER, {
+			i(129738),	-- Verus
+		}),
+		cl(HUNTER, {
+			i(147770),	-- Tome of the PTR Beast
+		}),
+		cl(MAGE, {
+			i(44600),	-- Tome of Polymorph: Serpent (Never made it out of beta)
+			i(44811),	-- Tome of Polymorph: Turkey
+		}),
+		cl(SHAMAN, {
+			i(136971),	-- Tome of Hex: Snake
+		}),
+	}),
+	filter(MISC, {
+		filter(113, {	-- Bags
+			i(130943),	-- Reusable Tote Bag
+			i(166699),	-- Desert Rucksack
+			i(92746),	-- Portable Refrigerator
+			i(38307),	-- Crafty's Bottomless Inscription Bag
+			i(166700),	-- Durable Sailor's Duffel
+		}),
+		filter(55, {		-- Consumables
+			i(44871),	-- Greater Inscription of the Axe
+			i(44872),	-- Greater Inscription of the Crag
+			i(44873),	-- Greater Inscription of the Pinnacle
+			i(44874),	-- Greater Inscription of the Storm
+			i(45705),	-- Argent Tournament Invitation
+		}),
+		filter(104, {	-- Quest Items
+			i(157772),	-- A Royal Concern
+			i(157775),	-- A Royal Concern
+			i(142362),	-- zzz old fel-etched bone
+			i(142371),	-- zzz old inferno stone
+			i(142373),	-- zzz old locket f eldr thalas
+			i(142376),	-- zzz old glowing blood thislte petal
+			i(142378),	-- zzz old vial of ancient mana
+			i(17347),	-- unknown
+			i(17409),	-- Encrusted Crystal Fragment
+			i(169696),	-- reuse me [mtmm]]
+			i(169702),	-- reuse me [mtmm]]
+			i(169703),	-- reuse me [mtmm]]
+			i(20883),	-- Unknown
+			i(20936),	-- Unknown
+			i(20937),	-- Unknownwwwwwwwwwww
+			i(169958),	-- Fragment of the Void
+			i(169959),	-- Fragment of the Void
+			i(169960),	-- Fragment of the Void
+			i(156927),	-- Great Hall Recall)
+			i(168023),	-- dnt smashed transporter relay
+			i(168030),	-- dnt hyperbolic circuit
+			i(168031),	-- dnt transference disc
+		}),
+		-- M+ PTR Testing
+		i(181850),	-- Set Keystone Map: Plaguefall
+		i(181852),	-- Set Keystone Map: Halls of Atonement
+		i(181854),	-- Set Keystone Map: Theater of Pain
+		i(181856),	-- Set Keystone Map: Sanguine Depths
+		i(184849),	-- Set Keystone Map: The Necrotic Wake
+		i(181851),	-- Set Keystone Map: Mists of Tirna Scithe
+		i(181853),	-- Set Keystone Map: Spires of Ascension
+		i(181855),	-- Set Keystone Map: De Other Side
+		i(159734),	-- Add Keystone Affix: Fortified
+		i(159730),	-- Add Keystone Affix: Tyrannical
+		i(159732),	-- Add Keystone Affix: Bursting
+		i(159739),	-- Add Keystone Affix: Sanguine
+		i(183948),	-- Add Keystone Affix: Spiteful
+		i(159735),	-- Add Keystone Affix: Grievous
+		i(159731),	-- Add Keystone Affix: Bolstering
+		i(159738),	-- Add Keystone Affix: Raging
+		i(183949),	-- Add Keystone Affix: Inspiring
+		i(159733),	-- Add Keystone Affix: Explosive
+		i(159736),	-- Add Keystone Affix: Necrotic
+		i(159737),	-- Add Keystone Affix: Quaking
+		i(159742),	-- Add Keystone Affix: Volcanic
+		i(183947),	-- Add Keystone Affix: Storming
+		i(187524),	-- Add Keystone Affix: Tormented
+		i(166381),	-- Set Keystone Level: 10
+		i(166379),	-- Set Keystone Level: 12
+		i(166377),	-- Set Keystone Level: 14
+		i(166381),	-- Set Keystone Level: 11
+		i(166378),	-- Set Keystone Level: 13
+		i(175181),	-- Retrieving Data
+		i(175213),	-- Retrieving Data
+		i(178302),	-- Retrieving Data
+		i(178307),	-- Retrieving Data
+		i(178312),	-- Retrieving Data
+		i(178314),	-- Retrieving Data
+		i(178318),	-- Retrieving Data
+		i(178323),	-- Retrieving Data
+		i(178326),	-- Retrieving Data
+		i(178330),	-- Retrieving Data
+		i(178480),	-- Retrieving Data
+		i(178665),	-- Retrieving Data
+		i(183434),	-- Retrieving Data
+		i(183431),	-- Retrieving Data
+		i(178488),	-- Retrieving Data
+		i(178489),	-- Retrieving Data
+		i(178673),	-- Retrieving Data
+		i(159681),	-- Set Keystone Map: Darkheart Thicket
+		i(159683),	-- Set Keystone Map: Black Rook Hold
+		i(159684),	-- Set Keystone Map: Cathedral of Eternal Night
+		i(159685),	-- Set Keystone Map: Court of Stars
+		i(159686),	-- Set Keystone Map: Eye of Azshara
+		i(159687),	-- Set Keystone Map: Halls of Valor
+		i(159688),	-- Set Keystone Map: Maw of Souls
+		i(159689),	-- Set Keystone Map: Lower Karazhan
+		i(159690),	-- Set Keystone Map: Upper Karazhan
+		i(159691),	-- Set Keystone Map: Seat of the Triumvirate
+		i(159692),	-- Set Keystone Map: The Arcway
+		i(159693),	-- Set Keystone Map: Vault of the Wardens
+		i(159694),	-- Set Keystone Level: 15
+		i(159695),	-- Set Keystone Level: 16
+		i(159696),	-- Set Keystone Level: 17
+		i(159697),	-- Set Keystone Level: 18
+		i(159698),	-- Set Keystone Level: 19
+		i(159699),	-- Set Keystone Level: 20
+		i(159700),	-- Set Keystone Level: 21
+		i(159701),	-- Set Keystone Level: 22
+		i(159702),	-- Set Keystone Level: 23
+		i(159703),	-- Set Keystone Level: 24
+		i(159704),	-- Set Keystone Level: 25
+		i(159705),	-- Set Keystone Level: 26
+		i(159706),	-- Set Keystone Level: 27
+		i(159707),	-- Set Keystone Level: 28
+		i(159708),	-- Set Keystone Level: 29
+		i(159709),	-- Set Keystone Level: 30
+		i(79907),	-- Spear of Xuen (Old Version)
+		i(129742),	-- Badge of Timewalking Justice cap
+		i(31496),	-- Unknown
+		i(31498),	-- Unknown
+		i(31500),	-- Unknown
+		i(31502),	-- Unknown
+		i(5126),	-- Unknown
+		i(5127),	-- Unknown
+		i(5129),	-- Unknown
+		i(5130),	-- Unknown
+		i(5131),	-- Unknown
+		i(5132),	-- Unknown
+		i(175246),	-- N'lyeth (Unused)
+		i(169177),	-- Blueprint: TK32(DNT))
+		i(168171),	-- ph objective
+		i(168244),	-- ph treasure
+		i(168272),	-- ph amatheed cache
+		i(169154),	-- ph nzoth cache
+		i(170501),	-- ph mogu cache
+		i(172381),	-- ph objective 2
+		i(169178),	-- Blueprint: TK33(DNT))
+		i(169179),	-- Blueprint: TK34(DNT))
+		i(169180),	-- Blueprint: TK35(DNT))
+		i(169181),	-- Blueprint: TK36(DNT))
+		i(169182),	-- Blueprint: TK37(DNT))
+		i(169183),	-- Blueprint: TK38(DNT))
+		i(169184),	-- Blueprint: TK39(DNT))
+		i(169185),	-- Blueprint: TK40(DNT))
+		i(169186),	-- Blueprint: TK41(DNT))
+		i(169187),	-- Blueprint: TK42(DNT))
+		i(169188),	-- Blueprint: TK43(DNT))
+		i(169189),	-- Blueprint: TK44(DNT))
+		i(165884),	-- Treasure Map of molten clay
+		i(165899),	-- Treasure Map of whispering reef
+		i(165900),	-- Treasure Map of verdant wilds
+		i(165901),	-- Treasure Map of ungol ruins
+		i(165902),	-- Treasure Map of rotting mire
+		i(165903),	-- Treasure Map of dread chain
+		i(165904),	-- Treasure Map of havenswood
+		i(165905),	-- Treasure Map of jorundall
+		i(165906),	-- Treasure Map of skittering hollow
+		i(169192),	-- Unknown
+		i(78892),	-- Perfect Geode (PTR Only)
+		i(31503),	-- Unknown
+		i(107474),	-- ph6 engorged innards
+		i(103535),	-- Bulging Bag of Charms (was planned for asia store)
+		i(31507),	-- Unknown
+		i(36963),	-- Unknown
+		i(90568),	-- Unknown
+		i(90569),	-- Unknown
+		i(98001),	-- Saurok Collection
+		i(98005),	-- Saurok Collection
+		i(100949),	-- Thunderlord Cache Reward
+		spell(5169),	-- defias disguise
+		i(45818),	-- Unknown
+		i(46056),	-- Unknown
+		i(167026),	-- cache of crucible treasures
+		i(164774),	-- unknown
+		spell(5264),	-- dsouth sea defias disguise
+		spell(5268),	-- dark iron dwarf disguise
+		spell(5267),	-- dalaran wizard disguise
+		i(9023),		-- Codex of Shadow Proctection Rank3 (Never added)
+		i(21243),	-- Bloated Mightfish
+		i(132118),	-- Aggramar's Blessing (Didnt make it out of beta)
+		i(134006),	-- Dwyer's Spare Caber
+		i(134008),	-- Simple Rosary of Light
+		i(134824),	-- "Sir Pugsington" Costume
+		i(137602),	-- Unknown
+		i(151060),	--
+		i(42975),	-- Ace of Lords
+		i(42977),	-- Two of Lords
+		i(42978),	-- Three of Lords
+		i(42979),	-- Four of Lords
+		i(42980),	-- Five of Lords
+		i(42981),	-- Six of Lords
+		i(42982),	-- seven of Lords
+		i(42983),	-- eight of Lords
+		i(42976),	-- Lords Deck
+		i(158782),	-- Warchief's Prideful
+		i(158841),	-- High King's Pride
+		i(140787),	--
+		i(140921),	--
+		i(132107),	--
+		i(132250),	--
+		i(101537),	-- Timeless Coins
+		i(103975),	-- Elder Charm of Good Fortune
+		i(103976),	-- Mogu Rune of Fate
+		i(107459),	-- Black Iron Fragment
+		i(108595),	-- Recall Stone
+		i(108882),	-- Bloodmaul Blasting Charge
+		i(82460),	-- Unknown
+		i(82462),	-- Unknown
+		i(82463),	-- Unknown
+		i(155010),	-- REUSE MD DNT
+		i(155011),	-- REUSE MD DNT
+		i(155012),	-- REUSE MD DNT
+		i(130186),	-- Intern Items - BJI
+		i(146801),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
+		i(146800),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
+		i(146799),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
+		i(115371),	-- [PLACEHOLDER TIER 3 ITEM]
+		i(164258),	-- Cache of Uldir Treasures
+		i(164259),	-- Cache of Uldir Treasures
+		i(164260),	-- Cache of Uldir Treasures
+		i(100894),	-- Deathtoll's Reward
+		i(100897),	-- Skel'tik the Baleful's Reward
+		i(100898),	-- Kull Bloodseeker's Reward
+		i(109012),	-- Frostwolf Ancestral Totem
+		i(124644),	-- Unknown
+		i(93660),	-- Thunder-Laced Egg
+		i(136621),	-- Unknown
+		i(40796),	-- Unknown
+		i(42147),	-- Unknown
+		i(43254),	-- Unknown
+		i(35728),	-- Greater Inscription of the blade (arena realm only)
+		i(35729),	-- Greater Inscription of the knight (arena realm only)
+		i(35730),	-- Greater Inscription of the oracle (arena realm only)
+		i(35731),	-- Greater Inscription of the orb (arena realm only)
+		i(44125),	-- zzzOLDLesser Inscription of Template - PH
+		i(44126),	-- zzzOLDGreater Inscription of Template - PH
+		i(92563),	-- The Eye of the Storm
+		i(136411),	-- Unknown
+		i(22233),	-- Zigris' Footlocker
+		i(35874),	-- Whizzlespark's Portable Pet Mansion
+		i(111810),	-- Barracks, Level 1 - unused version (used version is 111956)
+		i(134013),	-- Chef's Hat [Likely the cosmetic effect from when you use the toy]
+		i(130156),	-- Crane Bag
+		i(116130),	-- Draenic Crystal Fragments (Did not make it out of beta)
+		i(25497),	-- Broken Balanced Stone Dirk
+		i(28025),	-- Video Mount
+		i(28261),	-- Video Invis Broken Fitz's Throwing Axe
+		i(25641),	-- Broken Fitz's Throwing Axe
+		i(33564),	-- World Drop Certificate
+		i(47558),	-- Regalia of the Grand Protector
+		i(47559),	-- Regalia of the Grand Vanquisher
+		i(20560),
+		i(41596),
+		i(43016),
+		i(52446),
+		i(62898),
+		i(166680),	-- Echo of Elune (maybe you will be able to get it with a hotfix?)
+		i(166358),	-- Proper Parrot/ Proper Parrot was supposed to be added in 8.1, tied to the quest Be More Uniform. A few days after 8.1 went live, it was removed from the pet journal. Nobody obtained it from the quest.
+		p(2341),		-- Feathers (possibly tied to a quest?)
+		i(164769),	-- Unknown
+		i(33565),	-- Uncommon Drop Certificate
+		i(105914),	-- Danger Detector Boots
+		i(105915),	-- Danger Detector Harness
+		i(70104),	-- Unknown
+		i(45924),	-- Certificate of Appreciation
+		i(34548),	-- Cache of the Shattered Sun
+		i(8502),	-- Bronze Lotterybox
+		i(8503),	-- Heavy Bronze Lotterybox
+		i(8504),	-- Iron Lotterybox
+		i(8505),	-- Heavy Iron Lotterybox
+		i(8506),	-- Mithril Lotterybox
+		i(8507),	-- Heavy Mithril Lotterybox
+		i(165730),	-- Cache of Dazar'alor Treasures
+		i(165731),	-- Cache of Dazar'alor Treasures
+		i(165732),	-- Cache of Dazar'alor Treasures
+		i(13247),	-- Quartermaster Zigris' Footlocker
+		i(19804),	-- Pale Ghoulfish
+		i(21135),	-- Broken Assassin's Throwing Axe
+		i(164765),	-- Unknown
+		i(120370),
+		i(162549),	-- Personal Anchor
+		i(158922),	-- Zany Zombiefied Raptor (Did not make it)
+		i(165357),	-- Wolf's Den (162530) is used
+		i(120371),
+		i(23351),
+		i(23470),
+		i(46103),
+		i(49402),
+		i(49405),
+		i(49410),
+		i(49414),
+		i(49418),
+		i(49422),
+		i(54331),
+		i(55047),
+		i(21163),
+		i(137278),	-- Wardens Vendor List
+		i(137279),	-- nightfallen Vendor List
+		i(137280),	-- highmountain Vendor List
+		i(137281),	-- court of farondis Vendor List
+		i(137282),	-- valarjar Vendor List
+		i(137283),	-- dreamweavers Vendor List
+		i(34544),	-- Essence of the immortals
+		i(54757),	-- Double Link Tunic
+		i(54765),	-- Burnished Leggings
+		i(54766),	-- Burnished Gloves
+		i(54767),	-- Burnished Girdle
+		i(54768),	-- Burnished Boots
+		i(54769),	-- Rough Bronze Bracers -- Do Not Remove until somebody provides proof as obtained. Guild Tab shows somebody might be able to craft it, but its a visual bug. 27th Oct 2020 -- Gold
+		i(54778),	-- Burnished Boots (Again)
+		i(54781),	-- Thorbia's Gauntlets
+		i(54783),	-- Silvered Bronze Shoulders
+		i(54789),	-- Art Template Plate Belt - Plate_Common_C_01 - Rust
+		i(47058),	-- Unknown
+		i(59791),	-- Unknown
+		i(60221),	-- Furlbrow Cloak
+		i(60774),	-- Unknown
+		i(60775),	-- Unknown
+		i(60777),	-- Unknown
+		i(60780),	-- Unknown
+		i(60781),	-- Unknown
+		i(50329),	-- Unknown
+		i(55216),	-- Fiery Transform
+		i(55217),	-- Aqua Transform
+		i(55218),	-- Rocky Transform
+		i(55219),	-- Vaporous Transform
+		i(142360),	-- Blazing Ember Signet
 	}),
 }));
 
