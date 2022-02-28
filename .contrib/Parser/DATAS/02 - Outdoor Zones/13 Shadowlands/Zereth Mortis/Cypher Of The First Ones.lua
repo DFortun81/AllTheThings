@@ -20,9 +20,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					}),
 				}),
 				ach(15509),	-- Tales of the Exile
-				ach(15229, {	-- Traversing the Spheres
-					i(187860),	-- Mortis Mover (TOY!)
-				}),
 			}),
 			n(184750, {	-- Core Configuration Console
 				["description"] = "This was never tested on the PTR",
@@ -44,65 +41,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			i(187908, {	-- Firim's Spare Forge-tap
 				["description"] = "This item is only available from Firim after completing the Daily Quest: Materials of Creation (64717) or Hallow Efforts (64579).",
 				["g"] = {
-					i(187891, {	-- Empyrean Essence
-						crit(5, {	-- Empyrean Essence
-							["achievementID"] = 15229,	-- Traversing the Spheres
-						}),
-					}),
-					i(187894, {	-- Energized Firmament
-						crit(8, {	-- Energized Firmament
-							["achievementID"] = 15229,	-- Traversing the Spheres
-						}),
-					}),
-					i(187885, {	-- Honeycombed Lattice
-						crit(2, {	-- Honeycombed Lattice
-							["achievementID"] = 15229,	-- Traversing the Spheres
-						}),
-					}),
-					i(187892, {	-- Incorporeal Sand
-						crit(6, {	-- Incorporeal Sand
-							["achievementID"] = 15229,	-- Traversing the Spheres
-						}),
-					}),
-					i(187879, {	-- Pollinated Extraction
-						crit(1, {	-- Pollinated Extraction
-							["achievementID"] = 15229,	-- Traversing the Spheres
-						}),
-					}),
-					i(190129, {	-- Serene Pigment
-						crit(10, {	-- Serene Pigment
-							["achievementID"] = 15229,	-- Traversing the Spheres
-						}),
-					}),
-					i(187889, {	-- Unstable Agitant
-						crit(4, {	-- Unstable Agitant
-							["achievementID"] = 15229,	-- Traversing the Spheres
-						}),
-					}),
-					i(187893, {	-- Volatile Precursor
-						crit(7, {	-- Volatile Precursor
-							["achievementID"] = 15229,	-- Traversing the Spheres
-						}),
-					}),
-					i(190128, {	-- Wayward Essence
-						crit(9, {	-- Wayward Essence
-							["achievementID"] = 15229,	-- Traversing the Spheres
-						}),
-					}),
-					i(187787, {	-- Ephemera Orb
-						["cost"] = { { "i", 187728, 15 }, },	-- 15x Ephemera Strands
-						["g"] = {
-							i(187890, {	-- Anima-charged Yolk
-								crit(3, {	-- Anima-charged Yolk
-									["achievementID"] = 15229,	-- Traversing the Spheres
-								}),
-							}),
-							i(187735),	-- Geordy (PET!)
-							i(188231),	-- Provis Cache Key
-							i(187866),	-- Accelerating Tendons
-							i(187867),	-- Evolved Exo-mucus
-						},
-					}),
 				},
 			}),
 			n(QUESTS, {
@@ -525,6 +463,26 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				n(177958, {	-- Firim
 					i(187908, {	-- Firim's Spare Forge-tap
 						["description"] = "This item is only available after completing the Daily Quest: Materials of Creation (64717) or Hallow Efforts (64579).",
+						["g"] = {
+							i(187891),	-- Empyrean Essence
+							i(187894),	-- Energized Firmament
+							i(187885),	-- Honeycombed Lattice
+							i(187892),	-- Incorporeal Sand
+							i(187879),	-- Pollinated Extraction
+							i(190129),	-- Serene Pigment
+							i(187889),	-- Unstable Agitant
+							i(187893),	-- Volatile Precursor
+							i(190128),	-- Wayward Essence
+							i(187728, {	-- Ephemera Strand
+								i(187787, {	-- Ephemera Orb
+									i(187890),	-- Anima-charged Yolk
+									i(187735),	-- Geordy (PET!)
+									i(188231),	-- Provis Cache Key
+									i(187866),	-- Accelerating Tendons
+									i(187867),	-- Evolved Exo-mucus
+								}),
+							}),
+						},
 					}),
 					i(187909, {	-- Unstable Containment Trap
 						["description"] = "This item is only available after completing the Daily Quest: Overgrown Story (64785).",

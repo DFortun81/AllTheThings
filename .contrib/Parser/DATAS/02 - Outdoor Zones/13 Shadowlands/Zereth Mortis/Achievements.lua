@@ -9,7 +9,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			}),
 			ach(15211, sharedDataSelf({	-- Completing the Code
 					["cost"] = {
-						{ "i", 187909, 1 },	-- Unstable Containment Trap (permanent vendor item)
+						{ "i", 187909, 1 },	-- Unstable Containment Trap (temporary vendor item)
 						{ "i", 187684, 1 },	-- Containment Trap (quest item)
 					},
 				}, {
@@ -128,6 +128,53 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			ach(15502),	-- Sand, Sand Everywhere!
 			ach(15259, {	-- Secrets of the First Ones
 				ach(15518),	-- A Means to an End
+			}),
+			ach(15229, {	-- Traversing the Spheres
+				["_achcat"] = ACHIEVEMENT_CATEGORY_SHADOWLANDS_EXP,
+				["g"] = {
+					i(187860),	-- Mortis Mover (TOY!)
+					-- TODO: are the items for the specific criteria gained from specific locations?
+					crit(1, {	-- Pollinated Extraction
+						["provider"] = { "i", 187879 },	-- Pollinated Extraction
+						-- ["coord"] = { X, Y, ZERETH_MORTIS },
+					}),
+					crit(2, {	-- Honeycombed Lattice
+						["provider"] = { "i", 187885 },	-- Honeycombed Lattice
+						-- ["coord"] = { X, Y, ZERETH_MORTIS },
+					}),
+					crit(3, {	-- Anima-charged Yolk
+						["provider"] = { "i", 187890 },	-- Anima-charged Yolk
+						-- ["coord"] = { X, Y, ZERETH_MORTIS },
+					}),
+					crit(4, {	-- Unstable Agitant
+						["provider"] = { "i", 187889 },	-- Unstable Agitant
+						-- ["coord"] = { X, Y, ZERETH_MORTIS },
+					}),
+					crit(5, {	-- Empyrean Essence
+						["provider"] = { "i", 187891 },	-- Empyrean Essence
+						-- ["coord"] = { X, Y, ZERETH_MORTIS },
+					}),
+					crit(6, {	-- Incorporeal Sand
+						["provider"] = { "i", 187892 },	-- Incorporeal Sand
+						-- ["coord"] = { X, Y, ZERETH_MORTIS },
+					}),
+					crit(7, {	-- Volatile Precursor
+						["provider"] = { "i", 187893 },	-- Volatile Precursor
+						-- ["coord"] = { X, Y, ZERETH_MORTIS },
+					}),
+					crit(8, {	-- Energized Firmament
+						["provider"] = { "i", 187894 },	-- Energized Firmament
+						-- ["coord"] = { X, Y, ZERETH_MORTIS },
+					}),
+					crit(9, {	-- Wayward Essence
+						["provider"] = { "i", 190128 },	-- Wayward Essence
+						-- ["coord"] = { X, Y, ZERETH_MORTIS },
+					}),
+					crit(10, {	-- Serene Pigment
+						["provider"] = { "i", 190129 },	-- Serene Pigment
+						-- ["coord"] = { X, Y, ZERETH_MORTIS },
+					}),
+				},
 			}),
 			ach(15331, {	-- Treasures of Zereth Mortis
 				ach(15513),	-- Curious Collections

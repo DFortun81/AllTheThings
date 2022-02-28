@@ -329,9 +329,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			}),
 		}),
 		ach(14758),		-- The World Beyond
-		ach(15229, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Traversing the Spheres
-			i(187860),	-- Mortis Mover (TOY!)
-		})),
 		ach(14737, {	-- What Bastion Remembered
 			["altQuests"] = { 59717, 59705 },	-- Things Remembered
 			["maps"] = { BASTION },
