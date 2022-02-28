@@ -45,92 +45,60 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				}),
 			}),
 			i(187908, {	-- Firim's Spare Forge-tap
-				["description"] = "This item is only available from Firim after completing the Daily Quest: Materials of Creation(64717) or Hallow Efforts(64579).",
-				["questID"] = 65027,
+				["description"] = "This item is only available from Firim after completing the Daily Quest: Materials of Creation (64717) or Hallow Efforts (64579).",
 				["g"] = {
 					i(187891, {	-- Empyrean Essence
-						["questID"] = 65017,
-						["g"] = {
-							crit(5, {	-- Empyrean Essence
-								["achievementID"] = 15229,	-- Traversing the Spheres
-							}),
-						},
+						crit(5, {	-- Empyrean Essence
+							["achievementID"] = 15229,	-- Traversing the Spheres
+						}),
 					}),
 					i(187894, {	-- Energized Firmament
-						["questID"] = 65015,
-						["g"] = {
-							crit(8, {	-- Energized Firmament
-								["achievementID"] = 15229,	-- Traversing the Spheres
-							}),
-						},
+						crit(8, {	-- Energized Firmament
+							["achievementID"] = 15229,	-- Traversing the Spheres
+						}),
 					}),
 					i(187885, {	-- Honeycombed Lattice
-						["questID"] = 65622,
-						["g"] = {
-							crit(2, {	-- Honeycombed Lattice
-								["achievementID"] = 15229,	-- Traversing the Spheres
-							}),
-						},
+						crit(2, {	-- Honeycombed Lattice
+							["achievementID"] = 15229,	-- Traversing the Spheres
+						}),
 					}),
 					i(187892, {	-- Incorporeal Sand
-						["questID"] = 65014,
-						["g"] = {
-							crit(6, {	-- Incorporeal Sand
-								["achievementID"] = 15229,	-- Traversing the Spheres
-							}),
-						},
+						crit(6, {	-- Incorporeal Sand
+							["achievementID"] = 15229,	-- Traversing the Spheres
+						}),
 					}),
 					i(187879, {	-- Pollinated Extraction
-						["questID"] = 65005,
-						["g"] = {
-							crit(1, {	-- Pollinated Extraction
-								["achievementID"] = 15229,	-- Traversing the Spheres
-							}),
-						},
+						crit(1, {	-- Pollinated Extraction
+							["achievementID"] = 15229,	-- Traversing the Spheres
+						}),
 					}),
 					i(190129, {	-- Serene Pigment
-						["description"] = "no me",
-						["questID"] = 65560,
-						["g"] = {
-							crit(10, {	-- Serene Pigment
-								["achievementID"] = 15229,	-- Traversing the Spheres
-							}),
-						},
+						crit(10, {	-- Serene Pigment
+							["achievementID"] = 15229,	-- Traversing the Spheres
+						}),
 					}),
 					i(187889, {	-- Unstable Agitant
-						["questID"] = 65018,
-						["g"] = {
-							crit(4, {	-- Unstable Agitant
-								["achievementID"] = 15229,	-- Traversing the Spheres
-							}),
-						},
+						crit(4, {	-- Unstable Agitant
+							["achievementID"] = 15229,	-- Traversing the Spheres
+						}),
 					}),
 					i(187893, {	-- Volatile Precursor
-						["questID"] = 65016,
-						["g"] = {
-							crit(7, {	-- Volatile Precursor
-								["achievementID"] = 15229,	-- Traversing the Spheres
-							}),
-						},
+						crit(7, {	-- Volatile Precursor
+							["achievementID"] = 15229,	-- Traversing the Spheres
+						}),
 					}),
 					i(190128, {	-- Wayward Essence
-						["questID"] = 65559,
-						["g"] = {
-							crit(9, {	-- Wayward Essence
-								["achievementID"] = 15229,	-- Traversing the Spheres
-							}),
-						},
+						crit(9, {	-- Wayward Essence
+							["achievementID"] = 15229,	-- Traversing the Spheres
+						}),
 					}),
 					i(187787, {	-- Ephemera Orb
-						["cost"] = { { "i", 187728, 15 }, },	-- 15xEphemera Strands
+						["cost"] = { { "i", 187728, 15 }, },	-- 15x Ephemera Strands
 						["g"] = {
 							i(187890, {	-- Anima-charged Yolk
-								["questID"] = 65019,
-								["g"] = {
-									crit(3, {	-- Anima-charged Yolk
-										["achievementID"] = 15229,	-- Traversing the Spheres
-									}),
-								},
+								crit(3, {	-- Anima-charged Yolk
+									["achievementID"] = 15229,	-- Traversing the Spheres
+								}),
 							}),
 							i(187735),	-- Geordy (PET!)
 							i(188231),	-- Provis Cache Key
@@ -710,6 +678,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				}),
 			})),
 			n(VENDORS, {
+				n(177958, {	-- Firim
+					i(187908, {	-- Firim's Spare Forge-tap
+						["description"] = "This item is only available after completing the Daily Quest: Materials of Creation (64717) or Hallow Efforts (64579).",
+					}),
+					i(187909, {	-- Unstable Containment Trap
+						["description"] = "This item is only available after completing the Daily Quest: Overgrown Story (64785).",
+					}),
+				}),
 				n(185748, {	-- Mai Toa
 					["coord"] = { 58.6, 49.8, ZERETH_MORTIS },
 					["g"] = {
@@ -762,25 +738,38 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 })));
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	tier(SL_TIER, {
-		i(190392),	-- Pocopoc Shield
-		n(ACHIEVEMENTS, {
-			ach(15559),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Aealic
-			ach(15560),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Dealic
-			ach(15561),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Trebalim
-			ach(15562),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Cachial
-			ach(15563),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Altonian
-			ach(15564),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Sopranian
-			ach(15565),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Bassalim
-			ach(15566),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Metrial
-			ach(15568),	-- 	9.2 ZM - Cypher System - Talent Research Started - Metrial
-			ach(15569),	-- 	9.2 ZM - Cypher System - Talent Research Started - Aealic
-			ach(15570),	-- 	9.2 ZM - Cypher System - Talent Research Started - Dealic
-			ach(15571),	-- 	9.2 ZM - Cypher System - Talent Research Started - Trebalim
-			ach(15572),	-- 	9.2 ZM - Cypher System - Talent Research Started - Cachial
-			ach(15573),	-- 	9.2 ZM - Cypher System - Talent Research Started - Altonian
-			ach(15574),	-- 	9.2 ZM - Cypher System - Talent Research Started - Sopranian
-			ach(15575),	-- 	9.2 ZM - Cypher System - Talent Research Started - Bassalim
+	m(SHADOWLANDS, {
+		m(ZERETH_MORTIS, {
+			i(190392),	-- Pocopoc Shield
+			n(ACHIEVEMENTS, {
+				ach(15559),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Aealic
+				ach(15560),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Dealic
+				ach(15561),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Trebalim
+				ach(15562),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Cachial
+				ach(15563),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Altonian
+				ach(15564),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Sopranian
+				ach(15565),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Bassalim
+				ach(15566),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Metrial
+				ach(15568),	-- 	9.2 ZM - Cypher System - Talent Research Started - Metrial
+				ach(15569),	-- 	9.2 ZM - Cypher System - Talent Research Started - Aealic
+				ach(15570),	-- 	9.2 ZM - Cypher System - Talent Research Started - Dealic
+				ach(15571),	-- 	9.2 ZM - Cypher System - Talent Research Started - Trebalim
+				ach(15572),	-- 	9.2 ZM - Cypher System - Talent Research Started - Cachial
+				ach(15573),	-- 	9.2 ZM - Cypher System - Talent Research Started - Altonian
+				ach(15574),	-- 	9.2 ZM - Cypher System - Talent Research Started - Sopranian
+				ach(15575),	-- 	9.2 ZM - Cypher System - Talent Research Started - Bassalim
+			}),
+			q(65027),	-- eligible for Firim's Spare Forge-tap
+			q(65017, {["repeatable"]=true}),	-- Looting 187891, {	-- Empyrean Essence
+			q(65015, {["repeatable"]=true}),	-- Looting 187894, {	-- Energized Firmament
+			q(65622, {["repeatable"]=true}),	-- Looting 187885, {	-- Honeycombed Lattice
+			q(65014, {["repeatable"]=true}),	-- Looting 187892, {	-- Incorporeal Sand
+			q(65005, {["repeatable"]=true}),	-- Looting 187879, {	-- Pollinated Extraction
+			q(65560, {["repeatable"]=true}),	-- Looting 190129, {	-- Serene Pigment
+			q(65018, {["repeatable"]=true}),	-- Looting 187889, {	-- Unstable Agitant
+			q(65016, {["repeatable"]=true}),	-- Looting 187893, {	-- Volatile Precursor
+			q(65559, {["repeatable"]=true}),	-- Looting 190128, {	-- Wayward Essence
+			q(65019, {["repeatable"]=true}),	-- Looting 187890, {	-- Anima-charged Yolk
 		}),
 	}),
 }));
