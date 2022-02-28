@@ -2489,7 +2489,6 @@ _.HiddenQuestTriggers = {
 		q(58138),	-- Uldum - Infested Cache
 		q(58139),	-- Uldum - Infested Cache
 		q(58140),	-- Uldum - Infested Cache (24.52 55.08)
-		q(58141),	-- Uldum - Infested Cache
 		q(58142),	-- Uldum - Infested Cache
 		q(58137),	-- Uldum - Infested Strongbox
 		q(59054),	-- Looting a bounty in Uldum as Alliance (all 4 trigger at the same time)
