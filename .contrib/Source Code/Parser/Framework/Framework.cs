@@ -611,6 +611,12 @@ namespace ATT
                 data.Remove("_quests");
                 cloned = true;
             }
+            else if (data.TryGetValue("_achcat", out object achcat))
+            {
+                DuplicateDataIntoGroups(data, achcat, "achievementCategoryID");
+                data.Remove("_achcat");
+                cloned = true;
+            }
             else if (data.TryGetValue("_items", out object items))
             {
                 DuplicateDataIntoGroups(data, items, "itemID");
@@ -1072,7 +1078,7 @@ namespace ATT
 
         private static void DuplicateDataIntoGroups(Dictionary<string, object> data, object groups, string type)
         {
-            var groupIDs = groups as List<object>;
+            var groupIDs = Objects.CompressToList(groups) ?? new List<object> { groups };
             if (groupIDs != null && ATT.Export.ObjectData.TryGetMostSignificantObjectType(data, out Export.ObjectData objectData))
             {
                 switch (objectData.ObjectType)
@@ -1107,7 +1113,12 @@ namespace ATT
                         }
                         break;
                     case "achID":
-                        DuplicateGroupListIntoObjects(groupIDs, data, type);
+                        // duplicated achievements should be ignored for their progress
+                        Dictionary<string, object> cloned = new Dictionary<string, object>(data)
+                        {
+                            ["sourceIgnored"] = true
+                        };
+                        DuplicateGroupListIntoObjects(groupIDs, cloned, type);
                         break;
                     case "objectiveID":
                         if (CurrentParentGroup != null)
@@ -2214,6 +2225,7 @@ namespace ATT
                 case "visualID":
 
                 // metadata parser tags
+                case "_achcat":
                 case "_area":
                 case "_category":
                 case "_drop":
