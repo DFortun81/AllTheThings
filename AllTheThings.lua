@@ -1561,14 +1561,17 @@ local function BuildSourceTextForTSM(group, l)
 end
 -- Fields which are dynamic or pertain only to the specific ATT window and should never merge automatically
 app.MergeSkipFields = {
+	-- true -> never
 	["expanded"] = true,
 	["indent"] = true,
-	["modItemID"] = true,
 	["g"] = true,
-	["u"] = true,
-	["pvp"] = true,
-	["pb"] = true,
-	["requireSkill"] = true,
+	-- 1 -> only when cloning
+	["modItemID"] = 1,
+	["u"] = 1,
+	["pvp"] = 1,
+	["pb"] = 1,
+	["requireSkill"] = 1,
+	["sourceIgnored"] = 1,
 };
 -- Fields on a Thing which are specific to where the Thing is Sourced or displayed in a ATT window
 app.SourceSpecificFields = {
@@ -1604,8 +1607,9 @@ app.SourceSpecificFields = {
 	["pb"] = true,
 	["requireSkill"] = true,
 };
--- merges the properties of the t group into the g group, making sure not to alter the filterability of the group
-local MergeProperties = function(g, t, noReplace)
+-- Merges the properties of the t group into the g group, making sure not to alter the filterability of the group.
+-- Additionally can specify that the object is being cloned so as to skip special merge restrictions
+local MergeProperties = function(g, t, noReplace, clone)
 	if g and t then
 		local skips = app.MergeSkipFields;
 		if noReplace then
@@ -1619,6 +1623,17 @@ local MergeProperties = function(g, t, noReplace)
 					if not rawget(g, k) then
 						rawset(g, k, v);
 					end
+				end
+			end
+		elseif clone then
+			for k,v in pairs(t) do
+				-- certain keys should never transfer to the merge group directly
+				if k == "parent" then
+					if not rawget(g, "sourceParent") then
+						rawset(g, "sourceParent", v);
+					end
+				elseif skips[k] ~= true then
+					rawset(g, k, v);
 				end
 			end
 		else
@@ -1672,8 +1687,8 @@ CreateObject = function(t, rootOnly)
 	-- already an object, so need to create a new instance of the same data
 	if t.key then
 		local s = {};
-		-- if app.DEBUG_PRINT then print("CreateObject from key via merge",t.key,t[t.key], t, s); end
-		MergeProperties(s, t);
+		-- app.PrintDebug("CreateObject from key via merge",t.key,t[t.key], t, s);
+		MergeProperties(s, t, nil, true);
 		-- include the raw g since it will be replaced at the end with new objects
 		s.g = t.g;
 		t = s;
@@ -1794,32 +1809,6 @@ end
 -- Clones the data and attempts to create all sub-groups into cloned objects as well
 local function CloneData(data)
 	return CreateObject(data);
-	--[[
-	local clone = {};
-	if data then
-		if app.DEBUG_PRINT then print("CloneData for",data.key,data[data.key],data,clone); end
-		MergeProperties(clone, data);
-		if data.parent then clone.sourceParent = data.parent; end
-		-- clone = setmetatable(clone, getmetatable(data));
-		-- for key,value in pairs(data) do
-		-- 	rawset(clone, key, value);
-		-- 	if key == "parent" then
-		-- 		rawset(clone, "sourceParent", value);
-		-- 	end
-		-- end
-		if app.DEBUG_PRINT then print("CloneData done",clone.key,clone[clone.key],data,clone); end
-		if data.g then
-			clone.g = {};
-			for i,group in ipairs(data.g) do
-				local child = CreateObject(group);
-				rawset(child, "sourceParent", nil);
-				rawset(child, "parent", clone);
-				tinsert(clone.g, child);
-			end
-		end
-	end
-	return clone;
-	--]]
 end
 local function RawCloneData(data)
 	local clone = {};
@@ -4420,7 +4409,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		end
 	end
 
-	if topLevelSearch then
+	if topLevelSearch and not app.ATTWindowTooltip then
 		-- Add various text to the group now that it has been consolidated from all sources
 		if group.isLimited then
 			tinsert(info, 1, { left = L.LIMITED_QUANTITY, wrap = false, color = "ff66ccff" });
@@ -6620,6 +6609,8 @@ local function ClearTooltip(self)
 	self.AttachComplete = nil;
 	self.MiscFieldsComplete = nil;
 	self.UpdateTooltip = nil;
+
+	app.ATTWindowTooltip = nil;
 end
 
 -- Tooltip Hooks
@@ -14759,6 +14750,9 @@ RowOnEnter = function (self)
 			GameTooltip:ClearLines();
 		end
 
+		-- track that an ATT row is causing the tooltip
+		app.ATTWindowTooltip = true;
+
 		-- NOTE: Order matters, we "fall-through" certain values in order to pass this information to the item ID section.
 		if not reference.creatureID then
 			if reference.itemID then
@@ -15136,41 +15130,38 @@ RowOnEnter = function (self)
 			end
 		end
 
-		-- Additional information if the row did not generate a search result for the tooltip
-		if not GameTooltip.HasATTSearchResults then
-			-- Lore
-			if app.Settings:GetTooltipSetting("Lore") and reference.lore then
-				GameTooltip:AddLine(reference.lore, 0.4, 0.8, 1, 1);
-			end
-			-- Description
-			if app.Settings:GetTooltipSetting("Descriptions") and reference.description then
-				GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1);
-			end
-			-- an item used for a faction which is repeatable
-			if reference.itemID and reference.factionID and reference.repeatable then
-				GameTooltip:AddLine(L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(group.factionID)) or ("Faction #" .. tostring(group.factionID))) .. "'", 0.4, 0.8, 1, 1, true);
-			end
-			-- Unobtainable
-			if reference.u then
-				GameTooltip:AddLine(L["UNOBTAINABLE_ITEM_REASONS"][reference.u][2], 1, 1, 1, 1, true);
-			end
-			-- Pet Battles
-			if reference.pb then
-				GameTooltip:AddLine(L["REQUIRES_PETBATTLES"], 1, 1, 1, 1, true);
-			end
-			-- PvP
-			if reference.pvp then
-				GameTooltip:AddLine(L["REQUIRES_PVP"], 1, 1, 1, 1, true);
-			end
-			-- Ignored for Source/Progress
-			if reference.sourceIgnored then
-				GameTooltip:AddLine(L["DOES_NOT_CONTRIBUTE_TO_PROGRESS"], 1, 1, 1, 1, true);
-			end
-			-- Has a symlink for additonal information
-			if reference.sym then
-				GameTooltip:AddLine(L["SYM_ROW_INFORMATION"], 1, 1, 1, 1, true);
-			end
-		-- else app.PrintDebug("skipped common tooltip info due to search results")
+		-- Additional information (search will not insert this information when the tooltip is from an ATT row)
+		-- Lore
+		if app.Settings:GetTooltipSetting("Lore") and reference.lore then
+			GameTooltip:AddLine(reference.lore, 0.4, 0.8, 1, 1);
+		end
+		-- Description
+		if app.Settings:GetTooltipSetting("Descriptions") and reference.description then
+			GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1);
+		end
+		-- an item used for a faction which is repeatable
+		if reference.itemID and reference.factionID and reference.repeatable then
+			GameTooltip:AddLine(L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(group.factionID)) or ("Faction #" .. tostring(group.factionID))) .. "'", 0.4, 0.8, 1, 1, true);
+		end
+		-- Unobtainable
+		if reference.u then
+			GameTooltip:AddLine(L["UNOBTAINABLE_ITEM_REASONS"][reference.u][2], 1, 1, 1, 1, true);
+		end
+		-- Pet Battles
+		if reference.pb then
+			GameTooltip:AddLine(L["REQUIRES_PETBATTLES"], 1, 1, 1, 1, true);
+		end
+		-- PvP
+		if reference.pvp then
+			GameTooltip:AddLine(L["REQUIRES_PVP"], 1, 1, 1, 1, true);
+		end
+		-- Ignored for Source/Progress
+		if reference.sourceIgnored then
+			GameTooltip:AddLine(L["DOES_NOT_CONTRIBUTE_TO_PROGRESS"], 1, 1, 1, 1, true);
+		end
+		-- Has a symlink for additonal information
+		if reference.sym then
+			GameTooltip:AddLine(L["SYM_ROW_INFORMATION"], 1, 1, 1, 1, true);
 		end
 
 		-- Further conditional texts that can be displayed
@@ -15527,12 +15518,12 @@ RowOnEnter = function (self)
 			"name",
 			"key",
 			"hash",
+			"link",
 		};
 		GameTooltip:AddLine("-- Extra Fields:");
 		for _,key in ipairs(fields) do
 			GameTooltip:AddDoubleLine(key,tostring(reference[key]));
 		end
-		GameTooltip:AddDoubleLine("sortProgress",app.GetGroupSortValue(reference));
 		GameTooltip:AddDoubleLine("Row Indent",tostring(CalculateRowIndent(reference)));
 		-- END DEBUGGING]]
 

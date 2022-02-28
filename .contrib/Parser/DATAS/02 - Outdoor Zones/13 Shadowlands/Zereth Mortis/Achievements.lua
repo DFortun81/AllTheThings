@@ -7,6 +7,94 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			ach(15391, {	-- Adventurer of Zereth Mortis
 				ach(15512),	-- Adventures in Zereth Mortis
 			}),
+			ach(15211, sharedDataSelf({	-- Completing the Code
+					["cost"] = {
+						{ "i", 187909, 1 },	-- Unstable Containment Trap (permanent vendor item)
+						{ "i", 187684, 1 },	-- Containment Trap (quest item)
+					},
+				}, {
+				["_achcat"] = ACHIEVEMENT_CATEGORY_SHADOWLANDS_EXP,
+				["g"] = {
+					i(187793),	-- Personal Containment Trap (TOY!)
+					crit(1, {
+						["crs"] = { 181221 },	-- Bygone Elemental
+						["coord"] = { 61.9, 68, ZERETH_MORTIS },
+					}),
+					crit(2, {	-- Gaiagantic
+						["crs"] = { 181223 },
+						["description"] = "Only Available during the Daily Quest: Overgrown Story(64785).",
+						["coord"] = { 60.9, 64.4, ZERETH_MORTIS },
+					}),
+					crit(3, {
+						["crs"] = { 181219 },	-- Moss-Choked Guardian
+						["coord"] = { 43.7, 90.2, ZERETH_MORTIS },
+					}),
+					crit(4, {
+						["crs"] = { 179007 },	-- Overgrown Geomental
+						["coord"] = { 61.6, 68.6, ZERETH_MORTIS },
+					}),
+					crit(5, {
+						["crs"] = { 181287 },	-- Gorged Runefeaster
+						["coord"] = { 36.1, 38.5, ZERETH_MORTIS },
+					}),
+					crit(6, {
+						["crs"] = { 181208 },	-- Enchained Servitor
+						["coord"] = { 62.5, 24.6, ZERETH_MORTIS },
+					}),
+					crit(7, {
+						["crs"] = { 184819 },	-- Dominated Irregular
+						["coord"] = { 46.0, 7.6, ZERETH_MORTIS },
+					}),
+					crit(8, {
+						["crs"] = { 181292 },	-- Misaligned Enforcer
+						["description"] = "Has a long pathway, Start: 61.1 47.7 Finish: 58.1, 44.3.",
+						["coord"] = { 56.2, 46.8, ZERETH_MORTIS },
+					}),
+					crit(9, {
+						["crs"] = { 181293 },	-- Suspicious Nesmin
+						["description"] = "Friendly NPC.",
+						["coord"] = { 35, 64.1, ZERETH_MORTIS },
+					}),
+					crit(10, {
+						["crs"] = { 181294 },	-- Runegorged Bufonid
+						["coord"] = { 50.2, 60.2, ZERETH_MORTIS },
+					}),
+					crit(11, {
+						["crs"] = { 178835 },	-- Sharpeye Collector
+						["coord"] = { 53.5, 75.1, ZERETH_MORTIS },
+					}),
+					crit(12, {
+						["crs"] = { 181295 },	-- Runethief Xy'lora
+						["description"] = "This NPC is in stealth.",
+						["coord"] = { 64.2, 52, ZERETH_MORTIS },
+					}),
+					crit(13, {
+						["crs"] = { 181344 },	-- Runefur
+						["coord"] = { 39.8, 52, ZERETH_MORTIS },
+					}),
+					crit(14, {
+						["crs"] = { 181349 },	-- Cipherclad
+						["coord"] = { 39, 58.5, ZERETH_MORTIS },
+					}),
+					crit(15, {
+						["crs"] = { 181352 },	-- Bitterbeak
+						["coord"] = { 41.7, 62.3, ZERETH_MORTIS },
+					}),
+					crit(16, {
+						["crs"] = { 181222 },	-- Over-charged Vespoid
+						["coord"] = { 62.3, 60.1, ZERETH_MORTIS },
+					}),
+					crit(17, {
+						["crs"] = { 181290 },	-- Corrupted Runehoarder
+						["description"] = "Has a big patrol path.",
+						["coord"] = { 46.7, 59.4, ZERETH_MORTIS },
+					}),
+					crit(18, {
+						["crs"] = { 182798 },	-- Twisted Warpcrafter
+						["coord"] = { 45.1, 21.8, ZERETH_MORTIS },
+					}),
+				},
+			})),
 			ach(15404),	-- Cosmic Empowerment
 			ach(15392, {	-- Dune Dominance
 				i(190111),	-- Escutcheon of Beautiful Death

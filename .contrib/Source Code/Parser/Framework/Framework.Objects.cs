@@ -1510,6 +1510,7 @@ namespace ATT
                     case "hideText":
                     case "ordered":
                     case "sort":
+                    case "sourceIgnored":
                         {
                             item[field] = Convert.ToBoolean(value);
                             break;
@@ -1861,6 +1862,7 @@ namespace ATT
                             Trace.WriteLine(MiniJSON.Json.Serialize(item));
                         }
                         break;
+                    case "_achcat":
                     case "_drop":
                         item[field] = value;
                         break;

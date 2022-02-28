@@ -219,9 +219,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 				}),
 			},
 		}),
-		ach(15211, sharedDataSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Completing the Code
-			i(187793),	-- Personal Containment Trap (TOY!)
-		})),
 		ach(15404, {	-- Cosmic Empowerment
 			["timeline"] = { "added 9.2.0" },
 		}),
