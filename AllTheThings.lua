@@ -973,7 +973,7 @@ end
 			cache = {};
 			-- "Professions" that anyone can "know"
 			cache[2720] = true;	-- Junkyard Tinkering
-            cache[2819] = true;	-- Protoform Synthesisss
+            cache[2819] = true;	-- Protoform Synthesis
 			SetTempDataMember("PROFESSION_CACHE", cache);
 			local prof1, prof2, archaeology, fishing, cooking, firstAid = GetProfessions();
 			for i,j in ipairs({prof1 or 0, prof2 or 0, archaeology or 0, fishing or 0, cooking or 0, firstAid or 0}) do
