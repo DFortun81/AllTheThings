@@ -753,7 +753,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["g"] = {
 					i(180393),	-- Depraved Darkblade's Epaulets
 					i(180386),	-- Herbalist's Pouch
-					i(180394),	-- Envy Laced Leggings
+					i(180394),	-- Envy-Laced Leggings
 				},
 			}),
 			o(357584, {	-- Vyrtha's Dredglaive
