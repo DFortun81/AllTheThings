@@ -1163,7 +1163,6 @@ root("HiddenQuestTriggers", m(SHADOWLANDS, {
 		--]]
 		--
 
-		q(65706),	-- Triggered when killing Rhuv, Gorger of Ruin
 		q(65707),	-- Triggered when killing Phalangax, the Final Grasp
 		q(65558),	-- Triggered when killing Edra, the Will Grazer
 

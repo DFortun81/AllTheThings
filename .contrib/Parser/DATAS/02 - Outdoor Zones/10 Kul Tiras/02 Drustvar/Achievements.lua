@@ -141,45 +141,45 @@ _.Zones =
 					},
 				}),
 				ach(13064, {	-- Drust the Facts, Ma'am
-					o(296915, {	-- Drust Stele: The Circle
+					crit(1, {	-- Drust Stele: The Circle
 						["coord"] = { 36.8, 64.5, DRUSTVAR },
-						["criteriaID"] = 1,
+						["objectID"] = 296915,
 					}),
-					o(296916, {	-- Drust Stele: The Ritual
+					crit(2, {	-- Drust Stele: The Ritual
 						["coord"] = { 50.8, 73.7, DRUSTVAR },
-						["criteriaID"] = 2,
+						["objectID"] = 296916,
 					}),
-					o(296917, {	-- Drust Stele: The Tree
+					crit(3, {	-- Drust Stele: The Tree
 						["coord"] = { 27.3, 48.3, DRUSTVAR },
-						["criteriaID"] = 3,
+						["objectID"] = 296917,
 					}),
-					o(296918, {	-- Drust Stele: Breath Into Stone
+					crit(4, {	-- Drust Stele: Breath Into Stone
 						["coord"] = { 59.5, 66.7, DRUSTVAR },
-						["criteriaID"] = 4,
+						["objectID"] = 296918,
 					}),
-					o(297627, {	-- Drust Stele: Sacrifice
+					crit(5, {	-- Drust Stele: Sacrifice
 						["coord"] = { 27.6, 57.6, DRUSTVAR },
-						["criteriaID"] = 5,
+						["objectID"] = 297627,
 					}),
-					o(297628, {	-- Drust Stele: Constructs
+					crit(6, {	-- Drust Stele: Constructs
 						["coord"] = { 50.2, 42.5, DRUSTVAR },
-						["criteriaID"] = 6,
+						["objectID"] = 297628,
 					}),
-					o(297629, {	-- Drust Stele: The Cycle
+					crit(7, {	-- Drust Stele: The Cycle
 						["coord"] = { 19.0, 57.9, DRUSTVAR },
-						["criteriaID"] = 7,
+						["objectID"] = 297629,
 					}),
-					o(297630, {	-- Drust Stele: Conflict
+					crit(8, {	-- Drust Stele: Conflict
 						["coord"] = { 46.5, 37.3, DRUSTVAR },
-						["criteriaID"] = 8,
+						["objectID"] = 297630,
 					}),
-					o(297631, {	-- Drust Stele: The Flayed Man
+					crit(9, {	-- Drust Stele: The Flayed Man
 						["coord"] = { 56.6, 86.0, DRUSTVAR },
-						["criteriaID"] = 9,
+						["objectID"] = 297631,
 					}),
-					o(297632, {	-- Drust Stele: Protectors of the Forest
+					crit(10, {	-- Drust Stele: Protectors of the Forest
 						["coord"] = { 44.6, 45.7, DRUSTVAR },
-						["criteriaID"] = 10,
+						["objectID"] = 297632,
 					}),
 				}),
 				ach(13082, {	-- Everything Old Is New Again
@@ -187,25 +187,17 @@ _.Zones =
 					["description"] = "Turn in all items at 44.90, 27.41.",
 					["coord"] = { 44.90, 27.41, DRUSTVAR },
 					["g"] = {
-						o(297939, {	-- Order Of Embers Crossbow
-							["questID"] = 53430,
-							["coord"] = { 35.53, 51.88, DRUSTVAR },
-							["criteriaID"] = 1,	-- Crossbow
+						crit(1, {	-- Crossbow
+							["_quests"] = { 53430 },
 						}),
-						o(297942, {	-- Order Of Embers Flask
-							["questID"] = 53431,
-							["coord"] = { 64.86, 67.80, DRUSTVAR },
-							["criteriaID"] = 2,	-- Flask
+						crit(2, {	-- Flask
+							["_quests"] = { 53431 },
 						}),
-						o(297941, {	-- Order Of Embers Hat
-							["questID"] = 53433,
-							["coord"] = { 55.44, 27.13, DRUSTVAR },
-							["criteriaID"] = 3,	-- Hat
+						crit(3, {	-- Hat
+							["_quests"] = { 53433 },
 						}),
-						o(297940, {	-- Order Of Embers Knife
-							["questID"] = 53432,
-							["coord"] = { 32.57, 58.90, DRUSTVAR },
-							["criteriaID"] = 4,	-- Knife
+						crit(4, {	-- Knife
+							["_quests"] = { 53432 },
 						}),
 					},
 				}),

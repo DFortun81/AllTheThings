@@ -582,6 +582,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "n", 154629 },	-- Thenios
 				["coord"] = { 40.1, 20.0, BASTION },
 				["timeline"] = { "added 9.1.0" },
+				["maps"] = { 827 },	-- Stratholme
 			}),
 			q(59197, {	-- Steward at Work
 				["sourceQuests"] = { 59426 },	-- Your Personal Assistant

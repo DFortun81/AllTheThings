@@ -21,6 +21,22 @@ _.Zones =
 						i(163603),	-- Lucille's Handkerchief
 					},
 				}),
+				o(297939, {	-- Order Of Embers Crossbow
+					["coord"] = { 35.53, 51.88, DRUSTVAR },
+					["questID"] = 53430,
+				}),
+				o(297942, {	-- Order Of Embers Flask
+					["coord"] = { 64.86, 67.80, DRUSTVAR },
+					["questID"] = 53431,
+				}),
+				o(297941, {	-- Order Of Embers Hat
+					["coord"] = { 55.44, 27.13, DRUSTVAR },
+					["questID"] = 53433,
+				}),
+				o(297940, {	-- Order Of Embers Knife
+					["coord"] = { 32.57, 58.90, DRUSTVAR },
+					["questID"] = 53432,
+				}),
 				i(163497, {	-- Wicker Pup
 					["description"] = "You must find each of the four parts from various treasures in the Zone and combine them to form this battle pet.\nRight-Click for more information.",
 					["cost"] = {

@@ -10,8 +10,9 @@ _.Zones =
 			["icon"] = "Interface\\Icons\\inv_misc_tournaments_banner_human",
 			["isRaid"] = true,
 			["maps"] = {
-				1012,	-- Stormwind City (BFA Scenario)
-				1013,	-- The Stockade (BFA Scenario)
+				-- TODO: will need to move to specific scenario quests
+				-- 1012,	-- Stormwind City (BFA Scenario)
+				-- 1013,	-- The Stockade (BFA Scenario)
 			},
 		}),
 	}),

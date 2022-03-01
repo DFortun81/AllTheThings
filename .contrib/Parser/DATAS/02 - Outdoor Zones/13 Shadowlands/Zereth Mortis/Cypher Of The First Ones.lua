@@ -83,7 +83,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				}),
 				--
 				q(65700, {	-- Core Control
-					["description"] = "Requires Trebalim Understanding.",
+					["description"] = "Requires Dealic Understanding.",
 					["sourceQuests"] = { 65433 },	-- Further Research: Trebalim
 					["provider"] = { "n", 177958 },	-- Firim
 					["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
@@ -562,6 +562,7 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				ach(15575),	-- 	9.2 ZM - Cypher System - Talent Research Started - Bassalim
 			}),
 			q(65027),	-- eligible for Firim's Spare Forge-tap
+			q(65028),	-- eligible for Unstable Containment Trap
 			q(65017, {["repeatable"]=true}),	-- Looting 187891, {	-- Empyrean Essence
 			q(65015, {["repeatable"]=true}),	-- Looting 187894, {	-- Energized Firmament
 			q(65622, {["repeatable"]=true}),	-- Looting 187885, {	-- Honeycombed Lattice

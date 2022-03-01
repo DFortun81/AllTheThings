@@ -17549,6 +17549,11 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 								if not row.expanded then ExpandGroupsRecursively(row, true, true); expanded = true; end
 							end
 						end
+						-- No difficulty found to expand, so just expand everything in the list
+						if not expanded then
+							ExpandGroupsRecursively(self.data, true, true);
+							expanded = true;
+						end
 					end
 				end
 				app.PrintDebug("Warn:Difficulty")
@@ -21882,7 +21887,7 @@ app.events.BOSS_KILL = function(id, name, ...)
 	app:RegisterEvent("LOOT_CLOSED");
 end
 app.events.LEARNED_SPELL_IN_TAB = function(spellID, skillInfoIndex, isGuildPerkSpell)
-	-- seems to be a reliable way to notice a player has changed professions? not sure how else often it actually triggers... hopefully not to excessive...
+	-- seems to be a reliable way to notice a player has changed professions? not sure how else often it actually triggers... hopefully not too excessive...
 	if skillInfoIndex == 7 then
 		DelayedCallback(app.GetTradeSkillCache, 2, true);
 	end

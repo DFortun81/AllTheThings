@@ -1002,6 +1002,13 @@ _.Instances = { tier(BFA_TIER, {
 		},
 	}),
 })};
+
+root("HiddenQuestTriggers", tier(BFA_TIER, {
+	inst(1179, {	-- The Eternal Palace
+		q(56948),	-- creating rank 1 essence from Aqueous Reliquaries
+	}),
+}));
+
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(56836),	-- The Eternal Palace: Master's Call

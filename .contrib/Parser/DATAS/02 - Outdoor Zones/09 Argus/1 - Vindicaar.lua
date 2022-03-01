@@ -679,6 +679,7 @@ root("Zones", {
 root("HiddenQuestTriggers", {
 	m(905, {	-- Argus
 		m(886, {	-- Vindicaar
+			q(48308),	-- starting Mythic Azeroth Invasion Plans quest
 			-- Vindicaar Matrix Abilities
 			q(48449),	-- Shroud of Arcane Echoes/Warframe
 			q(48450),	-- Shroud of Arcane Echoes/Fel Heart

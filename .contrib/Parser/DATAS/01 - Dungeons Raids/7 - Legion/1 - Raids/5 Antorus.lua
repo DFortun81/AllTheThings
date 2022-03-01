@@ -1704,6 +1704,38 @@ root("Instances", tier(LEGION_TIER, {
 
 root("HiddenQuestTriggers", tier(LEGION_TIER, {
 	inst(946, {
+		q(45460),	-- Garothi Worldbreaker
+		q(48420),	-- Garothi Worldbreaker (triggered at the same time as above)
+		q(45461),	-- Felhounds of Sargeras
+		q(48422),	-- Felhounds of Sargeras (triggered at the same time as above)
+		q(45462),	-- Antoran High Command
+		q(48423),	-- Antoran High Command (triggered at the same time as above)
+		q(45464),	-- Eonar
+		q(48425),	-- Eonar (triggered at the same time as above)
+		q(49357),	-- Eonar (triggered at the same time as above)
+		q(49359),	-- Eonar (triggered after kill)
+		q(45463),	-- Portal Keeper Hasabel
+		q(48424),	-- Portal Keeper Hasabel (triggered at the same time as above)
+		q(45465),	-- Imonar
+		q(48426),	-- Imonar (triggered at the same time as above)
+		q(45466),	-- Kingaroth
+		q(48427),	-- Kingaroth (triggered at the same time as above)
+		q(45467),	-- Varimathras
+		q(48428),	-- Varimathras (triggered at the same time as above)
+		q(45468),	-- The Coven of Shivarra
+		q(48429),	-- The Coven of Shivarra (triggered at the same time as above)
+		q(45469),	-- Aggramar
+		q(48430),	-- Aggramar (triggered at the same time as above)
+		q(49180),	-- Aggramar (triggered at the same time as above)
+		q(48431),	-- Argus
+		q(49184),	-- Argus (triggered at the same time as above)
+		q(49361),	-- Argus (triggered at the same time as above)
+		q(49363),	-- Argus (Heroic)
+		q(49475),	-- Argus (triggered at the same time as above)
+		q(49364),	-- Argus (triggered first time this character killed Argus on mythic)
+		q(49717),	-- Argus (triggered first time this character killed Argus on mythic)
+		q(49718),	-- Argus (first kill on character) (received Khaz'goroth's Courage 154176 / Aggramar's Conviction 154173)
+		q(49771),	-- Argus (triggered first time this character killed Argus on mythic)
 		d(16, {	-- Mythic
 			q(49358),	-- 'invasion battle' first kill
 			q(49360),	-- Mythic: Eonar -- First Kill

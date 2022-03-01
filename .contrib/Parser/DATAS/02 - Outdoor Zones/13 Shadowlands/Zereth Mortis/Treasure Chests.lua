@@ -84,7 +84,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
 					}),
 					i(190059, {	-- Pirate Pocopoc
-						--["questID"] = ,
+						["questID"] = 65526,
 						["g"] = {
 							crit(3, {	-- Pirate Pocopoc
 								["achievementID"] = 15508,	-- Fashion of the First Ones

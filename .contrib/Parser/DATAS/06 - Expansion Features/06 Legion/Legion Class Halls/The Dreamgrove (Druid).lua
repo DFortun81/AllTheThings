@@ -871,6 +871,13 @@ root("ExpansionFeatures", {
 						}),
 
 						q(44237),	-- Ancients of War
+						q(41412, {	-- The Retreat
+							-- TODO: triggered "Right after completing Light's Charge and picking up Goddess Watch Over You"
+							-- maybe more info? is this actually an HQT instead?
+							["sourceQuests"] = { 44153 },	-- Light's Charge
+							["coord"] = { 60.0, 52.4, 747 },
+							["classes"] = { DRUID },
+						}),
 						q(41413),	-- What Could Go Wrong?
 
 						--[[ TODO: Artifact Appearance  Quests Commented Out For Now

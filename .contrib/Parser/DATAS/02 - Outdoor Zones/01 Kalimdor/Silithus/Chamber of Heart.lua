@@ -17,10 +17,10 @@ root("Zones", {
 				["lvl"] = { 50 },
 				["g"] = {
 					n(ACHIEVEMENTS, {
-						ach(13775, {	-- Essence Overload
+						pvp(ach(13775, {	-- Essence Overload
 							ach(13772),	-- Essence Essentials
 							ach(13773),	-- Essence Gains
-						}),
+						})),
 						ach(12918, {	-- Have a Heart
 							["sourceQuest"] = 51211,	-- The Heart of Azeroth
 						}),
@@ -550,7 +550,7 @@ root("Zones", {
 								56185,	-- Whispers of N'zoth (A)
 								56267,	-- Whispers of N'zoth (H)
 							},
-							["u"] = REMOVED_FROM_GAME,	-- (removed with 8.3)
+							["timeline"] = { "added 8.2.5", "removed 8.3", "added 9.2" },
 						}),
 						q(57393, {	-- Stepping Through the Darkness (Rank 6)
 							["coord"] = { 46.1, 64.0, REPAIRED_CHAMBER_OF_HEART },
@@ -697,7 +697,7 @@ root("Zones", {
 							["sourceQuest"] = 57002,	-- Old Soldier
 							["description"] = "This quest requires finishing the War Campaign and defeating Azshara on any difficulty.",
 							["races"] = ALLIANCE_ONLY,
-							["u"] = REMOVED_FROM_GAME,	-- (removed with 8.3)
+							["timeline"] = { "added 8.2.5", "removed 8.3", "added 9.2" },
 						}),
 						q(56267, {	-- Whispers of N'zoth (H)
 							["provider"] = { "n", 154465 },	-- Earthen Guardian
@@ -708,7 +708,7 @@ root("Zones", {
 							},
 							["description"] = "This quest requires finishing the War Campaign and defeating Azshara on any difficulty.",
 							["races"] = HORDE_ONLY,
-							["u"] = REMOVED_FROM_GAME,	-- (removed with 8.3)
+							["timeline"] = { "added 8.2.5", "removed 8.3", "added 9.2" },
 						}),
 						q(56504, {	-- Wrathion's Journal
 							["provider"] = { "n", 151964 },	-- Spiritwalker Ebonhorn

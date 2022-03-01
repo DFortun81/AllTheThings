@@ -259,14 +259,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				},
 			}),
 			n(182114, {	-- Iska, Outrider of Ruin
-				["crs"] = { 182120 },	-- Rhuv, Gorger of Ruin
 				["coord"] = { 63.8, 27, ZERETH_MORTIS },
 				["questID"] = 65585,
 				["g"] = {
 					crit(1, {	-- Iska, Outrider of Ruin
 						["achievementID"] = 15392,	-- Dune Dominance
 					}),
-					i(190765),	-- Iska's Mawrat Leash (MOUNT!)
 					i(190458),	-- Atrophy's Omnious Bulwark
 					i(190102),	-- Chains of Infectious Serrations
 					i(190103),	-- Pillar of Noxious Dissemination
@@ -357,6 +355,13 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(190127),	-- Marzan's Dancing Twin-Scythe
 					i(190461),	-- Reanimator's Beguiling Baton
 					i(190107),	-- Staff of Broken Coils
+				},
+			}),
+			n(182120, {	-- Rhuv, Gorger of Ruin
+				["coord"] = { 63.8, 27, ZERETH_MORTIS },
+				["questID"] = 65706,
+				["g"] = {
+					i(190765),	-- Iska's Mawrat Leash (MOUNT!)
 				},
 			}),
 			n(183927, {	-- Sand Matriarch Ileus

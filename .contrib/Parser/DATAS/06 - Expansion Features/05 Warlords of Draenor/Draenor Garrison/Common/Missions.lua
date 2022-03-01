@@ -720,6 +720,14 @@ _.ExpansionFeatures =
 						i(127818, {	-- Baleful Plate Treads
 							i(124574),	-- Felbane Greaves
 						}),
+						i(127799, {	-- Baleful Pendant
+							i(124612),	-- Discordant Amulet
+							i(124611),	-- Discordant Collar
+							i(124609),	-- Embittered Locket
+							i(124610),	-- Vexed Chain
+							i(124607),	-- Vexed Necklace
+							i(124608),	-- Vexed Pendant
+						}),
 					},
 				}),
 			}),

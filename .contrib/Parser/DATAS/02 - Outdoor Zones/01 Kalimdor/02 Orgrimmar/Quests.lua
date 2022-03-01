@@ -1083,6 +1083,7 @@ root("HiddenQuestTriggers", {
 	m(KALIMDOR, {
 		m(ORGRIMMAR, {
 			q(54948),	-- something in orgrimmar on lvl 60 necrolord goblin warlock
+			q(51766),	-- cinematic during Horde BFA intro scenario quest
 		}),
 	}),
 });
