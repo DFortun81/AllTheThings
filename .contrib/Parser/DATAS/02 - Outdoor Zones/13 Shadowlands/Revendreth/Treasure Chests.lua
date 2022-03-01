@@ -732,27 +732,28 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				--TODO: ["questID"] = xxxxx,
 				["isDaily"] = true,	-- repeatable??
 				["coords"] = {
-					{ 58.3, 67.8, REVENDRETH },
-					{ 56.9, 69.7, REVENDRETH },
-					{ 58.2, 71.2, REVENDRETH },
-					{ 59.5, 70.3, REVENDRETH },
-					{ 61.9, 75.1, REVENDRETH },
-					{ 61.3, 75.8, REVENDRETH },
-					{ 62.0, 79.7, REVENDRETH },
-					{ 59.8, 78.7, REVENDRETH },
-					{ 60.2, 79.6, REVENDRETH },
-					{ 76.8, 64.7, REVENDRETH },
-					{ 78.1, 66.5, REVENDRETH },
-					{ 77.5, 67.9, REVENDRETH },
-					{ 76.6, 67.6, REVENDRETH },
-					{ 75.6, 68.8, REVENDRETH },
-					{ 77.0, 69.1, REVENDRETH },
-					{ 77.8, 71.0, REVENDRETH },
+					{ 57.0 69.7, REVENDRETH },
+					{ 58.2 71.2, REVENDRETH },
+					{ 58.3 67.8, REVENDRETH },
+					{ 59.5 70.3, REVENDRETH },
+					{ 59.8 78.7, REVENDRETH },
+					{ 60.2 79.6, REVENDRETH },
+					{ 61.3 75.8, REVENDRETH },
+					{ 61.9 75.1, REVENDRETH },
+					{ 62.0 79.7, REVENDRETH },
+					{ 75.6 68.8, REVENDRETH },
+					{ 76.6 67.6, REVENDRETH },
+					{ 76.8 64.7, REVENDRETH },
+					{ 77.0 69.1, REVENDRETH },
+					{ 77.5 67.8, REVENDRETH },
+					{ 77.8 71.0, REVENDRETH },
+					{ 78.1 66.4, REVENDRETH },
+					{ 78.1 66.5, REVENDRETH },
 				},
 				["g"] = {
 					i(180393),	-- Depraved Darkblade's Epaulets
 					i(180386),	-- Herbalist's Pouch
-					i(180394),	-- Envy Laced Leggings
+					i(180394),	-- Envy-Laced Leggings
 				},
 			}),
 			o(357584, {	-- Vyrtha's Dredglaive
