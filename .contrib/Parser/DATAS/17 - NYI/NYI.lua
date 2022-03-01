@@ -53,7 +53,28 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(190943),	-- Jiro Tuning Hammer
 		i(190944),	-- Mace of Renewed Purpose
 		i(190949),	-- Stave of the Eternal Cycle
-
+		-- Quests
+		q(64870),	-- Paragon of Enlightened Brokers (I have this completed /Braghe)
+		q(65152),	-- A Hardened Bond (This is Soulbind Quest for Necrolords new one might cross complete?? /Braghe)
+		q(65249),	-- The Jailer's Defeat (A version already exist of this quest maybe the changed? /Braghe)
+		-- This Three Quests is Probably Raid Skip No names yet
+		q(65762, {
+			["description"] = "Type: |cFFf09f26Raid|r\nArea: |cFFf09f26Sepulcher of the First Ones|r",
+			["lvl"] = 60,
+		}),
+		q(65763, {
+			["description"] = "Type: |cFFf09f26Raid|r\nArea: |cFFf09f26Sepulcher of the First Ones|r",
+			["lvl"] = 60,
+		}),
+		q(65764, {
+			["description"] = "Type: |cFFf09f26Raid|r\nArea: |cFFf09f26Sepulcher of the First Ones|r",
+			["lvl"] = 60,
+		}),
+		-- Solo Shuffle Quests
+		q(65775, {	-- Soloing Strategy
+			["description"] = "Type: |cFFf09f26PvP|r\nArea: |cFFf09f26Oribos|r",
+			["lvl"] = 60,
+		}),
 
 		-- Shit that probably wont come on live
 		-- Misc

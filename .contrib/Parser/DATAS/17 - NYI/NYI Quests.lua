@@ -254,74 +254,15 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(58707),	-- Sorting Through Visions
 			q(58089),	-- Test Quest
 			q(57112),	-- Test Shared Quest
+
+			q(60185),	-- LFGDungeons - BFA - Ny'alotha Raid Finder - 1st-- Idk why under SL_tier
+
+
+			q(55660, { ["name"] = "Time Trials", ["_drop"] = { "g" }, }),	-- Time Trials (Tournament Realm Quest) -- Idk why under SL_tier
 		}),
-		tier(SL_TIER, { -- These Quests might be ingame, very unlikely however.
-			q(60185),	-- LFGDungeons - BFA - Ny'alotha Raid Finder - 1st
-			q(62642),	-- LFGDungeons - SL - Heroic Random - 1st
-			q(62643),	-- LFGDungeons - SL - Heroic Random - Nth
-			q(62644),	-- LFGDungeons - SL - Normal Random - 1st
-			q(62645),	-- LFGDungeons - SL - Normal Random - Nth
-			q(62646),	-- LFGDungeons - SL - Raid Finder - 1st
-			q(62647),	-- LFGDungeons - SL - Raid Finder - Nth
-			q(62071),	-- RRP Test Quest
-			q(62346),	-- Shadowlands (51-59) E
-			q(62349),	-- Shadowlands (51-59) E
-			q(62350),	-- Shadowlands (51-59) E
-			q(62354),	-- Shadowlands (51-59) E
-			q(62355),	-- Shadowlands (51-59) E
-			q(62356),	-- Shadowlands (51-59) E
-			q(62358),	-- Shadowlands (51-59) E
-			q(62359),	-- Shadowlands (51-59) E
-			q(62360),	-- Shadowlands (51-59) E
-			q(60023),	-- Shadowlands (60) E
-			q(60024),	-- Shadowlands (60) E
-			q(60025),	-- Shadowlands (60) E
-			q(60031, {	-- Shadowlands (60) E
-				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
-			}),
-			q(60032),	-- Shadowlands (60) E
-			q(60033),	-- Shadowlands (60) E
-			q(60034),	-- Shadowlands (60) E
-			q(60035, {	-- Shadowlands (60) E
-				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
-			}),
-			q(60036, {	-- Shadowlands (60) E
-				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
-			}),
-			q(60037),	-- Shadowlands (60) E
-			q(60038),	-- Shadowlands (60) E
-			q(60039),	-- Shadowlands (60) E
-			q(60040, {	-- Shadowlands (60) E
-				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
-			}),
-			q(60014),	-- Shadowlands 60 E
-			q(60015),	-- Shadowlands 60 E
-			q(60016),	-- Shadowlands 60 E
-			q(60017),	-- Shadowlands 60 E
-			q(60018),	-- Shadowlands 60 E
-			q(60019),	-- Shadowlands 60 E
-			q(60026, {	-- Shadowlands 60 E
-				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
-			}),
-			q(60027),	-- Shadowlands 60 E
-			q(60028),	-- Shadowlands 60 E
-			q(60029),	-- Shadowlands 60 E
-			q(60030, {	-- Shadowlands 60 E
-				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
-			}),
-			q(60474),	-- Spawn Tracking Unit-Specified World Effect in a WMO Bug
-			q(55660),	-- Time Trials (Tournament Realm Quest)
-			q(62402),	-- Timewalking Campaigns
-		}),
-		q(3064,  {	-- <NYI> <TXT> Pirate Hats
-			["u"] = NEVER_IMPLEMENTED,
-		}),
-		q(241,   {	-- <TEST> HEY MISTER WILSON!
-			["u"] = NEVER_IMPLEMENTED,
-		}),
-		q(11179, {	-- [Temporarily Deprecated Awaiting a New Mob]Finlay Is Gutless
-			["u"] = NEVER_IMPLEMENTED,	-- can't find a history of a non-"temporarily deprecated" version of this quest
-		}),
+		q(3064),	-- <NYI> <TXT> Pirate Hats
+		q(241),	-- <TEST> HEY MISTER WILSON!
+		q(11179),	-- [Temporarily Deprecated Awaiting a New Mob]Finlay Is Gutless -- can't find a history of a non-"temporarily deprecated" version of this quest
 		q(41006),	-- Assassinate That Guy
 		q(41408),	-- Battle: Pandaren Cuisine - Elling Trias
 		q(41405),	-- Battle: Pandaren Cuisine - Sungshin Ironpaw
@@ -331,9 +272,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		q(8478),	-- BETA Choose Your Weapon [Eversong Woods]
 		q(9357),	-- BETA Report to Aeldon Sunbrand [Eversong Woods]
 		q(8896),	-- BETA The Dwarven Spy [Eversong Woods]
-		q(39991, {	-- Blessing of Cenarius
-			["u"] = NEVER_IMPLEMENTED,	-- didn't make it to live, triggers when turning in #39988
-		}),
+		q(39991),	-- Blessing of Cenarius -- didn't make it to live, triggers when turning in #39988
 		q(45816),	-- Choose Order Hall to Support
 		q(46273),	-- The Giver of Quests
 		q(46256),	-- X Treasures Found, 1 Challenge Attempted
@@ -599,7 +538,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(32407),	-- [NYI] Magus Commerce Exchange
 				q(32424),	-- [NYI] What Had To Be Done
 			})),
-			
+
 			-- 5.2.0
 			tier(MOP_TIER, 2.0, bubbleDown({ ["timeline"] = {"created 5.2.0"} }, {
 				q(32475),	-- A Spark of Life
@@ -638,7 +577,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(32508),	-- Welcome to the Island
 				q(32291),	-- [PH] The Fall of Shan Bu
 			})),
-			
+
 			-- 5.3.0
 			tier(MOP_TIER, 3.0, bubbleDown({ ["timeline"] = {"created 5.3.0"} }, {
 				q(32825),	-- Re-Use Me
@@ -1461,11 +1400,53 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			tier(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { "created 9.0.1" } }, {
 				q(60463, { ["name"] = "Anima Appeal", }),	-- Anima Appeal
 				q(62168, { ["name"] = "Bonescript Dispatches", }),	-- Bonescript Dispatches
+				q(62071, { ["name"] = "RRP Test Quest", }),	-- RRP Test Quest
+				q(60014, { ["name"] = "Shadowlands 60 E", }),	-- Shadowlands 60 E
+				q(60015, { ["name"] = "Shadowlands 60 E", }),	-- Shadowlands 60 E
+				q(60016, { ["name"] = "Shadowlands 60 E", }),	-- Shadowlands 60 E
+				q(60017, { ["name"] = "Shadowlands 60 E", }),	-- Shadowlands 60 E
+				q(60018, { ["name"] = "Shadowlands 60 E", }),	-- Shadowlands 60 E
+				q(60019, { ["name"] = "Shadowlands 60 E", }),	-- Shadowlands 60 E
+				q(60026, { ["name"] = "Shadowlands 60 E", ["_drop"] = { "g" }, }),	-- Shadowlands 60 E
+				q(60027, { ["name"] = "Shadowlands 60 E", }),	-- Shadowlands 60 E
+				q(60028, { ["name"] = "Shadowlands 60 E", }),	-- Shadowlands 60 E
+				q(60029, { ["name"] = "Shadowlands 60 E", }),	-- Shadowlands 60 E
+				q(60030, { ["name"] = "Shadowlands 60 E", ["_drop"] = { "g" }, }),	-- Shadowlands 60 E
+				q(60036, { ["name"] = "Shadowlands (60) E", ["_drop"] = { "g" }, }),	-- Shadowlands (60) E
+				q(60040, { ["name"] = "Shadowlands (60) E", ["_drop"] = { "g" }, }),	-- Shadowlands (60) E
+				q(62346, { ["name"] = "Shadowlands (51-59) E", }),	-- Shadowlands (51-59) E
+				q(62349, { ["name"] = "Shadowlands (51-59) E", }),	-- Shadowlands (51-59) E
+				q(62350, { ["name"] = "Shadowlands (51-59) E", }),	-- Shadowlands (51-59) E
+				q(60474, { ["name"] = "Spawn Tracking Unit-Specified World Effect in a WMO Bug", }),	-- Spawn Tracking Unit-Specified World Effect in a WMO Bug
+				q(62402, { ["name"] = "Timewalking Campaigns", }),	-- Timewalking Campaigns
 			})),
 
 			-- 9.0.2
 			tier(SL_TIER, 0.2, bubbleDown({ ["timeline"] = { "created 9.0.2" } }, {
+				q(62642, { ["name"] = "LFGDungeons - SL - Heroic Random - 1st", }),	-- LFGDungeons - SL - Heroic Random - 1st
+				q(62643, { ["name"] = "LFGDungeons - SL - Heroic Random - Nth", }),	-- LFGDungeons - SL - Heroic Random - Nth
+				q(62644, { ["name"] = "LFGDungeons - SL - Normal Random - 1st", }),	-- LFGDungeons - SL - Normal Random - 1st
+				q(62645, { ["name"] = "LFGDungeons - SL - Normal Random - Nth", }),	-- LFGDungeons - SL - Normal Random - Nth
+				q(62646, { ["name"] = "LFGDungeons - SL - Raid Finder - 1st", }),	-- LFGDungeons - SL - Raid Finder - 1st
+				q(62647, { ["name"] = "LFGDungeons - SL - Raid Finder - Nth", }),	-- LFGDungeons - SL - Raid Finder - Nth
 				q(63192, { ["name"] = "Path of Ascension: Trial of Humility", ["_drop"] = {"g"} }),	-- Path of Ascension: Trial of Humility
+				q(60023, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
+				q(60024, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
+				q(60025, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
+				q(60031, { ["name"] = "Shadowlands (60) E", ["_drop"] = { "g" }, }),	-- Shadowlands (60) E
+				q(60032, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
+				q(60033, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
+				q(60034, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
+				q(60035, { ["name"] = "Shadowlands (60) E", ["_drop"] = { "g" }, }),	-- Shadowlands (60) E
+				q(60037, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
+				q(60038, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
+				q(60039, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
+				q(62354, { ["name"] = "Shadowlands (51-59) E", }),	-- Shadowlands (51-59) E
+				q(62355, { ["name"] = "Shadowlands (51-59) E", }),	-- Shadowlands (51-59) E
+				q(62356, { ["name"] = "Shadowlands (51-59) E", }),	-- Shadowlands (51-59) E
+				q(62358, { ["name"] = "Shadowlands (51-59) E", }),	-- Shadowlands (51-59) E
+				q(62359, { ["name"] = "Shadowlands (51-59) E", }),	-- Shadowlands (51-59) E
+				q(62360, { ["name"] = "Shadowlands (51-59) E", }),	-- Shadowlands (51-59) E
 				q(63041, { ["name"] = "Short-Supply Reward", ["_drop"] = {"g"} }),	-- Short-Supply Reward
 				q(61524, { ["name"] = "The Ember Court", }),	-- The Ember Court
 			})),
@@ -1510,7 +1491,24 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 
 			-- 9.2.0
 			tier(SL_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 9.2.0" } }, {
-
+				q(64006, { ["name"] = "Nav Test: Zereth Mortis", }),	-- Nav Test: Zereth Mortis
+				q(65703, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
+				q(65704, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
+				q(65705, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
+				q(64582, { ["name"] = "Yuni-Test", }),	-- Yuni-Test
+				-- No Name?
+				q(65250, {
+					["lvl"] = 60,
+				}),
+				q(65260, {
+					["lvl"] = 60,
+				}),
+				q(65263, {
+					["lvl"] = 60,
+				}),
+				q(65297, {
+					["lvl"] = 60,
+				}),
 			})),
 
 			-- 9.2.5

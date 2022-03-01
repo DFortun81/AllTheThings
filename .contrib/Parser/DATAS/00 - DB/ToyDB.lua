@@ -787,6 +787,7 @@ i(187176);	-- Vesper of Harmony
 i(187913);	-- Apprentice Slimemancer's Boots
 i(187705);	-- Choofa's Call
 i(188698);	-- Eagger Basket
+i(187957);	-- Encrypted Banner of the Opportune
 i(188701);	-- Fire Festival Batons
 i(188699);	-- Insulated Dancing Insoles
 i(187861);	-- Magical Seeds
@@ -807,9 +808,8 @@ i(188695);	-- Summer Cranial Skillet
 i(187512);	-- Tome of Small Sins
 i(187834);	-- Tormented Banner of the Opportune
 i(188680);	-- Winter Veil Chorus Book
--- NYI?
+-- NYI
 i(187958);	-- PH - Banner of the Opportune
-i(187957);	-- PH - Banner of the Opportune
 i(187959);	-- PH - Banner of the Opportune
 
 

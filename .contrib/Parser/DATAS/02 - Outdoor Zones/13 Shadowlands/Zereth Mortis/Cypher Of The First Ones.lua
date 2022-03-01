@@ -485,7 +485,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 						},
 					}),
 					i(187909, {	-- Unstable Containment Trap
-						["description"] = "This item is only available after completing the Daily Quest: Overgrown Story (64785).",
+						["description"] = "This item is only available after completing the Daily Quest: Overgrown Story (64785) or Trappings of Success(64854).",
 					}),
 				}),
 				n(185748, {	-- Mai Toa
@@ -540,7 +540,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 })));
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	m(SHADOWLANDS, {
+	tier(SL_TIER, {
 		m(ZERETH_MORTIS, {
 			i(190392),	-- Pocopoc Shield
 			n(ACHIEVEMENTS, {
@@ -561,18 +561,21 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				ach(15574),	-- 	9.2 ZM - Cypher System - Talent Research Started - Sopranian
 				ach(15575),	-- 	9.2 ZM - Cypher System - Talent Research Started - Bassalim
 			}),
-			q(65027),	-- eligible for Firim's Spare Forge-tap
-			q(65028),	-- eligible for Unstable Containment Trap
-			q(65017, {["repeatable"]=true}),	-- Looting 187891, {	-- Empyrean Essence
-			q(65015, {["repeatable"]=true}),	-- Looting 187894, {	-- Energized Firmament
-			q(65622, {["repeatable"]=true}),	-- Looting 187885, {	-- Honeycombed Lattice
-			q(65014, {["repeatable"]=true}),	-- Looting 187892, {	-- Incorporeal Sand
-			q(65005, {["repeatable"]=true}),	-- Looting 187879, {	-- Pollinated Extraction
-			q(65560, {["repeatable"]=true}),	-- Looting 190129, {	-- Serene Pigment
-			q(65018, {["repeatable"]=true}),	-- Looting 187889, {	-- Unstable Agitant
-			q(65016, {["repeatable"]=true}),	-- Looting 187893, {	-- Volatile Precursor
-			q(65559, {["repeatable"]=true}),	-- Looting 190128, {	-- Wayward Essence
-			q(65019, {["repeatable"]=true}),	-- Looting 187890, {	-- Anima-charged Yolk
 		}),
 	}),
 }));
+
+root("HiddenQuestTriggers", {
+	q(65027),	-- eligible for Firim's Spare Forge-tap
+	q(65028),	-- eligible for Unstable Containment Trap
+	q(65017, {["repeatable"]=true}),	-- Looting 187891, {	-- Empyrean Essence
+	q(65015, {["repeatable"]=true}),	-- Looting 187894, {	-- Energized Firmament
+	q(65622, {["repeatable"]=true}),	-- Looting 187885, {	-- Honeycombed Lattice
+	q(65014, {["repeatable"]=true}),	-- Looting 187892, {	-- Incorporeal Sand
+	q(65005, {["repeatable"]=true}),	-- Looting 187879, {	-- Pollinated Extraction
+	q(65560, {["repeatable"]=true}),	-- Looting 190129, {	-- Serene Pigment
+	q(65018, {["repeatable"]=true}),	-- Looting 187889, {	-- Unstable Agitant
+	q(65016, {["repeatable"]=true}),	-- Looting 187893, {	-- Volatile Precursor
+	q(65559, {["repeatable"]=true}),	-- Looting 190128, {	-- Wayward Essence
+	q(65019, {["repeatable"]=true}),	-- Looting 187890, {	-- Anima-charged Yolk
+});

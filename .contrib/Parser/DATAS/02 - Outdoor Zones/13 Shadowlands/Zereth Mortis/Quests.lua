@@ -783,9 +783,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(190582),	-- Symbol of the Vombata
 				},
 			}),
-			-- Drim Questline (Chap 1)
+			-- Drim Questline
 			q(65463, {	-- The Wellspring of the First Ones
-				["sourceQuests"] = { 64958 },	-- The Forces Gather
+				--["sourceQuests"] = { 64958 },	-- The Forces Gather
 				["provider"] = { "n", 181084 },	-- Drim
 				["coord"] = { 61.4, 49.3, ZERETH_MORTIS },
 				["isBreadcrumb"] = true,
@@ -925,7 +925,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["sourceQuests"] = { 65305 },	-- The Way Forwards
 				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 35, 64.8, ZERETH_MORTIS },
-				["repeatable"] = true,
+				["isWeekly"] = true,
 				["g"] = {
 					i(190610, {	-- Tribute of the Enlightened Elders
 						i(189462),	-- Schematic: Bronze Helicid
@@ -935,6 +935,25 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 		}),
 		n(QUESTS, sharedData({ ["isDaily"] = true }, {
 			-- Confirmed
+			q(64852, {	-- Aeon Matrix
+				["sourceQuests"] = {
+					64579,	-- Hallow Efforts
+					64717	-- Materials of Creation
+				},
+				["provider"] = { "i", 187527 },	-- Aeon Matrix
+			}),
+			q(64860, {	-- Aetheric Lattice
+				["sourceQuests"] = {
+					64579,	-- Hallow Efforts
+					64717	-- Materials of Creation
+				},
+				["provider"] = { "i", 187788 },	-- Aetheric Lattice
+			}),
+			q(65265, {	-- Buried Remnants
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
+				["provider"] = { "n", 181179 },	-- Elder Nirav
+				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
+			}),
 			q(65256, {	-- Cluck, Cluck, Boom
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
@@ -943,39 +962,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(188697),	-- Kinematic Micro-Life Recalibrator
 				},
 			}),
-			q(64717, {	-- Materials of Creation
-				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
-				["provider"] = { "n", 177958 },	-- Firim
-				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
-			}),
-			q(65072, {	-- Not Safe For Work
-				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
-				["provider"] = { "n", 180630 },	-- Elder Amir
-				["coord"] = { 61.4, 51.5, ZERETH_MORTIS },
-			}),
-			q(64785, {	-- Overgrown Story
-				["description"] = "Has containment trap for the achievement",
-				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
-				["provider"] = { "n", 177958 },	-- Firim
-				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
-			}),
-			q(65142, {	-- Portal Play
-				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
-				["provider"] = { "n", 177958 },	-- Firim
-				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
-				["g"] = {
-					i(188170),	-- Portal Initiator
-				},
-			}),
-			q(64852, {	-- Aeon Matrix
-				["sourceQuests"] = {
-					64579,	-- Hallow Efforts
-					64717	-- Materials of Creation
-				},
-				["provider"] = { "i", 187527 },	-- Aeon Matrix
-			}),
 			q(64861, {	-- Kismetric Disc
-				["description"] = "Starts with the item: Kismetric Circlet(187791)",
 				["sourceQuests"] = {
 					64579,	-- Hallow Efforts
 					64717	-- Materials of Creation
@@ -992,7 +979,43 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					}),
 				},
 			}),
-
+			q(64717, {	-- Materials of Creation
+				["description"] = "Has Forge-tap for the achievement",
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
+				["provider"] = { "n", 177958 },	-- Firim
+				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
+			}),
+			q(65072, {	-- Not Safe For Work
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
+				["provider"] = { "n", 180630 },	-- Elder Amir
+				["coord"] = { 61.4, 51.5, ZERETH_MORTIS },
+			}),
+			q(64785, {	-- Overgrown Story
+				["description"] = "Has Containment Trap for the achievement",
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
+				["provider"] = { "n", 177958 },	-- Firim
+				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
+			}),
+			q(65142, {	-- Portal Play
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
+				["provider"] = { "n", 177958 },	-- Firim
+				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
+				["g"] = {
+					i(188170),	-- Portal Initiator
+				},
+			}),
+			q(64977, {	-- Step Into the Ring
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
+				["provider"] = { "n", 177958 },	-- Firim
+				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
+			}),
+			q(64854, {	-- Trappings of Success
+				["description"] = "Has Containment Trap for the achievement",
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
+				["provider"] = { "n", 177958 },	-- Firim
+				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
+			}),
+			--
 
 
 			q(65268, {	-- Bzzzzt!
@@ -1027,11 +1050,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["provider"] = { "n", 181179 },	-- Elder Nirav
 				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
 			}),
-			q(65265, {	-- Buried Remnants
-				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
-				["provider"] = { "n", 181179 },	-- Elder Nirav
-				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
-			}),
 			q(65226, {	-- Fleet-footed and Fastidious
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
@@ -1048,6 +1066,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
 			}),
 			q(64579, {	-- Hallow Efforts
+				["description"] = "Has Forge-tap for the achievement",
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
@@ -1076,34 +1095,16 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["provider"] = { "n", 180289 },	-- Mai Soh
 				["coord"] = { 58.3, 50, ZERETH_MORTIS },
 			}),
-			q(64977, {	-- Step Into the Ring
-				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
-				["provider"] = { "n", 177958 },	-- Firim
-				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
-			}),
 			q(65364, {	-- Super Jiro
 				["description"] = "This Daily is available after researching Altonian Understanding",
 				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
 				["provider"] = { "n", 184434 },	-- Mai Ber
 				["coord"] = { 58.4, 49.7, ZERETH_MORTIS },
 			}),
-			q(64854, {	-- Trappings of Success
-				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
-				["provider"] = { "n", 177958 },	-- Firim
-				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
-			}),
 			q(65096, {	-- Your Death Or Mine
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 180630 },	-- Elder Amir
 				["coord"] = { 61.4, 51.5, ZERETH_MORTIS },
-			}),
-			-- Drop Quests
-			q(64860, {	-- Aetheric Lattice
-				["sourceQuests"] = {
-					64579,	-- Hallow Efforts
-					64717	-- Materials of Creation
-				},
-				["provider"] = { "i", 187788 },	-- Aetheric Lattice
 			}),
 		})),
 	}),

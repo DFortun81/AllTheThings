@@ -123,6 +123,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					["coord"] = { 34.7, 56.5, ORIBOS },
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
+				q(65773, {	-- Solo Mission
+					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
+					["coord"] = { 34.7, 56.5, ORIBOS },
+					["isWeekly"] = true,
+					["timeline"] = { "added 9.2.0" },
+				}),
 				q(65034, {	-- Return to Oribos
 					["sourceQuests"] = { 65033 },	-- Observing Victory
 					["provider"] = { "n", 174922 },	-- Strategist Zo'rak

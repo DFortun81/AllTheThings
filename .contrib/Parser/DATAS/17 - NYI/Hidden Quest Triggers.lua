@@ -2,7 +2,7 @@
 --     N E V E R    I M P L E M E N T E D    M O D U L E     --
 ---------------------------------------------------------------
 
-_.HiddenQuestTriggers = {
+root("HiddenQuestTriggers", {
 	-- Note!! Here is where we can put all the hidden quest triggers in the game that don't exactly fit anywhere.
 	-- When adding a quest trigger be sure to put a description of how it triggered
 	n(QUESTS, {	-- Quests
@@ -3427,4 +3427,4 @@ _.HiddenQuestTriggers = {
 		q(39128),	-- Tanaan Vignette
 		q(39713),	-- Tracking Quest - Pops immediately on new characters but no other info known. Possibly legendary ring related
 	}),
-};
+});
