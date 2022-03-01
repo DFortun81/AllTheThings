@@ -509,7 +509,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				-- #else
 				i(17724),	-- Pattern: Green Holiday Shirt
 				-- #endif
-				i(17712, {	-- Winter Veil Disguise Kit
+				i(17712, {	-- Winter Veil Disguise Kit (TOY!)
 					["description"] = "Greatfather Winter will mail this to you 24 hours after you complete the 'A Smokywood Pastures Thank You!' quest.",
 					["sourceQuests"] = {
 						7045,	-- A Smokywood Pastures Thank You! (Alliance)
@@ -839,7 +839,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["lvl"] = 10,
 				["groups"] = {
-					i(37710, {	-- Crashin' Thrashin' Racer Controller
+					i(37710, {	-- Crashin' Thrashin' Racer Controller (TOY!)
 						-- #if ANYCLASSIC
 						["timeline"] = { "created 2.4.3.8601", "added 3.0.1" },
 						-- #else
@@ -873,7 +873,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["lvl"] = 10,
 				["groups"] = {
-					i(46709, {	-- MiniZep Controller
+					i(46709, {	-- MiniZep Controller (TOY!)
 						["timeline"] = { "added 4.0.3.13329" },
 					}),
 				},
@@ -1713,7 +1713,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					i(104317),	-- Rotten Helper Box
 					i(178533),	-- Shaking Pet Carrier
 					-- Toys
-					i(54343),	-- Blue Crashin' Thrashin' Racer Controller
+					i(54343),	-- Blue Crashin' Thrashin' Racer Controller (TOY!)
 					i(108632),	-- Crashin' Thrashin' Flamer Controller
 					i(104318),	-- Crashin' Thrashin' Flyer Controller
 					i(172223, {	-- Crashin' Thrashin' Battleship
@@ -1722,7 +1722,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					i(172222, {	-- Crashin' Thrashin' Juggernaught
 						["races"] = HORDE_ONLY,
 					}),
-					i(37710),	-- Crashin' Thrashin' Racer Controller
+					i(37710),	-- Crashin' Thrashin' Racer Controller (TOY!)
 					i(116763),	-- Crashin' Thrashin' Shredder Controller
 					i(139337),	-- Disposable Winter Veil Suits
 					i(128636),	-- Endothermic Blaster
@@ -1730,19 +1730,19 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					i(162973, {	-- Greatfather Winter's Hearthstone
 						["timeline"] = { "added 8.1" },	-- 8.0.1 it was added in the Gift, so will say 8.1 for this source
 					}),
-					i(46709),	-- MiniZep Controller
+					i(46709),	-- MiniZep Controller (TOY!)
 					i(116689),	-- Pineapple Lounge Cushion
 					i(128776),	-- Red Wooden Sled
 					i(116690),	-- Safari Lounge Cushion
 					i(116456),	-- Scroll of Storytelling
 					i(90888),	-- Special Edition Foot Ball
 					i(90883),	-- The Pigskin
-					i(54438),	-- Tiny Blue Ragdoll
-					i(54437),	-- Tiny Green Ragdoll
-					i(44606),	-- Toy Train Set
+					i(54438),	-- Tiny Blue Ragdoll (TOY!)
+					i(54437),	-- Tiny Green Ragdoll (TOY!)
+					i(44606),	-- Toy Train Set (TOY!)
 					i(151348),	-- Toy Weapon Set [Horde]
 					i(172219),	-- Wild Holly
-					i(45057),	-- Wind-Up Train Wrecker
+					i(45057),	-- Wind-Up Train Wrecker (TOY!)
 					i(188680),	-- Winter Veil Chorus Book
 					i(116691),	-- Zhevra Lounge Cushion
 					i(151343, {	-- Hearthstation [A]

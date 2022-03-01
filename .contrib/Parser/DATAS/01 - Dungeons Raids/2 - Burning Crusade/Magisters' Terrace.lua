@@ -244,7 +244,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 				["lvl"] = lvlsquish(70, 30, 70),
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
-						i(35275, {	-- Orb of Sin'dorei
+						i(35275, {	-- Orb of Sin'dorei (TOY!)
 							["crs"] = {
 								24723,	-- Selin Fireheart
 								24744,	-- Vexallus

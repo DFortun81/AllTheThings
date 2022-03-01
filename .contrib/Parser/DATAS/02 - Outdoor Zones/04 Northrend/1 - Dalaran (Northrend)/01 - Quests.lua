@@ -14,7 +14,7 @@ _.Zones =
 						["g"] = {
 							i(46004),	-- Sealed Vial of Poison
 							i(44983),	-- Strand Crawler Pet
-							i(45984),	-- Unusual Compass Toy
+							i(45984),	-- Unusual Compass (TOY!)
 							i(33820),	-- Weather-Beaten Fishing Hat
 							i(45986, {	-- Tiny Titanium Lockbox
 								i(45995),	-- Forgotten Necklace

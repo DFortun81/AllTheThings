@@ -227,18 +227,18 @@ root("Zones", m(KALIMDOR, {
 				["g"] = {
 					i(54436),	-- Blue Clockwork Rocket Bot Pet
 					i(95621),	-- Warbot Ignition Key Pet
-					i(54343),	-- Blue Crashin' Thrashin' Racer Controller Toy
+					i(54343),	-- Blue Crashin' Thrashin' Racer Controller (TOY!)
 					i(104324),	-- Foot Ball Toy
 					i(137663),	-- Soft Foam Sword Toy
 					i(104323),	-- The Pigskin Toy
-					i(54438),	-- Tiny Blue Ragdoll Toy
-					i(54437),	-- Tiny Green Ragdoll Toy
-					i(44606),	-- Toy Train Set Toy
-					i(45057),	-- Wind-Up Train Wrecker Toy
-					i(69896, {	-- Yellow Balloon Toy
+					i(54438),	-- Tiny Blue Ragdoll (TOY!)
+					i(54437),	-- Tiny Green Ragdoll (TOY!)
+					i(44606),	-- Toy Train Set Toy (TOY!)
+					i(45057),	-- Wind-Up Train Wrecker Toy (TOY!)
+					i(69896, {	-- Yellow Balloon Toy (TOY!)
 						["u"] = CHILDRENS_WEEK,
 					}),
-					i(69895, {	-- Green Balloon Toy
+					i(69895, {	-- Green Balloon Toy (TOY!)
 						["u"] = CHILDRENS_WEEK,
 					}),
 				},

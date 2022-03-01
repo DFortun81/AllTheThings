@@ -1562,10 +1562,10 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				},
 				["races"] = HORDE_ONLY,
 				["groups"] = {
-					applyholiday(CHILDRENS_WEEK, i(69895, {	-- Green Balloon
+					applyholiday(CHILDRENS_WEEK, i(69895, {	-- Green Balloon (TOY!)
 						["timeline"] = { "added 4.1.0.13682" },
 					})),
-					applyholiday(CHILDRENS_WEEK, i(69896, {	-- Yellow Balloon
+					applyholiday(CHILDRENS_WEEK, i(69896, {	-- Yellow Balloon (TOY!)
 						["timeline"] = { "added 4.1.0.13682" },
 					})),
 				},
@@ -1594,10 +1594,10 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				["timeline"] = { "added 4.1.0.13682" },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
-					applyholiday(CHILDRENS_WEEK, i(69895, {	-- Green Balloon
+					applyholiday(CHILDRENS_WEEK, i(69895, {	-- Green Balloon (TOY!)
 						["timeline"] = { "added 4.1.0.13682" },
 					})),
-					applyholiday(CHILDRENS_WEEK, i(69896, {	-- Yellow Balloon
+					applyholiday(CHILDRENS_WEEK, i(69896, {	-- Yellow Balloon (TOY!)
 						["timeline"] = { "added 4.1.0.13682" },
 					})),
 				},

@@ -8,7 +8,7 @@ root("Promotions", n(-545, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Blizzc
 	}),
 
 	ach(412),	-- Blizzcon 2007 - Murloc Costume
-	i(33079, {	-- Murloc Costume Toy
+	i(33079, {	-- Murloc Costume (TOY!)
 		["timeline"] = { "added 2.1.3.6898" },
 	}),
 

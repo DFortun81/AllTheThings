@@ -185,7 +185,7 @@ root("Holidays", d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
 		-- #endif
 		inst_tw(249, {	-- Magisters' Terrace
 			n(COMMON_BOSS_DROPS, {
-				i(35275, {	-- Orb of Sin'dorei
+				i(35275, {	-- Orb of Sin'dorei (TOY!)
 					["crs"] = {
 						24723,	-- Selin Fireheart
 						24744,	-- Vexallus

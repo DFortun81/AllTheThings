@@ -544,7 +544,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 			crit(15),		-- A Peasant's Silver Coin
 		}),
 		ach(2096,  {	-- The Coin Master
-			i(44430),		-- Titanium Seal of Dalaran
+			i(44430),		-- Titanium Seal of Dalaran (TOY!)
 			crit(1),		-- A Penny For Your Thoughts
 			crit(2),		-- Silver in the City
 			crit(3),		-- There's Gold In That There Fountain

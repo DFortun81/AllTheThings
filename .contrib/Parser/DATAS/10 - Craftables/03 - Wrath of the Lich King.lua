@@ -205,9 +205,9 @@ _.Craftables =
 				i(44413),	-- Mekgineer's Chopper*
 			}),
 			filter(TOYS, {
-				i(40895),	-- Gnomish X-Ray Specs*
-				i(40768),	-- MOLL-E*
-				i(48933),	-- Wormhole Generator: Northrend*
+				i(40895),	-- Gnomish X-Ray Specs (TOY!)
+				i(40768),	-- MOLL-E (TOY!)
+				i(48933),	-- Wormhole Generator: Northrend (TOY!)
 			}),
 			f(55, {		-- Consumables
 				i(41146),	-- Sun Scope

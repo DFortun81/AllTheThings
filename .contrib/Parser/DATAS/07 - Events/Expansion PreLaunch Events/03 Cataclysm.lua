@@ -38,7 +38,7 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 3.3.3.11573", "
 			q(25286, {	-- Words for Delivery
 				["sourceQuest"] = 25283,	-- Prepping the Speech
 				["groups"] = {
-					i(54651),	-- Gnomeregan Pride Toy
+					i(54651),	-- Gnomeregan Pride (TOY!)
 				},
 			}),
 			q(25287, {	-- Words for Delivery
@@ -51,7 +51,7 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 3.3.3.11573", "
 			q(25480, {	-- Dance Of De Spirits
 				["sourceQuest"] = 25470,	-- Lady Of Da Tigers
 				["groups"] = {
-					i(54653),	-- Darkspear Pride
+					i(54653),	-- Darkspear Pride (TOY!)
 				},
 			}),
 			q(25446, {	-- Frogs Away!
@@ -243,7 +243,7 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			q(25500, {	-- Words for Delivery
 				["sourceQuest"] = 25283,	-- Prepping the Speech
 				["groups"] = {
-					i(54651),	-- Gnomeregan Pride Toy
+					i(54651),	-- Gnomeregan Pride (TOY!)
 				},
 			}),
 		}),

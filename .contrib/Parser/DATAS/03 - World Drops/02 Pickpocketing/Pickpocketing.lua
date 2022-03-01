@@ -60,13 +60,13 @@ _.WorldDrops =
 			i(151146),	-- Charmed Band
 		}),
 		filter(TOYS, {
-			i(36863, {	-- Decahedral Dwarven Dice
+			i(36863, {	-- Decahedral Dwarven Dice (TOY!)
 				["description"] = "Can be pickpocketed from Northrend humanoids.",
 			}),
-			i(63269, {	-- Loaded Gnomish Dice
+			i(63269, {	-- Loaded Gnomish Dice (TOY!)
 				["description"] = "Can be pickpocketed from Cataclysm humanoids.",
 			}),
-			i(36862, {	-- Worn Troll Dice
+			i(36862, {	-- Worn Troll Dice (TOY!)
 				["description"] = "Can be pickpocketed from Northrend humanoids.",
 			}),
 		}),

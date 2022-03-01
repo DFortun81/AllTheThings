@@ -233,7 +233,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 							i(50741, {	-- Vile Fumigator's Mask
 								["timeline"] = { "added 3.3.0" },
 							}),
-							i(50471, {	-- The Heartbreaker
+							i(50471, {	-- The Heartbreaker (TOY!)
 								["timeline"] = { "added 3.3.0" },
 							}),
 						},
@@ -250,7 +250,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 							i(50741, {	-- Vile Fumigator's Mask
 								["timeline"] = { "added 3.3.0" },
 							}),
-							-- i(50471, {	-- The Heartbreaker	-- doesn't seem to be possible from the lower-level box
+							-- i(50471, {	-- The Heartbreaker (TOY!)	-- doesn't seem to be possible from the lower-level box
 							-- 	["timeline"] = { "added 3.3.0" },
 							-- }),
 						},
@@ -1471,7 +1471,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 				i(22279, {	-- Lovely Black Dress
 					["timeline"] = { "removed 7.2.5.24116" },
 				}),
-				i(34480, {	-- Romantic Picnic Basket
+				i(34480, {	-- Romantic Picnic Basket (TOY!)
 					["timeline"] = { "added 2.4.0.7897" },
 				}),
 				i(22200),	-- Silver Shafted Arrow
@@ -1576,7 +1576,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 						["timeline"] = { "added 8.1.0.28724" },
 						["cost"] = { { "i", 49927, 150 } },	-- 150x Love Token
 					}),
-					i(34480, {	-- Romantic Picnic Basket
+					i(34480, {	-- Romantic Picnic Basket (TOY!)
 						["timeline"] = { "added 2.4.0.7897" },
 						["cost"] = { { "i", 49927, 10 } },	-- 10x Love Token
 					}),

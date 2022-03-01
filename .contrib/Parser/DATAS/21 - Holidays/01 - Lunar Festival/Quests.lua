@@ -56,7 +56,7 @@ _.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 				["isYearly"] = true,
 				["coord"] = { 53.6, 35.4, MOONGLADE },
 				["g"] = {
-					i(21540),	-- Elune's Lantern
+					i(21540),	-- Elune's Lantern (TOY!)
 					i(21640),	-- Lunar Festival Fireworks Pack
 				},
 			}),

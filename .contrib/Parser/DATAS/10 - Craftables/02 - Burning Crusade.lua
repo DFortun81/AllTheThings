@@ -547,7 +547,7 @@ _.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					i(23841),	-- Gnomish Flame Turret
 					i(23835),	-- Gnomish Poultryizer
 					i(23825),	-- Nigh-Invulnerability Belt
-					i(30544),	-- Ultrasafe Transporter: Toshley's Station
+					i(30544),	-- Ultrasafe Transporter: Toshley's Station (TOY!)
 				}),
 				category(185, {	-- Goggles
 					i(23829),	-- Gnomish Battle Goggles
@@ -628,7 +628,7 @@ _.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			applyclassicphase(TBC_PHASE_TWO, i(20475)),	-- Adamantite Arrow Maker
 			applyclassicphase(TBC_PHASE_TWO, i(34504)),	-- Adamantite Shell Machine
 			-- #endif
-			i(23767),	-- Crashin' Thrashin' Robot
+			i(23767),	-- Crashin' Thrashin' Robot (TOY!)
 			i(23774),	-- Fel Iron Toolbox
 			i(34113),	-- Field Repair Bot 110G
 			i(33092),	-- Healing Potion Injector

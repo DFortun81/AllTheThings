@@ -193,7 +193,7 @@ _.Zones =
 						i(31572),	--	Mistshroud Pants
 						i(32536),	--	Terokk's Gavel
 						i(32537),	--	Terokk's Gavel
-						i(32782),	--	Time-Lost Figurine
+						i(32782),	--	Time-Lost Figurine (TOY!)
 						i(32540),	--	Terokk's Might
 						i(32541),	--	Terokk's Wisdom
 					},

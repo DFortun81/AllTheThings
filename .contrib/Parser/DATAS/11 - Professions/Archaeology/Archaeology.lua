@@ -330,7 +330,7 @@ profession(ARCHAEOLOGY, {
 			i(64443),	-- Strange Silver Paperweight
 		}),
 		filter(TOYS, {
-			i(64456),	-- Arrival of the Naaru
+			i(64456),	-- Arrival of the Naaru (TOY!)
 		}),
 	}),
 	currency(821,  {	-- Draenor Clans
@@ -758,8 +758,8 @@ profession(ARCHAEOLOGY, {
 			i(63110),	-- Worn Hunting Knife
 		}),
 		filter(TOYS, {
-			i(64373),	-- Chalice of the Mountain Kings
-			i(64488),	-- The Innkeeper's Daughter
+			i(64373),	-- Chalice of the Mountain Kings (TOY!)
+			i(64488),	-- The Innkeeper's Daughter (TOY!)
 		}),
 		n(WEAPONS, {
 			i(64489),	-- Staff of Sorcerer-Thane Thaurissan
@@ -791,7 +791,7 @@ profession(ARCHAEOLOGY, {
 			i(60954),	-- Fossilized Raptor
 		}),
 		filter(TOYS, {
-			i(69776),	-- Ancient Amber
+			i(69776),	-- Ancient Amber (TOY!)
 		}),
 	}),
 	currency(1172, {	-- Highborne
@@ -1309,8 +1309,8 @@ profession(ARCHAEOLOGY, {
 			i(64480),	-- Vizier's Scrawled Streamer
 		}),
 		filter(TOYS, {
-			i(64481),	-- Blessing of the Old God
-			i(64482),	-- Puzzle Box of Yogg-Saron
+			i(64481),	-- Blessing of the Old God (TOY!)
+			i(64482),	-- Puzzle Box of Yogg-Saron (TOY!)
 		}),
 	}),
 	currency(394,  {	-- Night Elf
@@ -1338,11 +1338,11 @@ profession(ARCHAEOLOGY, {
 			i(64650),	-- Umbra Crescent
 		}),
 		filter(TOYS, {
-			i(64646),	-- Bones of Transformation
-			i(64361),	-- Druid and Priest Statue Set
-			i(64358),	-- Highborne Soul Mirror
-			i(64383),	-- Kaldorei Wind Chimes
-			i(64651),	-- Wisp Amulet
+			i(64646),	-- Bones of Transformation (TOY!)
+			i(64361),	-- Druid and Priest Statue Set (TOY!)
+			i(64358),	-- Highborne Soul Mirror (TOY!)
+			i(64383),	-- Kaldorei Wind Chimes (TOY!)
+			i(64651),	-- Wisp Amulet (TOY!)
 		}),
 		n(-386, {	-- Trinket
 			i(64645),	-- Tyrande's Favorite Doll
@@ -1662,7 +1662,7 @@ profession(ARCHAEOLOGY, {
 			}),
 		}),
 		filter(TOYS, {
-			i(64881),	-- Pendant of the Scarab Storm
+			i(64881),	-- Pendant of the Scarab Storm (TOY!)
 		}),
 		n(WEAPONS, {
 			i(64885),	-- Scimitar of the Sirocco
@@ -1690,7 +1690,7 @@ profession(ARCHAEOLOGY, {
 			i(63115),	-- Zandalari Voodoo Doll
 		}),
 		filter(TOYS, {
-			i(69777),	-- Haunted War Drum
+			i(69777),	-- Haunted War Drum (TOY!)
 		}),
 		n(WEAPONS, {
 			i(64377),	-- Zin'rokh, Destroyer of Worlds
@@ -1705,7 +1705,7 @@ profession(ARCHAEOLOGY, {
 			i(64467),	-- Thorned Necklace
 		}),
 		filter(TOYS, {
-			i(69775),	-- Vrykul Drinking Horn
+			i(69775),	-- Vrykul Drinking Horn (TOY!)
 		}),
 		n(WEAPONS, {
 			i(64460),	-- Nifflevar Bearded Axe

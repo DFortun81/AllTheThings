@@ -456,7 +456,7 @@ _.Instances = { tier(WOTLK_TIER, {
 										["description"] = "Muradin: Oh lad, how I missed those endless days in Lordaeron, sharpening your skill with this dull blade. Forging you into a weapon meant to withstand the demands of a great destiny. Heh… You sure put them skills to use, didn't you lad?\n\nIf only I'd been able to stop you that day, how different things migha' been. If only I'da never discovered that accursed blade. Farewell, Arthas, my brother.",
 										["questID"] = 24917,	-- Muradin's Lament
 										["g"] = {
-											i(52201)	-- Muradin's Favor
+											i(52201)	-- Muradin's Favor (TOY!)
 										},
 									}),
 									i(51320, {	-- Badge of the Silver Hand
@@ -470,7 +470,7 @@ _.Instances = { tier(WOTLK_TIER, {
 										["description"] = "Sylvanas: So, it is done. I had not dared to trust my senses. Too many times has the Lich King made me to be a fool. Finally, he has been made to pay for the atrocities he imposed upon my people.\n\nMay Azeroth never fail to remember the horrible price we paid for our weakness, for our pride. But what now, Hero? What of those freed from his grasp but still shackled to their mortal coils?\n\nLeave me. I have much to ponder.",
 										["questID"] = 24918,	-- Sylvanas' Vengeance
 										["g"] = {
-											i(52253)	-- Sylvanas' Music Box
+											i(52253)	-- Sylvanas' Music Box (TOY!)
 										},
 									}),
 									i(51318, {	-- Jaina's Locket

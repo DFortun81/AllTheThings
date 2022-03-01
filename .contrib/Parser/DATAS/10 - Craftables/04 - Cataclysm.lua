@@ -234,8 +234,8 @@ _.Craftables =
 				i(59597),	-- Personal World Destroyer*
 			}),
 			filter(TOYS, {
-				i(40727),	-- Gnomish Gravity Well*
-				i(60854),	-- Loot-A-Rang*
+				i(40727),	-- Gnomish Gravity Well (TOY!)
+				i(60854),	-- Loot-A-Rang (TOY!)
 			}),
 			n(WEAPONS, {
 				i(71077),	-- Extreme-Impact Hole Puncher*

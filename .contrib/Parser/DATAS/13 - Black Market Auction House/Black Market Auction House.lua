@@ -349,15 +349,15 @@ root("BlackMarket", bubbleDown({ ["u"] = BLACK_MARKET, },{
 		}),
 	}),
 	filter(TOYS, {
-		i(33223),	-- Fishing Chair
-		i(45063),	-- Foam Sword Rack
-		i(33219),	-- Goblin Gumbo Kettle
+		i(33223),	-- Fishing Chair (TOY!)
+		i(45063),	-- Foam Sword Rack (TOY!)
+		i(33219),	-- Goblin Gumbo Kettle (TOY!)
 		i(35227),	-- Goblin Weather Machine - Prototype 01-B
-		i(32542),	-- Imp in a Ball
-		i(46780),	-- Ogre Pinata
-		i(34499),	-- Paper Flying Machine Kit
-		i(32566),	-- Picnic Basket
-		i(38578),	-- The Flag of Ownership
+		i(32542),	-- Imp in a Ball (TOY!)
+		i(46780),	-- Ogre Pinata (TOY!)
+		i(34499),	-- Paper Flying Machine Kit (TOY!)
+		i(32566),	-- Picnic Basket (TOY!)
+		i(38578),	-- The Flag of Ownership (TOY!)
 	}),
 	n(WEAPONS, {
 		un(NEVER_IMPLEMENTED, i(110591)),	-- Flintlocke's Blasthammer

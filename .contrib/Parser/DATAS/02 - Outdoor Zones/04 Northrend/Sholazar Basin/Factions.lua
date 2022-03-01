@@ -120,7 +120,7 @@ _.Zones =
 								i(44123),	-- Discarded Titanium Legplates
 								i(44717, {	-- Disgusting Jar
 									i(44718, {	-- Ripe Disgusting Jar
-										i(44719),	-- Frenzyheart Brew
+										i(44719),	-- Frenzyheart Brew (TOY!)
 									}),
 								}),
 								i(44073),	-- Frenzyheart Insignia of Fury

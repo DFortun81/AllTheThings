@@ -458,7 +458,7 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 66.8, 20.5, AZSHARA },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(53057),	-- Faded Wizard Hat
+						i(53057),	-- Faded Wizard Hat (TOY!)
 					},
 				}),
 				q(24448, {	-- Field Promotion

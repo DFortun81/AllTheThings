@@ -1115,7 +1115,7 @@ _.Zones =
 					["lvl"] = 85,
 					["sourceQuest"] = 29310,	-- The Tipping Point
 					["g"] = {
-						i(71259),	-- Leyara's Locket
+						i(71259),	-- Leyara's Locket (TOY!)
 					},
 				}),
 				q(25464, {	-- The Return of Baron Geddon
