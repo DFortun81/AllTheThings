@@ -261,7 +261,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES, {
 			["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 		}),
 		ach(7385, {	-- Pub Crawl
-			i(87528),	-- Honorary Brewmaster Keg
+			i(87528),	-- Honorary Brewmaster Keg (TOY!)
 			crit(1),	-- Spill No Evil
 			crit(2),	-- Yaungolian Barbecue
 			crit(3),	-- Binan Village All-Star

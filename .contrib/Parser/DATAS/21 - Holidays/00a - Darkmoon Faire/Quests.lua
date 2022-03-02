@@ -13,7 +13,7 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 				i(73764),	-- Darkmoon Monkey (PET!)
 				i(73903),	-- Darkmoon Tonk (PET!)
 				i(73765),	-- Darkmoon Turtle (PET!)
-				i(90899),	-- Darkmoon Whistle
+				i(90899),	-- Darkmoon Whistle (TOY!)
 				i(73905),	-- Darkmoon Zeppelin (PET!)
 			}),
 		}),

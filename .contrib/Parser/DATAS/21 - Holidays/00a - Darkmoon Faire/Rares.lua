@@ -51,8 +51,8 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 			["coord"] = { 39.65, 44.07, 407 },
 			["g"] = {
 				i(101570),	-- Moon Moon
-				i(101571),	-- Moonfang Shroud
-				i(105898),	-- Moonfang's Paw
+				i(101571),	-- Moonfang Shroud (TOY!)
+				i(105898),	-- Moonfang's Paw (TOY!)
 				i(101675),	-- Shimmering Moonstone
 			},
 		}),

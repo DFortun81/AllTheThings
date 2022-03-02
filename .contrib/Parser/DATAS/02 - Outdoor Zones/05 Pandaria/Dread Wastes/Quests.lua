@@ -708,7 +708,7 @@ _.Zones =
 					["coord"] = { 27.4, 16.2, DREAD_WASTES },
 					["provider"] = { "n", 62767 },	-- Gokk'lok
 					["g"] = {
-						i(88417),	-- Gokk'lok's Shell
+						i(88417),	-- Gokk'lok's Shell (TOY!)
 					},
 				}),
 				q(31003, {	-- Psycho Mantid

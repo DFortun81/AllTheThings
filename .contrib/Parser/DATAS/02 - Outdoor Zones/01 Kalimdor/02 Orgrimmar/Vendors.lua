@@ -228,9 +228,9 @@ root("Zones", m(KALIMDOR, {
 					i(54436),	-- Blue Clockwork Rocket Bot Pet
 					i(95621),	-- Warbot Ignition Key Pet
 					i(54343),	-- Blue Crashin' Thrashin' Racer Controller (TOY!)
-					i(104324),	-- Foot Ball Toy
+					i(104324),	-- Foot Ball (TOY!)
 					i(137663),	-- Soft Foam Sword Toy
-					i(104323),	-- The Pigskin Toy
+					i(104323),	-- The Swineskin (TOY!)
 					i(54438),	-- Tiny Blue Ragdoll (TOY!)
 					i(54437),	-- Tiny Green Ragdoll (TOY!)
 					i(44606),	-- Toy Train Set Toy (TOY!)

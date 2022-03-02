@@ -17,7 +17,7 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 5.0.1", "remove
 			["description"] = "Can be bought from Zidormi in Duskwallow Marsh if you completed the level 85 version of the Theramore's Fall Scenario.",
 			["races"] = HORDE_ONLY,
 			["groups"] = {
-				i(89205),	-- Mini Mana Bomb Toy
+				i(89205),	-- Mini Mana Bomb Toy (TOY!)
 			},
 		}),
 	}),

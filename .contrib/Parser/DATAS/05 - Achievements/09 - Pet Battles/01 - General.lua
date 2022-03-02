@@ -106,7 +106,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			crit(7),	-- Aki the Chosen [Vale of Eternal Blossoms)
 		})),
 		petbattle(ach(7499,  {	-- Taming the World (40)*
-			i(92738),	-- Safari Hat
+			i(92738),	-- Safari Hat (TOY!)
 			ach(7498),	-- Taming the Great Outdoors [15)
 			ach(6601),	-- Taming the Wild [1)
 		})),

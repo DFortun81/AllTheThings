@@ -23,7 +23,7 @@ _.Zones =
 							["achievementID"] = 7439,	-- Glorious!
 						}),
 						i(87638),	-- Cloak of Tranquil Clouds
-						i(86590),	-- Essence of the Breeze
+						i(86590),	-- Essence of the Breeze (TOY!)
 						i(87637),	-- Jade Harbinger's Cloak
 						i(87640),	-- Softfoot's Drape
 						i(87636),	-- Cloak of the Forgotten Emperor
@@ -156,7 +156,7 @@ _.Zones =
 						i(87636),	-- Cloak of the Forgotten Emperor
 						i(87637),	-- Jade Harbinger's Cloak
 						i(87217),	-- Small Bag of Goods
-						i(86571),	-- Kang's Bindstone
+						i(86571),	-- Kang's Bindstone (TOY!)
 						i(87640),	-- Softfoot's Drape
 					},
 				}),
@@ -177,7 +177,7 @@ _.Zones =
 						}),
 						i(87636),	-- Cloak of the Forgotten Emperor
 						i(87639),	-- Tattered Guo-Lai Dynasty Cloak
-						i(86594),	-- Helpful Wikky's Whistle
+						i(86594),	-- Helpful Wikky's Whistle (TOY!)
 						i(87217),	-- Small Bag of Goods
 						i(87638),	-- Cloak of Tranquil Clouds
 						i(87640),	-- Softfoot's Drape
@@ -198,7 +198,7 @@ _.Zones =
 						i(87217),	-- Small Bag of Goods
 						i(87636),	-- Cloak of the Forgotten Emperor
 						i(87638),	-- Cloak ok Tranquil Clouds
-						i(86586),	-- Panflute of Pandaria
+						i(86586),	-- Panflute of Pandaria (TOY!)
 						i(87637),	-- Jade Harbinger's Cloak
 					},
 				}),
@@ -223,7 +223,7 @@ _.Zones =
 						i(87639),	-- Tattered Guo-Lai Dynasty Cloak
 						i(87638),	-- Cloak ok Tranquil Clouds
 						i(87640),	-- Softfoot's Drape
-						i(86582),	-- Aqua Jewel
+						i(86582),	-- Aqua Jewel (TOY!)
 					},
 				}),
 				n(63240, {	-- Shadowmaster Sydow
@@ -256,7 +256,7 @@ _.Zones =
 						i(87639),	-- Tattered Guo-Lai Dynasty Cloak
 						i(87636),	-- Cloak of the Forgotten Emperor
 						i(87640),	-- Softfoot's Drape
-						i(86575),	-- Chalice of Secrets
+						i(86575),	-- Chalice of Secrets (TOY!)
 					},
 				}),
 				n(58769, {	-- Vicejaw
@@ -301,7 +301,7 @@ _.Zones =
 						i(87637),	-- Jade Harbinger's Cloak
 						i(87217),	-- Small Bag of Goods
 						i(87639),	-- Tattered Guo-Lai Dynasty Cloak
-						i(86568),	-- Mr. Smite's Brass Compass
+						i(86568),	-- Mr. Smite's Brass Compass (TOY!)
 					},
 				}),
 				--n(50843, {	-- Portent	}),

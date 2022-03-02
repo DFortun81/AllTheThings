@@ -81,7 +81,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 25.2, 35.8, TIMELESS_ISLE },
 					["g"] = {
-						i(86584, {	-- Hardened Shell
+						i(86584, {	-- Hardened Shell (TOY!)
 							crit(9, {	-- Hardened Shell
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
 							}),
@@ -124,7 +124,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 26.5, 27.8, TIMELESS_ISLE },
 					["g"] = {
-						i(104294, {	-- Rime of the Time-Lost Mariner
+						i(104294, {	-- Rime of the Time-Lost Mariner (TOY!)
 							crit(31, {	-- Rime of the Time-Lost Mariner
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
 							}),
@@ -206,7 +206,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 62.2, 63.2, TIMELESS_ISLE },
 					["g"] = {
-						i(104262, {	-- Odd Polished Stone
+						i(104262, {	-- Odd Polished Stone (TOY!)
 							crit(43, {	-- Odd Polished Stone
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
 							}),
@@ -227,7 +227,7 @@ _.Zones =
 						{ 26.6, 72.4, TIMELESS_ISLE },
 					},
 					["g"] = {
-						i(86584, {	-- Hardened Shell
+						i(86584, {	-- Hardened Shell (TOY!)
 							crit(9, {	-- Hardened Shell
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
 							}),

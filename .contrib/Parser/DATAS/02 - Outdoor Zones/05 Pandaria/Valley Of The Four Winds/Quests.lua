@@ -954,7 +954,7 @@ _.Zones =
 					["coord"] = { 68.9, 43.2, VALLEY_OF_THE_FOUR_WINDS },
 					["provider"] = { "n", 56133 },	-- Chen Stormsout
 					["g"] = {
-						i(88375),  -- Turnip Punching Bag
+						i(88375),  -- Turnip Punching Bag (TOY!)
 					},
 				}),
 				q(29949, {	-- Legacy
@@ -1135,7 +1135,7 @@ _.Zones =
 					["coord"] = { 82.6, 26.2, VALLEY_OF_THE_FOUR_WINDS },
 					["provider"] = { "n", 56465 },	-- Ana Thunderfoot
 					["g"] = {
-						i(88370),	-- Puntable Marmot
+						i(88370),	-- Puntable Marmot (TOY!)
 					},
 				}),
 				q(31673, {	-- Red Blossom Leeks, You Make the Croc-in' World Go Down
@@ -1707,7 +1707,7 @@ _.Zones =
 					["coord"] = { 68.9, 43.3, VALLEY_OF_THE_FOUR_WINDS },
 					["provider"] = { "n", 56138 },	-- Li Li
 					["g"] = {
-						i(88377),	-- Turnip Paint "Gun"
+						i(88377),	-- Turnip Paint "Gun" (TOY!)
 					},
 				}),
 			}),

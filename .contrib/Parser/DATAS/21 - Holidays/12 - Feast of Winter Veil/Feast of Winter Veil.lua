@@ -903,10 +903,10 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["lvl"] = 10,
 				["groups"] = {
-					i(90888, {	-- Special Edition Foot Ball
+					i(90888, {	-- Special Edition Foot Ball (TOY!)
 						["timeline"] = { "added 5.1.0.16309" },
 					}),
-					i(90883, {	-- The Pigskin
+					i(90883, {	-- The Pigskin (TOY!)
 						["timeline"] = { "added 5.1.0.16309" },
 					}),
 				},
@@ -921,7 +921,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["lvl"] = 10,
 				["groups"] = {
-					i(104318, {	-- Crashin' Thrashin' Flyer Controller
+					i(104318, {	-- Crashin' Thrashin' Flyer Controller (TOY!)
 						["timeline"] = { "added 5.4.0.17227" },
 					}),
 				},
@@ -1715,7 +1715,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					-- Toys
 					i(54343),	-- Blue Crashin' Thrashin' Racer Controller (TOY!)
 					i(108632),	-- Crashin' Thrashin' Flamer Controller
-					i(104318),	-- Crashin' Thrashin' Flyer Controller
+					i(104318),	-- Crashin' Thrashin' Flyer Controller (TOY!)
 					i(172223, {	-- Crashin' Thrashin' Battleship
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -1735,8 +1735,8 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					i(128776),	-- Red Wooden Sled
 					i(116690),	-- Safari Lounge Cushion
 					i(116456),	-- Scroll of Storytelling
-					i(90888),	-- Special Edition Foot Ball
-					i(90883),	-- The Pigskin
+					i(90888),	-- Special Edition Foot Ball (TOY!)
+					i(90883),	-- The Pigskin (TOY!)
 					i(54438),	-- Tiny Blue Ragdoll (TOY!)
 					i(54437),	-- Tiny Green Ragdoll (TOY!)
 					i(44606),	-- Toy Train Set (TOY!)

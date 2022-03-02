@@ -1292,7 +1292,7 @@ profession(ARCHAEOLOGY, {
 			}),
 		}),
 		filter(TOYS, {
-			i(89614),	-- Anatomical Dummy
+			i(89614),	-- Anatomical Dummy (TOY!)
 		}),
 		n(-386, {	-- Trinket
 			i(89611),	-- Quilen Statuette

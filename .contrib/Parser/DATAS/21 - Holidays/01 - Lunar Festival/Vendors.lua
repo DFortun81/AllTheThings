@@ -72,10 +72,10 @@ _.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 					i(116142, {	-- Schematic: Alliance Firework
 						["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
 					}),
-					i(90000, {	-- Everlasting Horde Firework
+					i(90000, {	-- Everlasting Horde Firework (TOY!)
 						["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
 					}),
-					i(89999, {	-- Everlasting Alliance Firework
+					i(89999, {	-- Everlasting Alliance Firework (TOY!)
 						["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
 					}),
 					i(143827, {	-- Red Dragon Head Costume

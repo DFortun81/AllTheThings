@@ -1494,7 +1494,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						["description"] = "This is a rare that is not always present.",
 						["timeline"] = { "added 5.0.4" },
 						["groups"] = {
-							i(88566, {	-- Krastinov's Bag of Horrors
+							i(88566, {	-- Krastinov's Bag of Horrors (TOY!)
 								["timeline"] = { "added 5.0.4" },
 							}),
 						},

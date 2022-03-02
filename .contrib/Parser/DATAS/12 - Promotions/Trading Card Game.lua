@@ -190,7 +190,7 @@ root("Promotions", n(TCG_HEADER, bubbleDown({
 		i(49704, {	-- Carved Ogre Idol (TOY!)
 			["timeline"] = { "added 3.2.2.10468" },
 		}),
-		i(93672, {	-- Dark Portal
+		i(93672, {	-- Dark Portal (TOY!)
 			["model"] = 803615,
 			["modelScale"] = 5,
 			["timeline"] = { "added 5.2.0.16408" },

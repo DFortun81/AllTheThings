@@ -70,7 +70,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 				ach(15493, {	-- Ephemeral Plains
 					["collectible"] = false,
 					["g"] = {
-						e(2512, {	-- Vigilant Guardian
+						e(2458, {	-- Vigilant Guardian
 							["crs"] = {
 								180773,	-- Vigilant Guardian
 								184522,	-- Vigilant Custodian
@@ -93,7 +93,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 								i(189777),	-- Unstable Giant's Cuffs
 							},
 						}),
-						e(2542, {	-- Skolex, the Insatiable Ravener
+						e(2465, {	-- Skolex, the Insatiable Ravener
 							["crs"] = { 181395 },	-- Skolex
 							["g"] = {
 								crit(2, {	-- Skolex, the Insatiable Ravener
@@ -113,7 +113,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 								i(189809),	-- Skolex's Ravenous Skinguards
 							},
 						}),
-						e(2553, {	-- Artificer Xy'mox
+						e(2470, {	-- Artificer Xy'mox
 							["crs"] = {
 								183501, -- Artificer Xy'mox
 								184006,	-- Xy Reinforcer
@@ -139,7 +139,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 								i(189828),	-- Xy Captain's Crossbow
 							},
 						}),
-						e(2529, {	-- Halondrus the Reclaimer
+						e(2463, {	-- Halondrus the Reclaimer
 							["crs"] = { 184915 },	-- Halondrus the Reclaimer
 							["g"] = {
 								crit(7, {	-- Halondrus the Reclaimer
@@ -182,7 +182,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 				ach(15492, {	-- Cornerstone of Creation
 					["collectible"] = false,
 					["g"] = {
-						e(2540, {	-- Dausegne, the Fallen Oracle
+						e(2459, {	-- Dausegne, the Fallen Oracle
 							["crs"] = { 181224 },	-- Dausegne
 							["g"] = {
 								crit(4, {	-- Dausegne, the Fallen Oracle
@@ -203,7 +203,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 								i(189786),	-- Song-Mad Sabatons
 							},
 						}),
-						e(2544, {	-- Prototype Pantheon
+						e(2460, {	-- Prototype Pantheon
 							["crs"] = {
 								181551,	-- Prototype of Duty
 								181549,	-- Prototype of War
@@ -228,7 +228,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 								i(189797),	-- Wristwraps of Night's Renewal
 							},
 						}),
-						e(2539, {	-- Lihuvim, Principal Architect
+						e(2461, {	-- Lihuvim, Principal Architect
 							["crs"] = { 182169 },	-- Lihuvium
 							["g"] = {
 								crit(6, {	-- Lihuvim, Principal Architect
@@ -272,7 +272,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 				ach(15416, {	-- Domination's Grasp
 					["collectible"] = false,
 					["g"] = {
-						e(2546, {	-- Anduin Wrynn
+						e(2469, {	-- Anduin Wrynn
 							["crs"] = { 184232 },	-- Anduin Wrynn
 							["g"] = {
 								crit(8, {	-- Anduin Wrynn
@@ -310,7 +310,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 								}),
 							},
 						}),
-						e(2543, {	-- Lords of Dread
+						e(2457, {	-- Lords of Dread
 							["crs"] = {
 								181398,	-- Mal'Ganis <The Eternal>
 								181334,	-- Kin'tessa
@@ -351,7 +351,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 								}),
 							},
 						}),
-						e(2549, {	-- Rygelon
+						e(2467, {	-- Rygelon
 							["crs"] = { 182777 },	-- Rygelon
 							["g"] = {
 								crit(10, {	-- Rygelon
@@ -395,7 +395,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 				ach(15418, {	-- The Grand Design
 					["collectible"] = false,
 					["g"] = {
-						e(2537, {	-- The Jailer
+						e(2464, {	-- The Jailer
 							["crs"] = { 185421 },	-- Zovaal <The Jailer>
 							["g"] = {
 								crit(11, {	-- The Jailer
@@ -432,7 +432,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					i(190627),	-- Subversive Lord's Leggings
 					i(190631),	-- Vandalized Ephemera Mitts
 				}),
-				e(2512, {	-- Vigilant Guardian
+				e(2458, {	-- Vigilant Guardian
 					["crs"] = {
 						180773,	-- Vigilant Guardian
 						184522,	-- Vigilant Custodian
@@ -455,7 +455,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189777),	-- Unstable Giant's Cuffs
 					},
 				}),
-				e(2542, {	-- Skolex, the Insatiable Ravener
+				e(2465, {	-- Skolex, the Insatiable Ravener
 					["crs"] = { 181395 },	-- Skolex
 					["g"] = {
 						crit(2, {	-- Skolex, the Insatiable Ravener
@@ -475,7 +475,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189809),	-- Skolex's Ravenous Skinguards
 					},
 				}),
-				e(2553, {	-- Artificer Xy'mox
+				e(2470, {	-- Artificer Xy'mox
 					["crs"] = {
 						183501, -- Artificer Xy'mox
 						184006,	-- Xy Reinforcer
@@ -502,7 +502,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 
 					},
 				}),
-				e(2540, {	-- Dausegne, the Fallen Oracle
+				e(2459, {	-- Dausegne, the Fallen Oracle
 					["crs"] = { 181224 },	-- Dausegne
 					["g"] = {
 						crit(4, {	-- Dausegne, the Fallen Oracle
@@ -523,7 +523,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189786),	-- Song-Mad Sabatons
 					},
 				}),
-				e(2544, {	-- Prototype Pantheon
+				e(2460, {	-- Prototype Pantheon
 					["crs"] = {
 						181551,	-- Prototype of Duty
 						181549,	-- Prototype of War
@@ -548,7 +548,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189797),	-- Wristwraps of Night's Renewal
 					},
 				}),
-				e(2539, {	-- Lihuvim, Principal Architect
+				e(2461, {	-- Lihuvim, Principal Architect
 					["crs"] = { 182169 },	-- Lihuvium
 					["g"] = {
 						crit(6, {	-- Lihuvim, Principal Architect
@@ -587,7 +587,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						}),
 					},
 				}),
-				e(2529, {	-- Halondrus the Reclaimer
+				e(2463, {	-- Halondrus the Reclaimer
 					["crs"] = { 184915 },	-- Halondrus the Reclaimer
 					["g"] = {
 						crit(7, {	-- Halondrus the Reclaimer
@@ -625,7 +625,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						}),
 					},
 				}),
-				e(2546, {	-- Anduin Wrynn
+				e(2469, {	-- Anduin Wrynn
 					["crs"] = { 184232 },	-- Anduin Wrynn
 					["g"] = {
 						crit(8, {	-- Anduin Wrynn
@@ -664,7 +664,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						}),
 					},
 				}),
-				e(2543, {	-- Lords of Dread
+				e(2457, {	-- Lords of Dread
 					["crs"] = {
 						181398,	-- Mal'Ganis <The Eternal>
 						181334,	-- Kin'tessa
@@ -705,7 +705,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						}),
 					},
 				}),
-				e(2549, {	-- Rygelon
+				e(2467, {	-- Rygelon
 					["crs"] = { 182777 },	-- Rygelon
 					["g"] = {
 						crit(10, {	-- Rygelon
@@ -744,7 +744,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						}),
 					},
 				}),
-				e(2537, {	-- The Jailer
+				e(2464, {	-- The Jailer
 					["crs"] = { 185421 },	-- Zovaal <The Jailer>
 					["g"] = {
 						crit(11, {	-- The Jailer
@@ -784,7 +784,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					i(190627),	-- Subversive Lord's Leggings
 					i(190631),	-- Vandalized Ephemera Mitts
 				}),
-				e(2512, {	-- Vigilant Guardian
+				e(2458, {	-- Vigilant Guardian
 					["crs"] = {
 						180773,	-- Vigilant Guardian
 						184522,	-- Vigilant Custodian
@@ -806,7 +806,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189777),	-- Unstable Giant's Cuffs
 					},
 				}),
-				e(2542, {	-- Skolex, the Insatiable Ravener
+				e(2465, {	-- Skolex, the Insatiable Ravener
 					["crs"] = { 181395 },	-- Skolex
 					["g"] = {
 						crit(2, {	-- Skolex, the Insatiable Ravener
@@ -825,7 +825,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189809),	-- Skolex's Ravenous Skinguards
 					},
 				}),
-				e(2553, {	-- Artificer Xy'mox
+				e(2470, {	-- Artificer Xy'mox
 					["crs"] = {
 						183501, -- Artificer Xy'mox
 						184006,	-- Xy Reinforcer
@@ -850,7 +850,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189828),	-- Xy Captain's Crossbow
 					},
 				}),
-				e(2540, {	-- Dausegne, the Fallen Oracle
+				e(2459, {	-- Dausegne, the Fallen Oracle
 					["crs"] = { 181224 },	-- Dausegne
 					["g"] = {
 						crit(4, {	-- Dausegne, the Fallen Oracle
@@ -870,7 +870,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189786),	-- Song-Mad Sabatons
 					},
 				}),
-				e(2544, {	-- Prototype Pantheon
+				e(2460, {	-- Prototype Pantheon
 					["crs"] = {
 						181551,	-- Prototype of Duty
 						181549,	-- Prototype of War
@@ -894,7 +894,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189797),	-- Wristwraps of Night's Renewal
 					},
 				}),
-				e(2539, {	-- Lihuvim, Principal Architect
+				e(2461, {	-- Lihuvim, Principal Architect
 					["crs"] = { 182169 },	-- Lihuvium
 					["g"] = {
 						crit(6, {	-- Lihuvim, Principal Architect
@@ -932,7 +932,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						}),
 					},
 				}),
-				e(2529, {	-- Halondrus the Reclaimer
+				e(2463, {	-- Halondrus the Reclaimer
 					["crs"] = { 184915 },	-- Halondrus the Reclaimer
 					["g"] = {
 						crit(7, {	-- Halondrus the Reclaimer
@@ -969,7 +969,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						}),
 					},
 				}),
-				e(2546, {	-- Anduin Wrynn
+				e(2469, {	-- Anduin Wrynn
 					["crs"] = { 184232 },	-- Anduin Wrynn
 					["g"] = {
 						crit(8, {	-- Anduin Wrynn
@@ -1008,7 +1008,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 
 					},
 				}),
-				e(2543, {	-- Lords of Dread
+				e(2457, {	-- Lords of Dread
 					["crs"] = {
 						181398,	-- Mal'Ganis <The Eternal>
 						181334,	-- Kin'tessa
@@ -1048,7 +1048,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						}),
 					},
 				}),
-				e(2549, {	-- Rygelon
+				e(2467, {	-- Rygelon
 					["crs"] = { 182777 },	-- Rygelon
 					["g"] = {
 						crit(10, {	-- Rygelon
@@ -1086,7 +1086,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						}),
 					},
 				}),
-				e(2537, {	-- The Jailer
+				e(2464, {	-- The Jailer
 					["crs"] = { 185421 },	-- Zovaal <The Jailer>
 					["g"] = {
 						crit(11, {	-- The Jailer
@@ -1122,7 +1122,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					i(190627),	-- Subversive Lord's Leggings
 					i(190631),	-- Vandalized Ephemera Mitts
 				}),
-				e(2512, {	-- Vigilant Guardian
+				e(2458, {	-- Vigilant Guardian
 					["crs"] = {
 						180773,	-- Vigilant Guardian
 						184522,	-- Vigilant Custodian
@@ -1142,7 +1142,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189777),	-- Unstable Giant's Cuffs
 					},
 				}),
-				e(2542, {	-- Skolex, the Insatiable Ravener
+				e(2465, {	-- Skolex, the Insatiable Ravener
 					["crs"] = { 181395 },	-- Skolex
 					["g"] = {
 						ach(15480),	-- Mythic: Skolex
@@ -1159,7 +1159,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189809),	-- Skolex's Ravenous Skinguards
 					},
 				}),
-				e(2553, {	-- Artificer Xy'mox
+				e(2470, {	-- Artificer Xy'mox
 					["crs"] = {
 						183501, -- Artificer Xy'mox
 						184006,	-- Xy Reinforcer
@@ -1182,7 +1182,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189828),	-- Xy Captain's Crossbow
 					},
 				}),
-				e(2540, {	-- Dausegne, the Fallen Oracle
+				e(2459, {	-- Dausegne, the Fallen Oracle
 					["crs"] = { 181224 },	-- Dausegne
 					["g"] = {
 						ach(15482),	-- Mythic: Dausegne
@@ -1200,7 +1200,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189786),	-- Song-Mad Sabatons
 					},
 				}),
-				e(2544, {	-- Prototype Pantheon
+				e(2460, {	-- Prototype Pantheon
 					["crs"] = {
 						181551,	-- Prototype of Duty
 						181549,	-- Prototype of War
@@ -1222,7 +1222,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189797),	-- Wristwraps of Night's Renewal
 					},
 				}),
-				e(2539, {	-- Lihuvim, Principal Architect
+				e(2461, {	-- Lihuvim, Principal Architect
 					["crs"] = { 182169 },	-- Lihuvium
 					["g"] = {
 						ach(15484),	-- Mythic: Lihuvim
@@ -1258,7 +1258,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						}),
 					},
 				}),
-				e(2529, {	-- Halondrus the Reclaimer
+				e(2463, {	-- Halondrus the Reclaimer
 					["crs"] = { 184915 },	-- Halondrus the Reclaimer
 					["g"] = {
 						ach(15485),	-- Mythic: Halondrus
@@ -1293,7 +1293,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						}),
 					},
 				}),
-				e(2546, {	-- Anduin Wrynn
+				e(2469, {	-- Anduin Wrynn
 					["crs"] = { 184232 },	-- Anduin Wrynn
 					["g"] = {
 						ach(15486),	-- Mythic: Anduin Wrynn
@@ -1330,7 +1330,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 
 					},
 				}),
-				e(2543, {	-- Lords of Dread
+				e(2457, {	-- Lords of Dread
 					["crs"] = {
 						181398,	-- Mal'Ganis <The Eternal>
 						181334,	-- Kin'tessa
@@ -1368,7 +1368,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						}),
 					},
 				}),
-				e(2549, {	-- Rygelon
+				e(2467, {	-- Rygelon
 					["crs"] = { 182777 },	-- Rygelon
 					["g"] = {
 						ach(15488),	-- Mythic: Rygelon
@@ -1404,7 +1404,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						}),
 					},
 				}),
-				e(2537, {	-- The Jailer
+				e(2464, {	-- The Jailer
 					["crs"] = { 185421 },	-- Zovaal <The Jailer>
 					["g"] = {
 						ach(15489),	-- Mythic: The Jailer

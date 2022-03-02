@@ -53,7 +53,7 @@ _.Zones =
 						30602,	-- The Rabbitsfoot
 					},
 					["g"] = {
-						i(88385),	-- Hozen Idol
+						i(88385),	-- Hozen Idol (TOY!)
 					},
 				}),
 				q(30283, {	-- A Smashing Impression
@@ -346,7 +346,7 @@ _.Zones =
 						30994,	-- Lao-Chin's Gambit
 					},
 					["g"] = {
-						i(88531),	-- Lao Chin's Last Mug
+						i(88531),	-- Lao Chin's Last Mug (TOY!)
 					},
 				}),
 				q(30513, {	-- Eastwind Rest
@@ -486,7 +486,7 @@ _.Zones =
 					["coord"] = { 42.9, 88.3, KUN_LAI_SUMMIT },
 					["provider"] = { "n", 60178 },	-- Sya Zhong
 					["g"] = {
-						i(88579),	-- Jin Warmkeg's Brew
+						i(88579),	-- Jin Warmkeg's Brew (TOY!)
 					},
 				}),
 				q(30723, {	-- Honor, Even in Death
@@ -845,7 +845,7 @@ _.Zones =
 					["provider"] = { "n", 59597 },	-- Smokey Sootassle
 					["sourceQuest"] = 30616,	-- Traffic Issues
 					["g"] = {
-						i(88381),	-- Silversage Incence
+						i(88381),	-- Silversage Incence (TOY!)
 					},
 				}),
 				q(30575, {	-- Round 'Em Up (A)

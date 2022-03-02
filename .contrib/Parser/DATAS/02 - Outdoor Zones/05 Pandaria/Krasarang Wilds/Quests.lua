@@ -129,7 +129,7 @@ _.Zones =
 						60358,	-- Unga Villager
 					},
 					["g"] = {
-						i(80822),	-- The Golden Banana
+						i(80822),	-- The Golden Banana (TOY!)
 					},
 				}),
 
@@ -948,7 +948,7 @@ _.Zones =
 					["provider"] = { "n", 56115 },	-- Ken-Ken
 					["coord"] = { 80.2, 1.00, KRASARANG_WILDS },
 					["g"] = {
-						i(88580),	-- Ken-Ken's Mask
+						i(88580),	-- Ken-Ken's Mask (TOY!)
 					},
 				}),
 

@@ -274,7 +274,7 @@ _.Craftables =
 			}),
 			filter(TOYS, {
 				i(87214),	-- Blingtron 4000*
-				i(87215),	-- Wormhole Generator: Pandaria*
+				i(87215),	-- Wormhole Generator: Pandaria (TOY!)
 			}),
 			n(WEAPONS, {
 				i(77527),	-- Big Game Hunter*
