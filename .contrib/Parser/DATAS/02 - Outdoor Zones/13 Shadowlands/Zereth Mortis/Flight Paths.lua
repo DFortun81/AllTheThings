@@ -35,6 +35,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["name"] = "Sepulcher Overlook, Zereth Mortis",
 				["coord"] = { 64.8, 53.5, ZERETH_MORTIS },
 				["cr"] = 183970,	-- Ancient Translocator
+				["sourceQuest"] = 64844,	-- The Pilgrimage Ends
 			}),
 			fp(2733, {	-- Zovaal's Grasp
 				["name"] = "Zovaal's Grasp, Zereth Mortis",

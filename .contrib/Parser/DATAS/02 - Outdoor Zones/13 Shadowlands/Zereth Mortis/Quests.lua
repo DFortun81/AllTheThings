@@ -918,6 +918,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			}),
 			-- End
 			q(65259, {	-- The Heart of the Sepulcher
+				["sourceQuests"] = { 64844 },	-- The Pilgrimage Ends
 				["provider"] = { "n", 181367 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 35, 64.7, ZERETH_MORTIS },
 			}),

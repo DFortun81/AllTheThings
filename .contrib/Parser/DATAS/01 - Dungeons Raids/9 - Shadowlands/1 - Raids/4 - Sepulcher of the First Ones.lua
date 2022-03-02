@@ -1440,6 +1440,21 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 	}),
 })));
 
+root("HiddenQuestTriggers", {
+	tier(SL_TIER, {
+		inst(1195, {	-- Sepulcher of the First Ones
+			d(17, {	-- LFR
+			}),
+			d(14, {	-- Normal
+			}),
+			d(15, {	-- Heroic
+			}),
+			d(16, {	-- Mythic
+			}),
+		}),
+	}),
+});
+
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(SL_TIER, {
 		inst(1195, {	-- Sepulcher of the First Ones
