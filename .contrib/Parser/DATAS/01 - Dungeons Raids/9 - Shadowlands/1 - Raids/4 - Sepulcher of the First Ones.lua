@@ -47,6 +47,25 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					["cr"] = 182522,	-- Ancient Translocator
 				}),
 			}),
+			n(RARES, {
+				n(185032, {	-- Taskmaster Xy'pro <Cartel Xy>
+					["description"] = "Killed when having 3 stacks of Synergy",
+					--["coord"] = { X, Y, MAP },
+					["g"] = {
+						i(190727),	-- Security Override Orb
+					},
+				}),
+			}),
+			n(TREASURES, {
+				o(375893, {	-- High Value Cache
+					["description"] = "When Taskmaster Xy'pro has 3 stacks of Synergy, which he gets from being nearby other mobs, he gets another buff called Security Override which says he will drop the Security Override Orb.",
+					--["coord"] = { X, Y, MAP },
+					["cost"] = { { "i", 190727, 1 } },	-- 1xSecurity Override Orb
+					["g"] = {
+						i(189991),	-- Snail Soul
+					},
+				})
+			}),
 			n(ZONE_DROPS, {
 				i(188957),	-- Genesis Mote
 				i(189157),	-- Glimmer of Animation
@@ -906,6 +925,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(188271),	-- The First Sigil
 						i(189795),	-- Winter's Stampeding Striders
 						i(189797),	-- Wristwraps of Night's Renewal
+						i(190337),	-- Cervid Soul (SOUL!)
 					},
 				}),
 				e(2461, {	-- Lihuvim, Principal Architect
@@ -1240,6 +1260,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(188271),	-- The First Sigil
 						i(189795),	-- Winter's Stampeding Striders
 						i(189797),	-- Wristwraps of Night's Renewal
+						i(190337),	-- Cervid Soul (SOUL!)
 					},
 				}),
 				e(2461, {	-- Lihuvim, Principal Architect
