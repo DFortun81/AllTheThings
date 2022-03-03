@@ -383,14 +383,15 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					},
 					["questID"] = 65317,
 				}),
-				--o(375061, {	-- Fugueal Cache
-				--	["coords"] = {
-				--		{ 57.5, 65.8, ZERETH_MORTIS },
-				--		{ 63.1, 37.4, ZERETH_MORTIS },
-				--		{ 47.1, 77.2, ZERETH_MORTIS },
-				--	},
-				--	["questID"] = 65093,
-				--}),
+				o(373473, {	-- Fugueal Cache
+					["coords"] = {
+						{ 57.5, 65.8, ZERETH_MORTIS },
+						{ 63.1, 37.4, ZERETH_MORTIS },
+						{ 47.1, 77.2, ZERETH_MORTIS },
+						{ 46, 64.5, ZERETH_MORTIS },
+					},
+					["questID"] = 65093,
+				}),
 				o(375067, {	-- Glissandian Cache
 					["coords"] = {
 						{ 40, 72.9, ZERETH_MORTIS },

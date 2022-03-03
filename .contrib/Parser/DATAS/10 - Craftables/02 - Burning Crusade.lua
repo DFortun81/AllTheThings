@@ -559,7 +559,7 @@ _.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			["description"] = "These items can only be crafted by Engineers who have completed the Goblin Engineering quest chain.",
 			["groups"] = {
 				category(188, {	-- Devices
-					i(30542),	-- Dimensional Ripper - Area 52
+					i(30542),	-- Dimensional Ripper - Area 52 (TOY!)
 					i(23836),	-- Goblin Rocket Launcher
 				}),
 				category(185, {	-- Goggles

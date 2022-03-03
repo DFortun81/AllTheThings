@@ -273,7 +273,7 @@ _.Craftables =
 				i(100905),	-- Rascal-Bot*
 			}),
 			filter(TOYS, {
-				i(87214),	-- Blingtron 4000*
+				i(87214),	-- Blingtron 4000 (TOY!)
 				i(87215),	-- Wormhole Generator: Pandaria (TOY!)
 			}),
 			n(WEAPONS, {

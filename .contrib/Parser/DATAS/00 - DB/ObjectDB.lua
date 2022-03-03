@@ -2203,6 +2203,7 @@ _.ObjectNames = {
 	[373439] = "Flipper Fish School",
 	[373471] = "Mezzonic Cache",
 	[373472] = "Glissandian Cache",
+	[373473] = "Fugueal Cache",
 	[373474] = "Cantaric Cache",
 	[373543] = "Library Vault",
 	[373548] = "Template Archive",

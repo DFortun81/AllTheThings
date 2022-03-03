@@ -219,7 +219,7 @@ root("Promotions", n(TCG_HEADER, bubbleDown({
 		i(33219, {	-- Goblin Gumbo Kettle (TOY!)
 			["timeline"] = { "added 2.1.3.6898" },
 		}),
-		i(35227, {	-- Goblin Weather Machine - Prototype 01-B
+		i(35227, {	-- Goblin Weather Machine - Prototype 01-B (TOY!)
 			["model"] = 166247,
 			["timeline"] = { "added 2.4.0.8089" },
 		}),
