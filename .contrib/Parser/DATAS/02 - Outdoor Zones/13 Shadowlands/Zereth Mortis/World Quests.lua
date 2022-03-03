@@ -78,6 +78,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			q(65414, {	-- Perplexing Problem
 				["coord"] = { 63.1, 36.5, ZERETH_MORTIS },
 			}),
+			q(65415, {	-- Perplexing Problem
+				["coord"] = { 47.6, 39.0, ZERETH_MORTIS },
+			}),
 			q(65405, {	-- Perplexing Problem (Confirmed)
 				["coord"] = { 57.2,65.7, ZERETH_MORTIS },
 			}),
