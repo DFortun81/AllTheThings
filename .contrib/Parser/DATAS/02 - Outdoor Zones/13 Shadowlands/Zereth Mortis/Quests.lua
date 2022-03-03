@@ -922,7 +922,18 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["provider"] = { "n", 181367 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 35, 64.7, ZERETH_MORTIS },
 			}),
-			q(65324, {	-- Patterns Within Patterns (Chap 3)
+			q(65324, bubbleDownSelf({ ["timeline"] = { "added 9.2.0.42488", "removed 9.2.0.42538"} }, {	-- Patterns Within Patterns (Chap 3)
+				["sourceQuests"] = { 65305 },	-- The Way Forwards
+				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
+				["coord"] = { 35, 64.8, ZERETH_MORTIS },
+				["repeatable"] = true,
+				["g"] = {
+					i(190610, {	-- Tribute of the Enlightened Elders
+						i(189462),	-- Schematic: Bronze Helicid
+					}),
+				},
+			})),
+			q(66042, bubbleDownSelf({ ["timeline"] = { "added 9.2.0.42538"} }, {	-- Patterns Within Patterns (Chap 3)
 				["sourceQuests"] = { 65305 },	-- The Way Forwards
 				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 35, 64.8, ZERETH_MORTIS },
@@ -932,7 +943,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 						i(189462),	-- Schematic: Bronze Helicid
 					}),
 				},
-			}),
+			})),
 		}),
 		n(QUESTS, sharedData({ ["isDaily"] = true }, {
 			-- Confirmed
@@ -961,6 +972,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
 				["g"] = {
 					i(188697),	-- Kinematic Micro-Life Recalibrator
+					i(189436),	-- Schematic: Violent Poultrid
 				},
 			}),
 			q(64861, {	-- Kismetric Disc

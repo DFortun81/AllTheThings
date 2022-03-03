@@ -116,6 +116,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(189951),	-- Sunbathed Avian Armor
 					i(190602),	-- Symbol of the Raptora
 					i(190057),	-- Protective Raptora's Wing-Glaive
+					i(187832, {	-- Schematic: Pure-Air Sail Extensions (RECIPE!)
+						["recipeID"] = 360088,
+						["requireSkill"] = ENGINEERING,
+					}),
 				},
 			}),
 			n(182318, {	-- General Zarathura <Army of the Endless>
@@ -127,12 +131,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					}),
 					i(190731),	-- Deceiver's Illusionary Signet
 					i(189968),	-- Dreadlord General's Tunic
-					i(190125),	-- Kris of Intricate Secrets
+					i(190125, {	-- Kris of Intricate Secrets
+						["filterID"] = 20,	-- Dagger, blizzard is dumb
+					}),
 					i(189948),	-- Strangulating Chainlink Lasso
 				},
 			}),
 			n(178778, {	-- Gluttonous Overgrowth
-				["description"] = "Need to pull the Bulging Root(s)(184048) that are in the close by area. Use target macro to find them easily.",
+				["description"] = "Need to pull 5 Bulging Roots (184048) that are in the close by area. Use target macro to find them easily.",
 				["coord"] = { 52.9, 93.3, ZERETH_MORTIS },
 				["questID"] = 65579,
 				["g"] = {
@@ -202,9 +208,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 						["achievementID"] = 15392,	-- Dune Dominance
 					}),
 					i(190106),	-- Approaching Terror's Torch
-					i(190104),	-- Deadeye's Spirit Piercer
 					i(190105),	-- Chilling Domination Mace
 					i(190459),	-- Cold Dispiriting Barricade
+					i(190104),	-- Deadeye's Spirit Piercer
+					i(190463),	-- Dismal Mystic's Glaive
+					i(190050),	-- Entropic Broker's Ripper
 					i(190460),	-- High Reaver's Sickle
 					i(190107),	-- Staff of Broken Coils
 				},
@@ -267,6 +275,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					}),
 					i(190458),	-- Atrophy's Omnious Bulwark
 					i(190102),	-- Chains of Infectious Serrations
+					i(190104),	-- Deadeye's Spirit Piercer
+					i(190463),	-- Dismal Mystic's Glaive
+					i(190050),	-- Entropic Broker's Ripper
 					i(190103),	-- Pillar of Noxious Dissemination
 					i(190126),	-- Rotculler's Encroaching Shears
 					i(190107),	-- Staff of Broken Coils
@@ -352,6 +363,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(190109),	-- Cudgel of Mortality's Chains
 					i(190104),	-- Deadeye's Spirit Piercer
 					i(190463),	-- Dismal Mystic's Glaive
+					i(190050),	-- Entropic Broker's Ripper
 					i(190127),	-- Marzan's Dancing Twin-Scythe
 					i(190461),	-- Reanimator's Beguiling Baton
 					i(190107),	-- Staff of Broken Coils
@@ -497,7 +509,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					crit(6, {	-- Xy'rath the Covetous
 						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
 					}),
-					i(190050),	-- Famished Broker's Ripper
 					i(189918),	-- Fleeting Broker's Strides
 					i(189964),	-- Multi-Faceted Belt
 					i(190238, {	-- Xy'rath's Booby-Trapped Cache (TOY!)

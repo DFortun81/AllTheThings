@@ -25,13 +25,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		-- Pets
 		pet(3246),	-- Tezpet
 		-- Mounts
-		i(187674),	-- [PH] Progenitor Jellyfish (Dark)
 		i(187644),	-- Vicious Warstalker (A)
 		i(187642),	-- Vicious Warstalker (H)
 		-- Dune Rares?
 		i(190124),	-- Interrogator's Vicious Dirk
-		-- BoE World drop?
-		i(190334),	-- Origin
 		-- Rare
 		i(189996),	-- Elegantly Balanced Axe
 		i(189917),	-- Constellation Master's Smock
@@ -57,19 +54,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		q(64870),	-- Paragon of Enlightened Brokers (I have this completed /Braghe)
 		q(65152),	-- A Hardened Bond (This is Soulbind Quest for Necrolords new one might cross complete?? /Braghe)
 		q(65249),	-- The Jailer's Defeat (A version already exist of this quest maybe the changed? /Braghe)
-		-- This Three Quests is Probably Raid Skip No names yet
-		q(65762, {
-			["description"] = "Type: |cFFf09f26Raid|r\nArea: |cFFf09f26Sepulcher of the First Ones|r",
-			["lvl"] = 60,
-		}),
-		q(65763, {
-			["description"] = "Type: |cFFf09f26Raid|r\nArea: |cFFf09f26Sepulcher of the First Ones|r",
-			["lvl"] = 60,
-		}),
-		q(65764, {
-			["description"] = "Type: |cFFf09f26Raid|r\nArea: |cFFf09f26Sepulcher of the First Ones|r",
-			["lvl"] = 60,
-		}),
 		-- Solo Shuffle Quests
 		q(65775, {	-- Soloing Strategy
 			["description"] = "Type: |cFFf09f26PvP|r\nArea: |cFFf09f26Oribos|r",
@@ -77,6 +61,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 
 		-- Shit that probably wont come on live
+		i(187674),	-- [PH] Progenitor Jellyfish (Dark)
 		-- Misc
 		i(189452),	-- 9.2 Mount Crafting Bag of Goodies
 		i(189428),	-- 9.2 Pet Battle Playtest Bag of Goodies

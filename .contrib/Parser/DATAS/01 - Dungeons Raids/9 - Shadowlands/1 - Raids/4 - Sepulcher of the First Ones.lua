@@ -62,6 +62,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					i(190630),	-- Devouring Pellicle Shoulderpads
 					i(190624),	-- Gauntlets of the End
 					i(190626),	-- Hood of Empty Eternities
+					i(190334),	-- Origin
 					i(190628),	-- Lupine's Synthetic Headgear
 					i(190625),	-- Pauldrons of Possible Afterlives
 					i(190627),	-- Subversive Lord's Leggings
@@ -244,6 +245,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 								i(189808),	-- Lihuvim's Severing Scalpel
 								i(189802),	-- Loquacious Keeper's Peridot
 								i(188269),	-- Pocket Protoforge
+								i(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
 								-- Tier
 								i(191014, {	-- Dreadful Hand Module
 									i(188863),	-- Gauntlets of the First Eidolon
@@ -420,13 +422,18 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 			}),
 			d(14, {	-- Normal
 				n(QUESTS, {
-
+					q(65764, {	-- Sepulcher of the First Ones - Heavy is the Crown
+						["provider"] = { "n", 184601 },	-- Highlord Bolvar Fordragon
+						--["coord"] = { X, Y, Map },	He his moving with us in the raid
+						["cost"] = { "i", 190967, 4 },	-- 4xMourne Fragment
+					}),
 				}),
 				n(ZONE_DROPS, {
 					i(190629),	-- Cartel's Larcenous Toecaps
 					i(190630),	-- Devouring Pellicle Shoulderpads
 					i(190624),	-- Gauntlets of the End
 					i(190626),	-- Hood of Empty Eternities
+					i(190334),	-- Origin
 					i(190628),	-- Lupine's Synthetic Headgear
 					i(190625),	-- Pauldrons of Possible Afterlives
 					i(190627),	-- Subversive Lord's Leggings
@@ -564,6 +571,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189808),	-- Lihuvim's Severing Scalpel
 						i(189802),	-- Loquacious Keeper's Peridot
 						i(188269),	-- Pocket Protoforge
+						i(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
 						-- Tier
 						i(191014, {	-- Dreadful Hand Module
 							i(188863),	-- Gauntlets of the First Eidolon
@@ -773,6 +781,11 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 							i(190771),	-- Carcinized Zerethsteed (MOUNT!)
 						},
  					}),
+					q(65763, {	-- Sepulcher of the First Ones - Heavy is the Crown
+						["provider"] = { "n", 184601 },	-- Highlord Bolvar Fordragon
+						--["coord"] = { X, Y, Map },	He his moving with us in the raid
+						["cost"] = { "i", 190966, 4 },	-- 4xMourne Fragment
+					}),
 				}),
 				n(ZONE_DROPS, {
 					i(190629),	-- Cartel's Larcenous Toecaps
@@ -780,6 +793,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					i(190624),	-- Gauntlets of the End
 					i(190626),	-- Hood of Empty Eternities
 					i(190628),	-- Lupine's Synthetic Headgear
+					i(190334),	-- Origin
 					i(190625),	-- Pauldrons of Possible Afterlives
 					i(190627),	-- Subversive Lord's Leggings
 					i(190631),	-- Vandalized Ephemera Mitts
@@ -909,6 +923,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189808),	-- Lihuvim's Severing Scalpel
 						i(189802),	-- Loquacious Keeper's Peridot
 						i(188269),	-- Pocket Protoforge
+						i(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
 						-- Tier
 						i(191014, {	-- Dreadful Hand Module
 							i(188863),	-- Gauntlets of the First Eidolon
@@ -1110,7 +1125,11 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 			}),
 			d(16, {	-- Mythic
 				n(QUESTS, {
-
+					q(65762, {	-- Sepulcher of the First Ones - Heavy is the Crown
+						["provider"] = { "n", 184601 },	-- Highlord Bolvar Fordragon
+						--["coord"] = { X, Y, Map },	He his moving with us in the raid
+						["cost"] = { "i", 190959, 4 },	-- 4xMourne Fragment
+					}),
 				}),
 				n(ZONE_DROPS, {
 					i(190629),	-- Cartel's Larcenous Toecaps
@@ -1118,6 +1137,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					i(190624),	-- Gauntlets of the End
 					i(190626),	-- Hood of Empty Eternities
 					i(190628),	-- Lupine's Synthetic Headgear
+					i(190334),	-- Origin
 					i(190625),	-- Pauldrons of Possible Afterlives
 					i(190627),	-- Subversive Lord's Leggings
 					i(190631),	-- Vandalized Ephemera Mitts
@@ -1235,6 +1255,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189808),	-- Lihuvim's Severing Scalpel
 						i(189802),	-- Loquacious Keeper's Peridot
 						i(188269),	-- Pocket Protoforge
+						i(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
 						-- Tier
 						i(191014, {	-- Dreadful Hand Module
 							i(188863),	-- Gauntlets of the First Eidolon
@@ -1451,6 +1472,47 @@ root("HiddenQuestTriggers", {
 			}),
 			d(16, {	-- Mythic
 			}),
+			--[[ This Section was done by Braghe
+				-- Normal
+				q(65356),	-- Entering the Raid
+				q(65810),	-- Triggered when killing Vigilant Guardian
+				q(65966),	-- Triggered when killing Vigilant Guardian
+				q(65984),	-- Triggered when killing Trash: Subjugator Zeltoth
+				q(65985),	-- Triggered when killing Trash: Subjugator Zeltoth
+
+
+				q(65818),	-- Triggered when killing Skolex
+				q(65819),	-- Triggered when killing Skolex
+				q(65970),	-- Triggered when killing Skolex
+				q(65982),	-- Triggered when killing Trash: Taskmaster Xy'pro
+				q(65983),	-- Triggered when killing Trash: Taskmaster Xy'pro
+				q(65820),	-- Triggered when killing Artificer Xy'mox
+				q(65821),	-- Triggered when killing Artificer Xy'mox
+				q(65971),	-- Triggered when killing Artificer Xy'mox
+				q(65822),	-- Triggered when killing Halondrus
+				q(65823),	-- Triggered when killing Halondrus
+				q(65972),	-- Triggered when killing Halondrus
+
+
+				q(65980),	-- Triggered when killing Trash: Manifestor Krugan
+				q(65981),	-- Triggered when killing Trash: Manifestor Krugan
+				q(65812),	-- Triggered when killing Dausegne
+				q(65813),	-- Triggered when killing Dausegne
+				q(65967),	-- Triggered when killing Dausegne
+				q(65814),	-- Triggered when killing Prototype Pantheon
+				q(65815),	-- Triggered when killing Prototype Pantheon
+				q(65968),	-- Triggered when killing Prototype Pantheon
+				q(65978),	-- Triggered when killing Trash: Sacred Matrix Automa
+				q(65979),	-- Triggered when killing Trash: Sacred Matrix Automa
+				q(65816),	-- Triggered when killing Lihuvium
+				q(65817),	-- Triggered when killing Lihuvium
+				q(65969),	-- Triggered when killing Lihuvium
+
+				-- Heroic (After 7 Normal Bosses killed)
+				q(65356),	-- Entering the Raid (Same as normal)
+				Nothing Else Triggered
+			]]
+			-- Jez from ATT discord did Vigilant, Subjugator, Manifestor, Dausegne, Prototype, Sacred Matrix on Heroic and popped exactly the same hqts as me in normal.
 		}),
 	}),
 });

@@ -143,6 +143,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					["provider"] = { "i", 189446 },	-- Schematic: Shelly
 					["coord"] = { 57.9, 78, ZERETH_MORTIS },
 				}),
+				q(65336, {	-- Schematic Reassimilation: Stabilized Geomental
+					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
+					["provider"] = { "i", 189437 },	-- Schematic: Stabilized Geomental
+				}),
 				q(65355, {	-- Schematic Reassimilation: Terror Jelly
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189443 },	-- Schematic: Terror Jelly
@@ -153,23 +157,15 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					["provider"] = { "i", 189448 },	-- Schematic: Tunneling Vombata
 					["coord"] = { 74.7, 50.5, 2028 },
 				}),
+				q(65334, {	-- Schematic Reassimilation: Violent Poultrid
+					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
+					["provider"] = { "i", 189436 },	-- Schematic: Violent Poultrid
+				}),
 				q(65360, {	-- Schematic Reassimilation: Viperid Menace
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189447 },	-- Schematic: Viperid Menace
 					["coord"] = { 58.9, 77, ZERETH_MORTIS },
 				}),
-				--[[ Not Found Yet
-				q(65336, {	-- Schematic Reassimilation: Stabilized Geomental
-					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
-					["provider"] = { "i", 189437 },	-- Schematic: Stabilized Geomental
-					["coord"] = { , , ZERETH_MORTIS },
-				}),
-				q(65334, {	-- Schematic Reassimilation: Violent Poultrid
-					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
-					["provider"] = { "i", 189436 },	-- Schematic: Violent Poultrid
-					["coord"] = { , , ZERETH_MORTIS },
-				}),
-				--]]
 				-- Mounts
 				q(65401, {	-- Schematic Reassimilation: Adorned Vombata
 					["sourceQuests"] = { 65427 },	-- A New Architect

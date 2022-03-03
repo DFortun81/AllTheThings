@@ -459,11 +459,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				-- ["questID"] = ,
 			}),
 			n(185261, {	-- Requisites Originator
-				["description"] = "Requires Aealic Understanding and Chapter 6. Repertory Locus Arrangement is found at 49.6, 31.0, inside the Terrestial Cache, on the side of the left wall after you enter. Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
+				["description"] = "Requires Aealic Understanding and Chapter 6. Repertory Locus Arrangement is found at 49.6, 31.0, inside the Terrestial Cache, on the side of the left wall after you enter. Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.\n\nThis machine can be used once per week.",
 				-- ["coord"] = { 64.8, 33.6, ZERETH_MORTIS },
 				-- ["questID"] = ,
 				["g"] = {
 					i(188957),	-- Genesis Mote
+					i(189179, {	-- Unalloyed Bronze Ingot
+						["description"] = "Select 4th option, Restore Genesis Potencies",
+					}),
 				},
 			}),
 			o(375403, {	-- Pulp-Covered Relic
