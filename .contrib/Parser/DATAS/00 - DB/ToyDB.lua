@@ -6,9 +6,9 @@ local i = function(itemID)
 	_.ItemToyDB[itemID] = 1;
 end
 
------------------------
--- 		Classic		 --
------------------------
+-----------------
+--   CLASSIC   --
+-----------------
 i(18984);	-- Dimensional Ripper - Everlook
 i(21540);	-- Elune's Lantern
 i(1973);	-- Orb of Deception

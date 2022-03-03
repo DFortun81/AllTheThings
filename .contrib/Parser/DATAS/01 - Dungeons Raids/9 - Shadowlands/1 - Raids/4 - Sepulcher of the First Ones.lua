@@ -1508,6 +1508,12 @@ root("HiddenQuestTriggers", {
 				q(65817),	-- Triggered when killing Lihuvium
 				q(65969),	-- Triggered when killing Lihuvium
 
+
+				q(65824),	-- Triggered when killing Anduin
+				q(65825),	-- Triggered when killing Anduin
+				q(65973),	-- Triggered when killing Anduin
+				q(65699),	-- Anduin Cinematic
+
 				-- Heroic (After 7 Normal Bosses killed)
 				q(65356),	-- Entering the Raid (Same as normal)
 				Nothing Else Triggered
