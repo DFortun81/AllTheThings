@@ -444,7 +444,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					q(65764, {	-- Sepulcher of the First Ones - Heavy is the Crown
 						["provider"] = { "n", 184601 },	-- Highlord Bolvar Fordragon
 						--["coord"] = { X, Y, Map },	He his moving with us in the raid
-						["cost"] = { "i", 190967, 4 },	-- 4xMourne Fragment
+						["cost"] = { { "i", 190967, 4 } },	-- 4xMourne Fragment
 					}),
 				}),
 				n(ZONE_DROPS, {
@@ -803,7 +803,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					q(65763, {	-- Sepulcher of the First Ones - Heavy is the Crown
 						["provider"] = { "n", 184601 },	-- Highlord Bolvar Fordragon
 						--["coord"] = { X, Y, Map },	He his moving with us in the raid
-						["cost"] = { "i", 190966, 4 },	-- 4xMourne Fragment
+						["cost"] = { { "i", 190966, 4 } },	-- 4xMourne Fragment
 					}),
 				}),
 				n(ZONE_DROPS, {
@@ -1148,7 +1148,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					q(65762, {	-- Sepulcher of the First Ones - Heavy is the Crown
 						["provider"] = { "n", 184601 },	-- Highlord Bolvar Fordragon
 						--["coord"] = { X, Y, Map },	He his moving with us in the raid
-						["cost"] = { "i", 190959, 4 },	-- 4xMourne Fragment
+						["cost"] = { { "i", 190959, 4 } },	-- 4xMourne Fragment
 					}),
 				}),
 				n(ZONE_DROPS, {
