@@ -208,6 +208,11 @@ namespace ATT
         /// </summary>
         private static IDictionary<long, Dictionary<string, object>> QUESTS = new Dictionary<long, Dictionary<string, object>>();
 
+        /// <summary>
+        /// All of the achievements that have been parsed sorted by Achievement ID.
+        /// </summary>
+        private static IDictionary<long, Dictionary<string, object>> ACHIEVEMENTS = new Dictionary<long, Dictionary<string, object>>();
+
         private static IDictionary<long, bool> QUESTS_WITH_REFERENCES = new Dictionary<long, bool>();
 
         /// <summary>
@@ -224,6 +229,11 @@ namespace ATT
         /// This should only be performed on the first processing pass, allowing the second processing pass to sync all Item info in nested group references
         /// </summary>
         private static bool MergeItemData { get; set; } = true;
+
+        /// <summary>
+        /// Represents whether we are currently processing the main Achievements Category
+        /// </summary>
+        private static bool ProcessingAchievementCategory { get; set; }
 
         /// <summary>
         /// Represents the valid values for the 'classes' / 'c' field of an object
@@ -591,6 +601,19 @@ namespace ATT
                 {
                     altAchievements.Remove(achID);
                 }
+
+                // If not processing the Main Achievement Category, then any encountered Achievements (which are not Criteria) should be duplicated into the Main Achievement Category
+                if (!ProcessingAchievementCategory && !data.ContainsKey("criteriaID"))
+                {
+                    if (ACHIEVEMENTS.TryGetValue(achID, out Dictionary<string, object> achInfo))
+                    {
+                        if (achInfo.TryGetValue("parentCategoryID", out object achCatID))
+                        {
+                            DuplicateDataIntoGroups(data, achCatID, "achievementCategoryID");
+                            //Trace.WriteLine($"Duplicated Achievement {achID} into Achievement Category");
+                        }
+                    }
+                }
             }
 
             bool cloned = false;
@@ -609,12 +632,6 @@ namespace ATT
             {
                 DuplicateDataIntoGroups(data, quests, "questID");
                 data.Remove("_quests");
-                cloned = true;
-            }
-            else if (data.TryGetValue("_achcat", out object achcat))
-            {
-                DuplicateDataIntoGroups(data, achcat, "achievementCategoryID");
-                data.Remove("_achcat");
                 cloned = true;
             }
             else if (data.TryGetValue("_items", out object items))
@@ -1078,6 +1095,9 @@ namespace ATT
 
         private static void DuplicateDataIntoGroups(Dictionary<string, object> data, object groups, string type)
         {
+            // only need to setup the merge data on the first pass
+            if (!MergeItemData) return;
+
             var groupIDs = Objects.CompressToList(groups) ?? new List<object> { groups };
             if (groupIDs != null && ATT.Export.ObjectData.TryGetMostSignificantObjectType(data, out Export.ObjectData objectData))
             {
@@ -1210,7 +1230,11 @@ namespace ATT
 
             // Merge the Item Data into the Containers.
             //Trace.WriteLine("Container Processing #1...");
-            foreach (var container in Objects.AllContainers.Values) Process(container, 0, 1);
+            foreach (var container in Objects.AllContainers)
+            {
+                ProcessingAchievementCategory = container.Key == "Achievements";
+                Process(container.Value, 0, 1);
+            }
             //Trace.WriteLine("Container Processing #1 Done.");
 
             // Remove the removed from game flag from the Tome of Polymorph: Turtle
@@ -1225,7 +1249,11 @@ namespace ATT
             //Trace.WriteLine("Container Processing #2...");
             MergeItemData = false;
             AdditionalProcessing();
-            foreach (var container in Objects.AllContainers.Values) Process(container, 0, 1);
+            foreach (var container in Objects.AllContainers)
+            {
+                ProcessingAchievementCategory = container.Key == "Achievements";
+                Process(container.Value, 0, 1);
+            }
             //Trace.WriteLine("Container Processing #2 Done.");
 
             // Sort World Drops by Name
@@ -1782,6 +1810,7 @@ namespace ATT
                 case "g":
                 case "group":
                 case "groups":
+                case "criteria":
                     {
                         return "g";
                     }
@@ -2192,6 +2221,7 @@ namespace ATT
                 case "objectID":
                 case "order":
                 case "ordered":
+                case "parentCategoryID":
                 case "petAbilityID":
                 case "previousRecipeID":
                 case "professionID":
@@ -2557,6 +2587,20 @@ namespace ATT
                             }
                             break;
                         }
+                    case "AchievementDB":
+                        // The format of the Achievement DB is a dictionary of Achievement ID <-> Name pairs.
+                        if (pair.Value is Dictionary<long, object> AchievementDB)
+                        {
+                            foreach (var categoryPair in AchievementDB)
+                            {
+                                // KEY: Achievement ID, VALUE: Dictionary
+                                if (categoryPair.Value is Dictionary<string, object> info)
+                                {
+                                    ACHIEVEMENTS[categoryPair.Key] = info;
+                                }
+                            }
+                        }
+                        break;
                     default:
                         {
                             // Get the object container for this section.
