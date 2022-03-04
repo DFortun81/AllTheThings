@@ -17,7 +17,7 @@ root("ExpansionFeatures", {
 						i(187091),	-- Gilded Twin-Scythe Shoulders
 						i(187876),	-- Saurolisk Hatchling Soul (AV)
 						i(185049),	-- Saurolisk Soul (AV)
-						i(187417),	-- Adamant Vaults Cell
+						i(187417),	-- Adamant Vaults Cell (TOY!)
 						i(187081),	-- Blackflame Skull Crescent
 						i(186549),	-- Gilded Darknight (PET!)
 						i(187094),	-- Gilded Spike Fortresses

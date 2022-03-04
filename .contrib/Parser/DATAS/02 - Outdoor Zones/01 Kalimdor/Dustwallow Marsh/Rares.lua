@@ -53,7 +53,7 @@ _.Zones =
 					["coord"] = { 77.6, 17.2, DUSTWALLOW_MARSH },
 					["lvl"] = 110,
 					["g"] = {
-						i(142265),	-- Big Red Raygun
+						i(142265),	-- Big Red Raygun (TOY!)
 					},
 				}),
 				n(14231,  {	-- Drogoth the Roamer

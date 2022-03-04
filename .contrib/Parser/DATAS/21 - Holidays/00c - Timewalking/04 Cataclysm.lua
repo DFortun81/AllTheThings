@@ -51,10 +51,10 @@ root("Holidays", d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
 						["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
 					}),
 				-- Toy!!
-					i(133511, {	-- Gurboggle's Gleaming Bauble
+					i(133511, {	-- Gurboggle's Gleaming Bauble (TOY!)
 						["cost"] = { { "c", 1166, 1500 } },	-- 1,500x Timewarped Badge
 					}),
-					i(133542, {	-- Tosselwrench's Mega-Accurate Simulation Viewfinder
+					i(133542, {	-- Tosselwrench's Mega-Accurate Simulation Viewfinder (TOY!)
 						["cost"] = { { "c", 1166, 3000 } },	-- 3,000x Timewarped Badge
 					}),
 				-- Rings!!

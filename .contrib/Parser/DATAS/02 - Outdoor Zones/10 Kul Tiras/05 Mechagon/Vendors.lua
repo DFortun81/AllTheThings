@@ -86,7 +86,7 @@ _.Zones =
 							i(161414),	-- Self-Accelerating Drive Shaft
 							i(161382),	-- Wind-Up Utility Pylon
 						}),
-						i(168907),	-- Holographic Digitalization Hearthstone
+						i(168907),	-- Holographic Digitalization Hearthstone (TOY!)
 						i(167751),	-- Mechanocat Laser Pointer
 						i(169384),	-- Microbot XD
 						i(168057),	-- Rustbolt Requisitions

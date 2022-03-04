@@ -767,7 +767,7 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["coord"] = { 40.7, 65.9, NORTHREND_DALARAN },
 							["g"] = {
-								i(134020, {	-- Chef's Hat
+								i(134020, {	-- Chef's Hat (TOY!)
 									["cost"] = { { "c", 81, 100 }, },	-- 100x Epicurean's Award
 								}),
 								i(43007, {	-- Northern Spices
@@ -1711,7 +1711,7 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 							["coord"] = { 70.0, 38.6, NORTHREND_DALARAN },
 							["g"] = {
-								i(134020, {	-- Chef's Hat
+								i(134020, {	-- Chef's Hat (TOY!)
 									["cost"] = { { "c", 81, 100 }, },	-- 100x Epicurean's Award
 								}),
 								i(43007, {	-- Northern Spices

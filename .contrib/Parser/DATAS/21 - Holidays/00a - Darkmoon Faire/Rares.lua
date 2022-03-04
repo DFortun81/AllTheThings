@@ -39,7 +39,7 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 						["description"] = "Get hit by one banshee wave; catch every bolt of light.",
 					}),
 				}),
-				i(151265),	-- Blight Boar Microphone
+				i(151265),	-- Blight Boar Microphone (TOY!)
 				i(151255),	-- Necromedes, the Death Resonator
 				i(151253),	-- Lightly-Padded Cage Helm
 				i(151252),	-- Leather-Lined Cage Helm

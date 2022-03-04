@@ -9,7 +9,7 @@ root("Zones", m(KALIMDOR, {
 				["coord"] = { 50.8, 55.1, ORGRIMMAR },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					i(134831),	-- Doomsayer's Robes
+					i(134831),	-- Doomsayer's Robes (TOY!)
 				},
 			}),
 		}),

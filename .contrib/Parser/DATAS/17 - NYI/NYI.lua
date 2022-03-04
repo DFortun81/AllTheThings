@@ -21,7 +21,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	}),
 	tier(SL_TIER, 2.0, {
 		-- Toys
-		i(190196),	-- Enlightened Hearthstone
+		i(190196),	-- Enlightened Hearthstone (TOY!)
 		-- Pets
 		pet(3246),	-- Tezpet
 		-- Mounts
@@ -445,8 +445,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(119179),	-- Iron Star Roller
 			}),
 			tier(WOD_TIER, 0.2	, {
-				i(119220),	-- Alliance Gladiator's Banner
-				i(119221),	-- Horde Gladiator's Banner
+				i(119220),	-- Alliance Gladiator's Banner (TOY!)
+				i(119221),	-- Horde Gladiator's Banner (TOY!)
 			}),
 			n(P6xx, {
 				i(100902),	-- Unknown
@@ -463,39 +463,42 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 		tier(LEGION_TIER, {
 			tier(LEGION_TIER, 0.3, {
-				i(140779),	-- Falanaar Echo
-				i(129111),	-- Kvaldir Raiding Horn
-				i(141300),	-- Magi Focusing Crystal
+				i(140779),	-- Falanaar Echo (TOY!)
+				i(129111),	-- Kvaldir Raiding Horn (TOY!)
+				i(141300),	-- Magi Focusing Crystal (TOY!)
 				i(130867),	-- Tag Toy
-				i(130249),	-- Waywatcher's Boon
+				i(130249),	-- Waywatcher's Boon (TOY!)
 				i(136848),	-- Worn Doll - Test
 			}),
 			tier(LEGION_TIER, 1.0, {
-				i(143545),	-- Fel Focusing Crystal
+				i(143545),	-- Fel Focusing Crystal (TOY!)
+			}),
+			tier(LEGION_TIER, 2.5, {
+				i(142360),	-- Blazing Ember Signet (TOY!)
 			}),
 		}),
 		tier(BFA_TIER, {
 			tier(BFA_TIER, 0.1, {
-				i(164372),	-- Jinyu Light Globe
-				i(164377),	-- Regenerating Banana Bunch
-				i(164371),	-- Yaungol Oil Stove
+				i(164372),	-- Jinyu Light Globe (TOY!)
+				i(164377),	-- Regenerating Banana Bunch (TOY!)
+				i(164371),	-- Yaungol Oil Stove (TOY!)
 			}),
 			tier(BFA_TIER, 1.0, {
-				i(166851),	-- Kojo's Master Matching Set
+				i(166851),	-- Kojo's Master Matching Set (TOY!)
 			}),
 			tier(BFA_TIER, 2.0, {
-				i(166782),	-- Pearl of the Abyss
+				i(166782),	-- Pearl of the Abyss (TOY!)
 			}),
 		}),
 		tier(SL_TIER, {
 			tier(SL_TIER, 0.1, {
-				i(174445),	-- Glimmerfly Cocoon
-				i(182655),	-- Hill King's Roarbox
+				i(174445),	-- Glimmerfly Cocoon (TOY!)
+				i(182655),	-- Hill King's Roarbox (TOY!)
 			}),
 			tier(SL_TIER, 1.5, {
-				i(187958),	-- PH - Banner of the Opportune
-				i(187959),	-- PH - Banner of the Opportune
-				i(187861),	-- Magical Seeds
+				i(187861),	-- Magical Seeds (TOY!)
+				i(187958),	-- PH - Banner of the Opportune (TOY!)
+				i(187959),	-- PH - Banner of the Opportune (TOY!)
 			}),
 		}),
 	}),
@@ -3517,7 +3520,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(55217),	-- Aqua Transform
 		i(55218),	-- Rocky Transform
 		i(55219),	-- Vaporous Transform
-		i(142360),	-- Blazing Ember Signet
 	}),
 }));
 

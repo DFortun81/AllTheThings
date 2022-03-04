@@ -120,7 +120,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["questID"] = 59833,
 				["coord"] = { 69.3, 77.9, REVENDRETH },
 				["g"] = {
-					i(179393),	-- Mirror of Envious Dreams
+					i(179393),	-- Mirror of Envious Dreams (TOY!)
 				},
 			}),
 			o(349792, {	-- Filcher's Prize

@@ -581,16 +581,16 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["isYearly"] = true,
 				["groups"] = {
 					-- #if BEFORE 6.2.2
-					i(116692, {	-- Fuzzy Green Lounge Cushion
+					i(116692, {	-- Fuzzy Green Lounge Cushion (TOY!)
 						["timeline"] = { "added 6.0.2" },
 					}),
-					i(116689, {	-- Pineapple Lounge Cushion
+					i(116689, {	-- Pineapple Lounge Cushion (TOY!)
 						["timeline"] = { "added 6.0.2" },
 					}),
-					i(116690, {	-- Safarai Lounge Cushion
+					i(116690, {	-- Safarai Lounge Cushion (TOY!)
 						["timeline"] = { "added 6.0.2" },
 					}),
-					i(116691, {	-- Zhevra Lounge Cusion
+					i(116691, {	-- Zhevra Lounge Cusion (TOY!)
 						["timeline"] = { "added 6.0.2" },
 					}),
 					-- #endif
@@ -611,16 +611,16 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["isYearly"] = true,
 				["groups"] = {
 					-- #if BEFORE 6.2.2
-					i(116692, {	-- Fuzzy Green Lounge Cushion
+					i(116692, {	-- Fuzzy Green Lounge Cushion (TOY!)
 						["timeline"] = { "added 6.0.2" },
 					}),
-					i(116689, {	-- Pineapple Lounge Cushion
+					i(116689, {	-- Pineapple Lounge Cushion (TOY!)
 						["timeline"] = { "added 6.0.2" },
 					}),
-					i(116690, {	-- Safarai Lounge Cushion
+					i(116690, {	-- Safarai Lounge Cushion (TOY!)
 						["timeline"] = { "added 6.0.2" },
 					}),
-					i(116691, {	-- Zhevra Lounge Cusion
+					i(116691, {	-- Zhevra Lounge Cusion (TOY!)
 						["timeline"] = { "added 6.0.2" },
 					}),
 					-- #endif
@@ -638,7 +638,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["timeline"] = { "added 6.2.2.20395", "removed 7.0.3.21570" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["groups"] = {
-					i(128776, {	-- Red Wooden Sled
+					i(128776, {	-- Red Wooden Sled (TOY!)
 						["timeline"] = { "added 6.2.2.20395" },
 					}),
 					i(128768, {	-- Candy Cane
@@ -655,7 +655,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["timeline"] = { "added 7.0.3.21570", "removed 7.3.5.25807" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["groups"] = {
-					i(139337, {	-- Disposable Winter Veil Suits
+					i(139337, {	-- Disposable Winter Veil Suits (TOY!)
 						["timeline"] = { "added 7.0.3.22248" },
 					}),
 					i(128768, {	-- Candy Cane
@@ -672,11 +672,11 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["timeline"] = { "added 7.3.5.25807", "removed 8.0.1.27291" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["groups"] = {
-					i(151343, {	-- Hearthstation [A]
+					i(151343, {	-- Hearthstation (A) (TOY!)
 						["timeline"] = { "added 7.3.5.25807" },
 						["races"] = ALLIANCE_ONLY,
 					}),
-					i(151344, {	-- Hearthstation [H]
+					i(151344, {	-- Hearthstation (H) (TOY!)
 						["timeline"] = { "added 7.3.5.25807" },
 						["races"] = HORDE_ONLY,
 					}),
@@ -694,7 +694,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["timeline"] = { "added 8.0.1.27291", "removed 8.2.5.31961" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["groups"] = {
-					i(162973, {	-- Greatfather Winter's Hearthstone
+					i(162973, {	-- Greatfather Winter's Hearthstone (TOY!)
 						["timeline"] = { "added 8.0.1.27291" },
 					}),
 					i(128768, {	-- Candy Cane
@@ -711,7 +711,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["timeline"] = { "added 8.2.5.31961", "removed 9.0.1.36230" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["groups"] = {
-					i(172219, {	-- Wild Holly
+					i(172219, {	-- Wild Holly (TOY!)
 						["timeline"] = { "added 8.2.5.31961" },
 					}),
 					i(128768, {	-- Candy Cane
@@ -728,7 +728,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["timeline"] = { "added 9.0.1.36230", "removed 9.1.5.40871" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["groups"] = {
-					i(178530, {	-- Wreath-A-Rang
+					i(178530, {	-- Wreath-A-Rang (TOY!)
 						["timeline"] = { "added 9.0.1.36230" },
 					}),
 					i(128768, {	-- Candy Cane
@@ -745,7 +745,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["timeline"] = { "added 9.1.5.40871" },	-- TODO: Add Removed Timestamp in 2022.
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["groups"] = {
-					i(187422, {	-- Rockin' Rollin' Racer Customizer 19.9.3
+					i(187422, {	-- Rockin' Rollin' Racer Customizer 19.9.3 (TOY!)
 						["timeline"] = { "added 9.1.5.40871" },
 					}),
 					i(128768, {	-- Candy Cane
@@ -936,7 +936,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["lvl"] = 10,
 				["groups"] = {
-					i(116763, {	-- Crashin' Thrashin' Shredder Controller
+					i(116763, {	-- Crashin' Thrashin' Shredder Controller (TOY!)
 						["timeline"] = { "added 6.0.1.18594" },
 					}),
 				},
@@ -951,7 +951,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["lvl"] = 10,
 				["groups"] = {
-					i(108632, {	-- Crashin' Thrashin' Flamer Controller
+					i(108632, {	-- Crashin' Thrashin' Flamer Controller (TOY!)
 						["timeline"] = { "added 6.2.2.20395" },
 					}),
 				},
@@ -966,7 +966,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["lvl"] = 10,
 				["groups"] = {
-					i(128636, {	-- Endothermic Blaster
+					i(128636, {	-- Endothermic Blaster (TOY!)
 						["timeline"] = { "added 7.0.3.22248" },
 					}),
 				},
@@ -981,11 +981,11 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["lvl"] = 10,
 				["groups"] = {
-					i(151349, {	-- Toy Weapon Set [A]
+					i(151349, {	-- Toy Weapon Set [A] (TOY!)
 						["timeline"] = { "added 7.3.0.24484" },
 						["races"] = ALLIANCE_ONLY,
 					}),
-					i(151348, {	-- Toy Weapon Set [H]
+					i(151348, {	-- Toy Weapon Set [H] (TOY!)
 						["timeline"] = { "added 7.3.0.24484" },
 						["races"] = HORDE_ONLY,
 					}),
@@ -1001,11 +1001,11 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["lvl"] = 10,
 				["groups"] = {
-					i(162643, {	-- Toy Armor Set [A]
+					i(162643, {	-- Toy Armor Set [A] (TOY!)
 						["timeline"] = { "added 8.0.1.26624" },
 						["races"] = ALLIANCE_ONLY,
 					}),
-					i(162642, {	-- Toy Armor Set [H]
+					i(162642, {	-- Toy Armor Set [H] (TOY!)
 						["timeline"] = { "added 8.0.1.26624" },
 						["races"] = HORDE_ONLY,
 					}),
@@ -1021,11 +1021,11 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["lvl"] = 10,
 				["groups"] = {
-					i(172223, {	-- Crashin' Thrashin' Battleship [A]
+					i(172223, {	-- Crashin' Thrashin' Battleship (TOY!)
 						["timeline"] = { "added 8.2.5.31958" },
 						["races"] = ALLIANCE_ONLY,
 					}),
-					i(172222, {	-- Crashin' Thrashin' Juggernaught [H]
+					i(172222, {	-- Crashin' Thrashin' Juggernaught (TOY!)
 						["timeline"] = { "added 8.2.5.31958" },
 						["races"] = HORDE_ONLY,
 					}),
@@ -1714,41 +1714,42 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					i(178533),	-- Shaking Pet Carrier
 					-- Toys
 					i(54343),	-- Blue Crashin' Thrashin' Racer Controller (TOY!)
-					i(108632),	-- Crashin' Thrashin' Flamer Controller
+					i(108632),	-- Crashin' Thrashin' Flamer Controller (TOY!)
 					i(104318),	-- Crashin' Thrashin' Flyer Controller (TOY!)
-					i(172223, {	-- Crashin' Thrashin' Battleship
+					i(172223, {	-- Crashin' Thrashin' Battleship (TOY!)
 						["races"] = ALLIANCE_ONLY,
 					}),
-					i(172222, {	-- Crashin' Thrashin' Juggernaught
+					i(172222, {	-- Crashin' Thrashin' Juggernaught (TOY!)
 						["races"] = HORDE_ONLY,
 					}),
 					i(37710),	-- Crashin' Thrashin' Racer Controller (TOY!)
-					i(116763),	-- Crashin' Thrashin' Shredder Controller
-					i(139337),	-- Disposable Winter Veil Suits
-					i(128636),	-- Endothermic Blaster
-					i(116692),	-- Fuzzy Green Lounge Cushion
-					i(162973, {	-- Greatfather Winter's Hearthstone
+					i(116763),	-- Crashin' Thrashin' Shredder Controller (TOY!)
+					i(139337),	-- Disposable Winter Veil Suits (TOY!)
+					i(128636),	-- Endothermic Blaster (TOY!)
+					i(116692),	-- Fuzzy Green Lounge Cushion (TOY!)
+					i(162973, {	-- Greatfather Winter's Hearthstone (TOY!)
 						["timeline"] = { "added 8.1" },	-- 8.0.1 it was added in the Gift, so will say 8.1 for this source
 					}),
 					i(46709),	-- MiniZep Controller (TOY!)
-					i(116689),	-- Pineapple Lounge Cushion
-					i(128776),	-- Red Wooden Sled
-					i(116690),	-- Safari Lounge Cushion
-					i(116456),	-- Scroll of Storytelling
+					i(116689),	-- Pineapple Lounge Cushion (TOY!)
+					i(128776),	-- Red Wooden Sled (TOY!)
+					i(116690),	-- Safari Lounge Cushion (TOY!)
+					i(116456),	-- Scroll of Storytelling (TOY!)
 					i(90888),	-- Special Edition Foot Ball (TOY!)
 					i(90883),	-- The Pigskin (TOY!)
 					i(54438),	-- Tiny Blue Ragdoll (TOY!)
 					i(54437),	-- Tiny Green Ragdoll (TOY!)
 					i(44606),	-- Toy Train Set (TOY!)
-					i(151348),	-- Toy Weapon Set [Horde]
-					i(172219),	-- Wild Holly
+					i(151349),	-- Toy Weapon Set [A] (TOY!)
+					i(151348),	-- Toy Weapon Set [H] (TOY!)
+					i(172219),	-- Wild Holly (TOY!)
 					i(45057),	-- Wind-Up Train Wrecker (TOY!)
-					i(188680),	-- Winter Veil Chorus Book
-					i(116691),	-- Zhevra Lounge Cushion
-					i(151343, {	-- Hearthstation [A]
+					i(188680),	-- Winter Veil Chorus Book (TOY!)
+					i(116691),	-- Zhevra Lounge Cushion (TOY!)
+					i(151343, {	-- Hearthstation (A) (TOY!)
 						["races"] = ALLIANCE_ONLY,
 					}),
-					i(151344, {	-- Hearthstation [H]
+					i(151344, {	-- Hearthstation (H) (TOY!)
 						["races"] = HORDE_ONLY,
 					}),
 					-- Illusions
@@ -1812,7 +1813,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					-- #if AFTER CATA
 					i(17201),	-- Recipe: Winter Veil Egg Nog [CATA+] / Recipe: Egg Nog
 					-- #endif
-					i(188680, {	-- Winter Veil Chorus Book
+					i(188680, {	-- Winter Veil Chorus Book (TOY!)
 						["timeline"] = { "added 9.1.5.40871" },
 					}),
 					-- #if AFTER 5.1.0
@@ -1842,7 +1843,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					{ 44.2, 51.0, LUNARFALL },
 				},
 				["groups"] = {
-					i(108635, {	-- Crashin' Thrashin' Killdozer Controller
+					i(108635, {	-- Crashin' Thrashin' Killdozer Controller (TOY!)
 						["cost"] = { { "i", 128659, 5 }, },	-- 5x Merry Supplies
 						["timeline"] = { "added 6.0.1.18125" },
 					}),

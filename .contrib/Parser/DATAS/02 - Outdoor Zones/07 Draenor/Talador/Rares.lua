@@ -58,7 +58,7 @@ _.Zones =
 					["questID"] = 34221,
 					["coord"] = { 34.0, 57.2, TALADOR },
 					["g"] = {
-						i(113670),	-- Mournful Moan of Murmur Toy
+						i(113670),	-- Mournful Moan of Murmur (TOY!)
 					},
 				}),
 				n(80204, {	-- Felbark
@@ -117,7 +117,7 @@ _.Zones =
 						{ 33.2, 63.8, TALADOR },
 					},
 					["g"] = {
-						i(116113),	-- Breath of Talador
+						i(116113),	-- Breath of Talador (TOY!)
 					},
 				}),
 				n(85572, {	-- Grrbrrgle
@@ -346,7 +346,7 @@ _.Zones =
 						{ 56.6, 66.4, TALADOR },
 					},
 					["g"] = {
-						i(116122),	-- Burning Legion Missive Toy
+						i(116122),	-- Burning Legion Missive (TOY!)
 					},
 				}),
 				n(51015, {	-- Silthide

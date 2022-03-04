@@ -58,7 +58,7 @@ root("PVP", pvp(n(-216, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {	-- Prest
 			},
 		}),
 		ach(10993, {	-- Third Time's The Charam [3]
-			i(134026),	-- Honorable Pennant
+			i(134026),	-- Honorable Pennant (TOY!)
 		}),
 		ach(10995, {	-- For Prestige [4]
 			i(140228),	-- Prestigious Bronze Courser
@@ -82,7 +82,7 @@ root("PVP", pvp(n(-216, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {	-- Prest
 			i(142380),	-- Dutiful Gruntling
 		}),
 		ach(11471, {	-- Don't Hate, Grind to Eight [8]
-			i(134031),	-- Prestigious Pennant
+			i(134031),	-- Prestigious Pennant (TOY!)
 		}),
 		ach(11472, {	-- Hell, It's About Nine [9]
 			i(140233),	-- Prestigious Ivory Courser
@@ -102,7 +102,7 @@ root("PVP", pvp(n(-216, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {	-- Prest
 		--]]
 		}),
 		ach(11687, {	-- Demonic Dozen [12]
-			i(134032),	-- Elite Pennant
+			i(134032),	-- Elite Pennant (TOY!)
 		}),
 		ach(11688, {	-- Floor Thirteen [13]
 			i(140408),	-- Prestigious Azure Courser
@@ -122,7 +122,7 @@ root("PVP", pvp(n(-216, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {	-- Prest
 		--]]
 		}),
 		ach(11691, {	-- You Are Sixteen [16]
-			i(134034),	-- Eseteemed Pennant
+			i(134034),	-- Esteemed Pennant (TOY!)
 		}),
 		ach(11692, {	-- Going On Seventeen [17]
 			i(140232),	-- Prestigious Forest Courser

@@ -47,7 +47,7 @@ profession(FISHING, {
 		i(180136),	-- The Brokers Angle'r
 		i(120163),	-- Thruk's Fishing Rod
 	}),
-	i(168016, {	-- Hyper-Compressed Ocean
+	i(168016, {	-- Hyper-Compressed Ocean (TOY!)
 		["crs"] = {
 			152121,	-- Hyper-Compressed Ocean NPC
 		},

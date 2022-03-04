@@ -38,7 +38,7 @@ _.Zones =
 					n(50052, {	-- Burgy Blackheart
 						["coord"] = { 57.0, 69.6, 205 },
 						["g"] = {
-							i(134022)	-- Burgy Blackheart's Handsome Hat
+							i(134022)	-- Burgy Blackheart's Handsome Hat (TOY!)
 						},
 					}),
 					n(51071, {	-- Captain Florence: Does not drop collectible loot.

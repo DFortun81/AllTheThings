@@ -1493,7 +1493,7 @@ root("Zones", {
 							["achievementID"] = 13556,	-- Outside Influences
 						}),
 						i(169838, {	-- Azeroth Mini: Starter Pack
-							i(169796, {	-- Azeroth Mini Collection: Mechagon
+							i(169796, {	-- Azeroth Mini Collection: Mechagon (TOY!)
 								["questID"] = 56426,
 							}),
 							i(169841, {	-- Azeroth Mini: Erazmin

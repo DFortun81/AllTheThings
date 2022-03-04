@@ -1142,7 +1142,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					["timeline"] = { "added 8.2.0.30920" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(169297, {	-- Stormpike Insignia
+						i(169297, {	-- Stormpike Insignia (TOY!)
 							["sourceQuest"] = 56256,	-- The Battle for Alterac (A)
 							["timeline"] = { "added 8.2.0.30920" },
 						}),
@@ -1162,7 +1162,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					["timeline"] = { "added 8.2.0.30920" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(169298, {	-- Frostwolf Insignia
+						i(169298, {	-- Frostwolf Insignia (TOY!)
 							["sourceQuest"] = 56257,	-- The Battle for Alterac (H)
 							["timeline"] = { "added 8.2.0.30920" },
 						}),

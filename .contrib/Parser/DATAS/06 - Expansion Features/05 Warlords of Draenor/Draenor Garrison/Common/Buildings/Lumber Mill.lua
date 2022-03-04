@@ -130,7 +130,7 @@ _.ExpansionFeatures =
 								q(36385, {	-- Legacy of the Ancients
 									["provider"] = { "i", 115467 },	-- Barkskin Tome
 									["g"] = {
-										i(115506),	-- Treessassin's Guise
+										i(115506),	-- Treessassin's Guise (TOY!)
 									},
 								}),
 							},

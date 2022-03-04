@@ -13,7 +13,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 				title(53),		-- Crashin' Thrashin'
 			}),
 			ach(9673, {		-- The Toymaster (150)
-				i(119215),		-- Robo-Gnomebulator
+				i(119215),		-- Robo-Gnomebulator (TOY!)
 			}),
 			ach(9672),		-- Tons of Toys (100)
 			ach(9671),		-- Having a Ball (50)

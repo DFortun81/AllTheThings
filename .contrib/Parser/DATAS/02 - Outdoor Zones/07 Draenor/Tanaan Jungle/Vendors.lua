@@ -38,7 +38,7 @@ _.Zones =
 						i(123974, {	-- Reins of the Corrupted Dreadwing (MOUNT!)
 							["cost"] = { { "c", 823, 150000 }, },	-- 150,000x Apexis Crystal
 						}),
-						i(122283, {	-- Rukhmar's Sacred Memory
+						i(122283, {	-- Rukhmar's Sacred Memory (TOY!)
 							["cost"] = { { "c", 823, 50000 }, },	-- 50,000x Apexis Crystal
 						}),
 						i(128487, {	-- Ship: The Awakener

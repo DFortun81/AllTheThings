@@ -213,7 +213,7 @@ _.Instances = { tier(CATA_TIER, {
 								{ "n", 53151 },	-- Overseer Blingbang
 							},
 							["g"] = {
-								i(133997),	-- Black Ice
+								i(133997),	-- Black Ice (TOY!)
 								i(69863, {	-- Golden Necklace
 									["ignoreSource"] = true,	-- Yay, Blizzard gave these sourceIDs
 								}),
@@ -236,7 +236,7 @@ _.Instances = { tier(CATA_TIER, {
 								{ "n", 53151 },	-- Overseer Blingbang
 							},
 							["g"] = {
-								i(133997),	-- Black Ice
+								i(133997),	-- Black Ice (TOY!)
 								i(69863, {	-- Golden Necklace
 									["ignoreSource"] = true,	-- Yay, Blizzard gave these sourceIDs
 								}),

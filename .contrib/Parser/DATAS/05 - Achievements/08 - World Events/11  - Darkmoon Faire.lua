@@ -5,7 +5,7 @@
 root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, bubbleDown({ ["u"] = DARKMOON_FAIRE },{
 	achcat(ACHIEVEMENT_CATEGORY_DARKMOON_FAIRE, {
 		ach(9885, {	-- Ace Tonk Commander
-			i(122122),	-- Darkmoon Tonk Controller
+			i(122122),	-- Darkmoon Tonk Controller (TOY!)
 		}),
 		ach(9817, {	-- Big Powermonger: Gold (20 tolls)
 			i(122124),	-- Darkmoon Cannon
@@ -27,14 +27,14 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, bubbleDown({ ["u"
 			ach(9800),	-- Rocket Man (40 tolls)
 		}),
 		ach(9811, {	-- Big Wanderluster: Gold (20 tolls)
-			i(122121),	-- Darkmoon Gazer
+			i(122121),	-- Darkmoon Gazer (TOY!)
 			ach(9809),	-- Big Wanderluster: Silver (25 tolls)
 			ach(9807),	-- Big Wanderluster: Bronze (30 tolls)
 			ach(9806),	-- Vagabond (40 tolls)
 		}),
 		ach(6021),	-- Blastenheimer Bullseye
 		ach(9252, {	-- Brood of Alysrazor (50)
-			i(116115),	-- Blazing Wings
+			i(116115),	-- Blazing Wings (TOY!)
 			ach(9251),	-- Ringmaster (25)
 			ach(9250),	-- Flying High (10)
 		}),
@@ -119,7 +119,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, bubbleDown({ ["u"
 		ach(9819),	-- Darkmoon Like the Wind
 		ach(9755),	-- Darkmoon Race Enthusiast
 		ach(9761, {	-- Darkmoon Racer Roadhog (11 tolls)
-			i(122129),	-- Fire-Eater's Vial
+			i(122129),	-- Fire-Eater's Vial (TOY!)
 			ach(9760),	-- Darkmoon Racer Leadfoot (15 tolls)
 			ach(9759),	-- Darkmoon Racer Jockey (20 tolls)
 			ach(9756),	-- Darkmoon Racer Novice (25 tolls)
@@ -246,14 +246,14 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, bubbleDown({ ["u"
 		ach(11921),	-- Mosh Pit
 		ach(11920),	-- Perfect Performance
 		ach(9785, {	-- Powermonger: Gold (11 tolls)
-			i(122120),	-- Gaze of the Darkmoon
+			i(122120),	-- Gaze of the Darkmoon (TOY!)
 			ach(9783),	-- Powermonger: Silver (15 tolls)
 			ach(9781),	-- Powermonger: Bronze (20 tolls)
 			ach(9780),	-- Go-Getter (25 tolls)
 		}),
 		ach(6022),	-- Quick Shot
 		ach(9764, {	-- Rocketeer: Gold (11 tolls)
-			i(122119),	-- Everlasting Darkmoon Firework
+			i(122119),	-- Everlasting Darkmoon Firework (TOY!)
 			ach(9766),	-- Rocketeer: Silver (15 tolls)
 			ach(9769),	-- Rocketeer: Bronze (20 tolls)
 			ach(9770),	-- Blast Off! (25 tolls)
@@ -334,10 +334,10 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, bubbleDown({ ["u"
 			i(123862),	-- Hogs' Studded Collar
 		}),
 		ach(9894, {	-- Triumphant Turtle Tossing
-			i(122123),	-- Darkmoon Ring-Flinger
+			i(122123),	-- Darkmoon Ring-Flinger (TOY!)
 		}),
 		ach(9792, {	-- Wanderluster: Gold (11 tolls)
-			i(122126),	-- Attraction Sign
+			i(122126),	-- Attraction Sign (TOY!)
 			ach(9790),	-- Wanderluster: Silver (15 tolls)
 			ach(9787),	-- Wanderluster: Bronze (20 tolls)
 			ach(9786),	-- Wayfarer (25 tolls)

@@ -165,7 +165,7 @@ _.Zones =
 							i(146962, {		-- Golden Minnow
 								-- extra info for the item can go here
 							}),
-							i(147311, {	-- Crate of Bobbers: Replica Gondola
+							i(147311, {	-- Crate of Bobbers: Replica Gondola (TOY!)
 								["cost"] = { { "i", 146962, 100 }, },	-- 100x Golden Minnow
 							}),
 							i(133717, {	-- Enchanted Lure

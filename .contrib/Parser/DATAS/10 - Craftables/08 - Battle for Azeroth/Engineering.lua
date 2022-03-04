@@ -19,9 +19,9 @@ _.Craftables =
 				i(165738),	-- Makeshift Azerite Detector
 			}),
 			filter(TOYS, {
-				i(168667), -- Blingtron 7000
-				i(168807),	-- Wormhole Generator: Kul Tiras
-				i(168808),	-- Wormhole Generator: Zandalar
+				i(168667), -- Blingtron 7000 (TOY!)
+				i(168807),	-- Wormhole Generator: Kul Tiras (TOY!)
+				i(168808),	-- Wormhole Generator: Zandalar (TOY!)
 			}),
 			filter(ONE_HANDED_MACES, {
 				i(159937),	-- Honorable Combatant's Discombobulator

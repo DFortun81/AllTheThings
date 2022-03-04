@@ -136,14 +136,14 @@ _.Zones =
 					["questID"] = 34239,
 					["coord"] = { 66.5, 86.9, TALADOR },
 					["g"] = {
-						i(117569),	-- Giant Deathweb Egg Toy
+						i(117569),	-- Giant Deathweb Egg (TOY!)
 					},
 				}),
 				o(226976, {	-- Deceptia's Smoldering Boots
 					["questID"] = 33933,
 					["coord"] = { 58.8, 12.1, TALADOR },
 					["g"] = {
-						i(108743),	-- Deceptia's Smoldering Boots Toy
+						i(108743),	-- Deceptia's Smoldering Boots (TOY!)
 					},
 				}),
 				o(228017, {	-- Draenei Weapons
@@ -161,7 +161,7 @@ _.Zones =
 					["questID"] = 34238,
 					["coord"] = { 57.4, 28.7, TALADOR },
 					["g"] = {
-						i(116120),	-- Tasty Talador Lunch
+						i(116120),	-- Tasty Talador Lunch (TOY!)
 					},
 				}),
 				o(236483, {	-- Gift of the Ancients

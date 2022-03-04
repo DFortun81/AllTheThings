@@ -79,7 +79,7 @@ _.Zones =
 								["provider"] = { "n", 115787 },	-- Bloodgazer Hatchling
 								["sourceQuest"] = 45006,	-- The Unfavorable Faction
 								["g"] = {
-									i(142494),	-- Purple Blossom
+									i(142494),	-- Purple Blossom (TOY!)
 								},
 							}),
 							q(45020, {	-- Bloodgazer Reunion

@@ -21,16 +21,16 @@ root("Holidays", d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
 					i(129923, {	-- Reins of the Eclipse Dragonhawk
 						["cost"] = { { "c", 1166, 5000 }, },	-- 5,000x Timewarped Badge
 					}),
-					i(129929, {	-- Ever-Shifting Mirror
+					i(129929, {	-- Ever-Shifting Mirror (TOY!)
 						["cost"] = { { "c", 1166, 500 }, },		-- 500x Timewarped Badge
 					}),
-					i(151016, {	-- Fractured Necrolyte Skull
+					i(151016, {	-- Fractured Necrolyte Skull (TOY!)
 						["cost"] = { { "c", 1166, 750 }, },		-- 750x Timewarped Badge
 					}),
-					i(129926, {	-- Mark of the Ashtongue
+					i(129926, {	-- Mark of the Ashtongue (TOY!)
 						["cost"] = { { "c", 1166, 1250 }, },	-- 1,250x Timewarped Badge
 					}),
-					i(151184, {	-- Verdant Throwing Sphere
+					i(151184, {	-- Verdant Throwing Sphere (TOY!)
 						["cost"] = { { "c", 1166, 500 }, },		-- 500x Timewarped Badge
 					}),
 				-- Gear

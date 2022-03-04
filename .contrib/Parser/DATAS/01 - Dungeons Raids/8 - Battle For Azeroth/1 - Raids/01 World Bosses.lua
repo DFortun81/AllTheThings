@@ -46,7 +46,7 @@ _.Instances = { tier(BFA_TIER, {
 				["creatureID"] = 138122,	-- Doom's Howl
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(163195),	-- Schematic: Makeshift Azerite Detector (confirmed drop by Crieve on stream 11.23.18)
-					i(163828),	-- Toy Siege Tower
+					i(163828),	-- Toy Siege Tower (TOY!)
 					i(161464),	-- Alliance Bowman's Coif
 					i(161466),	-- Battlemage's Collar
 					i(161468),	-- Gilded-Wing Shoulderguards
@@ -236,7 +236,7 @@ _.Instances = { tier(BFA_TIER, {
 				["coord"] = { 35.5, 38.9, ARATHI_HIGHLANDS },
 				["creatureID"] = 137374,	-- The Lion's Roar
 				["g"] = bubbleDown({["modID"] = 3}, {
-					i(163829),	-- Toy War Machine
+					i(163829),	-- Toy War Machine (TOY!)
 					i(161455),	-- Battlemage's Collar
 					i(161453),	-- Warscout's Horned Helm
 					i(161457),	-- Dire-Tooth Spaulders

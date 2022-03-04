@@ -9,7 +9,7 @@ root("PVP", pvp(n(-10058, {	-- World
 			["description"] = "Granted upon killing 10 Horde players without dying after you became an Assassin.",
 			["g"] = {
 				title(414),	-- %s, Servant of N'Zoth
-				i(173951),	-- N'lyeth, Sliver of N'Zoth (Toy)
+				i(173951),	-- N'lyeth, Sliver of N'Zoth (TOY!)
 				i(174020),	-- N'lyeth, Sliver of N'Zoth (Q Item)
 			},
 		}),
@@ -18,7 +18,7 @@ root("PVP", pvp(n(-10058, {	-- World
 			["description"] = "Granted upon killing 10 Alliance players without dying after you became an Assassin.",
 			["g"] = {
 				title(414),	-- %s, Servant of N'Zoth
-				i(173951),	-- N'lyeth, Sliver of N'Zoth (Toy)
+				i(173951),	-- N'lyeth, Sliver of N'Zoth (TOY!)
 				i(174020),	-- N'lyeth, Sliver of N'Zoth (Q Item)
 			},
 		}),

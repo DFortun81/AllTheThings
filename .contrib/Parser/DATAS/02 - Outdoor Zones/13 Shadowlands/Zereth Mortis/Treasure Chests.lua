@@ -363,7 +363,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
 					}),
 					i(189863),	-- Spatial Opener
-					i(190926),	-- Infested Automa Core
+					i(190926),	-- Infested Automa Core (TOY!)
 				},
 			}),
 			-- Sands

@@ -50,7 +50,7 @@ root("Zones", {
 							["lvl"] = { 50 },
 							["g"] = {
 								i(166298, {	-- Champions of Azeroth Supplies
-									i(166877),	-- Azerite Firework Launcher
+									i(166877),	-- Azerite Firework Launcher (TOY!)
 								}),
 							},
 						}),
@@ -683,7 +683,7 @@ root("Zones", {
 							["coord"] = { 33.7, 54.6, 1474 },
 							["sourceQuest"] = 56401,	-- A Bolt from the Blue
 							["g"] = {
-								i(169768),	-- Heart of a Champion
+								i(169768),	-- Heart of a Champion (TOY!)
 							},
 						}),
 						q(58615, {	-- Whispers in the Dark

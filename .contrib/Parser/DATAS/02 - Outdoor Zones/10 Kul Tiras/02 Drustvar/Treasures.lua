@@ -18,7 +18,7 @@ _.Zones =
 					["coord"] = { 24.3, 14.9, DRUSTVAR },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(163603),	-- Lucille's Handkerchief
+						i(163603),	-- Lucille's Handkerchief (TOY!)
 					},
 				}),
 				o(297939, {	-- Order Of Embers Crossbow

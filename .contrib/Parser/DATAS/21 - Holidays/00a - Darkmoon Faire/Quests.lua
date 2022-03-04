@@ -557,7 +557,7 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 			["coord"] = { 48.3, 71.3, 407 },
 			["g"] = {
 				ach(9252, {	-- Brood of Alysrazor
-					i(116115),	-- Blazing Wings
+					i(116115),	-- Blazing Wings (TOY!)
 				}),
 				i(93724),	-- Darkmoon Game Prize
 			},
@@ -760,7 +760,7 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 			["provider"] = { "i", 116068 },	-- Erinys
 			["coord"] = { 74.8, 33.4, 407 },	-- Entrance
 			["g"] = {
-				i(116067),	-- Ring of Broken Promises
+				i(116067),	-- Ring of Broken Promises (TOY!)
 			},
 		}),
 		q(7893, {	-- Rituals of Strength
@@ -863,7 +863,7 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 			["coord"] = { 51.5, 77.1, 407 },
 			["g"] = {
 				ach(9894, {	-- Triumphant Turtle Tossing
-					i(122123),	-- Darkmoon Ring-Flinger
+					i(122123),	-- Darkmoon Ring-Flinger (TOY!)
 				}),
 				i(93724),	-- Darkmoon Game Prize
 			},
@@ -942,7 +942,7 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 				ach(9811, {	-- Big Wanderluster: Gold
 					["crs"] = { 89736 },	-- Wanderluster
 					["g"] = {
-						i(122121),	-- Darkmoon Gazer
+						i(122121),	-- Darkmoon Gazer (TOY!)
 						ach(9809),	-- Big Wanderluster: Gold [Real Big Race -- R25]
 						ach(9807),	-- Big Wanderluster: Gold [Real Big Race -- R40]
 						ach(9806),	-- Big Wanderluster: Gold [Real Big Race -- R30]
@@ -961,7 +961,7 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 				ach(9761, {	-- Darkmoon Racer Roadhog
 					["crs"] = { 90148 },	-- Racing Strider
 					["g"] = {
-						i(122129),	-- Fire-Eater Vial
+						i(122129),	-- Fire-Eater Vial (TOY!)
 						ach(9760),	-- Darkmoon Racer Leadfoot
 						ach(9759),	-- Darkmoon Racer Jockey
 						ach(9756),	-- Darkmoon Racer Novice
@@ -970,7 +970,7 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 				ach(9785, {	-- Powermonger: Gold
 					["crs"] = { 89732 },	-- Powermonger
 					["g"] = {
-						i(122120),	-- Gaze of the Darkmoon
+						i(122120),	-- Gaze of the Darkmoon (TOY!)
 						ach(9783),	-- Powermonger: Silver
 						ach(9781),	-- Powermonger: Bronze
 						ach(9780),	-- Go-Getter
@@ -979,7 +979,7 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 				ach(9764, {	-- Rocketeer: Gold
 					["crs"] = { 89734 },	-- Rocketeer
 					["g"] = {
-						i(122119),	-- Everlasting Darkmoon Firework
+						i(122119),	-- Everlasting Darkmoon Firework (TOY!)
 						ach(9766),	-- Rocketeer: Silver
 						ach(9769),	-- Rocketeer: Bronze
 						ach(9770),	-- Blast Off!
@@ -988,7 +988,7 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 				ach(9792, {	-- Wanderluster: Gold
 					["crs"] = { 89736 },	-- Wanderluster
 					["g"] = {
-						i(122126),	-- Attraction Sign
+						i(122126),	-- Attraction Sign (TOY!)
 						ach(9819),	-- Darkmoon Like the Wind
 						ach(9790),	-- Wanderluster: Silver
 						ach(9787),	-- Wanderluster: Bronze
@@ -1024,7 +1024,7 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 			["coord"] = { 50.7, 65.1, 407 },
 			["g"] = {
 				ach(9885, {	-- Ace Tonk Commander
-					i(122122),	-- Darkmoon Tonk Controller
+					i(122122),	-- Darkmoon Tonk Controller (TOY!)
 				}),
 				i(93724),	-- Darkmoon Game Prize
 			},

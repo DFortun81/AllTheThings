@@ -144,7 +144,7 @@ profession(SKINNING, {
 				["provider"] = { "n", 98721 },	-- Seymour <Skinning Trainer>
 				["coord"] = { 45.7, 25.6, STORMHEIM },
 				["groups"] = {
-					i(130102),	-- Mother's Skinning Knife
+					i(130102),	-- Mother's Skinning Knife (TOY!)
 				},
 			}),
 			q(40151, {	-- Immaculate Stormscale
@@ -268,7 +268,7 @@ profession(SKINNING, {
 		i(153057),	-- Fossorial Bile Larva
 	}),
 	filter(TOYS, {
-		i(130102),	--  Mother's Skinning Knife
+		i(130102),	--  Mother's Skinning Knife (TOY!)
 	}),
 	--[==[--
 	filter(RECIPES, {

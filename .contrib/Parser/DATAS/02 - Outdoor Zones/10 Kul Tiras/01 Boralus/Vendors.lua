@@ -733,8 +733,8 @@ _.Zones =
 									i(163824),	-- Voru'kar Leecher
 								}),
 								filter(TOYS, {
-									i(164373),	-- Enchanted Soup Stone
-									i(163924),	-- Whiskerwax Candle
+									i(164373),	-- Enchanted Soup Stone (TOY!)
+									i(163924),	-- Whiskerwax Candle (TOY!)
 								}),
 							},
 						}),
@@ -870,9 +870,9 @@ _.Zones =
 								i(164429),	-- Leggings of the Tranquil Path
 								i(164428),	-- Footpads of the Tranquil Path
 								filter(TOYS, {
-									i(164375),	-- Bad Mojo Banana
-									i(164374),	-- Magic Monkey Banana
-									i(163795),	-- Oomgut Ritual Drum
+									i(164375),	-- Bad Mojo Banana (TOY!)
+									i(164374),	-- Magic Monkey Banana (TOY!)
+									i(163795),	-- Oomgut Ritual Drum (TOY!)
 								}),
 								n(WEAPONS, {
 									i(164267),	-- Plundered Biting Shot Longbow

@@ -29,7 +29,7 @@ _.ExpansionFeatures =
 								i(130322),	-- Mask of Artful Dodging
 							}),
 							o(252270, {	-- Mysterious Crate
-								i(139587),	-- Suspicious Crate [Toy]
+								i(139587),	-- Suspicious Crate (TOY!)
 								i(130322),	-- Mask of Artful Dodging
 								i(130324),	-- Boots of Artful Dodging
 							}),

@@ -13,7 +13,7 @@ root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 			i(142380),	-- Dutiful Gruntling
 		}),
 		ach(12894, {	-- Honor Level 10
-			i(134026),		-- Honorable Pennant
+			i(134026),		-- Honorable Pennant (TOY!)
 		}),
 		ach(12895, {	-- Honor Level 15
 			i(140228),		-- Prestigious Bronze Courser
@@ -26,7 +26,7 @@ root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 			title(321),	-- The Honorable %s
 		}),
 		ach(12902, {	-- Honor Level 30
-			i(134031),		-- Prestigious Pennant
+			i(134031),		-- Prestigious Pennant (TOY!)
 		}),
 		ach(12903, {	-- Honor Level 40
 			i(140233),		-- Prestigious Ivory Courser
@@ -35,7 +35,7 @@ root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 			title(322),	-- The Prestigious
 		}),
 		ach(12905, {	-- Honor Level 60
-			i(134032),		-- Elite Pennant
+			i(134032),		-- Elite Pennant (TOY!)
 		}),
 		ach(12906, {	-- Honor Level 70
 			i(140408),		-- Prestigious Azure Courser
@@ -44,7 +44,7 @@ root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 			title(323),	-- The Unrelenting
 		}),
 		ach(12908, {	-- Honor Level 90
-			i(134034),		-- Esteemed Pennant
+			i(134034),		-- Esteemed Pennant (TOY!)
 		}),
 		ach(12909, {	-- Honor Level 100
 			title(354),	-- the Unstoppable Force
@@ -56,7 +56,7 @@ root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 			i(140230),		-- Prestigious Royal Courser
 		}),
 		ach(12912, {	-- Honor Level 175
-			i(164310),		-- Glorious Pennant
+			i(164310),		-- Glorious Pennant (TOY!)
 		}),
 		ach(12913, {	-- Honor Level 200
 			title(325),	-- , Bound By Honor

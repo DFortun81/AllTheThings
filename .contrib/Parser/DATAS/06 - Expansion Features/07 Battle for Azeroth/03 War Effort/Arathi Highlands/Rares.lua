@@ -83,7 +83,7 @@ _.ExpansionFeatures =
 						["isWeekly"] = true,
 						["coord"] = { 28.6, 45.6, ARATHI_HIGHLANDS },	-- Cave Entrance
 						["g"] = {
-							i(163735),	-- Foulbelly
+							i(163735),	-- Foulbelly (TOY!)
 						},
 					}),
 					n(142433, {	-- Fozruk
@@ -105,7 +105,7 @@ _.ExpansionFeatures =
 						["isWeekly"] = true,
 						["coord"] = { 78.1, 36.7, ARATHI_HIGHLANDS },
 						["g"] = {
-							i(163713),	-- Brazier Cap
+							i(163713),	-- Brazier Cap (TOY!)
 						},
 					}),
 					n(142725, {	-- Horrific Apparition
@@ -118,7 +118,7 @@ _.ExpansionFeatures =
 							{ 26.7, 32.6, ARATHI_HIGHLANDS },	-- Alliance-controlled
 						},
 						["g"] = {
-							i(163736),	-- Spectral Visage
+							i(163736),	-- Spectral Visage (TOY!)
 						},
 					}),
 					n(142739, {	-- Knight-Captaian Aldrin
@@ -138,7 +138,7 @@ _.ExpansionFeatures =
 						["isWeekly"] = true,
 						["coord"] = { 48.2, 79.8, ARATHI_HIGHLANDS },
 						["g"] = {
-							i(163744),	-- Coldrage's Cooler
+							i(163744),	-- Coldrage's Cooler (TOY!)
 						},
 					}),
 					n(142684, {	-- Kovork
@@ -148,7 +148,7 @@ _.ExpansionFeatures =
 						["isWeekly"] = true,
 						["coord"] = { 28.6, 45.6, ARATHI_HIGHLANDS },	-- Cave Entrance
 						["g"] = {
-							i(163750),	-- Kovork Kostume
+							i(163750),	-- Kovork Kostume (TOY!)
 						},
 					}),
 					n(142716, {	-- Man-Hunter Rog
@@ -167,7 +167,7 @@ _.ExpansionFeatures =
 						["isWeekly"] = true,
 						["coord"] = { 47.6, 77.9, ARATHI_HIGHLANDS },
 						["g"] = {
-							i(163775),	-- Molok Morion
+							i(163775),	-- Molok Morion (TOY!)
 						},
 					}),
 					n(142692, {	-- Nimar the Slayer
@@ -229,7 +229,7 @@ _.ExpansionFeatures =
 						["isWeekly"] = true,
 						["coord"] = { 42.8, 56.4, ARATHI_HIGHLANDS },
 						["g"] = {
-							i(163741),	-- Magic Fun Rock
+							i(163741),	-- Magic Fun Rock (TOY!)
 						},
 					}),
 					n(142690, {	-- Singer
@@ -242,7 +242,7 @@ _.ExpansionFeatures =
 							{ 51.1, 39.9, ARATHI_HIGHLANDS },	-- Alliance-controlled
 						},
 						["g"] = {
-							i(163738),	-- Syndicate Mask
+							i(163738),	-- Syndicate Mask (TOY!)
 						},
 					}),
 					n(142437, {	-- Skullripper
@@ -288,7 +288,7 @@ _.ExpansionFeatures =
 						["isWeekly"] = true,
 						["coord"] = { 63.2, 77.6, ARATHI_HIGHLANDS },
 						["g"] = {
-							i(163745),	-- Witherbark Gong
+							i(163745),	-- Witherbark Gong (TOY!)
 						},
 					}),
 				}),

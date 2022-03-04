@@ -413,7 +413,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(19),		-- Ratgusher
 		}),
 		ach(14721, {	-- It's in the Mix
-			i(183903),		-- Smelly Jelly
+			i(183903),		-- Smelly Jelly (TOY!)
 			crit(1),		-- Pulsing Leech
 			crit(2),		-- Gelloh
 			crit(3),		-- Oily Invertebrate
@@ -442,7 +442,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 		}),
 		ach(14634, {	-- Nine Afterlives
 			["g"] = {
-				i(184449),		-- Jiggles's Favorite Toy
+				i(184449),		-- Jiggles's Favorite Toy (TOY!)
 				crit(1, {	-- Hairball
 					["description"] = "Close to the top-left corner of the final boss's map.  On the left side of the slime pool, kill a green ooze and then turn left.  Hairball is in a tiny alcove filled with fish skeletons and candles.",
 					["crs"] = { 174195 },	-- Hairball

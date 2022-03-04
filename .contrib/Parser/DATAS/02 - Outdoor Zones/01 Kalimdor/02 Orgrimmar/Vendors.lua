@@ -229,7 +229,7 @@ root("Zones", m(KALIMDOR, {
 					i(95621),	-- Warbot Ignition Key Pet
 					i(54343),	-- Blue Crashin' Thrashin' Racer Controller (TOY!)
 					i(104324),	-- Foot Ball (TOY!)
-					i(137663),	-- Soft Foam Sword Toy
+					i(137663),	-- Soft Foam Sword (TOY!)
 					i(104323),	-- The Swineskin (TOY!)
 					i(54438),	-- Tiny Blue Ragdoll (TOY!)
 					i(54437),	-- Tiny Green Ragdoll (TOY!)

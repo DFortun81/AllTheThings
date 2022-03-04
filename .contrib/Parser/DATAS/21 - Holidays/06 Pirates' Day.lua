@@ -41,7 +41,7 @@ _.Holidays = { applyholiday(PIRATES_DAY, {
 				["coord"] = { 37.8, 66.2, THE_CAPE_OF_STRANGLETHORN },
 				["timeline"] = { "added 7.0.3.21570" },
 				["groups"] = {
-					i(138415, {	-- Slightly-Chewed Insult Book
+					i(138415, {	-- Slightly-Chewed Insult Book (TOY!)
 						["timeline"] = { "added 7.0.3.21570" },
 					}),
 				},
@@ -69,7 +69,7 @@ _.Holidays = { applyholiday(PIRATES_DAY, {
 				["coord"] = { 39.6, 84.2, THE_CAPE_OF_STRANGLETHORN },
 				["timeline"] = { "added 7.2.5.23910" },
 				["groups"] = {
-					i(150547, {	-- Jolly Roger (Toy)
+					i(150547, {	-- Jolly Roger (TOY!)
 						["description"] = "To purchase this toy, you must have earned the achievement |cFFFFD700Avast Ye, Admiral|r.",
 						["timeline"] = { "added 7.2.5.23910" },
 					}),

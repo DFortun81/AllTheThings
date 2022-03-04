@@ -15,7 +15,7 @@ _.Zones =
 					["repeatable"] = true,
 					["g"] = {
 						i(166282, {	-- Talanji's Expedition Supplies
-							i(166308),	-- For da Blood God!
+							i(166308),	-- For da Blood God! (TOY!)
 							i(166716),	-- Pair of Tiny Bat Wings
 						}),
 					},

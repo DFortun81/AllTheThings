@@ -52,7 +52,7 @@ _.Zones =
 										crit(13, {	-- Rezira the Seer
 											["achievementID"] = 12078,	-- Commander of Argus
 										}),
-										i(153293),	-- Sightless Eye
+										i(153293),	-- Sightless Eye (TOY!)
 									},
 								}),
 							},

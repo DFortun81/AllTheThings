@@ -1739,7 +1739,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 							["timeline"] = { "added 2.2.0.7272" },
 							["cost"] = BREWFEST_TOKEN_COST(100),
 						}),
-						i(166747, {	-- Brewfest Reveler's Hearthstone
+						i(166747, {	-- Brewfest Reveler's Hearthstone (TOY!)
 							["timeline"] = { "added 8.1.5.29701" },
 							["cost"] = BREWFEST_TOKEN_COST(200),
 						}),
@@ -1893,7 +1893,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 							["timeline"] = { "added 2.2.0.7272" },
 							["cost"] = BREWFEST_TOKEN_COST(100),
 						}),
-						i(166747, {	-- Brewfest Reveler's Hearthstone
+						i(166747, {	-- Brewfest Reveler's Hearthstone (TOY!)
 							["timeline"] = { "added 8.1.5.29701" },
 							["cost"] = BREWFEST_TOKEN_COST(200),
 						}),
@@ -1963,7 +1963,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["timeline"] = { "added 8.2.0.30918" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(169865, {	-- Brewfest Chowdown Trophy
+						i(169865, {	-- Brewfest Chowdown Trophy (TOY!)
 							["cost"] = { { "i", 169599, 5 } },	-- 5x Chowdown Champion Token
 							["timeline"] = { "added 8.2.0.30918" },
 						}),
@@ -2016,7 +2016,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["timeline"] = { "added 8.2.0.30918" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(169865, {	-- Brewfest Chowdown Trophy
+						i(169865, {	-- Brewfest Chowdown Trophy (TOY!)
 							["cost"] = { { "i", 169599, 5 } },	-- 5x Chowdown Champion Token
 							["timeline"] = { "added 8.2.0.30918" },
 						}),

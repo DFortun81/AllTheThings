@@ -142,7 +142,7 @@ _.Zones =
 						i(87638),	-- Cloak ok Tranquil Clouds
 						i(87640),	-- Softfoot's Drape
 						i(87639),	-- Tattered Guo-Lai Dynasty Cloak
-						i(134023),	-- Bottled Tornado
+						i(134023),	-- Bottled Tornado (TOY!)
 					},
 				}),
 				n(50349, {	-- Kang the Soul Thief

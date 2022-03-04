@@ -94,7 +94,7 @@ _.Zones =
 						crit(2, {	-- Bramblefell slain
 							["achievementID"] = 10070,	-- Jungle Stalker
 						}),
-						i(127652),	-- Felflame Campfire Toy
+						i(127652),	-- Felflame Campfire (TOY!)
 					},
 				}),
 				n(92429, {	-- Broodlord Ixkor
@@ -127,7 +127,7 @@ _.Zones =
 						crit(42, {	-- (The Real) Captain Ironbeard slain
 							["achievementID"] = 10070,	-- Jungle Stalker
 						}),
-						i(127659),	-- Ghostly Iron Buccaneer's Hat Toy
+						i(127659),	-- Ghostly Iron Buccaneer's Hat (TOY!)
 						i(128257, {	-- Equipment Blueprint: Ghostly Spyglass
 							["questID"] = 39365,	-- Equipment Blueprint: Ghostly Spyglass
 						}),

@@ -5,7 +5,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 	m(ZERETH_MORTIS, {
 		n(QUESTS, {
 			n(REWARDS, {
-				i(190754, {	-- Firim's Specimen Container
+				i(190754, {	-- Firim's Specimen Container (TOY!)
 					["description"] = "Chance from Firim Dailies.",
 				}),
 			}),

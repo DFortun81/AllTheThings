@@ -53,7 +53,7 @@ root("Secrets", n(86470, {	-- Pepe
 			["description"] = "You need Tier 3 garrison for this.",
 			["u"] = HALLOWS_END,
 		}),
-		i(147537, {	-- A Tiny Set of Warglaives
+		i(147537, {	-- A Tiny Set of Warglaives (TOY!)
 			["classes"] = { DEMONHUNTER },
 		}),
 		i(186580,  {	-- A Tiny Sinstone

@@ -161,7 +161,7 @@ _.Zones =
 							i(146848, {	-- Fragmented Enchantment
 								-- extra info for the item can go here
 							}),
-							i(147308, {	-- Enchanted Bobber
+							i(147308, {	-- Crate of Bobbers: Enchanted Bobber (TOY!)
 								["cost"] = { { "i", 146848, 100 } },	-- 100x Fragmented Enchantment
 							}),
 							i(152555, {	-- Ghost Shark

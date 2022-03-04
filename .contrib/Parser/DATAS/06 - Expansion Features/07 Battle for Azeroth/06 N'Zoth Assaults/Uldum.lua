@@ -1108,7 +1108,7 @@ root("ExpansionFeatures", {
 								["coord"] = { 49.3, 82.3, 1527 },
 								["isDaily"] = true,
 								["g"] = {
-									i(169303),	-- Hell-Bent Bracers
+									i(169303),	-- Hell-Bent Bracers (TOY!)
 								},
 							}),
 							n(158595, {	-- Thoughtstealer Vos
@@ -1148,7 +1148,7 @@ root("ExpansionFeatures", {
 										["questID"] = 57438,
 										["isDaily"] = true,
 										["g"] = {
-											i(174874),	-- Budget K'thir Disguise
+											i(174874),	-- Budget K'thir Disguise (TOY!)
 										},
 									}),
 									n(157469, {	-- Zoth'rum the Intellect Pillager
@@ -1674,7 +1674,7 @@ root("ExpansionFeatures", {
 								["sourceQuest"] = 58805,	-- Continued Incubation
 								["description"] = "Must reach 5000/5000 with the egg's progress bar.",
 								["g"] = {
-									i(175063),	-- Aqir Egg Cluster
+									i(175063),	-- Aqir Egg Cluster (TOY!)
 								},
 							}),
 							q(58811, {	-- A Balanced Diet
@@ -2028,7 +2028,7 @@ root("ExpansionFeatures", {
 									i(174925, {	-- Void Tendril Pet Leash
 										["cost"] = { { "c", 1719, 1 }, },	-- 1x Corrupted Memento
 									}),
-									i(174995, {	-- Void Tendril Pet Leash (Toy)
+									i(174995, {	-- Void Tendril Pet Leash (TOY!)
 										["cost"] = {
 											{ "i", 163036, 20 },	-- Polished Pet Charm
 											{ "c", 1719, 100 },		-- 100x Corrupted Memento

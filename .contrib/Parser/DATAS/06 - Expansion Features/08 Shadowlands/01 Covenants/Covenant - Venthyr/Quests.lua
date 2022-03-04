@@ -152,7 +152,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["provider"] = { "n", 167381 },	-- Baroness Draka
 				["coord"] = { 56.3, 66.6, REVENDRETH },
 				["g"] = {
-					i(180947),	-- Tithe Collector's Vessel
+					i(180947),	-- Tithe Collector's Vessel (TOY!)
 				},
 			}),
 			q(59323, {	-- Anima Awakening

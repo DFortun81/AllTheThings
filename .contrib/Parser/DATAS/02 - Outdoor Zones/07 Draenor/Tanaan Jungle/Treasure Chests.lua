@@ -89,7 +89,7 @@ _.Zones =
 					["questID"] = 38822,
 					["coord"] = { 42.8, 35.3, TANAAN_JUNGLE },
 					["g"] = {
-						i(127859),	-- Dazzling Rod Toy
+						i(127859),	-- Dazzling Rod (TOY!)
 					},
 				}),
 				o(243693, {	-- Dead Man's Chest
@@ -163,7 +163,7 @@ _.Zones =
 					["questID"] = 38334,
 					["coord"] = { 28.7, 23.5, TANAAN_JUNGLE },
 					["g"] = {
-						i(127668),	-- Jewel of Hellfire Toy
+						i(127668),	-- Jewel of Hellfire (TOY!)
 					},
 				}),
 				o(241561, {	-- Jewel of the Fallen Star
@@ -198,7 +198,7 @@ _.Zones =
 						38453,	-- Garrison Campaign: The Bane of the Bleeding Hollow [H]
 					},
 					["g"] = {
-						i(127709),	-- Throbbing Blood Orb
+						i(127709),	-- Throbbing Blood Orb (TOY!)
 					},
 				}),
 				o(241673, {	-- Looted Bleeding Hollow Treasure
@@ -281,7 +281,7 @@ _.Zones =
 					["questID"] = 38742,
 					["coord"] = { 34.6, 34.6, TANAAN_JUNGLE },
 					["g"] = {
-						i(127669),	-- Skull of the Mad Chief Toy
+						i(127669),	-- Skull of the Mad Chief (TOY!)
 					},
 				}),
 				o(241521, {	-- Snake Charmer's Flute
@@ -378,14 +378,14 @@ _.Zones =
 					["coord"] = { 40.8, 75.6, TANAAN_JUNGLE },
 					["description"] = "Eat |cFFFFD700Mysterious Fruit|r until you get the |cFFFFD700Pollen Protection|r buff.",
 					["g"] = {
-						i(127766),	-- The Perfect Blossom Toy
+						i(127766),	-- The Perfect Blossom (TOY!)
 					},
 				}),
 				o(240855, {	-- Tome of Secrets
 					["questID"] = 38426,
 					["coord"] = { 32.4, 70.4, TANAAN_JUNGLE },
 					["g"] = {
-						i(127670),	-- Accursed Tome of the Sargerei Toy
+						i(127670),	-- Accursed Tome of the Sargerei (TOY!)
 					},
 				}),
 				o(240289, {	-- Weathered Axe

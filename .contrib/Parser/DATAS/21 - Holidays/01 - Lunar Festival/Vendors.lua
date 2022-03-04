@@ -78,34 +78,34 @@ _.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 					i(89999, {	-- Everlasting Alliance Firework (TOY!)
 						["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
 					}),
-					i(143827, {	-- Red Dragon Head Costume
+					i(143827, {	-- Red Dragon Head Costume (TOY!)
 						["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
 					}),
-					i(165674, {	-- Green Dragon Head Costume
+					i(165674, {	-- Green Dragon Head Costume (TOY!)
 						["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
 					}),
-					i(165671, {	-- Blue Dragon Head Costume
+					i(165671, {	-- Blue Dragon Head Costume (TOY!)
 						["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
 					}),
-					i(143828, {	-- Red Dragon Body Costume
+					i(143828, {	-- Red Dragon Body Costume (TOY!)
 						["cost"] = { { "i", 21100, 10 } },	-- 10x Coin of Ancestry
 					}),
-					i(165675, {	-- Green Dragon Body Costume
+					i(165675, {	-- Green Dragon Body Costume (TOY!)
 						["cost"] = { { "i", 21100, 10 } },	-- 10x Coin of Ancestry
 					}),
-					i(165672, {	-- Blue Dragon Body Costume
+					i(165672, {	-- Blue Dragon Body Costume (TOY!)
 						["cost"] = { { "i", 21100, 10 } },	-- 10x Coin of Ancestry
 					}),
-					i(143829, {	-- Red Dragon Tail Costume
+					i(143829, {	-- Red Dragon Tail Costume (TOY!)
 						["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
 					}),
-					i(165676, {	-- Green Dragon Tail Costume
+					i(165676, {	-- Green Dragon Tail Costume (TOY!)
 						["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
 					}),
-					i(165673, {	-- Blue Dragon Tail Costume
+					i(165673, {	-- Blue Dragon Tail Costume (TOY!)
 						["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
 					}),
-					i(165669, {	-- Lunar Elder's Hearthstone
+					i(165669, {	-- Lunar Elder's Hearthstone (TOY!)
 						["cost"] = { { "i", 21100, 30 } },	-- 30x Coin of Ancestry
 					}),
 				},

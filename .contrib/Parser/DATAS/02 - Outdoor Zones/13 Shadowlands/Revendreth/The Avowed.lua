@@ -250,7 +250,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 									["questID"] = 62822,
 									["cost"] = { { "c", 1816, 350 } },
 								}),
-								i(182890, {	-- Rapid Recitation Quill
+								i(182890, {	-- Rapid Recitation Quill (TOY!)
 									["cost"] = { { "c", 1816, 500 } },
 								}),
 								i(182660, {	-- Recipe: Shadestone
@@ -260,7 +260,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 									["questID"] = 62821,
 									["cost"] = { { "c", 1816, 600 } },
 								}),
-								i(184218, {	-- Vulgarity Arbiter
+								i(184218, {	-- Vulgarity Arbiter (TOY!)
 									["cost"] = { { "c", 1816, 1000 } },
 								}),
 								n(VENTHYR, sharedData({["customCollect"] = { "SL_COV_VEN" }},{

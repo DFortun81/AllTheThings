@@ -426,15 +426,15 @@ _.ExpansionFeatures =
 							i(112802),	-- Seal of Sullied Mending
 							i(112801),	-- Signet of Durable Dreams
 						}),
-						i(118191),	-- Archmage Vargoth's Spare Toy
-						i(128310),	-- Burning Blad
+						i(118191),	-- Archmage Vargoth's Spare (TOY!)
+						i(128310),	-- Burning Blad (TOY!)
 						i(128311),	-- Coaalfist Gronnling
 						i(127748),	-- Cinder Pup
 						i(128319, {	-- Void-Shrouded Satchel
 							i(128318),	-- Touch of the Void
 						}),
 						i(120301),	-- Armor Enhancement Token
-						i(118427),	-- Autographed Hearthstone Card
+						i(118427),	-- Autographed Hearthstone Card (TOY!)
 						i(114128),	-- Balanced Weapon Enhancement
 						i(114806),	-- Blackrock Armor Set
 						i(114745),	-- Braced Armor Enhancement

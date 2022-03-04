@@ -231,13 +231,13 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 7.0.3.22248", "
 				n(112527, {	-- Doomsayer
 					["description"] = "This Toy, Pocket Fel Spreader is available EXCLUSIVELY during the Legion pre-expansion event. It is obtained by using any ability or item that allows you to detect demons, and then speaking to a Doomsayer. \nWhen using any such ability or item, the Doomsayer will sometimes have the dialogue option \"There's something not quite right about you...\". Selecting this option, when visible, will change the Doomsayer into a Dread Infiltrator, which can be killed and looted to obtain this Toy. Note that the Toy is NOT a guaranteed drop, but has a roughly 25% drop rate.",
 					["g"] = {
-						i(140363),	-- Pocket Fel Spreader
+						i(140363),	-- Pocket Fel Spreader (TOY!)
 					},
 				}),
 					n(112198, {	-- Doomsayer
 					["description"] = "This Toy, Pocket Fel Spreader is available EXCLUSIVELY during the Legion pre-expansion event. It is obtained by using any ability or item that allows you to detect demons, and then speaking to a Doomsayer. \nWhen using any such ability or item, the Doomsayer will sometimes have the dialogue option \"There's something not quite right about you...\". Selecting this option, when visible, will change the Doomsayer into a Dread Infiltrator, which can be killed and looted to obtain this Toy. Note that the Toy is NOT a guaranteed drop, but has a roughly 25% drop rate.\n",
 					["g"] = {
-						i(140363),	-- Pocket Fel Spreader
+						i(140363),	-- Pocket Fel Spreader (TOY!)
 					},
 				}),
 			}),
@@ -319,7 +319,7 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 7.0.3.22248", "
 				n(112315, {	-- Dread Infiltrator
 					["description"] = "Players with some sort of Sense Demons ability could get this mob to spawn from Doomsayers.",
 					["groups"] = {
-						i(140363),	-- Pocket Fel Spreader Toy
+						i(140363),	-- Pocket Fel Spreader (TOY!)
 					},
 				}),
 			}),

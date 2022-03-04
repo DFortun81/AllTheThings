@@ -61,7 +61,7 @@ root("WorldEvents", n(FOURTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 			["coord"] = { 36.6, 74.6, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 			["g"] = {
-				i(158149, {	-- Overtuned Corgi Goggles
+				i(158149, {	-- Overtuned Corgi Goggles (TOY!)
 					["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
 				}),
 			},
@@ -70,7 +70,7 @@ root("WorldEvents", n(FOURTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 			["coord"] = { 84.6, 25.0, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
-				i(158149, {	-- Overtuned Corgi Goggles
+				i(158149, {	-- Overtuned Corgi Goggles (TOY!)
 					["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
 				}),
 			},

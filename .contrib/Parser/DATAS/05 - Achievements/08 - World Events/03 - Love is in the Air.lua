@@ -146,7 +146,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, {
 			}),
 		}),
 		ach(9394, {	-- They Really Love Me! (50)
-			i(116651),	-- True Love Prism
+			i(116651),	-- True Love Prism (TOY!)
 			ach(9393),	-- Beacon of Love (25)
 			ach(9392),	-- Love Magnet (10)
 		}),

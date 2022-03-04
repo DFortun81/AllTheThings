@@ -242,7 +242,9 @@ root("Zones", {
 					["collectible"] = false,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(122661),	-- S.E.L.F.I.E. Lens Upgrade Kit
+						i(122661, {	-- S.E.L.F.I.E. Lens Upgrade Kit
+							i(122674)	-- S.E.L.F.I.E. Camera MkII
+						}),
 					},
 				}),
 				q(44463, {	-- Demons Among Them

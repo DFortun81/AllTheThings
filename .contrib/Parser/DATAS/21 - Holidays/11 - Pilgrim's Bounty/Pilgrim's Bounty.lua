@@ -574,7 +574,7 @@ _.Holidays = { applyholiday(PILGRIMS_BOUNTY, {
 				i(116404, {	-- Pilgrim's Bounty
 					i(116401),	-- Fine Pilgrim's Hat
 					i(116403),	-- Frightened Bush Chicken
-					i(116400),	-- Silver-Plated Turkey Shooter
+					i(116400),	-- Silver-Plated Turkey Shooter (TOY!)
 				}),
 			},
 		}),

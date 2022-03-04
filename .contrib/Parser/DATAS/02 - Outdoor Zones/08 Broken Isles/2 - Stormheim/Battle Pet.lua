@@ -73,7 +73,7 @@ _.Zones =
 								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["sourceQuest"] = 44981,	-- The Unkindly Faction
 								["g"] = {
-									i(142495),	-- Fake Teeth
+									i(142495),	-- Fake Teeth (TOY!)
 								},
 							}),
 							q(44988, {	-- Direbeak Reunion

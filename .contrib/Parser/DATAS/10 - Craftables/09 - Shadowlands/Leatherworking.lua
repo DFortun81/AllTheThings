@@ -113,9 +113,9 @@ _.Craftables =
 				}),
 			}),
 			filter(TOYS, {
-				i(186985),	-- Elusive Pet Treat
-				i(186702),	-- Pallid Bone Flute
-				i(186686),	-- Pallid Oracle Bones
+				i(186985),	-- Elusive Pet Treat (TOY!)
+				i(186702),	-- Pallid Bone Flute (TOY!)
+				i(186686),	-- Pallid Oracle Bones (TOY!)
 			}),
 			i(185960),		-- Vestige of Origins
 		}),

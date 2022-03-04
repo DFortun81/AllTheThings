@@ -117,12 +117,12 @@ _.ExpansionFeatures =
 					n(QUESTS, {
 						q(37082),	-- Call of the Gladiator
 						q(37083, {	-- Fight, Kill, Salute!
-							i(119219, {	-- Warlord's Flag of Victory
+							i(119219, {	-- Warlord's Flag of Victory (TOY!)
 								["description"] = "Requires being the last player alive in the coliseum.",
 							}),
 							i(120142, {	-- Coliseum Champion's Spoils
-								i(119217),	-- Alliance Flag of Victory
-								i(119218),	-- Horde Flag of Victory
+								i(119217),	-- Alliance Flag of Victory (TOY!)
+								i(119218),	-- Horde Flag of Victory (TOY!)
 							}),
 						}),
 						q(36957, {	-- Nemesis: Becoming Death (Blood Elf)

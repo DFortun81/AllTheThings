@@ -460,7 +460,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			crit(3),		-- Turning the Tide
 		})),
 		a(ach(13285, {	-- Upright Citizens
-			i(166247),		-- Citizens Brigade Whistle (toy)
+			i(166247),		-- Citizens Brigade Whistle (TOY!)
 			crit(1, {		-- Russel the Bard recruited
 				["_quests"] = { 53704 },	-- Not Too Sober Citizens Brigade (Faction Assault WQ)
 				["coord"] = { 72.4, 68.9, BORALUS },

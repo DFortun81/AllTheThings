@@ -95,7 +95,7 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 	i(33292, {	-- Hallowed Helm
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
-	i(163045, {	-- Headless Horseman's Hearthstone
+	i(163045, {	-- Headless Horseman's Hearthstone (TOY!)
 		["timeline"] = { "added 8.0.1.26624" },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
@@ -3892,7 +3892,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						{ "i", 128664, 1 },	-- Creepy Crawlers
 					},
 					["groups"] = {
-						i(128794),	-- Sack of Spectral Spiders (PET!)
+						i(128794),	-- Sack of Spectral Spiders (TOY!)
 					},
 				}),
 				i(128874, {	-- A Tiny Scarecrow Costume

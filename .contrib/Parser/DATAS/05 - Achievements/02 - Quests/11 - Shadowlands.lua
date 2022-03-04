@@ -274,7 +274,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 		ach(14766, {	-- Parasoling
 			["altQuests"] = { 59718 },	-- Parasol Peril
 			["g"] = {
-				i(182695),		-- Weathered Purple Parasol
+				i(182695),	-- Weathered Purple Parasol (TOY!)
 			},
 		}),
 		ach(15515, {	-- Path to Enlightenment

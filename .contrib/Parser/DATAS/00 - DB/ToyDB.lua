@@ -403,18 +403,19 @@ i(116691);	-- Zhevra Lounge Cushion
 -- PATCH 6.0.2 --
 -----------------
 i(119217);	-- Alliance Flag of Victory
-i(119220);	-- Alliance Gladiator's Banner
 i(119432);	-- Botani Camouflage
 i(119211);	-- Golden Hearthstone Card: Lord Jaraxxus
 i(119210);	-- Hearthstone Board
 i(119218);	-- Horde Flag of Victory
-i(119221);	-- Horde Gladiator's Banner
 i(120276);	-- Outrider's Bridle Chain
 i(115472);	-- Permanent Time Bubble
 i(119215);	-- Robo-Gnomebulator
 i(119421);	-- Sha'tari Defender's Medallion
 i(119219);	-- Warlord's Flag of Victory
 i(119212);	-- Winning Hand
+-- NYI --
+i(119220);	-- Alliance Gladiator's Banner
+i(119221);	-- Horde Gladiator's Banner
 
 -----------------
 -- PATCH 6.1.0 --
@@ -515,7 +516,6 @@ i(129279);	-- Enchanted Stone Whistle
 i(134034);	-- Esteemed Pennant
 i(134007);	-- Eternal Black Diamond Ring
 i(129113);	-- Faintly Glowing Flagon of Mead
-i(140779);	-- Falanaar Echo
 i(140780);	-- Fal'dorei Egg
 i(136846);	-- Familiar Stone
 i(129961);	-- Flaming Hoop
@@ -525,7 +525,6 @@ i(134026);	-- Honorable Pennant
 i(136855);	-- Hunter's Call
 i(130251);	-- JewelCraft
 i(141299);	-- Kaldorei Light Globe
-i(129111);	-- Kvaldir Raiding Horn
 i(140632);	-- Lava Fountain
 i(129956);	-- Leather Love Seat
 i(129960);	-- Leather Pet Bed
@@ -580,6 +579,9 @@ i(131814);	-- Whitewater Carp
 i(141306);	-- Wisp in a Bottle
 i(130214);	-- Worn Doll
 i(134021);	-- X-52 Rocket Helmet
+-- NYI --
+i(140779);	-- Falanaar Echo
+i(129111);	-- Kvaldir Raiding Horn
 
 -----------------
 -- PATCH 7.1.0 --
@@ -593,7 +595,6 @@ i(142530);	-- Crate of Bobbers: Tugboat
 i(143662);	-- Crate of Bobbers: Wooden Pepe
 i(142496);	-- Dirty Spoon
 i(142495);	-- Fake Teeth
-i(143545);	-- Fel Focusing Crystal
 i(142341);	-- Love Boat
 i(142536);	-- Memory Cube
 i(143660);	-- Mrgrglhjorn
@@ -604,6 +605,8 @@ i(142497);	-- Tiny Pack
 i(142542);	-- Tome of Town Portal
 i(143543);	-- Twelve-String Guitar
 i(143534);	-- Wand of Simulated Life
+-- NYI --
+i(143545);	-- Fel Focusing Crystal
 
 -----------------
 -- PATCH 7.1.5 --
@@ -637,7 +640,6 @@ i(147843);	-- Sira's Extra Cloak
 -- PATCH 7.2.5 --
 -----------------
 i(151877);	-- Barrel of Eyepatches
-i(142360);	-- Blazing Ember Signet
 i(151265);	-- Blight Boar Microphone
 i(151016);	-- Fractured Necrolyte Skull
 i(150547);	-- Jolly Roger
@@ -646,6 +648,8 @@ i(150743);	-- Scouting Map: Surviving Kalimdor
 i(150745);	-- Scouting Map: The Eastern Kingdoms Campaign
 i(150744);	-- Scouting Map: Walking Kalimdor with the Earthmother
 i(151184);	-- Verdant Throwing Sphere
+-- NYI --
+i(142360);	-- Blazing Ember Signet
 
 -----------------
 -- PATCH 7.3.0 --
@@ -705,7 +709,6 @@ i(163045);	-- Headless Horseman's Hearthstone
 i(163742);	-- Heartsbane Grimoire
 i(162539);	-- Hot Buttered Popcorn
 i(163705);	-- Imaginary Gun
-i(164372);	-- Jinyu Light Globe
 i(163750);	-- Kovork Kostume
 i(163697);	-- Laser Pointer
 i(163603);	-- Lucille's Handkerchief
@@ -717,7 +720,6 @@ i(163795);	-- Oomgut Ritual Drum
 i(163986);	-- Orgrimmar Hero's War Banner
 i(158149);	-- Overtuned Corgi Goggles
 i(163210);	-- Party Totem
-i(164377);	-- Regenerating Banana Bunch
 i(163736);	-- Spectral Visage
 i(156871);	-- Spitzy
 i(163987);	-- Stormwind Champion's War Banner
@@ -732,6 +734,9 @@ i(163924);	-- Whiskerwax Candle
 i(163745);	-- Witherbark Gong
 i(164371);	-- Yaungol Oil Stove
 i(156649);	-- Zandalari Effigy Amulet
+-- NYI --
+i(164372);	-- Jinyu Light Globe
+i(164377);	-- Regenerating Banana Bunch
 
 -----------------
 -- PATCH 8.1.0 --
@@ -757,7 +762,6 @@ i(165674);	-- Green Dragon Head Costume
 i(165676);	-- Green Dragon Tail Costume
 i(166663);	-- Hand Anchor
 i(166790);	-- Highborne Memento
-i(166851);	-- Kojo's Master Matching Set
 i(165669);	-- Lunar Elder's Hearthstone
 i(166880);	-- Meerah's Jukebox
 i(166784);	-- Narassin's Soul Gem
@@ -770,6 +774,8 @@ i(166788);	-- Twiddle Twirler: Shredder Blade
 i(166701);	-- Warbeast Kraal Dinner Bell
 i(165021);	-- Words of Akunda
 i(165791);	-- Worn Cloak
+-- NYI --
+i(166851);	-- Kojo's Master Matching Set
 
 -----------------
 -- PATCH 8.1.5 --
@@ -807,7 +813,6 @@ i(169347);	-- Judgment of Mechagon
 i(167931);	-- Mechagonian Sawblades
 i(170469);	-- Memento of the Deeps
 i(168824);	-- Ocean Simulator
-i(166782);	-- Pearl of the Abyss
 i(169108);	-- Rustbolt Banner
 i(170187);	-- Shadescale
 i(170196);	-- Shirakess Warning Sign
@@ -817,6 +822,8 @@ i(170476);	-- Underlight Sealamp
 i(168807);	-- Wormhole Generator: Kul Tiras
 i(168808);	-- Wormhole Generator: Zandalar
 i(170199);	-- Zanj'ir Weapon Rack
+-- NYI --
+i(166782);	-- Pearl of the Abyss
 
 -----------------
 -- PATCH 8.2.5 --
@@ -854,9 +861,7 @@ i(183986);	-- Bondable Sinstone
 i(183988);	-- Bondable Val'kyr Diadem
 i(183989);	-- Dredger Barrow Racer
 i(177951);	-- Glimmerflies on Strings
-i(174445);	-- Glimmerfly Cocoon
 i(182729);	-- Hearty Dragon Plume
-i(182655);	-- Hill King's Roarbox
 i(179393);	-- Mirror of Envious Dreams
 i(182780);	-- Muckpool Cookpot
 i(183856);	-- Mystical Orb of Meditation
@@ -878,6 +883,9 @@ i(180947);	-- Tithe Collector's Vessel
 i(183716);	-- Venthyr Sinstone
 i(182695);	-- Weathered Purple Parasol
 i(172924);	-- Wormhole Generator: Shadowlands
+-- NYI --
+i(174445);	-- Glimmerfly Cocoon
+i(182655);	-- Hill King's Roarbox
 
 -----------------
 -- PATCH 9.0.2 --
@@ -942,7 +950,6 @@ i(188698);	-- Eagger Basket
 i(187957);	-- Encrypted Banner of the Opportune
 i(188701);	-- Fire Festival Batons
 i(188699);	-- Insulated Dancing Insoles
-i(187861);	-- Magical Seeds
 i(187591);	-- Nightborne Guard's Vigilance
 i(187422);	-- Rockin' Rollin' Racer Customizer 19.9.3
 i(187896);	-- Scouting Map: A Stormstout's Guide to Pandaria
@@ -961,6 +968,7 @@ i(187512);	-- Tome of Small Sins
 i(187834);	-- Tormented Banner of the Opportune
 i(188680);	-- Winter Veil Chorus Book
 -- NYI --
+i(187861);	-- Magical Seeds
 i(187958);	-- PH - Banner of the Opportune
 i(187959);	-- PH - Banner of the Opportune
 

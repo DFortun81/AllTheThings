@@ -924,7 +924,7 @@ _.Zones =
 						36167,	-- The Trial of Heart
 					},
 					["g"] = {
-						i(119144, {	-- Touch of the Naaru (Toy)
+						i(119144, {	-- Touch of the Naaru (TOY!)
 							["races"] = ALLIANCE_ONLY,
 						}),
 					},

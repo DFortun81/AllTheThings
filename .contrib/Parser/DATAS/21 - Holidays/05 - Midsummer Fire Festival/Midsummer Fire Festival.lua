@@ -358,7 +358,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						title(44),				-- Flame Warden
 					},
 				}),
-				
+
 				ach(1035, {		-- Desecration of the Horde (A)
 					["sym"] = {
 						{"select","achievementID",
@@ -370,7 +370,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						},
 					},
 				}),
-				
+
 				ach(11276, {	-- Extinguishing Draenor (A)
 					["coord"] = { 72.8, 65.2, FROSTFIRE_RIDGE },
 				}),
@@ -536,7 +536,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						["coord"] = { 55.9, 47.4, VOLDUN },
 					}),
 				}),
-				
+
 				ach(6011,  {	-- Flame Warden of Cataclysm (A)
 					crit(1, {	-- Uldum
 						["coord"] = { 53.0, 32.0, ULDUM },
@@ -765,7 +765,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						["coord"] = { 23.0, 58.4, SURAMAR },
 					}),
 				}),
-				
+
 				ach(1034, {		-- The Fires of Azeroth (A)
 					["sym"] = {
 						{"select","achievementID",
@@ -795,7 +795,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						title(45),				-- Flame Keeper
 					},
 				}),
-				
+
 				ach(1037, {		-- Desecration of the Alliance (H)
 					["sym"] = {
 						{"select","achievementID",
@@ -807,7 +807,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						},
 					},
 				}),
-				
+
 				ach(11277, {	-- Extinguishing Draenor (H)
 					["coord"] = { 42.8, 35.9, DRAENOR_SHADOWMOON_VALLEY },
 				}),
@@ -979,7 +979,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						["coord"] = { 53.4, 32.0, ULDUM },
 					}),
 				}),
-				
+
 				ach(6012, {		-- Flame Keeper of Cataclysm (H)
 					crit(1, {	-- Vashj'ir
 						["coord"] = { 49.4, 42.0, 205 },	-- Shimmering Expanse
@@ -1202,7 +1202,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						["coord"] = { 56.0, 47.8, VOLDUN },
 					}),
 				}),
-				
+
 				ach(1036, {		-- The Fires of Azeroth (H)
 					["sym"] = {
 						{"select","achievementID",
@@ -3474,9 +3474,9 @@ HUGE_SNOWBALL.u = nil;
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	holiday(235474, {	-- Midsummer
 		-- Holiday Stuff 9.1.5
-		i(188701),	-- Fire Festival Batons (Midsummer)
-		i(188699),	-- Insulated Dancing Insoles (Midsummer)
-		i(188695),	-- Summer Cranial Skillet (Midsummer)
+		i(188701),	-- Fire Festival Batons (TOY!) (Midsummer)
+		i(188699),	-- Insulated Dancing Insoles (TOY!) (Midsummer)
+		i(188695),	-- Summer Cranial Skillet (TOY!) (Midsummer)
 	}),
 }));
 -- #endif

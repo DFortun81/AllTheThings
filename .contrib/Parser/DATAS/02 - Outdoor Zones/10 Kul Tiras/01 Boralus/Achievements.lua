@@ -106,7 +106,7 @@ _.Zones =
 									["achievementID"] = 12852,	-- Treasures of Tiragarde Sound
 									["coord"] = { 62.31, 91.18, TIRAGARDE_SOUND },
 									["g"] = {
-										i(161342),	-- Gem of Acquiescence
+										i(161342),	-- Gem of Acquiescence (TOY!)
 									},
 								}),
 							},

@@ -17,7 +17,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 						}),
 						i(189973),	-- Ray Soul (SOUL!)
 						i(189471),	-- Schematic: Russet Bufonid
-						i(190177),	-- Sphere of Enlightened Cogitation
+						i(190177),	-- Sphere of Enlightened Cogitation (TOY!)
 						i(190939),	-- Walking Staff of the Enlightened Journey
 					}),
 				},
