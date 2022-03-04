@@ -1581,6 +1581,9 @@ namespace ATT
                     case "q":
                     case "r":
                     case "isOffHand":
+                    case "parentCategoryID":
+                    case "criteriaType":
+                    case "assetID":
                         {
                             item[field] = Convert.ToInt64(value);
                             break;
