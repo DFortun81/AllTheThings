@@ -201,6 +201,21 @@ i(75042);	-- Flimsy Yellow Balloon
 i(72159);	-- Magical Ogre Idol
 i(71628);	-- Sack of Starfish
 i(72161);	-- Spurious Sarcophagus
+-- NYI --
+i(72226);	-- Art Template Plate Belt - Plate_PVPWarrior_D_01 - Orange
+i(72227);	-- Art Template Plate Boot - Plate_PVPWarrior_D_01 - Orange
+i(72220);	-- Art Template Plate Chest - Plate_PVPWarrior_D_01 - Blue
+i(72228);	-- Art Template Plate Chest - Plate_PVPWarrior_D_01 - Orange
+i(72221);	-- Art Template Plate Hand - Plate_PVPWarrior_D_01 - Blue
+i(72229);	-- Art Template Plate Hand - Plate_PVPWarrior_D_01 - Orange
+i(72222);	-- Art Template Plate Head - Plate_PVPWarrior_D_01 - Blue
+i(72230);	-- Art Template Plate Head - Plate_PVPWarrior_D_01 - Orange
+i(72223);	-- Art Template Plate Legs - Plate_PVPWarrior_D_01 - Blue
+i(72231);	-- Art Template Plate Legs - Plate_PVPWarrior_D_01 - Orange
+i(72224);	-- Art Template Plate Shoulder - Plate_PVPWarrior_D_01 - Blue
+i(72232);	-- Art Template Plate Shoulder - Plate_PVPWarrior_D_01 - Orange
+i(72225);	-- Art Template Plate Wrist - Plate_PVPWarrior_D_01 - Blue
+i(72233);	-- Art Template Plate Wrist - Plate_PVPWarrior_D_01 - Orange
 
 -----------------
 -- PATCH 4.3.2 --
@@ -252,6 +267,8 @@ i(88584);	-- Totem of Harmony
 i(88377);	-- Turnip Paint "Gun"
 i(88375);	-- Turnip Punching Bag
 i(87215);	-- Wormhole Generator: Pandaria
+-- NYI --
+i(88587);	-- Iron Belly Spirits
 
 -----------------
 -- PATCH 5.0.3 --
@@ -398,6 +415,9 @@ i(113542);	-- Whispers of Rai'Vosh
 i(109183);	-- World Shrinker
 i(112059);	-- Wormhole Centrifuge
 i(116691);	-- Zhevra Lounge Cushion
+-- NYI --
+i(119179);	-- Iron Star Roller
+i(110586);	-- Mysterious Flower
 
 -----------------
 -- PATCH 6.0.2 --
@@ -483,6 +503,20 @@ i(133511);	-- Gurboggle's Gleaming Bauble
 i(133542);	-- Tosselwrench's Mega-Accurate Simulation Viewfinder
 
 -----------------
+-- PATCH 6.X.X --
+-----------------
+i(100902);	-- Unknown
+i(100903);	-- Unknown
+i(108638);	-- Unknown
+i(108640);	-- Unknown
+i(108639);	-- Unknown
+i(122220);	-- Unknown
+i(122225);	-- Unknown
+i(122227);	-- Unknown
+i(122230);	-- Unknown
+i(122235);	-- Unknown
+
+-----------------
 -- PATCH 7.0.3 --
 -----------------
 i(141296);	-- Ancient Mana Basin
@@ -532,7 +566,6 @@ i(129958);	-- Leather Pet Leash
 i(130199);	-- Legion Pocket Portal
 i(140786);	-- Ley Spider Eggs
 i(128536);	-- Leylight Brazier
-i(141300);	-- Magi Focusing Crystal
 i(131900);	-- Majestic Elderhorn Hoof
 i(140324);	-- Mobile Telemancy Beacon
 i(130232);	-- Moonfeather Statue
@@ -574,7 +607,6 @@ i(141331);	-- Vial of Green Goo
 i(136937);	-- Vol'jin's Serpent Totem
 i(129367);	-- Vrykul Toy Boat Kit
 i(138490);	-- Waterspeaker's Totem
-i(130249);	-- Waywatcher's Boon
 i(131814);	-- Whitewater Carp
 i(141306);	-- Wisp in a Bottle
 i(130214);	-- Worn Doll
@@ -582,6 +614,10 @@ i(134021);	-- X-52 Rocket Helmet
 -- NYI --
 i(140779);	-- Falanaar Echo
 i(129111);	-- Kvaldir Raiding Horn
+i(141300);	-- Magi Focusing Crystal
+i(130867);	-- Tag Toy
+i(130249);	-- Waywatcher's Boon
+i(136848);	-- Worn Doll - Test
 
 -----------------
 -- PATCH 7.1.0 --
@@ -650,6 +686,8 @@ i(150744);	-- Scouting Map: Walking Kalimdor with the Earthmother
 i(151184);	-- Verdant Throwing Sphere
 -- NYI --
 i(142360);	-- Blazing Ember Signet
+i(130194);	-- Silver Gilnean Brooch
+i(129045);	-- Whitewater Tsunami
 
 -----------------
 -- PATCH 7.3.0 --
@@ -737,6 +775,8 @@ i(156649);	-- Zandalari Effigy Amulet
 -- NYI --
 i(164372);	-- Jinyu Light Globe
 i(164377);	-- Regenerating Banana Bunch
+i(163566);	-- Vulpera Battle Banner
+i(163206);	-- Weary Spirit Binding
 
 -----------------
 -- PATCH 8.1.0 --
@@ -824,6 +864,7 @@ i(168808);	-- Wormhole Generator: Zandalar
 i(170199);	-- Zanj'ir Weapon Rack
 -- NYI --
 i(166782);	-- Pearl of the Abyss
+i(168836);	-- Unknown
 
 -----------------
 -- PATCH 8.2.5 --
@@ -886,6 +927,8 @@ i(172924);	-- Wormhole Generator: Shadowlands
 -- NYI --
 i(174445);	-- Glimmerfly Cocoon
 i(182655);	-- Hill King's Roarbox
+i(174286);	-- Kyrian Ritual Vestments
+--i(177665);	-- Spectral Handkerchief (Not a Toy anymore)
 
 -----------------
 -- PATCH 9.0.2 --
@@ -912,6 +955,8 @@ i(184476);	-- Regenerating Slime Vial
 i(184415);	-- Soothing Vesper
 i(184218);	-- Vulgarity Arbiter
 i(178530);	-- Wreath-A-Rang
+-- NYI --
+i(183810);	-- Shadowlands Mini: Grandmaster Vole
 
 -----------------
 -- PATCH 9.1.0 --
@@ -949,8 +994,6 @@ i(187705);	-- Choofa's Call
 i(188698);	-- Eagger Basket
 i(187957);	-- Encrypted Banner of the Opportune
 i(188701);	-- Fire Festival Batons
-i(188699);	-- Insulated Dancing Insoles
-i(187591);	-- Nightborne Guard's Vigilance
 i(187422);	-- Rockin' Rollin' Racer Customizer 19.9.3
 i(187896);	-- Scouting Map: A Stormstout's Guide to Pandaria
 i(187897);	-- Scouting Map: Cataclysm's Consequences
@@ -963,14 +1006,16 @@ i(187875);	-- Scouting Map: United Fronts of the Broken Isles
 i(187840);	-- Sparkle Wings
 i(188694);	-- Spring Florist's Pouch
 i(187419);	-- Steward's First Feather
-i(188695);	-- Summer Cranial Skillet
 i(187512);	-- Tome of Small Sins
 i(187834);	-- Tormented Banner of the Opportune
 i(188680);	-- Winter Veil Chorus Book
 -- NYI --
+i(188699);	-- Insulated Dancing Insoles
+i(187591);	-- Nightborne Guard's Vigilance
 i(187861);	-- Magical Seeds
 i(187958);	-- PH - Banner of the Opportune
 i(187959);	-- PH - Banner of the Opportune
+i(188695);	-- Summer Cranial Skillet
 
 -----------------
 -- PATCH 9.2.0 --

@@ -2152,6 +2152,7 @@ _.ObjectNames = {
 	[375746] = "Protoform Schematic",
 	[375748] = "Protoform Schematic",
 	[375889] = "Protoform Schematic",
+	[375893] = "High Value Cache",
 	[375900] = "Protoform Schematic",
 	[375902] = "Torn Ethereal Drape",
 	[375903] = "Protoform Schematic",
