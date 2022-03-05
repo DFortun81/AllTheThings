@@ -224,6 +224,15 @@ namespace ATT
         /// Represents the current parent group when processing the 'g' subgroup
         /// </summary>
         private static KeyValuePair<string, object>? CurrentParentGroup { get; set; }
+
+        /// <summary>
+        /// Represents fields which can be consolidated upwards in heirarchy if all children groups have the same value for the field
+        /// </summary>
+        private static readonly string[] HeirarchicalConsolidationFields = new string[]
+        {
+            "sourceIgnored",
+        };
+
         /// <summary>
         /// Represents that Item info will be merged into the base set of Item info.
         /// This should only be performed on the first processing pass, allowing the second processing pass to sync all Item info in nested group references
@@ -722,9 +731,15 @@ namespace ATT
             if (data.TryGetValue("g", out List<object> groups))
             {
                 var previousParent = CurrentParentGroup;
-                if (ATT.Export.ObjectData.TryGetMostSignificantObjectType(data, out ATT.Export.ObjectData objectData))
+                if (ATT.Export.ObjectData.TryGetMostSignificantObjectType(data, out Export.ObjectData objectData))
                     CurrentParentGroup = new KeyValuePair<string, object>(objectData.ObjectType, data[objectData.ObjectType]);
+
                 Process(groups, modID, minLevel);
+
+                // Parent field consolidation now that groups have been processed
+                if (!MergeItemData)
+                    ConsolidateHeirarchicalFields(data, groups);
+
                 CurrentParentGroup = previousParent;
             }
 
@@ -890,6 +905,42 @@ namespace ATT
             }
 
             return true;
+        }
+
+        private static void ConsolidateHeirarchicalFields(Dictionary<string, object> parentGroup, List<object> groups)
+        {
+            HashSet<object> fieldValues = new HashSet<object>();
+            foreach (string field in HeirarchicalConsolidationFields)
+            {
+                foreach (object group in groups)
+                {
+                    if (group is Dictionary<string, object> data && data.TryGetValue(field, out object value))
+                    {
+                        fieldValues.Add(value);
+                    }
+                    else
+                    {
+                        fieldValues.Clear();
+                        break;
+                    }
+                }
+
+                // exactly 1 unique value across all groups, set it on the parent and remove it from all groups
+                if (fieldValues.Count == 1)
+                {
+                    parentGroup[field] = fieldValues.First();
+
+                    foreach (object group in groups)
+                    {
+                        if (group is Dictionary<string, object> data)
+                        {
+                            data.Remove(field);
+                        }
+                    }
+                }
+
+                fieldValues.Clear();
+            }
         }
 
         /// <summary>
