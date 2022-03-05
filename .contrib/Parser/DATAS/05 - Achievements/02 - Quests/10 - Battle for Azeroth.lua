@@ -4,18 +4,6 @@
 
 root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 	achcat(ACHIEVEMENT_CATEGORY_BATTLE_FOR_AZEROTH_QUESTS, {
-		a(ach(13026, {	-- 7th Legion Spycatcher
-			["_quests"] = { 50899 },	-- Don't Stalk Me, Troll (A)
-		})),
-		h(ach(13021, {	-- A Most Efficient Apocalypse
-			["_quests"] = { 50665 },	-- Cancel the Blood Troll Apocalypse
-		})),
-		ach(13042, {	-- About To Break
-			["_quests"] = {
-				53108,	-- Iconoclasm [A]
-				53344	-- Iconoclasm
-			},
-		}),
 		h(ach(13009, {	-- Adept Sandfisher
 			crit(1, {		-- Cobalt Sandworm Scale
 				["_quests"] = { 51173 },	-- Sandfishing
@@ -82,17 +70,8 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			crit(8),		-- Rezan respected
 			crit(9),		-- Sethraliss respected
 		})),
-		ach(13035, {	-- By de Power of de Loa!
-			["_quests"] = {
-				51178,	-- Hundred Troll Holdout (A)
-				51232,	-- Hundred Troll Holdout (H)
-			},
-		}),
 		h(ach(13017)),	-- Champion of the Vulpera
 		ach(13047),		-- Clever Use of Mechanical Explosives
-		a(ach(13426, {	-- Come On and Slam
-			["_quests"] = { 54512 },	-- Cleansing Tide (Faction Assault WQ)
-		})),
 		a(ach(12582)),	-- Come Sail Away
 		a(ach(13053)),	-- Deadliest Cache
 		ach(14154, {	-- Defend the Vale
@@ -101,9 +80,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			crit(3),		-- Assault: The Black Empire
 		}),
 		h(ach(13435)),	-- Doomsoul Surprise
-		a(ach(13059, {	-- Drag Race
-			["_quests"] = { 53346 },	-- Trogg Tromping
-		})),
 		ach(13045),		-- Every Day I'm Truffling
 		a(ach(13283, {	-- Frontline Warrior (A)
 			crit(1, {		-- A Sound Defense
@@ -162,12 +138,15 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 				crit(4),		-- Down, But Not Out
 			})),
 		})),
-		h(ach(13041, {	-- Hungry, Hungry Ranishu
-			["_quests"] = { 52798 },	-- A Few More Charges
-		})),
 		a(ach(13251)),	-- In Teldrassil's Shadow
 		ach(13023, {	-- It's Really Getting Out of Hand
-			["_quests"] = { 51127 },	-- Getting Out of Hand (A)
+			["maps"] = {
+				NAZMIR,
+			},
+			["altQuests"] = {
+				51127,	-- Getting Out of Hand (A)
+				50559,	-- Getting Out of Hand (H)
+			},
 		}),
 		a(ach(13060, {	-- Kul Runnings
 			crit(1, {		-- Sliding with Style
@@ -256,12 +235,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			}),
 		}),
 		h(ach(13039)),	-- Paku'ai
-		a(ach(13440, {	-- Pushing the Payload (A)
-			["_quests"] = { 54498 },	-- Stack on the Tank [A]
-		})),
-		h(ach(13441, {	-- Pushing the Payload (H)
-			["_quests"] = { 54505 },	-- Get on the Payload (Faction Assault WQ) [H]
-		})),
 		h(ach(13038)),	-- Raptari Rider
 		a(ach(12510, {	-- Ready for War (Alliance)
 			crit(1),		-- Nazmir Foothold
@@ -283,9 +256,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			crit(7),		-- At the Bottom of the Sea
 			crit(8),		-- The Strike on Boralus
 		})),
-		h(ach(13022, {	-- Revenge is Best Served Speedily
-			["_quests"] = { 50786 },	-- Revenge of Krag'wa
-		})),
 		ach(13054, {	-- Sabertron Assemble
 			crit(1),		-- Red Sabertron slain
 			crit(2),		-- Yellow Sabertron slain
@@ -293,9 +263,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			crit(4),		-- Green Sabertron slain
 			crit(5),		-- Copper Sabertron slain
 		}),
-		h(ach(13437, {	-- Scavenge like a Vulpera
-			["_quests"] = { 54415 },	-- Vulpera for a Day (Faction Assault WQ)
-		})),
 		ach(13011),		-- Scourge of Zem'lan
 		h(ach(12719, {	-- Spirits Be With You
 			crit(1),		-- The Fallen Chieftain
@@ -352,9 +319,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			crit(14),		-- Drill Rig Construction
 			crit(15),		-- Send My Father a Message
 			crit(16),		-- Welcome to the Resistance
-		})),
-		a(ach(12087, {	-- The Reining Champion
-			["_quests"] = { 53331 },	-- The Reining Champion
 		})),
 		h(ach(13263)),	-- The Shadow Hunter
 		ach(13046),		-- These Hills Sing
@@ -490,8 +454,5 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 		})),
 		h(ach(12555)),	-- Welcome to Zandalar
 		ach(13144),		-- Wide World of Quests
-		h(ach(13025, {	-- Zandalari Spycatcher
-			["_quests"] = { 50717 },	-- Don't Stalk Me, Troll (H)
-		})),
 	}),
 }));

@@ -243,9 +243,6 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(12087, {	-- The Reining Champion
-					["races"] = ALLIANCE_ONLY,
-				}),
 				ach(14730, {	-- To All The Squirrels I Set Sail to See
 					["collectible"] = false,
 					["g"] = {

@@ -5,20 +5,16 @@
 root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 	achcat(ACHIEVEMENT_CATEGORY_WORLD, {
 		ach(13429, {	-- Azerfighter
-			["_quests"] = {
+			["maps"] = {
+				STORMSONG_VALLEY,
+				NAZMIR,
+			},
+			["altQuests"] = {
 				53768,	-- Furious Fracas (Faction Assault WQ) (A)
 				53769,	-- Furious Fracas (Faction Assault WQ) (H)
 				54539,	-- Skirmish at the Span (Faction Assault WQ) (A)
 				54538,	-- Skirmish at the Span (Faction Assault WQ) (H)
 			},
-		}),
-		ach(13439, {	-- Boxing Match (A)
-			["_quests"] = { 54524 },	-- Crate n' Barrel (Faction Assault WQ) (A)
-			["races"] = ALLIANCE_ONLY,
-		}),
-		ach(13438, {	-- Boxing Match (H)
-			["_quests"] = { 54516 },	-- Crate n' Barrel (Faction Assault WQ) (H)
-			["races"] = HORDE_ONLY,
 		}),
 		ach(12605, {	-- Conqueror of Azeroth (A)
 			["races"] = ALLIANCE_ONLY,
@@ -91,18 +87,6 @@ root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 		ach(11474, {	-- Free For All, More For Me
 			a(i(129280)),	-- Reins of the Prestigious War Steed
 			h(i(143864)),	-- Reins of the Prestigious War Wolf
-			ach(11475, {		-- Mission Accomplished
-				["_quests"] = { 41896 },	-- Operation Murloc Freedom
-			}),
-			ach(11476, {		-- Saddle Sore
-				["_quests"] = { 42025 },	-- Bareback Brawl
-			}),
-			ach(11477, {		-- Off the Top Rook
-				["_quests"] = { 42023 },	-- Black Rook Rumble
-			}),
-			ach(11478, {		-- The Darkbrul-oh
-				["_quests"] = { 41013 },	-- Darkbrul Arena
-			}),
 		}),
 		ach(13387, {	-- Frontline Veteran (A)
 			["races"] = ALLIANCE_ONLY,

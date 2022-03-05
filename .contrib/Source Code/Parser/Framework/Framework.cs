@@ -639,15 +639,32 @@ namespace ATT
             }
             else if (data.TryGetValue("_quests", out object quests))
             {
-                DuplicateDataIntoGroups(data, quests, "questID");
-                data.Remove("_quests");
-                cloned = true;
+                // don't duplicate achievements in this way
+                if (data.TryGetValue("achID", out achID))
+                {
+                    Trace.WriteLine($"Do not use '_quests' on Achievements ({achID}). Source within the Quest group, or use 'maps' & 'altQuests' if there are multiple related Locations / Quests.");
+                }
+                else
+                {
+                    DuplicateDataIntoGroups(data, quests, "questID");
+                    data.Remove("_quests");
+                    cloned = true;
+                }
             }
             else if (data.TryGetValue("_items", out object items))
             {
-                DuplicateDataIntoGroups(data, items, "itemID");
-                data.Remove("_items");
-                cloned = true;
+                // don't duplicate achievements in this way
+                if (data.TryGetValue("criteriaID", out long criteriaID))
+                {
+                    data.TryGetValue("achID", out achID);
+                    Trace.WriteLine($"Do not use '_items' on Criteria ({achID}:{criteriaID}). Use 'provider' instead when an Item grants credit for an Achievement Criteria.");
+                }
+                else
+                {
+                    DuplicateDataIntoGroups(data, items, "itemID");
+                    data.Remove("_items");
+                    cloned = true;
+                }
             }
             else if (data.TryGetValue("_npcs", out object npcs))
             {
@@ -893,6 +910,12 @@ namespace ATT
 
                     if (redundant)
                         Trace.WriteLine($"Redundant 'maps' removed from: {MiniJSON.Json.Serialize(data)}");
+                }
+
+                // single 'maps' for Achievements Sourced under 'Achievements', should be sourced in that specific map directly instead
+                if (ProcessingAchievementCategory && mapsList.Count == 1 && data.TryGetValue("achID", out achID))
+                {
+                    Trace.WriteLine($"Single 'maps' value used within Achievement: {achID}. It can be Sourced directly in the Location.");
                 }
             }
 

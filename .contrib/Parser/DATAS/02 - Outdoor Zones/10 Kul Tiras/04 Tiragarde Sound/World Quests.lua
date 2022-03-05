@@ -516,6 +516,9 @@ _.Zones =
 					["lvl"] = { 50 },
 					["races"] = ALLIANCE_ONLY,
 					["isWorldQuest"] = true,
+					["g"] = {
+						a(ach(12087)),	-- The Reining Champion
+					},
 				}),
 				q(51463, {	-- Sky Drop Rescue
 					["lvl"] = { 50 },
@@ -674,11 +677,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isWorldQuest"] = true,
 				}),
-				q(53346, {	-- Trogg Tromping
+				a(q(53346, {	-- Trogg Tromping
 					["lvl"] = { 50 },
-					["races"] = ALLIANCE_ONLY,
 					["isWorldQuest"] = true,
-				}),
+					["g"] = {
+						a(ach(13059)),	-- Drag Race
+					},
+				})),
 				q(51657, {	-- Twin-Hearted Construct
 					["lvl"] = { 50 },
 					["isWorldQuest"] = true,

@@ -11,6 +11,9 @@ _.Zones =
 					["lvl"] = { 50 },
 					["races"] = HORDE_ONLY,
 					["isWorldQuest"] = true,
+					["g"] = {
+						h(ach(13041)),	-- Hungry, Hungry Ranishu
+					},
 				}),
 				q(49013, {	-- A Jolt of Power
 					["lvl"] = { 50 },
@@ -612,6 +615,9 @@ _.Zones =
 					["lvl"] = 110,
 					["races"] = HORDE_ONLY,
 					["isWorldQuest"] = true,
+					["g"] = {
+						h(ach(13437)),	-- Scavenge like a Vulpera
+					},
 				}),
 				q(51316, {	-- Walking in a Spiderweb
 					["lvl"] = { 50 },
