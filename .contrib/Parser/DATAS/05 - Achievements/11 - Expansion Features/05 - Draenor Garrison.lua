@@ -243,7 +243,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES, {
 				crit(30),	-- Way of the Monk (Garrison quest reward - Bringing the Bass)
 				crit(31),	-- Song of Liu Lang (Vale of Enternal Blossoms - Tan Shin Tiao - 100 gold)
 				ach(9912, {	-- Azeroth's Top Twenty Tunes (Alliance) (20)
-					i(122700),	-- Portable Audiophone
+					i(122700),	-- Portable Audiophone (TOY!)
 				}),
 				ach(9828),	-- Ten Hit Tunes (Alliance) (10)
 			},
@@ -283,7 +283,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES, {
 				crit(30),	-- Way of the Monk (Garrison quest reward - Bringing the Bass)
 				crit(31),	-- Song of Liu Lang (Vale of Enternal Blossoms - Tan Shin Tiao - 100 gold)
 				ach(9914, {	-- Azeroth's Top Twenty Tunes (Horde) (20)
-					i(122700),	-- Portable Audiophone
+					i(122700),	-- Portable Audiophone (TOY!)
 				}),
 				ach(9897),	-- Ten Hit Tunes (Horde) (10)
 			},

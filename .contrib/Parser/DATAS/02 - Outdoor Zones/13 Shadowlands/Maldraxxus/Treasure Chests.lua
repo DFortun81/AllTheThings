@@ -28,7 +28,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant drop only
 					}),
 				--	Blue
-					i(184318),	-- Battlecry of Krexus
+					i(184318),	-- Battlecry of Krexus (TOY!)
 					i(183619),	-- Everlasting Boneforged Greataxe
 				--	Green
 					i(183827),	-- Blacksteel Backplate

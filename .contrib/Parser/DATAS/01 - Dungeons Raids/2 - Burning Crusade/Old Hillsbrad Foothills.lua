@@ -247,7 +247,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					n(28132, {	-- Don Carlos
 						["description"] = "This is a neutral mob that wanders the road.",
 						["groups"] = {
-							applyclassicphase(LEGION_PHASE_ONE, i(134019, {	-- Don Carlos' Famous Hat
+							applyclassicphase(LEGION_PHASE_ONE, i(134019, {	-- Don Carlos' Famous Hat (TOY!)
 								["timeline"] = { "added 7.0.3.22248" },
 							})),
 							i(38506, {	-- Don Carlos' Famous Hat

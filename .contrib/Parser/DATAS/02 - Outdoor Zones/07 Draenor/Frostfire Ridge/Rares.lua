@@ -33,7 +33,7 @@ _.Zones =
 					["questID"] = 34497,
 					["coord"] = { 27.7, 50.2, FROSTFIRE_RIDGE },
 					["g"] = {
-						i(111476),	-- Stolen Breath Toy
+						i(111476),	-- Stolen Breath (TOY!)
 					},
 				}),
 				n(74613, {	-- Broodmother Reeg'ak
@@ -120,7 +120,7 @@ _.Zones =
 					["coord"] = { 66.5, 25.5, FROSTFIRE_RIDGE },
 					["g"] = {
 						i(119349),	-- Craven Coward's Cloak
-						i(119180),	-- Goren "Log" Roller
+						i(119180),	-- Goren "Log" Roller (TOY!)
 					},
 				}),
 				n(72364, {	-- Gorg'ak the Lava Guzzler
@@ -324,7 +324,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 43.47, 8.89, FROSTFIRE_RIDGE },
 					["g"] = {
-						i(119163),	-- Soul Inhaler Toy
+						i(119163),	-- Soul Inhaler (TOY!)
 						i(119379),	-- Tor'goroth's Soul Prism
 					},
 				}),

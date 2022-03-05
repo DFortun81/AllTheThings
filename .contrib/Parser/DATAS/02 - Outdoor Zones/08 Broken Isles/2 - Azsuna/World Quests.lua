@@ -162,7 +162,9 @@ _.Zones =
 				q(44048),	-- Nagana Happen
 				q(42275),	-- Not On My Watch
 				q(46116),	-- On Unhallowed Grounds (Invasion WQ)
-				q(41896),	-- Operation Murloc Freedom
+				q(41896, {	-- Operation Murloc Freedom
+					ach(11475),	-- Mission Accomplished
+				}),
 				q(42623),	-- Piracy Doesn't Pay
 				q(41268, {	-- Queen Queenfish
 					["requireSkill"] = FISHING,

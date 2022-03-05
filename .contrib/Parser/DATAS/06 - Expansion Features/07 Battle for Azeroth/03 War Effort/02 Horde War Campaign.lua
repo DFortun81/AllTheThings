@@ -1495,7 +1495,7 @@ _.ExpansionFeatures =
 							["coord"] = { 79.7, 74.7, SWAMP_OF_SORROWS },
 							["races"] = HORDE_ONLY,
 							["g"] = {
-								i(165791),	-- Worn Cloak
+								i(165791),	-- Worn Cloak (TOY!)
 							},
 						}),
 						q(54109, {	-- Queen's Favor

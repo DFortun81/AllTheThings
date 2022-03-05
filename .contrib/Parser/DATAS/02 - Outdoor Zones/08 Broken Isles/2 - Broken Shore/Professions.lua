@@ -154,7 +154,7 @@ _.Zones =
 							i(146963, {	-- Desecrated Seaweed
 								-- extra info for the item can go here
 							}),
-							i(147312, {	-- Demon Noggin
+							i(147312, {	-- Crate of Bobbers: Demon Noggin (TOY!)
 								["cost"] = { { "i", 146963, 100 } },	-- 100x Desecrated Seaweed
 							}),
 							i(152554, {	-- Desecrated Seaweed Shirt

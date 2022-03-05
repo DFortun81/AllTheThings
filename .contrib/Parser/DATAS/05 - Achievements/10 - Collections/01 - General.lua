@@ -104,7 +104,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 			ach(621),		-- Represent
 		}),
 		ach(9838, {		-- What A Strange, Interdimensional Trip It's Been (various dungeons & raids)
-			i(122293),		-- Trans-Dimensional Bird Whistle
+			i(122293),		-- Trans-Dimensional Bird Whistle (TOY!)
 			crit(1),		-- Gug'rokk (Bloodmaul Slag Mines)
 			crit(2),		-- Skulloc, Son of Gruul (Iron Docks)
 			crit(3),		-- Warlord Zaela (Upper Blackrock Spire)

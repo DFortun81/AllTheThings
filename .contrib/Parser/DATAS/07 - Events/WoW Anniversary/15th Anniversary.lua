@@ -1333,7 +1333,7 @@ root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 							ach(10335),	-- Did Someone Say...?
 						},
 					}),
-					i(158149, {	-- Overtuned Corgi Goggles
+					i(158149, {	-- Overtuned Corgi Goggles (TOY!)
 						["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
 					}),
 					i(147884, {	-- Tranquil Mechanical Yeti Costume

@@ -298,6 +298,8 @@ root("Instances", tier(CLASSIC_TIER, {
 				i(16827),	-- Nightslayer Belt (Rogue)
 				i(16825),	-- Nightslayer Bracelets (Rogue)
 				i(16819),	-- Vambraces of Prophecy (Priest)
+				i(17010),	-- Fiery Core
+				i(17011),	-- Lava Core
 			}),
 			n(COMMON_BOSS_DROPS, {
 				i(18260, {	-- Formula: Enchant Weapon - Healing Power
@@ -410,6 +412,9 @@ root("Instances", tier(CLASSIC_TIER, {
 						11988,	-- Golemagg the Incinerator
 					},
 				}),
+			}),
+			prof(MINING, {
+				i(11382),	-- Blood of the Mountain
 			}),
 			prof(SKINNING, {
 				["crs"] = {

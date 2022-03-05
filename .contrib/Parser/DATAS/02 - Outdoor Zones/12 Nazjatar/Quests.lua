@@ -2199,7 +2199,7 @@ root("Zones", {
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
 				["g"] = {
-					i(170154, {	-- Book of the Unshackled (H)
+					i(170154, {	-- Book of the Unshackled (TOY!)
 						["description"] = "Learning this toy also unlocks the Alliance |cFF0070DECarved Ankoan Charm|r toy.",
 					}),
 				},

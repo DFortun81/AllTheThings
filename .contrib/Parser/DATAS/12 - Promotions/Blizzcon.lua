@@ -82,12 +82,12 @@ root("Promotions", n(-545, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Blizzc
 	ach(13138, {	-- Blizzcon 2018 - Flying Colors
 		["timeline"] = { "added 8.1.0.28724" },
 	}),
-	i(163986, {	-- Orgrimmar Hero's War Banner
+	i(163986, {	-- Orgrimmar Hero's War Banner (TOY!)
 		["timeline"] = { "added 8.0.1.27843" },
 		["races"] = HORDE_ONLY,
 		["f"] = TOYS,
 	}),
-	i(163987, {	-- Stormwind Champion's War Banner
+	i(163987, {	-- Stormwind Champion's War Banner (TOY!)
 		["timeline"] = { "added 8.0.1.27843" },
 		["races"] = ALLIANCE_ONLY,
 		["f"] = TOYS,

@@ -522,7 +522,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 					["itemID"] = 169898,	-- Well Lurker
 					["description"] = "Found in Mount Hyjal, in the lake under Nordrassil.",
 				}),
-				i(168016),	-- Hyper-Compressed Ocean
+				i(168016),	-- Hyper-Compressed Ocean (TOY!)
 			},
 		}),
 		ach(14333),		-- Shadowlands Fisherman

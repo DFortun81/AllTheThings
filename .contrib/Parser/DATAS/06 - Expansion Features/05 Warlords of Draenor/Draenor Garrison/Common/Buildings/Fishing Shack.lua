@@ -12,7 +12,7 @@ _.ExpansionFeatures =
 					["g"] = {
 						n(ACHIEVEMENTS, {
 							ach(7274, {  -- Learning From The Best
-								i(86596),	-- Nat's Fishing Chair
+								i(86596),	-- Nat's Fishing Chair (TOY!)
 							}),
 						}),
 						n(QUESTS, {

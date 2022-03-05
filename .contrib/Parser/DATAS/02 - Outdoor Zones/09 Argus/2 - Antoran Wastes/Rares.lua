@@ -82,7 +82,7 @@ root("Zones", {
 						crit(12, {	-- Doomcaster Suprax
 							["achievementID"] = 12078,	-- Commander of Argus
 						}),
-						i(153194),	-- Legion Communication Orb
+						i(153194),	-- Legion Communication Orb (TOY!)
 					},
 				}),
 				n(122999, {	-- Gar'zoth
@@ -315,7 +315,7 @@ root("Zones", {
 						crit(51, {	-- Wrath-Lord Yarez
 							["achievementID"] = 12078,	-- Commander of Argus
 						}),
-						i(153126),	-- Micro-Artillery Controller
+						i(153126),	-- Micro-Artillery Controller (TOY!)
 					},
 				}),
 			}),

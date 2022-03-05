@@ -1921,7 +1921,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										["minReputation"] = { 2445, FRIENDLY },
 										["questID"] = 62657,
 									}),
-									i(183876, {	-- Quill of Correspondence
+									i(183876, {	-- Quill of Correspondence (TOY!)
 										["cost"] = 5000000,	-- 500g
 									}),
 									i(177234, {	-- Rally Bell

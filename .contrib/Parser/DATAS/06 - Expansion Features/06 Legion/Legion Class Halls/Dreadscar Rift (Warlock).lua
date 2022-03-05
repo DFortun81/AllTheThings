@@ -711,7 +711,7 @@ _.ExpansionFeatures =
 								i(139768, {	-- Amice of the Black Harvest
 									["cost"] = 5000000,	-- 500g
 								}),
-								i(143727, {	-- Champion's Salute Toy
+								i(143727, {	-- Champion's Salute (TOY!)
 									["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
 								}),
 								i(139769, {	-- Cinch of the Black Harvest

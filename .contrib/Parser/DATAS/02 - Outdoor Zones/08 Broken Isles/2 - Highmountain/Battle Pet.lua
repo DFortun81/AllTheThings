@@ -108,7 +108,7 @@ _.Zones =
 								["provider"] = { "n", 115784 },	-- Snowfeather Hatchling
 								["sourceQuest"] = 44958,	-- The Unfriendly Faction
 								["g"] = {
-									i(142497),	-- Tiny Pack
+									i(142497),	-- Tiny Pack (TOY!)
 								},
 							}),
 							q(44969, {	-- Snowfeather Reunion

@@ -117,7 +117,7 @@ _.Zones =
 					["provider"] = { "n", 62573 },	-- Marksman Ye
 					["sourceQuest"] = 30976,	-- Joining the Hunt
 					["g"] = {
-						i(88589),	-- Cremating Torch
+						i(88589),	-- Cremating Torch (TOY!)
 					},
 				}),
 				q(30898, {	-- Cutting the Swarm
@@ -251,7 +251,7 @@ _.Zones =
 					["provider"] = { "n", 60864 },	-- Yalia Sagewhisper
 					["sourceQuest"] = 30827,	-- What Lies Beneath
 					["g"] = {
-						i(88584),	-- Totem of Harmony
+						i(88584),	-- Totem of Harmony (TOY!)
 					},
 				}),
 				q(30980, {	-- Heroes of the Shado-Pan
@@ -454,7 +454,7 @@ _.Zones =
 					["provider"] = { "n", 61161 },	-- Bluesaddle
 					["sourceQuest"] = 30929,	-- Bad Yak
 					["g"] = {
-						i(82467),	-- Ruthers' Harness
+						i(82467),	-- Ruthers' Harness (TOY!)
 					},
 				}),
 				q(30773, {	-- Pitching In

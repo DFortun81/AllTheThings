@@ -113,7 +113,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 					}),
 				}),
 				n(ZONE_DROPS, {
-					i(187174, {	-- Shaded Judgment Stone
+					i(187174, {	-- Shaded Judgment Stone (TOY!)
 						["description"] = "This has a chance to drop from creatures in The Rift, or from the specific Rares which are pulled out of The Rift.",
 						["crs"] = {
 							-- Korthia Rares

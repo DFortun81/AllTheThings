@@ -42,7 +42,7 @@ _.Zones =
 					["repeatable"] = true,
 					["g"] = {
 						i(166299, {	-- Honorbound Supplies
-							i(166879),	-- Rallying War Banner
+							i(166879),	-- Rallying War Banner (TOY!)
 							i(166311),	-- Recipe: Contract: The Honorbound [Rank 3]
 						}),
 					},
@@ -55,7 +55,7 @@ _.Zones =
 					["repeatable"] = true,
 					["g"] = {
 						i(166292, {	-- Zandalari Empire Supplies
-							i(166701),	-- Warbeast Kraal Dinner Bell
+							i(166701),	-- Warbeast Kraal Dinner Bell (TOY!)
 						}),
 					},
 				}),

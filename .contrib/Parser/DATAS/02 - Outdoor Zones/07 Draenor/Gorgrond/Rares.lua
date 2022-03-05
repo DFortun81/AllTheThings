@@ -27,7 +27,7 @@ _.Zones =
 					["questID"] = 35335,
 					["coord"] = { 40.0, 79.0, GORGROND },
 					["g"] = {
-						i(118222),	-- Spirit of Bashiok Toy
+						i(118222),	-- Spirit of Bashiok (TOY!)
 					},
 				}),
 				n(86257, {	-- Basten (Protectors of the Grove)
@@ -44,7 +44,7 @@ _.Zones =
 						crit(3, {	-- Protectors of the Grove)
 							["achievementID"] = 9678,	-- Ancient No More (Everbloom Wilds)
 						}),
-						i(119432),	-- Botani Camouflage Toy
+						i(119432),	-- Botani Camouflage (TOY!)
 						i(119357),	-- Grovetender's Cummerbund
 					},
 				}),
@@ -131,7 +131,7 @@ _.Zones =
 					["questID"] = 36387,
 					["coord"] = { 57.4, 68.6, GORGROND },
 					["g"] = {
-						i(118221),	-- Petrification Stone Toy
+						i(118221),	-- Petrification Stone (TOY!)
 					},
 				}),
 				n(81038, {	-- Gelgor of the Blue Flame
@@ -341,7 +341,7 @@ _.Zones =
 					["questID"] = 35910,
 					["coord"] = { 38.2, 66.2, GORGROND },
 					["g"] = {
-						i(118224),	-- Ogre Brewing Kit
+						i(118224),	-- Ogre Brewing Kit (TOY!)
 					},
 				}),
 				n(80725, {	-- Sulfurious

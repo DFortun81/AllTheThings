@@ -39,7 +39,7 @@ _.Zones =
 					["questID"] = 35731,
 					["coord"] = { 52.9, 16.7, DRAENOR_SHADOWMOON_VALLEY },
 					["g"] = {
-						i(113540),	-- Ba'ruun's Bountiful Bloom Toy
+						i(113540),	-- Ba'ruun's Bountiful Bloom (TOY!)
 					},
 				}),
 				n(81406, {	-- Bahameye
@@ -117,7 +117,7 @@ _.Zones =
 					["questID"] = 35558,
 					["coord"] = { 37.6, 49.0, DRAENOR_SHADOWMOON_VALLEY },
 					["g"] = {
-						i(113631),	-- Hypnosis Goggles Toy
+						i(113631),	-- Hypnosis Goggles (TOY!)
 					},
 				}),
 				n(83553, {	-- Insha'tar
@@ -229,7 +229,7 @@ _.Zones =
 					["questID"] = 35553,
 					["coord"] = { 48.8, 22.7, DRAENOR_SHADOWMOON_VALLEY },
 					["g"] = {
-						i(113542),	-- Whispers of Rai'Vosh Toy
+						i(113542),	-- Whispers of Rai'Vosh (TOY!)
 					},
 				}),
 				n(72606, {	-- Rockhoof
@@ -279,7 +279,7 @@ _.Zones =
 					["questID"] = 35580,
 					["coord"] = { 55.3, 74.8, DRAENOR_SHADOWMOON_VALLEY },
 					["g"] = {
-						i(117550),	-- Angry Beehive Toy
+						i(117550),	-- Angry Beehive Toy (TOY!)
 					},
 				}),
 				n(75482, {	-- Veloss

@@ -153,7 +153,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES, {
 			}),
 			ach(14470),	-- Twisting Corridors: Layer 3
 			ach(14471, {	-- Twisting Corridors: Layer 4
-				i(184223),	-- Helm of the Dominated
+				i(184223),	-- Helm of the Dominated (TOY!)
 			}),
 			ach(14472),	-- Twisting Corridors: Layer 5
 			ach(14568, {	-- Twisting Corridors: Layer 6

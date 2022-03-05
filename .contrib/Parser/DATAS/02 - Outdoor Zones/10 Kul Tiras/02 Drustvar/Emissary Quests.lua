@@ -47,7 +47,7 @@ _.Zones =
 					["repeatable"] = true,
 					["g"] = {
 						i(166297, {	-- Order of Embers Supplies
-							i(166808),	-- Bewitching Tea Set
+							i(166808),	-- Bewitching Tea Set (TOY!)
 							i(166718),	-- Cobalt Raven Hatchling
 						}),
 					},

@@ -352,7 +352,7 @@ root("BlackMarket", bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(33223),	-- Fishing Chair (TOY!)
 		i(45063),	-- Foam Sword Rack (TOY!)
 		i(33219),	-- Goblin Gumbo Kettle (TOY!)
-		i(35227),	-- Goblin Weather Machine - Prototype 01-B
+		i(35227),	-- Goblin Weather Machine - Prototype 01-B (TOY!)
 		i(32542),	-- Imp in a Ball (TOY!)
 		i(46780),	-- Ogre Pinata (TOY!)
 		i(34499),	-- Paper Flying Machine Kit (TOY!)

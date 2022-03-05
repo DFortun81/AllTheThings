@@ -204,7 +204,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			crit(18),	-- One-of-Many (Antoran Wastes)
 		}),
 		ach(14625, {	-- Battle in the Shadowlands
-			i(184508),	-- Mawsworn Pet Leash
+			i(184508),	-- Mawsworn Pet Leash (TOY!)
 			crit(1,  {	-- Ardenweald's Tricksters
 				["_quests"] = { 61949 },	-- Ardenweald's Tricksters
 				["coord"] = { 40.2, 28.8, ARDENWEALD },
@@ -404,7 +404,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			}),
 		}),
 		ach(12936, {	-- Battle on Zandalar and Kul Tiras
-			i(163697),	-- Laser Pointer
+			i(163697),	-- Laser Pointer (TOY!)
 			crit(1, {	-- Crab People
 				["_quests"] = { 52009 },
 			}),
@@ -510,7 +510,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 		ach(9463,  {	-- Draenic Pet Battler
 			i(111999),	-- Menagerie, Level 3 [Blueprints]
 		}),
-		
+
 		ach(13279, {	-- Family Battler
 			-- Meta Achievement should symlink the contained Achievements from Source
 			["sym"] = {
@@ -1575,7 +1575,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 				ach(12099),	-- Unstoppable Undead
 			},
 		}),
-		
+
 		ach(6592, {    -- Legendary Pet Battler (5000)
 			ach(6591),    -- Grand Master Pet Battler (1000)
 			ach(6462),    -- Master Pet Battler (250)

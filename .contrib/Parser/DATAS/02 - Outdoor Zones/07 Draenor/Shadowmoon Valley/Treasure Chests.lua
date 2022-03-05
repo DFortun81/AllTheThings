@@ -103,7 +103,7 @@ _.Zones =
 					["coord"] = { 49.4, 37.6, DRAENOR_SHADOWMOON_VALLEY },
 					["description"] = "If this is not showing up for you on Alliance, you will need to complete the quests in the area first, then move to a new map area and back in to see the treasure.",
 					["g"] = {
-						i(109739),	-- Star Chart Toy
+						i(109739),	-- Star Chart (TOY!)
 					},
 				}),
 				o(232591, {	-- Beloved's Offering
@@ -363,7 +363,7 @@ _.Zones =
 					["questID"] = 33574,
 					["coord"] = { 51.1, 79.1, DRAENOR_SHADOWMOON_VALLEY },
 					["g"] = {
-						i(113375),	-- Vindicator's Armor Polish Kit Toy
+						i(113375),	-- Vindicator's Armor Polish Kit (TOY!)
 					},
 				}),
 				o(224754, {	-- Waterlogged Chest

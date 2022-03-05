@@ -94,7 +94,7 @@ namespace ATT
             { "WOD", new int[] { 6, 2, 4, 21345 } },
             { "LEGION", new int[] { 7, 3, 5, 26365 } },
             { "BFA", new int[] { 8, 3, 7, 35249 } },
-            { "SHADOWLANDS", new int[] { 9, 2, 0, 42488 } },
+            { "SHADOWLANDS", new int[] { 9, 2, 0, 42560 } },
         };
 
         public static readonly string CURRENT_RELEASE_PHASE_NAME =
@@ -208,6 +208,11 @@ namespace ATT
         /// </summary>
         private static IDictionary<long, Dictionary<string, object>> QUESTS = new Dictionary<long, Dictionary<string, object>>();
 
+        /// <summary>
+        /// All of the achievements that have been parsed sorted by Achievement ID.
+        /// </summary>
+        private static IDictionary<long, Dictionary<string, object>> ACHIEVEMENTS = new Dictionary<long, Dictionary<string, object>>();
+
         private static IDictionary<long, bool> QUESTS_WITH_REFERENCES = new Dictionary<long, bool>();
 
         /// <summary>
@@ -219,11 +224,25 @@ namespace ATT
         /// Represents the current parent group when processing the 'g' subgroup
         /// </summary>
         private static KeyValuePair<string, object>? CurrentParentGroup { get; set; }
+
+        /// <summary>
+        /// Represents fields which can be consolidated upwards in heirarchy if all children groups have the same value for the field
+        /// </summary>
+        private static readonly string[] HeirarchicalConsolidationFields = new string[]
+        {
+            "sourceIgnored",
+        };
+
         /// <summary>
         /// Represents that Item info will be merged into the base set of Item info.
         /// This should only be performed on the first processing pass, allowing the second processing pass to sync all Item info in nested group references
         /// </summary>
         private static bool MergeItemData { get; set; } = true;
+
+        /// <summary>
+        /// Represents whether we are currently processing the main Achievements Category
+        /// </summary>
+        private static bool ProcessingAchievementCategory { get; set; }
 
         /// <summary>
         /// Represents the valid values for the 'classes' / 'c' field of an object
@@ -591,6 +610,19 @@ namespace ATT
                 {
                     altAchievements.Remove(achID);
                 }
+
+                // If not processing the Main Achievement Category, then any encountered Achievements (which are not Criteria) should be duplicated into the Main Achievement Category
+                if (!ProcessingAchievementCategory && !data.ContainsKey("criteriaID"))
+                {
+                    if (ACHIEVEMENTS.TryGetValue(achID, out Dictionary<string, object> achInfo))
+                    {
+                        if (achInfo.TryGetValue("parentCategoryID", out object achCatID))
+                        {
+                            DuplicateDataIntoGroups(data, achCatID, "achievementCategoryID");
+                            //Trace.WriteLine($"Duplicated Achievement {achID} into Achievement Category");
+                        }
+                    }
+                }
             }
 
             bool cloned = false;
@@ -607,21 +639,32 @@ namespace ATT
             }
             else if (data.TryGetValue("_quests", out object quests))
             {
-                DuplicateDataIntoGroups(data, quests, "questID");
-                data.Remove("_quests");
-                cloned = true;
-            }
-            else if (data.TryGetValue("_achcat", out object achcat))
-            {
-                DuplicateDataIntoGroups(data, achcat, "achievementCategoryID");
-                data.Remove("_achcat");
-                cloned = true;
+                // don't duplicate achievements in this way
+                if (data.TryGetValue("achID", out achID))
+                {
+                    Trace.WriteLine($"Do not use '_quests' on Achievements ({achID}). Source within the Quest group, or use 'maps' & 'altQuests' if there are multiple related Locations / Quests.");
+                }
+                else
+                {
+                    DuplicateDataIntoGroups(data, quests, "questID");
+                    data.Remove("_quests");
+                    cloned = true;
+                }
             }
             else if (data.TryGetValue("_items", out object items))
             {
-                DuplicateDataIntoGroups(data, items, "itemID");
-                data.Remove("_items");
-                cloned = true;
+                // don't duplicate achievements in this way
+                if (data.TryGetValue("criteriaID", out long criteriaID))
+                {
+                    data.TryGetValue("achID", out achID);
+                    Trace.WriteLine($"Do not use '_items' on Criteria ({achID}:{criteriaID}). Use 'provider' instead when an Item grants credit for an Achievement Criteria.");
+                }
+                else
+                {
+                    DuplicateDataIntoGroups(data, items, "itemID");
+                    data.Remove("_items");
+                    cloned = true;
+                }
             }
             else if (data.TryGetValue("_npcs", out object npcs))
             {
@@ -705,9 +748,15 @@ namespace ATT
             if (data.TryGetValue("g", out List<object> groups))
             {
                 var previousParent = CurrentParentGroup;
-                if (ATT.Export.ObjectData.TryGetMostSignificantObjectType(data, out ATT.Export.ObjectData objectData))
+                if (ATT.Export.ObjectData.TryGetMostSignificantObjectType(data, out Export.ObjectData objectData))
                     CurrentParentGroup = new KeyValuePair<string, object>(objectData.ObjectType, data[objectData.ObjectType]);
+
                 Process(groups, modID, minLevel);
+
+                // Parent field consolidation now that groups have been processed
+                if (!MergeItemData)
+                    ConsolidateHeirarchicalFields(data, groups);
+
                 CurrentParentGroup = previousParent;
             }
 
@@ -862,6 +911,12 @@ namespace ATT
                     if (redundant)
                         Trace.WriteLine($"Redundant 'maps' removed from: {MiniJSON.Json.Serialize(data)}");
                 }
+
+                // single 'maps' for Achievements Sourced under 'Achievements', should be sourced in that specific map directly instead
+                if (ProcessingAchievementCategory && mapsList.Count == 1 && data.TryGetValue("achID", out achID))
+                {
+                    Trace.WriteLine($"Single 'maps' value used within Achievement: {achID}. It can be Sourced directly in the Location.");
+                }
             }
 
             // clean up any metadata tags
@@ -873,6 +928,42 @@ namespace ATT
             }
 
             return true;
+        }
+
+        private static void ConsolidateHeirarchicalFields(Dictionary<string, object> parentGroup, List<object> groups)
+        {
+            HashSet<object> fieldValues = new HashSet<object>();
+            foreach (string field in HeirarchicalConsolidationFields)
+            {
+                foreach (object group in groups)
+                {
+                    if (group is Dictionary<string, object> data && data.TryGetValue(field, out object value))
+                    {
+                        fieldValues.Add(value);
+                    }
+                    else
+                    {
+                        fieldValues.Clear();
+                        break;
+                    }
+                }
+
+                // exactly 1 unique value across all groups, set it on the parent and remove it from all groups
+                if (fieldValues.Count == 1)
+                {
+                    parentGroup[field] = fieldValues.First();
+
+                    foreach (object group in groups)
+                    {
+                        if (group is Dictionary<string, object> data)
+                        {
+                            data.Remove(field);
+                        }
+                    }
+                }
+
+                fieldValues.Clear();
+            }
         }
 
         /// <summary>
@@ -1078,6 +1169,9 @@ namespace ATT
 
         private static void DuplicateDataIntoGroups(Dictionary<string, object> data, object groups, string type)
         {
+            // only need to setup the merge data on the first pass
+            if (!MergeItemData) return;
+
             var groupIDs = Objects.CompressToList(groups) ?? new List<object> { groups };
             if (groupIDs != null && ATT.Export.ObjectData.TryGetMostSignificantObjectType(data, out Export.ObjectData objectData))
             {
@@ -1210,7 +1304,11 @@ namespace ATT
 
             // Merge the Item Data into the Containers.
             //Trace.WriteLine("Container Processing #1...");
-            foreach (var container in Objects.AllContainers.Values) Process(container, 0, 1);
+            foreach (var container in Objects.AllContainers)
+            {
+                ProcessingAchievementCategory = container.Key == "Achievements";
+                Process(container.Value, 0, 1);
+            }
             //Trace.WriteLine("Container Processing #1 Done.");
 
             // Remove the removed from game flag from the Tome of Polymorph: Turtle
@@ -1225,7 +1323,11 @@ namespace ATT
             //Trace.WriteLine("Container Processing #2...");
             MergeItemData = false;
             AdditionalProcessing();
-            foreach (var container in Objects.AllContainers.Values) Process(container, 0, 1);
+            foreach (var container in Objects.AllContainers)
+            {
+                ProcessingAchievementCategory = container.Key == "Achievements";
+                Process(container.Value, 0, 1);
+            }
             //Trace.WriteLine("Container Processing #2 Done.");
 
             // Sort World Drops by Name
@@ -1782,6 +1884,7 @@ namespace ATT
                 case "g":
                 case "group":
                 case "groups":
+                case "criteria":
                     {
                         return "g";
                     }
@@ -2192,6 +2295,7 @@ namespace ATT
                 case "objectID":
                 case "order":
                 case "ordered":
+                case "parentCategoryID":
                 case "petAbilityID":
                 case "previousRecipeID":
                 case "professionID":
@@ -2557,6 +2661,20 @@ namespace ATT
                             }
                             break;
                         }
+                    case "AchievementDB":
+                        // The format of the Achievement DB is a dictionary of Achievement ID <-> Name pairs.
+                        if (pair.Value is Dictionary<long, object> AchievementDB)
+                        {
+                            foreach (var categoryPair in AchievementDB)
+                            {
+                                // KEY: Achievement ID, VALUE: Dictionary
+                                if (categoryPair.Value is Dictionary<string, object> info)
+                                {
+                                    ACHIEVEMENTS[categoryPair.Key] = info;
+                                }
+                            }
+                        }
+                        break;
                     default:
                         {
                             // Get the object container for this section.

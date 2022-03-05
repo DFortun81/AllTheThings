@@ -34,7 +34,7 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 84291 },	-- Kolrigg Stoktron
 							["g"] = {
-								i(119001),	-- Mystery Keg
+								i(119001),	-- Mystery Keg (TOY!)
 							},
 						}),
 						q(36023, {	-- Extrinsic Motivation
@@ -144,7 +144,7 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 84292 },	-- Lunzul
 							["g"] = {
-								i(119001),	-- Mystery Keg
+								i(119001),	-- Mystery Keg (TOY!)
 							},
 						}),
 						q(37276, {	-- Standing United

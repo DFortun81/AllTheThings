@@ -25,10 +25,10 @@ root("Holidays", d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
 					i(167895, {	-- Beastlord's Warwolf
 						["cost"] = { { "c", 1166, 5000 } },	-- 5000x Timewarped Badge
 					}),
-					i(168012, {	-- Apexis Focusing Shard
+					i(168012, {	-- Apexis Focusing Shard (TOY!)
 						["cost"] = { { "c", 1166, 500 } },	-- 500x Timewarped Badge
 					}),
-					i(168014, {	-- Banner of the Burning Blade
+					i(168014, {	-- Banner of the Burning Blade (TOY!)
 						["cost"] = { { "c", 1166, 750 } },	-- 750x Timewarped Badge
 					}),
 					i(119396, {	-- Shadowspeaker's Shard
@@ -164,10 +164,10 @@ root("Holidays", d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
 					i(167895, {	-- Beastlord's Warwolf
 						["cost"] = { { "c", 1166, 5000 } },	-- 5000x Timewarped Badge
 					}),
-					i(168012, {	-- Apexis Focusing Shard
+					i(168012, {	-- Apexis Focusing Shard (TOY!)
 						["cost"] = { { "c", 1166, 500 } },	-- 500x Timewarped Badge
 					}),
-					i(168014, {	-- Banner of the Burning Blade
+					i(168014, {	-- Banner of the Burning Blade (TOY!)
 						["cost"] = { { "c", 1166, 750 } },	-- 750x Timewarped Badge
 					}),
 					i(119396, {	-- Shadowspeaker's Shard

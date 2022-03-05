@@ -345,7 +345,7 @@ _.Zones =
 					["sourceQuests"] = { 45238 },	-- Return to Karazhan: Cubic Cynosure
 					["provider"] = { "n", 93538 },	-- Dariness the Learned
 					["g"] = {
-						i(142536),	-- Memory Cube
+						i(142536),	-- Memory Cube (TOY!)
 					},
 				}),
 				q(45159, {	-- Cubic Conundrum

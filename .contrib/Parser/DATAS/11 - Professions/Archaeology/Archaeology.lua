@@ -718,7 +718,7 @@ profession(ARCHAEOLOGY, {
 			}),
 		}),
 		filter(TOYS, {
-			i(160751),	-- Dance of the Dead
+			i(160751),	-- Dance of the Dead (TOY!)
 		}),
 		n(-386, {	-- Trinket
 			i(160833),	-- Fetish of the Tormented Mind
@@ -1292,7 +1292,7 @@ profession(ARCHAEOLOGY, {
 			}),
 		}),
 		filter(TOYS, {
-			i(89614),	-- Anatomical Dummy
+			i(89614),	-- Anatomical Dummy (TOY!)
 		}),
 		n(-386, {	-- Trinket
 			i(89611),	-- Quilen Statuette
@@ -1818,7 +1818,7 @@ profession(ARCHAEOLOGY, {
 			}),
 		}),
 		filter(TOYS, {
-			i(160740),	-- Croak Crock
+			i(160740),	-- Croak Crock (TOY!)
 		}),
 		n(-386, {	-- Trinket
 			i(160753),	-- Sanguinating Totem

@@ -460,7 +460,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["coord"] = { 33.3, 31.4, STORMHEIM },
 					["g"] = {
-						i(129093),	-- Ravenbear Disguise
+						i(129093),	-- Ravenbear Disguise (TOY!)
 					},
 				}),
 				q(43596, {	-- Maw of Souls: Piercing the Mists

@@ -148,7 +148,7 @@ _.Zones =
 							i(146959, {		-- Corrupted Globule
 								-- extra info for the item can go here
 							}),
-							i(147309, {	-- Crate of Bobbers: Face of the Forest
+							i(147309, {	-- Crate of Bobbers: Face of the Forest (TOY!)
 								["cost"] = { { "i", 146959, 100 }, },	-- 100x Corrupted Globule
 							}),
 							i(152565, {	-- Recipe: Feast of the Fishes (Rank 1)

@@ -6,7 +6,7 @@ root("Zones", {
 	m(BROKEN_ISLES, {
 		m(HIGHMOUNTAIN, {
 			n(TREASURES, {
-				i(131811, {	-- Rocfeather Skyhorn Kite
+				i(131811, {	-- Rocfeather Skyhorn Kite (TOY!)
 					["cost"] = {
 						{ "i", 131809, 1 },	-- Gleaming Roc Feather
 						{ "i", 131927, 1 },	-- Shimmering Roc Feather

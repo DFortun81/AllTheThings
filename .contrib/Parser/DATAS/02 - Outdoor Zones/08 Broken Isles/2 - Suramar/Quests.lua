@@ -631,7 +631,7 @@ _.Zones =
 					["provider"] = { "n", 107997 },	-- Silgryn
 					["sourceQuest"] = 40745,	-- Shift Change
 					["g"] = {
-						i(130209),	-- Never Ending Toy Chest
+						i(130209),	-- Never Ending Toy Chest (TOY!)
 					},
 				}),
 				q(42487, {	-- Friends On the Outside
@@ -1038,7 +1038,7 @@ _.Zones =
 					["provider"] = { "n", 108389 },	-- Mrgrlilgrl
 					["sourceQuest"] = 42728,	-- A Mlrglrmg For Grlmrgl
 					["g"] = {
-						i(141879),	-- Berglrgl Perrgl Girggrlf (Toy)
+						i(141879),	-- Berglrgl Perrgl Girggrlf (TOY!)
 					},
 				}),
 				q(41479, {	-- Natural Adversaries

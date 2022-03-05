@@ -40,7 +40,7 @@ _.Zones =
 									["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 								}),
 							}),
-							i(170469),	-- Memento of the Deeps
+							i(170469),	-- Memento of the Deeps (TOY!)
 							i(169198),	-- Royal Snapdragon (MOUNT!)
 							i(170169),	-- Technique: Glyph of the Cold Waves
 						},
@@ -81,7 +81,7 @@ _.Zones =
 									["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 								}),
 							}),
-							i(170469),	-- Memento of the Deeps
+							i(170469),	-- Memento of the Deeps (TOY!)
 							i(169198),	-- Royal Snapdragon (MOUNT!)
 							i(170169),	-- Technique: Glyph of the Cold Waves
 						},

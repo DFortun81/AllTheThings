@@ -66,7 +66,9 @@ _.Zones =
 				q(45070),	-- Barrels o' Fun
 				q(42080),	-- Bastion of Bradensbrook
 				q(41961),	-- Black Rook Holdings
-				q(42023),	-- Black Rook Rumble
+				q(42023, {	-- Black Rook Rumble
+					ach(11477),		-- Off the Top Rook
+				}),
 				q(41955),	-- Bloodline of Stone
 				q(42075),	-- Botanical Backlash
 				q(41484, {	-- Brimstone Destroyer

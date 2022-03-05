@@ -21,11 +21,11 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 		["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
 	}),
 	-- Toys
-	i(165802, {	-- Noble Gardener's Hearthstone
+	i(165802, {	-- Noble Gardener's Hearthstone (TOY!)
 		["timeline"] = { "added 8.1.5.29701" },
 		["cost"] = { { "i", 44791, 250 } },	-- 250x Noblegarden Chocolate
 	}),
-	i(188694, {	-- Spring Florist's Pouch
+	i(188694, {	-- Spring Florist's Pouch (TOY!)
 		["timeline"] = { "added 9.1.5.40871" },
 		["cost"] = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
 	}),
@@ -135,7 +135,7 @@ root("Holidays", applyholiday(NOBLEGARDEN, {
 				i(72145, {	-- Swift Springstrider
 					["timeline"] = { "added 4.3.0.15005" },
 				}),
-				
+
 				i(19028),	-- Elegant Dress
 				i(6835, {	-- Black Tuxedo Pants
 					["timeline"] = { "removed 7.2.5.24163" },
@@ -323,7 +323,7 @@ root("Holidays", applyholiday(NOBLEGARDEN, {
 						["provider"] = { "i", 44791 },	-- Noblegarden Chocolate
 						["cost"] = { { "i", 44802, 1 } },	-- Borrowed Egg Basket
 					}),
-					i(188698, {	-- Eagger Basket
+					i(188698, {	-- Eagger Basket (TOY!)
 						["timeline"] = { "added 9.1.5.40871" },
 					}),
 					i(45067, {	-- Egg Basket
@@ -354,7 +354,7 @@ root("Holidays", applyholiday(NOBLEGARDEN, {
 						["provider"] = { "i", 44791 },	-- Noblegarden Chocolate
 						["cost"] = { { "i", 44802, 1 } },	-- Borrowed Egg Basket
 					}),
-					i(188698, {	-- Eagger Basket
+					i(188698, {	-- Eagger Basket (TOY!)
 						["timeline"] = { "added 9.1.5.40871" },
 					}),
 					i(45067, {	-- Egg Basket

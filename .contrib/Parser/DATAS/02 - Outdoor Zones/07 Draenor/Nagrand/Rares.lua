@@ -56,7 +56,7 @@ _.Zones =
 					["coord"] = { 34.6, 77.0, DRAENOR_NAGRAND },
 					["isDaily"] = true,
 					["g"] = {
-						i(118244),	-- Iron Buccaneer's Hat Toy
+						i(118244),	-- Iron Buccaneer's Hat (TOY!)
 						i(116809),	-- Ironbeard's Blunderbuss
 					},
 				}),

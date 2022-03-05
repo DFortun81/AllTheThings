@@ -279,9 +279,9 @@ root("ExpansionFeatures", tier(MOP_TIER, bubbleDown({ ["timeline"] = { "added 5.
 					["description"] = "Rebellion Quatermaster during Barrens Battlefield.",
 					["g"] = {
 						i(97901),	-- Griftah's Authentic Troll Shoes
-						i(97919),	-- Whole-Body Shinka' Toy (TOY!)
-						i(97942),	-- Sen'jin Spirit Drum Toy (TOY!)
-						i(98552),	-- Xan'tish's Flute Toy (TOY!)
+						i(97919),	-- Whole-Body Shinka' (TOY!)
+						i(97942),	-- Sen'jin Spirit Drum (TOY!)
+						i(98552),	-- Xan'tish's Flute (TOY!)
 						i(97921),	-- Bom'bay's Color-Seein' Sauce (TOY!)
 						i(97821),	-- Gahz'rooki's Summoning Stone (PET!)
 						i(LATENT_KORKRON_HELM),

@@ -120,7 +120,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 					}),
 				}),
 				n(ZONE_DROPS, {
-					i(187174),	-- Shaded Judgment Stone
+					i(187174),	-- Shaded Judgment Stone (TOY!)
 				}),
 			},
 		}),

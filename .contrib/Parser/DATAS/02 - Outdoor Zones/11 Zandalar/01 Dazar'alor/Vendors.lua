@@ -14,7 +14,7 @@ _.Zones =
 						i(156659, {	-- Counterfeit Rastakhan Mask
 							["description"] = "Return to |CFFCC33FFGriftah|r and trade him the |CFFFFD700Counterfeit Rastakhan Mask|r in exchange for the toy |cFFFFFFFF(53.0, 89.9)|r.",
 							["g"] = {
-								i(156649),	-- Zandalari Effigy Amulet	Note!! We don't mark the item as Horde since Alliance can actually use it
+								i(156649),	-- Zandalari Effigy Amulet (TOY!)	Note!! We don't mark the item as Horde since Alliance can actually use it
 							},
 						}),
 					},
@@ -513,8 +513,8 @@ _.Zones =
 									i(163824),	-- Voru'kar Leecher
 								}),
 								filter(TOYS, {
-									i(164373),	-- Enchanted Soup Stone
-									i(163924),	-- Whiskerwax Candle
+									i(164373),	-- Enchanted Soup Stone (TOY!)
+									i(163924),	-- Whiskerwax Candle (TOY!)
 								}),
 							},
 						}),
@@ -650,9 +650,9 @@ _.Zones =
 								i(164429),	-- Leggings of the Tranquil Path
 								i(164428),	-- Footpads of the Tranquil Path
 								filter(TOYS, {
-									i(164375),	-- Bad Mojo Banana
-									i(164374),	-- Magic Monkey Banana
-									i(163795),	-- Oomgut Ritual Drum
+									i(164375),	-- Bad Mojo Banana (TOY!)
+									i(164374),	-- Magic Monkey Banana (TOY!)
+									i(163795),	-- Oomgut Ritual Drum (TOY!)
 								}),
 								n(WEAPONS, {
 									i(164267),	-- Plundered Biting Shot Longbow
@@ -871,7 +871,7 @@ _.Zones =
 						i(156652, {	-- Centennial Blossom
 							["description"] = "Visit |CFFCC33FFTrader Nog|r and trade them the |CFFFFD700Centennial Blossom|r for a |CFFFFD700Preserved Night Elf Head|r |cFFFFFFFF(57.1, 91.4)|r.",
 							["g"] = {
-								i(156649),	-- Zandalari Effigy Amulet	Note!! We don't mark the item as Horde since Alliance can actually use it
+								i(156649),	-- Zandalari Effigy Amulet (TOY!)	Note!! We don't mark the item as Horde since Alliance can actually use it
 							},
 						}),
 					},
@@ -888,7 +888,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(156659, {	-- Counterfeit Rastakhan Mask
-							i(156649, {	-- Zandalari Effigy Amulet
+							i(156649, {	-- Zandalari Effigy Amulet (TOY!)
 								["description"] = "To get this item you have to jump through the following hoops:\n\n|cFFFFFFFFStep 1:|r Purchase a |CFFFFD700Sack of \"Discarded\" Hearthstones|r from |CFFCC33FFGriftah|r |cFFFFFFFF[Coords: 53.02, 89.93]|r.\n|cFFFFFFFFStep 2:|r Now visit |CFFCC33FFRakle the Wretched|r and trade him the |CFFFFD700Sack of \"Discarded\" Hearthstones|r to receive a |CFFFFD700Much-Too-Hot-Pepper|r |cFFFFFFFF[Coords: 34.77, 11.58]|r.\n|cFFFFFFFFStep 3:|r Visit |CFFCC33FFTrader Haw'li|r and trade them the |CFFFFD700Much-Too-Hot-Pepper|r for some |CFFFFD700Golden Seeds|r |cFFFFFFFF[Coords: 37.81, 14.72]|r.\n|cFFFFFFFFStep 4:|r Visit |CFFCC33FFGranda Watae|r and trade them the |CFFFFD700Golden Seeds|r for a |CFFFFD700Centennial Blossom|r |cFFFFFFFF[Coords: 42.16, 35.78]|r.\n|cFFFFFFFFStep 5:|r Visit |CFFCC33FFTrader Nog|r and trade them the |CFFFFD700Centennial Blossom|r for a |CFFFFD700Preserved Night Elf Head|r |cFFFFFFFF[Coords: 57.15, 91.47]|r.\n|cFFFFFFFFStep 6:|r Visit |CFFCC33FF\"Black Eye\" Zenru|r and trade them the |CFFFFD700Preserved Night Elf Head|r for a |CFFFFD700Counterfeit Rastakhan Mask|r |cFFFFFFFF[Coords: 53.77, 85.97]|r.\n|cFFFFFFFFStep 7:|r Return back to |CFFCC33FFGriftah|r and you will trade him the |CFFFFD700Counterfeit Rastakhan Mask|r in exchange for the toy |cFFFFFFFF[Coords: 53.02, 89.93]|r.",
 							}),
 							i(156647, {	-- Sack of "Discarded" Hearthstones
@@ -1152,7 +1152,7 @@ _.Zones =
 						i(156650, {	-- Much-Too-Hot Pepper
 							["description"] = "Visit |CFFCC33FFTrader Haw'li|r and trade them the |CFFFFD700Much-Too-Hot-Pepper|r for some |CFFFFD700Golden Seeds|r |cFFFFFFFF[Coords: 37.8, 14.7]|r.",
 							["g"] = {
-								i(156649),	-- Zandalari Effigy Amulet	Note!! We don't mark the item as Horde since Alliance can actually use it
+								i(156649),	-- Zandalari Effigy Amulet (TOY!)	Note!! We don't mark the item as Horde since Alliance can actually use it
 							},
 						}),
 					},
@@ -1399,10 +1399,10 @@ _.Zones =
 						i(156651, {	-- Golden Seeds
 							["description"] = "Visit |CFFCC33FFGranda Watae|r and trade them the |CFFFFD700Golden Seeds|r for a |CFFFFD700Centennial Blossom|r |cFFFFFFFF[Coords: 42.16, 35.78].",
 							["g"] = {
-								i(156649),	-- Zandalari Effigy Amulet	Note!! We don't mark the item as Horde since Alliance can actually use it
+								i(156649),	-- Zandalari Effigy Amulet (TOY!)	Note!! We don't mark the item as Horde since Alliance can actually use it
 							},
 						}),
-						i(159749),	-- Haw'li's Hot & Spicy Chili
+						i(159749),	-- Haw'li's Hot & Spicy Chili (TOY!)
 					},
 				}),
 				n(125311, {	-- Trader Nog
@@ -1412,7 +1412,7 @@ _.Zones =
 						i(156655, {	-- Preserved Night Elf Head
 							["description"] = "Visit |CFFCC33FF\"Black Eye\" Zenru|r and trade them the |CFFFFD700Preserved Night Elf Head|r for a |CFFFFD700Counterfeit Rastakhan Mask|r |cFFFFFFFF[Coords: 53.77, 85.97]|r.",
 							["g"] = {
-								i(156649),	-- Zandalari Effigy Amulet	Note!! We don't mark the item as Horde since Alliance can actually use it
+								i(156649),	-- Zandalari Effigy Amulet (TOY!)	Note!! We don't mark the item as Horde since Alliance can actually use it
 							},
 						}),
 					},

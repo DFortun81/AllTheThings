@@ -217,7 +217,7 @@ _.Zones =
 					["sourceQuest"] = 36378,	-- Locating the Lapidarist
 					["requireSkill"] = JEWELCRAFTING,
 					["g"] = {
-						i(115503),	-- Blazing Diamond Pendant
+						i(115503),	-- Blazing Diamond Pendant (TOY!)
 						i(115359, {	-- Draenor Jewelcrafting
 							["collectible"] = false,
 						}),

@@ -31,7 +31,7 @@ _.ExpansionFeatures =
 							q(41075, {	-- Puzzle 05 Solved
 								["name"] = "Puzzle 5 Solved",
 								["g"] = {
-									i(140632),	-- Lava Fountain
+									i(140632),	-- Lava Fountain (TOY!)
 								},
 							}),
 						},

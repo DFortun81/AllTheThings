@@ -222,7 +222,7 @@ root("ExpansionFeatures", {
 							i(140316),	-- Firebat Pup
 						}),
 						mission(1381, {	-- Glittering Treasure
-							i(129165),	-- Barnacle-Encrusted Gem
+							i(129165),	-- Barnacle-Encrusted Gem (TOY!)
 						}),
 						mission(1513, {	-- I've Got A Strange Feeling About This
 							q(45312, {	-- You Beat the Ball of Meat
@@ -288,7 +288,7 @@ root("ExpansionFeatures", {
 							}),
 						}),
 						mission(1382, {	-- Win the Crowd
-							i(130169),	-- Tournament Favor
+							i(130169),	-- Tournament Favor (TOY!)
 						}),
 						-- Rep Insignias
 						i(152960),	-- Argussian Reach Insignia

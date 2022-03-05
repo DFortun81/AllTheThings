@@ -23,7 +23,7 @@ _.ExpansionFeatures =
 							["isWeekly"] = true,
 							["g"] = {
 								i(141069, {	-- Skyhold Chest of Riches
-									i(140160),	-- Stormforged Vrykul Horn
+									i(140160),	-- Stormforged Vrykul Horn (TOY!)
 									i(140161),	-- Hargal's Favorite Trinket
 									i(141071),	-- Badge of Honor
 								}),

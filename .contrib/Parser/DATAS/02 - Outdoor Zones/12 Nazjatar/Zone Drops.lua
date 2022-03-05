@@ -546,7 +546,7 @@ _.Zones =
 				},
 			}),
 		--	Toys
-			i(170476, {	-- Underlight Sealamp
+			i(170476, {	-- Underlight Sealamp (TOY!)
 				["crs"] = {	-- may drop from additional mobs.  check back and add crs as appropriate.
 					153334,	-- Abyss Elemental
 					153078,	-- Hand of Azshara
@@ -560,7 +560,7 @@ _.Zones =
 					}),
 				},
 			}),
-			i(170199, {	-- Zanj'ir Weapon Rack
+			i(170199, {	-- Zanj'ir Weapon Rack (TOY!)
 				["crs"] = {	-- may drop from additional mobs.  check back and add crs as appropriate.
 					153299,	-- Bonebreaker Szun
 					152962,	-- Commander Sarj'eth

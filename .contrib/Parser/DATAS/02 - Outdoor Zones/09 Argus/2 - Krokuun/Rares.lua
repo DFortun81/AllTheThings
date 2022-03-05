@@ -124,7 +124,7 @@ _.Zones =
 						crit(26, {	-- Sister Subversia
 							["achievementID"] = 12078,	-- Commander of Argus
 						}),
-						i(153124),	-- Spire of Spite
+						i(153124),	-- Spire of Spite (TOY!)
 					},
 				}),
 				n(123689, {	-- Talestra the Vile

@@ -16,7 +16,7 @@ root("Promotions", n(-537, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Diablo
 			i(142551),	-- Stalwart's Grand Charm
 		}),
 		n(REWARDS, {
-			i(142542, {	-- Tome of Town Portal
+			i(142542, {	-- Tome of Town Portal (TOY!)
 				["cost"] = {
 					{ "i", 142543, 10 },	-- Scroll of Town Portal
 					{ "i", 143628,  1 },	-- Blank Diabolic Tome
@@ -40,7 +40,7 @@ root("Promotions", n(-537, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Diablo
 			["groups"] = {
 				ach(11395),	-- Diablo's 20th Anniversary
 				i(143327),	-- Livestock Lochaber Axe
-				i(143543),	-- Twelve String Guitar
+				i(143543),	-- Twelve String Guitar (TOY!)
 			},
 		}),
 	},

@@ -96,7 +96,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["questID"] = 57469,
 				["isDaily"] = true,
 				["g"] = {
-					i(184312),	-- Borr-Geth's Fiery Brimstone
+					i(184312),	-- Borr-Geth's Fiery Brimstone (TOY!)
 					i(186223),	-- Coif of the Molten Terror
 				},
 			}),
@@ -343,7 +343,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["questID"] = 60987,
 				["isDaily"] = true,
 				["g"] = {
-					i(184292),	-- Ancient Elethium Coin
+					i(184292),	-- Ancient Elethium Coin (TOY!)
 					i(185892, {	-- Stygia-Etched Decapitator
 						["timeline"] = { "added 9.1.0.38312" },
 					}),
@@ -405,7 +405,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					o(356555, {	-- Eurydea's Necklace
 						["coord"] = { 26.8, 29.3, THE_MAW },
 						["g"] = {
-							i(181794),		-- Orophea's Lyre
+							i(181794),	-- Orophea's Lyre (TOY!)
 						},
 					}),
 				},

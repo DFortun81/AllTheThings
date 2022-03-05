@@ -230,7 +230,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 72.6, 19.6, SPIRES_OF_ARAK },
 					["g"] = {
-						i(119178),	-- Black Whirlwind Toy
+						i(119178),	-- Black Whirlwind (TOY!)
 						i(119410),	-- Soultwisting Staff
 					},
 				}),

@@ -46,7 +46,7 @@ _.Craftables =
                         i(11825),	-- Pet Bombling
                         i(115483),	-- Sky-Bo Pet
                         i(21277),	-- Tranquil Mechanical Yeti Pet
-                        i(123851),	-- Photo B.O.M.B. Toy
+                        i(123851),	-- Photo B.O.M.B. (TOY!)
                     }),
                 },
             }),
@@ -71,7 +71,7 @@ _.Craftables =
                         i(11825),	-- Pet Bombling
                         i(115483),	-- Sky-Bo Pet
                         i(21277),	-- Tranquil Mechanical Yeti Pet
-                        i(123851),	-- Photo B.O.M.B. Toy
+                        i(123851),	-- Photo B.O.M.B. (TOY!)
                         i(136631),	-- Surface-to-Infernal Rocket Launcher
                         i(136630),	-- "Twirling Bottom" Repeaater"
                         i(136629),	-- Felgibber Shotgun

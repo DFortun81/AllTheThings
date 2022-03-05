@@ -82,7 +82,7 @@ _.ExpansionFeatures =
 						["provider"] = { "o", 231918 },	-- Laanda's Scroll
 						["coord"] = { 50.0, 81.2, DRAENOR_SHADOWMOON_VALLEY },
 						["g"] = {
-							i(119134),	-- Sargerei Disguise
+							i(119134),	-- Sargerei Disguise (TOY!)
 						},
 					}),
 					-- 9th quest of Garrison Campaign: The Sargerei (A)
@@ -144,7 +144,7 @@ _.ExpansionFeatures =
 						["coord"] = { 70.0, 38.2, FROSTFIRE_RIDGE },
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							i(119145),	-- Firefury Totem
+							i(119145),	-- Firefury Totem (TOY!)
 						},
 					}),
 					-- 7th (last) quest of Garrison Campaign: Farseer's Rock

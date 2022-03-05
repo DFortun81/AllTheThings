@@ -11,7 +11,7 @@ _.Zones =
 					["coord"] = { 34.8, 23.2, DREAD_WASTES },
 					["g"] = {
 						i(87629),	-- Chestplate of Manifest
-						i(86589),	-- Ai-Li's Skymirror
+						i(86589),	-- Ai-Li's Skymirror (TOY!)
 						i(87632),	-- Fearsworn Chestpiece
 						i(87635),	-- Amber-Starched Robes
 						i(87630),	-- Chestpiece of Twinkling Stars
@@ -59,7 +59,7 @@ _.Zones =
 						{ 39.2, 41.8, DREAD_WASTES },
 					},
 					["g"] = {
-						i(86578),	-- Eternal Warrior's Sigil
+						i(86578),	-- Eternal Warrior's Sigil (TOY!)
 						i(87628),	-- Spinebreaker Chestpiece
 						i(87627),	-- Kunchong Carapace Chestguard
 						i(87635),	-- Amber-Starched Robes
@@ -79,7 +79,7 @@ _.Zones =
 					["g"] = {
 						i(87634),	-- Mazu's Robe
 						i(87630),	-- Chestpiece of Twinkling Stars
-						i(86593),	-- Hozen Beach Ball
+						i(86593),	-- Hozen Beach Ball (TOY!)
 						i(87635),	-- Amber-Starched Robes
 						i(87629),	-- Chestplate of Manifest Dread
 						i(87632),	-- Fearsworn Chestpiece

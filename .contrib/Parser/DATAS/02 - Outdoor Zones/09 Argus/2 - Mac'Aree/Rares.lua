@@ -30,7 +30,7 @@ _.Zones =
 						crit(30, {	-- Baruut the Bloodthirsty
 							["achievementID"] = 12078,	-- Commander of Argus
 						}),
-						i(153193),	-- Baarut the Brisk Toy
+						i(153193),	-- Baarut the Brisk (TOY!)
 					},
 				}),
 				n(126869, {	-- Captain Faruq
@@ -88,9 +88,9 @@ _.Zones =
 						crit(46, {	-- Instructor Tarahna
 							["achievementID"] = 12078,	-- Commander of Argus
 						}),
-						i(153179),	-- Blue Conservatory Scroll
-						i(153181),	-- Red Conservatory Scroll
-						i(153180),	-- Yellow Conservatory Scroll
+						i(153179),	-- Blue Conservatory Scroll (TOY!)
+						i(153181),	-- Red Conservatory Scroll (TOY!)
+						i(153180),	-- Yellow Conservatory Scroll (TOY!)
 						i(153309),	-- Unyielding Peacekeeper's Mace
 					},
 				}),
@@ -280,7 +280,7 @@ _.Zones =
 						crit(33, {	-- Vigilant Kuro
 							["achievementID"] = 12078,	-- Commander of Argus
 						}),
-						i(153183),	-- Barrier Generator [Note: Drop Argus]
+						i(153183),	-- Barrier Generator (TOY!)
 						i(153323),	-- Eredath Vigilant's Crest
 					},
 				}),
@@ -293,7 +293,7 @@ _.Zones =
 						crit(32, {	-- Vigilant Thanos
 							["achievementID"] = 12078,	-- Commander of Argus
 						}),
-						i(153183),	-- Barrier Generator [Note: Drop Argus]
+						i(153183),	-- Barrier Generator (TOY!)
 						i(153322),	-- Eredath Vigilant's Shield
 					},
 				}),

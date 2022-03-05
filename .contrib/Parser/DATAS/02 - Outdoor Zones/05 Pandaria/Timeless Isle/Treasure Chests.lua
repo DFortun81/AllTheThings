@@ -257,7 +257,7 @@ _.Zones =
 						crit(1, {	-- Sunken Treasure
 							["achievementID"] = 8727,	-- Where There's Pirates, There's Booty
 						}),
-						i(134024, {	-- Cursed Swabby Helmet
+						i(134024, {	-- Cursed Swabby Helmet (TOY!)
 							crit(1, {	-- Cursed Swabby Helmet
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
 							}),

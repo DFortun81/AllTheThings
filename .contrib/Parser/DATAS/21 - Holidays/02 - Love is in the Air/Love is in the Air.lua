@@ -174,7 +174,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 				}),
 			}),
 			ach(9394, {	-- They Really Love Me! (50)
-				i(116651),	-- True Love Prism
+				i(116651),	-- True Love Prism (TOY!)
 				ach(9393),	-- Beacon of Love (25)
 				ach(9392),	-- Love Magnet (10)
 			}),
@@ -1568,11 +1568,11 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 							}),
 						},
 					}),
-					i(142341, {	-- Love Boat
+					i(142341, {	-- Love Boat (TOY!)
 						["timeline"] = { "added 7.1.0.22731" },
 						["cost"] = { { "i", 49927, 270 } },	-- 270x Love Token
 					}),
-					i(165670, {	-- Peddlefeet's Lovely Hearthstone
+					i(165670, {	-- Peddlefeet's Lovely Hearthstone (TOY!)
 						["timeline"] = { "added 8.1.0.28724" },
 						["cost"] = { { "i", 49927, 150 } },	-- 150x Love Token
 					}),
@@ -1580,7 +1580,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 						["timeline"] = { "added 2.4.0.7897" },
 						["cost"] = { { "i", 49927, 10 } },	-- 10x Love Token
 					}),
-					i(144339, {	-- Sturdy Love Fool
+					i(144339, {	-- Sturdy Love Fool (TOY!)
 						["timeline"] = { "added 7.1.5.23360" },
 						["cost"] = { { "i", 49927, 100 } },	-- 100x Love Token
 					}),

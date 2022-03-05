@@ -190,7 +190,7 @@ root("Promotions", n(TCG_HEADER, bubbleDown({
 		i(49704, {	-- Carved Ogre Idol (TOY!)
 			["timeline"] = { "added 3.2.2.10468" },
 		}),
-		i(93672, {	-- Dark Portal
+		i(93672, {	-- Dark Portal (TOY!)
 			["model"] = 803615,
 			["modelScale"] = 5,
 			["timeline"] = { "added 5.2.0.16408" },
@@ -219,7 +219,7 @@ root("Promotions", n(TCG_HEADER, bubbleDown({
 		i(33219, {	-- Goblin Gumbo Kettle (TOY!)
 			["timeline"] = { "added 2.1.3.6898" },
 		}),
-		i(35227, {	-- Goblin Weather Machine - Prototype 01-B
+		i(35227, {	-- Goblin Weather Machine - Prototype 01-B (TOY!)
 			["model"] = 166247,
 			["timeline"] = { "added 2.4.0.8089" },
 		}),

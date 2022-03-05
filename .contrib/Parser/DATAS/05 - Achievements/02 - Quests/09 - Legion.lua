@@ -37,7 +37,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			crit(3),		-- Cursed Tome (Shadowmoon Valley - D)
 		}),
 		ach(10774, {	-- Hatchling of the Talon
-			i(139773),		-- Emerald Winds
+			i(139773),		-- Emerald Winds (TOY!)
 		}),
 		ach(11340, {	-- Insurrection (Suramar)
 			crit(1),		-- Lockdown
@@ -131,7 +131,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			crit(6),		-- The Light Below
 		}),
 		ach(11427, {	-- No Shellfish Endeavor
-			i(143660),		-- Mrgrglhjorn
+			i(143660),		-- Mrgrglhjorn (TOY!)
 			crit(1),		-- Now That's Just Clawful!
 			crit(2),		-- Oh, the Clawdacity!
 			crit(3),		-- Claws for Alarm!

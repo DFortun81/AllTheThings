@@ -22,7 +22,7 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 				i(116062, {	-- Greater Darkmoon Pet Supplies
 					currency(515),	-- Darkmoon Prize Ticket
 					i(116064),	-- Syd the Squid
-					i(89139),	-- Chain Pet Leash
+					i(89139),	-- Chain Pet Leash (TOY!)
 					i(44820),	-- Red Ribbon Pet Leash (TOY!)
 				}),
 			},
@@ -36,7 +36,7 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 				i(91086, {	-- Darkmoon Pet Supplies
 					currency(515),	-- Darkmoon Prize Ticket
 					i(91040),	-- Darkmoon Eye
-					i(89139),	-- Chain Pet Leash
+					i(89139),	-- Chain Pet Leash (TOY!)
 					i(44820),	-- Red Ribbon Pet Leash (TOY!)
 				}),
 			},

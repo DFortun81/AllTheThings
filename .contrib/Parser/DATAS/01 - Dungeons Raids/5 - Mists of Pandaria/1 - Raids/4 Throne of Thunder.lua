@@ -365,7 +365,7 @@ _.Instances = { tier(MOP_TIER, {
 							80633,	-- Lorewalker Han <Raid Finder Storyteller>
 						},
 						["g"] = {
-							i(98132, {	-- Shado-Pan Geyser Gun
+							i(98132, {	-- Shado-Pan Geyser Gun (TOY!)
 								["description"] = "Must obtain 250 stacks of Spray Water from the geysers before Tortos.",
 							}),
 							cr(67977, e(825, {	-- Tortos
@@ -424,7 +424,7 @@ _.Instances = { tier(MOP_TIER, {
 							n(68220, {			-- Gastropod
 								["description"] = "Go up and give this mob a BIG HUG...just kidding; stay out of its melee range.",
 								["g"] = {
-									i(98136)	-- Gastropod Shell
+									i(98136)	-- Gastropod Shell (TOY!)
 								},
 							}),
 							cr(69712, e(828, {	-- Ji-Kun
@@ -826,7 +826,7 @@ _.Instances = { tier(MOP_TIER, {
 							}),
 						},
 					})),
-					i(98132, {	-- Shado-Pan Geyser Gun
+					i(98132, {	-- Shado-Pan Geyser Gun (TOY!)
 						["description"] = "Must obtain 250 stacks of Spray Water from the geysers before Tortos.",
 					}),
 					cr(67977, e(825, {	-- Tortos
@@ -929,7 +929,7 @@ _.Instances = { tier(MOP_TIER, {
 					n(68220, {			-- Gastropod
 						["description"] = "Go up and give this mob a BIG HUG...just kidding; stay out of its melee range.",
 						["g"] = {
-							i(98136)	-- Gastropod Shell
+							i(98136)	-- Gastropod Shell (TOY!)
 						},
 					}),
 					cr(69712, e(828, {	-- Ji-Kun
@@ -1440,7 +1440,7 @@ _.Instances = { tier(MOP_TIER, {
 							}),
 						},
 					})),
-					i(98132, {	-- Shado-Pan Geyser Gun
+					i(98132, {	-- Shado-Pan Geyser Gun (TOY!)
 						["description"] = "Must obtain 250 stacks of Spray Water from the geysers before Tortos.",
 					}),
 					cr(67977, e(825, {	-- Tortos
@@ -1544,7 +1544,7 @@ _.Instances = { tier(MOP_TIER, {
 					n(68220, {			-- Gastropod
 						["description"] = "Go up and give this mob a BIG HUG...just kidding; stay out of its melee range.",
 						["g"] = {
-							i(98136),	-- Gastropod Shell
+							i(98136),	-- Gastropod Shell (TOY!)
 						},
 					}),
 					cr(69712, e(828, {	-- Ji-Kun

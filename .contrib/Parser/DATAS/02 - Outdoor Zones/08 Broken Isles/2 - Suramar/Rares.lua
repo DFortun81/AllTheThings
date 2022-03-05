@@ -176,7 +176,7 @@ _.Zones =
 					["questID"] = 43968,
 					["coord"] = { 66.7, 67.1, SURAMAR },
 					["g"] = {
-						i(140314),	-- Crab Shank
+						i(140314),	-- Crab Shank (TOY!)
 					},
 				}),
 				n(111007, {	-- Randril

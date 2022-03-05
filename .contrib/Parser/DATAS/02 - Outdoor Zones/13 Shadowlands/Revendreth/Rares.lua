@@ -232,7 +232,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					crit(7, {	-- Sire Ladinas
 						["achievementID"] = 14310,	-- Adventurer of Revendreth
 					}),
-					i(180873),	-- Smolderheart
+					i(180873),	-- Smolderheart (TOY!)
 				},
 			}),
 			n(160385, {	-- Soulstalker Doina

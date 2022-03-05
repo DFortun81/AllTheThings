@@ -7,7 +7,7 @@ _.Craftables =
 	tier(SL_TIER, {
 		prof(ENCHANTING, {
 			filter(TOYS, {
-				i(186973),	-- Anima-ted Leash
+				i(186973),	-- Anima-ted Leash (TOY!)
 			}),
 			filter(WANDS, {
 				i(172462),	-- Enchanted Twilight Wand

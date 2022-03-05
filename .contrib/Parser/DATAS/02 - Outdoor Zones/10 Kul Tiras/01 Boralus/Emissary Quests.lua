@@ -83,7 +83,7 @@ _.Zones =
 					["repeatable"] = true,
 					["g"] = {
 						i(166300, {	-- 7th Legion Supplies
-							i(166879),	-- Rallying War Banner
+							i(166879),	-- Rallying War Banner (TOY!)
 							i(166279),	-- Recipe: Contract: 7th Legion [Rank 3]
 						}),
 					},
@@ -97,7 +97,7 @@ _.Zones =
 					["g"] = {
 						i(166295, {	-- Proudmoore Admiralty Supplies
 							i(166714),	-- Albatross Feather
-							i(166702),	-- Proudmoore Music Box
+							i(166702),	-- Proudmoore Music Box (TOY!)
 						}),
 					},
 				}),

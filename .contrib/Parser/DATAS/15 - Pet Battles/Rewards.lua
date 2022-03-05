@@ -21,7 +21,7 @@ root("PetBattles", {
 				i(92678),	-- Flawless Magic Battle-Stone
 				i(92680),	-- Flawless Mechanical Battle-Stone
 				i(92681),	-- Flawless Undead Battle-Stone
-				petbattle(i(89139)),	-- Chain Pet Leash
+				petbattle(i(89139)),	-- Chain Pet Leash (TOY!)
 				i(44820),	-- Red Ribbon Pet Leash (TOY!)
 				petbattle(i(94210)),	-- Mountain Panda
 				petbattle(i(94209)),	-- Snowy Panda
@@ -78,7 +78,7 @@ root("PetBattles", {
 				i(92678),	-- Flawless Magic Battle-Stone
 				i(92680),	-- Flawless Mechanical Battle-Stone
 				i(92681),	-- Flawless Undead Battle-Stone
-				i(89139),	-- Chain Pet Leash
+				i(89139),	-- Chain Pet Leash (TOY!)
 				i(37460),	-- Rope Pet Leash (TOY!)
 			},
 		}),
@@ -92,7 +92,7 @@ root("PetBattles", {
 			i(92678),	-- Flawless Magic Battle-Stone
 			i(92680),	-- Flawless Mechanical Battle-Stone
 			i(92681),	-- Flawless Undead Battle-Stone
-			i(89139),	-- Chain Pet Leash
+			i(89139),	-- Chain Pet Leash (TOY!)
 			i(44820),	-- Red Ribbon Pet Leash (TOY!)
 		}),
 	}),
