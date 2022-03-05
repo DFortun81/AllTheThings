@@ -14,7 +14,23 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 					ach(15035, {	-- On the Offensive
 						ach(15000),		-- United Front
 						ach(15037),		-- This Army
-					}),
+						ach(15041),		-- The Zovaal Shuffle
+						ach(15004),		-- A Sly Fox
+						ach(15044),		-- Krrprripripkraak's Heroes
+						ach(15001),		-- Jailer's Personal Stash
+						ach(15039),		-- Up For Grabs
+						ach(15043),		-- Hoarders: Torghast Edition
+						},
+					},
+					ach(14961),		-- Chains of Domination
+					ach(15035),		-- On the Offensive
+					ach(15054),		-- Minions of the Cold Dark
+					ach(15066),		-- Reliquary Restoration
+					ach(15053),		-- Explore Korthia
+					ach(15059),		-- Death's Advance
+					ach(15069),		-- The Archivists' Codex
+					ach(15099),		-- Treasures of Korthia
+					ach(15107),		-- Conquering Korthia
 				}),
 				ach(15036),	-- Rooting Out The Evil
 				ach(15033),	-- Taking the Tremaculum
