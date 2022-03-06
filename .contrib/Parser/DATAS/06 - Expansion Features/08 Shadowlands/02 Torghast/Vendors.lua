@@ -63,7 +63,6 @@ _.ExpansionFeatures =
 						i(188747),	-- Ashen Mawsworn Halberd	L15 300P	FC/CI
 						i(188745),	-- Ashen Mawsworn Maul L13 300P		FC
 						i(188749),	-- Ashen Mawsworn Staff L13 300P	FC
-						i(188688),	-- Burnished Eye Crescent Drop from L15 FC Kosarus the Fallen(153451)
 						i(188750),	-- Burnished Mawsworn Greatsword	L15 300P	FC
 						i(188690),	-- Corrupted Skull Crescent L14 150g AV		FC
 						i(188737),	-- Ebon Mawsworn Crossbow	L15 300P	FC/CI

@@ -210,6 +210,11 @@ root("ExpansionFeatures", {
 			}),
 			-- 9.2 Additions
 			n(COMMON_BOSS_DROPS, sharedData({["timeline"] = { "added 9.2.0" },},{
+				i(188688, {	-- Burnished Eye Crescent
+					["crs"] = {
+						155945,	-- Gherus the Chained
+					},
+				}),
 				i(188687, {	-- Burnished Skull Crescent
 					["crs"] = {
 						153382,	-- Maw of the Maw
