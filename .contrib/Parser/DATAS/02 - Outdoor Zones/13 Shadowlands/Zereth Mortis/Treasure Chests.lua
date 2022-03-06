@@ -8,12 +8,13 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["description"] = "Only available after unlocking Protoform Synthesis: Mount.",
 				["coord"] = { 61.2, 37.2, ZERETH_MORTIS },
 				["questID"] = 65520,
+				["sourceQuest"] = 65427,	-- A New Architect
 				["g"] = {
 					crit(13, {	-- Architect's Reserve
 						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
 					}),
 					i(187833, {	-- Dapper Pocopoc
-						--["questID"] = ,
+						["questID"] = 65528,
 						["g"] = {
 							crit(5, {	-- Dapper Pocopoc
 								["achievementID"] = 15508,	-- Fashion of the First Ones
