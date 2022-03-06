@@ -913,7 +913,7 @@ namespace ATT
                 }
 
                 // single 'maps' for Achievements Sourced under 'Achievements', should be sourced in that specific map directly instead
-                if (ProcessingAchievementCategory && mapsList.Count == 1 && data.TryGetValue("achID", out achID))
+                if (ProcessingAchievementCategory && !MergeItemData && mapsList.Count == 1 && data.TryGetValue("achID", out achID))
                 {
                     Trace.WriteLine($"Single 'maps' value used within Achievement: {achID}. It can be Sourced directly in the Location.");
                 }
