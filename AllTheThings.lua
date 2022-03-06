@@ -6227,8 +6227,12 @@ app.TryColorizeName = function(group, name)
 	-- raid headers
 	elseif group.isRaid then
 		return Colorize(name, "ffff8000");
+	-- faction rep status
 	elseif group.factionID and group.standing then
 		return app.ColorizeStandingText((group.saved and 8) or (group.standing + (group.isFriend and 2 or 0)), name);
+	-- groups which are ignored for progress
+	elseif group.sourceIgnored then
+		return Colorize(name, "ff7f40bf");
 		-- if people REALLY only want to see colors in account/debug then we can comment this in
 	elseif app.Settings:GetTooltipSetting("UseMoreColors") --and (app.MODE_ACCOUNT or app.MODE_DEBUG)
 	then
@@ -6861,6 +6865,10 @@ local ObjectFunctions = {
 		rawset(t, "modItemID", t.itemID);
 		return rawget(t, "modItemID");
 	end,
+	-- default 'text' should be the colorized 'name'
+	["text"] = function(t)
+		return app.TryColorizeName(t, t.name);
+	end,
 };
 -- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)
 app.BaseObjectFields = not app.__perf and function(fields, type)
@@ -7035,6 +7043,7 @@ end)();
 
 -- Achievement Lib
 (function()
+local GetAchievementCategory, GetAchievementNumCriteria, GetCategoryInfo, GetStatistic = GetAchievementCategory, GetAchievementNumCriteria, GetCategoryInfo, GetStatistic;
 local cache = app.CreateCache("achievementID");
 local function CacheInfo(t, field)
 	local _t, id = cache.GetCached(t);
@@ -7120,7 +7129,7 @@ local categoryFields = {
 	["key"] = function(t)
 		return "achievementCategoryID";
 	end,
-	["text"] = function(t)
+	["name"] = function(t)
 		return GetCategoryInfo(t.achievementCategoryID);
 	end,
 	["icon"] = function(t)
@@ -7154,9 +7163,6 @@ local criteriaFields = {
 			rawset(t, "achievementID", achievementID);
 			return achievementID;
 		end
-	end,
-	["text"] = function(t)
-		return app.TryColorizeName(t, t.name);
 	end,
 	["name"] = function(t)
 		if t.link then return t.link; end
@@ -7488,7 +7494,7 @@ harvesterFields.text = function(t)
 				end
 				if #criteria > 0 then info.criteria = criteria; end
 			end
-			
+
 			HarvestedAchievementDatabase[achievementID] = info;
 			AllTheThingsHarvestItems = HarvestedAchievementDatabase;
 			setmetatable(t, app.BaseAchievement);
@@ -7891,9 +7897,6 @@ local fields = {
 	end,
 	["name"] = function(t)
 		return AllTheThingsAD.LocalizedCategoryNames[t.categoryID] or ("Unknown Category #" .. t.categoryID);
-	end,
-	["text"] = function(t)
-		return app.TryColorizeName(t, t.name);
 	end,
 	["icon"] = function(t)
 		return AllTheThings.CategoryIcons[t.categoryID] or "Interface/ICONS/INV_Garrison_Blueprints1";
@@ -8324,9 +8327,6 @@ local fields = {
 	["key"] = function(t)
 		return "encounterID";
 	end,
-	["text"] = function(t)
-		return app.TryColorizeName(t, t.name);
-	end,
 	["name"] = function(t)
 		return cache.GetCachedField(t, "name", CacheInfo);
 	end,
@@ -8515,9 +8515,6 @@ end
 local fields = {
 	["key"] = function(t)
 		return "factionID";
-	end,
-	["text"] = function(t)
-		return app.TryColorizeName(t, t.name);
 	end,
 	["name"] = function(t)
 		return cache.GetCachedField(t, "name", CacheInfo);
@@ -8794,9 +8791,6 @@ local fields = {
 			return info;
 		end
 		return app.EmptyTable;
-	end,
-	["text"] = function(t)
-		return app.TryColorizeName(t, t.name);
 	end,
 	["name"] = function(t)
 		return t.info.name or L["VISIT_FLIGHT_MASTER"];
@@ -9447,9 +9441,6 @@ end
 local fields = {
 	["key"] = function(t)
 		return "instanceID";
-	end,
-	["text"] = function(t)
-		return app.TryColorizeName(t, t.name);
 	end,
 	["icon"] = function(t)
 		return cache.GetCachedField(t, "icon", CacheInfo);
@@ -10544,9 +10535,6 @@ local mapFields = {
 	["key"] = function(t)
 		return "mapID";
 	end,
-	["text"] = function(t)
-		return app.TryColorizeName(t, t.name);
-	end,
 	["name"] = function(t)
 		return t.creatureID and app.NPCNameFromID[t.creatureID] or app.GetMapName(t.mapID);
 	end,
@@ -10942,9 +10930,6 @@ local npcFields = {
 	["key"] = function(t)
 		return "npcID";
 	end,
-	["text"] = function(t)
-		return app.TryColorizeName(t, t.name);
-	end,
 	["name"] = function(t)
 		return app.NPCNameFromID[t.npcID];
 	end,
@@ -11031,9 +11016,6 @@ app.BaseNPCWithAchievementAndQuest = app.BaseObjectFields(fields, "BaseNPCWithAc
 local headerFields = {
 	["key"] = function(t)
 		return "headerID";
-	end,
-	["text"] = function(t)
-		return app.TryColorizeName(t, t.name);
 	end,
 	["name"] = function(t)
 		return L["HEADER_NAMES"][t.headerID];
@@ -11126,9 +11108,6 @@ end)();
 local objectFields = {
 	["key"] = function(t)
 		return "objectID";
-	end,
-	["text"] = function(t)
-		return app.TryColorizeName(t, t.name);
 	end,
 	["name"] = function(t)
 		return app.ObjectNames[t.objectID] or ("Object ID #" .. t.objectID);
@@ -11407,9 +11386,6 @@ local C_QuestLog_ReadyForTurnIn = C_QuestLog.ReadyForTurnIn;
 local questFields = {
 	["key"] = function(t)
 		return "questID";
-	end,
-	["text"] = function(t)
-		return app.TryColorizeName(t, t.name);
 	end,
 	["name"] = function(t)
 		return app.QuestTitleFromID[t.questID];
@@ -12465,9 +12441,6 @@ end
 local fields = {
 	["key"] = function(t)
 		return "tierID";
-	end,
-	["text"] = function(t)
-		return t.name;
 	end,
 	["name"] = function(t)
 		return cache.GetCachedField(t, "name", CacheInfo);
