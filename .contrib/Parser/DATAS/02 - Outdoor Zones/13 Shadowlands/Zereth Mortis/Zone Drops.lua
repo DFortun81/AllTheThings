@@ -85,23 +85,131 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			i(188048),	-- Truthseeker's Staff
 			-- Lattices
 			i(188957),	-- Genesis Mote
-			i(187634),	-- Ambystan Lattice
-			i(187636),	-- Aurelid Lattice
-			i(187633),	-- Bufonid Lattice
-			i(187635),	-- Cervid Lattice
-			i(189146),	-- Geomental Lattice
-			i(189145),	-- Helicid Lattice
-			i(189147),	-- Leporid Lattice
-			i(190388),	-- Lupine Lattice
-			i(189148),	-- Poultrid Lattice
-			i(189149),	-- Proto Avian Lattice
-			i(189150),	-- Raptora Lattice
-			i(189151),	-- Scarabid Lattice
-			i(189152),	-- Tarachnid Lattice
-			i(189153),	-- Unformed Lattice
-			i(189154),	-- Vespoid Lattice
-			i(189155),	-- Viperid Lattice
-			i(189156),	-- Vombata Lattice
+			--i(187634),	-- Ambystan Lattice
+			--i(187636),	-- Aurelid Lattice
+			i(187633, {	-- Bufonid Lattice
+				["crs"] = {
+					178803,	-- Accelerated Bufonid
+					184603,	-- Ancient Bufonid
+					178963,	-- Gorkek <Bufonid Prime>
+					185488,	-- Languid Bufonid
+					182362,	-- Overgrown Bufonid
+					184395,	-- Toadious
+				},
+			}),
+			i(187635, {	-- Cervid Lattice
+				["crs"] = {
+					182269,	-- Carnivorous Cervid
+					180049,	-- Cervid Grazer
+					178098,	-- Cervid Grazer
+					180050,	-- Cervid Protector
+					178099,	-- Cervid Protector
+					181349,	-- Cipherclad
+					181383,	-- Mawtouched Grazer
+					181260,	-- Native Cervid
+					182272,	-- Ravenous Cervid
+				}
+			}),
+			i(189146, {	-- Geomental Lattice
+				["crs"] = {
+					180930,	-- Forgotten Geomental
+					181968,	-- Generated Automental
+					178560,	-- Hulking Geomental
+					183227,	-- Lost Rubble
+					179007,	-- Overgrown Geomental
+					181249,	-- Tethos
+					178558,	-- Unstable Geomental
+				},
+			}),
+			i(189145, {	-- Helicid Lattice
+				["crs"] = {
+					178831,	-- Accelerated Helicid
+					179043,	-- Orixal <Gastropod Prime>
+					185487,	-- Overgrown Helicid
+					185510,	-- Pureshell Helicid
+				},
+			}),
+			i(189147, {	-- Leporid Lattice
+				["crs"] = {
+					185270,	-- Agitated Leponid
+					185267,	-- Clutch Guardian
+				},
+			}),
+			i(190388, {	-- Lupine Lattice
+				["crs"] = {
+					180051,	-- Lupine Animate
+					181484,	-- Mawtouched Animate
+					181360,	-- Vexis <Lupine Prime>
+				},
+			}),
+			--i(189148),	-- Poultrid Lattice
+			i(189149, {	-- Proto Avian Lattice
+				["crs"] = {
+					184623,	-- Ancient Avian
+					182096,	-- Enhanced Avian
+					183674,	-- Enhanced Avian
+					181330,	-- Mawtouched Avian
+				},
+			}),
+			i(189150, {	-- Raptora Lattice
+				["crs"] = {
+					179004,	-- Basal Raptora
+					181352,	-- Bitterbeak
+					183274,	-- Desert Nester
+					183273,	-- Desert Raptora
+					178238,	-- Desert Raptora
+					180924,	-- Garudeon <Raptora Prime>
+					180052,	-- Grasslands Raptora
+					182373,	-- Scavenging Raptora
+					184472,	-- Soaring Raptora
+					183925,	-- Tahkwitz
+				},
+			}),
+			i(189151, {	-- Scarabid Lattice
+				["crs"] = {
+					178563,	-- Hadeon the Stonebreaker <Scarabid Prime>
+					183927,	-- Sand Matriarch Ileus
+					178155,	-- Scarabid Burrower
+					181197,	-- Scarabid Crawler
+				},
+			}),
+			i(189152, {	-- Tarachnid Lattice
+				["crs"] = {
+					178508,	-- Mother Phestis <Tarachnid Prime>
+					181685,	-- Tarachnid
+					181687,	-- Tarachnid Hatchling
+				},
+			}),
+			i(189153, {	-- Unformed Lattice
+				["crs"] = {
+					184660,	-- Adrift Core
+					180917,	-- Destabilized Core
+				},
+			}),
+			i(189154, {	-- Vespoid Lattice
+				["crs"] = {
+					178229,	-- Feasting
+					185486,	-- Furious Vespoid
+					178159,	-- Vespoid Drone
+					178158,	-- Vespoid Worker
+					183258,	-- Vespoid Worker
+					183764,	-- Zatojin <Vespoid Prime>
+				},
+			}),
+			i(189155, {	-- Viperid Lattice
+				["crs"] = {
+					181086,	-- Desert Viperid
+				},
+			}),
+			i(189156, {	-- Vombata Lattice
+				["crs"] = {
+					181963,	-- Generated Dire Vombata
+					178913,	-- Grasslands Vombata
+					181359,	-- Mawtouched Bull
+					183722,	-- Sorranos <Vombata Prime>
+					178935,	-- Vombata Matron
+				},
+			}),
 			-- Pet Protoform
 			i(189157),	-- Glimmer of Animation
 			i(189158),	-- Glimmer of Cunning
@@ -113,7 +221,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			i(189164),	-- Glimmer of Multiplicity
 			i(189165),	-- Glimmer of Predation
 			i(189166),	-- Glimmer of Renewal
-			i(189167),	-- Glimmer of Satisfaction
 			i(189169),	-- Glimmer of Survival
 			i(189170),	-- Glimmer of Vigilance
 			-- Mount Protoform
@@ -129,10 +236,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			i(189173, {	-- Eternal Ragepearl
 				["description"] = "Only from Antecedent Isle.",
 			}),
-			--[[ Not Sure yet
-			i(189178),	-- Tools of Incomprehensible Experimentation
-			i(189175),	-- Mawforged Bridle
-			--]]
 		}),
 	}),
 })));

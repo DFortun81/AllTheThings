@@ -56,12 +56,18 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					},
 				}),
 			}),
+			n(SPECIAL, {
+				i(189167, {	-- Glimmer of Satisfaction
+					["description"] = "Eating a feast inside the raid have chance to spawn this item in your inventory.",
+				}),
+			}),
 			n(TREASURES, {
 				o(375893, {	-- High Value Cache
 					["description"] = "When Taskmaster Xy'pro has 3 stacks of Synergy, which he gets from being nearby other mobs, he gets another buff called Security Override which says he will drop the Security Override Orb.",
 					--["coord"] = { X, Y, MAP },
 					["cost"] = { { "i", 190727, 1 } },	-- 1xSecurity Override Orb
 					["g"] = {
+						i(189175),	-- Mawforged Bridle
 						i(189991),	-- Snail Soul
 					},
 				})

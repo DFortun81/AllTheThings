@@ -202,9 +202,9 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		ach(15078, {	-- Shadowlands Keystone Master: Season Two
 			i(187525),	-- Soultwisted Deathwalker (MOUNT!)
 		}),
-		ach(15327, {	-- Tormented Hero: Shadowlands Season 2
-			title(451),	-- <Name>, the Tormented Hero
-		}),
+		ach(15327, bubbleDownSelf({ ["timeline"] = { "added 9.1.0", "removed 9.2.0" } }, {	-- Tormented Hero: Shadowlands Season 2
+			title(451),	-- <Name>, the Tormented Hero (TITLE!)
+		})),
 		ach(15496, {	-- Shadowlands Keystone Explorer: Season Three
 			["timeline"] = { "added 9.2.0" },
 		}),

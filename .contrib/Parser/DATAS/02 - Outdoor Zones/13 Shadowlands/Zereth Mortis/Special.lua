@@ -41,9 +41,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(189989),	-- Penguin Soul
 				},
 			}),
-			prof(FISHING, {
-				i(189983),	-- Gormit Soul
-			}),
 		})
 	}),
 })));

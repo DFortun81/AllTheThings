@@ -214,7 +214,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(190463),	-- Dismal Mystic's Glaive
 					i(190050),	-- Entropic Broker's Ripper
 					i(190460),	-- High Reaver's Sickle
+					i(190124),	-- Interrogator's Vicious Dirk
 					i(190107),	-- Staff of Broken Coils
+					i(189178),	-- Tools of Incomprehensible Experimentation
 				},
 			}),
 			n(180978, {	-- Hirukon <Aurelid Prime>
@@ -258,6 +260,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					crit(23, {	-- Hirukon <Aurelid Prime>
 						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
 					}),
+					i(187636),	-- Aurelid Lattice
 					i(187676, {	-- Deepstar Polyp (MOUNT!)
 						["description"] = "This mount has 100% drop chance if you do the summon.",
 					}),
@@ -278,9 +281,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(190104),	-- Deadeye's Spirit Piercer
 					i(190463),	-- Dismal Mystic's Glaive
 					i(190050),	-- Entropic Broker's Ripper
+					i(190124),	-- Interrogator's Vicious Dirk
 					i(190103),	-- Pillar of Noxious Dissemination
 					i(190126),	-- Rotculler's Encroaching Shears
 					i(190107),	-- Staff of Broken Coils
+					i(189178),	-- Tools of Incomprehensible Experimentation
 				},
 			}),
 			n(178508, {	-- Mother Phestis <Tarachnid Prime>
@@ -330,6 +335,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					crit(2, {	-- Otiosen
 						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
 					}),
+					i(187634),	-- Ambystan Lattice
 					i(189925),	-- Amphibian's Nimble Leggings
 					i(190046),	-- Broker's Stolen Cane
 					i(189995),	-- Builder's Alignment Hammer
@@ -364,9 +370,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(190104),	-- Deadeye's Spirit Piercer
 					i(190463),	-- Dismal Mystic's Glaive
 					i(190050),	-- Entropic Broker's Ripper
+					i(190124),	-- Interrogator's Vicious Dirk
 					i(190127),	-- Marzan's Dancing Twin-Scythe
 					i(190461),	-- Reanimator's Beguiling Baton
 					i(190107),	-- Staff of Broken Coils
+					i(189178),	-- Tools of Incomprehensible Experimentation
 				},
 			}),
 			n(182120, {	-- Rhuv, Gorger of Ruin

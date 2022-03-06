@@ -57,6 +57,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			i(188106),	-- Unfathomable Pendant
 			-- Trinkets
 			i(190389),	-- Broker's Lucky Coin
+			i(190726),	-- Extract of Prodigious Sands
 		}),
 	}),
 })));

@@ -27,8 +27,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		-- Mounts
 		i(187644),	-- Vicious Warstalker (A)
 		i(187642),	-- Vicious Warstalker (H)
-		-- Dune Rares?
-		i(190124),	-- Interrogator's Vicious Dirk
 		-- Rare
 		i(189996),	-- Elegantly Balanced Axe
 		i(189917),	-- Constellation Master's Smock

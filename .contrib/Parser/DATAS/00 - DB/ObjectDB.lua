@@ -2312,6 +2312,7 @@ _.ObjectNames = {
 	[375986] = "Firim in Exile, Part 6",
 	[375987] = "Firim in Exile, Part 7",
 	[375988] = "Firim in Exile, Epilogue",
+	[376041] = "Shrouded Cypher Cache",
 	[9962198] = "Outcast's Makeshift Muckpool",
 	[9999890] = "Corrupted Loot",
 	[9999891] = "Main Objective Only",

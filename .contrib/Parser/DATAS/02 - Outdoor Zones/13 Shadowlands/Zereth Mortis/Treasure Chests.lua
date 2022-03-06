@@ -576,6 +576,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					{ 60.3, 71.7, ZERETH_MORTIS },
 					{ 40.5, 56.6, ZERETH_MORTIS },
 				},
+				["g"] = {
+					i(189148),	-- Poultrid Lattice
+				},
 			}),
 			o(375373, {	-- Discarded Automa Scrap
 				["coords"] = {
@@ -616,6 +619,29 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["g"] = {
 					i(190766),	-- Spectral Mawrat's Tail (MOUNT!)
 					i(190734),	-- Makaris's Satchel of Mines (TOY!)
+				},
+			}),
+			o(376041, {	-- Shrouded Cypher Cache
+				["description"] = "Needs a piece with the ability to discover hidden caches equipped to see.",
+				["coords"] = {
+					{ 41.9, 34.2, ZERETH_MORTIS },
+					{ 60.9, 69.4, ZERETH_MORTIS },
+					{ 29.4, 49.3, ZERETH_MORTIS },
+					{ 66.5, 25.1, ZERETH_MORTIS },
+					{ 63.7, 41.2, ZERETH_MORTIS },
+					{ 61.3, 15.5, ZERETH_MORTIS },
+					{ 69.5, 34.4, ZERETH_MORTIS },
+					{ 42.8, 52.9, ZERETH_MORTIS },
+					{ 44.5, 71.4, ZERETH_MORTIS },
+					{ 53.0, 92.2, ZERETH_MORTIS },
+					{ 43.9, 84.3, ZERETH_MORTIS },
+					{ 40.3, 62.6, ZERETH_MORTIS },
+					{ 54.3, 49.7, ZERETH_MORTIS },
+					{ 49.0, 30.5, ZERETH_MORTIS },
+					{ 50.8, 4.7, ZERETH_MORTIS },
+				},
+				["g"] = {
+					i(189983),	-- Gormit Soul
 				},
 			}),
 			o(375366, {	-- Tarachnid Eggs
