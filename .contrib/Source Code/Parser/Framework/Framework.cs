@@ -234,7 +234,7 @@ namespace ATT
         };
 
         /// <summary>
-        /// Represents that Item info will be merged into the base set of Item info.
+        /// Represents that data will be merged into the base dictionaries.
         /// This should only be performed on the first processing pass, allowing the second processing pass to sync all Item info in nested group references
         /// </summary>
         private static bool MergeItemData { get; set; } = true;
@@ -348,15 +348,47 @@ namespace ATT
             // Check to make sure the data is valid.
             if (data == null) return false;
 
-            // Merge all relevant Item Data into the data container.
-            if (!MergeItemData)
+            if (MergeItemData)
             {
-                Items.MergeInto(data);
-                Objects.PostProcessMergeInto(data);
-                foreach (string key in Objects.MergeObjectFields.Keys)
-                    Objects.MergeInto(key, data);
+                if (!DataValidation(data, ref modID, ref minLevel))
+                    return false;
+            }
+            else
+            {
+                DataConsolidation(data);
             }
 
+            // If this container has groups, then process those groups as well.
+            if (data.TryGetValue("g", out List<object> groups))
+            {
+                var previousParent = CurrentParentGroup;
+                if (ATT.Export.ObjectData.TryGetMostSignificantObjectType(data, out Export.ObjectData objectData))
+                    CurrentParentGroup = new KeyValuePair<string, object>(objectData.ObjectType, data[objectData.ObjectType]);
+
+                Process(groups, modID, minLevel);
+
+                if (!MergeItemData)
+                {
+                    // Finally post-merge anything which is supposed to merge into this group now that it (and its children) have been fully processed
+                    Objects.PostProcessMergeInto(data);
+                    // Parent field consolidation now that groups have been processed
+                    ConsolidateHeirarchicalFields(data, groups);
+                }
+
+                CurrentParentGroup = previousParent;
+            }
+
+            return true;
+        }
+
+        /// <summary>
+        /// Logic on the first pass of processing all the data:<para/>
+        /// * Merging into global type dictionaries<para/>
+        /// * Validation of raw data<para/>
+        /// </summary>
+        /// <param name="data"></param>
+        private static bool DataValidation(Dictionary<string, object> data, ref long modID, ref long minLevel)
+        {
 #if RETAIL
             // Retail has no reason to include Objective groups since the in-game Quest system does not warrant ATT including all this extra information
             if (data.ContainsKey("objectiveID")) return false;
@@ -389,6 +421,7 @@ namespace ATT
                     modID = 0;
                 }
             }
+
             // Apply the inherited modID for items which do not specify their own modID
             if (modID > 0 && data.ContainsKey("itemID") && !data.ContainsKey("modID"))
             {
@@ -551,8 +584,7 @@ namespace ATT
                         data["u"] = 1;
 #if RETAIL
                         // Merge all relevant Item Data into the data container.
-                        if (MergeItemData)
-                            Items.Merge(data);
+                        Items.Merge(data);
                         Objects.AssignFactionID(data);
                         return false;
 #endif
@@ -589,9 +621,6 @@ namespace ATT
                 }
             }
 
-            // Merge all relevant Item Data into the data container.
-            if (MergeItemData)
-                Items.Merge(data);
             Objects.AssignFactionID(data);
 
             // Cache the Filter ID.
@@ -601,6 +630,7 @@ namespace ATT
                 // Parse it!
                 filter = (Objects.Filters)f;
             }
+
 
             // Mark the achievement as referenced
             if (data.TryGetValue("achID", out long achID))
@@ -744,22 +774,6 @@ namespace ATT
                 }
             }
 
-            // If this container has groups, then process those groups as well.
-            if (data.TryGetValue("g", out List<object> groups))
-            {
-                var previousParent = CurrentParentGroup;
-                if (ATT.Export.ObjectData.TryGetMostSignificantObjectType(data, out Export.ObjectData objectData))
-                    CurrentParentGroup = new KeyValuePair<string, object>(objectData.ObjectType, data[objectData.ObjectType]);
-
-                Process(groups, modID, minLevel);
-
-                // Parent field consolidation now that groups have been processed
-                if (!MergeItemData)
-                    ConsolidateHeirarchicalFields(data, groups);
-
-                CurrentParentGroup = previousParent;
-            }
-
             if (data.TryGetValue("cost", out object costRef) && costRef is List<List<object>> cost)
             {
                 for (int i = cost.Count - 1; i >= 0; --i)
@@ -793,11 +807,66 @@ namespace ATT
                                     data["pvp"] = true;
                                 }
                                 break;
+                            case "g": break;
 
-                            default: break;
+                            default:
+                                Trace.WriteLine($"Unknown 'cost' type: {c[0]}");
+                                break;
                         }
                     }
                 }
+            }
+
+            if (data.TryGetValue("name", out string name))
+            {
+                // Determine the Most-Significant ID Type (itemID, questID, npcID, etc)
+                if (ATT.Export.ObjectData.TryGetMostSignificantObjectType(data, out Export.ObjectData objectData) && data.TryGetValue(objectData.ObjectType, out long id))
+                {
+                    // Store the name of this object (or whatever it is) in our table.
+                    if (!NAMES_BY_TYPE.TryGetValue(objectData.ObjectType, out Dictionary<long, object> names))
+                    {
+                        NAMES_BY_TYPE[objectData.ObjectType] = names = new Dictionary<long, object>();
+                    }
+                    names[id] = name;
+
+                    // Keep the name field for quests, so long as they don't have an item.
+                    // They are generally manually assigned in the database.
+                    if (!data.ContainsKey("questID") || data.ContainsKey("itemID"))
+                    {
+                        data.Remove("name");
+                    }
+                }
+            }
+
+            // maps & coords
+            if (data.TryGetValue("maps", out object maps) && maps is List<object> mapsList)
+            {
+                // 'coord' is converted to 'coords' already
+                if (data.TryGetValue("coords", out object coords) && coords is List<object> coordsList)
+                {
+                    bool redundant = false;
+                    // check if any coord has a mapID which matches a maps mapID
+                    foreach (object coord in coordsList)
+                    {
+                        if (coord is List<object> coordList && coordList.Count > 2)
+                        {
+                            var coordMapID = coordList[2];
+                            if (mapsList.TrySmartContains(coordMapID, out object mapsValue))
+                                redundant = mapsList.Remove(mapsValue);
+                        }
+                    }
+
+                    // remove the key itself if no mapID values remain
+                    if (mapsList.Count == 0)
+                        data.Remove("maps");
+
+                    if (redundant)
+                        Trace.WriteLine($"Redundant 'maps' removed from: {MiniJSON.Json.Serialize(data)}");
+                }
+
+                // single 'maps' for Achievements Sourced under 'Achievements', should be sourced in that specific map directly instead
+                if (ProcessingAchievementCategory && mapsList.Count == 1 && data.TryGetValue("achID", out achID))
+                    Trace.WriteLine($"Single 'maps' value used within Achievement: {achID}. It can be Sourced directly in the Location.");
             }
 
             if (data.TryGetValue("requireSkill", out long requiredSkill))
@@ -841,93 +910,33 @@ namespace ATT
                     Items.TryGetName(data, out string recipeName);
                     Objects.AddRecipe(requiredSkill, recipeName, recipeID);
                 }
-                // otherwise see if we can associate a recipeID
-                else if (!MergeItemData)
-                {
-                    // since early 2020, the API no longer associates recipe Items with their corresponding Spell... because Blizzard hates us
-                    // so try to automatically associate the matching recipeID from the requiredSkill profession list to the matching item...
-                    TryFindRecipeID(data);
-                }
-            }
-            //else
-            //{
-            //    // if this data has a recipeID, cache the information
-            //    if (data.TryGetValue("recipeID", out int recipeID))
-            //    {
-            //        Items.TryGetName(data, out string recipeName);
-            //        //Trace.WriteLine("Encountered RecipeID without 'requireSkill' tag. " + recipeID.ToString() + " [" + recipeName + "]");
-            //        Objects.AddRecipe(null, recipeName, recipeID);
-            //    }
-            //}
-
-            if (data.TryGetValue("name", out string name))
-            {
-                // Determine the Most-Significant ID Type (itemID, questID, npcID, etc)
-                if (ATT.Export.ObjectData.TryGetMostSignificantObjectType(data, out Export.ObjectData objectData) && data.TryGetValue(objectData.ObjectType, out long id))
-                {
-                    // Store the name of this object (or whatever it is) in our table.
-                    if (!NAMES_BY_TYPE.TryGetValue(objectData.ObjectType, out Dictionary<long, object> names))
-                    {
-                        names = new Dictionary<long, object>();
-                        NAMES_BY_TYPE[objectData.ObjectType] = names;
-                    }
-                    names[id] = name;
-
-                    // Keep the name field for quests, so long as they don't have an item.
-                    // They are generally manually assigned in the database.
-                    if (!data.ContainsKey("questID") || data.ContainsKey("itemID"))
-                    {
-                        data.Remove("name");
-                    }
-                }
             }
 
-            // notify about redundant tags on groups
-
-            // maps & coords
-            if (data.TryGetValue("maps", out object maps) && maps is List<object> mapsList)
-            {
-                // 'coord' is converted to 'coords' already
-                if (data.TryGetValue("coords", out object coords) && coords is List<object> coordsList)
-                {
-                    bool redundant = false;
-                    // check if any coord has a mapID which matches a maps mapID
-                    foreach (object coord in coordsList)
-                    {
-                        if (coord is List<object> coordList && coordList.Count > 2)
-                        {
-                            var coordMapID = coordList[2];
-                            if (mapsList.TrySmartContains(coordMapID, out object mapsValue))
-                            {
-                                mapsList.Remove(mapsValue);
-                                redundant = true;
-                            }
-                        }
-                    }
-                    // remove the key itself if no mapID values remain
-                    if (mapsList.Count == 0)
-                        data.Remove("maps");
-
-                    if (redundant)
-                        Trace.WriteLine($"Redundant 'maps' removed from: {MiniJSON.Json.Serialize(data)}");
-                }
-
-                // single 'maps' for Achievements Sourced under 'Achievements', should be sourced in that specific map directly instead
-                if (ProcessingAchievementCategory && !MergeItemData && mapsList.Count == 1 && data.TryGetValue("achID", out achID))
-                {
-                    Trace.WriteLine($"Single 'maps' value used within Achievement: {achID}. It can be Sourced directly in the Location.");
-                }
-            }
-
-            // clean up any metadata tags
-            List<string> keys = data.Keys.ToList();
-            for (int i = 0; i < data.Count; i++)
-            {
-                if (keys[i].StartsWith("_"))
-                    data.Remove(keys[i]);
-            }
+            // Merge all relevant Item Data into the global dictionaries after being validated
+            Items.Merge(data);
+            Objects.Merge(data);
 
             return true;
+        }
+
+        /// <summary>
+        /// Logic on the second pass of processing all the data.<para/>
+        /// * Consolidation of dictionary information into sourced data
+        /// </summary>
+        /// <param name="data"></param>
+        private static void DataConsolidation(Dictionary<string, object> data)
+        {
+            // Merge all relevant dictionary info into the data
+            Items.MergeInto(data);
+            Objects.MergeInto(data);
+
+            // since early 2020, the API no longer associates recipe Items with their corresponding Spell... because Blizzard hates us
+            // so try to automatically associate the matching recipeID from the requiredSkill profession list to the matching item...
+            TryFindRecipeID(data);
+
+            // clean up any metadata tags
+            foreach (string key in data.Keys.Where(k => k.StartsWith("_")).ToArray())
+                data.Remove(key);
         }
 
         private static void ConsolidateHeirarchicalFields(Dictionary<string, object> parentGroup, List<object> groups)
@@ -1212,6 +1221,18 @@ namespace ATT
                         {
                             ["sourceIgnored"] = true
                         };
+                        // verify that random other stuff contained within Achievements is not duplicated.... (like Raid Encounters...)
+                        if (cloned.TryGetValue("g", out List<object> achGroups))
+                        {
+                            List<object> cleanedGroups = new List<object>();
+                            foreach (object achGroup in achGroups)
+                            {
+                                // something inside the achievement that contains its own things... don't duplicate that
+                                if (achGroup is Dictionary<string, object> groupInfo && !groupInfo.ContainsKey("g"))
+                                    cleanedGroups.Add(achGroup);
+                            }
+                            cloned["g"] = cleanedGroups;
+                        }
                         DuplicateGroupListIntoObjects(groupIDs, cloned, type);
                         break;
                     case "objectiveID":
@@ -1303,13 +1324,12 @@ namespace ATT
             }
 
             // Merge the Item Data into the Containers.
-            //Trace.WriteLine("Container Processing #1...");
+            Trace.WriteLine("Data Validation...");
             foreach (var container in Objects.AllContainers)
             {
                 ProcessingAchievementCategory = container.Key == "Achievements";
                 Process(container.Value, 0, 1);
             }
-            //Trace.WriteLine("Container Processing #1 Done.");
 
             // Remove the removed from game flag from the Tome of Polymorph: Turtle
             var tomeOfPolymorph = Items.GetNull(22739);
@@ -1320,7 +1340,7 @@ namespace ATT
             }
 
             // Merge the Item Data into the Containers again, this time syncing Item data into nested Item groups
-            //Trace.WriteLine("Container Processing #2...");
+            Trace.WriteLine("Data Consolidation...");
             MergeItemData = false;
             AdditionalProcessing();
             foreach (var container in Objects.AllContainers)
@@ -1328,13 +1348,13 @@ namespace ATT
                 ProcessingAchievementCategory = container.Key == "Achievements";
                 Process(container.Value, 0, 1);
             }
-            //Trace.WriteLine("Container Processing #2 Done.");
 
             // Sort World Drops by Name
             var worldDrops = Objects.GetNull("WorldDrops");
             if (worldDrops != null) SortByName(worldDrops);
 
             // Build the Unsorted Container.
+            Trace.WriteLine("Building Unsorted...");
             List<object> listing;
             long requireSkill;
             var unsorted = new List<object>();
@@ -1713,6 +1733,8 @@ namespace ATT
                     });
                 }
             }
+
+            Trace.WriteLine("Unsorted Built");
         }
 
         /// <summary>

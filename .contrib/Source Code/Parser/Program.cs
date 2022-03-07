@@ -134,7 +134,6 @@ namespace ATT
                     ParseLUAFile(lua, fileName);
 
                 }
-                Trace.WriteLine("Done parsing LUA files.");
                 Framework.Objects.ProcessingSourceData = false;
 
                 do
@@ -165,6 +164,7 @@ namespace ATT
                 Trace.WriteLine(" Items loaded in the database.");
 
                 // Export all of the data for the Framework.
+                Trace.WriteLine("Exporting Addon DB...");
                 Framework.Export();
 
                 // Notify of duplicate Quest listings

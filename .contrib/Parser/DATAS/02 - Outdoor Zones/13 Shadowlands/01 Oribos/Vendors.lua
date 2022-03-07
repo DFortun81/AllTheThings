@@ -1382,6 +1382,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 								["cost"] = { { "c", 1792, 525 } },
 							}),
 						})),
+						i(185834, {	-- Orboreal Distinguishment
+							["cost"] = { { "c", 1792, 2000 } },
+							["g"] = {
+								i(137642),	-- Mark of Honor
+							},
+						}),
 					},
 				}),
 				n(168011, {	-- Zo'sorg <Master of Conflict>
@@ -1439,12 +1445,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 							i(182465),	-- Truth's Wake
 							i(182681),	-- Vengeful Shock
 						})),
-						i(185834, {	-- Orboreal Distinguishment
-							["cost"] = { { "c", 1792, 2000 } },
-							["g"] = {
-								i(137642),	-- Mark of Honor
-							},
-						}),
 						n(SEASON_COSMIC, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 							n(WEAPONS, {
 								i(186863, {	-- Cosmic Gladiator's Ballista

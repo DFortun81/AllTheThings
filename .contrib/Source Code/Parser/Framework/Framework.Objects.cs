@@ -427,6 +427,16 @@ namespace ATT
             }
 
             /// <summary>
+            /// Merges dictionary data based on all keys from the common storage into the Source object
+            /// </summary>
+            /// <param name="entry"></param>
+            internal static void Merge(Dictionary<string, object> data)
+            {
+                foreach (string key in MergeObjectFields.Keys)
+                    Merge(key, data);
+            }
+
+            /// <summary>
             /// Merges data for a given object based on the key from the Source object into a common storage for that keyed-object
             /// </summary>
             /// <param name="v"></param>
@@ -465,7 +475,17 @@ namespace ATT
             }
 
             /// <summary>
-            /// Merges data for a given object based on the key from the common storage for that keyed-object into the Source object
+            /// Merges dictionary data based on all keys from the common storage into the Source object
+            /// </summary>
+            /// <param name="entry"></param>
+            internal static void MergeInto(Dictionary<string, object> data)
+            {
+                foreach (string key in MergeObjectFields.Keys)
+                    MergeInto(key, data);
+            }
+
+            /// <summary>
+            /// Merges dictionary data based on a specific key from the common storage into the Source object
             /// </summary>
             /// <param name="v"></param>
             /// <param name="data"></param>
@@ -2109,6 +2129,14 @@ namespace ATT
                 // Find the Object Dictionary that matches the data.
                 Dictionary<string, object> entry = null;
 
+                // Merge in any global data if this is not the initial merge pass
+                // This way, pets/mounts/etc. have proper data existing when needing to merge into another group
+                if (!MergeItemData)
+                {
+                    Items.MergeInto(data2);
+                    MergeInto(data2);
+                }
+
                 // Determine the Most-Significant ID Type (itemID, questID, npcID, etc)
                 if (!ATT.Export.ObjectData.TryGetMostSignificantObjectType(data2, out Export.ObjectData objectData))
                 {
@@ -2339,11 +2367,12 @@ namespace ATT
                             }
                         }
 
-                        // capture Raw Quest listing which appear multiple times, ignore Quests tied to Items, or removed Quests (because it's chaos)
-                        long longId = Convert.ToInt64(id);
-                        if (mostSignificantID == "questID" && ProcessingSourceData && AllQuests.ContainsKey(longId))
+                        if (ProcessingSourceData && mostSignificantID == "questID")
                         {
-                            DuplicateSourceQuests.Add(longId);
+                            // capture Raw Quest listing which appear multiple times, ignore Quests tied to Items, or removed Quests (because it's chaos)
+                            long longId = Convert.ToInt64(id);
+                            if (AllQuests.ContainsKey(longId))
+                                DuplicateSourceQuests.Add(longId);
                         }
                     }
                 }
@@ -2360,8 +2389,7 @@ namespace ATT
                 PreMerge(entry, data2);
                 Merge(entry, data2);
                 // Merge any common merge objects
-                foreach (string key in MergeObjectFields.Keys)
-                    Merge(key, entry);
+                Objects.MergeInto(entry);
 
                 // Add quest entry to AllQuest collection
                 if (entry.TryGetValue("questID", out long questID))

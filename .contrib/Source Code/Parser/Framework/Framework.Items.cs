@@ -728,6 +728,7 @@ namespace ATT
                 }
             }
             #endregion
+
             #region Merge Into (for merging item data back into an object)
             /// <summary>
             /// Merge the fields from the item reference if it is whitelisted.
@@ -876,7 +877,7 @@ namespace ATT
             }
 
             /// <summary>
-            /// Merge information about the item into the data dictionary.
+            /// Merge information from the Item dictionary into the data
             /// Only a couple of fields will successfully merge into the data.
             /// </summary>
             /// <param name="itemID">The item ID to merge with.</param>
