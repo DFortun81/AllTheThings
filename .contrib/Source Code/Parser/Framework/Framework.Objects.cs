@@ -547,7 +547,7 @@ namespace ATT
                             // merge the objects into the data object
                             foreach (Dictionary<string, object> mergeObject in mergeObjects)
                                 // copy the actual object when merging under another Source, since it may merge into multiple Sources
-                                Merge(data, "g", new Dictionary<string, object>(mergeObject));
+                                Merge(data, "g", mergeObject);
                         }
                     }
                 }
@@ -1486,8 +1486,7 @@ namespace ATT
                             else
                             {
                                 // Create a new groups list.
-                                groups = new List<object>();
-                                item["g"] = groups;
+                                item["g"] = groups = new List<object>();
                             }
 
                             // Attempt to merge the sub groups together.
@@ -2148,6 +2147,10 @@ namespace ATT
                 {
                     // Cache the ID of the data we're merging into the container.
                     string mostSignificantID = objectData.ObjectType;
+                    // special case for now... toys don't merge correctly via the mostSignificantID because it's a boolean
+                    if (objectData.ConstructorShortcut == "toy")
+                        mostSignificantID = "itemID";
+
                     if (data2.TryGetValue(mostSignificantID, out object mostSignificantValue) && mostSignificantValue.GetType().IsNumeric())
                     {
                         var id = mostSignificantValue;
@@ -2388,8 +2391,6 @@ namespace ATT
                 // Merge the entry with the data.
                 PreMerge(entry, data2);
                 Merge(entry, data2);
-                // Merge any common merge objects
-                Objects.MergeInto(entry);
 
                 // Add quest entry to AllQuest collection
                 if (entry.TryGetValue("questID", out long questID))

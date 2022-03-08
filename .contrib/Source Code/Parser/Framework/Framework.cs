@@ -367,15 +367,17 @@ namespace ATT
 
                 Process(groups, modID, minLevel);
 
-                if (!MergeItemData)
-                {
-                    // Finally post-merge anything which is supposed to merge into this group now that it (and its children) have been fully processed
-                    Objects.PostProcessMergeInto(data);
+                CurrentParentGroup = previousParent;
+            }
+
+            if (!MergeItemData)
+            {
+                // Finally post-merge anything which is supposed to merge into this group now that it (and its children) have been fully processed
+                Objects.PostProcessMergeInto(data);
+                // In case anything was merged and this data did not previously have sub-group container, try to pull it out again
+                if (data.TryGetValue("g", out groups))
                     // Parent field consolidation now that groups have been processed
                     ConsolidateHeirarchicalFields(data, groups);
-                }
-
-                CurrentParentGroup = previousParent;
             }
 
             return true;
@@ -941,6 +943,8 @@ namespace ATT
 
         private static void ConsolidateHeirarchicalFields(Dictionary<string, object> parentGroup, List<object> groups)
         {
+            if ((groups?.Count ?? 0) == 0) return;
+
             HashSet<object> fieldValues = new HashSet<object>();
             foreach (string field in HeirarchicalConsolidationFields)
             {

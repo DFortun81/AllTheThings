@@ -250,7 +250,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
 					}),
 					i(190058, {	-- Peaceful Pocopoc
-						--["questID"] = ,
+						["questID"] = 65525,
 						["g"] = {
 							crit(1, {	-- Peaceful Pocopoc
 								["achievementID"] = 15508,	-- Fashion of the First Ones

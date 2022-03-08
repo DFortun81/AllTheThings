@@ -89,6 +89,7 @@ namespace ATT
             /// <returns>Whether or not the most signficant object type was found.</returns>
             public static bool TryGetMostSignificantObjectType(Dictionary<string, object> data, out ObjectData objectData)
             {
+                // TODO: pass out the ID found as well to save time
                 ObjectData defaultValue = null;
                 foreach (var objectType in ALL_OBJECTS)
                 {
