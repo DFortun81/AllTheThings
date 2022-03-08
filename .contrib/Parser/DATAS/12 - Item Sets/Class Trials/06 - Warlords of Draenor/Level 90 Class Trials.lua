@@ -11,10 +11,9 @@ root("GearSets", n(CLASS_TRIAL, {
 			["lvl"] = 90,
 			["groups"] = {
 				cl(DEATHKNIGHT, {
-					i(117019),	-- Heart-Lesion Greatsword
-					i(117049),	-- Heart-Lesion Runeblade
 					n(-9949, {	-- Frost / Unholy
-						i(117028),	-- Heart-Lesion Blade
+						i(117028),	-- Heart-Lesion Blade		- Frost
+						i(117019),	-- Heart-Lesion Greatsword	- Unholy
 						i(117023),	-- Heart-Lesion Helm
 						i(117030),	-- Heart-Lesion Pendant
 						i(117029),	-- Heart-Lesion Cloak of Battle
@@ -30,7 +29,8 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(117034),	-- Heart-Lesion Idol of Battle
 						i(117033),	-- Heart-Lesion Stone of Battle
 					}),
-					n(-9948, {	-- Blood DK
+					n(-9948, {	-- Blood
+						i(117049),	-- Heart-Lesion Runeblade
 						i(117039),	-- Heart-Lesion Faceguard
 						i(117041),	-- Heart-Lesion Amulet
 						i(117036),	-- Heart-Lesion of Stoicism
@@ -48,9 +48,8 @@ root("GearSets", n(CLASS_TRIAL, {
 					}),
 				}),
 				cl(DRUID, {
-					i(117062),	-- Springrain Stave
-					i(117094),	-- Springrain Staff
 					n(-9926, {	-- Balance
+						i(117062),	-- Springrain Stave
 						i(117059),	-- Springrain Headpiece
 						i(117080),	-- Springrain Necklace
 						i(117085),	-- Springrain Cloak of Destruction
@@ -84,6 +83,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(117055),	-- Springrain Stone of Rage
 					}),
 					n(-9927, {	-- Restoration
+						i(117094),	-- Springrain Staff
 						i(117089),	-- Springrain Hood
 						i(117065),	-- Springrain Medallion
 						i(117079),	-- Springrain Cloak of Wisdom
@@ -98,10 +98,6 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(117083),	-- Springrain Ring of Wisom
 						i(117081),	-- Springrain Idol of Wisdom
 						i(117084),	-- Springrain Stone of Wisom
-					}),
-					n(-9924, {	-- Guardian
-						i(117539),	-- Springrain Band of Durability
-						i(117538),	-- Springrain Ring of Durability
 					}),
 				}),
 				cl(HUNTER, {
@@ -140,17 +136,16 @@ root("GearSets", n(CLASS_TRIAL, {
 					i(117115),	-- Mountainsage Stone of Destruction
 				}),
 				cl(MONK, {
-					i(117152),	-- Mistdancer Staff
-					i(117155),	-- Mistdancer Sword
 					n(-9931, {	-- Brewmaster
 						i(117131),	-- Mistdancer Spire
 						i(117127),	-- Mistdancer Amulet
 						i(117128),	-- Mistdancer Band of Stoicism
 						i(117129),	-- Mistdancer Ring of Stoicism
-						i(117312),	-- Mistdancer Defender Idol
-						i(117310),	-- Mistdancer Defender Stone
+						i(117132),	-- Mistdancer Defender Idol
+						i(117130),	-- Mistdancer Defender Stone
 					}),
 					n(-9933, {	-- Mistweaver
+						i(117152),	-- Mistdancer Staff
 						i(117143),	-- Mistdancer Hood
 						i(117147),	-- Mistdancer Necklace
 						i(117144),	-- Mistdancer Cloak of Wisdom
@@ -167,6 +162,8 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(117150),	-- Mistdancer Stone of Wisdom
 					}),
 					n(-9932, {	-- Windwalker
+						i(117155),	-- Mistdancer Sword
+						i(117136),	-- Mistdancer Helm
 						i(117157),	-- Mistdancer Choker
 						i(117161),	-- Mistdancer Cloak of Rage
 						i(117138),	-- Mistdancer Pauldrons [Hidden Shoulders]
@@ -183,10 +180,9 @@ root("GearSets", n(CLASS_TRIAL, {
 					}),
 				}),
 				cl(PALADIN, {
-					i(117186),	-- Sunsoul Shield
-					i(117188),	-- Sunsoul Bulwark
 					n(-9942, {	-- Holy
 						i(117185),	-- Sunsoul Scepter
+						i(117186),	-- Sunsoul Shield
 						i(117175),	-- Sunsoul Headpiece
 						i(117177),	-- Sunsoul Necklace
 						i(117172),	-- Sunsoul Cloak of Wisdom
@@ -204,6 +200,7 @@ root("GearSets", n(CLASS_TRIAL, {
 					}),
 					n(-9943, {	-- Protection
 						i(117187),	-- Sunsoul Sword
+						i(117188),	-- Sunsoul Bulwark
 						i(117200),	-- Sunsoul Faceguard
 						i(117202),	-- Sunsoul Amulet
 						i(117197),	-- Sunsoul Cloak of Stoicism
@@ -238,8 +235,9 @@ root("GearSets", n(CLASS_TRIAL, {
 					}),
 				}),
 				cl(PRIEST, {
-					n(-9915, {	-- Disc / Holy
-						i(117230),	-- Communal Staff
+					n(-9915, {	-- Discipline / Holy
+						i(117230),	-- Communal Staff	- Discipline
+						i(117215),	-- Communal Wand	- Holy
 						i(117219),	-- Communal Hood
 						i(117221),	-- Communal Necklace
 						i(117216),	-- Communal Cloak of Wisdom
@@ -257,7 +255,6 @@ root("GearSets", n(CLASS_TRIAL, {
 					}),
 					n(-9917, {	-- Shadow
 						i(117240),	-- Communal Stave
-						i(117215),	-- Communal Wand
 						i(117234),	-- Communal Cowl
 						i(117210),	-- Communal Medallion
 						i(117231),	-- Communal Cloak of Destruction
@@ -295,8 +292,8 @@ root("GearSets", n(CLASS_TRIAL, {
 				}),
 				cl(SHAMAN, {
 					n(-9939, {	-- Elemental
-						i(117275),	-- Streamtalker Aegis
 						i(117269),	-- Streamtalker Claws
+						i(117275),	-- Streamtalker Aegis
 						i(117273),	-- Streamtalker Coif
 						i(117264),	-- Streamtalker Medallion
 						i(117276),	-- Streamtalker Pauldrons
@@ -330,8 +327,8 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(117263),	-- Streamtalker Stone of Rage
 					}),
 					n(-9941, {	-- Restoration
-						i(117301),	-- Streamtalker Shield
 						i(117295),	-- Streamtalker Slicers
+						i(117301),	-- Streamtalker Shield
 						i(117299),	-- Streamtalker Cowl
 						i(117289),	-- Streamtalker Necklace
 						i(117302),	-- Streamtalker Spaulders
@@ -411,236 +408,15 @@ root("GearSets", n(CLASS_TRIAL, {
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(WOD_TIER, {
 		n(CLASS_TRIAL, {
-			cl(DEATHKNIGHT, {
-				-- added 6.0.2/Confirmed
-				i(119485),	-- Heart-Lesion Chestguard
-				i(119487),	-- Heart-Lesion Greaves
-				i(119488),	-- Heart-Lesion Handguards
-				i(119489),	-- Heart-Lesion Faceguard
-				i(119490),	-- Heart-Lesion Legguards
-				i(119496),	-- Heart-Lesion Shoulderguards
-				i(119497),	-- Heart-Lesion Waistband
-				i(119498),	-- Heart-Lesion Armguards
-				-- added 6.0.2/No Info
-				i(119483),	-- Heart-Lesion Stone of Battle
-				i(119484),	-- Heart-Lesion Idol of Battle
-				i(119492),	-- Heart-Lesion Defender Idol
-				i(119495),	-- Heart-Lesion Defender Stone
-				i(119479),	-- Heart-Lesion Cloak of Battle
-				i(119486),	-- Heart-Lesion Cloak of Stoicism
-				i(119480),	-- Heart-Lesion Pendant
-				i(119491),	-- Heart-Lesion Amulet
-				i(119481),	-- Heart-Lesion Ring of Might
-				i(119482),	-- Heart-Lesion Band of Might
-				i(119493),	-- Heart-Lesion Ring of Stoicism
-				i(119494),	-- Heart-Lesion Band of Stoicism
-			}),
 			cl(DRUID, {
 				-- added 6.0.1/No Info
 				i(117537),	-- Springrain Idol of Durability
 				i(117540),	-- Springrain Stone of Durability
 				i(117535),	-- Springrain Cloak of Durability
+				i(117539),	-- Springrain Band of Durability
+				i(117538),	-- Springrain Ring of Durability
 				-- added 6.0.1/Confirmed
 				i(117536),	-- Springrain Choker
-				-- added 6.0.2/No Info
-				i(119520),	-- Springrain Vest
-				i(119521),	-- Springrain Footpads
-				i(119522),	-- Springrain Handguards
-				i(119523),	-- Springrain Helm
-				i(119524),	-- Springrain Legguards
-				i(119526),	-- Springrain Pauldrons
-				i(119527),	-- Springrain Cord
-				i(119528),	-- Springrain Cuffs
-				i(119536),	-- Springrain Jerkin
-				i(119537),	-- Springrain Boots
-				i(119538),	-- Springrain Gloves
-				i(119539),	-- Springrain Hood
-				i(119540),	-- Springrain Britches
-				i(119541),	-- Springrain Shoulders
-				i(119542),	-- Springrain Waistband
-				i(119543),	-- Springrain Bindings
-				i(119502),	-- Springrain Idol of Rage
-				i(119505),	-- Springrain Stone of Rage
-				i(119516),	-- Springrain Idol of Destruction
-				i(119519),	-- Springrain Stone of Destruction
-				i(119531),	-- Springrain Idol of Wisdom
-				i(119534),	-- Springrain Stone of Wisdom
-				i(119805),	-- Springrain Idol of Durability
-				i(119808),	-- Springrain Stone of Durability
-				i(119500),	-- Springrain Cloak of Rage
-				i(119529),	-- Springrain Cloak of Wisdom
-				i(119535),	-- Springrain Cloak of Destruction
-				i(119803),	-- Springrain Cloak of Durability
-				i(119501),	-- Springrain Choker
-				i(119515),	-- Springrain Medallion
-				i(119530),	-- Springrain Necklace
-				i(119804),	-- Springrain Choker
-				i(119503),	-- Springrain Ring of Onslaught
-				i(119504),	-- Springrain Band of Onslaught
-				i(119517),	-- Springrain Band of Destruction
-				i(119518),	-- Springrain Ring of Destruction
-				i(119532),	-- Springrain Band of Wisdom
-				i(119533),	-- Springrain Ring of Wisdom
-				i(119806),	-- Springrain Ring of Durability
-				i(119807),	-- Springrain Band of Durability
-			}),
-			cl(HUNTER, {
-				-- added 6.0.2/No Info
-				i(119547),	-- Trailseeker Idol of Rage
-				i(119550),	-- Trailseeker Stone of Rage
-				i(119546),	-- Trailseeker Choker
-				i(119548),	-- Trailseeker Band of Onslaught
-				i(119549),	-- Trailseeker Ring of Onslaught
-			}),
-			cl(MAGE, {
-				-- added 6.0.2/No Info
-				i(119562),	-- Mountainsage Idol of Destruction
-				i(119565),	-- Mountainsage Stone of Destruction
-				i(119575),	-- Mountainsage Cloak of Destruction
-				i(119561),	-- Mountainsage Medallion
-				i(119563),	-- Mountainsage Band of Destruction
-				i(119564),	-- Mountainsage Ring of Destruction
-			}),
-			cl(MONK, {
-				-- added 6.0.1/No Info
-				i(117130),	-- Mistdancer Defender Stone
-				i(117132),	-- Mistdancer Defender Idol
-				i(117136),	-- Mistdancer Helm <- Might be removed
-				-- added 6.0.2/No Info
-				i(119591),	-- Mistdancer Boots
-				i(119592),	-- Mistdancer Gloves
-				i(119593),	-- Mistdancer Hood
-				i(119596),	-- Mistdancer Britches
-				i(119601),	-- Mistdancer Shoulders
-				i(119603),	-- Mistdancer Waistband
-				i(119604),	-- Mistdancer Bindings
-				i(119612),	-- Mistdancer Jerkin
-				i(119580),	-- Mistdancer Defender Stone
-				i(119582),	-- Mistdancer Defender Idol
-				i(119595),	-- Mistdancer Idol of Wisdom
-				i(119600),	-- Mistdancer Stone of Wisdom
-				i(119606),	-- Mistdancer Idol of Rage
-				i(119610),	-- Mistdancer Stone of Rage
-				i(119594),	-- Mistdancer Cloak of Wisdom
-				i(119611),	-- Mistdancer Cloak of Rage
-				i(119577),	-- Mistdancer Amulet
-				i(119597),	-- Mistdancer Necklace
-				i(119607),	-- Mistdancer Choker
-				i(119578),	-- Mistdancer Band of Stoicism
-				i(119579),	-- Mistdancer Ring of Stoicism
-				i(119598),	-- Mistdancer Ring of Wisdom
-				i(119599),	-- Mistdancer Band of Wisdom
-				i(119608),	-- Mistdancer Band of Onslaught
-				i(119609),	-- Mistdancer Ring of Onslaught
-			}),
-			cl(PALADIN, {
-				-- added 6.0.2/No Info
-				i(119628),	-- Sunsoul Idol of Wisdom
-				i(119631),	-- Sunsoul Stone of Wisdom
-				i(119644),	-- Sunsoul Stone of Battle
-				i(119645),	-- Sunsoul Idol of Battle
-				i(119653),	-- Sunsoul Defender Idol
-				i(119656),	-- Sunsoul Defender Stone
-				i(119621),	-- Sunsoul Breastplate
-				i(119623),	-- Sunsoul Boots
-				i(119624),	-- Sunsoul Gloves
-				i(119625),	-- Sunsoul Headpiece
-				i(119626),	-- Sunsoul Leggings
-				i(119632),	-- Sunsoul Spaulders
-				i(119633),	-- Sunsoul Belt
-				i(119634),	-- Sunsoul Armplates
-				i(119646),	-- Sunsoul Chestguard
-				i(119648),	-- Sunsoul Greaves
-				i(119649),	-- Sunsoul Handguards
-				i(119650),	-- Sunsoul Faceguard
-				i(119651),	-- Sunsoul Legguards
-				i(119657),	-- Sunsoul Shoulderguards
-				i(119658),	-- Sunsoul Waistband
-				i(119659),	-- Sunsoul Armguards
-				i(119622),	-- Sunsoul Cloak of Wisdom
-				i(119640),	-- Sunsoul Cloak of Battle
-				i(119647),	-- Sunsoul Cloak of Stoicism
-				i(119627),	-- Sunsoul Necklace
-				i(119641),	-- Sunsoul Pendant
-				i(119652),	-- Sunsoul Amulet
-				i(119629),	-- Sunsoul Ring of Wisdom
-				i(119630),	-- Sunsoul Band of Wisdom
-				i(119642),	-- Sunsoul Ring of Might
-				i(119643),	-- Sunsoul Band of Might
-				i(119654),	-- Sunsoul Ring of Stoicism
-				i(119655),	-- Sunsoul Band of Stoicism
-			}),
-			cl(PRIEST, {
-				-- added 6.0.2/No Info
-				i(119667),	-- Communal Sandals
-				i(119668),	-- Communal Handwraps
-				i(119669),	-- Communal Hood
-				i(119670),	-- Communal Leggings
-				i(119675),	-- Communal Vestments
-				i(119677),	-- Communal Shoulderpads
-				i(119678),	-- Communal Cord
-				i(119679),	-- Communal Wristwraps
-				i(119661),	-- Communal Idol of Destruction
-				i(119664),	-- Communal Stone of Destruction
-				i(119672),	-- Communal Idol of Wisdom
-				i(119676),	-- Communal Stone of Wisdom
-				i(119666),	-- Communal Cloak of Wisdom
-				i(119681),	-- Communal Cloak of Destruction
-				i(119660),	-- Communal Medallion
-				i(119671),	-- Communal Necklace
-				i(119662),	-- Communal Band of Destruction
-				i(119663),	-- Communal Ring of Destruction
-				i(119673),	-- Communal Band of Wisdom
-				i(119674),	-- Communal Ring of Wisdom
-			}),
-			cl(ROGUE, {
-				-- added 6.0.2/No Info
-				i(119693),	-- Lightdrinker Idol of Rage
-				i(119696),	-- Lightdrinker Stone of Rage
-				i(119691),	-- Lightdrinker Cloak of Rage
-				i(119692),	-- Lightdrinker Choker
-				i(119694),	-- Lightdrinker Band of Onslaught
-				i(119695),	-- Lightdrinker Ring of Onslaught
-			}),
-			cl(SHAMAN, {
-				-- added 6.0.2/No Info
-				i(119547),	-- Trailseeker Idol of Rage
-				i(119550),	-- Trailseeker Stone of Rage
-				i(119546),	-- Trailseeker Choker
-				i(119548),	-- Trailseeker Band of Onslaught
-				i(119549),	-- Trailseeker Ring of Onslaught
-			}),
-			cl(WARLOCK, {
-				-- added 6.0.2/No Info
-				i(119756),	-- Felsoul Idol of Destruction
-				i(119759),	-- Felsoul Stone of Destruction
-				i(119769),	-- Felsoul Cloak of Destruction
-				i(119755),	-- Felsoul Medallion
-				i(119757),	-- Felsoul Band of Destruction
-				i(119758),	-- Felsoul Ring of Destruction
-			}),
-			cl(WARRIOR, {
-				-- added 6.0.2/No Info
-				i(119787),	-- Oathsworn Stone of Battle
-				i(119788),	-- Oathsworn Idol of Battle
-				i(119796),	-- Oathsworn Defender Idol
-				i(119799),	-- Oathsworn Defender Stone
-				i(119789),	-- Oathsworn Chestguard
-				i(119791),	-- Oathsworn Greaves
-				i(119792),	-- Oathsworn Handguards
-				i(119793),	-- Oathsworn Faceguard
-				i(119794),	-- Oathsworn Legguards
-				i(119800),	-- Oathsworn Shoulderguards
-				i(119801),	-- Oathsworn Waistband
-				i(119802),	-- Oathsworn Armguards
-				i(119783),	-- Oathsworn Cloak of Battle
-				i(119790),	-- Oathsworn Cloak of Stoicism
-				i(119784),	-- Oathsworn Pendant
-				i(119795),	-- Oathsworn Amulet
-				i(119785),	-- Oathsworn Band of Might
-				i(119786),	-- Oathsworn Ring of Might
-				i(119797),	-- Oathsworn Band of Stoicism
-				i(119798),	-- Oathsworn Ring of Stoicism
 			}),
 		}),
 	}),

@@ -11,7 +11,7 @@ root("GearSets", n(CLASS_TRIAL, {
 			["sym"] = {
 				{"select", "headerID", CLASS_TRIAL },
 				{"pop"},
-				{"where", "headerID", LEGION_TIER },
+				{"where", "tierID", LEGION_TIER },
 				{"pop"},
 				{"where", "headerID", LEVEL_HUNDRED },
 				{"pop"},

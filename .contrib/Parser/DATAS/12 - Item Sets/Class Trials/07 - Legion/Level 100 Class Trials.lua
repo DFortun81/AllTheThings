@@ -47,7 +47,9 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(129563),	-- Springrain Stone of Rage
 					}),
 					n(-9926, {	-- Balance
+						i(129570),	-- Springrain Stave
 						i(129567),	-- Springrain Headpiece
+						i(129573),	-- Springrain Medallion
 						i(129569),	-- Springrain Spaulders
 						i(129564),	-- Springrain Tunic
 						i(129572),	-- Springrain Bracers
@@ -55,9 +57,15 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(129571),	-- Springrain Belt
 						i(129568),	-- Springrain Leggings
 						i(129565),	-- Springrain Treads
+						i(129575),	-- Springrain Band of Destruction
+						i(129576),	-- Springrain Ring of Destruction
+						i(129574),	-- Springrain Idol of Destruction
+						i(129577),	-- Springrain Stone of Destruction
 					}),
 					n(-9925, {	-- Feral
+						i(129583),	-- Springrain Spear
 						i(129581),	-- Springrain Helm
+						i(129559),	-- Springrain Choker
 						i(129584),	-- Springrain Pauldrons
 						i(129578),	-- Springrain Vest
 						i(129586),	-- Springrain Cuffs
@@ -65,6 +73,10 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(129585),	-- Springrain Cord
 						i(129582),	-- Springrain Legguards
 						i(129579),	-- Springrain Footpads
+						i(129562),	-- Springrain Band of Onslaught
+						i(129561),	-- Springrain Ring of Onslaught
+						i(129560),	-- Springrain Idol of Rage
+						i(129563),	-- Springrain Stone of Rage
 					}),
 				}),
 				cl(HUNTER, {
@@ -72,6 +84,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(129717),	-- Trailseeker Shotgun
 						i(142021),	-- Trailseeker Spear
 					}),
+					i(129717),	-- Trailseeker Shotgun
 					i(129712),	-- Trailseeker Helm
 					i(129704),	-- Trailseeker Choker
 					i(129703),	-- Trailseeker Cloak of Rage
@@ -108,7 +121,12 @@ root("GearSets", n(CLASS_TRIAL, {
 					i(142023, {	-- Adventurer's Footlocker
 						i(129478),	-- Mistdancer Spire
 						i(129499),	-- Mistdancer Staff
-						i(129502),	-- Mistdancer Sword
+						i(129494),	-- Mistdancer Necklace
+						i(129491),	-- Mistdancer Cloak of Wisdom
+						i(129496),	-- Mistdancer Band of Wisdom
+						i(129495),	-- Mistdancer Ring of Wisdom
+						i(129492),	-- Mistdancer Idol of Wisdom
+						i(129497),	-- Mistdancer Stone of Wisdom
 					}),
 					n(-9931, {	-- Brewmaster
 						i(129478),	-- Mistdancer Spire
@@ -122,8 +140,8 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(129499),	-- Mistdancer Staff
 						i(129490),	-- Mistdancer Hood
 						i(129494),	-- Mistdancer Necklace
-						i(129491),	-- Mistdancer Cloak of Wisdom
 						i(129498),	-- Mistdancer Shoulders
+						i(129491),	-- Mistdancer Cloak of Wisdom
 						i(129509),	-- Mistdancer Jerkin
 						i(129501),	-- Mistdancer Bindings
 						i(129489),	-- Mistdancer Gloves
@@ -139,8 +157,8 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(129502),	-- Mistdancer Sword
 						i(129483),	-- Mistdancer Helm
 						i(129504),	-- Mistdancer Choker
-						i(129508),	-- Mistdancer Cloak of Rage
 						i(129485),	-- Mistdancer Pauldrons [Hidden Shoulders]
+						i(129508),	-- Mistdancer Cloak of Rage
 						i(129480),	-- Mistdancer Vest
 						i(129487),	-- Mistdancer Cuffs
 						i(129482),	-- Mistdancer Handguards
@@ -154,53 +172,71 @@ root("GearSets", n(CLASS_TRIAL, {
 					}),
 				}),
 				cl(PALADIN, {
-					i(129681),	-- Sunsoul Bulwark
-					i(129678),	-- Sunsoul Scepter
-					i(129679),	-- Sunsoul Shield
-					i(129680),	-- Sunsoul Sword
-					i(129682),	-- Sunsoul Warmaul
-					i(129693);	-- Sunsoul Faceguard
-					i(129668);	-- Sunsoul Headpiece
-					i(129659),	-- Sunsoul Helm
-					i(129695);	-- Sunsoul Amulet
-					i(129670);	-- Sunsoul Necklace
-					i(129684);	-- Sunsoul Pendant
-					i(129683),	-- Sunsoul Cloak of Battle
-					i(129690);	-- Sunsoul Cloak of Stoicism
-					i(129665),	-- Sunsoul Cloak of Wisdom
-					i(129661),	-- Sunsoul Pauldrons
-					i(129700);	-- Sunsoul Shoulderguards
-					i(129675);	-- Sunsoul Spaulders
-					i(129656),	-- Sunsoul Battleplate
-					i(129664);	-- Sunsoul Breastplate
-					i(129689);	-- Sunsoul Chestguard
-					i(129702);	-- Sunsoul Armguards
-					i(129677);	-- Sunsoul Armplates
-					i(129663),	-- Sunsoul Vambraces
-					i(129658),	-- Sunsoul Gauntlets
-					i(129667);	-- Sunsoul Gloves
-					i(129692);	-- Sunsoul Handguards
-					i(129676);	-- Sunsoul Belt
-					i(129662),	-- Sunsoul Girdle
-					i(129701);	-- Sunsoul Waistband
-					i(129669);	-- Sunsoul Leggings
-					i(129694);	-- Sunsoul Legguards
-					i(129660);	-- Sunsoul Legplates
-					i(129666);	-- Sunsoul Boots
-					i(129691);	-- Sunsoul Greaves
-					i(129657),	-- Sunsoul Sabatons
-					i(129686);	-- Sunsoul Band of Might
-					i(129698);	-- Sunsoul Band of Stoicism
-					i(129673);	-- Sunsoul Band of Wisdom
-					i(129685);	-- Sunsoul Ring of Might
-					i(129697);	-- Sunsoul Ring of Stoicism
-					i(129672);	-- Sunsoul Ring of Wisdom
-					i(129696);	-- Sunsoul Defender Idol
-					i(129699);	-- Sunsoul Defender Stone
-					i(129688);	-- Sunsoul Idol of Battle
-					i(129671);	-- Sunsoul Idol of Wisdom
-					i(129687);	-- Sunsoul Stone of Battle
-					i(129674);	-- Sunsoul Stone of Wisdom
+					i(142023, {	-- Adventurer's Footlocker
+						i(129678),	-- Sunsoul Scepter
+						i(129680),	-- Sunsoul Sword
+						i(129681),	-- Sunsoul Bulwark
+						i(129679),	-- Sunsoul Shield
+						i(129670);	-- Sunsoul Necklace
+						i(129665),	-- Sunsoul Cloak of Wisdom
+						i(129673);	-- Sunsoul Band of Wisdom
+						i(129672);	-- Sunsoul Ring of Wisdom
+						i(129671);	-- Sunsoul Idol of Wisdom
+						i(129674);	-- Sunsoul Stone of Wisdom
+					}),
+					n(-9942, {	-- Holy
+						i(129678),	-- Sunsoul Scepter
+						i(129679),	-- Sunsoul Shield
+						i(129668);	-- Sunsoul Headpiece
+						i(129670);	-- Sunsoul Necklace
+						i(129665),	-- Sunsoul Cloak of Wisdom
+						i(129675);	-- Sunsoul Spaulders
+						i(129664);	-- Sunsoul Breastplate
+						i(129677);	-- Sunsoul Armplates
+						i(129667);	-- Sunsoul Gloves
+						i(129676);	-- Sunsoul Belt
+						i(129669);	-- Sunsoul Leggings
+						i(129666);	-- Sunsoul Boots
+						i(129673);	-- Sunsoul Band of Wisdom
+						i(129672);	-- Sunsoul Ring of Wisdom
+						i(129671);	-- Sunsoul Idol of Wisdom
+						i(129674);	-- Sunsoul Stone of Wisdom
+					}),
+					n(-9943, {	-- Protection
+						i(129680),	-- Sunsoul Sword
+						i(129681),	-- Sunsoul Bulwark
+						i(129693);	-- Sunsoul Faceguard
+						i(129695);	-- Sunsoul Amulet
+						i(129690);	-- Sunsoul Cloak of Stoicism
+						i(129700);	-- Sunsoul Shoulderguards
+						i(129689);	-- Sunsoul Chestguard
+						i(129702);	-- Sunsoul Armguards
+						i(129692);	-- Sunsoul Handguards
+						i(129701);	-- Sunsoul Waistband
+						i(129694);	-- Sunsoul Legguards
+						i(129691);	-- Sunsoul Greaves
+						i(129698);	-- Sunsoul Band of Stoicism
+						i(129697);	-- Sunsoul Ring of Stoicism
+						i(129696);	-- Sunsoul Defender Idol
+						i(129699);	-- Sunsoul Defender Stone
+					}),
+					n(-9944, {	-- Retributon
+						i(129682),	-- Sunsoul Warmaul
+						i(129659),	-- Sunsoul Helm
+						i(129684);	-- Sunsoul Pendant
+						i(129683),	-- Sunsoul Cloak of Battle
+						i(129661),	-- Sunsoul Pauldrons
+						i(129656),	-- Sunsoul Battleplate
+						i(129663),	-- Sunsoul Vambraces
+						i(129658),	-- Sunsoul Gauntlets
+						i(129662),	-- Sunsoul Girdle
+						i(129660);	-- Sunsoul Legplates
+						i(129657),	-- Sunsoul Sabatons
+						i(129686);	-- Sunsoul Band of Might
+						i(129685);	-- Sunsoul Ring of Might
+						i(129688);	-- Sunsoul Idol of Battle
+						i(129687);	-- Sunsoul Stone of Battle
+					}),
 				}),
 				cl(PRIEST, {
 					n(-9915, {	-- Disc / Holy
@@ -244,6 +280,7 @@ root("GearSets", n(CLASS_TRIAL, {
 					}),
 					i(129471),	-- Lightdrinker Dagger
 					i(129472),	-- Lightdrinker Shiv
+					i(129473),	-- Lightdrinker Sword
 					i(129466),	-- Lightdrinker Hood
 					i(129458),	-- Lightdrinker Choker
 					i(129457),	-- Lightdrinker Cloak of Rage
@@ -260,6 +297,15 @@ root("GearSets", n(CLASS_TRIAL, {
 					i(129462),	-- Lightdrinker Stone of Rage
 				}),
 				cl(SHAMAN, {
+					i(142023, {	-- Adventurer's Footlocker
+						i(129630),	-- Streamtalker Talons
+						i(129610),	-- Streamtalker Choker
+						i(129609),	-- Streamtalker Cloak of Rage
+						i(129612),	-- Streamtalker Band of Onslaught
+						i(129611),	-- Streamtalker Idol of Rage
+						i(129613),	-- Streamtalker Ring of Onslaught
+						i(129614),	-- Streamtalker Stone of Rage
+					}),
 					n(-9939, {	-- Elemental
 						i(129626),	-- Streamtalker Aegis
 						i(129620),	-- Streamtalker Claws
@@ -288,7 +334,6 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(129638),	-- Streamtalker Armguard
 						i(129633),	-- Streamtalker Handguards
 						i(129637),	-- Streamtalker Waistguard
-						i(101232),	-- Streamtalker Aegis
 						i(129635),	-- Streamtalker Legguards
 						i(129632),	-- Streamtalker Greaves
 						i(129612),	-- Streamtalker Band of Onslaught
@@ -340,6 +385,8 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(129526),	-- Oathsworn Greataxe
 					}),
 					n(-9945, {	-- Arms / Fury
+						i(129536),	-- Oathsworn Axe
+						i(129535),	-- Oathsworn Headchopper
 						i(129530),	-- Oathsworn Helm
 						i(129539),	-- Oathsworn Pendant
 						i(129538),	-- Oathsworn Cloak of Battle
@@ -356,6 +403,8 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(129542),	-- Oathsworn Stone of Battle
 					}),
 					n(-9947, {	-- Protection
+						i(129536),	-- Oathsworn Axe
+						i(129537),	-- Oathsworn Bulwark
 						i(129548),	-- Oathsworn Faceguard
 						i(129550),	-- Oathsworn Amulet
 						i(129545),	-- Oathsworn Cloak of Stoicism
