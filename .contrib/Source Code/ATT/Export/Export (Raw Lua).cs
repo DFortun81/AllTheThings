@@ -83,14 +83,14 @@ namespace ATT
             data2.Remove("name");
 
             // Write the shortcut with the highest priority
-            bool useShortcut = ObjectData.TryGetMostSignificantObjectType(data2, out ObjectData objectType);
+            bool useShortcut = ObjectData.TryGetMostSignificantObjectType(data2, out ObjectData objectType, out object objKeyValue);
             if (useShortcut)
             {
                 // Write the shortcut for the object type.
                 objectType.WriteShortcut(builder, objectType.ConstructorShortcut, objectType.Function);
                 if (objectType.ShouldWriteObjectType)
                 {
-                    ExportRawLua(builder, data2[objectType.ObjectType]);
+                    ExportRawLua(builder, objKeyValue);
                     data2.Remove(objectType.ObjectType);
                     builder.Append(", ");
                 }

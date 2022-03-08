@@ -2137,7 +2137,7 @@ namespace ATT
                 }
 
                 // Determine the Most-Significant ID Type (itemID, questID, npcID, etc)
-                if (!ATT.Export.ObjectData.TryGetMostSignificantObjectType(data2, out Export.ObjectData objectData))
+                if (!ATT.Export.ObjectData.TryGetMostSignificantObjectType(data2, out Export.ObjectData objectData, out object objKeyValue))
                 {
                     // If there is no most significant ID field, then complain.
                     Trace.WriteLine("No Most Significant ID for:");
@@ -2151,9 +2151,9 @@ namespace ATT
                     if (objectData.ConstructorShortcut == "toy")
                         mostSignificantID = "itemID";
 
-                    if (data2.TryGetValue(mostSignificantID, out object mostSignificantValue) && mostSignificantValue.GetType().IsNumeric())
+                    if (objKeyValue.GetType().IsNumeric())
                     {
-                        var id = mostSignificantValue;
+                        var id = objKeyValue;
 
                         // Iterate through the list and search for an entry that matches the data
                         if (mostSignificantID == "itemID")

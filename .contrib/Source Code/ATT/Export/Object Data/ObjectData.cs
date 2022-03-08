@@ -87,15 +87,15 @@ namespace ATT
             /// <param name="data">The data.</param>
             /// <param name="objectData">The object data container.</param>
             /// <returns>Whether or not the most signficant object type was found.</returns>
-            public static bool TryGetMostSignificantObjectType(Dictionary<string, object> data, out ObjectData objectData)
+            public static bool TryGetMostSignificantObjectType(Dictionary<string, object> data, out ObjectData objectData, out object objKeyValue)
             {
-                // TODO: pass out the ID found as well to save time
                 ObjectData defaultValue = null;
+                objKeyValue = null;
                 foreach (var objectType in ALL_OBJECTS)
                 {
-                    if (data.TryGetValue(objectType.ObjectType, out object objRef))
+                    if (data.TryGetValue(objectType.ObjectType, out objKeyValue))
                     {
-                        if (objRef.GetType().IsNumeric() && Convert.ToInt64(objRef) == 0) defaultValue = objectType;
+                        if (objKeyValue.GetType().IsNumeric() && Convert.ToInt64(objKeyValue) == 0) defaultValue = objectType;
                         else
                         {
                             objectData = objectType;
@@ -105,6 +105,8 @@ namespace ATT
                 }
                 objectData = defaultValue;
                 if (objectData == null) return false;
+                // grab the associated key value before returning
+                objKeyValue = data[objectData.ObjectType];
                 return true;
             }
             #endregion
