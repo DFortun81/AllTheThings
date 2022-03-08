@@ -109,6 +109,7 @@ _.ExpansionFeatures =
 							i(92847),	-- Hozen-Speed Shoulders
 							i(92846),	-- Hozen-Speed Waistband
 							i(93085),	-- Hozen-Stitched Bindings*			— 10/25/19
+							i(92826),	-- Jinyu-Forged Legplates			-- 2022-03-08
 							i(92854),	-- Jinyu-Polished Bindings
 							i(92855),	-- Jinyu-Polished Boots
 							i(92856),	-- Jinyu-Polished Britches
@@ -430,7 +431,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 						i(92823),	-- Jinyu-Forged Gauntlets
 						i(92824),	-- Jinyu-Forged Girdle
 						i(92825),	-- Jinyu-Forged Helm
-						i(92826),	-- Jinyu-Forged Legplates
 						i(92827),	-- Jinyu-Forged Pauldrons
 						i(92828),	-- Jinyu-Forged Sabatons
 						i(92829),	-- Jinyu-Forged Vambraces
