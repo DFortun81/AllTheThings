@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 
@@ -15,7 +16,7 @@ namespace ATT
         /// that can be replaced with a shortened identifier instead.
         /// </summary>
         private static IDictionary<string, int> STRUCTURE_COUNTS = new Dictionary<string, int>();
-        
+
         /// <summary>
         /// Mark the structure as commonly used.
         /// </summary>
@@ -58,13 +59,15 @@ namespace ATT
                     return b.Value - a.Value;
                 });
 
+                Trace.WriteLine($"Performing up to {maximum} structure replacements from {order.Count} total structures.");
+
                 // At most, export the maximum number of replacements.
                 int count = 0;
                 foreach (var pair in order)
                 {
-                    if (pair.Value < minimumReplacements || count > maximum) break;
+                    if (pair.Value < minimumReplacements || count >= maximum) break;
 
-                    var key = $"a{++count}";
+                    var key = $"a[{++count}]";
                     content = content.Replace(pair.Key, key);
                     keyValues.Add(new KeyValuePair<string, string>(key, pair.Key));
                 }
@@ -92,9 +95,9 @@ namespace ATT
         /// <param name="builder">The builder.</param>
         /// <param name="maximum">The maximum number of replacements to create. (there's a limit of 256 local variables in a context)</param>
         /// <param name="minimumReplacements">The minimum number of uses for a structure to be marked for replacement.</param>
-        private static void SimplifyStructureForLua(StringBuilder builder, int maximum=50, int minimumReplacements=4)
+        private static void SimplifyStructureForLua(StringBuilder builder, int maximum = 250, int minimumReplacements = 2)
         {
-            SimplifyStructure(builder, ExportLocalVariablesForLua, maximum, minimumReplacements);
+            SimplifyStructure(builder, ExportTableReferenceForLua, maximum, minimumReplacements);
         }
     }
 }

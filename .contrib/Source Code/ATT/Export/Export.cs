@@ -91,7 +91,7 @@ namespace ATT
                 .AppendLine("--   WARNING: This file is dynamically generated   --")
                 //.Append("--   UPDATED: ").Append($"{utcNow.ToLongDateString()} @ {utcNow.ToShortTimeString()}".PadRight(36, ' ')).AppendLine(" --")
                 .AppendLine("-----------------------------------------------------")
-                .AppendLine("local _ = select(2, ...); local rawset = rawset;")
+                .AppendLine("local _ = select(2, ...); local rawset, tinsert = rawset, tinsert;")
                 .AppendLine("local g = function(t,g) rawset(t,'g',g); return t; end"));
         }
 
@@ -137,6 +137,25 @@ namespace ATT
                 builder2.Append(pair.Value);
             }
             builder2.Append(';').AppendLine();
+            builder.Insert(0, builder2);
+        }
+
+        /// <summary>
+        /// Export export a single local table for table referencing without a limit
+        /// </summary>
+        /// <param name="builder">The builder.</param>
+        /// <param name="keyValues">The key values.</param>
+        private static void ExportTableReferenceForLua(StringBuilder builder, IEnumerable<KeyValuePair<string, string>> keyValues)
+        {
+            int count = 0;
+            // alternate compression
+            var builder2 = new StringBuilder("local a={");
+            foreach (var table in keyValues)
+            {
+                if (count++ > 0) builder2.Append(',');
+                builder2.Append(table.Value);
+            }
+            builder2.Append("};").AppendLine();
             builder.Insert(0, builder2);
         }
 
