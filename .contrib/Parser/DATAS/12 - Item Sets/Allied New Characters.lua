@@ -180,60 +180,6 @@ _.GearSets =
 					i(157643),	-- Helm-Hewer Greataxe
 				},
 			}),
-			un(REMOVED_FROM_GAME, i(52940, {	-- Candy's Cloak
-				["races"] = { GOBLIN }	-- Used to be given to as start cloak to male goblins until Legion Prepatch
-			})),
-			un(REMOVED_FROM_GAME, i(6125, {	-- Brawler's Harness (Former starter shirt for Orc, Troll, Tauren, Undead Warriors)
-				["description"] = "Former starter shirt for Orc, Troll, Tauren & Undead Warriors",
-			})),
-			un(REMOVED_FROM_GAME, i(49, {	-- Footpad's Shirt (Former starter shirt Human, NE, Dwarf, Gnome Rogues)
-				["description"] = "Former starter shirt for Human, NE, Dwarf & Gnome Rogues",
-			})),
-			i(49567, {	-- Gilnean Adventurer's Shirt (New Worgen hunters, rogues, and warriors start out with this shirt.)
-				["description"] = "New Worgen hunters, rogues, and warriors start out with this shirt.",
-			}),
-			un(REMOVED_FROM_GAME, i(24143, {	-- Initiate's Shirt (Starter Shirt Blood Elf Paladins)
-				["description"] = "Former Starter Shirt for Blood Elf Paladins",
-			})),
-			un(REMOVED_FROM_GAME, i(20897, {	-- Lookout's Tunic (Starter Shirt Blood Elf Rogues)
-				["description"] = "Former Starter Shirt for Blood Elf Rogues.",
-			})),
-			un(REMOVED_FROM_GAME, i(154, {		-- Primitive Mantle (Former starter shirt Orc, Tauren Shaman)
-				["description"] = "Former starter shirt for Orc & Tauren Shamans",
-			})),
-			un(REMOVED_FROM_GAME, i(6134, {		-- Primitive Mantle (Former starter shirt for Troll Shaman)
-				["description"] = "Former starter shirt for Troll Shamans",
-			})),
-			un(REMOVED_FROM_GAME, i(23473, {	-- Recruit's Shirt	(Starter Shirt Draenei Warriors)
-				["description"] = "Former Starter Shirt for Draenei Warriors",
-			})),
-			un(REMOVED_FROM_GAME, i(6120, {		-- Recruit's Shirt (Former starter shirt for NE Warriors)
-				["description"] = "Former starter shirt for NE Warriors",
-			})),
-			un(REMOVED_FROM_GAME, i(148, {		-- Rugged Trapper's Shirt (Former starter shirt Dwarf, NE Hunters)
-				["description"] = "Former starter shirt for Dwarf & NE Hunters",
-			})),
-			un(REMOVED_FROM_GAME, i(23345, {	-- Scout's Shirt (Starter Shirt Draenei Hunters and Shamans)
-				["description"] = "Former Starter Shirt for Draenei Hunters and Shamans",
-			})),
-			un(REMOVED_FROM_GAME, i(6117, {		-- Squire's Shirt (Former starter shirt for Dwarf Paladins)
-				["description"] = "Former starter shirt for Dwarf Paladins",
-			})),
-			un(REMOVED_FROM_GAME, i(23476, {	-- Squire's Shirt	(Starter Shirt Draenei Paladins)
-				["description"] = "Former Starter Shirt for Draenei Paladins",
-			})),
-			un(REMOVED_FROM_GAME, i(2105, {		-- Thug Shirt (Former starter shirt for Undead/Orc Rogues)
-				["description"] = "Former starter shirt for Undead & Orc Rogues",
-			})),
-			un(REMOVED_FROM_GAME, i(127, {		-- Trapper's Shirt (Former starter shirt Orc, Tauren, Troll Hunters)
-				["description"] = "Former starter shirt for Orc, Tauren & Troll Hunters",
-			})),
-			un(REMOVED_FROM_GAME, i(6136, {		-- Trapper's Shirt (Former starter shirt for Troll Rogues)
-				["description"] = "Former starter shirt for Troll Rogues",
-			})),
-			un(REMOVED_FROM_GAME, i(20901, {	-- Warder's Shirt (Starter Shirt Blood Elf Hunters)
-				["description"] = "Former Starter Shirt for Blood Elf Hunters",
-			})),
 		},
 	}),
 };
