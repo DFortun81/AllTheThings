@@ -2383,6 +2383,7 @@ root("HiddenQuestTriggers", {
 		q(59132),	-- probably "Unwavering Resolve" achievement (upgrade cloak to rank 15)
 		q(59030),	-- Vulpera learning Flames of Fury (175158) for Bag of Tricks
 		q(59033),	-- Vulpera learning Sinister Shadows (175159) for Bag of Tricks
+		q(59036),	-- Vulpera learning Holy Relic (175160) for Bag of Tricks
 
 		-- Horrific Visions
 		-- Orgrimmar
@@ -3206,6 +3207,10 @@ root("HiddenQuestTriggers", {
 		q(33092),	-- FLAG - Proving Grounds - Tank Bronze
 		q(33094),	-- FLAG - Proving Grounds - Tank Gold
 		q(33093),	-- FLAG - Proving Grounds - Tank Silver
+		
+		--	Short-Supply Reward - UNKNOWN TRIGGERS
+		qNYI(33602),	-- Short-Supply Reward
+		qNYI(33603),	-- Short-Supply Reward
 	}),
 
 	-------------------

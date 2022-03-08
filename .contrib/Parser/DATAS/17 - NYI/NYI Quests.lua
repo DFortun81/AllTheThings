@@ -584,6 +584,12 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(32826),	-- Re-Use Me
 				q(32827),	-- Re-Use Me
 			})),
+			
+			-- 5.4.2
+			tier(MOP_TIER, 4.2, bubbleDown({ ["timeline"] = {"created 5.4.2"} }, {
+				q(33634),	-- Maldo's Test Quest
+
+			})),
 		}),
 	}),
 	tier(WOD_TIER, {
@@ -1373,14 +1379,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(33459),
 				q(33460),
 				q(33528),
-				q(34245),
-				q(34246),
-				q(34247),
-				q(36719),
-				q(36795),
-				q(36868),
-				q(36869),
-				q(36910),
 				q(37801),
 				q(37806),
 				q(37807),
@@ -1391,6 +1389,101 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(37920),
 				q(37925),
 				q(37926),
+				
+				-- Quests from wow.tools - unknown name, unknown patch, only ID
+				-- 34000 - 34999
+				q(34005),
+				q(34008),
+				q(34009),
+				q(34010),
+				q(34011),
+				q(34014),
+				q(34015),
+				q(34016),
+				q(34018),
+				q(34022),
+				q(34023),
+				q(34065),
+				q(34071),
+				q(34086),
+				q(34100),
+				q(34126),
+				q(34137),
+				q(34156),
+				q(34159),
+				q(34161),
+				q(34203),
+				q(34237),
+				q(34245),
+				q(34246),
+				q(34247),
+				q(34270),
+				q(34300),
+				q(34301),
+				q(34302),
+				q(34303),
+				q(34305),
+				q(34306),
+				q(34320),
+				q(34334),
+				q(34350),
+				q(34363),
+				q(34367),
+				q(34368),
+				q(34369),
+				q(34370),
+				q(34371),
+				q(34372),
+				q(34373),
+				q(34374),
+				q(34428),
+				q(34430),
+				q(34433),
+				q(34443),
+				q(34444),
+				q(34601),
+				q(34610),
+				q(34638),
+				q(34686),
+				q(34687),
+				q(34689),
+				q(34744),
+				q(34816),
+				q(34863),
+				q(34880),
+				q(34926),
+				q(34928),
+				
+				-- 35000 - 35999
+				q(35039),
+				q(35094),
+				q(35130),
+				q(35134),
+				q(35138),
+				q(35173),
+				q(35230),
+				q(35246),
+				q(35278),
+				q(35299),
+				q(35328),
+				q(35698),
+				q(35700),
+				
+				-- 36000 - 36999
+				q(36156),
+				q(36173),
+				q(36187),
+				q(36232),
+				q(36487),
+				q(36497),
+				q(36639),
+				q(36719),
+				q(36795),
+				q(36810),
+				q(36868),
+				q(36869),
+				q(36910),
+				q(36949),
 			}),
 		}),
 	}),
@@ -1412,11 +1505,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(60028, { ["name"] = "Shadowlands 60 E", }),	-- Shadowlands 60 E
 				q(60029, { ["name"] = "Shadowlands 60 E", }),	-- Shadowlands 60 E
 				q(60030, { ["name"] = "Shadowlands 60 E", ["_drop"] = { "g" }, }),	-- Shadowlands 60 E
-				q(60036, { ["name"] = "Shadowlands (60) E", ["_drop"] = { "g" }, }),	-- Shadowlands (60) E
-				q(60040, { ["name"] = "Shadowlands (60) E", ["_drop"] = { "g" }, }),	-- Shadowlands (60) E
 				q(62346, { ["name"] = "Shadowlands (51-59) E", }),	-- Shadowlands (51-59) E
 				q(62349, { ["name"] = "Shadowlands (51-59) E", }),	-- Shadowlands (51-59) E
 				q(62350, { ["name"] = "Shadowlands (51-59) E", }),	-- Shadowlands (51-59) E
+				q(60036, { ["name"] = "Shadowlands (60) E", ["_drop"] = { "g" }, }),	-- Shadowlands (60) E
+				q(60040, { ["name"] = "Shadowlands (60) E", ["_drop"] = { "g" }, }),	-- Shadowlands (60) E
 				q(60474, { ["name"] = "Spawn Tracking Unit-Specified World Effect in a WMO Bug", }),	-- Spawn Tracking Unit-Specified World Effect in a WMO Bug
 				q(62402, { ["name"] = "Timewalking Campaigns", }),	-- Timewalking Campaigns
 			})),
