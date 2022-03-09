@@ -1899,6 +1899,44 @@ local function VerifySourceID(item)
 	-- at this point the game source information matches the information for this item group
 	return true;
 end
+-- Attempts to determine an ItemLink which will return the provided SourceID
+app.DetermineItemLink = function(sourceID)
+	local link;
+	local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
+	local itemID = sourceInfo and sourceInfo.itemID;
+	if not itemID then
+		-- app.print("Could not generate Item Link for",sourceID,"(No Source Info from Blizzard)");
+		return;
+	end
+	local sformat = string.format;
+	local checkID, found;
+	local itemFormat = "item:"..itemID;
+	-- Check Raw Item
+	link = itemFormat;
+	checkID, found = GetSourceID(link);
+	if found and checkID == sourceID then return link; end
+
+	-- Check ModIDs
+	-- bonusID 3524 seems to imply "use ModID to determine SourceID" since without it, everything with ModID resolves as the base SourceID from links
+	itemFormat = "item:"..itemID..":::::::::::%d:1:3524";
+	-- /dump AllTheThings.GetSourceID("item:188859:::::::::::5:1:3524")
+	for m=1,99,1 do
+		link = sformat(itemFormat, m);
+		checkID, found = GetSourceID(link);
+		-- print(link,checkID,found)
+		if found and checkID == sourceID then return link; end
+	end
+
+	-- Check BonusIDs
+	itemFormat = "item:"..itemID.."::::::::::::1:%d";
+	for b=1,9999,1 do
+		link = sformat(itemFormat, b);
+		checkID, found = GetSourceID(link);
+		-- print(link,checkID,found)
+		if found and checkID == sourceID then return link; end
+	end
+	-- app.print("Could not generate Item Link for",sourceID,"(No ModID or BonusID match)");
+end
 app.IsComplete = function(o)
 	if o.total and o.total > 0 then return o.total == o.progress; end
 	if o.collectible then return o.collected; end
@@ -10420,7 +10458,7 @@ app.ImportRawLink = function(group, rawlink)
 		group.rawlink = rawlink;
 		local _, linkItemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID, bonusCount, bonusID1 = strsplit(":", rawlink);
 		if linkItemID then
-			-- if app.DEBUG_PRINT then print("ImportRawLink",rawlink,linkItemID,modID,bonusCount,bonusID1) end
+			-- app.PrintDebug("ImportRawLink",rawlink,linkItemID,modID,bonusCount,bonusID1);
 			-- set raw fields in the group based on the link
 			group.itemID = tonumber(linkItemID);
 			group.modID = modID and tonumber(modID) or nil;
@@ -14010,7 +14048,12 @@ function app:CreateMiniListForGroup(group)
 		-- end
 		-- Create groups showing Appearance information
 		if group.s then
-
+			-- print(group.__type)
+			-- app.PrintGroup(group)
+			-- source without an item, try to generate the valid item link for it
+			if not group.itemID then
+				app.ImportRawLink(group, app.DetermineItemLink(group.s));
+			end
 			-- Attempt to get information about the source ID.
 			local sourceInfo = C_TransmogCollection_GetSourceInfo(group.s);
 			if sourceInfo then
@@ -14018,20 +14061,24 @@ function app:CreateMiniListForGroup(group)
 				-- app.PrintTable(sourceInfo)
 				-- Show a list of all of the Shared Appearances.
 				local g = {};
-
 				-- Go through all of the shared appearances and see if we've "unlocked" any of them.
 				for _,otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
 					-- If this isn't the source we already did work on and we haven't already completed it
 					if otherSourceID ~= group.s then
-						local shared = app.SearchForObject("s", otherSourceID);
+						local shared = app.SearchForMergedObject("s", otherSourceID);
 						if shared then
-							shared = CreateObject(shared);
+							shared = CreateObject(shared, true);
 							shared.hideText = true;
 							tinsert(g, shared);
+							-- print("ATT Appearance:",shared.hash,shared.modItemID)
 						else
 							local otherSourceInfo = C_TransmogCollection_GetSourceInfo(otherSourceID);
-							if otherSourceInfo and (otherSourceInfo.quality or 0) > 1 then
+							-- print("Missing Appearance")
+							-- app.PrintTable(otherSourceInfo)
+							if otherSourceInfo then
+								-- TODO: this can create an item link whose appearance is actually different than the SourceID's Visual
 								local newItem = app.CreateItemSource(otherSourceID, otherSourceInfo.itemID);
+								newItem.collectible = (otherSourceInfo.quality or 0) > 1;
 								if otherSourceInfo.isCollected then
 									ATTAccountWideData.Sources[otherSourceID] = 1;
 									newItem.collected = true;
@@ -14101,14 +14148,15 @@ function app:CreateMiniListForGroup(group)
 					g = {};
 					setID = tonumber(setID);
 					for _,sourceID in ipairs(allSets[setID]) do
-						local search = app.SearchForObject("s", sourceID);
+						local search = app.SearchForMergedObject("s", sourceID);
 						if search then
-							search = CreateObject(search);
+							search = CreateObject(search, true);
 							search.hideText = true;
 							tinsert(g, search);
 						else
 							local otherSourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
 							if otherSourceInfo and (otherSourceInfo.quality or 0) > 1 then
+								-- TODO: this can create an item link whose appearance is actually different than the SourceID's Visual
 								local newItem = app.CreateItemSource(sourceID, otherSourceInfo.itemID);
 								if otherSourceInfo.isCollected then
 									ATTAccountWideData.Sources[sourceID] = 1;
