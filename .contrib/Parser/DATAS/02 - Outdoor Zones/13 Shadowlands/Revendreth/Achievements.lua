@@ -5,6 +5,9 @@
 root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 	m(REVENDRETH, {
 		n(ACHIEVEMENTS, {
+			ach(14272, {	-- Best Bud With Benefits
+				["sourceQuests"] = { 58327 },	-- Snacks for Stonehead
+			}),
 			ach(13878, {	-- The Master of Revendreth
 				crit(1, {	-- Welcome to Revendreth
 					["sourceQuests"] = { 56978 },	-- To Darkhaven
@@ -78,6 +81,56 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				},
 			}),
 			pvp(ach(14512)),	-- Tour of Duty: Revendreth
+			ach(14314, {	-- Treasures of Revendreth
+				crit(1, {	-- Lost Quill
+					["_quests"] = { 61990 },
+				}),
+				crit(2, {	-- Stylish Parasol
+					["_quests"] = { 61999 },
+				}),
+				crit(3, {	-- The Count
+					["_quests"] = { 62063 },
+				}),
+				crit(4, {	-- Rapier of the Fearless
+					["_quests"] = { 62156 },
+				}),
+				crit(5, {	-- Vyrtha's Dredglaive
+					["_quests"] = { 62164 },
+				}),
+				crit(6, {	-- Makeshift Muckpool
+					["_quests"] = { 62198 },
+				}),
+				crit(7, {	-- Taskmaster's Trove
+					["_quests"] = { 62199 },
+				}),
+				crit(8, {	-- Forbidden Chamber
+					["_quests"] = { 62243 },
+				}),
+				crit(9, {	-- Smuggled Cache
+					["_quests"] = { 59889 },
+				}),
+				crit(10, {	-- Chest of Envious Dreams
+					["_quests"] = { 59833 },
+				}),
+				crit(11, {	-- Filcher's Prize
+					["_quests"] = { 59883 },
+				}),
+				crit(12, {	-- Wayfarer's Abandoned Spoils
+					["_quests"] = { 59884 },
+				}),
+				crit(13, {	-- Remlate's Hidden Cache
+					["_quests"] = { 59885 },
+				}),
+				crit(14, {	-- Fleeing Soul's Bundle
+					["_quests"] = { 59886 },
+				}),
+				crit(15, {	-- Gilded Plum Chest
+					["_quests"] = { 59887 },
+				}),
+				crit(16, {	-- Abandoned Curios
+					["_quests"] = { 59888 },
+				}),
+			}),
 			ach(14770, {	-- What We Ride in the Shadows
 				["description"] = "Each ride costs 5 Infused Rubies.  Stay on the Sinrunner until you get credit for the ride.",
 				["crs"] = { 174032 },	-- Castle Sinrunner

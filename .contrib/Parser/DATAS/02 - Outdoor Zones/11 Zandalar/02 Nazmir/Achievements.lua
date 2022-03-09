@@ -325,6 +325,12 @@ _.Zones =
 						{ 33.4, 61.5, NAZMIR },	-- q(53421),
 					},
 				}),
+				ach(13023, {	-- It's Really Getting Out of Hand
+					["altQuests"] = {
+						51127,	-- Getting Out of Hand (A)
+						50559,	-- Getting Out of Hand (H)
+					},
+				}),
 				ach(13048, {	-- Life Finds a Way... To Die!
 					["collectible"] = false,
 					["g"] = {
@@ -380,6 +386,38 @@ _.Zones =
 					},
 				}),
 				pvp(ach(12574)),	-- Tour of Duty: Nazmir
+				ach(12771, {	-- Treasures of Nazmir
+					crit(1, {		-- Lucky Horace's Lucky Chest
+						["_quests"] = { 49867 },
+					}),
+					crit(2, {		-- Partially-Digested Treasure
+						["_quests"] = { 50061 },
+					}),
+					crit(3, {		-- Cursed Nazmani Chest
+						["_quests"] = { 49979 },
+					}),
+					crit(4, {		-- Cleverly Disguised Chest
+						["_quests"] = { 49885 },
+					}),
+					crit(5, {		-- Lost Nazmani Treasure
+						["_quests"] = { 49891 },
+					}),
+					crit(6, {		-- Offering to Bwonsamdi
+						["_quests"] = { 49484 },
+					}),
+					crit(7, {		-- Shipwrecked Chest
+						["_quests"] = { 49483 },
+					}),
+					crit(8, {		-- Venomous Seal
+						["_quests"] = { 49889 },
+					}),
+					crit(9, {		-- Swallowed Naga Chest
+						["_quests"] = { 50045 },
+					}),
+					crit(10, {		-- Wunja's Trove
+						["_quests"] = { 49313 },
+					}),
+				}),
 			}),
 		}),
 	}),

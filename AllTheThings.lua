@@ -5150,6 +5150,11 @@ fieldCache["spellID"] = {};
 fieldCache["tierID"] = {};
 fieldCache["titleID"] = {};
 fieldCache["toyID"] = {};
+local cacheAchievementID = function(group, value)
+	-- achievements used on maps should not cache the location for the achievement
+	if group.mapID then return; end
+	CacheField(group, "achievementID", value);
+end
 local cacheCreatureID = function(group, npcID)
 	if npcID > 0 then
 		CacheField(group, "creatureID", npcID);
@@ -5183,18 +5188,12 @@ end
 
 fieldConverters = {
 	-- Simple Converters
-	["achievementID"] = function(group, value)
-		CacheField(group, "achievementID", value);
-	end,
+	["achievementID"] = cacheAchievementID,
 	["achievementCategoryID"] = function(group, value)
 		CacheField(group, "achievementCategoryID", value);
 	end,
-	["achID"] = function(group, value)
-		CacheField(group, "achievementID", value);
-	end,
-	["altAchID"] = function(group, value)
-		CacheField(group, "achievementID", value);
-	end,
+	["achID"] = cacheAchievementID,
+	["altAchID"] = cacheAchievementID,
 	["artifactID"] = function(group, value)
 		CacheField(group, "artifactID", value);
 	end,

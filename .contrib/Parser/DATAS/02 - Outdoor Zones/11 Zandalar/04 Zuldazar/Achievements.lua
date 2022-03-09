@@ -390,6 +390,38 @@ _.Zones =
 					},
 				}),
 				pvp(ach(12575)),	-- Tour of Duty: Zuldazar
+				ach(12851, {	-- Treasures of Zuldazar
+					crit(1, {	-- Offerings of the Chosen
+						["_quests"] = { 48938 },
+					}),
+					crit(2, {	-- Witch Doctor's Hoard
+						["_quests"] = { 50259 },
+					}),
+					crit(3, {	-- Spoils of Pandaria
+						["_quests"] = { 49936 },
+					}),
+					crit(4, {	-- Gift of the Brokenhearted
+						["_quests"] = { 50582 },
+					}),
+					crit(5, {	-- Warlord's Cache
+						["_quests"] = { 49257 },
+					}),
+					crit(6, {	-- Dazar's Forgotten Chest
+						["_quests"] = { 50707 },
+					}),
+					crit(7, {	-- Da White Shark's Bounty
+						["_quests"] = { 50947 },
+					}),
+					crit(8, {	-- The Exile's Lament
+						["_quests"] = { 50949 },
+					}),
+					crit(9, {	-- Cache of Secrets
+						["_quests"] = { 51338 },
+					}),
+					crit(10, {	-- Riches of Tor'nowa
+						["_quests"] = { 51624 },
+					}),
+				}),
 			}),
 		}),
 	}),

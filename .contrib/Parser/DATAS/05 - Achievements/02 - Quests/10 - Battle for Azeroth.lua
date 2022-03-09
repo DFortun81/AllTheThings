@@ -139,15 +139,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			})),
 		})),
 		a(ach(13251)),	-- In Teldrassil's Shadow
-		ach(13023, {	-- It's Really Getting Out of Hand
-			["maps"] = {
-				NAZMIR,
-			},
-			["altQuests"] = {
-				51127,	-- Getting Out of Hand (A)
-				50559,	-- Getting Out of Hand (H)
-			},
-		}),
 		a(ach(13060, {	-- Kul Runnings
 			crit(1, {		-- Sliding with Style
 				["_quests"] = { 49994 },	-- Sliding with Style

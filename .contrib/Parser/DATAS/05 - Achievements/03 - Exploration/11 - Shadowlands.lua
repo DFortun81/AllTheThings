@@ -4,51 +4,6 @@
 
 root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 	achcat(ACHIEVEMENT_CATEGORY_SHADOWLANDS_EXP, {
-		ach(14895, {	-- 'Ghast Five (5 of these criteria)
-			["maps"] = { THE_MAW },
-			["g"] = {
-				ach(14894),		-- To 'Ghast, Two Curios (2 of these criteria)
-				crit(1, {		-- Vessel of Unfortunate Spirits
-					["provider"] = { "i", 184620 },
-				}),
-				crit(2, {		-- Extradimensional Pockets
-					["provider"] = { "i", 184615 },
-				}),
-				crit(3, {		-- Encased Riftwalker Essence
-					["provider"] = { "i", 184613 },
-				}),
-				crit(4, {		-- Animated Levitating Chain
-					["provider"] = { "i", 184653 },
-				}),
-				crit(5, {		-- Animaflow Stabilizer
-					["provider"] = { "i", 180949 },
-				}),
-				crit(6, {		-- Soul-Stabilizing Salve
-					["provider"] = { "i", 184588 },	-- TODO: confirm between crit 6 & 9
-				}),
-				crit(7, {		-- Ritual Prism of Fortune
-					["provider"] = { "i", 184621 },
-				}),
-				crit(8, {		-- Bangle of Seniority
-					["provider"] = { "i", 184617 },
-				}),
-				crit(9, {		-- Talisman of Destined Defiance
-					["provider"] = { "i", 184605 },	-- TODO: confirm between crit 6 & 9
-				}),
-				crit(10, {	-- Rank Insignia: Acquisitionist
-					["provider"] = { "i", 184618 },
-				}),
-				crit(11, {	-- Possibility Matrix
-					["provider"] = { "i", 180952,  },
-				}),
-				crit(12, {	-- Loupe of Unusual Charm
-					["provider"] = { "i", 184619 },
-				}),
-				crit(13, {	-- Broker Traversal Enhancer
-					["provider"] = { "i", 184901 },
-				}),
-			},
-		}),
 		ach(15391, sharedDataSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Adventurer of Zereth Mortis
 			ach(15512),	-- Adventures in Zereth Mortis
 		})),
@@ -119,106 +74,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 				{ 64.0, 62.0, REVENDRETH },
 			},
 		}),
-		ach(14272, {	-- Best Bud With Benefits
-			["sourceQuests"] = { 58327 },	-- Snacks for Stonehead
-			["maps"] = { REVENDRETH },
-		}),
-		ach(14744, {	-- Better to be Lucky than Dead
-			["maps"] = { THE_MAW },
-			["g"] = {
-				ach(14743),		-- Deadly Serious
-				crit(1, {	-- Adjutant Dekaris
-					["_npcs"] = { 157964 },
-				}),
-				crit(2, {	-- Apholeias, Herald of Loss
-					["_npcs"] = { 170301 },
-				}),
-				crit(3, {	-- Borr-Geth
-					["_npcs"] = { 157833 },
-				}),
-				crit(4, {	-- Conjured Death
-					["_npcs"] = { 171317 },
-				}),
-				crit(5, {	-- Darithis the Bleak
-					["_npcs"] = { 160770 },
-				}),
-				crit(6, {	-- Darklord Taraxis
-					["_npcs"] = { 158025 },
-				}),
-				crit(7, {	-- Dolos
-					["_npcs"] = { 170711 },
-				}),
-				crit(8, {	-- Eketra
-					["_npcs"] = { 170774 },
-				}),
-				crit(9, {	-- Ekphoras, Herald of Grief
-					["_npcs"] = { 169827 },
-				}),
-				crit(10, {	-- Eternas the Tormentor
-					["_npcs"] = { 154330 },
-				}),
-				crit(11, {	-- Exos, Herald of Domination
-					["_npcs"] = { 170303 },
-				}),
-				crit(12, {	-- Morguliax
-					["_npcs"] = { 162849 },
-				}),
-				crit(13, {	-- Nascent Thunderer
-					["_npcs"] = { 158278 },
-				}),
-				crit(14, {	-- Obolos
-					["_npcs"] = { 164064 },
-				}),
-				crit(15, {	-- Orophea
-					["_npcs"] = { 172577 },
-				}),
-				crit(16, {	-- Shadeweaver Zeris
-					["_npcs"] = { 170634 },
-				}),
-				crit(17, {	-- Soulforger Rhovus
-					["_npcs"] = { 166398 },
-				}),
-				crit(18, {	-- Talaporas, Herald of Pain
-					["_npcs"] = { 170302 },
-				}),
-				crit(19, {	-- Thanassos
-					["_npcs"] = { 170731 },
-				}),
-				crit(20, {	-- Yero the Skittish
-					["_npcs"] = { 172862 },
-				}),
-				crit(21, {	-- Ikras the Devourer
-					["_npcs"] = { 175012 },
-				}),
-			},
-		}),
-		ach(14802, {	-- Bloodsport
-			--	TODO: does this require being on/having completed The Ladder or can you get credit before 'unlocking' the arena?
-			["maps"] = { MALDRAXXUS },
-			["g"] = {
-				crit(1, {	-- Azmogal
-					["_npcs"] = { 162873 },
-				}),
-				crit(2, {	-- Unbreaklable Urtz
-					["_npcs"] = { 162853 },
-				}),
-				crit(3, {	-- Xantuth the Blighted
-					["_npcs"] = { 162872 },
-				}),
-				crit(4, {	-- Mistress Dyrax
-					["_npcs"] = { 162880 },
-				}),
-				crit(5, {	-- Devmorta
-					["_npcs"] = { 162875 },
-				}),
-				crit(6, {	-- Ti'or
-					["_npcs"] = { 162874 },
-				}),
-				crit(7, {	-- Sabriel the Bonecleaver
-					["_npcs"] = { 168147 },
-				}),
-			},
-		}),
 		ach(15404, {	-- Cosmic Empowerment
 			["timeline"] = { "added 9.2.0" },
 		}),
@@ -253,78 +108,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 		ach(15402, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Cyphers of the First Ones
 			i(189455),	-- Schematic: Pale Regal Cervid
 		})),
-		ach(14761, {	-- Deciphering Death's Intentions
-			["description"] = "Most of the Maw Lore items can be found by killing Assassins, rares, or normal mobs.  The remaining ones drop from specific mobs, rares, or treasures that can be found throughout the Maw.",
-			["maps"] = { THE_MAW },
-			["g"] = {
-				crit(1,  {	-- Constellan Writ
-					["_quests"] = { 63132 },
-				}),
-				crit(2,  {	-- Shifting Cryptogram
-					["_quests"] = { 63133 },
-				}),
-				crit(3,  {	-- Mawsworn Patrol Map
-					["_quests"] = { 63134 },
-				}),
-				crit(4,  {	-- Coldheart Flight Routes
-					["_quests"] = { 63135 },
-				}),
-				crit(5,  {	-- Chaotic Runes
-					["_quests"] = { 63136 },
-				}),
-				crit(6,  {	-- Puzzling Cryptogram
-					["_quests"] = { 63137 },
-				}),
-				crit(7,  {	-- Worn Obleron Etching
-					["_quests"] = { 63140 },
-				}),
-				crit(8,  {	-- Soulforge Blueprints
-					["_quests"] = { 63142 },
-				}),
-				crit(9,  {	-- Shadebound Testimonial
-					["_quests"] = { 63145 },
-				}),
-				crit(10, {	-- Venthyr Concordat
-					["_quests"] = { 63152 },
-				}),
-				crit(11, {	-- Discarded Torments
-					["_quests"] = { 63153 },
-				}),
-				crit(12, {	-- Box of Torments
-					["_quests"] = { 63157 },
-				}),
-				crit(13, {	-- Words of the Warden
-					["_quests"] = { 63159 },
-				}),
-				crit(14, {	-- Korrath's Grimoire: Gyadrek
-					["_quests"] = { 63162 },
-				}),
-				crit(15, {	-- Korrath's Grimoire: Belidir
-					["_quests"] = { 63161 },
-				}),
-				crit(16, {	-- Korrath's Grimoire: Aleketh
-					["_quests"] = { 63160 },
-				}),
-				crit(17, {	-- Tormentor's Notes
-					["_quests"] = { 63163 },
-				}),
-				crit(18, {	-- Shadehound Armor Plating
-					["_quests"] = { 63154 },
-				}),
-				crit(19, {	-- Indecipherable Map
-					["_quests"] = { 63155 },
-				}),
-				crit(20, {	-- Mawsworn Shackles
-					["_quests"] = { 63156 },
-				}),
-				crit(21, {	-- Wailing Coin
-					["_quests"] = { 63158 },
-				}),
-				crit(22, {	-- Mawsworn Orders
-					["_quests"] = { 63164 },
-				}),
-			},
-		}),
 		ach(15392, {	-- Dune Dominance
 			["timeline"] = { "added 9.2.0" },
 		}),
@@ -358,26 +141,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 		}),
 		ach(15508, {	-- Fashion of the First Ones
 			["timeline"] = { "added 9.2.0" },
-		}),
-		ach(14788, {	-- Fractured Faerie Tales
-			["maps"] = { ARDENWEALD },
-			["g"] = {
-				crit(1, {	-- A Meandering Story
-					["_quests"] = { 62619 },	-- A Meandering Story
-				}),
-				crit(2, {	-- A Wandering Tale
-					["_quests"] = { 62620 },	-- A Wandering Tale
-				}),
-				crit(3, {	-- An Escapist Novel
-					["_quests"] = { 62621 },	-- An Escapist Novel
-				}),
-				crit(4, {	-- A Travel Journal
-					["_quests"] = { 62622 },	-- A Travel Journal
-				}),
-				crit(5, {	-- A Naughty Story
-					["_quests"] = { 62623 },	-- A Naughty Story
-				}),
-			},
 		}),
 		ach(14745),		-- Grand Theft Shadehound
 		ach(14943),		-- Guarmageddon
@@ -670,59 +433,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 				crit(28),		-- Orstus and Sotiros
 				crit(29),		-- The Ascended Council
 			}),
-			ach(14314, {	-- Treasures of Revendreth
-				["maps"] = { REVENDRETH },
-				["g"] = {
-					crit(1, {	-- Lost Quill
-						["_quests"] = { 61990 },
-					}),
-					crit(2, {	-- Stylish Parasol
-						["_quests"] = { 61999 },
-					}),
-					crit(3, {	-- The Count
-						["_quests"] = { 62063 },
-					}),
-					crit(4, {	-- Rapier of the Fearless
-						["_quests"] = { 62156 },
-					}),
-					crit(5, {	-- Vyrtha's Dredglaive
-						["_quests"] = { 62164 },
-					}),
-					crit(6, {	-- Makeshift Muckpool
-						["_quests"] = { 62198 },
-					}),
-					crit(7, {	-- Taskmaster's Trove
-						["_quests"] = { 62199 },
-					}),
-					crit(8, {	-- Forbidden Chamber
-						["_quests"] = { 62243 },
-					}),
-					crit(9, {	-- Smuggled Cache
-						["_quests"] = { 59889 },
-					}),
-					crit(10, {	-- Chest of Envious Dreams
-						["_quests"] = { 59833 },
-					}),
-					crit(11, {	-- Filcher's Prize
-						["_quests"] = { 59883 },
-					}),
-					crit(12, {	-- Wayfarer's Abandoned Spoils
-						["_quests"] = { 59884 },
-					}),
-					crit(13, {	-- Remlate's Hidden Cache
-						["_quests"] = { 59885 },
-					}),
-					crit(14, {	-- Fleeing Soul's Bundle
-						["_quests"] = { 59886 },
-					}),
-					crit(15, {	-- Gilded Plum Chest
-						["_quests"] = { 59887 },
-					}),
-					crit(16, {	-- Abandoned Curios
-						["_quests"] = { 59888 },
-					}),
-				},
-			}),
 			ach(14313, {	-- Treasures of Ardenweald
 				crit(1),		-- Aerto's Body
 				crit(2),		-- Lost Satchel
@@ -754,56 +464,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 				crit(11),		-- Runespeaker's Trove
 				crit(12),		-- Plaguefallen Chest
 				crit(13),		-- Ritualist's Cache
-			}),
-			ach(14311, {	-- Treasures of Bastion
-				["maps"] = { BASTION },
-				["g"] = {
-					crit(1,  {	-- Scroll of Aeons
-						["_quests"] = { 58298 },
-					}),
-					crit(2,  {	-- Vesper of Virtues
-						["_quests"] = { 60478 },
-					}),
-					crit(3,  {	-- Purifying Draught
-						["_quests"] = { 58329 },
-					}),
-					crit(4,  {	-- Lost Disciple's Notes
-						["_quests"] = { 61048 },
-					}),
-					crit(5,  {	-- Larion Tamer's Harness
-						["_quests"] = { 61049 },
-					}),
-					crit(6,  {	-- Stolen Equipment
-						["_quests"] = { 61044 },
-					}),
-					crit(7,  {	-- Abandoned Stockpile
-						["_quests"] = { 61006 },
-					}),
-					crit(8,  {	-- Experimental Construct Part
-						["_quests"] = { 61052 },
-					}),
-					crit(9,  {	-- Windsmith's Tools
-						["_quests"] = { 61053 },
-					}),
-					crit(10, {	-- Memorial Offerings
-						["_quests"] = { 61150 },
-					}),
-					crit(11, {	-- Gift of Agthia
-						["_quests"] = { 60893 },
-					}),
-					crit(12, {	-- Gift of Vesiphone
-						["_quests"] = { 60890 },
-					}),
-					crit(13, {	-- Gift of Chyrus
-						["_quests"] = { 60892 },
-					}),
-					crit(14, {	-- Gift of Thenios
-						["_quests"] = { 60894 },
-					}),
-					crit(15, {	-- Gift of Devos
-						["_quests"] = { 60895 },
-					}),
-				},
 			}),
 		}),
 		ach(14339),		-- Shard Labor

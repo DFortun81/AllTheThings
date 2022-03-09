@@ -358,43 +358,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 		}),
 		ach(12755),		-- Scent of the Sea
 		ach(9461),		-- Sea Scorpion Angler
-		ach(13489, {	-- Secret Fish of Mechagon
-			["requireSkill"] = FISHING,
-			["maps"] = { MECHAGON },
-			["g"] = {
-				i(167698),	-- Secret Fish Goggles
-				crit(1, {	-- Bottom Feeding Stinkfish
-					["_quests"] = { 55299 },
-				}),
-				crit(2, {	-- Bolted Steelhead
-					["_quests"] = { 55305 },
-				}),
-				crit(3, {	-- Pond Hopping Springfish
-					["_quests"] = { 55306 },
-				}),
-				crit(4, {	-- Shadowy Cave Eel
-					["_quests"] = { 55307 },
-				}),
-				crit(5, {	-- Mechanical Blowfish
-					["_quests"] = { 55308 },
-				}),
-				crit(6, {	-- Spitting Clownfish
-					["_quests"] = { 55309 },
-				}),
-				crit(7, {	-- Sludge-Fouled Carp
-					["_quests"] = { 55310 },
-				}),
-				crit(8, {	-- Energized Lighting Cod
-					["_quests"] = { 55311 },
-				}),
-				crit(9, {	-- Solarsprocket Barbel
-					["_quests"] = { 55312 },
-				}),
-				crit(10, {	-- Tasty Steelfin
-					["_quests"] = { 55313 },
-				}),
-			},
-		}),
 		ach(13502, {	-- Secret Fish and Where to Find Them
 			["description"] = "First, acquire the Secret Fish Goggles from Danielle Anglers in Mechagon.\n\nWhen you use the goggles, you gain a 1-hour buff that allows you to see Secret Fish, which appear in bubbles around your character. When you see one, approach it and click on it, and you'll get a fish. That fish will be a BfA, or zone-relevant common fish, or one of the requirements for this achievement (assuming you fulfill the requirements for each fish).",
 			["cost"] = { { "i", 167698, 1 } },	-- Secret Fish Goggles

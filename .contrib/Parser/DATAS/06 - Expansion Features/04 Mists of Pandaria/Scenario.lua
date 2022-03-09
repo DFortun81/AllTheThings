@@ -7,7 +7,249 @@ _.ExpansionFeatures =
 	tier(MOP_TIER, {
 		n(SCENARIOS, {
 			["icon"] = "Interface\\Icons\\pandarenracial_innerpeace",
+			["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			["g"] = {
+				-- Scenario Maps
+				m(447, {	-- A Brewing Storm
+					["crs"] = {
+						78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
+					},
+					["achievementID"] = 7252,	-- A Brewing Storm
+					["g"] = {
+						n(ACHIEVEMENTS, {
+							ach(7252),	-- A Brewing Storm
+							ach(7257),	-- Don't Shake the Keg
+							ach(8310),	-- Heroic: A Brewing Storm
+							ach(7261),	-- The Perfect Pour
+							ach(7258),	-- Party of Six
+						}),
+					},
+				}),
+				m(487, {	-- A Little Patience
+					["achievementID"] = 7988,	-- A Little Patience
+					["g"] = {
+						n(ACHIEVEMENTS, {
+							ach(7988),	-- A Little Patience
+							ach(7989),	-- Bubbletrapped!
+							ach(7990),	-- Cannonballer
+							ach(7992),	-- I Used To Love Them
+							ach(7993),	-- We've Been Dancin'
+							ach(7991),	-- Which Came First?
+						}),
+					},
+				}),
+				m(480, {	-- Arena of Annihilation
+					["achievementID"] = 7271,	-- Arena of Annihilation
+					["g"] = {
+						n(ACHIEVEMENTS, {
+							ach(7271),	-- Arena of Annihilation
+							ach(7273),	-- Beat the Heat
+						}),
+					},
+				}),
+				m(451, {	-- Assault on Zan'vess
+					["achievementID"] = 8016,	-- Assault on Zan'vess
+					["g"] = {
+						n(ACHIEVEMENTS, {
+							ach(8016),	-- Assault on Zan'vess
+							ach(8017),	-- For the Swarm
+							ach(7272, {	-- In the Eye of the Tiger
+								crit(1),	-- Kill Cloudbender Kobo
+								crit(2),	-- Kill Maki Waterblade
+								crit(3),	-- Kill Satay Byu
+							}),
+						}),
+					},
+				}),
+				m(524, {	-- Battle on the High Seas
+					["allianceAchievementID"] = 8314,	-- Battle on the High Seas (A)
+					["hordeAchievementID"] = 8315,	-- Battle on the High Seas (H)
+					["crs"] = { 78777 },	-- Lorewalker Shin <Heroic Scenario Storyteller>
+					["g"] = {
+						n(ACHIEVEMENTS, {
+							a(ach(8314)),	-- Battle on the High Seas (A)
+							h(ach(8315)),	-- Battle on the High Seas (H)
+							a(ach(8364)),	-- Heroic: Battle on the High Seas (A)
+							h(ach(8366)),	-- Heroic: Battle on the High Seas (H)
+							ach(8347), 	-- Keep those Bombs Away! (From Me)
+						}),
+					},
+				}),
+				m(452, {	-- Brewmoon Festival
+					["achievementID"] = 6923,	-- Brewmoon Festival
+					["g"] = {
+						n(ACHIEVEMENTS, {
+							ach(6931, {	-- Binan Village All-Star
+								crit(1),	-- Briaw Shan
+								crit(2),	-- Barrel of Fireworks
+								crit(3),	-- Vale Marksman
+								crit(4),	-- Karasang Wild Brew
+								crit(5),	-- Tian Disciple
+								crit(6),	-- Derpa Derpa
+							}),
+							ach(6923),	-- Brewmoon Festival
+							ach(7385, {	-- Pub Crawl
+								i(87528),	-- Honorary Brewmaster Keg (TOY!)
+								crit(1),	-- Spill No Evil
+								crit(2),	-- Yaungolian Barbecue
+								crit(3),	-- Binan Village All-Star
+								crit(4),	-- The Keg Runner
+								crit(5),	-- Monkey in the Middle
+								crit(6),	-- Monkey See, Monkey Kill
+								crit(7),	-- Don't Shake the Keg
+								crit(8),	-- Party of Six
+								crit(9),	-- The Perfect Pour
+								crit(10),	-- Save it for Later
+								crit(11),	-- Perfect Delivery
+							}),
+							ach(6930),	-- Yaungolian Barbecue
+						}),
+					},
+				}),
+				m(523, {	-- Blood in the Snow
+					["achievementID"] = 8316,	-- Blood in the Snow
+					["crs"] = {
+						78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
+					},
+					["g"] = {
+						n(ACHIEVEMENTS, {
+							ach(8316),	-- Blood in the Snow
+							ach(8329),	-- Heed the Weed
+							ach(8330),	-- Hekima's Heal-Halter
+							ach(8312),	-- Heroic: Blood in the Snow
+						}),
+					},
+				}),
+				m(481, {	-- Crypt of Forgotten Kings
+					["achievementID"] = 7522,	-- Crypt of Forgotten Kings
+					["maps"] = { 482 },	-- Crypt of Forgotten Kings
+					["crs"] = {
+						78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
+					},
+					["g"] = {
+						n(ACHIEVEMENTS, {
+							ach(7522),	-- Crypt of Forgotten Kings
+							ach(7276),	-- Fancy Footwork
+							ach(8368),	-- Fight Anger with Anger
+							ach(8311),	-- Heroic: Crypt of Forgotten Kings
+							ach(7275),	-- It's a Trap!
+						}),
+					},
+				}),
+				m(488, {	-- Dagger in the Dark
+					["achievementID"] = 8009,	-- Dagger in the Dark
+					["maps"] = { 489 },	-- Dagger in the Dark
+					["g"] = {
+						n(ACHIEVEMENTS, {
+							ach(8009),	-- Dagger in the Dark
+							ach(7987),	-- No Egg Left Behind
+							ach(7986),	-- You Mean That Wasn't a Void Zone?
+							ach(7984),	-- Watery Grave
+						}),
+					},
+				}),
+				m(498, {	-- Domination Point / Lion's Landing
+					["allianceAchievementID"] = 8010,	-- Lion's Landing
+					["hordeAchievementID"] = 8013,	-- Domination Point
+					["maps"] = { 486 },	-- Lion's Landing
+					["g"] = {
+						n(ACHIEVEMENTS, {
+							h(ach(8013)),	-- Domination Point
+							a(ach(8010)),	-- Lion's Landing
+							a(ach(8011)),	-- Number Five is Alive (A)
+							h(ach(8014)),	-- Number Five is Alive (H)
+							a(ach(8012, {	-- Waste Not, Want Not (A)
+								crit(1),	-- Lever-Acton Boomstick
+								crit(2),	-- Reaver Bomb
+								crit(3),	-- Rocket Launcher
+								crit(4),	-- Armor Power-Up
+								crit(5),	-- Berserk Power-Up
+								crit(6),	-- Restoration Power-Up
+								crit(7),	-- Speed Power-Up
+							})),
+							h(ach(8015, {	-- Waste Not, Want Not (H)
+								crit(1),	-- Lever-Acton Boomstick
+								crit(2),	-- Reaver Bomb
+								crit(3),	-- Rocket Launcher
+								crit(4),	-- Armor Power-Up
+								crit(5),	-- Berserk Power-Up
+								crit(6),	-- Restoration Power-Up
+								crit(7),	-- Speed Power-Up
+							})),
+						}),
+					},
+				}),
+				m(520, {	-- Dark Heart of Pandaria
+					["achievementID"] = 8317,	-- Dark Heart of Pandaria
+					["maps"] = { 521 },	-- Dark Heart of Pandaria
+					["crs"] = {
+						78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
+					},
+					["g"] = {
+						n(ACHIEVEMENTS, {
+							ach(8319),	-- Accelerated Archaeology
+							ach(8317),	-- Dark Heart of Pandaria
+							ach(8318),	-- Heroic: Dark Heart of Pandaria
+						}),
+					},
+				}),
+				m(448, {	-- Greenstone Village
+					["achievementID"] = 7265,	-- Greenstone Village
+					["g"] = {
+						n(ACHIEVEMENTS, {
+							ach(7265),	-- Greenstone Village
+							ach(7267),	-- Perfect Delivery
+							ach(7266),	-- Save it for Later
+						}),
+					},
+				}),
+				m(522, {	-- The Secrets of Ragefire
+					["achievementID"] = 8294,	-- The Secrets of Ragefire
+					["crs"] = {
+						78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
+					},
+					["g"] = {
+						n(ACHIEVEMENTS, {
+							ach(8327),	-- Heroic: The Secrets of Ragefire
+							ach(8295),	-- The Few, the Proud, the Gob Squad
+							ach(8294),	-- The Secrets of Ragefire
+						}),
+					},
+				}),
+				m(483, {	-- Theramore's Fall
+					["allianceAchievementID"] = 7523,	-- Theramore's Fall (A)
+					["hordeAchievementID"] = 7524,	-- Theramore's Fall (H)
+					["g"] = {
+						n(ACHIEVEMENTS, {
+							a(ach(7526)),	-- Kite Flight (A)
+							h(ach(7529)),	-- Kite Fight (H)
+							a(ach(7527)),	-- No Tank You (A)
+							h(ach(7530)),	-- No Tank You (H)
+							a(ach(7523)),	-- Theramore's Fall (A)
+							h(ach(7524)),	-- Theramore's Fall (H)
+						}),
+					},
+				}),
+				m(450, {	-- Unga Ingoo
+					["achievementID"] = 7249,	-- Unga Ingoo
+					["g"] = {
+						n(ACHIEVEMENTS, {
+							ach(7239),	-- Monkey in the Middle
+							ach(7248, {	-- Monkey See, Monkey Kill
+								crit(1),	-- Captain Ook
+								crit(2),	-- Ba-Bam
+								crit(3),	-- Ookie
+								crit(4),	-- Chihozen Binono
+								crit(5),	-- Grooka Grooka
+								crit(6),	-- Rik Rik
+								crit(7),	-- Protected King Unga Keg
+							}),
+							ach(7231),	-- Spill No Evil
+							ach(7232),	-- The Keg Runner
+							ach(7249),	-- Unga Ingoo
+						}),
+					},
+				}),
 				n(REWARDS, {
 					i(98133, {	-- Greater Cache of Treasures
 						["description"] = "Rewarded for completing |cFFFFD700The King and the Council|r and |cFFFFD700The Warchief and the Darkness|r quests.",

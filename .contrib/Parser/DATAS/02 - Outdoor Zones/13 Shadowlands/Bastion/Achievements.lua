@@ -382,6 +382,66 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				}),
 			}),
 			pvp(ach(14514)),	-- Tour of Duty: Bastion
+			ach(14311, {	-- Treasures of Bastion
+				crit(1,  {	-- Scroll of Aeons
+					["_quests"] = { 58298 },
+				}),
+				crit(2,  {	-- Vesper of Virtues
+					["_quests"] = { 60478 },
+				}),
+				crit(3,  {	-- Purifying Draught
+					["_quests"] = { 58329 },
+				}),
+				crit(4,  {	-- Lost Disciple's Notes
+					["_quests"] = { 61048 },
+				}),
+				crit(5,  {	-- Larion Tamer's Harness
+					["_quests"] = { 61049 },
+				}),
+				crit(6,  {	-- Stolen Equipment
+					["_quests"] = { 61044 },
+				}),
+				crit(7,  {	-- Abandoned Stockpile
+					["_quests"] = { 61006 },
+				}),
+				crit(8,  {	-- Experimental Construct Part
+					["_quests"] = { 61052 },
+				}),
+				crit(9,  {	-- Windsmith's Tools
+					["_quests"] = { 61053 },
+				}),
+				crit(10, {	-- Memorial Offerings
+					["_quests"] = { 61150 },
+				}),
+				crit(11, {	-- Gift of Agthia
+					["_quests"] = { 60893 },
+				}),
+				crit(12, {	-- Gift of Vesiphone
+					["_quests"] = { 60890 },
+				}),
+				crit(13, {	-- Gift of Chyrus
+					["_quests"] = { 60892 },
+				}),
+				crit(14, {	-- Gift of Thenios
+					["_quests"] = { 60894 },
+				}),
+				crit(15, {	-- Gift of Devos
+					["_quests"] = { 60895 },
+				}),
+			}),
+			ach(14737, {	-- What Bastion Remembered
+				["altQuests"] = { 59717, 59705 },	-- Things Remembered
+				["g"] = {
+					crit(1),	-- Eridia, Hand of Purity
+					crit(2),	-- Kalisthene
+					crit(3),	-- Chyrus, Paragon of Humility
+					crit(4),	-- Kleia
+					crit(5),	-- Pelagos
+					crit(6),	-- Forgelite Sophone
+					crit(7),	-- Uther
+					crit(8),	-- Mikanikos
+				},
+			}),
 			ach(14768, {	-- What is that Melody?
 				crit(1, {		-- Hymn of Purity
 					["description"] = "Triangular stacks of bundled scrolls, often found on tables and benches.  The coordinates given are not exhaustive; this scroll can spawn throughout the Temple of Purity.  Part of this temple is full of elite mobs.",
