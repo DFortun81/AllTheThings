@@ -72,11 +72,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, {
 		ach(249, {	-- Dressed for the Occasion
 			["provider"] = { "i", 19028 },	-- Elegant Dress
 		}),
-		ach(2416, {	-- Hard Boiled
-			["description"] = "Use the Blossoming Branch on someone else and hopefully they return the favor.",
-			["provider"] = { "i", 44792 },	-- Blossoming Branch
-			["maps"] = { UNGORO_CRATER },
-		}),
 		ach(2676, {	-- I Found One!
 			["provider"] = { "i", 45072 },	-- Brightly Colored Egg
 		}),
@@ -115,16 +110,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, {
 					["maps"] = { DUROTAR },
 				}),
 			}),
-		}),
-		ach(2421, {	-- Noble Garden (A)
-			["provider"] = { "i", 44818 },	-- Noblegarden Egg
-			["maps"] = { STORMWIND_CITY },
-			["races"] = ALLIANCE_ONLY,
-		}),
-		ach(2420, {	-- Noble Garden (H)
-			["provider"] = { "i", 44818 },	-- Noblegarden Egg
-			["maps"] = { SILVERMOON_CITY },
-			["races"] = HORDE_ONLY,
 		}),
 		ach(2422, {	-- Shake Your Bunny-Maker
 			["provider"] = { "i", 45073 },	-- Spring Flowers

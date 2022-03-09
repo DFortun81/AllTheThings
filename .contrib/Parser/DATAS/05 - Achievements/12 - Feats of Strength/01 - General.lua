@@ -157,15 +157,5 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		un(REMOVED_FROM_GAME, ach(6867)),	-- Realm First! Zen Master Scribe
 		un(REMOVED_FROM_GAME, ach(6871)),	-- Realm First! Zen Master Skinner
 		un(REMOVED_FROM_GAME, ach(6872)),	-- Realm First! Zen Master Tailor
-		ach(9597, {	-- You're Really Doing It Wrong
-			["maps"] = {
-				480,	-- Proving Grounds
-			},
-		}),
-		un(REMOVED_FROM_GAME, ach(8812, {	-- You're Really Doing It Wrong (Level 90)
-			["maps"] = {
-				480,	-- Proving Grounds
-			},
-		})),
 	}),
 }));

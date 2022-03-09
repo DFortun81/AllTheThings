@@ -39,7 +39,8 @@ _.ExpansionFeatures =
 					},
 				}),
 				m(480, {	-- Arena of Annihilation
-					["achievementID"] = 7271,	-- Arena of Annihilation
+					-- shared by actual proving grounds instance... hmmm
+					-- ["achievementID"] = 7271,	-- Arena of Annihilation
 					["g"] = {
 						n(ACHIEVEMENTS, {
 							ach(7271),	-- Arena of Annihilation
