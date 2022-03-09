@@ -3,11 +3,6 @@
 --------------------------------------------------
 root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, {
 	achcat(ACHIEVEMENT_CATEGORY_GENERAL, {
-		applyholiday(DAY_OF_THE_DEAD, ach(9428)),		-- Calavera
-		applyholiday(DAY_OF_THE_DEAD, ach(3456)),		-- Dead Man's Party
-		applyholiday(DAY_OF_THE_DEAD, ach(9426)),		-- To The Afterlife
-		applyholiday(DAY_OF_THE_DEAD, ach(9427)),		-- Vientos!
-		applyholiday(PIRATES_DAY, ach(3457)),			-- The Captain's Booty
 		ach(2144, {	-- What a Long, Strange Trip It's Been
 			-- Meta Achievement should symlink the contained Achievements from Source
 			["sym"] = {

@@ -416,6 +416,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 				["cost"] = { { "i", 33226, 3 } },	-- Tricky Treat
 			}),
 			ach(255),	-- Bring Me The Head of... Oh Wait
+			ach(979),	-- The Mask Task
 			ach(289),	-- The Savior of Hallow's End
 			ach(981, {	-- That Sparkling Smile
 				["provider"] = { "i", 37604 },	-- Tooth Pick
