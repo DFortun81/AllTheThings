@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -3018,10 +3017,10 @@ namespace ATT
             // Default is relative to where the executable is. (.contrib/Parser)
             string addonRootFolder = "../..";
 #endif
-
             // DEBUGGING: Output Parsed Data
             if (DebugMode)
             {
+                ATT.Export.DebugMode = true;
                 var debugFolder = Directory.CreateDirectory($"{addonRootFolder}/.contrib/Debugging");
                 if (debugFolder.Exists)
                 {

@@ -11,6 +11,11 @@ namespace ATT
     public static partial class Export
     {
         /// <summary>
+        /// Whether debug information will be printed from Export functions
+        /// </summary>
+        public static bool DebugMode { get; set; }
+
+        /// <summary>
         /// The class constructor.
         /// </summary>
         static Export()

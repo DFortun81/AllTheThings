@@ -59,7 +59,8 @@ namespace ATT
                     return b.Value - a.Value;
                 });
 
-                Trace.WriteLine($"Performing up to {maximum} structure replacements from {order.Count} total structures.");
+                if (DebugMode)
+                    Trace.WriteLine($"Performing up to {maximum} structure replacements from {order.Count} total structures.");
 
                 // At most, export the maximum number of replacements.
                 int count = 0;
@@ -67,6 +68,8 @@ namespace ATT
                 {
                     if (pair.Value < minimumReplacements || count >= maximum) break;
 
+                    if (DebugMode)
+                        Trace.WriteLine($"{pair.Key} : {pair.Value}x");
                     var key = $"a[{++count}]";
                     content = content.Replace(pair.Key, key);
                     keyValues.Add(new KeyValuePair<string, string>(key, pair.Key));
