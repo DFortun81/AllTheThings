@@ -388,7 +388,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			}),
 			q(64842, {	-- Flora Frenzy
 				["sourceQuests"] = {
-					64331,	-- Herbal Remedies
+					65331,	-- Herbal Remedies
 					64840,	-- Unchecked Growth
 					64841,	-- Take Charge
 				},
@@ -1107,6 +1107,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
 				["provider"] = { "n", 180289 },	-- Mai Soh
 				["coord"] = { 58.3, 50, ZERETH_MORTIS },
+				["g"] = {
+					i(189449),	-- Jiro Scan
+				},
 			}),
 			q(65364, {	-- Super Jiro
 				["description"] = "This Daily is available after researching Altonian Understanding",
