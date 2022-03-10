@@ -667,6 +667,32 @@ namespace ATT
                 {
                     altQuests.Remove(questID);
                 }
+
+                // Convert any 'n' providers into 'qgs' for simplicity
+                if (data.TryGetValue("providers", out List<object> providers))
+                {
+                    List<object> quest_qgs = new List<object>(providers.Count);
+                    for (int p = providers.Count - 1; p >= 0; p--)
+                    {
+                        object provider = providers[p];
+                        // { "n", ### }
+                        if (provider is List<object> providerItems && providerItems.Count == 2 && providerItems[0].ToString() == "n")
+                        {
+                            quest_qgs.Add(providerItems[1]);
+                            providers.RemoveAt(p);
+                            if (DebugMode)
+                                Trace.WriteLine($"Quest {questID} provider 'n', {providerItems[1]} converted to 'qgs'");
+                        }
+                    }
+
+                    // remove 'providers' if it is now empty
+                    if (providers.Count == 0)
+                        data.Remove("providers");
+
+                    // merge the 'qgs' back into the data if anything was converted
+                    if (quest_qgs.Count > 0)
+                        Objects.Merge(data, "qgs", quest_qgs);
+                }
             }
             else if (data.TryGetValue("_quests", out object quests))
             {
