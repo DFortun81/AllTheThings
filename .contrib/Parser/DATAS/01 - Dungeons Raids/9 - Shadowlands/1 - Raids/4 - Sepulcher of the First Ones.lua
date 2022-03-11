@@ -1491,61 +1491,53 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 root("HiddenQuestTriggers", {
 	tier(SL_TIER, {
 		inst(1195, {	-- Sepulcher of the First Ones
-			d(17, {	-- LFR
-			}),
-			d(14, {	-- Normal
-			}),
-			d(15, {	-- Heroic
-			}),
-			d(16, {	-- Mythic
-			}),
-			--[[ This Section was done by Braghe
-				-- Normal
-				q(65356),	-- Entering the Raid
-				q(65810),	-- Triggered when killing Vigilant Guardian
-				q(65966),	-- Triggered when killing Vigilant Guardian
-				q(65984),	-- Triggered when killing Trash: Subjugator Zeltoth
-				q(65985),	-- Triggered when killing Trash: Subjugator Zeltoth
-
-
-				q(65818),	-- Triggered when killing Skolex
-				q(65819),	-- Triggered when killing Skolex
-				q(65970),	-- Triggered when killing Skolex
-				q(65982),	-- Triggered when killing Trash: Taskmaster Xy'pro
-				q(65983),	-- Triggered when killing Trash: Taskmaster Xy'pro
-				q(65820),	-- Triggered when killing Artificer Xy'mox
-				q(65821),	-- Triggered when killing Artificer Xy'mox
-				q(65971),	-- Triggered when killing Artificer Xy'mox
-				q(65822),	-- Triggered when killing Halondrus
-				q(65823),	-- Triggered when killing Halondrus
-				q(65972),	-- Triggered when killing Halondrus
-
-
-				q(65980),	-- Triggered when killing Trash: Manifestor Krugan
-				q(65981),	-- Triggered when killing Trash: Manifestor Krugan
-				q(65812),	-- Triggered when killing Dausegne
-				q(65813),	-- Triggered when killing Dausegne
-				q(65967),	-- Triggered when killing Dausegne
-				q(65814),	-- Triggered when killing Prototype Pantheon
-				q(65815),	-- Triggered when killing Prototype Pantheon
-				q(65968),	-- Triggered when killing Prototype Pantheon
-				q(65978),	-- Triggered when killing Trash: Sacred Matrix Automa
-				q(65979),	-- Triggered when killing Trash: Sacred Matrix Automa
-				q(65816),	-- Triggered when killing Lihuvium
-				q(65817),	-- Triggered when killing Lihuvium
-				q(65969),	-- Triggered when killing Lihuvium
-
-
-				q(65824),	-- Triggered when killing Anduin
-				q(65825),	-- Triggered when killing Anduin
-				q(65973),	-- Triggered when killing Anduin
-				q(65699),	-- Anduin Cinematic
-
-				-- Heroic (After 7 Normal Bosses killed)
-				q(65356),	-- Entering the Raid (Same as normal)
-				Nothing Else Triggered
-			]]
-			-- Jez from ATT discord did Vigilant, Subjugator, Manifestor, Dausegne, Prototype, Sacred Matrix on Heroic and popped exactly the same hqts as me in normal.
+		-- Normal
+			q(65356),	-- Entering the Raid
+			q(65810),	-- Triggered when killing Vigilant Guardian
+			q(65966),	-- Triggered when killing Vigilant Guardian
+			q(65984),	-- Triggered when killing Trash: Subjugator Zeltoth
+			q(65985),	-- Triggered when killing Trash: Subjugator Zeltoth
+			q(65818),	-- Triggered when killing Skolex
+			q(65819),	-- Triggered when killing Skolex
+			q(65970),	-- Triggered when killing Skolex
+			q(65982),	-- Triggered when killing Trash: Taskmaster Xy'pro
+			q(65983),	-- Triggered when killing Trash: Taskmaster Xy'pro
+			q(65820),	-- Triggered when killing Artificer Xy'mox
+			q(65821),	-- Triggered when killing Artificer Xy'mox
+			q(65971),	-- Triggered when killing Artificer Xy'mox
+			q(65822),	-- Triggered when killing Halondrus
+			q(65823),	-- Triggered when killing Halondrus
+			q(65972),	-- Triggered when killing Halondrus
+			q(65980),	-- Triggered when killing Trash: Manifestor Krugan
+			q(65981),	-- Triggered when killing Trash: Manifestor Krugan
+			q(65812),	-- Triggered when killing Dausegne
+			q(65813),	-- Triggered when killing Dausegne
+			q(65967),	-- Triggered when killing Dausegne
+			q(65814),	-- Triggered when killing Prototype Pantheon
+			q(65815),	-- Triggered when killing Prototype Pantheon
+			q(65968),	-- Triggered when killing Prototype Pantheon
+			q(65978),	-- Triggered when killing Trash: Sacred Matrix Automa
+			q(65979),	-- Triggered when killing Trash: Sacred Matrix Automa
+			q(65816),	-- Triggered when killing Lihuvium
+			q(65817),	-- Triggered when killing Lihuvium
+			q(65969),	-- Triggered when killing Lihuvium
+			q(65824),	-- Triggered when killing Anduin
+			q(65825),	-- Triggered when killing Anduin
+			q(65973),	-- Triggered when killing Anduin
+			q(65699),	-- Anduin Cinematic
+			q(65826),	-- Killing Lord of Dread
+			q(65827),	-- Killing Lord of Dread
+			q(65974),	-- Killing Lord of Dread
+			q(65828),	-- Killing Rygelon
+			q(65829),	-- Killing Rygelon
+			q(65975),	-- Killing Rygelon
+		-- Heroic (After 7 Normal Bosses killed)
+			q(65356),	-- Entering the Raid (Same as normal)
+		-- Returning to Oribos
+			q(65980),	-- Zoning into Oribos after clearing 7 Normal
+			q(65981),	-- Zoning into Oribos after clearing 7 Normal
+			q(65984),	-- Zoning into Oribos after clearing 7 Normal
+			q(65985),	-- Zoning into Oribos after clearing 7 Normal
 		}),
 	}),
 });
