@@ -9592,7 +9592,7 @@ local itemFields = {
 		return cache;
 	end,
 	["text"] = function(t)
-		return t.link;
+		return t.link or t.name;
 	end,
 	["icon"] = function(t)
 		return cache.GetCachedField(t, "icon", default_icon);
@@ -18255,7 +18255,7 @@ customWindowUpdates["Harvester"] = function(self)
 
 			local harvested = {};
 			local minID,maxID,oldRetries = app.customHarvestMin or self.min,app.customHarvestMax or self.max,app.MaximumItemInfoRetries;
-			local tremove = tremove;
+			local tremove, tonumber = tremove, tonumber;
 			self.min = minID;
 			self.max = maxID;
 			app.MaximumItemInfoRetries = 10;
@@ -18352,10 +18352,14 @@ customWindowUpdates["Harvester"] = function(self)
 							app.Settings:ToggleDebugMode();
 							self.forcedDebug = nil;
 						end
-						app.print("Source Harvest Complete!");
+						app.print("Source Harvest Complete! ItemIDs:",self.min,"->",self.max);
 						-- revert the number of retries to retrieve item information
 						app.MaximumItemInfoRetries = oldRetries or 400;
+						-- reset the window so it can be used to harvest again without reloading
 						self.UpdateDone = nil;
+						self.initialized = nil;
+						self.data = nil;
+						return;
 					end
 				end
 				-- Update the Harvester Window to re-populate row data for next refresh
@@ -21912,8 +21916,8 @@ SLASH_AllTheThingsHARVESTER2 = "/attharvester";
 SlashCmdList["AllTheThingsHARVESTER"] = function(cmd)
 	if cmd then
 		local min,max,reset = strsplit(",",cmd);
-		app.customHarvestMin = tonumber(min);
-		app.customHarvestMax = tonumber(max);
+		app.customHarvestMin = tonumber(min) or 1;
+		app.customHarvestMax = tonumber(max) or 200000;
 		app.print("Set Harvest ItemID Bounds:",app.customHarvestMin,app.customHarvestMax);
 		AllTheThingsHarvestItems = reset and {} or AllTheThingsHarvestItems or {};
 		AllTheThingsArtifactsItems = reset and {} or AllTheThingsArtifactsItems or {};
