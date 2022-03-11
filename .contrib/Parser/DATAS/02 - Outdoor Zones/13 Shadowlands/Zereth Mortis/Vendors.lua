@@ -280,6 +280,13 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					}),
 				}),
 			}),
+			n(185092, {	-- Shade of Irik-tu
+				["description"] = "Only available while dead.",
+				["coord"] = { 34.6, 48.1, ZERETH_MORTIS },
+				["g"] = {
+					i(189467),	-- Schematic: Ineffable Skitterer
+				},
+			}),
 			n(182257, {	-- Vilo
 				["coord"] = { 34.8, 64.1, ZERETH_MORTIS },
 				["g"] = {

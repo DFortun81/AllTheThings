@@ -7,14 +7,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			-- Quest
 			i(190579),	-- Unformed Essence
 			-- Schematic
-			i(190585, {	-- Schematic: Heartbond Lupine
-				["crs"] = {
-					179939,	-- Maw-Frenzied Lupine
-					181412,	-- Mawsworn Hulk
-				},
-			}),
 			i(189468, {	-- Schematic: Goldplate Bufonid
 				["cr"] = 178803,	-- Accelerated Bufonid
+			}),
+			i(190585, {	-- Schematic: Heartbond Lupine
+				["cr"] = 179939,	-- Maw-Frenzied Lupine
+			}),
+			i(189459, {	-- Schematic: Mawdapted Raptora
+				["cr"] = 181412,	-- Mawsworn Hulk
 			}),
 			-- Key
 			i(189704, {	-- Dominance Key

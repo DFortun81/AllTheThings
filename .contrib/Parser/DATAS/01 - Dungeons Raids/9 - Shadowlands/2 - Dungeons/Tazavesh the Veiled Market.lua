@@ -194,7 +194,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 						i(185787),	-- Implacable Weatherproof Treads
 						i(185845),	-- First Class Healing Distributor
 						i(185846),	-- Miniscule Mailemental in an Envelope
-						i(185844),	-- Ticking Sack of Terror
+						i(190652),	-- Ticking Sack of Terror
 					},
 				}),
 				e(2452, {	-- Au'myza's Oasis
@@ -275,6 +275,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 				e(2455, {	-- So'leah
 					["crs"] = { 177269 },	-- So'leah
 					["g"] = {
+						i(186638),	-- Cartel Master's Gearglider (MOUNT!)
 						i(181838),	-- Charitable Soul
 						i(182304),	-- Divine Call
 						i(182316),	-- Fel Defender
@@ -289,7 +290,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 						i(185801),	-- Anomalous Starlit Breeches
 						i(185799),	-- Hyperlight Leggings
 						i(185813),	-- Signet of Collapsing Stars
-						i(185818),	-- So'leah's Secret Technique
+						i(190958),	-- So'leah's Secret Technique
 					},
 				}),
 			})),
@@ -363,7 +364,12 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 							i(185787),	-- Implacable Weatherproof Treads
 							i(185845),	-- First Class Healing Distributor
 							i(185846),	-- Miniscule Mailemental in an Envelope
-							i(185844),	-- Ticking Sack of Terror
+							i(185844, {	-- Ticking Sack of Terror
+								["timeline"] = { "added 9.1.0", "removed 9.2.0" },
+								}),
+							i(190652, {	-- Ticking Sack of Terror
+								["timeline"] = { "added 9.2.0" },
+							}),
 						},
 					}),
 					e(2452, {	-- Au'myza's Oasis
@@ -464,7 +470,12 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 							i(185801),	-- Anomalous Starlit Breeches
 							i(185799),	-- Hyperlight Leggings
 							i(185813),	-- Signet of Collapsing Stars
-							i(185818),	-- So'leah's Secret Technique
+							i(185818, {	-- So'leah's Secret Technique
+								["timeline"] = { "added 9.1.0", "removed 9.2.0" },
+							}),
+							i(190958, {	-- So'leah's Secret Technique
+								["timeline"] = { "added 9.2.0" },
+							}),
 							i(185047, {	-- Yak Soul
 								["description"] = "Only confirmed drop on Hard Mode.",
 							}),
@@ -475,12 +486,3 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 		},
 	}),
 })));
-
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	tier(SL_TIER, {
-		inst(1194, {	-- Tazavesh, the Veiled Market
-			i(190958),	-- So'leah's Secret Technique
-			i(190652),	-- Ticking Sack of Terror
-		}),
-	}),
-}));

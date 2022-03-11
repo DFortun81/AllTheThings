@@ -8,7 +8,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			n(ACHIEVEMENTS, {
 				ach(15542),	-- Apocopocolypse Now
 				ach(15402, {	-- Cyphers of the First Ones
-					i(189455),	-- Schematic: Pale Regal Cervid
+					recipe(365040),	-- Pale Regal Cervid
 					crit(1),	-- All Metrial Cyphers
 					crit(2),	-- All Aelic Cyphers
 					crit(3),	-- All Dealic Cyphers

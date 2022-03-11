@@ -106,7 +106,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			}),
 		}),
 		ach(15402, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Cyphers of the First Ones
-			i(189455),	-- Schematic: Pale Regal Cervid
+			recipe(365040),	-- Pale Regal Cervid
 		})),
 		ach(15392, {	-- Dune Dominance
 			["timeline"] = { "added 9.2.0" },

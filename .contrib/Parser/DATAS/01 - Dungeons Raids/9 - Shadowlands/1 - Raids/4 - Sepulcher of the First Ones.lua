@@ -70,7 +70,21 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189175),	-- Mawforged Bridle
 						i(189991),	-- Snail Soul
 					},
-				})
+				}),
+				o(375905, {	-- Protoform Schematic
+					["description"] = "In the chains.",
+					--["coord"] = { X, Y, MAP },
+					["g"] = {
+						i(189461),	-- Schematic: Serenade
+					},
+				}),
+				o(375907, {	-- Protoform Schematic
+					["description"] = "Needs to defeat Halondrus.",
+					--["coord"] = { X, Y, MAP },
+					["g"] = {
+						i(189476),	-- Schematic: Curious Crystalsniffer
+					},
+				}),
 			}),
 			n(ZONE_DROPS, {
 				i(188957),	-- Genesis Mote
@@ -271,6 +285,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 								i(189802),	-- Loquacious Keeper's Peridot
 								i(188269),	-- Pocket Protoforge
 								i(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
+								i(189178),	-- Tools of Incomprehensible Experimentation (PS)
 								-- Tier
 								i(191014, {	-- Dreadful Hand Module
 									i(188863),	-- Gauntlets of the First Eidolon
@@ -597,6 +612,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189802),	-- Loquacious Keeper's Peridot
 						i(188269),	-- Pocket Protoforge
 						i(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
+						i(189178),	-- Tools of Incomprehensible Experimentation (PS)
 						-- Tier
 						i(191014, {	-- Dreadful Hand Module
 							i(188863),	-- Gauntlets of the First Eidolon
@@ -950,6 +966,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189802),	-- Loquacious Keeper's Peridot
 						i(188269),	-- Pocket Protoforge
 						i(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
+						i(189178),	-- Tools of Incomprehensible Experimentation (PS)
 						-- Tier
 						i(191014, {	-- Dreadful Hand Module
 							i(188863),	-- Gauntlets of the First Eidolon
@@ -1283,6 +1300,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189802),	-- Loquacious Keeper's Peridot
 						i(188269),	-- Pocket Protoforge
 						i(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
+						i(189178),	-- Tools of Incomprehensible Experimentation (PS)
 						-- Tier
 						i(191014, {	-- Dreadful Hand Module
 							i(188863),	-- Gauntlets of the First Eidolon
@@ -1531,13 +1549,6 @@ root("HiddenQuestTriggers", {
 			q(65828),	-- Killing Rygelon
 			q(65829),	-- Killing Rygelon
 			q(65975),	-- Killing Rygelon
-		-- Heroic (After 7 Normal Bosses killed)
-			q(65356),	-- Entering the Raid (Same as normal)
-		-- Returning to Oribos
-			q(65980),	-- Zoning into Oribos after clearing 7 Normal
-			q(65981),	-- Zoning into Oribos after clearing 7 Normal
-			q(65984),	-- Zoning into Oribos after clearing 7 Normal
-			q(65985),	-- Zoning into Oribos after clearing 7 Normal
 		}),
 	}),
 });

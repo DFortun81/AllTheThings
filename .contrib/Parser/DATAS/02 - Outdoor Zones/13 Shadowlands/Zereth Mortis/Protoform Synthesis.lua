@@ -231,10 +231,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189459 },	-- Schematic: Mawdapted Raptora
 				}),
-				q(65375, {	-- Schematic Reassimilation: Pale Regal Cervid
-					["sourceQuests"] = { 65427 },	-- A New Architect
-					["provider"] = { "i", 189455 },	-- Schematic: Pale Regal Cervid
-				}),
 				q(65393, {	-- Schematic Reassimilation: Prototype Leaper
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189469 },	-- Schematic: Prototype Leaper
@@ -253,6 +249,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189464 },	-- Schematic: Scarlet Helicid
 					["coord"] = { 47.7, 9.6, ZERETH_MORTIS },
+				}),
+				q(65384	, {	-- Schematic Reassimilation: Serenade
+					["sourceQuests"] = { 65427 },	-- A New Architect
+					["provider"] = { "i", 189461 },	-- Schematic: Serenade
 				}),
 				q(65379, {	-- Schematic Reassimilation: Sundered Zerethsteed
 					["sourceQuests"] = { 65427 },	-- A New Architect
@@ -274,24 +274,17 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					["provider"] = { "i", 189472 },	-- Schematic: Vespoid Flutterer
 					["coord"] = { 50.3, 27.1, ZERETH_MORTIS },
 				}),
-				--[[ Not Found Yet
-				q(65384	, {	-- Schematic Reassimilation: Serenade
-					["sourceQuests"] = { 65427 },	-- A New Architect
-					["provider"] = { "i", 189461 },	-- Schematic: Serenade
-					["coord"] = { , , ZERETH_MORTIS },
-				}),
-				--]]
 			}),
 			n(TREASURES, {
 				o(375391, {	-- Protoform Schematic
 					["description"] = "Hidden atop the ramp.",
-					["coord"] = { 35.0, 71.5, ZERETH_MORTIS },
+					["coord"] = { 35.0, 71.5, 2029 },
 					["g"] = {
 						i(189473),	-- Schematic: Bronzewing Vespoid
 					},
 				}),
 				o(375388, {	-- Protoform Schematic
-					["description"] = "Inside the top cage",
+					["description"] = "Inside the top cage.",
 					["coord"] = { 64.2, 35.6, ZERETH_MORTIS },
 					["g"] = {
 						i(189477),	-- Schematic: Darkened Vombata
@@ -925,6 +918,11 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 			i(189470),	-- Schematic: Patient Bufonid
 			recipe(365061),	-- Patient Bufonid
+			q(65375, {	-- Schematic Reassimilation: Pale Regal Cervid
+				["sourceQuests"] = { 65427 },	-- A New Architect
+				["provider"] = { "i", 189455 },	-- Schematic: Pale Regal Cervid
+			}),
+			i(189455),	-- Schematic: Pale Regal Cervid
 		}),
 	}),
 }));

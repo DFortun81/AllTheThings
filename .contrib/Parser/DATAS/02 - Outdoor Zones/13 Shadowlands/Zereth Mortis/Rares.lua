@@ -216,7 +216,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(190460),	-- High Reaver's Sickle
 					i(190124),	-- Interrogator's Vicious Dirk
 					i(190107),	-- Staff of Broken Coils
-					i(189178),	-- Tools of Incomprehensible Experimentation
 				},
 			}),
 			n(180978, {	-- Hirukon <Aurelid Prime>
@@ -285,7 +284,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(190103),	-- Pillar of Noxious Dissemination
 					i(190126),	-- Rotculler's Encroaching Shears
 					i(190107),	-- Staff of Broken Coils
-					i(189178),	-- Tools of Incomprehensible Experimentation
 				},
 			}),
 			n(178508, {	-- Mother Phestis <Tarachnid Prime>
@@ -374,7 +372,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(190127),	-- Marzan's Dancing Twin-Scythe
 					i(190461),	-- Reanimator's Beguiling Baton
 					i(190107),	-- Staff of Broken Coils
-					i(189178),	-- Tools of Incomprehensible Experimentation
 				},
 			}),
 			n(182120, {	-- Rhuv, Gorger of Ruin

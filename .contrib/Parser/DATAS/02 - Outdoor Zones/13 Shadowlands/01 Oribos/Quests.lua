@@ -129,6 +129,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					["isWeekly"] = true,
 					["timeline"] = { "added 9.2.0" },
 				}),
+				q(65775, {	-- Soloing Strategy
+					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
+					["coord"] = { 34.7, 56.5, ORIBOS },
+					["isWeekly"] = true,
+					["timeline"] = { "added 9.2.0" },
+				}),
 				q(65034, {	-- Return to Oribos
 					["sourceQuests"] = { 65033 },	-- Observing Victory
 					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
@@ -1151,6 +1157,7 @@ root("HiddenQuestTriggers", {
 	q(65030),	-- accepting/completing 'Battlegrounds' [65031]
 	q(65755),	-- triggered with 'A New Deal', selected 'Cosmic Gladiator's Resonator'
 	q(65617),	-- triggered after 'A New Deal', potentially Engineer teleporter unlock to Zereth Mortis
+	--q(66047),	-- Solo Shuffle Completion?
 });
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
