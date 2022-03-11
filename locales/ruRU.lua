@@ -2605,6 +2605,7 @@ for key,value in pairs({
 	[337237] = "Утерянное хранилище",	-- Lost Vault
 	[337241] = "Сложенное снаряжение",	-- Stashed Equipment
 	[339211] = "|cFFFFFFFFШаг 2:|r Пустая миска",	-- |cFFFFFFFFStep 2:|r Empty Dish
+	[339248] = "Зараженный тайник",	-- Infested Cache
 	[339283] = "Позабытый сундук аристократа",	-- Forgotten Noble's Chest
 	[339601] = "Свиток веков",	-- Scroll of Aeons
 	[339625] = "Дар Софии",	-- Sophia's Gift
@@ -2924,6 +2925,7 @@ for key,value in pairs({
 	--TODO: [373439] = "Flipper Fish School",	-- Flipper Fish School
 	--TODO: [373471] = "Mezzonic Cache",	-- Mezzonic Cache
 	--TODO: [373472] = "Glissandian Cache",	-- Glissandian Cache
+	[373473] = "Фугийский тайник",	-- Fugueal Cache
 	--TODO: [373474] = "Cantaric Cache",	-- Cantaric Cache
 	--TODO: [373543] = "Library Vault",	-- Library Vault
 	--TODO: [373548] = "Template Archive",	-- Template Archive
@@ -2953,6 +2955,7 @@ for key,value in pairs({
 	--TODO: [375067] = "Glissandian Cache",	-- Glissandian Cache
 	--TODO: [375068] = "Fugueal Cache",	-- Fugueal Cache
 	--TODO: [375069] = "Cantaric Cache",	-- Cantaric Cache
+	[375270] = "Схема протосинтеза",	-- Protoform Schematic
 	--TODO: [375272] = "Mawsworn Cache",	-- Mawsworn Cache
 	--TODO: [375281] = "Stolen Relic",	-- Stolen Relic
 	--TODO: [375283] = "Flow Restart Console (QG)",	-- Flow Restart Console (QG)
@@ -2961,7 +2964,6 @@ for key,value in pairs({
 	--TODO: [375362] = "Avian Chest",	-- Avian Chest
 	--TODO: [375363] = "Mawsworn Supply Chest",	-- Mawsworn Supply Chest
 	--TODO: [375366] = "Tarachnid Eggs",	-- Tarachnid Eggs
-	--TODO: [375368] = "Creation Catalyst Console",	-- Creation Catalyst Console
 	--TODO: [375369] = "Gnawed Valise",	-- Gnawed Valise
 	--TODO: [375370] = "Protoform Schematic",	-- Protoform Schematic
 	--TODO: [375371] = "Protoform Schematic",	-- Protoform Schematic
@@ -2999,6 +3001,7 @@ for key,value in pairs({
 	--TODO: [375486] = "Protoform Schematic",	-- Protoform Schematic
 	--TODO: [375492] = "Syntactic Vault",	-- Syntactic Vault
 	--TODO: [375493] = "Ripened Protopear",	-- Ripened Protopear
+	[375494] = "Сундук из округлого алькова",	-- Rondure Cache
 	--TODO: [375495] = "Undulating Foliage",	-- Undulating Foliage
 	--TODO: [375496] = "Bushel of Progenitor Produce",	-- Bushel of Progenitor Produce
 	--TODO: [375498] = "Protoform Schematic",	-- Protoform Schematic
@@ -3010,9 +3013,12 @@ for key,value in pairs({
 	--TODO: [375538] = "Lost Ovoid",	-- Lost Ovoid
 	--TODO: [375693] = "Protoform Schematic",	-- Protoform Schematic
 	--TODO: [375694] = "Protoform Schematic",	-- Protoform Schematic
+	--TODO: [375746] = "Protoform Schematic",	-- Protoform Schematic
 	--TODO: [375748] = "Protoform Schematic",	-- Protoform Schematic
 	--TODO: [375889] = "Protoform Schematic",	-- Protoform Schematic
+	[375893] = "Тайник с ценностями",	-- High Value Cache
 	--TODO: [375900] = "Protoform Schematic",	-- Protoform Schematic
+	[375902] = "Рваная призрачная пелерина",	-- Torn Ethereal Drape
 	--TODO: [375903] = "Protoform Schematic",	-- Protoform Schematic
 	--TODO: [375915] = "Glimmer of Serenity",	-- Glimmer of Serenity
 	--TODO: [375950] = "Bauble of Pure Innovation",	-- Bauble of Pure Innovation
@@ -3027,6 +3033,7 @@ for key,value in pairs({
 	--TODO: [375986] = "Firim in Exile, Part 6",	-- Firim in Exile, Part 6
 	--TODO: [375987] = "Firim in Exile, Part 7",	-- Firim in Exile, Part 7
 	--TODO: [375988] = "Firim in Exile, Epilogue",	-- Firim in Exile, Epilogue
+	[376041] = "Замаскированный тайник шифров",	-- Shrouded Cypher Cache
 	[9962198] = "Самодельная лужа жижи изгоя",	-- Outcast's Makeshift Muckpool
 	[9999890] = "Оскверненная добыча",	-- Corrupted Loot
 	[9999891] = "Только Основная Задача",	-- Main Objective Only
