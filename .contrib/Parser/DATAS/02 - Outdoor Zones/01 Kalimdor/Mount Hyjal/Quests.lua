@@ -907,6 +907,7 @@ _.Zones =
 					["sourceQuest"] = 29203,	-- Into the Depths
 				}),
 				q(25352, {	-- Sweeping the Shelf
+					["sourceQuest"] = 25278,	-- Cleaning House
 					["provider"] = { "n", 39433 },	-- Ian Duran
 					["coord"] = { 28.22, 29.74, MOUNT_HYJAL },
 					["races"] = ALLIANCE_ONLY,

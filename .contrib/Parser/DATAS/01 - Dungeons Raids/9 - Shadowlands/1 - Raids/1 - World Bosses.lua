@@ -213,6 +213,7 @@ root("HiddenQuestTriggers", {
 	q(62812),	-- Nurgash Muckformed kill questID
 	q(62811),	-- Oranomonos kill questID
 	q(62809),	-- Valinor kill questID
+	q(65695),	-- Antros kill questID
 });
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {

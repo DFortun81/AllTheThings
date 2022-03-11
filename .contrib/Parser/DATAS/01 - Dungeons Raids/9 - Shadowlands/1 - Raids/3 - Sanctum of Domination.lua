@@ -1268,6 +1268,15 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(SL_TIER, {
 		inst(1193, {	-- Sanctum of Domination
 			i(181374),	-- Sylvanas Shadowlands Bow
+			i(186414, {	-- Rae'shalare, Death's Whisper (LFR)
+				["bonusID"] = 451,
+			}),
+			i(186414, {	-- Rae'shalare, Death's Whisper (Heroic)
+				["bonusID"] = 1,
+			}),
+			i(186414, {	-- Rae'shalare, Death's Whisper (Mythic)
+				["bonusID"] = 450,
+			}),
 		}),
 	}),
 }));

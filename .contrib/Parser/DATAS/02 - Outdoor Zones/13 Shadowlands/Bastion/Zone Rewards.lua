@@ -19,7 +19,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				i(181635),	-- Honortoll Gavel
 				i(181630),	-- Honortoll Spear
 				i(184840),	-- Hymnal of the Path
-				i(184842),	-- Instructor's Divine Bell
+				i(184842, {	-- Instructor's Divine Bell
+					["timeline"] = {  "added 9.0.2", "removed 9.2.0" },
+				}),
+				i(190641, {	-- Instructor's Divine Bell
+					["timeline"] = { "added 9.2.0" },
+				}),
 				i(181627),	-- Lifepath Crossbow
 				i(181637),	-- Lifepath Hammer
 				i(184841),	-- Lyre of Sacred Purpose

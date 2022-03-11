@@ -6,31 +6,19 @@ root("ExpansionFeatures", tier(SL_TIER, {
 	m(1627, {	-- Torghast
 		n(SPECIAL, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			n(185453, {	-- Lost Soul
-				["description"] = "Obtained Layer 16.",
-				["g"] = {
-					i(189977),	-- Bat Soul
-				},
+				i(189977),	-- Bat Soul
 			}),
 			n(185557, {	-- Lost Soul
-				["description"] = "Obtained Layer 14-16.",
-				["g"] = {
-					i(189975),	-- Elekk Soul
-				},
+				i(189975),	-- Elekk Soul
 			}),
 			n(185552, {	-- Lost Soul
-				["description"] = "Obtained Layer 12-16.",
-				["g"] = {
-					i(189971),	-- Dragonhawk Soul
-				},
+				i(189971),	-- Dragonhawk Soul
 			}),
 			n(185559, {	-- Lost Soul
 				i(189987),	-- Pig Soul
 			}),
 			n(185558, {	-- Lost Soul
-				["description"] = "Obtained Layer 15-16 Coldheart Interstitia",
-				["g"] = {
-					i(189976),	-- Tallstrider Soul
-				},
+				i(189976),	-- Tallstrider Soul
 			}),
 		})),
 	}),

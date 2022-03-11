@@ -45,7 +45,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(190937),	-- Edge of the Enlightened
 		i(190934),	-- Standard of the Wandering Brokers
 		i(190946),	-- Emerald-Heart Protomaul
-		i(190943),	-- Jiro Tuning Hammer
 		i(190944),	-- Mace of Renewed Purpose
 		i(190949),	-- Stave of the Eternal Cycle
 		-- Quests
@@ -210,7 +209,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(188104),	-- [PH] Copy Vault Patroller's Slicer
 			i(188099),	-- [PH] Copy Vault Patroller's Staff
 
-			i(190641),	-- Instructor's Divine Bell
 			i(184123),	-- Sinful Gladiator's Cape
 			i(184145),	-- Sinful Aspirant's Greatcloak
 		}),

@@ -522,7 +522,13 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["isDaily"] = true,
 				["coord"] = { 27.6, 71.6, THE_MAW },
 				["g"] = {
-					i(186234),	-- Girdle of the Death Speaker
+					i(186234, {	-- Girdle of the Death Speaker
+						-- this is the only permanently-available source, but the Item can drop from other temporary creatures
+						["crs"] = {
+							177118,	-- Keeper of Chains
+							184426,	-- Leashkeeper Helzid
+						},
+					}),
 				},
 			}),
 			n(179805, bubbleDownSelf({ ["timeline"] = { "added 9.1.0" } }, {	-- Traitor Balthier

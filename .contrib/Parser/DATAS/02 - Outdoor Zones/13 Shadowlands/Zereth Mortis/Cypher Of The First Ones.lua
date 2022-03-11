@@ -16,7 +16,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				}),
 				ach(15508, {	-- Fashion of the First Ones
 					i(190182, {	-- Lovely Regal Pocopoc
-						--["questID"] = ,
+						["questID"] = 65600,
 					}),
 				}),
 				ach(15509),	-- Tales of the Exile
@@ -195,6 +195,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					},
 					["provider"] = { "n", 180800 },	-- Koh Shira
 					["coord"] = { 39.3, 55.5, 2027 },
+					-- TODO: maybe symlink these because they come from multiple quests?
+					["g"] = {
+						i(190985),	-- Crystallic Cryptic Mask
+						i(190983),	-- Scouring Cryptic Mask
+						i(190984),	-- Nova Cryptic Mask
+					},
 				}),
 				q(64649, {	-- A Mountain of Work to Do
 					["description"] = "Unable to accept this quest atm on ptr... but still showing mark on map.",
@@ -523,6 +529,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 							["g"] = {
 								i(190945),	-- Greatmaul of the Ancient Sentinels
 								i(190947),	-- Halo-Stave of the Oracles
+								i(190943),	-- Jiro Tuning Hammer
 							},
 						}),
 						i(191039, {	-- Pocopoc Traveler

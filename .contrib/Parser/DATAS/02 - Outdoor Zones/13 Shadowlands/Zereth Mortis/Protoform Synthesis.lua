@@ -185,6 +185,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189474 },	-- Schematic: Buzz
 				}),
+				q(65399, {	-- Schematic Reassimilation: Curious Crystalsniffer
+					["sourceQuests"] = { 65427 },	-- A New Architect
+					["provider"] = { "i", 189476 },	-- Schematic: Curious Crystalsniffer
+				}),
 				q(65400, {	-- Schematic Reassimilation: Darkened Vombata
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189477 },	-- Schematic: Darkened Vombata
@@ -218,6 +222,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 190585 },	-- Schematic: Heartbond Lupine
 					["coord"] = { 52.8, 63.6, ZERETH_MORTIS },
+				}),
+				q(65390, {	-- Schematic Reassimilation: Ineffable Skitterer
+					["sourceQuests"] = { 65427 },	-- A New Architect
+					["provider"] = { "i", 189467 },	-- Schematic: Ineffable Skitterer
+				}),
+				q(65382, {	-- Schematic Reassimilation: Mawdapted Raptora
+					["sourceQuests"] = { 65427 },	-- A New Architect
+					["provider"] = { "i", 189459 },	-- Schematic: Mawdapted Raptora
 				}),
 				q(65375, {	-- Schematic Reassimilation: Pale Regal Cervid
 					["sourceQuests"] = { 65427 },	-- A New Architect
@@ -263,21 +275,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					["coord"] = { 50.3, 27.1, ZERETH_MORTIS },
 				}),
 				--[[ Not Found Yet
-				q(65399, {	-- Schematic Reassimilation: Curious Crystalsniffer
-					["sourceQuests"] = { 65427 },	-- A New Architect
-					["provider"] = { "i", 189476 },	-- Schematic: Curious Crystalsniffer
-					["coord"] = { , , ZERETH_MORTIS },
-				}),
-				q(65390, {	-- Schematic Reassimilation: Ineffable Skitterer
-					["sourceQuests"] = { 65427 },	-- A New Architect
-					["provider"] = { "i", 189467 },	-- Schematic: Ineffable Skitterer
-					["coord"] = { , , ZERETH_MORTIS },
-				}),
-				q(65382, {	-- Schematic Reassimilation: Mawdapted Raptora
-					["sourceQuests"] = { 65427 },	-- A New Architect
-					["provider"] = { "i", 189459 },	-- Schematic: Mawdapted Raptora
-					["coord"] = { , , ZERETH_MORTIS },
-				}),
 				q(65384	, {	-- Schematic Reassimilation: Serenade
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189461 },	-- Schematic: Serenade
@@ -350,7 +347,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					},
 				}),
 				o(375903, {	-- Protoform Schematic
-					["description"] = "This chest only spawn during WQ Frog'it(65089).",
 					["coord"] = { 67, 69.4, ZERETH_MORTIS },
 					["g"] = {
 						i(189469),	-- Schematic: Prototype Leaper
@@ -444,17 +440,17 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				o(375915, {	-- Glimmer of Serenity
 					["description"] = "Multiple spawn places. Usually on top of an orb.",
 					["coords"] = {
-						{ 50, 11, ZERETH_MORTIS },
+						{ 50.0, 11.0, ZERETH_MORTIS },
 						{ 46.9, 11.2, ZERETH_MORTIS },
 						{ 64.7, 63.4, ZERETH_MORTIS },
 						{ 51.2, 28.3, ZERETH_MORTIS },
-						{ 50.7, 89, ZERETH_MORTIS },
+						{ 50.7, 89.0, ZERETH_MORTIS },
 						{ 67.1, 15.9, ZERETH_MORTIS },
-						{ 43, 35.5, ZERETH_MORTIS },
+						{ 43.0, 35.5, ZERETH_MORTIS },
 						{ 60.4, 25.3, ZERETH_MORTIS },
 						{ 52.9, 80.7, ZERETH_MORTIS },
 						{ 50.2, 32.2, ZERETH_MORTIS },
-						{ 67, 16, ZERETH_MORTIS },
+						{ 67.0, 16.0, ZERETH_MORTIS },
 						{ 32.8, 39.3, ZERETH_MORTIS },
 						{ 66.3, 27.2, ZERETH_MORTIS },
 						{ 37.7, 29.1, ZERETH_MORTIS },
@@ -827,7 +823,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 						["cost"] = {
 							{ "i", GENESIS, 500 },
 							{ "i", LUPINE_LATTICE, 1},
-							{ "i", 189174, 1 },	-- 1x Lens of Focused Intention
+							{ "i", 189172, 1 },	-- 1x Crystallized Echo of the First Song
 						},
 					}),
 					i(187679, {	-- Ineffable Skitterer

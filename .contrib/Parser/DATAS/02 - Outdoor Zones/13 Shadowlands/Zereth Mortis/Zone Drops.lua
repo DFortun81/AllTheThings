@@ -8,8 +8,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			i(190579),	-- Unformed Essence
 			-- Schematic
 			i(190585, {	-- Schematic: Heartbond Lupine
-				["description"] = "At the moment only drops from this Quest Objective Mob.",
-				["cr"] = 179939,	-- Maw-Frenzied Lupine
+				["crs"] = {
+					179939,	-- Maw-Frenzied Lupine
+					181412,	-- Mawsworn Hulk
+				},
 			}),
 			i(189468, {	-- Schematic: Goldplate Bufonid
 				["cr"] = 178803,	-- Accelerated Bufonid
@@ -234,7 +236,16 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				},
 			}),
 			i(189173, {	-- Eternal Ragepearl
-				["description"] = "Only from Antecedent Isle.",
+				["crs"] = {
+					183225,	-- Cliff Reclaimer
+					184268,	-- Discordant Sentry
+					183253,	-- Dominated Runeshaper
+					183249,	-- Dominated Worldbreaker
+					184408,	-- Euv'ouk
+					182430,	-- Fettered Gunner
+					182392,	-- Fettered Warden
+					183227,	-- Lost Rubble
+				},
 			}),
 		}),
 	}),

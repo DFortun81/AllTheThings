@@ -624,6 +624,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			o(376041, {	-- Shrouded Cypher Cache
 				["description"] = "Needs a piece with the ability to discover hidden caches equipped to see.",
 				["coords"] = {
+					{ 34.1, 70.5, ZERETH_MORTIS },
+					{ 36.3, 48.1, ZERETH_MORTIS },
 					{ 41.9, 34.2, ZERETH_MORTIS },
 					{ 60.9, 69.4, ZERETH_MORTIS },
 					{ 29.4, 49.3, ZERETH_MORTIS },
@@ -651,7 +653,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					{ 53.6, 35.9, ZERETH_MORTIS },
 				},
 			}),
-			o(375290, {	-- Cypher Bound Chest
+			o(375290, {	-- Cypher-Bound Chest
 				["coords"] = {
 					{ 59.5, 64.7, ZERETH_MORTIS },
 					{ 53.1, 63.8, ZERETH_MORTIS },
@@ -700,6 +702,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					{ 51.0, 65.3, ZERETH_MORTIS },
 					{ 71.1, 28.7, ZERETH_MORTIS },
 					{ 42.6, 76.5, ZERETH_MORTIS },
+				},
+				["g"] = {
+					i(190740),	-- Automa Integration
 				},
 			}),
 		}),
