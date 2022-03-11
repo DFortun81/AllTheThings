@@ -11,6 +11,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["repeatable"] = true,
 				["g"] = {
 					i(187780, {	-- Enlightened Broker Supplies
+						i(190930),	-- Dark Shawl of the Enlightened
 						i(190234, {	-- Enlightened Portal Research
 							-- ["questID"] =
 							["requireSkill"] = ENGINEERING,

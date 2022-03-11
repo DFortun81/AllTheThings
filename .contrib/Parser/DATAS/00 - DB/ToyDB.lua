@@ -1022,6 +1022,7 @@ i(188695);	-- Summer Cranial Skillet
 -----------------
 i(190237);	-- Broker Translocation Matrix
 i(190853);	-- Bushel of Mysterious Fruit
+i(187689);	-- Dance Dance Darkmoon
 i(188952);	-- Dominated Hearthstone
 i(190754);	-- Firim's Specimen Container
 i(190926);	-- Infested Automa Core

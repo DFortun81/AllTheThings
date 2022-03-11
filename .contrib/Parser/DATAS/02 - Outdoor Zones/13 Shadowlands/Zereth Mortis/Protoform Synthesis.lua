@@ -397,7 +397,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					["description"] = "Underwater left to Ancient Bufonid",
 					["coord"] = { 78.1, 53.1, ZERETH_MORTIS },
 					["g"] = {
-						i(189472),	-- Schematic: Vespoid Flutterer
+						i(189418),	-- Schematic: Ambystan Darter
 					},
 				}),
 				o(375981, {	-- Protoform Schematic

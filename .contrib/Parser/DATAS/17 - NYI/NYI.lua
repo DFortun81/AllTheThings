@@ -20,44 +20,43 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		},
 	}),
 	tier(SL_TIER, 2.0, {
-		-- Toys
-		i(190196),	-- Enlightened Hearthstone (TOY!)
-		-- Pets
-		pet(3246),	-- Tezpet
-		-- Mounts
-		i(187644),	-- Vicious Warstalker (A)
-		i(187642),	-- Vicious Warstalker (H)
-		-- Rare
-		i(189996),	-- Elegantly Balanced Axe
-		i(189917),	-- Constellation Master's Smock
-		i(189943),	-- Greaves of Cosmic Designs
-		i(189904),	-- Meticulous Architect's Mitts
-		-- Cosmetic
-		-- Cloak
-		i(190931),	-- Cape of the Regal Wanderer
-		i(190930),	-- Dark Shawl of the Enlightened
-		i(190929),	-- Ebony Protocloak
-		i(190933),	-- Majestic Oracle's Drape
-		i(190932),	-- Protohide Drape
-		i(190928),	-- Sandtails Drape
-		-- Wep
-		i(190935),	-- Distinguished Blade of Cartel Al
-		i(190937),	-- Edge of the Enlightened
-		i(190934),	-- Standard of the Wandering Brokers
-		i(190946),	-- Emerald-Heart Protomaul
-		i(190944),	-- Mace of Renewed Purpose
-		i(190949),	-- Stave of the Eternal Cycle
-		-- Quests
-		q(64870),	-- Paragon of Enlightened Brokers (I have this completed /Braghe)
-		q(65152),	-- A Hardened Bond (This is Soulbind Quest for Necrolords new one might cross complete?? /Braghe)
-		q(65249),	-- The Jailer's Defeat (A version already exist of this quest maybe the changed? /Braghe)
-
+		filter(TOYS, {
+			i(190196),	-- Enlightened Hearthstone (TOY!)
+		}),
+		filter(COSMETIC, {
+			-- Cloak
+			i(190931),	-- Cape of the Regal Wanderer
+			i(190929),	-- Ebony Protocloak
+			i(190933),	-- Majestic Oracle's Drape
+			i(190932),	-- Protohide Drape
+			i(190928),	-- Sandtails Drape
+			-- Wep
+			i(190935),	-- Distinguished Blade of Cartel Al
+			i(190937),	-- Edge of the Enlightened
+			i(190934),	-- Standard of the Wandering Brokers
+			i(190946),	-- Emerald-Heart Protomaul
+			i(190944),	-- Mace of Renewed Purpose
+			i(190949),	-- Stave of the Eternal Cycle
+		}),
+		n(QUESTS, {
+			q(64870),	-- Paragon of Enlightened Brokers (I have this completed /Braghe)
+			q(65152),	-- A Hardened Bond (This is Soulbind Quest for Necrolords new one might cross complete?? /Braghe)
+			q(65249),	-- The Jailer's Defeat (A version already exist of this quest maybe the changed? /Braghe)
+		}),
 		-- Shit that probably wont come on live
-		i(187674),	-- [PH] Progenitor Jellyfish (Dark)
-		-- Misc
-		i(189452),	-- 9.2 Mount Crafting Bag of Goodies
-		i(189428),	-- 9.2 Pet Battle Playtest Bag of Goodies
-		i(190383),	-- Progenitor Essentia Lattice
+		filter(MOUNTS, {
+			i(187644),	-- Vicious Warstalker (A)
+			i(187642),	-- Vicious Warstalker (H)
+			i(187674),	-- [PH] Progenitor Jellyfish (Dark)
+		}),
+		filter(BATTLE_PETS, {
+			pet(3246),	-- Tezpet
+		}),
+		filter(MISC, {
+			i(189452),	-- 9.2 Mount Crafting Bag of Goodies
+			i(189428),	-- 9.2 Pet Battle Playtest Bag of Goodies
+			i(190383),	-- Progenitor Essentia Lattice
+		}),
 		n(ARMOR, {
 			filter(CLOTH, {
 				i(188065),	-- Choral Bands
@@ -85,6 +84,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(190278),	-- Enlightened Researcher's Visage
 				i(190281),	-- Enlightened Researcher's Wraps
 				i(190249),	-- Enlightened Researcher's Wristbands
+				--
+				i(189904),	-- Meticulous Architect's Mitts
 			}),
 			filter(LEATHER, {
 				i(188068),	-- Staccato Bands
@@ -112,6 +113,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(190283),	-- Unbound Explorer's Striders
 				i(190286),	-- Unbound Explorer's Trousers
 				i(190287),	-- Unbound Explorer's Waistwrap
+				--
+				i(189917),	-- Constellation Master's Smock
 			}),
 			filter(MAIL, {
 				i(188074),	-- Anthemic Boots
@@ -139,6 +142,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(190290),	-- Transcendent Vagabond's Striders
 				i(190262),	-- Transcendent Vagabond's Waistguard
 				i(190296),	-- Transcendent Vagabond's Wristguards
+				--
+				i(189943),	-- Greaves of Cosmic Designs
 			}),
 			filter(PLATE, {
 				i(188082),	-- Harmonium Armor
@@ -206,6 +211,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 
 			i(184123),	-- Sinful Gladiator's Cape
 			i(184145),	-- Sinful Aspirant's Greatcloak
+		}),
+		n(WEAPONS, {
+			i(189996),	-- Elegantly Balanced Axe
 		}),
 	}),
 	filter(BATTLE_PETS, {

@@ -22,9 +22,9 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 			ach(15214),	-- What a Feeling
 		})),
 		ach(6019),	-- Come One, Come All!
-		ach(15221, {	-- Dancing Machine
-			["timeline"] = { "added 9.2.0" },
-		}),
+		ach(15221, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Dancing Machine
+			i(187689),	-- Dance Dance Darkmoon (TOY!)
+		})),
 		ach(6028, {	-- Darkmoon Defender
 			crit(1, {	-- Adventurer's Journal
 				["_quests"] = { 29458 },	-- The Captured Journal
