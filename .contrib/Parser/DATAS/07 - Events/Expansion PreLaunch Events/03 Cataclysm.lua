@@ -35,14 +35,14 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 3.3.3.11573", "
 			q(25212, {	-- Vent Horizon
 				["sourceQuest"] = 25295,	-- Press Fire
 			}),
-			q(25286, {	-- Words for Delivery
+			q(25500, {	-- Words for Delivery
 				["sourceQuest"] = 25283,	-- Prepping the Speech
 				["groups"] = {
 					i(54651),	-- Gnomeregan Pride (TOY!)
 				},
 			}),
 			q(25287, {	-- Words for Delivery
-				["sourceQuest"] = 25286,	-- Words for Delivery
+				["sourceQuest"] = 25500,	-- Words for Delivery
 			}),
 		})),
 		n(QUESTS, sharedData({ ["races"] = HORDE_ONLY }, {
@@ -240,11 +240,8 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 3.3.3.11573", "
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(CATA_TIER, {
 		n(QUESTS, {
-			q(25500, {	-- Words for Delivery
-				["sourceQuest"] = 25283,	-- Prepping the Speech
-				["groups"] = {
-					i(54651),	-- Gnomeregan Pride (TOY!)
-				},
+			q(25286, {	-- Words for Delivery
+				["_drop"] = { "g" },	-- drop Gnomeregan Pride (TOY!)
 			}),
 		}),
 	}),
