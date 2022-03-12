@@ -15,7 +15,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(170591),	-- Heart-Lesion Blade
 						i(170604),	-- Heart-Lesion Runeblade
 					}),
-					n(-9950, {	-- Unholy
+					cl(DEATHKNIGHT, UNHOLY, {
 						i(170604),	-- Heart-Lesion Runeblade
 						i(170762),	-- Heart-Lesion Helm
 						i(170764),	-- Heart-Lesion Pauldrons
@@ -33,7 +33,7 @@ root("GearSets", n(CLASS_TRIAL, {
 					}),
 				}),
 				cl(DEMONHUNTER, {
-					n(-9934, {	-- Havoc
+					cl(DEMONHUNTER, HAVOC, {
 						i(170941),	-- Illidari Warglaives
 						i(170929),	-- Illidari Blindfold
 						i(170928),	-- Illidari Shoulders
@@ -55,7 +55,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(170617), -- Springrain Spear
 						i(170611), -- Springrain Stave
 					}),
-					n(-9926, {	-- Balance
+					cl(DRUID, BALANCE, {
 						i(170611),	-- Springrain Stave
 						i(170778),	-- Springrain Headpiece
 						i(170780),	-- Springrain Spaulders
@@ -71,7 +71,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(170613),	-- Springrain Idol of Destruction
 						i(170616),	-- Springrain Stone of Destruction
 					}),
-					n(-9925, {	-- Feral
+					cl(DRUID, FERAL, {
 						i(170617),	-- Springrain Spear
 						i(170786),	-- Springrain Helm
 						i(170788),	-- Springrain Pauldrons
@@ -93,7 +93,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(170638),	-- Trailseeker Shotgun
 						i(170639),	-- Trailseeker Spear
 					}),
-					n(-9936, {	-- Beast Mastery
+					cl(HUNTER, BEAST_MASTERY, {
 						i(170638),	-- Trailseeker Shotgun
 						i(170802),	-- Trailseeker Helm
 						i(170804),	-- Trailseeker Spaulders
@@ -111,7 +111,7 @@ root("GearSets", n(CLASS_TRIAL, {
 					}),
 				}),
 				cl(MAGE, {
-					n(-9920, {	-- Frost
+					cl(MAGE, FROST, {
 						i(170646),	-- Mountainsage Staff
 						i(170809),	-- Mountainsage Hood
 						i(170812),	-- Mountainsage Shoulderpads
@@ -134,7 +134,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(170659),	-- Mistdancer Staff
 						i(170660),	-- Mistdancer Sword
 					}),
-					n(-9932, {	-- Windwalker
+					cl(MONK, WINDWALKER, {
 						i(170660),	-- Mistdancer Sword
 						i(170818),	-- Mistdancer Helm
 						i(170820),	-- Mistdancer Pauldrons
@@ -158,7 +158,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(170675),	-- Sunsoul Sword
 						i(170677),	-- Sunsoul Warmaul
 					}),
-					n(-9944, {	-- Retribution
+					cl(PALADIN, RETRIBUTION, {
 						i(170677),	-- Sunsoul Warmaul
 						i(170834),	-- Sunsoul Helm
 						i(170836),	-- Sunsoul Pauldrons
@@ -176,7 +176,7 @@ root("GearSets", n(CLASS_TRIAL, {
 					}),
 				}),
 				cl(PRIEST, {
-					n(-9915, {	-- Discipline
+					cl(PRIEST, DISCIPLINE, {
 						i(170701),	-- Communal Staff
 						i(170857),	-- Communal Hood
 						i(170860),	-- Communal Shoulderpads
@@ -199,7 +199,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(170711),	-- Lightdrinker Shiv
 						i(170712),	-- Lightdrinker Sword
 					}),
-					n(-9928, {	-- Assassination
+					cl(ROGUE, ASSASSINATION, {
 						i(170710),	-- Lightdrinker Dagger
 						i(170711),	-- Lightdrinker Shiv
 						i(170874),	-- Lightdrinker Hood
@@ -223,7 +223,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(170724),	-- Streamtalker Claws
 						i(170726),	-- Streamtalker Talons
 					}),
-					n(-9939, {	-- Elemental
+					cl(SHAMAN, ELEMENTAL, {
 						i(170725),	-- Streamtalker Aegis
 						i(170724),	-- Streamtalker Claws
 						i(170882),	-- Streamtalker Coif
@@ -240,7 +240,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(170720),	-- Streamtalker Idol of Destruction
 						i(170723),	-- Streamtalker Stone of Destruction
 					}),
-					n(-9940, {	-- Enhancement
+					cl(SHAMAN, ENHANCEMENT, {
 						i(170726),	-- Streamtalker Talons
 						i(170890),	-- Streamtalker Helm
 						i(170894),	-- Streamtalker Armguard
@@ -258,7 +258,7 @@ root("GearSets", n(CLASS_TRIAL, {
 					}),
 				}),
 				cl(WARLOCK, {	-- Level 50 Boost provides the Level 48 items. Confirmed by Timum 24.09.2021
-					n(-9921, {	-- Affliction
+					cl(WARLOCK, AFFLICTION, {
 						i(154024),	-- Felsoul Stave
 						i(154016),	-- Felsoul Cowl
 						i(154009),	-- Felsoul Medallion
@@ -306,10 +306,10 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(CLASS_TRIAL, {
 		tier(BFA_TIER, {
 			cl(DEATHKNIGHT, {
-				n(-9950, {	-- Unholy
+				cl(DEATHKNIGHT, UNHOLY, {
 					i(170593),	-- Heart-Lesion Pendant
 				}),
-				n(-9948, {	-- Blood
+				cl(DEATHKNIGHT, BLOOD, {
 					i(170590),	-- Heart-Lesion Greatsword
 					i(170770),	-- Heart-Lesion Faceguard
 					i(170599),	-- Heart-Lesion Amulet
@@ -328,7 +328,7 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				}),
 			}),
 			cl(DEMONHUNTER, {
-				n(-9934, {	-- Havoc
+				cl(DEMONHUNTER, HAVOC, {
 					-- 8.0.1
 					i(164760),	-- Illidari Warglaives
 					i(164748),	-- Illidari Blindfold
@@ -351,13 +351,13 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				}),
 			}),
 			cl(DRUID, {
-				n(-9926, {	-- Balance
+				cl(DRUID, BALANCE, {
 					i(170627),	-- Springrain Choker
 				}),
-				n(-9925, {	-- Feral
+				cl(DRUID, FERAL, {
 					i(170606),	-- Springrain Choker
 				}),
-				n(-9924, {	-- Guardian
+				cl(DRUID, GUARDIAN, {
 					i(170619),	-- Springrain Necklace
 					i(170626),	-- Springrain Cloak of Durability
 					i(170630),	-- Springrain Band of Durability
@@ -365,7 +365,7 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(170628),	-- Springrain Idol of Durability
 					i(170631),	-- Springrain Stone of Durability
 				}),
-				n(-9927, {	-- Restoration
+				cl(DRUID, RESTORATION, {
 					i(170625),	-- Springrain Staff
 					i(170794),	-- Springrain Hood
 					i(170612),	-- Springrain Medallion
@@ -384,24 +384,24 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				}),
 			}),
 			cl(HUNTER, {
-				n(-9936, {	-- Beast Mastery
+				cl(HUNTER, BEAST_MASTERY, {
 					i(170633),	-- Trailseeker Choker
 				}),
 			}),
 			cl(MAGE, {
-				n(-9920, {	-- Frost
+				cl(MAGE, FROST, {
 					i(170640),	-- Mountainsage Medallion
 				}),
 			}),
 			cl(MONK, {
-				n(-9931, {	-- Brewmaster
+				cl(MONK, BREWMASTER, {
 					i(170647),	-- Mistdancer Amulet
 					i(170648),	-- Mistdancer Band of Stoicism
 					i(170649),	-- Mistdancer Ring of Stoicism
 					i(170652),	-- Mistdancer Defender Idol
 					i(170650),	-- Mistdancer Defender Stone
 				}),
-				n(-9933, {	-- Mistweaver
+				cl(MONK, MISTWEAVER, {
 					i(170825),	-- Mistdancer Hood
 					i(170655),	-- Mistdancer Necklace
 					i(170827),	-- Mistdancer Shoulders
@@ -417,12 +417,12 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(170654),	-- Mistdancer Idol of Wisdom
 					i(170658),	-- Mistdancer Stone of Wisdom
 				}),
-				n(-9932, {	-- Windwalker
+				cl(MONK, WINDWALKER, {
 					i(170662),	-- Mistdancer Choker
 				}),
 			}),
 			cl(PALADIN, {
-				n(-9942, {	-- Holy
+				cl(PALADIN, HOLY, {
 					i(170674),	-- Sunsoul Shield
 					i(170842),	-- Sunsoul Headpiece
 					i(170668),	-- Sunsoul Necklace
@@ -439,7 +439,7 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(170669),	-- Sunsoul Idol of Wisdom
 					i(170672),	-- Sunsoul Stone of Wisdom
 				}),
-				n(-9943, {	-- Protection
+				cl(PALADIN, PROTECTION, {
 					i(170850),	-- Sunsoul Faceguard
 					i(170685),	-- Sunsoul Amulet
 					i(170852),	-- Sunsoul Shoulderguards
@@ -455,15 +455,15 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(170686),	-- Sunsoul Defender Idol
 					i(170689),	-- Sunsoul Defender Stone
 				}),
-				n(-9944, {	-- Retribution
+				cl(PALADIN, RETRIBUTION, {
 					i(170679),	-- Sunsoul Pendant
 				}),
 			}),
 			cl(PRIEST, {
-				n(-9915, {	-- Discipline
+				cl(PRIEST, DISCIPLINE, {
 					i(170696),	-- Communal Necklace
 				}),
-				n(-9917, {	-- Shadow
+				cl(PRIEST, SHADOW, {
 					i(170703),	-- Communal Stave
 					i(170865),	-- Communal Cowl
 					i(170690),	-- Communal Medallion
@@ -482,18 +482,18 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				}),
 			}),
 			cl(ROGUE, {
-				n(-9928, {	-- Assassination
+				cl(ROGUE, ASSASSINATION, {
 					i(170705),	-- Lightdrinker Choker
 				}),
 			}),
 			cl(SHAMAN, {
-				n(-9939, {	-- Elemental
+				cl(SHAMAN, ELEMENTAL, {
 					i(170719),	-- Streamtalker Medallion
 				}),
-				n(-9940, {	-- Enhancement
+				cl(SHAMAN, ENHANCEMENT, {
 					i(170714),	-- Streamtalker Choker
 				}),
-				n(-9941, {	-- Restoration
+				cl(SHAMAN, RESTORATION, {
 					i(170734),	-- Streamtalker Slicers
 					i(170735),	-- Streamtalker Shield
 					i(170898),	-- Streamtalker Cowl
@@ -513,15 +513,15 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				}),
 			}),
 			cl(WARLOCK, {
-				n(-9921, {	-- Affliction
+				cl(WARLOCK, AFFLICTION, {
 					i(170736),	-- Felsoul Medallion
 				}),
 			}),
 			cl(WARRIOR, {
-				n(-9945, {	-- Arms
+				cl(WARRIOR, ARMS, {
 					i(170757),	-- Oathsworn Pendant
 				}),
-				n(-9947, {	-- Protection
+				cl(WARRIOR, PROTECTION, {
 					i(170922),	-- Oathsworn Faceguard
 					i(170748),	-- Oathsworn Amulet
 					i(170924),	-- Oathsworn Shoulderguards

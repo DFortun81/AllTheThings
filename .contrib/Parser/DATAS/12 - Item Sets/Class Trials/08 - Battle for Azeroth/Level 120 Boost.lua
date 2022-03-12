@@ -15,7 +15,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(170591),	-- Heart-Lesion Blade
 						i(170604),	-- Heart-Lesion Runeblade
 					}),
-					n(-9950, {	-- Unholy
+					cl(DEATHKNIGHT, UNHOLY, {
 						i(170604),	-- Heart-Lesion Runeblade
 						i(170762),	-- Heart-Lesion Helm
 						i(170764),	-- Heart-Lesion Pauldrons
@@ -33,7 +33,7 @@ root("GearSets", n(CLASS_TRIAL, {
 					}),
 				}),
 				cl(DEMONHUNTER, {
-					n(-9934, {	-- Havoc
+					cl(DEMONHUNTER, HAVOC, {
 						i(170941),	-- Illidari Warglaives
 						i(170929),	-- Illidari Blindfold
 						i(170928),	-- Illidari Shoulders
@@ -55,7 +55,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(170617), -- Springrain Spear
 						i(170611), -- Springrain Stave
 					}),
-					n(-9926, {	-- Balance
+					cl(DRUID, BALANCE, {
 						i(170611),	-- Springrain Stave
 						i(170778),	-- Springrain Headpiece
 						i(170780),	-- Springrain Spaulders
@@ -71,7 +71,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(170613),	-- Springrain Idol of Destruction
 						i(170616),	-- Springrain Stone of Destruction
 					}),
-					n(-9925, {	-- Feral
+					cl(DRUID, FERAL, {
 						i(170617),	-- Springrain Spear
 						i(170786),	-- Springrain Helm
 						i(170788),	-- Springrain Pauldrons
@@ -93,7 +93,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(170638),	-- Trailseeker Shotgun
 						i(170639),	-- Trailseeker Spear
 					}),
-					n(-9936, {	-- Beast Mastery
+					cl(HUNTER, BEAST_MASTERY, {
 						i(170638),	-- Trailseeker Shotgun
 						i(170802),	-- Trailseeker Helm
 						i(170804),	-- Trailseeker Spaulders
@@ -111,7 +111,7 @@ root("GearSets", n(CLASS_TRIAL, {
 					}),
 				}),
 				cl(MAGE, {
-					n(-9920, {	-- Frost
+					cl(MAGE, FROST, {
 						i(170646),	-- Mountainsage Staff
 						i(170809),	-- Mountainsage Hood
 						i(170812),	-- Mountainsage Shoulderpads
@@ -134,7 +134,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(170659),	-- Mistdancer Staff
 						i(170660),	-- Mistdancer Sword
 					}),
-					n(-9932, {	-- Windwalker
+					cl(MONK, WINDWALKER, {
 						i(170660),	-- Mistdancer Sword
 						i(170818),	-- Mistdancer Helm
 						i(170820),	-- Mistdancer Pauldrons
@@ -158,7 +158,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(170675),	-- Sunsoul Sword
 						i(170677),	-- Sunsoul Warmaul
 					}),
-					n(-9944, {	-- Retribution
+					cl(PALADIN, RETRIBUTION, {
 						i(170677),	-- Sunsoul Warmaul
 						i(170834),	-- Sunsoul Helm
 						i(170836),	-- Sunsoul Pauldrons
@@ -176,7 +176,7 @@ root("GearSets", n(CLASS_TRIAL, {
 					}),
 				}),
 				cl(PRIEST, {
-					n(-9915, {	-- Discipline
+					cl(PRIEST, DISCIPLINE, {
 						i(170701),	-- Communal Staff
 						i(170857),	-- Communal Hood
 						i(170860),	-- Communal Shoulderpads
@@ -199,7 +199,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(170711),	-- Lightdrinker Shiv
 						i(170712),	-- Lightdrinker Sword
 					}),
-					n(-9928, {	-- Assassination
+					cl(ROGUE, ASSASSINATION, {
 						i(170710),	-- Lightdrinker Dagger
 						i(170711),	-- Lightdrinker Shiv
 						i(170874),	-- Lightdrinker Hood
@@ -223,7 +223,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(170724),	-- Streamtalker Claws
 						i(170726),	-- Streamtalker Talons
 					}),
-					n(-9939, {	-- Elemental
+					cl(SHAMAN, ELEMENTAL, {
 						i(170725),	-- Streamtalker Aegis
 						i(170724),	-- Streamtalker Claws
 						i(170882),	-- Streamtalker Coif
@@ -240,7 +240,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(170720),	-- Streamtalker Idol of Destruction
 						i(170723),	-- Streamtalker Stone of Destruction
 					}),
-					n(-9940, {	-- Enhancement
+					cl(SHAMAN, ENHANCEMENT, {
 						i(170726),	-- Streamtalker Talons
 						i(170890),	-- Streamtalker Helm
 						i(170894),	-- Streamtalker Armguard
@@ -258,7 +258,7 @@ root("GearSets", n(CLASS_TRIAL, {
 					}),
 				}),
 				cl(WARLOCK, {	-- Level 50 Boost provides the Level 48 items. Confirmed by Timum 24.09.2021
-					n(-9921, {	-- Affliction
+					cl(WARLOCK, AFFLICTION, {
 						i(154024),	-- Felsoul Stave
 						i(154016),	-- Felsoul Cowl
 						i(154009),	-- Felsoul Medallion

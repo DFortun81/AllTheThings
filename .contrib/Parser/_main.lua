@@ -426,7 +426,66 @@ ALL_CLASSES = {	-- NOTE: Use this with the exclude function.
 };
 
 -- Specializations
+
+-- Death Knight
+BLOOD = 250;
+FROST = 251;
+UNHOLY = 252;
+
+-- Demon Hunter
+HAVOC = 577;
+VENGEANCE = 581;
+
+-- Druid
+BALANCE = 102;
+FERAL = 103;
+GUARDIAN = 104;
+RESTORATION = 105;
+
+-- Hunter
+BEAST_MASTERY = 253;
+MARKSMANSHIP = 254;
+SURVIVAL = 255;
+
+-- Mage
 ARCANE = 62;
+FIRE = 63;
+--FROST = 64;
+
+-- Monk
+BREWMASTER = 268;
+WINDWALKER = 269;
+MISTWEAVER = 270;
+
+-- Paladin
+HOLY = 65;
+PROTECTION = 66;
+RETRIBUTION = 70;
+
+-- Priest
+DISCIPLINE = 256;
+--HOLY = 257;
+SHADOW = 258;
+
+-- Rogue
+ASSASSINATION = 259;
+OUTLAW = 260;
+SUBTLETY = 261;
+
+-- Shaman
+ELEMENTAL = 262;
+ENHANCEMENT = 263;
+--RESTORATION = 264;
+
+-- Warlock
+AFFLICTION = 265;
+DEMONOLOGY = 266;
+DESTRUCTION = 267;
+
+-- Warrior
+ARMS = 71;
+FURY = 72;
+--PROTECTION = 73;
 
 -- Achievement Categories
 ACHIEVEMENT_CATEGORY_CHARACTER = 92;
@@ -1432,6 +1491,17 @@ cl = function(id, specc, t)									-- Create a CHARACTER CLASS Object
 	if not t then
 		t = specc;
 	else
+		if specc == FROST or specc == RESTORATION or specc == HOLY or specc == PROTECTION then
+			if id == MAGE then
+				specc = 64;
+			elseif id == SHAMAN then
+				specc = 264;
+			elseif id == PRIEST then
+				specc = 257
+			elseif id == WARRIOR then
+				specc = 73;
+			end
+		end
 		id = id + (specc / 1000 )
 		t = togroups(t)
 	end;

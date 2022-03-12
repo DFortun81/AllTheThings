@@ -1332,43 +1332,6 @@ app.L = {
 		[-9912] = "Interface\\FriendsFrame\\PlusManz-PlusManz",						-- Neutral
 		[-9913] = "Interface\\FriendsFrame\\PlusManz-Horde",						-- Horde
 		[-9914] = "Interface\\FriendsFrame\\PlusManz-Alliance",						-- Alliance
-	-- Specs
-		[-9915] = "Interface\\Icons\\spell_holy_wordfortitude",						-- Discipline Priest Spec
-		-- [-9916] -- Holy Priest Spec
-		[-9917] = "Interface\\Icons\\spell_shadow_shadowwordpain",					-- Shadow Priest Spec
-		-- [-9918] -- Arcane Mage Spec
-		-- [-9919] -- Fire Mage Spec
-		[-9920] = "Interface\\Icons\\Spell_frost_frostbolt02",						-- Frost Mage Spec
-		[-9921] = "Interface\\Icons\\Spell_shadow_deathcoil",						-- Affliction Warlock Spec
-		-- [-9922] -- Demonology Warlock Spec
-		-- [-9923] -- Destruction Warlock Spec
-		[-9924] = "Interface\\Icons\\TalentSpec_Druid_Feral_Bear",					-- Guardian Druid Spec
-		[-9925] = "Interface\\Icons\\TalentSpec_Druid_Feral_Cat",					-- Feral Druid Spec
-		[-9926] = "Interface\\Icons\\Spell_nature_starfall",						-- Balance Druid Spec
-		[-9927] = "Interface\\Icons\\Spell_nature_healingtouch",					-- Restoration Druid Spec
-		[-9928] = "Interface\\Icons\\Ability_rogue_deadlybrew",						-- Assassination Rogue Spec
-		-- [-9929] -- Outlaw Rogue Spec
-		-- [-9930] -- Subtlety Rogue Spec
-		[-9931] = "Interface\\Icons\\Spell_Monk_Brewmaster_Spec",					-- Brewmaster Monk Spec
-		[-9932] = "Interface\\Icons\\Spell_Monk_WindWalker_Spec",					-- Windwalker Monk Spec
-		[-9933] = "Interface\\Icons\\Spell_Monk_MistWeaver_Spec",					-- Mistweaver Monk Spec
-		[-9934] = "Interface\\Icons\\Ability_demonhunter_specdps",					-- Havoc Demon Hunter Spec
-		-- [-9935] -- Vengeance Demon Hunter Spec
-		[-9936] = "Interface\\Icons\\Ability_hunter_bestialdiscipline",				-- Beast Mastery Hunter Spec
-		-- [-9937] -- Marksmanship Hunter Spec
-		[-9938] = "Interface\\Icons\\Ability_hunter_camouflage",					-- Survival Hunter Spec
-		[-9939] = "Interface\\Icons\\spell_nature_lightning",						-- Elemental Shaman Spec
-		[-9940] = "Interface\\Icons\\Spell_shaman_improvedstormstrike",				-- Enhancement Shaman Spec
-		[-9941] = "Interface\\Icons\\spell_nature_magicimmunity",					-- Restoration Shaman Spec
-		[-9942] = "Interface\\Icons\\Spell_Holy_HolyBolt",							-- Holy Paladin Spec
-		[-9943] = "Interface\\Icons\\Ability_Paladin_ShieldoftheTemplar",			-- Protection Paladin Spec
-		[-9944] = "Interface\\Icons\\spell_holy_auraoflight",						-- Retribution Paladin Spec
-		[-9945] = "Interface\\Icons\\Ability_warrior_savageblow",					-- Arms Warrior Spec
-		-- [-9946] -- Fury Warrior Spec
-		[-9947] = "Interface\\Icons\\INV_Shield_06",								-- Protection Warrior Spec
-		[-9948] = "Interface\\Icons\\Spell_Deathknight_BloodPresence",				-- Blood Death Knight Spec
-		[-9949] = "Interface\\Icons\\Spell_Deathknight_FrostPresence",				-- Frost Death Knight Spec
-		[-9950] = "Interface\\Icons\\Spell_Deathknight_UnholyPresence",				-- Unholy Death Knight Spec
 	------ ACHIEVEMENT HEADERS SECTION ------
 	-- Is Used Somewhere
 		[-9965] = "Interface\\Icons\\achievement_level_110",						-- Class Hall
@@ -1912,33 +1875,6 @@ app.L = {
 		[-9912] = COMBATLOG_FILTER_STRING_NEUTRAL_UNITS,						-- Neutral
 		[-9913] = FACTION_HORDE, 												-- Horde
 		[-9914] = FACTION_ALLIANCE, 											-- Alliance
-	-- Specs
-		[-9915] = GetSpellInfo(137032),											-- Discipline Priest Spec
-		[-9917] = GetSpellInfo(137033),											-- Shadow Priest Spec
-		[-9920] = GetSpellInfo(137020),											-- Frost Mage Spec
-		[-9921] = GetSpellInfo(137043),											-- Affliction Warlock Spec
-		[-9924] = GetSpellInfo(137010),											-- Guardian Druid Spec
-		[-9925] = GetSpellInfo(137011),											-- Feral Druid Spec
-		[-9926] = GetSpellInfo(137013),											-- Balance Druid Spec
-		[-9927] = GetSpellInfo(137012),											-- Restoration Druid Spec
-		[-9928] = GetSpellInfo(137037),											-- Assassination Rogue Spec
-		[-9931] = GetSpellInfo(137023),											-- Brewmaster Monk Spec
-		[-9932] = GetSpellInfo(137025),											-- Windwalker Monk Spec
-		[-9933] = GetSpellInfo(137024),											-- Mistweaver Monk Spec
-		[-9934] = GetSpellInfo(212612),											-- Havoc Demon Hunter Spec
-		[-9936] = GetSpellInfo(137015),											-- Beast Mastery Hunter Spec
-		[-9938] = GetSpellInfo(137017),											-- Survival Hunter Spec
-		[-9939] = GetSpellInfo(137040),											-- Elemental Shaman Spec
-		[-9940] = GetSpellInfo(137041),											-- Enhancement Shaman Spec
-		[-9941] = GetSpellInfo(137039),											-- Restoration Shaman Spec
-		[-9942] = GetSpellInfo(137029),											-- Holy Paladin Spec
-		[-9943] = GetSpellInfo(137028),											-- Protection Paladin Spec
-		[-9944] = GetSpellInfo(137027),											-- Retribution Paladin Spec
-		[-9945] = GetSpellInfo(137049),											-- Arms Warrior Spec
-		[-9947] = GetSpellInfo(137048),											-- Protection Warrior Spec
-		[-9948] = GetSpellInfo(137008),											-- Blood Death Knight Spec
-		[-9949] = GetSpellInfo(137006),											-- Frost Death Knight Spec
-		[-9950] = GetSpellInfo(137007),											-- Unholy Death Knight Spec
 	------ ACHIEVEMENT HEADERS SECTION ------
 		[-9965] = select(1,GetCategoryInfo(15304)),								-- Class Hall
 		[-9966] = select(1,GetCategoryInfo(15303)),								-- Draenor Garrison

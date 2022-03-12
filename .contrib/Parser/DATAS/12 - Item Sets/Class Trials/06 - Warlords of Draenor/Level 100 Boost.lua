@@ -14,7 +14,7 @@ root("GearSets", n(CLASS_TRIAL, {
 					i(142023, {	-- Adventurer's Footlocker
 						i(129435),	-- Heart-Lesion Blade
 					}),
-					n(-9950, {	-- Unholy
+					cl(DEATHKNIGHT, UNHOLY, {
 						i(129456),	-- Heart-Lesion Runeblade
 						i(129430),	-- Heart-Lesion Helm
 						i(129437),	-- Heart-Lesion Pendant
@@ -49,7 +49,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(129577),	-- Springrain Stone of Destruction
 						i(129563),	-- Springrain Stone of Rage
 					}),
-					n(-9926, {	-- Balance
+					cl(DRUID, BALANCE, {
 						i(129570),	-- Springrain Stave
 						i(129567),	-- Springrain Headpiece
 						i(129588),	-- Springrain Necklace
@@ -66,7 +66,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(129574),	-- Springrain Idol of Destruction
 						i(129577),	-- Springrain Stone of Destruction
 					}),
-					n(-9925, {	-- Feral
+					cl(DRUID, FERAL, {
 						i(129583),	-- Springrain Spear
 						i(129581),	-- Springrain Helm
 						i(129604),	-- Springrain Choker
@@ -89,7 +89,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(129717),	-- Trailseeker Shotgun
 						i(142021),	-- Trailseeker Spear
 					}),
-					n(-9936, {	-- Beast Mastery
+					cl(HUNTER, BEAST_MASTERY, {
 						i(129717),	-- Trailseeker Shotgun
 						i(129712),	-- Trailseeker Helm
 						i(129704),	-- Trailseeker Choker
@@ -108,7 +108,7 @@ root("GearSets", n(CLASS_TRIAL, {
 					}),
 				}),
 				cl(MAGE, {
-					n(-9920, {	-- Frost
+					cl(MAGE, FROST, {
 						i(129525),	-- Mountainsage Staff
 						i(129517),	-- Mountainsage Hood
 						i(129510),	-- Mountainsage Medallion
@@ -137,7 +137,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(129492),	-- Mistdancer Idol of Wisdom
 						i(129497),	-- Mistdancer Stone of Wisdom
 					}),
-					n(-9931, {	-- Brewmaster
+					cl(MONK, BREWMASTER, {
 						i(129478),	-- Mistdancer Spire
 						i(129474),	-- Mistdancer Amulet
 						i(129475),	-- Mistdancer Band of Stoicism
@@ -145,7 +145,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(129479),	-- Mistdancer Defender Idol
 						i(129477),	-- Mistdancer Defender Stone
 					}),
-					n(-9933, {	-- Mistweaver
+					cl(MONK, MISTWEAVER, {
 						i(129499),	-- Mistdancer Staff
 						i(129490),	-- Mistdancer Hood
 						i(129494),	-- Mistdancer Necklace
@@ -162,7 +162,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(129492),	-- Mistdancer Idol of Wisdom
 						i(129497),	-- Mistdancer Stone of Wisdom
 					}),
-					n(-9932, {	-- Windwalker
+					cl(MONK, WINDWALKER, {
 						i(129502),	-- Mistdancer Sword
 						i(129483),	-- Mistdancer Helm
 						i(129504),	-- Mistdancer Choker
@@ -193,7 +193,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(129671);	-- Sunsoul Idol of Wisdom
 						i(129674);	-- Sunsoul Stone of Wisdom
 					}),
-					n(-9942, {	-- Holy
+					cl(PALADIN, HOLY, {
 						i(129678),	-- Sunsoul Scepter
 						i(129679),	-- Sunsoul Shield
 						i(129668);	-- Sunsoul Headpiece
@@ -211,7 +211,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(129671);	-- Sunsoul Idol of Wisdom
 						i(129674);	-- Sunsoul Stone of Wisdom
 					}),
-					n(-9943, {	-- Protection
+					cl(PALADIN, PROTECTION, {
 						i(129680),	-- Sunsoul Sword
 						i(129681),	-- Sunsoul Bulwark
 						i(129693);	-- Sunsoul Faceguard
@@ -229,7 +229,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(129696);	-- Sunsoul Defender Idol
 						i(129699);	-- Sunsoul Defender Stone
 					}),
-					n(-9944, {	-- Retributon
+					cl(PALADIN, RETRIBUTION, {
 						i(129682),	-- Sunsoul Warmaul
 						i(129659),	-- Sunsoul Helm
 						i(129684);	-- Sunsoul Pendant
@@ -248,7 +248,7 @@ root("GearSets", n(CLASS_TRIAL, {
 					}),
 				}),
 				cl(PRIEST, {
-					n(-9915, {	-- Discipline
+					cl(PRIEST, DISCIPLINE, {
 						i(129394),	-- Communal Staff
 						i(129383),	-- Communal Hood
 						i(129385),	-- Communal Necklace
@@ -265,7 +265,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(129386),	-- Communal Idol of Wisdom
 						i(129390),	-- Communal Stone of Wisdom
 					}),
-					n(-9917, {	-- Shadow
+					cl(PRIEST, SHADOW, {
 						i(129379),	-- Communal Wand
 						i(129398),	-- Communal Cowl
 						i(129374),	-- Communal Medallion
@@ -287,7 +287,7 @@ root("GearSets", n(CLASS_TRIAL, {
 					i(142023, {	-- Adventurer's Footlocker
 						i(129473),	-- Lightdrinker Sword
 					}),
-					n(-9928, {	-- Assassination
+					cl(ROGUE, ASSASSINATION, {
 						i(129471),	-- Lightdrinker Dagger	- Assassination / Subtlety
 						i(129472),	-- Lightdrinker Shiv	- Assassination
 						i(129473),	-- Lightdrinker Sword	- Combat
@@ -317,7 +317,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(129611),	-- Streamtalker Idol of Rage
 						i(129614),	-- Streamtalker Stone of Rage
 					}),
-					n(-9939, {	-- Elemental
+					cl(SHAMAN, ELEMENTAL, {
 						i(129626),	-- Streamtalker Aegis
 						i(129620),	-- Streamtalker Claws
 						i(129624),	-- Streamtalker Coif
@@ -335,7 +335,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(129616),	-- Streamtalker Idol of Destruction
 						i(129619),	-- Streamtalker Stone of Destruction
 					}),
-					n(-9940, {	-- Enhancement
+					cl(SHAMAN, ENHANCEMENT, {
 						i(129630),	-- Streamtalker Talons
 						i(129634),	-- Streamtalker Helm
 						i(129610),	-- Streamtalker Choker
@@ -352,7 +352,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(129611),	-- Streamtalker Idol of Rage
 						i(129614),	-- Streamtalker Stone of Rage
 					}),
-					n(-9941, {	-- Restoration
+					cl(SHAMAN, RESTORATION, {
 						i(129646),	-- Streamtalker Slicers
 						i(129652),	-- Streamtalker Shield
 						i(129650),	-- Streamtalker Cowl
@@ -372,7 +372,7 @@ root("GearSets", n(CLASS_TRIAL, {
 					}),
 				}),
 				cl(WARLOCK, {
-					n(-9921, {	-- Affliction
+					cl(WARLOCK, AFFLICTION, {
 						i(129425),	-- Felsoul Staff
 						i(129417),	-- Felsoul Cowl
 						i(129410),	-- Felsoul Medallion
@@ -397,7 +397,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(129535),	-- Oathsworn Headchopper
 						i(129526),	-- Oathsworn Greataxe
 					}),
-					n(-9945, {	-- Arms / Fury
+					cl(WARRIOR, ARMS, {
 						i(129536),	-- Oathsworn Axe
 						i(129535),	-- Oathsworn Headchopper
 						i(129530),	-- Oathsworn Helm
@@ -415,7 +415,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(129543),	-- Oathsworn Idol of Battle
 						i(129542),	-- Oathsworn Stone of Battle
 					}),
-					n(-9947, {	-- Protection
+					cl(WARRIOR, PROTECTION, {
 						i(129536),	-- Oathsworn Axe
 						i(129537),	-- Oathsworn Bulwark
 						i(129548),	-- Oathsworn Faceguard
@@ -442,7 +442,7 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(CLASS_TRIAL, {
 		tier(WOD_TIER, {
 			cl(DEATHKNIGHT, {
-				n(-9948, {	-- Blood
+				cl(DEATHKNIGHT, BLOOD, {
 					i(129426),	-- Heart-Lesion Greatsword
 					i(129446),	-- Heart-Lesion Faceguard
 					i(129448),	-- Heart-Lesion Amulet
@@ -461,14 +461,14 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				}),
 			}),
 			cl(DRUID, {
-				n(-9924, {	-- Guardian
+				cl(DRUID, GUARDIAN, {
 					i(129603),	-- Springrain Cloak of Durability
 					i(129607),	-- Springrain Band of Durability
 					i(129606),	-- Springrain Ring of Durability
 					i(129605),	-- Springrain Idol of Durability
 					i(129608),	-- Springrain Stone of Durability
 				}),
-				n(-9927, {	-- Restoration
+				cl(DRUID, RESTORATION, {
 					i(129602),	-- Springrain Staff
 					i(129597),	-- Springrain Hood
 					i(129599),	-- Springrain Shoulders
@@ -486,17 +486,17 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				}),
 			}),
 			cl(MAGE, {
-				n(-9920, {	-- Frost
+				cl(MAGE, FROST, {
 					i(129523),	-- Mountainsage Wand
 				}),
 			}),
 			cl(PRIEST, {
-				n(-9917, {	-- Shadow
+				cl(PRIEST, SHADOW, {
 					i(129404),	-- Communal Stave
 				}),
 			}),
 			cl(WARLOCK, {
-				n(-9921, {	-- Affliction
+				cl(WARLOCK, AFFLICTION, {
 					i(129423),	-- Felsoul Wand
 				}),
 			}),

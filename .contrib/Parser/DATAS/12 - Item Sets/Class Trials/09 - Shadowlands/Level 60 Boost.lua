@@ -47,7 +47,7 @@ root("GearSets", n(CLASS_TRIAL, {
 					i(170935),	-- Demon Trophy
 				}),
 				cl(DRUID, {
-					n(-9926, {	-- Balance
+					cl(DRUID, BALANCE, {
 						i(171988, { -- Adventurer's Footlocker	*LA0404Balance
 							i(170617), -- Springrain Spear	*LA0404Balance
 							i(170611), -- Springrain Stave	*LA0404Balance
@@ -67,7 +67,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(170616),	-- Springrain Stone of Destruction	*LA0404Balance
 						i(170613),	-- Springrain Idol of Destruction	Balance
 					}),
-					n(-9925, {	-- Feral
+					cl(DRUID, FERAL, {
 						i(171988, {	-- Adventurer's Footlocker	*LA0422Feral
 							i(170617),	-- Springrain Spear	*LA0422Feral
 							i(170611),	-- Springrain Stave	*LA0422Feral
@@ -87,7 +87,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(170608),	-- Springrain Ring of Onslaught *LA0422Feral
 						i(170610),	-- Springrain Stone of Rage *LA0422Feral
 					}),
-					n(-9927, {	-- Restoration
+					cl(DRUID, RESTORATION, {
 						i(171988, {	-- Adventurer's Footlocker
 							i(170617),	-- Springrain Spear
 						}),
@@ -147,13 +147,13 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(170651),	-- Mistdancer Spire
 						i(170659),	-- Mistdancer Staff
 					}),
-					n(-9931, {	-- Brewmaster
+					cl(MONK, BREWMASTER, {
 						i(170648),	-- Mistdancer Band of Stoicism
 						i(170652),	-- Mistdancer Defender Idol
 						i(170650),	-- Mistdancer Defender Stone
 						i(170649),	-- Mistdancer Ring of Stoicism
 					}),
-					n(-9933, {	-- Mistweaver
+					cl(MONK, MISTWEAVER, {
 						i(170825),	-- Mistdancer Hood
 						i(170827),	-- Mistdancer Shoulders
 						i(170653),	-- Mistdancer Cloak of Wisdom
@@ -168,7 +168,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(170658),	-- Mistdancer Stone of Wisdom
 						i(170654),	-- Mistdancer Idol of Wisdom
 					}),
-					n(-9932, {	-- Windwalker
+					cl(MONK, WINDWALKER, {
 						i(170660),	-- Mistdancer Sword
 					}),
 					i(170818),	-- Mistdancer Helm
@@ -269,7 +269,7 @@ root("GearSets", n(CLASS_TRIAL, {
 					i(170709),	-- Lightdrinker Stone of Rage
 				}),
 				cl(SHAMAN, {
-					n(-9941, {	-- Restoration
+					cl(SHAMAN, RESTORATION, {
 						i(170898),	-- Streamtalker Cowl
 						i(170902),	-- Streamtalker Bracers
 						i(170895),	-- Streamtalker Streamtalt
@@ -284,7 +284,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(170729),	-- Streamtalker Idol of Wisdom
 						i(170731),	-- Streamtalker Band of Wisdom
 					}),
-					n(-9939, {	-- Elemental
+					cl(SHAMAN, ELEMENTAL, {
 						i(171988, {	-- Adventurer's Footlocker
 							i(170725),	-- Streamtalker Aegis
 							i(170724),	-- Streamtalker Claws
@@ -303,7 +303,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(170721),	-- Streamtalker Ring of Destruction
 						i(170723),	-- Streamtalker Stone of Destruction
 					}),
-					n(-9940, {	-- Enhancement
+					cl(SHAMAN, ENHANCEMENT, {
 						i(171988, {	-- Adventurer's Footlocker
 							i(170726),	-- Streamtalker Talons
 						}),
