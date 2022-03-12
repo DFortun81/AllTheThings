@@ -1428,7 +1428,7 @@ category = function(id, t)								-- Create a CATEGORY Object.
 	return struct("categoryID", id, t);
 end
 cl = function(id, specc, t)									-- Create a CHARACTER CLASS Object
-	-- patch is optional
+	-- specc is optional
 	if not t then
 		t = specc;
 	else
