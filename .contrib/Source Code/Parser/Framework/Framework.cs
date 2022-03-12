@@ -844,28 +844,6 @@ namespace ATT
                 }
             }
 
-            if (data.TryGetValue("name", out string name))
-            {
-                // Determine the Most-Significant ID Type (itemID, questID, npcID, etc)
-                if (ATT.Export.ObjectData.TryGetMostSignificantObjectType(data, out Export.ObjectData objectData, out object objKeyValue))
-                {
-                    long id = Convert.ToInt64(objKeyValue);
-                    // Store the name of this object (or whatever it is) in our table.
-                    if (!NAMES_BY_TYPE.TryGetValue(objectData.ObjectType, out Dictionary<long, object> names))
-                    {
-                        NAMES_BY_TYPE[objectData.ObjectType] = names = new Dictionary<long, object>();
-                    }
-                    names[id] = name;
-
-                    // Keep the name field for quests, so long as they don't have an item.
-                    // They are generally manually assigned in the database.
-                    if (!data.ContainsKey("questID") || data.ContainsKey("itemID"))
-                    {
-                        data.Remove("name");
-                    }
-                }
-            }
-
             // maps & coords
             if (data.TryGetValue("maps", out object maps) && maps is List<object> mapsList)
             {
@@ -937,6 +915,28 @@ namespace ATT
                 {
                     Items.TryGetName(data, out string recipeName);
                     Objects.AddRecipe(requiredSkill, recipeName, recipeID);
+                }
+            }
+
+            if (data.TryGetValue("name", out string name))
+            {
+                // Determine the Most-Significant ID Type (itemID, questID, npcID, etc)
+                if (ATT.Export.ObjectData.TryGetMostSignificantObjectType(data, out Export.ObjectData objectData, out object objKeyValue))
+                {
+                    long id = Convert.ToInt64(objKeyValue);
+                    // Store the name of this object (or whatever it is) in our table.
+                    if (!NAMES_BY_TYPE.TryGetValue(objectData.ObjectType, out Dictionary<long, object> names))
+                    {
+                        NAMES_BY_TYPE[objectData.ObjectType] = names = new Dictionary<long, object>();
+                    }
+                    names[id] = name;
+
+                    // Keep the name field for quests, so long as they don't have an item.
+                    // They are generally manually assigned in the database.
+                    if (!data.ContainsKey("questID") || data.ContainsKey("itemID"))
+                    {
+                        data.Remove("name");
+                    }
                 }
             }
 
