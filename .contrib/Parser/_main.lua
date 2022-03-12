@@ -425,6 +425,9 @@ ALL_CLASSES = {	-- NOTE: Use this with the exclude function.
 	DEMONHUNTER,
 };
 
+-- Specializations
+ARCANE = 62;
+
 -- Achievement Categories
 ACHIEVEMENT_CATEGORY_CHARACTER = 92;
 ACHIEVEMENT_CATEGORY_GENERAL = 15088;
@@ -1424,7 +1427,14 @@ end
 category = function(id, t)								-- Create a CATEGORY Object.
 	return struct("categoryID", id, t);
 end
-cl = function(id, t)									-- Create a CHARACTER CLASS Object
+cl = function(id, specc, t)									-- Create a CHARACTER CLASS Object
+	-- patch is optional
+	if not t then
+		t = specc;
+	else
+		id = id + (specc / 1000 )
+		t = togroups(t)
+	end;
 	return struct("classID", id, t);
 end
 creature = function(id, t)								-- Create a CREATURE Object
@@ -1626,9 +1636,6 @@ root = function(category, g)							-- Create a ROOT CATEGORY Object
 	end
 	return o;
 end
---[[rf = function(id, t)									-- Create a RUNEFORGE LENDGARY Object
-	return struct("runeforgePowerID", id, t);
-]]
 spell = function(id, t)									-- Create a SPELL Object
 	return struct("spellID", id, t);
 end

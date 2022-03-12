@@ -41,7 +41,7 @@ table.insert(prestige, {});
 table.insert(prestige, {});
 table.insert(prestige, {});
 table.insert(prestige, {});
-cl = function(classID, t)
+local cl = function(classID, t)
 	local c = oldcl(classID, t);
 	table.insert(honorLevel10, oldcl(classID, { ["groups"] = prestige[1] }));
 	table.insert(honorLevel30, oldcl(classID, { ["groups"] = prestige[2] }));

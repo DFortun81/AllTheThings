@@ -4,6 +4,9 @@
 -- Everything in this file hasn't been implemented yet.
 
 root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+	cl(MAGE, ARCANE, {	-- Test
+		i(190931),	-- Cape of the Regal Wanderer
+	}),
 	n(SOURCELESS, {
 		["description"] = "This Category contains Things that probably exist in the game but no known source.",
 		["g"] = {

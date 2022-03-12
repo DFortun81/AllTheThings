@@ -7967,11 +7967,47 @@ app.ClassDB = setmetatable({}, { __index = function(t, className)
 		end
 	end
 end });
+local math_floor = math.floor;
+local cache = app.CreateCache("classID");
+local function CacheInfo(t, field)
+	local _t, id = cache.GetCached(t);
+	-- specc can be included in the id
+	local classID = math_floor(id);
+	rawset(t, "classKey", classID);
+	local specc_decimal = 1000 * (id - classID);
+	local specc = math_floor(specc_decimal + 0.00001);
+	if specc > 0 then
+		local text = select(2, GetSpecializationInfoForSpecID(specc));
+		if t.mapID then
+			text = app.GetMapName(t.mapID) .. " (" .. text .. ")";
+		elseif t.maps then
+			text = app.GetMapName(t.maps[1]) .. " (" .. text .. ")";
+		end
+		text = "|c" .. t.classColors.colorStr .. text .. "|r";
+		rawset(t, "text", text);
+		_t.text = text;
+		_t.icon = select(4, GetSpecializationInfoForSpecID(specc));
+	else
+		local text = GetClassInfo(t.classID);
+		if t.mapID then
+			text = app.GetMapName(t.mapID) .. " (" .. text .. ")";
+		elseif t.maps then
+			text = app.GetMapName(t.maps[1]) .. " (" .. text .. ")";
+		end
+		text = "|c" .. t.classColors.colorStr .. text .. "|r";
+		rawset(t, "text", text);
+		_t.text = text;
+		_t.icon = classIcons[t.classID]
+	end
+	if field then return _t[field]; end
+end
 local fields = {
 	["key"] = function(t)
 		return "classID";
 	end,
 	["text"] = function(t)
+		return cache.GetCachedField(t, "text", CacheInfo);
+		--[[
 		local text = GetClassInfo(t.classID);
 		if t.mapID then
 			text = app.GetMapName(t.mapID) .. " (" .. text .. ")";
@@ -7981,9 +8017,11 @@ local fields = {
 		text = "|c" .. t.classColors.colorStr .. text .. "|r";
 		rawset(t, "text", text);
 		return text;
+		--]]
 	end,
 	["icon"] = function(t)
-		return classIcons[t.classID];
+		return cache.GetCachedField(t, "icon", CacheInfo);
+		-- return classIcons[t.classID];
 	end,
 	["c"] = function(t)
 		local c = { t.classID };
