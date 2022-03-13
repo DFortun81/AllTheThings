@@ -69,7 +69,8 @@ _.ExpansionFeatures =
 									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
 								}),
 								i(118491, {	-- Schematic: Linkgrease Locksprocket
-									["collectible"] = false,	-- The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)
+									["collectible"] = false,
+									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
 									["cost"] = { { "i", 119299, 5 }, },	-- 5x Secret of Draenor Engineering
 								}),
 								i(118484, {	-- Schematic: Mechanical Axebeak
@@ -103,7 +104,8 @@ _.ExpansionFeatures =
 									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
 								}),
 								i(120268, {	-- Schematic: True Iron Trigger
-									["collectible"] = false,	-- The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)
+									["collectible"] = false,
+									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
 									["cost"] = { { "i", 119299, 5 }, },	-- 5x Secret of Draenor Engineering
 								}),
 								i(118481, {	-- Schematic: World Shrinker
@@ -154,7 +156,8 @@ _.ExpansionFeatures =
 									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
 								}),
 								i(118491, {	-- Schematic: Linkgrease Locksprocket
-									["collectible"] = false,	-- The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)
+									["collectible"] = false,
+									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
 									["cost"] = { { "i", 119299, 5 }, },	-- 5x Secret of Draenor Engineering
 								}),
 								i(118484, {	-- Schematic: Mechanical Axebeak
@@ -188,7 +191,8 @@ _.ExpansionFeatures =
 									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
 								}),
 								i(120268, {	-- Schematic: True Iron Trigger
-									["collectible"] = false,	-- The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)
+									["collectible"] = false,
+									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
 									["cost"] = { { "i", 119299, 5 }, },	-- 5x Secret of Draenor Engineering
 								}),
 								i(118481, {	-- Schematic: World Shrinker
