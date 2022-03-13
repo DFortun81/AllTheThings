@@ -86,7 +86,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				q(26894, {	-- Blackfathom Deeps [Horde]
 					["qg"] = 34122,	-- Commander Grimfang
 					["coord"] = { 12.1, 33.8, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277", "removed 6.0.2" },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(22, 10, 22),
