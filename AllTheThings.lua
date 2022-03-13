@@ -9404,6 +9404,9 @@ local fields = {
 		end
 		return {};
 	end,
+	["name"] = function(t)
+		return t.info.name;
+	end,
 	["text"] = function(t)
 		return t.info.name;
 	end,
@@ -11369,10 +11372,13 @@ local fields = {
 	["key"] = function(t)
 		return "professionID";
 	end,
-	["text"] = function(t)
+	["name"] = function(t)
 		if app.GetSpecializationBaseTradeSkill(t.professionID) then return select(1, GetSpellInfo(t.professionID)); end
 		if t.professionID == 129 then return select(1, GetSpellInfo(t.spellID)); end
 		return C_TradeSkillUI.GetTradeSkillDisplayName(t.professionID);
+	end,
+	["text"] = function(t)
+		return t.name;
 	end,
 	["icon"] = function(t)
 		if app.GetSpecializationBaseTradeSkill(t.professionID) then return select(3, GetSpellInfo(t.professionID)); end
@@ -16749,7 +16755,8 @@ function app:GetDataCache()
 			db = {};
 			db.expanded = false;
 			db.g = app.Categories.NeverImplemented;
-			db.text = L["NEVER_IMPLEMENTED"];
+			db.name = L["NEVER_IMPLEMENTED"];
+			db.text = db.name;
 			db.description = L["NEVER_IMPLEMENTED_DESC"];
 			tinsert(g, db);
 			tinsert(db.g, 1, flightPathsCategory_NYI);
@@ -16761,7 +16768,8 @@ function app:GetDataCache()
 			db = {};
 			db.expanded = false;
 			db.g = app.Categories.HiddenQuestTriggers;
-			db.text = L["HIDDEN_QUEST_TRIGGERS"];
+			db.name = L["HIDDEN_QUEST_TRIGGERS"];
+			db.text = db.name;
 			db.description = L["HIDDEN_QUEST_TRIGGERS_DESC"];
 			tinsert(g, db);
 			app.ToggleCacheMaps(true);
@@ -16774,7 +16782,8 @@ function app:GetDataCache()
 			db = {};
 			db.g = app.Categories.Unsorted;
 			db.expanded = false;
-			db.text = L["UNSORTED_1"];
+			db.name = L["UNSORTED_1"];
+			db.text = db.name;
 			db.description = L["UNSORTED_DESC_2"];
 			-- since unsorted is technically auto-populated, anything nested under it is considered 'missing' in ATT
 			db._missing = true;

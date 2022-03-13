@@ -38,11 +38,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(189718),	-- Pocopoc's Upgraded Core
 				}),
 			}),
-			i(187908, {	-- Firim's Spare Forge-tap
-				["description"] = "This item is only available from Firim after completing the Daily Quest: Materials of Creation (64717) or Hallow Efforts (64579).",
-				["g"] = {
-				},
-			}),
 			n(QUESTS, {
 				q(65674, {	-- What Is This Thing?
 					["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
