@@ -3040,7 +3040,7 @@ for key,value in pairs({
 	[375972] = "On recherche : Custos",	-- Wanted: Custos
 	[375973] = "L’exil de Firim, 1re partie",	-- Firim in Exile, Part 1
 	[375974] = "Écho du premier chant cristallisé",	-- Crystallized Echo of the First Song
-	--TODO: [375981] = "Protoform Schematic",	-- Protoform Schematic
+	[375981] = "Schéma de protoforme",	-- Protoform Schematic
 	[375982] = "L’exil de Firim, 2e partie",	-- Firim in Exile, Part 2
 	[375983] = "L’exil de Firim, 3e partie",	-- Firim in Exile, Part 3
 	[375984] = "L’exil de Firim, 4e partie",	-- Firim in Exile, Part 4
