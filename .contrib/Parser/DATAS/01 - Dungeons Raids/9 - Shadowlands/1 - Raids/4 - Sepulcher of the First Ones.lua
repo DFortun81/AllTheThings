@@ -1152,6 +1152,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189859),	-- Worldkiller Iris
 						i(189861),	-- Zovastrum, the Unmaking
 						i(190773),	-- Carcinized Protoform (MOUNT! - QUEST)
+						i(189982),	-- Silithid Soul
 					},
 				}),
 			}),
@@ -1488,6 +1489,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189859),	-- Worldkiller Iris
 						i(189861),	-- Zovastrum, the Unmaking
 						i(190768),	-- Zereth Overseer (MOUNT!)
+						i(189982),	-- Silithid Soul
 					},
 				}),
 			}),

@@ -241,17 +241,15 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 			q(65516, {	-- Sheep Soul
 				["provider"] = { "i", 189988 },	-- Sheep Soul
 			}),
+			q(65512, {	-- Silithid Soul
+				["provider"] = { "i", 189982 },	-- Silithid Soul
+			}),
 			q(65519, {	-- Snail Soul
 				["provider"] = { "i", 189991 },	-- Snail Soul
 			}),
 			q(65508, {	-- Tallstrider Soul
 				["provider"] = { "i", 189976 },	-- Tallstrider Soul
 			}),
-			--[[ NO SOURCE YET
-			q(65512, {	-- Silithid Soul
-				["provider"] = { "i", 189982 },	-- Silithid Soul
-			}),
-			--]]
 			-- #endif
 		}),
 	}),
