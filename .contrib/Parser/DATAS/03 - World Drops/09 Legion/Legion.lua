@@ -5,27 +5,27 @@
 root("WorldDrops", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
 	n(ARMOR, {
 		filter(CLOTH, {
-			i(141568),	-- Boughs of Archdruid Van-Yali
-			i(141577),	-- Fists of Thane Kray-Tan
-			i(141575),	-- Gorrog's Serene Gaze
-			i(141573),	-- Shokell's Grim Cinch
+			i(141567),	-- Cyno's Mantle of Sin
+			i(141565),	-- Mir's Enthralling Grasp
+			i(141566),	-- Serrinne's Maleficent Habit
+			i(141564),	-- Telubis' Binding of Patience
 		}),
 		filter(LEATHER, {
-			i(141576),	-- Aethrynn's Everwarm Chestplate
-			i(141567),	-- Cyno's Mantle of Sin
+			i(141568),	-- Boughs of Archdruid Van-Yali
+			i(141570),	-- Cainen's Preeminent Chestguard
 			i(141571),	-- Mavanah's Shifting Wristguards
 			i(141569),	-- Samnoh's Exceptional Leggings
 		}),
 		filter(MAIL, {
-			i(141578),	-- Claud's War-Ravaged Boots
-			i(141566),	-- Serrinne's Maleficent Habit
-			i(141564),	-- Telubis' Binding of Patience
+			i(141572),	-- Geta of Tay'Shute
+			i(141575),	-- Gorrog's Serene Gaze
+			i(141573),	-- Shokell's Grim Cinch
 			i(141574),	-- Ulfgor's Greaves of Bravery
 		}),
 		filter(PLATE, {
-			i(141570),	-- Cainen's Preeminent Chestguard
-			i(141572),	-- Geta of Tay'Shute
-			i(141565),	-- Mir's Enthralling Grasp
+			i(141576),	-- Aethrynn's Everwarm Chestplate
+			i(141578),	-- Claud's War-Ravaged Boots
+			i(141577),	-- Fists of Thane Kray-Tan
 			i(141579),	-- Welded Hardskin Helmet
 		}),
 		filter(CLOAKS, {
