@@ -3020,6 +3020,8 @@ for key,value in pairs({
 	[375900] = "Схема протосинтеза",	-- Protoform Schematic
 	[375902] = "Рваная призрачная пелерина",	-- Torn Ethereal Drape
 	[375903] = "Схема протосинтеза",	-- Protoform Schematic
+	[375905] = "Схема протосинтеза",	-- Protoform Schematic
+	[375907] = "Схема протосинтеза",	-- Protoform Schematic
 	[375915] = "Искра безмятежности",	-- Glimmer of Serenity
 	[375950] = "Шар чистой изобретательности",	-- Bauble of Pure Innovation
 	[375972] = "Разыскивается: Кустос",	-- Wanted: Custos

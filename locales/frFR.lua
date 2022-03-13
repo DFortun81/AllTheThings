@@ -3033,6 +3033,8 @@ for key,value in pairs({
 	[375900] = "Schéma de protoforme",	-- Protoform Schematic
 	[375902] = "Drapé éthérien déchiré",	-- Torn Ethereal Drape
 	--TODO: [375903] = "Protoform Schematic",	-- Protoform Schematic
+	[375905] = "Schéma de protoforme",	-- Protoform Schematic
+	--TODO: [375907] = "Protoform Schematic",	-- Protoform Schematic
 	[375915] = "Lueur de sérénité",	-- Glimmer of Serenity
 	[375950] = "Babiole d’innovation pure",	-- Bauble of Pure Innovation
 	[375972] = "On recherche : Custos",	-- Wanted: Custos
