@@ -710,7 +710,3 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 		}),
 	}),
 })));
-
-root("HiddenQuestTriggers", {
-	q(65525),	-- Ripened Protopear
-});
