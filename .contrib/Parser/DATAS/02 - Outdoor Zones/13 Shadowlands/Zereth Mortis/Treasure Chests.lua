@@ -563,7 +563,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				},
 			}),
 			-- Repeatable chests Without QuestID
-			o(375362, {	-- Avian Chest
+			o(375362, {	-- Avian Nest
 				["coords"] = {
 					{ 51.1, 64.5, ZERETH_MORTIS },
 					{ 54.5, 58.8, ZERETH_MORTIS },
