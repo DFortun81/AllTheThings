@@ -119,7 +119,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 								crit(1, {	-- Vigilant Guardian
 									["achievementID"] = 15417,	-- Sepulcher of the First Ones
 								}),
-								ach(15381),	-- Power ON
 								i(189771),	-- Ancient Materium Tassets
 								i(188273),	-- Auxillary Attendant Chime
 								i(189774),	-- Fractured Colossus Core
@@ -139,7 +138,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 								crit(2, {	-- Skolex, the Insatiable Ravener
 									["achievementID"] = 15417,	-- Sepulcher of the First Ones
 								}),
-								ach(15401),	-- Wisdom Comes From the Desert
 								i(189819),	-- Assimilated Safeguard
 								i(188267),	-- Bells of the Endless Feast
 								i(189816),	-- Crystallized Viscera Spike
@@ -164,7 +162,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 								crit(3, {	-- Artificer Xy'mox
 									["achievementID"] = 15417,	-- Sepulcher of the First Ones
 								}),
-								ach(15398),	-- Xy Never, Ever Marks the Spot.
 								i(188265),	-- Cache of Acquired Treasures
 								i(189827),	-- Cartel Xy's Proof of Initiation
 								i(189826),	-- Enforcer's Containment Cinch
@@ -185,7 +182,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 								crit(7, {	-- Halondrus the Reclaimer
 									["achievementID"] = 15417,	-- Sepulcher of the First Ones
 								}),
-								ach(15386),	-- Shimmering Secrets
 								i(188264),	-- Earthbreaker's Impact
 								i(189831),	-- Ephemera-Stained Sollerets
 								i(189832),	-- Greatboots of the Roaming Goliath
@@ -228,7 +224,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 								crit(4, {	-- Dausegne, the Fallen Oracle
 									["achievementID"] = 15417,	-- Sepulcher of the First Ones
 								}),
-								ach(15397),	-- Four Ring Circus
 								i(189773),	-- Clasp of Crooked Crescendos
 								i(189787),	-- Dausegne's Dissonant Halo
 								i(189807),	-- Discordant Deathblade
@@ -254,7 +249,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 								crit(5, {	-- Prototype Pantheon
 									["achievementID"] = 15417,	-- Sepulcher of the First Ones
 								}),
-								ach(15400),	-- Where the Wild Beasts Are
 								i(189794),	-- Boots of Ceaseless Conflict
 								i(189796),	-- Duty's Ascendant Breastplate
 								i(188270),	-- Elegy of the Eternals
@@ -274,7 +268,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 								crit(6, {	-- Lihuvim, Principal Architect
 									["achievementID"] = 15417,	-- Sepulcher of the First Ones
 								}),
-								ach(15419),	-- The Protoform Matrix
 								i(188268),	-- Architect's Ingenuity Core
 								i(189803),	-- Automa-Tender's Tights
 								i(189805),	-- Bracers of the Inscrutable Inventor
@@ -320,7 +313,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 								crit(8, {	-- Anduin Wrynn
 									["achievementID"] = 15417,	-- Sepulcher of the First Ones
 								}),
-								ach(15399),	-- Coming to Terms
 								i(189835),	-- Anduin's Princely Vestments
 								i(189838),	-- Beacon of Stormwind
 								i(189837),	-- King's Wolfheart Wasitband
@@ -361,7 +353,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 								crit(9, {	-- Lords of Dread
 									["achievementID"] = 15417,	-- Sepulcher of the First Ones
 								}),
-								ach(15315),	-- Amidst Ourselves
 								i(189846),	-- Alandien's Tortured Twinblades
 								i(189842),	-- Cuffs of the Covert Commander
 								i(189844),	-- Gauntlets of Unseen Guests
@@ -399,7 +390,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 								crit(10, {	-- Rygelon
 									["achievementID"] = 15417,	-- Sepulcher of the First Ones
 								}),
-								ach(15396),	-- We Are All Made of Stars
 								i(189852),	-- Antumbra, Shadow of the Cosmos
 								i(189853),	-- Astral Verdict
 								i(189851),	-- Devastated Worldshard
@@ -443,7 +433,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 								crit(11, {	-- The Jailer
 									["achievementID"] = 15417,	-- Sepulcher of the First Ones
 								}),
-								ach(15494),	-- Damnation Aviation
 								i(189855),	-- Bindings of the Banished One
 								i(188252),	-- Chains of Domination
 								i(189818),	-- Domination's Deliverance
