@@ -3034,6 +3034,8 @@ for key,value in pairs({
 	[375900] = "원생형태 설계도",	-- Protoform Schematic
 	[375902] = "찢겨 나간 실체 없는 외투",	-- Torn Ethereal Drape
 	[375903] = "원생형태 설계도",	-- Protoform Schematic
+	[375905] = "원생형태 설계도",	-- Protoform Schematic
+	--TODO: [375907] = "Protoform Schematic",	-- Protoform Schematic
 	[375915] = "평온의 미명",	-- Glimmer of Serenity
 	--TODO: [375950] = "Bauble of Pure Innovation",	-- Bauble of Pure Innovation
 	[375972] = "현상 수배: 쿠스토스",	-- Wanted: Custos

@@ -3034,6 +3034,8 @@ for key, value in pairs({
 	[375900] = "原生体设计方案",	-- Protoform Schematic
 	[375902] = "破旧的虚渺披风",	-- Torn Ethereal Drape
 	[375903] = "原生体设计方案",	-- Protoform Schematic
+	--TODO: [375905] = "Protoform Schematic",	-- Protoform Schematic
+	--TODO: [375907] = "Protoform Schematic",	-- Protoform Schematic
 	[375915] = "平静微光",	-- Glimmer of Serenity
 	[375950] = "纯粹创新饰珠",	-- Bauble of Pure Innovation
 	[375972] = "通缉：库斯托斯",	-- Wanted: Custos
