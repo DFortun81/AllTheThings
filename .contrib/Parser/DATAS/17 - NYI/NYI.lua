@@ -34,9 +34,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(190935),	-- Distinguished Blade of Cartel Al
 			i(190937),	-- Edge of the Enlightened
 			i(190934),	-- Standard of the Wandering Brokers
-			i(190946),	-- Emerald-Heart Protomaul
-			i(190944),	-- Mace of Renewed Purpose
-			i(190949),	-- Stave of the Eternal Cycle
 		}),
 		n(QUESTS, {
 			q(64870),	-- Paragon of Enlightened Brokers (I have this completed /Braghe)

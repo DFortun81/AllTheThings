@@ -522,9 +522,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 						i(187781, {	-- Olea Cache
 							["cost"] = { { "c", CYPHER, 700 }, },
 							["g"] = {
+								i(190946),	-- Emerald-Heart Protomaul
 								i(190945),	-- Greatmaul of the Ancient Sentinels
 								i(190947),	-- Halo-Stave of the Oracles
 								i(190943),	-- Jiro Tuning Hammer
+								i(190944),	-- Mace of Renewed Purpose
+								i(190949),	-- Stave of the Eternal Cycle
 							},
 						}),
 						i(191039, {	-- Pocopoc Traveler
