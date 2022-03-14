@@ -598,9 +598,6 @@ namespace ATT
                 }
             }
 
-            // Cache whether or not this entry had an explicit spellID assignment already.
-            bool hasSpellID = data.ContainsKey("spellID");
-
             // Remove any fields which contain 'empty' data
             if (data.TryGetValue("customCollect", out List<object> cc))
             {
@@ -747,9 +744,9 @@ namespace ATT
                         case Objects.Filters.Recipe:
                             data["recipeID"] = data["spellID"];
                             break;
-                        default:
-                            if (!hasSpellID) data.Remove("spellID");
-                            break;
+                        //default:
+                        //    data.Remove("spellID");
+                        //    break;
                     }
                 }
             }
@@ -879,8 +876,7 @@ namespace ATT
             {
                 if (Objects.SKILL_ID_CONVERSION_TABLE.TryGetValue(requiredSkill, out long newRequiredSkill))
                 {
-                    data["requireSkill"] = newRequiredSkill;
-                    requiredSkill = newRequiredSkill;
+                    data["requireSkill"] = requiredSkill = newRequiredSkill;
                 }
                 else
                 {
@@ -918,6 +914,11 @@ namespace ATT
                 }
             }
 
+            // Merge all relevant Item Data into the global dictionaries after being validated
+            Items.Merge(data);
+            Objects.Merge(data);
+
+            // only clean the name after merging into the data dictionaries (since that is referenced elsewhere via itemID)
             if (data.TryGetValue("name", out string name))
             {
                 // Determine the Most-Significant ID Type (itemID, questID, npcID, etc)
@@ -933,16 +934,12 @@ namespace ATT
 
                     // Keep the name field for quests, so long as they don't have an item.
                     // They are generally manually assigned in the database.
-                    if (!data.ContainsKey("questID") || data.ContainsKey("itemID"))
-                    {
-                        data.Remove("name");
-                    }
+                    //if (!data.ContainsKey("questID") || data.ContainsKey("itemID"))
+                    //{
+                    //    data.Remove("name");
+                    //}
                 }
             }
-
-            // Merge all relevant Item Data into the global dictionaries after being validated
-            Items.Merge(data);
-            Objects.Merge(data);
 
             return true;
         }
@@ -1116,38 +1113,18 @@ namespace ATT
                 return;
 
             // all recipes require a skill
-            if (!data.TryGetValue("requireSkill", out object requiredSkill))
+            if (!data.TryGetValue("requireSkill", out long requiredSkill))
                 return;
 
-            // get the name of the recipe item (i.e. Technique: blah blah)
-            Items.TryGetName(data, out string name);
-
             // see if a matching recipe name exists for this skill, and use that recipeID
-            if (Objects.FindRecipeByName(requiredSkill, name, out long recipeID))
+            if (Objects.FindRecipeForData(requiredSkill, data, out long recipeID))
             {
                 data["recipeID"] = recipeID;
-                //long skillID = Convert.ToInt64(requiredSkill);
-                //if (!Objects.SKILLID_CONSTANTS.TryGetValue(skillID, out string skillConstant))
-                //    skillConstant = "UNKNOWN_SKILL:" + skillID;
-
-                //if (data.TryGetValue("itemID", out object itemID))
-                //{
-                //    Trace.WriteLine(string.Format(
-                //        "Automated Recipe Lookup - RecipeID:{0},Skill:{1},ItemID:{2}",
-                //        recipeID,
-                //        skillConstant,
-                //        itemID
-                //        ));
-                //}
-                //else
-                //{
-                //    Trace.WriteLine(string.Format(
-                //        "Automated Recipe Lookup - RecipeID:{0},Skill:{1},[DATA]:{2}",
-                //        recipeID,
-                //        skillConstant,
-                //        MiniJSON.Json.Serialize(data)
-                //        ));
-                //}
+            }
+            else if (DebugMode)
+            {
+                Items.TryGetName(data, out string name);
+                Trace.WriteLine($"Failed to find RecipeID for '{name}' with data: {MiniJSON.Json.Serialize(data)}");
             }
         }
 

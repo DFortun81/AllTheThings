@@ -60,7 +60,7 @@ namespace ATT
             /// <summary>
             /// All of the Recipes (Name,RecipeID) that are in the database, keyed by required skill
             /// </summary>
-            public static IDictionary<object, List<Tuple<string, long>>> AllRecipes { get; } = new Dictionary<object, List<Tuple<string, long>>>();
+            public static IDictionary<long, Dictionary<long, string>> AllRecipes { get; } = new Dictionary<long, Dictionary<long, string>>();
 
             /// <summary>
             /// All of the Merged Objects (non-Items) that are in the database. This is used to ensure that various information is synced across all Sources of a given object as necessary
@@ -585,34 +585,75 @@ namespace ATT
                     return;
 
                 // ensure skill bucket exists
-                if (!AllRecipes.TryGetValue(requiredSkill, out List<Tuple<string, long>> skillRecipes))
-                    AllRecipes[requiredSkill] = skillRecipes = new List<Tuple<string, long>>();
+                if (!AllRecipes.TryGetValue(requiredSkill, out Dictionary<long, string> skillRecipes))
+                    AllRecipes[requiredSkill] = skillRecipes = new Dictionary<long, string>();
 
                 // do not add matching recipeID
-                if (skillRecipes.Any(sr => sr.Item2 == recipeID))
+                if (skillRecipes.ContainsKey(recipeID))
                     return;
 
                 // add the recipe info
-                skillRecipes.Add(new Tuple<string, long>(recipeName, recipeID));
+                skillRecipes.Add(recipeID, recipeName);
             }
 
-            internal static bool FindRecipeByName(object requiredSkill, string recipeItemName, out long recipeID)
+            internal static bool FindRecipeForData(long requiredSkill, Dictionary<string, object> data, out long recipeID)
             {
+                const string DebugFormat = "Automated Recipe - RecipeID:{0},ItemID:{1},Method:{2}";
+                data.TryGetValue("itemID", out object itemID);
+                // get the name of the recipe item (i.e. Technique: blah blah)
+                Items.TryGetName(data, out string recipeItemName);
+
+                // Item directly marked as a 'Recipe', then assume the associated spellID represents the recipeID
+                if (data.TryGetValue("f", out long filterID) && filterID == (long)Filters.Recipe && data.TryGetValue("spellID", out long spellID))
+                {
+                    recipeID = spellID;
+
+                    if (DebugMode)
+                        Trace.WriteLine(string.Format(DebugFormat, recipeID, itemID, $"Recipe Filter on data with spellID - {recipeItemName}"));
+
+                    return true;
+                }
+
                 recipeID = 0;
                 // no recipe name or doesn't contain :
                 if (recipeItemName == null || !recipeItemName.Contains(":"))
                     return false;
 
                 // find skill bucket
-                if (!AllRecipes.TryGetValue(requiredSkill, out List<Tuple<string, long>> skillRecipes))
-                    return false;
+                if (!AllRecipes.TryGetValue(requiredSkill, out Dictionary<long, string> skillRecipes))
+                {
+                    //if (DebugMode)
+                    //    Trace.WriteLine($"No recipes for skill {requiredSkill}");
 
-                foreach (Tuple<string, long> recipeInfo in skillRecipes)
+                    return false;
+                }
+
+                // if this Item has an existing spellID which matches a known RecipeID for this requiredSkill, then if the name matches, assume it's the exact RecipeID
+                if ((data.TryGetValue("spellID", out spellID) || data.TryGetValue("recipeID", out spellID)) &&
+                    skillRecipes.TryGetValue(spellID, out string matchedRecipeName) &&
+                    (recipeItemName == matchedRecipeName || recipeItemName.Contains(matchedRecipeName)))
+                {
+                    // remove the spellID since it's converting to recipeID
+                    data.Remove("spellID");
+                    recipeID = spellID;
+
+                    if (DebugMode)
+                        Trace.WriteLine(string.Format(DebugFormat, recipeID, itemID, $"Data name '{recipeItemName}' with spellID matches exact recipeID with name '{matchedRecipeName}'"));
+
+                    return true;
+                }
+
+                // fallback: Loop through all recipes and compare Recipe name vs. Item name
+                foreach (KeyValuePair<long, string> recipeInfo in skillRecipes)
                 {
                     // perfect recipe - item match!
-                    if (recipeItemName.Contains(": " + recipeInfo.Item1))
+                    if (recipeItemName.Contains(": " + recipeInfo.Value))
                     {
-                        recipeID = recipeInfo.Item2;
+                        recipeID = recipeInfo.Key;
+
+                        if (DebugMode)
+                            Trace.WriteLine(string.Format(DebugFormat, recipeID, itemID, $"Data name '{recipeItemName}' matched recipe with name '{recipeInfo.Value}'"));
+
                         return true;
                     }
                     // do we need further checking?

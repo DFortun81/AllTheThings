@@ -160,7 +160,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					}),
 					crit(7, {	-- Volatile Precursor
 						["provider"] = { "i", 187893 },	-- Volatile Precursor
-						["coord"] = { 49.1, 57.5, ZERETH_MORTIS },
+						["coords"] = {
+							{ 47.4, 61.1, ZERETH_MORTIS },
+							{ 49.1, 57.5, ZERETH_MORTIS },
+						},
 					}),
 					crit(8, {	-- Energized Firmament
 						["provider"] = { "i", 187894 },	-- Energized Firmament

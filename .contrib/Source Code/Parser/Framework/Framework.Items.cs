@@ -136,7 +136,7 @@ namespace ATT
             /// </summary>
             public static int Count { get; private set; }
 
-            private static Dictionary<string, object> _Garbage = new Dictionary<string, object>();
+            private static Dictionary<string, object> _Garbage { get; } = new Dictionary<string, object>();
 
             /// <summary>
             /// Get an item by its Item ID.
@@ -170,12 +170,9 @@ namespace ATT
             public static Dictionary<string, object> Get(IDictionary<string, object> data)
             {
                 decimal itemID = GetSpecificItemID(data);
-
-                // Attempt to get an existing item dictionary.
+                // Attempt to get an existing specific item dictionary
                 if (ITEMS.TryGetValue(itemID, out Dictionary<string, object> obj))
-                {
                     return obj;
-                }
 
                 if (itemID == 0)
                     return _Garbage;
@@ -925,45 +922,8 @@ namespace ATT
                 // Merge the specific item with the data dictionary.
                 MergeInto((long)specificItemID, item, data);
             }
-
-            /// <summary>
-            /// Merge information about the item matching the data's itemID into the dictionary.
-            /// If the source dictionary does not contain an itemID or toyID, this method does nothing.
-            /// </summary>
-            /// <param name="data">The data dictionary to receive the merged data.</param>
-            //public static void MergeInto(Dictionary<string, object> data)
-            //{
-            //    // Attempt to extra the itemID from the data table.
-            //    if (data.TryGetValue("itemID", out long itemID))
-            //    {
-            //        MergeInto(data);
-            //    }
-            //    else if (data.TryGetValue("toyID", out itemID))
-            //    {
-            //        MergeInto(data);
-            //    }
-            //}
-
-            /// <summary>
-            /// Merge information about the item matching the data's itemID into the dictionary.
-            /// If the source dictionary does not contain an itemID, this method does nothing.
-            /// </summary>
-            /// <param name="data">The data dictionary to receive the merged data.</param>
-            /// <param name="itemID">The item ID or -1 if the item is not valid.</param>
-            //public static void MergeInto(Dictionary<string, object> data, out long itemID)
-            //{
-            //    // Attempt to extra the itemID from the data table.
-            //    if (data.TryGetValue("itemID", out itemID))
-            //    {
-            //        MergeInto(itemID, data);
-            //    }
-            //    else if (data.TryGetValue("toyID", out itemID))
-            //    {
-            //        MergeInto(itemID, data);
-            //    }
-            //    else itemID = -1;
-            //}
             #endregion
+
             #region Utility
             public static void MarkItemAsReferenced(long itemID)
             {

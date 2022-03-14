@@ -12,7 +12,7 @@ profession(INSCRIPTION, {
 						},
 						{
 							["recipeID"] = 359786,
-							["name"] = "Contract: Enlightened Brokers",
+							["name"] = "Contract: The Enlightened",
 							["timeline"] = { "added 9.2.0" },
 						},
 					},
