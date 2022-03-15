@@ -5199,7 +5199,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 				{
 					["name"] = "Devourer Essence Stone",
 					["recipeID"] = 360317,
-					["timeline"] = { "created 9.2.0" },
+					["timeline"] = { "added 9.2.0" },
 				},
 				{
 					["name"] = "Novice Crafter's Mark",

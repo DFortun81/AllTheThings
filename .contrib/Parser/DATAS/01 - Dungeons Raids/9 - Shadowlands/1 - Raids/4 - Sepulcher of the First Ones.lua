@@ -1597,7 +1597,7 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(189780),	-- <DNT> 9.2 Raid - Sepulcher of the First Ones - Boss 01 - Solitary Guardian - Shield
 			i(190623),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - Trash Drops - Armor - Plate Shoulders
 			-- Tiers that wasnt tiers anymore
-			d(17, {	-- LFR
+			n(CLASSES, bubbleDown({ ["modID"] = 4 }, {	-- LFR
 				cl(DEATHKNIGHT, {
 					i(188873),	-- Cloak of the First Eidolon
 					i(188870),	-- Girdle of the First Eidolon
@@ -1670,8 +1670,8 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(188939),	-- March of the Infinite Infantry
 					i(188943),	-- Vambraces of the Infinite Infantry
 				}),
-			}),
-			d(14, {	-- Normal
+			})),
+			n(CLASSES, bubbleDown({ ["modID"] = 3 }, {	-- Normal
 				cl(DEATHKNIGHT, {
 					i(188873),	-- Cloak of the First Eidolon
 					i(188870),	-- Girdle of the First Eidolon
@@ -1744,8 +1744,8 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(188939),	-- March of the Infinite Infantry
 					i(188943),	-- Vambraces of the Infinite Infantry
 				}),
-			}),
-			d(15, {	-- Heroic
+			})),
+			n(CLASSES, bubbleDown({ ["modID"] = 5 }, {	-- Heroic
 				cl(DEATHKNIGHT, {
 					i(188873),	-- Cloak of the First Eidolon
 					i(188870),	-- Girdle of the First Eidolon
@@ -1818,8 +1818,8 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(188939),	-- March of the Infinite Infantry
 					i(188943),	-- Vambraces of the Infinite Infantry
 				}),
-			}),
-			d(16, {	-- Mythic
+			})),
+			n(CLASSES, bubbleDown({ ["modID"] = 6 }, {	-- Mythic
 				cl(DEATHKNIGHT, {
 					i(188873),	-- Cloak of the First Eidolon
 					i(188870),	-- Girdle of the First Eidolon
@@ -1892,7 +1892,7 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(188939),	-- March of the Infinite Infantry
 					i(188943),	-- Vambraces of the Infinite Infantry
 				}),
-			}),
+			})),
 		}),
 		n(CLASSES, bubbleDown({ ["bonusID"] = 6896 }, {	-- LFR
 			cl(DEATHKNIGHT, {
