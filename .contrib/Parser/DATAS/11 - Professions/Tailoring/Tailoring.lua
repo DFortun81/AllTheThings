@@ -5309,6 +5309,10 @@ profession(TAILORING, {
 				{
 					["name"] = "Shrouded Cloth Bandage",
 					["recipeID"] = 310924
+				},
+				{
+					["name"] = "Shrouded Hand Towel",
+					["recipeID"] = 355183
 				}
 			}
 		},

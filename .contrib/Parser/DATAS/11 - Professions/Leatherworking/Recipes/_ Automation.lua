@@ -225,7 +225,8 @@ profession(165, {	-- Leatherworking
 						{
 							["name"] = "Heavy Callous Hide",
 							["hash"] = "recipeID308897",
-							["recipeID"] = 308897
+							["recipeID"] = 308897,
+							["itemID"] = 183839	-- Pattern: Heavy Desolate Hide
 						},
 						{
 							["name"] = "Heavy Desolate Leather",
