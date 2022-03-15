@@ -3690,7 +3690,7 @@ local function FillPurchases(group, depth)
 	if collectibles and #collectibles > 0 then
 		-- Nest new copies of the cost collectible objects of this group under itself
 		local usedToBuy = app.CreateNPC(-2, { ["text"] = L["CURRENCY_FOR"] } );
-		NestObject(group, usedToBuy);
+		NestObject(group, usedToBuy, nil, 1);
 		PriorityNestObjects(usedToBuy, collectibles, true, app.RecursiveGroupRequirementsFilter);
 		-- if app.DEBUG_PRINT then print("Filled",#collectibles,"under",group.hash,"as",#usedToBuy.g,"unique groups") end
 		-- reduce the depth by one since a cost has been filled
@@ -4399,13 +4399,14 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		-- Resolve Cost, but not if the search itself was skipped (Mark of Honor)
 		if method ~= app.EmptyFunction then
 			-- app.DEBUG_PRINT = group.key .. ":" .. group[group.key];
+
+			-- Append any crafted things using this group
+			app.BuildCrafted(group);
+
 			-- Fill Purchases of this Thing
 			-- print("Fill Purchases")
 			FillPurchases(group);
 			-- app.PrintGroup(group)
-
-			-- Append any crafted things using this group
-			app.BuildCrafted(group);
 
 			-- Expand any things requiring this group
 			-- TODO: is this necessary anymore? can't think of a situation to properly test it
@@ -4738,7 +4739,8 @@ app.BuildCrafted = function(item)
 								end
 							end
 						end
-						NestObject(item, search);
+						-- crafted Items without any further nesting should be listed first
+						NestObject(item, search, nil, not search.g and 1 or nil);
 					end
 				else
 					basicItemIDs[craftedItemID] = true;
@@ -4761,7 +4763,8 @@ app.BuildCrafted = function(item)
 							end
 						end
 					end
-					NestObject(item, search);
+					-- crafted Items without any further nesting should be listed first
+					NestObject(item, search, nil, not search.g and 1 or nil);
 				end
 			end
 		end
