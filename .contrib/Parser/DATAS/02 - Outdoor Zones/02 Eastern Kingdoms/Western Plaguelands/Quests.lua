@@ -317,17 +317,6 @@ _.Zones =
 					["provider"] = { "n", 44457 },	-- Selyria Groenveld
 					["coord"] = { 48.5, 54.9, WESTERN_PLAGUELANDS },
 				}),
-				q(5944,  {	-- In Dreams
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 1842 },	-- Highlord Taelan Fordring <Highlord of the Scarlet Crusade>
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(16058)),	-- Fordring's Seal
-						un(REMOVED_FROM_GAME, i(15411)),	-- Mark of Fordring
-						un(REMOVED_FROM_GAME, i(15413)),	-- Ornate Adamantium Breastplate
-						un(REMOVED_FROM_GAME, i(15418)),	-- Shimmering Platinum Warhammer
-						un(REMOVED_FROM_GAME, i(15421)),	-- Shroud of the Exile
-					},
-				}),
 				q(5407,  {	-- Invader's Scourgestones [A]
 					["provider"] = { "n", 10840 },		-- Argent Officer Pureheart
 					["u"] = REMOVED_FROM_GAME,			-- Removed in Patch 4.0.3

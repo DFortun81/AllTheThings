@@ -12,10 +12,6 @@ _.Zones =
 					["provider"] = { "n", 45431 },	-- Gidwin Goldbraids
 					["coord"] = { 74.3, 53.3, EASTERN_PLAGUELANDS },
 				}),
-				q(27422, {	-- A City Under Siege
-					["provider"] = { "n", 45482 },	-- Argent Officer Irizarry
-					["coord"] = { 51.6, 21.4, EASTERN_PLAGUELANDS },
-				}),
 				q(27533, {	-- A Fate Worse Than Butchery
 					["sourceQuests"] = { 27535 },	-- Just a Little Touched
 					["provider"] = { "n", 12384 },	-- Augustus the Touched
@@ -75,18 +71,25 @@ _.Zones =
 					},
 				}),
 				q(27457, {	-- An Opportune Alliance
+					["provider"] = { "n", 16134 },	-- Rimblat Earthshatter
 					["sourceQuests"] = {
 						27465,	-- Argent Call: The Noxious Glade
 						27456,	-- Gathering Some Grub(s)
 					},
-					["provider"] = { "n", 16134 },	-- Rimblat Earthshatter
 					["coord"] = { 73.7, 51.8, EASTERN_PLAGUELANDS },
 				}),
 				q(28755, {	-- Annals of the Silver Hand
-					["sourceQuests"] = { 27464 },	-- Argent Call: The Trial of the Crypt
-					["repeatable"] = true,
-					["provider"] = { "n", 49856 },	-- Lord Raymond George
+					["qg"] = 49856,	-- Lord Raymond George
+					["sourceQuest"] = 27464,	-- Argent Call: The Trial of the Crypt
 					["coord"] = { 76.1, 50.9, EASTERN_PLAGUELANDS },
+					["maxReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
+					["timeline"] = { "added 4.0.3" },
+					["repeatable"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/1 Annals of the Silver Hand
+							["provider"] = { "i", 65615 },	-- Annals of the Silver Hand
+						}),
+					},
 				}),
 				q(27466, {	-- Argent Call: Northdale
 					["sourceQuests"] = { 27465 },	-- Argent Call: The Noxious Glade
@@ -323,10 +326,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(22656)),	-- The Purifier
 					},
 				}),
-				q(5861,  {	-- Find Myranda
-					["provider"] = { "n", 1855 },	-- Tirion Fordring
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(27555, {	-- Fiona's Lucky Charm
 					["sourceQuests"] = {
 						27372,	-- A Gift For Fiona
@@ -464,14 +463,6 @@ _.Zones =
 					["provider"] = { "n", 45574 },	-- Vex'tul
 					["coord"] = { 52.7, 51.3, EASTERN_PLAGUELANDS },
 				}),
-				q(5243,  {	-- Houses of the Holy
-					["provider"] = { "n", 11036 },	-- Leonid Barthalomew the Revered
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(13217)),	-- Band of the Penitent
-						un(REMOVED_FROM_GAME, i(13216)),	-- Crown of the Penitent
-					},
-				}),
 				q(27392, {	-- I'm Not Supposed to Tell You This
 					["sourceQuests"] = { 27383 },	-- "Little Pamela"
 					["provider"] = { "n", 10926 },	-- Pamela Redpath
@@ -595,18 +586,6 @@ _.Zones =
 					["provider"] = { "n", 45729 },	-- Tarenar Sunstrike
 					["coord"] = { 61.5, 43.2, EASTERN_PLAGUELANDS },
 				}),
-				q(5781,  {	-- Of Forgotten Memories
-					["provider"] = { "n", 1855 },	-- Tirion Fordring
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(5845,  {	-- Of Lost Honor
-					["provider"] = { "n", 1855 },	-- Tirion Fordring
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(5846,  {	-- Of Love and Family (1/2)
-					["provider"] = { "n", 1855 },	-- Tirion Fordring
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(27373, {	-- Onward, to Light's Hope Chapel
 					["sourceQuests"] = {
 						27372,	-- A Gift For Fiona
@@ -653,19 +632,6 @@ _.Zones =
 					["provider"] = { "n", 16135 },	-- Rayne
 					["coord"] = { 30.2, 56.8, EASTERN_PLAGUELANDS },
 				}),
-				q(6163,  {	-- Ramstein
-					["provider"] = { "n", 11878 },	-- Nathanos Blightcaller <Champion of the Banshee Queen>
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(17001)),	-- Elemental Circle
-						un(REMOVED_FROM_GAME, i(18022)),	-- Royal Seal of Alexis
-					},
-				}),
-				q(5742,  {	-- Redemption
-					["provider"] = { "n", 1855 },	-- Tirion Fordring
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(5941,  {	-- Return to Chromie
 					["sourceQuests"] = { 5206 },	-- Marauders of Darrowshire
 					["provider"] = { "n", 11063 },	-- Carlin Redpath
@@ -696,10 +662,6 @@ _.Zones =
 					["sourceQuests"] = { 27462 },	-- To Take the Barracks
 					["provider"] = { "n", 16112 },	-- Crusade Commander Korfax
 					["coord"] = { 75.3, 76.1, EASTERN_PLAGUELANDS },
-				}),
-				q(5862,  {	-- Scarlet Subterfuge
-					["provider"] = { "n", 11872 },	-- Myranda the Hag
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27528, {	-- Scourged Mass
 					["provider"] = { "n", 45831 },	-- Crusader Kevin Frost
@@ -780,27 +742,6 @@ _.Zones =
 					["sourceQuests"] = {
 						27372,	-- A Gift For Fiona
 						27369,	-- Greasing the Wheel
-					},
-				}),
-				q(5213,  {	-- The Active Agent
-					["provider"] = { "n", 11035 },	-- Betina Bigglezink <The Argent Dawn>
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(19812)),	-- Rune of the Dawn
-						un(REMOVED_FROM_GAME, i(13209)),	-- Seal of the Dawn
-					},
-				}),
-				q(5251,  {	-- The Archivist
-					["provider"] = { "n", 11039 },	-- Duke Nicholas Zverenhoff
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(5265,  {	-- The Argent Hold
-					["provider"] = { "n", 11034 },	-- Lord Maxwell Tyrosus <The Argent Dawn>
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(13246)),	-- Argent Avenger
-						un(REMOVED_FROM_GAME, i(13249)),	-- Argent Crusader
-						un(REMOVED_FROM_GAME, i(13243)),	-- Argent Defender
 					},
 				}),
 				q(27613, {	-- The Assassin
@@ -919,17 +860,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(5212,  {	-- The Flesh Does Not Lie
-					["provider"] = { "n", 11035 },	-- Betina Bigglezink
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(5214,  {	-- The Great Ezra Grimm
-					["provider"] = { "n", 11033 },	-- Smokey LaRue
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(13171)),	-- Smokey's Lighter
-					},
-				}),
 				q(27616, {	-- The Huntsman
 					["sourceQuests"] = { 27462 },	-- To Take the Barracks
 					["provider"] = { "n", 16112 },	-- Crusade Commander Korfax
@@ -952,18 +882,6 @@ _.Zones =
 					["provider"] = { "n", 11878 },	-- Nathanos Blightcaller <Champion of the Banshee Queen>
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(5281,  {	-- The Restless Souls
-					["provider"] = { "n", 11038 },	-- Caretaker Alen
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(5282,  {	-- The Restless Souls
-					["sourceQuests"] = { 5281 },	-- The Restless Souls
-					["provider"] = { "n", 11140 },	-- Egan
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(13315)),	-- Testament of Hope
-					},
 				}),
 				q(9213,  {	-- The Shadow Guard
 					["provider"] = { "n", 16133 },	-- Mataus the Wrathcaster <The Scarlet Crusade>
