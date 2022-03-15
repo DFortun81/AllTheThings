@@ -1121,10 +1121,14 @@ namespace ATT
             {
                 data["recipeID"] = recipeID;
             }
-            else if (DebugMode)
+            else if (recipeID == 0)
             {
-                Items.TryGetName(data, out string name);
-                Trace.WriteLine($"Failed to find RecipeID for '{name}' with data: {MiniJSON.Json.Serialize(data)}");
+                if (!data.TryGetValue("u", out long u) || (u != 1 && u != 2))
+                {
+                    // this can always be reported because it should always be actual, available in-game recipes which have no associated RecipeID
+                    Items.TryGetName(data, out string name);
+                    Trace.WriteLine($"Failed to find RecipeID for '{name}' with data: {MiniJSON.Json.Serialize(data)}");
+                }
             }
         }
 

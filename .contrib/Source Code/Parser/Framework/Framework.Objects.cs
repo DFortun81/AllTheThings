@@ -600,24 +600,40 @@ namespace ATT
             {
                 const string DebugFormat = "Automated Recipe - RecipeID:{0},ItemID:{1},Method:{2}";
                 data.TryGetValue("itemID", out object itemID);
+                data.TryGetValue("spellID", out long spellID);
                 // get the name of the recipe item (i.e. Technique: blah blah)
                 Items.TryGetName(data, out string recipeItemName);
+                recipeID = 0;
 
                 // Item directly marked as a 'Recipe', then assume the associated spellID represents the recipeID
-                if (data.TryGetValue("f", out long filterID) && filterID == (long)Filters.Recipe && data.TryGetValue("spellID", out long spellID))
+                if (data.TryGetValue("f", out long filterID))
                 {
-                    recipeID = spellID;
+                    if (filterID == (long)Filters.Recipe)
+                    {
+                        if (spellID > 0)
+                        {
+                            recipeID = spellID;
 
-                    if (DebugMode)
-                        Trace.WriteLine(string.Format(DebugFormat, recipeID, itemID, $"Recipe Filter on data with spellID - {recipeItemName}"));
+                            if (DebugMode)
+                                Trace.WriteLine(string.Format(DebugFormat, recipeID, itemID, $"Recipe Filter on data with spellID - {recipeItemName}"));
 
-                    return true;
+                            return true;
+                        }
+                    }
+                    // This Item is known to be 'something' which is not a Recipe, so just return
+                    else
+                    {
+                        recipeID = -1;
+                        return false;
+                    }
                 }
 
-                recipeID = 0;
                 // no recipe name or doesn't contain :
                 if (recipeItemName == null || !recipeItemName.Contains(":"))
+                {
+                    recipeID = -1;
                     return false;
+                }
 
                 // find skill bucket
                 if (!AllRecipes.TryGetValue(requiredSkill, out Dictionary<long, string> skillRecipes))
@@ -625,11 +641,12 @@ namespace ATT
                     //if (DebugMode)
                     //    Trace.WriteLine($"No recipes for skill {requiredSkill}");
 
+                    recipeID = -1;
                     return false;
                 }
 
                 // if this Item has an existing spellID which matches a known RecipeID for this requiredSkill, then if the name matches, assume it's the exact RecipeID
-                if ((data.TryGetValue("spellID", out spellID) || data.TryGetValue("recipeID", out spellID)) &&
+                if ((spellID > 0 || data.TryGetValue("recipeID", out spellID)) &&
                     skillRecipes.TryGetValue(spellID, out string matchedRecipeName) &&
                     (recipeItemName == matchedRecipeName || recipeItemName.Contains(matchedRecipeName)))
                 {
