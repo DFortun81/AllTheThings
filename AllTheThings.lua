@@ -14604,17 +14604,19 @@ local function SetRowData(self, row, data)
 			x = rowPad / 2;
 		end
 		local summary = GetProgressTextForRow(data) or "---";
-		local iconAdjust = summary and string.find(summary, "|T") and -1 or 0;
+		-- local iconAdjust = summary and string.find(summary, "|T") and -1 or 0;
 		local specs = data.specs;
 		if specs and #specs > 0 then
 			summary = GetSpecsString(specs, false, false) .. summary;
-			iconAdjust = iconAdjust - #specs;
+			-- iconAdjust = iconAdjust - #specs;
 		end
 		local rowSummary = row.Summary;
 		local rowLabel = row.Label;
 		rowSummary:SetText(summary);
 		-- for whatever reason, the Client does not properly align the Points when textures are used within the 'text' of the object, with each texture added causing a 1px offset on alignment
-		rowSummary:SetPoint("RIGHT", iconAdjust, 0);
+		-- 2022-03-15 It seems as of recently that text with textures now render properly without the need for a manual adjustment. Will leave the logic in here until confirmed for others as well
+		-- rowSummary:SetPoint("RIGHT", iconAdjust, 0);
+		rowSummary:SetPoint("RIGHT");
 		rowSummary:Show();
 		rowLabel:SetPoint("LEFT", leftmost, relative, x, 0);
 		if rowSummary and rowSummary:IsShown() then
