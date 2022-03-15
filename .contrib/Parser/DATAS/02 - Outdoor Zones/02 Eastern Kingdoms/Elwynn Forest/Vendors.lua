@@ -45,21 +45,21 @@ _.Zones =
 					["coord"] = { 42.8, 65.8, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(12354)),	-- Palomino
-						un(REMOVED_FROM_GAME, i(12353)),	-- White Stallion
-						
+						un(REMOVED_FROM_GAME, i(12354)),	-- Palomino (MOUNT!)
+						un(REMOVED_FROM_GAME, i(12353)),	-- White Stallion (MOUNT!)
+
 					},
 				}),
 				n(384, {	-- Katie Hunter <Horse Breeder>
 					["coord"] = { 84.2, 65.5, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(5656),	-- Brown Horse Bridle
-						i(5655),	-- Chestnut Mare Bridle
-						i(2414),	-- Pinto Bridle
-						i(18777),	-- Swift Brown Steed
-						i(18776),	-- Swift Palomino
-						i(18778),	-- Swift White Steed
+						i(5656),	-- Brown Horse (MOUNT!)
+						i(5655),	-- Chestnut Mare (MOUNT!)
+						i(2414),	-- Pinto (MOUNT!)
+						i(18777),	-- Swift Brown Steed (MOUNT!)
+						i(18776),	-- Swift Palomino (MOUNT!)
+						i(18778),	-- Swift White Steed (MOUNT!)
 					},
 				}),
 				n(1198, {	-- Rallic Finn <Bowyer>

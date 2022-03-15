@@ -90,10 +90,10 @@ _.Zones =
 					["coord"] = { 9.2, 56.6, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(2411),	-- Black Stallion Bridle Mount
-						i(5656),	-- Brown Horse Bridle Mount
-						i(5655),	-- Chestnut Mare Bridle Mount
-						i(2414),	-- Pinto Bridle Mount
+						i(2411),	-- Black Stallion (MOUNT!)
+						i(5656),	-- Brown Horse (MOUNT!)
+						i(5655),	-- Chestnut Mare (MOUNT!)
+						i(2414),	-- Pinto (MOUNT!)
 					},
 				}),
 				n(2679, {	-- Wenna Silkbeard <Special Goods Dealer>

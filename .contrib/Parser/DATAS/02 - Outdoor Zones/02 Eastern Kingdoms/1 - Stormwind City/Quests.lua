@@ -469,7 +469,7 @@ root("Zones", {
 					["coord"] = { 77.3, 67.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(2411),	-- Black Stallion Bridle
+						i(2411),	-- Black Stallion (MOUNT!)
 					},
 				}),
 				q(32470, {	-- Light Camera Action

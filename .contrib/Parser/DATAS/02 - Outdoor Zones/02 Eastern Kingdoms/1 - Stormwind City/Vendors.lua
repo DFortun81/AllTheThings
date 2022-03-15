@@ -1841,13 +1841,13 @@ _.Zones =
 					["coord"] = { 77.0, 67.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(2411),	-- Black Stallion Bridle
-						i(5656),	-- Brown Horse Bridle
-						i(5655),	-- Chestnut Mare Bridle
-						i(2414),	-- Pinto Bridle
-						i(18777),	-- Swift Brown Steed
-						i(18776),	-- Swift Palomino
-						i(18778),	-- Swift White Steed
+						i(2411),	-- Black Stallion (MOUNT!)
+						i(5656),	-- Brown Horse (MOUNT!)
+						i(5655),	-- Chestnut Mare (MOUNT!)
+						i(2414),	-- Pinto (MOUNT!)
+						i(18777),	-- Swift Brown Steed (MOUNT!)
+						i(18776),	-- Swift Palomino (MOUNT!)
+						i(18778),	-- Swift White Steed (MOUNT!)
 					},
 				}),
 				n(340,    {	-- Kendor Kabonka
@@ -1890,13 +1890,13 @@ _.Zones =
 					["coord"] = { 55.0, 12.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(8632),	-- Reins of the Spotted Frostsaber
+						i(8632),	-- Spotted Frostsaber (MOUNT!)
 						i(47100),	-- Reins of the Striped Dawnsaber
-						i(8631),	-- Reins of the Striped Frostsaber
-						i(8629),	-- Reins of the Striped Nightsaber
-						i(18766),	-- Reins of the Swift Frostsaber
-						i(18767),	-- Reins of the Swift Mistsaber
-						i(18902),	-- Reins of the Swift Stormsaber
+						i(8631),	-- Striped Frostsaber (MOUNT!)
+						i(8629),	-- Striped Nightsaber (MOUNT!)
+						i(18766),	-- Swift Frostsaber (MOUNT!)
+						i(18767),	-- Swift Mistsaber (MOUNT!)
+						i(18902),	-- Swift Stormsaber (MOUNT!)
 					},
 				}),
 				n(2795,   {	-- Lenny "Fingers" McCoy
@@ -1983,22 +1983,22 @@ _.Zones =
 						i(29465, {	-- Black Battlestrider Mount
 							["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
 						}),
-						un(REMOVED_FROM_GAME, i(18243)),	-- Black Battlestrider. Pre 2.0 Version
+						un(REMOVED_FROM_GAME, i(18243)),	-- Black Battlestrider (MOUNT!) Pre 2.0 Version
 						i(29467, {	-- Black War Ram Mount
 							["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
 						}),
-						un(REMOVED_FROM_GAME, i(18241)),	-- Black War Steed Bridle. Pre 2.0 Version
+						un(REMOVED_FROM_GAME, i(18241)),	-- Black War Steed (MOUNT!) Pre 2.0 Version
 						i(29468, {	-- Black War Steed Bridle Mount
 							["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
 						}),
-						un(REMOVED_FROM_GAME, i(18244)),	-- Black War Ram. Pre 2.0 Version
+						un(REMOVED_FROM_GAME, i(18244)),	-- Black War Ram (MOUNT!) Pre 2.0 Version
 						i(35906, {	-- Reins of the Black War Elekk Mount
 							["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
 						}),
 						i(29471, {	-- Reins of the Black War Tiger Mount
 							["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
 						}),
-						un(REMOVED_FROM_GAME, i(18242)),	-- Reins of the Black War Tiger. Pre 2.0 Version
+						un(REMOVED_FROM_GAME, i(18242)),	-- Black War Tiger (MOUNT!) Pre 2.0 Version
 					}),
 				}),
 				n(23446,  {	-- Lieutenant Tristia -- BC Vendor for Trinkets

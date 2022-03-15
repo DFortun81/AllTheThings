@@ -43,9 +43,9 @@ _.Zones =
 					["provider"] = { "n", 4730 },	-- Lelanai
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(18766),	-- Reins of the Swift Frostsaber
-						i(18767),	-- Reins of the Swift Mistsaber
-						i(18902),	-- Reins of the Swift Stormsaber
+						i(18766),	-- Swift Frostsaber (MOUNT!)
+						i(18767),	-- Swift Mistsaber (MOUNT!)
+						i(18902),	-- Swift Stormsaber (MOUNT!)
 					},
 				}),
 				q(32664, {	-- Learn to Ride
@@ -89,9 +89,9 @@ _.Zones =
 					["provider"] = { "n", 4730 },	-- Lelanai
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(18766),	-- Reins of the Swift Frostsaber
-						i(18767),	-- Reins of the Swift Mistsaber
-						i(18902),	-- Reins of the Swift Stormsaber
+						i(18766),	-- Swift Frostsaber (MOUNT!)
+						i(18767),	-- Swift Mistsaber (MOUNT!)
+						i(18902),	-- Swift Stormsaber (MOUNT!)
 					},
 				}),
 				q(6343,  {	-- Return to Nyoma

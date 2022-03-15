@@ -9,120 +9,148 @@ end
 -- first number = the item that teaches you to use the mount. ("taught by" tab on wowhead)
 -- second number = the spellID you learn from the mount. ("teaches" tab on wowhead)
 
-i(875);	-- Brown Horse Summoning
-i(901);	-- Deptecated White Stallion Summoning (Mount)
-i(1041);	-- Horn of the Black Wolf
-i(1132, 580);	-- Horn of the Timber Wolf
-i(1133);	-- Horn of the Winter Wolf
-i(1134);	-- Horn of the Gray Wolf
-i(2411, 470);	-- Black Stallion Bridle
-i(2413);	-- Palomino
-i(2414, 472);	-- Pinto Bridle
-i(2415);	-- White Stallion
-i(5655, 6648);	-- Chestnut Mare Bridle
-i(5656, 458);	-- Brown Horse Bridle
-i(5663);	-- Horn of the Red Wolf
-i(5665, 6653);	-- Horn of the Dire Wolf
-i(5668, 6654);	-- Horn of the Brown Wolf
-i(5864, 6777);	-- Gray Ram
-i(5872, 6899);	-- Brown Ram
-i(5873, 6898);	-- White Ram
-i(5874);	-- Harness: Black Ram
-i(5875);	-- Harness: Blue Ram
-i(8563, 10873);	-- Red Mechanostrider
-i(8583);	-- Horn of the Skeletal Mount
-i(8586, 16084);	-- Whistle of the Mottled Red Raptor
-i(8588, 8395);	-- Whistle of the Emerald Raptor
-i(8589);	-- Old Whistle of the Ivory Raptor
-i(8590);	-- Old Whistle of the Obsidian Raptor
-i(8591, 10796);	-- Whistle of the Turquoise Raptor
-i(8592, 10799);	-- Whistle of the Violet Raptor
-i(8595, 10969);	-- Blue Mechanostrider
-i(8627);	-- Reins of the Night saber
-i(8628, 10792);	-- Reins of the Spotted Nightsaber
-i(8629, 10793);	-- Reins of the Striped Nightsaber
-i(8630, 10790);	-- Reins of the Bengal Tiger
-i(8631, 8394);	-- Reins of the Striped Frostsaber
-i(8632, 10789);	-- Reins of the Spotted Frostsaber
-i(8633, 10788);	-- Reins of the Leopard
-i(12302, 16056);	-- Reins of the Ancient Frostsaber
-i(12303, 16055);	-- Reins of the Nightsaber
-i(12325, 16058);	-- Reins of the Primal Leopard
-i(12326, 16059);	-- Reins of the Tawny Sabercat
-i(12327, 16060);	-- Reins of the Golden Sabercat
-i(12330, 16080);	-- Horn of the Red Wolf
-i(12351, 16081);	-- Horn of the Arctic Wolf
-i(12353, 16083);	-- White Stallion Bridle
-i(12354, 16082);	-- Palomino Bridle
-i(13086, 17229);	-- Reins of the Winterspring Frostsaber
-i(13317, 17450);	-- Whistle of the Ivory Raptor
-i(13321, 17453);	-- Green Mechanostrider
-i(13322, 17454);	-- Unpainted Mechanostrider
-i(13323, 17455);	-- Purple Mechanostrider
-i(13324, 17456);	-- Red and Blue Mechanostrider
-i(13325, 17458);	-- Fluorescent Green Mechanostrider
-i(13326, 15779);	-- White Mechanostrider Mod B
-i(13327, 17459);	-- Icy Blue Mechanostrider Mod A
-i(13328, 17461);	-- Black Ram
-i(13329, 17460);	-- Frost Ram
-i(13331, 17462);	-- Red Skeletal Horse
-i(13332, 17463);	-- Blue Skeletal Horse
-i(13333, 17464);	-- Brown Skeletal Horse
-i(13334, 17465);	-- Green Skeletal Warhorse
-i(13335, 17481);	-- Deathcharger's Reins
-i(14062);	-- Kodo Mount
-i(15277, 18989);	-- Gray Kodo
-i(15290, 18990);	-- Brown Kodo
-i(15292, 18991);	-- Green Kodo
-i(15293, 18992);	-- Teal Kodo
-i(16338);	-- Knight-Lieutenant's Steed
-i(16339);	-- Commander's Steed
-i(16343, 6654);	-- Blood Guard's Mount
-i(16344);	-- zzUNUSEDLieutenant General's Mount
-i(18241, 22717);	-- Black War Steed Bridle
-i(18242, 22723);	-- Reins of the Black War Tiger
+
+-----------------
+--   CLASSIC   --
+-----------------
+i(12302, 16056);	-- Ancient Frostsaber
+i(12351, 16081);	-- Arctic Wolf
 i(18243, 22719);	-- Black Battlestrider
-i(18244, 22720);	-- Black War Ram
-i(18245, 22724);	-- Horn of the Black War Wolf
-i(18246, 22721);	-- Whistle of the Black War Raptor
+i(12303, 16055);	-- Black Nightsaber
+i(21176, 26656);	-- Black Qiraji Battle Tank
+i(13328, 17461);	-- Black Ram
+i(2411, 470);		-- Black Stallion
 i(18247, 22718);	-- Black War Kodo
-i(18248, 22722);	-- Red Skeletal Warhorse
-i(18766, 23221);	-- Reins of the Swift Frostsaber
-i(18767, 23219);	-- Reins of the Swift Mistsaber
-i(18768, 23220);	-- Reins of the Swift Dawnsaber
-i(18772, 23225);	-- Swift Green Mechanostrider
-i(18773, 23223);	-- Swift White Mechanostrider
-i(18774, 23222);	-- Swift Yellow Mechanostrider
-i(18776, 23227);	-- Swift Palomino
-i(18777, 23229);	-- Swift Brown Steed
-i(18778, 23228);	-- Swift White Steed
-i(18785, 23240);	-- Swift White Ram
-i(18786, 23238);	-- Swift Brown Ram
-i(18787, 23239);	-- Swift Gray Ram
-i(18788, 23241);	-- Swift Blue Raptor
-i(18789, 23242);	-- Swift Olive Raptor
-i(18790, 23243);	-- Swift Orange Raptor
-i(18791, 23246);	-- Purple Skeletal Warhorse
-i(18793, 23247);	-- Great White Kodo
+i(18244, 22720);	-- Black War Ram
+i(18246, 22721);	-- Black War Raptor
+i(18241, 22717);	-- Black War Steed
+i(18242, 22723);	-- Black War Tiger
+i(18245, 22724);	-- Black War Wolf
+i(8595, 10969);		-- Blue Mechanostrider
+i(21218, 25953);	-- Blue Qiraji Battle Tank
+i(13332, 17463);	-- Blue Skeletal Horse
+i(5656, 458);		-- Brown Horse
+i(15290, 18990);	-- Brown Kodo
+i(5872, 6899);		-- Brown Ram
+i(13333, 17464);	-- Brown Skeletal Horse
+i(5668, 6654);		-- Brown Wolf
+--i(0, 23214);		-- Charger
+i(5655, 6648);		-- Chestnut Mare
+i(5665, 6653);		-- Dire Wolf
+--i(0, 23161);		-- Dreadsteed
+i(8588, 8395);		-- Emerald Raptor
+--i(0, 5784);		-- Felsteed
+i(13329, 17460);	-- Frost Ram
+i(15277, 18989);	-- Gray Kodo
+i(5864, 6777);		-- Gray Ram
 i(18794, 23249);	-- Great Brown Kodo
 i(18795, 23248);	-- Great Gray Kodo
-i(18796, 23250);	-- Horn of the Swift Brown Wolf
-i(18797, 23251);	-- Horn of the Swift Timber Wolf
-i(18798, 23252);	-- Horn of the Swift Gray Wolf
-i(18902, 23338);	-- Reins of the Swift Stormsaber
-i(19029, 23509);	-- Horn of the Frostwolf Howler
+i(18793, 23247);	-- Great White Kodo
+i(15292, 18991);	-- Green Kodo
+i(13321, 17453);	-- Green Mechanostrider
+i(21323, 26056);	-- Green Qiraji Battle Tank
+i(13334, 17465);	-- Green Skeletal Warhorse
+i(13327, 17459);	-- Icy Blue Mechanostrider Mod A
+i(13317, 17450);	-- Ivory Raptor
+i(8586, 16084);		-- Mottled Red Raptor
+i(12354, 16082);	-- Palomino
+i(2414, 472);		-- Pinto
+i(18791, 23246);	-- Purple Skeletal Warhorse
+i(8563, 10873);		-- Red Mechanostrider
+i(21321, 26054);	-- Red Qiraji Battle Tank
+i(13331, 17462);	-- Red Skeletal Horse
+i(18248, 22722);	-- Red Skeletal Warhorse
+i(12330, 16080);	-- Red Wolf
+i(13335, 17481);	-- Rivendare's Deathcharger
+i(8632, 10789);		-- Spotted Frostsaber
 i(19030, 23510);	-- Stormpike Battle Charger
+i(8631, 8394);		-- Striped Frostsaber
+i(8629, 10793);		-- Striped Nightsaber
+i(18788, 23241);	-- Swift Blue Raptor
+i(18786, 23238);	-- Swift Brown Ram
+i(18777, 23229);	-- Swift Brown Steed
+i(18796, 23250);	-- Swift Brown Wolf
+i(18766, 23221);	-- Swift Frostsaber
+i(18787, 23239);	-- Swift Gray Ram
+i(18798, 23252);	-- Swift Gray Wolf
+i(18772, 23225);	-- Swift Green Mechanostrider
+i(18767, 23219);	-- Swift Mistsaber
+i(18789, 23242);	-- Swift Olive Raptor
+i(18790, 23243);	-- Swift Orange Raptor
+i(18776, 23227);	-- Swift Palomino
 i(19872, 24242);	-- Swift Razzashi Raptor
+i(18902, 23338);	-- Swift Stormsaber
+i(18797, 23251);	-- Swift Timber Wolf
+i(18773, 23223);	-- Swift White Mechanostrider
+i(18778, 23228);	-- Swift White Steed
+i(18785, 23240);	-- Swift White Ram
+i(18774, 23222);	-- Swift Yellow Mechanostrider
 i(19902, 24252);	-- Swift Zulian Tiger
-i(20221);	-- Foror's Fabled Steed
-i(21176, 26656);	-- Black Qiraji Resonating Crystal
-i(21218, 25953);	-- Blue Qiraji Resonating Crystal
-i(21321, 26054);	-- Red Qiraji Resonating Crystal
-i(21323, 26056);	-- Green Qiraji Resonating Crystal
-i(21324, 26055);	-- Yellow Qiraji Resonating Crystal
-i(21736);	-- Nether Drake Reins
-i(23193, 29059);	-- Naxxramas Deathcharger Reins
+i(15293, 18992);	-- Teal Kodo
+i(1132, 580);		-- Timber Wolf
+i(8591, 10796);		-- Turquoise Raptor
+i(8592, 10799);		-- Violet Raptor
+--i(0, 13819);		-- Warhorse
+i(13326, 15779);	-- White Mechanostrider Mod B
+i(5873, 6898);		-- White Ram
+i(12353, 16083);	-- White Stallion
+i(13086, 17229);	-- Winterspring Frostsaber
+i(13322, 17454);	-- Unpainted Mechanostrider
+i(21324, 26055);	-- Yellow Qiraji Battle Tank
+-- NYI --
+i(16344, 16081);	-- Arctic Wolf						/	zzUNUSEDLieutenant General's Mount
+--i(0, 25863);		-- Black Qiraji Battle Tank
+--i(0, 26655);		-- Black Qiraji Battle Tank
+i(5874,	6896);		-- Black Ram						/	Harness: Black Ram
+i(1041, 578);		-- Black Wolf						/	Horn of the Black Wolf
+i(5875,	6897);		-- Blue Ram							/	Harness: Blue Ram
+i(875, 458);		-- Brown Horse						/	Brown Horse Summoning
+i(16338, 458);		-- Brown Horse						/	Knight-Lieutenant's Steed
+i(16343, 6654);		-- Brown Wolf						/	Blood Guard's Mount
+i(20221, 24576);	-- Chromatic Mount					/	Foror's Fabled Steed
+i(13325, 17458);	-- Fluorescent Green Mechanostrider	/	Fluorescent Green Mechanostrider
+i(12327, 16060);	-- Golden Sabercat					/	Reins of the Golden Sabercat
+i(1134, 459);		-- Gray Wolf						/	Horn of the Gray Wolf
+--i(0, 15780);		-- Green Mechanostrider				/
+i(8589, 10795);		-- Ivory Raptor						/	Old Whistle of the Ivory Raptor
+i(8633, 10788);		-- Leopard							/	Reins of the Leopard
+i(8627,	10787);		-- Nightsaber						/	Reins of the Nightsaber
+i(8590, 10798);		-- Obsidian Raptor					/	Old Whistle of the Obsidian Raptor
+i(16339, 16082);	-- Palomino							/	Commander's Steed
+i(2413, 471);		-- Palamino Stallion				/	Palomino
+i(12325, 16058);	-- Primal Leopard					/	Reins of the Primal Leopard
+i(13323, 17455);	-- Purple Mechanostrider			/	Purple Mechanostrider
+i(13324, 17456);	-- Red and Blue Mechanostrider		/	Red and Blue Mechanostrider
+i(14062, 18363);	-- Riding Kodo						/	Kodo Mount
+i(5663, 579);		-- Red Wolf							/	Horn of the Red Wolf
+i(8583, 8980);		-- Skeletal Horse					/	Horn of the Skeletal Mount
+i(8628, 10792);		-- Spotted Panther					/	Reins of the Spotted Nightsaber
+--i(0, 15781);		-- Steel Mechanostrider				/
+i(18768, 23220);	-- Swift Dawnsaber					/	Reins of the Swift Dawnsaber
+i(12326, 16059);	-- Tawny Sabercat					/	Reins of the Tawny Sabercat
+i(8630, 10790);		-- Tiger							/	Reins of the Bengal Tiger
+i(901, 468);		-- White Stallion					/	Deptecated White Stallion Summoning (Mount)
+i(2415, 468);		-- White Stallion					/	White Stallion
+i(1133, 581);		-- Winter Wolf						/	Horn of the Winter Wolf
+
+-----------------
+-- PATCH 2.0.0 --
+-----------------
 i(23720, 30174);	-- Riding Turtle
+
+-----------------
+-- PATCH 2.0.1 --
+-----------------
+--i(0, 34767);		-- Thalassian Charger
+--i(0, 34769);		-- Thalassian Warhorse
+-- NYI --
+--i(0, 33630);		-- Blue Mechanostrider
+i(21736, 28828);	-- Nether Drake	/	Nether Drake Reins
+--i(0, 33631);		-- Video Mount
+
+
+
+
 i(25470, 32235);	-- Golden Gryphon
 i(25471, 32239);	-- Ebon Gryphon
 i(25472, 32240);	-- Snowy Gryphon
@@ -350,6 +378,15 @@ i(60954, 84751);	-- Fossilized Raptor
 i(62298, 90621);	-- Reins of the Golden King
 i(62461, 87090);	-- Goblin Trike Key
 i(62462, 87091);	-- Goblin Turbo-Trike Key
+
+
+-----------------
+-- PATCH 4.0.1 --
+-----------------
+i(23193, 29059);	-- Naxxramas Deathcharger	/	Naxxramas Deathcharger Reins
+
+
+
 i(62900, 88331);	-- Reins of the Volcanic Stone Drake
 i(62901, 88335);	-- Reins of the Drake of the East Wind
 i(63039, 88741);	-- Reins of the Drake of the West Wind
@@ -1072,9 +1109,9 @@ i(186000, 352441);	-- Wild Hunt Legsplitter
 i(186495, 353858);	-- Winter Wilderling
 
 -- NYI
-i(186639);	-- Pilfered Gearglider
-i(186640);	-- Silver Gearglider
-i(186491);	-- Spring Wilderling Harness
+i(186639, 353264);	-- Pilfered Gearglider
+i(186640, 353265);	-- Silver Gearglider
+i(186491, 353860);	-- Spring Wilderling Harness
 
 -----------------
 -- PATCH 9.1.5 --

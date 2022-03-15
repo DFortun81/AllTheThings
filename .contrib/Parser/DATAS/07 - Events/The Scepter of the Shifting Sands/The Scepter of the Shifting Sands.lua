@@ -53,7 +53,7 @@ root("WorldEvents", n(-539,	-- The Scepter of the Shifting Sands
 						title(33, {	-- Scarab Lord Crieve
 							["timeline"] = { "added 2.0.3.28000", "removed 4.0.3" },	-- Added in Burning Crusade Prepatch
 						}),
-						i(21176),	-- Black Qiraji Resonating Crystal
+						i(21176),	-- Black Qiraji Battle Tank (MOUNT!)
 					},
 				})),
 				q(8606, {	-- Decoy!

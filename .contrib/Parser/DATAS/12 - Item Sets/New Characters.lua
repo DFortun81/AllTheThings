@@ -33,14 +33,14 @@ _.GearSets =
 						["description"] = "|cFF40bf40Received on reaching Level 10 as a Tauren Paladin.|r",
 						["races"] = { TAUREN },
 					}),
-					mount(13819, {	-- Warhorse
+					mount(13819, {	-- Warhorse (MOUNT!)
 						["description"] = "|cFF40bf40Received on reaching Level 10 as a Human or Dwarf Paladin.|r",
 						["races"] = { HUMAN, DWARF },
 					}),
 				},
 			}),
 			cl(WARLOCK ,{
-				mount(5784, {	-- Felsteed
+				mount(5784, {	-- Felsteed (MOUNT!)
 					["description"] = "|cFF40bf40Received on reaching Level 10 as a Warlock.|r",
 				}),
 			}),

@@ -50,7 +50,6 @@ root("BlackMarket", bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(32458),	-- Ashes of Alar
 		i(95059),	-- Clutch of Ji-Kun
 		i(115484),	-- Core Hound Chain
-		i(13335),	-- Deathcharger's Reins
 		i(78919),	-- Experiment 12-B
 		i(123890),	-- Felsteel Annihilator
 		i(30480),	-- Fiery Warhorse's Reins
@@ -89,15 +88,16 @@ root("BlackMarket", bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(63043),	-- Reins of the Vitreous Stone Drake
 		i(43962),	-- Reins of the White Polar Bear
 		i(23720),	-- Riding Turtle
+		i(13335),	-- Rivendare's Deathcharger (MOUNT!)
 		i(152789),	-- Shackled Ur'zul
 		i(116771),	-- Solar Spirehawk
 		i(93666),	-- Spawn of Horridon
 		i(69224),	-- Smoldering Egg of Millagazor
 		i(89783),	-- Son of Galleon's Saddle
-		i(19872),	-- Swift Razzashi Raptor
+		i(19872),	-- Swift Razzashi Raptor (MOUNT!)
 		i(68824),	-- Swift Zulian Panther
 		i(35513),	-- Swift White Hawkstrider
-		i(19902),	-- Swift Zulian Tiger
+		i(19902),	-- Swift Zulian Tiger (MOUNT!)
 		i(54068),	-- Wooly White Rhino
 		i(147805),	-- Valarjar Stormwing
 		i(152790),	-- Vile Fiend

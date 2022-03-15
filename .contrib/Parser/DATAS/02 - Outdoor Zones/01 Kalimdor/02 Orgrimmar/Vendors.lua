@@ -2498,15 +2498,15 @@ root("Zones", m(KALIMDOR, {
 			["coord"] = { 61.6, 35.6, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(18796),	-- Horn of the Swift Brown Wolf
-					i(18797),	-- Horn of the Swift Timber Wolf
-					i(18798),	-- Horn of the Swift Grey Wolf
-					i(1132),	-- Horn of the Timber Wolf
-					i(5665),	-- Horn of the Dire Wolf
-					i(5668),	-- Horn of the Brown Wolf
+					i(18796),	-- Swift Brown Wolf (MOUNT!)
+					i(18797),	-- Swift Timber Wolf (MOUNT!)
+					i(18798),	-- Swift Gray Wolf (MOUNT!)
+					i(1132),	-- Timber Wolf (MOUNT!)
+					i(5665),	-- Dire Wolf (MOUNT!)
+					i(5668),	-- Brown Wolf (MOUNT!)
 					i(46099),	-- Horn of the Black Wolf
-					un(REMOVED_FROM_GAME, i(12351)),	-- Arctic Wolf -- Unable to 100% verify this source.
-					un(REMOVED_FROM_GAME, i(12330)),	-- Red Wolf -- Unable to 100% verify this source.
+					un(REMOVED_FROM_GAME, i(12351)),	-- Arctic Wolf (MOUNT!) -- Unable to 100% verify this source.
+					un(REMOVED_FROM_GAME, i(12330)),	-- Red Wolf (MOUNT!) -- Unable to 100% verify this source.
 				},
 			}),
 			n(3317,   {	-- Ollanus <Cloth Armor Merchant>
@@ -2550,13 +2550,13 @@ root("Zones", m(KALIMDOR, {
 				["races"] = HORDE_ONLY,
 				["g"] = pvp({
 					i(29466),	-- Black War Kodo
-					un(REMOVED_FROM_GAME, i(18247)),	-- Black War Kodo. Pre 2.0 Version
+					un(REMOVED_FROM_GAME, i(18247)),	-- Black War Kodo (MOUNT!) Pre 2.0 Version
 					i(29469),	-- Horn of the Black War Wolf
-					un(REMOVED_FROM_GAME, i(18245)),	-- Horn of the Black War Wolf. Pre 2.0 Version
+					un(REMOVED_FROM_GAME, i(18245)),	-- Black War Wolf (MOUNT!) Pre 2.0 Version
 					i(29470),	-- Red Skeletal Warhorse
-					un(REMOVED_FROM_GAME, i(18248)),	-- Red Skeletal Warhorse. Pre 2.0 Version
+					un(REMOVED_FROM_GAME, i(18248)),	-- Red Skeletal Warhorse (MOUNT!) Pre 2.0 Version
 					i(29472),	-- Whistle of the Black War Raptor
-					un(REMOVED_FROM_GAME, i(18246)),	-- Whistle of the Black War Raptor. Pre 2.0 Version
+					un(REMOVED_FROM_GAME, i(18246)),	-- Black War Raptor (MOUNT!) Pre 2.0 Version
 					i(34129),	-- Swift Warstrider
 				}),
 			}),

@@ -61,12 +61,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(46308),	-- Black Skeletal Warhorse
-						i(13332),	-- Blue Skeletal Warhorse
-						i(13333),	-- Brown Skeletal Warhorse
-						i(13334),	-- Green Skeletal Warhorse
+						i(13332),	-- Blue Skeletal Horse (MOUNT!)
+						i(13333),	-- Brown Skeletal Horse (MOUNT!)
+						i(13334),	-- Green Skeletal Warhorse (MOUNT!)
 						i(47101),	-- Ochre Skeletal Warhorse
-						i(18791),	-- Purple Skeletal Warhorse
-						i(13331),	-- Red Skeletal Warhorse
+						i(18791),	-- Purple Skeletal Warhorse (MOUNT!)
+						i(13331),	-- Red Skeletal Horse (MOUNT!)
 					},
 				})
 			}),

@@ -27,12 +27,12 @@ _.Zones =
 					["coord"] = { 65.2, 51.4, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(18777),	-- Swift Brown Steed
-						i(18776),	-- Swift Palomino
-						i(18778),	-- Swift White Steed
-						i(5656),	-- Brown Horse Bridle
-						i(5655),	-- Chestnut Mare Bridle
-						i(2414),	-- Pinto Bridle
+						i(18777),	-- Swift Brown Steed (MOUNT!)
+						i(18776),	-- Swift Palomino (MOUNT!)
+						i(18778),	-- Swift White Steed (MOUNT!)
+						i(5656),	-- Brown Horse (MOUNT!)
+						i(5655),	-- Chestnut Mare (MOUNT!)
+						i(2414),	-- Pinto (MOUNT!)
 					},
 				}),
 				n(4886,  {	-- Hans Weston <Armorer & Weaponsmith>

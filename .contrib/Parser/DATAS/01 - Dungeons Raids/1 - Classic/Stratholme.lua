@@ -433,7 +433,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 						un(REMOVED_FROM_GAME, i(16737)),	-- Gauntlets of Valor
 					})),
 					cr(45412, e(456, {	-- Lord Aurius Rivendare
-						i(13335, {	-- Deathcharger's Reins (MOUNT!)
+						i(13335, {	-- Rivendare's Deathcharger (MOUNT!)
 							ach(729),	-- Deathcharger's Reins
 						}),
 						i(13505),	-- Runeblade of Baron Rivendare

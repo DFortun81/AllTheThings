@@ -438,7 +438,7 @@ root("Zones", m(KALIMDOR, {
 				["coord"] = { 61.5, 32.9, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(13331),	-- Red Skeletal Horse
+					i(13331),	-- Red Skeletal Horse (MOUNT!)
 				},
 			}),
 			q(32471, {	-- Light Camera Action
@@ -1048,9 +1048,9 @@ root("Zones", m(KALIMDOR, {
 				["repeatable"] = true,
 				["u"] = REMOVED_FROM_GAME,
 				["g"] = {
-					i(18796),	-- Horn of the Swift Brown Wolf
-					i(18798),	-- Horn of the Swift Gray Wolf
-					i(18797),	-- Horn of the Swift Timber Wolf
+					i(18796),	-- Swift Brown Wolf (MOUNT!)
+					i(18798),	-- Swift Gray Wolf (MOUNT!)
+					i(18797),	-- Swift Timber Wolf (MOUNT!)
 				},
 			}),
 			q(7661,  {	-- Wolf Swapping - Red Wolf
@@ -1060,9 +1060,9 @@ root("Zones", m(KALIMDOR, {
 				["repeatable"] = true,
 				["u"] = REMOVED_FROM_GAME,
 				["g"] = {
-					i(18796),	-- Horn of the Swift Brown Wolf
-					i(18798),	-- Horn of the Swift Gray Wolf
-					i(18797),	-- Horn of the Swift Timber Wolf
+					i(18796),	-- Swift Brown Wolf (MOUNT!)
+					i(18798),	-- Swift Gray Wolf (MOUNT!)
+					i(18797),	-- Swift Timber Wolf (MOUNT!)
 				},
 			}),
 			q(60963, {	-- Wrath of the Lich King: Onward to Adventure in Northrend

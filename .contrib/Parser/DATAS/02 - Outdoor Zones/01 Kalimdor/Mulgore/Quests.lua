@@ -97,9 +97,9 @@ _.Zones =
 					["provider"] = { "n", 3685 },	-- Harb Clawhoof
 					["coord"] = { 47.6, 58.0, MULGORE },
 					["g"] = {
-						i(18794),	-- Great Brown Kodo
-						i(18795),	-- Great Gray Kodo
-						i(18793),	-- Great White Kodo
+						i(18794),	-- Great Brown Kodo (MOUNT!)
+						i(18795),	-- Great Gray Kodo (MOUNT!)
+						i(18793),	-- Great White Kodo (MOUNT!)
 					},
 				}),
 				q(7662,  {	-- New Kodo - Teal
@@ -108,9 +108,9 @@ _.Zones =
 					["provider"] = { "n", 3685 },	-- Harb Clawhoof
 					["coord"] = { 47.6, 58.0, MULGORE },
 					["g"] = {
-						i(18794),	-- Great Brown Kodo
-						i(18795),	-- Great Gray Kodo
-						i(18793),	-- Great White Kodo
+						i(18794),	-- Great Brown Kodo (MOUNT!)
+						i(18795),	-- Great Gray Kodo (MOUNT!)
+						i(18793),	-- Great White Kodo (MOUNT!)
 					},
 				}),
 				q(20440, {	-- Poison Water

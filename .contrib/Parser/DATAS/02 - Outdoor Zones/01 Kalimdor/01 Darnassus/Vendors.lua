@@ -84,15 +84,15 @@ _.Zones =
 					["coord"] = { 42.6, 32.8, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(18766),	-- Reins of the Swift Frostsaber
-						i(18767),	-- Reins of the Swift Mistsaber
-						i(18902),	-- Reins of the Swift Stormsaber
-						i(8629),	-- Reins of the Striped Nightsaber
-						i(8631),	-- Reins of the Striped Frostsaber
-						i(8632),	-- Reins of the Spotted Frostsaber
+						i(18766),	-- Swift Frostsaber (MOUNT!)
+						i(18767),	-- Swift Mistsaber (MOUNT!)
+						i(18902),	-- Swift Stormsaber (MOUNT!)
+						i(8629),	-- Striped Nightsaber (MOUNT!)
+						i(8631),	-- Striped Frostsaber (MOUNT!)
+						i(8632),	-- Spotted Frostsaber (MOUNT!)
 						i(47100),	-- Reins of the Striped Dawnsaber
-						un(REMOVED_FROM_GAME, i(12302)),	-- Ancient Frostsaber
-						un(REMOVED_FROM_GAME, i(12303)),	-- Nightsaber
+						un(REMOVED_FROM_GAME, i(12302)),	-- Ancient Frostsaber (MOUNT!)
+						un(REMOVED_FROM_GAME, i(12303)),	-- Nightsaber (MOUNT!)
 					},
 				}),
 				n(50307, {	-- Lord Candren <Gilneas Quartermaster>

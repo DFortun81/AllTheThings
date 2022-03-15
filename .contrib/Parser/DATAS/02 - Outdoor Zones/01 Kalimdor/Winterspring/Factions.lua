@@ -85,7 +85,7 @@ _.Zones =
 							["description"] = "This quest must remain in your quest log to do the relevant daily quests.",
 							["sourceQuest"] = 29032,	-- Get Them While They're Young
 							["g"] = {
-								i(13086),	-- Reins of the Winterspring Frostsaber
+								i(13086),	-- Winterspring Frostsaber (MOUNT!)
 							},
 						}),
 					},

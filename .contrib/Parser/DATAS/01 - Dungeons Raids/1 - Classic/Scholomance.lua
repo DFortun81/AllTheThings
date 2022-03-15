@@ -337,7 +337,7 @@ root("Instances", tier(CLASSIC_TIER, {
 							objective(2, {	-- 0/1 Blessed Arcanite Barding
 								["provider"] = { "i", 18792 },	-- Blessed Arcanite Barding
 							}),
-							mount(23214, {	-- Summon Charger
+							mount(23214, {	-- Charger (MOUNT!)
 								["classes"] = { PALADIN },
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 60,

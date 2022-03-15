@@ -1727,8 +1727,8 @@ root("Zones", m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["g"] = {
-						i(18788),	-- Swift Blue Raptor
-						i(18789),	-- Swift Olive Raptor
+						i(18788),	-- Swift Blue Raptor (MOUNT!)
+						i(18789),	-- Swift Olive Raptor (MOUNT!)
 						i(18990),	-- Swift Orange Raptor
 					},
 				})),
@@ -2018,8 +2018,8 @@ root("Zones", m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["g"] = {
-						i(18788),	-- Swift Blue Raptor
-						i(18789),	-- Swift Olive Raptor
+						i(18788),	-- Swift Blue Raptor (MOUNT!)
+						i(18789),	-- Swift Olive Raptor (MOUNT!)
 						i(18990),	-- Swift Orange Raptor
 					},
 				})),
@@ -2869,14 +2869,14 @@ root("Zones", m(KALIMDOR, {
 				n(7952, {	-- Zjolnir <Raptor Handler>
 					["coord"] = { 55.2, 75.6, DUROTAR },
 					["g"] = {
-						i(18788),	-- Swift Blue Raptor
-						i(18789),	-- Swift Olive Raptor
-						i(18790),	-- Swift Orange Raptor
-						i(8588),	-- Whistle of the Emerald Raptor
-						i(8591),	-- Whistle of the Turquoise Raptor
-						i(8592),	-- Whistle of the Violet Raptor
-						i(13317, { ["timeline"] = {"removed 1.4.0"}}),	-- Ivory Raptor -- Unable to 100% verify this source.
-						i(8586, { ["timeline"] = {"removed 1.4.0"}}),	-- Mottled Red Raptor -- Unable to 100% verify this source.
+						i(18788),	-- Swift Blue Raptor (MOUNT!)
+						i(18789),	-- Swift Olive Raptor (MOUNT!)
+						i(18790),	-- Swift Orange Raptor (MOUNT!)
+						i(8588),	-- Emerald Raptor (MOUNT!)
+						i(8591),	-- Turquoise Raptor (MOUNT!)
+						i(8592),	-- Violet Raptor (MOUNT!)
+						i(13317, { ["timeline"] = {"removed 1.4.0"}}),	-- Ivory Raptor (MOUNT!) -- Unable to 100% verify this source.
+						i(8586, { ["timeline"] = {"removed 1.4.0"}}),	-- Mottled Red Raptor (MOUNT!)-- Unable to 100% verify this source.
 					},
 				}),
 			})),

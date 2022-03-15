@@ -1032,7 +1032,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					["coord"] = { 44.3, 18.3, ALTERAC_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						mark(15, i(19030)),	-- Stormpike Battle Charger
+						mark(15, i(19030)),	-- Stormpike Battle Charger (MOUNT!)
 						mark(10, i(19032)),	-- Stormpike Battle Tabard
 						mark(1, i(19045)),	-- Stormpike Battle Standard
 						mark(3, i(19102)),	-- Crackling Staff

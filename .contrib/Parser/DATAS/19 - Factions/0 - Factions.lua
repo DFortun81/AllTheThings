@@ -236,7 +236,7 @@ _.Factions =
 		faction(2417),	-- Uldum Accord
 	}),
 	tier(SL_TIER, {
-		faction(2480),	-- Automa
+		--faction(2480),	-- Automa (NYI)
 		faction(2413),	-- Court of Harvesters
 		faction(2464),	-- Court of Night
 		faction(2470, {	-- Death's Advance

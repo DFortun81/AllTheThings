@@ -1077,10 +1077,10 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					end]],
 					-- #endif
 				})),
-				i(21218),	-- Blue Qiraji Resonating Crystal
-				i(21323),	-- Green Qiraji Resonating Crystal
-				i(21321),	-- Red Qiraji Resonating Crystal
-				i(21324),	-- Yellow Qiraji Resonating Crystal
+				i(21218),	-- Blue Qiraji Battle Tank (MOUNT!)
+				i(21323),	-- Green Qiraji Battle Tank (MOUNT!)
+				i(21321),	-- Red Qiraji Battle Tank (MOUNT!)
+				i(21324),	-- Yellow Qiraji Battle Tank (MOUNT!)
 				i(21837, {	-- Anubisath Warhammer
 					["crs"] = {
 						15264,	-- Anubisath Sentinel
