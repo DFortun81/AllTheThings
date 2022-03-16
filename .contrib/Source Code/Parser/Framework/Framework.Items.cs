@@ -500,6 +500,13 @@ namespace ATT
                         }
 
                     // Integer Data Type Fields
+                    case "class":
+                    case "inventoryType":
+                    case "subclass":
+                    case "q":
+                        item[field] = Convert.ToInt64(value);
+                        break;
+
                     case "altItemID":
                     case "altAchID":
                     case "altSpeciesID":
@@ -509,9 +516,6 @@ namespace ATT
                     case "illusionID":
                     case "achID":
                     case "requireSkill":
-                    case "class":
-                    case "subclass":
-                    case "inventoryType":
                     case "isOffHand":
                     case "factionID":
                     case "mountID":
@@ -529,11 +533,20 @@ namespace ATT
                     case "b":
                     case "r":
                     case "ilvl":
-                    case "q":
+                        var longval = Convert.ToInt64(value);
+                        // any 0 value should simply be removed for cleanliness
+                        if (longval == 0)
                         {
-                            item[field] = Convert.ToInt64(value);
-                            break;
+                            if (DebugMode)
+                                Trace.WriteLine($"Removing 0-value {field} from {MiniJSON.Json.Serialize(item)}");
+
+                            item.Remove(field);
                         }
+                        else
+                        {
+                            item[field] = longval;
+                        }
+                        break;
 
                     // Integer-Array Data Type Fields (stored as List<object> for usability reasons)
                     case "c":
@@ -668,29 +681,31 @@ namespace ATT
                         item[field] = value;
                         break;
 
-                    // Report all other fields.
-                    default:
-                        {
-                            // ignore fields starting with _ since those will be used for metadata in some scenarios
-                            if (field.StartsWith("_"))
-                                break;
+                        // Not everything has to merge into the Item dictionary that may be required on a specific Source of an Item. Don't need to report them.
+                        // They will report during the Object merging if the Parser doesn't understand the field.
+                        // Report all other fields.
+                        //default:
+                        //    {
+                        //        // ignore fields starting with _ since those will be used for metadata in some scenarios
+                        //        if (field.StartsWith("_"))
+                        //            break;
 
-                            // ignore the 'hash' field which is generated during recipe automation and is dynamic in-game anyway
-                            if (field == "hash")
-                                break;
+                        //        // ignore the 'hash' field which is generated during recipe automation and is dynamic in-game anyway
+                        //        if (field == "hash")
+                        //            break;
 
-                            // Only warn the programmer once per field per session.
-                            if (WARNED_FIELDS.ContainsKey(field)) return;
-                            WARNED_FIELDS[field] = true;
-                            Trace.Write("Parser is ignoring field '");
-                            Trace.Write(field);
-                            Trace.WriteLine("' for items.");
-                            Trace.Write("  [");
-                            Trace.Write(MiniJSON.Json.Serialize(value));
-                            Trace.WriteLine("]");
-                            Trace.WriteLine(MiniJSON.Json.Serialize(item));
-                            break;
-                        }
+                        //        // Only warn the programmer once per field per session.
+                        //        if (WARNED_FIELDS.ContainsKey(field)) return;
+                        //        WARNED_FIELDS[field] = true;
+                        //        Trace.Write("Parser is ignoring field '");
+                        //        Trace.Write(field);
+                        //        Trace.WriteLine("' for items.");
+                        //        Trace.Write("  [");
+                        //        Trace.Write(MiniJSON.Json.Serialize(value));
+                        //        Trace.WriteLine("]");
+                        //        Trace.WriteLine(MiniJSON.Json.Serialize(item));
+                        //        break;
+                        //    }
                 }
             }
 

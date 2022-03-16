@@ -2186,9 +2186,14 @@ namespace ATT
                 // Find the Object Dictionary that matches the data.
                 Dictionary<string, object> entry = null;
 
-                // Merge in any global data if this is not the initial merge pass
+                // Merge in/out any global data if this is not the initial merge pass
                 // This way, pets/mounts/etc. have proper data existing when needing to merge into another group
-                if (!MergeItemData)
+                if (MergeItemData)
+                {
+                    Items.Merge(data2);
+                    Merge(data2);
+                }
+                else
                 {
                     Items.MergeInto(data2);
                     MergeInto(data2);
