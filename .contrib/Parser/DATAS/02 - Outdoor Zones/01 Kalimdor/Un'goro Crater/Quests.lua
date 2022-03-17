@@ -47,7 +47,7 @@ _.Zones =
 					["requireSkill"] = BLACKSMITHING,
 					["sourceQuests"] = {
 						45044,	-- Weapon No More
-						45051,	-- Reverse Blacksmithing (alliance-only criteria)
+						45051,	-- Reverse Blacksmithing
 					},
 				}),
 				q(3844,  {	-- A Wrecked Raft
@@ -422,7 +422,6 @@ _.Zones =
 				q(45051, {	-- Reverse Blacksmithing
 					["provider"] = { "n", 115923 },	-- Ko'Zan
 					["coord"] = { 43.6, 41.4, UNGORO_CRATER },
-					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 45044,	-- Weapon No More
 					["requireSkill"] = BLACKSMITHING,
 				}),
