@@ -558,7 +558,11 @@ _.Instances = { tier(CLASSIC_TIER, {
 				["mapID"] = STRATHOLME, -- Main Gate
 				-- #endif
 				["description"] = "Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Live\" or \"Scarlet\" side, which the Scarlet Crusade has taken over.",
+				-- #if AFTER 4.0.3
 				["coord"] = { 27.66, 11.64, EASTERN_PLAGUELANDS },	-- Stratholme [Main Gate]
+				-- #else
+				["coord"] = { 30.9, 16.6, EASTERN_PLAGUELANDS },	-- Stratholme [Main Gate]
+				-- #endif
 				["groups"] = {
 					n(ZONE_DROPS, {
 						i(12811, {	-- Righteous Orb
@@ -863,8 +867,10 @@ _.Instances = { tier(CLASSIC_TIER, {
 				["mapID"] = 318, -- Service Entrance
 				-- #endif
 				["description"] = "Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Dead\" or \"Scourge\" side, which the Scourge has taken over.",
+				-- #if AFTER 4.0.3
 				["coord"] = { 43.76, 17.52, EASTERN_PLAGUELANDS },	-- Stratholme [Undead Side]
-				-- #if BEFORE 4.0.3
+				-- #else
+				["coord"] = { 48.18, 21.90, EASTERN_PLAGUELANDS },	-- Stratholme [Undead Side]
 				["cost"] = { { "i", 12382, 1 } },	-- Key to the City
 				-- #endif
 				["groups"] = {
