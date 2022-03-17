@@ -484,6 +484,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 									i(187867),	-- Evolved Exo-mucus
 								}),
 							}),
+							i(187791),	-- Kismetric Circlet (unknown use/purpose yet)
+							i(187790),	-- Trace Enigmet
 						},
 					}),
 					i(187909, {	-- Unstable Containment Trap

@@ -278,6 +278,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
 					}),
 					i(189863),	-- Spatial Opener
+					i(190941),	-- Teachings of the Elders
 				},
 			}),
 			o(369757, {	-- Submerged Chest
@@ -705,6 +706,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				},
 				["g"] = {
 					i(190740),	-- Automa Integration
+					i(190739),	-- Provis Wax
 				},
 			}),
 		}),

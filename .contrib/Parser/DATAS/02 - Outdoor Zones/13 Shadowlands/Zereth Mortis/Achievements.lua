@@ -140,7 +140,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					}),
 					crit(2, {	-- Honeycombed Lattice
 						["provider"] = { "i", 187885 },	-- Honeycombed Lattice
-						-- ["coord"] = { X, Y, ZERETH_MORTIS },
+						["coord"] = { 64.3, 59.2, ZERETH_MORTIS },
 					}),
 					crit(3, {	-- Anima-charged Yolk
 						["provider"] = { "i", 187890 },	-- Anima-charged Yolk
@@ -156,7 +156,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					}),
 					crit(6, {	-- Incorporeal Sand
 						["provider"] = { "i", 187892 },	-- Incorporeal Sand
-						-- ["coord"] = { X, Y, ZERETH_MORTIS },
+						["coord"] = { 39.3, 34.6, ZERETH_MORTIS },
 					}),
 					crit(7, {	-- Volatile Precursor
 						["provider"] = { "i", 187893 },	-- Volatile Precursor

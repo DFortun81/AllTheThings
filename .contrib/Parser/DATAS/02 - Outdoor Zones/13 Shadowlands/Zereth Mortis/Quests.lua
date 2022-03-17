@@ -1156,7 +1156,7 @@ root("HiddenQuestTriggers", m(SHADOWLANDS, {
 		q(65340),	-- Fourth Locus arrangement at Gravid Repose
 		q(65341),	-- Fifth Locus arrangement at Gravid Repose
 		q(65342),	-- Ultimate Locus arrangement at Gravid Repose
-		--q(65457),	-- Unlock all?
+		q(65457),	-- Unlock all
 
 		q(65376),	-- Entering Gravid Repose First Time
 		q(65377),	-- Entering Gravid Repose First Time

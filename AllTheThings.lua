@@ -535,7 +535,7 @@ end
 app.SortGroup = SortGroup;
 -- Allows defining SortGroup data which is only executed when the group is actually expanded
 local function SortGroupDelayed(group, sortType, row, recur, conditionField)
-	app.PrintDebug("Delayed Sort defined for",group.text)
+	-- app.PrintDebug("Delayed Sort defined for",group.text)
 	group.SortInfo = { sortType, row, recur, conditionField };
 end
 app.SortGroupDelayed = SortGroupDelayed;
@@ -3672,27 +3672,28 @@ local function FillPurchases(group, depth)
 	-- if app.DEBUG_PRINT then print("FillPurchases?",group.hash,depth) end
 	if depth < 1 then return; end
 	-- do not fill purchases on certain items, can skip the skip though based on a level
-	local reqSkipLevel = group.itemID and app.SkipPurchases[group.itemID];
+	local itemID = group.itemID;
+	local reqSkipLevel = itemID and app.SkipPurchases[itemID];
 	if reqSkipLevel then
 		local curSkipLevel = app.SkipPurchases[-1];
 		if curSkipLevel and curSkipLevel < reqSkipLevel then return; end;
 	end
 	-- do not fill 'saved' groups (unless they are actual Maps or Instances, or a Difficulty header. Also 'saved' Items usually means tied to a questID directly)
 	-- or groups directly under saved groups unless in Acct or Debug mode
-	if not app.MODE_DEBUG_OR_ACCOUNT and not (group.instanceID or group.mapID or group.difficultyID or group.itemID) then
+	if not app.MODE_DEBUG_OR_ACCOUNT and not (group.instanceID or group.mapID or group.difficultyID or itemID) then
 		if group.saved then return; end
 		local rawParent = rawget(group, "parent");
 		if rawParent and rawParent.saved then return; end
 	end
 
 	local collectibles = group.costCollectibles or (group.collectibleAsCost and group.costCollectibles);
-	-- if app.DEBUG_PRINT then print("GetPurchases",collectibles and #collectibles) end
+	-- app.PrintDebug("FillPurchases",group.hash,collectibles and #collectibles);
 	if collectibles and #collectibles > 0 then
 		-- Nest new copies of the cost collectible objects of this group under itself
 		local usedToBuy = app.CreateNPC(-2, { ["text"] = L["CURRENCY_FOR"] } );
 		NestObject(group, usedToBuy, nil, 1);
 		PriorityNestObjects(usedToBuy, collectibles, true, app.RecursiveGroupRequirementsFilter);
-		-- if app.DEBUG_PRINT then print("Filled",#collectibles,"under",group.hash,"as",#usedToBuy.g,"unique groups") end
+		-- app.PrintDebug("Filled",collectibles and #collectibles,"under",group.hash,"as",#usedToBuy.g,"unique groups");
 		-- reduce the depth by one since a cost has been filled
 		depth = depth - 1;
 		-- mark this group as no-longer collectible as a cost since its collectible contents have been filled under itself
@@ -10745,10 +10746,10 @@ local mountFields = {
 			if not t.costCollectibles then
 				-- search by plain itemID only
 				local results = app.SearchForField("itemIDAsCost", id);
-				app.PrintDebug("collectibleAsCost",id,results and #results)
+				-- app.PrintDebug("collectibleAsCost",id,results and #results)
 				if results and #results > 0 then
 					-- setup the costCollectibles initially
-					app.PrintDebug("> costs",t.hash,t.modItemID)
+					-- app.PrintDebug("> costs",t.hash,t.modItemID)
 					local costCollectibles, collectible = {};
 					cache.SetCachedField(t, "costCollectibles", costCollectibles);
 					local canBeCollectible = app.PreCheckCollectible(t);
@@ -17949,7 +17950,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 						end
 					end
 				end
-				app.PrintDebug("Warn:Difficulty")
+				-- app.PrintDebug("Warn:Difficulty")
 				if app.Settings:GetTooltipSetting("Warn:Difficulty") then
 					if difficultyID and difficultyID > 0 and self.data.g then
 						local missing, found, other;
