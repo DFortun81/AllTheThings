@@ -716,7 +716,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						end]],
 						-- #endif
 					})),
-					i(30480),	-- Fiery Warhorse's Reins (MOUNT!)
+					i(30480),	-- Fiery Warhorse (MOUNT!)
 					i(28504),	-- Steelhawk Crossbow
 					i(28509),	-- Worgen Claw Necklace
 					i(28453),	-- Bracers of the White Stag

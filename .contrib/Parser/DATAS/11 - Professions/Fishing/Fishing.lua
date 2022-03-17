@@ -395,7 +395,7 @@ profession(FISHING, {
 		i(152912, {	-- Pond Nettle
 			["description"] = "Caught in green pools around Antoran Wastes.",
 		}),
-		i(23720),	-- Riding Turtle
+		i(23720),	-- Riding Turtle (MOUNT!)
 		i(46109, {	-- Sea Turtle Mount
 			["description"] = "Caught anywhere from Northrend to current zones.",
 		}),

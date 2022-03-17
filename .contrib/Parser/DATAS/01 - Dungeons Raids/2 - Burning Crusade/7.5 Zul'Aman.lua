@@ -217,7 +217,7 @@ root("Instances", tier(TBC_TIER, applylegacyclassicphase(TBC_PHASE_FOUR, {
 									end]],
 									-- #endif
 								})),
-								i(33809),	-- Amani War Bear
+								i(33809),	-- Amani War Bear (MOUNT!)
 							},
 						}),
 					},

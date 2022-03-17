@@ -306,7 +306,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 								end]],
 								-- #endif
 							})),
-							i(32768),	-- Reins of the Raven Lord (MOUNT!)
+							i(32768),	-- Raven Lord (MOUNT!)
 							i(32781),	-- Talon of Anzu
 							i(32780),	-- The Boomstick
 							i(32769),	-- Belt of the Raven Lord

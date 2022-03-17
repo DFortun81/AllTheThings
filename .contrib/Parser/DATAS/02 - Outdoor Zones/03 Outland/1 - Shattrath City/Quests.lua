@@ -290,7 +290,7 @@ _.Zones =
 					["sourceQuests"] = { 11107 },	-- Bow to the Highlord
 					-- ["coord"] = { , SHATTRATH_CITY },
 					["g"] = {
-						i(32859),	-- Reins of the Cobalt Netherwing Drake Mount
+						i(32859),	-- Cobalt Netherwing Drake (MOUNT!)
 					},
 				}),
 				q(11110, {	-- Malfas the Purple Netherwing Drake
@@ -298,7 +298,7 @@ _.Zones =
 					["sourceQuests"] = { 11107 },	-- Bow to the Highlord
 					-- ["coord"] = { , SHATTRATH_CITY },
 					["g"] = {
-						i(32860),	-- Reins of the Purple Netherwing Drake Mount
+						i(32860),	-- Purple Netherwing Drake (MOUNT!)
 					},
 				}),
 				q(11111, {	-- Onyxien the Onyx Netherwing Drake
@@ -306,7 +306,7 @@ _.Zones =
 					["sourceQuests"] = { 11107 },	-- Bow to the Highlord
 					-- ["coord"] = { , SHATTRATH_CITY },
 					["g"] = {
-						i(32857),	-- Reins of the Onyx Netherwing Drake Mount
+						i(32857),	-- Onyx Netherwing Drake (MOUNT!)
 					},
 				}),
 				q(11112, {	-- Suraku the Azure Netherwing Drake
@@ -314,7 +314,7 @@ _.Zones =
 					["sourceQuests"] = { 11107 },	-- Bow to the Highlord
 					-- ["coord"] = { , SHATTRATH_CITY },
 					["g"] = {
-						i(32858),	-- Reins of the Azure Netherwing Drake Mount
+						i(32858),	-- Azure Netherwing Drake (MOUNT!)
 					},
 				}),
 				q(11113, {	-- Voranaku the Violet Netherwing Drake
@@ -322,7 +322,7 @@ _.Zones =
 					["sourceQuests"] = { 11107 },	-- Bow to the Highlord
 					-- ["coord"] = { , SHATTRATH_CITY },
 					["g"] = {
-						i(32862),	-- Reins of the Violet Netherwing Drake Mount
+						i(32862),	-- Violet Netherwing Drake (MOUNT!)
 					},
 				}),
 				q(11114, {	-- Zoya the Veridian Netherwing Drake
@@ -330,7 +330,7 @@ _.Zones =
 					["sourceQuests"] = { 11107 },	-- Bow to the Highlord
 					-- ["coord"] = { , SHATTRATH_CITY },
 					["g"] = {
-						i(32861),	-- Reins of the Veridian Netherwing Drake Mount
+						i(32861),	-- Veridian Netherwing Drake (MOUNT!)
 					},
 				}),
 				q(12753, {	-- A Desperate Alliance

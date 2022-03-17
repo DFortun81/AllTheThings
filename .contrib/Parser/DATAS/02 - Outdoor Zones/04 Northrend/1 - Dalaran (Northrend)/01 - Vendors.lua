@@ -2190,10 +2190,10 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["cost"] = 20000000,	-- 2,000g
 						}),
-						h(i(25475)),	-- Blue Wind Rider
-						a(i(25471)),	-- Ebon Gryphon
-						a(i(25470)),	-- Golden Gryphon
-						h(i(25476)),	-- Green Wind Rider
+						h(i(25475)),	-- Blue Wind Rider (MOUNT!)
+						a(i(25471)),	-- Ebon Gryphon (MOUNT!)
+						a(i(25470)),	-- Golden Gryphon (MOUNT!)
+						h(i(25476)),	-- Green Wind Rider (MOUNT!)
 						i(44225, {	-- Reins of the Armored Brown Bear
 							["races"] = ALLIANCE_ONLY,
 							["cost"] = 7500000,	-- 750g
@@ -2218,16 +2218,16 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 							["cost"] = 100000000,	-- 10,000g
 						}),
-						a(i(25472)),	-- Snowy Gryphon
-						a(i(25473)),	-- Swift Blue Gryphon
-						a(i(25528)),	-- Swift Green Gryphon
-						h(i(25531)),	-- Swift Green Wind Rider
-						a(i(25529)),	-- Swift Purple Gryphon
-						h(i(25533)),	-- Swift Purple Wind Rider
-						a(i(25527)),	-- Swift Red Gryphon
-						h(i(25477)),	-- Swift Red Wind Rider
-						h(i(25532)),	-- Swift Yellow Wind Rider
-						h(i(25474)),	-- Tawny Wind Rider
+						a(i(25472)),	-- Snowy Gryphon (MOUNT!)
+						a(i(25473)),	-- Swift Blue Gryphon (MOUNT!)
+						a(i(25528)),	-- Swift Green Gryphon (MOUNT!)
+						h(i(25531)),	-- Swift Green Wind Rider (MOUNT!)
+						a(i(25529)),	-- Swift Purple Gryphon (MOUNT!)
+						h(i(25533)),	-- Swift Purple Wind Rider (MOUNT!)
+						a(i(25527)),	-- Swift Red Gryphon (MOUNT!)
+						h(i(25477)),	-- Swift Red Wind Rider (MOUNT!)
+						h(i(25532)),	-- Swift Yellow Wind Rider (MOUNT!)
+						h(i(25474)),	-- Tawny Wind Rider (MOUNT!)
 					},
 				}),
 				n(29495,  {	-- Norvin Alderman <Cloaks>

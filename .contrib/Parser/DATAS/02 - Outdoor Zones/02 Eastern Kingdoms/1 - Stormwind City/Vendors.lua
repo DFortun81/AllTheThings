@@ -1980,22 +1980,22 @@ _.Zones =
 					["coord"] = { 76.2, 65.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = pvp({
-						i(29465, {	-- Black Battlestrider Mount
+						i(29465, {	-- Black Battlestrider (MOUNT!)
 							["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
 						}),
 						un(REMOVED_FROM_GAME, i(18243)),	-- Black Battlestrider (MOUNT!) Pre 2.0 Version
-						i(29467, {	-- Black War Ram Mount
+						i(29467, {	-- Black War Ram (MOUNT!)
 							["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
 						}),
 						un(REMOVED_FROM_GAME, i(18241)),	-- Black War Steed (MOUNT!) Pre 2.0 Version
-						i(29468, {	-- Black War Steed Bridle Mount
+						i(29468, {	-- Black War Steed (MOUNT!)
 							["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
 						}),
 						un(REMOVED_FROM_GAME, i(18244)),	-- Black War Ram (MOUNT!) Pre 2.0 Version
-						i(35906, {	-- Reins of the Black War Elekk Mount
+						i(35906, {	-- Black War Elekk (MOUNT!)
 							["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
 						}),
-						i(29471, {	-- Reins of the Black War Tiger Mount
+						i(29471, {	-- Black War Tiger (MOUNT!)
 							["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
 						}),
 						un(REMOVED_FROM_GAME, i(18242)),	-- Black War Tiger (MOUNT!) Pre 2.0 Version
@@ -3400,13 +3400,13 @@ _.Zones =
 					["coord"] = { 71.4, 72.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(25471),	-- Ebon Gryphon Mount
-						i(25470),	-- Golden Gryphon Mount
-						i(25472),	-- Snowy Gryphon Mount
-						i(25473),	-- Swift Blue Gryphon Mount
-						i(25528),	-- Swift Green Gryphon Mount
-						i(25529),	-- Swift Purple Gryphon Mount
-						i(25527),	-- Swift Red Gryphon Mount
+						i(25471),	-- Ebon Gryphon (MOUNT!)
+						i(25470),	-- Golden Gryphon (MOUNT!)
+						i(25472),	-- Snowy Gryphon (MOUNT!)
+						i(25473),	-- Swift Blue Gryphon (MOUNT!)
+						i(25528),	-- Swift Green Gryphon (MOUNT!)
+						i(25529),	-- Swift Purple Gryphon (MOUNT!)
+						i(25527),	-- Swift Red Gryphon (MOUNT!)
 					},
 				}),
 				n(44583,  {	-- Terrance Denman

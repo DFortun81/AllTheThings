@@ -409,13 +409,13 @@ root("Zones", m(KALIMDOR, {
 				["races"] = HORDE_ONLY,
 				["coord"] = { 48.0, 58.6, ORGRIMMAR },
 				["g"] = {
-					i(25477),	-- Swift Red Wind Rider Mount
-					i(25531),	-- Swift Green Wind Rider Mount
-					i(25532),	-- Swift Yellow Wind Rider Mount
-					i(25533),	-- Swift Purple Wind Rider Mount
-					i(25474),	-- Tawny Wind Rider Mount
-					i(25475),	-- Blue Wind Rider Mount
-					i(25476),	-- Green Wind Rider Mount
+					i(25477),	-- Swift Red Wind Rider (MOUNT!)
+					i(25531),	-- Swift Green Wind Rider (MOUNT!)
+					i(25532),	-- Swift Yellow Wind Rider (MOUNT!)
+					i(25533),	-- Swift Purple Wind Rider (MOUNT!)
+					i(25474),	-- Tawny Wind Rider (MOUNT!)
+					i(25475),	-- Blue Wind Rider (MOUNT!)
+					i(25476),	-- Green Wind Rider (MOUNT!)
 				},
 			}),
 			n(3367,   {	-- Felika <Trade Supplies>
@@ -2549,15 +2549,15 @@ root("Zones", m(KALIMDOR, {
 				["itemID"] = 137642,	-- Mark of Honor
 				["races"] = HORDE_ONLY,
 				["g"] = pvp({
-					i(29466),	-- Black War Kodo
+					i(29466),	-- Black War Kodo (MOUNT!)
 					un(REMOVED_FROM_GAME, i(18247)),	-- Black War Kodo (MOUNT!) Pre 2.0 Version
-					i(29469),	-- Horn of the Black War Wolf
+					i(29469),	-- Black War Wolf (MOUNT!)
 					un(REMOVED_FROM_GAME, i(18245)),	-- Black War Wolf (MOUNT!) Pre 2.0 Version
-					i(29470),	-- Red Skeletal Warhorse
+					i(29470),	-- Red Skeletal Warhorse (MOUNT!)
 					un(REMOVED_FROM_GAME, i(18248)),	-- Red Skeletal Warhorse (MOUNT!) Pre 2.0 Version
-					i(29472),	-- Whistle of the Black War Raptor
+					i(29472),	-- Black War Raptor (MOUNT!)
 					un(REMOVED_FROM_GAME, i(18246)),	-- Black War Raptor (MOUNT!) Pre 2.0 Version
-					i(34129),	-- Swift Warstrider
+					i(34129),	-- Swift Warstrider (MOUNT!)
 				}),
 			}),
 			n(52033,  {	-- Rogoc <Bloodthirsty Gladiator>

@@ -114,6 +114,7 @@ i(1134, 459);		-- Gray Wolf						/	Horn of the Gray Wolf
 --i(0, 15780);		-- Green Mechanostrider				/
 i(8589, 10795);		-- Ivory Raptor						/	Old Whistle of the Ivory Raptor
 i(8633, 10788);		-- Leopard							/	Reins of the Leopard
+i(23193, 29059);	-- Naxxramas Deathcharger			/	Naxxramas Deathcharger Reins IN classic named: Skeletal Steed	/	Skeletal Steed Reins
 i(8627,	10787);		-- Nightsaber						/	Reins of the Nightsaber
 i(8590, 10798);		-- Obsidian Raptor					/	Old Whistle of the Obsidian Raptor
 i(16339, 16082);	-- Palomino							/	Commander's Steed
@@ -134,6 +135,11 @@ i(2415, 468);		-- White Stallion					/	White Stallion
 i(1133, 581);		-- Winter Wolf						/	Horn of the Winter Wolf
 
 -----------------
+--   CHANGE    --
+-----------------
+i(21736, 28828);	-- CLASSIC:Riding Gryphon TBC:Nether Drake / CLASSIC:Riding Gryphon Reins, TBC:Nether Drake Reins (TWO Places in NYI ATM)
+
+-----------------
 -- PATCH 2.0.0 --
 -----------------
 i(23720, 30174);	-- Riding Turtle
@@ -141,118 +147,176 @@ i(23720, 30174);	-- Riding Turtle
 -----------------
 -- PATCH 2.0.1 --
 -----------------
---i(0, 34767);		-- Thalassian Charger
---i(0, 34769);		-- Thalassian Warhorse
--- NYI --
---i(0, 33630);		-- Blue Mechanostrider
-i(21736, 28828);	-- Nether Drake	/	Nether Drake Reins
---i(0, 33631);		-- Video Mount
-
-
-
-
-i(25470, 32235);	-- Golden Gryphon
-i(25471, 32239);	-- Ebon Gryphon
-i(25472, 32240);	-- Snowy Gryphon
-i(25473, 32242);	-- Swift Blue Gryphon
-i(25474, 32243);	-- Tawny Wind Rider
-i(25475, 32244);	-- Blue Wind Rider
-i(25476, 32245);	-- Green Wind Rider
-i(25477, 32246);	-- Swift Red Wind Rider
-i(25527, 32289);	-- Swift Red Gryphon
-i(25528, 32290);	-- Swift Green Gryphon
-i(25529, 32292);	-- Swift Purple Gryphon
-i(25531, 32295);	-- Swift Green Wind Rider
-i(25532, 32296);	-- Swift Yellow Wind Rider
-i(25533, 32297);	-- Swift Purple Wind Rider
-i(25596, 32345);	-- Peep's Whistle
-i(27819);	-- Crazy Raptor 75
-i(27853);	-- Crazy Raptor 150
-i(28481, 34406);	-- Brown Elekk
-i(28482, 34407);	-- Great Elite Elekk
-i(28915, 39316);	-- Reins of the Dark Riding Talbuk
-i(28927, 34795);	-- Red Hawkstrider
-i(28936, 33660);	-- Swift Pink Hawkstrider
-i(29102, 34896);	-- Reins of the Cobalt War Talbuk
-i(29103, 34897);	-- Reins of the White War Talbuk
-i(29104, 34898);	-- Reins of the Silver War Talbuk
-i(29105, 34899);	-- Reins of the Tan War Talbuk
-i(29220, 35020);	-- Blue Hawkstrider
-i(29221, 35022);	-- Black Hawkstrider
-i(29222, 35018);	-- Purple Hawkstrider
-i(29223, 35025);	-- Swift Green Hawkstrider
-i(29224, 35027);	-- Swift Purple Hawkstrider
-i(29225);	-- zzoldSwift Warstrider
-i(29227, 34896);	-- Reins of the Cobalt War Talbuk
-i(29228, 34790);	-- Reins of the Dark War Talbuk
-i(29229, 34898);	-- Reins of the Silver War Talbuk
-i(29230, 34899);	-- Reins of the Tan War Talbuk
-i(29231, 34897);	-- Reins of the White War Talbuk
 i(29465, 22719);	-- Black Battlestrider
+i(29221, 35022);	-- Black Hawkstrider
 i(29466, 22718);	-- Black War Kodo
 i(29467, 22720);	-- Black War Ram
-i(29468, 22717);	-- Black War Steed Bridle
-i(29469, 22724);	-- Horn of the Black War Wolf
-i(29470, 22722);	-- Red Skeletal Warhorse
-i(29471, 22723);	-- Reins of the Black War Tiger
-i(29472, 22721);	-- Whistle of the Black War Raptor
-i(29743, 35711);	-- Purple Elekk
+i(29472, 22721);	-- Black War Raptor
+i(29468, 22717);	-- Black War Steed
+i(29471, 22723);	-- Black War Tiger
+i(29469, 22724);	-- Black War Wolf
+i(29220, 35020);	-- Blue Hawkstrider
+i(25475, 32244);	-- Blue Wind Rider
+i(28481, 34406);	-- Brown Elekk
+i(31830, 39315);	-- Cobalt Riding Talbuk (A)
+i(31829, 39315);	-- Cobalt Riding Talbuk (H)
+i(29227, 34896);	-- Cobalt War Talbuk (A)
+i(29102, 34896);	-- Cobalt War Talbuk (H)
+i(28915, 39316);	-- Dark Riding Talbuk
+i(29228, 34790);	-- Dark War Talbuk
+i(25471, 32239);	-- Ebon Gryphon
+i(30480, 36702);	-- Fiery Warhorse
+i(25470, 32235);	-- Golden Gryphon
 i(29744, 35710);	-- Gray Elekk
 i(29745, 35713);	-- Great Blue Elekk
 i(29746, 35712);	-- Great Green Elekk
 i(29747, 35714);	-- Great Purple Elekk
-i(30480, 36702);	-- Fiery Warhorse's Reins
-i(30609, 37015);	-- Swift Nether Drake
-i(31829, 39315);	-- Reins of the Cobalt Riding Talbuk
-i(31830, 39315);	-- Reins of the Cobalt Riding Talbuk
-i(31831, 39317);	-- Reins of the Silver Riding Talbuk
-i(31832, 39317);	-- Reins of the Silver Riding Talbuk
-i(31833, 39318);	-- Reins of the Tan Riding Talbuk
-i(31834, 39318);	-- Reins of the Tan Riding Talbuk
-i(31835, 39319);	-- Reins of the White Riding Talbuk
-i(31836, 39319);	-- Reins of the White Riding Talbuk
+i(25476, 32245);	-- Green Wind Rider
+i(29743, 35711);	-- Purple Elekk
+i(29222, 35018);	-- Purple Hawkstrider
+i(28927, 34795);	-- Red Hawkstrider
+i(29470, 22722);	-- Red Skeletal Warhorse
+i(31832, 39317);	-- Silver Riding Talbuk (A)
+i(31831, 39317);	-- Silver Riding Talbuk (H)
+i(29229, 34898);	-- Silver War Talbuk (A)
+i(29104, 34898);	-- Silver War Talbuk (H)
+i(25472, 32240);	-- Snowy Gryphon
+i(29223, 35025);	-- Swift Green Hawkstrider
+i(28936, 33660);	-- Swift Pink Hawkstrider
+i(29224, 35027);	-- Swift Purple Hawkstrider
+i(31834, 39318);	-- Tan Riding Talbuk (A)
+i(31833, 39318);	-- Tan Riding Talbuk (H)
+i(29230, 34899);	-- Tan War Talbuk (A)
+i(29105, 34899);	-- Tan War Talbuk (H)
+i(25474, 32243);	-- Tawny Wind Rider
+--i(0, 34767);		-- Thalassian Charger
+--i(0, 34769);		-- Thalassian Warhorse
+i(31836, 39319);	-- White Riding Talbuk (A)
+i(31835, 39319);	-- White Riding Talbuk (H)
+i(29231, 34897);	-- White War Talbuk (A)
+i(29103, 34897);	-- White War Talbuk (H)
+-- NYI --
+--i(0, 33630);		-- Blue Mechanostrider
+
+-----------------
+-- PATCH 2.0.5 --
+-----------------
+i(25473, 32242);	-- Swift Blue Gryphon
+i(25528, 32290);	-- Swift Green Gryphon
+i(25531, 32295);	-- Swift Green Wind Rider
+i(25529, 32292);	-- Swift Purple Gryphon
+i(25533, 32297);	-- Swift Purple Wind Rider
+i(25527, 32289);	-- Swift Red Gryphon
+i(25477, 32246);	-- Swift Red Wind Rider
+i(25532, 32296);	-- Swift Yellow Wind Rider
+
+-----------------
+-- PATCH 2.0.8 --
+-----------------
+-- NYI --
+i(29225, 35028);	-- Swift Warstrider	/	zzoldSwift Warstrider
+
+-----------------
+-- PATCH 2.1.0 --
+-----------------
+i(32858, 41514);	-- Azure Netherwing Drake
+i(32319, 39803);	-- Blue Riding Nether Ray
+i(32859, 41515);	-- Cobalt Netherwing Drake
 i(32314, 39798);	-- Green Riding Nether Ray
+i(32857, 41513);	-- Onyx Netherwing Drake
+i(32860, 41516);	-- Purple Netherwing Drake
 i(32316, 39801);	-- Purple Riding Nether Ray
+i(32768, 41252);	-- Raven Lord
 i(32317, 39800);	-- Red Riding Nether Ray
 i(32318, 39802);	-- Silver Riding Nether Ray
-i(32319, 39803);	-- Blue Riding Nether Ray
+i(32861, 41517);	-- Veridian Netherwing Drake
+i(32862, 41518);	-- Violet Netherwing Drake
+
+-----------------
+-- PATCH 2.1.1 --
+-----------------
 i(32458, 40192);	-- Ashes of Al'ar
-i(32768, 41252);	-- Reins of the Raven Lord
-i(32857, 41513);	-- Reins of the Onyx Netherwing Drake
-i(32858, 41514);	-- Reins of the Azure Netherwing Drake
-i(32859, 41515);	-- Reins of the Cobalt Netherwing Drake
-i(32860, 41516);	-- Reins of the Purple Netherwing Drake
-i(32861, 41517);	-- Reins of the Veridian Netherwing Drake
-i(32862, 41518);	-- Reins of the Violet Netherwing Drake
-i(33176);	-- Flying Broom
-i(33182);	-- Swift Flying Broom
-i(33183);	-- Old Magic Broom
-i(33184);	-- Swift Magic Broom
-i(33224, 42776);	-- Reins of the Spectral Tiger
-i(33225, 42777);	-- Reins of the Swift Spectral Tiger
-i(33809, 43688);	-- Amani War Bear
+
+-----------------
+-- PATCH 2.1.2 --
+-----------------
+i(30609, 37015);	-- Swift Nether Drake
+
+-----------------
+-- PATCH 2.1.3 --
+-----------------
 i(33976, 43899);	-- Brewfest Ram
+i(33176, 42667);	-- Flying Broom
+i(33183, 42680);	-- Old Magic Broom
+i(33224, 42776);	-- Spectral Tiger
 i(33977, 43900);	-- Swift Brewfest Ram
+i(33182, 42668);	-- Swift Flying Broom
+i(33184, 42683);	-- Swift Magic Broom
+i(33225, 42777);	-- Swift Spectral Tiger
+
+-----------------
+-- PATCH 2.2.3 --
+-----------------
+-- NYI --
+i(28482, 34407);	-- Great Elite Elekk	/	Great Elite Elekk
+
+-----------------
+-- PATCH 2.3.0 --
+-----------------
+i(33809, 43688);	-- Amani War Bear
 i(33999, 43927);	-- Cenarion War Hippogryph
 i(34060, 44153);	-- Flying Machine
-i(34061, 44151);	-- Turbo-Charged Flying Machine
 i(34092, 44744);	-- Merciless Nether Drake
 i(34129, 35028);	-- Swift Warstrider
+i(34061, 44151);	-- Turbo-Charged Flying Machine
+-- NYI --
+i(25596, 32345);	-- Peep the Phoenix Mount	/	Peep's Whistle
+
+-----------------
+-- PATCH 2.4.0 --
+-----------------
+i(35906, 48027);	-- Black War Elekk
+i(35513, 46628);	-- Swift White Hawkstrider
 i(35225, 46197);	-- X-51 Nether-Rocket
 i(35226, 46199);	-- X-51 Nether-Rocket X-TREME
-i(35513, 46628);	-- Swift White Hawkstrider
-i(35906, 48027);	-- Reins of the Black War Elekk
-i(37011, 47977);	-- Magic Broom
-i(37012, 48025);	-- The Horseman's Reins
-i(37598, 48954);	-- Swift Zhevra OLD
-i(37676, 49193);	-- Vengeful Nether Drake
-i(37719, 49322);	-- Swift Zhevra
-i(37827, 49378);	-- Brewfest Kodo
-i(37828, 49379);	-- Great Brewfest Kodo
+
+-----------------
+-- PATCH 2.4.1 --
+----------------
+i(37827, 49378);	-- Brewfest Riding Kodo
+
+-----------------
+-- PATCH 2.4.2 --
+-----------------
 i(38576, 51412);	-- Big Battle Bear
+i(37676, 49193);	-- Vengeful Nether Drake
+
+-----------------
+-- PATCH 2.4.3 --
+-----------------
+i(43516, 58615);	-- Brutal Nether Drake
+i(37828, 49379);	-- Great Brewfest Kodo
+i(37012, 48025);	-- Headless Horseman's Mount
+i(37011, 47977);	-- Magic Broom
+i(37719, 49322);	-- Swift Zhevra
+-- NYI --
+--i(0, 55164);		-- Swift Spectral Gryphon
+
+-----------------
+-- PATCH 2.X.X --
+-----------------
+-- NYI --
+--i(0, 44317);		-- Merciless Nether Drake
+i(27819, 24242);	-- Swift Razzashi Raptor 	/	Crazy Raptor 75
+i(27853, 24242);	-- Swift Razzashi Raptor 	/	Crazy Raptor 150
+i(37598, 48954);	-- Swift Zhevra	/	Swift Zhevra OLD
+i(28025, 33631);	-- Video Mount	/	Video Mount
+
+
+
+
 i(40775, 54729);	-- Winged Steed of the Ebon Blade
 i(41508, 55531);	-- Mechano-Hog
-i(43516, 58615);	-- Brutal Nether Drake
 i(43599, 58983);	-- Big Blizzard Bear
 i(43951, 59569);	-- Reins of the Bronze Drake
 i(43952, 59567);	-- Reins of the Azure Drake
@@ -379,11 +443,6 @@ i(62298, 90621);	-- Reins of the Golden King
 i(62461, 87090);	-- Goblin Trike Key
 i(62462, 87091);	-- Goblin Turbo-Trike Key
 
-
------------------
--- PATCH 4.0.1 --
------------------
-i(23193, 29059);	-- Naxxramas Deathcharger	/	Naxxramas Deathcharger Reins
 
 
 

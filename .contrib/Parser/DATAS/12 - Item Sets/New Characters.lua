@@ -33,6 +33,14 @@ _.GearSets =
 						["description"] = "|cFF40bf40Received on reaching Level 10 as a Tauren Paladin.|r",
 						["races"] = { TAUREN },
 					}),
+					mount(34767, {	-- Thalassian Charger (MOUNT!)
+						["description"] = "|cFF40bf40Received on reaching Level 10 as a Blood Elf Paladin.|r",
+						["races"] = { BLOODELF },
+					}),
+					mount(34769, {	-- Thalassian Warhorse (MOUNT!)
+						["description"] = "|cFF40bf40Received on reaching Level 10 as a Blood Elf Paladin.|r",
+						["races"] = { BLOODELF },
+					}),
 					mount(13819, {	-- Warhorse (MOUNT!)
 						["description"] = "|cFF40bf40Received on reaching Level 10 as a Human or Dwarf Paladin.|r",
 						["races"] = { HUMAN, DWARF },

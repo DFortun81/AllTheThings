@@ -355,6 +355,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(8633, {		-- Leopard / Reins of the Leopard (MOUNT!)
 				["modelID"] = 4805,
 			}),
+			i(23193, {		-- Naxxramas Deathcharger / Naxxramas Deathcharger Reins /// Classic/TBC: Skeletal Steed / Skeletal Steed Reins (MOUNT!)
+				["modelID"] = 10718
+			}),
 			i(8627, {		-- Nightsaber / Reins of the Nightsaber (MOUNT!)
 				["modelID"] = 9991
 			}),
@@ -375,6 +378,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 			i(13324, {		-- Red and Blue Mechanostrider / Red and Blue Mechanostrider (MOUNT!)
 				["modelID"] = 10664,
+			}),
+			i(21736, {	-- CLASSIC:Riding Gryphon TBC:Nether Drake / CLASSIC:Riding Gryphon Reins, TBC:Nether Drake Reins (MOUNT!)
+				["modelID"] = 15293,
 			}),
 			i(14062, {		-- Riding Kodo / Kodo Mount (MOUNT!)
 				["modelID"] = 11641,
@@ -411,10 +417,49 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 		}),
 		tier(TBC_TIER, {
-			mount(33631),
+			tier(TBC_TIER, 0.1, {
+				mount(33630, {	-- Blue Mechanostrider (MOUNT!)
+					["modelID"] = 6569.
+				}),
+				i(21736, {	-- CLASSIC:Riding Gryphon TBC:Nether Drake / CLASSIC:Riding Gryphon Reins, TBC:Nether Drake Reins (MOUNT!)
+					["modelID"] = 16314,
+				}),
+			}),
+			tier(TBC_TIER, 0.8, {
+				i(29225, {	-- Swift Warstrider / zzoldSwift Warstrider (MOUNT!)
+					["modelID"] = 20359,
+				}),
+			}),
+			tier(TBC_TIER, 2.3, {
+				i(28482, {	-- Great Elite Elekk / Great Elite Elekk (MOUNT!)
+					["modelID"] = 17906,
+				}),
+			}),
 			tier(TBC_TIER, 3.0, {
-				i(25596, {	-- Peep's Whistle
+				i(25596, {	-- Peep the Phoenix Mount / Peep's Whistle (MOUNT!)
 					["modelID"] = 17890,
+				}),
+			}),
+			tier(TBC_TIER, 4.3, {
+				mount(55164, {	-- Swift Spectral Gryphon (MOUNT!)
+					["modelID"] = 26691,
+				}),
+			}),
+			n(P2xx, {
+				mount(44317, {	-- Merciless Nether Drake (MOUNT!)
+					["modelID"] = 20344,
+				}),
+				i(27819, {	-- Swift Razzashi Raptor / Crazy Raptor 75 (MOUNT!)
+					["modelID"] = 15289,
+				}),
+				i(27853, {	-- Swift Razzashi Raptor / Crazy Raptor 150 (MOUNT!)
+					["modelID"] = 15289,
+				}),
+				i(37598, {	-- Swift Zhevra / Swift Zhevra OLD (MOUNT!)
+					["modelID"] = 24693,
+				}),
+				i(28025, {	-- Video Mount / Video Mount (MOUNT!)
+					["modelID"] = 6569,
 				}),
 			}),
 		}),
@@ -432,8 +477,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			tier(CATA_TIER, 0.1, {
 				i(43963),	-- Reins of the Brown Polar Bear
 				i(43964),	-- Reins of the Black Polar Bear
-				i(28482),	-- Great Elite Elekk
-				i(23193),	-- Naxxramas Deathcharger Reins
 			}),
 		}),
 		tier(MOP_TIER, {
@@ -3600,7 +3643,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(130156),	-- Crane Bag
 		i(116130),	-- Draenic Crystal Fragments (Did not make it out of beta)
 		i(25497),	-- Broken Balanced Stone Dirk
-		i(28025),	-- Video Mount
 		i(28261),	-- Video Invis Broken Fitz's Throwing Axe
 		i(25641),	-- Broken Fitz's Throwing Axe
 		i(33564),	-- World Drop Certificate

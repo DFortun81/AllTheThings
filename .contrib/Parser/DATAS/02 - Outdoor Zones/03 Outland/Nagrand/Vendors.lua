@@ -25,13 +25,13 @@ _.Zones =
 						i(30597, {	-- Halaani Claymore
 							["isLimited"] = true,
 						}),
-						i(28915, {	-- Reins of the Dark Riding Talbuk
+						i(28915, {	-- Dark Riding Talbuk (MOUNT!)
 							["cost"] = {
 								{ "i", 26045, 70 },	-- 70x Halaa Battle Token
 								{ "i", 26044, 15 },	-- 15x Halaa Research Token
 							},
 						}),
-						i(29228, {	-- Reins of the Dark War Talbuk
+						i(29228, {	-- Dark War Talbuk (MOUNT!)
 							["cost"] = {
 								{ "i", 26045, 100 },	-- 100x Halaa Battle Token
 								{ "i", 26044, 20 },		-- 20x Halaa Research Token
@@ -70,13 +70,13 @@ _.Zones =
 							["timeline"] = { "removed 5.0.4.10000" },
 						}),
 						-- #endif
-						i(28915, {	-- Reins of the Dark Riding Talbuk
+						i(28915, {	-- Dark Riding Talbuk (MOUNT!)
 							["cost"] = {
 								{ "i", 26045, 70 },	-- 70x Halaa Battle Token
 								{ "i", 26044, 15 },	-- 15x Halaa Research Token
 							},
 						}),
-						i(29228, {	-- Reins of the Dark War Talbuk
+						i(29228, {	-- Dark War Talbuk (MOUNT!)
 							["cost"] = {
 								{ "i", 26045, 100 },	-- 100x Halaa Battle Token
 								{ "i", 26044, 20 },		-- 20x Halaa Research Token
@@ -206,14 +206,14 @@ _.Zones =
 						i(25742),	-- Pattern: Netherfury Leggings
 						i(29664),	-- Pattern: Reinforced Mining Bag
 						i(22917),	-- Recipe: Transmute Primal Fire to Earth
-						i(31829),	-- Reins of the Cobalt Riding Talbuk
-						i(29102),	-- Reins of the Cobalt War Talbuk
-						i(31831),	-- Reins of the Silver Riding Talbuk
-						i(29104),	-- Reins of the Silver War Talbuk
-						i(31833),	-- Reins of the Tan Riding Talbuk
-						i(29105),	-- Reins of the Tan War Talbuk
-						i(31835),	-- Reins of the White Riding Talbuk
-						i(29103),	-- Reins of the White War Talbuk
+						i(31829),	-- Cobalt Riding Talbuk (H) (MOUNT!)
+						i(29102),	-- Cobalt War Talbuk (H) (MOUNT!)
+						i(31831),	-- Silver Riding Talbuk (H) (MOUNT!)
+						i(29104),	-- Silver War Talbuk (H) (MOUNT!)
+						i(31833),	-- Tan Riding Talbuk (H) (MOUNT!)
+						i(29105),	-- Tan War Talbuk (H) (MOUNT!)
+						i(31835),	-- White Riding Talbuk (H) (MOUNT!)
+						i(29103),	-- White War Talbuk (H) (MOUNT!)
 						i(29147),	-- Talbuk Hide Spaulders
 						i(29141),	-- Tempest Leggings
 					},
@@ -440,14 +440,14 @@ _.Zones =
 						i(29219),	-- Pattern: Netherfury Leggings
 						i(30444),	-- Pattern: Reinforced Mining Bag
 						i(30443),	-- Recipe: Transmute Primal Fire to Earth
-						i(31830),	-- Reins of the Cobalt Riding Talbuk
-						i(29227),	-- Reins of the Cobalt War Talbuk
-						i(31832),	-- Reins of the Silver Riding Talbuk
-						i(29229),	-- Reins of the Silver War Talbuk
-						i(31834),	-- Reins of the Tan Riding Talbuk
-						i(29230),	-- Reins of the Tan War Talbuk
-						i(31836),	-- Reins of the White Riding Talbuk
-						i(29231),	-- Reins of the White War Talbuk
+						i(31830),	-- Cobalt Riding Talbuk (A) (MOUNT!)
+						i(29227),	-- Cobalt War Talbuk (A) (MOUNT!)
+						i(31832),	-- Silver Riding Talbuk (A) (MOUNT!)
+						i(29229),	-- Silver War Talbuk (A) (MOUNT!)
+						i(31834),	-- Tan Riding Talbuk (A) (MOUNT!)
+						i(29230),	-- Tan War Talbuk (A) (MOUNT!)
+						i(31836),	-- White Riding Talbuk (A) (MOUNT!)
+						i(29231),	-- White War Talbuk (A) (MOUNT!)
 						un(REMOVED_FROM_GAME, i(29144)),	-- Worg Hide Quiver
 					},
 				}),

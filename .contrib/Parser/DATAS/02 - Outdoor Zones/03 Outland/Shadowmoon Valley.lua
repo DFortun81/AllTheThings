@@ -1817,7 +1817,7 @@ _.Zones =
 						["coord"] = { 69.8, 61.4, SHADOWMOON_VALLEY },
 						["_drop"] = { "races" },	-- stop this from being marked as horde only when it is not horde only
 						["altQuests"] = { 10866 },	-- Zuluhed the Whacked
-					}),	
+					}),
 					-- #endif
 					-- #if AFTER MOP
 					-- Crieve note: Thinking this is gonna move to a special section in events or something.
@@ -1951,13 +1951,13 @@ _.Zones =
 						["coord"] = { 37.6, 56.0, SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(25471),	-- Ebon Gryphon Mount
-							i(25470),	-- Golden Gryphon Mount
-							i(25472),	-- Snowy Gryphon Mount
-							i(25473),	-- Swift Blue Gryphon Mount
-							i(25528),	-- Swift Green Gryphon Mount
-							i(25529),	-- Swift Purple Gryphon Mount
-							i(25527),	-- Swift Red Gryphon Mount
+							i(25471),	-- Ebon Gryphon (MOUNT!)
+							i(25470),	-- Golden Gryphon (MOUNT!)
+							i(25472),	-- Snowy Gryphon (MOUNT!)
+							i(25473),	-- Swift Blue Gryphon (MOUNT!)
+							i(25528),	-- Swift Green Gryphon (MOUNT!)
+							i(25529),	-- Swift Purple Gryphon (MOUNT!)
+							i(25527),	-- Swift Red Gryphon (MOUNT!)
 						},
 					}),
 					n(19351, {	-- Daggle Ironshaper
@@ -1973,13 +1973,13 @@ _.Zones =
 						["coord"] = { 29.0, 29.4, SHADOWMOON_VALLEY },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(25475),	-- Blue Wind Rider Mount
-							i(25476),	-- Green Wind Rider Mount
-							i(25474),	-- Tawny Wind Rider Mount
-							i(25531),	-- Swift Green Wind Rider Mount
-							i(25533),	-- Swift Purple Wind Rider Mount
-							i(25477),	-- Swift Red Wind Rider Mount
-							i(25532),	-- Swift Yellow Wind Rider Mount
+							i(25475),	-- Blue Wind Rider (MOUNT!)
+							i(25476),	-- Green Wind Rider (MOUNT!)
+							i(25474),	-- Tawny Wind Rider (MOUNT!)
+							i(25531),	-- Swift Green Wind Rider (MOUNT!)
+							i(25533),	-- Swift Purple Wind Rider (MOUNT!)
+							i(25477),	-- Swift Red Wind Rider (MOUNT!)
+							i(25532),	-- Swift Yellow Wind Rider (MOUNT!)
 						},
 					}),
 					applyclassicphase(TBC_PHASE_THREE_NETHERWING, n(23489, {	-- Drake Dealer Hurlunk
@@ -1995,12 +1995,12 @@ _.Zones =
 						["minReputation"] = { 1015, EXALTED },	-- Netherwing, Exalted.
 						["description"] = "To access this vendor, you must reach Exalted with the Netherwing and claim one of the netherwing drakes in Shattrath.",
 						["groups"] = {
-							i(32858),	-- Reins of the Azure Netherwing Drake Mount
-							i(32859),	-- Reins of the Cobalt Netherwing Drake Mount
-							i(32857),	-- Reins of the Onyx Netherwing Drake Mount
-							i(32860),	-- Reins of the Purple Netherwing Drake Mount
-							i(32861),	-- Reins of the Veridian Netherwing Drake Mount
-							i(32862),	-- Reins of the Violet Netherwing Drake Mount
+							i(32858),	-- Azure Netherwing Drake (MOUNT!)
+							i(32859),	-- Cobalt Netherwing Drake (MOUNT!)
+							i(32857),	-- Onyx Netherwing Drake (MOUNT!)
+							i(32860),	-- Purple Netherwing Drake (MOUNT!)
+							i(32861),	-- Veridian Netherwing Drake (MOUNT!)
+							i(32862),	-- Violet Netherwing Drake (MOUNT!)
 						},
 					})),
 					n(19526, {	-- Dunaman <Weapons Vendor>

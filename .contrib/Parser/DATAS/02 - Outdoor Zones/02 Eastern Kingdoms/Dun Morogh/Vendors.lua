@@ -27,10 +27,10 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(5872),	-- Brown Ram (MOUNT!)
-						i(5864),	-- Grey Ram (MOUNT!)
+						i(5864),	-- Gray Ram (MOUNT!)
 						i(18785),	-- Swift White Ram (MOUNT!)
 						i(18786),	-- Swift Brown Ram (MOUNT!)
-						i(18787),	-- Swift Grey Ram (MOUNT!)
+						i(18787),	-- Swift Gray Ram (MOUNT!)
 						i(5873),	-- White Ram (MOUNT!)
 						un(REMOVED_FROM_GAME, i(13328)),	-- Black Ram (MOUNT!) -- unable to 100% verify this vendor as source
 						un(REMOVED_FROM_GAME, i(13329)),	-- Frost Ram (MOUNT!) -- unable to 100% verify this vendor as source

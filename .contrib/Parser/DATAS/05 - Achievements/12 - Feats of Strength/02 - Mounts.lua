@@ -13,7 +13,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			["timeline"] = { "added 3.3.0" },
 		})),
 		un(REMOVED_FROM_GAME, ach(2316, {	-- Brutal Nether Drake
-			un(REMOVED_FROM_GAME, i(43516)),	-- Brutal Nether Drake
+			un(REMOVED_FROM_GAME, i(43516)),	-- Brutal Nether Drake (MOUNT!)
 		})),
 		un(REMOVED_FROM_GAME, ach(6741, {	-- Cataclysmic Gladiator's Twilight Drake
 			un(REMOVED_FROM_GAME, i(85785)),	-- Cataclysmic Gladiator's Twilight Drake
@@ -69,7 +69,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			un(REMOVED_FROM_GAME, i(95041)),	-- Malevolent Gladiator's Cloud Serpent
 		})),
 		un(REMOVED_FROM_GAME, ach(887, {	-- Merciless Nether Drake
-			un(REMOVED_FROM_GAME, i(34092)),	-- Merciless Nether Drake
+			un(REMOVED_FROM_GAME, i(34092)),	-- Merciless Nether Drake (MOUNT!)
 		})),
 		un(REMOVED_FROM_GAME, ach(13632, {	-- Notoroious Gladiator's Proto-Drake
 			un(REMOVED_FROM_GAME, i(156881)),	-- Notoroious Gladiator's Proto-Drake
@@ -99,7 +99,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			un(REMOVED_FROM_GAME, i(156880)),	-- Sinister Gladiator's Proto-Drake
 		})),
 		un(REMOVED_FROM_GAME, ach(886, {	-- Swift Nether Drake
-			un(REMOVED_FROM_GAME, i(30609)),	-- Swift Nether Drake
+			un(REMOVED_FROM_GAME, i(30609)),	-- Swift Nether Drake (MOUNT!)
 		})),
 		un(BLACK_MARKET, ach(881)),	-- Swift Razzashi Raptor
 		ach(884),			-- Swift White Hawkstrider
@@ -112,7 +112,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			i(186177),	-- Unchained Gladiator's Soul Eater
 		})),
 		un(REMOVED_FROM_GAME, ach(888, {	-- Vengeful Nether Drake
-			un(REMOVED_FROM_GAME, i(37676)),	-- Vengeful Nether Drake
+			un(REMOVED_FROM_GAME, i(37676)),	-- Vengeful Nether Drake (MOUNT!)
 		})),
 		ach(3357, {			-- Venomhide Ravasaur
 			["races"] = HORDE_ONLY,

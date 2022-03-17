@@ -37,7 +37,7 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 		["timeline"] = { "added 4.2.0.14333" },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
-	i(37011, {	-- Magic Broom
+	i(37011, {	-- Magic Broom (MOUNT!)
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 		["collectible"] = false,
 	}),
@@ -111,7 +111,7 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 		["timeline"] = { "added 4.2.0.14333" },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
-	i(37011, {	-- Magic Broom
+	i(37011, {	-- Magic Broom (MOUNT!)
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 		["collectible"] = false,
 	}),
@@ -1530,7 +1530,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 					["lvl"] = 98,
 					-- #endif
 					["groups"] = {
-						i(37012, {	-- The Horseman's Reins
+						i(37012, {	-- Headless Horseman's Mount (MOUNT!)
 							["timeline"] = { "added 2.0.1" },
 						}),
 						i(117356, {	-- The Horseman's Sinister Slicer
@@ -1545,7 +1545,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						i(33292, {	-- Hallowed Helm
 							["timeline"] = { "added 2.2.2.7318" },
 						}),
-						i(37011, {	-- Magic Broom
+						i(37011, {	-- Magic Broom (MOUNT!)
 							["timeline"] = { "added 2.4.3.8600" },
 							["collectible"] = false,
 						}),
@@ -1573,7 +1573,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						i(33292, {	-- Hallowed Helm
 							["timeline"] = { "added 2.2.2.7318" },
 						}),
-						i(37011, {	-- Magic Broom
+						i(37011, {	-- Magic Broom (MOUNT!)
 							["timeline"] = { "added 2.4.3.8600" },
 							["collectible"] = false,
 						}),
@@ -1600,7 +1600,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						-- #endif
 						-- #endif
 						-- #if BEFORE 6.0.1
-						i(37012, {	-- The Horseman's Reins
+						i(37012, {	-- Headless Horseman's Mount (MOUNT!)
 							["timeline"] = { "added 2.0.1" },
 						}),
 						-- #endif
@@ -1624,10 +1624,10 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						i(33292, {	-- Hallowed Helm
 							["timeline"] = { "added 2.2.2.7318" },
 						}),
-						i(33176, {	-- Flying Broom
+						i(33176, {	-- Flying Broom (MOUNT!)
 							["timeline"] = { "added 2.2.2.7318", "deleted 4.2.2" },
 						}),
-						i(37011, {	-- Magic Broom
+						i(37011, {	-- Magic Broom (MOUNT!)
 							["timeline"] = { "added 2.4.3.8600" },
 							["collectible"] = false,
 						}),
@@ -1635,7 +1635,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 				}),
 
 				-- #if BEFORE CATA
-				i(37012, {	-- The Horseman's Reins
+				i(37012, {	-- Headless Horseman's Mount (MOUNT!)
 					["timeline"] = { "added 2.0.1" },
 				}),
 				-- #endif
@@ -1730,23 +1730,23 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 				i(33292, {	-- Hallowed Helm
 					["timeline"] = { "added 2.2.2.7318" },
 				}),
-				i(37011, {	-- Magic Broom
+				i(37011, {	-- Magic Broom (MOUNT!)
 					["timeline"] = { "added 2.4.3.8600" },
 					["collectible"] = false,
 				}),
 				-- #endif
 				-- #if NOT ANYCLASSIC
 				-- #if BEFORE LEGION
-				i(33176, {	-- Flying Broom
+				i(33176, {	-- Flying Broom (MOUNT!)
 					["timeline"] = { "added 2.2.2.7318", "deleted 4.2.2" },
 				}),
-				i(33182, {	-- Swift Flying Broom
+				i(33182, {	-- Swift Flying Broom (MOUNT!)
 					["timeline"] = { "added 2.0.1", "removed 2.4.3" },
 				}),
-				i(33184, {	-- Swift Magic Broom
+				i(33184, {	-- Swift Magic Broom (MOUNT!)
 					["timeline"] = { "added 2.0.1", "removed 2.4.3" },
 				}),
-				i(33183, {	-- Old Magic Broom
+				i(33183, {	-- Old Magic Broom (MOUNT!)
 					["timeline"] = { "added 2.0.1", "removed 2.4.3" },
 				}),
 				-- #endif
@@ -4124,16 +4124,16 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, { {
 	-- #endif
 	["groups"] = {
 		-- #if ANYCLASSIC
-		i(33176, {	-- Flying Broom
+		i(33176, {	-- Flying Broom (MOUNT!)
 			["timeline"] = { "created 2.2.2.7318", "deleted 4.2.2" },
 		}),
-		i(33182, {	-- Swift Flying Broom
+		i(33182, {	-- Swift Flying Broom (MOUNT!)
 			["timeline"] = { "created 2.0.1", "deleted 4.2.2" },
 		}),
-		i(33184, {	-- Swift Magic Broom
+		i(33184, {	-- Swift Magic Broom (MOUNT!)
 			["timeline"] = { "created 2.0.1", "deleted 4.2.2" },
 		}),
-		i(33183, {	-- Old Magic Broom
+		i(33183, {	-- Old Magic Broom (MOUNT!)
 			["timeline"] = { "created 2.0.1", "deleted 4.2.2" },
 		}),
 		-- #endif

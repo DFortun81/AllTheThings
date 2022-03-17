@@ -655,8 +655,8 @@ _.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			i(23768),	-- White Smoke Flare
 		}),
 		category(756, {	-- Mounts
-			i(34060),	-- Flying Machine
-			i(34061),	-- Turbo-Charged Flying Machine
+			i(34060),	-- Flying Machine (MOUNT!)
+			i(34061),	-- Turbo-Charged Flying Machine (MOUNT!)
 		}),
 	}),
 	prof(FIRST_AID, {
