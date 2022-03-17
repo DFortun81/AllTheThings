@@ -207,6 +207,9 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 7.0.3.22248", "
 				q(44184, {	-- In the Blink of an Eye
 					["provider"] = { "n", 114562 },	-- Khadgar's Upgraded Servant
 					["sourceQuests"] = { 44500 },	-- Author! Author!
+					["g"] = {
+						i(143780),	-- Tome of the Tranquil Mind
+					},
 				}),
 				q(43301),	-- Invasion: Azshara
 				q(43284),	-- Invasion: Dun Morogh

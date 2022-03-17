@@ -1011,13 +1011,13 @@ profession(ARCHAEOLOGY, {
 			q(41190, {	-- Crystal Eyes
 				["provider"] = { "n", 103485 },	-- Lessah Moonwater <Archaeologist>
 				["isWeekly"] = true,
-				["coord"] = { 45.8, 44.6, HIGHMOUNTAIN },
+				["coord"] = { 45.8, 44.6, HIGHMOUNTAIN },	-- 46.9, 60.2, 750 },	-- Thunder Totem ?
 				["sourceQuest"] = 41189,	-- A New Lead
 			}),
 			q(41191, {	-- Drogbar Deception
 				["provider"] = { "n", 103485 },	-- Lessah Moonwater <Archaeologist>
 				["isWeekly"] = true,
-				["coord"] = { 45.8, 44.6, HIGHMOUNTAIN },
+				["coord"] = { 45.8, 44.6, HIGHMOUNTAIN },	-- 46.9, 60.2, 750 },	-- Thunder Totem ?
 				["sourceQuest"] = 41190,	-- Crystal Eyes
 				["g"] = {
 					i(131736),	-- Prizerock Neckband

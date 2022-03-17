@@ -4,6 +4,21 @@
 
 _.Zones =
 {
+	o(207303, {	-- Adventure Board
+		["description"] = "These quests can be obtained from any city or town to lead the Character to a specific Zone.",
+		["g"] = {
+			q(38935, {	-- His Name Was... Stormstout - appears to be an unused version of this quest added in Warlords of Draenor?
+				["isBreadcrumb"] = true,
+				["description"] = "This breadcrumb can only be picked up from the Adventure Guide (shift+J).",
+				["lvl"] = { 15 },
+			}),
+			q(34398, {	-- The Dark Portal
+				["description"] = "If you want to do the Blasted Lands questline before going to Draenor, abandon this quest after taking the portal to Blasted Lands.",
+				["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+				["coord"] = { 56.2, 17.3, STORMWIND_CITY },
+			}),
+		},
+	}),
 	o(206109, {	-- Warchief's Command Board
 		["description"] = "These quests can be obtained from any city or town to lead the Character to a specific Zone.",
 		["races"] = HORDE_ONLY,
@@ -37,9 +52,6 @@ _.Zones =
 			q(29611, {	-- The Art of War
 				["description"] = "Players who have not completed Vashj'ir will receive this version of The Art of War.",
 			}),
-			q(34398, {	-- The Dark Portal (also for alliance, got on KT druid)
-				["description"] = "If you want to do the Blasted Lands questline before going to Draenor, use the portal in Cleft of Shadow and speak to Thrall rather than accepting this quest.",
-			}),
 			q(43926, {	-- The Legion Returns
 				["isBreadcrumb"] = true,
 				["lvl"] = 98,
@@ -47,11 +59,6 @@ _.Zones =
 			q(28790, {	-- A Personal Summons (Vashj'ir Starter Quest)
 				["isBreadcrumb"] = true,
 				["u"] = REMOVED_FROM_GAME,
-			}),
-			q(38935, {	-- His Name Was... Stormstout - appears to be an unused version of this quest added in Warlords of Draenor?
-				["isBreadcrumb"] = true,
-				["description"] = "This breadcrumb can only be picked up from the Adventure Guide (shift+J).",
-				["lvl"] = { 15 },
 			}),
 			un(REMOVED_FROM_GAME, q(29157)),	-- The Zandalari Menace
 			q(49817, {	-- To Northrend! (Horde)
@@ -565,11 +572,6 @@ _.Zones =
 			q(49552, {	-- Hero's Call: Zul'Drak!
 				["isBreadcrumb"] = true,
 				["lvl"] = 64,
-			}),
-			q(38935, {	-- His Name Was... Stormstout - appears to be an unused version of this quest added in Warlords of Draenor?
-				["isBreadcrumb"] = true,
-				["description"] = "This breadcrumb can only be picked up from the Adventure Guide (shift+J).",
-				["lvl"] = { 15 },
 			}),
 			q(36498, {	-- Iron Horde Invasion
 				["isBreadcrumb"] = true,

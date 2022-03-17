@@ -8,23 +8,6 @@ _.Zones =
 		m(HIGHMOUNTAIN, {
 			n(PROFESSIONS,  {
 				prof(ARCHAEOLOGY, {
-					q(41190, {	-- Crystal Eyes
-						["sourceQuests"] = { 41189 },	-- A New Lead
-						["requireSkill"] = ARCHAEOLOGY,
-						["provider"] = { "n", 103485 },	-- Lessah Moonwater
-						["isWeekly"] = true,
-						["coord"] = { 46.9, 60.2, 750 },	-- Thunder Totem
-					}),
-					q(41191, {	-- Drogbar Deception
-						["sourceQuests"] = { 41190 },	-- Crystal Eyes
-						["requireSkill"] = ARCHAEOLOGY,
-						["provider"] = { "n", 103485 },	-- Lessah Moonwater
-						["isWeekly"] = true,
-						["coord"] = { 46.9, 60.2, 750 },	-- Thunder Totem
-						["g"] = {
-							i(131736),	-- Prizerock Neckband
-						},
-					}),
 				}),
 				prof(COOKING, {
 					i(133820, {	-- Recipe: Drogbar-Style Salmon

@@ -1155,6 +1155,7 @@ _.Zones =
 						i(168025, {	-- Book of Schematics: Ub3r-Spanner
 							["sourceQuests"] = { 53949 },	-- The Ub3r-Spanner
 							["spellID"] = 0,
+							["f"] = MISC,
 						}),
 					},
 				}),

@@ -433,13 +433,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(42987, {	-- The Victor's Spoils
-					["sourceQuests"] = { 42985 },	-- A Royal Audience
-					["provider"] = { "n", 109471 },	-- Lady Sylvanas Windrunner
-					["coord"] = { 57.8, 91.6, UNDERCITY },
-					["races"] = HORDE_ONLY,
-					["timeline"] = { "removed 8.0.1.10000" },
-				}),
 				q(446,   {	-- Thule Ravenclaw
 					["provider"] = { "n", 1498 },	-- Bethor Iceshard
 					["races"] = HORDE_ONLY,

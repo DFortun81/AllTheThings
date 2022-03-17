@@ -584,7 +584,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(32826),	-- Re-Use Me
 				q(32827),	-- Re-Use Me
 			})),
-			
+
 			-- 5.4.2
 			tier(MOP_TIER, 4.2, bubbleDown({ ["timeline"] = {"created 5.4.2"} }, {
 				q(33634),	-- Maldo's Test Quest
@@ -1389,11 +1389,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(37920),
 				q(37925),
 				q(37926),
-				
+
 				-- Quests from wow.tools - unknown name, unknown patch, only ID
 				-- 34000 - 34999
 				q(34005),
-				q(34008),
 				q(34009),
 				q(34010),
 				q(34011),
@@ -1453,7 +1452,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(34880),
 				q(34926),
 				q(34928),
-				
+
 				-- 35000 - 35999
 				q(35039),
 				q(35094),
@@ -1468,7 +1467,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(35328),
 				q(35698),
 				q(35700),
-				
+
 				-- 36000 - 36999
 				q(36156),
 				q(36173),

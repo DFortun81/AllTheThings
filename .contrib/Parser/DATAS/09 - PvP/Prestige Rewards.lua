@@ -50,10 +50,12 @@ root("PVP", pvp(n(-216, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {	-- Prest
 					["questID"] = 42985,	-- A Royal Audience [Horde]
 					["races"] = HORDE_ONLY,
 				}),
-				q(42987, {	-- The Victor's Spoils [Horde]
-					["sourceQuests"] = { 42985 },	-- A Royal Audience [Horde]
-					["provider"] = { "n", 109471 },	-- Lady Sylvanas Windrunner <Warchief>
+				q(42987, {	-- The Victor's Spoils
+					["sourceQuests"] = { 42985 },	-- A Royal Audience
+					["provider"] = { "n", 109471 },	-- Lady Sylvanas Windrunner
+					["coord"] = { 57.8, 91.6, UNDERCITY },
 					["races"] = HORDE_ONLY,
+					["timeline"] = { "removed 8.0.1.10000" },
 				}),
 			},
 		}),

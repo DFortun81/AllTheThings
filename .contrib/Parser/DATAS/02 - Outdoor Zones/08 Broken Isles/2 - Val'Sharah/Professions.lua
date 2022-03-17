@@ -7,24 +7,8 @@ _.Zones =
 	m(BROKEN_ISLES, {
 		m(VALSHARAH, {
 			n(PROFESSIONS,  {
-				prof(ARCHAEOLOGY, {
-					q(41178, {	-- Explosive Results
-						["isWeekly"] = true,
-					}),
-					q(41179, {	-- What Once Was Lost
-						["isWeekly"] = true,
-					}),
-				}),
 				prof(BLACKSMITHING, {
 					n(WORLD_QUESTS, {
-						q(41634, {	-- Work Order: Leystone Armguards
-							["provider"] = { "n", 106901 },	-- Sylvia Hartshorn
-							["lvl"] = 110,
-							["isWorldQuest"] = true,
-							["groups"] = {
-								i(123936),	-- Recipe: Leystone Armguards (Rank 3)
-							},
-						}),
 					}),
 				}),
 				prof(FISHING, {

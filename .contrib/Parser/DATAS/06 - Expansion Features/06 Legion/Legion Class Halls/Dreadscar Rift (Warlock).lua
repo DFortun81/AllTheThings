@@ -327,6 +327,9 @@ _.ExpansionFeatures =
 							["classes"] = { WARLOCK },
 							["coord"] = { 58.7, 32.7, 717 },
 							["provider"] = { "n", 112434 },	-- Gigi Gigavoid
+							["g"] = {
+								i(139765),	-- Visage of the Black Harvest
+							}
 						}),
 						q(46240, {	-- Give Me Fuel, Give Me Fire
 							["sourceQuest"] = 46237,	-- Bloodbringer's Missive
@@ -684,9 +687,6 @@ _.ExpansionFeatures =
 						q(41156),	-- The Power Possessed
 						q(44227, {	-- Unleashing our Wrath
 							["u"] = REMOVED_FROM_GAME,
-						}),
-						q(44254, {	-- Gazing Into Oblivion
-							i(139765),	-- Visage of the Black Harvest
 						}),
 						--[[ Artifact Appearance  Quests Commented Out For Now
 						q(43414, {	-- A Hero's Weapon

@@ -651,12 +651,6 @@ _.Zones =
 					["provider"] = { "n", 115465 },	-- Archmage Modera
 					["coord"] = { 22.5, 39.2, LEGION_DALARAN },
 				}),
-				q(44184, {	-- In the Blink of an Eye
-					["u"] = REMOVED_FROM_GAME,	-- Changed to make the Tranquil Mind item Bop to stop abusing of class trials
-					["g"] = {
-						i(143780),	-- Tome of the Tranquil Mind
-					},
-				}),
 				q(44663, {	-- In the Blink of an Eye
 					i(143785),	-- Tome of the Tranquil Mind
 				}),

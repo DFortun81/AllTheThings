@@ -947,12 +947,6 @@ root("Zones", {
 						currency(515),	-- Darkmoon Prize Ticket
 					},
 				}),
-				q(34398, {	-- The Dark Portal
-					["description"] = "If you want to do the Blasted Lands questline before going to Draenor, abandon this quest after taking the portal to Blasted Lands.",
-					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(30095, {	-- The End Time
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 52408 },	-- Coridormi
