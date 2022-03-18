@@ -371,12 +371,12 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 110564 },	-- Alonsus Faol
 							["coord"] = { 50.9, 46.8, 702 },
 						}),
-						q(46781, {	-- Further Advancement
+						q(46788, {	-- Further Advancement
 							["classes"] = { PRIEST },
 							["provider"] = { "n", 109776 },	-- Moira Thaurissan <Queen of the Dark Iron>
 							--["sourceQuests"] = { 46057 },	-- ??
 						}),
-						q(46152, {	-- Furthering Knowledge
+						q(46153, {	-- Furthering Knowledge
 							["classes"] = { PRIEST },
 							["u"] = REMOVED_FROM_GAME,
 						}),
@@ -700,9 +700,6 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 41628 },	-- Harnessing the Holy Fire
 							["classes"] = { PRIEST },
 							["provider"] = { "n", 105917 },	-- Image of Kalec
-						}),
-						q(46940, {	-- Using Lost Knowledge
-							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(43379, {	-- Velen's Vision
 							["sourceQuests"] = { 43378 },	-- Eye of Azshara: Through the Lens

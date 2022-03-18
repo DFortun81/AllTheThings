@@ -793,10 +793,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 29445 },	-- Thorim
 							["coord"] = { 33.4, 58.0, THE_STORM_PEAKS },
 						}),
-						q(46940, {	-- Using Lost Knowledge
-							["classes"] = { HUNTER },
-							["u"] = REMOVED_FROM_GAME,
-						}),
 					}),
 					--[[
 					n(102669, {	-- Scouting Map

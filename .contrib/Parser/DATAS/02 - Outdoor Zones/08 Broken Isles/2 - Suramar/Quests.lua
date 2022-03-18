@@ -1649,11 +1649,6 @@ _.Zones =
 					["provider"] = { "n", 98312 },	-- First Arcanist Thalyssra
 					["sourceQuest"] = 40008,	-- The Only Way Out is Through
 				}),
-				q(45417, {	-- The Nighthold: Lord of the Shadow Council
-					["coord"] = { 44.1, 60.1, SURAMAR },
-					["provider"] = { "n", 115367 },	-- Archmage Khadgar
-					["sourceQuest"] = 44719,	-- Breaching the Sanctum
-				}),
 				q(42835, {	-- The Old Fashioned Way
 					["coord"] = { 58.2, 53.0, SURAMAR },
 					["provider"] = { "n", 108870 },	-- Sylverin

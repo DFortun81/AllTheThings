@@ -249,14 +249,6 @@ root("Zones", {
 						["provider"] = { "n", 126307 },	-- Prophet Velen
 						["coord"] = { 45.9, 34.0, 831 },
 					}),
-					q(48065, {	-- Extraterrestrial Exploration
-						["requireSkill"] = ENGINEERING,
-						["provider"] = { "n", 93520 },	-- Didi the Wrench
-						["sourceQuests"] = { 48069 },	-- The Wrench Calls
-						["g"] = {
-							recipe(247744),	-- Wormhole Generator: Argus
-						},
-					}),
 					q(47134, {	-- Foiling the Legion's Jailbreak
 						["sourceQuests"] = { 47104 },	-- Imprisoned Inquisitor
 						["provider"] = { "n", 121263 },	-- Grand Artificer Romuul
@@ -419,10 +411,6 @@ root("Zones", {
 						["sourceQuests"] = { 47743 },	-- Child of Light and Shadow
 						["provider"] = { "n", 121263 },	-- Grand Artificer Romuul
 						["coord"] = { 43.7, 29.2, 831 },
-					}),
-					q(48069, {	-- The Wrench Calls
-						["requireSkill"] = ENGINEERING,
-						["sourceQuests"] = { 46941 },	-- The Path Forward
 					}),
 					q(48344, {	-- We Have a Problem
 						["sourceQuests"] = { 48461 },	-- Where They Least Expect It

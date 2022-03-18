@@ -7,6 +7,11 @@ root("ExpansionFeatures", {
 		n(CLASS_HALL, {
 			["icon"] = "Interface\\Icons\\achievement_level_110",
 			["g"] = {
+				n(QUESTS, {
+					q(46940, {	-- Using Lost Knowledge
+						["timeline"] = { "added 7.2.0.23530", "removed 7.3" },	-- estimated removal
+					}),
+				}),
 				n(93787, {	-- Scouting Map
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["maps"] = {

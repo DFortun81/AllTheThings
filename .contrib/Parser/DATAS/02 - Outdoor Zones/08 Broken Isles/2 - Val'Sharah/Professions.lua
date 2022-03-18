@@ -7,10 +7,6 @@ _.Zones =
 	m(BROKEN_ISLES, {
 		m(VALSHARAH, {
 			n(PROFESSIONS,  {
-				prof(BLACKSMITHING, {
-					n(WORLD_QUESTS, {
-					}),
-				}),
 				prof(FISHING, {
 					ach(10596, {	-- Bigger Fish to Fry
 						["collectible"] = false,

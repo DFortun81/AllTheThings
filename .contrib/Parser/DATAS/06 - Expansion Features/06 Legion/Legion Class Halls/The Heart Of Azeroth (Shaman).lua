@@ -675,9 +675,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 106001 },	-- Muln Earthfury
 							["maps"] = { 207, 209 },	-- Deepholm
 						}),
-						q(46940, {	-- Using Lost Knowledge
-							["u"] = REMOVED_FROM_GAME,
-						}),
 						q(43645, {	-- Wavespeaker's Trail
 							["sourceQuests"] = { 43644 },	-- To the Deeps
 							["classes"] = { SHAMAN },

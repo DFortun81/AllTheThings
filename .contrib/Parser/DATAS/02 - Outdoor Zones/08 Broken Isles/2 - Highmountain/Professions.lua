@@ -7,8 +7,6 @@ _.Zones =
 	m(BROKEN_ISLES, {
 		m(HIGHMOUNTAIN, {
 			n(PROFESSIONS,  {
-				prof(ARCHAEOLOGY, {
-				}),
 				prof(COOKING, {
 					i(133820, {	-- Recipe: Drogbar-Style Salmon
 						["description"] = "Can drop from any Drogbar.",

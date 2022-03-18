@@ -52,8 +52,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					}),
 					crit(9, {
 						["crs"] = { 181293 },	-- Suspicious Nesmin
-						["description"] = "Friendly NPC.",
-						["coord"] = { 35, 64.1, ZERETH_MORTIS },
+						["description"] = "Friendly NPC. Short path out of the hub, then despawns.",
+						["coords"] = {
+							{ 35, 64.1, ZERETH_MORTIS },
+							{ 34.6, 63.2, ZERETH_MORTIS },
+						},
 					}),
 					crit(10, {
 						["crs"] = { 181294 },	-- Runegorged Bufonid

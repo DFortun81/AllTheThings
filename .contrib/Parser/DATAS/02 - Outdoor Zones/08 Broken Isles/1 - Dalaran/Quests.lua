@@ -652,7 +652,23 @@ _.Zones =
 					["coord"] = { 22.5, 39.2, LEGION_DALARAN },
 				}),
 				q(44663, {	-- In the Blink of an Eye
-					i(143785),	-- Tome of the Tranquil Mind
+					["sourceQuests"] = {
+						44120,	-- Illidari Allies (A)
+						44473,	-- A Weapon of the Alliance (A)
+						41002,	-- A Weapon of the Horde (h)
+						40605,	-- Keep Your Friends Close (H)
+					},
+					["qgs"] = {
+						101004,	-- Elerion Bladedancer (A)
+						95234,	-- Elthyn Da'rai (H)
+					},
+					["coords"] = {
+						{ 52.6, 56.2, ORGRIMMAR },
+						{ 40.4, 77.8, STORMWIND_CITY },
+					},
+					["g"] = {
+						i(143785),	-- Tome of the Tranquil Mind
+					},
 				}),
 				q(44547, {	-- Isle Hopping
 					["isBreadcrumb"] = true,
@@ -1019,13 +1035,6 @@ _.Zones =
 					["provider"] = { "n", 113655 },	-- Brann Bronzebeard
 					["sourceQuests"] = { 40717, 40718 },	-- Calling of the Council [A/H]
 					["coord"] = { 41.2, 74.8, DEADWIND_PASS },
-				}),
-				q(45420, {	-- The Eye of Aman'Thul
-					["sourceQuests"] = { 45417 },	-- The Nighthold: Lord of the Shadow Council
-					["provider"] = { "n", 106522 },	-- Archmage Khadgar
-					["g"] = {
-						sp(233377),	-- Gaze of Aman'Thul
-					},
 				}),
 				q(45904, {	-- The God-Queen's Gift
 					["classes"] = { PALADIN, ROGUE, SHAMAN, MAGE, WARLOCK },

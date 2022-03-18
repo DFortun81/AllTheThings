@@ -694,9 +694,6 @@ _.ExpansionFeatures =
 							["classes"] = { MONK },
 							["coord"] = { 51.4, 48.5, 709 },	-- The Wandering Isle
 						}),
-						q(46940, {	-- Using Lost Knowledge
-							["u"] = REMOVED_FROM_GAME,
-						}),
 						q(41853, {	-- Zero to Hiro
 							["sourceQuests"] = { 41850 },	-- The Master of Swords
 							["provider"] = { "n", 105072 },	-- Angus Ironfist

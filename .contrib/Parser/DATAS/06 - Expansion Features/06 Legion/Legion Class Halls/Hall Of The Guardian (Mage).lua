@@ -870,9 +870,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 102700 },	-- Meryl Felstorm
 							["sourceQuest"] = 41114,	-- The Champion's Return
 						}),
-						q(46940, {	-- Using Lost Knowledge
-							["u"] = REMOVED_FROM_GAME,
-						}),
 						q(42166, {	-- What Is Going On Here?
 							["coord"] = { 64.3, 31.3, AZSUNA },
 							["classes"] = { MAGE },

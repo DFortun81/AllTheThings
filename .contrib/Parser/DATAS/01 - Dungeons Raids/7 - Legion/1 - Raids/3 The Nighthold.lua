@@ -18,10 +18,14 @@ _.Instances = { tier(LEGION_TIER, {
 					["sourceQuests"] = { 44719 },	-- Breaching the Sanctum
 					["description"] = "Click on the Eye of Aman'thul after Gul'dan dies to complete the quest.",
 					["provider"] = { "n", 115367 },	-- Archmage Khadgar
+					["coord"] = { 44.1, 60.1, SURAMAR },
 				}),
 				q(45420, {	-- The Nighthold: The Eye of Aman'Thul
 					["sourceQuests"] = { 45417 },	-- The Nighthold: Lord of the Shadow Council
 					["provider"] = { "n", 106522 },	-- Archmage Khadgar
+					["g"] = {
+						sp(233377),	-- Gaze of Aman'Thul
+					},
 				}),
 			}),
 			d(17, {		-- LFR

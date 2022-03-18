@@ -658,9 +658,6 @@ _.ExpansionFeatures =
 							["coord"] = { 54.1, 34.9, 717 },
 							["provider"] = { "n", 104732 },	-- Kira Iresoul
 						}),
-						q(46940, {	-- Using Lost Knowledge
-							["u"] = REMOVED_FROM_GAME,
-						}),
 						q(40495, {	-- Ulthalesh, the Deadwind Harvester
 							["sourceQuests"] = {
 								40684,	-- The Tome of Blighted Implements (if this artifact is picked first)

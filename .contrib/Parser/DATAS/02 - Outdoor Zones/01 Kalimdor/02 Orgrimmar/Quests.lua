@@ -381,15 +381,6 @@ root("Zones", m(KALIMDOR, {
 				["description"] = "This quest is automatically offered to Horde players upon reaching level 30.",
 				["races"] = HORDE_ONLY,
 			}),
-			q(44663, {	-- In the Blink of an Eye
-				["sourceQuests"] = {
-					41002,	-- A Weapon of the Horde
-					40605,	-- Keep Your Friends Close
-				},
-				["provider"] = { "n", 95234 },	-- Elthyn Da'rai
-				["coord"] = { 52.6, 56.2, ORGRIMMAR },
-				["races"] = HORDE_ONLY,
-			}),
 			q(3563,  {	-- Jes'rimon's Payment to Jediga
 				["sourceQuests"] = { 3541 },	-- Delivery to Jes'rimon
 				["provider"] = { "n", 8659 },	-- Jes'rimon

@@ -1116,7 +1116,6 @@ root("HiddenQuestTriggers", {
 		q(41694),	-- World Quests Available — triggers when turning in "Uniting the Isles," along with the original "have all friendly reps" and present "just be 110" versions
 		q(46735),	-- Contribute to Command Center — during "Begin Construction" quest, not sure if that matters
 		q(46277),	-- Contribute to Mage Tower
-		q(46736),	-- Contribute to Nether Disruptor
 		q(46751),	-- Tracking Quest — triggered when turning in "A Found Memento" (#46268)
 		q(47869),	-- triggered when turning in "Light's Exodus," no info in wowhead
 		q(48668),	-- Lightforged Beacon: City Center — triggers during the cutscene while on "Into the Night"
@@ -3207,7 +3206,7 @@ root("HiddenQuestTriggers", {
 		q(33092),	-- FLAG - Proving Grounds - Tank Bronze
 		q(33094),	-- FLAG - Proving Grounds - Tank Gold
 		q(33093),	-- FLAG - Proving Grounds - Tank Silver
-		
+
 		--	Short-Supply Reward - UNKNOWN TRIGGERS
 		qNYI(33602),	-- Short-Supply Reward
 		qNYI(33603),	-- Short-Supply Reward

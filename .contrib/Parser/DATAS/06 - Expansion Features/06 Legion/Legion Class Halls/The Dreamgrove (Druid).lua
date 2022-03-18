@@ -795,9 +795,6 @@ root("ExpansionFeatures", {
 							["coord"] = { 56.8, 71.5, VALSHARAH },
 							["sourceQuests"] = { 42034 },	-- Grip of Nightmare
 						}),
-						q(46940, {	-- Using Lost Knowledge
-							["u"] = REMOVED_FROM_GAME,
-						}),
 						q(40646, {	-- Weapons of Legend
 							["sourceQuests"] = { 40644 },	--	To The Dreamgrove
 							["provider"] = { "n", 101195 },	-- Rensar Greathoof
