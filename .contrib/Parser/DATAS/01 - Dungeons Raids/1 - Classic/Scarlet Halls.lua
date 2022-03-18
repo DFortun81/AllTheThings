@@ -42,7 +42,9 @@ _.Instances = { tier(CLASSIC_TIER, {
 				e(654, {	-- Armsmaster Harlan
 					["creatureID"] = 58632,	-- Armsmaster Harlan
 					["groups"] = {
-						i(23192),	-- Tabard of the Scarlet Crusade
+						i(23192, {	-- Tabard of the Scarlet Crusade
+							["timeline"] = { "removed 5.0.4", "added 5.3.0" },
+						}),
 						i(88272),	-- The Gleaming Ravager
 						i(88273),	-- Armsmaster's Sealed Locket
 						i(88271),	-- Harlan's Shoulders
@@ -141,6 +143,9 @@ _.Instances = { tier(CLASSIC_TIER, {
 						["creatureID"] = 58632,	-- Armsmaster Harlan
 						["groups"] = {
 							ach(6427),	-- Mosh Pit
+							i(23192, {	-- Tabard of the Scarlet Crusade
+								["timeline"] = { "removed 5.0.4", "added 5.3.0" },
+							}),
 							i(23192),	-- Tabard of the Scarlet Crusade
 							i(144193, {	-- The Gleaming Ravager
 								["timeline"] = { "added 7.1.5.23360" },

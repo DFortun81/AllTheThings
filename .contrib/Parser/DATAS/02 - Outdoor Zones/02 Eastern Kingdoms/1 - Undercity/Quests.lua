@@ -172,38 +172,11 @@ _.Zones =
 					["provider"] = { "n", 8403 },	-- Jeremiah Payson
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(1113,  {	-- Hearts of Zeal
-					["sourceQuests"] = { 1109 },	-- Going, Going, Guano!
-					["provider"] = { "n", 2055 },	-- Master Apothecary Faranell
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(243,   {	-- Into the Field
 					["sourceQuests"] = { 238 },	-- Errand for Apothecary Zinge
 					["provider"] = { "n", 5204 },	-- Apothecary Zinge
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(1048,  {	-- Into the Scarlet Monastery
-					["provider"] = { "n", 2425 },	-- Varimathras
-					["coord"] = { 56.3, 92.2, UNDERCITY },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(10711)),	-- Dragon's Blood Necklace
-						un(REMOVED_FROM_GAME, i(6803)),	-- Prophetic Cane
-						un(REMOVED_FROM_GAME, i(6802)),	-- Sword of Omen
-					},
-				}),
-				q(14355, {	-- Into The Scarlet Monastery
-					["provider"] = { "n", 36273 },	-- Bragor Bloodfist
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(10711)),	-- Dragon's Blood Necklace
-						un(REMOVED_FROM_GAME, i(6803)),	-- Prophetic Cane
-						un(REMOVED_FROM_GAME, i(6802)),	-- Sword of Omen
-					},
 				}),
 				q(1960,  {	-- Investigate the Alchemist Shop
 					["classes"] = { MAGE },
@@ -317,13 +290,6 @@ _.Zones =
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(7510)),	-- Lesser Spellfire Robes
 					},
-				}),
-				q(1160,  {	-- Test of Lore
-					["sourceQuests"] = { 1159 },	-- Test of Lore
-					["provider"] = { "n", 4488 },	-- Parqual Fintallas
-					["coord"] = { 57.6, 65.0, UNDERCITY },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(6628,  {	-- Test of Lore
 					["sourceQuests"] = { 1160 },	-- Test of Lore

@@ -300,11 +300,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27211,	-- Propaganda War
 				}),
-				q(26991, {	-- Enemies Abroad
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 4791 },	-- Nazeer Bloodpike
-				}),
 				q(1177,  {	-- Hungry!
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4503 },	-- Mudcrush Durtfeet

@@ -59,17 +59,6 @@ _.Zones =
 					["coord"] = { 38.9, 56.0, THUNDER_BLUFF },
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(1049,  {	-- Compendium of the Fallen
-					["provider"] = { "n", 3978 },	-- Sage Truthseeker
-					["coord"] = { 34.6, 47.4, THUNDER_BLUFF },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(7747)),	-- Vile Protector
-						un(REMOVED_FROM_GAME, i(17508)),	-- Forcestone Buckler
-						un(REMOVED_FROM_GAME, i(7749)),	-- Omega Orb
-					},
-				}),
 				q(1205,  {	-- Deadmire
 					["provider"] = { "n", 3441 },	-- Melor Stonehoof
 					["coord"] = { 61.2, 80.6, THUNDER_BLUFF },

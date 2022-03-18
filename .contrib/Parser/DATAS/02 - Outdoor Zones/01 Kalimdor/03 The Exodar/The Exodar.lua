@@ -117,6 +117,7 @@ _.Zones =
 						["qg"] = 20604,	-- Dugiru <Alliance Cloth Quartermaster>
 						["sourceQuest"] = 10357,	-- A Donation of Runecloth
 						["cost"] = { { "i", 14047, 20 } },	-- Runecloth
+						["maxReputation"] = { 930, EXALTED },	-- Exodar, Exalted.
 						["coord"] = { 63.5, 67.7, THE_EXODAR },
 						["timeline"] = { "removed 4.0.3.10000"},
 						["races"] = ALLIANCE_ONLY,

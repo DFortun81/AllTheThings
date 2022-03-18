@@ -50,6 +50,7 @@ _.ObjectNames = {
 	[35251] = "Karnitol's Chest",
 	[37099] = "Atal'ai Tablet",
 	[91138] = "Jordan's Hammer",
+	[103821] = "Doan's Strongbox",
 	[112948] = "Intrepid's Locked Strongbox",
 	[113757] = "Shadowforge Cache",
 	[113768] = GetSpellInfo(61820),	-- Brightly Colored Egg,

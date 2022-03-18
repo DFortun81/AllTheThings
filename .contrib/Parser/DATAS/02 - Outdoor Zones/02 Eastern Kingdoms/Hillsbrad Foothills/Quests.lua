@@ -450,16 +450,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(3750)),	-- Ribbed Breastplate
 					},
 				}),
-				q(1053,  {	-- In the Name of the Light
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(6831)),	-- Black Menace
-						un(REMOVED_FROM_GAME, i(6830)),	-- Bonebiter
-						un(REMOVED_FROM_GAME, i(11262)),	-- Orb of Lorica
-						un(REMOVED_FROM_GAME, i(6829)),	-- Sword of Serenity
-					},
-				}),
 				q(533,   {	-- Infiltration
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
@@ -868,15 +858,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(10686)),	-- Aegis of Battle
 						un(REMOVED_FROM_GAME, i(9650)),	-- Honorguard Chestpiece
 						un(REMOVED_FROM_GAME, i(9649)),	-- Royal Highmark Vestments
-					},
-				}),
-				q(1051,  {	-- Vorrel's Revenge
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(4643)),	-- Grimsteel Cape
-						un(REMOVED_FROM_GAME, i(7750)),	-- Mantle of Woe
-						un(REMOVED_FROM_GAME, i(7751)),	-- Vorrel's Boots
 					},
 				}),
 				q(566,   {	-- WANTED: Baron Vardus
