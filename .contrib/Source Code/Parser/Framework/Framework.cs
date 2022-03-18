@@ -239,6 +239,11 @@ namespace ATT
         private static bool MergeItemData { get; set; } = true;
 
         /// <summary>
+        /// Whether the Parser is processing Source data as added by contributors (rather than an automated JSON DB)
+        /// </summary>
+        public static bool ProcessingSourceData = false;
+
+        /// <summary>
         /// Represents whether we are currently processing the main Achievements Category
         /// </summary>
         private static bool ProcessingAchievementCategory { get; set; }
@@ -247,6 +252,14 @@ namespace ATT
         /// Represents the valid values for the 'classes' / 'c' field of an object
         /// </summary>
         internal static readonly HashSet<long> Valid_Classes = new HashSet<long>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
+
+        /// <summary>
+        /// A Dictionary of key-ID types and how many times each value of key-type has been referenced in the final DB
+        /// </summary>
+        public static Dictionary<string, Dictionary<decimal, int>> TypeUseCounts { get; } = new Dictionary<string, Dictionary<decimal, int>>()
+        {
+            { "questID", new Dictionary<decimal, int>() },
+        };
 
         /// <summary>
         /// Merge the data into the database.
@@ -744,9 +757,9 @@ namespace ATT
                         case Objects.Filters.Recipe:
                             data["recipeID"] = data["spellID"];
                             break;
-                        //default:
-                        //    data.Remove("spellID");
-                        //    break;
+                            //default:
+                            //    data.Remove("spellID");
+                            //    break;
                     }
                 }
             }
@@ -958,6 +971,18 @@ namespace ATT
             // since early 2020, the API no longer associates recipe Items with their corresponding Spell... because Blizzard hates us
             // so try to automatically associate the matching recipeID from the requiredSkill profession list to the matching item...
             TryFindRecipeID(data);
+
+            // when consolidating data, check for duplicate objects (instead of when merging)
+            foreach (string key in TypeUseCounts.Keys)
+            {
+                if (data.TryGetValue(key, out decimal id))
+                {
+                    Dictionary<decimal, int> idCounts = TypeUseCounts[key];
+                    idCounts.TryGetValue(id, out int count);
+                    count += 1;
+                    idCounts[id] = count;
+                }
+            }
 
             // clean up any metadata tags
             foreach (string key in data.Keys.Where(k => k.StartsWith("_")).ToArray())

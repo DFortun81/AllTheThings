@@ -87,16 +87,6 @@ namespace ATT
             /// </summary>
             public static IDictionary<long, Dictionary<string, long>> ArtifactSources { get; } = new Dictionary<long, Dictionary<string, long>>();
 
-            /// <summary>
-            /// Whether the Parser is processing Source data as added by contributors (rather than an automated JSON DB)
-            /// </summary>
-            public static bool ProcessingSourceData = false;
-
-            /// <summary>
-            /// The set of Quests which the Parser has notified about being listed in multiple locations in Source
-            /// </summary>
-            public static HashSet<long> DuplicateSourceQuests = new HashSet<long>();
-
             #endregion
             #region Filters
             /// <summary>
@@ -2431,14 +2421,6 @@ namespace ATT
                                     }
                                 }
                             }
-                        }
-
-                        if (ProcessingSourceData && mostSignificantID == "questID")
-                        {
-                            // capture Raw Quest listing which appear multiple times, ignore Quests tied to Items, or removed Quests (because it's chaos)
-                            long longId = Convert.ToInt64(id);
-                            if (AllQuests.ContainsKey(longId))
-                                DuplicateSourceQuests.Add(longId);
                         }
                     }
                 }
