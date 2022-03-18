@@ -469,17 +469,13 @@ root("Zones", m(KALIMDOR, {
 				["qg"] = 4201,	-- Ziz Fizziks
 				["sourceQuest"] = 1095,	-- Further Instructions (2/2)
 				["coord"] = { 59.00, 62.53, STONETALON_MOUNTAINS },
-				["cost"] = {
-					{ "i", 5736, 1 },	-- Gerenzo's Mechanical Arm
-				},
 				["lvl"] = 16,
 				["g"] = {
-					{
-						["itemID"] = 5736,	-- Gerenzo's Mechanical Arm
-						["questID"] = 1096,	-- Gerenzo Wrenchwhistle
+					objective(1, {	-- Gerenzo's Mechanical Arm
+						["provider"] = { "i", 5736 },	-- Gerenzo's Mechanical Arm
 						["cr"] = 4202,	-- Gerenzo Wrenchwhistle
 						["coord"] = { 63.6, 39.6, STONETALON_MOUNTAINS },
-					},
+					}),
 					i(6667),	-- Engineer's Cloak
 					i(6668),	-- Draftsman Boots
 				},
