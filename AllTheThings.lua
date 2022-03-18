@@ -11453,8 +11453,7 @@ local C_QuestLog_IsOnQuest = C_QuestLog.IsOnQuest;
 local C_QuestLog_IsQuestReplayable = C_QuestLog.IsQuestReplayable;
 local C_QuestLog_IsQuestReplayedRecently = C_QuestLog.IsQuestReplayedRecently;
 local C_QuestLog_ReadyForTurnIn = C_QuestLog.ReadyForTurnIn;
-local IsSpellKnown = IsSpellKnown;
-local GetSpellInfo = GetSpellInfo;
+local IsSpellKnown, GetSpellInfo, math_floor = IsSpellKnown, GetSpellInfo, math.floor;
 
 local criteriaFuncs = {
     ["lvl"] = function(v)
@@ -11480,6 +11479,23 @@ local criteriaFuncs = {
 	["label_spellID"] = "Learned Spell/Mount/Recipe",
     ["text_spellID"] = function(v)
         return select(1, GetSpellInfo(v));
+    end,
+
+    ["factionID"] = function(v)
+		-- v = factionID.standingRequiredToLock
+		local factionID = math_floor(v + 0.00001);
+		local lockStanding = math_floor((v - factionID) * 10 + 0.00001)
+        local standing = select(3, GetFactionInfoByID(factionID));
+		-- app.PrintDebug(string.format("Check Faction %s Standing (%d) is locked @ (%d)", factionID, standing, lockStanding))
+		return standing >= lockStanding;
+    end,
+	["label_factionID"] = "Faction Reputation",
+    ["text_factionID"] = function(v)
+		-- v = factionID.standingRequiredToLock
+		local factionID = math_floor(v + 0.00001);
+		local lockStanding = math_floor((v - factionID) * 10 + 0.00001)
+		local name, _, standing = GetFactionInfoByID(factionID);
+        return string.format("%s with %s (Current: %s)", app.GetFactionStandingText(lockStanding), name, app.GetFactionStandingText(standing));
     end,
 };
 app.QuestLockCriteriaFunctions = criteriaFuncs;
@@ -15840,7 +15856,23 @@ RowOnEnter = function (self)
 		-- TODO: localize these when finalized
 		local lockCriteria = reference.lc;
 		if lockCriteria then
-			-- it is already locked
+			-- list the reasons this may become locked
+			local critKey, critValue;
+			local critFuncs = app.QuestLockCriteriaFunctions;
+			local critFunc;
+			GameTooltip:AddLine(string.format("Becomes unavailable if %d of the following are met:", lockCriteria[1]), HexToRGB("d15517"));
+			for i=2,#lockCriteria,1 do
+				critKey = lockCriteria[i];
+				i = i + 1;
+				critValue = lockCriteria[i];
+				critFunc = critFuncs[critKey];
+				if critFunc then
+					local label = critFuncs["label_"..critKey];
+					local text = critFuncs["text_"..critKey](critValue);
+					GameTooltip:AddLine(GetCompletionIcon(critFunc(critValue)).." "..label..": "..text);
+				end
+			end
+			-- and it is already locked
 			if reference.locked then
 				if not reference.DisablePartySync then
 					-- should be possible in party sync
@@ -15849,23 +15881,6 @@ RowOnEnter = function (self)
 					-- known to not be possible in party sync
 					-- TODO: text to indicate that the quest cannot be completed on this character, even using Party Sync
 					GameTooltip:AddLine("This is likely not able to be completed by this character even using Party Sync. If you manage otherwise, please let us know on Discord!");
-				end
-			else
-				-- list the reasons this may become locked
-				local critKey, critValue;
-				local critFuncs = app.QuestLockCriteriaFunctions;
-				local critFunc;
-				GameTooltip:AddLine("Becomes unavailable if "..lockCriteria[1].." of the following are met:", HexToRGB("d15517"));
-				for i=2,#lockCriteria,1 do
-					critKey = lockCriteria[i];
-					i = i + 1;
-					critValue = lockCriteria[i];
-					critFunc = critFuncs[critKey];
-					if critFunc then
-						local label = critFuncs["label_"..critKey];
-						local text = critFuncs["text_"..critKey](critValue);
-						GameTooltip:AddLine(GetCompletionIcon(critFunc(critValue)).." "..label..": "..text);
-					end
 				end
 			end
 		end

@@ -15,6 +15,7 @@ _.Zones =
 					["maxReputation"] = { 970, FRIENDLY },	-- Sporeggar, Friendly.
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(62, 10, 62),
+					["lockCriteria"] = { 1, "factionID", 970.5 },	-- Sporeggar, Friendly StandingID
 				}),
 				q(50131, {	-- An Outside Perspective
 					["qg"] = 17923,	-- Fahssn
