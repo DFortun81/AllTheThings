@@ -142,6 +142,21 @@ _.Holidays = { applyholiday(BREWFEST, {
 	-- #endif
 	["groups"] = {
 		n(ACHIEVEMENTS, {
+			ach(1683, {	-- Brewmaster
+				-- Meta Achievement should symlink the contained Achievements from Source
+				["sym"] = {
+					{"select","achievementID",
+						1185,				-- The Brewfest Diet
+						2796,				-- Brew of the Month
+						295,				-- Direbrewfest
+						303,				-- Have Keg, Will Travel
+						1936,				-- Does Your Wolpertinger Linger?
+					},
+				},
+				["groups"] = {
+					title(101),				-- Brewmaster
+				},
+			}),
 			removeclassicphase(ach(3496, {	-- A Brew-FAST Mount
 				["providers"] = {
 					{ "i", 37828 },	-- Great Brewfest Kodo
@@ -215,9 +230,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 				crit(12, {	-- Aromatic Honey Brew
 					["cost"] = { { "i", 37490, 1 } },	-- Aromatic Honey Brew
 				}),
-			}),
-			ach(1683, {	-- Brewmaster
-				title(101),	-- Brewmaster
 			}),
 			ach(295),	-- Direbrewfest
 			ach(293),	-- Disturbing the Peace
@@ -390,10 +402,10 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["timeline"] = { "added 6.0.1.18594" },
 					["lvl"] = 98,
 					["groups"] = appendGroups(BREWFEST_TOKEN, {
-						i(37828, {	-- Great Brewfest Kodo
+						i(37828, {	-- Great Brewfest Kodo (MOUNT!)
 							["timeline"] = { "added 2.0.1" },
 						}),
-						i(33977, {	-- Swift Brewfest Ram
+						i(33977, {	-- Swift Brewfest Ram (MOUNT!)
 							["timeline"] = { "added 2.0.1" },
 						}),
 						i(117378, {	-- Direbrew's Bloodied Shanker [Level 100+]
@@ -430,10 +442,10 @@ _.Holidays = { applyholiday(BREWFEST, {
 				i(54535, {	-- Keg-Shaped Treasure Chest
 					["timeline"] = { "added 3.0.1", "removed 6.0.1" },
 					["groups"] = {
-						i(37828, {	-- Great Brewfest Kodo
+						i(37828, {	-- Great Brewfest Kodo (MOUNT!)
 							["timeline"] = { "added 2.0.1" },
 						}),
-						i(33977, {	-- Swift Brewfest Ram
+						i(33977, {	-- Swift Brewfest Ram (MOUNT!)
 							["timeline"] = { "added 2.0.1" },
 						}),
 						i(107217, {	-- Direbrew's Bloodied Shanker [Level 90]
@@ -537,10 +549,10 @@ _.Holidays = { applyholiday(BREWFEST, {
 				}),
 				-- Burning Crusade
 				-- #if BEFORE 3.0.1
-				i(37828, {	-- Great Brewfest Kodo
+				i(37828, {	-- Great Brewfest Kodo (MOUNT!)
 					["timeline"] = { "added 2.0.1" },
 				}),
-				i(33977, {	-- Swift Brewfest Ram
+				i(33977, {	-- Swift Brewfest Ram (MOUNT!)
 					["timeline"] = { "added 2.0.1" },
 				}),
 				-- #endif
@@ -1727,7 +1739,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 							["timeline"] = { "added 2.2.0.7272" },
 							["cost"] = BREWFEST_TOKEN_COST(100),
 						}),
-						i(166747, {	-- Brewfest Reveler's Hearthstone
+						i(166747, {	-- Brewfest Reveler's Hearthstone (TOY!)
 							["timeline"] = { "added 8.1.5.29701" },
 							["cost"] = BREWFEST_TOKEN_COST(200),
 						}),
@@ -1881,7 +1893,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 							["timeline"] = { "added 2.2.0.7272" },
 							["cost"] = BREWFEST_TOKEN_COST(100),
 						}),
-						i(166747, {	-- Brewfest Reveler's Hearthstone
+						i(166747, {	-- Brewfest Reveler's Hearthstone (TOY!)
 							["timeline"] = { "added 8.1.5.29701" },
 							["cost"] = BREWFEST_TOKEN_COST(200),
 						}),
@@ -1951,7 +1963,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["timeline"] = { "added 8.2.0.30918" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(169865, {	-- Brewfest Chowdown Trophy
+						i(169865, {	-- Brewfest Chowdown Trophy (TOY!)
 							["cost"] = { { "i", 169599, 5 } },	-- 5x Chowdown Champion Token
 							["timeline"] = { "added 8.2.0.30918" },
 						}),
@@ -1963,11 +1975,11 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["timeline"] = { "added 2.2.2" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(33977, {	-- Swift Brewfest Ram
+						i(33977, {	-- Swift Brewfest Ram (MOUNT!)
 							["timeline"] = { "added 2.0.1" },
 							["cost"] = { { "g", 1000000 } },	-- 100g
 						}),
-						i(33976, {	-- Brewfest Ram
+						i(33976, {	-- Brewfest Ram (MOUNT!)
 							["timeline"] = { "added 2.0.1", "removed 2.4.3" },
 							["cost"] = { { "g", 100000 } },	-- 10g
 						}),
@@ -2004,7 +2016,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["timeline"] = { "added 8.2.0.30918" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(169865, {	-- Brewfest Chowdown Trophy
+						i(169865, {	-- Brewfest Chowdown Trophy (TOY!)
 							["cost"] = { { "i", 169599, 5 } },	-- 5x Chowdown Champion Token
 							["timeline"] = { "added 8.2.0.30918" },
 						}),
@@ -2086,11 +2098,11 @@ _.Holidays = { applyholiday(BREWFEST, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(33977, {	-- Swift Brewfest Ram
+						i(33977, {	-- Swift Brewfest Ram (MOUNT!)
 							["timeline"] = { "added 2.0.1" },
 							["cost"] = { { "g", 1000000 } },	-- 100g
 						}),
-						i(33976, {	-- Brewfest Ram
+						i(33976, {	-- Brewfest Ram (MOUNT!)
 							["timeline"] = { "added 2.0.1", "removed 2.4.3" },
 							["cost"] = { { "g", 100000 } },	-- 10g
 						}),
@@ -2172,7 +2184,7 @@ _.NeverImplemented = { bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	["holidayID"] = 235442,
 	-- #endif
 	["groups"] = {
-		i(37827, { -- Brewfest Kodo
+		i(37827, { -- Brewfest Riding Kodo (MOUNT!)
 			["timeline"] = { "created 2.0.1" },
 		}),
 		i(167998, {	-- Dark Iron Tankard

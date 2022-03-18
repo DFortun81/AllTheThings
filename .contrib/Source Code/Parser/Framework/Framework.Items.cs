@@ -136,7 +136,7 @@ namespace ATT
             /// </summary>
             public static int Count { get; private set; }
 
-            private static Dictionary<string, object> _Garbage = new Dictionary<string, object>();
+            private static Dictionary<string, object> _Garbage { get; } = new Dictionary<string, object>();
 
             /// <summary>
             /// Get an item by its Item ID.
@@ -170,12 +170,9 @@ namespace ATT
             public static Dictionary<string, object> Get(IDictionary<string, object> data)
             {
                 decimal itemID = GetSpecificItemID(data);
-
-                // Attempt to get an existing item dictionary.
+                // Attempt to get an existing specific item dictionary
                 if (ITEMS.TryGetValue(itemID, out Dictionary<string, object> obj))
-                {
                     return obj;
-                }
 
                 if (itemID == 0)
                     return _Garbage;
@@ -503,6 +500,13 @@ namespace ATT
                         }
 
                     // Integer Data Type Fields
+                    case "class":
+                    case "inventoryType":
+                    case "subclass":
+                    case "q":
+                        item[field] = Convert.ToInt64(value);
+                        break;
+
                     case "altItemID":
                     case "altAchID":
                     case "altSpeciesID":
@@ -512,9 +516,6 @@ namespace ATT
                     case "illusionID":
                     case "achID":
                     case "requireSkill":
-                    case "class":
-                    case "subclass":
-                    case "inventoryType":
                     case "isOffHand":
                     case "factionID":
                     case "mountID":
@@ -532,11 +533,20 @@ namespace ATT
                     case "b":
                     case "r":
                     case "ilvl":
-                    case "q":
+                        var longval = Convert.ToInt64(value);
+                        // any 0 value should simply be removed for cleanliness
+                        if (longval == 0)
                         {
-                            item[field] = Convert.ToInt64(value);
-                            break;
+                            if (DebugMode)
+                                Trace.WriteLine($"Removing 0-value {field} from {MiniJSON.Json.Serialize(item)}");
+
+                            item.Remove(field);
                         }
+                        else
+                        {
+                            item[field] = longval;
+                        }
+                        break;
 
                     // Integer-Array Data Type Fields (stored as List<object> for usability reasons)
                     case "c":
@@ -674,29 +684,31 @@ namespace ATT
                         item[field] = value;
                         break;
 
-                    // Report all other fields.
-                    default:
-                        {
-                            // ignore fields starting with _ since those will be used for metadata in some scenarios
-                            if (field.StartsWith("_"))
-                                break;
+                        // Not everything has to merge into the Item dictionary that may be required on a specific Source of an Item. Don't need to report them.
+                        // They will report during the Object merging if the Parser doesn't understand the field.
+                        // Report all other fields.
+                        //default:
+                        //    {
+                        //        // ignore fields starting with _ since those will be used for metadata in some scenarios
+                        //        if (field.StartsWith("_"))
+                        //            break;
 
-                            // ignore the 'hash' field which is generated during recipe automation and is dynamic in-game anyway
-                            if (field == "hash")
-                                break;
+                        //        // ignore the 'hash' field which is generated during recipe automation and is dynamic in-game anyway
+                        //        if (field == "hash")
+                        //            break;
 
-                            // Only warn the programmer once per field per session.
-                            if (WARNED_FIELDS.ContainsKey(field)) return;
-                            WARNED_FIELDS[field] = true;
-                            Trace.Write("Parser is ignoring field '");
-                            Trace.Write(field);
-                            Trace.WriteLine("' for items.");
-                            Trace.Write("  [");
-                            Trace.Write(MiniJSON.Json.Serialize(value));
-                            Trace.WriteLine("]");
-                            Trace.WriteLine(MiniJSON.Json.Serialize(item));
-                            break;
-                        }
+                        //        // Only warn the programmer once per field per session.
+                        //        if (WARNED_FIELDS.ContainsKey(field)) return;
+                        //        WARNED_FIELDS[field] = true;
+                        //        Trace.Write("Parser is ignoring field '");
+                        //        Trace.Write(field);
+                        //        Trace.WriteLine("' for items.");
+                        //        Trace.Write("  [");
+                        //        Trace.Write(MiniJSON.Json.Serialize(value));
+                        //        Trace.WriteLine("]");
+                        //        Trace.WriteLine(MiniJSON.Json.Serialize(item));
+                        //        break;
+                        //    }
                 }
             }
 
@@ -731,6 +743,7 @@ namespace ATT
                 }
             }
             #endregion
+
             #region Merge Into (for merging item data back into an object)
             /// <summary>
             /// Merge the fields from the item reference if it is whitelisted.
@@ -879,7 +892,7 @@ namespace ATT
             }
 
             /// <summary>
-            /// Merge information about the item into the data dictionary.
+            /// Merge information from the Item dictionary into the data
             /// Only a couple of fields will successfully merge into the data.
             /// </summary>
             /// <param name="itemID">The item ID to merge with.</param>
@@ -927,45 +940,8 @@ namespace ATT
                 // Merge the specific item with the data dictionary.
                 MergeInto((long)specificItemID, item, data);
             }
-
-            /// <summary>
-            /// Merge information about the item matching the data's itemID into the dictionary.
-            /// If the source dictionary does not contain an itemID or toyID, this method does nothing.
-            /// </summary>
-            /// <param name="data">The data dictionary to receive the merged data.</param>
-            //public static void MergeInto(Dictionary<string, object> data)
-            //{
-            //    // Attempt to extra the itemID from the data table.
-            //    if (data.TryGetValue("itemID", out long itemID))
-            //    {
-            //        MergeInto(data);
-            //    }
-            //    else if (data.TryGetValue("toyID", out itemID))
-            //    {
-            //        MergeInto(data);
-            //    }
-            //}
-
-            /// <summary>
-            /// Merge information about the item matching the data's itemID into the dictionary.
-            /// If the source dictionary does not contain an itemID, this method does nothing.
-            /// </summary>
-            /// <param name="data">The data dictionary to receive the merged data.</param>
-            /// <param name="itemID">The item ID or -1 if the item is not valid.</param>
-            //public static void MergeInto(Dictionary<string, object> data, out long itemID)
-            //{
-            //    // Attempt to extra the itemID from the data table.
-            //    if (data.TryGetValue("itemID", out itemID))
-            //    {
-            //        MergeInto(itemID, data);
-            //    }
-            //    else if (data.TryGetValue("toyID", out itemID))
-            //    {
-            //        MergeInto(itemID, data);
-            //    }
-            //    else itemID = -1;
-            //}
             #endregion
+
             #region Utility
             public static void MarkItemAsReferenced(long itemID)
             {

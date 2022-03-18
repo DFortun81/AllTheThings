@@ -127,8 +127,8 @@ root("Instances", { tier(LEGION_TIER, {
 			}),
 			d(2, {	-- Heroic
 				n(127882, {	-- Vixx the Collector
-					i(153004),	-- Unstable Portal Emitter
-					i(152982, {		-- Vixx's Chest of Tricks
+					i(153004),	-- Unstable Portal Emitter (TOY!)
+					i(152982, {		-- Vixx's Chest of Tricks (TOY!)
 						title(365, {	-- %s the Collector
 							["collectible"] = false,
 						}),
@@ -198,8 +198,8 @@ root("Instances", { tier(LEGION_TIER, {
 			}),
 			d(23, {	-- Mythic
 				n(127882, {	-- Vixx the Collector
-					i(153004),	-- Unstable Portal Emitter
-					i(152982, {		-- Vixx's Chest of Tricks
+					i(153004),	-- Unstable Portal Emitter (TOY!)
+					i(152982, {		-- Vixx's Chest of Tricks (TOY!)
 						title(365, {	-- %s the Collector
 							["collectible"] = false,
 						}),

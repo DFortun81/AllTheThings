@@ -10,6 +10,21 @@ profession(INSCRIPTION, {
 							["recipeID"] = 354000,
 							["name"] = "Contract: Death's Advance",
 						},
+						{
+							["recipeID"] = 359786,
+							["name"] = "Contract: The Enlightened",
+							["timeline"] = { "added 9.2.0" },
+						},
+					},
+				},
+				{
+					["categoryID"] = 1412,	-- Mass Milling"
+					["g"] = {
+						{
+							["recipeID"] = 359490,
+							["name"] = "Mass Mill First Flower",
+							["timeline"] = { "added 9.2.0" },
+						},
 					},
 				},
 				{
@@ -68,6 +83,12 @@ profession(INSCRIPTION, {
 					},
 				},
 				category(786, sharedData({ ["timeline"] = { "added 9.1.5" }},{	-- Glyphs
+					recipe(367389, {	-- Glyph of the Spectral Lupine
+						["timeline"] = { "added 9.2.0" },
+					}),
+					recipe(367393, {	-- Glyph of the Spectral Vulpine
+						["timeline"] = { "added 9.2.0" },
+					}),
 					recipe(362412),	-- Glyph of the Wild Mushroom
 					recipe(360542),	-- Mark of the Gloomstalker Dredbat
 					recipe(360885),	-- Mark of the Midnight Runestag
@@ -82,6 +103,9 @@ profession(INSCRIPTION, {
 					}),
 					recipe(354394, {	-- Vantus Rune: Sanctum of Domination
 						["name"] = "Sanctum of Domination",
+					}),
+					recipe(359890, {	-- Vantus Rune: Sepulcher of the First Ones
+						["timeline"] = { "added 9.2.0" },
 					}),
 				}),
 			},

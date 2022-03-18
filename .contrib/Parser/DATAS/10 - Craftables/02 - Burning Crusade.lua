@@ -547,7 +547,7 @@ _.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					i(23841),	-- Gnomish Flame Turret
 					i(23835),	-- Gnomish Poultryizer
 					i(23825),	-- Nigh-Invulnerability Belt
-					i(30544),	-- Ultrasafe Transporter: Toshley's Station
+					i(30544),	-- Ultrasafe Transporter: Toshley's Station (TOY!)
 				}),
 				category(185, {	-- Goggles
 					i(23829),	-- Gnomish Battle Goggles
@@ -559,7 +559,7 @@ _.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			["description"] = "These items can only be crafted by Engineers who have completed the Goblin Engineering quest chain.",
 			["groups"] = {
 				category(188, {	-- Devices
-					i(30542),	-- Dimensional Ripper - Area 52
+					i(30542),	-- Dimensional Ripper - Area 52 (TOY!)
 					i(23836),	-- Goblin Rocket Launcher
 				}),
 				category(185, {	-- Goggles
@@ -628,7 +628,7 @@ _.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			applyclassicphase(TBC_PHASE_TWO, i(20475)),	-- Adamantite Arrow Maker
 			applyclassicphase(TBC_PHASE_TWO, i(34504)),	-- Adamantite Shell Machine
 			-- #endif
-			i(23767),	-- Crashin' Thrashin' Robot
+			i(23767),	-- Crashin' Thrashin' Robot (TOY!)
 			i(23774),	-- Fel Iron Toolbox
 			i(34113),	-- Field Repair Bot 110G
 			i(33092),	-- Healing Potion Injector
@@ -655,8 +655,8 @@ _.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			i(23768),	-- White Smoke Flare
 		}),
 		category(756, {	-- Mounts
-			i(34060),	-- Flying Machine
-			i(34061),	-- Turbo-Charged Flying Machine
+			i(34060),	-- Flying Machine (MOUNT!)
+			i(34061),	-- Turbo-Charged Flying Machine (MOUNT!)
 		}),
 	}),
 	prof(FIRST_AID, {
@@ -981,13 +981,13 @@ _.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		}),
 		category(929, {	-- Bags
 			i(34490),	-- Bag of Many Hides
-			applyclassicphase(TBC_PHASE_THREE, i(34099, {	-- Knothide Ammo Pouch
+			applyclassicphase(TBC_PHASE_FOUR, i(34099, {	-- Knothide Ammo Pouch
 				["timeline"] = {
 					"added 2.3.0.7382",
 					"removed 4.0.1.13287",
 				},
 			})),
-			applyclassicphase(TBC_PHASE_THREE, i(34100, {	-- Knothide Quiver
+			applyclassicphase(TBC_PHASE_FOUR, i(34100, {	-- Knothide Quiver
 				["timeline"] = {
 					"added 2.3.0.7382",
 					"removed 4.0.1.13287",

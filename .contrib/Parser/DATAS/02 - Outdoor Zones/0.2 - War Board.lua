@@ -4,6 +4,21 @@
 
 _.Zones =
 {
+	o(207303, {	-- Adventure Board
+		["description"] = "These quests can be obtained from any city or town to lead the Character to a specific Zone.",
+		["g"] = {
+			q(38935, {	-- His Name Was... Stormstout - appears to be an unused version of this quest added in Warlords of Draenor?
+				["isBreadcrumb"] = true,
+				["description"] = "This breadcrumb can only be picked up from the Adventure Guide (shift+J).",
+				["lvl"] = { 15 },
+			}),
+			q(34398, {	-- The Dark Portal
+				["description"] = "If you want to do the Blasted Lands questline before going to Draenor, abandon this quest after taking the portal to Blasted Lands.",
+				["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+				["coord"] = { 56.2, 17.3, STORMWIND_CITY },
+			}),
+		},
+	}),
 	o(206109, {	-- Warchief's Command Board
 		["description"] = "These quests can be obtained from any city or town to lead the Character to a specific Zone.",
 		["races"] = HORDE_ONLY,
@@ -31,15 +46,11 @@ _.Zones =
 				["lvl"] = 85,
 			}),
 			un(REMOVED_FROM_GAME, q(36499)),	-- Iron Horde Invasion (LEGACY - pre WoD)
-			un(REMOVED_FROM_GAME, q(4494)),	-- March of the Silithid
 			q(29612, {	-- The Art of War
 				["description"] = "Players who have completed Vashj'ir will receive this version of The Art of War.",
 			}),
 			q(29611, {	-- The Art of War
 				["description"] = "Players who have not completed Vashj'ir will receive this version of The Art of War.",
-			}),
-			q(34398, {	-- The Dark Portal (also for alliance, got on KT druid)
-				["description"] = "If you want to do the Blasted Lands questline before going to Draenor, use the portal in Cleft of Shadow and speak to Thrall rather than accepting this quest.",
 			}),
 			q(43926, {	-- The Legion Returns
 				["isBreadcrumb"] = true,
@@ -49,12 +60,6 @@ _.Zones =
 				["isBreadcrumb"] = true,
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			q(38935, {	-- His Name Was... Stormstout - appears to be an unused version of this quest added in Warlords of Draenor?
-				["isBreadcrumb"] = true,
-				["description"] = "This breadcrumb can only be picked up from the Adventure Guide (shift+J).",
-				["lvl"] = { 15 },
-			}),
-			q(36499),	-- Iron Horde Invasion
 			un(REMOVED_FROM_GAME, q(29157)),	-- The Zandalari Menace
 			q(49817, {	-- To Northrend! (Horde)
 				["isBreadcrumb"] = true,
@@ -163,9 +168,6 @@ _.Zones =
 			q(49549, {	-- Warchief's Command: Nagrand! (Draenor)
 				["isBreadcrumb"] = true,
 			}),
-			q(39189, {	-- Warchief's Command: Nagrand! (NYI - duplicate?)
-				["u"] = NEVER_IMPLEMENTED,
-			}),
 			q(39196, {	-- Warchief's Command: Nagrand! (Outland)
 				["isBreadcrumb"] = true,
 			}),
@@ -178,9 +180,9 @@ _.Zones =
 			q(28688, {	-- Warchief's Command: Northern Stranglethorn Vale!
 				["isBreadcrumb"] = true,
 			}),
-			q(28711, {	-- Warchief's Command: Northrend!
-				["isBreadcrumb"] = true,
-			}),
+			-- q(???, {	-- Warchief's Command: Northrend! Doesn't exist?
+			-- 	["isBreadcrumb"] = true,
+			-- }),
 			q(28705, {	-- Warchief's Command: Outland!
 				["isBreadcrumb"] = true,
 			}),
@@ -571,11 +573,6 @@ _.Zones =
 				["isBreadcrumb"] = true,
 				["lvl"] = 64,
 			}),
-			q(38935, {	-- His Name Was... Stormstout - appears to be an unused version of this quest added in Warlords of Draenor?
-				["isBreadcrumb"] = true,
-				["description"] = "This breadcrumb can only be picked up from the Adventure Guide (shift+J).",
-				["lvl"] = { 15 },
-			}),
 			q(36498, {	-- Iron Horde Invasion
 				["isBreadcrumb"] = true,
 				["u"] = REMOVED_FROM_GAME,
@@ -610,6 +607,9 @@ _.Zones =
 				},
 			}),
 			q(40519, {	-- The Legion Returns (Alliance)
+				["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+				["coord"] = { 56.3, 17.3, STORMWIND_CITY },
+				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
 			}),
 			q(49846, {	-- Wars on Two Fronts [Cataclysm]

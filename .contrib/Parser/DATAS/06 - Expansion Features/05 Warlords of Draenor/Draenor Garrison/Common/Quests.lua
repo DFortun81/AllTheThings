@@ -82,7 +82,7 @@ _.ExpansionFeatures =
 						["provider"] = { "o", 231918 },	-- Laanda's Scroll
 						["coord"] = { 50.0, 81.2, DRAENOR_SHADOWMOON_VALLEY },
 						["g"] = {
-							i(119134),	-- Sargerei Disguise
+							i(119134),	-- Sargerei Disguise (TOY!)
 						},
 					}),
 					-- 9th quest of Garrison Campaign: The Sargerei (A)
@@ -144,7 +144,7 @@ _.ExpansionFeatures =
 						["coord"] = { 70.0, 38.2, FROSTFIRE_RIDGE },
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							i(119145),	-- Firefury Totem
+							i(119145),	-- Firefury Totem (TOY!)
 						},
 					}),
 					-- 7th (last) quest of Garrison Campaign: Farseer's Rock
@@ -327,7 +327,9 @@ _.ExpansionFeatures =
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(34335, {	-- Garrison Campaign: Crows In The Field
+						["qg"] = 78192,	-- Choluna
 						["races"] = HORDE_ONLY,
+						["maps"] = { GORGROND },	 -- TODO replace with coords
 					}),
 					q(35861, {	-- Garrison Campaign: Darktide Roost (A)
 						["provider"] = { "n", 81492 },	-- Bodrick Gray
@@ -376,9 +378,6 @@ _.ExpansionFeatures =
 					q(34284, {	-- Garrison Campaign: The Search for Owynn Graddock
 						["provider"] = { "n", 81492 },	-- Bodrick Grey <SI:7>
 						["coord"] = { 38.0, 37.6, LUNARFALL },	-- garrison lvl 3
-					}),
-					q(35195, {	-- Socrethar's Fury
-						i(119134),	-- Toy
 					}),
 					q(38253, {	-- Garrison Campaign: War Council
 						["sourceQuests"] = { 36615 },	-- My Very Own Castle
@@ -1574,6 +1573,16 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 78466 },	-- Gazlowe
 					["sourceQuest"] = 34775,	-- Mission Probable
 				}),
+				q(33111, {	-- Bounty: Twisted Ancient
+					["providers"] = {
+						{ "o", 232397 },	-- Bulletin Board
+						{ "o", 232398 },	-- Bulletin Board
+						{ "o", 232400 },	-- Bulletin Board
+					},
+					["coord"] = { 43.5, 45.0, LUNARFALL },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(38356, {	-- Bringing the Bass
 					["sourceQuests"] = { 36615 },	-- My Very Own Castle
 					["provider"] = { "n", 91589 },	-- Fix "Smallie" Biggswrench
@@ -1652,7 +1661,7 @@ _.ExpansionFeatures =
 						{ 37.6, 50.3, FROSTWALL },	-- lvl 3
 					},
 				}),
-				q(36684, {	-- Challenge at the Ring of Blood
+				q(36687, {	-- Challenge at the Ring of Blood
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "o", 236165 },	-- War Planning Map
@@ -1663,8 +1672,9 @@ _.ExpansionFeatures =
 					["g"] = {
 						currency(823),	-- Apexis Crystal x1000
 					},
+					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(36684, {	-- Challenge at the Ring of Blood
+				q(36700, {	-- Challenge at the Ring of Blood
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "o", 236206 },	-- War Planning Map
@@ -1675,6 +1685,7 @@ _.ExpansionFeatures =
 					["g"] = {
 						currency(823),	-- Apexis Crystal x1000
 					},
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(36404, {	-- Clearing the Garden
 					["sourceQuest"] = 36592,	-- Bigger is Better
@@ -2436,16 +2447,10 @@ _.ExpansionFeatures =
 				}),
 				q(39042, {	-- The Very Best
 					["provider"] = { "n", 94870 },	-- Seer Kazal
-					["coord"] = { 33.6, 37.6, LUNARFALL },
-					["isWeekly"] = true,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						i(122457),	-- Ultimate Battle-Training Stone
+					["coords"] = {
+						{ 33.6, 37.6, LUNARFALL },
+						{ 41.8, 46.8, FROSTWALL },
 					},
-				}),
-				q(39042, {	-- The Very Best
-					["provider"] = { "n", 94870 },	-- Seer Kazal
-					["coord"] = { 41.8, 46.8, FROSTWALL },
 					["isWeekly"] = true,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {

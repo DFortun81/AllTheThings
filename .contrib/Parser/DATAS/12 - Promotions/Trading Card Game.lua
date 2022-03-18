@@ -82,7 +82,7 @@ root("Promotions", n(TCG_HEADER, bubbleDown({
 		i(68825, {	-- Amani Dragonhawk
 			["timeline"] = { "added 4.1.0.13682" },
 		}),
-		i(38576, {	-- Big Battle Bear BOP
+		i(38576, {	-- Big Battle Bear (MOUNT!) BOP
 			["timeline"] = { "added 2.4.2.8301", "removed 3.2.0.10147" },
 		}),
 		i(49282, {	-- Big Battle Bear BOE
@@ -112,19 +112,19 @@ root("Promotions", n(TCG_HEADER, bubbleDown({
 		i(68008, {	-- Mottled Drake
 			["timeline"] = { "added 4.0.3.13287" },
 		}),
-		i(33224, {	-- Spectral Tiger BOP
+		i(33224, {	-- Spectral Tiger (MOUNT!) BOP
 			["timeline"] = { "added 2.1.3.6898", "removed 3.2.0.10147" },
 		}),
 		i(49283, {	-- Reins of the Spectral Tiger BOE
 			["timeline"] = { "added 3.2.0.10147" },
 		}),
-		i(33225, {	-- Swift Spectral Tiger BOP
+		i(33225, {	-- Swift Spectral Tiger (MOUNT!) BOP
 			["timeline"] = { "added 2.1.3.6898", "removed 3.2.0.10147" },
 		}),
 		i(49284, {	-- Reins of the Swift Spectral Tiger BOE
 			["timeline"] = { "added 3.2.0.10147" },
 		}),
-		i(23720, {	-- Riding Turtle
+		i(23720, {	-- Riding Turtle (MOUNT!)
 			["timeline"] = { "added 2.0.0.5462" },
 		}),
 		i(69228, {	-- Savage Raptor
@@ -139,13 +139,13 @@ root("Promotions", n(TCG_HEADER, bubbleDown({
 		i(54068, {	-- Wooly White Rhino
 			["timeline"] = { "added 3.3.5.12340" },
 		}),
-		i(35225, {	-- X-51 Nether-Rocket BOP
+		i(35225, {	-- X-51 Nether-Rocket (MOUNT!) BOP
 			["timeline"] = { "added 2.4.0.7923" , "removed 3.2.0" },
 		}),
 		i(49285, {	-- X-51 Nether-Rocket BOE
 			["timeline"] = { "added 3.2.0" },
 		}),
-		i(35226, {	-- X-51 Nether-Rocket X-TREME BOP
+		i(35226, {	-- X-51 Nether-Rocket X-TREME (MOUNT!) BOP
 			["timeline"] = { "added 2.4.0.7923" , "removed 3.2.0" },
 		}),
 		i(49286, {	-- X-51 Nether-Rocket X-TREME BOE
@@ -187,80 +187,80 @@ root("Promotions", n(TCG_HEADER, bubbleDown({
 		}),
 	}),
 	filter(TOYS, {
-		i(49704, {	-- Carved Ogre Idol
+		i(49704, {	-- Carved Ogre Idol (TOY!)
 			["timeline"] = { "added 3.2.2.10468" },
 		}),
-		i(93672, {	-- Dark Portal
+		i(93672, {	-- Dark Portal (TOY!)
 			["model"] = 803615,
 			["modelScale"] = 5,
 			["timeline"] = { "added 5.2.0.16408" },
 		}),
-		i(79769, {	-- Demon Hunter's Aspect
+		i(79769, {	-- Demon Hunter's Aspect (TOY!)
 			["timeline"] = { "added 4.3.2.15211" },
 		}),
-		i(38301, {	-- D.I.S.C.O.
+		i(38301, {	-- D.I.S.C.O. (TOY!)
 			["model"] = 201182,
 			["modelScale"] = 3,
 			["timeline"] = { "added 2.4.2.8301" },
 		}),
-		i(54452, {	-- Ethereal Portal
+		i(54452, {	-- Ethereal Portal (TOY!)
 			["timeline"] = { "added 3.3.5.12340" },
 		}),
-		i(33223, {	-- Fishing Chair
+		i(33223, {	-- Fishing Chair (TOY!)
 			["timeline"] = { "added 2.2.0.7091" },
 		}),
-		i(45063, {	-- Foam Sword Rack
+		i(45063, {	-- Foam Sword Rack (TOY!)
 			["model"] = 253206,
 			["timeline"] = { "added 3.1.0.9626" },
 		}),
-		i(69227, {	-- Fool's Gold
+		i(69227, {	-- Fool's Gold (TOY!)
 			["timeline"] = { "added 4.1.0.13682" },
 		}),
-		i(33219, {	-- Goblin Gumbo Kettle
+		i(33219, {	-- Goblin Gumbo Kettle (TOY!)
 			["timeline"] = { "added 2.1.3.6898" },
 		}),
-		i(35227, {	-- Goblin Weather Machine - Prototype 01-B
+		i(35227, {	-- Goblin Weather Machine - Prototype 01-B (TOY!)
 			["model"] = 166247,
 			["timeline"] = { "added 2.4.0.8089" },
 		}),
-		i(67097, {	-- Grim Campfire
+		i(67097, {	-- Grim Campfire (TOY!)
 			["timeline"] = { "added 4.0.1.12984" },
 		}),
-		i(32542, {	-- Imp in a Ball
+		i(32542, {	-- Imp in a Ball (TOY!)
 			["timeline"] = { "added 2.1.0.6692" },
 		}),
-		i(54212, {	-- Instant Statue Pedestal
+		i(54212, {	-- Instant Statue Pedestal (TOY!)
 			["timeline"] = { "added 3.3.3.11723" },
 		}),
-		i(72159, {	-- Magical Ogre Idol
+		i(72159, {	-- Magical Ogre Idol (TOY!)
 			["timeline"] = { "added 4.3.0.15005" },
 		}),
-		i(46780, {	-- Ogre Pinata
+		i(46780, {	-- Ogre Pinata (TOY!)
 			["model"] = 306851,	-- Candypile = 306864
 			["modelScale"] = 9,
 			["timeline"] = { "added 3.2.0.10026" },
 		}),
-		i(34499, {	-- Paper Flying Machine Kit
+		i(34499, {	-- Paper Flying Machine Kit (TOY!)
 			["timeline"] = { "added 2.3.0.7561" },
 		}),
-		i(49703, {	-- Perpetual Purple Firework
+		i(49703, {	-- Perpetual Purple Firework (TOY!)
 			["timeline"] = { "added 3.2.2.10468" },
 		}),
-		i(32566, {	-- Picnic Basket
+		i(32566, {	-- Picnic Basket (TOY!)
 			["timeline"] = { "added 2.1.0.6692" },
 		}),
-		i(71628, {	-- Sack of Starfish
+		i(71628, {	-- Sack of Starfish (TOY!)
 			["timeline"] = { "added 4.3.0.15005" },
 		}),
-		i(72161, {	-- Spurious Sarcophagus
+		i(72161, {	-- Spurious Sarcophagus (TOY!)
 			["timeline"] = { "added 4.3.0.15005" },
 		}),
-		i(38578, {	-- The Flag of Ownership
+		i(38578, {	-- The Flag of Ownership (TOY!)
 			["model"] = 200314,
 			["modelScale"] = 2,
 			["timeline"] = { "added 2.5.1" },
 		}),
-		i(69215, {	-- War Party Hitching Post
+		i(69215, {	-- War Party Hitching Post (TOY!)
 			["timeline"] = { "added 4.1.0.13682" },
 		}),
 	}),

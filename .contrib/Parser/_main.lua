@@ -38,6 +38,7 @@ RAGEFIRE_CHASM = 213;
 RAZORFEN_DOWNS = 300;
 RAZORFEN_KRAUL = 301;
 SCARLET_MONASTERY = 435;
+SCARLET_MONASTERY_ENTRANCE = 19;
 SCHOLOMANCE = 476;
 SHADOWFANG_KEEP = 310;
 SHADOWFANG_KEEP_LEVEL2 = 311;
@@ -96,6 +97,7 @@ TAZAVESH_AGGRAMARS_VAULT = 1997;
 AHNQIRAJ_THE_FALLEN_KINGDOM = 327;
 ASHENVALE = 63;	-- Confirmed!
 AZSHARA = 76;	-- Confirmed!
+BANETHIL_BARROW_DEN = 60;
 CAVERNS_OF_TIME = 75;	-- Confirmed!
 DARKSHORE = 62;
 DARNASSUS = 89;
@@ -117,6 +119,7 @@ TELDRASSIL = 57;
 THE_BARRENS = NORTHERN_BARRENS;
 THOUSAND_NEEDLES = 64;
 THUNDER_BLUFF = 88;
+ULDUM = 249;
 UNGORO_CRATER = 78;
 WINTERSPRING = 83;
 
@@ -143,7 +146,6 @@ LOCH_MODAN = 48;
 NORTHERN_STRANGLETHORN = 50;
 REDRIDGE_MOUNTAINS = 49;
 RUINS_OF_GILNEAS = 217;
-SCARLET_MONASTERY_ENTRANCE = 19;
 SEARING_GORGE = 32;
 SILVERPINE_FOREST = 21;	-- TODO: Still need to do a search and replace for this one
 STORMWIND_CITY = 84;
@@ -423,6 +425,68 @@ ALL_CLASSES = {	-- NOTE: Use this with the exclude function.
 	DEMONHUNTER,
 };
 
+-- Specializations
+
+-- Death Knight
+BLOOD = 250;
+FROST = 251;
+UNHOLY = 252;
+
+-- Demon Hunter
+HAVOC = 577;
+VENGEANCE = 581;
+
+-- Druid
+BALANCE = 102;
+FERAL = 103;
+GUARDIAN = 104;
+RESTORATION = 105;
+
+-- Hunter
+BEAST_MASTERY = 253;
+MARKSMANSHIP = 254;
+SURVIVAL = 255;
+
+-- Mage
+ARCANE = 62;
+FIRE = 63;
+--FROST = 64;
+
+-- Monk
+BREWMASTER = 268;
+WINDWALKER = 269;
+MISTWEAVER = 270;
+
+-- Paladin
+HOLY = 65;
+PROTECTION = 66;
+RETRIBUTION = 70;
+
+-- Priest
+DISCIPLINE = 256;
+--HOLY = 257;
+SHADOW = 258;
+
+-- Rogue
+ASSASSINATION = 259;
+OUTLAW = 260;
+SUBTLETY = 261;
+
+-- Shaman
+ELEMENTAL = 262;
+ENHANCEMENT = 263;
+--RESTORATION = 264;
+
+-- Warlock
+AFFLICTION = 265;
+DEMONOLOGY = 266;
+DESTRUCTION = 267;
+
+-- Warrior
+ARMS = 71;
+FURY = 72;
+--PROTECTION = 73;
+
 -- Achievement Categories
 ACHIEVEMENT_CATEGORY_CHARACTER = 92;
 ACHIEVEMENT_CATEGORY_GENERAL = 15088;
@@ -593,16 +657,25 @@ FINGER = -385;
 -- Meta Slot
 ARMOR = -318;
 WEAPONS = -319;
+SETS = -1000;
 TITANFORGED = -355;
 
 -- D&R
 COMMON_BOSS_DROPS = -1;
 WORLD_BOSSES = -7;
+BOSSES = -139;
 SCENARIOS = -10069;
 
 -- Pet
 PET_BATTLE = -796;
 PET_JOURNAL = -797;
+
+-- Battlegrounds
+ALTERAC_VALLEY = 91;
+ARATHI_BASIN = 93;
+EYE_OF_THE_STORM = 112;
+WARSONG_GULCH = 92;
+WINTERGRASP_BG = 1334;
 
 -- PvP Headers
 PVP = -9;
@@ -653,6 +726,7 @@ SEASON_NOTORIOUS = -691;
 SEASON_CORRUPTED = -692;
 SEASON_SINFUL = -693;
 SEASON_UNCHAINED = -694;
+SEASON_COSMIC = -695;
 
 -- Expansion Features
 LEGENDARIES = -364;
@@ -711,6 +785,9 @@ LEVEL_FIFTY_TRIAL = -148;
 LEVEL_SIXTY = -156;
 
 -- Special
+CLASSES = -220;
+SOURCELESS = -219;
+CRAFTABLES = -42;
 MAILBOX = -297;
 PROMOTIONS = -31;
 TCG_HEADER = -535;
@@ -734,6 +811,18 @@ FOURTEENTH_ANNIVERSARY = -5363;
 FIFTEENTH_ANNIVERSARY = -5364;
 SIXTEENTH_ANNIVERSARY = -5365;
 SEVENTEENTH_ANNIVERSARY = -5366;
+EIGHTEENTH_ANNIVERSARY = -5367;
+
+-- NYI
+P1xx = -2180;
+P2xx = -2181;
+P3xx = -2182;
+P4xx = -2183;
+P5xx = -2184;
+P6xx = -2185;
+P7xx = -2186;
+P8xx = -2187;
+P9xx = -2188;
 --------------------------
 --     T H E  E N D     --
 --------------------------
@@ -771,6 +860,7 @@ MISC = 50;
 MOUNTS = 100;
 BATTLE_PETS = 101;
 TOYS = 102;
+TITLES = 110;
 RECIPES = 200;
 
 -- Professions
@@ -792,6 +882,7 @@ JEWELCRAFTING = 755;
 JUNKYARD_TINKERING = 2720;
 LEATHERWORKING = 165;
 MINING = 186;
+PROTOFORM_SYNTHESIS = 2819;
 SKINNING = 393;
 TAILORING = 197;
 
@@ -1108,6 +1199,17 @@ end
 isarray = function(t)
 	return type(t) == 'table' and (#t > 0 or next(t) == nil);
 end
+-- Ensures that 't' has a 'groups' field containing the array data of the table
+togroups = function(t)
+	if isarray(t) then
+		local groups = {};
+		for _,group in ipairs(t) do
+			table.insert(groups, group);
+		end
+		t = { ["groups"] = groups };
+	end
+	return t;
+end
 addObject = function(o, t)
 	table.insert(t, o);
 	return t;
@@ -1125,7 +1227,7 @@ end
 applyData = function(data, t)
 	if data and t then
 		for key, value in pairs(data) do
-			if not t[key] then
+			if t[key] == nil then	-- dont' replace existing data
 				t[key] = value;
 			end
 		end
@@ -1143,14 +1245,7 @@ end
 -- Performs sharedData logic but also applies the data to the top-level table
 sharedDataSelf = function(data, t)
 	-- if this is an array, convert to .g container first to prevent merge confusion
-	if isarray(t) then
-		local copy = {};
-		for i=#t,1 do
-			table.insert(copy, 1, t[i]);
-			table.remove(t, i);
-		end
-		t.groups = copy;
-	end
+	t = togroups(t);
 	-- then apply the data to itself
 	applyData(data, t);
 	-- then apply regular sharedData on the group
@@ -1176,14 +1271,7 @@ end
 -- Performs bubbleDown logic but also applies the data to the top-level table
 bubbleDownSelf = function(data, t)
 	-- if this is an array, convert to .g container first to prevent merge confusion
-	if isarray(t) then
-		local copy = {};
-		for i=#t,1 do
-			table.insert(copy, 1, t[i]);
-			table.remove(t, i);
-		end
-		t.groups = copy;
-	end
+	t = togroups(t);
 	-- then apply regular bubbleDown on the group
 	return bubbleDown(data, t);
 end
@@ -1398,7 +1486,25 @@ end
 category = function(id, t)								-- Create a CATEGORY Object.
 	return struct("categoryID", id, t);
 end
-cl = function(id, t)									-- Create a CHARACTER CLASS Object
+cl = function(id, specc, t)									-- Create a CHARACTER CLASS Object
+	-- specc is optional
+	if not t then
+		t = specc;
+	else
+		if specc == FROST or specc == RESTORATION or specc == HOLY or specc == PROTECTION then
+			if id == MAGE then
+				specc = 64;
+			elseif id == SHAMAN then
+				specc = 264;
+			elseif id == PRIEST then
+				specc = 257
+			elseif id == WARRIOR then
+				specc = 73;
+			end
+		end
+		id = id + (specc / 1000 )
+		t = togroups(t)
+	end;
 	return struct("classID", id, t);
 end
 creature = function(id, t)								-- Create a CREATURE Object
@@ -1504,6 +1610,12 @@ map = function(id, t)									-- Create a MAP Object
 	return struct("mapID", id, t);
 end
 m = map;												-- Create a MAP Object (alternative shortcut)
+mark = function(cost, item)								-- Assign a Mark of Honor cost to an item with proper timeline requirements.
+	-- #if AFTER 7.0.3.22248
+	item["cost"] = { { "i", 137642, cost } };	-- Mark of Honor
+	-- #endif
+	return item;
+end
 mission = function(id, t)								-- Create an MISSION Object
 	return struct("missionID", id, t);
 end
@@ -1594,14 +1706,18 @@ root = function(category, g)							-- Create a ROOT CATEGORY Object
 	end
 	return o;
 end
---[[rf = function(id, t)									-- Create a RUNEFORGE LENDGARY Object
-	return struct("runeforgePowerID", id, t);
-]]
 spell = function(id, t)									-- Create a SPELL Object
 	return struct("spellID", id, t);
 end
 sp = spell;												-- Create a SPELL Object (alternative shortcut)
-tier = function(id, t)									-- Create a TIER Object
+tier = function(id, patch, t)							-- Create a TIER Object
+	-- patch is optional
+	if not t then
+		t = patch;
+	else
+		id = id + (patch / 100);
+		t = togroups(t);
+	end;
 	return struct("tierID", id, t);
 end
 title = function(id, t)									-- Create a TITLE Object
@@ -1687,8 +1803,8 @@ crit = function(criteriaID, t)           -- Create an Achievement Criteria Objec
 		if not isarray(t) then
 			-- DO NOT do that lol
 			if t.achievementID then
-				-- print(table.concat({"Do not use AchievementID:",t.achievementID," inside Achievement Criteria:",criteriaID," ==> Use '_quests', '_npcs', or 'cost' to define where/how this Criteria is granted instead of directly nesting it in Source."}))
-				-- error(table.concat({"Do not use AchievementID:",t.achievementID," inside Achievement Criteria:",criteriaID," ==> Use '_quests', '_npcs', or 'cost' to define where/how this Criteria is granted instead of directly nesting it in Source."}))
+				-- print(table.concat({"Do not use AchievementID:",t.achievementID," inside Achievement Criteria:",criteriaID," ==> Use '_quests', '_npcs', 'cost', or 'provider' to define where/how this Criteria is granted instead of directly nesting it in Source."}))
+				-- error(table.concat({"Do not use AchievementID:",t.achievementID," inside Achievement Criteria:",criteriaID," ==> Use '_quests', '_npcs', 'cost', or 'provider' to define where/how this Criteria is granted instead of directly nesting it in Source."}))
 			end
 			if t.questID then
 				error(table.concat({"Do not use QuestID:",t.questID," inside Achievement Criteria:",criteriaID," ==> Use '_quests' to indicate a Criteria granted from completion of a single Quest."}))

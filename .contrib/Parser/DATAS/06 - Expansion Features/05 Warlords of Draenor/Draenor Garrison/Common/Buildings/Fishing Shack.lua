@@ -12,7 +12,7 @@ _.ExpansionFeatures =
 					["g"] = {
 						n(ACHIEVEMENTS, {
 							ach(7274, {  -- Learning From The Best
-								i(86596),	-- Nat's Fishing Chair
+								i(86596),	-- Nat's Fishing Chair (TOY!)
 							}),
 						}),
 						n(QUESTS, {
@@ -249,7 +249,7 @@ _.ExpansionFeatures =
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									n(85715, {	-- Lunarfall Cavedweller
-										i(23720),	-- Riding Turtle
+										i(23720),	-- Riding Turtle (MOUNT!)
 										i(46109),	-- Sea Turtle
 										i(118380, {	-- Hightfish Cap
 											["collectible"] = false,
@@ -267,7 +267,7 @@ _.ExpansionFeatures =
 								["races"] = HORDE_ONLY,
 								["g"] = {
 									n(81171, {	-- Frostdeep Cavedweller
-										i(23720),	-- Riding Turtle
+										i(23720),	-- Riding Turtle (MOUNT!)
 										i(46109),	-- Sea Turtle
 										i(118380, {	-- Hightfish Cap
 											["collectible"] = false,

@@ -701,7 +701,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					i(23809),	-- Schematic: Stabilized Eternium Scope
 					removeclassicphase(ach(882, {	-- Fiery Warhorse's Reins
 						["provider"] = { "i", 30480 },	-- Fiery Warhorse's Reins
-						["f"] = 100,
+						["filterID"] = MOUNTS,
 						-- #if BEFORE WRATH
 						["description"] = "Obtain the Fiery Warhorse's Reins from Attumen the Huntsman in Karazhan.",
 						["OnUpdate"] = [[function(t)
@@ -716,7 +716,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						end]],
 						-- #endif
 					})),
-					i(30480),	-- Fiery Warhorse's Reins (MOUNT!)
+					i(30480),	-- Fiery Warhorse (MOUNT!)
 					i(28504),	-- Steelhawk Crossbow
 					i(28509),	-- Worgen Claw Necklace
 					i(28453),	-- Bracers of the White Stag

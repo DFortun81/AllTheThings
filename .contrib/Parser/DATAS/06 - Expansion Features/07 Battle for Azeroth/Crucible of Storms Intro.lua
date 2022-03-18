@@ -77,7 +77,7 @@ root("ExpansionFeatures", {
 					{ 41.7, 66.7, THE_GREAT_SEAL },
 				},
 				["g"] = {
-					i(168123),	-- Twitching Eyeball
+					i(168123),	-- Twitching Eyeball (TOY!)
 				},
 			}),
 			q(54144, {	-- Orders from Azshara

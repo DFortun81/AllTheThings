@@ -24,14 +24,20 @@ _.Zones =
 							["cr"] = 126334,	-- Jani
 						}),
 						crit(7, {	-- Pa'ku Respected
-							["coord"] = { 71.5, 49.4, DAZARALOR },
+							["coord"] = { 71.5, 49.4, ZULDAZAR },
 							["cr"] = 127377,	-- Pa'ku
 						}),
 						crit(8, {	-- Rezan Respected
-							["coord"] = { 70.8, 29.8, DAZARALOR },
+							["coord"] = { 70.8, 29.8, ZULDAZAR },
 							["cr"] = 124948,	-- Rezan
 						}),
 					}
+				}),
+				ach(13035, {	-- By de Power of de Loa!
+					["altQuests"] = {
+						51178,	-- Hundred Troll Holdout (A)
+						51232,	-- Hundred Troll Holdout (H)
+					},
 				}),
 				ach(12480, {	-- A Bargain of Blood
 					["sourceQuests"] = { 47229 },	-- Bulwark of Torcali
@@ -384,6 +390,38 @@ _.Zones =
 					},
 				}),
 				pvp(ach(12575)),	-- Tour of Duty: Zuldazar
+				ach(12851, {	-- Treasures of Zuldazar
+					crit(1, {	-- Offerings of the Chosen
+						["_quests"] = { 48938 },
+					}),
+					crit(2, {	-- Witch Doctor's Hoard
+						["_quests"] = { 50259 },
+					}),
+					crit(3, {	-- Spoils of Pandaria
+						["_quests"] = { 49936 },
+					}),
+					crit(4, {	-- Gift of the Brokenhearted
+						["_quests"] = { 50582 },
+					}),
+					crit(5, {	-- Warlord's Cache
+						["_quests"] = { 49257 },
+					}),
+					crit(6, {	-- Dazar's Forgotten Chest
+						["_quests"] = { 50707 },
+					}),
+					crit(7, {	-- Da White Shark's Bounty
+						["_quests"] = { 50947 },
+					}),
+					crit(8, {	-- The Exile's Lament
+						["_quests"] = { 50949 },
+					}),
+					crit(9, {	-- Cache of Secrets
+						["_quests"] = { 51338 },
+					}),
+					crit(10, {	-- Riches of Tor'nowa
+						["_quests"] = { 51624 },
+					}),
+				}),
 			}),
 		}),
 	}),

@@ -20,7 +20,7 @@ _.Zones =
 				}),
 				q(2561,  {	-- Druid of the Claw
 					["provider"] = { "n", 7317 },	-- Oben Rageclaw
-					["coord"] = { 41.1, 83.7, TELDRASSIL },
+					["coord"] = { 41.1, 83.7, BANETHIL_BARROW_DEN },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 2541,	-- The Sleeping Druid
 					["g"] = {
@@ -229,7 +229,7 @@ _.Zones =
 				}),
 				q(2541,  {	-- The Sleeping Druid?
 					["provider"] = { "n", 7317 },	-- Oben Rageclaw
-					["coord"] = { 41.1, 83.7, TELDRASSIL },
+					["coord"] = { 41.1, 83.7, BANETHIL_BARROW_DEN },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 476,	-- Gnarlpine Corruption
 				}),

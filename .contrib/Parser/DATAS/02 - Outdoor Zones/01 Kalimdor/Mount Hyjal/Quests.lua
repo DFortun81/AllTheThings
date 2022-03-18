@@ -300,14 +300,6 @@ _.Zones =
 						i(65661),	-- Blue Mini Jouster
 					},
 				}),
-				q(29331, {	-- Elemental Bonds: The Vow -- originally offered in the molten front map but is this also offered in mount hyjal?
-					["g"] = {
-						i(71268),	-- Mantle of Doubt
-						i(71267),	-- Mantle of Desire
-						i(71270),	-- Mantle of Patience
-						i(71269),	-- Mantle of Fury
-					},
-				}),
 				q(25303, {	-- Elementary!
 					["coord"] = { 25.8, 41.6, MOUNT_HYJAL },
 					["provider"] = { "o", 202712 },	-- The Twilight Apocrypha
@@ -664,15 +656,6 @@ _.Zones =
 						i(57287),	-- Gauntlets of Guerilla Fury
 					},
 				}),
-				q(45532, {	-- Mother's Orders
-					["lvl"] = 110,
-					["classes"] = { DRUID },
-					["sourceQuest"]	= 44869,	-- Talon Terror
-					["providers"] = {
-						{ "n", 115802 },	-- Thisalee Crow
-						{ "n", 119982 },	-- Druid of the Talon
-					},
-				}),
 				q(29162, {	-- Nature's Blessing
 					["provider"] = { "n", 52671 },	-- Mylune
 					["lvl"] = 85,
@@ -915,6 +898,7 @@ _.Zones =
 					["sourceQuest"] = 29203,	-- Into the Depths
 				}),
 				q(25352, {	-- Sweeping the Shelf
+					["sourceQuest"] = 25278,	-- Cleaning House
 					["provider"] = { "n", 39433 },	-- Ian Duran
 					["coord"] = { 28.22, 29.74, MOUNT_HYJAL },
 					["races"] = ALLIANCE_ONLY,
@@ -1123,7 +1107,7 @@ _.Zones =
 					["lvl"] = 85,
 					["sourceQuest"] = 29310,	-- The Tipping Point
 					["g"] = {
-						i(71259),	-- Leyara's Locket
+						i(71259),	-- Leyara's Locket (TOY!)
 					},
 				}),
 				q(25464, {	-- The Return of Baron Geddon
@@ -1342,10 +1326,6 @@ _.Zones =
 					["provider"] = { "n", 40578 },	-- Farden Talonshrike
 					["coord"] = { 37.2, 56.1, MOUNT_HYJAL },
 					["sourceQuest"] = 25525,	-- Wave One
-				}),
-				q(29282, {	-- Well Armed -- todo: unknown source quest
-					["provider"] = { "n", 52669 },	-- Matoclaw
-					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 				}),
 				q(29148, {	-- Wings Aflame
 					["provider"] = { "n", 52669 },	-- Matoclaw

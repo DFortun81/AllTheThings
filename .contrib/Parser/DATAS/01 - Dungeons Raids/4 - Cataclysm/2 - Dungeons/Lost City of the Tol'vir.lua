@@ -6,7 +6,7 @@ _.Instances = { tier(CATA_TIER, {
 	inst(69, {	-- Lost City of the Tol'vir
 		["lvl"] = 83,
 		["mapID"] = 277,
-		["coord"] = { 60.53, 64.29, 249 },	-- Lost City of Tol'vir, Uldum
+		["coord"] = { 60.53, 64.29, ULDUM },	-- Lost City of Tol'vir
 		["groups"] = {
 			n(QUESTS, {
 				q(28781, {	-- Targets of Opportunity

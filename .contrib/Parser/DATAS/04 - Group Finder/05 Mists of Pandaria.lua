@@ -105,7 +105,7 @@ _.GroupFinder =
 			--["description"] = "Rewarded for completing a random Mists of Pandaria normal scenario (unknown level bracket).",
 			["timeline"] = {
 				"added 5.3.0.16781",
-				"removed 9.0",	-- no longer available to queue random scenarios post 9.0 squish
+				"removed 9.0.1",	-- no longer available to queue random scenarios post 9.0 squish
 			},
 			["g"] = {
 				i(92821),	-- Bladesnap Breastplate

@@ -79,6 +79,23 @@ _.ExpansionFeatures =
 								{ "n", 91071 },	-- Trader Joseph
 							},
 						}),
+						q(37062, {	-- Tricks of the Trade
+							["races"] = HORDE_ONLY,
+							["providers"] = {	-- @blizzard ANSWER FOR YOUR CRIMES
+								{ "n", 86803 },	-- Fayla Fairfeather
+								{ "n", 87112 },	-- Fayla Fairfeather
+								{ "n", 87113 },	-- Fayla Fairfeather
+								{ "n", 87114 },	-- Fayla Fairfeather
+								{ "n", 87115 },	-- Fayla Fairfeather
+								{ "n", 87116 },	-- Fayla Fairfeather
+								{ "n", 87117 },	-- Fayla Fairfeather
+								{ "n", 87118 },	-- Fayla Fairfeather
+								{ "n", 87119 },	-- Fayla Fairfeather
+								{ "n", 87120 },	-- Fayla Fairfeather
+								{ "n", 87121 },	-- Fayla Fairfeather
+								{ "n", 91070 },	-- Fayla Fairfeather
+							},
+						}),
 					}),
 					n(VENDORS, {
 						n(87015, {	-- Kil'rip <Laughing Skull Quartermaster>

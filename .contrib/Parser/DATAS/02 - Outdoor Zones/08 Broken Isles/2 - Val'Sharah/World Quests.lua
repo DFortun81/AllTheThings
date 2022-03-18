@@ -66,7 +66,9 @@ _.Zones =
 				q(45070),	-- Barrels o' Fun
 				q(42080),	-- Bastion of Bradensbrook
 				q(41961),	-- Black Rook Holdings
-				q(42023),	-- Black Rook Rumble
+				q(42023, {	-- Black Rook Rumble
+					ach(11477),		-- Off the Top Rook
+				}),
 				q(41955),	-- Bloodline of Stone
 				q(42075),	-- Botanical Backlash
 				q(41484, {	-- Brimstone Destroyer
@@ -309,7 +311,10 @@ _.Zones =
 				}),
 				q(41634, {	-- Work Order: Leystone Armguards
 					["requireSkill"] = BLACKSMITHING,
-					["g"] = {
+					["provider"] = { "n", 106901 },	-- Sylvia Hartshorn
+					["lvl"] = 110,
+					["isWorldQuest"] = true,
+					["groups"] = {
 						i(123936),	-- Recipe: Leystone Armguards (Rank 3)
 					},
 				}),

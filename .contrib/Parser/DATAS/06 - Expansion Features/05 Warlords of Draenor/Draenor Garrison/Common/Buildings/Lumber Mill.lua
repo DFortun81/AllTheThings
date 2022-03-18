@@ -73,15 +73,6 @@ _.ExpansionFeatures =
 						}),
 						q(36813, {	-- Subversive Infestation
 							["provider"] = { "n", 84889 },	-- Phylarch the Evergreen
-							["races"] = ALLIANCE_ONLY,
-							["description"] = "This Quest requires a Level 3 Lumber Mill as well as the Follower Phylarch the Green either active or attached to the Lumber Mill.",
-							["g"] = {
-								i(117398),	-- Everbloom Seed Pouch
-							},
-						}),
-						q(36813, {	-- Subversive Infestation
-							["provider"] = { "n", 84889 },	-- Phylarch the Evergreen
-							["races"] = HORDE_ONLY,
 							["description"] = "This Quest requires a Level 3 Lumber Mill as well as the Follower Phylarch the Green either active or attached to the Lumber Mill.",
 							["g"] = {
 								i(117398),	-- Everbloom Seed Pouch
@@ -139,7 +130,7 @@ _.ExpansionFeatures =
 								q(36385, {	-- Legacy of the Ancients
 									["provider"] = { "i", 115467 },	-- Barkskin Tome
 									["g"] = {
-										i(115506),	-- Treessassin's Guise
+										i(115506),	-- Treessassin's Guise (TOY!)
 									},
 								}),
 							},

@@ -80,6 +80,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 				"added 9.1.5",
 			},
 		}),
+		ach(15218),	-- WoW's 18th Anniversary
 		un(REMOVED_FROM_GAME, ach(1292)),		-- Yellow Brewfest Stein
 		un(REMOVED_FROM_GAME, ach(4790)),		-- Zalazane's Fall
 	}),

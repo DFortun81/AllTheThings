@@ -61,7 +61,7 @@ _.Zones =
 					["coord"] = { 46.6, 17.6, WINTERSPRING },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(13086),	-- Reins of the Winterspring Frostsaber (MOUNT!)
+						i(13086),	-- Winterspring Frostsaber (MOUNT!)
 					},
 				}),
 				n(11184, {	-- Wixxrak <Weaponsmith & Gunsmith>

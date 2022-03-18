@@ -7,74 +7,6 @@ _.Zones =
 	m(BROKEN_ISLES, {
 		m(BROKEN_SHORE, {
 			n(PROFESSIONS, {
-				q(46804, {	-- Fashion History and a Philosophy of Style
-					["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
-					["coord"] = { 41.1, 59.3, BROKEN_SHORE },
-					["sourceQuest"] = 47015,	-- Boon of the Nether Disruptor
-					["repeatable"] = true,
-				}),
-				prof(BLACKSMITHING, {
-					q(46696, {	-- The Legend of the Four Hammers
-						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
-						["coord"] = { 41.2, 59.4, BROKEN_SHORE },
-						["sourceQuest"] = 46804,	-- Fashion History and a Philosophy of Style
-						["repeatable"] = true,
-						["requireSkill"] = BLACKSMITHING,
-						["cost"] = { { "i", 147197, 1 }, },	-- 1x Legends of the Four Hammers
-					}),
-					q(46700, {	-- Armor of the Ancients
-						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
-						["coord"] = { 41.2, 59.4, BROKEN_SHORE },
-						["sourceQuest"] = 46804,	-- Fashion History and a Philosophy of Style
-						["repeatable"] = true,
-						["requireSkill"] = BLACKSMITHING,
-						["cost"] = { { "i", 146708, 20 }, },	-- ~20x Ancient Demonsteel Armor
-					}),
-					q(46698, {	-- The Dragonhunter
-						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
-						["coord"] = { 41.2, 59.4, BROKEN_SHORE },
-						["sourceQuest"] = 46696,	-- The Legend of the Four Hammers
-						["repeatable"] = true,
-						["requireSkill"] = BLACKSMITHING,
-						["cost"] = { { "i", 146704, 1 }, },	-- 1x Red-Hot Draconic Slag
-					}),
-					q(46697, {	-- The Godfighter
-						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
-						["coord"] = { 41.2, 59.4, BROKEN_SHORE },
-						["sourceQuest"] = 46696,	-- The Legend of the Four Hammers
-						["repeatable"] = true,
-						["requireSkill"] = BLACKSMITHING,
-						["cost"] = { { "i", 146702, 1 }, },	-- 1x White Lightningsteel
-					}),
-					q(46699, {	-- The Hellslayer
-						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
-						["coord"] = { 41.2, 59.4, BROKEN_SHORE },
-						["sourceQuest"] = 46696,	-- The Legend of the Four Hammers
-						["repeatable"] = true,
-						["requireSkill"] = BLACKSMITHING,
-						["cost"] = { { "i", 146706, 1 }, },	-- 1x Frostveined Shale
-					}),
-					q(46701, {	-- Hammer of Forgotten Heroes
-						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
-						["coord"] = { 41.1, 59.3, BROKEN_SHORE },
-						["sourceQuests"] = {
-							46700,	-- Armor of the Ancients
-							46698,	-- The Dragonhunter
-							46697,	-- The Godfighter
-							46699,	-- The Hellslayer
-						},
-						["repeatable"] = true,
-						["requireSkill"] = BLACKSMITHING,
-						["cost"] = {
-							{ "i", 147207, 1 },	-- 1x Legendary Blacksmithing Supplies
-							{ "i", 147443, 1 },	-- 1x Carrying Case For Hammer of Forgotten Heroes
-						},
-						["g"] = {
-							i(146714),	-- Hammer of Forgotten Heroes
-						},
-					}),
-					i(146667),	-- Rethu's Incessant Courage
-				}),
 				prof(FISHING, {
 					ach(10596, {	-- Bigger Fish to Fry
 						["collectible"] = false,
@@ -145,42 +77,36 @@ _.Zones =
 							}),
 						},
 					}),
-					ach(11725, {	-- Fisherfriend of the Isles
-						["collectible"] = false,
-						["description"] = "The Fishing Masters are on a daily rotation, so only one is up at a time.  The order is:\n\n1. Sha'leth\n2. Impus\n3. Ilyssia of the Waters\n4. Keeper Raynae\n5. Akule Riverhorn\n6. Corbyn\n\nMake sure you're close enough to the Fishing Master to get the |cFFFFD700Something's Fishy|r buff, or you won't be able to fish up the items (the buff may not show up until you dismount).\n\nThe quickest way to reach Best Friend is to fish in a group.\n",
+					faction(2102, {	-- Impus
+						["creatureID"] = 120460,
+						["coord"] = { 33.9, 49.8, BROKEN_SHORE },
+						["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF33.9, 49.8|r on Deadwood Landing.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you receive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
+						["requireSkill"] = FISHING,
 						["g"] = {
-							faction(2102, {	-- Impus
-								["creatureID"] = 120460,
-								["coord"] = { 33.9, 49.8, BROKEN_SHORE },
-								["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF33.9, 49.8|r on Deadwood Landing.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you receive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-								["requireSkill"] = FISHING,
-								["g"] = {
-									i(146963, {	-- Desecrated Seaweed
-										-- extra info for the item can go here
-									}),
-									i(147312, {	-- Demon Noggin
-										["cost"] = { { "i", 146963, 100 } },	-- 100x Desecrated Seaweed
-									}),
-									i(152554, {	-- Desecrated Seaweed Shirt
-										["cost"] = { { "i", 146963, 50 } },	-- 50x Desecrated Seaweed
-									}),
-									i(133721, {	-- Message in a Bottle
-										["cost"] = { { "i", 146963, 25 } },	-- 25x Desecrated Seaweed
-										-- ["description"] = "I hope that someone gets my...\nI hope that someone gets my...\nMESSAGE IN A BOOOOTTTLE, yeah.",
-										-- ["g"] = {
-											-- i(133722),	-- Axefish Lure
-										-- },
-									}),
-									i(133723, {	-- Stunned, Angry Shark
-										["cost"] = { { "i", 146963, 25 } },	-- 25x Desecrated Seaweed
-									}),
-									i(133724, {	-- Decayed Whale Blubber
-										["cost"] = { { "i", 146963, 25 } },	-- 25x Desecrated Seaweed
-									}),
-									i(124112, {	-- Black Barracuda
-										["cost"] = { { "i", 146963, 10 } },	-- 10x Desecrated Seaweed
-									}),
-								},
+							i(146963, {	-- Desecrated Seaweed
+								-- extra info for the item can go here
+							}),
+							i(147312, {	-- Crate of Bobbers: Demon Noggin (TOY!)
+								["cost"] = { { "i", 146963, 100 } },	-- 100x Desecrated Seaweed
+							}),
+							i(152554, {	-- Desecrated Seaweed Shirt
+								["cost"] = { { "i", 146963, 50 } },	-- 50x Desecrated Seaweed
+							}),
+							i(133721, {	-- Message in a Bottle
+								["cost"] = { { "i", 146963, 25 } },	-- 25x Desecrated Seaweed
+								-- ["description"] = "I hope that someone gets my...\nI hope that someone gets my...\nMESSAGE IN A BOOOOTTTLE, yeah.",
+								-- ["g"] = {
+									-- i(133722),	-- Axefish Lure
+								-- },
+							}),
+							i(133723, {	-- Stunned, Angry Shark
+								["cost"] = { { "i", 146963, 25 } },	-- 25x Desecrated Seaweed
+							}),
+							i(133724, {	-- Decayed Whale Blubber
+								["cost"] = { { "i", 146963, 25 } },	-- 25x Desecrated Seaweed
+							}),
+							i(124112, {	-- Black Barracuda
+								["cost"] = { { "i", 146963, 10 } },	-- 10x Desecrated Seaweed
 							}),
 						},
 					}),

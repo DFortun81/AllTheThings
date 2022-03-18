@@ -39,7 +39,7 @@ _.Zones =
 				n(66900, {	-- Huggalon the Heart Watcher
 					["coord"] = { 37.2, 57.6, TOWNLONG_STEPPES },
 					["g"] = {
-						i(90067),	-- B. F. F. Necklace
+						i(90067),	-- B. F. F. Necklace (TOY!)
 					},
 				}),
 				n(50355, {	-- Kah'tir

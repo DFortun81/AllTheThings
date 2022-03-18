@@ -93,10 +93,7 @@ _.Zones =
 					["sourceQuest"] = 38213,	-- Get a Clue
 					["g"] = {
 						i(124557, {	-- Baleful Girdle
-							i(124593),  -- Axeclaw Belt
-							i(124592),	-- Bladefang Belt
-							i(124594),	-- Felbane Girdle
-							i(124591),	-- Felcast Cord
+							["sym"] = { { "fill" } },
 						}),
 					},
 				}),
@@ -221,18 +218,6 @@ _.Zones =
 					["coord"] = { 59.8, 47.5, TANAAN_JUNGLE },
 					["races"] = HORDE_ONLY,
 				}),
-				o(240317, {	-- Iskar's Tome of Shadows
-					["g"] = {
-						q(38223, {	-- Dark Ascension
-							i(124557, {	-- Baleful Girdle
-								i(124593),	-- Axeclaw Belt
-								i(124592),	-- Bladefang Belt
-								i(124594),	-- Felbane Girdle
-								i(124591),	-- Felcast Cord
-							}),
-						}),
-					},
-				}),
 				q(39176, {	-- Mastery Of Taladite
 					["requireSkill"] = JEWELCRAFTING,
 					["provider"] = { "n", 94686 },	-- Sun-Sage Chakkis
@@ -352,10 +337,7 @@ _.Zones =
 					["g"] = {
 						i(128225),	-- Empowered Apexis Fragment
 						i(124551, {	-- Baleful Tunic
-							i(124568),	-- Axeclaw Chestguard
-							i(124567),	-- Bladefang Chestguard
-							i(124569),	-- Felbane Breastplate
-							i(124570),	-- Felcast Robes
+							["sym"] = { { "fill" } },
 						}),
 					},
 				}),
@@ -366,10 +348,7 @@ _.Zones =
 					["g"] = {
 						i(128225),	-- Empowered Apexis Fragment
 						i(124551, {	-- Baleful Tunic
-							i(124568),	-- Axeclaw Chestguard
-							i(124567),	-- Bladefang Chestguard
-							i(124569),	-- Felbane Breastplate
-							i(124570),	-- Felcast Robes
+							["sym"] = { { "fill" } },
 						}),
 					},
 				}),
@@ -377,10 +356,7 @@ _.Zones =
 					["provider"] = { "n", 91324 },	-- Braknoth
 					["g"] = {
 						i(124553, {	-- Baleful Gauntlets
-							i(124577),	-- Axeclaw Gauntlets
-							i(124576),	-- Bladefang Gauntlets
-							i(124578),	-- Felbane Gauntlets
-							i(124575),	-- Felcast Gloves
+							["sym"] = { { "fill" } },
 						}),
 					},
 				}),

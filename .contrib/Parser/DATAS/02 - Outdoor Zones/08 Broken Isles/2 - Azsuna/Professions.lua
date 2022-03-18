@@ -7,26 +7,6 @@ _.Zones =
 	m(BROKEN_ISLES, {
 		m(AZSUNA, {
 			n(PROFESSIONS, {
-				prof(ARCHAEOLOGY, {
-					q(41162, {	-- And Into the Fel Fire
-						["isWeekly"] = true,
-					}),
-					q(41163, {	-- The Apocalypse Bringer
-						["isWeekly"] = true,
-						["g"] = {
-							i(136922),	-- Wyrmy Tunkins (PET!)
-						},
-					}),
-					q(41185, {	-- The Keys to Success
-						["isWeekly"] = true,
-						["g"] = {
-							i(131744),	-- Key to Nar'thalas Academy
-						},
-					}),
-					q(41184, {	-- Tried and True
-						["isWeekly"] = true,
-					}),
-				}),
 				prof(FISHING, {
 					ach(10596, {	-- Bigger Fish to Fry
 						["collectible"] = false,
@@ -152,98 +132,66 @@ _.Zones =
 							}),
 						},
 					}),
-					ach(11725, {	-- Fisherfriend of the Isles
-						["collectible"] = false,
-						["description"] = "The Fishing Masters are on a daily rotation, so only one is up at a time.  The order is:\n\n1. Sha'leth\n2. Impus\n3. Ilyssia of the Waters\n4. Keeper Raynae\n5. Akule Riverhorn\n6. Corbyn\n\nMake sure you're close enough to the Fishing Master to get the |cFFFFD700Something's Fishy|r buff, or you won't be able to fish up the items (the buff may not show up until you dismount).\n\nThe quickest way to reach Best Friend is to fish in a group.\n",
+					faction(2097, {	-- Ilyssia of the Waters
+						["creatureID"] = 120266,
+						["coord"] = { 43.2, 40.6, AZSUNA },
+						["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF43.2, 40.6|r north of Illidari Stand.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
+						["requireSkill"] = FISHING,
 						["g"] = {
-							faction(2097, {	-- Ilyssia of the Waters
-								["creatureID"] = 120266,
-								["coord"] = { 43.2, 40.6, AZSUNA },
-								["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF43.2, 40.6|r north of Illidari Stand.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-								["requireSkill"] = FISHING,
-								["g"] = {
-									i(146848, {	-- Fragmented Enchantment
-										-- extra info for the item can go here
-									}),
-									i(147308, {	-- Enchanted Bobber
-										["cost"] = { { "i", 146848, 100 } },	-- 100x Fragmented Enchantment
-									}),
-									i(152555, {	-- Ghost Shark
-										["cost"] = { { "i", 146848, 50 } },	-- 50x Fragmented Enchantment
-									}),
-									i(133703, {	-- Pearlescent Conch
-										["cost"] = { { "i", 146848, 25 } },	-- 25x Fragmented Enchantment
-										-- ["description"] = "This item will allow you to catch the Rare fish Nar'thalas Hermit in Azsuna.",
-										-- ["g"] = {
-											-- {
-												-- ["achievementID"] = 10596,	-- Bigger Fish to Fry
-												-- ["criteriaID"] = 11,		-- Nar'thalas Hermit (Criteria)
-												-- ["itemID"] = 133726,		-- Nar'thalas Hermit (Item)
-											-- },
-											-- {
-												-- ["achievementID"] = 10596,	-- Bigger Fish to Fry
-												-- ["criteriaID"] = 11,		-- Nar'thalas Hermit (Criteria)
-												-- ["itemID"] = 139653,		-- Nar'thalas Hermit (Item)
-											-- },
-										-- },
-									}),
-									i(133704, {	-- Rusty Queenfish Brooch
-										["cost"] = { { "i", 146848, 25 } },	-- 25x Fragmented Enchantment
-										-- ["description"] = "This item will give you a buff that will allow you to see and fish from Ghostly Queenfish schools.",
-										-- ["g"] = {
-											-- spell(201807, {	-- Rusty Queenfish Brooch (Buff)
-												-- {
-													-- ["achievementID"] = 10596,	-- Bigger Fish to Fry
-													-- ["criteriaID"] = 6,			-- Ghostly Queenfish (Criteria)
-													-- ["itemID"] = 133727,		-- Ghostly Queenfish (Item)
-												-- },
-												-- {
-													-- ["achievementID"] = 10596,	-- Bigger Fish to Fry
-													-- ["criteriaID"] = 6,			-- Ghostly Queenfish (Criteria)
-													-- ["itemID"] = 139654,		-- Ghostly Queenfish (Item)
-												-- },
-											-- }),
-										-- },
-									}),
-									i(133701, {	-- Skrog Toenail
-										["cost"] = { { "i", 146848, 25 } },	-- 25x Fragmented Enchantment
-									}),
-									i(124107, {	-- Cursed Queenfish
-										["cost"] = { { "i", 146848, 10 } },	-- 25x Fragmented Enchantment
-									}),
-								},
+							i(146848, {	-- Fragmented Enchantment
+								-- extra info for the item can go here
 							}),
-						},
-					}),
-					n(ARTIFACTS, {
-						["description"] = "Prerequisites:\n\n  Be level 45.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry.\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
-						["lvl"] = { 45 },
-						["g"] = {
-							q(40960, {	-- Luminous Pearl
-								["provider"] = { "i", 133887 },	-- Luminous Pearl
+							i(147308, {	-- Crate of Bobbers: Enchanted Bobber (TOY!)
+								["cost"] = { { "i", 146848, 100 } },	-- 100x Fragmented Enchantment
+							}),
+							i(152555, {	-- Ghost Shark
+								["cost"] = { { "i", 146848, 50 } },	-- 50x Fragmented Enchantment
+							}),
+							i(133703, {	-- Pearlescent Conch
+								["cost"] = { { "i", 146848, 25 } },	-- 25x Fragmented Enchantment
+								-- ["description"] = "This item will allow you to catch the Rare fish Nar'thalas Hermit in Azsuna.",
+								-- ["g"] = {
+									-- {
+										-- ["achievementID"] = 10596,	-- Bigger Fish to Fry
+										-- ["criteriaID"] = 11,		-- Nar'thalas Hermit (Criteria)
+										-- ["itemID"] = 133726,		-- Nar'thalas Hermit (Item)
+									-- },
+									-- {
+										-- ["achievementID"] = 10596,	-- Bigger Fish to Fry
+										-- ["criteriaID"] = 11,		-- Nar'thalas Hermit (Criteria)
+										-- ["itemID"] = 139653,		-- Nar'thalas Hermit (Item)
+									-- },
+								-- },
+							}),
+							i(133704, {	-- Rusty Queenfish Brooch
+								["cost"] = { { "i", 146848, 25 } },	-- 25x Fragmented Enchantment
+								-- ["description"] = "This item will give you a buff that will allow you to see and fish from Ghostly Queenfish schools.",
+								-- ["g"] = {
+									-- spell(201807, {	-- Rusty Queenfish Brooch (Buff)
+										-- {
+											-- ["achievementID"] = 10596,	-- Bigger Fish to Fry
+											-- ["criteriaID"] = 6,			-- Ghostly Queenfish (Criteria)
+											-- ["itemID"] = 133727,		-- Ghostly Queenfish (Item)
+										-- },
+										-- {
+											-- ["achievementID"] = 10596,	-- Bigger Fish to Fry
+											-- ["criteriaID"] = 6,			-- Ghostly Queenfish (Criteria)
+											-- ["itemID"] = 139654,		-- Ghostly Queenfish (Item)
+										-- },
+									-- }),
+								-- },
+							}),
+							i(133701, {	-- Skrog Toenail
+								["cost"] = { { "i", 146848, 25 } },	-- 25x Fragmented Enchantment
+							}),
+							i(124107, {	-- Cursed Queenfish
+								["cost"] = { { "i", 146848, 10 } },	-- 25x Fragmented Enchantment
 							}),
 						},
 					}),
 					i(137695),	-- Schematic: Reaves Module: Wormhole Generator Mode
 					i(137775, {	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 3]
 						["description"] = "I got it after about ~20-30 min of fishing from a Cursed Queenfish pool in the lake near Narthalas Academy. No legendary pole equipped or any special lures.",
-					}),
-				}),
-				prof(SKINNING, {
-					q(40145, {	-- Under Down
-						["sourceQuests"] = { 40144 },	-- Glielle
-						["requireSkill"] = SKINNING,
-						["coord"] = { 47.0, 45.2, AZSUNA },
-						["provider"] = { "n", 98791 },	-- Glielle
-						["g"] = {
-							recipe(194165),	-- Skinning Technique: Stormscale (Rank 2)
-						},
-					}),
-					q(40143, {	-- Unfinished Treatise on the Properties of Stormscale
-						["sourceQuests"] = { 40142 },	-- The Core of the Stormscale
-						["requireSkill"] = SKINNING,
-						["description"] = "The item that starts this quest can be skinned from any scaled creature found across the Broken Isles.",
-						["itemID"] = 129865,	-- Unfinished Treatise on the Properties of Stormscale
 					}),
 				}),
 			}),

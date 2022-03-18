@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root("Instances", tier(CLASSIC_TIER, 
+root("Instances", tier(CLASSIC_TIER,
 -- #if BEFORE WRATH
 applyclassicphase(PHASE_SIX,
 -- #endif
@@ -1707,7 +1707,7 @@ applyclassicphase(PHASE_SIX,
 					n(COMMON_BOSS_DROPS, {
 						-- Helms
 						-- Thaddius Only
-						
+
 						-- Shoulders
 						i(22354, {	-- Desecrated Pauldrons
 							["crs"] = {
@@ -1730,10 +1730,10 @@ applyclassicphase(PHASE_SIX,
 								15932,	-- Gluth
 							},
 						}),
-						
+
 						-- Chest
 						-- Four Horsemen Only
-						
+
 						-- Bracers
 						i(22369, {	-- Desecrated Bindings
 							["crs"] = {
@@ -1756,10 +1756,10 @@ applyclassicphase(PHASE_SIX,
 								15932,	-- Gluth
 							},
 						}),
-						
+
 						-- Gloves
 						-- Maexxna Only
-						
+
 						-- Belts
 						i(22370, {	-- Desecrated Belt
 							["crs"] = {
@@ -1782,10 +1782,10 @@ applyclassicphase(PHASE_SIX,
 								15932,	-- Gluth
 							},
 						}),
-						
+
 						-- Legs
 						-- Loatheb Only
-						
+
 						-- Boots
 						i(22365, {	-- Desecrated Boots
 							["crs"] = {
@@ -1808,7 +1808,7 @@ applyclassicphase(PHASE_SIX,
 								15932,	-- Gluth
 							},
 						}),
-						
+
 						i(22726, {	-- Splinter of Atiesh
 							["classes"] = { PRIEST, MAGE, WARLOCK, DRUID },
 							["crs"] = {
@@ -1893,6 +1893,7 @@ applyclassicphase(PHASE_SIX,
 						["groups"] = {
 							n(16365, {	-- Master Craftsman Omarion <Brotherhood of the Light>
 								["lore"] = "Omarion is an artisan blacksmithing, leatherworking, and tailoring craftsman. Unfortunately he was gravely injured inside Naxxramas and doesn't have much time left. He is willing to teach other master crafters his knowledge so it doesn't die with him.\n\nOmarion can teach the following plans and patterns to master craftsmen who have the required reputation with the Argent Dawn.",
+								["timeline"] = { "added 1.11.1.7272" },
 								["groups"] = {
 									i(22719, {	-- Omarion's Handbook
 										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.

@@ -442,7 +442,7 @@ root("Zones", {
 						crit(8, {	-- Killsaw
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
-						i(167931),	-- Mechagonian Sawblades
+						i(167931),	-- Mechagonian Sawblades (TOY!)
 					},
 				}),
 				n(151933, {	-- Malfunctioning Beastbot
@@ -902,7 +902,7 @@ root("Zones", {
 						crit(32, {	-- The Rusty Prince
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
-						i(169347),	-- Judgment of Mechagon
+						i(169347),	-- Judgment of Mechagon (TOY!)
 						i(170467),	-- Whirring Chainblade
 					},
 				}),

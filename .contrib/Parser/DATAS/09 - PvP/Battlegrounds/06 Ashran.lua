@@ -837,10 +837,10 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 								{ "g", 45000000 },		-- 4500g
 							},
 						}),
-						i(115501, {	-- Kowalski's Music Box
+						i(115501, {	-- Kowalski's Music Box (TOY!)
 							["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
 						}),
-						i(116396, {	-- LeBlanc's Recorder (A)
+						i(116396, {	-- LeBlanc's Recorder (A) (TOY!)
 							["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
 						}),
 						i(114126),	-- Disposable Pocket Flying Machine
@@ -867,10 +867,10 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 								{ "g", 45000000 },		-- 4500g
 							},
 						}),
-						i(115501, {	-- Kowalski's Music Box
+						i(115501, {	-- Kowalski's Music Box (TOY!)
 							["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
 						}),
-						i(115505, {	-- LeBlanc's Recorder (H)
+						i(115505, {	-- LeBlanc's Recorder (H) (TOY!)
 							["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
 						}),
 						i(115500),	-- Disposable Pocket Flying Machine

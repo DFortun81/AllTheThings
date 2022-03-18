@@ -14,12 +14,10 @@ _.Instances = { tier(LEGION_TIER, {
 			n(ARTIFACTS, {
 				i(139574, {	-- Coil of the Drowned Queen (shaman appearance)
 					["description"] = "Drops from the first two bosses on any difficulty.",
+					-- ["sourceQuest"] = , TODO
 					["crs"] = {
 						91784,	-- Warlord Parjesh
 						91789,	-- Lady Hatecoil
-					},
-					["g"] = {
-						artifact(926),	-- Resto Shaman Hidden Artifact Skin
 					},
 				}),
 			}),

@@ -7,55 +7,6 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {
 		m(UNDERCITY, {
 			n(PROFESSIONS, {
-				prof(ALCHEMY, {
-					n(QUESTS, {
-						q(29481, {	-- Elixir Master
-							["provider"] = { "n", 4611 },	-- Doctor Herbert Halsey
-							["coord"] = { 47.6, 72.8, UNDERCITY },
-							["description"] = "Requires 300 Classic Alchemy.",
-							["requireSkill"] = ALCHEMY,
-							["repeatable"] = true,
-							--[[["altQuests"] = {
-								29481,	-- Elixir Master
-								29067,	-- Potion Master
-								29482,	-- Transmutation Master
-								10902,	-- Elixir Master (Removed)
-								10897,	-- Potion Master (Removed)
-								10899,	-- Transmutation Master (Removed)
-							},]]
-						}),
-						q(29067, {	-- Potion Master
-							["provider"] = { "n", 4611 },	-- Doctor Herbert Halsey
-							["coord"] = { 47.6, 72.8, UNDERCITY },
-							["description"] = "Requires 300 Classic Alchemy.",
-							["requireSkill"] = ALCHEMY,
-							["repeatable"] = true,
-							--[[["altQuests"] = {
-								29481,	-- Elixir Master
-								29067,	-- Potion Master
-								29482,	-- Transmutation Master
-								10902,	-- Elixir Master (Removed)
-								10897,	-- Potion Master (Removed)
-								10899,	-- Transmutation Master (Removed)
-							},]]
-						}),
-						q(29482, {	-- Transmutation Master
-							["provider"] = { "n", 4611 },	-- Doctor Herbert Halsey
-							["coord"] = { 47.6, 72.8, UNDERCITY },
-							["description"] = "Requires 300 Classic Alchemy.",
-							["requireSkill"] = ALCHEMY,
-							["repeatable"] = true,
-							--[[["altQuests"] = {
-								29481,	-- Elixir Master
-								29067,	-- Potion Master
-								29482,	-- Transmutation Master
-								10902,	-- Elixir Master (Removed)
-								10897,	-- Potion Master (Removed)
-								10899,	-- Transmutation Master (Removed)
-							},]]
-						}),
-					}),
-				}),
 				prof(FISHING, {
 					n(ACHIEVEMENTS, {
 						ach(5850, {	-- Fish or Cut Bait: Undercity

@@ -2,8 +2,7 @@
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
 
-_.ExpansionFeatures =
-{
+root("ExpansionFeatures", {
 	tier(SL_TIER, {
 		m(1627, {	-- Torghast
 			n(176761, {	-- Adamant Vault
@@ -18,7 +17,7 @@ _.ExpansionFeatures =
 						i(187091),	-- Gilded Twin-Scythe Shoulders
 						i(187876),	-- Saurolisk Hatchling Soul (AV)
 						i(185049),	-- Saurolisk Soul (AV)
-						i(187417),	-- Adamant Vaults Cell
+						i(187417),	-- Adamant Vaults Cell (TOY!)
 						i(187081),	-- Blackflame Skull Crescent
 						i(186549),	-- Gilded Darknight (PET!)
 						i(187094),	-- Gilded Spike Fortresses
@@ -28,7 +27,7 @@ _.ExpansionFeatures =
 					},
 				}),
 			}),
-			n(ZONE_DROPS, {
+			n(COMMON_BOSS_DROPS, {
 			--	Epics
 				i(187096, {	-- Adamant Vault Shoulderplates
 					["crs"] = {
@@ -46,6 +45,7 @@ _.ExpansionFeatures =
 				i(187030, {	-- Deathsworn Shoulderguards
 					["crs"] = {
 						151329,	-- Warden Skoldus
+						153174,	-- Watchers of Death
 					},
 				}),
 				i(187039, {	-- Malleare's Stygian Pauldrons
@@ -208,6 +208,31 @@ _.ExpansionFeatures =
 					},
 				}),
 			}),
+			-- 9.2 Additions
+			n(COMMON_BOSS_DROPS, sharedData({["timeline"] = { "added 9.2.0" },},{
+				i(188688, {	-- Burnished Eye Crescent
+					["crs"] = {
+						155945,	-- Gherus the Chained
+					},
+				}),
+				i(188687, {	-- Burnished Skull Crescent
+					["crs"] = {
+						153382,	-- Maw of the Maw
+					},
+				}),
+				i(188686, {	-- Burnished Soul Restraint
+					["crs"] = {
+						171422,	-- Arch-Suppressor Laguas
+						155945,	-- Gherus the Chained
+					},
+				}),
+				i(188700, {	-- Sturdy Silver Mawrat Harness (MOUNT!)
+					["description"] = "Only from Layer 13 or higher",
+					["crs"] = {
+						171422,	-- Arch-Suppressor Laguas
+					},
+				}),
+			})),
 		}),
 	}),
-};
+});

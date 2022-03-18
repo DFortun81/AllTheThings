@@ -43,9 +43,9 @@ _.Zones =
 					["provider"] = { "n", 4730 },	-- Lelanai
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(18766),	-- Reins of the Swift Frostsaber
-						i(18767),	-- Reins of the Swift Mistsaber
-						i(18902),	-- Reins of the Swift Stormsaber
+						i(18766),	-- Swift Frostsaber (MOUNT!)
+						i(18767),	-- Swift Mistsaber (MOUNT!)
+						i(18902),	-- Swift Stormsaber (MOUNT!)
 					},
 				}),
 				q(32664, {	-- Learn to Ride
@@ -77,19 +77,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(6973)),	-- Fire Hardened Leggings
 					},
 				}),
-				q(28287, {	-- Meet with Farseer Umbrua
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 52292 },	-- Droha
-					["classes"] = { SHAMAN },
-					["coord"] = { 43.8, 78.8, DARNASSUS },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(28289, {	-- Moonglade Calls
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 4217 },	-- Mathrengyl Bearwalker
-					["classes"] = { DRUID },
-					["coord"] = { 40.4, 27.6, DARNASSUS },
-				}),
 				q(26756, {	-- Nessa Shadowsong
 					["provider"] = { "n", 4241 },	-- Mydrannul
 					["coord"] = { 64.6, 53.0, DARNASSUS },
@@ -102,9 +89,9 @@ _.Zones =
 					["provider"] = { "n", 4730 },	-- Lelanai
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(18766),	-- Reins of the Swift Frostsaber
-						i(18767),	-- Reins of the Swift Mistsaber
-						i(18902),	-- Reins of the Swift Stormsaber
+						i(18766),	-- Swift Frostsaber (MOUNT!)
+						i(18767),	-- Swift Mistsaber (MOUNT!)
+						i(18902),	-- Swift Stormsaber (MOUNT!)
 					},
 				}),
 				q(6343,  {	-- Return to Nyoma

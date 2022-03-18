@@ -657,7 +657,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["coord"] = { 38.9, 66.0, REVENDRETH },
 			}),
 			q(58725, {	-- Sinkeeper
-				["customCollect"] = "SL_COV_VEN",	-- Venthyr
 				["sourceQuests"] = { 58717 },	-- Bell of Remembrance
 				["provider"] = { "n", 161418 },	-- Sinkeeper Mourana
 				["coord"] = { 73.2, 34.0, REVENDRETH },

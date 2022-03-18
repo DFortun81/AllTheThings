@@ -52,7 +52,7 @@ root("PetBattles", petbattle({
 			},
 			["g"] = {
 				ach(14020, {	-- Pet Battle Challenge: Blackrock Depths
-					i(174830),	-- Shadowy Disguise
+					i(174830),	-- Shadowy Disguise (TOY!)
 				}),
 				q(58455, {	-- Shadowy Showdown (A)
 					["provider"] = { "n", 147645 },	-- Tizzy Gearjolt

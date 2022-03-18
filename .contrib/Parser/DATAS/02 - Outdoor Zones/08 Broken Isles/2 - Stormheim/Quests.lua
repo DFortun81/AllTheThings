@@ -460,7 +460,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["coord"] = { 33.3, 31.4, STORMHEIM },
 					["g"] = {
-						i(129093),	-- Ravenbear Disguise
+						i(129093),	-- Ravenbear Disguise (TOY!)
 					},
 				}),
 				q(43596, {	-- Maw of Souls: Piercing the Mists
@@ -693,12 +693,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 33.6, 50.8, STORMHEIM },
 					["provider"] = { "n", 90783 },	-- Mishka
-				}),
-				q(43349, {	-- The Aegis of Aggramar
-					i(130016),	-- Valor-Bound Legplates
-					i(129989),	-- Valor-Bound Trousers
-					i(129997),	-- Valor-Bound Legwraps
-					i(130005),	-- Valor-Bound Greaves
 				}),
 				q(38210, {	-- The Ancient Trials (Alliance)
 					["sourceQuests"] = { 38060 },	-- Signal Boost
@@ -1105,14 +1099,10 @@ _.Zones =
 				q(39947),	-- Not So Complex?
 				q(41164),	-- One Step Closer
 				q(41161),	-- Out of the Frying Pan
-				q(41159),	-- Process of Elimination
 				q(42399),	-- Ready to Work
 				q(47052),	-- Retribution: Fate of the Tideskorn
 				q(40603),	-- Seeking the Valkyra
-				q(40146),	-- Seymour and Agnes
 				q(40404),	-- Show Legion Portal
-				q(40131),	-- Stonehide Leather Sample
-				q(41163),	-- The Apocalypse Bringer
 				q(40541),	-- The Charge Within
 				q(41802),	-- The Gates of Valor
 				q(42193),	-- The Gjallarhorn
@@ -1123,7 +1113,6 @@ _.Zones =
 				q(38685),	-- The Nameless King
 				q(41170),	-- The Relic Renewed
 				q(45406),	-- The Storm's Fury
-				q(40143),	-- Unfinished Treatise on the Properties of Stormscale
 				q(38642),	-- Vrykul Longboat
 				q(38472),	-- Whitewater Typhoon
 				q(38626),	-- Worg Pack

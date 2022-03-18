@@ -130,7 +130,7 @@ root("Zones", m(KALIMDOR, {
 					["cr"] = 12577,	-- Jarrodenus <Hippogryph Master>
 					["coord"] = { 11.8, 77.6, AZSHARA },
 					["races"] = ALLIANCE_ONLY,
-					["timeline"] = { "added 1.11.1.10772" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 				}),
 				fp(683, {	-- Valormok, Azshara
 					["cr"] = 8610,	-- Kroum <Wind Rider Master>
@@ -223,14 +223,6 @@ root("Zones", m(KALIMDOR, {
 					["provider"] = { "n", 36596 },	-- Andorel Sunsworn
 					["coord"] = { 42.6, 23.7, AZSHARA },
 					["races"] = HORDE_ONLY,
-				}),
-				q(3564, {	-- Andron's Payment to Jediga
-					["qg"] = 6522,	-- Andron Gant
-					["sourceQuest"] = 3542,	-- Delivery to Andron Gant
-					["coord"] = { 54.6, 75.6, UNDERCITY },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 45,
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 				}),
 				q(14468, {	-- Another Warm Body
 					["sourceQuests"] = {
@@ -466,7 +458,7 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 66.8, 20.5, AZSHARA },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(53057),	-- Faded Wizard Hat
+						i(53057),	-- Faded Wizard Hat (TOY!)
 					},
 				}),
 				q(24448, {	-- Field Promotion
@@ -1206,6 +1198,7 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 29.6, 40.6, AZSHARA },
 					["classes"] = { MAGE },
 					["lvl"] = 50,
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 				}),
 				q(14383, {	-- The Terrible Tinkers of the Ruined Reaches
 					["sourceQuests"] = { 14377 },	-- Befriending Giants

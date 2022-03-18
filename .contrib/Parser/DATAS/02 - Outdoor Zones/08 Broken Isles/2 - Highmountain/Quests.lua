@@ -1002,7 +1002,6 @@ _.Zones =
 				q(47073),	-- Delivering Lost Knowledge
 				q(40414),	-- Devouring Darkness
 				q(47020),	-- Discipline: Rumblings Near Feltotem
-				q(41191),	-- Drogbar Deception
 				q(40186),	-- Drogbar Durability
 				q(39576),	-- Echoes of Deathwing
 				q(39762),	-- Feltotem Warlock
@@ -1013,12 +1012,10 @@ _.Zones =
 				q(40347),	-- Gurbog da Basher
 				q(39436),	-- Haglands Treasure
 				q(39827),	-- Haglands Treasure
-				q(40134),	-- Highmountain Hides
 				q(42233),	-- Highmountain Tribes
 				q(41186),	-- History of Highmountain
 				q(45572),	-- Holding Our Ground
 				q(42286),	-- Houndmaster Stroxis
-				q(40136),	-- Immaculate Stonehide Leather
 				q(42376),	-- Inquisitor Tivos
 				q(43815),	-- Karthax
 				q(39989),	-- Keepers of the Hammer
@@ -1045,7 +1042,6 @@ _.Zones =
 				q(39465),	-- Skywhisker Taskmaster
 				q(40175),	-- Sleeping Bear
 				q(40681),	-- Snarf
-				q(40141),	-- Stormscale Sample
 				q(46743),	-- Supplies From Highmountain
 				q(41187),	-- Surveying Student
 				q(40184),	-- Tauren Tanning
@@ -1081,7 +1077,6 @@ _.HiddenQuestTriggers = {
 	--q(40473),	-- Tracking Quest - Highmountain Treasure Chest
 	--q(44352),	-- Tracking Quest - Highmountain Treasure Chest (UNderwater Cave) (All Chests seems to have a QuestID attached already...)
 	q(43957),	-- Jade Darkhaven
-	q(39991),	-- Blessing of Cenarius (Seems to complete with 39988 but actually never made it out of beta according wowhead)
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {

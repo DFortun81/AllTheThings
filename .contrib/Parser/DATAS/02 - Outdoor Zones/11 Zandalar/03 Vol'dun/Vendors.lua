@@ -128,7 +128,7 @@ _.Zones =
 						i(160548, {	-- Tabard of the Voldunai
 							["cost"] = 6250000,	-- 625g
 						}),
-						i(163565, {	-- Vulpera Scrapper's Armor
+						i(163565, {	-- Vulpera Scrapper's Armor (TOY!)
 							["u"] = NEVER_IMPLEMENTED, -- (Was in beta, not there on 9/16/18)
 						}),
 						i(165021, {	-- Words of Akunda (TOY!)
@@ -144,7 +144,7 @@ _.Zones =
 						i(163511, {	-- Barnacled Hermit Crab
 							["cost"] = { { "i", 163036, 50 }, },	-- 50x Polished Pet Charm
 						}),
-						i(159753, {	-- Desert Flute
+						i(159753, {	-- Desert Flute (TOY!)
 							["cost"] = 11000000,	-- 1,100g
 						}),
 						i(163509, {	-- Freshwater Pincher

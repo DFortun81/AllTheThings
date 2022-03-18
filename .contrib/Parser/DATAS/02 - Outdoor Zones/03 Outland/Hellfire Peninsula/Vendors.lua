@@ -134,13 +134,13 @@ _.Zones =
 					["timeline"] = { "added 3.2.0.10192" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(25475),	-- Blue Wind Rider Mount
-						i(25476),	-- Green Wind Rider Mount
-						i(25531),	-- Swift Green Wind Rider Mount
-						i(25533),	-- Swift Purple Wind Rider Mount
-						i(25477),	-- Swift Red Wind Rider Mount
-						i(25532),	-- Swift Yellow Wind Rider Mount
-						i(25474),	-- Tawny Wind Rider Mount
+						i(25475),	-- Blue Wind Rider (MOUNT!)
+						i(25476),	-- Green Wind Rider (MOUNT!)
+						i(25531),	-- Swift Green Wind Rider (MOUNT!)
+						i(25533),	-- Swift Purple Wind Rider (MOUNT!)
+						i(25477),	-- Swift Red Wind Rider (MOUNT!)
+						i(25532),	-- Swift Yellow Wind Rider (MOUNT!)
+						i(25474),	-- Tawny Wind Rider (MOUNT!)
 					},
 				}),
 				-- #endif
@@ -201,13 +201,13 @@ _.Zones =
 					["timeline"] = { "added 3.2.0.10192" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(25471),	-- Ebon Gryphon Mount
-						i(25470),	-- Golden Gryphon Mount
-						i(25472),	-- Snowy Gryphon Mount
-						i(25473),	-- Swift Blue Gryphon Mount
-						i(25528),	-- Swift Green Gryphon Mount
-						i(25529),	-- Swift Purple Gryphon Mount
-						i(25527),	-- Swift Red Gryphon Mount
+						i(25471),	-- Ebon Gryphon (MOUNT!)
+						i(25470),	-- Golden Gryphon (MOUNT!)
+						i(25472),	-- Snowy Gryphon (MOUNT!)
+						i(25473),	-- Swift Blue Gryphon (MOUNT!)
+						i(25528),	-- Swift Green Gryphon (MOUNT!)
+						i(25529),	-- Swift Purple Gryphon (MOUNT!)
+						i(25527),	-- Swift Red Gryphon (MOUNT!)
 					},
 				}),
 				-- #endif

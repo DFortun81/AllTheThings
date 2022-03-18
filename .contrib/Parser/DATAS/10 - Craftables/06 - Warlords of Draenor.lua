@@ -119,11 +119,11 @@ _.Craftables =
 				i(118741),	-- Mechanical Scorpid*
 			}),
 			filter(TOYS, {
-				i(111821),	-- Blingtron 5000*
-				i(109167),	-- Findle's Loot-A-Rang*
-				i(108745),	-- Personal Hologram*
-				i(109183),	-- World Shrinker*
-				i(112059),	-- Wormhole Centrifuge*
+				i(111821),	-- Blingtron 5000 (TOY!)
+				i(109167),	-- Findle's Loot-A-Rang (TOY!)
+				i(108745),	-- Personal Hologram (TOY!)
+				i(109183),	-- World Shrinker (TOY!)
+				i(112059),	-- Wormhole Centrifuge (TOY!)
 			}),
 			n(WEAPONS, {
 				i(109168, {	-- Shrediron's Shredder

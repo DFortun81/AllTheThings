@@ -215,6 +215,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { FERALAS },
 					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
 					["lvl"] = 54,
 				}),
 				q(7499, {	-- Codex of Defense
@@ -252,7 +253,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 							["timeline"] = { "removed 4.0.3" },
 							["classes"] = { WARLOCK },
 						})),
-						mount(23161, {	-- Summon Dreadsteed
+						mount(23161, {	-- Dreadsteed (MOUNT!)
 							["classes"] = { WARLOCK },
 						}),
 					},

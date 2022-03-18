@@ -6,38 +6,38 @@ root("Promotions", {
 		ach(1436, {	-- Friends In High Places
 			["timeline"] = { "added 2.4.3.8601" },
 		}),
-		i(37719, {	-- Swift Zhevra
+		i(37719, {	-- Swift Zhevra (MOUNT!)
 			["timeline"] = { "added 2.4.3.8601" },
 		}),
-		
+
 		ach(4832, {	-- Friends In Even Higher Places
 			["timeline"] = { "added 3.3.3.11723" },
 		}),
 		i(54860, {	-- X-53 Touring Rocket
 			["timeline"] = { "added 3.3.3.11723" },
 		}),
-		
+
 		ach(8213, {	-- Friends In Places Higher Yet
 			["timeline"] = { "added 5.0.1.15544" },
 		}),
 		i(83086, {	-- Heart of the Nightwing
 			["timeline"] = { "added 5.0.1.15544" },
 		}),
-		
+
 		ach(8794, {	-- Friends In Places Even Higher Than That
 			["timeline"] = { "added 5.4.1.17481" },
 		}),
 		i(106246, {	-- Emerald Hippogryph
 			["timeline"] = { "added 5.4.1.17481" },
 		}),
-		
+
 		ach(9925, {	-- Friends In Places Yet Even Higher Than That
 			["timeline"] = { "added 6.0.1.18711" },
 		}),
 		i(118515, {	-- Cindermane Charger
 			["timeline"] = { "added 6.0.1.18711" },
 		}),
-		
+
 		-- Chinese & Taiwan Only
 		ach(3636, {	-- Jade Tiger
 			["description"] = "Chinese & Taiwan Only",
@@ -113,8 +113,5 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(57853, {	-- Battleforged Team
 			["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
 		}),
-	}),
-	filter(MOUNTS, {
-		i(37598),	-- Swift Zhevra OLD
 	}),
 }));

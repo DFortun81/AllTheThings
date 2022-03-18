@@ -456,7 +456,7 @@ _.Instances = { tier(WOTLK_TIER, {
 										["description"] = "Muradin: Oh lad, how I missed those endless days in Lordaeron, sharpening your skill with this dull blade. Forging you into a weapon meant to withstand the demands of a great destiny. Heh… You sure put them skills to use, didn't you lad?\n\nIf only I'd been able to stop you that day, how different things migha' been. If only I'da never discovered that accursed blade. Farewell, Arthas, my brother.",
 										["questID"] = 24917,	-- Muradin's Lament
 										["g"] = {
-											i(52201)	-- Muradin's Favor
+											i(52201)	-- Muradin's Favor (TOY!)
 										},
 									}),
 									i(51320, {	-- Badge of the Silver Hand
@@ -470,7 +470,7 @@ _.Instances = { tier(WOTLK_TIER, {
 										["description"] = "Sylvanas: So, it is done. I had not dared to trust my senses. Too many times has the Lich King made me to be a fool. Finally, he has been made to pay for the atrocities he imposed upon my people.\n\nMay Azeroth never fail to remember the horrible price we paid for our weakness, for our pride. But what now, Hero? What of those freed from his grasp but still shackled to their mortal coils?\n\nLeave me. I have much to ponder.",
 										["questID"] = 24918,	-- Sylvanas' Vengeance
 										["g"] = {
-											i(52253)	-- Sylvanas' Music Box
+											i(52253)	-- Sylvanas' Music Box (TOY!)
 										},
 									}),
 									i(51318, {	-- Jaina's Locket
@@ -2655,7 +2655,7 @@ _.Instances = { tier(WOTLK_TIER, {
 							i(50804),	-- Icecrown Spire Sandals
 							i(50803),	-- Saurfang's Cold-Forged Band
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
-								artifact(870),	-- Find Hidden Artifact Skin
+								["sourceQuest"] = 38990,	-- The Call of Icecrown
 							}),
 						},
 					}),
@@ -2857,7 +2857,7 @@ _.Instances = { tier(WOTLK_TIER, {
 							i(51802),	-- Windrunner's Heartseeker
 							i(122229),	-- Music Roll: Invincible
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
-								artifact(870),	-- Find Hidden Artifact Skin
+								["sourceQuest"] = 38990,	-- The Call of Icecrown
 							}),
 						},
 					}),
@@ -2978,7 +2978,7 @@ _.Instances = { tier(WOTLK_TIER, {
 							i(51899),	-- Icecrown Spire Sandals
 							i(51900),	-- Saurfang's Cold-Forged Band
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
-								artifact(870),	-- Find Hidden Artifact Skin
+								["sourceQuest"] = 38990,	-- The Call of Icecrown
 							}),
 						},
 					}),
@@ -3192,7 +3192,7 @@ _.Instances = { tier(WOTLK_TIER, {
 							i(51940),	-- Windrunner's Heartseeker
 							i(122229),	-- Music Roll: Invincible
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
-								artifact(870),	-- Find Hidden Artifact Skin
+								["sourceQuest"] = 38990,	-- The Call of Icecrown
 							}),
 						},
 					}),
@@ -3315,7 +3315,7 @@ _.Instances = { tier(WOTLK_TIER, {
 							i(50015),	-- Belt of the Blood Nova
 							i(50362),	-- Deathbringer's Will
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
-								artifact(870),	-- Find Hidden Artifact Skin
+								["sourceQuest"] = 38990,	-- The Call of Icecrown
 							}),
 						},
 					}),
@@ -3532,7 +3532,7 @@ _.Instances = { tier(WOTLK_TIER, {
 							i(49981),	-- Fal'inrush, Defender of Quel'thalas
 							i(122229),	-- Music Roll: Invincible
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
-								artifact(870),	-- Find Hidden Artifact Skin
+								["sourceQuest"] = 38990,	-- The Call of Icecrown
 							}),
 						},
 					}),
@@ -3658,7 +3658,7 @@ _.Instances = { tier(WOTLK_TIER, {
 							i(50671),	-- Belt of the Blood Nova
 							i(50363),	-- Deathbringer's Will
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
-								artifact(870),	-- Find Hidden Artifact Skin
+								["sourceQuest"] = 38990,	-- The Call of Icecrown
 							}),
 						},
 					}),
@@ -3888,7 +3888,7 @@ _.Instances = { tier(WOTLK_TIER, {
 							i(50733),	-- Fal'inrush, Defender of Quel'thalas
 							i(122229),	-- Music Roll: Invincible
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
-								artifact(870),	-- Find Hidden Artifact Skin
+								["sourceQuest"] = 38990,	-- The Call of Icecrown
 							}),
 						},
 					}),

@@ -38,9 +38,30 @@ _.Zones =
 							["provider"] = { "n", 58716 },	-- Jian Ironpaw
 							["coord"] = { 53.4, 51.6, VALLEY_OF_THE_FOUR_WINDS },
 						}),
-						q(31279, {	-- Everything I Know About Cooking
-							["coord"] = { 63.6, 20.2, VALLEY_OF_THE_FOUR_WINDS },
-							["provider"] = { "n", 65528 },	-- Nan Thunderfoot
+						q(31486, {	-- Everything I Know About Cooking (A)
+						--	this had SQs listed, but it was available to me on an alliance character that had done 0 quests in jade forest, not even the intro, so i think it was an oversight.
+							["races"] = ALLIANCE_ONLY,
+							["qgs"] = {
+								56707,	-- Chin
+								62872,	-- Cranfur the Noodler
+							},
+							["coords"] = {
+								{ 46.2, 45.4, THE_JADE_FOREST },	-- Chin
+								{ 53.5, 76.4, KRASARANG_WILDS },	-- Cranfur the Noodler
+							},
+						}),
+						q(31279, {	-- Everything I Know About Cooking (H)
+							["races"] = HORDE_ONLY,
+							["qgs"] = {
+								62322,	-- Graceful Swan
+								59405,	-- Li Goldendraft
+								65528,	-- Nan Thunderfoot
+							},
+							["coords"] = {
+								{ 48.1, 34.5, THE_JADE_FOREST },	-- Graceful Swan
+								{ 63.6, 20.2, VALLEY_OF_THE_FOUR_WINDS },	-- Nan Thunderfoot
+								{ 64.2, 61.3, KUN_LAI_SUMMIT },	-- Li Goldendraft
+							},
 						}),
 						q(30332, {	-- Fatty Goatsteak
 							["sourceQuests"] = { 30257 },	-- Learn and Grow V: Halfhill Market
@@ -524,13 +545,6 @@ _.Zones =
 					["coord"] = { 82.7, 21.2, VALLEY_OF_THE_FOUR_WINDS },
 					["provider"] = { "n", 56440 },	-- Muno the Farmhand
 				}),
-				q(31820, {	-- A Present for Teacher
-					["description"] = "To get this quest you must Master all six of the Ways, complete the quest 'To Be a Master,' buy the Cooking School Bell for 50 Ironpaw Tokens, then max out your rep with Nomi.|r",
-					["provider"] = { "n", 64337 },	-- Nomi
-					["g"] = {
-						i(86468),	-- Apron
-					},
-				}),
 				q(31672, {	-- A Pumpkin-y Perfume
 					["isDaily"] = true,
 					["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
@@ -940,7 +954,7 @@ _.Zones =
 					["coord"] = { 68.9, 43.2, VALLEY_OF_THE_FOUR_WINDS },
 					["provider"] = { "n", 56133 },	-- Chen Stormsout
 					["g"] = {
-						i(88375),  -- Turnip Punching Bag
+						i(88375),  -- Turnip Punching Bag (TOY!)
 					},
 				}),
 				q(29949, {	-- Legacy
@@ -1009,9 +1023,6 @@ _.Zones =
 					["description"] = "Must be at least 4200 into \"Good Friend\" with Sho to start this quest.",
 					["coord"] = { 53.0, 52.0, VALLEY_OF_THE_FOUR_WINDS },
 					["provider"] = { "n", 58708 },	-- Sho
-				}),
-				q(31530, {	-- Mission: The Hozen Dozen -- Present in Beta but never made it to live servers
-					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(30322, {	-- Money Matters
 					["isDaily"] = true,
@@ -1124,7 +1135,7 @@ _.Zones =
 					["coord"] = { 82.6, 26.2, VALLEY_OF_THE_FOUR_WINDS },
 					["provider"] = { "n", 56465 },	-- Ana Thunderfoot
 					["g"] = {
-						i(88370),	-- Puntable Marmot
+						i(88370),	-- Puntable Marmot (TOY!)
 					},
 				}),
 				q(31673, {	-- Red Blossom Leeks, You Make the Croc-in' World Go Down
@@ -1252,17 +1263,6 @@ _.Zones =
 					["sourceQuests"] = { 30048 },	-- Li Li and the Grain
 					["coord"] = { 52.7, 62.8, VALLEY_OF_THE_FOUR_WINDS },
 					["provider"] = { "n", 56138 },	-- Li Li
-				}),
-				q(31392, {	-- Temple of the White Tiger
-					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 55.8, 51.8, VALLEY_OF_THE_FOUR_WINDS },
-					["provider"] = { "n", 64448 },	-- Hopsmaster Chang
-				}),
-				q(31393, {	-- Temple of the White Tiger
-					["races"] = HORDE_ONLY,
-					["coord"] = { 55.8, 51.8, VALLEY_OF_THE_FOUR_WINDS },
-					["provider"] = { "n", 64448 },	-- Hopsmaster Chang
-					["isBreadcrumb"] = true,
 				}),
 				q(29992, {	-- Tenderpaw By Name, Tender Paw By Reputation
 					["sourceQuests"] = { 29984 },	-- Unyielding Fists: Trial of Bamboo
@@ -1437,18 +1437,6 @@ _.Zones =
 						i(81794),	-- Thunderfoot Heavy Girdle
 						i(81795),	-- Sunsong Armored Girdle
 					},
-				}),
-				q(31255, {	-- The Road to Kun-Lai
-					["sourceQuests"] = { 49541 },	-- Warchief's Command: Kun-Lai Summit!
-					["races"] = HORDE_ONLY,
-					["coord"] = { 70.0, 23.6, VALLEY_OF_THE_FOUR_WINDS },
-					["provider"] = { "n", 63778 },	-- Messenger Grummle
-				}),
-				q(31254, {	-- The Road to Kun-Lai
-					["sourceQuests"] = { 49559 },	-- Hero's Call: Kun-Lai Summit!
-					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 70.0, 23.6, VALLEY_OF_THE_FOUR_WINDS },
-					["provider"] = { "n", 63778 },	-- Messenger Grummle
 				}),
 				q(30627, {	-- The Savior of Stoneplow
 					["sourceQuests"] = { 30626 },	-- Retreat!
@@ -1719,10 +1707,46 @@ _.Zones =
 					["coord"] = { 68.9, 43.3, VALLEY_OF_THE_FOUR_WINDS },
 					["provider"] = { "n", 56138 },	-- Li Li
 					["g"] = {
-						i(88377),	-- Turnip Paint "Gun"
+						i(88377),	-- Turnip Paint "Gun" (TOY!)
 					},
 				}),
 			}),
 		}),
 	}),
 };
+root("HiddenQuestTriggers",{
+	tier(MOP_TIER, {
+		q(30566),	-- FLAG - Pest Problems Training — triggered after turning in daily quest "Pest Problems" (questID 30319)
+		q(30629),	-- FLAG - Player Began Finale - triggered after cutscene prompted by turning in "Stoneplow Thirsts" (questID 30117)
+		q(30536),	-- FLAG - Weed War Training — triggered after turning in daily quest "Weed War II" (questID 30321)
+		q(31344),	-- Tracking Event: Chee Chee Exalted
+		q(30365),	-- Tracking Event: Chee Chee is Farmhand
+		q(31345),	-- Tracking Event: Ella Exalted
+		q(30366),	-- Tracking Event: Ella is Farmhand
+		q(31346),	-- Tracking Event: Farmer Fung Exalted
+		q(30370),	-- Tracking Event: Farmer Fung is Farmhand
+		q(30531),	-- Tracking Event: Finished First Expansion
+		q(30533),	-- Tracking Event: Finished Second Expansion
+		q(30574),	-- Tracking Event: Finished Third Expansion
+		q(31347),	-- Tracking Event: Fish Fellreed Exalted
+		q(30372),	-- Tracking Event: Fish Fellreed is Farmhand
+		q(31317),	-- Tracking Event: Found Entrance - triggers during "Old Man Thistle's Treasure" (questID 31314)
+		q(31318),	-- Tracking Event: Found Treasure - triggers during "Old Man Thistle's Treasure" (questID 31314)
+		q(31348),	-- Tracking Event: Gina Mudclaw Exalted
+		q(30374),	-- Tracking Event: Gina Mudclaw is Farmhand
+		q(31349),	-- Tracking Event: Haohan Mudclaw Exalted
+		q(30369),	-- Tracking Event: Haohan Mudclaw is Farmhand
+		q(31350),	-- Tracking Event: Jogu the Drunk Exalted
+		q(30373),	-- Tracking Event: Jogu the Drunk is Farmhand
+		q(31351),	-- Tracking Event: Old Hillpaw Exalted
+		q(30368),	-- Tracking Event: Old Hillpaw is Farmhand
+		q(31352),	-- Tracking Event: Sho Exalted
+		q(30367),	-- Tracking Event: Sho is Farmhand
+		q(30530),	-- Tracking Event: Started First Expansion — triggers after turning in "Growing the Farm I: A Little Problem" (questID 30516)
+		q(30532),	-- Tracking Event: Started Second Expansion — triggers after turning in "???" (questID ???)	-- TODO
+		q(30573),	-- Tracking Event: Started Third Expansion — triggers after turning in "???" (questID ???)	-- TODO
+		q(31353),	-- Tracking Event: Tina Mudclaw Exalted
+		q(30371),	-- Tracking Event: Tina Mudclaw is Farmhand
+		q(31950),	-- Tracking Quest: Move NPCs to Dais — triggered after turning in "Learn and Grow VI: Gina's Vote" (questID 31945)
+	}),
+});

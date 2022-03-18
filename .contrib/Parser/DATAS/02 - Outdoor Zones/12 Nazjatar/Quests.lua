@@ -2199,7 +2199,7 @@ root("Zones", {
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
 				["g"] = {
-					i(170154, {	-- Book of the Unshackled (H)
+					i(170154, {	-- Book of the Unshackled (TOY!)
 						["description"] = "Learning this toy also unlocks the Alliance |cFF0070DECarved Ankoan Charm|r toy.",
 					}),
 				},
@@ -2691,6 +2691,7 @@ root("HiddenQuestTriggers", {
 --	LABORATORY OF MARDIVAS
 	q(55202),	-- Elemental Essence Amalgamator Selection	-- Needs confirmation
 	q(55198),	-- Small Water
+	-- q(56478),	-- Greater Benthic (Blue) ?? maybe
 	q(56428),	-- Summoned Arcane Amalgamation
 	q(55144),	-- Summoned Dusty Amalgamation
 	q(55205),	-- Summoned Moghiea

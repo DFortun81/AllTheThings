@@ -33,7 +33,7 @@ app.L = {
 	["KNOWN_BY"] = "Known by ";
 	["REQUIRES"] = "Requires";
 	["RACE_LOCKED"] = "Race Locked";
-	["PLEASE_REPORT_MESSAGE"] = ": Please report this to the ATT Discord in #errors! Thanks!";
+	["PLEASE_REPORT_MESSAGE"] = ": Please report this to the ATT Discord in #retail-errors! Thanks!";
 	["REPORT_TIP"] = "\n(Ctrl+C to copy multiline report to your clipboard)";
 	["NOT_AVAILABLE_IN_PL"] = "Not available in Personal Loot.";
 	["MARKS_OF_HONOR_DESC"] = "Marks of Honor must be viewed in a Popout window to see all of the normal 'Contains' content.\n(Type '/att ' in chat then Shift-Click to link the item)\n\n|cFFfe040fAfter purchasing and using an ensemble, relogging & a forced ATT refresh (in this order)\nmay be required to register all the items correctly.|r";
@@ -249,6 +249,7 @@ app.L = {
 	["TOP_ROW_TO_LOCK"] = "|cff3399ffAlt + Click to Lock this Window";
 	["TOP_ROW_TO_UNLOCK"] = "|cffcf0000Alt + Click to Unlock this Window";
 	["QUEST_ROW_INSTRUCTIONS"] = "Right Click to see any Quest Chain Requirements";
+	["SYM_ROW_INFORMATION"] = "Right Click to see additional content which is Sourced in another location";
 	["QUEST_ONCE_PER_ACCOUNT"] = "Once-Per-Account Quest";
 	["QUEST_ONCE_PER_ACCOUNT_FORMAT"] = "Completed By: %s";
 
@@ -591,7 +592,7 @@ app.L = {
 	["REQUIRES_LEVEL"] = "Requires Level";
 	["SECRETS_HEADER"] = "Secrets";
 	["LIMITED_QUANTITY"] = "This has a limited quantity and may not always be present on the vendor.";
-	["SOURCE_ID_MISSING"] = "Please report this Item and where it was acquired to the ATT Discord in #errors!";
+	["SOURCE_ID_MISSING"] = "Please report this Item and where it was acquired to the ATT Discord in #retail-errors!";
 
 	-- Filter Text
 	["ACHIEVEMENT_ID"] = "Achievement ID";
@@ -819,6 +820,7 @@ app.L = {
 		[101] = "Interface\\Icons\\Tracking_WildPet",							-- Battle Pets
 		[102] = app.asset("Category_ToyBox"),									-- Toy Box
 		[103] = "Interface\\Icons\\inv_inscription_weaponscroll03",				-- Illusions
+		[110] = app.asset("Category_Titles"),									-- Titles
 		[111] = "Interface\\Icons\\Inv_glyph_minorwarrior",						-- Glyph
 		[113] = "Interface\\Icons\\INV_Misc_Bag_08",							-- Bag
 		[114] = "Interface\\Icons\\inv_blacksmith_leystonehoofplates_orange",	-- Mount Equipment
@@ -903,6 +905,8 @@ app.L = {
 		[-38] = app.asset("Category_Professions"),											-- Professions
 		[-40] = "Interface\\Icons\\Inv_misc_book_17",										-- Legacy
 		[-41] = "Interface\\Icons\\TRADE_ARCHAEOLOGY",										-- Cache of Madness
+		[-42] = app.asset("Category_Crafting"),												-- Crafted Item
+		[-43] = 618859,																		-- Proving Grounds [achievement_challengemode_platinum]
 	-- World Events (These are used by ATT CLassic)
 		[-47] = "Interface\\Icons\\achievement_worldevent_lunar",							-- Lunar Festival
 		[-52] = "Interface\\Icons\\inv_misc_toy_04",										-- Children's Week
@@ -1001,6 +1005,7 @@ app.L = {
 		[-217] = "Interface\\Icons\\INV_Fishing_Lure_Worm",									-- Lures (for Fishing)
 		[-218] = "Interface\\Icons\\Achievement_Profession_Fishing_NorthrendAngler",		-- Coastal (for Fishing)
 	-- Class
+		[-219] = "Interface\\Icons\\inv_misc_questionmark",									-- Sourceless
 		[-220] = "Interface\\MINIMAP\\TRACKING\\Class",										-- Class
 	-- Bonus Objectives
 		[-221] = 237387,																	-- Bonus Objectives
@@ -1085,6 +1090,8 @@ app.L = {
 		[-396] = "Interface\\Icons\\achievement_dungeon_icecrown_frostwinghalls",			-- The Frostwing Halls
 	-- BFA Outposts
 		[-397] = "Interface\\Icons\\inv_icon_daily_mission_scroll",							-- Outposts
+	-- 5.3
+		[-398] = "Interface\\Icons\\ability_vehicle_oiljets",								-- Battlefield: Barrens
 	-- T0.5 & Classic
 		[-420] = "Interface\\Icons\\INV_Chest_Plate03",										-- Tier 0.5 Sets
 	-- BFA War Chest
@@ -1133,6 +1140,7 @@ app.L = {
 		[-578] = app.asset("Expansion_CLASSIC"),											-- World of Warcraft 15th Anniversary
 		[-579] = "Interface\\Icons\\achievement_dungeon_outland_dungeonmaster",				-- Dark Portal Pass
 		[-580] = "Interface\\Icons\\inv_misc_mdi_banner01",									-- The Great Push: Season 2
+		[-581] = "Interface\\Icons\\inv_misc_mdi_banner02",									-- Mythic Dungeon International: Season 3
 	-- PvP Headers
 		[-650] = 1455894,																	-- Rated Battlegrounds
 		--[-651] = "Interface\\Worldmap\\GlowSkull_64Grey",									-- Not used yet. Future PvP Icons if needed
@@ -1189,6 +1197,7 @@ app.L = {
 	-- Shadowlands PvP Seasons
 		[-693] = "Interface\\Icons\\inv_shadebeastmount",									-- Sinful Gladiator: Shadowlands Season 1
 		[-694] = "Interface\\Icons\\inv_shadebeastmount_blue",								-- Unchained Gladiator: Shadowlands Season 2
+		[-695] = "Interface\\Icons\\inv_shadebeastmount_red",								-- Cosmic Gladiator: Shadowlands Season 3
 	-- More PvP Seasons are likely to come dont use IDs here
 	-- Pets
 		[-795] = app.asset("Pet_Dungeon"),													-- Pet Battle Dungeons
@@ -1273,6 +1282,9 @@ app.L = {
 		[-985] = 1392911,																	-- Coldheart Interstitia
 		[-986] = 2178500,																	-- Mort'regar
 		[-987] = 2178509,																	-- The Upper Reaches
+		-- 9.2
+		[-988] = select(10, GetAchievementInfo(15402)),										-- Cypher of the First Ones
+		[-989] = "Interface\\Icons\\inv_blacksmithing_greaterweightstone",					-- The Great Vault
 		--
 	-- Sets
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",						-- Sets
@@ -1312,6 +1324,7 @@ app.L = {
 		[-5364] = "Interface\\Icons\\inv_misc_celebrationcake_01",							-- 15th Anniversary
 		[-5365] = "Interface\\Icons\\inv_misc_celebrationcake_01",							-- 16th Anniversary
 		[-5366] = "Interface\\Icons\\inv_misc_celebrationcake_01",							-- 17th Anniversary
+		[-5367] = "Interface\\Icons\\inv_misc_celebrationcake_01",							-- 18th Anniversary
 	--
 		[-6013] = app.asset("Category_Factions"),											-- Faction
 		[-6014] = "Interface\\Icons\\Spell_Arcane_PortalUnderCity",							-- Cities
@@ -1320,26 +1333,6 @@ app.L = {
 		[-9912] = "Interface\\FriendsFrame\\PlusManz-PlusManz",						-- Neutral
 		[-9913] = "Interface\\FriendsFrame\\PlusManz-Horde",						-- Horde
 		[-9914] = "Interface\\FriendsFrame\\PlusManz-Alliance",						-- Alliance
-	-- Specs
-		[-9915] = "Interface\\Icons\\spell_holy_wordfortitude",						-- Discipline Priest Spec
-		[-9917] = "Interface\\Icons\\spell_shadow_shadowwordpain",					-- Shadow Priest Spec
-		[-9924] = "Interface\\Icons\\TalentSpec_Druid_Feral_Bear",					-- Guardian Druid Spec
-		[-9925] = "Interface\\Icons\\TalentSpec_Druid_Feral_Cat",					-- Feral Druid Spec
-		[-9926] = "Interface\\Icons\\TalentSpec_Druid_Balance",						-- Balance Druid Spec
-		[-9927] = "Interface\\Icons\\TalentSpec_Druid_Restoration",					-- Restoration Druid Spec
-		[-9931] = "Interface\\Icons\\Spell_Monk_Brewmaster_Spec",					-- Brewmaster Monk Spec
-		[-9932] = "Interface\\Icons\\Spell_Monk_WindWalker_Spec",					-- Windwalker Monk Spec
-		[-9933] = "Interface\\Icons\\Spell_Monk_MistWeaver_Spec",					-- Mistweaver Monk Spec
-		[-9939] = "Interface\\Icons\\spell_nature_lightning",						-- Elemental Shaman Spec
-		[-9940] = "Interface\\Icons\\spell_nature_lightningshield",					-- Enhancement Shaman Spec
-		[-9941] = "Interface\\Icons\\spell_nature_magicimmunity",					-- Restoration Shaman Spec
-		[-9942] = "Interface\\Icons\\Spell_Holy_HolyBolt",							-- Holy Paladin Spec
-		[-9943] = "Interface\\Icons\\Ability_Paladin_ShieldoftheTemplar",			-- Protection Paladin Spec
-		[-9944] = "Interface\\Icons\\spell_holy_auraoflight",						-- Retribution Paladin Spec
-		[-9945] = "Interface\\Icons\\ability_rogue_eviscerate",						-- Arms Warrior Spec
-		[-9947] = "Interface\\Icons\\INV_Shield_06",								-- Protection Warrior Spec
-		[-9948] = "Interface\\Icons\\Spell_Deathknight_BloodPresence",				-- Blood Death Knight Spec
-		[-9949] = "Interface\\Icons\\Spell_Deathknight_FrostPresence",				-- Frost Death Knight Spec
 	------ ACHIEVEMENT HEADERS SECTION ------
 	-- Is Used Somewhere
 		[-9965] = "Interface\\Icons\\achievement_level_110",						-- Class Hall
@@ -1380,75 +1373,18 @@ app.L = {
 		[-1433960] = "3854020",															-- Broken Mirror
 		[-1433961] = "3854020",															-- Broken Mirror
 		[-1433962] = "3854020",															-- Broken Mirror
-	-- NYI QUESTS
-		-- WotLK
-		[-2030] = app.asset("Expansion_WOTLK"),									-- Patch 3.0.1
-		[-2031] = app.asset("Expansion_WOTLK"),									-- Patch 3.0.2
-		[-2032] = app.asset("Expansion_WOTLK"),									-- Patch 3.0.3
-		[-2033] = app.asset("Expansion_WOTLK"),									-- Patch 3.1.0
-		[-2034] = app.asset("Expansion_WOTLK"),									-- Patch 3.3.0
-		[-2035] = app.asset("Expansion_WOTLK"),									-- Patch 3.3.2
-		[-2036] = app.asset("Expansion_WOTLK"),									-- Patch 3.3.3
-		[-2037] = app.asset("Expansion_WOTLK"),									-- Patch 3.3.5
-		[-2038] = app.asset("Expansion_WOTLK"),									-- Patch 3.x.x - unknown patch
-		-- Cata
-		[-2040] = app.asset("Expansion_CATA"),									-- Patch 4.0.1
-		[-2041] = app.asset("Expansion_CATA"),									-- Patch 4.0.3
-		[-2042] = app.asset("Expansion_CATA"),									-- Patch 4.0.6
-		[-2043] = app.asset("Expansion_CATA"),									-- Patch 4.1.0
-		[-2044] = app.asset("Expansion_CATA"),									-- Patch 4.2.0
-		[-2045] = app.asset("Expansion_CATA"),									-- Patch 4.3.0
-		[-2046] = app.asset("Expansion_CATA"),									-- Patch 4.3.2
-		[-2047] = app.asset("Expansion_CATA"),									-- Patch 4.x.x - unknown patch
-		-- MoP
-		[-2050] = app.asset("Expansion_MOP"),									-- Patch 5.0.1
-		[-2051] = app.asset("Expansion_MOP"),									-- Patch 5.0.4
-		[-2052] = app.asset("Expansion_MOP"),									-- Patch 5.1.0
-		[-2053] = app.asset("Expansion_MOP"),									-- Patch 5.2.0
-		[-2054] = app.asset("Expansion_MOP"),									-- Patch 5.3.0
-		[-2055] = app.asset("Expansion_MOP"),									-- Patch 5.4.0
-		[-2056] = app.asset("Expansion_MOP"),									-- Patch 5.4.1
-		[-2057] = app.asset("Expansion_MOP"),									-- Patch 5.4.2
-		[-2058] = app.asset("Expansion_MOP"),									-- Patch 5.4.7
-		[-2059] = app.asset("Expansion_MOP"),									-- Patch 5.x.x - unknown patch
-		-- WoD
-		[-2060] = app.asset("Expansion_WOD"),									-- Patch 6.0.1
-		[-2061] = app.asset("Expansion_WOD"),									-- Patch 6.0.2
-		[-2062] = app.asset("Expansion_WOD"),									-- Patch 6.0.3
-		[-2063] = app.asset("Expansion_WOD"),									-- Patch 6.1.0
-		[-2064] = app.asset("Expansion_WOD"),									-- Patch 6.1.2
-		[-2065] = app.asset("Expansion_WOD"),									-- Patch 6.2.0
-		[-2066] = app.asset("Expansion_WOD"),									-- Patch 6.2.1
-		[-2067] = app.asset("Expansion_WOD"),									-- Patch 6.2.2
-		[-2068] = app.asset("Expansion_WOD"),									-- Patch 6.2.3
-		[-2069] = app.asset("Expansion_WOD"),									-- Patch 6.x.x - unknown patch
-		-- Legion
-		[-2070] = app.asset("Expansion_LEGION"),								-- Patch 7.0.1
-		[-2071] = app.asset("Expansion_LEGION"),								-- Patch 7.0.3
-		[-2072] = app.asset("Expansion_LEGION"),								-- Patch 7.1.0
-		[-2073] = app.asset("Expansion_LEGION"),								-- Patch 7.1.5
-		[-2074] = app.asset("Expansion_LEGION"),								-- Patch 7.2.0
-		[-2075] = app.asset("Expansion_LEGION"),								-- Patch 7.2.5
-		[-2076] = app.asset("Expansion_LEGION"),								-- Patch 7.3.0
-		[-2077] = app.asset("Expansion_LEGION"),								-- Patch 7.3.2
-		[-2078] = app.asset("Expansion_LEGION"),								-- Patch 7.3.5
-		[-2079] = app.asset("Expansion_LEGION"),								-- Patch 7.x.x - unknown patch
-		-- BfA
-		[-2080] = app.asset("Expansion_BFA"),									-- Patch 8.0.1
-		[-2081] = app.asset("Expansion_BFA"),									-- Patch 8.1.0
-		[-2082] = app.asset("Expansion_BFA"),									-- Patch 8.1.5
-		[-2083] = app.asset("Expansion_BFA"),									-- Patch 8.2.0
-		[-2084] = app.asset("Expansion_BFA"),									-- Patch 8.2.5
-		[-2085] = app.asset("Expansion_BFA"),									-- Patch 8.3.0
-		[-2086] = app.asset("Expansion_BFA"),									-- Patch 8.x.x - unknown patch
-		-- SL
-		[-2090] = app.asset("Expansion_SL"),									-- Patch 9.0.1
-		[-2091] = app.asset("Expansion_SL"),									-- Patch 9.0.2
-		[-2092] = app.asset("Expansion_SL"),									-- Patch 9.0.5
-		[-2093] = app.asset("Expansion_SL"),									-- Patch 9.1.0
-		[-2094] = app.asset("Expansion_SL"),									-- Patch 9.1.5
-		[-2095] = app.asset("Expansion_SL"),									-- Patch 9.2.0
-		[-2096] = app.asset("Expansion_SL"),									-- Patch 9.x.x - unknown patch
+	-- NYI
+		-- Unknown patch
+		--[-?] = ?,																-- Patch 0.x.x
+		[-2180] = app.asset("Expansion_CLASSIC"),								-- Patch 1.x.x
+		[-2181] = app.asset("Expansion_TBC"),									-- Patch 2.x.x
+		[-2182] = app.asset("Expansion_WOTLK"),									-- Patch 3.x.x
+		[-2183] = app.asset("Expansion_CATA"),									-- Patch 4.x.x
+		[-2184] = app.asset("Expansion_MOP"),									-- Patch 5.x.x
+		[-2185] = app.asset("Expansion_WOD"),									-- Patch 6.x.x
+		[-2186] = app.asset("Expansion_LEGION"),								-- Patch 7.x.x
+		[-2187] = app.asset("Expansion_BFA"),									-- Patch 8.x.x
+		[-2188] = app.asset("Expansion_SL"),									-- Patch 9.x.x
 	};
 	["HEADER_NAMES"] = {
 	-- Commonly used
@@ -1481,6 +1417,8 @@ app.L = {
 		[-38] = TRADE_SKILLS,													-- Professions
 		[-40] = LFG_LIST_LEGACY,												-- Legacy
 		[-41] = "Cache of Madness",												-- Cache of Madness
+		[-42] = LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM,					-- Crafted Item
+		[-43] = TRACKER_HEADER_PROVINGGROUNDS,									-- Proving Grounds
 	-- World Events (These are used by ATT CLassic)
 		[-47] = select(1,GetCategoryInfo(160)),									-- Lunar Festival
 		[-52] = select(1,GetCategoryInfo(163)),									-- Children's Week
@@ -1575,6 +1513,7 @@ app.L = {
 	-- Fishing
 		[-217] = "Lures",														-- Lures (for Fishing)
 		[-218] = "Coastal",														-- Coastal (for Fishing)
+		[-219] = "Sourceless",													-- Sourceless
 	-- Class
 		[-220] = CLASS,															-- Class
 	-- Bonus Objectives
@@ -1662,6 +1601,8 @@ app.L = {
 		[-396] = C_Map.GetAreaInfo(7932),										-- The Frostwing Halls
 	-- BFA Outposts
 		[-397] = "Outposts",													-- Outposts
+	-- 5.3
+		[-398] = "Battlefield: Barrens",										-- Battlefield: Barrens
 	-- T0.5 & Classic
 		[-420] = "Tier 0.5 Sets",												-- Tier 0.5 Sets
 		[-422] = "Atal'ai Defenders",											-- Atal'ai Defenders
@@ -1712,6 +1653,7 @@ app.L = {
 		[-578] = select(2, GetAchievementInfo(13917)),							-- WoW's 15th Anniversary
 		[-579] = "Dark Portal Pass",											-- Dark Portal Pass
 		[-580] = "The Great Push: Season 2",									-- The Great Push: Season 2
+		[-581] = "Mythic Dungeon International: Season 3",						-- Mythic Dungeon International: Season 3
 	-- PvP Header
 		-- Special Season Tags
 		--[-650] = "Rated Battleground",										-- Listed under Cata PvP Seasons
@@ -1776,6 +1718,7 @@ app.L = {
 	-- Shadowlands PvP Seasons
 		[-693] = select(2, GetAchievementInfo(14690)),							-- Sinful Gladiator: Shadowlands Season 1
 		[-694] = select(2, GetAchievementInfo(14973)),							-- Unchained Gladiator: Shadowlands Season 2
+		[-695] = select(2, GetAchievementInfo(15353)) or "Cosmic Gladiator",	-- Cosmic Gladiator: Shadowlands Season 3
 	-- More PvP Seasons are likely to come dont use IDs here
 	-- Pets
 		[-795] = "Pet Battle Dungeons",											-- Pet Battle Dungeons
@@ -1875,6 +1818,9 @@ app.L = {
 		[-985] = select(2, GetAchievementInfo(14483)),							-- Coldheart Interstitia
 		[-986] = select(2, GetAchievementInfo(14488)),							-- Mort'regar
 		[-987] = select(2, GetAchievementInfo(14493)),							-- The Upper Reaches
+		-- 9.2
+		[-988] = select(2, GetAchievementInfo(15402)),							-- Cypher of the First Ones
+		[-989] = "The Great Vault",												-- The Great Vault
 	-- Sets
 		[-1000] = WARDROBE_SETS, 												-- Sets
 	-- Warrior order hall lore items
@@ -1921,6 +1867,7 @@ app.L = {
 		[-5364] = select(2,GetAchievementInfo(13917)),							-- 15th Anniversary
 		[-5365] = select(2,GetAchievementInfo(14271)),							-- 16th Anniversary
 		[-5366] = select(2,GetAchievementInfo(14942)),							-- 17th Anniversary
+		[-5367] = select(2,GetAchievementInfo(15218)),							-- 18th Anniversary
 
 		[-6013] = FACTION,														-- Faction
 		[-6014] = BUG_CATEGORY4,												-- Cities
@@ -1930,26 +1877,6 @@ app.L = {
 		[-9912] = COMBATLOG_FILTER_STRING_NEUTRAL_UNITS,						-- Neutral
 		[-9913] = FACTION_HORDE, 												-- Horde
 		[-9914] = FACTION_ALLIANCE, 											-- Alliance
-	-- Specs
-		[-9915] = GetSpellInfo(137032),											-- Discipline Priest Spec
-		[-9917] = GetSpellInfo(137033),											-- Shadow Priest Spec
-		[-9924] = GetSpellInfo(137010),											-- Guardian Druid Spec
-		[-9925] = GetSpellInfo(137011),											-- Feral Druid Spec
-		[-9926] = GetSpellInfo(137013),											-- Balance Druid Spec
-		[-9927] = GetSpellInfo(137012),											-- Restoration Druid Spec
-		[-9931] = GetSpellInfo(137023),											-- Brewmaster Monk Spec
-		[-9932] = GetSpellInfo(137025),											-- Windwalker Monk Spec
-		[-9933] = GetSpellInfo(137024),											-- Mistweaver Monk Spec
-		[-9939] = GetSpellInfo(137040),											-- Elemental Shaman Spec
-		[-9940] = GetSpellInfo(137041),											-- Enhancement Shaman Spec
-		[-9941] = GetSpellInfo(137039),											-- Restoration Shaman Spec
-		[-9942] = GetSpellInfo(137029),											-- Holy Paladin Spec
-		[-9943] = GetSpellInfo(137028),											-- Protection Paladin Spec
-		[-9944] = GetSpellInfo(137027),											-- Retribution Paladin Spec
-		[-9945] = GetSpellInfo(137049),											-- Arms Warrior Spec
-		[-9947] = GetSpellInfo(137048),											-- Protection Warrior Spec
-		[-9948] = GetSpellInfo(137008),											-- Blood Death Knight Spec
-		[-9949] = GetSpellInfo(137006),											-- Frost Death Knight Spec
 	------ ACHIEVEMENT HEADERS SECTION ------
 		[-9965] = select(1,GetCategoryInfo(15304)),								-- Class Hall
 		[-9966] = select(1,GetCategoryInfo(15303)),								-- Draenor Garrison
@@ -1991,75 +1918,18 @@ app.L = {
 		[-1433960] = "Broken Mirror D-1",										-- Broken Mirror
 		[-1433961] = "Broken Mirror D-2",										-- Broken Mirror
 		[-1433962] = "Broken Mirror D-3",										-- Broken Mirror
-	-- NYI QUESTS
-		-- WotLK
-		[-2030] = "3.0.1",														-- Patch 3.0.1
-		[-2031] = "3.0.2",														-- Patch 3.0.2
-		[-2032] = "3.0.3",														-- Patch 3.0.3
-		[-2033] = "3.1.0",														-- Patch 3.1.0
-		[-2034] = "3.3.0",														-- Patch 3.3.0
-		[-2035] = "3.3.2",														-- Patch 3.3.2
-		[-2036] = "3.3.3",														-- Patch 3.3.3
-		[-2037] = "3.3.5",														-- Patch 3.3.5
-		[-2038] = "3.x.x",														-- Patch 3.x.x - unknown patch
-		-- Cata
-		[-2040] = "4.0.1",														-- Patch 4.0.1
-		[-2041] = "4.0.3",														-- Patch 4.0.3
-		[-2042] = "4.0.6",														-- Patch 4.0.6
-		[-2043] = "4.1.0",														-- Patch 4.1.0
-		[-2044] = "4.2.0",														-- Patch 4.2.0
-		[-2045] = "4.3.0",														-- Patch 4.3.0
-		[-2046] = "4.3.2",														-- Patch 4.3.2
-		[-2047] = "4.x.x",														-- Patch 4.x.x - unknown patch
-		-- MoP
-		[-2050] = "5.0.1",														-- Patch 5.0.1
-		[-2051] = "5.0.4",														-- Patch 5.0.4
-		[-2052] = "5.1.0",														-- Patch 5.1.0
-		[-2053] = "5.2.0",														-- Patch 5.2.0
-		[-2054] = "5.3.0",														-- Patch 5.3.0
-		[-2055] = "5.4.0",														-- Patch 5.4.0
-		[-2056] = "5.4.1",														-- Patch 5.4.1
-		[-2057] = "5.4.2",														-- Patch 5.4.2
-		[-2058] = "5.4.7",														-- Patch 5.4.7
-		[-2059] = "5.x.x",														-- Patch 5.x.x - unknown patch
-		-- WoD
-		[-2060] = "6.0.1",														-- Patch 6.0.1
-		[-2061] = "6.0.2",														-- Patch 6.0.2
-		[-2062] = "6.0.3",														-- Patch 6.0.3
-		[-2063] = "6.1.0",														-- Patch 6.1.0
-		[-2064] = "6.1.2",														-- Patch 6.1.2
-		[-2065] = "6.2.0",														-- Patch 6.2.0
-		[-2066] = "6.2.1",														-- Patch 6.2.1
-		[-2067] = "6.2.2",														-- Patch 6.2.2
-		[-2068] = "6.2.3",														-- Patch 6.2.3
-		[-2069] = "6.x.x",														-- Patch 6.x.x - unknown patch
-		-- Legion
-		[-2070] = "7.0.1",														-- Patch 7.0.1
-		[-2071] = "7.0.3",														-- Patch 7.0.3
-		[-2072] = "7.1.0",														-- Patch 7.1.0
-		[-2073] = "7.1.5",														-- Patch 7.1.5
-		[-2074] = "7.2.0",														-- Patch 7.2.0
-		[-2075] = "7.2.5",														-- Patch 7.2.5
-		[-2076] = "7.3.0",														-- Patch 7.3.0
-		[-2077] = "7.3.2",														-- Patch 7.3.2
-		[-2078] = "7.3.5",														-- Patch 7.3.5
-		[-2079] = "7.x.x",														-- Patch 7.x.x - unknown patch
-		-- BfA
-		[-2080] = "8.0.1",														-- Patch 8.0.1
-		[-2081] = "8.1.0",														-- Patch 8.1.0
-		[-2082] = "8.1.5",														-- Patch 8.1.5
-		[-2083] = "8.2.0",														-- Patch 8.2.0
-		[-2084] = "8.2.5",														-- Patch 8.2.5
-		[-2085] = "8.3.0",														-- Patch 8.3.0
-		[-2086] = "8.x.x",														-- Patch 8.x.x - unknown patch
-		-- SL
-		[-2090] = "9.0.1",														-- Patch 9.0.1
-		[-2091] = "9.0.2",														-- Patch 9.0.2
-		[-2092] = "9.0.5",														-- Patch 9.0.5
-		[-2093] = "9.1.0",														-- Patch 9.1.0
-		[-2094] = "9.1.5",														-- Patch 9.1.5
-		[-2095] = "9.2.0",														-- Patch 9.2.0
-		[-2096] = "9.x.x",														-- Patch 9.x.x - unknown patch
+	-- NYI
+		-- Unknown patch
+		--[-?] = "0.x.x",														-- Patch 0.x.x
+		[-2180] = "1.x.x",														-- Patch 1.x.x
+		[-2181] = "2.x.x",														-- Patch 2.x.x
+		[-2182] = "3.x.x",														-- Patch 3.x.x
+		[-2183] = "4.x.x",														-- Patch 4.x.x
+		[-2184] = "5.x.x",														-- Patch 5.x.x
+		[-2185] = "6.x.x",														-- Patch 6.x.x
+		[-2186] = "7.x.x",														-- Patch 7.x.x
+		[-2187] = "8.x.x",														-- Patch 8.x.x
+		[-2188] = "9.x.x",														-- Patch 9.x.x
 	};
 	["HEADER_DESCRIPTIONS"] = {
 		[-18] = "Contains Things which are rewarded or are available from other content within the containing section.\nThey are consolidated here in an effort to reduce duplication from many possible Sources.",
@@ -2135,7 +2005,7 @@ app.L = {
 		-- #if BEFORE BFA
 		--[41] = {1, "|CFFFF0000This is only available to players that completed the associated Mage Tower Artifact Challenges and earned the base appearance.|r", "Mage Tower Appearances"},
 		-- #endif
-		[45] = {1, "|CFFFF0000Blizzard's Loot changes broke several Items and made them Unobtainable.\nHouse of Nobles Cape/Gurubashi Empire Greatcloak (both BFA Emissary Rewards), Ogom the Mangler & WoD Misson loot are currently broken and need to be fixed.|r", "Broken Loot"},
+		[45] = {1, "|CFFFF0000Blizzard's Loot changes broke several Items and made them Unobtainable.\nHouse of Nobles Cape/Gurubashi Empire Greatcloak (both BFA Emissary Rewards), Ogom the Mangler, WoD Misson loot & Class Trials are currently broken and need to be fixed.|r", "Broken Loot"},
 
 		-- Seasonal Filters
 		[1000] = {4, "|CFF00FFDEThis requires the Brewfest Holiday to be Active.|r", "Brewfest"},

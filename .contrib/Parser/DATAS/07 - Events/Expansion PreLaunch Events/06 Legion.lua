@@ -194,28 +194,6 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 7.0.3.22248", "
 				}),
 			}),
 			n(QUESTS, {
-				q(44421, {	-- Anomalous Anomalies
-					["provider"] = { "n", 113986 },	-- Archmage Khadgar
-					["sourceQuests"] = { 44182 },	-- City Under Siege
-				}),
-				q(44500, {	-- Author! Author!
-					["provider"] = { "n", 113986 },	-- Archmage Khadgar
-					["sourceQuests"] = { 44421 },	-- Author! Author!
-				}),
-				q(40717, {	-- Calling of the Council
-					["provider"] = { "n", 114550 },	-- Khadgar's Upgraded Servant
-					["races"] = ALLIANCE_ONLY,
-					["description"] = "You can start this quest by going to Dalaran (Legion) and talking to Archivist Elysiana in The Violet Citadel.",
-				}),
-				q(40718, {	-- Calling of the Council
-					["provider"] = { "n", 114550 },	-- Khadgar's Upgraded Servant
-					["races"] = HORDE_ONLY,
-					["description"] = "You can start this quest by going to Dalaran (Legion) and talking to Archivist Elysiana in The Violet Citadel.",
-				}),
-				q(44182, {	-- City Under Siege
-					["provider"] = { "n", 114561 },	-- Khadgar's Upgraded Servant
-					["sourceQuests"] = { 40755 },	-- Hiding in the Stacks
-				}),
 				q(43298),	-- Defend (Azshara)
 				q(43291),	-- Defend (Dun Morogh)
 				q(43296),	-- Defend (Hillsbrad Foothills)
@@ -226,19 +204,12 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 7.0.3.22248", "
 				q(43286),	-- Demon Commander (Hillsbrad Foothills)
 				-- try to find ID for Demon Commander (Northern Barrens)
 				q(43243),	-- Demon Commander (Tanaris)
-				q(40755, {	-- Hiding in the Stacks
-					["provider"] = { "n", 101547 },	-- Archmage Khadgar
-					["sourceQuests"] = { 42970 },	-- The Diamond King
-					["groups"] = {
-						i(139905),	-- Gloves of thee Arcane Purge
-						i(139934),	-- Handguards of Demonsbane
-						i(139965),	-- Grips of the Fel Destroyer
-						i(139997),	-- Gauntlets of Legion Devastation
-					},
-				}),
 				q(44184, {	-- In the Blink of an Eye
 					["provider"] = { "n", 114562 },	-- Khadgar's Upgraded Servant
 					["sourceQuests"] = { 44500 },	-- Author! Author!
+					["g"] = {
+						i(143780),	-- Tome of the Tranquil Mind
+					},
 				}),
 				q(43301),	-- Invasion: Azshara
 				q(43284),	-- Invasion: Dun Morogh
@@ -258,22 +229,18 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 7.0.3.22248", "
 				q(43290),	-- Repel (Northern Barrens)
 				q(43294),	-- Repel (Tanaris)
 				q(43242),	-- Demon Commander (Westfall)
-				q(42970, {	-- The Diamond King
-					["provider"] = { "n", 113655 },	-- Brann Bronzebeard
-					["sourceQuests"] = { 40717, 40718 },	-- Calling of the Council
-				}),
 			}),
 			n(RARES, {
 				n(112527, {	-- Doomsayer
 					["description"] = "This Toy, Pocket Fel Spreader is available EXCLUSIVELY during the Legion pre-expansion event. It is obtained by using any ability or item that allows you to detect demons, and then speaking to a Doomsayer. \nWhen using any such ability or item, the Doomsayer will sometimes have the dialogue option \"There's something not quite right about you...\". Selecting this option, when visible, will change the Doomsayer into a Dread Infiltrator, which can be killed and looted to obtain this Toy. Note that the Toy is NOT a guaranteed drop, but has a roughly 25% drop rate.",
 					["g"] = {
-						i(140363),	-- Pocket Fel Spreader
+						i(140363),	-- Pocket Fel Spreader (TOY!)
 					},
 				}),
 					n(112198, {	-- Doomsayer
 					["description"] = "This Toy, Pocket Fel Spreader is available EXCLUSIVELY during the Legion pre-expansion event. It is obtained by using any ability or item that allows you to detect demons, and then speaking to a Doomsayer. \nWhen using any such ability or item, the Doomsayer will sometimes have the dialogue option \"There's something not quite right about you...\". Selecting this option, when visible, will change the Doomsayer into a Dread Infiltrator, which can be killed and looted to obtain this Toy. Note that the Toy is NOT a guaranteed drop, but has a roughly 25% drop rate.\n",
 					["g"] = {
-						i(140363),	-- Pocket Fel Spreader
+						i(140363),	-- Pocket Fel Spreader (TOY!)
 					},
 				}),
 			}),
@@ -283,6 +250,7 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 7.0.3.22248", "
 						{ 52.6, 57.6, ORGRIMMAR },
 						{ 41.2, 78.8, THE_STORMWIND },
 					},
+					["timeline"] = { "added 7.0.3.22290" },
 					["g"] = {
 						i(136924),	-- Felbat Pup Pet
 						i(141604),	-- Glaive of the Fallen
@@ -354,7 +322,7 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 7.0.3.22248", "
 				n(112315, {	-- Dread Infiltrator
 					["description"] = "Players with some sort of Sense Demons ability could get this mob to spawn from Doomsayers.",
 					["groups"] = {
-						i(140363),	-- Pocket Fel Spreader Toy
+						i(140363),	-- Pocket Fel Spreader (TOY!)
 					},
 				}),
 			}),

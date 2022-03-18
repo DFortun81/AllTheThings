@@ -20,13 +20,12 @@ _.Zones =
 				exploration(3784, "512:252:144:416"),		-- Forge Camp: Terror
 				exploration(3785, "256:256:254:176"),		-- Forge Camp: Wrath
 				exploration(3781, "256:256:286:28"),		-- Grishnath
-				exploration(3618, "256:256:527:81"),		-- Gruul's Lair
+				exploration(3774, "256:256:527:81"),		-- Gruul's Lair
 				exploration(3768, "256:254:446:414"),		-- Jagged Ridge
 				exploration(3844, "256:256:658:297"),		-- Mok'Nathal Village
 				exploration(3830, "512:256:214:55"),		-- Raven's Wood
 				exploration(3833, "256:410:554:258"),		-- Razor Ridge
 				exploration(3828, "256:512:479:98"),		-- Ruuan Weald
-				exploration(3919, "0:0:0:0"),				-- Singing Ridge / Blade's Edge Mountains
 				exploration(3866, "256:256:673:71"),		-- Skald
 				exploration(3772, "256:318:289:350"),		-- Sylvanaar
 				exploration(3769, "256:396:405:272"),		-- Thunderlord Stronghold

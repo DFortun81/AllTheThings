@@ -664,10 +664,7 @@ _.Instances = { tier(MOP_TIER, {
 					}),
 					-- Mounts, Caches, and Quest Items!
 					i(87771),	-- Heavenly Onyx Cloud Serpent
-					{
-						["itemID"] = 89317,	-- Claw of Anger
-						["questID"] = 31809,	-- Remnants of Anger
-					},
+					i(89317),	-- Claw of Anger
 					i(90839, {	-- Cache of Sha-Touched Gold	-- TODO: should be symlink for duplicate rewards
 						i(86884),	-- Belt of Embodied Terror
 						i(86900),	-- Binder's Chain of Unending Summer
@@ -1216,3 +1213,14 @@ _.Instances = { tier(MOP_TIER, {
 		},
 	}),
 })};
+root("HiddenQuestTriggers",{
+	tier(MOP_TIER, {
+		q(33226),	-- Short-Supply Reward - Celestials bonus roll
+		q(32923),	-- Short-Supply Reward - Galleon bonus roll
+		q(32919),	-- Short-Supply Reward - Nalak bonus roll
+		q(33109),	-- Short-Supply Reward - Nalak secondary killID
+		q(32922),	-- Short-Supply Reward - Oondasta bonus roll
+		q(33225),	-- Short-Supply Reward - Ordos bonus roll
+		q(32924),	-- Short-Supply Reward - Sha of Anger bonus roll
+	}),
+});

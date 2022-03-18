@@ -338,7 +338,7 @@ _.ExpansionFeatures =
 								["isDaily"] = true,
 								["g"] = {
 									i(175141, {	-- All-Seeing Left Eye
-										i(175140),	-- All-Seeing Eyes (toy)
+										i(175140),	-- All-Seeing Eyes (TOY!)
 									}),
 									i(174474),	-- Corrupted Tentacle (pet)
 								},
@@ -703,7 +703,7 @@ _.ExpansionFeatures =
 								["coord"] = { 31.0, 22.8, 1530 },
 								["isDaily"] = true,
 								["g"] = {
-									i(174873),	-- Trans-mogu-rifier
+									i(174873),	-- Trans-mogu-rifier (TOY!)
 								},
 							}),
 							n(154600, {	-- Teng the Awakened

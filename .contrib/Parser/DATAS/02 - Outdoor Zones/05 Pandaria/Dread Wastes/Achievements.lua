@@ -202,6 +202,3 @@ _.Zones =
 		}),
 	}),
 };
-_.HiddenQuestTriggers = {
-	q(31666),	-- Second Trigger for Wind-Reaver's Dagger of Quick Strikes
-};

@@ -210,7 +210,8 @@ namespace ATT
                 if (listType == typeof(long)
                     || listType == typeof(int)
                     || listType == typeof(double)
-                    || listType == typeof(float))
+                    || listType == typeof(float)
+                    || listType == typeof(string))
                 {
                     // These are simple types that can be compressed.
                     // Open Bracket for beginning of the List.

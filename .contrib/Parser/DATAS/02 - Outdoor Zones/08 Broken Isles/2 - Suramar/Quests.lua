@@ -631,7 +631,7 @@ _.Zones =
 					["provider"] = { "n", 107997 },	-- Silgryn
 					["sourceQuest"] = 40745,	-- Shift Change
 					["g"] = {
-						i(130209),	-- Never Ending Toy Chest
+						i(130209),	-- Never Ending Toy Chest (TOY!)
 					},
 				}),
 				q(42487, {	-- Friends On the Outside
@@ -1038,7 +1038,7 @@ _.Zones =
 					["provider"] = { "n", 108389 },	-- Mrgrlilgrl
 					["sourceQuest"] = 42728,	-- A Mlrglrmg For Grlmrgl
 					["g"] = {
-						i(141879),	-- Berglrgl Perrgl Girggrlf (Toy)
+						i(141879),	-- Berglrgl Perrgl Girggrlf (TOY!)
 					},
 				}),
 				q(41479, {	-- Natural Adversaries
@@ -1648,11 +1648,6 @@ _.Zones =
 					["coord"] = { 35.3, 47.3, SURAMAR },
 					["provider"] = { "n", 98312 },	-- First Arcanist Thalyssra
 					["sourceQuest"] = 40008,	-- The Only Way Out is Through
-				}),
-				q(45417, {	-- The Nighthold: Lord of the Shadow Council
-					["coord"] = { 44.1, 60.1, SURAMAR },
-					["provider"] = { "n", 115367 },	-- Archmage Khadgar
-					["sourceQuest"] = 44719,	-- Breaching the Sanctum
 				}),
 				q(42835, {	-- The Old Fashioned Way
 					["coord"] = { 58.2, 53.0, SURAMAR },

@@ -109,11 +109,10 @@ _.Zones =
 					["coord"] = { 64.2, 66.9, TEROKKAR_FOREST },
 					["cost"] = {
 						{ "i", 32741, 1 },	-- Shabby Arakkoa Disguise
-						{ "i", 32742, 1 },	-- Adversarial Bloodlines
 					},
 					["groups"] = {
-						i(32742, {	-- Adversarial Bloodlines
-							["questID"] = 11029,	-- A Shabby Disguise
+						objective(1, {
+							["provider"] = { "i", 32742 },	-- Adversarial Bloodlines
 							["coord"] = { 67.0, 79.6, TEROKKAR_FOREST },
 						}),
 					},
@@ -149,12 +148,9 @@ _.Zones =
 					["provider"] = { "n", 23306 },	-- Hazzik
 					["sourceQuest"] = 11028,	-- Countdown to Doom
 					["coord"] = { 64.2, 66.9, TEROKKAR_FOREST },
-					["cost"] = {
-						{ "i", 32687, 1 },	-- Hazzik's Package
-					},
 					["groups"] = {
-						i(32687, {	-- Hazzik's Package
-							["questID"] = 11056,	-- Hazzik's Bargain
+						objective(1, {
+							["provider"] = { "i", 32687 },	-- Hazzik's Package
 							["coord"] = { 74.8, 80.1, TEROKKAR_FOREST },
 						}),
 					},

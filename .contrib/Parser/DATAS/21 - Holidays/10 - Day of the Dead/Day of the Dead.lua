@@ -160,19 +160,19 @@ _.Holidays = { applyholiday(DAY_OF_THE_DEAD, {
 				},
 				["timeline"] = { "added 3.2.2.10505" },
 				["groups"] = {
-					i(116856, {	-- "Blooming Rose" Contender's Costume
+					i(116856, {	-- "Blooming Rose" Contender's Costume (TOY!)
 						["timeline"] = { "added 6.0.1.18594" },
 					}),
-					i(116888, {	-- "Night Demon" Contender's Costume
+					i(116888, {	-- "Night Demon" Contender's Costume (TOY!)
 						["timeline"] = { "added 6.0.1.18594" },
 					}),
-					i(116889, {	-- "Purple Phantom" Contender's Costume
+					i(116889, {	-- "Purple Phantom" Contender's Costume (TOY!)
 						["timeline"] = { "added 6.0.1.18594" },
 					}),
-					i(116890, {	-- "Santo's Sun" Contender's Costume
+					i(116890, {	-- "Santo's Sun" Contender's Costume (TOY!)
 						["timeline"] = { "added 6.0.1.18594" },
 					}),
-					i(116891, {	-- "Snowy Owl" Contender's Costume
+					i(116891, {	-- "Snowy Owl" Contender's Costume (TOY!)
 						["timeline"] = { "added 6.0.1.18594" },
 					}),
 					i(46861, {	-- Bouquet of Orange Marigolds

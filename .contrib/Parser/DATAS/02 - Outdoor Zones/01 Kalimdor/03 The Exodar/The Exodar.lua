@@ -395,12 +395,12 @@ _.Zones =
 						["coord"] = { 81.5, 51.4, THE_EXODAR },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(29745),	-- Great Blue Elekk Mount
-							i(29746),	-- Great Green Elekk Mount
-							i(29747),	-- Great Purple Elekk Mount
-							i(28481),	-- Brown Elekk
-							i(29743),	-- Purple Elekk
-							i(29744),	-- Gray Elekk
+							i(29745),	-- Great Blue Elekk (MOUNT!)
+							i(29746),	-- Great Green Elekk (MOUNT!)
+							i(29747),	-- Great Purple Elekk (MOUNT!)
+							i(28481),	-- Brown Elekk (MOUNT!)
+							i(29743),	-- Purple Elekk (MOUNT!)
+							i(29744),	-- Gray Elekk (MOUNT!)
 						},
 					}),
 				}),

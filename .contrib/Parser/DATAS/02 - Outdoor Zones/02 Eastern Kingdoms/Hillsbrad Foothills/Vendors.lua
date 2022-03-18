@@ -40,12 +40,6 @@ _.Zones =
 						i(21099),	-- Recipe: Smoked Sagefish
 					},
 				}),
-				n(13217, {	-- Thanthaldis Snowgleam <Stormpike Supply Officer>
-					["coord"] = { 44.6, 46.4, HILLSBRAD_FOOTHILLS },
-					["itemID"] = 137642,	-- Mark of Honor
-					["races"] = ALLIANCE_ONLY,
-					["sym"] = { { "sub", "common_vendor", 13216 } }, -- Gaelden Hammersmith <Stormpike Supply Officer>
-				}),
 				n(2698,  {	-- George Candarte <Leatherworking Supplies>
 					["coord"] = { 76.6, 58.6, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
@@ -66,12 +60,6 @@ _.Zones =
 							["isLimited"] = true,
 						}),
 					},
-				}),
-				n(13219, {	-- Jorek Ironside
-					["itemID"] = 137642,	-- Mark of Honor
-					["coord"] = { 58.1, 33.6, HILLSBRAD_FOOTHILLS },
-					["races"] = HORDE_ONLY,
-					["sym"] = { { "sub", "common_vendor", 13218 } }, -- Grunnda Wolfheart
 				}),
 				n(3536,  {	-- Kris Legace <Freewheeling Tradeswoman>
 					["coord"] = { 68.8, 58.8, HILLSBRAD_FOOTHILLS },

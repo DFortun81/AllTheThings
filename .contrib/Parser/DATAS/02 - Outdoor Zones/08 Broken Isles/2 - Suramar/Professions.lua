@@ -37,15 +37,6 @@ _.Zones =
 					}),
 				}),
 				prof(FISHING, {
-					n(ARTIFACTS, {
-						["description"] = "Prerequisites:\n\n  Be level 45.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry.\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
-						["lvl"] = { 45 },
-						["g"] = {
-							q(40960, {	-- Luminous Pearl
-								["provider"] = { "i", 133887 },	-- Luminous Pearl
-							}),
-						},
-					}),
 					ach(10596, {	-- Bigger Fish to Fry
 						["collectible"] = false,
 						["g"] = {
@@ -165,82 +156,37 @@ _.Zones =
 							}),
 						},
 					}),
-					ach(11725, {	-- Fisherfriend of the Isles
-						["collectible"] = false,
-						["description"] = "The Fishing Masters are on a daily rotation, so only one is up at a time.  The order is:\n\n1. Sha'leth\n2. Impus\n3. Ilyssia of the Waters\n4. Keeper Raynae\n5. Akule Riverhorn\n6. Corbyn\n\nMake sure you're close enough to the Fishing Master to get the |cFFFFD700Something's Fishy|r buff, or you won't be able to fish up the items (the buff may not show up until you dismount).\n\nThe quickest way to reach Best Friend is to fish in a group.\n",
+					faction(2101, {	-- Sha'leth
+						["creatureID"] = 120459,
+						["coord"] = { 50.6, 49.3, SURAMAR },
+						["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF50.6, 49.3|r in The Grand Promenade near the edge of Suramar City.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
+						["requireSkill"] = FISHING,
 						["g"] = {
-							faction(2101, {	-- Sha'leth
-								["creatureID"] = 120459,
-								["coord"] = { 50.6, 49.3, SURAMAR },
-								["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF50.6, 49.3|r in The Grand Promenade near the edge of Suramar City.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-								["requireSkill"] = FISHING,
-								["g"] = {
-									i(146962, {		-- Golden Minnow
-										-- extra info for the item can go here
-									}),
-									i(147311, {	-- Crate of Bobbers: Replica Gondola
-										["cost"] = { { "i", 146962, 100 }, },	-- 100x Golden Minnow
-									}),
-									i(133717, {	-- Enchanted Lure
-										["cost"] = { { "i", 146962, 25 }, },	-- 25x Golden Minnow
-									}),
-									i(133719, {	-- Sleeping Murloc
-										["cost"] = { { "i", 146962, 25 }, },	-- 25x Golden Minnow
-									}),
-									i(133720, {	-- Demonic Detritus
-										["cost"] = { { "i", 146962, 25 }, },	-- 25x Golden Minnow
-									}),
-									i(124111, {	-- Runescale Koi
-										["cost"] = { { "i", 146962, 10 }, },	-- 10x Golden Minnow
-									}),
-									i(143748, {	-- Leyscale Koi
-										["cost"] = { { "i", 146962, 5 }, },	-- 5x Golden Minnow
-									}),
-								},
+							i(146962, {		-- Golden Minnow
+								-- extra info for the item can go here
+							}),
+							i(147311, {	-- Crate of Bobbers: Replica Gondola (TOY!)
+								["cost"] = { { "i", 146962, 100 }, },	-- 100x Golden Minnow
+							}),
+							i(133717, {	-- Enchanted Lure
+								["cost"] = { { "i", 146962, 25 }, },	-- 25x Golden Minnow
+							}),
+							i(133719, {	-- Sleeping Murloc
+								["cost"] = { { "i", 146962, 25 }, },	-- 25x Golden Minnow
+							}),
+							i(133720, {	-- Demonic Detritus
+								["cost"] = { { "i", 146962, 25 }, },	-- 25x Golden Minnow
+							}),
+							i(124111, {	-- Runescale Koi
+								["cost"] = { { "i", 146962, 10 }, },	-- 10x Golden Minnow
+							}),
+							i(143748, {	-- Leyscale Koi
+								["cost"] = { { "i", 146962, 5 }, },	-- 5x Golden Minnow
 							}),
 						},
 					}),
 					i(137845),	-- Design: Maelstrom Band (Rank 3)
 					i(137695),	-- Schematic: Reaves Module: Wormhole Generator Mode
-				}),
-				prof(SKINNING, {
-					q(40158),	-- Darkheart Thicket: Demons Be Different
-					q(40154),	-- Eye of Azshara: The Scales of Serpentrix
-					q(40139),	-- Halls of Valor: The Hide of Fenryr
-					q(40151),	-- Immaculate Stormscale
-					q(40137),	-- Leather for Ske'rit
-					q(40153),	-- Return to Karazhan: Scales of Legend
-					q(40152),	-- Scales for Ske'rit
-					q(40140, {	-- Ske'rit's Leather Handbook
-						["requireSkill"] = SKINNING,
-						["sourceQuests"] = {
-							40138,	-- Trial of the Crusader: Hides of Legend
-							40139,	-- Halls of Valor: The Hide of Fenryr
-						},
-						["provider"] = { "n", 98720 },	-- Ske'rit
-						["g"] = {
-							sp(194819),	-- Skinning Technique: Stonehide Leather (Rank 3)
-						},
-					}),
-					q(40155, {	-- Ske'rit's Scale-Skinning Suggestions
-						["sourceQuests"] = {
-							40153,	-- Return to Karazhan: Scales of Legend
-							40154,	-- Eye of Azshara: The Scales of Serpentrix
-						},
-						["provider"] = { "n", 98720 },	-- Ske'rit
-						["g"] = {
-							sp(194822),	-- Skinning Technique: Stormscale (Rank 3)
-						},
-					}),
-					q(40138, {	-- Trial of the Crusader: Hides of Legend
-						["requireSkill"] = SKINNING,
-					}),
-					q(40143, {	-- Unfinished Treatise on the Properties of Stormscale
-						["sourceQuests"] = { 40142 },	-- The Core of the Stormscale
-						["requireSkill"] = SKINNING,
-						["description"] = "The item that starts this quest can be skinned from any scaled creature found across the Broken Isles.",
-						["itemID"] = 129865,	-- Unfinished Treatise on the Properties of Stormscale
-					}),
 				}),
 				prof(TAILORING, {
 					q(44741, {	-- Return to Karazhan: The Big Bag Theory

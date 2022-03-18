@@ -18,7 +18,9 @@ _.Zones =
 				q(46006),	-- Arkuthaz (invasion WQ)
 				q(41451),	-- Assault on Hrydshal
 				q(46008),	-- Balnazoth (Invasion WQ)
-				q(42025),	-- Bareback Brawl
+				q(42025, {	-- Bareback Brawl
+					ach(11476),		-- Saddle Sore
+				}),
 				q(45072),	-- Barrels o' Fun
 				q(41935),	-- Beasts of Burden
 				q(46010),	-- Bonecrusher Korgolath (Invasion wq)

@@ -9,7 +9,7 @@ _.Zones =
 			["g"] = {
 				n(ACHIEVEMENTS, {	-- Achievements
 					ach(11427, {	-- No Shellfish Endeavor
-						i(143660),	-- Mrgrglhjorn
+						i(143660),	-- Mrgrglhjorn (TOY!)
 					}),
 				}),
 				n(-170, {	-- Balance of Power

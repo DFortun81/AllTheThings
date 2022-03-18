@@ -128,8 +128,8 @@ _.Instances = { tier(WOTLK_TIER, {
 						["crs"] = { 32906 },	-- Freya
 						["u"] = REMOVED_FROM_GAME,
 						["g"] = {
-							i(45788, {	-- Freya's Sigil
-								["questID"] = 13606,	-- Freya's Sigil
+							objective(1, {
+								["provider"] = { "i", 45788 },	-- Freya's Sigil
 							}),
 						},
 					}),
@@ -139,8 +139,8 @@ _.Instances = { tier(WOTLK_TIER, {
 						["crs"] = { 32845 },	-- Hodir
 						["u"] = REMOVED_FROM_GAME,
 						["g"] = {
-							i(45786, {	-- Hodir's Sigil
-								["questID"] = 13609,	-- Hodir's Sigil
+							objective(1, {
+								["provider"] = { "i", 45786 },	-- Hodir's Sigil
 							}),
 						},
 					}),
@@ -150,8 +150,8 @@ _.Instances = { tier(WOTLK_TIER, {
 						["crs"] = { 33350 },	-- Mimiron
 						["u"] = REMOVED_FROM_GAME,
 						["g"] = {
-							i(45787, {	-- Mimiron's Sigil
-								["questID"] = 13611,	-- Mimiron's Sigil
+							objective(1, {
+								["provider"] = { "i", 45787 },	-- Mimiron's Sigil
 							}),
 						},
 					}),
@@ -161,8 +161,8 @@ _.Instances = { tier(WOTLK_TIER, {
 						["crs"] = { 32865 },	-- Thorim
 						["u"] = REMOVED_FROM_GAME,
 						["g"] = {
-							i(45784, {	-- Thorim's Sigil
-								["questID"] = 13610,	-- Thorim's Sigil
+							objective(1, {
+								["provider"] = { "i", 45784 },	-- Thorim's Sigil
 							}),
 						},
 					}),
@@ -191,8 +191,8 @@ _.Instances = { tier(WOTLK_TIER, {
 						["provider"] = { "n", 33957 },	-- Prospector Loren
 						["crs"] = { 32906 },	-- Freya
 						["g"] = {
-							i(45814, {	-- Freya's Sigil
-								["questID"] = 13821,	-- Heroic: Freya's Sigil
+							objective(1, {
+								["provider"] = { "i", 45814 },	-- Freya's Sigil
 							}),
 						},
 					}),
@@ -201,8 +201,8 @@ _.Instances = { tier(WOTLK_TIER, {
 						["provider"] = { "n", 33957 },	-- Prospector Loren
 						["crs"] = { 32845 },	-- Hodir
 						["g"] = {
-							i(45815, {	-- Hodir's Sigil
-								["questID"] = 13822,	-- Heroic: Hodir's Sigil
+							objective(1, {
+								["provider"] = { "i", 45815 },	-- Hodir's Sigil
 							}),
 						},
 					}),
@@ -211,8 +211,8 @@ _.Instances = { tier(WOTLK_TIER, {
 						["provider"] = { "n", 33957 },	-- Prospector Loren
 						["crs"] = { 33350 },	-- Mimiron
 						["g"] = {
-							i(45816, {	-- Mimiron's Sigil
-								["questID"] = 13824,	-- Heroic: Mimiron's Sigil
+							objective(1, {
+								["provider"] = { "i", 45816 },	-- Mimiron's Sigil
 							}),
 						},
 					}),
@@ -221,8 +221,8 @@ _.Instances = { tier(WOTLK_TIER, {
 						["provider"] = { "n", 33957 },	-- Prospector Loren
 						["crs"] = { 32865 },	-- Thorim
 						["g"] = {
-							i(45817, {	-- Thorim's Sigil
-								["questID"] = 13823,	-- Heroic: Thorim's Sigil
+							objective(1, {
+								["provider"] = { "i", 45817 },	-- Thorim's Sigil
 							}),
 						},
 					}),
@@ -236,9 +236,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						["provider"] = { "n", 33957 },	-- Prospector Loren
 						["crs"] = { 32871 },	-- Algalon the Observer
 						["g"] = {
-							i(45798, {	-- Heroic Celestial Planetarium Key
-								["questID"] = 13818,	-- Heroic: Algalon
-							}),
+							i(45798),	-- Heroic Celestial Planetarium Key
 							i(45878, {	-- Large Sack of Ulduar Spoils
 								i(45087),	-- Runed Orb
 								i(45100),	-- Pattern: Belt of Arctic Life
@@ -645,6 +643,8 @@ _.Instances = { tier(WOTLK_TIER, {
 					i(45452),	-- Frostplate Greaves
 					i(45451),	-- Frozen Loop
 					i(45874),	-- Signet of Winter
+					i(45786),	-- Hodir's Sigil
+					i(45815),	-- Hodir's Sigil
 				})),
 				cr(32865, e(1645, {	-- Thorim
 					crit(2, {	-- Thorim
@@ -688,6 +688,8 @@ _.Instances = { tier(WOTLK_TIER, {
 					i(45894),	-- Leggings of Unstable Discharge
 					i(45469),	-- Sif's Promise
 					i(45466),	-- Scale of Fates
+					i(45784),	-- Thorim's Sigil
+					i(45817),	-- Thorim's Sigil
 				})),
 				ach(12360, {	-- Lumberjacked
 					["description"] = "Must be killed before killing Freya or they will despawn.",
@@ -732,6 +734,8 @@ _.Instances = { tier(WOTLK_TIER, {
 					i(45482),	-- Leggings of the Lifetender
 					i(45936),	-- Legplates of Fluorishing Resolve
 					i(45483),	-- Boots of the Servant
+					i(45788),	-- Freya's Sigil
+					i(45814),	-- Freya's Sigil
 					i(46110, {	-- Alchemist's Cache
 						["requireSkill"] = ALCHEMY,
 					}),
@@ -783,6 +787,8 @@ _.Instances = { tier(WOTLK_TIER, {
 						i(45975),	-- Cable of the Metrognome
 						i(45491),	-- Waistguard of the Creator
 						i(45490),	-- Pandora's Plea
+						i(45787),	-- Mimiron's Sigil
+						i(45816),	-- Mimiron's Sigil
 					},
 				})),
 				cr(33271, e(1648, {	-- General Vezax

@@ -5,14 +5,14 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(249, {	-- Uldum
+		m(ULDUM, {
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
 					["filterID"] = BATTLE_PETS,
 					["g"] = {
 						crit(29, {	-- Obalis
-							["coord"] = { 56.6, 41.8, 249 },
+							["coord"] = { 56.6, 41.8, ULDUM },
 							["cr"] = 66824,	-- Obalis <Grand Master Pet Tamer>
 						}),
 					},

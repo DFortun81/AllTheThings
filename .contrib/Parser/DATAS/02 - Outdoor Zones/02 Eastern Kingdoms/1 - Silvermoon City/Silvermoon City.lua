@@ -472,7 +472,7 @@ _.Zones =
 								},
 							}),
 							i(25549),	-- Blood Knight Tabard
-							mount(34767),	-- Summon Thalassian Charger
+							mount(34767),	-- Thalassian Charger (MOUNT!)
 						},
 					}),
 				}),

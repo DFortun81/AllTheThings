@@ -121,9 +121,9 @@ _.Zones =
 					["provider"] = { "n", 7955 },	-- Milli Featherwhistle
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(18772),	-- Swift Green Mechanostrider
-						i(18773),	-- Swift White Mechanostrider
-						i(18774),	-- Swift Yellow Mechanostrider
+						i(18772),	-- Swift Green Mechanostrider (MOUNT!)
+						i(18773),	-- Swift White Mechanostrider (MOUNT!)
+						i(18774),	-- Swift Yellow Mechanostrider (MOUNT!)
 					},
 				}),
 				q(313,   {	-- Forced to Watch from Afar
@@ -415,9 +415,9 @@ _.Zones =
 					["provider"] = { "n", 7955 },	-- Milli Featherwhistle
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(18772),	-- Swift Green Mechanostrider
-						i(18773),	-- Swift White Mechanostrider
-						i(18774),	-- Swift Yellow Mechanostrider
+						i(18772),	-- Swift Green Mechanostrider (MOUNT!)
+						i(18773),	-- Swift White Mechanostrider (MOUNT!)
+						i(18774),	-- Swift Yellow Mechanostrider (MOUNT!)
 					},
 				}),
 			}),

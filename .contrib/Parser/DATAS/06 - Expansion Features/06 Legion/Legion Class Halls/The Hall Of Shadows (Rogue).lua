@@ -29,7 +29,7 @@ _.ExpansionFeatures =
 								i(130322),	-- Mask of Artful Dodging
 							}),
 							o(252270, {	-- Mysterious Crate
-								i(139587),	-- Suspicious Crate [Toy]
+								i(139587),	-- Suspicious Crate (TOY!)
 								i(130322),	-- Mask of Artful Dodging
 								i(130324),	-- Boots of Artful Dodging
 							}),
@@ -824,9 +824,6 @@ _.ExpansionFeatures =
 							["classes"] = { ROGUE },
 							["provider"] = { "n", 98100 },	-- Taoshi
 							["coord"] = { 40.6, 77.0, 626 },
-						}),
-						q(46940, {	-- Using Lost Knowledge
-							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(47591, {	-- Wanna Buy a Lamp?
 							["coord"] = { 45.4, 27.6, 626 },

@@ -203,9 +203,9 @@ _.Zones =
 					["provider"] = { "n", 384 },	-- Katie Hunter
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(18777),	-- Swift Brown Steed
-						i(18776),	-- Swift Palomino
-						i(18778),	-- Swift White Steed
+						i(18777),	-- Swift Brown Steed (MOUNT!)
+						i(18776),	-- Swift Palomino (MOUNT!)
+						i(18778),	-- Swift White Steed (MOUNT!)
 					},
 				}),
 				q(86,    {	-- Pie for Billy
@@ -330,9 +330,9 @@ _.Zones =
 					["provider"] = { "n", 384 },	-- Katie Hunter
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(18777),	-- Swift Brown Steed
-						i(18776),	-- Swift Palomino
-						i(18778),	-- Swift White Steed
+						i(18777),	-- Swift Brown Steed (MOUNT!)
+						i(18776),	-- Swift Palomino (MOUNT!)
+						i(18778),	-- Swift White Steed (MOUNT!)
 					},
 				}),
 				q(106,   {	-- Young Lovers

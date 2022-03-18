@@ -337,7 +337,7 @@ root("Instances", tier(CLASSIC_TIER, {
 							objective(2, {	-- 0/1 Blessed Arcanite Barding
 								["provider"] = { "i", 18792 },	-- Blessed Arcanite Barding
 							}),
-							mount(23214, {	-- Summon Charger
+							mount(23214, {	-- Charger (MOUNT!)
 								["classes"] = { PALADIN },
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 60,
@@ -1494,7 +1494,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						["description"] = "This is a rare that is not always present.",
 						["timeline"] = { "added 5.0.4" },
 						["groups"] = {
-							i(88566, {	-- Krastinov's Bag of Horrors
+							i(88566, {	-- Krastinov's Bag of Horrors (TOY!)
 								["timeline"] = { "added 5.0.4" },
 							}),
 						},

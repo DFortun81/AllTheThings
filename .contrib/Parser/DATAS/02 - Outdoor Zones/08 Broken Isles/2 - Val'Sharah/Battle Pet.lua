@@ -59,7 +59,7 @@ _.Zones =
 								["provider"] = { "n", 115786 },	-- Sharptalon Hatchling
 								["sourceQuest"] = 45005,	-- The Uncongenial Faction
 								["g"] = {
-									i(142496),	-- Dirty Spoon
+									i(142496),	-- Dirty Spoon (TOY!)
 								},
 							}),
 							q(45019, {	-- Sharptalon Reunion

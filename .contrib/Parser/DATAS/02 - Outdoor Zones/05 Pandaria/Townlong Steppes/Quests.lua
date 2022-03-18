@@ -117,7 +117,7 @@ _.Zones =
 					["provider"] = { "n", 62573 },	-- Marksman Ye
 					["sourceQuest"] = 30976,	-- Joining the Hunt
 					["g"] = {
-						i(88589),	-- Cremating Torch
+						i(88589),	-- Cremating Torch (TOY!)
 					},
 				}),
 				q(30898, {	-- Cutting the Swarm
@@ -251,7 +251,7 @@ _.Zones =
 					["provider"] = { "n", 60864 },	-- Yalia Sagewhisper
 					["sourceQuest"] = 30827,	-- What Lies Beneath
 					["g"] = {
-						i(88584),	-- Totem of Harmony
+						i(88584),	-- Totem of Harmony (TOY!)
 					},
 				}),
 				q(30980, {	-- Heroes of the Shado-Pan
@@ -454,7 +454,7 @@ _.Zones =
 					["provider"] = { "n", 61161 },	-- Bluesaddle
 					["sourceQuest"] = 30929,	-- Bad Yak
 					["g"] = {
-						i(82467),	-- Ruthers' Harness
+						i(82467),	-- Ruthers' Harness (TOY!)
 					},
 				}),
 				q(30773, {	-- Pitching In
@@ -468,9 +468,6 @@ _.Zones =
 					["g"] = {
 						i(88583),	-- Ban's Bag of Bombs
 					},
-				}),
-				q(30974, {	-- Raising Spirits (NYI - never left beta)
-					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(30774, {	-- Ranger Rescue
 					["coord"] = { 67.2, 52.2, TOWNLONG_STEPPES },
@@ -605,16 +602,6 @@ _.Zones =
 						{ "n", 63624 },	-- Wu Kao Hawkmaster
 						{ "n", 63622 },	-- Wu Kao Rogue
 					},
-				}),
-				q(31392, {	-- Temple of the White Tiger (A)
-					["coord"] = { 74.8, 81.3, TOWNLONG_STEPPES },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 66247 },	-- Tigermaster Liu-Do
-				}),
-				q(31393, {	-- Temple of the White Tiger (H)
-					["coord"] = { 74.8, 81.3, TOWNLONG_STEPPES },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 66247 },	-- Tigermaster Liu-Do
 				}),
 				q(30900, {	-- Terror of the Dread Wastes
 					["coord"] = { 74.2, 85.0, TOWNLONG_STEPPES },
@@ -993,7 +980,22 @@ _.Zones =
 		}),
 	}),
 };
-
-root("HiddenQuestTriggers", {
-	q(31214),	-- FLAG - Chose Nurong
+root("HiddenQuestTriggers",{
+	tier(MOP_TIER, {
+		q(31123),	-- Chose Arms Warrior
+		q(31124),	-- Chose Brewmaster
+		q(31050),	-- Chose Fire Mage
+		q(31051),	-- Chose Frost Mage
+		q(31052),	-- Chose Priest
+		q(31122),	-- Chose Prot Warrior
+		q(31214),	-- FLAG - Chose Nurong
+		q(31213),	-- FLAG - Chose Taoshi
+		q(31212),	-- FLAG - Chose Tenwu
+		q(31607),	-- Tracking Event: Finished Spiteful Spirits & Hatred Becomes Us
+		q(31053),	-- Tracking Event: Started Shado-Pan Dailies
+		q(31125),	-- Unlocked Chao
+		q(31126),	-- Unlocked Lao-Chen
+		q(31054),	-- Unlocked Yalia Sagewhisper
+		--q(?????),	-- Looting a Bag of Wu Kao Supplies - WRONG QUEST ID
+	}),
 });

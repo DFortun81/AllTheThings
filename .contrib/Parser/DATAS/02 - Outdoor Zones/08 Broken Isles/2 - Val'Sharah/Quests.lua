@@ -401,12 +401,6 @@ _.Zones =
 					["coord"] = { 56.7, 54.4, VALSHARAH },
 					["cr"] = 92802,	-- Gravax the Desecrator
 				}),
-				q(39431, {	-- Mending the Filter
-					["provider"] = { "o", 249211 },	-- Torn Shaldorei Silk
-					["coord"] = { 54.3, 54.6, VALSHARAH },
-					["requireSkill"] = ALCHEMY,
-					["sourceQuests"] = { 39337 },	-- Forlorn Filter
-				}),
 				q(42857, {	-- Moist Around the Hedges
 					["coord"] = { 66.7, 75.7, VALSHARAH },
 				}),

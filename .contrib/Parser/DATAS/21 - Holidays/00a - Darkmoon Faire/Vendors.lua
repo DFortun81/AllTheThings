@@ -1006,7 +1006,7 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 		n(14845,  {	-- Stamp Thunderhorn
 			["coord"] = { 52.8, 67.9, 407 },
 			["g"] = {
-				i(162539, {	-- Hot Buttered Popcorn
+				i(162539, {	-- Hot Buttered Popcorn (TOY!)
 					["cost"] = { { "c", 515, 50 }, },	-- 50x Darkmoon Prize Ticket
 				}),
 			},

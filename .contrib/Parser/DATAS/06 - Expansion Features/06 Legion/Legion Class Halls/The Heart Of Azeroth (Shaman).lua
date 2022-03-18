@@ -31,7 +31,7 @@ _.ExpansionFeatures =
 							q(41075, {	-- Puzzle 05 Solved
 								["name"] = "Puzzle 5 Solved",
 								["g"] = {
-									i(140632),	-- Lava Fountain
+									i(140632),	-- Lava Fountain (TOY!)
 								},
 							}),
 						},
@@ -674,9 +674,6 @@ _.ExpansionFeatures =
 							["classes"] = { SHAMAN },
 							["provider"] = { "n", 106001 },	-- Muln Earthfury
 							["maps"] = { 207, 209 },	-- Deepholm
-						}),
-						q(46940, {	-- Using Lost Knowledge
-							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(43645, {	-- Wavespeaker's Trail
 							["sourceQuests"] = { 43644 },	-- To the Deeps

@@ -826,10 +826,10 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(12212),	-- Jungle Stew
 			i(5472),	-- Kaldorei Spider Kabob
 			i(5480, {	-- Lean Venison
-				["timeline"] = { "removed 4.0.3.10000" },
+				["timeline"] = { "removed 4.0.3.10000", "added 9.1" },
 			}),
 			i(12209, {	-- Lean Wolf Steak
-				["timeline"] = { "removed 5.0.4.10000" },
+				["timeline"] = { "removed 5.0.4.10000", "added 9.1" },
 			}),
 			-- #if AFTER WOD
 			applyclassicphase(WOD_PHASE_ONE, i(126934)),	-- Lemon Herb Filet
@@ -981,8 +981,8 @@ _.Craftables = { tier(CLASSIC_TIER, {
 					i(10720),	-- Gnomish Net-o-Matic Projector
 					i(10724),	-- Gnomish Rocket Boots
 					i(10716),	-- Gnomish Shrink Ray
-					i(18986),	-- Ultrasafe Transporter: Gadgetzan
-					i(18660),	-- World Enlarger
+					i(18986),	-- Ultrasafe Transporter: Gadgetzan (TOY!)
+					i(18660),	-- World Enlarger (TOY!)
 				}),
 				category(185, {	-- Goggles
 					i(10545, {	-- Gnomish Goggles
@@ -1007,7 +1007,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				}),
 				-- #endif
 				category(188, {	-- Devices
-					i(18984),	-- Dimensional Ripper - Everlook
+					i(18984),	-- Dimensional Ripper - Everlook (TOY!)
 					i(10543, {	-- Goblin Construction Helmet
 						["requireSkill"] = 20222,	-- Goblin Engineering (BOP - Required)
 					}),
@@ -1086,7 +1086,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(10518),	-- Parachute Cloak
 			i(6712),	-- Practice Lock
 			i(15846),	-- Salt Shaker
-			i(17716),	-- Snowmaster 9000
+			i(17716),	-- Snowmaster 9000 (TOY!)
 			applyclassicphase(TBC_PHASE_ONE, i(22728)),	-- Steam Tonk Controller
 			i(4366),	-- Target Dummy
 			i(18639),	-- Ultra-Flash Shadow Reflector

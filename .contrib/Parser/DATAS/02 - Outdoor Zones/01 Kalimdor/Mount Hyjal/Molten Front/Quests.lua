@@ -92,6 +92,12 @@ _.Zones =
 					q(29331, {	-- Elemental Bonds: The Vow
 						["coord"] = { 51.4, 25.7, 338 },
 						["sourceQuest"] = 29330,	-- Elemental Bonds: Fury
+						["g"] = {
+							i(71268),	-- Mantle of Doubt
+							i(71267),	-- Mantle of Desire
+							i(71270),	-- Mantle of Patience
+							i(71269),	-- Mantle of Fury
+						},
 					}),
 					q(29255, {	-- Embergris
 						["provider"] = { "n", 52489 },	-- Avrilla

@@ -90,35 +90,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(8524)),	-- Model 4711-FTZ Power Source
 					},
 				}),
-				q(9269,  {	-- Atiesh, Greatstaff of the Guardian
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 15192 },	-- Anachronos
-					["classes"] = { DRUID },
-					["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
-				}),
-				q(9270,  {	-- Atiesh, Greatstaff of the Guardian
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 15192 },	-- Anachronos
-					["classes"] = { MAGE },
-					["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
-				}),
-				q(9271,  {	-- Atiesh, Greatstaff of the Guardian
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 15192 },	-- Anachronos
-					["classes"] = { WARLOCK },
-					["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
-				}),
-				q(9257,  {	-- Atiesh, Greatstaff of the Guardian
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 15192 },	-- Anachronos
-					["classes"] = { PRIEST },
-					["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
-				}),
-				q(9251,  {	-- Atiesh, the Befouled Greatstaff
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 15192 },	-- Anachronos
-					["sourceQuest"] = 9250,	-- Frame of Atiesh
-				}),
 				q(25115, {	-- Blisterpaw Butchery
 					["provider"] = { "n", 39178 },	-- Driz Plunkbow
 					["coord"] = { 52.2, 28.0, TANARIS },
@@ -321,10 +292,6 @@ _.Zones =
 					["provider"] = { "n", 38922 },	-- Examiner Andoren Dawnrise
 					["coord"] = { 33.2, 77.0, TANARIS },
 					["races"] = HORDE_ONLY,
-				}),
-				q(9250,  {	-- Frame of Atiesh
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "i", 22727 },	-- Frame of Atiesh
 				}),
 				q(992,   {	-- Gadgetzan Water Survey
 					["provider"] = { "n", 7724 },	-- Senior Surveyor Fizzledowser
@@ -997,10 +964,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(9642)),	-- Band of the Great Tortoise
 						un(REMOVED_FROM_GAME, i(9638)),	-- Chelonian Cuffs
 					},
-				}),
-				q(3042, {	-- Troll Temper
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 7804 },	-- Trenton Lighthammer
 				}),
 				q(24911, {	-- Tropical Paradise Beckons
 					["isBreadcrumb"] = true,

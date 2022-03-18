@@ -8,7 +8,7 @@ root("ExpansionFeatures", {
 			["icon"] = "Interface\\Icons\\INV_FACTION_83_ULDUMACCORD",
 			["lvl"] = 120,
 			["maps"] = {
-				249,	-- Uldum (pre-120, funky map changes forces us to put the old map here too)
+				ULDUM,	-- pre-120, funky map changes forces us to put the old map here too
 				1540,	-- Halls of Origination (storyline version)
 				1541,	-- Halls of Origination (Investigating the Halls scenario)
 				-- 1542,	-- Halls of Origination (storyline version, floor 3)
@@ -718,6 +718,28 @@ root("ExpansionFeatures", {
 								},
 							}),
 						}),
+						n(TREASURES, {
+							o(339248, {	-- Infested Cache
+								["questID"] = 58141,
+								["coords"] = {
+									{ 36.1, 20.2, 1527 },
+									{ 37.4, 45.7, 1527 },
+									{ 37.5, 45.8, 1527 },
+									{ 38.8, 40.1, 1527 },
+									{ 39.7, 23.6, 1527 },
+									{ 39.8, 45.0, 1527 },
+									{ 40.2, 42.4, 1527 },
+									{ 40.2, 42.5, 1527 },
+									{ 40.4, 44.2, 1527 },
+									{ 40.5, 44.3, 1527 },
+									{ 40.8, 38.9, 1527 },
+									{ 41.6, 42.4, 1527 },
+									{ 41.6, 42.5, 1527 },
+									{ 43.1, 36.4, 1527 },
+									{ 43.1, 36.5, 1527 },
+								},
+							}),
+						}),
 						n(WORLD_QUESTS, {
 							q(56308, {	-- Assault: Aqir Unearthed
 								["lvl"] = 120,
@@ -1086,7 +1108,7 @@ root("ExpansionFeatures", {
 								["coord"] = { 49.3, 82.3, 1527 },
 								["isDaily"] = true,
 								["g"] = {
-									i(169303),	-- Hell-Bent Bracers
+									i(169303),	-- Hell-Bent Bracers (TOY!)
 								},
 							}),
 							n(158595, {	-- Thoughtstealer Vos
@@ -1126,7 +1148,7 @@ root("ExpansionFeatures", {
 										["questID"] = 57438,
 										["isDaily"] = true,
 										["g"] = {
-											i(174874),	-- Budget K'thir Disguise
+											i(174874),	-- Budget K'thir Disguise (TOY!)
 										},
 									}),
 									n(157469, {	-- Zoth'rum the Intellect Pillager
@@ -1652,7 +1674,7 @@ root("ExpansionFeatures", {
 								["sourceQuest"] = 58805,	-- Continued Incubation
 								["description"] = "Must reach 5000/5000 with the egg's progress bar.",
 								["g"] = {
-									i(175063),	-- Aqir Egg Cluster
+									i(175063),	-- Aqir Egg Cluster (TOY!)
 								},
 							}),
 							q(58811, {	-- A Balanced Diet
@@ -2006,7 +2028,7 @@ root("ExpansionFeatures", {
 									i(174925, {	-- Void Tendril Pet Leash
 										["cost"] = { { "c", 1719, 1 }, },	-- 1x Corrupted Memento
 									}),
-									i(174995, {	-- Void Tendril Pet Leash (Toy)
+									i(174995, {	-- Void Tendril Pet Leash (TOY!)
 										["cost"] = {
 											{ "i", 163036, 20 },	-- Polished Pet Charm
 											{ "c", 1719, 100 },		-- 100x Corrupted Memento

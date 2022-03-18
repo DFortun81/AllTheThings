@@ -7,24 +7,7 @@ _.Zones =
 	m(BROKEN_ISLES, {
 		m(STORMHEIM, {
 			n(PROFESSIONS, {
-				prof(ARCHAEOLOGY, {
-					q(41157, {	-- Corrupted Studies
-						["isWeekly"] = true,
-					}),
-					q(41159, {	-- Process of Elimination
-						["isWeekly"] = true,
-					}),
-				}),
 				prof(FISHING, {
-					n(ARTIFACTS, {
-						["description"] = "Prerequisites:\n\n  Be level 45.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry.\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
-						["lvl"] = { 45 },
-						["g"] = {
-							q(40960, {	-- Luminous Pearl
-								["provider"] = { "i", 133887 },	-- Luminous Pearl
-							}),
-						},
-					}),
 					ach(10596, {	-- Bigger Fish to Fry
 						["collectible"] = false,
 						["g"] = {
@@ -135,68 +118,38 @@ _.Zones =
 							}),
 						},
 					}),
-					ach(11725, {	-- Fisherfriend of the Isles
-						["collectible"] = false,
-						["description"] = "The Fishing Masters are on a daily rotation, so only one is up at a time.  The order is:\n\n1. Sha'leth\n2. Impus\n3. Ilyssia of the Waters\n4. Keeper Raynae\n5. Akule Riverhorn\n6. Corbyn\n\nMake sure you're close enough to the Fishing Master to get the |cFFFFD700Something's Fishy|r buff, or you won't be able to fish up the items (the buff may not show up until you dismount).\n\nThe quickest way to reach Best Friend is to fish in a group.\n",
-						["g"] = {
-							faction(2100, {	-- Corbyn
-								["creatureID"] = 120458,
-								["coord"] = { 90.6, 10.6, STORMHEIM },
-								["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF90.6, 10.6|r on Shield's Rest.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-								["requireSkill"] = FISHING,
-								["groups"] = {
-									i(146961, {		-- Shiny Bauble
-										-- extra info for the item can go here
-									}),
-									i(147307, {	-- Crate of Bobbers: Carved Wooden Helm (TOY!)
-										["cost"] = { { "i", 146961, 100 }, },	-- 100x Shiny Bauble
-									}),
-									i(152574, {	-- Corbyn's Beacon (TOY!)
-										["cost"] = { { "i", 146961, 50 }, },	-- 50x Shiny Bauble
-									}),
-									i(133713, {	-- Moosehorn Hook
-										["cost"] = { { "i", 146961, 25 }, },	-- 25x Shiny Bauble
-									}),
-									i(133715, {	-- Ancient Vrykul Ring
-										["cost"] = { { "i", 146961, 25 }, },	-- 25x Shiny Bauble
-									}),
-									i(133716, {	-- Soggy Drakescale
-										["cost"] = { { "i", 146961, 25 }, },	-- 25x Shiny Bauble
-									}),
-									i(124110, {	-- Stormray
-										["cost"] = { { "i", 146961, 10 }, },	-- 10x Shiny Bauble
-									}),
-								},
+					faction(2100, {	-- Corbyn
+						["creatureID"] = 120458,
+						["coord"] = { 90.6, 10.6, STORMHEIM },
+						["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF90.6, 10.6|r on Shield's Rest.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
+						["requireSkill"] = FISHING,
+						["groups"] = {
+							i(146961, {		-- Shiny Bauble
+								-- extra info for the item can go here
+							}),
+							i(147307, {	-- Crate of Bobbers: Carved Wooden Helm (TOY!)
+								["cost"] = { { "i", 146961, 100 }, },	-- 100x Shiny Bauble
+							}),
+							i(152574, {	-- Corbyn's Beacon (TOY!)
+								["cost"] = { { "i", 146961, 50 }, },	-- 50x Shiny Bauble
+							}),
+							i(133713, {	-- Moosehorn Hook
+								["cost"] = { { "i", 146961, 25 }, },	-- 25x Shiny Bauble
+							}),
+							i(133715, {	-- Ancient Vrykul Ring
+								["cost"] = { { "i", 146961, 25 }, },	-- 25x Shiny Bauble
+							}),
+							i(133716, {	-- Soggy Drakescale
+								["cost"] = { { "i", 146961, 25 }, },	-- 25x Shiny Bauble
+							}),
+							i(124110, {	-- Stormray
+								["cost"] = { { "i", 146961, 10 }, },	-- 10x Shiny Bauble
 							}),
 						},
 					}),
 					i(137695),	-- Schematic: Reaves Module: Wormhole Generator Mode
 				}),
 				prof(SKINNING, {
-					q(40149, {	-- Drakol'nir Must Die
-						["sourceQuests"] = {
-							40147,	-- Mother's Prized Knife
-							40148,	-- Red-Eyed Revenge
-						},
-						["requireSkill"] = SKINNING,
-						["coord"] = { 45.7, 25.6, STORMHEIM },
-						["provider"] = { "n", 98721 },	-- Seymour
-						["groups"] = {
-							i(130102),	-- Mother's Skinning Knife (TOY!)
-						},
-					}),
-					q(40147, {	-- Mother's Prized Knife
-						["sourceQuests"] = { 40146 },	-- Seymour and Agnes
-						["requireSkill"] = SKINNING,
-						["coord"] = { 45.7, 25.6, STORMHEIM },
-						["provider"] = { "n", 98721 },	-- Seymour
-					}),
-					q(40148, {	-- Red-Eyed Revenge
-						["sourceQuests"] = { 40146 },	-- Seymour and Agnes
-						["requireSkill"] = SKINNING,
-						["coord"] = { 45.7, 25.6, STORMHEIM },
-						["provider"] = { "n", 98721 },	-- Seymour
-					}),
 					i(139894, {	-- Skinning Technique: Unbroken Claw
 						["requireSkill"] = SKINNING,
 						["crs"] = {
@@ -207,12 +160,6 @@ _.Zones =
 								["recipeID"] = 194171,	-- Unbroken Claw
 							},
 						},
-					}),
-					q(40143, {	-- Unfinished Treatise on the Properties of Stormscale
-						["sourceQuests"] = { 40142 },	-- The Core of the Stormscale
-						["requireSkill"] = SKINNING,
-						["description"] = "The item that starts this quest can be skinned from any scaled creature found across the Broken Isles.",
-						["itemID"] = 129865,	-- Unfinished Treatise on the Properties of Stormscale
 					}),
 				}),
 			}),

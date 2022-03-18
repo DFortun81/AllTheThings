@@ -1144,7 +1144,7 @@ _.ExpansionFeatures =
 						q(54282, {	-- Battle of Dazar'alor
 							["sourceQuests"] = { 54280 },	-- Fly Out to Meet Them
 							["provider"] = { "n", 146921 },	-- Princess Talanji
-							["coord"] = { 37.0, 5.2, ZULDAZAR },
+							["coord"] = { 37.0, 5.2, DAZARALOR },
 							["races"] = HORDE_ONLY,
 						}),
 						q(54164, {	-- The King's Death
@@ -1495,7 +1495,7 @@ _.ExpansionFeatures =
 							["coord"] = { 79.7, 74.7, SWAMP_OF_SORROWS },
 							["races"] = HORDE_ONLY,
 							["g"] = {
-								i(165791),	-- Worn Cloak
+								i(165791),	-- Worn Cloak (TOY!)
 							},
 						}),
 						q(54109, {	-- Queen's Favor

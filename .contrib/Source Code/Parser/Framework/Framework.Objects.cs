@@ -60,7 +60,7 @@ namespace ATT
             /// <summary>
             /// All of the Recipes (Name,RecipeID) that are in the database, keyed by required skill
             /// </summary>
-            public static IDictionary<object, List<Tuple<string, long>>> AllRecipes { get; } = new Dictionary<object, List<Tuple<string, long>>>();
+            public static IDictionary<long, Dictionary<long, string>> AllRecipes { get; } = new Dictionary<long, Dictionary<long, string>>();
 
             /// <summary>
             /// All of the Merged Objects (non-Items) that are in the database. This is used to ensure that various information is synced across all Sources of a given object as necessary
@@ -86,16 +86,6 @@ namespace ATT
             /// All of the SourceID's harvested for Legion Artifacts
             /// </summary>
             public static IDictionary<long, Dictionary<string, long>> ArtifactSources { get; } = new Dictionary<long, Dictionary<string, long>>();
-
-            /// <summary>
-            /// Whether the Parser is processing Source data as added by contributors (rather than an automated JSON DB)
-            /// </summary>
-            public static bool ProcessingSourceData = false;
-
-            /// <summary>
-            /// The set of Quests which the Parser has notified about being listed in multiple locations in Source
-            /// </summary>
-            public static HashSet<long> DuplicateSourceQuests = new HashSet<long>();
 
             #endregion
             #region Filters
@@ -427,6 +417,16 @@ namespace ATT
             }
 
             /// <summary>
+            /// Merges dictionary data based on all keys from the common storage into the Source object
+            /// </summary>
+            /// <param name="entry"></param>
+            internal static void Merge(Dictionary<string, object> data)
+            {
+                foreach (string key in MergeObjectFields.Keys)
+                    Merge(key, data);
+            }
+
+            /// <summary>
             /// Merges data for a given object based on the key from the Source object into a common storage for that keyed-object
             /// </summary>
             /// <param name="v"></param>
@@ -465,7 +465,17 @@ namespace ATT
             }
 
             /// <summary>
-            /// Merges data for a given object based on the key from the common storage for that keyed-object into the Source object
+            /// Merges dictionary data based on all keys from the common storage into the Source object
+            /// </summary>
+            /// <param name="entry"></param>
+            internal static void MergeInto(Dictionary<string, object> data)
+            {
+                foreach (string key in MergeObjectFields.Keys)
+                    MergeInto(key, data);
+            }
+
+            /// <summary>
+            /// Merges dictionary data based on a specific key from the common storage into the Source object
             /// </summary>
             /// <param name="v"></param>
             /// <param name="data"></param>
@@ -527,7 +537,7 @@ namespace ATT
                             // merge the objects into the data object
                             foreach (Dictionary<string, object> mergeObject in mergeObjects)
                                 // copy the actual object when merging under another Source, since it may merge into multiple Sources
-                                Merge(data, "g", new Dictionary<string, object>(mergeObject));
+                                Merge(data, "g", mergeObject);
                         }
                     }
                 }
@@ -565,34 +575,92 @@ namespace ATT
                     return;
 
                 // ensure skill bucket exists
-                if (!AllRecipes.TryGetValue(requiredSkill, out List<Tuple<string, long>> skillRecipes))
-                    AllRecipes[requiredSkill] = skillRecipes = new List<Tuple<string, long>>();
+                if (!AllRecipes.TryGetValue(requiredSkill, out Dictionary<long, string> skillRecipes))
+                    AllRecipes[requiredSkill] = skillRecipes = new Dictionary<long, string>();
 
                 // do not add matching recipeID
-                if (skillRecipes.Any(sr => sr.Item2 == recipeID))
+                if (skillRecipes.ContainsKey(recipeID))
                     return;
 
                 // add the recipe info
-                skillRecipes.Add(new Tuple<string, long>(recipeName, recipeID));
+                skillRecipes.Add(recipeID, recipeName);
             }
 
-            internal static bool FindRecipeByName(object requiredSkill, string recipeItemName, out long recipeID)
+            internal static bool FindRecipeForData(long requiredSkill, Dictionary<string, object> data, out long recipeID)
             {
+                const string DebugFormat = "Automated Recipe - RecipeID:{0},ItemID:{1},Method:{2}";
+                data.TryGetValue("itemID", out object itemID);
+                data.TryGetValue("spellID", out long spellID);
+                // get the name of the recipe item (i.e. Technique: blah blah)
+                Items.TryGetName(data, out string recipeItemName);
                 recipeID = 0;
+
+                // Item directly marked as a 'Recipe', then assume the associated spellID represents the recipeID
+                if (data.TryGetValue("f", out long filterID))
+                {
+                    if (filterID == (long)Filters.Recipe)
+                    {
+                        if (spellID > 0)
+                        {
+                            recipeID = spellID;
+
+                            if (DebugMode)
+                                Trace.WriteLine(string.Format(DebugFormat, recipeID, itemID, $"Recipe Filter on data with spellID - {recipeItemName}"));
+
+                            return true;
+                        }
+                    }
+                    // This Item is known to be 'something' which is not a Recipe, so just return
+                    else
+                    {
+                        recipeID = -1;
+                        return false;
+                    }
+                }
+
                 // no recipe name or doesn't contain :
                 if (recipeItemName == null || !recipeItemName.Contains(":"))
+                {
+                    recipeID = -1;
                     return false;
+                }
 
                 // find skill bucket
-                if (!AllRecipes.TryGetValue(requiredSkill, out List<Tuple<string, long>> skillRecipes))
-                    return false;
+                if (!AllRecipes.TryGetValue(requiredSkill, out Dictionary<long, string> skillRecipes))
+                {
+                    //if (DebugMode)
+                    //    Trace.WriteLine($"No recipes for skill {requiredSkill}");
 
-                foreach (Tuple<string, long> recipeInfo in skillRecipes)
+                    recipeID = -1;
+                    return false;
+                }
+
+                // if this Item has an existing spellID which matches a known RecipeID for this requiredSkill, then if the name matches, assume it's the exact RecipeID
+                if ((spellID > 0 || data.TryGetValue("recipeID", out spellID)) &&
+                    skillRecipes.TryGetValue(spellID, out string matchedRecipeName) &&
+                    (recipeItemName == matchedRecipeName || recipeItemName.Contains(matchedRecipeName)))
+                {
+                    // remove the spellID since it's converting to recipeID
+                    data.Remove("spellID");
+                    recipeID = spellID;
+
+                    if (DebugMode)
+                        Trace.WriteLine(string.Format(DebugFormat, recipeID, itemID, $"Data name '{recipeItemName}' with spellID matches exact recipeID with name '{matchedRecipeName}'"));
+
+                    return true;
+                }
+
+                // fallback: Loop through all recipes and compare Recipe name vs. Item name
+                foreach (KeyValuePair<long, string> recipeInfo in skillRecipes)
                 {
                     // perfect recipe - item match!
-                    if (recipeItemName.Contains(": " + recipeInfo.Item1))
+                    if (recipeItemName.Contains(": " + recipeInfo.Value))
                     {
-                        recipeID = recipeInfo.Item2;
+                        recipeID = recipeInfo.Key;
+
+                        if (DebugMode)
+                            Trace.WriteLine(string.Format(DebugFormat, recipeID, itemID, $"Data name '{recipeItemName}' matched recipe with name '{recipeInfo.Value}'"));
+
                         return true;
                     }
                     // do we need further checking?
@@ -1466,8 +1534,7 @@ namespace ATT
                             else
                             {
                                 // Create a new groups list.
-                                groups = new List<object>();
-                                item["g"] = groups;
+                                item["g"] = groups = new List<object>();
                             }
 
                             // Attempt to merge the sub groups together.
@@ -1510,6 +1577,7 @@ namespace ATT
                     case "hideText":
                     case "ordered":
                     case "sort":
+                    case "sourceIgnored":
                         {
                             item[field] = Convert.ToBoolean(value);
                             break;
@@ -1580,6 +1648,9 @@ namespace ATT
                     case "q":
                     case "r":
                     case "isOffHand":
+                    case "parentCategoryID":
+                    case "criteriaType":
+                    case "assetID":
                         {
                             item[field] = Convert.ToInt64(value);
                             break;
@@ -1864,6 +1935,7 @@ namespace ATT
                             Trace.WriteLine(MiniJSON.Json.Serialize(item));
                         }
                         break;
+                    case "_achcat":
                     case "_drop":
                         item[field] = value;
                         break;
@@ -1874,7 +1946,7 @@ namespace ATT
                             // Integer Data Type Fields
                             if (ATT.Export.ObjectData.ContainsObjectType(field))
                             {
-                                item[field] = Convert.ToInt64(value);
+                                item[field] = value;
                                 return;
                             }
 
@@ -2149,8 +2221,21 @@ namespace ATT
                 // Find the Object Dictionary that matches the data.
                 Dictionary<string, object> entry = null;
 
+                // Merge in/out any global data if this is not the initial merge pass
+                // This way, pets/mounts/etc. have proper data existing when needing to merge into another group
+                if (MergeItemData)
+                {
+                    Items.Merge(data2);
+                    Merge(data2);
+                }
+                else
+                {
+                    Items.MergeInto(data2);
+                    MergeInto(data2);
+                }
+
                 // Determine the Most-Significant ID Type (itemID, questID, npcID, etc)
-                if (!ATT.Export.ObjectData.TryGetMostSignificantObjectType(data2, out Export.ObjectData objectData))
+                if (!ATT.Export.ObjectData.TryGetMostSignificantObjectType(data2, out Export.ObjectData objectData, out object objKeyValue))
                 {
                     // If there is no most significant ID field, then complain.
                     Trace.WriteLine("No Most Significant ID for:");
@@ -2160,9 +2245,13 @@ namespace ATT
                 {
                     // Cache the ID of the data we're merging into the container.
                     string mostSignificantID = objectData.ObjectType;
-                    if (data2.TryGetValue(mostSignificantID, out object mostSignificantValue) && mostSignificantValue.GetType().IsNumeric())
+                    // special case for now... toys don't merge correctly via the mostSignificantID because it's a boolean
+                    if (objectData.ConstructorShortcut == "toy")
+                        mostSignificantID = "itemID";
+
+                    if (objKeyValue.GetType().IsNumeric())
                     {
-                        var id = Convert.ToInt64(mostSignificantValue);
+                        var id = objKeyValue;
 
                         // Iterate through the list and search for an entry that matches the data
                         if (mostSignificantID == "itemID")
@@ -2378,12 +2467,6 @@ namespace ATT
                                 }
                             }
                         }
-
-                        // capture Raw Quest listing which appear multiple times, ignore Quests tied to Items, or removed Quests (because it's chaos)
-                        if (mostSignificantID == "questID" && ProcessingSourceData && AllQuests.ContainsKey(id))
-                        {
-                            DuplicateSourceQuests.Add(id);
-                        }
                     }
                 }
 
@@ -2398,9 +2481,6 @@ namespace ATT
                 // Merge the entry with the data.
                 PreMerge(entry, data2);
                 Merge(entry, data2);
-                // Merge any common merge objects
-                foreach (string key in MergeObjectFields.Keys)
-                    Merge(key, entry);
 
                 // Add quest entry to AllQuest collection
                 if (entry.TryGetValue("questID", out long questID))

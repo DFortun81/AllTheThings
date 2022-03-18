@@ -101,7 +101,10 @@ _.Instances = { tier(CATA_TIER, {
 							i(64314),	-- Mantle of the Forlorn Vanquisher
 							i(152972),	-- Twilight Summoning Portal (PET!)
 							i(175159, {	-- Sinister Shadows (Bag of Tricks addition)
-								["races"] = { VULPERA },	-- TODO: figure out if there's a way to track its collection status
+								["races"] = { VULPERA },
+								["questID"] = 59032,
+								--["questID"] = 59033,	-- secondary questID, sorted in HQTs
+								["timeline"] = { "added 8.3.0.33115" },
 							}),
 							i(59330),	-- Shalug'doom, the Axe of Unmaking
 							i(59494),	-- "Uhn'agh Fash, the Darkest Betrayal"
@@ -204,7 +207,10 @@ _.Instances = { tier(CATA_TIER, {
 							i(65089),	-- Shoulders of the Forlorn Vanquisher
 							i(152972),	-- Twilight Summoning Portal (PET!)
 							i(175159, {	-- Sinister Shadows (Bag of Tricks addition)
-								["races"] = { VULPERA },	-- TODO: figure out if there's a way to track its collection status
+								["races"] = { VULPERA },
+								["questID"] = 59032,
+								--["questID"] = 59033,	-- secondary questID, sorted in HQTs
+								["timeline"] = { "added 8.3.0.33115" },
 							}),
 							i(65145),	-- Shalug'doom, the Axe of Unmaking
 							i(65090),	-- Twilight's Hammer

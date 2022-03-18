@@ -635,9 +635,6 @@ _.ExpansionFeatures =
 								i(139697),	-- Bindings of the Silver Hand
 							},
 						}),
-						q(46940, {	-- Using Lost Knowledge
-							["u"] = REMOVED_FROM_GAME,
-						}),
 						q(43687, {	-- Walking in the Shadows (Artifact Appearance)
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus

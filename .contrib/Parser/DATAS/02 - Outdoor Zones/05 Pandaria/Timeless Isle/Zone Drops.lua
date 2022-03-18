@@ -114,7 +114,7 @@ _.Zones =
 							["achievementID"] = 8728,	-- Going To Need A Bigger Bag
 						}),
 					}),
-					i(104262, {	-- Odd Polished Stone
+					i(104262, {	-- Odd Polished Stone (TOY!)
 						crit(43, {	-- Odd Polished Stone
 							["achievementID"] = 8728,	-- Going To Need A Bigger Bag
 						}),
@@ -126,7 +126,7 @@ _.Zones =
 							["achievementID"] = 8728,	-- Going To Need A Bigger Bag
 						}),
 					}),
-					i(104309, {	-- Eternal Kiln
+					i(104309, {	-- Eternal Kiln (TOY!)
 						crit(20, {	-- Eternal Kiln
 							["achievementID"] = 8728,	-- Going To Need A Bigger Bag
 						}),
@@ -146,7 +146,7 @@ _.Zones =
 					i(104227),	-- Technique: Glyph of Pillar of Light
 				}),
 				n(72898,  {	-- High Priest of Ordos
-					i(104329, {	-- Ash-Covered Horn
+					i(104329, {	-- Ash-Covered Horn (TOY!)
 						crit(14, {	-- Ash-Covered Horn
 							["achievementID"] = 8728,	-- Going To Need A Bigger Bag
 						}),
@@ -173,7 +173,7 @@ _.Zones =
 					}),
 				}),
 				n(72875,  {	-- Ordon Candlekeeper
-					i(86565, {	-- Battle Horn
+					i(86565, {	-- Battle Horn (TOY!)
 						crit(5, {	-- Battle Horn
 							["achievementID"] = 8728,	-- Going To Need A Bigger Bag
 						}),

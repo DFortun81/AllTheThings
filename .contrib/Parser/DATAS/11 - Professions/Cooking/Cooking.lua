@@ -22,7 +22,7 @@ profession(COOKING, {
 				},
 				{
 					["name"] = "Big Bear Steak",
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3.10000", "timewalking 9.1" },
 					["recipeID"] = 3397
 				},
 				{
@@ -213,14 +213,12 @@ profession(COOKING, {
 				},
 				{
 					["name"] = "Lean Venison",
-				--	["timeline"] = { "removed 4.0.3.10000" },
-				--	Added in 9.1
+					["timeline"] = { "removed 4.0.3.10000", "timewalking 9.1" },
 					["recipeID"] = 6419
 				},
 				{
 					["name"] = "Lean Wolf Steak",
-				--	["timeline"] = { "removed 5.0.4.10000" },
-				-- 	Added in 9.1
+					["timeline"] = { "removed 5.0.4.10000", "timewalking 9.1" },
 					["recipeID"] = 15853
 				},
 				-- #if AFTER WOD
@@ -2271,6 +2269,11 @@ profession(COOKING, {
 			["categoryID"] = 1326,
 			["groups"] = {
 				{
+					["name"] = "Empty Kettle of Stone Soup",
+					["recipeID"] = 359333,
+					["timeline"] = { "added 9.2.0" },
+				},
+				{
 					["name"] = "Feast of Gluttonous Hedonism",
 					["recipeID"] = 308403
 				},
@@ -2408,7 +2411,12 @@ profession(COOKING, {
 			["groups"] = {
 				ach(7325),	-- Now I Am the Master
 				q(31820, {	-- A Present for Teacher
-					i(86468),	-- Apron
+					["description"] = "To get this quest you must Master all six of the Ways, complete the quest 'To Be a Master,' buy the Cooking School Bell for 50 Ironpaw Tokens, then max out your rep with Nomi.|r",
+					["cost"] = { { "i", 86425, 1 } },	-- Cooking School Bell
+					["provider"] = { "n", 64337 },	-- Nomi
+					["g"] = {
+						i(86468),	-- Apron
+					},
 				}),
 			},
 		}),
@@ -2663,18 +2671,25 @@ profession(COOKING, {
 			n(QUESTS, {
 				q(40989, {	-- The Prodigal Sous Chef
 					["description"] = "If you cooked with Nomi while questing in Pandaria, you will receive this quest instead of 'Too Many Chefs'.",
+					-- ["sourceQuest"] = ,
+					["provider"] = { "n", 102546 },	-- Nomi
 					["groups"] = {
 						i(133826),	-- Recipe: Dried Mackerel Strips [Rank 1]
 					},
 				}),
 				q(40988, {	-- Too Many Chefs
 					["description"] = "If you did not cook with Nomi while questing in Pandaria, you will receive this quest instead of 'The Prodigal Sous Chef'.",
+					["provider"] = { "n", 102546 },	-- Nomi
 					["groups"] = {
 						i(133826),	-- Recipe: Dried Mackerel Strips [Rank 1]
 					},
 				}),
 				q(40991, {	-- Opening the Test Kitchen
-					ach(10591),	-- All Grown Up
+					["sourceQuests"] = { 40990 },	-- A Good Recipe List
+					["provider"] = { "n", 101846 },	-- Nomi
+					["g"] = {
+						ach(10591),	-- All Grown Up
+					},
 				}),
 			}),
 			n(VENDORS, {

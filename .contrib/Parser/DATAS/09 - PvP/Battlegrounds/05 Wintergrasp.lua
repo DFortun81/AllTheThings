@@ -3,80 +3,100 @@
 -----------------------------------------------
 
 root("PVP", pvp(n(BATTLEGROUNDS, {
-	m(1334, {	-- Wintergrasp
-		["achievementID"] = 1752,	--  Master of Wintergrasp
+	m(WINTERGRASP_BG, {
+		["achievementID"] = 1752,	-- Master of Wintergrasp
+		["timeline"] = { "added 3.0.3" },
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(1752, {	-- Master of Wintergrasp
-					ach(1737, {	-- Destruction Derby (A)
-						["races"] = ALLIANCE_ONLY,
-						["g"] = {
-							crit(1),	-- Wintergrasp Catapult
-							crit(2),	-- Wintergrasp Demolisher
-							crit(3),	-- Wintergrasp Siege Engine
-							crit(4),	-- Wintergrasp Tower Cannon
+					-- Meta Achievement should symlink the contained Achievements from Source
+					["sym"] = {
+						{"select","achievementID",
+							1722,	-- Archavon the Stone Watcher (10 player)
+							1721,	-- Archavon the Stone Watcher (25 player)
+							2080,	-- Black War Mammoth
+							1737,	-- Destruction Derby (A)
+							2476,	-- Destruction Derby (H)
+							1751,	-- Didn't Stand a Chance
+							1727,	-- Leaning Tower
+							1723,	-- Vehicular Gnomeslaughter
+							2199,	-- Wintergrasp Ranger
+							1718,	-- Wintergrasp Veteran
+							1755,	-- Within Our Grasp
 						},
-					}),
-					ach(2476, {	-- Destruction Derby (H)
-						["races"] = HORDE_ONLY,
-						["g"] = {
-							crit(1),	-- Wintergrasp Catapult
-							crit(2),	-- Wintergrasp Demolisher
-							crit(3),	-- Wintergrasp Siege Engine
-							crit(4),	-- Wintergrasp Tower Cannon
-						},
-					}),
-					ach(1751),	-- Didn't Stand a Chance
-					ach(1727),	-- Leaning Tower
-					ach(1723),	-- Vehicular Gnomeslaughter
-					ach(2199, {	-- Wintergrasp Ranger
-						crit(1),	-- Wintergrasp Fortress
-						crit(2),	-- Eastspark Workshop
-						crit(3),	-- Flamewatch Tower
-						crit(4),	-- The Broken Temple
-						crit(5),	-- Shadowsight Tower
-						crit(6),	-- The Cauldron of Flames
-						crit(7),	-- The Sunken Ring
-						crit(8),	-- Winter's Edge Tower
-						crit(9),	-- Westspark Workshop
-						crit(10),	-- The Chilled Quagmire
-					}),
-					ach(1718, {	-- Wintergrasp Veteran
-						ach(1717),	-- Wintergrasp Victory
-					}),
-					ach(1755),	-- Within Our Grasp
+					},
 				}),
+				ach(1717, {	-- Wintergrasp Victory
+					["rank"] = 1,
+				}),
+				ach(1718, {	-- Wintergrasp Veteran
+					["rank"] = 100,
+				}),
+				ach(1737, {	-- Destruction Derby (A)
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						crit(1),	-- Wintergrasp Catapult
+						crit(2),	-- Wintergrasp Demolisher
+						crit(3),	-- Wintergrasp Siege Engine
+						crit(4),	-- Wintergrasp Tower Cannon
+					},
+				}),
+				ach(2476, {	-- Destruction Derby (H)
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						crit(1),	-- Wintergrasp Catapult
+						crit(2),	-- Wintergrasp Demolisher
+						crit(3),	-- Wintergrasp Siege Engine
+						crit(4),	-- Wintergrasp Tower Cannon
+					},
+				}),
+				ach(1751),	-- Didn't Stand a Chance
+				ach(1727),	-- Leaning Tower
+				ach(1723),	-- Vehicular Gnomeslaughter
+				ach(2199, {	-- Wintergrasp Ranger
+					crit(1),	-- Wintergrasp Fortress
+					crit(2),	-- Eastspark Workshop
+					crit(3),	-- Flamewatch Tower
+					crit(4),	-- The Broken Temple
+					crit(5),	-- Shadowsight Tower
+					crit(6),	-- The Cauldron of Flames
+					crit(7),	-- The Sunken Ring
+					crit(8),	-- Winter's Edge Tower
+					crit(9),	-- Westspark Workshop
+					crit(10),	-- The Chilled Quagmire
+				}),
+				ach(1755),	-- Within Our Grasp
 			}),
 			n(QUESTS, {
 				q(55510, {	-- No Mercy for the Merciless
 					["provider"] = { "n", 151795 },	-- Commander Zanneth
 					["isWeekly"] = true,
-					["coord"] = { 49.6, 20.4, 1334 },
+					["coord"] = { 49.6, 20.4, WINTERGRASP_BG },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(55511, {	-- Slay them all!
 					["provider"] = { "n", 151611 },	-- Commander Dardosh
 					["isWeekly"] = true,
-					["coord"] = { 49.6, 20.4, 1334 },
+					["coord"] = { 49.6, 20.4, WINTERGRASP_BG },
 					["races"] = HORDE_ONLY,
 				}),
 				q(55508, {	-- Victory in Wintergrasp
 					["provider"] = { "n", 152003 },	-- Tactical Officer Ahbramis
 					["isWeekly"] = true,
-					["coord"] = { 50.2, 17.8, 1334 },
+					["coord"] = { 50.2, 17.8, WINTERGRASP_BG },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(55509, {	-- Victory in Wintergrasp
 					["provider"] = { "n", 152004 },	-- Tactical Officer Kilrath
 					["isWeekly"] = true,
-					["coord"] = { 50.2, 17.8, 1334 },
+					["coord"] = { 50.2, 17.8, WINTERGRASP_BG },
 					["races"] = HORDE_ONLY,
 				}),
 			}),
 			n(VENDORS, {
 				n(39173, {	-- Champion Ros'slai <Wintergrasp Quartermaster>
 					["itemID"] = 137642,	-- Mark of Honor
-					["coord"] = { 51.8, 17.4, WINTERGRASP },
+					["coord"] = { 51.8, 17.4, WINTERGRASP_BG },
 					["races"] = HORDE_ONLY,
 					["g"] = pvp({
 						i(41742, {	-- Design: Enigmatic Skyflare Diamond
@@ -378,7 +398,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					}),
 				}),
 				n(32294, {	-- Knight Dameron <Wintergrasp Quartermaster>
-					["coord"] = { 51.6, 17.6, WINTERGRASP },
+					["coord"] = { 51.6, 17.6, WINTERGRASP_BG },
 					["itemID"] = 137642,	-- Mark of Honor
 					["races"] = ALLIANCE_ONLY,
 					["g"] = pvp({
@@ -597,7 +617,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				}),
 				n(39172, {	-- Marshal Magruder <Wintergrasp Quartermaster>
 					["itemID"] = 137642,	-- Mark of Honor
-					["coord"] = { 51.6, 17.6, WINTERGRASP },
+					["coord"] = { 51.6, 17.6, WINTERGRASP_BG },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = pvp({
 						i(48974, {	-- Titan-Forged Armwraps of Dominance
@@ -700,7 +720,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				}),
 				n(30489, {	-- Morgan Day <Jewelcrafter>
 					["itemID"] = 137642,	-- Mark of Honor
-					["coord"] = { 48.8, 17.6, WINTERGRASP },
+					["coord"] = { 48.8, 17.6, WINTERGRASP_BG },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = pvp({
 						i(41742, {	-- Design: Enigmatic Skyflare Diamond
@@ -777,7 +797,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					}),
 				}),
 				n(32296, {	-- Stone Guard Mukar <Wintergrasp Quartermaster>
-					["coord"] = { 51.6, 17.6, WINTERGRASP },
+					["coord"] = { 51.6, 17.6, WINTERGRASP_BG },
 					["itemID"] = 137642,	-- Mark of Honor
 					["races"] = HORDE_ONLY,
 					["g"] = pvp({
@@ -975,7 +995,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					}),
 				}),
 				n(31101, {	-- Hoodoo Master Fu'jin
-					["coord"] = { 51.6, 21.0, WINTERGRASP },
+					["coord"] = { 51.6, 21.0, WINTERGRASP_BG },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(44067, {	-- Inscription of Triumph
@@ -987,7 +1007,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					},
 				}),
 				n(31051, {	-- Sorceress Kaylana
-					["coord"] = { 48.4, 21.08, WINTERGRASP },
+					["coord"] = { 48.4, 21.08, WINTERGRASP_BG },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(44067, {	-- Inscription of Triumph

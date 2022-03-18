@@ -360,7 +360,6 @@ _.Zones =
 				q(53108, {	-- Iconoclasm
 					["isWorldQuest"] = true,
 					["lvl"] = { 50 },
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53344, {	-- Iconoclasm
 					["lvl"] = { 50 },

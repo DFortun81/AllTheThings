@@ -202,8 +202,24 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		ach(15078, {	-- Shadowlands Keystone Master: Season Two
 			i(187525),	-- Soultwisted Deathwalker (MOUNT!)
 		}),
-		ach(15327, {	-- Tormented Hero: Shadowlands Season 2
-			title(451),	-- <Name>, the Tormented Hero
+		ach(15327, bubbleDownSelf({ ["timeline"] = { "added 9.1.0", "removed 9.2.0" } }, {	-- Tormented Hero: Shadowlands Season 2
+			title(451),	-- <Name>, the Tormented Hero (TITLE!)
+		})),
+		ach(15496, {	-- Shadowlands Keystone Explorer: Season Three
+			["timeline"] = { "added 9.2.0" },
 		}),
+		ach(15498, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Shadowlands Keystone Conqueror: Season Three
+			title(457),	-- <Name> the Cryptic
+		})),
+		ach(15499, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Shadowlands Keystone Master: Season Three
+			i(187682),	-- Wastewarped Deathwalker
+		})),
+		ach(15500, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Keystone Hero: Tazavesh, the Veiled Market
+			crit(1),	-- Tazavesh: Streets of Wonder
+			crit(2),	-- Tazavesh: So'leah's Gambit
+		})),
+		ach(15506, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Shadowlands Keystone Hero: Season Three
+			title(458),	-- <Name>, the Cryptic Hero
+		})),
 	}),
 }));

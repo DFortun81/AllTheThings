@@ -57,7 +57,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			n(165419, {	-- Grand Marshal Mudrag
 				["coord"] = { 40.6, 46.9, REVENDRETH },
 				["g"] = {
-					i(183989, {	-- Dredger Barrow Racer
+					i(183989, {	-- Dredger Barrow Racer (TOY!)
 						["cost"] = { { "c", 1820, 50 } },	-- 50x Infused Ruby
 					}),
 				},
@@ -116,7 +116,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(183839, {	-- Pattern: Heavy Desolate Hide
 						["cost"] = 17650000, -- 1,765g
 					}),
-					i(183900, {	-- Sinvyr Tea Set
+					i(183900, {	-- Sinvyr Tea Set (TOY!)
 						["cost"] = 13500000, -- 1,350g
 					}),
 					i(177665),	-- Spectral Hankerchief
@@ -130,6 +130,13 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(184727),	-- Courtier's Shoulderguard
 					i(184755),	-- Reinforced High Collar
 					i(182207),	-- Illusion: Sinsedge
+					i(190644, {	-- Vessel of Profound Possibilities
+						["timeline"] = { "added 9.2.0" },
+						["sym"] = {
+							{"select","tierID",SL_TIER},{"pop"},	-- SL Tier
+							{"where","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
+						},
+					}),
 					n(VENTHYR, sharedData({["customCollect"] = { "SL_COV_VEN" }},{
 						i(183708, {	-- Glittering Gold Sinstone Chain
 							["cost"] = { { "c", ANIMA, 3500 } },

@@ -14,7 +14,7 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 54049,	-- The Dead of Night
 						["g"] = {
-							i(166678),	-- Brynja's Beacon
+							i(166678),	-- Brynja's Beacon (TOY!)
 						},
 					}),
 					q(54006, {	-- A New Hope
@@ -47,7 +47,7 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 54042,	-- Trouble in Darkshore
 						["g"] = {
-							i(166544),	-- Dark Ranger's Spare Cowl
+							i(166544),	-- Dark Ranger's Spare Cowl (TOY!)
 						},
 					}),
 					q(54045, {	-- Quit Vining!

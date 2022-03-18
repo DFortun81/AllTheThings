@@ -3,7 +3,10 @@ profession(LEATHERWORKING, {
 		q(36176, {	-- A Call for Huntsman
 			["requireSkill"] = LEATHERWORKING,
 			["description"] = "This item can drop from any Draenor mob.",
-			["provider"] = { "i", 114877 },	-- Dirty Note
+			["providers"] = {
+				{ "i", 114877 },	-- Dirty Note
+				{ "n", 75043 },		-- Karnoth
+			},
 			["races"] = ALLIANCE_ONLY,
 			["maps"] = {
 				FROSTFIRE_RIDGE,

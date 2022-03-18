@@ -10,7 +10,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 		})),
 		petbattle(ach(7936)),		-- Pandaren Spirit Tamer*
 		petbattle(ach(14020, {	-- Pet Battle Challenge: Blackrock Depths
-			i(174830),	-- Shadowy Disguise
+			i(174830),	-- Shadowy Disguise (TOY!)
 		})),
 		petbattle(ach(11856, {	-- Pet Battle Challenge: Deadmines*
 			i(151632),	-- Mining Monkey
@@ -106,7 +106,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			crit(7),	-- Aki the Chosen [Vale of Eternal Blossoms)
 		})),
 		petbattle(ach(7499,  {	-- Taming the World (40)*
-			i(92738),	-- Safari Hat
+			i(92738),	-- Safari Hat (TOY!)
 			ach(7498),	-- Taming the Great Outdoors [15)
 			ach(6601),	-- Taming the Wild [1)
 		})),
@@ -158,7 +158,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			crit(41),	-- Durin Darkhammer [Burning Steppes] / Analynn [Ashenvale)
 		})),
 		petbattle(ach(14021, {	-- The Shadows Revealed
-			i(174871),	-- Mayhem Mind Melder
+			i(174871),	-- Mayhem Mind Melder (TOY!)
 			crit(1),	-- Pet Battle Challenge: Wailing Caverns
 			crit(2),	-- Pet Battle Challenge: Deadmines
 			crit(3),	-- Pet Battle Challenge: Gnomeregan

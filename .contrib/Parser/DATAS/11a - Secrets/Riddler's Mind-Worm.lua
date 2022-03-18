@@ -35,7 +35,7 @@ _.Secrets =
 			o(251564, {	-- Step 4: Page 655
 				["model"] = 305393,
 				["questID"] = 47209,
-				["coord"] = { 70.4, 78.1, 249 },
+				["coord"] = { 70.4, 78.1, ULDUM },
 				["sourceQuest"] = 47208,	-- Step 3: Page 161
 				["description"] = "|cFFFFFFFFStep 4:|r This step will take us to |cFFFFD700Uldum|r.  Head to |cFFFFFFFF70.44, 78.11|r.  |cFFFFD700Page 655|r will be between the two small trees.  Click this to continue.  The page reads...\n\n|cFFFFFFFF...the plume, the tomb, a scarab moon...|r",
 				["isWeekly"] = true,
@@ -70,7 +70,7 @@ _.Secrets =
 			o(244678, {	-- Step 8: Page 5555
 				["model"] = 305393,
 				["questID"] = 47213,
-				["coord"] = { 76.4, 53.6, 249 },
+				["coord"] = { 76.4, 53.6, ULDUM },
 				["sourceQuest"] = 47212,	-- Step 7: Page 2351
 				["description"] = "|cFFFFFFFFStep 8:|r This step will take us to |cFFFFD700Uldum|r.  Head to |cFFFFFFFF76.45, 53.67|r.  |cFFFFD700Page 5555|r will be on the platform slightly offcenter in front of the left foot of the statue.  Click this to continue.  The page reads...\n\n|cFFFFFFFF...ray of sunshine...|r",
 				["isWeekly"] = true,

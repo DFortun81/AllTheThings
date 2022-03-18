@@ -1717,7 +1717,6 @@ root("HiddenQuestTriggers", {
 		q(34895),	-- Dropping Bombs Tracking
 		q(34983),	-- Dropping Bombs Tracking
 		q(35047),	-- Dropping Bombs Tracking
-		q(36426),	-- Dueling Orbs
 		q(34835),	-- Gather Energy - triggers when interacting with an energy orb in Zangarra during "Gathering the Spark" (questID 34619 & 34636)
 		q(34834),	-- General Commentary - triggers when you interact with the second ancient during "Forming the Scroll" (questID 34612 & 34635)
 		q(33727),	-- Heal Up

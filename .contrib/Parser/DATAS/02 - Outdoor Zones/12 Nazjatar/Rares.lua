@@ -761,7 +761,7 @@ _.Zones =
 					crit(34, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
-					i(170196, {	-- Shirakess Warning Sign
+					i(170196, {	-- Shirakess Warning Sign (TOY!)
 						crit(26, {	-- Shirakess Warning Sign
 							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 						}),

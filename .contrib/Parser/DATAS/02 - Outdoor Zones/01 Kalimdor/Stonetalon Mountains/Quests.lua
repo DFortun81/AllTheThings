@@ -377,20 +377,12 @@ root("Zones", m(KALIMDOR, {
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 26004,	-- Krom'gar Fortress
 			}),
-			q(6481, {	-- Earthen Arise
+			q(6481, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" } }, {	-- Earthen Arise
 				["qg"] = 11861,	-- Mor'rogal
 				["sourceQuest"] = 6421,	-- Boulderslide Ravine
 				["coord"] = { 47.17, 64.10, STONETALON_MOUNTAINS },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 14,
-				["g"] = {
-					i(16981),	-- Owlbeard Bracers
-					i(1306),	-- Wolfmane Wristguards
-				},
-			}),
-			q(6481, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" } }, {	-- Earthen Arise
-				["provider"] = { "n", 11861 },	-- Mor'rogal
-				["races"] = HORDE_ONLY,
 				["g"] = {
 					i(16981),	-- Owlbeard Bracers
 					i(1306),	-- Wolfmane Wristguards
@@ -469,7 +461,7 @@ root("Zones", m(KALIMDOR, {
 			q(1095, {	-- Further Instructions (2/2)
 				["qg"] = 3442,	-- Sputtervalve
 				["sourceQuest"] = 1094,	-- Further Instructions (1/2)
-				--["coord"] = { 62.97, 37.19, THE_BARRENS },
+				["coord"] = { 62.97, 37.19, NORTHERN_BARRENS },
 				["lvl"] = 16,
 				["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" },
 			}),
@@ -477,17 +469,13 @@ root("Zones", m(KALIMDOR, {
 				["qg"] = 4201,	-- Ziz Fizziks
 				["sourceQuest"] = 1095,	-- Further Instructions (2/2)
 				["coord"] = { 59.00, 62.53, STONETALON_MOUNTAINS },
-				["cost"] = {
-					{ "i", 5736, 1 },	-- Gerenzo's Mechanical Arm
-				},
 				["lvl"] = 16,
 				["g"] = {
-					{
-						["itemID"] = 5736,	-- Gerenzo's Mechanical Arm
-						["questID"] = 1096,	-- Gerenzo Wrenchwhistle
+					objective(1, {	-- Gerenzo's Mechanical Arm
+						["provider"] = { "i", 5736 },	-- Gerenzo's Mechanical Arm
 						["cr"] = 4202,	-- Gerenzo Wrenchwhistle
 						["coord"] = { 63.6, 39.6, STONETALON_MOUNTAINS },
-					},
+					}),
 					i(6667),	-- Engineer's Cloak
 					i(6668),	-- Draftsman Boots
 				},
@@ -1055,13 +1043,6 @@ root("Zones", m(KALIMDOR, {
 					i(57509),	-- Orthus' Amulet
 					i(131486),	-- Cinch of the Grieving Father
 				},
-			}),
-			q(6562,  {	-- Trouble in the Deeps
-				["u"] = REMOVED_FROM_GAME,
-				["provider"] = { "n", 11862 },	-- Tsunaman
-				["races"] = HORDE_ONLY,
-				["coord"] = { 47.2, 64.3, STONETALON_MOUNTAINS },
-				["isBreadcrumb"] = true,
 			}),
 			q(25880, {	-- Warn Master Thal'darah
 				["provider"] = { "n", 41233 },	-- Scout Commander Barus

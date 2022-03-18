@@ -1210,6 +1210,7 @@ _.ExpansionFeatures =
 				race(VOIDELF, {
 					["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700You Are Now Prepared!|r, The Argus Campaign.",
 					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 971 },
 					["g"] = {
 						q(49787, {	-- The Ghostlands
 							["provider"] = { "n", 126321 },	-- Alleria Windrunner

@@ -15,7 +15,7 @@ root("WorldEvents", n(TWELFTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_GAM
 			}),
 			q(43471, {	-- The Historians
 				["provider"] = { "i", 139409 },	-- Letter from the Timewalker [Alliance]
-				["coord"] = { 84.6, 25.0, STORMWIND },
+				["coord"] = { 84.6, 25.0, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 			}),

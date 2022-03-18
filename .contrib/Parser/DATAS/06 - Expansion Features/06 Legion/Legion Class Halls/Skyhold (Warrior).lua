@@ -23,7 +23,7 @@ _.ExpansionFeatures =
 							["isWeekly"] = true,
 							["g"] = {
 								i(141069, {	-- Skyhold Chest of Riches
-									i(140160),	-- Stormforged Vrykul Horn
+									i(140160),	-- Stormforged Vrykul Horn (TOY!)
 									i(140161),	-- Hargal's Favorite Trinket
 									i(141071),	-- Badge of Honor
 								}),
@@ -333,7 +333,7 @@ _.ExpansionFeatures =
 							["coord"] = { 58.3, 84.6, 695 },
 							["classes"] = { WARRIOR },
 							["provider"] = { "n", 96469 },	-- Odyn
-							["sourceQuest"] = 43585,	-- Preparing For War
+							["sourceQuest"] = 42204,	-- Jorhuttam
 						}),
 						q(43604, {	-- Maw of Souls: Ymiron's Broken Blade
 							["crs"] = { 96756 },	-- Ymiron, the Fallen King
@@ -615,9 +615,6 @@ _.ExpansionFeatures =
 							["g"] = {
 								i(139688),	-- Battlelord's Bracers
 							},
-						}),
-						q(46940, {	-- Using Lost Knowledge
-							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(40579, {	-- Weapons of Legend
 							["coord"] = { 58.3, 84.9, 695 },

@@ -244,7 +244,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 				["lvl"] = lvlsquish(70, 30, 70),
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
-						i(35275, {	-- Orb of Sin'dorei
+						i(35275, {	-- Orb of Sin'dorei (TOY!)
 							["crs"] = {
 								24723,	-- Selin Fireheart
 								24744,	-- Vexallus
@@ -316,7 +316,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 							ach(682),	-- Heroic: Magister's Terrace
 							removeclassicphase(ach(884, {	-- Swift White Hawkstrider
 								["provider"] = { "i", 35513 },	-- Swift White Hawkstrider
-								["f"] = 100,
+								["filterID"] = MOUNTS,
 								-- #if BEFORE WRATH
 								["description"] = "Obtain the Swift White Hawkstrider from Kael'thas in Magister's Terrace.",
 								["OnUpdate"] = [[function(t)

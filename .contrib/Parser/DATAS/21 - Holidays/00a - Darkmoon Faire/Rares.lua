@@ -39,7 +39,7 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 						["description"] = "Get hit by one banshee wave; catch every bolt of light.",
 					}),
 				}),
-				i(151265),	-- Blight Boar Microphone
+				i(151265),	-- Blight Boar Microphone (TOY!)
 				i(151255),	-- Necromedes, the Death Resonator
 				i(151253),	-- Lightly-Padded Cage Helm
 				i(151252),	-- Leather-Lined Cage Helm
@@ -51,8 +51,8 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 			["coord"] = { 39.65, 44.07, 407 },
 			["g"] = {
 				i(101570),	-- Moon Moon
-				i(101571),	-- Moonfang Shroud
-				i(105898),	-- Moonfang's Paw
+				i(101571),	-- Moonfang Shroud (TOY!)
+				i(105898),	-- Moonfang's Paw (TOY!)
 				i(101675),	-- Shimmering Moonstone
 			},
 		}),

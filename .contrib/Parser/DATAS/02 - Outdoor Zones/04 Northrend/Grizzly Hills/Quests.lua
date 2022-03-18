@@ -1128,18 +1128,6 @@ _.Zones =
 						i(39076),	-- Golem-Rider's Greaves
 					},
 				}),
-				q(12794, {	-- The Magical Kingdom of Dalaran (A)
-					["coord"] = { 32.0, 59.8, GRIZZLY_HILLS },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 29161 }, --	Magistrix Haelenai
-					["isBreadcrumb"] = true,
-				}),
-				q(12791, {	-- The Magical Kingdom of Dalaran (H)
-					["coord"] = { 20.6, 64.2, GRIZZLY_HILLS },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 29160 },	-- Magistrix Phaelista
-					["isBreadcrumb"] = true,
-				}),
 				q(12201, {	-- The Overseer's Shadow
 					["coord"] = { 65.1, 47.6, GRIZZLY_HILLS },
 					["races"] = HORDE_ONLY,

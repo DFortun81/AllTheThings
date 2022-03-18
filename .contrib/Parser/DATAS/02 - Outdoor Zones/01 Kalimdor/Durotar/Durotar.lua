@@ -598,6 +598,11 @@ root("Zones", m(KALIMDOR, {
 							["classes"] = { MAGE },
 							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3.10000" },
 						}),
+						q(31162, {	-- The Arts of a Monk
+							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+							["races"] = { TROLL },
+							["classes"] = { MONK },
+						}),
 						q(24765, {	-- The Basics: Hitting Things (Druid)
 							["provider"] = { "n", 38243 },	-- Zen'tabra
 							["coords"] = {
@@ -867,6 +872,13 @@ root("Zones", m(KALIMDOR, {
 							},
 							["sourceQuest"] = 25131,	-- Vile Familiars
 						}),
+						q(31156, {	-- Calligraphed Parchment
+							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+							["provider"] = { "n", 3143 },	-- Gornek
+							["coord"] = { 44.8, 66.6, VALLEY_OF_TRIALS },
+							["races"] = { ORC },
+							["classes"] = { MONK },
+						}),
 						q(25126, {	-- Cutting Teeth
 							["provider"] = { "n", 3143 },	-- Gornek
 							["coords"] = {
@@ -946,6 +958,13 @@ root("Zones", m(KALIMDOR, {
 							},
 							["sourceQuest"] = 25132,	-- Burning Blade Medallion
 							["isBreadcrumb"] = true,
+						}),
+						q(31157, {	-- Tiger Palm
+							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+							["provider"] = { "n", 63296 },	-- Gato
+							["coord"] = { 42.6, 68.4, VALLEY_OF_TRIALS },
+							["races"] = { ORC },
+							["classes"] = { MONK },
 						}),
 						q(25129, {	-- Sarkoth
 							["provider"] = { "n", 3287 },	-- Hana'zua
@@ -1113,46 +1132,6 @@ root("Zones", m(KALIMDOR, {
 					["lvl"] = 4,
 					["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" },
 				}),
-				q(32872, bubbleDownSelf({ ["timeline"] = { "added 5.3.0.16767", "removed 5.4.0.17359"} }, {	-- Battlefield: Barrens Ally
-					["qg"] = 71333,	-- Ki'ta Arrowtusk
-					["races"] = ALLIANCE_ONLY,
-					["isWeekly"] = true,
-					["groups"] = {
-						objective(1, {	-- 0/150 Kor'kron Lumber
-							["provider"] = { "i", 97530 },	-- Kor'kron Lumber
-						}),
-						objective(2, {	-- 0/150 Kor'kron Oil
-							["provider"] = { "i", 97544 }, -- Kor'kron Oil
-						}),
-						objective(3, {	-- 0/150 Kor'kron Meat
-							["provider"] = { "i", 97545 }, -- Kor'kron Meat
-						}),
-						objective(4, {	-- 0/150 Kor'kron Stone
-							["provider"] = { "i", 97543 }, -- Kor'kron Stone
-						}),
-						i(97849),	-- Radical Mojo
-					},
-				})),
-				q(32862, bubbleDownSelf({ ["timeline"] = { "added 5.3.0.16767", "removed 5.4.0.17359"} }, {	-- Battlefield: Barrens Horde
-					["qg"] = 71333,	-- Ki'ta Arrowtusk
-					["races"] = HORDE_ONLY,
-					["isWeekly"] = true,
-					["groups"] = {
-						objective(1, {	-- 0/150 Kor'kron Lumber
-							["provider"] = { "i", 97530 },	-- Kor'kron Lumber
-						}),
-						objective(2, {	-- 0/150 Kor'kron Oil
-							["provider"] = { "i", 97544 }, -- Kor'kron Oil
-						}),
-						objective(3, {	-- 0/150 Kor'kron Meat
-							["provider"] = { "i", 97545 }, -- Kor'kron Meat
-						}),
-						objective(4, {	-- 0/150 Kor'kron Stone
-							["provider"] = { "i", 97543 }, -- Kor'kron Stone
-						}),
-						i(97849),	-- Radical Mojo
-					},
-				})),
 				q(25648, {	-- Beyond Durotar
 					["qg"] = 39379,	-- Gor the Enforcer
 					["coord"] = { 44.9, 14.7, DUROTAR },
@@ -1748,8 +1727,8 @@ root("Zones", m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["g"] = {
-						i(18788),	-- Swift Blue Raptor
-						i(18789),	-- Swift Olive Raptor
+						i(18788),	-- Swift Blue Raptor (MOUNT!)
+						i(18789),	-- Swift Olive Raptor (MOUNT!)
 						i(18990),	-- Swift Orange Raptor
 					},
 				})),
@@ -1880,12 +1859,13 @@ root("Zones", m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
+				-- #if AFTER CATA
 				q(6365,  {	-- Meats to Orgrimmar
 					["qg"] = 3881,	-- Grimtak
 					["coord"] = { 50.7, 42.8, DUROTAR },
-					["races"] = { ORC, TROLL, MAGHAR },
-					["timeline"] = { "added 1.11.1.10772" },
+					["races"] = HORDE_ONLY,
 				}),
+				-- #endif
 				q(25267, {	-- Message for Garrosh (Cata) / Vol'jin (WoD) / Saurfang (Legion) <-- Need more work
 					["coord"] = { 57.6, 9.6, DUROTAR },
 					["races"] = { GOBLIN },
@@ -2038,8 +2018,8 @@ root("Zones", m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["g"] = {
-						i(18788),	-- Swift Blue Raptor
-						i(18789),	-- Swift Olive Raptor
+						i(18788),	-- Swift Blue Raptor (MOUNT!)
+						i(18789),	-- Swift Olive Raptor (MOUNT!)
 						i(18990),	-- Swift Orange Raptor
 					},
 				})),
@@ -2088,6 +2068,7 @@ root("Zones", m(KALIMDOR, {
 					},
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
+				-- #if AFTER CATA
 				q(6384,  {	-- Ride to Orgrimmar
 					["qg"] = 41140,	-- Burok
 					["coord"] = { 53.0, 43.6, DUROTAR },
@@ -2100,6 +2081,7 @@ root("Zones", m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #endif
 				q(3089, {	-- Rune-Inscribed Parchment
 					["qg"] = 3143,	-- Gornek
 					["sourceQuest"] = 788,	-- Cutting Teeth
@@ -2877,27 +2859,6 @@ root("Zones", m(KALIMDOR, {
 						i(98552),	-- Xan'tish's Flute (TOY!)
 					},
 				})),
-				n(71226, bubbleDown({ ["timeline"] = { "added 5.3.0.16876", "removed 5.4.0.10000" } }, {	-- Ravika <Darkspear Quartermaster> 5.3 Version
-					["description"] = "Rebellion Quatermaster during Barrens Battlefield.",
-					["g"] = {
-						i(97901),	-- Griftah's Authentic Troll Shoes
-						i(97919),	-- Whole-Body Shinka' Toy (TOY!)
-						i(97942),	-- Sen'jin Spirit Drum Toy (TOY!)
-						i(98552),	-- Xan'tish's Flute Toy (TOY!)
-						i(97921),	-- Bom'bay's Color-Seein' Sauce (TOY!)
-						i(97821),	-- Gahz'rooki's Summoning Stone (PET!)
-						i(97829),	-- Latent Kor'kron Helm (they had unique stats before 6.0)
-						i(97831),	-- Latent Kor'kron Spaulders (they had unique stats before 6.0)
-						i(97826),	-- Latent Kor'kron Chestpiece (they had unique stats before 6.0)
-						i(97828),	-- Latent Kor'kron Gloves (they had unique stats before 6.0)
-						i(97832),	-- Latent Kor'kron Belt (they had unique stats before 6.0)
-						i(97830),	-- Latent Kor'kron Leggings (they had unique stats before 6.0)
-						i(97827),	-- Latent Kor'kron Boots (they had unique stats before 6.0)
-						i(97990),	-- Raptorhide Boxing Gloves (QUEST!)
-						i(98561),	-- Darkspear Battle Standard
-						i(98563),	-- Rainstick
-					},
-				})),
 				n(5942, {	-- Zansoa <Fishing Supplies>
 					["coord"] = { 57.4, 77.0, DUROTAR },
 					["g"] = {
@@ -2908,14 +2869,14 @@ root("Zones", m(KALIMDOR, {
 				n(7952, {	-- Zjolnir <Raptor Handler>
 					["coord"] = { 55.2, 75.6, DUROTAR },
 					["g"] = {
-						i(18788),	-- Swift Blue Raptor
-						i(18789),	-- Swift Olive Raptor
-						i(18790),	-- Swift Orange Raptor
-						i(8588),	-- Whistle of the Emerald Raptor
-						i(8591),	-- Whistle of the Turquoise Raptor
-						i(8592),	-- Whistle of the Violet Raptor
-						i(13317, { ["timeline"] = {"removed 1.4.0"}}),	-- Ivory Raptor -- Unable to 100% verify this source.
-						i(8586, { ["timeline"] = {"removed 1.4.0"}}),	-- Mottled Red Raptor -- Unable to 100% verify this source.
+						i(18788),	-- Swift Blue Raptor (MOUNT!)
+						i(18789),	-- Swift Olive Raptor (MOUNT!)
+						i(18790),	-- Swift Orange Raptor (MOUNT!)
+						i(8588),	-- Emerald Raptor (MOUNT!)
+						i(8591),	-- Turquoise Raptor (MOUNT!)
+						i(8592),	-- Violet Raptor (MOUNT!)
+						i(13317, { ["timeline"] = {"removed 1.4.0"}}),	-- Ivory Raptor (MOUNT!) -- Unable to 100% verify this source.
+						i(8586, { ["timeline"] = {"removed 1.4.0"}}),	-- Mottled Red Raptor (MOUNT!)-- Unable to 100% verify this source.
 					},
 				}),
 			})),

@@ -5,6 +5,9 @@
 root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 	achcat(ACHIEVEMENT_CATEGORY_COLLECT, {
 		petbattle(ach(7465)),		-- An Uncommon Find*
+		ach(15004, {	-- A Sly Fox
+			i(186539),	-- Sly
+		}),
 		petbattle(ach(12930, {	-- Battle Safari (Kul Tiras and Zandalar)
 			i(163634),		-- Dreadtick Leecher
 			crit(1),		-- Shadowback Crawler
@@ -750,9 +753,5 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			ach(6555),		-- Building a Team (25)
 			ach(6554),		-- He's Mine! (10)
 		})),
-		-- PTR - TODO: merge into regular achievement list, figure out what zone or w/e this belongs in
-		ach(15004, {	-- A Sly Fox
-			i(186539),	-- Sly
-		}),
 	}),
 }));

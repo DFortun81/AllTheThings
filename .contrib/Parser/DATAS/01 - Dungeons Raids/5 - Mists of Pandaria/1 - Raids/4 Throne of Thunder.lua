@@ -365,7 +365,7 @@ _.Instances = { tier(MOP_TIER, {
 							80633,	-- Lorewalker Han <Raid Finder Storyteller>
 						},
 						["g"] = {
-							i(98132, {	-- Shado-Pan Geyser Gun
+							i(98132, {	-- Shado-Pan Geyser Gun (TOY!)
 								["description"] = "Must obtain 250 stacks of Spray Water from the geysers before Tortos.",
 							}),
 							cr(67977, e(825, {	-- Tortos
@@ -424,7 +424,7 @@ _.Instances = { tier(MOP_TIER, {
 							n(68220, {			-- Gastropod
 								["description"] = "Go up and give this mob a BIG HUG...just kidding; stay out of its melee range.",
 								["g"] = {
-									i(98136)	-- Gastropod Shell
+									i(98136)	-- Gastropod Shell (TOY!)
 								},
 							}),
 							cr(69712, e(828, {	-- Ji-Kun
@@ -826,7 +826,7 @@ _.Instances = { tier(MOP_TIER, {
 							}),
 						},
 					})),
-					i(98132, {	-- Shado-Pan Geyser Gun
+					i(98132, {	-- Shado-Pan Geyser Gun (TOY!)
 						["description"] = "Must obtain 250 stacks of Spray Water from the geysers before Tortos.",
 					}),
 					cr(67977, e(825, {	-- Tortos
@@ -929,7 +929,7 @@ _.Instances = { tier(MOP_TIER, {
 					n(68220, {			-- Gastropod
 						["description"] = "Go up and give this mob a BIG HUG...just kidding; stay out of its melee range.",
 						["g"] = {
-							i(98136)	-- Gastropod Shell
+							i(98136)	-- Gastropod Shell (TOY!)
 						},
 					}),
 					cr(69712, e(828, {	-- Ji-Kun
@@ -1440,7 +1440,7 @@ _.Instances = { tier(MOP_TIER, {
 							}),
 						},
 					})),
-					i(98132, {	-- Shado-Pan Geyser Gun
+					i(98132, {	-- Shado-Pan Geyser Gun (TOY!)
 						["description"] = "Must obtain 250 stacks of Spray Water from the geysers before Tortos.",
 					}),
 					cr(67977, e(825, {	-- Tortos
@@ -1544,7 +1544,7 @@ _.Instances = { tier(MOP_TIER, {
 					n(68220, {			-- Gastropod
 						["description"] = "Go up and give this mob a BIG HUG...just kidding; stay out of its melee range.",
 						["g"] = {
-							i(98136),	-- Gastropod Shell
+							i(98136),	-- Gastropod Shell (TOY!)
 						},
 					}),
 					cr(69712, e(828, {	-- Ji-Kun
@@ -2231,5 +2231,22 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(96722),	-- Locksmasher Greaves
 			i(96723),	-- Columnbreaker Stompers
 		}),
+	}),
+});
+root("HiddenQuestTriggers",{
+	tier(MOP_TIER, {
+		q(32752),	-- Dark Animus Dead - triggers on the first kill of the week
+		q(32750),	-- Durumu Dead - triggers on the first kill of the week
+		q(32755),	-- Empyreal Queens Dead - triggers on the first kill of the week
+		q(32745),	-- Horridon Dead - triggers on the first kill of the week
+		q(32754),	-- Iron Qon Dead - triggers on the first kill of the week
+		q(32749),	-- Ji'kun Dead - triggers on the first kill of the week
+		q(32744),	-- Jin'rokh Dead - triggers on the first kill of the week
+		q(32756),	-- Lei Shen Dead - triggers on the first kill of the week
+		q(32748),	-- Maegaera Dead - triggers on the first kill of the week
+		q(32751),	-- Primordious Dead - triggers on the first kill of the week
+		q(32753),	-- Ra-den Dead - triggers on the first kill of the week
+		q(32747),	-- Tortos Dead - triggers on the first kill of the week
+		q(32746),	-- Zandalari Council Dead - triggers on the first kill of the week
 	}),
 });

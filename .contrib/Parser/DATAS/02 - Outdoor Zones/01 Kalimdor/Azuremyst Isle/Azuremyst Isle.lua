@@ -237,6 +237,11 @@ _.Zones =
 								["classes"] = { MAGE },
 								["lvl"] = lvlsquish(3, 1, 3),
 							}),
+							q(31172, {	-- Monk Training
+								["races"] = { DRAENEI },
+								["classes"] = { MONK },
+								["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+							}),
 							q(9287,  {	-- Paladin Training
 								["qg"] = 16501,	-- Aurelon
 								-- #if AFTER MOP
@@ -474,7 +479,7 @@ _.Zones =
 								["coord"] = { 50.6, 48.6, AMMEN_VALE },
 								["timeline"] = { "added 5.0.1.15640", "removed 7.0.3.10000" },
 								["classes"] = { MONK },
-								["races"] = ALLIANCE_ONLY,
+								["races"] = { DRAENEI },
 								["lvl"] = lvlsquish(3, 1, 3),
 							}),
 							q(9313,  {	-- Travel to Azure Watch
@@ -626,7 +631,6 @@ _.Zones =
 					exploration(3564, "256:256:488:24"),	-- Emberglade
 					exploration(3915, "256:128:356:0"),		-- Fairbridge Strand
 					exploration(3577, "256:256:507:350"),	-- Geezle's Camp
-					exploration(3578, "0:0:0:0"),			-- Menagerie Wreckage
 					exploration(3916, "256:256:449:183"),	-- Moongraze Woods
 					exploration(3573, "256:256:352:378"),	-- Odesyus' Landing
 					exploration(3567, "256:256:281:305"),	-- Pod Cluster

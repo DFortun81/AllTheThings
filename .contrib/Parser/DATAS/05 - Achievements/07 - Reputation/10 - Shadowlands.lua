@@ -12,6 +12,17 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 			ach(14337),	-- The Wild Hunt
 		}),
 		ach(15069),		-- The Archivist's Codex
+		ach(15220, {	-- The Enlightened
+			["timeline"] = { "added 9.2.0" },
+		}),
 		ach(14656),		-- Trading Partners
+	}),
+}));
+
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	tier(SL_TIER, {
+		n(ACHIEVEMENTS, {
+			ach(15219),	-- Automa (Removed in one of the builds)
+		}),
 	}),
 }));

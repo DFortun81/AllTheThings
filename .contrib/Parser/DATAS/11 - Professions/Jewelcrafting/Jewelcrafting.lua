@@ -5155,6 +5155,11 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 					["recipeID"] = 311951
 				},
 				{
+					["name"] = "Mass Prospect Progenium",
+					["recipeID"] = 359492,
+					["timeline"] = { "added 9.2.0" },
+				},
+				{
 					["name"] = "Mass Prospect Sinvyr",
 					["recipeID"] = 311952
 				},
@@ -5169,6 +5174,11 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 			["categoryID"] = 1421,
 			["groups"] = {
 				{
+					["name"] = "Aealic Harmonizing Stone",
+					["recipeID"] = 360016,
+					["timeline"] = { "added 9.2.0" },
+				},
+				{
 					["name"] = "Crafter's Mark I",
 					["recipeID"] = 343697
 				},
@@ -5177,9 +5187,29 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 					["recipeID"] = 343696
 				},
 				{
+					["name"] = "Crafter's Mark IV",
+					["recipeID"] = 359663,
+					["timeline"] = { "added 9.2.0" },
+				},
+				{
+					["name"] = "Crafter's Mark of the First Ones",
+					["recipeID"] = 359672,
+					["timeline"] = { "added 9.2.0" },
+				},
+				{
+					["name"] = "Devourer Essence Stone",
+					["recipeID"] = 360317,
+					["timeline"] = { "added 9.2.0" },
+				},
+				{
 					["name"] = "Novice Crafter's Mark",
 					["recipeID"] = 343693
-				}
+				},
+				{
+					["name"] = "Vestige of the Eternal",
+					["recipeID"] = 359701,
+					["timeline"] = { "added 9.2.0" },
+				},
 			}
 		},
 		{
@@ -6294,22 +6324,3 @@ bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, _.NeverImplemented);
 root("HiddenQuestTriggers", {
 	q(55631),	-- Jewelcrafting Diode shrine. harvesting gems from them triggered this quest. Nazmir location
 });
-
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(29969),	-- Broken Earthen Figurine
-		q(29970),	-- Broken Earthen Figurine
-		q(31545),	-- The Finer Things
-		q(31557),	-- The Finer Things
-		q(31558),	-- The Finer Things
-		q(31559),	-- The Finer Things
-		q(31560),	-- The Finer Things
-		q(31561),	-- The Finer Things
-		q(31562),	-- The Finer Things
-		q(31563),	-- The Finer Things
-		q(31564),	-- The Finer Things
-		q(31565),	-- The Finer Things
-		q(31566),	-- The Finer Things
-		q(31567),	-- The Finer Things
-	}),
-}));

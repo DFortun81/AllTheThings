@@ -120,7 +120,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["questID"] = 59833,
 				["coord"] = { 69.3, 77.9, REVENDRETH },
 				["g"] = {
-					i(179393),	-- Mirror of Envious Dreams
+					i(179393),	-- Mirror of Envious Dreams (TOY!)
 				},
 			}),
 			o(349792, {	-- Filcher's Prize
@@ -518,6 +518,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					},
 				}),
 			}),
+			o(358399, {	-- Six-League Pack
+				["coord"] = { 58.6, 84.8, REVENDRETH },
+				["g"] = {
+					i(183789),	-- Six-League Pack
+				},
+			}),
 			o(337241, {	-- Stashed Equipment
 				["description"] = "Opening a Crypt Door with the Atonement Crypt Key has a chance to reveal this treasure.",
 				["sourceQuests"] = { 57928 },	-- Atonement Crypt Key
@@ -656,8 +662,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					["coord"] = { 66.4, 65.4, REVENDRETH },
 				}),
 				o(354189, {	-- Stoneborn Satchel
-					["altQuests"] = { 60982 },	-- shrug emoji, had these coordinates+this name linked up with two separate questIDs, so who knows what's going on there
-					["questID"] = 60896,
+					["questID"] = 60982,
 					["isDaily"] = true,
 					["coord"] = { 58.0, 67.2, REVENDRETH },
 				}),
@@ -726,12 +731,29 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			o(353792, {	-- Village Strongbox
 				--TODO: ["questID"] = xxxxx,
 				["isDaily"] = true,	-- repeatable??
-				--TODO: ["coords"] = {
-				--},
+				["coords"] = {
+					{ 57.0, 69.7, REVENDRETH },
+					{ 58.2, 71.2, REVENDRETH },
+					{ 58.3, 67.8, REVENDRETH },
+					{ 59.5, 70.3, REVENDRETH },
+					{ 59.8, 78.7, REVENDRETH },
+					{ 60.2, 79.6, REVENDRETH },
+					{ 61.3, 75.8, REVENDRETH },
+					{ 61.9, 75.1, REVENDRETH },
+					{ 62.0, 79.7, REVENDRETH },
+					{ 75.6, 68.8, REVENDRETH },
+					{ 76.6, 67.6, REVENDRETH },
+					{ 76.8, 64.7, REVENDRETH },
+					{ 77.0, 69.1, REVENDRETH },
+					{ 77.5, 67.8, REVENDRETH },
+					{ 77.8, 71.0, REVENDRETH },
+					{ 78.1, 66.4, REVENDRETH },
+					{ 78.1, 66.5, REVENDRETH },
+				},
 				["g"] = {
 					i(180393),	-- Depraved Darkblade's Epaulets
 					i(180386),	-- Herbalist's Pouch
-					i(180394),	-- Envy Laced Leggings
+					i(180394),	-- Envy-Laced Leggings
 				},
 			}),
 			o(357584, {	-- Vyrtha's Dredglaive
@@ -749,3 +771,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 		}),
 	}),
 })));
+
+root("HiddenQuestTriggers", m(SHADOWLANDS, {
+	m(REVENDRETH, {
+		n(TREASURES, {
+			q(60896),	-- triggers sometimes when looting stoneborne satchels. perhaps for receiving 'Sinvyr Ore' or 'Stone Heart' quest turn in items
+		}),
+	}),
+}));

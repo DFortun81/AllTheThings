@@ -10,6 +10,7 @@ i(180293);	-- Night Fae Insignia
 i(183190);	-- Oublion Cipher
 i(183726);	-- Gratitude of the Liberated
 i(181796);	-- Emergency Supplies Key
+i(178465);	-- Giant Silk Bundle
 
 i(174969);	-- Alpaca Saddlebag (Vulpera Backpack)
 
@@ -429,7 +430,6 @@ i(137215);	-- Cut Azsunite.  You get it for a split second after completing the 
 
 -- Recipes (Not actual recipes)
 i(168326);	-- Eye of Theras
-i(127772);	-- Gemcutter Module: Haste
 i(171315);	-- Reuse me (MTMM)
 
 

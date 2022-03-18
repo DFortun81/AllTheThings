@@ -17,7 +17,6 @@ _.Zones =
 				exploration(3656, "256:256:81:152"),	-- Marshlight Lake
 				exploration(3766, "256:512:329:25"),	-- Orebor Harborage
 				exploration(3646, "256:343:141:325"),	-- Quagg Ridge
-				exploration(3653, "0:0:0:0"),			-- Serpent Lake / Zangarmarsh?
 				exploration(3649, "512:256:20:202"),	-- Sporeggar
 				exploration(3644, "256:512:569:112"),	-- Telredor
 				exploration(3648, "286:512:716:128"),	-- The Dead Mire

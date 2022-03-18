@@ -30,32 +30,51 @@ _.Secrets =
 			i(185353, {	-- Rune Codex Page: Binding
 				["description"] = "Requires a |cFF0070ddPartial Rune Codex|r, which you can purchase from Ve'nari for 2,000 Stygia after completing the first step of the secret.\n\nThe coordinates are to the teleport pad that takes you to Dartanos's platform, and the page is all the way at the back on a table, behind where the rare spawns.",
 				["questID"] = 63643,	-- adding the page to the codex
-				["coord"] = { 24.5, 17.3, THE_MAW },
+				["sourceQuest"] = 63611,	-- Runed Chest
+				["coords"] = {
+					{ 24.5, 17.3, THE_MAW },
+					{ 24.64, 12.58, THE_MAW },
+				},
 				["cost"] = { { "i", 185350, 1 } },	-- Partial Rune Codex
 			}),
 			i(185351, {	-- Rune Codex Page: Forging
 				["description"] = "Requires a |cFF0070ddPartial Rune Codex|r, which you can purchase from Ve'nari for 2,000 Stygia after completing the first step of the secret.\n\nThe coordinates are to a cave entrance, and the page is at the back of the cave on the left side.",
 				["questID"] = 63641,	-- adding the page to the codex
+				["sourceQuest"] = 63611,	-- Runed Chest
 				["coord"] = { 48.8, 84.7, THE_MAW },
 				["cost"] = { { "i", 185350, 1 } },	-- Partial Rune Codex
 			}),
 			i(185352, {	-- Rune Codex Page: Souls
 				["description"] = "Requires a |cFF0070ddPartial Rune Codex|r, which you can purchase from Ve'nari for 2,000 Stygia after completing the first step of the secret.\n\nThe page is on the right side of Thanassos' platform.",
 				["questID"] = 63642,	-- adding the page to the codex
+				["sourceQuest"] = 63611,	-- Runed Chest
 				["coord"] = { 27.2, 72.3, THE_MAW },
 				["cost"] = { { "i", 185350, 1 } },	-- Partial Rune Codex
 			}),
 			i(185632, {	-- Intact Rune Codex
 				["description"] = "Received after collecting and using all the Rune Codex Pages.  ",
 				["questID"] = 63668,
+				["sourceQuests"] = {
+					63643,	-- Rune Codex Page: Binding
+					63641,	-- Rune Codex Page: Forging
+					63642,	-- Rune Codex Page: Souls
+				},
+			}),
+			i(185473, {	-- Soulforger's Tools
+				["description"] = "Used for the |cFFb19cd9Bound Shadehound|r secret mount. Only available to characters who have collected the |cFFa335eeIntact Rune Codex|r.",
+				["questID"] = 63667,
+				["sourceQuest"] = 63668,	-- Intact Rune Codex
+				["crs"] = { 166398 }, 	-- Soulforger Rhovus
 			}),
 			n(177392, {	-- Soulsteel Anvil
 				["description"] = "Once you have the |cFFa335eeIntact Rune Codex|r, you can collect |cFFa335eeSoulforger's Tools|r from the rare mob Soulforger Rhovus and finish collecting all your |cFF1eff00Stygia Dust|r and |cFF1eff00Stygia Slivers|r (200 of each).\n\nGrapple all the way up to the Soulsteel Anvil — the first grapple point is at |cFFFFFFFF23.0, 68.4|r, and the anvil is at |cFFFFFFFF20.2, 67.0|r.\n\nCraft 20 |cFF0070ddStygia Bar|r and 1 |cFFa335eeArmored Husk|r.",
 				["questID"] = 63707,	-- crafting Armored Husk
+				["sourceQuest"] = 63667,	-- Soulforger's Tools
 				["coords"] = {
 					{ 23.0, 68.4, THE_MAW },	-- grapple point
 					{ 20.2, 67.0, THE_MAW },	-- Soulsteel Anvil
 				},
+				["cost"] = { { "i", 185474, 1 }, },		-- Armored Husk
 				["g"] = {
 					i(185630, {	-- Stygia Bar
 						["cost"] = {
@@ -74,9 +93,16 @@ _.Secrets =
 			n(177195, {	-- Stray Soul
 				["description"] = "Find a Stray Soul patting along Gorgoa, the River of Souls.  Interact with it, and you will receive a |cFFa335eeWilling Wolf Soul|r.\n\nThe coordinates are near the beginning of the soul's path, where it respawns, but if no one interacts with the soul it can pat all the way to |cFFFFFFFF49.8, 16.4|r.",
 				["questID"] = 63666,	-- receiving the item
+				["sourceQuest"] = 63707,	-- Soulsteel Anvil
 				["coord"] = { 23.2, 46.8, THE_MAW },	-- beginning of path
 				["g"] = {
 					i(185471),	-- Willing Wolf Soul
+				},
+			}),
+			i(185475, {	-- Feral Shadehound
+				["cost"] = {
+					{ "i", 185474, 1 },	-- 1x Armored Husk
+					{ "i", 185471, 1 },	-- 1x Willing Wolf Soul
 				},
 			}),
 			q(63684, {	-- Feral Shadehound
@@ -84,6 +110,7 @@ _.Secrets =
 				["provider"] = { "i", 185475 },	-- Feral Shadehound
 				["g"] = {
 					i(184168),	-- Bound Shadehound
+					i(185616),	-- Summon Feral Shadehound
 				},
 			}),
 		},

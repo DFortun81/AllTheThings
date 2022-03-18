@@ -437,7 +437,7 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 103092 },	-- The Great Akazamzarak
 							["sourceQuest"] = 46722,	-- Nothing Up My Sleeve
 							["g"] = {
-								i(147838),	-- Akazamzarak's Spare Hat
+								i(147838),	-- Akazamzarak's Spare Hat (TOY!)
 							},
 						}),
 						q(42222, {	-- Empyrean Society Report
@@ -870,9 +870,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 102700 },	-- Meryl Felstorm
 							["sourceQuest"] = 41114,	-- The Champion's Return
 						}),
-						q(46940, {	-- Using Lost Knowledge
-							["u"] = REMOVED_FROM_GAME,
-						}),
 						q(42166, {	-- What Is Going On Here?
 							["coord"] = { 64.3, 31.3, AZSUNA },
 							["classes"] = { MAGE },
@@ -904,7 +901,7 @@ _.ExpansionFeatures =
 							i(139754, {	-- Bracers of Tirisgarde
 								["cost"] = 5000000,	-- 500g
 							}),
-							i(143727, {	-- Champion's Salute Toy
+							i(143727, {	-- Champion's Salute (TOY!)
 								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
 							}),
 							i(139749, {	-- Cowl of Tirisgarde
@@ -930,7 +927,7 @@ _.ExpansionFeatures =
 							["sourceQuest"] = 45354,	-- Dispersion of the Discs
 							["classes"] = { MAGE },
 							["g"] = {
-								i(147832, {	-- Magical Saucer Toy
+								i(147832, {	-- Magical Saucer (TOY!)
 									["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
 								}),
 							},

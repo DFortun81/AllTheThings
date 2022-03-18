@@ -14,7 +14,7 @@ _.Zones =
 						["g"] = {
 							i(46004),	-- Sealed Vial of Poison
 							i(44983),	-- Strand Crawler Pet
-							i(45984),	-- Unusual Compass Toy
+							i(45984),	-- Unusual Compass (TOY!)
 							i(33820),	-- Weather-Beaten Fishing Hat
 							i(45986, {	-- Tiny Titanium Lockbox
 								i(45995),	-- Forgotten Necklace
@@ -42,6 +42,18 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				]]--
+				q(29608, {	-- Allies in Dalaran -- TODO:: figure out where this leads
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,	-- Gold said this gets invalidated by something, but idk what.
+					["coords"] = {
+						{ 59.7, 63.2, HOWLING_FJORD },	-- Pricilla Winterwind
+						{ 58.9, 68.2, BOREAN_TUNDRA },	-- Tomas Riverwell
+					},
+					["qgs"] = {
+						23736,	-- Pricilla Winterwind
+						26879,	-- Tomas Riverwell
+					},
+				}),
 				q(13986, {	-- An Injured Colleague
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
@@ -144,6 +156,17 @@ _.Zones =
 					["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
 					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
 					["isWeekly"] = true,
+				}),
+				q(29609, {	-- Friends in Dalaran
+					["races"] = HORDE_ONLY,
+					["qgs"] = {
+						27344,	-- Adeline Chambers
+						25288,	-- Turida Coldwind
+					},
+					["coords"] = {
+						{ 79.0, 29.7, HOWLING_FJORD },	-- Adeline Chambers
+						{ 40.3, 51.3, BOREAN_TUNDRA },	-- Turida Coldwind
+					},
 				}),
 				--[[
 				q(32405, {	-- Hand of the Silver Covenant
@@ -339,12 +362,6 @@ _.Zones =
 				q(39212, {	-- Sholazar Basin -- Adventure Guide
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(12974, {	-- The Champion's Call!
-					["coord"] = { 49.3, 45.9, NORTHREND_DALARAN },
-					["provider"] = { "n", 30137 },	-- Shifty Vickers
-					["description"] = "Patrols the center area of Underbelly.",
-					["isBreadcrumb"] = true,
-				}),
 				q(13830, {	-- The Ghostfish
 					["coord"] = { 53.0, 64.9, NORTHREND_DALARAN },
 					["isDaily"] = true,
@@ -357,6 +374,38 @@ _.Zones =
 						crit(1, {	-- Chasing Marcia (The Ghostfish)
 							["achievementID"] = 3217,	-- Chasing Marcia
 						}),
+					},
+				}),
+				q(12794, {	-- The Magical Kingdom of Dalaran (A)
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["providers"] = {
+						{ "n", 23729 },	-- Baron Ulrik von Stromhearth
+						{ "n", 26673 },	-- Image of Archmage Modera
+						{ "n", 29158 },	-- Magister Dath'omere
+						{ "n", 29161 }, --	Magistrix Haelenai
+					},
+					["coords"] = {
+						{ 58.6, 68.2, BOREAN_TUNDRA },
+						{ 29.0, 55.4, DRAGONBLIGHT },
+						{ 58.8, 62.8, HOWLING_FJORD },
+						{ 32.0, 59.8, GRIZZLY_HILLS },
+					},
+				}),
+				q(12791, {	-- The Magical Kingdom of Dalaran (H)
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["providers"] = {
+						{ "n", 26471 },	-- Image of Archmage Aethas Sunreaver
+						{ "n", 29160 },	-- Magistrix Phaelista
+						{ "n", 29162 },	-- Magister Tyr'ganal
+						{ "n", 29159 },	-- Magister Varenthas
+					},
+					["coords"] = {
+						{ 20.6, 64.2, GRIZZLY_HILLS },
+						{ 79.4, 29.4, HOWLING_FJORD },
+						{ 38.0, 46.2, DRAGONBLIGHT },	-- Image of Archmage Aethas Sunreaver
+						{ 76.8, 63.2, DRAGONBLIGHT },	-- Magister Tyr'ganal
 					},
 				}),
 				--[[

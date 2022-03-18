@@ -54,11 +54,11 @@ _.Zones =
 						["sourceQuest"] = 24473,	-- Lockdown in Anvilmar
 					}),
 					q(31150, {	-- Elegant Rune
-						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 37087 },	-- Jona Ironstock
 						["coord"] = { 61.4, 19.4, 427 },
 						["races"] = { DWARF },
 						["classes"] = { MONK },
+						["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
 					}),
 					q(3109,  {	-- Encrypted Rune
 						["u"] = REMOVED_FROM_GAME,
@@ -108,11 +108,11 @@ _.Zones =
 						},
 					}),
 					q(31151, {	-- Kick, Punch, It's All in the Mind
-						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 63285 },	-- Lo
 						["coord"] = { 63.2, 22.3, 427 },
-						["races"] = ALLIANCE_ONLY,
+						["races"] = { DWARF },
 						["classes"] = { MONK },
+						["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
 					}),
 					q(24473, {	-- Lockdown in Anvilmar
 						["provider"] = { "n", 37081 },	-- Joren Ironstock

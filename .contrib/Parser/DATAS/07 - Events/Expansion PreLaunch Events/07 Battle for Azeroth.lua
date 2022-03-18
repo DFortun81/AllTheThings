@@ -316,7 +316,7 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 8.0.1.27101", "
 		n(WORLD_QUESTS, {
 			["maps"] = { DARKSHORE },	-- Let's attach the map to this zone since all the WQ's are here.
 			["groups"] = {
-				n(QUESTS, bubbleDown({ ["isWorldQuest"] = True }, {
+				n(QUESTS, bubbleDown({ ["isWorldQuest"] = true }, {
 					q(52895, {	-- Arboria
 						["races"] = ALLIANCE_ONLY,
 					}),

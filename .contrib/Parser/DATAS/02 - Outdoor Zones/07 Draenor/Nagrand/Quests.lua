@@ -341,16 +341,6 @@ _.Zones =
 						follower(170),	-- Goldmane the Skinner
 					},
 				}),
-				i(113109, {	-- Frostwolf Axe
-					["crs"] = { 78278 },	-- Breezestrider Talbuk
-					["races"] = HORDE_ONLY,
-					["description"] = "Drops while doing |cFFFFD700Shooting the Breeze|r.",
-					["g"] = {
-						q(35377, {	-- Someone's Missing Axe
-							["races"] = HORDE_ONLY,
-						}),
-					},
-				}),
 				q(34819, {	-- Fruitful Ventures
 					["provider"] = { "n", 81955 },	-- Digrem Orebar
 					["coord"] = { 79.2, 52.6, DRAENOR_NAGRAND },
@@ -919,6 +909,7 @@ _.Zones =
 				}),
 				q(35377, {	-- Someone's Missing Axe
 					["races"] = HORDE_ONLY,
+					["provider"] = { "i", 113109 },	-- Frostwolf Axe
 				}),
 				q(35393, {	-- Spiritual Matters
 					["provider"] = { "n", 82179 },	-- Vindicator Nobundo
@@ -1422,6 +1413,12 @@ _.Zones =
 				q(36273, {	-- Whacking Weeds
 					["provider"] = { "n", 84632 },	-- Marybelle Walsh
 					["coord"] = { 77.4, 47.3, DRAENOR_NAGRAND },
+				}),
+				i(113109, {	-- Frostwolf Axe
+					["crs"] = { 78278 },	-- Breezestrider Talbuk
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 35376,	-- Shooting the Breeze
+					["description"] = "Drops while doing |cFFFFD700Shooting the Breeze|r.",
 				}),
 				n(BONUS_OBJECTIVES, {
 					-- TODO: Check SQ

@@ -138,11 +138,6 @@ _.Instances = { tier(WOD_TIER, {
 						},
 					}),
 				}),
-				n(QUESTS, {
-					q(37179, {
-						i(118938),	-- Manastorm's Duplicator
-					}),
-				}),
 				e(1226,   {	-- Orebender Gor'ashan
 					["crs"] = { 76413 },	-- Orebender Gor'ashan
 					["sym"] = {

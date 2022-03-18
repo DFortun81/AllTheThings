@@ -227,18 +227,18 @@ root("Zones", m(KALIMDOR, {
 				["g"] = {
 					i(54436),	-- Blue Clockwork Rocket Bot Pet
 					i(95621),	-- Warbot Ignition Key Pet
-					i(54343),	-- Blue Crashin' Thrashin' Racer Controller Toy
-					i(104324),	-- Foot Ball Toy
-					i(137663),	-- Soft Foam Sword Toy
-					i(104323),	-- The Pigskin Toy
-					i(54438),	-- Tiny Blue Ragdoll Toy
-					i(54437),	-- Tiny Green Ragdoll Toy
-					i(44606),	-- Toy Train Set Toy
-					i(45057),	-- Wind-Up Train Wrecker Toy
-					i(69896, {	-- Yellow Balloon Toy
+					i(54343),	-- Blue Crashin' Thrashin' Racer Controller (TOY!)
+					i(104324),	-- Foot Ball (TOY!)
+					i(137663),	-- Soft Foam Sword (TOY!)
+					i(104323),	-- The Swineskin (TOY!)
+					i(54438),	-- Tiny Blue Ragdoll (TOY!)
+					i(54437),	-- Tiny Green Ragdoll (TOY!)
+					i(44606),	-- Toy Train Set Toy (TOY!)
+					i(45057),	-- Wind-Up Train Wrecker Toy (TOY!)
+					i(69896, {	-- Yellow Balloon Toy (TOY!)
 						["u"] = CHILDRENS_WEEK,
 					}),
-					i(69895, {	-- Green Balloon Toy
+					i(69895, {	-- Green Balloon Toy (TOY!)
 						["u"] = CHILDRENS_WEEK,
 					}),
 				},
@@ -409,13 +409,13 @@ root("Zones", m(KALIMDOR, {
 				["races"] = HORDE_ONLY,
 				["coord"] = { 48.0, 58.6, ORGRIMMAR },
 				["g"] = {
-					i(25477),	-- Swift Red Wind Rider Mount
-					i(25531),	-- Swift Green Wind Rider Mount
-					i(25532),	-- Swift Yellow Wind Rider Mount
-					i(25533),	-- Swift Purple Wind Rider Mount
-					i(25474),	-- Tawny Wind Rider Mount
-					i(25475),	-- Blue Wind Rider Mount
-					i(25476),	-- Green Wind Rider Mount
+					i(25477),	-- Swift Red Wind Rider (MOUNT!)
+					i(25531),	-- Swift Green Wind Rider (MOUNT!)
+					i(25532),	-- Swift Yellow Wind Rider (MOUNT!)
+					i(25533),	-- Swift Purple Wind Rider (MOUNT!)
+					i(25474),	-- Tawny Wind Rider (MOUNT!)
+					i(25475),	-- Blue Wind Rider (MOUNT!)
+					i(25476),	-- Green Wind Rider (MOUNT!)
 				},
 			}),
 			n(3367,   {	-- Felika <Trade Supplies>
@@ -2498,15 +2498,15 @@ root("Zones", m(KALIMDOR, {
 			["coord"] = { 61.6, 35.6, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(18796),	-- Horn of the Swift Brown Wolf
-					i(18797),	-- Horn of the Swift Timber Wolf
-					i(18798),	-- Horn of the Swift Grey Wolf
-					i(1132),	-- Horn of the Timber Wolf
-					i(5665),	-- Horn of the Dire Wolf
-					i(5668),	-- Horn of the Brown Wolf
+					i(18796),	-- Swift Brown Wolf (MOUNT!)
+					i(18797),	-- Swift Timber Wolf (MOUNT!)
+					i(18798),	-- Swift Gray Wolf (MOUNT!)
+					i(1132),	-- Timber Wolf (MOUNT!)
+					i(5665),	-- Dire Wolf (MOUNT!)
+					i(5668),	-- Brown Wolf (MOUNT!)
 					i(46099),	-- Horn of the Black Wolf
-					un(REMOVED_FROM_GAME, i(12351)),	-- Arctic Wolf -- Unable to 100% verify this source.
-					un(REMOVED_FROM_GAME, i(12330)),	-- Red Wolf -- Unable to 100% verify this source.
+					un(REMOVED_FROM_GAME, i(12351)),	-- Arctic Wolf (MOUNT!) -- Unable to 100% verify this source.
+					un(REMOVED_FROM_GAME, i(12330)),	-- Red Wolf (MOUNT!) -- Unable to 100% verify this source.
 				},
 			}),
 			n(3317,   {	-- Ollanus <Cloth Armor Merchant>
@@ -2549,15 +2549,15 @@ root("Zones", m(KALIMDOR, {
 				["itemID"] = 137642,	-- Mark of Honor
 				["races"] = HORDE_ONLY,
 				["g"] = pvp({
-					i(29466),	-- Black War Kodo
-					un(REMOVED_FROM_GAME, i(18247)),	-- Black War Kodo. Pre 2.0 Version
-					i(29469),	-- Horn of the Black War Wolf
-					un(REMOVED_FROM_GAME, i(18245)),	-- Horn of the Black War Wolf. Pre 2.0 Version
-					i(29470),	-- Red Skeletal Warhorse
-					un(REMOVED_FROM_GAME, i(18248)),	-- Red Skeletal Warhorse. Pre 2.0 Version
-					i(29472),	-- Whistle of the Black War Raptor
-					un(REMOVED_FROM_GAME, i(18246)),	-- Whistle of the Black War Raptor. Pre 2.0 Version
-					i(34129),	-- Swift Warstrider
+					i(29466),	-- Black War Kodo (MOUNT!)
+					un(REMOVED_FROM_GAME, i(18247)),	-- Black War Kodo (MOUNT!) Pre 2.0 Version
+					i(29469),	-- Black War Wolf (MOUNT!)
+					un(REMOVED_FROM_GAME, i(18245)),	-- Black War Wolf (MOUNT!) Pre 2.0 Version
+					i(29470),	-- Red Skeletal Warhorse (MOUNT!)
+					un(REMOVED_FROM_GAME, i(18248)),	-- Red Skeletal Warhorse (MOUNT!) Pre 2.0 Version
+					i(29472),	-- Black War Raptor (MOUNT!)
+					un(REMOVED_FROM_GAME, i(18246)),	-- Black War Raptor (MOUNT!) Pre 2.0 Version
+					i(34129),	-- Swift Warstrider (MOUNT!)
 				}),
 			}),
 			n(52033,  {	-- Rogoc <Bloodthirsty Gladiator>

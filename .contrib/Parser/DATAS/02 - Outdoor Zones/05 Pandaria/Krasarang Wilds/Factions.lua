@@ -816,10 +816,6 @@ _.Zones =
 								["coord"] = { 16.0, 78.8, KRASARANG_WILDS },
 								["races"] = ALLIANCE_ONLY,
 							}),
-							q(32196, {	-- A Kind of Magic - DEPRECATED
-								["races"] = ALLIANCE_ONLY,
-								["u"] = REMOVED_FROM_GAME,	-- triggers when completing the version above
-							}),
 							q(32247, {	-- A King Among Men
 								["sourceQuests"] = { 32246 },	-- Meet the Scout
 								["providers"] = {

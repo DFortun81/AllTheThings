@@ -27,6 +27,26 @@ profession(LEATHERWORKING, {
 					["name"] = "Pallid Oracle Bones",
 				}),
 			}),
+			{
+				["categoryID"] = 1521,	-- Optional Reagents
+				["g"] = {
+					{
+						["recipeID"] = 359662,	-- Crafter's Mark IV
+						["name"] = "Crafter's Mark IV",
+						["timeline"] = { "added 9.2.0" },
+					},
+					{
+						["recipeID"] = 359669,	-- Crafter's Mark of the First Ones
+						["name"] = "Crafter's Mark of the First Ones",
+						["timeline"] = { "added 9.2.0" },
+					},
+					{
+						["recipeID"] = 359702,	-- Vestige of the Eternal
+						["name"] = "Vestige of the Eternal",
+						["timeline"] = { "added 9.2.0" },
+					},
+				},
+			},
 		}),
 	}),
 });

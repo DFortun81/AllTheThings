@@ -250,6 +250,50 @@ _.Zones =
 						}),
 					},
 				})),
+				ach(13016, {	-- Scavenger of the Sands
+					crit(1,  {	-- Jason's Rusty Blade
+						["_quests"] = { 53132 },
+					}),
+					crit(2,  {	-- Ian's Empty Bottle
+						["_quests"] = { 53133 },
+					}),
+					crit(3,  {	-- Julie's Cracked Dish
+						["_quests"] = { 53134 },
+					}),
+					crit(4,  {	-- Brian's Broken Compass
+						["_quests"] = { 53135 },
+					}),
+					crit(5,  {	-- Ofer's Bound Journal
+						["_quests"] = { 53136 },
+					}),
+					crit(6,  {	-- Skye's Pet Rock
+						["_quests"] = { 53137 },
+					}),
+					crit(7,  {	-- Julien's Left Boot
+						["_quests"] = { 53138 },
+					}),
+					crit(8,  {	-- Navarro's Flask
+						["_quests"] = { 53139 },
+					}),
+					crit(9,  {	-- Zach's Canteen
+						["_quests"] = { 53140 },
+					}),
+					crit(10, {	-- Damarcus' Backpack
+						["_quests"] = { 53141 },
+					}),
+					crit(11, {	-- Rachel's Flute
+						["_quests"] = { 53142 },
+					}),
+					crit(12, {	-- Josh's Fang Necklace
+						["_quests"] = { 53143 },
+					}),
+					crit(13, {	-- Portrait of Commander Martens
+						["_quests"] = { 53144 },
+					}),
+					crit(14, {	-- Kurt's Ornate Key
+						["_quests"] = { 53145 },
+					}),
+				}),
 				ach(13011),		-- Scourge of Zem'lan
 				ach(12478, {	-- Secrets in the Sands
 					["races"] = HORDE_ONLY,
@@ -290,6 +334,38 @@ _.Zones =
 					},
 				}),
 				pvp(ach(12576)),	-- Tour of Duty: Vol'dun
+				ach(12849, {	-- Treasures of Vol'dun
+					crit(1,  {	-- Ashvane Spoils
+						["_quests"] = { 50237 },
+					}),
+					crit(2,  {	-- Grayal's Last Offering
+						["_quests"] = { 51093 },
+					}),
+					crit(3,  {	-- Lost Explorer's Bounty
+						["_quests"] = { 51132 },
+					}),
+					crit(4,  {	-- Sandfury Reserve
+						["_quests"] = { 51133 },
+					}),
+					crit(5,  {	-- Stranded Cache
+						["_quests"] = { 51135 },
+					}),
+					crit(6,  {	-- Excavator's Greed
+						["_quests"] = { 51136 },
+					}),
+					crit(7,  {	-- Zem'lan's Buried Treasure
+						["_quests"] = { 51137 },
+					}),
+					crit(8,  {	-- Lost Offerings of Kimbul
+						["_quests"] = { 52992 },
+					}),
+					crit(9,  {	-- Deadwood Chest
+						["_quests"] = { 52994 },
+					}),
+					crit(10, {	-- Sandsunken Treasure
+						["_quests"] = { 53004 },
+					}),
+				}),
 				ach(13014, {	-- Vorrik's Champion
 					["races"] = HORDE_ONLY,
 					["g"] = {

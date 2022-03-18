@@ -5,7 +5,7 @@
 _.WorldDrops =
 {
 	tier(WOTLK_TIER, {
-		n(-1000, {	-- Sets
+		n(SETS, {
 			i(36019),	-- Aerie Belt
 			i(36020),	-- Aerie Boots
 			i(36021),	-- Aerie Robe

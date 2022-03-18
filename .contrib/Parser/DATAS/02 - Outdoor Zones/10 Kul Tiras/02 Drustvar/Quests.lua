@@ -972,7 +972,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 49443 },	-- A Lesson in Witch Hunting
 					["g"] = {
-						i(163607),	-- Lucille's Sewing Needle
+						i(163607),	-- Lucille's Sewing Needle (TOY!)
 					},
 				}),
 				q(51019, {	-- She's Got it Where it Counts

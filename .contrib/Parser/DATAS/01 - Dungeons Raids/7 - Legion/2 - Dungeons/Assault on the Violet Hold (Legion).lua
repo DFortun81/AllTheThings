@@ -8,14 +8,6 @@ _.Instances = { tier(LEGION_TIER, {
 		["mapID"] = 732,
 		["coord"] = { 66.2, 68.3, LEGION_DALARAN },
 		["g"] = {
-			n(QUESTS, {
-				q(39247,  {	-- The Hunt
-					["sourceQuests"] = { 39051 },	-- By Any Means
-					["classes"] = { DEMONHUNTER },
-					["coord"] = { 50.5, 69.4, 723 },
-					["provider"] = { "n", 103156 },	-- Altruis the Sufferer
-				}),
-			}),
 			d(1, {	-- Normal
 				cr(101995, e(1693, {	-- Festerface
 					i(137438),	-- Band of Decaying Rubies

@@ -39,7 +39,10 @@ _.Zones =
 					["provider"] = { "n", 32959 },	-- Cerellean Whiteclaw
 					["coord"] = { 50.8, 17.8, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 13529,	-- The Corruption's Source
+					["sourceQuests"] = {
+						13554,	-- A Cure In The Dark
+						13529,	-- The Corruption's Source
+					},
 					["g"] = {
 						i(52654),	-- Forlorn Shield
 						i(52599),	-- Restless Leggings
@@ -926,6 +929,7 @@ _.Zones =
 				}),
 				q(13510, {	-- Timely Arrival
 					["provider"] = { "n", 32964 },	-- Sentinel Aynasha
+					["coord"] = { 64.4, 5.4, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "To see this quest, use the cage key dropped by |cFFFFD700Rit'ko|r.",
 					["g"] = {

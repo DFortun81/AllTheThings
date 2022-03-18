@@ -199,7 +199,6 @@ _.Zones =
 								},
 							}),
 							-- #if AFTER MOP
-							-- #if AFTER CATA
 							q(10068, {	-- Frost Nova (MOP) / Arcane Missiles (Cata+) / Well Watcher Solanian (TBC)
 								["qg"] = 15279,	-- Julia Sunstriker <Mage Trainer>
 								["sourceQuest"] = 8328,	-- Mage Training
@@ -217,6 +216,9 @@ _.Zones =
 								["lvl"] = lvlsquish(2, 1, 2),
 								-- #endif
 							}),
+							-- #endif
+							-- #if AFTER CATA
+							-- #if BEFORE MOP
 							q(10072, {	-- Healing the Wounded (Cata+) / Learning the Word (MOP) / Well Watcher Solanian (TBC)
 								["qg"] = 15284,	-- Matron Arena <Priest Trainer>
 								["sourceQuest"] = 8564,	-- Priest Training
@@ -307,6 +309,13 @@ _.Zones =
 								-- #else
 								["lvl"] = lvlsquish(2, 1, 2),
 								-- #endif
+							}),
+							q(31170, {	-- Monk Training
+								["qg"] = 15278,	-- Magistrix Erona
+								["coord"] = { 61.0, 45.1, SUNSTRIDER_ISLE },
+								["races"] = { BLOODELF },
+								["classes"] = { MONK },
+								["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
 							}),
 							q(9676, {	-- Paladin Training
 								["qg"] = 15278,	-- Magistrix Erona
@@ -574,6 +583,13 @@ _.Zones =
 									i(21000),	-- Vigorous Bracers
 								},
 							}),
+							q(31171, {	-- Tiger Palm
+								["qg"] = 63332,	-- Pao
+								["coord"] = { 63.6, 42.6, SUNSTRIDER_ISLE },
+								["races"] = { BLOODELF },
+								["classes"] = { MONK },
+								["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+							}),
 							q(8326, {	-- Unfortunate Measures
 								["qg"] = 15278,	-- Magistrix Erona
 								["sourceQuest"] = 8325,	-- Reclaiming Sunstrider Isle
@@ -770,14 +786,15 @@ _.Zones =
 				n(EXPLORATION, {
 					exploration(3472, "256:256:669:228"),	-- Azurebreeze Coast [TBC]
 					exploration(3480, "256:256:605:253"),	-- Duskwither Grounds [TBC]
+					exploration(3481, { ["timeline"] = { "created 2.0.1" } }),	-- Duskwither Spire [TBC] [NOTE: Only Crieve could complete this, using Exploration Restoration, but not reliably achievable. Maybe Horde Only?]
 					exploration(3467, "256:256:460:373"),	-- East Sanctum [TBC]
 					exploration(3558, "128:256:580:399"),	-- Elrendar Falls [TBC]
-					exploration(3430, "0:0:0:0"),			-- Eversong Woods [TBC]
 					exploration(3462, "256:256:386:386"),	-- Fairbreeze Village [TBC]
 					exploration(3464, "256:128:524:359"),	-- Farstrider Retreat [TBC]
 					exploration(3460, "128:253:183:415"),	-- Golden Strand [TBC]
 					exploration(3912, "256:128:243:469"),	-- Goldenbough Pass [TBC]
-					exploration(3513, "128:197:584:471"),	-- Lake Elrendar [TBC]
+					exploration(3513),	-- Lake Elrendar (Ghostlands) [TBC]
+					exploration(3473, "128:197:584:471"),	-- Lake Elrendar [TBC]
 					exploration(3465, "256:256:361:298"),	-- North Sanctum [TBC]
 					exploration(3533, "256:256:307:136"),	-- Ruins of Silvermoon [TBC]
 					exploration(3913, "256:172:378:496"),	-- Runestone Falithas [TBC]

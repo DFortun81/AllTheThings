@@ -7,6 +7,11 @@ root("ExpansionFeatures", {
 		n(CLASS_HALL, {
 			["icon"] = "Interface\\Icons\\achievement_level_110",
 			["g"] = {
+				n(QUESTS, {
+					q(46940, {	-- Using Lost Knowledge
+						["timeline"] = { "added 7.2.0.23530", "removed 7.3" },	-- estimated removal
+					}),
+				}),
 				n(93787, {	-- Scouting Map
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["maps"] = {
@@ -56,7 +61,10 @@ root("ExpansionFeatures", {
 								un(REMOVED_FROM_GAME, i(141176)),	-- Haunted Ravencrest Keepsake (Mythic)
 							})),
 							q(44865, {	-- Butler to the Great
+								["sourceQuest"] = 44803,	-- Return to Karazhan: Master of the House
+								["lvl"] = 110,
 								["provider"] = { "n", 115551 },	-- Phantom Valet
+								["maps"] = { DEADWIND_PASS },
 								["g"] = {
 									follower(733),	-- Moroes
 								},
@@ -219,7 +227,7 @@ root("ExpansionFeatures", {
 							i(140316),	-- Firebat Pup
 						}),
 						mission(1381, {	-- Glittering Treasure
-							i(129165),	-- Barnacle-Encrusted Gem
+							i(129165),	-- Barnacle-Encrusted Gem (TOY!)
 						}),
 						mission(1513, {	-- I've Got A Strange Feeling About This
 							q(45312, {	-- You Beat the Ball of Meat
@@ -285,7 +293,7 @@ root("ExpansionFeatures", {
 							}),
 						}),
 						mission(1382, {	-- Win the Crowd
-							i(130169),	-- Tournament Favor
+							i(130169),	-- Tournament Favor (TOY!)
 						}),
 						-- Rep Insignias
 						i(152960),	-- Argussian Reach Insignia

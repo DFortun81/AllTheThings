@@ -60,11 +60,13 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(3564,  {	-- Andron's Payment to Jediga
-					["sourceQuests"] = { 3542 },	-- Delivery to Andron Gant
-					["provider"] = { "n", 6522 },	-- Andron Gant
+					["sourceQuest"] = 3542,	-- Delivery to Andron Gant
+					["qg"] = 6522,	-- Andron Gant
 					["coord"] = { 54.8, 76.3, UNDERCITY },
+					["maps"] = { AZSHARA },
 					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
+					["lvl"] = 45,
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 				}),
 				q(3784,  {	-- Assisting Arch Druid Runetotem
 					["provider"] = { "n", 6741 },	-- Innkeeper Norman
@@ -228,12 +230,6 @@ _.Zones =
 					["provider"] = { "n", 4556 },	-- Gordon Wendham
 					["coord"] = { 61.8, 42.0, UNDERCITY },
 					["races"] = { UNDEAD },
-				}),
-				q(28289, {	-- Moonglade Calls
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 52319 },	-- Mala Skywatcher
-					["classes"] = { DRUID },
-					["coord"] = { 55.0, 50.4, UNDERCITY },
 				}),
 				q(38346, {	-- Numismatics
 					["sourceQuests"] = { 38306 },	-- Mystery Notebook
@@ -436,13 +432,6 @@ _.Zones =
 					["coord"] = { 53.8, 54.4, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(42987, {	-- The Victor's Spoils
-					["sourceQuests"] = { 42985 },	-- A Royal Audience
-					["provider"] = { "n", 109471 },	-- Lady Sylvanas Windrunner
-					["coord"] = { 57.8, 91.6, UNDERCITY },
-					["races"] = HORDE_ONLY,
-					["timeline"] = { "removed 8.0.1.10000" },
 				}),
 				q(446,   {	-- Thule Ravenclaw
 					["provider"] = { "n", 1498 },	-- Bethor Iceshard

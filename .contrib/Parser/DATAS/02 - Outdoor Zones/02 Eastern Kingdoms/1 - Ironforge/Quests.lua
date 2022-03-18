@@ -137,13 +137,6 @@ _.Zones =
 					["coord"] = { 50.2, 6.8, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(28287, {	-- Meet with Farseer Umbrua
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 23127 },	-- Farseer Javad
-					["classes"] = { SHAMAN },
-					["coord"] = { 55.2, 29.0, IRONFORGE },	-- Farseer Javad
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(1050,  {	-- Mythology of the Titans
 					["provider"] = { "n", 3979 },	-- Librarian Mae Paledust
 					["coord"] = { 75.0, 12.5, IRONFORGE },

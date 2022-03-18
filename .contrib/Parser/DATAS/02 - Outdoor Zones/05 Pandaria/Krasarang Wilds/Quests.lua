@@ -129,7 +129,7 @@ _.Zones =
 						60358,	-- Unga Villager
 					},
 					["g"] = {
-						i(80822),	-- The Golden Banana
+						i(80822),	-- The Golden Banana (TOY!)
 					},
 				}),
 
@@ -179,14 +179,6 @@ _.Zones =
 						i(88044),	-- Dojani Waistband
 					},
 				}),
-
-
-				q(31486, {	-- Everything I Know About Cooking
-					["provider"] = { "n", 62872 },	-- Cranfur the Noodler
-					["coord"] = { 53.5, 76.4, KRASARANG_WILDS },
-				}),
-
-
 				q(30080, {	-- Finding Yi-Mo
 					["provider"] = { "n", 57744 },	-- Mei Barrelbottom
 					["coord"] = { 79.7, 1.57, KRASARANG_WILDS },
@@ -582,15 +574,6 @@ _.Zones =
 					["provider"] = { "n", 57744 },	-- Mei Barrelbottom
 					["coord"] = { 79.7, 1.57, KRASARANG_WILDS },
 				}),
-
-
-				q(31392, {	-- Temple of the White Tiger
-					["provider"] = { "n", 60289 },	-- Leni Kelpenstout
-					["coord"] = { 54.5, 77.1, KRASARANG_WILDS },
-					["races"] = ALLIANCE_ONLY,
-				}),
-
-
 				q(30274, {	-- The Arcanic Oubliette
 					["coord"] = { 70.6, 28.4, KRASARANG_WILDS },
 					["races"] = ALLIANCE_ONLY,
@@ -744,16 +727,6 @@ _.Zones =
 						i(81541),	-- Balmy Drape
 					},
 				}),
-
-
-				q(31255, {	-- The Road to Kun-Lai
-					["sourceQuests"] = { 49541 },	-- Warchief's Command: Kun-Lai Summit!
-					["provider"] = { "n", 63778 },	-- Messenger Grummle
-					["coord"] = { 41.7, 29.9, KRASARANG_WILDS },
-					["races"] = HORDE_ONLY,
-				}),
-
-
 				q(30357, {	-- The Stoneplow Convoy (A)
 					["sourceQuests"] = {
 						30354,	-- No Sister Left Behind
@@ -975,7 +948,7 @@ _.Zones =
 					["provider"] = { "n", 56115 },	-- Ken-Ken
 					["coord"] = { 80.2, 1.00, KRASARANG_WILDS },
 					["g"] = {
-						i(88580),	-- Ken-Ken's Mask
+						i(88580),	-- Ken-Ken's Mask (TOY!)
 					},
 				}),
 
@@ -1033,11 +1006,6 @@ _.Zones =
 					["provider"] = { "n", 63721 },	-- Nat Pagle
 					["races"] = HORDE_ONLY,
 				}),
-				q(31254, {	-- The Road to Kun-Lai
-					["sourceQuests"] = { 59559 },	-- Hero's Call: Kun-Lai Summit!
-					["provider"] = { "n", 63778 },	-- Messenger Grummle
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(30738, {	-- Thelonius
 					["provider"] = { "n", 60506 },	-- Thelonius
 					["isDaily"] = true,
@@ -1072,6 +1040,14 @@ _.Zones =
 		}),
 	}),
 };
-_.HiddenQuestTriggers = {
-	q(32477),	-- Going back and forth in time via Taradormi
-};
+root("HiddenQuestTriggers",{
+	tier(MOP_TIER, {
+		q(30719),	-- FLAG - Cradle of Chi-Ji Progress Bit 01
+		q(30720),	-- FLAG - Cradle of Chi-Ji Progress Bit 02 - triggered after turning in Dextrous Izissha quest, 6th for Champion of Chi-Ji, triggered on another character after turning in Minh Do-Tan, which is the 2nd
+		q(30721),	-- FLAG - Cradle of Chi-Ji Progress Bit 03
+		q(30722),	-- FLAG - Cradle of Chi-Ji Progress Bit 04
+		q(30087),	-- FLAG - Kung Fu Intro — triggers either when flying close to the magical barrier or after accepting The "Arcanic Oubliette" (questID 30274)
+		q(31371),	-- Tracking Event: Player Has Completed One Anglers Daily
+		q(32477),	-- Tracking Event: Player is Back in Time - going back and forth in time via Taradormi
+	}),
+});

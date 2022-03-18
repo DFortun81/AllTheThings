@@ -13,7 +13,7 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 				i(73764),	-- Darkmoon Monkey (PET!)
 				i(73903),	-- Darkmoon Tonk (PET!)
 				i(73765),	-- Darkmoon Turtle (PET!)
-				i(90899),	-- Darkmoon Whistle
+				i(90899),	-- Darkmoon Whistle (TOY!)
 				i(73905),	-- Darkmoon Zeppelin (PET!)
 			}),
 		}),
@@ -257,6 +257,12 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 			["g"] = {
 				i(19182),	-- Tattered Darkmoon Faire Prize Ticket
 			},
+		}),
+		q(64783, {	-- Dance Dance Darkmoon
+			["provider"] = { "n", 181097 },	-- Simon Sezdans <Dance Master>
+			--["coord"]
+			["timeline"] = { "added 9.2.0" },
+			["repeatable"] = true,
 		}),
 		applyclassicphase(PHASE_THREE, q(7907, {	-- Darkmoon Beast Deck
 			["providers"] = {
@@ -551,7 +557,7 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 			["coord"] = { 48.3, 71.3, 407 },
 			["g"] = {
 				ach(9252, {	-- Brood of Alysrazor
-					i(116115),	-- Blazing Wings
+					i(116115),	-- Blazing Wings (TOY!)
 				}),
 				i(93724),	-- Darkmoon Game Prize
 			},
@@ -721,9 +727,6 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 			["coord"] = { 54.9, 70.7, 407 },
 			["u"] = REMOVED_FROM_GAME, -- First Aid removed in 8.0.1 BfA Prepatch
 		}),
-		q(29484, {	-- Putting the Crunch in the Frog
-			["u"] = REMOVED_FROM_GAME,
-		}),
 		q(29509, {	-- Putting the Crunch in the Frog
 			["requireSkill"] = COOKING,
 			["isMonthly"] = true,
@@ -757,7 +760,7 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 			["provider"] = { "i", 116068 },	-- Erinys
 			["coord"] = { 74.8, 33.4, 407 },	-- Entrance
 			["g"] = {
-				i(116067),	-- Ring of Broken Promises
+				i(116067),	-- Ring of Broken Promises (TOY!)
 			},
 		}),
 		q(7893, {	-- Rituals of Strength
@@ -860,7 +863,7 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 			["coord"] = { 51.5, 77.1, 407 },
 			["g"] = {
 				ach(9894, {	-- Triumphant Turtle Tossing
-					i(122123),	-- Darkmoon Ring-Flinger
+					i(122123),	-- Darkmoon Ring-Flinger (TOY!)
 				}),
 				i(93724),	-- Darkmoon Game Prize
 			},
@@ -939,7 +942,7 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 				ach(9811, {	-- Big Wanderluster: Gold
 					["crs"] = { 89736 },	-- Wanderluster
 					["g"] = {
-						i(122121),	-- Darkmoon Gazer
+						i(122121),	-- Darkmoon Gazer (TOY!)
 						ach(9809),	-- Big Wanderluster: Gold [Real Big Race -- R25]
 						ach(9807),	-- Big Wanderluster: Gold [Real Big Race -- R40]
 						ach(9806),	-- Big Wanderluster: Gold [Real Big Race -- R30]
@@ -958,7 +961,7 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 				ach(9761, {	-- Darkmoon Racer Roadhog
 					["crs"] = { 90148 },	-- Racing Strider
 					["g"] = {
-						i(122129),	-- Fire-Eater Vial
+						i(122129),	-- Fire-Eater Vial (TOY!)
 						ach(9760),	-- Darkmoon Racer Leadfoot
 						ach(9759),	-- Darkmoon Racer Jockey
 						ach(9756),	-- Darkmoon Racer Novice
@@ -967,7 +970,7 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 				ach(9785, {	-- Powermonger: Gold
 					["crs"] = { 89732 },	-- Powermonger
 					["g"] = {
-						i(122120),	-- Gaze of the Darkmoon
+						i(122120),	-- Gaze of the Darkmoon (TOY!)
 						ach(9783),	-- Powermonger: Silver
 						ach(9781),	-- Powermonger: Bronze
 						ach(9780),	-- Go-Getter
@@ -976,7 +979,7 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 				ach(9764, {	-- Rocketeer: Gold
 					["crs"] = { 89734 },	-- Rocketeer
 					["g"] = {
-						i(122119),	-- Everlasting Darkmoon Firework
+						i(122119),	-- Everlasting Darkmoon Firework (TOY!)
 						ach(9766),	-- Rocketeer: Silver
 						ach(9769),	-- Rocketeer: Bronze
 						ach(9770),	-- Blast Off!
@@ -985,7 +988,7 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 				ach(9792, {	-- Wanderluster: Gold
 					["crs"] = { 89736 },	-- Wanderluster
 					["g"] = {
-						i(122126),	-- Attraction Sign
+						i(122126),	-- Attraction Sign (TOY!)
 						ach(9819),	-- Darkmoon Like the Wind
 						ach(9790),	-- Wanderluster: Silver
 						ach(9787),	-- Wanderluster: Bronze
@@ -1021,7 +1024,7 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 			["coord"] = { 50.7, 65.1, 407 },
 			["g"] = {
 				ach(9885, {	-- Ace Tonk Commander
-					i(122122),	-- Darkmoon Tonk Controller
+					i(122122),	-- Darkmoon Tonk Controller (TOY!)
 				}),
 				i(93724),	-- Darkmoon Game Prize
 			},
@@ -1096,10 +1099,56 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 		}),
 	}),
 })));
-
+root("HiddenQuestTriggers",{
+	tier(CATA_TIER, {
+		q(30562),	-- [DNT] A Fizzy Fusion TRACKER - triggers after completing A Fizzy Fusion (questID 29506)
+		q(30561),	-- [DNT] Fun for the Little Ones TRACKER - triggers after completing Fun For the Little Ones (questID 29507)
+	}),
+	tier(MOP_TIER, {
+		q(30557),	-- [DNT] A Captured Banner TRACKER - triggers after completing A Captured Banner (questID 29456)
+		q(30553),	-- [DNT] A Curious Crystal TRACKER - triggers after completing A Curious Crystal (questID 29443)
+		q(30556),	-- [DNT] A Wondrous Weapon TRACKER - triggers after completing A Wondrous Weapon (questID 29446)
+		q(30554),	-- [DNT] An Exotic Egg TRACKER - triggers after completing An Exotic Egg (questID 29444)
+		q(30555),	-- [DNT] An Intriguing Grimoire TRACKER - triggers after completing An Intriguing Grimoire (questID 29445)
+		q(30539),	-- [DNT] Baby Needs Two Pair of Shoes TRACKER - triggers after completing Baby Needs Two Pair of Shoes (questID 29508)
+		q(30551),	-- [DNT] Banners, Banners Everywhere! TRACKER - triggers after completing Banners, Banners Everywhere! (questID 29520)
+		q(30548),	-- [DNT] Eyes on the Prizes TRACKER - triggers after completing Eyes on the Prizes (questID 29517)
+		q(30545),	-- [DNT] Herbs for Healing TRACKER - triggers after completing Herbs for Healing (questID 29514)
+		q(30547),	-- [DNT] Keeping the Faire Sparkling TRACKER - triggers after completing Keeping the Faire Sparkling (questID 29516)
+		q(30543),	-- [DNT] Putting the Carnies Back Together Again TRACKER
+		q(30540),	-- [DNT] Putting the Crunch in the Frog TRACKER - triggers after completing Putting the Crunch in the Frog (questID 29509)
+		q(30541),	-- [DNT] Putting Trash to Good Use TRACKER - triggers after completing Putting Trash to Good Use (questID 29510)
+		q(30544),	-- [DNT] Spoilin' for Salty Sea Dogs TRACKER - triggers after completing Spoilin' for Salty Sea Dogs (questID 29513)
+		q(30542),	-- [DNT] Talkin' Tonks TRACKER - triggers after completing Talkin' Tonks (questID 29511)
+		q(30550),	-- [DNT] Tan My Hide TRACKER - triggers after completing Tan My Hide (questID 29519)
+		q(30559),	-- [DNT] The Captured Journal TRACKER - triggers after completing The Captured Journal (questID 29458)
+		q(30558),	-- [DNT] The Enemy's Insignia TRACKER - triggers after completing The Enemy's Insignia (questID 29457)
+		q(30552),	-- [DNT] The Master Strategist TRACKER - triggers after completing The Master Strategist (questID 29451)
+		q(30560),	-- [DNT] Tools of Divination TRACKER - triggers after completing Tools of Divination (questID 29464)
+		q(30546),	-- [DNT] Writing the Future TRACKER - triggers after completing Writing the Future (questID 29515)
+	}),
+	tier(BFA_TIER, {
+		q(45038),	-- Hexsweeper lvl 1
+		q(45039),	-- Hexsweeper lvl 2
+		q(45040),	-- Hexsweeper lvl 3
+		q(45041),	-- Hexsweeper lvl 4
+		q(45042),	-- Hexsweeper lvl 5
+		q(59312),	-- Hexsweeper lvl X
+		q(57827),	-- Rune Matching easy
+		q(57828),	-- Rune Matching normal
+		q(57829),	-- Rune Matching hard
+		q(57835),	-- Totems lvl 1
+		q(57836),	-- Totems lvl 2
+		q(57837),	-- Totems lvl 3
+		q(57838),	-- Totems lvl 4
+		q(57839),	-- Totems lvl 5
+		q(58572),	-- playing console game, remembthon something
+		q(57776),	-- unknown tracking quest that appeared after speaking to Selina Dourman
+	}),
+});
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
-		q(7906),	-- Darkmoon Cards - Beast (NYI?)
+		q(7906),	-- Darkmoon Cards - Beast
 		q(11334),	-- He Shoots, He Scores!
 		q(11345),	-- Prizes for Pellets
 		q(29601),	-- The Darkmoon Field Guide

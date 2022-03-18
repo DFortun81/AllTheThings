@@ -82,11 +82,6 @@ _.Instances = { tier(WOD_TIER, {
 				}),
 			}),
 			d(2, {	-- Heroic
-				n(QUESTS, {
-					q(37159, {
-						i(119093), --Aviana's Feather
-					}),
-				}),
 				e(965, {	-- Ranjit
 					["crs"] = { 75964 },
 					["sym"] = {

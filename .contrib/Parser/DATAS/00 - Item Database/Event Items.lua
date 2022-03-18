@@ -111,9 +111,9 @@
 -- i(69193);	-- Ogre Male Mask
 -- i(69194);	-- Vrykul Female Mask
 -- i(69195);	-- Vrykul Male Mask
--- i(37011);	-- Magic Broom
--- i(33184);	-- Swift Magic Broom
--- i(33183);	-- Old Magic Broom
+-- i(37011);	-- Magic Broom (MOUNT!)
+-- i(33184);	-- Swift Magic Broom (MOUNT!)
+-- i(33183);	-- Old Magic Broom (MOUNT!)
 -- i(33189);	-- Rickety Magic Broom
 -- i(128643);	-- Exquisite Costume Set: "Deathwing"
 -- i(138990);	-- Exquisite Costume Set: "Grommash"

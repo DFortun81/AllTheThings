@@ -3032,7 +3032,7 @@ _.ExpansionFeatures =
 				n(33595, {	-- Mera Mistrunner <Cooking Supplies>
 					["coord"] = { 72.4, 20.8, ICECROWN },
 					["g"] = {
-						i(134020, {	-- Chef's Hat
+						i(134020, {	-- Chef's Hat (TOY!)
 							["cost"] = { { "c", 81, 100 }, },	-- 100x Epicurean's Award
 						}),
 						i(43007, {	-- Northern Spices

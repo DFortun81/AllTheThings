@@ -169,8 +169,15 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 		--	Blues
 			i(186969),	-- Collapsing Riftstone
 			i(186559, {	-- Grappling Gauntlet (PET!)
-				["crs"] = {	-- probably from other Mawsworn mobs
+				["maps"] = {
+					THE_MAW,
+					ZERETH_MORTIS
+				},
+				["crs"] = {	-- 142 NPCs listed on Wowhead... just listing a few of the more common
+					182284,	-- Dreadsworn Guard
 					177292,	-- Mawsworn Mutilator
+					184471,	-- Mawsworn Myrmidon
+					184545,	-- Mawsworn Plunderer
 					179305,	-- Mawsworn Steelshaper
 					177293,	-- Mawsworn Torturer
 				},

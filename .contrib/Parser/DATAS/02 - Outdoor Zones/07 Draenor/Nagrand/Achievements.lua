@@ -17,6 +17,26 @@ _.Zones =
 						}),
 					},
 				}),
+				ach(9548, {		-- Buried Treasures (Mok'gol Watchpost)
+					crit(1, {	-- Garrosh's Shackles
+						["_quests"] = { 37130 },
+					}),
+					crit(2, {	-- Warsong Relics
+						["_quests"] = { 37132 },
+					}),
+					crit(3, {	-- Warsong Remains
+						["_quests"] = { 37133 },
+					}),
+					crit(4, {	-- Stolen Draenei Tome
+						["_quests"] = { 37134 },
+					}),
+					crit(5, {	-- Wolf Pup Remains
+						["_quests"] = { 37135 },
+					}),
+					crit(6, {	-- Gnarled Bone
+						["_quests"] = { 37136 },
+					}),
+				}),
 				ach(9610,  {	-- History of Violence (Broken Precipice)
 					["description"] = "In order to get the relics, except the Bust, use Jewel of Transformation in the area and then break boulder piles.",
 					["g"] = {

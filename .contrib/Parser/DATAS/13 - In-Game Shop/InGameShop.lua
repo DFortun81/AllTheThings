@@ -62,7 +62,7 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE },{
 		i(160589),			-- The Dreadwake
 		i(166775),			-- Vulpine Familiar
 		i(112326, {			-- Warforged Nightmare
-			i(112324),			-- Nightmarish Hitching Post
+			i(112324),		-- Nightmarish Hitching Post (TOY!)
 		}),
 		i(69846),			-- Winged Guardian
 		mount(359317),		-- Wen Lo, the River's Edge
@@ -169,9 +169,9 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE },{
 		i(188136),			-- Mrrgl's Shiny Shell
 	}),
 	filter(TOYS, {
-		i(166778),			-- Horde's Might Firework
-		i(166777),			-- Lion's Pride Firework
-		i(166779),			-- Transmorpher Beacon
+		i(166778),			-- Horde's Might Firework (TOY!)
+		i(166777),			-- Lion's Pride Firework (TOY!)
+		i(166779),			-- Transmorpher Beacon (TOY!)
 	}),
 	un(REMOVED_FROM_GAME, i(105911)),	-- Pouch of Enduring Wisdome (was in asia store during 5.4)
 	un(REMOVED_FROM_GAME, i(105912)),	-- Pouch of Enduring Wisdome 5 (was in asia store during 5.4)

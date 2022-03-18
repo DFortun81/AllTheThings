@@ -52,10 +52,24 @@ _.Zones =
 					},
 				}),
 				q(28289, {	-- Moonglade Calls
-					["qg"] = 16721,	-- Shalannius
-					["coord"] = { 24.4, 54.5, AZUREMYST_ISLE },
 					["classes"] = { DRUID },
 					["isBreadcrumb"] = true,
+					["qgs"] = {
+						44395,	-- Celestine of the Harvest
+						44978,	-- Sesebi
+						16721,	-- Shalannius
+						4217,	-- Mathrengyl Bearwalker
+						3034,	-- Sheal Runetotem
+						52319,	-- Mala Skywatcher
+					},
+					["coords"] = {
+						{ 24.4, 54.5, AZUREMYST_ISLE },	-- Shalannius
+						{ 40.4, 27.6, DARNASSUS },	-- Mathrengyl Bearwalker
+						{ 35.0, 67.6, ORGRIMMAR },	-- Sesebi
+						{ 77.0, 27.4, THUNDER_BLUFF },	-- Sheal Runetotem
+						{ 57.6, 24.8, STORMWIND_CITY },	-- Celestine of the Harvest
+						{ 55.0, 50.4, UNDERCITY },	-- Mala Skywatcher
+					},
 				}),
 				q(47430, {	-- Moonkin Monitoring (HOLIDAY/WORLD EVENT: Moonkin Festival)
 					["provider"] = { "n", 122134 },	-- Makkaw <Moonkin Festival>

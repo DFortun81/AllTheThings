@@ -426,15 +426,15 @@ _.ExpansionFeatures =
 							i(112802),	-- Seal of Sullied Mending
 							i(112801),	-- Signet of Durable Dreams
 						}),
-						i(118191),	-- Archmage Vargoth's Spare Toy
-						i(128310),	-- Burning Blad
+						i(118191),	-- Archmage Vargoth's Spare (TOY!)
+						i(128310),	-- Burning Blad (TOY!)
 						i(128311),	-- Coaalfist Gronnling
 						i(127748),	-- Cinder Pup
 						i(128319, {	-- Void-Shrouded Satchel
 							i(128318),	-- Touch of the Void
 						}),
 						i(120301),	-- Armor Enhancement Token
-						i(118427),	-- Autographed Hearthstone Card
+						i(118427),	-- Autographed Hearthstone Card (TOY!)
 						i(114128),	-- Balanced Weapon Enhancement
 						i(114806),	-- Blackrock Armor Set
 						i(114745),	-- Braced Armor Enhancement
@@ -720,6 +720,14 @@ _.ExpansionFeatures =
 						i(127818, {	-- Baleful Plate Treads
 							i(124574),	-- Felbane Greaves
 						}),
+						i(127799, {	-- Baleful Pendant
+							i(124612),	-- Discordant Amulet
+							i(124611),	-- Discordant Collar
+							i(124609),	-- Embittered Locket
+							i(124610),	-- Vexed Chain
+							i(124607),	-- Vexed Necklace
+							i(124608),	-- Vexed Pendant
+						}),
 					},
 				}),
 			}),
@@ -737,7 +745,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(114387),	-- Hood of Hooded Nightmares
 					i(114391),	-- Trousers of Hooded Nightmares
 					i(114399),	-- Cord of Hooded Nightmares
-					i(114460),	-- Fireflash Cord
 				}),
 				filter(LEATHER, {
 					i(114314),	-- Shadow-Gorged Chestguard
@@ -745,7 +752,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(114388),	-- Hood of Falling Leaves
 					i(114392),	-- Legguards of Falling Leaves
 					i(114400),	-- Belt of Falling Leaves
-					i(114461),	-- Spireflame Belt
 				}),
 				filter(MAIL, {
 					i(114315),	-- Chestguard of Meditative Focus
@@ -753,7 +759,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(114389),	-- Element-Binder Helm
 					i(114393),	-- Element-Binder Legguards
 					i(114401),	-- Element-Binder Belt
-					i(114462),	-- Belt of Elemental Torment
 				}),
 				filter(PLATE, {
 					i(114316),	-- Salt-Scorched Breastplate
@@ -761,7 +766,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(114390),	-- Greathelm of Grievous Storms
 					i(114394),	-- Legplates of Grievous Storms
 					i(114402),	-- Girdle of Grievous Storms
-					i(114463),	-- Girdle of Vaulted Skies
 				}),
 			}),
 		}),

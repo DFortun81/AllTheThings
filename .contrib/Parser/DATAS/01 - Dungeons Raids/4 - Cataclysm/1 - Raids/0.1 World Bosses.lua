@@ -38,7 +38,7 @@ _.Instances = { tier(CATA_TIER, {
 			}),
 			n(50063, {	-- Akma'hat
 				["maps"] = {	-- all Uldum maps
-					249,	-- Uldum
+					ULDUM,
 					716,	-- Skywall
 					737,	-- The Vortex Pinnacle
 					857,	-- Throne of the Four Winds

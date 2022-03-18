@@ -30,7 +30,7 @@ _.Craftables =
 				i(172923)	-- Precision Lifeforce Inverter
 			}),
 			filter(TOYS, {
-				i(172924)	-- Wormhole Generator: Shadowlands
+				i(172924)	-- Wormhole Generator: Shadowlands (TOY!)
 			}),
 		}),
 	}),

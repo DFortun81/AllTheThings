@@ -872,10 +872,6 @@ _.ExpansionFeatures =
 							["classes"] = { DEMONHUNTER },
 							["u"] = REMOVED_FROM_GAME,
 						}),
-						q(46940, {	-- Using Lost Knowledge
-							["classes"] = { DEMONHUNTER },
-							["u"] = REMOVED_FROM_GAME,
-						}),
 						q(42752, {	-- Vault of the Wardens: Vault Break-In (not sure why there are 2 versions, but they complete each other)
 							["sourceQuests"] = { 42749 },	-- Strange Bedfellows
 							["classes"] = { DEMONHUNTER },

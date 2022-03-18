@@ -27,6 +27,13 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 3209 },	-- Brave Windfeather
 					}),
+					q(31165, {	-- Calligraphed Note
+						["provider"] = { "n", 44927 },	-- Rohaku Stonehoof
+						["coord"] = { 34.0, 54.0, 462 },
+						["races"] = { TAUREN },
+						["classes"] = { MONK },
+						["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+					}),
 					q(14461, {	-- Feed of Evil
 						["provider"] = { "n", 36694 },	-- Adana Thunderhorn
 						["coord"] = { 31.0, 50.6, 462 },
@@ -137,11 +144,11 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 					}),
 					q(31166, {	-- Tiger Palm
-						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 63327 },	-- Shoyu
 						["coord"] = { 27.8, 28.6, 462 },
-						["races"] = HORDE_ONLY,
+						["races"] = { TAUREN },
 						["classes"] = { MONK },
+						["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
 					}),
 				}),
 			}),

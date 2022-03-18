@@ -304,11 +304,11 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 					i(163824),	-- Voru'kar Leecher
 				}),
 				filter(TOYS, {
-					i(164375),	-- Bad Mojo Banana [Un'gol Ruins]
-					i(164373),	-- Enchanted Soup Stone
-					i(164374),	-- Magic Monkey Banana
-					i(163795),	-- Oomgut Ritual Drum
-					i(163924),	-- Whiskerwax Candle
+					i(164375),	-- Bad Mojo Banana (TOY!)
+					i(164373),	-- Enchanted Soup Stone (TOY!)
+					i(164374),	-- Magic Monkey Banana (TOY!)
+					i(163795),	-- Oomgut Ritual Drum (TOY!)
+					i(163924),	-- Whiskerwax Candle (TOY!)
 				}),
 				n(WEAPONS, {
 					i(168644),	-- Converted Carrot Carbine
@@ -417,9 +417,6 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			filter(TOYS, {
 				i(163922),	-- Used for a toy, you never can get the actual item
 				i(163923),	-- Used for a toy, you never can get the actual item
-				i(164372),	-- Jinyu Light Globe
-				i(164377),	-- Regenerating Banana Bunch
-				i(164371),	-- Yaungol Oil Stove
 			}),
 			i(164286),	-- Plundered Runecaster's Mantle
 			i(164285),	-- Plundered Shoveltusk-Hide Shoulders

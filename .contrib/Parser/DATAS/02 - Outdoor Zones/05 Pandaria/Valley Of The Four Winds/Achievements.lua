@@ -42,7 +42,7 @@ _.Zones =
 							["questID"] = 31284,
 							["coord"] = { 46.8, 24.6, VALLEY_OF_THE_FOUR_WINDS },
 							["g"] = {
-								i(85973),	-- Ancient Pandaren Fishing Charm Toy
+								i(85973),	-- Ancient Pandaren Fishing Charm (TOY!)
 							},
 						}),
 						n(64191, {	-- Ghostly Pandaren Craftsman

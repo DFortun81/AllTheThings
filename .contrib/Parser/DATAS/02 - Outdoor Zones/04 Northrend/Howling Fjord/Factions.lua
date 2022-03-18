@@ -33,8 +33,10 @@ _.Zones =
 							},
 						}),
 						q(11472, {	-- The Way to His Heart...
-							["isDaily"] = true,
+							["coord"] = { 24.6, 58.8, HOWLING_FJORD },
 							["provider"] = { "n", 24810 },	-- Anuniaq
+							["isDaily"] = true,
+							["sourceQuest"] = 11469,	-- Swabbin' Soap
 						}),
 					},
 				}),

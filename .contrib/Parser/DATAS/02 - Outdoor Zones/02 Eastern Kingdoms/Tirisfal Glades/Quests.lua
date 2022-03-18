@@ -275,14 +275,6 @@ _.Zones =
 						i(62160),	-- Vandis' Band
 					},
 				}),
-				q(5650,  {	-- Garments of Darkness
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = { UNDEAD },
-					["classes"] = { PRIEST },
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(16607)),	-- Garments of Darkness
-					},
-				}),
 				q(24991, {	-- Garren's Haunt
 					["provider"] = { "n", 10665 },	-- Apothecary Holland
 					["coord"] = { 60.1, 52.6, TIRISFAL_GLADES },
@@ -404,7 +396,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 10856 },	-- Argent Quartermaster Hasana
 				}),
-				q(5402,  {	-- Minion's Scourgestones
+				q(5408,  {	-- Minion's Scourgestones
 					["coord"] = { 83.18, 68.45, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 10839 },		-- Argent Officer Garush

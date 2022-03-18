@@ -5,210 +5,9 @@
 root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 	m(REVENDRETH, {
 		n(ACHIEVEMENTS, {
-			petbattle(ach(14881, {	-- Abhorrent Adversaries of the Afterlife
-				["collectible"] = false,
-				["g"] = {
-					crit(5, {	-- Sewer Creeper
-						["coord"] = { 25.66, 23.62, REVENDRETH },
-						["crs"] = { 175781 },	-- Sewer Creeper
-					}),
-					crit(6, {	-- The Countess
-						["coord"] = { 53.0, 41.8, REVENDRETH },
-						["crs"] = { 175782 },	-- The Countess
-					}),
-				},
-			})),
-			ach(14769, {	-- Bat!
-				["coords"] = {	-- there doesn't seem to be a way to track individual bat statue collection, no questID or anything
-					{ 21.7, 50.2, REVENDRETH },
-					{ 25.1, 37.5, REVENDRETH },
-					{ 31.9, 59.2, REVENDRETH },
-					{ 35.0, 35.0, REVENDRETH },
-					{ 56.2, 62.2, REVENDRETH },
-					{ 57.3, 61.3, REVENDRETH },
-					{ 60.4, 61.1, REVENDRETH },
-					{ 64.0, 62.0, REVENDRETH },
-				},
-				["crs"] = { 161015 },	-- Dredbat Statue
-			}),
 			ach(14272, {	-- Best Bud With Benefits
 				["sourceQuests"] = { 58327 },	-- Snacks for Stonehead
 			}),
-			petbattle(ach(14879, {	-- Family Exorcist
-				["collectible"] = false,
-				["g"] = {
-					ach(14868, {	-- Aquatic Apparitions
-						["collectible"] = false,
-						["g"] = {
-							crit(1, {	-- Sylla
-								["coord"] = { 39.8, 52.4, REVENDRETH },
-								["cr"] = 173315,	-- Sylla
-							}),
-							crit(2, {	-- Eyegor
-								["coord"] = { 67.6, 66.0, REVENDRETH },
-								["cr"] = 173324,	-- Eyegor
-							}),
-							crit(3,  {	-- Addius the Tormentor
-								["coord"] = { 61.2, 41.0, REVENDRETH },
-								["cr"] = 173331,	-- Addius the Tormentor
-							}),
-						},
-					}),
-					ach(14869, {	-- Beast Busters
-						["collectible"] = false,
-						["g"] = {
-							crit(1, {	-- Sylla
-								["coord"] = { 39.8, 52.4, REVENDRETH },
-								["cr"] = 173315,	-- Sylla
-							}),
-							crit(2, {	-- Eyegor
-								["coord"] = { 67.6, 66.0, REVENDRETH },
-								["cr"] = 173324,	-- Eyegor
-							}),
-							crit(3,  {	-- Addius the Tormentor
-								["coord"] = { 61.2, 41.0, REVENDRETH },
-								["cr"] = 173331,	-- Addius the Tormentor
-							}),
-						},
-					}),
-					ach(14870, {	-- Creepy Critters
-						["collectible"] = false,
-						["g"] = {
-							crit(1, {	-- Sylla
-								["coord"] = { 39.8, 52.4, REVENDRETH },
-								["cr"] = 173315,	-- Sylla
-							}),
-							crit(2, {	-- Eyegor
-								["coord"] = { 67.6, 66.0, REVENDRETH },
-								["cr"] = 173324,	-- Eyegor
-							}),
-							crit(3,  {	-- Addius the Tormentor
-								["coord"] = { 61.2, 41.0, REVENDRETH },
-								["cr"] = 173331,	-- Addius the Tormentor
-							}),
-						},
-					}),
-					ach(14871, {	-- Deathly Dragonkin
-						["collectible"] = false,
-						["g"] = {
-							crit(1, {	-- Sylla
-								["coord"] = { 39.8, 52.4, REVENDRETH },
-								["cr"] = 173315,	-- Sylla
-							}),
-							crit(2, {	-- Eyegor
-								["coord"] = { 67.6, 66.0, REVENDRETH },
-								["cr"] = 173324,	-- Eyegor
-							}),
-							crit(3,  {	-- Addius the Tormentor
-								["coord"] = { 61.2, 41.0, REVENDRETH },
-								["cr"] = 173331,	-- Addius the Tormentor
-							}),
-						},
-					}),
-					ach(14872, {	-- Eerie Elementals
-						["collectible"] = false,
-						["g"] = {
-							crit(1, {	-- Sylla
-								["coord"] = { 39.8, 52.4, REVENDRETH },
-								["cr"] = 173315,	-- Sylla
-							}),
-							crit(2, {	-- Eyegor
-								["coord"] = { 67.6, 66.0, REVENDRETH },
-								["cr"] = 173324,	-- Eyegor
-							}),
-							crit(3,  {	-- Addius the Tormentor
-								["coord"] = { 61.2, 41.0, REVENDRETH },
-								["cr"] = 173331,	-- Addius the Tormentor
-							}),
-						},
-					}),
-					ach(14873, {	-- Flickering Fliers
-						["collectible"] = false,
-						["g"] = {
-							crit(1, {	-- Sylla
-								["coord"] = { 39.8, 52.4, REVENDRETH },
-								["cr"] = 173315,	-- Sylla
-							}),
-							crit(2, {	-- Eyegor
-								["coord"] = { 67.6, 66.0, REVENDRETH },
-								["cr"] = 173324,	-- Eyegor
-							}),
-							crit(3,  {	-- Addius the Tormentor
-								["coord"] = { 61.2, 41.0, REVENDRETH },
-								["cr"] = 173331,	-- Addius the Tormentor
-							}),
-						},
-					}),
-					ach(14874, {	-- Haunted Humanoids
-						["collectible"] = false,
-						["g"] = {
-							crit(1, {	-- Sylla
-								["coord"] = { 39.8, 52.4, REVENDRETH },
-								["cr"] = 173315,	-- Sylla
-							}),
-							crit(2, {	-- Eyegor
-								["coord"] = { 67.6, 66.0, REVENDRETH },
-								["cr"] = 173324,	-- Eyegor
-							}),
-							crit(3,  {	-- Addius the Tormentor
-								["coord"] = { 61.2, 41.0, REVENDRETH },
-								["cr"] = 173331,	-- Addius the Tormentor
-							}),
-						},
-					}),
-					ach(14875, {	-- Mummified Magics
-						["collectible"] = false,
-						["g"] = {
-							crit(1, {	-- Sylla
-								["coord"] = { 39.8, 52.4, REVENDRETH },
-								["cr"] = 173315,	-- Sylla
-							}),
-							crit(2, {	-- Eyegor
-								["coord"] = { 67.6, 66.0, REVENDRETH },
-								["cr"] = 173324,	-- Eyegor
-							}),
-							crit(3,  {	-- Addius the Tormentor
-								["coord"] = { 61.2, 41.0, REVENDRETH },
-								["cr"] = 173331,	-- Addius the Tormentor
-							}),
-						},
-					}),
-					ach(14876, {	-- Macabre Mechanicals
-						["collectible"] = false,
-						["g"] = {
-							crit(1, {	-- Sylla
-								["coord"] = { 39.8, 52.4, REVENDRETH },
-								["cr"] = 173315,	-- Sylla
-							}),
-							crit(2, {	-- Eyegor
-								["coord"] = { 67.6, 66.0, REVENDRETH },
-								["cr"] = 173324,	-- Eyegor
-							}),
-							crit(3,  {	-- Addius the Tormentor
-								["coord"] = { 61.2, 41.0, REVENDRETH },
-								["cr"] = 173331,	-- Addius the Tormentor
-							}),
-						},
-					}),
-					ach(14877, {	-- Unholy Undead
-						["collectible"] = false,
-						["g"] = {
-							crit(1, {	-- Sylla
-								["coord"] = { 39.8, 52.4, REVENDRETH },
-								["cr"] = 173315,	-- Sylla
-							}),
-							crit(2, {	-- Eyegor
-								["coord"] = { 67.6, 66.0, REVENDRETH },
-								["cr"] = 173324,	-- Eyegor
-							}),
-							crit(3,  {	-- Addius the Tormentor
-								["coord"] = { 61.2, 41.0, REVENDRETH },
-								["cr"] = 173331,	-- Addius the Tormentor
-							}),
-						},
-					}),
-				},
-			})),
 			ach(13878, {	-- The Master of Revendreth
 				crit(1, {	-- Welcome to Revendreth
 					["sourceQuests"] = { 56978 },	-- To Darkhaven
@@ -282,6 +81,56 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				},
 			}),
 			pvp(ach(14512)),	-- Tour of Duty: Revendreth
+			ach(14314, {	-- Treasures of Revendreth
+				crit(1, {	-- Lost Quill
+					["_quests"] = { 61990 },
+				}),
+				crit(2, {	-- Stylish Parasol
+					["_quests"] = { 61999 },
+				}),
+				crit(3, {	-- The Count
+					["_quests"] = { 62063 },
+				}),
+				crit(4, {	-- Rapier of the Fearless
+					["_quests"] = { 62156 },
+				}),
+				crit(5, {	-- Vyrtha's Dredglaive
+					["_quests"] = { 62164 },
+				}),
+				crit(6, {	-- Makeshift Muckpool
+					["_quests"] = { 62198 },
+				}),
+				crit(7, {	-- Taskmaster's Trove
+					["_quests"] = { 62199 },
+				}),
+				crit(8, {	-- Forbidden Chamber
+					["_quests"] = { 62243 },
+				}),
+				crit(9, {	-- Smuggled Cache
+					["_quests"] = { 59889 },
+				}),
+				crit(10, {	-- Chest of Envious Dreams
+					["_quests"] = { 59833 },
+				}),
+				crit(11, {	-- Filcher's Prize
+					["_quests"] = { 59883 },
+				}),
+				crit(12, {	-- Wayfarer's Abandoned Spoils
+					["_quests"] = { 59884 },
+				}),
+				crit(13, {	-- Remlate's Hidden Cache
+					["_quests"] = { 59885 },
+				}),
+				crit(14, {	-- Fleeing Soul's Bundle
+					["_quests"] = { 59886 },
+				}),
+				crit(15, {	-- Gilded Plum Chest
+					["_quests"] = { 59887 },
+				}),
+				crit(16, {	-- Abandoned Curios
+					["_quests"] = { 59888 },
+				}),
+			}),
 			ach(14770, {	-- What We Ride in the Shadows
 				["description"] = "Each ride costs 5 Infused Rubies.  Stay on the Sinrunner until you get credit for the ride.",
 				["crs"] = { 174032 },	-- Castle Sinrunner

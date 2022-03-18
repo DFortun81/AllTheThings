@@ -2,8 +2,8 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 
-root("WorldEvents", m(503, 
-	-- bubbleDown({ ["u"] = REMOVED_FROM_GAME }, 
+root("WorldEvents", m(503,
+	-- bubbleDown({ ["u"] = REMOVED_FROM_GAME },
 	{	-- Brawlgar Arena
 	["races"] = HORDE_ONLY,
 	["lvl"] = 120,
@@ -164,14 +164,44 @@ root("WorldEvents", m(503,
 					i(166724),	-- Bruce (MOUNT!)
 				},
 			}),
+
+			-- 5.3 Season 1 boss quests (had to be obtainable in later season too)
+			q(32836, { ["u"] = REMOVED_FROM_GAME, }),	-- A Knockoff Grumplefloot
+			q(32837, { ["u"] = REMOVED_FROM_GAME, }),	-- Grandpa Grumplefloot
+			q(32838, { ["u"] = REMOVED_FROM_GAME, }),	-- A Tale of Romance and Chivalry
+			q(32839, { ["u"] = REMOVED_FROM_GAME, }),	-- The Bear and the Lady Fair
+			q(32840, { ["u"] = REMOVED_FROM_GAME, }),	-- Boom Boom's Fuse
+			q(32841, { ["u"] = REMOVED_FROM_GAME, }),	-- Master Boom Boom
+			q(32842, { ["u"] = REMOVED_FROM_GAME, }),	-- Teeth Like Swords
+			q(32843, { ["u"] = REMOVED_FROM_GAME, }),	-- Razorgrin
+			q(32844, { ["u"] = REMOVED_FROM_GAME, }),	-- Secret of the Ooze
+			q(32845, { ["u"] = REMOVED_FROM_GAME, }),	-- Splat
+			q(32846, { ["u"] = REMOVED_FROM_GAME, }),	-- Modified Chomping Apparatus
+			q(32847, { ["u"] = REMOVED_FROM_GAME, }),	-- Mecha-Bruce
+			q(32848, { ["u"] = REMOVED_FROM_GAME, }),	-- Frost-Tipped Eggshell
+			q(32849, { ["u"] = REMOVED_FROM_GAME, }),	-- Dippy and Doopy
+			q(32850, { ["u"] = REMOVED_FROM_GAME, }),	-- Last Year's Model
+			q(32851, { ["u"] = REMOVED_FROM_GAME, }),	-- Blingtron 3000
+			q(32852, { ["u"] = REMOVED_FROM_GAME, }),	-- The Digmaster's Earthblade
+			q(32853, { ["u"] = REMOVED_FROM_GAME, }),	-- Mingus Diggs
+			q(32854, { ["u"] = REMOVED_FROM_GAME, }),	-- Well-Worn Blindfold
+			q(32855, { ["u"] = REMOVED_FROM_GAME, }),	-- The Blind Hero
+			q(32856, { ["u"] = REMOVED_FROM_GAME, }),	-- Paper-Covered Rock
+			q(32857, { ["u"] = REMOVED_FROM_GAME, }),	-- Ro-Shambo
+			q(32858, { ["u"] = REMOVED_FROM_GAME, }),	-- Raptorhide Boxing Gloves
+			q(32859, { ["u"] = REMOVED_FROM_GAME, }),	-- Ty'thar
 		}),
 		n(VENDORS, {
 			n(68364, {	-- Paul North <Brawl'gar Arena Quartermaster>  This vendor will change if you start the murder questline  New vendor = 145695 "Bad Luck" Symmes <Brawl'gar Arena Quartermaster>
 				["races"] = HORDE_ONLY,
 				["description"] = "Brawler's Burly Mushan Beast is only available to those who had reached Rank 8 in Season 1 or Season 2.|nShirts are only available to those who have already earned them.|r",
 				["g"]	= {
-					i(142403),	-- Brawler's Burly Basilisk (MOUNT!) unobtainable as of BFA prepatch
-					i(98405),	-- Brawler's Burly Mushan Beast (MOUNT!) unobtainable unless you reached Rank 8 in either Season 1 or Season 2
+					i(142403, {	-- Brawler's Burly Basilisk (MOUNT!) unobtainable as of BFA prepatch
+						["timeline"] = { "added 7.1", "removed 8.0" },
+					}),
+					i(98405, {	-- Brawler's Burly Mushan Beast (MOUNT!) unobtainable unless you reached Rank 8 in either Season 1 or Season 2
+						["timeline"] = { "added 5.3.0.16781", "removed 7.1.5" },
+					}),
 					i(167812),  -- Brawlers Guild Tabard
 					i(122396),	-- Brawler's Razor Claws
 					i(98085),	-- Brucehide Jersey
@@ -195,6 +225,7 @@ root("WorldEvents", m(503,
 						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 						["requireSkill"] = JEWELCRAFTING,
 						["spellID"] = 0,
+						["f"] = MISC,
 					}),
 					i(98080),	-- Gorgeous Blouse
 					i(98091),	-- Last Season's Shirt

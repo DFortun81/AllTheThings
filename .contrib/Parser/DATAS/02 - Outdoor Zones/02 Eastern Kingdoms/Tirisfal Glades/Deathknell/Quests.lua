@@ -106,8 +106,10 @@ _.Zones =
 						["sourceQuests"] = { 26801 },	-- Scourge on our Perimeter
 					}),
 					q(31148, {	-- Novice Elreth
+						["isBreadcrumb"] = true,
+						["classes"] = { MONK },
+						["races"] = { UNDEAD },
 						["u"] = REMOVED_FROM_GAME,
-						["races"] = HORDE_ONLY,
 					}),
 					q(24966, {	-- Of Light and Shadows
 						["u"] = REMOVED_FROM_GAME,
@@ -139,6 +141,13 @@ _.Zones =
 						["coord"] = { 46.6, 58.8, 465 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 28653 },	-- Shadow Priest Sarvis
+					}),
+					q(31146, {	-- Scribbled Scroll
+						["provider"] = { "n", 1569 },	-- Shadow Priest Sarvis
+						["coord"] = { 46.6, 58.8, 465 },
+						["races"] = { UNDEAD },
+						["classes"] = { MONK },
+						["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
 					}),
 					q(28653, {	-- Shadow Priest Sarvis
 						["provider"] = { "n", 1740 },	-- Deathguard Saltain
@@ -217,6 +226,13 @@ _.Zones =
 						["coord"] = { 43.4, 79.9, 465 },
 						["races"] = { UNDEAD },
 						["sourceQuests"] = { 28608 },	-- The Shadow Grave
+					}),
+					q(31147, {	-- Tiger Palm
+						["provider"] = { "n", 63272 },	-- Ting, Strong of Stomach
+						["coord"] = { 53.0, 56.4, 465 },
+						["races"] = { UNDEAD },
+						["classes"] = { MONK },
+						["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
 					}),
 					q(383,   {	-- Vital Intelligence
 						["u"] = REMOVED_FROM_GAME,

@@ -120,7 +120,7 @@ root("Holidays", d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
 			n(59369, {	-- Doctor Theolen Krastinov
 				["description"] = "This is a rare that is not always present.",
 				["g"] = {
-					i(88566),	-- Krastinov's Bag of Horrors
+					i(88566),	-- Krastinov's Bag of Horrors (TOY!)
 				},
 			}),
 			e(666,   {	-- Lilian Voss

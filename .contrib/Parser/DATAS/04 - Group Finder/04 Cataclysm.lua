@@ -95,8 +95,8 @@ _.GroupFinder =
 			["u"] = REMOVED_FROM_GAME,
 			["description"] = "This was a reward for completing the Theramore's Fall scenario during the Mists of Pandaria pre-patch.",
 			["g"] = {
-				-- h(i(90000)),	-- Everlasting Horde Firework
-				-- a(i(89999)),	-- Everlasting Alliance Firework
+				-- h(i(90000)),	-- Everlasting Horde Firework (TOY!)
+				-- a(i(89999)),	-- Everlasting Alliance Firework (TOY!)
 				i(90017),	-- Theramore Arcanist's Hat
 				i(90018),	-- Squallshaper's Hat
 				i(90019),	-- Rok'nah Hag's Hat

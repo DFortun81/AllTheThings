@@ -19,7 +19,7 @@ _.Zones =
 						i(87621),	-- Wristguards of Great Fortune
 						i(87620),	-- Bracers of the Frozen Summit
 						i(87615),	-- Yakwasher's Bracers
-						i(86588),	-- Pandaren Firework Launcher
+						i(86588),	-- Pandaren Firework Launcher (TOY!)
 						crit(39, {	-- Glorious!
 							["achievementID"] = 7439,
 						}),
@@ -50,7 +50,7 @@ _.Zones =
 						{ 57.0, 76.0, KUN_LAI_SUMMIT },
 					},
 					["g"] = {
-						i(86573),	-- Shard of Archstone
+						i(86573),	-- Shard of Archstone (TOY!)
 						i(87621),	-- Wristguards of Great Fortune
 						i(87615),	-- Yakwasher's Bracers
 						i(87620),	-- Bracers of the Frozen Summit
@@ -117,7 +117,7 @@ _.Zones =
 				n(50789, {	-- Nessos the Oracle
 					["coord"] = { 63.8, 13.7, KUN_LAI_SUMMIT },
 					["g"] = {
-						i(86584, {	-- Hardened Shell
+						i(86584, {	-- Hardened Shell (TOY!)
 							crit(9, {	-- Hardened Shell
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
 							}),
@@ -183,7 +183,7 @@ _.Zones =
 						{ 73.86, 77.21, KUN_LAI_SUMMIT },
 					},
 					["g"] = {
-						i(86581),	-- Farwater Conch
+						i(86581),	-- Farwater Conch (TOY!)
 						i(87618),	-- Ice Encrusted Bracer
 						i(87614),	-- Kafa Picker's Bracers
 						i(87619),	-- Terracotta Guardian's Bracer

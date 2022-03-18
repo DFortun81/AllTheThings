@@ -38,7 +38,7 @@ root("BlackMarket", {
 root("BlackMarket", bubbleDown({ ["u"] = BLACK_MARKET, },{
 	f(113, {	-- Bags
 		i(183634),	-- Papa's Mint Condition Bag (9.1)
-		}),
+	}),
 	filter(103, {	-- Illusions
 		i(138838),	-- Illusion: Deathfrost
 		i(118572),	-- Illusion: Flame of Ragnaros
@@ -47,13 +47,12 @@ root("BlackMarket", bubbleDown({ ["u"] = BLACK_MARKET, },{
 	filter(MOUNTS, {
 		i(143643),	-- Abyss Worm
 		i(68823),	-- Armored Razzashi Raptor
-		i(32458),	-- Ashes of Alar
+		i(32458),	-- Ashes of Al'ar (MOUNT!)
 		i(95059),	-- Clutch of Ji-Kun
 		i(115484),	-- Core Hound Chain
-		i(13335),	-- Deathcharger's Reins
 		i(78919),	-- Experiment 12-B
 		i(123890),	-- Felsteel Annihilator
-		i(30480),	-- Fiery Warhorse's Reins
+		i(30480),	-- Fiery Warhorse (MOUNT!)
 		i(71665),	-- Flametalon of Alysrazor
 		i(50818),	-- Invincible's Reins
 		i(116660),	--  Ironhoof Destroyer
@@ -81,23 +80,24 @@ root("BlackMarket", bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(49636),	-- Reins of the Onyxian Drake
 		i(44175),	-- Reins of the Plagued Proto-Drake
 		i(94229),	-- Reins of the Slate Primordial Direhorn
-		i(32768),	-- Reins of the Raven Lord
+		i(32768),	-- Raven Lord (MOUNT!)
 		i(45802),	-- Reins of the Rusted Proto-Drake
 		i(95057),	-- Reins of the Thundering Cobalt Cloud Serpent
 		i(104269),	-- Reins of the Thundering Onyx Cloud Serpent
 		i(90655),	-- Reins of the Thundering Ruby Cloud Serpent
 		i(63043),	-- Reins of the Vitreous Stone Drake
 		i(43962),	-- Reins of the White Polar Bear
-		i(23720),	-- Riding Turtle
+		i(23720),	-- Riding Turtle (MOUNT!)
+		i(13335),	-- Rivendare's Deathcharger (MOUNT!)
 		i(152789),	-- Shackled Ur'zul
 		i(116771),	-- Solar Spirehawk
 		i(93666),	-- Spawn of Horridon
 		i(69224),	-- Smoldering Egg of Millagazor
 		i(89783),	-- Son of Galleon's Saddle
-		i(19872),	-- Swift Razzashi Raptor
+		i(19872),	-- Swift Razzashi Raptor (MOUNT!)
 		i(68824),	-- Swift Zulian Panther
-		i(35513),	-- Swift White Hawkstrider
-		i(19902),	-- Swift Zulian Tiger
+		i(35513),	-- Swift White Hawkstrider (MOUNT!)
+		i(19902),	-- Swift Zulian Tiger (MOUNT!)
 		i(54068),	-- Wooly White Rhino
 		i(147805),	-- Valarjar Stormwing
 		i(152790),	-- Vile Fiend
@@ -349,15 +349,15 @@ root("BlackMarket", bubbleDown({ ["u"] = BLACK_MARKET, },{
 		}),
 	}),
 	filter(TOYS, {
-		i(33223),	-- Fishing Chair
-		i(45063),	-- Foam Sword Rack
-		i(33219),	-- Goblin Gumbo Kettle
-		i(35227),	-- Goblin Weather Machine - Prototype 01-B
-		i(32542),	-- Imp in a Ball
-		i(46780),	-- Ogre Pinata
-		i(34499),	-- Paper Flying Machine Kit
-		i(32566),	-- Picnic Basket
-		i(38578),	-- The Flag of Ownership
+		i(33223),	-- Fishing Chair (TOY!)
+		i(45063),	-- Foam Sword Rack (TOY!)
+		i(33219),	-- Goblin Gumbo Kettle (TOY!)
+		i(35227),	-- Goblin Weather Machine - Prototype 01-B (TOY!)
+		i(32542),	-- Imp in a Ball (TOY!)
+		i(46780),	-- Ogre Pinata (TOY!)
+		i(34499),	-- Paper Flying Machine Kit (TOY!)
+		i(32566),	-- Picnic Basket (TOY!)
+		i(38578),	-- The Flag of Ownership (TOY!)
 	}),
 	n(WEAPONS, {
 		un(NEVER_IMPLEMENTED, i(110591)),	-- Flintlocke's Blasthammer

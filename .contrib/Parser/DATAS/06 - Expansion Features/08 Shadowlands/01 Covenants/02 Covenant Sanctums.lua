@@ -96,6 +96,9 @@ _.ExpansionFeatures =
 						i(188653, {	-- Grimoire of Knowledge (Drops from the Campaign Missions) [Night Fae as noticed]
 							["timeline"] = { "added 9.1.5" },
 						}),
+						i(188654, {	-- Grimoire of Knowledge (Drops from the Campaign Missions) [Night Fae as noticed]
+							["timeline"] = { "added 9.1.5" },
+						}),
 						-- Mounts
 						i(183617),	-- Chittering Animite
 						i(183052),	-- Darkwarren Hardshell
@@ -157,6 +160,9 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 64963 },	-- A Defector's Request
 							["description"] = "Can only spawn after completing the quest |cFFFFD700A Defector's Request'(64963)|r.",
 						}),
+						i(190178, {	-- Pouch of Protogenic Provisions
+							["timeline"] = { "added 9.2.0" },
+						}),
 					},
 				}),
 				n(COVENANT_CALLINGS, {
@@ -197,6 +203,11 @@ _.ExpansionFeatures =
 							}),
 							i(187880),	-- Goat Soul
 							i(187862),	-- Snake Soul
+							i(190381, {	-- Technique: Glyph of the Spectral Vulpine (RECIPE!)
+								["recipeID"] = 367393,
+								["requireSkill"] = INSCRIPTION,
+								["timeline"] = { "added 9.2.0" },
+							}),
 						},
 					}),
 					i(181556, {	-- Tribute of the Court / Revendreth
@@ -247,6 +258,11 @@ _.ExpansionFeatures =
 							}),
 							i(187880),	-- Goat Soul
 							i(187862),	-- Snake Soul
+							i(190381, {	-- Technique: Glyph of the Spectral Vulpine (RECIPE!)
+								["recipeID"] = 367393,
+								["requireSkill"] = INSCRIPTION,
+								["timeline"] = { "added 9.2.0" },
+							}),
 						},
 					}),
 					i(181557, {	-- Favor of the Court / Revendreth

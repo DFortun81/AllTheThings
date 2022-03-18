@@ -120,6 +120,13 @@ root("Zones", {
 						un(REMOVED_FROM_GAME, i(2933)),	-- Seal of Wrynn
 					},
 				}),
+				q(30989,   {	-- An Old Pit Fighter
+					["provider"] = { "n", 61796 },	-- King Varian Wrynn
+					["coord"] = { 82.6, 28.2, STORMWIND_CITY },
+					["sourceQuests"] = { 30987 },	-- Joining the Alliance
+					["races"] = { PANDAREN_ALLIANCE },
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(58496, {	-- An Unwelcome Advisor
 					["description"] = "This quest is automatically offered.",
 					["provider"] = { "n", 107574 },	-- Anduin Wrynn <King of Stormwind>
@@ -235,7 +242,9 @@ root("Zones", {
 					["collectible"] = false,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(122661),	-- S.E.L.F.I.E. Lens Upgrade Kit
+						i(122661, {	-- S.E.L.F.I.E. Lens Upgrade Kit
+							i(122674)	-- S.E.L.F.I.E. Camera MkII
+						}),
 					},
 				}),
 				q(44463, {	-- Demons Among Them
@@ -412,15 +421,6 @@ root("Zones", {
 					["coord"] = { 85.6, 31.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(44663, {	-- In the Blink of an Eye
-					["sourceQuests"] = {
-						44120,	-- Illidari Allies
-						44473,	-- A Weapon of the Alliance
-					},
-					["provider"] = { "n", 101004 },	-- Elerion Bladedancer
-					["coord"] = { 40.4, 77.8, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(14481, {	-- Into The Abyss
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 36674 },	-- Nambria
@@ -460,7 +460,7 @@ root("Zones", {
 					["coord"] = { 77.3, 67.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(2411),	-- Black Stallion Bridle
+						i(2411),	-- Black Stallion (MOUNT!)
 					},
 				}),
 				q(32470, {	-- Light Camera Action
@@ -515,6 +515,19 @@ root("Zones", {
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(10747)),	-- Teacher's Sash
 						un(REMOVED_FROM_GAME, i(10748)),	-- Wanderlust Boots
+					},
+				}),
+				q(28287, {	-- Meet with Farseer Umbrua
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { SHAMAN },
+					["isBreadcrumb"] = true,
+					["qgs"] = {
+						52292,	-- Droha
+						23127,	-- Farseer Javad
+					},
+					["coords"] = {
+						{ 43.8, 78.8, DARNASSUS },	-- Droha
+						{ 55.2, 29.0, IRONFORGE },	-- Farseer Javad
 					},
 				}),
 				q(60965, {	-- Mists of Pandaria: Onward to Adventure in Pandaria
@@ -664,12 +677,6 @@ root("Zones", {
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.3, 17.3, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(28289, {	-- Moonglade Calls
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 44395 },	-- Celestine of the Harvest
-					["classes"] = { DRUID },
-					["coord"] = { 57.6, 24.8, STORMWIND_CITY },
 				}),
 				q(6187,  {	-- Order Must Be Restored
 					["providers"] = {
@@ -896,7 +903,7 @@ root("Zones", {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(39691, {	-- The Call of War
-					["provider"] = { "n", 39691 },	-- Archmage Khadgar
+					["provider"] = { "n", 97296 },	-- Archmage Khadgar
 					["classes"] = { DEMONHUNTER },
 					["coord"] = { 72.4, 47.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
@@ -930,12 +937,6 @@ root("Zones", {
 					["g"] = {
 						currency(515),	-- Darkmoon Prize Ticket
 					},
-				}),
-				q(34398, {	-- The Dark Portal
-					["description"] = "If you want to do the Blasted Lands questline before going to Draenor, abandon this quest after taking the portal to Blasted Lands.",
-					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(30095, {	-- The End Time
 					["isBreadcrumb"] = true,
@@ -982,11 +983,6 @@ root("Zones", {
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 1750 },	-- Grand Admiral Jes-Tereth
 					["coord"] = { 85.6, 32.8, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(40519, {	-- The Legion Returns (Alliance)
-					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 56.3, 17.3, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(29548, {	-- The Mission
@@ -1179,6 +1175,14 @@ root("Zones", {
 					["coord"] = { 73.6, 91.3, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(65425, {	-- Whatever You Sayaad
+					["description"] = "Start this quest via your own Sayaad(Succubus/Incubus Pet).",
+					["provider"] = { "n", 184600 },	-- Warlock Minion
+					["coord"] = { 79.5, 69.8, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { WARLOCK },
+					["timeline"] = { "added 9.2.0" },
+				}),
 				q(58910, {	-- What's Your Specialty? (Druid)
 					["customCollect"] = "NPE",	-- New Player Experience
 					["sourceQuests"] = { 58909 },	-- License to Ride
@@ -1325,7 +1329,6 @@ root("HiddenQuestTriggers", {
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(60362),	-- Blank
-		q(31685),	-- Valley of the Four Winds
 		q(57766),	-- War with the Horde
 	}),
 }));

@@ -7,55 +7,6 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {
 		m(IRONFORGE, {
 			n(PROFESSIONS, {
-				prof(ALCHEMY, {
-					n(QUESTS, {
-						q(29481, {	-- Elixir Master
-							["provider"] = { "n", 5177 },	-- Tally Berryfizz
-							["coord"] = { 66.6, 55.0, IRONFORGE },	-- Tally Berryfizz
-							["description"] = "Requires 300 Classic Alchemy.",
-							["requireSkill"] = ALCHEMY,
-							["repeatable"] = true,
-							--[[["altQuests"] = {
-								29481,	-- Elixir Master
-								29067,	-- Potion Master
-								29482,	-- Transmutation Master
-								10902,	-- Elixir Master (Removed)
-								10897,	-- Potion Master (Removed)
-								10899,	-- Transmutation Master (Removed)
-							},]]
-						}),
-						q(29067, {	-- Potion Master
-							["provider"] = { "n", 5177 },	-- Tally Berryfizz
-							["coord"] = { 66.6, 55.0, IRONFORGE },	-- Tally Berryfizz
-							["description"] = "Requires 300 Classic Alchemy.",
-							["requireSkill"] = ALCHEMY,
-							["repeatable"] = true,
-							--[[["altQuests"] = {
-								29481,	-- Elixir Master
-								29067,	-- Potion Master
-								29482,	-- Transmutation Master
-								10902,	-- Elixir Master (Removed)
-								10897,	-- Potion Master (Removed)
-								10899,	-- Transmutation Master (Removed)
-							},]]
-						}),
-						q(29482, {	-- Transmutation Master
-							["provider"] = { "n", 5177 },	-- Tally Berryfizz
-							["coord"] = { 66.6, 55.0, IRONFORGE },	-- Tally Berryfizz
-							["description"] = "Requires 300 Classic Alchemy.",
-							["requireSkill"] = ALCHEMY,
-							["repeatable"] = true,
-							--[[["altQuests"] = {
-								29481,	-- Elixir Master
-								29067,	-- Potion Master
-								29482,	-- Transmutation Master
-								10902,	-- Elixir Master (Removed)
-								10897,	-- Potion Master (Removed)
-								10899,	-- Transmutation Master (Removed)
-							},]]
-						}),
-					}),
-				}),
 				prof(COOKING, {
 					n(ACHIEVEMENTS, {
 						ach(5841, {	-- Let's Do Lunch: Ironforge
@@ -190,15 +141,6 @@ _.Zones =
 										["achievementID"] = 5847,	-- Fish or Cut Bait: Ironforge
 									}),
 								},
-							}),
-							q(8229, {	-- Could I get a Fishing Flier?
-								["provider"] = { "n", 15119 },	-- Barrus
-								["coord"] = { 28.6, 74.6, IRONFORGE },
-								["isBreadcrumb"] = true,
-								["repeatable"] = true,
-								["requireSkill"] = FISHING,
-								["races"] = ALLIANCE_ONLY,
-								["lvl"] = 50,
 							}),
 							q(29344, {	-- Fish fer Squrky
 								["provider"] = { "n", 5161 },	-- Grimnur Stonebrand

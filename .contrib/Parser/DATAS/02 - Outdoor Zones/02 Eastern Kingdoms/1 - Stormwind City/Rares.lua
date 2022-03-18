@@ -11,7 +11,7 @@ _.Zones =
 					["coord"] = { 43.0, 78.0, STORMWIND_CITY },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(134831),	-- Doomsayer's Robes
+						i(134831),	-- Doomsayer's Robes (TOY!)
 					},
 				}),
 				n(112958, {	-- Soulare of Andorhal

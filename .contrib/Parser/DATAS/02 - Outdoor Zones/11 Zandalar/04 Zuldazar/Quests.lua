@@ -26,7 +26,7 @@ _.Zones =
 
 					-- for "how to train your direhorn," i never got the version of "away from the herd" that is questID #55249, just #55244.  figure out if 55249 is used/unused and if/when it appears.
 
-				n(PVP, {
+				pvp(n(PVP, {
 					["lvl"] = 120,	-- Don't become available until this level.
 					["g"] = {
 						n(AZERITE_ESSENCES, {
@@ -286,7 +286,7 @@ _.Zones =
 							["lvl"] = 110,
 						}),
 					},
-				}),
+				})),
 				q(48399, {	-- A Dark (Iron) Tide
 					["sourceQuests"] = { 48317 },	-- A Nose for Magic
 					["provider"] = { "n", 131580 },	-- Apprentice Telemancer Astrandis

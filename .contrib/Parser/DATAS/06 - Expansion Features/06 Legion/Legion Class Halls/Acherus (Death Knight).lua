@@ -564,10 +564,6 @@ _.ExpansionFeatures =
 							["u"] = REMOVED_FROM_GAME,
 							["classes"] = { DEATHKNIGHT },
 						}),
-						q(46940, {	-- Using Lost Knowledge
-							["u"] = REMOVED_FROM_GAME,
-							["classes"] = { DEATHKNIGHT },
-						}),
 						q(44286, {	-- Vault of the Wardens: A Masterpiece of Flesh
 							["provider"] = { "n", 93491 }, -- Lord Thorval
 							["coord"] = { 63.1, 69.4, 647 },

@@ -361,36 +361,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 							},
 						}),
 					}),
-					n(162873, {	-- Azmogal
-						crit(1, {	-- Azmogal
-							["achievementID"] = 14802,	-- Bloodsport
-						}),
-					}),
-					n(162875, {	-- Devmorta
-						crit(5, {	-- Devmorta
-							["achievementID"] = 14802,	-- Bloodsport
-						}),
-					}),
-					n(162880, {	-- Mistress Dyrax
-						crit(4, {	-- Mistress Dyrax
-							["achievementID"] = 14802,	-- Bloodsport
-						}),
-					}),
-					n(162874, {	-- Ti'or
-						crit(6, {	-- Ti'or
-							["achievementID"] = 14802,	-- Bloodsport
-						}),
-					}),
-					n(162853, {	-- Unbreakable Urtz
-						crit(2, {	-- Unbreakable Urtz
-							["achievementID"] = 14802,	-- Bloodsport
-						}),
-					}),
-					n(162872, {	-- Xantuth the Blighted
-						crit(3, {	-- Xantuth the Blighted
-							["achievementID"] = 14802,	-- Bloodsport
-						}),
-					}),
+					n(162873),	-- Azmogal
+					n(162875),	-- Devmorta
+					n(162880),	-- Mistress Dyrax
+					n(162874),	-- Ti'or
+					n(162853),	-- Unbreakable Urtz
+					n(162872),	-- Xantuth the Blighted
 				},
 			}),
 			n(162180, { -- Thread Mistress Leeda

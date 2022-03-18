@@ -185,11 +185,13 @@ _.Zones =
 						},
 					}),
 					q(31138, {	-- The Arts of a Monk
-						["u"] = REMOVED_FROM_GAME,
+						["provider"] = { "n", 63238 },	-- Xi, Friend to the Small
+						["coord"] = { 40.1, 35.6, 469 },
+						["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
 						["races"] = { GNOME },
-						["classes"] = { MAGE },
+						["classes"] = { MONK },
 						["g"] = {
-							i(59042),	-- Electro-Staff NOTE: Item is still in game and obtainable via quest 26197 for Mages (do not flag as unobtainable), Monk quest listed here is not available upon testing
+							i(59042),	-- Electro-Staff NOTE: Item is still in game and obtainable via quest 26197 for Mages (do not flag as unobtainable)
 						},
 					}),
 					q(26207, {	-- The Arts of a Rogue

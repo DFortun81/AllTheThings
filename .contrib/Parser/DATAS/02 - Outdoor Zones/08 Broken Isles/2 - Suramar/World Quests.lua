@@ -246,16 +246,16 @@ _.Zones =
 							i(139546, {	-- Twisting Anima of Souls [Death Knight Hidden Artifact Appearance]
 								artifact(921),	-- Find Hidden Artifact Skin
 							}),
-							i(141296),	-- Ancient Mana Basin
+							i(141296),	-- Ancient Mana Basin (TOY!)
 							i(147418),	-- Arcane Remnant of Falanaar
 							i(147416),	-- Arcane Tablet of Falanaar
-							i(141297),	-- Arcano-Shower
-							i(141298),	-- Displacer Meditation Stone
-							i(140780),	-- Fal'dorei Egg
-							i(141299),	-- Kaldorei Light Globe
-							i(140786),	-- Ley Spider Eggs
-							i(141301),	-- Unstable Powder Box
-							i(141306),	-- Wisp in a Bottle
+							i(141297),	-- Arcano-Shower (TOY!)
+							i(141298),	-- Displacer Meditation Stone (TOY!)
+							i(140780),	-- Fal'dorei Egg (TOY!)
+							i(141299),	-- Kaldorei Light Globe (TOY!)
+							i(140786),	-- Ley Spider Eggs (TOY!)
+							i(141301),	-- Unstable Powder Box (TOY!)
+							i(141306),	-- Wisp in a Bottle (TOY!)
 						}),
 						n(109497, {	-- Small Treasure Chest
 							i(137823),	-- Design: Prophetic Band (Rank 2)

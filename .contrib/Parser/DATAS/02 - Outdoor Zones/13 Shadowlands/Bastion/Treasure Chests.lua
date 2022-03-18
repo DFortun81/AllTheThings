@@ -175,7 +175,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					{ 53.5, 80.4, BASTION },	-- Treasure
 				},
 				["g"] = {
-					i(173984),	-- Scroll of Aeons
+					i(173984),	-- Scroll of Aeons (TOY!)
 				},
 			}),
 			o_repeated({

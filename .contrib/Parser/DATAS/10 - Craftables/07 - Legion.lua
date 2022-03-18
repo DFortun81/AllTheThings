@@ -179,7 +179,7 @@ _.Craftables =
 				i(128534),	-- Enchanted Torch
 			}),
 			filter(TOYS, {
-				i(128536),	-- Leylight Brazier
+				i(128536),	-- Leylight Brazier (TOY!)
 			}),
 		}),
 		prof(ENGINEERING, {
@@ -187,8 +187,8 @@ _.Craftables =
 				i(132519),	-- Trigger*
 			}),
 			filter(TOYS, {
-				i(132518),	-- Blingtron's Circuit Design Tutorial*
-				i(151652),	-- Wormhole Generator: Argus*
+				i(132518),	-- Blingtron's Circuit Design Tutorial (TOY!)
+				i(151652),	-- Wormhole Generator: Argus (TOY!)
 			}),
 			n(ARMOR, {
 				i(132500),	-- Blink-Trigger Headgun*
@@ -276,7 +276,7 @@ _.Craftables =
 				i(141446),	-- Tome of the Tranquil Mind
 			}),
 			filter(TOYS, {
-				i(129211),	-- Steamy Romance Novel Kit
+				i(129211),	-- Steamy Romance Novel Kit (TOY!)
 			}),
 			filter(53, {	-- Trinkets
 				i(128978),	-- Prophecy Tarot
@@ -290,10 +290,10 @@ _.Craftables =
 			spell(201943, {	-- Better Luck Next Time
 				["maps"] = { AZSUNA, BROKEN_SHORE, EYE_OF_AZSHARA, HIGHMOUNTAIN, STORMHEIM, SURAMAR, VALSHARAH },
 				["g"] = {
-					i(142528),	-- Crate of Bobbers: Can of Worms
-					i(142529),	-- Crate of Bobbers: Cat Head
-					i(142530),	-- Crate of Bobbers: Tugboat
-					i(143662),	-- Crate of Bobbers: Wooden Pepe
+					i(142528),	-- Crate of Bobbers: Can of Worms (TOY!)
+					i(142529),	-- Crate of Bobbers: Cat Head (TOY!)
+					i(142530),	-- Crate of Bobbers: Tugboat (TOY!)
+					i(143662),	-- Crate of Bobbers: Wooden Pepe (TOY!)
 					i(139408, {	-- Deck Sandals
 						["bonusID"] = 1812,
 					}),
@@ -311,8 +311,8 @@ _.Craftables =
 		}),
 		prof(JEWELCRAFTING, {
 			filter(TOYS, {
-				i(130254),	-- Chatterstone
-				i(130251),	-- JewelCraft
+				i(130254),	-- Chatterstone (TOY!)
+				i(130251),	-- JewelCraft (TOY!)
 			}),
 			n(HEAD, {
 				i(151587),	-- Empyrial Cosmic Crown
@@ -430,10 +430,10 @@ _.Craftables =
 				i(142406),	-- Drums of the Mountain
 			}),
 			filter(TOYS, {
-				i(129961),	-- Flaming Hoop
-				i(129956),	-- Leather Love Seat
-				i(129960),	-- Leather Pet Bed
-				i(129958),	-- Leather Pet Leash
+				i(129961),	-- Flaming Hoop (TOY!)
+				i(129956),	-- Leather Love Seat (TOY!)
+				i(129960),	-- Leather Pet Bed (TOY!)
+				i(129958),	-- Leather Pet Leash (TOY!)
 			}),
 		}),
 		prof(TAILORING, {

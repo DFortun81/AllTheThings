@@ -94,7 +94,7 @@ _.Zones =
 									i(19202),	-- Plans: Heavy Timbermaw Belt
 									i(19204),	-- Plans: Heavy Timbermaw Boots
 									i(13484),	-- Recipe: Transmute Earth to Water
-									i(66888),	-- Stave of Fur and Claw Toy
+									i(66888),	-- Stave of Fur and Claw Toy (TOY!)
 								},
 							}),
 						}),

@@ -212,7 +212,8 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 				["groups"] = {
 					i(175160, {	-- Holy Relic (Bag of Tricks addition)
 						["races"] = { VULPERA },
-						["questID"] = 59036,
+						["questID"] = 59035,
+						--["questID"] = 59036,	-- secondary questID, sorted in HQTs
 						["timeline"] = { "added 8.3.0.33115" },
 					}),
 					i(122114, {	-- Void Collar (PET!)

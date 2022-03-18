@@ -18,13 +18,25 @@ _.WorldDrops =
 			prof(ENGINEERING, {
 				i(100910, {	-- Schematic: Chief Engineer Jard's Journal
 					["spellID"] = 0,	-- Not learnable.
+					["f"] = MISC,
 					["g"] = {
 						recipe(139197),	-- Advanced Refrigeration Unit
 						recipe(139176),	-- Jard's Peculiar Energy Source
 						recipe(139196),	-- Pierre
 						recipe(143714),	-- Rascal-Bot
 						recipe(139192),	-- Sky Golem
-					},	
+					},
+				}),
+				i(94847, {	-- Schematic: Chief Engineer Jard's Journal
+					["spellID"] = 0,	-- Not learnable.
+					["u"] = REMOVED_FROM_GAME,
+					["_drop"] = { "g" },
+					["g"] = {
+						q(32630, {	-- Chief Engineer Jard's Journal
+							["u"] = REMOVED_FROM_GAME,
+							["_drop"] = { "g" },
+						}),
+					},
 				}),
 			}),
 			prof(INSCRIPTION, {

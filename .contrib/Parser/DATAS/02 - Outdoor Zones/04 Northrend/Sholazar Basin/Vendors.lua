@@ -11,7 +11,7 @@ _.Zones =
 					["classes"] = { HUNTER },
 					["coord"] = { 27.2, 59.6, SHOLAZAR_BASIN },
 					["g"] = {
-						i(136855),	-- Hunter's Call
+						i(136855),	-- Hunter's Call (TOY!)
 						i(136781, {	-- Pet Training Manual: Fetch
 							["spellID"] = 125050,	-- Fetch
 						}),

@@ -296,24 +296,8 @@ _.Zones =
 						["coord"] = { 69.8, 38.8, LEGION_DALARAN },
 						["provider"] = { "n", 101846 },	-- Nomi
 					}),
-					q(40991, {	-- Opening the Test Kitchen
-						["sourceQuests"] = { 40990 },	-- A Good Recipe List
-						["provider"] = { "n", 101846 },	-- Nomi
-					}),
 					q(44581, {	-- Spicing Things Up
 						["provider"] = { "n", 101846 },	-- Nomi
-						["g"] = {
-							i(133826),	-- Recipe: Dried Mackerel Strips
-						},
-					}),
-					q(40989, {	-- The Prodigal Sous Chef
-						["provider"] = { "n", 102546 },	-- Nomi
-						["g"] = {
-							i(133826),	-- Recipe: Dried Mackerel Strips
-						},
-					}),
-					q(40988, {	-- Too Many Cooks
-						["provider"] = { "n", 102546 },	-- Nomi
 						["g"] = {
 							i(133826),	-- Recipe: Dried Mackerel Strips
 						},
@@ -328,50 +312,8 @@ _.Zones =
 							recipe(247717),	-- Gravitational Reduction Slippers
 						},
 					}),
-					q(48065, {	-- Extraterrestrial Exploration
-						["sourceQuests"] = { 48069 },	-- The Wrench Calls
-						["provider"] = { "n", 93520 },	-- Didi the Wrench
-						["g"] = {
-							recipe(247744),	-- Wormhole Generator: Argus
-						},
-					}),
 				}),
 				prof(FISHING, {
-					n(ARTIFACTS, {
-						["description"] = "Prerequisites:\n\n  Be level 45.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry.\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
-						["lvl"] = { 45 },
-						["g"] = {
-							q(40961, {	-- The Dalaran Fountain
-								["sourceQuest"] = 40960,	-- Luminous Pearl
-								["provider"] = { "n", 90417 },	-- Archmage Khadgar
-								["description"] = "Prerequisites:\n\n  Be level 45.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry.\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item to start this chain.",
-							}),
-							q(41010, {	-- Fish Frenzy
-								["sourceQuest"] = 40961,	-- The Dalaran Fountain
-								["provider"] = { "n", 102639 },	-- Archmage Khadgar
-								["description"] = "If you can't find Nat Pagle to give you this quest, going into the bank just south of the fountain seems to force him to spawn right on you.",
-								["g"] = {
-									artifact(841),	-- Base Skin
-									ach(11725, {	-- Fisherfriend of the Isles
-										["description"] = "When you complete this achievement, you get an item that unlocks the two remaining appearances. See the other Broken Isles zones for more information.",
-										["providers"] = {
-											{ "n", 120456 },	-- Keeper Raynae
-											{ "n", 120457 },	-- Akule Riverhorn
-											{ "n", 120458 },	-- Corbyn
-											{ "n", 120459 },	-- Sha'leth
-											{ "n", 120460 },	-- Impus
-										},
-										["g"] = {
-											i(152583, {	-- Underlight Emerald
-												artifact(988),	-- Fisherfriend of the Isles
-												artifact(989),	-- Fisherfriend of the Isles
-											})
-										},
-									}),
-								},
-							}),
-						},
-					}),
 					faction(1975, {	-- Conjurer Margoss
 						["creatureID"] = 108825,
 						["description"] = "Can be found on a floating island called Margoss' Retreat just North of Dalaran.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
@@ -404,14 +346,6 @@ _.Zones =
 							["g"] = THE_WISH_REMOVER,
 						}),
 					}),
-					q(41010, {	-- Fish Frenzy
-						["provider"] = { "n", 102639 },	-- Nat Pagle
-					}),
-					--q(40960),	-- Luminous Pearl -- granted by i(133887) from fishing
-					q(40961, {	-- The Dalaran Fountain
-						["provider"] = { "n", 90417 },	-- Archmage Khadgar
-						["sourceQuests"] = { 40960 },	-- Luminous Pearl
-					}),
 				}),
 				prof(INSCRIPTION, {
 					q(43726, {	-- Tales of the Broken Isles
@@ -433,68 +367,6 @@ _.Zones =
 								i(137769),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption (Rank 3)
 							},
 						}),
-					}),
-				}),
-				prof(SKINNING, {
-					q(40157,  {	-- An Unseemly Task
-						["requireSkill"] = SKINNING,
-						["provider"] = { "n", 93541 },	-- Kondal Huntsworn
-					}),
-					q(40156, {	-- Felhide Sample
-						["provider"] = { "i", 129863 },	-- Felhide Sample
-					}),
-					q(40136, {	-- Immaculate Stonehide Leather
-						["provider"] = { "i", 129866 },	-- Immaculate Stonehide Leather
-					}),
-					q(40151, {	-- Immaculate Stormscale
-						["provider"] = { "i", 129867 },	-- Immaculate Stormscale
-					}),
-					q(40144, {	-- Glielle
-						["sourceQuests"] = { 40143 },	-- Unfinished Treatise on the Properties of Stormscale
-						["requireSkill"] = SKINNING,
-						["coord"] = { 35.9, 28.5, LEGION_DALARAN },
-						["provider"] = { "n", 93541 },	-- Kondal Huntsworn
-					}),
-					q(40132, {	-- In One Piece
-						["sourceQuests"] = { 40131 },	-- Stonehide Leather Sample
-						["coord"] = { 35.9, 28.6, LEGION_DALARAN },
-						["provider"] = { "n", 93541 },	-- Kondal Huntersworn
-						["g"] = {
-							recipe(194161),	-- Stonehide Leather (Rank 1)
-						},
-					}),
-					q(40137, {	-- Leather for Ske'rit
-						["sourceQuests"] = { 40136 },	-- Immaculate Stonehide Leather
-						["provider"] = { "n", 93541 },	-- Kondal Huntsworn
-					}),
-					q(40152, {	-- Scales for Ske'rit
-						["sourceQuests"] = { 40151 },	-- Immaculate Stormscale
-						["provider"] = { "n", 93541 },	-- Kondal Huntsworn
-					}),
-					q(40146, {	-- Seymour and Agnes
-						["sourceQuests"] = { 40143 },	-- Unfinished Treatise on the Properties of Stormscale
-						["requireSkill"] = SKINNING,
-						["coord"] = { 35.9, 28.5, LEGION_DALARAN },
-						["provider"] = { "n", 93541 },	-- Kondal Huntsworn
-					}),
-					q(40131, {	-- Stonehide Leather Sample
-						["provider"] = { "i", 129860 },	-- Stonehide Leather Sample
-					}),
-					q(40141, {	-- Stormscale Sample
-						["provider"] = { "i", 129862 },	-- Stormscale Sample
-					}),
-					q(40142, {	-- The Core of the Stormscale
-						["sourceQuests"] = { 40141 },	-- Stormscale Sample
-						["provider"] = { "n", 93541 },	-- Kondal Huntsworn
-						["g"] = {
-							recipe(194164),	-- Stormscale (Rank 1)
-						},
-					}),
-					q(40159, {	-- The Emerald Nightmare: The Pestilential Hide of Nythendra
-						["provider"] = { "n", 93541 },	-- Kondal Huntsworn
-						["g"] = {
-							recipe(194169),	-- Felhide (Rank 3)
-						},
 					}),
 				}),
 			}),

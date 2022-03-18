@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(249, {	-- Uldum
+		m(ULDUM, {
 			n(PROFESSIONS, {
 				prof(ARCHAEOLOGY, bubbleDown({["requireSkill"] = ALCHEMY},{
 					i(64657, {	-- Canopic Jar

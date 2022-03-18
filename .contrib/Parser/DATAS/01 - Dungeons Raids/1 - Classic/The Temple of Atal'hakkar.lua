@@ -1,6 +1,26 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+local ESSENCE_OF_ERANIKUS_PART_TWO_OnUpdate = [[function(t)
+	if not t.collected and C_QuestLog.IsQuestFlaggedCompleted(3373) and GetItemCount(10455, true) < 1 then
+		if not _.AccountWideQuests then
+			t.u = ]] .. REMOVED_FROM_GAME .. [[;
+		else
+			t.u = nil;
+		end
+		t.description = "|cffaa0000You have completed the previous quest, but deleted the item needed to complete this quest. As such, you'll be unable to complete the quest chain. Sorry!|r";
+	end
+end]];
+local ESSENCE_OF_ERANIKUS_OWN_WORDS_OnUpdate = [[function(t)
+	if not C_QuestLog.IsQuestFlaggedCompleted(3374) and (C_QuestLog.IsQuestFlaggedCompleted(3373) and GetItemCount(10455, true) < 1) then
+		if not _.AccountWideQuests then
+			t.u = ]] .. REMOVED_FROM_GAME .. [[;
+		else
+			t.u = nil;
+		end
+		t.description = "|cffaa0000You deleted the item needed to complete the previous quest. As such, you'll be unable to complete this one. Sorry!|r";
+	end
+end]];
 root("Instances", tier(CLASSIC_TIER, {
 	inst(237, {	-- The Temple of Atal'hakkar
 		-- #if BEFORE MOP
@@ -42,6 +62,23 @@ root("Instances", tier(CLASSIC_TIER, {
 							["timeline"] = { "created 4.0.3" },
 						}),
 						i(22274, {	-- Grizzled Pelt
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
+				}),
+				q(10593, {	-- An Ancient Evil
+					["qg"] = 10181,	-- Lady Sylvanas Windrunner <Banshee Queen>
+					["sourceQuest"] = 10592,	-- Wisdom of the Banshee Queen
+					["coord"] = { 57.8, 92, UNDERCITY },
+					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["classes"] = { PALADIN },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 50,
+					["groups"] = {
+						objective(1, {	-- 0/1 Putrid Vine
+							["provider"] = { "i", 22444 },	-- Putrid Vine
+						}),
+						i(30696, {	-- Scourgebane
 							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
@@ -140,6 +177,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					["coord"] = { 42.8, 84.0, WESTERN_PLAGUELANDS },
 					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 					["groups"] = {
 						objective(1, {	-- 0/2 Amber Voodoo Feather
@@ -186,6 +224,9 @@ root("Instances", tier(CLASSIC_TIER, {
 					["coord"] = { 13.67, 71.72, SWAMP_OF_SORROWS },
 					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { WINTERSPRING },
+					-- #if BEFORE 4.0.3
+					["OnUpdate"] = ESSENCE_OF_ERANIKUS_OWN_WORDS_OnUpdate,
+					-- #endif
 					["lvl"] = 48,
 				}),
 				q(3446, {	-- Into the Depths
@@ -332,6 +373,9 @@ root("Instances", tier(CLASSIC_TIER, {
 					["coord"] = { 13.67, 71.72, SWAMP_OF_SORROWS },
 					["timeline"] = { "removed 4.0.3" },
 					["cost"] = { { "i", 10455, 1 } },	-- Chained Essence of Eranikus
+					-- #if BEFORE 4.0.3
+					["OnUpdate"] = ESSENCE_OF_ERANIKUS_PART_TWO_OnUpdate,
+					-- #endif
 					["lvl"] = 48,
 				}),
 				q(3528, {	-- The God Hakkar

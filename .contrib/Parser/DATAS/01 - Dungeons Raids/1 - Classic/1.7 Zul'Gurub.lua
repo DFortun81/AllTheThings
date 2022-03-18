@@ -1349,7 +1349,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 			n(11382, {	-- Bloodlord Mandokir
 				removeclassicphase(ach(881, {	-- Swift Razzashi Raptor
 					["provider"] = { "i", 19872 },	-- Swift Razzashi Raptor
-					["f"] = 100,
+					["filterID"] = MOUNTS,
 					-- #if BEFORE WRATH
 					["description"] = "Obtain the Swift Razzashi Raptor from Bloodlord Mandokir in Zul'Gurub.",
 					["OnUpdate"] = [[function(t)
@@ -1364,7 +1364,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 					end]],
 					-- #endif
 				})),
-				i(19872),	-- Swift Razzashi Raptor
+				i(19872),	-- Swift Razzashi Raptor (MOUNT!)
 				i(19867),	-- Bloodlord's Defender
 				i(19874),	-- Halberd of Smiting
 				i(20038),	-- Mandokir's Sting
@@ -1417,7 +1417,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 			n(14509, {	-- High Priest Thekal
 				removeclassicphase(ach(880, {	-- Swift Zulian Tiger
 					["provider"] = { "i", 19902 },	-- Swift Zulian Tiger
-					["f"] = 100,
+					["filterID"] = MOUNTS,
 					-- #if BEFORE WRATH
 					["description"] = "Obtain the Swift Zulian Tiger from High Priest Thekal in Zul'Gurub.",
 					["OnUpdate"] = [[function(t)
@@ -1432,7 +1432,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 					end]],
 					-- #endif
 				})),
-				i(19902),	-- Swift Zulian Tiger
+				i(19902),	-- Swift Zulian Tiger (MOUNT!)
 				i(19896),	-- Thekal's Grasp
 				i(19901),	-- Zulian Slicer
 				i(20266),	-- Peacekeeper Leggings

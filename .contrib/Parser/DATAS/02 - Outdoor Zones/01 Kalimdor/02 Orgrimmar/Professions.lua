@@ -5,55 +5,6 @@
 root("Zones", m(KALIMDOR, {
 	m(ORGRIMMAR, {
 		n(PROFESSIONS, {
-			prof(ALCHEMY, {
-				n(QUESTS, {
-					q(29481, {	-- Elixir Master
-						["provider"] = { "n", 3347 },	-- Yelmak
-						["coord"] = { 55.6, 45.8, ORGRIMMAR },	-- Yelmak
-						["description"] = "Requires 300 Classic Alchemy.",
-						["requireSkill"] = ALCHEMY,
-						["repeatable"] = true,
-						--[[["altQuests"] = {
-							29481,	-- Elixir Master
-							29067,	-- Potion Master
-							29482,	-- Transmutation Master
-							10902,	-- Elixir Master (Removed)
-							10897,	-- Potion Master (Removed)
-							10899,	-- Transmutation Master (Removed)
-						},]]
-					}),
-					q(29067, {	-- Potion Master
-						["provider"] = { "n", 3347 },	-- Yelmak
-						["coord"] = { 55.6, 45.8, ORGRIMMAR },	-- Yelmak
-						["description"] = "Requires 300 Classic Alchemy.",
-						["requireSkill"] = ALCHEMY,
-						["repeatable"] = true,
-						--[[["altQuests"] = {
-							29481,	-- Elixir Master
-							29067,	-- Potion Master
-							29482,	-- Transmutation Master
-							10902,	-- Elixir Master (Removed)
-							10897,	-- Potion Master (Removed)
-							10899,	-- Transmutation Master (Removed)
-						},]]
-					}),
-					q(29482, {	-- Transmutation Master
-						["provider"] = { "n", 3347 },	-- Yelmak
-						["coord"] = { 55.6, 45.8, ORGRIMMAR },	-- Yelmak
-						["description"] = "Requires 300 Classic Alchemy.",
-						["requireSkill"] = ALCHEMY,
-						["repeatable"] = true,
-						--[[["altQuests"] = {
-							29481,	-- Elixir Master
-							29067,	-- Potion Master
-							29482,	-- Transmutation Master
-							10902,	-- Elixir Master (Removed)
-							10897,	-- Potion Master (Removed)
-							10899,	-- Transmutation Master (Removed)
-						},]]
-					}),
-				}),
-			}),
 			prof(BLACKSMITHING, {
 				n(QUESTS, {
 					q(2751, {	-- Barbaric Battlements
@@ -291,15 +242,6 @@ root("Zones", m(KALIMDOR, {
 								}),
 							},
 						}),
-						q(8228, {	-- Could I get a Fishing Flier?
-							["provider"] = { "n", 15116 },	-- Grinkle
-							["coord"] = { 52.2, 77.0, ORGRIMMAR },
-							["requireSkill"] = FISHING,
-							["isBreadcrumb"] = true,
-							["repeatable"] = true,
-							["races"] = HORDE_ONLY,
-							["lvl"] = 35,
-						}),
 						q(26556, {	-- No Dumping Allowed
 							["provider"] = { "n", 43239 },	-- Razgar
 							["coord"] = { 65.7, 41.1, ORGRIMMAR },
@@ -324,6 +266,7 @@ root("Zones", m(KALIMDOR, {
 				i(34486),	-- Old Crafty
 			}),
 			prof(INSCRIPTION, {
+				--[[
 				n(46716, {	-- Nerog <Inscription Trainer> "TEST"
 					["coord"] = { 55.1, 55.9, ORGRIMMAR },
 					["g"] = {
@@ -434,6 +377,7 @@ root("Zones", m(KALIMDOR, {
 						}),
 					},
 				}),
+				--]]
 				n(QUESTS, {
 					q(27686, {	-- Forged Documents
 						["provider"] = { "i", 63276 },	-- Forged Documents

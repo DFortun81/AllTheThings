@@ -5032,9 +5032,24 @@ profession(TAILORING, {
 					["recipeID"] = 343202
 				},
 				{
+					["name"] = "Crafter's Mark IV",
+					["recipeID"] = 359661,
+					["timeline"] = { "added 9.2.0" },
+				},
+				{
+					["name"] = "Crafter's Mark of the First Ones",
+					["recipeID"] = 359670,
+					["timeline"] = { "added 9.2.0" },
+				},
+				{
 					["name"] = "Novice Crafter's Mark",
 					["recipeID"] = 343659
-				}
+				},
+				{
+					["name"] = "Vestige of the Eternal",
+					["recipeID"] = 359703,
+					["timeline"] = { "added 9.2.0" },
+				},
 			}
 		},
 		{
@@ -5294,6 +5309,10 @@ profession(TAILORING, {
 				{
 					["name"] = "Shrouded Cloth Bandage",
 					["recipeID"] = 310924
+				},
+				{
+					["name"] = "Shrouded Hand Towel",
+					["recipeID"] = 355183
 				}
 			}
 		},

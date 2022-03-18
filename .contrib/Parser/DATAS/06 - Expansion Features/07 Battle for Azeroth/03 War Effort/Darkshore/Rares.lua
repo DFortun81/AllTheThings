@@ -58,7 +58,7 @@ _.ExpansionFeatures =
 						["isWeekly"] = true,
 						["coord"] = { 58.5, 24.2, DARKSHORE },
 						["g"] = {
-							i(166784),	-- Narassin's Soul Gem
+							i(166784),	-- Narassin's Soul Gem (TOY!)
 						},
 					}),
 					n(149660, {	-- Blackpaw [H Only]
@@ -81,7 +81,7 @@ _.ExpansionFeatures =
 						["description"] = "Only shows up when Alliance Controlled.",
 						["g"] = {
 							i(166449),	-- Darkshore Sentinel
-							i(166788),	-- Twiddle Twirler: Shredder Blade
+							i(166788),	-- Twiddle Twirler: Shredder Blade (TOY!)
 						},
 					}),
 					n(147845, {	-- Commander Drald [A Only]
@@ -92,7 +92,7 @@ _.ExpansionFeatures =
 						["coord"] = { 46.51, 86.14, DARKSHORE },
 						["description"] = "Only shows up when Alliance Controlled.",
 						["g"] = {
-							i(166790),	-- Highborne Memento
+							i(166790),	-- Highborne Memento (TOY!)
 						},
 					}),
 					n(148025, {	-- Commander Ralesh
@@ -101,7 +101,7 @@ _.ExpansionFeatures =
 						["isWeekly"] = true,
 						["coord"] = { 37.96, 76.23, DARKSHORE },
 						["g"] = {
-							i(166787),	-- Twiddle Twirler: Sentinel's Glaive
+							i(166787),	-- Twiddle Twirler: Sentinel's Glaive (TOY!)
 						},
 					}),
 					n(147260, {	-- Conflagros
@@ -170,7 +170,7 @@ _.ExpansionFeatures =
 						["isWeekly"] = true,
 						["coord"] = { 40.92, 56.43, DARKSHORE },
 						["g"] = {
-							i(166785),	-- Detoxified Blight Grenade
+							i(166785),	-- Detoxified Blight Grenade (TOY!)
 						},
 					}),
 					n(149662, {	-- Grimhorn [H Only]
@@ -252,7 +252,7 @@ _.ExpansionFeatures =
 						["coord"] = { 32.98, 83.94, DARKSHORE },
 						["description"] = "Only shows up when Horde Controlled.",
 						["g"] = {
-							i(166788),	-- Twiddle Twirler: Shredder Blade
+							i(166788),	-- Twiddle Twirler: Shredder Blade (TOY!)
 						},
 					}),
 					n(149665, {	-- Scalefiend
@@ -300,7 +300,7 @@ _.ExpansionFeatures =
 						["coord"] = { 62.12, 16.49, DARKSHORE },
 						["description"] = "Only shows up when Horde Controlled.",
 						["g"] = {
-							i(166790),	-- Highborne Memento
+							i(166790),	-- Highborne Memento (TOY!)
 						},
 					}),
 					n(147942, {	-- Twilight Prophet Graeme

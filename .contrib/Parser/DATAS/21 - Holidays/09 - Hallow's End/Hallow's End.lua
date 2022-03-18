@@ -37,7 +37,7 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 		["timeline"] = { "added 4.2.0.14333" },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
-	i(37011, {	-- Magic Broom
+	i(37011, {	-- Magic Broom (MOUNT!)
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 		["collectible"] = false,
 	}),
@@ -95,7 +95,7 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 	i(33292, {	-- Hallowed Helm
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
-	i(163045, {	-- Headless Horseman's Hearthstone
+	i(163045, {	-- Headless Horseman's Hearthstone (TOY!)
 		["timeline"] = { "added 8.0.1.26624" },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
@@ -111,7 +111,7 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 		["timeline"] = { "added 4.2.0.14333" },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
-	i(37011, {	-- Magic Broom
+	i(37011, {	-- Magic Broom (MOUNT!)
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 		["collectible"] = false,
 	}),
@@ -389,17 +389,23 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 	["groups"] = {
 		n(ACHIEVEMENTS, {
 			ach(1656, {	-- Hallowed Be Thy Name
-				--[[
+				-- Meta Achievement should symlink the contained Achievements from Source
 				["sym"] = {
-					-- #if ANYCLASSIC
-					{ "select", "headerID", -58 },	-- Select the header for this section.
-					-- #else
-					{ "select", "holidayID", 235462 },
-					-- #endif
-					{ "pop" },	-- Pop out the children.
-					{ "where", "headerID", ACHIEVEMENTS },	-- Select the achievement header.
+					{"select","achievementID",
+						972,				-- Trick or Treat!
+						288,				-- Out With It
+						255,				-- Bring Me The Head of... Oh Wait
+						289,				-- The Savior of Hallow's End
+						981,				-- That Sparkling Smile
+						1040,				-- Rotten Hallow (A)
+						1041,				-- Rotten Hallow (H)
+						1261,				-- G.N.E.R.D. Rage
+						291,				-- Check Your Head
+						283,				-- The Masquerade
+						292,				-- Sinister Calling
+						971,				-- Tricks and Treats of Azeroth
+					},
 				},
-				]]--
 				["groups"] = {
 					title(92),	-- %s the Hallowed
 				},
@@ -410,6 +416,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 				["cost"] = { { "i", 33226, 3 } },	-- Tricky Treat
 			}),
 			ach(255),	-- Bring Me The Head of... Oh Wait
+			ach(979),	-- The Mask Task
 			ach(289),	-- The Savior of Hallow's End
 			ach(981, {	-- That Sparkling Smile
 				["provider"] = { "i", 37604 },	-- Tooth Pick
@@ -1212,22 +1219,22 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["coord"] = { 42.7, 45.6, MOUNT_HYJAL },
 					}),
 					crit(5, {	-- Twilight Highlands, Firebeard's Patrol
-						["coord"] = { 60.4, 58.2,TWILIGHT_HIGHLANDS },
+						["coord"] = { 60.4, 58.2, TWILIGHT_HIGHLANDS },
 					}),
 					crit(6, {	-- Twilight Highlands, Highbank
-						["coord"] = { 79.5, 78.5,TWILIGHT_HIGHLANDS },
+						["coord"] = { 79.5, 78.5, TWILIGHT_HIGHLANDS },
 					}),
 					crit(7, {	-- Twilight Highlands, Thundermar
-						["coord"] = { 49.6, 30.4,TWILIGHT_HIGHLANDS },
+						["coord"] = { 49.6, 30.4, TWILIGHT_HIGHLANDS },
 					}),
 					crit(8, {	-- Twilight Highlands, Victor's Point
-						["coord"] = { 43.6, 57.3,TWILIGHT_HIGHLANDS },
+						["coord"] = { 43.6, 57.3, TWILIGHT_HIGHLANDS },
 					}),
 					crit(9, {	-- Uldum, Oasis of Vir'sar
-						["coord"] = { 26.6, 7.30, 249 },
+						["coord"] = { 26.6, 7.30, ULDUM },
 					}),
 					crit(10, {	-- Uldum, Ramkahen
-						["coord"] = { 54.7, 33.0, 249 },
+						["coord"] = { 54.7, 33.0, ULDUM },
 					}),
 					crit(11, {	-- Vashj'ir, Darkbreak Cove
 						["coord"] = { 54.7, 72.2, 203 },
@@ -1268,10 +1275,10 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["coord"] = { 75.4, 16.5,TWILIGHT_HIGHLANDS },
 					}),
 					crit(8, {	-- Uldum, Oasis of Vir'sar
-						["coord"] = { 26.6, 7.30, 249 },
+						["coord"] = { 26.6, 7.30, ULDUM },
 					}),
 					crit(9, {	-- Uldum, Ramkahen
-						["coord"] = { 54.7, 33.0, 249 },
+						["coord"] = { 54.7, 33.0, ULDUM },
 					}),
 					crit(10, {	-- Vashj'ir, Deepmist Grotto
 						["coord"] = { 63.4, 60.2, 203 },
@@ -1438,6 +1445,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 			removeclassicphase(ach(980, {	-- The Horseman's Reins
 				["provider"] = { "i", 37012 },	-- The Horseman's Reins
 				["timeline"] = { "added 2.0.1" },
+				["filterID"] = MOUNTS,
 				-- #if BEFORE WRATH
 				["description"] = "Obtain The Horseman's Reins from The Headless Horseman in the Scarlet Monastery during Hallow's End.",
 				["OnUpdate"] = [[function(t)
@@ -1522,7 +1530,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 					["lvl"] = 98,
 					-- #endif
 					["groups"] = {
-						i(37012, {	-- The Horseman's Reins
+						i(37012, {	-- Headless Horseman's Mount (MOUNT!)
 							["timeline"] = { "added 2.0.1" },
 						}),
 						i(117356, {	-- The Horseman's Sinister Slicer
@@ -1537,7 +1545,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						i(33292, {	-- Hallowed Helm
 							["timeline"] = { "added 2.2.2.7318" },
 						}),
-						i(37011, {	-- Magic Broom
+						i(37011, {	-- Magic Broom (MOUNT!)
 							["timeline"] = { "added 2.4.3.8600" },
 							["collectible"] = false,
 						}),
@@ -1565,7 +1573,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						i(33292, {	-- Hallowed Helm
 							["timeline"] = { "added 2.2.2.7318" },
 						}),
-						i(37011, {	-- Magic Broom
+						i(37011, {	-- Magic Broom (MOUNT!)
 							["timeline"] = { "added 2.4.3.8600" },
 							["collectible"] = false,
 						}),
@@ -1592,7 +1600,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						-- #endif
 						-- #endif
 						-- #if BEFORE 6.0.1
-						i(37012, {	-- The Horseman's Reins
+						i(37012, {	-- Headless Horseman's Mount (MOUNT!)
 							["timeline"] = { "added 2.0.1" },
 						}),
 						-- #endif
@@ -1616,10 +1624,10 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						i(33292, {	-- Hallowed Helm
 							["timeline"] = { "added 2.2.2.7318" },
 						}),
-						i(33176, {	-- Flying Broom
+						i(33176, {	-- Flying Broom (MOUNT!)
 							["timeline"] = { "added 2.2.2.7318", "deleted 4.2.2" },
 						}),
-						i(37011, {	-- Magic Broom
+						i(37011, {	-- Magic Broom (MOUNT!)
 							["timeline"] = { "added 2.4.3.8600" },
 							["collectible"] = false,
 						}),
@@ -1627,7 +1635,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 				}),
 
 				-- #if BEFORE CATA
-				i(37012, {	-- The Horseman's Reins
+				i(37012, {	-- Headless Horseman's Mount (MOUNT!)
 					["timeline"] = { "added 2.0.1" },
 				}),
 				-- #endif
@@ -1722,23 +1730,23 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 				i(33292, {	-- Hallowed Helm
 					["timeline"] = { "added 2.2.2.7318" },
 				}),
-				i(37011, {	-- Magic Broom
+				i(37011, {	-- Magic Broom (MOUNT!)
 					["timeline"] = { "added 2.4.3.8600" },
 					["collectible"] = false,
 				}),
 				-- #endif
 				-- #if NOT ANYCLASSIC
 				-- #if BEFORE LEGION
-				i(33176, {	-- Flying Broom
+				i(33176, {	-- Flying Broom (MOUNT!)
 					["timeline"] = { "added 2.2.2.7318", "deleted 4.2.2" },
 				}),
-				i(33182, {	-- Swift Flying Broom
+				i(33182, {	-- Swift Flying Broom (MOUNT!)
 					["timeline"] = { "added 2.0.1", "removed 2.4.3" },
 				}),
-				i(33184, {	-- Swift Magic Broom
+				i(33184, {	-- Swift Magic Broom (MOUNT!)
 					["timeline"] = { "added 2.0.1", "removed 2.4.3" },
 				}),
-				i(33183, {	-- Old Magic Broom
+				i(33183, {	-- Old Magic Broom (MOUNT!)
 					["timeline"] = { "added 2.0.1", "removed 2.4.3" },
 				}),
 				-- #endif
@@ -3132,11 +3140,11 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["timeline"] = { "added 5.0.1" },
 					}),
 					q(29016, {	-- Candy Bucket — Uldum, Oasis of Vir'sar, Neutral
-						["coord"] = { 26.6, 7.30, 249 },
+						["coord"] = { 26.6, 7.30, ULDUM },
 						["timeline"] = { "added 4.1.0.13726" },
 					}),
 					q(29017, {	-- Candy Bucket — Uldum, Ramkahen, Neutral
-						["coord"] = { 54.7, 33.0, 249 },
+						["coord"] = { 54.7, 33.0, ULDUM },
 						["timeline"] = { "added 4.1.0.13726" },
 					}),
 					q(29018, {	-- Candy Bucket — Un'Goro Crater, Marshal's Stand, Neutral
@@ -3885,7 +3893,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						{ "i", 128664, 1 },	-- Creepy Crawlers
 					},
 					["groups"] = {
-						i(128794),	-- Sack of Spectral Spiders (PET!)
+						i(128794),	-- Sack of Spectral Spiders (TOY!)
 					},
 				}),
 				i(128874, {	-- A Tiny Scarecrow Costume
@@ -4116,16 +4124,16 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, { {
 	-- #endif
 	["groups"] = {
 		-- #if ANYCLASSIC
-		i(33176, {	-- Flying Broom
+		i(33176, {	-- Flying Broom (MOUNT!)
 			["timeline"] = { "created 2.2.2.7318", "deleted 4.2.2" },
 		}),
-		i(33182, {	-- Swift Flying Broom
+		i(33182, {	-- Swift Flying Broom (MOUNT!)
 			["timeline"] = { "created 2.0.1", "deleted 4.2.2" },
 		}),
-		i(33184, {	-- Swift Magic Broom
+		i(33184, {	-- Swift Magic Broom (MOUNT!)
 			["timeline"] = { "created 2.0.1", "deleted 4.2.2" },
 		}),
-		i(33183, {	-- Old Magic Broom
+		i(33183, {	-- Old Magic Broom (MOUNT!)
 			["timeline"] = { "created 2.0.1", "deleted 4.2.2" },
 		}),
 		-- #endif
