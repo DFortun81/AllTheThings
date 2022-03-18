@@ -19,8 +19,8 @@ _.Instances = { tier(WOTLK_TIER, {
 					31125,	-- Archavon the Stone Watcher
 				},
 				["groups"] = {
-					a(i(43959)),	-- Reins of the Grand Black War Mammoth (Alliance)
-					h(i(44083)),	-- Reins of the Grand Black War Mammoth (Horde)
+					a(i(43959)),	-- Grand Black War Mammoth (A) (MOUNT!)
+					h(i(44083)),	-- Grand Black War Mammoth (H) (MOUNT!)
 				},
 			}),
 			d(3, {	-- 10-Player

@@ -269,7 +269,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 						--------------------------------------------------------------------------
 						-- Items below are sold by both Champion Ros'slai and Stone Guard Mukar --
 						--------------------------------------------------------------------------
-						i(44077, {	-- Reins of the Black War Mammoth
+						i(44077, {	-- Black War Mammoth (H) (MOUNT!)
 							["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
 							["g"] = {
 								ach(2080),		-- Black War Mammoth
@@ -473,7 +473,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 						i(44089, {	-- Trenchant Earthshatter Diamond
 							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
 						}),
-						i(43956, {	-- Reins of the Black War Mammoth
+						i(43956, {	-- Black War Mammoth (A) (MOUNT!)
 							["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
 							["g"] = {
 								ach(2080),		-- Black War Mammoth
@@ -801,7 +801,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					["itemID"] = 137642,	-- Mark of Honor
 					["races"] = HORDE_ONLY,
 					["g"] = pvp({
-						i(44077, {	-- Reins of the Black War Mammoth
+						i(44077, {	-- Black War Mammoth (H) (MOUNT!)
 							["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
 							["g"] = {
 								ach(2080),		-- Black War Mammoth

@@ -19,7 +19,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, {
 				},
 			},
 			["groups"] = {
-				i(44177),				-- Reins of the Violet Proto-Drake
+				i(44177),	-- Violet Proto-Drake (MOUNT!)
 			},
 		}),
 	}),

@@ -221,7 +221,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 						["lvl"] = 98,
 						-- #endif
 						["groups"] = {
-							i(50250, {	-- X-45 Heartbreaker
+							i(50250, {	-- X-45 Heartbreaker (MOUNT!)
 								["timeline"] = { "added 3.3.0" },
 							}),
 							i(49715, {	-- Forever-Lovely Rose

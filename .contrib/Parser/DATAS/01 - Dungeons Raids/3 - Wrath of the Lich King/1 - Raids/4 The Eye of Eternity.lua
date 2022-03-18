@@ -28,8 +28,8 @@ _.Instances = { tier(WOTLK_TIER, {
 					{	-- You Don't Have an Eternity (10 player)
 						["achievementID"] = 1874,	-- You Don't Have an Eternity (10 player)
 					},
-					i(43952),	-- Reins of the Azure Drake (MOUNT!)
-					i(43953),	-- Reins of the Blue Drake (MOUNT!)
+					i(43952),	-- Azure Drake (MOUNT!)
+					i(43953),	-- Blue Drake (MOUNT!)
 					i(40497),	-- Black Ice
 					i(40489),	-- Greatstaff of the Nexus
 					i(40491),	-- Hailstorm
@@ -60,8 +60,8 @@ _.Instances = { tier(WOTLK_TIER, {
 					{	-- You Don't Have an Eternity (25 player)
 						["achievementID"] = 1875,	-- You Don't Have an Eternity (25 player)
 					},
-					i(43952),	-- Reins of the Azure Drake (MOUNT!)
-					i(43953),	-- Reins of the Blue Drake (MOUNT!)
+					i(43952),	-- Azure Drake (MOUNT!)
+					i(43953),	-- RBlue Drake (MOUNT!)
 					i(40543),	-- Blue Aspect Helm
 					i(40562),	-- Hood of Rationality
 					i(40590),	-- Elevated Lair Pauldrons

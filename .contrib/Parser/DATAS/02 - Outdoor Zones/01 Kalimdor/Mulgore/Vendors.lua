@@ -15,7 +15,7 @@ _.Zones =
 						i(18795),	-- Great Gray Kodo (MOUNT!)
 						i(15277),	-- Gray Kodo (MOUNT!)
 						i(15290),	-- Brown Kodo (MOUNT!)
-						i(46100),	-- White Kodo
+						i(46100),	-- White Kodo (MOUNT!)
 						un(REMOVED_FROM_GAME, i(15292)),	-- Green Kodo (MOUNT!) -- Unable to 100% verify this source.
 						un(REMOVED_FROM_GAME, i(15293)),	-- Teal Kodo (MOUNT!) -- Unable to 100% verify this source.
 					},

@@ -29,7 +29,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			un(REMOVED_FROM_GAME, i(141845)),	-- Cruel Gladiator's Storm Dragon
 		})),
 		un(REMOVED_FROM_GAME, ach(3096, {	-- Deadly Gladiator's Frost Wyrm
-			un(REMOVED_FROM_GAME, i(46708)),	-- Deadly Gladiator's Frost Wyrm
+			un(REMOVED_FROM_GAME, i(46708)),	-- Deadly Gladiator's Frost Wyrm (MOUNT!)
 		})),
 		ach(729),			-- Deathcharger's Reins
 		un(REMOVED_FROM_GAME, ach(12140, {	-- Demonic Gladiator's Storm Dragon
@@ -57,7 +57,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		un(REMOVED_FROM_GAME, ach(8213)),	-- Friends In Places Higher Yet
 		un(REMOVED_FROM_GAME, ach(9925)),	-- Friends In Places Yet Even Higher Than That
 		un(REMOVED_FROM_GAME, ach(3756, {	-- Furious Gladiator's Frost Wyrm
-			un(REMOVED_FROM_GAME, i(46171)),	-- Furious Gladiator's Frost Wyrm
+			un(REMOVED_FROM_GAME, i(46171)),	-- Furious Gladiator's Frost Wyrm (MOUNT!)
 		})),
 		ach(2081),			-- Grand Black War Mammoth
 		un(REMOVED_FROM_GAME, ach(8705, {	-- Grievous Gladiator's Cloud Serpent
@@ -83,7 +83,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		})),
 		ach(883),			-- Reins of the Raven Lord
 		un(REMOVED_FROM_GAME, ach(3757, {	-- Relentless Gladiator's Frost Wyrm
-			un(REMOVED_FROM_GAME, i(47840)),	-- Relentless Gladiator's Frost Wyrm
+			un(REMOVED_FROM_GAME, i(47840)),	-- Relentless Gladiator's Frost Wyrm (MOUNT!)
 		})),
 		un(REMOVED_FROM_GAME, ach(6322, {	-- Ruthless Gladiator's Twilight Drake
 			un(REMOVED_FROM_GAME, i(71954)),	-- Ruthless Gladiator's Twilight Drake
@@ -134,7 +134,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			["races"] = ALLIANCE_ONLY,
 		}),
 		un(REMOVED_FROM_GAME, ach(4600, {	-- Wrathful Gladiator's Frost Wyrm
-			un(REMOVED_FROM_GAME, i(50435)),	-- Wrathful Gladiator's Frost Wyrm
+			un(REMOVED_FROM_GAME, i(50435)),	-- Wrathful Gladiator's Frost Wyrm (MOUNT!)
 		})),
 	}),
 }));

@@ -42,7 +42,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 					ach(2051, {	-- The Twilight Zone [10 player]
 						title(107),	-- of the Nightfall
-						i(43986)	-- Reins of the Black Drake	//** Confirmed Drop 4/19/19 [3 Drakes up]
+						i(43986)	-- Black Drake (MOUNT!)
 					}),
 					crit(1, {	-- Sartharion (10 or 25 player) slain
 						["achievementID"] = 1658,	-- Champion of the Frozen Wastes
@@ -93,7 +93,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 					ach(2054, {	-- The Twilight Zone [25 player]
 						title(89),	-- Twilight Vanquisher
-						i(43954)	-- Reins of the Twilight Drake		//** Confirmed Drop 4/19/19 [3 Drakes up]
+						i(43954)	-- Twilight Drake (MOUNT!)
 					}),
 					crit(1, {	-- Sartharion (10 or 25 player) slain
 						["achievementID"] = 1658,	-- Champion of the Frozen Wastes

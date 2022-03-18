@@ -54,39 +54,39 @@ root("BlackMarket", bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(123890),	-- Felsteel Annihilator
 		i(30480),	-- Fiery Warhorse (MOUNT!)
 		i(71665),	-- Flametalon of Alysrazor
-		i(50818),	-- Invincible's Reins
-		i(116660),	--  Ironhoof Destroyer
+		i(50818),	-- Invincible (MOUNT!)
+		i(116660),	-- Ironhoof Destroyer
 		i(104253),	-- Kor'kron Juggernaut
 		i(143764),	-- Leywoven Flying Carpet
 		i(77069),	-- Life-Binder's Handmaiden
 		i(137574),	-- Living Infernal Core
-		i(45693),	-- Mimiron's Head
+		i(45693),	-- Mimiron's Head (MOUNT!)
 		i(172012),	-- Obsidian Worldbreaker
 		i(94230),	-- Reins of the Amber Primordial Direhorn
 		i(87777),	-- Reins of the Astral Cloud Serpent
-		i(43952),	-- Reins of the Azure Drake
+		i(43952),	-- Azure Drake (MOUNT!)
 		i(77067),	-- Reins of the Blazing Drake
-		i(43953),	-- Reins of the Blue Drake
-		i(44151),	-- Reins of the Blue Proto-Drake
+		i(43953),	-- Blue Drake (MOUNT!)
+		i(44151),	-- Blue Proto-Drake (MOUNT!)
 		i(94228),	-- Reins of the Cobalt Primordial Direhorn
 		i(63040),	-- Reins of the Drake of the North Wind
 		i(63041),	-- Reins of the Drake of the South Wind
-		i(43959),	-- Reins of the Grand Black War Mammoth (A)
-		i(44083),	-- Reins of the Grand Black War Mammoth (H)
-		i(44707),	-- Reins of the Green Proto-Drake
+		i(43959),	-- Grand Black War Mammoth (A) (MOUNT!)
+		i(44083),	-- Grand Black War Mammoth (H) (MOUNT!)
+		i(44707),	-- Green Proto-Drake (MOUNT!)
 		i(87771),	-- Reins of the Heavenly Onyx Cloud Serpent
 		i(94231),	-- Reins of the Jade Primordial Direhorn
 		i(163042),  -- Reins of the Mighty Caravan Brutosaur
-		i(49636),	-- Reins of the Onyxian Drake
-		i(44175),	-- Reins of the Plagued Proto-Drake
+		i(49636),	-- Onyxian Drake (MOUNT!)
+		i(44175),	-- Plagued Proto-Drake (MOUNT!)
 		i(94229),	-- Reins of the Slate Primordial Direhorn
 		i(32768),	-- Raven Lord (MOUNT!)
-		i(45802),	-- Reins of the Rusted Proto-Drake
+		i(45802),	-- Rusted Proto-Drake (MOUNT!)
 		i(95057),	-- Reins of the Thundering Cobalt Cloud Serpent
 		i(104269),	-- Reins of the Thundering Onyx Cloud Serpent
 		i(90655),	-- Reins of the Thundering Ruby Cloud Serpent
 		i(63043),	-- Reins of the Vitreous Stone Drake
-		i(43962),	-- Reins of the White Polar Bear
+		i(43962),	-- White Polar Bear (MOUNT!)
 		i(23720),	-- Riding Turtle (MOUNT!)
 		i(13335),	-- Rivendare's Deathcharger (MOUNT!)
 		i(152789),	-- Shackled Ur'zul
@@ -98,10 +98,10 @@ root("BlackMarket", bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(68824),	-- Swift Zulian Panther
 		i(35513),	-- Swift White Hawkstrider (MOUNT!)
 		i(19902),	-- Swift Zulian Tiger (MOUNT!)
-		i(54068),	-- Wooly White Rhino
+		i(54068),	-- Wooly White Rhino (MOUNT!)
 		i(147805),	-- Valarjar Stormwing
 		i(152790),	-- Vile Fiend
-		i(49286),	-- X-51 Nether-Rocket X-TREME
+		i(49286),	-- X-51 Nether-Rocket X-TREME (MOUNT!)
 	}),
 	n(72057, {	-- Ordos
 		-- Head

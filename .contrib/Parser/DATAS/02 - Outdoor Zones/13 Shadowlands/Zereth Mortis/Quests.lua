@@ -785,7 +785,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			}),
 			-- Drim Questline
 			q(65463, {	-- The Wellspring of the First Ones
-				--["sourceQuests"] = { 64958 },	-- The Forces Gather
+				["sourceQuests"] = { 64958 },	-- The Forces Gather
 				["provider"] = { "n", 181084 },	-- Drim
 				["coord"] = { 61.4, 49.3, ZERETH_MORTIS },
 				["isBreadcrumb"] = true,
@@ -939,7 +939,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["coord"] = { 35, 64.8, ZERETH_MORTIS },
 				["isWeekly"] = true,
 				["g"] = {
-					i(190610, {	-- Tribute of the Enlightened Elders
+					i(191139, {	-- Tribute of the Enlightened Elders
 						i(189462),	-- Schematic: Bronze Helicid
 					}),
 				},
@@ -966,6 +966,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["provider"] = { "n", 181179 },	-- Elder Nirav
 				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
 			}),
+			q(65326, {	-- Circle of Strife
+				["description"] = "This Daily is available after researching Altonian Understanding",
+				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
+				["provider"] = { "n", 180289 },	-- Mai Soh
+				["coord"] = { 58.3, 50, ZERETH_MORTIS },
+			}),
 			q(65256, {	-- Cluck, Cluck, Boom
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
@@ -974,6 +980,28 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(188697),	-- Kinematic Micro-Life Recalibrator
 					i(189436),	-- Schematic: Violent Poultrid
 				},
+			}),
+			q(65255, {	-- Forcing the Cycle
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
+				["provider"] = { "n", 177958 },	-- Firim
+				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
+			}),
+			q(65177, {	-- Fruit of the Bloom
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
+				["provider"] = { "n", 177958 },	-- Firim
+				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
+			}),
+			q(64579, {	-- Hallow Efforts
+				["description"] = "Has Forge-tap for the achievement",
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
+				["provider"] = { "n", 177958 },	-- Firim
+				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
+			}),
+			q(64592, {	-- Historic Protection
+				["description"] = "This Daily is available after researching Altonian Understanding",
+				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
+				["provider"] = { "n", 180289 },	-- Mai Soh
+				["coord"] = { 58.3, 50, ZERETH_MORTIS },
 			}),
 			q(64861, {	-- Kismetric Disc
 				["sourceQuests"] = {
@@ -998,10 +1026,27 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
 			}),
+			q(65325, {	-- Motes of Knowledge
+				["description"] = "This Daily is available after researching Altonian Understanding",
+				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
+				["provider"] = { "n", 180289 },	-- Mai Soh
+				["coord"] = { 58.3, 50, ZERETH_MORTIS },
+			}),
+			q(65445, {	-- Necessary Resourcing
+				["description"] = "This Daily is available after researching Altonian Understanding",
+				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
+				["provider"] = { "n", 184434 },	-- Mai Ber
+				["coord"] = { 58.4, 49.7, ZERETH_MORTIS },
+			}),
 			q(65072, {	-- Not Safe For Work
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 180630 },	-- Elder Amir
 				["coord"] = { 61.4, 51.5, ZERETH_MORTIS },
+			}),
+			q(65264, {	-- Operation: Relocation
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
+				["provider"] = { "n", 181179 },	-- Elder Nirav
+				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
 			}),
 			q(64785, {	-- Overgrown Story
 				["description"] = "Has Containment Trap for the achievement",
@@ -1028,6 +1073,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
 			}),
+			q(65096, {	-- Your Death Or Mine
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
+				["provider"] = { "n", 180630 },	-- Elder Amir
+				["coord"] = { 61.4, 51.5, ZERETH_MORTIS },
+			}),
 			--
 
 
@@ -1041,22 +1091,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["provider"] = { "n", 181179 },	-- Elder Nirav
 				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
 			}),
-			q(65326, {	-- Circle of Strife
-				["description"] = "This Daily is available after researching Altonian Understanding",
-				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
-				["provider"] = { "n", 180289 },	-- Mai Soh
-				["coord"] = { 58.3, 50, ZERETH_MORTIS },
-			}),
 			q(65363, {	-- Dangerous State
 				["description"] = "This Daily is available after researching Altonian Understanding",
 				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
 				["provider"] = { "n", 184434 },	-- Mai Ber
 				["coord"] = { 58.4, 49.7, ZERETH_MORTIS },
-			}),
-			q(65264, {	-- Operation: Relocation
-				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
-				["provider"] = { "n", 181179 },	-- Elder Nirav
-				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
 			}),
 			q(65269, {	-- Obvious Plant
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
@@ -1067,40 +1106,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
-			}),
-			q(65255, {	-- Forcing the Cycle
-				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
-				["provider"] = { "n", 177958 },	-- Firim
-				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
-			}),
-			q(65177, {	-- Fruit of the Bloom
-				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
-				["provider"] = { "n", 177958 },	-- Firim
-				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
-			}),
-			q(64579, {	-- Hallow Efforts
-				["description"] = "Has Forge-tap for the achievement",
-				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
-				["provider"] = { "n", 177958 },	-- Firim
-				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
-			}),
-			q(64592, {	-- Historic Protection
-				["description"] = "This Daily is available after researching Altonian Understanding",
-				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
-				["provider"] = { "n", 180289 },	-- Mai Soh
-				["coord"] = { 58.3, 50, ZERETH_MORTIS },
-			}),
-			q(65325, {	-- Motes of Knowledge
-				["description"] = "This Daily is available after researching Altonian Understanding",
-				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
-				["provider"] = { "n", 180289 },	-- Mai Soh
-				["coord"] = { 58.3, 50, ZERETH_MORTIS },
-			}),
-			q(65445, {	-- Necessary Resourcing
-				["description"] = "This Daily is available after researching Altonian Understanding",
-				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
-				["provider"] = { "n", 184434 },	-- Mai Ber
-				["coord"] = { 58.4, 49.7, ZERETH_MORTIS },
 			}),
 			q(65362, {	-- Not of the Body
 				["description"] = "This Daily is available after researching Altonian Understanding",
@@ -1116,11 +1121,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
 				["provider"] = { "n", 184434 },	-- Mai Ber
 				["coord"] = { 58.4, 49.7, ZERETH_MORTIS },
-			}),
-			q(65096, {	-- Your Death Or Mine
-				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
-				["provider"] = { "n", 180630 },	-- Elder Amir
-				["coord"] = { 61.4, 51.5, ZERETH_MORTIS },
 			}),
 		})),
 	}),
@@ -1149,36 +1149,28 @@ root("HiddenQuestTriggers", m(SHADOWLANDS, {
 		--q(65681),	-- Druid
 
 		-- Gravid Repose
-		q(65330),	-- Interior Locus Arrangement at Gravid Repose
-		q(65337),	-- First Locus arrangement at Gravid Repose
-		q(65339),	-- Second Locus arrangement at Gravid Repose
-		q(65338),	-- Third Locus arrangement at Gravid Repose
-		q(65340),	-- Fourth Locus arrangement at Gravid Repose
-		q(65341),	-- Fifth Locus arrangement at Gravid Repose
-		q(65342),	-- Ultimate Locus arrangement at Gravid Repose
-		q(65457),	-- Unlock all
-
 		q(65376),	-- Entering Gravid Repose First Time
 		q(65377),	-- Entering Gravid Repose First Time
 		q(65464),	-- Entering Gravid Repose First Time
 
-		--[[ Secret Gravid Repose
-		q(65378),
-		q(65343),
-		q(65344),
-		q(65345),
-		q(65346),
-		q(65347),
-		-- Sand Chests
-		q(65494),
-		q(65495),
-		q(65496),
-		q(65497),
-		q(65498),
-		q(65499),
-		q(65500),
-		--]]
-		--
+		q(65330),	-- Interior Locus Arrangement at Gravid Repose
+		q(65337),	-- First Locus Arrangement at Gravid Repose
+		q(65339),	-- Second Locus Arrangement at Gravid Repose
+		q(65338),	-- Third Locus Arrangement at Gravid Repose
+		q(65340),	-- Fourth Locus Arrangement at Gravid Repose
+		q(65341),	-- Fifth Locus Arrangement at Gravid Repose
+		q(65342),	-- Ultimate Locus Arrangement at Gravid Repose
+		q(65457),	-- Unlock all
+
+		q(65378),	-- Starting Secret Teleport System at Gravid Repose
+
+		q(65343),	-- Camber Alcove Arrangement at Gravid Repose
+		q(65346),	-- Dormant Alcove Arrangement at Gravid Repose
+		q(65347),	-- Fulgore Alcove Arrangement at Gravid Repose
+		q(65344),	-- Repertory Alcove Arrangement at Gravid Repose
+		q(65345),	-- Rondure Alcove Arrangement at Gravid Repose
+
+		q(65650),	-- Completing Camber Alcove puzzle
 
 		q(65707),	-- Triggered when killing Phalangax, the Final Grasp
 		q(65558),	-- Triggered when killing Edra, the Will Grazer

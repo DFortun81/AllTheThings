@@ -90,7 +90,7 @@ _.Zones =
 						i(8629),	-- Striped Nightsaber (MOUNT!)
 						i(8631),	-- Striped Frostsaber (MOUNT!)
 						i(8632),	-- Spotted Frostsaber (MOUNT!)
-						i(47100),	-- Reins of the Striped Dawnsaber
+						i(47100),	-- Striped Dawnsaber (MOUNT!)
 						un(REMOVED_FROM_GAME, i(12302)),	-- Ancient Frostsaber (MOUNT!)
 						un(REMOVED_FROM_GAME, i(12303)),	-- Nightsaber (MOUNT!)
 					},

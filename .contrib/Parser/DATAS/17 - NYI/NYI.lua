@@ -20,197 +20,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		},
 	}),
 	tier(SL_TIER, 2.0, {
-		filter(TOYS, {
-			i(190196),	-- Enlightened Hearthstone (TOY!)
-		}),
-		filter(COSMETIC, {
-			-- Cloak
-			i(190931),	-- Cape of the Regal Wanderer
-			i(190929),	-- Ebony Protocloak
-			i(190933),	-- Majestic Oracle's Drape
-			i(190932),	-- Protohide Drape
-			i(190928),	-- Sandtails Drape
-			-- Wep
-			i(190935),	-- Distinguished Blade of Cartel Al
-			i(190937),	-- Edge of the Enlightened
-			i(190934),	-- Standard of the Wandering Brokers
-		}),
-		n(QUESTS, {
+		n(QUESTS, {	-- Darkal Sort?
 			q(64870),	-- Paragon of Enlightened Brokers (I have this completed /Braghe)
 			q(65152),	-- A Hardened Bond (This is Soulbind Quest for Necrolords new one might cross complete?? /Braghe)
 			q(65249),	-- The Jailer's Defeat (A version already exist of this quest maybe the changed? /Braghe)
-		}),
-		-- Shit that probably wont come on live
-		filter(MOUNTS, {
-			i(187644),	-- Vicious Warstalker (A)
-			i(187642),	-- Vicious Warstalker (H)
-			i(187674),	-- [PH] Progenitor Jellyfish (Dark)
-		}),
-		filter(BATTLE_PETS, {
-			pet(3246),	-- Tezpet
-		}),
-		filter(MISC, {
-			i(189452),	-- 9.2 Mount Crafting Bag of Goodies
-			i(189428),	-- 9.2 Pet Battle Playtest Bag of Goodies
-			i(190383),	-- Progenitor Essentia Lattice
-		}),
-		n(ARMOR, {
-			filter(CLOTH, {
-				i(188065),	-- Choral Bands
-				i(188064),	-- Choral Belt
-				i(188063),	-- Choral Breeches
-				i(188062),	-- Choral Cowl
-				i(188061),	-- Choral Gloves
-				i(188066),	-- Choral Mantle
-				i(188060),	-- Choral Shoes
-				i(188059),	-- Choral Tunic
-				--
-				i(190244),	-- Enlightened Researcher's Boots
-				i(190279),	-- Enlightened Researcher's Breeches
-				i(190248),	-- Enlightened Researcher's Cord
-				i(190245),	-- Enlightened Researcher's Grips
-				i(190277),	-- Enlightened Researcher's Handwraps
-				i(190247),	-- Enlightened Researcher's Leggings
-				i(190282),	-- Enlightened Researcher's Mantle
-				i(190246),	-- Enlightened Researcher's Mask
-				i(190275),	-- Enlightened Researcher's Raiment
-				i(190280),	-- Enlightened Researcher's Sash
-				i(190274),	-- Enlightened Researcher's Shawl
-				i(190276),	-- Enlightened Researcher's Treads
-				i(190243),	-- Enlightened Researcher's Tunic
-				i(190278),	-- Enlightened Researcher's Visage
-				i(190281),	-- Enlightened Researcher's Wraps
-				i(190249),	-- Enlightened Researcher's Wristbands
-				--
-				i(189904),	-- Meticulous Architect's Mitts
-			}),
-			filter(LEATHER, {
-				i(188068),	-- Staccato Bands
-				i(188072),	-- Staccato Bracers
-				i(188069),	-- Staccato Cap
-				i(188089),	-- Staccato Jerkin
-				i(188070),	-- Staccato Pants
-				i(188090),	-- Staccato Pauldrons
-				i(188067),	-- Staccato Treads
-				i(188071),	-- Staccato Waistband
-				--
-				i(190254),	-- Unbound Explorer's Belt
-				i(190255),	-- Unbound Explorer's Bindings
-				i(190288),	-- Unbound Explorer's Bracers
-				i(190272),	-- Unbound Explorer's Chestguard
-				i(190285),	-- Unbound Explorer's Cowl
-				i(190306),	-- Unbound Explorer's Epaulets
-				i(190250),	-- Unbound Explorer's Footpads
-				i(190284),	-- Unbound Explorer's Gloves
-				i(190251),	-- Unbound Explorer's Handlers
-				i(190252),	-- Unbound Explorer's Headgear
-				i(190305),	-- Unbound Explorer's Jerkin
-				i(190253),	-- Unbound Explorer's Legguards
-				i(190273),	-- Unbound Explorer's Shoulderguards
-				i(190283),	-- Unbound Explorer's Striders
-				i(190286),	-- Unbound Explorer's Trousers
-				i(190287),	-- Unbound Explorer's Waistwrap
-				--
-				i(189917),	-- Constellation Master's Smock
-			}),
-			filter(MAIL, {
-				i(188074),	-- Anthemic Boots
-				i(188079),	-- Anthemic Clasp
-				i(188077),	-- Anthemic Cuisses
-				i(188075),	-- Anthemic Grasps
-				i(188073),	-- Anthemic Hauberk
-				i(188076),	-- Anthemic Helm
-				i(188078),	-- Anthemic Pauldrons
-				i(188080),	-- Anthemic Wristlinks
-				--
-				i(190295),	-- Transcendent Vagabond's Chain
-				i(190263),	-- Transcendent Vagabond's Clasps
-				i(190259),	-- Transcendent Vagabond's Coif
-				i(190289),	-- Transcendent Vagabond's Cuirass
-				i(190257),	-- Transcendent Vagabond's Footguards
-				i(190293),	-- Transcendent Vagabond's Greaves
-				i(190291),	-- Transcendent Vagabond's Grips
-				i(190258),	-- Transcendent Vagabond's Handguards
-				i(190292),	-- Transcendent Vagabond's Helm
-				i(190260),	-- Transcendent Vagabond's Pants
-				i(190256),	-- Transcendent Vagabond's Scales
-				i(190261),	-- Transcendent Vagabond's Shoulderpads
-				i(190294),	-- Transcendent Vagabond's Spaulders
-				i(190290),	-- Transcendent Vagabond's Striders
-				i(190262),	-- Transcendent Vagabond's Waistguard
-				i(190296),	-- Transcendent Vagabond's Wristguards
-				--
-				i(189943),	-- Greaves of Cosmic Designs
-			}),
-			filter(PLATE, {
-				i(188082),	-- Harmonium Armor
-				i(188087),	-- Harmonium Belt
-				i(188088),	-- Harmonium Binders
-				i(188083),	-- Harmonium Boots
-				i(188084),	-- Harmonium Grips
-				i(188085),	-- Harmonium Pillars
-				i(188086),	-- Harmonium Shoulderplates
-				i(188081),	-- Harmonium Visor
-				--
-				i(190298),	-- Eternal Warder's Breastplate
-				i(190303),	-- Eternal Warder's Buckle
-				i(190265),	-- Eternal Warder's Chestplate
-				i(190300),	-- Eternal Warder's Crushers
-				i(190268),	-- Eternal Warder's Cuisses
-				i(190297),	-- Eternal Warder's Faceplate
-				i(190267),	-- Eternal Warder's Gauntlets
-				i(190270),	-- Eternal Warder's Girdle
-				i(190299),	-- Eternal Warder's Greaves
-				i(190301),	-- Eternal Warder's Legplates
-				i(190269),	-- Eternal Warder's Pauldrons
-				i(190266),	-- Eternal Warder's Sabatons
-				i(190302),	-- Eternal Warder's Shoulderplates
-				i(190271),	-- Eternal Warder's Vambraces
-				i(190264),	-- Eternal Warder's Visor
-				i(190304),	-- Eternal Warder's Wristplates
-			}),
-			--
-			i(188110),	-- Cypher Attunement Chestpiece
-			i(188117),	-- Cypher Attunement Cloak
-			i(188109),	-- Cypher Attunement Feet
-			i(188116),	-- Cypher Attunement Hands
-			i(188114),	-- Cypher Attunement Head
-			i(188115),	-- Cypher Attunement Legs
-			i(188111),	-- Cypher Attunement Neck
-			i(188112),	-- Cypher Attunement Ring
-			i(188107),	-- Cypher Attunement Shoulder
-			i(188108),	-- Cypher Attunement Waist
-			i(188113),	-- Cypher Attunement Wrist
-			--
-			i(188105),	-- [PH] Copy Fine Razorwing Quill
-			i(188057),	-- [PH] Copy Harmonic Crowd Breaker
-			i(188052),	-- [PH] Copy Iron Maiden's Toolkit
-			i(188092),	-- [PH] Copy Korthian Anima Vessel
-			i(188058),	-- [PH] Copy Tome of Insight
-			i(188103),	-- [PH] Copy Vault Attendant's Cape
-			i(184231),	-- 9.0 Covenant - Bastion - Weapon - Warglaive AGI - Blue
-			i(184232),	-- 9.0 Covenant - Bastion - Weapon - Warglaive AGI - Copper
-			i(184233),	-- 9.0 Covenant - Bastion - Weapon - Warglaive AGI - Dark
-			i(184234),	-- 9.0 Covenant - Bastion - Weapon - Warglaive AGI - Gold
-			i(184235),	-- 9.0 Covenant - Bastion - Weapon - Warglaive AGI - Pink
-			i(188095),	-- [PH] Copy Korthian Anima Slicer
-			i(188094),	-- [PH] Copy Korthian Attendant's Blade
-			i(188101),	-- [PH] Copy Korthian Attendant's Cane
-			i(188100),	-- [PH] Copy Korthian Attendant's Scepter
-			i(188093),	-- [PH] Copy Korthian Energy Bow
-			i(188091),	-- [PH] Copy Korthian Keeper's Buckler
-			i(188097),	-- [PH] Copy Korthian Protector's Warhammer
-			i(188096),	-- [PH] Copy Vault Guardian's Decapitator
-			i(188102),	-- [PH] Copy Vault Guardian's Warglaive
-			i(188098),	-- [PH] Copy Vault Patroller's Mace
-			i(188104),	-- [PH] Copy Vault Patroller's Slicer
-			i(188099),	-- [PH] Copy Vault Patroller's Staff
-
-			i(184123),	-- Sinful Gladiator's Cape
-			i(184145),	-- Sinful Aspirant's Greatcloak
-		}),
-		n(WEAPONS, {
-			i(189996),	-- Elegantly Balanced Axe
+			q(64649),	-- A Mountain of Work to Do
 		}),
 	}),
 	filter(BATTLE_PETS, {
@@ -301,6 +115,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(180813),	-- Silver Teroclaw (Fledgling Teroclaw is the equivalent wild pet in game, item was never used)
 		i(183853),	-- Sinfall Screecher
 		i(183714),	-- Swamp Reed (Withering Creeper is the equivalent wild pet in game, item was never used)
+		tier(SL_TIER, {
+			tier(SL_TIER, 2.0, {
+				pet(3246),	-- Tezpet
+			}),
+		}),
 	}),
 	filter(MOUNTS, {
 		tier(CLASSIC_TIER, {	-- Wowhead is a big weird regarding classic items
@@ -464,20 +283,88 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 		}),
 		tier(WOTLK_TIER, {
+			tier(WOTLK_TIER, 0.1, {
+				i(43964, {	-- Black Polar Bear / Reins of the Black Polar Bear (MOUNT!)
+					["modelID"] = 27659,
+				}),
+				mount(60136, {	-- Grand Caravan Mammoth (MOUNT!)
+					["modelID"] = 27237
+				}),
+				mount(60140, {	-- Grand Caravan Mammoth (MOUNT!)
+					["modelID"] = 27238
+				}),
+			}),
 			tier(WOTLK_TIER, 0.2, {
-				i(44557),	-- Swift Ebonweave Carpet (NOT IN GAME)
-				i(44556),	-- Swift Spellfire Carpet (NOT IN GAME)
-				i(44555),	-- Swift Mooncloth Carpet (NOT IN GAME)
+				i(44555, {	-- Swift Mooncloth Carpet / Swift Mooncloth Carpet (NOT IN GAME) (MOUNT!)
+					["modelID"] = 44555,
+				}),
+				i(44557, {	-- Swift Shadoweave Carpet / Swift Ebonweave Carpet (NOT IN GAME) (MOUNT!)
+					["modelID"] = 44557,
+				}),
+				i(44556, {	-- Swift Spellfire Carpet / Swift Spellfire Carpet (NOT IN GAME) (MOUNT!)
+					["modelID"] = 44556,
+				}),
+			}),
+			tier(WOTLK_TIER, 0.3, {
+				i(43963, {	-- Brown Polar Bear / Reins of the Brown Polar Bear (MOUNT!)
+					["modelID"] = 27660,
+				}),
 			}),
 			tier(WOTLK_TIER, 1.0, {
-				i(46101),	-- Blue Skeletal Warhorse
+				i(46101, {	-- Blue Skeletal Warhorse / Blue Skeletal Warhorse (MOUNT!)
+					["modelID"] = 10718,
+				}),
 			}),
-		}),
-		tier(CATA_TIER, {
-			tier(CATA_TIER, 0.1, {
-				i(43963),	-- Reins of the Brown Polar Bear
-				i(43964),	-- Reins of the Black Polar Bear
+			tier(WOTLK_TIER, 1.2, {
+				i(46755, {	-- Great Golden Kodo / Great Golden Kodo (MOUNT!)
+					["modelID"] = 28556,
+					["_drop"] = { "mountID" },
+					--["collectible"] = true
+				}),
+				i(46756, {	-- Great Red Elekk / Great Red Elekk (MOUNT!)
+					["modelID"] = 28606,
+				}),
+				i(46757, {	-- Swift Burgundy Wolf / Swift Burgundy Wolf (MOUNT!)
+					["modelID"] = 14335,
+				}),
+				i(46758, {	-- Swift Gray Steed / Swift Gray Steed (MOUNT!)
+					["modelID"] = 29043,
+				}),
+				i(46759, {	-- Swift Moonsaber / Swift Moonsaber (MOUNT!)
+					["modelID"] = 14333,
+				}),
+				i(46760, {	-- Swift Purple Raptor / Swift Purple Raptor (MOUNT!)
+					["modelID"] = 14343,
+				}),
+				i(46761, {	-- Swift Red Hawkstrider / Swift Red Hawkstrider (MOUNT!)
+					["modelID"] = 28607,
+				}),
+				i(46762, {	-- Swift Violet Ram / Swift Violet Ram (MOUNT!)
+					["modelID"] = 28612,
+				}),
+				i(46763, {	-- Turbostride / Turbostrider (MOUNT!)
+					["modelID"] = 14375,
+				}),
+				i(46764, {	-- White Skeletal Warhorse / White Skeletal Warhorse (MOUNT!)
+					["modelID"] = 28605
+				}),
 			}),
+			tier(WOTLK_TIER, 1.3, {
+				mount(66122, {	-- Magic Rooster (MOUNT!)
+					["modelID"] = 29344,
+				}),
+				mount(66123, {	-- Magic Rooster (MOUNT!)
+					["modelID"] = 29378,
+				}),
+				mount(66124, {	-- Magic Rooster (MOUNT!)
+					["modelID"] = 29379,
+				}),
+			}),
+			tier(WOTLK_TIER, {
+				mount(75387, {	-- Tiny Mooncloth Carpet (MOUNT!)
+					["modelID"] = 31837,
+				}),
+			})
 		}),
 		tier(MOP_TIER, {
 			tier(MOP_TIER, 0.1, {
@@ -538,7 +425,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(163186),	-- Tempestuous Skystallion (Old 400 Mounts Reward)
 			}),
 			tier(BFA_TIER, 2.0, {
-				i(168673),	-- Keys to the Silver Mono-Wheel (No mount in yet)
+				i(168673, {	-- Keys to the Silver Mono-Wheel (No mount in yet)
+					--["modelID"] = ,
+				}),
 			}),
 		}),
 		tier(SL_TIER, {
@@ -550,6 +439,14 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(186491),	-- Spring Wilderling Harness
 				i(186639),	-- Pilfered Gearglider
 				i(186640),	-- Silver Gearglider
+			}),
+			tier(SL_TIER, 2.0, {
+				mount(356802, {		-- Holy Lightstrider
+					["modelID"] = 101577,
+				}),
+				i(187644),	-- Vicious Warstalker (A)
+				i(187642),	-- Vicious Warstalker (H)
+				i(187674),	-- [PH] Progenitor Jellyfish (Dark)
 			}),
 		}),
 	}),
@@ -703,6 +600,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(187958),	-- PH - Banner of the Opportune (TOY!)
 				i(187959),	-- PH - Banner of the Opportune (TOY!)
 				i(188695),	-- Summer Cranial Skillet (TOY!) (Midsummer)
+			}),
+			tier(SL_TIER, 2.0, {
+				i(190196),	-- Enlightened Hearthstone (TOY!)
 			}),
 		}),
 	}),
@@ -2810,6 +2710,18 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(182306),	-- Monster Mantle
 			i(186093),	-- Shaded Spectacles
 			i(187914),	-- Captain Noteo's Unused Eye Patch
+			tier(SL_TIER, 2.0, {
+				-- Cloak
+				i(190931),	-- Cape of the Regal Wanderer
+				i(190929),	-- Ebony Protocloak
+				i(190933),	-- Majestic Oracle's Drape
+				i(190932),	-- Protohide Drape
+				i(190928),	-- Sandtails Drape
+				-- Wep
+				i(190935),	-- Distinguished Blade of Cartel Al
+				i(190937),	-- Edge of the Enlightened
+				i(190934),	-- Standard of the Wandering Brokers
+			}),
 		}),
 		filter(SHIRTS, {
 			i(52548),	-- Initiate's Tunic
@@ -3036,6 +2948,163 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(177157),	-- Bijou of the Golden City
 			i(177158),	-- Enchanted Devilsaur Claw
 			i(177166),	-- Lucky Braid
+		}),
+		tier(SL_TIER, {
+			tier(SL_TIER, 2.0, {
+				filter(CLOTH, {
+					i(188065),	-- Choral Bands
+					i(188064),	-- Choral Belt
+					i(188063),	-- Choral Breeches
+					i(188062),	-- Choral Cowl
+					i(188061),	-- Choral Gloves
+					i(188066),	-- Choral Mantle
+					i(188060),	-- Choral Shoes
+					i(188059),	-- Choral Tunic
+					--
+					i(190244),	-- Enlightened Researcher's Boots
+					i(190279),	-- Enlightened Researcher's Breeches
+					i(190248),	-- Enlightened Researcher's Cord
+					i(190245),	-- Enlightened Researcher's Grips
+					i(190277),	-- Enlightened Researcher's Handwraps
+					i(190247),	-- Enlightened Researcher's Leggings
+					i(190282),	-- Enlightened Researcher's Mantle
+					i(190246),	-- Enlightened Researcher's Mask
+					i(190275),	-- Enlightened Researcher's Raiment
+					i(190280),	-- Enlightened Researcher's Sash
+					i(190274),	-- Enlightened Researcher's Shawl
+					i(190276),	-- Enlightened Researcher's Treads
+					i(190243),	-- Enlightened Researcher's Tunic
+					i(190278),	-- Enlightened Researcher's Visage
+					i(190281),	-- Enlightened Researcher's Wraps
+					i(190249),	-- Enlightened Researcher's Wristbands
+					--
+					i(189904),	-- Meticulous Architect's Mitts
+				}),
+				filter(LEATHER, {
+					i(188068),	-- Staccato Bands
+					i(188072),	-- Staccato Bracers
+					i(188069),	-- Staccato Cap
+					i(188089),	-- Staccato Jerkin
+					i(188070),	-- Staccato Pants
+					i(188090),	-- Staccato Pauldrons
+					i(188067),	-- Staccato Treads
+					i(188071),	-- Staccato Waistband
+					--
+					i(190254),	-- Unbound Explorer's Belt
+					i(190255),	-- Unbound Explorer's Bindings
+					i(190288),	-- Unbound Explorer's Bracers
+					i(190272),	-- Unbound Explorer's Chestguard
+					i(190285),	-- Unbound Explorer's Cowl
+					i(190306),	-- Unbound Explorer's Epaulets
+					i(190250),	-- Unbound Explorer's Footpads
+					i(190284),	-- Unbound Explorer's Gloves
+					i(190251),	-- Unbound Explorer's Handlers
+					i(190252),	-- Unbound Explorer's Headgear
+					i(190305),	-- Unbound Explorer's Jerkin
+					i(190253),	-- Unbound Explorer's Legguards
+					i(190273),	-- Unbound Explorer's Shoulderguards
+					i(190283),	-- Unbound Explorer's Striders
+					i(190286),	-- Unbound Explorer's Trousers
+					i(190287),	-- Unbound Explorer's Waistwrap
+					--
+					i(189917),	-- Constellation Master's Smock
+				}),
+				filter(MAIL, {
+					i(188074),	-- Anthemic Boots
+					i(188079),	-- Anthemic Clasp
+					i(188077),	-- Anthemic Cuisses
+					i(188075),	-- Anthemic Grasps
+					i(188073),	-- Anthemic Hauberk
+					i(188076),	-- Anthemic Helm
+					i(188078),	-- Anthemic Pauldrons
+					i(188080),	-- Anthemic Wristlinks
+					--
+					i(190295),	-- Transcendent Vagabond's Chain
+					i(190263),	-- Transcendent Vagabond's Clasps
+					i(190259),	-- Transcendent Vagabond's Coif
+					i(190289),	-- Transcendent Vagabond's Cuirass
+					i(190257),	-- Transcendent Vagabond's Footguards
+					i(190293),	-- Transcendent Vagabond's Greaves
+					i(190291),	-- Transcendent Vagabond's Grips
+					i(190258),	-- Transcendent Vagabond's Handguards
+					i(190292),	-- Transcendent Vagabond's Helm
+					i(190260),	-- Transcendent Vagabond's Pants
+					i(190256),	-- Transcendent Vagabond's Scales
+					i(190261),	-- Transcendent Vagabond's Shoulderpads
+					i(190294),	-- Transcendent Vagabond's Spaulders
+					i(190290),	-- Transcendent Vagabond's Striders
+					i(190262),	-- Transcendent Vagabond's Waistguard
+					i(190296),	-- Transcendent Vagabond's Wristguards
+					--
+					i(189943),	-- Greaves of Cosmic Designs
+				}),
+				filter(PLATE, {
+					i(188082),	-- Harmonium Armor
+					i(188087),	-- Harmonium Belt
+					i(188088),	-- Harmonium Binders
+					i(188083),	-- Harmonium Boots
+					i(188084),	-- Harmonium Grips
+					i(188085),	-- Harmonium Pillars
+					i(188086),	-- Harmonium Shoulderplates
+					i(188081),	-- Harmonium Visor
+					--
+					i(190298),	-- Eternal Warder's Breastplate
+					i(190303),	-- Eternal Warder's Buckle
+					i(190265),	-- Eternal Warder's Chestplate
+					i(190300),	-- Eternal Warder's Crushers
+					i(190268),	-- Eternal Warder's Cuisses
+					i(190297),	-- Eternal Warder's Faceplate
+					i(190267),	-- Eternal Warder's Gauntlets
+					i(190270),	-- Eternal Warder's Girdle
+					i(190299),	-- Eternal Warder's Greaves
+					i(190301),	-- Eternal Warder's Legplates
+					i(190269),	-- Eternal Warder's Pauldrons
+					i(190266),	-- Eternal Warder's Sabatons
+					i(190302),	-- Eternal Warder's Shoulderplates
+					i(190271),	-- Eternal Warder's Vambraces
+					i(190264),	-- Eternal Warder's Visor
+					i(190304),	-- Eternal Warder's Wristplates
+				}),
+				--
+				i(188110),	-- Cypher Attunement Chestpiece
+				i(188117),	-- Cypher Attunement Cloak
+				i(188109),	-- Cypher Attunement Feet
+				i(188116),	-- Cypher Attunement Hands
+				i(188114),	-- Cypher Attunement Head
+				i(188115),	-- Cypher Attunement Legs
+				i(188111),	-- Cypher Attunement Neck
+				i(188112),	-- Cypher Attunement Ring
+				i(188107),	-- Cypher Attunement Shoulder
+				i(188108),	-- Cypher Attunement Waist
+				i(188113),	-- Cypher Attunement Wrist
+				--
+				i(188105),	-- [PH] Copy Fine Razorwing Quill
+				i(188057),	-- [PH] Copy Harmonic Crowd Breaker
+				i(188052),	-- [PH] Copy Iron Maiden's Toolkit
+				i(188092),	-- [PH] Copy Korthian Anima Vessel
+				i(188058),	-- [PH] Copy Tome of Insight
+				i(188103),	-- [PH] Copy Vault Attendant's Cape
+				i(184231),	-- 9.0 Covenant - Bastion - Weapon - Warglaive AGI - Blue
+				i(184232),	-- 9.0 Covenant - Bastion - Weapon - Warglaive AGI - Copper
+				i(184233),	-- 9.0 Covenant - Bastion - Weapon - Warglaive AGI - Dark
+				i(184234),	-- 9.0 Covenant - Bastion - Weapon - Warglaive AGI - Gold
+				i(184235),	-- 9.0 Covenant - Bastion - Weapon - Warglaive AGI - Pink
+				i(188095),	-- [PH] Copy Korthian Anima Slicer
+				i(188094),	-- [PH] Copy Korthian Attendant's Blade
+				i(188101),	-- [PH] Copy Korthian Attendant's Cane
+				i(188100),	-- [PH] Copy Korthian Attendant's Scepter
+				i(188093),	-- [PH] Copy Korthian Energy Bow
+				i(188091),	-- [PH] Copy Korthian Keeper's Buckler
+				i(188097),	-- [PH] Copy Korthian Protector's Warhammer
+				i(188096),	-- [PH] Copy Vault Guardian's Decapitator
+				i(188102),	-- [PH] Copy Vault Guardian's Warglaive
+				i(188098),	-- [PH] Copy Vault Patroller's Mace
+				i(188104),	-- [PH] Copy Vault Patroller's Slicer
+				i(188099),	-- [PH] Copy Vault Patroller's Staff
+
+				i(184123),	-- Sinful Gladiator's Cape
+				i(184145),	-- Sinful Aspirant's Greatcloak
+			})
 		}),
 	}),
 	n(WEAPONS, {
@@ -3385,6 +3454,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			-- ItemID/Retrieving
 			i(165682),	-- Fallback Weapon - Warglaives
 		}),
+		tier(SL_TIER, {
+			tier(SL_TIER, 2.0, {
+				i(189996),	-- Elegantly Balanced Axe
+			}),
+		}),
 	}),
 	n(CLASSES, {
 		cl(DEMONHUNTER, {
@@ -3723,6 +3797,13 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(55217),	-- Aqua Transform
 		i(55218),	-- Rocky Transform
 		i(55219),	-- Vaporous Transform
+		tier(SL_TIER, {
+			tier(SL_TIER, 2.0, {
+				i(189452),	-- 9.2 Mount Crafting Bag of Goodies
+				i(189428),	-- 9.2 Pet Battle Playtest Bag of Goodies
+				i(190383),	-- Progenitor Essentia Lattice
+			}),
+		}),
 	}),
 }));
 

@@ -201,8 +201,8 @@ _.Craftables =
 		}),
 		prof(ENGINEERING, {
 			filter(MOUNTS, {
-				i(41508),	-- Mechano-Hog*
-				i(44413),	-- Mekgineer's Chopper*
+				i(41508),	-- Mechano-Hog (MOUNT!)
+				i(44413),	-- Mekgineer's Chopper (MOUNT!)
 			}),
 			filter(TOYS, {
 				i(40895),	-- Gnomish X-Ray Specs (TOY!)
@@ -585,9 +585,9 @@ _.Craftables =
 				i(49892),	-- Lightweave Leggings
 			}),
 			filter(MOUNTS, {
-				i(44554),	-- Flying Carpet
-				i(54797),	-- Frosty Flying Carpet
-				i(44558),	-- Magnificent Flying Carpet
+				i(44554),	-- Flying Carpet (MOUNT!)
+				i(54797),	-- Frosty Flying Carpet (MOUNT!)
+				i(44558),	-- Magnificent Flying Carpet (MOUNT!)
 			}),
 			n(SHOULDER, {
 				i(41550),	-- Duskweave Shoulders

@@ -30,9 +30,17 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 				ach(15418),	-- The Grand Design
 			}),
 			n(FLIGHT_PATHS, {
-				fp(2712, {	-- Immortal Hearth
-					["name"] = "Immortal Hearth",
-					["cr"] = 182431,	-- Ancient Translocator
+				fp(2715, {	-- Ephemeral Plains Alpha
+					["name"] = "Ephemeral Plains Alpha",
+					["cr"] = 182522,	-- Ancient Translocator
+				}),
+				fp(2716, {	-- Ephemeral Plains Omega
+					["name"] = "Ephemeral Plains Omega",
+					["cr"] = 182544,	-- Ancient Translocator
+				}),
+				fp(2731, {	-- Domination's Grasp
+					["name"] = "Domination's Grasp",
+					["cr"] = 184354,	-- Ancient Translocator
 				}),
 				fp(2713, {	-- Genesis Cradle Alpha
 					["name"] = "Genesis Cradle Alpha",
@@ -40,11 +48,15 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 				}),
 				fp(2714, {	-- Genesis Cradle Beta
 					["name"] = "Genesis Cradle Beta",
+					["cr"] = 185200,	-- Ancient Translocator
+				}),
+				fp(2757, {	-- Genesis Cradle Omega
+					["name"] = "Genesis Cradle Omega",
 					["cr"] = 182489,	-- Ancient Translocator
 				}),
-				fp(2715, {	-- Ephemeral Plains Alpha
-					["name"] = "Ephemeral Plains Alpha",
-					["cr"] = 182522,	-- Ancient Translocator
+				fp(2712, {	-- Immortal Hearth
+					["name"] = "Immortal Hearth",
+					["cr"] = 182431,	-- Ancient Translocator
 				}),
 			}),
 			n(RARES, {
@@ -177,7 +189,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 							},
 						}),
 						e(2463, {	-- Halondrus the Reclaimer
-							["crs"] = { 184915 },	-- Halondrus the Reclaimer
+							["crs"] = { 180906 },	-- Halondrus the Reclaimer
 							["g"] = {
 								crit(7, {	-- Halondrus the Reclaimer
 									["achievementID"] = 15417,	-- Sepulcher of the First Ones
@@ -308,7 +320,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					["collectible"] = false,
 					["g"] = {
 						e(2469, {	-- Anduin Wrynn
-							["crs"] = { 184232 },	-- Anduin Wrynn
+							["crs"] = { 181954 },	-- Anduin Wrynn
 							["g"] = {
 								crit(8, {	-- Anduin Wrynn
 									["achievementID"] = 15417,	-- Sepulcher of the First Ones
@@ -347,7 +359,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						e(2457, {	-- Lords of Dread
 							["crs"] = {
 								181398,	-- Mal'Ganis <The Eternal>
-								181334,	-- Kin'tessa
+								181399,	-- Kin'tessa <The Beguiler>
 							},
 							["g"] = {
 								crit(9, {	-- Lords of Dread
@@ -626,7 +638,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					},
 				}),
 				e(2463, {	-- Halondrus the Reclaimer
-					["crs"] = { 184915 },	-- Halondrus the Reclaimer
+					["crs"] = { 180906 },	-- Halondrus the Reclaimer
 					["g"] = {
 						crit(7, {	-- Halondrus the Reclaimer
 							["achievementID"] = 15417,	-- Sepulcher of the First Ones
@@ -664,7 +676,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					},
 				}),
 				e(2469, {	-- Anduin Wrynn
-					["crs"] = { 184232 },	-- Anduin Wrynn
+					["crs"] = { 181954 },	-- Anduin Wrynn
 					["g"] = {
 						crit(8, {	-- Anduin Wrynn
 							["achievementID"] = 15417,	-- Sepulcher of the First Ones
@@ -705,7 +717,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 				e(2457, {	-- Lords of Dread
 					["crs"] = {
 						181398,	-- Mal'Ganis <The Eternal>
-						181334,	-- Kin'tessa
+						181399,	-- Kin'tessa <The Beguiler>
 					},
 					["g"] = {
 						crit(9, {	-- Lords of Dread
@@ -980,7 +992,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					},
 				}),
 				e(2463, {	-- Halondrus the Reclaimer
-					["crs"] = { 184915 },	-- Halondrus the Reclaimer
+					["crs"] = { 180906 },	-- Halondrus the Reclaimer
 					["g"] = {
 						crit(7, {	-- Halondrus the Reclaimer
 							["achievementID"] = 15478,	-- Heroic: Sepulcher of the First Ones
@@ -1017,7 +1029,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					},
 				}),
 				e(2469, {	-- Anduin Wrynn
-					["crs"] = { 184232 },	-- Anduin Wrynn
+					["crs"] = { 181954 },	-- Anduin Wrynn
 					["g"] = {
 						crit(8, {	-- Anduin Wrynn
 							["achievementID"] = 15478,	-- Heroic: Sepulcher of the First Ones
@@ -1058,7 +1070,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 				e(2457, {	-- Lords of Dread
 					["crs"] = {
 						181398,	-- Mal'Ganis <The Eternal>
-						181334,	-- Kin'tessa
+						181399,	-- Kin'tessa <The Beguiler>
 					},
 					["g"] = {
 						crit(9, {	-- Lords of Dread
@@ -1315,7 +1327,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					},
 				}),
 				e(2463, {	-- Halondrus the Reclaimer
-					["crs"] = { 184915 },	-- Halondrus the Reclaimer
+					["crs"] = { 180906 },	-- Halondrus the Reclaimer
 					["g"] = {
 						ach(15485),	-- Mythic: Halondrus
 						i(188264),	-- Earthbreaker's Impact
@@ -1350,7 +1362,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					},
 				}),
 				e(2469, {	-- Anduin Wrynn
-					["crs"] = { 184232 },	-- Anduin Wrynn
+					["crs"] = { 181954 },	-- Anduin Wrynn
 					["g"] = {
 						ach(15486),	-- Mythic: Anduin Wrynn
 						i(189835),	-- Anduin's Princely Vestments
@@ -1389,7 +1401,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 				e(2457, {	-- Lords of Dread
 					["crs"] = {
 						181398,	-- Mal'Ganis <The Eternal>
-						181334,	-- Kin'tessa
+						181399,	-- Kin'tessa <The Beguiler>
 					},
 					["g"] = {
 						ach(15487),	-- Mythic: Lords of Dread

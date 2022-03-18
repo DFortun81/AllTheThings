@@ -2504,7 +2504,7 @@ root("Zones", m(KALIMDOR, {
 					i(1132),	-- Timber Wolf (MOUNT!)
 					i(5665),	-- Dire Wolf (MOUNT!)
 					i(5668),	-- Brown Wolf (MOUNT!)
-					i(46099),	-- Horn of the Black Wolf
+					i(46099),	-- Black Wolf (MOUNT!)
 					un(REMOVED_FROM_GAME, i(12351)),	-- Arctic Wolf (MOUNT!) -- Unable to 100% verify this source.
 					un(REMOVED_FROM_GAME, i(12330)),	-- Red Wolf (MOUNT!) -- Unable to 100% verify this source.
 				},

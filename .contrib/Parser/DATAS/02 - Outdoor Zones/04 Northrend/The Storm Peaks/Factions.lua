@@ -72,12 +72,12 @@ _.Zones =
 								i(42184),	-- Pattern: Glacial Bag
 								i(44510),	-- Pattern: Mammoth Mining Bag
 								ach(2083, {	-- Grand Ice Mammoth
-									i(43961),	-- Reins of the Grand Ice Mammoth Mount (A)
-									i(44086),	-- Reins of the Grand Ice Mammoth Mount (H)
+									i(43961),	-- Grand Ice Mammoth (A) (MOUNT!)
+									i(44086),	-- Grand Ice Mammoth (H) (MOUNT!)
 								}),
 								ach(2082, {	-- Ice Mammoth
-									i(43958),	-- Reins of the Ice Mammoth Mount (A)
-									i(44080),	-- Reins of the Ice Mammoth Mount (H)
+									i(43958),	-- Ice Mammoth (A) (MOUNT!)
+									i(44080),	-- Ice Mammoth (H) (MOUNT!)
 								}),
 								i(44192),	-- Stalactite Chopper
 								i(44190),	-- Spaulders of Frozen Knives

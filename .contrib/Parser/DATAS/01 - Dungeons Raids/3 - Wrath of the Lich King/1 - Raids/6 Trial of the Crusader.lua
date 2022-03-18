@@ -1232,14 +1232,14 @@ _.Instances = { tier(WOTLK_TIER, {
 						un(REMOVED_FROM_GAME, title(136)),	-- the Argent Defender
 					}),
 					a(ach(4156, {	-- A Tribute to Immortality
-						un(REMOVED_FROM_GAME, a(i(49096))),		-- Crusader's White Warhorse
+						un(REMOVED_FROM_GAME, a(i(49096))),		-- Crusader's White Warhorse (MOUNT!)
 					})),
 					h(ach(4079, {	-- A Tribute to Immortality
-						un(REMOVED_FROM_GAME, h(i(49098))),		-- Crusader's Black Warhorse
+						un(REMOVED_FROM_GAME, h(i(49098))),		-- Crusader's Black Warhorse (MOUNT!)
 					})),
 					ach(3810, {		-- A Tribute to Insanity (10 Player)
-						un(REMOVED_FROM_GAME, a(i(49044))),		-- Swift Alliance Steed
-						un(REMOVED_FROM_GAME, h(i(49046))),		-- Swift Horde Wolf
+						un(REMOVED_FROM_GAME, a(i(49044))),		-- Swift Alliance Steed (MOUNT!)
+						un(REMOVED_FROM_GAME, h(i(49046))),		-- Swift Horde Wolf (MOUNT!)
 						un(REMOVED_FROM_GAME, h(i(48668))),		-- Cloak of Serrated Blades
 						un(REMOVED_FROM_GAME, a(i(48673))),		-- Cloak of the Silver Covenant
 						un(REMOVED_FROM_GAME, h(i(48669))),		-- Cloak of the Triumphant Combatant

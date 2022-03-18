@@ -251,7 +251,7 @@ _.Zones =
 								i(44111),	-- Gold Star Spaulders
 								i(39878, {	-- Mysterious Egg
 									i(39883, {	-- Cracked Egg
-										i(44707),	-- Reins of the Green Proto-Drake (MOUNT!)
+										i(44707),	-- Green Proto-Drake (MOUNT!)
 										i(39898),	-- Cobra Hatchling (PET!)
 										i(44721),	-- Proto-Drake Whelp (PET!)
 										i(39896),	-- Tickbird Hatchling (PET!)

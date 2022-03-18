@@ -22,7 +22,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				ach(15509),	-- Tales of the Exile
 			}),
 			n(184750, {	-- Core Configuration Console
-				["description"] = "This was never tested on the PTR",
+				["description"] = "These Configuration of Pocopoc was never found on the PTR. The search continues on live servers",
 				["g"] = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(189707),	-- Pocopoc's Bronze and Gold Body
 					i(189708),	-- Pocopoc's Beryllium and Silver Body
@@ -180,7 +180,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				}),
 				q(64647, {	-- Strange Gears
 					["sourceQuests"] = { 64645 },	-- Moment of Truth
-					--["provider"] = Automa on the Floor
+					["provider"] = { "o", 375021 },	-- Perished Automa
 					["coord"] = { 29.3, 15.3, 2027 },
 				}),
 				q(64648, {	-- Reap What We Have Sown
@@ -193,15 +193,18 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					-- TODO: maybe symlink these because they come from multiple quests?
 					["g"] = {
 						i(190985),	-- Crystallic Cryptic Mask
-						i(190983),	-- Scouring Cryptic Mask
+						i(190991),	-- Crystallic Enigmatic Epaulettes
+						i(190997),	-- Crystallic Numerus Crown
+						i(190979),	-- Crystallic Oracular Smock
 						i(190984),	-- Nova Cryptic Mask
+						i(190990),	-- Nova Enigmatic Epaulettes
+						i(190996),	-- Nova Numerus Crown
+						i(190978),	-- Nova Oracular Smock
+						i(190983),	-- Scouring Cryptic Mask
+						i(190989),	-- Scouring Enigmatic Epaulettes
+						i(190995),	-- Scouring Numerus Crown
+						i(190977),	-- Scouring Oracular Smock
 					},
-				}),
-				q(64649, {	-- A Mountain of Work to Do
-					["description"] = "Unable to accept this quest atm on ptr... but still showing mark on map.",
-					["sourceQuests"] = { 64648 },	-- Reap What We Have Sown
-					--["provider"] = { "n", 180797 },	-- Koh Shira
-					--["coord"] = { 63.2, 73.1, ZERETH_MORTIS },
 				}),
 			}),
 			n(TREASURES, {

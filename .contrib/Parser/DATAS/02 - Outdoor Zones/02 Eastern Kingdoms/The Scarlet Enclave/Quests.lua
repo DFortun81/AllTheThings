@@ -191,7 +191,7 @@ _.Zones =
 							["coord"] = { 52.2, 34.8, THE_SCARLET_ENCLAVE },
 							["sourceQuest"] = 12680,	-- Grand Theft Palomino
 							["g"] = {
-								mount(48778, {	-- Acherus Deathcharger
+								mount(48778, {	-- Acherus Deathcharger (MOUNT!)
 									["classes"] = { DEATHKNIGHT },
 								}),
 							},

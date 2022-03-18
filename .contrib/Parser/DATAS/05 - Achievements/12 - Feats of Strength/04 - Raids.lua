@@ -5,10 +5,10 @@
 root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 	achcat(ACHIEVEMENT_CATEGORY_RAIDS_FOS, {
 		un(REMOVED_FROM_GAME, a(ach(4156, {	-- A Tribute to Immortality (Alliance)
-			un(REMOVED_FROM_GAME, a(i(49096))),	-- Crusader's White Warhorse
+			un(REMOVED_FROM_GAME, a(i(49096))),	-- Crusader's White Warhorse (MOUNT!)
 		}))),
 		un(REMOVED_FROM_GAME, h(ach(4079, {	-- A Tribute to Immortality (Horde)
-			un(REMOVED_FROM_GAME, h(i(49098))),	-- Crusader's Black Warhorse
+			un(REMOVED_FROM_GAME, h(i(49098))),	-- Crusader's Black Warhorse (MOUNT!)
 		}))),
 		un(REMOVED_FROM_GAME, ach(12110)),	-- Ahead of the Curve: Argus the Unmaker
 		un(REMOVED_FROM_GAME, ach(9444)),	-- Ahead of the Curve: Blackhand's Crucible

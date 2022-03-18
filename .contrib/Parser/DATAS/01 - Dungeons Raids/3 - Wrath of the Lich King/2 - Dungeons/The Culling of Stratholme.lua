@@ -208,7 +208,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					})),
 					n(32273, {	-- Infinite Corruptor
 						ach(1817),	-- The Culling of Time
-						i(43951),	-- Reins of the Bronze Drake
+						i(43951),	-- Bronze Drake (MOUNT!)
 					}),
 					cr(26533, e(614, {	-- Mal'Ganis
 						crit(12, {	-- Mal'Ganis slain

@@ -44,7 +44,7 @@ _.Zones =
 						{ 52.0, 34.0, THE_STORM_PEAKS },	-- Ulduar Ravine
 					},
 					["g"] = {
-						i(44168),	-- Reins of the Time-Lost Proto-Drake
+						i(44168),	-- Time-Lost Proto-Drake (MOUNT!)
 						i(44682),	-- Time-Forward Talisman
 						i(44663),	-- Abandoned Adventurer's Satchel
 					},

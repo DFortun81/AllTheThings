@@ -139,6 +139,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 					i(187077, {	-- Packaged Soul Ash
 						["cost"] = { { "c", 1828, 300 } },	-- 300x Soul Ash
 					}),
+					i(191031, {	-- Packaged Soul Cinders
+						["cost"] = { { "c", 1906, 300 } },	-- 300x Soul Cinders
+						["timeline"] = { "added 9.2.0" },
+					}),
 					i(187532, {	-- Soulfire Chisel
 						["cost"] = { { "c", 1767, 2500 } },	-- 2,500x Stygia
 					}),

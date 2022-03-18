@@ -1891,7 +1891,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(8632),	-- Spotted Frostsaber (MOUNT!)
-						i(47100),	-- Reins of the Striped Dawnsaber
+						i(47100),	-- Striped Dawnsaber (MOUNT!)
 						i(8631),	-- Striped Frostsaber (MOUNT!)
 						i(8629),	-- Striped Nightsaber (MOUNT!)
 						i(18766),	-- Swift Frostsaber (MOUNT!)

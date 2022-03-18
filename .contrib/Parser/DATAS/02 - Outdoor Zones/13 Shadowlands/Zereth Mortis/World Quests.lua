@@ -4,7 +4,7 @@
 root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 	m(ZERETH_MORTIS, {
 		n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, ["sourceQuests"] = { 64230 } }, {
-			q(65081, {	-- An Apple A Day
+			q(65081, {	-- An Apple A Day (Confirmed)
 				["coord"] = { 47.9, 88.7, ZERETH_MORTIS },
 			}),
 			q(65232, {	-- Annelid-ilation (Confirmed)
@@ -40,7 +40,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					{"select","objectID",373561},	-- Forgotten Proto-Vault
 				},
 			}),
-			q(65231, {	-- Plundered Knowledge
+			q(65231, {	-- Plundered Knowledge (Confirmed)
 				["coord"] = { 67.2, 39.1, ZERETH_MORTIS },
 			}),
 			q(65115, {	-- Researching The Solution (Confirmed)
@@ -60,7 +60,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			q(65406, {	-- Connecting It All
 				["coord"] = { 65.7, 41, ZERETH_MORTIS },
 			}),
-			q(65417, {	-- Connecting It All
+			q(65417, {	-- Connecting It All (Confirmed)
 				["coord"] = { 55, 48, ZERETH_MORTIS },
 			}),
 			q(65416, {	-- Connecting It All (Confirmed)
@@ -69,7 +69,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			q(65408, {	-- Pattern Recognition (Confirmed)
 				["coord"] = { 53.2, 86.8, ZERETH_MORTIS },
 			}),
-			q(65402, {	-- Pattern Recognition
+			q(65402, {	-- Pattern Recognition (Confirmed)
 				["coord"] = { 32, 52.6, ZERETH_MORTIS },
 			}),
 			q(65407, {	-- Pattern Recognition (Confirmed)
@@ -87,7 +87,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			q(65412, {	-- Puzzling It Out
 				["coord"] = { 51.3, 25.8, ZERETH_MORTIS },
 			}),
-			q(65413, {	-- Puzzling It Out
+			q(65413, {	-- Puzzling It Out (Confirmed)
 				["coord"] = { 55.9, 84, ZERETH_MORTIS },
 			}),
 			q(65404, {	-- Puzzling It Out (Confirmed)
@@ -96,10 +96,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			q(65410, {	-- Puzzling Situation
 				["coord"] = { 55.7, 50, ZERETH_MORTIS },
 			}),
-			q(65411, {	-- Puzzling Situation
+			q(65411, {	-- Puzzling Situation (Confirmed)
 				["coord"] = { 35.2, 59.1, ZERETH_MORTIS },
 			}),
-			q(65403, {	-- Puzzling Situation
+			q(65403, {	-- Puzzling Situation (Confirmed)
 				["coord"] = { 38.4, 70.4, ZERETH_MORTIS },
 			}),
 		})),

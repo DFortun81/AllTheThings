@@ -23,6 +23,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				q(65649, {	-- A New Deal
 					["provider"] = { "n", 168011 },	-- Zo'sorg
 					["coord"] = { 35.6, 57.5, ORIBOS },
+					["isWeekly"] = true,
 					["timeline"] = { "added 9.2.0" },
 					["g"] = {
 						i(188778),	-- Cosmic Gladiator's Devouring Malediction

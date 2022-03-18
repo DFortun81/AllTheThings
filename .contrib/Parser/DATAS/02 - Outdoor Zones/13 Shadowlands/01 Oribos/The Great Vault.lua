@@ -4,9 +4,10 @@
 
 root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 	m(ORIBOS, {
-		n(-989, {	-- The Great Vault
+		o(353484, {	-- The Great Vault
+			["icon"] = "Interface\\Icons\\inv_blacksmithing_greaterweightstone",
 			["description"] = "Can Only be obtained from the great vault.",
-			["g"] = bubbleDown({ ["bonusID"] = 7897 }, {
+			["g"] = pvp(bubbleDown({ ["bonusID"] = 7897 }, {
 				cl(DEATHKNIGHT, {
 					i(188864),	-- Carapace of the First Eidolon
 					i(188866),	-- Chausses of the First Eidolon
@@ -91,7 +92,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(188940),	-- Legplates of the Infinite Infantry
 					i(188941),	-- Pauldrons of the Infinite Infantry
 				}),
-			}),
+			})),
 		}),
 	}),
 })))
