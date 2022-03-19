@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-_.Instances = { tier(CLASSIC_TIER, {
+root("Instances", tier(CLASSIC_TIER, {
 	inst(311, {	-- Scarlet Halls
 		["coord"] = { 78.0, 56.8, SCARLET_MONASTERY_ENTRANCE },
 		["timeline"] = { "added 5.0.4" },
@@ -263,9 +263,9 @@ _.Instances = { tier(CLASSIC_TIER, {
 			}),
 		},
 	}),
-})};
+}));
 -- #if AFTER MOP
-_.HiddenQuestTriggers = {
+root("HiddenQuestTriggers", {
 	tier(MOP_TIER, {
 		q(31636),	-- Scarlet Halls Challenge Mode - Bronze Addition (Nth)
 		q(31630),	-- Scarlet Halls Challenge Mode - Consolation (Nth)
@@ -280,5 +280,5 @@ _.HiddenQuestTriggers = {
 		q(35609),	-- Scarlet Halls - Bonus Objective Reward Quest - kill Armsmaster Harlan (Heroic)
 	}),
 	-- #endif
-};
+});
 -- #endif
