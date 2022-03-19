@@ -18,7 +18,7 @@ root("Instances", tier(CLASSIC_TIER, {
 		-- #if AFTER 6.0.1
 		["coord"] = { 80.46, 40.65, BLACKROCK_MOUNTAIN },
 		-- #else
-		
+
 		-- #endif
 		["lvl"] = 50,
 		["groups"] = {
@@ -49,7 +49,7 @@ root("Instances", tier(CLASSIC_TIER, {
 							["u"] = REMOVED_FROM_GAME,
 						},
 					},
-				}
+				},
 				q(5167, {	-- Legplates of the Chromatic Defier
 					["u"] = REMOVED_FROM_GAME,
 					["cost"] = {
