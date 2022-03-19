@@ -14,6 +14,17 @@ _.Craftables =
 					["collectible"] = false,
 				}),
 			}),
+			filter(MISC, {
+				i(187741),	-- Crafter's Mark IV
+				i(187742),	-- Crafter's Mark of the First Ones
+				i(187827),	-- Infusion: Corpse Purification
+				i(187850),	-- Sustaining Armor Polish
+				i(186697),	-- Blossom Burst
+				i(186698),	-- Torch Burst
+				i(186699),	-- Widow Burst
+				i(186700),	-- Marrow Burst
+				i(186701),	-- Glory Burst
+			}),
 		}),
 	}),
 };

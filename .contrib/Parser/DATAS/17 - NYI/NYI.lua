@@ -17,6 +17,12 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- Dont tell the Users is actually obtainable but there is just no info
 				["description"] = "If this drops for you, please provide as much information as you can about how and where you got it.",
 			}),
+			i(185920),	-- Cartel Al Incident Report
+			i(185927),	-- Expedition Report A37J - Foreword
+			i(185928),	-- Expedition Report A37J - Part 1
+			i(185929),	-- Expedition Report A37J - Part 2
+			i(185930),	-- Expedition Report A37J - Part 3
+			i(185931),	-- Expedition Report A37J - Part 4
 		},
 	}),
 	tier(SL_TIER, 2.0, {
@@ -26,6 +32,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(65249),	-- The Jailer's Defeat (A version already exist of this quest maybe the changed? /Braghe)
 			q(64649),	-- A Mountain of Work to Do
 		}),
+		i(187710),	-- Anniversary Gift (Probably for 18th Ani)
+		i(189561),	-- Tame Prime: Orixal
+		i(189572),	-- Tame Prime: Hadeon the Stonebreaker
+		i(189573),	-- Tame Prime: Garudeon
 	}),
 	filter(BATTLE_PETS, {
 		model(65527, i(129108, {	-- Son of Goredome						(Never added in Game)
@@ -116,6 +126,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(183853),	-- Sinfall Screecher
 		i(183714),	-- Swamp Reed (Withering Creeper is the equivalent wild pet in game, item was never used)
 		tier(SL_TIER, {
+			i(184034), -- Stony's Infused Ruby
 			tier(SL_TIER, 2.0, {
 				pet(3246),	-- Tezpet
 			}),
@@ -318,7 +329,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			tier(WOTLK_TIER, 1.2, {
 				i(46755, {	-- Great Golden Kodo / Great Golden Kodo (MOUNT!)
 					["modelID"] = 28556,
-					["_drop"] = { "mountID" },
+					--["_drop"] = { "mountID" },
 					--["collectible"] = true
 				}),
 				i(46756, {	-- Great Red Elekk / Great Red Elekk (MOUNT!)
@@ -434,11 +445,14 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			tier(SL_TIER, 0.1, {
 				i(182083),	-- Bonecleaver's Skullboar
 				i(181817),	-- Deathbringer's Flayedwing
+				i(184035),	-- Silessa's Harness
 			}),
 			tier(SL_TIER, 1.0, {
 				i(186491),	-- Spring Wilderling Harness
 				i(186639),	-- Pilfered Gearglider
 				i(186640),	-- Silver Gearglider
+				--
+				i(187412), -- Shardhide Ka-Sha (Silver Shardhide Mount)
 			}),
 			tier(SL_TIER, 2.0, {
 				mount(356802, {		-- Holy Lightstrider
@@ -3797,11 +3811,255 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(55217),	-- Aqua Transform
 		i(55218),	-- Rocky Transform
 		i(55219),	-- Vaporous Transform
+		tier(BFA_TIER, {
+			tier(BFA_TIER, 3.0, {
+				i(174455),	-- Add Keystone Affix: Awakened
+				i(174838),	-- Collapsed Fusion Core
+				i(174642),	-- Corrupted Ny'alotha Raid Item
+				i(174529),	-- Crate of Coalescing Visions
+				i(174970),	-- Easeflower
+				i(174800),	-- HARDCODED - Corrupted Stats Placeholder
+				i(175019),	-- Holy Statuette
+				i(174971),	-- Ripe Juicycrunch
+				i(174663),	-- Set Keystone Map: Operation: Mechagon - Junkyard
+				i(174664),	-- Set Keystone Map: Operation: Mechagon - Workshop
+				i(175150),	-- Self-Shaping Amber
+				i(175018),	-- Shadowy Rune
+				i(175017),	-- Volatile Ember
+			}),
+		}),
 		tier(SL_TIER, {
+			tier(SL_TIER, 0.1, {
+				filter(104, {	-- Quest Items
+					i(175265),	-- Belt of Prime Command
+					i(181241),	-- Blueprint: Charm of Buff 7
+					i(182654),	-- Bonescript Dispatches
+					i(175253),	-- Desiccating Formula
+					i(183074),	-- Lost Animacone
+					i(174750),	-- Memetic Anima
+					i(174489),	-- Treated Animacone
+					i(181442),	-- Visions of Sire Denathrius
+				}),
+				i(180483),	-- [PH] Legendary Dust
+				i(179367),	-- [PH] Torghast Boss Loot
+				i(180531),	-- [PH] Twisted Dust
+				i(181158),	-- [UNUSED - FOCUS] Blueprint: Charm of Energizing
+				i(182588),	-- A Bloody Hand
+				i(183803),	-- Add Keystone Affix: Prideful
+				i(180734),	-- Alchemist's Journal
+				i(181341),	-- Alexandros Mograine
+				i(180298),	-- Amalgamation of Sin
+				i(180299),	-- Amalgamation of Sin
+				i(180300),	-- Amalgamation of Sin
+				i(180301),	-- Amalgamation of Sin
+				i(180302),	-- Amalgamation of Sin
+				i(180303),	-- Amalgamation of Sin
+				i(180304),	-- Amalgamation of Sin
+				i(180305),	-- Amalgamation of Sin
+				i(180306),	-- Amalgamation of Sin
+				i(180357),	-- Amalgamation of Sin
+				i(180358),	-- Amalgamation of Sin
+				i(180359),	-- Amalgamation of Sin
+				i(180360),	-- Amalgamation of Sin
+				i(180361),	-- Amalgamation of Sin
+				i(180362),	-- Amalgamation of Sin
+				i(180363),	-- Amalgamation of Sin
+				i(180364),	-- Amalgamation of Sin
+				i(180365),	-- Amalgamation of Sin
+				i(180366),	-- Amalgamation of Sin
+				i(180367),	-- Amalgamation of Sin
+				i(180368),	-- Amalgamation of Sin
+				i(180369),	-- Amalgamation of Sin
+				i(180370),	-- Amalgamation of Sin
+				i(180371),	-- Amalgamation of Sin
+				i(180373),	-- Amalgamation of Sin
+				i(174781),	-- Anisykos's Favorite Hammer
+				i(178147),	-- Army of the Darkness Insignia
+				i(178886),	-- Baroness Vashj
+				i(180736),	-- Blacksmith's Journal
+				i(180007),	-- Brewfest Pretzel Bowl
+				i(183939),	-- Carefully Bottled Holy Water
+				i(180875),	-- Carriage Cargo
+				i(179928),	-- Cell Chain Pull
+				i(181140),	-- Charm of Alacrity
+				i(181240),	-- Charm of Buff 7
+				i(181159),	-- Charm of Energizing
+				i(178888),	-- Choofa
+				i(183125),	-- Combat Meditation: Power
+				i(176129),	-- Contract: Decoration 4
+				i(176133),	-- Contract: Entertainment 4
+				i(176137),	-- Contract: Refreshment 4
+				i(176141),	-- Contract: Security 4
+				i(180737),	-- Cook's Journal
+				i(178889),	-- Cryptkeeper Kassir
+				i(178139),	-- Cypher of Relocation
+				i(181344),	-- Droman Aliothe
+				i(183841),	-- Emergency Flare
+				i(180738),	-- Enchanter's Journal
+				i(180739),	-- Engineer's Journal
+				i(178564),	-- Eye of the Jailer:|CFFff2020 +1000 |R
+				i(178588),	-- Fae Armaments
+				i(184041),	-- Festive Umbrella
+				i(174493),	-- First Bell of Markos
+				i(180740),	-- Fisherman's Journal
+				i(180741),	-- Florist's Journal
+				i(178966),	-- Gardener's Satchel
+				i(181345),	-- Grandmaster Vole
+				i(180852),	-- Granule of Stygia
+				i(180128),	-- Harvester's Elite Bounty Purse
+				i(181342),	-- Hunt-Captain Korayn
+				i(180743),	-- Jeweler's Journal
+				i(181346),	-- Kleia and Pelagos
+				i(178586),	-- Kyrian Armaments
+				i(181338),	-- Lady Moonberry
+				i(178967),	-- Large Gardener's Satchel
+				i(182652),	-- Larion Tamer's Harness
+				i(180744),	-- Leatherworker's Journal
+				i(180278),	-- Legendary Powers
+				i(180054),	-- Lunar Dumplings
+				i(180056),	-- Lunar Rice Cake
+				i(178587),	-- Maldraxxian Armaments
+				i(174745),	-- Memory Glass Shard
+				i(180745),	-- Miner's Journal
+				i(181339),	-- Mikanikos
+				i(183523),	-- Miniaturized Phylactery
+				i(175752),	-- Mirror Fragment
+				i(177764),	-- Mirror Fragment
+				i(179664),	-- Mirror of Kalisthene
+				i(183825),	-- Oversized Monocle
+				i(183873),	-- Otherworldy Tea Set
+				i(181444),	-- Perk 24
+				i(181445),	-- Perk 25
+				i(181446),	-- Perk 26
+				i(181447),	-- Perk 27
+				i(181448),	-- Perk 28
+				i(181449),	-- Perk 29
+				i(181451),	-- Perk 30
+				i(181347),	-- Plague Deviser Marileth
+				i(178887),	-- Polemarch Adrestes
+				i(178677),	-- Prince Renathal
+				i(178560),	-- Purity Contribution Progress
+				i(178078),	-- Reborn Spirit Cache
+				i(183821),	-- Remornia
+				i(181343),	-- Rendle and Cudgelface
+				i(178687),	-- RSVP: VIP 17
+				i(178688),	-- RSVP: VIP 18
+				i(178689),	-- RSVP: VIP 19
+				i(178690),	-- RSVP: VIP 20
+				i(180742),	-- Scribe's Journal
+				i(174495),	-- Second Bell of Markos
+				i(181849),	-- Set Keystone Map: The Necrotic Wake
+				i(181166),	-- Sigil of Haunting Memories
+				i(181348),	-- Sika
+				i(180746),	-- Skinner's Journal
+				i(178965),	-- Small Gardener's Satchel
+				i(178045),	-- Soul Prism
+				i(181371),	-- Spare Head
+				i(180011),	-- Stale Brewfest Pretzel
+				i(181167),	-- Steward Service Improvement: Harmonic Convergence
+				i(182164),	-- Steward Service: Reagent Deposit
+				i(183424),	-- Stitched Satchel of Maldraxxi Goods
+				i(183426),	-- Stitched Satchel of Fae Goods
+				i(183428),	-- Stitched Satchel of Aspirant Goods
+				i(183429),	-- Stitched Satchel of Venthyr Goods
+				i(181349),	-- Stonehead
+				i(180747),	-- Tailor's Journal
+				i(181340),	-- The Countess
+				i(181391),	-- Theotar
+				i(181390),	-- Temel
+				i(176081),	-- Temel's Party Planning Book
+				i(176804),	-- Temp
+				i(178969),	-- Test Container
+				i(174496),	-- Third Bell of Markos
+				i(174489),	-- Treated Animacone
+				i(183965),	-- Uncommon Anima Items
+				i(182195),	-- Vanity Mirror
+				i(182210),	-- Vanity Mirror
+				i(178589),	-- Venthyr Armaments
+				i(180211),	-- Venthyr Eye
+				i(180216),	-- Venthyr Heart
+				i(180213),	-- Venthyr Nail
+				i(180215),	-- Venthyr Rib
+				i(180212),	-- Venthyr Scabbard
+				i(180210),	-- Venthyr Tooth
+				i(180006),	-- Warm Brewfest Pretzel
+				i(181392),	-- Watchmaster Boromod
+				i(178968),	-- Weekly Gardener's Satchel
+				i(177708),	-- Writ of Tribute
+			}),
+			tier(SL_TIER, 0.2, {
+				filter(104, {	-- Quest Items
+					i(184169),	-- Vault Chain Pull
+				}),
+				i(184663),	-- Building: Guardhouse
+				i(184534),	-- Entitled Guest
+				i(184762),	-- Fragmented Sorrow
+				i(184649),	-- Mawrat Cannon
+				i(184684),	-- Grimoire of Knowledge
+				i(184685),	-- Grimoire of Knowledge
+				i(184686),	-- Grimoire of Knowledge
+				i(184687),	-- Grimoire of Knowledge
+				i(184688),	-- Grimoire of Knowledge
+				i(184649),	-- Mawrat Cannon
+				i(181366),	-- Necrostatic Charge
+				i(184760),	-- Quiescent Orb
+				i(184153),	-- Polymorphic Polyhedron
+				i(184761),	-- Purified Misery
+				i(184120),	-- Spare Brain
+				i(184121),	-- Spare Eye
+				i(184122),	-- Spare Foot
+				i(184119),	-- Spare Heart
+				i(184124),	-- Spare Stomach
+				i(184412),	-- Title Reward: Spirestalker
+				i(184446),	-- Vial of Blue Muck Dye
+			}),
+			tier(SL_TIER, 0.5, {
+				i(185717),	-- Slumbering Spirit
+				i(186099),	-- Spatial Realignment Apparatus
+				i(185764),	-- Tome of Town Portal
+			}),
+			tier(SL_TIER, 1.0, {
+				filter(104, {	-- Quest Items
+					i(187863),	-- Key of Ephemera
+				}),
+				i(187921),	-- [PH] Core Currency
+				i(187570),	-- Brokers' Skinning Mote of Potentiation
+				i(187571),	-- Brokers' Mining Mote of Potentiation
+				i(186520),	-- Chest of Playtest Equipment
+				i(186519),	-- Compressed Anima Bubble
+				i(187544),	-- Consumed Weapon Essence
+				i(187545),	-- Consumed Weapon Essence
+				i(187546),	-- Consumed Weapon Essence
+				i(187547),	-- Consumed Weapon Essence
+				i(187548),	-- Consumed Weapon Essence
+				i(186971),	-- Feeder's Hand
+				i(186203),	-- Glowing Devourer Stomach
+				i(187533),	-- Greater Phial of Serenity
+				i(187434),	-- Lightseed Sapling
+				i(187432),	-- Magifocus Heartwood
+				i(186715),	-- Research Report: Improved Alloys
+				i(187526),	-- Suspicious List
+				i(184844),	-- Test Item
+				i(187515),	-- Theotar's Bottomless Teapot
+				i(187433),	-- Windcrystal Chimes
+			}),
+			tier(SL_TIER, 1.5, {
+				i(187659),	-- Adventurer's Footlocker
+			}),
 			tier(SL_TIER, 2.0, {
+				filter(104, {	-- Quest Items
+					i(191040),	-- Cache of Sepulcher Treasures
+					i(191041),	-- Cache of Sepulcher Treasures
+					i(190654),	-- Cache of Sepulcher Treasures
+					i(188200),	-- Engraved Stone
+					i(185484),	-- Nathrezim Documents
+				}),
 				i(189452),	-- 9.2 Mount Crafting Bag of Goodies
 				i(189428),	-- 9.2 Pet Battle Playtest Bag of Goodies
 				i(190383),	-- Progenitor Essentia Lattice
+				i(188796),	-- Cypher Test Item
+				i(190172),	-- Title Reward: Gauntlet Runner
+				i(190823),	-- Firim's Mysterious Cache
 			}),
 		}),
 	}),

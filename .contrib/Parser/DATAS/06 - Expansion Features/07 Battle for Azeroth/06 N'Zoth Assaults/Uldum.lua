@@ -306,6 +306,9 @@ root("ExpansionFeatures", {
 								["coord"] = { 67.5, 63.8, 1527 },
 								["isDaily"] = true,
 								["description"] = "Requires 3 players with |cFFFFD700Suntouched Amulet|r to channel the pillars at the same time to summon.",
+								["g"] = {
+									i(174875),	-- Obelisk of the Sun
+								},
 							}),
 							n(151852, {	-- Watcher Rehu
 								["questID"] = 55461,
@@ -2326,6 +2329,8 @@ root("HiddenQuestTriggers", {
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(58801),	-- Enter the Void
-		q(58904),	-- Shards of Corruption
+		q(58904, {	-- Shards of Corruption
+			i(174867),	-- Shard of Corruption (Starts the Quest?)
+		}),
 	}),
 }));

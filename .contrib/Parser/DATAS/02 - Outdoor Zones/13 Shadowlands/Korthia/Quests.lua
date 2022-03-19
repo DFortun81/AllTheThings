@@ -109,6 +109,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 					1967,	-- TG106_Floor
 					1969,	-- TG108_Floor
 				},
+				["g"] = {
+					i(185679),	-- Attuned Shard
+				},
 			}),
 			q(63848, {	-- A Show of Gratitude
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance

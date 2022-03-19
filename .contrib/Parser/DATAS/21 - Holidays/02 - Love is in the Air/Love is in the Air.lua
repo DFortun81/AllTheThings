@@ -496,6 +496,64 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 				}),
 			}),
 			-- #endif
+			-- #if AFTER 9.1.5
+			tier(SL_TIER, {
+				inst(1194, {	-- Tazavesh, the Veiled Market
+					d(2, {	-- Heroic
+						e(2455, {	-- So'leah
+							["crs"] = { 177269 },	-- So'leah
+							["g"] = {
+								i(188692, {	-- Pouch of Ebon Rose Petals
+									["timeline"] = { "added 9.1.5" },
+								}),
+							},
+						}),
+					}),
+					d(23, {	-- Mythic
+						e(2455, {	-- So'leah
+							["crs"] = { 177269 },	-- So'leah
+							["g"] = {
+								i(188692, {	-- Pouch of Ebon Rose Petals
+									["timeline"] = { "added 9.1.5" },
+								}),
+							},
+						}),
+					}),
+				}),
+				inst(1183, {	-- Plaguefall
+					d(1, {	-- Normal
+						e(2423, {	-- Domina Venomblade
+							["crs"] = { 164266 },	-- Domina Venomblade
+							["g"] = {
+								i(188692, {	-- Pouch of Ebon Rose Petals
+									["timeline"] = { "added 9.1.5" },
+								}),
+							},
+						}),
+					}),
+					d(2, {	-- Heroic
+						e(2423, {	-- Domina Venomblade
+							["crs"] = { 164266 },	-- Domina Venomblade
+							["g"] = {
+								i(188692, {	-- Pouch of Ebon Rose Petals
+									["timeline"] = { "added 9.1.5" },
+								}),
+							},
+						}),
+					}),
+					d(23, {	-- Mythic
+						e(2423, {	-- Domina Venomblade
+							["crs"] = { 164266 },	-- Domina Venomblade
+							["g"] = {
+								i(188692, {	-- Pouch of Ebon Rose Petals
+									["timeline"] = { "added 9.1.5" },
+								}),
+							},
+						}),
+					}),
+				}),
+			}),
+			-- #endif
 		}),
 		-- #endif
 		n(QUESTS, {

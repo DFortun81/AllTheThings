@@ -32,6 +32,12 @@ _.Craftables =
 			filter(TOYS, {
 				i(172924)	-- Wormhole Generator: Shadowlands (TOY!)
 			}),
+			filter(MISC, {
+				i(187741),	-- Crafter's Mark IV
+				i(187742),	-- Crafter's Mark of the First Ones
+				i(187836),	-- Erratic Genesis Matrix
+				i(187831),	-- Pure-Air Sail Extensions
+			}),
 		}),
 	}),
 };

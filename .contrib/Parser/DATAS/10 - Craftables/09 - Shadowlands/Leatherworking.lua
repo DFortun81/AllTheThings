@@ -118,6 +118,11 @@ _.Craftables =
 				i(186686),	-- Pallid Oracle Bones (TOY!)
 			}),
 			i(185960),		-- Vestige of Origins
+			filter(MISC, {
+				i(187741),	-- Crafter's Mark IV
+				i(187742),	-- Crafter's Mark of the First Ones
+				i(187784),	-- Vestige of the Eternal
+			}),
 		}),
 	}),
 };

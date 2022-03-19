@@ -1186,6 +1186,9 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				i(17306),	-- Stormpike Soldier's Blood
 				i(17326),	-- Stormpike Soldier's Flesh
 				i(18231),	-- Sleeveless T-Shirt
+				i(187696, {	-- The Wolf, the Wolpertinger, and Other Tails
+					["timeline"] = { "added 9.1.5" },
+				}),
 			}),
 		},
 	}),

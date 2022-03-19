@@ -367,6 +367,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				},
 				["provider"] = { "n", 184323 },	-- Feroz
 				["coord"] = { 47.7, 79.9, ZERETH_MORTIS },
+				["g"] = {
+					i(189433),	-- Herbal Remedy
+				},
 			}),
 			q(64840, {	-- Unchecked Growth
 				["sourceQuests"] = {

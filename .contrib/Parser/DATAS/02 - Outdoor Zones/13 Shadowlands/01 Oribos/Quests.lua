@@ -611,6 +611,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["sourceQuests"] = { 62938 },	-- Information for a Price
 				["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 39.9, 68.5, ORIBOS },
+				["g"] = {
+					i(184550),	-- Attuned Shard
+				},
 			}),
 			q(60146, {	-- Torment Chamber: Thrall
 				["sourceQuests"] = { 62969 },	-- Lest the Trail Go Cold

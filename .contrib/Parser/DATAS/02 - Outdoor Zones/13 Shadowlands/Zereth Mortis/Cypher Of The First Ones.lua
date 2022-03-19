@@ -485,9 +485,19 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 									i(188231),	-- Provis Cache Key
 									i(187866),	-- Accelerating Tendons
 									i(187867),	-- Evolved Exo-mucus
+									i(187865),	-- Spiked Protomesh
 								}),
 							}),
-							i(187791),	-- Kismetric Circlet (unknown use/purpose yet)
+							i(187792, {	-- Kismetric Disc
+								["cost"] = {
+									{ "i", 187791, 1 },		--1xKismetric Circlet
+									{ "i", 187790, 100 },	--100xTrace Enigmet
+									{ "i", 187728, 10 },	--10xEphemera Strand
+									{ "i", 187789, 5 },		--5xEidolic Particles
+								},
+							}),
+							i(187789),	-- Eidolic Particles
+							i(187791),	-- Kismetric Circlet
 							i(187790),	-- Trace Enigmet
 						},
 					}),

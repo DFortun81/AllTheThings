@@ -57,6 +57,12 @@ _.ExpansionFeatures =
 						i(187090, {	-- Sterling-Spike Shoulderguards
 							["cost"] = { { "c", 1728, 300 } },	-- 300x Phantasma
 						}),
+						-- Powers
+						i(186614),	-- Soul Jar
+						i(186615),	-- Mirror of the Conjured Twin
+						i(186636),	-- Cage of Mawrats
+						i(186678),	-- Mawforged Weapons Cache
+						i(186679),	-- Scroll of Domination
 						-- #if AFTER 9.2.0
 						i(188752),	-- Argent Mawsworn Greatsword L13 300P		FC
 						i(188743),	-- Ashen Mawsworn Crossbow	L14 300P	FC

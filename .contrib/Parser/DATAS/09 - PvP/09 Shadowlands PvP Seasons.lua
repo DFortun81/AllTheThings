@@ -1092,7 +1092,7 @@ root("PVP", pvp(tier(SL_TIER, {
 				i(186860),	-- Cosmic Gladiator's Xiphos
 			}),
 		}),
-		n(PVP_ELITE, bubbleDown({["modID"] = 14, ["bonusID"] = 6202}, {	-- Elite/Duelist Gear. Do not use more filters, Elite Gear 
+		n(PVP_ELITE, bubbleDown({["modID"] = 14, ["bonusID"] = 6202}, {	-- Elite/Duelist Gear. Do not use more filters, Elite Gear
 			n(BACK, {
 				i(186780),	-- Cosmic Gladiator's Cloak
 				i(186781),	-- Cosmic Gladiator's Drape
@@ -1211,7 +1211,7 @@ root("PVP", pvp(tier(SL_TIER, {
 				["races"] = HORDE_ONLY,
 			}),
 		}),
-		n(-989, {	-- The Great Vault
+		o(353484, {	-- The Great Vault
 			["description"] = "Can Only be obtained from the great vault.",
 			["g"] = bubbleDown({ ["bonusID"] = 7897 }, {
 				cl(DEATHKNIGHT, {

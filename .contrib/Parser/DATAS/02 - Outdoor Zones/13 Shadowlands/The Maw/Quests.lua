@@ -437,6 +437,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 			--	["provider"] = { "o",  },	-- Tormentor's Pike
 				["isDaily"] = true,
 				["coord"] = { 60.3, 72.1, THE_MAW },
+				["g"] = {
+					i(183105),	-- Tormentor's Rod
+				},
 			}),
 			q(59753, {	-- Ruiner's End
 				["sourceQuests"] = { 59751 },	-- Through the Shattered Sky

@@ -2656,6 +2656,16 @@ _.Zones =
 								az(20, 4),	-- Life-Binder's Invocation (Rank 4)
 							},
 						}),
+						-- This Gear need symlink someday
+						i(174630),	-- Relinquished Azerite Spaulders
+						i(174631),	-- Relinquished Azerite Spaulders
+						i(174632),	-- Relinquished Azerite Spaulders
+						i(174633),	-- Relinquished Azerite Helm
+						i(174634),	-- Relinquished Azerite Helm
+						i(174635),	-- Relinquished Azerite Helm
+						i(174636),	-- Relinquished Azerite Chestpiece
+						i(174637),	-- Relinquished Azerite Chestpiece
+						i(174638),	-- Relinquished Azerite Chestpiece
 					},
 				}),
 				n(142691, {	-- Tricky Nick <Shady Vendor>

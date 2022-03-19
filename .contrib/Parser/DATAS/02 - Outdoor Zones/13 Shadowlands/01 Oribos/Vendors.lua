@@ -304,6 +304,18 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(180136),	-- The Brokers Angle'r
 				},
 			}),
+			n(176197, bubbleDownSelf({ ["timeline"] = { "added 9.1.5" } }, {	-- Griftah <Amazing Amulets>
+				i(188226), -- Boots o' Maw Walkin
+				i(188224), -- Darling Maldraxxi Doll
+				i(188217), -- De Purpose
+				i(188221), -- Eye of the Wailer
+				i(188219), -- Garlic Pendant of Fang-Warding
+				i(188218), -- Korthian Secret-Keeping Journal
+				i(188223), -- Stain of Domination
+				i(188222), -- Steward Wings
+				i(188220), -- Torghast Ash Globe
+				i(188225), -- Worneblade
+			})),
 			n(156769, {	-- Keeper Ta'hult <Pet Vendor>
 				["coord"] = { 64.9, 67.3, ORIBOS },
 				["g"] = sharedData({ ["timeline"] = { "added 9.1.0" } }, {

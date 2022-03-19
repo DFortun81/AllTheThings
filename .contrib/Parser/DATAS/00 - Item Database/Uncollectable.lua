@@ -10,9 +10,11 @@ i(180293);	-- Night Fae Insignia
 i(183190);	-- Oublion Cipher
 i(183726);	-- Gratitude of the Liberated
 i(181796);	-- Emergency Supplies Key
-i(178465);	-- Giant Silk Bundle
 
 i(174969);	-- Alpaca Saddlebag (Vulpera Backpack)
+
+i(181781);	-- Almost Empty Amontillado Cask
+i(183596);	-- Broken Artifact
 
 -- Tailoring
 i(184480);	-- Lightless Silk Pouch

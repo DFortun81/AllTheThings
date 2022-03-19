@@ -206,6 +206,9 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
 										["provider"] = { "n", 166476 },	-- Warden Casad
 										["coord"] = { 33.4, 62.0, 1662 },
+										["g"] = {
+											i(184779),	-- Temporal Leaves
+										},
 									}),
 									q(62467, {	-- Seed of a Thought
 										["sourceQuests"] = { 59871 },	-- Catalyze This
@@ -442,6 +445,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										["description"] = "Spirit quality affects loot chance.",
 										["g"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[12] },T5_PRIDEFUL_GROUP),
 									}),
+									i(180977),	-- Spirit-Tender's Satchel
 								}),
 								n(VENDORS, {
 									n(174403, {	-- Seed Merchant Daybreak <Queen's Conservatory>

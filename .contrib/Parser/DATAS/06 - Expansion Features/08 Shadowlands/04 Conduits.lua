@@ -564,6 +564,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(179264),	-- [PH] Potency Conduit - Warlock - Destruction - Potency Trait 2
 			i(179265),	-- [PH] Flex Conduit - Warlock - Destruction - Flex Trait 1
 			i(179266),	-- [PH] Flex Conduit - Warlock - Destruction - Flex Trait 2
+			i(180843),	-- Template Conduit
 		}),
 	}),
 });

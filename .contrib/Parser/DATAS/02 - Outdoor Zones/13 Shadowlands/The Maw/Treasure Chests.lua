@@ -38,6 +38,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 					i(186608),	-- Nilganihmaht's Gold Band
 				},
 			}),
+			o(369602, {	-- Hands of Defiance
+				["coord"] = { 25.5, 36.8, THE_MAW },
+				["g"] = {
+					i(187255),	-- Hands of Defiance: A Chronicle of Woe
+				},
+			}),
 			o(369145, {	-- Helgarde Supply Cache
 				["description"] = "This chest does not glow or sparkle.  After the first loot of these chests, which will drop the key, they are repeatable and appear to just drop Stygia.",
 				["questID"] = 62682,
@@ -87,14 +93,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 					i(187352),	-- Jeweled Heart of Ezekiel
 				},
 			}),
-			n(173841, bubbleDownSelf({ ["timeline"] = { "added 9.1.0" } }, {	-- Paper Scrap
+			n(173841, bubbleDownSelf({ ["timeline"] = { "added 9.0.1" } }, {	-- Paper Scrap
 				["description"] = "A tiny |cFFFFFFFFPaper Scrap|r on some rocks.",
 				["coord"] = { 19.3, 33.5, THE_MAW },
 				["g"] = {
 					i(183063),	-- Words of the Warden
 				},
 			})),
-			n(173811, bubbleDownSelf({ ["timeline"] = { "added 9.1.0" } }, {	-- Subject 638
+			n(173811, bubbleDownSelf({ ["timeline"] = { "added 9.0.1" } }, {	-- Subject 638
 				["coord"] = { 35.8, 45.5, THE_MAW },
 				["g"] = {
 					i(183069),	-- Tormentor's Notes
@@ -111,7 +117,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 					i(186727),	-- Seal Breaker Key
 				},
 			}),
-			n(173837, bubbleDownSelf({ ["timeline"] = { "added 9.1.0" } }, {	-- Torture Implements
+			n(173837, bubbleDownSelf({ ["timeline"] = { "added 9.0.1" } }, {	-- Torture Implements
 				["description"] = "Once you are inside the cave, you can find the box of |cFFFFFFFFTorture Implements|r at the back, around |cFFFFFFFF72.8, 16.9|r.",
 				["coord"] = { 27.7, 20.2, THE_MAW },
 				["g"] = {
