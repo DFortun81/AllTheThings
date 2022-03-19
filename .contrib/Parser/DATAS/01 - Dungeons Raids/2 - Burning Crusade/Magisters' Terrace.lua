@@ -378,9 +378,11 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	}),
 }));
 -- #endif
-_.HiddenQuestTriggers = {
+-- #if AFTER WOD
+root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
 		q(35531),	-- Magisters' Terrace Reward Quest - Normal completion
 		q(35532),	-- Magisters' Terrace Reward Quest - Heroic completion
 	}),
-};
+});
+-- #endif

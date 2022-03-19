@@ -635,9 +635,11 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		},
 	}),
 })));
-_.HiddenQuestTriggers = {
+-- #if AFTER WOD
+root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
 		q(35517),	-- Shattered Halls Reward Quest - Normal completion
 		q(35518),	-- Shattered Halls Reward Quest - Heroic completion
 	}),
-};
+});
+-- #endif

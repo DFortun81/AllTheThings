@@ -148,9 +148,10 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		},
 	}),
 })));
-
-_.HiddenQuestTriggers = {
+-- #if AFTER TBC
+root("HiddenQuestTriggers", {
 	tier(TBC_TIER, {
 		q(11116),	-- Trial of the Naaru: (QUEST FLAG)
 	}),
-};
+});
+-- #endif

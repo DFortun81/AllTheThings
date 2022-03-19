@@ -375,15 +375,17 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		},
 	}),
 })));
-_.HiddenQuestTriggers = {
+-- #if AFTER WOD
+root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
 		q(35565),	-- The Blood Furnace Reward Quest - Normal completion
 		q(35566),	-- The Blood Furnace Reward Quest - Heroic completion
 	}),
-};
+});
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(29544),	-- The Blood Furnace
 		q(29545),	-- The Blood Furnace
 	}),
 }));
+-- #endif

@@ -1056,9 +1056,10 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 		},
 	}),
 })));
-
-_.HiddenQuestTriggers = {
+-- #if AFTER TBC
+root("HiddenQuestTriggers", {
 	tier(TBC_TIER, {
 		q(11087),	-- HYJAL FLAG
 	}),
-};
+});
+-- #endif

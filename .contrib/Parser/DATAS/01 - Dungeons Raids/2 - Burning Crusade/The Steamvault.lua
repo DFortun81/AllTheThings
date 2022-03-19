@@ -300,9 +300,11 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		},
 	}),
 })));
-_.HiddenQuestTriggers = {
+-- #if AFTER WOD
+root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
 		q(35533),	-- The Steamvault Reward Quest - Normal completion
 		q(35534),	-- The Steamvault Reward Quest - Heroic completion
 	}),
-};
+});
+-- #endif

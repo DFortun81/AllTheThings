@@ -368,12 +368,16 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		},
 	}),
 })));
-_.HiddenQuestTriggers = {
+-- #if AFTER TBC
+root("HiddenQuestTriggers", {
 	tier(TBC_TIER, {
 		q(11115),	-- The Mark of Vashj (FLAG ONLY)
 	}),
+	-- #if AFTER WOD
 	tier(WOD_TIER, {
 		q(35561),	-- The Slave Pens Reward Quest - Normal completion
 		q(35562),	-- The Slave Pens Reward Quest - Heroic completion
 	}),
-};
+	-- #endif
+});
+-- #endif

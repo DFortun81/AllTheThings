@@ -313,9 +313,11 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		},
 	}),
 })));
-_.HiddenQuestTriggers = {
+-- #if AFTER WOD
+root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
 		q(35525),	-- The Botanica Reward Quest - Normal completion
 		q(35526),	-- The Botanica Reward Quest - Heroic completion
 	}),
-};
+});
+-- #endif
