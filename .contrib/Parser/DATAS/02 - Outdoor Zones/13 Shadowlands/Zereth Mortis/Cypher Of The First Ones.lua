@@ -469,6 +469,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(187908, {	-- Firim's Spare Forge-tap
 						["description"] = "This item is only available after completing the Daily Quest: Materials of Creation (64717) or Hallow Efforts (64579).",
 						["g"] = {
+							i(187527),	-- Aeon Matrix
 							i(187891),	-- Empyrean Essence
 							i(187894),	-- Energized Firmament
 							i(187885),	-- Honeycombed Lattice
