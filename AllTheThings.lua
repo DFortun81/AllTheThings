@@ -51,7 +51,7 @@ local IsTitleKnown = _G["IsTitleKnown"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local MAX_CREATURES_PER_ENCOUNTER = 9;
 local DESCRIPTION_SEPARATOR = "`";
-local rawget, rawset, tinsert, string_lower, tostring, ipairs, pairs = rawget, rawset, tinsert, string.lower, tostring, ipairs, pairs;
+local rawget, rawset, tinsert, string_lower, tostring, ipairs, pairs, tonumber = rawget, rawset, tinsert, string.lower, tostring, ipairs, pairs, tonumber;
 local ATTAccountWideData;
 local ALLIANCE_ONLY = {
 	1,
@@ -1321,16 +1321,84 @@ function app:PlayAudio(targetAudio, delay)
 end
 
 -- Color Lib
-local CS = CreateFrame("ColorSelect", nil, app._);
-local function Colorize(str, color)
-	return "|c" .. color .. str .. "|r";
-end
+local GetProgressColor, Colorize;
 local function HexToARGB(hex)
 	return tonumber("0x"..hex:sub(1,2)), tonumber("0x"..hex:sub(3,4)), tonumber("0x"..hex:sub(5,6)), tonumber("0x"..hex:sub(7,8));
 end
 local function HexToRGB(hex)
 	return tonumber("0x"..hex:sub(1,2)) / 255, tonumber("0x"..hex:sub(3,4)) / 255, tonumber("0x"..hex:sub(5,6)) / 255;
 end
+(function()
+-- Color AARRGGBB values used throughout ATT
+app.Colors = {
+	["Raid"] = "ffff8000",
+	["SourceIgnored"] = "ffd15517",
+	["Locked"] = "ff7f40bf",
+	["Horde"] = "ffcc6666",
+	["Alliance"] = "ff407fbf",
+	["Completed"] = "ff15abff",
+	["ChatLinkError"] = "ffff5c6c",
+	["ChatLinkHQT"] = "ff7aff92",
+	["ChatLink"] = "ff149bfd",
+	["TooltipDescription"] = "ff66ccff",
+	["DefaultDifficulty"] = "ff1eff00",
+};
+Colorize = function(str, color)
+	return "|c" .. color .. str .. "|r";
+end
+-- Attempts to determine the colorized text for a given Group
+app.TryColorizeName = function(group, name)
+	if not name or name == RETRIEVING_DATA then return name; end
+	-- raid headers
+	if group.isRaid then
+		return Colorize(name, app.Colors.Raid);
+	-- groups which are ignored for progress
+	elseif group.sourceIgnored then
+		return Colorize(name, app.Colors.SourceIgnored);
+	-- faction rep status
+	elseif group.factionID and group.standing then
+		return app.ColorizeStandingText((group.saved and 8) or (group.standing + (group.isFriend and 2 or 0)), name);
+	-- locked things
+	elseif group.locked then
+		return Colorize(name, app.Colors.Locked);
+		-- if people REALLY only want to see colors in account/debug then we can comment this in
+	elseif app.Settings:GetTooltipSetting("UseMoreColors") --and (app.MODE_ACCOUNT or app.MODE_DEBUG)
+	then
+		-- class color
+		if group.classID then
+			return Colorize(name, RAID_CLASS_COLORS[select(2, GetClassInfo(group.classID))].colorStr);
+		elseif group.c and #group.c == 1 then
+			return Colorize(name, RAID_CLASS_COLORS[select(2, GetClassInfo(group.c[1]))].colorStr);
+		-- faction colors
+		elseif group.r then
+			-- red for Horde
+			if group.r == Enum.FlightPathFaction.Horde then
+				return Colorize(name, app.Colors.Horde);
+			-- blue for Alliance
+			elseif group.r == Enum.FlightPathFaction.Alliance then
+				return Colorize(name, app.Colors.Alliance);
+			end
+		-- specific races
+		elseif group.races then
+			local hrace = containsAny(group.races, HORDE_ONLY);
+			local arace = containsAny(group.races, ALLIANCE_ONLY);
+			if hrace and not arace then
+				-- this group requires a horde-only race, and not any alliance race
+				return Colorize(name, app.Colors.Horde);
+			elseif arace and not hrace then
+				-- this group requires a alliance-only race, and not any horde race
+				return Colorize(name, app.Colors.Alliance);
+			end
+		-- un-acquirable color
+		-- TODO: grey color for things which are otherwise not available to the current character (would only show in account mode due to filtering)
+		-- elseif not app.FilterItemClass(group) then
+		-- 	return Colorize(name, "ff808080");
+		end
+	end
+	return name;
+end
+local CS = CreateFrame("ColorSelect", nil, app._);
+CS:Hide();
 local function RGBToHex(r, g, b)
 	return string.format("ff%02x%02x%02x",
 		r <= 255 and r >= 0 and r or 0,
@@ -1343,7 +1411,8 @@ local function ConvertColorRgbToHsv(r, g, b)
   return {h=h,s=s,v=v}
 end
 local red, green = ConvertColorRgbToHsv(1,0,0), ConvertColorRgbToHsv(0,1,0);
-local progress_colors = setmetatable({[1] = "ff15abff"}, {
+local abs, floor = abs, floor;
+local progress_colors = setmetatable({[1] = app.Colors.Completed}, {
 	__index = function(t, p)
 		local h;
 		p = tonumber(p);
@@ -1366,6 +1435,11 @@ local progress_colors = setmetatable({[1] = "ff15abff"}, {
 		return color;
 	end
 });
+GetProgressColor = function(p)
+	return progress_colors[p];
+end
+end)();
+
 local function GetNumberWithZeros(number, desiredLength)
 	if desiredLength > 0 then
 		local str = tostring(number);
@@ -1400,9 +1474,6 @@ local function GetProgressPercent(progress, total)
 	local percent = (progress or 0) / total;
 	return percent, app.Settings:GetTooltipSetting("Show:Percentage")
 		and (" (" .. GetNumberWithZeros(percent * 100, app.Settings:GetTooltipSetting("Precision")) .. "%)");
-end
-local function GetProgressColor(p)
-	return progress_colors[p];
 end
 local function GetProgressColorText(progress, total)
 	if total and total > 0 then
@@ -1468,7 +1539,6 @@ end
 app.GetProgressText = GetProgressTextDefault;
 app.GetProgressTextDefault = GetProgressTextDefault;
 app.GetProgressTextRemaining = GetProgressTextRemaining;
-CS:Hide();
 
 -- Source ID Harvesting Lib
 local DressUpModel = CreateFrame('DressUpModel');
@@ -2281,7 +2351,7 @@ local PrintQuestInfo = function(questID, new, info)
 		if not questRef or GetRelativeField(questRef, "text", L["UNSORTED_1"]) then
 			-- Linkify the output
 			local popupID = "quest-" .. questID .. questChange;
-			chatMsg = app:Linkify(questID .. " (Not in ATT " .. app.Version .. ")", "ff5c6c", "dialog:" .. popupID);
+			chatMsg = app:Linkify(questID .. " (Not in ATT " .. app.Version .. ")", app.Colors.ChatLinkError, "dialog:" .. popupID);
 			app:SetupReportDialog(popupID, "Missing Quest: " .. questID,
 				app.BuildDiscordQuestInfoTable(questID, "missing-quest", questChange)
 			);
@@ -2290,7 +2360,7 @@ local PrintQuestInfo = function(questID, new, info)
 			if GetRelativeField(questRef, "text", L["NEVER_IMPLEMENTED"]) then
 				-- Linkify the output
 				local popupID = "quest-" .. questID .. questChange;
-				chatMsg = app:Linkify(questID .. " [NYI] ATT " .. app.Version, "ff5c6c", "dialog:" .. popupID);
+				chatMsg = app:Linkify(questID .. " [NYI] ATT " .. app.Version, app.Colors.ChatLinkError, "dialog:" .. popupID);
 				app:SetupReportDialog(popupID, "NYI Quest: " .. questID,
 					app.BuildDiscordQuestInfoTable(questID, "nyi-quest", questChange)
 				);
@@ -2302,13 +2372,13 @@ local PrintQuestInfo = function(questID, new, info)
 					return true;
 				end
 				-- Linkify the output
-				chatMsg = app:Linkify(questID .. " [HQT]", "7aff92", "search:questID:" .. questID);
+				chatMsg = app:Linkify(questID .. " [HQT]", app.Colors.ChatLinkHQT, "search:questID:" .. questID);
 			else
 				if app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
 					return true;
 				end
 				-- Linkify the output
-				chatMsg = app:Linkify(questID, "149bfd", "search:questID:" .. questID);
+				chatMsg = app:Linkify(questID, app.Colors.ChatLink, "search:questID:" .. questID);
 			end
 		end
 		print("Quest",questChange,chatMsg,(info or ""));
@@ -4093,7 +4163,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							-- if this is true here, that means C_TransmogCollection_GetAllAppearanceSources() for this SourceID's VisualID
 							-- does not return this SourceID, so it doesn't get flagged by the refresh logic and we need to track it manually for
 							-- this Account as being 'collected'
-							if topLevelSearch then tinsert(info, { left = Colorize(L["ADHOC_UNIQUE_COLLECTED_INFO"], "ffe35832") }); end
+							if topLevelSearch then tinsert(info, { left = Colorize(L["ADHOC_UNIQUE_COLLECTED_INFO"], app.Colors.ChatLinkError) }); end
 							-- if the tooltip immediately refreshes for whatever reason the
 							-- store this SourceID as being collected* so it can be properly collected* during force refreshes in the future without requiring a tooltip search
 							if not ATTAccountWideData.BrokenUniqueSources then ATTAccountWideData.BrokenUniqueSources = {}; end
@@ -4104,9 +4174,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 					if topLevelSearch then
 						if app.IsReady and sourceGroup.missing and itemID ~= 53097 then
-							tinsert(info, { left = Colorize("Item Source not found in the " .. app.Version .. " database.\n" .. L["SOURCE_ID_MISSING"], "ffff0000") });	-- Do not localize first part of the message, it is for contribs
-							tinsert(info, { left = Colorize(sourceID .. ":" .. tostring(sourceInfo.visualID), "ffe35832") });
-							tinsert(info, { left = Colorize(itemString, "ffe35832") });
+							tinsert(info, { left = Colorize("Item Source not found in the " .. app.Version .. " database.\n" .. L["SOURCE_ID_MISSING"], app.Colors.ChatLinkError) });	-- Do not localize first part of the message, it is for contribs
+							tinsert(info, { left = Colorize(sourceID .. ":" .. tostring(sourceInfo.visualID), app.Colors.SourceIgnored) });
+							tinsert(info, { left = Colorize(itemString, app.Colors.SourceIgnored) });
 						end
 						if app.Settings:GetTooltipSetting("visualID") then tinsert(info, { left = L["VISUAL_ID"], right = tostring(sourceInfo.visualID) }); end
 						if app.Settings:GetTooltipSetting("sourceID") then tinsert(info, { left = L["SOURCE_ID"], right = sourceID .. " " .. GetCollectionIcon(sourceInfo.isCollected) }); end
@@ -4165,7 +4235,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							tinsert(info, 1, { left = L["ARTIFACT_RELIC_COMPLETION"], right = L[progress == total and "TRADEABLE" or "NOT_TRADEABLE"] });
 						end
 					else
-						tinsert(info, 1, { left = L["ARTIFACT_RELIC_CACHE"], wrap = true, color = "ff66ccff" });
+						tinsert(info, 1, { left = L["ARTIFACT_RELIC_CACHE"], wrap = true, color = app.Colors.TooltipDescription });
 					end
 				end
 			end
@@ -4437,21 +4507,21 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	if topLevelSearch and not app.ATTWindowTooltip then
 		-- Add various text to the group now that it has been consolidated from all sources
 		if group.isLimited then
-			tinsert(info, 1, { left = L.LIMITED_QUANTITY, wrap = false, color = "ff66ccff" });
+			tinsert(info, 1, { left = L.LIMITED_QUANTITY, wrap = false, color = app.Colors.TooltipDescription });
 		end
 		-- Description for Items
 		if group.lore and app.Settings:GetTooltipSetting("Lore") then
-			tinsert(info, 1, { left = group.lore, wrap = true, color = "ff66ccff" });
+			tinsert(info, 1, { left = group.lore, wrap = true, color = app.Colors.TooltipDescription });
 		end
 		if group.description and app.Settings:GetTooltipSetting("Descriptions") then
-			tinsert(info, 1, { left = group.description, wrap = true, color = "ff66ccff" });
+			tinsert(info, 1, { left = group.description, wrap = true, color = app.Colors.TooltipDescription });
 		end
 		if group.u and (not group.crs or group.itemID or group.s) then
 			tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][group.u][2], wrap = true });
 		end
 		-- an item used for a faction which is repeatable
 		if group.itemID and group.factionID and group.repeatable then
-			tinsert(info, { left = L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(group.factionID)) or ("Faction #" .. tostring(group.factionID))) .. "'", wrap = true, color = "ff66ccff" });
+			tinsert(info, { left = L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(group.factionID)) or ("Faction #" .. tostring(group.factionID))) .. "'", wrap = true, color = app.Colors.TooltipDescription });
 		end
 		-- Pet Battles
 		if group.pb then
@@ -4463,7 +4533,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		end
 		if paramA == "itemID" and paramB == 137642 then
 			if app.Settings:GetTooltipSetting("SummarizeThings") then
-				tinsert(info, 1, { left = L["MARKS_OF_HONOR_DESC"], color = "ffff8426" });
+				tinsert(info, 1, { left = L["MARKS_OF_HONOR_DESC"], color = app.Colors.SourceIgnored });
 			end
 		end
 		-- Ignored for Source/Progress
@@ -4618,7 +4688,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		if #knownBy > 0 then
 			app.Sort(knownBy, function(a, b) return (a.name or "") < (b.name or ""); end);
 			local desc = L["KNOWN_BY"] .. app.TableConcat(knownBy, "text", "??", ", ");
-			tinsert(info, { left = string.gsub(desc, "-" .. GetRealmName(), ""), wrap = true, color = "ff66ccff" });
+			tinsert(info, { left = string.gsub(desc, "-" .. GetRealmName(), ""), wrap = true, color = app.Colors.TooltipDescription });
 		end
 	end
 
@@ -6244,57 +6314,6 @@ app.ToggleMainList = function()
 end
 app.RefreshCollections = RefreshCollections;
 app.RefreshSaves = RefreshSaves;
--- Attempts to determine the colorized text for a given Group
-app.TryColorizeName = function(group, name)
-	if not name or name == RETRIEVING_DATA then return name; end
-	-- breadcrumbs
-	if group.isBreadcrumb then
-		return Colorize(name, "ff7f40bf");
-	-- raid headers
-	elseif group.isRaid then
-		return Colorize(name, "ffff8000");
-	-- faction rep status
-	elseif group.factionID and group.standing then
-		return app.ColorizeStandingText((group.saved and 8) or (group.standing + (group.isFriend and 2 or 0)), name);
-	-- groups which are ignored for progress
-	elseif group.sourceIgnored then
-		return Colorize(name, "ff7f40bf");
-		-- if people REALLY only want to see colors in account/debug then we can comment this in
-	elseif app.Settings:GetTooltipSetting("UseMoreColors") --and (app.MODE_ACCOUNT or app.MODE_DEBUG)
-	then
-		-- class color
-		if group.classID then
-			return Colorize(name, RAID_CLASS_COLORS[select(2, GetClassInfo(group.classID))].colorStr);
-		elseif group.c and #group.c == 1 then
-			return Colorize(name, RAID_CLASS_COLORS[select(2, GetClassInfo(group.c[1]))].colorStr);
-		-- faction colors
-		elseif group.r then
-			-- red for Horde
-			if group.r == Enum.FlightPathFaction.Horde then
-				return Colorize(name, "ffcc6666");
-			-- blue for Alliance
-			elseif group.r == Enum.FlightPathFaction.Alliance then
-				return Colorize(name, "ff407fbf");
-			end
-		-- specific races
-		elseif group.races then
-			local hrace = containsAny(group.races, HORDE_ONLY);
-			local arace = containsAny(group.races, ALLIANCE_ONLY);
-			if hrace and not arace then
-				-- this group requires a horde-only race, and not any alliance race
-				return Colorize(name, "ffcc6666");
-			elseif arace and not hrace then
-				-- this group requires a alliance-only race, and not any horde race
-				return Colorize(name, "ff407fbf");
-			end
-		-- un-acquirable color
-		-- TODO: grey color for things which are otherwise not available to the current character (would only show in account mode due to filtering)
-		-- elseif not app.FilterItemClass(group) then
-		-- 	return Colorize(name, "ff808080");
-		end
-	end
-	return name;
-end
 
 -- Tooltip Functions
 -- Consolidated logic for whether a tooltip should include ATT information based on combat & user settings
@@ -15444,9 +15463,9 @@ RowOnEnter = function (self)
 				end
 			elseif reference.r and reference.r > 0 then
 				if reference.r == 2 then
-					GameTooltip:AddDoubleLine(L["RACES_CHECKBOX"], app.Settings:GetTooltipSetting("UseMoreColors") and Colorize(ITEM_REQ_ALLIANCE, "ff407fbf") or ITEM_REQ_ALLIANCE);
+					GameTooltip:AddDoubleLine(L["RACES_CHECKBOX"], app.Settings:GetTooltipSetting("UseMoreColors") and Colorize(ITEM_REQ_ALLIANCE, app.Colors.Alliance) or ITEM_REQ_ALLIANCE);
 				elseif reference.r == 1 then
-					GameTooltip:AddDoubleLine(L["RACES_CHECKBOX"], app.Settings:GetTooltipSetting("UseMoreColors") and Colorize(ITEM_REQ_HORDE, "ffcc6666") or ITEM_REQ_HORDE);
+					GameTooltip:AddDoubleLine(L["RACES_CHECKBOX"], app.Settings:GetTooltipSetting("UseMoreColors") and Colorize(ITEM_REQ_HORDE, app.Colors.Horde) or ITEM_REQ_HORDE);
 				else
 					GameTooltip:AddDoubleLine(L["RACES_CHECKBOX"], "Unknown");
 				end
@@ -15904,7 +15923,7 @@ RowOnEnter = function (self)
 						if key == "shared" then
 							-- Skip
 						else
-							GameTooltip:AddDoubleLine(Colorize(GetDifficultyInfo(key), app.DifficultyColors[key] or "ff1eff00"), date("%c", value.reset));
+							GameTooltip:AddDoubleLine(Colorize(GetDifficultyInfo(key), app.DifficultyColors[key] or app.Colors.DefaultDifficulty), date("%c", value.reset));
 							for encounterIter,encounter in pairs(value.encounters) do
 								GameTooltip:AddDoubleLine(" " .. encounter.name, GetCompletionIcon(encounter.isKilled));
 							end
@@ -16286,7 +16305,7 @@ app.DynamicCategory_Simple = function(self)
 		-- dynamic groups are ignored for the source tooltips
 		self.sourceIgnored = true;
 		-- change the text color of the dynamic group to help indicate it is not included in the window total
-		self.text = Colorize(self.text, "ff7f40bf");
+		self.text = Colorize(self.text, app.Colors.SourceIgnored);
 		-- sort all of the Things by name in each top header and put it under the dynamic group
 		for _,header in pairs(topHeaders) do
 			-- delay-sort the groups in each categorized header
@@ -16311,7 +16330,7 @@ app.DynamicCategory_Nested = function(self)
 	-- dynamic groups are ignored for the source tooltips
 	self.sourceIgnored = true;
 	-- change the text color of the dynamic group to help indicate it is not included in the window total
-	self.text = Colorize(self.text, "ff7f40bf");
+	self.text = Colorize(self.text, app.Colors.SourceIgnored);
 	-- pull out all Things which should go into this category based on field & value
 	self.g = app:BuildSearchResponse(app:GetWindow("Prime").data.g, self.dynamic, self.dynamic_value, true);
 	-- reset indents and such
@@ -16564,7 +16583,7 @@ function app:GetDataCache()
 		flightPathsCategory.fps = {};
 		flightPathsCategory.expanded = false;
 		flightPathsCategory.icon = app.asset("Category_FlightPaths");
-		flightPathsCategory.text = Colorize(L["FLIGHT_PATHS"], "ff7f40bf");
+		flightPathsCategory.text = Colorize(L["FLIGHT_PATHS"], app.Colors.SourceIgnored);
 		db.name = L["FLIGHT_PATHS"];
 		tinsert(g, flightPathsCategory);
 
@@ -22181,7 +22200,7 @@ end
 
 	-- Turns a bit of text into a colored link which ATT will attempt to understand
 	function app:Linkify(text, color, operation)
-		text = "|Hgarrmission:ATT:"..operation.."|h|cff"..color.."["..text.."]|r|h";
+		text = "|Hgarrmission:ATT:"..operation.."|h|c"..color.."["..text.."]|r|h";
 		-- print("Linkify",text)
 		return text;
 	end
