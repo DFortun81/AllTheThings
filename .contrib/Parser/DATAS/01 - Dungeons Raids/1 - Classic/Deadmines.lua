@@ -786,7 +786,9 @@ root("HiddenQuestTriggers", {
 -- #endif
 --[[
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	q(28004),	-- Adventurers Wanted: The Deadmines [Horde]
-	q(28005),	-- Adventurers Wanted: The Deadmines [Alliance]
+	tier(CATA_TIER, {
+		q(28004),	-- Adventurers Wanted: The Deadmines [Horde]
+		q(28005),	-- Adventurers Wanted: The Deadmines [Alliance]
+	}),
 }));
 ]]--
