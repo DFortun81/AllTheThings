@@ -261,6 +261,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							-- #if AFTER 7.3.5
 							i(27416),	-- Fetish of the Fallen
 							-- #endif
+							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
 							i(33836),	-- The Exarch's Soul Gem
 							n(18478, {	-- Avatar of the Fallen
 								["description"] = "This mob will spawn once the Exarch reaches 25%. If you want the extra loot, the Exarch must stay alive until he spawns.",

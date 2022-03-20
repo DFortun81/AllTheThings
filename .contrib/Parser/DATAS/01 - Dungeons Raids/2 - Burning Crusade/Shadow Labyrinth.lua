@@ -350,6 +350,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(30532),	-- Kirin Tor Master's Trousers
 							i(27902),	-- Silent Slippers of Meditation
 							i(24309),	-- Pattern: Spellstrike Pants
+							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
 							i(33840),	-- Murmur's Whisper
 							i(31722),	-- Murmur's Essence
 						},

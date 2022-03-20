@@ -360,6 +360,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(27780),	-- Ring of Fabled Hope
 							i(27896),	-- Alembic of Infernal Power
 							i(27770),	-- Argussian Compass
+							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
 							i(24248),	-- Brain of the Black Stalker
 							i(33826),	-- Black Stalker Egg
 						},

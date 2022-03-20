@@ -364,6 +364,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(28406),	-- Sigil-Laced Boots
 							i(28407),	-- Elementium Band of the Sentry
 							i(28418),	-- Shiffar's Nexus-Horn
+							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
 							i(33861),	-- The Scroll of Skyriss
 						},
 					}),

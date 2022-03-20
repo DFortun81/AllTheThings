@@ -360,6 +360,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(27522),	-- World's End Bracers (7.3.5 - Moved to Warbringer O'mrogg in Shattered Halls!)
 							i(27494),	-- Emerald Eye Bracer (7.3.5 - Moved to Broggok)
 							-- #endif
+							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
 							i(33814),	-- Keli'dan's Feathered Stave
 						}
 					}),

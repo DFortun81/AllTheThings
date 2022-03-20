@@ -256,6 +256,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(28204),	-- Tunic of Assassination
 							i(30533),	-- Vanquisher's Legplates
 							i(21907),	-- Pattern: Arcanoweave Robe
+							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
 							i(31086),	-- Bottom Shard of the Arcatraz Key
 							i(33860),	-- Pathaleon's Projector
 						},

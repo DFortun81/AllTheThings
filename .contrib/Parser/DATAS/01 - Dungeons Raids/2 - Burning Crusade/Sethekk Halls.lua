@@ -336,6 +336,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(27838),	-- Incanter's Trousers
 							i(27948),	-- Trousers of Oblivion
 							i(27925),	-- Ravenclaw Band
+							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
 							i(27632),	-- Terokk's Quill
 							i(33834),	-- The Headfeathers of Ikiss
 							i(27991, {	-- Shadow Labyrinth Key

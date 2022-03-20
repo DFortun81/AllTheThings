@@ -416,6 +416,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(25962),	-- Longstrider's Loop
 							-- #endif
 							i(27828),	-- Warp-Scarab Brooch
+							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
 							i(28490),	-- Shaffar's Wrappings
 							i(33835),	-- Shaffar's Wondrous Amulet
 							i(22921),	-- Recipe: Major Frost Protection Potion

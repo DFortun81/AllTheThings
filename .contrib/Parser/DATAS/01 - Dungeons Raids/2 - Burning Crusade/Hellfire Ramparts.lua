@@ -362,6 +362,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							-- #endif
 							i(27467),	-- Silent-Strider Kneeboots
 							i(27895),	-- Band of Many Prisms
+							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
 							i(23886),	-- Omor's Hoof
 						},
 					}),

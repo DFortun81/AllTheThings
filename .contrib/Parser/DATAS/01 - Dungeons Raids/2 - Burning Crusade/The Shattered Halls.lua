@@ -616,6 +616,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							-- #if BEFORE 7.3.5
 							i(27529),	-- Figurine of the Colossus
 							-- #endif
+							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
 							i(33815),	-- Bladefist's Seal
 							i(23723),	-- Warchief Kargath's Fist
 						},

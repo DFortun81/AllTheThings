@@ -246,6 +246,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(27873),	-- Moonglade Pants (7.3.5 - Moved to Chrono Lord Deja)
 							-- #endif
 							i(28190),	-- Scarab of the Infinite Cycle
+							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
 							i(33858),	-- Aeonus' Hourglass
 						},
 					})

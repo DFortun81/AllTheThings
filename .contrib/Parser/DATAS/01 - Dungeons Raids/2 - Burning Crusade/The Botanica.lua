@@ -297,6 +297,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							-- #endif
 							i(28341),	-- Warpstaff of Arcanum
 							i(24311),	-- Pattern: Whitemend Hood
+							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
 							i(31085),	-- Top Shard of the Arcatraz Key
 							i(33859),	-- Warp Splinter Clipping
 						},
