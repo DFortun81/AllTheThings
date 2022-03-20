@@ -459,6 +459,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["description"] = "Requires Aealic Understanding and Chapter 6. Rondure Locus Arrangement is found at 50.5, 27.6 Close to Tertius Locus. Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
 				["coord"] = { 43, 40, 2029 },
 				["questID"] = 65567,
+				["isDaily"] = true,
 				["g"] = {
 					i(190096, {	-- Pocobold
 						["questID"] = 65534,
