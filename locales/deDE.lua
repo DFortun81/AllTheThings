@@ -3036,13 +3036,13 @@ for key,value in pairs({
 	[375538] = "Verlorener Ovoid",	-- Lost Ovoid
 	[375693] = "Protoformbauplan",	-- Protoform Schematic
 	[375694] = "Protoformbauplan",	-- Protoform Schematic
-	--TODO: [375746] = "Protoform Schematic",	-- Protoform Schematic
+	[375746] = "Prototypbauplan",	-- Prototype Schematic
 	[375748] = "Protoformbauplan",	-- Protoform Schematic
 	[375889] = "Protoformbauplan",	-- Protoform Schematic
 	[375893] = "Sehr wertvoller Schatz",	-- High Value Cache
 	[375900] = "Protoformbauplan",	-- Protoform Schematic
 	[375902] = "Zerfleddertes Astraltuch",	-- Torn Ethereal Drape
-	--TODO: [375903] = "Protoform Schematic",	-- Protoform Schematic
+	[375903] = "Protoformbauplan",	-- Protoform Schematic
 	[375905] = "Protoformbauplan",	-- Protoform Schematic
 	[375907] = "Protoformbauplan",	-- Protoform Schematic
 	[375915] = "Schimmer des Gleichmuts",	-- Glimmer of Serenity
