@@ -1863,7 +1863,7 @@ root("Zones", m(KALIMDOR, {
 				q(6365,  {	-- Meats to Orgrimmar
 					["qg"] = 3881,	-- Grimtak
 					["coord"] = { 50.7, 42.8, DUROTAR },
-					["races"] = HORDE_ONLY,
+					["races"] = { ORC, TROLL, MAGHAR },
 				}),
 				-- #endif
 				q(25267, {	-- Message for Garrosh (Cata) / Vol'jin (WoD) / Saurfang (Legion) <-- Need more work
