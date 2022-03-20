@@ -3351,6 +3351,7 @@ _.ObjectIcons = {
 	[343611] = "Interface/Icons/inv_misc_food_legion_gooamberpurple_chunk",	-- Voidtouched Egg
 	[350978] = "Interface/Icons/inv_legion_cache_dreamweavers",	-- Queen's Conservatory Cache
 	[357758] = "Interface/Icons/ability_vehicle_plaguebarrel",	-- Plague Barrel
+	[353484] = "Interface\\Icons\\inv_blacksmithing_greaterweightstone",
 	[9999890] = "Interface/Icons/INV_Heart_of_the_Thunder King_Icon",	-- Corrupted Loot
 	[9999891] = "Interface/Icons/ability_paladin_blessedmending",	-- Main Objective Only
 	[9999892] = "Interface/Icons/spell_holy_healingfocus",	-- Main Objective + 2 Bonus Areas

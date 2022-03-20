@@ -5,7 +5,6 @@
 root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 	m(ORIBOS, {
 		o(353484, {	-- The Great Vault
-			["icon"] = "Interface\\Icons\\inv_blacksmithing_greaterweightstone",
 			["description"] = "Can Only be obtained from the great vault.",
 			["g"] = pvp(bubbleDown({ ["bonusID"] = 7897 }, {
 				cl(DEATHKNIGHT, {

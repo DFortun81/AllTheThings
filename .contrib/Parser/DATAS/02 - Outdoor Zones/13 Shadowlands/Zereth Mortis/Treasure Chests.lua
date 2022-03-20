@@ -378,7 +378,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			}),
 			-- Sands
 			o(375397, {	-- Glinting Sand Pile
-				["description"] = "Requires Altonian Understanding and Chapter 6. Dormant Locus Arrangement is found at 51.0, 32.5 between 2 pillars, on the side of one of the pillars (accessible from flying or via the Quintus Locus and dropping down). Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
+				["description"] = "Requires Altonian Understanding and Chapter 6. Dormant Alcove Arrangement is found at 51.0, 32.5 between 2 pillars, on the side of one of the pillars (accessible from flying or via the Quintus Locus and dropping down). Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
 				["coord"] = { 45.1, 36, 2029 },
 				["questID"] = 65495,
 				["cost"] = { { "i", 189863, 1 }, },	-- 1xSpatial Opener
@@ -389,7 +389,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				},
 			}),
 			o(375399, {	-- Humming Sand Pile
-				["description"] = "Requires Altonian Understanding and Chapter 6. Dormant Locus Arrangement is found at 51.0, 32.5 between 2 pillars, on the side of one of the pillars (accessible from flying or via the Quintus Locus and dropping down). Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
+				["description"] = "Requires Altonian Understanding and Chapter 6. Dormant Alcove Arrangement is found at 51.0, 32.5 between 2 pillars, on the side of one of the pillars (accessible from flying or via the Quintus Locus and dropping down). Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
 				["coord"] = { 44.3, 36.7, 2029 },
 				["questID"] = 65497,
 				["cost"] = { { "i", 189863, 1 }, },	-- 1xSpatial Opener
@@ -400,7 +400,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				},
 			}),
 			o(375396, {	-- Lumpy Sand Pile
-				["description"] = "Requires Altonian Understanding and Chapter 6. Dormant Locus Arrangement is found at 51.0, 32.5 between 2 pillars, on the side of one of the pillars (accessible from flying or via the Quintus Locus and dropping down). Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
+				["description"] = "Requires Altonian Understanding and Chapter 6. Dormant Alcove Arrangement is found at 51.0, 32.5 between 2 pillars, on the side of one of the pillars (accessible from flying or via the Quintus Locus and dropping down). Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
 				["coord"] = { 44.8, 36.9, 2029 },
 				["questID"] = 65494,
 				["cost"] = { { "i", 189863, 1 }, },	-- 1xSpatial Opener
@@ -422,7 +422,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				},
 			}),
 			o(375398, {	-- Shifting Sand Pile
-				["description"] = "Requires Altonian Understanding and Chapter 6. Dormant Locus Arrangement is found at 51.0, 32.5 between 2 pillars, on the side of one of the pillars (accessible from flying or via the Quintus Locus and dropping down). Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
+				["description"] = "Requires Altonian Understanding and Chapter 6. Dormant Alcove Arrangement is found at 51.0, 32.5 between 2 pillars, on the side of one of the pillars (accessible from flying or via the Quintus Locus and dropping down). Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
 				["coord"] = { 43.7, 37.1, 2029 },
 				["questID"] = 65496,
 				["cost"] = { { "i", 189863, 1 }, },	-- 1xSpatial Opener
@@ -433,7 +433,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				},
 			}),
 			o(375401, {	-- Sparkling Sand Pile
-				["description"] = "Requires Altonian Understanding and Chapter 6. Dormant Locus Arrangement is found at 51.0, 32.5 between 2 pillars, on the side of one of the pillars (accessible from flying or via the Quintus Locus and dropping down). Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
+				["description"] = "Requires Altonian Understanding and Chapter 6. Dormant Alcove Arrangement is found at 51.0, 32.5 between 2 pillars, on the side of one of the pillars (accessible from flying or via the Quintus Locus and dropping down). Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
 				["coord"] = { 43.9, 36.5, 2029 },
 				["questID"] = 65499,
 				["cost"] = { { "i", 189863, 1 }, },	-- 1xSpatial Opener
@@ -445,7 +445,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				},
 			}),
 			o(375402, {	-- Ticking Sand Pile
-				["description"] = "Requires Altonian Understanding and Chapter 6. Dormant Locus Arrangement is found at 51.0, 32.5 between 2 pillars, on the side of one of the pillars (accessible from flying or via the Quintus Locus and dropping down). Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
+				["description"] = "Requires Altonian Understanding and Chapter 6. Dormant Alcove Arrangement is found at 51.0, 32.5 between 2 pillars, on the side of one of the pillars (accessible from flying or via the Quintus Locus and dropping down). Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
 				["coord"] = { 43.8, 37.6, 2029 },
 				["questID"] = 65500,
 				["cost"] = { { "i", 189863, 1 }, },	-- 1xSpatial Opener
@@ -456,7 +456,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				},
 			}),
 			o(375494, {	-- Rondure Cache
-				["description"] = "Requires Aealic Understanding and Chapter 6. Rondure Locus Arrangement is found at 50.5, 27.6 Close to Tertius Locus. Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
+				["description"] = "Requires Aealic Understanding and Chapter 6. Rondure Alcove Arrangement is found at 50.5, 27.6 Close to Tertius Locus. Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
 				["coord"] = { 43, 40, 2029 },
 				["questID"] = 65567,
 				["isDaily"] = true,
@@ -472,7 +472,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				},
 			}),
 			o(375902, {	-- Torn Ethereal Drape
-				["description"] = "Requires Aealic Understanding and Chapter 6. Fulgore Locus Arrangement is found at 47.8, 30.4 on an upper platform, on the side of a pillar (accessible from flying or possibly via the Secundus Locus). Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
+				["description"] = "Requires Aealic Understanding and Chapter 6. Fulgore Alcove Arrangement is found at 47.8, 30.4 on an upper platform, on the side of a pillar (accessible from flying or possibly via the Secundus Locus). Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
 				["coord"] = { 46.7, 39.3, 2029 },
 				["questID"] = 65643,
 				["g"] = {
@@ -480,7 +480,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				},
 			}),
 			n(185261, {	-- Requisites Originator
-				["description"] = "Requires Aealic Understanding and Chapter 6. Repertory Locus Arrangement is found at 49.6, 31.0, inside the Terrestial Cache, on the side of the left wall after you enter. Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.\n\nThis machine can be used once per week.",
+				["description"] = "Requires Aealic Understanding and Chapter 6. Repertory Alcove Arrangement is found at 49.6, 31.0, inside the Terrestial Cache, on the side of the left wall after you enter. Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.\n\nThis machine can be used once per week.",
 				["coord"] = { 31.3, 65, 2029 },
 				["questID"] = 65532,	-- Fourth Option?
 				["isWeekly"] = true,
