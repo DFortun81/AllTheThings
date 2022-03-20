@@ -936,6 +936,7 @@ for key,value in pairs({
 	[35251] = "Karnitols Truhe",	-- Karnitol's Chest
 	[37099] = "Schrifttafel der Atal'ai",	-- Atal'ai Tablet
 	[91138] = "Jordans Hammer",	-- Jordan's Hammer
+	[103821] = "Doans Geldkassette",	-- Doan's Strongbox
 	[112948] = "Verschlossene Geldkassette der 'Kühnheit'",	-- Intrepid's Locked Strongbox
 	[113757] = "Schattenschmiedecache",	-- Shadowforge Cache
 	[123329] = "Baelogs Truhe",	-- Baelog's Chest
@@ -990,6 +991,7 @@ for key,value in pairs({
 	[176090] = "Menschliche Überreste",	-- Human Remains
 	[176091] = "Kessel der Totenwaldfelle",	-- Deadwood Cauldron
 	[176115] = "Steckbrief: Arnak Grimmtotem",	-- Wanted Poster - Arnak Grimtotem
+	[176192] = "Verzeichnis der Abtrünnigen",	-- Catalogue of the Wayward
 	[176361] = "Geißelkessel",	-- Scourge Cauldron
 	[176392] = "Geißelkessel",	-- Scourge Cauldron
 	[176393] = "Geißelkessel",	-- Scourge Cauldron
@@ -2699,6 +2701,7 @@ for key,value in pairs({
 	[353336] = "Geheimer Schatz",	-- Secret Treasure
 	[353380] = "Halis' Henkelmann",	-- Halis's Lunch Pail
 	[353472] = "Strahlendes Schwert",	-- Radiant Sword
+	[353484] = "Die Große Schatzkammer",	-- The Great Vault
 	[353500] = "Silberne Schließkassette",	-- Silver Strongbox
 	[353503] = "Silberne Schließkassette",	-- Silver Strongbox
 	[353516] = "Silberne Schließkassette",	-- Silver Strongbox
@@ -2844,6 +2847,7 @@ for key,value in pairs({
 	[358318] = "Gräberporträt von R. Suavel",	-- R. Suavel Dredger Portrait
 	[358319] = "Notiz des Zauberers",	-- Sorceror's Note
 	[358382] = "Gesucht: Chelicera",	-- Wanted: Chelicera
+	[358398] = "Verschollenes Tagebuch",	-- Lost Journal
 	[358399] = "Sechsmeilenrucksack",	-- Six-League Pack
 	[358531] = "Epischer Riesenschatz",	-- Giant Cache of Epic Treasure
 	[358533] = "Vergessene Vorräte",	-- Forgotten Supplies
@@ -2856,6 +2860,7 @@ for key,value in pairs({
 	[364932] = "Lodernder Barren",	-- Blazing Ingot
 	[364937] = "Phasenschröpfer",	-- Phasic Siphoner
 	[364987] = "Mittlertagebuch",	-- Broker Journal
+	[365093] = "Theotars Liederbücher",	-- Theotar's Caroling Books
 	[368205] = "Schlundgebundene Truhe",	-- Mawsworn Cache
 	[368206] = "Schlundgebundene Truhe",	-- Mawsworn Cache
 	[368207] = "Schlundgebundene Truhe",	-- Mawsworn Cache
@@ -2931,6 +2936,7 @@ for key,value in pairs({
 	[369438] = "Rissgebundene Truhe",	-- Riftbound Cache
 	[369439] = "Rissgebundene Truhe",	-- Riftbound Cache
 	[369440] = "Rissgebundene Truhe",	-- Riftbound Cache
+	[369602] = "Hände des Widerstands",	-- Hands of Defiance
 	[369757] = "Untergetauchte Truhe",	-- Submerged Chest
 	[370140] = "Beschädigter Behälter der Jiro",	-- Damaged Jiro Stash
 	[370469] = "Spektrales Futter",	-- Spectral Feed
@@ -2938,6 +2944,7 @@ for key,value in pairs({
 	[373437] = "Stinkender Blobfischschwarm",	-- Pungent Blobfish Cluster
 	[373438] = "Spiralkrallententakel",	-- Coilclutch Vine
 	[373439] = "Ein Schwarm Flossenfische",	-- Flipper Fish School
+	[373460] = "Faenetz",	-- Fae Net
 	[373471] = "Mezzonische Truhe",	-- Mezzonic Cache
 	[373472] = "Glissandische Truhe",	-- Glissandian Cache
 	[373473] = "Fugalische Truhe",	-- Fugueal Cache
@@ -2960,6 +2967,7 @@ for key,value in pairs({
 	[373587] = "Erregbare Konkordanz",	-- Excitable Concordance
 	[373588] = "Wechselhafte Konkordanz",	-- Mercurial Concordance
 	[374976] = "Symphonisches Archiv",	-- Symphonic Vault
+	[375021] = "Zugrunde gegangenes Automa",	-- Perished Automa
 	[375058] = "Toccatianische Truhe",	-- Toccatian Cache
 	[375059] = "Mezzonische Truhe",	-- Mezzonic Cache
 	[375060] = "Glissandische Truhe",	-- Glissandian Cache

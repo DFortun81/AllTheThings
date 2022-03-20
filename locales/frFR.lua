@@ -934,6 +934,7 @@ for key,value in pairs({
 	[35251] = "Coffre de Karnitol",	-- Karnitol's Chest
 	[37099] = "Tablette atal'ai",	-- Atal'ai Tablet
 	[91138] = "Marteau de Jordan",	-- Jordan's Hammer
+	[103821] = "Coffre de Doan",	-- Doan's Strongbox
 	[112948] = "Coffre verrouillé de l'Intrépide",	-- Intrepid's Locked Strongbox
 	[113757] = "Cachette d'Ombreforge",	-- Shadowforge Cache
 	[123329] = "Coffre de Baelog",	-- Baelog's Chest
@@ -988,6 +989,7 @@ for key,value in pairs({
 	[176090] = "Cadavres humains",	-- Human Remains
 	[176091] = "Chaudron des Mort-bois",	-- Deadwood Cauldron
 	[176115] = "Avis de recherche : Arnak Totem-sinistre",	-- Wanted Poster - Arnak Grimtotem
+	[176192] = "Catalogue de l'Indocile",	-- Catalogue of the Wayward
 	[176361] = "Chaudron du Fléau",	-- Scourge Cauldron
 	[176392] = "Chaudron du Fléau",	-- Scourge Cauldron
 	[176393] = "Chaudron du Fléau",	-- Scourge Cauldron
@@ -2697,6 +2699,7 @@ for key,value in pairs({
 	[353336] = "Trésor secret",	-- Secret Treasure
 	[353380] = "Casse-croûte d’Halis",	-- Halis's Lunch Pail
 	[353472] = "Épée radieuse",	-- Radiant Sword
+	[353484] = "La grande chambre-forte",	-- The Great Vault
 	[353500] = "Coffre renforcé en argent",	-- Silver Strongbox
 	[353503] = "Coffre renforcé en argent",	-- Silver Strongbox
 	[353516] = "Coffre renforcé en argent",	-- Silver Strongbox
@@ -2842,6 +2845,7 @@ for key,value in pairs({
 	[358318] = "Portrait purotin de R. Suavel",	-- R. Suavel Dredger Portrait
 	[358319] = "Message de l’ensorceleur",	-- Sorceror's Note
 	[358382] = "Avis de recherche : Chélicère",	-- Wanted: Chelicera
+	[358398] = "Journal perdu",	-- Lost Journal
 	[358399] = "Sac de six lieues",	-- Six-League Pack
 	[358531] = "Cache géante de trésors épiques",	-- Giant Cache of Epic Treasure
 	[358533] = "Fournitures oubliées",	-- Forgotten Supplies
@@ -2854,6 +2858,7 @@ for key,value in pairs({
 	[364932] = "Lingot incandescent",	-- Blazing Ingot
 	[364937] = "Siphonneur phasique",	-- Phasic Siphoner
 	[364987] = "Journal de négociant",	-- Broker Journal
+	[365093] = "Livres de chants festifs de Théotar",	-- Theotar's Caroling Books
 	[368205] = "Cache antrelige",	-- Mawsworn Cache
 	[368206] = "Cache antrelige",	-- Mawsworn Cache
 	[368207] = "Cache antrelige",	-- Mawsworn Cache
@@ -2929,6 +2934,7 @@ for key,value in pairs({
 	[369438] = "Cache liée à la faille",	-- Riftbound Cache
 	[369439] = "Cache liée à la faille",	-- Riftbound Cache
 	[369440] = "Cache liée à la faille",	-- Riftbound Cache
+	[369602] = "Mains de la défiance",	-- Hands of Defiance
 	[369757] = "Coffre submergé",	-- Submerged Chest
 	[370140] = "Butin jiro endommagé",	-- Damaged Jiro Stash
 	[370469] = "Céréales spectrales",	-- Spectral Feed
@@ -2936,6 +2942,7 @@ for key,value in pairs({
 	[373437] = "Banc de poissons-blob âcres",	-- Pungent Blobfish Cluster
 	[373438] = "Liane serre-pelote",	-- Coilclutch Vine
 	[373439] = "Banc de nectalies",	-- Flipper Fish School
+	[373460] = "Filet faë",	-- Fae Net
 	[373471] = "Cache mezzonique",	-- Mezzonic Cache
 	[373472] = "Cache glissandienne",	-- Glissandian Cache
 	[373473] = "Cache fuguéale",	-- Fugueal Cache
@@ -2958,6 +2965,7 @@ for key,value in pairs({
 	[373587] = "Harmonique fébrile",	-- Excitable Concordance
 	[373588] = "Harmonique changeant",	-- Mercurial Concordance
 	[374976] = "Caveau symphonique",	-- Symphonic Vault
+	[375021] = "Automa défunt",	-- Perished Automa
 	[375058] = "Cache toccatienne",	-- Toccatian Cache
 	[375059] = "Cache mezzonique",	-- Mezzonic Cache
 	[375060] = "Cache glissandienne",	-- Glissandian Cache

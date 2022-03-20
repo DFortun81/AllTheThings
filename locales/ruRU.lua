@@ -921,6 +921,7 @@ for key,value in pairs({
 	[35251] = "Сундук Карнитола",	-- Karnitol's Chest
 	[37099] = "Табличка племени Атал'ай",	-- Atal'ai Tablet
 	[91138] = "Молот Джордана",	-- Jordan's Hammer
+	[103821] = "Сейф Доана",	-- Doan's Strongbox
 	[112948] = "Запертый сейф на \"Отважном\".",	-- Intrepid's Locked Strongbox
 	[113757] = "Тайник Тенегорна",	-- Shadowforge Cache
 	[123329] = "Сундук Бейлога",	-- Baelog's Chest
@@ -975,6 +976,7 @@ for key,value in pairs({
 	[176090] = "Человеческие останки",	-- Human Remains
 	[176091] = "Котел Мертвого Леса",	-- Deadwood Cauldron
 	[176115] = "Плакат \"Разыскивается\": Арнак Зловещий Тотем",	-- Wanted Poster - Arnak Grimtotem
+	[176192] = "Перечень Заблудших",	-- Catalogue of the Wayward
 	[176361] = "Котел Плети",	-- Scourge Cauldron
 	[176392] = "Котел Плети",	-- Scourge Cauldron
 	[176393] = "Котел Плети",	-- Scourge Cauldron
@@ -2684,6 +2686,7 @@ for key,value in pairs({
 	[353336] = "Спрятанное сокровище",	-- Secret Treasure
 	[353380] = "Бадья с завтраком Халиса",	-- Halis's Lunch Pail
 	[353472] = "Сияющий меч",	-- Radiant Sword
+	[353484] = "Великое хранилище",	-- The Great Vault
 	[353500] = "Серебряный сундучок",	-- Silver Strongbox
 	[353503] = "Серебряный сундучок",	-- Silver Strongbox
 	[353516] = "Серебряный сундучок",	-- Silver Strongbox
@@ -2829,6 +2832,7 @@ for key,value in pairs({
 	[358318] = "\"Портрет землероя\" Р. Лоска",	-- R. Suavel Dredger Portrait
 	[358319] = "Записка чародея",	-- Sorceror's Note
 	[358382] = "Разыскивается: Хелицера",	-- Wanted: Chelicera
+	[358398] = "Потерянный дневник",	-- Lost Journal
 	[358399] = "Шестимильный вьюк",	-- Six-League Pack
 	[358531] = "Огромный тайник с эпическим сокровищем",	-- Giant Cache of Epic Treasure
 	[358533] = "Забытые припасы",	-- Forgotten Supplies
@@ -2841,6 +2845,7 @@ for key,value in pairs({
 	[364932] = "Полыхающий слиток",	-- Blazing Ingot
 	[364937] = "Фазовый вытягиватель",	-- Phasic Siphoner
 	[364987] = "Журнал брокера",	-- Broker Journal
+	[365093] = "Книга праздничных гимнов Теотара",	-- Theotar's Caroling Books
 	[368205] = "Тайник Верных Утробе",	-- Mawsworn Cache
 	[368206] = "Тайник Верных Утробе",	-- Mawsworn Cache
 	[368207] = "Тайник Верных Утробе",	-- Mawsworn Cache
@@ -2916,6 +2921,7 @@ for key,value in pairs({
 	[369438] = "Тайник Разлома",	-- Riftbound Cache
 	[369439] = "Тайник Разлома",	-- Riftbound Cache
 	[369440] = "Тайник Разлома",	-- Riftbound Cache
+	[369602] = "Руки непокорных",	-- Hands of Defiance
 	[369757] = "Погруженный сундук",	-- Submerged Chest
 	[370140] = "Поврежденный тайник джиро",	-- Damaged Jiro Stash
 	[370469] = "Призрачный корм",	-- Spectral Feed
@@ -2923,6 +2929,7 @@ for key,value in pairs({
 	[373437] = "Косяк едких рыб-капель",	-- Pungent Blobfish Cluster
 	[373438] = "Пружинная лоза",	-- Coilclutch Vine
 	[373439] = "Стая плавунцов",	-- Flipper Fish School
+	[373460] = "Волшебная сеть",	-- Fae Net
 	[373471] = "Меццонийский тайник",	-- Mezzonic Cache
 	[373472] = "Глиссандрийский тайник",	-- Glissandian Cache
 	[373473] = "Фугийский тайник",	-- Fugueal Cache
@@ -2945,6 +2952,7 @@ for key,value in pairs({
 	[373587] = "Волнующий конкорданс",	-- Excitable Concordance
 	[373588] = "Оживленный конкорданс",	-- Mercurial Concordance
 	[374976] = "Симфоническое хранилище",	-- Symphonic Vault
+	[375021] = "Уничтоженный автом",	-- Perished Automa
 	[375058] = "Токкатийский тайник",	-- Toccatian Cache
 	[375059] = "Меццонийский тайник",	-- Mezzonic Cache
 	[375060] = "Глиссандрийский тайник",	-- Glissandian Cache
