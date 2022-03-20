@@ -2996,7 +2996,7 @@ for key,value in pairs({
 	[375388] = "Schéma de protoforme",	-- Protoform Schematic
 	[375389] = "Schéma de protoforme",	-- Protoform Schematic
 	[375390] = "Schéma de protoforme",	-- Protoform Schematic
-	--TODO: [375391] = "Protoform Schematic",	-- Protoform Schematic
+	[375391] = "Schéma de protoforme",	-- Protoform Schematic
 	[375393] = "Schéma de protoforme",	-- Protoform Schematic
 	[375396] = "Tas de sable irrégulier",	-- Lumpy Sand Pile
 	[375397] = "Tas de sable luisant",	-- Glinting Sand Pile
@@ -3034,15 +3034,15 @@ for key,value in pairs({
 	[375538] = "Ovoïde perdu",	-- Lost Ovoid
 	[375693] = "Schéma de protoforme",	-- Protoform Schematic
 	[375694] = "Schéma de protoforme",	-- Protoform Schematic
-	--TODO: [375746] = "Protoform Schematic",	-- Protoform Schematic
+	[375746] = "Schéma de prototype",	-- Prototype Schematic
 	[375748] = "Schéma de protoforme",	-- Protoform Schematic
 	[375889] = "Schéma de protoforme",	-- Protoform Schematic
 	[375893] = "Cache précieuse",	-- High Value Cache
 	[375900] = "Schéma de protoforme",	-- Protoform Schematic
 	[375902] = "Drapé éthérien déchiré",	-- Torn Ethereal Drape
-	--TODO: [375903] = "Protoform Schematic",	-- Protoform Schematic
+	[375903] = "Schéma de protoforme",	-- Protoform Schematic
 	[375905] = "Schéma de protoforme",	-- Protoform Schematic
-	--TODO: [375907] = "Protoform Schematic",	-- Protoform Schematic
+	[375907] = "Schéma de protoforme",	-- Protoform Schematic
 	[375915] = "Lueur de sérénité",	-- Glimmer of Serenity
 	[375950] = "Babiole d’innovation pure",	-- Bauble of Pure Innovation
 	[375972] = "On recherche : Custos",	-- Wanted: Custos

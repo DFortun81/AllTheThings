@@ -3045,9 +3045,9 @@ for key,value in pairs({
 	[375893] = "Alijo de gran valor",	-- High Value Cache
 	[375900] = "Esquema de protoforma",	-- Protoform Schematic
 	[375902] = "Mantón etéreo deshilachado",	-- Torn Ethereal Drape
-	--TODO: [375903] = "Protoform Schematic",	-- Protoform Schematic
+	[375903] = "Esquema de protoforma",	-- Protoform Schematic
 	[375905] = "Esquema de protoforma",	-- Protoform Schematic
-	--TODO: [375907] = "Protoform Schematic",	-- Protoform Schematic
+	[375907] = "Esquema de protoforma",	-- Protoform Schematic
 	[375915] = "Fulgor de la serenidad",	-- Glimmer of Serenity
 	[375950] = "Adorno de innovación pura",	-- Bauble of Pure Innovation
 	[375972] = "Se busca: Custos",	-- Wanted: Custos

@@ -3021,7 +3021,7 @@ for key,value in pairs({
 	[375538] = "Потерянный яйцеобразный объект",	-- Lost Ovoid
 	[375693] = "Схема протосинтеза",	-- Protoform Schematic
 	[375694] = "Схема протосинтеза",	-- Protoform Schematic
-	--TODO: [375746] = "Protoform Schematic",	-- Protoform Schematic
+	[375746] = "Чертеж прототипа",	-- Prototype Schematic
 	[375748] = "Схема протосинтеза",	-- Protoform Schematic
 	[375889] = "Схема протосинтеза",	-- Protoform Schematic
 	[375893] = "Тайник с ценностями",	-- High Value Cache

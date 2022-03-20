@@ -1049,7 +1049,7 @@ for key, value in pairs({
 	[181153] = "通缉布告：邪恶的克尔加什",	-- Wanted Poster: Kel'gash the Wicked
 	[181638] = "通缉布告",	-- Wanted Poster
 	[181672] = "稻草人",	-- Wickerman Effigy	--TODO: This was taken from tbc Wowhead
-	--TODO: [181698] = "Voidstone",	-- Voidstone
+	[181698] = "虚空石",	-- Voidstone	--TODO: This was taken from tbc Wowhead
 	[181748] = "血水晶",	-- Blood Crystal	--TODO: This was taken from tbc Wowhead
 	--TODO: [181756] = "Battered Ancient Book",	-- Battered Ancient Book
 	[181889] = "通缉布告",	-- Wanted Poster
@@ -1345,7 +1345,7 @@ for key, value in pairs({
 	[213768] = "猢狲战士长矛",	-- Hozen Warrior Spear
 	[213769] = "猢狲宝箱",	-- Hozen Treasure Cache
 	[213770] = "失窃的林精宝藏",	-- Stolen Sprite Treasure
-	[213771] = "雪怒雕像",	-- Statue of Xuen	--TODO: This was manually translated
+	[213771] = "雪怒雕像",	-- Statue of Xuen
 	[213774] = "失踪探险者的随身物品",	-- Lost Adventurer's Belongings
 	[213782] = "陶俑头颅",	-- Terracotta Head
 	[213793] = "里克提克的小箱子",	-- Rikktik's Tiny Chest

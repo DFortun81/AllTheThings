@@ -1789,7 +1789,7 @@ for key,value in pairs({
 	[237946] = "영혼 궤짝",	-- Spirit Coffer
 	[239120] = "오쿠나 롱터스크의 가방",	-- Okuna Longtusk's Pack
 	[239143] = "따뜻한 우유 잔",	-- Glass of Warm Milk
-	--TODO: [239171] = "Glass of Warm Milk",	-- Glass of Warm Milk
+	[239171] = "따뜻한 우유 잔",	-- Glass of Warm Milk
 	[239194] = "노라나의 보관함",	-- Norana's Cache
 	[239198] = "이사리의 보관함",	-- Isaari's Cache
 	[239328] = "선장의 사물함",	-- Captain's Foot Locker
@@ -3045,7 +3045,7 @@ for key,value in pairs({
 	[375905] = "원생형태 설계도",	-- Protoform Schematic
 	--TODO: [375907] = "Protoform Schematic",	-- Protoform Schematic
 	[375915] = "평온의 미명",	-- Glimmer of Serenity
-	--TODO: [375950] = "Bauble of Pure Innovation",	-- Bauble of Pure Innovation
+	[375950] = "순수한 혁신의 보석",	-- Bauble of Pure Innovation
 	[375972] = "현상 수배: 쿠스토스",	-- Wanted: Custos
 	[375973] = "피림의 추방기 제1부",	-- Firim in Exile, Part 1
 	[375974] = "결정화된 태초의 노래의 메아리",	-- Crystallized Echo of the First Song

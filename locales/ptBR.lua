@@ -2938,7 +2938,7 @@ for key,value in pairs({
 	[369602] = "Mãos da Revolta",	-- Hands of Defiance
 	[369757] = "Baú Submerso",	-- Submerged Chest
 	[370140] = "Baú de Jiro Danificado",	-- Damaged Jiro Stash
-	--TODO: [370469] = "Spectral Feed",	-- Spectral Feed
+	[370469] = "Alimento Espectral",	-- Spectral Feed
 	[370494] = "Baú Tocatiano",	-- Toccatian Cache
 	--TODO: [373437] = "Pungent Blobfish Cluster",	-- Pungent Blobfish Cluster
 	--TODO: [373438] = "Coilclutch Vine",	-- Coilclutch Vine
@@ -3022,7 +3022,7 @@ for key,value in pairs({
 	[375485] = "Ceifador de Protoflora",	-- Protoflora Harvester
 	[375486] = "Diagrama de Protoforma",	-- Protoform Schematic
 	[375492] = "Câmara Sintática",	-- Syntactic Vault
-	--TODO: [375493] = "Ripened Protopear",	-- Ripened Protopear
+	[375493] = "Protopera Madura",	-- Ripened Protopear
 	[375494] = "Baú Circular",	-- Rondure Cache
 	[375495] = "Folhagem Farfalhante",	-- Undulating Foliage
 	[375496] = "Saca de Produtos Agrícolas Progenitores",	-- Bushel of Progenitor Produce
@@ -3035,7 +3035,7 @@ for key,value in pairs({
 	[375538] = "Ovoide Perdido",	-- Lost Ovoid
 	[375693] = "Diagrama de Protoforma",	-- Protoform Schematic
 	[375694] = "Diagrama de Protoforma",	-- Protoform Schematic
-	--TODO: [375746] = "Protoform Schematic",	-- Protoform Schematic
+	[375746] = "Diagrama de Protótipo",	-- Prototype Schematic
 	[375748] = "Diagrama de Protoforma",	-- Protoform Schematic
 	[375889] = "Diagrama de Protoforma",	-- Protoform Schematic
 	[375893] = "Baú de Alto Valor",	-- High Value Cache
@@ -3043,7 +3043,7 @@ for key,value in pairs({
 	[375902] = "Clâmide Etérea Rasgada",	-- Torn Ethereal Drape
 	[375903] = "Diagrama de Protoforma",	-- Protoform Schematic
 	[375905] = "Diagrama de Protoforma",	-- Protoform Schematic
-	--TODO: [375907] = "Protoform Schematic",	-- Protoform Schematic
+	[375907] = "Diagrama de Protoforma",	-- Protoform Schematic
 	[375915] = "Fulgor da Serenidade",	-- Glimmer of Serenity
 	[375950] = "Bugiganga de Inovação Pura",	-- Bauble of Pure Innovation
 	[375972] = "Procura-se: Custoz",	-- Wanted: Custos
@@ -3057,7 +3057,7 @@ for key,value in pairs({
 	[375986] = "Firim no Exílio, Parte 6",	-- Firim in Exile, Part 6
 	[375987] = "Firim no Exílio, Parte 7",	-- Firim in Exile, Part 7
 	--TODO: [375988] = "Firim in Exile, Epilogue",	-- Firim in Exile, Epilogue
-	--TODO: [376041] = "Shrouded Cypher Cache",	-- Shrouded Cypher Cache
+	[376041] = "Baú de Cifra Amortalhado",	-- Shrouded Cypher Cache
 	[9962198] = "Poça de Lodo Improvisada do Proscrito",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only

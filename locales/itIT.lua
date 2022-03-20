@@ -2985,7 +2985,7 @@ for key,value in pairs({
 	[375363] = "Cassa di Rifornimenti dei Giurafauce",	-- Mawsworn Supply Chest
 	[375366] = "Uova di Taracnide",	-- Tarachnid Eggs
 	[375369] = "Borsa Morsicata",	-- Gnawed Valise
-	--TODO: [375370] = "Protoform Schematic",	-- Protoform Schematic
+	[375370] = "Schema di Protoforma",	-- Protoform Schematic
 	[375371] = "Schema di Protoforma",	-- Protoform Schematic
 	[375373] = "Pezzo di Automa Scartato",	-- Discarded Automa Scrap
 	[375376] = "Cassaforte Caduta",	-- Fallen Vault
@@ -2993,9 +2993,9 @@ for key,value in pairs({
 	[375383] = "Schema di Protoforma",	-- Protoform Schematic
 	[375387] = "Schema di Protoforma",	-- Protoform Schematic
 	[375388] = "Schema di Protoforma",	-- Protoform Schematic
-	--TODO: [375389] = "Protoform Schematic",	-- Protoform Schematic
+	[375389] = "Schema di Protoforma",	-- Protoform Schematic
 	[375390] = "Schema di Protoforma",	-- Protoform Schematic
-	--TODO: [375391] = "Protoform Schematic",	-- Protoform Schematic
+	[375391] = "Schema di Protoforma",	-- Protoform Schematic
 	[375393] = "Schema di Protoforma",	-- Protoform Schematic
 	[375396] = "Cumulo di Sabbia Grumoso",	-- Lumpy Sand Pile
 	[375397] = "Cumulo di Sabbia Scintillante",	-- Glinting Sand Pile
@@ -3020,7 +3020,7 @@ for key,value in pairs({
 	[375485] = "Mietitore di Protoflora",	-- Protoflora Harvester
 	[375486] = "Schema di Protoforma",	-- Protoform Schematic
 	[375492] = "Scrigno Sintattico",	-- Syntactic Vault
-	--TODO: [375493] = "Ripened Protopear",	-- Ripened Protopear
+	[375493] = "Protopera Matura",	-- Ripened Protopear
 	[375494] = "Cassa Arrotondata",	-- Rondure Cache
 	[375495] = "Fogliame Ondeggiante",	-- Undulating Foliage
 	[375496] = "Carico di Prodotti dei Progenitori",	-- Bushel of Progenitor Produce
@@ -3046,7 +3046,7 @@ for key,value in pairs({
 	[375950] = "Ninnolo di Pura Innovazione",	-- Bauble of Pure Innovation
 	[375972] = "Ricercato: Custos",	-- Wanted: Custos
 	[375973] = "Firim in Esilio, Parte 1",	-- Firim in Exile, Part 1
-	--TODO: [375974] = "Crystallized Echo of the First Song",	-- Crystallized Echo of the First Song
+	[375974] = "Eco Cristallizzata del Primo Canto",	-- Crystallized Echo of the First Song
 	[375981] = "Schema di Protoforma",	-- Protoform Schematic
 	[375982] = "Firim in Esilio, Parte 2",	-- Firim in Exile, Part 2
 	[375983] = "Firim in Esilio, Parte 3",	-- Firim in Exile, Part 3
