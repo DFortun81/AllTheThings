@@ -935,6 +935,7 @@ for key, value in pairs({
 	[35251] = "卡尼托的箱子",	-- Karnitol's Chest	--TODO: This was taken from classic Wowhead
 	[37099] = "阿塔莱石板",	-- Atal'ai Tablet
 	[91138] = "乔丹的铁锤",	-- Jordan's Hammer
+	[103821] = "杜安的保险箱",	-- Doan's Strongbox	--TODO: This was taken from classic Wowhead
 	[112948] = "保险箱",	-- Intrepid's Locked Strongbox
 	[113757] = "暗影熔炉地窖",	-- Shadowforge Cache
 	[123329] = "巴尔洛戈的箱子",	-- Baelog's Chest
@@ -989,6 +990,7 @@ for key, value in pairs({
 	[176090] = "人类遗骸",	-- Human Remains
 	[176091] = "死木蒸锅",	-- Deadwood Cauldron
 	[176115] = "通缉：阿纳克·恐怖图腾",	-- Wanted Poster - Arnak Grimtotem	--TODO: This was taken from classic Wowhead
+	[176192] = "游荡者目录",	-- Catalogue of the Wayward	--TODO: This was taken from classic Wowhead
 	[176361] = "瘟疫之锅",	-- Scourge Cauldron	--TODO: This was taken from classic Wowhead
 	[176392] = "天灾之锅",	-- Scourge Cauldron
 	[176393] = "瘟疫之锅",	-- Scourge Cauldron	--TODO: This was taken from classic Wowhead
@@ -2698,6 +2700,7 @@ for key, value in pairs({
 	[353336] = "秘密财宝",	-- Secret Treasure
 	[353380] = "哈利斯的午餐桶",	-- Halis's Lunch Pail
 	[353472] = "光辉之剑",	-- Radiant Sword
+	[353484] = "宏伟宝库",	-- The Great Vault
 	[353500] = "白银保险箱",	-- Silver Strongbox
 	[353503] = "白银保险箱",	-- Silver Strongbox
 	[353516] = "白银保险箱",	-- Silver Strongbox
@@ -2843,6 +2846,7 @@ for key, value in pairs({
 	--TODO: [358318] = "R. Suavel Dredger Portrait",	-- R. Suavel Dredger Portrait
 	[358319] = "巫师的笔记",	-- Sorceror's Note
 	[358382] = "通缉：螫肢",	-- Wanted: Chelicera
+	[358398] = "丢失的日志",	-- Lost Journal
 	[358399] = "六里包",	-- Six-League Pack
 	[358531] = "巨大的史诗财宝箱",	-- Giant Cache of Epic Treasure
 	[358533] = "被遗忘的补给品",	-- Forgotten Supplies
@@ -2855,6 +2859,7 @@ for key, value in pairs({
 	[364932] = "灼光矿锭",	-- Blazing Ingot
 	[364937] = "相位虹吸仪",	-- Phasic Siphoner
 	[364987] = "掮灵日志",	-- Broker Journal
+	--TODO: [365093] = "Theotar's Caroling Books",	-- Theotar's Caroling Books
 	[368205] = "渊誓之箱",	-- Mawsworn Cache
 	[368206] = "渊誓之箱",	-- Mawsworn Cache
 	[368207] = "渊誓之箱",	-- Mawsworn Cache
@@ -2930,6 +2935,7 @@ for key, value in pairs({
 	[369438] = "隙缚宝箱",	-- Riftbound Cache
 	[369439] = "隙缚宝箱",	-- Riftbound Cache
 	[369440] = "隙缚宝箱",	-- Riftbound Cache
+	[369602] = "蔑视之手",	-- Hands of Defiance
 	[369757] = "水下的宝箱",	-- Submerged Chest
 	[370140] = "损坏的机若藏品",	-- Damaged Jiro Stash
 	--TODO: [370469] = "Spectral Feed",	-- Spectral Feed
@@ -2937,6 +2943,7 @@ for key, value in pairs({
 	[373437] = "刺鼻的团豚群",	-- Pungent Blobfish Cluster
 	[373438] = "旋握藤蔓",	-- Coilclutch Vine
 	[373439] = "跳跳鱼群",	-- Flipper Fish School
+	[373460] = "法夜之网",	-- Fae Net
 	[373471] = "中音宝箱",	-- Mezzonic Cache
 	[373472] = "滑音宝箱",	-- Glissandian Cache
 	[373473] = "赋格宝箱",	-- Fugueal Cache
@@ -2959,6 +2966,7 @@ for key, value in pairs({
 	[373587] = "可激发的索引台",	-- Excitable Concordance
 	[373588] = "善变索引台",	-- Mercurial Concordance
 	[374976] = "交响宝箱",	-- Symphonic Vault
+	[375021] = "陨灭的自动体",	-- Perished Automa
 	[375058] = "弹奏宝箱",	-- Toccatian Cache
 	[375059] = "中音宝箱",	-- Mezzonic Cache
 	[375060] = "滑音宝箱",	-- Glissandian Cache

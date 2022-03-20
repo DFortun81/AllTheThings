@@ -935,6 +935,7 @@ for key,value in pairs({
 	[35251] = "Baú de Karnitol",	-- Karnitol's Chest
 	[37099] = "Tabuleta Atal'ai",	-- Atal'ai Tablet
 	[91138] = "Martelo de Jardel",	-- Jordan's Hammer
+	[103821] = "Caixa-forte de Doan",	-- Doan's Strongbox	--TODO: This was taken from classic Wowhead
 	[112948] = "Cofre Trancado do Intrépido",	-- Intrepid's Locked Strongbox
 	[113757] = "Baú de Umbraforja",	-- Shadowforge Cache
 	[123329] = "Baú de Baelog",	-- Baelog's Chest
@@ -989,6 +990,7 @@ for key,value in pairs({
 	[176090] = "Restos Humanos",	-- Human Remains
 	[176091] = "Caldeirão de Lenha Morta",	-- Deadwood Cauldron
 	[176115] = "Pôster de Procura-se – Arnak Temível Totem",	-- Wanted Poster - Arnak Grimtotem	--TODO: This was taken from classic Wowhead
+	[176192] = "Catálogo do Imprevisível",	-- Catalogue of the Wayward	--TODO: This was taken from classic Wowhead
 	[176361] = "Caldeirão do Flagelo",	-- Scourge Cauldron	--TODO: This was taken from classic Wowhead
 	[176392] = "Caldeirão do Flagelo",	-- Scourge Cauldron
 	[176393] = "Caldeirão do Flagelo",	-- Scourge Cauldron	--TODO: This was taken from classic Wowhead
@@ -2698,6 +2700,7 @@ for key,value in pairs({
 	[353336] = "Tesouro Secreto",	-- Secret Treasure
 	[353380] = "Lancheira de Halis",	-- Halis's Lunch Pail
 	[353472] = "Espada Radiante",	-- Radiant Sword
+	[353484] = "Grande Cofre",	-- The Great Vault
 	[353500] = "Caixa-forte de Prata",	-- Silver Strongbox
 	[353503] = "Caixa-forte de Prata",	-- Silver Strongbox
 	[353516] = "Caixa-forte de Prata",	-- Silver Strongbox
@@ -2843,6 +2846,7 @@ for key,value in pairs({
 	[358318] = "Retrato do Dragador R. Suavão",	-- R. Suavel Dredger Portrait
 	[358319] = "Nota do Feiticeiro",	-- Sorceror's Note
 	[358382] = "Procura-se: Quelícera",	-- Wanted: Chelicera
+	[358398] = "Diário Perdido",	-- Lost Journal
 	[358399] = "Bolsa de Seis Léguas",	-- Six-League Pack
 	[358531] = "Baú Gigante de Tesouro Épico",	-- Giant Cache of Epic Treasure
 	[358533] = "Suprimentos Esquecidos",	-- Forgotten Supplies
@@ -2855,6 +2859,7 @@ for key,value in pairs({
 	[364932] = "Lingote Fulgurante",	-- Blazing Ingot
 	[364937] = "Canalizador Fásico",	-- Phasic Siphoner
 	[364987] = "Diário de Corretor",	-- Broker Journal
+	[365093] = "Livros de Canções de Theotar",	-- Theotar's Caroling Books
 	[368205] = "Cabedal Górjuro",	-- Mawsworn Cache
 	[368206] = "Cabedal Górjuro",	-- Mawsworn Cache
 	[368207] = "Cabedal Górjuro",	-- Mawsworn Cache
@@ -2930,6 +2935,7 @@ for key,value in pairs({
 	[369438] = "Cabedal Fendífero",	-- Riftbound Cache
 	[369439] = "Cabedal Fendífero",	-- Riftbound Cache
 	[369440] = "Cabedal Fendífero",	-- Riftbound Cache
+	[369602] = "Mãos da Revolta",	-- Hands of Defiance
 	[369757] = "Baú Submerso",	-- Submerged Chest
 	[370140] = "Baú de Jiro Danificado",	-- Damaged Jiro Stash
 	--TODO: [370469] = "Spectral Feed",	-- Spectral Feed
@@ -2937,6 +2943,7 @@ for key,value in pairs({
 	--TODO: [373437] = "Pungent Blobfish Cluster",	-- Pungent Blobfish Cluster
 	--TODO: [373438] = "Coilclutch Vine",	-- Coilclutch Vine
 	--TODO: [373439] = "Flipper Fish School",	-- Flipper Fish School
+	[373460] = "Rede Feéria",	-- Fae Net
 	[373471] = "Baú Mezônico",	-- Mezzonic Cache
 	[373472] = "Baú Glissandiano",	-- Glissandian Cache
 	[373473] = "Baú Fugueal",	-- Fugueal Cache
@@ -2959,6 +2966,7 @@ for key,value in pairs({
 	[373587] = "Concordância Excêntrica",	-- Excitable Concordance
 	[373588] = "Concordância Mercurial",	-- Mercurial Concordance
 	[374976] = "Cripta Sinfônica",	-- Symphonic Vault
+	[375021] = "Automa Falecido",	-- Perished Automa
 	[375058] = "Baú Tocatiano",	-- Toccatian Cache
 	[375059] = "Baú Mezônico",	-- Mezzonic Cache
 	[375060] = "Baú Glissandiano",	-- Glissandian Cache
