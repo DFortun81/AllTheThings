@@ -16,11 +16,11 @@ _.Zones =
 		m(SHADOWMOON_VALLEY, {
 			["lore"] = "Shadowmoon Valley is a fel-infused zone intended for level 25-30 players in southeastern Outland. Illidan Stormrage resides there in the Black Temple, as well as Maiev Shadowsong, held captive there by the Broken. There are several elite areas that document the destruction of the Burning Legion, as well as Illidan's methods of training demon hunters.",
 			-- #if AFTER WRATH
-			["achievementID"] = 864,
+			["icon"] = "Interface\\Icons\\achievement_zone_shadowmoon",
 			-- #endif
 			["groups"] = {
-				-- #if AFTER WRATH
 				n(ACHIEVEMENTS, {
+					-- #if AFTER MOP
 					ach(9069, {	-- An Awfully Big Adventure
 						["collectible"] = false,
 						["filterID"] = BATTLE_PETS,
@@ -31,7 +31,59 @@ _.Zones =
 							}),
 						},
 					}),
-					ach(1195, {		-- Shadow of the Betrayer
+					-- #endif
+					removeclassicphase(ach(864, {	-- Explore Shadowmoon Valley
+						-- #if BEFORE WRATH
+						["description"] = "Explore Shadowmoon Valley, revealing the covered areas of the world map.",
+						["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
+						-- #endif
+					})),
+					removeclassicphase(ach(1195, {	-- Shadow of the Betrayer
+						-- #if ANYCLASSIC
+						-- #if AFTER CATA
+						["sourceQuests"] = {
+							-- Wildhammer Stronghold
+							10776,	-- Dissension Amongst the Ranks...
+							10678,	-- The Main Course!
+							10744,	-- News of Victory (A)
+							
+							-- Shadowmoon Village
+							10745,	-- News of Victory (H)
+							
+							-- Netherwing Ledge
+							11041,	-- A Job Unfinished...
+							
+							-- The First Death Knight (A)
+							10645,	-- Teron Gorefiend, I Am...
+							
+							-- The First Death Knight (H)
+							10639,	-- Teron Gorefiend, I Am...
+							
+							-- Borrowed Power
+							10651,	-- Varedis Must Be Stopped (Exarch Onaala, Altar of Sha'tar)
+							10692,	-- Varedis Must Be Stopped (Larissa Sunstrike, Sanctum of the Stars)
+							
+							-- Akama's Promise
+							10708,	-- Akama's Promise
+							
+							-- The Cipher of Damnation
+							10588,	-- The Cipher of Damnation
+							
+							-- Anti-Demon Weapons
+							10679,	-- Quenching the Blade
+							
+							-- The Dark Conclave
+							10808,	-- Thwart the Dark Conclave
+						},
+						-- #elseif BEFORE WRATH
+						["description"] = "Complete 90 quests in Shadowmoon Valley.",
+						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
+						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
+						["rank"] = 90,
+						-- #endif
+						-- #else
 						crit(1, {	-- Wildhammer Stronghold
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
@@ -76,9 +128,9 @@ _.Zones =
 						crit(8, {	-- The Dark Conclave
 							["sourceQuest"] = 10808,	-- Thwart the Dark Conclave
 						}),
-					}),
+						-- #endif
+					})),
 				}),
-				-- #endif
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
 					p(425, {	-- Ash Viper
