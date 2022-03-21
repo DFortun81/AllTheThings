@@ -1329,6 +1329,8 @@ local function HexToRGB(hex)
 	return tonumber("0x"..hex:sub(1,2)) / 255, tonumber("0x"..hex:sub(3,4)) / 255, tonumber("0x"..hex:sub(5,6)) / 255;
 end
 (function()
+local RAID_CLASS_COLORS = RAID_CLASS_COLORS;
+local Alliance, Horde = Enum.FlightPathFaction.Alliance, Enum.FlightPathFaction.Horde;
 -- Color AARRGGBB values used throughout ATT
 app.Colors = {
 	["Raid"] = "ffff8000",
@@ -1372,10 +1374,10 @@ app.TryColorizeName = function(group, name)
 		-- faction colors
 		elseif group.r then
 			-- red for Horde
-			if group.r == Enum.FlightPathFaction.Horde then
+			if group.r == Horde then
 				return Colorize(name, app.Colors.Horde);
 			-- blue for Alliance
-			elseif group.r == Enum.FlightPathFaction.Alliance then
+			elseif group.r == Alliance then
 				return Colorize(name, app.Colors.Alliance);
 			end
 		-- specific races
