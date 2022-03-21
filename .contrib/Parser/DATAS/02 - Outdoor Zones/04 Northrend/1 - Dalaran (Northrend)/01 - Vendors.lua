@@ -1213,6 +1213,14 @@ _.Zones =
 				n(32172,  {	-- Harold Winston <Jewelry Vendor>
 					["coord"] = { 40.2, 34.3, NORTHREND_DALARAN },
 					["g"] = {
+						ach(2084, {	-- Ring of the Kirin Tor
+							["providers"] = {
+								{ "i", 40586 },	-- Band of the Kirin Tor
+								{ "i", 44934 },	-- Loop of the Kirin Tor
+								{ "i", 44935 },	-- Ring of the Kirin Tor
+								{ "i", 40585 },	-- Signet of the Kirin Tor
+							},
+						}),
 						i(40719),	-- Band of Channeled Magic
 						i(47732),	-- Band of the Invoker
 						i(40586),	-- Band of the Kirin Tor
@@ -2182,9 +2190,35 @@ _.Zones =
 				n(32216,  {	-- Mei Francis <Exotic Mounts>
 					["coord"] = { 57.8, 42.5, NORTHREND_DALARAN },
 					["g"] = {
+						ach(2076, {	-- Armored Brown Bear
+							["providers"] = { 
+								{ "i", 44225 },	-- Armored Brown Bear (A) (MOUNT!)
+								{ "i", 44226 },	-- Armored Brown Bear (H) (MOUNT!)
+							},
+						}),
+						ach(2078, {	-- Traveler's Tundra Mammoth
+							["providers"] = { 
+								{ "i", 44235 },	-- Traveler's Tundra Mammoth (A) (MOUNT!)
+								{ "i", 44234 },	-- Traveler's Tundra Mammoth (H) (MOUNT!)
+							},
+						}),
+						ach(2077, {	-- Wooly Mammoth
+							["providers"] = { 
+								{ "i", 44230 },	-- Wooly Mammoth (A) (MOUNT!)
+								{ "i", 44231 },	-- Wooly Mammoth (H) (MOUNT!)
+							},
+						}),
 						i(44690, {	-- Armored Blue Wind Rider (MOUNT!)
 							["races"] = HORDE_ONLY,
 							["cost"] = 20000000,	-- 2,000g
+						}),
+						i(44225, {	-- Armored Brown Bear (A) (MOUNT!)
+							["races"] = ALLIANCE_ONLY,
+							["cost"] = 7500000,	-- 750g
+						}),
+						i(44226, {	-- Armored Brown Bear (H) (MOUNT!)
+							["races"] = HORDE_ONLY,
+							["cost"] = 7500000,	-- 750g
 						}),
 						i(44689, {	-- Armored Snowy Gryphon (MOUNT!)
 							["races"] = ALLIANCE_ONLY,
@@ -2194,14 +2228,16 @@ _.Zones =
 						a(i(25471)),	-- Ebon Gryphon (MOUNT!)
 						a(i(25470)),	-- Golden Gryphon (MOUNT!)
 						h(i(25476)),	-- Green Wind Rider (MOUNT!)
-						i(44225, {	-- Armored Brown Bear (A) (MOUNT!)
-							["races"] = ALLIANCE_ONLY,
-							["cost"] = 7500000,	-- 750g
-						}),
-						i(44226, {	-- Armored Brown Bear (H) (MOUNT!)
-							["races"] = HORDE_ONLY,
-							["cost"] = 7500000,	-- 750g
-						}),
+						a(i(25472)),	-- Snowy Gryphon (MOUNT!)
+						a(i(25473)),	-- Swift Blue Gryphon (MOUNT!)
+						a(i(25528)),	-- Swift Green Gryphon (MOUNT!)
+						h(i(25531)),	-- Swift Green Wind Rider (MOUNT!)
+						a(i(25529)),	-- Swift Purple Gryphon (MOUNT!)
+						h(i(25533)),	-- Swift Purple Wind Rider (MOUNT!)
+						a(i(25527)),	-- Swift Red Gryphon (MOUNT!)
+						h(i(25477)),	-- Swift Red Wind Rider (MOUNT!)
+						h(i(25532)),	-- Swift Yellow Wind Rider (MOUNT!)
+						h(i(25474)),	-- Tawny Wind Rider (MOUNT!)
 						i(44235, {	-- Traveler's Tundra Mammoth (A) (MOUNT!)
 							["races"] = ALLIANCE_ONLY,
 							["cost"] = 200000000,	-- 20,000g
@@ -2218,16 +2254,6 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 							["cost"] = 100000000,	-- 10,000g
 						}),
-						a(i(25472)),	-- Snowy Gryphon (MOUNT!)
-						a(i(25473)),	-- Swift Blue Gryphon (MOUNT!)
-						a(i(25528)),	-- Swift Green Gryphon (MOUNT!)
-						h(i(25531)),	-- Swift Green Wind Rider (MOUNT!)
-						a(i(25529)),	-- Swift Purple Gryphon (MOUNT!)
-						h(i(25533)),	-- Swift Purple Wind Rider (MOUNT!)
-						a(i(25527)),	-- Swift Red Gryphon (MOUNT!)
-						h(i(25477)),	-- Swift Red Wind Rider (MOUNT!)
-						h(i(25532)),	-- Swift Yellow Wind Rider (MOUNT!)
-						h(i(25474)),	-- Tawny Wind Rider (MOUNT!)
 					},
 				}),
 				n(29495,  {	-- Norvin Alderman <Cloaks>
