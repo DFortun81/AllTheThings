@@ -2325,7 +2325,7 @@ app.CheckInaccurateQuestInfo = function(questRef, questChange)
 			if app:SetupReportDialog(popupID, "Inaccurate Quest Info: " .. id,
 				app.BuildDiscordQuestInfoTable(id, "inaccurate-quest", questChange, questRef)
 			) then
-				local reportMsg = app:Linkify(L["REPORT_INACCURATE_QUEST"], "f7b531", "dialog:" .. popupID);
+				local reportMsg = app:Linkify(L["REPORT_INACCURATE_QUEST"], app.Colors.ChatLinkError, "dialog:" .. popupID);
 				Callback(app.print, reportMsg);
 			end
 		end
@@ -12204,7 +12204,7 @@ app.CheckForBreadcrumbPrevention = function(title, questID)
 		local warning;
 		for _,group in pairs(nextQuests) do
 			if not group.collected and app.RecursiveGroupRequirementsFilter(group) then
-				app.print(string.format(L["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"], title, app:Linkify(questID, "149bfd", "search:questID:"..questID), group.text or RETRIEVING_DATA, app:Linkify(group.questID, "7f40bf", "search:questID:"..group.questID)));
+				app.print(string.format(L["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"], title, app:Linkify(questID, app.Colors.ChatLink, "search:questID:"..questID), group.text or RETRIEVING_DATA, app:Linkify(group.questID, app.Colors.Locked, "search:questID:"..group.questID)));
 				warning = true;
 			end
 		end
@@ -19929,7 +19929,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 							app:PlayFanfare();
 							app:TakeScreenShot();
 							if app.Settings:GetTooltipSetting("Report:Collected") then
-								local link = app:Linkify(spellID, "149bfd", "search:spellID:"..spellID);
+								local link = app:Linkify(spellID, app.Colors.ChatLink, "search:spellID:"..spellID);
 								print(NEW_RECIPE_LEARNED_TITLE, link);
 							end
 						end
@@ -22231,7 +22231,7 @@ end
 	-- 	local nav = GetNavPath(group);
 	-- 	if nav then
 	-- 		print("nav:",nav)
-	-- 		return app:Linkify(group.text, "f5d142", "nav:"..nav);
+	-- 		return app:Linkify(group.text, app.Colors.ChatLink, "nav:"..nav);
 	-- 		-- return app:ChatLink(group.text, "nav:"..nav);
 	-- 	end
 	-- end
