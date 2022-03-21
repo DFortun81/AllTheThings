@@ -601,6 +601,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 					i(180910),	-- Dread Sentinel's Ebony Grips
 					i(180911),	-- Soulbreaker's Ebony Handwraps
 					i(180912),	-- Fearstalker's Ebony Gauntlets
+					i(180202),	-- Soulkeeper Crystal
 				},
 			}),
 			q(58421, {	-- Special Access

@@ -23,6 +23,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				q(65649, {	-- A New Deal
 					["provider"] = { "n", 168011 },	-- Zo'sorg
 					["coord"] = { 35.6, 57.5, ORIBOS },
+					["isWeekly"] = true,
 					["timeline"] = { "added 9.2.0" },
 					["g"] = {
 						i(188778),	-- Cosmic Gladiator's Devouring Malediction
@@ -610,6 +611,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["sourceQuests"] = { 62938 },	-- Information for a Price
 				["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 39.9, 68.5, ORIBOS },
+				["g"] = {
+					i(184550),	-- Attuned Shard
+				},
 			}),
 			q(60146, {	-- Torment Chamber: Thrall
 				["sourceQuests"] = { 62969 },	-- Lest the Trail Go Cold

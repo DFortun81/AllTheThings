@@ -360,6 +360,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(27522),	-- World's End Bracers (7.3.5 - Moved to Warbringer O'mrogg in Shattered Halls!)
 							i(27494),	-- Emerald Eye Bracer (7.3.5 - Moved to Broggok)
 							-- #endif
+							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
 							i(33814),	-- Keli'dan's Feathered Stave
 						}
 					}),
@@ -375,15 +376,17 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		},
 	}),
 })));
-_.HiddenQuestTriggers = {
+-- #if AFTER WOD
+root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
 		q(35565),	-- The Blood Furnace Reward Quest - Normal completion
 		q(35566),	-- The Blood Furnace Reward Quest - Heroic completion
 	}),
-};
+});
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(29544),	-- The Blood Furnace
 		q(29545),	-- The Blood Furnace
 	}),
 }));
+-- #endif

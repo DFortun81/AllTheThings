@@ -17,46 +17,6 @@ local OnTooltipForArathiBasin = [[function(t)
 		GameTooltip:AddLine(" Every 200 or 150 Resources during AB Weekend.", 1, 1, 1);
 	end
 end]];
-local HERO_OF_ARATHI_ALLIANCE_OnUpdate = [[function(t)
-	if t.collectible then
-		if not t.ab then
-			local f = _.SearchForField("factionID", 509);
-			if f and #f > 0 then
-				t.ab = f[1];
-			else
-				return true;
-			end
-		end
-		t.SetAchievementCollected(t.achievementID, t.ab.standing == 8);
-	end
-end]];
-local HERO_OF_ARATHI_HORDE_OnUpdate = [[function(t)
-	if t.collectible then
-		if not t.ab then
-			local f = _.SearchForField("factionID", 510);
-			if f and #f > 0 then
-				t.ab = f[1];
-			else
-				return true;
-			end
-		end
-		t.SetAchievementCollected(t.achievementID, t.ab.standing == 8);
-	end
-end]];
-local HERO_OF_ARATHI_OnClick = [[function(row, button)
-	if button == "RightButton" then
-		local t = row.ref;
-		local clone = _.CreateMiniListForGroup(_.CreateAchievement(t[t.key], { t.ab })).data;
-		clone.description = t.description;
-		return true;
-	end
-end]];
-local HERO_OF_ARATHI_OnTooltip = [[function(t)
-	if t.collectible then
-		GameTooltip:AddLine(" ");
-		GameTooltip:AddDoubleLine(" |T" .. t.ab.icon .. ":0|t " .. t.ab.text, _.L[t.ab.standing == 8 and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"], 1, 1, 1);
-	end
-end]];
 root("PVP", pvp(n(BATTLEGROUNDS, {
 	m(ARATHI_BASIN, {
 		-- #if AFTER 3.2.0
@@ -123,18 +83,18 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				ach(711, applyclassicphase(PHASE_TWO, {	-- Knight of Arathor
 					["races"] = ALLIANCE_ONLY,
 					-- #if BEFORE 3.0.1
-					["OnClick"] = HERO_OF_ARATHI_OnClick,
-					["OnTooltip"] = HERO_OF_ARATHI_OnTooltip,
-					["OnUpdate"] = HERO_OF_ARATHI_ALLIANCE_OnUpdate,
+					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
+					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
+					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 509); end]],
 					["description"] = "Raise your reputation with The League of Arathor to Exalted.",
 					-- #endif
 				})),
 				ach(710, applyclassicphase(PHASE_TWO, {	-- The Defiler
 					["races"] = HORDE_ONLY,
 					-- #if BEFORE 3.0.1
-					["OnClick"] = HERO_OF_ARATHI_OnClick,
-					["OnTooltip"] = HERO_OF_ARATHI_OnTooltip,
-					["OnUpdate"] = HERO_OF_ARATHI_HORDE_OnUpdate,
+					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
+					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
+					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 510); end]],
 					["description"] = "Raise your reputation with The Defilers to Exalted.",
 					-- #endif
 				})),

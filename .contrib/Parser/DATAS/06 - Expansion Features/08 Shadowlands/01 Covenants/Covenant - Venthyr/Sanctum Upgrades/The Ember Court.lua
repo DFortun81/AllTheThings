@@ -338,6 +338,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										i(178894),	-- Decree: Baroness Vashj's Boon
 										i(183860),	-- The Death March: An Introduction to Maldraxxi Etiquette
 										i(178892),	-- Decree: Baroness Vashj's Favor
+										i(178893),	-- Decree: Baroness Vashj's Esteem
 									}),
 								}),
 								o(356720, {	-- Choofa's Extravagant Tribute
@@ -605,6 +606,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										i(181566),	-- Decree: The Countess's Boon
 										i(183862),	-- A Proper Soiree: A detailed account of Venthyr Etiquette by Theotar
 										i(181567),	-- Decree: The Countess's Esteem
+										i(181568),	-- Decree: The Countess's Favor
 										i(182696),	-- The Countess's Parasol (TOY!)
 										i(181436, {	-- Vanity Mirror
 											crit(16, {	-- Vanity Mirror
@@ -2151,6 +2153,11 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										["questID"] = 61459,
 									}),
 								},
+							}),
+						}),
+						n(TREASURES, {
+							o(365093, {	-- Theotar's Caroling Books
+								i(184626),	-- Winter Veil Caroling Book
 							}),
 						}),
 					},

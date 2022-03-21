@@ -312,11 +312,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27827 },	-- The Swift, the Fierce, and the Stout
 				}),
-				q(4981, {	-- Operative Bijou
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 9080 },	-- Lexlort
-				}),
 				q(705,   {	-- Pearl Diving
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -499,15 +494,6 @@ _.Zones =
 					["provider"] = { "n", 46759 },	-- Lidia Sunglow
 					["coord"] = { 52.2, 51.6, BADLANDS },
 					["races"] = HORDE_ONLY,
-				}),
-				q(4724,  {	-- The Pack Mistress
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(15824)),	-- Astoria Robes
-						un(REMOVED_FROM_GAME, i(15827)),	-- Jadescale Breastplate
-						un(REMOVED_FROM_GAME, i(15825)),	-- Traphook Jerkin
-					},
 				}),
 				q(27709, {	-- The Sentinel's Game (A)
 					["coord"] = { 47.9, 50.9, BADLANDS },

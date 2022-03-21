@@ -131,12 +131,13 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							["cr"] = 23035,	-- Anzu
 						}),
 						removeclassicphase(ach(2359, {	-- Swift Flight Form
+							["sourceQuest"] = 11001,	-- Vanquish the Raven God
 							["timeline"] = { "removed 4.0.1" },
 							["classes"] = { DRUID },
 							["filterID"] = MOUNTS,
 							-- #if BEFORE WRATH
 							["description"] = "Completed the druid quest to obtain Swift Flight Form.",
-							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(11001)); end]],
+							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						})),
 						-- #if BEFORE 4.0.1
@@ -201,7 +202,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						removeclassicphase(ach(653, {	-- Sethekk Halls
 							-- #if BEFORE 3.0.1
 							["sourceQuest"] = 10098,	-- Terokk's Legacy
-							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(10098)); end]],
+							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						})),
 						i(27986),	-- Crow Wing Reaper
@@ -294,16 +295,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 								["filterID"] = MOUNTS,
 								-- #if BEFORE WRATH
 								["description"] = "Obtain the Reins of the Raven Lord from Anzu in Sethekk Halls.",
-								["OnUpdate"] = [[function(t)
-									local collected = false;
-									for i,provider in ipairs(t.providers) do
-										if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
-											collected = true;
-											break;
-										end
-									end
-									t.SetAchievementCollected(t.achievementID, collected);
-								end]],
+								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 								-- #endif
 							})),
 							i(32768),	-- Raven Lord (MOUNT!)
@@ -336,6 +328,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(27838),	-- Incanter's Trousers
 							i(27948),	-- Trousers of Oblivion
 							i(27925),	-- Ravenclaw Band
+							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
 							i(27632),	-- Terokk's Quill
 							i(33834),	-- The Headfeathers of Ikiss
 							i(27991, {	-- Shadow Labyrinth Key
@@ -349,10 +342,12 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		},
 	}),
 })));
-_.HiddenQuestTriggers = {
+-- #if AFTER WOD
+root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
 		q(35541),	-- Sethekk Halls Bonus Objective
 		q(35539),	-- Sethekk Halls Reward Quest - Normal completion
 		q(35540),	-- Sethekk Halls Reward Quest - Heroic completion
 	}),
-};
+});
+-- #endif

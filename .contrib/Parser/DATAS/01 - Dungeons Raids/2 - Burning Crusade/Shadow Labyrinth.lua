@@ -236,7 +236,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 								10095,	-- Into the Heart of the Labyrinth
 								10885,	-- Trial of the Naaru: Strength
 							},
-							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(10095) or C_QuestLog.IsQuestFlaggedCompleted(10885)); end]],
+							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						})),
 						i(27903),	-- Sonic Spear
@@ -332,7 +332,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							removeclassicphase(ach(675, {	-- Heroic: Shadow Labyrinth
 								-- #if BEFORE 3.0.1
 								["sourceQuest"] = 10885,	-- Trial of the Naaru: Strength
-								["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(10885)); end]],
+								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif
 							})),
 							i(27903),	-- Sonic Spear
@@ -350,6 +350,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(30532),	-- Kirin Tor Master's Trousers
 							i(27902),	-- Silent Slippers of Meditation
 							i(24309),	-- Pattern: Spellstrike Pants
+							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
 							i(33840),	-- Murmur's Whisper
 							i(31722),	-- Murmur's Essence
 						},
@@ -359,9 +360,11 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		},
 	}),
 })));
-_.HiddenQuestTriggers = {
+-- #if AFTER WOD
+root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
 		q(35519),	-- The Shadow Labyrinth Reward Quest - Normal completion
 		q(35520),	-- The Shadow Labyrinth Reward Quest - Heroic completion
 	}),
-};
+});
+-- #endif

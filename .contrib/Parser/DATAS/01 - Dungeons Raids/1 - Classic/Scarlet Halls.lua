@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-_.Instances = { tier(CLASSIC_TIER, {
+root("Instances", tier(CLASSIC_TIER, {
 	inst(311, {	-- Scarlet Halls
 		["coord"] = { 78.0, 56.8, SCARLET_MONASTERY_ENTRANCE },
 		["timeline"] = { "added 5.0.4" },
@@ -42,7 +42,9 @@ _.Instances = { tier(CLASSIC_TIER, {
 				e(654, {	-- Armsmaster Harlan
 					["creatureID"] = 58632,	-- Armsmaster Harlan
 					["groups"] = {
-						i(23192),	-- Tabard of the Scarlet Crusade
+						i(23192, {	-- Tabard of the Scarlet Crusade
+							["timeline"] = { "removed 5.0.4", "added 5.3.0" },
+						}),
 						i(88272),	-- The Gleaming Ravager
 						i(88273),	-- Armsmaster's Sealed Locket
 						i(88271),	-- Harlan's Shoulders
@@ -141,6 +143,9 @@ _.Instances = { tier(CLASSIC_TIER, {
 						["creatureID"] = 58632,	-- Armsmaster Harlan
 						["groups"] = {
 							ach(6427),	-- Mosh Pit
+							i(23192, {	-- Tabard of the Scarlet Crusade
+								["timeline"] = { "removed 5.0.4", "added 5.3.0" },
+							}),
 							i(23192),	-- Tabard of the Scarlet Crusade
 							i(144193, {	-- The Gleaming Ravager
 								["timeline"] = { "added 7.1.5.23360" },
@@ -258,9 +263,9 @@ _.Instances = { tier(CLASSIC_TIER, {
 			}),
 		},
 	}),
-})};
+}));
 -- #if AFTER MOP
-_.HiddenQuestTriggers = {
+root("HiddenQuestTriggers", {
 	tier(MOP_TIER, {
 		q(31636),	-- Scarlet Halls Challenge Mode - Bronze Addition (Nth)
 		q(31630),	-- Scarlet Halls Challenge Mode - Consolation (Nth)
@@ -275,5 +280,5 @@ _.HiddenQuestTriggers = {
 		q(35609),	-- Scarlet Halls - Bonus Objective Reward Quest - kill Armsmaster Harlan (Heroic)
 	}),
 	-- #endif
-};
+});
 -- #endif

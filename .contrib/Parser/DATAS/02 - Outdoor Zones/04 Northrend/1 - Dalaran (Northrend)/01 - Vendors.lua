@@ -2182,11 +2182,11 @@ _.Zones =
 				n(32216,  {	-- Mei Francis <Exotic Mounts>
 					["coord"] = { 57.8, 42.5, NORTHREND_DALARAN },
 					["g"] = {
-						i(44690, {	-- Armored Blue Wind Rider
+						i(44690, {	-- Armored Blue Wind Rider (MOUNT!)
 							["races"] = HORDE_ONLY,
 							["cost"] = 20000000,	-- 2,000g
 						}),
-						i(44689, {	-- Armored Snowy Gryphon
+						i(44689, {	-- Armored Snowy Gryphon (MOUNT!)
 							["races"] = ALLIANCE_ONLY,
 							["cost"] = 20000000,	-- 2,000g
 						}),
@@ -2194,27 +2194,27 @@ _.Zones =
 						a(i(25471)),	-- Ebon Gryphon (MOUNT!)
 						a(i(25470)),	-- Golden Gryphon (MOUNT!)
 						h(i(25476)),	-- Green Wind Rider (MOUNT!)
-						i(44225, {	-- Reins of the Armored Brown Bear
+						i(44225, {	-- Armored Brown Bear (A) (MOUNT!)
 							["races"] = ALLIANCE_ONLY,
 							["cost"] = 7500000,	-- 750g
 						}),
-						i(44226, {	-- Reins of the Armored Brown Bear
+						i(44226, {	-- Armored Brown Bear (H) (MOUNT!)
 							["races"] = HORDE_ONLY,
 							["cost"] = 7500000,	-- 750g
 						}),
-						i(44235, {	-- Reins of the Traveler's Tundra Mammoth
+						i(44235, {	-- Traveler's Tundra Mammoth (A) (MOUNT!)
 							["races"] = ALLIANCE_ONLY,
 							["cost"] = 200000000,	-- 20,000g
 						}),
-						i(44234, {	-- Reins of the Traveler's Tundra Mammoth
+						i(44234, {	-- Traveler's Tundra Mammoth (H) (MOUNT!)
 							["races"] = HORDE_ONLY,
 							["cost"] = 200000000,	-- 20,000g
 						}),
-						i(44230, {	-- Reins of the Wooly Mammoth
+						i(44230, {	-- Wooly Mammoth (A) (MOUNT!)
 							["races"] = ALLIANCE_ONLY,
 							["cost"] = 100000000,	-- 10,000g
 						}),
-						i(44231, {	-- Reins of the Wooly Mammoth
+						i(44231, {	-- Wooly Mammoth (H) (MOUNT!)
 							["races"] = HORDE_ONLY,
 							["cost"] = 100000000,	-- 10,000g
 						}),

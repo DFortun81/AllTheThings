@@ -670,7 +670,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 13887,	-- Venomhide Eggs
 					["g"] = {
-						i(46102),	-- Reins of the Venomhide Ravasaur
+						i(46102),	-- Venomhide Ravasaur (MOUNT!)
 					},
 				}),
 				q(13850, {	-- Toxic Tolerance

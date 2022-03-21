@@ -83,6 +83,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(3),		-- Purified Blessing of Fortitude
 		}),
 		ach(14763, {	-- Crypt Couture
+			i(183693),	-- Plague Doctor's Mask
 			crit(1, {	-- Ashen Ink
 				["cost"] = { { "i", 183690, 1 } },
 			}),

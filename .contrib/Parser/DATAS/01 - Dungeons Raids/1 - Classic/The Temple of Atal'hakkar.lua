@@ -758,7 +758,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					removeclassicphase(ach(641, {	-- Sunken Temple
 						-- #if BEFORE 3.0.1
 						["sourceQuest"] = 3373,	-- The Essence of Eranikus
-						["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(3373)); end]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					})),
 					i(10454, {	-- Essence of Eranikus

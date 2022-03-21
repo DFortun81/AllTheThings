@@ -289,7 +289,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(13),		-- Echoes of Doomfire
 		}),
 		ach(2136, {		-- Glory of the Hero
-			i(44160),		-- Reins of the Red Proto-Drake
+			i(44160),		-- Red Proto-Drake (MOUNT!)
 			crit(1),		-- On The Rocks
 			crit(2),		-- Split Personality
 			crit(3),		-- Intense Cold
@@ -329,7 +329,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(37),		-- Amber Void
 		}),
 		ach(4602, {		-- Glory of the Icecrown Raider (10 player)
-			i(51954),		-- Reins of the Bloodbathed Frostbrood Vanquisher
+			i(51954),		-- Bloodbathed Frostbrood Vanquisher (MOUNT!)
 			crit(1),		-- Heroic: Storming the Citadel (10 player)
 			crit(2),		-- Heroic: The Plagueworks (10 player)
 			crit(3),		-- Heroic: The Crimson Hall (10 player)
@@ -348,7 +348,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(16),		-- Been Waiting a Long Time for This (10 player)
 		}),
 		ach(4603, {		-- Glory of the Icecrown Raider (25 player)
-			i(51955),		-- Reins of the Icebound Frostbrood Vanquisher
+			i(51955),		-- Icebound Frostbrood Vanquisher (MOUNT!)
 			crit(1),		-- Heroic: Storming the Citadel (25 player)
 			crit(2),		-- Heroic: The Plagueworks (25 player)
 			crit(3),		-- Heroic: The Crimson Hall (25 player)
@@ -536,7 +536,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(29),		-- Heroic: Lei Shi
 		}),
 		ach(2137, {		-- Glory of the Raider (10 player)
-			un(REMOVED_FROM_GAME, i(44175)),	-- Reins of the Plagued Proto-Drake
+			un(REMOVED_FROM_GAME, i(44175)),	-- Plagued Proto-Drake (MOUNT!)
 			crit(1),		-- The Dedicated Few (10 player)
 			crit(2),		-- Arachnophobia (10 player)
 			crit(3),		-- Make Quick Werk of Him (10 player)
@@ -555,7 +555,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(16),		-- Just Can't Get Enough (10 player)
 		}),
 		ach(2138, {		-- Glory of the Raider (25 player)
-			un(REMOVED_FROM_GAME, i(44164)),	-- Reins of the Black Proto-Drake
+			un(REMOVED_FROM_GAME, i(44164)),	-- Black Proto-Drake (MOUNT!)
 			crit(1),		-- The Dedicated Few (25 player)
 			crit(2),		-- Arachnophobia (25 player)
 			crit(3),		-- Make Quick Werk of Him (25 player)
@@ -667,8 +667,8 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(8),		-- Existential Crisis
 		}),
 		ach(12401, {	-- Glory of the Ulduar Raider
-			i(45802),		-- Reins of the Rusted Proto-Drake
-			i(45801),		-- Reins of the Ironbound Proto-Drake
+			i(45802),		-- Rusted Proto-Drake (MOUNT!)
+			i(45801),		-- Ironbound Proto-Drake (MOUNT!)
 			crit(1),		-- Orbit-uary
 			crit(2),		-- Stokin' the Furnace
 			crit(3),		-- Iron Dwarf, Medium Rare

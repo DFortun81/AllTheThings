@@ -30,6 +30,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					crit(2, {	-- Soul Eaters
 						["achievementID"] = 14738,	-- Hunting Party
 					}),
+					i(184586),	-- Sky Chain
 				},
 			}),
 			n(-911,  {	-- Hunt: Shadehounds

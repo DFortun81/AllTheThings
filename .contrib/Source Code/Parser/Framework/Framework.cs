@@ -1044,11 +1044,12 @@ namespace ATT
                 Trace.Write(": ASSIGNED ");
                 Trace.Write(icon);
                 Trace.WriteLine(" FROM SOURCE.");
-                if (!Framework.DebugMode)
+                if (!DebugMode)
                 {
-                    Trace.WriteLine("Activating Debug Mode!");
+                    Trace.WriteLine("Activating Debug Mode! (Press Enter to continue...)");
                     Trace.WriteLine("Update CategoriesDB.lua from the Debugging folder.");
-                    Framework.DebugMode = true;
+                    DebugMode = true;
+                    Console.ReadLine();
                 }
             }
             if (!CATEGORY_NAMES.ContainsKey(categoryID) && data.TryGetValue("name", out string name))
@@ -1060,11 +1061,12 @@ namespace ATT
                 Trace.Write(": ASSIGNED ");
                 Trace.Write(name);
                 Trace.WriteLine(" FROM SOURCE.");
-                if (!Framework.DebugMode)
+                if (!DebugMode)
                 {
-                    Trace.WriteLine("Activating Debug Mode!");
+                    Trace.WriteLine("Activating Debug Mode! (Press Enter to continue...)");
                     Trace.WriteLine("Update CategoriesDB.lua from the Debugging folder.");
-                    Framework.DebugMode = true;
+                    DebugMode = true;
+                    Console.ReadLine();
                 }
             }
         }
@@ -1086,11 +1088,12 @@ namespace ATT
                 Trace.Write(": ASSIGNED ");
                 Trace.Write(icon);
                 Trace.WriteLine(" FROM SOURCE.");
-                if (!Framework.DebugMode)
+                if (!DebugMode)
                 {
-                    Trace.WriteLine("Activating Debug Mode!");
-                    Trace.WriteLine("Update NPCDB.lua from the Debugging folder.");
-                    Framework.DebugMode = true;
+                    Trace.WriteLine("Activating Debug Mode! (Press Enter to continue...)");
+                    Trace.WriteLine("Update ObjectDB.lua from the Debugging folder.");
+                    DebugMode = true;
+                    Console.ReadLine();
                 }
             }
             if (!OBJECT_MODELS.ContainsKey(objectID) && data.TryGetValue("model", out long model))
@@ -1102,11 +1105,12 @@ namespace ATT
                 Trace.Write(": ASSIGNED ");
                 Trace.Write(model);
                 Trace.WriteLine(" FROM SOURCE.");
-                if (!Framework.DebugMode)
+                if (!DebugMode)
                 {
-                    Trace.WriteLine("Activating Debug Mode!");
-                    Trace.WriteLine("Update NPCDB.lua from the Debugging folder.");
-                    Framework.DebugMode = true;
+                    Trace.WriteLine("Activating Debug Mode! (Press Enter to continue...)");
+                    Trace.WriteLine("Update ObjectDB.lua from the Debugging folder.");
+                    DebugMode = true;
+                    Console.ReadLine();
                 }
             }
             if (!OBJECT_NAMES.ContainsKey(objectID) && data.TryGetValue("name", out string name))
@@ -1118,11 +1122,12 @@ namespace ATT
                 Trace.Write(": ASSIGNED ");
                 Trace.Write(name);
                 Trace.WriteLine(" FROM SOURCE.");
-                if (!Framework.DebugMode)
+                if (!DebugMode)
                 {
-                    Trace.WriteLine("Activating Debug Mode!");
-                    Trace.WriteLine("Update NPCDB.lua from the Debugging folder.");
-                    Framework.DebugMode = true;
+                    Trace.WriteLine("Activating Debug Mode! (Press Enter to continue...)");
+                    Trace.WriteLine("Update ObjectDB.lua from the Debugging folder.");
+                    DebugMode = true;
+                    Console.ReadLine();
                 }
             }
         }

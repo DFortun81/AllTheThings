@@ -24,6 +24,9 @@ root("ExpansionFeatures", {
 						i(187092),	-- Gilded Shoulder-Shields
 						i(187084),	-- Jailer's Eye Crescent
 						i(187025),	-- Painbringer's Back-Prison
+						-- Power
+						i(187186),	-- Orb of Deception
+						i(187234),	-- Coalesced Power
 					},
 				}),
 			}),

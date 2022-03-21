@@ -386,6 +386,9 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										["sourceQuests"] = { 61356 },	-- Echthre, Dame of Hatred
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
+										["g"] = {
+											i(181706),	-- Anointment Oil
+										},
 									}),
 									q(60498, {	-- Overcoming the Trial
 										["sourceQuests"] = { 61473 },	-- Sourcing Your Own Materials
@@ -552,6 +555,9 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										["sourceQuests"] = { 61363 },	-- Mad Mortimer
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
+										["g"] = {
+											i(181470),	-- Catalyst of Creation
+										},
 									}),
 									q(61368, {	-- Filching Phylacteries
 										["sourceQuests"] = { 62053 },	-- Necromantic Power
@@ -1356,8 +1362,12 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 	}),
 	n(QUESTS, {
-		q(60937),	-- [DNT] Blueprint: Herald's Footpads
-		q(61265),	-- Blueprint: Charm of Alacrity
+		q(60937, {	-- [DNT] Blueprint: Herald's Footpads
+			i(180464),	-- Blueprint: Herald's Footpads
+		}),
+		q(61265, {	-- Blueprint: Charm of Alacrity
+			i(181139),	-- Blueprint: Charm of Alacrity
+		}),
 	}),
 }));
 

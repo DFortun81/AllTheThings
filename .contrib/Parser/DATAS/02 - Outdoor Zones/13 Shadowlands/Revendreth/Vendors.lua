@@ -5,9 +5,20 @@
 root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 	m(REVENDRETH, {
 		n(VENDORS, {
+			n(158986, {	-- Absolooshun <Innkeeper>
+				["coord"] = { 72.2, 39.8, REVENDRETH },
+				["g"] = {
+					i(180685, {	-- Soul Sliver
+						["cost"] = { { "c", 1820, 20 } },
+					}),
+				},
+			}),
 			n(156218, {	-- Deadfoot <General Goods, Repairs, & Boots>
 				["coord"] = { 48.6, 68.6, REVENDRETH },
 				["g"] = {
+					i(181298, {	-- Banewood Survival Kit
+						["cost"] = { { "c", 1820, 20 } },
+					}),
 					i(183416, {	-- Mail Courier's Left Runner
 						["cost"] = { { "c", 1820, 10 } },
 					}),
@@ -52,6 +63,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(184718, {	-- Stolen Map of Infused Ruby Network
 						["cost"] = { { "c", 1820, 5 } },	-- Infused Ruby
 					}),
+					i(181337, {	-- Stonefiend's Wings
+						["cost"] = { { "c", 1820, 20 } },	-- Infused Ruby
+					}),
 				},
 			}),
 			n(165419, {	-- Grand Marshal Mudrag
@@ -68,8 +82,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(180676, {	-- Discarded Commendation
 						["cost"] = { { "c", 1820, 10 } },	-- Infused Ruby
 					}),
+					i(180404, {	-- Embertone Lotion
+						["cost"] = { { "c", 1820, 20 } },	-- Infused Ruby
+					}),
 					i(184719, {	-- Enchanted Map of Infused Ruby Network
 						["cost"] = { { "c", 1820, 100 } },	-- Infused Ruby
+					}),
+					i(181318, {	-- Enchanted Mirror Dust
+						["cost"] = { { "c", 1820, 20 } },	-- Infused Ruby
 					}),
 					i(180678, {	-- Peck Acorn
 						["cost"] = { { "c", 1820, 10 } },	-- Infused Ruby

@@ -81,17 +81,17 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 		ach(2536,  {	-- Mountain o' Mounts (A, 100 mounts)
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
-				i(44843),	-- Blue Dragonhawk
+				i(44843),	-- Blue Dragonhawk (MOUNT!)
 			},
 		}),
 		ach(2537,  {	-- Mountain o' Mounts (H, 100 mounts)
 			["races"] = HORDE_ONLY,
 			["g"] = {
-				i(44842),	-- Red Dragonhawk
+				i(44842),	-- Red Dragonhawk (MOUNT!)
 			},
 		}),
 		ach(2143,  {	-- Leading the Cavalry (50 mounts)
-			i(44178),		-- Reins of the Albino Drake
+			i(44178),		-- Albino Drake (MOUNT!)
 		}),
 		ach(2142),		-- Filling Up The Barn (25 mounts)
 		ach(2141),		-- Stable Keeper (10 mounts)

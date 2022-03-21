@@ -500,9 +500,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 					{ "i", 33292 },	-- Hallowed Helm
 				},
 				["description"] = "Obtain a Sinister Squashling pet and Hallowed Helm.",
-				["OnUpdate"] = [[function(t)
-					t.SetAchievementCollected(t.achievementID, GetItemCount(33292, true) > 0 and GetItemCount(33154, true) > 0);
-				end]],
+				["OnUpdate"] = [[_.CommonAchievementHandlers.ALL_ITEM_PROVIDERS]],
 				-- #else
 				crit(1, {	-- Sinister Squashling
 					["provider"] = { "i", 33154 },	-- Sinister Squashling
@@ -1448,16 +1446,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 				["filterID"] = MOUNTS,
 				-- #if BEFORE WRATH
 				["description"] = "Obtain The Horseman's Reins from The Headless Horseman in the Scarlet Monastery during Hallow's End.",
-				["OnUpdate"] = [[function(t)
-					local collected = false;
-					for i,provider in ipairs(t.providers) do
-						if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
-							collected = true;
-							break;
-						end
-					end
-					t.SetAchievementCollected(t.achievementID, collected);
-				end]],
+				["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 				-- #endif
 			})),
 		}),

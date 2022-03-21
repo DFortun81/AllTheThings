@@ -372,7 +372,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					removeclassicphase(ach(629, {	-- Ragefire Chasm
 						-- #if BEFORE 3.0.1
 						["sourceQuest"] = 5761,	-- Slaying the Beast
-						["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(5761)); end]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						["races"] = HORDE_ONLY,
 						-- #endif
 					})),

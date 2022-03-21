@@ -117,8 +117,8 @@ i(8633, 10788);		-- Leopard							/	Reins of the Leopard
 i(23193, 29059);	-- Naxxramas Deathcharger			/	Naxxramas Deathcharger Reins IN classic named: Skeletal Steed	/	Skeletal Steed Reins
 i(8627,	10787);		-- Nightsaber						/	Reins of the Nightsaber
 i(8590, 10798);		-- Obsidian Raptor					/	Old Whistle of the Obsidian Raptor
-i(16339, 16082);	-- Palomino							/	Commander's Steed
 i(2413, 471);		-- Palamino Stallion				/	Palomino
+i(16339, 16082);	-- Palomino							/	Commander's Steed
 i(12325, 16058);	-- Primal Leopard					/	Reins of the Primal Leopard
 i(13323, 17455);	-- Purple Mechanostrider			/	Purple Mechanostrider
 i(13324, 17456);	-- Red and Blue Mechanostrider		/	Red and Blue Mechanostrider
@@ -294,6 +294,7 @@ i(37676, 49193);	-- Vengeful Nether Drake
 -----------------
 -- PATCH 2.4.3 --
 -----------------
+i(43599, 58983);	-- Big Blizzard Bear
 i(43516, 58615);	-- Brutal Nether Drake
 i(37828, 49379);	-- Great Brewfest Kodo
 i(37012, 48025);	-- Headless Horseman's Mount
@@ -309,135 +310,201 @@ i(37719, 49322);	-- Swift Zhevra
 --i(0, 44317);		-- Merciless Nether Drake
 i(27819, 24242);	-- Swift Razzashi Raptor 	/	Crazy Raptor 75
 i(27853, 24242);	-- Swift Razzashi Raptor 	/	Crazy Raptor 150
-i(37598, 48954);	-- Swift Zhevra	/	Swift Zhevra OLD
-i(28025, 33631);	-- Video Mount	/	Video Mount
+i(37598, 48954);	-- Swift Zhevra				/	Swift Zhevra OLD
+i(28025, 33631);	-- Video Mount				/	Video Mount
 
-
-
-
-i(40775, 54729);	-- Winged Steed of the Ebon Blade
+-----------------
+-- PATCH 3.0.1 --
+-----------------
+--i(0, 48778);		-- Acherus Deathcharger
 i(41508, 55531);	-- Mechano-Hog
-i(43599, 58983);	-- Big Blizzard Bear
-i(43951, 59569);	-- Reins of the Bronze Drake
-i(43952, 59567);	-- Reins of the Azure Drake
-i(43953, 59568);	-- Reins of the Blue Drake
-i(43954, 59571);	-- Reins of the Twilight Drake
-i(43955, 59570);	-- Reins of the Red Drake
-i(43956, 59785);	-- Reins of the Black War Mammoth
-i(43958, 59799);	-- Reins of the Ice Mammoth
-i(43959, 61465);	-- Reins of the Grand Black War Mammoth
-i(43961, 61470);	-- Reins of the Grand Ice Mammoth
-i(43962, 54753);	-- Reins of the White Polar Bear
-i(43963, 59573);	-- Reins of the Brown Polar Bear
-i(43964, 59572);	-- Reins of the Black Polar Bear
-i(43986, 59650);	-- Reins of the Black Drake
-i(44077, 59788);	-- Reins of the Black War Mammoth
-i(44080, 59797);	-- Reins of the Ice Mammoth
-i(44083, 61467);	-- Reins of the Grand Black War Mammoth
-i(44086, 61469);	-- Reins of the Grand Ice Mammoth
-i(44151, 59996);	-- Reins of the Blue Proto-Drake
-i(44160, 59961);	-- Reins of the Red Proto-Drake
-i(44164, 59976);	-- Reins of the Black Proto-Drake
-i(44168, 60002);	-- Reins of the Time-Lost Proto-Drake
-i(44175, 60021);	-- Reins of the Plagued Proto-Drake
-i(44177, 60024);	-- Reins of the Violet Proto-Drake
-i(44178, 60025);	-- Reins of the Albino Drake
-i(44221, 64749);	-- Loaned Gryphon Reins
-i(44223, 60118);	-- Reins of the Black War Bear
-i(44224, 60119);	-- Reins of the Black War Bear
-i(44225, 60114);	-- Reins of the Armored Brown Bear
-i(44226, 60116);	-- Reins of the Armored Brown Bear
-i(44229, 64762);	-- Loaned Wind Rider Reins
-i(44230, 59791);	-- Reins of the Wooly Mammoth
-i(44231, 59793);	-- Reins of the Wooly Mammoth
-i(44234, 61447);	-- Reins of the Traveler's Tundra Mammoth
-i(44235, 61425);	-- Reins of the Traveler's Tundra Mammoth
-i(44413, 60424);	-- Mekgineer's Chopper
-i(44554, 61451);	-- Flying Carpet
-i(44555);	-- Swift Mooncloth Carpet (NOT IN GAME)
-i(44556);	-- Swift Spellfire Carpet (NOT IN GAME)
-i(44557);	-- Swift Ebonweave Carpet (NOT IN GAME)
-i(44558, 61309);	-- Magnificent Flying Carpet
-i(44689, 61229);	-- Armored Snowy Gryphon
+i(44175, 60021);	-- Plagued Proto-Drake
+i(40775, 54729);	-- Winged Steed of the Ebon Blade
+-- NYI --
+i(43964, 59572);	-- Black Polar Bear	/	Reins of the Black Polar Bear
+--i(0, 60136);		-- Grand Caravan Mammoth
+--i(0, 60140);		-- Grand Caravan Mammoth
+
+-----------------
+-- PATCH 3.0.2 --
+-----------------
+i(44178, 60025);	-- Albino Drake
 i(44690, 61230);	-- Armored Blue Wind Rider
-i(44707, 61294);	-- Reins of the Green Proto-Drake
-i(44842, 61997);	-- Red Dragonhawk
+i(44225, 60114);	-- Armored Brown Bear (A)
+i(44226, 60116);	-- Armored Brown Bear (H)
+i(44689, 61229);	-- Armored Snowy Gryphon
+i(43952, 59567);	-- Azure Drake
+i(43986, 59650);	-- Black Drake
+i(44164, 59976);	-- Black Proto-Drake
+i(44223, 60118);	-- Black War Bear (A)
+i(44224, 60119);	-- Black War Bear (H)
+i(43956, 59785);	-- Black War Mammoth (A)
+i(44077, 59788);	-- Black War Mammoth (H)
+i(43953, 59568);	-- Blue Drake
+i(44151, 59996);	-- Blue Proto-Drake
+i(43951, 59569);	-- Bronze Drake
+i(44554, 61451);	-- Flying Carpet
+i(43961, 61470);	-- Grand Ice Mammoth (A)
+i(44086, 61469);	-- Grand Ice Mammoth (H)
+i(44707, 61294);	-- Green Proto-Drake
+i(43958, 59799);	-- Ice Mammoth (A)
+i(44080, 59797);	-- Ice Mammoth (H)
+i(44221, 64749);	-- Loaned Gryphon
+i(44229, 64762);	-- Loaned Wind Rider
+i(44558, 61309);	-- Magnificent Flying Carpet
+i(44413, 60424);	-- Mekgineer's Chopper
+i(43955, 59570);	-- Red Drake
+i(44160, 59961);	-- Red Proto-Drake
+i(44168, 60002);	-- Time-Lost Proto-Drake
+i(44235, 61425);	-- Traveler's Tundra Mammoth (A)
+i(44234, 61447);	-- Traveler's Tundra Mammoth (H)
+i(43954, 59571);	-- Twilight Drake
+i(44177, 60024);	-- Violet Proto-Drake
+i(43962, 54753);	-- White Polar Bear
+i(44230, 59791);	-- Wooly Mammoth (A)
+i(44231, 59793);	-- Wooly Mammoth (H)
+-- NYI --
+i(44555, 61443);	-- Swift Mooncloth Carpet	/	Swift Mooncloth Carpet (NOT IN GAME)
+i(44557, 61444);	-- Swift Shadoweave Carpet	/	Swift Ebonweave Carpet (NOT IN GAME)
+i(44556, 61446);	-- Swift Spellfire Carpet	/	Swift Spellfire Carpet (NOT IN GAME)
+
+-----------------
+-- PATCH 3.0.3 --
+-----------------
+i(43959, 61465);	-- Grand Black War Mammoth (A)
+-- NYI --
+i(43963, 59573);	-- Brown Polar Bear	/	Reins of the Brown Polar Bear
+
+-----------------
+-- PATCH 3.0.8 --
+-----------------
 i(44843, 61996);	-- Blue Dragonhawk
-i(45125, 63232);	-- Stormwind Steed
-i(45586, 63636);	-- Ironforge Ram
-i(45589, 63638);	-- Gnomeregan Mechanostrider
-i(45590, 63639);	-- Exodar Elekk
-i(45591, 63637);	-- Darnassian Nightsaber
-i(45592, 63641);	-- Thunder Bluff Kodo
-i(45593, 63635);	-- Darkspear Raptor
-i(45595, 63640);	-- Orgrimmar Wolf
-i(45596, 63642);	-- Silvermoon Hawkstrider
-i(45597, 63643);	-- Forsaken Warhorse
-i(45693, 63796);	-- Mimiron's Head
+i(44842, 61997);	-- Red Dragonhawk
+
+-----------------
+-- PATCH 3.0.9 --
+-----------------
+i(44083, 61467);	-- Grand Black War Mammoth (H)
+
+-----------------
+-- PATCH 3.1.0 --
+-----------------
 i(45725, 63844);	-- Argent Hippogryph
-i(45801, 63956);	-- Reins of the Ironbound Proto-Drake
-i(45802, 63963);	-- Reins of the Rusted Proto-Drake
-i(46099, 64658);	-- Horn of the Black Wolf
-i(46100, 64657);	-- White Kodo
-i(46101, 64656);	-- Blue Skeletal Warhorse
-i(46102, 64659);	-- Whistle of the Venomhide Ravasaur
-i(46109, 64731);	-- Sea Turtle
-i(46171, 65439);	-- Furious Gladiator's Frost Wyrm
 i(46308, 64977);	-- Black Skeletal Horse
+i(46099, 64658);	-- Black Wolf
+i(45593, 63635);	-- Darkspear Raptor
+i(45591, 63637);	-- Darnassian Nightsaber
 i(46708, 64927);	-- Deadly Gladiator's Frost Wyrm
-i(46743, 65644);	-- Swift Purple Raptor
-i(46744, 65638);	-- Swift Moonsaber
-i(46745, 65637);	-- Great Red Elekk
-i(46746, 65645);	-- White Skeletal Warhorse
-i(46747, 65642);	-- Turbostrider
-i(46748, 65643);	-- Swift Violet Ram
-i(46749, 65646);	-- Swift Burgundy Wolf
+i(45590, 63639);	-- Exodar Elekk
+i(45597, 63643);	-- Forsaken Warhorse
+i(46171, 65439);	-- Furious Gladiator's Frost Wyrm
+i(45589, 63638);	-- Gnomeregan Mechanostrider
+i(45586, 63636);	-- Ironforge Ram
+i(45693, 63796);	-- Mimiron's Head
+i(45595, 63640);	-- Orgrimmar Wolf
+i(46109, 64731);	-- Sea Turtle
+i(45596, 63642);	-- Silvermoon Hawkstrider
+i(45125, 63232);	-- Stormwind Steed
+i(45592, 63641);	-- Thunder Bluff Kodo
+-- NYI --
+i(46101, 64656);	-- Blue Skeletal Warhorse	/	Blue Skeletal Warhorse
+
+-----------------
+-- PATCH 3.1.2 --
+-----------------
 i(46750, 65641);	-- Great Golden Kodo
-i(46751, 65639);	-- Swift Red Hawkstrider
-i(46752, 65640);	-- Swift Gray Steed
-i(46755, 65641);	-- Great Golden Kodo
-i(46756, 65637);	-- Great Red Elekk
+i(46745, 65637);	-- Great Red Elekk
 i(46757, 65646);	-- Swift Burgundy Wolf
-i(46758, 65640);	-- Swift Gray Steed
-i(46759, 65638);	-- Swift Moonsaber
-i(46760, 65644);	-- Swift Purple Raptor
-i(46761, 65639);	-- Swift Red Hawkstrider
-i(46762, 65643);	-- Swift Violet Ram
-i(46763, 65642);	-- Turbostrider
-i(46764, 65645);	-- White Skeletal Warhorse
+i(46752, 65640);	-- Swift Gray Steed
+i(46744, 65638);	-- Swift Moonsaber
+i(46743, 65644);	-- Swift Purple Raptor
+i(46751, 65639);	-- Swift Red Hawkstrider
+i(46748, 65643);	-- Swift Violet Ram
+i(46747, 65642);	-- Turbostrider
+i(46746, 65645);	-- White Skeletal Warhorse
+-- NYI -- These need more investigation
+i(46755, 65641);	-- Great Golden Kodo		/	Great Golden Kodo
+i(46756, 65637);	-- Great Red Elekk			/	Great Red Elekk
+i(46749, 65646);	-- Swift Burgundy Wolf		/	Swift Burgundy Wolf
+i(46758, 65640);	-- Swift Gray Steed			/	Swift Gray Steed
+i(46759, 65638);	-- Swift Moonsaber			/	Swift Moonsaber
+i(46760, 65644);	-- Swift Purple Raptor		/	Swift Purple Raptor
+i(46761, 65639);	-- Swift Red Hawkstrider	/	Swift Red Hawkstrider
+i(46762, 65643);	-- Swift Violet Ram			/	Swift Violet Ram
+i(46763, 65642);	-- Turbostride				/	Turbostrider
+i(46764, 65645);	-- White Skeletal Warhorse	/	White Skeletal Warhorse
+-----------------
+-- PATCH 3.1.3 --
+-----------------
+i(45801, 63956);	-- Ironbound Proto-Drake
 i(46778, 65917);	-- Magic Rooster Egg
-i(46813, 66087);	-- Silver Covenant Hippogryph
-i(46814, 66088);	-- Sunreaver Dragonhawk
-i(46815, 66090);	-- Quel'dorei Steed
-i(46816, 66091);	-- Sunreaver Hawkstrider
-i(47100, 66847);	-- Reins of the Striped Dawnsaber
-i(47101, 66846);	-- Ochre Skeletal Warhorse
+i(45802, 63963);	-- Rusted Proto-Drake
+i(46102, 64659);	-- Venomhide Ravasaur
+-- NYI --
+--i(0, 66122);		-- Magic Rooster
+--i(0, 66123);		-- Magic Rooster
+--i(0, 66124);		-- Magic Rooster
+-----------------
+-- PATCH 3.2.0 --
+-----------------
 i(47179, 66906);	-- Argent Charger
 i(47180, 67466);	-- Argent Warhorse
+i(49282, 51412);	-- Big Battle Bear
+i(49098, 68188);	-- Crusader's Black Warhorse
+i(49096, 68187);	-- Crusader's White Warhorse
+i(49290, 65917);	-- Magic Rooster Egg
+i(47101, 66846);	-- Ochre Skeletal Warhorse
+i(49636, 69395);	-- Onyxian Drake
+i(46815, 66090);	-- Quel'dorei Steed
 i(47840, 67336);	-- Relentless Gladiator's Frost Wyrm
+i(46813, 66087);	-- Silver Covenant Hippogryph
+i(49283, 42776);	-- Spectral Tiger
+i(47100, 66847);	-- Striped Dawnsaber
+i(46814, 66088);	-- Sunreaver Dragonhawk
+i(46816, 66091);	-- Sunreaver Hawkstrider
 i(49044, 68057);	-- Swift Alliance Steed
 i(49046, 68056);	-- Swift Horde Wolf
-i(49096, 68187);	-- Crusader's White Warhorse
-i(49098, 68188);	-- Crusader's Black Warhorse
-i(49282, 51412);	-- Big Battle Bear
-i(49283, 42776);	-- Reins of the Spectral Tiger
-i(49284, 42777);	-- Reins of the Swift Spectral Tiger
+i(49284, 42777);	-- Swift Spectral Tiger
 i(49285, 46197);	-- X-51 Nether-Rocket
 i(49286, 46199);	-- X-51 Nether-Rocket X-TREME
-i(49290, 65917);	-- Magic Rooster Egg
-i(49636, 69395);	-- Reins of the Onyxian Drake
-i(50250, 71342);	-- X-45 Heartbreaker
+
+-----------------
+-- PATCH 3.3.0 --
+-----------------
+i(50818, 72286);	-- Invincible
+
+-----------------
+-- PATCH 3.3.2 --
+-----------------
+i(51954, 72808);	-- Bloodbathed Frostbrood Vanquisher
 i(50435, 71810);	-- Wrathful Gladiator's Frost Wyrm
-i(50818, 72286);	-- Invincible's Reins
-i(51954, 72808);	-- Reins of the Bloodbathed Frostbrood Vanquisher
-i(51955, 72807);	-- Reins of the Icebound Frostbrood Vanquisher
-i(52200, 73313);	-- Reins of the Crimson Deathcharger
-i(54068, 74918);	-- Wooly White Rhino
+i(50250, 71342);	-- X-45 Heartbreaker
+
+-----------------
+-- PATCH 3.3.3 --
+-----------------
 i(54069, 74856);	-- Blazing Hippogryph
-i(54465, 75207);	-- Vashj'ir Seahorse
-i(54797, 75596);	-- Frosty Flying Carpet
 i(54811, 75614);	-- Celestial Steed
+i(52200, 73313);	-- Crimson Deathcharger
+i(54797, 75596);	-- Frosty Flying Carpet
+i(51955, 72807);	-- Icebound Frostbrood Vanquisher
 i(54860, 75973);	-- X-53 Touring Rocket
+-- NYI --
+--i(0, 75387);		-- Tiny Mooncloth Carpet
+
+-----------------
+-- PATCH 3.3.5 --
+-----------------
+i(54068, 74918);	-- Wooly White Rhino
+
+-----------------
+-- PATCH 3.3.5 --
+-----------------
+--i(0, 73629);		-- Exarch's Elekk
+--i(0, 73630);		-- Great Exarch's Elekk
+--i(0, 69820);		-- Sunwalker Kodo
+--i(0, 69826);		-- Great Sunwalker Kodo
+i(54465, 75207);	-- Vashj'ir Seahorse
 i(60954, 84751);	-- Fossilized Raptor
 i(62298, 90621);	-- Reins of the Golden King
 i(62461, 87090);	-- Goblin Trike Key
@@ -895,9 +962,9 @@ i(164250, 281044);	-- Prestigious Bloodforged Courser
 i(164762, 282682);	-- Kul Tiran Charger
 
 
----------------
--- PATCH 8.1 --
----------------
+-----------------
+-- PATCH 8.1.0 --
+-----------------
 i(166432, 288495);	-- Ashenvale Chimaera
 i(166465, 288736);	-- Azureshell Krolusk
 i(166428, 288438);	-- Blackpaw
@@ -978,8 +1045,7 @@ i(161667, 275840);	-- Voldunai Dunescraper
 i(169162, 290328);	-- Wonderwing 2.0
 i(167751, 294143);	-- X-995 Mechanocat
 i(153594, 256123);	-- Xiwyllag-ATV
-
--- NYI
+-- NYI --
 i(168673);	-- Keys to the Silver Mono-Wheel (No mount in yet)
 
 -----------------
@@ -1166,8 +1232,7 @@ i(186178, 348770);	-- Vicious War Gorm (A)
 i(186179, 348769);	-- Vicious War Gorm (H)
 i(186000, 352441);	-- Wild Hunt Legsplitter
 i(186495, 353858);	-- Winter Wilderling
-
--- NYI
+-- NYI --
 i(186639, 353264);	-- Pilfered Gearglider
 i(186640, 353265);	-- Silver Gearglider
 i(186491, 353860);	-- Spring Wilderling Harness
@@ -1178,74 +1243,52 @@ i(186491, 353860);	-- Spring Wilderling Harness
 i(187595, 359013);	-- Val'sharah Hippogryph
 i(188674, 359318);	-- Soaring Spelltome
 
-
 -----------------
 -- PATCH 9.2.0 --
 -----------------
--- #if AFTER 9.2.0
--- Protoform Synthesis
 i(187632, 359232);	-- Adorned Vombata
+i(187640, 359276);	-- Anointed Protostag
 i(187670, 359376);	-- Bronze Helicid
 i(187663, 359364);	-- Bronzewing Vespoid
 i(187665, 359366);	-- Buzz
+i(190771, 359545);	-- Carcinized Zerethsteed
+i(188696, 363136);	-- Colossal Ebonclaw Mawrat
+i(190765, 368105);	-- Colossal Plaguespew Mawrat
+i(188736, 363297);	-- Colossal Soulshredder Mawrat
+i(188700, 363178);	-- Colossal Umbrahide Mawrat
+i(190766, 368128);	-- Colossal Wraithbound Mawrat
+i(189507, 365559);	-- Cosmic Gladiator's Soul Eater
+i(187673, 359381);	-- Cryptic Aurelid
 i(187630, 359230);	-- Curious Crystalsniffer
 i(187631, 359231);	-- Darkened Vombata
 i(187638, 359278);	-- Deathrunner
+i(187676, 342680);	-- Deepstar Aurelid
 i(187666, 342668);	-- Desertwing Hunter
 i(187664, 359367);	-- Forged Spiteflyer
 i(187677, 359401);	-- Genesis Crawler
 i(187683, 359413);	-- Goldplate Bufonid
 i(190580, 367673);	-- Heartbond Lupine
+i(187629, 359229);	-- Heartlight Vombata
 i(187679, 359403);	-- Ineffable Skitterer
 i(187667, 359372);	-- Mawdapted Raptora
 i(187639, 342671); 	-- Pale Regal Cervid
 i(188809, 363703);	-- Prototype Leaper
 i(187668, 359373);	-- Raptora Swooper
+i(188808, 363701);	-- Patient Bufonid
 i(188810, 363706);	-- Russet Bufonid
 i(187672, 359378);	-- Scarlet Helicid
+i(187675, 359379);	-- Shimmering Aurelid
 i(187641, 359277);	-- Sundered Zerethsteed
 i(187669, 346719);	-- Serenade
 i(187678, 359402);	-- Tarachnid Creeper
 i(187671, 359377);	-- Unsuccessful Prototype Fleetpod
-i(187660, 342678);	-- Vespoid Flutterer
-
--- Achievements
-i(187673, 359381);	-- Cryptic Aurelid
---i(187675, 359379);	-- Shimmering Aurelid SpellID still gone..
-
--- Raid
-i(190771, 359545);	-- Carcinized Zerethsteed
-i(190768, 368158);	-- Zereth Overseer
-
--- M+
 i(187682, 359407);	-- Wastewarped Deathwalker
-
--- PvP
-i(189507, 365559);	-- Cosmic Gladiator's Soul Eater
 i(187681, 347256);	-- Vicious War Croaker (A)
 i(187680, 347255);	-- Vicious War Croaker (H)
-
--- Quest
-i(188808, 363701);	-- Patient Bufonid
-
--- Rare/Treasure
-i(187676, 342680);	-- Deepstar Aurelid
-i(190765, 368105);	-- Colossal Plaguespew Mawrat
-i(190766, 368128);	-- Colossal Wraithbound Mawrat
-
--- Vendor
-i(187640, 359276);	-- Anointed Protostag
-i(187629, 359229);	-- Heartlight Vombata
-
--- Torghast -- They keep changing rewards
-i(188736, 363297);	-- Colossal Soulshredder Mawrat
-i(188700, 363178);	-- Colossal Umbrahide Mawrat
-i(188696, 363136);	-- Colossal Ebonclaw Mawrat
-
--- Put Holy Talbuk as LIGHTFORGED DRAENEI Paladin. Might not exist anymore??
-
+i(187660, 342678);	-- Vespoid Flutterer
+i(190768, 368158);	-- Zereth Overseer
 -- NYI --
+--i(0, 356802);		-- Holy Lightstrider
 i(187644, 349824);	-- Vicious Warstalker (A)
 i(187642, 349823);	-- Vicious Warstalker (H)
--- #endif
 end)();

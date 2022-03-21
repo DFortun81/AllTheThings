@@ -449,7 +449,7 @@ _.Instances = { tier(WOTLK_TIER, {
 										["description"] = "Alexandros: Darion, my son. At last I am able to lay my eyes upon you again. The Lich King tormented me without end, Darion. Endlessly he sought to break my will, to force me to serve him, to bind me to his blade. Finally, when events demanded his full attention, he left me. The one memory I clung to Darion, the one thought that kept me from giving in, it was your sacrifice, my son. That again saved me from eternal peril.\n\nDarion: Father, father, I… I feared for your sanity, father, for you, I would give my life a thousand times.",
 										["questID"] = 24915,	-- Mograine's Reunion
 										["g"] = {
-											i(52200)	-- Reins of the Crimson Deathcharger (MOUNT!)
+											i(52200)	-- Crimson Deathcharger (MOUNT!)
 										},
 									}),
 									i(51319, {	-- Arthas' Training Sword
@@ -3868,7 +3868,7 @@ _.Instances = { tier(WOTLK_TIER, {
 							ach(4584, {	-- The Light of Dawn
 								title(138),	-- the Light of Dawn
 							}),
-							i(50818),	-- Invincible's Reins (MOUNT!)
+							i(50818),	-- Invincible (MOUNT!)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
 							i(52026),	-- Protector's Mark of Sanctifaction (Normal)

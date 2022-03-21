@@ -160,7 +160,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 								10167,	-- Auchindoun...
 								10164,	-- Everything Will Be Alright
 							},
-							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(10167) or C_QuestLog.IsQuestFlaggedCompleted(10164)); end]],
+							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						})),
 						i(27412),	-- Ironstaff of Regeneration
@@ -261,6 +261,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							-- #if AFTER 7.3.5
 							i(27416),	-- Fetish of the Fallen
 							-- #endif
+							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
 							i(33836),	-- The Exarch's Soul Gem
 							n(18478, {	-- Avatar of the Fallen
 								["description"] = "This mob will spawn once the Exarch reaches 25%. If you want the extra loot, the Exarch must stay alive until he spawns.",
@@ -280,9 +281,11 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		},
 	}),
 })));
-_.HiddenQuestTriggers = {
+-- #if AFTER WOD
+root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
 		q(35544),	-- Auchinai Crypts Reward Quest - Normal completion
 		q(35545),	-- Auchinai Crypts Reward Quest - Heroic completion
 	}),
-};
+});
+-- #endif

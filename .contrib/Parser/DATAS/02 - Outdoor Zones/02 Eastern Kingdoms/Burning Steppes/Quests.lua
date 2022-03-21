@@ -214,12 +214,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28442 },	-- Flame Crest
 				}),
-				q(27471, {	-- Blackrock Anomaly -- aa
-					["provider"] = { "n", 9562 },	-- Hellendis Riverhorn
-					["coord"] = { 73.4, 66.2, BURNING_STEPPES },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-				}),
 				q(28314, {	-- Blood Tour
 					["provider"] = { "n", 48306 },	-- John J. Keeshan
 					["coord"] = { 73.5, 67.2, BURNING_STEPPES },
@@ -331,23 +325,6 @@ _.Zones =
 						28444,	-- Latent Demons of the Land
 					},
 				}),
-				q(4735, {	-- Egg Collection
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 10267 },	-- Tinkee Steamboil
-					["sourceQuest"] = 4734,	-- Egg Freezing
-				}),
-				q(4734,  {	-- Egg Freezing
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 10267 },	-- Tinkee Steamboil
-					["sourceQuest"] = 4907,	-- Tinkee Steamboil
-				}),
-				q(4862, {	-- En-Ay-Es-Tee-Why
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 10260 },	-- Kibler
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(12529)),	-- Smolderweb Carrier
-					},
-				}),
 				q(28286, {	-- Enough Damage For One Day
 					["provider"] = { "n", 48110 },	-- Colonel Troteman
 					["coord"] = { 46.3, 45.9, BURNING_STEPPES },
@@ -379,11 +356,6 @@ _.Zones =
 					["coord"] = { 44.5, 44.4, BURNING_STEPPES },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28441 },	-- Enough Damage for One Day
-				}),
-				q(27469, {	-- Friends on The Other Side -- aa -- this is available to alliance despite being in horde territory
-					["provider"] = { "n", 56899 },	-- Ragged Jong
-					["coord"] = { 54.1, 23.8, BURNING_STEPPES },
-					["isBreadcrumb"] = true,
 				}),
 				q(28265, {	-- General Thorg'izog
 					["provider"] = { "n", 48109 },	-- John J. Keeshan
@@ -469,10 +441,6 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 179827 },	-- Wanted/Missing/Lost & Found
-				}),
-				q(4729, {	-- Kibler's Exotic Pets
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 10260 },	-- Kibler
 				}),
 				q(3822,  {	-- Krom'Grul
 					["u"] = REMOVED_FROM_GAME,
@@ -614,17 +582,6 @@ _.Zones =
 						i(64564),	-- Glassy Band
 					},
 				}),
-				q(5081,  {	-- Maxwell's Mission
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(13961)),	-- Halcyon's Muzzle
-						un(REMOVED_FROM_GAME, i(13959)),	-- Omokk's Girth Restrainer
-						un(REMOVED_FROM_GAME, i(13963)),	-- Voone's Vice Grips
-						un(REMOVED_FROM_GAME, i(13962)),	-- Vosh'gajin's Strand
-						un(REMOVED_FROM_GAME, i(13958)),	-- Wyrmthalak's Shackles
-					},
-				}),
 				q(28310, {	-- Morgan's Vigil
 					["provider"] = { "n", 48110 },	-- Colonel Troteman
 					["races"] = ALLIANCE_ONLY,
@@ -704,15 +661,6 @@ _.Zones =
 					["provider"] = { "n", 48033 },	-- Stebben Oreknuckle
 					["coord"] = { 46.7, 44.0, BURNING_STEPPES },
 					["sourceQuests"] = { 28184, 28426 },	-- Chiselgrip, the Heart of the Steppes (A/H versions)
-				}),
-				q(4701,  {	-- Put Her Down
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(15824)),	-- Astoria Robes
-						un(REMOVED_FROM_GAME, i(15827)),	-- Jadescale Breastplate
-						un(REMOVED_FROM_GAME, i(15825)),	-- Traphook Jerkin
-					},
 				}),
 				q(28425, {	-- Return to Ariok
 					["provider"] = { "n", 14437 },	-- Gorzeeki Wildeyes

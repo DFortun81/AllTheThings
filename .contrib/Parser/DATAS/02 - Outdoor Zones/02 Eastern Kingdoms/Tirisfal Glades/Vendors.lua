@@ -60,11 +60,11 @@ _.Zones =
 					["coord"] = { 61.8, 51.8, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(46308),	-- Black Skeletal Warhorse
+						i(46308),	-- Black Skeletal Warhorse (MOUNT!)
 						i(13332),	-- Blue Skeletal Horse (MOUNT!)
 						i(13333),	-- Brown Skeletal Horse (MOUNT!)
 						i(13334),	-- Green Skeletal Warhorse (MOUNT!)
-						i(47101),	-- Ochre Skeletal Warhorse
+						i(47101),	-- Ochre Skeletal Warhorse (MOUNT!)
 						i(18791),	-- Purple Skeletal Warhorse (MOUNT!)
 						i(13331),	-- Red Skeletal Horse (MOUNT!)
 					},

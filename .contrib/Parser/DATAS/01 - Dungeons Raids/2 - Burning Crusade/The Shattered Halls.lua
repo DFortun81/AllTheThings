@@ -459,7 +459,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 								9525,	-- Imprisoned in the Citadel
 								9495,	-- The Will of the Warchief
 							},
-							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(10884) or C_QuestLog.IsQuestFlaggedCompleted(9492) or C_QuestLog.IsQuestFlaggedCompleted(9524) or C_QuestLog.IsQuestFlaggedCompleted(9525) or C_QuestLog.IsQuestFlaggedCompleted(9495)); end]],
+							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						})),
 						i(27533),	-- Demonblood Eviscerator
@@ -590,7 +590,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 									9524,	-- Imprisoned in the Citadel
 									9525,	-- Imprisoned in the Citadel
 								},
-								["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(10884) or C_QuestLog.IsQuestFlaggedCompleted(9524) or C_QuestLog.IsQuestFlaggedCompleted(9525)); end]],
+								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif
 							})),
 							i(27533),	-- Demonblood Eviscerator
@@ -616,6 +616,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							-- #if BEFORE 7.3.5
 							i(27529),	-- Figurine of the Colossus
 							-- #endif
+							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
 							i(33815),	-- Bladefist's Seal
 							i(23723),	-- Warchief Kargath's Fist
 						},
@@ -635,9 +636,11 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		},
 	}),
 })));
-_.HiddenQuestTriggers = {
+-- #if AFTER WOD
+root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
 		q(35517),	-- Shattered Halls Reward Quest - Normal completion
 		q(35518),	-- Shattered Halls Reward Quest - Heroic completion
 	}),
-};
+});
+-- #endif

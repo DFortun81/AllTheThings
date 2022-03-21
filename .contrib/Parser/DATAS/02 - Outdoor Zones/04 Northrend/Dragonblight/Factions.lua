@@ -59,7 +59,7 @@ _.Zones =
 							i(44204),	-- Grips of Fierce Pronouncements
 							i(44205),	-- Legplates of Bloody Reprisal
 							i(42185),	-- Pattern: Mysterious Bag
-							i(43955),	-- Reins of the Red Drake (MOUNT!)
+							i(43955),	-- Red Drake (MOUNT!)
 							i(44201),	-- Sabatons of Draconic Vigor
 							i(44202),	-- Sandals of Crimson Fury
 							i(44196),	-- Sash of the Wizened Wyrm

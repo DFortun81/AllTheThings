@@ -816,6 +816,7 @@ _.Zones =
 					},
 				}),
 				q(52068, {	-- Helping Out, Somewhere Else
+					["sourceQuests"] = { 50745 },	-- Infiltrating the Empire
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 134720 },	-- Leo Shealds
 					["coord"] = { 43.0, 56.6, STORMSONG_VALLEY },

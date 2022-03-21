@@ -24,6 +24,15 @@ _.Zones =
 					["crs"] = { 7027 },	-- Blackrock Slayer
 					["u"] = REMOVED_FROM_GAME,
 				}),
+				-- #if BEFORE 5.0.4
+				i(15774, {	-- Pattern: Heavy Scorpid Shoulders
+					["timeline"] = { "removed 4.0.3", "added 5.0.4", "removed 6.0.2" },
+					-- #if BEFORE 4.0.3
+					["coord"] = { 41.8, 37.0, BURNING_STEPPES },
+					["cr"] = 7029,	-- Blackrock Battlemaster
+					-- #endif
+				}),
+				-- #endif
 				i(15732, {	-- Pattern: Volcanic Leggings
 					["crs"] = { 7035 },	-- Firegut Brute
 					["u"] = REMOVED_FROM_GAME,

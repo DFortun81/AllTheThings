@@ -10,11 +10,11 @@ _.Zones =
 				n(30464, {	-- "Honest" Max <Slightly Used Flying Mounts>
 					["coord"] = { 40.6, 84.6, THE_STORM_PEAKS },
 					["g"] = {
-						i(44221, {	-- Loaned Gryphon Reins
+						i(44221, {	-- Loaned Gryphon (MOUNT!)
 							["collectible"] = false,
 							["races"] = ALLIANCE_ONLY,
 						}),
-						i(44229, {	-- Loaned Wind Rider Reins
+						i(44229, {	-- Loaned Wind Rider (MOUNT!)
 							["collectible"] = false,
 							["races"] = HORDE_ONLY,
 						}),

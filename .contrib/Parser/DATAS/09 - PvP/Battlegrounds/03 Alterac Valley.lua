@@ -33,46 +33,6 @@ local OnTooltipForAlteracValley = [[function(t)
 		end
 	end
 end]];
-local HERO_OF_ALTERAC_ALLIANCE_OnUpdate = [[function(t)
-	if t.collectible then
-		if not t.av then
-			local f = _.SearchForField("factionID", 730);
-			if f and #f > 0 then
-				t.av = f[1];
-			else
-				return true;
-			end
-		end
-		t.SetAchievementCollected(t.achievementID, t.av.standing == 8);
-	end
-end]];
-local HERO_OF_ALTERAC_HORDE_OnUpdate = [[function(t)
-	if t.collectible then
-		if not t.av then
-			local f = _.SearchForField("factionID", 729);
-			if f and #f > 0 then
-				t.av = f[1];
-			else
-				return true;
-			end
-		end
-		t.SetAchievementCollected(t.achievementID, t.av.standing == 8);
-	end
-end]];
-local HERO_OF_ALTERAC_OnClick = [[function(row, button)
-	if button == "RightButton" then
-		local t = row.ref;
-		local clone = _.CreateMiniListForGroup(_.CreateAchievement(t[t.key], { t.av })).data;
-		clone.description = t.description;
-		return true;
-	end
-end]];
-local HERO_OF_ALTERAC_OnTooltip = [[function(t)
-	if t.collectible then
-		GameTooltip:AddLine(" ");
-		GameTooltip:AddDoubleLine(" |T" .. t.av.icon .. ":0|t " .. t.av.text, _.L[t.av.standing == 8 and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"], 1, 1, 1);
-	end
-end]];
 local REMOVED_WITH_ANNIVERSARY_15 = { "removed 8.2.5.31958" };
 root("PVP", pvp(n(BATTLEGROUNDS, {
 	m(ALTERAC_VALLEY, {
@@ -116,18 +76,18 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				ach(708, applyclassicphase(PHASE_TWO, {	-- Hero of the Frostwolf Clan
 					["races"] = HORDE_ONLY,
 					-- #if BEFORE 3.0.1
-					["OnClick"] = HERO_OF_ALTERAC_OnClick,
-					["OnTooltip"] = HERO_OF_ALTERAC_OnTooltip,
-					["OnUpdate"] = HERO_OF_ALTERAC_HORDE_OnUpdate,
+					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
+					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
+					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 729); end]],
 					["description"] = "Raise your reputation with the Frostwolf Clan to Exalted.",
 					-- #endif
 				})),
 				ach(709, applyclassicphase(PHASE_TWO, {	-- Hero of the Stormpike Guard
 					["races"] = ALLIANCE_ONLY,
 					-- #if BEFORE 3.0.1
-					["OnClick"] = HERO_OF_ALTERAC_OnClick,
-					["OnTooltip"] = HERO_OF_ALTERAC_OnTooltip,
-					["OnUpdate"] = HERO_OF_ALTERAC_ALLIANCE_OnUpdate,
+					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
+					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
+					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 730); end]],
 					["description"] = "Raise your reputation with the Stormpike Guard to Exalted.",
 					-- #endif
 				})),
@@ -193,16 +153,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					["filterID"] = MOUNTS,
 					-- #if BEFORE WRATH
 					["description"] = "Obtain a Frostwolf Howler from Alterac Valley.",
-					["OnUpdate"] = [[function(t)
-						local collected = false;
-						for i,provider in ipairs(t.providers) do
-							if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
-								collected = true;
-								break;
-							end
-						end
-						t.SetAchievementCollected(t.achievementID, collected);
-					end]],
+					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 					-- #endif
 				})),
 				removeclassicphase(ach(707, {	-- Stormpike Battle Charger
@@ -211,16 +162,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					["filterID"] = MOUNTS,
 					-- #if BEFORE WRATH
 					["description"] = "Obtain a Stormpike Battle Charger from Alterac Valley.",
-					["OnUpdate"] = [[function(t)
-						local collected = false;
-						for i,provider in ipairs(t.providers) do
-							if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
-								collected = true;
-								break;
-							end
-						end
-						t.SetAchievementCollected(t.achievementID, collected);
-					end]],
+					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 					-- #endif
 				})),
 				ach(1166),	-- To the Looter Go the Spoils
@@ -1186,6 +1128,9 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				i(17306),	-- Stormpike Soldier's Blood
 				i(17326),	-- Stormpike Soldier's Flesh
 				i(18231),	-- Sleeveless T-Shirt
+				i(187696, {	-- The Wolf, the Wolpertinger, and Other Tails
+					["timeline"] = { "added 9.1.5" },
+				}),
 			}),
 		},
 	}),

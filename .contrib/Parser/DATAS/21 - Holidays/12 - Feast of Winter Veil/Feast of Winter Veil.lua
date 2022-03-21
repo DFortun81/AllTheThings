@@ -203,9 +203,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["provider"] = { "i", 34425 },	-- Clockwork Rocket Bot
 				["timeline"] = { "added 2.3.0.7561" },
 				-- #if BEFORE WRATH
-				["OnUpdate"] = [[function(t)
-					t.SetAchievementCollected(t.achievementID, GetItemCount(34425, true) > 0);
-				end]],
+				["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 				-- #endif
 			})),
 			ach(1706, {	-- Crashin' Thrashin' Racer (2008)
@@ -413,7 +411,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					-- #endif
 					-- #if AFTER WOD
 					573,	-- Bloodmaul Slag Mines
-					BLACKROCK_SPIRE, 617, 618,	-- Upper Blackrock Spire
+					UPPER_BLACKROCK_SPIRE_WOD, 617, 618,	-- Upper Blackrock Spire
 					596, 597, 598, 599, 600,	-- Blackrock Foundry
 					661, 662, 663, 664, 665, 666, 667, 668, 669, 670,	-- Hellfire Citadel
 					-- #endif

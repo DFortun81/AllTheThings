@@ -12,6 +12,7 @@ root("GearSets", n(CLASS_TRIAL, {
 			["description"] = "These are gained by creating a Level 50 Trial of that particular class.  Each class has one default spec except Shamans, Druids and Hunters.",
 			["lvl"] = 50,
 			["groups"] = {
+				i(185940), -- Pristine Survival Kit
 				cl(DEATHKNIGHT, {
 					i(171988, {	-- Adventurer's Footlocker
 						i(170591),	-- Heart-Lesion Blade

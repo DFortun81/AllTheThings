@@ -1142,11 +1142,11 @@ _.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			i(29530),	-- Drums of Speed
 			i(29528),	-- Drums of War
 			-- #if ANYCLASSIC
-			applyclassicphase(TBC_PHASE_FIVE, i(185848)),	-- Greater Drums of Battle
-			applyclassicphase(TBC_PHASE_FIVE, i(185849)),	-- Greater Drums of Panic
-			applyclassicphase(TBC_PHASE_FIVE, i(185850)),	-- Greater Drums of Restoration
-			applyclassicphase(TBC_PHASE_FIVE, i(185851)),	-- Greater Drums of Speed
-			applyclassicphase(TBC_PHASE_FIVE, i(185852)),	-- Greater Drums of War
+			applyclassicphase(TBC_PHASE_FOUR, i(185848)),	-- Greater Drums of Battle
+			applyclassicphase(TBC_PHASE_FOUR, i(185849)),	-- Greater Drums of Panic
+			applyclassicphase(TBC_PHASE_FOUR, i(185850)),	-- Greater Drums of Restoration
+			applyclassicphase(TBC_PHASE_FOUR, i(185851)),	-- Greater Drums of Speed
+			applyclassicphase(TBC_PHASE_FOUR, i(185852)),	-- Greater Drums of War
 			-- #endif
 		}),
 	}),

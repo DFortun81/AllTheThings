@@ -776,7 +776,7 @@ _.ExpansionFeatures =
 						}),
 						q(37179, {	-- For the Children!
 							["provider"] = { "n", 88009 },	-- Millhouse Manastorm
-							["maps"] = { BLACKROCK_SPIRE, 617, 618 },	-- Upper Blackrock Spire
+							["maps"] = { UPPER_BLACKROCK_SPIRE_WOD, 617, 618 },	-- Upper Blackrock Spire
 							["g"] = {
 								i(118938),	-- Manastorm's Duplicator (TOY!)
 								follower(455),	-- Millhouse Manastorm

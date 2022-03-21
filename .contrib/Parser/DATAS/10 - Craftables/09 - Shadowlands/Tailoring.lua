@@ -54,6 +54,11 @@ _.Craftables =
 			}),
 			i(185960),		-- Vestige of Origins
 			i(184479),		-- Shrouded Cloth Bag
+			filter(MISC, {
+				i(187741),	-- Crafter's Mark IV
+				i(187742),	-- Crafter's Mark of the First Ones
+				i(187784),	-- Vestige of the Eternal
+			}),
 		}),
 	}),
 };

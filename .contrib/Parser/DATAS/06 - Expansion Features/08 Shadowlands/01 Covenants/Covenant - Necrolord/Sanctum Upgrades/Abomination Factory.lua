@@ -281,6 +281,9 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										{ "i", 178061, 1 },	-- 1xMalleable Flesh
 									},
 									["_drop"] = { "g" },
+									["g"] = {
+										i(183743), -- Malleable Flesh
+									},
 								}),
 								q(60195, {	-- Build One More
 									["sourceQuests"] = { 60042 },	-- May I Take Your Order?

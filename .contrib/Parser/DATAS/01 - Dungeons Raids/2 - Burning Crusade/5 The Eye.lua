@@ -231,7 +231,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 							10445,	-- The Vials of Eternity
 							11007,	-- Kael'thas and the Verdant Sphere
 						},
-						["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(10445) or C_QuestLog.IsQuestFlaggedCompleted(11007)); end]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					})),
 					removeclassicphase(ach(885, {	-- Ashes of Al'ar
@@ -239,16 +239,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 						["filterID"] = MOUNTS,
 						-- #if BEFORE WRATH
 						["description"] = "Obtain the Ashes of Al'ar from Kael'thas Sunstrider in Tempest Keep.",
-						["OnUpdate"] = [[function(t)
-							local collected = false;
-							for i,provider in ipairs(t.providers) do
-								if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
-									collected = true;
-									break;
-								end
-							end
-							t.SetAchievementCollected(t.achievementID, collected);
-						end]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 						-- #endif
 					})),
 					i(32458),	-- Ashes of Al'ar (MOUNT!)

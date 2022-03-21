@@ -182,7 +182,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						removeclassicphase(ach(652, {	-- The Escape From Durnholde
 							-- #if BEFORE 3.0.1
 							["sourceQuest"] = 10284,	-- Escape from Durnholde
-							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(10284)); end]],
+							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						})),
 						-- #if AFTER 7.3.5
@@ -335,6 +335,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(28227),	-- Sparking Arcanite Ring
 							i(28223),	-- Arcanist's Stone
 							i(24173),	-- Design: Circlet of Arcane Might
+							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
 							i(33847),	-- Epoch Hunter's Head
 						},
 					}),
@@ -353,9 +354,11 @@ for i,o in ipairs({
 	i(6097),	-- Acolyte's Shirt
 }) do table.insert(THOMAS_YANCE_GROUPS, o); end
 
-_.HiddenQuestTriggers = {
+-- #if AFTER WOD
+root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
 		q(35542),	-- Old Hillsbrad Foothills Reward Quest - Normal completion
 		q(35543),	-- Old Hillsbrad Foothills Reward Quest - Heroic completion
 	}),
-};
+});
+-- #endif

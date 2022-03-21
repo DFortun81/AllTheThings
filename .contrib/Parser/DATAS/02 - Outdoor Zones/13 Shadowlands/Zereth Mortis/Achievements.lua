@@ -155,11 +155,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					}),
 					crit(5, {	-- Empyrean Essence
 						["provider"] = { "i", 187891 },	-- Empyrean Essence
-						-- ["coord"] = { X, Y, ZERETH_MORTIS },
+						["coord"] = { 44.8, 76.5, ZERETH_MORTIS },
 					}),
 					crit(6, {	-- Incorporeal Sand
 						["provider"] = { "i", 187892 },	-- Incorporeal Sand
-						["coord"] = { 39.3, 34.6, ZERETH_MORTIS },
+						["coords"] = {
+							{ 39.3, 34.6, ZERETH_MORTIS },
+							{ 46.9, 65.0, ZERETH_MORTIS },
+						},
 					}),
 					crit(7, {	-- Volatile Precursor
 						["provider"] = { "i", 187893 },	-- Volatile Precursor

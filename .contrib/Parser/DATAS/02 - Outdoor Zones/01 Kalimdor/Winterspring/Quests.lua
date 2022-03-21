@@ -193,16 +193,6 @@ _.Zones =
 					["provider"] = { "n", 10267 },	-- Tinkee Steamboil
 					["sourceQuest"] = 4726,	-- Broodling Essence
 				}),
-				q(5124,  {	-- Fiery Plate Gauntlets
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 10637 },	-- Malyfous Darkhammer
-					["sourceQuest"] = 5103,	-- Hot Fiery Death
-					["requireSkill"] = BLACKSMITHING,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(12699)),	-- Plans: Fiery Plate Gauntlets
-						un(REMOVED_FROM_GAME, i(12631)),	-- Fiery Plate Gauntlets
-					},
-				}),
 				q(28632, {	-- Fresh From The Hills
 					["provider"] = { "n", 48965 },	-- Deez Rocksnitch
 					["coord"] = { 59.7, 49.6, WINTERSPRING },
@@ -274,11 +264,6 @@ _.Zones =
 					["provider"] = { "n", 48659 },	-- Quel'dorei Spirit
 					["coord"] = { 50.8, 55.0, WINTERSPRING },
 					["sourceQuest"] = 28534,	-- Descendants of the Highborne
-				}),
-				q(5126,  {	-- Lorax's Tale
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 10918 },	-- Lorax
-					["requireSkill"] = BLACKSMITHING,
 				}),
 				q(969,   {	-- Luck Be With You
 					["u"] = REMOVED_FROM_GAME,
@@ -499,19 +484,6 @@ _.Zones =
 					["provider"] = { "n", 48660 },	-- Sin'dorei Spirit
 					["coord"] = { 50.6, 55.0, WINTERSPRING },
 					["sourceQuest"] = 28519,	-- Pain of the Blood Elves
-				}),
-				q(5127,  {	-- The Demon Forge
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 10918 },	-- Lorax
-					["sourceQuest"] = 5126,	-- Lorax's Tale
-					["requireSkill"] = BLACKSMITHING,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(12696)),	-- Plans: Demon Forged Breastplate
-						un(REMOVED_FROM_GAME, i(12849, {	-- Demon Kissed Sack
-							i(10383),	-- Commander's Pauldrons
-							i(10377),	-- Commander's Vambraces
-						})),
-					},
 				}),
 				q(6029, {	-- The Everlook Report
 					["u"] = REMOVED_FROM_GAME,

@@ -87,7 +87,9 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["timeline"] = { "removed 4.0.3" },
 					-- #if BEFORE 3.0.1
 					["description"] = "Earn exalted status with the Shen'dralar.",
-					["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, (select(3, GetFactionInfoByID(809)) or 1) >= 8); end]],
+					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
+					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
+					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 809); end]],
 					-- #endif
 				})),
 				ach(644, {	-- King of Dire Maul
@@ -246,9 +248,10 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["lvl"] = 60,
 					["group"] = {
 						removeclassicphase(ach(2357, {	-- Dreadsteed of Xoroth
+							["sourceQuest"] = 7631,	-- Dreadsteed of Xoroth
 							-- #if BEFORE 3.0.1
 							["description"] = "Completed the Dreadsteed of Xoroth warlock quest.",
-							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(7631)); end]],
+							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 							["timeline"] = { "removed 4.0.3" },
 							["classes"] = { WARLOCK },

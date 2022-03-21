@@ -1427,23 +1427,18 @@ _.Zones =
 				}),
 				q(51240, {	-- WANTED: Anchorface
 					["coord"] = { 19.57, 43.65, DRUSTVAR },
-					["races"] = HORDE_ONLY,
 				}),
 				q(53459, {	-- WANTED: Sister Lilias
 					["coord"] = { 37.51, 25.8, DRUSTVAR },
-					["races"] = HORDE_ONLY,
 				}),
 				q(53455, {	-- WANTED: The Crimson Cutthroats
 					["coord"] = { 19.57, 43.65, DRUSTVAR },
-					["races"] = HORDE_ONLY,
 				}),
 				q(53456, {	-- WANTED: The Rime Huntress
 					["coord"] = { 37.51, 25.8, DRUSTVAR },
-					["races"] = HORDE_ONLY,
 				}),
 				q(53458, {	-- WANTED: The Rindlewoe
 					["coord"] = { 37.51, 25.8, DRUSTVAR },
-					["races"] = HORDE_ONLY,
 				}),
 				q(52486, {	-- Waycrest Manor: Draining the Heartsbane
 					["sourceQuests"] = {

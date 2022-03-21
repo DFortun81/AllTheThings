@@ -137,7 +137,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						removeclassicphase(ach(658, {	-- The Mechanar
 							-- #if BEFORE 3.0.1
 							["sourceQuest"] = 10704,	-- How to Break Into the Arcatraz
-							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(10704)); end]],
+							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						})),
 						i(28288),	-- Abacus of Violent Odds
@@ -256,6 +256,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(28204),	-- Tunic of Assassination
 							i(30533),	-- Vanquisher's Legplates
 							i(21907),	-- Pattern: Arcanoweave Robe
+							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
 							i(31086),	-- Bottom Shard of the Arcatraz Key
 							i(33860),	-- Pathaleon's Projector
 						},
@@ -265,9 +266,11 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		},
 	}),
 })));
-_.HiddenQuestTriggers = {
+-- #if AFTER WOD
+root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
 		q(35528),	-- The Mechanar Reward Quest - Normal completion
 		q(35529),	-- The Mechanar Reward Quest - Heroic completion
 	}),
-};
+});
+-- #endif

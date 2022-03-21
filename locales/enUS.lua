@@ -898,6 +898,8 @@ app.L = {
 		[-22] = app.asset("Category_Secrets"),												-- Secrets
 		[-23] = "Interface\\Icons\\item_maldraxxus_paragonchest_01",						-- WoD Common Dungeon Drop
 		[-26] = app.asset("Category_WorldDrops"),											-- Drop
+		[-27] = "Interface\\Icons\\Achievement_Boss_Overlord_Wyrmthalak",					-- Lower (Blackrock Spire)
+		[-28] = "Interface\\Icons\\INV_Misc_Head_Dragon_01",								-- Upper (Blackrock Spire)
 		[-31] = app.asset("Category_Promo"),												-- Promotions
 		[-34] = app.asset("Interface_WorldQuest"),							            	-- World Quests
 		[-36] = app.asset("Category_InGameShop"),											-- In-Game Shop
@@ -1284,7 +1286,6 @@ app.L = {
 		[-987] = 2178509,																	-- The Upper Reaches
 		-- 9.2
 		[-988] = select(10, GetAchievementInfo(15402)),										-- Cypher of the First Ones
-		[-989] = "Interface\\Icons\\inv_blacksmithing_greaterweightstone",					-- The Great Vault
 		--
 	-- Sets
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",						-- Sets
@@ -1410,6 +1411,8 @@ app.L = {
 		[-22] = "Secrets",														-- Secrets
 		[-23] = "Common Dungeon Drop",											-- WoD Common Dungeon Drop
 		[-26] = "Drops",														-- Drops
+		[-27] = "Lower",														-- Lower (Blackrock Spire)
+		[-28] = "Upper",														-- Upper (Blackrock Spire)
 		[-31] = select(1,GetCategoryInfo(15268)),								-- Promotions
 		[-34] = TRACKER_HEADER_WORLD_QUESTS,									-- World Quests
 		[-36] = BATTLE_PET_SOURCE_10,											-- In-Game Shop
@@ -1820,7 +1823,6 @@ app.L = {
 		[-987] = select(2, GetAchievementInfo(14493)),							-- The Upper Reaches
 		-- 9.2
 		[-988] = select(2, GetAchievementInfo(15402)),							-- Cypher of the First Ones
-		[-989] = "The Great Vault",												-- The Great Vault
 	-- Sets
 		[-1000] = WARDROBE_SETS, 												-- Sets
 	-- Warrior order hall lore items

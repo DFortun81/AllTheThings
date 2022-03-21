@@ -175,14 +175,6 @@ _.Zones =
 					["coord"] = { 55.6, 60.8, TANARIS },
 					["sourceQuest"] = 24932,	-- Cutting Losses
 				}),
-				q(8181,  {	-- Confront Yeh'kinya
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 10460 },	-- Prospector Ironboot
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(20218)),	-- Faded Hakkari Cloak
-						un(REMOVED_FROM_GAME, i(20219)),	-- Tattered Hakkari Cape
-					},
-				}),
 				q(24932, {	-- Cutting Losses
 					["provider"] = { "n", 38706 },	-- Zeke Bootscuff
 					["sourceQuests"] = {
@@ -823,11 +815,6 @@ _.Zones =
 						i(56901),	-- Translation Boots
 						i(56902),	-- Rosy Tablet Belt
 					},
-				}),
-				q(5065, {	-- The Lost Tablets of Mosh'aru
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 10460 },	-- Prospector Ironboot
-					["sourceQuest"] = 3528,	-- The God Hakkar
 				}),
 				q(2773,  {	-- The Mithril Kid
 					["provider"] = { "n", 7804 },	-- Trenton Lighthammer

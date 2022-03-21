@@ -32,6 +32,13 @@ _.Craftables =
 				i(173137),	-- Quick Laestrite Band
 			}),
 			i(185960),		-- Vestige of Origins
+			filter(MISC, {
+				i(187829),	-- Aealic Harmonizing Stone
+				i(187741),	-- Crafter's Mark IV
+				i(187742),	-- Crafter's Mark of the First Ones
+				i(187849),	-- Devourer Essence Stone
+				i(187784),	-- Vestige of the Eternal
+			}),
 		}),
 	}),
 };

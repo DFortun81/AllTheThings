@@ -10,16 +10,7 @@ root("Promotions", n(-531, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Spirit
 			["races"] = HORDE_ONLY,
 			-- #if BEFORE WRATH
 			["description"] = "Proud owner of a Spirit of Competition pet from the 2008 Spirit of Competition event.",
-			["OnUpdate"] = [[function(t)
-				local collected = false;
-				for i,provider in ipairs(t.providers) do
-					if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
-						collected = true;
-						break;
-					end
-				end
-				t.SetAchievementCollected(t.achievementID, collected);
-			end]],
+			["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 			-- #endif
 		})),
 		i(37297, {	-- Gold Medallion (Spirit of Competition)
@@ -31,16 +22,7 @@ root("Promotions", n(-531, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Spirit
 			["races"] = HORDE_ONLY,
 			-- #if BEFORE WRATH
 			["description"] = "Proud owner of a Competitor's Tabard from the 2008 Spirit of Competition event.",
-			["OnUpdate"] = [[function(t)
-				local collected = false;
-				for i,provider in ipairs(t.providers) do
-					if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
-						collected = true;
-						break;
-					end
-				end
-				t.SetAchievementCollected(t.achievementID, collected);
-			end]],
+			["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 			-- #endif
 		})),
 		i(36941, {	-- Competitor's Tabard

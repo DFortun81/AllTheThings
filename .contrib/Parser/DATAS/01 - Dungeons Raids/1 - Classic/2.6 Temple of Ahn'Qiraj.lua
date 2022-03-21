@@ -18,6 +18,17 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 		["isRaid"] = true,
 		["lvl"] = 50,
 		["groups"] = {
+			n(ACHIEVEMENTS, {
+				removeclassicphase(ach(956, {	-- Brood of Nozdormu
+					-- #if BEFORE 3.0.1
+					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
+					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
+					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 910); end]],
+					["description"] = "Raise your reputation with the Brood of Nozdormu to Exalted.",
+					-- #endif
+					["maps"] = { CAVERNS_OF_TIME },
+				})),
+			}),
 			n(FACTIONS, {
 				faction(910, {	-- Brood of Nozdormu
 					["icon"] = "Interface\\Icons\\INV_Misc_Head_Dragon_Bronze",
@@ -1065,16 +1076,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["filterID"] = MOUNTS,
 					-- #if BEFORE WRATH
 					["description"] = "Obtain a Red Qiraji Resonating Crystal.",
-					["OnUpdate"] = [[function(t)
-						local collected = false;
-						for i,provider in ipairs(t.providers) do
-							if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
-								collected = true;
-								break;
-							end
-						end
-						t.SetAchievementCollected(t.achievementID, collected);
-					end]],
+					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 					-- #endif
 				})),
 				i(21218),	-- Blue Qiraji Battle Tank (MOUNT!)
@@ -1502,7 +1504,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					removeclassicphase(ach(687, {	-- Temple of Ahn'Qiraj
 						-- #if BEFORE 3.0.1
 						["sourceQuest"] = 8801,	-- C'Thun's Legacy
-						["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(8801)); end]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					})),
 					i(21221),	-- Eye of C'Thun

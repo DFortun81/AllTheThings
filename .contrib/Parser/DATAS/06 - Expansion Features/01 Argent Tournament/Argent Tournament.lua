@@ -1426,7 +1426,7 @@ _.ExpansionFeatures =
 			}),
 			n(VENDORS, {
 				n(COMMON_VENDOR_ITEMS, {
-					i(45725, {	-- Argent Hippogryph
+					i(45725, {	-- Argent Hippogryph (MOUNT!)
 						["cost"] = { { "c", 241, 150 }, },	-- 150x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
@@ -2494,10 +2494,10 @@ _.ExpansionFeatures =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(45574),	-- Stormwind Tabard
-						i(45125, {	-- Stormwind Steed
+						i(45125, {	-- Stormwind Steed (MOUNT!)
 							["cost"] = { { "c", 241, 100 }, },	-- 100 Champion's Seal
 						}),
-						i(46752, {	-- Swift Gray Steed
+						i(46752, {	-- Swift Gray Steed (MOUNT!)
 							["races"] = { HUMAN },
 							["cost"] = { { "c", 241, 5 }, },	-- 5 Champion's Seal
 						}),
@@ -2856,7 +2856,7 @@ _.ExpansionFeatures =
 							["cost"] = { { "c", 241, 100 }, },	-- 100x Champion's Seal
 						}),
 						i(45577),	-- Ironforge Tabard
-						i(46748, {	-- Swift Violet Ram
+						i(46748, {	-- Swift Violet Ram (MOUNT!)
 							["races"] = { DWARF },
 							["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
 						}),
@@ -2870,10 +2870,9 @@ _.ExpansionFeatures =
 					["coord"] = { 76.2, 24.4, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(46750, {	-- Great Golden Kodo
+						i(46750, {	-- Great Golden Kodo (MOUNT!)
 							["cost"] = { { "c", 241, 5 } },	-- 5x Champion's Seal
 						}),
-						un(REMOVED_FROM_GAME, i(46755)),	-- Great Golden Kodo (MOUNT!)
 						i(44980, {	-- Mulgore Hatchling (PET!)
 							["cost"] = { { "c", 241, 40 }, },	-- 40x Champion's Seal
 						}),
@@ -2906,7 +2905,7 @@ _.ExpansionFeatures =
 							["cost"] = { { "i", 46114, 1 }, },		-- 1x Champion's Writ
 						}),
 						i(45583),	-- Undercity Tabard
-						i(46746, {	-- White Skeletal Warhorse
+						i(46746, {	-- White Skeletal Warhorse (MOUNT!)
 							["cost"] = { { "c", 241, 5 } },	-- 5x Champion's Seal
 						}),
 						un(REMOVED_FROM_GAME, i(46764)),	-- White Skeletal Warhorse Mount
@@ -2937,7 +2936,7 @@ _.ExpansionFeatures =
 						i(45595, {	-- Orgrimmar Wolf (MOUNT!)
 							["cost"] = { { "c", 241, 100 }, },	-- 100x Champion's Seal
 						}),
-						un(REMOVED_FROM_GAME, i(46749)),	-- Swift Burgundy Wolf
+						un(REMOVED_FROM_GAME, i(46749)),	-- Swift Burgundy Wolf (MOUNT!)
 						i(46757, {	-- Swift Burgundy Wolf (MOUNT!)
 							["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
 						}),
@@ -2947,13 +2946,13 @@ _.ExpansionFeatures =
 					["coord"] = { 76.2, 19.6, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(46815, {	-- Quel'dorei Steed
+						i(46815, {	-- Quel'dorei Steed (MOUNT!)
 							["cost"] = { { "c", 241, 100 }, },	-- 100x Champion's Seal
 						}),
 						i(46820, {	-- Shimmering Wyrmling
 							["cost"] = { { "c", 241, 40 }, },	-- 40x Champion's Seal
 						}),
-						i(46813, {	-- Silver Convenant Hippogryph
+						i(46813, {	-- Silver Convenant Hippogryph (MOUNT!)
 							["cost"] = { { "c", 241, 150 }, },	-- 150x Champion's Seal
 						}),
 						i(46817, {	-- Silver Covenant Tabard
@@ -2978,12 +2977,7 @@ _.ExpansionFeatures =
 							["cost"] = { { "c", 241, 100 }, },	-- 100x Champion's Seal
 						}),
 						i(45580),	-- Exodar Tabard
-						i(46745, {	-- Great Red Elekk (MOUNT!)
-							["races"] = { DRAENEI },
-						}),
-						i(46756, {	-- Great Red Elekk (MOUNT!)
-							["races"] = exclude(DRAENEI, ALLIANCE_ONLY),
-						}),
+						i(46745)	-- Great Red Elekk (MOUNT!)
 					},
 				}),
 				n(35574, {	-- Magistrix Iruvia <Legacy Justice Quartermaster>
@@ -3129,7 +3123,7 @@ _.ExpansionFeatures =
 						i(45002, {	-- Mechanopeep (PET!)
 							["cost"] = { { "c", 241, 40 }, },	-- 40x Champion's Seal
 						}),
-						i(46747, {	-- Turbostrider
+						i(46747, {	-- Turbostrider (MOUNT!)
 							["races"] = { GNOME },
 							["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
 						}),
@@ -3853,10 +3847,10 @@ _.ExpansionFeatures =
 						i(46821, {	-- Shimmering Wyrmling
 							["cost"] = { { "c", 241, 40 }, },	-- 40x Champion's Seal
 						}),
-						i(46814, {	-- Sunreaver Dragonhawk
+						i(46814, {	-- Sunreaver Dragonhawk (MOUNT!)
 							["cost"] = { { "c", 241, 150 }, },	-- 150x Champion's Seal
 						}),
-						i(46816, {	-- Sunreaver Hawkstrider
+						i(46816, {	-- Sunreaver Hawkstrider (MOUNT!)
 							["cost"] = { { "c", 241, 100 }, },	-- 100x Champion's Seal
 						}),
 						i(46818, {	-- Sunreaver Tabard

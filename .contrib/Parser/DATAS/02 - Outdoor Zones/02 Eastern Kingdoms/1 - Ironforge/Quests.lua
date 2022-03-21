@@ -137,15 +137,6 @@ _.Zones =
 					["coord"] = { 50.2, 6.8, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(1050,  {	-- Mythology of the Titans
-					["provider"] = { "n", 3979 },	-- Librarian Mae Paledust
-					["coord"] = { 75.0, 12.5, IRONFORGE },
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(7746)),	-- Explorers' League Commendation
-					},
-				}),
 				q(38345, {	-- Numismatics
 					["sourceQuests"] = { 38344 },	-- Mystery Notebook
 					["provider"] = { "n", 6294 },	-- Krom Stoutarm

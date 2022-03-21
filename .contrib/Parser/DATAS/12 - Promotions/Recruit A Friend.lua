@@ -13,7 +13,7 @@ root("Promotions", {
 		ach(4832, {	-- Friends In Even Higher Places
 			["timeline"] = { "added 3.3.3.11723" },
 		}),
-		i(54860, {	-- X-53 Touring Rocket
+		i(54860, {	-- X-53 Touring Rocket (MOUNT!)
 			["timeline"] = { "added 3.3.3.11723" },
 		}),
 
@@ -107,6 +107,13 @@ root("Promotions", {
 	})),
 });
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	filter(MOUNTS, {
+		tier(TBC_TIER, {
+			i(37598, {	-- Swift Zhevra (MOUNT!)
+				["timeline"] = { "created 2.4.3.8601" },
+			}),
+		}),
+	}),
 	n(QUESTS, {
 		q(57850),	-- Storied Partnerships
 		q(57852),	-- Dungeon Adventure

@@ -22,7 +22,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				ach(15509),	-- Tales of the Exile
 			}),
 			n(184750, {	-- Core Configuration Console
-				["description"] = "This was never tested on the PTR",
+				["description"] = "These Configuration of Pocopoc was never found on the PTR. The search continues on live servers",
 				["g"] = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(189707),	-- Pocopoc's Bronze and Gold Body
 					i(189708),	-- Pocopoc's Beryllium and Silver Body
@@ -180,7 +180,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				}),
 				q(64647, {	-- Strange Gears
 					["sourceQuests"] = { 64645 },	-- Moment of Truth
-					--["provider"] = Automa on the Floor
+					["provider"] = { "o", 375021 },	-- Perished Automa
 					["coord"] = { 29.3, 15.3, 2027 },
 				}),
 				q(64648, {	-- Reap What We Have Sown
@@ -193,15 +193,18 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					-- TODO: maybe symlink these because they come from multiple quests?
 					["g"] = {
 						i(190985),	-- Crystallic Cryptic Mask
-						i(190983),	-- Scouring Cryptic Mask
+						i(190991),	-- Crystallic Enigmatic Epaulettes
+						i(190997),	-- Crystallic Numerus Crown
+						i(190979),	-- Crystallic Oracular Smock
 						i(190984),	-- Nova Cryptic Mask
+						i(190990),	-- Nova Enigmatic Epaulettes
+						i(190996),	-- Nova Numerus Crown
+						i(190978),	-- Nova Oracular Smock
+						i(190983),	-- Scouring Cryptic Mask
+						i(190989),	-- Scouring Enigmatic Epaulettes
+						i(190995),	-- Scouring Numerus Crown
+						i(190977),	-- Scouring Oracular Smock
 					},
-				}),
-				q(64649, {	-- A Mountain of Work to Do
-					["description"] = "Unable to accept this quest atm on ptr... but still showing mark on map.",
-					["sourceQuests"] = { 64648 },	-- Reap What We Have Sown
-					--["provider"] = { "n", 180797 },	-- Koh Shira
-					--["coord"] = { 63.2, 73.1, ZERETH_MORTIS },
 				}),
 			}),
 			n(TREASURES, {
@@ -466,6 +469,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(187908, {	-- Firim's Spare Forge-tap
 						["description"] = "This item is only available after completing the Daily Quest: Materials of Creation (64717) or Hallow Efforts (64579).",
 						["g"] = {
+							i(187527),	-- Aeon Matrix
 							i(187891),	-- Empyrean Essence
 							i(187894),	-- Energized Firmament
 							i(187885),	-- Honeycombed Lattice
@@ -482,9 +486,19 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 									i(188231),	-- Provis Cache Key
 									i(187866),	-- Accelerating Tendons
 									i(187867),	-- Evolved Exo-mucus
+									i(187865),	-- Spiked Protomesh
 								}),
 							}),
-							i(187791),	-- Kismetric Circlet (unknown use/purpose yet)
+							i(187792, {	-- Kismetric Disc
+								["cost"] = {
+									{ "i", 187791, 1 },		--1xKismetric Circlet
+									{ "i", 187790, 100 },	--100xTrace Enigmet
+									{ "i", 187728, 10 },	--10xEphemera Strand
+									{ "i", 187789, 5 },		--5xEidolic Particles
+								},
+							}),
+							i(187789),	-- Eidolic Particles
+							i(187791),	-- Kismetric Circlet
 							i(187790),	-- Trace Enigmet
 						},
 					}),

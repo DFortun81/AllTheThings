@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-_.Instances = { tier(CLASSIC_TIER, {
+root("Instances", tier(CLASSIC_TIER, {
 	inst(236, {	-- Stratholme
 		-- #if BEFORE MOP
 		["lore"] = "Once the jewel of northern Lordaeron, the city of Stratholme is where Prince Arthas turned against his mentor, Uther Lightbringer, and slaughtered hundreds of his own subjects who were believed to have contracted the dreaded plague of undeath. Arthas' downward spiral and ultimate surrender to the Lich King soon followed. The broken city is now inhabited by the undead Scourge -- led by the powerful lich, Kel'Thuzad. A contingent of Scarlet Crusaders, led by Grand Crusader Dathrohan, also holds a portion of the ravaged city. The two sides are locked in constant, violent combat. Those adventurers brave (or foolish) enough to enter Stratholme will be forced to contend with both factions before long. It is said that the city is guarded by three massive watchtowers, as well as powerful necromancers, banshees and abominations. There have also been reports of a malefic Death Knight riding atop an unholy steed, dispensing indiscriminate wrath on all those who venture within the realm of the Scourge.",
@@ -17,7 +17,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 				removeclassicphase(ach(646, {	-- Stratholme
 					-- #if BEFORE WRATH
 					["sourceQuest"] = 5263,	-- Above and Beyond
-					["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(5263)); end]],
+					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 					-- #endif
 				})),
 			}),
@@ -1023,16 +1023,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								["f"] = 100,
 								-- #if BEFORE WRATH
 								["description"] = "Obtain the Deathcharger's Reins from Baron Rivendare in Stratholme.",
-								["OnUpdate"] = [[function(t)
-									local collected = false;
-									for i,provider in ipairs(t.providers) do
-										if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
-											collected = true;
-											break;
-										end
-									end
-									t.SetAchievementCollected(t.achievementID, collected);
-								end]],
+								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 								-- #endif
 							})),
 							i(13335),	-- Rivendare's Deathcharger (MOUNT!)
@@ -1093,17 +1084,17 @@ _.Instances = { tier(CLASSIC_TIER, {
 			}),
 		},
 	}),
-})};
+}));
 
 -- #if AFTER WOD
-_.HiddenQuestTriggers = {
+root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
 		q(35563),	-- Stratholme - Main Gate - Reward Quest - Normal completion
 		q(35564),	-- Stratholme - Main Gate - Bonus Objective Reward Quest
 		q(35574),	-- Stratholme - Service Entrance Reward Quest - Normal completion
 		q(35575),	-- Stratholme - Service Entrance Bonus Objective Reward Quest
 	}),
-};
+});
 -- #endif
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	i(29120, {	-- Pattern: Truefaith Vestments (Priest Only)

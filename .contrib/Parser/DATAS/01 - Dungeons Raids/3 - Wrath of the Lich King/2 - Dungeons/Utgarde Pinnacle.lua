@@ -215,7 +215,7 @@ _.Instances = { tier(WOTLK_TIER, {
 							["achievementID"] = 499,	-- Heroic: Utgarde Pinnacle
 							["criteriaID"] = 3,	-- Skadi the Ruthless
 						},
-						i(44151),	-- Reins of the Blue Proto-Drake (MOUNT!)
+						i(44151),	-- Blue Proto-Drake (MOUNT!)
 						i(37384),	-- Staff of Wayward Principles
 						i(37377),	-- Netherbreath Spellblade
 						i(37053),	-- Amulet of Deflected Blows

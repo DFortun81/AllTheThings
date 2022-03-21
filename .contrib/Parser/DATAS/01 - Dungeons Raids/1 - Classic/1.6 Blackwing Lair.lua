@@ -333,7 +333,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_THREE, {
 							7783,	-- The Lord of Blackrock
 							8730,	-- Nefarius's Corruption
 						},
-						["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(7781) or C_QuestLog.IsQuestFlaggedCompleted(7783) or C_QuestLog.IsQuestFlaggedCompleted(8730)); end]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					})),
 					i(19003, {	-- Head of Nefarian (A)

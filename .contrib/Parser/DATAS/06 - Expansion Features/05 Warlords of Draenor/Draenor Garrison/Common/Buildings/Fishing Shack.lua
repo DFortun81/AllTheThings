@@ -250,7 +250,7 @@ _.ExpansionFeatures =
 								["g"] = {
 									n(85715, {	-- Lunarfall Cavedweller
 										i(23720),	-- Riding Turtle (MOUNT!)
-										i(46109),	-- Sea Turtle
+										i(46109),	-- Sea Turtle (MOUNT!)
 										i(118380, {	-- Hightfish Cap
 											["collectible"] = false,
 											["u"] = 15,
@@ -268,7 +268,7 @@ _.ExpansionFeatures =
 								["g"] = {
 									n(81171, {	-- Frostdeep Cavedweller
 										i(23720),	-- Riding Turtle (MOUNT!)
-										i(46109),	-- Sea Turtle
+										i(46109),	-- Sea Turtle (MOUNT!)
 										i(118380, {	-- Hightfish Cap
 											["collectible"] = false,
 											["u"] = 15,

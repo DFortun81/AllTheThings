@@ -1100,7 +1100,7 @@ root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 							i(171575),	-- Valius, Gavel of the Lightbringer
 							i(171573),	-- Warmace of Menethil
 							i(171579),	-- Windrunner's Heartseeker
-							i(50818),	-- Invincible's Reins (MOUNT!)
+							i(50818),	-- Invincible (MOUNT!)
 							i(142098),	-- Drudge Remains (PET!)
 							i(122229),	-- Music Roll: Invincible
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]

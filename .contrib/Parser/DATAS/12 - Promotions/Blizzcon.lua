@@ -13,7 +13,7 @@ root("Promotions", n(-545, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Blizzc
 	}),
 
 	ach(415),	-- Blizzcon 2008 - Big Blizzard Bear
-	i(43599, {	-- Big Blizzard Bear Mount
+	i(43599, {	-- Big Blizzard Bear (MOUNT!)
 		["timeline"] = { "added 3.0.1" },
 	}),
 

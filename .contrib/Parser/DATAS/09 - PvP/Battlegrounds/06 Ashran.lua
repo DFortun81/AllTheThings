@@ -673,6 +673,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 						}),
 					},
 				}),
+				i(184042),	-- Nightborne Liver
 				i(112122, {	-- Orc Tooth
 					["repeatable"] = true,
 					["questID"] = 35940,	-- Orc Tooth

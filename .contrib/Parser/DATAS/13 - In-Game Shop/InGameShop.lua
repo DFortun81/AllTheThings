@@ -13,7 +13,7 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE },{
 		i(95341, {			-- Armored Bloodwing
 			["u"] = REMOVED_FROM_GAME,
 		}),
-		i(54811),			-- Celestial Steed
+		i(54811),			-- Celestial Steed (MOUNT!)
 		i(109013, {			-- Dread Raven
 			["u"] = REMOVED_FROM_GAME,
 			["g"] = {

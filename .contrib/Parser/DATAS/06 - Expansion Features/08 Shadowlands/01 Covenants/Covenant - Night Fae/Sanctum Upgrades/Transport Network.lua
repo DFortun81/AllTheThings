@@ -101,7 +101,10 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 								q(62263),	-- Go Beyond! (2)
 								q(62459),	-- Go Beyond! (3)
 								q(62417),	-- Go Beyond! (4)
-								q(60188),	-- Go Beyond! (5)
+								q(60188, {	-- Go Beyond! (5)
+									i(178464),	-- Discarded Harp
+									i(178465),	-- Giant Silk Bundle
+								}),
 								q(62400),	-- Go Beyond! (6)
 								q(62465),	-- Go Beyond! (7)
 							})),

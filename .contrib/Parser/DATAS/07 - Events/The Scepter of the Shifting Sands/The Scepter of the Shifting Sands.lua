@@ -45,8 +45,9 @@ root("WorldEvents", n(-539,	-- The Scepter of the Shifting Sands
 					["lvl"] = 60,
 					["groups"] = {
 						removeclassicphase(ach(416, {	-- Scarab Lord (Achievement)
+							["sourceQuest"] = 8743,	-- Bang a Gong!
 							-- #if BEFORE 3.0.1
-							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(8743)); end]],
+							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 							["timeline"] = { "removed 4.0.3" },
 						})),

@@ -579,7 +579,7 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 8.0.1.36216", "
 				["isRepeatable"] = true,
 				["groups"] = {
 					i(183200),	-- Pitch Black Scourgestone
-					i(44151),	-- Reins of the Blue Proto-Drake
+					i(44151),	-- Blue Proto-Drake (MOUNT!)
 					i(183670),	-- Skadi's Saronite Belt
 					i(183656),	-- Drake Rider's Jerkin
 					i(183657),	-- Skadi's Scaled Sollerets

@@ -27,7 +27,7 @@ root("Holidays", applyholiday(STRANGLETHORN_FISHING_EXTRAVAGANZA, {
 					{ "i", 19979 },	-- Hook of the Master Angler
 				},
 				["description"] = "Win the Booty Bay fishing contest.",
-				["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, GetItemCount(19970, true) > 0 or GetItemCount(19979, true) > 0); end]],
+				["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 				-- #endif
 			})),
 		}),

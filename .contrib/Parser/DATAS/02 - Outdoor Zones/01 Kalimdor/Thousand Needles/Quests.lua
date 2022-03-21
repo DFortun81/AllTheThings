@@ -714,11 +714,6 @@ _.Zones =
 						1121,	-- Get the Goblins Drunk
 					},
 				}),
-				q(1951, {	-- Rituals of Power
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["classes"] = { MAGE },
-				}),
 				q(1194,  {	-- Rizzle's Schematics
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "o", 20805 },	-- Rizzle's Unguarded Plans
