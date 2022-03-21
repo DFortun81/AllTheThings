@@ -23,16 +23,7 @@ root("WorldEvents", n(-542,	-- The Opening of the Dark Portal
 						["provider"] = { "i", 28788 },	-- Tabard of the Protector
 						-- #if BEFORE WRATH
 						["description"] = "Obtained a Tabard of the Protector from the Dark Portal event.",
-						["OnUpdate"] = [[function(t)
-							local collected = false;
-							for i,provider in ipairs(t.providers) do
-								if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
-									collected = true;
-									break;
-								end
-							end
-							t.SetAchievementCollected(t.achievementID, collected);
-						end]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 						-- #endif
 					})),
 					i(28788),	-- Tabard of the Protector

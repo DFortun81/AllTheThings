@@ -153,16 +153,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					["filterID"] = MOUNTS,
 					-- #if BEFORE WRATH
 					["description"] = "Obtain a Frostwolf Howler from Alterac Valley.",
-					["OnUpdate"] = [[function(t)
-						local collected = false;
-						for i,provider in ipairs(t.providers) do
-							if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
-								collected = true;
-								break;
-							end
-						end
-						t.SetAchievementCollected(t.achievementID, collected);
-					end]],
+					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 					-- #endif
 				})),
 				removeclassicphase(ach(707, {	-- Stormpike Battle Charger
@@ -171,16 +162,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					["filterID"] = MOUNTS,
 					-- #if BEFORE WRATH
 					["description"] = "Obtain a Stormpike Battle Charger from Alterac Valley.",
-					["OnUpdate"] = [[function(t)
-						local collected = false;
-						for i,provider in ipairs(t.providers) do
-							if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
-								collected = true;
-								break;
-							end
-						end
-						t.SetAchievementCollected(t.achievementID, collected);
-					end]],
+					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 					-- #endif
 				})),
 				ach(1166),	-- To the Looter Go the Spoils

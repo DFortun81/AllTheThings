@@ -251,16 +251,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 						["classes"] = { WARRIOR, ROGUE, HUNTER },
 						-- #if BEFORE WRATH
 						["description"] = "Obtain Thori'dal, the Stars' Fury from Kil'jaeden in Sunwell Plateau.",
-						["OnUpdate"] = [[function(t)
-							local collected = false;
-							for i,provider in ipairs(t.providers) do
-								if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
-									collected = true;
-									break;
-								end
-							end
-							t.SetAchievementCollected(t.achievementID, collected);
-						end]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 						-- #else
 						["description"] = "You must equip the bow to earn this achievement.",
 						-- #endif

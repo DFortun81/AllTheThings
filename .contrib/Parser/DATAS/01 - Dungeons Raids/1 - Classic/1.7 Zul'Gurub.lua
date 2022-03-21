@@ -1352,16 +1352,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 					["filterID"] = MOUNTS,
 					-- #if BEFORE WRATH
 					["description"] = "Obtain the Swift Razzashi Raptor from Bloodlord Mandokir in Zul'Gurub.",
-					["OnUpdate"] = [[function(t)
-						local collected = false;
-						for i,provider in ipairs(t.providers) do
-							if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
-								collected = true;
-								break;
-							end
-						end
-						t.SetAchievementCollected(t.achievementID, collected);
-					end]],
+					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 					-- #endif
 				})),
 				i(19872),	-- Swift Razzashi Raptor (MOUNT!)
@@ -1420,16 +1411,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 					["filterID"] = MOUNTS,
 					-- #if BEFORE WRATH
 					["description"] = "Obtain the Swift Zulian Tiger from High Priest Thekal in Zul'Gurub.",
-					["OnUpdate"] = [[function(t)
-						local collected = false;
-						for i,provider in ipairs(t.providers) do
-							if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
-								collected = true;
-								break;
-							end
-						end
-						t.SetAchievementCollected(t.achievementID, collected);
-					end]],
+					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 					-- #endif
 				})),
 				i(19902),	-- Swift Zulian Tiger (MOUNT!)

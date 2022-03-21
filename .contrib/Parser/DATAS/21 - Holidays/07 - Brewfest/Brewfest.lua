@@ -165,16 +165,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 				["timeline"] = { "added 2.0.1" },
 				-- #if BEFORE WRATH
 				["description"] = "Obtain an epic Brewfest mount.",
-				["OnUpdate"] = [[function(t)
-					local collected = false;
-					for i,provider in ipairs(t.providers) do
-						if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
-							collected = true;
-							break;
-						end
-					end
-					t.SetAchievementCollected(t.achievementID, collected);
-				end]],
+				["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 				-- #endif
 			})),
 			ach(1260),	-- Almost Blind Luck
@@ -182,9 +173,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 				["provider"] = { "i", 33016 },	-- Blue Brewfest Stein
 				["timeline"] = { "added 2.0.1", "removed 3.0.1" },
 				-- #if BEFORE WRATH
-				["OnUpdate"] = [[function(t)
-					t.SetAchievementCollected(t.achievementID, GetItemCount(33016, true) > 0);
-				end]],
+				["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 				-- #endif
 			})),
 			ach(2796, {	-- Brew of the Month
@@ -266,16 +255,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 				["timeline"] = { "added 2.0.1" },
 				-- #if BEFORE WRATH
 				["description"] = "Obtain a Brewfest mount, or transform yours into one using Brewfest Hops.",
-				["OnUpdate"] = [[function(t)
-					local collected = false;
-					for i,provider in ipairs(t.providers) do
-						if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
-							collected = true;
-							break;
-						end
-					end
-					t.SetAchievementCollected(t.achievementID, collected);
-				end]],
+				["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 				-- #endif
 			})),
 			ach(1184, {	-- Strange Brew (A)
