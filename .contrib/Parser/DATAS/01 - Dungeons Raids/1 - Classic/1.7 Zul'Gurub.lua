@@ -1446,7 +1446,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 						-- #if BEFORE WRATH
 						["description"] = "Fish up Gahz'ranka in Zul'Gurub using the Mudskunk Lure.\n\nPROTIP: You can get free credit for this achievement on Prepatch if your character has a Mudskunk Lure in its inventory.",
 						["provider"] = { "i", 19974 },	-- Mudskunk Lure
-						["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, GetItemCount(19974, true) > 0); end]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 						-- #endif
 					})),
 					i(19944),	-- Nat Pagle's Fish Terminator

@@ -131,12 +131,13 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							["cr"] = 23035,	-- Anzu
 						}),
 						removeclassicphase(ach(2359, {	-- Swift Flight Form
+							["sourceQuest"] = 11001,	-- Vanquish the Raven God
 							["timeline"] = { "removed 4.0.1" },
 							["classes"] = { DRUID },
 							["filterID"] = MOUNTS,
 							-- #if BEFORE WRATH
 							["description"] = "Completed the druid quest to obtain Swift Flight Form.",
-							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(11001)); end]],
+							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						})),
 						-- #if BEFORE 4.0.1

@@ -35,8 +35,9 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 					["lvl"] = lvlsquish(70, 30, 70),
 					["groups"] = {
 						removeclassicphase(ach(431, {	-- Hand of A'dal (Achievement)
+							["sourceQuest"] = 10985,	-- A Distraction for Akama
 							-- #if BEFORE 3.0.1
-							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(10985)); end]],
+							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 							["timeline"] = { "removed 3.0.1" },
 						})),
