@@ -8,6 +8,7 @@ _.Zones =
 		m(KUN_LAI_SUMMIT, {
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
+					["timeline"] = { "added 6.0.2" },
 					["collectible"] = false,
 					["filterID"] = BATTLE_PETS,
 					["g"] = {

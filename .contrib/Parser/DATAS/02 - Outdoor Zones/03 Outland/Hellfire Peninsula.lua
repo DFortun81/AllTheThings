@@ -82,8 +82,8 @@ _.Zones =
 			-- #endif
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					-- #if AFTER MOP
 					ach(9069, {	-- An Awfully Big Adventure
+						["timeline"] = { "added 6.0.2" },
 						["collectible"] = false,
 						["filterID"] = BATTLE_PETS,
 						["groups"] = {
@@ -93,7 +93,6 @@ _.Zones =
 							}),
 						},
 					}),
-					-- #endif
 					ach(1189, {	-- To Hellfire and Back [Alliance Version]
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {

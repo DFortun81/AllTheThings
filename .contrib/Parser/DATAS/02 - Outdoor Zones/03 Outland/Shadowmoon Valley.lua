@@ -20,8 +20,8 @@ _.Zones =
 			-- #endif
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					-- #if AFTER MOP
 					ach(9069, {	-- An Awfully Big Adventure
+						["timeline"] = { "added 6.0.2" },
 						["collectible"] = false,
 						["filterID"] = BATTLE_PETS,
 						["groups"] = {
@@ -31,7 +31,6 @@ _.Zones =
 							}),
 						},
 					}),
-					-- #endif
 					removeclassicphase(ach(864, {	-- Explore Shadowmoon Valley
 						-- #if BEFORE WRATH
 						["description"] = "Explore Shadowmoon Valley, revealing the covered areas of the world map.",

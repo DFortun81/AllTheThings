@@ -8,6 +8,7 @@ _.Zones =
 		m(GORGROND, {
 			n(ACHIEVEMENTS, {
 				ach(9069,  {	-- An Awfully Big Adventure
+					["timeline"] = { "added 6.0.2" },
 					["collectible"] = false,
 					["filterID"] = BATTLE_PETS,
 					["g"] = {

@@ -7,8 +7,8 @@ _.Zones =
 	m(NORTHREND, {
 		m(HOWLING_FJORD, {
 			n(ACHIEVEMENTS, {
-				-- #if AFTER WOD
 				ach(9069, {	-- An Awfully Big Adventure
+					["timeline"] = { "added 6.0.2" },
 					["collectible"] = false,
 					["filterID"] = BATTLE_PETS,
 					["g"] = {
@@ -18,7 +18,6 @@ _.Zones =
 						}),
 					},
 				}),
-				-- #endif
 				ach(1254, {	-- Friend or Fowl? [TODO: Move to Howling Fjord]
 					["coords"] = {
 						{ 69.6, 65.8, HOWLING_FJORD },
