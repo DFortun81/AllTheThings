@@ -236,7 +236,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 								10095,	-- Into the Heart of the Labyrinth
 								10885,	-- Trial of the Naaru: Strength
 							},
-							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(10095) or C_QuestLog.IsQuestFlaggedCompleted(10885)); end]],
+							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						})),
 						i(27903),	-- Sonic Spear
@@ -332,7 +332,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							removeclassicphase(ach(675, {	-- Heroic: Shadow Labyrinth
 								-- #if BEFORE 3.0.1
 								["sourceQuest"] = 10885,	-- Trial of the Naaru: Strength
-								["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(10885)); end]],
+								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif
 							})),
 							i(27903),	-- Sonic Spear

@@ -130,7 +130,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 								9836,	-- The Master's Touch
 								10297,	-- The Opening of the Dark Portal
 							},
-							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(9836) or C_QuestLog.IsQuestFlaggedCompleted(10297)); end]],
+							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						})),
 						i(28188),	-- Bloodfire Greatstaff

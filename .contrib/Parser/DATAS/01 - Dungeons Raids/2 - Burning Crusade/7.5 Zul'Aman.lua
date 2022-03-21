@@ -294,7 +294,7 @@ root("Instances", tier(TBC_TIER, applylegacyclassicphase(TBC_PHASE_FOUR, {
 						removeclassicphase(ach(691, {	-- Zul'Aman: Defeat Zul'jin in the Zul'Aman raid.
 							-- #if BEFORE 3.0.1
 							["sourceQuest"] = 11178,	-- Blood of the Warlord
-							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(11178)); end]],
+							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						})),
 						i(33102),	-- Blood of Zul'jin

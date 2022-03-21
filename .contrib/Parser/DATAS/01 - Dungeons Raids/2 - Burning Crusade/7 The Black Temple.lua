@@ -432,7 +432,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 							removeclassicphase(ach(697, {	-- The Black Temple
 								-- #if BEFORE 3.0.1
 								["sourceQuest"] = 10959,	-- The Fall of the Betrayer
-								["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(10959)); end]],
+								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif
 							})),
 							applyclassicphase(TBC_PHASE_THREE_GLAIVEPRIO, removeclassicphase(ach(426, {	-- Warglaives of Azzinoth

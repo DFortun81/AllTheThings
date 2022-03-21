@@ -236,7 +236,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						removeclassicphase(ach(651, {	-- Mana-Tombs
 							-- #if BEFORE 3.0.1
 							["sourceQuest"] = 10165,	-- Undercutting the Competition
-							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(10165)); end]],
+							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						})),
 						-- #if AFTER 7.3.5

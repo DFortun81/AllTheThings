@@ -779,7 +779,7 @@ root("Instances", tier(CLASSIC_TIER, {
 							2929,	-- The Grand Betrayal
 							2841,	-- Rig Wars
 						},
-						["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(2929) or C_QuestLog.IsQuestFlaggedCompleted(2841)); end]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					})),
 					i(9153, {	-- Rig Blueprints

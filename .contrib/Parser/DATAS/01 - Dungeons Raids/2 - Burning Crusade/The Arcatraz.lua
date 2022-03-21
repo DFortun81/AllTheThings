@@ -211,7 +211,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 								10882,	-- Harbinger of Doom
 								10886,	-- Trial of the Naaru: Tenacity
 							},
-							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(10882) or C_QuestLog.IsQuestFlaggedCompleted(10886)); end]],
+							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						})),
 						-- #if BEFORE 7.3.5
@@ -335,7 +335,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							removeclassicphase(ach(681, {	-- Heroic: The Arcatraz
 								-- #if BEFORE 3.0.1
 								["sourceQuest"] = 10886,	-- Trial of the Naaru: Tenacity
-								["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(10886)); end]],
+								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif
 							})),
 							objective(1, {	-- Millhouse Manastorm Rescued

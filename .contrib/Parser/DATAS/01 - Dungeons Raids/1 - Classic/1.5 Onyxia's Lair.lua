@@ -306,7 +306,7 @@ root("Instances", tier(CLASSIC_TIER, {
 								7495,	-- Victory for the Alliance
 								7490,	-- Victory for the Horde
 							},
-							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(7635) or C_QuestLog.IsQuestFlaggedCompleted(7509) or C_QuestLog.IsQuestFlaggedCompleted(8620) or C_QuestLog.IsQuestFlaggedCompleted(7495) or C_QuestLog.IsQuestFlaggedCompleted(7490)); end]],
+							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						})),
 						i(18423, {	-- Head of Onyxia (A)

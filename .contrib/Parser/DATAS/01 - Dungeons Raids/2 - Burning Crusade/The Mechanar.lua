@@ -137,7 +137,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						removeclassicphase(ach(658, {	-- The Mechanar
 							-- #if BEFORE 3.0.1
 							["sourceQuest"] = 10704,	-- How to Break Into the Arcatraz
-							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(10704)); end]],
+							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						})),
 						i(28288),	-- Abacus of Violent Odds

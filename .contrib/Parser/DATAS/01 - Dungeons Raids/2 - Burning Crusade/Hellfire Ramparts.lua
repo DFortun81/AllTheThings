@@ -198,7 +198,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 								9575,	-- Weaken the Ramparts
 								9572,	-- Weaken the Ramparts
 							},
-							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(9575) or C_QuestLog.IsQuestFlaggedCompleted(9572)); end]],
+							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						})),
 						i(24069),	-- Crystalfire Staff

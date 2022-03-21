@@ -116,7 +116,7 @@ root("Instances", tier(CLASSIC_TIER, {
 							-- #if BEFORE 3.0.1
 							["sourceQuest"] = 6824,	-- Hands of the Enemy
 							["description"] = "Obtain an Aqual Quintessence.",
-							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(6824)); end]],
+							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						})),
 					},
@@ -680,7 +680,7 @@ root("Instances", tier(CLASSIC_TIER, {
 							7787,	-- Rise, Thunderfury!
 							8620,	-- The Only Prescription
 						},
-						["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(7787) or C_QuestLog.IsQuestFlaggedCompleted(8620)); end]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					})),
 					removeclassicphase(ach(429, {	-- Sulfuras, Hand of Ragnaros

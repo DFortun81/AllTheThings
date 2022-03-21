@@ -17,7 +17,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				removeclassicphase(ach(646, {	-- Stratholme
 					-- #if BEFORE WRATH
 					["sourceQuest"] = 5263,	-- Above and Beyond
-					["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(5263)); end]],
+					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 					-- #endif
 				})),
 			}),

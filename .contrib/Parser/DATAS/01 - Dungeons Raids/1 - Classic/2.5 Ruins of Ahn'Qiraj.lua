@@ -974,7 +974,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					removeclassicphase(ach(689, {	-- Ruins of Ahn'Qiraj
 						-- #if BEFORE 3.0.1
 						["sourceQuest"] = 8791,	-- The Fall of Ossirian
-						["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(8791)); end]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					})),
 					i(21220),	-- Head of Ossirian the Unscarred

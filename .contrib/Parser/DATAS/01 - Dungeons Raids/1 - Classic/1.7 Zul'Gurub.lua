@@ -1484,7 +1484,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 					-- #if BEFORE WRATH
 					["description"] = "Defeat Hakkar and deliver his Heart to the Zandalari.",
 					["sourceQuest"] = 8183,	-- The Heart of Hakkar
-					["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(8183)); end]],
+					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 					-- #endif
 				})),
 				i(19802),	-- Heart of Hakkar

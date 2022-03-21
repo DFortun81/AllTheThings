@@ -1509,7 +1509,7 @@ root("Instances", tier(CLASSIC_TIER, {
 								4742,	-- Seal of Ascension
 								4903,	-- Warlord's Command
 							},
-							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(5089) or C_QuestLog.IsQuestFlaggedCompleted(5081) or C_QuestLog.IsQuestFlaggedCompleted(4742) or C_QuestLog.IsQuestFlaggedCompleted(4903)); end]],
+							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						})),
 						i(142370, {	-- Plans: Arcanite Champion
@@ -1894,7 +1894,7 @@ root("Instances", tier(CLASSIC_TIER, {
 									6502,	-- Drakefire Amulet
 									5102,	-- General Drakkisath's Demise
 								},
-								["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(6602) or C_QuestLog.IsQuestFlaggedCompleted(6502) or C_QuestLog.IsQuestFlaggedCompleted(5102)); end]],
+								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif
 							})),
 							i(16663, {	-- Blood of the Black Dragon Champion

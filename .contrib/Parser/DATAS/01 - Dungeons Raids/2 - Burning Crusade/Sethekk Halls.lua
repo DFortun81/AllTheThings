@@ -201,7 +201,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						removeclassicphase(ach(653, {	-- Sethekk Halls
 							-- #if BEFORE 3.0.1
 							["sourceQuest"] = 10098,	-- Terokk's Legacy
-							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(10098)); end]],
+							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						})),
 						i(27986),	-- Crow Wing Reaper

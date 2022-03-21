@@ -196,7 +196,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 						removeclassicphase(ach(661, {	-- Magister's Terrace
 							-- #if BEFORE 3.0.1
 							["sourceQuest"] = 11492,	-- Hard to Kill
-							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(11492)); end]],
+							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						})),
 						i(35504),	-- Phoenix Hatchling

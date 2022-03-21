@@ -481,7 +481,7 @@ root("Instances", tier(CLASSIC_TIER, {
 									7065,	-- Corruption of Earth and Seed
 									7064,	-- Corruption of Earth and Seed
 								},
-								["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(7065) or C_QuestLog.IsQuestFlaggedCompleted(7064)); end]],
+								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif
 							})),
 							i(17780),	-- Blade of Eternal Darkness

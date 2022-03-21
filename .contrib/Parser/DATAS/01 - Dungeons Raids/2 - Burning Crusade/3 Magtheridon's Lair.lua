@@ -90,7 +90,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							10888,	-- Trial of the Naaru: Magtheridon
 							11116,	-- Trial of the Naaru: (QUEST FLAG)
 						},
-						["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(11002) or C_QuestLog.IsQuestFlaggedCompleted(11003) or C_QuestLog.IsQuestFlaggedCompleted(10888) or C_QuestLog.IsQuestFlaggedCompleted(11116)); end]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					})),
 					i(32385, {	-- Magtheridon's Head

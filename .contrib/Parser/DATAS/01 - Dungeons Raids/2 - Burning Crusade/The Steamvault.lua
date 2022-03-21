@@ -164,7 +164,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 								9763,	-- The Warlord's Hideout
 								10885,	-- Trial of the Naaru: Strength
 							},
-							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(9763) or C_QuestLog.IsQuestFlaggedCompleted(10885)); end]],
+							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						})),
 						-- #if AFTER 7.3.5
@@ -267,7 +267,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							removeclassicphase(ach(677, {	-- Heroic: The Steamvault
 								-- #if BEFORE 3.0.1
 								["sourceQuest"] = 10885,	-- Trial of the Naaru: Strength
-								["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(10885)); end]],
+								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif
 							})),
 							i(29351),	-- Wrathtide Longbow

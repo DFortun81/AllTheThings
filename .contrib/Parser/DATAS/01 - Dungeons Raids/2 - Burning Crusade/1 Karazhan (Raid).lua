@@ -999,7 +999,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					removeclassicphase(ach(690, {	-- Karazhan
 						-- #if BEFORE 3.0.1
 						["sourceQuest"] = 9844,	-- A Demonic Presence
-						["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(9844)); end]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					})),
 					i(97550, {	-- Netherspace Portal Stone (PET!)

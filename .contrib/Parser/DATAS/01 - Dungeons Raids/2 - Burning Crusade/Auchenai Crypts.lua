@@ -160,7 +160,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 								10167,	-- Auchindoun...
 								10164,	-- Everything Will Be Alright
 							},
-							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(10167) or C_QuestLog.IsQuestFlaggedCompleted(10164)); end]],
+							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						})),
 						i(27412),	-- Ironstaff of Regeneration
