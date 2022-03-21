@@ -605,6 +605,15 @@ _.Zones =
 						}),
 					},
 				}),
+				n(ACHIEVEMENTS, {
+					removeclassicphase(ach(860, {	-- Explore Azuremyst Isle
+						-- #if BEFORE WRATH
+						["description"] = "Explore Azuremyst Isle, revealing the covered areas of the world map.",
+						["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
+						-- #endif
+					})),
+				}),
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
 					p(464, {	-- Grey Moth
