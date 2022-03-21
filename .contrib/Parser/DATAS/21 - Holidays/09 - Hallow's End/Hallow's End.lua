@@ -500,9 +500,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 					{ "i", 33292 },	-- Hallowed Helm
 				},
 				["description"] = "Obtain a Sinister Squashling pet and Hallowed Helm.",
-				["OnUpdate"] = [[function(t)
-					t.SetAchievementCollected(t.achievementID, GetItemCount(33292, true) > 0 and GetItemCount(33154, true) > 0);
-				end]],
+				["OnUpdate"] = [[_.CommonAchievementHandlers.ALL_ITEM_PROVIDERS]],
 				-- #else
 				crit(1, {	-- Sinister Squashling
 					["provider"] = { "i", 33154 },	-- Sinister Squashling

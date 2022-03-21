@@ -226,9 +226,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 				["provider"] = { "i", 32233 },	-- Wolpertinger's Tankard
 				["timeline"] = { "added 2.2.2" },
 				-- #if BEFORE WRATH
-				["OnUpdate"] = [[function(t)
-					t.SetAchievementCollected(t.achievementID, GetItemCount(32233, true) > 0);
-				end]],
+				["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 				-- #endif
 			})),
 			ach(1186, {	-- Down With The Dark Iron
@@ -238,9 +236,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 				["provider"] = { "i", 37892 },	-- Green Brewfest Stein
 				["timeline"] = { "added 3.0.1", "removed 4.0.1" },
 				-- #if BEFORE WRATH
-				["OnUpdate"] = [[function(t)
-					t.SetAchievementCollected(t.achievementID, GetItemCount(37892, true) > 0);
-				end]],
+				["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 				-- #endif
 			})),
 			removeclassicphase(ach(303, {	-- Have Keg, Will Travel
@@ -352,9 +348,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 				["provider"] = { "i", 32912 },	-- Yellow Brewfest Stein
 				["timeline"] = { "added 2.0.1", "removed 2.4.3" },
 				-- #if BEFORE WRATH
-				["OnUpdate"] = [[function(t)
-					t.SetAchievementCollected(t.achievementID, GetItemCount(32912, true) > 0);
-				end]],
+				["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 				-- #endif
 			})),
 		}),

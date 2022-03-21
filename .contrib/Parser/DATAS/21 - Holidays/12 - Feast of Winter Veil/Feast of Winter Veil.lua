@@ -203,9 +203,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["provider"] = { "i", 34425 },	-- Clockwork Rocket Bot
 				["timeline"] = { "added 2.3.0.7561" },
 				-- #if BEFORE WRATH
-				["OnUpdate"] = [[function(t)
-					t.SetAchievementCollected(t.achievementID, GetItemCount(34425, true) > 0);
-				end]],
+				["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 				-- #endif
 			})),
 			ach(1706, {	-- Crashin' Thrashin' Racer (2008)
