@@ -18,6 +18,17 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 		["isRaid"] = true,
 		["lvl"] = 50,
 		["groups"] = {
+			n(ACHIEVEMENTS, {
+				removeclassicphase(ach(956, {	-- Brood of Nozdormu
+					-- #if BEFORE 3.0.1
+					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
+					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
+					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 910); end]],
+					["description"] = "Raise your reputation with the Brood of Nozdormu to Exalted.",
+					-- #endif
+					["maps"] = { CAVERNS_OF_TIME },
+				})),
+			}),
 			n(FACTIONS, {
 				faction(910, {	-- Brood of Nozdormu
 					["icon"] = "Interface\\Icons\\INV_Misc_Head_Dragon_Bronze",

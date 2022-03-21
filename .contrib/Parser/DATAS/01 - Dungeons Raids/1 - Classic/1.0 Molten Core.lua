@@ -15,6 +15,17 @@ root("Instances", tier(CLASSIC_TIER, {
 		["isRaid"] = true,
 		["lvl"] = lvlsquish(50, 25, 50),
 		["groups"] = {
+			n(ACHIEVEMENTS, {
+				removeclassicphase(ach(955, {	-- Hydraxian Waterlords
+					-- #if BEFORE 3.0.1
+					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
+					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
+					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 749); end]],
+					["description"] = "Raise your reputation with the Hydraxian Waterlords to Exalted.",
+					-- #endif
+					["maps"] = { AZSHARA },
+				})),
+			}),
 			n(FACTIONS, {
 				faction(749, { 	-- Hydraxian Waterlords
 					["qg"] = 13278,	-- Duke Hydraxis

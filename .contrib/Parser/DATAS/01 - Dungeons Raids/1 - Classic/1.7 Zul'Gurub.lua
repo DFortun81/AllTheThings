@@ -9,6 +9,17 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 		["isRaid"] = true,
 		["lvl"] = 58,
 		["groups"] = bubbleDown({ ["timeline"] = { "removed 4.0.3" } }, {
+			n(ACHIEVEMENTS, {
+				removeclassicphase(ach(957, {	-- Hero of the Zandalar Tribe
+					-- #if BEFORE 3.0.1
+					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
+					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
+					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 270); end]],
+					["description"] = "Raise your reputation with the Zandalar Tribe to Exalted.",
+					-- #endif
+					["maps"] = { STRANGLETHORN_VALE },
+				})),
+			}),
 			n(FACTIONS, {
 				faction(270, {	-- Zandalar Tribe
 					["icon"] = "Interface\\Icons\\RACIAL_TROLL_BERSERK",
