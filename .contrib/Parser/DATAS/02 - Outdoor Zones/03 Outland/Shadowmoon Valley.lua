@@ -39,6 +39,14 @@ _.Zones =
 						["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 						-- #endif
 					})),
+					ach(898, applyclassicphase(TBC_PHASE_THREE_NETHERWING, {	-- On Wings of Nether
+						-- #if BEFORE 3.0.1
+						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
+						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
+						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1015); end]],
+						["description"] = "Raise your reputation with the Netherwing to Exalted.",
+						-- #endif
+					})),
 					removeclassicphase(ach(1195, {	-- Shadow of the Betrayer
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
@@ -685,6 +693,12 @@ _.Zones =
 						["sourceQuest"] = 11070,	-- Dragonmaw Race: Wing Commander Mulverick
 						["coord"] = { 65.5, 85.3, SHADOWMOON_VALLEY },
 						["groups"] = {
+							removeclassicphase(ach(1638, {	-- Skyshattered
+								-- #if BEFORE 3.0.1
+								["sourceQuest"] = 11071,	-- Dragonmaw Race: Captain Skyshatter
+								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
+								-- #endif
+							})),
 							i(32863),	-- Skybreaker Whip
 						},
 					})),
