@@ -15,12 +15,18 @@ _.Zones =
 			["lore"] = "Ghostlands is a low-level zone focusing on the alliance between the Blood Elves and Forsaken in pushing back the Scourge's presence. It is dark and shadowy with corruption throughout the land, culminating in Deathholme. It is also the site of the ancient Amani troll empire and the low-level reputation hub of Tranquillien.",
 			["maps"] = { 96 },	-- Amani Catacombs
 			-- #if AFTER WRATH
-			["achievementID"] = 858,
+			["icon"] = "Interface\\Icons\\achievement_zone_ghostlands",
 			-- #endif
 			["lvl"] = lvlsquish(10, 1, 10),
 			["groups"] = {
-				-- #if AFTER WRATH
 				n(ACHIEVEMENTS, {
+					removeclassicphase(ach(858, {	-- Explore Ghostlands
+						-- #if BEFORE WRATH
+						["description"] = "Explore Ghostlands, revealing the covered areas of the world map.",
+						["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
+						-- #endif
+					})),
 					ach(4908, {	-- Ghostlands Quests
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -64,7 +70,6 @@ _.Zones =
 						},
 					}),
 				}),
-				-- #endif
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
 					p(461, {	-- Larva
