@@ -1,19 +1,105 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+local OnTooltipForOgrila = [[function(t)
+	local reputation = t.reputation;
+	if reputation < 42000 then
+		local isHuman = _.RaceIndex == 1;
+		GameTooltip:AddLine("Daily Quests:");
+		if not t.banished then
+			local f = _.SearchForField("questID", 11051);
+			if f and #f > 0 then t.banished = f[1]; end
+		end
+		local banishedRep = isHuman and 385 or 350;
+		GameTooltip:AddDoubleLine(t.banished.text or RETRIEVING_DATA, _.L[t.banished.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. banishedRep .. " Rep");
+		
+		if not t.bombed then
+			local f = _.SearchForField("questID", 11023);
+			if f and #f > 0 then t.bombed = f[1]; end
+		end
+		local bombedRep = isHuman and 550 or 500;
+		GameTooltip:AddDoubleLine((t.bombed.text or RETRIEVING_DATA), _.L[t.bombed.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. bombedRep .. " Rep");
+		
+		if not t.relic then
+			local f = _.SearchForField("questID", 11080);
+			if f and #f > 0 then t.relic = f[1]; end
+		end
+		local relicRep = isHuman and 385 or 350;
+		GameTooltip:AddDoubleLine((t.relic.text or RETRIEVING_DATA), _.L[t.relic.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. relicRep .. " Rep");
+		
+		if not t.wrangled then
+			local f = _.SearchForField("questID", 11066);
+			if f and #f > 0 then t.wrangled = f[1]; end
+		end
+		local wrangledRep = isHuman and 385 or 350;
+		GameTooltip:AddDoubleLine((t.wrangled.text or RETRIEVING_DATA), _.L[t.wrangled.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. wrangledRep .. " Rep");
+
+		local repPerDay = banishedRep + bombedRep + relicRep + wrangledRep;
+		local x, n = math.ceil((42000 - t.reputation) / repPerDay), math.ceil(42000 / repPerDay);
+		GameTooltip:AddDoubleLine("Complete Dailies Everyday", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+	end
+end]];
 _.Zones =
 {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(BLADES_EDGE_MOUNTAINS, {
 			["lore"] = "Blade's Edge is a level 20-30 questing zone in Outland, filled with splintered mountain peaks, plunging lush valleys, and dusty canyons. Players learn about the presence of the Burning Legion through a mysterious Fel Mask, as well as how Blade's Edge was the original home of the Ogres. Ogri'la is a faction of friendly ogres that players with flying mounts can gain reputation with.",
 			-- #if AFTER WRATH
-			["achievementID"] = 865,
+			["icon"] = "Interface\\Icons\\achievement_zone_bladesedgemtns_01",
 			-- #endif
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					ach(896),	-- A Quest a Day Keeps the Ogres at Bay
-					ach(1276),	-- Blade's Edge Bomberman
-					ach(1193, {	-- On the Blade's Edge
+					ach(896, applyclassicphase(TBC_PHASE_TWO_OGRILA, {	-- A Quest a Day Keeps the Ogres at Bay
+						-- #if BEFORE 3.0.1
+						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
+						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
+						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1038); end]],
+						["description"] = "Raise your reputation with Ogri'la to Exalted.",
+						-- #endif
+					})),
+					removeclassicphase(ach(865, {	-- Explore Blade's Edge Mountains
+						-- #if BEFORE WRATH
+						["description"] = "Explore Blade's Edge Mountains, revealing the covered areas of the world map.",
+						["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
+						-- #endif
+					})),
+					removeclassicphase(ach(1193, {	-- On the Blade's Edge
+						-- #if ANYCLASSIC
+						-- #if AFTER CATA
+						["sourceQuests"] = {
+							-- Sylvanaar (A)
+							10518,	-- Planting the Banner
+							10504,	-- The Bladespire Ogres
+							
+							-- Thunderlord Stronghold (H)
+							10505,	-- The Bloodmaul Ogres (need to verify horde quests, might be more needed)
+							
+							-- Toshley's Station (A)
+							10594,	-- Gauging the Resonant Frequency
+							10671,	-- More than a Pound of Flesh
+							10675,	-- Show Them Gnome Mercy!
+							
+							-- Reunion (H)
+							10742,	-- Showdown
+							
+							-- The Gronn Threat (A)
+							10806,	-- Showdown
+							
+							-- The Mok'Nathal (H)
+							10867,	-- There Can Be Only One Response
+							
+							-- Ruuan Weald (A+H)
+							10748,	-- Maxnar Must Die!
+						},
+						-- #elseif BEFORE WRATH
+						["description"] = "Complete 86 quests in Blade's Edge Mountains.",
+						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
+						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
+						["rank"] = 86,
+						-- #endif
+						-- #else
 						crit(1, {	-- Sylvanaar (A)
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
@@ -48,7 +134,8 @@ _.Zones =
 						crit(4, {	-- Ruuan Weald (A+H)
 							["sourceQuest"] = 10748,	-- Maxnar Must Die!
 						}),
-					}),
+						-- #endif
+					})),
 				}),
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
@@ -110,7 +197,9 @@ _.Zones =
 				}),
 				-- #endif
 				n(FACTIONS, {
-					applyclassicphase(TBC_PHASE_TWO_OGRILA, faction(1038)),	-- Ogri'la
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, faction(1038, {	-- Ogri'la
+						["OnTooltip"] = OnTooltipForOgrila,
+					})),
 				}),
 				n(FLIGHT_PATHS, {
 					fp(160, {	-- Evergrove, Blade's Edge Mountains
@@ -202,7 +291,7 @@ _.Zones =
 						["groups"] = {
 							objective(1, {	-- 0/5 Bladespire Hold building cursed
 								["provider"] = { "i", 30479 },	-- Wicked Strong Fetish (Provided)
-								["coord"] = { 42.0, 47.0, BLADES_EDGE_MOUNTAINS },
+								["coord"] = { 42, 47, BLADES_EDGE_MOUNTAINS },
 								["cr"] = 21446,	-- Bladespire Evil Spirit
 							}),
 							objective(2, {	-- 0/2 Bloodmaul Outpost building cursed
@@ -421,7 +510,9 @@ _.Zones =
 						["lvl"] = lvlsquish(65, 20, 65),
 						["groups"] = {
 							i(31447),	-- Vibro Dagger
-							i(157549),	-- Vibro Knuckles
+							i(157549, {	-- Vibro Knuckles
+								["timeline"] = { "added 7.3.5.25727" },
+							}),
 							i(31446),	-- Vibro Shanker
 							i(31448),	-- Vibro Sword
 						},
@@ -829,15 +920,18 @@ _.Zones =
 						["coord"] = { 62.6, 40.2, BLADES_EDGE_MOUNTAINS },
 						["lvl"] = lvlsquish(65, 20, 65),
 					}),
-					q(11009, {	-- Ogre Heaven
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, q(11009, {	-- Ogre Heaven
 						["qg"] = 22941,	-- Mog'dorg the Wizened
 						["sourceQuests"] = {
 							11000,	-- Into the Soulgrinder
 							11022,	-- Speak with Mog'dorg
 						},
+						-- #if BEFORE WRATH
+						["description"] = "You can pick up this quest during phase 1, but cannot turn it in until they introduce the Ogri'la faction in a later phase.",
+						-- #endif
 						["coord"] = { 55.5, 44.8, BLADES_EDGE_MOUNTAINS },
 						["lvl"] = lvlsquish(70, 20, 70),
-					}),
+					})),
 					q(10714, {	-- On Spirit's Wings
 						["qg"] = 21984,	-- Rexxar
 						["sourceQuest"] = 10709,	-- Reunion
@@ -1008,7 +1102,12 @@ _.Zones =
 						["lvl"] = lvlsquish(65, 20, 65),
 						["groups"] = {
 							i(31456),	-- Gnomish Casting Boots
-							i(30690),	-- Power Converter (TOY!)
+							i(30690, { 	-- Power Converter (Toy !)
+								-- #if ANYCLASSIC
+								["description"] = "It's an unlimited Firework Launcher that eventually becomes a Toy and is also a Star Wars reference. Keep it forever.",
+								-- #endif
+								["races"] = ALLIANCE_ONLY,
+							}),
 							i(31458),	-- Razaani-Buster Leggings
 							i(31459),	-- Soul Saver's Chest Plate
 							i(31457),	-- Toshley's Station Hero's Hat
@@ -1108,6 +1207,14 @@ _.Zones =
 							i(31711),	-- Nether-Empowered Footgear
 							i(31714),	-- Nether Drake Wristguards
 							i(31713),	-- Ritualist's Helm
+						},
+					}),
+					q(10974, {	-- Stasis Chambers of Bash'ir
+						["qg"] = 20448,	-- Commander Ameer
+						["sourceQuest"] = 10973,	-- A Thousand Worlds
+						["coord"] = { 59.5, 32.4, NETHERSTORM },
+						["groups"] = {
+							i(32064),	-- Protectorate Treasure Cache
 						},
 					}),
 					q(10511, {	-- Strange Brew
@@ -1252,22 +1359,24 @@ _.Zones =
 						},
 						["lvl"] = 70,
 					})),
-					applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(10992,	-- The Hawk's Essence
-						bubbleDown({ ["timeline"] = { "removed 4.0.1.13287" } }, {
-							["qg"] = 22924,	-- Arthorn Windsong
-							["sourceQuest"] = 10991,	-- The Falcon's Essence
-							["coord"] = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
-							["maps"] = { TEROKKAR_FOREST },
-							["classes"] = { DRUID },
-							["cost"] = {
-								{ "i", 32657, 1 },	-- Arthorn's Sparrowhawk Whistle (Provided)
-								{ "i", 32356, 1 },	-- Essence of the Hawk
-							},
-							["lvl"] = 70,
-							["groups"] = {
-								i(32481),	-- Charm of Swift Flight
-							},
-					}))),
+					applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(10992, {	-- The Hawk's Essence
+						["qg"] = 22924,	-- Arthorn Windsong
+						["sourceQuest"] = 10991,	-- The Falcon's Essence
+						["coord"] = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
+						["timeline"] = { "removed 4.0.1" },
+						["maps"] = { TEROKKAR_FOREST },
+						["classes"] = { DRUID },
+						["cost"] = {
+							{ "i", 32657, 1 },	-- Arthorn's Sparrowhawk Whistle (Provided)
+							{ "i", 32356, 1 },	-- Essence of the Hawk
+						},
+						["lvl"] = 70,
+						["groups"] = {
+							i(32481, {	-- Charm of Swift Flight
+								["timeline"] = { "removed 4.0.1" },
+							}),
+						},
+					})),
 					q(10912, {	-- The Hound-Master
 						["qg"] = 22423,	-- Evergrove Druid
 						["sourceQuest"] = 10911,	-- Fire At Will!
@@ -1576,7 +1685,7 @@ _.Zones =
 					})),
 				}),
 				n(RARES, {
-					n(23391, {	-- Bash'ir
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, n(23391, {	-- Bash'ir
 						["coords"] = {
 							{ 52.8, 13.0, BLADES_EDGE_MOUNTAINS },
 							{ 53.6, 16.6, BLADES_EDGE_MOUNTAINS },
@@ -1587,8 +1696,8 @@ _.Zones =
 						["groups"] = {
 							i(32572),	-- Apexis Crystal
 						},
-					}),
-					n(23390, {	-- Bash'ir's Harbinger
+					})),
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, n(23390, {	-- Bash'ir's Harbinger
 						["coords"] = {
 							{ 51.6, 13.6, BLADES_EDGE_MOUNTAINS },
 							{ 53.0, 13.0, BLADES_EDGE_MOUNTAINS },
@@ -1600,8 +1709,8 @@ _.Zones =
 							i(32572),	-- Apexis Crystal
 							i(32773),	-- Bash'ir's Skeleton Key
 						},
-					}),
-					n(23261, {	-- Furywing
+					})),
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, n(23261, {	-- Furywing
 						["coord"] = { 66.7, 14.5, BLADES_EDGE_MOUNTAINS },
 						["cost"] = {
 							{ "i", 32569, 35 },	-- Apexis Shard
@@ -1610,7 +1719,7 @@ _.Zones =
 							i(32732),	-- Dragon Teeth
 							i(32683),	-- Jet Scale of Furywing
 						},
-					}),
+					})),
 					n(18692, {	-- Hemathion
 						["coords"] = {
 							{ 30.0, 45.4, BLADES_EDGE_MOUNTAINS },
@@ -1638,7 +1747,7 @@ _.Zones =
 							i(31157),	-- Drakehide Tunic
 						},
 					}),
-					n(23281, {	-- Insidio
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, n(23281, {	-- Insidio
 						["coord"] = { 62.7, 7.3, BLADES_EDGE_MOUNTAINS },
 						["cost"] = {
 							{ "i", 32569, 35 },	-- Apexis Shard
@@ -1647,7 +1756,7 @@ _.Zones =
 							i(32732),	-- Dragon Teeth
 							i(32684),	-- Insidion's Ebony Scale
 						},
-					}),
+					})),
 					n(18690, {	-- Morcrush
 						["coords"] = {
 							{ 60.4, 24.8, BLADES_EDGE_MOUNTAINS },
@@ -1667,7 +1776,7 @@ _.Zones =
 							i(31162),	-- Felstone Mantle
 						},
 					}),
-					n(23282, {	-- Obsidia
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, n(23282, {	-- Obsidia
 						["coord"] = { 34.0, 54.7, BLADES_EDGE_MOUNTAINS },
 						["cost"] = {
 							{ "i", 32569, 35 },	-- Apexis Shard
@@ -1676,8 +1785,8 @@ _.Zones =
 							i(32732),	-- Dragon Teeth
 							i(32682),	-- Obsidia Scale
 						},
-					}),
-					n(23061, {	-- Rivendark
+					})),
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, n(23061, {	-- Rivendark
 						["coord"] = { 27.2, 64.9, BLADES_EDGE_MOUNTAINS },
 						["cost"] = {
 							{ "i", 32569, 35 },	-- Apexis Shard
@@ -1686,8 +1795,8 @@ _.Zones =
 							i(32732),	-- Dragon Teeth
 							i(32681),	-- Onyx Scale of Rivendark
 						},
-					}),
-					n(23230, {	-- Shartuul [Was the boss of an event in BEM that was removed may better fit somewhere else]
+					})),
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, n(23230, {	-- Shartuul [Was the boss of an event in BEM that was removed may better fit somewhere else]
 						["coord"] = { 31.85, 46.68, BLADES_EDGE_MOUNTAINS },
 						["cost"] = {
 							{ "i", 32602, 1 },	-- Crystalforged Darkrune
@@ -1711,7 +1820,7 @@ _.Zones =
 								},
 							}),
 						},
-					}),
+					})),
 					n(18693, {	-- Speaker Mar'grom
 						["coords"] = {
 							{ 64.4, 19.2, BLADES_EDGE_MOUNTAINS },
@@ -1776,7 +1885,7 @@ _.Zones =
 					}),
 				}),
 				n(VENDORS, {
-					n(23245, {	-- Aether-tech Master
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, n(23245, {	-- Aether-tech Master
 						["description"] = "The Skyguard sends out a group to study the Bash'ir Crystalforge at Bash'ir Landing once every two hours.|nOnce the event is underway, you must protect the Skyguard from three waves of attacks.|nWave one: fight until the elite Bash'ir Flesh Fiend spawns, then kill it.|nWave two: Fight until the three Disruptor Towers spawn, then destroy them.|nWave three: Fight until The Grand Collector shows up. He will be unattackable initially, but once you have defeated enough of the Bash'ir, he will decide to kill you himself, and become attackable.|nOnce the Grand Collector has been dealt with, the Aether-tech Master will arrive and you may purchase his goods with Apexis Crystals.|r",
 						["coord"] = { 54.4, 10.8, BLADES_EDGE_MOUNTAINS },
 						["groups"] = {
@@ -1838,7 +1947,7 @@ _.Zones =
 								},
 							}),
 						},
-					}),
+					})),
 					n(19499, {	-- Cahill <Weaponsmith>
 						["coord"] = { 37.6, 63.8, BLADES_EDGE_MOUNTAINS },
 						["races"] = ALLIANCE_ONLY,
@@ -1872,7 +1981,7 @@ _.Zones =
 							}),
 						},
 					}),
-					n(23428, {	-- Jho'nass <Ogri'la Quartermaster>
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, n(23428, {	-- Jho'nass <Ogri'la Quartermaster>
 						["coord"] = { 28.0, 58.6, BLADES_EDGE_MOUNTAINS },
 						["groups"] = {
 							i(32653, {	-- Apexis Cloak
@@ -1927,7 +2036,7 @@ _.Zones =
 								},
 							}),
 						},
-					}),
+					})),
 					n(21113, {	-- Sassa Weldwell <Trade Goods>
 						["coord"] = { 61.2, 68.8, BLADES_EDGE_MOUNTAINS },
 						["races"] = ALLIANCE_ONLY,
@@ -1951,6 +2060,7 @@ _.Zones =
 							{ "i", 31122, 1 },	-- Overseer Disguise
 						},
 						["groups"] = {
+							i(31337),	-- Orb of the Blackwhelp
 							i(31341),	-- Wyrmcultist's Cloak
 						},
 					}),
@@ -1975,31 +2085,31 @@ _.Zones =
 					}),
 				}),
 				n(ZONE_DROPS, {
-					i(32663, {	-- Apexis Cleaver
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32663, {	-- Apexis Cleaver
 						["cost"] = {
 							{ "i", 32670, 1 },	-- Depleted Two-Handed Axe
 							{ "i", 32569, 50 },	-- Apexis Shard
 						},
-					}),
-					i(32661, {	-- Apexis Crystal Mace
+					})),
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32661, {	-- Apexis Crystal Mace
 						["cost"] = {
 							{ "i", 32671, 1 },	-- Depleted Mace
 							{ "i", 32569, 50 },	-- Apexis Shard
 						},
-					}),
-					i(32569),	-- Apexis Shard
-					i(32658, {	-- Badge of Tenacity
+					})),
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32569)),	-- Apexis Shard
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32658, {	-- Badge of Tenacity
 						["cost"] = {
 							{ "i", 32672, 1 },	-- Depleted Badge
 							{ "i", 32569, 50 },	-- Apexis Shard
 						},
-					}),
-					i(32578, {	-- Charged Crystal Focus
+					})),
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32578, {	-- Charged Crystal Focus
 						["cost"] = {
 							{ "i", 32576, 1 },	-- Depleted Crystal Focus
 							{ "i", 32569, 10 },	-- Apexis Shard
 						},
-					}),
+					})),
 					i(31121, {	-- Costume Scraps
 						["crs"] = {
 							22308,	-- Wyrmcult Hunter
@@ -2010,37 +2120,37 @@ _.Zones =
 							21810,	-- Wyrmcult Hewer
 						},
 					}),
-					i(32660, {	-- Crystal Forged Sword
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32660, {	-- Crystal Forged Sword
 						["cost"] = {
 							{ "i", 32674, 1 },	-- Depleted Sword
 							{ "i", 32569, 50 },	-- Apexis Shard
 						},
-					}),
-					i(32659, {	-- Crystal-Infused Shiv
+					})),
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32659, {	-- Crystal-Infused Shiv
 						["cost"] = {
 							{ "i", 32673, 1 },	-- Depleted Dagger
 							{ "i", 32569, 50 },	-- Apexis Shard
 						},
-					}),
-					i(32656, {	-- Crystalhide Handwraps
+					})),
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32656, {	-- Crystalhide Handwraps
 						["cost"] = {
 							{ "i", 32675, 1 },	-- Depleted Mail Gauntlets
 							{ "i", 32569, 50 },	-- Apexis Shard
 						},
-					}),
-					i(32655, {	-- Crystalweave Bracers
+					})),
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32655, {	-- Crystalweave Bracers
 						["cost"] = {
 							{ "i", 32676, 1 },	-- Depleted Cloth Bracers
 							{ "i", 32569, 50 },	-- Apexis Shard
 						},
-					}),
-					i(32665, {	-- Crystalweave Cape
+					})),
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32665, {	-- Crystalweave Cape
 						["cost"] = {
 							{ "i", 32677, 1 },	-- Depleted Cloak
 							{ "i", 32569, 50 },	-- Apexis Shard
 						},
-					}),
-					i(31942, {	-- Deathwing Brood Cloak
+					})),
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31942, {	-- Deathwing Brood Cloak
 						["description"]	= "You need to summon the four dragons for 35 Apexis Shards and loot the scale to put the cloak together.",
 						["cost"] = {
 							{ "i", 32684, 1 },	-- Insidion's Ebony Scale
@@ -2048,8 +2158,8 @@ _.Zones =
 							{ "i", 32682, 1 },	-- Obsidia Scale
 							{ "i", 32681, 1 },	-- Onyx Scale of Rivendark
 						},
-					}),
-					i(32672, {	-- Depleted Badge
+					})),
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32672, {	-- Depleted Badge
 						["crs"] = {
 							19973,	-- Abyssal Flamebringer
 							22175,	-- Apexis Flayer
@@ -2068,8 +2178,8 @@ _.Zones =
 							20557,	-- Wrath Hound
 							23355,	-- Zarcsin
 						},
-					}),
-					i(32677, {	-- Depleted Cloak
+					})),
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32677, {	-- Depleted Cloak
 						["crs"] = {
 							19973,	-- Abyssal Flamebringer
 							22181,	-- Aether Ray
@@ -2088,8 +2198,8 @@ _.Zones =
 							20557,	-- Wrath Hound
 							23355,	-- Zarcsin
 						},
-					}),
-					i(32676, {	-- Depleted Cloth Bracers
+					})),
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32676, {	-- Depleted Cloth Bracers
 						["crs"] = {
 							22181,	-- Aether Ray
 							22175,	-- Apexis Flayer
@@ -2108,9 +2218,9 @@ _.Zones =
 							22244,	-- Unbound Ethereal
 							23355,	-- Zarcsin
 						},
-					}),
-					i(32576),	-- Depleted Crystal Focus
-					i(32673, {	-- Depleted Dagger
+					})),
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32576)),	-- Depleted Crystal Focus
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32673, {	-- Depleted Dagger
 						["crs"] = {
 							19973,	-- Abyssal Flamebringer
 							22181,	-- Aether Ray
@@ -2128,8 +2238,8 @@ _.Zones =
 							22180,	-- Shard-Hide Boar
 							23355,	-- Zarcsin
 						},
-					}),
-					i(32671, {	-- Depleted Mace
+					})),
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32671, {	-- Depleted Mace
 						["crs"] = {
 							19973,	-- Abyssal Flamebringer
 							22175,	-- Apexis Flayer
@@ -2151,8 +2261,8 @@ _.Zones =
 							22195,	-- Wrath Speaker
 							23355,	-- Zarcsin
 						},
-					}),
-					i(32675, {	-- Depleted Mail Gauntlets
+					})),
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32675, {	-- Depleted Mail Gauntlets
 						["crs"] = {
 							19973,	-- Abyssal Flamebringer
 							22181,	-- Aether Ray
@@ -2170,8 +2280,8 @@ _.Zones =
 							22195,	-- Wrath Speaker
 							23355,	-- Zarcsin
 						},
-					}),
-					i(32678, {	-- Depleted Ring
+					})),
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32678, {	-- Depleted Ring
 						["crs"] = {
 							22175,	-- Apexis Flayer
 							22275,	-- Apexis Guardian
@@ -2189,8 +2299,8 @@ _.Zones =
 							20557,	-- Wrath Hound
 							23355,	-- Zarcsin
 						},
-					}),
-					i(32679, {	-- Depleted Staff
+					})),
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32679, {	-- Depleted Staff
 						["crs"] = {
 							22181,	-- Aether Ray
 							22175,	-- Apexis Flayer
@@ -2210,8 +2320,8 @@ _.Zones =
 							20557,	-- Wrath Hound
 							23355,	-- Zarcsin
 						},
-					}),
-					i(32674, {	-- Depleted Sword
+					})),
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32674, {	-- Depleted Sword
 						["crs"] = {
 							22175,	-- Apexis Flayer
 							22275,	-- Apexis Guardian
@@ -2232,8 +2342,8 @@ _.Zones =
 							20557,	-- Wrath Hound
 							23355,	-- Zarcsin
 						},
-					}),
-					i(32670, {	-- Depleted Two-Handed Axe
+					})),
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32670, {	-- Depleted Two-Handed Axe
 						["crs"] = {
 							19973,	-- Abyssal Flamebringer
 							22181,	-- Aether Ray
@@ -2253,11 +2363,14 @@ _.Zones =
 							22195,	-- Wrath Speaker
 							23355,	-- Zarcsin
 						},
-					}),
-					i(31874, {	-- Design: Deadly Flame Spessarite
+					})),
+					-- #if BEFORE CATA
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31871, {	-- Design: Balanced Shadow Draenite [TBC] / Design: Shifting Shadow Draenite [CATA+]
 						["crs"] = {
 							22275,	-- Apexis Guardian
+							23391,	-- Bash'ir
 							23390,	-- Bash'ir's Harbinger
+							23332,	-- Bash'ir Reckoner
 							23353,	-- Braxxus
 							23261,	-- Furywing
 							22281,	-- Galvanoth
@@ -2268,22 +2381,73 @@ _.Zones =
 							23333,	-- The Grand Collector
 							23355,	-- Zarcsin
 						},
-					}),
+					})),
+					-- #endif
+					-- #if AFTER CATA
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31874, {	-- Design: Deadly Flame Spessarite [CATA+] / Design: Wicked Flame Spessarite [TBC]
+						["crs"] = {
+							22275,	-- Apexis Guardian
+							23391,	-- Bash'ir
+							23390,	-- Bash'ir's Harbinger
+							23332,	-- Bash'ir Reckoner
+							23353,	-- Braxxus
+							23261,	-- Furywing
+							22281,	-- Galvanoth
+							23281,	-- Insidion
+							23354,	-- Mo'arg Incinerator
+							23282,	-- Obsidia
+							23061,	-- Rivendark
+							23333,	-- The Grand Collector
+							23355,	-- Zarcsin
+						},
+					})),
+					-- #endif
+					-- #if BEFORE CATA
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31870, {	-- Design: Great Golden Draenite [TBC] / Design: Rigid Azure Moonstone [CATA+]
+						["crs"] = {
+							22275,	-- Apexis Guardian
+							23391,	-- Bash'ir
+							23390,	-- Bash'ir's Harbinger
+							23332,	-- Bash'ir Reckoner
+							23353,	-- Braxxus
+							23261,	-- Furywing
+							22281,	-- Galvanoth
+							23281,	-- Insidion
+							23354,	-- Mo'arg Incinerator
+							23282,	-- Obsidia
+							23061,	-- Rivendark
+							23333,	-- The Grand Collector
+							23355,	-- Zarcsin
+						},
+					})),
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31872, {	-- Design: Infused Shadow Draenite [TBC] / Design: Shifting Shadow Draenite [CATA+]
+						["crs"] = {
+							22275,	-- Apexis Guardian
+							23391,	-- Bash'ir
+							23390,	-- Bash'ir's Harbinger
+							23332,	-- Bash'ir Reckoner
+							23353,	-- Braxxus
+							23261,	-- Furywing
+							22281,	-- Galvanoth
+							23281,	-- Insidion
+							23354,	-- Mo'arg Incinerator
+							23282,	-- Obsidia
+							23061,	-- Rivendark
+							23333,	-- The Grand Collector
+							23355,	-- Zarcsin
+						},
+					})),
+					-- #endif
 					i(24161, {	-- Design: Khorium Band of Leaves
 						["cr"] = 19984,	-- Vekh'nir Dreadhawk
 					}),
-					i(31870, {	-- Design: Great Golden Draenite [Before 4.0.1] / Design: Rigid Azure Moonstone [After 4.0.1]
-						-- #if TBC
-						["recipeID"] = 39451,	-- Great Golden Draenite
-						-- #else
-						["recipeID"] = 28948,	-- Rigid Azure Moonstone
-						-- #endif
-						["timeline"] = {
-							"added 2.2.0.7272",
-						},
+					-- #if AFTER CATA
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31870, {	-- Design: Rigid Azure Moonstone [CATA+] / Design: Great Golden Draenite [TBC]
 						["crs"] = {
 							22275,	-- Apexis Guardian
+							23391,	-- Bash'ir
 							23390,	-- Bash'ir's Harbinger
+							23332,	-- Bash'ir Reckoner
 							23353,	-- Braxxus
 							23261,	-- Furywing
 							22281,	-- Galvanoth
@@ -2294,11 +2458,16 @@ _.Zones =
 							23333,	-- The Grand Collector
 							23355,	-- Zarcsin
 						},
-					}),
-					i(31873, {	-- Design: Veiled Shadow Draenite
+					})),
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31871)),	-- Design: Shifting Shadow Draenite [CATA+] / Design: Balanced Shadow Draenite [TBC] (removed from game)
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31872)),	-- Design: Shifting Shadow Draenite [CATA+] / Design: Infused Shadow Draenite [TBC] (removed from game)
+					-- #endif
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31873, {	-- Design: Veiled Flame Spessarite [TBC] / Design: Veiled Shadow Draenite [CATA+]
 						["crs"] = {
 							22275,	-- Apexis Guardian
+							23391,	-- Bash'ir
 							23390,	-- Bash'ir's Harbinger
+							23332,	-- Bash'ir Reckoner
 							23353,	-- Braxxus
 							23261,	-- Furywing
 							22281,	-- Galvanoth
@@ -2309,13 +2478,32 @@ _.Zones =
 							23333,	-- The Grand Collector
 							23355,	-- Zarcsin
 						},
-					}),
-					i(32664, {	-- Dreamcrystal Band
+					})),
+					-- #if BEFORE CATA
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31874, {	-- Design: Wicked Flame Spessarite [TBC] / Design: Deadly Flame Spessarite [CATA+]
+						["crs"] = {
+							22275,	-- Apexis Guardian
+							23391,	-- Bash'ir
+							23390,	-- Bash'ir's Harbinger
+							23332,	-- Bash'ir Reckoner
+							23353,	-- Braxxus
+							23261,	-- Furywing
+							22281,	-- Galvanoth
+							23281,	-- Insidion
+							23354,	-- Mo'arg Incinerator
+							23282,	-- Obsidia
+							23061,	-- Rivendark
+							23333,	-- The Grand Collector
+							23355,	-- Zarcsin
+						},
+					})),
+					-- #endif
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32664, {	-- Dreamcrystal Band
 						["cost"] = {
 							{ "i", 32678, 1 },	-- Depleted Ring
 							{ "i", 32569, 50 },	-- Apexis Shard
 						},
-					}),
+					})),
 					n(20889, {	-- Ethereum Prisoner (Group Energy Ball)
 						["description"] = "You can use either of the keys listed below to open an Ethereum Stasis Chamber.",
 						["coords"] = {
@@ -2347,12 +2535,12 @@ _.Zones =
 							}),
 						},
 					}),
-					i(32662, {	-- Flaming Quartz Staff
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32662, {	-- Flaming Quartz Staff
 						["cost"] = {
 							{ "i", 32679, 1 },	-- Depleted Staff
 							{ "i", 32569, 50 },	-- Apexis Shard
 						},
-					}),
+					})),
 					i(22534, {	-- Formula: Enchant Bracer - Spellpower
 						["coords"] = {
 							{ 43.8, 70.6, BLADES_EDGE_MOUNTAINS },
