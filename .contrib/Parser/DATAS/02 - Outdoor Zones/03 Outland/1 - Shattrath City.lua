@@ -2399,13 +2399,12 @@ local COMMON_ENCHANTING_RECIPES = {
 appendGroups(COMMON_ENCHANTING_RECIPES, ZURII_YURIAL_GROUPS);
 appendGroups(COMMON_ENCHANTING_RECIPES, MADAME_RUBY_GROUPS);
 
-
 -- #if AFTER TBC
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(10560),	-- Revered Among the Sha'tar
 		q(12479),	-- Wrath of the Lich King: Onwards to Northrend!
 		q(12480),	-- Wrath of the Lich King: Onwards to Northrend!
 	}),
-});
+}));
 -- #endif

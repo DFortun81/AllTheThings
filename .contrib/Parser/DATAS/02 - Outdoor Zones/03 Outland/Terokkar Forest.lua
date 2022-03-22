@@ -25,8 +25,7 @@ local OnTooltipForSkyguard = [[function(t)
 		GameTooltip:AddDoubleLine(" ", (x * 6) .. " Dust to go!", 1, 1, 1);
 	end
 end]];
-_.Zones =
-{
+root("Zones", {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(TEROKKAR_FOREST, {
 			["lore"] = "Terokkar Forest is a zone in central Outland that is home to Shattrath City, as well as quest hubs for level 15-30 players. The northern half of Terokkar is lush and the quests cover the threat of the Arakoaa and magic-addicted elves. The souther half is a wasteland known as the Bone Wastes, created when the Shadow Council blew up Auchindoun. There is also a daily quest hub, Skettis, for players with flying mounts--rewards include vanity items.",
@@ -1667,7 +1666,7 @@ _.Zones =
 			},
 		}),
 	})),
-};
+});
 
 -- Now add the elixirs as to not mark them incorrectly.
 appendGroups({
@@ -1680,13 +1679,13 @@ UNHOLY_ENCHANT.u = nil;
 
 -- #if AFTER TBC
 -- These quests trigger after specific events occur in the zone.
-_.HiddenQuestTriggers = {
+root("HiddenQuestTriggers", {
 	q(10925),	-- Evil Draws Near - completed with quest 10923
 	q(11072),	-- Adversarial Blood - completed with quest 11885
-};
+});
 
 -- These quests never made it in.
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(10048),	-- A Handful of Magic Dust BETA
 		q(10049),	-- A Handful of Magic Dust BETA
@@ -1762,5 +1761,5 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(9941),	-- BETA Tracking Down the Culprits
 		q(9942),	-- BETA Tracking Down the Culprits
 	}),
-});
+}));
 -- #endif

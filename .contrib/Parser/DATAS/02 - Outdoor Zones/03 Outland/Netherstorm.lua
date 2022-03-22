@@ -2,8 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 local ASARNAN_MALIJ_GROUPS = {};
-_.Zones =
-{
+root("Zones", {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(NETHERSTORM, {
 			["lore"] = "Netherstorm is the northern-most zone in Outland. It is covered in magical currents, giving it an unnatural sci-fi look--except in the protected Eco-Domes, which are lush green. Goblins and Ethereals have made outposts here, as well as the Burning Legion and Kael'thas' blood elves, with numerous Mana Forges across the region. This region has numerous quests that grant Aldor or Scryer reputation.",
@@ -4804,7 +4803,7 @@ _.Zones =
 			},
 		}),
 	})),
-};
+});
 
 -- Add in the items that aren't locked by phase.
 local COMMON_ENCHANTING_RECIPES = {
@@ -4815,15 +4814,9 @@ local COMMON_ENCHANTING_RECIPES = {
 };
 appendGroups(COMMON_ENCHANTING_RECIPES, ASARNAN_MALIJ_GROUPS);
 
-
 -- #if AFTER TBC
--- These quests trigger after specific events occur in the zone.
-_.HiddenQuestTriggers = {
-
-};
-
 -- These quests never made it in.
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		i(134012, {	-- X-52 Rocket Helmet [Might be the transmog it applies when you use the toy itself.]
 			["timeline"] = { "removed 7.0.3.22248" },
@@ -4832,5 +4825,5 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(10441),	-- Peddling the Goods
 		q(10179),	-- The Custodian of Kirin'Var
 	}),
-});
+}));
 -- #endif

@@ -72,8 +72,7 @@ local FELANNIA_JOHAN_GROUPS = {};
 -- All of these were removed and the associated recipes are now available through trainers now.
 bubbleDown({ ["spellID"] = 0, ["u"] = REMOVED_FROM_GAME }, JEWELCRAFTING_PATTERNS);
 -- #endif
-_.Zones =
-{
+root("Zones", {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(HELLFIRE_PENINSULA, {
 			["lore"] = "Hellfire Peninsula is intended to be the first questing zone players hit after passing through The Dark Portal. It is a scorched zone, the site of many former battles and the massacre of the Draenei. Players are introduced early on to the threat of the Burning Legion at The Legion Front, further learning about Magtheridon's creation of the corrupted Fel Orcs and the sacrifices made in past battles on Draenor. Players also begin to learn about Draenic and Orcish culture in quest hubs in the western peninsula.",
@@ -3323,7 +3322,7 @@ _.Zones =
 			},
 		}),
 	})),
-};
+});
 
 -- Add in the items that aren't locked by phase.
 appendGroups({
@@ -3338,16 +3337,16 @@ appendGroups({
 
 -- #if AFTER TBC
 -- These quests trigger after specific events occur in the zone.
-_.HiddenQuestTriggers = {
+root("HiddenQuestTriggers", {
 	q(10088),	-- When This Mine's a-Rockin' - completed with quest 10079
 	q(10125),	-- Mission: Disrupt Communications - completed with quest 10144 & 10208
 	q(10207),	-- Forward Base: Reaver's Fall REUSE - completed with quest 10124 & 10143
 	q(10214),	-- When This Mine's a-Rockin' - completed with quest 10079
 	q(10454),	-- Hellfire Peninsula - Flag: OFF THE RAILS. Triggered just after turning in quest 10124 & 10143
-};
+});
 
 -- These quests never made it in.
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(9344),	-- BETA A Hasty Departure
 		q(10084, {	-- BETA Assault on Mageddon
@@ -3461,5 +3460,5 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(9510),	-- [Not Used] BETA Bristlehide Clefthoof Hides
 		q(9380),	-- [Not Used] BETA Hounded for More
 	}),
-});
+}));
 -- #endif

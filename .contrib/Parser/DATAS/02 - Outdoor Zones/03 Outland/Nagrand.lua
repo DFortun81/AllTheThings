@@ -43,8 +43,7 @@ local OnTooltipForMaghar = [[function(t)
 		GameTooltip:AddDoubleLine(" ", (x * 10) .. " Beads to go!", 1, 1, 1);
 	end
 end]];
-_.Zones =
-{
+root("Zones", {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(NAGRAND, {
 			["lore"] = "Nagrand is a peaceful lush zone in Outland with grassy areas and floating islands in the sky. It is home to the Kurenai and Mag'har factions. The Horde especially have an interesting time because the final questchain covers Thrall and his true identity. Other sidequests involve slaughtering more animals for Hemet Nesingwary and learning about demon hunters and fel dangers.",
@@ -2073,21 +2072,15 @@ _.Zones =
 			},
 		}),
 	})),
-};
-
+});
 
 -- #if AFTER TBC
--- These quests trigger after specific events occur in the zone.
-_.HiddenQuestTriggers = {
-
-};
-
 -- These quests never made it in.
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(13800),	-- Get My Keys
 		q(10375),	-- Obsidian Warbeads
 		q(13799),	-- Where Are My Keys?
 	}),
-});
+}));
 -- #endif

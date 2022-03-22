@@ -10,8 +10,7 @@ local OnTooltipForNetherwing = [[function(t)
 		GameTooltip:AddDoubleLine("Turn in Netherwing Eggs.", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
 	end
 end]];
-_.Zones =
-{
+root("Zones", {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(SHADOWMOON_VALLEY, {
 			["lore"] = "Shadowmoon Valley is a fel-infused zone intended for level 25-30 players in southeastern Outland. Illidan Stormrage resides there in the Black Temple, as well as Maiev Shadowsong, held captive there by the Broken. There are several elite areas that document the destruction of the Burning Legion, as well as Illidan's methods of training demon hunters.",
@@ -2240,17 +2239,11 @@ _.Zones =
 			},
 		}),
 	})),
-};
-
+});
 
 -- #if AFTER TBC
--- These quests trigger after specific events occur in the zone.
-_.HiddenQuestTriggers = {
-
-};
-
 -- These quests never made it in.
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		-- #if BEFORE WRATH
 		q(10871),	-- BETA Ally of the Netherwing
@@ -2258,5 +2251,5 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(11052),	-- OLD Akama's Promise (awarded "Akama's Promise" criteria)
 		-- #endif
 	}),
-});
+}));
 -- #endif
