@@ -424,6 +424,7 @@ local TIER_FIVE_GROUPS = applyclassicphase(TBC_PHASE_TWO, {
 		i(30153, {	-- Breeches of the Avatar
 			["cost"] = { { "i", 30246, 1 }, },	-- Leggings of the Vanquished Defender
 		}),
+		
 		i(30154, {	-- Mantle of the Avatar
 			["cost"] = { { "i", 30249, 1 }, },	-- Pauldrons of the Vanquished Defender
 		}),
@@ -608,16 +609,56 @@ root("Zones", {
 							}),
 						},
 					}),
+					ach(1205, applyclassicphase(TBC_PHASE_ONE, {	-- Hero of Shattrath
+						-- #if BEFORE 3.0.1
+						["cost"] = {
+							{ "i", 31779, 1 },	-- Aldor Tabard
+							{ "i", 31780, 1 },	-- Scryers Tabard
+						},
+						["OnUpdate"] = [[_.CommonAchievementHandlers.ALL_ITEM_COSTS]],
+						["description"] = "Gained exalted status with The Scryers and The Aldor.\n\nNOTE: This can be accomplished now by learning both faction's Exalted recipes, their tabards, or their equipment that require Exalted reputation to buy. For the sake of simplicity, just buy both tabards as this will also count toward the 25 tabard achievement later.\n\nWARNING: You must maintain at least one of these requirements in order to acquire the achievement with prepatch!",
+						-- #endif
+					})),
+					ach(903, applyclassicphase(TBC_PHASE_ONE, {	-- Shattrath Divided
+						-- #if BEFORE 3.0.1
+						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]],
+						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]],
+						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_ANY_OnUpdate(t, 932, 934); end]],
+						["description"] = "Raise your reputation with The Scryers or The Aldor to Exalted.",
+						-- #endif
+					})),
+					ach(764, applyclassicphase(TBC_PHASE_ONE, {	-- The Burning Crusader (A)
+						-- #if BEFORE 3.0.1
+						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]],
+						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]],
+						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_OnUpdate(t, 942, 989, 1011, 935, 946); end]],
+						["description"] = "Raise all of The Burning Crusade dungeon reputations to exalted.",
+						-- #endif
+						["races"] = ALLIANCE_ONLY,
+					})),
+					ach(763, applyclassicphase(TBC_PHASE_ONE, {	-- The Burning Crusader (H)
+						-- #if BEFORE 3.0.1
+						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]],
+						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]],
+						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_OnUpdate(t, 942, 989, 1011, 935, 947); end]],
+						["description"] = "Raise all of The Burning Crusade dungeon reputations to exalted.",
+						-- #endif
+						["races"] = HORDE_ONLY,
+					})),
 				}),
 				n(FACTIONS, {
-					faction(1011),	-- Lower City
+					faction(1011, {	-- Lower City
+						["maps"] = { AUCHINDOUN_AUCHENAI_CRYPTS, AUCHINDOUN_SETHEKK_HALLS, AUCHINDOUN_SHADOW_LABYRINTH },
+					}),
 					faction(932, {	-- The Aldor
-						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["maxReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					faction(934, {	-- The Scryers
-						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["maxReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					}),
-					faction(935),	-- The Sha'tar
+					faction(935, {	-- The Sha'tar
+						["maps"] = { TEMPEST_KEEP_ARCATRAZ, TEMPEST_KEEP_BOTANICA, TEMPEST_KEEP_MECHANAR },
+					}),
 				}),
 				n(FLIGHT_PATHS, {
 					fp(128, {	-- Shattrath, Terokkar Forest
@@ -627,233 +668,280 @@ root("Zones", {
 				}),
 				n(QUESTS, {
 					q(10552, {	-- Allegiance to the Scryers
+						["qg"] = 18166,	-- Archmage Khadgar
 						["sourceQuest"] = 10211,	-- City of Light
 						["coord"] = { 54.7, 44.3, SHATTRATH_CITY },
-						["provider"] = { "n", 18166 },	-- Archmage Khadgar
 					}),
 					q(10553, {	-- Voren'thal the Seer
+						["qg"] = 18166,	-- Archmage Khadgar
 						["sourceQuest"] = 10552,	-- Allegiance to the Scryers
 						["coord"] = { 54.7, 44.3, SHATTRATH_CITY },
-						["provider"] = { "n", 18166 },	-- Archmage Khadgar
+						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10412, {	-- Firewing Signets
+						["qg"] = 18531,	-- Magistrix Fyalenn
 						["sourceQuest"] = 10552,	-- Allegiance to the Scryers
 						["coord"] = { 45.1, 81.4, SHATTRATH_CITY },
-						["provider"] = { "n", 18531 },	-- Magistrix Fyalenn
+						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["cost"] = { { "i", 29426, 10 } },	-- Firewing Signet
 					}),
 					q(10414, {	-- Single Firewing Signet
-						["description"] = "Gives reputation through Honored.",
+						["qg"] = 18531,	-- Magistrix Fyalenn
 						["sourceQuest"] = 10412,	-- Firewing Signets
-						["repeatable"] = true,
 						["coord"] = { 45.1, 81.4, SHATTRATH_CITY },
-						["provider"] = { "n", 18531 },	-- Magistrix Fyalenn
+						["maxReputation"] = { 934, HONORED },	-- The Scryers, Honored.
+						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["cost"] = { { "i", 29426, 1 } },	-- Firewing Signet
+						["repeatable"] = true,
 					}),
 					q(10415, {	-- More Firewing Signets
-						["description"] = "Gives reputation through Honored.",
+						["qg"] = 18531,	-- Magistrix Fyalenn
 						["sourceQuest"] = 10412,	-- Firewing Signets
-						["repeatable"] = true,
 						["coord"] = { 45.1, 81.4, SHATTRATH_CITY },
-						["provider"] = { "n", 18531 },	-- Magistrix Fyalenn
+						["maxReputation"] = { 934, HONORED },	-- The Scryers, Honored.
+						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["cost"] = { { "i", 29426, 10 } },	-- Firewing Signet
+						["repeatable"] = true,
 					}),
 					q(10656, {	-- Sunfury Signets
+						["qg"] = 18531,	-- Magistrix Fyalenn
 						["sourceQuest"] = 10552,	-- Allegiance to the Scryers
 						["coord"] = { 45.1, 81.4, SHATTRATH_CITY },
-						["provider"] = { "n", 18531 },	-- Magistrix Fyalenn
+						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["cost"] = { { "i", 30810, 10 } },	-- Sunfury Signet
 					}),
 					q(10659, {	-- Single Sunfury Signet
-						["description"] = "Gives reputation through Exalted.",
-						["sourceQuest"] = 10656,	-- Sunfury Signets
-						["repeatable"] = true,
+						["qg"] = 18531,	-- Magistrix Fyalenn
+						["sourceQuests"] = { 10824, 10656 },	-- Sunfury Signets (SMV or Shattrath)
 						["coord"] = { 45.1, 81.4, SHATTRATH_CITY },
-						["provider"] = { "n", 18531 },	-- Magistrix Fyalenn
+						["maxReputation"] = { 934, EXALTED },	-- The Scryers, Exalted.
+						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["cost"] = { { "i", 30810, 1 } },	-- Sunfury Signet
+						["repeatable"] = true,
 					}),
 					q(10658, {	-- More Sunfury Signets
-						["description"] = "Gives reputation through Exalted.",
-						["sourceQuest"] = 10656,	-- Sunfury Signets
-						["repeatable"] = true,
+						["qg"] = 18531,	-- Magistrix Fyalenn
+						["sourceQuests"] = { 10824, 10656 },	-- Sunfury Signets (SMV or Shattrath)
 						["coord"] = { 45.1, 81.4, SHATTRATH_CITY },
-						["provider"] = { "n", 18531 },	-- Magistrix Fyalenn
+						["maxReputation"] = { 934, EXALTED },	-- The Scryers, Exalted.
+						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["cost"] = { { "i", 30810, 10 } },	-- Sunfury Signet
+						["repeatable"] = true,
 					}),
 					q(10416, {	-- Synthesis of Power
+						["qg"] = 18530,	-- Voren'thal the Seer
 						["sourceQuest"] = 10552,	-- Allegiance to the Scryers
 						["coord"] = { 42.6, 91.4, SHATTRATH_CITY },
-						["provider"] = { "n", 18530 },	-- Voren'thal the Seer
+						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["cost"] = { { "i", 29739, 1 } },	-- Arcane Tome
 					}),
 					q(10419, {	-- Arcane Tomes
-						["description"] = "Gives reputation through Exalted.",
+						["qg"] = 18530,	-- Voren'thal the Seer
 						["sourceQuest"] = 10416,	-- Synthesis of Power
-						["repeatable"] = true,
 						["coord"] = { 42.6, 91.4, SHATTRATH_CITY },
-						["provider"] = { "n", 18530 },	-- Voren'thal the Seer
+						["maxReputation"] = { 934, EXALTED },	-- The Scryers, Exalted.
+						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["cost"] = { { "i", 29739, 1 } },	-- Arcane Tome
+						["repeatable"] = true,
 					}),
 					q(11039, {	-- Report to Spymaster Thalodien
-						["isBreadcrumb"] = true,	-- for Manaforge B'naar
+						["providers"] = {
+							{ "n", 23273 },	-- Arcanist Raestan
+							{ "n", 23272 },	-- Arcanist Savan
+						},
 						["sourceQuest"] = 10552,	-- Allegiance to the Scryers
 						["coords"] = {
 							{ 44.6, 76.2, SHATTRATH_CITY },
 							{ 60.6, 63.2, SHATTRATH_CITY },
 						},
-						["providers"] = {
-							{ "n", 23273 },	-- Arcanist Raestan
-							{ "n", 23272 },	-- Arcanist Savan
-						},
+						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["isBreadcrumb"] = true,	-- for Manaforge B'naar
 					}),
 					q(10024, {	-- Voren'thal's Visions
-						["description"] = "If you want to switch from Aldor to Scryers, use these quests to regain lost Scryers reputation.",
-						["provider"] = { "n", 18596 },	-- Arcanist Adyria
+						["qg"] = 18596,	-- Arcanist Adyria
+						["description"] = "If you want to switch from Aldor to Scryers, use this quest to regain lost Scryers reputation.",
+						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["cost"] = { { "i", 25744, 8 } },	-- Dampscale Basilisk Eye
 					}),
 					q(10025, {	-- More Basilisk Eyes
-						["sourceQuests"] = { 10024 },	-- Voren'thal's Visions
-						["description"] = "If you want to switch from Aldor to Scryers, use these quests to regain lost Scryers reputation.",
+						["qg"] = 18596,	-- Arcanist Adyria
+						["sourceQuest"] = 10024,	-- Voren'thal's Visions
+						["description"] = "If you want to switch from Aldor to Scryers, use this quest to regain lost Scryers reputation.",
+						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["cost"] = { { "i", 25744, 8 } },	-- Dampscale Basilisk Eye
 						["repeatable"] = true,
-						["provider"] = { "n", 18596 },	-- Arcanist Adyria
 					}),
-					q(11482, {	-- Duty Calls
-						["minReputation"] = { 934, FRIENDLY },
-						["isBreadcrumb"] = true,
-						["provider"] = { "n", 18594 },	-- Dathris Sunstriker
+					applyclassicphase(TBC_PHASE_FIVE, q(11482, {	-- Duty Calls
+						["qg"] = 18594,	-- Dathris Sunstriker
 						["coord"] = { 54.6, 80.8, SHATTRATH_CITY },
+						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["isBreadcrumb"] = true,
 						["lvl"] = 70,
-					}),
+					})),
 					q(10551, {	-- Allegiance to the Aldor
+						["qg"] = 18166,	-- Archmage Khadgar
 						["sourceQuest"] = 10211,	-- City of Light
 						["coord"] = { 54.7, 44.3, SHATTRATH_CITY },
-						["provider"] = { "n", 18166 },	-- Archmage Khadgar
 					}),
 					q(10554, {	-- Ishanah
-						["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+						["qg"] = 18166,	-- Archmage Khadgar
+						["sourceQuest"] = 10551,	-- Allegiance to the Aldor
 						["coord"] = { 54.7, 44.3, SHATTRATH_CITY },
-						["provider"] = { "n", 18166 },	-- Archmage Khadgar
+						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10021, {	-- Restoring the Light
-						["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+						["qg"] = 18538,	-- Ishanah
+						["sourceQuest"] = 10551,	-- Allegiance to the Aldor
 						["coord"] = { 24.2, 29.8, SHATTRATH_CITY },
-						["provider"] = { "n", 18538 },	-- Ishanah
+						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10325, {	-- Marks of Kil'jaeden
-						["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+						["qg"] = 18537,	-- Adyen the Lightwarden
+						["sourceQuest"] = 10551,	-- Allegiance to the Aldor
 						["coord"] = { 30.7, 34.6, SHATTRATH_CITY },
-						["provider"] = { "n", 18537 },	-- Adyen the Lightwarden
+						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["cost"] = { { "i", 29425, 10 } },	-- Mark of Kil'jaeden
 					}),
 					q(10327, {	-- Single Mark of Kil'jaeden
-						["description"] = "Gives reputation through Honored.",
+						["qg"] = 18537,	-- Adyen the Lightwarden
 						["sourceQuest"] = 10325,	-- Marks of Kil'jaeden
-						["repeatable"] = true,
 						["coord"] = { 30.7, 34.6, SHATTRATH_CITY },
-						["provider"] = { "n", 18537 },	-- Adyen the Lightwarden
+						["maxReputation"] = { 932, HONORED },	-- The Aldor, Honored.
+						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["cost"] = { { "i", 29425, 1 } },	-- Mark of Kil'jaeden
+						["repeatable"] = true,
 					}),
 					q(10326, {	-- More Marks of Kil'jaeden
-						["description"] = "Gives reputation through Honored.",
+						["qg"] = 18537,	-- Adyen the Lightwarden
 						["sourceQuest"] = 10325,	-- Marks of Kil'jaeden
-						["repeatable"] = true,
 						["coord"] = { 30.7, 34.6, SHATTRATH_CITY },
-						["provider"] = { "n", 18537 },	-- Adyen the Lightwarden
+						["maxReputation"] = { 932, HONORED },	-- The Aldor, Honored.
+						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["cost"] = { { "i", 29425, 10 } },	-- Mark of Kil'jaeden
+						["repeatable"] = true,
 					}),
 					q(10653, {	-- Marks of Sargeras
-						["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+						["qg"] = 18537,	-- Adyen the Lightwarden
+						["sourceQuest"] = 10551,	-- Allegiance to the Aldor
 						["coord"] = { 30.7, 34.6, SHATTRATH_CITY },
-						["provider"] = { "n", 18537 },	-- Adyen the Lightwarden
+						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["cost"] = { { "i", 30809, 10 } },	-- Mark of Sargeras
 					}),
 					q(10655, {	-- Single Mark of Sargeras
-						["description"] = "Gives reputation through Exalted.",
-						["sourceQuests"] = { 10653 },	-- Marks of Sargeras
-						["repeatable"] = true,
+						["qg"] = 18537,	-- Adyen the Lightwarden
+						["sourceQuests"] = { 10826, 10653 },	-- Marks of Sargeras (SMV or Shattrath)
 						["coord"] = { 30.7, 34.6, SHATTRATH_CITY },
-						["provider"] = { "n", 18537 },	-- Adyen the Lightwarden
+						["maxReputation"] = { 932, EXALTED },	-- The Aldor, Exalted.
+						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["cost"] = { { "i", 30809, 1 } },	-- Mark of Sargeras
+						["repeatable"] = true,
 					}),
 					q(10654, {	-- More Marks of Sargeras
-						["description"] = "Gives reputation through Exalted.",
-						["sourceQuests"] = { 10653 },	-- Marks of Sargeras
-						["repeatable"] = true,
+						["qg"] = 18537,	-- Adyen the Lightwarden
+						["sourceQuests"] = { 10826, 10653 },	-- Marks of Sargeras (SMV or Shattrath)
 						["coord"] = { 30.7, 34.6, SHATTRATH_CITY },
-						["provider"] = { "n", 18537 },	-- Adyen the Lightwarden
+						["maxReputation"] = { 932, EXALTED },	-- The Aldor, Exalted.
+						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["cost"] = { { "i", 30809, 10 } },	-- Mark of Sargeras
+						["repeatable"] = true,
 					}),
 					q(10420, {	-- A Cleansing Light
-						["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+						["qg"] = 18538,	-- Ishanah
+						["sourceQuest"] = 10551,	-- Allegiance to the Aldor
 						["coord"] = { 24.2, 29.8, SHATTRATH_CITY },
-						["provider"] = { "n", 18538 },	-- Ishanah
+						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["cost"] = { { "i", 29740, 1 } },	-- Fel Armament
 					}),
 					q(10421, {	-- Fel Armaments
-						["description"] = "Gives reputation through Exalted.",
+						["qg"] = 18538,	-- Ishanah
 						["sourceQuest"] = 10420,	-- A Cleansing Light
-						["repeatable"] = true,
 						["coord"] = { 24.2, 29.8, SHATTRATH_CITY },
-						["provider"] = { "n", 18538 },	-- Ishanah
+						["maxReputation"] = { 932, EXALTED },	-- The Aldor, Exalted.
+						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["cost"] = { { "i", 29740, 1 } },	-- Fel Armament
+						["repeatable"] = true,
 					}),
 					q(10020, {	-- A Cure for Zahlia
-						["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
-						["provider"] = { "n", 18597 },	-- Sha'nir
+						["qg"] = 18597,	-- Sha'nir
+						["sourceQuest"] = 10551,	-- Allegiance to the Aldor
+						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					}),
-					q(11481, {	-- Crisis at the Sunwell (may be able to be picked up in Netherstorm)
+					applyclassicphase(TBC_PHASE_FIVE, q(11481, {	-- Crisis at the Sunwell (may be able to be picked up in Netherstorm)
+						["qg"] = 18537,	-- Adyen the Lightwarden
+						["sourceQuest"] = 10551,	-- Allegiance to the Aldor
+						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 						["isBreadcrumb"] = true,
-						["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
-						["provider"] = { "n", 18537 },	-- Adyen the Lightwarden
-					}),
+					})),
 					q(11038, {	-- Assist Exarch Orelis
-						["isBreadcrumb"] = true,	-- for "Distraction at Manaforge B'naar," unavailable if you did any Netherstorm breadcrumb quest
-						["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
-						["coords"] = {
-							{ 35.0, 32.6, SHATTRATH_CITY },
-							{ 47.4, 26.4, SHATTRATH_CITY },
-						},
 						["providers"] = {
 							{ "n", 23271 },	-- Vindicator Kaan
 							{ "n", 23270 },	-- Vindicator Aeus
 						},
+						["sourceQuest"] = 10551,	-- Allegiance to the Aldor
+						["coords"] = {
+							{ 35.0, 32.6, SHATTRATH_CITY },
+							{ 47.4, 26.4, SHATTRATH_CITY },
+						},
+						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["isBreadcrumb"] = true,	-- for "Distraction at Manaforge B'naar," unavailable if you did any Netherstorm breadcrumb quest
 					}),
 					q(10017, {	-- Strained Supplies
-						["description"] = "If you want to switch from Scryers to Aldor, use these quests to regain lost Aldor reputation.",
-						["provider"] = { "n", 18597 },	-- Sha'nir
+						["qg"] = 18597,	-- Sha'nir
+						["description"] = "If you want to switch from Scryers to Aldor, use this quest to regain lost Aldor reputation.",
+						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["cost"] = { { "i", 25802, 8 } },	-- Dreadfang Venom Sac
 					}),
 					q(10019, {	-- More Venom Sacs
-						["sourceQuests"] = { 10017 },	-- Strained Supplies
-						["description"] = "If you want to switch from Scryers to Aldor, use these quests to regain lost Aldor reputation.",
+						["qg"] = 18597,	-- Sha'nir
+						["sourceQuest"] = 10017,	-- Strained Supplies
+						["description"] = "If you want to switch from Scryers to Aldor, use this quest to regain lost Aldor reputation.",
+						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["cost"] = { { "i", 25802, 8 } },	-- Dreadfang Venom Sac
 						["repeatable"] = true,
-						["provider"] = { "n", 18597 },	-- Sha'nir
 					}),
 					q(11877, {	-- Sunfury Attack Plans
-						["provider"] = { "n", 25140 },	-- Lord Torvos
+						["qg"] = 25140,	-- Lord Torvos
 						["repeatable"] = true,
 					}),
 					q(11880, {	-- The Multiphase Survey
-						["provider"] = { "n", 19475 },	-- Harbinger Haronem
+						["qg"] = 19475,	-- Harbinger Haronem
 						["repeatable"] = true,
 					}),
 					q(11875, {	-- Gaining the Advantage
-						["provider"] = { "n", 19202 },	-- Emissary Mordin
-						["repeatable"] = true,
+						["qg"] = 19202,	-- Emissary Mordin
 						["description"] = "This daily quest is only available to characters with Herbalism, Mining, or Skinning.",
-					}),
-					q(11513, {	-- Intercepting the Mana Cells
-						["sourceQuests"] = { 11534 },	-- Report to Nasuun
-						["provider"] = { "n", 24932 },	-- Exarch Nasuun
-						["isDaily"] = true,
-						["coord"] = { 49.8, 42.6, SHATTRATH_CITY },
-						["u"] = REMOVED_FROM_GAME,
-					}),
-					q(11514, {	-- Maintaining the Sunwell Portal
-						["provider"] = { "n", 24932 },	-- Exarch Nasuun
-						["coord"] = { 49.8, 42.6, SHATTRATH_CITY },
 						["repeatable"] = true,
 					}),
-					q(11096, {	-- Threat from Above
+					applyclassicphase(TBC_PHASE_FIVE, q(11513, {	-- Intercepting the Mana Cells
+						["qg"] = 24932,	-- Exarch Nasuun
+						["sourceQuest"] = 11534,	-- Report to Nasuun
+						["coord"] = { 49.8, 42.6, SHATTRATH_CITY },
+						["isDaily"] = true,
+					})),
+					applyclassicphase(TBC_PHASE_FIVE, q(11514, {	-- Maintaining the Sunwell Portal
+						["qg"] = 24932,	-- Exarch Nasuun
+						["coord"] = { 49.8, 42.6, SHATTRATH_CITY },
+						["repeatable"] = true,
+					})),
+					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11096, {	-- Threat from Above
+						["qg"] = 23449,	-- Yuula
 						["coord"] = { 64.0, 42.0, SHATTRATH_CITY },
-						["provider"] = { "n", 23449 },	-- Yuula
-					}),
-					q(11098, {	-- To Skettis!
+					})),
+					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11098, {	-- To Skettis!
+						["qg"] = 23449,	-- Yuula
 						["sourceQuest"] = 11096,	-- Threat From Above
 						["coord"] = { 64.0, 42.0, SHATTRATH_CITY },
-						["provider"] = { "n", 23449 },	-- Yuula
-					}),
+					})),
 					q(10984, {	-- Speak with the Ogre
-						["isBreadcrumb"] = true,
+						["qg"] = 22497,	-- V'eru
 						["coord"] = { 56.4, 49.2, SHATTRATH_CITY },
-						["provider"] = { "n", 22497 },	-- V'eru
+						["isBreadcrumb"] = true,
 					}),
 					q(10917,  {  -- The Outcast's Plight
-						["provider"] = { "n", 22429 },	-- Vekax
+						["qg"] = 22429,	-- Vekax
 						["coord"] = { 47.7, 18.8, SHATTRATH_CITY },
-						["g"] = {
+						["cost"] = { { "i", 25719, 30 } },	-- 30x Arakkoa Feather
+						["groups"] = {
 							i(31800,  {  -- Outcasts Cache
 								i(28495),	-- Windwalker's Sash
 								i(28496),	-- Talonite's Belt
@@ -867,13 +955,13 @@ root("Zones", {
 						},
 					}),
 					q(10918,  {  -- More Feathers
-						["maxReputation"] = { 1011, HONORED },
-						["sourceQuests"] = { 10917 },	-- The Outcast's Plight
-						["repeatable"] = true,
-						["provider"] = { "n", 22429 },	-- Vekax
+						["qg"] = 22429,	-- Vekax
+						["sourceQuest"] = 10917,	-- The Outcast's Plight
 						["coord"] = { 47.7, 18.8, SHATTRATH_CITY },
+						["maxReputation"] = { 1011, HONORED },	-- Lower City, Honored.
 						["cost"] = { { "i", 25719, 30 } },	-- 30x Arakkoa Feather
-						["g"] = {
+						["repeatable"] = true,
+						["groups"] = {
 							i(31800,  {  -- Outcasts Cache
 								i(28495),	-- Windwalker's Sash
 								i(28496),	-- Talonite's Belt
@@ -887,12 +975,13 @@ root("Zones", {
 						},
 					}),
 					q(57581, {	-- Plucking Plumes
-						["minReputation"] = { 1011, HONORED },
-						["repeatable"] = true,
-						["provider"] = { "n", 22429 },	-- Vekax
+						["qg"] = 22429,	-- Vekax
 						["coord"] = { 47.7, 18.8, SHATTRATH_CITY },
+						["timeline"] = { "added 8.2.5.31960" },
+						["minReputation"] = { 1011, HONORED },	-- Lower City, Honored.
 						["cost"] = { { "i", 25719, 30 } },	-- 30x Arakkoa Feather
-						["g"] = {
+						["repeatable"] = true,
+						["groups"] = {
 							i(31800,  {  -- Outcasts Cache
 								i(28495),	-- Windwalker's Sash
 								i(28496),	-- Talonite's Belt
@@ -905,134 +994,92 @@ root("Zones", {
 							}),
 						},
 					}),
-					q(11109, {	-- Jorus the Cobalt Netherwing Drake
-						-- ["provider"] = { "n",  },	--
-						["sourceQuests"] = { 11107 },	-- Bow to the Highlord
-						-- ["coord"] = { , SHATTRATH_CITY },
-						["g"] = {
-							i(32859),	-- Cobalt Netherwing Drake (MOUNT!)
+					applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11109, {	-- Jorus the Cobalt Netherwing Drake
+						["qg"] = 23462,	-- Jorus
+						["sourceQuest"] = 11107,	-- Bow to the Highlord
+						["coord"] = { 67.8, 17.2, SHATTRATH_CITY },
+						["groups"] = {
+							i(32859),	-- Reins of the Cobalt Netherwing Drake Mount
 						},
-					}),
-					q(11110, {	-- Malfas the Purple Netherwing Drake
-						-- ["provider"] = { "n",  },	--
-						["sourceQuests"] = { 11107 },	-- Bow to the Highlord
-						-- ["coord"] = { , SHATTRATH_CITY },
-						["g"] = {
-							i(32860),	-- Purple Netherwing Drake (MOUNT!)
+					})),
+					applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11110, {	-- Malfas the Purple Netherwing Drake
+						["qg"] = 23464,	-- Malfas
+						["sourceQuest"] = 11107,	-- Bow to the Highlord
+						["coord"] = { 67.8, 18.0, SHATTRATH_CITY },
+						["groups"] = {
+							i(32860),	-- Reins of the Purple Netherwing Drake Mount
 						},
-					}),
-					q(11111, {	-- Onyxien the Onyx Netherwing Drake
-						-- ["provider"] = { "n",  },	--
-						["sourceQuests"] = { 11107 },	-- Bow to the Highlord
-						-- ["coord"] = { , SHATTRATH_CITY },
-						["g"] = {
-							i(32857),	-- Onyx Netherwing Drake (MOUNT!)
+					})),
+					applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11111, {	-- Onyxien the Onyx Netherwing Drake
+						["qg"] = 23463,	-- Onyxien
+						["sourceQuest"] = 11107,	-- Bow to the Highlord
+						["coord"] = { 67.6, 18.4, SHATTRATH_CITY },
+						["groups"] = {
+							i(32857),	-- Reins of the Onyx Netherwing Drake Mount
 						},
-					}),
-					q(11112, {	-- Suraku the Azure Netherwing Drake
-						-- ["provider"] = { "n",  },	--
-						["sourceQuests"] = { 11107 },	-- Bow to the Highlord
-						-- ["coord"] = { , SHATTRATH_CITY },
-						["g"] = {
-							i(32858),	-- Azure Netherwing Drake (MOUNT!)
+					})),
+					applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11112, {	-- Suraku the Azure Netherwing Drake
+						["qg"] = 23461,	-- Suraku
+						["sourceQuest"] = 11107,	-- Bow to the Highlord
+						["coord"] = { 66.8, 18.4, SHATTRATH_CITY },
+						["groups"] = {
+							i(32858),	-- Reins of the Azure Netherwing Drake Mount
 						},
-					}),
-					q(11113, {	-- Voranaku the Violet Netherwing Drake
-						-- ["provider"] = { "n",  },	--
-						["sourceQuests"] = { 11107 },	-- Bow to the Highlord
-						-- ["coord"] = { , SHATTRATH_CITY },
-						["g"] = {
-							i(32862),	-- Violet Netherwing Drake (MOUNT!)
+					})),
+					applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11113, {	-- Voranaku the Violet Netherwing Drake
+						["qg"] = 23466,	-- Voranaku
+						["sourceQuest"] = 11107,	-- Bow to the Highlord
+						["coord"] = { 66.6, 17.8, SHATTRATH_CITY },
+						["groups"] = {
+							i(32862),	-- Reins of the Violet Netherwing Drake Mount
 						},
-					}),
-					q(11114, {	-- Zoya the Veridian Netherwing Drake
-						-- ["provider"] = { "n",  },	--
-						["sourceQuests"] = { 11107 },	-- Bow to the Highlord
-						-- ["coord"] = { , SHATTRATH_CITY },
-						["g"] = {
-							i(32861),	-- Veridian Netherwing Drake (MOUNT!)
+					})),
+					applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11114, {	-- Zoya the Veridian Netherwing Drake
+						["qg"] = 23465,	-- Zoya
+						["sourceQuest"] = 11107,	-- Bow to the Highlord
+						["coord"] = { 66.6, 18.6, SHATTRATH_CITY },
+						["groups"] = {
+							i(32861),	-- Reins of the Veridian Netherwing Drake Mount
 						},
-					}),
-					q(12753, {	-- A Desperate Alliance
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = { DWARF },
-					}),
-					-- q(12753, {	-- A Desperate Alliance [Wrong QuestID]
-					-- 	["u"] = REMOVED_FROM_GAME,
-					-- 	["races"] = { NIGHTELF },
-					-- }),
-					q(12775, {	-- A Desperate Alliance
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = { HUMAN },
-					}),
-					q(12777, {	-- A Desperate Alliance
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = { DRAENEI },
-					}),
-					q(12808, {	-- A Desperate Alliance
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = { GNOME },
-					}),
+					})),
 					q(10210, {	-- A'dal
-						["provider"] = { "n", 19684 },	-- Haggard War Veteran
+						["qg"] = 19684,	-- Haggard War Veteran
 						["coord"] = { 59.6, 41.4, SHATTRATH_CITY },
 					}),
 					q(10211, {	-- City of Light
-						["provider"] = { "n", 18166 },	-- Archmage Khadgar
+						["qg"] = 18166,	-- Archmage Khadgar
+						["sourceQuest"] = 10210,	-- A'dal
 						["coord"] = { 54.7, 44.3, SHATTRATH_CITY },
-						["sourceQuests"] = { 10210 },	-- A'dal
 					}),
 					q(11046, {	-- Chief Apothecary Hildagard
-						["provider"] = { "n", 19678 },	-- Fantei
+						["qg"] = 19678,	-- Fantei
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,	-- for "A Haunted History" in Shadowmoon Valley
 					}),
 					q(44863, {	-- Clearing the Air
-						["requireSkill"] = BLACKSMITHING,
+						["qg"] = 115546,	-- Lunelli
 						["coord"] = { 64.1, 71.5, SHATTRATH_CITY },
-						["provider"] = { "n", 115546 },	-- Lunelli
 						["timeline"] = {
 							"created 7.0.3.21655",
 							"added 7.1.5.23038"
 						},
-						["g"] = {
+						["requireSkill"] = BLACKSMITHING,
+						["groups"] = {
 							i(142279),	-- Plans: Windforged Rapier
 							i(142283),	-- Plans: Skyforged Great Axe
 							i(142282),	-- Plans: Stormforged Axe
 						},
 					}),
-					q(12773, {	-- Darnassus
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = { NIGHTELF },
-						["provider"] = { "n", 29087 },	-- Bishop Lazaril
-						["sourceQuest"] = 12753,	-- A Desperate Alliance
-					}),
-					q(12783, {	-- Desperate Research
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = { TROLL },
-					}),
-					q(12752, {	-- Desperate Research
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = { UNDEAD },
-					}),
-					q(12782, {	-- Desperate Research
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = { BLOODELF },
-					}),
-					q(12784, {	-- Desperate Research
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = { TAUREN },
-					}),
-					q(12811, {	-- Desperate Research
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = { ORC },
+					q(10009, {	-- Crackin' Some Skulls
+						["qg"] = 18584,	-- Sal'salabim
+						["sourceQuest"] = 10004,	-- Patience and Understanding *UNTESTED*
 					}),
 					q(41160, {	-- Earth to Earth
-						["requireSkill"] = BLACKSMITHING,
+						["qg"] = 115546,	-- Lunelli
 						["coord"] = { 64.1, 71.5, SHATTRATH_CITY },
-						["provider"] = { "n", 115546 },	-- Lunelli
 						["timeline"] = { "added 7.0.3.21655" },
-						["g"] = {
+						["requireSkill"] = BLACKSMITHING,
+						["groups"] = {
 							i(142284),	-- Plans: Stoneforged Claymore
 							i(142287),	-- Plans: Great Earthforged Hammer
 							i(142286),	-- Plans: Lavaforged Warhammer
@@ -1043,84 +1090,34 @@ root("Zones", {
 						["provider"] = { "n", 25167 },	-- General Tiras'alan
 						["coord"] = { 54.3, 44.3, SHATTRATH_CITY },
 					}),
-					q(12771, {	-- Ironforge (Dwarf)
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = { DWARF },
-						["provider"] = { "n", 29087 },	-- Bishop Lazaril
-						["sourceQuest"] = 12753,	-- A Desperate Alliance
-					}),
-					q(12809, {	-- Ironforge (Gnome)
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = { GNOME },
-						["provider"] = { "n", 29087 },	-- Bishop Lazaril
-						["sourceQuest"] = 12808,	-- A Desperate Alliance
+					q(10010, {	-- It's Just That Easy?
+						["qg"] = 18584,	-- Sal'salabim
+						["sourceQuest"] = 10009,	-- Crackin' Some Skulls
 					}),
 					q(10169, {	-- Losing Gracefully
 						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 19485 },	-- Magister Falris
 						["coord"] = { 47.0, 83.5, SHATTRATH_CITY },
 					}),
-					q(12785, {	-- Orgrimmar (Troll)
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = { TROLL },
-						["provider"] = { "n", 28318 },	-- Grand Apothecary Putress
-						["sourceQuest"] = 12783,	-- Desperate Research
-					}),
-					q(12812, {	-- Orgrimmar (Orc)
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = { ORC },
-						["provider"] = { "n", 28318 },	-- Grand Apothecary Putress
-						["sourceQuest"] = 12811,	-- Desperate Research
-					}),
 					q(10037, {	-- Rather Be Fishin'
-						["provider"] = { "n", 18653 },	-- Seth
-						["g"] = {
+						["qg"] = 18653,	-- Seth
+						["groups"] = {
 							i(25978)	-- Seth's Graphite Fishing Pole
 						},
 					}),
-					q(12788, {	-- Silvermoon
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = { BLOODELF },
-						["provider"] = { "n", 28318 },	-- Grand Apothecary Putress
-						["sourceQuest"] = 12782,	-- Desperate Research
-					}),
-					q(12774, {	-- Stormwind
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = { HUMAN },
-						["provider"] = { "n", 29087 },	-- Bishop Lazaril
-						["sourceQuest"] = 12775,	-- A Desperate Alliance
-					}),
 					q(10550, {	-- The Bundle of Bloodthistle
-						["provider"] = { "n", 21411 },	-- Tobias the Filth Gorger
-						["sourceQuests"] = { 10547 },	-- Of Thistleheads and Eggs...
+						["qg"] = 21411,	-- Tobias the Filth Gorger
+						["sourceQuest"] = 10547,	-- Of Thistleheads and Eggs...
 						["coord"] = { 63.8, 69.7, SHATTRATH_CITY },
 					}),
-					q(12776, {	-- The Exodar
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = { DRAENEI },
-						["provider"] = { "n", 29087 },	-- Bishop Lazaril
-						["sourceQuest"] = 12777,	-- A Desperate Alliance
-					}),
 					q(10251, {	-- The Master's Grand Design?
-						["coord"] = { 43.6, 29.6, SHATTRATH_CITY },
-						["provider"] = { "n", 19720 },	-- "Dirty" Larry <Ruffian>
+						["qg"] = 19720,	-- "Dirty" Larry <Ruffian>
 						["sourceQuest"] = 10231,	-- What Book? I Don't See Any Book.
+						["coord"] = { 43.6, 29.6, SHATTRATH_CITY },
 					}),
 					q(10883, {	-- The Tempest Key
-						["provider"] = { "n", 18166 },	-- Archmage Khadgar
-						["sourceQuests"] = { 10588 },	-- The Cipher of Damnation
-					}),
-					q(12787, {	-- The Undercity
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = { UNDEAD },
-						["provider"] = { "n", 28318 },	-- Grand Apothecary Putress
-						["sourceQuest"] = 12752,	-- Desperate Research
-					}),
-					q(12786, {	-- Thunder Bluff
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = { TAUREN },
-						["provider"] = { "n", 28318 },	-- Grand Apothecary Putress
-						["sourceQuest"] = 12784,	-- Desperate Research
+						["qg"] = 18166,	-- Archmage Khadgar
+						["sourceQuest"] = 10588,	-- The Cipher of Damnation
 					}),
 					-- TODO: https://wowwiki-archive.fandom.com/wiki/Wind_Trader_Zhareem
 					q(11369, {	-- WANTED: A Black Stalker Egg
@@ -1129,60 +1126,63 @@ root("Zones", {
 						["maps"] = { COILFANG_RESERVOIR_UNDERBOG },
 						["isDaily"] = true,
 						["lvl"] = 70,
-						["g"] = {
+						["groups"] = {
 							objective(1, {
 								["provider"] = { "i", 33826 },	-- Black Stalker Egg
 							}),
 						},
 					}),
 					q(11384, {	-- WANTED: A Warp Splinter Clipping
-						["provider"] = { "n", 24369 },	-- Wind Trader Zhareem
+						["qg"] = 24369,	-- Wind Trader Zhareem
 						["coord"] = { 75, 37, SHATTRATH_CITY },
 						["isDaily"] = true,
 					}),
 					q(11382, {	-- WANTED: Aeonus's Hourglass
-						["provider"] = { "n", 24369 },	-- Wind Trader Zhareem
+						["qg"] = 24369,	-- Wind Trader Zhareem
 						["coord"] = { 75, 37, SHATTRATH_CITY },
 						["isDaily"] = true,
 					}),
 					q(11389, {	-- Wanted: Arcatraz Sentinels
-						["provider"] = { "n", 24370 },	-- Nether-Stalker Mah'duun
+						["qg"] = 24370,	-- Nether-Stalker Mah'duun
+						["coord"] = { 75.4, 37.6, SHATTRATH_CITY },
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
 					}),
 					q(11363, {	-- WANTED: Bladefist's Seal
-						["provider"] = { "n", 24369 },	-- Wind Trader Zhareem
+						["qg"] = 24369,	-- Wind Trader Zhareem
 						["coord"] = { 75, 37, SHATTRATH_CITY },
 						["isDaily"] = true,
 					}),
 					q(11371, {	-- Wanted: Coilfang Myrmidons
-						["provider"] = { "n", 24370 },	-- Nether-Stalker Mah'duun
+						["qg"] = 24370,	-- Nether-Stalker Mah'duun
+						["coord"] = { 75.4, 37.6, SHATTRATH_CITY },
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
 					}),
 					q(11362, {	-- WANTED: Keli'dan's Feathered Stave
-						["provider"] = { "n", 24369 },	-- Wind Trader Zhareem
+						["qg"] = 24369,	-- Wind Trader Zhareem
 						["coord"] = { 75, 37, SHATTRATH_CITY },
 						["isDaily"] = true,
 					}),
 					q(11376, {	-- Wanted: Malicious Instructors
-						["provider"] = { "n", 24370 },	-- Nether-Stalker Mah'duun
+						["qg"] = 24370,	-- Nether-Stalker Mah'duun
+						["coord"] = { 75.4, 37.6, SHATTRATH_CITY },
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
 					}),
 					q(11375, {	-- WANTED: Murmur's Whisper
-						["provider"] = { "n", 24369 },	-- Wind Trader Zhareem
+						["qg"] = 24369,	-- Wind Trader Zhareem
 						["coord"] = { 75, 37, SHATTRATH_CITY },
 						["isDaily"] = true,
 					}),
 					q(11354, {	-- WANTED: Nazan's Riding Crop
-						["provider"] = { "n", 24369 },	-- Wind Trader Zhareem
+						["qg"] = 24369,	-- Wind Trader Zhareem
 						["coord"] = { 75, 37, SHATTRATH_CITY },
 						["maps"] = { HELLFIRE_CITADEL_RAMPARTS },
 						["isDaily"] = true,
@@ -1191,99 +1191,224 @@ root("Zones", {
 						},
 					}),
 					q(11386, {	-- WANTED: Pathaleon's Projector
-						["provider"] = { "n", 24369 },	-- Wind Trader Zhareem
+						["qg"] = 24369,	-- Wind Trader Zhareem
 						["coord"] = { 75, 37, SHATTRATH_CITY },
 						["isDaily"] = true,
 					}),
 					q(11383, {	-- Wanted: Rift Lords
-						["provider"] = { "n", 24370 },	-- Nether-Stalker Mah'duun
+						["qg"] = 24370,	-- Nether-Stalker Mah'duun
+						["coord"] = { 75.4, 37.6, SHATTRATH_CITY },
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
 					}),
 					q(11373, {	-- WANTED: Shaffar's Wondrous Pendant
-						["provider"] = { "n", 24369 },	-- Wind Trader Zhareem
+						["qg"] = 24369,	-- Wind Trader Zhareem
 						["coord"] = { 75, 37, SHATTRATH_CITY },
 						["isDaily"] = true,
 					}),
 					q(11364, {	-- Wanted: Shattered Hand Centurions
-						["provider"] = { "n", 24370 },	-- Nether-Stalker Mah'duun
+						["qg"] = 24370,	-- Nether-Stalker Mah'duun
+						["coord"] = { 75.4, 37.6, SHATTRATH_CITY },
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
 					}),
-					q(11500, {	-- Wanted: Sisters of Torment
-						["provider"] = { "n", 24370 },	-- Nether-Stalker Mah'duun
+					applyclassicphase(TBC_PHASE_FIVE, q(11500, {	-- Wanted: Sisters of Torment
+						["qg"] = 24370,	-- Nether-Stalker Mah'duun
+						["coord"] = { 75.4, 37.6, SHATTRATH_CITY },
 						["maps"] = { MAGISTERS_TERRACE },
-						-- #if ANYCLASSIC
-						["u"] = TBC_PHASE_FIVE,
-						-- #endif
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
-					}),
+					})),
 					q(11385, {	-- Wanted: Sunseeker Channelers
-						["g"] = {
+						["qg"] = 24370,	-- Nether-Stalker Mah'duun
+						["coord"] = { 75.4, 37.6, SHATTRATH_CITY },
+						["isDaily"] = true,
+						["groups"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
-						["provider"] = { "n", 24370 },	-- Nether-Stalker Mah'duun
-						["isDaily"] = true,
 					}),
 					q(11387, {	-- Wanted: Tempest-Forge Destroyers
-						["provider"] = { "n", 24370 },	-- Nether-Stalker Mah'duun
+						["qg"] = 24370,	-- Nether-Stalker Mah'duun
+						["coord"] = { 75.4, 37.6, SHATTRATH_CITY },
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
 					}),
 					q(11378, {	-- WANTED: The Epoch Hunter's Head
-						["provider"] = { "n", 24369 },	-- Wind Trader Zhareem
+						["qg"] = 24369,	-- Wind Trader Zhareem
 						["coord"] = { 75, 37, SHATTRATH_CITY },
 						["isDaily"] = true,
 					}),
 					q(11374, {	-- WANTED: The Exarch's Soul Gem
-						["provider"] = { "n", 24369 },	-- Wind Trader Zhareem
+						["qg"] = 24369,	-- Wind Trader Zhareem
 						["coord"] = { 75, 37, SHATTRATH_CITY },
 						["isDaily"] = true,
 					}),
 					q(11372, {	-- WANTED: The Headfeathers of Ikiss
-						["provider"] = { "n", 24369 },	-- Wind Trader Zhareem
+						["qg"] = 24369,	-- Wind Trader Zhareem
 						["coord"] = { 75, 37, SHATTRATH_CITY },
 						["isDaily"] = true,
 					}),
 					q(11368, {	-- WANTED: The Heart of Quagmirran
-						["provider"] = { "n", 24369 },	-- Wind Trader Zhareem
+						["qg"] = 24369,	-- Wind Trader Zhareem
 						["coord"] = { 75, 37, SHATTRATH_CITY },
 						["isDaily"] = true,
 					}),
 					q(11388, {	-- WANTED: The Scroll of Skyriss
-						["provider"] = { "n", 24369 },	-- Wind Trader Zhareem
+						["qg"] = 24369,	-- Wind Trader Zhareem
 						["coord"] = { 75, 37, SHATTRATH_CITY },
 						["isDaily"] = true,
 					}),
 					q(11499, {	-- WANTED: The Signet Ring of Prince Kael'thas
-						["provider"] = { "n", 24369 },	-- Wind Trader Zhareem
+						["qg"] = 24369,	-- Wind Trader Zhareem
 						["coord"] = { 75, 37, SHATTRATH_CITY },
 						["isDaily"] = true,
 					}),
 					q(11370, {	-- WANTED: The Warlord's Treatise
-						["provider"] = { "n", 24369 },	-- Wind Trader Zhareem
+						["qg"] = 24369,	-- Wind Trader Zhareem
 						["coord"] = { 75, 37, SHATTRATH_CITY },
 						["isDaily"] = true,
 					}),
 					q(10231, {	-- What Book? I Don't See Any Book.
-						["coord"] = { 59.3, 35.6, SHATTRATH_CITY },
-						["provider"] = { "n", 19715 },	-- Ezekiel
-						["description"] = "Walks around the |cFFFFD700Terrace of Light|r.",
+						["qg"] = 19715,	-- Ezekiel
 						["sourceQuest"] = 10228,	-- Ezekiel
+						["coord"] = { 59.3, 35.6, SHATTRATH_CITY },
+						["description"] = "Walks around the |cFFFFD700Terrace of Light|r.",
 					}),
 					q(11045, {	-- Zorus the Judicator
-						["provider"] = { "n", 19678 },	-- Fantei
+						["qg"] = 19678,	-- Fantei
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,	-- for "A Ghost in the Machine" in SMV, mutually exclusive w/other bcrumbs
+					}),
+					
+					-- Scourge Invasion (Wrath Quests) -- TODO: Move these!
+					applyclassicphase(WRATH_PHASE_ONE, q(12753, {	-- A Desperate Alliance
+						["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+						["races"] = { DWARF },
+					})),
+					applyclassicphase(WRATH_PHASE_ONE, q(12753, {	-- A Desperate Alliance
+						["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+						["races"] = { NIGHTELF },
+					})),
+					applyclassicphase(WRATH_PHASE_ONE, q(12775, {	-- A Desperate Alliance
+						["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+						["races"] = { HUMAN },
+					})),
+					applyclassicphase(WRATH_PHASE_ONE, q(12777, {	-- A Desperate Alliance
+						["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+						["races"] = { DRAENEI },
+					})),
+					applyclassicphase(WRATH_PHASE_ONE, q(12808, {	-- A Desperate Alliance
+						["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+						["races"] = { GNOME },
+					})),
+					applyclassicphase(WRATH_PHASE_ONE, q(12773, {	-- Darnassus
+						["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+						["races"] = { NIGHTELF },
+						["provider"] = { "n", 29087 },	-- Bishop Lazaril
+						["sourceQuest"] = 12753,	-- A Desperate Alliance
+					})),
+					applyclassicphase(WRATH_PHASE_ONE, q(12783, {	-- Desperate Research
+						["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+						["races"] = { TROLL },
+					})),
+					applyclassicphase(WRATH_PHASE_ONE, q(12752, {	-- Desperate Research
+						["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+						["races"] = { UNDEAD },
+					})),
+					applyclassicphase(WRATH_PHASE_ONE, q(12782, {	-- Desperate Research
+						["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+						["races"] = { BLOODELF },
+					})),
+					applyclassicphase(WRATH_PHASE_ONE, q(12784, {	-- Desperate Research
+						["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+						["races"] = { TAUREN },
+					})),
+					applyclassicphase(WRATH_PHASE_ONE, q(12811, {	-- Desperate Research
+						["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+						["races"] = { ORC },
+					})),
+					applyclassicphase(WRATH_PHASE_ONE, q(12771, {	-- Ironforge (Dwarf)
+						["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+						["races"] = { DWARF },
+						["provider"] = { "n", 29087 },	-- Bishop Lazaril
+						["sourceQuest"] = 12753,	-- A Desperate Alliance
+					})),
+					applyclassicphase(WRATH_PHASE_ONE, q(12809, {	-- Ironforge (Gnome)
+						["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+						["races"] = { GNOME },
+						["provider"] = { "n", 29087 },	-- Bishop Lazaril
+						["sourceQuest"] = 12808,	-- A Desperate Alliance
+					})),
+					applyclassicphase(WRATH_PHASE_ONE, q(12785, {	-- Orgrimmar (Troll)
+						["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+						["races"] = { TROLL },
+						["provider"] = { "n", 28318 },	-- Grand Apothecary Putress
+						["sourceQuest"] = 12783,	-- Desperate Research
+					})),
+					applyclassicphase(WRATH_PHASE_ONE, q(12812, {	-- Orgrimmar (Orc)
+						["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+						["races"] = { ORC },
+						["provider"] = { "n", 28318 },	-- Grand Apothecary Putress
+						["sourceQuest"] = 12811,	-- Desperate Research
+					})),
+					applyclassicphase(WRATH_PHASE_ONE, q(12788, {	-- Silvermoon
+						["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+						["races"] = { BLOODELF },
+						["provider"] = { "n", 28318 },	-- Grand Apothecary Putress
+						["sourceQuest"] = 12782,	-- Desperate Research
+					})),
+					applyclassicphase(WRATH_PHASE_ONE, q(12774, {	-- Stormwind
+						["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+						["races"] = { HUMAN },
+						["provider"] = { "n", 29087 },	-- Bishop Lazaril
+						["sourceQuest"] = 12775,	-- A Desperate Alliance
+					})),
+					applyclassicphase(WRATH_PHASE_ONE, q(12776, {	-- The Exodar
+						["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+						["races"] = { DRAENEI },
+						["provider"] = { "n", 29087 },	-- Bishop Lazaril
+						["sourceQuest"] = 12777,	-- A Desperate Alliance
+					})),
+					applyclassicphase(WRATH_PHASE_ONE, q(12787, {	-- The Undercity
+						["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+						["races"] = { UNDEAD },
+						["provider"] = { "n", 28318 },	-- Grand Apothecary Putress
+						["sourceQuest"] = 12752,	-- Desperate Research
+					})),
+					applyclassicphase(WRATH_PHASE_ONE, q(12786, {	-- Thunder Bluff
+						["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+						["races"] = { TAUREN },
+						["provider"] = { "n", 28318 },	-- Grand Apothecary Putress
+						["sourceQuest"] = 12784,	-- Desperate Research
+					})),
+				}),
+				n(REWARDS, {
+					i(33844, {	-- Barrel of Fish
+						i(33869),	-- Recipe: Broiled Bloodfin
+						-- #if AFTER 3.2.0
+						i(34834),	-- Recipe: Captain Rumsey's Lager
+						-- #endif
+						i(33925),	-- Recipe: Delicious Chocolate Cake
+						i(33875),	-- Recipe: Kibler's Bits
+						i(33870),	-- Recipe: Skullfish Soup
+						i(33871),	-- Recipe: Stormchops
+					}),
+					i(33857, {	-- Crate of Meat
+						-- #if AFTER 3.2.0
+						i(34834),	-- Recipe: Captain Rumsey's Lager
+						-- #endif
+						i(33925),	-- Recipe: Delicious Chocolate Cake
+						i(33875),	-- Recipe: Kibler's Bits
+						i(33873),	-- Recipe: Spicy Hot Talbuk
+						i(33871),	-- Recipe: Stormchops
 					}),
 				}),
 				n(VENDORS, {
@@ -1324,39 +1449,48 @@ root("Zones", {
 							i(29177),	-- Adal's Command
 							i(29180),	-- Blessed Scale Girdle
 							i(29176),	-- Crest of the Sha'tar
-							i(35404),	-- Crusader's Ornamented Headguard
-							i(35416),	-- Crusader's Scaled Shoulders
+							applyclassicphase(TBC_PHASE_TWO, i(35404)),	-- Crusader's Ornamented Headguard
+							applyclassicphase(TBC_PHASE_TWO, i(35416)),	-- Crusader's Scaled Shoulders
 							i(33159),	-- Design: Blood of Amber
 							i(25904),	-- Design: Insightful Earthstorm Diamond
 							i(33155),	-- Design: Kailee's Rose
 							i(30826),	-- Design: Ring of Arcane Shielding
 							i(24182),	-- Design: Talasite Owl
-							i(35359),	-- Dragonhide Spaulders
-							i(35330),	-- Dreadweave Leggings
-							i(35345),	-- Evoker's Silk Handguards
+							applyclassicphase(TBC_PHASE_TWO, i(35359)),	-- Dragonhide Spaulders
+							applyclassicphase(TBC_PHASE_TWO, i(35330)),	-- Dreadweave Leggings
+							applyclassicphase(TBC_PHASE_TWO, i(35345)),	-- Evoker's Silk Handguards
 							i(28273),	-- Formula: Enchant Gloves - Major Healing
 							i(33153),	-- Formula: Enchant Gloves - Threat
 							i(22537),	-- Formula: Enchant Ring - Healing Power
 							i(28281),	-- Formula: Enchant Weapon - Major Healing
 							i(29175),	-- Gavel of Pure Light
-							i(35362),	-- Kodohide Helm
-							i(35333),	-- Mooncloth Cowl
-							i(35368),	-- Opportunist's Leather Legguards
+							i(29195, {	-- Glyph of Arcane Warding
+								["timeline"] = { "removed 5.0.4" },
+							}),
+							i(29191, {	-- Glyph of Power
+								["timeline"] = { "removed 5.0.4" },
+							}),
+							applyclassicphase(TBC_PHASE_TWO, i(35362)),	-- Kodohide Helm
+							applyclassicphase(TBC_PHASE_TWO, i(35333)),	-- Mooncloth Cowl
+							applyclassicphase(TBC_PHASE_TWO, i(35368)),	-- Opportunist's Leather Legguards
 							i(29717),	-- Pattern: Drums of Battle
+							-- #if ANYCLASSIC
+							applyclassicphase(TBC_PHASE_FOUR, i(185926)),	-- Pattern: Greater Drums of Battle
+							-- #endif
 							i(13517),	-- Recipe: Alchemist Stone
 							i(31354),	-- Recipe: Flask of the Titans
 							i(22915),	-- Recipe: Transmute Primal Air to Fire
-							i(35341),	-- Satin Mantle
-							i(35407),	-- Savage Plate Chestpiece
-							i(35381),	-- Seer's Linked Armor
-							i(35388),	-- Seer's Mail Helm
-							i(35395),	-- Seer's Ringmail Shoulderpads
+							applyclassicphase(TBC_PHASE_TWO, i(35341)),	-- Satin Mantle
+							applyclassicphase(TBC_PHASE_TWO, i(35407)),	-- Savage Plate Chestpiece
+							applyclassicphase(TBC_PHASE_TWO, i(35381)),	-- Seer's Linked Armor
+							applyclassicphase(TBC_PHASE_TWO, i(35388)),	-- Seer's Mail Helm
+							applyclassicphase(TBC_PHASE_TWO, i(35395)),	-- Seer's Ringmail Shoulderpads
 							i(31781),	-- Sha'tar Tabard
-							i(35380),	-- Stalker's Chain Spaulders
+							applyclassicphase(TBC_PHASE_TWO, i(35380)),	-- Stalker's Chain Spaulders
 							i(30634, {	-- Warpforged Key
 								["timeline"] = { "removed 4.2.0.10000" },
 							}),
-							i(35375),	-- Wyrmhide Robe
+							applyclassicphase(TBC_PHASE_TWO, i(35375)),	-- Wyrmhide Robe
 							i(29179),	-- Xi'ri's Gift
 						},
 					}),
@@ -1458,6 +1592,37 @@ root("Zones", {
 							}),
 						},
 					}),
+					-- #if BEFORE CATA
+					n(25196, {	-- Archer Delvinar <Specialty Ammunition Vendor>
+						["coord"] = { 41.4, 63.4, SHATTRATH_CITY },
+						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["groups"] = {
+							i(32883, {	-- Felbane Slugs
+								["timeline"] = { "removed 4.0.1.10000" },
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(32882, {	-- Hellfire Shot
+								["timeline"] = { "removed 4.0.1.10000" },
+								["races"] = HORDE_ONLY,
+							}),
+							applyclassicphase(TBC_PHASE_THREE, i(34581, {	-- Mysterious Arrow
+								["timeline"] = { "removed 4.0.1.20000" },
+							})),
+							applyclassicphase(TBC_PHASE_THREE, i(34582, {	-- Mysterious Shell
+								["timeline"] = { "removed 4.0.1.20000" },
+							})),
+							applyclassicphase(TBC_PHASE_THREE, i(31737, {	-- Timeless Arrow
+								["timeline"] = { "removed 4.0.1.20000" },
+							})),
+							applyclassicphase(TBC_PHASE_THREE, i(31735, {	-- Timeless Shell
+								["timeline"] = { "removed 4.0.1.20000" },
+							})),
+							i(31949, {	-- Warden's Arrow
+								["timeline"] = { "removed 4.0.1" },
+							}),
+						},
+					}),
+					-- #endif
 					n(20613, {	-- Arodis Sunblade <Keeper of Sha'tari Artifacts>
 						["coord"] = { 42.6, 90.6, SHATTRATH_CITY },
 						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
@@ -1501,131 +1666,167 @@ root("Zones", {
 						["coord"] = { 50.8, 42.4, SHATTRATH_CITY },
 						["minReputation"] = { 935, NEUTRAL },	-- The Sha'tar, Neutral.
 						["groups"] = {
-							i(33585),	-- Achromic Trousers of the Naaru
-							i(33810),	-- Amani Mask of Death
-							i(33578),	-- Armwraps of the Kaldorei Protector
-							i(29266),	-- Azure-Shield of Coldarra
-							i(29373),	-- Band of Halos
-							i(33580),	-- Band of the Swift Paw
-							i(35326),	-- Battlemaster's Alacrity
-							i(34049),	-- Battlemaster's Audacity
-							i(34163),	-- Battlemaster's Cruelty
-							i(34162),	-- Battlemaster's Depravity
-							i(33832),	-- Battlemaster's Determination
-							i(34050),	-- Battlemaster's Perseverance
-							i(29375),	-- Bishop's Cloak
-							i(33566),	-- Blessed Elunite Coverings
-							i(29382),	-- Blood Knight War Cloak
-							i(29383),	-- Bloodlust Brooch
-							i(33501),	-- Bloodthirster's Wargreaves
-							i(33517),	-- Bonefist Gauntlets
-							i(33516),	-- Bracers of the Ancient Phalanx
-							i(33296),	-- Brooch of Deftness
-							i(33192),	-- Carved Witch Doctor's Stick
-							i(33331),	-- Chain of Unleashed Rage
-							i(33522),	-- Chestguard of the Stoic Guardian
-							i(29381),	-- Choker of Vile Intent
-							i(35321),	-- Cloak of Arcane Alacrity
-							i(33304),	-- Cloak of Subjugated Power
-							i(35324),	-- Cloak of Swift Reprieve
-							i(32088),	-- Cowl of Beastly Rage
-							i(32090),	-- Cowl of Naaru Blessings
-							i(33484),	-- Dory's Embrace
-							i(33535),	-- Earthquake Bracers
-							i(29376),	-- Essence of the Martyr
-							i(33513),	-- Eternium Rage-Shackles
-							i(32083),	-- Faceguard of Domination
-							i(29385),	-- Farstrider Defender's Cloak
-							i(33334),	-- Fetish of the Primal Gods
-							i(29270),	-- Flametongue Seal
-							i(33582),	-- Footwraps of Wild Encroachment
-							i(33512),	-- Furious Deathgrips
-							i(33557),	-- Gargon's Bracers of Peaceful Slumber
-							i(33528),	-- Gauntlets of Sniping
-							i(33524),	-- Girdle of the Protector
-							i(33532),	-- Gleaming Earthen Bracers
-							i(33287),	-- Gnarled Ironwood Pauldrons
-							i(29387),	-- Gnomeregan Auto-Dodger 600
-							i(33974),	-- Grasp of the Moonkin
-							i(33534),	-- Grips of Nature's Wrath
-							i(33519),	-- Handguards of the Templar
-							i(33965),	-- Hauberk of the Furious Elements
-							i(32084),	-- Helmet of the Steadfast Champion
-							i(33518),	-- High Justicar's Legplates
-							i(29370),	-- Icon of the Silver Crescent
-							i(33207),	-- Implacable Guardian Sabatons
-							i(30770),	-- Inferno Forged Boots
-							i(30774),	-- Inferno Forged Gloves
-							i(30773),	-- Inferno Forged Hauberk
-							i(30772),	-- Inferno Forged Leggings
-							i(30779),	-- Inferno Hardened Boots
-							i(30776),	-- Inferno Hardened Chestguard
-							i(30780),	-- Inferno Hardened Gloves
-							i(30778),	-- Inferno Hardened Leggings
-							i(30768),	-- Inferno Tempered Boots
-							i(30769),	-- Inferno Tempered Chestguard
-							i(30767),	-- Inferno Tempered Gauntlets
-							i(30766),	-- Inferno Tempered Leggings
-							i(30763),	-- Infernoweave Boots
-							i(30764),	-- Infernoweave Gloves
-							i(30761),	-- Infernoweave Leggings
-							i(30762),	-- Infernoweave Robe
-							i(33279),	-- Iron-Tusk Girdle
-							i(29273),	-- Khadgar's Knapsack
-							i(33333),	-- Kharmaa's Shroud of Hope
-							i(29267),	-- Light-Bearer's Faith Shield
-							i(33587),	-- Light-Blessed Bonds
-							i(33386),	-- Man'kin'do's Belt
-							i(32089),	-- Mana-Binders Cowl
-							i(29368),	-- Manasurge Pendant
-							i(33972),	-- Mask of Primal Power
-							i(32087),	-- Mask of the Deceiver
-							i(33540),	-- Master Assassin Wristwraps
-							i(29268),	-- Mazthoril Honor Shield
-							i(33577),	-- Moon-Walkers
-							i(33530),	-- Natural Life Leggings
-							i(29374),	-- Necklace of Eternal Hope
-							i(29386),	-- Necklace of the Juggernaut
-							i(30183),	-- Nether Vortex
-							i(33222),	-- Nyn'jah's Tabi Boots
-							i(29272),	-- Orb of the Soul-Eater
-							i(33584),	-- Pantaloons of Arcane Annihilation
-							i(33552),	-- Pants of Splendid Recovery
-							i(33514),	-- Pauldrons of Gruesome Fate
-							i(33970),	-- Pauldrons of the Furious Elements
-							i(33973),	-- Pauldrons of Tribal Fury
-							i(33531),	-- Polished Waterscale Gloves
-							i(23572),	-- Primal Nether
-							i(29379),	-- Ring of Arathi Warlords
-							i(29367),	-- Ring of Cryptic Dreams
-							i(29384),	-- Ring of Unyielding Force
-							i(33588),	-- Runed Spell-Cuffs
-							i(33523),	-- Sabatons of the Righteous Defender
-							i(29269),	-- Sapphiron's Wing Bone
-							i(29275),	-- Searing Sunblade
-							i(33538),	-- Shallow-Grave Trousers
-							i(29369),	-- Shawl of Shifting Probabilities
-							i(33527),	-- Shifting Camouflage Pants
-							i(33593),	-- Slikk's Cloak of Placation
-							i(33559),	-- Starfire Waistband
-							i(33529),	-- Steadying Bracers
-							i(32086),	-- Storm Master's Helmet
-							i(33536),	-- Stormwrap
-							i(33586),	-- Studious Wraps
-							i(29271),	-- Talisman of Kalecgos
-							i(29274),	-- Tears of Heaven
-							i(33537),	-- Treads of Booming Thunder
-							i(33324),	-- Treads of the Life Path
-							i(33539),	-- Trickster's Stickyfingers
-							i(33515),	-- Unwavering Legguards
-							i(33520),	-- Vambraces of the Naaru
-							i(33579),	-- Vestments of Hibernation
-							i(33325),	-- Voodoo Shaker
-							i(33291),	-- Voodoo-Woven Belt
-							i(33583),	-- Waistguard of the Great Beast
-							i(33280),	-- War-Feathered Loop
-							i(32085),	-- Warpstalker Helm
-							i(33589),	-- Wristguards of Tranquil Thought
+							applyclassicphase(TBC_PHASE_FOUR, i(33585)), 	-- Achromic Trousers of the Naaru
+							applyclassicphase(TBC_PHASE_FOUR, i(33810)), 	-- Amani Mask of Death
+							applyclassicphase(TBC_PHASE_FOUR, i(33578)), 	-- Armwraps of the Kaldorei Protector
+							applyclassicphase(TBC_PHASE_ONE, i(29266)), 	-- Azure-Shield of Coldarra
+							applyclassicphase(TBC_PHASE_ONE, i(29373)), 	-- Band of Halos
+							applyclassicphase(TBC_PHASE_FOUR, i(33580)),	-- Band of the Swift Paw
+							applyclassicphase(TBC_PHASE_FOUR, i(35326)), 	-- Battlemaster's Alacrity
+							applyclassicphase(TBC_PHASE_FOUR, i(34049)), 	-- Battlemaster's Audacity
+							applyclassicphase(TBC_PHASE_FOUR, i(34163)), 	-- Battlemaster's Cruelty
+							applyclassicphase(TBC_PHASE_FOUR, i(34162)), 	-- Battlemaster's Depravity
+							applyclassicphase(TBC_PHASE_FOUR, i(33832)), 	-- Battlemaster's Determination
+							applyclassicphase(TBC_PHASE_FOUR, i(34050)), 	-- Battlemaster's Perseverance
+							applyclassicphase(TBC_PHASE_ONE, i(29375)), 	-- Bishop's Cloak
+							applyclassicphase(TBC_PHASE_FOUR, i(33566)), 	-- Blessed Elunite Coverings
+							applyclassicphase(TBC_PHASE_ONE, i(29382)), 	-- Blood Knight War Cloak
+							applyclassicphase(TBC_PHASE_ONE, i(29383)), 	-- Bloodlust Brooch
+							applyclassicphase(TBC_PHASE_FOUR, i(33501)), 	-- Bloodthirster's Wargreaves
+							applyclassicphase(TBC_PHASE_FOUR, i(33517)), 	-- Bonefist Gauntlets
+							applyclassicphase(TBC_PHASE_FOUR, i(33516)), 	-- Bracers of the Ancient Phalanx
+							applyclassicphase(TBC_PHASE_FOUR, i(33296)), 	-- Brooch of Deftness
+							applyclassicphase(TBC_PHASE_FOUR, i(33192)), 	-- Carved Witch Doctor's Stick
+							applyclassicphase(TBC_PHASE_FOUR, i(33331)), 	-- Chain of Unleashed Rage
+							applyclassicphase(TBC_PHASE_FOUR, i(33522)), 	-- Chestguard of the Stoic Guardian
+							applyclassicphase(TBC_PHASE_ONE, i(29381)),	-- Choker of Vile Intent
+							applyclassicphase(TBC_PHASE_FOUR, i(35321)),	-- Cloak of Arcane Alacrity
+							applyclassicphase(TBC_PHASE_FOUR, i(33304)), 	-- Cloak of Subjugated Power
+							applyclassicphase(TBC_PHASE_FOUR, i(35324)), 	-- Cloak of Swift Reprieve
+							applyclassicphase(TBC_PHASE_ONE, i(32088)), 	-- Cowl of Beastly Rage
+							applyclassicphase(TBC_PHASE_ONE, i(32090)), 	-- Cowl of Naaru Blessings
+							applyclassicphase(TBC_PHASE_FOUR, i(33484)), 	-- Dory's Embrace
+							applyclassicphase(TBC_PHASE_FOUR, i(33535)), 	-- Earthquake Bracers
+							applyclassicphase(TBC_PHASE_ONE, i(29376)), 	-- Essence of the Martyr
+							applyclassicphase(TBC_PHASE_FOUR, i(33513)), 	-- Eternium Rage-Shackles
+							applyclassicphase(TBC_PHASE_ONE, i(29390, {	-- Everbloom Idol
+								["timeline"] = { "removed 5.0.4" },
+							})),
+							applyclassicphase(TBC_PHASE_ONE, i(32083)), 	-- Faceguard of Domination
+							applyclassicphase(TBC_PHASE_ONE, i(29385)), 	-- Farstrider Defender's Cloak
+							applyclassicphase(TBC_PHASE_FOUR, i(33334)), 	-- Fetish of the Primal Gods
+							applyclassicphase(TBC_PHASE_ONE, i(29270)), 	-- Flametongue Seal
+							applyclassicphase(TBC_PHASE_FOUR, i(33582)), 	-- Footwraps of Wild Encroachment
+							applyclassicphase(TBC_PHASE_FOUR, i(33512)), 	-- Furious Deathgrips
+							applyclassicphase(TBC_PHASE_FOUR, i(33557)),	-- Gargon's Bracers of Peaceful Slumber
+							applyclassicphase(TBC_PHASE_FOUR, i(33528)),	-- Gauntlets of Sniping
+							applyclassicphase(TBC_PHASE_FOUR, i(33524)), 	-- Girdle of the Protector
+							applyclassicphase(TBC_PHASE_FOUR, i(33532)), 	-- Gleaming Earthen Bracers
+							applyclassicphase(TBC_PHASE_FOUR, i(33287)), 	-- Gnarled Ironwood Pauldrons
+							applyclassicphase(TBC_PHASE_ONE, i(29387)), 	-- Gnomeregan Auto-Dodger 600
+							applyclassicphase(TBC_PHASE_FOUR, i(33974)), 	-- Grasp of the Moonkin
+							applyclassicphase(TBC_PHASE_FOUR, i(33534)), 	-- Grips of Nature's Wrath
+							applyclassicphase(TBC_PHASE_FOUR, i(33519)), 	-- Handguards of the Templar
+							applyclassicphase(TBC_PHASE_FOUR, i(33965)), 	-- Hauberk of the Furious Elements
+							applyclassicphase(TBC_PHASE_ONE, i(32084)), 	-- Helmet of the Steadfast Champion
+							applyclassicphase(TBC_PHASE_FOUR, i(33518)), 	-- High Justicar's Legplates
+							applyclassicphase(TBC_PHASE_ONE, i(29370)), 	-- Icon of the Silver Crescent
+							applyclassicphase(TBC_PHASE_FOUR, i(33508, {	-- Idol of Budding Life
+								["timeline"] = { "removed 5.0.4" },
+							})),
+							applyclassicphase(TBC_PHASE_FOUR, i(33509, {	-- Idol of Terror
+								["timeline"] = { "removed 5.0.4" },
+							})),
+							applyclassicphase(TBC_PHASE_FOUR, i(33510, {	-- Idol of the Unseen Moon
+								["timeline"] = { "removed 5.0.4" },
+							})),
+							applyclassicphase(TBC_PHASE_FOUR, i(33207)), 	-- Implacable Guardian Sabatons
+							applyclassicphase(TBC_PHASE_ONE, i(30770)), 	-- Inferno Forged Boots
+							applyclassicphase(TBC_PHASE_ONE, i(30774)), 	-- Inferno Forged Gloves
+							applyclassicphase(TBC_PHASE_ONE, i(30773)), 	-- Inferno Forged Hauberk
+							applyclassicphase(TBC_PHASE_ONE, i(30772)), 	-- Inferno Forged Leggings
+							applyclassicphase(TBC_PHASE_ONE, i(30779)), 	-- Inferno Hardened Boots
+							applyclassicphase(TBC_PHASE_ONE, i(30776)), 	-- Inferno Hardened Chestguard
+							applyclassicphase(TBC_PHASE_ONE, i(30780)), 	-- Inferno Hardened Gloves
+							applyclassicphase(TBC_PHASE_ONE, i(30778)), 	-- Inferno Hardened Leggings
+							applyclassicphase(TBC_PHASE_ONE, i(30768)), 	-- Inferno Tempered Boots
+							applyclassicphase(TBC_PHASE_ONE, i(30769)), 	-- Inferno Tempered Chestguard
+							applyclassicphase(TBC_PHASE_ONE, i(30767)), 	-- Inferno Tempered Gauntlets
+							applyclassicphase(TBC_PHASE_ONE, i(30766)), 	-- Inferno Tempered Leggings
+							applyclassicphase(TBC_PHASE_ONE, i(30763)), 	-- Infernoweave Boots
+							applyclassicphase(TBC_PHASE_ONE, i(30764)), 	-- Infernoweave Gloves
+							applyclassicphase(TBC_PHASE_ONE, i(30761)), 	-- Infernoweave Leggings
+							applyclassicphase(TBC_PHASE_ONE, i(30762)), 	-- Infernoweave Robe
+							applyclassicphase(TBC_PHASE_FOUR, i(33279)), 	-- Iron-Tusk Girdle
+							applyclassicphase(TBC_PHASE_ONE, i(29273)), 	-- Khadgar's Knapsack
+							applyclassicphase(TBC_PHASE_FOUR, i(33333)), 	-- Kharmaa's Shroud of Hope
+							applyclassicphase(TBC_PHASE_FOUR, i(33503, {	-- Libram of Divine Judgement
+								["timeline"] = { "removed 5.0.4" },
+							})),
+							applyclassicphase(TBC_PHASE_FOUR, i(33504, {	-- Libram of Divine Purpose
+								["timeline"] = { "removed 5.0.4" },
+							})),
+							applyclassicphase(TBC_PHASE_FOUR, i(33502, {	-- Libram of Mending
+								["timeline"] = { "removed 5.0.4" },
+							})),
+							applyclassicphase(TBC_PHASE_ONE, i(29388, {	-- Libram of Repentance
+								["timeline"] = { "removed 5.0.4" },
+							})),
+							applyclassicphase(TBC_PHASE_ONE, i(29267)), 	-- Light-Bearer's Faith Shield
+							applyclassicphase(TBC_PHASE_FOUR, i(33587)), 	-- Light-Blessed Bonds
+							applyclassicphase(TBC_PHASE_FOUR, i(33386)), 	-- Man'kin'do's Belt
+							applyclassicphase(TBC_PHASE_ONE, i(32089)), 	-- Mana-Binders Cowl
+							applyclassicphase(TBC_PHASE_ONE, i(29368)), 	-- Manasurge Pendant
+							applyclassicphase(TBC_PHASE_FOUR, i(33972)), 	-- Mask of Primal Power
+							applyclassicphase(TBC_PHASE_ONE, i(32087)), 	-- Mask of the Deceiver
+							applyclassicphase(TBC_PHASE_FOUR, i(33540)), 	-- Master Assassin Wristwraps
+							applyclassicphase(TBC_PHASE_ONE, i(29268)), 	-- Mazthoril Honor Shield
+							applyclassicphase(TBC_PHASE_FOUR, i(33577)), 	-- Moon-Walkers
+							applyclassicphase(TBC_PHASE_FOUR, i(33530)), 	-- Natural Life Leggings
+							applyclassicphase(TBC_PHASE_ONE, i(29374)), 	-- Necklace of Eternal Hope
+							applyclassicphase(TBC_PHASE_ONE, i(29386)), 	-- Necklace of the Juggernaut
+							applyclassicphase(TBC_PHASE_FOUR, i(30183)),	-- Nether Vortex
+							applyclassicphase(TBC_PHASE_FOUR, i(33222)), 	-- Nyn'jah's Tabi Boots
+							applyclassicphase(TBC_PHASE_ONE, i(29272)), 	-- Orb of the Soul-Eater
+							applyclassicphase(TBC_PHASE_FOUR, i(33584)), 	-- Pantaloons of Arcane Annihilation
+							applyclassicphase(TBC_PHASE_FOUR, i(33552)), 	-- Pants of Splendid Recovery
+							applyclassicphase(TBC_PHASE_FOUR, i(33514)), 	-- Pauldrons of Gruesome Fate
+							applyclassicphase(TBC_PHASE_FOUR, i(33970)), 	-- Pauldrons of the Furious Elements
+							applyclassicphase(TBC_PHASE_FOUR, i(33973)), 	-- Pauldrons of Tribal Fury
+							applyclassicphase(TBC_PHASE_FOUR, i(33531)), 	-- Polished Waterscale Gloves
+							applyclassicphase(TBC_PHASE_FOUR, i(23572)),	-- Primal Nether
+							applyclassicphase(TBC_PHASE_ONE, i(29379)), 	-- Ring of Arathi Warlords
+							applyclassicphase(TBC_PHASE_ONE, i(29367)),	-- Ring of Cryptic Dreams
+							applyclassicphase(TBC_PHASE_ONE, i(29384)),	-- Ring of Unyielding Force
+							applyclassicphase(TBC_PHASE_FOUR, i(33588)), 	-- Runed Spell-Cuffs
+							applyclassicphase(TBC_PHASE_FOUR, i(33523)), 	-- Sabatons of the Righteous Defender
+							applyclassicphase(TBC_PHASE_ONE, i(29269)), 	-- Sapphiron's Wing Bone
+							applyclassicphase(TBC_PHASE_ONE, i(29275)), 	-- Searing Sunblade
+							applyclassicphase(TBC_PHASE_FOUR, i(33538)), 	-- Shallow-Grave Trousers
+							applyclassicphase(TBC_PHASE_ONE, i(29369)),	-- Shawl of Shifting Probabilities
+							applyclassicphase(TBC_PHASE_FOUR, i(33527)), 	-- Shifting Camouflage Pants
+							applyclassicphase(TBC_PHASE_FOUR, i(33506, {	-- Skycall Totem
+								["timeline"] = { "removed 5.0.4" },
+							})),
+							applyclassicphase(TBC_PHASE_FOUR, i(33593)), 	-- Slikk's Cloak of Placation
+							applyclassicphase(TBC_PHASE_FOUR, i(33559)), 	-- Starfire Waistband
+							applyclassicphase(TBC_PHASE_FOUR, i(33529)), 	-- Steadying Bracers
+							applyclassicphase(TBC_PHASE_FOUR, i(33507, {	-- Stonebreaker's Totem
+								["timeline"] = { "removed 5.0.4" },
+							})),
+							applyclassicphase(TBC_PHASE_ONE, i(32086)), 	-- Storm Master's Helmet
+							applyclassicphase(TBC_PHASE_FOUR, i(33536)), 	-- Stormwrap
+							applyclassicphase(TBC_PHASE_FOUR, i(33586)), 	-- Studious Wraps
+							applyclassicphase(TBC_PHASE_ONE, i(29271)), 	-- Talisman of Kalecgos
+							applyclassicphase(TBC_PHASE_ONE, i(29274)), 	-- Tears of Heaven
+							applyclassicphase(TBC_PHASE_FOUR, i(33505, {	-- Totem of Living Water
+								["timeline"] = { "removed 5.0.4" },
+							})),
+							applyclassicphase(TBC_PHASE_ONE, i(29389, {	-- Totem of the Pulsing Earth
+								["timeline"] = { "removed 5.0.4" },
+							})),
+							applyclassicphase(TBC_PHASE_FOUR, i(33537)), 	-- Treads of Booming Thunder
+							applyclassicphase(TBC_PHASE_FOUR, i(33324)), 	-- Treads of the Life Path
+							applyclassicphase(TBC_PHASE_FOUR, i(33539)), 	-- Trickster's Stickyfingers
+							applyclassicphase(TBC_PHASE_FOUR, i(33515)), 	-- Unwavering Legguards
+							applyclassicphase(TBC_PHASE_FOUR, i(33520)), 	-- Vambraces of the Naaru
+							applyclassicphase(TBC_PHASE_FOUR, i(33579)), 	-- Vestments of Hibernation
+							applyclassicphase(TBC_PHASE_FOUR, i(33325)), 	-- Voodoo Shaker
+							applyclassicphase(TBC_PHASE_FOUR, i(33291)), 	-- Voodoo-Woven Belt
+							applyclassicphase(TBC_PHASE_FOUR, i(33583)), 	-- Waistguard of the Great Beast
+							applyclassicphase(TBC_PHASE_FOUR, i(33280)), 	-- War-Feathered Loop
+							applyclassicphase(TBC_PHASE_ONE, i(32085)), 	-- Warpstalker Helm
+							applyclassicphase(TBC_PHASE_FOUR, i(33589)), 	-- Wristguards of Tranquil Thought
 						},
 					}),
 					n(22213, {	-- Gidge Spellweaver <Spellfire Tailoring Specialist>
@@ -1684,6 +1885,13 @@ root("Zones", {
 					n(18756, {	-- Haris Pilton <Socialite>
 						["coord"] = { 75.6, 30.6, SHATTRATH_CITY },
 						["groups"] = {
+							removeclassicphase(ach(1165, {	-- My Sack is "Gigantique"
+								["provider"] = { "i", 38082 },	-- "Gigantique" Bag
+								-- #if BEFORE WRATH
+								["description"] = "Equip Haris Pilton's \"Gigantique\" Bag.",
+								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
+								-- #endif
+							})),
 							i(38082, {	-- "Gigantique" Bag
 								["cost"] = 12000000,	-- 1,200g
 							}),
@@ -1732,6 +1940,17 @@ root("Zones", {
 						},
 					}),
 					-- #endif
+					-- #if BEFORE 4.0.1
+					n(19186, {	-- Kylene <Barmaid>
+						["description"] = "Speak to her and tell her she's quite the cook to learn these recipes.",
+						["coord"] = { 75.6, 32.6, SHATTRATH_CITY },
+						["groups"] = applyclassicphase(TBC_PHASE_TWO, bubbleDown({ ["requireSkill"] = COOKING }, {
+							recipe(42302),	-- Fisherman's Feast
+							recipe(42305),	-- Hot Buttered Trout
+							recipe(42296),	-- Stewed Trout
+						})),
+					}),
+					-- #endif
 					-- #if AFTER CATA
 					n(52278, {	-- Linsa <Tabard Vendor>
 						["coord"] = { 58.8, 46.4, SHATTRATH_CITY },
@@ -1758,42 +1977,86 @@ root("Zones", {
 						["minReputation"] = { 1011, NEUTRAL },	-- Lower City, Neutral.
 						["groups"] = MADAME_RUBY_GROUPS,
 					}),
+					-- #if BEFORE CATA
+					n(25195, {	-- Marksman Bova <Specialty Ammunition Vendor>
+						["coord"] = { 37.6, 27.8, SHATTRATH_CITY },
+						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["groups"] = {
+							i(32883, {	-- Felbane Slugs
+								["timeline"] = { "removed 4.0.1.10000" },
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(32882, {	-- Hellfire Shot
+								["timeline"] = { "removed 4.0.1.10000" },
+								["races"] = HORDE_ONLY,
+							}),
+							applyclassicphase(TBC_PHASE_THREE, i(34581, {	-- Mysterious Arrow
+								["timeline"] = { "removed 4.0.1.20000" },
+							})),
+							applyclassicphase(TBC_PHASE_THREE, i(34582, {	-- Mysterious Shell
+								["timeline"] = { "removed 4.0.1.20000" },
+							})),
+							applyclassicphase(TBC_PHASE_THREE, i(31737, {	-- Timeless Arrow
+								["timeline"] = { "removed 4.0.1.20000" },
+							})),
+							applyclassicphase(TBC_PHASE_THREE, i(31735, {	-- Timeless Shell
+								["timeline"] = { "removed 4.0.1.20000" },
+							})),
+							i(31949, {	-- Warden's Arrow
+								["timeline"] = { "removed 4.0.1" },
+							}),
+						},
+					}),
+					-- #endif
 					n(21655, {	-- Nakodu <Lower City Quartermaster>
 						["coord"] = { 62.6, 69.0, SHATTRATH_CITY },
 						["minReputation"] = { 1011, NEUTRAL },	-- Lower City, Neutral.
 						["groups"] = {
-							i(30633),	-- Auchenai Key
-							i(35405),	-- Crusader's Ornamented Leggings
-							i(35412),	-- Crusader's Scaled Chestpiece
+							i(30633, {	-- Auchenai Key
+								["timeline"] = { "removed 4.2.0" },
+							}),
+							applyclassicphase(TBC_PHASE_TWO, i(35405)),	-- Crusader's Ornamented Leggings
+							applyclassicphase(TBC_PHASE_TWO, i(35412)),	-- Crusader's Scaled Chestpiece
 							i(33157),	-- Design: Falling Star
 							i(24179),	-- Design: Felsteel Boar
 							i(24175),	-- Design: Pendant of Thawing
 							i(23138),	-- Design: Potent Flame Spessarite
-							i(35357),	-- Dragonhide Helm
-							i(35331),	-- Dreadweave Mantle
-							i(35344),	-- Evoker's Silk Cowl
+							applyclassicphase(TBC_PHASE_TWO, i(35357)),	-- Dragonhide Helm
+							applyclassicphase(TBC_PHASE_TWO, i(35331)),	-- Dreadweave Mantle
+							applyclassicphase(TBC_PHASE_TWO, i(35344)),	-- Evoker's Silk Cowl
 							i(33148),	-- Formula: Enchant Cloak - Dodge
-							i(22538),	-- Formula: Enchant Ring - Stats
+							applyclassicphase(TBC_PHASE_THREE, i(22538)),	-- Formula: Enchant Ring - Stats
 							i(30832),	-- Gavel of Unearthed Secrets
-							i(35361),	-- Kodohide Gloves
+							i(29199, {	-- Glyph of Shadow Warding
+								["timeline"] = { "removed 5.0.4" },
+							}),
+							i(30846, {	-- Glyph of the Outcast
+								["timeline"] = { "removed 5.0.4" },
+							}),
+							applyclassicphase(TBC_PHASE_TWO, i(35361)),	-- Kodohide Gloves
 							i(30836),	-- Leggings of the Skettis Exile
 							i(30841),	-- Lower City Prayerbook
 							i(31778),	-- Lower City Tabard
-							i(35335),	-- Mooncloth Mitts
-							i(35370),	-- Opportunist's Leather Tunic
+							applyclassicphase(TBC_PHASE_TWO, i(35335)),	-- Mooncloth Mitts
+							applyclassicphase(TBC_PHASE_TWO, i(35370)),	-- Opportunist's Leather Tunic
 							i(30833),	-- Pattern: Cloak of Arcane Evasion
-							i(34200),	-- Pattern: Quiver of a Thousand Feathers
+							applyclassicphase(TBC_PHASE_THREE, i(34200, {	-- Pattern: Quiver of a Thousand Feathers
+								["timeline"] = { "removed 4.0.1" },
+							})),
 							i(22910),	-- Recipe: Elixir of Major Shadow Power
+							i(31357, {	-- Recipe: Flask of Chromatic Resistance
+								["timeline"] = { "removed 5.0.4" },
+							}),
 							i(30835),	-- Salvager's Hauberk
-							i(35340),	-- Satin Leggings
-							i(35411),	-- Savage Plate Shoulders
-							i(35382),	-- Seer's Linked Gauntlets
-							i(35389),	-- Seer's Mail Leggings
-							i(35391),	-- Seer's Ringmail Chestguard
+							applyclassicphase(TBC_PHASE_TWO, i(35340)),	-- Satin Leggings
+							applyclassicphase(TBC_PHASE_TWO, i(35411)),	-- Savage Plate Shoulders
+							applyclassicphase(TBC_PHASE_TWO, i(35382)),	-- Seer's Linked Gauntlets
+							applyclassicphase(TBC_PHASE_TWO, i(35389)),	-- Seer's Mail Leggings
+							applyclassicphase(TBC_PHASE_TWO, i(35391)),	-- Seer's Ringmail Chestguard
 							i(30834),	-- Shapeshifter's Signet
-							i(35378),	-- Stalker's Chain Helm
+							applyclassicphase(TBC_PHASE_TWO, i(35378)),	-- Stalker's Chain Helm
 							i(30830),	-- Trident of the Outcast Tribe
-							i(35373),	-- Wyrmhide Legguards
+							applyclassicphase(TBC_PHASE_TWO, i(35373)),	-- Wyrmhide Legguards
 						},
 					}),
 					n(22208, {	-- Nasmara Moonsong <Mooncloth Tailoring Specialist>
@@ -1820,84 +2083,101 @@ root("Zones", {
 						["coord"] = { 48.8, 41.8, SHATTRATH_CITY },
 						["minReputation"] = { 1077, NEUTRAL },	-- Shattered Sun Offensive, Neutral.
 						["groups"] = {
+							-- #if BEFORE CATA
+							i(35238),	-- Design: Balanced Shadowsong Amethyst [TBC] / Design: Shifting Shadowsong Amethyst [CATA+]
+							-- #endif
 							i(35244),	-- Design: Bold Crimson Spinel
-							i(35248),	-- Design: Brilliant Crimson Spinel
-							i(35250, {	-- Design: Brilliant Crimson Spinel
-								["spellID"] = 0,	-- This is now available via 35248, need to delink the old plans from the recipe
-									["u"] = REMOVED_FROM_GAME,
-							}),
-							i(35255, {	-- Design: Brilliant Crimson Spinel
-								["spellID"] = 0,	-- This is now available via 35248, need to delink the old plans from the recipe
-									["u"] = REMOVED_FROM_GAME,
-							}),
-							i(35271),	-- Design: Deadly Pyrestone
+							-- #if BEFORE CATA
+							i(35245),	-- Design: Bright Crimson Spinel [TBC] / Design: Delicate Crimson Spinel [CATA+]
+							-- #endif
+							i(35255),	-- Design: Brilliant Lionseye [TBC] / Design: Brilliant Crimson Spinel [CATA+]
+							-- #if AFTER CATA
+							i(35248),	-- Design: Brilliant Crimson Spinel [CATA+] / Design: Runed Crimson Spinel [TBC]
+							-- #endif
+							-- #if BEFORE CATA
+							i(35251),	-- Design: Dazzling Seaspray Emerald [TBC] / Design: Purified Shadowsong Amethyst [CATA+]
+							-- #endif
+							-- #if AFTER CATA
+							i(35271),	-- Design: Deadly Pyrestone [CATA+] / Design: Wicked Pyrestone [TBC]
+							-- #endif
 							i(35246),	-- Design: Delicate Crimson Spinel
-							i(35245, {	-- Design: Delicate Crimson Spinel
-								["spellID"] = 0,	-- This is now available via 35246, need to delink the old plans from the recipe
-									["u"] = REMOVED_FROM_GAME,
-							}),
+							-- #if AFTER CATA
+							i(35245),	-- Design: Delicate Crimson Spinel [CATA+] / Design: Bright Crimson Spinel [TBC]
+							-- #endif
+							-- #if BEFORE CATA
+							i(35252),	-- Design: Enduring Seaspray Emerald [TBC] / Design: Regal Seaspray Emerald [CATA+]
+							-- #endif
 							i(35247),	-- Design: Flashing Crimson Spinel
 							i(35769),	-- Design: Forceful Seaspray Emerald
 							i(35325),	-- Design: Forceful Talasite
-							i(35266),	-- Design: Glinting Shadowsong Amethyst
-							i(35240, {	-- Design: Glinting Shadowsong Amethyst
-								["spellID"] = 0,	-- This is now available via 35266, need to delink the old plans from the recipe
-									["u"] = REMOVED_FROM_GAME,
-							}),
+							-- #if BEFORE CATA
+							i(35256),	-- Design: Gleaming Lionseye [TBC] / Design: Smooth Lionseye [CATA+]
+							i(35266),	-- Design: Glinting Pyrestone [TBC] / Design: Glinting Shadowsong Amethyst [CATA+]
+							-- #endif
+							-- #if AFTER CATA
+							i(35266),	-- Design: Glinting Shadowsong Amethyst [CATA+] / Design: Glinting Pyrestone [TBC]
+							i(35240),	-- Design: Glinting Shadowsong Amethyst [CATA+] / Design: Infused Shadowsong Amethyst [TBC]
+							-- #endif
+							-- #if BEFORE CATA
+							i(35239),	-- Design: Glowing Shadowsong Amethyst [TBC] / Design: Timeless Shadowsong Amethyst [CATA+]
+							i(35257),	-- Design: Great Lionseye [TBC] / Design: Rigid Empyrean Sapphire [CATA+]
+							i(35240),	-- Design: Infused Shadowsong Amethyst [TBC] / Design: Glinting Shadowsong Amethyst [CATA+]
+							-- #endif
 							i(35267),	-- Design: Inscribed Pyrestone
 							i(35253),	-- Design: Jagged Seaspray Emerald
+							-- #if BEFORE CATA
+							i(35262),	-- Design: Lustrous Empyrean Sapphire [TBC] / Design: Sparkling Empyrean Sapphire [CATA+]
+							i(35268),	-- Design: Luminous Pyrestone [TBC] / Design: Reckless Pyrestone [CATA+]
+							-- #endif
 							i(35258),	-- Design: Mystic Lionseye
 							i(35269),	-- Design: Potent Pyrestone
-							i(35251),	-- Design: Purified Shadowsong Amethyst
-							i(35241, {	-- Design: Purified Shadowsong Amethyst
-								["spellID"] = 0,	-- This is now available via 35251, need to delink the old plans from the recipe
-									["u"] = REMOVED_FROM_GAME,
-							}),
-							i(37504, {	-- Design: Purified Shadowsong Amethyst
-								["spellID"] = 0,	-- This is now available via 35251, need to delink the old plans from the recipe
-									["u"] = REMOVED_FROM_GAME,
-							}),
+							-- #if AFTER CATA
+							i(35251),	-- Design: Purified Shadowsong Amethyst [CATA+] / Design: Dazzling Seaspray Emerald [TBC]
+							i(35241),	-- Design: Purified Shadowsong Amethyst [CATA+] / Design: Royal Shadowsong Amethyst [TBC]
+							-- #endif
+							i(37504),	-- Design: Purified Shadowsong Amethyst
 							i(35322),	-- Design: Quick Dawnstone
 							i(35768),	-- Design: Quick Lionseye
 							i(35254),	-- Design: Radiant Seaspray Emerald
 							i(35323),	-- Design: Reckless Noble Topaz
 							i(35767),	-- Design: Reckless Pyrestone
-							i(35268, {	-- Design: Reckless Pyrestone
-								["spellID"] = 0,	-- This is now available via 35767, need to delink the old plans from the recipe
-									["u"] = REMOVED_FROM_GAME,
-							}),
-							i(35252),	-- Design: Regal Seaspray Emerald
-							i(35259),	-- Design: Rigid Empyrean Sapphire
-							i(35257, {	-- Design: Rigid Empyrean Sapphire
-								["spellID"] = 0,	-- This is now available via 35259, need to delink the old plans from the recipe
-									["u"] = REMOVED_FROM_GAME,
-							}),
+							-- #if AFTER CATA
+							i(35268),	-- Design: Reckless Pyrestone [CATA+] / Design: Luminous Pyrestone [TBC]
+							i(35252),	-- Design: Regal Seaspray Emerald [CATA+] / Design: Enduring Seaspray Emerald [TBC]
+							-- #endif
+							i(35259),	-- Design: Rigid Lionseye [TBC] / Design: Rigid Empyrean Sapphire [CATA+]
+							-- #if AFTER CATA
+							i(35257),	-- Design: Rigid Empyrean Sapphire [CATA+] / Design: Great Lionseye [TBC]
+							-- #endif
+							-- #if BEFORE CATA
+							i(35241),	-- Design: Royal Shadowsong Amethyst [TBC] / Design: Purified Shadowsong Amethyst [CATA+]
+							i(35248),	-- Design: Runed Crimson Spinel [TBC] / Design: Brilliant Crimson Spinel [CATA+]
+							-- #endif
 							i(35242),	-- Design: Shifting Shadowsong Amethyst
-							i(35238, {	-- Design: Shifting Shadowsong Amethyst
-								["spellID"] = 0,	-- This is now available via 35242, need to delink the old plans from the recipe
-									["u"] = REMOVED_FROM_GAME,
-							}),
+							-- #if AFTER CATA
+							i(35238),	-- Design: Shifting Shadowsong Amethyst [CATA+] / Design: Balanced Shadowsong Amethyst [TBC]
+							-- #endif
 							i(35260),	-- Design: Smooth Lionseye
-							i(35256, {	-- Design: Smooth Lionseye
-								["spellID"] = 0,	-- This is now available via 35260, need to delink the old plans from the recipe
-									["u"] = REMOVED_FROM_GAME,
-							}),
+							-- #if AFTER CATA
+							i(35256),	-- Design: Smooth Lionseye [CATA+] / Design: Gleaming Lionseye [TBC]
+							-- #endif
 							i(35263),	-- Design: Solid Empyrean Sapphire
 							i(35243),	-- Design: Sovereign Shadowsong Amethyst
 							i(35264),	-- Design: Sparkling Empyrean Sapphire
-							i(35262, {	-- Design: Sparkling Empyrean Sapphire
-								["spellID"] = 0,	-- This is now available via 35264, need to delink the old plans from the recipe
-									["u"] = REMOVED_FROM_GAME,
-							}),
+							-- #if AFTER CATA
+							i(35262),	-- Design: Sparkling Empyrean Sapphire [CATA+] / Design: Lustrous Empyrean Sapphire [TBC]
+							-- #endif
 							i(35766),	-- Design: Steady Seaspray Emerald
 							i(35265),	-- Design: Stormy Empyrean Sapphire
-							i(35249),	-- Design: Subtle Lionseye
-							i(35261, {	-- Design: Subtle Lionseye
-								["spellID"] = 0,	-- This is now available via 35249, need to delink the old plans from the recipe
-									["u"] = REMOVED_FROM_GAME,
-							}),
-							i(35239),	-- Design: Timeless Shadowsong Amethyst
-							i(35270),	-- Design: Veiled Shadowsong Amethyst
+							i(35249),	-- Design: Subtle Crimson Spinel [TBC] / Design: Subtle Lionseye [CATA+]
+							i(35261),	-- Design: Thick Lionseye [TBC] / Design: Subtle Lionseye [CATA+] (both)
+							-- #if AFTER CATA
+							i(35239),	-- Design: Timeless Shadowsong Amethyst [CATA+] / Design: Glowing Shadowsong Amethyst [TBC]
+							-- #endif
+							i(35270),	-- Design: Veiled Pyrestone [TBC] / Design: Veiled Shadowsong Amethyst [CATA+]
+							-- #if BEFORE CATA
+							i(35271),	-- Design: Wicked Pyrestone [TBC] / Design: Deadly Pyrestone [CATA+]
+							-- #endif
 						},
 					})),
 					n(19321, {	-- Quartermaster Endarin <Aldor Quartermaster>
@@ -1907,13 +2187,18 @@ root("Zones", {
 							i(31779),	-- Aldor Tabard
 							i(29129),	-- Anchorite's Robes
 							i(29130),	-- Auchenai Staff
+							-- #if BEFORE CATA
+							i(23149),	-- Design: Gleaming Golden Draenite [TBC] / Design: Smooth Golden Draenite [CATA+]
+							-- #endif
 							i(24177),	-- Design: Pendant of Shadow's End
-							i(23145),	-- Design: Purified Shadow Draenite
-							i(23143, {	-- Design: Purified Shadow Draenite
-								["spellID"] = 0,	-- This is now available via 23145, need to delink the old plans from the recipe
-									["u"] = REMOVED_FROM_GAME,
-							}),
-							i(23149),	-- Design: Smooth Golden Draenite
+							-- #if AFTER CATA
+							i(23145),	-- Design: Purified Shadow Draenite [CATA+] / Design: Royal Shadow Draenite [TBC]
+							-- #else
+							i(23145),	-- Design: Royal Shadow Draenite [TBC] / Design: Purified Shadow Draenite [CATA+]
+							-- #endif
+							-- #if AFTER CATA
+							i(23149),	-- Design: Smooth Golden Draenite [CATA+] / Design: Gleaming Golden Draenite [TBC]
+							-- #endif
 							i(29128),	-- Lightwarden's Band
 							i(29123),	-- Medallion of the Lightbearer
 							i(29704),	-- Pattern: Blastguard Belt
@@ -1940,8 +2225,21 @@ root("Zones", {
 						["coord"] = { 60.6, 64.2, SHATTRATH_CITY },
 						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 						["groups"] = {
-							i(23133),	-- Design: Brilliant Blood Garnet
+							-- #if AFTER CATA
+							i(23133),	-- Design: Brilliant Blood Garnet [CATA+] / Design: Runed Blood Garnet [TBC]
+							-- #else
+							i(23143, {	-- Design: Dazzling Deep Peridot [TBC] / Design: Purified Shadow Draenite [CATA+]
+								["timeline"] = { "removed 4.0.1" },
+							}),
+							-- #endif
 							i(24176),	-- Design: Pendant of Withering
+							-- #if BEFORE CATA
+							i(23133),	-- Design: Runed Blood Garnet [TBC] / Design: Brilliant Blood Garnet [CATA+]
+							-- #else
+							i(23143, {	-- Design: Dazzling Deep Peridot [TBC] / Design: Purified Shadow Draenite [CATA+]
+								["timeline"] = { "removed 4.0.1" },
+							}),
+							-- #endif
 							i(29134),	-- Gauntlets of the Chosen
 							i(29701),	-- Pattern: Enchanted Clefthoof Boots
 							i(29700),	-- Pattern: Enchanted Clefthoof Gloves
@@ -2063,7 +2361,7 @@ root("Zones", {
 					n(18484, {	-- Wind Trader Lathrai
 						["coord"] = { 72.6, 31.6, SHATTRATH_CITY },
 						["groups"] = {
-							applyclassicphase(TBC_PHASE_THREE, i(23815, {	-- Schematic: Adamantite Shell Machine
+							applyclassicphase(TBC_PHASE_TWO, i(23815, {	-- Schematic: Adamantite Shell Machine
 								["isLimited"] = true,
 							})),
 							i(23816, {	-- Schematic: Fel Iron Toolbox
