@@ -863,8 +863,6 @@ root("HiddenQuestTriggers", {
 		q(10207),	-- Forward Base: Reaver's Fall REUSE - completed with quest 10124 & 10143
 		q(10214),	-- When This Mine's a-Rockin' - completed with quest 10079
 		q(10815),	-- The Journal of Val'zareq: Portends of War - completed with quest 10793
-		q(10925),	-- Evil Draws Near - completed with quest 10923
-		q(11072),	-- Adversarial Blood - completed with quest 11885
 		q(14411),	-- The Wilds of Feralas - completed with quest 14410 & 26589
 		q(14414),	-- The Wilds of Feralas - completed with quest 14410 & 26589
 		q(25198),	-- Winnoa Pineforest - completed with quest 24807

@@ -1,21 +1,113 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+local HUNGRY_NETHER_RAYS_GROUPS = {};
 local UNHOLY_ENCHANT = i(16248, {	-- Formula: Enchant Weapon - Unholy
 	["cr"] = 16810,	-- Bonechewer Backbreaker
 });
+local OnTooltipForSkyguard = [[function(t)
+	local reputation = t.reputation;
+	if reputation < 42000 then
+		GameTooltip:AddLine("Protip: Join a rep farming group.", 1, 0.5, 0.5);
+		
+		local isHuman = _.RaceIndex == 1;
+		local repPerKill = isHuman and 5.5 or 5;
+		local x, n = math.ceil((42000 - reputation) / repPerKill), math.ceil(42000 / repPerKill);
+		GameTooltip:AddDoubleLine("Kill Arokkoa.", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+		
+		local repPerKill = isHuman and 110 or 100;
+		local x, n = math.ceil((42000 - reputation) / repPerKill), math.ceil(42000 / repPerKill);
+		GameTooltip:AddDoubleLine("Summon Bosses.", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+		
+		local repPerTurnIn = isHuman and 165 or 150;
+		local x, n = math.ceil((42000 - reputation) / repPerTurnIn), math.ceil(42000 / repPerTurnIn);
+		GameTooltip:AddDoubleLine("Turn in Shadow Dust.", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+		GameTooltip:AddDoubleLine(" ", (x * 6) .. " Dust to go!", 1, 1, 1);
+	end
+end]];
 _.Zones =
 {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(TEROKKAR_FOREST, {
 			["lore"] = "Terokkar Forest is a zone in central Outland that is home to Shattrath City, as well as quest hubs for level 15-30 players. The northern half of Terokkar is lush and the quests cover the threat of the Arakoaa and magic-addicted elves. The souther half is a wasteland known as the Bone Wastes, created when the Shadow Council blew up Auchindoun. There is also a daily quest hub, Skettis, for players with flying mounts--rewards include vanity items.",
 			-- #if AFTER WRATH
-			["achievementID"] = 867,
+			["icon"] = "Interface\\Icons\\achievement_zone_terrokar",
 			-- #endif
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					ach(1191, {	-- Terror of Terokkar (A)
+					removeclassicphase(ach(867, {	-- Explore Terokkar Forest
+						-- #if BEFORE WRATH
+						["description"] = "Explore Terokkar Forest, revealing the covered areas of the world map.",
+						["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
+						-- #endif
+					})),
+					ach(894, applyclassicphase(TBC_PHASE_TWO_SKYGUARD, {	-- Flying High Over Skettis
+						-- #if BEFORE 3.0.1
+						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
+						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
+						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1031); end]],
+						["description"] = "Raise your reputation with the Sha'tari Skyguard to Exalted.",
+						-- #endif
+					})),
+					removeclassicphase(ach(726, {	-- Mr. Pinchy's Magical Crawdad Box
+						["provider"] = { "i", 27445 },	-- Magical Crawdad Box
+						["requireSkill"] = FISHING,
+						-- #if BEFORE WRATH
+						["description"] = "Fish your way to Mr. Pinchy's Magical Crawdad Box.",
+						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
+						-- #endif
+					})),
+					ach(905, {	-- Old Man Barlowned
+						["requireSkill"] = FISHING,
+					}),
+					removeclassicphase(ach(1191, {	-- Terror of Terokkar (A)
 						["races"] = ALLIANCE_ONLY,
+						-- #if ANYCLASSIC
+						-- #if AFTER CATA
+						["sourceQuests"] = {
+							-- The Skettis Offensive
+							10879,	-- The Skettis Offensive
+							
+							-- Refugee Caravan
+							10878,	-- Before Darkness Falls
+							10031,	-- Helping the Lost Find Their Way
+							10852,	-- Missing Friends
+							10896,	-- The Infested Protectors
+							10881,	-- The Shadow Tomb
+							10842,	-- Vengeful Souls
+							
+							-- Sha'tari Base Camp
+							10915,	-- The Fallen Exarch
+							10926,	-- Return to Sha'tari Base Camp
+							10930,	-- The Big Bone Worm
+							-- TODO: verify below:
+							10923,	-- Evil Draws Near
+							10873,	-- Taken in the Night
+							
+							-- The Warden's Secret
+							9951,	-- It's Watching You!
+							10005,	-- Letting Earthbinder Tavgren Know
+							
+							-- Allerian Stronghold
+							10042,	-- Kill the Shadow Council!
+							10035,	-- Torgos!
+							10022,	-- The Elusive Ironjaw
+							-- TODO: not 100% sure if every quest below is required
+							10012,	-- Fel Orc Plans
+							10007,	-- Thinning the Ranks
+							10869,	-- Thin the Flock
+							9986,	-- Stymying the Arakkoa
+							10028,	-- Vessels of Power
+						},
+						-- #elseif BEFORE WRATH
+						["description"] = "Complete 63 quests in Terokkar Forest.",
+						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
+						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
+						["rank"] = 63,
+						-- #endif
+						-- #else
 						["groups"] = {
 							crit(1, {	-- The Skettis Offensive
 								["sourceQuest"] = 10879,	-- The Skettis Offensive
@@ -60,9 +152,54 @@ _.Zones =
 								},
 							}),
 						},
-					}),
-					ach(1272, {	-- Terror of Terokkar (H)
+						-- #endif
+					})),
+					removeclassicphase(ach(1272, {	-- Terror of Terokkar (H)
 						["races"] = HORDE_ONLY,
+						-- #if ANYCLASSIC
+						-- #if AFTER CATA
+						["sourceQuests"] = {
+							-- The Skettis Offensive
+							10879,	-- The Skettis Offensive
+							
+							-- Refugee Caravan
+							10878,	-- Before Darkness Falls
+							10031,	-- Helping the Lost Find Their Way
+							10852,	-- Missing Friends
+							10896,	-- The Infested Protectors
+							10881,	-- The Shadow Tomb
+							10842,	-- Vengeful Souls
+							
+							-- Sha'tari Base Camp
+							10915,	-- The Fallen Exarch
+							10926,	-- Return to Sha'tari Base Camp
+							10930,	-- The Big Bone Worm
+							-- TODO: verify below:
+							10923,	-- Evil Draws Near
+							10873,	-- Taken in the Night
+							
+							-- The Warden's Secret
+							9951,	-- It's Watching You!
+							10005,	-- Letting Earthbinder Tavgren Know
+							
+							-- Stonebreaker Hold
+							10013,	-- An Unseen Hand
+							10043,	-- Kill the Shadow Council
+							10791,	-- Welcoming the Wolf Spirit
+							-- TODO: Verify below:
+							10201,	-- And Now, the Moment of Truth
+							10868,	-- Arakkoa War Path
+							9987,	-- Stymying the Arakkoa
+							10036,	-- Torgos!
+						},
+						-- #elseif BEFORE WRATH
+						["description"] = "Complete 68 quests in Terokkar Forest.",
+						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
+						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
+						["rank"] = 68,
+						-- #endif
+						-- #else
 						["groups"] = {
 							crit(1, {	-- The Skettis Offensive
 								["sourceQuest"] = 10879,	-- The Skettis Offensive
@@ -106,7 +243,8 @@ _.Zones =
 								},
 							}),
 						},
-					}),
+						-- #endif
+					})),
 				}),
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
@@ -162,7 +300,10 @@ _.Zones =
 				}),
 				-- #endif
 				n(FACTIONS, {
-					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, faction(1031)),	-- Sha'tari Skyguard
+					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, faction(1031, {	-- Sha'tari Skyguard
+						["icon"] = icon("ability_hunter_pet_netherray"),
+						["OnTooltip"] = OnTooltipForSkyguard,
+					})),
 				}),
 				n(FLIGHT_PATHS, {
 					fp(121, {	-- Allerian Stronghold, Terokkar Forest
@@ -177,6 +318,7 @@ _.Zones =
 					}),
 				}),
 				prof(FISHING, {
+					i(34865),	-- Blackfin Darter
 					i(27388, {	-- Mr. Pinchy
 						["description"] = "Fished up from Highland Mixed Schools. You have 3 wishes per Mr. Pinchy, each wish granting one of the following effects:\n\n1) Mr. Pinchy's Blessing (Flask)\n2) Summon Furious Mr. Pinchy (Enemy)\n3) Magical Crawdad Box (Rare Pet)\n4) Mr. Pinchy's Gift (Potions)\n5) Benevolent Mr. Pinchy (Guardian)",
 						["groups"] = {
@@ -191,88 +333,87 @@ _.Zones =
 					}),
 				}),
 				n(QUESTS, {
-					q(11665, {  -- Crocolisks in the City
-						["provider"] = { "n", 25580 },	-- Old Man Barlo
+					q(11666, {	-- Bait Bandits
+						["qg"] = 25580,	-- Old Man Barlo
 						["coord"] = { 38.6, 12.8, TEROKKAR_FOREST },
-						["description"] = "One of five random fishing daily quests. The other four do not drop minipets.",
-						["isDaily"] = true,
 						["requireSkill"] = FISHING,
-						["g"] = {
-							i(35348, { -- Bag of Fishing Treasures
-								i(35350),	-- Chuck's Bucket
-								i(33818),	-- Muckbreeeath's Bucket
-								i(34834),	-- Recipe: Captain Rumsey's Lager
-								i(35349),	-- Snarly's Bucket
-								i(33816),	-- Toothy's Bucket
-								i(33820, {	-- Weather-Beaten Fishing Hat
-									["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
-								}),
-								i(34109),	-- Weather-Beaten Journal
-								i(34837),	-- The 2 Ring
+						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/1 Blackfin Darter
+								["provider"] = { "i", 34865 },	-- Blackfin Darter
 							}),
+							i(34863),  -- Bag of Fishing Treasures
+							crit(2, {	-- Bait Bandits
+								["achievementID"] = 905,	-- Old Man Barlowned
+							}),
+						},
+					}),
+					q(11665, {  -- Crocolisks in the City
+						["qg"] = 25580,	-- Old Man Barlo
+						["coord"] = { 38.6, 12.8, TEROKKAR_FOREST },
+						["maps"] = { IRONFORGE, ORGRIMMAR, STORMWIND_CITY },
+						["requireSkill"] = FISHING,
+						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/1 Baby Crocolisk
+								["provider"] = { "i", 34864 },	-- Baby Crocolisk
+							}),
+							i(35348),	-- Bag of Fishing Treasures
 							crit(1, {	-- Crocolisks in the City
 								["achievementID"] = 905,	-- Old Man Barlowned
 							}),
 						},
 					}),
 					q(11669, {	-- Felblood Fillet
-						["provider"] = { "n", 25580 },	-- Old Man Barlo
+						["qg"] = 25580,	-- Old Man Barlo
 						["coord"] = { 38.6, 12.8, TEROKKAR_FOREST },
-						["isDaily"] = true,
+						["maps"] = { HELLFIRE_PENINSULA, SHADOWMOON_VALLEY },
 						["requireSkill"] = FISHING,
-						["g"] = {
-							i(34863, {  -- Bag of Fishing Treasures
-								["sym"] = { { "fill" } },	-- fill the content
+						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/1 Monstrous Felblood Snapper
+								["provider"] = { "i", 34867 },	-- Monstrous Felblood Snapper
 							}),
+							i(34863),  -- Bag of Fishing Treasures
 							crit(3, {	-- Felblood Fillet
 								["achievementID"] = 905,	-- Old Man Barlowned
 							}),
 						},
 					}),
 					q(11668, {	-- Shrimpin' Ain't Easy
-						["provider"] = { "n", 25580 },	-- Old Man Barlo
+						["qg"] = 25580,	-- Old Man Barlo
 						["coord"] = { 38.6, 12.8, TEROKKAR_FOREST },
-						["isDaily"] = true,
+						["maps"] = { ZANGARMARSH },
 						["requireSkill"] = FISHING,
-						["g"] = {
-							i(34863, {  -- Bag of Fishing Treasures
-								["sym"] = { { "fill" } },	-- fill the content
+						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/10 Giant Freshwater Shrimp
+								["provider"] = { "i", 34866 },	-- Giant Freshwater Shrimp
 							}),
+							i(34863),  -- Bag of Fishing Treasures
 							crit(5, {	-- Shrimpin' Ain't Easy
 								["achievementID"] = 905,	-- Old Man Barlowned
 							}),
 						},
 					}),
 					q(11667, {	-- The One That Got Away
-						["provider"] = { "n", 25580 },	-- Old Man Barlo
+						["qg"] = 25580,	-- Old Man Barlo
 						["coord"] = { 38.6, 12.8, TEROKKAR_FOREST },
-						["isDaily"] = true,
+						["maps"] = { NAGRAND },
 						["requireSkill"] = FISHING,
-						["g"] = {
-							i(34863, {  -- Bag of Fishing Treasures
-								["sym"] = { { "fill" } },	-- fill the content
+						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/1 World's Largest Mudfish
+								["provider"] = { "i", 34868 },	-- World's Largest Mudfish
 							}),
+							i(34863),  -- Bag of Fishing Treasures
 							crit(4, {	-- The One That Got Away
 								["achievementID"] = 905,	-- Old Man Barlowned
 							}),
 						},
 					}),
-					q(11666, {	-- Bait Bandits
-						["provider"] = { "n", 25580 },	-- Old Man Barlo
-						["coord"] = { 38.6, 12.8, TEROKKAR_FOREST },
-						["isDaily"] = true,
-						["requireSkill"] = FISHING,
-						["g"] = {
-							i(34863, {  -- Bag of Fishing Treasures
-								["sym"] = { { "fill" } },	-- fill the content
-							}),
-							crit(2, {	-- Bait Bandits
-								["achievementID"] = 905,	-- Old Man Barlowned
-							}),
-						},
-					}),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11885, {	-- Adversarial Blood
-						["provider"] = { "n", 23306 },	-- Hazzik
+						["qg"] = 23306,	-- Hazzik
 						["sourceQuest"] = 11029,	-- A Shabby Disguise
 						["coord"] = { 64.2, 66.9, TEROKKAR_FOREST },
 						["groups"] = {
@@ -280,36 +421,39 @@ _.Zones =
 						},
 					})),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11029, {	-- A Shabby Disguise
-						["provider"] = { "n", 23306 },	-- Hazzik
+						["qg"] = 23306,	-- Hazzik
 						["sourceQuest"] = 11056,	-- Hazzik's Bargain
 						["coord"] = { 64.2, 66.9, TEROKKAR_FOREST },
-						["cost"] = {
-							{ "i", 32741, 1 },	-- Shabby Arakkoa Disguise
-						},
 						["groups"] = {
-							objective(1, {
+							objective(1, {	-- 0/1 Adversarial Bloodlines
 								["provider"] = { "i", 32742 },	-- Adversarial Bloodlines
 								["coord"] = { 67.0, 79.6, TEROKKAR_FOREST },
+								["cr"] = 23363,	-- Sahaak <Keeper of Scrolls>
+								["cost"] = {
+									{ "i", 32741, 1 },	-- Shabby Arakkoa Disguise
+									{ "g", 30000 },	-- 3g
+								},
 							}),
 						},
 					})),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11024, {	-- An Ally in Lower City
-						["provider"] = { "n", 23038 },	-- Sky Commander Adaris
+						["qg"] = 23038,	-- Sky Commander Adaris
 						["sourceQuest"] = 11021,	-- Ishaal's Almanac
 						["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
+						["maps"] = { SHATTRATH_CITY },
 					})),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11028, {	-- Countdown to Doom
-						["provider"] = { "n", 22292 },	-- Rilak the Redeemed
+						["qg"] = 22292,	-- Rilak the Redeemed
 						["sourceQuest"] = 11024,	-- An Ally in Lower City
 						["coord"] = { 52.6, 21.0, SHATTRATH_CITY },
 					})),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11085, {	-- Escape from Skettis
-						["provider"] = { "n", 23383 },	-- Skyguard Prisoner
+						["qg"] = 23383,	-- Skyguard Prisoner
 						["coord"] = { 75, 86.2, TEROKKAR_FOREST },
 						["isDaily"] = true,
 					})),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11008, {	-- Fires Over Skettis
-						["provider"] = { "n", 23048 },	-- Sky Sergeant Doryn
+						["qg"] = 23048,	-- Sky Sergeant Doryn
 						["sourceQuest"] = 11098,	-- To Skettis!
 						["coord"] = { 64.5, 66.7, TEROKKAR_FOREST },
 						["cost"] = {
@@ -321,26 +465,23 @@ _.Zones =
 						},
 					})),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11056, {	-- Hazzik's Bargain
-						["provider"] = { "n", 23306 },	-- Hazzik
+						["qg"] = 23306,	-- Hazzik
 						["sourceQuest"] = 11028,	-- Countdown to Doom
 						["coord"] = { 64.2, 66.9, TEROKKAR_FOREST },
 						["groups"] = {
-							objective(1, {
+							objective(1, {	-- 0/1 Hazzik's Package
 								["provider"] = { "i", 32687 },	-- Hazzik's Package
 								["coord"] = { 74.8, 80.1, TEROKKAR_FOREST },
 							}),
 						},
 					})),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11093, {	-- Hungry Nether Rays
-						["provider"] = { "n", 23415 },	-- Skyguard Handler Deesak
+						["qg"] = 23415,	-- Skyguard Handler Deesak
 						["coord"] = { 63.6, 65.8, TEROKKAR_FOREST },
 						["cost"] = {
 							{ "i", 32834, 1 },	-- Nether Ray Cage (Provided)
 						},
-						["groups"] = {
-							i(28103),	-- Adept's Elixir
-							i(22831),	-- Elixir of Major Agility
-						},
+						["groups"] = HUNGRY_NETHER_RAYS_GROUPS,
 					})),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11021, {	-- Ishaal's Almanac
 						["provider"] = { "i", 32523 },	-- Ishaal's Almanac
@@ -348,7 +489,7 @@ _.Zones =
 						["cr"] = 23066,	-- Talonpriest Ishaal
 					})),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11006, {	-- More Shadow Dust
-						["provider"] = { "n", 23042 },	-- Severin <Skyguard Medic>
+						["qg"] = 23042,	-- Severin <Skyguard Medic>
 						["sourceQuest"] = 11004,	-- World of Shadows
 						["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
 						["repeatable"] = true,
@@ -360,12 +501,12 @@ _.Zones =
 						},
 					})),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11005, {	-- Secrets of the Talonpriests
-						["provider"] = { "n", 23038 },	-- Sky Commander Adaris
+						["qg"] = 23038,	-- Sky Commander Adaris
 						["sourceQuest"] = 11004,	-- World of Shadows
 						["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
 					})),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11074, {	-- Tokens of the Descendants
-						["provider"] = { "n", 23306 },	-- Hazzik
+						["qg"] = 23306,	-- Hazzik
 						["sourceQuest"] = 11885,	-- Adversarial Blood
 						["coord"] = { 64.2, 66.9, TEROKKAR_FOREST },
 						["cost"] = {
@@ -380,7 +521,7 @@ _.Zones =
 						},
 					})),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11073, {  -- Terokk's Downfall
-						["provider"] = { "n", 23038 },	-- Sky Commander Adaris
+						["qg"] = 23038,	-- Sky Commander Adaris
 						["sourceQuest"] = 11885,	-- Adversarial Blood
 						["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
 						["cr"] = 21838,	-- Terokk
@@ -396,7 +537,7 @@ _.Zones =
 						},
 					})),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11004, {	-- World of Shadows
-						["provider"] = { "n", 23042 },	-- Severin <Skyguard Medic>
+						["qg"] = 23042,	-- Severin <Skyguard Medic>
 						["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
 						["cost"] = {
 							{ "i", 32388, 6 },	-- Shadow Dust
@@ -406,7 +547,7 @@ _.Zones =
 						},
 					})),
 					q(10914, {	-- A Hero Is Needed
-						["provider"] = { "n", 22446 },	-- Commander Ra'vaj
+						["qg"] = 22446,	-- Commander Ra'vaj
 						["coord"] = { 31.0, 76.1, TEROKKAR_FOREST },
 						["sourceQuest"] = 10913,	-- An Improper Burial
 					}),
@@ -611,10 +752,10 @@ _.Zones =
 						},
 					}),
 					q(10005, {	-- Letting Earthbinder Tavgren Know (A)
-						["provider"] = { "n", 18459 },	-- Jenai Starwhisper
+						["qg"] = 18459,	-- Jenai Starwhisper
+						["sourceQuest"] = 10446,	-- The Final Code
 						["coord"] = { 57.0, 53.6, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 10446,	-- The Final Code
 						["groups"] = {
 							i(25931),	-- Cenarion Thicket Circlet
 							i(25930),	-- Cenarion Thicket Helm
@@ -649,9 +790,9 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 					}),
 					q(10852, {	-- Missing Friends
-						["provider"] = { "n", 22365 },	-- Ethan
+						["qg"] = 22365,	-- Ethan
+						["sourceQuest"] = 10849,	-- Seek Out Kirrik
 						["coord"] = { 37.7, 51.3, TEROKKAR_FOREST },
-						["sourceQuests"] = { 10849 },	-- Seek Out Kirrik
 					}),
 					q(9993, {	-- Olemba Seed Oil
 						["provider"] = { "n", 18385 },	-- Rakoria
@@ -707,7 +848,7 @@ _.Zones =
 						["isBreadcrumb"] = true,
 					}),
 					q(10849, {	-- Seek Out Kirrik
-						["provider"] = { "n", 22292 },	-- Rilak the Redeemed
+						["qg"] = 22292,	-- Rilak the Redeemed
 						["coord"] = { 52.5, 21.0, SHATTRATH_CITY },
 						["sourceQuest"] = 10847,	-- The Eyes of Skettis
 					}),
@@ -817,7 +958,7 @@ _.Zones =
 						},
 					}),
 					q(10847, {	-- The Eyes of Skettis -- aa
-						["provider"] = { "n", 22292 },	-- Rilak the Redeemed
+						["qg"] = 22292,	-- Rilak the Redeemed
 						["coord"] = { 52.6, 21.0, SHATTRATH_CITY },
 						["sourceQuests"] = {
 							10863,	-- Secrets of the Arakkoa
@@ -1320,16 +1461,33 @@ _.Zones =
 					}),
 				}),
 				n(REWARDS, {
-					i(34863, {  -- Bag of Fishing Treasures
-						i(33820, {	-- Weather-Beaten Fishing Hat
-							["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
-						}),
-						i(34109),	-- Weather-Beaten Journal
-						i(35350),	-- Chuck's Bucket
+					i(35348, {	-- Bag of Fishing Treasures
+						["description"] = "This bag is exclusive to the Crocolisk in the City Daily Quest.",
+						["groups"] = {
+							i(34834),	-- Recipe: Captain Rumsey's Lager
+							i(34837),	-- The 2 Ring
+							i(35350),	-- Chuck's Bucket
+							i(33818),	-- Muckbreath's Bucket
+							i(35349),	-- Snarly's Bucket
+							i(33816),	-- Toothy's Bucket
+							i(33820),	-- Weather-Beaten Fishing Hat
+							i(34109),	-- Weather-Beaten Journal
+						},
+					}),
+					i(34863, {	-- Bag of Fishing Treasures
+						["description"] = "Shared reward bag for all the non-Croc dailies.",
+						["groups"] = {
+							i(34834),	-- Recipe: Captain Rumsey's Lager
+							i(34831),	-- Eye of the Sea
+							i(34859),	-- Razor Sharp Fillet Knife
+							i(34836),	-- Spun Truesilver Fishing Line
+							i(33820),	-- Weather-Beaten Fishing Hat
+							i(34109),	-- Weather-Beaten Journal
+						},
 					}),
 				}),
 				n(VENDORS, {
-					n(23367, {	-- Grella <Skyguard Quartermaster>
+					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, n(23367, {	-- Grella <Skyguard Quartermaster>
 						["coord"] = { 64.3, 66.2, TEROKKAR_FOREST },
 						["groups"] = {
 							i(32771),	-- Airman's Ribbon Gallantry
@@ -1344,7 +1502,7 @@ _.Zones =
 							i(32539),	-- Skyguard's Drape
 							i(32538),	-- Skywitch's Drape
 						},
-					}),
+					})),
 					n(19296, {	-- Innkeeper Biribi <Innkeeper>
 						["coord"] = { 56.6, 53.2, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
@@ -1377,6 +1535,9 @@ _.Zones =
 						["coord"] = { 48.8, 46.0, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
+							i(25848, {	-- Formula: Runed Adamantite Rod
+								["timeline"] = { "removed 5.0.4" },
+							}),
 							i(27699),	-- Recipe: Golden Fish Sticks
 							i(27700),	-- Recipe: Spicy Crawdad
 						},
@@ -1508,14 +1669,20 @@ _.Zones =
 	})),
 };
 
+-- Now add the elixirs as to not mark them incorrectly.
+appendGroups({
+	i(28103),	-- Adept's Elixir
+	i(22831),	-- Elixir of Major Agility
+}, HUNGRY_NETHER_RAYS_GROUPS);
+
 -- Remove the phase flag.
 UNHOLY_ENCHANT.u = nil;
-
 
 -- #if AFTER TBC
 -- These quests trigger after specific events occur in the zone.
 _.HiddenQuestTriggers = {
-
+	q(10925),	-- Evil Draws Near - completed with quest 10923
+	q(11072),	-- Adversarial Blood - completed with quest 11885
 };
 
 -- These quests never made it in.
