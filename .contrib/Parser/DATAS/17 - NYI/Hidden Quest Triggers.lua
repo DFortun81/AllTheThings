@@ -857,8 +857,6 @@ root("HiddenQuestTriggers", {
 		--------------------
 		-- NYI VERSIONS OF QUESTS WHICH ARE COMPLETED TOGETHER WITH IMPLEMENTED VERSION OF THESE QUESTS
 		-- TEMPORARY SOLUTION AS HQT FOR NOW
-		q(9733),	-- Warning the Cenarion Circle - completed with quest 9724
-		q(9734),	-- Return to the Marsh - completed with quest 9732
 		q(9749),	-- They're Alive! Maybe... - completed with quest 9670
 		q(10088),	-- When This Mine's a-Rockin' - completed with quest 10079
 		q(10125),	-- Mission: Disrupt Communications - completed with quest 10144 & 10208

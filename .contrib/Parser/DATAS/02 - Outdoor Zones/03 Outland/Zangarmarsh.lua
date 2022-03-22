@@ -7,7 +7,7 @@ _.Zones =
 		m(ZANGARMARSH, {
 			["lore"] = "Zangarmarsh is a leveling zone intended to be completed after Hellfire Peninsula. It is a surreal swamp, with neon giant mushrooms and hostile naga. The Cenarion Circle is investigating why wildlife has been dying, discovering that Lady Vashj is draining Coilfang Reservoir for her nefarious purposes. Players can also gain reputation with Sporeggar, a group of sporelings at war with ogres. Alliance players also further learn about lost ones--Draenei heavily corrupted by shadow magic--and begin gaining reputation with the Kurenai.",
 			-- #if AFTER WRATH
-			["achievementID"] = 863,
+			["icon"] = "Interface\\Icons\\achievement_zone_zangarmarsh",
 			-- #endif
 			["groups"] = {
 				n(ACHIEVEMENTS, {
@@ -22,7 +22,80 @@ _.Zones =
 							}),
 						},
 					}),
-					ach(1190, {	-- Mysteries of the Marsh
+					removeclassicphase(ach(863, {	-- Explore Zangarmarsh
+						-- #if BEFORE WRATH
+						["description"] = "Explore Zangarmarsh, revealing the covered areas of the world map.",
+						["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
+						-- #endif
+					})),
+					removeclassicphase(ach(1190, {	-- Mysteries of the Marsh
+						-- #if ANYCLASSIC
+						-- #if AFTER CATA
+						["sourceQuests"] = {
+							-- Draenei Diplomacy (A)
+							9803,	-- Messenger to the Feralfen
+							
+							-- Swamprat Post (H)
+							9899,	-- A Job Undone
+							9772,	-- Jyoba's Report
+							9898,	-- The Respect of Another
+							9769,	-- There's No Explanation for Fashion
+							
+							-- Telredor (A)
+							9783,	-- An Unnatural Drought
+							-- TODO:: verify below
+							9896, 	-- Blacksting's Bane
+							9790,	-- Diaphanous Wings
+							9777,	-- Fulgor Spores
+							9780,	-- Umbrafen Eel Filets
+							
+							-- Zabra'jin (H)
+							9816,	-- Have You Ever Seen One of These?
+							9904,	-- Pursuing Terrorclaw
+							-- TODO:: verify below
+							9847,	-- A Spirit Ally? (probably)
+							9903,	-- The Biggest of Them All (probably)
+							9842,	-- The Sharpest Blades (probably)
+							
+							-- Orebor Harborage (A)
+							9902,	-- The Terror of Marshlight Lake
+							-- TODO:: verify below
+							10115,	-- Daggerfen Deviance
+							9905,	-- Maktu's Revenge
+							9839,	-- Overlord Gorefist
+							9848,	-- Secrets of the Daggerfen
+							9830,	-- Stinger Venom
+							9833,	-- Lines of Communication
+							
+							-- The Defense of Zabra'jin (H)
+							10118,	-- Message to the Daggerfen
+							9823,	-- Us or Them
+							
+							-- Don't Eat THOSE Mushrooms!
+							9709,	-- Stealing Back the Mushrooms
+							
+							-- Draining the Marsh
+							9732,	-- Return to the Marsh
+							
+							-- Saving the Sporeloks
+							9788,	-- A Damp, Dark Place
+							9894,	-- Safeguarding the Watchers
+							10096,	-- Saving the Sporeloks
+							
+							-- A Trip With the Sporelings
+							9726,	-- Now That We're Friends...
+							9919,	-- Sporeggar
+							9729,	-- Fhwoor Smash!
+						},
+						-- #elseif BEFORE WRATH
+						["description"] = "Complete 54 quests in Zangarmarsh.",
+						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
+						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
+						["rank"] = 54,
+						-- #endif
+						-- #else
 						crit(1, {	-- Draenei Diplomacy (A)
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 9803,	-- Messenger to the Feralfen
@@ -98,7 +171,28 @@ _.Zones =
 								9729,	-- Fhwoor Smash!
 							},
 						}),
-					}),
+						-- #endif
+					})),
+					ach(953, applyclassicphase(TBC_PHASE_ONE, {	-- Guardian of Cenarius
+						-- #if BEFORE 3.0.1
+						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]],
+						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]],
+						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_OnUpdate(t, 609, 942); end]],
+						["description"] = "Raise your reputation with the Cenarion Circle and Cenarion Expedition to Exalted.",
+						-- #endif
+						["groups"] = {
+							-- NOTE: Achievement says it awards 132, but that's wrong.
+							applyclassicphase(WRATH_PHASE_ONE, title(100)),	-- %, Guardian of Cenarius
+						},
+					})),
+					removeclassicphase(ach(900, {	-- The Czar of Sporeggar
+						-- #if BEFORE 3.0.1
+						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
+						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
+						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 970); end]],
+						["description"] = "Raise your reputation with Sporeggar to Exalted.",
+						-- #endif
+					})),
 				}),
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
@@ -136,8 +230,12 @@ _.Zones =
 				}),
 				-- #endif
 				n(FACTIONS, {
-					faction(942),	-- Cenarion Expedition
-					faction(970),	-- Sporeggar
+					faction(942, {	-- Cenarion Expedition
+						["maps"] = { COILFANG_RESERVOIR_SLAVE_PENS, COILFANG_RESERVOIR_STEAMVAULT, COILFANG_RESERVOIR_UNDERBOG },
+					}),
+					faction(970, {	-- Sporeggar
+						["maps"] = { COILFANG_RESERVOIR_UNDERBOG },
+					}),
 				}),
 				n(FLIGHT_PATHS, {
 					fp(164, {	-- Orebor Harborage, Zangarmarsh
@@ -162,6 +260,9 @@ _.Zones =
 					}),
 				}),
 				prof(FISHING, {
+					i(35313, {	-- Bloated Barbed Gill Trout
+						i(34866),	-- Giant Freshwater Shrimp
+					}),
 					o(182952, {	-- Steam Pump Flotsam
 						["model"] = 219411,
 						["groups"] = {
@@ -315,6 +416,27 @@ _.Zones =
 						["coord"] = { 32.9, 48.9, ZANGARMARSH },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(62, 10, 62),
+					}),
+					applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(10994, {	-- Chasing the Moonstone
+						["qg"] = 22832,	-- Morthis Whisperwing <Druid of the Talon>
+						["sourceQuest"] = 10993,	-- Return to Cenarion Refuge
+						["coord"] = { 80.2, 65.2, ZANGARMARSH },
+						["maps"] = { AZSHARA },
+						["timeline"] = { "removed 4.0.1" },
+						["classes"] = { DRUID },
+						["cost"] = {
+							{ "i", 32364, 1 },	-- Southfury Moonstone
+						},
+						["lvl"] = 70,
+					})),
+					q(9766,  {	-- Coilfang Armaments
+						["qg"] = 17841,	-- Ysiel Windsinger
+						["sourceQuest"] = 9765,	-- Preparing for War
+						["maxReputation"] = { 942, EXALTED },	-- Cenarion Expedition, Exalted.
+						["timeline"] = { "removed 4.3.0.14732" },
+						["cost"] = { { "i", 24368, 1 } },	-- Coilfang Armaments
+						["repeatable"] = true,
+						["lvl"] = lvlsquish(67, 20, 67),
 					}),
 					q(10104, {	-- Concerns About Tuurem
 						["qg"] = 18008,	-- Ikuti
@@ -627,24 +749,6 @@ _.Zones =
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(58, 10, 58),
 					}),
-					q(9898,  {	-- The Respect of Another
-						["qg"] = 18012,	-- Reavij
-						["sourceQuest"] = 9770,	-- Menacing Marshfangs
-						["coord"] = { 85.0, 54.0, ZANGARMARSH },
-						["races"] = HORDE_ONLY,
-						["lvl"] = lvlsquish(60, 10, 60),
-						["groups"] = {
-							objective(1, {	-- 0/1 Blacksting's Stinger
-								["provider"] = { "i", 25448 },	-- Blacksting's Stinger
-								["coord"] = { 49.8, 60.1, ZANGARMARSH },
-								["cr"] = 18283,	-- Blacksting
-							}),
-							i(31788),	-- Blacksting Gloves
-							i(31786),	-- Blacksting Shoulders
-							i(31789),	-- Marshfang Boots
-							i(31787),	-- Stalwart Girdle
-						},
-					}),
 					q(9726,  {	-- Now That We're Friends...
 						["qg"] = 17856,	-- Gzhun'tt
 						["coord"] = { 19.5, 50.0, ZANGARMARSH },
@@ -779,7 +883,9 @@ _.Zones =
 					}),
 					q(9919,  {	-- Sporeggar
 						["qg"] = 17923,	-- Fahssn
+						-- #if AFTER 7.3.5.25632
 						["sourceQuest"] = 50131,	-- An Outside Perspective
+						-- #endif
 						["coord"] = { 19.0, 63.4, ZANGARMARSH },
 						["minReputation"] = { 970, NEUTRAL },	-- Sporeggar, Neutral.
 						["lvl"] = lvlsquish(60, 10, 60),
@@ -865,6 +971,24 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(62, 10, 62),
 					}),
+					q(9898,  {	-- The Respect of Another
+						["qg"] = 18012,	-- Reavij
+						["sourceQuest"] = 9770,	-- Menacing Marshfangs
+						["coord"] = { 85.0, 54.0, ZANGARMARSH },
+						["races"] = HORDE_ONLY,
+						["lvl"] = lvlsquish(60, 10, 60),
+						["groups"] = {
+							objective(1, {	-- 0/1 Blacksting's Stinger
+								["provider"] = { "i", 25448 },	-- Blacksting's Stinger
+								["coord"] = { 49.8, 60.1, ZANGARMARSH },
+								["cr"] = 18283,	-- Blacksting
+							}),
+							i(31788),	-- Blacksting Gloves
+							i(31786),	-- Blacksting Shoulders
+							i(31789),	-- Marshfang Boots
+							i(31787),	-- Stalwart Girdle
+						},
+					}),
 					q(9842,  {	-- The Sharpest Blades
 						["qg"] = 18015,	-- Gambarinka
 						["sourceQuest"] = 9841,	-- Stinging the Stingers
@@ -903,6 +1027,19 @@ _.Zones =
 						["coord"] = { 80.4, 64.2, ZANGARMARSH },
 						["lvl"] = lvlsquish(60, 10, 60),
 					}),
+					applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(10961, {	-- The Ward of Wakening
+						["qg"] = 22832,	-- Morthis Whisperwing <Druid of the Talon>
+						["sourceQuest"] = 10955,	-- Morthis Whisperwing
+						["coord"] = { 80.2, 65.2, ZANGARMARSH },
+						["timeline"] = { "removed 4.0.1" },
+						["classes"] = { DRUID },
+						["cost"] = {
+							{ "i", 31950, 10 },	-- Bogblossom
+							{ "i", 22790, 10 },	-- Ancient Lichen
+							{ "i", 22786, 10 },	-- Dreaming Glory
+						},
+						["lvl"] = 70,
+					})),
 					q(9769,  {	-- There's No Explanation for Fashion
 						["qg"] = 18016,	-- Magasha
 						["coord"] = { 84.4, 54.3, ZANGARMARSH },
@@ -915,6 +1052,15 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(59, 10, 59),
 					}),
+					applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(10979, {	-- To the Evergrove
+						["qg"] = 22832,	-- Morthis Whisperwing <Druid of the Talon>
+						["sourceQuest"] = 10978,	-- Return to Morthis Whisperwing
+						["coord"] = { 80.2, 65.2, ZANGARMARSH },
+						["timeline"] = { "removed 4.0.1" },
+						["maps"] = { BLADES_EDGE_MOUNTAINS },
+						["classes"] = { DRUID },
+						["lvl"] = 70,
+					})),
 					q(9781,  {	-- Too Many Mouths to Feed
 						["qg"] = 18005,	-- Haalrun
 						["coord"] = { 67.8, 48.0, ZANGARMARSH },
@@ -951,6 +1097,17 @@ _.Zones =
 							i(25617),	-- Captain Krosh's Crash Helmet
 						},
 					}),
+					applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(10964, {	-- Waking the Sleeper
+						["qg"] = 22832,	-- Morthis Whisperwing <Druid of the Talon>
+						["sourceQuest"] = 10961,	-- The Ward of Wakening
+						["coord"] = { 80.2, 65.2, ZANGARMARSH },
+						["timeline"] = { "removed 4.0.1" },
+						["classes"] = { DRUID },
+						["cost"] = {
+							{ "i", 31953, 1 },	-- Ward of Waking (Provided)
+						},
+						["lvl"] = 70,
+					})),
 					q(9820,  {	-- WANTED: Boss Grog'ak
 						["provider"] = { "o", 182165 },	-- Wanted Poster
 						["coord"] = { 32.0, 49.3, ZANGARMARSH },
@@ -1131,16 +1288,10 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(23805, {	-- Schematic: Ultra-Spectropic Detection Goggles
-								["spellID"] = 30318,	-- Ultra-Spectropic Detection Goggles
-								["requireSkill"] = ENGINEERING,
 								["isLimited"] = true,
-								["f"] = RECIPES,
 							}),
 							i(23811, {	-- Schematic: White Smoke Flare
-								["spellID"] = 30341,	-- White Smoke Flare
-								["requireSkill"] = ENGINEERING,
 								["isLimited"] = true,
-								["f"] = RECIPES,
 							}),
 						},
 					}),
@@ -1156,28 +1307,46 @@ _.Zones =
 						["coord"] = { 79.3, 63.7, ZANGARMARSH },
 						["groups"] = {
 							i(31804),	-- Cenarion Expedition Tabard
+							removeclassicphase(ach(893, {	-- Cenarion War Hippogryph
+								["provider"] = { "i", 33999 },	-- Cenarion War Hippogryph
+								["filterID"] = MOUNTS,
+								-- #if BEFORE WRATH
+								["description"] = "Obtain the Cenarion War Hippogryph from the Cenarion Expedition in Zangarmarsh.",
+								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
+								-- #endif
+							})),
 							i(33999),	-- Cenarion War Hippogryph (MOUNT!)
-							i(30623),	-- Reservoir Key [Revered]
-							i(29192),	-- Glyph of Ferocity
-							i(29194),	-- Glyph of Nature Warding
-							i(24417),	-- Scout's Arrow
-							i(31949),	-- Warden's Arrow
+							i(30623, {	-- Reservoir Key [Revered]
+								["timeline"] = { "removed 4.2.0" },
+							}),
+							i(29192, {	-- Glyph of Ferocity
+								["timeline"] = { "removed 5.0.4" },
+							}),
+							i(29194, {	-- Glyph of Nature Warding
+								["timeline"] = { "removed 5.0.4" },
+							}),
+							i(24417, {	-- Scout's Arrow
+								["timeline"] = { "removed 4.0.1" },
+							}),
+							i(31949, {	-- Warden's Arrow
+								["timeline"] = { "removed 4.0.1" },
+							}),
 							i(29172),	-- Ashyen's Gift
-							i(35403),	-- Crusader's Ornamented Gloves
-							i(35415),	-- Crusader's Scaled Legguards
+							applyclassicphase(TBC_PHASE_TWO, i(35403)),	-- Crusader's Ornamented Gloves
+							applyclassicphase(TBC_PHASE_TWO, i(35415)),	-- Crusader's Scaled Legguards
 							i(24183),	-- Design: Nightseye Panther
 							i(31402),	-- Design: The Natural Ward
-							i(35358),	-- Dragonhide Legguards
-							i(35329),	-- Dreadweave Hood
+							applyclassicphase(TBC_PHASE_TWO, i(35358)),	-- Dragonhide Legguards
+							applyclassicphase(TBC_PHASE_TWO, i(35329)),	-- Dreadweave Hood
 							i(29171),	-- Earthwarden
-							i(35347),	-- Evoker's Silk Trousers
+							applyclassicphase(TBC_PHASE_TWO, i(35347)),	-- Evoker's Silk Trousers
 							i(24429),	-- Expedition Flare
 							i(25835),	-- Explorer's Walking Stick
 							i(33149),	-- Formula: Enchant Cloak - Stealth
 							i(28271),	-- Formula: Enchant Gloves - Spell Strike
-							i(35365),	-- Kodohide Robe
-							i(35336),	-- Mooncloth Shoulderpads
-							i(35367),	-- Opportunist's Leather Helm
+							applyclassicphase(TBC_PHASE_TWO, i(35365)),	-- Kodohide Robe
+							applyclassicphase(TBC_PHASE_TWO, i(35336)),	-- Mooncloth Shoulderpads
+							applyclassicphase(TBC_PHASE_TWO, i(35367)),	-- Opportunist's Leather Helm
 							i(29720),	-- Pattern: Clefthide Leg Armor
 							i(25737),	-- Pattern: Heavy Clefthoof Boots
 							i(25736),	-- Pattern: Heavy Clefthoof Leggings
@@ -1195,18 +1364,18 @@ _.Zones =
 							i(22922),	-- Recipe: Major Nature Protection Potion
 							i(25869),	-- Recipe: Transmute Earthstorm Diamond
 							i(22918),	-- Recipe: Transmute Primal Water to Air
-							i(35342),	-- Satin Robe
-							i(35408),	-- Savage Plate Gauntlets
+							applyclassicphase(TBC_PHASE_TWO, i(35342)),	-- Satin Robe
+							applyclassicphase(TBC_PHASE_TWO, i(35408)),	-- Savage Plate Gauntlets
 							i(23814),	-- Schematic: Green Smoke Flare
-							i(35385),	-- Seer's Linked Spaulders
-							i(35387),	-- Seer's Mail Gauntlets
-							i(35394),	-- Seer's Ringmail Legguards
-							i(35379),	-- Stalker's Chain Leggings
+							applyclassicphase(TBC_PHASE_TWO, i(35385)),	-- Seer's Linked Spaulders
+							applyclassicphase(TBC_PHASE_TWO, i(35387)),	-- Seer's Mail Gauntlets
+							applyclassicphase(TBC_PHASE_TWO, i(35394)),	-- Seer's Ringmail Legguards
+							applyclassicphase(TBC_PHASE_TWO, i(35379)),	-- Stalker's Chain Leggings
 							i(29173),	-- Strength of the Untamed
 							i(25838),	-- Warden's Hauberk
 							i(29174),	-- Watcher's Cowl
 							i(29170),	-- Windcaller's Orb
-							i(35374),	-- Wyrmhide Spaulders
+							applyclassicphase(TBC_PHASE_TWO, i(35374)),	-- Wyrmhide Spaulders
 						},
 					}),
 					n(18015, {	-- Gambarinka <Tradesman>
@@ -1261,6 +1430,10 @@ _.Zones =
 					n(18911, {	-- Juno Dufrain <Fishing Trainer>
 						["coord"] = { 78.0, 66.0, ZANGARMARSH },
 						["groups"] = {
+							i(27532, {	-- Master Fishing - The Art of Angling
+								["timeline"] = { "removed 3.1.0", "deleted 5.0.5" },
+								["rank"] = 5,
+							}),
 							i(27696),	-- Recipe: Blackened Sporefish
 						},
 					}),
@@ -1269,22 +1442,13 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(23596, {	-- Plans: Adamantite Breastplate
-								["spellID"] = 29606,	-- Adamantite Breastplate
-								["requireSkill"] = BLACKSMITHING,
 								["isLimited"] = true,
-								["f"] = RECIPES,
 							}),
 							i(23594, {	-- Plans: Adamantite Plate Bracers
-								["spellID"] = 29603,	-- Adamantite Plate Bracers
-								["requireSkill"] = BLACKSMITHING,
 								["isLimited"] = true,
-								["f"] = RECIPES,
 							}),
 							i(23595, {	-- Plans: Adamantite Plate Gloves
-								["spellID"] = 29605,	-- Adamantite Plate Gloves
-								["requireSkill"] = BLACKSMITHING,
 								["isLimited"] = true,
-								["f"] = RECIPES,
 							}),
 						},
 					}),
@@ -1318,6 +1482,10 @@ _.Zones =
 							i(22906, {	-- Recipe: Shrouding Potion
 								["cost"] = { { "i", 24245, 30 }, },	-- 30x Glowcap
 							}),
+							i(27689, {	-- Recipe: Sporeling Snack
+								["cost"] = { { "i", 24245, 2 }, },	-- 2x Glowcap
+								["timeline"] = { "removed 4.2.0", "deleted 4.2.0" },
+							}),
 							i(22916, {	-- Recipe: Transmute Primal Earth to Water
 								["cost"] = { { "i", 24245, 25 }, },	-- 25x Glowcap
 							}),
@@ -1341,6 +1509,15 @@ _.Zones =
 							}),
 							i(25548, {	-- Tallstalk Mushroom
 								["cost"] = { { "i", 24245, 1 }, },	-- 1x Glowcap
+							}),
+						},
+					}),
+					n(18993, {	-- Naka <Cooking Supplies>
+						["coord"] = { 78.5, 63.0, ZANGARMARSH },
+						["groups"] = {
+							i(27736, {	-- Master Cookbook
+								["timeline"] = { "removed 3.1.0", "deleted 5.0.5" },
+								["rank"] = 5,
 							}),
 						},
 					}),
@@ -1383,7 +1560,8 @@ _.Zones =
 -- #if AFTER TBC
 -- These quests trigger after specific events occur in the zone.
 _.HiddenQuestTriggers = {
-
+	q(9734),	-- Return to the Marsh (NYI) - completed with quest 9732
+	q(9733),	-- Warning the Cenarion Circle (NYI) - completed with quest 9724
 };
 
 -- These quests never made it in.
