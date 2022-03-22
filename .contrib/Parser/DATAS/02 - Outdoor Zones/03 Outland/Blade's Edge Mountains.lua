@@ -1209,14 +1209,6 @@ _.Zones =
 							i(31713),	-- Ritualist's Helm
 						},
 					}),
-					q(10974, {	-- Stasis Chambers of Bash'ir
-						["qg"] = 20448,	-- Commander Ameer
-						["sourceQuest"] = 10973,	-- A Thousand Worlds
-						["coord"] = { 59.5, 32.4, NETHERSTORM },
-						["groups"] = {
-							i(32064),	-- Protectorate Treasure Cache
-						},
-					}),
 					q(10511, {	-- Strange Brew
 						["qg"] = 21151,	-- Borgrim Stouthammer
 						["coord"] = { 37.4, 64.6, BLADES_EDGE_MOUNTAINS },

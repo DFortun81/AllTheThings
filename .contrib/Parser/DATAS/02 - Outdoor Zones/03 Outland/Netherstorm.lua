@@ -8,49 +8,88 @@ _.Zones =
 		m(NETHERSTORM, {
 			["lore"] = "Netherstorm is the northern-most zone in Outland. It is covered in magical currents, giving it an unnatural sci-fi look--except in the protected Eco-Domes, which are lush green. Goblins and Ethereals have made outposts here, as well as the Burning Legion and Kael'thas' blood elves, with numerous Mana Forges across the region. This region has numerous quests that grant Aldor or Scryer reputation.",
 			-- #if AFTER WRATH
-			["achievementID"] = 843,
+			["icon"] = "Interface\\Icons\\achievement_zone_netherstorm_01",
 			-- #endif
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					ach(1194, {		-- Into the Nether
-						["g"] = {
-							-- TODO: possibly more sourceQuests needed for some of these
-							crit(1, {		-- Socrethar
-								["sourceQuests"] = {
-									10409,	-- Deathblow to the Legion (Aldor)
-									10507,	-- Turning Point (Scryers)
-								},
-							}),
-							crit(2, {		-- The Violet Tower
-								["sourceQuests"] = {
-									10240,	-- Building a Perimeter
-								},
-							}),
-							crit(3, {		-- Building the X-52 Nether-Rocket
-								["sourceQuests"] = {
-									10221,	-- Dr. Boom!
-								},
-							}),
-							crit(4, {		-- Protect Area 52!
-								["sourceQuests"] = {
-									10249,	-- Back to the Chief!
-								},
-							}),
-							crit(5, {		-- The Consortium
-								["sourceQuests"] = {
-									10276,	-- Full Triangle
-									10408,	-- Nexus-King Salhadaar
-									10440,	-- Success!
-									10274,	-- Securing the Celestial Ridge
-								},
-							}),
-							crit(6, {		-- Destroying the All-Devouring
-								["sourceQuests"] = {
-									10439,	-- Dimensius the All-Devouring
-								},
-							}),
+					removeclassicphase(ach(843, {	-- Explore Netherstorm
+						-- #if BEFORE WRATH
+						["description"] = "Explore Netherstorm, revealing the covered areas of the world map.",
+						["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
+						-- #endif
+					})),
+					removeclassicphase(ach(1194, {	-- Into the Nether
+						-- #if ANYCLASSIC
+						-- #if AFTER CATA
+						["sourceQuests"] = {
+							-- Socrethar
+							10409,	-- Deathblow to the Legion (Aldor)
+							10507,	-- Turning Point (Scryers)
+							
+							-- The Violet Tower
+							10240,	-- Building a Perimeter
+							
+							-- Building the X-52 Nether-Rocket
+							10221,	-- Dr. Boom!
+								
+							-- Protect Area 52!
+							10249,	-- Back to the Chief!
+							
+							-- The Consortium
+							10276,	-- Full Triangle
+							10408,	-- Nexus-King Salhadaar
+							10440,	-- Success!
+							10274,	-- Securing the Celestial Ridge
+							
+							-- Destroying the All-Devouring
+							10439,	-- Dimensius the All-Devouring
 						},
-					}),
+						-- #elseif BEFORE WRATH
+						["description"] = "Complete 120 quests in Nagrand.",
+						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
+						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
+						["rank"] = 120,
+						-- #endif
+						-- #else
+						-- TODO: possibly more sourceQuests needed for some of these
+						crit(1, {		-- Socrethar
+							["sourceQuests"] = {
+								10409,	-- Deathblow to the Legion (Aldor)
+								10507,	-- Turning Point (Scryers)
+							},
+						}),
+						crit(2, {		-- The Violet Tower
+							["sourceQuests"] = {
+								10240,	-- Building a Perimeter
+							},
+						}),
+						crit(3, {		-- Building the X-52 Nether-Rocket
+							["sourceQuests"] = {
+								10221,	-- Dr. Boom!
+							},
+						}),
+						crit(4, {		-- Protect Area 52!
+							["sourceQuests"] = {
+								10249,	-- Back to the Chief!
+							},
+						}),
+						crit(5, {		-- The Consortium
+							["sourceQuests"] = {
+								10276,	-- Full Triangle
+								10408,	-- Nexus-King Salhadaar
+								10440,	-- Success!
+								10274,	-- Securing the Celestial Ridge
+							},
+						}),
+						crit(6, {		-- Destroying the All-Devouring
+							["sourceQuests"] = {
+								10439,	-- Dimensius the All-Devouring
+							},
+						}),
+						-- #endif
+					})),
 				}),
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
@@ -107,54 +146,64 @@ _.Zones =
 						["provider"] = { "n", 19840 },	-- Caledis Brightdawn
 						["coord"] = { 48.2, 86.6, NETHERSTORM },
 						["sourceQuest"] = 10652,	-- Behind Enemy Lines
+						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10202, {	-- A Defector
 						["provider"] = { "n", 19469 },	-- Magistrix Larynna
 						["coord"] = { 32.1, 64.0, NETHERSTORM },
 						["sourceQuest"] = 10341,	-- Kick Them While They're Down
+						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10508, {	-- A Gift for Voren'thal
 						["provider"] = { "n", 19468 },	-- Spymaster Thalodien
 						["coord"] = { 32.0, 64.1, NETHERSTORM },
 						["sourceQuest"] = 10432,	-- Damning Evidence
 						-- May also require Shutting Down Manaforge Ara.
+						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10264, {	-- Assisting the Consortium (The Scryers)
 						["provider"] = { "n", 19468 },	-- Spymaster Thalodien
 						["coord"] = { 32.0, 64.1, NETHERSTORM },
 						["isBreadcrumb"] = true,
 						["sourceQuests"] = { 10186 },	-- You're Hired!
+						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10652, {	-- Behind Enemy Lines
 						["provider"] = { "n", 20162 },	-- Veronia
 						["coord"] = { 33.8, 64.2, NETHERSTORM },
 						["sourceQuest"] = 10194,	-- Stealth Flight
+						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10204, {	-- Bloodgem Crystals
 						["provider"] = { "n", 19469 },	-- Magistrix Larynna
 						["coord"] = { 32.1, 64.0, NETHERSTORM },
 						["sourceQuests"] = { 10189 },	-- Manaforge B'naar
+						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10509, {	-- Bound for Glory
 						["provider"] = { "n", 19468 },	-- Spymaster Thalodien
 						["coord"] = { 32.0, 64.1, NETHERSTORM },
 						["sourceQuest"] = 10508,	-- A Gift for Voren'thal
+						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10432, {	-- Damning Evidence
 						["provider"] = { "n", 20920 },	-- Magister Theledorn
 						["coord"] = { 26.2, 41.6, NETHERSTORM },
 						["sourceQuest"] = 10202,	-- A Defector
+						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10193, {	-- High Value Targets
 						["provider"] = { "n", 19468 },	-- Spymaster Thalodien
 						["coord"] = { 32.0, 64.1, NETHERSTORM },
 						["sourceQuests"] = { 10189 },	-- Manaforge B'naar
+						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10198, {	-- Information Gathering
 						["provider"] = { "n", 19840 },	-- Caledis Brightdawn
 						["coord"] = { 48.2, 86.6, NETHERSTORM },
 						["sourceQuest"] = 10197,	-- A Convincing Disguise
-						["g"] = {
+						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["groups"] = {
 							i(30383),	-- Belt of the Sage
 							i(30386),	-- Bloodguard's Greaves
 							i(30384),	-- Brightdawn Bracers
@@ -165,7 +214,8 @@ _.Zones =
 						["provider"] = { "n", 19469 },	-- Magistrix Larynna
 						["coord"] = { 32.1, 64.0, NETHERSTORM },
 						["sourceQuest"] = 10330,	-- Shutting Down Manaforge Coruu
-						["g"] = {
+						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["groups"] = {
 							i(30522),	-- Conjurer's Staff
 							i(30396),	-- Jeweled Halberd
 							i(30394),	-- Sunfury Blade
@@ -179,37 +229,44 @@ _.Zones =
 							10552,	-- Allegiance to the Scryers
 							11039,	-- Report to Spymaster Thalodien
 						},
+						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10200, {	-- Return to Thalodien
 						["provider"] = { "n", 19840 },	-- Caledis Brightdawn
 						["coord"] = { 48.2, 86.6, NETHERSTORM },
 						["sourceQuest"] = 10330,	-- Shutting Down Manaforge Coruu
+						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10329, {	-- Shutting Down Manaforge B'naar
 						["provider"] = { "n", 19468 },	-- Spymaster Thalodien
 						["coord"] = { 32.0, 64.1, NETHERSTORM },
 						["sourceQuest"] = 10193,	-- High Value Targets
+						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10330, {	-- Shutting Down Manaforge Coruu
 						["provider"] = { "n", 19840 },	-- Caledis Brightdawn
 						["coord"] = { 48.2, 86.6, NETHERSTORM },
 						["sourceQuest"] = 10198,	-- Information Gathering
+						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10338, {	-- Shutting Down Manaforge Duro
 						["provider"] = { "n", 19468 },	-- Spymaster Thalodien
 						["coord"] = { 32.0, 64.1, NETHERSTORM },
 						["sourceQuest"] = 10200,	-- Return to Thalodien
+						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10194, {	-- Stealth Flight
 						["provider"] = { "n", 19468 },	-- Spymaster Thalodien
 						["coord"] = { 32.0, 64.1, NETHERSTORM },
 						["sourceQuests"] = { 10329 },	-- Shutting Down Manaforge B'naar
+						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10365, {	-- Shutting Down Manaforge Ara
 						["provider"] = { "n", 19468 },	-- Spymaster Thalodien
 						["coord"] = { 32.0, 64.0, NETHERSTORM },
 						["sourceQuest"] = 10338,	-- Shutting Down Manaforge Duro
-						["g"] = {
+						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["groups"] = {
 							i(30366),	-- Manastorm Band
 							i(30378),	-- Thalodien's Charm
 						},
@@ -218,7 +275,8 @@ _.Zones =
 						["provider"] = { "n", 18530 },	-- Voren'thal the Seer
 						["coord"] = { 42.6, 91.4, SHATTRATH_CITY },
 						["sourceQuest"] = 10509,	-- Bound for Glory
-						["g"] = {
+						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["groups"] = {
 							i(30375),	-- Gauntlets of the Vanquisher
 							i(30374),	-- Greaves of Spellpower
 							i(30373),	-- Netherfused Pauldrons
@@ -264,9 +322,10 @@ _.Zones =
 						["isBreadcrumb"] = true,	-- for "A Mission of Mercy"
 					}),
 					q(10974, {	-- Stasis Chambers of Bash'ir
-						["provider"] = { "n", 20448 },	-- Commander Ameer
-						["coord"] = { 59.5, 32.4, NETHERSTORM },
+						["qg"] = 20448,	-- Commander Ameer
 						["sourceQuest"] = 10973,	-- A Thousand Worlds
+						["coord"] = { 59.5, 32.4, NETHERSTORM },
+						["maps"] = { BLADES_EDGE_MOUNTAINS },
 						["groups"] = {
 							i(32064),	-- Protectorate Treasure Cache
 						},
@@ -275,12 +334,14 @@ _.Zones =
 						["provider"] = { "n", 20780 },	-- Kaylaan
 						["coord"] = { 34.8, 38.3, NETHERSTORM },
 						["sourceQuest"] = 10431,	-- Outside Assistance
+						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10381, {	-- Aldor No More
 						["provider"] = { "n", 20780 },	-- Kaylaan
 						["coord"] = { 34.8, 38.3, NETHERSTORM },
 						["sourceQuest"] = 10380,	-- A Dark Pact
-						["g"] = {
+						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["groups"] = {
 							i(30382),	-- Aldor Ceremonial Wraps
 							i(30380),	-- Girdle of the Lost Vindicator
 							i(30381),	-- Kaylaan's Spaulders
@@ -292,22 +353,26 @@ _.Zones =
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["isBreadcrumb"] = true,
 						["sourceQuests"] = { 10186 },	-- You're Hired!
+						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10246, {	-- Attack on Manaforge Coruu
 						["provider"] = { "n", 19466 },	-- Exarch Orelis
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["sourceQuest"] = 10299,	-- Shutting Down Manaforge B'naar
+						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10245, {	-- B'naar Console Transcription
 						["provider"] = { "o", 183770 },	-- B'naar Control Console
 						["coord"] = { 23.2, 68.2, NETHERSTORM },
 						["sourceQuest"] = 10243,	-- Naaru Technology
+						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10409, {	-- Deathblow to the Legion
 						["provider"] = { "n", 18538 },	-- Ishanah
 						["coord"] = { 24.2, 29.8, SHATTRATH_CITY },
 						["sourceQuest"] = 10410,	-- Ishanah's Help
-						["g"] = {
+						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["groups"] = {
 							i(30369),	-- Cleansed Fel Pauldrons
 							i(30370),	-- Gauntlets of the Redeemed Vindicator
 							i(30371),	-- Lightwarden's Girdle
@@ -318,6 +383,7 @@ _.Zones =
 					q(10241, {	-- Distraction at Manaforge B'naar
 						["provider"] = { "n", 19466 },	-- Exarch Orelis
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
+						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 						["sourceQuests"] = {
 							10551,	-- Allegiance to the Aldor
 							11038,	-- Assist Exarch Orelis
@@ -327,12 +393,14 @@ _.Zones =
 						["provider"] = { "n", 19467 },	-- Anchorite Karja
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["sourceQuest"] = 10407,	-- Socrethar's Shadow
+						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10313, {	-- Measuring Warp Energies
 						["provider"] = { "n", 19466 },	-- Exarch Orelis
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["sourceQuest"] = 10241,	-- Distraction at Manaforge B'naar
-						["g"] = {
+						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["groups"] = {
 							i(30362),	-- Energized Helm
 							i(30364),	-- Resonating Axe
 							i(30363),	-- Warp-Shielded Hauberk
@@ -343,17 +411,20 @@ _.Zones =
 						["provider"] = { "n", 19467 },	-- Anchorite Karja
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["sourceQuest"] = 10241,	-- Distraction at Manaforge B'naar
+						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10431, {	-- Outside Assistance
 						["provider"] = { "n", 19466 },	-- Exarch Orelis
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["sourceQuest"] = 10328,	-- Sunfury Briefings
+						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10323, {	-- Shutting Down Manaforge Ara
 						["provider"] = { "n", 19467 },	-- Anchorite Karja
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["sourceQuest"] = 10322,	-- Shutting Down Manaforge Duro
-						["g"] = {
+						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["groups"] = {
 							i(30377),	-- Karja's Medallion
 							i(30365),	-- Overseer's Signet
 						},
@@ -362,16 +433,19 @@ _.Zones =
 						["provider"] = { "n", 19467 },	-- Anchorite Karja
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["sourceQuest"] = 10245,	-- B'naar Console Transcription
+						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10321, {	-- Shutting Down Manaforge Coruu
 						["provider"] = { "n", 19467 },	-- Anchorite Karja
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["sourceQuest"] = 10299,	-- Shutting Down Manaforge B'naar
+						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10322, {	-- Shutting Down Manaforge Duro
 						["provider"] = { "n", 19467 },	-- Anchorite Karja
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["sourceQuest"] = 10321,	-- Shutting Down Manaforge Coruu
+						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10407, {	-- Socrethar's Shadow
 						["provider"] = { "n", 19467 },	-- Anchorite Karja
@@ -380,17 +454,19 @@ _.Zones =
 							10323,	-- Shutting Down Manaforge Ara
 							10381,	-- Aldor No More
 						},
+						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10328, {	-- Sunfury Briefings
 						["provider"] = { "n", 19466 },	-- Exarch Orelis
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["sourceQuest"] = 10321,	-- Shutting Down Manaforge Coruu
+						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10185, {	-- A Fate Worse Than Death
 						["provider"] = { "n", 19488 },	-- Custodian Dieworth
 						["coord"] = { 57.6, 86.2, NETHERSTORM },
 						["sourceQuest"] = 10174,	-- Curse of the Violet Tower
-						["g"] = {
+						["groups"] = {
 							i(30401),	-- Farahlite Studded Boots
 							i(29955),	-- Mana Infused Wristguards
 							i(29954),	-- Spiritbinder's Mantle
@@ -434,7 +510,7 @@ _.Zones =
 					q(10176, {	-- Ar'kelos the Guardian
 						["provider"] = { "n", 19644 },	-- Image of Archmage Vargoth
 						["sourceQuest"] = 10209,	-- Summoner Kanthin's Prize
-						["g"] = {
+						["groups"] = {
 							i(29777),	-- Cloak of the Valiant Defender
 							i(29776),	-- Core of Ar'kelos
 							i(29775),	-- Pendant of the Battle-Mage
@@ -444,7 +520,7 @@ _.Zones =
 					q(10353, {	-- Arconus the Insatiable
 						["provider"] = { "n", 20552 },	-- Agent Ya-six
 						["coord"] = { 60.9, 41.5, NETHERSTORM },
-						["g"] = {
+						["groups"] = {
 							i(30329),	-- Flesh Handler's Headpiece
 							i(30517),	-- Netherfarer's Leggings
 							i(30328),	-- Protectorate Assassin's Tunic
@@ -455,7 +531,7 @@ _.Zones =
 						["provider"] = { "n", 19832 },	-- Doctor Vomisa, Ph.T.
 						["coord"] = { 37.3, 63.6, NETHERSTORM },
 						["sourceQuests"] = { 10248 },	-- You, Robot
-						["g"] = {
+						["groups"] = {
 							i(134021, {	-- X-52 Rocket Helmet (TOY!)
 								["timeline"] = { "added 7.0.3.22248" },
 							}),
@@ -479,7 +555,7 @@ _.Zones =
 					q(10701, {	-- Breaking Down Netherock
 						["provider"] = { "o", 183811 },	-- Wanted Poster
 						["coord"] = { 32.1, 64.7, NETHERSTORM },
-						["g"] = {
+						["groups"] = {
 							i(31315),	-- Goblin Girdle
 							i(31313),	-- Nether-Rocket Gloves
 							i(31314),	-- Rocket-Chief Pauldrons
@@ -490,7 +566,7 @@ _.Zones =
 						["provider"] = { "n", 19489 },	-- Lieutenant-Sorcerer Morran
 						["sourceQuest"] = 10239,	-- Potential Energy Source
 						["coord"] = { 57.6, 86.3, NETHERSTORM },
-						["g"] = {
+						["groups"] = {
 							i(30398),	-- Boots of the Beneficent
 							i(29785),	-- Crimson Mail Bracers
 							i(29784),	-- Harmony's Touch
@@ -551,7 +627,7 @@ _.Zones =
 						["provider"] = { "n", 20393 },	-- Foreman Sundown
 						["coord"] = { 26.4, 42.3, NETHERSTORM },
 						["sourceQuest"] = 10317,	-- Dealing with the Foreman
-						["g"] = {
+						["groups"] = {
 							i(30003),	-- Gloves of the Nether-Stalker
 							i(30004),	-- Landing Boots
 							i(30005),	-- Overmaster's Shoulders
@@ -562,7 +638,7 @@ _.Zones =
 						["provider"] = { "n", 19728 },	-- Mama Wheeler
 						["coord"] = { 46.6, 56.5, NETHERSTORM },
 						["sourceQuest"] = 10234,	-- One Demon's Trash...
-						["g"] = {
+						["groups"] = {
 							i(30279),	-- Mama's Insurance
 							i(30278),	-- Pilfered Ethereal Blade
 							i(30277),	-- Ripfang Paw
@@ -572,7 +648,7 @@ _.Zones =
 						["provider"] = { "n", 20482 },	-- Image of Commander Ameer
 						["coord"] = { 56.8, 38.7, NETHERSTORM },
 						["sourceQuest"] = 10405,	-- S-A-B-O-T-A-G-E
-						["g"] = {
+						["groups"] = {
 							i(30335),	-- Druidic Force Boots
 							i(30337),	-- Protectorate Headplate
 							i(30336),	-- Surger's Hand Wraps
@@ -583,7 +659,7 @@ _.Zones =
 						["provider"] = { "n", 19488 },	-- Custodian Dieworth
 						["coord"] = { 57.5, 86.3, NETHERSTORM },
 						["sourceQuest"] = 10319,	-- Capturing the Phylactery
-						["g"] = {
+						["groups"] = {
 							i(29782),	-- Coif of the Wicked
 							i(29780),	-- Kirin Tor Apprentice's Robes
 							i(29783),	-- Legguards of the Resolute Defender
@@ -599,7 +675,7 @@ _.Zones =
 						["provider"] = { "n", 20907 },	-- Professor Dabiri
 						["coord"] = { 60.1, 31.7, NETHERSTORM },
 						["sourceQuest"] = 10438,	-- On Nethery Wings
-						["g"] = {
+						["groups"] = {
 							i(30297),	-- Circlet of the Starcaller
 							i(30300),	-- Dabiri's Enigma
 							i(30299),	-- Starcaller's Plated Leggings
@@ -615,7 +691,7 @@ _.Zones =
 						["provider"] = { "n", 19488 },	-- Custodian Dieworth
 						["coord"] = { 57.5, 86.3, NETHERSTORM },
 						["sourceQuest"] = 10222,	-- The Sunfury Garrison
-						["g"] = {
+						["groups"] = {
 							i(29792),	-- Dawnstrider's Cloak
 							i(30399),	-- Nightstalker's Wristguards
 							i(29793),	-- Signet of the Violet Tower
@@ -626,7 +702,7 @@ _.Zones =
 						["provider"] = { "n", 19634 },	-- Lead Sapper Blastfizzle
 						["coord"] = { 34.2, 68.0, NETHERSTORM },
 						["sourceQuest"] = 10203,	-- Invaluable Asset Zapping
-						["g"] = {
+						["groups"] = {
 							i(30514),	-- Nether Guards
 							i(29968),	-- Nether Leggings
 							i(29967),	-- Nether Vest
@@ -645,7 +721,7 @@ _.Zones =
 						["provider"] = { "n", 19709 },	-- Chief Engineer Trep
 						["coord"] = { 32.4, 66.8, NETHERSTORM },
 						["sourceQuest"] = 10224,	-- Essence for the Engines
-						["g"] = {
+						["groups"] = {
 							i(30264),	-- Area 52 Engineering Gloves
 							i(30516),	-- Chief Engineer's Belt
 							i(30263),	-- Heavy-Duty Engineering Boots
@@ -655,7 +731,7 @@ _.Zones =
 					q(10425, {	-- Escape from the Staging Grounds
 						["provider"] = { "n", 20763 },	-- Captured Protectorate Vanguard
 						["coord"] = { 57.0, 37.6, NETHERSTORM },
-						["g"] = {
+						["groups"] = {
 							i(30331),	-- Diviner's Cinch
 							i(30332),	-- Ferocious Bands
 							i(30333),	-- Spaulders of the Protectorate
@@ -704,12 +780,13 @@ _.Zones =
 						["provider"] = { "n", 19645 },	-- Papa Wheeler
 						["coord"] = { 33.0, 64.7, NETHERSTORM },
 						["sourceQuest"] = 10206,	-- Pick Your Part
+						["isBreadcrumb"] = true,
 					}),
 					q(10293, {	-- Hitting the Motherlode
 						["provider"] = { "n", 20067 },	-- Zuben Elgenubi
 						["coord"] = { 44.1, 36.0, NETHERSTORM },
 						["sourceQuest"] = 10290,	-- In Search of Farahlite
-						["g"] = {
+						["groups"] = {
 							i(29814),	-- Celestial Jewel Ring
 							i(29815),	-- Chain of Glowing Tendrils
 							i(29813),	-- Cloak of Woven Energy
@@ -736,7 +813,7 @@ _.Zones =
 					q(10309, {	-- It's a Fel Reaver, But with Heart
 						["provider"] = { "n", 19690 },	-- N. D. Meancamp
 						["coord"] = { 26.8, 77.0, NETHERSTORM },
-						["g"] = {
+						["groups"] = {
 							i(30268),	-- Heap Leggings
 							i(30270),	-- Scavenged Breastplate
 							i(30269),	-- Warp-Raider's Eyepatch
@@ -757,7 +834,7 @@ _.Zones =
 					q(10191, {	-- Mark V is Alive!
 						["provider"] = { "n", 19589 },	-- Maxx A. Million Mk. V
 						["coord"] = { 31.6, 56.6, NETHERSTORM },
-						["g"] = {
+						["groups"] = {
 							i(30226),	-- Alley's Recurve
 							-- #if BEFORE MOP
 							i(30227, {	-- Mark V's Throwing Star
@@ -771,7 +848,7 @@ _.Zones =
 						["provider"] = { "n", 20463 },	-- Apprentice Andrethan
 						["coord"] = { 57.7, 85.2, NETHERSTORM },
 						["sourceQuest"] = 10331,	-- Indispensable Tools
-						["g"] = {
+						["groups"] = {
 							i(29789),	-- Andrethan's Masterwork
 							i(29788),	-- Finely Wrought Scale Leggings
 							i(29787),	-- Master Smith's Hammer
@@ -791,7 +868,7 @@ _.Zones =
 						["provider"] = { "n", 20482 },	-- Image of Commander Ameer
 						["coord"] = { 56.8, 38.7, NETHERSTORM },
 						["sourceQuest"] = 10406,	-- Delivering the Message
-						["g"] = {
+						["groups"] = {
 							i(30011),	-- Ameer's Impulse Taser
 							i(30012),	-- Ameer's Judgment
 							i(30010),	-- Fleshling Simulation Staff
@@ -826,7 +903,7 @@ _.Zones =
 						["provider"] = { "n", 19645 },	-- Papa Wheeler
 						["coord"] = { 33.0, 64.7, NETHERSTORM },
 						["sourceQuest"] = 10265,	-- Consortium Crystal Collection
-						["g"] = {
+						["groups"] = {
 							i(30275),	-- Mech Tech Shoulders
 							i(30274),	-- Papa's Armbands
 							i(30276),	-- Wheeler Family Heirloom
@@ -868,7 +945,7 @@ _.Zones =
 						["provider"] = { "n", 20205 },	-- Audi the Needle
 						["coord"] = { 44.7, 36.7, NETHERSTORM },
 						["sourceQuests"] = { 10434 },	-- The Dynamic Duo
-						["g"] = {
+						["groups"] = {
 							i(30284),	-- Audi's Embroidered Boots
 							i(30285),	-- B.O.O.M. Operative's Belt
 							i(30402),	-- Field Agent's Bracers
@@ -879,7 +956,7 @@ _.Zones =
 						["provider"] = { "n", 20066 },	-- Gahruj
 						["coord"] = { 46.7, 56.9, NETHERSTORM },
 						["sourceQuest"] = 10266,	-- Request for Assistance
-						["g"] = {
+						["groups"] = {
 							i(30273),	-- Duro Footgear
 							i(30272),	-- Eco-Dome Leggings
 							i(30271),	-- Midrealm Hat
@@ -897,7 +974,7 @@ _.Zones =
 					q(10310, {	-- Sabotage the Warp-Gate!
 						["provider"] = { "n", 20281 },	-- Drijya
 						["sourceQuest"] = 10311,	-- Drijya Needs Your Help
-						["g"] = {
+						["groups"] = {
 							i(29978),	-- Consortium Combatant's Robes
 							i(29980),	-- Midrealm Leggings
 							i(29979),	-- Netherstorm Eyepatch
@@ -912,7 +989,7 @@ _.Zones =
 						["provider"] = { "n", 20110 },	-- Tyri
 						["coord"] = { 71.2, 35.1, NETHERSTORM },
 						["sourceQuest"] = 10273,	-- Troublesome Distractions
-						["g"] = {
+						["groups"] = {
 							i(29812),	-- Blued Steel Gauntlets
 							i(29810),	-- Dragon Crested Epaulets
 							i(29811),	-- Goldenlink Bracers
@@ -928,7 +1005,7 @@ _.Zones =
 						["coord"] = { 45.9, 36.0, NETHERSTORM },
 						["sourceQuest"] = 10276,	-- Full Triangle
 						["description"] = "Items do not show up on quest rewards but appearances are awarded upon turn in to A'dal.",
-						["g"] = {
+						["groups"] = {
 							i(30258),	-- Chestplate of A'dal
 							i(30256),	-- Pants of the Naaru
 							i(30257),	-- Shattrath Leggings
@@ -938,7 +1015,7 @@ _.Zones =
 						["provider"] = { "n", 20913 },	-- Tashar
 						["coord"] = { 44.7, 14.6, NETHERSTORM },
 						["sourceQuest"] = 10436,	-- All Clear!
-						["g"] = {
+						["groups"] = {
 							i(30520),	-- Gold-Trimmed Cuffs
 							i(30293),	-- Heavenly Inspiration
 							i(30290),	-- Leggings of Concentrated Power
@@ -952,7 +1029,7 @@ _.Zones =
 					q(10335, {	-- Surveying the Ruins
 						["provider"] = { "n", 20470 },	-- Zephyrion
 						["coord"] = { 44.7, 34.9, NETHERSTORM },
-						["g"] = {
+						["groups"] = {
 							i(30255),	-- Chestguard of the Stormspire
 							i(30253),	-- Ethereal Gloves
 							i(30254),	-- Zephyrion's Belt
@@ -962,7 +1039,7 @@ _.Zones =
 						["provider"] = { "n", 20471 },	-- Nether-Stalker Nauthis
 						["coord"] = { 44.7, 34.9, NETHERSTORM },
 						["sourceQuest"] = 10856,	-- The Best Defense
-						["g"] = {
+						["groups"] = {
 							i(31699),	-- Imbued Draenethyst Crystal
 							i(31703),	-- Nether-Stalker's Blade
 							i(31700),	-- Runed Silver Staff
@@ -978,7 +1055,7 @@ _.Zones =
 						["provider"] = { "n", 19617 },	-- Boots
 						["coord"] = { 32.3, 63.9, NETHERSTORM },
 						["sourceQuest"] = 10342,	-- Securing the Shaleskin Shale
-						["g"] = {
+						["groups"] = {
 							i(29999),	-- After Hours Pauldrons
 							i(30002),	-- Boot's Boots
 							i(30001),	-- Doc's Belt
@@ -1005,7 +1082,7 @@ _.Zones =
 					q(10345, {	-- The Flesh Lies...
 						["provider"] = { "n", 20551 },	-- Agent Araxes
 						["coord"] = { 59.4, 45.0, NETHERSTORM },
-						["g"] = {
+						["groups"] = {
 							i(30519),	-- Boots of the Nexus Warden
 							i(30352),	-- Demolisher's Bracers
 							i(30341),	-- Flash Handler's Gauntlets
@@ -1016,7 +1093,7 @@ _.Zones =
 						["provider"] = { "i", 29738 },	-- Vial of Void Horror Ooze
 						["crs"] = { 20779 },	-- Congealed Void Horror
 						["coord"] = { 54.6, 44.1, NETHERSTORM },
-						["g"] = {
+						["groups"] = {
 							i(30338),	-- Diviner's Cloak
 							i(30339),	-- Protectorate Assassin's Ring
 							i(30340),	-- Starkiller's Bauble
@@ -1029,7 +1106,7 @@ _.Zones =
 					q(10188, {	-- The Sigil of Krasus
 						["provider"] = { "n", 19644 },	-- Image of Archmage Vargoth
 						["sourceQuest"] = 10174,	-- Curse of the Violet Tower
-						["g"] = {
+						["groups"] = {
 							i(29773),	-- Battle-Mage's Helmet
 							i(29774),	-- Kirin'Var Defender's Chausses
 							i(29771),	-- Kirin'Var Journeyman's Belt
@@ -1083,7 +1160,7 @@ _.Zones =
 					q(10261, {	-- Wanted: Annihilator Servo!
 						["provider"] = { "o", 183811 },	-- Wanted Poster
 						["coord"] = { 32.1, 64.7, NETHERSTORM },
-						["g"] = {
+						["groups"] = {
 							i(30295),	-- Exotic Spiked Shoulders
 							i(30296),	-- Lost Chestplate of the Reverent
 							i(30294),	-- Red Pointy Hat
@@ -1098,7 +1175,7 @@ _.Zones =
 						["provider"] = { "n", 19880 },	-- Nether-Stalker Khay'ji
 						["coord"] = { 32.4, 64.2, NETHERSTORM },
 						["sourceQuest"] = 10262,	-- A Heap of Ethereals
-						["g"] = {
+						["groups"] = {
 							i(30266),	-- Zaxxis Boots
 							i(30265),	-- Zaxxis Bracers
 							i(30267),	-- Zaxxis Gloves
@@ -1113,7 +1190,7 @@ _.Zones =
 						["provider"] = { "n", 20415 },	-- Bessy
 						["coord"] = { 59.1, 78.8, NETHERSTORM },
 						["sourceQuest"] = 10334,	-- Needs More Cowbell
-						["g"] = {
+						["groups"] = {
 							i(29806),	-- Cowpoke's Riding Gloves
 							i(29807),	-- Engraved Cattleman's Buckle
 							i(30523),	-- Hotshot Cattle Prod
@@ -1132,13 +1209,17 @@ _.Zones =
 						["sourceQuests"] = {
 							11042,	-- A Mystifying Vision
 							11037,	-- A Strange Vision
+							-- #if AFTER 6.2.0.20182
 							39202,	-- Hero's Call: Netherstorm!
+							-- #endif
 							10183,	-- Off To Area 52
 							11036,	-- Out of This World Produce!
 							11040,	-- Parts for the Rocket-Chief
+							-- #if AFTER 6.2.0.20182
 							39201,	-- Warchief's Command: Netherstorm!
+							-- #endif
 						},
-						["g"] = {
+						["groups"] = {
 							i(30225),	-- Junior Technician 3rd Grade Bracers
 							i(30224),	-- Junior Technician 3rd Grade Gloves
 							i(30515),	-- Junior Technician 3rd Grade Goggles
@@ -1223,7 +1304,7 @@ _.Zones =
 				n(VENDORS, {
 					n(19540,  {	-- Asarnan <Enchanting Trainer>
 						["coord"] = { 44.2, 33.6, NETHERSTORM },
-						["g"] = ASARNAN_MALIJ_GROUPS,
+						["groups"] = ASARNAN_MALIJ_GROUPS,
 					}),
 					-- #if NOT ANYCLASSIC
 					n(26352,  {	-- Big Zokk Torquewrench Original BC S4 VENDOR
@@ -1232,7 +1313,7 @@ _.Zones =
 					n(54649,  {	-- Big Zokk Torquewrench <Classic Weapons>
 						["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.|r",
 						["coord"] = { 33.2, 64.0, NETHERSTORM },
-						["g"] = pvp({
+						["groups"] = pvp({
 							a(i(77549)),	-- Replica Grand Marshal's Demolisher
 							a(i(77550)),	-- Replica Grand Marshal's Swiftblade
 							a(i(77551)),	-- Replica Grand Marshal's Dirk
@@ -1278,7 +1359,7 @@ _.Zones =
 					n(107619, {	-- Blaze Magmaburn <Brutal and Guardian Gladiator>
 						["coord"] = { 33.2, 64.0, NETHERSTORM },
 						["itemID"] = 137642,	-- Mark of Honor
-						["g"] = {
+						["groups"] = {
 							n(WEAPONS, {
 								i(146648, {	-- Arsenal: Brutal Gladiator's Weapons [ Horde / Alliance / Tested ]
 									["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
@@ -1973,7 +2054,7 @@ _.Zones =
 					-- #endif
 					n(19536,  {	-- Dealer Jadyan <Exotic Weapons>
 						["coord"] = { 44.0, 36.6, NETHERSTORM },
-						["g"] = {
+						["groups"] = {
 							i(29380, {	-- Ethereum Phase Blade
 								["isLimited"] = true,
 							}),
@@ -1997,11 +2078,11 @@ _.Zones =
 					}),
 					n(19537,  {	-- Dealer Malij <Enchanting Supplies>
 						["coord"] = { 44.2, 34.0, NETHERSTORM },
-						["g"] = ASARNAN_MALIJ_GROUPS,
+						["groups"] = ASARNAN_MALIJ_GROUPS,
 					}),
 					n(20980,  {	-- Dealer Rashaad <Exotic Creatures>
 						["coord"] = { 43.4, 35.2, NETHERSTORM },
-						["g"] = {
+						["groups"] = {
 							i(29958),	-- Blue Dragonhawk Hatchling (PET!)
 							i(29364),	-- Brown Rabbit Crate (PET!)
 							i(8490),	-- Cat Carrier (Siamese) (PET!)
@@ -2015,7 +2096,7 @@ _.Zones =
 					-- #if NOT ANYCLASSIC
 					n(34089, {	-- Grex Brainboiler <Veteran Arena Vendor> Original WOTLK S6 ELITE VENDOR
 						["u"] = REMOVED_FROM_GAME,
-						["g"] = {
+						["groups"] = {
 						--[[	-- Items are commented out to reduce bloat.
 							un(REMOVED_FROM_GAME, i(45983)),	-- Furious Gladiator's Tabard
 							n(WEAPONS, {
@@ -2052,7 +2133,7 @@ _.Zones =
 					}),
 					n(34091,  {	-- Grex Brainboiler <Veteran Arena Vendor> Original WOTLK S7 ELITE VENDOR
 						["u"] = REMOVED_FROM_GAME,
-						["g"] = {
+						["groups"] = {
 						--[[	-- Items are commented out to reduce bloat.
 							un(REMOVED_FROM_GAME, i(49086)),	-- Relentless Gladiator's Tabard
 							n(WEAPONS, {
@@ -2090,7 +2171,7 @@ _.Zones =
 					}),
 					n(34094, {	-- Grex Brainboiler <Veteran Arena Vendor> Original WOTLK S8 ELITE VENDOR
 						["u"] = REMOVED_FROM_GAME,
-						["g"] = {
+						["groups"] = {
 						--[[	-- Items are commented out to reduce bloat.
 							un(REMOVED_FROM_GAME, i(51534)),	-- Wrathful Gladiator's Tabard [Elite Rating]
 							un(REMOVED_FROM_GAME, i(51403)),	-- Wrathful Gladiator's Acute Staff [Elite Rating]
@@ -2127,7 +2208,7 @@ _.Zones =
 					n(40209,  {	-- Grex Brainboiler <Classic Alliance Cloth & Leather>
 						["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase. |r",
 						["coord"] = { 33.0, 64.0, NETHERSTORM },
-						["g"] = pvp({
+						["groups"] = pvp({
 							i(77670),	-- Replica Field Marshal's Dragonhide Breastplate
 							i(77692),	-- Replica Field Marshal's Satin Mantle
 							i(77710),	-- Replica Field Marshal's Coronal
@@ -2232,7 +2313,7 @@ _.Zones =
 					n(107599, {	-- Izzee the 'Clutch' <Merciless and Veteran's Gladiator>
 						["coord"] = { 33.0, 64.2, NETHERSTORM },
 						["itemID"] = 137642,	-- Mark of Honor
-						["g"] = {
+						["groups"] = {
 							n(WEAPONS, {
 								i(146650, {	-- Arsenal: Merciless Gladiator's Weapons [Horde / Alliance / Tested ] { Note: Contains Gladiator/Merciless Sets }
 									["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
@@ -2882,51 +2963,52 @@ _.Zones =
 						["requireSkill"] = 20222,	-- Goblin Engineering
 						["description"] = "Goblin Engineers can speak to Kablamm to learn the recipe.",
 						["coord"] = { 32.9, 63.7, NETHERSTORM },
-						["g"] = {
+						["groups"] = {
 							recipe(36954),	-- Dimensional Ripper - Area 52
 						},
 					}),
 					n(20242,  {	-- Karaaz <Consortium Quartermaster>
 						["coord"] = { 43.6, 34.4, NETHERSTORM },
-						["g"] = {
+						["groups"] = {
 							i(29115),	-- Consortium Blaster
 							i(31776),	-- Consortium Tabard
 							i(33156),	-- Design: Crimson Sun
 							i(23134),	-- Design: Delicate Blood Garnet
 							i(33305),	-- Design: Don Julio's Heart
+							-- #if BEFORE CATA
+							i(23136),	-- Design: Luminous Flame Spessarite [TBC] / Design: Reckless Flame Spessarite [Cata+]
+							i(23155),	-- Design: Lustrous Azure Moonstone [TBC] / Design: Sparkling Azure Moonstone [Cata+]
+							-- #endif
 							i(24178),	-- Design: Pendant of the Null Rune
-							i(23136),	-- Design: Reckless Flame Spessarite
+							-- #if AFTER CATA
+							i(23136),	-- Design: Reckless Flame Spessarite [Cata+] / Design: Luminous Flame Spessarite [TBC]
+							-- #endif
 							i(33622),	-- Design: Relentless Earthstorm Diamond
-							i(32412, {	-- Design: Relentless Earthstorm Diamond
-								["spellID"] = 0,	-- This is now available via 33622, need to delink the old plans from the recipe
-								["u"] = REMOVED_FROM_GAME,
-							}),
 							i(23146),	-- Design: Shifting Shadow Draenite
-							i(31871, {	-- Design: Shifting Shadow Draenite
-								["spellID"] = 0,	-- This is now available via 23146, need to delink the old plans from the recipe
-								["u"] = REMOVED_FROM_GAME,
-							}),
-							i(31872, {	-- Design: Shifting Shadow Draenite
-								["spellID"] = 0,	-- This is now available via 23146, need to delink the old plans from the recipe
-								["u"] = REMOVED_FROM_GAME,
-							}),
-							i(23155),	-- Design: Sparkling Azure Moonstone
-							i(23150),	-- Design: Subtle Golden Draenite
+							-- #if AFTER CATA
+							i(23155),	-- Design: Sparkling Azure Moonstone [Cata+] / Design: Lustrous Azure Moonstone [TBC]
+							i(23150),	-- Design: Subtle Golden Draenite [Cata+] / Design: Thick Golden Draenite [TBC]
+							-- #endif
 							i(25908),	-- Design: Swift Skyfire Diamond
-							i(28274),	-- Formula: Enchant Cloak - PvP Power
-							i(22552),	-- Formula: Enchant Weapon - Major Striking
+							-- #if BEFORE CATA
+							i(23150),	-- Design: Thick Golden Draenite [TBC] / Design: Subtle Golden Draenite [Cata+]
+							-- #endif
+							i(28274),	-- Formula: Enchant Cloak - Spell Penetration [TBC] / Formula: Enchant Cloak - PvP Power [Cata+]
+							applyclassicphase(TBC_PHASE_THREE, i(22552)),	-- Formula: Enchant Weapon - Major Striking
 							i(29456),	-- Gift of the Ethereal
 							i(29121),	-- Guile of Khoraazi
 							i(29119),	-- Haramad's Bargain
-							i(138796),	-- Illusion: Executioner
+							i(138796, {	-- Illusion: Executioner
+								["timeline"] = { "added 7.0.3.22248" },
+							}),
 							i(29122),	-- Nether Runner's Cowl
 							i(29457),	-- Nethershard
 							i(29116),	-- Nomad's Leggings
 							i(24314),	-- Pattern: Bag of Jewels
-							i(25733),	-- Pattern: Fel Leather Boots
-							i(25732),	-- Pattern: Fel Leather Gloves
-							i(25734),	-- Pattern: Fel Leather Leggings
-							applyclassicphase(TBC_PHASE_THREE, i(23874)),	-- Schematic: Elemental Seaforium Charge
+							i(25733), 	-- Pattern: Fel Leather Boots
+							i(25732), 	-- Pattern: Fel Leather Gloves
+							i(25734), 	-- Pattern: Fel Leather Leggings
+							i(23874),	-- Schematic: Elemental Seaforium Charge
 							i(29118, {	-- Smuggler's Ammo Pouch
 								["timeline"] = { "removed 4.0.1.12941" },
 							}),
@@ -2940,7 +3022,7 @@ _.Zones =
 					n(54650,  {	-- Kezzik the Striker <Gladiator and General's Gladiator>
 						["coord"] = { 33.0, 64.2, NETHERSTORM },
 						["itemID"] = 137642,	-- Mark of Honor
-						["g"] = {
+						["groups"] = {
 							n(WEAPONS, {
 								-- Never added, combined with Season 2
 								-- i(146651, {	-- Arsenal: Gladiator's Weapons
@@ -3724,7 +3806,7 @@ _.Zones =
 					n(107610, {	-- Kitzie Crankshot <Vengeful and Vindicator's Gladiator>
 						["coord"] = { 33.0, 64.2, NETHERSTORM },
 						["itemID"] = 137642,	-- Mark of Honor
-						["g"] = {
+						["groups"] = {
 							n(WEAPONS, {
 								i(146649, {	-- Arsenal: Vengeful Gladiator's Weapons [ Horde / Alliance / Tested ]
 									["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
@@ -4372,7 +4454,7 @@ _.Zones =
 					n(23396,  {	-- Krixel Pinchwhistle <Classic Alliance Mail & Plate>
 						["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.|r",
 						["coord"] = { 33.0, 64.0, NETHERSTORM },
-						["g"] = pvp({
+						["groups"] = pvp({
 							i(77718),	-- Replica Field Marshal's Plate Shoulderguards
 							i(77673),	-- Replica Field Marshal's Chain Spaulders
 							i(77714),	-- Replica Field Marshal's Plate Armor
@@ -4447,15 +4529,15 @@ _.Zones =
 							i(77609),	-- Replica Lieutenant Commander's Chain Helmet
 							i(77606),	-- Replica Knight-Lieutenant's Chain Boots
 							i(77660, {	-- Replica Sergeant Major's Plate Wristguards
-								["races"] = ALLIANCE_ONLY,
 								["description"] = "This item has to be purchased on Alliance as there is no matching Horde Version.",
+								["races"] = ALLIANCE_ONLY,
 							}),
 						}),
 					}),
 					n(54648,  {	-- Leeni "Smiley" Smalls <Classic Horde Mail & Plate>
 						["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.|r",
 						["coord"] = { 33.0, 64.0, NETHERSTORM },
-						["g"] = pvp({
+						["groups"] = pvp({
 							i(77897),	-- Replica Warlord's Lamellar Pauldrons
 							i(77880),	-- Replica Warlord's Chain Shoulders
 							i(77923),	-- Replica Warlord's Plate Shoulders
@@ -4533,7 +4615,7 @@ _.Zones =
 					n(58152,  {	-- Tini Smalls <Classic Horde Cloth & Leather>
 						["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.|r",
 						["coord"] = { 33.0, 64.2, NETHERSTORM },
-						["g"] = pvp({
+						["groups"] = pvp({
 							i(77900),	-- Replica Warlord's Satin Cowl
 							i(77874),	-- Replica Warlord's Dragonhide Helmet
 							i(77919),	-- Replica Warlord's Dreadweave Robe
@@ -4640,7 +4722,7 @@ _.Zones =
 					-- #endif
 					n(20112,  {	-- Wind Trader Tuluman <Weapon Merchant>
 						["coord"] = { 34.6, 37.8, NETHERSTORM },
-						["g"] = {
+						["groups"] = {
 							i(30755, {	-- Mag'hari Fighting Claw
 								["isLimited"] = true,
 							}),
@@ -4712,7 +4794,7 @@ _.Zones =
 					i(23610, {	-- Plans: Khorium Boots
 						["cr"] = 18873,	-- Disembodied Protector
 					}),
-					applyclassicphase(TBC_PHASE_THREE, i(33804, {	-- Schematic: Adamantite Arrow Maker
+					applyclassicphase(TBC_PHASE_TWO, i(33804, {	-- Schematic: Adamantite Arrow Maker
 						["cr"] = 19707,	-- Sunfury Archer
 					})),
 					i(23808, {	-- Schematic: Khorium Scope
@@ -4743,7 +4825,9 @@ _.HiddenQuestTriggers = {
 -- These quests never made it in.
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
-		i(134012),	-- X-52 Rocket Helmet [Might be the transmog it applies when you use the toy itself.]
+		i(134012, {	-- X-52 Rocket Helmet [Might be the transmog it applies when you use the toy itself.]
+			["timeline"] = { "removed 7.0.3.22248" },
+		}),
 		q(10187),	-- A Message for the Archmage
 		q(10441),	-- Peddling the Goods
 		q(10179),	-- The Custodian of Kirin'Var
