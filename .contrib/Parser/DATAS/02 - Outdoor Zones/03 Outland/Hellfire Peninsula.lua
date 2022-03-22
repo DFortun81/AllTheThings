@@ -78,7 +78,7 @@ _.Zones =
 		m(HELLFIRE_PENINSULA, {
 			["lore"] = "Hellfire Peninsula is intended to be the first questing zone players hit after passing through The Dark Portal. It is a scorched zone, the site of many former battles and the massacre of the Draenei. Players are introduced early on to the threat of the Burning Legion at The Legion Front, further learning about Magtheridon's creation of the corrupted Fel Orcs and the sacrifices made in past battles on Draenor. Players also begin to learn about Draenic and Orcish culture in quest hubs in the western peninsula.",
 			-- #if AFTER WRATH
-			["achievementID"] = 862,
+			["icon"] = "Interface\\Icons\\achievement_zone_hellfirepeninsula_01",
 			-- #endif
 			["groups"] = {
 				n(ACHIEVEMENTS, {
@@ -93,8 +93,58 @@ _.Zones =
 							}),
 						},
 					}),
-					ach(1189, {	-- To Hellfire and Back [Alliance Version]
+					removeclassicphase(ach(862, {	-- Explore Hellfire Peninsula
+						-- #if BEFORE WRATH
+						["description"] = "Explore Hellfire Peninsula, revealing the covered areas of the world map.",
+						["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
+						-- #endif
+					})),
+					removeclassicphase(ach(1189, {	-- To Hellfire and Back [Alliance Version]
 						["races"] = ALLIANCE_ONLY,
+						-- #if ANYCLASSIC
+						-- #if AFTER CATA
+						["sourceQuests"] = {
+							-- Disrupt the Burning Legion
+							10397,	-- Invasion Point: Annihilator
+							
+							-- Overthrow the Overlord
+							10400,	-- Overlord
+							10399,	-- The Heart of Darkness
+							
+							-- In Search of Sedai
+							9545,	-- The Seer's Relic
+							
+							-- The Exorcism of Colonel Jules
+							10935,	-- The Exorcism of Colonel Jules
+							
+							-- Drill the Drillmaster
+							10937,	-- Drill the Drillmaster
+							
+							-- Temple of Telhamat
+							9383,	-- An Ambitious Plan
+							9490,	-- The Rock Flayer Matriarch
+							-- all quests below need to be confirmed
+							9427,	-- Cleaning the Waters
+							9398,	-- Deadly Predators
+							
+							-- Green, But Not Orcs
+							10630,	-- Beneath Thrallmar
+							9356,	-- Smooth as Butter
+							9351,	-- Voidwalkers Gone Wild
+							
+							-- Cenarion Post
+							10351,	-- Natural Remedies
+							10255,	-- Testing the Antidote
+						},
+						-- #elseif BEFORE WRATH
+						["description"] = "Complete 80 quests in Hellfire Peninsula.",
+						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
+						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
+						["rank"] = 80,
+						-- #endif
+						-- #else
 						["groups"] = {
 							crit(1, {	-- Disrupt the Burning Legion
 								["sourceQuest"] = 10397,	-- Invasion Point: Annihilator
@@ -137,9 +187,59 @@ _.Zones =
 								},
 							}),
 						},
-					}),
-					ach(1271, {	-- To Hellfire and Back [Horde Version]
+						-- #endif
+					})),
+					removeclassicphase(ach(1271, {	-- To Hellfire and Back [Horde Version]
 						["races"] = HORDE_ONLY,
+						-- #if ANYCLASSIC
+						-- #if AFTER CATA
+						["sourceQuests"] = {
+							-- Disrupt the Burning Legion
+							10388,	-- Return to Thrallmar
+							
+							-- Cruel's Intentions
+							10136,	-- Cruel's Intentions
+							10389,	-- The Agony and the Darkness
+							10393,	-- Vile Plans
+							
+							-- The Hand of Kargath
+							10876,	-- The Foot of the Citadel
+							
+							-- Spinebreaker Post
+							10295,	-- From the Abyss
+							10834,	-- Grillok "Darkeye"
+							10258,	-- Honor the Fallen (probably)
+							10220,	-- Make Them listen
+							9345,	-- Preparing the Salve
+							
+							-- The Mag'har
+							9406,	-- The Mag'har
+							
+							-- Falcon Watch
+							9397,	-- Birds of a Feather
+							9370,	-- The Cleansing Must Be Stopped
+							-- all quests below need to be confirmed
+							9472,	-- Arelion's Mistress
+							9391,	-- Marking the Path
+							9387,	-- Source of the Corruption
+							
+							-- Green, But Not Orcs
+							10630,	-- Beneath Thrallmar
+							9356,	-- Smooth as Butter
+							9351,	-- Voidwalkers Gone Wild
+							
+							-- Cenarion Post
+							10351,	-- Natural Remedies
+							10255,	-- Testing the Antidote
+						},
+						-- #elseif BEFORE WRATH
+						["description"] = "Complete 89 quests in Hellfire Peninsula.",
+						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
+						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
+						["rank"] = 89,
+						-- #endif
+						-- #else
 						["groups"] = {
 							crit(1, {	-- Disrupt the Burning Legion
 								["sourceQuest"] = 10388,	-- Return to Thrallmar
@@ -190,7 +290,8 @@ _.Zones =
 								},
 							}),
 						},
-					}),
+						-- #endif
+					})),
 				}),
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
@@ -226,9 +327,11 @@ _.Zones =
 				-- #endif
 				n(FACTIONS, {
 					faction(946, {	-- Honor Hold
+						["maps"] = { HELLFIRE_CITADEL_BLOOD_FURNACE, HELLFIRE_CITADEL_RAMPARTS, HELLFIRE_CITADEL_SHATTERED_HALLS },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					faction(947, {	-- Thrallmar
+						["maps"] = { HELLFIRE_CITADEL_BLOOD_FURNACE, HELLFIRE_CITADEL_RAMPARTS, HELLFIRE_CITADEL_SHATTERED_HALLS },
 						["races"] = HORDE_ONLY,
 					}),
 				}),
@@ -275,6 +378,9 @@ _.Zones =
 						["coord"] = { 56.2, 36.2, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 					}),
+				}),
+				prof(FISHING, {
+					i(34867),	-- Monstrous Felblood Snapper
 				}),
 				n(QUESTS, {
 					q(10864, {	-- A Burden of Souls
@@ -732,6 +838,17 @@ _.Zones =
 							}),
 							i(28062),	-- Expedition Repeater
 							i(28063),	-- Survivalist's Wand
+							-- #if BEFORE MOP
+							i(28064, {	-- Idol of the Wild
+								["timeline"] = { "removed 5.0.4.10000" },
+							}),
+							i(28065, {	-- Libram of Wracking
+								["timeline"] = { "removed 5.0.4.10000" },
+							}),
+							i(28066, {	-- Totem of Lightning
+								["timeline"] = { "removed 5.0.4.10000" },
+							}),
+							-- #endif
 						},
 					}),
 					q(10134, {	-- Crimson Crystal Clue
@@ -1453,16 +1570,18 @@ _.Zones =
 						["cost"] = {
 							{ "i", 28105, 1 },	-- Duron's Report
 						},
+						["isBreadcrumb"] = true,
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 10, 58),
 					}),
 					q(10289, {	-- Journey to Thrallmar
 						["qg"] = 18930,	-- Vlagga Freyfeather
-						["sourceQuest"] = 10120,	-- Arrival in Outlanad
+						["sourceQuest"] = 10120,	-- Arrival in Outland
 						["coord"] = { 87.3, 48.1, HELLFIRE_PENINSULA },
 						["cost"] = {
 							{ "i", 28024, 1 },	-- Orion's Report
 						},
+						["isBreadcrumb"] = true,
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 10, 58),
 					}),
@@ -2478,11 +2597,11 @@ _.Zones =
 							objective(1, {	-- 0/12 Unyielding Footman slain
 								["cr"] = 16904,	-- Unyielding Footman
 							}),
-							objective(2, {	-- 0/8 Unyielding Knight slain
-								["cr"] = 16906,	-- Unyielding Knight
-							}),
-							objective(3, {	-- 0/6 Unyielding Sorcerer slain
+							objective(2, {	-- 0/10 Unyielding Sorcerer slain
 								["cr"] = 16905,	-- Unyielding Sorcerer
+							}),
+							objective(3, {	-- 0/5 Unyielding Knight slain
+								["cr"] = 16906,	-- Unyielding Knight
 							}),
 						},
 					}),
@@ -2610,36 +2729,6 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 10, 58),
 						["groups"] = {
-							objective(1, {	-- Barracks Burned
-								["provider"] = { "i", 31346 },	-- Burning Bleeding Hollow Torch
-								["coord"] = { 69.5, 76.0, HELLFIRE_PENINSULA },
-							}),
-							objective(2, {	-- Eastern Hovel Burned
-								["provider"] = { "i", 31346 },	-- Burning Bleeding Hollow Torch
-								["coord"] = { 69.9, 70.0, HELLFIRE_PENINSULA },
-							}),
-							objective(3, {	-- Western Hovel Burned
-								["provider"] = { "i", 31346 },	-- Burning Bleeding Hollow Torch
-								["coord"] = { 67.3, 76.3, HELLFIRE_PENINSULA },
-							}),
-							objective(4, {	-- Stable Burned
-								["provider"] = { "i", 31346 },	-- Burning Bleeding Hollow Torch
-								["coord"] = { 68.5, 73.3, HELLFIRE_PENINSULA },
-							}),
-							i(28057),	-- Bonechewer Berserker's Vest
-							i(28055),	-- Gilded Crimson Chestplate
-							i(28052),	-- Goldweave Tunic
-							i(28051),	-- Jerkin of the Untamed Spirit
-							i(28050),	-- Sacred Feather Vest
-						},
-					}),
-					q(10792, {	-- Zeth'Gor Must Burn! [Horde]
-						["qg"] = 22107,	-- Captain Darkhowl
-						["sourceQuest"] = 10809,	-- WANTED: Worg Master Kruush
-						["coord"] = { 61.2, 81.3, HELLFIRE_PENINSULA },
-						["races"] = HORDE_ONLY,
-						["lvl"] = lvlsquish(58, 10, 58),
-						["groups"] = {
 							objective(1, {	-- Northern Tower Marked
 								["provider"] = { "i", 31739 },	-- Smoke Beacon
 								["coord"] = { 68.0, 66.7, HELLFIRE_PENINSULA },
@@ -2655,6 +2744,36 @@ _.Zones =
 							objective(4, {	-- Foothill Tower Marked
 								["provider"] = { "i", 31739 },	-- Smoke Beacon
 								["coord"] = { 70.8, 71.5, HELLFIRE_PENINSULA },
+							}),
+							i(28057),	-- Bonechewer Berserker's Vest
+							i(28055),	-- Gilded Crimson Chestplate
+							i(28052),	-- Goldweave Tunic
+							i(28051),	-- Jerkin of the Untamed Spirit
+							i(28050),	-- Sacred Feather Vest
+						},
+					}),
+					q(10792, {	-- Zeth'Gor Must Burn! [Horde]
+						["qg"] = 22107,	-- Captain Darkhowl
+						["sourceQuest"] = 10809,	-- WANTED: Worg Master Kruush
+						["coord"] = { 61.2, 81.3, HELLFIRE_PENINSULA },
+						["races"] = HORDE_ONLY,
+						["lvl"] = lvlsquish(58, 10, 58),
+						["groups"] = {
+							objective(1, {	-- Barracks Burned
+								["provider"] = { "i", 31346 },	-- Burning Bleeding Hollow Torch
+								["coord"] = { 69.5, 76.0, HELLFIRE_PENINSULA },
+							}),
+							objective(2, {	-- Eastern Hovel Burned
+								["provider"] = { "i", 31346 },	-- Burning Bleeding Hollow Torch
+								["coord"] = { 69.9, 70.0, HELLFIRE_PENINSULA },
+							}),
+							objective(3, {	-- Western Hovel Burned
+								["provider"] = { "i", 31346 },	-- Burning Bleeding Hollow Torch
+								["coord"] = { 67.3, 76.3, HELLFIRE_PENINSULA },
+							}),
+							objective(4, {	-- Stable Burned
+								["provider"] = { "i", 31346 },	-- Burning Bleeding Hollow Torch
+								["coord"] = { 68.5, 73.3, HELLFIRE_PENINSULA },
 							}),
 							i(27732),	-- Infiltrator's Cloak
 							i(27731),	-- Vindicator's Cloak
@@ -2747,7 +2866,10 @@ _.Zones =
 						["groups"] = {
 							i(21993),	-- Manual: Heavy Netherweave Bandage
 							i(21992),	-- Manual: Netherweave Bandage
-							i(22012),	-- Master First Aid - Doctor in the House
+							i(22012, {	-- Master First Aid - Doctor in the House
+								["timeline"] = { "removed 3.1.0", "removed 8.0.1" },
+								["rank"] = 5,
+							}),
 						},
 					}),
 					n(18267, {	-- Battlecryer Blackeye
@@ -2794,13 +2916,25 @@ _.Zones =
 						},
 					}),
 					-- #endif
+					n(18988, {	-- Baxter <Chef>
+						["coord"] = { 56.8, 37.4, HELLFIRE_PENINSULA },
+						["groups"] = {
+							i(27736, {	-- Master Cookbook
+								["timeline"] = { "removed 3.1.0", "deleted 5.0.5" },
+								["rank"] = 5,
+							}),
+						},
+					}),
 					n(18990, {	-- Burko <Medic>
 						["coord"] = { 22.4, 39.4, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(21993),	-- Manual: Heavy Netherweave Bandage
 							i(21992),	-- Manual: Netherweave Bandage
-							i(22012),	-- Master First Aid - Doctor in the House
+							i(22012, {	-- Master First Aid - Doctor in the House
+								["timeline"] = { "removed 3.1.0", "removed 8.0.1" },
+								["rank"] = 5,
+							}),
 						},
 					}),
 					n(16585, {	-- Cookie One-Eye <Food & Drink>
@@ -2842,6 +2976,15 @@ _.Zones =
 							}),
 							i(30745, {	-- Heavy Toolbox
 								["isLimited"] = true,
+							}),
+						},
+					}),
+					n(18987, {	-- Gaston <Chef>
+						["coord"] = { 54.0, 63.6, HELLFIRE_PENINSULA },
+						["groups"] = {
+							i(27736, {	-- Master Cookbook
+								["timeline"] = { "removed 3.1.0", "deleted 5.0.5" },
+								["rank"] = 5,
 							}),
 						},
 					}),
@@ -2895,25 +3038,29 @@ _.Zones =
 							i(32883, {	-- Felbane Slugs
 								["timeline"] = { "removed 4.0.1.10000" },
 							}),
-							i(29196),	-- Glyph of Fire Warding
-							i(29189),	-- Glyph of Renewal
+							i(29196, {	-- Glyph of Fire Warding
+								["timeline"] = { "removed 5.0.4" },
+							}),
+							i(29189, {	-- Glyph of Renewal
+								["timeline"] = { "removed 5.0.4" },
+							}),
 							i(29153),	-- Blade of the Archmage
-							i(35476),	-- Crusader's Ornamented Spaulders
-							i(35477),	-- Crusader's Scaled Gauntlets
+							applyclassicphase(TBC_PHASE_TWO, i(35476)),	-- Crusader's Ornamented Spaulders
+							applyclassicphase(TBC_PHASE_TWO, i(35477)),	-- Crusader's Scaled Gauntlets
 							i(24180),	-- Design: Dawnstone Crab
 							i(23142),	-- Design: Regal Deep Peridot (Cata+) / Design: Enduring Deep Peridot (TBC)
-							i(35469),	-- Dragonhide Robe
-							i(35464),	-- Dreadweave Robe
-							i(35465),	-- Evoker's Silk Amice
+							applyclassicphase(TBC_PHASE_TWO, i(35469)),	-- Dragonhide Robe
+							applyclassicphase(TBC_PHASE_TWO, i(35464)),	-- Dreadweave Robe
+							applyclassicphase(TBC_PHASE_TWO, i(35465)),	-- Evoker's Silk Amice
 							i(25825),	-- Footman's Longsword
 							i(22531),	-- Formula: Enchant Bracer - Superior Healing
 							i(22547),	-- Formula: Enchant Chest - Exceptional Stats
 							i(33150),	-- Formula: Enchant Cloak - Subtlety
 							i(29166),	-- Hellforged Halberd
 							i(29156),	-- Honor's Call
-							i(35470),	-- Kodohide Spaulders
-							i(35467),	-- Mooncloth Vestments
-							i(35468),	-- Opportunist's Leather Gloves
+							applyclassicphase(TBC_PHASE_TWO, i(35470)),	-- Kodohide Spaulders
+							applyclassicphase(TBC_PHASE_TWO, i(35467)),	-- Mooncloth Vestments
+							applyclassicphase(TBC_PHASE_TWO, i(35468)),	-- Opportunist's Leather Gloves
 							i(29719, {	-- Pattern: Cobrahide Leg Armor
 								["spellID"] = 35549,	-- Cobrahide Leg Armor
 								["requireSkill"] = LEATHERWORKING,
@@ -2934,24 +3081,22 @@ _.Zones =
 								["spellID"] = 35554,	-- Nethercobra Leg Armor
 								["requireSkill"] = LEATHERWORKING,
 							}),
-							i(34218, {	-- Pattern: Netherscale Ammo Pouch
-								["spellID"] = 44768,	-- Netherscale Ammo Pouch
-								["requireSkill"] = LEATHERWORKING,
+							applyclassicphase(TBC_PHASE_THREE, i(34218, {	-- Pattern: Netherscale Ammo Pouch
 								["timeline"] = { "removed 4.0.1.10000" },
-							}),
+							})),
 							i(23619),	-- Plans: Felsteel Shield Spike
 							i(22905),	-- Recipe: Elixir of Major Agility
 							i(25870),	-- Recipe: Transmute Skyfire Diamond
 							i(29169),	-- Ring of Convalescence
 							i(25826),	-- Sage's Band
-							i(35466),	-- Satin Hood
-							i(35478),	-- Savage Plate Helm
-							i(35474),	-- Seer's Linked Helm
-							i(35472),	-- Seer's Mail Armor
-							i(35473),	-- Seer's Ringmail Gloves
-							i(35475),	-- Stalker's Chain Gauntlets
+							applyclassicphase(TBC_PHASE_TWO, i(35466)),	-- Satin Hood
+							applyclassicphase(TBC_PHASE_TWO, i(35478)),	-- Savage Plate Helm
+							applyclassicphase(TBC_PHASE_TWO, i(35474)),	-- Seer's Linked Helm
+							applyclassicphase(TBC_PHASE_TWO, i(35472)),	-- Seer's Mail Armor
+							applyclassicphase(TBC_PHASE_TWO, i(35473)),	-- Seer's Ringmail Gloves
+							applyclassicphase(TBC_PHASE_TWO, i(35475)),	-- Stalker's Chain Gauntlets
 							i(29151),	-- Veteran's Musket
-							i(35471),	-- Wyrmhide Gloves
+							applyclassicphase(TBC_PHASE_TWO, i(35471)),	-- Wyrmhide Gloves
 							i(24008),	-- Dried Mushroom Rations
 							i(24007),	-- Footman's Waterskin
 						},
@@ -2982,29 +3127,33 @@ _.Zones =
 								["timeline"] = { "removed 4.2.0.10000" },
 								["races"] = ALLIANCE_ONLY,
 							}),
-							i(29197),	-- Glyph of Fire Warding
-							i(29190),	-- Glyph of Renewal
+							i(29197, {	-- Glyph of Fire Warding
+								["timeline"] = { "removed 5.0.4" },
+							}),
+							i(29190, {	-- Glyph of Renewal
+								["timeline"] = { "removed 5.0.4" },
+							}),
 							i(32882, {	-- Hellfire Shot
 								["timeline"] = { "removed 4.0.1.10000" },
 							}),
 							i(29168),	-- Ancestral Band
 							i(29167),	-- Blackened Spear
-							i(35406),	-- Crusader's Ornamented Spaulders
-							i(35413),	-- Crusader's Scaled Gauntlets
+							applyclassicphase(TBC_PHASE_TWO, i(35406)),	-- Crusader's Ornamented Spaulders
+							applyclassicphase(TBC_PHASE_TWO, i(35413)),	-- Crusader's Scaled Gauntlets
 							i(31358),	-- Design: Dawnstone Crab
 							i(31359),	-- Design: Regal Deep Peridot (Cata+) / Design: Enduring Deep Peridot (TBC)
-							i(35360),	-- Dragonhide Robe
-							i(35332),	-- Dreadweave Robe
-							i(35343),	-- Evoker's Silk Amice
+							applyclassicphase(TBC_PHASE_TWO, i(35360)),	-- Dragonhide Robe
+							applyclassicphase(TBC_PHASE_TWO, i(35332)),	-- Dreadweave Robe
+							applyclassicphase(TBC_PHASE_TWO, i(35343)),	-- Evoker's Silk Amice
 							i(25824),	-- Farseer's Band
 							i(24000),	-- Formula: Enchant Bracer - Superior Healing
 							i(24003),	-- Formula: Enchant Chest - Exceptional Stats
 							i(33151),	-- Formula: Enchant Cloak - Subtlety
 							i(25823),	-- Grunt's Waraxe
-							i(35364),	-- Kodohide Spaulders
+							applyclassicphase(TBC_PHASE_TWO, i(35364)),	-- Kodohide Spaulders
 							i(29152),	-- Marksman's Bow
-							i(35337),	-- Mooncloth Vestments
-							i(35366),	-- Opportunist's Leather Gloves
+							applyclassicphase(TBC_PHASE_TWO, i(35337)),	-- Mooncloth Vestments
+							applyclassicphase(TBC_PHASE_TWO, i(35366)),	-- Opportunist's Leather Gloves
 							i(31361, {	-- Pattern: Cobrahide Leg Armor
 								["spellID"] = 35549,	-- Cobrahide Leg Armor
 								["requireSkill"] = LEATHERWORKING,
@@ -3025,23 +3174,21 @@ _.Zones =
 								["spellID"] = 35554,	-- Nethercobra Leg Armor
 								["requireSkill"] = LEATHERWORKING,
 							}),
-							i(34201, {	-- Pattern: Netherscale Ammo Pouch
-								["spellID"] = 44768,	-- Netherscale Ammo Pouch
-								["requireSkill"] = LEATHERWORKING,
+							applyclassicphase(TBC_PHASE_THREE, i(34201, {	-- Pattern: Netherscale Ammo Pouch
 								["timeline"] = { "removed 4.0.1.10000" },
-							}),
+							})),
 							i(24002),	-- Plans: Felsteel Shield Spike
 							i(24001),	-- Recipe: Elixir of Major Agility
 							i(29232),	-- Recipe: Transmute Skyfire Diamond
-							i(35339),	-- Satin Hood
-							i(35409),	-- Savage Plate Helm
-							i(35383),	-- Seer's Linked Helm
-							i(35386),	-- Seer's Mail Armor
-							i(35392),	-- Seer's Ringmail Gloves
-							i(35377),	-- Stalker's Chain Gauntlets
+							applyclassicphase(TBC_PHASE_TWO, i(35339)),	-- Satin Hood
+							applyclassicphase(TBC_PHASE_TWO, i(35409)),	-- Savage Plate Helm
+							applyclassicphase(TBC_PHASE_TWO, i(35383)),	-- Seer's Linked Helm
+							applyclassicphase(TBC_PHASE_TWO, i(35386)),	-- Seer's Mail Armor
+							applyclassicphase(TBC_PHASE_TWO, i(35392)),	-- Seer's Ringmail Gloves
+							applyclassicphase(TBC_PHASE_TWO, i(35377)),	-- Stalker's Chain Gauntlets
 							i(29155),	-- Stormcaller
 							i(29165),	-- Warbringer
-							i(35371),	-- Wyrmhide Gloves
+							applyclassicphase(TBC_PHASE_TWO, i(35371)),	-- Wyrmhide Gloves
 							i(24009),	-- Dried Fruit Rations
 							i(24006),	-- Grunt's Waterskin
 						},
@@ -3192,6 +3339,10 @@ appendGroups({
 -- #if AFTER TBC
 -- These quests trigger after specific events occur in the zone.
 _.HiddenQuestTriggers = {
+	q(10088),	-- When This Mine's a-Rockin' - completed with quest 10079
+	q(10125),	-- Mission: Disrupt Communications - completed with quest 10144 & 10208
+	q(10207),	-- Forward Base: Reaver's Fall REUSE - completed with quest 10124 & 10143
+	q(10214),	-- When This Mine's a-Rockin' - completed with quest 10079
 	q(10454),	-- Hellfire Peninsula - Flag: OFF THE RAILS. Triggered just after turning in quest 10124 & 10143
 };
 
