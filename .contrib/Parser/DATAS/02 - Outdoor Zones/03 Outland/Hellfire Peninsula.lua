@@ -140,7 +140,7 @@ root("Zones", {
 						["description"] = "Complete 80 quests in Hellfire Peninsula.",
 						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
+						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.LOREMASTER_OnUpdate(t, 9587, 9575, 9607, 9589, 10754, 10762, 10763, 10764, 9492, 9493, 9494, 11002); end]],
 						["rank"] = 80,
 						-- #endif
 						-- #else
@@ -232,11 +232,11 @@ root("Zones", {
 							10255,	-- Testing the Antidote
 						},
 						-- #elseif BEFORE WRATH
-						["description"] = "Complete 89 quests in Hellfire Peninsula.",
+						["description"] = "Complete 90 quests in Hellfire Peninsula.",
 						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 89,
+						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.LOREMASTER_OnUpdate(t, 9588, 9572, 9608, 9590, 10755, 10756, 10757, 10758, 9495, 9496, 11003); end]],
+						["rank"] = 90,
 						-- #endif
 						-- #else
 						["groups"] = {
