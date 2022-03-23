@@ -1301,6 +1301,21 @@ root("PVP", pvp(tier(SL_TIER, {
 			}),
 		}),
 	})),
+	n(SEASON_ETERNAL, bubbleDown({ ["timeline"] = { "added 9.2.5" } }, {
+		n(PVP_ELITE, {
+			filter(MOUNTS, {
+				i(191290),	-- Eternal Gladiator's Soul Eater (MOUNT!)
+			}),
+		}),
+		filter(MOUNTS, {
+			i(187644, {	-- Vicious Warstalker (A) (MOUNT!)
+				["races"] = ALLIANCE_ONLY,
+			}),
+			i(187642, {	-- Vicious Warstalker (H) (MOUNT!)
+				["races"] = HORDE_ONLY,
+			}),
+		}),
+	})),
 })));
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {

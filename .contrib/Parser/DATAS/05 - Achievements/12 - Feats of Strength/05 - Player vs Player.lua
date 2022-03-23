@@ -1342,6 +1342,32 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			ach(15350),	-- Rival I: Shadowlands Season 3
 			ach(15378),	-- Rival II: Shadowlands Season 3
 		})),
+		n(SEASON_ETERNAL, bubbleDown({ ["timeline"] = { "added 9.2.5" } }, {
+			ach(15600),		-- Challenger I: Shadowlands Season 4
+			ach(15601),		-- Challenger II: Shadowlands Season 4
+			ach(15609, {	-- Combatant I: Shadowlands Season 4
+				title(78, {	-- Combatant <Name>
+					["collectible"] = false,
+				}),
+			}),
+			ach(15610),		-- Combatant II: Shadowlands Season 4
+			ach(15599),		-- Eternal Combatant (A)
+			ach(15598),		-- Eternal Combatant (H)
+			ach(15606, {	-- Eternal Gladiator: Shadowlands Season 4
+				title(461),	-- Eternal Gladiator <Name>
+			}),
+			ach(15604),		-- Duelist: Shadowlands Season 4
+			ach(15354),		-- Elite: Shadowlands Season 3
+			ach(15605),		-- Gladiator: Shadowlands Season 4
+			ach(15608, {	-- Hero of the Alliance: Eternal
+				["races"] = ALLIANCE_ONLY,
+			}),
+			ach(15607, {	-- Hero of the Horde: Eternal
+				["races"] = HORDE_ONLY,
+			}),
+			ach(15602),	-- Rival I: Shadowlands Season 4
+			ach(15603),	-- Rival II: Shadowlands Season 4
+		})),
 		un(REMOVED_FROM_GAME, ach(1161, {		-- High Five: 2200
 			un(REMOVED_FROM_GAME, ach(404)),		-- High Five: 2000
 			un(REMOVED_FROM_GAME, ach(407)),		-- High Five: 1750

@@ -459,8 +459,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				mount(356802, {		-- Holy Lightstrider
 					["modelID"] = 101577,
 				}),
-				i(187644),	-- Vicious Warstalker (A)
-				i(187642),	-- Vicious Warstalker (H)
 				i(187674),	-- [PH] Progenitor Jellyfish (Dark)
 			}),
 		}),

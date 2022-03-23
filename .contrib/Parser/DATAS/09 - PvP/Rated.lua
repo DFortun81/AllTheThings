@@ -35,6 +35,8 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		n(ACHIEVEMENTS, {
 			ach(15504),	-- Maldraxxus Coliseum matches
 			ach(15505),	-- Maldraxxus Coliseum victories
+			ach(15576),	-- Enigma Arena matches
+			ach(15577),	-- Enigma Arena victories
 		}),
 		filter(MOUNTS, {
 			i(166417)	-- Reins of the Onyx War Hyena

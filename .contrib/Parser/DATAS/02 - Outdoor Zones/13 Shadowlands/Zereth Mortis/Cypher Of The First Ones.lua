@@ -582,6 +582,8 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				ach(15573),	-- 	9.2 ZM - Cypher System - Talent Research Started - Altonian
 				ach(15574),	-- 	9.2 ZM - Cypher System - Talent Research Started - Sopranian
 				ach(15575),	-- 	9.2 ZM - Cypher System - Talent Research Started - Bassalim
+				ach(15592),	-- <Hidden> 9.2 ZM - Cypher System - Talent Research Started - Trebalim (fixed)
+				ach(15593),	-- <Hidden> 9.2 ZM - Cypher System - Talent Research Started - Sopranian (copy)
 			}),
 		}),
 	}),

@@ -1282,13 +1282,27 @@ i(187641, 359277);	-- Sundered Zerethsteed
 i(187669, 346719);	-- Serenade
 i(187678, 359402);	-- Tarachnid Creeper
 i(187671, 359377);	-- Unsuccessful Prototype Fleetpod
-i(187682, 359407);	-- Wastewarped Deathwalker
 i(187681, 347256);	-- Vicious War Croaker (A)
 i(187680, 347255);	-- Vicious War Croaker (H)
+i(187644, 349824);	-- Vicious Warstalker (A)
+i(187642, 349823);	-- Vicious Warstalker (H)
 i(187660, 342678);	-- Vespoid Flutterer
+i(187682, 359407);	-- Wastewarped Deathwalker
 i(190768, 368158);	-- Zereth Overseer
 -- NYI --
 --i(0, 356802);		-- Holy Lightstrider
-i(187644, 349824);	-- Vicious Warstalker (A)
-i(187642, 349823);	-- Vicious Warstalker (H)
+
+-----------------
+-- PATCH 9.2.5 --
+-----------------
+-- * = Sourced
+-- Dark Iron Dwarf
+i(191123, 369666);	-- [PH] The Flame Woof*
+
+-- PVP
+i(191290, 370346);	-- Eternal Gladiator's Soul Eater*
+
+-- NYI --
+--i(0, 367190);	-- [DND] Test Mount JZB model:88719
+--i(0, 370620);	-- Green Hawkstrider model:106262
 end)();
