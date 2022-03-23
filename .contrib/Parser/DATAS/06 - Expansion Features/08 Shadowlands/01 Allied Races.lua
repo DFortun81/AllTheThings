@@ -84,7 +84,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 						["provider"] = { "n", 176882 },	-- Lady Liadrin
 						["coord"] = { 35.6, 73.0, GHOSTLANDS },
 					}),
-					q(63653, {	-- Victory for the Sin'dorei
+					q(65653, {	-- Victory for the Sin'dorei
 						["sourceQuests"] = { 63489 },	-- Justice Long Overdue
 						["provider"] = { "n", 176882 },	-- Lady Liadrin
 						["coord"] = { 34.2, 77.4, GHOSTLANDS },
@@ -123,7 +123,6 @@ root("ExpansionFeatures", tier(SL_TIER, {
 						--["provider"] = { "n",  },
 						--["coord"] = { , ,  },
 						["g"] = {
-							i(190606),	-- ??
 							i(191123),	-- [PH] The Flame Woof (MOUNT!)
 						},
 					}),
