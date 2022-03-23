@@ -630,7 +630,7 @@ root("Instances", tier(CLASSIC_TIER, {
 								["coord"] = { 43.4, 83.6, WESTERN_PLAGUELANDS },
 								["cr"] = 11023,	-- Weldon Barov <House of Barov>
 							}),
-							i(14023, {	-- Barov Peasant Caller
+							i(14022, {	-- Barov Peasant Caller
 								["timeline"] = { "removed 4.0.3" },
 							}),
 						},

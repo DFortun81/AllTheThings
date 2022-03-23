@@ -188,6 +188,14 @@ _.Zones =
 								i(168822),	-- Thin Jelly
 							},
 						}),
+						n(VENDORS, {
+							n(153393, {	-- Barry
+								["coord"] = { 69.2, 64.2, STORMSONG_VALLEY },
+								["g"] = {
+									i(169141),	-- Butterfly Net
+								},
+							}),
+						}),
 					},
 				}),
 			}),

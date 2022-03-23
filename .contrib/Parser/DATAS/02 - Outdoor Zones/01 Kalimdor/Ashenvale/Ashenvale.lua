@@ -2480,6 +2480,7 @@ root("Zones", m(KALIMDOR, {
 				}),
 			})),
 			n(ZONE_DROPS, {
+				i(11151, {["timeline"] = {"removed 5.0.4"}}),	-- CLASSIC: Formula: Enchant Gloves - Herbalism / MOP:Ancient Enchanting Vellum
 				i(78343, {["timeline"] = {"added 4.3.0.15005"}}),	-- Formula: Enchant Gloves - Herbalism
 				i(2567, {	-- Evocator's Blade
 					["crs"] = { 4802 },	-- Blackfathom Tide Priestess

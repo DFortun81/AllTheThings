@@ -193,6 +193,18 @@ _.Zones =
 							{ 12.2, 85.8, MECHAGON },
 						},
 					}),
+					o(325668, {	-- Mechanized Chest
+						--["questID"] = ,
+						["isDaily"] = true,
+						["coord"] = { 20.6, 71.4, MECHAGON },
+						["cost"] = { "i", 169873, 1 },	-- 1xMechanized Supply Key
+					}),
+					o(327597, {	-- Old Rusty Chest
+						--["questID"] = ,
+						["isDaily"] = true,
+						["coord"] = { 20.9, 80.3, MECHAGON },
+						["cost"] = { "i", 169218, 1 },	-- 1xOld Rusty Key
+					}),
 				}),
 			}),
 		}),

@@ -29,6 +29,221 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 				ach(15416),	-- Domination's Grasp
 				ach(15418),	-- The Grand Design
 			}),
+			n(COMMON_BOSS_DROPS, {
+				["crs"] = {
+					180773,	-- Vigilant Guardian
+					184522,	-- Vigilant Custodian
+					181395,	-- Skolex
+					183501, -- Artificer Xy'mox
+					184006,	-- Xy Reinforcer
+					184005,	-- Xy Reinforcer
+					184007,	-- Xy Reinforcer
+					181224,	-- Dausegne
+					181551,	-- Prototype of Duty
+					181549,	-- Prototype of War
+					181546,	-- Prototype of Renewal
+					181548,	-- Prototype of Absolution
+					182169,	-- Lihuvium
+					180906,	-- Halondrus the Reclaimer
+					181954,	-- Anduin Wrynn
+					181398,	-- Mal'Ganis <The Eternal>
+					181399,	-- Kin'tessa <The Beguiler>
+					182777,	-- Rygelon
+					185421,	-- Zovaal <The Jailer>
+				},
+				["g"] = {
+					i(187806, {	-- Vantus Rune Technique: Sepulcher of the First Ones (RECIPE!)
+						["recipeID"] = 359890,	-- Vantus Rune: Sepulcher of the First Ones
+						["requireSkill"] = INSCRIPTION,
+					}),
+				},
+			}),
+			n(CONDUITS, {
+				e(2458, {	-- Vigilant Guardian
+					["crs"] = {
+						180773,	-- Vigilant Guardian
+						184522,	-- Vigilant Custodian
+					},
+					["g"] = {
+						i(183402),	-- Bloodletting
+						i(182126),	-- High Voltage
+						i(181734),	-- Magi's Brand
+						i(183505),	-- Maim, Mangle
+						i(180944),	-- Merciless Bonegrinder
+						i(182622),	-- Resplendent Light
+						i(182736),	-- Rolling Agony
+						i(181843),	-- Shining Radiance
+						i(183479),	-- Umbral Intensity
+						i(181742),	-- Walk with the Ox
+					},
+				}),
+				e(2465, {	-- Skolex, the Insatiable Ravener
+					["crs"] = { 181395 },	-- Skolex
+					["g"] = {
+						i(189819),	-- Assimilated Safeguard
+						i(188267),	-- Bells of the Endless Feast
+						i(189816),	-- Crystallized Viscera Spike
+						i(189812),	-- Devourer's Sandblown Hidebinders
+						i(189810),	-- Ephemera-Softened Exoskeleton
+						i(189814),	-- Gluttonous Gardbrace
+						i(189811),	-- Infinitely Collapsing Coil
+						i(189815),	-- Lurking Predator's Camouflage
+						i(189813),	-- Mantle of the Broken Beast
+						i(189817),	-- Rift-Scarred Solcrusher
+						i(189809),	-- Skolex's Ravenous Skinguards
+					},
+				}),
+				e(2470, {	-- Artificer Xy'mox
+					["crs"] = {
+						183501, -- Artificer Xy'mox
+						184006,	-- Xy Reinforcer
+						184005,	-- Xy Reinforcer
+						184007,	-- Xy Reinforcer
+					},
+					["g"] = {
+						i(188265),	-- Cache of Acquired Treasures
+						i(189827),	-- Cartel Xy's Proof of Initiation
+						i(189826),	-- Enforcer's Containment Cinch
+						i(189829),	-- Forerunner's Relic Blade
+						i(189821),	-- Illicit Artifact Holster
+						i(189822),	-- Imported Illidari Spaulders
+						i(188266),	-- Pulsating Riftshard
+						i(189830),	-- Replicated Relic Blade
+						i(189823),	-- Stolen Nathrian Slippers
+						i(189824),	-- Unlicensed Hyperlight Handlers
+						i(189825),	-- Veiled Auctioneer's Vambraces
+						i(189828),	-- Xy Captain's Crossbow
+
+					},
+				}),
+				e(2459, {	-- Dausegne, the Fallen Oracle
+					["crs"] = { 181224 },	-- Dausegne
+					["g"] = {
+						i(189773),	-- Clasp of Crooked Crescendos
+						i(189787),	-- Dausegne's Dissonant Halo
+						i(189807),	-- Discordant Deathblade
+						i(189791),	-- Drape of Mournful Melodies
+						i(189784),	-- Epaulets of the Ailing Aria
+						i(189790),	-- Final Forte
+						i(189782),	-- Haunting Hymnal Robes
+						i(189788),	-- Maestro's Malice
+						i(189785),	-- Oracle's Chromatic Cuirass
+						i(188272),	-- Resonant Reservoir
+						i(189793),	-- Sash of the Silent Sonata
+						i(189786),	-- Song-Mad Sabatons
+					},
+				}),
+				e(2460, {	-- Prototype Pantheon
+					["crs"] = {
+						181551,	-- Prototype of Duty
+						181549,	-- Prototype of War
+						181546,	-- Prototype of Renewal
+						181548,	-- Prototype of Absolution
+					},
+					["g"] = {
+						i(189794),	-- Boots of Ceaseless Conflict
+						i(189796),	-- Duty's Ascendant Breastplate
+						i(188270),	-- Elegy of the Eternals
+						i(189799),	-- Elysia's Promise
+						i(189798),	-- Moccasins of Dreadful Absolution
+						i(189800),	-- Prelude to Pride
+						i(189789),	-- Pursuit of Victory
+						i(189783),	-- Sin-Steeped Coronet
+						i(188271),	-- The First Sigil
+						i(189795),	-- Winter's Stampeding Striders
+						i(189797),	-- Wristwraps of Night's Renewal
+					},
+				}),
+				e(2461, {	-- Lihuvim, Principal Architect
+					["crs"] = { 182169 },	-- Lihuvium
+					["g"] = {
+						i(188268),	-- Architect's Ingenuity Core
+						i(189803),	-- Automa-Tender's Tights
+						i(189805),	-- Bracers of the Inscrutable Inventor
+						i(189804),	-- Combustible Collaboration Girdle
+						i(189801),	-- Ephemera-Charged Thinking Cap
+						i(189754),	-- Genesis Lathe
+						i(189808),	-- Lihuvim's Severing Scalpel
+						i(189802),	-- Loquacious Keeper's Peridot
+						i(188269),	-- Pocket Protoforge
+						i(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
+						i(189178),	-- Tools of Incomprehensible Experimentation (PS)
+					},
+				}),
+				e(2463, {	-- Halondrus the Reclaimer
+					["crs"] = { 180906 },	-- Halondrus the Reclaimer
+					["g"] = {
+						i(188264),	-- Earthbreaker's Impact
+						i(189831),	-- Ephemera-Stained Sollerets
+						i(189832),	-- Greatboots of the Roaming Goliath
+						i(189834),	-- Guardstaff of the Great Cycle
+						i(189806),	-- Lightshatter Hatchet
+						i(189781),	-- Obscured Fractal Prism
+						i(188263),	-- Reclaimer's Intensity Core
+						i(189833),	-- Taciturn Keeper's Lapis
+					},
+				}),
+				e(2469, {	-- Anduin Wrynn
+					["crs"] = { 181954 },	-- Anduin Wrynn
+					["g"] = {
+						i(189835),	-- Anduin's Princely Vestments
+						i(189838),	-- Beacon of Stormwind
+						i(189837),	-- King's Wolfheart Wasitband
+						i(189840),	-- Remnant's Blasphemous Scourgebelt
+						i(189841),	-- Soulwarped Seal of Menethil
+						i(189839),	-- Soulwarped Seal of Wrynn
+						i(188262),	-- The Lion's Roar
+						i(189836),	-- Wrists of the Wicked Star
+						i(190967),	-- Mourne Fragment (QUEST!)
+					},
+				}),
+				e(2457, {	-- Lords of Dread
+					["crs"] = {
+						181398,	-- Mal'Ganis <The Eternal>
+						181399,	-- Kin'tessa <The Beguiler>
+					},
+					["g"] = {
+						i(189846),	-- Alandien's Tortured Twinblades
+						i(189842),	-- Cuffs of the Covert Commander
+						i(189844),	-- Gauntlets of Unseen Guests
+						i(189843),	-- Grasps of Abducted Fate
+						i(188255),	-- Heart of the Swarm
+						i(188261),	-- Intrusive Thoughtcage
+						i(189845),	-- Ruined Crest of Lordaeron
+						i(189847),	-- Shroud of the Sire's Chosen
+					},
+				}),
+				e(2467, {	-- Rygelon
+					["crs"] = { 182777 },	-- Rygelon
+					["g"] = {
+						i(189852),	-- Antumbra, Shadow of the Cosmos
+						i(189853),	-- Astral Verdict
+						i(189851),	-- Devastated Worldshard
+						i(188254),	-- Grim Eclipse
+						i(189850),	-- Handguards of Hidden Realms
+						i(189849),	-- Interdimensional Manica
+						i(191001),	-- Observer's Umbral Shiv
+						i(189854),	-- Rygelon's Heraldric Ring
+						i(189848),	-- Treads of Titanic Curiosity
+					},
+				}),
+				e(2464, {	-- The Jailer
+					["crs"] = { 185421 },	-- Zovaal <The Jailer>
+					["g"] = {
+						i(189855),	-- Bindings of the Banished One
+						i(188252),	-- Chains of Domination
+						i(189818),	-- Domination's Deliverance
+						i(189857),	-- Epochal Oppressor's Greaves
+						i(189860),	-- Forbidden Truth
+						i(189862),	-- Gavel of the First Arbiter
+						i(189858),	-- Legguards of the Ultimate Threat
+						i(189856),	-- Runecarver's Twisted Ward
+						i(188253),	-- Scars of Fraternal Strife
+						i(189859),	-- Worldkiller Iris
+						i(189861),	-- Zovastrum, the Unmaking
+					},
+				}),
+			}),
 			n(FLIGHT_PATHS, {
 				fp(2715, {	-- Ephemeral Plains Alpha
 					["name"] = "Ephemeral Plains Alpha",
@@ -59,18 +274,16 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					["cr"] = 182431,	-- Ancient Translocator
 				}),
 			}),
-			n(RARES, {
+			n(SPECIAL, {
+				i(189167, {	-- Glimmer of Satisfaction
+					["description"] = "Eating a feast inside the raid have chance to spawn this item in your inventory.",
+				}),
 				n(185032, {	-- Taskmaster Xy'pro <Cartel Xy>
 					["description"] = "Killed when having 3 stacks of Synergy",
 					--["coord"] = { X, Y, MAP },
 					["g"] = {
 						i(190727),	-- Security Override Orb
 					},
-				}),
-			}),
-			n(SPECIAL, {
-				i(189167, {	-- Glimmer of Satisfaction
-					["description"] = "Eating a feast inside the raid have chance to spawn this item in your inventory.",
 				}),
 			}),
 			n(TREASURES, {
@@ -102,10 +315,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 				i(188957),	-- Genesis Mote
 				i(189157),	-- Glimmer of Animation
 				i(189176),	-- Protoform Sentience Crown
-				i(187806, {	-- Vantus Rune Technique: Sepulcher of the First Ones (RECIPE!)
-					["recipeID"] = 359890,	-- Vantus Rune: Sepulcher of the First Ones
-					["requireSkill"] = INSCRIPTION,
-				}),
 			}),
 			d(17, {	-- LFR
 				n(ZONE_DROPS, {

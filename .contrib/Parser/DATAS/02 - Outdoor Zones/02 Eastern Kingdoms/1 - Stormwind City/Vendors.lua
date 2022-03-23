@@ -518,6 +518,13 @@ _.Zones =
 						i(21099),	-- Recipe: Smoked Sagefish
 					},
 				}),
+				n(164942, {	-- Evelyn Thorn <Warlock Trainer>
+					["coord"] = { 79.4, 69.8, STORMWIND_CITY },
+					["g"] = {
+						i(189719),	-- Barbed Collar of the Incubus
+						i(189720),	-- Barbed Collar of the Succubus
+					},
+				}),
 				n(44245,  {	-- Faldren Tillsdale
 					["coord"] = { 76.1, 66.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,

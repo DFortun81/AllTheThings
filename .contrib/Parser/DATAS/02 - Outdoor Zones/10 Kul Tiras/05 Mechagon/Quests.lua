@@ -651,6 +651,7 @@ root("Zones", {
 						crit(11, {	-- Knock His Bot Off
 							["achievementID"] = 13791,	-- Making the Mount
 						}),
+						i(168305),	-- Powercore Schematics
 					},
 				}),
 				q(56423, {	-- Large Storage Fragment
@@ -1651,7 +1652,9 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(55742),	-- Bundle of Corroded Parts
 		q(56071),	-- De-Synced Vibro Blade
 		q(56072),	-- De-Synced Vibro Blade
-		q(55669),	-- Encrypted Radio Receiver TBD
+		q(55669, {	-- Encrypted Radio Receiver TBD
+			i(168221),	-- Encrypted Raido Receiver
+		}),
 		q(56097),	-- Grime-Coated Disc
 		q(55605),	-- NOT USED
 		q(55099),	-- TBD NOT USED

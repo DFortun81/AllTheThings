@@ -17,6 +17,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- Dont tell the Users is actually obtainable but there is just no info
 				["description"] = "If this drops for you, please provide as much information as you can about how and where you got it.",
 			}),
+			i(160378),	-- Stormchaser Clutch
 			i(185920),	-- Cartel Al Incident Report
 			i(185927),	-- Expedition Report A37J - Foreword
 			i(185928),	-- Expedition Report A37J - Part 1
@@ -1427,6 +1428,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(86553),	-- Master Cookbook
 			i(86554),	-- Grand Master Cookbook
 			i(169457),	-- Recipe: Mecha-Bytes
+			i(7678),	-- Recipe: Thistle Tea
 		}),
 		prof(ENGINEERING, {
 			{	-- Blingtron's Circuit Design Tutorial
@@ -2809,6 +2811,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(185943),	-- Lost Adventurer's Medallion
 			i(186633),	-- Mawrat Mongrel's Collar
 			i(186983),	-- Attendant's Chain
+			--
+			i(158502),	-- Shaleshell Pendant
+			i(158554),	-- Shaleshell Pendant
+			i(175735),	-- 9.0 QRP - Bastion - Accessory - Neck
 		}),
 		filter(52, {	-- Finger
 			-- Load In Game
@@ -2886,6 +2892,17 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(177153),	-- Beaten Copper Loop
 			i(177164),	-- Sea Sapphire Band
 			i(177167),	-- Beaten Copper Loop
+			--
+			i(158501),	-- Sea Sapphire Band
+			i(158519),	-- Beaten Copper Loop
+			i(158553),	-- Sea Sapphire Band
+			i(158578),	-- Beaten Copper Loop
+			i(158659),	-- Zul Adherent's Ring
+			i(158660),	-- Fletcher's Band
+			i(161288),	-- Honey-Maker's Ring
+			i(162454),	-- Band of the Stormy Coast
+			i(166490),	-- Shiny Ring
+			i(175705),	-- 9.0 QRP - Bastion - Accessory - Ring D
 		}),
 		n(-386, {	-- Trinket
 			-- Load In Game
@@ -2962,6 +2979,27 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(177157),	-- Bijou of the Golden City
 			i(177158),	-- Enchanted Devilsaur Claw
 			i(177166),	-- Lucky Braid
+			--
+			i(158511),	-- Seabeast Tusk
+			i(158512),	-- Lucky Braid
+			i(158513),	-- Shimmering Rune
+			i(158514),	-- Petrified Basilisk Scale
+			i(158515),	-- Oceanographer's Weather Log
+			i(158516),	-- Privateer's Spyglass
+			i(158570),	-- Seabeast Tusk
+			i(158571),	-- Lucky Braid
+			i(158572),	-- Shimmering Rune
+			i(158573),	-- Petrified Basilisk Scale
+			i(158574),	-- Bijou of the Golden City
+			i(158575),	-- Enchanted Devilsaur Claw
+			i(164754),	-- Demon Trophy
+			i(164755),	-- Charm of Demonic Fire
+			i(171528),	-- Reign of the Dead
+			i(171549),	-- Reign of the Unliving
+			i(175720),	-- 9.0 QRP - Bastion - Accessory - Trinket
+			i(175721),	-- 9.0 QRP - Bastion - Accessory - Trinket
+			i(179341),	-- Critterbomb Contraption
+			i(181332),	-- Sinstone Kernel
 		}),
 		tier(SL_TIER, {
 			tier(SL_TIER, 2.0, {
@@ -3811,20 +3849,73 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(55217),	-- Aqua Transform
 		i(55218),	-- Rocky Transform
 		i(55219),	-- Vaporous Transform
+		-- Unknown
+		i(173774),	-- Wilderbew Special
+		i(173790),	-- Bunch of Berries
+		tier(CLASIC_TIER, {
+			i(994),	-- Tome of Ice Armor
+			i(8802),	-- Tome of Arcane Intellect
+			i(8868),	-- Tome of Conjure Water VI
+		}),
 		tier(BFA_TIER, {
+			i(167005),	-- Salvaged Key
+			tier(BFA_TIER, 0.1, {
+				filter(104, {	-- Quest Items
+					i(157788),	-- Saurid Egg
+				}),
+			}),
+			tier(BFA_TIER, 1.0, {
+				filter(104, {	-- Quest Items
+					i(164764),	-- Trident Head
+				}),
+			}),
+			tier(BFA_TIER, 1.5, {
+				filter(104, {	-- Quest Items
+					i(164776),	-- Schematic: The Ub3r-Spanner
+				}),
+			}),
+			tier(BFA_TIER, 2.0, {
+				filter(104, {	-- Quest Items
+					i(169326),	-- Abyssal Shard
+					i(167652),	-- Blueprint: Hundred-Fathom Lure
+					i(167791),	-- Paint Vial: Battletorn Blue
+					i(168917),	-- Squishy Clam Meat
+					i(169832),	-- The Infinity Tube
+					i(169575),	-- Worthless data
+				}),
+				i(169081),	-- Holographic Combat Entity Data
+			}),
+			tier(BFA_TIER, 2.5, {
+				i(170488),	-- [DNT] Torn Journal Page #7
+				i(170484),	-- [DNT] Torn Journal Page #14
+				i(170487),	-- [DNT] Torn Journal Page #23
+				i(170491),	-- Burnt Journal Page
+				i(171372),	-- Alterac Valley Mark of Honor
+				i(169295),	-- Dormant Vision Stone
+				i(170197),	-- Shirakess Warning Sign
+				i(169106),	-- Thin Jelly
+			}),
 			tier(BFA_TIER, 3.0, {
 				i(174455),	-- Add Keystone Affix: Awakened
+				i(169293),	-- Coalescing Visions
 				i(174838),	-- Collapsed Fusion Core
+				i(171347),	-- Corrupted Bone Fragment
 				i(174642),	-- Corrupted Ny'alotha Raid Item
 				i(174529),	-- Crate of Coalescing Visions
 				i(174970),	-- Easeflower
 				i(174800),	-- HARDCODED - Corrupted Stats Placeholder
 				i(175019),	-- Holy Statuette
+				i(174045),	-- Orb of Dark Portents
+				i(174049),	-- Orb of Darkest Madness
+				i(174047),	-- Orb of Darkest Visions
+				i(174048),	-- Orb of Madness
+				i(174046),	-- Orb of Visions
 				i(174971),	-- Ripe Juicycrunch
 				i(174663),	-- Set Keystone Map: Operation: Mechagon - Junkyard
 				i(174664),	-- Set Keystone Map: Operation: Mechagon - Workshop
 				i(175150),	-- Self-Shaping Amber
 				i(175018),	-- Shadowy Rune
+				i(171334),	-- Void-Touched Cloth
 				i(175017),	-- Volatile Ember
 			}),
 		}),
@@ -3835,8 +3926,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(181241),	-- Blueprint: Charm of Buff 7
 					i(182654),	-- Bonescript Dispatches
 					i(175253),	-- Desiccating Formula
+					i(174075),	-- Emeni's Magnificent Skin
 					i(183074),	-- Lost Animacone
 					i(174750),	-- Memetic Anima
+					i(174073),	-- Regenerative Frame
+					i(169937),	-- Ritual Components
 					i(174489),	-- Treated Animacone
 					i(181442),	-- Visions of Sire Denathrius
 				}),
@@ -3884,6 +3978,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(181140),	-- Charm of Alacrity
 				i(181240),	-- Charm of Buff 7
 				i(181159),	-- Charm of Energizing
+				i(174038),	-- Chime of Celerity
 				i(178888),	-- Choofa
 				i(183125),	-- Combat Meditation: Power
 				i(176129),	-- Contract: Decoration 4
@@ -3951,6 +4046,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(181849),	-- Set Keystone Map: The Necrotic Wake
 				i(181166),	-- Sigil of Haunting Memories
 				i(181348),	-- Sika
+				i(172965),	-- Sinstone Fragments
 				i(180746),	-- Skinner's Journal
 				i(178965),	-- Small Gardener's Satchel
 				i(178045),	-- Soul Prism
@@ -4025,6 +4121,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(187921),	-- [PH] Core Currency
 				i(187570),	-- Brokers' Skinning Mote of Potentiation
 				i(187571),	-- Brokers' Mining Mote of Potentiation
+				i(173790),	-- Bunch of Berries
 				i(186520),	-- Chest of Playtest Equipment
 				i(186519),	-- Compressed Anima Bubble
 				i(187544),	-- Consumed Weapon Essence

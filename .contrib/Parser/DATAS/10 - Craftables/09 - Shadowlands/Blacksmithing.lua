@@ -85,7 +85,10 @@ _.Craftables =
 			i(171439),		-- Shaded Weightstone
 			i(185960),		-- Vestige of Origins
 			filter(MISC, {
+				i(173382),	-- Crafter's Mark II
+				i(173383),	-- Crafter's Mark III
 				i(187741),	-- Crafter's Mark IV
+				i(173384),	-- Crafter's Mark of the Chained Isle
 				i(187742),	-- Crafter's Mark of the First Ones
 				i(187784),	-- Vestige of the Eternal
 			}),
