@@ -680,9 +680,14 @@ namespace ATT
 
                 // Calculate the filter ID. (0 is invalid, -1 is explicitly ignored)
                 f = (long)CalculateFilter(data);
-                data["f"] = f;
-                //if (f == 0)
+
+                // This may happen a lot and is kind of expected... maybe re-designed in future
+                //if (DebugMode && f == 0)
                 //    Trace.WriteLine("Invalid filter for: " + MiniJSON.Json.Serialize(data));
+
+                // Don't set invalid filter values
+                if (f > 0)
+                    data["f"] = f;
             }
 
             /// <summary>
