@@ -840,9 +840,23 @@ namespace ATT
                             case "g": break;
 
                             default:
-                                Trace.WriteLine($"Unknown 'cost' type: {c[0]}");
+                                Trace.WriteLine($"Warning: Unknown 'cost' type: {c[0]}{Environment.NewLine}-- {MiniJSON.Json.Serialize(data)}");
                                 break;
                         }
+                    }
+                }
+            }
+
+            // 'coord' is converted to 'coords' already
+            List<object> coordsList = null;
+            if (data.TryGetValue("coords", out coordsList))
+            {
+                // check if any coord is not 3 parameters: [ X, Y, MapID ]
+                foreach (object coord in coordsList)
+                {
+                    if (coord is List<object> coordList && coordList.Count != 3)
+                    {
+                        Trace.WriteLine($"Warning: 'coord/s' value is not fully qualified: {MiniJSON.Json.Serialize(coord)}{Environment.NewLine}-- {MiniJSON.Json.Serialize(data)}");
                     }
                 }
             }
@@ -850,8 +864,7 @@ namespace ATT
             // maps & coords
             if (data.TryGetValue("maps", out object maps) && maps is List<object> mapsList)
             {
-                // 'coord' is converted to 'coords' already
-                if (data.TryGetValue("coords", out object coords) && coords is List<object> coordsList)
+                if (coordsList != null)
                 {
                     bool redundant = false;
                     // check if any coord has a mapID which matches a maps mapID
@@ -870,7 +883,7 @@ namespace ATT
                         data.Remove("maps");
 
                     if (redundant)
-                        Trace.WriteLine($"Redundant 'maps' removed from: {MiniJSON.Json.Serialize(data)}");
+                        Trace.WriteLine($"Redundant 'maps' removed from: {MiniJSON.Json.Serialize(data)}{Environment.NewLine}-- {MiniJSON.Json.Serialize(data)}");
                 }
 
                 // single 'maps' for Achievements Sourced under 'Achievements', should be sourced in that specific map directly instead
