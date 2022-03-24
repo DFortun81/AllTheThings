@@ -434,6 +434,11 @@ namespace ATT
                     //Trace.WriteLine("Removed bad modID", data.GetString("itemID"));
                     modID = 0;
                 }
+                // filterID -- should be a positive value, or removed
+                else if (f <= 0)
+                {
+                    data.Remove("f");
+                }
             }
 
             // Apply the inherited modID for items which do not specify their own modID
@@ -570,44 +575,32 @@ namespace ATT
                     }
                     ++index;
                 }
-                if (removed > 0)
-                {
-                    if (removed == 3)
-                    {
-                        // Black Market
-                        data["u"] = 9;
-                    }
-                    else if (removed == 1)
-                    {
-                        // Never Implemented
-                        data["u"] = 1;
-                    }
-                    else if (removed == 5)
-                    {
-                        // Timewalking re-implemented
-                        data["u"] = 1016;
-                    }
-                    else if (removed == 6)
-                    {
-                        // Future Unobtainable
-                        data["rwp"] = removedPatch.ConvertToVersionString(); // "Removed With Patch"
-                    }
-                    else if (removed == 4)
-                    {
-                        // Never Implemented
-                        data["u"] = 1;
-#if RETAIL
-                        // Merge all relevant Item Data into the data container.
-                        Items.Merge(data);
-                        Objects.AssignFactionID(data);
-                        return false;
-#endif
 
-                    }
-                    else
-                    {
-                        data["u"] = 2;  // Removed From Game
-                    }
+                // final removed type for the current parser patch
+                switch (removed)
+                {
+                    // Never Implemented
+                    case 1:
+                    // Never Implemented (after already being available previously)
+                    case 4:
+                        data["u"] = 1;
+                        break;
+                    // Black Market
+                    case 3:
+                        data["u"] = 9;
+                        break;
+                    // Timewalking re-implemented
+                    case 5:
+                        data["u"] = 1016;
+                        break;
+                    // Future Unobtainable
+                    case 6:
+                        data["rwp"] = removedPatch.ConvertToVersionString(); // "Removed With Patch"
+                        break;
+                    // Removed From Game
+                    case 2:
+                        data["u"] = 2;
+                        break;
                 }
             }
 

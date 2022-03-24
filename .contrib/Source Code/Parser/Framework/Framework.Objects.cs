@@ -75,6 +75,7 @@ namespace ATT
             {
                 {  "recipeID" , new string[] { "u", "requireSkill" } },
                 {  "speciesID" , new string[] { "pb", "crs" } },
+                {  "instanceID" , new string[] { "isRaid" } },
             };
 
             /// <summary>

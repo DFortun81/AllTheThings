@@ -52,7 +52,6 @@ namespace ATT
 #else
                     files.AsParallel().ForAll(f => ParseJSONFile(f));
 #endif
-                    Trace.WriteLine("Done parsing JSON files.");
 
                     if (Errored)
                     {
