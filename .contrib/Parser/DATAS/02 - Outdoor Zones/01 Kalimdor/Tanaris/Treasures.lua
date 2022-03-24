@@ -9,8 +9,8 @@ _.Zones =
 			n(RARES, {
 				n(TREASURES, {
 					o(142184, {	-- Captain's Chest
-						["coord"] = { 76.4, 45.8, TANARS },
-						["cost"] = { "i", 9249, 1 },	-- 1xCaptain's Key
+						["coord"] = { 76.4, 45.8, TANARIS },
+						["cost"] = { { "i", 9249, 1 } },	-- 1x Captain's Key
 					}),
 				}),
 			}),
