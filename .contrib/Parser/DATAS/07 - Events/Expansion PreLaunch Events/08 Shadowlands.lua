@@ -830,6 +830,9 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 8.0.1.36216", "
 				}),
 			}),
 		}),
+		n(ZONE_DROPS, {
+			i(180720),	-- Darkened Scourgestone
+		}),
 	}),
 })));
 

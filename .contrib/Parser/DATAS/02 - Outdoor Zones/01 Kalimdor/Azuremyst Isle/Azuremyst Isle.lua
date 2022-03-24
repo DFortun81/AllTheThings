@@ -495,7 +495,10 @@ _.Zones =
 							}),
 							q(9409,  {	-- Urgent Delivery!
 								["qg"] = 16477,	-- Proenitus
-								["sourceQuest"] = 9280,	-- Replenishing the Healing Crystals
+								["sourceQuests"] = {
+									9369,	-- Replenishing the Healing Crystal (All other ally races)
+									9280,	-- Replenishing the Healing Crystal (Draenei)
+								},
 								-- #if AFTER MOP
 								["coord"] = { 52.7, 35.9, AMMEN_VALE },
 								-- #else
