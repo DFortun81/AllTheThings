@@ -1636,19 +1636,45 @@ root("HiddenQuestTriggers", {
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(54084),	-- [DNT]
-		q(56191),	-- Blueprint: TK32[DNT]
-		q(56192),	-- Blueprint: TK33[DNT]
-		q(56193),	-- Blueprint: TK34[DNT]
-		q(56194),	-- Blueprint: TK35[DNT]
-		q(56195),	-- Blueprint: TK36[DNT]
-		q(56196),	-- Blueprint: TK37[DNT]
-		q(56197),	-- Blueprint: TK38[DNT]
-		q(56198),	-- Blueprint: TK39[DNT]
-		q(56199),	-- Blueprint: TK40[DNT]
-		q(56200),	-- Blueprint: TK41[DNT]
-		q(56201),	-- Blueprint: TK42[DNT]
-		q(56202),	-- Blueprint: TK43[DNT]
-		q(56203),	-- Blueprint: TK44[DNT]
+		q(56191, {	-- Blueprint: TK32[DNT]
+			i(169177),	-- Blueprint: TK32[DNT]
+		}),
+		q(56192, {	-- Blueprint: TK33[DNT]
+			i(169178),	-- Blueprint: TK33[DNT]
+		}),
+		q(56193, {	-- Blueprint: TK34[DNT]
+			i(169179),	-- Blueprint: TK34[DNT]
+		}),
+		q(56194, {	-- Blueprint: TK35[DNT]
+			i(169180),	-- Blueprint: TK35[DNT]
+		}),
+		q(56195, {	-- Blueprint: TK36[DNT]
+			i(169181),	-- Blueprint: TK36[DNT]
+		}),
+		q(56196, {	-- Blueprint: TK37[DNT]
+			i(169182),	-- Blueprint: TK37[DNT]
+		}),
+		q(56197, {	-- Blueprint: TK38[DNT]
+			i(169183),	-- Blueprint: TK38[DNT]
+		}),
+		q(56198, {	-- Blueprint: TK39[DNT]
+			i(169184),	-- Blueprint: TK39[DNT]
+		}),
+		q(56199, {	-- Blueprint: TK40[DNT]
+			i(169185),	-- Blueprint: TK40[DNT]
+		}),
+		q(56200, {	-- Blueprint: TK41[DNT]
+			i(169186),	-- Blueprint: TK41[DNT]
+		}),
+		q(56201, {	-- Blueprint: TK42[DNT]
+			i(169187),	-- Blueprint: TK42[DNT]
+		}),
+		q(56202, {	-- Blueprint: TK43[DNT]
+			i(169188),	-- Blueprint: TK43[DNT]
+		}),
+		q(56203, {	-- Blueprint: TK44[DNT]
+			i(169189),	-- Blueprint: TK44[DNT]
+		}),
 		q(55742),	-- Bundle of Corroded Parts
 		q(56071),	-- De-Synced Vibro Blade
 		q(56072),	-- De-Synced Vibro Blade

@@ -126,6 +126,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(180813),	-- Silver Teroclaw (Fledgling Teroclaw is the equivalent wild pet in game, item was never used)
 		i(183853),	-- Sinfall Screecher
 		i(183714),	-- Swamp Reed (Withering Creeper is the equivalent wild pet in game, item was never used)
+		p(2341),		-- Feathers (possibly tied to a quest?)
+		i(166358),	-- Proper Parrot/ Proper Parrot was supposed to be added in 8.1, tied to the quest Be More Uniform. A few days after 8.1 went live, it was removed from the pet journal. Nobody obtained it from the quest.
 		tier(SL_TIER, {
 			i(184034), -- Stony's Infused Ruby
 			tier(SL_TIER, 2.0, {
@@ -435,6 +437,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(163063),	-- Reins of the spectral phoenix (old trash 100 rep award)
 				i(163188),	-- Surf Jelly (testing version)
 				i(163186),	-- Tempestuous Skystallion (Old 400 Mounts Reward)
+				i(158922),	-- Zany Zombiefied Raptor (Did not make it)
 			}),
 			tier(BFA_TIER, 2.0, {
 				i(168673, {	-- Keys to the Silver Mono-Wheel (No mount in yet)
@@ -1820,6 +1823,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(166364),	-- Song of the Fallen (TW Vendor?)
 			i(161118),	-- Marrow Shatter (TW Vendor/Tw drop?)
 		}),
+		i(134013),	-- Chef's Hat [Likely the cosmetic effect from when you use the toy]
+		i(25497),	-- Broken Balanced Stone Dirk
+		i(28261),	-- Video Invis Broken Fitz's Throwing Axe
+		i(25641),	-- Broken Fitz's Throwing Axe
+		i(21135),	-- Broken Assassin's Throwing Axe
 		i(134017),	-- Don Carlos' Famous Hat (testing version?)
 		filter(CLOTH, {
 			-- Load in Game
@@ -1997,6 +2005,18 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(167118),	-- QA Combat Test Caster Bracer 1
 			-- Legion
 			i(153289),	-- Eredar Priestess' Tunic
+			--
+			i(54331),	-- Black Velvet Chest
+			i(175181),	-- Expeditionary Cloth Boots
+			i(175213),	-- Expeditionary Cloth Boots
+			i(178302),	-- Sinful Aspirant's Silk Vestiment
+			i(178307),	-- Sinful Aspirant's Silk Slippers
+			i(178312),	-- Sinful Aspirant's Silk Grasps
+			i(178314),	-- Sinful Aspirant's Silk Visage
+			i(178318),	-- Sinful Aspirant's Silk Britches
+			i(178323),	-- Sinful Aspirant's Silk Shoulderpads
+			i(178326),	-- Sinful Aspirant's Silk Cincture
+			i(178330),	-- Sinful Aspirant's Silk Armbands
 		}),
 		filter(LEATHER, {
 			cl(ROGUE, {
@@ -2410,6 +2430,16 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(178304),	-- unused
 			--
 			i(68844),	-- Unknown
+			--
+			i(54757),	-- Double Link Tunic
+			i(54765),	-- Burnished Leggings
+			i(54766),	-- Burnished Gloves
+			i(54767),	-- Burnished Girdle
+			i(54768),	-- Burnished Boots
+			i(54769),	-- Rough Bronze Bracers -- Do Not Remove until somebody provides proof as obtained. Guild Tab shows somebody might be able to craft it, but its a visual bug. 27th Oct 2020 -- Gold
+			i(54778),	-- Burnished Boots (Again)
+			i(54781),	-- Thorbia's Gauntlets
+			i(54783),	-- Silvered Bronze Shoulders
 		}),
 		filter(PLATE, {
 			-- Load In Game
@@ -2629,6 +2659,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(167132),	-- QA Combat Test Plate Helm 1
 			i(167133),	-- QA Combat Test Plate Legs 1
 			i(167134),	-- QA Combat Test Plate Boots
+			--
+			i(54789),	-- Art Template Plate Belt - Plate_Common_C_01 - Rust
 		}),
 		n(BACK, {
 			-- Load In Game
@@ -2704,6 +2736,16 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(165261),	-- Fallback Armor - Cloak
 			--SL
 			i(167150),	-- QA Combat Test Cloak 1(9.0.5?)
+
+			--
+			i(47058),	-- Pennant Cloak (4.0)
+			i(59791),	-- Giantslayer Cloak
+			i(60221),	-- Furlbrow Cloak
+			i(60774),	-- Vicious Gladiator's Cloak of Victory
+			i(60775),	-- Vicious Gladiator's Cloak of Victory
+			i(60777),	-- Vicious Gladiator's Cloak of Victory
+			i(60780),	-- Vicious Gladiator's Cloak of Conquest
+			i(60781),	-- Vicious Gladiator's Cloak of Conquest
 		}),
 		filter(COSMETIC, {
 			i(52488),	-- Jeweler's Sapphire Monocle (other version got added)
@@ -2750,6 +2792,17 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(129294),	-- Bonespeaker Tatoos
 			i(137118),	-- The Crone's Shirt
 			i(137552),	-- Purple Shirt
+
+			i(23351),	-- Battleworn Shirt
+			i(23470),	-- Rugged Trapper's Shirt
+			i(46103),	-- Shirt of Titanic Scaling
+			i(49402),	-- Gilnean Apprentice's Shirt
+			i(49405),	-- Gilnean Neophyte's Shirt
+			i(49410),	-- Gilnean Acolyte's Shirt
+			i(49414),	-- Gilnean Acolyte's Shirt
+			i(49418),	-- Gilnean Apprentice's Shirt
+			i(49422),	-- Gilnean Neophyte's Shirt
+			i(55047),	-- Shirt of No Criticals
 		}),
 		filter(TABARDS, {
 			i(23388),	-- Tranquillen Tabard
@@ -3160,6 +3213,13 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 	}),
 	n(WEAPONS, {
+		i(178480),	-- Sinful Aspirant's Keris
+		i(178665),	-- Sinful Aspirant's Fang
+		i(183434),	-- Sinful Aspirant's Spellmace
+		i(183431),	-- Sinful Aspirant's Magestaff
+		i(178488),	-- Sinful Aspirant's Weapon - Offhand
+		i(178489),	-- Sinful Aspirant's Weapon - Offhand
+		i(178673),	-- Sinful Aspirant's Weapon - Offhand
 		filter(BOWS, {
 			-- Load In Game
 			i(5748),	-- Centaur Longbow
@@ -3528,362 +3588,351 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 	}),
 	filter(MISC, {
-		filter(113, {	-- Bags
-			i(130943),	-- Reusable Tote Bag
-			i(166699),	-- Desert Rucksack
-			i(92746),	-- Portable Refrigerator
-			i(38307),	-- Crafty's Bottomless Inscription Bag
-			i(166700),	-- Durable Sailor's Duffel
-		}),
-		filter(55, {		-- Consumables
-			i(44871),	-- Greater Inscription of the Axe
-			i(44872),	-- Greater Inscription of the Crag
-			i(44873),	-- Greater Inscription of the Pinnacle
-			i(44874),	-- Greater Inscription of the Storm
-			i(45705),	-- Argent Tournament Invitation
-		}),
-		filter(104, {	-- Quest Items
-			i(157772),	-- A Royal Concern
-			i(157775),	-- A Royal Concern
-			i(142362),	-- zzz old fel-etched bone
-			i(142371),	-- zzz old inferno stone
-			i(142373),	-- zzz old locket f eldr thalas
-			i(142376),	-- zzz old glowing blood thislte petal
-			i(142378),	-- zzz old vial of ancient mana
-			i(17347),	-- unknown
-			i(17409),	-- Encrusted Crystal Fragment
-			i(169696),	-- reuse me [mtmm]]
-			i(169702),	-- reuse me [mtmm]]
-			i(169703),	-- reuse me [mtmm]]
-			i(20883),	-- Unknown
-			i(20936),	-- Unknown
-			i(20937),	-- Unknownwwwwwwwwwww
-			i(169958),	-- Fragment of the Void
-			i(169959),	-- Fragment of the Void
-			i(169960),	-- Fragment of the Void
-			i(156927),	-- Great Hall Recall)
-			i(168023),	-- dnt smashed transporter relay
-			i(168030),	-- dnt hyperbolic circuit
-			i(168031),	-- dnt transference disc
-		}),
-		-- M+ PTR Testing
-		i(181850),	-- Set Keystone Map: Plaguefall
-		i(181852),	-- Set Keystone Map: Halls of Atonement
-		i(181854),	-- Set Keystone Map: Theater of Pain
-		i(181856),	-- Set Keystone Map: Sanguine Depths
-		i(184849),	-- Set Keystone Map: The Necrotic Wake
-		i(181851),	-- Set Keystone Map: Mists of Tirna Scithe
-		i(181853),	-- Set Keystone Map: Spires of Ascension
-		i(181855),	-- Set Keystone Map: De Other Side
-		i(159734),	-- Add Keystone Affix: Fortified
-		i(159730),	-- Add Keystone Affix: Tyrannical
-		i(159732),	-- Add Keystone Affix: Bursting
-		i(159739),	-- Add Keystone Affix: Sanguine
-		i(183948),	-- Add Keystone Affix: Spiteful
-		i(159735),	-- Add Keystone Affix: Grievous
-		i(159731),	-- Add Keystone Affix: Bolstering
-		i(159738),	-- Add Keystone Affix: Raging
-		i(183949),	-- Add Keystone Affix: Inspiring
-		i(159733),	-- Add Keystone Affix: Explosive
-		i(159736),	-- Add Keystone Affix: Necrotic
-		i(159737),	-- Add Keystone Affix: Quaking
-		i(159742),	-- Add Keystone Affix: Volcanic
-		i(183947),	-- Add Keystone Affix: Storming
-		i(187524),	-- Add Keystone Affix: Tormented
-		i(166381),	-- Set Keystone Level: 10
-		i(166379),	-- Set Keystone Level: 12
-		i(166377),	-- Set Keystone Level: 14
-		i(166381),	-- Set Keystone Level: 11
-		i(166378),	-- Set Keystone Level: 13
-		i(175181),	-- Retrieving Data
-		i(175213),	-- Retrieving Data
-		i(178302),	-- Retrieving Data
-		i(178307),	-- Retrieving Data
-		i(178312),	-- Retrieving Data
-		i(178314),	-- Retrieving Data
-		i(178318),	-- Retrieving Data
-		i(178323),	-- Retrieving Data
-		i(178326),	-- Retrieving Data
-		i(178330),	-- Retrieving Data
-		i(178480),	-- Retrieving Data
-		i(178665),	-- Retrieving Data
-		i(183434),	-- Retrieving Data
-		i(183431),	-- Retrieving Data
-		i(178488),	-- Retrieving Data
-		i(178489),	-- Retrieving Data
-		i(178673),	-- Retrieving Data
-		i(159681),	-- Set Keystone Map: Darkheart Thicket
-		i(159683),	-- Set Keystone Map: Black Rook Hold
-		i(159684),	-- Set Keystone Map: Cathedral of Eternal Night
-		i(159685),	-- Set Keystone Map: Court of Stars
-		i(159686),	-- Set Keystone Map: Eye of Azshara
-		i(159687),	-- Set Keystone Map: Halls of Valor
-		i(159688),	-- Set Keystone Map: Maw of Souls
-		i(159689),	-- Set Keystone Map: Lower Karazhan
-		i(159690),	-- Set Keystone Map: Upper Karazhan
-		i(159691),	-- Set Keystone Map: Seat of the Triumvirate
-		i(159692),	-- Set Keystone Map: The Arcway
-		i(159693),	-- Set Keystone Map: Vault of the Wardens
-		i(159694),	-- Set Keystone Level: 15
-		i(159695),	-- Set Keystone Level: 16
-		i(159696),	-- Set Keystone Level: 17
-		i(159697),	-- Set Keystone Level: 18
-		i(159698),	-- Set Keystone Level: 19
-		i(159699),	-- Set Keystone Level: 20
-		i(159700),	-- Set Keystone Level: 21
-		i(159701),	-- Set Keystone Level: 22
-		i(159702),	-- Set Keystone Level: 23
-		i(159703),	-- Set Keystone Level: 24
-		i(159704),	-- Set Keystone Level: 25
-		i(159705),	-- Set Keystone Level: 26
-		i(159706),	-- Set Keystone Level: 27
-		i(159707),	-- Set Keystone Level: 28
-		i(159708),	-- Set Keystone Level: 29
-		i(159709),	-- Set Keystone Level: 30
-		i(79907),	-- Spear of Xuen (Old Version)
-		i(129742),	-- Badge of Timewalking Justice cap
-		i(31496),	-- Unknown
-		i(31498),	-- Unknown
-		i(31500),	-- Unknown
-		i(31502),	-- Unknown
-		i(5126),	-- Unknown
-		i(5127),	-- Unknown
-		i(5129),	-- Unknown
-		i(5130),	-- Unknown
-		i(5131),	-- Unknown
-		i(5132),	-- Unknown
-		i(175246),	-- N'lyeth (Unused)
-		i(169177),	-- Blueprint: TK32(DNT))
-		i(168171),	-- ph objective
-		i(168244),	-- ph treasure
-		i(168272),	-- ph amatheed cache
-		i(169154),	-- ph nzoth cache
-		i(170501),	-- ph mogu cache
-		i(172381),	-- ph objective 2
-		i(169178),	-- Blueprint: TK33(DNT))
-		i(169179),	-- Blueprint: TK34(DNT))
-		i(169180),	-- Blueprint: TK35(DNT))
-		i(169181),	-- Blueprint: TK36(DNT))
-		i(169182),	-- Blueprint: TK37(DNT))
-		i(169183),	-- Blueprint: TK38(DNT))
-		i(169184),	-- Blueprint: TK39(DNT))
-		i(169185),	-- Blueprint: TK40(DNT))
-		i(169186),	-- Blueprint: TK41(DNT))
-		i(169187),	-- Blueprint: TK42(DNT))
-		i(169188),	-- Blueprint: TK43(DNT))
-		i(169189),	-- Blueprint: TK44(DNT))
-		i(165884),	-- Treasure Map of molten clay
-		i(165899),	-- Treasure Map of whispering reef
-		i(165900),	-- Treasure Map of verdant wilds
-		i(165901),	-- Treasure Map of ungol ruins
-		i(165902),	-- Treasure Map of rotting mire
-		i(165903),	-- Treasure Map of dread chain
-		i(165904),	-- Treasure Map of havenswood
-		i(165905),	-- Treasure Map of jorundall
-		i(165906),	-- Treasure Map of skittering hollow
-		i(169192),	-- Unknown
-		i(78892),	-- Perfect Geode (PTR Only)
-		i(31503),	-- Unknown
-		i(107474),	-- ph6 engorged innards
-		i(103535),	-- Bulging Bag of Charms (was planned for asia store)
-		i(31507),	-- Unknown
-		i(36963),	-- Unknown
-		i(90568),	-- Unknown
-		i(90569),	-- Unknown
-		i(98001),	-- Saurok Collection
-		i(98005),	-- Saurok Collection
-		i(100949),	-- Thunderlord Cache Reward
-		spell(5169),	-- defias disguise
-		i(45818),	-- Unknown
-		i(46056),	-- Unknown
-		i(167026),	-- cache of crucible treasures
-		i(164774),	-- unknown
-		spell(5264),	-- dsouth sea defias disguise
-		spell(5268),	-- dark iron dwarf disguise
-		spell(5267),	-- dalaran wizard disguise
-		i(9023),		-- Codex of Shadow Proctection Rank3 (Never added)
-		i(21243),	-- Bloated Mightfish
-		i(132118),	-- Aggramar's Blessing (Didnt make it out of beta)
-		i(134006),	-- Dwyer's Spare Caber
-		i(134008),	-- Simple Rosary of Light
-		i(134824),	-- "Sir Pugsington" Costume
-		i(137602),	-- Unknown
-		i(151060),	--
-		i(42975),	-- Ace of Lords
-		i(42977),	-- Two of Lords
-		i(42978),	-- Three of Lords
-		i(42979),	-- Four of Lords
-		i(42980),	-- Five of Lords
-		i(42981),	-- Six of Lords
-		i(42982),	-- seven of Lords
-		i(42983),	-- eight of Lords
-		i(42976),	-- Lords Deck
-		i(158782),	-- Warchief's Prideful
-		i(158841),	-- High King's Pride
-		i(140787),	--
-		i(140921),	--
-		i(132107),	--
-		i(132250),	--
-		i(101537),	-- Timeless Coins
-		i(103975),	-- Elder Charm of Good Fortune
-		i(103976),	-- Mogu Rune of Fate
-		i(107459),	-- Black Iron Fragment
-		i(108595),	-- Recall Stone
-		i(108882),	-- Bloodmaul Blasting Charge
-		i(82460),	-- Unknown
-		i(82462),	-- Unknown
-		i(82463),	-- Unknown
-		i(155010),	-- REUSE MD DNT
-		i(155011),	-- REUSE MD DNT
-		i(155012),	-- REUSE MD DNT
-		i(130186),	-- Intern Items - BJI
-		i(146801),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
-		i(146800),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
-		i(146799),	-- [BUILDING CONTRIBUTION REWARD ITEM [NYI]]
-		i(115371),	-- [PLACEHOLDER TIER 3 ITEM]
-		i(164258),	-- Cache of Uldir Treasures
-		i(164259),	-- Cache of Uldir Treasures
-		i(164260),	-- Cache of Uldir Treasures
-		i(100894),	-- Deathtoll's Reward
-		i(100897),	-- Skel'tik the Baleful's Reward
-		i(100898),	-- Kull Bloodseeker's Reward
-		i(109012),	-- Frostwolf Ancestral Totem
-		i(124644),	-- Unknown
-		i(93660),	-- Thunder-Laced Egg
-		i(136621),	-- Unknown
-		i(40796),	-- Unknown
-		i(42147),	-- Unknown
-		i(43254),	-- Unknown
-		i(35728),	-- Greater Inscription of the blade (arena realm only)
-		i(35729),	-- Greater Inscription of the knight (arena realm only)
-		i(35730),	-- Greater Inscription of the oracle (arena realm only)
-		i(35731),	-- Greater Inscription of the orb (arena realm only)
-		i(44125),	-- zzzOLDLesser Inscription of Template - PH
-		i(44126),	-- zzzOLDGreater Inscription of Template - PH
-		i(92563),	-- The Eye of the Storm
-		i(136411),	-- Unknown
-		i(22233),	-- Zigris' Footlocker
-		i(35874),	-- Whizzlespark's Portable Pet Mansion
-		i(111810),	-- Barracks, Level 1 - unused version (used version is 111956)
-		i(134013),	-- Chef's Hat [Likely the cosmetic effect from when you use the toy]
-		i(130156),	-- Crane Bag
-		i(116130),	-- Draenic Crystal Fragments (Did not make it out of beta)
-		i(25497),	-- Broken Balanced Stone Dirk
-		i(28261),	-- Video Invis Broken Fitz's Throwing Axe
-		i(25641),	-- Broken Fitz's Throwing Axe
-		i(33564),	-- World Drop Certificate
-		i(47558),	-- Regalia of the Grand Protector
-		i(47559),	-- Regalia of the Grand Vanquisher
-		i(20560),
-		i(41596),
-		i(43016),
-		i(52446),
-		i(62898),
-		i(166680),	-- Echo of Elune (maybe you will be able to get it with a hotfix?)
-		i(166358),	-- Proper Parrot/ Proper Parrot was supposed to be added in 8.1, tied to the quest Be More Uniform. A few days after 8.1 went live, it was removed from the pet journal. Nobody obtained it from the quest.
-		p(2341),		-- Feathers (possibly tied to a quest?)
-		i(164769),	-- Unknown
-		i(33565),	-- Uncommon Drop Certificate
-		i(105914),	-- Danger Detector Boots
-		i(105915),	-- Danger Detector Harness
-		i(70104),	-- Unknown
-		i(45924),	-- Certificate of Appreciation
-		i(34548),	-- Cache of the Shattered Sun
-		i(8502),	-- Bronze Lotterybox
-		i(8503),	-- Heavy Bronze Lotterybox
-		i(8504),	-- Iron Lotterybox
-		i(8505),	-- Heavy Iron Lotterybox
-		i(8506),	-- Mithril Lotterybox
-		i(8507),	-- Heavy Mithril Lotterybox
-		i(165730),	-- Cache of Dazar'alor Treasures
-		i(165731),	-- Cache of Dazar'alor Treasures
-		i(165732),	-- Cache of Dazar'alor Treasures
-		i(13247),	-- Quartermaster Zigris' Footlocker
-		i(19804),	-- Pale Ghoulfish
-		i(21135),	-- Broken Assassin's Throwing Axe
-		i(164765),	-- Unknown
-		i(120370),
-		i(162549),	-- Personal Anchor
-		i(158922),	-- Zany Zombiefied Raptor (Did not make it)
-		i(165357),	-- Wolf's Den (162530) is used
-		i(120371),
-		i(23351),
-		i(23470),
-		i(46103),
-		i(49402),
-		i(49405),
-		i(49410),
-		i(49414),
-		i(49418),
-		i(49422),
-		i(54331),
-		i(55047),
-		i(21163),
-		i(137278),	-- Wardens Vendor List
-		i(137279),	-- nightfallen Vendor List
-		i(137280),	-- highmountain Vendor List
-		i(137281),	-- court of farondis Vendor List
-		i(137282),	-- valarjar Vendor List
-		i(137283),	-- dreamweavers Vendor List
-		i(34544),	-- Essence of the immortals
-		i(54757),	-- Double Link Tunic
-		i(54765),	-- Burnished Leggings
-		i(54766),	-- Burnished Gloves
-		i(54767),	-- Burnished Girdle
-		i(54768),	-- Burnished Boots
-		i(54769),	-- Rough Bronze Bracers -- Do Not Remove until somebody provides proof as obtained. Guild Tab shows somebody might be able to craft it, but its a visual bug. 27th Oct 2020 -- Gold
-		i(54778),	-- Burnished Boots (Again)
-		i(54781),	-- Thorbia's Gauntlets
-		i(54783),	-- Silvered Bronze Shoulders
-		i(54789),	-- Art Template Plate Belt - Plate_Common_C_01 - Rust
-		i(47058),	-- Unknown
-		i(59791),	-- Unknown
-		i(60221),	-- Furlbrow Cloak
-		i(60774),	-- Unknown
-		i(60775),	-- Unknown
-		i(60777),	-- Unknown
-		i(60780),	-- Unknown
-		i(60781),	-- Unknown
-		i(50329),	-- Unknown
-		i(55216),	-- Fiery Transform
-		i(55217),	-- Aqua Transform
-		i(55218),	-- Rocky Transform
-		i(55219),	-- Vaporous Transform
-		-- Unknown
-		i(173774),	-- Wilderbew Special
-		i(173790),	-- Bunch of Berries
-		tier(CLASIC_TIER, {
-			i(994),	-- Tome of Ice Armor
+		tier(CLASSIC_TIER, {
+			filter(BAGS, {
+				i(22233),	-- Zigris' Footlocker
+			}),
+			filter(QUEST_ITEMS, {
+				i(17409),	-- Encrusted Crystal Fragment
+				i(20883),	-- Qiraji Glyphed Jewel
+				i(20936),	-- Qiraji Blessed Jewel
+				i(20937),	-- Qiraji Encased Jewel
+				i(17347),	-- Syndicate Man Tracker (MURP)
+			}),
+			i(21163),	-- Bloated Firefin
+			i(21243),	-- Bloated Mightfish
+			i(8502),	-- Bronze Lotterybox
+			i(9023),	-- Codex of Shadow Protection III
+			i(8503),	-- Heavy Bronze Lotterybox
+			i(8505),	-- Heavy Iron Lotterybox
+			i(8507),	-- Heavy Mithril Lotterybox
+			i(8504),	-- Iron Lotterybox
+			i(5126, {	-- Knowledge: Defias Disguise
+			spell(5169),	-- Defias Disguise
+			}),
+			i(5127, {	-- Knowledge: South Seas Pirate Disguise
+				spell(5264),	-- South Seas Pirate Disguise
+			}),
+			i(5129, {	-- Knowledge: Dark Iron Dwarf Disguise
+				spell(5268),	-- Dark Iron Dwarf Disguise
+			}),
+			i(5130, {	-- Knowledge: Dalaran Wizard Disguise
+				spell(5267),	-- Dalaran Wizard Disguise
+			}),
+			i(5131, {	-- Knowledge: Stonesplinter Disguise
+				spell(5265),	-- Stonesplinter Trogg Disguise
+			}),
+			i(5132, {	-- Knowledge: Syndicate Disguise
+				spell(5266),	-- Syndicate Disguise
+			}),
+			i(8506),	-- Mithril Lotterybox
+			i(19804),	-- Pale Ghoulfish
+			i(994),		-- Tome of Ice Armor
 			i(8802),	-- Tome of Arcane Intellect
 			i(8868),	-- Tome of Conjure Water VI
 		}),
-		tier(BFA_TIER, {
-			i(167005),	-- Salvaged Key
-			tier(BFA_TIER, 0.1, {
-				filter(104, {	-- Quest Items
-					i(157788),	-- Saurid Egg
+		tier(TBC_TIER, {
+			tier(TBC_TIER, 4.0, {
+				i(34548),	-- Cache of the Shattered Sun
+				i(34544),	-- Essence of the Immortals
+				i(35728),	-- Greater Inscription of the Blade (arena realm only)
+				i(35729),	-- Greater Inscription of the Knight (arena realm only)
+				i(35730),	-- Greater Inscription of the Oracle (arena realm only)
+				i(35731),	-- Greater Inscription of the Orb (arena realm only)
+			}),
+			filter(BAGS, {
+				i(35874),	-- Whizzlespark's Portable Pet Mansion
+			}),
+			i(31507),	-- Grimoire of Searing Pain
+			i(36963),	-- Grimoire of Torment (Rank 8)
+			i(31502),	-- Libram: Blessing of Might VIII
+			i(31503),	-- Libram: Greater Blessing of Might III
+			i(31500),	-- Tome of Arcane Missiles XI
+			i(31496),	-- Tome of Fireball XIV
+			i(31498),	-- Tome of Frostbolt XIV
+		}),
+		tier(WOTLK_TIER, {
+			tier(WOTLK_TIER, 0.1, {
+				i(41596),	-- Dalaran Jewelcrafter's Token
+			}),
+			tier(WOTLK_TIER, 0.2, {
+				i(43016),	-- Dalaran Cooking Award
+			}),
+			tier(WOTLK_TIER, 1.0, {
+				filter(CONSUMABLES, {
+					i(44871),	-- Greater Inscription of the Axe
+					i(44872),	-- Greater Inscription of the Crag
+					i(44873),	-- Greater Inscription of the Pinnacle
+					i(44874),	-- Greater Inscription of the Storm
+					i(45705),	-- Argent Tournament Invitation
 				}),
+				filter(QUEST_ITEMS, {
+					i(42147),	-- Force Reaction Frost Giants
+					i(40796),	-- Force Reaction Frost Vrykul
+				}),
+				i(45924),	-- Certificate of Appreciation
+			}),
+			tier(WOTLK_TIER, 2.0, {
+				i(47558),	-- Regalia of the Grand Protector
+				i(47559),	-- Regalia of the Grand Vanquisher
+			}),
+			tier(WOTLK_TIER, 3.3, {
+				i(50329),	-- Icecrown-10 Normal Loot Token
+			}),
+			filter(BAGS, {
+				i(38307),	-- Crafty's Bottomless Inscription Bag
+			}),
+			i(33565),	-- Uncommon Drop Certificate
+			i(33564),	-- World Drop Certificate
+			i(44125),	-- zzzOLDLesser Inscription of Template - PH
+			i(44126),	-- zzzOLDGreater Inscription of Template - PH
+		}),
+		tier(CATA_TIER, {
+			tier(CATA_TIER, 0.1, {
+				i(42975),	-- Ace of Lords
+				i(42977),	-- Two of Lords
+				i(42978),	-- Three of Lords
+				i(42979),	-- Four of Lords
+				i(42980),	-- Five of Lords
+				i(42981),	-- Six of Lords
+				i(42982),	-- Seven of Lords
+				i(42983),	-- Eight of Lords
+				i(42976),	-- Lords Deck
+				i(62898),	-- Tol Barad Commendation
+			}),
+			tier(CATA_TIER, 0.3, {
+				filter(QUEST_ITEMS, {
+					i(45818),	-- Force Quest Phase 1
+					i(46056),	-- Force Quest Phase 2
+				}),
+				i(55217),	-- Aqua Transform
+				i(43254),	-- Essence Crystal
+				i(55216),	-- Fiery Transform
+				i(55218),	-- Rocky Transform
+				i(55219),	-- Vaporous Transform
+				i(52446),	-- Illustrious Jewelcrafter's Token
+			}),
+			tier(CATA_TIER, 3.0, {
+				i(78892),	-- Perfect Geode
+			}),
+			i(70104),	-- Unknown
+		}),
+		tier(MOP_TIER, {
+			tier(MOP_TIER, 0.1, {
+				i(79907),	-- Spear of Xuen (Old Version)
+			}),
+			tier(MOP_TIER, 1.0, {
+				filter(BAGS, {
+					i(92746),	-- Portable Refrigerator
+				}),
+				i(92563),	-- The Eye of the Storm
+			}),
+			tier(MOP_TIER, 2.0, {
+				filter(QUEST_ITEMS, {
+					i(93660),	-- Thunder-Laced Egg
+				}),
+			}),
+			tier(MOP_TIER, 3.0, {
+				i(98001),	-- Saurok Collection
+				i(98005),	-- Saurok Collection
+			}),
+			tier(MOP_TIER, 4.0, {
+				i(103535),	-- Bulging Bag of Charms (was planned for asia store)
+			}),
+			i(103975),	-- Elder Charm of Good Fortune
+			i(103976),	-- Mogu Rune of Fate
+			i(101537),	-- Timeless Coins
+			i(82460),	-- Unknown
+			i(82462),	-- Unknown
+			i(82463),	-- Unknown
+			i(90568),	-- Unknown
+			i(90569),	-- Unknown
+		}),
+		tier(WOD_TIER, {
+			tier(WOD_TIER, 0.1, {
+				filter(QUEST_ITEMS, {
+					i(109012),	-- Frostwolf Ancestral Totem
+				}),
+				i(115371),	-- [PLACEHOLDER TIER 3 ITEM]
+				i(107459),	-- Black Iron Fragment
+				i(108882),	-- Bloodmaul Blasting Charge
+				i(105914),	-- Danger Detector Boots
+				i(105915),	-- Danger Detector Harness
+				i(116130),	-- Draenic Crystal Fragments
+				i(111810),	-- Barracks, Level 1 - unused version (used version is 111956)
+				i(100894),	-- Deathtoll's Reward
+				i(100898),	-- Kull Bloodseeker's Reward
+				i(107474),	-- PH_6 Engorged Innards
+				i(108595),	-- Recall Stone
+				i(100897),	-- Skel'tik the Baleful's Reward
+				i(100949),	-- Thunderlord Cache Reward
+			}),
+			tier(WOD_TIER, 2.2, {
+				filter(BAGS, {
+					i(130943),	-- Reusable Tote Bag
+				}),
+			}),
+			i(120370),	-- Unknown
+			i(120371),	-- Unknown
+			i(124644),	-- Unknown
+		}),
+		tier(LEGION_TIER, {
+			tier(LEGION_TIER, 0.3, {
+				filter(BAGS, {
+					i(130156),	-- Crane Bag
+				}),
+				i(134824),	-- "Sir Pugsington" Costume
+				i(132118),	-- Aggramar's Blessing
+				i(129742),	-- Badge of Timewalking Justice
+				i(137281),	-- Court of Farondis Vendor List
+				i(137283),	-- Dreamweavers Vendor List
+				i(134006),	-- Dwyer's Spare Caber
+				i(132107),	-- Hidden Horde Cache Map
+				i(137280),	-- Highmountain Tribes Vendor List
+				i(130186),	-- Intern Items - BJI
+				i(137279),	-- Nightfallen Vendor List
+				i(134008),	-- Simple Rosary of Light
+				i(137282),	-- Valarjar Vendor List
+				i(137278),	-- Wardens Vendor List
+			}),
+			tier(LEGION_TIER, 2.0, {
+				filter(QUEST_ITEMS, {
+					i(142362),	-- ZZZ OLD Fel-Etched Bone
+					i(142376),	-- ZZZ OLD Glowing Bloodthistle Petal
+					i(142371),	-- ZZZ OLD Inferno Stone
+					i(142373),	-- ZZZ OLD Locket of Eldre'Thalas
+					i(142378),	-- ZZZ OLD Vial of Ancient Mana
+				}),
+				i(146801),	-- BUILDING CONTRIBUTION REWARD ITEM [NYI]
+				i(146800),	-- BUILDING CONTRIBUTION REWARD ITEM [NYI]
+				i(146799),	-- BUILDING CONTRIBUTION REWARD ITEM [NYI]
+			}),
+			i(132250),	-- Unknown
+			i(136411),	-- Unknown
+			i(136621),	-- Unknown
+			i(137602),	-- Unknown
+			i(140787),	-- Unknown
+			i(140921),	-- Unknown
+		}),
+		tier(BFA_TIER, {
+			tier(BFA_TIER, 0.1, {
+				filter(QUEST_ITEMS, {
+					i(157772),	-- A Royal Concern
+					i(157775),	-- A Royal Concern
+					i(157788),	-- Saurid Egg
+					i(165357),	-- Wolf's Den (162530) is used
+				}),
+				i(159734),	-- Add Keystone Affix: Fortified
+				i(159730),	-- Add Keystone Affix: Tyrannical
+				i(159732),	-- Add Keystone Affix: Bursting
+				i(159739),	-- Add Keystone Affix: Sanguine
+				i(159735),	-- Add Keystone Affix: Grievous
+				i(159731),	-- Add Keystone Affix: Bolstering
+				i(159738),	-- Add Keystone Affix: Raging
+				i(159733),	-- Add Keystone Affix: Explosive
+				i(159736),	-- Add Keystone Affix: Necrotic
+				i(159737),	-- Add Keystone Affix: Quaking
+				i(159742),	-- Add Keystone Affix: Volcanic
+				i(164258),	-- Cache of Uldir Treasures
+				i(164259),	-- Cache of Uldir Treasures
+				i(164260),	-- Cache of Uldir Treasures
+				i(156927),	-- Great Hall Recall
+				i(158841),	-- High King's Pride
+				i(151060),	-- Keystone Container
+				i(162549),	-- Personal Anchor
+				i(155010),	-- REUSE ME (DNT)
+				i(155011),	-- REUSE ME (DNT)
+				i(155012),	-- REUSE ME (DNT)
+				i(166381),	-- Set Keystone Level: 10
+				i(166380),	-- Set Keystone Level: 11
+				i(166379),	-- Set Keystone Level: 12
+				i(166378),	-- Set Keystone Level: 13
+				i(166377),	-- Set Keystone Level: 14
+				i(159694),	-- Set Keystone Level: 15
+				i(159695),	-- Set Keystone Level: 16
+				i(159696),	-- Set Keystone Level: 17
+				i(159697),	-- Set Keystone Level: 18
+				i(159698),	-- Set Keystone Level: 19
+				i(159699),	-- Set Keystone Level: 20
+				i(159700),	-- Set Keystone Level: 21
+				i(159701),	-- Set Keystone Level: 22
+				i(159702),	-- Set Keystone Level: 23
+				i(159703),	-- Set Keystone Level: 24
+				i(159704),	-- Set Keystone Level: 25
+				i(159705),	-- Set Keystone Level: 26
+				i(159706),	-- Set Keystone Level: 27
+				i(159707),	-- Set Keystone Level: 28
+				i(159708),	-- Set Keystone Level: 29
+				i(159709),	-- Set Keystone Level: 30
+				i(159683),	-- Set Keystone Map: Black Rook Hold
+				i(159684),	-- Set Keystone Map: Cathedral of Eternal Night
+				i(159685),	-- Set Keystone Map: Court of Stars
+				i(159681),	-- Set Keystone Map: Darkheart Thicket
+				i(159686),	-- Set Keystone Map: Eye of Azshara
+				i(159687),	-- Set Keystone Map: Halls of Valor
+				i(159688),	-- Set Keystone Map: Maw of Souls
+				i(159689),	-- Set Keystone Map: Lower Karazhan
+				i(159691),	-- Set Keystone Map: Seat of the Triumvirate
+				i(159692),	-- Set Keystone Map: The Arcway
+				i(159690),	-- Set Keystone Map: Upper Karazhan
+				i(159693),	-- Set Keystone Map: Vault of the Wardens
+				i(158782),	-- Warchief's Prideful
 			}),
 			tier(BFA_TIER, 1.0, {
-				filter(104, {	-- Quest Items
+				filter(BAGS, {
+					i(166699),	-- Desert Rucksack
+					i(166700),	-- Durable Sailor's Duffel
+				}),
+				filter(QUEST_ITEMS, {
 					i(164764),	-- Trident Head
 				}),
+				i(165730),	-- Cache of Dazar'alor Treasures
+				i(165731),	-- Cache of Dazar'alor Treasures
+				i(165732),	-- Cache of Dazar'alor Treasures
+				i(166680),	-- Echo of Elune
+				i(165904),	-- Treasure Map of Havenswood
+				i(165905),	-- Treasure Map of Jorundall
+				i(165884),	-- Treasure Map of Molten Cay
+				i(165906),	-- Treasure Map of Skittering Hollow
+				i(165903),	-- Treasure Map of The Dread Chain
+				i(165902),	-- Treasure Map of The Rotting Mire
+				i(165901),	-- Treasure Map of Un'gol Ruins
+				i(165900),	-- Treasure Map of Verdant Wilds
+				i(165899),	-- Treasure Map of Whispering Reef
 			}),
 			tier(BFA_TIER, 1.5, {
-				filter(104, {	-- Quest Items
+				filter(QUEST_ITEMS, {
 					i(164776),	-- Schematic: The Ub3r-Spanner
 				}),
+				i(167026),	-- Cache of Crucible Treasures
 			}),
 			tier(BFA_TIER, 2.0, {
-				filter(104, {	-- Quest Items
+				filter(QUEST_ITEMS, {
 					i(169326),	-- Abyssal Shard
 					i(167652),	-- Blueprint: Hundred-Fathom Lure
+					i(168023),	-- DNT- Smashed Transport Relay
+					i(168030),	-- DNT - Hyperbolic Circuit
+					i(168031),	-- DNT-Transference Disc
+					i(169958),	-- Fragment of the Void
+					i(169959),	-- Fragment of the Void
+					i(169960),	-- Fragment of the Void
 					i(167791),	-- Paint Vial: Battletorn Blue
+					i(169696),	-- REUSE ME [MTMM]
+					i(169702),	-- REUSE ME [MTMM]
+					i(169703),	-- REUSE ME [MTMM]
 					i(168917),	-- Squishy Clam Meat
 					i(169832),	-- The Infinity Tube
 					i(169575),	-- Worthless data
-				}),
+						}),
+				i(168272),	-- [PH] Amathet Cache
+				i(170501),	-- [PH] Mogu Cache
+				i(169154),	-- [PH] N'Zoth Cache
+				i(168171),	-- [PH] Objective Reward
+				i(172381),	-- [PH] Objective Reward
+				i(168244),	-- [PH] Treasure Reward
+				i(164774),	-- Decrypted Message Module
 				i(169081),	-- Holographic Combat Entity Data
+				i(175246),	-- N'lyeth, Sliver of N'Zoth (Unused verison)
 			}),
 			tier(BFA_TIER, 2.5, {
 				i(170488),	-- [DNT] Torn Journal Page #7
@@ -3918,10 +3967,14 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(171334),	-- Void-Touched Cloth
 				i(175017),	-- Volatile Ember
 			}),
+			i(167005),	-- Salvaged Key
+			i(164765),	-- Unknown
+			i(164769),	-- Unknown
+			i(169192),	-- Unknown
 		}),
 		tier(SL_TIER, {
 			tier(SL_TIER, 0.1, {
-				filter(104, {	-- Quest Items
+				filter(QUEST_ITEMS, {
 					i(175265),	-- Belt of Prime Command
 					i(181241),	-- Blueprint: Charm of Buff 7
 					i(182654),	-- Bonescript Dispatches
@@ -3939,7 +3992,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(180531),	-- [PH] Twisted Dust
 				i(181158),	-- [UNUSED - FOCUS] Blueprint: Charm of Energizing
 				i(182588),	-- A Bloody Hand
+				i(183949),	-- Add Keystone Affix: Inspiring
 				i(183803),	-- Add Keystone Affix: Prideful
+				i(183948),	-- Add Keystone Affix: Spiteful
+				i(183947),	-- Add Keystone Affix: Storming
 				i(180734),	-- Alchemist's Journal
 				i(181341),	-- Alexandros Mograine
 				i(180298),	-- Amalgamation of Sin
@@ -4043,7 +4099,14 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(178690),	-- RSVP: VIP 20
 				i(180742),	-- Scribe's Journal
 				i(174495),	-- Second Bell of Markos
+				i(181855),	-- Set Keystone Map: De Other Side
+				i(181852),	-- Set Keystone Map: Halls of Atonement
+				i(181851),	-- Set Keystone Map: Mists of Tirna Scithe
+				i(181850),	-- Set Keystone Map: Plaguefall
+				i(181856),	-- Set Keystone Map: Sanguine Depths
+				i(181853),	-- Set Keystone Map: Spires of Ascension
 				i(181849),	-- Set Keystone Map: The Necrotic Wake
+				i(181854),	-- Set Keystone Map: Theater of Pain
 				i(181166),	-- Sigil of Haunting Memories
 				i(181348),	-- Sika
 				i(172965),	-- Sinstone Fragments
@@ -4084,7 +4147,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(177708),	-- Writ of Tribute
 			}),
 			tier(SL_TIER, 0.2, {
-				filter(104, {	-- Quest Items
+				filter(QUEST_ITEMS, {
 					i(184169),	-- Vault Chain Pull
 				}),
 				i(184663),	-- Building: Guardhouse
@@ -4115,10 +4178,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(185764),	-- Tome of Town Portal
 			}),
 			tier(SL_TIER, 1.0, {
-				filter(104, {	-- Quest Items
+				filter(QUEST_ITEMS, {
 					i(187863),	-- Key of Ephemera
 				}),
 				i(187921),	-- [PH] Core Currency
+				i(187524),	-- Add Keystone Affix: Tormented
 				i(187570),	-- Brokers' Skinning Mote of Potentiation
 				i(187571),	-- Brokers' Mining Mote of Potentiation
 				i(173790),	-- Bunch of Berries
@@ -4144,7 +4208,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(187659),	-- Adventurer's Footlocker
 			}),
 			tier(SL_TIER, 2.0, {
-				filter(104, {	-- Quest Items
+				filter(QUEST_ITEMS, {
 					i(191040),	-- Cache of Sepulcher Treasures
 					i(191041),	-- Cache of Sepulcher Treasures
 					i(190654),	-- Cache of Sepulcher Treasures
@@ -4158,6 +4222,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(190172),	-- Title Reward: Gauntlet Runner
 				i(190823),	-- Firim's Mysterious Cache
 			}),
+			i(173774),	-- Wilderbew Special
+			i(173790),	-- Bunch of Berries
 		}),
 	}),
 }));
