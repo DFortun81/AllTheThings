@@ -3604,9 +3604,10 @@ ResolveSymbolicLink = function(o)
 							local uniques = {};
 							MergeObjects(uniques, cache);
 							for i,o in ipairs(uniques) do
-								o.achievementID = achievementID;
 								o.g = nil;
+								o.achievementID = nil;
 								app.CacheFields(o);
+								o.achievementID = achievementID;
 								tinsert(searchResults, app.CreateAchievementCriteria(criteriaID, o));
 							end
 						end
