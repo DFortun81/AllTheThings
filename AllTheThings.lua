@@ -5748,110 +5748,78 @@ end
 app.SearchForLink = SearchForLink;
 
 -- Map Information Lib
-local function AddTomTomWaypoint(group, auto, recur)
-	if TomTom
-		-- only plot visible things or if auto
-		and (group.visible or auto)
-		-- which aren't saved, unless this is the Thing that was directly clicked
-		and (not recur or not group.saved)
-		then
-		if group.coords or group.coord then
-			local opt = {
-				title = group.text or group.name or group.link,
-				persistent = nil,
-				minimap = true,
-				world = true,
-				from = "ATT",
-			};
-			if group.title then opt.title = opt.title .. "\n" .. group.title; end
-			if group.criteriaID then opt.title = opt.title .. "\nCriteria for " .. GetAchievementLink(group.achievementID); end
-			if group.description then opt.from = opt.from .. "\n" .. string.gsub(group.description, "%.% ", ".\n"); end
-			local defaultMapID = GetRelativeMap(group, app.GetCurrentMapID());
-			local displayID = GetDisplayID(group);
-			if displayID then
-				opt.minimap_displayID = displayID;
-				opt.worldmap_displayID = displayID;
-			end
-			if group.icon then
-				opt.minimap_icon = group.icon;
-				opt.worldmap_icon = group.icon;
-			end
-			if group.coords then
-				for _,coord in ipairs(group.coords) do
-					TomTom:AddWaypoint(coord[3] or defaultMapID, coord[1] / 100, coord[2] / 100, opt);
-				end
-			end
-			if group.coord then
-				TomTom:AddWaypoint(group.coord[3] or defaultMapID, group.coord[1] / 100, group.coord[2] / 100, opt);
-			end
+local __TomTomWaypointFirst = false;
+local function AddTomTomWaypointInternal(group, first)
+	if group.g then
+		for _,o in ipairs(group.g) do
+			AddTomTomWaypointInternal(o);
 		end
-		if group.g then
-			-- if plotting waypoints of a 'repeated' object, inherently plot the contained object waypoints even when not visible
-			local auto = group.objectID and not group.coord and not group.coords;
-			for _,o in ipairs(group.g) do
-				-- only automatically plot subGroups if they are not quests with incomplete source quests
-				-- TODO: use 'isLockedBy' property for quests
-				if not o.sourceQuests or o.sourceQuestsCompleted then
-					-- don't plot waypoints for quests currently in the log
-					if not o.questID or not C_QuestLog.IsOnQuest(o.questID) then
-						AddTomTomWaypoint(o, auto, true);
+	end
+	local searchResults = ResolveSymbolicLink(group);
+	if searchResults then
+		for _,o in ipairs(searchResults) do
+			AddTomTomWaypointInternal(o);
+		end
+	end
+
+	if app.GroupVisibilityFilter(group) and (first or (not group.sourceQuests or group.sourceQuestsCompleted) and (not group.questID or not C_QuestLog.IsOnQuest(group.questID))) then
+		if TomTom then
+			if (first and not __TomTomWaypointFirst) or not group.saved then
+				if group.coords or group.coord then
+					__TomTomWaypointFirst = false;
+					local opt = {
+						title = group.text or group.name or group.link,
+						persistent = nil,
+						minimap = true,
+						world = true,
+						from = "ATT",
+					};
+					if group.title then opt.title = opt.title .. "\n" .. group.title; end
+					if group.criteriaID then opt.title = opt.title .. "\nCriteria for " .. GetAchievementLink(group.achievementID); end
+					if group.description then opt.from = opt.from .. "\n" .. string.gsub(group.description, "%.% ", ".\n"); end
+					local defaultMapID = GetRelativeMap(group, app.GetCurrentMapID());
+					local displayID = GetDisplayID(group);
+					if displayID then
+						opt.minimap_displayID = displayID;
+						opt.worldmap_displayID = displayID;
 					end
-				end
-			end
-		end
-		if group.sym then
-			local searchResults = ResolveSymbolicLink(group);
-			if searchResults then
-				for _,o in ipairs(searchResults) do
-					-- only automatically plot subGroups if they are not quests with incomplete source quests
-					-- TODO: use 'isLockedBy' property for quests
-					if not o.sourceQuests or o.sourceQuestsCompleted then
-						-- don't plot waypoints for quests currently in the log
-						if not o.questID or not C_QuestLog.IsOnQuest(o.questID) then
-							AddTomTomWaypoint(o, auto, true);
+					if group.icon then
+						opt.minimap_icon = group.icon;
+						opt.worldmap_icon = group.icon;
+					end
+					if group.coords then
+						for _,coord in ipairs(group.coords) do
+							TomTom:AddWaypoint(coord[3] or defaultMapID, coord[1] / 100, coord[2] / 100, opt);
 						end
 					end
+					if group.coord then
+						TomTom:AddWaypoint(group.coord[3] or defaultMapID, group.coord[1] / 100, group.coord[2] / 100, opt);
+					end
+				end
+			end
+		else
+			if first or __TomTomWaypointFirst then
+				local coord = group.coords and group.coords[1] or group.coord;
+				if coord then
+					__TomTomWaypointFirst = false;
+					C_SuperTrack.SetSuperTrackedUserWaypoint(false);
+					C_Map.ClearUserWaypoint();
+					C_Map.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(coord[3] or defaultMapID,coord[1]/100,coord[2]/100));
+					C_SuperTrack.SetSuperTrackedUserWaypoint(true);
 				end
 			end
 		end
-		-- point arrow at closest waypoint once leaving the first recursive call
-		if not recur then
-			TomTom:SetClosestWaypoint();
-			-- if this is specifically a current quest being tracked in the log, then try to put the in-game waypoint on it as well...
-			-- maybe slumber will be ok with this?
-			if group.questID then
-				C_SuperTrack.SetSuperTrackedQuestID(group.questID);
-			end
-		end
-	elseif not recur then
-		-- only for the first click and no tomtom, plot the in-game waypoint
-		C_SuperTrack.SetSuperTrackedUserWaypoint(false);
-		C_Map.ClearUserWaypoint();
-		local coord = group.coords and group.coords[1] or group.coord;
-		if coord then
-			-- in-game waypoint
-			-- print("user-way",coord[1],coord[2],coord[3]);
-			C_Map.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(coord[3] or defaultMapID,coord[1]/100,coord[2]/100));
-			C_SuperTrack.SetSuperTrackedUserWaypoint(true);
-		end
-		-- local point = C_Map.GetUserWaypoint();
-		-- if point then
-			-- print("waypoint:");
-			-- for key,val in pairs(point) do
-				-- print(key,val);
-			-- end
-			-- print("---");
-		-- end
-		-- try waypoint by questID next since it's more accurate if in-game ACTUALLY WORKS
-		if group.questID then
-			-- print("quest-way",group.questID);
-			C_SuperTrack.SetSuperTrackedQuestID(group.questID);
-			-- if C_SuperTrack.GetSuperTrackedQuestID() ~= 0 then
-				-- print("set!");
-				-- C_SuperTrack.SetSuperTrackedUserWaypoint(true);
-			-- end
-		end
-		-- print("tracking?",C_SuperTrack.IsSuperTrackingAnything(),C_SuperTrack.IsSuperTrackingUserWaypoint(),C_SuperTrack.GetSuperTrackedQuestID());
+	end
+end
+local function AddTomTomWaypoint(group)
+	__TomTomWaypointFirst = true;
+	AddTomTomWaypointInternal(group, true);
+	if TomTom then TomTom:SetClosestWaypoint(); end
+	
+	-- if this is specifically a current quest being tracked in the log, then try to put the in-game waypoint on it as well...
+	-- maybe slumber will be ok with this?
+	if group.questID and C_QuestLog.IsOnQuest(group.questID) then
+		C_SuperTrack.SetSuperTrackedQuestID(group.questID);
 	end
 end
 -- Populates/replaces data within a questObject for displaying in a row
