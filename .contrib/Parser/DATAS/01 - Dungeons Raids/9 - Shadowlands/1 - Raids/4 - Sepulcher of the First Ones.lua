@@ -1761,6 +1761,11 @@ root("HiddenQuestTriggers", {
 			q(65828),	-- Killing Rygelon
 			q(65829),	-- Killing Rygelon
 			q(65975),	-- Killing Rygelon
+			q(65986),	-- Triggered when killing Trash: Kelmortos
+			q(65987),	-- Triggered when killing Trash: Kelmortos
+			-- q( ),	-- Killing The Jailer
+			-- q( ),	-- Killing The Jailer
+			-- q( ),	-- Killing The Jailer
 		}),
 	}),
 });
