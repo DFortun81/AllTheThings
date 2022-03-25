@@ -10,6 +10,8 @@ root("Holidays", applyholiday(HARVEST_FESTIVAL, {
 	-- #else
 	["holidayID"] = 235465,
 	-- #endif
+	["description"] = "Start: 09/06 at 10:00 AM\nEnd: 09/13 at 10:00 AM",
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. HARVEST_FESTIVAL .. [[, 9, 6, 9, 13); end]],
 	["groups"] = {
 		n(MAILBOX, {
 			i(19697),	-- Bounty of the Harvest

@@ -29,6 +29,8 @@ root("Holidays", applyholiday(PILGRIMS_BOUNTY, {
 	["holidayID"] = 235466,
 	-- #endif
 	["timeline"] = { "added 3.1.0.9658" },
+	["description"] = "Start: 11/22 at 10:00 AM\nEnd: 11/29 at 9:00 AM",
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. PILGRIMS_BOUNTY .. [[, 11, 22, 11, 29); end]],
 	["groups"] = {
 		-- #if AFTER WRATH
 		n(ACHIEVEMENTS, {

@@ -54,6 +54,8 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 	-- #else
 	["holidayID"] = 235485,
 	-- #endif
+	["description"] = "Start: 12/16 at 10:00 AM\nEnd: 01/02 at 6:00 AM",
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. FEAST_OF_WINTER_VEIL .. [[, 1, 16, 12, 2); end]],
 	["groups"] = {
 		n(ACHIEVEMENTS, {
 			ach(1691, {	-- Merrymaker

@@ -7,6 +7,8 @@ root("Holidays", applyholiday(LUNAR_FESTIVAL, {
 	-- #else
 	["holidayID"] = 235471,
 	-- #endif
+	["description"] = "Start: 01/20 at 10:00 AM\nEnd: 02/03 at 10:00 AM",
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. LUNAR_FESTIVAL .. [[, 1, 20, 2, 3); end]],
 	["groups"] = {
 		n(ACHIEVEMENTS, {
 			ach(913, {	-- To Honor One's Elders

@@ -140,6 +140,12 @@ root("Holidays", applyholiday(BREWFEST, {
 	-- #else
 	["holidayID"] = 235442,
 	-- #endif
+	["description"] = "Start: 09/20 at 10:00 AM\nEnd: 10/06 at 10:00 AM",
+	-- #if AFTER 3.0.0
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. BREWFEST .. [[, 9, 20, 10, 6); end]],
+	-- #else
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. BREWFEST .. [[, 9, 20, 10, 4); end]],
+	-- #endif
 	["groups"] = {
 		n(ACHIEVEMENTS, {
 			ach(1683, {	-- Brewmaster

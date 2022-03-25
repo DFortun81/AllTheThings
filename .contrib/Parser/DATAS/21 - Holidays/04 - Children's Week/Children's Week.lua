@@ -81,6 +81,8 @@ root("Holidays", applyholiday(CHILDRENS_WEEK, {
 	-- #else
 	["holidayID"] = 235445,
 	-- #endif
+	["description"] = "Start: 05/02 at 10:00 AM\nEnd: 05/09 at 10:00 AM",
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. CHILDRENS_WEEK .. [[, 5, 2, 5, 9); end]],
 	["groups"] = {
 		-- #if AFTER WRATH
 		n(ACHIEVEMENTS, {

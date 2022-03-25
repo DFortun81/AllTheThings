@@ -11,6 +11,8 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 	-- #else
 	["holidayID"] = 235468,
 	-- #endif
+	["description"] = "Start: 02/06 at 10:00 AM\nEnd: 02/20 at 10:00 AM",
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. LOVE_IS_IN_THE_AIR .. [[, 2, 6, 2, 20); end]],
 	["groups"] = {
 		-- #if BEFORE WRATH
 		n(COMMON_BOSS_DROPS, {

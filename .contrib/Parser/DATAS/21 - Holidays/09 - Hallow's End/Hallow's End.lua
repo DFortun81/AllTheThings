@@ -386,6 +386,8 @@ root("Holidays", applyholiday(HALLOWS_END, {
 	-- #else
 	["holidayID"] = 235462,
 	-- #endif
+	["description"] = "Start: 10/18 at 10:00 AM\nEnd: 11/01 at 11:00 AM",
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. HALLOWS_END .. [[, 10, 18, 11, 1); end]],
 	["groups"] = {
 		n(ACHIEVEMENTS, {
 			ach(1656, {	-- Hallowed Be Thy Name
