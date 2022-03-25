@@ -3296,6 +3296,7 @@ local function Resolve_Pop(group)
 	return results;
 end
 ResolveSymbolicLink = function(o)
+	if o.resolved then return o.resolved; end
 	if o and o.sym then
 		-- app.DEBUG_PRINT = true;
 		local searchResults, finalized, ipairs, tremove = {}, {}, ipairs, table.remove;
@@ -3587,6 +3588,30 @@ ResolveSymbolicLink = function(o)
 				else
 					print("Could not find subroutine", sym[2]);
 				end
+			elseif cmd == "achievement_criteria" then
+				-- Instruction to select the criteria provided by the achievement this is attached to. (maybe build this into achievements?)
+				if GetAchievementNumCriteria then
+					local achievementID = o.achievementID;
+					local cache;
+					for criteriaID=1,GetAchievementNumCriteria(achievementID),1 do
+						local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString = GetAchievementCriteriaInfo(achievementID, criteriaID);
+						if criteriaType == 27 then
+							cache = app.SearchForField("questID", assetID);
+						else
+							print("Unhandled Criteria Type", criteriaType);
+						end
+						if cache then
+							local uniques = {};
+							MergeObjects(uniques, cache);
+							for i,o in ipairs(uniques) do
+								o.achievementID = achievementID;
+								o.g = nil;
+								app.CacheFields(o);
+								tinsert(searchResults, app.CreateAchievementCriteria(criteriaID, o));
+							end
+						end
+					end
+				end
 			end
 			-- if app.DEBUG_PRINT then print("Results",searchResults and #searchResults,"from '",cmd,"' with [",sym[2],"] & [",sym[3],"] for",o.key,o.key and o[o.key]) end
 		end
@@ -3616,6 +3641,7 @@ ResolveSymbolicLink = function(o)
 				s.parent = nil;
 				FillSymLinks(s);
 			end
+			o.resolved = cloned;
 			return cloned;
 		else
 			-- if app.DEBUG_PRINT then print("Symbolic Link for ", o.key, " ",o.key and o[o.key], " contained no values after filtering.") end
@@ -5772,6 +5798,21 @@ local function AddTomTomWaypoint(group, auto, recur)
 				end
 			end
 		end
+		if group.sym then
+			local searchResults = ResolveSymbolicLink(group);
+			if searchResults then
+				for _,o in ipairs(searchResults) do
+					-- only automatically plot subGroups if they are not quests with incomplete source quests
+					-- TODO: use 'isLockedBy' property for quests
+					if not o.sourceQuests or o.sourceQuestsCompleted then
+						-- don't plot waypoints for quests currently in the log
+						if not o.questID or not C_QuestLog.IsOnQuest(o.questID) then
+							AddTomTomWaypoint(o, auto, true);
+						end
+					end
+				end
+			end
+		end
 		-- point arrow at closest waypoint once leaving the first recursive call
 		if not recur then
 			TomTom:SetClosestWaypoint();
@@ -7145,6 +7186,7 @@ local fields = {
 		end
 		return 0;
 	end,
+	["OnUpdate"] = function(t) ResolveSymbolicLink(t); end,
 };
 app.BaseAchievement = app.BaseObjectFields(fields, "BaseAchievement");
 app.CreateAchievement = function(id, t)

@@ -1,7 +1,11 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-local AMANI_HEX_STICK = i(33865);	-- Amani Hex Stick
+local AMANI_HEX_STICK = i(33865, {	-- Amani Hex Stick
+	-- #if BEFORE CATA
+	["description"] = "WARNING: This will despawn if you leave the instance!",
+	-- #endif
+});
 local BADGE_OF_JUSTICE = i(29434);	-- Badge of Justice
 local EXECUTIONER_RECIPE = i(33307);	-- Formula: Enchant Weapon - Executioner
 local MOJO_PET = i(33993);	-- Mojo (PET!)
@@ -135,12 +139,10 @@ root("Instances", tier(TBC_TIER, applylegacyclassicphase(TBC_PHASE_FOUR, {
 						["coord"] = { 70.5, 68.3, GHOSTLANDS },
 						-- #if BEFORE CATA
 						["lvl"] = 70,
-						-- #endif
 						["groups"] = {
-							-- #if BEFORE CATA
 							BADGE_OF_JUSTICE,	-- Badge of Justice x10
-							-- #endif
 						},
+						-- #endif
 					}),
 					q(11166, {	-- X Marks... Your Doom!
 						["qg"] = 23559,	-- Budd
@@ -148,7 +150,6 @@ root("Instances", tier(TBC_TIER, applylegacyclassicphase(TBC_PHASE_FOUR, {
 						["coord"] = { 70.3, 67.8, GHOSTLANDS },
 						-- #if BEFORE CATA
 						["lvl"] = 70,
-						-- #endif
 						["groups"] = {
 							objective(1, {	-- Examine Halazzi's chamber
 								["coord"] = { 52.2, 21.3, ZULAMAN },
@@ -160,6 +161,7 @@ root("Instances", tier(TBC_TIER, applylegacyclassicphase(TBC_PHASE_FOUR, {
 								["coord"] = { 27.3, 25.1, ZULAMAN },
 							}),
 						},
+						-- #endif
 					}),
 				}),
 				n(ZONE_DROPS, {

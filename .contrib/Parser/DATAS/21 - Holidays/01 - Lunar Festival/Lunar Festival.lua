@@ -1,11 +1,11 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
+root("Holidays", applyholiday(LUNAR_FESTIVAL, {
 	-- #if ANYCLASSIC
 	["npcID"] = -47,
 	-- #else
-	["holidayID"] = 235468,
+	["holidayID"] = 235471,
 	-- #endif
 	["groups"] = {
 		n(ACHIEVEMENTS, {
@@ -33,113 +33,19 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 					title(43),				-- Elder
 				},
 			}),
-			ach(6006, {	-- Elders of Cataclysm
-				crit(1),	-- Elder Stonebrand in the Temple of the Earth
-				crit(2),	-- Elder Menkhaf in Uldum
-				crit(3),	-- Elder Sekhemi in Uldum
-				crit(4),	-- Elder Firebeard in Twilight Highlands
-				crit(5),	-- Elder Darkfeather in Twilight Highlands
-				crit(6),	-- Elder Windsong in Hyjal
-				crit(7),	-- Elder Evershade in Nordrassil
-				crit(8),	-- Elder Moonlance in Vashj'ir
-				crit(9),	-- Elder Deepforge in Deepholm
-			}),
-			ach(912, {	-- Elders of Eastern Kingdoms
-				crit(1),	-- Elder Goldwell in Kharanos
-				crit(2),	-- Elder Bellowrage in Blasted Lands
-				crit(3),	-- Elder Stormbrow in Goldshire
-				crit(4),	-- Elder Meadowrun in Western Plaguelands
-				crit(5),	-- Elder Starglade in Zul'Gurub
-				crit(6),	-- Elder Winterhoof in Booty Bay
-				crit(7),	-- Elder Silvervein in Thelsamar
-				crit(8),	-- Elder Skychaser in Sentinel Hill
-				crit(9),	-- Elder Rumblerock in Burning Steppes
-				crit(10),	-- Elder Dawnstrider in Flame Crest
-				crit(11),	-- Elder Highpeak in The Hinterlands
-				crit(12),	-- Elder Ironband in Searing Gorge
-				crit(13),	-- Elder Graveborn in Brill
-				crit(14),	-- Elder Obsidian in The Sepulcher
-				crit(15),	-- Elder Windrun in Eastern Plaguelands
-				crit(16),	-- Elder Snowcrown in Light's Hope Chapel
-				crit(17),	-- Elder Moonstrike in Scholomance
-			}),
-			ach(911, {	-- Elders of Kalimdor
-				crit(1),	-- Elder Runetotem in Razor Hill
-				crit(2),	-- Elder Skygleam in Azshara
-				crit(3),	-- Elder Moonwarden in The Crossroads
-				crit(4),	-- Elder High Mountain in Vendetta Point
-				crit(5),	-- Elder Windtotem in Ratchet
-				crit(6),	-- Elder Bladeleaf in Dolanaar
-				crit(7),	-- Elder Starweave in Lor'danel
-				crit(8),	-- Elder Bloodhoof in Bloodhoof Village
-				crit(9),	-- Elder Riversong in Astranaar
-				crit(10),	-- Elder Grimtotem in Feralas
-				crit(11),	-- Elder Mistwalker in Dire Maul
-				crit(12),	-- Elder Nightwind in Felwood
-				crit(13),	-- Elder Skyseer in Freewind Post
-				crit(14),	-- Elder Morningdew in Fizzle and Pozzik's Speedbarge
-				crit(15),	-- Elder Ragetotem in Tanaris
-				crit(16),	-- Elder Dreamseer in Gadgetzan
-				crit(17),	-- Elder Thunderhorn in Un'Goro
-				crit(18),	-- Elder Brightspear in Winterspring
-				crit(19),	-- Elder Stonespire in Everlook
-				crit(20),	-- Elder Primestone in Silithus
-				crit(21),	-- Elder Bladesing in Cenarion Hold
-			}),
-			ach(910, {	-- Elders of the Dungeons
-				crit(1),	-- Elder Wildmane in Zul'Farrak
-				crit(2),	-- Elder Starsong in the Sunken Temple
-				crit(3),	-- Elder Splitrock in Maraudon
-				crit(4),	-- Elder Stonefort in Blackrock Spire
-				crit(5),	-- Elder Morndeep in Blackrock Depths
-				crit(6),	-- Elder Farwhisper in Stratholme
-				crit(7),	-- Elder Jarten in Utgarde Keep
-				crit(8),	-- Elder Igasho in The Nexus
-				crit(9),	-- Elder Nurgen in Azjol-Nerub
-				crit(10),	-- Elder Kilias in Drak'Tharon Keep
-				crit(11),	-- Elder Ohanzee in Gundrak
-				crit(12),	-- Elder Yurauk in the Halls of Stone
-				crit(13),	-- Elder Chogan'gada in Utgarde Pinnacle
-			}),
-			ach(914, {	-- Elders of the Horde
-				crit(1),	-- Elder Darkhorn in Orgrimmar
-				crit(2),	-- Elder Wheathoof in Thunder Bluff
-				crit(3),	-- Elder Darkcore in Undercity
-			}),
-			ach(915, {	-- Elders of the Alliance
-				crit(1),	-- Elder Bladeswift in Darnassus
-				crit(2),	-- Elder Bronzebeard in Ironforge
-				crit(3),	-- Elder Hammershout in Stormwind
-			}),
-			ach(1396, {	-- Elders of Northrend
-				crit(1),	-- Elder Sardis in Valiance Keep
-				crit(2),	-- Elder Beldak in Westfall Brigade
-				crit(3),	-- Elder Morthie in Star's Rest
-				crit(4),	-- Elder Fargal in Frosthold
-				crit(5),	-- Elder Arp in D.E.H.T.A
-				crit(6),	-- Elder Northal in Transitus Shield
-				crit(7),	-- Elder Sandrene in Lakeside Landing
-				crit(8),	-- Elder Wanikaya in Rainspeaker Rapids
-				crit(9),	-- Elder Lunaro in Ruins of Tethys
-				crit(10),	-- Elder Bluewolf in Wintergrasp
-				crit(11),	-- Elder Tauros in Zim'Torga
-				crit(12),	-- Elder Thoim in Moa'ki Harbor
-				crit(13),	-- Elder Graymane in K3
-				crit(14),	-- Elder Stonebeard in Bouldercrag's Refuge
-				crit(15),	-- Elder Pamuya in Warsong Hold
-				crit(16),	-- Elder Whurain in Camp Oneqwah
-				crit(17),	-- Elder Skywarden in Agmar's Hammer
-				crit(18),	-- Elder Muraco in Camp Tunka'lo
-			}),
-			ach(609, {	-- 50 Coins of Ancestry
-				ach(608, {	-- 25 Coins of Ancestry
-					ach(607, {	-- 10 Coins of Ancestry
-						ach(606, {	-- 5 Coins of Ancestry
-							ach(605),	-- A Coin of Ancestry
-						}),
-					}),
-				}),
-			}),
+			-- NOTE: This style is temporary! I'm not sure if it'll be necessary in the future, so making the format consistent for easy Find and Replace to remove them all in one felswoop!
+			ach(6006, { ["sym"] = {{ "achievement_criteria" }}}),	-- Elders of Cataclysm
+			ach(912, { ["sym"] = {{ "achievement_criteria" }}}),	-- Elders of Eastern Kingdoms
+			ach(911, { ["sym"] = {{ "achievement_criteria" }}}),	-- Elders of Kalimdor
+			ach(910, { ["sym"] = {{ "achievement_criteria" }}}),	-- Elders of the Dungeons
+			ach(914, { ["sym"] = {{ "achievement_criteria" }}}),	-- Elders of the Horde
+			ach(915, { ["sym"] = {{ "achievement_criteria" }}}),	-- Elders of the Alliance
+			ach(1396, { ["sym"] = {{ "achievement_criteria" }}}),	-- Elders of Northrend
+			ach(605),	-- A Coin of Ancestry
+			ach(606),	-- 5 Coins of Ancestry
+			ach(607),	-- 10 Coins of Ancestry
+			ach(608),	-- 25 Coins of Ancestry
+			ach(609),	-- 50 Coins of Ancestry
 			ach(626),	-- Lunar Festival Finery
 			ach(1281),	-- The Rocket's Red Glare
 			ach(1552),	-- Frenzied Firecracker
@@ -152,93 +58,231 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 			}),
 		}),
 		n(QUESTS, {
-			q(8882,  {	-- Cluster Launcher
-				["u"] = REMOVED_FROM_GAME,
-				["isYearly"] = true,
+			q(8882, {	-- Cluster Launcher
+				["qg"] = 15909,  -- Fariel Starsong <Coin of Ancestry Collector>
+				["coord"] = { 53.8, 35.3, MOONGLADE },
+				["timeline"] = { "removed 3.0.8.9464" },
+				["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
+				["repeatable"] = true,
+				["lvl"] = 55,
+				["groups"] = {
+					-- #if BEFORE 3.0.8.9464
+					i(21640),	-- Lunar Festival Fireworks Pack
+					-- #endif
+					i(21737, {	-- Schematic: Cluster Launcher
+						["timeline"] = { "removed 3.0.8.9464" },
+					}),
+				},
 			}),
-			q(8880,  {	-- Cluster Rockets
-				["u"] = REMOVED_FROM_GAME,
-				["isYearly"] = true,
+			q(8880, {	-- Cluster Rockets
+				["qg"] = 15909,  -- Fariel Starsong <Coin of Ancestry Collector>
+				["coord"] = { 53.8, 35.3, MOONGLADE },
+				["timeline"] = { "removed 3.0.8.9464" },
+				["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
+				["repeatable"] = true,
+				["lvl"] = 45,
+				-- #if BEFORE 3.0.8.9464
+				["groups"] = {
+					i(21640),	-- Lunar Festival Fireworks Pack
+					i(21741, {	-- Cluster Rocket Recipes
+						i(21730),	-- Schematic: Blue Rocket Cluster
+						i(21731),	-- Schematic: Green Rocket Cluster
+						i(21732),	-- Schematic: Red Rocket Cluster
+					}),
+				},
+				-- #endif
 			}),
 			q(56903, {	-- Crown of Courage
-				["provider"] = { "n", 155759 },	-- Myrael Lunarbloom
+				["qg"] = 155759,	-- Myrael Lunarbloom
 				["sourceQuest"] = 56842,	-- Lunar Preservation
-				["coord"] = { 53.1, 36.0, MOONGLADE },
 				["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Courage|r transmog.",
+				["coord"] = { 53.1, 36.0, MOONGLADE },
+				["timeline"] = { "added 8.3.0.33115" },
 				["groups"] = {
-					i(170205),	-- Crown of Boundless Courage
+					i(170205, {	-- Crown of Boundless Courage
+						["timeline"] = { "added 8.3.0.33115" },
+					}),
 				},
 			}),
 			q(56905, {	-- Crown of Dark Blossoms
 				["qg"] = 155759,	-- Myrael Lunarbloom
 				["sourceQuest"] = 56842,	-- Lunar Preservation
-				["coord"] = { 53.1, 36.0, MOONGLADE },
 				["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Dark Blossoms|r transmog.",
+				["coord"] = { 53.1, 36.0, MOONGLADE },
+				["timeline"] = { "added 8.3.0.33115" },
 				["groups"] = {
-					i(170207),	-- Crown of Eternal Memorial
+					i(170207, {	-- Crown of Eternal Memorial
+						["timeline"] = { "added 8.3.0.33115" },
+					}),
 				},
 			}),
 			q(56906, {	-- Crown of Good Fortune
 				["qg"] = 155759,	-- Myrael Lunarbloom
 				["sourceQuest"] = 56842,	-- Lunar Preservation
-				["coord"] = { 53.1, 36.0, MOONGLADE },
 				["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Good Fortune|r transmog.",
+				["coord"] = { 53.1, 36.0, MOONGLADE },
+				["timeline"] = { "added 8.3.0.33115" },
 				["groups"] = {
-					i(169208),	-- Crown of Everlasting Fortune
+					i(169208, {	-- Crown of Everlasting Fortune
+						["timeline"] = { "added 8.3.0.33115" },
+					}),
 				},
 			}),
 			q(56904, {	-- Crown of Prosperity
 				["qg"] = 155759,	-- Myrael Lunarbloom
 				["sourceQuest"] = 56842,	-- Lunar Preservation
-				["coord"] = { 53.1, 36.0, MOONGLADE },
 				["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Prosperity|r transmog.",
+				["coord"] = { 53.1, 36.0, MOONGLADE },
+				["timeline"] = { "added 8.3.0.33115" },
 				["groups"] = {
-					i(170206),	-- Crown of Infinite Prosperity
+					i(170206, {	-- Crown of Infinite Prosperity
+						["timeline"] = { "added 8.3.0.33115" },
+					}),
 				},
 			}),
-			q(8868,  {	-- Elune's Blessing
-				["sourceQuests"] = { 8883 },	-- Valadar Starsong
-				["provider"] = { "n", 15864 },	-- Valadar Starsong <Coin of Ancestry Collector>
+			q(8868, {	-- Elune's Blessing
+				["qg"] = 15864,	-- Valadar Starsong <Coin of Ancestry Collector>
+				["sourceQuest"] = 8883,	-- Valadar Starsong
+				["coord"] = { 53.6, 35.3, MOONGLADE },
 				["isYearly"] = true,
-				["coord"] = { 53.6, 35.4, MOONGLADE },
+				["lvl"] = lvlsquish(40, 40, 1),
 				["groups"] = {
+					objective(1, {	-- 0/1 Receive Elune's Blessing
+						["provider"] = { "n", 15467 },	-- Omen
+					}),
 					i(21540),	-- Elune's Lantern (TOY!)
 					i(21640),	-- Lunar Festival Fireworks Pack
 				},
 			}),
-			q(8862,  {	-- Elune's Candle
-				["u"] = REMOVED_FROM_GAME,
+			q(8862, {	-- Elune's Candle
+				["qg"] = 15864,  -- Valadar Starsong
+				["coord"] = { 53.6, 35.3, MOONGLADE },
+				["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
+				["timeline"] = { "removed 3.0.8.9464" },
 				["isYearly"] = true,
+				["lvl"] = 10,
+				-- #if BEFORE 3.0.8.9464
+				["groups"] = {
+					i(21640),	-- Lunar Festival Fireworks Pack
+					i(21713),	-- Elune's Candle
+				},
+				-- #endif
 			}),
-			q(8863,  {	-- Festival Dumplings
-				["u"] = REMOVED_FROM_GAME,
+			q(8863, {	-- Festival Dumplings
+				["qg"] = 15864,  -- Valadar Starsong
+				["coord"] = { 53.6, 35.3, MOONGLADE },
+				["cost"] = { { "i", 21100, 1 } },	-- Coin of Ancestry
+				["timeline"] = { "removed 3.0.8.9464" },
+				["repeatable"] = true,
+				-- #if BEFORE 3.0.8.9464
+				["groups"] = {
+					i(21537),	-- Festival Dumplings
+				},
+				-- #endif
+			}),
+			q(8864, {	-- Festive Lunar Dresses
+				["qg"] = 15864,  -- Valadar Starsong
+				["coord"] = { 53.6, 35.3, MOONGLADE },
+				["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
+				["timeline"] = { "removed 3.0.8.9464" },
+				["repeatable"] = true,
+				-- #if BEFORE 3.0.8.9464
+				["groups"] = {
+					i(21157),	-- Festive Green Dress
+					i(21538),	-- Festive Pink Dress
+					i(21539),	-- Festive Purple Dress
+					i(21640),	-- Lunar Festival Fireworks Pack
+				},
+				-- #endif
+			}),
+			q(8865, {	-- Festive Lunar Pant Suits
+				["qg"] = 15864,  -- Valadar Starsong
+				["coord"] = { 53.6, 35.3, MOONGLADE },
+				["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
+				["timeline"] = { "removed 3.0.8.9464" },
 				["isYearly"] = true,
+				-- #if BEFORE 3.0.8.9464
+				["groups"] = {
+					i(21541),	-- Festive Black Pant Suit
+					i(21544),	-- Festive Blue Pant Suit
+					i(21543),	-- Festive Teal Pant Suit
+					i(21640),	-- Lunar Festival Fireworks Pack
+				},
+				-- #endif
 			}),
-			q(8864,  {	-- Festive Lunar Dresses
-				["u"] = REMOVED_FROM_GAME,
-				["isYearly"] = true,
+			q(8878, {	-- Festive Recipes
+				["qg"] = 15909,  -- Fariel Starsong <Coin of Ancestry Collector>
+				["coord"] = { 53.8, 35.3, MOONGLADE },
+				["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
+				["timeline"] = { "removed 3.0.8.9464" },
+				["repeatable"] = true,
+				["lvl"] = 50,
+				["groups"] = {
+					-- #if BEFORE 3.0.8.9464
+					i(21640),	-- Lunar Festival Fireworks Pack
+					-- #endif
+					i(21722, {	-- Pattern: Festival Dress
+						["timeline"] = { "removed 3.0.8.9464" },
+					}),
+					i(21723, {	-- Pattern: Festival Suit
+						["timeline"] = { "removed 3.0.8.9464" },
+					}),
+				},
 			}),
-			q(8865,  {	-- Festive Lunar Pant Suits
-				["u"] = REMOVED_FROM_GAME,
-				["isYearly"] = true,
+			q(8877, {	-- Firework Launcher
+				["qg"] = 15909,  -- Fariel Starsong <Coin of Ancestry Collector>
+				["coord"] = { 53.8, 35.3, MOONGLADE },
+				["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
+				["timeline"] = { "removed 3.0.8.9464" },
+				["repeatable"] = true,
+				["lvl"] = 45,
+				["groups"] = {
+					-- #if BEFORE 3.0.8.9464
+					i(21640),	-- Lunar Festival Fireworks Pack
+					-- #endif
+					i(21738, {	-- Schematic: Firework Launcher
+						["timeline"] = { "removed 3.0.8.9464" },
+					}),
+				},
 			}),
-			q(8878,  {	-- Festive Recipes
-				["u"] = REMOVED_FROM_GAME,
-				["isYearly"] = true,
+			q(8881, {	-- Large Cluster Rockets
+				["qg"] = 15909,  -- Fariel Starsong <Coin of Ancestry Collector>
+				["coord"] = { 53.8, 35.3, MOONGLADE },
+				["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
+				["timeline"] = { "removed 3.0.8.9464" },
+				["repeatable"] = true,
+				["lvl"] = 55,
+				-- #if BEFORE 3.0.8.9464
+				["groups"] = {
+					i(21640),	-- Lunar Festival Fireworks Pack
+					i(21743, {	-- Large Cluster Rocket Recipes
+						i(21733),	-- Schematic: Large Blue Rocket Cluster
+						i(21734),	-- Schematic: Large Green Rocket Cluster
+						i(21735),	-- Schematic: Large Red Rocket Cluster
+					}),
+				},
+				-- #endif
 			}),
-			q(8877,  {	-- Firework Launcher
-				["u"] = REMOVED_FROM_GAME,
-				["isYearly"] = true,
+			q(8879, {	-- Large Rockets
+				["qg"] = 15909,  -- Fariel Starsong <Coin of Ancestry Collector>
+				["coord"] = { 53.8, 35.3, MOONGLADE },
+				["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
+				["timeline"] = { "removed 3.0.8.9464" },
+				["repeatable"] = true,
+				["lvl"] = 35,
+				-- #if BEFORE 3.0.8.9464
+				["groups"] = {
+					i(21640),	-- Lunar Festival Fireworks Pack
+					i(21742, {	-- Large Rocket Recipes
+						i(21727),	-- Schematic: Large Blue Rocket
+						i(21728),	-- Schematic: Large Green Rocket
+						i(21729),	-- Schematic: Large Red Rocket
+					}),
+				},
+				-- #endif
 			}),
-			q(8881,  {	-- Large Cluster Rockets
-				["u"] = REMOVED_FROM_GAME,
-				["isYearly"] = true,
-			}),
-			q(8879,  {	-- Large Rockets
-				["u"] = REMOVED_FROM_GAME,
-				["isYearly"] = true,
-			}),
-			q(8867,  {	-- Lunar Fireworks
+			q(8867, {	-- Lunar Fireworks
+				["qg"] = 15895,	-- Lunar Festival Harbinger
 				["sourceQuests"] = {
 					8870,	-- The Lunar Festival (A)
 					8871,	-- The Lunar Festival (A)
@@ -247,8 +291,6 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 					8874,	-- The Lunar Festival (H)
 					8875,	-- The Lunar Festival (H)
 				},
-				["provider"] = { "n", 15895 },	-- Lunar Festival Harbinger
-				["isYearly"] = true,
 				["maps"] = {
 					ELWYNN_FOREST,
 					UNDERCITY,
@@ -256,71 +298,91 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 					ORGRIMMAR,
 					THUNDER_BLUFF,
 					DARNASSUS,
+					-- #if AFTER TBC
 					SILVERMOON_CITY,
 					THE_EXODAR,
 					SHATTRATH_CITY,
+					-- #endif
+					-- #if AFTER WRATH
 					NORTHREND_DALARAN,
+					-- #endif
+					-- #if AFTER MOP
 					VALE_OF_ETERNAL_BLOSSOMS,
+					-- #endif
 				},
+				["isYearly"] = true,
 				["groups"] = {
 					i(21711),	-- Lunar Festival Invitation
 				},
 			}),
 			q(56842, {	-- Lunar Preservation
-				["provider"] = { "n", 155759 },	-- Myrael Lunarbloom
+				["qg"] = 155759,	-- Myrael Lunarbloom
 				["coord"] = { 53.1, 36.0, MOONGLADE },
+				["timeline"] = { "added 8.3.0.33115" },
 			}),
-			q(8876,  {	-- Small Rockets
-				["u"] = REMOVED_FROM_GAME,
-				["isYearly"] = true,
+			q(8876, {	-- Small Rockets
+				["qg"] = 15909,  -- Fariel Starsong <Coin of Ancestry Collector>
+				["coord"] = { 53.8, 35.3, MOONGLADE },
+				["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
+				["timeline"] = { "removed 3.0.8.9464" },
+				["repeatable"] = true,
+				["lvl"] = 25,
+				-- #if BEFORE 3.0.8.9464
+				["groups"] = {
+					i(21640),	-- Lunar Festival Fireworks Pack
+					i(21740, {	-- Small Rocket Recipes
+						i(21724),	-- Schematic: Small Blue Rocket
+						i(21725),	-- Schematic: Small Green Rocket
+						i(21726),	-- Schematic: Small Red Rocket
+					}),
+				},
+				-- #endif
 			}),
-			q(8870,  {	-- The Lunar Festival (A)
-				["isBreadcrumb"] = true,
-				["provider"] = { "n", 15892 },	-- Lunar Festival Emissary
-				["isYearly"] = true,
-				["races"] = ALLIANCE_ONLY,
+			q(8870, {	-- The Lunar Festival (A)
+				["qg"] = 15892,	-- Lunar Festival Emissary
 				["maps"] = { IRONFORGE },
-			}),
-			q(8871,  {	-- The Lunar Festival (A)
-				["isBreadcrumb"] = true,
-				["provider"] = { "n", 15892 },	-- Lunar Festival Emissary
-				["isYearly"] = true,
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { ELWYNN_FOREST },
-			}),
-			q(8872,  {	-- The Lunar Festival (A)
 				["isBreadcrumb"] = true,
-				["provider"] = { "n", 15892 },	-- Lunar Festival Emissary
 				["isYearly"] = true,
+			}),
+			q(8871, {	-- The Lunar Festival (A)
+				["qg"] = 15892,	-- Lunar Festival Emissary
+				["maps"] = { STORMWIND_CITY, ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
+				["isBreadcrumb"] = true,
+				["isYearly"] = true,
+			}),
+			q(8872, {	-- The Lunar Festival (A)
+				["qg"] = 15892,	-- Lunar Festival Emissary
 				["maps"] = { DARNASSUS },
-			}),
-			q(8873,  {	-- The Lunar Festival (H)
+				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
-				["provider"] = { "n", 15891 },	-- Lunar Festival Herald
 				["isYearly"] = true,
-				["races"] = HORDE_ONLY,
+			}),
+			q(8873, {	-- The Lunar Festival (H)
+				["qg"] = 15891,	-- Lunar Festival Herald
 				["maps"] = { ORGRIMMAR },
-			}),
-			q(8874,  {	-- The Lunar Festival (H)
-				["isBreadcrumb"] = true,
-				["provider"] = { "n", 15891 },	-- Lunar Festival Herald
-				["isYearly"] = true,
 				["races"] = HORDE_ONLY,
+				["isBreadcrumb"] = true,
+				["isYearly"] = true,
+			}),
+			q(8874, {	-- The Lunar Festival (H)
+				["qg"] = 15891,	-- Lunar Festival Herald
 				["maps"] = { UNDERCITY },
-			}),
-			q(8875,  {	-- The Lunar Festival (H)
-				["isBreadcrumb"] = true,
-				["provider"] = { "n", 15891 },	-- Lunar Festival Herald
-				["isYearly"] = true,
 				["races"] = HORDE_ONLY,
-				["maps"] = { THUNDER_BLUFF },
-			}),
-			q(8883,  {	-- Valadar Starsong
-				["sourceQuests"] = { 8867 },	-- Lunar Fireworks
 				["isBreadcrumb"] = true,
-				["provider"] = { "n", 15895 },	-- Lunar Festival Harbinger
 				["isYearly"] = true,
+			}),
+			q(8875, {	-- The Lunar Festival (H)
+				["qg"] = 15891,	-- Lunar Festival Herald
+				["maps"] = { THUNDER_BLUFF },
+				["races"] = HORDE_ONLY,
+				["isBreadcrumb"] = true,
+				["isYearly"] = true,
+			}),
+			q(8883, {	-- Valadar Starsong
+				["qg"] = 15895,	-- Lunar Festival Harbinger
+				["sourceQuest"] = 8867,	-- Lunar Fireworks
 				["maps"] = {
 					ELWYNN_FOREST,
 					UNDERCITY,
@@ -334,916 +396,706 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 					NORTHREND_DALARAN,
 					VALE_OF_ETERNAL_BLOSSOMS,
 				},
-			}),
-		--	Elders of Cataclysm
-			q(29736, {	-- Darkfeather the Elder
-				["provider"] = { "n", 55218 },	-- Elder Darkfeather
+				["isBreadcrumb"] = true,
 				["isYearly"] = true,
+			}),
+			-- Elders of Cataclysm
+			q(29736, {	-- Darkfeather the Elder
+				["qg"] = 55218,	-- Elder Darkfeather
 				["coord"] = { 51.8, 33.0, TWILIGHT_HIGHLANDS },
-				["groups"] = {
-					crit(5, {	-- Elder Darkfeather in Twilight Highlands
-						["achievementID"] = 6006,	-- Elders of Cataclysm
-					}),
-				},
+				["timeline"] = { "added 4.3.0.15050" },
+				["isYearly"] = true,
 			}),
 			q(29734, {	-- Deepforge the Elder
-				["provider"] = { "n", 55216 },	-- Elder Deepforge
-				["isYearly"] = true,
+				["qg"] = 55216,	-- Elder Deepforge
 				["coord"] = { 27.7, 69.1, 207 },
-				["groups"] = {
-					crit(9, {	-- Elder Deepforge in Deepholm
-						["achievementID"] = 6006,	-- Elders of Cataclysm
-					}),
-				},
+				["timeline"] = { "added 4.3.0.15050" },
+				["isYearly"] = true,
 			}),
 			q(29740, {	-- Evershade the Elder
-				["provider"] = { "n", 55227 },	-- Elder Evershade
-				["isYearly"] = true,
+				["qg"] = 55227,	-- Elder Evershade
 				["coord"] = { 62.5, 22.8, MOUNT_HYJAL },
-				["groups"] = {
-					crit(7, {	-- Elder Evershade in Nordrassil
-						["achievementID"] = 6006,	-- Elders of Cataclysm
-					}),
-				},
+				["timeline"] = { "added 4.3.0.15050" },
+				["isYearly"] = true,
 			}),
 			q(29737, {	-- Firebeard the Elder
-				["provider"] = { "n", 55219 },	-- Elder Firebeard
-				["isYearly"] = true,
+				["qg"] = 55219,	-- Elder Firebeard
 				["coord"] = { 50.9, 70.4, TWILIGHT_HIGHLANDS },
-				["groups"] = {
-					crit(4, {	-- Elder Firebeard in Twilight Highlands
-						["achievementID"] = 6006,	-- Elders of Cataclysm
-					}),
-				},
+				["timeline"] = { "added 4.3.0.15050" },
+				["isYearly"] = true,
 			}),
 			q(29742, {	-- Menkhaf the Elder
-				["provider"] = { "n", 55211 },	-- Elder Menkhaf
-				["isYearly"] = true,
+				["qg"] = 55211,	-- Elder Menkhaf
 				["coord"] = { 65.5, 18.7, ULDUM },
-				["groups"] = {
-					crit(2, {	-- Elder Menkhaf in Uldum
-						["achievementID"] = 6006,	-- Elders of Cataclysm
-					}),
-				},
+				["timeline"] = { "added 4.3.0.15050" },
+				["isYearly"] = true,
 			}),
 			q(29738, {	-- Moonlance the Elder
-				["provider"] = { "n", 55228 },	-- Elder Moonlance
-				["isYearly"] = true,
+				["qg"] = 55228,	-- Elder Moonlance
 				["coord"] = { 57.2, 86.1, 205 },
-				["groups"] = {
-					crit(8, {	-- Elder Moonlance in Vashj'ir
-						["achievementID"] = 6006,	-- Elders of Cataclysm
-					}),
-				},
+				["timeline"] = { "added 4.3.0.15050" },
+				["isYearly"] = true,
 			}),
 			q(29741, {	-- Sekhemi the Elder
-				["provider"] = { "n", 55210 },	-- Elder Sekhemi
-				["isYearly"] = true,
+				["qg"] = 55210,	-- Elder Sekhemi
 				["coord"] = { 31.5, 63.0, ULDUM },
-				["groups"] = {
-					crit(3, {	-- Elder Sekhemi in Uldum
-						["achievementID"] = 6006,	-- Elders of Cataclysm
-					}),
-				},
+				["timeline"] = { "added 4.3.0.15050" },
+				["isYearly"] = true,
 			}),
 			q(29735, {	-- Stonebrand the Elder
-				["provider"] = { "n", 55217 },	-- Elder Stonebrand
-				["isYearly"] = true,
+				["qg"] = 55217,	-- Elder Stonebrand
 				["coord"] = { 49.7, 54.8, 207 },
-				["groups"] = {
-					crit(1, {	-- Elder Stonebrand in the Temple of the Earth
-						["achievementID"] = 6006,	-- Elders of Cataclysm
-					}),
-				},
+				["timeline"] = { "added 4.3.0.15050" },
+				["isYearly"] = true,
 			}),
 			q(29739, {	-- Windsong the Elder
-				["provider"] = { "n", 55224 },	-- Elder Windsong
-				["isYearly"] = true,
+				["qg"] = 55224,	-- Elder Windsong
 				["coord"] = { 26.7, 62.0, MOUNT_HYJAL },
-				["groups"] = {
-					crit(6, {	-- Elder Windsong in Hyjal
-						["achievementID"] = 6006,	-- Elders of Cataclysm
-					}),
-				},
+				["timeline"] = { "added 4.3.0.15050" },
+				["isYearly"] = true,
 			}),
-		--	Elders of Eastern Kingdoms
-			q(8647,  {	-- Bellowrage the Elder
+			-- Elders of Eastern Kingdoms
+			q(8647, {	-- Bellowrage the Elder
+				["qg"] = 15563,	-- Elder Bellowrage
+				-- #if AFTER WOD
 				["description"] = "In order to view this Elder, visit Zidormi at 48.1, 7.3 to see Blasted Lands before the invasion.",
-				["provider"] = { "n", 15563 },	-- Elder Bellowrage
-				["isYearly"] = true,
+				-- #endif
+				-- #if AFTER CATA
 				["coord"] = { 54.2, 49.4, BLASTED_LANDS },
-				["groups"] = {
-					crit(2, {	-- Elder Bellowrage
-						["achievementID"] = 912,	-- Eldersof Eastern Kingdoms
-					}),
-				},
-			}),
-			q(8683,  {	-- Dawnstrider the Elder
-				["provider"] = { "n", 15585 },	-- Elder Dawnstrider
+				-- #else
+				["coord"] = { 58.8, 51.7, BLASTED_LANDS },
+				-- #endif
 				["isYearly"] = true,
+			}),
+			q(8683, {	-- Dawnstrider the Elder
+				["qg"] = 15585,	-- Elder Dawnstrider
+				-- #if AFTER CATA
 				["coord"] = { 52.3, 23.9, BURNING_STEPPES },
-				["groups"] = {
-					crit(10, {	-- Elder Dawnstrider in Flame Crest
-						["achievementID"] = 912,	-- Elders of Eastern Kingdoms
-					}),
-				},
-			}),
-			q(8653,  {	-- Goldwell the Elder
-				["provider"] = { "n", 15569 },	-- Elder Goldwell
+				-- #else
+				["coord"] = { 64.5, 24.1, BURNING_STEPPES },
+				-- #endif
 				["isYearly"] = true,
+			}),
+			q(8653, {	-- Goldwell the Elder
+				["qg"] = 15569,	-- Elder Goldwell
+				-- #if AFTER CATA
 				["coord"] = { 53.8, 49.9, DUN_MOROGH },
-				["groups"] = {
-					crit(1, {	-- Elder Goldwell in Kharanos
-						["achievementID"] = 912,	-- Elders of Eastern Kingdoms
-					}),
-				},
-			}),
-			q(8652,  {	-- Graveborn the Elder
-				["description"] = "In order to view this Elder, visit Zidormi at 69.4, 62.7 to see Tirisfal Glades before the Battle for Lordaeron.",
-				["provider"] = { "n", 15568 },	-- Elder Graveborn
+				-- #else
+				["coord"] = { 46.8, 51.6, DUN_MOROGH },
+				-- #endif
 				["isYearly"] = true,
+			}),
+			q(8652, {	-- Graveborn the Elder
+				["qg"] = 15568,	-- Elder Graveborn
+				-- #if AFTER CATA
 				["coord"] = { 61.8, 53.9, TIRISFAL_GLADES },
-				["groups"] = {
-					crit(13, {	-- Elder Graveborn in Brill
-						["achievementID"] = 912,	-- Elders of Eastern Kingdoms
-					}),
-				},
-			}),
-			q(8643,  {	-- Highpeak the Elder
-				["provider"] = { "n", 15559 },	-- Elder Highpeak
+				-- #else
+				["coord"] = { 61.9, 53.8, TIRISFAL_GLADES },
+				-- #endif
+				-- #if AFTER BFA
+				["description"] = "In order to view this Elder, visit Zidormi at 69.4, 62.7 to see Tirisfal Glades before the Battle for Lordaeron.",
+				-- #endif
 				["isYearly"] = true,
+			}),
+			q(8643, {	-- Highpeak the Elder
+				["qg"] = 15559,	-- Elder Highpeak
+				-- #if AFTER CATA
 				["coord"] = { 49.9, 47.9, THE_HINTERLANDS },
-				["groups"] = {
-					crit(11, {	-- Elder Highpeak in The Hinterlands
-						["achievementID"] = 912,	-- Elders of Eastern Kingdoms
-					}),
-				},
-			}),
-			q(8651,  {	-- Ironband the Elder
-				["provider"] = { "n", 15567 },	-- Elder Ironband
+				-- #else
+				["coord"] = { 50.0, 48.0, THE_HINTERLANDS },
+				-- #endif
 				["isYearly"] = true,
+			}),
+			q(8651, {	-- Ironband the Elder
+				["qg"] = 15567,	-- Elder Ironband
 				["coord"] = { 21.3, 79.0, SEARING_GORGE },
-				["groups"] = {
-					crit(12, {	-- Elder Ironband in Searing Gorge
-						["achievementID"] = 912,	-- Elders of Eastern Kingdoms
-					}),
-				},
-			}),
-			q(8722,  {	-- Meadowrun the Elder
-				["provider"] = { "n", 15602 },	-- Elder Meadowrun
 				["isYearly"] = true,
+			}),
+			q(8722, {	-- Meadowrun the Elder
+				["qg"] = 15602,	-- Elder Meadowrun
+				-- #if AFTER CATA
 				["coord"] = { 63.5, 36.2, WESTERN_PLAGUELANDS },
-				["groups"] = {
-					crit(4, {	-- Elder Meadowrun in Western Plaguelands
-						["achievementID"] = 912,	-- Elders of Eastern Kingdoms
-					}),
-				},
-			}),
-			q(8714,  {	-- Moonstrike the Elder
-				["provider"] = { "n", 15594 },	-- Elder Moonstrike
+				-- #else
+				["coord"] = { 66.0, 47.8, WESTERN_PLAGUELANDS },
+				-- #endif
 				["isYearly"] = true,
+			}),
+			q(8714, {	-- Moonstrike the Elder
+				["qg"] = 15594,	-- Elder Moonstrike
+				-- #if AFTER CATA
 				["coord"] = { 69.1, 73.3, WESTERN_PLAGUELANDS },
-				["groups"] = {
-					crit(17, {	-- Elder Moonstrike in Scholomance
-						["achievementID"] = 912,	-- Elders of Eastern Kingdoms
-					}),
-				},
-			}),
-			q(8645,  {	-- Obsidian the Elder
-				["provider"] = { "n", 15561 },	-- Elder Obsidian
+				-- #else
+				["coord"] = { 69, 73, WESTERN_PLAGUELANDS },
+				-- #endif
 				["isYearly"] = true,
+			}),
+			q(8645, {	-- Obsidian the Elder
+				["qg"] = 15561,	-- Elder Obsidian
+				-- #if AFTER CATA
 				["coord"] = { 45.0, 41.1, SILVERPINE_FOREST },
-				["groups"] = {
-					crit(14, {	-- Elder Obsidian in The Sepulcher
-						["achievementID"] = 912,	-- Elders of Eastern Kingdoms
-					}),
-				},
-			}),
-			q(8636,  {	-- Rumblerock the Elder
-				["provider"] = { "n", 15557 },	-- Elder Rumblerock
+				-- #else
+				["coord"] = { 44.9, 41.1, SILVERPINE_FOREST },
+				-- #endif
 				["isYearly"] = true,
+			}),
+			q(8636, {	-- Rumblerock the Elder
+				["qg"] = 15557,	-- Elder Rumblerock
+				-- #if AFTER CATA
 				["coord"] = { 70.1, 45.4, BURNING_STEPPES },
-				["groups"] = {
-					crit(9, {	-- Elder Rumblerock in Burning Steppes
-						["achievementID"] = 912,	-- Elders of Eastern Kingdoms
-					}),
-				},
-			}),
-			q(8642,  {	-- Silvervein the Elder
-				["provider"] = { "n", 15558 },	-- Elder Silvervein
+				-- #else
+				["coord"] = { 82.2, 46.5, BURNING_STEPPES },
+				-- #endif
 				["isYearly"] = true,
+			}),
+			q(8642, {	-- Silvervein the Elder
+				["qg"] = 15558,	-- Elder Silvervein
 				["coord"] = { 33.3, 46.5, LOCH_MODAN },
-				["groups"] = {
-					crit(7, {	-- Elder Silvervein in Thelsamar
-						["achievementID"] = 912,	-- Elders of Eastern Kingdoms
-					}),
-				},
-			}),
-			q(8675,  {	-- Skychaser the Elder
-				["provider"] = { "n", 15577 },	-- Elder Skychaser
 				["isYearly"] = true,
+			}),
+			q(8675, {	-- Skychaser the Elder
+				["qg"] = 15577,	-- Elder Skychaser
 				["coord"] = { 56.7, 47.1, WESTFALL },
-				["groups"] = {
-					crit(8, {	-- Elder Skychaser in Sentinel Hill
-						["achievementID"] = 912,	-- Elders of Eastern Kingdoms
-					}),
-				},
-			}),
-			q(8650,  {	-- Snowcrown the Elder
-				["provider"] = { "n", 15566 },	-- Elder Snowcrown
 				["isYearly"] = true,
+			}),
+			q(8650, {	-- Snowcrown the Elder
+				["qg"] = 15566,	-- Elder Snowcrown
+				-- #if AFTER CATA
 				["coord"] = { 75.7, 54.4, EASTERN_PLAGUELANDS },
-				["groups"] = {
-					crit(16, {	-- Elder Snowcrown in Light's Hope Chapel
-						["achievementID"] = 912,	-- Elders of Eastern Kingdom
-					}),
-				},
-			}),
-			q(8716,  {	-- Starglade the Elder
-				["provider"] = { "n", 15596 },	-- Elder Starglade
+				-- #else
+				["coord"] = { 81.5, 60.5, EASTERN_PLAGUELANDS },
+				-- #endif
 				["isYearly"] = true,
+			}),
+			q(8716, {	-- Starglade the Elder
+				["qg"] = 15596,	-- Elder Starglade
+				-- #if AFTER CATA
 				["coord"] = { 71.0, 34.2, NORTHERN_STRANGLETHORN },
-				["groups"] = {
-					crit(5, {	-- Elder Starglade in Zul'Gurub
-						["achievementID"] = 912,	-- Elders of Eastern Kingdoms
-					}),
-				},
-			}),
-			q(8649,  {	-- Stormbrow the Elder
-				["provider"] = { "n", 15565 },	-- Elder Stormbrow
+				-- #else
+				["coord"] = { 53.11, 18.46, STRANGLETHORN_VALE },
+				-- #endif
 				["isYearly"] = true,
+			}),
+			q(8649, {	-- Stormbrow the Elder
+				["qg"] = 15565,	-- Elder Stormbrow
 				["coord"] = { 39.8, 63.8, ELWYNN_FOREST },
-				["groups"] = {
-					crit(3, {	-- Elder Stormbrow in Goldshire
-						["achievementID"] = 912,	-- Elders of Eastern Kingdoms
-					}),
-				},
-			}),
-			q(8688,  {	-- Windrun the Elder
-				["provider"] = { "n", 15592 },	-- Elder Windrun
 				["isYearly"] = true,
+			}),
+			q(8688, {	-- Windrun the Elder
+				["qg"] = 15592,	-- Elder Windrun
+				-- #if AFTER CATA
 				["coord"] = { 35.5, 68.8, EASTERN_PLAGUELANDS },
-				["groups"] = {
-					crit(15, {	-- Elder Windrun in Eastern Plaguelands
-						["achievementID"] = 912,	-- Elders of Eastern Kingdoms
-					}),
-				},
-			}),
-			q(8674,  {	-- Winterhoof the Elder
-				["provider"] = { "n", 15576 },	-- Elder Winterhoof
+				-- #else
+				["coord"] = { 39.7, 75.4, EASTERN_PLAGUELANDS },
+				-- #endif
 				["isYearly"] = true,
+			}),
+			q(8674, {	-- Winterhoof the Elder
+				["qg"] = 15576,	-- Elder Winterhoof
+				-- #if AFTER CATA
 				["coord"] = { 40.0, 72.4, THE_CAPE_OF_STRANGLETHORN },
-				["groups"] = {
-					crit(6, {	-- Elder Winterhoof in Booty Bay
-						["achievementID"] = 912,	-- Elders of Eastern Kingdoms
-					}),
-				},
-			}),
-		--	Elders of Kalimdor
-			q(8715,  {	-- Bladeleaf the Elder
-				["description"] = "In order to view this Elder, visit Zidormi at 48.8, 24.4 in Darkshore to be able to visit the past version of Teldrassil.  The Elder is on the left side of the Cenarion Enclave.",
-				["provider"] = { "n", 15595 },	-- Elder Bladeleaf
+				-- #else
+				["coord"] = { 27.6, 74.2, STRANGLETHORN_VALE },
+				-- #endif
 				["isYearly"] = true,
+			}),
+			-- Elders of Kalimdor
+			q(8715, {	-- Bladeleaf the Elder
+				["qg"] = 15595,	-- Elder Bladeleaf
+				-- #if AFTER CATA
 				["coord"] = { 56.8, 53.1, TELDRASSIL },
-				["groups"] = {
-					crit(6, {	-- Elder Bladeleaf in Dolanaar
-						["achievementID"] = 911,	-- Elders of Kalimdor
-					}),
-				},
-			}),
-			q(8719,  {	-- Bladesing the Elder
-				["description"] = "In order to view this Elder, visit Zidormi at 78.9, 21.9 to see Silithus before the Wound in the World.",
-				["provider"] = { "n", 15599 },	-- Elder Bladesing
+				-- #else
+				["coord"] = { 56.9, 60.5, TELDRASSIL },
+				-- #endif
+				-- #if AFTER BFA
+				["description"] = "In order to view this Elder, visit Zidormi at 48.8, 24.4 in Darkshore to be able to visit the past version of Teldrassil.  The Elder is on the left side of the Cenarion Enclave.",
+				-- #endif
 				["isYearly"] = true,
+			}),
+			q(8719, {	-- Bladesing the Elder
+				["qg"] = 15599,	-- Elder Bladesing
+				-- #if AFTER CATA
 				["coord"] = { 53.0, 35.4, SILITHUS },
-				["groups"] = {
-					crit(21, {	-- Elder Bladesing in Cenarion Hold
-						["achievementID"] = 911,	-- Elders of Kalimdor
-					}),
-				},
-			}),
-			q(8673,  {	-- Bloodhoof the Elder
-				["provider"] = { "n", 15575 },	-- Elder Bloodhoof
-				["isYearly"] = true,
-				["coord"] = { 48.4, 53.2, MULGORE },
-				["groups"] = {
-					crit(8, {	-- Elder Bloodhoof in Bloodhoof Village
-						["achievementID"] = 911,	-- Elders of Kalimdor
-					}),
-				},
-			}),
-			q(8726,  {	-- Brightspear the Elder
-				["provider"] = { "n", 15606 },	-- Elder Brightspear
-				["isYearly"] = true,
-				["coord"] = { 53.2, 56.7, WINTERSPRING },
-				["groups"] = {
-					crit(18, {	-- Elder Brightspear in Winterspring
-						["achievementID"] = 911,	-- Elders of Kalimdor
-					}),
-				},
-			}),
-			q(8684,  {	-- Dreamseer the Elder
-				["provider"] = { "n", 15586 },	-- Elder Dreamseer
-				["isYearly"] = true,
-				["coord"] = { 51.3, 28.8, TANARIS },
-				["groups"] = {
-					crit(16, {	-- Elder Dreamseer in Gadgetzan
-						["achievementID"] = 911,	-- Elders of Kalimdor
-					}),
-				},
-			}),
-			q(8679,  {	-- Grimtotem the Elder
-				["provider"] = { "n", 15581 },	-- Elder Grimtotem
-				["isYearly"] = true,
-				["coord"] = { 76.7, 37.8, FERALAS },
-				["groups"] = {
-					crit(10, {	-- Elder Grimtotem in Feralas
-						["achievementID"] = 911,	-- Elders of Kalimdor
-					}),
-				},
-			}),
-			q(8686,  {	-- High Mountain the Elder
-				["provider"] = { "n", 15588 },	-- Elder High Mountain
-				["isYearly"] = true,
-				["coord"] = { 41.6, 47.4, SOUTHERN_BARRENS },
-				["groups"] = {
-					crit(4, {	-- Elder High Mountain in Vendetta Point
-						["achievementID"] = 911,	-- Elders of Kalimdor
-					}),
-				},
-			}),
-			q(8685,  {	-- Mistwalker the Elder
-				["provider"] = { "n", 15587 },	-- Elder Mistwalker
-				["isYearly"] = true,
-				["coord"] = { 62.5, 30.9, FERALAS },
-				["groups"] = {
-					crit(11, {	-- Elder Mistwalker in Dire Maul
-						["achievementID"] = 911,	-- Elders of Kalimdor
-					}),
-				},
-			}),
-			q(8717,  {	-- Moonwarden the Elder
-				["provider"] = { "n", 15597 },	-- Elder Moonwarden
-				["isYearly"] = true,
-				["coord"] = { 48.5, 59.2, NORTHERN_BARRENS },
-				["groups"] = {
-					crit(3, {	-- Elder Moonwarden in The Crossroads
-						["achievementID"] = 911,	-- Elders of Kalimdor
-					}),
-				},
-			}),
-			q(8724,  {	-- Morningdew the Elder
-				["provider"] = { "n", 15604 },	-- Elder Morningdew
-				["isYearly"] = true,
-				["coord"] = { 77.1, 75.6, THOUSAND_NEEDLES },
-				["groups"] = {
-					crit(14, {	-- Elder Morningdew in Fizzle and Pozzik's Speedbarge
-						["achievementID"] = 911,	-- Elders of Kalimdor
-					}),
-				},
-			}),
-			q(8723,  {	-- Nightwind the Elder
-				["provider"] = { "n", 15603 },	-- Elder Nightwind
-				["isYearly"] = true,
-				["coord"] = { 38.4, 52.8, FELWOOD },
-				["groups"] = {
-					crit(12, {	-- Elder Nightwind in Felwood
-						["achievementID"] = 911,	-- Elders of Kalimdor
-					}),
-				},
-			}),
-			q(8654,  {	-- Primestone the Elder
+				-- #else
+				["coord"] = { 49.0, 37.7, SILITHUS },
+				-- #endif
+				-- #if BEFORE BFA
 				["description"] = "In order to view this Elder, visit Zidormi at 78.9, 21.9 to see Silithus before the Wound in the World.",
-				["provider"] = { "n", 15570 },	-- Elder Primestone
+				-- #endif
 				["isYearly"] = true,
+			}),
+			q(8673, {	-- Bloodhoof the Elder
+				["qg"] = 15575,	-- Elder Bloodhoof
+				["coord"] = { 48.4, 53.2, MULGORE },
+				["isYearly"] = true,
+			}),
+			q(8726, {	-- Brightspear the Elder
+				["qg"] = 15606,	-- Elder Brightspear
+				-- #if AFTER CATA
+				["coord"] = { 53.2, 56.7, WINTERSPRING },
+				-- #else
+				["coord"] = { 55.6, 43.7, WINTERSPRING },
+				-- #endif
+				["isYearly"] = true,
+			}),
+			q(8684, {	-- Dreamseer the Elder
+				["qg"] = 15586,	-- Elder Dreamseer
+				-- #if AFTER CATA
+				["coord"] = { 51.3, 28.8, TANARIS },
+				-- #else
+				["coord"] = { 51.5, 27.8, TANARIS },
+				-- #endif
+				["isYearly"] = true,
+			}),
+			q(8679, {	-- Grimtotem the Elder
+				["qg"] = 15581,	-- Elder Grimtotem
+				-- #if AFTER CATA
+				["coord"] = { 76.7, 37.8, FERALAS },
+				-- #else
+				["coord"] = { 76.7, 37.9, FERALAS },
+				-- #endif
+				["isYearly"] = true,
+			}),
+			q(8686, {	-- High Mountain the Elder
+				["qg"] = 15588,	-- Elder High Mountain
+				-- #if AFTER CATA
+				["coord"] = { 41.6, 47.4, SOUTHERN_BARRENS },
+				-- #else
+				["coord"] = { 45.0, 58.0, THE_BARRENS },
+				-- #endif
+				["isYearly"] = true,
+			}),
+			q(8685, {	-- Mistwalker the Elder
+				["qg"] = 15587,	-- Elder Mistwalker
+				-- #if AFTER CATA
+				["coord"] = { 62.5, 30.9, FERALAS },
+				-- #else
+				["coord"] = { 62.5, 31.0, FERALAS },
+				-- #endif
+				["isYearly"] = true,
+			}),
+			q(8717, {	-- Moonwarden the Elder
+				["qg"] = 15597,	-- Elder Moonwarden
+				-- #if AFTER CATA
+				["coord"] = { 48.5, 59.2, NORTHERN_BARRENS },
+				-- #else
+				["coord"] = { 51.2, 31.2, THE_BARRENS },
+				-- #endif
+				["isYearly"] = true,
+			}),
+			q(8724, {	-- Morningdew the Elder
+				["qg"] = 15604,	-- Elder Morningdew
+				-- #if AFTER CATA
+				["coord"] = { 77.1, 75.6, THOUSAND_NEEDLES },
+				-- #else
+				["coord"] = { 79.2, 77.1, THOUSAND_NEEDLES },
+				-- #endif
+				["isYearly"] = true,
+			}),
+			q(8723, {	-- Nightwind the Elder
+				["qg"] = 15603,	-- Elder Nightwind
+				-- #if AFTER CATA
+				["coord"] = { 38.4, 52.8, FELWOOD },
+				-- #else
+				["coord"] = { 37.7, 53.0, FELWOOD },
+				-- #endif
+				["isYearly"] = true,
+			}),
+			q(8654, {	-- Primestone the Elder
+				["qg"] = 15570,	-- Elder Primestone
+				-- #if AFTER CATA
 				["coord"] = { 30.8, 13.3, SILITHUS },
-				["groups"] = {
-					crit(20, {	-- Elder Primestone in Silithus
-						["achievementID"] = 911,	-- Elders of Kalimdor
-					}),
-				},
-			}),
-			q(8671,  {	-- Ragetotem the Elder
-				["provider"] = { "n", 15573 },	-- Elder Ragetotem
+				-- #else
+				["coord"] = { 23.1, 11.8, SILITHUS },
+				-- #endif
+				-- #if AFTER BFA
+				["description"] = "In order to view this Elder, visit Zidormi at 78.9, 21.9 to see Silithus before the Wound in the World.",
+				-- #endif
 				["isYearly"] = true,
+			}),
+			q(8671, {	-- Ragetotem the Elder
+				["qg"] = 15573,	-- Elder Ragetotem
+				-- #if AFTER CATA
 				["coord"] = { 37.2, 79.0, TANARIS },
-				["groups"] = {
-					crit(15, {	-- Elder Ragetotem in Tanaris
-						["achievementID"] = 911,	-- Elders of Kalimdor
-					}),
-				},
-			}),
-			q(8725,  {	-- Riversong the Elder
-				["provider"] = { "n", 15605 },	-- Elder Riversong
+				-- #else
+				["coord"] = { 36.3, 80.5, TANARIS },
+				-- #endif
 				["isYearly"] = true,
+			}),
+			q(8725, {	-- Riversong the Elder
+				["qg"] = 15605,	-- Elder Riversong
 				["coord"] = { 35.5, 48.9, ASHENVALE },
-				["groups"] = {
-					crit(9, {	-- Elder Riversong in Astranaar
-						["achievementID"] = 911,	-- Elders of Kalimdor
-					}),
-				},
-			}),
-			q(8670,  {	-- Runetotem the Elder
-				["provider"] = { "n", 15572 },	-- Elder Runetotem
 				["isYearly"] = true,
+			}),
+			q(8670, {	-- Runetotem the Elder
+				["qg"] = 15572,	-- Elder Runetotem
+				-- #if AFTER CATA
 				["coord"] = { 53.1, 43.6, DUROTAR },
-				["groups"] = {
-					crit(1, {	-- Elder Runetotem in Razor Hill
-						["achievementID"] = 911,	-- Elders of Kalimdor
-					}),
-				},
-			}),
-			q(8720,  {	-- Skygleam the Elder
-				["provider"] = { "n", 15600 },	-- Elder Skygleam
+				-- #else
+				["coord"] = { 53.1, 44.2, DUROTAR },
+				-- #endif
 				["isYearly"] = true,
+			}),
+			q(8720, {	-- Skygleam the Elder
+				["qg"] = 15600,	-- Elder Skygleam
+				-- #if AFTER CATA
 				["coord"] = { 64.7, 79.3, AZSHARA },
-				["groups"] = {
-					crit(2, {	-- Elder Skygleam in Azshara
-						["achievementID"] = 911,	-- Elders of Kalimdor
-					}),
-				},
-			}),
-			q(8682,  {	-- Skyseer the Elder
-				["provider"] = { "n", 15584 },	-- Elder Skyseer
+				-- #else
+				["coord"] = { 72.4, 85.4, AZSHARA },
+				-- #endif
 				["isYearly"] = true,
+			}),
+			q(8682, {	-- Skyseer the Elder
+				["qg"] = 15584,	-- Elder Skyseer
+				-- #if AFTER CATA
 				["coord"] = { 46.3, 50.9, THOUSAND_NEEDLES },
-				["groups"] = {
-					crit(13, {	-- Elder Skyseer in Freewind Post
-						["achievementID"] = 911,	-- Elders of Kalimdor
-					}),
-				},
-			}),
-			q(8721,  {	-- Starweave the Elder
-				["description"] = "In order to view this Elder, visit Zidormi at 48.8, 24.4 to see Darkshore before the battle.",
-				["provider"] = { "n", 15601 },	-- Elder Starweave
+				-- #else
+				["coord"] = { 45.4, 50.1, THOUSAND_NEEDLES },
+				-- #endif
 				["isYearly"] = true,
+			}),
+			q(8721, {	-- Starweave the Elder
+				["qg"] = 15601,	-- Elder Starweave
+				-- #if AFTER CATA
 				["coord"] = { 49.5, 18.9, DARKSHORE },
-				["groups"] = {
-					crit(7, {	-- Elder Starweave in Lor'danel
-						["achievementID"] = 911,	-- Elders of Kalimdor
-					}),
-				},
-			}),
-			q(8672,  {	-- Stonespire the Elder
-				["provider"] = { "n", 15574 },	-- Elder Stonespire
+				-- #else
+				["coord"] = { 36.8, 46.7, DARKSHORE },
+				-- #endif
+				-- #if AFTER BFA
+				["description"] = "In order to view this Elder, visit Zidormi at 48.8, 24.4 to see Darkshore before the battle.",
+				-- #endif
 				["isYearly"] = true,
+			}),
+			q(8672, {	-- Stonespire the Elder
+				["qg"] = 15574,	-- Elder Stonespire
+				-- #if AFTER CATA
 				["coord"] = { 59.9, 49.9, WINTERSPRING },
-				["groups"] = {
-					crit(19, {	-- Elder Stonespire in Everlook
-						["achievementID"] = 911,	-- Elders of Kalimdor
-					}),
-				},
-			}),
-			q(8681,  {	-- Thunderhorn the Elder
-				["provider"] = { "n", 15583 },	-- Elder Thunderhorn
+				-- #else
+				["coord"] = { 61.4, 37.8, WINTERSPRING },
+				-- #endif
 				["isYearly"] = true,
+			}),
+			q(8681, {	-- Thunderhorn the Elder
+				["qg"] = 15583,	-- Elder Thunderhorn
 				["coord"] = { 50.3, 76.2, UNGORO_CRATER },
-				["groups"] = {
-					crit(17, {	-- Elder Thunderhorn in Un'goro
-						["achievementID"] = 911,	-- Elders of Kalimdor
-					}),
-				},
-			}),
-			q(8680,  {	-- Windtotem the Elder
-				["provider"] = { "n", 15582 },	-- Elder Windtotem
 				["isYearly"] = true,
+			}),
+			q(8680, {	-- Windtotem the Elder
+				["qg"] = 15582,	-- Elder Windtotem
+				-- #if AFTER CATA
 				["coord"] = { 68.4, 69.9, NORTHERN_BARRENS },
-				["groups"] = {
-					crit(5, {	-- Elder Windtotem in Ratchet
-						["achievementID"] = 911,	-- Elders of Kalimdor
-					}),
-				},
-			}),
-		--	Elders of Northrend
-			q(13033, {	-- Arp the Elder
-				["provider"] = { "n", 30364 },	-- Elder Arp
+				-- #else
+				["coord"] = { 62.5, 37.2, THE_BARRENS },
+				-- #endif
 				["isYearly"] = true,
+			}),
+			-- Elders of Northrend
+			q(13033, {	-- Arp the Elder
+				["qg"] = 30364,	-- Elder Arp
 				["coord"] = { 57.3, 43.7, BOREAN_TUNDRA },
-				["groups"] = {
-					crit(5, {	-- Elder Arp in D.E.H.T.A
-						["achievementID"] = 1396,	-- Elders of Northrend
-					}),
-				},
+				["timeline"] = { "added 3.0.8.9464" },
+				["isYearly"] = true,
 			}),
 			q(13013, {	-- Beldak the Elder
-				["provider"] = { "n", 30357 },	-- Elder Beldak
-				["isYearly"] = true,
+				["qg"] = 30357,	-- Elder Beldak
 				["coord"] = { 60.5, 27.7, GRIZZLY_HILLS },
-				["groups"] = {
-					crit(2, {	-- Elder Beldak
-						["achievementID"] = 1396,	-- Elders of Northrend
-					}),
-				},
+				["timeline"] = { "added 3.0.8.9464" },
+				["isYearly"] = true,
 			}),
 			q(13026, {	-- Bluewolf the Elder
-				["provider"] = { "n", 30368 },	-- Elder Bluewolf
-				["isYearly"] = true,
+				["qg"] = 30368,	-- Elder Bluewolf
 				["coord"] = { 49.0, 14.0, WINTERGRASP },
-				["groups"] = {
-					crit(10, {	-- Elder Bluewolf in Wintergrasp
-						["achievementID"] = 1396,	-- Elders of Northrend
-					}),
-				},
+				["timeline"] = { "added 3.0.8.9464" },
+				["isYearly"] = true,
 			}),
 			q(13015, {	-- Fargal the Elder
-				["provider"] = { "n", 30359 },	-- Elder Fargal
-				["isYearly"] = true,
+				["qg"] = 30359,	-- Elder Fargal
 				["coord"] = { 28.9, 73.7, THE_STORM_PEAKS },
-				["groups"] = {
-					crit(4, {	-- Elder Fargal in Frosthold
-						["achievementID"] = 1396,	-- Elders of Northrend
-					}),
-				},
+				["timeline"] = { "added 3.0.8.9464" },
+				["isYearly"] = true,
 			}),
 			q(13028, {	-- Graymane the Elder
-				["provider"] = { "n", 30370 },	-- Elder Graymane
-				["isYearly"] = true,
+				["qg"] = 30370,	-- Elder Graymane
 				["coord"] = { 41.1, 84.7, THE_STORM_PEAKS },
-				["groups"] = {
-					crit(13, {	-- Elder Graymane in K3
-						["achievementID"] = 1396,	-- Elders of Northrend
-					}),
-				},
+				["timeline"] = { "added 3.0.8.9464" },
+				["isYearly"] = true,
 			}),
 			q(13025, {	-- Lunaro the Elder
-				["provider"] = { "n", 30367 },	-- Elder Lunaro
-				["isYearly"] = true,
+				["qg"] = 30367,	-- Elder Lunaro
 				["coord"] = { 80.4, 37.1, GRIZZLY_HILLS },
-				["groups"] = {
-					crit(9, {	-- Elder Lunaro in Ruins of Tethys
-						["achievementID"] = 1396,	-- Elders of Northrend
-					}),
-				},
+				["timeline"] = { "added 3.0.8.9464" },
+				["isYearly"] = true,
 			}),
 			q(13014, {	-- Morthie the Elder
-				["provider"] = { "n", 30358 },	-- Elder Morthie
-				["isYearly"] = true,
+				["qg"] = 30358,	-- Elder Morthie
 				["coord"] = { 29.7, 55.9, DRAGONBLIGHT },
-				["groups"] = {
-					crit(3, {	-- Elder Morthie in Star's Rest
-						["achievementID"] = 1396,	-- Elders of Northrend
-					}),
-				},
+				["timeline"] = { "added 3.0.8.9464" },
+				["isYearly"] = true,
 			}),
 			q(13032, {	-- Muraco the Elder
-				["provider"] = { "n", 30374 },	-- Elder Muraco
-				["isYearly"] = true,
+				["qg"] = 30374,	-- Elder Muraco
 				["coord"] = { 64.6, 51.3, THE_STORM_PEAKS },
-				["groups"] = {
-					crit(18, {	-- Elder Muraco in Camp Tunka'lo
-						["achievementID"] = 1396,	-- Elders of Northrend
-					}),
-				},
+				["timeline"] = { "added 3.0.8.9464" },
+				["isYearly"] = true,
 			}),
 			q(13016, {	-- Northal the Elder
-				["provider"] = { "n", 30360 },	-- Elder Northal
-				["isYearly"] = true,
+				["qg"] = 30360,	-- Elder Northal
 				["coord"] = { 33.7, 34.3, BOREAN_TUNDRA },
-				["groups"] = {
-					crit(6, {	-- Elder Northal in Transitus Shield
-						["achievementID"] = 1396,	-- Elders of Northrend
-					}),
-				},
+				["timeline"] = { "added 3.0.8.9464" },
+				["isYearly"] = true,
 			}),
 			q(13029, {	-- Pamuya the Elder
-				["provider"] = { "n", 30371 },	-- Elder Pamuya
-				["isYearly"] = true,
+				["qg"] = 30371,	-- Elder Pamuya
 				["coord"] = { 42.9, 49.5, BOREAN_TUNDRA },
-				["groups"] = {
-					crit(15, {	-- Elder Pamuya in Warsong Hold
-						["achievementID"] = 1396,	-- Elders of Northrend
-					}),
-				},
+				["timeline"] = { "added 3.0.8.9464" },
+				["isYearly"] = true,
 			}),
 			q(13018, {	-- Sandrene the Elder
-				["provider"] = { "n", 30362 },	-- Elder Sandrene
-				["isYearly"] = true,
+				["qg"] = 30362,	-- Elder Sandrene
 				["coord"] = { 49.7, 63.5, SHOLAZAR_BASIN },
-				["groups"] = {
-					crit(7, {	-- Elder Sandrene in Lakeside Landing
-						["achievementID"] = 1396,	-- Elders of Northrend
-					}),
-				},
+				["timeline"] = { "added 3.0.8.9464" },
+				["isYearly"] = true,
 			}),
 			q(13012, {	-- Sardis the Elder
-				["provider"] = { "n", 30348 },	-- Elder Sardis
-				["isYearly"] = true,
+				["qg"] = 30348,	-- Elder Sardis
 				["coord"] = { 59.0, 65.5, BOREAN_TUNDRA },
-				["groups"] = {
-					crit(1, {	-- Elder Sardis in Valiance Keep
-						["achievementID"] = 1396,	-- Elders of Northrend
-					}),
-				},
+				["timeline"] = { "added 3.0.8.9464" },
+				["isYearly"] = true,
 			}),
 			q(13031, {	-- Skywarden the Elder
-				["provider"] = { "n", 30373 },	-- Elder Skywarden
-				["isYearly"] = true,
+				["qg"] = 30373,	-- Elder Skywarden
 				["coord"] = { 35.1, 48.3, DRAGONBLIGHT },
-				["groups"] = {
-					crit(17, {	-- Elder Skywarden in Agmar's Hammer
-						["achievementID"] = 1396,	-- Elders of Northrend
-					}),
-				},
+				["timeline"] = { "added 3.0.8.9464" },
+				["isYearly"] = true,
 			}),
 			q(13020, {	-- Stonebeard the Elder
-				["provider"] = { "n", 30375 },	-- Elder Stonebeard
-				["isYearly"] = true,
+				["qg"] = 30375,	-- Elder Stonebeard
 				["coord"] = { 31.2, 37.6, THE_STORM_PEAKS },
-				["groups"] = {
-					crit(14, {	-- Elder Stonebeard in Bouldercrag's Refuge
-						["achievementID"] = 1396,	-- Elders of Northrend
-					}),
-				},
+				["timeline"] = { "added 3.0.8.9464" },
+				["isYearly"] = true,
 			}),
 			q(13027, {	-- Tauros the Elder
-				["provider"] = { "n", 30369 },	-- Elder Tauros
-				["isYearly"] = true,
+				["qg"] = 30369,	-- Elder Tauros
 				["coord"] = { 58.9, 56.0, ZULDRAK },
-				["groups"] = {
-					crit(11, {	-- Elder Tauros in Zim'Torga
-						["achievementID"] = 1396,	-- Elders of Northrend
-					}),
-				},
+				["timeline"] = { "added 3.0.8.9464" },
+				["isYearly"] = true,
 			}),
 			q(13019, {	-- Thoim the Elder
-				["provider"] = { "n", 30363 },	-- Elder Thoim
-				["isYearly"] = true,
+				["qg"] = 30363,	-- Elder Thoim
 				["coord"] = { 48.7, 78.1, DRAGONBLIGHT },
-				["groups"] = {
-					crit(12, {	-- Elder Thoim in Moa'ki Harbor
-						["achievementID"] = 1396,	-- Elders of Northrend
-					}),
-				},
+				["timeline"] = { "added 3.0.8.9464" },
+				["isYearly"] = true,
 			}),
 			q(13024, {	-- Wanikaya the Elder
-				["provider"] = { "n", 30365 },	-- Elder Wanikaya
-				["isYearly"] = true,
+				["qg"] = 30365,	-- Elder Wanikaya
 				["coord"] = { 63.8, 49.0, SHOLAZAR_BASIN },
-				["groups"] = {
-					crit(8, {	-- Elder Wanikaya in Rainspeaker Rapids
-						["achievementID"] = 1396,	-- Elders of Northrend
-					}),
-				},
+				["timeline"] = { "added 3.0.8.9464" },
+				["isYearly"] = true,
 			}),
 			q(13030, {	-- Whurain the Elder
-				["provider"] = { "n", 30372 },	-- Elder Whurain
-				["isYearly"] = true,
+				["qg"] = 30372,	-- Elder Whurain
 				["coord"] = { 64.2, 47.0, GRIZZLY_HILLS },
-				["groups"] = {
-					crit(16, {	-- Elder Whurain in Camp Oneqwah
-						["achievementID"] = 1396,	-- Elders of Northrend
-					}),
-				},
-			}),
-		--	Elders of the Alliance
-			q(8718,  {	-- Bladeswift the Elder
-				["description"] = "In order to view this Elder, visit Zidormi at 48.8, 24.4 in Darkshore to be able to visit the past version of Darnassus.  The Elder is on the left side of the Cenarion Enclave.",
-				["provider"] = { "n", 15598 },	-- Elder Bladeswift
+				["timeline"] = { "added 3.0.8.9464" },
 				["isYearly"] = true,
-				["coord"] = { 39.3, 31.8, DARNASSUS },
-				["groups"] = {
-					crit(1, {	-- Elder Bladeswift in Darnassus
-						["achievementID"] = 915,	-- Elders of the Alliance
-					}),
-				},
 			}),
-			q(8866,  {	-- Bronzebeard the Elder
-				["description"] = "Once inside Ironforge, head left.  The Elder is in the small pool in the Mystic Ward in the northwest corner of the city.",
-				["provider"] = { "n", 15871 },	-- Elder Bronzebeard
-				["isYearly"] = true,
-				["coord"] = { 29.4, 17.1, IRONFORGE },
-				["groups"] = {
-					crit(2, {	-- Elder Bronzebeard in Ironforge
-						["achievementID"] = 915,	-- Elders of the Alliance
-					}),
-				},
-			}),
-			q(8646,  {	-- Hammershout the Elder
-				["provider"] = { "n", 15562 },	-- Elder Hammershout
-				["isYearly"] = true,
-				["coord"] = { 34.5, 50.3, ELWYNN_FOREST },
-				["groups"] = {
-					crit(3, {	-- Elder Hammershout in Stormwind
-						["achievementID"] = 915,	-- Elders of the Alliance
-					}),
-				},
-			}),
-		--	Elders of the Dungeons
+			-- Elders of the Dungeons
 			q(13067, {	-- Chogan'gada the Elder
-				["description"] = "After defeating Skadi, the Elder is underneath the staircase before you enter the Ruined Court.",
-				["provider"] = { "n", 30538 },	-- Elder Chogan'gada
-				["isYearly"] = true,
+				["qg"] = 30538,	-- Elder Chogan'gada
 				["coord"] = { 57.2, 46.6, HOWLING_FJORD },	-- Utgarde Pinnacle entrance
-				["maps"] = {
-					136,	-- Utgarde Pinnacle
-				},
-				["groups"] = {
-					crit(13, {	-- Elder Chogan'gada in Utgarde Pinnacle
-						["achievementID"] = 910,	-- Elders of the Dungeons
-					}),
-				},
-			}),
-			q(8727,  {	-- Farwhisper the Elder
-				["description"] = "Enter Stratholme through the main gate.  The Elder is in the northeast corner, east of The Unforgiven.",
-				["provider"] = { "n", 15607 },	-- Elder Farwhisper
+				["description"] = "After defeating Skadi, the Elder is underneath the staircase before you enter the Ruined Court.",
+				["timeline"] = { "added 3.0.8.9464" },
+				["maps"] = { 136 },	-- Utgarde Pinnacle
 				["isYearly"] = true,
-				["coord"] = { 27.7, 11.6, EASTERN_PLAGUELANDS },	-- Stratholme entrance
+			}),
+			q(8727, {	-- Farwhisper the Elder
+				["qg"] = 15607,	-- Elder Farwhisper
+				-- #if AFTER 4.0.3
+				["coord"] = { 27.66, 11.64, EASTERN_PLAGUELANDS },	-- Stratholme [Main Gate]
+				["description"] = "Enter Stratholme through the main gate.  The Elder is in the northeast corner, east of The Unforgiven.",
+				-- #else
+				["coord"] = { 30.9, 16.6, EASTERN_PLAGUELANDS },	-- Stratholme [Main Gate]
+				["description"] = "Located inside of Stratholme in Festival Lane. Fastest route to him is from the Service Entrance and then head towards The Unforgiven on Live side.",
+				-- #endif
 				["maps"] = { STRATHOLME },
-				["groups"] = {
-					crit(6, {	-- Elder Farwhisper in Stratholme
-						["achievementID"] = 910,	-- Elders of the Dungeons
-					}),
-				},
+				["isYearly"] = true,
 			}),
 			q(13021, {	-- Igasho the Elder
-				["description"] = "When you enter the Nexus, turn right and loop around the Singing Grove.  The Elder is just before you reach Ormorok's platform.",
-				["provider"] = { "n", 30536 },	-- Elder Igasho
-				["isYearly"] = true,
+				["qg"] = 30536,	-- Elder Igasho
 				["coord"] = { 27.5, 26.0, BOREAN_TUNDRA },	-- The Nexus entrance
-				["maps"] = {
-					129,	-- The Nexus
-				},
-				["groups"] = {
-					crit(8, {	-- Elder Igasho in The Nexus
-						["achievementID"] = 910,	-- Elders of the Dungeons
-					}),
-				},
+				["description"] = "When you enter the Nexus, turn right and loop around the Singing Grove.  The Elder is just before you reach Ormorok's platform.",
+				["timeline"] = { "added 3.0.8.9464" },
+				["maps"] = { 129 },	-- The Nexus
+				["isYearly"] = true,
 			}),
 			q(13017, {	-- Jarten the Elder
-				["description"] = "After defeating Keleseth, continue through the mining tunnel.  Before heading up the stairs to the next boss, turn left to find the Elder.",
-				["provider"] = { "n", 30531 },	-- Elder Jarten
-				["isYearly"] = true,
+				["qg"] = 30531,	-- Elder Jarten
 				["coord"] = { 57.9, 50.0, HOWLING_FJORD },	-- Utgarde Keep entrance path
-				["maps"] = {
-					133,	-- Utgarde Keep
-				},
-				["groups"] = {
-					crit(7, {	-- Elder Jarten in Utgarde Keep
-						["achievementID"] = 910,	-- Elders of the Dungeons
-					}),
-				},
+				["description"] = "After defeating Keleseth, continue through the mining tunnel.  Before heading up the stairs to the next boss, turn left to find the Elder.",
+				["timeline"] = { "added 3.0.8.9464" },
+				["maps"] = { 133 },	-- Utgarde Keep
+				["isYearly"] = true,
 			}),
 			q(13023, {	-- Kilias the Elder
-				["description"] = "The Elder is just inside the Raptor Pens, near King Dred.",
-				["provider"] = { "n", 30534 },	-- Elder Kilias
-				["isYearly"] = true,
+				["qg"] = 30534,	-- Elder Kilias
 				["coord"] = { 28.5, 86.9, ZULDRAK },	-- Drak'Tharon Keep entrance
-				["maps"] = {
-					160,	-- Drak'Tharon Keep
-				},
-				["groups"] = {
-					crit(10, {	-- Elder Kilias in Drak'Tharon Keep
-						["achievementID"] = 910,	-- Elders of the Dungeons
-					}),
-				},
-			}),
-			q(8619,  {	-- Morndeep the Elder
-				["description"] = "Once inside Blackrock Depths, you can find this Elder in the Ring of Law.  Approaching the Elder in the center of the ring will also start the encounter.",
-				["provider"] = { "n", 15549 },	-- Elder Morndeep
+				["description"] = "The Elder is just inside the Raptor Pens, near King Dred.",
+				["timeline"] = { "added 3.0.8.9464" },
+				["maps"] = { 160 },	-- Drak'Tharon Keep
 				["isYearly"] = true,
-				["coord"] = { 21.1, 38.5, BURNING_STEPPES },	-- entrance to Blackrock Mountain
+			}),
+			q(8619, {	-- Morndeep the Elder
+				["qg"] = 15549,	-- Elder Morndeep
+				["coord"] = { 39.06, 18.12, BLACKROCK_MOUNTAIN_LEVEL3 },
+				["description"] = "Located inside Blackrock Depths at the Ring of Law.\n\nWARNING: Approaching the Elder will also start the encounter.",
 				["maps"] = { BLACKROCK_DEPTHS },
-				["groups"] = {
-					crit(5, {	-- Elder Morndeep in Blackrock Depths
-						["achievementID"] = 910,	-- Elders of the Dungeons
-					}),
-				},
+				["isYearly"] = true,
 			}),
 			q(13022, {	-- Nurgen the Elder
-				["description"] = "After defeating Hadronox, jump to the lower level of the dungeon.  The Elder is on the north side of the room where you land.",
-				["provider"] = { "n", 30533 },	-- Elder Nurgen
-				["isYearly"] = true,
+				["qg"] = 30533,	-- Elder Nurgen
 				["coord"] = { 26.0, 50.7, DRAGONBLIGHT },	-- Azjol-Nerub entrance
-				["maps"] = {
-					157,	-- Azjol-Nerub
-				},
-				["groups"] = {
-					crit(9, {	-- Elder Nurgen in Azjol-Nerub
-						["achievementID"] = 910,	-- Elders of the Dungeons
-					}),
-				},
+				["description"] = "After defeating Hadronox, jump to the lower level of the dungeon.  The Elder is on the north side of the room where you land.",
+				["timeline"] = { "added 3.0.8.9464" },
+				["maps"] = { 157 },	-- Azjol-Nerub
+				["isYearly"] = true,
 			}),
 			q(13065, {	-- Ohanzee the Elder
-				["description"] = "The Elder is on the platform behind the second boss in the dungeon, Drakkari Colossus.",
-				["provider"] = { "n", 30537 },	-- Elder Ohanzee
-				["isYearly"] = true,
+				["qg"] = 30537,	-- Elder Ohanzee
 				["coord"] = { 76.2, 21.1, ZULDRAK },	-- Gundrak entrance
-				["maps"] = {
-					153,	-- Gundrak
-				},
-				["groups"] = {
-					crit(11, {	-- Elder Ohanzee in Gundrak
-						["achievementID"] = 910,	-- Elders of the Dungeons
-					}),
-				},
+				["description"] = "The Elder is on the platform behind the second boss in the dungeon, Drakkari Colossus.",
+				["timeline"] = { "added 3.0.8.9464" },
+				["maps"] = { 153 },	-- Gundrak
+				["isYearly"] = true,
 			}),
-			q(8635,  {	-- Splitrock the Elder
+			q(8635, {	-- Splitrock the Elder
+				["qg"] = 15556,	-- Elder Splitrock
+				["coord"] = { 44.49, 77.14, 68 },	-- Maraudon [Falls], Foulspore Cavern [Desolace]
+				-- #if AFTER CATA
 				["description"] = "Take the central path to reach the Portal to Inner Maraudon.  Once inside the dungeon, jump down and follow the path to reach the Elder in the far southeast corner of the map.",
-				["provider"] = { "n", 15556 },	-- Elder Splitrock
-				["isYearly"] = true,
-				["coord"] = { 29.1, 62.5, DESOLACE },	-- Maraudon path entrance
+				-- #else
+				["description"] = "Inside of Maraudon. Located in the passage way across the water where Rotgrip can be found as if you were headed to Tinkerer from the water near Princess.",
+				-- #endif
 				["maps"] = { MARAUDON },
-				["groups"] = {
-					crit(3, {	-- Elder Splitrock in Maraudon
-						["achievementID"] = 910,	-- Elders of the Dungeons
-					}),
-				},
+				["isYearly"] = true,
 			}),
-			q(8713,  {	-- Starsong the Elder
+			q(8713, {	-- Starsong the Elder
+				["qg"] = 15593,	-- Elder Starsong
+				-- #if AFTER CATA
+				["coord"] = { 76.04, 45.21, SWAMP_OF_SORROWS },
 				["description"] = "Once inside Sunken Temple, turn left.  Elder Starsong is in the small alcove to the northeast.",
-				["provider"] = { "n", 15593 },	-- Elder Starsong
-				["isYearly"] = true,
-				["coord"] = { 69.6, 53.8, SWAMP_OF_SORROWS },	-- Start of path leading down to Sunken Temple
+				-- #else
+				["coord"] = { 69.2, 54.8, SWAMP_OF_SORROWS },
+				["description"] = "Inside of Sunken Temple. From the entrance, take a left up the spiral staircase. You will need to fight and kill the first dragon pack. Continue down the hallway and hang left into the room with all the dragonkin and then again into the alcove.",
+				-- #endif
 				["maps"] = { TEMPLE_OF_ATALHAKKAR },
-				["groups"] = {
-					crit(2, {	-- Elder Starsong in Sunken Temple
-						["achievementID"] = 910,	-- Elders of the Dungeons
-					}),
-				},
+				["isYearly"] = true,
 			}),
-			q(8644,  {	-- Stonefort the Elder
+			q(8644, {	-- Stonefort the Elder
+				["qg"] = 15560,	-- Elder Stonefort
+				-- #if AFTER 6.0.1
+				["coord"] = { 80.46, 40.65, BLACKROCK_MOUNTAIN },
 				["description"] = "Once inside Lower Blackrock Spire, head down and to the left.  The Elder is just past the first bridge.",
-				["provider"] = { "n", 15560 },	-- Elder Stonefort
+				-- #else
+				["description"] = "Located in Lower Blackrock Spire in Hordemar City. He can be found on the left as you cross the first wooden bridge.",
+				-- #endif
+				["maps"] = { BLACKROCK_SPIRE },
 				["isYearly"] = true,
-				["coord"] = { 21.1, 38.5, BURNING_STEPPES },	-- entrance to Blackrock Mountain
-				["maps"] = { LBRS_HORDEMAR_CITY },
-				["groups"] = {
-					crit(4, {	-- Elder Stonefort in Blackrock Spire
-						["achievementID"] = 910,	-- Elders of the Dungeons
-					}),
-				},
 			}),
-			q(8676,  {	-- Wildmane the Elder
-				["description"] = "The Elder is on the right side of Gahz'rilla's room.",
-				["provider"] = { "n", 15578 },	-- Elder Wildmane
-				["isYearly"] = true,
-				["coord"] = { 39.2, 21.3, TANARIS },	-- Zul'Farrak entrance
+			q(8676, {	-- Wildmane the Elder
+				["qg"] = 15578,	-- Elder Wildmane
+				-- #if AFTER CATA
+				["coord"] = { 39.21, 21.29, TANARIS },
+				-- #else
+				["coord"] = { 39.0, 19.0, TANARIS },
+				-- #endif
+				["description"] = "Inside of Zul'Farrak. Located by the pool where Gahz'rilla is summoned.",
 				["maps"] = { ZULFARRAK },
-				["groups"] = {
-					crit(1, {	-- Elder Wildmane in Zul'Farrak
-						["achievementID"] = 910,	-- Elders of the Dungeons
-					}),
-				},
+				["isYearly"] = true,
 			}),
 			q(13066, {	-- Yurauk the Elder
-				["description"] = "The Elder is on the western side of the Crystalline Quarry inside Halls of Stone.",
-				["provider"] = { "n", 30535 },	-- Elder Yurauk
-				["isYearly"] = true,
+				["qg"] = 30535,	-- Elder Yurauk
 				["coord"] = { 39.6, 26.9, THE_STORM_PEAKS },	-- Halls of Stone entrance
-				["maps"] = {
-					140,	-- Halls of Stone
-				},
-				["groups"] = {
-					crit(12, {	-- Elder Yurauk in the Halls of Stone
-						["achievementID"] = 910,	-- Elders of the Dungeons
-					}),
-				},
-			}),
-		--	Elders of the Horde
-			q(8648,  {	-- Darkcore the Elder
-				["description"] = "In order to view this Elder, visit Zidormi at 69.4, 62.7 to see Tirisfal Glades before the Battle for Lordaeron.  The Elder is just inside the front door of the city.",
-				["provider"] = { "n", 15564 },	-- Elder Darkcore
+				["description"] = "The Elder is on the western side of the Crystalline Quarry inside Halls of Stone.",
+				["timeline"] = { "added 3.0.8.9464" },
+				["maps"] = { 140 },	-- Halls of Stone
 				["isYearly"] = true,
+			}),
+			-- Elders of the Alliance
+			q(8718, {	-- Bladeswift the Elder
+				["qg"] = 15598,	-- Elder Bladeswift
+				-- #if AFTER CATA
+				["coord"] = { 39.3, 31.8, DARNASSUS },
+				-- #else
+				["coord"] = { 33.5, 14.3, DARNASSUS },
+				-- #endif
+				-- #if AFTER BFA
+				["description"] = "In order to view this Elder, visit Zidormi at 48.8, 24.4 in Darkshore to be able to visit the past version of Darnassus.  The Elder is on the left side of the Cenarion Enclave.",
+				-- #endif
+				["isYearly"] = true,
+			}),
+			q(8866, {	-- Bronzebeard the Elder
+				["qg"] = 15871,	-- Elder Bronzebeard
+				-- #if AFTER CATA
+				["coord"] = { 29.4, 17.1, IRONFORGE },
+				-- #else
+				["coord"] = { 29.1, 17.0, IRONFORGE },
+				-- #endif
+				["isYearly"] = true,
+			}),
+			q(8646, {	-- Hammershout the Elder
+				["qg"] = 15562,	-- Elder Hammershout
+				-- #if AFTER CATA
+				["coord"] = { 34.5, 50.3, ELWYNN_FOREST },
+				-- #else
+				["coord"] = { 21.40, 53.87, STORMWIND_CITY },
+				-- #endif
+				["isYearly"] = true,
+			}),
+			-- Elders of the Horde
+			q(8648, {	-- Darkcore the Elder
+				["qg"] = 15564,	-- Elder Darkcore
+				-- #if AFTER CATA
 				["coord"] = { 66.5, 38.0, UNDERCITY },
-				["groups"] = {
-					crit(3, {	-- Elder Darkcore in Undercity
-						["achievementID"] = 914,	-- Elders of the Horde
-					}),
-				},
-			}),
-			q(8677,  {	-- Darkhorn the Elder
-				["description"] = "The Elder is on the central upper platform in Orgrimmar near the flight master.",
-				["provider"] = { "n", 15579 },	-- Elder Darkhorn
+				-- #else
+				["coord"] = { 66.6, 38.2, UNDERCITY },
+				-- #endif
+				-- #if AFTER BFA
+				["description"] = "In order to view this Elder, visit Zidormi at 69.4, 62.7 to see Tirisfal Glades before the Battle for Lordaeron.  The Elder is just inside the front door of the city.",
+				-- #endif
 				["isYearly"] = true,
+			}),
+			q(8677, {	-- Darkhorn the Elder
+				["qg"] = 15579,	-- Elder Darkhorn
+				-- #if AFTER CATA
 				["coord"] = { 52.1, 59.8, ORGRIMMAR },
-				["groups"] = {
-					crit(1, {	-- Elder Darkhorn in Orgrimmar
-						["achievementID"] = 914,	-- Elders of the Horde
-					}),
-				},
-			}),
-			q(8678,  {	-- Wheathoof the Elder
-				["description"] = "The Elder is located on the northern edge of the Elder Rise.",
-				["provider"] = { "n", 15580 },	-- Elder Wheathoof
+				["description"] = "The Elder is on the central upper platform in Orgrimmar near the flight master.",
+				-- #else
+				["coord"] = { 40.9, 33.9, ORGRIMMAR },
+				-- #endif
 				["isYearly"] = true,
+			}),
+			q(8678, {	-- Wheathoof the Elder [Wrath+] / Proudhorn the Elder [Classic]
+				["qg"] = 15580,	-- Elder Wheathoof [Wrath+] / Elder Proudhorn [Classic]
+				-- #if AFTER CATA
 				["coord"] = { 72.8, 22.8, THUNDER_BLUFF },
-				["groups"] = {
-					crit(2, {	-- Elder Wheathoof in Thunder Bluff
-						["achievementID"] = 914,	-- Elders of the Horde
-					}),
-				},
+				-- #else
+				["coord"] = { 73.0, 23.4, THUNDER_BLUFF },
+				-- #endif
+				["isYearly"] = true,
 			}),
 		}),
+		n(REWARDS, {
+			i(21100),	-- Coin of Ancestry
+		}),
+		-- #if AFTER 3.0.8.9464
 		n(VENDORS, {
 			n(15909, {	-- Fariel Starsong <Coin of Ancestry Collector>
-				["coord"] = { 53.7, 35.4, MOONGLADE },
+				["coord"] = { 53.8, 35.3, MOONGLADE },
 				["groups"] = {
-					un(REMOVED_FROM_GAME, i(21722)),	-- Pattern: Festival Dress (old version)
 					i(44916, {	-- Pattern: Festival Dress
+						["timeline"] = { "added 3.0.8.9464" },
 						["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
 					}),
-					un(REMOVED_FROM_GAME, i(21723)),	-- Pattern: Festival Suit (old version)
 					i(44917, {	-- Pattern: Festival Suit
+						["timeline"] = { "added 3.0.8.9464" },
 						["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
 					}),
 					i(21740, {	-- Small Rocket Recipes
@@ -1279,73 +1131,84 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 						},
 					}),
 					i(44919, {	-- Schematic: Firework Launcher
+						["timeline"] = { "added 3.0.8.9464" },
 						["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
-					}),
-					i(21738, {	-- Schematic: Firework Launcher
-						["u"] = REMOVED_FROM_GAME,
-						["spellID"] = 0,	-- Old BOE version new version is 44919 and BOP, using spellID = 0 to delink the unused plans from the recipe otherwise the recipe will show as unobtainable in tooltips
 					}),
 					i(44918, {	-- Schematic: Cluster Launcher
+						["timeline"] = { "added 3.0.8.9464" },
 						["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
 					}),
-					i(21737, {	-- Schematic: Cluster Launcher
-						["u"] = REMOVED_FROM_GAME,
-						["spellID"] = 0,	-- Old BOE version new version is 44918 and BOP, using spellID = 0 to delink the unused plans from the recipe otherwise the recipe will show as unobtainable in tooltips
-					}),
 					i(116146, {  -- Schematic: Snake Firework
+						["timeline"] = { "added 6.0.1.18566" },
 						["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
 					}),
 					i(116144, {  -- Schematic: Horde Firework
+						["timeline"] = { "added 6.0.1.18566" },
 						["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
 					}),
 					i(116142, {	-- Schematic: Alliance Firework
+						["timeline"] = { "added 6.0.1.18566" },
 						["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
 					}),
 					i(90000, {	-- Everlasting Horde Firework (TOY!)
+						["timeline"] = { "added 5.0.4.15913" },
 						["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
 					}),
 					i(89999, {	-- Everlasting Alliance Firework (TOY!)
+						["timeline"] = { "added 5.0.4.15913" },
 						["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
 					}),
 					i(143827, {	-- Red Dragon Head Costume (TOY!)
+						["timeline"] = { "added 7.1.5.23360" },
 						["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
 					}),
 					i(165674, {	-- Green Dragon Head Costume (TOY!)
+						["timeline"] = { "added 8.1.0.28724" },
 						["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
 					}),
 					i(165671, {	-- Blue Dragon Head Costume (TOY!)
+						["timeline"] = { "added 8.1.0.28724" },
 						["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
 					}),
 					i(143828, {	-- Red Dragon Body Costume (TOY!)
+						["timeline"] = { "added 7.1.5.23360" },
 						["cost"] = { { "i", 21100, 10 } },	-- 10x Coin of Ancestry
 					}),
 					i(165675, {	-- Green Dragon Body Costume (TOY!)
+						["timeline"] = { "added 8.1.0.28724" },
 						["cost"] = { { "i", 21100, 10 } },	-- 10x Coin of Ancestry
 					}),
 					i(165672, {	-- Blue Dragon Body Costume (TOY!)
+						["timeline"] = { "added 8.1.0.28724" },
 						["cost"] = { { "i", 21100, 10 } },	-- 10x Coin of Ancestry
 					}),
 					i(143829, {	-- Red Dragon Tail Costume (TOY!)
+						["timeline"] = { "added 7.1.5.23360" },
 						["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
 					}),
 					i(165676, {	-- Green Dragon Tail Costume (TOY!)
+						["timeline"] = { "added 8.1.0.28724" },
 						["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
 					}),
 					i(165673, {	-- Blue Dragon Tail Costume (TOY!)
+						["timeline"] = { "added 8.1.0.28724" },
 						["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
 					}),
 					i(165669, {	-- Lunar Elder's Hearthstone (TOY!)
+						["timeline"] = { "added 8.1.0.28724" },
 						["cost"] = { { "i", 21100, 30 } },	-- 30x Coin of Ancestry
 					}),
 				},
 			}),
 			n(15864, {	-- Valadar Starsong <Coin of Ancestry Collector>
-				["coord"] = { 53.6, 35.4, MOONGLADE },
+				["coord"] = { 53.6, 35.3, MOONGLADE },
 				["groups"] = {
 					i(74611, {	-- Festival Lantern
+						["timeline"] = { "added 4.3.0.15005" },
 						["cost"] = { { "i", 21100, 50 } },	-- 50x Coin of Ancestry
 					}),
 					i(74610, {	-- Lunar Lantern
+						["timeline"] = { "added 4.3.0.15005" },
 						["cost"] = { { "i", 21100, 50 } },	-- 50x Coin of Ancestry
 					}),
 					i(21157, {	-- Festive Green Dress
@@ -1367,15 +1230,19 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 						["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
 					}),
 					i(151355, {	-- Crown of Courage
+						["timeline"] = { "added 7.3.0.24484" },
 						["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
 					}),
 					i(151354, {	-- Crown of Prosperity
+						["timeline"] = { "added 7.3.0.24484" },
 						["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
 					}),
 					i(151353, {	-- Crown of Dark Blossoms
+						["timeline"] = { "added 7.3.0.24484" },
 						["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
 					}),
 					i(151352, {	-- Crown of Good Fortune
+						["timeline"] = { "added 7.3.0.24484" },
 						["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
 					}),
 					i(21537, {	-- Festival Dumplings
@@ -1391,5 +1258,6 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 				},
 			}),
 		}),
+		-- #endif
 	},
 }));
