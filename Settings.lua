@@ -292,6 +292,8 @@ settings.Initialize = function(self)
 	if self:GetTooltipSetting("Auto:WorldQuestsList") then
 		app:GetWindow("WorldQuests"):Show();
 	end
+
+	settings._Initialize = true;
 end
 local function rawcopy(source, copy)
 	if source and copy then

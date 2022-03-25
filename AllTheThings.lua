@@ -16067,6 +16067,10 @@ function app:GetWindow(suffix, parent, onUpdate)
 		window:SetMinResize(96, 32);
 		window:SetSize(300, 300);
 
+		-- set the scaling for the new window if settings have been initialized
+		local scale = app.Settings and app.Settings._Initialize and (suffix == "Prime" and app.Settings:GetTooltipSetting("MainListScale") or app.Settings:GetTooltipSetting("MiniListScale")) or 1;
+		window:SetScale(scale);
+
 		window:SetUserPlaced(true);
 		window.data = {
 			['text'] = suffix,
