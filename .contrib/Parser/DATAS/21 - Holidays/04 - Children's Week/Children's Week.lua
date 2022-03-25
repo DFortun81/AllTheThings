@@ -75,7 +75,7 @@ local WARDEN_OF_THE_GROUPS = {
 	PET_CARE_PACKAGE,
 	i(23022),	-- Curmudgeon's Payoff
 };
-_.Holidays = { applyholiday(CHILDRENS_WEEK, {
+root("Holidays", applyholiday(CHILDRENS_WEEK, {
 	-- #if ANYCLASSIC
 	["npcID"] = -52,
 	-- #else
@@ -1605,4 +1605,4 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 		}),
 		-- #endif
 	},
-})};
+}));

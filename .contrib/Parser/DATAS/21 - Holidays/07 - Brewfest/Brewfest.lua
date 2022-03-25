@@ -134,7 +134,7 @@ local BREWFEST_VENDOR_OnTooltip = [[function(t)
 	end
 end]];
 
-_.Holidays = { applyholiday(BREWFEST, {
+root("Holidays", applyholiday(BREWFEST, {
 	-- #if ANYCLASSIC
 	["npcID"] = -56,
 	-- #else
@@ -2143,7 +2143,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 			},
 		}),
 	},
-})};
+}));
 root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
 		q(37247, {	-- Angry Brewfest Letter - triggers when using "Angry Brewfest Letter" to cancel Brew of the Month subscription
@@ -2151,7 +2151,7 @@ root("HiddenQuestTriggers", {
 		}),
 	}),
 });
-_.NeverImplemented = { bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	-- #if ANYCLASSIC
 	["npcID"] = -56,
 	-- #else
@@ -2165,7 +2165,7 @@ _.NeverImplemented = { bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			["timeline"] = { "created 8.1.5.29701" },
 		}),
 	},
-})};
+}));
 
 --[[ TODO: Transfer these achievement criteria to the item on the actual vendor
 -- Alliance

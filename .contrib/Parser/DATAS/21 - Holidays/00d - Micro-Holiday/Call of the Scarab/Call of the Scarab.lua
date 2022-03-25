@@ -1,7 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-_.Holidays = { applyholiday(MICRO_HOLIDAY, holiday(1574965, {	-- Call of the Scarab
+root("Holidays", applyholiday(MICRO_HOLIDAY, holiday(1574965, {	-- Call of the Scarab
 	["description"] = "The Call of the Scarab Micro Holiday must be active for this to be available.",
 	["maps"] = { SILITHUS },
 	["groups"] = {
@@ -447,4 +447,4 @@ _.Holidays = { applyholiday(MICRO_HOLIDAY, holiday(1574965, {	-- Call of the Sca
 			i(143855),	-- Twilight Cultist Robe
 		}),
 	},
-}))};
+})));

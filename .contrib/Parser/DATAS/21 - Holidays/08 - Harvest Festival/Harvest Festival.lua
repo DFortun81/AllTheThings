@@ -4,7 +4,7 @@
 local BLUE_FIREWORK = i(9312);	-- Blue Firework
 local GREEN_FIREWORK = i(9313);	-- Green Firework
 local RED_FIREWORK = i(9318);	-- Red Firework
-_.Holidays = { applyholiday(HARVEST_FESTIVAL, {
+root("Holidays", applyholiday(HARVEST_FESTIVAL, {
 	-- #if ANYCLASSIC
 	["npcID"] = -57,
 	-- #else
@@ -78,7 +78,7 @@ _.Holidays = { applyholiday(HARVEST_FESTIVAL, {
 			},
 		}),
 	},
-})};
+}));
 
 -- Unmark as holiday.
 BLUE_FIREWORK.u = nil;

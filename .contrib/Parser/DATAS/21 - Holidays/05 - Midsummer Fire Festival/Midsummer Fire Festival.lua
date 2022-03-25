@@ -163,7 +163,7 @@ local MERCHANT_GROUPS = {
 
 local HUGE_SNOWBALL = i(35557);	-- Huge Snowball
 
-_.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
+root("Holidays", applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 	-- #if ANYCLASSIC
 	["npcID"] = -53,
 	-- #else
@@ -3465,7 +3465,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 			}),
 		}),
 	},
-})};
+}));
 
 -- Remove the holiday flag.
 HUGE_SNOWBALL.u = nil;
