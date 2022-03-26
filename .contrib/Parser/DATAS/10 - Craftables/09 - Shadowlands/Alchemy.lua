@@ -15,7 +15,10 @@ _.Craftables =
 				}),
 			}),
 			filter(MISC, {
+				i(173382),	-- Crafter's Mark II
+				i(173383),	-- Crafter's Mark III
 				i(187741),	-- Crafter's Mark IV
+				i(173384),	-- Crafter's Mark of the Chained Isle
 				i(187742),	-- Crafter's Mark of the First Ones
 				i(187827),	-- Infusion: Corpse Purification
 				i(187850),	-- Sustaining Armor Polish

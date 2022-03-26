@@ -280,6 +280,17 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					}),
 				}),
 			}),
+			n(187651, {	-- Rendle
+				["coord"] = { 34.6, 64, ZERETH_MORTIS },
+				["sym"] = {
+					{"select", "instanceID", 1190},			-- Castle Nathria
+					{"pop"},								-- Discard the Instance Headers and acquire all of their children.
+					{"where", "headerID", LEGENDARIES},		-- Select only the LEGENDARIES Headers.
+					{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
+					{"is","encounterID"},					-- Only Encounter Headers
+					{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
+				},
+			}),
 			n(185092, {	-- Shade of Irik-tu
 				["description"] = "Only available while dead.",
 				["coord"] = { 34.6, 48.1, ZERETH_MORTIS },

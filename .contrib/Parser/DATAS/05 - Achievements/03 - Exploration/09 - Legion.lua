@@ -411,10 +411,10 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 		}),
 		ach(14729, {		-- To All The Squirrels I Love Despite Their Scars
 			-- TODO map/coord/crs here instead of individual zone files
-			crit(1),		-- Felspider 39.0 47.6 ASZUNA
-			crit(2),		-- Tenebrous Snake 40.92 58.62 ASZUNA
-			crit(3),		-- Albatross Chick 30.0 35.6 ASZUNA
-			crit(4, {	-- Coastal Sandpiper 57.6 40.8 ASZUNA
+			crit(1),		-- Felspider 39.0 47.6 AZSUNA
+			crit(2),		-- Tenebrous Snake 40.92 58.62 AZSUNA
+			crit(3),		-- Albatross Chick 30.0 35.6 AZSUNA
+			crit(4, {	-- Coastal Sandpiper 57.6 40.8 AZSUNA
 				["crs"] = { 89380 },	-- Coastal Sandpiper
 				["maps"] = {
 					AZSUNA,

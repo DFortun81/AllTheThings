@@ -2298,6 +2298,13 @@ root("Zones", m(KALIMDOR, {
 					}),
 				},
 			}),
+			n(168623, {	-- Kazak Darkscream <Warlock Trainer>
+				["coord"] = { 74.6, 47.2, ORGRIMMAR },
+				["g"] = {
+					i(189719),	-- Barbed Collar of the Incubus
+					i(189720),	-- Barbed Collar of the Succubus
+				},
+			}),
 			n(48510,  {	-- Kall Worthaton <Trike Dealer>
 				["coord"] = { 36.2, 86.6, ORGRIMMAR },
 				["races"] = HORDE_ONLY,

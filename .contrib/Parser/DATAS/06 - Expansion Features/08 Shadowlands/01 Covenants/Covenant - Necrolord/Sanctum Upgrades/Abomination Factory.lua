@@ -1109,6 +1109,7 @@ root("HiddenQuestTriggers", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_C
 			q(62535),	-- Triggered when completing 'Corspe Run' for the first time
 			q(60873),	-- Buying Bag of Sin Stones (180442) from Atticus
 			q(62988),	-- digging with Chordy in Revendreth
+			q(64666),	-- Completing Baker's Dozen (59043) (next week's quest rewarded Tomalin's Seasoning Crystal (181809))
 
 		-- Crypt Couture criterias
 			q(62404),	-- using Ashen Ink (Crypt Couture)

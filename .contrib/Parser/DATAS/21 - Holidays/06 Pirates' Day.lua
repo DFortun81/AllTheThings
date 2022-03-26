@@ -1,13 +1,15 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-_.Holidays = { applyholiday(PIRATES_DAY, {
+root("Holidays", applyholiday(PIRATES_DAY, {
 	-- #if ANYCLASSIC
 	["npcID"] = -55,
 	-- #else
 	["holidayID"] = 235481,
 	-- #endif
 	["timeline"] = { "added 2.4.3.8601" },
+	["description"] = "Start: 09/19 at 10:00 AM\nEnd: 09/20 at 10:00 AM",
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. PIRATES_DAY .. [[, 9, 19, 9, 20); end]],
 	["groups"] = {
 		-- #if BEFORE 6.0.2.18816
 		n(28048, {	-- Dread Captain DeMeza <Scourge of the South Seas>
@@ -78,4 +80,4 @@ _.Holidays = { applyholiday(PIRATES_DAY, {
 		}),
 		-- #endif
 	},
-})};
+}));

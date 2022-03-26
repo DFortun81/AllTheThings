@@ -495,7 +495,10 @@ _.Zones =
 							}),
 							q(9409,  {	-- Urgent Delivery!
 								["qg"] = 16477,	-- Proenitus
-								["sourceQuest"] = 9280,	-- Replenishing the Healing Crystals
+								["sourceQuests"] = {
+									9369,	-- Replenishing the Healing Crystal (All other ally races)
+									9280,	-- Replenishing the Healing Crystal (Draenei)
+								},
 								-- #if AFTER MOP
 								["coord"] = { 52.7, 35.9, AMMEN_VALE },
 								-- #else
@@ -604,6 +607,15 @@ _.Zones =
 							}),
 						}),
 					},
+				}),
+				n(ACHIEVEMENTS, {
+					removeclassicphase(ach(860, {	-- Explore Azuremyst Isle
+						-- #if BEFORE WRATH
+						["description"] = "Explore Azuremyst Isle, revealing the covered areas of the world map.",
+						["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
+						-- #endif
+					})),
 				}),
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {

@@ -9,7 +9,7 @@ local DREAD_PIRATE_RING = i(122529, {	-- Dread Pirate Ring
 });
 root("Holidays", applyholiday(STRANGLETHORN_FISHING_EXTRAVAGANZA, {
 	["npcID"] = -62,	-- Stranglethorn Fishing Extravaganza
-	["description"] = "The Stranglethorn Fishing Extravaganza is a weekly fishing event held in Stranglethorn Vale. There is a highly competitive fishing contest and a more casual rare fish turn-in for this event.",
+	["description"] = "The Stranglethorn Fishing Extravaganza is a weekly fishing event held every Sunday in Stranglethorn Vale. There is a highly competitive fishing contest and a more casual rare fish turn-in for this event.",
 	["maps"] = {
 		-- #if AFTER CATA
 		THE_CAPE_OF_STRANGLETHORN,
@@ -17,6 +17,7 @@ root("Holidays", applyholiday(STRANGLETHORN_FISHING_EXTRAVAGANZA, {
 		STRANGLETHORN_VALE,
 		-- #endif
 	},
+	["OnUpdate"] = [[function() _.Settings:CheckWeekDay(]] .. STRANGLETHORN_FISHING_EXTRAVAGANZA .. [[, 1); end]],
 	["groups"] = {
 		n(ACHIEVEMENTS, {
 			removeclassicphase(ach(306, {	-- Master Angler of Azeroth

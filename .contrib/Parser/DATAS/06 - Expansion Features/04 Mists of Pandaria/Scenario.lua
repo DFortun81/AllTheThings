@@ -365,6 +365,7 @@ _.ExpansionFeatures =
 							i(92886),	-- Lavasoul Collar
 							i(92884),	-- Lavasoul Ring
 							i(93115),	-- Lightning Rod Breastplate		-- 2021-12-10
+							i(93113),	-- Lightning Rod Drape				-- 24 Mar 2022
 							i(93120),	-- Lightning Rod Pauldrons			-- 18 Jan 2022
 							i(93053),	-- Mogubreaker Britches				-- 12/12/21
 							i(93052),	-- Mogubreaker Hood*				— 5/16/19
@@ -690,9 +691,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 						i(93117),	-- Lightning Rod Gauntlets
 						i(93118),	-- Lightning Rod Helm
 						i(93121),	-- Lightning Rod Girdle
-					}),
-					n(BACK, {
-						i(93113),	-- Lightning Rod Drape
 					}),
 					n(WEAPONS, {
 						i(93145),	-- Scavenged Pandaren Sword

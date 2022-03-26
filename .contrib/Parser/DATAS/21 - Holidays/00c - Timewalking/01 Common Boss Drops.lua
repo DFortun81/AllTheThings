@@ -20,5 +20,5 @@ local InfiniteTimereaver =
 -- Post Processors
 table.insert(POST_PROCESSING_FUNCTIONS, function()
 	print("Assigning mapID and creatureIDs for Infinite Timereaver...");
-	_.Holidays = InfiniteTimereaver;
+	root("Holidays", InfiniteTimereaver);
 end);

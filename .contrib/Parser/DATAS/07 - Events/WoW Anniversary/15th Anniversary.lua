@@ -236,14 +236,14 @@ root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 					["lvl"] = 10,
 				}),
 				q(57730, {	-- Zinfizzlex's Portable Shredder Unit (A)
-					['description'] = "Questgiver is west of Korrak (over the bridge) and you have to escort him to your base. After bringing him to safety he offers the quest.",
+					["description"] = "Questgiver is west of Korrak (over the bridge) and you have to escort him to your base. After bringing him to safety he offers the quest.",
 					["repeatable"] = true,
 					["provider"] = { "n", 13377 },	-- Master Engineer Zinfizzlex
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(57731, {	-- Zinfizzlex's Portable Shredder Unit (H)
-					['description'] = "Questgiver is west of Korrak (over the bridge) and you have to escort him to your base. After bringing him to safety he offers the quest.",
+					["description"] = "Questgiver is west of Korrak (over the bridge) and you have to escort him to your base. After bringing him to safety he offers the quest.",
 					["repeatable"] = true,
 					["provider"] = { "n", 13377 },	-- Master Engineer Zinfizzlex
 					["races"] = HORDE_ONLY,

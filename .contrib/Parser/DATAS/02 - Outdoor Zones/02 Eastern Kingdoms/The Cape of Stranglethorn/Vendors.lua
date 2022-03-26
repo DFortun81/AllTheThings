@@ -143,6 +143,12 @@ _.Zones =
 						}),
 					},
 				}),
+				n(2626,	{	-- Old Man Heming <Fishing Supplies>
+					["coord"] = { 41.6, 73.4, THE_CAPE_OF_STRANGLETHORN },
+					["g"] = {
+						i(16083),	-- Expert Fishing - The Bass and You
+					},
+				}),
 				n(2699,   {	-- Rikqiz <Leatherworking Supplies>
 					["coord"] = { 43.2, 71.7, THE_CAPE_OF_STRANGLETHORN },
 					["g"] = {

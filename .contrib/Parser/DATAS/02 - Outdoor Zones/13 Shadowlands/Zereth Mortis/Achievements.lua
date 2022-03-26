@@ -162,12 +162,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 						["coords"] = {
 							{ 39.3, 34.6, ZERETH_MORTIS },
 							{ 46.9, 65.0, ZERETH_MORTIS },
+							{ 56.9, 52.1, ZERETH_MORTIS },
 						},
 					}),
 					crit(7, {	-- Volatile Precursor
 						["provider"] = { "i", 187893 },	-- Volatile Precursor
 						["coords"] = {
 							{ 47.4, 61.1, ZERETH_MORTIS },
+							{ 48.3, 59.5, ZERETH_MORTIS },
 							{ 49.1, 57.5, ZERETH_MORTIS },
 						},
 					}),

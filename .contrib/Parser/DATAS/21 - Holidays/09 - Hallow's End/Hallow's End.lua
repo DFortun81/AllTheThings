@@ -380,12 +380,14 @@ local SPECTRAL_GROG = i(104316, {	-- Spectral Grog
 	},
 });
 
-_.Holidays = { applyholiday(HALLOWS_END, {
+root("Holidays", applyholiday(HALLOWS_END, {
 	-- #if ANYCLASSIC
 	["npcID"] = -58,
 	-- #else
 	["holidayID"] = 235462,
 	-- #endif
+	["description"] = "Start: 10/18 at 10:00 AM\nEnd: 11/01 at 11:00 AM",
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. HALLOWS_END .. [[, 10, 18, 11, 1); end]],
 	["groups"] = {
 		n(ACHIEVEMENTS, {
 			ach(1656, {	-- Hallowed Be Thy Name
@@ -4100,12 +4102,12 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 			-- #endif
 		}),
 	},
-})};
+}));
 
 -- Remove the holiday flag.
 SPECTRAL_GROG.u = nil;
 
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, { {
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, { {
 	-- #if ANYCLASSIC
 	["npcID"] = -58,
 	-- #else
@@ -4142,4 +4144,4 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, { {
 		q(11404),	-- Call the Headless Horseman
 		q(11405),	-- Call the Headless Horseman
 	},
-}});
+}}));

@@ -1034,7 +1034,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
-		q(58067),	-- [DNT] DO NOT USE - Template Quest
+		q(58067, {	-- [DNT] DO NOT USE - Template Quest
+			i(173694),	-- Night Market Template
+		}),
 		q(62987),	-- [DNT] Test Quest
 		q(58607),	-- [DNT] Tracking Quest
 		q(58855),	-- [DNT] Tracking Quest

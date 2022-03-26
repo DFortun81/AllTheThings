@@ -650,6 +650,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						i(22535, {	-- Formula: Enchant Ring - Striking
 							-- #if AFTER BFA
 							["description"] = "This grey item is now needed for the second half of the secret involving the battle pet Baa'l.",
+							["f"] = MISC,
 							-- #endif
 						}),
 					},

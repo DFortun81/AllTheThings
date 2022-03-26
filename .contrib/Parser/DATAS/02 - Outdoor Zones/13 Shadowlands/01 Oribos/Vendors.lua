@@ -139,6 +139,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(187869),	-- Scouting Map: Into the Shadowlands (TOY!)
 					i(188673),	-- Timebound Runimations
 					i(188174, {	-- Unchained Equipment Cache
+						["timeline"] = { "added 9.1.5", "removed 9.2.0" },
 						["cost"] = {
 							{ "c", 1602, 375 },	-- 375xConquest
 						},
@@ -152,6 +153,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						},
 					}),
 					i(188173, {	-- Valorous Equipment Cache
+						["timeline"] = { "added 9.1.5", "removed 9.2.0" },
 						["cost"] = {
 							{ "c", 1191, 500 },	-- 500xValor
 						},
@@ -166,7 +168,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 							{"select", "instanceID", 1186},			-- Spires of Ascension
 							{"select", "instanceID", 1194},			-- Tazavesh, the Veiled Market
 							{"select", "instanceID", 1187},			-- Theater of Pain
-							{"select", "instanceID", 1188},			-- De Other Side
 
 							{"pop"},								-- Discard the Instance Headers and acquire all of their children.
 							{"where", "difficultyID", 23},			-- Select only the Mythic Difficulty Headers.
@@ -354,23 +355,34 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["g"] = {
 					i(187254, {	-- Arrangement of Anima
 						["cost"] = { { "i", 187219, 1 } },	-- 1x Attendant's Token of Merit
-						["timeline"] = { "added 9.1.0" },
+						["timeline"] = { "added 9.1.0", "removed 9.2.0" },
 						["g"] = {
 							currency(ANIMA),	-- Reservoir Anima
 						},
 					}),
-					i(187503, {	-- Bundle of Archived Research
+					i(191302, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Bottled Night Sky
 						["cost"] = { { "i", 187219, 1 } },	-- 1x Attendant's Token of Merit
-						["timeline"] = { "added 9.1.0" },
 						["g"] = {
-							currency(2009),	-- Cosmic Flux
+							i(188957),	-- Genesis Mote
 						},
-					}),
+					})),
+					i(187503, bubbleDownSelf({ ["timeline"] = { "added 9.1.0" } }, {	-- Bundle of Archived Research
+						["cost"] = { { "i", 187219, 1 } },	-- 1x Attendant's Token of Merit
+						["g"] = {
+							currency(1931),	-- Cataloged Research
+						},
+					})),
+					i(191300, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Certified Vouchsafe
+						["cost"] = { { "i", 187219, 1 } },	-- 1x Attendant's Token of Merit
+					})),
 					i(191030, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Cosmic Flux Parcel
 						["cost"] = { { "i", 187219, 1 } },	-- 1x Attendant's Token of Merit
 						["g"] = {
-							i(186017),	-- Korthite Crystal
+							currency(2009),	-- Cosmic Flux
 						},
+					})),
+					i(191297, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Ephemera-Infused Mesh
+						["cost"] = { { "i", 187219, 6 } },	-- 6x Attendant's Token of Merit
 					})),
 					i(187817, bubbleDownSelf({ ["timeline"] = { "added 9.1.0" } }, {	-- Korthite Crystal Geode
 						["cost"] = { { "i", 187219, 3 } },	-- 3x Attendant's Token of Merit
@@ -378,11 +390,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 							i(186017),	-- Korthite Crystal
 						},
 					})),
-					i(187817, bubbleDownSelf({ ["timeline"] = { "added 9.1.0" } }, {	-- Korthite Crystal Geode
+					i(187817, bubbleDownSelf({ ["timeline"] = { "added 9.1.0", "removed 9.2.0" } }, {	-- Korthite Crystal Geode
 						["cost"] = { { "c", 1191, 1500 } },	-- 1500x Valor
 						["g"] = {
 							i(186017),	-- Korthite Crystal
 						},
+					})),
+					i(191303, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Overflowing Chest of Riches
+						["cost"] = { { "i", 187219, 3 } },	-- 3x Attendant's Token of Merit
 					})),
 					i(185832, {	-- Shipment of Elethium Ore
 						["cost"] = { { "c", 1191, 750 } },	-- 750x Valor
@@ -419,6 +434,15 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 							currency(1767),	-- Stygia
 						},
 					}),
+					i(191301, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Treatise on Patterns in the Purpose
+						["cost"] = { { "i", 187219, 1 } },	-- 1x Attendant's Token of Merit
+						["g"] = {
+							currency(1979),	-- Cyphers of the First Ones
+						},
+					})),
+					i(191299, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Tribute of the Enlightened
+						["cost"] = { { "i", 187219, 1 } },	-- 1x Attendant's Token of Merit
+					})),
 				},
 			})),
 			n(176065, {	-- Liawyn <Wild Hunt Quartermaster>

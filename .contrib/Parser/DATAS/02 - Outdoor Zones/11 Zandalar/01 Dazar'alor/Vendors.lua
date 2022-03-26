@@ -829,6 +829,12 @@ _.Zones =
 						}),
 					}),
 				}),
+				n(130901, {	-- Chronicler Grazzul <Inscription Trainer>
+					["coord"] = { 42.3, 39.7, DAZARALOR },
+					["g"] = {
+						i(168026),	-- Recipe Book: Sanguine Feather Quill of Lana'thel
+					},
+				}),
 				n(122703, {	-- Clever Kumali <Alchemist Trainer>
 					["coord"] = { 42.2, 38.0, DAZARALOR },
 					["races"] = HORDE_ONLY,
@@ -1280,6 +1286,7 @@ _.Zones =
 				n(125879, {	-- Talutu <Mount Vendor>
 					["coord"] = { 48.5, 87.0, DAZARALOR },
 					["g"] = {
+						i(159139),	-- Lightweight Skyterror Barding
 						i(163568, {	-- Lost Platysaur (PET!)
 							["cost"] = 1000000000,	-- 100,000g
 						}),

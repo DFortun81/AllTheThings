@@ -8,13 +8,15 @@ local COSTUME_PROVIDERS = {
 	{ "i", 116890 },	-- "Santo's Sun" Contender's Costume
 	{ "i", 116891 },	-- "Snowy Owl" Contender's Costume
 };
-_.Holidays = { applyholiday(DAY_OF_THE_DEAD, {
+root("Holidays", applyholiday(DAY_OF_THE_DEAD, {
 	-- #if ANYCLASSIC
 	["npcID"] = -59,
 	-- #else
 	["holidayID"] = 307365,
 	-- #endif
 	["timeline"] = { "added 3.2.2.10505" },
+	["description"] = "Start: 11/01 at 11:00 AM\nEnd: 11/03 at 11:00 AM",
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. DAY_OF_THE_DEAD .. [[, 11, 1, 11, 3); end]],
 	["groups"] = {
 		-- #if AFTER WRATH
 		n(ACHIEVEMENTS, {
@@ -203,4 +205,4 @@ _.Holidays = { applyholiday(DAY_OF_THE_DEAD, {
 			}),
 		}),
 	},
-})};
+}));

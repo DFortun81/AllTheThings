@@ -1487,13 +1487,15 @@ root("Zones", m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(26477, {	-- Search the Bole
+				q(26477, bubbleDownSelf({ ["timeline"] = { "added 4.0.3.13277" } }, {	-- Search the Bole
 					["provider"] = { "n", 3916 },	-- Shael'dryn
 					["coord"] = { 59.0, 59.6, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26476,	-- Dryad Delivery
-					["timeline"] = { "added 4.0.3.13277" },
-				}),
+					["g"] = {
+						i(5475),	-- Wooden Key
+					},
+				})),
 				q(13871, bubbleDownSelf({ ["timeline"] = { "added 4.0.3.13277" } }, {	-- Security!
 					["provider"] = { "n", 17304 },	-- Overseer Gorthak
 					["coord"] = { 90.9, 58.1, ASHENVALE },
@@ -2480,6 +2482,7 @@ root("Zones", m(KALIMDOR, {
 				}),
 			})),
 			n(ZONE_DROPS, {
+				i(11151, {["timeline"] = {"removed 5.0.4"}}),	-- CLASSIC: Formula: Enchant Gloves - Herbalism / MOP:Ancient Enchanting Vellum
 				i(78343, {["timeline"] = {"added 4.3.0.15005"}}),	-- Formula: Enchant Gloves - Herbalism
 				i(2567, {	-- Evocator's Blade
 					["crs"] = { 4802 },	-- Blackfathom Tide Priestess

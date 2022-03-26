@@ -31,6 +31,7 @@ _.Zones =
 				}),
 				n(107963, {	-- Kharmeera
 					["coord"] = { 47.2, 26.6, AZSUNA },
+					["crs"] = { 99420 },	-- Kharmeera (after completion of Quests)
 					["g"] = {
 						i(128574, {	-- Formula: Enchant Cloak - Binding of Agility (Rank 1)
 							["cost"] = { { "i", 124442, 1 }, },	-- 1x Chaos Crystal

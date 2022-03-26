@@ -12,7 +12,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			}),
 			i(179311),	-- Oxxein Lockbox
 			i(187822, {	-- A Defector's Request
-				["description"] = "Requires Chapter 8 of the 9.1 Campaign. Drops from Maldraxxi Defectors",
 				["crs"] = {
 					161180,	-- Maldraxxi Defector
 					163245,	-- Maldraxxi Defector
