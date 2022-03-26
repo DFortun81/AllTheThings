@@ -5815,7 +5815,7 @@ local function AddTomTomWaypoint(group)
 	__TomTomWaypointFirst = true;
 	AddTomTomWaypointInternal(group, true);
 	if TomTom then TomTom:SetClosestWaypoint(); end
-	
+
 	-- if this is specifically a current quest being tracked in the log, then try to put the in-game waypoint on it as well...
 	-- maybe slumber will be ok with this?
 	if group.questID and C_QuestLog.IsOnQuest(group.questID) then
@@ -11267,6 +11267,18 @@ local objectFields = {
 		-- every contained sub-object is already saved, so the repeated object should also be marked as saved
 		return anySaved;
 	end,
+	["coords"] = function(t)
+		-- only used for generic objects with no other way of being tracked as saved
+		if not t.g then return; end
+		local unsavedCoords = {};
+		for _,group in ipairs(t.g) do
+			-- show collected coords of all sub-objects which are not saved
+			if group.objectID and group.coords and not group.saved then
+				app.ArrayAppend(unsavedCoords, group.coords);
+			end
+		end
+		return unsavedCoords;
+	end,
 };
 app.BaseObject = app.BaseObjectFields(objectFields, "BaseObject");
 
@@ -15231,7 +15243,7 @@ RowOnEnter = function (self)
 		if reference.flightPathID and app.Settings:GetTooltipSetting("flightPathID")  then GameTooltip:AddDoubleLine(L["FLIGHT_PATH_ID"], tostring(reference.flightPathID)); end
 		if reference.mapID and app.Settings:GetTooltipSetting("mapID") then GameTooltip:AddDoubleLine(L["MAP_ID"], tostring(reference.mapID)); end
 		if reference.coords and app.Settings:GetTooltipSetting("Coordinates") then
-			local currentMapID, j, str = app.GetCurrentMapID(), 0;
+			local currentMapID, str = app.GetCurrentMapID();
 			for i,coord in ipairs(reference.coords) do
 				local x, y = coord[1], coord[2];
 				local mapID = coord[3] or currentMapID;
@@ -15244,9 +15256,12 @@ RowOnEnter = function (self)
 				else
 					str = "";
 				end
-				GameTooltip:AddDoubleLine(j == 0 and L["COORDINATES_STRING"] or " ",
+				GameTooltip:AddDoubleLine(i == 1 and L["COORDINATES_STRING"] or " ",
 					str.. GetNumberWithZeros(math.floor(x * 10) * 0.1, 1) .. ", " .. GetNumberWithZeros(math.floor(y * 10) * 0.1, 1), 1, 1, 1, 1, 1, 1);
-				j = j + 1;
+				if i > 9 then
+					GameTooltip:AddDoubleLine(" ", "+ " .. (#reference.coords - i) .. L["_MORE"], 1, 1, 1, 1, 1, 1);
+					break;
+				end
 			end
 		end
 		if reference.providers then
