@@ -4667,11 +4667,17 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		-- If the user wants to show the progress of this search result, do so
 		if app.Settings:GetTooltipSetting("Progress") and (group.key ~= "spellID" or group.collectible) then
 			group.collectionText = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(group);
+			
+			-- add the progress as a new line for encounter tooltips instead of using right text since it can overlap the NPC name
+			if group.encounterID then tinsert(info, 1, { left = "Progress", right = group.collectionText }); end
 		end
 
 		-- If there was any informational text generated, then attach that info.
 		if #info > 0 then
 			group.tooltipInfo = info;
+			for i,item in ipairs(info) do
+				if item.color then item.a, item.r, item.g, item.b = HexToARGB(item.color); end
+			end
 		end
 	end
 
@@ -5747,58 +5753,133 @@ local function UpdateRawIDs(field, ids)
 end
 app.SearchForLink = SearchForLink;
 
--- Map Information Lib
-local __TomTomWaypointFirst = false;
-local function AddTomTomWaypointInternal(group, first)
-	if group.g then
-		for _,o in ipairs(group.g) do
-			AddTomTomWaypointInternal(o);
-		end
-	end
-	local searchResults = ResolveSymbolicLink(group);
-	if searchResults then
-		for _,o in ipairs(searchResults) do
-			AddTomTomWaypointInternal(o);
-		end
-	end
-
-	if app.GroupVisibilityFilter(group) and (first or (not group.sourceQuests or group.sourceQuestsCompleted) and (not group.questID or not C_QuestLog.IsOnQuest(group.questID))) then
-		if TomTom then
-			if (first and not __TomTomWaypointFirst) or not group.saved then
-				if group.coords or group.coord then
-					__TomTomWaypointFirst = false;
-					local opt = {
-						title = group.text or group.name or group.link,
-						persistent = nil,
-						minimap = true,
-						world = true,
-						from = "ATT",
-					};
-					if group.title then opt.title = opt.title .. "\n" .. group.title; end
-					if group.criteriaID then opt.title = opt.title .. "\nCriteria for " .. GetAchievementLink(group.achievementID); end
-					if group.description then opt.from = opt.from .. "\n" .. string.gsub(group.description, "%.% ", ".\n"); end
-					local defaultMapID = GetRelativeMap(group, app.GetCurrentMapID());
-					local displayID = GetDisplayID(group);
-					if displayID then
-						opt.minimap_displayID = displayID;
-						opt.worldmap_displayID = displayID;
+-- Tooltip Functions
+-- Consolidated logic for whether a tooltip should include ATT information based on combat & user settings
+local function CanAttachTooltips()
+	return (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSettingWithMod("Enabled");
+end
+local function AttachTooltipRawSearchResults(self, lineNumber, group)
+	if group then
+		-- If there was info text generated for this search result, then display that first.
+		if group.tooltipInfo and #group.tooltipInfo > 0 then
+			local left, right;
+			local name = self:GetName() .. "TextLeft";
+			for _,entry in ipairs(group.tooltipInfo) do
+				local found = false;
+				left = entry.left;
+				for i=self:NumLines(),1,-1 do
+					if _G[name..i]:GetText() == left then
+						found = true;
+						break;
 					end
-					if group.icon then
-						opt.minimap_icon = group.icon;
-						opt.worldmap_icon = group.icon;
-					end
-					if group.coords then
-						for _,coord in ipairs(group.coords) do
-							TomTom:AddWaypoint(coord[3] or defaultMapID, coord[1] / 100, coord[2] / 100, opt);
+				end
+				if not found then
+					right = entry.right;
+					if right then
+						self:AddDoubleLine(left or " ", right);
+					elseif entry.r then
+						if entry.wrap then
+							self:AddLine(left, entry.r / 255, entry.g / 255, entry.b / 255, 1);
+						else
+							self:AddLine(left, entry.r / 255, entry.g / 255, entry.b / 255);
 						end
-					end
-					if group.coord then
-						TomTom:AddWaypoint(group.coord[3] or defaultMapID, group.coord[1] / 100, group.coord[2] / 100, opt);
+					else
+						if entry.wrap then
+							self:AddLine(left, nil, nil, nil, 1);
+						else
+							self:AddLine(left);
+						end
 					end
 				end
 			end
-		else
-			if first or __TomTomWaypointFirst then
+		end
+
+		-- If the user has Show Collection Progress turned on.
+		if group.encounterID then
+			self:Show();
+		elseif group.collectionText and self:NumLines() > 0 then
+			local rightSide = _G[self:GetName() .. "TextRight" .. (lineNumber or 1)];
+			if rightSide then
+				if self.CloseButton then
+					-- dont think the region for the rightText can be modified within the tooltip, so pad instead
+					rightSide:SetText(group.collectionText .. "     ");
+				else
+					rightSide:SetText(group.collectionText);
+				end
+				rightSide:Show();
+			end
+		end
+
+		self.AttachComplete = not group.working;
+	end
+end
+local function AttachTooltipSearchResults(self, lineNumber, search, method, ...)
+	app.SetSkipPurchases(1);
+	AttachTooltipRawSearchResults(self, lineNumber, GetCachedSearchResults(search, method, ...));
+	app.SetSkipPurchases(0);
+end
+
+-- Map Information Lib
+(function()
+local __TomTomWaypointCacheIndexY = { __index = function(t, y)
+	local o = {};
+	rawset(t, y, o);
+	return o;
+end };
+local __TomTomWaypointCacheIndexX = { __index = function(t, x)
+	local o = setmetatable({}, __TomTomWaypointCacheIndexY);
+	rawset(t, x, o);
+	return o;
+end };
+local __TomTomWaypointCache, __TomTomWaypointFirst = setmetatable({}, { __index = function(t, mapID)
+	local o = setmetatable({}, __TomTomWaypointCacheIndexX);
+	rawset(t, mapID, o);
+	return o;
+end });
+local function AddTomTomWaypointCache(coord, group)
+	local mapID = coord[3];
+	if mapID then
+		__TomTomWaypointCache[mapID][math.floor(coord[1] * 10)][math.floor(coord[2] * 10)][group.key .. ":" .. group[group.key]] = group;
+	else
+		print("Missing mapID for", group.text, coord[1], coord[2], mapID);
+	end
+end
+local function AddTomTomWaypointInternal(group, depth)
+	if group.visible then
+		if group.plotting then return false; end
+		group.plotting = true;
+		if group.g then
+			depth = depth + 1;
+			for _,o in ipairs(group.g) do
+				AddTomTomWaypointInternal(o, depth);
+			end
+			depth = depth - 1;
+		end
+		
+		local searchResults = ResolveSymbolicLink(group);
+		if searchResults then
+			depth = depth + 1;
+			for _,o in ipairs(searchResults) do
+				AddTomTomWaypointInternal(o, depth);
+			end
+			depth = depth - 1;
+		end
+		group.plotting = nil;
+		
+		if TomTom then
+			if (depth == 0 and not __TomTomWaypointFirst) or not group.saved then
+				if group.coords or group.coord then
+					__TomTomWaypointFirst = false;
+					if group.coords then
+						for _,coord in ipairs(group.coords) do
+							AddTomTomWaypointCache(coord, group);
+						end
+					end
+					if group.coord then AddTomTomWaypointCache(coord, group); end
+				end
+			end
+		elseif C_SuperTrack then
+			if depth == 0 or __TomTomWaypointFirst then
 				local coord = group.coords and group.coords[1] or group.coord;
 				if coord then
 					__TomTomWaypointFirst = false;
@@ -5811,17 +5892,142 @@ local function AddTomTomWaypointInternal(group, first)
 		end
 	end
 end
-local function AddTomTomWaypoint(group)
-	__TomTomWaypointFirst = true;
-	AddTomTomWaypointInternal(group, true);
-	if TomTom then TomTom:SetClosestWaypoint(); end
-
-	-- if this is specifically a current quest being tracked in the log, then try to put the in-game waypoint on it as well...
-	-- maybe slumber will be ok with this?
-	if group.questID and C_QuestLog.IsOnQuest(group.questID) then
-		C_SuperTrack.SetSuperTrackedQuestID(group.questID);
+AddTomTomWaypoint = function(group)
+	if TomTom or C_SuperTrack then
+		__TomTomWaypointFirst = true;
+		wipe(__TomTomWaypointCache);
+		AddTomTomWaypointInternal(group, 0);
+		if TomTom then
+			local xnormal;
+			for mapID,c in pairs(__TomTomWaypointCache) do
+				for x,d in pairs(c) do
+					xnormal = x / 1000;
+					for y,datas in pairs(d) do
+						-- Determine the Root and simplify NPC/Object data.
+						-- An NPC/Object can contain all of the other types by reference and don't need individual entries.
+						local root,rootByCreatureID,rootByObjectID = {},{},{};
+						for key,group in pairs(datas) do
+							local creatureID, objectID;
+							if group.npcID or group.creatureID then
+								creatureID = group.npcID or group.creatureID;
+							elseif group.objectID then
+								objectID = group.objectID;
+							else
+								if group.providers then
+									for i,provider in ipairs(group.providers) do
+										if provider[1] == "n" then
+											if provider[2] > 0 then
+												creatureID = provider[2];
+											end
+										elseif provider[1] == "o" then
+											if provider[2] > 0 then
+												objectID = provider[2];
+											end
+										end
+									end
+								end
+								if group.qgs then
+									local count = #group.qgs;
+									if count > 1 and group.coords and #group.coords == count then
+										for i=count,1,-1 do
+											local coord = group.coords[i];
+											if coord[3] == mapID and math.floor(coord[1] * 10) == x and math.floor(coord[2] * 10) == y then
+												creatureID = group.qgs[i];
+												break;
+											end
+										end
+										if not creatureID then
+											creatureID = group.qgs[1];
+										end
+									else
+										creatureID = group.qgs[1];
+									end
+								end
+								if group.crs then
+									local count = #group.crs;
+									if count > 1 and group.coords and #group.coords == count then
+										for i=count,1,-1 do
+											local coord = group.coords[i];
+											if coord[3] == mapID and math.floor(coord[1] * 10) == x and math.floor(coord[2] * 10) == y then
+												creatureID = group.crs[i];
+												break;
+											end
+										end
+										if not creatureID then
+											creatureID = group.crs[1];
+										end
+									else
+										creatureID = group.crs[1];
+									end
+								end
+							end
+							if creatureID then
+								if not rootByCreatureID[creatureID] then
+									rootByCreatureID[creatureID] = group;
+									tinsert(root, app.CreateNPC(creatureID));
+								end
+							elseif objectID then
+								if not rootByObjectID[objectID] then
+									rootByObjectID[objectID] = group;
+									tinsert(root, app.CreateObject(objectID));
+								end
+							else
+								tinsert(root, group);
+							end
+						end
+						
+						local first = root[1];
+						if first then
+							local opt = { from = "ATT", persistent = false };
+							opt.title = first.text or RETRIEVING_DATA;
+							local displayID = GetDisplayID(first);
+							if displayID then
+								opt.minimap_displayID = displayID;
+								opt.worldmap_displayID = displayID;
+							end
+							if first.icon then
+								opt.minimap_icon = first.icon;
+								opt.worldmap_icon = first.icon;
+							end
+							
+							local callbacks = TomTom:DefaultCallbacks();
+							callbacks.minimap.tooltip_update = Nil;
+							callbacks.minimap.tooltip_show = function(event, tooltip, uid, dist)
+								tooltip:ClearLines();
+								for i,o in ipairs(root) do
+									local lineNumber = tooltip:NumLines() + 1;
+									tooltip:AddLine(o.text);
+									if o.title and not o.explorationID then tooltip:AddLine(o.title); end
+									local key = o.key;
+									if key == "objectiveID" then
+										if o.parent and o.parent.questID then tooltip:AddLine("Objective for " .. o.parent.text); end
+									elseif key == "criteriaID" then
+										tooltip:AddLine("Criteria for " .. GetAchievementLink(group.achievementID));
+									else
+										if key == "npcID" then key = "creatureID"; end
+										AttachTooltipSearchResults(tooltip, lineNumber, key .. ":" .. o[o.key], SearchForField, key, o[o.key]);
+									end
+								end
+								tooltip:Show();
+							end
+							callbacks.world.tooltip_update = Nil;
+							callbacks.world.tooltip_show = callbacks.minimap.tooltip_show;
+							opt.callbacks = callbacks;
+							TomTom:AddWaypoint(mapID, xnormal, y / 1000, opt);
+						end
+					end
+				end
+			end
+			TomTom:SetClosestWaypoint();
+		end
+		if C_SuperTrack and group.questID and C_QuestLog.IsOnQuest(group.questID) then
+			C_SuperTrack.SetSuperTrackedQuestID(group.questID);
+		end
+	else
+		app.print("You must have TomTom installed to plot coordinates.");
 	end
 end
+end)();
 -- Populates/replaces data within a questObject for displaying in a row
 local function PopulateQuestObject(questObject)
 	-- cannot do anything on a missing object or questID
@@ -6306,76 +6512,6 @@ app.TryColorizeName = function(group, name)
 	return name;
 end
 
--- Tooltip Functions
--- Consolidated logic for whether a tooltip should include ATT information based on combat & user settings
-local function CanAttachTooltips()
-	return (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSettingWithMod("Enabled");
-end
-local function AttachTooltipRawSearchResults(self, group)
-	if group then
-		-- add the progress as a new line for encounter tooltips instead of using right text since it can overlap the NPC name
-		if group.encounterID and group.collectionText then
-			self:AddDoubleLine("Progress", group.collectionText);
-		end
-		-- If there was info text generated for this search result, then display that first.
-		if group.tooltipInfo then
-			local left, right;
-			for _,entry in ipairs(group.tooltipInfo) do
-				if entry.color then
-					entry.a, entry.r, entry.g, entry.b = HexToARGB(entry.color);
-				end
-
-				left = entry.left;
-				right = entry.right;
-				if right then
-					self:AddDoubleLine(left or " ", right);
-				elseif entry.r then
-					if entry.wrap then
-						self:AddLine(left, entry.r / 255, entry.g / 255, entry.b / 255, 1);
-					else
-						self:AddLine(left, entry.r / 255, entry.g / 255, entry.b / 255);
-					end
-				else
-					if entry.wrap then
-						self:AddLine(left, nil, nil, nil, 1);
-					else
-						self:AddLine(left);
-					end
-				end
-			end
-		end
-
-		-- If the user has Show Collection Progress turned on.
-		if group.collectionText and not group.encounterID and self:NumLines() > 0 then
-			local rightSide = _G[self:GetName() .. "TextRight1"];
-			if rightSide then
-				if self.CloseButton then
-					-- dont think the region for the rightText can be modified within the tooltip, so pad instead
-					rightSide:SetText(group.collectionText .. "     ");
-				else
-					rightSide:SetText(group.collectionText);
-				end
-				rightSide:Show();
-			end
-		elseif group.encounterID then
-			self:Show();
-		end
-
-		self.AttachComplete = not group.working;
-		self.HasATTSearchResults = true;
-	end
-end
-local function AttachTooltipSearchResults(self, search, method, paramA, paramB, ...)
-	-- Don't attach tooltip results multiple times
-	if not self.HasATTSearchResults then
-		-- app.PrintDebug("build tooltip search",self.HasATTSearchResults,search)
-		-- tooltips can skip to level 1
-		app.SetSkipPurchases(1);
-		AttachTooltipRawSearchResults(self, GetCachedSearchResults(search, method, paramA, paramB, ...));
-		app.SetSkipPurchases(0);
-	-- else app.PrintDebug("skip tooltip search",self.HasATTSearchResults,search)
-	end
-end
 
 local npcQuestsCache = {}
 function app.IsNPCQuestGiver(self, npcID)
@@ -6498,7 +6634,7 @@ local function AttachTooltip(self)
 					end
 				elseif type == "Creature" or type == "Vehicle" then
 					if app.Settings:GetTooltipSetting("creatureID") then self:AddDoubleLine(L["CREATURE_ID"], tostring(npc_id)); end
-					AttachTooltipSearchResults(self, "creatureID:" .. npc_id, SearchForField, "creatureID", tonumber(npc_id));
+					AttachTooltipSearchResults(self, 1, "creatureID:" .. npc_id, SearchForField, "creatureID", tonumber(npc_id));
 				end
 			end
 			return true;
@@ -6506,7 +6642,7 @@ local function AttachTooltip(self)
 
 		-- Does the tooltip have a spell? [Mount Journal, Action Bars, etc]
 		if self.AllTheThingsProcessing and spellID then
-			AttachTooltipSearchResults(self, "spellID:" .. spellID, SearchForField, "spellID", spellID);
+			AttachTooltipSearchResults(self, 1, "spellID:" .. spellID, SearchForField, "spellID", spellID);
 			return true;
 		end
 
@@ -6528,9 +6664,9 @@ local function AttachTooltip(self)
 			-- print("Search Item",link);
 			local mohIndex = link:find("item:137642");
 			if mohIndex and mohIndex > 0 then -- skip Mark of Honor for now
-				AttachTooltipSearchResults(self, link, app.EmptyFunction, "itemID", 137642);
+				AttachTooltipSearchResults(self, 1, link, app.EmptyFunction, "itemID", 137642);
 			else
-				AttachTooltipSearchResults(self, link, SearchForLink, link);
+				AttachTooltipSearchResults(self, 1, link, SearchForLink, link);
 			end
 			return true;
 		end
@@ -6539,7 +6675,7 @@ local function AttachTooltip(self)
 		-- if self.shownThing then
 			-- -- local search, id = self.shownThing[1], self.shownThing[2];
 			-- -- print("shown Thing", search, id);
-			-- -- AttachTooltipSearchResults(self, search .. ":" .. id, SearchForField, search, id);
+			-- -- AttachTooltipSearchResults(self, 1, search .. ":" .. id, SearchForField, search, id);
 			-- self.AllTheThingsProcessing = nil;
 			-- self.shownThing = nil;
 		-- end
@@ -6564,7 +6700,7 @@ local function AttachTooltip(self)
 			local encounterID = owner.encounterID;
 			if encounterID and not owner.itemID then
 				if app.Settings:GetTooltipSetting("encounterID") then self:AddDoubleLine(L["ENCOUNTER_ID"], tostring(encounterID)); end
-				AttachTooltipSearchResults(self, "encounterID:" .. encounterID, SearchForField, "encounterID", tonumber(encounterID));
+				AttachTooltipSearchResults(self, 1, "encounterID:" .. encounterID, SearchForField, "encounterID", tonumber(encounterID));
 				return true;
 			end
 
@@ -6591,7 +6727,7 @@ local function AttachTooltip(self)
 			end
 			if gf then
 				app.noDepth = true;
-				AttachTooltipSearchResults(self, owner:GetName(), (function() return gf; end), owner:GetName(), 1);
+				AttachTooltipSearchResults(self, 1, owner:GetName(), (function() return gf; end), owner:GetName(), 1);
 				app.noDepth = nil;
 				self:Show();
 			end
@@ -6645,7 +6781,6 @@ end
 local function ClearTooltip(self)
 	-- print("Clear Tooltip");
 	self.AllTheThingsProcessing = nil;
-	self.HasATTSearchResults = nil;
 	self.AttachComplete = nil;
 	self.MiscFieldsComplete = nil;
 	self.UpdateTooltip = nil;
@@ -6675,7 +6810,7 @@ end
 		-- Make sure to call to base functionality
 		GameTooltip_SetCurrencyByID(self, currencyID, count);
 		if CanAttachTooltips() then
-			AttachTooltipSearchResults(self, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
+			AttachTooltipSearchResults(self, 1, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
 			if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
 			self:Show();
 		end
@@ -6705,7 +6840,7 @@ end
 							-- self.shownThing = { "currencyID", currencyID };
 							-- make sure tooltip refreshes
 							self.AllTheThingsProcessing = nil;
-							AttachTooltipSearchResults(self, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
+							AttachTooltipSearchResults(self, 1, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
 							if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
 							self:Show();
 							return;
@@ -6723,7 +6858,7 @@ end
 							-- self.shownThing = { "currencyID", currencyID };
 							-- make sure tooltip refreshes
 							self.AllTheThingsProcessing = nil;
-							AttachTooltipSearchResults(self, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
+							AttachTooltipSearchResults(self, 1, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
 							if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
 							self:Show();
 						return;
@@ -6741,10 +6876,10 @@ end
 			local name, texturePath, quantity, isBonusReward, spec, itemID = GetLFGDungeonRewardInfo(dungeonID, rewardID);
 			if itemID then
 				if spec == "item" then
-					AttachTooltipSearchResults(self, "itemID:" .. itemID, SearchForField, "itemID", itemID);
+					AttachTooltipSearchResults(self, 1, "itemID:" .. itemID, SearchForField, "itemID", itemID);
 					self:Show();
 				elseif spec == "currency" then
-					AttachTooltipSearchResults(self, "currencyID:" .. itemID, SearchForField, "currencyID", itemID);
+					AttachTooltipSearchResults(self, 1, "currencyID:" .. itemID, SearchForField, "currencyID", itemID);
 					self:Show();
 				end
 			end
@@ -6758,10 +6893,10 @@ end
 			local name, texturePath, quantity, isBonusReward, spec, itemID = GetLFGDungeonShortageRewardInfo(dungeonID, shortageSeverity, lootIndex);
 			if itemID then
 				if spec == "item" then
-					AttachTooltipSearchResults(self, "itemID:" .. itemID, SearchForField, "itemID", itemID);
+					AttachTooltipSearchResults(self, 1, "itemID:" .. itemID, SearchForField, "itemID", itemID);
 					self:Show();
 				elseif spec == "currency" then
-					AttachTooltipSearchResults(self, "currencyID:" .. itemID, SearchForField, "currencyID", itemID);
+					AttachTooltipSearchResults(self, 1, "currencyID:" .. itemID, SearchForField, "currencyID", itemID);
 					self:Show();
 				end
 			end
@@ -6772,7 +6907,7 @@ end
 	GameTooltip.SetToyByItemID = function(self, itemID)
 		GameTooltip_SetToyByItemID(self, itemID);
 		if CanAttachTooltips() then
-			AttachTooltipSearchResults(self, "itemID:" .. itemID, SearchForField, "itemID", itemID);
+			AttachTooltipSearchResults(self, 1, "itemID:" .. itemID, SearchForField, "itemID", itemID);
 			self:Show();
 		end
 	end
@@ -15095,7 +15230,7 @@ RowOnEnter = function (self)
 					GameTooltip:SetHyperlink(link);
 				else
 					GameTooltip:AddLine("Item #" .. reference.itemID);
-					AttachTooltipSearchResults(GameTooltip, "itemID:" .. reference.itemID, SearchForField, "itemID", reference.itemID);
+					AttachTooltipSearchResults(GameTooltip, 1, "itemID:" .. reference.itemID, SearchForField, "itemID", reference.itemID);
 				--elseif reference.speciesID then
 					-- Do nothing.
 				--elseif not reference.artifactID then
@@ -15188,7 +15323,7 @@ RowOnEnter = function (self)
 		if reference.s and not reference.link and app.Settings:GetTooltipSetting("sourceID") then GameTooltip:AddDoubleLine(L["SOURCE_ID"], tostring(reference.s)); end
 		if reference.azeriteEssenceID then
 			if app.Settings:GetTooltipSetting("azeriteEssenceID") then GameTooltip:AddDoubleLine(L["AZERITE_ESSENCE_ID"], tostring(reference.azeriteEssenceID)); end
-			AttachTooltipSearchResults(GameTooltip, "azeriteEssenceID:" .. reference.azeriteEssenceID .. (reference.rank or 0), SearchForField, "azeriteEssenceID", reference.azeriteEssenceID, reference.rank);
+			AttachTooltipSearchResults(GameTooltip, 1, "azeriteEssenceID:" .. reference.azeriteEssenceID .. (reference.rank or 0), SearchForField, "azeriteEssenceID", reference.azeriteEssenceID, reference.rank);
 		end
 		if reference.difficultyID and app.Settings:GetTooltipSetting("difficultyID") then GameTooltip:AddDoubleLine(L["DIFFICULTY_ID"], tostring(reference.difficultyID)); end
 		if app.Settings:GetTooltipSetting("creatureID") then
@@ -15298,7 +15433,7 @@ RowOnEnter = function (self)
 		end
 		if not reference.itemID then
 			if reference.speciesID then
-				AttachTooltipSearchResults(GameTooltip, "speciesID:" .. reference.speciesID, SearchForField, "speciesID", reference.speciesID);
+				AttachTooltipSearchResults(GameTooltip, 1, "speciesID:" .. reference.speciesID, SearchForField, "speciesID", reference.speciesID);
 			end
 		end
 		if reference.speciesID then
@@ -15308,7 +15443,7 @@ RowOnEnter = function (self)
 		if reference.titleID then
 			if app.Settings:GetTooltipSetting("titleID") then GameTooltip:AddDoubleLine(L["TITLE_ID"], tostring(reference.titleID)); end
 			GameTooltip:AddDoubleLine(" ", L[reference.saved and "KNOWN_ON_CHARACTER" or "UNKNOWN_ON_CHARACTER"]);
-			AttachTooltipSearchResults(GameTooltip, "titleID:" .. reference.titleID, SearchForField, "titleID", reference.titleID);
+			AttachTooltipSearchResults(GameTooltip, 1, "titleID:" .. reference.titleID, SearchForField, "titleID", reference.titleID);
 		end
 		if reference.questID then
 			if app.Settings:GetTooltipSetting("questID") then
@@ -15326,10 +15461,10 @@ RowOnEnter = function (self)
 			elseif ATTAccountWideData.OneTimeQuests[reference.questID] == false then
 				GameTooltip:AddLine("|cffcf271b" .. L["QUEST_ONCE_PER_ACCOUNT"] .. "|r");
 			end
-			AttachTooltipSearchResults(GameTooltip, "quest:"..reference.questID, SearchForField, "questID", reference.questID);
+			AttachTooltipSearchResults(GameTooltip, 1, "quest:"..reference.questID, SearchForField, "questID", reference.questID);
 		end
 		if reference.flightPathID then
-			AttachTooltipSearchResults(GameTooltip, "fp:"..reference.flightPathID, SearchForField, "flightPathID", reference.flightPathID);
+			AttachTooltipSearchResults(GameTooltip, 1, "fp:"..reference.flightPathID, SearchForField, "flightPathID", reference.flightPathID);
 		end
 		if reference.qgs and app.Settings:GetTooltipSetting("QuestGivers") then
 			if app.Settings:GetTooltipSetting("creatureID") then
@@ -15454,9 +15589,9 @@ RowOnEnter = function (self)
 		if reference.achievementID then
 			if reference.criteriaID then
 				GameTooltip:AddDoubleLine(L["CRITERIA_FOR"], GetAchievementLink(reference.achievementID));
-				-- AttachTooltipSearchResults(GameTooltip, "achievementID:" .. reference.achievementID .. ":" .. reference.criteriaID, SearchForField, "achievementID", reference.achievementID, reference.criteriaID);
+				-- AttachTooltipSearchResults(GameTooltip, 1, "achievementID:" .. reference.achievementID .. ":" .. reference.criteriaID, SearchForField, "achievementID", reference.achievementID, reference.criteriaID);
 			else
-				AttachTooltipSearchResults(GameTooltip, "achievementID:" .. reference.achievementID, SearchForField, "achievementID", reference.achievementID);
+				AttachTooltipSearchResults(GameTooltip, 1, "achievementID:" .. reference.achievementID, SearchForField, "achievementID", reference.achievementID);
 			end
 		end
 		if app.Settings:GetTooltipSetting("Progress") then
@@ -20811,7 +20946,7 @@ hooksecurefunc(GameTooltip, "SetToyByItemID", function(self, itemID, ...)
 	if CanAttachTooltips() then
 		local link = C_ToyBox.GetToyLink(itemID);
 		if link then
-			AttachTooltipSearchResults(self, link, SearchForLink, link);
+			AttachTooltipSearchResults(self, 1, link, SearchForLink, link);
 			self:Show();
 		end
 	end
@@ -20820,7 +20955,7 @@ hooksecurefunc(GameTooltip, "SetRecipeReagentItem", function(self, recipeID, rea
 	if CanAttachTooltips() then
 		local link = C_TradeSkillUI.GetRecipeReagentItemLink(recipeID, reagentID);
 		if link then
-			AttachTooltipSearchResults(self, link, SearchForLink, link);
+			AttachTooltipSearchResults(self, 1, link, SearchForLink, link);
 			self:Show();
 		end
 	end
@@ -22075,7 +22210,7 @@ end
 			-- Attach Quest info to Quest links in chat
 			if ItemRefTooltip then
 				-- print("show quest info",info)
-				AttachTooltipSearchResults(ItemRefTooltip, "quest:"..info, SearchForField, "questID", info);
+				AttachTooltipSearchResults(ItemRefTooltip, 1, "quest:"..info, SearchForField, "questID", info);
 				ItemRefTooltip:Show();
 			end
 		end
