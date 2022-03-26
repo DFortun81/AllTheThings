@@ -2429,15 +2429,12 @@ root("Zones", m(KALIMDOR, {
 						i(6054),	-- Recipe: Shadow Protection Potion
 					},
 				})),
-				n(6731, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.7318", "removed 4.0.3.10000" } }, {	-- Harlown Darkweave <Leatherworking Supplies>
+				n(6731, {	-- Harlown Darkweave <Leatherworking Supplies>
+					["description"] = "Vendor will only sell to those who have rescued him. Go to Benjari Edune and pick up the quest |cFFFFD700Three Friends of the Forest|r to start the quest chain.",
 					["coord"] = { 18.2, 60.0, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(7361),	-- Pattern: Herbalist's Gloves
-					},
-				})),
-				n(34601, bubbleDownSelf({ ["timeline"] = { "added 4.0.3.13277" } }, {	-- Harlown Darkweave
-					["description"] = "Vendor will only sell to those who have rescued him. Go to Benjari Edune and pick up the quest |cFFFFD700Three Friends of the Forest|r to start the quest chain.",
+				}),
+				n(34601, {	-- Harlown Darkweave
 					["coord"] = { 18.2, 60.0, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -2445,7 +2442,7 @@ root("Zones", m(KALIMDOR, {
 							["isLimited"] = true,
 						}),
 					},
-				})),
+				}),
 				n(3958,  {	-- Lardan <Leatherworking Supplies>
 					["coord"] = { 34.8, 49.8, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
