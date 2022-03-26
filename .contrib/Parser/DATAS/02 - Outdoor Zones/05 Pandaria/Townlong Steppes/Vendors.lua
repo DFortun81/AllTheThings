@@ -2495,13 +2495,13 @@ _.Zones =
 						i(89522),	-- Mark of the Dancing Crane
 						i(89296),	-- Nightwatcher's Helm
 						i(89300),	-- Red Smoke Bandana
-						i(89307, {	-- Reins of the Blue Shado-Pan Riding Tiger
+						i(89307, {	-- Blue Shado-Pan Riding Tiger (MOUNT!)
 							["cost"] = 5000000,	-- 500g
 						}),
-						i(89305, {	-- Reins of the Green Shado-Pan Riding Tiger
+						i(89305, {	-- Green Shado-Pan Riding Tiger (MOUNT!)
 							["cost"] = 15000000,	-- 1,500g
 						}),
-						i(89306, {	-- Reins of the Red Shado-Pan Riding Tiger
+						i(89306, {	-- Red Shado-Pan Riding Tiger (MOUNT!)
 							["cost"] = 25000000,	-- 2,500g
 						}),
 						i(90846),	-- Replica Shado-Pan Helmet

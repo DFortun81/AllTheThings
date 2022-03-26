@@ -265,7 +265,7 @@ root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 				ach(5823,  {	-- Veteran of the Alliance II
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(70909, {	-- Reins of the Vicious War Steed
+						i(70909, {	-- Vicious War Steed (MOUNT!)
 							["races"] = ALLIANCE_ONLY,
 						}),
 					},
@@ -273,7 +273,7 @@ root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 				ach(5328,  {	-- Veteran of the Alliance
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(70909, {	-- Reins of the Vicious War Steed
+						i(70909, {	-- Vicious War Steed (MOUNT!)
 							["races"] = ALLIANCE_ONLY,
 						}),
 						title(152, {	-- Veteran of the Alliance
@@ -292,7 +292,7 @@ root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 				ach(5824,  {	-- Veteran of the Horde II
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(70910, {	-- Horn of the Vicious War Wolf
+						i(70910, {	-- Vicious War Wolf (MOUNT!)
 							["races"] = HORDE_ONLY,
 						}),
 					},
@@ -300,7 +300,7 @@ root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 				ach(5325,  {	-- Veteran of the Horde
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(70910, {	-- Horn of the Vicious War Wolf
+						i(70910, {	-- Vicious War Wolf (MOUNT!)
 							["races"] = HORDE_ONLY,
 						}),
 						title(153, {	-- Veteran of the Horde

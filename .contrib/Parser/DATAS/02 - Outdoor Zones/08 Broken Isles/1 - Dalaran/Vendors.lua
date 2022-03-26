@@ -5438,7 +5438,7 @@ _.Zones =
 						i(141850, {	-- Recipe: Elderhorn Riding Harness
 							["description"] = "The vendor will only sell this recipe to those who have already completed the quest that rewards it. This is in case you deleted the recipe without learning it, or if you dropped Leatherworking after doing the quest and decided to relearn it later.",
 							["g"] = {
-								i(129962),	-- Elderhorn Riding Harness (MOUNT!)
+								i(129962),	-- Great Northern Elderhorn (MOUNT!)
 							},
 						}),
 						i(137916),	-- Recipe: Gravenscale Armbands (Rank 2)
@@ -6314,7 +6314,7 @@ _.Zones =
 					["description"] = "This vendor is not always present.",
 					["coord"] = { 43.2, 46.6, LEGION_DALARAN },
 					["g"] = {
-						i(137570, {	-- Blood Fang Cocoon (MOUNT!)
+						i(137570, {	-- Bloodfang Widow (MOUNT!)
 							["cost"] = 20000000000,	-- 2,000,000g
 						}),
 						i(136923, {	-- Celestial Calf Pet (PET!)

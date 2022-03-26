@@ -48,7 +48,7 @@ _.Zones =
 					["lvl"] = 100,
 					["sourceQuest"] = 40904,	-- Shadow of the Defiler
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(128422)),	-- Reins of the Grove Warden
+						un(REMOVED_FROM_GAME, i(128422)),	-- Grove Warden (MOUNT!)
 					},
 				}),
 				q(28289, {	-- Moonglade Calls

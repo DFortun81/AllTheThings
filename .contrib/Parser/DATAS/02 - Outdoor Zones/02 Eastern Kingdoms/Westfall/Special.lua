@@ -16,7 +16,7 @@ _.Zones =
 					["isWeekly"] = true,
 					["description"] = "For a walkthrough of how to obtain this mount. Go to Special Header under Outdoor Zones - Broken Isles - Dalaran.",
 					["g"] = {
-						i(147835),	-- Riddler's Mind Worm
+						i(147835),	-- Riddler's Mind Worm (MOUNT!)
 					},
 				}),
 			}),

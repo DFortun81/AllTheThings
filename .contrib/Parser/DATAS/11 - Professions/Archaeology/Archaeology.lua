@@ -788,7 +788,7 @@ profession(ARCHAEOLOGY, {
 			i(64387),	-- Vicious Ancient Fish
 		}),
 		filter(MOUNTS, {
-			i(60954),	-- Fossilized Raptor
+			i(60954),	-- Fossilized Raptor (MOUNT!)
 		}),
 		filter(TOYS, {
 			i(69776),	-- Ancient Amber (TOY!)
@@ -982,7 +982,7 @@ profession(ARCHAEOLOGY, {
 				["coord"] = { 45.8, 44.6, HIGHMOUNTAIN },
 				["sourceQuest"] = 41192,	-- The Right Path
 				["g"] = {
-					i(131734),	-- Spirit of Eche'ro
+					i(131734),	-- Spirit of Eche'ro (MOUNT!)
 					crit(13, {	-- Spirit of Eche'ro
 						["achievementID"] = 10603,	-- A Keen Eye
 					}),
@@ -1658,7 +1658,7 @@ profession(ARCHAEOLOGY, {
 		}),
 		filter(MOUNTS, {
 			sp(92148, {	-- Scepter of Azj'Aqir
-				i(64883),	-- Ultramarine Qiraji Battle Tank
+				i(64883),	-- Ultramarine Qiraji Battle Tank (MOUNT!)
 			}),
 		}),
 		filter(TOYS, {

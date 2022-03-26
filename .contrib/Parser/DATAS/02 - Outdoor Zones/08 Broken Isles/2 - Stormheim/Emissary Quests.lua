@@ -52,7 +52,7 @@ _.Zones =
 					["provider"] = { "n", 106904 },	-- Valdemar Stormseeker <Valarjar Emissary>
 					["groups"] = {
 						i(152106, {	-- Valarjar Strongbox
-							i(147805),	-- Valarjar Stormwing
+							i(147805),	-- Valarjar Stormwing (MOUNT!)
 						}),
 						un(REMOVED_FROM_GAME, i(146901, {	-- Valarjar Strongbox
 							["sym"] = {

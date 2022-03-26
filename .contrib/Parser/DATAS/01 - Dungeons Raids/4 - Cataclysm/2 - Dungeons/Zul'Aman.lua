@@ -183,7 +183,7 @@ _.Instances = { tier(CATA_TIER, {
 								["description"] = "This item is found in the prisoner's loot chest associated with the fourth animal boss you defeat within the time limit of the event.\n\nOnly one player can receive this within a given instance lockout.",
 								["groups"] = {
 									ach(5858),	-- Bear-ly Made It
-									i(69747),	-- Amani Battle Bear (mount)
+									i(69747),	-- Amani Battle Bear (MOUNT!)
 								},
 							}),
 						},

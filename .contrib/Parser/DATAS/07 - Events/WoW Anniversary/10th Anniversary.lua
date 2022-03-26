@@ -15,7 +15,7 @@ root("WorldEvents", n(TENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_GAME,
 		},
 		["g"] = {
 			ach(9550, {	-- Boldly, You Sought the Power of Ragnaros
-				i(115484, {	-- Core Hound Chain (MOUNT!)
+				i(115484, {	-- Core Hound (MOUNT!)
 				}),
 			}),
 			i(118574),	-- Hatespark the Tiny (PET!)

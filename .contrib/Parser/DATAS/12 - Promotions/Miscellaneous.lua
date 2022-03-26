@@ -35,7 +35,7 @@ root("Promotions", filter(MISC, {
 			["description"] = "Reward from the Azeroth Academy Mentor Recruitment Promotion (China Only)",
 			["timeline"] = { "added 5.4.0.17169" },
 			["groups"] = {
-				i(103630),	-- Lucky Riding Turtle
+				i(103630),	-- Riding Turtle (MOUNT!)
 				i(103629),	-- Lucky Satchel
 				i(103631),	-- Lucky Path of Cenarius
 			},
@@ -63,7 +63,7 @@ root("Promotions", filter(MISC, {
 			["description"] = "Reward from the Battle.net World Championship in Shanghai 2012 (China Only)",
 			["timeline"] = { "added 5.0.4.16004" },
 		}),
-		i(76755, {	-- Tyrael's Charger
+		i(76755, {	-- Tyrael's Charger (MOUNT!)
 			["description"] = "Reward from the Diablo III Annual Pass promotion. Additionally, it was available on the Taiwan store.",
 			["timeline"] = { "added 4.3.0.15005" },
 		}),
@@ -82,7 +82,7 @@ root("Promotions", filter(MISC, {
 		ach(9496, {	-- Warlord's Deathwheel
 			["timeline"] = { "added 6.0.2.18888" },
 		}),
-		i(116788, {	-- Warlord's Deathwheel
+		i(116788, {	-- Warlord's Deathwheel (MOUNT!)
 			["description"] = "Azeroth Choppers promotional mount. You had to have logged in on a Horde character between the 24th of July and the 30th of September 2014 in order for your account to receive this mount.",
 			["timeline"] = { "added 6.0.2.18888" },
 		}),

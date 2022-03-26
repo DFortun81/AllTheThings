@@ -252,13 +252,13 @@ _.Zones =
 						i(86308),	-- Pattern: Wildblood Gloves
 						i(86309),	-- Pattern: Wildblood Vest
 						i(89529),	-- Pendant of Endless Inquisition
-						i(87781, {	-- Reins of the Azure Riding Crane (MOUNT!)
+						i(87781, {	-- Azure Riding Crane (MOUNT!)
 							["cost"] = 5000000,	-- 500g
 						}),
-						i(87782, {	-- Reins of the Golden Riding Crane (MOUNT!)
+						i(87782, {	-- Golden Riding Crane (MOUNT!)
 							["cost"] = 25000000,	-- 2,500g
 						}),
-						i(87783, {	-- Reins of the Regal Riding Crane (MOUNT!)
+						i(87783, {	-- Regal Riding Crane (MOUNT!)
 							["cost"] = 15000000,	-- 1,500g
 						}),
 						i(89069),	-- Ring of the Golden Stair
@@ -286,10 +286,10 @@ _.Zones =
 					["coord"] = { 82.2, 34.0, VALE_OF_ETERNAL_BLOSSOMS },
 					["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME},{
 						i(90045, {	-- Ancestral Phoenix Egg
-							i(89154),	-- Reins of the Crimson Pandaren Phoenix
-							i(90710),	-- Reins of the Ashen Pandaren Phoenix
-							i(90711),	-- Reins of the Emerald Pandaren Phoenix
-							i(90712),	-- Reins of the Violet Pandaren Phoenix
+							i(89154),	-- Crimson Pandaren Phoenix (MOUNT!)
+							i(90710),	-- Ashen Pandaren Phoenix (MOUNT!)
+							i(90711),	-- Emerald Pandaren Phoenix (MOUNT!)
+							i(90712),	-- Violet Pandaren Phoenix (MOUNT!)
 						}),
 					}),
 				}),
@@ -447,7 +447,7 @@ _.Zones =
 						i(88884),	-- Quillpaw Family Bracers
 						i(88748),	-- Ravenmane's Gloves
 						i(89667),	-- Refurbished Zandalari Vestment
-						i(89304, {	-- Reins of the Thundering August Cloud Serpent (MOUNT!)
+						i(89304, {	-- Thundering August Cloud Serpent (MOUNT!)
 							["cost"] = 100000000,	-- 10,000g
 						}),
 						i(89535),	-- Ribcracker's Cloak
@@ -503,7 +503,7 @@ _.Zones =
 						i(88884),	-- Quillpaw Family Bracers
 						i(88748),	-- Ravenmane's Gloves
 						i(89667),	-- Refurbished Zandalari Vestment
-						i(89304, {	-- Reins of the Thundering August Cloud Serpent (MOUNT!)
+						i(89304, {	-- Thundering August Cloud Serpent (MOUNT!)
 							["cost"] = 100000000,	-- 10,000g
 						}),
 						i(89535),	-- Ribcracker's Cloak
@@ -527,7 +527,7 @@ _.Zones =
 				n(64605, {	-- Tan Shin Tiao <Lorewalkers Quartermaster>
 					["coord"] = { 82.2, 29.4, VALE_OF_ETERNAL_BLOSSOMS },
 					["g"] = {
-						i(89363, {	-- Disc of the Red Flying Cloud (MOUNT!)
+						i(89363, {	-- Red Flying Cloud (MOUNT!)
 							["cost"] = 6000000,	-- 600g
 						}),
 						i(93230),	-- Grand Commendation of the Lorewalkers

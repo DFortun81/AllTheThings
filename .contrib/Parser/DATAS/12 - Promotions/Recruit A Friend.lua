@@ -20,21 +20,21 @@ root("Promotions", {
 		ach(8213, {	-- Friends In Places Higher Yet
 			["timeline"] = { "added 5.0.1.15544" },
 		}),
-		i(83086, {	-- Heart of the Nightwing
+		i(83086, {	-- Heart of the Nightwing (MOUNT!)
 			["timeline"] = { "added 5.0.1.15544" },
 		}),
 
 		ach(8794, {	-- Friends In Places Even Higher Than That
 			["timeline"] = { "added 5.4.1.17481" },
 		}),
-		i(106246, {	-- Emerald Hippogryph
+		i(106246, {	-- Emerald Hippogryph (MOUNT!)
 			["timeline"] = { "added 5.4.1.17481" },
 		}),
 
 		ach(9925, {	-- Friends In Places Yet Even Higher Than That
 			["timeline"] = { "added 6.0.1.18711" },
 		}),
-		i(118515, {	-- Cindermane Charger
+		i(118515, {	-- Cindermane Charger (MOUNT!)
 			["timeline"] = { "added 6.0.1.18711" },
 		}),
 

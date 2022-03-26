@@ -1098,8 +1098,8 @@ _.Zones =
 				n(122463, {	-- Plen <Unusual and Remarkable Wares>
 					["coord"] = { 47.7, 91.6, DAZARALOR },
 					["g"] = {
-						i(63044),	-- Reins of the Brown Riding Camel
-						i(63045),	-- Reins of the Tan Riding Camel
+						i(63044),	-- Brown Riding Camel (MOUNT!)
+						i(63045),	-- Tan Riding Camel (MOUNT!)
 					},
 				}),
 				n(148924, {	-- Provisioner Mukra

@@ -184,7 +184,7 @@ root("ExpansionFeatures", {
 								["sourceQuest"] = 44057,	-- A "Noble" Event
 								["coord"] = { 17.4, 31.4, SURAMAR },
 								["g"] = {
-									i(137573),	-- Reins of the Llothien Prowler
+									i(137573),	-- Llothien Prowler (MOUNT!)
 								},
 							}),
 							--[[q(45312, {	-- You Beat the Ball of Meat

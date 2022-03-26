@@ -227,7 +227,7 @@ root("Holidays", d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
 				e(198, {	-- Ragnaros
 					["creatureID"] = 52409,
 					["g"] = {
-						i(69224),	-- Smoldering Egg of Millagazor (MOUNT!)
+						i(69224),	-- Pureblood Fire Hawk (MOUNT!)
 						i(171804),	-- Balespider's Hood
 						i(171794),	-- Cowl of the Cleansing Flame
 						i(171770),	-- Dark Phoenix Helmet
@@ -488,7 +488,7 @@ root("Holidays", d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
 				i(133206),	-- Key to the Endless Chamber
 			})),
 			cr(43214, e(111, {	-- Slabhide
-				i(63043),	-- Reins of the Vitreous Stone Drake (MOUNT!)
+				i(63043),	-- Vitreous Stone Drake (MOUNT!)
 				i(133213),	-- Quicksilver Blade
 				i(133230),	-- Wand of Dark Worship
 				i(133365),	-- Crystalpowder Amice
@@ -531,7 +531,7 @@ root("Holidays", d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
 				i(133252),	-- Rainsong
 			})),
 			cr(43873, e(115, {	-- Altairus
-				i(63040),	-- Reins of the Drake of the North Wind (MOUNT!)
+				i(63040),	-- Drake of the North Wind (MOUNT!)
 				i(133371),	-- Thundercleaver Axe
 				i(133240),	-- Axe of the Eclipse
 				i(133251),	-- Thundercall

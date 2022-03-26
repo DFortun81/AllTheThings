@@ -29,15 +29,3 @@ root("PVP", pvp(n(-240, {	-- Rated
 	i(165717),	-- Steel Strong Box, 2v2/3v3/RBG sometimes on Lose, contains only BFA Mats - Ally
 	i(165718),	-- Steel Strong Box, 2v2/3v3/RBG sometimes on Lose, contains only BFA Mats - Horde
 })));
-
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-240, {	-- Rated
-		n(ACHIEVEMENTS, {
-			ach(15504),	-- Maldraxxus Coliseum matches
-			ach(15505),	-- Maldraxxus Coliseum victories
-		}),
-		filter(MOUNTS, {
-			i(166417)	-- Reins of the Onyx War Hyena
-		}),
-	}),
-}));

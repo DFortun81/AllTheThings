@@ -299,7 +299,7 @@ _.ExpansionFeatures =
 									["cost"] = { { "i", 117397, 25 }, },	-- 25x Nat's Lucky Coin
 								}),
 								i(86596),	-- Nat's Fishing Chair (TOY!)
-								i(87791, {	-- Reins of the Crimson Water Strider
+								i(87791, {	-- Crimson Water Strider (MOUNT!)
 									["cost"] = { { "i", 117397, 100 }, },	-- 100x Nat's Lucky Coin
 								}),
 								i(114919, {	-- Sea Calf (PET!)

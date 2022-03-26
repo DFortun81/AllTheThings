@@ -1024,7 +1024,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					["coord"] = { 49.3, 82.5, ALTERAC_VALLEY },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						mark(15, i(19029)),	-- Horn of the Frostwolf Howler Mount
+						mark(15, i(19029)),	-- Frostwolf Howler (MOUNT!)
 						mark(10, i(19031)),	-- Frostwolf Battle Tabard
 						mark(1, i(19046)),	-- Frostwolf Battle Standard
 						mark(3, i(19103)),	-- Frostbite

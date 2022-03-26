@@ -92,19 +92,19 @@ _.Factions =
 			ach(4988, {	-- Guild Glory of the Cataclysm Raider
 				["collectible"] = false,
 				["g"] = {
-					i(63125),	-- Reins of the Dark Phoenix - Exalted
+					i(63125),	-- Dark Phoenix (MOUNT!) - Exalted
 				},
 			}),
 			ach(9669, {	-- Guild Glory of the Draenor Raider
 				["collectible"] = false,
 				["g"] = {
-					i(116666),	-- Blacksteel Battleboar - Exalted
+					i(116666),	-- Blacksteel Battleboar (MOUNT!) - Exalted
 				},
 			}),
 			ach(6682, {	-- Guild Glory of the Pandaria Raider
 				["collectible"] = false,
 				["g"] = {
-					i(85666),	-- Reins of the Thundering Jade Cloud Serpent - Exalted
+					i(85666),	-- Thundering Jade Cloud Serpent (MOUNT!) - Exalted
 				},
 			}),
 			ach(6681, {	-- Guild Pandaren Dungeon Hero
@@ -227,10 +227,10 @@ _.Factions =
 					i(122264),	-- Burnished Legplates of Might - Honored
 				},
 			}),
-			i(62298, {	-- Reins of the Golden King
+			i(62298, {	-- Golden King (MOUNT!)
 				["races"] = ALLIANCE_ONLY,
 			}),
-			i(67107, {	-- Reins of the Kor'kron Annihilator
+			i(67107, {	-- Kor'kron Annihilator (MOUNT!)
 				["races"] = HORDE_ONLY,
 			}),
 			i(69209),	-- Illustrious Guild Tabard

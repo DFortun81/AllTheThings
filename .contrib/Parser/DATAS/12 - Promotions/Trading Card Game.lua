@@ -79,7 +79,7 @@ root("Promotions", n(TCG_HEADER, bubbleDown({
 		}),
 	}),
 	filter(MOUNTS, {
-		i(68825, {	-- Amani Dragonhawk
+		i(68825, {	-- Amani Dragonhawk (MOUNT!)
 			["timeline"] = { "added 4.1.0.13682" },
 		}),
 		i(38576, {	-- Big Battle Bear (MOUNT!) BOP
@@ -91,16 +91,16 @@ root("Promotions", n(TCG_HEADER, bubbleDown({
 		i(54069, {	-- Blazing Hippogryph (MOUNT!)
 			["timeline"] = { "added 3.3.3.11723", "removed 4.3.0.15005" },
 		}),
-		i(74269, {	-- Blazing Hippogryph
+		i(74269, {	-- Blazing Hippogryph (MOUNT!)
 			["timeline"] = { "added 4.3.0.15005" },
 		}),
-		i(72582, {	-- Corrupted Hippogryph
+		i(72582, {	-- Corrupted Hippogryph (MOUNT!)
 			["timeline"] = { "added 4.3.0.15005" },
 		}),
-		i(79771, {	-- Feldrake
+		i(79771, {	-- Feldrake (MOUNT!)
 			["timeline"] = { "added 4.3.2.15211" },
 		}),
-		i(93671, {	-- Ghastly Charger's Skull
+		i(93671, {	-- Ghastly Charger (MOUNT!)
 			["timeline"] = { "added 5.2.0.16408" },
 		}),
 		i(46778, {	-- Magic Rooster Egg (MOUNT!)
@@ -109,7 +109,7 @@ root("Promotions", n(TCG_HEADER, bubbleDown({
 		i(49290, {	-- Magic Rooster Egg (MOUNT!)
 			["timeline"] = { "added 3.2.0.10147" },
 		}),
-		i(68008, {	-- Mottled Drake
+		i(68008, {	-- Mottled Drake (MOUNT!)
 			["timeline"] = { "added 4.0.3.13287" },
 		}),
 		i(33224, {	-- Spectral Tiger (MOUNT!) BOP
@@ -127,13 +127,13 @@ root("Promotions", n(TCG_HEADER, bubbleDown({
 		i(23720, {	-- Riding Turtle (MOUNT!)
 			["timeline"] = { "added 2.0.0.5462" },
 		}),
-		i(69228, {	-- Savage Raptor
+		i(69228, {	-- Savage Raptor (MOUNT!)
 			["timeline"] = { "added 4.1.0.13682" },
 		}),
-		i(71718, {	-- Swift Shorestrider
+		i(71718, {	-- Swift Shorestrider (MOUNT!)
 			["timeline"] = { "added 4.3.0.15005" },
 		}),
-		i(72575, {	-- White Riding Camel
+		i(72575, {	-- White Riding Camel (MOUNT!)
 			["timeline"] = { "added 4.3.0.15005" },
 		}),
 		i(54068, {	-- Wooly White Rhino (MOUNT!)

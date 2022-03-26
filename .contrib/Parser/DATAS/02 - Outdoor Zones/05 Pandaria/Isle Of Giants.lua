@@ -98,9 +98,9 @@ _.Zones =
 						["description"] = "This egg can be obtained from the Treasures/Spoils of the Thunder King or zone wide on the Isle of Giants.",
 						["g"] = {
 							i(94296, {  -- Cracked Primal Egg
-								i(94292),	-- Reins of the Black Primal Raptor
-								i(94293),	-- Reins of the Green Primal Raptor
-								i(94291),	-- Reins of the Red Primal Raptor
+								i(94292),	-- Black Primal Raptor (MOUNT!)
+								i(94293),	-- Green Primal Raptor  (MOUNT!)
+								i(94291),	-- Red Primal Raptor (MOUNT!)
 							}),
 						},
 						["crs"] = {

@@ -434,7 +434,7 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 98099 },	-- Lilian Voss
 							["sourceQuest"] = 46103,	-- Dread Infiltrators
 							["g"] = {
-								i(143493, {		-- Shadowblade's Murderous Omen
+								i(143493, {		-- Shadowblade's Murderous Omen (MOUNT!)
 									["classes"] = { ROGUE },
 								}),
 							},
@@ -445,7 +445,7 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 98099 },	-- Lilian Voss
 							["sourceQuest"] = 46103,	-- Dread Infiltrators
 							["g"] = {
-								i(143493, {		-- Shadowblade's Murderous Omen
+								i(143493, {		-- Shadowblade's Murderous Omen (MOUNT!)
 									["classes"] = { ROGUE },
 								}),
 							},
@@ -1015,13 +1015,13 @@ _.ExpansionFeatures =
 							["coord"] = { 42.5, 82.2, 626 },
 							["sourceQuest"] = 46178,	-- Hiding In Plain Sight
 							["g"] = {
-								i(143490, {	-- Bloody Reins of Dark Portent (MOUNT!)
+								i(143490, {	-- Shadowblade's Crimson Omen (MOUNT!)
 									["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
 								}),
-								i(143491, {	-- Mephitic Reins of Dark Portent (MOUNT!)
+								i(143491, {	-- Shadowblade's Baneful Omen (MOUNT!)
 									["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
 								}),
-								i(143492, {	-- Midnight Black Reins of Dark Portent (MOUNT!)
+								i(143492, {	-- Shadowblade's Lethal Omen (MOUNT!)
 									["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
 								}),
 							},

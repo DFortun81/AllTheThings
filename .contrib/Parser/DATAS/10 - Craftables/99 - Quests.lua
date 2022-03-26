@@ -12,8 +12,8 @@ _.Craftables =
                 ["isDaily"] = true,
                 ["g"] = {
                     i(86623, {	-- Blingtron 4000 Gift Package
-                        i(87250),	-- Depleted-Kyparium Rocket Mount
-                        i(87251),	-- Geosynchronous World Spinner Mount
+                        i(87250),	-- Depleted-Kyparium Rocket (MOUNT!)
+                        i(87251),	-- Geosynchronous World Spinner (MOUNT!)
                         i(41508),	-- Mechano-Hog (MOUNT!)
                         i(44413),	-- Mekgineer's Chopper (MOUNT!)
                         i(103670),	-- Lil' Bling Pet
@@ -34,8 +34,8 @@ _.Craftables =
                 ["isDaily"] = true,
                 ["g"] = {
                     i(113258, {	-- Blingtron 5000 Gift Package
-                        i(87250),	-- Depleted-Kyparium Rocket Mount
-                        i(87251),	-- Geosynchronous World Spinner Mount
+                        i(87250),	-- Depleted-Kyparium Rocket (MOUNT!)
+                        i(87251),	-- Geosynchronous World Spinner (MOUNT!)
                         i(41508),	-- Mechano-Hog (MOUNT!)
                         i(44413),	-- Mekgineer's Chopper (MOUNT!)
                         i(103670),	-- Lil'Bling Pet
@@ -59,8 +59,8 @@ _.Craftables =
                 ["isDaily"] = true,
                 ["g"] = {
                     i(132892, {	-- Blingtron 6000 Gift Package
-                        i(87250),	-- Depleted-Kyparium Rocket Mount
-                        i(87251),	-- Geosynchronous World Spinner Mount
+                        i(87250),	-- Depleted-Kyparium Rocket (MOUNT!)
+                        i(87251),	-- Geosynchronous World Spinner (MOUNT!)
                         i(41508),	-- Mechano-Hog (MOUNT!)
                         i(44413),	-- Mekgineer's Chopper (MOUNT!)
                         i(136911),	-- Knockoff Blingtron
@@ -88,8 +88,8 @@ _.Craftables =
                 ["isDaily"] = true,
                 ["g"] = {
                     i(168740, {	-- Blingtron 7000 Gift Package
-                        i(87250),	-- Depleted-Kyparium Rocket Mount
-                        i(87251),	-- Geosynchronous World Spinner Mount
+                        i(87250),	-- Depleted-Kyparium Rocket (MOUNT!)
+                        i(87251),	-- Geosynchronous World Spinner (MOUNT!)
                         i(112057),	-- Lifelike Mechanical Frostboar Pet
                         i(136911),	-- Knockoff Blingtron -- https://www.wowhead.com/item=168740/blingtron-7000-gift-package#comments:id=3210510
                         i(103670),	-- Lil' Bling Pet

@@ -1847,7 +1847,7 @@ _.Zones =
 							["coord"] = { 54.8, 16.8, STORMSHIELD },
 							["g"] = {
 								i(114126),	-- Disposable Pocket Flying Machine
-								i(116776, {	-- Pale Thorngrazer
+								i(116776, {	-- Pale Thorngrazer (MOUNT!)
 									["cost"] = {
 										{ "g", 50000000 },		-- 5,000g
 										{ "i", 137642, 100 },	-- 100x Mark of Honor
@@ -1913,7 +1913,7 @@ _.Zones =
 								i(116939, {	-- Flawless Windcrystal Cord
 									["cost"] = 100000000,	-- 10,000g
 								}),
-								i(116768, {	-- Mosshide Riverwallow
+								i(116768, {	-- Mosshide Riverwallow (MOUNT!)
 									["cost"] = {
 										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
 										{ "g", 500000000 },	-- 50,000g
@@ -1981,7 +1981,7 @@ _.Zones =
 								i(116931, {	-- Flawless Windcrystal Leggings
 									["cost"] = 100000000,	-- 10,000g
 								}),
-								i(116768, {	-- Mosshide Riverwallow
+								i(116768, {	-- Mosshide Riverwallow (MOUNT!)
 									["cost"] = {
 										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
 										{ "g", 500000000 },	-- 50,000g
@@ -2049,7 +2049,7 @@ _.Zones =
 								i(115396, {	-- Flawless Windcrystal Hood
 									["cost"] = 100000000,	-- 10,000g
 								}),
-								i(116768, {	-- Mosshide Riverwallow
+								i(116768, {	-- Mosshide Riverwallow (MOUNT!)
 									["cost"] = {
 										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
 										{ "g", 500000000 },	-- 50,000g
@@ -2117,7 +2117,7 @@ _.Zones =
 								i(115400, {	-- Flawless Windcrystal Bracers
 									["cost"] = 100000000,	-- 10,000g
 								}),
-								i(116768, {	-- Mosshide Riverwallow
+								i(116768, {	-- Mosshide Riverwallow (MOUNT!)
 									["cost"] = {
 										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
 										{ "g", 500000000 },	-- 50,000g
@@ -2185,7 +2185,7 @@ _.Zones =
 								i(116947, {	-- Flawless Windcrystal Wraps
 									["cost"] = 100000000,	-- 10,000g
 								}),
-								i(116768, {	-- Mosshide Riverwallow
+								i(116768, {	-- Mosshide Riverwallow (MOUNT!)
 									["cost"] = {
 										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
 										{ "g", 500000000 },	-- 50,000g
@@ -2262,7 +2262,7 @@ _.Zones =
 								i(116951, {	-- Flawless Shard-Covered Dreadcloak
 									["cost"] = 100000000,	-- 10,000g
 								}),
-								i(116768, {	-- Mosshide Riverwallow
+								i(116768, {	-- Mosshide Riverwallow (MOUNT!)
 									["cost"] = {
 										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
 										{ "g", 500000000 },	-- 50,000g
@@ -2346,7 +2346,7 @@ _.Zones =
 							["coord"] = { 54.8, 18.8, STORMSHIELD },
 							["itemID"] = 137642,	-- Mark of Honor
 							["g"] = {
-								i(116776, {	-- Pale Thorngrazer
+								i(116776, {	-- Pale Thorngrazer (MOUNT!)
 									["cost"] = {
 										{ "i", 137642, 100 },	-- 100x Mark of Honor
 										{ "g", 50000000 },	-- 5,000g

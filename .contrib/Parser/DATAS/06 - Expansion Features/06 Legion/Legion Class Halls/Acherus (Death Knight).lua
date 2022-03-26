@@ -500,7 +500,7 @@ _.ExpansionFeatures =
 							["sourceQuest"] = 46812, -- Draconic Secrets
 							["maps"] = { 871 },	-- The Lost Glacier (scenario map)
 							["g"] = {
-								i(142231, {		-- Decaying Reins of the Vilebrood Vanquisher
+								i(142231, {	-- Deathlord's Vilebrood Vanquisher (MOUNT!)
 									["classes"] = { DEATHKNIGHT },
 								}),
 							},

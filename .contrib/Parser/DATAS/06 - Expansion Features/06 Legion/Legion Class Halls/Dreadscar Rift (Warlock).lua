@@ -617,7 +617,7 @@ _.ExpansionFeatures =
 							["coord"] = { 35.6, 38.4, 717 },
 							["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
 							["g"] = {
-								mount(232412, {	-- Netherlord's Chaotic Wrathsteed
+								mount(232412, {	-- Netherlord's Chaotic Wrathsteed (MOUNT!)
 									["classes"] = { WARLOCK },
 								}),
 							},
@@ -697,7 +697,7 @@ _.ExpansionFeatures =
 							["coord"] = { 37.7, 31.0, 717 },
 							["classes"] = { WARLOCK },
 							["g"] = {
-								i(143637, {	-- Hellblazing Reins of the Brimstone Wrathsteed (MOUNT!)
+								i(143637, {	-- Netherlord's Brimstone Wrathsteed (MOUNT!)
 									["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
 								}),
 							},

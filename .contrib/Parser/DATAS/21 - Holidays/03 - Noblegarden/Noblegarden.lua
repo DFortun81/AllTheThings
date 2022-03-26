@@ -3,7 +3,7 @@
 --------------------------------------------
 local NOBLEGARDEN_VENDOR_GROUPS = {
 	-- Mounts
-	i(72145, {	-- Swift Springstrider
+	i(72145, {	-- Swift Springstrider (MOUNT!)
 		["timeline"] = { "added 4.3.0.15005" },
 		["cost"] = { { "i", 44791, 500 } },	-- 500x Noblegarden Chocolate
 	}),
@@ -134,7 +134,7 @@ root("Holidays", applyholiday(NOBLEGARDEN, {
 				i(44800, {	-- Spring Robes
 					["timeline"] = { "added 3.1.0.9733" },
 				}),
-				i(72145, {	-- Swift Springstrider
+				i(72145, {	-- Swift Springstrider (MOUNT!)
 					["timeline"] = { "added 4.3.0.15005" },
 				}),
 

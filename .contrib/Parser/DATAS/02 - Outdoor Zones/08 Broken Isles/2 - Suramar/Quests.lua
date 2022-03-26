@@ -512,7 +512,7 @@ _.Zones =
 					["provider"] = { "n", 115710 },	-- Chief Telemancer Oculeth
 					["sourceQuest"] = 45420,	-- The Nighthold: The Eye of Aman'Thul
 					["g"] = {
-						i(142436),	-- Arcanist's Manasaber
+						i(142436),	-- Arcanist's Manasaber (MOUNT!)
 					},
 				}),
 				q(40321, {	-- Feathersong's Redemption

@@ -96,7 +96,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(8),		-- Heroic: Upper Blackrock Spire
 		}),
 		ach(11987, {	-- Glory of the Argus Raider
-			i(152815),		-- Antoran Gloomhound
+			i(152815),		-- Antoran Gloomhound (MOUNT!)
 			crit(1),		-- Hard to Kill
 			crit(2),		-- Together We Stand
 			crit(3),		-- Worm-monger
@@ -110,7 +110,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(11),		-- Stardust Crusaders
 		}),
 		ach(4845, {		-- Glory of the Cataclysm Hero
-			i(62900),		-- Reins of the Volcanic Stone Drake
+			i(62900),		-- Volcanic Stone Drake (MOUNT!)
 			crit(1),		-- Cataclysm Dungeon Hero
 			crit(2),		-- Crushing Bones and Cracking Skulls
 			crit(3),		-- Arrested Development
@@ -141,7 +141,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(28),		-- Don't Need to Break Eggs to Make an Omelet
 		}),
 		ach(4853, {		-- Glory of the Cataclysm Raider
-			i(62901),		-- Reins of the Drake of the East Wind
+			i(62901),		-- Drake of the East Wind (MOUNT!)
 			crit(1),		-- Heroic: Magmaw
 			crit(2),		-- Heroic: Golem Council
 			crit(3),		-- Heroic: Maloriak
@@ -196,7 +196,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			ach(15133),	-- This World is a Prism
 		}),
 		ach(9396, {		-- Glory of the Draenor Hero
-			i(116670),		-- Frostplains Battleboar
+			i(116670),		-- Frostplains Battleboar (MOUNT!)
 			crit(1),		-- Draenor Dungeon Hero
 			crit(2),		-- A Gift of Earth and Fire
 			crit(3),		-- Come With Me If You Want to Live
@@ -222,7 +222,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(23),		-- Dragonmaw? More Like Dragonfall!
 		}),
 		ach(8985, {		-- Glory of the Draenor Raider
-			i(116383),		-- Gorestrider Gronnling
+			i(116383),		-- Gorestrider Gronnling (MOUNT!)
 			crit(1),		-- Flame On!
 			crit(2),		-- Hurry Up, Maggot!
 			crit(3),		-- More Like Wrecked-us
@@ -242,7 +242,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(17),		-- Ashes, Ashes...
 		}),
 		ach(6169, {		-- Glory of the Dragon Soul Raider
-			i(77068),		-- Reins of the Twilight Harbinger
+			i(77068),		-- Twilight Harbinger (MOUNT!)
 			crit(1),		-- Heroic: Morchok
 			crit(2),		-- Heroic: Warlord Zon'ozz
 			crit(3),		-- Heroic: Yor'sahj the Unsleeping
@@ -258,7 +258,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(13),		-- Chromatic Champion
 		}),
 		ach(5828, {		-- Glory of the Firelands Raider
-			i(69230),		-- Corrupted Egg of Millagazor
+			i(69230),		-- Corrupted Fire Hawk (MOUNT!)
 			crit(1),		-- Heroic: Beth'tilac
 			crit(2),		-- Heroic: Lord Rhyolith
 			crit(3),		-- Heroic: Shannox
@@ -273,7 +273,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(12),		-- Only the Penitent...
 		}),
 		ach(10149, {	-- Glory of the Hellfire Raider
-			i(127140),		-- Infernal Direwolf
+			i(127140),		-- Infernal Direwolf (MOUNT!)
 			crit(1),		-- Nearly Indestructible
 			crit(2),		-- Turning the Tide
 			crit(3),		-- Waves Came Crashing Down All Around
@@ -368,7 +368,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(17),		-- Neck-Deep in Vile (25 player)
 		}),
 		ach(11163, {	-- Glory of the Legion Hero
-			i(141217),		-- Reins of the Leyfeather Hippogryph
+			i(141217),		-- Leyfeather Hippogryph (MOUNT!)
 			crit(1),		-- But You Say He's Just a Friend
 			crit(2),		-- Stay Salty
 			crit(3),		-- Ready for Raiding V
@@ -397,7 +397,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(26),		-- Dropping Some Eaves
 		}),
 		ach(11180, {	-- Glory of the Legion Raider
-			i(141216),		-- Defiled Reins
+			i(141216),		-- Grove Defiler (MOUNT!)
 			crit(1),		-- Buggy Fight
 			crit(2),		-- Webbing Crashers
 			crit(3),		-- Scare Bear
@@ -445,7 +445,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(12),	-- It's Not a Cult
 		}),
 		ach(8454, {		-- Glory of the Orgrimmar Raider
-			i(104208),		-- Reins of Galakras
+			i(104208),		-- Spawn of Galakras (MOUNT!)
 			crit(1),		-- No More Tears
 			crit(2),		-- Go Long
 			crit(3),		-- None Shall Pass
@@ -473,7 +473,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(8),	-- The Best of Us
 		}),
 		ach(6927, {		-- Glory of the Pandaria Hero
-			i(87769),		-- Reins of the Crimson Cloud Serpent
+			i(87769),		-- Crimson Cloud Serpent (MOUNT!)
 			crit(1),		-- Pandaria Dungeon Hero
 			crit(2),		-- Hydrophobia
 			crit(3),		-- Cleaning Up
@@ -504,7 +504,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(28),		-- Polyformic Acid Science
 		}),
 		ach(6932, {		-- Glory of the Pandaria Raider
-			i(87773),		-- Reins of the Heavenly Crimson Cloud Serpent
+			i(87773),		-- Heavenly Crimson Cloud Serpent (MOUNT!)
 			crit(1),		-- Must Love Dogs
 			crit(2),		-- Anything You Can Do, I Can Do Better...
 			crit(3),		-- Sorry, Were You Looking for This?
@@ -615,7 +615,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(24),		-- Kaal-ed Shot
 		}),
 		ach(8124, {		-- Glory of the Thundering Raider
-			i(93662),		-- Reins of the Armored Skyscreamer
+			i(93662),		-- Armored Skyscreamer (MOUNT!)
 			crit(1),		-- Heroic: Jin'rokh the Breaker
 			crit(2),		-- Heroic: Horridon
 			crit(3),		-- Heroic: Council of Elders

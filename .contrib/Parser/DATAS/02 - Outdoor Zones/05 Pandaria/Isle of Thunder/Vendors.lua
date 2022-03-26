@@ -31,7 +31,7 @@ _.Zones =
 						i(95527),	-- Pain-Binder Girdle
 						i(97187),	-- Refurbished Band of Jin
 						i(97190),	-- Refurbished Seal of Jin
-						i(95564, {	-- Reins of the Golden Primal Direhorn (MOUNT!)
+						i(95564, {	-- Golden Primal Direhorn (MOUNT!)
 							["cost"] = 30000000,	-- 3,000g
 						}),
 						i(97188),	-- Restored Hexxer's Signet
@@ -1232,7 +1232,7 @@ _.Zones =
 						i(95518),	-- Pain-Binder Girdle
 						i(97192),	-- Refurbished Band of Jin
 						i(97195),	-- Refurbished Seal of Jin
-						i(95565, {	-- Reins of the Crimson Primal Direhorn (MOUNT!)
+						i(95565, {	-- Crimson Primal Direhorn (MOUNT!)
 							["cost"] = 30000000,	-- 3,000g
 						}),
 						i(97193),	-- Restored Hexxer's Signet

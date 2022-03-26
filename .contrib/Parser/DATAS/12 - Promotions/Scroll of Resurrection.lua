@@ -367,8 +367,8 @@ root("Promotions", n(-573, {	-- Scroll of Resurrection
 		i(77956, bubbleDown({ ["timeline"] = { "added 4.3.0.15005", "removed 5.4.7" } }, {	-- Spectral Mount Crate
 			["description"] = "This crate was given to players whose friends returned to the game by means of the Scroll of Resurrection.",
 			["groups"] = {
-				a(i(76889)),	-- Spectral Gryphon
-				h(i(76902)),	-- Spectral Wind Rider
+				a(i(76889)),	-- Spectral Gryphon (MOUNT!)
+				h(i(76902)),	-- Spectral Wind Rider (MOUNT!)
 			},
 		})),
 	},

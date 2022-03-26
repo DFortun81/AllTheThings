@@ -12,7 +12,7 @@ _.Instances = { tier(WOD_TIER, {
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(10149, {	-- Glory of the Hellfire Raider
-					i(127140),	-- Infernal Direwolf
+					i(127140),	-- Infernal Direwolf (MOUNT!)
 					ach(10026, {	-- Nearly Indestructible
 						["crs"] = { 95068 },	-- Hellfire Assault
 					}),

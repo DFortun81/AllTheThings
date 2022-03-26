@@ -490,22 +490,22 @@ root("Zones", {
 						i(152618, {	-- Recipe: Astral Healing Potion (Rank 3)
 							["cost"] = 30000000,	-- 3,0000g
 						}),
-						i(152794, {	-- Reins of the Amethyst Ruinstrider Mount
+						i(152794, {	-- Amethyst Ruinstrider (MOUNT!)
 							["cost"] = 100000000,	-- 10,000g
 						}),
-						i(152795, {	-- Reins of the Beryl Ruinstrider Mount
+						i(152795, {	-- Beryl Ruinstrider (MOUNT!)
 							["cost"] = 100000000,	-- 10,000g
 						}),
-						i(152797, {	-- Reins of the Cerulean Ruinstrider Mount
+						i(152797, {	-- Cerulean Ruinstrider (MOUNT!)
 							["cost"] = 100000000,	-- 10,000g
 						}),
-						i(152793, {	-- Reins of the Russet Ruinstrider Mount
+						i(152793, {	-- Russet Ruinstrider (MOUNT!)
 							["cost"] = 100000000,	-- 10,000g
 						}),
-						i(152791, {	-- Reins of the Sable Ruinstrider Mount
+						i(152791, {	-- Sable Ruinstrider (MOUNT!)
 							["cost"] = 100000000,	-- 10,000g
 						}),
-						i(152796, {	-- Reins of the Umber Ruinstrider Mount
+						i(152796, {	-- Umber Ruinstrider (MOUNT!)
 							["cost"] = 100000000,	-- 10,000g
 						}),
 						i(152725),	-- Technique: Mass Mill Astral Glory

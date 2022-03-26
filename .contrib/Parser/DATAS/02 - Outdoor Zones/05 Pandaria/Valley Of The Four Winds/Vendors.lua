@@ -1850,13 +1850,13 @@ _.Zones =
 						i(74658, {	-- Recipe: Spicy Vegetable Chips
 							["cost"] = 8500, -- 85s
 						}),
-						i(89391, {	-- Reins of the Black Riding Goat (MOUNT!)
+						i(89391, {	-- Black Riding Goat (MOUNT!)
 							["cost"] = 12750000,	-- 1,275g
 						}),
-						i(89362, {	-- Reins of the Brown Riding Goat (MOUNT!)
+						i(89362, {	-- Brown Riding Goat (MOUNT!)
 							["cost"] = 4250000, -- 425g
 						}),
-						i(89390, {	-- Reins of the White Riding Goat (MOUNT!)
+						i(89390, {	-- White Riding Goat (MOUNT!)
 							["cost"] = 27625000,	-- 2,762g 50s
 						}),
 						i(90893),	-- Straw Hat - Cloth

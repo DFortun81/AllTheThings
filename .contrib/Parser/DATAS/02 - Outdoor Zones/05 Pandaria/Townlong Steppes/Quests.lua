@@ -570,7 +570,7 @@ _.Zones =
 					["sourceQuests"] = { 31266 },	-- Mogu Incursions
 					["minReputation"] = { 1270, EXALTED },
 					["g"] = {
-						i(87768),	-- Reins of the Onyx Cloud Serpent
+						i(87768),	-- Onyx Cloud Serpent (MOUNT!)
 					},
 				}),
 				q(30971, {	-- Taking Stock

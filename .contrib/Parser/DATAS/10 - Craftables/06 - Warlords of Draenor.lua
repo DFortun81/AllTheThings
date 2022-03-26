@@ -247,7 +247,7 @@ _.Craftables =
 				WOD_CRAFTED_ITEM(116191, 128014),	-- Wayfaring Tunic + Burnished Essence
 			}),
 			filter(MOUNTS, {
-				i(108883),	-- Dustmane Direwolf
+				i(108883),	-- Dustmane Direwolf (MOUNT!)
 			}),
 		}),
 		prof(TAILORING, {
@@ -273,7 +273,7 @@ _.Craftables =
 				WOD_CRAFTED_ITEM(114815, 128012),	-- Hexweave Slippers + Hexweave Essence
 			}),
 			filter(MOUNTS, {
-				i(115363),	-- Creeping Carpet
+				i(115363),	-- Creeping Carpet (MOUNT!)
 			}),
 			filter(BATTLE_PETS, {
 				i(113216),	-- Elekk Plushie
