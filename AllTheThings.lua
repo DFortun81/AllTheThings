@@ -1321,7 +1321,7 @@ function app:PlayAudio(targetAudio, delay)
 end
 
 -- Color Lib
-local GetProgressColor, Colorize;
+local GetProgressColor, Colorize, RGBToHex;
 local function HexToARGB(hex)
 	return tonumber("0x"..hex:sub(1,2)), tonumber("0x"..hex:sub(3,4)), tonumber("0x"..hex:sub(5,6)), tonumber("0x"..hex:sub(7,8));
 end
@@ -1347,6 +1347,12 @@ app.Colors = {
 };
 Colorize = function(str, color)
 	return "|c" .. color .. str .. "|r";
+end
+RGBToHex = function(r, g, b)
+	return string.format("ff%02x%02x%02x",
+		r <= 255 and r >= 0 and r or 0,
+		g <= 255 and g >= 0 and g or 0,
+		b <= 255 and b >= 0 and b or 0);
 end
 -- Attempts to determine the colorized text for a given Group
 app.TryColorizeName = function(group, name)
@@ -1401,12 +1407,6 @@ app.TryColorizeName = function(group, name)
 end
 local CS = CreateFrame("ColorSelect", nil, app._);
 CS:Hide();
-local function RGBToHex(r, g, b)
-	return string.format("ff%02x%02x%02x",
-		r <= 255 and r >= 0 and r or 0,
-		g <= 255 and g >= 0 and g or 0,
-		b <= 255 and b >= 0 and b or 0);
-end
 local function ConvertColorRgbToHsv(r, g, b)
   CS:SetColorRGB(r, g, b);
   local h,s,v = CS:GetColorHSV()
