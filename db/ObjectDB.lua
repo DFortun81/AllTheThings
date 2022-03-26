@@ -2099,6 +2099,7 @@ _.ObjectNames = {
 	[375067] = "Glissandian Cache",
 	[375068] = "Fugueal Cache",
 	[375069] = "Cantaric Cache",
+	[375191] = "Dormant Alcove Arrangement",
 	[375270] = "Protoform Schematic",
 	[375272] = "Mawsworn Cache",
 	[375281] = "Stolen Relic",
