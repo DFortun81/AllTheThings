@@ -121,7 +121,7 @@ local GeneralSettingsBase = {
 		["Thing:Mounts"] = true,
 		["Thing:MusicRollsAndSelfieFilters"] = true,
 		["Thing:Quests"] = true,
-		["Thing:QuestBreadcrumbs"] = true,
+		["Thing:QuestsLocked"] = false,
 		["Thing:Recipes"] = true,
 		["Thing:Reputations"] = true,
 		["Thing:RuneforgeLegendaries"] = true,
@@ -392,7 +392,7 @@ settings.ApplyProfile = function()
 				settings.SetWindowFromProfile(suffix);
 			end
 		end
-		
+
 		if app.IsReady then
 			app.print(L["PROFILE"]..":",settings:GetProfile(true));
 		end
@@ -445,7 +445,7 @@ settings.CheckSeasonalDate = function(self, u, startMonth, startDay, endMonth, e
 		start = time({day=startDay,month=startMonth,year=year,hour=0,min=0,sec=0});
 		ends = time({day=endDay,month=endMonth,year=year + 1,hour=0,min=0,sec=0});
 	end
-	
+
 	local active = (now >= start and now <= ends);
 	SeasonalSettingsBase.__index[u] = active;
 end
@@ -502,8 +502,6 @@ settings.GetModeString = function(self)
 			if keyPrefix == "Thing:" then
 				totalThingCount = totalThingCount + 1;
 				if settings:Get(key) and
-					-- Quest Breadcrumbs only count when Quests are enabled
-					(key ~= "Thing:QuestBreadcrumbs" or settings:Get("Thing:Quests")) and
 					-- Heirloom Upgrades only count when Heirlooms are enabled
 					(key ~= "Thing:HeirloomUpgrades" or settings:Get("Thing:Heirlooms"))
 					then
@@ -558,8 +556,6 @@ settings.GetShortModeString = function(self)
 			if keyPrefix == "Thing:" then
 				totalThingCount = totalThingCount + 1;
 				if settings:Get(key) and
-					-- Quest Breadcrumbs only count when Quests are enabled
-					(key ~= "Thing:QuestBreadcrumbs" or settings:Get("Thing:Quests")) and
 					-- Heirloom Upgrades only count when Heirlooms are enabled
 					(key ~= "Thing:HeirloomUpgrades" or settings:Get("Thing:Heirlooms"))
 					then
@@ -1151,7 +1147,7 @@ settings.UpdateMode = function(self, doRefresh)
 		app.CollectibleMounts = true;
 		app.CollectibleMusicRollsAndSelfieFilters = true;
 		app.CollectibleQuests = true;
-		app.CollectibleBreadcrumbs = true;
+		app.CollectibleQuestsLocked = true;
 		app.CollectibleRecipes = true;
 		app.CollectibleReputations = true;
 		app.CollectibleRuneforgeLegendaries = true;
@@ -1211,7 +1207,7 @@ settings.UpdateMode = function(self, doRefresh)
 		app.CollectibleMounts = self:Get("Thing:Mounts");
 		app.CollectibleMusicRollsAndSelfieFilters = self:Get("Thing:MusicRollsAndSelfieFilters");
 		app.CollectibleQuests = self:Get("Thing:Quests");
-		app.CollectibleBreadcrumbs = self:Get("Thing:QuestBreadcrumbs");
+		app.CollectibleQuestsLocked = self:Get("Thing:QuestsLocked");
 		app.CollectibleRecipes = self:Get("Thing:Recipes");
 		app.CollectibleReputations = self:Get("Thing:Reputations");
 		app.CollectibleRuneforgeLegendaries = self:Get("Thing:RuneforgeLegendaries");
@@ -1848,10 +1844,10 @@ end);
 QuestsCheckBox:SetATTTooltip(L["QUESTS_CHECKBOX_TOOLTIP"]);
 QuestsCheckBox:SetPoint("TOPLEFT", FollowersCheckBox, "BOTTOMLEFT", 0, 4);
 
-local QuestBreadcrumbsCheckBox = child:CreateCheckBox(L["QUESTS_BREADCRUMBS_CHECKBOX"],
+local QuestsLockedCheckBox = child:CreateCheckBox(L["QUESTS_LOCKED_CHECKBOX"],
 function(self)
-	self:SetChecked(settings:Get("Thing:QuestBreadcrumbs"));
-	if settings:Get("DebugMode") or not settings:Get("Thing:Quests") then
+	self:SetChecked(settings:Get("Thing:QuestsLocked"));
+	if settings:Get("DebugMode") then
 		self:Disable();
 		self:SetAlpha(0.2);
 	else
@@ -1860,16 +1856,17 @@ function(self)
 	end
 end,
 function(self)
-	settings:Set("Thing:QuestBreadcrumbs", self:GetChecked());
+	settings:Set("Thing:QuestsLocked", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-QuestBreadcrumbsCheckBox:SetATTTooltip(L["QUESTS_BREADCRUMBS_CHECKBOX_TOOLTIP"]);
-QuestBreadcrumbsCheckBox:SetPoint("TOP", QuestsCheckBox, "TOP", 0, 0);
-QuestBreadcrumbsCheckBox:SetPoint("LEFT", QuestsCheckBox.Text, "RIGHT", 4, 0);
+QuestsLockedCheckBox:SetATTTooltip(L["QUESTS_LOCKED_CHECKBOX_TOOLTIP"]);
+QuestsLockedCheckBox:SetPoint("TOP", QuestsCheckBox, "TOP", 0, 0);
+QuestsLockedCheckBox:SetPoint("LEFT", QuestsCheckBox.Text, "RIGHT", 4, 0);
 
 local QuestsAccountWideCheckBox = child:CreateCheckBox("",
 function(self)
 	self:SetChecked(settings:Get("AccountWide:Quests"));
+	-- only requries Quests enabled. seems weird to enable Locked Quests with Account-Wide when you'd prefer to use another character to get those Locked Quests...
 	if settings:Get("DebugMode") or not settings:Get("Thing:Quests") then
 		self:Disable();
 		self:SetAlpha(0.2);
