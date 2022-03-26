@@ -1366,8 +1366,8 @@ app.TryColorizeName = function(group, name)
 	-- faction rep status
 	elseif group.factionID and group.standing then
 		return app.ColorizeStandingText((group.saved and 8) or (group.standing + (group.isFriend and 2 or 0)), name);
-	-- locked things
-	elseif group.locked then
+	-- locked/breadcrumb things
+	elseif group.locked or group.isBreadcrumb then
 		return Colorize(name, app.Colors.Locked);
 		-- if people REALLY only want to see colors in account/debug then we can comment this in
 	elseif app.Settings:GetTooltipSetting("UseMoreColors") --and (app.MODE_ACCOUNT or app.MODE_DEBUG)
@@ -11763,7 +11763,8 @@ local questFields = {
 					end
 					i = i + 1;
 				end
-			elseif t.breadcrumbLockedBy then
+			end
+			if t.breadcrumbLockedBy then
 				return true;
 			end
 		end
@@ -22542,8 +22543,8 @@ app.events.QUEST_ACCEPTED = function(questID)
 			end
 		end
 		PrintQuestInfo(questID, true, freq);
-		-- Check if this quest is a nextQuest of a non-collected breadcrumb if breadcrumbs are being tracked
-		if app.Settings:Get("Thing:QuestBreadcrumbs") then
+		-- Check if this quest is a nextQuest of a non-collected breadcrumb (users may care to get the breadcrumb before it becomes locked, simply due to tracking quests as well)
+		if app.CollectibleQuests or app.CollectibleQuestsLocked then
 			-- Run this warning check after a small delay in case addons pick up quests before the turned in quest is registered as complete
 			DelayedCallback(app.CheckForBreadcrumbPrevention, 1, title, questID);
 		end
