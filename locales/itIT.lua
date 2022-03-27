@@ -3020,7 +3020,7 @@ for key,value in pairs({
 	[375479] = "Schema di Protoforma",	-- Protoform Schematic
 	[375481] = "Stranezza Sottratta",	-- Pilfered Curio
 	[375483] = "Pergamena Rubata",	-- Stolen Scroll
-	--TODO: [375484] = "Grateful Boon",	-- Grateful Boon
+	[375484] = "Dono Grato",	-- Grateful Boon
 	[375485] = "Mietitore di Protoflora",	-- Protoflora Harvester
 	[375486] = "Schema di Protoforma",	-- Protoform Schematic
 	[375492] = "Scrigno Sintattico",	-- Syntactic Vault
@@ -3037,7 +3037,7 @@ for key,value in pairs({
 	[375538] = "Ovoide Perduto",	-- Lost Ovoid
 	[375693] = "Schema di Protoforma",	-- Protoform Schematic
 	[375694] = "Schema di Protoforma",	-- Protoform Schematic
-	--TODO: [375746] = "Protoform Schematic",	-- Protoform Schematic
+	[375746] = "Schema di Prototipo",	-- Prototype Schematic
 	[375748] = "Schema di Protoforma",	-- Protoform Schematic
 	[375889] = "Schema di Protoforma",	-- Protoform Schematic
 	[375893] = "Scrigno di Grande Valore",	-- High Value Cache

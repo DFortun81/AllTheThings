@@ -3046,7 +3046,7 @@ for key,value in pairs({
 	[375985] = "Фирим в изгнании, часть 5",	-- Firim in Exile, Part 5
 	[375986] = "Фирим в изгнании, часть 6",	-- Firim in Exile, Part 6
 	[375987] = "Фирим в изгнании, часть 7",	-- Firim in Exile, Part 7
-	--TODO: [375988] = "Firim in Exile, Epilogue",	-- Firim in Exile, Epilogue
+	[375988] = "Фирим в изгнании, эпилог",	-- Firim in Exile, Epilogue
 	[376041] = "Замаскированный тайник шифров",	-- Shrouded Cypher Cache
 	[9962198] = "Самодельная лужа жижи изгоя",	-- Outcast's Makeshift Muckpool
 	[9999890] = "Оскверненная добыча",	-- Corrupted Loot

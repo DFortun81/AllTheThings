@@ -3043,7 +3043,7 @@ for key,value in pairs({
 	[375538] = "Ovoide perdido",	-- Lost Ovoid
 	[375693] = "Esquema de protoforma",	-- Protoform Schematic
 	[375694] = "Esquema de protoforma",	-- Protoform Schematic
-	--TODO: [375746] = "Protoform Schematic",	-- Protoform Schematic
+	[375746] = "Esquema de prototipo",	-- Prototype Schematic
 	[375748] = "Esquema de protoforma",	-- Protoform Schematic
 	[375889] = "Esquema de protoforma",	-- Protoform Schematic
 	[375893] = "Alijo de gran valor",	-- High Value Cache
