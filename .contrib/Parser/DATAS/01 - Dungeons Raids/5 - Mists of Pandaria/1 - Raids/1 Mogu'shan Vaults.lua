@@ -410,7 +410,7 @@ _.Instances = { tier(MOP_TIER, {
 							{	-- Straight Six
 								["achievementID"] = 6686,	-- Straight Six
 							},
-							i(87777),	-- Reins of the Astral Cloud Serpent (MOUNT!)
+							i(87777),	-- Astral Cloud Serpent (MOUNT!)
 							i(167049),	-- Celestial Gift (PET!)
 							i(86140),	-- Starshatter
 							i(86130),	-- Elegion, the Fanged Crescent
@@ -628,7 +628,7 @@ _.Instances = { tier(MOP_TIER, {
 							{	-- Straight Six
 								["achievementID"] = 6686,	-- Straight Six
 							},
-							i(87777),	-- Reins of the Astral Cloud Serpent (MOUNT!)
+							i(87777),	-- Astral Cloud Serpent (MOUNT!)
 							i(167049),	-- Celestial Gift (PET!)
 							i(87061),	-- Starshatter
 							i(87062),	-- Elegion, the Fanged Crescent

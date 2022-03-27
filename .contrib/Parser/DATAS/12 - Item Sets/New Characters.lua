@@ -9,7 +9,7 @@ _.GearSets =
 			cl(PALADIN, {
 				["classes"] = { PALADIN },
 				["g"] = {
-					mount(73629, {	-- Exarch's Elekk
+					mount(73629, {	-- Exarch's Elekk (MOUNT!)
 						["description"] = "|cFF40bf40Received on reaching Level 10 as a Draenei Paladin.|r",
 						["races"] = { DRAENEI },
 					}),
@@ -17,15 +17,15 @@ _.GearSets =
 						["description"] = "|cFF40bf40Received on reaching Level 10 as a Dwarf Paladin.|r", -- Possibly as D.I.D too
 						["races"] = { DWARF },
 					}),
-					mount(73630, {	-- Great Exarch's Elekk
+					mount(73630, {	-- Great Exarch's Elekk (MOUNT!)
 						["description"] = "|cFF40bf40Received on reaching Level 17 as a Draenei Paladin.|r",	-- Removed Lightforged here
 						["races"] = { DRAENEI },
 					}),
-					mount(69826, {	-- Great Sunwalker Kodo
+					mount(69826, {	-- Great Sunwalker Kodo (MOUNT!)
 						["description"] = "|cFF40bf40Received on reaching Level 17 as a Tauren Paladin.|r",
 						["races"] = { TAUREN },
 					}),
-					mount(69820, {	-- Sunwalker Kodo
+					mount(69820, {	-- Sunwalker Kodo (MOUNT!)
 						["description"] = "|cFF40bf40Received on reaching Level 10 as a Tauren Paladin.|r",
 						["races"] = { TAUREN },
 					}),

@@ -7,7 +7,7 @@ _.Craftables =
 	tier(CATA_TIER, {
 		prof(ALCHEMY, {
 			filter(MOUNTS, {
-				i(65891),	-- Vial of the Sands
+				i(65891),	-- Sandstone Drake (MOUNT!)
 			}),
 			i(58488, {	-- Potion of Treasure Finding
 				i(67539, {	-- Tiny Treasure Chest

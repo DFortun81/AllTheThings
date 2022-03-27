@@ -1651,7 +1651,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 					i(22235, {	-- Truesilver Shafted Arrow
 						["cost"] = { { "i", 49927, 40 } },	-- 40x Love Token
 					}),
-					i(72146, {	-- Swift Lovebird
+					i(72146, {	-- Swift Lovebird (MOUNT!)
 						["timeline"] = { "added 4.3.0.15005" },
 						["cost"] = { { "i", 49927, 270 } },	-- 270x Love Token
 					}),

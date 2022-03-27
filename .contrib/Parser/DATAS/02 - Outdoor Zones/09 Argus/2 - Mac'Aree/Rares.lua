@@ -166,10 +166,10 @@ _.Zones =
 						}),
 						i(153190, {	-- Fel-Spotted Egg
 							i(153191, {	-- Cracked Fel-Spotted Egg
-								i(152843),	-- Darkspore Mana Ray Mount
-								i(152841),	-- Felglow Mana Ray Mount
-								i(152840),	-- Scintillating Mana Ray Mount
-								i(152842),	-- Vibrant Mana Ray Mount
+								i(152843),	-- Darkspore Mana Ray (MOUNT!)
+								i(152841),	-- Felglow Mana Ray (MOUNT!)
+								i(152840),	-- Scintillating Mana Ray (MOUNT!)
+								i(152842),	-- Vibrant Mana Ray (MOUNT!)
 								i(153054),	-- Docile Skyfin Pet
 								i(153055),	-- Fel-Afflicted Skyfin Pet
 							}),
@@ -198,7 +198,7 @@ _.Zones =
 						crit(49, {	-- Skreeg the Devourer
 							["achievementID"] = 12078,	-- Commander of Argus
 						}),
-						i(152904),	-- Acid Belcher
+						i(152904),	-- Acid Belcher (MOUNT!)
 					},
 				}),
 				n(126913, {	-- Slithon the Last
@@ -268,7 +268,7 @@ _.Zones =
 						crit(34, {	-- Venomtail Skyfin
 							["achievementID"] = 12078,	-- Commander of Argus
 						}),
-						i(152844),	-- Lambent Mana Ray
+						i(152844),	-- Lambent Mana Ray (MOUNT!)
 					},
 				}),
 				n(126866, {	-- Vigilant Kuro
@@ -306,7 +306,7 @@ _.Zones =
 						crit(28, {	-- Wrangler Kravos
 							["achievementID"] = 12078,	-- Commander of Argus
 						}),
-						i(152814),	-- Maddened Chaosrunner
+						i(152814),	-- Maddened Chaosrunner (MOUNT!)
 						i(153269),	-- Enclave Aspirant's Waraxe
 					},
 				}),

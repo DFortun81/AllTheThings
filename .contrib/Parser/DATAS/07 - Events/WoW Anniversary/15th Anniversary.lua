@@ -1195,7 +1195,7 @@ root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 					e(198, {	-- Ragnaros
 						["creatureID"] = 52409,
 						["g"] = {
-							i(69224),	-- Smoldering Egg of Millagazor (MOUNT!)
+							i(69224),	-- Pureblood Fire Hawk (MOUNT!)
 							i(171804),	-- Balespider's Hood
 							i(171794),	-- Cowl of the Cleansing Flame
 							i(171770),	-- Dark Phoenix Helmet

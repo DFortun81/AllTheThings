@@ -563,7 +563,7 @@ _.Instances = { tier(CATA_TIER, {
 							["achievementID"] = 6107,	-- Fall of Deathwing
 							["criteriaID"] = 4,	-- Madness of Deathwing
 						},
-						i(77067),	-- Reins of the Blazing Drake (MOUNT!)
+						i(77067),	-- Blazing Drake (MOUNT!)
 						i(152981),	-- Severed Tentacle (PET)!
 						i(77191),	-- Gurthalak, Voice of the Deeps
 						i(77194),	-- Kiril, Fury of Beasts
@@ -860,7 +860,7 @@ _.Instances = { tier(CATA_TIER, {
 							},
 						},
 						i(77069),	-- Life-Binder's Handmaiden (MOUNT!)
-						i(77067),	-- Reins of the Blazing Drake (MOUNT!)
+						i(77067),	-- Blazing Drake (MOUNT!)
 						i(152981),	-- Severed Tentacle (PET!)
 						i(78478),	-- Gurthalak, Voice of the Deeps
 						i(78473),	-- Kiril, Fury of Beasts

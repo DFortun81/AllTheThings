@@ -224,10 +224,10 @@ root("Zones", {
 						}),
 						i(153190, {	-- Fel-Spotted Egg
 							i(153191, {	-- Cracked Fel-Spotted Egg
-								i(152843),	-- Darkspore Mana Ray Mount
-								i(152841),	-- Felglow Mana Ray Mount
-								i(152840),	-- Scintillating Mana Ray Mount
-								i(152842),	-- Vibrant Mana Ray Mount
+								i(152843),	-- Darkspore Mana Ray (MOUNT!)
+								i(152841),	-- Felglow Mana Ray (MOUNT!)
+								i(152840),	-- Scintillating Mana Ray (MOUNT!)
+								i(152842),	-- Vibrant Mana Ray (MOUNT!)
 								i(153054),	-- Docile Skyfin Pet
 								i(153055),	-- Fel-Afflicted Skyfin Pet
 							}),

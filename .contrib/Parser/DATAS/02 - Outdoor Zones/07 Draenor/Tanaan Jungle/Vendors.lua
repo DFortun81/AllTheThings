@@ -35,7 +35,7 @@ _.Zones =
 							},
 						}),
 						i(128450),	-- Order of the Awakened Tabard
-						i(123974, {	-- Reins of the Corrupted Dreadwing (MOUNT!)
+						i(123974, {	-- Corrupted Dreadwing (MOUNT!)
 							["cost"] = { { "c", 823, 150000 }, },	-- 150,000x Apexis Crystal
 						}),
 						i(122283, {	-- Rukhmar's Sacred Memory (TOY!)
@@ -126,7 +126,7 @@ _.Zones =
 								follower(581.2),	-- Dowser Bigspark
 							},
 						}),
-						i(128526, {	-- Deathtusk Felboar (MOUNT!)
+						i(128526, {	-- Deathtusk Felboar (H) (MOUNT!)
 							["cost"] = 25000000,	-- 2,500g
 						}),
 						i(128475, {	-- Empowered Augment Rune
@@ -187,7 +187,7 @@ _.Zones =
 								follower(581.1),	-- Dowser Bigspark
 							},
 						}),
-						i(128527, {	-- Deathtusk Felboar (MOUNT!)
+						i(128527, {	-- Deathtusk Felboar (A) (MOUNT!)
 							["cost"] = 25000000,	-- 2,500g
 						}),
 						i(128482, {	-- Empowered Augment Rune

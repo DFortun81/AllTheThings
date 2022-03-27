@@ -12,7 +12,7 @@ root("Promotions", n(-532, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {	-- Heroes 
 			["timeline"] = { "added 7.2.0.23801" },
 			["groups"] = {
 				ach(11425),	-- Herald of Flames
-				i(143631),	-- Primal Flamesaber
+				i(143631),	-- Primal Flamesaber (MOUNT!)
 			},
 		})),
 	},

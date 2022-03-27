@@ -376,84 +376,82 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(190926),	-- Infested Automa Core (TOY!)
 				},
 			}),
-			-- Sands
-			o(375397, {	-- Glinting Sand Pile
-				["description"] = "Requires Altonian Understanding and Chapter 6. Dormant Alcove Arrangement is found at 51.0, 32.5 between 2 pillars, on the side of one of the pillars (accessible from flying or via the Quintus Locus and dropping down). Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
-				["coord"] = { 45.1, 36, 2029 },
-				["questID"] = 65495,
-				["cost"] = { { "i", 189863, 1 }, },	-- 1xSpatial Opener
-				["g"] = {
-					crit(2, {	-- Glinting Sand Pile
-						["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+			-- Unlock for 'Sand Piles'
+			o(375191, {	-- Dormant Alcove Arrangement
+				["description"] = "Requires Altonian Understanding and Chapter 6. Accessible with flying or via the Quintus Locus and dropping down.",
+				["questID"] = 65346,
+				["coord"] = { 51.03, 32.48, ZERETH_MORTIS },
+				["g"] = sharedData({
+					["sourceQuest"] = 65346,	-- Dormant Alcove Arrangement
+					["cost"] = { { "i", 189863, 1 }, },	-- 1 Spatial Opener
+					["description"] = "Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
+				},{
+					-- Sands
+					o(375397, {	-- Glinting Sand Pile
+						["coord"] = { 45.1, 36, 2029 },
+						["questID"] = 65495,
+						["g"] = {
+							crit(2, {	-- Glinting Sand Pile
+								["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+							}),
+						},
 					}),
-				},
-			}),
-			o(375399, {	-- Humming Sand Pile
-				["description"] = "Requires Altonian Understanding and Chapter 6. Dormant Alcove Arrangement is found at 51.0, 32.5 between 2 pillars, on the side of one of the pillars (accessible from flying or via the Quintus Locus and dropping down). Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
-				["coord"] = { 44.3, 36.7, 2029 },
-				["questID"] = 65497,
-				["cost"] = { { "i", 189863, 1 }, },	-- 1xSpatial Opener
-				["g"] = {
-					crit(4, {	-- Humming Sand Pile
-						["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+					o(375399, {	-- Humming Sand Pile
+						["coord"] = { 44.3, 36.7, 2029 },
+						["questID"] = 65497,
+						["g"] = {
+							crit(4, {	-- Humming Sand Pile
+								["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+							}),
+						},
 					}),
-				},
-			}),
-			o(375396, {	-- Lumpy Sand Pile
-				["description"] = "Requires Altonian Understanding and Chapter 6. Dormant Alcove Arrangement is found at 51.0, 32.5 between 2 pillars, on the side of one of the pillars (accessible from flying or via the Quintus Locus and dropping down). Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
-				["coord"] = { 44.8, 36.9, 2029 },
-				["questID"] = 65494,
-				["cost"] = { { "i", 189863, 1 }, },	-- 1xSpatial Opener
-				["g"] = {
-					crit(1, {	-- Lumpy Sand Pile
-						["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+					o(375396, {	-- Lumpy Sand Pile
+						["coord"] = { 44.8, 36.9, 2029 },
+						["questID"] = 65494,
+						["g"] = {
+							crit(1, {	-- Lumpy Sand Pile
+								["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+							}),
+						},
 					}),
-				},
-			}),
-			o(375400, {	-- Misshapen Sand Pile
-				["description"] = "Requires Altonian Understanding and Chapter 6. Dormant Locus Arrangement is found at 51.0, 32.5 between 2 pillars, on the side of one of the pillars (accessible from flying or via the Quintus Locus and dropping down). Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
-				["coord"] = { 44.6, 35.7, 2029 },
-				["questID"] = 65498,
-				["cost"] = { { "i", 189863, 1 }, },	-- 1xSpatial Opener
-				["g"] = {
-					crit(5, {	-- Misshapen Sand Pile
-						["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+					o(375400, {	-- Misshapen Sand Pile
+						["coord"] = { 44.6, 35.7, 2029 },
+						["questID"] = 65498,
+						["g"] = {
+							crit(5, {	-- Misshapen Sand Pile
+								["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+							}),
+						},
 					}),
-				},
-			}),
-			o(375398, {	-- Shifting Sand Pile
-				["description"] = "Requires Altonian Understanding and Chapter 6. Dormant Alcove Arrangement is found at 51.0, 32.5 between 2 pillars, on the side of one of the pillars (accessible from flying or via the Quintus Locus and dropping down). Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
-				["coord"] = { 43.7, 37.1, 2029 },
-				["questID"] = 65496,
-				["cost"] = { { "i", 189863, 1 }, },	-- 1xSpatial Opener
-				["g"] = {
-					crit(3, {	-- Shifting Sand Pile
-						["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+					o(375398, {	-- Shifting Sand Pile
+						["coord"] = { 43.7, 37.1, 2029 },
+						["questID"] = 65496,
+						["g"] = {
+							crit(3, {	-- Shifting Sand Pile
+								["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+							}),
+						},
 					}),
-				},
-			}),
-			o(375401, {	-- Sparkling Sand Pile
-				["description"] = "Requires Altonian Understanding and Chapter 6. Dormant Alcove Arrangement is found at 51.0, 32.5 between 2 pillars, on the side of one of the pillars (accessible from flying or via the Quintus Locus and dropping down). Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
-				["coord"] = { 43.9, 36.5, 2029 },
-				["questID"] = 65499,
-				["cost"] = { { "i", 189863, 1 }, },	-- 1xSpatial Opener
-				["g"] = {
-					crit(6, {	-- Sparkling Sand Pile
-						["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+					o(375401, {	-- Sparkling Sand Pile
+						["coord"] = { 43.9, 36.5, 2029 },
+						["questID"] = 65499,
+						["g"] = {
+							crit(6, {	-- Sparkling Sand Pile
+								["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+							}),
+							i(190374),	-- Gemstone of Prismatic Brilliance
+						},
 					}),
-					i(190374),	-- Gemstone of Prismatic Brilliance
-				},
-			}),
-			o(375402, {	-- Ticking Sand Pile
-				["description"] = "Requires Altonian Understanding and Chapter 6. Dormant Alcove Arrangement is found at 51.0, 32.5 between 2 pillars, on the side of one of the pillars (accessible from flying or via the Quintus Locus and dropping down). Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
-				["coord"] = { 43.8, 37.6, 2029 },
-				["questID"] = 65500,
-				["cost"] = { { "i", 189863, 1 }, },	-- 1xSpatial Opener
-				["g"] = {
-					crit(7, {	-- Ticking Sand Pile
-						["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+					o(375402, {	-- Ticking Sand Pile
+						["coord"] = { 43.8, 37.6, 2029 },
+						["questID"] = 65500,
+						["g"] = {
+							crit(7, {	-- Ticking Sand Pile
+								["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+							}),
+						},
 					}),
-				},
+				}),
 			}),
 			o(375494, {	-- Rondure Cache
 				["description"] = "Requires Aealic Understanding and Chapter 6. Rondure Alcove Arrangement is found at 50.5, 27.6 Close to Tertius Locus. Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",

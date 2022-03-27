@@ -9,7 +9,7 @@ _.Zones =
 			n(RARES, {
 				n(50062, {	-- Aeonaxx <Mate of Aeosera>
 					["g"] = {
-						i(63042),	-- Reins of the Phosphorescent Stone Drake (MOUNT!)
+						i(63042),	-- Phosphorescent Stone Drake (MOUNT!)
 					},
 				}),
 				n(50059, {	-- Golgarok <The Crimson Shatterer>

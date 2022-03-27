@@ -61,7 +61,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						["achievementID"] = 1875,	-- You Don't Have an Eternity (25 player)
 					},
 					i(43952),	-- Azure Drake (MOUNT!)
-					i(43953),	-- RBlue Drake (MOUNT!)
+					i(43953),	-- Blue Drake (MOUNT!)
 					i(40543),	-- Blue Aspect Helm
 					i(40562),	-- Hood of Rationality
 					i(40590),	-- Elevated Lair Pauldrons

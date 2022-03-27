@@ -291,7 +291,7 @@ root("Holidays", applyholiday(MICRO_HOLIDAY, holiday(1574965, {	-- Call of the S
 				["coord"] = { 34.06, 80.43, SILITHUS },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
-					i(151626, {	-- Sapphire Qiraji Resonating Crystal
+					i(151626, {	-- Blue Qiraji War Tank (MOUNT!)
 						["cost"] = { { "i", 143865, 1 } },	-- Abyssal Crest
 						["collectible"] = false,
 						["races"] = ALLIANCE_ONLY,
@@ -308,7 +308,7 @@ root("Holidays", applyholiday(MICRO_HOLIDAY, holiday(1574965, {	-- Call of the S
 				["coord"] = { 33.96, 81.91, SILITHUS },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
-					i(151625, {	-- Ruby Qiraji Resonating Crystal
+					i(151625, {	-- Red Qiraji War Tank (MOUNT!)
 						["cost"] = { { "i", 143865, 1 } },	-- Abyssal Crest
 						["collectible"] = false,
 						["races"] = HORDE_ONLY,

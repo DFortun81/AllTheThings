@@ -386,13 +386,13 @@ profession(FISHING, {
 		}),
 	}),
 	filter(MOUNTS, {
-		i(142398, {	-- Darkwater Skate
+		i(142398, {	-- Darkwater Skate (MOUNT!)
 			["cost"] = { { "i", 124669, 500 }, },	-- 500x Darkmoon Daggermaw
 		}),
 		i(163131, {	-- Great Sea Ray
 			["description"] = "Caught in any waters in Kul Tiras or Zandalar, including Mechagon (but not Nazjatar).",
 		}),
-		i(152912, {	-- Pond Nettle
+		i(152912, {	-- Pond Nettle (MOUNT!)
 			["description"] = "Caught in green pools around Antoran Wastes.",
 		}),
 		i(23720),	-- Riding Turtle (MOUNT!)

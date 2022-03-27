@@ -23,7 +23,7 @@ _.Instances = { tier(MOP_TIER, {
 				["g"] = {
 					ach(8028),	-- Praise the Sun!
 					-- Mounts, Caches, and Quest Items!
-					i(95057),	-- Reins of the Thundering Cobalt Cloud Serpent
+					i(95057),	-- Thundering Cobalt Cloud Serpent (MOUNT!)
 					i(95602, {	-- Stormtouched Cache	-- TODO: should be symlink for duplicate rewards
 						i(95972),	-- Abandoned Zandalari Arrowlinks
 						i(95976),	-- Abandoned Zandalari Bucklebreaker
@@ -341,7 +341,7 @@ _.Instances = { tier(MOP_TIER, {
 				["creatureID"] = 69161,	-- Oondasta
 				["g"] = {
 					ach(8123),	-- Millions of Years of Evolution vs. My Fist
-					i(94228),	-- Reins of the Cobalt Primordial Direhorn
+					i(94228),	-- Cobalt Primordial Direhorn (MOUNT!)
 					i(95601, {	-- Shiny Pile of Refuse	-- TODO: should be symlink for duplicate rewards
 						i(95972),	-- Abandoned Zandalari Arrowlinks
 						i(95976),	-- Abandoned Zandalari Bucklebreaker
@@ -526,7 +526,7 @@ _.Instances = { tier(MOP_TIER, {
 				["creatureID"] = 62346,	-- Galleon
 				["g"] = {
 					ach(6517),	-- Extinction Event
-					i(89783),	-- Son of Galleon's Saddle
+					i(89783),	-- Son of Galleon (MOUNT!)
 					i(90840, {	-- Marauder's Gleaming Sack of Gold	-- TODO: should be symlink for duplicate rewards
 						-- Belts
 						i(86884),	-- Belt of Embodied Terror
@@ -663,7 +663,7 @@ _.Instances = { tier(MOP_TIER, {
 						["achievementID"] = 6926,	-- Tranquil Master
 					}),
 					-- Mounts, Caches, and Quest Items!
-					i(87771),	-- Heavenly Onyx Cloud Serpent
+					i(87771),	-- Heavenly Onyx Cloud Serpent (MOUNT!)
 					i(89317),	-- Claw of Anger
 					i(90839, {	-- Cache of Sha-Touched Gold	-- TODO: should be symlink for duplicate rewards
 						i(86884),	-- Belt of Embodied Terror

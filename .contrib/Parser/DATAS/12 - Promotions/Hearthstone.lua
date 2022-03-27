@@ -7,7 +7,7 @@ root("Promotions", bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		["timeline"] = { "added 5.3.0.16825" },
 		["groups"] = {
 			ach(8345),	-- Hearthstoned
-			i(98618), -- Hearthsteed
+			i(98618), -- Hearthsteed (MOUNT!)
 		},
 	}),
 	n(-536, { 	-- Hearthstone Mercenaries Promotion

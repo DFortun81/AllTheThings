@@ -1883,7 +1883,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 							-- #endif
 							FROZEN_ARMS_OF_A_HERO,
 							MEDALLION_OF_THE_LEGION,
-							i(128671, {	-- Minion of Grumpus
+							i(128671, {	-- Minion of Grumpus (MOUNT!)
 								["timeline"] = { "added 6.2.2.20395" },
 							}),
 						},

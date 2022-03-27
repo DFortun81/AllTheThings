@@ -1556,7 +1556,7 @@ _.Zones =
 									i(84660),	-- Pandaren Fishing Pole -- NOT MOGGABLE
 									i(85505),	-- Recipe: Krasarang Fritters
 									i(85502),	-- Recipe: Viseclaw Soup
-									i(81354, {	-- Reins of the Azure Water Strider (MOUNT!)
+									i(81354, {	-- Azure Water Strider (MOUNT!)
 										["cost"] = 9500000,	-- 950g
 									}),
 									i(88535, {	-- Sharpened Tuskarr Pole -- NOT MOGGABLE

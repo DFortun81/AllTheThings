@@ -141,7 +141,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 		ach(12104, {	-- And We're All Out of Mana Buns
 			title(367),		-- Demonslayer
 			ach(12103, {	-- ...And Chew Mana Buns
-				i(153041),		-- Bleakhoof Ruinstrider
+				i(153041),		-- Bleakhoof Ruinstrider (MOUNT!)
 			}),
 			ach(12102),		-- To Kill Demons...
 			ach(12101),		-- We Came Here For Two Reasons
@@ -437,7 +437,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 		ach(11260),		-- Treasures of Suramar
 		ach(11258),		-- Treasures of Val'sharah
 		ach(11066, {	-- Underbelly Tycoon
-			i(138387),		-- Ratstallion
+			i(138387),		-- Ratstallion (MOUNT!)
 		}),
 		ach(11178),		-- Wake the Dragon
 	}),

@@ -700,7 +700,7 @@ _.Instances = { tier(LEGION_TIER, {
 				cr(104154, e(1737, {	-- Gul'dan
 					ach(10696),	-- I've Got My Eyes On You
 					ach(10839),	-- Betrayer's Rise
-					i(137574),	-- Living Infernal Core
+					i(137574),	-- Felblaze Infernal (MOUNT!)
 					i(139651),	-- Vantus Rune Technique: Gul'dan [Rank 1]
 					i(137763),	-- Vantus Rune Technique: Gul'dan [Rank 2]
 					i(119211),	-- Golden Hearthstone Card: Lord Jaraxxus (TOY!)
@@ -1079,7 +1079,7 @@ _.Instances = { tier(LEGION_TIER, {
 					}),
 					ach(10696),	-- I've Got My Eyes On You
 					ach(10839),	-- Betrayer's Rise
-					i(137574),	-- Living Infernal Core
+					i(137574),	-- Felblaze Infernal (MOUNT!)
 					i(139651),	-- Vantus Rune Technique: Gul'dan [Rank 1]
 					i(137763),	-- Vantus Rune Technique: Gul'dan [Rank 2]
 					i(119211),	-- Golden Hearthstone Card: Lord Jaraxxus (TOY!)
@@ -1478,8 +1478,8 @@ _.Instances = { tier(LEGION_TIER, {
 						ach(10850, {	-- Mythic: Gul'dan
 							title(342),	-- Title: %, Vengeance Incarnate
 						}),
-						i(137575),	-- Fiendish Hellfire Core
-						i(137574),	-- Living Infernal Core
+						i(137575),	-- Hellfire Infernal (MOUNT!)
+						i(137574),	-- Felblaze Infernal (MOUNT!)
 						i(139651),	-- Vantus Rune Technique: Gul'dan [Rank 1]
 						i(137763),	-- Vantus Rune Technique: Gul'dan [Rank 2]
 						i(119211),	-- Golden Hearthstone Card: Lord Jaraxxus (TOY!)

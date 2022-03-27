@@ -27,7 +27,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(20),		-- Talador Surf and Turf
 		}),
 		ach(10018, {	-- Draenor Pathfinder
-			i(128706),		-- Soaring Skyterror
+			i(128706),		-- Soaring Skyterror (MOUNT!)
 			crit(1),		-- Draenor Explorer
 			crit(2),		-- Loremaster of Draenor
 			crit(3),		-- Securing Draenor

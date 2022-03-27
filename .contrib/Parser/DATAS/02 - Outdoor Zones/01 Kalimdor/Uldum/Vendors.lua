@@ -10,8 +10,8 @@ _.Zones =
 				n(48617, {	-- Blacksmith Abasi <Ramkahen Quartermaster>
 					["coord"] = { 54.0, 33.2, ULDUM },
 					["g"] = {
-						i(63044),	-- Reins of the Brown Riding Camel (MOUNT!)
-						i(63045),	-- Reins of the Tan Riding Camel (MOUNT!)
+						i(63044),	-- Brown Riding Camel (MOUNT!)
+						i(63045),	-- Tan Riding Camel (MOUNT!)
 						i(62436),	-- Ammunae's Blessing
 						i(62439),	-- Belt of the Stargazer
 						i(62450),	-- Desert Walker Sandals

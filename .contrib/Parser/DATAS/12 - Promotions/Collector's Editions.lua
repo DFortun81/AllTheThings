@@ -125,7 +125,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 		["groups"] = {
 			ach(6849),	-- Collector's Edition: Imperial Quilen
 			ach(6848),	-- Collector's Edition: Lucky Quilen Cub
-			i(85870),	-- Imperial Quilen
+			i(85870),	-- Imperial Quilen (MOUNT!)
 			i(85871),	-- Lucky Quilen Cub
 		},
 	}),
@@ -136,7 +136,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 			ach(8917),	-- Collector's Edition: Dread Hatchling
 			ach(8916),	-- Collector's Edition: Dread Raven
 			i(109014),	-- Dread Hatchling
-			i(109013),	-- Reins of the Dread Raven
+			i(109013),	-- Dread Raven (MOUNT!)
 		},
 	}),
 	tier(LEGION_TIER, {
@@ -146,7 +146,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 			ach(10321),	-- Collector's Edition: Nibbles
 			ach(10320),	-- Collector's Edition: Illidari Felstalker
 			i(128426),	-- Nibbles
-			i(128425),	-- Reins of the Illidari Felstalker
+			i(128425),	-- Illidari Felstalker (MOUNT!)
 		},
 	}),
 	tier(BFA_TIER, {
@@ -156,8 +156,8 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 			h(ach(12230)),	-- Collector's Edition: Gilded Ravasaur
 			a(ach(12229)),	-- Collector's Edition: Seabraid Stallion
 			ach(12232),	-- Collector's Edition: Tottle
-			h(i(153540)),	-- Gilded Ravasaur
-			a(i(153539)),	-- Seabraid Stallion
+			h(i(153540)),	-- Gilded Ravasaur (MOUNT!)
+			a(i(153539)),	-- Seabraid Stallion (MOUNT!)
 			i(153541),	-- Tottle
 		},
 	}),

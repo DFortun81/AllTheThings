@@ -948,6 +948,7 @@ for key,value in pairs({
 	[142122] = "Cartaz de Procura-se",	-- Wanted Poster
 	[142127] = "Segredo de Rin'ji",	-- Rin'ji's Secret
 	[142151] = "Barril Lacrado",	-- Sealed Barrel
+	[142184] = "Baú do Capitão",	-- Captain's Chest
 	[142195] = "Mapa de Batalha de Patábua",	-- Woodpaw Battle Map
 	[142343] = "Pedestal de Uldum",	-- Uldum Pedestal
 	[142344] = "Extrapolador Artificial",	-- Artificial Extrapolator
@@ -2070,6 +2071,7 @@ for key,value in pairs({
 	[250108] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
 	[250109] = "Baú do Tesouro",	-- Treasure Chest
 	[250383] = "Relíquia de Sombraluna",	-- Moonshade Relic
+	[250541] = "Baú do Tesouro",	-- Treasure Chest
 	--TODO: [250671] = "Notes on the Veiled Hand",	-- Notes on the Veiled Hand
 	[250984] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
 	[250985] = "Baú do Tesouro",	-- Treasure Chest
@@ -2592,6 +2594,7 @@ for key,value in pairs({
 	[327591] = "Diário Preservado",	-- Preserved Journal
 	[327592] = "Fechadura Encantada",	-- Enchanted Lock
 	[327596] = "Foco Abissal Partido",	-- Broken Abyssal Focus
+	[327597] = "Baú Enferrujado Antigo",	-- Old Rusty Chest
 	--TODO: [327669] = "Contained Alemental",	-- Contained Alemental
 	--TODO: [328343] = "Direbrew Cog",	-- Direbrew Cog
 	--TODO: [328413] = "Hozen Totem",	-- Hozen Totem
@@ -2977,6 +2980,7 @@ for key,value in pairs({
 	[375067] = "Baú Glissandiano",	-- Glissandian Cache
 	[375068] = "Baú Fugueal",	-- Fugueal Cache
 	[375069] = "Baú Cantárico",	-- Cantaric Cache
+	[375191] = "Arranjo da Alcova Dormente",	-- Dormant Alcove Arrangement
 	[375270] = "Diagrama de Protoforma",	-- Protoform Schematic
 	[375272] = "Cabedal Górjuro",	-- Mawsworn Cache
 	[375281] = "Relíquia Roubada",	-- Stolen Relic

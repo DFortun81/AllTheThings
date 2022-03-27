@@ -25,7 +25,7 @@ root("PVP", pvp(n(PVP_HONOR, {
 		i(134026),	-- Honorable Pennant (TOY!)
 	}),
 	ach(12895, {	-- Honor Level 15
-		i(140228),	-- Prestigious Bronze Courser
+		i(140228),	-- Prestigious Bronze Courser (MOUNT!)
 	}),
 	ach(12900, {	-- Honor Level 20
 		i(139776, {	-- Horde Fanatic
@@ -52,7 +52,7 @@ root("PVP", pvp(n(PVP_HONOR, {
 		i(134031),	-- Prestigious Pennant (TOY!)
 	}),
 	ach(12903, {	-- Honor Level 40
-		i(140233),	-- Prestigious Ivory Courser
+		i(140233),	-- Prestigious Ivory Courser (MOUNT!)
 	}),
 	ach(12904, {	-- Honor Level 50
 		title(322),	-- %s, the Prestigious
@@ -61,7 +61,7 @@ root("PVP", pvp(n(PVP_HONOR, {
 		i(134032),	-- Elite Pennant (TOY!)
 	}),
 	ach(12906, {	-- Honor Level 70
-		i(140408),	-- Prestigious Azure Courser
+		i(140408),	-- Prestigious Azure Courser (MOUNT!)
 	}),
 	ach(12907, {	-- Honor Level 80
 		title(323),	-- %s, the Unrelenting
@@ -73,10 +73,10 @@ root("PVP", pvp(n(PVP_HONOR, {
 		title(354),	-- %s the Unstoppable Force
 	}),
 	ach(12910, {	-- Honor Level 125
-		i(140232),	-- Prestigious Forest Courser
+		i(140232),	-- Prestigious Forest Courser (MOUNT!)
 	}),
 	ach(12911, {	-- Honor Level 150
-		i(140230),	-- Prestigious Royal Courser
+		i(140230),	-- Prestigious Royal Courser (MOUNT!)
 	}),
 	ach(12912, {	-- Honor Level 175
 		i(164310),	-- Glorious Pennant (TOY!)
@@ -85,7 +85,7 @@ root("PVP", pvp(n(PVP_HONOR, {
 		title(325),	-- %s, Bound By Honor
 	}),
 	ach(12914,{  -- Honor Level 250
-		i(140407),	-- Prestigious Midnight Courser
+		i(140407),	-- Prestigious Midnight Courser (MOUNT!)
 	}),
 	ach(12915, {	-- Honor Level 300
 		title(369),	-- %s the Tactician

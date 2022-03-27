@@ -90,7 +90,7 @@ _.Instances = { tier(CATA_TIER, {
 					un(REMOVED_FROM_GAME, i(55795)),	-- Key to the Endless Chamber (7.3.5 - Removed from Game!)
 				})),
 				cr(43214, e(111, {	-- Slabhide
-					i(63043),	-- Reins of the Vitreous Stone Drake (MOUNT!)
+					i(63043),	-- Vitreous Stone Drake (MOUNT!)
 					i(56335),	-- Quicksilver Blade
 					i(157593),	-- Crystalpowder Amice
 					i(56334),	-- Deep Delving Gloves
@@ -151,7 +151,7 @@ _.Instances = { tier(CATA_TIER, {
 						i(56328),	-- Key to the Endless Chamber
 					})),
 					cr(43214, e(111, {	-- Slabhide
-						i(63043),	-- Reins of the Vitreous Stone Drake (MOUNT!)
+						i(63043),	-- Vitreous Stone Drake (MOUNT!)
 						i(56335),	-- Quicksilver Blade
 						i(157593),	-- Crystalpowder Amice
 						i(56334),	-- Deep Delving Gloves

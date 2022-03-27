@@ -42,7 +42,7 @@ _.Zones =
 						{ "i", 86546, 1 },	-- Sky Crystal
 					},
 					["g"] = {
-						i(90655),	-- Reins of the Thundering Ruby Cloud Serpent (MOUNT!)
+						i(90655),	-- Thundering Ruby Cloud Serpent (MOUNT!)
 					},
 				}),
 				n(58949, {	-- Bai-Jin the Butcher
