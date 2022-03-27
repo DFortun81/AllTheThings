@@ -948,6 +948,7 @@ for key,value in pairs({
 	[142122] = "현상 수배 전단",	-- Wanted Poster
 	[142127] = "린지의 비밀",	-- Rin'ji's Secret	--TODO: This was taken from classic Wowhead
 	[142151] = "봉인된 통",	-- Sealed Barrel
+	[142184] = "선장의 상자",	-- Captain's Chest
 	[142195] = "덩굴발 작전도",	-- Woodpaw Battle Map
 	[142343] = "울둠 대좌",	-- Uldum Pedestal
 	[142344] = "인공장치 검출기",	-- Artificial Extrapolator
@@ -2070,6 +2071,7 @@ for key,value in pairs({
 	[250108] = "작은 보물 상자",	-- Small Treasure Chest
 	[250109] = "보물 상자",	-- Treasure Chest
 	[250383] = "달그늘 성물",	-- Moonshade Relic
+	[250541] = "보물 상자",	-- Treasure Chest
 	--TODO: [250671] = "Notes on the Veiled Hand",	-- Notes on the Veiled Hand
 	[250984] = "작은 보물 상자",	-- Small Treasure Chest
 	[250985] = "보물 상자",	-- Treasure Chest
@@ -2592,6 +2594,7 @@ for key,value in pairs({
 	[327591] = "보존된 일기",	-- Preserved Journal
 	[327592] = "마법 자물쇠",	-- Enchanted Lock
 	[327596] = "부서진 심연 집중",	-- Broken Abyssal Focus
+	[327597] = "낡고 녹슨 상자",	-- Old Rusty Chest
 	--TODO: [327669] = "Contained Alemental",	-- Contained Alemental
 	--TODO: [328343] = "Direbrew Cog",	-- Direbrew Cog
 	--TODO: [328413] = "Hozen Totem",	-- Hozen Totem
@@ -2977,6 +2980,7 @@ for key,value in pairs({
 	[375067] = "글리산도 보관함",	-- Glissandian Cache
 	[375068] = "푸가 보관함",	-- Fugueal Cache
 	[375069] = "노래의 보관함",	-- Cantaric Cache
+	[375191] = "휴면의 벽감 정렬",	-- Dormant Alcove Arrangement
 	[375270] = "원생형태 설계도",	-- Protoform Schematic
 	[375272] = "나락살이 보관함",	-- Mawsworn Cache
 	[375281] = "도둑맞은 유물",	-- Stolen Relic

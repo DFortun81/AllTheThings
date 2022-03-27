@@ -952,6 +952,7 @@ for key,value in pairs({
 	[142122] = "Cartel de Se busca",	-- Wanted Poster
 	[142127] = "Secreto de Rin'ji",	-- Rin'ji's Secret
 	[142151] = "Barrica sellada",	-- Sealed Barrel
+	[142184] = "Cofre del Capitán",	-- Captain's Chest
 	[142195] = "Mapa de batalla de los Zarpaleña",	-- Woodpaw Battle Map
 	[142343] = "Pedestal de Uldum",	-- Uldum Pedestal
 	[142344] = "Extrapolador artificial",	-- Artificial Extrapolator
@@ -2074,6 +2075,7 @@ for key,value in pairs({
 	[250108] = "Arqueta pequeña",	-- Small Treasure Chest
 	[250109] = "Arqueta",	-- Treasure Chest
 	[250383] = "Reliquia Sombra Lunar",	-- Moonshade Relic
+	[250541] = "Arqueta",	-- Treasure Chest
 	--TODO: [250671] = "Notes on the Veiled Hand",	-- Notes on the Veiled Hand
 	[250984] = "Arqueta pequeña",	-- Small Treasure Chest
 	[250985] = "Arqueta",	-- Treasure Chest
@@ -2596,6 +2598,7 @@ for key,value in pairs({
 	[327591] = "Diario conservado",	-- Preserved Journal
 	[327592] = "Cerrojo encantado",	-- Enchanted Lock
 	[327596] = "Enfoque abisal roto",	-- Broken Abyssal Focus
+	[327597] = "Viejo cofre oxidado",	-- Old Rusty Chest
 	[327669] = "Elemental de cerveza contenido",	-- Contained Alemental
 	--TODO: [328343] = "Direbrew Cog",	-- Direbrew Cog
 	--TODO: [328413] = "Hozen Totem",	-- Hozen Totem
@@ -2981,6 +2984,7 @@ for key,value in pairs({
 	[375067] = "Alijo glissandiano",	-- Glissandian Cache
 	[375068] = "Alijo de fuga",	-- Fugueal Cache
 	[375069] = "Alijo cantárico",	-- Cantaric Cache
+	[375191] = "Disposición de la Alcoba Durmiente",	-- Dormant Alcove Arrangement
 	[375270] = "Esquema de protoforma",	-- Protoform Schematic
 	[375272] = "Alijo jurafauces",	-- Mawsworn Cache
 	[375281] = "Reliquia robada",	-- Stolen Relic

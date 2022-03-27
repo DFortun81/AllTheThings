@@ -947,6 +947,7 @@ for key,value in pairs({
 	[142122] = "Avis de recherche",	-- Wanted Poster
 	[142127] = "Secret de Rin'ji",	-- Rin'ji's Secret
 	[142151] = "Tonneau scellé",	-- Sealed Barrel
+	[142184] = "Coffre du capitaine",	-- Captain's Chest
 	[142195] = "Plan de bataille des Griffebois",	-- Woodpaw Battle Map
 	[142343] = "Piédestal d'Uldum",	-- Uldum Pedestal
 	[142344] = "Extrapolateur artificiel",	-- Artificial Extrapolator
@@ -2069,6 +2070,7 @@ for key,value in pairs({
 	[250108] = "Petit coffre au trésor",	-- Small Treasure Chest
 	[250109] = "Coffre au trésor",	-- Treasure Chest
 	[250383] = "Relique de Lunombrage",	-- Moonshade Relic
+	[250541] = "Coffre au trésor",	-- Treasure Chest
 	--TODO: [250671] = "Notes on the Veiled Hand",	-- Notes on the Veiled Hand
 	[250984] = "Petit coffre au trésor",	-- Small Treasure Chest
 	[250985] = "Coffre au trésor",	-- Treasure Chest
@@ -2591,6 +2593,7 @@ for key,value in pairs({
 	[327591] = "Journal en bon état",	-- Preserved Journal
 	[327592] = "Verrou enchanté",	-- Enchanted Lock
 	[327596] = "Focalisateur abyssal endommagé",	-- Broken Abyssal Focus
+	[327597] = "Vieux coffre rouillé",	-- Old Rusty Chest
 	[327669] = "Elémenbière contenu",	-- Contained Alemental
 	[328343] = "Rouage navrebière",	-- Direbrew Cog
 	[328413] = "Totem hozen",	-- Hozen Totem
@@ -2976,6 +2979,7 @@ for key,value in pairs({
 	[375067] = "Cache glissandienne",	-- Glissandian Cache
 	[375068] = "Cache fuguéale",	-- Fugueal Cache
 	[375069] = "Cache cantabilienne",	-- Cantaric Cache
+	[375191] = "Agencement de l’alcôve Dormante",	-- Dormant Alcove Arrangement
 	[375270] = "Schéma de protoforme",	-- Protoform Schematic
 	[375272] = "Cache antrelige",	-- Mawsworn Cache
 	[375281] = "Relique volée",	-- Stolen Relic
