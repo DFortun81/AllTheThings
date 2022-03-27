@@ -2566,6 +2566,8 @@ _.ExpansionFeatures =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 78487 },	-- Rokhan
 					["isBreadcrumb"] = true,
+					-- TODO: convert to lock criteria for learned follower?
+					["DisablePartySync"] = true,	-- doesn't appear to be available once learning follower(180),	-- Shadow Hunter Rala
 				}),
 				q(38257, {	-- We Need a Shipwright
 					["races"] = ALLIANCE_ONLY,

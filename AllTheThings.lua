@@ -11707,7 +11707,7 @@ local questFields = {
 	["sourceQuestsCompleted"] = function(t)
 		if t.sourceQuests and #t.sourceQuests > 0 then
 			local completed = true;
-			local includeBreadcrumbs = app.Settings:Get("Thing:QuestBreadcrumbs");
+			local includeBreadcrumbs = app.Settings:Get("Thing:QuestsLocked");
 			local sq;
 			for i,sourceQuestID in ipairs(t.sourceQuests) do
 				if not IsQuestFlaggedCompleted(sourceQuestID) then
@@ -11826,7 +11826,7 @@ app.CollectibleAsQuest = function(t)
 				)
 			)
 		)
-	);
+	)
 end
 
 -- These are Items rewarded by WQs which are treated as currency
@@ -13860,7 +13860,7 @@ app.CustomCollectQuests = {
 function app.QuestCompletionHelper(questID)
 	if questID then
 		-- Only increase progress for Quests as Collectible users.
-		if app.CollectibleQuests then
+		if app.CollectibleQuests or app.CollectibleQuestsLocked then
 			-- Search ATT for the related quests.
 			local searchResults = SearchForField("questID", questID);
 			UpdateSearchResults(searchResults, true);
@@ -20306,7 +20306,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				local temp = {};
 				-- options when refreshing the list
 				self.includeAll = app.MODE_DEBUG;
-				self.includeQuests = app.CollectibleQuests;
+				self.includeQuests = app.CollectibleQuests or app.CollectibleQuestsLocked;
 				self.includePermanent = IsAltKeyDown() or self.includeAll;
 
 				-- Acquire all of the world mapIDs
