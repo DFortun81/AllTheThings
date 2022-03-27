@@ -1390,13 +1390,7 @@ end
 
 -- Classic / Retail Helper Functions
 -- #if ANYCLASSIC
-isanyclassic = function(modifier, data)
-	return modifier(data);
-end
 applyclassicphase = function(phase, data)
-	return bubbleDown({ ["u"] = phase }, data);
-end
-applylegacyclassicphase = function(phase, data)
 	return bubbleDown({ ["u"] = phase }, data);
 end
 applyholiday = function(holiday, data)
@@ -1422,14 +1416,8 @@ removeclassicphase = function(t)
 	end
 end
 -- #else
-isanyclassic = function(modifier, data)
-	return data;
-end
 applyclassicphase = function(phase, data)
 	return data;
-end
-applylegacyclassicphase = function(phase, data)
-	return bubbleDown({ ["u"] = REMOVED_FROM_GAME }, data);
 end
 applyholiday = function(holiday, data)
 	return bubbleDown({ ["u"] = holiday }, data);
