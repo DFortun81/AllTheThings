@@ -946,6 +946,7 @@ for key,value in pairs({
 	[142122] = "Manifesto dei Ricercati",	-- Wanted Poster
 	[142127] = "Rin'ji's Secret",	-- Rin'ji's Secret	--TODO: This was taken from classic Wowhead
 	[142151] = "Barile Sigillato",	-- Sealed Barrel
+	[142184] = "Cassa del Capitano",	-- Captain's Chest
 	[142195] = "Piani di Battaglia degli Gnoll",	-- Woodpaw Battle Map
 	[142343] = "Piedistallo di Uldum",	-- Uldum Pedestal
 	[142344] = "Estrapolatore Artificiale",	-- Artificial Extrapolator
@@ -2068,6 +2069,7 @@ for key,value in pairs({
 	[250108] = "Cassa del Tesoro Piccola",	-- Small Treasure Chest
 	[250109] = "Cassa del Tesoro",	-- Treasure Chest
 	[250383] = "Reliquia di Ombraluna",	-- Moonshade Relic
+	[250541] = "Cassa del Tesoro",	-- Treasure Chest
 	--TODO: [250671] = "Notes on the Veiled Hand",	-- Notes on the Veiled Hand
 	[250984] = "Cassa del Tesoro Piccola",	-- Small Treasure Chest
 	[250985] = "Cassa del Tesoro",	-- Treasure Chest
@@ -2590,6 +2592,7 @@ for key,value in pairs({
 	[327591] = "Diario Conservato",	-- Preserved Journal
 	[327592] = "Lucchetto Incantato",	-- Enchanted Lock
 	[327596] = "Focus Abissale Rotto",	-- Broken Abyssal Focus
+	[327597] = "Vecchia Cassa Arrugginita",	-- Old Rusty Chest
 	--TODO: [327669] = "Contained Alemental",	-- Contained Alemental
 	--TODO: [328343] = "Direbrew Cog",	-- Direbrew Cog
 	--TODO: [328413] = "Hozen Totem",	-- Hozen Totem
@@ -2975,6 +2978,7 @@ for key,value in pairs({
 	[375067] = "Cassa Glissandiana",	-- Glissandian Cache
 	[375068] = "Cassa Fuguelica",	-- Fugueal Cache
 	[375069] = "Cassa Cantarica",	-- Cantaric Cache
+	[375191] = "Disposizione dell'Alcova Dormiente",	-- Dormant Alcove Arrangement
 	[375270] = "Schema di Protoforma",	-- Protoform Schematic
 	[375272] = "Scrigno dei Giurafauce",	-- Mawsworn Cache
 	[375281] = "Reliquia Rubata",	-- Stolen Relic
@@ -3016,7 +3020,7 @@ for key,value in pairs({
 	[375479] = "Schema di Protoforma",	-- Protoform Schematic
 	[375481] = "Stranezza Sottratta",	-- Pilfered Curio
 	[375483] = "Pergamena Rubata",	-- Stolen Scroll
-	--TODO: [375484] = "Grateful Boon",	-- Grateful Boon
+	[375484] = "Dono Grato",	-- Grateful Boon
 	[375485] = "Mietitore di Protoflora",	-- Protoflora Harvester
 	[375486] = "Schema di Protoforma",	-- Protoform Schematic
 	[375492] = "Scrigno Sintattico",	-- Syntactic Vault
@@ -3033,7 +3037,7 @@ for key,value in pairs({
 	[375538] = "Ovoide Perduto",	-- Lost Ovoid
 	[375693] = "Schema di Protoforma",	-- Protoform Schematic
 	[375694] = "Schema di Protoforma",	-- Protoform Schematic
-	--TODO: [375746] = "Protoform Schematic",	-- Protoform Schematic
+	[375746] = "Schema di Prototipo",	-- Prototype Schematic
 	[375748] = "Schema di Protoforma",	-- Protoform Schematic
 	[375889] = "Schema di Protoforma",	-- Protoform Schematic
 	[375893] = "Scrigno di Grande Valore",	-- High Value Cache

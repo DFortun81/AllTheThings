@@ -948,6 +948,7 @@ for key,value in pairs({
 	[142122] = "현상 수배 전단",	-- Wanted Poster
 	[142127] = "린지의 비밀",	-- Rin'ji's Secret	--TODO: This was taken from classic Wowhead
 	[142151] = "봉인된 통",	-- Sealed Barrel
+	[142184] = "선장의 상자",	-- Captain's Chest
 	[142195] = "덩굴발 작전도",	-- Woodpaw Battle Map
 	[142343] = "울둠 대좌",	-- Uldum Pedestal
 	[142344] = "인공장치 검출기",	-- Artificial Extrapolator
@@ -2070,6 +2071,7 @@ for key,value in pairs({
 	[250108] = "작은 보물 상자",	-- Small Treasure Chest
 	[250109] = "보물 상자",	-- Treasure Chest
 	[250383] = "달그늘 성물",	-- Moonshade Relic
+	[250541] = "보물 상자",	-- Treasure Chest
 	--TODO: [250671] = "Notes on the Veiled Hand",	-- Notes on the Veiled Hand
 	[250984] = "작은 보물 상자",	-- Small Treasure Chest
 	[250985] = "보물 상자",	-- Treasure Chest
@@ -2269,7 +2271,7 @@ for key,value in pairs({
 	--TODO: [276228] = "Desperate Eredar's Cache",	-- Desperate Eredar's Cache
 	[276229] = "부서진 집 상자",	-- Shattered House Chest
 	[276230] = "파멸길잡이의 보물",	-- Doomseeker's Treasure
-	--TODO: [276251] = "Excavation Inventory",	-- Excavation Inventory
+	[276251] = "발굴품 목록",	-- Excavation Inventory
 	[276488] = "아제라이트 포탄",	-- Azurite Cannonball
 	[276489] = "군단 탑 상자",	-- Legion Tower Chest
 	--TODO: [276490] = "Krokul Emergency Cache",	-- Krokul Emergency Cache
@@ -2454,7 +2456,7 @@ for key,value in pairs({
 	--TODO: [294114] = "Broken Tablet",	-- Broken Tablet
 	--TODO: [294115] = "Ashed Torch",	-- Ashed Torch
 	--TODO: [294173] = "Venture Co. Supply Chest",	-- Venture Co. Supply Chest
-	--TODO: [294174] = "Forgotten Chest",	-- Forgotten Chest
+	[294174] = "잊혀진 상자",	-- Forgotten Chest
 	--TODO: [294312] = "Grimmy's List of Friends",	-- Grimmy's List of Friends
 	--TODO: [294314] = "Grimmy's List of Enemies",	-- Grimmy's List of Enemies
 	--TODO: [294315] = "Grimmy's Favorite Recipe",	-- Grimmy's Favorite Recipe
@@ -2592,6 +2594,7 @@ for key,value in pairs({
 	[327591] = "보존된 일기",	-- Preserved Journal
 	[327592] = "마법 자물쇠",	-- Enchanted Lock
 	[327596] = "부서진 심연 집중",	-- Broken Abyssal Focus
+	[327597] = "낡고 녹슨 상자",	-- Old Rusty Chest
 	--TODO: [327669] = "Contained Alemental",	-- Contained Alemental
 	--TODO: [328343] = "Direbrew Cog",	-- Direbrew Cog
 	--TODO: [328413] = "Hozen Totem",	-- Hozen Totem
@@ -2977,6 +2980,7 @@ for key,value in pairs({
 	[375067] = "글리산도 보관함",	-- Glissandian Cache
 	[375068] = "푸가 보관함",	-- Fugueal Cache
 	[375069] = "노래의 보관함",	-- Cantaric Cache
+	[375191] = "휴면의 벽감 정렬",	-- Dormant Alcove Arrangement
 	[375270] = "원생형태 설계도",	-- Protoform Schematic
 	[375272] = "나락살이 보관함",	-- Mawsworn Cache
 	[375281] = "도둑맞은 유물",	-- Stolen Relic
@@ -3011,7 +3015,7 @@ for key,value in pairs({
 	[375405] = "훔친 유물",	-- Filched Artifact
 	[375408] = "설계사의 비축물",	-- Architect's Reserve
 	[375411] = "오해하기 쉬운 계란형 물체",	-- Mistaken Ovoid
-	--TODO: [375413] = "Drowned Broker Supplies",	-- Drowned Broker Supplies
+	[375413] = "물에 빠진 중개자 보급품",	-- Drowned Broker Supplies
 	[375422] = "너무 자란 원생열매",	-- Overgrown Protofruit
 	[375423] = "태초의 존재에게 바쳐진 공물",	-- Offering to the First Ones
 	[375478] = "원생광물 추출기",	-- Protomineral Extractor
@@ -3043,7 +3047,7 @@ for key,value in pairs({
 	[375902] = "찢겨 나간 실체 없는 외투",	-- Torn Ethereal Drape
 	[375903] = "원생형태 설계도",	-- Protoform Schematic
 	[375905] = "원생형태 설계도",	-- Protoform Schematic
-	--TODO: [375907] = "Protoform Schematic",	-- Protoform Schematic
+	[375907] = "원생형태 설계도",	-- Protoform Schematic
 	[375915] = "평온의 미명",	-- Glimmer of Serenity
 	[375950] = "순수한 혁신의 보석",	-- Bauble of Pure Innovation
 	[375972] = "현상 수배: 쿠스토스",	-- Wanted: Custos
@@ -3056,7 +3060,7 @@ for key,value in pairs({
 	[375985] = "피림의 추방기 제5부",	-- Firim in Exile, Part 5
 	[375986] = "피림의 추방기 제6부",	-- Firim in Exile, Part 6
 	[375987] = "피림의 추방기 제7부",	-- Firim in Exile, Part 7
-	--TODO: [375988] = "Firim in Exile, Epilogue",	-- Firim in Exile, Epilogue
+	[375988] = "피림의 추방기 후일담",	-- Firim in Exile, Epilogue
 	[376041] = "가려진 암호 보관함",	-- Shrouded Cypher Cache
 	[9962198] = "추방자의 급조한 진흙 웅덩이",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
