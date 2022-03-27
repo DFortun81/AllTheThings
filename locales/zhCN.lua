@@ -948,6 +948,7 @@ for key, value in pairs({
 	[142122] = "通缉：卡利夫·斯科比斯汀",	-- Wanted Poster	--TODO: This was taken from classic Wowhead
 	[142127] = "林吉的秘密",	-- Rin'ji's Secret	--TODO: This was taken from classic Wowhead
 	[142151] = "密封的桶",	-- Sealed Barrel
+	[142184] = "船长的箱子",	-- Captain's Chest
 	[142195] = "木爪作战地图",	-- Woodpaw Battle Map
 	[142343] = "奥丹姆石座",	-- Uldum Pedestal
 	[142344] = "机械储存柜",	-- Artificial Extrapolator
@@ -2070,6 +2071,7 @@ for key, value in pairs({
 	[250108] = "小宝箱",	-- Small Treasure Chest
 	[250109] = "宝箱",	-- Treasure Chest
 	[250383] = "月影圣物",	-- Moonshade Relic
+	[250541] = "宝箱",	-- Treasure Chest
 	--TODO: [250671] = "Notes on the Veiled Hand",	-- Notes on the Veiled Hand
 	[250984] = "小宝箱",	-- Small Treasure Chest
 	[250985] = "宝箱",	-- Treasure Chest
@@ -2592,6 +2594,7 @@ for key, value in pairs({
 	[327591] = "保存完好的日志",	-- Preserved Journal
 	[327592] = "魔力之锁",	-- Enchanted Lock
 	[327596] = "毁坏的深渊法器",	-- Broken Abyssal Focus
+	[327597] = "生锈的旧箱子",	-- Old Rusty Chest
 	--TODO: [327669] = "Contained Alemental",	-- Contained Alemental
 	--TODO: [328343] = "Direbrew Cog",	-- Direbrew Cog
 	--TODO: [328413] = "Hozen Totem",	-- Hozen Totem
@@ -2977,6 +2980,7 @@ for key, value in pairs({
 	[375067] = "滑音宝箱",	-- Glissandian Cache
 	[375068] = "赋格宝箱",	-- Fugueal Cache
 	[375069] = "声乐宝箱",	-- Cantaric Cache
+	[375191] = "休眠凹室指向",	-- Dormant Alcove Arrangement
 	[375270] = "原生体设计方案",	-- Protoform Schematic
 	[375272] = "渊誓之箱",	-- Mawsworn Cache
 	[375281] = "失窃的圣物",	-- Stolen Relic
