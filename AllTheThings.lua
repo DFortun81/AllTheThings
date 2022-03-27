@@ -11678,32 +11678,6 @@ local questFields = {
 			end
 		end
 	end,
-	["breadcrumbLockedBy"] = function(t)
-		-- returns nil if available or non-breadcrumb quest, or returns a completed questID which blocks this breadcrumb from being obtained
-		-- TODO: change to 'isLockedBy' property for all quests
-		-- do not consider a completed breadcrumb as being locked from being collectible
-		if not IsQuestFlaggedCompleted(t.questID) then
-			-- determine if a 'nextQuest' exists and is completed specifically by this character, to remove availability of the breadcrumb
-			if t.isBreadcrumb and t.nextQuests then
-				local nq;
-				for i,questID in ipairs(t.nextQuests) do
-					if IsQuestFlaggedCompleted(questID) then
-						rawset(t, "breadcrumbLockedBy", questID);
-						rawset(t, "locked", questID);
-						return questID;
-					else
-						-- this questID may not even be available to pick up, so try to find an object with this questID to determine if the object is complete
-						nq = app.SearchForObject("questID", questID);
-						if nq and (IsQuestFlaggedCompleted(nq.questID) or nq.altcollected or nq.breadcrumbLockedBy) then
-							rawset(t, "breadcrumbLockedBy", questID);
-							rawset(t, "locked", questID);
-							return questID;
-						end
-					end
-				end
-			end
-		end
-	end,
 	["sourceQuestsCompleted"] = function(t)
 		if t.sourceQuests and #t.sourceQuests > 0 then
 			local completed = true;
@@ -11718,7 +11692,7 @@ local questFields = {
 						-- otherwise incomplete breadcrumbs will not prevent picking up a quest if they are ignored
 						sq = app.SearchForObject("questID", sourceQuestID);
 						if sq then
-							if not sq.isBreadcrumb and not (sq.breadcrumbLockedBy or sq.altcollected) then
+							if not sq.isBreadcrumb and not (sq.locked or sq.altcollected) then
 								completed = false;
 							end
 						else
@@ -11729,6 +11703,8 @@ local questFields = {
 			end
 			return completed;
 		end
+		-- no source quests, then no pre-requisites
+		return true;
 	end,
 	["locked"] = function(t)
 		local questID = t.questID;
@@ -11764,8 +11740,22 @@ local questFields = {
 					i = i + 1;
 				end
 			end
-			if t.breadcrumbLockedBy then
-				return true;
+			-- determine if a 'nextQuest' exists and is completed specifically by this character, to remove availability of the breadcrumb
+			if t.isBreadcrumb and t.nextQuests then
+				local nq;
+				for _,questID in ipairs(t.nextQuests) do
+					if IsQuestFlaggedCompleted(questID) then
+						rawset(t, "locked", questID);
+						return questID;
+					else
+						-- this questID may not even be available to pick up, so try to find an object with this questID to determine if the object is complete
+						nq = app.SearchForObject("questID", questID);
+						if nq and (IsQuestFlaggedCompleted(nq.questID) or nq.altcollected or nq.locked) then
+							rawset(t, "locked", questID);
+							return questID;
+						end
+					end
+				end
 			end
 		end
 		-- rawset means that this will persist as a non-locked quest until reload, so quests that become locked while playing will not immediately update
