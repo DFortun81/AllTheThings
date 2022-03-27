@@ -11777,34 +11777,56 @@ app.BaseQuest = app.BaseObjectFields(questFields, "BaseQuest");
 
 -- consolidated representation of whether a Thing can be collectible via QuestID
 app.CollectibleAsQuest = function(t)
+	local questID = t.questID;
 	return
-	-- must treat Quests as collectible
-	app.CollectibleQuests
 	-- must have a questID associated
-	and t.questID
-	and (
+	questID
+	-- must not be repeatable, unless considering repeatable quests as collectible
+	and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"))
+	and
+	(
+		(	-- Regular Quests
+			app.CollectibleQuests
+			and
 			(
-			-- must not be repeatable, unless considering repeatable quests as collectible
-			(not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"))
-			-- debug mode
-			and (app.MODE_DEBUG
-				-- or must not be a breadcrumb and be account mode, or able to access the quest on current character
-				or (not t.isBreadcrumb and (app.MODE_ACCOUNT or not t.locked))
-				-- unless collecting breadcrumbs (rename to 'difficult' quests?)
-				or (app.CollectibleBreadcrumbs and
-					-- in account mode
-					(app.MODE_ACCOUNT
-					-- or party sync without the quest being disabled for it
-					or (app.IsInPartySync and not t.DisablePartySync))))
-			-- account-wide quests (special case since quests are only available once per account, so can only consider them collectible if they've never been completed otherwise)
-			and (app.AccountWideQuests
-				-- otherwise must not be a once-per-account quest which has already been flagged as completed on a different character
-				or (not ATTAccountWideData.OneTimeQuests[t.questID] or ATTAccountWideData.OneTimeQuests[t.questID] == app.GUID)))
-
-			-- If it is an item and associated to an active quest.
-			-- TODO: add t.requiredForQuestID
-			or (not t.isWorldQuest and (t.cost or t.itemID) and C_QuestLog_IsOnQuest(t.questID))
-		);
+				(
+					(
+						-- debug/account mode
+						app.MODE_DEBUG_OR_ACCOUNT
+						-- or able to access quest on current character
+						or not t.locked
+					)
+					-- account-wide quests (special case since quests are only available once per account, so can only consider them collectible if they've never been completed otherwise)
+					and
+					(
+						app.AccountWideQuests
+						-- otherwise must not be a once-per-account quest which has already been flagged as completed on a different character
+						or (not ATTAccountWideData.OneTimeQuests[questID] or ATTAccountWideData.OneTimeQuests[questID] == app.GUID)
+					)
+				)
+				-- If it is an item/cost and associated to an active quest.
+				-- TODO: add t.requiredForQuestID
+				or (not t.isWorldQuest and (t.cost or t.itemID) and C_QuestLog_IsOnQuest(questID))
+			)
+		)
+		or
+		(	-- Locked Quests
+			app.CollectibleQuestsLocked
+			and
+			(
+				-- not able to access quest on current character
+				t.locked
+				and
+				(
+					-- debug/account mode
+					app.MODE_DEBUG_OR_ACCOUNT
+					or
+					-- available in party sync
+					not t.DisablePartySync
+				)
+			)
+		)
+	);
 end
 
 -- These are Items rewarded by WQs which are treated as currency
