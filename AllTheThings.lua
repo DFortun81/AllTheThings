@@ -1336,6 +1336,7 @@ app.Colors = {
 	["Raid"] = "ffff8000",
 	["SourceIgnored"] = "ffd15517",
 	["Locked"] = "ff7f40bf",
+	["LockedWarning"] = "ffd15517",
 	["Horde"] = "ffcc6666",
 	["Alliance"] = "ff407fbf",
 	["Completed"] = "ff15abff",
@@ -4739,7 +4740,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		-- If the user wants to show the progress of this search result, do so
 		if app.Settings:GetTooltipSetting("Progress") and (group.key ~= "spellID" or group.collectible) then
 			group.collectionText = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(group);
-			
+
 			-- add the progress as a new line for encounter tooltips instead of using right text since it can overlap the NPC name
 			if group.encounterID then tinsert(info, 1, { left = "Progress", right = group.collectionText }); end
 		end
@@ -5927,7 +5928,7 @@ local function AddTomTomWaypointInternal(group, depth)
 			end
 			depth = depth - 1;
 		end
-		
+
 		local searchResults = ResolveSymbolicLink(group);
 		if searchResults then
 			depth = depth + 1;
@@ -5937,7 +5938,7 @@ local function AddTomTomWaypointInternal(group, depth)
 			depth = depth - 1;
 		end
 		group.plotting = nil;
-		
+
 		if TomTom then
 			if (depth == 0 and not __TomTomWaypointFirst) or not group.saved then
 				if group.coords or group.coord then
@@ -6047,7 +6048,7 @@ AddTomTomWaypoint = function(group)
 								tinsert(root, group);
 							end
 						end
-						
+
 						local first = root[1];
 						if first then
 							local opt = { from = "ATT", persistent = false };
@@ -6061,7 +6062,7 @@ AddTomTomWaypoint = function(group)
 								opt.minimap_icon = first.icon;
 								opt.worldmap_icon = first.icon;
 							end
-							
+
 							local callbacks = TomTom:DefaultCallbacks();
 							callbacks.minimap.tooltip_update = Nil;
 							callbacks.minimap.tooltip_show = function(event, tooltip, uid, dist)
@@ -11846,18 +11847,14 @@ local questFields = {
 		if not IsQuestFlaggedCompleted(questID) then
 			local lockCriteria = t.lc;
 			if lockCriteria then
-				print("lockCriteria for",questID)
 				local criteriaRequired = lockCriteria[1];
 				local critKey, critFunc;
 				local i, limit = 2, #lockCriteria;
 				while i < limit do
 					critKey = lockCriteria[i];
 					critFunc = criteriaFuncs[critKey];
-					print("key",i,critKey)
 					i = i + 1;
-					print("i",i)
 					if critFunc then
-						print("Lock Criteria check",questID,critKey,lockCriteria[i],critFunc(lockCriteria[i]))
 						if critFunc(lockCriteria[i]) then
 							criteriaRequired = criteriaRequired - 1;
 						end
@@ -16039,7 +16036,7 @@ RowOnEnter = function (self)
 					GameTooltip:AddLine(L["BREADCRUMB_PARTYSYNC_2"]);
 				end
 				for i,nquest in ipairs(nextq) do
-					GameTooltip:AddLine("   " .. nquest.questID .. ": " .. nquest.text);
+					GameTooltip:AddLine(GetCompletionIcon(nquest.saved) .. " " .. nquest.questID .. ": " .. nquest.text);
 				end
 			elseif not reference.DisablePartySync then
 				-- There is no information about next quests that invalidates the breadcrumb
@@ -16055,7 +16052,7 @@ RowOnEnter = function (self)
 			local critKey, critValue;
 			local critFuncs = app.QuestLockCriteriaFunctions;
 			local critFunc;
-			GameTooltip:AddLine(string.format("Becomes unavailable if %d of the following are met:", lockCriteria[1]), HexToRGB("d15517"));
+			GameTooltip:AddLine(string.format("|c%sBecomes unavailable if %d of the following are met:|r", app.Colors.LockedWarning, lockCriteria[1]));
 			for i=2,#lockCriteria,1 do
 				critKey = lockCriteria[i];
 				i = i + 1;
