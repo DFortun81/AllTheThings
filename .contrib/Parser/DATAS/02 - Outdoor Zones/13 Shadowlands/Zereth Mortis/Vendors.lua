@@ -304,6 +304,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(187640, {	-- Anointed Protostag (MOUNT!)
 						["cost"] = { { "c", ANIMA, 5000 } },
 					}),
+					i(191701),	-- Bag of Explored Souls
 					i(190237),	-- Broker Translocation Matrix (TOY!)
 					i(190956, {	-- Decanter of Untapped Potential
 						--["questID"] = ,

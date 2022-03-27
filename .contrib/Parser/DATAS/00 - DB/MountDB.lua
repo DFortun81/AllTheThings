@@ -641,15 +641,15 @@ i(89304, 129918);	-- Thundering August Cloud Serpent
 i(85666, 124408);	-- Thundering Jade Cloud Serpent
 i(87775, 127165);	-- Yu'lei, Daughter of Jade
 -- NYI --
-i(87785, 127180);	-- Albino Riding Crane
-i(87786, 127209);	-- Black Riding Yak
-i(87787, 127213);	-- Brown Riding Yak
-i(84728, 123160);	-- Crimson Riding Crane
-i(87794, 127278);	-- Golden Water Strider
-i(87793, 127274);	-- Jade Water Strider
-i(87784, 127178);	-- Jungle Riding Crane
-i(87792, 127272);	-- Orange Water Strider
-i(84753, 123182);	-- White Riding Yak
+i(87785, 127180);	-- Albino Riding Crane	/	Reins of the Albino Riding Crane
+i(87786, 127209);	-- Black Riding Yak	/	Reins of the Black Riding Yak
+i(87787, 127213);	-- Brown Riding Yak	/	Reins of the Brown Riding Yak
+i(84728, 123160);	-- Crimson Riding Crane	/	Reins of the Crimson Riding Crane
+i(87794, 127278);	-- Golden Water Strider	/	Reins of the Golden Water Strider
+i(87793, 127274);	-- Jade Water Strider	/	Reins of the Jade Water Strider
+i(87784, 127178);	-- Jungle Riding Crane	/	Reins of the Jungle Riding Crane
+i(87792, 127272);	-- Orange Water Strider	/	Reins of the Orange Water Strider
+i(84753, 123182);	-- White Riding Yak	/	Reins of the White Riding Yak
 
 -----------------
 -- PATCH 5.0.5 --
@@ -686,7 +686,7 @@ i(91007, 127290);	-- Red Dragon Turtle (PANDA)
 i(90712, 132119);	-- Violet Pandaren Phoenix
 i(90655, 132036);	-- Thundering Ruby Cloud Serpent
 -- NYI --
-i(91016, 120822);	-- Great Red Dragon Turtle
+i(91016, 120822);	-- Great Red Dragon Turtle	/	Reins of the Great Red Dragon Turtle
 
 -----------------
 -- PATCH 5.1.0 --
@@ -744,7 +744,7 @@ i(102533, 146622);	-- Vicious Skeletal Warhorse
 i(104269, 148476);	-- Thundering Onyx Cloud Serpent
 i(104325, 148618);	-- Tyrannical Gladiator's Cloud Serpent
 -- NYI --
-i(104011, 147595);	-- Stormcrow
+i(104011, 147595);	-- Stormcrow	/	Stormcrow
 
 -----------------
 -- PATCH 5.4.1 --
@@ -821,7 +821,7 @@ i(116788, 171845);	-- Warlord's Deathwheel
 i(116780, 171837);	-- Warsong Direfang
 i(116655, 171616);	-- Witherhide Cliffstomper
 -- NYI --
-i(116657, 171618);	-- Ancient Leatherhide
+i(116657, 171618);	-- Ancient Leatherhide	/	Ancient Leatherhide
 
 -----------------
 -- PATCH 6.1.0 --
@@ -848,7 +848,7 @@ i(124089, 183889);	-- Vicious War Mechanostrider
 i(128282, 189044);	-- Warmongering Gladiator's Felblood Gronnling
 i(128281, 189043);	-- Wild Gladiator's Felblood Gronnling
 -- NYI --
-i(128480, 190690);	-- Bristling Hellboar
+i(128480, 190690);	-- Bristling Hellboar	/	Bristling Hellboar
 
 -----------------
 -- PATCH 6.2.1 --
@@ -916,10 +916,10 @@ i(140348, 223363);	-- Vicious Warstrider
 i(141843, 227986);	-- Vindictive Gladiator's Storm Dragon
 i(137580, 213165);	-- Viridian Sharptalon
 -- NYI --
-i(137576, 171840);	-- Coldflame Infernal
-i(138386, 0);	-- Fel Bat (Test)
-i(137615, 213349);	-- Flarecore Infernal
-i(129744, 142910);	-- Ironbound Wraithcharger
+i(137576, 171840);	-- Coldflame Infernal	/	Dim Coldflame Core
+i(138386, 0);		-- Fel Bat (Test)
+i(137615, 213349);	-- Flarecore Infernal	/	Molten Flarecore
+i(129744, 142910);	-- Ironbound Wraithcharger	/	Iron Warhorse
 
 -----------------
 -- PATCH 7.1.0 --
@@ -972,7 +972,8 @@ i(143648, 232523);	-- Vicious War Turtle (A)
 i(143649, 232525);	-- Vicious War Turtle (H)
 i(147804, 242875);	-- Wild Dreamrunner
 -- NYI --
-i(143752, 267274);	-- Sound Test Mount / Mag'har Direwolf
+i(143752, 267274);	-- Mag'har Direwolf	/	Sound Test Mount
+--i(0, 241851);		-- Netherlord's Chaotic Wrathsteed
 --i(0, 239363);		-- Swift Spectral Hippogryph
 
 -----------------

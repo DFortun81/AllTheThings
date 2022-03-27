@@ -80,17 +80,17 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 				e(2465, {	-- Skolex, the Insatiable Ravener
 					["crs"] = { 181395 },	-- Skolex
 					["g"] = {
-						i(189819),	-- Assimilated Safeguard
-						i(188267),	-- Bells of the Endless Feast
-						i(189816),	-- Crystallized Viscera Spike
-						i(189812),	-- Devourer's Sandblown Hidebinders
-						i(189810),	-- Ephemera-Softened Exoskeleton
-						i(189814),	-- Gluttonous Gardbrace
-						i(189811),	-- Infinitely Collapsing Coil
-						i(189815),	-- Lurking Predator's Camouflage
-						i(189813),	-- Mantle of the Broken Beast
-						i(189817),	-- Rift-Scarred Solcrusher
-						i(189809),	-- Skolex's Ravenous Skinguards
+						i(181838),	-- Charitable Soul
+						i(182110),	-- Crippling Hex
+						i(182383),	-- Dancing with Fate
+						i(181980),	-- Embrace Death
+						i(181508),	-- Fortifying Ingredients
+						i(182336),	-- Golden Path
+						i(181469),	-- Indelible Victory
+						i(183502),	-- Prepared for All
+						i(182466),	-- Shade of Terror
+						i(183167),	-- Strength of the Pack
+						i(183484),	-- Unchecked Aggression
 					},
 				}),
 				e(2470, {	-- Artificer Xy'mox
@@ -101,36 +101,32 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						184007,	-- Xy Reinforcer
 					},
 					["g"] = {
-						i(188265),	-- Cache of Acquired Treasures
-						i(189827),	-- Cartel Xy's Proof of Initiation
-						i(189826),	-- Enforcer's Containment Cinch
-						i(189829),	-- Forerunner's Relic Blade
-						i(189821),	-- Illicit Artifact Holster
-						i(189822),	-- Imported Illidari Spaulders
-						i(188266),	-- Pulsating Riftshard
-						i(189830),	-- Replicated Relic Blade
-						i(189823),	-- Stolen Nathrian Slippers
-						i(189824),	-- Unlicensed Hyperlight Handlers
-						i(189825),	-- Veiled Auctioneer's Vambraces
-						i(189828),	-- Xy Captain's Crossbow
-
+						i(182128),	-- Call of Flame
+						i(180935),	-- Crash the Ramparts
+						i(182667),	-- Focused Light
+						i(182743),	-- Focused Malignancy
+						i(181756),	-- Incantation of Swiftness
+						i(183506),	-- Lethal Poisons
+						i(181844),	-- Pain Transformation
+						i(182469),	-- Rejuvenating Wind
+						i(181836),	-- Spirit Drain
+						i(183488),	-- Unstoppable Growth
 					},
 				}),
 				e(2459, {	-- Dausegne, the Fallen Oracle
 					["crs"] = { 181224 },	-- Dausegne
 					["g"] = {
-						i(189773),	-- Clasp of Crooked Crescendos
-						i(189787),	-- Dausegne's Dissonant Halo
-						i(189807),	-- Discordant Deathblade
-						i(189791),	-- Drape of Mournful Melodies
-						i(189784),	-- Epaulets of the Ailing Aria
-						i(189790),	-- Final Forte
-						i(189782),	-- Haunting Hymnal Robes
-						i(189788),	-- Maestro's Malice
-						i(189785),	-- Oracle's Chromatic Cuirass
-						i(188272),	-- Resonant Reservoir
-						i(189793),	-- Sash of the Silent Sonata
-						i(189786),	-- Song-Mad Sabatons
+						i(183510),	-- Count the Odds
+						i(181942),	-- Focused Mending
+						i(181504),	-- Infernal Cascade
+						i(181495),	-- Jade Bond
+						i(182677),	-- Punish the Guilty
+						i(182648),	-- Sharpshooter's Focus
+						i(182471),	-- Soul Furnace
+						i(182751),	-- Tyrant's Soul
+						i(182134),	-- Unruly Winds
+						i(181776),	-- Vicious Contempt
+						i(181866),	-- Withering Plague
 					},
 				}),
 				e(2460, {	-- Prototype Pantheon
@@ -141,60 +137,100 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						181548,	-- Prototype of Absolution
 					},
 					["g"] = {
-						i(189794),	-- Boots of Ceaseless Conflict
-						i(189796),	-- Duty's Ascendant Breastplate
-						i(188270),	-- Elegy of the Eternals
-						i(189799),	-- Elysia's Promise
-						i(189798),	-- Moccasins of Dreadful Absolution
-						i(189800),	-- Prelude to Pride
-						i(189789),	-- Pursuit of Victory
-						i(189783),	-- Sin-Steeped Coronet
-						i(188271),	-- The First Sigil
-						i(189795),	-- Winter's Stampeding Striders
-						i(189797),	-- Wristwraps of Night's Renewal
+						i(181770),	-- Bone Marrow Hops
+						i(182706),	-- Brooding Pool
+						i(182292),	-- Brutal Grasp
+						i(182962),	-- Catastrophic Origin
+						i(183473),	-- Conflux of Elements
+						i(181974),	-- Courageous Ascension
+						i(183471),	-- Deep Allegiance
+						i(182651),	-- Destructive Reverberations
+						i(181539),	-- Discipline of the Grove
+						i(182345),	-- Elysian Dirge
+						i(182331),	-- Empowered Release
+						i(183474),	-- Endless Thirst
+						i(182321),	-- Enfeebled Mark
+						i(182347),	-- Essential Extraction
+						i(183472),	-- Evolved Swarm
+						i(182129),	-- Fae Fermata
+						i(182961),	-- Fatal Decimation
+						i(181981),	-- Festering Transfusion
+						i(181553),	-- Gift of the Lich
+						i(182777),	-- Hallowed Discernment
+						i(182463),	-- Harrowing Punishment
+						i(181774),	-- Imbued Reflections
+						i(182288),	-- Impenetrable Gloom
+						i(182685),	-- Increased Scrutiny
+						i(181600),	-- Ire of the Ascended
+						i(183495),	-- Lashing Scars
+						i(182348),	-- Lavish Harvest
+						i(182339),	-- Necrotic Barrage
+						i(182440),	-- Piercing Verdict
+						i(182295),	-- Proliferation
+						i(182646),	-- Repeat Decree
+						i(183492),	-- Reverberation
+						i(182770),	-- Righteous Might
+						i(182778),	-- Ringing Clarity
+						i(183494),	-- Septic Shock
+						i(182130),	-- Shattered Perceptions
+						i(181639),	-- Siphoned Malice
+						i(182964),	-- Soul Eater
+						i(182960),	-- Soul Tithe
+						i(182335),	-- Spirit Attunement
+						i(181759),	-- Strike with Clarity
+						i(183493),	-- Sudden Fractures
+						i(182767),	-- The Long Summer
+						i(182346),	-- Tumbling Waves
+						i(183463),	-- Unnatural Malice
+						i(182442),	-- Veteran's Respite
+						i(181775),	-- Way of the Fae
+						i(183199),	-- Withering Ground
 					},
 				}),
 				e(2461, {	-- Lihuvim, Principal Architect
 					["crs"] = { 182169 },	-- Lihuvium
 					["g"] = {
-						i(188268),	-- Architect's Ingenuity Core
-						i(189803),	-- Automa-Tender's Tights
-						i(189805),	-- Bracers of the Inscrutable Inventor
-						i(189804),	-- Combustible Collaboration Girdle
-						i(189801),	-- Ephemera-Charged Thinking Cap
-						i(189754),	-- Genesis Lathe
-						i(189808),	-- Lihuvim's Severing Scalpel
-						i(189802),	-- Loquacious Keeper's Peridot
-						i(188269),	-- Pocket Protoforge
-						i(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
-						i(189178),	-- Tools of Incomprehensible Experimentation (PS)
+						i(182755),	-- Ashen Remains
+						i(181435),	-- Calculated Strikes
+						i(182140),	-- Dissonant Echoes
+						i(181982),	-- Everfrost
+						i(181455),	-- Icy Propulsion
+						i(183512),	-- Planned Execution
+						i(182624),	-- Show of Force
+						i(183482),	-- Sudden Ambush
+						i(182143),	-- Swirling Currents
+						i(182608),	-- Virtuous Command
 					},
 				}),
 				e(2463, {	-- Halondrus the Reclaimer
 					["crs"] = { 180906 },	-- Halondrus the Reclaimer
 					["g"] = {
-						i(188264),	-- Earthbreaker's Impact
-						i(189831),	-- Ephemera-Stained Sollerets
-						i(189832),	-- Greatboots of the Roaming Goliath
-						i(189834),	-- Guardstaff of the Great Cycle
-						i(189806),	-- Lightshatter Hatchet
-						i(189781),	-- Obscured Fractal Prism
-						i(188263),	-- Reclaimer's Intensity Core
-						i(189833),	-- Taciturn Keeper's Lapis
+						i(182748),	-- Borne of Blood
+						i(181712),	-- Depths of Insanity
+						i(183478),	-- Fury of the Skies
+						i(182137),	-- Magma Fist
+						i(182187),	-- Meat Shield
+						i(181511),	-- Nether Precision
+						i(182621),	-- One With the Beast
+						i(182325),	-- Ravenous Consumption
+						i(181944),	-- Resonant Words
+						i(181700),	-- Scalding Brew
+						i(183507),	-- Triple Threat
 					},
 				}),
 				e(2469, {	-- Anduin Wrynn
 					["crs"] = { 181954 },	-- Anduin Wrynn
 					["g"] = {
-						i(189835),	-- Anduin's Princely Vestments
-						i(189838),	-- Beacon of Stormwind
-						i(189837),	-- King's Wolfheart Wasitband
-						i(189840),	-- Remnant's Blasphemous Scourgebelt
-						i(189841),	-- Soulwarped Seal of Menethil
-						i(189839),	-- Soulwarped Seal of Wrynn
-						i(188262),	-- The Lion's Roar
-						i(189836),	-- Wrists of the Wicked Star
-						i(190967),	-- Mourne Fragment (QUEST!)
+						i(181848),	-- Accelerated Cold
+						i(182769),	-- Combusting Engine
+						i(183197),	-- Controlled Destruction
+						i(182142),	-- Embrace of Earth
+						i(180932),	-- Fueled by Violence
+						i(181737),	-- Nourishing Chi
+						i(183514),	-- Perforated Veins
+						i(182686),	-- Powerful Precision
+						i(183480),	-- Taste for Blood
+						i(182681),	-- Vengeful Shock
 					},
 				}),
 				e(2457, {	-- Lords of Dread
@@ -203,44 +239,38 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						181399,	-- Kin'tessa <The Beguiler>
 					},
 					["g"] = {
-						i(189846),	-- Alandien's Tortured Twinblades
-						i(189842),	-- Cuffs of the Covert Commander
-						i(189844),	-- Gauntlets of Unseen Guests
-						i(189843),	-- Grasps of Abducted Fate
-						i(188255),	-- Heart of the Swarm
-						i(188261),	-- Intrusive Thoughtcage
-						i(189845),	-- Ruined Crest of Lordaeron
-						i(189847),	-- Shroud of the Sire's Chosen
+						i(181462),	-- Coordinated Offensive
+						i(182598),	-- Demon Muzzle
+						i(181786),	-- Eternal Hunger
+						i(181461),	-- Ice Bite
+						i(181962),	-- Mental Recovery
+						i(183485),	-- Savage Combatant
+						i(183184),	-- Stinging Strike
+						i(182109),	-- Totemic Surge
+						i(182465),	-- Truth's Wake
 					},
 				}),
 				e(2467, {	-- Rygelon
 					["crs"] = { 182777 },	-- Rygelon
 					["g"] = {
-						i(189852),	-- Antumbra, Shadow of the Cosmos
-						i(189853),	-- Astral Verdict
-						i(189851),	-- Devastated Worldshard
-						i(188254),	-- Grim Eclipse
-						i(189850),	-- Handguards of Hidden Realms
-						i(189849),	-- Interdimensional Manica
-						i(191001),	-- Observer's Umbral Shiv
-						i(189854),	-- Rygelon's Heraldric Ring
-						i(189848),	-- Treads of Titanic Curiosity
+						i(183468),	-- Born Anew
+						i(180943),	-- Cacophonous Roar
+						i(182461),	-- Echoing Blessings
+						i(181498),	-- Grounding Surge
+						i(183497),	-- Recuperator
+						i(182368),	-- Relentless Onslaught
 					},
 				}),
 				e(2464, {	-- The Jailer
 					["crs"] = { 185421 },	-- Zovaal <The Jailer>
 					["g"] = {
-						i(189855),	-- Bindings of the Banished One
-						i(188252),	-- Chains of Domination
-						i(189818),	-- Domination's Deliverance
-						i(189857),	-- Epochal Oppressor's Greaves
-						i(189860),	-- Forbidden Truth
-						i(189862),	-- Gavel of the First Arbiter
-						i(189858),	-- Legguards of the Ultimate Threat
-						i(189856),	-- Runecarver's Twisted Ward
-						i(188253),	-- Scars of Fraternal Strife
-						i(189859),	-- Worldkiller Iris
-						i(189861),	-- Zovastrum, the Unmaking
+						i(181975),	-- Hardened Bones
+						i(182131),	-- Haunting Apparitions
+						i(181510),	-- Lingering Numbness
+						i(183491),	-- Ready for Anything
+						i(182449),	-- Resolute Barrier
+						i(182480),	-- Reversal of Fortune
+						i(182318),	-- Viscous Ink
 					},
 				}),
 			}),
@@ -500,6 +530,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 								i(188269),	-- Pocket Protoforge
 								i(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
 								i(189178),	-- Tools of Incomprehensible Experimentation (PS)
+								i(188957),	-- Genesis Mote
 								-- Tier
 								i(191014, {	-- Dreadful Hand Module
 									i(188863),	-- Gauntlets of the First Eidolon
@@ -823,6 +854,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(188269),	-- Pocket Protoforge
 						i(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
 						i(189178),	-- Tools of Incomprehensible Experimentation (PS)
+						i(188957),	-- Genesis Mote
 						-- Tier
 						i(191014, {	-- Dreadful Hand Module
 							i(188863),	-- Gauntlets of the First Eidolon
@@ -1177,6 +1209,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(188269),	-- Pocket Protoforge
 						i(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
 						i(189178),	-- Tools of Incomprehensible Experimentation (PS)
+						i(188957),	-- Genesis Mote
 						-- Tier
 						i(191014, {	-- Dreadful Hand Module
 							i(188863),	-- Gauntlets of the First Eidolon
@@ -1512,6 +1545,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(188269),	-- Pocket Protoforge
 						i(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
 						i(189178),	-- Tools of Incomprehensible Experimentation (PS)
+						i(188957),	-- Genesis Mote
 						-- Tier
 						i(191014, {	-- Dreadful Hand Module
 							i(188863),	-- Gauntlets of the First Eidolon

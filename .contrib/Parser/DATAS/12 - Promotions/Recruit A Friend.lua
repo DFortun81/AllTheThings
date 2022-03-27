@@ -107,11 +107,17 @@ root("Promotions", {
 	})),
 });
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	filter(MOUNTS, {
-		tier(TBC_TIER, {
-			i(37598, {	-- Swift Zhevra (MOUNT!)
-				["timeline"] = { "created 2.4.3.8601" },
+	tier(TBC_TIER, {
+		filter(MOUNTS, {
+			--#if AFTER SL
+			tier(TBC_TIER, 4.3, {
+			--#endif
+				i(37598, {	-- Swift Zhevra (MOUNT!)
+					["timeline"] = { "created 2.4.3.8601" },
+				}),
+			--#if AFTER SL
 			}),
+			--#endif
 		}),
 	}),
 	n(QUESTS, {

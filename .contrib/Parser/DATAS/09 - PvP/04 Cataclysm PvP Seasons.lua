@@ -4821,6 +4821,11 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(60782),	-- Vicious Gladiator's Cloak of Conquest
 				i(60784),	-- Vicious Gladiator's Cloak of Dominance
 				i(60785),	-- Vicious Gladiator's Cloak of Dominance
+				i(60774),	-- Vicious Gladiator's Cloak of Victory
+				i(60775),	-- Vicious Gladiator's Cloak of Victory
+				i(60777),	-- Vicious Gladiator's Cloak of Victory
+				i(60780),	-- Vicious Gladiator's Cloak of Conquest
+				i(60781),	-- Vicious Gladiator's Cloak of Conquest
 			}),
 			n(WRIST, {
 				i(60585),	-- Vicious Gladiator's Armwraps of Dominance

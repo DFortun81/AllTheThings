@@ -1347,6 +1347,14 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(178287),	-- Sinful Aspirant's Silk Shawl
 					i(178290),	-- Sinful Aspirant's Silk Belt
 					i(178294),	-- Sinful Aspirant's Silk Bindings
+					i(178302),	-- Sinful Aspirant's Silk Vestiment
+					i(178307),	-- Sinful Aspirant's Silk Slippers
+					i(178312),	-- Sinful Aspirant's Silk Grasps
+					i(178314),	-- Sinful Aspirant's Silk Visage
+					i(178318),	-- Sinful Aspirant's Silk Britches
+					i(178323),	-- Sinful Aspirant's Silk Shoulderpads
+					i(178326),	-- Sinful Aspirant's Silk Cincture
+					i(178330),	-- Sinful Aspirant's Silk Armbands
 				}),
 				filter(LEATHER, {
 					i(178269),	-- Sinful Aspirant's Leather Tunic
