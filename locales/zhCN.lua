@@ -982,7 +982,7 @@ for key, value in pairs({
 	[169243] = "七贤之箱",	-- Chest of The Seven
 	[173232] = "锻造设计图",	-- Blacksmithing Plans
 	[173265] = "木制厕所",	-- Wooden Outhouse
-	[174682] = "当心翼手龙",	-- Beware of Pterrordax	--TODO: This was taken from classic Wowhead
+	[174682] = "当心翼手龙",	-- Beware of Pterrordax
 	[175320] = "通缉：莫克迪普！",	-- WANTED: Murkdeep!	--TODO: This was taken from classic Wowhead
 	[175524] = "神秘的红色水晶",	-- Mysterious Red Crystal	--TODO: This was taken from classic Wowhead
 	[175894] = "詹妮丝的包裹",	-- Janice's Parcel	--TODO: This was taken from classic Wowhead
@@ -1212,7 +1212,7 @@ for key, value in pairs({
 	[195435] = "武器柜",	-- Weapons Cabinet
 	[195438] = "艾露恩之杯",	-- Cup of Elune
 	[195445] = "上古漩涡符石",	-- Ancient Vortex Runestone	--TODO: This was manually translated
-	[195497] = "艾露恩的火盆",	-- Elune's Brazier	--TODO: This was manually translated
+	[195497] = "艾露恩的火盆",	-- Elune's Brazier
 	[195517] = "艾露恩的侍女像",	-- Elune's Handmaiden
 	[195600] = "燃烧之石",	-- Smouldering Stone
 	[195642] = "纳迦能量石",	-- Naga Power Stone
@@ -1334,7 +1334,7 @@ for key, value in pairs({
 	[213649] = "一箱被偷的货物",	-- Cache of Pilfered Goods
 	[213650] = "兔妖宝箱",	-- Virmen Treasure Cache
 	--TODO: [213651] = "Equipment Locker",	-- Equipment Locker
-	[213653] = "熊猫人鱼叉",	-- Pandaren Fishing Spear	--TODO: This was manually translated
+	[213653] = "熊猫人鱼叉",	-- Pandaren Fishing Spear
 	[213741] = "远古锦鱼人法杖",	-- Ancient Jinyu Staff
 	[213742] = "十雷之锤",	-- Hammer of Ten Thunders
 	[213748] = "熊猫人仪式石",	-- Pandaren Ritual Stone
@@ -1523,7 +1523,7 @@ for key, value in pairs({
 	--TODO: [228023] = "Bonechewer Remnants",	-- Bonechewer Remnants
 	[228024] = "阿鲁纳矿车",	-- Aruuna Mining Cart
 	[228025] = "克鲁的物品",	-- Keluu's Belongings
-	--TODO: [228026] = "Pure Crystal Dust",	-- Pure Crystal Dust
+	[228026] = "纯净水晶尘",	-- Pure Crystal Dust
 	--TODO: [228483] = "Rusted Lockbox",	-- Rusted Lockbox
 	--TODO: [228570] = "Ketya's Stash",	-- Ketya's Stash
 	[229328] = "特使的袋子",	-- Envoy's Satchel
@@ -1587,7 +1587,7 @@ for key, value in pairs({
 	[232587] = "乌兹克的小玩意儿",	-- Uzko's Knickknacks
 	[232588] = "格瑞卡的坛子",	-- Greka's Urn
 	[232589] = "威玛的草药包",	-- Veema's Herb Bag
-	--TODO: [232590] = "Void-Infused Crystal",	-- Void-Infused Crystal
+	[232590] = "注灵水晶",	-- Void-Infused Crystal
 	[232591] = "爱人的祭品",	-- Beloved's Offering
 	[232595] = "热砂补给品",	-- Steamwheedle Supplies
 	[232596] = "先祖巨斧",	-- Ancestral Greataxe
@@ -1613,7 +1613,7 @@ for key, value in pairs({
 	[233126] = "影月宝藏",	-- Shadowmoon Treasure
 	[233132] = "淡水蛤蜊",	-- Freshwater Clam
 	[233134] = "金色卡利鸟蛋",	-- Golden Kaliri Egg
-	--TODO: [233135] = "Warsong Cache",	-- Warsong Cache
+	[233135] = "战歌宝箱",	-- Warsong Cache
 	[233137] = "火刃宝箱",	-- Burning Blade Cache
 	[233139] = "上古泰坦宝箱",	-- Ancient Titan Chest
 	[233149] = "嘲颅包裹",	-- Laughing Skull Cache
@@ -1908,7 +1908,7 @@ for key, value in pairs({
 	[241743] = "邪能页岩矿脉",	-- Felslate Deposit
 	[241745] = "被邪能侵蚀的背包",	-- Fel-Drenched Satchel
 	[241760] = "献祭之刃",	-- Sacrificial Blade
-	--TODO: [241764] = "Stashed Bleeding Hollow Loot",	-- Stashed Bleeding Hollow Loot
+	[241764] = "隐藏的血环战利品",	-- Stashed Bleeding Hollow Loot
 	[241767] = "宝箱",	-- Treasure Chest
 	[241772] = "宝箱",	-- Treasure Chest
 	[241773] = "小宝箱",	-- Small Treasure Chest
@@ -3039,15 +3039,15 @@ for key, value in pairs({
 	[375538] = "失落的元蛋",	-- Lost Ovoid
 	[375693] = "原生体设计方案",	-- Protoform Schematic
 	[375694] = "原生体设计方案",	-- Protoform Schematic
-	--TODO: [375746] = "Protoform Schematic",	-- Protoform Schematic
+	[375746] = "原型体设计方案",	-- Prototype Schematic
 	[375748] = "原生体设计方案",	-- Protoform Schematic
 	[375889] = "原生体设计方案",	-- Protoform Schematic
 	[375893] = "价值连城的宝箱",	-- High Value Cache
 	[375900] = "原生体设计方案",	-- Protoform Schematic
 	[375902] = "破旧的虚渺披风",	-- Torn Ethereal Drape
 	[375903] = "原生体设计方案",	-- Protoform Schematic
-	--TODO: [375905] = "Protoform Schematic",	-- Protoform Schematic
-	--TODO: [375907] = "Protoform Schematic",	-- Protoform Schematic
+	[375905] = "原生体设计方案",	-- Protoform Schematic
+	[375907] = "原生体设计方案",	-- Protoform Schematic
 	[375915] = "平静微光",	-- Glimmer of Serenity
 	[375950] = "纯粹创新饰珠",	-- Bauble of Pure Innovation
 	[375972] = "通缉：库斯托斯",	-- Wanted: Custos
