@@ -11863,7 +11863,6 @@ local questFields = {
 					end
 					-- enough criteria met to consider this quest locked
 					if criteriaRequired <= 0 then
-						print("Quest",questID,"is considered locked")
 						-- we can rawset this since there's no real way for a player to 'remove' this lock during a session
 						-- and this does not come into play during party sync
 						rawset(t, "locked", true);
@@ -15980,7 +15979,7 @@ RowOnEnter = function (self)
 				GameTooltip:AddLine(L["PREREQUISITE_QUESTS"]);
 				local text;
 				for i,prereq in ipairs(prereqs) do
-					text = "   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA);
+					text = GetCompletionIcon(prereq.saved) .. " " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA);
 					if prereq.mapID then
 						text = text .. " (" .. (app.GetMapName(prereq.mapID) or RETRIEVING_DATA) .. ")";
 					elseif prereq.maps then
@@ -15988,14 +15987,14 @@ RowOnEnter = function (self)
 					elseif prereq.coords then
 						text = text .. " (" .. (app.GetMapName(prereq.coords[1][3]) or RETRIEVING_DATA) .. ")";
 					end
-					GameTooltip:AddDoubleLine(text, GetCompletionIcon(IsQuestFlaggedCompleted(prereq.questID)));
+					GameTooltip:AddLine(text);
 				end
 			end
 			if bc and #bc > 0 then
 				GameTooltip:AddLine(L["BREADCRUMBS_WARNING"]);
 				local text;
 				for i,prereq in ipairs(bc) do
-					text = "   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA);
+					text = GetCompletionIcon(prereq.saved) .. " " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA);
 					if prereq.mapID then
 						text = text .. " (" .. (app.GetMapName(prereq.mapID) or RETRIEVING_DATA) .. ")";
 					elseif prereq.maps then
@@ -16003,14 +16002,14 @@ RowOnEnter = function (self)
 					elseif prereq.coords then
 						text = text .. " (" .. (app.GetMapName(prereq.coords[1][3]) or RETRIEVING_DATA) .. ")";
 					end
-					GameTooltip:AddDoubleLine(text, GetCompletionIcon(IsQuestFlaggedCompleted(prereq.questID)));
+					GameTooltip:AddLine(text);
 				end
 			end
 		end
 
 		-- Show Breadcrumb information
 		if reference.isBreadcrumb then
-			GameTooltip:AddLine(L["THIS_IS_BREADCRUMB"]);
+			GameTooltip:AddLine(string.format("|c%s%s|r", app.Colors.Locked, L["THIS_IS_BREADCRUMB"]));
 			if reference.nextQuests then
 				local isBreadcrumbAvailable = true;
 				local nextq, nq = {};
@@ -16033,14 +16032,23 @@ RowOnEnter = function (self)
 					GameTooltip:AddLine(L["BREADCRUMB_PARTYSYNC"]);
 				else
 					-- The character wont be able to accept this quest without the help of a lower level character using Party Sync
-					GameTooltip:AddLine(L["BREADCRUMB_PARTYSYNC_2"]);
+					GameTooltip:AddLine(string.format("|c%s%s|r", app.Colors.LockedWarning, L["BREADCRUMB_PARTYSYNC_2"]));
 				end
+				local text;
 				for i,nquest in ipairs(nextq) do
-					GameTooltip:AddLine(GetCompletionIcon(nquest.saved) .. " " .. nquest.questID .. ": " .. nquest.text);
+					text = GetCompletionIcon(nquest.saved) .. " " .. nquest.questID .. ": " .. (nquest.text or RETRIEVING_DATA);
+					if nquest.mapID then
+						text = text .. " (" .. (app.GetMapName(nquest.mapID) or RETRIEVING_DATA) .. ")";
+					elseif nquest.maps then
+						text = text .. " (" .. (app.GetMapName(nquest.maps[1]) or RETRIEVING_DATA) .. ")";
+					elseif nquest.coords then
+						text = text .. " (" .. (app.GetMapName(nquest.coords[1][3]) or RETRIEVING_DATA) .. ")";
+					end
+					GameTooltip:AddLine(text);
 				end
 			elseif not reference.DisablePartySync then
 				-- There is no information about next quests that invalidates the breadcrumb
-				GameTooltip:AddLine(L["BREADCRUMB_PARTYSYNC_3"]);
+				GameTooltip:AddLine(string.format("|c%s%s|r", app.Colors.LockedWarning, L["BREADCRUMB_PARTYSYNC_3"]));
 			end
 		end
 
@@ -16068,7 +16076,7 @@ RowOnEnter = function (self)
 			if reference.locked then
 				if not reference.DisablePartySync then
 					-- should be possible in party sync
-					GameTooltip:AddLine(L["BREADCRUMB_PARTYSYNC_3"]);
+					GameTooltip:AddLine(string.format("|c%s%s|r", app.Colors.LockedWarning, L["BREADCRUMB_PARTYSYNC_3"]));
 				else
 					-- known to not be possible in party sync
 					-- TODO: text to indicate that the quest cannot be completed on this character, even using Party Sync
