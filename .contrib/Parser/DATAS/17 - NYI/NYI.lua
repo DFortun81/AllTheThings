@@ -30,7 +30,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		n(QUESTS, {	-- Darkal Sort?
 			q(64870),	-- Paragon of Enlightened Brokers (I have this completed /Braghe)
 			q(65152),	-- A Hardened Bond (This is Soulbind Quest for Necrolords new one might cross complete?? /Braghe)
-			q(65249),	-- The Jailer's Defeat (A version already exist of this quest maybe the changed? /Braghe)
 			q(64649),	-- A Mountain of Work to Do
 		}),
 		i(187710),	-- Anniversary Gift (Probably for 18th Ani)

@@ -425,6 +425,21 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["coord"] = { 59.9, 56.1, ORIBOS },
 				["isBreadcrumb"] = true,
 			})),
+			q(65260, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- A Long Walk
+				["sourceQuests"] = { 65250 },	-- Prisoner of Interest
+				["provider"] = { "n", 183822 },	-- Uther
+				["coord"] = { 52.2, 40.5, ORIBOS },
+			})),
+			q(65263, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- The Fate of Sylvanas
+				["sourceQuests"] = { 65260 },	-- A Long Walk
+				["provider"] = { "n", 183830 },	-- Arbiter Pelagos
+				["coord"] = { 55, 49.2, ORIBOS },
+			})),
+			q(65297, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Penance and Renewal
+				["sourceQuests"] = { 65263 },	-- The Fate of Sylvanas
+				["provider"] = { "n", 183830 },	-- Arbiter Pelagos
+				["coord"] = { 55, 49.2, ORIBOS },
+			})),
 			q(51355, {	-- Secretest Fish
 				["description"] = "Can be found in Secret Fish Bubbles anywhere in Shadowlands zones. You must be wearing the Secret Fish Goggles to see/loot the bubbles.",
 				["provider"] = { "i", 158932 },	-- Secretest Fish
@@ -1162,6 +1177,7 @@ root("HiddenQuestTriggers", {
 	q(65755),	-- triggered with 'A New Deal', selected 'Cosmic Gladiator's Resonator'
 	q(65617),	-- triggered after 'A New Deal', potentially Engineer teleporter unlock to Zereth Mortis
 	--q(66047),	-- Solo Shuffle Completion?
+	q(65511),	-- Conversation between Vareesa and Alleria Windrunner
 });
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
