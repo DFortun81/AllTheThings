@@ -320,7 +320,8 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 				o(375893, {	-- High Value Cache
 					["description"] = "When Taskmaster Xy'pro has 3 stacks of Synergy, which he gets from being nearby other mobs, he gets another buff called Security Override which says he will drop the Security Override Orb.",
 					--["coord"] = { X, Y, MAP },
-					["cost"] = { { "i", 190727, 1 } },	-- 1xSecurity Override Orb
+					["questID"] = 66285,
+					["cost"] = { { "i", 190727, 1 } },	-- 1 Security Override Orb
 					["g"] = {
 						i(189175),	-- Mawforged Bridle
 						i(189991),	-- Snail Soul
@@ -334,7 +335,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					},
 				}),
 				o(375907, {	-- Protoform Schematic
-					["description"] = "Needs to defeat Halondrus.",
+					["description"] = "Located on the North side of the 2nd encounter area after defeating Halondrus.",
 					--["coord"] = { X, Y, MAP },
 					["g"] = {
 						i(189476),	-- Schematic: Curious Crystalsniffer

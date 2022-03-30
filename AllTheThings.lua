@@ -5821,6 +5821,7 @@ end
 
 -- Map Information Lib
 (function()
+local math_floor, C_SuperTrack = math.floor, C_SuperTrack;
 local __TomTomWaypointCacheIndexY = { __index = function(t, y)
 	local o = {};
 	rawset(t, y, o);
@@ -5831,16 +5832,18 @@ local __TomTomWaypointCacheIndexX = { __index = function(t, x)
 	rawset(t, x, o);
 	return o;
 end };
-local __TomTomWaypointCache, __TomTomWaypointFirst = setmetatable({}, { __index = function(t, mapID)
+local __TomTomWaypointCache = setmetatable({}, { __index = function(t, mapID)
 	local o = setmetatable({}, __TomTomWaypointCacheIndexX);
 	rawset(t, mapID, o);
 	return o;
 end });
+local __TomTomWaypointFirst;
 local function AddTomTomWaypointCache(coord, group)
 	local mapID = coord[3];
 	if mapID then
-		__TomTomWaypointCache[mapID][math.floor(coord[1] * 10)][math.floor(coord[2] * 10)][group.key .. ":" .. group[group.key]] = group;
+		__TomTomWaypointCache[mapID][math_floor(coord[1] * 10)][math_floor(coord[2] * 10)][group.key .. ":" .. group[group.key]] = group;
 	else
+		-- coord[3] not existing is checked by Parser and shouldn't ever happen
 		print("Missing mapID for", group.text, coord[1], coord[2], mapID);
 	end
 end
@@ -5875,7 +5878,7 @@ local function AddTomTomWaypointInternal(group, depth)
 							AddTomTomWaypointCache(coord, group);
 						end
 					end
-					if group.coord then AddTomTomWaypointCache(coord, group); end
+					if group.coord then AddTomTomWaypointCache(group.coord, group); end
 				end
 			end
 		elseif C_SuperTrack then
@@ -5885,7 +5888,8 @@ local function AddTomTomWaypointInternal(group, depth)
 					__TomTomWaypointFirst = false;
 					C_SuperTrack.SetSuperTrackedUserWaypoint(false);
 					C_Map.ClearUserWaypoint();
-					C_Map.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(coord[3] or defaultMapID,coord[1]/100,coord[2]/100));
+					-- coord[3] not existing is checked by Parser and shouldn't ever happen
+					C_Map.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(coord[3] or C_Map.GetBestMapForUnit("player") or 1, coord[1]/100, coord[2]/100));
 					C_SuperTrack.SetSuperTrackedUserWaypoint(true);
 				end
 			end
@@ -5931,7 +5935,7 @@ AddTomTomWaypoint = function(group)
 									if count > 1 and group.coords and #group.coords == count then
 										for i=count,1,-1 do
 											local coord = group.coords[i];
-											if coord[3] == mapID and math.floor(coord[1] * 10) == x and math.floor(coord[2] * 10) == y then
+											if coord[3] == mapID and math_floor(coord[1] * 10) == x and math_floor(coord[2] * 10) == y then
 												creatureID = group.qgs[i];
 												break;
 											end
@@ -5948,7 +5952,7 @@ AddTomTomWaypoint = function(group)
 									if count > 1 and group.coords and #group.coords == count then
 										for i=count,1,-1 do
 											local coord = group.coords[i];
-											if coord[3] == mapID and math.floor(coord[1] * 10) == x and math.floor(coord[2] * 10) == y then
+											if coord[3] == mapID and math_floor(coord[1] * 10) == x and math_floor(coord[2] * 10) == y then
 												creatureID = group.crs[i];
 												break;
 											end
@@ -5991,7 +5995,7 @@ AddTomTomWaypoint = function(group)
 							end
 
 							local callbacks = TomTom:DefaultCallbacks();
-							callbacks.minimap.tooltip_update = Nil;
+							callbacks.minimap.tooltip_update = nil;
 							callbacks.minimap.tooltip_show = function(event, tooltip, uid, dist)
 								tooltip:ClearLines();
 								for i,o in ipairs(root) do
@@ -6010,7 +6014,7 @@ AddTomTomWaypoint = function(group)
 								end
 								tooltip:Show();
 							end
-							callbacks.world.tooltip_update = Nil;
+							callbacks.world.tooltip_update = nil;
 							callbacks.world.tooltip_show = callbacks.minimap.tooltip_show;
 							opt.callbacks = callbacks;
 							TomTom:AddWaypoint(mapID, xnormal, y / 1000, opt);
