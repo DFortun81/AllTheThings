@@ -4667,7 +4667,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		-- If the user wants to show the progress of this search result, do so
 		if app.Settings:GetTooltipSetting("Progress") and (group.key ~= "spellID" or group.collectible) then
 			group.collectionText = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(group);
-			
+
 			-- add the progress as a new line for encounter tooltips instead of using right text since it can overlap the NPC name
 			if group.encounterID then tinsert(info, 1, { left = "Progress", right = group.collectionText }); end
 		end
@@ -5855,7 +5855,7 @@ local function AddTomTomWaypointInternal(group, depth)
 			end
 			depth = depth - 1;
 		end
-		
+
 		local searchResults = ResolveSymbolicLink(group);
 		if searchResults then
 			depth = depth + 1;
@@ -5865,7 +5865,7 @@ local function AddTomTomWaypointInternal(group, depth)
 			depth = depth - 1;
 		end
 		group.plotting = nil;
-		
+
 		if TomTom then
 			if (depth == 0 and not __TomTomWaypointFirst) or not group.saved then
 				if group.coords or group.coord then
@@ -5975,7 +5975,7 @@ AddTomTomWaypoint = function(group)
 								tinsert(root, group);
 							end
 						end
-						
+
 						local first = root[1];
 						if first then
 							local opt = { from = "ATT", persistent = false };
@@ -5989,7 +5989,7 @@ AddTomTomWaypoint = function(group)
 								opt.minimap_icon = first.icon;
 								opt.worldmap_icon = first.icon;
 							end
-							
+
 							local callbacks = TomTom:DefaultCallbacks();
 							callbacks.minimap.tooltip_update = Nil;
 							callbacks.minimap.tooltip_show = function(event, tooltip, uid, dist)
@@ -19760,22 +19760,20 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 									categories[currentCategoryID] = true;
 								end
 							end
+							-- cannot be crafted, so don't cache the outputs for reagent tooltips
+							if spellRecipeInfo.disabled then
+								skipcaching = true;
+							end
+							-- recipe is learned, so cache that it's learned regardless of being craftable
 							if spellRecipeInfo.learned then
-								if spellRecipeInfo.disabled then
-									if charSpells[recipeID] then
-										charSpells[recipeID] = nil;
-										acctSpells[recipeID] = nil;
-									end
-								else
-									charSpells[recipeID] = 1;
-									if not acctSpells[recipeID] then
-										acctSpells[recipeID] = 1;
-										tinsert(learned, recipeID);
-									end
+								charSpells[recipeID] = 1;
+								if not acctSpells[recipeID] then
+									acctSpells[recipeID] = 1;
+									tinsert(learned, recipeID);
 								end
+							-- enabled, unlearned recipes should be checked against ATT data to verify they CAN actually be learned
 							elseif not spellRecipeInfo.disabled and not acctSpells[recipeID] then
 								-- print("unlearned, enabled RecipeID",recipeID)
-								-- enabled, unlearned recipes should be checked against ATT data to verify they CAN actually be learned
 								local cachedRecipe = app.SearchForMergedObject("spellID", recipeID);
 								-- verify the merged cached version is not 'super' unobtainable
 								if cachedRecipe and cachedRecipe.u and cachedRecipe.u < 3 then
