@@ -77,14 +77,14 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FOUR, {
 						-- #endif
 					}),
 					q(11195, {	-- Playin' With Dolls
-						["qg"] = 23897,	-- Zungam
+						["providers"] = {
+							{ "n", 23897 },	-- Zungam
+							{ "i", 33107 },	-- Tattered Voodoo Doll
+						},
 						["sourceQuest"] = 11165,	-- A Troll Among Trolls
 						["coord"] = { 59.3, 36.6, ZULAMAN },
-						["cost"] = {
-							{ "i", 33865, 1 },	-- Amani Hex Stick
-							{ "i", 33107, 1 },	-- Tattered Voodoo Doll
-						},
 						-- #if BEFORE CATA
+						["description"] = "Located in the big hut just southeast of Halazzi's room.",
 						["lvl"] = 70,
 						-- #endif
 						["groups"] = {
