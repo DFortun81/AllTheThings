@@ -1684,21 +1684,46 @@ recipe = function(id, t)								-- Create a RECIPE Object
 	return struct("recipeID", id, t);
 end
 root = function(category, g)							-- Create a ROOT CATEGORY Object
+	if not g then g = g or {}; end
 	local o = _[category];
 	if not o then
-		if #g > 0 and g[1] then
+		if isarray(g) then
 			o = g;
 		else
-			o = { g };
+			local isRef = true;
+			for key,value in pairs(g) do
+				if type(key) ~= "number" then
+					isRef = false;
+					break;
+				end
+			end
+			if isRef then
+				o = g;
+			else
+				o = { g };
+			end
 		end
 		_[category] = o;
 	else
-		if #g > 0 and g[1] then
+		if isarray(g) then
 			for i,t in ipairs(g) do
 				table.insert(o, t);
 			end
 		else
-			table.insert(o, g);
+			local isRef = true;
+			for key,value in pairs(g) do
+				if type(key) ~= "number" then
+					isRef = false;
+					break;
+				end
+			end
+			if isRef then
+				for key,value in pairs(g) do
+					o[key] = value;
+				end
+			else
+				table.insert(o, g);
+			end
 		end
 	end
 	return o;

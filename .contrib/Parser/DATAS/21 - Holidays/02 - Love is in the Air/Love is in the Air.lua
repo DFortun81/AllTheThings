@@ -2118,7 +2118,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 	},
 }));
 
-_.NeverImplemented = { bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	-- #if ANYCLASSIC
 	["npcID"] = -50,
 	-- #else
@@ -2133,4 +2133,4 @@ _.NeverImplemented = { bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			["timeline"] = { "created 7.3.0.24484" },
 		}),
 	},
-})};
+}));
