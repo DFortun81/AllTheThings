@@ -1177,7 +1177,12 @@ root("HiddenQuestTriggers", {
 	q(65755),	-- triggered with 'A New Deal', selected 'Cosmic Gladiator's Resonator'
 	q(65617),	-- triggered after 'A New Deal', potentially Engineer teleporter unlock to Zereth Mortis
 	--q(66047),	-- Solo Shuffle Completion?
-	q(65511),	-- Conversation between Vareesa and Alleria Windrunner
+	q(65511),	-- Stay a while and listen with Vareesa Windrunner
+	q(65618),	-- Stay a while and listen with Bolvar
+	q(65612),	-- Stay a while and listen with Baine
+	q(65609),	-- Stay a while and listen with Lor'themar
+	q(65607),	-- Stay a while and listen with King Greymane
+	q(65614),	-- Stay a while and listen with Arbiter Pelagos
 });
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
