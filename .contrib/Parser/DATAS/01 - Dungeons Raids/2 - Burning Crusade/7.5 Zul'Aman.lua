@@ -324,7 +324,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FOUR, {
 	}),
 })));
 
--- #if NOT ANYCLASSIC
 -- These are still used in Retail and aren't removed from game.
 AMANI_HEX_STICK.timeline = nil;
 EXECUTIONER_RECIPE.timeline = nil;
@@ -332,7 +331,8 @@ FOREST_FROG.timeline = nil;
 -- also clean up the children
 for _,item in pairs(FOREST_FROG.groups) do item.timeline = nil; end
 MOJO_PET.timeline = nil;
--- #else
+
+-- #if ANYCLASSIC
 -- We don't want to apply a phase ID for this in this raid, that will be done elsewhere.
 BADGE_OF_JUSTICE.timeline = nil;
 -- #endif
