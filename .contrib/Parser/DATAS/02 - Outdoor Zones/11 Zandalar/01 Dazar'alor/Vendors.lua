@@ -1039,12 +1039,12 @@ _.Zones =
 							["cost"] = 6250000,	-- 625g
 						}),
 						i(162623, {	-- Tome of Hex: Zandalari Tendonripper
-							["spellID"] = 277778,	-- Hex(Zandalari Tendonripper)
+							["recipeID"] = 277778,	-- Hex(Zandalari Tendonripper)
 							["classes"] = { SHAMAN },
 							["cost"] = 18000000,	-- 1,800g
 						}),
 						i(162625, {	-- Tome of Polymorph: Direhorn
-							["spellID"] = 277787,	-- Polymorph(Direhorn)
+							["recipeID"] = 277787,	-- Polymorph(Direhorn)
 							["classes"] = { MAGE },
 							["cost"] = 18000000,	-- 1,800g
 						}),

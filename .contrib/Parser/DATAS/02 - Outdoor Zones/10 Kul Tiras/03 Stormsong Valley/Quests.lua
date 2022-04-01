@@ -816,7 +816,8 @@ _.Zones =
 					},
 				}),
 				q(52068, {	-- Helping Out, Somewhere Else
-					["sourceQuests"] = { 50745 },	-- Infiltrating the Empire
+					["sourceQuests"] = { 50742 },	-- All Laid Out For Us
+					["altQuests"] = { 52069 },	-- More Fodder
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 134720 },	-- Leo Shealds
 					["coord"] = { 43.0, 56.6, STORMSONG_VALLEY },
@@ -981,6 +982,7 @@ _.Zones =
 				}),
 				q(52069, {	-- More Fodder
 					["sourceQuests"] = { 49831 },	-- From the Depths
+					["altQuests"] = { 52068 },	-- Helping Out, Somewhere Else
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 131343 },	-- Williams
 					["coord"] = { 33.2, 45.6, STORMSONG_VALLEY },

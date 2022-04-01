@@ -618,6 +618,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["sourceQuests"] = { 65328 },	-- Arbiter in the Making
 				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 35, 64.8, ZERETH_MORTIS },
+				["isBreadcrumb"] = true,
 			}),
 			q(64723, {	-- Restoration Porject
 				["sourceQuests"] = { 64879 },	-- A Monumental Discovery
