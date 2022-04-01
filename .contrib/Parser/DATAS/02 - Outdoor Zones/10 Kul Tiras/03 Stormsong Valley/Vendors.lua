@@ -279,6 +279,7 @@ _.Zones =
 							["recipeID"] = 277792,	-- Polymorph(Bumblebee)
 							["classes"] = { MAGE },
 							["cost"] = 18000000,	-- 1,800g
+							["f"] = RECIPES,
 						}),
 					},
 				}),

@@ -83,6 +83,7 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 		["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
 		["spellID"] = 61721,	-- Polymorph (Rabbit)
 		["classes"] = { MAGE },
+		["f"] = RECIPES,
 	}),
 };
 root("Holidays", applyholiday(NOBLEGARDEN, {

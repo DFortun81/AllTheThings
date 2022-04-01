@@ -121,6 +121,7 @@ _.Zones =
 							["spellID"] = 277784,	-- Hex (Wicker Mongrel)
 							["classes"] = { SHAMAN },
 							["cost"] = 18000000,	-- 1,800g
+							["f"] = RECIPES,
 						}),
 						i(160535, {	-- Witch Hunter's Cape
 							["cost"] = 11000000,	-- 1,100g

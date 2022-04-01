@@ -63,6 +63,7 @@ root("Instances", tier(CLASSIC_TIER, {
 							["description"] = "Can be looted from a bookshelf if the boss didn't burn them.",
 							["spellID"] = 120145,	-- Ancient Teleport: Dalaran
 							["classes"] = { MAGE },
+							["f"] = RECIPES,
 						}),
 						i(88278),	-- Mograine's Immaculate Might
 						i(88274),	-- Koegler's Ritual Knife
@@ -188,6 +189,7 @@ root("Instances", tier(CLASSIC_TIER, {
 								["description"] = "Can be looted from a bookshelf if the boss didn't burn them.",
 								["spellID"] = 120145,	-- Ancient Teleport: Dalaran
 								["classes"] = { MAGE },
+								["f"] = RECIPES,
 							}),
 							i(144196, {	-- Mograine's Immaculate Might
 								["timeline"] = { "added 7.1.5.23360" },
@@ -222,7 +224,7 @@ root("Instances", tier(CLASSIC_TIER, {
 							i(144220, {	-- Vithrak, Gaze of the Deadman
 								["timeline"] = { "added 7.1.5.23360" },
 							}),
-							
+
 							i(82814, {	-- Mograine's Immaculate Might
 								["timeline"] = { "removed 7.1.5.23360" },
 							}),

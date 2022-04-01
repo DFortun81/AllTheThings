@@ -759,6 +759,7 @@ _.ExpansionFeatures =
 							i(136938, {	-- Tome of Hex: Compy
 								["spellID"] = 210873,	-- Hex(Compy)
 								["classes"] = { SHAMAN },
+								["f"] = RECIPES,
 							}),
 							i(136937),	-- Vol'jin's Serpent Totem (TOY!)
 							i(138490),	-- Waterspeaker's Totem (TOY!)

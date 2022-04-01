@@ -439,6 +439,25 @@ namespace ATT
                 {
                     data.Remove("f");
                 }
+
+                // special handling for explicitly-defined filterIDs (i.e. not determined by Item data, but rather directly in Source)
+                switch ((Objects.Filters)f)
+                {
+                    case Objects.Filters.Recipe:
+                        // switch any existing spellID to recipeID
+                        var item = Items.Get(data);
+                        if (item.TryGetValue("spellID", out long spellID) && item.TryGetValue("itemID", out long itemID))
+                        {
+                            if (DebugMode)
+                                Trace.WriteLine($"Converted Item {itemID} spellID into recipeID {spellID} due to Recipe Filter");
+                            // remove the spellID if existing
+                            item.Remove("spellID");
+                            data.Remove("spellID");
+                            // set the recipeID in the item dictionary so it will merge back in later
+                            item["recipeID"] = spellID;
+                        }
+                        break;
+                }
             }
 
             // Apply the inherited modID for items which do not specify their own modID

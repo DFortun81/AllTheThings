@@ -822,6 +822,7 @@ _.Zones =
 							["isLimited"] = true,
 							["spellID"] = 61305,	-- Polymorph
 							["classes"] = { MAGE },
+							["f"] = RECIPES,
 						}),
 					},
 				}),
@@ -2191,19 +2192,19 @@ _.Zones =
 					["coord"] = { 57.8, 42.5, NORTHREND_DALARAN },
 					["g"] = {
 						ach(2076, {	-- Armored Brown Bear
-							["providers"] = { 
+							["providers"] = {
 								{ "i", 44225 },	-- Armored Brown Bear (A) (MOUNT!)
 								{ "i", 44226 },	-- Armored Brown Bear (H) (MOUNT!)
 							},
 						}),
 						ach(2078, {	-- Traveler's Tundra Mammoth
-							["providers"] = { 
+							["providers"] = {
 								{ "i", 44235 },	-- Traveler's Tundra Mammoth (A) (MOUNT!)
 								{ "i", 44234 },	-- Traveler's Tundra Mammoth (H) (MOUNT!)
 							},
 						}),
 						ach(2077, {	-- Wooly Mammoth
-							["providers"] = { 
+							["providers"] = {
 								{ "i", 44230 },	-- Wooly Mammoth (A) (MOUNT!)
 								{ "i", 44231 },	-- Wooly Mammoth (H) (MOUNT!)
 							},

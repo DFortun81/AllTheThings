@@ -562,10 +562,14 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		n(CLASSES, {
 			cl(MAGE, {
 				tier(WOTLK_TIER, 0.3, {
-					i(44600),	-- Tome of Polymorph: Serpent (Never made it out of beta)
+					i(44600, {	-- Tome of Polymorph: Serpent (Never made it out of beta)
+						["f"] = RECIPES,
+					}),
 				}),
 				tier(WOTLK_TIER, 3.5, {
-					i(44811),	-- Tome of Polymorph: Turkey
+					i(44811, {	-- Tome of Polymorph: Turkey
+						["f"] = RECIPES,
+					}),
 				}),
 			}),
 		}),
