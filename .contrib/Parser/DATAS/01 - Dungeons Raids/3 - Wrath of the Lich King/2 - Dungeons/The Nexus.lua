@@ -5,11 +5,8 @@
 -- TODO: reformat achievs here
 _.Instances = { tier(WOTLK_TIER, {
 	inst(281, {	-- The Nexus
-		["lvl"] = 59,
 		["mapID"] = 129,
-		["maps"] = {
-			370,	-- The Nexus (Dragonwrath, Tarecgosa's Rest Quest Chain)
-		},
+		["lvl"] = 59,
 		["groups"] = {
 			n(QUESTS, {
 				q(13094,{	-- Have They No Shame?
