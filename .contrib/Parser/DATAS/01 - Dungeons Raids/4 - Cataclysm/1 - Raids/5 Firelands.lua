@@ -182,7 +182,7 @@ root("Instances", tier(CATA_TIER, {
 					STORMWIND_CITY,
 					ORGRIMMAR,
 					86,		-- Orgrimmar: The Drag
-					129,	-- The Nexus
+					300,	-- The Nexus (phased)
 					MOUNT_HYJAL,
 					BOREAN_TUNDRA,
 				},
