@@ -107,11 +107,6 @@ _.Zones =
 					["provider"] = { "n", 26659 },	-- Zort
 					["sourceQuest"] = 12076,	-- Messy Business
 				}),
-				q(26013, {	-- Assault on the Sanctum
-					["coord"] = { 59.7, 54.6, DRAGONBLIGHT },
-					["provider"] = { "n", 27990 },	-- Krasus <Consort of the Queen>
-					["sourceQuest"] = 26012,	-- Trouble at Wyrmrest
-				}),
 				q(12083, {	-- Atop the Woodlands (A)
 					["coord"] = { 29.0, 55.4, DRAGONBLIGHT },
 					["races"] = ALLIANCE_ONLY,
