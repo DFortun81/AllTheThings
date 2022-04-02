@@ -262,6 +262,13 @@ namespace ATT
         };
 
         /// <summary>
+        /// A Dictionary of key-ID types and the respective objects which contain the specified key which will be captured and output during Debug runs</para>
+        /// NOTE: Each key name/value may contain multiple sets of data due to duplication of individual listings
+        /// </summary>
+        public static Dictionary<string, SortedDictionary<decimal, List<Dictionary<string, object>>>> DebugDBs { get; }
+                = new Dictionary<string, SortedDictionary<decimal, List<Dictionary<string, object>>>>();
+
+        /// <summary>
         /// Merge the data into the database.
         /// </summary>
         /// <param name="listing">The listing.</param>
@@ -390,6 +397,21 @@ namespace ATT
                 if (data.TryGetValue("g", out groups))
                     // Parent field consolidation now that groups have been processed
                     ConsolidateHeirarchicalFields(data, groups);
+
+                if (DebugMode)
+                {
+                    // Capture references to specified Debug DB keys for Debug output
+                    foreach (KeyValuePair<string, SortedDictionary<decimal, List<Dictionary<string, object>>>> dbKeyDatas in DebugDBs)
+                    {
+                        if (data.TryGetValue(dbKeyDatas.Key, out decimal keyValue))
+                        {
+                            if (!dbKeyDatas.Value.TryGetValue(keyValue, out List<Dictionary<string, object>> keyValueValues))
+                                dbKeyDatas.Value[keyValue] = keyValueValues = new List<Dictionary<string, object>>();
+
+                            keyValueValues.Add(data);
+                        }
+                    }
+                }
             }
 
             return true;
@@ -3090,6 +3112,12 @@ namespace ATT
                     Items.ExportDebug(debugFolder.FullName);
                     Objects.ExportDebug(debugFolder.FullName);
                     Objects.ExportDB(debugFolder.FullName);
+
+                    // Export custom Debug DB data to the Debugging folder. (as JSON for simplicity)
+                    foreach (KeyValuePair<string, SortedDictionary<decimal, List<Dictionary<string, object>>>> dbKeyDatas in DebugDBs)
+                    {
+                        File.WriteAllText(Path.Combine(debugFolder.FullName, dbKeyDatas.Key + "_DebugDB.json"), MiniJSON.Json.Serialize(dbKeyDatas.Value));
+                    }
 
                     // Export the Category DB file.
                     if (CATEGORY_NAMES.Any())
