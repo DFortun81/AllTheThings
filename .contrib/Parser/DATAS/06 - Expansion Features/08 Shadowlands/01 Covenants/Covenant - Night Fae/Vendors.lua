@@ -577,6 +577,12 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
+					i(182171, {	-- Hippogryph Soul
+						["sourceQuest"] = 63682,	-- The Power of Elune
+						["cost"] = {
+							{ "c", ANIMA, 250 },
+						},
+					}),
 				},
 			}),
 			n(175415, {	-- Harkoth <Heroic Nathrian Weaponsmith>
