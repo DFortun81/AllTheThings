@@ -12,11 +12,28 @@ root("Instances", tier(WOTLK_TIER, {
 			d(3, {	-- 10-Man
 				["lvl"] = 80,
 				["groups"] = {
-					ach(578),	-- The Dedicated Few (10 player)
-					ach(576),	-- The Fall of Naxxramas (10 player)
-					un(REMOVED_FROM_GAME, ach(2187, {	-- The Undying
-						un(REMOVED_FROM_GAME, title(109)),	-- The Undying
-					})),
+					n(ACHIEVEMENTS, {
+						ach(578),	-- The Dedicated Few (10 player)
+						ach(562),	-- The Arachnid Quarter (10 player)
+						ach(566),	-- The Plague Quarter (10 player)
+						ach(568),	-- The Military Quarter (10 player)
+						ach(564),	-- The Construct Quarter (10 player)
+						ach(576),	-- The Fall of Naxxramas (10 player)
+						ach(2187, {	-- The Undying
+							["timeline"] = { "removed 4.0.3" },
+							["groups"] = {
+								title(109, {	-- The Undying
+									["timeline"] = { "removed 4.0.3" },
+								}),
+							},
+						}),
+					}),
+					n(QUESTS, {
+						q(13372, {	-- The Key to the Focusing Iris (Quest)
+							["provider"] = { "i", 44569 },	-- Key to the Focusing Iris (Item)
+							["lvl"] = lvlsquish(78, 78, 30),
+						}),
+					}),
 					n(ZONE_DROPS, {
 						i(39467),	-- Minion Bracers
 						i(39427),	-- Omen of Ruin
@@ -26,18 +43,16 @@ root("Instances", tier(WOTLK_TIER, {
 						i(39470),	-- Medallion of the Disgraced
 					}),
 					n(-368, {	-- The Arachnid Quarter
-						ach(562),	-- The Arachnid Quarter (10 player)
-						cr(15956, e(1601, {	-- Anub'Rehkan
+						e(1601, { -- Anub'Rehkan
+							["creatureID"] = 15956,	-- Anub'Rehkan
 							["lore"] = "Anub'Rekhan, one of the finest Spider Lords of Azjol'Nerub, was brought under control of the Scourge when he and his commander, Anub'Arak, were finally defeated by the Lich King many years ago. It is said he was the most loyal of Anub'Arak's commanders.",
 							["groups"] = {
-								{
-									["achievementID"] = 562,	-- The Arachnid Quarter (10 player)
-									["criteriaID"] = 1,	-- Anub'Rekhan slain
-								},
-								{
-									["achievementID"] = 578,	-- The Dedicated Few (10 player)
-									["criteriaID"] = 3,			-- Anub'Rehkan slain
-								},
+								ach(562, {	-- The Arachnid Quarter (10 player)
+									["criteriaID"] = 1,	-- Anub'Rehkan slain
+								}),
+								ach(578, {	-- The Dedicated Few (10 player)
+									["criteriaID"] = 3,	-- Anub'Rehkan slain
+								}),
 								i(39140),	-- Knife of Incision
 								i(39146),	-- Collar of Dissolution
 								i(39188),	-- Chivalric Chestguard
@@ -49,19 +64,18 @@ root("Instances", tier(WOTLK_TIER, {
 								i(39193),	-- Band of Neglected Pleas
 								i(39141),	-- Deflection Band
 							},
-						})),
-						cr(15953, e(1602, {	-- Grand Widow Faerlina
+						}),
+						e(1602, {	-- Grand Widow Faerlina
+							["creatureID"] = 15953,	-- Grand Widow Faerlina
 							["lore"] = "A botanist in life, breeder and caretaker of arachnids in death, she oversees the spider wing, developing the most potent of poisons for the Lich King.",
 							["groups"] = {
 								ach(1997),	-- Momma Said Knock You Out (10 player)
-								{
-									["achievementID"] = 562,	-- The Arachnid Quarter (10 player)
+								ach(562, {	-- The Arachnid Quarter (10 player)
 									["criteriaID"] = 2,	-- Grand Widow Faerlina slain
-								},
-								{
-									["achievementID"] = 578,	-- The Dedicated Few (10 player)
-									["criteriaID"] = 6,			-- Grand Widow Faerlina slain
-								},
+								}),
+								ach(578, {	-- The Dedicated Few (10 player)
+									["criteriaID"] = 6,	-- Grand Widow Faerlina slain
+								}),
 								i(39200),	-- Grieving Spellblade
 								i(39199),	-- Watchful Eye
 								i(39198),	-- Frostblight Pauldrons
@@ -73,20 +87,21 @@ root("Instances", tier(WOTLK_TIER, {
 								i(39215),	-- Boots of the Follower
 								i(39196),	-- Boots of the Worshiper
 							},
-						})),
-						cr(15952, e(1603, {	-- Maexxna
+						}),
+						e(1603, {	-- Maexxna
+							["creatureID"] = 15952,	-- Maexxna
 							["lore"] = "Born deep within the mountains of Northrend many ages ago, she was captured within the dread citadel Naxxramas, where she gives birth to her brood, feeding them the corpses of all who dare venture too deeply into Naxxramas.",
 							["groups"] = {
 								ach(1858),	-- Arachnophobia (10 player)
-								{
-									["achievementID"] = 562,	-- The Arachnid Quarter (10 player)
+								ach(562, {	-- The Arachnid Quarter (10 player)
 									["criteriaID"] = 3,	-- Maexxna slain
-								},
-								{
-									["achievementID"] = 578,	-- The Dedicated Few (10 player)
-									["criteriaID"] = 7,			-- Maexxna slain
-								},
-								i(93030),	-- Dusty Clutch of Eggs (PET!)
+								}),
+								ach(578, {	-- The Dedicated Few (10 player)
+									["criteriaID"] = 7,	-- Maexxna slain
+								}),
+								i(93030, {	-- Dusty Clutch of Eggs (PET!)
+									["timeline"] = { "added 5.1.0.16309" },
+								}),
 								i(39221),	-- Wraith Spear
 								i(39226),	-- Maexxna's Femur
 								i(39233),	-- Aegis of Damnation
@@ -98,21 +113,19 @@ root("Instances", tier(WOTLK_TIER, {
 								i(39231),	-- Timeworn Silken Band
 								i(39229),	-- Embrace of the Spider
 							},
-						})),
+						}),
 					}),
 					n(-370, {	-- The Plague Quarter
-						ach(566),	-- The Plague Quarter (10 player)
-						cr(15954, e(1604, {	-- Noth the Plaguebringer
+						e(1604, {	-- Noth the Plaguebringer
+							["creatureID"] = 15954,	-- Noth the Plaguebringer
 							["lore"] = "Responsible for the creation of the process that distills the souls of the living and places them within the cold cage of undeath, Noth was observed to be refining this process even now.",
 							["groups"] = {
-								{
-									["achievementID"] = 566,	-- The Plague Quarter (10 player)
+								ach(566, {	-- The Plague Quarter (10 player)
 									["criteriaID"] = 1,	-- Noth the Plaguebringer slain
-								},
-								{
-									["achievementID"] = 578,	-- The Dedicated Few (10 player)
-									["criteriaID"] = 14,		-- Noth the Plaguebringer slain
-								},
+								}),
+								ach(578, {	-- The Dedicated Few (10 player)
+									["criteriaID"] = 14,	-- Noth the Plaguebringer slain
+								}),
 								i(39240),	-- Noth's Curse
 								i(39237),	-- Spaulders of Resumed Battle
 								i(39241),	-- Dark Shroud of the Scourge
@@ -124,19 +137,18 @@ root("Instances", tier(WOTLK_TIER, {
 								i(39236),	-- Trespasser's Boots
 								i(39244),	-- Ring of the Fated
 							},
-						})),
-						cr(15936, e(1605, {	-- Heigan the Unclean
+						}),
+						e(1605, {	-- Heigan the Unclean
+							["creatureID"] = 15936,	-- Heigan the Unclean
 							["lore"] = "The mastermind behind the plague cauldrons that turned the wilderness of Azeroth into the Plaguelands. It is said that Heigan has rigged the very walls and floors of Naxxramas itself with a vast array of traps, which he can trigger at will.",
 							["groups"] = {
 								ach(1996),	-- The Safety Dance (10 player)
-								{
-									["achievementID"] = 566,	-- The Plague Quarter (10 player)
+								ach(566, {	-- The Plague Quarter (10 player)
 									["criteriaID"] = 2,	-- Heigan the Unclean slain
-								},
-								{
-									["achievementID"] = 578,	-- The Dedicated Few (10 player)
-									["criteriaID"] = 5,			-- Heigan the Unclean slain
-								},
+								}),
+								ach(578, {	-- The Dedicated Few (10 player)
+									["criteriaID"] = 5,	-- Heigan the Unclean slain
+								}),
 								i(39245),	-- Demise
 								i(39255),	-- Staff of the Plague Beast
 								i(39246),	-- Amulet of Autopsy
@@ -148,20 +160,21 @@ root("Instances", tier(WOTLK_TIER, {
 								i(39254),	-- Saltarello Shoes
 								i(39250),	-- Ring of Holy Cleansing
 							},
-						})),
-						cr(16011, e(1606, {	-- Loatheb
+						}),
+						e(1606, {	-- Loatheb
+							["creatureID"] = 16011,	-- Loatheb
 							["lore"] = "The hideous result of fusing the living plague of the Plaguelands with the bog beasts of Azeroth, Loatheb is said to control the power of healing itself.",
 							["groups"] = {
 								ach(2182),	-- Spore Loser (10 player)
-								{
-									["achievementID"] = 566,	-- The Plague Quarter (10 player)
+								ach(566, {	-- The Plague Quarter (10 player)
 									["criteriaID"] = 3,	-- Loatheb slain
-								},
-								{
-									["achievementID"] = 578,	-- The Dedicated Few (10 player)
-									["criteriaID"] = 9,			-- Loatheb slain
-								},
-								i(93032),	-- Blighted Spore (PET!)
+								}),
+								ach(578, {	-- The Dedicated Few (10 player)
+									["criteriaID"] = 9,	-- Loatheb slain
+								}),
+								i(93032, {	-- Blighted Spore (PET!)
+									["timeline"] = { "added 5.1.0.16309" },
+								}),
 								i(40622),	-- Spaulders of the Lost Conqueror
 								i(40623),	-- Spaulders of the Lost Protector
 								i(40624),	-- Spaulders of the Lost Vanquisher
@@ -171,21 +184,19 @@ root("Instances", tier(WOTLK_TIER, {
 								i(39258),	-- Legplates of Inescapable Death
 								i(39257),	-- Loatheb's Shadow
 							},
-						})),
+						}),
 					}),
 					n(-369, {	-- The Military Quarter
-						ach(568),	-- The Military Quarter (10 player)
-						cr(16061, e(1607, {	-- Instructor Razuvious
+						e(1607, {	-- Instructor Razuvious
+							["creatureID"] = 16061,	-- Instructor Razuvious
 							["lore"] = "Kel'Thuzad's appointed trainer of all death knights. It is said that his own technique is so potent, only a disciple of his could possibly withstand his might.",
 							["groups"] = {
-								{
-									["achievementID"] = 568,	-- The Military Quarter (10 player)
+								ach(568, {	-- The Military Quarter (10 player)
 									["criteriaID"] = 1,	-- Instructor Razuvious slain
-								},
-								{
-									["achievementID"] = 578,	-- The Dedicated Few (10 player)
-									["criteriaID"] = 13,		-- Instructor Razuvious slain
-								},
+								}),
+								ach(578, {	-- The Dedicated Few (10 player)
+									["criteriaID"] = 13,	-- Instructor Razuvious slain
+								}),
 								i(39296),	-- Accursed Bow of the Elite
 								i(39311),	-- Scepter of Murmuring Spirits
 								i(39310),	-- Mantle of the Extensive Mind
@@ -197,18 +208,17 @@ root("Instances", tier(WOTLK_TIER, {
 								i(39298),	-- Waistguard of the Tutor
 								i(39309),	-- Leggings of the Instructor
 							},
-						})),
-						cr(16060, e(1608, {	-- Gothik the Harvester
+						}),
+						e(1608, {	-- Gothik the Harvester
+							["creatureID"] = 16060,	-- Gothik the Harvester
 							["lore"] = "A master of necromancy and conjuration, Gothik is said to be able to beckon forth legions of the undead at a moment's notice. It is with his guidance that even the weakest of Death Knights can raise the dead.",
 							["groups"] = {
-								{
-									["achievementID"] = 568,	-- The Military Quarter (10 player)
+								ach(568, {	-- The Military Quarter (10 player)
 									["criteriaID"] = 2,	-- Gothik the Harvester slain
-								},
-								{
-									["achievementID"] = 578,	-- The Dedicated Few (10 player)
-									["criteriaID"] = 2,			-- Gothik the Harvester slain
-								},
+								}),
+								ach(578, {	-- The Dedicated Few (10 player)
+									["criteriaID"] = 2,	-- Gothik the Harvester slain
+								}),
 								i(39344),	-- Slayer of the Lifeless
 								i(39392),	-- Veiled Amulet of Life
 								i(39391),	-- Heinous Mail Chestguard
@@ -220,15 +230,20 @@ root("Instances", tier(WOTLK_TIER, {
 								i(39389),	-- Signet of the Malevolent
 								i(39388),	-- Spirit-World Glass
 							},
-						})),
-						cr(30549, e(1609, {	-- The Four Horsemen
+						}),
+						e(1609, {	-- The Four Horsemen
+							["crs"] = {
+								30549,	-- Baron Rivendare
+								16064,	-- Thane Korth'azz
+								16065,	-- Lady Blaumeux
+								16063,	-- Sir Zeliek
+							},
 							["lore"] = "The most powerful death knights within Naxxramas are the four horsemen. They represent the pinnacle of Kel'Thuzad's guard. The first, Thane Korth'azz, holds the power of flame. The next, Lady Blaumeux, calls forth the power of shadows, drawing the souls of the living into the voracious embrace. Sir Zeliek, a paladin in life, so strong in his faith, that even in undeath, the power of the light still heeds his call, smiting his foes in battle. The final death knight, Lord Mograine, was the finest warrior that the death knights had ever seen. However, after the events of Azeroth, he vanished without a trace. Kel'Thuzad has appointed Baron Rivendare in his place.",
 							["groups"] = {
 								ach(2176),	-- And They Would All Go Down Together (10 player)
-								{
-									["achievementID"] = 568,	-- The Military Quarter (10 player)
+								ach(568, {	-- The Military Quarter (10 player)
 									["criteriaID"] = 3,	-- The Four Horsemen slain
-								},
+								}),
 								i(40610),	-- Chestguard of the Lost Conqueror
 								i(40611),	-- Chestguard of the Lost Protector
 								i(40612),	-- Chestguard of the Lost Vanquisher
@@ -238,22 +253,20 @@ root("Instances", tier(WOTLK_TIER, {
 								i(39397),	-- Pauldrons of Havoc
 								i(39396),	-- Gown of Blaumeux
 							},
-						})),
+						}),
 					}),
 					n(-367, {	-- The Construct Quarter
-						ach(564),	-- The Construct Quarter (10 player)
-						cr(16028, e(1610, {	-- Patchwerk
+						e(1610, {	-- Patchwerk
+							["creatureID"] = 16028,	-- Patchwerk
 							["lore"] = "When word of his existence first reached the ears of the Brotherhood, none believed the tales of an abomination with such immense speed and strength. Fewer still believed it when he fell the first time... Patchwerk want to play!",
 							["groups"] = {
 								ach(1856),	-- Make Quick Werk of Him (10 player)
-								{
-									["achievementID"] = 564,	-- The Construct Quarter (10 player)
+								ach(564, {	-- The Construct Quarter (10 player)
 									["criteriaID"] = 1,	-- Patchwerk slain
-								},
-								{
-									["achievementID"] = 578,	-- The Dedicated Few (10 player)
-									["criteriaID"] = 12,		-- Patchwerk slain
-								},
+								}),
+								ach(578, {	-- The Dedicated Few (10 player)
+									["criteriaID"] = 12,	-- Patchwerk slain
+								}),
 								i(39271),	-- Blade of Dormant Memories
 								i(39270),	-- Hatestrike
 								i(39267),	-- Abomination Shoulderblades
@@ -265,18 +278,17 @@ root("Instances", tier(WOTLK_TIER, {
 								i(39263),	-- Dissevered Leggings
 								i(39273),	-- Sullen Cloth Boots
 							},
-						})),
-						cr(15931, e(1611, {	-- Grobbulus
+						}),
+						e(1611, {	-- Grobbulus
+							["creatureID"] = 15931,	-- Grobbulus
 							["lore"] = "The first of what was to be an army of flesh giants. It carried the plague slime of Naxxramas within its body, injecting the living ooze into the bodies of its foe. The recipient of this foul injection would usually flee to his allies, bringing them down with him.",
 							["groups"] = {
-								{
-									["achievementID"] = 564,	-- The Construct Quarter (10 player)
+								ach(564, {	-- The Construct Quarter (10 player)
 									["criteriaID"] = 2,	-- Grobbulus slain
-								},
-								{
-									["achievementID"] = 578,	-- The Dedicated Few (10 player)
-									["criteriaID"] = 4,			-- Grobbulus slain
-								},
+								}),
+								ach(578, {	-- The Dedicated Few (10 player)
+									["criteriaID"] = 4,	-- Grobbulus slain
+								}),
 								i(39281),	-- Infection Repulser
 								i(39276),	-- The Skull of Ruin
 								i(39282),	-- Bone-Linked Amulet
@@ -288,19 +300,20 @@ root("Instances", tier(WOTLK_TIER, {
 								i(39280),	-- Leggings of Innumerable Barbs
 								i(39277),	-- Sealing Ring of Grobbulus
 							},
-						})),
-						cr(15932, e(1612, {	-- Gluth
+						}),
+						e(1612, {	-- Gluth
+							["creatureID"] = 15932, -- Gluth
 							["lore"] = "The foul plague-dog of Naxxramas, was said to have an appetite so voracious that even the living were not enough to satisfy his hunger. Feugen was said to feed him an army of zombies daily, recycling the remains of undead too weak to use in combat.",
 							["groups"] = {
-								{
-									["achievementID"] = 564,	-- The Construct Quarter (10 player)
+								ach(564, {	-- The Construct Quarter (10 player)
 									["criteriaID"] = 3,	-- Gluth slain
-								},
-								{
-									["achievementID"] = 578,	-- The Dedicated Few (10 player)
-									["criteriaID"] = 10,		-- Gluth slain
-								},
-								i(93029),	-- Gluth's Bone (PET!)
+								}),
+								ach(578, {	-- The Dedicated Few (10 player)
+									["criteriaID"] = 10,	-- Gluth slain
+								}),
+								i(93029, {	-- Gluth's Bone (PET!)
+									["timeline"] = { "added 5.1.0.16309" },
+								}),
 								i(40610),	-- Chestguard of the Lost Conqueror
 								i(40611),	-- Chestguard of the Lost Protector
 								i(40612),	-- Chestguard of the Lost Vanquisher
@@ -416,20 +429,19 @@ root("Instances", tier(WOTLK_TIER, {
 								i(39292),	-- Repelling Charge
 								i(39388),	-- Spirit-World Glass
 							},
-						})),
-						cr(15928, e(1613, {	-- Thaddius
+						}),
+						e(1613, {	-- Thaddius
+							["creatureID"] = 15928,	-- Thaddius
 							["lore"] = "Built from the flesh of women and children, it is said that their souls are fused together - eternally bound within that foul prison of flesh.",
 							["groups"] = {
 								ach(2178),	-- Shocking! (10 player)
 								ach(2180),	-- Subtraction (10 player)
-								{
-									["achievementID"] = 564,	-- The Construct Quarter (10 player)
+								ach(564, {	-- The Construct Quarter (10 player)
 									["criteriaID"] = 4,	-- Thaddius slain
-								},
-								{
-									["achievementID"] = 578,	-- The Dedicated Few (10 player)
-									["criteriaID"] = 11,		-- Thaddius slain
-								},
+								}),
+								ach(578, {	-- The Dedicated Few (10 player)
+									["criteriaID"] = 11,	-- Thaddius slain
+								}),
 								i(40619),	-- Leggings of the Lost Conqueror
 								i(40620),	-- Leggings of the Lost Protector
 								i(40621),	-- Leggings of the Lost Vanquisher
@@ -439,22 +451,19 @@ root("Instances", tier(WOTLK_TIER, {
 								i(39293),	-- Blackened Legplates of Feugen
 								i(39292),	-- Repelling Charge
 							},
-						})),
+						}),
 					}),
 					n(-371, {	-- The Upper Necropolis
-						cr(15989, e(1614, {	-- Sapphiron
+						e(1614, {	-- Sapphiron
+							["creatureID"] = 15989,	-- Sapphiron
 							["lore"] = "Once a noble blue dragon within the mountains of Northrend, Sapphiron was slain by Arthas during his campaign through the frozen north. Resurrected to serve him, Sapphiron guards Kel'Thuzad's lair eternally, awaiting those who would dare trespass upon his master.",
 							["groups"] = {
 								ach(572),	-- Sapphiron's Demise (10 player)
 								ach(2146),	-- The Hundred Club (10 player)
-								{
-									["achievementID"] = 578,	-- The Dedicated Few (10 player)
-									["criteriaID"] = 8,			-- Sapphiron slain
-								},
-								{
-									["itemID"] = 44569,		-- Key to the Focusing Iris (Item)
-									["questID"] = 13372,	-- The Key to the Focusing Iris (Quest)
-								},
+								ach(578, {	-- The Dedicated Few (10 player)
+									["criteriaID"] = 8,	-- Sapphiron slain
+								}),
+								i(44569),	-- Key to the Focusing Iris (Item)
 								i(39409),	-- Cowl of Winged Fear
 								i(39403),	-- Helm of the Unsubmissive
 								i(39399),	-- Helm of the Vast Legions
@@ -466,24 +475,22 @@ root("Instances", tier(WOTLK_TIER, {
 								i(39401),	-- Circle of Death
 								i(39407),	-- Circle of Life
 							},
-						})),
-						cr(15990, e(1615, {	-- Kel'Thuzad
+						}),
+						e(1615, {	-- Kel'Thuzad
+							["creatureID"] = 15990,	-- Kel'Thuzad
 							["lore"] = "He serves the Lich King without question, a necromancer of great prowess in life, turned to a master of necromancy after his death. It is said he is the most loyal of the Lich King's subjects.",
 							["groups"] = {
 								ach(574),	-- Kel'Thuzad's Defeat (10 player)
-								{
-									["achievementID"] = 2184,	-- Just Can't Get Enough (10 player)
-									["description"] = "Pull 1 abomintion from each section and then AOE them all when they get to you. Very easy achievement.",
+								ach(2184, {	-- Just Can't Get Enough (10 player)
 									["provider"] = { "n", 16428 },	-- Unstoppable Abomination
-								},
-								{
-									["achievementID"] = 1658,	-- Champion of the Frozen Wastes
-									["criteriaID"] = 2,			-- Kel'Thuzad (10 or 25 player) slain
-								},
-								{
-									["achievementID"] = 578,	-- The Dedicated Few (10 player)
-									["criteriaID"] = 1,			-- Kel'Thuzad slain
-								},
+									["description"] = "Pull 1 abomintion from each section and then AOE them all when they get to you. Very easy achievement.",
+								}),
+								ach(1658, {	-- Champion of the Frozen Wastes: Kel'Thuzad
+									["criteriaID"] = 2,	-- Kel'Thuzad (10 or 25 player) slain
+								}),
+								ach(578, {	-- The Dedicated Few (10 player)
+									["criteriaID"] = 1,	-- Kel'Thuzad slain
+								}),
 								i(40616),	-- Helm of the Lost Conqueror
 								i(40617),	-- Helm of the Lost Protector
 								i(40618),	-- Helm of the Lost Vanquisher
@@ -497,27 +504,39 @@ root("Instances", tier(WOTLK_TIER, {
 								i(39426),	-- Wand of the Archlich
 								i(39421),	-- Gem of Imprisoned Vassals
 								i(39425),	-- Cloak of the Dying
-								i(122197),	-- Music Roll: Wrath of the Lich King
+								i(122197, {	-- Music Roll: Wrath of the Lich King
+									["timeline"] = { "added 6.1.0.19445" },
+								}),
 							},
-						})),
+						}),
 					}),
 				},
 			}),
 			d(4, {	-- 25-Man
 				["lvl"] = 80,
 				["groups"] = {
-					ach(579),	-- The Dedicated Few (25 player)
-					ach(577),	-- The Fall of Naxxramas (25 player)
-					{
-						["achievementID"] = 2186,	-- The Immortal
-						["u"] = REMOVED_FROM_GAME,
-						["groups"] = {
-							{
-								["titleID"] = 108,	-- The Immortal
-								["u"] = REMOVED_FROM_GAME,
+					n(ACHIEVEMENTS, {
+						ach(579),	-- The Dedicated Few (25 player)
+						ach(563),	-- The Arachnid Quarter (25 player)
+						ach(567),	-- The Plague Quarter (25 player)
+						ach(569),	-- The Military Quarter (25 player)
+						ach(565),	-- The Construct Quarter (25 player)
+						ach(577),	-- The Fall of Naxxramas (25 player)
+						ach(2186, {	-- The Immortal
+							["timeline"] = { "removed 4.0.3" },
+							["groups"] = {
+								title(108, {	-- The Immortal
+									["timeline"] = { "removed 4.0.3" },
+								}),
 							},
-						},
-					},
+						}),
+					}),
+					n(QUESTS, {
+						q(13375, {	-- The Heroic Key to the Focusing Iris (Quest)
+							["provider"] = { "i", 44577 },	-- Heroic Key to the Focusing Iris (Item)
+							["lvl"] = lvlsquish(78, 78, 30),
+						}),
+					}),
 					n(ZONE_DROPS, {
 						i(40410),	-- Shadow of the Ghoul
 						i(40409),	-- Boots of the Escaped Captive
@@ -528,18 +547,16 @@ root("Instances", tier(WOTLK_TIER, {
 						i(40412),	-- Ousted Bead Necklace
 					}),
 					n(-368, {	-- The Arachnid Quarter
-						ach(563),	-- The Arachnid Quarter (25 player)
-						cr(15956, e(1601, {	-- Anub'Rekhan
+						e(1601, {	-- Anub'Rekhan
+							["creatureID"] = 15956,	-- Anub'Rekhan
 							["lore"] = "Anub'Rekhan, one of the finest Spider Lords of Azjol'Nerub, was brought under control of the Scourge when he and his commander, Anub'Arak, were finally defeated by the Lich King many years ago. It is said he was the most loyal of Anub'Arak's commanders.",
 							["groups"] = {
-								{
-									["achievementID"] = 563,	-- The Arachnid Quarter (25 player)
+								ach(563, {	-- The Arachnid Quarter (25 player)
 									["criteriaID"] = 1,	-- Anub'Rekhan slain
-								},
-								{
-									["achievementID"] = 579,	-- The Dedicated Few (25 player)
-									["criteriaID"] = 1,			-- Anub'Rekhan slain
-								},
+								}),
+								ach(579, {	-- The Dedicated Few (25 player)
+									["criteriaID"] = 1,	-- Anub'Rekhan slain
+								}),
 								i(39714),	-- Webbed Death
 								i(39712),	-- Gemmed Wand of the Nerubians
 								i(39716),	-- Shield of Assimilation
@@ -564,19 +581,18 @@ root("Instances", tier(WOTLK_TIER, {
 								i(40108),	-- Seized Beauty
 								i(40074),	-- Strong-Handed Ring
 							},
-						})),
-						cr(15953, e(1602, {	-- Grand Widow Faerlina
+						}),
+						e(1602, {	-- Grand Widow Faerlina
+							["creatureID"] = 15953,	-- Grand Widow Faerlina
 							["lore"] = "A botanist in life, breeder and caretaker of arachnids in death, she oversees the spider wing, developing the most potent of poisons for the Lich King.",
 							["groups"] = {
 								ach(2140),	-- Momma Said Knock You Out (25 player)
-								{
-									["achievementID"] = 563,	-- The Arachnid Quarter (25 player)
+								ach(563, {	-- The Arachnid Quarter (25 player)
 									["criteriaID"] = 2,	-- Grand Widow Faerlina slain
-								},
-								{
-									["achievementID"] = 579,	-- The Dedicated Few (25 player)
-									["criteriaID"] = 5,			-- Grand Widow Faerlina slain
-								},
+								}),
+								ach(579, {	-- The Dedicated Few (25 player)
+									["criteriaID"] = 5,	-- Grand Widow Faerlina slain
+								}),
 								i(39730),	-- Widow's Fury
 								i(39732),	-- Faerlina's Madness
 								i(39723),	-- Fire-Scorched Greathelm
@@ -600,20 +616,21 @@ root("Instances", tier(WOTLK_TIER, {
 								i(40108),	-- Seized Beauty
 								i(40074),	-- Strong-Handed Ring
 							},
-						})),
-						cr(15952, e(1603, {	-- Maexxna
+						}),
+						e(1603, {	-- Maexxna
+							["creatureID"] = 15952,	-- Maexxna
 							["lore"] = "Born deep within the mountains of Northrend many ages ago, she was captured within the dread citadel Naxxramas, where she gives birth to her brood, feeding them the corpses of all who dare venture too deeply into Naxxramas.",
 							["groups"] = {
 								ach(1859),	-- Arachnophobia (25 player)
-								{
-									["achievementID"] = 563,	-- The Arachnid Quarter (25 player)
+								ach(563, {	-- The Arachnid Quarter (25 player)
 									["criteriaID"] = 3,	-- Maexxna slain
-								},
-								{
-									["achievementID"] = 579,	-- The Dedicated Few (25 player)
-									["criteriaID"] = 7,			-- Maexxna slain
-								},
-								i(93030),	-- Dusty Clutch of Eggs (PET!)
+								}),
+								ach(579, {	-- The Dedicated Few (25 player)
+									["criteriaID"] = 7,	-- Maexxna slain
+								}),
+								i(93030, {	-- Dusty Clutch of Eggs (PET!)
+									["timeline"] = { "added 5.1.0.16309" },
+								}),
 								i(39758),	-- The Jawbone
 								i(39763),	-- Wraith Strike
 								i(39766),	-- Matriarch's Spawn
@@ -639,21 +656,19 @@ root("Instances", tier(WOTLK_TIER, {
 								i(40258),	-- Forethought Talisman
 								i(40256),	-- Grim Toll
 							},
-						})),
+						}),
 					}),
 					n(-370, {	-- The Plague Quarter
-						ach(567),	-- The Plague Quarter (25 player)
-						cr(15954, e(1604, {	-- Noth the Plaguebringer
+						e(1604, {	-- Noth the Plaguebringer
+							["creatureID"] = 15954,	-- Noth the Plaguebringer
 							["lore"] = "Responsible for the creation of the process that distills the souls of the living and places them within the cold cage of undeath, Noth was observed to be refining this process even now.",
 							["groups"] = {
-								{
-									["achievementID"] = 567,	-- The Plague Quarter (25 player)
+								ach(567, {	-- The Plague Quarter (25 player)
 									["criteriaID"] = 1,	-- Noth the Plaguebringer slain
-								},
-								{
-									["achievementID"] = 579,	-- The Dedicated Few (25 player)
-									["criteriaID"] = 14,		-- Noth the Plaguebringer slain
-								},
+								}),
+								ach(579, {	-- The Dedicated Few (25 player)
+									["criteriaID"] = 14,	-- Noth the Plaguebringer slain
+								}),
 								i(40189),	-- Angry Dread
 								i(40192),	-- Accursed Spine
 								i(40071),	-- Chains of Adoration
@@ -677,19 +692,18 @@ root("Instances", tier(WOTLK_TIER, {
 								i(40108),	-- Seized Beauty
 								i(40074),	-- Strong-Handed Ring
 							},
-						})),
-						cr(15936, e(1605, {	-- Heigan the Unclean
+						}),
+						e(1605, {	-- Heigan the Unclean
+							["creatureID"] = 15936,	-- Heigan the Unclean
 							["lore"] = "The mastermind behind the plague cauldrons that turned the wilderness of Azeroth into the Plaguelands. It is said that Heigan has rigged the very walls and floors of Naxxramas itself with a vast array of traps, which he can trigger at will.",
 							["groups"] = {
 								ach(2139),	-- The Safety Dance (25 player)
-								{
-									["achievementID"] = 567,	-- The Plague Quarter (25 player)
+								ach(567, {	-- The Plague Quarter (25 player)
 									["criteriaID"] = 2,	-- Heigan the Unclean slain
-								},
-								{
-									["achievementID"] = 579,	-- The Dedicated Few (25 player)
-									["criteriaID"] = 2,			-- Heigan the Unclean slain
-								},
+								}),
+								ach(579, {	-- The Dedicated Few (25 player)
+									["criteriaID"] = 2,	-- Heigan the Unclean slain
+								}),
 								i(40208),	-- Cryptfiend's Bite
 								i(40233),	-- The Undeath Carrier
 								i(40235),	-- Helm of Pilgrimage
@@ -714,20 +728,21 @@ root("Instances", tier(WOTLK_TIER, {
 								i(40258),	-- Forethought Talisman
 								i(40256),	-- Grim Toll
 							},
-						})),
-						cr(16011, e(1606, {	-- Loatheb
+						}),
+						e(1606, {	-- Loatheb
+							["creatureID"] = 16011,	-- Loatheb
 							["lore"] = "The hideous result of fusing the living plague of the Plaguelands with the bog beasts of Azeroth, Loatheb is said to control the power of healing itself.",
 							["groups"] = {
 								ach(2183),	-- Spore Loser (25 player)
-								{
-									["achievementID"] = 567,	-- The Plague Quarter (25 player)
+								ach(567, {	-- The Plague Quarter (25 player)
 									["criteriaID"] = 3,	-- Loatheb slain
-								},
-								{
-									["achievementID"] = 579,	-- The Dedicated Few (25 player)
-									["criteriaID"] = 9,			-- Loatheb slain
-								},
-								i(93032),	-- Blighted Spore (PET!)
+								}),
+								ach(579, {	-- The Dedicated Few (25 player)
+									["criteriaID"] = 9,	-- Loatheb slain
+								}),
+								i(93032, {	-- Blighted Spore (PET!)
+									["timeline"] = { "added 5.1.0.16309" },
+								}),
 								i(40637),	-- Mantle of the Lost Conqueror
 								i(40638),	-- Mantle of the Lost Protector
 								i(40639),	-- Mantle of the Lost Vanquisher
@@ -742,21 +757,19 @@ root("Instances", tier(WOTLK_TIER, {
 								i(40246),	-- Boots of Impetuous Ideals
 								i(40243),	-- Footwraps of Vile Deceit
 							},
-						})),
+						}),
 					}),
 					n(-369, {	-- The Military Quarter
-						ach(569),	-- The Military Quarter (25 player)
-						cr(16061, e(1607, {	-- Instructor Razuvious
+						e(1607, {	-- Instructor Razuvious
+							["creatureID"] = 16061,	-- Instructor Razuvious
 							["lore"] = "Kel'Thuzad's appointed trainer of all death knights. It is said that his own technique is so potent, only a disciple of his could possibly withstand his might.",
 							["groups"] = {
-								{
-									["achievementID"] = 569,	-- The Military Quarter (25 player)
+								ach(569, {	-- The Military Quarter (25 player)
 									["criteriaID"] = 1,	-- Instructor Razuvious slain
-								},
-								{
-									["achievementID"] = 579,	-- The Dedicated Few (25 player)
-									["criteriaID"] = 13,		-- Instructor Razuvious slain
-								},
+								}),
+								ach(579, {	-- The Dedicated Few (25 player)
+									["criteriaID"] = 13,	-- Instructor Razuvious slain
+								}),
 								i(40071),	-- Chains of Adoration
 								i(40065),	-- Fool's Trial
 								i(40069),	-- Heritage
@@ -780,18 +793,17 @@ root("Instances", tier(WOTLK_TIER, {
 								i(40108),	-- Seized Beauty
 								i(40074),	-- Strong-Handed Ring
 							},
-						})),
-						cr(16060, e(1608, {	-- Gothik the Harvester
+						}),
+						e(1608, {	-- Gothik the Harvester
+							["creatureID"] = 16060,	-- Gothik the Harvester
 							["lore"] = "A master of necromancy and conjuration, Gothik is said to be able to beckon forth legions of the undead at a moment's notice. It is with his guidance that even the weakest of Death Knights can raise the dead.",
 							["groups"] = {
-								{
-									["achievementID"] = 569,	-- The Military Quarter (25 player)
+								ach(569, {	-- The Military Quarter (25 player)
 									["criteriaID"] = 2,	-- Gothik the Harvester slain
-								},
-								{
-									["achievementID"] = 579,	-- The Dedicated Few (25 player)
-									["criteriaID"] = 4,			-- Gothik the Harvester slain
-								},
+								}),
+								ach(579, {	-- The Dedicated Few (25 player)
+									["criteriaID"] = 4,	-- Gothik the Harvester slain
+								}),
 								i(40336),	-- Life and Death
 								i(40335),	-- Touch of Horror
 								i(40339),	-- Gothik's Cowl
@@ -815,15 +827,20 @@ root("Instances", tier(WOTLK_TIER, {
 								i(40258),	-- Forethought Talisman
 								i(40256),	-- Grim Toll
 							},
-						})),
-						cr(30549, e(1609, {	-- The Four Horsemen
+						}),
+						e(1609, {	-- The Four Horsemen
+							["crs"] = {
+								30549,	-- Baron Rivendare
+								16064,	-- Thane Korth'azz
+								16065,	-- Lady Blaumeux
+								16063,	-- Sir Zeliek
+							},
 							["lore"] = "The most powerful death knights within Naxxramas are the four horsemen. They represent the pinnacle of Kel'Thuzad's guard. The first, Thane Korth'azz, holds the power of flame. The next, Lady Blaumeux, calls forth the power of shadows, drawing the souls of the living into the voracious embrace. Sir Zeliek, a paladin in life, so strong in his faith, that even in undeath, the power of the light still heeds his call, smiting his foes in battle. The final death knight, Lord Mograine, was the finest warrior that the death knights had ever seen. However, after the events of Azeroth, he vanished without a trace. Kel'Thuzad has appointed Baron Rivendare in his place.",
 							["groups"] = {
 								ach(2177),	-- And They Would All Go Down Together (25 player)
-								{
-									["achievementID"] = 569,	-- The Military Quarter (25 player)
+								ach(569, {	-- The Military Quarter (25 player)
 									["criteriaID"] = 3,	-- The Four Horsemen slain
-								},
+								}),
 								i(40343),	-- Armageddon
 								i(40348),	-- Damnation
 								i(40345),	-- Broken Promise
@@ -839,24 +856,23 @@ root("Instances", tier(WOTLK_TIER, {
 								i(40627),	-- Breastplate of the Lost Vanquisher
 								i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
 									["sourceQuest"] = 38990,	-- The Call of Icecrown
+									["timeline"] = { "added 7.0.3.22248" },
 								}),
 							},
-						})),
+						}),
 					}),
 					n(-367, {	-- The Construct Quarter
-						ach(565),	-- The Construct Quarter (25 player)
-						cr(16028, e(1610, {	-- Patchwerk
+						e(1610, {	-- Patchwerk
+							["creatureID"] = 16028,	-- Patchwerk
 							["lore"] = "When word of his existence first reached the ears of the Brotherhood, none believed the tales of an abomination with such immense speed and strength. Fewer still believed it when he fell the first time... Patchwerk want to play!",
 							["groups"] = {
 								ach(1857),	-- Make Quick Werk of Him (25 player)
-								{
-									["achievementID"] = 565,	-- The Construct Quarter (25 player)
+								ach(565, {	-- The Construct Quarter (25 player)
 									["criteriaID"] = 1,	-- Patchwerk slain
-								},
-								{
-									["achievementID"] = 579,	-- The Dedicated Few (25 player)
-									["criteriaID"] = 11,		-- Patchwerk slain
-								},
+								}),
+								ach(579, {	-- The Dedicated Few (25 player)
+									["criteriaID"] = 11,	-- Patchwerk slain
+								}),
 								i(40264),	-- Split Greathammer
 								i(40265),	-- Arrowsong
 								i(40266),	-- Hero's Surrender
@@ -880,18 +896,17 @@ root("Instances", tier(WOTLK_TIER, {
 								i(40108),	-- Seized Beauty
 								i(40074),	-- Strong-Handed Ring
 							},
-						})),
-						cr(15931, e(1611, {	-- Grobbulus
+						}),
+						e(1611, {	-- Grobbulus
+							["creatureID"] = 15931,	-- Grobbulus
 							["lore"] = "The first of what was to be an army of flesh giants. It carried the plague slime of Naxxramas within its body, injecting the living ooze into the bodies of its foe. The recipient of this foul injection would usually flee to his allies, bringing them down with him.",
 							["groups"] = {
-								{
-									["achievementID"] = 565,	-- The Construct Quarter (25 player)
+								ach(565, {	-- The Construct Quarter (25 player)
 									["criteriaID"] = 2,	-- Grobbulus slain
-								},
-								{
-									["achievementID"] = 579,	-- The Dedicated Few (25 player)
-									["criteriaID"] = 3,			-- Grobbulus slain
-								},
+								}),
+								ach(579, {	-- The Dedicated Few (25 player)
+									["criteriaID"] = 3,	-- Grobbulus slain
+								}),
 								i(40280),	-- Origin of Nightmares
 								i(40281),	-- Twilight Mist
 								i(40284),	-- Plague Igniter
@@ -917,19 +932,20 @@ root("Instances", tier(WOTLK_TIER, {
 								i(40258),	-- Forethought Talisman
 								i(40256),	-- Grim Toll
 							},
-						})),
-						cr(15932, e(1612, {	-- Gluth
+						}),
+						e(1612, {	-- Gluth
+							["creatureID"] = 15932,	-- Gluth
 							["lore"] = "The foul plague-dog of Naxxramas was said to have an appetite so voracious that even the living were not enough to satisfy his hunger. Feugen was said to feed him an army of zombies daily, recycling the remains of undead too weak to use in combat.",
 							["groups"] = {
-								{
-									["achievementID"] = 565,	-- The Construct Quarter (25 player)
+								ach(565, {	-- The Construct Quarter (25 player)
 									["criteriaID"] = 3,	-- Gluth slain
-								},
-								{
-									["achievementID"] = 579,	-- The Dedicated Few (25 player)
-									["criteriaID"] = 10,		-- Gluth slain
-								},
-								i(93029),	-- Gluth's Bone (TOY!)
+								}),
+								ach(579, {	-- The Dedicated Few (25 player)
+									["criteriaID"] = 10,	-- Gluth slain
+								}),
+								i(93029, {	-- Gluth's Bone (TOY!)
+									["timeline"] = { "added 5.1.0.16309" },
+								}),
 								i(40625),	-- Breastplate of the Lost Conqueror
 								i(40626),	-- Breastplate of the Lost Protector
 								i(40627),	-- Breastplate of the Lost Vanquisher
@@ -1089,20 +1105,19 @@ root("Instances", tier(WOTLK_TIER, {
 								i(40236),	-- Serene Echoes
 								i(40325),	-- Bindings of the Expansive Mind
 							},
-						})),
-						cr(15928, e(1613, {	-- Thaddius
+						}),
+						e(1613, {	-- Thaddius
+							["creatureID"] = 15928,	-- Thaddius
 							["lore"] = "Built from the flesh of women and children, it is said that their souls are fused together - eternally bound within that foul prison of flesh.",
 							["groups"] = {
 								ach(2179),	-- Shocking! (25 player)
 								ach(2181),	-- Subtraction (25 player)
-								{
-									["achievementID"] = 565,	-- The Construct Quarter (25 player)
+								ach(565, {	-- The Construct Quarter (25 player)
 									["criteriaID"] = 4,	-- Thaddius slain
-								},
-								{
-									["achievementID"] = 579,	-- The Dedicated Few (25 player)
-									["criteriaID"] = 12,		-- Thaddius slain
-								},
+								}),
+								ach(579, {	-- The Dedicated Few (25 player)
+									["criteriaID"] = 12,	-- Thaddius slain
+								}),
 								i(40634),	-- Legplates of the Lost Conqueror
 								i(40635),	-- Legplates of the Lost Protector
 								i(40636),	-- Legplates of the Lost Vanquisher
@@ -1117,22 +1132,19 @@ root("Instances", tier(WOTLK_TIER, {
 								i(40294),	-- Riveted Abomination Leggings
 								i(40297),	-- Sabatons of Endurance
 							},
-						})),
+						}),
 					}),
 					n(-371, {	-- The Upper Necropolis
-						cr(15989, e(1614, {	-- Sapphiron
+						e(1614, {	-- Sapphiron
+							["creatureID"] = 15989,	-- Sapphiron
 							["lore"] = "Once a noble blue dragon within the mountains of Northrend, Sapphiron was slain by Arthas during his campaign through the frozen north. Resurrected to serve him, Sapphiron guards Kel'Thuzad's lair eternally, awaiting those who would dare trespass upon his master.",
 							["groups"] = {
 								ach(573),	-- Sapphiron's Demise (25 player)
 								ach(2147),	-- The Hundred Club (25 player)
-								{
-									["achievementID"] = 579,	-- The Dedicated Few (25 player)
-									["criteriaID"] = 8,			-- Sapphiron slain
-								},
-								{
-									["itemID"] = 44577,		-- Heroic Key to the Focusing Iris (Item)
-									["questID"] = 13375,	-- The Heroic Key to the Focusing Iris (Quest)
-								},
+								ach(579, {	-- The Dedicated Few (25 player)
+									["criteriaID"] = 8,	-- Sapphiron slain
+								}),
+								i(44577),	-- Heroic Key to the Focusing Iris (Item)
 								i(40368),	-- Murder
 								i(40366),	-- Platehelm of the Great Wyrm
 								i(40378),	-- Ceaseless Pity
@@ -1154,34 +1166,30 @@ root("Instances", tier(WOTLK_TIER, {
 								i(40372),	-- Rune of Repulsion
 								i(40382),	-- Soul of the Dead
 							},
-						})),
-						cr(15990, e(1615, {	-- Kel'Thuzad
+						}),
+						e(1615, {	-- Kel'Thuzad
+							["creatureID"] = 15990,	-- Kel'Thuzad
 							["lore"] = "He serves the Lich King without question, a necromancer of great prowess in life, turned to a master of necromancy after his death. It is said he is the most loyal of the Lich King's subjects.",
 							["groups"] = {
-								{
-									["achievementID"] = 1402,	-- Realm First! Conqueror of Naxxramas
-									["u"] = REMOVED_FROM_GAME,
+								applyclassicphase(WRATH_PHASE_ONE_REALM_FIRST, ach(1402, {	-- Realm First! Conqueror of Naxxramas
+									["timeline"] = { "removed 4.0.3" },
 									["groups"] = {
-										{
-											["titleID"] = 90,	-- %, Conqueror of Naxxramas
-											["u"] = REMOVED_FROM_GAME,
-										},
+										title(90, {	-- %, Conqueror of Naxxramas
+											["timeline"] = { "removed 4.0.3" },
+										}),
 									},
-								},
+								})),
 								ach(575),	-- Kel'Thuzad's Defeat (25 player)
-								{
-									["achievementID"] = 2185,	-- Just Can't Get Enough (25 player)
-									["description"] = "Pull 1 abomintion from each section and then AOE them all when they get to you. Very easy achievement.",
+								ach(2185, {	-- Just Can't Get Enough (25 player)
 									["provider"] = { "n", 16428 },	-- Unstoppable Abomination
-								},
-								{
-									["achievementID"] = 1658,	-- Champion of the Frozen Wastes
-									["criteriaID"] = 2,			-- Kel'Thuzad (10 or 25 player) slain
-								},
-								{
-									["achievementID"] = 579,	-- The Dedicated Few (25 player)
-									["criteriaID"] = 6,			-- Kel'Thuzad slain
-								},
+									["description"] = "Pull 1 abomintion from each section and then AOE them all when they get to you. Very easy achievement.",
+								}),
+								ach(1658, {	-- Champion of the Frozen Wastes
+									["criteriaID"] = 2,	-- Kel'Thuzad (10 or 25 player) slain
+								}),
+								ach(579, {	-- The Dedicated Few (25 player)
+									["criteriaID"] = 6,	-- Kel'Thuzad slain
+								}),
 								i(40631),	-- Crown of the Lost Conqueror
 								i(40632),	-- Crown of the Lost Protector
 								i(40633),	-- Crown of the Lost Vanquisher
@@ -1200,9 +1208,11 @@ root("Instances", tier(WOTLK_TIER, {
 								i(40403),	-- Drape of the Deadly Foe
 								i(40398),	-- Leggings of Mortal Arrogance
 								i(40399),	-- Signet of Manifested Pain
-								i(122197),	-- Music Roll: Wrath of the Lich King
+								i(122197, {	-- Music Roll: Wrath of the Lich King
+									["timeline"] = { "added 6.1.0.19445" },
+								}),
 							},
-						})),
+						}),
 					}),
 				},
 			}),

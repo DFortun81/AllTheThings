@@ -517,17 +517,6 @@ _.Zones =
 					["provider"] = { "n", 27763 },	-- Vargastrasz
 					["sourceQuest"] = 12461,	-- Report to the Ruby Dragonshrine
 				}),
-				q(13385, {	-- Heroic Judgment at the Eye of Eternity
-					["coord"] = { 59.7, 54.6, DRAGONBLIGHT },
-					["provider"] = { "n", 27990 },	-- Krasus <Consort of the Queen>
-					["sourceQuest"] = 13375,	-- The Heroic Key to the Focusing Iris
-					["g"] = {
-						i(44664),	-- Favor of the Dragon Queen
-						i(44662),	-- Life-Binder's Locket
-						i(44665),	-- Nexus War Champion Beads
-						i(44661),	-- Wyrmrest Necklace of Power
-					},
-				}),
 				q(12174, {	-- High Commander Halford Wyrmbane
 					["coord"] = { 29.2, 55.4, DRAGONBLIGHT },
 					["races"] = ALLIANCE_ONLY,
@@ -610,17 +599,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26181 },	-- Emissary Brighthoof
 					["sourceQuest"] = 11979,	-- The Taunka and the Tauren
-				}),
-				q(13384, {	-- Judgment at the Eye of Eternity
-					["coord"] = { 59.7, 54.6, DRAGONBLIGHT },
-					["provider"] = { "n", 27990 },	-- Krasus <Consort of the Queen>
-					["sourceQuest"] = 13372,	-- The Key to the Focusing Iris
-					["g"] = {
-						i(44658),	-- Chain of the Ancient Wyrm
-						i(44660),	-- Drakescale Collar
-						i(44659),	-- Pendant of the Dragonsworn
-						i(44657),	-- Torque of the Red Dragonflight
-					},
 				}),
 				q(12167, {	-- Kill the Cultists
 					["coord"] = { 29.1, 55.6, DRAGONBLIGHT },

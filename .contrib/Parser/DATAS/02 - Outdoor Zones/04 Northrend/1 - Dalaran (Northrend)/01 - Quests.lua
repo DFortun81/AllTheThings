@@ -256,9 +256,15 @@ _.Zones =
 					["provider"] = { "o", 208316 },	-- Hero's Call Board
 				}),
 				q(24584, {	-- Malygos Must Die!
+					["qg"] = 20735,	-- Archmage Lan'dalock
 					["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
-					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
+					["maps"] = { THE_EYE_OF_ETERNITY },
 					["isWeekly"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/1 Malygos slain
+							["provider"] = { "n", 28859 },	-- Malygos
+						}),
+					},
 				}),
 				q(24581, {	-- Noth the Plaguebringer Must Die!
 					["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
