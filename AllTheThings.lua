@@ -12458,7 +12458,7 @@ SpellNameToSpellID = setmetatable({}, {
 });
 app.SpellNameToSpellID = SpellNameToSpellID;
 
-local cache = app.CreateCache("spellID");
+local cache = app.CreateCache("_cachekey");
 local function CacheInfo(t, field)
 	local _t, id = cache.GetCached(t);
 	if t.itemID then
@@ -12489,6 +12489,9 @@ end
 local fields = {
 	["key"] = function(t)
 		return "spellID";
+	end,
+	["_cachekey"] = function(t)
+		return t.itemID and t.spellID + (t.itemID / 1000000) or t.spellID;
 	end,
 	["name"] = function(t)
 		return cache.GetCachedField(t, "name", CacheInfo);
