@@ -16,6 +16,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						["sourceQuest"] = 13372,	-- The Key to the Focusing Iris
 						["coord"] = { 59.7, 54.6, DRAGONBLIGHT },
 						["groups"] = {
+							objective(1, {	-- 0/1 Heart of Magic
+								["provider"] = { "i", 44650 },	-- Heart of Magic
+							}),
 							i(44658),	-- Chain of the Ancient Wyrm
 							i(44660),	-- Drakescale Collar
 							i(44659),	-- Pendant of the Dragonsworn
@@ -45,6 +48,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						i(40526),	-- Gown of the Spell-Weaver
 						i(40519),	-- Footsteps of Malygos
 						i(40474),	-- Surge Needle Ring
+						i(44650),	-- Heart of Magic
 					},
 				}),
 			}),
@@ -55,6 +59,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						["sourceQuest"] = 13375,	-- The Heroic Key to the Focusing Iris
 						["coord"] = { 59.7, 54.6, DRAGONBLIGHT },
 						["groups"] = {
+							objective(1, {	-- 0/1 Heart of Magic
+								["provider"] = { "i", 44651 },	-- Heart of Magic
+							}),
 							i(44664),	-- Favor of the Dragon Queen
 							i(44662),	-- Life-Binder's Locket
 							i(44665),	-- Nexus War Champion Beads
@@ -94,6 +101,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						i(40591),	-- Melancholy Sabatons
 						i(40532),	-- Living Ice Crystals
 						i(40531),	-- Mark of Norgannon
+						i(44651),	-- Heart of Magic
 					},
 				}),
 			}),

@@ -60,9 +60,15 @@ _.Zones =
 					["provider"] = { "n", 35471 },	-- Sorn Proudmane
 				}),
 				q(24580, {	-- Anub'Rekhan Must Die!
+					["qg"] = 20735,	-- Archmage Lan'dalock
 					["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
-					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
+					["maps"] = { NAXXRAMAS },
 					["isWeekly"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/1 Anub'Rekhan slain
+							["provider"] = { "n", 15956 },	-- Anub'Rekhan
+						}),
+					},
 				}),
 				q(13833, {	-- Blood Is Thicker
 					["coord"] = { 53.0, 64.9, NORTHREND_DALARAN },
@@ -152,11 +158,17 @@ _.Zones =
 						currency(61),	-- Dalaran Jewelcrafter's Token
 					},
 				}),
-				q(24585, {	-- Flame Leviathan Must Die!
+				applyclassicphase(WRATH_PHASE_TWO, q(24585, {	-- Flame Leviathan Must Die!
+					["qg"] = 20735,	-- Archmage Lan'dalock
 					["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
-					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
+					["maps"] = { ULDUAR },
 					["isWeekly"] = true,
-				}),
+					["groups"] = {
+						objective(1, {	-- 0/1 Flame Leviathan slain
+							["provider"] = { "n", 33113 },	-- Flame Leviathan
+						}),
+					},
+				})),
 				q(29609, {	-- Friends in Dalaran
 					["races"] = HORDE_ONLY,
 					["qgs"] = {
@@ -173,11 +185,17 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				--]]
-				q(24587, {	-- Ignis the Furnace Master Must Die!
+				applyclassicphase(WRATH_PHASE_TWO, q(24587, {	-- Ignis the Furnace Master Must Die!
+					["qg"] = 20735,	-- Archmage Lan'dalock
 					["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
-					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
+					["maps"] = { ULDUAR },
 					["isWeekly"] = true,
-				}),
+					["groups"] = {
+						objective(1, {	-- 0/1 Ignis the Furnace Master slain
+							["provider"] = { "n", 33118 },	-- Ignis the Furnace Master
+						}),
+					},
+				})),
 				q(24510, {	-- Inside the Frozen Citadel
 					["provider"] = { "n", 37776 },	-- Apprentice Nelphi <Kirin Tor>
 					["races"] = ALLIANCE_ONLY,
@@ -189,9 +207,15 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(24582, {	-- Instructor Razuvious Must Die!
+					["qg"] = 20735,	-- Archmage Lan'dalock
 					["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
-					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
+					["maps"] = { NAXXRAMAS },
 					["isWeekly"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/1 Instructor Razuvious slain
+							["provider"] = { "n", 16061 },	-- Instructor Razuvious
+						}),
+					},
 				}),
 				--[[
 				q(32403, {	-- It Starts in the Sewers
@@ -227,16 +251,28 @@ _.Zones =
 						39210,	-- The Magical Kingdom of Dalaran (Crystalsong Forest)
 					},
 				}),
-				q(24589, {	-- Lord Jaraxxus Must Die!
+				applyclassicphase(WRATH_PHASE_THREE, q(24589, {	-- Lord Jaraxxus Must Die!
+					["qg"] = 20735,	-- Archmage Lan'dalock
 					["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
-					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
+					["maps"] = { TRIAL_OF_THE_CRUSADER },
 					["isWeekly"] = true,
-				}),
-				q(24590, {	-- Lord Marrowgar Must Die!
+					["groups"] = {
+						objective(1, {	-- 0/1 Lord Jaraxxus slain
+							["provider"] = { "n", 34780 },	-- Lord Jaraxxus
+						}),
+					},
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24590, {	-- Lord Marrowgar Must Die!
+					["qg"] = 20735,	-- Archmage Lan'dalock
 					["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
-					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
+					["maps"] = { ICECROWN_CITADEL },
 					["isWeekly"] = true,
-				}),
+					["groups"] = {
+						objective(1, {	-- 0/1 Lord Marrowgar slain
+							["provider"] = { "n", 36612 },	-- Lord Marrowgar
+						}),
+					},
+				})),
 				q(12853, {	-- Luxurious Getaway!
 					["provider"] = { "n", 30490 },	-- Rin Duoctane
 					["coord"] = { 31.2, 49.6, NORTHREND_THE_UNDERBELLY },
@@ -267,9 +303,15 @@ _.Zones =
 					},
 				}),
 				q(24581, {	-- Noth the Plaguebringer Must Die!
+					["qg"] = 20735,	-- Archmage Lan'dalock
 					["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
-					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
+					["maps"] = { NAXXRAMAS },
 					["isWeekly"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/1 Noth the Plaguebringer slain
+							["provider"] = { "n", 15954 },	-- Noth the Plaguebringer
+						}),
+					},
 				}),
 				--[[
 				q(32412, {	-- One Last Grasp
@@ -277,9 +319,15 @@ _.Zones =
 				}),
 				]]--
 				q(24583, {	-- Patchwerk Must Die!
+					["qg"] = 20735,	-- Archmage Lan'dalock
 					["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
-					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
+					["maps"] = { NAXXRAMAS },
 					["isWeekly"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/1 Patchwerk slain
+							["provider"] = { "n", 16028 },	-- Patchwerk
+						}),
+					},
 				}),
 				q(13418, {	-- Preparations for War
 					["coord"] = { 67.7, 47.2, NORTHREND_DALARAN },
@@ -293,15 +341,27 @@ _.Zones =
 					["provider"] = { "n", 31085 },	-- Sky-Reaver Klum
 					["sourceQuests"] = { 49537 }	-- Warchief's Command: Icecrown!
 				}),
-				q(24586, {	-- Razorscale Must Die!
+				applyclassicphase(WRATH_PHASE_TWO, q(24586, {	-- Razorscale Must Die!
+					["qg"] = 20735,	-- Archmage Lan'dalock
 					["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
-					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
+					["maps"] = { ULDUAR },
 					["isWeekly"] = true,
-				}),
+					["groups"] = {
+						objective(1, {	-- 0/1 Razorscale slain
+							["provider"] = { "n", 33186 },	-- Razorscale
+						}),
+					},
+				})),
 				q(24579, {	-- Sartharion Must Die!
+					["qg"] = 20735,	-- Archmage Lan'dalock
 					["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
-					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
+					["maps"] = { THE_OBSIDIAN_SANCTUM },
 					["isWeekly"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/1 Sartharion slain
+							["provider"] = { "n", 28860 },	-- Sartharion
+						}),
+					},
 				}),
 				q(13845, {	-- Sealed Vial of Poison
 					["provider"] = { "i", 46004 },	-- Sealed Vial of Poison
@@ -468,11 +528,17 @@ _.Zones =
 					["provider"] = { "i", 47246 },	-- Writ of Merit
 					["requireSkill"] = JEWELCRAFTING,
 				}),
-				q(24588, {	-- XT-002 Deconstructor Must Die!
+				applyclassicphase(WRATH_PHASE_TWO, q(24588, {	-- XT-002 Deconstructor Must Die!
+					["qg"] = 20735,	-- Archmage Lan'dalock
 					["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
-					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
+					["maps"] = { ULDUAR },
 					["isWeekly"] = true,
-				}),
+					["groups"] = {
+						objective(1, {	-- 0/1 XT-002 Deconstructor slain
+							["provider"] = { "n", 33293 },	-- XT-002 Deconstructor
+						}),
+					},
+				})),
 			}),
 		}),
 	}),
