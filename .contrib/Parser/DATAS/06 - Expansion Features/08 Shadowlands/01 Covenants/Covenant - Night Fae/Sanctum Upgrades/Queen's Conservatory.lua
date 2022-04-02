@@ -201,6 +201,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										["sourceQuests"] = { 62447 },	-- A Rare and Unusual Spirit (1)
 										["provider"] = { "n", 174329 },	-- Falir the Shifting
 										["coord"] = { 24.0, 53.3, 1662 },
+										["cost"] = { { "i", 183704, 1 } },	-- Shifting Spirit of Knowledge
 									}),
 									q(59871, {	-- Catalyze This
 										["sourceQuests"] = { 59999 },	-- Rebirth of the Grove

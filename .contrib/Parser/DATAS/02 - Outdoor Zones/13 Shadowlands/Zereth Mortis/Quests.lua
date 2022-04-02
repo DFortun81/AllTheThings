@@ -960,6 +960,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					}),
 				},
 			})),
+			q(66383, {	-- Legendary Assistance
+				-- ["sourceQuests"] = { },	-- ??
+				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
+				["coord"] = { 35, 64.8, ZERETH_MORTIS },
+				["minReputation"] = { 2478, HONORED },	-- Assumption
+			}),
 		}),
 		n(QUESTS, sharedData({ ["isDaily"] = true }, {
 			-- Confirmed
