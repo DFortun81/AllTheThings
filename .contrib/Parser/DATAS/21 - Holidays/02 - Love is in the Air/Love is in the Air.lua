@@ -355,7 +355,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 			}),
 			tier(WOTLK_TIER, {
 				inst(277, {	-- Halls of Stone
-					["maps"] = { 140 },
+					["maps"] = { HALLS_OF_STONE },
 					["groups"] = {
 						d(2, {	-- Heroic
 							n(27975, {	-- Maiden of Grief
@@ -365,7 +365,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 					},
 				}),
 				inst(285, {	-- Utgarde Keep
-					["maps"] = { 133, 134, 135 },
+					["maps"] = { UTGARDE_KEEP, 134, 135 },
 					["groups"] = {
 						d(1, {	-- Normal
 							n(23953, {	-- Prince Keleseth

@@ -905,7 +905,7 @@ root("Holidays", applyholiday(LUNAR_FESTIVAL, {
 				["coord"] = { 57.2, 46.6, HOWLING_FJORD },	-- Utgarde Pinnacle entrance
 				["description"] = "After defeating Skadi, the Elder is underneath the staircase before you enter the Ruined Court.",
 				["timeline"] = { "added 3.0.8.9464" },
-				["maps"] = { 136 },	-- Utgarde Pinnacle
+				["maps"] = { UTGARDE_PINNACLE },
 				["isYearly"] = true,
 			}),
 			q(8727, {	-- Farwhisper the Elder
@@ -925,7 +925,7 @@ root("Holidays", applyholiday(LUNAR_FESTIVAL, {
 				["coord"] = { 27.5, 26.0, BOREAN_TUNDRA },	-- The Nexus entrance
 				["description"] = "When you enter the Nexus, turn right and loop around the Singing Grove.  The Elder is just before you reach Ormorok's platform.",
 				["timeline"] = { "added 3.0.8.9464" },
-				["maps"] = { 129 },	-- The Nexus
+				["maps"] = { THE_NEXUS },
 				["isYearly"] = true,
 			}),
 			q(13017, {	-- Jarten the Elder
@@ -933,7 +933,7 @@ root("Holidays", applyholiday(LUNAR_FESTIVAL, {
 				["coord"] = { 57.9, 50.0, HOWLING_FJORD },	-- Utgarde Keep entrance path
 				["description"] = "After defeating Keleseth, continue through the mining tunnel.  Before heading up the stairs to the next boss, turn left to find the Elder.",
 				["timeline"] = { "added 3.0.8.9464" },
-				["maps"] = { 133 },	-- Utgarde Keep
+				["maps"] = { UTGARDE_KEEP },
 				["isYearly"] = true,
 			}),
 			q(13023, {	-- Kilias the Elder
@@ -941,7 +941,7 @@ root("Holidays", applyholiday(LUNAR_FESTIVAL, {
 				["coord"] = { 28.5, 86.9, ZULDRAK },	-- Drak'Tharon Keep entrance
 				["description"] = "The Elder is just inside the Raptor Pens, near King Dred.",
 				["timeline"] = { "added 3.0.8.9464" },
-				["maps"] = { 160 },	-- Drak'Tharon Keep
+				["maps"] = { DRAKTHARON_KEEP },
 				["isYearly"] = true,
 			}),
 			q(8619, {	-- Morndeep the Elder
@@ -956,7 +956,7 @@ root("Holidays", applyholiday(LUNAR_FESTIVAL, {
 				["coord"] = { 26.0, 50.7, DRAGONBLIGHT },	-- Azjol-Nerub entrance
 				["description"] = "After defeating Hadronox, jump to the lower level of the dungeon.  The Elder is on the north side of the room where you land.",
 				["timeline"] = { "added 3.0.8.9464" },
-				["maps"] = { 157 },	-- Azjol-Nerub
+				["maps"] = { AZJOL_NERUB },
 				["isYearly"] = true,
 			}),
 			q(13065, {	-- Ohanzee the Elder
@@ -964,7 +964,7 @@ root("Holidays", applyholiday(LUNAR_FESTIVAL, {
 				["coord"] = { 76.2, 21.1, ZULDRAK },	-- Gundrak entrance
 				["description"] = "The Elder is on the platform behind the second boss in the dungeon, Drakkari Colossus.",
 				["timeline"] = { "added 3.0.8.9464" },
-				["maps"] = { 153 },	-- Gundrak
+				["maps"] = { GUNDRAK },
 				["isYearly"] = true,
 			}),
 			q(8635, {	-- Splitrock the Elder
@@ -1017,7 +1017,7 @@ root("Holidays", applyholiday(LUNAR_FESTIVAL, {
 				["coord"] = { 39.6, 26.9, THE_STORM_PEAKS },	-- Halls of Stone entrance
 				["description"] = "The Elder is on the western side of the Crystalline Quarry inside Halls of Stone.",
 				["timeline"] = { "added 3.0.8.9464" },
-				["maps"] = { 140 },	-- Halls of Stone
+				["maps"] = { HALLS_OF_STONE },
 				["isYearly"] = true,
 			}),
 			-- Elders of the Alliance
