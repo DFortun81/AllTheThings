@@ -1810,10 +1810,12 @@ end
 local function CloneData(data)
 	return CreateObject(data);
 end
-local function RawCloneData(data)
-	local clone = {};
+local function RawCloneData(data, clone)
+	clone = clone or {};
 	for key,value in pairs(data) do
-		rawset(clone, key, value);
+		if not clone[key] then
+			rawset(clone, key, value);
+		end
 	end
 	return clone;
 end
@@ -5993,7 +5995,7 @@ AddTomTomWaypoint = function(group)
 								opt.minimap_icon = first.icon;
 								opt.worldmap_icon = first.icon;
 							end
-							
+
 							if TomTom.DefaultCallbacks then
 								local callbacks = TomTom:DefaultCallbacks();
 								callbacks.minimap.tooltip_update = nil;
@@ -12402,116 +12404,34 @@ app.CreateRace = function(id, t)
 end
 end)();
 
--- Recipe Lib
-(function()
-local fields = {
-	["key"] = function(t)
-		return "spellID";
-	end,
-	["filterID"] = function(t)
-		return 200;
-	end,
-	["text"] = function(t)
-		return t.link;
-	end,
-	["icon"] = function(t)
-		if t.itemID then
-			local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
-			if link then
-				t.link = link;
-				t.icon = icon;
-				return link;
-			end
-		end
-		return select(3, GetSpellInfo(t.spellID))
-			or (t.requireSkill and select(3, GetSpellInfo(t.requireSkill)))
-			or 134939;	-- Inv_scroll_03
-	end,
-	["link"] = function(t)
-		if t.itemID then
-			local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
-			if link then
-				t.link = link;
-				t.icon = icon;
-				return link;
-			end
-		end
-		return select(1, GetSpellLink(t.spellID));
-	end,
-	["collectible"] = function(t)
-		return app.CollectibleRecipes;
-		-- if app.CollectibleRecipes then
-		-- 	if app.AccountWideRecipes then
-		-- 		return true;
-		-- 	end
-		-- 	if t.requireSkill and (app.GetTradeSkillCache())[t.requireSkill] then
-		-- 		return true;
-		-- 	end
-		-- 	if t.c and contains(t.c, app.ClassIndex) then
-		-- 		return true;
-		-- 	end
-		-- end
-	end,
-	["collected"] = function(t)
-		if app.CurrentCharacter.Spells[t.spellID] then return 1; end
-		if app.AccountWideRecipes and ATTAccountWideData.Spells[t.spellID] then return 2; end
-		if IsSpellKnown(t.spellID) then
-			app.CurrentCharacter.Spells[t.spellID] = 1;
-			ATTAccountWideData.Spells[t.spellID] = 1;
-			return 1;
-		end
-	end,
-	["name"] = function(t)
-		return t.itemID and GetItemInfo(t.itemID);
-	end,
-	["specs"] = function(t)
-		if t.itemID then
-			return GetFixedItemSpecInfo(t.itemID);
-		end
-	end,
-	["tsm"] = function(t)
-		if t.itemID then
-			return string.format("i:%d", t.itemID);
-		end
-	end,
-	["skillID"] = function(t)
-		return t.requireSkill;
-	end,
-	["b"] = function(t)
-		-- If not tracking Recipes Account-Wide, then pretend that every Recipe is BoP
-		return t.itemID and app.AccountWideRecipes and 2 or 1;
-	end,
-};
-app.BaseRecipe = app.BaseObjectFields(fields, "BaseRecipe");
-app.CreateRecipe = function(id, t)
-	return setmetatable(constructor(id, t, "spellID"), app.BaseRecipe);
-end
-end)();
-
 -- Spell Lib
 (function()
+local GetSpellInfo, GetSpellLink, IsSpellKnown, GetNumSpellTabs, GetSpellTabInfo = GetSpellInfo, GetSpellLink, IsSpellKnown, GetNumSpellTabs, GetSpellTabInfo
+
 local SpellIDToSpellName = {};
-app.GetSpellName = function(spellID)
+local SpellNameToSpellID;
+local GetSpellName = function(spellID)
 	local spellName = rawget(SpellIDToSpellName, spellID);
 	if spellName then return spellName; end
 	spellName = GetSpellInfo(spellID);
 	if spellName and spellName ~= "" then
 		rawset(SpellIDToSpellName, spellID, spellName);
-		rawset(app.SpellNameToSpellID, spellName, spellID);
+		rawset(SpellNameToSpellID, spellName, spellID);
 		return spellName;
 	end
 end
-app.SpellNameToSpellID = setmetatable({}, {
+app.GetSpellName = GetSpellName;
+SpellNameToSpellID = setmetatable({}, {
 	__index = function(t, key)
 		local cache = fieldCache["spellID"];
 		for spellID,g in pairs(cache) do
-			app.GetSpellName(spellID);
+			GetSpellName(spellID);
 		end
 		for _,spellID in pairs(app.SkillIDToSpellID) do
-			app.GetSpellName(spellID);
+			GetSpellName(spellID);
 		end
 		for specID,spellID in pairs(app.SpecializationSpellIDs) do
-			app.GetSpellName(spellID);
+			GetSpellName(spellID);
 		end
 		local numSpellTabs, offset, lastSpellName, currentSpellRank = GetNumSpellTabs(), select(4, GetSpellTabInfo(1)), "", 1;
 		for spellTabIndex=2,numSpellTabs do
@@ -12525,8 +12445,8 @@ app.SpellNameToSpellID = setmetatable({}, {
 						lastSpellName = spellName;
 						currentSpellRank = 1;
 					end
-					app.GetSpellName(spellID, currentSpellRank);
-					rawset(app.SpellNameToSpellID, spellName, spellID);
+					GetSpellName(spellID, currentSpellRank);
+					rawset(SpellNameToSpellID, spellName, spellID);
 				-- else
 				-- 	print("GetSpellInfo:Failed",offset + spellIndex);
 				end
@@ -12536,27 +12456,51 @@ app.SpellNameToSpellID = setmetatable({}, {
 		return rawget(t, key);
 	end
 });
+app.SpellNameToSpellID = SpellNameToSpellID;
+
+local cache = app.CreateCache("spellID");
+local function CacheInfo(t, field)
+	local _t, id = cache.GetCached(t);
+	if t.itemID then
+		local name, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
+		if link then
+			_t.name = name;
+			_t.link = link;
+			_t.icon = icon;
+		end
+	else
+		local name, _, icon = GetSpellInfo(id);
+		_t.name = name;
+		_t.icon = icon or 136243;	-- Trade_engineering
+		local link = GetSpellLink(id);
+		_t.link = link;
+	end
+	-- track number of attempts to cache data for fallback to default values
+	local retries = (_t.retries or 0) + 1;
+	if retries > app.MaximumItemInfoRetries then
+		_t.name = t.itemID and "Item #"..t.itemID or "Spell #"..t.spellID;
+		_t.icon = 136243;
+		_t.link = _t.name;
+	end
+	_t.retries = retries;
+	if field then return _t[field]; end
+end
+
 local fields = {
 	["key"] = function(t)
 		return "spellID";
 	end,
-	["text"] = function(t)
-		return t.link;
-	end,
-	["icon"] = function(t)
-		return select(3, GetSpellInfo(t.spellID))
-			or 136243;	-- Trade_engineering
+	["name"] = function(t)
+		return cache.GetCachedField(t, "name", CacheInfo);
 	end,
 	["link"] = function(t)
-		if t.itemID and t.filterID ~= 200 and t.f ~= 200 then
-			local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
-			if link then
-				t.link = link;
-				t.icon = icon;
-				return link;
-			end
-		end
-		return select(1, GetSpellLink(t.spellID));
+		return cache.GetCachedField(t, "link", CacheInfo);
+	end,
+	["icon"] = function(t)
+		return cache.GetCachedField(t, "icon", CacheInfo) or 136243;	-- Trade_engineering
+	end,
+	["text"] = function(t)
+		return t.link;
 	end,
 	["trackable"] = app.ReturnTrue,
 	["saved"] = function(t)
@@ -12577,9 +12521,6 @@ local fields = {
 			return 1;
 		end
 	end,
-	["name"] = function(t)
-		return t.itemID and GetItemInfo(t.itemID);
-	end,
 	["specs"] = function(t)
 		if t.itemID then
 			return GetFixedItemSpecInfo(t.itemID);
@@ -12597,6 +12538,33 @@ local fields = {
 app.BaseSpell = app.BaseObjectFields(fields, "BaseSpell");
 app.CreateSpell = function(id, t)
 	return setmetatable(constructor(id, t, "spellID"), app.BaseSpell);
+end
+
+-- Recipe Lib
+local recipeFields = RawCloneData(fields, {
+	["filterID"] = function(t)
+		return 200;
+	end,
+	["collectible"] = function(t)
+		return app.CollectibleRecipes;
+	end,
+	["collected"] = function(t)
+		if app.CurrentCharacter.Spells[t.spellID] then return 1; end
+		if app.AccountWideRecipes and ATTAccountWideData.Spells[t.spellID] then return 2; end
+		if IsSpellKnown(t.spellID) then
+			app.CurrentCharacter.Spells[t.spellID] = 1;
+			ATTAccountWideData.Spells[t.spellID] = 1;
+			return 1;
+		end
+	end,
+	["b"] = function(t)
+		-- If not tracking Recipes Account-Wide, then pretend that every Recipe is BoP
+		return t.itemID and app.AccountWideRecipes and 2 or 1;
+	end,
+});
+app.BaseRecipe = app.BaseObjectFields(recipeFields, "BaseRecipe");
+app.CreateRecipe = function(id, t)
+	return setmetatable(constructor(id, t, "spellID"), app.BaseRecipe);
 end
 end)();
 
