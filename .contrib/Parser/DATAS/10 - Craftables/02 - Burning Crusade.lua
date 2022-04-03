@@ -1,7 +1,7 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-_.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
+root("Craftables", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	prof(ALCHEMY, {
 		category(632, {	-- Cauldrons
 			i(32839),	-- Cauldron of Major Arcane Protection
@@ -1344,4 +1344,4 @@ _.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			i(24268),	-- Netherweave Net
 		}),
 	}),
-}))};
+})));

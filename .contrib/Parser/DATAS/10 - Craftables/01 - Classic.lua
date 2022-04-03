@@ -1,7 +1,7 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-_.Craftables = { tier(CLASSIC_TIER, {
+root("Craftables", tier(CLASSIC_TIER, {
 	prof(ALCHEMY, {
 		category(644, {	-- Materials
 			i(9210),	-- Ghost Dye
@@ -2529,7 +2529,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(6795),	-- White Swashbuckler's Shirt
 		}),
 	}),
-})};
+}));
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	prof(BLACKSMITHING, {
 		-- #if BEFORE 7.1.5.23360
