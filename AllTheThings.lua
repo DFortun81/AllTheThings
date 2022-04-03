@@ -5085,7 +5085,7 @@ app.NestSourceQuests = function(root, addedQuests, depth)
 						sq.g = nil;
 
 						-- force collectible for normally un-collectible things to make sure it shows in list if the quest needs to be completed to progess
-						if not sq.collectible and not sq.sourceQuestsCompleted then
+						if not sq.collectible and sq.missingSourceQuests then
 							sq.collectible = true;
 						end
 
@@ -5872,9 +5872,9 @@ local function AddTomTomWaypointInternal(group, depth)
 		group.plotting = nil;
 
 		if TomTom then
-			if (depth == 0 and not __TomTomWaypointFirst) or not group.saved then
+			-- always plot directly clicked otherwise don't plot saved or inaccessible groups
+			if depth == 0 or (not group.saved and not group.missingSourceQuests) then
 				if group.coords or group.coord then
-					__TomTomWaypointFirst = false;
 					if group.coords then
 						for _,coord in ipairs(group.coords) do
 							AddTomTomWaypointCache(coord, group);
@@ -5884,7 +5884,8 @@ local function AddTomTomWaypointInternal(group, depth)
 				end
 			end
 		elseif C_SuperTrack then
-			if depth == 0 or __TomTomWaypointFirst then
+			-- always plot directly clicked or first available waypoint otherwise don't plot saved or inaccessible groups
+			if depth == 0 or (__TomTomWaypointFirst and (not group.saved and not group.missingSourceQuests)) then
 				local coord = group.coords and group.coords[1] or group.coord;
 				if coord then
 					__TomTomWaypointFirst = false;
@@ -11777,30 +11778,24 @@ local questFields = {
 			end
 		end
 	end,
-	["sourceQuestsCompleted"] = function(t)
+	["missingSourceQuests"] = function(t)
 		if t.sourceQuests and #t.sourceQuests > 0 then
-			local completed = true;
 			local includeBreadcrumbs = app.Settings:Get("Thing:QuestBreadcrumbs");
 			local sq;
-			for i,sourceQuestID in ipairs(t.sourceQuests) do
+			for _,sourceQuestID in ipairs(t.sourceQuests) do
 				if not IsQuestFlaggedCompleted(sourceQuestID) then
 					if includeBreadcrumbs then
 						-- consider the breadcrumb as an actual sq since the user is tracking them
-						completed = false;
+						return true;
 					else
 						-- otherwise incomplete breadcrumbs will not prevent picking up a quest if they are ignored
 						sq = app.SearchForObject("questID", sourceQuestID);
-						if sq then
-							if not sq.isBreadcrumb and not (sq.breadcrumbLockedBy or sq.altcollected) then
-								completed = false;
-							end
-						else
-							completed = false;
+						if sq and not sq.isBreadcrumb and not (sq.breadcrumbLockedBy or sq.altcollected) then
+							return true;
 						end
 					end
 				end
 			end
-			return completed;
 		end
 	end,
 };
