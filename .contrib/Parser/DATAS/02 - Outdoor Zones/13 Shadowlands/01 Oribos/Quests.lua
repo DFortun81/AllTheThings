@@ -1176,7 +1176,6 @@ root("HiddenQuestTriggers", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 
 		q(64848),	-- Choosing Torghast as leveling
 		q(65030),	-- accepting/completing 'Battlegrounds' [65031]
 		q(65755),	-- triggered with 'A New Deal', selected 'Cosmic Gladiator's Resonator'
-		q(65617),	-- triggered after 'A New Deal', potentially Engineer teleporter unlock to Zereth Mortis
 		--q(66047),	-- Solo Shuffle Completion?
 		q(65511),	-- Stay a while and listen with Vareesa Windrunner
 		q(65618),	-- Stay a while and listen with Bolvar
@@ -1241,33 +1240,6 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(179618),	-- Oribos Quest Mail Cloak
 				i(179619),	-- Oribos Quest Plate Cloak
 			}),
-		}),
-		n(QUESTS, {
-			q(60286),	-- A Token of Our Admiration
-			q(60157),	-- Answers from the Ascended
-			q(59084),	-- Bybeen Dreadweaver
-			q(59080),	-- Demons!
-			q(62072),	-- Familiar Faces
-			q(59086),	-- Manor of Minions
-			q(59082),	-- Next Realm!
-			q(62289, {	-- Observing Conflict
-				["_drop"] = { "g" },	-- drop anima trash
-			}),
-			q(59079),	-- Portal to Paradise
-			q(59081),	-- Scum Scrape
-			q(59083),	-- Sticky Getaway
-			q(62165),	-- Tal-Inara's Call
-			q(62166),	-- Tal-Inara's Call
-			q(59078),	-- The Hook
-			q(60499),	-- The Light's Retribution
-			q(59076),	-- The Minions of Mayhem
-			q(59077),	-- The Plan
-			q(59085),	-- Third Time is a Charm
-			q(60172),	-- This Quest is Temporary
-			q(60155),	-- To Open the Way
-			q(62077),	-- To the Chase
-			q(60138),	-- Unlocking the Gates
-			q(60559),	-- Unused
 		}),
 	}),
 }));

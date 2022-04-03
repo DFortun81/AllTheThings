@@ -835,18 +835,3 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 8.0.1.36216", "
 		}),
 	}),
 })));
-
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	tier(SL_TIER, {
-		n(QUESTS, {
-			q(62594, {	-- The Safety of Others (A)
-				["maps"] = { STORMWIND_CITY },
-				["lvl"] = { 50 },
-			}),
-			q(62595, {	-- The Safety of Others (H)
-				["maps"] = { ORGRIMMAR },
-				["lvl"] = { 50 },
-			}),
-		}),
-	}),
-}));

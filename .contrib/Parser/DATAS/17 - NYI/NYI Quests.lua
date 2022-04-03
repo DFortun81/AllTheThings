@@ -1491,9 +1491,19 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			-- 9.0.1
 			tier(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { "created 9.0.1" } }, {
 				-- Quest from Unsorted
+				q(60286, { ["name"] = "A Token of Our Admiration", }),	-- A Token of Our Admiration
 				q(60463, { ["name"] = "Anima Appeal", }),	-- Anima Appeal
+				q(60157, { ["name"] = "Answers from the Ascended", }),	-- Answers from the Ascended
 				q(62168, { ["name"] = "Bonescript Dispatches", }),	-- Bonescript Dispatches
+				q(59084, { ["name"] = "Bybeen Dreadweaver", }),	-- Bybeen Dreadweaver
+				q(59080, { ["name"] = "Demons!", }),	-- Demons!
+				q(62072, { ["name"] = "Familiar Faces", }),	-- Familiar Faces
+				q(59086, { ["name"] = "Manor of Minions", }),	-- Manor of Minions
+				q(59082, { ["name"] = "Next Realm!", }),	-- Next Realm!
+				q(62289, { ["name"] = "Observing Conflict", ["_drop"] = { "g" }, }),	-- Observing Conflict
+				q(59079, { ["name"] = "Portal to Paradise", }),	-- Portal to Paradise
 				q(62071, { ["name"] = "RRP Test Quest", }),	-- RRP Test Quest
+				q(59081, { ["name"] = "Scum Scrape", }),	-- Scum Scrape
 				q(60014, { ["name"] = "Shadowlands 60 E", }),	-- Shadowlands 60 E
 				q(60015, { ["name"] = "Shadowlands 60 E", }),	-- Shadowlands 60 E
 				q(60016, { ["name"] = "Shadowlands 60 E", }),	-- Shadowlands 60 E
@@ -1511,7 +1521,20 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(60036, { ["name"] = "Shadowlands (60) E", ["_drop"] = { "g" }, }),	-- Shadowlands (60) E
 				q(60040, { ["name"] = "Shadowlands (60) E", ["_drop"] = { "g" }, }),	-- Shadowlands (60) E
 				q(60474, { ["name"] = "Spawn Tracking Unit-Specified World Effect in a WMO Bug", }),	-- Spawn Tracking Unit-Specified World Effect in a WMO Bug
+				q(59083, { ["name"] = "Sticky Getaway", }),	-- Sticky Getaway
 				q(62402, { ["name"] = "Timewalking Campaigns", }),	-- Timewalking Campaigns
+				q(59078, { ["name"] = "The Hook", }),	-- The Hook
+				q(60499, { ["name"] = "The Light's Retribution", }),	-- The Light's Retribution
+				q(59076, { ["name"] = "The Minions of Mayhem", }),	-- The Minions of Mayhem
+				q(59077, { ["name"] = "The Plan", }),	-- The Plan
+				q(62594, { ["name"] = "The Safety of Others", }),	-- The Safety of Others
+				q(62595, { ["name"] = "The Safety of Others", }),	-- The Safety of Others
+				q(59085, { ["name"] = "Third Time is a Charm", }),	-- Third Time is a Charm
+				q(60172, { ["name"] = "This Quest is Temporary", }),	-- This Quest is Temporary
+				q(60155, { ["name"] = "To Open the Way", }),	-- To Open the Way
+				q(62077, { ["name"] = "To the Chase", }),	-- To the Chase
+				q(60138, { ["name"] = "Unlocking the Gates", }),	-- Unlocking the Gates
+				q(60559, { ["name"] = "Unused", }),	-- Unused
 				-- Quest from WoW.Tools
 				-- 9.0.1.33978
 				q(54783),	--
@@ -1525,7 +1548,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(56066),	--
 				q(56067),	--
 				q(56068),	--
-				q(56069),	--
 				q(56928),	--
 				q(56929),	--
 				q(56930),	--
@@ -1577,7 +1599,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(57527),	--
 				q(57539),	--
 				q(57548),	--
-				q(57556),	--
+				q(57556, { ["name"] = "The Maw - Weekly Treasures", }),	-- The Maw - Weekly Treasures
 				q(57570),	--
 				q(57572),	--
 				q(57576),	--
@@ -1720,7 +1742,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(58713),	--
 				q(58722),	--
 				q(58739),	--
-				q(58752),	--
+				q(58752, { ["name"] = "Feather Fall Tracking Quest", }),	-- Feather Fall Tracking Quest
 				q(58753),	--
 				q(58766),	--
 				q(58786),	--
@@ -1746,10 +1768,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(58958),	--
 				q(58959),	--
 				q(58982),	--
-				q(58985),	--
+				q(58985, { ["name"] = "Terrified Soul", }),	-- Terrified Soul
 				q(58986),	--
 				q(58988),	--
-				q(58999),	--
+				q(58999, { ["name"] = "Shackled Soul", }),	-- Shackled Soul
 				q(59001),	--
 				q(59005),	--
 				q(59010),	--
@@ -1763,7 +1785,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(59058),	--
 				q(59064),	--
 				q(59066),	--
-				q(59067),	--
+				q(59067, { ["name"] = "Orb of Extrication", }),	-- Orb of Extrication
 				q(59119),	--
 				q(59125),	--
 				q(59127),	--
@@ -1990,9 +2012,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(59963),	--
 				q(59964),	--
 				q(59998),	--
-				q(60010),	--
-				q(60011),	--
-				q(60012),	--
+				q(60010, { ["name"] = "Tremaculum: Liberated Souls", }),	-- Tremaculum: Liberated Souls
+				q(60011, { ["name"] = "Calcis: Decryption", }),	-- Calcis: Decryption
+				q(60012, { ["name"] = "Zovaal's Cauldron: Stygia Overflow", }),	-- Zovaal's Cauldron: Stygia Overflow
 				q(60045),	--
 				q(60046),	--
 				q(60047),	--
@@ -2201,7 +2223,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(61503),	--
 				q(61507),	--
 				q(61517, { ["name"] = "zz", }),	-- zz
-				q(61521),	--
+				q(61521, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
 				q(61528),	--
 				q(61533),	--
 				q(61535),	--
@@ -2283,15 +2305,15 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(62010),	--
 				q(62040),	--
 				q(62193),	--
-				q(62212),	--
+				q(62212, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
 				q(62228),	--
 				q(62230, { ["name"] = "A Stolen Stone Fiend", }),	-- A Stolen Stone Fiend
 				-- 9.0.1.35432
-				q(62233),	--
+				q(62233, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
 				q(62245, { ["name"] = "Venari Rep Token Tracking", }),	-- Venari Rep Token Tracking
 				q(62249, { ["name"] = "Venari Rep Token Tracking", }),	-- Venari Rep Token Tracking
-				q(62253),	--
-				q(62257),	--
+				q(62253, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
+				q(62257, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
 				q(62268),	--
 				q(62272),	--
 				q(62273),	--
@@ -2320,7 +2342,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(62564),	--
 				q(62565),	--
 				q(62566),	--
-				q(62578),	--
 				q(62579, { ["name"] = "Venari Rep Token Tracking", }),	-- Venari Rep Token Tracking
 				q(62581),	--
 				q(62617),	--
@@ -2424,7 +2445,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(62973),	--
 				q(62974),	--
 				q(62975),	--
-				q(62990),	--
 				q(62992),	--
 				q(62994),	--
 				-- 9.0.2.36165
@@ -2436,7 +2456,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 9.0.2.36401
 				q(63218),	--
 				q(63219),	--
-				q(63353),	--
 				-- 9.0.2.36512
 				q(63358),	--
 				q(63378),	--
@@ -2479,8 +2498,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(63670),	--
 				-- 9.0.5.37623
 				-- 9.0.5.37705
-				q(62149),	--
-				q(62150),	--
+				q(62149, { ["name"] = "[DNT]", }),	-- [DNT]
+				q(62150, { ["name"] = "[DNT]", }),	-- [DNT]
 				-- 9.0.5.37774
 				-- 9.0.5.37844
 				-- 9.0.5.37862
@@ -2577,7 +2596,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(64321),	--
 				q(64337),	--
 				q(64346),	--
-				q(64369),	--
 				q(64402),	--
 				q(64426),	--
 				q(64427),	--
@@ -2739,7 +2757,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(64345),	--
 				q(64352),	--
 				q(64353),	--
-				q(64510),	--
+				q(64510, { ["name"] = "Peter's Test Task", }),	-- Peter's Test Task
 				q(64520),	--
 				q(64544),	--
 				q(64574),	--
@@ -2783,7 +2801,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(64858),	--
 				q(64862),	--
 				q(64868),	--
-				q(64869),	--
 				q(64943),	--
 				q(64948),	--
 				q(64954),	--

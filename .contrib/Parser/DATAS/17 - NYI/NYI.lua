@@ -24,6 +24,18 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(185929),	-- Expedition Report A37J - Part 2
 			i(185930),	-- Expedition Report A37J - Part 3
 			i(185931),	-- Expedition Report A37J - Part 4
+
+			-- Darkal Sort?
+			-- 9.0.1
+			q(56069),	--
+			q(62165),	-- Tal-Inara's Call
+			q(62166),	-- Tal-Inara's Call
+			q(62578),	--
+			-- 9.0.2
+			q(62990),	--
+			q(63353),	--
+			-- 9.1.0
+			q(64369),	--
 		},
 	}),
 	tier(SL_TIER, 2.0, {
@@ -31,420 +43,13 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(64870),	-- Paragon of Enlightened Brokers (I have this completed /Braghe)
 			q(65152),	-- A Hardened Bond (This is Soulbind Quest for Necrolords new one might cross complete?? /Braghe)
 			q(64649),	-- A Mountain of Work to Do
+			q(64869),	--
 		}),
 		i(187710),	-- Anniversary Gift (Probably for 18th Ani)
 		i(189561),	-- Tame Prime: Orixal
 		i(189572),	-- Tame Prime: Hadeon the Stonebreaker
 		i(189573),	-- Tame Prime: Garudeon
-		-- Stupid Things?
-		-- LFR DK
-		i(190467, {	-- Girdle of Unity
-			["bonusID"] = 6896
-		}),
-		i(190467, {	-- Girdle of Unity
-			["modID"] = 4
-		}),
-		-- LFR Druid
-		i(190618, {	-- Lattice of the Distant Keeper (World Boss)
-			["bonusID"] = 451
-		}),
-		i(190465, {	-- Cinch of Unity
-			["bonusID"] = 6896
-		}),
-		i(190465, {	-- Cinch of Unity
-			["modID"] = 4
-		}),
-		-- LFR Hunter
-		i(190616, {	-- Controlled Sequence Clasp (World Boss)
-			["bonusID"] = 451
-		}),
-		i(190617, {	-- Destruction-Core Handlers (World Boss)
-			["bonusID"] = 451
-		}),
-		-- LFR Mage
-		i(190621, {	-- Dealic Deterrent Stockings (World Boss)
-			["modID"] = 4
-		}),
-		-- LFR Monk
-		i(190472, {	-- Cinch of Unity
-			["bonusID"] = 6896
-		}),
-		i(190472, {	-- Cinch of Unity
-			["modID"] = 4
-		}),
-		-- LFR Paladin
-		i(190614, {	-- Antros' Entrusted Bascinet (World Boss)
-			["modID"] = 4,
-		}),
-		i(190615, {	-- Cosmic Guardian's Casing (World Boss)
-			["modID"] = 4,
-		}),
-		-- LFR Priest
-		i(190468, {	-- Cord of Unity
-			["bonusID"] = 6897
-		}),
-		i(190468, {	-- Cord of Unity
-			["modID"] = 4
-		}),
-		-- LFR Rogue
-		i(190471, {	-- Cinch of Unity
-			["bonusID"] = 6896
-		}),
-		i(190471, {	-- Cinch of Unity
-			["modID"] = 4
-		}),
-		-- LFR Shaman
-		i(190473, {	-- Clasp of Unity
-			["bonusID"] = 6898
-		}),
-		i(190473, {	-- Clasp of Unity
-			["modID"] = 4
-		}),
-		-- LFR Warlock
-		i(190620, {	-- Sav'thul's Calamitous Tantour (World Boss)
-			["modID"] = 4,
-		}),
-		i(190469, {	-- Cord of Unity
-			["bonusID"] = 6896
-		}),
-		i(190469, {	-- Cord of Unity
-			["modID"] = 4
-		}),
-		-- LFR Warrior
-		i(190475, {	-- Girdle of Unity
-			["bonusID"] = 6896
-		}),
-		i(190475, {	-- Girdle of Unity
-			["modID"] = 4
-		}),
-		-- LFR alt Hunter
-		i(190466, {	-- Clasp of Unity
-			["bonusID"] = 6896
-		}),
-		i(190466, {	-- Clasp of Unity
-			["modID"] = 4
-		}),
-		-- LFR alt Mage
-		i(190464, {	-- Cord of Unity
-			["bonusID"] = 6896
-		}),
 
-		-- Normal
-		i(190467, {	-- Girdle of Unity DK
-			["bonusID"] = 8107
-		}),
-		i(190470, {	-- Cinch of Unity DH
-			["bonusID"] = 8107
-		}),
-		i(190465, {	-- Cinch of Unity Druid
-			["bonusID"] = 8107
-		}),
-		i(190466, {	-- Clasp of Unity Hunter
-			["bonusID"] = 8107
-		}),
-		i(190464, {	-- Cord of Unity Mage
-			["bonusID"] = 8107
-		}),
-		i(190472, {	-- Cinch of Unity Monk
-			["bonusID"] = 8107
-		}),
-		i(190474, {	-- Girdle of Unity Pala
-			["bonusID"] = 8107
-		}),
-		i(190468, {	-- Cord of Unity Priest
-			["bonusID"] = 8107
-		}),
-		-- Rogue??
-		i(190473, {	-- Clasp of Unity Shaman
-			["bonusID"] = 6895
-		}),
-		i(190469, {	-- Cord of Unity Warlock
-			["bonusID"] = 8107
-		}),
-		i(190475, {	-- Girdle of Unity Warrior
-			["bonusID"] = 8107
-		}),
-		-- Normal Alt Rogue
-		i(190471, {	-- Cinch of Unity
-			["bonusID"] = 8107
-		}),
-		i(190471, {	-- Cinch of Unity
-			["modID"] = 2
-		}),
-		-- Normal Alt Shaman
-		i(190473, {	-- Clasp of Unity
-			["bonusID"] = 8107
-		}),
-		i(190473, {	-- Clasp of Unity
-			["modID"] = 2
-		}),
-		-- Heroic
-		i(190467, {	-- Girdle of Unity DK
-			["bonusID"] = 6898
-		}),
-		i(190467, {	-- Girdle of Unity DK
-			["modID"] = 2
-		}),
-		i(190618, {	-- Antecedent's Aliform Joggers
-			["modID"] = 2
-		}),
-		i(190470, {	-- Cinch of Unity DH
-			["bonusID"] = 6898
-		}),
-		i(190470, {	-- Cinch of Unity DH
-			["modID"] = 2
-		}),
-		i(190618, {	-- Lattice of the Distant Keeper (World Boss)
-			["modID"] = 2
-		}),
-		i(190465, {	-- Cinch of Unity Druid
-			["bonusID"] = 6898
-		}),
-		i(190465, {	-- Cinch of Unity Druid
-			["modID"] = 2
-		}),
-		i(190466, {	-- Clasp of Unity Hunter
-			["bonusID"] = 6898
-		}),
-		i(190466, {	-- Clasp of Unity Hunter
-			["modID"] = 2
-		}),
-		i(190616, {	-- Controlled Sequence Clasp (World Boss)
-			["modID"] = 2
-		}),
-		i(190617, {	-- Destruction-Core Handlers (World Boss)
-			["modID"] = 2
-		}),
-		i(190621, {	-- Dealic Deterrent Stockings (World Boss)
-			["modID"] = 2
-		}),
-		i(190464, {	-- Cord of Unity Mage
-			["bonusID"] = 6898
-		}),
-		i(190464, {	-- Cord of Unity Mage
-			["modID"] = 2
-		}),
-		i(190472, {	-- Cinch of Unity
-			["bonusID"] = 6898
-		}),
-		i(190472, {	-- Cinch of Unity
-			["modID"] = 2
-		}),
-		i(190614, {	-- Antros' Entrusted Bascinet (World Boss)
-			["modID"] = 2,
-		}),
-		i(190615, {	-- Cosmic Guardian's Casing (World Boss)
-			["modID"] = 2,
-		}),
-		i(190474, {	-- Girdle of Unity Pala
-			["bonusID"] = 6898
-		}),
-		i(190474, {	-- Girdle of Unity Pala
-			["modID"] = 2
-		}),
-		i(190468, {	-- Cord of Unity Priest
-			["bonusID"] = 6898
-		}),
-		i(190468, {	-- Cord of Unity Priest
-			["modID"] = 2
-		}),
-		i(190471, {	-- Cinch of Unity
-			["bonusID"] = 6898
-		}),
-		i(190471, {	-- Cinch of Unity
-			["modID"] = 6
-		}),
-		i(190620, {	-- Sav'thul's Calamitous Tantour (World Boss)
-			["modID"] = 2,
-		}),
-		i(190469, {	-- Cord of Unity
-			["bonusID"] = 6898
-		}),
-		i(190469, {	-- Cord of Unity
-			["modID"] = 2
-		}),
-		i(190475, {	-- Girdle of Unity
-			["bonusID"] = 6898
-		}),
-		i(190475, {	-- Girdle of Unity
-			["modID"] = 2
-		}),
-		-- Mythic
-		i(190467, {	-- Girdle of Unity DK
-			["bonusID"] = 6897
-		}),
-		i(190467, {	-- Girdle of Unity DK
-			["modID"] = 6
-		}),
-		i(190618, {	-- Antecedent's Aliform Joggers
-			["modID"] = 6
-		}),
-		i(190470, {	-- Cinch of Unity DH
-			["bonusID"] = 6897
-		}),
-		i(190470, {	-- Cinch of Unity DH
-			["modID"] = 6
-		}),
-		i(190618, {	-- Lattice of the Distant Keeper (World Boss)
-			["modID"] = 6
-		}),
-		i(190465, {	-- Cinch of Unity Druid
-			["bonusID"] = 6897
-		}),
-		i(190465, {	-- Cinch of Unity Druid
-			["modID"] = 6
-		}),
-		i(190466, {	-- Clasp of Unity Hunter
-			["bonusID"] = 6897
-		}),
-		i(190466, {	-- Clasp of Unity Hunter
-			["modID"] = 6
-		}),
-		i(190616, {	-- Controlled Sequence Clasp (World Boss)
-			["modID"] = 6
-		}),
-		i(190617, {	-- Destruction-Core Handlers (World Boss)
-			["modID"] = 6
-		}),
-		i(190621, {	-- Dealic Deterrent Stockings (World Boss)
-			["modID"] = 6
-		}),
-		i(190464, {	-- Cord of Unity Mage
-			["bonusID"] = 6897
-		}),
-		i(190464, {	-- Cord of Unity Mage
-			["modID"] = 6
-		}),
-		i(190464, {	-- Cord of Unity Mage
-			["bonusID"] = 6895
-		}),
-		i(190464, {	-- Cord of Unity Mage
-			["modID"] = 4
-		}),
-		i(190472, {	-- Cinch of Unity
-			["bonusID"] = 6897
-		}),
-		i(190472, {	-- Cinch of Unity
-			["modID"] = 6
-		}),
-		i(190614, {	-- Antros' Entrusted Bascinet (World Boss)
-			["modID"] = 6,
-		}),
-		i(190615, {	-- Cosmic Guardian's Casing (World Boss)
-			["modID"] = 6,
-		}),
-		i(190474, {	-- Girdle of Unity Pala
-			["bonusID"] = 6897
-		}),
-		i(190474, {	-- Girdle of Unity Pala
-			["modID"] = 6
-		}),
-		i(190468, {	-- Cord of Unity Priest
-			["bonusID"] = 6897
-		}),
-		i(190468, {	-- Cord of Unity Priest
-			["modID"] = 6
-		}),
-		i(190471, {	-- Cinch of Unity
-			["bonusID"] = 6897
-		}),
-		i(190471, {	-- Cinch of Unity
-			["bonusID"] = 6898
-		}),
-		i(190473, {	-- Clasp of Unity
-			["bonusID"] = 6897
-		}),
-		i(190473, {	-- Clasp of Unity
-			["modID"] = 6
-		}),
-		i(190620, {	-- Sav'thul's Calamitous Tantour (World Boss)
-			["modID"] = 6,
-		}),
-		i(190469, {	-- Cord of Unity
-			["bonusID"] = 6897
-		}),
-		i(190469, {	-- Cord of Unity
-			["modID"] = 6
-		}),
-		i(190475, {	-- Girdle of Unity
-			["bonusID"] = 6897
-		}),
-		i(190475, {	-- Girdle of Unity
-			["modID"] = 6
-		}),
-		-- PvP
-		i(190467, {	-- Girdle of Unity DK
-			["bonusID"] = 6895
-		}),
-		i(190467, {	-- Girdle of Unity DK
-			["bonusID"] = 6894
-		}),
-		i(190470, {	-- Cinch of Unity DH
-			["bonusID"] = 6895
-		}),
-		i(190470, {	-- Cinch of Unity DH
-			["bonusID"] = 6894
-		}),
-		i(190465, {	-- Cinch of Unity Druid
-			["bonusID"] = 6895
-		}),
-		i(190465, {	-- Cinch of Unity Druid
-			["bonusID"] = 6894
-		}),
-		i(190466, {	-- Clasp of Unity Hunter
-			["bonusID"] = 6894
-		}),
-		i(190466, {	-- Clasp of Unity Hunter
-			["bonusID"] = 6895
-		}),
-		i(190464, {	-- Cord of Unity Mage
-			["bonusID"] = 6895
-		}),
-		i(190464, {	-- Cord of Unity Mage
-			["bonusID"] = 6894
-		}),
-		i(190472, {	-- Cinch of Unity
-			["bonusID"] = 6895
-		}),
-		i(190472, {	-- Cinch of Unity
-			["bonusID"] = 6894
-		}),
-		i(190474, {	-- Girdle of Unity Pala
-			["bonusID"] = 6895
-		}),
-		i(190474, {	-- Girdle of Unity Pala
-			["bonusID"] = 6894
-		}),
-		i(190468, {	-- Cord of Unity Priest
-			["bonusID"] = 6895
-		}),
-		i(190468, {	-- Cord of Unity Priest
-			["bonusID"] = 6894
-		}),
-		i(190471, {	-- Cinch of Unity
-			["bonusID"] = 6895
-		}),
-		i(190471, {	-- Cinch of Unity
-			["bonusID"] = 6894
-		}),
-		i(190473, {	-- Clasp of Unity
-			["bonusID"] = 6894
-		}),
-		i(190473, {	-- Clasp of Unity
-			["bonusID"] = 6896
-		}),
-		i(190469, {	-- Cord of Unity
-			["bonusID"] = 6895
-		}),
-		i(190469, {	-- Cord of Unity
-			["bonusID"] = 6894
-		}),
-		i(190475, {	-- Girdle of Unity
-			["bonusID"] = 6895
-		}),
-		i(190475, {	-- Girdle of Unity
-			["bonusID"] = 6894
-		}),
 	}),
 	tier(CLASSIC_TIER, {
 		n(ARMOR, {
@@ -503,7 +108,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(17000),	-- Band of the Wraith
 				i(17108),	-- Mark of Deflection
 			}),
-			filter(FINGER_F, {
+			filter(TRINKET_F, {
 				i(12805),	-- Orb of Fire
 				i(18355),	-- Ferras Collar
 				i(18438),	-- Sergeant's Mark
@@ -951,7 +556,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(46842),	-- Crusader's Band
 				}),
 			}),
-			filter(FINGER_F, {
+			filter(TRINKET_F, {
 				n(P3xx, {
 					i(38572),	-- Bounty Procurement Enhancer
 					i(39819),	-- Bloodbinder's Runestone
@@ -1340,7 +945,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(58816),	-- QA Test Finger 250 Hit
 				}),
 			}),
-			filter(FINGER_F, {
+			filter(TRINKET_F, {
 				tier(CATA_TIER, 0.3, {
 					i(54547),	-- Cracked Jewelry Box
 				}),
@@ -1859,7 +1464,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(109516),	-- 7.0 QA Combat Test Ring 5
 				}),
 			}),
-			filter(FINGER_F, {
+			filter(TRINKET_F, {
 				tier(WOD_TIER, 0.1, {
 					i(114960),	-- Spires unused
 					i(109263),	-- 6.0 QA Combat Test Agility DPS Trinket
@@ -2064,7 +1669,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(157749),	-- Ornate Silver Loop
 				}),
 			}),
-			filter(FINGER_F, {
+			filter(TRINKET_F, {
 				tier(LEGION_TIER, 3.0, {
 					i(151967),	-- Electrostatic Lasso
 				}),
@@ -2517,7 +2122,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(173421),	-- Black Empire Signet
 				}),
 			}),
-			filter(FINGER_F, {
+			filter(TRINKET_F, {
 				tier(BFA_TIER, 0.1, {
 					i(161222),	-- Latency Manipulator
 					i(161223),	-- Agency Manipulator
@@ -2823,6 +2428,25 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(188107),	-- Cypher Attunement Shoulder
 					i(188108),	-- Cypher Attunement Waist
 					i(188113),	-- Cypher Attunement Wrist
+					--
+					i(190621, {	-- Dealic Deterrent Stockings
+						["modID"] = 4
+					}),
+					i(190621, {	-- Dealic Deterrent Stockings
+						["modID"] = 2
+					}),
+					i(190621, {	-- Dealic Deterrent Stockings
+						["modID"] = 6
+					}),
+					i(190620, {	-- Sav'thul's Calamitous Tantour
+						["modID"] = 4,
+					}),
+					i(190620, {	-- Sav'thul's Calamitous Tantour
+						["modID"] = 2,
+					}),
+					i(190620, {	-- Sav'thul's Calamitous Tantour
+						["modID"] = 6,
+					}),
 				}),
 			}),
 			filter(LEATHER, {
@@ -2858,6 +2482,25 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(190287),	-- Unbound Explorer's Waistwrap
 					--
 					i(189917),	-- Constellation Master's Smock
+					--
+					i(190618, {	-- Lattice of the Distant Keeper
+						["bonusID"] = 451
+					}),
+					i(190618, {	-- Lattice of the Distant Keeper
+						["modID"] = 2
+					}),
+					i(190618, {	-- Lattice of the Distant Keeper
+						["modID"] = 6
+					}),
+					i(190619, {	-- Antecedent's Aliform Joggers
+						["modID"] = 4
+					}),
+					i(190619, {	-- Antecedent's Aliform Joggers
+						["modID"] = 2
+					}),
+					i(190619, {	-- Antecedent's Aliform Joggers
+						["modID"] = 6
+					})
 				}),
 			}),
 			filter(MAIL, {
@@ -2892,6 +2535,25 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(190296),	-- Transcendent Vagabond's Wristguards
 					--
 					i(189943),	-- Greaves of Cosmic Designs
+					--
+					i(190616, {	-- Controlled Sequence Clasp
+						["bonusID"] = 451
+					}),
+					i(190616, {	-- Controlled Sequence Clasp
+						["modID"] = 2
+					}),
+					i(190616, {	-- Controlled Sequence Clasp
+						["modID"] = 6
+					}),
+					i(190617, {	-- Destruction-Core Handlers
+						["bonusID"] = 451
+					}),
+					i(190617, {	-- Destruction-Core Handlers
+						["modID"] = 2
+					}),
+					i(190617, {	-- Destruction-Core Handlers
+						["modID"] = 6
+					}),
 				}),
 			}),
 			filter(PLATE, {
@@ -2925,6 +2587,25 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(190271),	-- Eternal Warder's Vambraces
 					i(190264),	-- Eternal Warder's Visor
 					i(190304),	-- Eternal Warder's Wristplates
+					--
+					i(190614, {	-- Antros' Entrusted Bascinet
+						["modID"] = 4,
+					}),
+					i(190614, {	-- Antros' Entrusted Bascinet
+						["modID"] = 2,
+					}),
+					i(190614, {	-- Antros' Entrusted Bascinet
+						["modID"] = 6,
+					}),
+					i(190615, {	-- Cosmic Guardian's Casing
+						["modID"] = 4,
+					}),
+					i(190615, {	-- Cosmic Guardian's Casing
+						["modID"] = 2,
+					}),
+					i(190615, {	-- Cosmic Guardian's Casing
+						["modID"] = 6,
+					}),
 				}),
 			}),
 			filter(COSMETIC, {
@@ -2939,7 +2620,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(187914),	-- Captain Noteo's Unused Eye Patch
 				}),
 				tier(SL_TIER, 2.0, {
-					i(190931),	-- Cape of the Regal Wanderer
 					i(190929),	-- Ebony Protocloak
 					i(190933),	-- Majestic Oracle's Drape
 					i(190932),	-- Protohide Drape
@@ -2947,6 +2627,335 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(190935),	-- Distinguished Blade of Cartel Al
 					i(190937),	-- Edge of the Enlightened
 					i(190934),	-- Standard of the Wandering Brokers
+				}),
+			}),
+			n(LEGENDARIES, {
+				-- Stupid Things?
+				-- LFR
+				i(190467, {	-- Girdle of Unity DK
+					["bonusID"] = 6896
+				}),
+				i(190467, {	-- Girdle of Unity DK
+					["modID"] = 4
+				}),
+				i(190465, {	-- Cinch of Unity Druid
+					["bonusID"] = 6896
+				}),
+				i(190465, {	-- Cinch of Unity Druid
+					["modID"] = 4
+				}),
+				i(190472, {	-- Cinch of Unity Monk
+					["bonusID"] = 6896
+				}),
+				i(190472, {	-- Cinch of Unity Monk
+					["modID"] = 4
+				}),
+				i(190468, {	-- Cord of Unity Priest
+					["bonusID"] = 6897
+				}),
+				i(190468, {	-- Cord of Unity Priest
+					["modID"] = 4
+				}),
+				i(190471, {	-- Cinch of Unity Rogue
+					["bonusID"] = 6896
+				}),
+				i(190471, {	-- Cinch of Unity Rogue
+					["modID"] = 4
+				}),
+				i(190473, {	-- Clasp of Unity Shaman
+					["bonusID"] = 6898
+				}),
+				i(190473, {	-- Clasp of Unity Shaman
+					["modID"] = 4
+				}),
+				i(190469, {	-- Cord of Unity Warlock
+					["bonusID"] = 6896
+				}),
+				i(190469, {	-- Cord of Unity Warlock
+					["modID"] = 4
+				}),
+				i(190475, {	-- Girdle of Unity Warrior
+					["bonusID"] = 6896
+				}),
+				i(190475, {	-- Girdle of Unity Warrior
+					["modID"] = 4
+				}),
+				-- LFR Alt
+				i(190466, {	-- Clasp of Unity Hunter
+					["bonusID"] = 6896
+				}),
+				i(190466, {	-- Clasp of Unity Hunter
+					["modID"] = 4
+				}),
+				-- LFR alt Mage
+				i(190464, {	-- Cord of Unity Mage
+					["bonusID"] = 6896
+				}),
+				-- Normal
+				i(190467, {	-- Girdle of Unity DK
+					["bonusID"] = 8107
+				}),
+				i(190470, {	-- Cinch of Unity DH
+					["bonusID"] = 8107
+				}),
+				i(190465, {	-- Cinch of Unity Druid
+					["bonusID"] = 8107
+				}),
+				i(190466, {	-- Clasp of Unity Hunter
+					["bonusID"] = 8107
+				}),
+				i(190464, {	-- Cord of Unity Mage
+					["bonusID"] = 8107
+				}),
+				i(190472, {	-- Cinch of Unity Monk
+					["bonusID"] = 8107
+				}),
+				i(190474, {	-- Girdle of Unity Pala
+					["bonusID"] = 8107
+				}),
+				i(190468, {	-- Cord of Unity Priest
+					["bonusID"] = 8107
+				}),
+				i(190473, {	-- Clasp of Unity Shaman
+					["bonusID"] = 6895
+				}),
+				i(190469, {	-- Cord of Unity Warlock
+					["bonusID"] = 8107
+				}),
+				i(190475, {	-- Girdle of Unity Warrior
+					["bonusID"] = 8107
+				}),
+				-- Normal Alt
+				i(190471, {	-- Cinch of Unity Rogue
+					["bonusID"] = 8107
+				}),
+				i(190471, {	-- Cinch of Unity Rogue
+					["modID"] = 2
+				}),
+				i(190473, {	-- Clasp of Unity Shaman
+					["bonusID"] = 8107
+				}),
+				i(190473, {	-- Clasp of Unity Shaman
+					["modID"] = 2
+				}),
+				-- Heroic
+				i(190467, {	-- Girdle of Unity DK
+					["bonusID"] = 6898
+				}),
+				i(190467, {	-- Girdle of Unity DK
+					["modID"] = 2
+				}),
+				i(190470, {	-- Cinch of Unity DH
+					["bonusID"] = 6898
+				}),
+				i(190470, {	-- Cinch of Unity DH
+					["modID"] = 2
+				}),
+				i(190465, {	-- Cinch of Unity Druid
+					["bonusID"] = 6898
+				}),
+				i(190465, {	-- Cinch of Unity Druid
+					["modID"] = 2
+				}),
+				i(190466, {	-- Clasp of Unity Hunter
+					["bonusID"] = 6898
+				}),
+				i(190466, {	-- Clasp of Unity Hunter
+					["modID"] = 2
+				}),
+				i(190464, {	-- Cord of Unity Mage
+					["bonusID"] = 6898
+				}),
+				i(190464, {	-- Cord of Unity Mage
+					["modID"] = 2
+				}),
+				i(190472, {	-- Cinch of Unity Monk
+					["bonusID"] = 6898
+				}),
+				i(190472, {	-- Cinch of Unity Monk
+					["modID"] = 2
+				}),
+				i(190474, {	-- Girdle of Unity Pala
+					["bonusID"] = 6898
+				}),
+				i(190474, {	-- Girdle of Unity Pala
+					["modID"] = 2
+				}),
+				i(190468, {	-- Cord of Unity Priest
+					["bonusID"] = 6898
+				}),
+				i(190468, {	-- Cord of Unity Priest
+					["modID"] = 2
+				}),
+				i(190471, {	-- Cinch of Unity Rogue
+					["bonusID"] = 6898
+				}),
+				i(190471, {	-- Cinch of Unity Rogue
+					["modID"] = 6
+				}),
+				i(190469, {	-- Cord of Unity Warlock
+					["bonusID"] = 6898
+				}),
+				i(190469, {	-- Cord of Unity Warlock
+					["modID"] = 2
+				}),
+				i(190475, {	-- Girdle of Unity Warrior
+					["bonusID"] = 6898
+				}),
+				i(190475, {	-- Girdle of Unity Warrior
+					["modID"] = 2
+				}),
+				-- Mythic
+				i(190467, {	-- Girdle of Unity DK
+					["bonusID"] = 6897
+				}),
+				i(190467, {	-- Girdle of Unity DK
+					["modID"] = 6
+				}),
+				i(190470, {	-- Cinch of Unity DH
+					["bonusID"] = 6897
+				}),
+				i(190470, {	-- Cinch of Unity DH
+					["modID"] = 6
+				}),
+				i(190465, {	-- Cinch of Unity Druid
+					["bonusID"] = 6897
+				}),
+				i(190465, {	-- Cinch of Unity Druid
+					["modID"] = 6
+				}),
+				i(190466, {	-- Clasp of Unity Hunter
+					["bonusID"] = 6897
+				}),
+				i(190466, {	-- Clasp of Unity Hunter
+					["modID"] = 6
+				}),
+				i(190464, {	-- Cord of Unity Mage
+					["bonusID"] = 6897
+				}),
+				i(190464, {	-- Cord of Unity Mage
+					["modID"] = 6
+				}),
+				i(190464, {	-- Cord of Unity Mage
+					["bonusID"] = 6895
+				}),
+				i(190464, {	-- Cord of Unity Mage
+					["modID"] = 4
+				}),
+				i(190472, {	-- Cinch of Unity Monk
+					["bonusID"] = 6897
+				}),
+				i(190472, {	-- Cinch of Unity Monk
+					["modID"] = 6
+				}),
+				i(190474, {	-- Girdle of Unity Pala
+					["bonusID"] = 6897
+				}),
+				i(190474, {	-- Girdle of Unity Pala
+					["modID"] = 6
+				}),
+				i(190468, {	-- Cord of Unity Priest
+					["bonusID"] = 6897
+				}),
+				i(190468, {	-- Cord of Unity Priest
+					["modID"] = 6
+				}),
+				i(190471, {	-- Cinch of Unity Rogue
+					["bonusID"] = 6897
+				}),
+				i(190471, {	-- Cinch of Unity Rogue
+					["bonusID"] = 6898
+				}),
+				i(190473, {	-- Clasp of Unity Shaman
+					["bonusID"] = 6897
+				}),
+				i(190473, {	-- Clasp of Unity Shaman
+					["modID"] = 6
+				}),
+				i(190469, {	-- Cord of Unity Warlock
+					["bonusID"] = 6897
+				}),
+				i(190469, {	-- Cord of Unity Warlock
+					["modID"] = 6
+				}),
+				i(190475, {	-- Girdle of Unity Warrior
+					["bonusID"] = 6897
+				}),
+				i(190475, {	-- Girdle of Unity Warrior
+					["modID"] = 6
+				}),
+				-- PvP
+				i(190467, {	-- Girdle of Unity DK
+					["bonusID"] = 6895
+				}),
+				i(190467, {	-- Girdle of Unity DK
+					["bonusID"] = 6894
+				}),
+				i(190470, {	-- Cinch of Unity DH
+					["bonusID"] = 6895
+				}),
+				i(190470, {	-- Cinch of Unity DH
+					["bonusID"] = 6894
+				}),
+				i(190465, {	-- Cinch of Unity Druid
+					["bonusID"] = 6895
+				}),
+				i(190465, {	-- Cinch of Unity Druid
+					["bonusID"] = 6894
+				}),
+				i(190466, {	-- Clasp of Unity Hunter
+					["bonusID"] = 6894
+				}),
+				i(190466, {	-- Clasp of Unity Hunter
+					["bonusID"] = 6895
+				}),
+				i(190464, {	-- Cord of Unity Mage
+					["bonusID"] = 6895
+				}),
+				i(190464, {	-- Cord of Unity Mage
+					["bonusID"] = 6894
+				}),
+				i(190472, {	-- Cinch of Unity Monk
+					["bonusID"] = 6895
+				}),
+				i(190472, {	-- Cinch of Unity Monk
+					["bonusID"] = 6894
+				}),
+				i(190474, {	-- Girdle of Unity Pala
+					["bonusID"] = 6895
+				}),
+				i(190474, {	-- Girdle of Unity Pala
+					["bonusID"] = 6894
+				}),
+				i(190468, {	-- Cord of Unity Priest
+					["bonusID"] = 6895
+				}),
+				i(190468, {	-- Cord of Unity Priest
+					["bonusID"] = 6894
+				}),
+				i(190471, {	-- Cinch of Unity Rogue
+					["bonusID"] = 6895
+				}),
+				i(190471, {	-- Cinch of Unity Rogue
+					["bonusID"] = 6894
+				}),
+				i(190473, {	-- Clasp of Unity Shaman
+					["bonusID"] = 6894
+				}),
+				i(190473, {	-- Clasp of Unity Shaman
+					["bonusID"] = 6896
+				}),
+				i(190469, {	-- Cord of Unity Warlock
+					["bonusID"] = 6895
+				}),
+				i(190469, {	-- Cord of Unity Warlock
+					["bonusID"] = 6894
+				}),
+				i(190475, {	-- Girdle of Unity Warrior
+					["bonusID"] = 6895
+				}),
+				i(190475, {	-- Girdle of Unity Warrior
+					["bonusID"] = 6894
 				}),
 			}),
 			filter(NECK_F, {
@@ -2978,7 +2987,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(188112),	-- Cypher Attunement Ring
 				}),
 			}),
-			filter(FINGER_F, {
+			filter(TRINKET_F, {
 				tier(SL_TIER, 0.1, {
 					i(175726),	-- Primalist's Kelpling
 					i(175727),	-- Elder's Stormseed

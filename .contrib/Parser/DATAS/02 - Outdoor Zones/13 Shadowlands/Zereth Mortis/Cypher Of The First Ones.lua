@@ -608,7 +608,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(SL_TIER, {
-		m(ZERETH_MORTIS, {
+		n(-988, {	-- Cypher of the First Ones
 			i(190392),	-- Pocopoc Shield
 			n(ACHIEVEMENTS, {
 				ach(15559),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Aealic
