@@ -72,7 +72,7 @@ root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 		ach(614,  {	-- For the Alliance!
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
-				i(44223, {	-- Reins of the Black War Bear
+				i(44223, {	-- Black War Bear (A) (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
 				}),
 				ach(613,   {	-- Killed in Quel'Thalas
@@ -86,7 +86,7 @@ root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 		ach(619,  {	-- For the Horde!
 			["races"] = HORDE_ONLY,
 			["g"] = {
-				i(44224, {	-- Reins of the Black War Bear
+				i(44224, {	-- Black War Bear (H) (MOUNT!)
 					["races"] = HORDE_ONLY,
 				}),
 				ach(616, {	-- Overthrow the Council

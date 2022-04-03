@@ -193,7 +193,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 45.0, 51.3, BROKEN_SHORE },
 					["g"] = {
-						i(142233),	-- Shadowy Reins of the Accursed Wrathsteed
+						i(142233),	-- Netherlord's Accursed Wrathsteed (MOUNT!)
 					},
 				}),
 				n(117141, {	-- Malgrazoth

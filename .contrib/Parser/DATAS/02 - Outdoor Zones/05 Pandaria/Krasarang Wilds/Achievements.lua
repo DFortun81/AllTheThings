@@ -14,6 +14,7 @@ _.Zones =
 			n(ACHIEVEMENTS, {
 				-- I still am not sure whether achieves like this will be listed per Zone or simply mapped from the Main achievement section...
 				-- ach(9069, {	-- An Awfully Big Adventure
+				--  ["timeline"] = { "added 6.0.2" },
 				-- 	["collectible"] = false,
 				-- 	["filterID"] = BATTLE_PETS,
 				-- 	["g"] = {

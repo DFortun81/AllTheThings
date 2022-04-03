@@ -235,10 +235,10 @@ _.ExpansionFeatures =
 								{ "pop" },						-- pop the Item container
 							},
 							["g"] = {
-								i(116779),	-- Garn Steelmaw
-								i(116673),	-- Giant Coldsnout
-								i(116663),	-- Shadowhide Pearltusk
-								i(116786),	-- Smoky Direwolf
+								i(116779),	-- Garn Steelmaw (MOUNT!)
+								i(116673),	-- Giant Coldsnout (MOUNT!)
+								i(116663),	-- Shadowhide Pearltusk (MOUNT!)
+								i(116786),	-- Smoky Direwolf (MOUNT!)
 							},
 						}),
 						i(122163, {	-- Routed Invader's Crate of Spoils

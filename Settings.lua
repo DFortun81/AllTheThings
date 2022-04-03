@@ -292,6 +292,8 @@ settings.Initialize = function(self)
 	if self:GetTooltipSetting("Auto:WorldQuestsList") then
 		app:GetWindow("WorldQuests"):Show();
 	end
+
+	settings._Initialize = true;
 end
 local function rawcopy(source, copy)
 	if source and copy then
@@ -390,7 +392,7 @@ settings.ApplyProfile = function()
 				settings.SetWindowFromProfile(suffix);
 			end
 		end
-
+		
 		if app.IsReady then
 			app.print(L["PROFILE"]..":",settings:GetProfile(true));
 		end
@@ -430,6 +432,25 @@ settings.SetWindowFromProfile = function(suffix)
 			window.isLocked = points.Locked;
 		end
 	end
+end
+settings.CheckSeasonalDate = function(self, u, startMonth, startDay, endMonth, endDay)
+	local today = date("*t");
+	local now, start, ends = time({day=today.day,month=today.month,year=today.year,hour=0,min=0,sec=0});
+	if startMonth <= endMonth then
+		start = time({day=startDay,month=startMonth,year=today.year,hour=0,min=0,sec=0});
+		ends = time({day=endDay,month=endMonth,year=today.year,hour=0,min=0,sec=0});
+	else
+		local year = today.year;
+		if today.month < startMonth then year = year - 1; end
+		start = time({day=startDay,month=startMonth,year=year,hour=0,min=0,sec=0});
+		ends = time({day=endDay,month=endMonth,year=year + 1,hour=0,min=0,sec=0});
+	end
+	
+	local active = (now >= start and now <= ends);
+	SeasonalSettingsBase.__index[u] = active;
+end
+settings.CheckWeekDay = function(self, u, weekDay)
+	SeasonalSettingsBase.__index[u] = date("*t").wday == weekDay;
 end
 settings.Get = function(self, setting, container)
 	return RawSettings.General[setting];
@@ -3052,9 +3073,14 @@ local y = 4;
 local count = 0;
 for _,v in ipairs(holidayOrder) do
 	if unobtainables[v][1] == 4 then
-		local seasonalFilter = child:CreateCheckBox("|cffADD8E6" .. unobtainables[v][3],
+		local seasonalFilter = child:CreateCheckBox(unobtainables[v][3],
 		function(self)
 			self:SetChecked(settings:GetValue("Seasonal", v));
+			if SeasonalSettingsBase.__index[v] then
+				self.Text:SetTextColor(0.6, 0.7, 1);
+			else
+				self.Text:SetTextColor(1, 1, 1);
+			end
 		end,
 		function(self)
 			settings:SetValue("Seasonal", v, self:GetChecked());

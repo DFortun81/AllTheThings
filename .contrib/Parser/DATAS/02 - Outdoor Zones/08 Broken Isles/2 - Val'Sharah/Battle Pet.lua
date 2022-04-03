@@ -66,7 +66,7 @@ _.Zones =
 								["provider"] = { "n", 115786 },	-- Sharptalon Hatchling
 								["sourceQuest"] = 45017,	-- Sharptalon Team Rumble
 								["g"] = {
-									i(137580),	-- Viridian Sharptalon
+									i(137580),	-- Viridian Sharptalon (MOUNT!)
 								},
 							}),
 							q(45017, {	-- Sharptalon Team Rumble

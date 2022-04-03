@@ -1002,7 +1002,6 @@ _.Zones =
 				q(47073),	-- Delivering Lost Knowledge
 				q(40414),	-- Devouring Darkness
 				q(47020),	-- Discipline: Rumblings Near Feltotem
-				q(41191),	-- Drogbar Deception
 				q(40186),	-- Drogbar Durability
 				q(39576),	-- Echoes of Deathwing
 				q(39762),	-- Feltotem Warlock

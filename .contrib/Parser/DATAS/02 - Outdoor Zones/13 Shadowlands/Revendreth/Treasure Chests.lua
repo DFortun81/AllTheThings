@@ -112,6 +112,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				},
 				["g"] = {
 					i(180397),	-- Crown of Decadent Desires
+					i(180379),	-- Exquisitely Woven Rug
 					i(180401),	-- Noble Justice
 					i(182723),	-- Mail Courier's Shoulderguards
 				},
@@ -172,6 +173,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["cost"] = { { "i", 172957, 1 } },	-- 1x Atonement Crypt Key
 				["g"] = {
 					i(180682),	-- Noble's Wardrobe
+					i(180379),	-- Exquisitely Woven Rug
 					i(182723),	-- Mail Courier's Shoulderguards
 					i(180401),	-- Noble Justice
 				},
@@ -256,6 +258,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(180390),	-- Belt of Many Trophies
 					i(180388),	-- Soulstalker Blunderbuss
 					i(180375),	-- Hopebreaker's Pack
+				},
+			}),
+			o(358398, {	-- Lost Journal
+				["coord"] = { 28.5, 43.4, REVENDRETH },
+				["g"] = {
+					i(183742),	-- Enemy Infiltration - Preface
 				},
 			}),
 			o(337237, {	-- Lost Vault
@@ -462,6 +470,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["coord"] = { 42.5, 50.3, REVENDRETH },
 				["g"] = {
 					i(183826),	-- Big Floppy Hat
+					i(180379),	-- Exquisitely Woven Rug
 					i(182723),	-- Mail Courier's Shoulderguards
 					i(180401),	-- Noble Justice
 				},
@@ -484,6 +493,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["coord"] = { 50.2, 49.0, REVENDRETH },
 				["crs"] = { 169865 },	-- Treasure Guardian <House Grinchin>
 				["g"] = {
+					i(180379),	-- Exquisitely Woven Rug
 					i(180401),	-- Noble Justice
 					i(182723),	-- Mail Courier's Shoulderguards
 				},
@@ -494,6 +504,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["isDaily"] = true,
 				["coord"] = { 55.3, 35.9, REVENDRETH },
 				["g"] = {
+					i(180379),	-- Exquisitely Woven Rug
 					i(180401),	-- Noble Justice
 					i(182723),	-- Mail Courier's Shoulderguards
 				},
@@ -697,6 +708,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["coord"] = { 38.4, 44.2, REVENDRETH },
 				["g"] = {
 					i(182694),	-- Stylish Black Parasol (TOY!)
+					i(182697),	-- Spare Stylish Parasol
 				},
 			}),
 			o(357697, {	-- Taskmaster's Trove
@@ -724,6 +736,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["questID"] = 60579,
 				["coord"] = { 38.5, 39.9, REVENDRETH },
 				["g"] = {
+					i(180379),	-- Exquisitely Woven Rug
 					i(180401),	-- Noble Justice
 					i(182723),	-- Mail Courier's Shoulderguards
 				},

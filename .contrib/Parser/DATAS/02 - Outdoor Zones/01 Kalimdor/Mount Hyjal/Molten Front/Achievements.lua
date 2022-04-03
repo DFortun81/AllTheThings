@@ -77,7 +77,7 @@ _.Zones =
 						crit(4),	-- Devout Harbinger slain
 					}),
 					ach(5866, {		-- The Molten Front Offensive (Mount Hyjal - The Molten Front)
-						i(69213),	-- Flameward Hippogryph
+						i(69213),	-- Flameward Hippogryph (MOUNT!)
 						crit(1, {	-- Stop the assault on the Sanctuary of Malorne
 							["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
 						}),

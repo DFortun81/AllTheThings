@@ -935,6 +935,7 @@ for key,value in pairs({
 	[35251] = "Baú de Karnitol",	-- Karnitol's Chest
 	[37099] = "Tabuleta Atal'ai",	-- Atal'ai Tablet
 	[91138] = "Martelo de Jardel",	-- Jordan's Hammer
+	[103821] = "Caixa-forte de Doan",	-- Doan's Strongbox	--TODO: This was taken from classic Wowhead
 	[112948] = "Cofre Trancado do Intrépido",	-- Intrepid's Locked Strongbox
 	[113757] = "Baú de Umbraforja",	-- Shadowforge Cache
 	[123329] = "Baú de Baelog",	-- Baelog's Chest
@@ -947,6 +948,7 @@ for key,value in pairs({
 	[142122] = "Cartaz de Procura-se",	-- Wanted Poster
 	[142127] = "Segredo de Rin'ji",	-- Rin'ji's Secret
 	[142151] = "Barril Lacrado",	-- Sealed Barrel
+	[142184] = "Baú do Capitão",	-- Captain's Chest
 	[142195] = "Mapa de Batalha de Patábua",	-- Woodpaw Battle Map
 	[142343] = "Pedestal de Uldum",	-- Uldum Pedestal
 	[142344] = "Extrapolador Artificial",	-- Artificial Extrapolator
@@ -989,6 +991,7 @@ for key,value in pairs({
 	[176090] = "Restos Humanos",	-- Human Remains
 	[176091] = "Caldeirão de Lenha Morta",	-- Deadwood Cauldron
 	[176115] = "Pôster de Procura-se – Arnak Temível Totem",	-- Wanted Poster - Arnak Grimtotem	--TODO: This was taken from classic Wowhead
+	[176192] = "Catálogo do Imprevisível",	-- Catalogue of the Wayward	--TODO: This was taken from classic Wowhead
 	[176361] = "Caldeirão do Flagelo",	-- Scourge Cauldron	--TODO: This was taken from classic Wowhead
 	[176392] = "Caldeirão do Flagelo",	-- Scourge Cauldron
 	[176393] = "Caldeirão do Flagelo",	-- Scourge Cauldron	--TODO: This was taken from classic Wowhead
@@ -2068,6 +2071,7 @@ for key,value in pairs({
 	[250108] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
 	[250109] = "Baú do Tesouro",	-- Treasure Chest
 	[250383] = "Relíquia de Sombraluna",	-- Moonshade Relic
+	[250541] = "Baú do Tesouro",	-- Treasure Chest
 	--TODO: [250671] = "Notes on the Veiled Hand",	-- Notes on the Veiled Hand
 	[250984] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
 	[250985] = "Baú do Tesouro",	-- Treasure Chest
@@ -2590,6 +2594,7 @@ for key,value in pairs({
 	[327591] = "Diário Preservado",	-- Preserved Journal
 	[327592] = "Fechadura Encantada",	-- Enchanted Lock
 	[327596] = "Foco Abissal Partido",	-- Broken Abyssal Focus
+	[327597] = "Baú Enferrujado Antigo",	-- Old Rusty Chest
 	--TODO: [327669] = "Contained Alemental",	-- Contained Alemental
 	--TODO: [328343] = "Direbrew Cog",	-- Direbrew Cog
 	--TODO: [328413] = "Hozen Totem",	-- Hozen Totem
@@ -2698,6 +2703,7 @@ for key,value in pairs({
 	[353336] = "Tesouro Secreto",	-- Secret Treasure
 	[353380] = "Lancheira de Halis",	-- Halis's Lunch Pail
 	[353472] = "Espada Radiante",	-- Radiant Sword
+	[353484] = "Grande Cofre",	-- The Great Vault
 	[353500] = "Caixa-forte de Prata",	-- Silver Strongbox
 	[353503] = "Caixa-forte de Prata",	-- Silver Strongbox
 	[353516] = "Caixa-forte de Prata",	-- Silver Strongbox
@@ -2843,6 +2849,7 @@ for key,value in pairs({
 	[358318] = "Retrato do Dragador R. Suavão",	-- R. Suavel Dredger Portrait
 	[358319] = "Nota do Feiticeiro",	-- Sorceror's Note
 	[358382] = "Procura-se: Quelícera",	-- Wanted: Chelicera
+	[358398] = "Diário Perdido",	-- Lost Journal
 	[358399] = "Bolsa de Seis Léguas",	-- Six-League Pack
 	[358531] = "Baú Gigante de Tesouro Épico",	-- Giant Cache of Epic Treasure
 	[358533] = "Suprimentos Esquecidos",	-- Forgotten Supplies
@@ -2855,6 +2862,7 @@ for key,value in pairs({
 	[364932] = "Lingote Fulgurante",	-- Blazing Ingot
 	[364937] = "Canalizador Fásico",	-- Phasic Siphoner
 	[364987] = "Diário de Corretor",	-- Broker Journal
+	[365093] = "Livros de Canções de Theotar",	-- Theotar's Caroling Books
 	[368205] = "Cabedal Górjuro",	-- Mawsworn Cache
 	[368206] = "Cabedal Górjuro",	-- Mawsworn Cache
 	[368207] = "Cabedal Górjuro",	-- Mawsworn Cache
@@ -2930,13 +2938,15 @@ for key,value in pairs({
 	[369438] = "Cabedal Fendífero",	-- Riftbound Cache
 	[369439] = "Cabedal Fendífero",	-- Riftbound Cache
 	[369440] = "Cabedal Fendífero",	-- Riftbound Cache
+	[369602] = "Mãos da Revolta",	-- Hands of Defiance
 	[369757] = "Baú Submerso",	-- Submerged Chest
 	[370140] = "Baú de Jiro Danificado",	-- Damaged Jiro Stash
-	--TODO: [370469] = "Spectral Feed",	-- Spectral Feed
+	[370469] = "Alimento Espectral",	-- Spectral Feed
 	[370494] = "Baú Tocatiano",	-- Toccatian Cache
 	--TODO: [373437] = "Pungent Blobfish Cluster",	-- Pungent Blobfish Cluster
 	--TODO: [373438] = "Coilclutch Vine",	-- Coilclutch Vine
 	--TODO: [373439] = "Flipper Fish School",	-- Flipper Fish School
+	[373460] = "Rede Feéria",	-- Fae Net
 	[373471] = "Baú Mezônico",	-- Mezzonic Cache
 	[373472] = "Baú Glissandiano",	-- Glissandian Cache
 	[373473] = "Baú Fugueal",	-- Fugueal Cache
@@ -2959,6 +2969,7 @@ for key,value in pairs({
 	[373587] = "Concordância Excêntrica",	-- Excitable Concordance
 	[373588] = "Concordância Mercurial",	-- Mercurial Concordance
 	[374976] = "Cripta Sinfônica",	-- Symphonic Vault
+	[375021] = "Automa Falecido",	-- Perished Automa
 	[375058] = "Baú Tocatiano",	-- Toccatian Cache
 	[375059] = "Baú Mezônico",	-- Mezzonic Cache
 	[375060] = "Baú Glissandiano",	-- Glissandian Cache
@@ -2969,6 +2980,7 @@ for key,value in pairs({
 	[375067] = "Baú Glissandiano",	-- Glissandian Cache
 	[375068] = "Baú Fugueal",	-- Fugueal Cache
 	[375069] = "Baú Cantárico",	-- Cantaric Cache
+	[375191] = "Arranjo da Alcova Dormente",	-- Dormant Alcove Arrangement
 	[375270] = "Diagrama de Protoforma",	-- Protoform Schematic
 	[375272] = "Cabedal Górjuro",	-- Mawsworn Cache
 	[375281] = "Relíquia Roubada",	-- Stolen Relic
@@ -3014,7 +3026,7 @@ for key,value in pairs({
 	[375485] = "Ceifador de Protoflora",	-- Protoflora Harvester
 	[375486] = "Diagrama de Protoforma",	-- Protoform Schematic
 	[375492] = "Câmara Sintática",	-- Syntactic Vault
-	--TODO: [375493] = "Ripened Protopear",	-- Ripened Protopear
+	[375493] = "Protopera Madura",	-- Ripened Protopear
 	[375494] = "Baú Circular",	-- Rondure Cache
 	[375495] = "Folhagem Farfalhante",	-- Undulating Foliage
 	[375496] = "Saca de Produtos Agrícolas Progenitores",	-- Bushel of Progenitor Produce
@@ -3027,7 +3039,7 @@ for key,value in pairs({
 	[375538] = "Ovoide Perdido",	-- Lost Ovoid
 	[375693] = "Diagrama de Protoforma",	-- Protoform Schematic
 	[375694] = "Diagrama de Protoforma",	-- Protoform Schematic
-	--TODO: [375746] = "Protoform Schematic",	-- Protoform Schematic
+	[375746] = "Diagrama de Protótipo",	-- Prototype Schematic
 	[375748] = "Diagrama de Protoforma",	-- Protoform Schematic
 	[375889] = "Diagrama de Protoforma",	-- Protoform Schematic
 	[375893] = "Baú de Alto Valor",	-- High Value Cache
@@ -3035,7 +3047,7 @@ for key,value in pairs({
 	[375902] = "Clâmide Etérea Rasgada",	-- Torn Ethereal Drape
 	[375903] = "Diagrama de Protoforma",	-- Protoform Schematic
 	[375905] = "Diagrama de Protoforma",	-- Protoform Schematic
-	--TODO: [375907] = "Protoform Schematic",	-- Protoform Schematic
+	[375907] = "Diagrama de Protoforma",	-- Protoform Schematic
 	[375915] = "Fulgor da Serenidade",	-- Glimmer of Serenity
 	[375950] = "Bugiganga de Inovação Pura",	-- Bauble of Pure Innovation
 	[375972] = "Procura-se: Custoz",	-- Wanted: Custos
@@ -3049,7 +3061,7 @@ for key,value in pairs({
 	[375986] = "Firim no Exílio, Parte 6",	-- Firim in Exile, Part 6
 	[375987] = "Firim no Exílio, Parte 7",	-- Firim in Exile, Part 7
 	--TODO: [375988] = "Firim in Exile, Epilogue",	-- Firim in Exile, Epilogue
-	--TODO: [376041] = "Shrouded Cypher Cache",	-- Shrouded Cypher Cache
+	[376041] = "Baú de Cifra Amortalhado",	-- Shrouded Cypher Cache
 	[9962198] = "Poça de Lodo Improvisada do Proscrito",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only

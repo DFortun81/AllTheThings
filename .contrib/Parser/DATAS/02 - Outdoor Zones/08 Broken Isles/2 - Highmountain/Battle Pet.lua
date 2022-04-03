@@ -115,7 +115,7 @@ _.Zones =
 								["provider"] = { "n", 115784 },	-- Snowfeather Hatchling
 								["sourceQuest"] = 44968,	-- Snowfeather Team Rumble
 								["g"] = {
-									i(137578),	-- Snowfeather Hunter
+									i(137578),	-- Snowfeather Hunter (MOUNT!)
 								},
 							}),
 							q(44968, {	-- Snowfeather Team Rumble

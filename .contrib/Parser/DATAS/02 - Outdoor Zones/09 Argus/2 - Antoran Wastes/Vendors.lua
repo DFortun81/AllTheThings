@@ -41,7 +41,6 @@ _.Zones =
 						}),
 						i(153226, {	-- Observer's Locus Resonator
 							["cost"] = { { "i", 153021, 500 }, },	-- 500x Intact Demon Eye
-							["f"] = 0,	-- Not Miscellaneous
 							["g"] = {
 								n(127706, {	-- Rezira the Seer
 									["description"] = "In order to reach this rare you must use the Observer's Locus Resonator, purchaseable from Orix the All-Seer, use someone else's portal, or use an item like Falling Flame with a Goblin Glider to help you land in the correct place.",

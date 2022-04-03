@@ -263,9 +263,9 @@ _.Craftables =
 		}),
 		prof(ENGINEERING, {
 			filter(MOUNTS, {
-				i(87250),	-- Depleted-Kyparium Rocket*
-				i(87251),	-- Geosynchronous World Spinner*
-				i(95416),	-- Sky Golem*
+				i(87250),	-- Depleted-Kyparium Rocket (MOUNT!)
+				i(87251),	-- Geosynchronous World Spinner (MOUNT!)
+				i(95416),	-- Sky Golem (MOUNT!)
 			}),
 			filter(BATTLE_PETS, {
 				i(87526),	-- Mechanical Pandaren Dragonling*
@@ -386,11 +386,11 @@ _.Craftables =
 		}),
 		prof(JEWELCRAFTING, {
 			filter(MOUNTS, {
-				i(83088),	-- Jade Panther
-				i(82453),	-- Jeweled Onyx Panther
-				i(83087),	-- Ruby Panther
-				i(83090),	-- Sapphire Panther
-				i(83089),	-- Sunstone Panther
+				i(83088),	-- Jade Panther (MOUNT!)
+				i(82453),	-- Jeweled Onyx Panther (MOUNT!)
+				i(83087),	-- Ruby Panther (MOUNT!)
+				i(83090),	-- Sapphire Panther (MOUNT!)
+				i(83089),	-- Sunstone Panther (MOUNT!)
 			}),
 			filter(BATTLE_PETS, {
 				i(82774),	-- Jade Owl

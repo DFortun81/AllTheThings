@@ -13,7 +13,7 @@ root("Promotions", n(-545, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Blizzc
 	}),
 
 	ach(415),	-- Blizzcon 2008 - Big Blizzard Bear
-	i(43599, {	-- Big Blizzard Bear Mount
+	i(43599, {	-- Big Blizzard Bear (MOUNT!)
 		["timeline"] = { "added 3.0.1" },
 	}),
 
@@ -72,10 +72,10 @@ root("Promotions", n(-545, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Blizzc
 	ach(11931, {	-- Blizzcon 2017 - Rides of War
 		["timeline"] = { "added 7.3.2.25079" },
 	}),
-	h(i(151617, {	-- Orgrimmar Interceptor Mount
+	h(i(151617, {	-- Orgrimmar Interceptor (MOUNT!)
 		["timeline"] = { "added 7.3.0.25021" },
 	})),
-	a(i(151618, {	-- Stormwind Skychaser Mount
+	a(i(151618, {	-- Stormwind Skychaser (MOUNT!)
 		["timeline"] = { "added 7.3.0.25021" },
 	})),
 

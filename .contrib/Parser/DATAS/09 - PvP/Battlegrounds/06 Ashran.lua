@@ -673,6 +673,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 						}),
 					},
 				}),
+				i(184042),	-- Nightborne Liver
 				i(112122, {	-- Orc Tooth
 					["repeatable"] = true,
 					["questID"] = 35940,	-- Orc Tooth
@@ -831,7 +832,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					["coord"] = { 44.2, 74.0, 1478 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(116776, {	-- Pale Thorngrazer
+						i(116776, {	-- Pale Thorngrazer (MOUNT!)
 							["cost"] = {
 								{ "i", 137642, 100 },	-- 100x Mark of Honor
 								{ "g", 45000000 },		-- 4500g
@@ -861,7 +862,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					["coord"] = { 48.4, 23.8, 1478 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(116775, {	-- Breezestrider Stallion
+						i(116775, {	-- Breezestrider Stallion (MOUNT!)
 							["cost"] = {
 								{ "i", 137642, 100 },	-- 100x Mark of Honor
 								{ "g", 45000000 },		-- 4500g

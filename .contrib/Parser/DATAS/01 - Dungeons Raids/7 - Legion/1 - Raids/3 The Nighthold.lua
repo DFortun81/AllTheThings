@@ -18,10 +18,14 @@ _.Instances = { tier(LEGION_TIER, {
 					["sourceQuests"] = { 44719 },	-- Breaching the Sanctum
 					["description"] = "Click on the Eye of Aman'thul after Gul'dan dies to complete the quest.",
 					["provider"] = { "n", 115367 },	-- Archmage Khadgar
+					["coord"] = { 44.1, 60.1, SURAMAR },
 				}),
 				q(45420, {	-- The Nighthold: The Eye of Aman'Thul
 					["sourceQuests"] = { 45417 },	-- The Nighthold: Lord of the Shadow Council
 					["provider"] = { "n", 106522 },	-- Archmage Khadgar
+					["g"] = {
+						sp(233377),	-- Gaze of Aman'Thul
+					},
 				}),
 			}),
 			d(17, {		-- LFR
@@ -696,7 +700,7 @@ _.Instances = { tier(LEGION_TIER, {
 				cr(104154, e(1737, {	-- Gul'dan
 					ach(10696),	-- I've Got My Eyes On You
 					ach(10839),	-- Betrayer's Rise
-					i(137574),	-- Living Infernal Core
+					i(137574),	-- Felblaze Infernal (MOUNT!)
 					i(139651),	-- Vantus Rune Technique: Gul'dan [Rank 1]
 					i(137763),	-- Vantus Rune Technique: Gul'dan [Rank 2]
 					i(119211),	-- Golden Hearthstone Card: Lord Jaraxxus (TOY!)
@@ -1075,7 +1079,7 @@ _.Instances = { tier(LEGION_TIER, {
 					}),
 					ach(10696),	-- I've Got My Eyes On You
 					ach(10839),	-- Betrayer's Rise
-					i(137574),	-- Living Infernal Core
+					i(137574),	-- Felblaze Infernal (MOUNT!)
 					i(139651),	-- Vantus Rune Technique: Gul'dan [Rank 1]
 					i(137763),	-- Vantus Rune Technique: Gul'dan [Rank 2]
 					i(119211),	-- Golden Hearthstone Card: Lord Jaraxxus (TOY!)
@@ -1474,8 +1478,8 @@ _.Instances = { tier(LEGION_TIER, {
 						ach(10850, {	-- Mythic: Gul'dan
 							title(342),	-- Title: %, Vengeance Incarnate
 						}),
-						i(137575),	-- Fiendish Hellfire Core
-						i(137574),	-- Living Infernal Core
+						i(137575),	-- Hellfire Infernal (MOUNT!)
+						i(137574),	-- Felblaze Infernal (MOUNT!)
 						i(139651),	-- Vantus Rune Technique: Gul'dan [Rank 1]
 						i(137763),	-- Vantus Rune Technique: Gul'dan [Rank 2]
 						i(119211),	-- Golden Hearthstone Card: Lord Jaraxxus (TOY!)

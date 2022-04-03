@@ -70,7 +70,7 @@ _.Zones =
 				n(50903, {	-- Orlix the Swamplord
 					["coords"] = {
 						{ 17.12, 36.45, SWAMP_OF_SORROWS },
-						{ 17.48, 37,50, SWAMP_OF_SORROWS },
+						{ 17.48, 37.50, SWAMP_OF_SORROWS },
 						{ 16.53, 38.26, SWAMP_OF_SORROWS },
 						{ 15.78, 37.18, SWAMP_OF_SORROWS },
 					},

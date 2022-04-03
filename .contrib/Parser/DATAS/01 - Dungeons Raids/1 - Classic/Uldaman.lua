@@ -757,7 +757,7 @@ root("Instances", tier(CLASSIC_TIER, {
 							2204,	-- Restoring the Necklace
 							2339,	-- Find the Gems and Power Source
 						},
-						["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(2278) or C_QuestLog.IsQuestFlaggedCompleted(2204) or C_QuestLog.IsQuestFlaggedCompleted(2339)); end]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					})),
 					i(7672),	-- Shattered Necklace Power Source

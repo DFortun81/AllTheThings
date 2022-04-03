@@ -48,46 +48,6 @@ local OnTooltipForWarsongGulch = [[function(t)
 		GameTooltip:AddLine(" Each capture is worth " .. repPerFlagCapture .. " rep, +10 on WSG Weekend.", 1, 1, 1);
 	end
 end]];
-local HERO_OF_WARSONG_ALLIANCE_OnUpdate = [[function(t)
-	if t.collectible then
-		if not t.wsg then
-			local f = _.SearchForField("factionID", 890);
-			if f and #f > 0 then
-				t.wsg = f[1];
-			else
-				return true;
-			end
-		end
-		t.SetAchievementCollected(t.achievementID, t.wsg.standing == 8);
-	end
-end]];
-local HERO_OF_WARSONG_HORDE_OnUpdate = [[function(t)
-	if t.collectible then
-		if not t.wsg then
-			local f = _.SearchForField("factionID", 889);
-			if f and #f > 0 then
-				t.wsg = f[1];
-			else
-				return true;
-			end
-		end
-		t.SetAchievementCollected(t.achievementID, t.wsg.standing == 8);
-	end
-end]];
-local HERO_OF_WARSONG_OnClick = [[function(row, button)
-	if button == "RightButton" then
-		local t = row.ref;
-		local clone = _.CreateMiniListForGroup(_.CreateAchievement(t[t.key], { t.wsg })).data;
-		clone.description = t.description;
-		return true;
-	end
-end]];
-local HERO_OF_WARSONG_OnTooltip = [[function(t)
-	if t.collectible then
-		GameTooltip:AddLine(" ");
-		GameTooltip:AddDoubleLine(" |T" .. t.wsg.icon .. ":0|t " .. t.wsg.text, _.L[t.wsg.standing == 8 and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"], 1, 1, 1);
-	end
-end]];
 root("PVP", pvp(n(BATTLEGROUNDS, {
 	m(WARSONG_GULCH, {
 		["lore"] = "Warsong Gulch is a 10v10 capture-the-flag style battleground that traces the conflict between the Silverwing Sentinels seeking revenge on the orcs that chopped down the Ashenvale forest during the Third War.",
@@ -156,18 +116,18 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				ach(713, applyclassicphase(PHASE_TWO, {	-- Silverwing Sentinel (A)
 					["races"] = ALLIANCE_ONLY,
 					-- #if BEFORE 3.0.1
-					["OnClick"] = HERO_OF_WARSONG_OnClick,
-					["OnTooltip"] = HERO_OF_WARSONG_OnTooltip,
-					["OnUpdate"] = HERO_OF_WARSONG_ALLIANCE_OnUpdate,
+					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
+					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
+					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 890); end]],
 					["description"] = "Raise your reputation with the Silverwing Sentinels to Exalted.",
 					-- #endif
 				})),
 				ach(712, applyclassicphase(PHASE_TWO, {	-- Warsong Outrider (H)
 					["races"] = HORDE_ONLY,
 					-- #if BEFORE 3.0.1
-					["OnClick"] = HERO_OF_WARSONG_OnClick,
-					["OnTooltip"] = HERO_OF_WARSONG_OnTooltip,
-					["OnUpdate"] = HERO_OF_WARSONG_HORDE_OnUpdate,
+					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
+					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
+					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 889); end]],
 					["description"] = "Raise your reputation with the Warsong Outriders to Exalted.",
 					-- #endif
 				})),

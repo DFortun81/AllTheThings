@@ -24,7 +24,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				},
 			}),
 			o(375496, {	-- Bushel of Progenitor Produce
-				["description"] = "Kill Nascent Servitor(182368) until you have 5 buffs then you can openen the door.",
+				["description"] = "Kill Nascent Servitor(182368) until you have 5 buffs then you can open the door.",
 				["coord"] = { 47.5, 95.2, ZERETH_MORTIS },
 				["questID"] = 65573,
 				["g"] = {
@@ -278,6 +278,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
 					}),
 					i(189863),	-- Spatial Opener
+					i(190941),	-- Teachings of the Elders
 				},
 			}),
 			o(369757, {	-- Submerged Chest
@@ -312,7 +313,15 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			}),
 			o(375492, {	-- Syntactic Vault
 				["description"] = "Inside a cave. Now you need to touch 6 glowing things on columns with symbols all over the island. Each action give buff. Need to stack 6 (touch same amount of pylons) times and then touch glowing thing. Coords:\n77.0, 58.9\n77.0, 60.3\n78.1, 53.3\n76.8, 46.6\n81.2, 50.4\n80.9, 56.2",
-				["coord"] = { 77.5, 58.2, ZERETH_MORTIS },
+				["coords"] = {
+					{ 77.5, 58.2, ZERETH_MORTIS },
+					{ 77.0, 58.9, ZERETH_MORTIS },
+					{ 77.0, 60.3, ZERETH_MORTIS },
+					{ 78.1, 53.3, ZERETH_MORTIS },
+					{ 76.8, 46.6, ZERETH_MORTIS },
+					{ 81.2, 50.4, ZERETH_MORTIS },
+					{ 80.9, 56.2, ZERETH_MORTIS },
+				},
 				["questID"] = 65565,
 				["g"] = {
 					crit(24, {	-- Syntactic Vault
@@ -367,82 +376,88 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(190926),	-- Infested Automa Core (TOY!)
 				},
 			}),
-			-- Sands
-			o(375397, {	-- Glinting Sand Pile
-				["description"] = "Requires Altonian Understanding and Chapter 6. Dormant Locus Arrangement is found at 51.0, 32.5 between 2 pillars, on the side of one of the pillars (accessible from flying or via the Quintus Locus and dropping down). Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
-				--["coord"] = { , , ZERETH_MORTIS },
-				["cost"] = { { "i", 189863, 1 }, },	-- 1xSpatial Opener
-				["g"] = {
-					crit(2, {	-- Glinting Sand Pile
-						["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+			-- Unlock for 'Sand Piles'
+			o(375191, {	-- Dormant Alcove Arrangement
+				["description"] = "Requires Altonian Understanding and Chapter 6. Accessible with flying or via the Quintus Locus and dropping down.",
+				["questID"] = 65346,
+				["coord"] = { 51.03, 32.48, ZERETH_MORTIS },
+				["g"] = sharedData({
+					["sourceQuest"] = 65346,	-- Dormant Alcove Arrangement
+					["cost"] = { { "i", 189863, 1 }, },	-- 1 Spatial Opener
+					["description"] = "Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
+				},{
+					-- Sands
+					o(375397, {	-- Glinting Sand Pile
+						["coord"] = { 45.1, 36, 2029 },
+						["questID"] = 65495,
+						["g"] = {
+							crit(2, {	-- Glinting Sand Pile
+								["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+							}),
+						},
 					}),
-				},
-			}),
-			o(375399, {	-- Humming Sand Pile
-				["description"] = "Requires Altonian Understanding and Chapter 6. Dormant Locus Arrangement is found at 51.0, 32.5 between 2 pillars, on the side of one of the pillars (accessible from flying or via the Quintus Locus and dropping down). Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
-				--["coord"] = { , , ZERETH_MORTIS },
-				["cost"] = { { "i", 189863, 1 }, },	-- 1xSpatial Opener
-				["g"] = {
-					crit(4, {	-- Humming Sand Pile
-						["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+					o(375399, {	-- Humming Sand Pile
+						["coord"] = { 44.3, 36.7, 2029 },
+						["questID"] = 65497,
+						["g"] = {
+							crit(4, {	-- Humming Sand Pile
+								["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+							}),
+						},
 					}),
-				},
-			}),
-			o(375396, {	-- Lumpy Sand Pile
-				["description"] = "Requires Altonian Understanding and Chapter 6. Dormant Locus Arrangement is found at 51.0, 32.5 between 2 pillars, on the side of one of the pillars (accessible from flying or via the Quintus Locus and dropping down). Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
-				--["coord"] = { , , ZERETH_MORTIS },
-				["cost"] = { { "i", 189863, 1 }, },	-- 1xSpatial Opener
-				["g"] = {
-					crit(1, {	-- Lumpy Sand Pile
-						["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+					o(375396, {	-- Lumpy Sand Pile
+						["coord"] = { 44.8, 36.9, 2029 },
+						["questID"] = 65494,
+						["g"] = {
+							crit(1, {	-- Lumpy Sand Pile
+								["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+							}),
+						},
 					}),
-				},
-			}),
-			o(375400, {	-- Misshapen Sand Pile
-				["description"] = "Requires Altonian Understanding and Chapter 6. Dormant Locus Arrangement is found at 51.0, 32.5 between 2 pillars, on the side of one of the pillars (accessible from flying or via the Quintus Locus and dropping down). Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
-				--["coord"] = { , , ZERETH_MORTIS },
-				["cost"] = { { "i", 189863, 1 }, },	-- 1xSpatial Opener
-				["g"] = {
-					crit(5, {	-- Misshapen Sand Pile
-						["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+					o(375400, {	-- Misshapen Sand Pile
+						["coord"] = { 44.6, 35.7, 2029 },
+						["questID"] = 65498,
+						["g"] = {
+							crit(5, {	-- Misshapen Sand Pile
+								["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+							}),
+						},
 					}),
-				},
-			}),
-			o(375398, {	-- Shifting Sand Pile
-				["description"] = "Requires Altonian Understanding and Chapter 6. Dormant Locus Arrangement is found at 51.0, 32.5 between 2 pillars, on the side of one of the pillars (accessible from flying or via the Quintus Locus and dropping down). Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
-				--["coord"] = { , , ZERETH_MORTIS },
-				["cost"] = { { "i", 189863, 1 }, },	-- 1xSpatial Opener
-				["g"] = {
-					crit(3, {	-- Shifting Sand Pile
-						["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+					o(375398, {	-- Shifting Sand Pile
+						["coord"] = { 43.7, 37.1, 2029 },
+						["questID"] = 65496,
+						["g"] = {
+							crit(3, {	-- Shifting Sand Pile
+								["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+							}),
+						},
 					}),
-				},
-			}),
-			o(375401, {	-- Sparkling Sand Pile
-				["description"] = "Requires Altonian Understanding and Chapter 6. Dormant Locus Arrangement is found at 51.0, 32.5 between 2 pillars, on the side of one of the pillars (accessible from flying or via the Quintus Locus and dropping down). Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
-				--["coord"] = { , , ZERETH_MORTIS },
-				["cost"] = { { "i", 189863, 1 }, },	-- 1xSpatial Opener
-				["g"] = {
-					crit(6, {	-- Sparkling Sand Pile
-						["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+					o(375401, {	-- Sparkling Sand Pile
+						["coord"] = { 43.9, 36.5, 2029 },
+						["questID"] = 65499,
+						["g"] = {
+							crit(6, {	-- Sparkling Sand Pile
+								["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+							}),
+							i(190374),	-- Gemstone of Prismatic Brilliance
+						},
 					}),
-					i(190374),	-- Gemstone of Prismatic Brilliance
-				},
-			}),
-			o(375402, {	-- Ticking Sand Pile
-				["description"] = "Requires Altonian Understanding and Chapter 6. Dormant Locus Arrangement is found at 51.0, 32.5 between 2 pillars, on the side of one of the pillars (accessible from flying or via the Quintus Locus and dropping down). Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
-				--["coord"] = { , , ZERETH_MORTIS },
-				["cost"] = { { "i", 189863, 1 }, },	-- 1xSpatial Opener
-				["g"] = {
-					crit(7, {	-- Ticking Sand Pile
-						["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+					o(375402, {	-- Ticking Sand Pile
+						["coord"] = { 43.8, 37.6, 2029 },
+						["questID"] = 65500,
+						["g"] = {
+							crit(7, {	-- Ticking Sand Pile
+								["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+							}),
+						},
 					}),
-				},
+				}),
 			}),
 			o(375494, {	-- Rondure Cache
-				["description"] = "Requires Aealic Understanding and Chapter 6. Rondure Locus Arrangement is found at 50.5, 27.6 Close to Tertius Locus. Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
-				-- ["coord"] = { 64.8, 33.6, ZERETH_MORTIS },
-				-- ["questID"] = ,
+				["description"] = "Requires Aealic Understanding and Chapter 6. Rondure Alcove Arrangement is found at 50.5, 27.6 Close to Tertius Locus. Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
+				["coord"] = { 43, 40, 2029 },
+				["questID"] = 65567,
+				["isDaily"] = true,
 				["g"] = {
 					i(190096, {	-- Pocobold
 						["questID"] = 65534,
@@ -455,14 +470,18 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				},
 			}),
 			o(375902, {	-- Torn Ethereal Drape
-				["description"] = "Requires Aealic Understanding and Chapter 6. Fulgore Locus Arrangement is found at 47.8, 30.4 on an upper platform, on the side of a pillar (accessible from flying or possibly via the Secundus Locus). Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
-				-- ["coord"] = { 64.8, 33.6, ZERETH_MORTIS },
-				-- ["questID"] = ,
+				["description"] = "Requires Aealic Understanding and Chapter 6. Fulgore Alcove Arrangement is found at 47.8, 30.4 on an upper platform, on the side of a pillar (accessible from flying or possibly via the Secundus Locus). Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
+				["coord"] = { 46.7, 39.3, 2029 },
+				["questID"] = 65643,
+				["g"] = {
+					i(188054),	-- Antecedent Drape
+				},
 			}),
 			n(185261, {	-- Requisites Originator
-				["description"] = "Requires Aealic Understanding and Chapter 6. Repertory Locus Arrangement is found at 49.6, 31.0, inside the Terrestial Cache, on the side of the left wall after you enter. Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.\n\nThis machine can be used once per week.",
-				-- ["coord"] = { 64.8, 33.6, ZERETH_MORTIS },
-				-- ["questID"] = ,
+				["description"] = "Requires Aealic Understanding and Chapter 6. Repertory Alcove Arrangement is found at 49.6, 31.0, inside the Terrestial Cache, on the side of the left wall after you enter. Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.\n\nThis machine can be used once per week.",
+				["coord"] = { 31.3, 65, 2029 },
+				["questID"] = 65532,	-- Fourth Option?
+				["isWeekly"] = true,
 				["g"] = {
 					i(188957),	-- Genesis Mote
 					i(189179, {	-- Unalloyed Bronze Ingot
@@ -493,24 +512,24 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			-- Repeatable chests with QuestID
 			o(375538, {	-- Lost Ovoid
 				["questID"] = 65624,
-				["coord"] = { 53.6, 72.6, ZERETH_MORTIS },
 				["isDaily"] = true,
 				["coords"] = {
-					{ 34.31, 66.55 },
-					{ 34.52, 49.69 },
-					{ 35.15, 49.02 },
-					{ 35.97, 46.22 },
-					{ 43.22, 84.88 },
-					{ 46.69, 63.00 },
-					{ 48.14, 73.55 },
-					{ 49.18, 71.53 },
-					{ 50.80, 70.81 },
-					{ 52.43, 73.64 },
-					{ 53.83, 64.88 },
-					{ 55.19, 76.85 },
-					{ 55.98, 68.78 },
-					{ 60.84, 75.94 },
-					{ 61.07, 65.15 },
+					{ 34.31, 66.55, ZERETH_MORTIS },
+					{ 34.52, 49.69, ZERETH_MORTIS },
+					{ 35.15, 49.02, ZERETH_MORTIS },
+					{ 35.97, 46.22, ZERETH_MORTIS },
+					{ 43.22, 84.88, ZERETH_MORTIS },
+					{ 46.69, 63.00, ZERETH_MORTIS },
+					{ 48.14, 73.55, ZERETH_MORTIS },
+					{ 49.18, 71.53, ZERETH_MORTIS },
+					{ 50.80, 70.81, ZERETH_MORTIS },
+					{ 52.43, 73.64, ZERETH_MORTIS },
+					{ 53.60, 72.60, ZERETH_MORTIS },
+					{ 53.83, 64.88, ZERETH_MORTIS },
+					{ 55.19, 76.85, ZERETH_MORTIS },
+					{ 55.98, 68.78, ZERETH_MORTIS },
+					{ 60.84, 75.94, ZERETH_MORTIS },
+					{ 61.07, 65.15, ZERETH_MORTIS },
 				},
 				["g"] = {
 					i(190239),	-- Lost Ovoid
@@ -705,6 +724,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				},
 				["g"] = {
 					i(190740),	-- Automa Integration
+					i(190739),	-- Provis Wax
 				},
 			}),
 		}),

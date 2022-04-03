@@ -78,6 +78,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(136969, {	-- Tome of Hex: Spider
 						["spellID"] = 211004,	-- Hex(Spider)
 						["classes"] = { SHAMAN },
+						["f"] = RECIPES,
 					}),
 					i(134472),	-- Arcane Exterminator's Shoulderguards
 					i(134410),	-- Cloak of Mana-Spun Silk
@@ -158,6 +159,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(136969, {	-- Tome of Hex: Spider
 						["spellID"] = 211004,	-- Hex(Spider)
 						["classes"] = { SHAMAN },
+						["f"] = RECIPES,
 					}),
 					i(134472),	-- Arcane Exterminator's Shoulderguards
 					i(134410),	-- Cloak of Mana-Spun Silk

@@ -2418,6 +2418,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(131741),	-- Ashbringer
 				i(131742),	-- Ashbringer
 				i(122747),	-- Ashbringer
+				i(129738),	-- Verus
 				i(129735),	-- Verus
 				i(129736),	-- Verus
 				i(129737),	-- Verus

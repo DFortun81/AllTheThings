@@ -29,10 +29,263 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 				ach(15416),	-- Domination's Grasp
 				ach(15418),	-- The Grand Design
 			}),
+			n(COMMON_BOSS_DROPS, {
+				["crs"] = {
+					180773,	-- Vigilant Guardian
+					184522,	-- Vigilant Custodian
+					181395,	-- Skolex
+					183501, -- Artificer Xy'mox
+					184006,	-- Xy Reinforcer
+					184005,	-- Xy Reinforcer
+					184007,	-- Xy Reinforcer
+					181224,	-- Dausegne
+					181551,	-- Prototype of Duty
+					181549,	-- Prototype of War
+					181546,	-- Prototype of Renewal
+					181548,	-- Prototype of Absolution
+					182169,	-- Lihuvium
+					180906,	-- Halondrus the Reclaimer
+					181954,	-- Anduin Wrynn
+					181398,	-- Mal'Ganis <The Eternal>
+					181399,	-- Kin'tessa <The Beguiler>
+					182777,	-- Rygelon
+					185421,	-- Zovaal <The Jailer>
+				},
+				["g"] = {
+					i(187806, {	-- Vantus Rune Technique: Sepulcher of the First Ones (RECIPE!)
+						["recipeID"] = 359890,	-- Vantus Rune: Sepulcher of the First Ones
+						["requireSkill"] = INSCRIPTION,
+					}),
+				},
+			}),
+			n(CONDUITS, {
+				e(2458, {	-- Vigilant Guardian
+					["crs"] = {
+						180773,	-- Vigilant Guardian
+						184522,	-- Vigilant Custodian
+					},
+					["g"] = {
+						i(183402),	-- Bloodletting
+						i(182126),	-- High Voltage
+						i(181734),	-- Magi's Brand
+						i(183505),	-- Maim, Mangle
+						i(180944),	-- Merciless Bonegrinder
+						i(182622),	-- Resplendent Light
+						i(182736),	-- Rolling Agony
+						i(181843),	-- Shining Radiance
+						i(183479),	-- Umbral Intensity
+						i(181742),	-- Walk with the Ox
+					},
+				}),
+				e(2465, {	-- Skolex, the Insatiable Ravener
+					["crs"] = { 181395 },	-- Skolex
+					["g"] = {
+						i(181838),	-- Charitable Soul
+						i(182110),	-- Crippling Hex
+						i(182383),	-- Dancing with Fate
+						i(181980),	-- Embrace Death
+						i(181508),	-- Fortifying Ingredients
+						i(182336),	-- Golden Path
+						i(181469),	-- Indelible Victory
+						i(183502),	-- Prepared for All
+						i(182466),	-- Shade of Terror
+						i(183167),	-- Strength of the Pack
+						i(183484),	-- Unchecked Aggression
+					},
+				}),
+				e(2470, {	-- Artificer Xy'mox
+					["crs"] = {
+						183501, -- Artificer Xy'mox
+						184006,	-- Xy Reinforcer
+						184005,	-- Xy Reinforcer
+						184007,	-- Xy Reinforcer
+					},
+					["g"] = {
+						i(182128),	-- Call of Flame
+						i(180935),	-- Crash the Ramparts
+						i(182667),	-- Focused Light
+						i(182743),	-- Focused Malignancy
+						i(181756),	-- Incantation of Swiftness
+						i(183506),	-- Lethal Poisons
+						i(181844),	-- Pain Transformation
+						i(182469),	-- Rejuvenating Wind
+						i(181836),	-- Spirit Drain
+						i(183488),	-- Unstoppable Growth
+					},
+				}),
+				e(2459, {	-- Dausegne, the Fallen Oracle
+					["crs"] = { 181224 },	-- Dausegne
+					["g"] = {
+						i(183510),	-- Count the Odds
+						i(181942),	-- Focused Mending
+						i(181504),	-- Infernal Cascade
+						i(181495),	-- Jade Bond
+						i(182677),	-- Punish the Guilty
+						i(182648),	-- Sharpshooter's Focus
+						i(182471),	-- Soul Furnace
+						i(182751),	-- Tyrant's Soul
+						i(182134),	-- Unruly Winds
+						i(181776),	-- Vicious Contempt
+						i(181866),	-- Withering Plague
+					},
+				}),
+				e(2460, {	-- Prototype Pantheon
+					["crs"] = {
+						181551,	-- Prototype of Duty
+						181549,	-- Prototype of War
+						181546,	-- Prototype of Renewal
+						181548,	-- Prototype of Absolution
+					},
+					["g"] = {
+						i(181770),	-- Bone Marrow Hops
+						i(182706),	-- Brooding Pool
+						i(182292),	-- Brutal Grasp
+						i(182962),	-- Catastrophic Origin
+						i(183473),	-- Conflux of Elements
+						i(181974),	-- Courageous Ascension
+						i(183471),	-- Deep Allegiance
+						i(182651),	-- Destructive Reverberations
+						i(181539),	-- Discipline of the Grove
+						i(182345),	-- Elysian Dirge
+						i(182331),	-- Empowered Release
+						i(183474),	-- Endless Thirst
+						i(182321),	-- Enfeebled Mark
+						i(182347),	-- Essential Extraction
+						i(183472),	-- Evolved Swarm
+						i(182129),	-- Fae Fermata
+						i(182961),	-- Fatal Decimation
+						i(181981),	-- Festering Transfusion
+						i(181553),	-- Gift of the Lich
+						i(182777),	-- Hallowed Discernment
+						i(182463),	-- Harrowing Punishment
+						i(181774),	-- Imbued Reflections
+						i(182288),	-- Impenetrable Gloom
+						i(182685),	-- Increased Scrutiny
+						i(181600),	-- Ire of the Ascended
+						i(183495),	-- Lashing Scars
+						i(182348),	-- Lavish Harvest
+						i(182339),	-- Necrotic Barrage
+						i(182440),	-- Piercing Verdict
+						i(182295),	-- Proliferation
+						i(182646),	-- Repeat Decree
+						i(183492),	-- Reverberation
+						i(182770),	-- Righteous Might
+						i(182778),	-- Ringing Clarity
+						i(183494),	-- Septic Shock
+						i(182130),	-- Shattered Perceptions
+						i(181639),	-- Siphoned Malice
+						i(182964),	-- Soul Eater
+						i(182960),	-- Soul Tithe
+						i(182335),	-- Spirit Attunement
+						i(181759),	-- Strike with Clarity
+						i(183493),	-- Sudden Fractures
+						i(182767),	-- The Long Summer
+						i(182346),	-- Tumbling Waves
+						i(183463),	-- Unnatural Malice
+						i(182442),	-- Veteran's Respite
+						i(181775),	-- Way of the Fae
+						i(183199),	-- Withering Ground
+					},
+				}),
+				e(2461, {	-- Lihuvim, Principal Architect
+					["crs"] = { 182169 },	-- Lihuvium
+					["g"] = {
+						i(182755),	-- Ashen Remains
+						i(181435),	-- Calculated Strikes
+						i(182140),	-- Dissonant Echoes
+						i(181982),	-- Everfrost
+						i(181455),	-- Icy Propulsion
+						i(183512),	-- Planned Execution
+						i(182624),	-- Show of Force
+						i(183482),	-- Sudden Ambush
+						i(182143),	-- Swirling Currents
+						i(182608),	-- Virtuous Command
+					},
+				}),
+				e(2463, {	-- Halondrus the Reclaimer
+					["crs"] = { 180906 },	-- Halondrus the Reclaimer
+					["g"] = {
+						i(182748),	-- Borne of Blood
+						i(181712),	-- Depths of Insanity
+						i(183478),	-- Fury of the Skies
+						i(182137),	-- Magma Fist
+						i(182187),	-- Meat Shield
+						i(181511),	-- Nether Precision
+						i(182621),	-- One With the Beast
+						i(182325),	-- Ravenous Consumption
+						i(181944),	-- Resonant Words
+						i(181700),	-- Scalding Brew
+						i(183507),	-- Triple Threat
+					},
+				}),
+				e(2469, {	-- Anduin Wrynn
+					["crs"] = { 181954 },	-- Anduin Wrynn
+					["g"] = {
+						i(181848),	-- Accelerated Cold
+						i(182769),	-- Combusting Engine
+						i(183197),	-- Controlled Destruction
+						i(182142),	-- Embrace of Earth
+						i(180932),	-- Fueled by Violence
+						i(181737),	-- Nourishing Chi
+						i(183514),	-- Perforated Veins
+						i(182686),	-- Powerful Precision
+						i(183480),	-- Taste for Blood
+						i(182681),	-- Vengeful Shock
+					},
+				}),
+				e(2457, {	-- Lords of Dread
+					["crs"] = {
+						181398,	-- Mal'Ganis <The Eternal>
+						181399,	-- Kin'tessa <The Beguiler>
+					},
+					["g"] = {
+						i(181462),	-- Coordinated Offensive
+						i(182598),	-- Demon Muzzle
+						i(181786),	-- Eternal Hunger
+						i(181461),	-- Ice Bite
+						i(181962),	-- Mental Recovery
+						i(183485),	-- Savage Combatant
+						i(183184),	-- Stinging Strike
+						i(182109),	-- Totemic Surge
+						i(182465),	-- Truth's Wake
+					},
+				}),
+				e(2467, {	-- Rygelon
+					["crs"] = { 182777 },	-- Rygelon
+					["g"] = {
+						i(183468),	-- Born Anew
+						i(180943),	-- Cacophonous Roar
+						i(182461),	-- Echoing Blessings
+						i(181498),	-- Grounding Surge
+						i(183497),	-- Recuperator
+						i(182368),	-- Relentless Onslaught
+					},
+				}),
+				e(2464, {	-- The Jailer
+					["crs"] = { 185421 },	-- Zovaal <The Jailer>
+					["g"] = {
+						i(181975),	-- Hardened Bones
+						i(182131),	-- Haunting Apparitions
+						i(181510),	-- Lingering Numbness
+						i(183491),	-- Ready for Anything
+						i(182449),	-- Resolute Barrier
+						i(182480),	-- Reversal of Fortune
+						i(182318),	-- Viscous Ink
+					},
+				}),
+			}),
 			n(FLIGHT_PATHS, {
-				fp(2712, {	-- Immortal Hearth
-					["name"] = "Immortal Hearth",
-					["cr"] = 182431,	-- Ancient Translocator
+				fp(2715, {	-- Ephemeral Plains Alpha
+					["name"] = "Ephemeral Plains Alpha",
+					["cr"] = 182522,	-- Ancient Translocator
+				}),
+				fp(2716, {	-- Ephemeral Plains Omega
+					["name"] = "Ephemeral Plains Omega",
+					["cr"] = 182544,	-- Ancient Translocator
+				}),
+				fp(2731, {	-- Domination's Grasp
+					["name"] = "Domination's Grasp",
+					["cr"] = 184354,	-- Ancient Translocator
 				}),
 				fp(2713, {	-- Genesis Cradle Alpha
 					["name"] = "Genesis Cradle Alpha",
@@ -40,14 +293,21 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 				}),
 				fp(2714, {	-- Genesis Cradle Beta
 					["name"] = "Genesis Cradle Beta",
+					["cr"] = 185200,	-- Ancient Translocator
+				}),
+				fp(2757, {	-- Genesis Cradle Omega
+					["name"] = "Genesis Cradle Omega",
 					["cr"] = 182489,	-- Ancient Translocator
 				}),
-				fp(2715, {	-- Ephemeral Plains Alpha
-					["name"] = "Ephemeral Plains Alpha",
-					["cr"] = 182522,	-- Ancient Translocator
+				fp(2712, {	-- Immortal Hearth
+					["name"] = "Immortal Hearth",
+					["cr"] = 182431,	-- Ancient Translocator
 				}),
 			}),
-			n(RARES, {
+			n(SPECIAL, {
+				i(189167, {	-- Glimmer of Satisfaction
+					["description"] = "Eating a feast inside the raid have chance to spawn this item in your inventory.",
+				}),
 				n(185032, {	-- Taskmaster Xy'pro <Cartel Xy>
 					["description"] = "Killed when having 3 stacks of Synergy",
 					--["coord"] = { X, Y, MAP },
@@ -56,16 +316,12 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					},
 				}),
 			}),
-			n(SPECIAL, {
-				i(189167, {	-- Glimmer of Satisfaction
-					["description"] = "Eating a feast inside the raid have chance to spawn this item in your inventory.",
-				}),
-			}),
 			n(TREASURES, {
 				o(375893, {	-- High Value Cache
 					["description"] = "When Taskmaster Xy'pro has 3 stacks of Synergy, which he gets from being nearby other mobs, he gets another buff called Security Override which says he will drop the Security Override Orb.",
 					--["coord"] = { X, Y, MAP },
-					["cost"] = { { "i", 190727, 1 } },	-- 1xSecurity Override Orb
+					["questID"] = 66285,
+					["cost"] = { { "i", 190727, 1 } },	-- 1 Security Override Orb
 					["g"] = {
 						i(189175),	-- Mawforged Bridle
 						i(189991),	-- Snail Soul
@@ -79,7 +335,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					},
 				}),
 				o(375907, {	-- Protoform Schematic
-					["description"] = "Needs to defeat Halondrus.",
+					["description"] = "Located on the North side of the 2nd encounter area after defeating Halondrus.",
 					--["coord"] = { X, Y, MAP },
 					["g"] = {
 						i(189476),	-- Schematic: Curious Crystalsniffer
@@ -90,10 +346,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 				i(188957),	-- Genesis Mote
 				i(189157),	-- Glimmer of Animation
 				i(189176),	-- Protoform Sentience Crown
-				i(187806, {	-- Vantus Rune Technique: Sepulcher of the First Ones (RECIPE!)
-					["recipeID"] = 359890,	-- Vantus Rune: Sepulcher of the First Ones
-					["requireSkill"] = INSCRIPTION,
-				}),
 			}),
 			d(17, {	-- LFR
 				n(ZONE_DROPS, {
@@ -177,7 +429,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 							},
 						}),
 						e(2463, {	-- Halondrus the Reclaimer
-							["crs"] = { 184915 },	-- Halondrus the Reclaimer
+							["crs"] = { 180906 },	-- Halondrus the Reclaimer
 							["g"] = {
 								crit(7, {	-- Halondrus the Reclaimer
 									["achievementID"] = 15417,	-- Sepulcher of the First Ones
@@ -279,6 +531,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 								i(188269),	-- Pocket Protoforge
 								i(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
 								i(189178),	-- Tools of Incomprehensible Experimentation (PS)
+								i(188957),	-- Genesis Mote
 								-- Tier
 								i(191014, {	-- Dreadful Hand Module
 									i(188863),	-- Gauntlets of the First Eidolon
@@ -308,7 +561,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					["collectible"] = false,
 					["g"] = {
 						e(2469, {	-- Anduin Wrynn
-							["crs"] = { 184232 },	-- Anduin Wrynn
+							["crs"] = { 181954 },	-- Anduin Wrynn
 							["g"] = {
 								crit(8, {	-- Anduin Wrynn
 									["achievementID"] = 15417,	-- Sepulcher of the First Ones
@@ -347,7 +600,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						e(2457, {	-- Lords of Dread
 							["crs"] = {
 								181398,	-- Mal'Ganis <The Eternal>
-								181334,	-- Kin'tessa
+								181399,	-- Kin'tessa <The Beguiler>
 							},
 							["g"] = {
 								crit(9, {	-- Lords of Dread
@@ -602,6 +855,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(188269),	-- Pocket Protoforge
 						i(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
 						i(189178),	-- Tools of Incomprehensible Experimentation (PS)
+						i(188957),	-- Genesis Mote
 						-- Tier
 						i(191014, {	-- Dreadful Hand Module
 							i(188863),	-- Gauntlets of the First Eidolon
@@ -626,7 +880,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					},
 				}),
 				e(2463, {	-- Halondrus the Reclaimer
-					["crs"] = { 184915 },	-- Halondrus the Reclaimer
+					["crs"] = { 180906 },	-- Halondrus the Reclaimer
 					["g"] = {
 						crit(7, {	-- Halondrus the Reclaimer
 							["achievementID"] = 15417,	-- Sepulcher of the First Ones
@@ -664,7 +918,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					},
 				}),
 				e(2469, {	-- Anduin Wrynn
-					["crs"] = { 184232 },	-- Anduin Wrynn
+					["crs"] = { 181954 },	-- Anduin Wrynn
 					["g"] = {
 						crit(8, {	-- Anduin Wrynn
 							["achievementID"] = 15417,	-- Sepulcher of the First Ones
@@ -705,7 +959,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 				e(2457, {	-- Lords of Dread
 					["crs"] = {
 						181398,	-- Mal'Ganis <The Eternal>
-						181334,	-- Kin'tessa
+						181399,	-- Kin'tessa <The Beguiler>
 					},
 					["g"] = {
 						crit(9, {	-- Lords of Dread
@@ -956,6 +1210,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(188269),	-- Pocket Protoforge
 						i(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
 						i(189178),	-- Tools of Incomprehensible Experimentation (PS)
+						i(188957),	-- Genesis Mote
 						-- Tier
 						i(191014, {	-- Dreadful Hand Module
 							i(188863),	-- Gauntlets of the First Eidolon
@@ -980,7 +1235,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					},
 				}),
 				e(2463, {	-- Halondrus the Reclaimer
-					["crs"] = { 184915 },	-- Halondrus the Reclaimer
+					["crs"] = { 180906 },	-- Halondrus the Reclaimer
 					["g"] = {
 						crit(7, {	-- Halondrus the Reclaimer
 							["achievementID"] = 15478,	-- Heroic: Sepulcher of the First Ones
@@ -1017,7 +1272,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					},
 				}),
 				e(2469, {	-- Anduin Wrynn
-					["crs"] = { 184232 },	-- Anduin Wrynn
+					["crs"] = { 181954 },	-- Anduin Wrynn
 					["g"] = {
 						crit(8, {	-- Anduin Wrynn
 							["achievementID"] = 15478,	-- Heroic: Sepulcher of the First Ones
@@ -1058,7 +1313,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 				e(2457, {	-- Lords of Dread
 					["crs"] = {
 						181398,	-- Mal'Ganis <The Eternal>
-						181334,	-- Kin'tessa
+						181399,	-- Kin'tessa <The Beguiler>
 					},
 					["g"] = {
 						crit(9, {	-- Lords of Dread
@@ -1291,6 +1546,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(188269),	-- Pocket Protoforge
 						i(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
 						i(189178),	-- Tools of Incomprehensible Experimentation (PS)
+						i(188957),	-- Genesis Mote
 						-- Tier
 						i(191014, {	-- Dreadful Hand Module
 							i(188863),	-- Gauntlets of the First Eidolon
@@ -1315,7 +1571,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					},
 				}),
 				e(2463, {	-- Halondrus the Reclaimer
-					["crs"] = { 184915 },	-- Halondrus the Reclaimer
+					["crs"] = { 180906 },	-- Halondrus the Reclaimer
 					["g"] = {
 						ach(15485),	-- Mythic: Halondrus
 						i(188264),	-- Earthbreaker's Impact
@@ -1350,7 +1606,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					},
 				}),
 				e(2469, {	-- Anduin Wrynn
-					["crs"] = { 184232 },	-- Anduin Wrynn
+					["crs"] = { 181954 },	-- Anduin Wrynn
 					["g"] = {
 						ach(15486),	-- Mythic: Anduin Wrynn
 						i(189835),	-- Anduin's Princely Vestments
@@ -1389,7 +1645,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 				e(2457, {	-- Lords of Dread
 					["crs"] = {
 						181398,	-- Mal'Ganis <The Eternal>
-						181334,	-- Kin'tessa
+						181399,	-- Kin'tessa <The Beguiler>
 					},
 					["g"] = {
 						ach(15487),	-- Mythic: Lords of Dread
@@ -1540,6 +1796,11 @@ root("HiddenQuestTriggers", {
 			q(65828),	-- Killing Rygelon
 			q(65829),	-- Killing Rygelon
 			q(65975),	-- Killing Rygelon
+			q(65986),	-- Triggered when killing Trash: Kelmortos
+			q(65987),	-- Triggered when killing Trash: Kelmortos
+			-- q( ),	-- Killing The Jailer
+			-- q( ),	-- Killing The Jailer
+			-- q( ),	-- Killing The Jailer
 		}),
 	}),
 });

@@ -17,7 +17,7 @@ root("Holidays", d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
 				["maps"] = { NORTHREND_DALARAN },
 				["g"] = {
 					-- Mounts / Pets / Toys
-					i(129922, {	-- Bridle of the Ironbound Wraithcharger (MOUNT!)
+					i(129922, {	-- Ironbound Wraithcharger (MOUNT!)
 						["cost"] = { { "c", 1166, 5000 }, },	-- 5,000x Timewarped Badge
 					}),
 					i(129965, {	-- Grizzlesnout's Fang (TOY!)

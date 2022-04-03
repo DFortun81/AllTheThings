@@ -34,7 +34,16 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		-- #endif
 		["lvl"] = lvlsquish(70, 30, 68),	-- The attunement quests were originally level 70 required, but once removed, level 68s could zone in. TODO: Check this.
 		["groups"] = {
-			ach(960),	-- The Violet Eye
+			n(ACHIEVEMENTS, {
+				removeclassicphase(ach(960, {	-- The Violet Eye
+					-- #if BEFORE 3.0.1
+					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
+					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
+					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 967); end]],
+					["description"] = "Raise your reputation with The Violet Eye to Exalted.",
+					-- #endif
+				})),
+			}),
 			n(FACTIONS, {
 				faction(967),	-- The Violet Eye
 			}),
@@ -641,6 +650,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						i(22535, {	-- Formula: Enchant Ring - Striking
 							-- #if AFTER BFA
 							["description"] = "This grey item is now needed for the second half of the secret involving the battle pet Baa'l.",
+							["f"] = MISC,
 							-- #endif
 						}),
 					},
@@ -704,19 +714,10 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						["filterID"] = MOUNTS,
 						-- #if BEFORE WRATH
 						["description"] = "Obtain the Fiery Warhorse's Reins from Attumen the Huntsman in Karazhan.",
-						["OnUpdate"] = [[function(t)
-							local collected = false;
-							for i,provider in ipairs(t.providers) do
-								if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
-									collected = true;
-									break;
-								end
-							end
-							t.SetAchievementCollected(t.achievementID, collected);
-						end]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 						-- #endif
 					})),
-					i(30480),	-- Fiery Warhorse's Reins (MOUNT!)
+					i(30480),	-- Fiery Warhorse (MOUNT!)
 					i(28504),	-- Steelhawk Crossbow
 					i(28509),	-- Worgen Claw Necklace
 					i(28453),	-- Bracers of the White Stag
@@ -1008,7 +1009,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					removeclassicphase(ach(690, {	-- Karazhan
 						-- #if BEFORE 3.0.1
 						["sourceQuest"] = 9844,	-- A Demonic Presence
-						["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(9844)); end]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					})),
 					i(97550, {	-- Netherspace Portal Stone (PET!)

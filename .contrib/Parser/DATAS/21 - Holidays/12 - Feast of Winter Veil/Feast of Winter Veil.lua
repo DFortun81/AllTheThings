@@ -54,6 +54,8 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 	-- #else
 	["holidayID"] = 235485,
 	-- #endif
+	["description"] = "Start: 12/16 at 10:00 AM\nEnd: 01/02 at 6:00 AM",
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. FEAST_OF_WINTER_VEIL .. [[, 12, 16, 1, 2); end]],
 	["groups"] = {
 		n(ACHIEVEMENTS, {
 			ach(1691, {	-- Merrymaker
@@ -203,9 +205,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["provider"] = { "i", 34425 },	-- Clockwork Rocket Bot
 				["timeline"] = { "added 2.3.0.7561" },
 				-- #if BEFORE WRATH
-				["OnUpdate"] = [[function(t)
-					t.SetAchievementCollected(t.achievementID, GetItemCount(34425, true) > 0);
-				end]],
+				["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 				-- #endif
 			})),
 			ach(1706, {	-- Crashin' Thrashin' Racer (2008)
@@ -348,7 +348,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					SHADOWFANG_KEEP_LEVEL7,
 					-- #endif
 					-- #if AFTER WRATH
-					142, 143, 144, 145, 146,	-- The Oculus
+					THE_OCULUS, 143, 144, 145, 146,	-- The Oculus
 					-- #else
 					BLACKROCK_SPIRE,
 					DIRE_MAUL,
@@ -413,7 +413,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					-- #endif
 					-- #if AFTER WOD
 					573,	-- Bloodmaul Slag Mines
-					BLACKROCK_SPIRE, 617, 618,	-- Upper Blackrock Spire
+					UPPER_BLACKROCK_SPIRE_WOD, 617, 618,	-- Upper Blackrock Spire
 					596, 597, 598, 599, 600,	-- Blackrock Foundry
 					661, 662, 663, 664, 665, 666, 667, 668, 669, 670,	-- Hellfire Citadel
 					-- #endif
@@ -1883,7 +1883,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 							-- #endif
 							FROZEN_ARMS_OF_A_HERO,
 							MEDALLION_OF_THE_LEGION,
-							i(128671, {	-- Minion of Grumpus
+							i(128671, {	-- Minion of Grumpus (MOUNT!)
 								["timeline"] = { "added 6.2.2.20395" },
 							}),
 						},

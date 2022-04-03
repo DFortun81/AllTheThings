@@ -117,6 +117,7 @@ _.Zones =
 						["qg"] = 20604,	-- Dugiru <Alliance Cloth Quartermaster>
 						["sourceQuest"] = 10357,	-- A Donation of Runecloth
 						["cost"] = { { "i", 14047, 20 } },	-- Runecloth
+						["maxReputation"] = { 930, EXALTED },	-- Exodar, Exalted.
 						["coord"] = { 63.5, 67.7, THE_EXODAR },
 						["timeline"] = { "removed 4.0.3.10000"},
 						["races"] = ALLIANCE_ONLY,
@@ -395,12 +396,12 @@ _.Zones =
 						["coord"] = { 81.5, 51.4, THE_EXODAR },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(29745),	-- Great Blue Elekk Mount
-							i(29746),	-- Great Green Elekk Mount
-							i(29747),	-- Great Purple Elekk Mount
-							i(28481),	-- Brown Elekk
-							i(29743),	-- Purple Elekk
-							i(29744),	-- Gray Elekk
+							i(29745),	-- Great Blue Elekk (MOUNT!)
+							i(29746),	-- Great Green Elekk (MOUNT!)
+							i(29747),	-- Great Purple Elekk (MOUNT!)
+							i(28481),	-- Brown Elekk (MOUNT!)
+							i(29743),	-- Purple Elekk (MOUNT!)
+							i(29744),	-- Gray Elekk (MOUNT!)
 						},
 					}),
 				}),

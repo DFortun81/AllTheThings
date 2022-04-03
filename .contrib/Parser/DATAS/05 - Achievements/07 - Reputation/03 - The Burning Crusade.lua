@@ -6,7 +6,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 	achcat(ACHIEVEMENT_CATEGORY_THE_BURNING_CRUSADE_REP, {
 		ach(896),		-- A Quest a  Day Keeps the Ogres at Bay
 		ach(893, {		-- Cenarion War Hippogryph
-			i(33999),		-- Cenarion War Hippogryph
+			i(33999),		-- Cenarion War Hippogryph (MOUNT!)
 		}),
 		ach(902),		-- Chief Exalted Officer
 		ach(894),		-- Flying High Over Skettis

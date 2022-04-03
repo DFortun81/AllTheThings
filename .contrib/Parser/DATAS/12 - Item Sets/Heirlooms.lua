@@ -4,8 +4,8 @@
 
 root("GearSets", n(HEIRLOOMS, {
 	filter(MOUNTS, {
-		i(120968),	-- Chauffeured Chopper
-		i(122703),	-- Chauffeured Chopper
+		i(120968),	-- Summon Chauffeur (MOUNT!)
+		i(122703),	-- Summon Chauffeur (MOUNT!)
 	}),
 	n(WEAPONS, {
 		un(REMOVED_FROM_GAME, i(42944)),	-- Balanced Heartseeker
@@ -447,20 +447,32 @@ root("GearSets", n(HEIRLOOMS, {
 }));
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(HEIRLOOMS, {
-		i(62035),	-- Antique Myrmidon's Signet
-		i(62036),	-- Ornate Band of Accuria
-		i(62037),	-- Gleaming seal of the archmagus
-		i(69891),	-- Burnished Dark Iron Ring
-		i(183150),	-- Heirloom Trinket
-		i(183160),	-- Heirloom Trinket
-		i(183149),	-- Heirloom Ring
-		i(183159),	-- Heirloom Ring
-		i(183148),	-- Heirloom Necklace
-		i(183143),	-- Heirloom Chestpiece
-		i(183144),	-- Heirloom Helm
-		i(183145),	-- Heirloom Shoulders
-		i(183147),	-- Heirloom Legs
-		i(183146),	-- Heirloom Cloak
+	tier(CATA_TIER, {
+		n(HEIRLOOMS, {
+			tier(CATA_TIER, 0.3, {
+				i(62035),	-- Antique Myrmidon's Signet
+				i(62036),	-- Ornate Band of Accuria
+				i(62037),	-- Gleaming seal of the archmagus
+			}),
+			tier(CATA_TIER, 1.0, {
+				i(69891),	-- Burnished Dark Iron Ring
+			}),
+		}),
+	}),
+	tier(SL_TIER, {
+		n(HEIRLOOMS, {
+			tier(SL_TIER, 0.1, {
+				i(183143),	-- Heirloom Chestpiece
+				i(183146),	-- Heirloom Cloak
+				i(183144),	-- Heirloom Helm
+				i(183147),	-- Heirloom Legs
+				i(183148),	-- Heirloom Necklace
+				i(183149),	-- Heirloom Ring
+				i(183159),	-- Heirloom Ring
+				i(183145),	-- Heirloom Shoulders
+				i(183150),	-- Heirloom Trinket
+				i(183160),	-- Heirloom Trinket
+			}),
+		}),
 	}),
 }));

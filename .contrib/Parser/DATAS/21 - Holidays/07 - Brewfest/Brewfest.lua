@@ -134,11 +134,17 @@ local BREWFEST_VENDOR_OnTooltip = [[function(t)
 	end
 end]];
 
-_.Holidays = { applyholiday(BREWFEST, {
+root("Holidays", applyholiday(BREWFEST, {
 	-- #if ANYCLASSIC
 	["npcID"] = -56,
 	-- #else
 	["holidayID"] = 235442,
+	-- #endif
+	["description"] = "Start: 09/20 at 10:00 AM\nEnd: 10/06 at 10:00 AM",
+	-- #if AFTER 3.0.0
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. BREWFEST .. [[, 9, 20, 10, 6); end]],
+	-- #else
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. BREWFEST .. [[, 9, 20, 10, 4); end]],
 	-- #endif
 	["groups"] = {
 		n(ACHIEVEMENTS, {
@@ -165,16 +171,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 				["timeline"] = { "added 2.0.1" },
 				-- #if BEFORE WRATH
 				["description"] = "Obtain an epic Brewfest mount.",
-				["OnUpdate"] = [[function(t)
-					local collected = false;
-					for i,provider in ipairs(t.providers) do
-						if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
-							collected = true;
-							break;
-						end
-					end
-					t.SetAchievementCollected(t.achievementID, collected);
-				end]],
+				["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 				-- #endif
 			})),
 			ach(1260),	-- Almost Blind Luck
@@ -182,9 +179,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 				["provider"] = { "i", 33016 },	-- Blue Brewfest Stein
 				["timeline"] = { "added 2.0.1", "removed 3.0.1" },
 				-- #if BEFORE WRATH
-				["OnUpdate"] = [[function(t)
-					t.SetAchievementCollected(t.achievementID, GetItemCount(33016, true) > 0);
-				end]],
+				["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 				-- #endif
 			})),
 			ach(2796, {	-- Brew of the Month
@@ -237,9 +232,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 				["provider"] = { "i", 32233 },	-- Wolpertinger's Tankard
 				["timeline"] = { "added 2.2.2" },
 				-- #if BEFORE WRATH
-				["OnUpdate"] = [[function(t)
-					t.SetAchievementCollected(t.achievementID, GetItemCount(32233, true) > 0);
-				end]],
+				["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 				-- #endif
 			})),
 			ach(1186, {	-- Down With The Dark Iron
@@ -249,9 +242,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 				["provider"] = { "i", 37892 },	-- Green Brewfest Stein
 				["timeline"] = { "added 3.0.1", "removed 4.0.1" },
 				-- #if BEFORE WRATH
-				["OnUpdate"] = [[function(t)
-					t.SetAchievementCollected(t.achievementID, GetItemCount(37892, true) > 0);
-				end]],
+				["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 				-- #endif
 			})),
 			removeclassicphase(ach(303, {	-- Have Keg, Will Travel
@@ -266,16 +257,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 				["timeline"] = { "added 2.0.1" },
 				-- #if BEFORE WRATH
 				["description"] = "Obtain a Brewfest mount, or transform yours into one using Brewfest Hops.",
-				["OnUpdate"] = [[function(t)
-					local collected = false;
-					for i,provider in ipairs(t.providers) do
-						if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
-							collected = true;
-							break;
-						end
-					end
-					t.SetAchievementCollected(t.achievementID, collected);
-				end]],
+				["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 				-- #endif
 			})),
 			ach(1184, {	-- Strange Brew (A)
@@ -372,9 +354,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 				["provider"] = { "i", 32912 },	-- Yellow Brewfest Stein
 				["timeline"] = { "added 2.0.1", "removed 2.4.3" },
 				-- #if BEFORE WRATH
-				["OnUpdate"] = [[function(t)
-					t.SetAchievementCollected(t.achievementID, GetItemCount(32912, true) > 0);
-				end]],
+				["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 				-- #endif
 			})),
 		}),
@@ -402,10 +382,10 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["timeline"] = { "added 6.0.1.18594" },
 					["lvl"] = 98,
 					["groups"] = appendGroups(BREWFEST_TOKEN, {
-						i(37828, {	-- Great Brewfest Kodo
+						i(37828, {	-- Great Brewfest Kodo (MOUNT!)
 							["timeline"] = { "added 2.0.1" },
 						}),
-						i(33977, {	-- Swift Brewfest Ram
+						i(33977, {	-- Swift Brewfest Ram (MOUNT!)
 							["timeline"] = { "added 2.0.1" },
 						}),
 						i(117378, {	-- Direbrew's Bloodied Shanker [Level 100+]
@@ -442,10 +422,10 @@ _.Holidays = { applyholiday(BREWFEST, {
 				i(54535, {	-- Keg-Shaped Treasure Chest
 					["timeline"] = { "added 3.0.1", "removed 6.0.1" },
 					["groups"] = {
-						i(37828, {	-- Great Brewfest Kodo
+						i(37828, {	-- Great Brewfest Kodo (MOUNT!)
 							["timeline"] = { "added 2.0.1" },
 						}),
-						i(33977, {	-- Swift Brewfest Ram
+						i(33977, {	-- Swift Brewfest Ram (MOUNT!)
 							["timeline"] = { "added 2.0.1" },
 						}),
 						i(107217, {	-- Direbrew's Bloodied Shanker [Level 90]
@@ -549,10 +529,10 @@ _.Holidays = { applyholiday(BREWFEST, {
 				}),
 				-- Burning Crusade
 				-- #if BEFORE 3.0.1
-				i(37828, {	-- Great Brewfest Kodo
+				i(37828, {	-- Great Brewfest Kodo (MOUNT!)
 					["timeline"] = { "added 2.0.1" },
 				}),
-				i(33977, {	-- Swift Brewfest Ram
+				i(33977, {	-- Swift Brewfest Ram (MOUNT!)
 					["timeline"] = { "added 2.0.1" },
 				}),
 				-- #endif
@@ -1975,11 +1955,11 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["timeline"] = { "added 2.2.2" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(33977, {	-- Swift Brewfest Ram
+						i(33977, {	-- Swift Brewfest Ram (MOUNT!)
 							["timeline"] = { "added 2.0.1" },
 							["cost"] = { { "g", 1000000 } },	-- 100g
 						}),
-						i(33976, {	-- Brewfest Ram
+						i(33976, {	-- Brewfest Ram (MOUNT!)
 							["timeline"] = { "added 2.0.1", "removed 2.4.3" },
 							["cost"] = { { "g", 100000 } },	-- 10g
 						}),
@@ -2098,11 +2078,11 @@ _.Holidays = { applyholiday(BREWFEST, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(33977, {	-- Swift Brewfest Ram
+						i(33977, {	-- Swift Brewfest Ram (MOUNT!)
 							["timeline"] = { "added 2.0.1" },
 							["cost"] = { { "g", 1000000 } },	-- 100g
 						}),
-						i(33976, {	-- Brewfest Ram
+						i(33976, {	-- Brewfest Ram (MOUNT!)
 							["timeline"] = { "added 2.0.1", "removed 2.4.3" },
 							["cost"] = { { "g", 100000 } },	-- 10g
 						}),
@@ -2169,7 +2149,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 			},
 		}),
 	},
-})};
+}));
 root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
 		q(37247, {	-- Angry Brewfest Letter - triggers when using "Angry Brewfest Letter" to cancel Brew of the Month subscription
@@ -2177,21 +2157,21 @@ root("HiddenQuestTriggers", {
 		}),
 	}),
 });
-_.NeverImplemented = { bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	-- #if ANYCLASSIC
 	["npcID"] = -56,
 	-- #else
 	["holidayID"] = 235442,
 	-- #endif
 	["groups"] = {
-		i(37827, { -- Brewfest Kodo
+		i(37827, { -- Brewfest Riding Kodo (MOUNT!)
 			["timeline"] = { "created 2.0.1" },
 		}),
 		i(167998, {	-- Dark Iron Tankard
 			["timeline"] = { "created 8.1.5.29701" },
 		}),
 	},
-})};
+}));
 
 --[[ TODO: Transfer these achievement criteria to the item on the actual vendor
 -- Alliance

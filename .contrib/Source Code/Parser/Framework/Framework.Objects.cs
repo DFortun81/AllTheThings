@@ -75,6 +75,7 @@ namespace ATT
             {
                 {  "recipeID" , new string[] { "u", "requireSkill" } },
                 {  "speciesID" , new string[] { "pb", "crs" } },
+                {  "instanceID" , new string[] { "isRaid" } },
             };
 
             /// <summary>
@@ -86,16 +87,6 @@ namespace ATT
             /// All of the SourceID's harvested for Legion Artifacts
             /// </summary>
             public static IDictionary<long, Dictionary<string, long>> ArtifactSources { get; } = new Dictionary<long, Dictionary<string, long>>();
-
-            /// <summary>
-            /// Whether the Parser is processing Source data as added by contributors (rather than an automated JSON DB)
-            /// </summary>
-            public static bool ProcessingSourceData = false;
-
-            /// <summary>
-            /// The set of Quests which the Parser has notified about being listed in multiple locations in Source
-            /// </summary>
-            public static HashSet<long> DuplicateSourceQuests = new HashSet<long>();
 
             #endregion
             #region Filters
@@ -690,9 +681,14 @@ namespace ATT
 
                 // Calculate the filter ID. (0 is invalid, -1 is explicitly ignored)
                 f = (long)CalculateFilter(data);
-                data["f"] = f;
-                //if (f == 0)
+
+                // This may happen a lot and is kind of expected... maybe re-designed in future
+                //if (DebugMode && f == 0)
                 //    Trace.WriteLine("Invalid filter for: " + MiniJSON.Json.Serialize(data));
+
+                // Don't set invalid filter values
+                if (f > 0)
+                    data["f"] = f;
             }
 
             /// <summary>
@@ -2186,9 +2182,14 @@ namespace ATT
                 // Find the Object Dictionary that matches the data.
                 Dictionary<string, object> entry = null;
 
-                // Merge in any global data if this is not the initial merge pass
+                // Merge in/out any global data if this is not the initial merge pass
                 // This way, pets/mounts/etc. have proper data existing when needing to merge into another group
-                if (!MergeItemData)
+                if (MergeItemData)
+                {
+                    Items.Merge(data2);
+                    Merge(data2);
+                }
+                else
                 {
                     Items.MergeInto(data2);
                     MergeInto(data2);
@@ -2426,14 +2427,6 @@ namespace ATT
                                     }
                                 }
                             }
-                        }
-
-                        if (ProcessingSourceData && mostSignificantID == "questID")
-                        {
-                            // capture Raw Quest listing which appear multiple times, ignore Quests tied to Items, or removed Quests (because it's chaos)
-                            long longId = Convert.ToInt64(id);
-                            if (AllQuests.ContainsKey(longId))
-                                DuplicateSourceQuests.Add(longId);
                         }
                     }
                 }

@@ -3,13 +3,23 @@
 --------------------------------------------
 
 root("Holidays", holiday(1671631, {	-- Trial of Style
-	i(151134, {	-- Trial of Style Token
-		i(188237),	-- Conjuror's Slippers
-		i(188249),	-- Freezing Footguards
-		i(188236),	-- Patroller's Footwear
-		i(188248),	-- Searing Stompers
-		i(188243),	-- Shadow-Stitched Stalkers
-		i(188244),	-- Virulent Gravetreaders
+	i(188237, {	-- Conjuror's Slippers
+		["cost"] = { { "i", 151134, 7 } },	-- Trial of Style Token x7
+	}),
+	i(188249, {	-- Freezing Footguards
+		["cost"] = { { "i", 151134, 15 } },	-- Trial of Style Token x15
+	}),
+	i(188236, {	-- Patroller's Footwear
+		["cost"] = { { "i", 151134, 7 } },	-- Trial of Style Token x7
+	}),
+	i(188248, {	-- Searing Stompers
+		["cost"] = { { "i", 151134, 15 } },	-- Trial of Style Token x15
+	}),
+	i(188243, {	-- Shadow-Stitched Stalkers
+		["cost"] = { { "i", 151134, 10 } },	-- Trial of Style Token x10
+	}),
+	i(188244, {	-- Virulent Gravetreaders
+		["cost"] = { { "i", 151134, 10 } },	-- Trial of Style Token x10
 	}),
 }));
 

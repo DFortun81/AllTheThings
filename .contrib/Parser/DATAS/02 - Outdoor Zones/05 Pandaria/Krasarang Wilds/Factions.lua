@@ -568,7 +568,7 @@ _.Zones =
 							}),
 							q(32448, {	-- Ties with the Past
 								["sourceQuests"] = { 32363 },	-- The Kun-Lai Expedition
-								["provider"] = { "n", 68267 },	-- Baine Bloodhoof
+								["provider"] = { "n", 68287 },	-- Baine Bloodhoof
 								["coord"] = { 60.3, 55.2, KUN_LAI_SUMMIT },
 								["races"] = HORDE_ONLY,
 							}),
@@ -1556,7 +1556,7 @@ _.Zones =
 									i(84660),	-- Pandaren Fishing Pole -- NOT MOGGABLE
 									i(85505),	-- Recipe: Krasarang Fritters
 									i(85502),	-- Recipe: Viseclaw Soup
-									i(81354, {	-- Reins of the Azure Water Strider (MOUNT!)
+									i(81354, {	-- Azure Water Strider (MOUNT!)
 										["cost"] = 9500000,	-- 950g
 									}),
 									i(88535, {	-- Sharpened Tuskarr Pole -- NOT MOGGABLE

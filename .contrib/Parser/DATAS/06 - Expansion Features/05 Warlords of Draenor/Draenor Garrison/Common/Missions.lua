@@ -428,7 +428,7 @@ _.ExpansionFeatures =
 						}),
 						i(118191),	-- Archmage Vargoth's Spare (TOY!)
 						i(128310),	-- Burning Blad (TOY!)
-						i(128311),	-- Coaalfist Gronnling
+						i(128311),	-- Coalfist Gronnling (MOUNT!)
 						i(127748),	-- Cinder Pup
 						i(128319, {	-- Void-Shrouded Satchel
 							i(128318),	-- Touch of the Void
@@ -542,7 +542,7 @@ _.ExpansionFeatures =
 							-- TODO: not sure on spawn requirements. WH comments only mention level 2 shipyard
 							-- ["description"] = "This rare mission has a chance to spawn after you build a level 2 Shipyard & completed the Quest Equipment Blueprint: Ghostly Spyglass, dropped from Captain Ironbeard in Tanaan Jungle.",
 							["g"] = {
-								i(116769),	-- Mudback Riverbeast
+								i(116769),	-- Mudback Riverbeast (MOUNT!)
 								a(crit(6, {	-- It's a Boat, It's a Plane, It's... Just a Riverbeast.
 									["achievementID"] = 10167,	-- Exploring the High Seas [A]
 								})),

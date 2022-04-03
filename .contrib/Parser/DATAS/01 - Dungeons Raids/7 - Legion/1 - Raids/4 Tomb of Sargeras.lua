@@ -189,7 +189,7 @@ root("Instances", { tier(LEGION_TIER, {
 						e(1861, {	-- Mistress Sassz'ine
 							["creatureID"] = 115767,	-- Mistress Sassz'ine
 							["g"] = {
-								i(143643),	-- Abyss Worm
+								i(143643),	-- Abyss Worm (MOUNT!)
 								i(147049),	-- Azure Squallshaper's Helm
 								i(146990),	-- Hundred-Fathom Veil
 								i(146985),	-- Shroud of the Drowned Adherent
@@ -596,7 +596,7 @@ root("Instances", { tier(LEGION_TIER, {
 					["creatureID"] = 115767,	-- Mistress Sassz'ine
 					["g"] = {
 						ach(11676),	-- Five Course Seafood Buffet
-						i(143643),	-- Abyss Worm
+						i(143643),	-- Abyss Worm (MOUNT!)
 						i(147049),	-- Azure Squallshaper's Helm
 						i(146990),	-- Hundred-Fathom Veil
 						i(146985),	-- Shroud of the Drowned Adherent
@@ -927,7 +927,7 @@ root("Instances", { tier(LEGION_TIER, {
 					["creatureID"] = 115767,	-- Mistress Sassz'ine
 					["g"] = {
 						ach(11676),	-- Five Course Seafood Buffet
-						i(143643),	-- Abyss Worm
+						i(143643),	-- Abyss Worm (MOUNT!)
 						i(147049),	-- Azure Squallshaper's Helm
 						i(146990),	-- Hundred-Fathom Veil
 						i(146985),	-- Shroud of the Drowned Adherent
@@ -1263,7 +1263,7 @@ root("Instances", { tier(LEGION_TIER, {
 					["g"] = {
 						ach(11776),	-- Mythic: Mistress Sassz'ine
 						ach(11676),	-- Five Course Seafood Buffet
-						i(143643),	-- Abyss Worm
+						i(143643),	-- Abyss Worm (MOUNT!)
 						i(147049),	-- Azure Squallshaper's Helm
 						i(146990),	-- Hundred-Fathom Veil
 						i(146985),	-- Shroud of the Drowned Adherent

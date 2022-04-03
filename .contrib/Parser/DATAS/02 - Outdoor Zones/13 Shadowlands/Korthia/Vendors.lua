@@ -120,7 +120,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 						["cost"] = { { "c", 1931, 2000 } },	-- 2,000x Catalogued Research
 					}),
 					i(184665, {	-- Chronicle of Lost Memories
-						["cost"] = { { "c", 1931, 2000 } },	-- 2,000x Catalogued Research
+						["cost"] = { { "c", 1931, 1500 } },	-- 1,500x Catalogued Research
 						["description"] = "|cFFfe040fYou will not receive a Covenant specific Legendary if you are not part of said Covenant.|r",
 						["_drop"] = { "customCollect" },	-- this is Covenant tagged in various other locations
 						["sym"] = {
@@ -138,6 +138,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["g"] = {
 					i(187077, {	-- Packaged Soul Ash
 						["cost"] = { { "c", 1828, 300 } },	-- 300x Soul Ash
+					}),
+					i(191031, {	-- Packaged Soul Cinders
+						["cost"] = { { "c", 1906, 300 } },	-- 300x Soul Cinders
+						["timeline"] = { "added 9.2.0" },
 					}),
 					i(187532, {	-- Soulfire Chisel
 						["cost"] = { { "c", 1767, 2500 } },	-- 2,500x Stygia

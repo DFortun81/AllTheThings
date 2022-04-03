@@ -29,7 +29,7 @@ root("Instances", tier(LEGION_TIER, {
 					["provider"] = { "i", 152900 },	-- Blood of the Unmaker
 					["timeline"] = { "added 7.3", "removed 8.0" },
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(152901)),	-- Kirin Tor Summoning Cystal (MOUNT!)
+						un(REMOVED_FROM_GAME, i(152901)),	-- Violet Spellwing (MOUNT!)
 					},
 				}),
 				q(49077, {	-- Moments of Reflection
@@ -541,7 +541,7 @@ root("Instances", tier(LEGION_TIER, {
 					i(153019),	-- Hulking Demolisher Legplates
 				}),
 				ach(11987, {	-- Glory of the Argus Raider (NORMAL+ ONLY)
-					i(152815),	-- Antoran Glooomhound
+					i(152815),	-- Antoran Glooomhound (MOUNT!)
 				}),
 				e(1992, {	-- Garothi Worldbreaker
 					["crs"] = { 122450 },	-- Garothi Worldbreaker
@@ -946,7 +946,7 @@ root("Instances", tier(LEGION_TIER, {
 					i(153019),	-- Hulking Demolisher Legplates
 				}),
 				ach(11987, {	-- Glory of the Argus Raider (NORMAL+ ONLY)
-					i(152815),	-- Antoran Glooomhound
+					i(152815),	-- Antoran Glooomhound (MOUNT!)
 				}),
 				e(1992, {	-- Garothi Worldbreaker
 					["crs"] = { 122450 },	-- Garothi Worldbreaker
@@ -1352,7 +1352,7 @@ root("Instances", tier(LEGION_TIER, {
 					i(153019),	-- Hulking Demolisher Legplates
 				}),
 				ach(11987, {	-- Glory of the Argus Raider (NORMAL+ ONLY)
-					i(152815),	-- Antoran Glooomhound
+					i(152815),	-- Antoran Glooomhound (MOUNT!)
 				}),
 				e(1992, {	-- Garothi Worldbreaker
 					["crs"] = { 122450 },	-- Garothi Worldbreaker

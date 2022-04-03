@@ -1155,6 +1155,7 @@ _.Zones =
 						i(168025, {	-- Book of Schematics: Ub3r-Spanner
 							["sourceQuests"] = { 53949 },	-- The Ub3r-Spanner
 							["spellID"] = 0,
+							["f"] = MISC,
 						}),
 					},
 				}),
@@ -2655,6 +2656,16 @@ _.Zones =
 								az(20, 4),	-- Life-Binder's Invocation (Rank 4)
 							},
 						}),
+						-- This Gear need symlink someday
+						i(174630),	-- Relinquished Azerite Spaulders
+						i(174631),	-- Relinquished Azerite Spaulders
+						i(174632),	-- Relinquished Azerite Spaulders
+						i(174633),	-- Relinquished Azerite Helm
+						i(174634),	-- Relinquished Azerite Helm
+						i(174635),	-- Relinquished Azerite Helm
+						i(174636),	-- Relinquished Azerite Chestpiece
+						i(174637),	-- Relinquished Azerite Chestpiece
+						i(174638),	-- Relinquished Azerite Chestpiece
 					},
 				}),
 				n(142691, {	-- Tricky Nick <Shady Vendor>
@@ -2767,6 +2778,12 @@ _.Zones =
 						i(161583, {	-- Warmage's Flame-Brimming Wristcords
 							["cost"] = 14000000,	-- 1,400g
 						}),
+					},
+				}),
+				n(130399, {	-- Zooey Inksprocket <Inscription Trainer>
+					["coord"] = { 73.4, 6.3, BORALUS },
+					["g"] = {
+						i(168026),	-- Recipe Book: Sanguine Feather Quill of Lana'thel
 					},
 				}),
 			}),

@@ -129,7 +129,7 @@ _.Craftables =
 		}),
 		prof(BLACKSMITHING, {
 			filter(MOUNTS, {
-				i(137686),	-- Steelbound Harness
+				i(137686),	-- Steelbound Devourer (MOUNT!)
 			}),
 			filter(54, {	-- Relics
 				i(136685),	-- Consecrated Spike

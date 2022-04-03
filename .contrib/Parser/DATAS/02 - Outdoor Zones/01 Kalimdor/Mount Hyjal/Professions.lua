@@ -13,6 +13,7 @@ _.Zones =
 							i(22739, {	-- Tome of Polymorph: Turtle
 								["spellID"] = 28271,	-- Polymorph (Turtle)
 								["classes"] = { MAGE },
+								["f"] = RECIPES,
 							}),
 						},
 					}),

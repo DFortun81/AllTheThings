@@ -656,15 +656,6 @@ _.Zones =
 						i(57287),	-- Gauntlets of Guerilla Fury
 					},
 				}),
-				q(45532, {	-- Mother's Orders
-					["lvl"] = 110,
-					["classes"] = { DRUID },
-					["sourceQuest"]	= 44869,	-- Talon Terror
-					["providers"] = {
-						{ "n", 115802 },	-- Thisalee Crow
-						{ "n", 119982 },	-- Druid of the Talon
-					},
-				}),
 				q(29162, {	-- Nature's Blessing
 					["provider"] = { "n", 52671 },	-- Mylune
 					["lvl"] = 85,

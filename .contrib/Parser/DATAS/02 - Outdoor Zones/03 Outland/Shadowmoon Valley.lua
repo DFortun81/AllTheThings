@@ -10,18 +10,17 @@ local OnTooltipForNetherwing = [[function(t)
 		GameTooltip:AddDoubleLine("Turn in Netherwing Eggs.", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
 	end
 end]];
-_.Zones =
-{
+root("Zones", {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(SHADOWMOON_VALLEY, {
 			["lore"] = "Shadowmoon Valley is a fel-infused zone intended for level 25-30 players in southeastern Outland. Illidan Stormrage resides there in the Black Temple, as well as Maiev Shadowsong, held captive there by the Broken. There are several elite areas that document the destruction of the Burning Legion, as well as Illidan's methods of training demon hunters.",
 			-- #if AFTER WRATH
-			["achievementID"] = 864,
+			["icon"] = "Interface\\Icons\\achievement_zone_shadowmoon",
 			-- #endif
 			["groups"] = {
-				-- #if AFTER WRATH
 				n(ACHIEVEMENTS, {
 					ach(9069, {	-- An Awfully Big Adventure
+						["timeline"] = { "added 6.0.2" },
 						["collectible"] = false,
 						["filterID"] = BATTLE_PETS,
 						["groups"] = {
@@ -31,7 +30,66 @@ _.Zones =
 							}),
 						},
 					}),
-					ach(1195, {		-- Shadow of the Betrayer
+					removeclassicphase(ach(864, {	-- Explore Shadowmoon Valley
+						-- #if BEFORE WRATH
+						["description"] = "Explore Shadowmoon Valley, revealing the covered areas of the world map.",
+						["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
+						-- #endif
+					})),
+					ach(898, applyclassicphase(TBC_PHASE_THREE_NETHERWING, {	-- On Wings of Nether
+						-- #if BEFORE 3.0.1
+						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
+						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
+						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1015); end]],
+						["description"] = "Raise your reputation with the Netherwing to Exalted.",
+						-- #endif
+					})),
+					removeclassicphase(ach(1195, {	-- Shadow of the Betrayer
+						-- #if ANYCLASSIC
+						-- #if AFTER CATA
+						["sourceQuests"] = {
+							-- Wildhammer Stronghold
+							10776,	-- Dissension Amongst the Ranks...
+							10678,	-- The Main Course!
+							10744,	-- News of Victory (A)
+							
+							-- Shadowmoon Village
+							10745,	-- News of Victory (H)
+							
+							-- Netherwing Ledge
+							11041,	-- A Job Unfinished...
+							
+							-- The First Death Knight (A)
+							10645,	-- Teron Gorefiend, I Am...
+							
+							-- The First Death Knight (H)
+							10639,	-- Teron Gorefiend, I Am...
+							
+							-- Borrowed Power
+							10651,	-- Varedis Must Be Stopped (Exarch Onaala, Altar of Sha'tar)
+							10692,	-- Varedis Must Be Stopped (Larissa Sunstrike, Sanctum of the Stars)
+							
+							-- Akama's Promise
+							10708,	-- Akama's Promise
+							
+							-- The Cipher of Damnation
+							10588,	-- The Cipher of Damnation
+							
+							-- Anti-Demon Weapons
+							10679,	-- Quenching the Blade
+							
+							-- The Dark Conclave
+							10808,	-- Thwart the Dark Conclave
+						},
+						-- #elseif BEFORE WRATH
+						["description"] = "Complete 90 quests in Shadowmoon Valley.",
+						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
+						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
+						["rank"] = 90,
+						-- #endif
+						-- #else
 						crit(1, {	-- Wildhammer Stronghold
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
@@ -76,9 +134,9 @@ _.Zones =
 						crit(8, {	-- The Dark Conclave
 							["sourceQuest"] = 10808,	-- Thwart the Dark Conclave
 						}),
-					}),
+						-- #endif
+					})),
 				}),
-				-- #endif
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
 					p(425, {	-- Ash Viper
@@ -633,6 +691,12 @@ _.Zones =
 						["sourceQuest"] = 11070,	-- Dragonmaw Race: Wing Commander Mulverick
 						["coord"] = { 65.5, 85.3, SHADOWMOON_VALLEY },
 						["groups"] = {
+							removeclassicphase(ach(1638, {	-- Skyshattered
+								-- #if BEFORE 3.0.1
+								["sourceQuest"] = 11071,	-- Dragonmaw Race: Captain Skyshatter
+								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
+								-- #endif
+							})),
 							i(32863),	-- Skybreaker Whip
 						},
 					})),
@@ -1817,7 +1881,7 @@ _.Zones =
 						["coord"] = { 69.8, 61.4, SHADOWMOON_VALLEY },
 						["_drop"] = { "races" },	-- stop this from being marked as horde only when it is not horde only
 						["altQuests"] = { 10866 },	-- Zuluhed the Whacked
-					}),	
+					}),
 					-- #endif
 					-- #if AFTER MOP
 					-- Crieve note: Thinking this is gonna move to a special section in events or something.
@@ -1951,13 +2015,13 @@ _.Zones =
 						["coord"] = { 37.6, 56.0, SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(25471),	-- Ebon Gryphon Mount
-							i(25470),	-- Golden Gryphon Mount
-							i(25472),	-- Snowy Gryphon Mount
-							i(25473),	-- Swift Blue Gryphon Mount
-							i(25528),	-- Swift Green Gryphon Mount
-							i(25529),	-- Swift Purple Gryphon Mount
-							i(25527),	-- Swift Red Gryphon Mount
+							i(25471),	-- Ebon Gryphon (MOUNT!)
+							i(25470),	-- Golden Gryphon (MOUNT!)
+							i(25472),	-- Snowy Gryphon (MOUNT!)
+							i(25473),	-- Swift Blue Gryphon (MOUNT!)
+							i(25528),	-- Swift Green Gryphon (MOUNT!)
+							i(25529),	-- Swift Purple Gryphon (MOUNT!)
+							i(25527),	-- Swift Red Gryphon (MOUNT!)
 						},
 					}),
 					n(19351, {	-- Daggle Ironshaper
@@ -1973,13 +2037,13 @@ _.Zones =
 						["coord"] = { 29.0, 29.4, SHADOWMOON_VALLEY },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(25475),	-- Blue Wind Rider Mount
-							i(25476),	-- Green Wind Rider Mount
-							i(25474),	-- Tawny Wind Rider Mount
-							i(25531),	-- Swift Green Wind Rider Mount
-							i(25533),	-- Swift Purple Wind Rider Mount
-							i(25477),	-- Swift Red Wind Rider Mount
-							i(25532),	-- Swift Yellow Wind Rider Mount
+							i(25475),	-- Blue Wind Rider (MOUNT!)
+							i(25476),	-- Green Wind Rider (MOUNT!)
+							i(25474),	-- Tawny Wind Rider (MOUNT!)
+							i(25531),	-- Swift Green Wind Rider (MOUNT!)
+							i(25533),	-- Swift Purple Wind Rider (MOUNT!)
+							i(25477),	-- Swift Red Wind Rider (MOUNT!)
+							i(25532),	-- Swift Yellow Wind Rider (MOUNT!)
 						},
 					}),
 					applyclassicphase(TBC_PHASE_THREE_NETHERWING, n(23489, {	-- Drake Dealer Hurlunk
@@ -1995,12 +2059,12 @@ _.Zones =
 						["minReputation"] = { 1015, EXALTED },	-- Netherwing, Exalted.
 						["description"] = "To access this vendor, you must reach Exalted with the Netherwing and claim one of the netherwing drakes in Shattrath.",
 						["groups"] = {
-							i(32858),	-- Reins of the Azure Netherwing Drake Mount
-							i(32859),	-- Reins of the Cobalt Netherwing Drake Mount
-							i(32857),	-- Reins of the Onyx Netherwing Drake Mount
-							i(32860),	-- Reins of the Purple Netherwing Drake Mount
-							i(32861),	-- Reins of the Veridian Netherwing Drake Mount
-							i(32862),	-- Reins of the Violet Netherwing Drake Mount
+							i(32858),	-- Azure Netherwing Drake (MOUNT!)
+							i(32859),	-- Cobalt Netherwing Drake (MOUNT!)
+							i(32857),	-- Onyx Netherwing Drake (MOUNT!)
+							i(32860),	-- Purple Netherwing Drake (MOUNT!)
+							i(32861),	-- Veridian Netherwing Drake (MOUNT!)
+							i(32862),	-- Violet Netherwing Drake (MOUNT!)
 						},
 					})),
 					n(19526, {	-- Dunaman <Weapons Vendor>
@@ -2175,17 +2239,11 @@ _.Zones =
 			},
 		}),
 	})),
-};
-
+});
 
 -- #if AFTER TBC
--- These quests trigger after specific events occur in the zone.
-_.HiddenQuestTriggers = {
-
-};
-
 -- These quests never made it in.
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		-- #if BEFORE WRATH
 		q(10871),	-- BETA Ally of the Netherwing
@@ -2193,5 +2251,5 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(11052),	-- OLD Akama's Promise (awarded "Akama's Promise" criteria)
 		-- #endif
 	}),
-});
+}));
 -- #endif

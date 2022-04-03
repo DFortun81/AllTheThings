@@ -10,9 +10,11 @@ i(180293);	-- Night Fae Insignia
 i(183190);	-- Oublion Cipher
 i(183726);	-- Gratitude of the Liberated
 i(181796);	-- Emergency Supplies Key
-i(178465);	-- Giant Silk Bundle
 
 i(174969);	-- Alpaca Saddlebag (Vulpera Backpack)
+
+i(181781);	-- Almost Empty Amontillado Cask
+i(183596);	-- Broken Artifact
 
 -- Tailoring
 i(184480);	-- Lightless Silk Pouch
@@ -416,8 +418,6 @@ i(151248);	-- Fragment of the Guardian's Seal (normal)
 i(151249);	-- Fragment of the Guardian's Seal (hc)
 i(151250);	-- Fragment of the Guardian's Seal (mythic)
 i(152902);	-- Rune of Passage (normal)
-i(152903);	-- Rune of Passage (heroic)
-i(152904);	-- Rune of Passage (mythic)
 i(152908);	-- Sigil of the Dark Titan (normal)
 i(152909);	-- Sigil of the Dark Titan (heroic)
 i(152910);	-- Sigil of the Dark Titan (mythic)
@@ -430,7 +430,6 @@ i(137215);	-- Cut Azsunite.  You get it for a split second after completing the 
 
 -- Recipes (Not actual recipes)
 i(168326);	-- Eye of Theras
-i(127772);	-- Gemcutter Module: Haste
 i(171315);	-- Reuse me (MTMM)
 
 

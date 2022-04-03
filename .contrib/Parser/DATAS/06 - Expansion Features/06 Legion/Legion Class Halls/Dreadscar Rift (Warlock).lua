@@ -327,6 +327,9 @@ _.ExpansionFeatures =
 							["classes"] = { WARLOCK },
 							["coord"] = { 58.7, 32.7, 717 },
 							["provider"] = { "n", 112434 },	-- Gigi Gigavoid
+							["g"] = {
+								i(139765),	-- Visage of the Black Harvest
+							}
 						}),
 						q(46240, {	-- Give Me Fuel, Give Me Fire
 							["sourceQuest"] = 46237,	-- Bloodbringer's Missive
@@ -614,7 +617,7 @@ _.ExpansionFeatures =
 							["coord"] = { 35.6, 38.4, 717 },
 							["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
 							["g"] = {
-								mount(232412, {	-- Netherlord's Chaotic Wrathsteed
+								mount(232412, {	-- Netherlord's Chaotic Wrathsteed (MOUNT!)
 									["classes"] = { WARLOCK },
 								}),
 							},
@@ -655,9 +658,6 @@ _.ExpansionFeatures =
 							["coord"] = { 54.1, 34.9, 717 },
 							["provider"] = { "n", 104732 },	-- Kira Iresoul
 						}),
-						q(46940, {	-- Using Lost Knowledge
-							["u"] = REMOVED_FROM_GAME,
-						}),
 						q(40495, {	-- Ulthalesh, the Deadwind Harvester
 							["sourceQuests"] = {
 								40684,	-- The Tome of Blighted Implements (if this artifact is picked first)
@@ -685,9 +685,6 @@ _.ExpansionFeatures =
 						q(44227, {	-- Unleashing our Wrath
 							["u"] = REMOVED_FROM_GAME,
 						}),
-						q(44254, {	-- Gazing Into Oblivion
-							i(139765),	-- Visage of the Black Harvest
-						}),
 						--[[ Artifact Appearance  Quests Commented Out For Now
 						q(43414, {	-- A Hero's Weapon
 							sp(219663) -- Heroic Weapons [No item associated]
@@ -700,7 +697,7 @@ _.ExpansionFeatures =
 							["coord"] = { 37.7, 31.0, 717 },
 							["classes"] = { WARLOCK },
 							["g"] = {
-								i(143637, {	-- Hellblazing Reins of the Brimstone Wrathsteed (MOUNT!)
+								i(143637, {	-- Netherlord's Brimstone Wrathsteed (MOUNT!)
 									["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
 								}),
 							},

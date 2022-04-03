@@ -21,6 +21,7 @@ _.Zones =
 					["spellID"] = 161353,	-- Polymorph(Polar Bear Cub)
 					["classes"] = { MAGE },
 					["crs"] = { 26482 },	-- Arctic Grizzly
+					["f"] = RECIPES,
 				}),
 			}),
 		}),

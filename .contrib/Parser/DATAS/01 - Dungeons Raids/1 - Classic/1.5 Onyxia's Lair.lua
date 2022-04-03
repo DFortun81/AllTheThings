@@ -306,7 +306,7 @@ root("Instances", tier(CLASSIC_TIER, {
 								7495,	-- Victory for the Alliance
 								7490,	-- Victory for the Horde
 							},
-							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(7635) or C_QuestLog.IsQuestFlaggedCompleted(7509) or C_QuestLog.IsQuestFlaggedCompleted(8620) or C_QuestLog.IsQuestFlaggedCompleted(7495) or C_QuestLog.IsQuestFlaggedCompleted(7490)); end]],
+							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						})),
 						i(18423, {	-- Head of Onyxia (A)
@@ -356,7 +356,7 @@ root("Instances", tier(CLASSIC_TIER, {
 							i(49643, {	-- Head of Onyxia (H)
 								["races"] = HORDE_ONLY,
 							}),
-							i(49636),	-- Reins of the Onyxian Drake (Mount)
+							i(49636),	-- Onyxian Drake (MOUNT!)
 							i(49295),	-- Enlarged Onyxia Hide Backpack (Bag)
 							i(49294),	-- Ashen Sack of Gems (Misc)
 							i(49299),	-- Keen Obsidian Edged Blade
@@ -414,7 +414,7 @@ root("Instances", tier(CLASSIC_TIER, {
 							i(49643, {	-- Head of Onyxia (H)
 								["races"] = HORDE_ONLY,
 							}),
-							i(49636),	-- Reins of the Onyxian Drake (Mount)
+							i(49636),	-- Onyxian Drake (MOUNT!)
 							i(49295),	-- Enlarged Onyxia Hide Backpack (Bag)
 							i(49294),	-- Ashen Sack of Gems (Misc)
 							i(49496),	-- Reinforced Shadowstrike

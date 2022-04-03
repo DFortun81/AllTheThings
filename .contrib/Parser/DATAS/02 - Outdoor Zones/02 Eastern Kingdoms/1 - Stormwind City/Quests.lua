@@ -421,15 +421,6 @@ root("Zones", {
 					["coord"] = { 85.6, 31.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(44663, {	-- In the Blink of an Eye
-					["sourceQuests"] = {
-						44120,	-- Illidari Allies
-						44473,	-- A Weapon of the Alliance
-					},
-					["provider"] = { "n", 101004 },	-- Elerion Bladedancer
-					["coord"] = { 40.4, 77.8, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(14481, {	-- Into The Abyss
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 36674 },	-- Nambria
@@ -946,12 +937,6 @@ root("Zones", {
 					["g"] = {
 						currency(515),	-- Darkmoon Prize Ticket
 					},
-				}),
-				q(34398, {	-- The Dark Portal
-					["description"] = "If you want to do the Blasted Lands questline before going to Draenor, abandon this quest after taking the portal to Blasted Lands.",
-					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(30095, {	-- The End Time
 					["isBreadcrumb"] = true,

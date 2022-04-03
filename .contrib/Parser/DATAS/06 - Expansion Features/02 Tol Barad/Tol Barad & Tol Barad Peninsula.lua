@@ -431,6 +431,7 @@ _.ExpansionFeatures =
 						},
 						["spellID"] = 28271,	-- Polymorph (Turtle)
 						["classes"] = { MAGE },
+						["f"] = RECIPES,
 					}),
 				}),
 				prof(MINING, {
@@ -493,10 +494,10 @@ _.ExpansionFeatures =
 						i(62457, {	-- Ravening Slicer
 							["cost"] = { { "c", 391, 85 }, },	-- 85x Tol Barad Commendation
 						}),
-						i(65356, {	-- Reins of the Drake of the West Wind (MOUNT!)
+						i(65356, {	-- Drake of the West Wind (H) (MOUNT!)
 							["cost"] = { { "c", 391, 200 }, },	-- 200x Tol Barad Commendation
 						}),
-						i(64999, {	-- Reins of the Spectral Wolf (MOUNT!)
+						i(64999, {	-- Spectral Wolf (MOUNT!)
 							["cost"] = { { "c", 391, 165 }, },	-- 165x Tol Barad Commendation
 						}),
 						i(64996, {	-- Rustberg Gull (PET!)
@@ -571,10 +572,10 @@ _.ExpansionFeatures =
 						i(62476, {	-- Ravening Slicer
 							["cost"] = { { "c", 391, 85 }, },	-- 85x Tol Barad Commendation
 						}),
-						i(63039, {	-- Reins of the Drake of the West Wind (MOUNT!)
+						i(63039, {	-- Drake of the West Wind (A) (MOUNT!)
 							["cost"] = { { "c", 391, 200 }, },	-- 200x Tol Barad Commendation
 						}),
-						i(64998, {	-- Reins of the Spectral Steed (MOUNT!)
+						i(64998, {	-- Spectral Steed (MOUNT!)
 							["cost"] = { { "c", 391, 165 }, },	-- 165x Tol Barad Commendation
 						}),
 						i(63355, {	-- Rustberg Gull (PET!)

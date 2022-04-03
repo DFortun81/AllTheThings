@@ -7,14 +7,6 @@ _.Zones =
 	m(BROKEN_ISLES, {
 		m(STORMHEIM, {
 			n(PROFESSIONS, {
-				prof(ARCHAEOLOGY, {
-					q(41157, {	-- Corrupted Studies
-						["isWeekly"] = true,
-					}),
-					q(41159, {	-- Process of Elimination
-						["isWeekly"] = true,
-					}),
-				}),
 				prof(FISHING, {
 					ach(10596, {	-- Bigger Fish to Fry
 						["collectible"] = false,

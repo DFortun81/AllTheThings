@@ -1,7 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-_.Holidays = { applyholiday(MICRO_HOLIDAY, holiday(1574965, {	-- Call of the Scarab
+root("Holidays", applyholiday(MICRO_HOLIDAY, holiday(1574965, {	-- Call of the Scarab
 	["description"] = "The Call of the Scarab Micro Holiday must be active for this to be available.",
 	["maps"] = { SILITHUS },
 	["groups"] = {
@@ -291,7 +291,7 @@ _.Holidays = { applyholiday(MICRO_HOLIDAY, holiday(1574965, {	-- Call of the Sca
 				["coord"] = { 34.06, 80.43, SILITHUS },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
-					i(151626, {	-- Sapphire Qiraji Resonating Crystal
+					i(151626, {	-- Blue Qiraji War Tank (MOUNT!)
 						["cost"] = { { "i", 143865, 1 } },	-- Abyssal Crest
 						["collectible"] = false,
 						["races"] = ALLIANCE_ONLY,
@@ -308,7 +308,7 @@ _.Holidays = { applyholiday(MICRO_HOLIDAY, holiday(1574965, {	-- Call of the Sca
 				["coord"] = { 33.96, 81.91, SILITHUS },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
-					i(151625, {	-- Ruby Qiraji Resonating Crystal
+					i(151625, {	-- Red Qiraji War Tank (MOUNT!)
 						["cost"] = { { "i", 143865, 1 } },	-- Abyssal Crest
 						["collectible"] = false,
 						["races"] = HORDE_ONLY,
@@ -447,4 +447,4 @@ _.Holidays = { applyholiday(MICRO_HOLIDAY, holiday(1574965, {	-- Call of the Sca
 			i(143855),	-- Twilight Cultist Robe
 		}),
 	},
-}))};
+})));

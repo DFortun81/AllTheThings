@@ -30,6 +30,7 @@ _.Zones =
 							i(141056),	-- Technique: Glyph of Burnout
 							i(136972, {	-- Tome of Hex: Cockroach
 								["spellID"] = 211015,	-- Hex(Cockroach)
+								["f"] = RECIPES,
 							}),
 						},
 					}),
@@ -241,3 +242,10 @@ _.Zones =
 		}),
 	}),
 };
+
+-- #if AFTER LEGION
+-- These quests trigger after specific events occur in the zone.
+_.HiddenQuestTriggers = {
+	q(40688),	-- Warlock Order Hall - Choosing demonology artifact first
+};
+-- #endif

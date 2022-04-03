@@ -32,7 +32,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 		ach(6828, {		-- Pandaren Ambassador (Alliance)
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
-				i(89785, {		-- Pandaren Kite String
+				i(89785, {		-- Pandaren Kite (A) (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
 				}),
 				crit(1),		-- Golden Lotus
@@ -49,7 +49,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 		ach(6827, {		-- Pandaren Ambassador (Horde)
 			["races"] = HORDE_ONLY,
 			["g"] = {
-				i(81559, {		-- Pandaren Kite String
+				i(81559, {		-- Pandaren Kite (H) (MOUNT!)
 					["races"] = HORDE_ONLY,
 				}),
 				crit(1),		-- Golden Lotus

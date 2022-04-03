@@ -473,6 +473,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					["spellID"] = 161354,	-- Polymorph (Monkey)
 					["timeline"] = { "added 6.0.2.18816" },
 					["classes"] = { MAGE },
+					["f"] = RECIPES,
 					["crs"] = {
 						48278,	-- Mining Monkey
 						48440,	-- Mining Monkey
@@ -585,7 +586,7 @@ root("Instances", tier(CLASSIC_TIER, {
 								166,	-- The Defias Brotherhood (7/7)
 								373,	-- The Unsent Letter
 							},
-							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(166) or C_QuestLog.IsQuestFlaggedCompleted(373)); end]],
+							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							["races"] = ALLIANCE_ONLY,
 							-- #endif
 						})),
@@ -786,7 +787,9 @@ root("HiddenQuestTriggers", {
 -- #endif
 --[[
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	q(28004),	-- Adventurers Wanted: The Deadmines [Horde]
-	q(28005),	-- Adventurers Wanted: The Deadmines [Alliance]
+	tier(CATA_TIER, {
+		q(28004),	-- Adventurers Wanted: The Deadmines [Horde]
+		q(28005),	-- Adventurers Wanted: The Deadmines [Alliance]
+	}),
 }));
 ]]--

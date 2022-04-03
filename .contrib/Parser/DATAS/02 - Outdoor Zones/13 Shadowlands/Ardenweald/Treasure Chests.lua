@@ -221,6 +221,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					}),
 				},
 			}),
+			o(373460, bubbleDownSelf({ ["timeline"] = { "added 9.1.5" } }, {	-- Fae Net
+				["coord"] = { 38.3, 36.8, ARDENWEALD },
+				["g"] = {
+					i(187943),	-- Fae Net
+				},
+			})),
 			o_repeated({	-- Faerie Stash
 			--	Rewards
 			--	Objects

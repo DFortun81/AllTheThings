@@ -22,13 +22,15 @@ local HORDE_PILGRIM_MAPS = {
 	TIRISFAL_GLADES,
 };
 local ALL_PILGIM_MAPS = appendGroups(ALLIANCE_PILGRIM_MAPS, appendGroups(HORDE_PILGRIM_MAPS, {}));
-_.Holidays = { applyholiday(PILGRIMS_BOUNTY, {
+root("Holidays", applyholiday(PILGRIMS_BOUNTY, {
 	-- #if ANYCLASSIC
 	["npcID"] = -60,
 	-- #else
 	["holidayID"] = 235466,
 	-- #endif
 	["timeline"] = { "added 3.1.0.9658" },
+	["description"] = "Start: 11/22 at 10:00 AM\nEnd: 11/29 at 9:00 AM",
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. PILGRIMS_BOUNTY .. [[, 11, 22, 11, 29); end]],
 	["groups"] = {
 		-- #if AFTER WRATH
 		n(ACHIEVEMENTS, {
@@ -711,7 +713,7 @@ _.Holidays = { applyholiday(PILGRIMS_BOUNTY, {
 			}),
 		}),
 	},
-})};
+}));
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	holiday(235466, {

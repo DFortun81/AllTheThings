@@ -2530,7 +2530,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 		}),
 	}),
 })};
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	prof(BLACKSMITHING, {
 		-- #if BEFORE 7.1.5.23360
 		i(12769, {	-- Bleakwood Hew
@@ -2560,4 +2560,4 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		i(8195),	-- Nightscape Cloak	(Pattern never actually went live)
 		i(15141),	-- Onyxia Scale Breastplate
 	}),
-});
+}));

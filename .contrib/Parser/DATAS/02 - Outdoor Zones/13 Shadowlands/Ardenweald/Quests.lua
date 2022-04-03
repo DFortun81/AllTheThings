@@ -690,6 +690,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "n", 177434 },	-- Ysera
 				["coord"] = { 45.3, 64.8, ARDENWEALD },
 				["timeline"] = { "added 9.1.0" },
+				["g"] = {
+					i(182171),	-- Hippogryph Soul
+				},
 			}),
 			q(58724, {	-- The Queen's Request
 				["sourceQuests"] = { 58723 },	-- The Court of Winter

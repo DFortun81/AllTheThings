@@ -267,6 +267,9 @@ root("Holidays", d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
 					i(187604, {	-- Broken Isles Enchantment Delivery
 						["cost"] = { { "c", 1166, 25 }, },		-- 25x Timewarped Badge
 					}),
+					i(187599, { -- Broken Isles Herb Delivery
+						["cost"] = { { "c", 1166, 25 }, },		-- 25x Timewarped Badge
+					}),
 					i(141018, {	-- Sargerei Blood Vessel
 						["cost"] = { { "c", 1166, 150 }, },		-- 150x Timewarped Badge
 						["g"] = {

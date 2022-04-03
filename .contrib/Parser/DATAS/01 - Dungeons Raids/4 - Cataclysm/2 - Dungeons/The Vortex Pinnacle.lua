@@ -89,7 +89,7 @@ _.Instances = { tier(CATA_TIER, {
 					un(REMOVED_FROM_GAME, i(55830)),	-- Stratosphere Belt (7.3.5 - Removed from Game!)
 				})),
 				cr(43873, e(115, {	-- Altairus
-					i(63040),	-- Reins of the Drake of the North Wind (MOUNT!)
+					i(63040),	-- Drake of the North Wind (MOUNT!)
 					i(56364),	-- Axe of the Eclipse
 					i(56362),	-- Amulet of Tender Breath
 					i(56361),	-- Mantle of Bestilled Winds
@@ -160,7 +160,7 @@ _.Instances = { tier(CATA_TIER, {
 						i(56356),	-- Stratosphere Belt
 					})),
 					cr(43873, e(115, {	-- Altairus
-						i(63040),	-- Reins of the Drake of the North Wind (MOUNT!)
+						i(63040),	-- Drake of the North Wind (MOUNT!)
 						i(56364),	-- Axe of the Eclipse
 						i(56362),	-- Amulet of Tender Breath
 						i(56361),	-- Mantle of Bestilled Winds

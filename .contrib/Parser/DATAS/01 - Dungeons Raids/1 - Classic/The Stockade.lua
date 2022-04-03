@@ -234,7 +234,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					removeclassicphase(ach(633, {	-- Stormwind Stockade
 						-- #if BEFORE 3.0.1
 						["sourceQuest"] = 391,	-- The Stockade Riots
-						["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(391)); end]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						["races"] = ALLIANCE_ONLY,
 						-- #endif
 					})),

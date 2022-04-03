@@ -350,6 +350,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(29242),	-- Boots of Blasphemy
 							i(27740),	-- Band of Ursol
 							i(27683),	-- Quagmirran's Eye
+							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
 							i(33821),	-- The Heart of Quagmirran
 							i(72119, {	-- The Slave Master's Eye
 								["timeline"] = { "added 4.3.0.14942" },
@@ -368,12 +369,16 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		},
 	}),
 })));
-_.HiddenQuestTriggers = {
+-- #if AFTER TBC
+root("HiddenQuestTriggers", {
 	tier(TBC_TIER, {
 		q(11115),	-- The Mark of Vashj (FLAG ONLY)
 	}),
+	-- #if AFTER WOD
 	tier(WOD_TIER, {
 		q(35561),	-- The Slave Pens Reward Quest - Normal completion
 		q(35562),	-- The Slave Pens Reward Quest - Heroic completion
 	}),
-};
+	-- #endif
+});
+-- #endif

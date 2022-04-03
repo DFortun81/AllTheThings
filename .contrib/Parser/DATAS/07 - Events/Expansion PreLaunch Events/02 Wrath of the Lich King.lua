@@ -12,16 +12,7 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 3.0.2", "remove
 				["provider"] = { "i", 38658 },	-- Vampiric Batling Pet
 				-- #if BEFORE WRATH
 				["description"] = "Slew Prince Tenris Mirkblood and acquired his Vampiric Batling pet.",
-				["OnUpdate"] = [[function(t)
-					local collected = false;
-					for i,provider in ipairs(t.providers) do
-						if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
-							collected = true;
-							break;
-						end
-					end
-					t.SetAchievementCollected(t.achievementID, collected);
-				end]],
+				["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 				-- #endif
 			})),
 			i(38658),	-- Vampiric Batling Pet

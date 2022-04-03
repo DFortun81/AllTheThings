@@ -5,19 +5,19 @@
 root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 	achcat(ACHIEVEMENT_CATEGORY_RAIDS_FOS, {
 		un(REMOVED_FROM_GAME, a(ach(4156, {	-- A Tribute to Immortality (Alliance)
-			un(REMOVED_FROM_GAME, a(i(49096))),	-- Crusader's White Warhorse
+			un(REMOVED_FROM_GAME, a(i(49096))),	-- Crusader's White Warhorse (MOUNT!)
 		}))),
 		un(REMOVED_FROM_GAME, h(ach(4079, {	-- A Tribute to Immortality (Horde)
-			un(REMOVED_FROM_GAME, h(i(49098))),	-- Crusader's Black Warhorse
+			un(REMOVED_FROM_GAME, h(i(49098))),	-- Crusader's Black Warhorse (MOUNT!)
 		}))),
 		un(REMOVED_FROM_GAME, ach(12110)),	-- Ahead of the Curve: Argus the Unmaker
 		un(REMOVED_FROM_GAME, ach(9444)),	-- Ahead of the Curve: Blackhand's Crucible
 		un(REMOVED_FROM_GAME, ach(12536)),	-- Ahead of the Curve: G'huun
 		un(REMOVED_FROM_GAME, ach(8398, {	-- Ahead of the Curve: Garrosh Hellscream (10 player)
-			un(REMOVED_FROM_GAME, i(104246)),	-- Reins of the Kor'kron War Wolf
+			un(REMOVED_FROM_GAME, i(104246)),	-- Reins of the Kor'kron War Wolf (MOUNT!)
 		})),
 		un(REMOVED_FROM_GAME, ach(8399, {	-- Ahead of the Curve: Garrosh Hellscream (25 player)
-			un(REMOVED_FROM_GAME, i(104246)),	-- Reins of the Kor'kron War Wolf
+			un(REMOVED_FROM_GAME, i(104246)),	-- Reins of the Kor'kron War Wolf (MOUNT!)
 		})),
 		un(REMOVED_FROM_GAME, ach(8246)),	-- Ahead of the Curve: Grand Empress Shek'zeer
 		un(REMOVED_FROM_GAME, ach(11195)),	-- Ahead of the Curve: Gul'dan

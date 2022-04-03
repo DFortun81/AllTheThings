@@ -96,6 +96,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					["sourceQuests"] = { 65426 },	-- The Lost Component
 					["provider"] = { "n", 181135 },	-- Servitor Interface
 					["coord"] = { 70.2, 28.6, ZERETH_MORTIS },
+					["g"] = {
+						i(189500),	-- Cervid Lattice
+					},
 				}),
 				-- Schematics
 				-- Pets
@@ -333,7 +336,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					},
 				}),
 				o(375498, {	-- Protoform Schematic
-					["description"] = "Behind the chain. Hard to spot.",
+					["description"] = "Mount or stand at precisely 52.3, 75.3. Behind the chain. Hard to spot.",
 					["coord"] = { 52.3, 75.4, ZERETH_MORTIS },
 					["g"] = {
 						i(189442),	-- Schematic: Prototickles
@@ -408,7 +411,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					},
 				}),
 				o(375502, {	-- Protoform Schematic
-					["description"] = "Hidden in tree leafs.",
+					["description"] = "Hidden in tree leaves, on branch with small orb above water.",
 					["coord"] = { 28.1, 50, ZERETH_MORTIS },
 					["g"] = {
 						i(189445),	-- Schematic: Microlicid
@@ -416,14 +419,15 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				}),
 				o(375270, {	-- Protoform Schematic
 					["description"] = "Requires Aealic Understanding and Chapter 6. Rondure Locus Arrangement is found at 50.5, 27.6 Close to Tertius Locus. Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
-					-- ["coord"] = { 28.1, 50, ZERETH_MORTIS },
+					["coord"] = { 42.8, 40.6, 2029 },
 					["g"] = {
 						i(189440),	-- Schematic: Omnipotential Core
 					},
 				}),
 				o(375746, {	-- Protoform Schematic
 					["description"] = "Requires Sopranian Understanding and Chapter 6. Camber Locus Arrangement is found at 47.7 34.5, on the back side of the Vessel's room. (accessible from flying or via the Ultimus Locus). Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.\n\nSuccefully completing this minigame will reward a schematic.",
-					-- ["coord"] = { 28.1, 50, ZERETH_MORTIS },
+					["coord"] = { 49, 73.1, 2029 },
+					["questID"] = 65651,
 					["g"] = {
 						i(189463),	-- Schematic: Unsuccessful Prototype Fleetpod
 					},

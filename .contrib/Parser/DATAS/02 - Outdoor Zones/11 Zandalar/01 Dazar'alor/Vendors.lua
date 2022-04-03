@@ -829,6 +829,12 @@ _.Zones =
 						}),
 					}),
 				}),
+				n(130901, {	-- Chronicler Grazzul <Inscription Trainer>
+					["coord"] = { 42.3, 39.7, DAZARALOR },
+					["g"] = {
+						i(168026),	-- Recipe Book: Sanguine Feather Quill of Lana'thel
+					},
+				}),
 				n(122703, {	-- Clever Kumali <Alchemist Trainer>
 					["coord"] = { 42.2, 38.0, DAZARALOR },
 					["races"] = HORDE_ONLY,
@@ -1036,11 +1042,13 @@ _.Zones =
 							["spellID"] = 277778,	-- Hex(Zandalari Tendonripper)
 							["classes"] = { SHAMAN },
 							["cost"] = 18000000,	-- 1,800g
+							["f"] = RECIPES,
 						}),
 						i(162625, {	-- Tome of Polymorph: Direhorn
-							["spellID"] = 277787,	-- Polymorph(Direhorn)
+							["recipeID"] = 277787,	-- Polymorph(Direhorn)
 							["classes"] = { MAGE },
 							["cost"] = 18000000,	-- 1,800g
+							["f"] = RECIPES,
 						}),
 						i(161524, {	-- Torcali's Grips of the Bounty
 							["cost"] = 19000000,	-- 1,900g
@@ -1092,8 +1100,8 @@ _.Zones =
 				n(122463, {	-- Plen <Unusual and Remarkable Wares>
 					["coord"] = { 47.7, 91.6, DAZARALOR },
 					["g"] = {
-						i(63044),	-- Reins of the Brown Riding Camel
-						i(63045),	-- Reins of the Tan Riding Camel
+						i(63044),	-- Brown Riding Camel (MOUNT!)
+						i(63045),	-- Tan Riding Camel (MOUNT!)
 					},
 				}),
 				n(148924, {	-- Provisioner Mukra
@@ -1273,12 +1281,14 @@ _.Zones =
 						i(168025, {	-- Book of Schematics: Ub3r-Spanner
 							["spellID"] = 0,
 							["sourceQuest"] = 53937,	-- The Ub3r-Spanner (H)
+							["f"] = MISC,
 						}),
 					},
 				}),
 				n(125879, {	-- Talutu <Mount Vendor>
 					["coord"] = { 48.5, 87.0, DAZARALOR },
 					["g"] = {
+						i(159139),	-- Lightweight Skyterror Barding
 						i(163568, {	-- Lost Platysaur (PET!)
 							["cost"] = 1000000000,	-- 100,000g
 						}),
@@ -1316,6 +1326,16 @@ _.Zones =
 								az(20, 4),	-- Life-Binder's Invocation (Rank 4)
 							},
 						}),
+						-- This Gear need symlink someday
+						i(174630),	-- Relinquished Azerite Spaulders
+						i(174631),	-- Relinquished Azerite Spaulders
+						i(174632),	-- Relinquished Azerite Spaulders
+						i(174633),	-- Relinquished Azerite Helm
+						i(174634),	-- Relinquished Azerite Helm
+						i(174635),	-- Relinquished Azerite Helm
+						i(174636),	-- Relinquished Azerite Chestpiece
+						i(174637),	-- Relinquished Azerite Chestpiece
+						i(174638),	-- Relinquished Azerite Chestpiece
 						-- this gear currently doesn't display the correct version that the vendor sells, and it's also all duplicated gear from BFA mythics.  commenting out until someone figures out a better way to display it.
 						--[[
 						i(155860),	-- Spymaster's Wrap

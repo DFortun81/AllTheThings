@@ -40,7 +40,7 @@ root("Secrets", n(-798,  {	-- Selfie Filter
 			["f"] = 60,				-- S.E.L.F.I.E. Camera Filter
 			["cr"] = 36597,		-- The Lich King
 			["maps"] = {	-- Icecrown Citadel
-				186,
+				ICECROWN_CITADEL,
 				187,
 				188,
 				189,

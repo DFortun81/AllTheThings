@@ -939,6 +939,7 @@ for key,value in pairs({
 	[35251] = "Cofre de Karnitol",	-- Karnitol's Chest
 	[37099] = "Tablilla Atal'ai",	-- Atal'ai Tablet
 	[91138] = "Martillo de Jordan",	-- Jordan's Hammer
+	[103821] = "Caja fuerte de Doan",	-- Doan's Strongbox
 	[112948] = "Caja fuerte de El Intrépido cerrada",	-- Intrepid's Locked Strongbox
 	[113757] = "Alijo de Forjatiniebla",	-- Shadowforge Cache
 	[123329] = "Cofre de Baelog",	-- Baelog's Chest
@@ -951,6 +952,7 @@ for key,value in pairs({
 	[142122] = "Cartel de Se busca",	-- Wanted Poster
 	[142127] = "Secreto de Rin'ji",	-- Rin'ji's Secret
 	[142151] = "Barrica sellada",	-- Sealed Barrel
+	[142184] = "Cofre del Capitán",	-- Captain's Chest
 	[142195] = "Mapa de batalla de los Zarpaleña",	-- Woodpaw Battle Map
 	[142343] = "Pedestal de Uldum",	-- Uldum Pedestal
 	[142344] = "Extrapolador artificial",	-- Artificial Extrapolator
@@ -993,6 +995,7 @@ for key,value in pairs({
 	[176090] = "Restos humanos",	-- Human Remains
 	[176091] = "Caldera de Muertobosque",	-- Deadwood Cauldron
 	[176115] = "Cartel de Se busca: Arnak Tótem Siniestro",	-- Wanted Poster - Arnak Grimtotem
+	[176192] = "Catálogo del Díscolo",	-- Catalogue of the Wayward
 	[176361] = "Caldera de la Plaga",	-- Scourge Cauldron
 	[176392] = "Caldera de la Plaga",	-- Scourge Cauldron
 	[176393] = "Caldera de la Plaga",	-- Scourge Cauldron
@@ -2072,6 +2075,7 @@ for key,value in pairs({
 	[250108] = "Arqueta pequeña",	-- Small Treasure Chest
 	[250109] = "Arqueta",	-- Treasure Chest
 	[250383] = "Reliquia Sombra Lunar",	-- Moonshade Relic
+	[250541] = "Arqueta",	-- Treasure Chest
 	--TODO: [250671] = "Notes on the Veiled Hand",	-- Notes on the Veiled Hand
 	[250984] = "Arqueta pequeña",	-- Small Treasure Chest
 	[250985] = "Arqueta",	-- Treasure Chest
@@ -2594,6 +2598,7 @@ for key,value in pairs({
 	[327591] = "Diario conservado",	-- Preserved Journal
 	[327592] = "Cerrojo encantado",	-- Enchanted Lock
 	[327596] = "Enfoque abisal roto",	-- Broken Abyssal Focus
+	[327597] = "Viejo cofre oxidado",	-- Old Rusty Chest
 	[327669] = "Elemental de cerveza contenido",	-- Contained Alemental
 	--TODO: [328343] = "Direbrew Cog",	-- Direbrew Cog
 	--TODO: [328413] = "Hozen Totem",	-- Hozen Totem
@@ -2702,6 +2707,7 @@ for key,value in pairs({
 	[353336] = "Tesoro secreto",	-- Secret Treasure
 	[353380] = "Cubo de comida de Halis",	-- Halis's Lunch Pail
 	[353472] = "Espada radiante",	-- Radiant Sword
+	[353484] = "La gran cámara",	-- The Great Vault
 	[353500] = "Caja fuerte de plata",	-- Silver Strongbox
 	[353503] = "Caja fuerte de plata",	-- Silver Strongbox
 	[353516] = "Caja fuerte de plata",	-- Silver Strongbox
@@ -2847,6 +2853,7 @@ for key,value in pairs({
 	[358318] = "Retrato de dragador de R. Suavel",	-- R. Suavel Dredger Portrait
 	[358319] = "Nota de hechicero",	-- Sorceror's Note
 	[358382] = "Se busca: Quelícera",	-- Wanted: Chelicera
+	[358398] = "Diario perdido",	-- Lost Journal
 	[358399] = "Talega de seis leguas",	-- Six-League Pack
 	[358531] = "Alijo gigantesco de tesoro épico",	-- Giant Cache of Epic Treasure
 	[358533] = "Suministros olvidados",	-- Forgotten Supplies
@@ -2859,6 +2866,7 @@ for key,value in pairs({
 	[364932] = "Lingote llameante",	-- Blazing Ingot
 	[364937] = "Succionador fásico",	-- Phasic Siphoner
 	[364987] = "Diario de especulador",	-- Broker Journal
+	[365093] = "Libros de villancicos de Theotar",	-- Theotar's Caroling Books
 	[368205] = "Alijo jurafauces",	-- Mawsworn Cache
 	[368206] = "Alijo jurafauces",	-- Mawsworn Cache
 	[368207] = "Alijo jurafauces",	-- Mawsworn Cache
@@ -2934,6 +2942,7 @@ for key,value in pairs({
 	[369438] = "Alijo vinculafalla",	-- Riftbound Cache
 	[369439] = "Alijo vinculafalla",	-- Riftbound Cache
 	[369440] = "Alijo vinculafalla",	-- Riftbound Cache
+	[369602] = "Manos de desafío",	-- Hands of Defiance
 	[369757] = "Cofre sumergido",	-- Submerged Chest
 	[370140] = "Alijo jiro dañado",	-- Damaged Jiro Stash
 	[370469] = "Pienso espectral",	-- Spectral Feed
@@ -2941,6 +2950,7 @@ for key,value in pairs({
 	[373437] = "Banco de peces mancha acres",	-- Pungent Blobfish Cluster
 	[373438] = "Vid garraespiral",	-- Coilclutch Vine
 	[373439] = "Banco de peces aletones",	-- Flipper Fish School
+	--TODO: [373460] = "Fae Net",	-- Fae Net
 	[373471] = "Alijo mezzónico",	-- Mezzonic Cache
 	[373472] = "Alijo glissandiano",	-- Glissandian Cache
 	[373473] = "Alijo de fuga",	-- Fugueal Cache
@@ -2963,6 +2973,7 @@ for key,value in pairs({
 	[373587] = "Concordancia excitable",	-- Excitable Concordance
 	[373588] = "Concordancia voluble",	-- Mercurial Concordance
 	[374976] = "Cámara sinfónica",	-- Symphonic Vault
+	[375021] = "Automa fenecido",	-- Perished Automa
 	[375058] = "Alijo de tocata",	-- Toccatian Cache
 	[375059] = "Alijo mezzónico",	-- Mezzonic Cache
 	[375060] = "Alijo glissandiano",	-- Glissandian Cache
@@ -2973,6 +2984,7 @@ for key,value in pairs({
 	[375067] = "Alijo glissandiano",	-- Glissandian Cache
 	[375068] = "Alijo de fuga",	-- Fugueal Cache
 	[375069] = "Alijo cantárico",	-- Cantaric Cache
+	[375191] = "Disposición de la Alcoba Durmiente",	-- Dormant Alcove Arrangement
 	[375270] = "Esquema de protoforma",	-- Protoform Schematic
 	[375272] = "Alijo jurafauces",	-- Mawsworn Cache
 	[375281] = "Reliquia robada",	-- Stolen Relic
@@ -3031,15 +3043,15 @@ for key,value in pairs({
 	[375538] = "Ovoide perdido",	-- Lost Ovoid
 	[375693] = "Esquema de protoforma",	-- Protoform Schematic
 	[375694] = "Esquema de protoforma",	-- Protoform Schematic
-	--TODO: [375746] = "Protoform Schematic",	-- Protoform Schematic
+	[375746] = "Esquema de prototipo",	-- Prototype Schematic
 	[375748] = "Esquema de protoforma",	-- Protoform Schematic
 	[375889] = "Esquema de protoforma",	-- Protoform Schematic
 	[375893] = "Alijo de gran valor",	-- High Value Cache
 	[375900] = "Esquema de protoforma",	-- Protoform Schematic
 	[375902] = "Mantón etéreo deshilachado",	-- Torn Ethereal Drape
-	--TODO: [375903] = "Protoform Schematic",	-- Protoform Schematic
+	[375903] = "Esquema de protoforma",	-- Protoform Schematic
 	[375905] = "Esquema de protoforma",	-- Protoform Schematic
-	--TODO: [375907] = "Protoform Schematic",	-- Protoform Schematic
+	[375907] = "Esquema de protoforma",	-- Protoform Schematic
 	[375915] = "Fulgor de la serenidad",	-- Glimmer of Serenity
 	[375950] = "Adorno de innovación pura",	-- Bauble of Pure Innovation
 	[375972] = "Se busca: Custos",	-- Wanted: Custos

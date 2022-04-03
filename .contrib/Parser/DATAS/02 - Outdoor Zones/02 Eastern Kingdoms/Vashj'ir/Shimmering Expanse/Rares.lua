@@ -16,7 +16,7 @@ _.Zones =
 							{ 38.5, 67.0, 205 },
 						},
 						["g"] = {
-							i(67151),	-- Reins of Poseidus
+							i(67151),	-- Subdued Seahorse (MOUNT!)
 							i(67132),	-- Grips of the Failed Immortal
 							i(67140),	-- Drape of Inimitable Fate
 							i(67131),	-- Ritssyn's Ruminous Drape

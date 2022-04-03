@@ -249,14 +249,6 @@ root("Zones", {
 						["provider"] = { "n", 126307 },	-- Prophet Velen
 						["coord"] = { 45.9, 34.0, 831 },
 					}),
-					q(48065, {	-- Extraterrestrial Exploration
-						["requireSkill"] = ENGINEERING,
-						["provider"] = { "n", 93520 },	-- Didi the Wrench
-						["sourceQuests"] = { 48069 },	-- The Wrench Calls
-						["g"] = {
-							recipe(247744),	-- Wormhole Generator: Argus
-						},
-					}),
 					q(47134, {	-- Foiling the Legion's Jailbreak
 						["sourceQuests"] = { 47104 },	-- Imprisoned Inquisitor
 						["provider"] = { "n", 121263 },	-- Grand Artificer Romuul
@@ -420,10 +412,6 @@ root("Zones", {
 						["provider"] = { "n", 121263 },	-- Grand Artificer Romuul
 						["coord"] = { 43.7, 29.2, 831 },
 					}),
-					q(48069, {	-- The Wrench Calls
-						["requireSkill"] = ENGINEERING,
-						["sourceQuests"] = { 46941 },	-- The Path Forward
-					}),
 					q(48344, {	-- We Have a Problem
 						["sourceQuests"] = { 48461 },	-- Where They Least Expect It
 						["provider"] = { "n", 124312 },	-- High Exarch Turalyon
@@ -502,22 +490,22 @@ root("Zones", {
 						i(152618, {	-- Recipe: Astral Healing Potion (Rank 3)
 							["cost"] = 30000000,	-- 3,0000g
 						}),
-						i(152794, {	-- Reins of the Amethyst Ruinstrider Mount
+						i(152794, {	-- Amethyst Ruinstrider (MOUNT!)
 							["cost"] = 100000000,	-- 10,000g
 						}),
-						i(152795, {	-- Reins of the Beryl Ruinstrider Mount
+						i(152795, {	-- Beryl Ruinstrider (MOUNT!)
 							["cost"] = 100000000,	-- 10,000g
 						}),
-						i(152797, {	-- Reins of the Cerulean Ruinstrider Mount
+						i(152797, {	-- Cerulean Ruinstrider (MOUNT!)
 							["cost"] = 100000000,	-- 10,000g
 						}),
-						i(152793, {	-- Reins of the Russet Ruinstrider Mount
+						i(152793, {	-- Russet Ruinstrider (MOUNT!)
 							["cost"] = 100000000,	-- 10,000g
 						}),
-						i(152791, {	-- Reins of the Sable Ruinstrider Mount
+						i(152791, {	-- Sable Ruinstrider (MOUNT!)
 							["cost"] = 100000000,	-- 10,000g
 						}),
-						i(152796, {	-- Reins of the Umber Ruinstrider Mount
+						i(152796, {	-- Umber Ruinstrider (MOUNT!)
 							["cost"] = 100000000,	-- 10,000g
 						}),
 						i(152725),	-- Technique: Mass Mill Astral Glory

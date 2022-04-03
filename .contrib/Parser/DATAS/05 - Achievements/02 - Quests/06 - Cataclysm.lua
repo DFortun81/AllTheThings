@@ -123,7 +123,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 				crit(3),		-- Into the Depths
 			}),
 			ach(5866, {		-- The Molten Front Offensive (Mount Hyjal - The Molten Front)
-				i(69213),		-- Flameward Hippogryph
+				i(69213),		-- Flameward Hippogryph (MOUNT!)
 				crit(1),		-- Stop the assault on the Sanctuary of Malorne
 				crit(2),		-- Gain access to the Molten Front
 				crit(3),		-- Recruit the Druids of the Talon

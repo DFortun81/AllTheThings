@@ -330,10 +330,10 @@ root("Zones", m(KALIMDOR, {
 				["races"] = HORDE_ONLY,
 				["coord"] = { 41.8, 73.0, ORGRIMMAR },
 				["g"] = pvp({
-					i(70910, {	-- Horn of the Vicious War Wolf Mount
+					i(70910, {	-- Vicious War Wolf (MOUNT!)
 						["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 					}),
-					i(102533, {	-- Reins of the Vicious Skeletal Warhorse Mount
+					i(102533, {	-- Vicious Skeletal Warhorse (MOUNT!)
 						["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 					}),
 					i(165020, {	-- Vicious Bonestead (A)
@@ -342,31 +342,31 @@ root("Zones", m(KALIMDOR, {
 					i(163121, {	-- Vicious War Basilisk (A)
 						["cost"] = { { "i", 103533, 1 }, },
 					}),
-					i(142235, {	-- Vicious War Bear
+					i(142235, {	-- Vicious War Bear (H) (MOUNT!)
 						["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 					}),
 					i(163124, {	-- Vicious War Clefthoof (A)
 						["cost"] = { { "i", 103533, 1 }, },
 					}),
-					i(152869, {	-- Vicious War Fox
+					i(152869, {	-- Vicious War Fox (H) (MOUNT!)
 						["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 					}),
-					i(124540, {	-- Vicious War Kodo Mount
+					i(124540, {	-- Vicious War Kodo (MOUNT!)
 						["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 					}),
-					i(116778, {	-- Vicious War Raptor Mount
+					i(116778, {	-- Vicious War Raptor (MOUNT!)
 						["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 					}),
-					i(142437, {	-- Vicious War Scorpion Mount
+					i(142437, {	-- Vicious War Scorpion (MOUNT!)
 						["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 					}),
-					i(140354, {	-- Vicious War Trike Mount
+					i(140354, {	-- Vicious War Trike (MOUNT!)
 						["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 					}),
-					i(143649, {	-- Vicious War Turtle Mount
+					i(143649, {	-- Vicious War Turtle (H) (MOUNT!)
 						["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 					}),
-					i(140348, {	-- Vicious Warstrider Mount
+					i(140348, {	-- Vicious Warstrider (MOUNT!)
 						["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 					}),
 					i(173713, {	-- Vicious White Bonesteed (A)
@@ -409,13 +409,13 @@ root("Zones", m(KALIMDOR, {
 				["races"] = HORDE_ONLY,
 				["coord"] = { 48.0, 58.6, ORGRIMMAR },
 				["g"] = {
-					i(25477),	-- Swift Red Wind Rider Mount
-					i(25531),	-- Swift Green Wind Rider Mount
-					i(25532),	-- Swift Yellow Wind Rider Mount
-					i(25533),	-- Swift Purple Wind Rider Mount
-					i(25474),	-- Tawny Wind Rider Mount
-					i(25475),	-- Blue Wind Rider Mount
-					i(25476),	-- Green Wind Rider Mount
+					i(25477),	-- Swift Red Wind Rider (MOUNT!)
+					i(25531),	-- Swift Green Wind Rider (MOUNT!)
+					i(25532),	-- Swift Yellow Wind Rider (MOUNT!)
+					i(25533),	-- Swift Purple Wind Rider (MOUNT!)
+					i(25474),	-- Tawny Wind Rider (MOUNT!)
+					i(25475),	-- Blue Wind Rider (MOUNT!)
+					i(25476),	-- Green Wind Rider (MOUNT!)
 				},
 			}),
 			n(3367,   {	-- Felika <Trade Supplies>
@@ -2298,12 +2298,19 @@ root("Zones", m(KALIMDOR, {
 					}),
 				},
 			}),
+			n(168623, {	-- Kazak Darkscream <Warlock Trainer>
+				["coord"] = { 74.6, 47.2, ORGRIMMAR },
+				["g"] = {
+					i(189719),	-- Barbed Collar of the Incubus
+					i(189720),	-- Barbed Collar of the Succubus
+				},
+			}),
 			n(48510,  {	-- Kall Worthaton <Trike Dealer>
 				["coord"] = { 36.2, 86.6, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(62462),	-- Goblin Turbo-Trike Key Mount
-					i(62461),	-- Goblin Trike Key Mount
+					i(62462),	-- Goblin Turbo-Trike (MOUNT!)
+					i(62461),	-- Goblin Trike (MOUNT!)
 				},
 			}),
 			n(45551,  {	-- Karizi Porkpatty <Cooking Supplies>
@@ -2504,7 +2511,7 @@ root("Zones", m(KALIMDOR, {
 					i(1132),	-- Timber Wolf (MOUNT!)
 					i(5665),	-- Dire Wolf (MOUNT!)
 					i(5668),	-- Brown Wolf (MOUNT!)
-					i(46099),	-- Horn of the Black Wolf
+					i(46099),	-- Black Wolf (MOUNT!)
 					un(REMOVED_FROM_GAME, i(12351)),	-- Arctic Wolf (MOUNT!) -- Unable to 100% verify this source.
 					un(REMOVED_FROM_GAME, i(12330)),	-- Red Wolf (MOUNT!) -- Unable to 100% verify this source.
 				},
@@ -2549,15 +2556,15 @@ root("Zones", m(KALIMDOR, {
 				["itemID"] = 137642,	-- Mark of Honor
 				["races"] = HORDE_ONLY,
 				["g"] = pvp({
-					i(29466),	-- Black War Kodo
+					i(29466),	-- Black War Kodo (MOUNT!)
 					un(REMOVED_FROM_GAME, i(18247)),	-- Black War Kodo (MOUNT!) Pre 2.0 Version
-					i(29469),	-- Horn of the Black War Wolf
+					i(29469),	-- Black War Wolf (MOUNT!)
 					un(REMOVED_FROM_GAME, i(18245)),	-- Black War Wolf (MOUNT!) Pre 2.0 Version
-					i(29470),	-- Red Skeletal Warhorse
+					i(29470),	-- Red Skeletal Warhorse (MOUNT!)
 					un(REMOVED_FROM_GAME, i(18248)),	-- Red Skeletal Warhorse (MOUNT!) Pre 2.0 Version
-					i(29472),	-- Whistle of the Black War Raptor
+					i(29472),	-- Black War Raptor (MOUNT!)
 					un(REMOVED_FROM_GAME, i(18246)),	-- Black War Raptor (MOUNT!) Pre 2.0 Version
-					i(34129),	-- Swift Warstrider
+					i(34129),	-- Swift Warstrider (MOUNT!)
 				}),
 			}),
 			n(52033,  {	-- Rogoc <Bloodthirsty Gladiator>
@@ -3753,77 +3760,78 @@ root("Zones", m(KALIMDOR, {
 				["coord"] = { 69.8, 41.0, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(91008, {	-- Black Dragon Turtle (Panda)
+					i(91008, {	-- Black Dragon Turtle (MOUNT!) (PANDA)
 						["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 					}),
-					i(87795, {	-- Black Dragon Turtle (All races except pandaren)
+					i(87795, {	-- Black Dragon Turtle (MOUNT!) (NON-P)
 						["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 					}),
-					i(91009, {	-- Blue Dragon Turtle (Panda)
+					i(91009, {	-- Blue Dragon Turtle (MOUNT!) (PANDA)
 						["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 					}),
-					i(87796, {	-- Blue Dragon Turtle (All races except pandaren)
+					i(87796, {	-- Blue Dragon Turtle (MOUNT!) (NON-P)
 						["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 					}),
-					i(91005, {	-- Brown Dragon Turtle (Panda)
+					i(91005, {	-- Brown Dragon Turtle (MOUNT!) (PANDA)
 						["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 					}),
-					i(87797, {	-- Brown Dragon Turtle (all races except pandaren)
+					i(87797, {	-- Brown Dragon Turtle (MOUNT!) (NON-P)
 						["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 					}),
-					i(91011, {	-- Great Black Dragon Turtle (Panda)
+					i(91011, {	-- Great Black Dragon Turtle (MOUNT!) (PANDA)
 						["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 					}),
-					i(87802, {	-- Great Black Dragon Turtle (non-pandaren)
+					i(87802, {	-- Great Black Dragon Turtle (MOUNT!) (NON-P)
 						["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 					}),
-					i(91013, {	-- Great Blue Dragon Turtle (Panda)
+					i(91013, {	-- Great Blue Dragon Turtle (MOUNT!) (PANDA)
 						["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 					}),
-					i(87803, {	-- Great Blue Dragon Turtle (non-pandaren)
+					i(87803, {	-- Great Blue Dragon Turtle (MOUNT!) (NON-P)
 						["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 					}),
-					i(91014, {	-- Great Brown Dragon Turtle (Panda)
+					i(91014, {	-- Great Brown Dragon Turtle (MOUNT!) (PANDA)
 						["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 					}),
-					i(87804, {	-- Great Brown Dragon Turtle (non-pandaren)
+					i(87804, {	-- Great Brown Dragon Turtle (MOUNT!) (NON-P)
 						["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 					}),
-					i(91012, {	-- Great Green Dragon Turtle (Panda)
+					i(91012, {	-- Great Green Dragon Turtle (MOUNT!) (PANDA)
 						["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 					}),
-					i(87801, {	-- Great Green Dragon Turtle (non-pandaren)
+					i(87801, {	-- Great Green Dragon Turtle (MOUNT!) (NON-P)
 						["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 					}),
-					i(91015, {	-- Great Purple Dragon Turtle (Panda)
+					i(91015, {	-- Great Purple Dragon Turtle (MOUNT!) (PANDA)
 						["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 					}),
-					i(87805),	-- Great Purple Dragon Turtle
-					i(91010, {	-- Great Red Dragon Turtle (Panda)
-						["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
-					}),
-					i(82811, {	-- Great Red Dragon Turtle (non-pandaren)
+					i(87805, {	-- Great Purple Dragon Turtle (MOUNT!) (NON-P)
 						["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 					}),
-					i(91004, {	-- Green Dragon Turtle (Panda)
+					i(91010, {	-- Great Red Dragon Turtle (MOUNT!) (PANDA)
 						["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 					}),
-					i(82765, {	-- Green Dragon Turtle (non-pandaren)
+					i(82811, {	-- Great Red Dragon Turtle (MOUNT!) (NON-P)
 						["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 					}),
-					i(91006, {	-- Purple Dragon Turtle (Panda)
+					i(91004, {	-- Green Dragon Turtle (MOUNT!) (PANDA)
 						["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 					}),
-					i(87799, {	-- Purple Dragon Turtle (All races except pandaren)
+					i(82765, {	-- Green Dragon Turtle (MOUNT!) (NON-P)
 						["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 					}),
-					i(91007, {	-- Red Dragon Turtle (Panda)
+					i(91006, {	-- Purple Dragon Turtle (MOUNT!) (PANDA)
 						["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 					}),
-					i(87800, {	-- Red Dragon Turtle (All races except pandaren)
+					i(87799, {	-- Purple Dragon Turtle (MOUNT!) (NON-P)
 						["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 					}),
-					un(REMOVED_FROM_GAME, i(91016)),	-- Reins of the Great Red Dragon Turtle (Never Implemented?)
+					i(91007, {	-- Red Dragon Turtle (MOUNT!) (PANDA)
+						["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+					}),
+					i(87800, {	-- Red Dragon Turtle (MOUNT!) (NON-P)
+						["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
+					}),
 				},
 			}),
 			n(45546,  {	-- Vizna Bangwrench <Engineering Supplies>

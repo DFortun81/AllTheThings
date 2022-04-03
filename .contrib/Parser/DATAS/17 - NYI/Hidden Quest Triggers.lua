@@ -857,16 +857,9 @@ root("HiddenQuestTriggers", {
 		--------------------
 		-- NYI VERSIONS OF QUESTS WHICH ARE COMPLETED TOGETHER WITH IMPLEMENTED VERSION OF THESE QUESTS
 		-- TEMPORARY SOLUTION AS HQT FOR NOW
-		q(9733),	-- Warning the Cenarion Circle - completed with quest 9724
-		q(9734),	-- Return to the Marsh - completed with quest 9732
 		q(9749),	-- They're Alive! Maybe... - completed with quest 9670
-		q(10088),	-- When This Mine's a-Rockin' - completed with quest 10079
-		q(10125),	-- Mission: Disrupt Communications - completed with quest 10144 & 10208
-		q(10207),	-- Forward Base: Reaver's Fall REUSE - completed with quest 10124 & 10143
-		q(10214),	-- When This Mine's a-Rockin' - completed with quest 10079
+
 		q(10815),	-- The Journal of Val'zareq: Portends of War - completed with quest 10793
-		q(10925),	-- Evil Draws Near - completed with quest 10923
-		q(11072),	-- Adversarial Blood - completed with quest 11885
 		q(14411),	-- The Wilds of Feralas - completed with quest 14410 & 26589
 		q(14414),	-- The Wilds of Feralas - completed with quest 14410 & 26589
 		q(25198),	-- Winnoa Pineforest - completed with quest 24807
@@ -1116,7 +1109,6 @@ root("HiddenQuestTriggers", {
 		q(41694),	-- World Quests Available — triggers when turning in "Uniting the Isles," along with the original "have all friendly reps" and present "just be 110" versions
 		q(46735),	-- Contribute to Command Center — during "Begin Construction" quest, not sure if that matters
 		q(46277),	-- Contribute to Mage Tower
-		q(46736),	-- Contribute to Nether Disruptor
 		q(46751),	-- Tracking Quest — triggered when turning in "A Found Memento" (#46268)
 		q(47869),	-- triggered when turning in "Light's Exodus," no info in wowhead
 		q(48668),	-- Lightforged Beacon: City Center — triggers during the cutscene while on "Into the Night"
@@ -1207,6 +1199,8 @@ root("HiddenQuestTriggers", {
 		q(42648),	-- triggered after getting Extra Thick Mojo in Durotar when on the Legion intro quest To Be Prepared
 		q(45341),	-- After obtaining the Chef's Hat toy
 		q(47285),	-- Triggers together with obtaining Equipment Blueprint: Tuskarr Fishing Net
+		q(42530),	-- FLAG - Portal - Alchemy Room (Using 138030)
+		q(42527),	-- FLAG - Portal - Guard Station (Using 138027)
 
 		-- Artifact Power questlines
 		q(45851),	-- Dual Boss Trait Complete - triggered after bm hunter artifact power questline
@@ -1615,6 +1609,7 @@ root("HiddenQuestTriggers", {
 		q(59072),	-- speaking to Tasha Riley and joining the Council of Chaos in the BRD pet battle dungeon
 		q(47866),	-- triggered after step 8 of Lucid Nightmare secret
 		q(57032),	-- triggered the first time i completed a +4 mythic and looted Converging Lens of the Focusing Iris (Rank 1)
+		q(62688),	-- Crafted Converging Lens of the Focusing Iris (Rank 1) from Focused Life Anima
 		q(57035),	-- triggered when completing a +4 mythic and looting Bursting Seed of Life (Rank 1)
 		q(57036),	-- triggered when completing a +7 mythic and looting Magnifying Lens of the Focusing Iris (Rank 2)
 		q(57034),	-- triggered when completing a +7 mythic and looting Replicating Seed of Abundance (Rank 2)
@@ -3207,7 +3202,7 @@ root("HiddenQuestTriggers", {
 		q(33092),	-- FLAG - Proving Grounds - Tank Bronze
 		q(33094),	-- FLAG - Proving Grounds - Tank Gold
 		q(33093),	-- FLAG - Proving Grounds - Tank Silver
-		
+
 		--	Short-Supply Reward - UNKNOWN TRIGGERS
 		qNYI(33602),	-- Short-Supply Reward
 		qNYI(33603),	-- Short-Supply Reward

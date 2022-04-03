@@ -316,7 +316,7 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 106521 },	-- Consular Celestos
 							["sourceQuests"] = { 46791 },	-- Carried On the Wind
 							["g"] = {
-								i(143489, {		-- Raging Tempest Totem
+								i(143489, {	-- Farseer's Raging Tempest (MOUNT!)
 									["classes"] = { SHAMAN },
 								}),
 							},
@@ -675,9 +675,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 106001 },	-- Muln Earthfury
 							["maps"] = { 207, 209 },	-- Deepholm
 						}),
-						q(46940, {	-- Using Lost Knowledge
-							["u"] = REMOVED_FROM_GAME,
-						}),
 						q(43645, {	-- Wavespeaker's Trail
 							["sourceQuests"] = { 43644 },	-- To the Deeps
 							["classes"] = { SHAMAN },
@@ -762,6 +759,7 @@ _.ExpansionFeatures =
 							i(136938, {	-- Tome of Hex: Compy
 								["spellID"] = 210873,	-- Hex(Compy)
 								["classes"] = { SHAMAN },
+								["f"] = RECIPES,
 							}),
 							i(136937),	-- Vol'jin's Serpent Totem (TOY!)
 							i(138490),	-- Waterspeaker's Totem (TOY!)

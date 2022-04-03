@@ -788,7 +788,7 @@ profession(ARCHAEOLOGY, {
 			i(64387),	-- Vicious Ancient Fish
 		}),
 		filter(MOUNTS, {
-			i(60954),	-- Fossilized Raptor
+			i(60954),	-- Fossilized Raptor (MOUNT!)
 		}),
 		filter(TOYS, {
 			i(69776),	-- Ancient Amber (TOY!)
@@ -982,7 +982,7 @@ profession(ARCHAEOLOGY, {
 				["coord"] = { 45.8, 44.6, HIGHMOUNTAIN },
 				["sourceQuest"] = 41192,	-- The Right Path
 				["g"] = {
-					i(131734),	-- Spirit of Eche'ro
+					i(131734),	-- Spirit of Eche'ro (MOUNT!)
 					crit(13, {	-- Spirit of Eche'ro
 						["achievementID"] = 10603,	-- A Keen Eye
 					}),
@@ -1011,13 +1011,13 @@ profession(ARCHAEOLOGY, {
 			q(41190, {	-- Crystal Eyes
 				["provider"] = { "n", 103485 },	-- Lessah Moonwater <Archaeologist>
 				["isWeekly"] = true,
-				["coord"] = { 45.8, 44.6, HIGHMOUNTAIN },
+				["coord"] = { 45.8, 44.6, HIGHMOUNTAIN },	-- 46.9, 60.2, 750 },	-- Thunder Totem ?
 				["sourceQuest"] = 41189,	-- A New Lead
 			}),
 			q(41191, {	-- Drogbar Deception
 				["provider"] = { "n", 103485 },	-- Lessah Moonwater <Archaeologist>
 				["isWeekly"] = true,
-				["coord"] = { 45.8, 44.6, HIGHMOUNTAIN },
+				["coord"] = { 45.8, 44.6, HIGHMOUNTAIN },	-- 46.9, 60.2, 750 },	-- Thunder Totem ?
 				["sourceQuest"] = 41190,	-- Crystal Eyes
 				["g"] = {
 					i(131736),	-- Prizerock Neckband
@@ -1658,7 +1658,7 @@ profession(ARCHAEOLOGY, {
 		}),
 		filter(MOUNTS, {
 			sp(92148, {	-- Scepter of Azj'Aqir
-				i(64883),	-- Ultramarine Qiraji Battle Tank
+				i(64883),	-- Ultramarine Qiraji Battle Tank (MOUNT!)
 			}),
 		}),
 		filter(TOYS, {

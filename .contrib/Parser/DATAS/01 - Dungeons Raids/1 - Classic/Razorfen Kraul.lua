@@ -430,7 +430,7 @@ root("Instances", tier(CLASSIC_TIER, {
 							6522,	-- An Unholy Alliance
 							1101,	-- The Crone of the Kraul
 						},
-						["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(1102) or C_QuestLog.IsQuestFlaggedCompleted(6522) or C_QuestLog.IsQuestFlaggedCompleted(1101)); end]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					})),
 					i(5793),	-- Razorflank's Heart

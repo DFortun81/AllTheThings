@@ -11,8 +11,8 @@ _.Zones =
 					["coord"] = { 48.2, 21.8, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(73838),	-- Mountain Horse
-						i(73839),	-- Swift Mountain Horse
+						i(73838),	-- Mountain Horse (MOUNT!)
+						i(73839),	-- Swift Mountain Horse (MOUNT!)
 					},
 				}),
 				n(4168,  {	-- Elynna <Tailoring Supplies>
@@ -90,7 +90,7 @@ _.Zones =
 						i(8629),	-- Striped Nightsaber (MOUNT!)
 						i(8631),	-- Striped Frostsaber (MOUNT!)
 						i(8632),	-- Spotted Frostsaber (MOUNT!)
-						i(47100),	-- Reins of the Striped Dawnsaber
+						i(47100),	-- Striped Dawnsaber (MOUNT!)
 						un(REMOVED_FROM_GAME, i(12302)),	-- Ancient Frostsaber (MOUNT!)
 						un(REMOVED_FROM_GAME, i(12303)),	-- Nightsaber (MOUNT!)
 					},

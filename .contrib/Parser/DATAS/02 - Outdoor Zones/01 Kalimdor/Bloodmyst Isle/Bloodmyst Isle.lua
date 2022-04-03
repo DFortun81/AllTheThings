@@ -11,7 +11,6 @@ _.Zones =
 			-- #endif
 			["lvl"] = 10,
 			["groups"] = {
-				-- #if AFTER WRATH
 				n(ACHIEVEMENTS, {
 					ach(4926, {	-- Bloodmyst Isle Quests
 						["races"] = ALLIANCE_ONLY,
@@ -47,8 +46,14 @@ _.Zones =
 							}),
 						},
 					}),
+					removeclassicphase(ach(861, {	-- Explore Bloodmyst Isle
+						-- #if BEFORE WRATH
+						["description"] = "Explore Bloodmyst Isle, revealing the covered areas of the world map.",
+						["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
+						-- #endif
+					})),
 				}),
-				-- #endif
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
 					p(628, {	-- Infected Fawn

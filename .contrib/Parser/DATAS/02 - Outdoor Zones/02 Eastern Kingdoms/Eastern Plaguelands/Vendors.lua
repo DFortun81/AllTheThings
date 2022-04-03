@@ -26,7 +26,7 @@ _.Zones =
 					["classes"] = { DEATHKNIGHT },
 					["coord"] = { 84.0, 49.8, EASTERN_PLAGUELANDS },
 					["g"] = {
-						i(40775),	-- Winged Steed of the Ebon Blade
+						i(40775),	-- Winged Steed of the Ebon Blade (MOUNT!)
 						i(136796, {	-- Necrophile Tome: Corpse Exploder
 							["spellID"] = 127344,	-- Corpse Exploder
 						}),

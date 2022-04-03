@@ -11,7 +11,7 @@ _.ExpansionFeatures =
 					n(ACHIEVEMENTS, {	-- Achievements
 						-- TODO: add sourceQuests to the criteria, or use _quests ?
 						a(ach(9539, {	-- Advanced Husbandry (Alliance)
-							i(116668),		-- Armored Frostboar
+							i(116668),		-- Armored Frostboar (MOUNT!)
 							crit(1),		-- Maimclaw Killed
 							crit(2),		-- Beast-Lasher Killed
 							crit(3),		-- Moth of Wrath Killed
@@ -20,7 +20,7 @@ _.ExpansionFeatures =
 							crit(6),		-- Karak Killed
 						})),
 						h(ach(9705, {	-- Advanced Husbandry (Horde)
-							i(116668),		-- Armored Frostboar
+							i(116668),		-- Armored Frostboar (MOUNT!)
 							crit(1),		-- Maimclaw Killed
 							crit(2),		-- Beast-Lasher Killed
 							crit(3),		-- Moth of Wrath Killed
@@ -49,7 +49,7 @@ _.ExpansionFeatures =
 							},
 						}),
 						a(ach(9540, {	-- The Stable Master (Alliance)
-							i(116781),		-- Armored Frostwolf
+							i(116781),		-- Armored Frostwolf (MOUNT!)
 							title(277),		-- Stable Master
 							crit(1),		-- Maimclaw Killed
 							crit(2),		-- Beast-Lasher Killed
@@ -59,7 +59,7 @@ _.ExpansionFeatures =
 							crit(6),		-- Karak Killed
 						})),
 						h(ach(9706, {	-- The Stable Master (Horde)
-							i(116781),		-- Armored Frostwolf
+							i(116781),		-- Armored Frostwolf (MOUNT!)
 							title(277),		-- Stable Master
 							crit(1),		-- Maimclaw Killed
 							crit(2),		-- Beast-Lasher Killed
@@ -120,7 +120,7 @@ _.ExpansionFeatures =
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 37003,	-- Boar Training: Orc Hunters
 							["g"] = {
-								i(116675),	-- Trained Rocktusk
+								i(116675),	-- Trained Rocktusk (MOUNT!)
 							},
 						}),
 						q(37001, {	-- Boar Training: Thundercall
@@ -187,7 +187,7 @@ _.ExpansionFeatures =
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 36993,	-- Clefthoof Training: Orc Hunters
 							["g"] = {
-								i(116656),	-- Trained Icehoof
+								i(116656),	-- Trained Icehoof (MOUNT!)
 							},
 						}),
 						q(36991, {	-- Clefthoof Training: Thundercall
@@ -225,7 +225,7 @@ _.ExpansionFeatures =
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 37020,	-- Elekk Training: Orc Hunters
 							["g"] = {
-								i(116662),	-- Trained Meadowstomper
+								i(116662),	-- Trained Meadowstomper (MOUNT!)
 							},
 						}),
 						q(37018, {	-- Elekk Training: Thundercall
@@ -281,7 +281,7 @@ _.ExpansionFeatures =
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 37012,	-- Riverbeast Training: Orc Hunters
 							["g"] = {
-								i(116676),	-- Trained Riverwallow
+								i(116676),	-- Trained Riverwallow (MOUNT!)
 							},
 						}),
 						q(37010, {	-- Riverbeast Training: Thundercall
@@ -344,7 +344,7 @@ _.ExpansionFeatures =
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 36981,	-- Talbuk Training: Orc Hunters
 							["g"] = {
-								i(116774),	-- Trained Silverpelt
+								i(116774),	-- Trained Silverpelt (MOUNT!)
 							},
 						}),
 						q(36979, {	-- Talbuk Training: Thundercall
@@ -394,7 +394,7 @@ _.ExpansionFeatures =
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 37027,	-- Wolf Training: Orc Hunters
 							["g"] = {
-								i(116784),	-- Trained Snarler
+								i(116784),	-- Trained Snarler (MOUNT!)
 							},
 						}),
 						q(37025, {	-- Wolf Training: Thundercall
@@ -457,7 +457,7 @@ _.ExpansionFeatures =
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37040,	-- Boar Training: Orc Hunters
 							["g"] = {
-								i(116675),	-- Trained Rocktusk
+								i(116675),	-- Trained Rocktusk (MOUNT!)
 							},
 						}),
 						q(37038, {	-- Boar Training: Thundercall
@@ -524,7 +524,7 @@ _.ExpansionFeatures =
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37058,	-- Clefthoof Training: Orc Hunters
 							["g"] = {
-								i(116656),	-- Trained Icehoof
+								i(116656),	-- Trained Icehoof (MOUNT!)
 							},
 						}),
 						q(37056, {	-- Clefthoof Training: Thundercall
@@ -562,7 +562,7 @@ _.ExpansionFeatures =
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37068,	-- Elekk Training: Orc Hunters
 							["g"] = {
-								i(116662),	-- Trained Meadowstomper
+								i(116662),	-- Trained Meadowstomper (MOUNT!)
 							},
 						}),
 						q(37066, {	-- Elekk Training: Thundercall
@@ -618,7 +618,7 @@ _.ExpansionFeatures =
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37078,	-- Riverbeast Training: Orc Hunters
 							["g"] = {
-								i(116676),	-- Trained Riverwallow
+								i(116676),	-- Trained Riverwallow (MOUNT!)
 							},
 						}),
 						q(37076, {	-- Riverbeast Training: Thundercall
@@ -681,7 +681,7 @@ _.ExpansionFeatures =
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37103,	-- Talbuk Training: Orc Hunters
 							["g"] = {
-								i(116774),	-- Trained Silverpelt
+								i(116774),	-- Trained Silverpelt (MOUNT!)
 							},
 						}),
 						q(37101, {	-- Talbuk Training: Thundercall
@@ -731,7 +731,7 @@ _.ExpansionFeatures =
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37110,	-- Wolf Training: Orc Hunters
 							["g"] = {
-								i(116784),	-- Trained Snarler
+								i(116784),	-- Trained Snarler (MOUNT!)
 							},
 						}),
 						q(37108, {	-- Wolf Training: Thundercall

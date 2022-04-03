@@ -41,13 +41,13 @@ _.Zones =
 									["coord"] = { 58.9, 68.1, BOREAN_TUNDRA },
 									["races"] = ALLIANCE_ONLY,
 									["g"] = {
-										i(25471),	-- Ebon Gryphon Mount
-										i(25470),	-- Golden Gryphon Mount
-										i(25472),	-- Snowy Gryphon Mount
-										i(25473),	-- Swift Blue Gryphon Mount
-										i(25528),	-- Swift Green Gryphon Mount
-										i(25529),	-- Swift Purple Gryphon Mount
-										i(25527),	-- Swift Red Gryphon Mount
+										i(25471),	-- Ebon Gryphon (MOUNT!)
+										i(25470),	-- Golden Gryphon (MOUNT!)
+										i(25472),	-- Snowy Gryphon (MOUNT!)
+										i(25473),	-- Swift Blue Gryphon (MOUNT!)
+										i(25528),	-- Swift Green Gryphon (MOUNT!)
+										i(25529),	-- Swift Purple Gryphon (MOUNT!)
+										i(25527),	-- Swift Red Gryphon (MOUNT!)
 									},
 								}),
 							},
@@ -88,13 +88,13 @@ _.Zones =
 									["coord"] = { 42.2, 55.4, BOREAN_TUNDRA },
 									["races"] = HORDE_ONLY,
 									["g"] = {
-										i(25475),	-- Blue Wind Rider
-										i(25476),	-- Green Wind Rider
-										i(25532),	-- Swift Blue Wind Rider
-										i(25531),	-- Swift Green Wind Rider
-										i(25533),	-- Swift Purple Wind Rider
-										i(25477),	-- Swift Red Wind Rider
-										i(25474),	-- Tawny Wind Rider
+										i(25475),	-- Blue Wind Rider (MOUNT!)
+										i(25476),	-- Green Wind Rider (MOUNT!)
+										i(25532),	-- Swift Yellow Wind Rider (MOUNT!)
+										i(25531),	-- Swift Green Wind Rider (MOUNT!)
+										i(25533),	-- Swift Purple Wind Rider (MOUNT!)
+										i(25477),	-- Swift Red Wind Rider (MOUNT!)
+										i(25474),	-- Tawny Wind Rider (MOUNT!)
 									},
 								}),
 							},

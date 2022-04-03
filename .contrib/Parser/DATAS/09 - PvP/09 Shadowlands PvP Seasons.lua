@@ -1092,7 +1092,7 @@ root("PVP", pvp(tier(SL_TIER, {
 				i(186860),	-- Cosmic Gladiator's Xiphos
 			}),
 		}),
-		n(PVP_ELITE, bubbleDown({["modID"] = 57 }, {
+		n(PVP_ELITE, bubbleDown({["modID"] = 14, ["bonusID"] = 7551}, {	-- Elite/Duelist Gear. Do not use more filters, Elite Gear
 			n(BACK, {
 				i(186780),	-- Cosmic Gladiator's Cloak
 				i(186781),	-- Cosmic Gladiator's Drape
@@ -1117,11 +1117,6 @@ root("PVP", pvp(tier(SL_TIER, {
 				i(186799),	-- Cosmic Gladiator's Silk Trousers
 				i(186791),	-- Cosmic Gladiator's Silk Vestments
 				i(186804),	-- Cosmic Gladiator's Silk Wristwraps
-			}),
-			n(FINGER, {
-				i(186785),	-- Cosmic Gladiator's Band
-				i(186784),	-- Cosmic Gladiator's Ring
-				i(186786),	-- Cosmic Gladiator's Signet
 			}),
 			filter(LEATHER, {
 				i(186818),	-- Cosmic Gladiator's Leather Belt
@@ -1159,11 +1154,6 @@ root("PVP", pvp(tier(SL_TIER, {
 				i(186822),	-- Cosmic Gladiator's Chain Vest
 				i(186836),	-- Cosmic Gladiator's Chain Wristguards
 			}),
-			n(NECK, {
-				i(186789),	-- Cosmic Gladiator's Amulet
-				i(186787),	-- Cosmic Gladiator's Necklace
-				i(186788),	-- Cosmic Gladiator's Pendant
-			}),
 			filter(PLATE, {
 				i(186838),	-- Cosmic Gladiator's Plate Chestguard
 				i(186839),	-- Cosmic Gladiator's Plate Chestplate
@@ -1181,17 +1171,6 @@ root("PVP", pvp(tier(SL_TIER, {
 				i(186840),	-- Cosmic Gladiator's Plate Warboots
 				i(186847),	-- Cosmic Gladiator's Plate Wargreaves
 				i(186852),	-- Cosmic Gladiator's Plate Wristguards
-			}),
-			n(-386, {	-- Trinket
-				i(186866),	-- Cosmic Gladiator's Badge of Ferocity
-				i(188778),	-- Cosmic Gladiator's Devouring Malediction
-				i(186868),	-- Cosmic Gladiator's Emblem
-				i(188775),	-- Cosmic Gladiator's Eternal Aegis
-				i(186867),	-- Cosmic Gladiator's Insignia of Alacrity
-				i(186869),	-- Cosmic Gladiator's Medallion
-				i(186870),	-- Cosmic Gladiator's Relentless Brooch
-				i(188766),	-- Cosmic Gladiator's Resonator
-				i(186871),	-- Cosmic Gladiator's Sigil of Adaptation
 			}),
 			n(WEAPONS, {
 				i(186863),	-- Cosmic Gladiator's Ballista
@@ -1232,7 +1211,7 @@ root("PVP", pvp(tier(SL_TIER, {
 				["races"] = HORDE_ONLY,
 			}),
 		}),
-		n(-989, {	-- The Great Vault
+		o(353484, {	-- The Great Vault
 			["description"] = "Can Only be obtained from the great vault.",
 			["g"] = bubbleDown({ ["bonusID"] = 7897 }, {
 				cl(DEATHKNIGHT, {
@@ -1368,6 +1347,14 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(178287),	-- Sinful Aspirant's Silk Shawl
 					i(178290),	-- Sinful Aspirant's Silk Belt
 					i(178294),	-- Sinful Aspirant's Silk Bindings
+					i(178302),	-- Sinful Aspirant's Silk Vestiment
+					i(178307),	-- Sinful Aspirant's Silk Slippers
+					i(178312),	-- Sinful Aspirant's Silk Grasps
+					i(178314),	-- Sinful Aspirant's Silk Visage
+					i(178318),	-- Sinful Aspirant's Silk Britches
+					i(178323),	-- Sinful Aspirant's Silk Shoulderpads
+					i(178326),	-- Sinful Aspirant's Silk Cincture
+					i(178330),	-- Sinful Aspirant's Silk Armbands
 				}),
 				filter(LEATHER, {
 					i(178269),	-- Sinful Aspirant's Leather Tunic

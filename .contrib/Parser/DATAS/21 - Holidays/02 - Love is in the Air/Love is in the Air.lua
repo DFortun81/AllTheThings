@@ -11,6 +11,8 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 	-- #else
 	["holidayID"] = 235468,
 	-- #endif
+	["description"] = "Start: 02/06 at 10:00 AM\nEnd: 02/20 at 10:00 AM",
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. LOVE_IS_IN_THE_AIR .. [[, 2, 6, 2, 20); end]],
 	["groups"] = {
 		-- #if BEFORE WRATH
 		n(COMMON_BOSS_DROPS, {
@@ -221,7 +223,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 						["lvl"] = 98,
 						-- #endif
 						["groups"] = {
-							i(50250, {	-- X-45 Heartbreaker
+							i(50250, {	-- X-45 Heartbreaker (MOUNT!)
 								["timeline"] = { "added 3.3.0" },
 							}),
 							i(49715, {	-- Forever-Lovely Rose
@@ -353,7 +355,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 			}),
 			tier(WOTLK_TIER, {
 				inst(277, {	-- Halls of Stone
-					["maps"] = { 140 },
+					["maps"] = { HALLS_OF_STONE },
 					["groups"] = {
 						d(2, {	-- Heroic
 							n(27975, {	-- Maiden of Grief
@@ -363,7 +365,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 					},
 				}),
 				inst(285, {	-- Utgarde Keep
-					["maps"] = { 133, 134, 135 },
+					["maps"] = { UTGARDE_KEEP, 134, 135 },
 					["groups"] = {
 						d(1, {	-- Normal
 							n(23953, {	-- Prince Keleseth
@@ -493,6 +495,64 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 							})),
 						}),]]--
 					},
+				}),
+			}),
+			-- #endif
+			-- #if AFTER 9.1.5
+			tier(SL_TIER, {
+				inst(1194, {	-- Tazavesh, the Veiled Market
+					d(2, {	-- Heroic
+						e(2455, {	-- So'leah
+							["crs"] = { 177269 },	-- So'leah
+							["g"] = {
+								i(188692, {	-- Pouch of Ebon Rose Petals
+									["timeline"] = { "added 9.1.5" },
+								}),
+							},
+						}),
+					}),
+					d(23, {	-- Mythic
+						e(2455, {	-- So'leah
+							["crs"] = { 177269 },	-- So'leah
+							["g"] = {
+								i(188692, {	-- Pouch of Ebon Rose Petals
+									["timeline"] = { "added 9.1.5" },
+								}),
+							},
+						}),
+					}),
+				}),
+				inst(1183, {	-- Plaguefall
+					d(1, {	-- Normal
+						e(2423, {	-- Domina Venomblade
+							["crs"] = { 164266 },	-- Domina Venomblade
+							["g"] = {
+								i(188692, {	-- Pouch of Ebon Rose Petals
+									["timeline"] = { "added 9.1.5" },
+								}),
+							},
+						}),
+					}),
+					d(2, {	-- Heroic
+						e(2423, {	-- Domina Venomblade
+							["crs"] = { 164266 },	-- Domina Venomblade
+							["g"] = {
+								i(188692, {	-- Pouch of Ebon Rose Petals
+									["timeline"] = { "added 9.1.5" },
+								}),
+							},
+						}),
+					}),
+					d(23, {	-- Mythic
+						e(2423, {	-- Domina Venomblade
+							["crs"] = { 164266 },	-- Domina Venomblade
+							["g"] = {
+								i(188692, {	-- Pouch of Ebon Rose Petals
+									["timeline"] = { "added 9.1.5" },
+								}),
+							},
+						}),
+					}),
 				}),
 			}),
 			-- #endif
@@ -1591,7 +1651,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 					i(22235, {	-- Truesilver Shafted Arrow
 						["cost"] = { { "i", 49927, 40 } },	-- 40x Love Token
 					}),
-					i(72146, {	-- Swift Lovebird
+					i(72146, {	-- Swift Lovebird (MOUNT!)
 						["timeline"] = { "added 4.3.0.15005" },
 						["cost"] = { { "i", 49927, 270 } },	-- 270x Love Token
 					}),
@@ -2058,7 +2118,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 	},
 }));
 
-_.NeverImplemented = { bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	-- #if ANYCLASSIC
 	["npcID"] = -50,
 	-- #else
@@ -2073,4 +2133,4 @@ _.NeverImplemented = { bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			["timeline"] = { "created 7.3.0.24484" },
 		}),
 	},
-})};
+}));

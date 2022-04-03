@@ -205,7 +205,7 @@ _.Zones =
 						{ 36.58, 85.67, TOWNLONG_STEPPES },
 					},
 					["g"] = {
-						i(94229),	-- Reins of the Slate Primordial Direhorn
+						i(94229),	-- Slate Primordial Direhorn (MOUNT!)
 					},
 				}),
 			}),

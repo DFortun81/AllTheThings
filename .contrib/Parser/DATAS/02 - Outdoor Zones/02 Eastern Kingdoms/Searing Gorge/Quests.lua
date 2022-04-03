@@ -26,10 +26,6 @@ _.Zones =
 						i(63216),	-- Jack's Lucky Charm
 					},
 				}),
-				q(27470, {	-- A Potential Ally
-					["provider"] = { "n", 14625 },	-- Overseer Oilfist
-					["coord"] = { 38.1, 26.9, SEARING_GORGE },
-				}),
 				q(27958, {	-- A Proper Antivenom
 					["provider"] = { "n", 47268 },	-- Prisanne Dustcropper
 					["coord"] = { 68.7, 53.3, SEARING_GORGE },

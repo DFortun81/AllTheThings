@@ -80,7 +80,7 @@ _.Zones =
 								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["sourceQuest"] = 44987,	-- Direbeak Team Rumble
 								["g"] = {
-									i(137579),	-- Brilliant Direbeak
+									i(137579),	-- Brilliant Direbeak (MOUNT!)
 								},
 							}),
 							q(44979, {	-- Dire Prey

@@ -57,6 +57,9 @@ _.Zones =
 				["coord"] = { 37.8, 55.8, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
+					i(171247, {	-- Abyssal Shard
+						["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
+					}),
 					i(167167, {	-- Ankoan Waveray (MOUNT!)
 						["cost"] = { { "c", 1721, 250 }, },	-- 250x Prismatic Manapearl
 					}),
@@ -748,7 +751,7 @@ _.Zones =
 				["coord"] = { 49.1, 62.2, 1355 },
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(169326, {	-- Abyssal Shard
+					i(171247, {	-- Abyssal Shard
 						["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
 					}),
 					i(169885, {	-- Budding Deepcoral

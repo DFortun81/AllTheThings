@@ -722,14 +722,6 @@ _.Zones =
 							i(128569),	-- Formula: Enchant Ring - Binding of Versatility (Rank 1)
 						},
 					}),
-					---
-					q(42971, {	-- Controlling the Elements
-						["provider"] = { "n", 42465 },	-- Therazane <The Stonemother>
-						["coord"] = { 56.4, 12.2, 207 },
-						["g"] = {
-							sp(217762),	-- Formula: Tome of Illusions: Elemental Lords
-						},
-					}),
 				}),
 				prof(ENGINEERING, {
 					q(40545, {	-- Aww Scrap!
@@ -1702,7 +1694,7 @@ _.Zones =
 					q(40188, {	-- Best Served Cold
 						["sourceQuests"] = { 40187 },	-- Links in the Chain
 						["provider"] = { "n", 98964 },	-- Celea
-						["coord"] = { 47.4, 44.2, ASZUNA },
+						["coord"] = { 47.4, 44.2, AZSUNA },
 						["g"] = {
 							recipe(194735),	-- Battlebound Armbands (Rank 1)
 							recipe(194740),	-- Battlebound Grips (Rank 1)
@@ -1711,7 +1703,7 @@ _.Zones =
 					q(40189, {	-- Naga Know-How
 						["sourceQuests"] = { 40187 },	-- Links in the Chain
 						["provider"] = { "n", 98964 },	-- Celea
-						["coord"] = { 47.4, 44.2, ASZUNA },
+						["coord"] = { 47.4, 44.2, AZSUNA },
 						["g"] = {
 							i(137902),	-- Recipe: Battlebound Spaulders (Rank 2)
 						},
@@ -1748,7 +1740,7 @@ _.Zones =
 					q(40194, {	-- Reclaimed Cargo
 						["sourceQuests"] = { 40193 },	-- Getting the Kinks Out
 						["provider"] = { "n", 98964 },	-- Celea
-						["coord"] = { 47.4, 44.2, ASZUNA },
+						["coord"] = { 47.4, 44.2, AZSUNA },
 						["g"] = {
 							i(137900),	-- Recipe: Battlebound Armbands (Rank 2)
 							i(137901),	-- Recipe: Battlebound Girdle (Rank 2)
@@ -1757,12 +1749,12 @@ _.Zones =
 					q(40195, {	-- A Daring Rescue
 						["sourceQuests"] = { 40194 },	-- Reclaimed Cargo
 						["provider"] = { "n", 98964 },	-- Celea
-						["coord"] = { 47.4, 44.2, ASZUNA },
+						["coord"] = { 47.4, 44.2, AZSUNA },
 					}),
 					q(40327, {	-- Testing the Metal
 						["sourceQuests"] = { 40195 },	-- A Daring Rescue
 						["provider"] = { "n", 99689 },	-- Taldranis
-						["coord"] = { 51.6, 58.0, ASZUNA },
+						["coord"] = { 51.6, 58.0, AZSUNA },
 						["g"] = {
 							i(137907),	-- Recipe: Battlebound Hauberk (Rank 2)
 						},
@@ -1834,7 +1826,7 @@ _.Zones =
 					q(40208, {	-- Eye of Azshara: Scales of the Sea
 						["sourceQuests"] = { 40206 },	-- A Debt Paid
 						["provider"] = { "n", 98964 },	-- Celea
-						["coord"] = { 47.4, 44.2, ASZUNA },
+						["coord"] = { 47.4, 44.2, AZSUNA },
 						["maps"] = { 713 },	-- Eye of Azshara
 						["g"] = {
 							i(137904),	-- Recipe: Battlebound Warhelm (Rank 2)
@@ -1843,7 +1835,7 @@ _.Zones =
 					q(40207, {	-- Scales of the Arcane
 						["sourceQuests"] = { 40206 },	-- A Debt Paid
 						["provider"] = { "n", 98964 },	-- Celea
-						["coord"] = { 47.4, 44.2, ASZUNA },
+						["coord"] = { 47.4, 44.2, AZSUNA },
 						["g"] = {
 							i(137905),	-- Recipe: Battlebound Grips (Rank 2)
 						},
@@ -1851,7 +1843,7 @@ _.Zones =
 					q(40209, {	-- Scales of the Earth
 						["sourceQuests"] = { 40206 },	-- A Debt Paid
 						["provider"] = { "n", 98964 },	-- Celea
-						["coord"] = { 47.4, 44.2, ASZUNA },
+						["coord"] = { 47.4, 44.2, AZSUNA },
 						["g"] = {
 							i(137903),	-- Recipe: Battlebound Leggings (Rank 2)
 						},
@@ -1863,7 +1855,7 @@ _.Zones =
 							40209,	-- Scales of the Earth
 						},
 						["provider"] = { "n", 98964 },	-- Celea
-						["coord"] = { 47.4, 44.2, ASZUNA },
+						["coord"] = { 47.4, 44.2, AZSUNA },
 					}),
 					q(40211,  {	-- Demon Flesh
 						["sourceQuests"] = {

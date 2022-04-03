@@ -644,7 +644,7 @@ _.ExpansionFeatures =
 							["classes"] = { MONK },
 							["coord"] = { 73.9, 88.9, KUN_LAI_SUMMIT },
 							["g"] = {
-								i(142225, {		-- Ban-Lu, Grandmaster's Companion
+								i(142225, {		-- Ban-Lu, Grandmaster's Companion (MOUNT!)
 									["classes"] = { MONK },
 								}),
 							},
@@ -693,9 +693,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 							["classes"] = { MONK },
 							["coord"] = { 51.4, 48.5, 709 },	-- The Wandering Isle
-						}),
-						q(46940, {	-- Using Lost Knowledge
-							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(41853, {	-- Zero to Hiro
 							["sourceQuests"] = { 41850 },	-- The Master of Swords

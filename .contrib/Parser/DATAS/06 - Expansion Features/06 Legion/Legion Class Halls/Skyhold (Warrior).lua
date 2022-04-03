@@ -584,7 +584,7 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 96469 },	-- Odyn
 							["sourceQuest"] = 46208,	-- A Godly Invitation
 							["g"] = {
-								i(142232, {		-- Battlelord's Bloodthirsty War Wyrm
+								i(142232, {	-- Battlelord's Bloodthirsty War Wyrm (MOUNT!)
 									["classes"] = { WARRIOR },
 								}),
 							},
@@ -615,9 +615,6 @@ _.ExpansionFeatures =
 							["g"] = {
 								i(139688),	-- Battlelord's Bracers
 							},
-						}),
-						q(46940, {	-- Using Lost Knowledge
-							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(40579, {	-- Weapons of Legend
 							["coord"] = { 58.3, 84.9, 695 },

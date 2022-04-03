@@ -4064,13 +4064,13 @@ _.Zones =
 				n(64518, {	-- Uncle Bigpocket <Used Yak Salesgrummle>
 					["coord"] = { 65.4, 61.6, KUN_LAI_SUMMIT },
 					["g"] = {
-						i(87789, {	-- Reins of the Blonde Riding Yak Mount
+						i(87789, {	-- Blonde Riding Yak (MOUNT!)
 							["cost"] = 30000000,	-- 3,000g
 						}),
-						i(84101, {	-- Reins of the Grand Expedition Yak Mount
+						i(84101, {	-- Grand Expedition Yak (MOUNT!)
 							["cost"] = 1200000000,	-- 120,000g
 						}),
-						i(87788, {	-- Reins of the Grey Riding Yak Mount
+						i(87788, {	-- Grey Riding Yak (MOUNT!)
 							["cost"] = 30000000,	-- 3,000g
 						}),
 					},

@@ -190,7 +190,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 			un(REMOVED_FROM_GAME, i(118413)),	-- Flamegrinder
 		})),
 		un(REMOVED_FROM_GAME, ach(8898, {	-- Challenge Warlord: Silver
-			un(REMOVED_FROM_GAME, i(116791)),	-- Challenger's War Yeti
+			un(REMOVED_FROM_GAME, i(116791)),	-- Challenger's War Yeti (MOUNT!)
 		})),
 		un(REMOVED_FROM_GAME, ach(6907, {	-- Gate of the Setting Sun: Gold
 			un(REMOVED_FROM_GAME, ach(6906)),		-- Gate of the Setting Sun: Silver

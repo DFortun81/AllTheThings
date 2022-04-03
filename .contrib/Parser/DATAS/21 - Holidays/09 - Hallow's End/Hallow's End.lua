@@ -37,7 +37,7 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 		["timeline"] = { "added 4.2.0.14333" },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
-	i(37011, {	-- Magic Broom
+	i(37011, {	-- Magic Broom (MOUNT!)
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 		["collectible"] = false,
 	}),
@@ -111,7 +111,7 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 		["timeline"] = { "added 4.2.0.14333" },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
-	i(37011, {	-- Magic Broom
+	i(37011, {	-- Magic Broom (MOUNT!)
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 		["collectible"] = false,
 	}),
@@ -380,12 +380,14 @@ local SPECTRAL_GROG = i(104316, {	-- Spectral Grog
 	},
 });
 
-_.Holidays = { applyholiday(HALLOWS_END, {
+root("Holidays", applyholiday(HALLOWS_END, {
 	-- #if ANYCLASSIC
 	["npcID"] = -58,
 	-- #else
 	["holidayID"] = 235462,
 	-- #endif
+	["description"] = "Start: 10/18 at 10:00 AM\nEnd: 11/01 at 11:00 AM",
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. HALLOWS_END .. [[, 10, 18, 11, 1); end]],
 	["groups"] = {
 		n(ACHIEVEMENTS, {
 			ach(1656, {	-- Hallowed Be Thy Name
@@ -500,9 +502,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 					{ "i", 33292 },	-- Hallowed Helm
 				},
 				["description"] = "Obtain a Sinister Squashling pet and Hallowed Helm.",
-				["OnUpdate"] = [[function(t)
-					t.SetAchievementCollected(t.achievementID, GetItemCount(33292, true) > 0 and GetItemCount(33154, true) > 0);
-				end]],
+				["OnUpdate"] = [[_.CommonAchievementHandlers.ALL_ITEM_PROVIDERS]],
 				-- #else
 				crit(1, {	-- Sinister Squashling
 					["provider"] = { "i", 33154 },	-- Sinister Squashling
@@ -1448,16 +1448,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 				["filterID"] = MOUNTS,
 				-- #if BEFORE WRATH
 				["description"] = "Obtain The Horseman's Reins from The Headless Horseman in the Scarlet Monastery during Hallow's End.",
-				["OnUpdate"] = [[function(t)
-					local collected = false;
-					for i,provider in ipairs(t.providers) do
-						if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
-							collected = true;
-							break;
-						end
-					end
-					t.SetAchievementCollected(t.achievementID, collected);
-				end]],
+				["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 				-- #endif
 			})),
 		}),
@@ -1530,7 +1521,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 					["lvl"] = 98,
 					-- #endif
 					["groups"] = {
-						i(37012, {	-- The Horseman's Reins
+						i(37012, {	-- Headless Horseman's Mount (MOUNT!)
 							["timeline"] = { "added 2.0.1" },
 						}),
 						i(117356, {	-- The Horseman's Sinister Slicer
@@ -1545,7 +1536,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						i(33292, {	-- Hallowed Helm
 							["timeline"] = { "added 2.2.2.7318" },
 						}),
-						i(37011, {	-- Magic Broom
+						i(37011, {	-- Magic Broom (MOUNT!)
 							["timeline"] = { "added 2.4.3.8600" },
 							["collectible"] = false,
 						}),
@@ -1573,7 +1564,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						i(33292, {	-- Hallowed Helm
 							["timeline"] = { "added 2.2.2.7318" },
 						}),
-						i(37011, {	-- Magic Broom
+						i(37011, {	-- Magic Broom (MOUNT!)
 							["timeline"] = { "added 2.4.3.8600" },
 							["collectible"] = false,
 						}),
@@ -1600,7 +1591,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						-- #endif
 						-- #endif
 						-- #if BEFORE 6.0.1
-						i(37012, {	-- The Horseman's Reins
+						i(37012, {	-- Headless Horseman's Mount (MOUNT!)
 							["timeline"] = { "added 2.0.1" },
 						}),
 						-- #endif
@@ -1624,10 +1615,10 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						i(33292, {	-- Hallowed Helm
 							["timeline"] = { "added 2.2.2.7318" },
 						}),
-						i(33176, {	-- Flying Broom
+						i(33176, {	-- Flying Broom (MOUNT!)
 							["timeline"] = { "added 2.2.2.7318", "deleted 4.2.2" },
 						}),
-						i(37011, {	-- Magic Broom
+						i(37011, {	-- Magic Broom (MOUNT!)
 							["timeline"] = { "added 2.4.3.8600" },
 							["collectible"] = false,
 						}),
@@ -1635,7 +1626,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 				}),
 
 				-- #if BEFORE CATA
-				i(37012, {	-- The Horseman's Reins
+				i(37012, {	-- Headless Horseman's Mount (MOUNT!)
 					["timeline"] = { "added 2.0.1" },
 				}),
 				-- #endif
@@ -1730,23 +1721,23 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 				i(33292, {	-- Hallowed Helm
 					["timeline"] = { "added 2.2.2.7318" },
 				}),
-				i(37011, {	-- Magic Broom
+				i(37011, {	-- Magic Broom (MOUNT!)
 					["timeline"] = { "added 2.4.3.8600" },
 					["collectible"] = false,
 				}),
 				-- #endif
 				-- #if NOT ANYCLASSIC
 				-- #if BEFORE LEGION
-				i(33176, {	-- Flying Broom
+				i(33176, {	-- Flying Broom (MOUNT!)
 					["timeline"] = { "added 2.2.2.7318", "deleted 4.2.2" },
 				}),
-				i(33182, {	-- Swift Flying Broom
+				i(33182, {	-- Swift Flying Broom (MOUNT!)
 					["timeline"] = { "added 2.0.1", "removed 2.4.3" },
 				}),
-				i(33184, {	-- Swift Magic Broom
+				i(33184, {	-- Swift Magic Broom (MOUNT!)
 					["timeline"] = { "added 2.0.1", "removed 2.4.3" },
 				}),
-				i(33183, {	-- Old Magic Broom
+				i(33183, {	-- Old Magic Broom (MOUNT!)
 					["timeline"] = { "added 2.0.1", "removed 2.4.3" },
 				}),
 				-- #endif
@@ -4111,12 +4102,12 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 			-- #endif
 		}),
 	},
-})};
+}));
 
 -- Remove the holiday flag.
 SPECTRAL_GROG.u = nil;
 
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, { {
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, { {
 	-- #if ANYCLASSIC
 	["npcID"] = -58,
 	-- #else
@@ -4124,16 +4115,16 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, { {
 	-- #endif
 	["groups"] = {
 		-- #if ANYCLASSIC
-		i(33176, {	-- Flying Broom
+		i(33176, {	-- Flying Broom (MOUNT!)
 			["timeline"] = { "created 2.2.2.7318", "deleted 4.2.2" },
 		}),
-		i(33182, {	-- Swift Flying Broom
+		i(33182, {	-- Swift Flying Broom (MOUNT!)
 			["timeline"] = { "created 2.0.1", "deleted 4.2.2" },
 		}),
-		i(33184, {	-- Swift Magic Broom
+		i(33184, {	-- Swift Magic Broom (MOUNT!)
 			["timeline"] = { "created 2.0.1", "deleted 4.2.2" },
 		}),
-		i(33183, {	-- Old Magic Broom
+		i(33183, {	-- Old Magic Broom (MOUNT!)
 			["timeline"] = { "created 2.0.1", "deleted 4.2.2" },
 		}),
 		-- #endif
@@ -4153,4 +4144,4 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, { {
 		q(11404),	-- Call the Headless Horseman
 		q(11405),	-- Call the Headless Horseman
 	},
-}});
+}}));

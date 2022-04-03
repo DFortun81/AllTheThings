@@ -187,7 +187,9 @@ _.Zones =
 							},
 						}),
 						i(172493),	-- Snarling Butterfly Crate (PET!)
-						i(172405),	-- Tome of Hex: Living Honey
+						i(172405, {	-- Tome of Hex: Living Honey
+							["f"] = RECIPES,
+						}),
 					},
 				}),
 				n(141043, {	-- Jakala the Cruel

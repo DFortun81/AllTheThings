@@ -921,6 +921,7 @@ for key,value in pairs({
 	[35251] = "Сундук Карнитола",	-- Karnitol's Chest
 	[37099] = "Табличка племени Атал'ай",	-- Atal'ai Tablet
 	[91138] = "Молот Джордана",	-- Jordan's Hammer
+	[103821] = "Сейф Доана",	-- Doan's Strongbox
 	[112948] = "Запертый сейф на \"Отважном\".",	-- Intrepid's Locked Strongbox
 	[113757] = "Тайник Тенегорна",	-- Shadowforge Cache
 	[123329] = "Сундук Бейлога",	-- Baelog's Chest
@@ -933,6 +934,7 @@ for key,value in pairs({
 	[142122] = "Плакат \"Разыскивается\"",	-- Wanted Poster
 	[142127] = "Секрет Рин'джи",	-- Rin'ji's Secret
 	[142151] = "Запечатанная бочка",	-- Sealed Barrel
+	[142184] = "Сундук капитана",	-- Captain's Chest
 	[142195] = "Тактическая карта стаи Древолапов",	-- Woodpaw Battle Map
 	[142343] = "Ульдумский пьедестал",	-- Uldum Pedestal
 	[142344] = "Искусственный экстраполятор",	-- Artificial Extrapolator
@@ -975,6 +977,7 @@ for key,value in pairs({
 	[176090] = "Человеческие останки",	-- Human Remains
 	[176091] = "Котел Мертвого Леса",	-- Deadwood Cauldron
 	[176115] = "Плакат \"Разыскивается\": Арнак Зловещий Тотем",	-- Wanted Poster - Arnak Grimtotem
+	[176192] = "Перечень Заблудших",	-- Catalogue of the Wayward
 	[176361] = "Котел Плети",	-- Scourge Cauldron
 	[176392] = "Котел Плети",	-- Scourge Cauldron
 	[176393] = "Котел Плети",	-- Scourge Cauldron
@@ -2054,6 +2057,7 @@ for key,value in pairs({
 	[250108] = "Маленький сундук с сокровищами",	-- Small Treasure Chest
 	[250109] = "Сундук с сокровищами",	-- Treasure Chest
 	[250383] = "Реликвия обители Лунной Тени",	-- Moonshade Relic
+	[250541] = "Сундук с сокровищами",	-- Treasure Chest
 	[250671] = "Записки \"Незримой Длани\"",	-- Notes on the Veiled Hand
 	[250984] = "Маленький сундук с сокровищами",	-- Small Treasure Chest
 	[250985] = "Сундук с сокровищами",	-- Treasure Chest
@@ -2576,6 +2580,7 @@ for key,value in pairs({
 	[327591] = "Сохранившийся дневник",	-- Preserved Journal
 	[327592] = "Зачарованный замок",	-- Enchanted Lock
 	[327596] = "Расколотый глубинный кристалл",	-- Broken Abyssal Focus
+	[327597] = "Старый ржавый сундук",	-- Old Rusty Chest
 	[327669] = "Заключенный хмелементаль",	-- Contained Alemental
 	[328343] = "Шестеренка Худовара",	-- Direbrew Cog
 	[328413] = "Тотем хозенов",	-- Hozen Totem
@@ -2684,6 +2689,7 @@ for key,value in pairs({
 	[353336] = "Спрятанное сокровище",	-- Secret Treasure
 	[353380] = "Бадья с завтраком Халиса",	-- Halis's Lunch Pail
 	[353472] = "Сияющий меч",	-- Radiant Sword
+	[353484] = "Великое хранилище",	-- The Great Vault
 	[353500] = "Серебряный сундучок",	-- Silver Strongbox
 	[353503] = "Серебряный сундучок",	-- Silver Strongbox
 	[353516] = "Серебряный сундучок",	-- Silver Strongbox
@@ -2829,6 +2835,7 @@ for key,value in pairs({
 	[358318] = "\"Портрет землероя\" Р. Лоска",	-- R. Suavel Dredger Portrait
 	[358319] = "Записка чародея",	-- Sorceror's Note
 	[358382] = "Разыскивается: Хелицера",	-- Wanted: Chelicera
+	[358398] = "Потерянный дневник",	-- Lost Journal
 	[358399] = "Шестимильный вьюк",	-- Six-League Pack
 	[358531] = "Огромный тайник с эпическим сокровищем",	-- Giant Cache of Epic Treasure
 	[358533] = "Забытые припасы",	-- Forgotten Supplies
@@ -2841,6 +2848,7 @@ for key,value in pairs({
 	[364932] = "Полыхающий слиток",	-- Blazing Ingot
 	[364937] = "Фазовый вытягиватель",	-- Phasic Siphoner
 	[364987] = "Журнал брокера",	-- Broker Journal
+	[365093] = "Книга праздничных гимнов Теотара",	-- Theotar's Caroling Books
 	[368205] = "Тайник Верных Утробе",	-- Mawsworn Cache
 	[368206] = "Тайник Верных Утробе",	-- Mawsworn Cache
 	[368207] = "Тайник Верных Утробе",	-- Mawsworn Cache
@@ -2916,6 +2924,7 @@ for key,value in pairs({
 	[369438] = "Тайник Разлома",	-- Riftbound Cache
 	[369439] = "Тайник Разлома",	-- Riftbound Cache
 	[369440] = "Тайник Разлома",	-- Riftbound Cache
+	[369602] = "Руки непокорных",	-- Hands of Defiance
 	[369757] = "Погруженный сундук",	-- Submerged Chest
 	[370140] = "Поврежденный тайник джиро",	-- Damaged Jiro Stash
 	[370469] = "Призрачный корм",	-- Spectral Feed
@@ -2923,6 +2932,7 @@ for key,value in pairs({
 	[373437] = "Косяк едких рыб-капель",	-- Pungent Blobfish Cluster
 	[373438] = "Пружинная лоза",	-- Coilclutch Vine
 	[373439] = "Стая плавунцов",	-- Flipper Fish School
+	[373460] = "Волшебная сеть",	-- Fae Net
 	[373471] = "Меццонийский тайник",	-- Mezzonic Cache
 	[373472] = "Глиссандрийский тайник",	-- Glissandian Cache
 	[373473] = "Фугийский тайник",	-- Fugueal Cache
@@ -2945,6 +2955,7 @@ for key,value in pairs({
 	[373587] = "Волнующий конкорданс",	-- Excitable Concordance
 	[373588] = "Оживленный конкорданс",	-- Mercurial Concordance
 	[374976] = "Симфоническое хранилище",	-- Symphonic Vault
+	[375021] = "Уничтоженный автом",	-- Perished Automa
 	[375058] = "Токкатийский тайник",	-- Toccatian Cache
 	[375059] = "Меццонийский тайник",	-- Mezzonic Cache
 	[375060] = "Глиссандрийский тайник",	-- Glissandian Cache
@@ -2955,6 +2966,7 @@ for key,value in pairs({
 	[375067] = "Глиссандрийский тайник",	-- Glissandian Cache
 	[375068] = "Фугийский тайник",	-- Fugueal Cache
 	[375069] = "Кантарийский тайник",	-- Cantaric Cache
+	[375191] = "Конфигурация дремлющего алькова",	-- Dormant Alcove Arrangement
 	[375270] = "Схема протосинтеза",	-- Protoform Schematic
 	[375272] = "Тайник Верных Утробе",	-- Mawsworn Cache
 	[375281] = "Украденная реликвия",	-- Stolen Relic
@@ -3013,7 +3025,7 @@ for key,value in pairs({
 	[375538] = "Потерянный яйцеобразный объект",	-- Lost Ovoid
 	[375693] = "Схема протосинтеза",	-- Protoform Schematic
 	[375694] = "Схема протосинтеза",	-- Protoform Schematic
-	--TODO: [375746] = "Protoform Schematic",	-- Protoform Schematic
+	[375746] = "Чертеж прототипа",	-- Prototype Schematic
 	[375748] = "Схема протосинтеза",	-- Protoform Schematic
 	[375889] = "Схема протосинтеза",	-- Protoform Schematic
 	[375893] = "Тайник с ценностями",	-- High Value Cache
@@ -3034,7 +3046,7 @@ for key,value in pairs({
 	[375985] = "Фирим в изгнании, часть 5",	-- Firim in Exile, Part 5
 	[375986] = "Фирим в изгнании, часть 6",	-- Firim in Exile, Part 6
 	[375987] = "Фирим в изгнании, часть 7",	-- Firim in Exile, Part 7
-	--TODO: [375988] = "Firim in Exile, Epilogue",	-- Firim in Exile, Epilogue
+	[375988] = "Фирим в изгнании, эпилог",	-- Firim in Exile, Epilogue
 	[376041] = "Замаскированный тайник шифров",	-- Shrouded Cypher Cache
 	[9962198] = "Самодельная лужа жижи изгоя",	-- Outcast's Makeshift Muckpool
 	[9999890] = "Оскверненная добыча",	-- Corrupted Loot

@@ -229,7 +229,7 @@ _.Zones =
 								["provider"] = { "n", 58564 },	-- Elder Anli
 								["coord"] = { 57.7, 45.0, THE_JADE_FOREST },
 								["g"] = {
-									i(85430),	-- Reins of the Azure Cloud Serpent
+									i(85430),	-- Azure Cloud Serpent (MOUNT!)
 								},
 							}),
 							q(31811, {	-- Riding the Skies (Golden)
@@ -238,7 +238,7 @@ _.Zones =
 								["provider"] = { "n", 58564 },	-- Elder Anli
 								["coord"] = { 57.7, 45.0, THE_JADE_FOREST },
 								["g"] = {
-									i(85429),	-- Reins of the Golden Cloud Serpent
+									i(85429),	-- Golden Cloud Serpent (MOUNT!)
 								},
 							}),
 							q(30188, {	-- Riding the Skies (Jade)
@@ -247,7 +247,7 @@ _.Zones =
 								["provider"] = { "n", 58564 },	-- Elder Anli
 								["coord"] = { 57.7, 45.0, THE_JADE_FOREST },
 								["g"] = {
-									i(79802),	-- Reins of the Jade Cloud Serpent
+									i(79802),	-- Jade Cloud Serpent (MOUNT!)
 								},
 							}),
 							q(31714, {	-- Saving the Serpents
@@ -452,13 +452,13 @@ _.Zones =
 									i(83830),	-- Design: Sunstone Panther
 									i(93229),	-- Grand Commendation of the Order of the Cloud Serpent
 									i(89796),	-- Order of the Cloud Serpent Tabard
-									i(85430, {	-- Reins of the Azure Cloud Serpent Mount
+									i(85430, {	-- Azure Cloud Serpent (MOUNT)
 										["cost"] = 30000000,	-- 3,000g
 									}),
-									i(85429, {	-- Reins of the Golden Cloud Serpent Mount
+									i(85429, {	-- Golden Cloud Serpent (MOUNT!)
 										["cost"] = 30000000,	-- 3,000g
 									}),
-									i(79802, {	-- Reins of the Jade Cloud Serpent Mount
+									i(79802, {	-- Jade Cloud Serpent (MOUNT!)
 										["cost"] = 30000000,	-- 3,000g
 									}),
 									i(183123, {	-- How to School Your Serpent

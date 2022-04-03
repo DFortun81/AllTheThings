@@ -338,6 +338,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										i(178894),	-- Decree: Baroness Vashj's Boon
 										i(183860),	-- The Death March: An Introduction to Maldraxxi Etiquette
 										i(178892),	-- Decree: Baroness Vashj's Favor
+										i(178893),	-- Decree: Baroness Vashj's Esteem
 									}),
 								}),
 								o(356720, {	-- Choofa's Extravagant Tribute
@@ -605,6 +606,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										i(181566),	-- Decree: The Countess's Boon
 										i(183862),	-- A Proper Soiree: A detailed account of Venthyr Etiquette by Theotar
 										i(181567),	-- Decree: The Countess's Esteem
+										i(181568),	-- Decree: The Countess's Favor
 										i(182696),	-- The Countess's Parasol (TOY!)
 										i(181436, {	-- Vanity Mirror
 											crit(16, {	-- Vanity Mirror
@@ -2116,7 +2118,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										},
 									}),
 									i(182296, {	-- Letter of Note, Premier Party Planner
-										["cost"] = { { "c", 1820, 85 } },
+										["cost"] = { { "c", 1820, 85 } },	-- 85 Infused Ruby
 										["description"] = "This is intended to be purchased on a 'Main' Venthyr character to send to 'Alt' Venthyr characters to get a head-start on Ember Court progress.",
 										["g"] = {
 											q(61493, {	-- Dredger Pool Unlocked on Character
@@ -2128,22 +2130,22 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										},
 									}),
 									i(182973, {	-- Leather Dredger Coif
-										["cost"] = { { "c", 1820, 10 } },
+										["cost"] = { { "c", 1820, 10 } },	-- 10 Infused Ruby
 									}),
 									i(183706, {	-- Mantle of Court Blades
-										["cost"] = { { "c", 1816, 300 } },
+										["cost"] = { { "c", 1813, 1750 } },	-- 1750 Anima
 									}),
 									i(183842, {	-- Sinrunner Pony Reins
-										["cost"] = { { "c", 1820, 55 } },
+										["cost"] = { { "c", 1820, 55 } },	-- 55 Infused Ruby
 									}),
 									i(183843, {	-- Juvenile Dredbat Harness
-										["cost"] = { { "c", 1820, 70 } },
+										["cost"] = { { "c", 1820, 70 } },	-- 70 Infused Ruby
 									}),
 									i(183854, {	-- Battie's Pendant
 										["cost"] = { { "i", 163036, 250 } },
 									}),
 									i(185741, {	-- Restock and Repair, Tips and Tricks for Keeping the Party Going
-										["cost"] = { { "c", 1820, 85 } },
+										["cost"] = { { "c", 1820, 85 } },	-- 85 Infused Ruby
 										["description"] = "This is intended to be purchased on a 'Main' Venthyr character to send to 'Alt' Venthyr characters to get a head-start on Ember Court progress.",
 									}),
 									i(181443, {	-- The Party Herald's Party hat
@@ -2151,6 +2153,11 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										["questID"] = 61459,
 									}),
 								},
+							}),
+						}),
+						n(TREASURES, {
+							o(365093, {	-- Theotar's Caroling Books
+								i(184626),	-- Winter Veil Caroling Book
 							}),
 						}),
 					},
@@ -2348,7 +2355,7 @@ root("HiddenQuestTriggers", {
 			--q(61935),	-- Stonehad was miserable, Adrestes was elated if it matters. This was at the start of the court - no idea what that was.  It's the first court with decorations though.
 			--q(61536),	-- Miserable Aliothe, Uncomfortable Mikanikos, Unhappy Choofa, Unhappy Alexandros Mograine, triggered after opening Mikanikos chest / New report: First Ember Court with Mikanikos
 
-			--q(61930),	-- Unknown
+			q(61930),	-- Triggered after Restock: Medic's Tent
 			q(61936),	-- Triggered after Restock: Surveillance
 			--q(61825),	-- During Ember Court after finishin Glimpse of the Wilds Niya's minigame
 			q(59691),	-- "The Party Herald"

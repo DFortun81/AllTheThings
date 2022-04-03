@@ -823,7 +823,7 @@ _.ExpansionFeatures =
 							["maps"] = { 861 },	-- Mardum, the Shattered Abyss (scenario)
 							["lvl"] = 110,
 							["g"] = {
-								mount(229417, {	-- Slayer's Felbroken Shrieker
+								mount(229417, {	-- Slayer's Felbroken Shrieker (MOUNT!)
 									["classes"] = { DEMONHUNTER },
 								}),
 							},
@@ -869,10 +869,6 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(44224, {	-- Unleashing our Wrath
-							["classes"] = { DEMONHUNTER },
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						q(46940, {	-- Using Lost Knowledge
 							["classes"] = { DEMONHUNTER },
 							["u"] = REMOVED_FROM_GAME,
 						}),

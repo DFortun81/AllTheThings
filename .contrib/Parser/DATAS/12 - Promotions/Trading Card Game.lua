@@ -79,76 +79,76 @@ root("Promotions", n(TCG_HEADER, bubbleDown({
 		}),
 	}),
 	filter(MOUNTS, {
-		i(68825, {	-- Amani Dragonhawk
+		i(68825, {	-- Amani Dragonhawk (MOUNT!)
 			["timeline"] = { "added 4.1.0.13682" },
 		}),
-		i(38576, {	-- Big Battle Bear BOP
+		i(38576, {	-- Big Battle Bear (MOUNT!) BOP
 			["timeline"] = { "added 2.4.2.8301", "removed 3.2.0.10147" },
 		}),
-		i(49282, {	-- Big Battle Bear BOE
+		i(49282, {	-- Big Battle Bear (MOUNT!) BOE
 			["timeline"] = { "added 3.2.0.10147" },
 		}),
-		i(54069, {	-- Blazing Hippogryph
+		i(54069, {	-- Blazing Hippogryph (MOUNT!)
 			["timeline"] = { "added 3.3.3.11723", "removed 4.3.0.15005" },
 		}),
-		i(74269, {	-- Blazing Hippogryph
+		i(74269, {	-- Blazing Hippogryph (MOUNT!)
 			["timeline"] = { "added 4.3.0.15005" },
 		}),
-		i(72582, {	-- Corrupted Hippogryph
+		i(72582, {	-- Corrupted Hippogryph (MOUNT!)
 			["timeline"] = { "added 4.3.0.15005" },
 		}),
-		i(79771, {	-- Feldrake
+		i(79771, {	-- Feldrake (MOUNT!)
 			["timeline"] = { "added 4.3.2.15211" },
 		}),
-		i(93671, {	-- Ghastly Charger's Skull
+		i(93671, {	-- Ghastly Charger (MOUNT!)
 			["timeline"] = { "added 5.2.0.16408" },
 		}),
-		i(46778, {	-- Magic Rooster Egg
+		i(46778, {	-- Magic Rooster Egg (MOUNT!)
 			["timeline"] = { "added 3.2.0.10026", "removed 3.2.0.10147" },
 		}),
-		i(49290, {	-- Magic Rooster Egg
+		i(49290, {	-- Magic Rooster Egg (MOUNT!)
 			["timeline"] = { "added 3.2.0.10147" },
 		}),
-		i(68008, {	-- Mottled Drake
+		i(68008, {	-- Mottled Drake (MOUNT!)
 			["timeline"] = { "added 4.0.3.13287" },
 		}),
-		i(33224, {	-- Spectral Tiger BOP
+		i(33224, {	-- Spectral Tiger (MOUNT!) BOP
 			["timeline"] = { "added 2.1.3.6898", "removed 3.2.0.10147" },
 		}),
-		i(49283, {	-- Reins of the Spectral Tiger BOE
+		i(49283, {	-- Spectral Tiger (MOUNT!) BOE
 			["timeline"] = { "added 3.2.0.10147" },
 		}),
-		i(33225, {	-- Swift Spectral Tiger BOP
+		i(33225, {	-- Swift Spectral Tiger (MOUNT!) BOP
 			["timeline"] = { "added 2.1.3.6898", "removed 3.2.0.10147" },
 		}),
-		i(49284, {	-- Reins of the Swift Spectral Tiger BOE
+		i(49284, {	-- Swift Spectral Tiger (MOUNT!) BOE
 			["timeline"] = { "added 3.2.0.10147" },
 		}),
-		i(23720, {	-- Riding Turtle
+		i(23720, {	-- Riding Turtle (MOUNT!)
 			["timeline"] = { "added 2.0.0.5462" },
 		}),
-		i(69228, {	-- Savage Raptor
+		i(69228, {	-- Savage Raptor (MOUNT!)
 			["timeline"] = { "added 4.1.0.13682" },
 		}),
-		i(71718, {	-- Swift Shorestrider
+		i(71718, {	-- Swift Shorestrider (MOUNT!)
 			["timeline"] = { "added 4.3.0.15005" },
 		}),
-		i(72575, {	-- White Riding Camel
+		i(72575, {	-- White Riding Camel (MOUNT!)
 			["timeline"] = { "added 4.3.0.15005" },
 		}),
-		i(54068, {	-- Wooly White Rhino
+		i(54068, {	-- Wooly White Rhino (MOUNT!)
 			["timeline"] = { "added 3.3.5.12340" },
 		}),
-		i(35225, {	-- X-51 Nether-Rocket BOP
+		i(35225, {	-- X-51 Nether-Rocket (MOUNT!) BOP
 			["timeline"] = { "added 2.4.0.7923" , "removed 3.2.0" },
 		}),
-		i(49285, {	-- X-51 Nether-Rocket BOE
+		i(49285, {	-- X-51 Nether-Rocket (MOUNT!) BOE
 			["timeline"] = { "added 3.2.0" },
 		}),
-		i(35226, {	-- X-51 Nether-Rocket X-TREME BOP
+		i(35226, {	-- X-51 Nether-Rocket X-TREME (MOUNT!) BOP
 			["timeline"] = { "added 2.4.0.7923" , "removed 3.2.0" },
 		}),
-		i(49286, {	-- X-51 Nether-Rocket X-TREME BOE
+		i(49286, {	-- X-51 Nether-Rocket X-TREME (MOUNT!) BOE
 			["timeline"] = { "added 3.2.0" },
 		}),
 	}),

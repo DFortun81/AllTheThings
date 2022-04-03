@@ -29,7 +29,7 @@ _.Zones =
 						["sourceQuests"] = { 40077 },	-- Treads of Illidari Supremacy
 						["provider"] = { "n", 98229 },	-- Kayn Sunfury
 						["g"] = {
-							mount(200175, {	-- Felsaber
+							mount(200175, {	-- Felsaber (MOUNT!)
 								["classes"] = { DEMONHUNTER },
 							}),
 						},

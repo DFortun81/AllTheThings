@@ -52,7 +52,6 @@ namespace ATT
 #else
                     files.AsParallel().ForAll(f => ParseJSONFile(f));
 #endif
-                    Trace.WriteLine("Done parsing JSON files.");
 
                     if (Errored)
                     {
@@ -123,7 +122,7 @@ namespace ATT
                     Console.ReadLine();
                 }
                 //string content = "";
-                Framework.Objects.ProcessingSourceData = true;
+                Framework.ProcessingSourceData = true;
                 //Trace.WriteLine("Parsing LUA files in Parallel: Start");
                 //luaFiles.AsParallel().ForAll(f => ParseLUAFile(lua, f));
                 Trace.WriteLine("Parsing LUA files...");
@@ -134,7 +133,7 @@ namespace ATT
                     ParseLUAFile(lua, fileName);
 
                 }
-                Framework.Objects.ProcessingSourceData = false;
+                Framework.ProcessingSourceData = false;
 
                 do
                 {
@@ -155,6 +154,27 @@ namespace ATT
                 while (true);
                 lua.Close();
 
+                // If Debug Mode, then check if additional data should be captured for Debugging
+                if (Framework.DebugMode)
+                {
+                    string debugDBKeys = null;
+                    try
+                    {
+                        debugDBKeys = File.ReadAllText("debugDBs");
+                    }
+                    catch { }
+
+                    if (!string.IsNullOrWhiteSpace(debugDBKeys))
+                    {
+                        string[] dbKeys = debugDBKeys.Split(new char[] { '\n', '\r', ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
+
+                        foreach (string dbKey in dbKeys)
+                        {
+                            Framework.DebugDBs.Add(dbKey, new SortedDictionary<decimal, List<Dictionary<string, object>>>());
+                        }
+                    }
+                }
+
                 // Now that all of the data and items have been loaded into the Database, let's Process it!
                 Framework.Process();
 
@@ -167,15 +187,19 @@ namespace ATT
                 Trace.WriteLine("Exporting Addon DB...");
                 Framework.Export();
 
-                // Notify of duplicate Quest listings
-                if (Framework.Objects.DuplicateSourceQuests.Count > 0)
+                // Notify of duplicate object listings
+                foreach (string key in Framework.TypeUseCounts.Keys)
                 {
-                    System.Text.StringBuilder dupeQuests = new System.Text.StringBuilder();
-                    foreach (int questID in Framework.Objects.DuplicateSourceQuests.OrderBy(q => q))
+                    StringBuilder dupeIDs = new StringBuilder();
+                    Dictionary<decimal, int> idCounts = Framework.TypeUseCounts[key];
+                    IEnumerable<decimal> duplicateIDs = idCounts.Where(kvp => kvp.Value > 1).Select(kvp => kvp.Key).OrderBy(i => i);
+                    foreach (decimal id in duplicateIDs)
                     {
-                        dupeQuests.Append(questID.ToString()).Append(",");
+                        dupeIDs.Append(id.ToString()).Append(",");
                     }
-                    Trace.Write("Duplicate Quest Listings: " + dupeQuests.ToString());
+
+                    if (dupeIDs.Length > 0)
+                        Trace.Write($"Duplicate {key} Usage: " + dupeIDs.ToString());
                 }
 
                 // Update the .TOC with the Parser Run Date
@@ -382,9 +406,9 @@ namespace ATT
         static void ProcessImportCommand(string[] command, StringBuilder builder, string content, ref int index, int length)
         {
             string filename = "..\\..\\..\\..\\..\\..\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Parser\\DATAS\\" + string.Join(" ", command.Skip(1));
-            if(Directory.Exists(filename))
+            if (Directory.Exists(filename))
             {
-                foreach(var file in Directory.GetFiles(filename, "*.lua", SearchOption.AllDirectories))
+                foreach (var file in Directory.GetFiles(filename, "*.lua", SearchOption.AllDirectories))
                 {
                     if (index > 0) builder.Append("\n");
                     builder.Append("(function()\n").Append(ProcessContent(File.ReadAllText(file))).Append("\nend)();");

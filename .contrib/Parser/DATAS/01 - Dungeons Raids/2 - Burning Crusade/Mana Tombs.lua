@@ -236,7 +236,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						removeclassicphase(ach(651, {	-- Mana-Tombs
 							-- #if BEFORE 3.0.1
 							["sourceQuest"] = 10165,	-- Undercutting the Competition
-							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(10165)); end]],
+							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						})),
 						-- #if AFTER 7.3.5
@@ -416,6 +416,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(25962),	-- Longstrider's Loop
 							-- #endif
 							i(27828),	-- Warp-Scarab Brooch
+							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
 							i(28490),	-- Shaffar's Wrappings
 							i(33835),	-- Shaffar's Wondrous Amulet
 							i(22921),	-- Recipe: Major Frost Protection Potion
@@ -442,10 +443,12 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	}),
 }));
 -- #endif
-_.HiddenQuestTriggers = {
+-- #if AFTER WOD
+root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
 		q(35546),	-- Mana Tombs Reward Quest - Normal completion
 		q(35547),	-- Mana Tombs Reward Quest - Heroic completion
 		q(35548),	-- Mana-Tombs Bonus Objective - kill Yor
 	}),
-};
+});
+-- #endif

@@ -26,6 +26,8 @@ _.Zones =
 				i(166971),	-- Empty Energy Cell
 				i(166970),	-- Energy Cell
 				i(170500),	-- Energy Cell
+				i(169873),	-- Mechanized Supply Key
+				i(169218),	-- Old Rusty Key
 			}),
 		}),
 	}),

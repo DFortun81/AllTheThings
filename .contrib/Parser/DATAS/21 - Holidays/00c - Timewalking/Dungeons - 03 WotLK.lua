@@ -871,7 +871,7 @@ root("Holidays", d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
 				i(127485),	-- Ring of the Frenzied Wolvar
 			})),
 			cr(26693, e(643, {	-- Skadi the Ruthless
-				i(44151),	-- Reins of the Blue Proto-Drake (MOUNT!)
+				i(44151),	-- Blue Proto-Drake (MOUNT!)
 				i(127491),	-- Staff of Wayward Principles
 				i(127489),	-- Netherbreath Spellblade
 				i(127466),	-- Amulet of Deflected Blows

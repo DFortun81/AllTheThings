@@ -9,6 +9,17 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 		["isRaid"] = true,
 		["lvl"] = 58,
 		["groups"] = bubbleDown({ ["timeline"] = { "removed 4.0.3" } }, {
+			n(ACHIEVEMENTS, {
+				removeclassicphase(ach(957, {	-- Hero of the Zandalar Tribe
+					-- #if BEFORE 3.0.1
+					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
+					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
+					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 270); end]],
+					["description"] = "Raise your reputation with the Zandalar Tribe to Exalted.",
+					-- #endif
+					["maps"] = { STRANGLETHORN_VALE },
+				})),
+			}),
 			n(FACTIONS, {
 				faction(270, {	-- Zandalar Tribe
 					["icon"] = "Interface\\Icons\\RACIAL_TROLL_BERSERK",
@@ -1352,16 +1363,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 					["filterID"] = MOUNTS,
 					-- #if BEFORE WRATH
 					["description"] = "Obtain the Swift Razzashi Raptor from Bloodlord Mandokir in Zul'Gurub.",
-					["OnUpdate"] = [[function(t)
-						local collected = false;
-						for i,provider in ipairs(t.providers) do
-							if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
-								collected = true;
-								break;
-							end
-						end
-						t.SetAchievementCollected(t.achievementID, collected);
-					end]],
+					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 					-- #endif
 				})),
 				i(19872),	-- Swift Razzashi Raptor (MOUNT!)
@@ -1420,16 +1422,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 					["filterID"] = MOUNTS,
 					-- #if BEFORE WRATH
 					["description"] = "Obtain the Swift Zulian Tiger from High Priest Thekal in Zul'Gurub.",
-					["OnUpdate"] = [[function(t)
-						local collected = false;
-						for i,provider in ipairs(t.providers) do
-							if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
-								collected = true;
-								break;
-							end
-						end
-						t.SetAchievementCollected(t.achievementID, collected);
-					end]],
+					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 					-- #endif
 				})),
 				i(19902),	-- Swift Zulian Tiger (MOUNT!)
@@ -1464,7 +1457,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 						-- #if BEFORE WRATH
 						["description"] = "Fish up Gahz'ranka in Zul'Gurub using the Mudskunk Lure.\n\nPROTIP: You can get free credit for this achievement on Prepatch if your character has a Mudskunk Lure in its inventory.",
 						["provider"] = { "i", 19974 },	-- Mudskunk Lure
-						["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, GetItemCount(19974, true) > 0); end]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 						-- #endif
 					})),
 					i(19944),	-- Nat Pagle's Fish Terminator
@@ -1502,7 +1495,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 					-- #if BEFORE WRATH
 					["description"] = "Defeat Hakkar and deliver his Heart to the Zandalari.",
 					["sourceQuest"] = 8183,	-- The Heart of Hakkar
-					["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(8183)); end]],
+					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 					-- #endif
 				})),
 				i(19802),	-- Heart of Hakkar

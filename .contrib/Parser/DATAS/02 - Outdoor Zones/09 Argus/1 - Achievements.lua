@@ -24,7 +24,7 @@ _.Zones =
 					ach(12101),		-- We Came Here For Two Reasons
 					ach(12102),		-- To Kill Demons...
 					ach(12103, {	-- ...And Chew Mana Buns
-						i(153041),		-- Bleakhoof Ruinstrider
+						i(153041),		-- Bleakhoof Ruinstrider (MOUNT!)
 					}),
 				}),
 				ach(12078, {	-- Commander of Argus

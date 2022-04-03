@@ -160,7 +160,7 @@ _.Zones =
 									i(119149, {	-- Captured Forest Sproutling
 										["cost"] = { { "c", 823, 2000 } },	-- 2000x Apexis Crystal
 									}),
-									i(116672, {	-- Domesticated Razorback
+									i(116672, {	-- Domesticated Razorback (MOUNT!)
 										["cost"] = { { "c", 823, 5000 } },	-- 5000x Apexis Crystal
 									}),
 									i(119148, {	-- Indentured Albino River Calf

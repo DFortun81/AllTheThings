@@ -11,7 +11,7 @@ _.Zones =
 					["coord"] = { 50.8, 65.6, THE_STORM_PEAKS },
 					["description"] = "Reward from the following daily quests: Back to the Pit, Defending Your Title, Maintaining Discipline, and The Aberrations Must Die. \n\nOne of the quests is offered at random each day.",
 					["g"] = {
-						i(43962),	-- Reins of the White Polar Bear
+						i(43962),	-- White Polar Bear (MOUNT!)
 					},
 				}),
 				q(12908, {	-- A Certain Prisoner

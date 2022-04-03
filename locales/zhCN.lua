@@ -935,6 +935,7 @@ for key, value in pairs({
 	[35251] = "卡尼托的箱子",	-- Karnitol's Chest	--TODO: This was taken from classic Wowhead
 	[37099] = "阿塔莱石板",	-- Atal'ai Tablet
 	[91138] = "乔丹的铁锤",	-- Jordan's Hammer
+	[103821] = "杜安的保险箱",	-- Doan's Strongbox	--TODO: This was taken from classic Wowhead
 	[112948] = "保险箱",	-- Intrepid's Locked Strongbox
 	[113757] = "暗影熔炉地窖",	-- Shadowforge Cache
 	[123329] = "巴尔洛戈的箱子",	-- Baelog's Chest
@@ -947,6 +948,7 @@ for key, value in pairs({
 	[142122] = "通缉：卡利夫·斯科比斯汀",	-- Wanted Poster	--TODO: This was taken from classic Wowhead
 	[142127] = "林吉的秘密",	-- Rin'ji's Secret	--TODO: This was taken from classic Wowhead
 	[142151] = "密封的桶",	-- Sealed Barrel
+	[142184] = "船长的箱子",	-- Captain's Chest
 	[142195] = "木爪作战地图",	-- Woodpaw Battle Map
 	[142343] = "奥丹姆石座",	-- Uldum Pedestal
 	[142344] = "机械储存柜",	-- Artificial Extrapolator
@@ -980,7 +982,7 @@ for key, value in pairs({
 	[169243] = "七贤之箱",	-- Chest of The Seven
 	[173232] = "锻造设计图",	-- Blacksmithing Plans
 	[173265] = "木制厕所",	-- Wooden Outhouse
-	[174682] = "当心翼手龙",	-- Beware of Pterrordax	--TODO: This was taken from classic Wowhead
+	[174682] = "当心翼手龙",	-- Beware of Pterrordax
 	[175320] = "通缉：莫克迪普！",	-- WANTED: Murkdeep!	--TODO: This was taken from classic Wowhead
 	[175524] = "神秘的红色水晶",	-- Mysterious Red Crystal	--TODO: This was taken from classic Wowhead
 	[175894] = "詹妮丝的包裹",	-- Janice's Parcel	--TODO: This was taken from classic Wowhead
@@ -989,6 +991,7 @@ for key, value in pairs({
 	[176090] = "人类遗骸",	-- Human Remains
 	[176091] = "死木蒸锅",	-- Deadwood Cauldron
 	[176115] = "通缉：阿纳克·恐怖图腾",	-- Wanted Poster - Arnak Grimtotem	--TODO: This was taken from classic Wowhead
+	[176192] = "游荡者目录",	-- Catalogue of the Wayward	--TODO: This was taken from classic Wowhead
 	[176361] = "瘟疫之锅",	-- Scourge Cauldron	--TODO: This was taken from classic Wowhead
 	[176392] = "天灾之锅",	-- Scourge Cauldron
 	[176393] = "瘟疫之锅",	-- Scourge Cauldron	--TODO: This was taken from classic Wowhead
@@ -1047,7 +1050,7 @@ for key, value in pairs({
 	[181153] = "通缉布告：邪恶的克尔加什",	-- Wanted Poster: Kel'gash the Wicked
 	[181638] = "通缉布告",	-- Wanted Poster
 	[181672] = "稻草人",	-- Wickerman Effigy	--TODO: This was taken from tbc Wowhead
-	--TODO: [181698] = "Voidstone",	-- Voidstone
+	[181698] = "虚空石",	-- Voidstone	--TODO: This was taken from tbc Wowhead
 	[181748] = "血水晶",	-- Blood Crystal	--TODO: This was taken from tbc Wowhead
 	--TODO: [181756] = "Battered Ancient Book",	-- Battered Ancient Book
 	[181889] = "通缉布告",	-- Wanted Poster
@@ -1209,7 +1212,7 @@ for key, value in pairs({
 	[195435] = "武器柜",	-- Weapons Cabinet
 	[195438] = "艾露恩之杯",	-- Cup of Elune
 	[195445] = "上古漩涡符石",	-- Ancient Vortex Runestone	--TODO: This was manually translated
-	[195497] = "艾露恩的火盆",	-- Elune's Brazier	--TODO: This was manually translated
+	[195497] = "艾露恩的火盆",	-- Elune's Brazier
 	[195517] = "艾露恩的侍女像",	-- Elune's Handmaiden
 	[195600] = "燃烧之石",	-- Smouldering Stone
 	[195642] = "纳迦能量石",	-- Naga Power Stone
@@ -1331,7 +1334,7 @@ for key, value in pairs({
 	[213649] = "一箱被偷的货物",	-- Cache of Pilfered Goods
 	[213650] = "兔妖宝箱",	-- Virmen Treasure Cache
 	--TODO: [213651] = "Equipment Locker",	-- Equipment Locker
-	[213653] = "熊猫人鱼叉",	-- Pandaren Fishing Spear	--TODO: This was manually translated
+	[213653] = "熊猫人鱼叉",	-- Pandaren Fishing Spear
 	[213741] = "远古锦鱼人法杖",	-- Ancient Jinyu Staff
 	[213742] = "十雷之锤",	-- Hammer of Ten Thunders
 	[213748] = "熊猫人仪式石",	-- Pandaren Ritual Stone
@@ -1343,7 +1346,7 @@ for key, value in pairs({
 	[213768] = "猢狲战士长矛",	-- Hozen Warrior Spear
 	[213769] = "猢狲宝箱",	-- Hozen Treasure Cache
 	[213770] = "失窃的林精宝藏",	-- Stolen Sprite Treasure
-	[213771] = "雪怒雕像",	-- Statue of Xuen	--TODO: This was manually translated
+	[213771] = "雪怒雕像",	-- Statue of Xuen
 	[213774] = "失踪探险者的随身物品",	-- Lost Adventurer's Belongings
 	[213782] = "陶俑头颅",	-- Terracotta Head
 	[213793] = "里克提克的小箱子",	-- Rikktik's Tiny Chest
@@ -1520,7 +1523,7 @@ for key, value in pairs({
 	--TODO: [228023] = "Bonechewer Remnants",	-- Bonechewer Remnants
 	[228024] = "阿鲁纳矿车",	-- Aruuna Mining Cart
 	[228025] = "克鲁的物品",	-- Keluu's Belongings
-	--TODO: [228026] = "Pure Crystal Dust",	-- Pure Crystal Dust
+	[228026] = "纯净水晶尘",	-- Pure Crystal Dust
 	--TODO: [228483] = "Rusted Lockbox",	-- Rusted Lockbox
 	--TODO: [228570] = "Ketya's Stash",	-- Ketya's Stash
 	[229328] = "特使的袋子",	-- Envoy's Satchel
@@ -1584,7 +1587,7 @@ for key, value in pairs({
 	[232587] = "乌兹克的小玩意儿",	-- Uzko's Knickknacks
 	[232588] = "格瑞卡的坛子",	-- Greka's Urn
 	[232589] = "威玛的草药包",	-- Veema's Herb Bag
-	--TODO: [232590] = "Void-Infused Crystal",	-- Void-Infused Crystal
+	[232590] = "注灵水晶",	-- Void-Infused Crystal
 	[232591] = "爱人的祭品",	-- Beloved's Offering
 	[232595] = "热砂补给品",	-- Steamwheedle Supplies
 	[232596] = "先祖巨斧",	-- Ancestral Greataxe
@@ -1610,7 +1613,7 @@ for key, value in pairs({
 	[233126] = "影月宝藏",	-- Shadowmoon Treasure
 	[233132] = "淡水蛤蜊",	-- Freshwater Clam
 	[233134] = "金色卡利鸟蛋",	-- Golden Kaliri Egg
-	--TODO: [233135] = "Warsong Cache",	-- Warsong Cache
+	[233135] = "战歌宝箱",	-- Warsong Cache
 	[233137] = "火刃宝箱",	-- Burning Blade Cache
 	[233139] = "上古泰坦宝箱",	-- Ancient Titan Chest
 	[233149] = "嘲颅包裹",	-- Laughing Skull Cache
@@ -1905,7 +1908,7 @@ for key, value in pairs({
 	[241743] = "邪能页岩矿脉",	-- Felslate Deposit
 	[241745] = "被邪能侵蚀的背包",	-- Fel-Drenched Satchel
 	[241760] = "献祭之刃",	-- Sacrificial Blade
-	--TODO: [241764] = "Stashed Bleeding Hollow Loot",	-- Stashed Bleeding Hollow Loot
+	[241764] = "隐藏的血环战利品",	-- Stashed Bleeding Hollow Loot
 	[241767] = "宝箱",	-- Treasure Chest
 	[241772] = "宝箱",	-- Treasure Chest
 	[241773] = "小宝箱",	-- Small Treasure Chest
@@ -2068,6 +2071,7 @@ for key, value in pairs({
 	[250108] = "小宝箱",	-- Small Treasure Chest
 	[250109] = "宝箱",	-- Treasure Chest
 	[250383] = "月影圣物",	-- Moonshade Relic
+	[250541] = "宝箱",	-- Treasure Chest
 	--TODO: [250671] = "Notes on the Veiled Hand",	-- Notes on the Veiled Hand
 	[250984] = "小宝箱",	-- Small Treasure Chest
 	[250985] = "宝箱",	-- Treasure Chest
@@ -2590,6 +2594,7 @@ for key, value in pairs({
 	[327591] = "保存完好的日志",	-- Preserved Journal
 	[327592] = "魔力之锁",	-- Enchanted Lock
 	[327596] = "毁坏的深渊法器",	-- Broken Abyssal Focus
+	[327597] = "生锈的旧箱子",	-- Old Rusty Chest
 	--TODO: [327669] = "Contained Alemental",	-- Contained Alemental
 	--TODO: [328343] = "Direbrew Cog",	-- Direbrew Cog
 	--TODO: [328413] = "Hozen Totem",	-- Hozen Totem
@@ -2698,6 +2703,7 @@ for key, value in pairs({
 	[353336] = "秘密财宝",	-- Secret Treasure
 	[353380] = "哈利斯的午餐桶",	-- Halis's Lunch Pail
 	[353472] = "光辉之剑",	-- Radiant Sword
+	[353484] = "宏伟宝库",	-- The Great Vault
 	[353500] = "白银保险箱",	-- Silver Strongbox
 	[353503] = "白银保险箱",	-- Silver Strongbox
 	[353516] = "白银保险箱",	-- Silver Strongbox
@@ -2843,6 +2849,7 @@ for key, value in pairs({
 	--TODO: [358318] = "R. Suavel Dredger Portrait",	-- R. Suavel Dredger Portrait
 	[358319] = "巫师的笔记",	-- Sorceror's Note
 	[358382] = "通缉：螫肢",	-- Wanted: Chelicera
+	[358398] = "丢失的日志",	-- Lost Journal
 	[358399] = "六里包",	-- Six-League Pack
 	[358531] = "巨大的史诗财宝箱",	-- Giant Cache of Epic Treasure
 	[358533] = "被遗忘的补给品",	-- Forgotten Supplies
@@ -2855,6 +2862,7 @@ for key, value in pairs({
 	[364932] = "灼光矿锭",	-- Blazing Ingot
 	[364937] = "相位虹吸仪",	-- Phasic Siphoner
 	[364987] = "掮灵日志",	-- Broker Journal
+	--TODO: [365093] = "Theotar's Caroling Books",	-- Theotar's Caroling Books
 	[368205] = "渊誓之箱",	-- Mawsworn Cache
 	[368206] = "渊誓之箱",	-- Mawsworn Cache
 	[368207] = "渊誓之箱",	-- Mawsworn Cache
@@ -2930,6 +2938,7 @@ for key, value in pairs({
 	[369438] = "隙缚宝箱",	-- Riftbound Cache
 	[369439] = "隙缚宝箱",	-- Riftbound Cache
 	[369440] = "隙缚宝箱",	-- Riftbound Cache
+	[369602] = "蔑视之手",	-- Hands of Defiance
 	[369757] = "水下的宝箱",	-- Submerged Chest
 	[370140] = "损坏的机若藏品",	-- Damaged Jiro Stash
 	--TODO: [370469] = "Spectral Feed",	-- Spectral Feed
@@ -2937,6 +2946,7 @@ for key, value in pairs({
 	[373437] = "刺鼻的团豚群",	-- Pungent Blobfish Cluster
 	[373438] = "旋握藤蔓",	-- Coilclutch Vine
 	[373439] = "跳跳鱼群",	-- Flipper Fish School
+	[373460] = "法夜之网",	-- Fae Net
 	[373471] = "中音宝箱",	-- Mezzonic Cache
 	[373472] = "滑音宝箱",	-- Glissandian Cache
 	[373473] = "赋格宝箱",	-- Fugueal Cache
@@ -2959,6 +2969,7 @@ for key, value in pairs({
 	[373587] = "可激发的索引台",	-- Excitable Concordance
 	[373588] = "善变索引台",	-- Mercurial Concordance
 	[374976] = "交响宝箱",	-- Symphonic Vault
+	[375021] = "陨灭的自动体",	-- Perished Automa
 	[375058] = "弹奏宝箱",	-- Toccatian Cache
 	[375059] = "中音宝箱",	-- Mezzonic Cache
 	[375060] = "滑音宝箱",	-- Glissandian Cache
@@ -2969,6 +2980,7 @@ for key, value in pairs({
 	[375067] = "滑音宝箱",	-- Glissandian Cache
 	[375068] = "赋格宝箱",	-- Fugueal Cache
 	[375069] = "声乐宝箱",	-- Cantaric Cache
+	[375191] = "休眠凹室指向",	-- Dormant Alcove Arrangement
 	[375270] = "原生体设计方案",	-- Protoform Schematic
 	[375272] = "渊誓之箱",	-- Mawsworn Cache
 	[375281] = "失窃的圣物",	-- Stolen Relic
@@ -3027,15 +3039,15 @@ for key, value in pairs({
 	[375538] = "失落的元蛋",	-- Lost Ovoid
 	[375693] = "原生体设计方案",	-- Protoform Schematic
 	[375694] = "原生体设计方案",	-- Protoform Schematic
-	--TODO: [375746] = "Protoform Schematic",	-- Protoform Schematic
+	[375746] = "原型体设计方案",	-- Prototype Schematic
 	[375748] = "原生体设计方案",	-- Protoform Schematic
 	[375889] = "原生体设计方案",	-- Protoform Schematic
 	[375893] = "价值连城的宝箱",	-- High Value Cache
 	[375900] = "原生体设计方案",	-- Protoform Schematic
 	[375902] = "破旧的虚渺披风",	-- Torn Ethereal Drape
 	[375903] = "原生体设计方案",	-- Protoform Schematic
-	--TODO: [375905] = "Protoform Schematic",	-- Protoform Schematic
-	--TODO: [375907] = "Protoform Schematic",	-- Protoform Schematic
+	[375905] = "原生体设计方案",	-- Protoform Schematic
+	[375907] = "原生体设计方案",	-- Protoform Schematic
 	[375915] = "平静微光",	-- Glimmer of Serenity
 	[375950] = "纯粹创新饰珠",	-- Bauble of Pure Innovation
 	[375972] = "通缉：库斯托斯",	-- Wanted: Custos

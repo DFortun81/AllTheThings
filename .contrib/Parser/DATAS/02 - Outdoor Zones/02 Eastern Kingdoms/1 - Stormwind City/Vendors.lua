@@ -237,8 +237,8 @@ _.Zones =
 					["coord"] = { 52.4, 8.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(73838),	-- Mountain Horse
-						i(73839),	-- Swift Mountain Horse
+						i(73838),	-- Mountain Horse (MOUNT!)
+						i(73839),	-- Swift Mountain Horse (MOUNT!)
 					},
 				}),
 				n(12777,  {	-- Captain Dirgehammer (Legacy)
@@ -516,6 +516,13 @@ _.Zones =
 					["g"] = {
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish
+					},
+				}),
+				n(164942, {	-- Evelyn Thorn <Warlock Trainer>
+					["coord"] = { 79.4, 69.8, STORMWIND_CITY },
+					["g"] = {
+						i(189719),	-- Barbed Collar of the Incubus
+						i(189720),	-- Barbed Collar of the Succubus
 					},
 				}),
 				n(44245,  {	-- Faldren Tillsdale
@@ -1891,7 +1898,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(8632),	-- Spotted Frostsaber (MOUNT!)
-						i(47100),	-- Reins of the Striped Dawnsaber
+						i(47100),	-- Striped Dawnsaber (MOUNT!)
 						i(8631),	-- Striped Frostsaber (MOUNT!)
 						i(8629),	-- Striped Nightsaber (MOUNT!)
 						i(18766),	-- Swift Frostsaber (MOUNT!)
@@ -1980,22 +1987,22 @@ _.Zones =
 					["coord"] = { 76.2, 65.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = pvp({
-						i(29465, {	-- Black Battlestrider Mount
+						i(29465, {	-- Black Battlestrider (MOUNT!)
 							["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
 						}),
 						un(REMOVED_FROM_GAME, i(18243)),	-- Black Battlestrider (MOUNT!) Pre 2.0 Version
-						i(29467, {	-- Black War Ram Mount
+						i(29467, {	-- Black War Ram (MOUNT!)
 							["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
 						}),
 						un(REMOVED_FROM_GAME, i(18241)),	-- Black War Steed (MOUNT!) Pre 2.0 Version
-						i(29468, {	-- Black War Steed Bridle Mount
+						i(29468, {	-- Black War Steed (MOUNT!)
 							["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
 						}),
 						un(REMOVED_FROM_GAME, i(18244)),	-- Black War Ram (MOUNT!) Pre 2.0 Version
-						i(35906, {	-- Reins of the Black War Elekk Mount
+						i(35906, {	-- Black War Elekk (MOUNT!)
 							["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
 						}),
-						i(29471, {	-- Reins of the Black War Tiger Mount
+						i(29471, {	-- Black War Tiger (MOUNT!)
 							["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
 						}),
 						un(REMOVED_FROM_GAME, i(18242)),	-- Black War Tiger (MOUNT!) Pre 2.0 Version
@@ -2765,37 +2772,37 @@ _.Zones =
 					["coord"] = { 76.8, 65.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = pvp({
-						i(70909, {	-- Reins of the Vicious War Steed
+						i(70909, {	-- Vicious War Steed (MOUNT!)
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 						}),
-						i(102514, {	-- Reins of the Vicious Warsaber
+						i(102514, {	-- Vicious Kaldorei Warsaber (MOUNT!)
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 						}),
 						i(165019, {	-- Vicious Black Warsaber (A)
 							["cost"] = { { "i", 103533, 1 }, },
 						}),
-						i(140353, {	-- Vicious Gilnean Warhorse
+						i(140353, {	-- Vicious Gilnean Warhorse (MOUNT!)
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 						}),
 						i(163122, {	-- Vicious War Basilisk (A)
 							["cost"] = { { "i", 103533, 1 }, },
 						}),
-						i(142234, {	-- Vicious War Bear
+						i(142234, {	-- Vicious War Bear (A) (MOUNT!)
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 						}),
-						i(140350, {	-- Vicious War Elekk
+						i(140350, {	-- Vicious War Elekk (MOUNT!)
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 						}),
-						i(152870, {	-- Vicious War Fox
+						i(152870, {	-- Vicious War Fox (A) (MOUNT!)
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 						}),
-						i(142237, {	-- Vicious War Lion
+						i(142237, {	-- Vicious War Lion (MOUNT!)
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 						}),
-						i(124089, {	-- Vicious War Mechanostrider
+						i(124089, {	-- Vicious War Mechanostrider (MOUNT!)
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 						}),
-						i(116777, {	-- Vicious War Ram
+						i(116777, {	-- Vicious War Ram (MOUNT!)
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 						}),
 						i(163123, {	-- Vicious War Riverbeast (A)
@@ -2804,7 +2811,7 @@ _.Zones =
 						i(173714, {	-- Vicious White Warsaber (A)
 							["cost"] = { { "i", 103533, 1 }, },
 						}),
-						i(143648, {	-- Vicious War Turtle
+						i(143648, {	-- Vicious War Turtle (A) (MOUNT!)
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 						}),
 					}),
@@ -2813,78 +2820,77 @@ _.Zones =
 					["coord"] = { 67.8, 18.4, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(87795, {	-- Black Dragon Turtle (All races except pandaren)
+						i(87795, {	-- Black Dragon Turtle (MOUNT!) (NON-P)
 							["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 						}),
-						i(91008, {	-- Black Dragon Turtle (Panda)
+						i(91008, {	-- Black Dragon Turtle (MOUNT!) (PANDA)
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
-						i(87796, {	-- Blue Dragon Turtle (All races except pandaren)
+						i(87796, {	-- Blue Dragon Turtle (MOUNT!) (NON-P)
 							["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 						}),
-						i(91009, {	-- Blue Dragon Turtle (Panda)
+						i(91009, {	-- Blue Dragon Turtle (MOUNT!) (PANDA)
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
-						i(87797, {	-- Brown Dragon Turtle (all races except pandaren)
+						i(87797, {	-- Brown Dragon Turtle (MOUNT!) (NON-P)
 							["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 						}),
-						i(91005, {	-- Brown Dragon Turtle (Panda)
+						i(91005, {	-- Brown Dragon Turtle (MOUNT!) (PANDA)
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
-						i(87802, {	-- Great Black Dragon Turtle (non-pandaren)
+						i(87802, {	-- Great Black Dragon Turtle (MOUNT!) (NON-P)
 							["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 						}),
-						i(91011, {	-- Great Black Dragon Turtle (Panda)
+						i(91011, {	-- Great Black Dragon Turtle (MOUNT!) (PANDA)
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
-						i(87803, {	-- Great Blue Dragon Turtle (non-pandaren)
+						i(87803, {	-- Great Blue Dragon Turtle (MOUNT!) (NON-P)
 							["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 						}),
-						i(91013, {	-- Great Blue Dragon Turtle (Panda)
+						i(91013, {	-- Great Blue Dragon Turtle (MOUNT!) (PANDA)
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
-						i(87804, {	-- Great Brown Dragon Turtle (non-pandaren)
+						i(87804, {	-- Great Brown Dragon Turtle (MOUNT!) (NON-P)
 							["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 						}),
-						i(91014, {	-- Great Brown Dragon Turtle (Panda)
+						i(91014, {	-- Great Brown Dragon Turtle (MOUNT!) (PANDA)
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
-						i(87801, {	-- Great Green Dragon Turtle (non-pandaren)
+						i(87801, {	-- Great Green Dragon Turtle (MOUNT!) (NON-P)
 							["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 						}),
-						i(91012, {	-- Great Green Dragon Turtle (Panda)
+						i(91012, {	-- Great Green Dragon Turtle (MOUNT!) (PANDA)
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
-						i(87805),	-- Great Purple Dragon Turtle
-						i(91015, {	-- Great Purple Dragon Turtle (Panda)
-							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
-						}),
-						i(82811, {	-- Great Red Dragon Turtle (non-pandaren)
+						i(87805, {	-- Great Purple Dragon Turtle (MOUNT!) (NON-P)
 							["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 						}),
-						i(91010, {	-- Great Red Dragon Turtle (Panda)
+						i(91015, {	-- Great Purple Dragon Turtle (MOUNT!) (PANDA)
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
-						i(82765, {	-- Green Dragon Turtle (non-pandaren)
+						i(82811, {	-- Great Red Dragon Turtle (MOUNT!) (NON-P)
 							["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 						}),
-						i(91004, {	-- Green Dragon Turtle (Panda)
+						i(91010, {	-- Great Red Dragon Turtle (MOUNT!) (PANDA)
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
-						i(87799, {	-- Purple Dragon Turtle (All races except pandaren)
+						i(82765, {	-- Green Dragon Turtle (MOUNT!) (NON-P)
 							["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 						}),
-						i(91006, {	-- Purple Dragon Turtle (Panda)
+						i(91004, {	-- Green Dragon Turtle (MOUNT!) (PANDA)
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
-						i(87800, {	-- Red Dragon Turtle (All races except pandaren)
+						i(87799, {	-- Purple Dragon Turtle (MOUNT!) (NON-P)
 							["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 						}),
-						i(91007, {	-- Red Dragon Turtle (Panda)
+						i(91006, {	-- Purple Dragon Turtle (MOUNT!) (PANDA)
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
-						i(91016, {	-- Reins of the Great Red Dragon Turtle
-							["u"] = NEVER_IMPLEMENTED,
+						i(87800, {	-- Red Dragon Turtle (MOUNT!) (NON-P)
+							["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
+						}),
+						i(91007, {	-- Red Dragon Turtle (MOUNT!) (PANDA)
+							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
 					},
 				}),
@@ -2892,7 +2898,7 @@ _.Zones =
 					["coord"] = { 73.0, 59.3, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(116789, {	-- Champion's Treadblade
+						i(116789, {	-- Champion's Treadblade (MOUNT!)
 							["cost"] = 1000000000,	-- 100,000g
 						})
 					},
@@ -3400,13 +3406,13 @@ _.Zones =
 					["coord"] = { 71.4, 72.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(25471),	-- Ebon Gryphon Mount
-						i(25470),	-- Golden Gryphon Mount
-						i(25472),	-- Snowy Gryphon Mount
-						i(25473),	-- Swift Blue Gryphon Mount
-						i(25528),	-- Swift Green Gryphon Mount
-						i(25529),	-- Swift Purple Gryphon Mount
-						i(25527),	-- Swift Red Gryphon Mount
+						i(25471),	-- Ebon Gryphon (MOUNT!)
+						i(25470),	-- Golden Gryphon (MOUNT!)
+						i(25472),	-- Snowy Gryphon (MOUNT!)
+						i(25473),	-- Swift Blue Gryphon (MOUNT!)
+						i(25528),	-- Swift Green Gryphon (MOUNT!)
+						i(25529),	-- Swift Purple Gryphon (MOUNT!)
+						i(25527),	-- Swift Red Gryphon (MOUNT!)
 					},
 				}),
 				n(44583,  {	-- Terrance Denman

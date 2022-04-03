@@ -86,7 +86,7 @@ _.Zones =
 								["provider"] = { "n", 115787 },	-- Bloodgazer Hatchling
 								["sourceQuest"] = 45018,	-- Bloodgazer Team Rumble
 								["g"] = {
-									i(137577),	-- Predatory Bloodgazer
+									i(137577),	-- Predatory Bloodgazer (MOUNT!)
 								},
 							}),
 							q(45018, {	-- Bloodgazer Team Rumble

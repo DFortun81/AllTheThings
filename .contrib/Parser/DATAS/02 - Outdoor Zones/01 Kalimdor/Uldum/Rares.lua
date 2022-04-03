@@ -95,7 +95,7 @@ _.Zones =
 						{ 73.44, 73.61, ULDUM },
 					},
 					["g"] = {
-						i(63046, {	-- Reins of the Grey Riding Camel
+						i(63046, {	-- Grey Riding Camel (MOUNT!)
 							["crs"] = { 50245 },	-- Dormus the Camel Hoarder
 						}),
 					},

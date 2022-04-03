@@ -196,7 +196,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 						removeclassicphase(ach(661, {	-- Magister's Terrace
 							-- #if BEFORE 3.0.1
 							["sourceQuest"] = 11492,	-- Hard to Kill
-							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(11492)); end]],
+							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						})),
 						i(35504),	-- Phoenix Hatchling
@@ -319,16 +319,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 								["filterID"] = MOUNTS,
 								-- #if BEFORE WRATH
 								["description"] = "Obtain the Swift White Hawkstrider from Kael'thas in Magister's Terrace.",
-								["OnUpdate"] = [[function(t)
-									local collected = false;
-									for i,provider in ipairs(t.providers) do
-										if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
-											collected = true;
-											break;
-										end
-									end
-									t.SetAchievementCollected(t.achievementID, collected);
-								end]],
+								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 								-- #endif
 							})),
 							i(35513),	-- Swift White Hawkstrider (MOUNT!)
@@ -378,9 +369,11 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	}),
 }));
 -- #endif
-_.HiddenQuestTriggers = {
+-- #if AFTER WOD
+root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
 		q(35531),	-- Magisters' Terrace Reward Quest - Normal completion
 		q(35532),	-- Magisters' Terrace Reward Quest - Heroic completion
 	}),
-};
+});
+-- #endif

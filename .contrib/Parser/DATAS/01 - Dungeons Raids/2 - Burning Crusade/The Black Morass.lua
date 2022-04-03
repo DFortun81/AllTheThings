@@ -130,7 +130,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 								9836,	-- The Master's Touch
 								10297,	-- The Opening of the Dark Portal
 							},
-							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(9836) or C_QuestLog.IsQuestFlaggedCompleted(10297)); end]],
+							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						})),
 						i(28188),	-- Bloodfire Greatstaff
@@ -246,6 +246,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(27873),	-- Moonglade Pants (7.3.5 - Moved to Chrono Lord Deja)
 							-- #endif
 							i(28190),	-- Scarab of the Infinite Cycle
+							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
 							i(33858),	-- Aeonus' Hourglass
 						},
 					})
@@ -271,12 +272,16 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	}),
 }));
 -- #endif
-_.HiddenQuestTriggers = {
+-- #if AFTER TBC
+root("HiddenQuestTriggers", {
 	tier(TBC_TIER, {
 		q(10737),	-- The Master's Touch Quest Completion Credit?
 	}),
+	-- #if AFTER WOD
 	tier(WOD_TIER, {
 		q(35521),	-- The Black Morass Reward Quest - Normal completion
 		q(35522),	-- The Black Morass Reward Quest - Heroic completion
 	}),
-};
+	-- #endif
+});
+-- #endif

@@ -317,7 +317,7 @@ _.Instances = { tier(LEGION_TIER, {
 						114264,	-- Midnight
 					},
 					["g"] = {
-						i(142236),	-- Midnight's Eternal Reins
+						i(142236),	-- Midnight (MOUNT!)
 						i(142140),	-- Calliard's Galoshes
 						i(142174),	-- Choker of Barbed Reins
 						i(142126),	-- Helm of Phantasmal Scars
@@ -352,7 +352,7 @@ _.Instances = { tier(LEGION_TIER, {
 					["description"] = "This boss is only available if you do a speed run.",
 					["cr"] = 115038,	-- Image of Medivh
 					["g"] = {
-						i(142552),	-- Smoldering Ember Wyrm
+						i(142552),	-- Smoldering Ember Wyrm (MOUNT!)
 						q(45296, {	-- No Bones About It
 							["description"] = "You must complete the full quest chain before this will drop from the boss.",
 							["sourceQuest"] = 45295,	-- Return to Karazhan: Clearing Out the Cobwebs

@@ -45,8 +45,9 @@ root("WorldEvents", n(-539,	-- The Scepter of the Shifting Sands
 					["lvl"] = 60,
 					["groups"] = {
 						removeclassicphase(ach(416, {	-- Scarab Lord (Achievement)
+							["sourceQuest"] = 8743,	-- Bang a Gong!
 							-- #if BEFORE 3.0.1
-							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(8743)); end]],
+							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 							["timeline"] = { "removed 4.0.3" },
 						})),
@@ -54,6 +55,9 @@ root("WorldEvents", n(-539,	-- The Scepter of the Shifting Sands
 							["timeline"] = { "added 2.0.3.28000", "removed 4.0.3" },	-- Added in Burning Crusade Prepatch
 						}),
 						i(21176),	-- Black Qiraji Battle Tank (MOUNT!)
+						mount(239770, {	-- Black Qiraji War Tank (MOUNT!)  (This a high resolution version given to players in the end of Legion)
+							["timeline"] = { "added 7.3.5" },
+						}),
 					},
 				})),
 				q(8606, {	-- Decoy!

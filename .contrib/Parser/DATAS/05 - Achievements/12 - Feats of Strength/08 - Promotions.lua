@@ -48,7 +48,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		ach(10657),				-- Fledgling Hero of Warcraft
 		un(REMOVED_FROM_GAME, ach(9763)),		-- Grommloc
 		ach(8345, {				-- Hearthstoned
-			i(98618),			-- Hearthsteed
+			i(98618),			-- Hearthsteed (MOUNT!)
 		}),
 		un(REMOVED_FROM_GAME, ach(11425)),		-- Herald of Flames
 		ach(9926),				-- Hero of the Storm
@@ -80,7 +80,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			["timeline"] = { "added 6.0.2.18888" },
 			["u"] = REMOVED_FROM_GAME,
 			["races"] = HORDE_ONLY, }, {
-				i(116788),	-- Warlord's Deathwheel
+				i(116788),	-- Warlord's Deathwheel (MOUNT!)
 		})),
 	}),
 }));

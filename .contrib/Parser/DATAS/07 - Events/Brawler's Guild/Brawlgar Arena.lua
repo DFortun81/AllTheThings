@@ -164,7 +164,7 @@ root("WorldEvents", m(503,
 					i(166724),	-- Bruce (MOUNT!)
 				},
 			}),
-			
+
 			-- 5.3 Season 1 boss quests (had to be obtainable in later season too)
 			q(32836, { ["u"] = REMOVED_FROM_GAME, }),	-- A Knockoff Grumplefloot
 			q(32837, { ["u"] = REMOVED_FROM_GAME, }),	-- Grandpa Grumplefloot
@@ -190,7 +190,7 @@ root("WorldEvents", m(503,
 			q(32857, { ["u"] = REMOVED_FROM_GAME, }),	-- Ro-Shambo
 			q(32858, { ["u"] = REMOVED_FROM_GAME, }),	-- Raptorhide Boxing Gloves
 			q(32859, { ["u"] = REMOVED_FROM_GAME, }),	-- Ty'thar
-		}),	
+		}),
 		n(VENDORS, {
 			n(68364, {	-- Paul North <Brawl'gar Arena Quartermaster>  This vendor will change if you start the murder questline  New vendor = 145695 "Bad Luck" Symmes <Brawl'gar Arena Quartermaster>
 				["races"] = HORDE_ONLY,
@@ -225,6 +225,7 @@ root("WorldEvents", m(503,
 						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 						["requireSkill"] = JEWELCRAFTING,
 						["spellID"] = 0,
+						["f"] = MISC,
 					}),
 					i(98080),	-- Gorgeous Blouse
 					i(98091),	-- Last Season's Shirt

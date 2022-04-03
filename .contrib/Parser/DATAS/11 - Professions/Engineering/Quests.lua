@@ -4,7 +4,6 @@ profession(ENGINEERING, {
 			["qg"] = 2817,	-- Rigglefuzz
 			["sourceQuest"] = 705,	-- Pearl Diving
 			["coord"] = { 42.39, 52.93, BADLANDS },
-			["requireSkill"] = ENGINEERING,
 			["timeline"] = { "removed 4.0.3.2000" },
 			["lvl"] = 30,
 			["groups"] = {
@@ -21,7 +20,6 @@ profession(ENGINEERING, {
 			},
 			["description"] = "Requires 200 Engineering to start this quest.",
 			["coord"] = { 55.0, 8.6, STORMWIND_CITY },
-			["requireSkill"] = ENGINEERING,
 			["timeline"] = { "removed 4.0.1.2000" },
 			["races"] = ALLIANCE_ONLY,
 			["cost"] = {
@@ -44,7 +42,6 @@ profession(ENGINEERING, {
 			},
 			["description"] = "Requires 200 Engineering to start this quest.",
 			["coord"] = { 68.8, 45.2, IRONFORGE },
-			["requireSkill"] = ENGINEERING,
 			["timeline"] = { "removed 4.0.1.2000" },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = 30,
@@ -67,7 +64,6 @@ profession(ENGINEERING, {
 			},
 			["description"] = "Requires 200 Engineering to start this quest.",
 			["coord"] = { 62.6, 36.2, THE_BARRENS },
-			["requireSkill"] = ENGINEERING,
 			["timeline"] = { "removed 4.0.1.2000" },
 			["races"] = ALLIANCE_ONLY,
 			["cost"] = {
@@ -90,7 +86,6 @@ profession(ENGINEERING, {
 			},
 			["description"] = "Requires 200 Engineering to start this quest.",
 			["coord"] = { 75.6, 74.6, UNDERCITY },
-			["requireSkill"] = ENGINEERING,
 			["timeline"] = { "removed 4.0.1.2000" },
 			["races"] = HORDE_ONLY,
 			["cost"] = {
@@ -102,7 +97,6 @@ profession(ENGINEERING, {
 			["qg"] = 3494,	-- Tinkerwiz <Journeyman Engineer>
 			["description"] = "Requires 200 Engineering to start this quest.",
 			["coord"] = { 62.6, 36.2, THE_BARRENS },
-			["requireSkill"] = ENGINEERING,
 			["timeline"] = { "removed 4.0.1.2000" },
 			["races"] = HORDE_ONLY,
 			["altQuests"] = {
@@ -153,7 +147,6 @@ profession(ENGINEERING, {
 				{ "i", 4392, 2 },	-- Advanced Target Dummy
 				{ "i", 4407, 1 },	-- Accurate Scope
 			},
-			["requireSkill"] = ENGINEERING,
 			["u"] = REMOVED_FROM_GAME,
 			["lvl"] = 20,
 		}),
@@ -189,7 +182,6 @@ profession(ENGINEERING, {
 				{ "i", 10507, 20 },	-- Solid Dynamite
 				{ "i", 4384, 5 },	-- Explosive Sheep
 			},
-			["requireSkill"] = ENGINEERING,
 			["u"] = REMOVED_FROM_GAME,
 			["lvl"] = 20,
 		}),
@@ -208,7 +200,6 @@ profession(ENGINEERING, {
 			},
 			["description"] = "Requires 200 Engineering to start this quest.",
 			["coord"] = { 75.6, 74.6, UNDERCITY },
-			["requireSkill"] = ENGINEERING,
 			["timeline"] = { "removed 4.0.1.2000" },
 			["races"] = HORDE_ONLY,
 			["cost"] = {
@@ -231,7 +222,6 @@ profession(ENGINEERING, {
 			},
 			["description"] = "Requires 200 Engineering to start this quest.",
 			["coord"] = { 55.0, 8.6, STORMWIND_CITY },
-			["requireSkill"] = ENGINEERING,
 			["timeline"] = { "removed 4.0.1.2000" },
 			["races"] = ALLIANCE_ONLY,
 			["cost"] = {
@@ -254,7 +244,6 @@ profession(ENGINEERING, {
 			},
 			["description"] = "Requires 200 Engineering to start this quest.",
 			["coord"] = { 62.6, 36.2, THE_BARRENS },
-			["requireSkill"] = ENGINEERING,
 			["timeline"] = { "removed 4.0.1.2000" },
 			["races"] = HORDE_ONLY,
 			["cost"] = {
@@ -277,7 +266,6 @@ profession(ENGINEERING, {
 			},
 			["description"] = "Requires 200 Engineering to start this quest.",
 			["coord"] = { 68.8, 45.2, IRONFORGE },
-			["requireSkill"] = ENGINEERING,
 			["timeline"] = { "removed 4.0.1.2000" },
 			["races"] = ALLIANCE_ONLY,
 			["cost"] = {
@@ -289,7 +277,6 @@ profession(ENGINEERING, {
 			["qg"] = 17634,	-- K. Lee Smallfry <Engineering Trainer>
 			["altQuests"] = { 9635 },	-- The Zapthrottle Mote Extractor! [H]
 			["coord"] = { 68.6, 50.2, ZANGARMARSH },
-			["requireSkill"] = ENGINEERING,
 			["races"] = ALLIANCE_ONLY,
 			-- #if BEFORE WRATH
 			["u"] = TBC_PHASE_ONE,
@@ -305,7 +292,6 @@ profession(ENGINEERING, {
 			["qg"] = 17637,	-- Mack Diver <Engineering Trainer>
 			["altQuests"] = { 9636 },	-- The Zapthrottle Mote Extractor! [A]
 			["coord"] = { 34, 51, ZANGARMARSH },
-			["requireSkill"] = ENGINEERING,
 			["races"] = HORDE_ONLY,
 			-- #if BEFORE WRATH
 			["u"] = TBC_PHASE_ONE,
@@ -315,6 +301,27 @@ profession(ENGINEERING, {
 			},
 			["groups"] = {
 				i(23888),	-- Schematic: Zapthrottle Mote Extractor
+			},
+		}),
+		-- Argus Questline
+		q(48069, {	-- The Wrench Calls
+			["qg"] = 125525,	-- Durael
+			["sourceQuests"] = { 46941 },	-- The Path Forward
+			["maps"] = {	-- actual possible coords would be preferred
+				831,	-- Upper Deck [The Vindicaar: Krokuun]
+				832,	-- Lower Deck [The Vindicaar: Krokuun]
+				883,	-- Upper Deck [The Vindicaar: Eredath]
+				884,	-- Lower Deck [The Vindicaar: Eredath]
+				886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
+				887,	-- Lower Deck [The Vindicaar: Antoran Wastes]
+			},
+		}),
+		q(48065, {	-- Extraterrestrial Exploration
+			["qg"] = 93520,	-- Didi the Wrench
+			["sourceQuests"] = { 48069 },	-- The Wrench Calls
+			["coord"] = { 38.8, 25.6, LEGION_DALARAN },
+			["g"] = {
+				recipe(247744),	-- Wormhole Generator: Argus
 			},
 		}),
 	}),

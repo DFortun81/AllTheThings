@@ -15,6 +15,17 @@ root("Instances", tier(CLASSIC_TIER, {
 		["isRaid"] = true,
 		["lvl"] = lvlsquish(50, 25, 50),
 		["groups"] = {
+			n(ACHIEVEMENTS, {
+				removeclassicphase(ach(955, {	-- Hydraxian Waterlords
+					-- #if BEFORE 3.0.1
+					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
+					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
+					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 749); end]],
+					["description"] = "Raise your reputation with the Hydraxian Waterlords to Exalted.",
+					-- #endif
+					["maps"] = { AZSHARA },
+				})),
+			}),
 			n(FACTIONS, {
 				faction(749, { 	-- Hydraxian Waterlords
 					["qg"] = 13278,	-- Duke Hydraxis
@@ -116,7 +127,7 @@ root("Instances", tier(CLASSIC_TIER, {
 							-- #if BEFORE 3.0.1
 							["sourceQuest"] = 6824,	-- Hands of the Enemy
 							["description"] = "Obtain an Aqual Quintessence.",
-							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(6824)); end]],
+							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						})),
 					},
@@ -154,16 +165,7 @@ root("Instances", tier(CLASSIC_TIER, {
 							["classes"] = { DEATHKNIGHT, DEMONHUNTER, HUNTER, MAGE, MONK, PALADIN, ROGUE, WARLOCK, WARRIOR },
 							-- #if BEFORE WRATH
 							["description"] = "Wielder of Thunderfury, Blessed Blade of the Windseeker.",
-							["OnUpdate"] = [[function(t)
-								local collected = false;
-								for i,provider in ipairs(t.providers) do
-									if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
-										collected = true;
-										break;
-									end
-								end
-								t.SetAchievementCollected(t.achievementID, collected);
-							end]],
+							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 							-- #endif
 						})),
 						i(19019),	-- Thunderfury, Blessed Blade of the Windseeker
@@ -689,7 +691,7 @@ root("Instances", tier(CLASSIC_TIER, {
 							7787,	-- Rise, Thunderfury!
 							8620,	-- The Only Prescription
 						},
-						["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(7787) or C_QuestLog.IsQuestFlaggedCompleted(8620)); end]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					})),
 					removeclassicphase(ach(429, {	-- Sulfuras, Hand of Ragnaros
@@ -697,16 +699,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						["classes"] = { DEATHKNIGHT, DRUID, PALADIN, SHAMAN, WARRIOR },
 						-- #if BEFORE WRATH
 						["description"] = "Wielder of Sulfuras, Hand of Ragnaros.",
-						["OnUpdate"] = [[function(t)
-							local collected = false;
-							for i,provider in ipairs(t.providers) do
-								if provider[1] == "i" and GetItemCount(provider[2], true) > 0 then
-									collected = true;
-									break;
-								end
-							end
-							t.SetAchievementCollected(t.achievementID, collected);
-						end]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 						-- #endif
 					})),
 					i(17182, {	-- Sulfuras, Hand of Ragnaros

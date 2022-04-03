@@ -362,7 +362,7 @@ root("Instances", tier(CLASSIC_TIER, {
 							3636,	-- Bring the Light
 							3341,	-- Bring the End
 						},
-						["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(3636) or C_QuestLog.IsQuestFlaggedCompleted(3341)); end]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					})),
 					i(10420),	-- Skull of the Coldbringer

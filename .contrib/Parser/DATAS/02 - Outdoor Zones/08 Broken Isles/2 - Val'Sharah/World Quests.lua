@@ -311,7 +311,10 @@ _.Zones =
 				}),
 				q(41634, {	-- Work Order: Leystone Armguards
 					["requireSkill"] = BLACKSMITHING,
-					["g"] = {
+					["provider"] = { "n", 106901 },	-- Sylvia Hartshorn
+					["lvl"] = 110,
+					["isWorldQuest"] = true,
+					["groups"] = {
 						i(123936),	-- Recipe: Leystone Armguards (Rank 3)
 					},
 				}),

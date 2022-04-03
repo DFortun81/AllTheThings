@@ -1954,7 +1954,7 @@ root("Instances", tier(CLASSIC_TIER, {
 								4362,	-- The Fate of the Kingdom
 								4003,	-- The Royal Rescue
 							},
-							["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, C_QuestLog.IsQuestFlaggedCompleted(4362) or C_QuestLog.IsQuestFlaggedCompleted(4003)); end]],
+							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						})),
 						i(11931),	-- Dreadforge Retaliatior
