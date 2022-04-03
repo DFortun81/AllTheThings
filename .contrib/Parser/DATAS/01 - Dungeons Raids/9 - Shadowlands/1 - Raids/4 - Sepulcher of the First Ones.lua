@@ -1798,9 +1798,10 @@ root("HiddenQuestTriggers", {
 			q(65975),	-- Killing Rygelon
 			q(65986),	-- Triggered when killing Trash: Kelmortos
 			q(65987),	-- Triggered when killing Trash: Kelmortos
-			-- q( ),	-- Killing The Jailer
-			-- q( ),	-- Killing The Jailer
-			-- q( ),	-- Killing The Jailer
+			q(65830),	-- Killing The Jailer
+			q(65831),	-- Killing The Jailer
+			q(65976),	-- Killing The Jailer
+			q(65698),	-- Jailer Cinematic
 		}),
 	}),
 });
@@ -1858,6 +1859,10 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(189780),	-- <DNT> 9.2 Raid - Sepulcher of the First Ones - Boss 01 - Solitary Guardian - Shield
 			i(190623),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - Trash Drops - Armor - Plate Shoulders
 			-- Tiers that wasnt tiers anymore
+		}),
+	}),
+}));
+			--[[
 			n(CLASSES, bubbleDown({ ["modID"] = 4 }, {	-- LFR
 				cl(DEATHKNIGHT, {
 					i(188873),	-- Cloak of the First Eidolon
@@ -2789,3 +2794,4 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		})),
 	}),
 }));
+--]]

@@ -1098,6 +1098,13 @@ i(157870, 263707);	-- Zandalari Direhorn
 -- NYI --
 i(156885, 262028);	-- Gold Gladiator's Proto-Drake
 i(156883, 262026);	-- Green Gladiator's Proto-Drake
+--i(0, 237285);		-- Hyena Mount White (PH)
+--i(0, 261963);		-- Mounted
+--i(0, 254812);		-- PH Giant Parrot (Blue)
+--i(0, 256121);		-- PH Goblin Hovercraft (Blue)
+--i(0, 256125);		-- PH Goblin Hovercraft (Green)
+--i(0, 256124);		-- PH Goblin Hovercraft (Red)
+--i(0, 260176);		-- Proudmoore Horse 2
 i(163188);	-- Surf Jelly
 i(156882, 262025);	-- Pale Gladiator's Proto-Drake
 i(163186, 278966);	-- Tempestuous Skystallion
@@ -1190,6 +1197,7 @@ i(167751, 294143);	-- X-995 Mechanocat
 i(153594, 256123);	-- Xiwyllag-ATV
 -- NYI --
 i(168673);	-- Keys to the Silver Mono-Wheel (No mount in yet)
+--i(0, 301841);		-- Kua'fon
 --i(0, 302796);		-- Swift Spectral Armored Gryphon
 --i(0, 302794);		-- Swift Spectral Fathom Ray
 --i(0, 302795);		-- Swift Spectral Magnetocraft
@@ -1333,6 +1341,13 @@ i(183615, 341766);	-- Warstitched Darkhound
 i(180730, 334366);	-- Wild Glimmerfur Prowler
 i(180731, 334352);	-- Wildseed Cradle
 i(180415, 332245);	-- Winterborn Runestag
+-- NYI --
+--i(0, 312772);		-- Gilded Prowler
+--i(0, 332257);		-- Gorm (Yellow)
+--i(0, 334482);		-- PH Death Elemental
+--i(0, 332908);		-- PH Devourer Mite (Green)
+--i(0, 312758);		-- PH Epic Phalynx
+--i(0, 312756);		-- PH Phalynx
 
 -----------------
 -- PATCH 9.0.2 --
@@ -1348,6 +1363,8 @@ i(184168, 344577);	-- Bound Shadehound
 --i(0, 347812);		-- Sapphire Skyblazer
 --i(0, 346136);		-- Viridian Phase-Hunter
 --i(0, 348162);		-- Wandering Ancient
+-- NYI --
+--i(0, 347813);		-- Fireplume Phoenix
 
 -----------------
 -- PATCH 9.1.0 --
@@ -1412,6 +1429,8 @@ i(186491, 353860);	-- Spring Wilderling Harness
 i(188674, 359318);	-- Soaring Spelltome
 i(187595, 359013);	-- Val'sharah Hippogryph
 --i(0, 359317);		-- Wen Lo, the River's Edge
+-- NYI --
+--i(0, 350529);		-- NAK's Test Mount [DNT]
 
 -----------------
 -- PATCH 9.2.0 --

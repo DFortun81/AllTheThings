@@ -36,6 +36,415 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(189561),	-- Tame Prime: Orixal
 		i(189572),	-- Tame Prime: Hadeon the Stonebreaker
 		i(189573),	-- Tame Prime: Garudeon
+		-- Stupid Things?
+		-- LFR DK
+		i(190467, {	-- Girdle of Unity
+			["bonusID"] = 6896
+		}),
+		i(190467, {	-- Girdle of Unity
+			["modID"] = 4
+		}),
+		-- LFR Druid
+		i(190618, {	-- Lattice of the Distant Keeper (World Boss)
+			["bonusID"] = 451
+		}),
+		i(190465, {	-- Cinch of Unity
+			["bonusID"] = 6896
+		}),
+		i(190465, {	-- Cinch of Unity
+			["modID"] = 4
+		}),
+		-- LFR Hunter
+		i(190616, {	-- Controlled Sequence Clasp (World Boss)
+			["bonusID"] = 451
+		}),
+		i(190617, {	-- Destruction-Core Handlers (World Boss)
+			["bonusID"] = 451
+		}),
+		-- LFR Mage
+		i(190621, {	-- Dealic Deterrent Stockings (World Boss)
+			["modID"] = 4
+		}),
+		-- LFR Monk
+		i(190472, {	-- Cinch of Unity
+			["bonusID"] = 6896
+		}),
+		i(190472, {	-- Cinch of Unity
+			["modID"] = 4
+		}),
+		-- LFR Paladin
+		i(190614, {	-- Antros' Entrusted Bascinet (World Boss)
+			["modID"] = 4,
+		}),
+		i(190615, {	-- Cosmic Guardian's Casing (World Boss)
+			["modID"] = 4,
+		}),
+		-- LFR Priest
+		i(190468, {	-- Cord of Unity
+			["bonusID"] = 6897
+		}),
+		i(190468, {	-- Cord of Unity
+			["modID"] = 4
+		}),
+		-- LFR Rogue
+		i(190471, {	-- Cinch of Unity
+			["bonusID"] = 6896
+		}),
+		i(190471, {	-- Cinch of Unity
+			["modID"] = 4
+		}),
+		-- LFR Shaman
+		i(190473, {	-- Clasp of Unity
+			["bonusID"] = 6898
+		}),
+		i(190473, {	-- Clasp of Unity
+			["modID"] = 4
+		}),
+		-- LFR Warlock
+		i(190620, {	-- Sav'thul's Calamitous Tantour (World Boss)
+			["modID"] = 4,
+		}),
+		i(190469, {	-- Cord of Unity
+			["bonusID"] = 6896
+		}),
+		i(190469, {	-- Cord of Unity
+			["modID"] = 4
+		}),
+		-- LFR Warrior
+		i(190475, {	-- Girdle of Unity
+			["bonusID"] = 6896
+		}),
+		i(190475, {	-- Girdle of Unity
+			["modID"] = 4
+		}),
+		-- LFR alt Hunter
+		i(190466, {	-- Clasp of Unity
+			["bonusID"] = 6896
+		}),
+		i(190466, {	-- Clasp of Unity
+			["modID"] = 4
+		}),
+		-- LFR alt Mage
+		i(190464, {	-- Cord of Unity
+			["bonusID"] = 6896
+		}),
+
+		-- Normal
+		i(190467, {	-- Girdle of Unity DK
+			["bonusID"] = 8107
+		}),
+		i(190470, {	-- Cinch of Unity DH
+			["bonusID"] = 8107
+		}),
+		i(190465, {	-- Cinch of Unity Druid
+			["bonusID"] = 8107
+		}),
+		i(190466, {	-- Clasp of Unity Hunter
+			["bonusID"] = 8107
+		}),
+		i(190464, {	-- Cord of Unity Mage
+			["bonusID"] = 8107
+		}),
+		i(190472, {	-- Cinch of Unity Monk
+			["bonusID"] = 8107
+		}),
+		i(190474, {	-- Girdle of Unity Pala
+			["bonusID"] = 8107
+		}),
+		i(190468, {	-- Cord of Unity Priest
+			["bonusID"] = 8107
+		}),
+		-- Rogue??
+		i(190473, {	-- Clasp of Unity Shaman
+			["bonusID"] = 6895
+		}),
+		i(190469, {	-- Cord of Unity Warlock
+			["bonusID"] = 8107
+		}),
+		i(190475, {	-- Girdle of Unity Warrior
+			["bonusID"] = 8107
+		}),
+		-- Normal Alt Rogue
+		i(190471, {	-- Cinch of Unity
+			["bonusID"] = 8107
+		}),
+		i(190471, {	-- Cinch of Unity
+			["modID"] = 2
+		}),
+		-- Normal Alt Shaman
+		i(190473, {	-- Clasp of Unity
+			["bonusID"] = 8107
+		}),
+		i(190473, {	-- Clasp of Unity
+			["modID"] = 2
+		}),
+		-- Heroic
+		i(190467, {	-- Girdle of Unity DK
+			["bonusID"] = 6898
+		}),
+		i(190467, {	-- Girdle of Unity DK
+			["modID"] = 2
+		}),
+		i(190618, {	-- Antecedent's Aliform Joggers
+			["modID"] = 2
+		}),
+		i(190470, {	-- Cinch of Unity DH
+			["bonusID"] = 6898
+		}),
+		i(190470, {	-- Cinch of Unity DH
+			["modID"] = 2
+		}),
+		i(190618, {	-- Lattice of the Distant Keeper (World Boss)
+			["modID"] = 2
+		}),
+		i(190465, {	-- Cinch of Unity Druid
+			["bonusID"] = 6898
+		}),
+		i(190465, {	-- Cinch of Unity Druid
+			["modID"] = 2
+		}),
+		i(190466, {	-- Clasp of Unity Hunter
+			["bonusID"] = 6898
+		}),
+		i(190466, {	-- Clasp of Unity Hunter
+			["modID"] = 2
+		}),
+		i(190616, {	-- Controlled Sequence Clasp (World Boss)
+			["modID"] = 2
+		}),
+		i(190617, {	-- Destruction-Core Handlers (World Boss)
+			["modID"] = 2
+		}),
+		i(190621, {	-- Dealic Deterrent Stockings (World Boss)
+			["modID"] = 2
+		}),
+		i(190464, {	-- Cord of Unity Mage
+			["bonusID"] = 6898
+		}),
+		i(190464, {	-- Cord of Unity Mage
+			["modID"] = 2
+		}),
+		i(190472, {	-- Cinch of Unity
+			["bonusID"] = 6898
+		}),
+		i(190472, {	-- Cinch of Unity
+			["modID"] = 2
+		}),
+		i(190614, {	-- Antros' Entrusted Bascinet (World Boss)
+			["modID"] = 2,
+		}),
+		i(190615, {	-- Cosmic Guardian's Casing (World Boss)
+			["modID"] = 2,
+		}),
+		i(190474, {	-- Girdle of Unity Pala
+			["bonusID"] = 6898
+		}),
+		i(190474, {	-- Girdle of Unity Pala
+			["modID"] = 2
+		}),
+		i(190468, {	-- Cord of Unity Priest
+			["bonusID"] = 6898
+		}),
+		i(190468, {	-- Cord of Unity Priest
+			["modID"] = 2
+		}),
+		i(190471, {	-- Cinch of Unity
+			["bonusID"] = 6898
+		}),
+		i(190471, {	-- Cinch of Unity
+			["modID"] = 6
+		}),
+		i(190620, {	-- Sav'thul's Calamitous Tantour (World Boss)
+			["modID"] = 2,
+		}),
+		i(190469, {	-- Cord of Unity
+			["bonusID"] = 6898
+		}),
+		i(190469, {	-- Cord of Unity
+			["modID"] = 2
+		}),
+		i(190475, {	-- Girdle of Unity
+			["bonusID"] = 6898
+		}),
+		i(190475, {	-- Girdle of Unity
+			["modID"] = 2
+		}),
+		-- Mythic
+		i(190467, {	-- Girdle of Unity DK
+			["bonusID"] = 6897
+		}),
+		i(190467, {	-- Girdle of Unity DK
+			["modID"] = 6
+		}),
+		i(190618, {	-- Antecedent's Aliform Joggers
+			["modID"] = 6
+		}),
+		i(190470, {	-- Cinch of Unity DH
+			["bonusID"] = 6897
+		}),
+		i(190470, {	-- Cinch of Unity DH
+			["modID"] = 6
+		}),
+		i(190618, {	-- Lattice of the Distant Keeper (World Boss)
+			["modID"] = 6
+		}),
+		i(190465, {	-- Cinch of Unity Druid
+			["bonusID"] = 6897
+		}),
+		i(190465, {	-- Cinch of Unity Druid
+			["modID"] = 6
+		}),
+		i(190466, {	-- Clasp of Unity Hunter
+			["bonusID"] = 6897
+		}),
+		i(190466, {	-- Clasp of Unity Hunter
+			["modID"] = 6
+		}),
+		i(190616, {	-- Controlled Sequence Clasp (World Boss)
+			["modID"] = 6
+		}),
+		i(190617, {	-- Destruction-Core Handlers (World Boss)
+			["modID"] = 6
+		}),
+		i(190621, {	-- Dealic Deterrent Stockings (World Boss)
+			["modID"] = 6
+		}),
+		i(190464, {	-- Cord of Unity Mage
+			["bonusID"] = 6897
+		}),
+		i(190464, {	-- Cord of Unity Mage
+			["modID"] = 6
+		}),
+		i(190464, {	-- Cord of Unity Mage
+			["bonusID"] = 6895
+		}),
+		i(190464, {	-- Cord of Unity Mage
+			["modID"] = 4
+		}),
+		i(190472, {	-- Cinch of Unity
+			["bonusID"] = 6897
+		}),
+		i(190472, {	-- Cinch of Unity
+			["modID"] = 6
+		}),
+		i(190614, {	-- Antros' Entrusted Bascinet (World Boss)
+			["modID"] = 6,
+		}),
+		i(190615, {	-- Cosmic Guardian's Casing (World Boss)
+			["modID"] = 6,
+		}),
+		i(190474, {	-- Girdle of Unity Pala
+			["bonusID"] = 6897
+		}),
+		i(190474, {	-- Girdle of Unity Pala
+			["modID"] = 6
+		}),
+		i(190468, {	-- Cord of Unity Priest
+			["bonusID"] = 6897
+		}),
+		i(190468, {	-- Cord of Unity Priest
+			["modID"] = 6
+		}),
+		i(190471, {	-- Cinch of Unity
+			["bonusID"] = 6897
+		}),
+		i(190471, {	-- Cinch of Unity
+			["bonusID"] = 6898
+		}),
+		i(190473, {	-- Clasp of Unity
+			["bonusID"] = 6897
+		}),
+		i(190473, {	-- Clasp of Unity
+			["modID"] = 6
+		}),
+		i(190620, {	-- Sav'thul's Calamitous Tantour (World Boss)
+			["modID"] = 6,
+		}),
+		i(190469, {	-- Cord of Unity
+			["bonusID"] = 6897
+		}),
+		i(190469, {	-- Cord of Unity
+			["modID"] = 6
+		}),
+		i(190475, {	-- Girdle of Unity
+			["bonusID"] = 6897
+		}),
+		i(190475, {	-- Girdle of Unity
+			["modID"] = 6
+		}),
+		-- PvP
+		i(190467, {	-- Girdle of Unity DK
+			["bonusID"] = 6895
+		}),
+		i(190467, {	-- Girdle of Unity DK
+			["bonusID"] = 6894
+		}),
+		i(190470, {	-- Cinch of Unity DH
+			["bonusID"] = 6895
+		}),
+		i(190470, {	-- Cinch of Unity DH
+			["bonusID"] = 6894
+		}),
+		i(190465, {	-- Cinch of Unity Druid
+			["bonusID"] = 6895
+		}),
+		i(190465, {	-- Cinch of Unity Druid
+			["bonusID"] = 6894
+		}),
+		i(190466, {	-- Clasp of Unity Hunter
+			["bonusID"] = 6894
+		}),
+		i(190466, {	-- Clasp of Unity Hunter
+			["bonusID"] = 6895
+		}),
+		i(190464, {	-- Cord of Unity Mage
+			["bonusID"] = 6895
+		}),
+		i(190464, {	-- Cord of Unity Mage
+			["bonusID"] = 6894
+		}),
+		i(190472, {	-- Cinch of Unity
+			["bonusID"] = 6895
+		}),
+		i(190472, {	-- Cinch of Unity
+			["bonusID"] = 6894
+		}),
+		i(190474, {	-- Girdle of Unity Pala
+			["bonusID"] = 6895
+		}),
+		i(190474, {	-- Girdle of Unity Pala
+			["bonusID"] = 6894
+		}),
+		i(190468, {	-- Cord of Unity Priest
+			["bonusID"] = 6895
+		}),
+		i(190468, {	-- Cord of Unity Priest
+			["bonusID"] = 6894
+		}),
+		i(190471, {	-- Cinch of Unity
+			["bonusID"] = 6895
+		}),
+		i(190471, {	-- Cinch of Unity
+			["bonusID"] = 6894
+		}),
+		i(190473, {	-- Clasp of Unity
+			["bonusID"] = 6894
+		}),
+		i(190473, {	-- Clasp of Unity
+			["bonusID"] = 6896
+		}),
+		i(190469, {	-- Cord of Unity
+			["bonusID"] = 6895
+		}),
+		i(190469, {	-- Cord of Unity
+			["bonusID"] = 6894
+		}),
+		i(190475, {	-- Girdle of Unity
+			["bonusID"] = 6895
+		}),
+		i(190475, {	-- Girdle of Unity
+			["bonusID"] = 6894
+		}),
 	}),
 	tier(CLASSIC_TIER, {
 		n(ARMOR, {
@@ -79,14 +488,14 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(12106),	-- Boulderskin Breastplate
 				i(21587),	-- Wristguards of Castigation
 			}),
-			filter(NECK, {
+			filter(NECK_F, {
 				i(13811),	-- Necklace of the Dawn
 				i(23058),	-- Life Channeling Necklace
 				--
 				i(7550),	-- Warrior's Honor
 				i(18023),	-- Blood Ruby Pendant
 			}),
-			filter(FINGER, {
+			filter(FINGER_F, {
 				i(13812),	-- Ring of the Dawn
 				i(19065),	-- Emerald Circle
 				--
@@ -94,7 +503,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(17000),	-- Band of the Wraith
 				i(17108),	-- Mark of Deflection
 			}),
-			filter(TRINKET, {
+			filter(FINGER_F, {
 				i(12805),	-- Orb of Fire
 				i(18355),	-- Ferras Collar
 				i(18438),	-- Sergeant's Mark
@@ -335,7 +744,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(23470),	-- Rugged Trapper's Shirt
 				}),
 			}),
-			filter(NECK, {
+			filter(NECK_F, {
 				n(P2xx, {
 					i(28043),	-- Demon Stalker Pendant
 					i(31930),	-- Enigmatic Charm
@@ -349,7 +758,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(33201),	-- Silver Moonstone Pendant
 				}),
 			}),
-			filter(FINGER, {
+			filter(FINGER_F, {
 				n(P2xx, {
 					i(28044),	-- Band of the Demon Stalker
 					i(33097),	-- Mushroom Ring
@@ -518,7 +927,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(43938),	-- Belt of Rising Hope
 				}),
 			}),
-			filter(NECK, {
+			filter(NECK_F, {
 				tier(WOTLK_TIER, 0.2, {
 					i(44391),	-- Cast Steel Choker
 					i(44392),	-- Necklace of Permeation
@@ -532,7 +941,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(44390),	-- Venomous Pendant
 				}),
 			}),
-			filter(FINGER, {
+			filter(FINGER_F, {
 				tier(WOTLK_TIER, 0.1, {
 					i(41756),	-- Heart's Blood Signet
 				}),
@@ -542,7 +951,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(46842),	-- Crusader's Band
 				}),
 			}),
-			filter(TRINKET, {
+			filter(FINGER_F, {
 				n(P3xx, {
 					i(38572),	-- Bounty Procurement Enhancer
 					i(39819),	-- Bloodbinder's Runestone
@@ -913,12 +1322,12 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(54331),	-- Black Velvet Chest
 				}),
 			}),
-			filter(NECK, {
+			filter(NECK_F, {
 				n(P4xx, {
 					i(59665),	-- Emerald Dragonet Choker
 				}),
 			}),
-			filter(FINGER, {
+			filter(FINGER_F, {
 				tier(CATA_TIER, 0.3, {
 					i(57708),	-- QA Test Finger 500 Strength
 					i(57709),	-- QA Test Finger Strength
@@ -931,7 +1340,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(58816),	-- QA Test Finger 250 Hit
 				}),
 			}),
-			filter(TRINKET, {
+			filter(FINGER_F, {
 				tier(CATA_TIER, 0.3, {
 					i(54547),	-- Cracked Jewelry Box
 				}),
@@ -1005,7 +1414,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(81710),	-- Grinning Skull Greatboots
 				}),
 			}),
-			filter(FINGER, {
+			filter(FINGER_F, {
 				tier(MOP_TIER, 3.0, {
 					i(98037),	-- QA Test Finger Dodge
 					i(98038),	-- QA Test Finger Parry
@@ -1414,7 +1823,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(116399),	-- Emerald Sunglasses
 				}),
 			}),
-			filter(NECK, {
+			filter(NECK_F, {
 				tier(WOD_TIER, 0.1, {
 					i(108812),	-- 6.0 PH Neck Agi
 					i(108818),	-- 6.0 PH Neck Str
@@ -1431,7 +1840,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(109526),	-- 7.0 QA Combat Test Neck 4
 				}),
 			}),
-			filter(FINGER, {
+			filter(FINGER_F, {
 				tier(WOD_TIER, 0.1, {
 					i(108813),	-- 6.0 PH Ring Agi
 					i(108820),	-- 6.0 PH Ring Str
@@ -1450,7 +1859,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(109516),	-- 7.0 QA Combat Test Ring 5
 				}),
 			}),
-			filter(TRINKET, {
+			filter(FINGER_F, {
 				tier(WOD_TIER, 0.1, {
 					i(114960),	-- Spires unused
 					i(109263),	-- 6.0 QA Combat Test Agility DPS Trinket
@@ -1626,12 +2035,12 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(137552),	-- Purple Shirt
 				}),
 			}),
-			filter(NECK, {
+			filter(NECK_F, {
 				tier(LEGION_TIER, 3.5, {
 					i(157750),	-- Pendant of Good Fortune
 				}),
 			}),
-			filter(FINGER, {
+			filter(FINGER_F, {
 				tier(LEGION_TIER, 0.3, {
 					i(141907),	-- Arena Victory Bonus
 				}),
@@ -1655,7 +2064,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(157749),	-- Ornate Silver Loop
 				}),
 			}),
-			filter(TRINKET, {
+			filter(FINGER_F, {
 				tier(LEGION_TIER, 3.0, {
 					i(151967),	-- Electrostatic Lasso
 				}),
@@ -2073,7 +2482,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(168665),	-- Hidden Bracers
 				})
 			}),
-			filter(NECK, {
+			filter(NECK_F, {
 				tier(BFA_TIER, 0.1, {
 					i(158502),	-- Shaleshell Pendant
 					i(158554),	-- Shaleshell Pendant
@@ -2082,7 +2491,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(167137),	-- QA Combat Test Neck 1
 				}),
 			}),
-			filter(FINGER, {
+			filter(FINGER_F, {
 				tier(BFA_TIER, 0.1, {
 					i(158501),	-- Sea Sapphire Band
 					i(158519),	-- Beaten Copper Loop
@@ -2108,7 +2517,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(173421),	-- Black Empire Signet
 				}),
 			}),
-			filter(TRINKET, {
+			filter(FINGER_F, {
 				tier(BFA_TIER, 0.1, {
 					i(161222),	-- Latency Manipulator
 					i(161223),	-- Agency Manipulator
@@ -2540,7 +2949,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(190934),	-- Standard of the Wandering Brokers
 				}),
 			}),
-			filter(NECK, {
+			filter(NECK_F, {
 				tier(SL_TIER, 0.1, {
 					i(177146),	-- Shaleshell Pendant
 					i(177165),	-- Shaleshell Pendant
@@ -2556,7 +2965,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(188111),	-- Cypher Attunement Neck
 				}),
 			}),
-			filter(FINGER, {
+			filter(FINGER_F, {
 				tier(SL_TIER, 0.1, {
 					i(175717),	-- Inquisitor's Signet
 					i(177145),	-- Sea Sapphire Band
@@ -2569,7 +2978,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(188112),	-- Cypher Attunement Ring
 				}),
 			}),
-			filter(TRINKET, {
+			filter(FINGER_F, {
 				tier(SL_TIER, 0.1, {
 					i(175726),	-- Primalist's Kelpling
 					i(175727),	-- Elder's Stormseed
