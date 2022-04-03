@@ -1486,12 +1486,13 @@ i(190768, 368158);	-- Zereth Overseer
 -----------------
 -- * = Sourced
 -- Dark Iron Dwarf
-i(191123, 369666);	-- [PH] The Flame Woof*
+i(191123, 369666);	-- Grimhowl*
+
+i(191566, 370620);	-- Elusive Emerald Hawkstrider*
 
 -- PVP
 i(191290, 370346);	-- Eternal Gladiator's Soul Eater*
 
 -- NYI --
 --i(0, 367190);	-- [DND] Test Mount JZB model:88719
---i(0, 370620);	-- Green Hawkstrider model:106262
 end)();

@@ -1357,7 +1357,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 				title(461),	-- Eternal Gladiator <Name>
 			}),
 			ach(15604),		-- Duelist: Shadowlands Season 4
-			ach(15354),		-- Elite: Shadowlands Season 3
+			ach(15639),		-- Elite: Shadowlands Season 4
 			ach(15605),		-- Gladiator: Shadowlands Season 4
 			ach(15608, {	-- Hero of the Alliance: Eternal
 				["races"] = ALLIANCE_ONLY,
