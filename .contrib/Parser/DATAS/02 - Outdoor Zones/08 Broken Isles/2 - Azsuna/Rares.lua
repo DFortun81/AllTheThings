@@ -108,14 +108,18 @@ _.Zones =
 					["questID"] = 45491,
 					["coord"] = { 58.9, 76.6, AZSUNA },
 				 }),
-				n(107266, {	-- Commander Soraax
-					["u"] = REMOVED_FROM_GAME,	-- as of 8.3, no sign of him or his world quest for a very long time
+				n(107266, bubbleDownSelf({	-- Commander Soraax
+					["timeline"] = {
+						"removed 8.3",	-- as of 8.3, no sign of him or his world quest for a very long time
+						"added 9.2",	-- confirmed on 2022-04-02
+					},
+				},{
 					["questID"] = 44673,
 					["coord"] = { 27.8, 51.0, AZSUNA },
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(141871)),	-- Soraax's Gauntlets of Command
+						i(141871),	-- Soraax's Gauntlets of Command
 					},
-				}),
+				})),
 				n(90057,  {	-- Daggerbeak
 					["questID"] = 37869,
 					["coord"] = { 51.1, 31.6, AZSUNA },

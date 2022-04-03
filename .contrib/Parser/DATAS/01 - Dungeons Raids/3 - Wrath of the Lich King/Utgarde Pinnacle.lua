@@ -1,11 +1,11 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-_.Instances = { tier(WOTLK_TIER, {
+root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(286, {	-- Utgarde Pinnacle
+		["mapID"] = UTGARDE_PINNACLE,
+		["maps"] = { 137 },
 		["lvl"] = 65,
-		["maps"] = { 136, 137 },
 		["groups"] = {
 			n(QUESTS, {
 				q(13131,{	-- Junk in My Trunk
@@ -267,12 +267,15 @@ _.Instances = { tier(WOTLK_TIER, {
 			-- #endif
 		},
 	}),
-})};
-_.HiddenQuestTriggers = {
+})));
+
+-- #if AFTER WOD
+root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
 		q(35452),	-- Utgarde Pinnacle - Bonus Objective Reward
 		q(35454),	-- Utgarde Pinnacle - Bonus Objective Reward
 		q(35449),	-- Utgarde Pinnacle Reward Quest - Normal completion
 		q(35453),	-- Utgarde Pinnacle Reward Quest - Heroic completion
 	}),
-};
+});
+-- #endif

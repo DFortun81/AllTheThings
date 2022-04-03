@@ -2112,6 +2112,7 @@ _.ObjectNames = {
 	[375362] = "Avian Nest",
 	[375363] = "Mawsworn Supply Chest",
 	[375366] = "Tarachnid Eggs",
+	[375368] = "Creation Catalyst Console",
 	[375369] = "Gnawed Valise",
 	[375370] = "Protoform Schematic",
 	[375371] = "Protoform Schematic",

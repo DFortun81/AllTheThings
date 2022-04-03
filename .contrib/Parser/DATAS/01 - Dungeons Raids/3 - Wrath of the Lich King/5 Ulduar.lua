@@ -1,22 +1,21 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-_.Instances = { tier(WOTLK_TIER, {
+root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 	inst(759, {	-- Ulduar
-		["isRaid"] = true,
-		["lvl"] = 80,
-		["mapID"] = 147,
+		["mapID"] = ULDUAR,
 		["maps"] = { 148, 149, 150, 151, 152 },
 		["coord"] = { 41.5, 17.9, THE_STORM_PEAKS },
-		["g"] = {
+		["isRaid"] = true,
+		["lvl"] = 80,
+		["groups"] = {
 			n(LEGENDARY_QUESTLINE, {
 				["description"] = "Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses of Ulduar. Hard modes have higher drop chances.",
 				["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID },
 				["title"] = "Val'anyr, Hammer of Ancient Kings",
 				["icon"] = "Interface\\Icons\\inv_mace_99",
 				["isRaid"] = true,
-				["g"] = {
+				["groups"] = {
 					i(45038, {	-- Fragment of Val'anyr
 						["crs"] = {
 							33113,	-- Flame Leviathan
@@ -41,7 +40,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 					q(13629, {	-- Val'anyr, Hammer of Ancient Kings
 						["sourceQuest"] = 13622,	-- Ancient History
-						["g"] = {
+						["groups"] = {
 							i(46017)	-- Val'anyr, Hammer of Ancient Kings
 						},
 					}),
@@ -49,7 +48,7 @@ _.Instances = { tier(WOTLK_TIER, {
 			}),
 			d(14, {	-- Normal
 				n(ZONE_DROPS, {
-					["g"] = {
+					["groups"] = {
 						i(46351),	-- Bloodcrush Cudgel
 						i(45605),	-- Daschal's Bite
 						i(46350),	-- Pillar of Fortitude
@@ -92,7 +91,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						33271,	-- General Vezax
 						33288,	-- Yogg-Saron
 					},
-					["g"] = {
+					["groups"] = {
 						i(45087),	-- Runed Orb
 						i(46027),	-- Formula: Enchant Weapon - Blade Ward
 						i(46348),	-- Formula: Enchant Weapon - Blood Draining
@@ -127,7 +126,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						["provider"] = { "n", 33957 },	-- Prospector Loren
 						["crs"] = { 32906 },	-- Freya
 						["u"] = REMOVED_FROM_GAME,
-						["g"] = {
+						["groups"] = {
 							objective(1, {
 								["provider"] = { "i", 45788 },	-- Freya's Sigil
 							}),
@@ -138,7 +137,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						["provider"] = { "n", 33957 },	-- Prospector Loren
 						["crs"] = { 32845 },	-- Hodir
 						["u"] = REMOVED_FROM_GAME,
-						["g"] = {
+						["groups"] = {
 							objective(1, {
 								["provider"] = { "i", 45786 },	-- Hodir's Sigil
 							}),
@@ -149,7 +148,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						["provider"] = { "n", 33957 },	-- Prospector Loren
 						["crs"] = { 33350 },	-- Mimiron
 						["u"] = REMOVED_FROM_GAME,
-						["g"] = {
+						["groups"] = {
 							objective(1, {
 								["provider"] = { "i", 45787 },	-- Mimiron's Sigil
 							}),
@@ -160,7 +159,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						["provider"] = { "n", 33957 },	-- Prospector Loren
 						["crs"] = { 32865 },	-- Thorim
 						["u"] = REMOVED_FROM_GAME,
-						["g"] = {
+						["groups"] = {
 							objective(1, {
 								["provider"] = { "i", 45784 },	-- Thorim's Sigil
 							}),
@@ -176,7 +175,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						["provider"] = { "n", 33957 },	-- Prospector Loren
 						["crs"] = { 32871 },	-- Algalon the Observer
 						["u"] = REMOVED_FROM_GAME,
-						["g"] = {
+						["groups"] = {
 							i(45875, {	-- Sack of Ulduar Spoils
 								i(45087),	-- Runed Orb
 							}),
@@ -190,7 +189,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
 						["provider"] = { "n", 33957 },	-- Prospector Loren
 						["crs"] = { 32906 },	-- Freya
-						["g"] = {
+						["groups"] = {
 							objective(1, {
 								["provider"] = { "i", 45814 },	-- Freya's Sigil
 							}),
@@ -200,7 +199,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
 						["provider"] = { "n", 33957 },	-- Prospector Loren
 						["crs"] = { 32845 },	-- Hodir
-						["g"] = {
+						["groups"] = {
 							objective(1, {
 								["provider"] = { "i", 45815 },	-- Hodir's Sigil
 							}),
@@ -210,7 +209,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
 						["provider"] = { "n", 33957 },	-- Prospector Loren
 						["crs"] = { 33350 },	-- Mimiron
-						["g"] = {
+						["groups"] = {
 							objective(1, {
 								["provider"] = { "i", 45816 },	-- Mimiron's Sigil
 							}),
@@ -220,7 +219,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
 						["provider"] = { "n", 33957 },	-- Prospector Loren
 						["crs"] = { 32865 },	-- Thorim
-						["g"] = {
+						["groups"] = {
 							objective(1, {
 								["provider"] = { "i", 45817 },	-- Thorim's Sigil
 							}),
@@ -235,7 +234,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						},
 						["provider"] = { "n", 33957 },	-- Prospector Loren
 						["crs"] = { 32871 },	-- Algalon the Observer
-						["g"] = {
+						["groups"] = {
 							i(45798),	-- Heroic Celestial Planetarium Key
 							i(45878, {	-- Large Sack of Ulduar Spoils
 								i(45087),	-- Runed Orb
@@ -432,7 +431,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					i(46052, {	-- Reply-Code Alpha
 						q(13631, {	-- All Is Well That Ends Well
 							["provider"] = { "n", 16128 },	-- Rhonin <Leader of the Kirin Tor>
-							["g"] = {
+							["groups"] = {
 								i(46320),	-- Drape of the Skyherald
 								i(46321),	-- Sunglimmer Drape
 								i(46322),	-- Brann's Sealing Ring
@@ -443,7 +442,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					i(46053, {	-- Reply-Code Alpha
 						q(13819, {	-- Heroic: All Is Well That Ends Well
 							["provider"] = { "n", 16128 },	-- Rhonin <Leader of the Kirin Tor>
-							["g"] = {
+							["groups"] = {
 								i(45588),	-- Drape of the Skyborn
 								i(45618),	-- Sunglimmer Cloak
 								i(45608),	-- Brann's Signet Ring
@@ -746,7 +745,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						33651,	-- VX-001
 						33670,	-- Aerial Command Unit
 					},
-					["g"] = {
+					["groups"] = {
 						crit(4, {	-- Mimiron
 							["achievementID"] = 12309,	-- The Keepers of Ulduar
 						}),
@@ -906,8 +905,10 @@ _.Instances = { tier(WOTLK_TIER, {
 			-- #endif
 		},
 	}),
-})};
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+})));
+
+-- #if AFTER 4.0.1
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(WOTLK_TIER, {
 		inst(759, {
 			-- Most sets was added 4.0.1
@@ -1030,4 +1031,5 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-});
+}));
+-- #endif

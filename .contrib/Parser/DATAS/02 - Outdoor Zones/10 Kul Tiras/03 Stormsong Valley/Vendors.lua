@@ -276,9 +276,10 @@ _.Zones =
 							["cost"] = 19000000,	-- 1,900g
 						}),
 						i(162626, {	-- Tome of Polymorph: Bumblebee
-							["spellID"] = 277792,	-- Polymorph(Bumblebee)
+							["recipeID"] = 277792,	-- Polymorph(Bumblebee)
 							["classes"] = { MAGE },
 							["cost"] = 18000000,	-- 1,800g
+							["f"] = RECIPES,
 						}),
 					},
 				}),

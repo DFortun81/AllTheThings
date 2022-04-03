@@ -1,19 +1,18 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-_.Instances = { tier(WOTLK_TIER, {
+root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 	inst(758, {	-- Icecrown Citadel
-		["isRaid"] = true,
-		["sharedLockout"] = 1,
-		["lvl"] = 80,
-		["mapID"] = 186,
+		["mapID"] = ICECROWN_CITADEL,
 		["maps"] = { 187, 188, 189, 190, 191, 192, 193, 699, 1359 },	-- 1359 may be a specific scenario map - it was reported as missing in early 2019, but i couldn't find context for it
 		["coord"] = { 53.7, 87.0, ICECROWN },
-		["g"] = {
+		["sharedLockout"] = 1,
+		["isRaid"] = true,
+		["lvl"] = 80,
+		["groups"] = {
 			faction(1156, {	-- The Ashen Verdict
 				["achievementID"] = 4598,	-- The Ashen Verdict (Achievement)
-				["g"] = {
+				["groups"] = {
 					title(141),	-- Of the Ashen Verdict
 					n(37687, {	-- Alchemist Finklestein
 						i(49959, {	-- Pattern: Bladeborn Leggings
@@ -75,7 +74,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						["minReputation"] = { 1156, FRIENDLY },	-- The Ashen Verdict
 						["description"] = "If the quest does not appear when you hit Friendly, you may have to relog.",
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-						["g"] = {
+						["groups"] = {
 							i(50375, {	-- Ashen Band of Courage
 								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 							}),
@@ -99,7 +98,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						["sourceQuest"] = 24815,	-- Choose Your Path
 						["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-						["g"] = {
+						["groups"] = {
 							i(50388, {	-- Ashen Band of Greater Courage
 								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 							}),
@@ -110,7 +109,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						["sourceQuest"] = 24827,	-- Path of Courage (Honored)
 						["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-						["g"] = {
+						["groups"] = {
 							i(50403, {	-- Ashen Band of Unmatched Courage
 								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 							}),
@@ -121,7 +120,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						["sourceQuest"] = 24834,	-- Path of Courage (Revered)
 						["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-						["g"] = {
+						["groups"] = {
 							i(50404, {	-- Ashen Band of Endless Courage
 								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 							}),
@@ -133,7 +132,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						["sourceQuest"] = 24815,	-- Choose Your Path
 						["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-						["g"] = {
+						["groups"] = {
 							i(50384, {	-- Ashen Band of Greater Destruction
 								["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
 							}),
@@ -144,7 +143,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						["sourceQuest"] = 24828,	-- Path of Destruction [Honored]
 						["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-						["g"] = {
+						["groups"] = {
 							i(50397, {	-- Ashen Band of Unmatched Destruction
 								["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
 							}),
@@ -155,7 +154,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						["sourceQuest"] = 24823,	-- Path of Destruction (Revered)
 						["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-						["g"] = {
+						["groups"] = {
 							i(50398, {	-- Ashen Band of Endless Destruction
 								["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
 							}),
@@ -167,7 +166,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						["sourceQuest"] = 24815,	-- Choose Your Path
 						["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-						["g"] = {
+						["groups"] = {
 							i(52570, {	-- Ashen Band of Greater Might
 								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 							}),
@@ -178,7 +177,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["sourceQuest"] = 25239,	-- Path of Might [Honored]
 						["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
-						["g"] = {
+						["groups"] = {
 							i(52571, {	-- Ashen Band of Unmatched Might
 								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 							}),
@@ -189,7 +188,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["sourceQuest"] = 25240,	-- Path of Might [Revered]
 						["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
-						["g"] = {
+						["groups"] = {
 							i(52572, {	-- Ashen Band of Endless Might
 								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 							}),
@@ -201,7 +200,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["sourceQuest"] = 24815,	-- Choose Your Path
 						["classes"] = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
-						["g"] = {
+						["groups"] = {
 							i(50387, {	-- Ashen Band of Greater Vengeance
 								["classes"] = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
 							}),
@@ -212,7 +211,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["sourceQuest"] = 24826,	-- Path of Vengeance [Honored]
 						["classes"] = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
-						["g"] = {
+						["groups"] = {
 							i(50401, {	-- Ashen Band of Unmatched Vengeance
 								["classes"] = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
 							}),
@@ -223,7 +222,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["sourceQuest"] = 24832,	-- Path of Vengeance [Revered]
 						["classes"] = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
-						["g"] = {
+						["groups"] = {
 							i(50402, {	-- Ashen Band of Endless Vengeance
 								["classes"] = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
 							}),
@@ -235,7 +234,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["sourceQuest"] = 24815,	-- Choose Your Path
 						["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
-						["g"] = {
+						["groups"] = {
 							i(50386, {	-- Ashen Band of Greater Wisdom
 								["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
 							}),
@@ -246,7 +245,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["sourceQuest"] = 24825,	-- Path of Wisdom [Honored]
 						["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
-						["g"] = {
+						["groups"] = {
 							i(50399, {	-- Ashen Band of Unmatched Wisdom
 								["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
 							}),
@@ -257,7 +256,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["sourceQuest"] = 24830,	-- Path of Wisdom [Revered]
 						["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
-						["g"] = {
+						["groups"] = {
 							i(50400, {	-- Ashen Band of Endless Wisdom
 								["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
 							}),
@@ -355,11 +354,11 @@ _.Instances = { tier(WOTLK_TIER, {
 				["icon"] = "Interface\\Icons\\INV_Axe_113",
 				["isRaid"] = true,
 				["lvl"] = 80,
-				["g"] = {
+				["groups"] = {
 					q(24545, {	-- The Sacred and the Corrupt
 						["minReputation"] = { 1156, FRIENDLY },	-- The Ashen Verdict
 						["provider"] = { "n", 37120 },	-- Highlord Darion Mograine
-						["g"] = {
+						["groups"] = {
 							i(49869, {	-- Light's Vengeance
 								["description"] = "Fly out to Dragonblight and collect this item from a cave after some short RP.",
 							}),
@@ -376,7 +375,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					q(24743, {	-- Shadow's Edge
 						["sourceQuest"] = 24545,	-- The Sacred and the Corrupt
 						["provider"] = { "n", 37120 },	-- Highlord Darion Mograine
-						["g"] = {
+						["groups"] = {
 							i(49888),	-- Shadow's Edge
 						},
 					}),
@@ -399,7 +398,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					q(24548, {	-- The Splintered Throne
 						["sourceQuest"] = 24757,	-- Frost Infusion
 						["provider"] = { "n", 37120 },	-- Highlord Darion Mograine
-						["g"] = {
+						["groups"] = {
 							i(50274, {	-- Shadowfrost Shard
 								["description"] = "These can drop from any of the bosses on 25-Man Normal or Heroic. You need 50 of these, so this quest will take you several weeks to finish.",
 								["crs"] = {
@@ -427,7 +426,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					q(24549, {	-- Shadowmourne...
 						["sourceQuest"] = 24548,	-- The Splintered Throne
 						["provider"] = { "n", 37120 },	-- Highlord Darion Mograine
-						["g"] = {
+						["groups"] = {
 							i(49623)	-- Shadowmourne
 						},
 					}),
@@ -440,43 +439,43 @@ _.Instances = { tier(WOTLK_TIER, {
 						["sourceQuest"] = 24549,	-- Shadowmourne...
 						["provider"] = { "n", 36597 },	-- The Lich King
 						["questID"] = 24914,	-- Personal Property
-						["g"] = {
+						["groups"] = {
 							i(51316, {	-- Unsealed Chest
 								["description"] = "This item contains a lot of BoE cosmetic items that sell very well. During its time, this was used to reward other members of the raid for assisting the guild master (more than likely) with Shadowmourne for the many months it took to complete the quest chain.\n\nIn addition to being very rewarding, these quests were some of the most treasured throughout World of Warcraft's long history.",
 								["sourceQuest"] = 24914,	-- Personal Property
-								["g"] = {
+								["groups"] = {
 									i(51317, {	-- Alexandros' Soul Shard
 										["description"] = "Alexandros: Darion, my son. At last I am able to lay my eyes upon you again. The Lich King tormented me without end, Darion. Endlessly he sought to break my will, to force me to serve him, to bind me to his blade. Finally, when events demanded his full attention, he left me. The one memory I clung to Darion, the one thought that kept me from giving in, it was your sacrifice, my son. That again saved me from eternal peril.\n\nDarion: Father, father, I… I feared for your sanity, father, for you, I would give my life a thousand times.",
 										["questID"] = 24915,	-- Mograine's Reunion
-										["g"] = {
+										["groups"] = {
 											i(52200)	-- Crimson Deathcharger (MOUNT!)
 										},
 									}),
 									i(51319, {	-- Arthas' Training Sword
 										["description"] = "Muradin: Oh lad, how I missed those endless days in Lordaeron, sharpening your skill with this dull blade. Forging you into a weapon meant to withstand the demands of a great destiny. Heh… You sure put them skills to use, didn't you lad?\n\nIf only I'd been able to stop you that day, how different things migha' been. If only I'da never discovered that accursed blade. Farewell, Arthas, my brother.",
 										["questID"] = 24917,	-- Muradin's Lament
-										["g"] = {
+										["groups"] = {
 											i(52201)	-- Muradin's Favor (TOY!)
 										},
 									}),
 									i(51320, {	-- Badge of the Silver Hand
 										["description"] = "Uther: Arthas... Alas, hero of Azeroth. You give me a greater gift than you know. Long have I struggled to forgive the prince for his terrible transgressions. My soul has been wracked with unbearable anxiety, dark thoughts, distancing me from the light.\n\nI recall clearly... the gleam of pride in his eye as he stood before me, eager to defeat the enemies of the light... eager to defend his people, no matter the cost. It is this memory of Arthas that I choose to keep in my heart.\n\nI shall always be in your debt, friend. Thank you.",
 										["questID"] = 24919,	-- The Lightbringer's Redemption
-										["g"] = {
+										["groups"] = {
 											i(52252)	-- Tabard of the Lightbringer
 										},
 									}),
 									i(51321, {	-- Blood of Sylvanas
 										["description"] = "Sylvanas: So, it is done. I had not dared to trust my senses. Too many times has the Lich King made me to be a fool. Finally, he has been made to pay for the atrocities he imposed upon my people.\n\nMay Azeroth never fail to remember the horrible price we paid for our weakness, for our pride. But what now, Hero? What of those freed from his grasp but still shackled to their mortal coils?\n\nLeave me. I have much to ponder.",
 										["questID"] = 24918,	-- Sylvanas' Vengeance
-										["g"] = {
+										["groups"] = {
 											i(52253)	-- Sylvanas' Music Box (TOY!)
 										},
 									}),
 									i(51318, {	-- Jaina's Locket
 										["description"] = "Jaina: What's this?\nHe... he kept it.. all this time he kept it!\n<Cries> I knew!\n<Cries> I sensed a part of him still alive... trapped... struggling. Oh Arthas!\nPerhaps he might someday remember from what he once was...\nBy the Light may he at last find rest, free from the icy grip of that terrible blade!",
 										["questID"] = 24916,	-- Jaina's Locket
-										["g"] = {
+										["groups"] = {
 											i(52251, {	-- Jaina's Locket
 												["ignoreSource"] = true,
 												["collectible"] = false
@@ -553,7 +552,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					37098,	-- Val'kyr Herald
 					37038,	-- Vengeful Fleshreaper
 				},
-				["g"] = {
+				["groups"] = {
 					i(50451),	-- Belt of the Lonely Noble
 					i(50447),	-- Harbinger's Bone Band
 					i(50450),	-- Leggings of Dubious Charms
@@ -566,7 +565,7 @@ _.Instances = { tier(WOTLK_TIER, {
 			n(VENDORS, {
 				n(37999, {	-- Alana Moonstrike <Druid Armor>
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(50821),	-- Lasherweave Cover
 						i(50107),	-- Lasherweave Gauntlets
 						i(50822),	-- Lasherweave Gloves
@@ -1095,7 +1094,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 				n(37993, {	-- Gerardo the Suave <Hunter Armor>
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(50114),	-- Ahn'Kahar Blood Hunter's Handguards
 						i(50115),	-- Ahn'Kahar Blood Hunter's Headpiece
 						i(50116),	-- Ahn'Kahar Blood Hunter's Legguards
@@ -1164,7 +1163,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					},
 				}),
 				n(38858, {	-- Goodman the "Closer" <Legacy Justice Quartermaster>
-					["g"] = {
+					["groups"] = {
 						i(50993),	-- Band of the Night Raven
 						i(50996),	-- Belt of Omission
 						i(50994),	-- Belt of Petrified Ivy
@@ -1211,7 +1210,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 				n(38181, {	-- Haragg the Unseen <Warlock Armor>
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(50240),	-- Dark Coven Gloves
 						i(50241),	-- Dark Coven Hood
 						i(50242),	-- Dark Coven Leggings
@@ -1281,7 +1280,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 				n(37991, {	-- Ikfirus the Vile <Rogue Armor>
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(51189, {	-- Sanctified Shadowblade Breastplate (N)
 							["cost"] = {
 								{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
@@ -1351,7 +1350,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 				n(38840, {	-- Jedebia <Shaman Armor>
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(50830),	-- Frost Witch's Chestguard
 						i(50832),	-- Frost Witch's Faceguard
 						i(50842),	-- Frost Witch's Gloves
@@ -1551,7 +1550,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 				n(38283, {	-- Malfus Grimfrost <Mage Armor>
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(50275),	-- Bloodmage Gloves
 						i(50276),	-- Bloodmage Hood
 						i(50277),	-- Bloodmage Leggings
@@ -1621,7 +1620,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 				n(38182, {	-- Niby the Almighty <Warlock Armor>
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(50240),	-- Dark Coven Gloves
 						i(50241),	-- Dark Coven Hood
 						i(50242),	-- Dark Coven Leggings
@@ -1955,7 +1954,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 				n(37998, {	-- Talan Moonstrike <Hunter Armor>
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(50114),	-- Ahn'Kahar Blood Hunter's Handguards
 						i(50115),	-- Ahn'Kahar Blood Hunter's Headpiece
 						i(50116),	-- Ahn'Kahar Blood Hunter's Legguards
@@ -2025,7 +2024,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 				n(37992, {	-- Tortunok <Druid Armor>
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(50821),	-- Lasherweave Cover
 						i(50107),	-- Lasherweave Gauntlets
 						i(50822),	-- Lasherweave Gloves
@@ -2225,7 +2224,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 				n(38284, {	-- Uvlus Banefire <Mage Armor>
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(50275),	-- Bloodmage Gloves
 						i(50276),	-- Bloodmage Hood
 						i(50277),	-- Bloodmage Leggings
@@ -2295,7 +2294,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 				n(38841, {	-- Vol'guk <Shaman Armor>
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(50830),	-- Frost Witch's Chestguard
 						i(50832),	-- Frost Witch's Faceguard
 						i(50842),	-- Frost Witch's Gloves
@@ -2495,7 +2494,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 				n(37997, {	-- Yili <Rogue Armor>
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(51189, {	-- Sanctified Shadowblade Breastplate (N)
 							["cost"] = {
 								{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
@@ -2569,7 +2568,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					ach(4531),	-- Storming the Citadel (10 player)
 					e(1624,  {	-- Lord Marrowgar
 						["creatureID"] = 36612,	-- Lord Marrowgar
-						["g"] = {
+						["groups"] = {
 							crit(1, {	-- Lord Marrowgar
 								["achievementID"] = 4531,	-- Storming the Citadel (10 player)
 							}),
@@ -2591,7 +2590,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 					e(1625,  {	-- Lady Deathwhisper
 						["creatureID"] = 36855,	-- Lady Deathwhisper
-						["g"] = {
+						["groups"] = {
 							crit(2, {	-- Lady Deathwhisper
 								["achievementID"] = 4531,	-- Storming the Citadel (10 player)
 							}),
@@ -2615,7 +2614,7 @@ _.Instances = { tier(WOTLK_TIER, {
 							36939,	-- High Overlord Saurfang
 							36948,	-- Muradin Bronzebeard
 						},
-						["g"] = {
+						["groups"] = {
 							crit(3, {	-- Claim victory in the Gunship Battle
 								["achievementID"] = 4531,	-- Storming the Citadel (10 player)
 							}),
@@ -2636,7 +2635,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 					e(1628,  {	-- Deathbringer Saurfang
 						["creatureID"] = 37813,	-- Deathbringer Saurfang
-						["g"] = {
+						["groups"] = {
 							crit(4, {	-- The Deathbringer
 								["achievementID"] = 4531,	-- Storming the Citadel (10 player)
 							}),
@@ -2662,7 +2661,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					n(37904, {	-- Brazie Getz
 						["description"] = "After you kill Deathbringer Saurfang, this vendor shows up in the camp.",
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(49926),	-- Brazie's Black Book of Secrets
 						},
 					}),
@@ -2674,7 +2673,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 					e(1629,  {	-- Festergut
 						["creatureID"] = 36626,	-- Festergut
-						["g"] = {
+						["groups"] = {
 							crit(1, {	-- Festergut
 								["achievementID"] = 4528,	-- The Plagueworks (10 player)
 							}),
@@ -2695,7 +2694,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 					e(1630,  {	-- Rotface
 						["creatureID"] = 36627,	-- Rotface
-						["g"] = {
+						["groups"] = {
 							crit(2, {	-- Rotface
 								["achievementID"] = 4528,	-- The Plagueworks (10 player)
 							}),
@@ -2715,7 +2714,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 					e(1631,  {	-- Professor Putricide
 						["creatureID"] = 36678,	-- Professor Putricide
-						["g"] = {
+						["groups"] = {
 							crit(3, {	-- Professor Putricide
 								["achievementID"] = 4528,	-- The Plagueworks (10 player)
 							}),
@@ -2744,7 +2743,7 @@ _.Instances = { tier(WOTLK_TIER, {
 							37973,	-- Prince Taldaram
 							37970,	-- Prince Valanar
 						},
-						["g"] = {
+						["groups"] = {
 							crit(1, {	-- Defeat the Blood Prince Council
 								["achievementID"] = 4529,	-- The Crimson Hall (10 player)
 							}),
@@ -2765,7 +2764,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 					e(1633,  {	-- Blood-Queen Lana'thel
 						["creatureID"] = 37955,	-- Blood-Queen Lana'thel
-						["g"] = {
+						["groups"] = {
 							crit(2, {	-- Defeat Blood-Queen Lana'thel
 								["achievementID"] = 4529,	-- The Crimson Hall (10 player)
 							}),
@@ -2792,7 +2791,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					ach(4527),	-- The Frostwing Halls (10 player)
 					e(1634,  {	-- Valithria Dreamwalker
 						["creatureID"] = 36789,	-- Valithria Dreamwalker
-						["g"] = {
+						["groups"] = {
 							crit(1, {	-- Rescue Valithria Dreamwalker
 								["achievementID"] = 4527,	-- The Frostwing Halls (10 player)
 							}),
@@ -2813,7 +2812,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 					e(1635,  {	-- Sindragosa
 						["creatureID"] = 36853,	-- Sindragosa
-						["g"] = {
+						["groups"] = {
 							crit(2, {	-- Sindragosa
 								["achievementID"] = 4527,	-- The Frostwing Halls (10 player)
 							}),
@@ -2835,7 +2834,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 					e(1636,  {	-- The Lich King
 						["creatureID"] = 36597,	-- The Lich King
-						["g"] = {
+						["groups"] = {
 							crit(5, {	-- The Frozen Throne (10 player)
 								["achievementID"] = 4532,	-- Fall of the Lich King (10 player)
 							}),
@@ -2865,7 +2864,7 @@ _.Instances = { tier(WOTLK_TIER, {
 			}),
 			d(5,  {	-- 10-Player (Heroic)
 				n(COMMON_BOSS_DROPS, {
-					["g"] = {
+					["groups"] = {
 						i(49908, {	-- Primordial Saronite
 							["crs"] = {
 								36612,	-- Lord Marrowgar
@@ -2889,7 +2888,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					ach(4628),	-- Heroic: Storming the Citadel (10 player)
 					e(1624,  {	-- Lord Marrowgar
 						["creatureID"] = 36612,	-- Lord Marrowgar
-						["g"] = {
+						["groups"] = {
 							crit(1, {	-- Lord Marrowgar
 								["achievementID"] = 4628,	-- Heroic: Storming the Citadel (10 player)
 							}),
@@ -2911,7 +2910,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 					e(1625,  {	-- Lady Deathwhisper
 						["creatureID"] = 36855,	-- Lady Deathwhisper
-						["g"] = {
+						["groups"] = {
 							crit(2, {	-- Lady Deathwhisper
 								["achievementID"] = 4628,	-- Heroic: Storming the Citadel (10 player)
 							}),
@@ -2935,7 +2934,7 @@ _.Instances = { tier(WOTLK_TIER, {
 							36939,	-- High Overlord Saurfang
 							36948,	-- Muradin Bronzebeard
 						},
-						["g"] = {
+						["groups"] = {
 							crit(3, {	-- Claim victory in the Gunship Battle
 								["achievementID"] = 4628,	-- Heroic: Storming the Citadel (10 player)
 							}),
@@ -2956,7 +2955,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 					e(1628,  {	-- Deathbringer Saurfang
 						["creatureID"] = 37813,	-- Deathbringer Saurfang
-						["g"] = {
+						["groups"] = {
 							crit(4, {	-- The Deathbringer
 								["achievementID"] = 4628,	-- Heroic: Storming the Citadel (10 player)
 							}),
@@ -2985,7 +2984,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					n(37904, {	-- Brazie Getz
 						["description"] = "After you kill Deathbringer Saurfang, this vendor shows up in the camp.",
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(49926),	-- Brazie's Black Book of Secrets
 						},
 					}),
@@ -2997,7 +2996,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 					e(1629,  {	-- Festergut
 						["creatureID"] = 36626,	-- Festergut
-						["g"] = {
+						["groups"] = {
 							crit(1, {	-- Festergut
 								["achievementID"] = 4629,	-- Heroic: The Plagueworks (10 player)
 							}),
@@ -3018,7 +3017,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 					e(1630,  {	-- Rotface
 						["creatureID"] = 36627,	-- Rotface
-						["g"] = {
+						["groups"] = {
 							crit(2, {	-- Rotface
 								["achievementID"] = 4629,	-- Heroic: The Plagueworks (10 player)
 							}),
@@ -3038,7 +3037,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 					e(1631,  {	-- Professor Putricide
 						["creatureID"] = 36678,	-- Professor Putricide
-						["g"] = {
+						["groups"] = {
 							crit(3, {	-- Professor Putricide
 								["achievementID"] = 4629,	-- Heroic: The Plagueworks (10 player)
 							}),
@@ -3070,7 +3069,7 @@ _.Instances = { tier(WOTLK_TIER, {
 							37973,	-- Prince Taldaram
 							37970,	-- Prince Valanar
 						},
-						["g"] = {
+						["groups"] = {
 							crit(1, {	-- Defeat the Blood Prince Council
 								["achievementID"] = 4630,	-- Heroic: The Crimson Hall (10 player)
 							}),
@@ -3091,7 +3090,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 					e(1633,  {	-- Blood-Queen Lana'thel
 						["creatureID"] = 37955,	-- Blood-Queen Lana'thel
-						["g"] = {
+						["groups"] = {
 							crit(2, {	-- Defeat Blood-Queen Lana'thel
 								["achievementID"] = 4630,	-- Heroic: The Crimson Hall (10 player)
 							}),
@@ -3121,7 +3120,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					ach(4631),	-- Heroic: The Frostwing Halls (10 player)
 					e(1634,  {	-- Valithria Dreamwalker
 						["creatureID"] = 36789,	-- Valithria Dreamwalker
-						["g"] = {
+						["groups"] = {
 							crit(1, {	-- Rescue Valithria Dreamwalker
 								["achievementID"] = 4631,	-- Heroic: The Frostwing Halls (10 player)
 							}),
@@ -3142,7 +3141,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 					e(1635,  {	-- Sindragosa
 						["creatureID"] = 36853,	-- Sindragosa
-						["g"] = {
+						["groups"] = {
 							crit(2, {	-- Sindragosa
 								["achievementID"] = 4631,	-- Heroic: The Frostwing Halls (10 player)
 							}),
@@ -3167,7 +3166,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 					e(1636,  {	-- The Lich King
 						["creatureID"] = 36597,	-- The Lich King
-						["g"] = {
+						["groups"] = {
 							crit(5, {	-- Bane of the Fallen King
 								["achievementID"] = 4636,	-- Heroic: Fall of the Lich King (10 player)
 							}),
@@ -3200,7 +3199,7 @@ _.Instances = { tier(WOTLK_TIER, {
 			}),
 			d(4,  {	-- 25-Player (Normal)
 				n(COMMON_BOSS_DROPS, {
-					["g"] = {
+					["groups"] = {
 						i(49908, {	-- Primordial Saronite
 							["crs"] = {
 								36612,	-- Lord Marrowgar
@@ -3224,7 +3223,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					ach(4604),	-- Storming the Citadel (25 player)
 					e(1624,  {	-- Lord Marrowgar
 						["creatureID"] = 36612,	-- Lord Marrowgar
-						["g"] = {
+						["groups"] = {
 							crit(1, {	-- Lord Marrowgar
 								["achievementID"] = 4604,	-- Storming the Citadel (25 player)
 							}),
@@ -3249,7 +3248,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 					e(1625,  {	-- Lady Deathwhisper
 						["creatureID"] = 36855,	-- Lady Deathwhisper
-						["g"] = {
+						["groups"] = {
 							crit(2, {	-- Lady Deathwhisper
 								["achievementID"] = 4604,	-- Storming the Citadel (25 player)
 							}),
@@ -3276,7 +3275,7 @@ _.Instances = { tier(WOTLK_TIER, {
 							36939,	-- High Overlord Saurfang
 							36948,	-- Muradin Bronzebeard
 						},
-						["g"] = {
+						["groups"] = {
 							crit(3, {	-- Claim victory in the Gunship Battle
 								["achievementID"] = 4604,	-- Storming the Citadel (25 player)
 							}),
@@ -3300,7 +3299,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 					e(1628,  {	-- Deathbringer Saurfang
 						["creatureID"] = 37813,	-- Deathbringer Saurfang
-						["g"] = {
+						["groups"] = {
 							crit(4, {	-- The Deathbringer
 								["achievementID"] = 4604,	-- Storming the Citadel (25 player)
 							}),
@@ -3322,7 +3321,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					n(37904, {	-- Brazie Getz
 						["description"] = "After you kill Deathbringer Saurfang, this vendor shows up in the camp.",
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(49926),	-- Brazie's Black Book of Secrets
 						},
 					}),
@@ -3334,7 +3333,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 					e(1629,  {	-- Festergut
 						["creatureID"] = 36626,	-- Festergut
-						["g"] = {
+						["groups"] = {
 							i(50226, {	-- Festergut's Acidic Blood
 								["description"] = "This can drop from Festergut on 25-Man Normal or Heroic.",
 								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
@@ -3363,7 +3362,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 					e(1630,  {	-- Rotface
 						["creatureID"] = 36627,	-- Rotface
-						["g"] = {
+						["groups"] = {
 							i(50231, {	-- Rotface's Acidic Blood
 								["description"] = "This can drop from Rotface on 25-Man Normal or Heroic.",
 								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
@@ -3391,7 +3390,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 					e(1631,  {	-- Professor Putricide
 						["creatureID"] = 36678,	-- Professor Putricide
-						["g"] = {
+						["groups"] = {
 							crit(3, {	-- Professor Putricide
 								["achievementID"] = 4605,	-- The Plagueworks (25 player)
 							}),
@@ -3416,7 +3415,7 @@ _.Instances = { tier(WOTLK_TIER, {
 							37973,	-- Prince Taldaram
 							37970,	-- Prince Valanar
 						},
-						["g"] = {
+						["groups"] = {
 							crit(1, {	-- Defeat the Blood Prince Council
 								["achievementID"] = 4606,	-- The Crimson Hall (25 player)
 							}),
@@ -3440,7 +3439,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 					e(1633,  {	-- Blood-Queen Lana'thel
 						["creatureID"] = 37955,	-- Blood-Queen Lana'thel
-						["g"] = {
+						["groups"] = {
 							crit(2, {	-- Defeat Blood-Queen Lana'thel
 								["achievementID"] = 4606,	-- The Crimson Hall (25 player)
 							}),
@@ -3464,7 +3463,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					ach(4607),	-- The Frostwing Halls (25 player)
 					e(1634,  {	-- Valithria Dreamwalker
 						["creatureID"] = 36789,	-- Valithria Dreamwalker
-						["g"] = {
+						["groups"] = {
 							crit(1, {	-- Rescue Valithria Dreamwalker
 								["achievementID"] = 4607,	-- The Frostwing Halls (25 player)
 							}),
@@ -3489,7 +3488,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 					e(1635,  {	-- Sindragosa
 						["creatureID"] = 36853,	-- Sindragosa
-						["g"] = {
+						["groups"] = {
 							crit(2, {	-- Sindragosa
 								["achievementID"] = 4607,	-- The Frostwing Halls (25 player)
 							}),
@@ -3507,7 +3506,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 					e(1636,  {	-- The Lich King
 						["creatureID"] = 36597,	-- The Lich King
-						["g"] = {
+						["groups"] = {
 							crit(5, {	-- The Frozen Throne (25 player)
 								["achievementID"] = 4608,	-- Fall of the Lich King (25 player)
 							}),
@@ -3540,7 +3539,7 @@ _.Instances = { tier(WOTLK_TIER, {
 			}),
 			d(6, {	-- 25-Player (Heroic)
 				n(COMMON_BOSS_DROPS, {
-					["g"] = {
+					["groups"] = {
 						i(49908, {	-- Primordial Saronite
 							["crs"] = {
 								36612,	-- Lord Marrowgar
@@ -3564,7 +3563,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					ach(4632),	-- Heroic: Storming the Citadel (25 player)
 					e(1624,  {	-- Lord Marrowgar
 						["creatureID"] = 36612,	-- Lord Marrowgar
-						["g"] = {
+						["groups"] = {
 							crit(1, {	-- Lord Marrowgar
 								["achievementID"] = 4632,	-- Heroic: Storming the Citadel (25 player)
 							}),
@@ -3589,7 +3588,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 					e(1625,  {	-- Lady Deathwhisper
 						["creatureID"] = 36855,	-- Lady Deathwhisper
-						["g"] = {
+						["groups"] = {
 							crit(2, {	-- Lady Deathwhisper
 								["achievementID"] = 4632,	-- Heroic: Storming the Citadel (25 player)
 							}),
@@ -3616,7 +3615,7 @@ _.Instances = { tier(WOTLK_TIER, {
 							36939,	-- High Overlord Saurfang
 							36948,	-- Muradin Bronzebeard
 						},
-						["g"] = {
+						["groups"] = {
 							crit(3, {	-- Claim victory in the Gunship Battle
 								["achievementID"] = 4632,	-- Heroic: Storming the Citadel (25 player)
 							}),
@@ -3640,7 +3639,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 					e(1628,  {	-- Deathbringer Saurfang
 						["creatureID"] = 37813,	-- Deathbringer Saurfang
-						["g"] = {
+						["groups"] = {
 							crit(4, {	-- The Deathbringer
 								["achievementID"] = 4632,	-- Heroic: Storming the Citadel (25 player)
 							}),
@@ -3665,7 +3664,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					n(37904, {	-- Brazie Getz
 						["description"] = "After you kill Deathbringer Saurfang, this vendor shows up in the camp.",
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(49926),	-- Brazie's Black Book of Secrets
 						},
 					}),
@@ -3677,7 +3676,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 					e(1629,  {	-- Festergut
 						["creatureID"] = 36626,	-- Festergut
-						["g"] = {
+						["groups"] = {
 							i(50226, {	-- Festergut's Acidic Blood
 								["description"] = "This can drop from Festergut on 25-Man Normal or Heroic.",
 								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
@@ -3706,7 +3705,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 					e(1630,  {	-- Rotface
 						["creatureID"] = 36627,	-- Rotface
-						["g"] = {
+						["groups"] = {
 							i(50231, {	-- Rotface's Acidic Blood
 								["description"] = "This can drop from Rotface on 25-Man Normal or Heroic.",
 								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
@@ -3734,7 +3733,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 					e(1631,  {	-- Professor Putricide
 						["creatureID"] = 36678,	-- Professor Putricide
-						["g"] = {
+						["groups"] = {
 							crit(3, {	-- Professor Putricide
 								["achievementID"] = 4633,	-- Heroic: The Plagueworks (25 player)
 							}),
@@ -3762,7 +3761,7 @@ _.Instances = { tier(WOTLK_TIER, {
 							37973,	-- Prince Taldaram
 							37970,	-- Prince Valanar
 						},
-						["g"] = {
+						["groups"] = {
 							crit(1, {	-- Defeat the Blood Prince Council
 								["achievementID"] = 4634,	-- Heroic: The Crimson Hall (25 player)
 							}),
@@ -3786,7 +3785,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 					e(1633,  {	-- Blood-Queen Lana'thel
 						["creatureID"] = 37955,	-- Blood-Queen Lana'thel
-						["g"] = {
+						["groups"] = {
 							crit(2, {	-- Defeat Blood-Queen Lana'thel
 								["achievementID"] = 4634,	-- Heroic: The Crimson Hall (25 player)
 							}),
@@ -3813,7 +3812,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					ach(4635),	-- Heroic: The Frostwing Halls (25 player)
 					e(1634,  {	-- Valithria Dreamwalker
 						["creatureID"] = 36789,	-- Valithria Dreamwalker
-						["g"] = {
+						["groups"] = {
 							crit(1, {	-- Rescue Valithria Dreamwalker
 								["achievementID"] = 4635,	-- Heroic: The Frostwing Halls (25 player)
 							}),
@@ -3838,7 +3837,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 					e(1635,  {	-- Sindragosa
 						["creatureID"] = 36853,	-- Sindragosa
-						["g"] = {
+						["groups"] = {
 							crit(2, {	-- Sindragosa
 								["achievementID"] = 4635,	-- Heroic: The Frostwing Halls (25 player)
 							}),
@@ -3859,7 +3858,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 					e(1636,  {	-- The Lich King
 						["creatureID"] = 36597,	-- The Lich King
-						["g"] = {
+						["groups"] = {
 							crit(5, {	-- The Light of Dawn
 								["achievementID"] = 4637,	-- Heroic: Fall of the Lich King (25 player)
 							}),
@@ -3896,16 +3895,20 @@ _.Instances = { tier(WOTLK_TIER, {
 			}),
 		},
 	}),
-})};
-_.HiddenQuestTriggers = {
+})));
+
+-- #if AFTER WRATH
+root("HiddenQuestTriggers", {
 	tier(WOTLK_TIER, {
 		q(24808),	-- Tank Ring Flag - doing "A Change of Heart" in ICC and choosing strength ring
 		q(24809),	-- Healer Ring Flag - doing "A Change of Heart" in ICC and choosing intellect haste/versa ring
 		q(24810),	-- Melee Ring Flag - doing "A Change of Heart" in ICC and choosing agility ring
 		q(24811),	-- Caster Ring Flag - doing "Choose Your Path" in ICC and choosing intellect crit/haste ring
 	}),
-};
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+});
+-- #endif
+-- #if AFTER 4.0.1
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(WOTLK_TIER, {
 		inst(758, {
 			-- Most sets was added 4.0.1
@@ -4035,4 +4038,5 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-});
+}));
+-- #endif

@@ -1,12 +1,11 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-_.Instances = { tier(WOTLK_TIER, {
+root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 	inst(284, {	-- Trial of the Champion
-		["mapID"] = 171,
+		["mapID"] = TRIAL_OF_THE_CHAMPION,
 		["lvl"] = 65,
-		["g"] = {
+		["groups"] = {
 			n(QUESTS, {
 				q(29851, {	-- Champion of the Tournament
 					["provider"] = { "n", 34996 },	-- Highlord Tirion Fordring
@@ -26,7 +25,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						35570,	-- Zul'tore
 						35617,	-- Deathstalker Visceri
 					},
-					["g"] = {
+					["groups"] = {
 						crit(1, {	-- Mokra the Skullcrusher
 							["achievementID"] = 4296,	-- Trial of the Champion (A)
 							["races"] = ALLIANCE_ONLY,
@@ -89,7 +88,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 				e(635, {	-- Eadric the Pure
 					["creatureID"] = 35119,	-- Eadric the Pure
-					["g"] = {
+					["groups"] = {
 						crit(7, {	-- Eadric the Pure (A)
 							["achievementID"] = 4296,	-- Trial of the Champion (A)
 							["races"] = ALLIANCE_ONLY,
@@ -126,7 +125,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 				e(636, {	-- Argent Confessor Paletress
 					["creatureID"] = 34928,	-- Argent Confessor Paletress
-					["g"] = {
+					["groups"] = {
 						crit(6, {	-- Argent Confessor Paletress (A)
 							["achievementID"] = 4296,	-- Trial of the Champion (A)
 							["races"] = ALLIANCE_ONLY,
@@ -163,7 +162,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 				e(637, {	-- The Black Knight
 					["creatureID"] = 35451,	-- The Black Knight
-					["g"] = {
+					["groups"] = {
 						crit(8, {	-- The Black Knight (A)
 							["achievementID"] = 4296,	-- Trial of the Champion (A)
 							["races"] = ALLIANCE_ONLY,
@@ -203,7 +202,7 @@ _.Instances = { tier(WOTLK_TIER, {
 			}),
 			d(2, {	-- Heroic
 				["lvl"] = 80,
-				["g"] = {
+				["groups"] = {
 					e(634, {	-- Grand Champions
 						["crs"] = {
 							34705,	-- Marshal Jacob Alerius
@@ -217,7 +216,7 @@ _.Instances = { tier(WOTLK_TIER, {
 							35570,	-- Zul'tore
 							35617,	-- Deathstalker Visceri
 						},
-						["g"] = {
+						["groups"] = {
 							crit(1, {	-- Mokra the Skullcrusher
 								["achievementID"] = 4298,	-- Heroic: Trial of the Champion (A)
 								["races"] = ALLIANCE_ONLY,
@@ -281,7 +280,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 					e(635, {	-- Eadric the Pure
 						["creatureID"] = 35119,	-- Eadric the Pure
-						["g"] = {
+						["groups"] = {
 							crit(7, {	-- Eadric the Pure (A)
 								["achievementID"] = 4298,	-- Heroic: Trial of the Champion (A)
 								["races"] = ALLIANCE_ONLY,
@@ -320,7 +319,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 					e(636, {	-- Argent Confessor Paletress
 						["creatureID"] = 34928,	-- Argent Confessor Paletress
-						["g"] = {
+						["groups"] = {
 							crit(6, {	-- Argent Confessor Paletress (A)
 								["achievementID"] = 4298,	-- Heroic: Trial of the Champion (A)
 								["races"] = ALLIANCE_ONLY,
@@ -435,7 +434,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					}),
 					e(637, {	-- The Black Knight
 						["creatureID"] = 35451,	-- The Black Knight
-						["g"] = {
+						["groups"] = {
 							crit(8, {	-- The Black Knight (A)
 								["achievementID"] = 4298,	-- Heroic: Trial of the Champion (A)
 								["races"] = ALLIANCE_ONLY,
@@ -477,9 +476,12 @@ _.Instances = { tier(WOTLK_TIER, {
 			})
 		},
 	}),
-})};
-_.HiddenQuestTriggers = {
+})));
+
+-- #if AFTER WOD
+root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
 		q(35950),	-- Trial of the Champion Reward Quest - Normal / Heroic completion
 	}),
-};
+});
+-- #endif

@@ -320,7 +320,8 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 				o(375893, {	-- High Value Cache
 					["description"] = "When Taskmaster Xy'pro has 3 stacks of Synergy, which he gets from being nearby other mobs, he gets another buff called Security Override which says he will drop the Security Override Orb.",
 					--["coord"] = { X, Y, MAP },
-					["cost"] = { { "i", 190727, 1 } },	-- 1xSecurity Override Orb
+					["questID"] = 66285,
+					["cost"] = { { "i", 190727, 1 } },	-- 1 Security Override Orb
 					["g"] = {
 						i(189175),	-- Mawforged Bridle
 						i(189991),	-- Snail Soul
@@ -334,7 +335,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					},
 				}),
 				o(375907, {	-- Protoform Schematic
-					["description"] = "Needs to defeat Halondrus.",
+					["description"] = "Located on the North side of the 2nd encounter area after defeating Halondrus.",
 					--["coord"] = { X, Y, MAP },
 					["g"] = {
 						i(189476),	-- Schematic: Curious Crystalsniffer
@@ -1797,9 +1798,10 @@ root("HiddenQuestTriggers", {
 			q(65975),	-- Killing Rygelon
 			q(65986),	-- Triggered when killing Trash: Kelmortos
 			q(65987),	-- Triggered when killing Trash: Kelmortos
-			-- q( ),	-- Killing The Jailer
-			-- q( ),	-- Killing The Jailer
-			-- q( ),	-- Killing The Jailer
+			q(65830),	-- Killing The Jailer
+			q(65831),	-- Killing The Jailer
+			q(65976),	-- Killing The Jailer
+			q(65698),	-- Jailer Cinematic
 		}),
 	}),
 });
@@ -1857,6 +1859,10 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(189780),	-- <DNT> 9.2 Raid - Sepulcher of the First Ones - Boss 01 - Solitary Guardian - Shield
 			i(190623),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - Trash Drops - Armor - Plate Shoulders
 			-- Tiers that wasnt tiers anymore
+		}),
+	}),
+}));
+			--[[
 			n(CLASSES, bubbleDown({ ["modID"] = 4 }, {	-- LFR
 				cl(DEATHKNIGHT, {
 					i(188873),	-- Cloak of the First Eidolon
@@ -2788,3 +2794,4 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		})),
 	}),
 }));
+--]]

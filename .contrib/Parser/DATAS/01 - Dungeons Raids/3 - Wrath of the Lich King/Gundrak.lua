@@ -1,16 +1,16 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-_.Instances = { tier(WOTLK_TIER, {
+root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(274, {	-- Gundrak
+		["mapID"] = GUNDRAK,
+		["maps"] = { 154 },
 		["lvl"] = 63,
-		["maps"] = { 153, 154 },
-		["g"] = {
+		["groups"] = {
 			n(QUESTS, {
 				q(29840, {	-- For Posterity
 					["provider"] = { "n", 55737 },	-- Chronicler Bah'Kini
-					["g"] = {
+					["groups"] = {
 						i(43180),	-- Lion's Head Ring
 						i(43178),	-- Ring of Foul Mojo
 						i(43179),	-- Solid Platinum Band
@@ -19,7 +19,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 				q(29844, {	-- For Posterity
 					["provider"] = { "n", 55738 },	-- Tol'mar
-					["g"] = {
+					["groups"] = {
 						i(43180),	-- Lion's Head Ring
 						i(43178),	-- Ring of Foul Mojo
 						i(43179),	-- Solid Platinum Band
@@ -28,7 +28,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 				q(29834, {	-- Gal'darah Must Pay
 					["provider"] = { "n", 55738 },	-- Tol'mar
-					["g"] = {
+					["groups"] = {
 						i(43164),	-- Sly Mojo Sash
 						i(43165),	-- Strange Voodoo Belt
 						i(43167),	-- Ranger's Beelt of the Fallen Empire
@@ -37,7 +37,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 				q(29835, {	-- Gal'darah Must Pay
 					["provider"] = { "n", 55737 },	-- Chronicler Bah'Kini
-					["g"] = {
+					["groups"] = {
 						i(43164),	-- Sly Mojo Sash
 						i(43165),	-- Strange Voodoo Belt
 						i(43167),	-- Ranger's Beelt of the Fallen Empire
@@ -46,7 +46,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 				q(29838, {	-- One of a Kind
 					["provider"] = { "n", 55737 },	-- Chronicler Bah'Kini
-					["g"] = {
+					["groups"] = {
 						i(43171),	-- Fur-Lined Moccasins
 						i(43172),	-- Rhino Hide Kneeboots
 						i(43173),	-- Scaled Boots of Fallen Hope
@@ -56,7 +56,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 				q(29839, {	-- One of a Kind
 					["provider"] = { "n", 55738 },	-- Tol'mar
-					["g"] = {
+					["groups"] = {
 						i(43171),	-- Fur-Lined Moccasins
 						i(43172),	-- Rhino Hide Kneeboots
 						i(43173),	-- Scaled Boots of Fallen Hope
@@ -161,7 +161,7 @@ _.Instances = { tier(WOTLK_TIER, {
 			}),
 			d(2, {	-- Heroic
 				["lvl"] = 80,
-				["g"] = {
+				["groups"] = {
 					n(ZONE_DROPS, {
 						i(37646, {	-- Burning Skull Pendant
 							["crs"] = {
@@ -306,11 +306,14 @@ _.Instances = { tier(WOTLK_TIER, {
 			-- #endif
 		},
 	}),
-})};
-_.HiddenQuestTriggers = {
+})));
+
+-- #if AFTER WOD
+root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
 		q(35475),	-- Gundrak Reward Quest - Normal completion
 		q(35476),	-- Gundrak Reward Quest - Heroic completion
 		q(35477),	-- Gundrak Bonus Objective - kill Eck the Ferocious (Heroic only)
 	}),
-};
+});
+-- #endif

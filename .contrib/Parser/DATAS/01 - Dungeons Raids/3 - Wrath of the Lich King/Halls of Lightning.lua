@@ -1,12 +1,12 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-_.Instances = { tier(WOTLK_TIER, {
+root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(275, {	-- Halls of Lightning
 		["lore"] = "Upon departing Azeroth, the titans entrusted loyal protectors with safeguarding Ulduar, an enigmatic city nestled in the mountains of the Storm Peaks. Designated supreme among his brethren was the guardian known as Loken, but with the power of the titan complex in his hands, he turned to darkness and plunged the region into chaos.\n\n|CFFFF0000Need to finish off a WotLK rep?  Equip a tabard obtained from the faction quartermaster and clear the dungeon on normal for around 2k rep per clear.|r",
+		["mapID"] = HALLS_OF_LIGHTNING,
+		["maps"] = { 139 },
 		["lvl"] = 65,
-		["maps"] = { 138, 139 },
 		["groups"] = {
 			n(QUESTS, {
 				q(29862, {	-- Clearing the Way
@@ -14,7 +14,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 				q(29860, {	-- Diametrically Opposed
 					["provider"] = { "n", 56027 },	-- Stormherald Eljrrin
-					["g"] = {
+					["groups"] = {
 						i(43193),	-- Lightning Infused Mantle
 						i(43194),	-- Charred Leather Shoulderguards
 						i(43195),	-- Stormforged Shoulders
@@ -25,7 +25,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				q(29861, {	-- Whatever it Takes!
 					["provider"] = { "n", 56027 },	-- Stormherald Eljrrin
 					["sourceQuests"] = { 29863 },	-- Stormherald Eljrrin
-					["g"] = {
+					["groups"] = {
 						i(42844),	-- Robes of Lightning
 						i(43207),	-- Hardened Tongue Tunic
 						i(43208),	-- Lightningbringer's Hauberk
@@ -315,11 +315,14 @@ _.Instances = { tier(WOTLK_TIER, {
 			-- #endif
 		},
 	}),
-})};
-_.HiddenQuestTriggers = {
+})));
+
+-- #if AFTER WOD
+root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
 		q(35456),	-- Halls of Lightning Reward Quest - Normal completion
 		q(35457),	-- Halls of Lightning Reward Quest - ?
 		q(35458),	-- Halls of Lightning Reward Quest - Heroic completion
 	}),
-};
+});
+-- #endif

@@ -1,20 +1,19 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-_.Instances = { tier(WOTLK_TIER, {
+root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(277, {	-- Halls of Stone
+		["mapID"] = HALLS_OF_STONE,
 		["lvl"] = 64,
-		["mapID"] = 140,
 		["groups"] = {
 			n(QUESTS, {
 				q(29850, {	-- Corrupt Constructs
 					["provider"] = { "n", 55835 },	-- Kaldir Ironbane
-					["coord"] = { 35.6, 35.2, 140 },
+					["coord"] = { 35.6, 35.2, HALLS_OF_STONE },
 				}),
 				q(13207, {	-- Halls of Stone
 					["provider"] = { "n", 28070 },	-- Brann Bronzebeard
-					["coord"] = { 70.8, 50.0, 140 },
+					["coord"] = { 70.8, 50.0, HALLS_OF_STONE },
 					["groups"] = {
 						i(44370),	-- Mantle of the Intrepid Explorer
 						i(44373),	-- Pauldrons of Reconnaissance
@@ -24,7 +23,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 				q(29848, {	-- The Forlorn Watcher
 					["provider"] = { "n", 55835 },	-- Kaldir Ironbane
-					["coord"] = { 35.6, 35.2, 140 },
+					["coord"] = { 35.6, 35.2, HALLS_OF_STONE },
 				}),
 			}),
 			d(1, {	-- Normal
@@ -253,10 +252,13 @@ _.Instances = { tier(WOTLK_TIER, {
 			}),
 		},
 	}),
-})};
-_.HiddenQuestTriggers = {
+})));
+
+-- #if AFTER WOD
+root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
 		q(35465),	-- Halls of Stone Reward Quest - Normal completion
 		q(35468),	-- Halls of Stone Reward Quest - Heroic completion
 	}),
-};
+});
+-- #endif

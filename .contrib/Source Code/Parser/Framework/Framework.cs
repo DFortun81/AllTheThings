@@ -262,6 +262,13 @@ namespace ATT
         };
 
         /// <summary>
+        /// A Dictionary of key-ID types and the respective objects which contain the specified key which will be captured and output during Debug runs</para>
+        /// NOTE: Each key name/value may contain multiple sets of data due to duplication of individual listings
+        /// </summary>
+        public static Dictionary<string, SortedDictionary<decimal, List<Dictionary<string, object>>>> DebugDBs { get; }
+                = new Dictionary<string, SortedDictionary<decimal, List<Dictionary<string, object>>>>();
+
+        /// <summary>
         /// Merge the data into the database.
         /// </summary>
         /// <param name="listing">The listing.</param>
@@ -390,6 +397,21 @@ namespace ATT
                 if (data.TryGetValue("g", out groups))
                     // Parent field consolidation now that groups have been processed
                     ConsolidateHeirarchicalFields(data, groups);
+
+                if (DebugMode)
+                {
+                    // Capture references to specified Debug DB keys for Debug output
+                    foreach (KeyValuePair<string, SortedDictionary<decimal, List<Dictionary<string, object>>>> dbKeyDatas in DebugDBs)
+                    {
+                        if (data.TryGetValue(dbKeyDatas.Key, out decimal keyValue))
+                        {
+                            if (!dbKeyDatas.Value.TryGetValue(keyValue, out List<Dictionary<string, object>> keyValueValues))
+                                dbKeyDatas.Value[keyValue] = keyValueValues = new List<Dictionary<string, object>>();
+
+                            keyValueValues.Add(data);
+                        }
+                    }
+                }
             }
 
             return true;
@@ -438,6 +460,25 @@ namespace ATT
                 else if (f <= 0)
                 {
                     data.Remove("f");
+                }
+
+                // special handling for explicitly-defined filterIDs (i.e. not determined by Item data, but rather directly in Source)
+                switch ((Objects.Filters)f)
+                {
+                    case Objects.Filters.Recipe:
+                        // switch any existing spellID to recipeID
+                        var item = Items.Get(data);
+                        if (item.TryGetValue("spellID", out long spellID) && item.TryGetValue("itemID", out long itemID))
+                        {
+                            if (DebugMode)
+                                Trace.WriteLine($"Converted Item {itemID} spellID into recipeID {spellID} due to Recipe Filter");
+                            // remove the spellID if existing
+                            item.Remove("spellID");
+                            data.Remove("spellID");
+                            // set the recipeID in the item dictionary so it will merge back in later
+                            item["recipeID"] = spellID;
+                        }
+                        break;
                 }
             }
 
@@ -3074,6 +3115,12 @@ namespace ATT
                     Items.ExportDebug(debugFolder.FullName);
                     Objects.ExportDebug(debugFolder.FullName);
                     Objects.ExportDB(debugFolder.FullName);
+
+                    // Export custom Debug DB data to the Debugging folder. (as JSON for simplicity)
+                    foreach (KeyValuePair<string, SortedDictionary<decimal, List<Dictionary<string, object>>>> dbKeyDatas in DebugDBs)
+                    {
+                        File.WriteAllText(Path.Combine(debugFolder.FullName, dbKeyDatas.Key + "_DebugDB.json"), MiniJSON.Json.Serialize(dbKeyDatas.Value));
+                    }
 
                     // Export the Category DB file.
                     if (CATEGORY_NAMES.Any())

@@ -109,15 +109,15 @@ root("Promotions", {
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(TBC_TIER, {
 		filter(MOUNTS, {
-			--#if AFTER SL
+			-- #if AFTER SHADOWLANDS
 			tier(TBC_TIER, 4.3, {
-			--#endif
+			-- #endif
 				i(37598, {	-- Swift Zhevra (MOUNT!)
 					["timeline"] = { "created 2.4.3.8601" },
 				}),
-			--#if AFTER SL
+			-- #if AFTER SHADOWLANDS
 			}),
-			--#endif
+			-- #endif
 		}),
 	}),
 	n(QUESTS, {

@@ -1,12 +1,11 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-_.Instances = { tier(WOTLK_TIER, {
+root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(271, {	-- Ahn'kahet: The Old Kingdom
-		["lvl"] = 61,
-		["mapID"] = 132,
+		["mapID"] = AHNKAHET_THE_OLD_KINGDOM,
 		["coord"] = { 28.3, 51.6, DRAGONBLIGHT },
+		["lvl"] = 61,
 		["groups"] = {
 			n(QUESTS, {
 				q(13204, {	-- Funky Fungi
@@ -24,7 +23,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 				q(29810, {	-- The Faceless Ones
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
+					["groups"] = {
 						i(44353),	-- Epaulets of the Faceless Ones
 						i(44350),	-- Mantle of Thwarted Evil
 						i(44351),	-- Shoulderpads of Abhorrence
@@ -264,11 +263,14 @@ _.Instances = { tier(WOTLK_TIER, {
 			-- #endif
 		},
 	}),
-})};
-_.HiddenQuestTriggers = {
+})));
+
+-- #if AFTER WOD
+root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
 		q(35489),	-- Ahn'kahet: The Old Kingdom Reward Quest - Normal completion
 		q(35490),	-- Ahn'kahet: The Old Kingdom Reward Quest - Heroic completion
 		q(35493),	-- Ahn'kahet: The Old Kingdom Bonus Reward - kill Amanitar (Heroic only)
 	}),
-};
+});
+-- #endif

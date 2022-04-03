@@ -1,11 +1,11 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-_.Instances = { tier(WOTLK_TIER, {
+root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(282, {	-- The Oculus
+		["mapID"] = THE_OCULUS,
+		["maps"] = { 143, 144, 145, 146 },
 		["lvl"] = 65,
-		["maps"] = { 142, 143, 144, 145, 146 },
 		["groups"] = {
 			n(QUESTS, {
 				q(13124, {	-- The Struggle Persists
@@ -277,7 +277,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						},
 						{	-- Experienced Drake Rider
 							["achievementID"] = 1871,	-- Experienced Drake Rider
-							["g"] = {
+							["groups"] = {
 								{	-- Amber Drake
 									["achievementID"] = 1871,	-- Experienced Drake Rider
 									["criteriaID"] = 1,	-- Amber Drake
@@ -328,10 +328,13 @@ _.Instances = { tier(WOTLK_TIER, {
 			}),
 		},
 	}),
-})};
-_.HiddenQuestTriggers = {
+})));
+
+-- #if AFTER WOD
+root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
 		q(35446),	-- The Oculus Reward Quest - Normal completion
 		q(35447),	-- The Oculus Reward Quest - Heroic completion
 	}),
-};
+});
+-- #endif

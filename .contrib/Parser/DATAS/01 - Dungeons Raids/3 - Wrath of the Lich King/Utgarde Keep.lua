@@ -1,12 +1,11 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-_.Instances = { tier(WOTLK_TIER, {
+root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(285, {	-- Utgarde Keep
-		["lvl"] = 57,
-		["mapID"] = 133,
+		["mapID"] = UTGARDE_KEEP,
 		["maps"] = { 134, 135 },
+		["lvl"] = 57,
 		["groups"] = {
 			n(QUESTS, {
 				q(30112,{	-- A Score to Settle
@@ -279,10 +278,13 @@ _.Instances = { tier(WOTLK_TIER, {
 			-- #endif
 		},
 	}),
-})};
-_.HiddenQuestTriggers = {
+})));
+
+-- #if AFTER WOD
+root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
 		q(35502),	-- Utgarde Keep Reward Quest - Normal completion
 		q(35512),	-- Utgarde Keep Reward Quest - Heroic completion
 	}),
-};
+});
+-- #endif

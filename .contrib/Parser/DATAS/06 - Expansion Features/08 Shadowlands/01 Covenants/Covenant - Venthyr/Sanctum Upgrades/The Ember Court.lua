@@ -2355,7 +2355,7 @@ root("HiddenQuestTriggers", {
 			--q(61935),	-- Stonehad was miserable, Adrestes was elated if it matters. This was at the start of the court - no idea what that was.  It's the first court with decorations though.
 			--q(61536),	-- Miserable Aliothe, Uncomfortable Mikanikos, Unhappy Choofa, Unhappy Alexandros Mograine, triggered after opening Mikanikos chest / New report: First Ember Court with Mikanikos
 
-			--q(61930),	-- Unknown
+			q(61930),	-- Triggered after Restock: Medic's Tent
 			q(61936),	-- Triggered after Restock: Surveillance
 			--q(61825),	-- During Ember Court after finishin Glimpse of the Wilds Niya's minigame
 			q(59691),	-- "The Party Herald"

@@ -1,14 +1,13 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-_.Instances = { tier(WOTLK_TIER, {
+root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 	inst(278, {	-- Pit of Saron
-		["mapID"] = 184,
+		["mapID"] = PIT_OF_SARON,
 		["coord"] = { 52.3, 89.3, ICECROWN },
 		["maps"] = { 823 },
 		["lvl"] = 78,
-		["g"] = {
+		["groups"] = {
 			n(QUESTS, {
 				q(24710, {	-- Deliverance from the Pit
 					["sourceQuest"] = 24498,	-- The Path to the Citadel
@@ -161,10 +160,10 @@ _.Instances = { tier(WOTLK_TIER, {
 			}),
 			d(2,   {	-- Heroic
 				["lvl"] = 80,
-				["g"] = {
+				["groups"] = {
 					ach(4520),	-- Heroic: The Pit of Saron
 					n(ZONE_DROPS, {
-						["g"] = {
+						["groups"] = {
 							i(50379),	-- Battered Hilt (Alliance)
 							i(50380),	-- Battered Hilt (Horde)
 							i(50318, {	-- Ghostly Wristwraps
@@ -265,10 +264,13 @@ _.Instances = { tier(WOTLK_TIER, {
 			-- #endif
 		},
 	}),
-})};
-_.HiddenQuestTriggers = {
+})));
+
+-- #if AFTER WOD
+root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
 		q(35438),	-- Pit of Saron Reward Quest - Normal completion
 		q(35440),	-- Pit of Saron Reward Quest - Heroic completion
 	}),
-};
+});
+-- #endif

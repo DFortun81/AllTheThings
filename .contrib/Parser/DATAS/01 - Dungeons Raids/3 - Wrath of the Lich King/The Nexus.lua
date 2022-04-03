@@ -1,21 +1,16 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
--- TODO: reformat achievs here
-_.Instances = { tier(WOTLK_TIER, {
+root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(281, {	-- The Nexus
+		["mapID"] = THE_NEXUS,
 		["lvl"] = 59,
-		["mapID"] = 129,
-		["maps"] = {
-			370,	-- The Nexus (Dragonwrath, Tarecgosa's Rest Quest Chain)
-		},
 		["groups"] = {
 			n(QUESTS, {
 				q(13094,{	-- Have They No Shame?
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 55537 },	-- Image of Warmage Kaitlyn
-					["g"] = {
+					["groups"] = {
 						i(43182),	-- Cured Mammoth Hide Mantle
 						i(43181),	-- Shoulders of the Northern Lights
 						i(43184),	-- Tundra Pauldrons
@@ -25,7 +20,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				q(13095,{	-- Have They No Shame?
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 55537 },	-- Image of Warmage Kaitlyn
-					["g"] = {
+					["groups"] = {
 						i(43182),	-- Cured Mammoth Hide Mantle
 						i(43181),	-- Shoulders of the Northern Lights
 						i(43184),	-- Tundra Pauldrons
@@ -34,7 +29,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 				q(11905,{	-- Postponing the Inevitable
 					["provider"] = { "n", 55535 },	-- Image of Warmage Kaitlyn
-					["g"] = {
+					["groups"] = {
 						i(42763),	-- Bindings of Sabotage
 						i(42765),	-- Gauntlets of the Disturbed Giant
 						i(42761),	-- Time-Stop Gloves
@@ -43,7 +38,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 				q(11973,{	-- Prisoner of War
 					["provider"] = { "n", 55531 },	-- Warmage Kaitlyn
-					["g"] = {
+					["groups"] = {
 						i(38223),	-- Cloak of Azure Lights
 						i(38222),	-- Mantle of Keristrasza
 						i(38221),	-- Shroud of Fluid Strikes
@@ -51,7 +46,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 				q(11911,{	-- Quickening
 					["provider"] = { "n", 55536 },	-- Image of Warmage Kaitlyn
-					["g"] = {
+					["groups"] = {
 						i(42768),	-- Boots of the Unbowed Protector
 						i(42767),	-- Invigorating Sabatons
 						i(42760),	-- Sandals of Mystical Evolution
@@ -211,11 +206,14 @@ _.Instances = { tier(WOTLK_TIER, {
 			-- #endif
 		},
 	}),
-})};
-_.HiddenQuestTriggers = {
+})));
+
+-- #if AFTER WOD
+root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
 		q(35513),	-- The Nexus - Reward Quest - Normal completion
 		q(35514),	-- The Nexus - Reward Quest - Heroic completion
 		q(35515),	-- The Nexus - Bonus Objective Reward Quest - kill Commander Stoutbeard (A) / Commander Kolurg (H) (Heroic only)
 	}),
-};
+});
+-- #endif

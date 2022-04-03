@@ -148,21 +148,21 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["sourceQuests"] = { 58160 },	-- For Queen and Grove!
 				["description"] = "Requires Renown 15.",
 				["provider"] = { "n", 158553 },	-- Flutterby
-				["coord"] = { 33.9, 43.5, ARDENWEALD },
+				["coord"] = { 33.9, 43.5, THE_TRUNK },
 				["isWeekly"] = true,
 			}),
 			q(62859, {	-- Return Lost Souls (15 soul version)
 				["sourceQuests"] = { 58160 },	-- For Queen and Grove!
 				["description"] = "Requires Renown 24.",
 				["provider"] = { "n", 158553 },	-- Flutterby
-				["coord"] = { 33.9, 43.5, ARDENWEALD },
+				["coord"] = { 33.9, 43.5, THE_TRUNK },
 				["isWeekly"] = true,
 			}),
 			q(62860, {	-- Return Lost Souls (20 soul version)
 				["sourceQuests"] = { 58160 },	-- For Queen and Grove!
 				["description"] = "Requires Renown 32. Depending on the level of your Queen's Conservatory this will reward higher quality spirits. Rank 5 will grant you an Epic Spirit.",
 				["provider"] = { "n", 158553 },	-- Flutterby
-				["coord"] = { 33.9, 43.5, ARDENWEALD },
+				["coord"] = { 33.9, 43.5, THE_TRUNK },
 				["isWeekly"] = true,
 				["g"] = {
 					i(177698, {	-- Untamed Spirit Ardenweald (Uncommon)
@@ -190,7 +190,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 			q(65090, {	-- Return More Lost Souls
 				["sourceQuests"] = { 62860 },	-- Return Lost Souls (20 soul version)
 				["provider"] = { "n", 158553 },	-- Flutterby
-				["coord"] = { 33.9, 43.5, ARDENWEALD },
+				["coord"] = { 33.9, 43.5, THE_TRUNK },
 				["repeatable"] = true,
 				["timeline"] = { "added 9.1.5" },
 			}),
@@ -840,12 +840,12 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 			-- Return to the Maw
 			q(60233, {	-- Souls of the Damned (Ardenweald)
 				["provider"] = { "n", 158553 },	-- Flutterby
-				["coord"] = { 33.9, 43.5, ARDENWEALD },
+				["coord"] = { 33.9, 43.5, THE_TRUNK },
 				["sourceQuests"] = { 58160 },	-- For Queen and Grove!
 			}),
 			q(61508, {	-- Soul Salvation (Ardenweald)
 				["provider"] = { "n", 158553 },	-- Flutterby
-				["coord"] = { 33.9, 43.5, ARDENWEALD },
+				["coord"] = { 33.9, 43.5, THE_TRUNK },
 				["sourceQuests"] = { 60233 },	-- Souls of the Damned
 			}),
 			--]]

@@ -1,13 +1,12 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-_.Instances = { tier(WOTLK_TIER, {
+root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(272, {	-- Azjol-Nerub
-		["lvl"] = 60,
-		["mapID"] = 157,
+		["mapID"] = AZJOL_NERUB,
 		["coord"] = { 26.0, 50.6, DRAGONBLIGHT },
 		["maps"] = { 158, 159 },
+		["lvl"] = lvlsquish(72, 72, 60),
 		["groups"] = {
 			n(QUESTS, {
 				q(29807, {	-- Death to the Traitor King
@@ -211,10 +210,13 @@ _.Instances = { tier(WOTLK_TIER, {
 			-- #endif
 		},
 	}),
-})};
-_.HiddenQuestTriggers = {
+})));
+
+-- #if AFTER WOD
+root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
 		q(35497),	-- Azjol-Nerub Reward Quest - Normal completion
 		q(35498),	-- Azjol-Nerub Reward Quest - Heroic completion
 	}),
-};
+});
+-- #endif

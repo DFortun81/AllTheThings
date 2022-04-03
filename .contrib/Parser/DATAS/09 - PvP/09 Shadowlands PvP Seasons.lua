@@ -1211,6 +1211,7 @@ root("PVP", pvp(tier(SL_TIER, {
 				["races"] = HORDE_ONLY,
 			}),
 		}),
+		--[[
 		o(353484, {	-- The Great Vault
 			["description"] = "Can Only be obtained from the great vault.",
 			["g"] = bubbleDown({ ["bonusID"] = 7897 }, {
@@ -1300,6 +1301,7 @@ root("PVP", pvp(tier(SL_TIER, {
 				}),
 			}),
 		}),
+		--]]
 	})),
 })));
 
@@ -1428,6 +1430,7 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(180435),	-- 9.0 PvP - PvP Reward - Tabard - 5
 			}),
 		}),
+		--[[
 		n(SEASON_COSMIC, bubbleDown({ ["bonusID"] = 6894 }, {
 			cl(DEATHKNIGHT, {
 				i(188864),	-- Carapace of the First Eidolon
@@ -1662,5 +1665,6 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(188943),	-- Vambraces of the Infinite Infantry
 			}),
 		})),
+		--]]
 	}),
 }));

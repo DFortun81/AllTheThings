@@ -1,14 +1,13 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-_.Instances = { tier(WOTLK_TIER, {
+root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(753, {	-- Vault of Archavon
-		["isRaid"] = true,
-		["sharedLockout"] = 1,
-		["lvl"] = 80,
-		["mapID"] = 156,
+		["mapID"] = VAULT_OF_ARCHAVON,
 		["coord"] = { 50.0, 11.9, WINTERGRASP },
+		["sharedLockout"] = 1,
+		["isRaid"] = true,
+		["lvl"] = 80,
 		["groups"] = {
 			n(COMMON_BOSS_DROPS, {
 				["description"] = "These can drop from any of the bosses on any difficulty.",
@@ -24,8 +23,14 @@ _.Instances = { tier(WOTLK_TIER, {
 				},
 			}),
 			d(3, {	-- 10-Player
-				ach(4016),	-- Earth, Wind & Fire (10 player)
-				e(1599, {	-- Koralon the Flame Watcher
+				applyclassicphase(WRATH_PHASE_FOUR, ach(4016, {	-- Earth, Wind & Fire (10 player)
+					["crs"] = {
+						35013,	-- Koralon the Flame Watcher
+						33993,	-- Emalon the Storm Watcher
+						31125,	-- Archavon the Stone Watcher
+					},
+				})),
+				applyclassicphase(WRATH_PHASE_THREE, e(1599, {	-- Koralon the Flame Watcher
 					["creatureID"] = 35013,
 					["groups"] = {
 						ach(3836),		-- Koralon the Flame Watcher (10 player)
@@ -191,8 +196,8 @@ _.Instances = { tier(WOTLK_TIER, {
 						i(42116),	-- Furious Gladiator's Band of Dominance
 						i(42117),	-- Furious Gladiator's Band of Triumph
 					},
-				}),
-				e(1598, {	-- Emalon the Storm Watcher
+				})),
+				applyclassicphase(WRATH_PHASE_TWO, e(1598, {	-- Emalon the Storm Watcher
 					["creatureID"] = 33993,
 					["groups"] = {
 						ach(3136),		-- Emalon the Storm Watcher (10 player)
@@ -313,8 +318,8 @@ _.Instances = { tier(WOTLK_TIER, {
 						i(42114),	-- Deadly Gladiator's Band of Ascendancy
 						i(42115),	-- Deadly Gladiator's Band of Victory
 					},
-				}),
-				e(1600, {	-- Toravon the Ice Watcher
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, e(1600, {	-- Toravon the Ice Watcher
 					["creatureID"] = 38433,
 					["groups"] = {
 						ach(4585),		-- Toravon the Ice Watcher (10 player)
@@ -436,7 +441,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						i(42118),	-- Relentless Gladiator's Band of Ascendancy
 						i(42119),	-- Relentless Gladiator's Band of Victory
 					},
-				}),
+				})),
 				e(1597, {	-- Archavon the Stone Watcher
 					["creatureID"] = 31125,
 					["groups"] = {
@@ -550,8 +555,14 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 			}),
 			d(4, {	-- 25-Player
-				ach(4017),	-- Earth, Wind & Fire (25 player)
-				e(1599, {	-- Koralon the Flame Watcher
+				applyclassicphase(WRATH_PHASE_FOUR, ach(4017, {	-- Earth, Wind & Fire (25 player)
+					["crs"] = {
+						35013,	-- Koralon the Flame Watcher
+						33993,	-- Emalon the Storm Watcher
+						31125,	-- Archavon the Stone Watcher
+					},
+				})),
+				applyclassicphase(WRATH_PHASE_THREE, e(1599, {	-- Koralon the Flame Watcher
 					["creatureID"] = 35013,
 					["groups"] = {
 						ach(3837),		-- Koralon the Flame Watcher (25 player)
@@ -723,8 +734,8 @@ _.Instances = { tier(WOTLK_TIER, {
 						i(42118),	-- Relentless Gladiator's Band of Ascendancy
 						i(42119),	-- Relentless Gladiator's Band of Victory
 					},
-				}),
-				e(1598, {	-- Emalon the Storm Watcher
+				})),
+				applyclassicphase(WRATH_PHASE_TWO, e(1598, {	-- Emalon the Storm Watcher
 					["creatureID"] = 33993,
 					["groups"] = {
 						ach(3137),		-- Emalon the Storm Watcher (25 player)
@@ -846,8 +857,8 @@ _.Instances = { tier(WOTLK_TIER, {
 						i(42116),	-- Furious Gladiator's Band of Dominance
 						i(42117),	-- Furious Gladiator's Band of Triumph
 					},
-				}),
-				e(1600, {	-- Toravon the Ice Watcher
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, e(1600, {	-- Toravon the Ice Watcher
 					["creatureID"] = 38433,
 					["groups"] = {
 						ach(4586),		-- Toravon the Ice Watcher (25 player)
@@ -969,7 +980,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						i(51336),	-- Wrathful Gladiator's Band of Dominance
 						i(51358),	-- Wrathful Gladiator's Band of Triumph
 					},
-				}),
+				})),
 				e(1597, {	-- Archavon the Stone Watcher
 					["creatureID"] = 31125,
 					["groups"] = {
@@ -1083,4 +1094,4 @@ _.Instances = { tier(WOTLK_TIER, {
 			}),
 		},
 	}),
-})};
+})));

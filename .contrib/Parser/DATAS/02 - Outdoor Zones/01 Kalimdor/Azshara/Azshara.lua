@@ -499,6 +499,7 @@ root("Zones", m(KALIMDOR, {
 							["itemID"] = 4142,	-- Tome of Polymorph: Pig
 							["recipeID"] = 28272,	-- Polymorph (Pig)
 							["classes"] = { MAGE },
+							["f"] = RECIPES,
 						},
 					},
 				}),

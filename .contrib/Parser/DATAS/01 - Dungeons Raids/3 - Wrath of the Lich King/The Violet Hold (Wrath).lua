@@ -1,18 +1,17 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-_.Instances = { tier(WOTLK_TIER, {
+root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(283, {	-- The Violet Hold (Wrath)
-		["lvl"] = 62,
-		["mapID"] = 168,
+		["mapID"] = THE_VIOLET_HOLD_WRATH,
 		["coord"] = { 66.6, 67.9, NORTHREND_DALARAN },
+		["lvl"] = 62,
 		["groups"] = {
 			n(QUESTS, {
 				q(29830,{	-- Containment
 					["provider"] = { "n", 30658 },	-- Lieutenant Sinclari
 					["sourceQuest"] = 29829,	-- Discretion is Key
-					["g"] = {
+					["groups"] = {
 						i(44343),	-- Conferred Pantaloons
 						i(44345),	-- Dalaran Warden's Legplates
 						i(44344),	-- Labyrinthine Legguards
@@ -303,10 +302,13 @@ _.Instances = { tier(WOTLK_TIER, {
 			}),
 		},
 	}),
-})};
-_.HiddenQuestTriggers = {
+})));
+
+-- #if AFTER WOD
+root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
 		q(35478),	-- The Violet Hold Reward Quest - Normal completion
 		q(35480),	-- The Violet Hold Reward Quest - Heroic completion
 	}),
-};
+});
+-- #endif

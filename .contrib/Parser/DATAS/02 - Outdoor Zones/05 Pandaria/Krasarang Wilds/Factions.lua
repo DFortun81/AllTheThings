@@ -568,7 +568,7 @@ _.Zones =
 							}),
 							q(32448, {	-- Ties with the Past
 								["sourceQuests"] = { 32363 },	-- The Kun-Lai Expedition
-								["provider"] = { "n", 68267 },	-- Baine Bloodhoof
+								["provider"] = { "n", 68287 },	-- Baine Bloodhoof
 								["coord"] = { 60.3, 55.2, KUN_LAI_SUMMIT },
 								["races"] = HORDE_ONLY,
 							}),

@@ -1,16 +1,15 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-_.Instances = { tier(WOTLK_TIER, {
+root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 	inst(757, {	-- Trial of the Crusader
+		["mapID"] = TRIAL_OF_THE_CRUSADER,
+		["maps"] = { 173 },
+		["coord"] = { 75.0, 21.8, ICECROWN },	-- Trial of the Crusader (Argent Tournament Grounds)
 		["sharedLockout"] = 1,
 		["isRaid"] = true,
-		["coord"] = { 75.0, 21.8, ICECROWN },	-- Trial of the Crusader (Argent Tournament Grounds)
-		["mapID"] = 172,
-		["maps"] = { 173 },
 		["lvl"] = 80,
-		["g"] = {
+		["groups"] = {
 			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
 					34796,	-- Gormok
@@ -51,7 +50,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					34564,	-- Anub'arak
 				},
 				["description"] = "These drop on all difficulties, but 10 Man Normal.",
-				["g"] = {
+				["groups"] = {
 					a(i(47654)),	-- Pattern: Bejeweled Wizard's Bracers [Alliance]
 					h(i(47639)),	-- Pattern: Bejeweled Wizard's Bracers [Horde]
 					a(i(47629)),	-- Pattern: Black Chitin Bracers [Alliance]
@@ -98,7 +97,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						35144,	-- Acidmaw
 						34799,	-- Dreadscale
 					},
-					["g"] = {
+					["groups"] = {
 						{	-- Call of the Crusade (10 player): Defeat the Beasts of Northrend
 							["achievementID"] = 3917,	-- Call of the Crusade (10 player)
 							["criteriaID"] = 1,			-- Defeat the Beasts of Northrend
@@ -135,7 +134,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 				e(1619, {	-- Lord Jaraxxus
 					["crs"] = { 34780 },	-- Lord Jaraxxus
-					["g"] = {
+					["groups"] = {
 						{	-- Call of the Crusade (10 player): Defeat Lord Jaraxxus
 							["achievementID"] = 3917,	-- Call of the Crusade (10 player)
 							["criteriaID"] = 2,			-- Defeat Lord Jaraxxus
@@ -187,7 +186,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						34461,	-- Tyrius Duskblade
 						34465,	-- Velanaa
 					},
-					["g"] = {
+					["groups"] = {
 						{	-- Call of the Crusade (10 player): Defeat the Faction Champions
 							["achievementID"] = 3917,	-- Call of the Crusade (10 player)
 							["criteriaID"] = 3,			-- Defeat the Faction Champions
@@ -223,7 +222,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						34444,	-- Thrakgar
 						34441,	-- Vivienne Blackwhisper
 					},
-					["g"] = {
+					["groups"] = {
 						{	-- Call of the Crusade (10 player): Defeat the Faction Champions
 							["achievementID"] = 3917,	-- Call of the Crusade (10 player)
 							["criteriaID"] = 3,			-- Defeat the Faction Champions
@@ -246,7 +245,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						34496,	-- Eydis Darkbane
 						34497,	-- Fjola Lightbane
 					},
-					["g"] = {
+					["groups"] = {
 						{	-- Call of the Crusade (10 player): Defeat the Twin Val'kyr
 							["achievementID"] = 3917,	-- Call of the Crusade (10 player)
 							["criteriaID"] = 4,			-- Defeat the Twin Val'kyr
@@ -282,7 +281,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 				e(1623, {	-- Anub'arak
 					["crs"] = { 34564 },	-- Anub'arak
-					["g"] = {
+					["groups"] = {
 						{	-- Call of the Crusade (10 player): Complete the Trial of the Crusader
 							["achievementID"] = 3917,	-- Call of the Crusade (10 player)
 							["criteriaID"] = 5,			-- Complete the Trial of the Crusader
@@ -368,7 +367,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						34496,	-- Eydis Darkbane
 						34564,	-- Anub'arak
 					},
-					["g"] = {
+					["groups"] = {
 						i(47556),		-- Crusader Orb
 					},
 				}),
@@ -379,7 +378,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						35144,	-- Acidmaw
 						34799,	-- Dreadscale
 					},
-					["g"] = {
+					["groups"] = {
 						{	-- Call of the Grand Crusade (10 player): Defeat the Beasts of Northrend
 							["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
 							["criteriaID"] = 1,			-- Defeat the Beasts of Northrend
@@ -416,7 +415,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 				e(1619, {	-- Lord Jaraxxus
 					["crs"] = { 34780 },	-- Lord Jaraxxus
-					["g"] = {
+					["groups"] = {
 						{	-- Call of the Grand Crusade (10 player): Defeat Lord Jaraxxus
 							["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
 							["criteriaID"] = 2,			-- Defeat Lord Jaraxxus
@@ -468,7 +467,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						34461,	-- Tyrius Duskblade
 						34465,	-- Velanaa
 					},
-					["g"] = {
+					["groups"] = {
 						{	-- Call of the Grand Crusade (10 player): Defeat the Faction Champions
 							["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
 							["criteriaID"] = 3,			-- Defeat the Faction Champions
@@ -504,7 +503,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						34444,	-- Thrakgar
 						34441,	-- Vivienne Blackwhisper
 					},
-					["g"] = {
+					["groups"] = {
 						{	-- Call of the Grand Crusade (10 player): Defeat the Faction Champions
 							["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
 							["criteriaID"] = 3,			-- Defeat the Faction Champions
@@ -527,7 +526,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						34496,	-- Eydis Darkbane
 						34497,	-- Fjola Lightbane
 					},
-					["g"] = {
+					["groups"] = {
 						{	-- Call of the Grand Crusade (10 player): Defeat the Twin Val'kyr
 							["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
 							["criteriaID"] = 4,			-- Defeat the Twin Val'kyr
@@ -563,7 +562,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 				e(1623, {	-- Anub'arak
 					["crs"] = { 34564 },	-- Anub'arak
-					["g"] = {
+					["groups"] = {
 						{	-- Call of the Grand Crusade (10 player): Complete the Trial of the Grand Crusader
 							["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
 							["criteriaID"] = 5,			-- Complete the Trial of the Grand Crusader
@@ -649,7 +648,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						34496,	-- Eydis Darkbane
 						34564,	-- Anub'arak
 					},
-					["g"] = {
+					["groups"] = {
 						i(47556),		-- Crusader Orb
 						i(47242),		-- Trophy of the Crusade
 					},
@@ -661,7 +660,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						35144,	-- Acidmaw
 						34799,	-- Dreadscale
 					},
-					["g"] = {
+					["groups"] = {
 						{	-- Call of the Crusade (25 player): Defeat the Beasts of Northrend
 							["achievementID"] = 3916,	-- Call of the Crusade (25 player)
 							["criteriaID"] = 1,			-- Defeat the Beasts of Northrend
@@ -704,7 +703,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 				e(1619, {	-- Lord Jaraxxus
 					["crs"] = { 34780 },	-- Lord Jaraxxus
-					["g"] = {
+					["groups"] = {
 						{	-- Call of the Crusade (25 player): Defeat Lord Jaraxxus
 							["achievementID"] = 3916,	-- Call of the Crusade (25 player)
 							["criteriaID"] = 2,			-- Defeat Lord Jaraxxus
@@ -760,7 +759,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						34461,	-- Tyrius Duskblade
 						34465,	-- Velanaa
 					},
-					["g"] = {
+					["groups"] = {
 						{	-- Call of the Crusade (25 player): Defeat the Faction Champions
 							["achievementID"] = 3916,	-- Call of the Crusade (25 player)
 							["criteriaID"] = 3,			-- Defeat the Faction Champions
@@ -800,7 +799,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						34444,	-- Thrakgar
 						34441,	-- Vivienne Blackwhisper
 					},
-					["g"] = {
+					["groups"] = {
 						{	-- Call of the Crusade (25 player): Defeat the Faction Champions
 							["achievementID"] = 3916,	-- Call of the Crusade (25 player)
 							["criteriaID"] = 3,			-- Defeat the Faction Champions
@@ -827,7 +826,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						34496,	-- Eydis Darkbane
 						34497,	-- Fjola Lightbane
 					},
-					["g"] = {
+					["groups"] = {
 						{	-- Call of the Crusade (25 player): Defeat the Twin Val'kyr
 							["achievementID"] = 3916,	-- Call of the Crusade (25 player)
 							["criteriaID"] = 4,			-- Defeat the Twin Val'kyr
@@ -867,7 +866,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 				e(1623, {	-- Anub'arak
 					["crs"] = { 34564 },	-- Anub'arak
-					["g"] = {
+					["groups"] = {
 						{	-- Call of the Crusade (25 player): Complete the Trial of the Crusader
 							["achievementID"] = 3916,	-- Call of the Crusade (25 player)
 							["criteriaID"] = 5,			-- Complete the Trial of the Crusader
@@ -957,7 +956,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						34496,	-- Eydis Darkbane
 						34564,	-- Anub'arak
 					},
-					["g"] = {
+					["groups"] = {
 						i(47556),		-- Crusader Orb
 						i(47242),		-- Trophy of the Crusade
 					},
@@ -969,7 +968,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						35144,	-- Acidmaw
 						34799,	-- Dreadscale
 					},
-					["g"] = {
+					["groups"] = {
 						{	-- Call of the Grand Crusade (25 player): Defeat the Beasts of Northrend
 							["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
 							["criteriaID"] = 1,			-- Defeat the Beasts of Northrend
@@ -1012,7 +1011,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 				e(1619, {	-- Lord Jaraxxus
 					["crs"] = { 34780 },	-- Lord Jaraxxus
-					["g"] = {
+					["groups"] = {
 						{	-- Call of the Grand Crusade (25 player): Defeat Lord Jaraxxus
 							["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
 							["criteriaID"] = 2,			-- Defeat Lord Jaraxxus
@@ -1068,7 +1067,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						34461,	-- Tyrius Duskblade
 						34465,	-- Velanaa
 					},
-					["g"] = {
+					["groups"] = {
 						{	-- Call of the Grand Crusade (25 player): Defeat the Faction Champions
 							["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
 							["criteriaID"] = 3,			-- Defeat the Faction Champions
@@ -1108,7 +1107,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						34444,	-- Thrakgar
 						34441,	-- Vivienne Blackwhisper
 					},
-					["g"] = {
+					["groups"] = {
 						{	-- Call of the Grand Crusade (25 player): Defeat the Faction Champions
 							["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
 							["criteriaID"] = 3,			-- Defeat the Faction Champions
@@ -1135,7 +1134,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						34496,	-- Eydis Darkbane
 						34497,	-- Fjola Lightbane
 					},
-					["g"] = {
+					["groups"] = {
 						{	-- Call of the Grand Crusade (25 player): Defeat the Twin Val'kyr
 							["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
 							["criteriaID"] = 4,			-- Defeat the Twin Val'kyr
@@ -1175,7 +1174,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 				e(1623, {	-- Anub'arak
 					["crs"] = { 34564 },	-- Anub'arak
-					["g"] = {
+					["groups"] = {
 						{	-- Call of the Grand Crusade (25 player): Complete the Trial of the Grand Crusader
 							["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
 							["criteriaID"] = 5,			-- Complete the Trial of the Grand Crusader
@@ -1227,7 +1226,7 @@ _.Instances = { tier(WOTLK_TIER, {
 			}),
 			n(-40, {	-- Legacy
 				["u"] = REMOVED_FROM_GAME,
-				["g"] = {
+				["groups"] = {
 					ach(4080, {		-- A Tribute to Dedicated Insanity
 						un(REMOVED_FROM_GAME, title(136)),	-- the Argent Defender
 					}),
@@ -1301,8 +1300,10 @@ _.Instances = { tier(WOTLK_TIER, {
 			}),
 		},
 	}),
-})};
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+})));
+
+-- #if AFTER 4.0.1
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(WOTLK_TIER, {
 		inst(757, {
 			-- Most sets was added 4.0.1
@@ -1533,4 +1534,5 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-});
+}));
+-- #endif

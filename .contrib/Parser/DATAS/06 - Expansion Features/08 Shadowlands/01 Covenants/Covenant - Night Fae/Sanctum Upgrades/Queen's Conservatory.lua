@@ -201,6 +201,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										["sourceQuests"] = { 62447 },	-- A Rare and Unusual Spirit (1)
 										["provider"] = { "n", 174329 },	-- Falir the Shifting
 										["coord"] = { 24.0, 53.3, 1662 },
+										["cost"] = { { "i", 183704, 1 } },	-- Shifting Spirit of Knowledge
 									}),
 									q(59871, {	-- Catalyze This
 										["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
@@ -408,6 +409,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										["sourceQuests"] = { 62625 },	-- A Rare and Unusual Spirit (4)
 										["provider"] = { "n", 174511 },	-- Lia the Curious
 										["coord"] = { 26.0, 63.8, 1662 },
+										["cost"] = { { "i", 183806, 1 } }, -- 1 Energetic Spirit of Curiosity
 									}),
 									q(62629, {	-- All Spirits Great and Small (2)
 										["sourceQuests"] = { 62627 },	-- All Spirits Great and Small (1)

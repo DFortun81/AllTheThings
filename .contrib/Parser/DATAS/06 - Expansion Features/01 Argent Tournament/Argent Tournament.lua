@@ -13,9 +13,9 @@ _.ExpansionFeatures =
 					["description"] = "This is the quest chain for obtaining an epic Quel'Delar weapon.\n\nNOTE: A Warrior can learn all of the weapon appearances.",
 					["maps"] = {
 						NORTHREND_DALARAN,
-						183,	-- The Forge of Souls
-						184,	-- Pit of Saron
-						185,	-- Halls of Reflection
+						THE_FORGE_OF_SOULS,
+						PIT_OF_SARON,
+						HALLS_OF_REFLECTION,
 						ISLE_OF_QUELDANAS,
 					},
 					["lvl"] = 67,	-- Requirement for the Batterd Hilt itself.

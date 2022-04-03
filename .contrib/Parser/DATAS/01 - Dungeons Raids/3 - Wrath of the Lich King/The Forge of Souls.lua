@@ -1,13 +1,12 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-_.Instances = { tier(WOTLK_TIER, {
+root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 	inst(280, {	-- The Forge of Souls
-		["mapID"] = 183,
+		["mapID"] = THE_FORGE_OF_SOULS,
 		["coord"] = { 52.3, 89.3, ICECROWN },
 		["lvl"] = 75,
-		["g"] = {
+		["groups"] = {
 			n(QUESTS, {
 				q(24499, {	-- Echoes of Tortured Souls
 					["sourceQuest"] = 24510,	-- Inside the Frozen Citadel
@@ -123,7 +122,7 @@ _.Instances = { tier(WOTLK_TIER, {
 			}),
 			d(2,   {	-- Heroic
 				["lvl"] = 80,
-				["g"] = {
+				["groups"] = {
 					ach(4519),	-- Heroic: The Forge of Souls
 					n(ZONE_DROPS, {
 						i(50379),	-- Battered Hilt (Alliance)
@@ -215,10 +214,13 @@ _.Instances = { tier(WOTLK_TIER, {
 			-- #endif
 		},
 	}),
-})};
-_.HiddenQuestTriggers = {
+})));
+
+-- #if AFTER WOD
+root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
 		q(35436),	-- The Forge of Souls Reward Quest - Normal completion
 		q(35437),	-- The Forge of Souls Reward Quest - Heroic completion
 	}),
-};
+});
+-- #endif

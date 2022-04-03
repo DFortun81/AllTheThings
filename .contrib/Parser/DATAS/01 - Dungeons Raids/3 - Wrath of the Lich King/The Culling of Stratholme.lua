@@ -1,28 +1,27 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-_.Instances = { tier(WOTLK_TIER, {
+root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(279, {	-- The Culling of Stratholme
+		["mapID"] = THE_CULLING_OF_STRATHOLME,
 		["coords"] = {
 			{ 56.9, 82.4, CAVERNS_OF_TIME },	-- dungeon entrance
 			{ 64.7, 49.9, TANARIS },	-- entrance to CoT
 		},
-		["mapID"] = 130,
 		["maps"] = { 131 },
 		["lvl"] = 65,
-		["g"] = {
+		["groups"] = {
 			n(QUESTS, {
 				q(13149, {	-- Dispelling Illusions
 					["provider"] = { "n", 26527 },	-- Chromie
-					["g"] = {
+					["groups"] = {
 						i(37888),	-- Arcane Disruptor
 					},
 				}),
 				q(13151, {	-- A Royal Escort
 					["sourceQuests"] = { 13149 },	-- Dispelling Illusions
 					["provider"] = { "n", 26527 },	-- Chromie
-					["g"] = {
+					["groups"] = {
 						i(44396),	-- Gloves of the Time Guardian
 						i(44397),	-- Handwraps of Preserved History
 						i(44398),	-- Grips of Chronological Events
@@ -162,7 +161,7 @@ _.Instances = { tier(WOTLK_TIER, {
 			}),
 			d(2,   {	-- Heroic
 				["lvl"] = 80,
-				["g"] = {
+				["groups"] = {
 					cr(26529, e(611, {	-- Meathook
 						crit(1, {	-- Meathook
 							["achievementID"] = 500,	-- Heroic: The Culling of Stratholme
@@ -239,11 +238,14 @@ _.Instances = { tier(WOTLK_TIER, {
 			}),
 		},
 	}),
-})};
-_.HiddenQuestTriggers = {
+})));
+
+-- #if AFTER WOD
+root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
 		q(35472),	-- Culling of Stratholme Reward Quest - Normal completion
 		q(35474),	-- Culling of Stratholme Reward Quest - Heroic completion
 		q(35473),	-- Culling of Stratholme - Bonus Objective Reward - kill Infinite Corruptor (Heroic only)
 	}),
-};
+});
+-- #endif

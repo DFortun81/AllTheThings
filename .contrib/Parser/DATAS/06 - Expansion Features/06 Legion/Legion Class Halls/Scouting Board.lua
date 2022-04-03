@@ -340,6 +340,7 @@ root("ExpansionFeatures", {
 						un(REMOVED_FROM_GAME, i(139473)),	-- Vial of Poisoned Blood -> Darkheart Thicket: Into Darkheart Thicket -> Darkheart Thicket
 						un(REMOVED_FROM_GAME, i(139475)),	-- Waterlogged Letter -> Maw of Souls: Into the Maw of Souls -> Maw of Souls
 						-- Follower Equipments
+						i(139873),	-- Bottled Sanity
 						i(139808),	-- Cuiro of Abundant Happiness
 						i(139809),	-- Elixir of Plenty
 						i(152444),	-- Exalted Xenedar Hammer

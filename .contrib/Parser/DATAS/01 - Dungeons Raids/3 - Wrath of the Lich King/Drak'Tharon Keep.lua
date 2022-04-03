@@ -1,11 +1,10 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-_.Instances = { tier(WOTLK_TIER, {
+root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(273, {	-- Drak'Tharon Keep
 		["lvl"] = 61,
-		["mapID"] = 160,
+		["mapID"] = DRAKTHARON_KEEP,
 		["maps"] = { 161 },
 		["coord"] = { 28.6, 86.9, ZULDRAK },
 		["groups"] = {
@@ -403,10 +402,13 @@ _.Instances = { tier(WOTLK_TIER, {
 			}),
 		},
 	}),
-})};
-_.HiddenQuestTriggers = {
+})));
+
+-- #if AFTER WOD
+root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
 		q(35483),	-- Drak'Tharon Keep Reward Quest - Normal completion
 		q(35484),	-- Drak'Tharon Keep Reward Quest - Heroic completion
 	}),
-};
+});
+-- #endif

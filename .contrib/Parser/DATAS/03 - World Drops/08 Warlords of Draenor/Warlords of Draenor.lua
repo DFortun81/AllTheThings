@@ -498,6 +498,7 @@ root("WorldDrops", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.0.3" } 
 			i(116725),	-- Oshu'gun Ring
 			i(116719),	-- Ruhkmari Ring
 			i(118863),	-- Salubrious Signet of Snif'le
+			i(118866),	-- Seal of Yen Ta
 			i(116716),	-- Shadowsage Ring
 			i(116710),	-- Soulkeeper Ring
 			i(116713),	-- Sunsworn Ring

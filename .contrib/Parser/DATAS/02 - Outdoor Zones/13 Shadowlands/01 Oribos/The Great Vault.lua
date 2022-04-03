@@ -122,6 +122,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 							{"pop"},								-- Discard the Shadowland Headers and acquire all of their children.
 							{"where", "headerID", SEASON_COSMIC},	-- Season 3
 							{"pop"},								-- Discard the Custom Headers and acquire all of their children.
+							{"not", "itemID", 189507 },				-- Mount
+							{"not", "itemID", 186777 },				-- Tabard
 						},
 					}),
 				})),

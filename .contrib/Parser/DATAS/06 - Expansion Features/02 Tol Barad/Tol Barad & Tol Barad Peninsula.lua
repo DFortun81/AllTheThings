@@ -431,6 +431,7 @@ _.ExpansionFeatures =
 						},
 						["spellID"] = 28271,	-- Polymorph (Turtle)
 						["classes"] = { MAGE },
+						["f"] = RECIPES,
 					}),
 				}),
 				prof(MINING, {

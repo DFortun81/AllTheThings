@@ -194,6 +194,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 							{ 47.4, 61.1, ZERETH_MORTIS },
 							{ 48.3, 59.5, ZERETH_MORTIS },
 							{ 49.1, 57.5, ZERETH_MORTIS },
+							{ 50.4, 64.1, ZERETH_MORTIS },
 						},
 					}),
 					crit(8, {	-- Energized Firmament
