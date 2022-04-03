@@ -411,8 +411,7 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 119943 },	-- Golden Letter
 							["coord"] = { 42.9, 45.7, 739 },
 							["g"] = {
-								{ ["mountID"] = 229386 },	-- Huntmaster's Loyal Wolfhawk
-									i(142227, {		-- Huntmaster's Loyal Wolfhawk
+									i(142227, {	-- Huntmaster's Loyal Wolfhawk (MOUNT!)
 										["classes"] = { HUNTER },
 								}),
 							},
@@ -881,10 +880,10 @@ _.ExpansionFeatures =
 									--["spellID"] = 242155,	-- Hybrid Kinship
 									["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
 								}),
-								i(142228, {	-- Trust of a Dire Wolfhawk (MOUNT!)
+								i(142228, {	-- THuntmaster's Dire Wolfhawk (MOUNT!)
 									["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
 								}),
-								i(142226, {	-- Trust of a Fierce Wolfhawk (MOUNT!)
+								i(142226, {	-- Huntmaster's Fierce Wolfhawk (MOUNT!)
 									["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
 								}),
 							},

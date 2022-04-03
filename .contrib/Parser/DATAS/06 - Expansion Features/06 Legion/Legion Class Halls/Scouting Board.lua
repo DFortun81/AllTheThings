@@ -184,7 +184,7 @@ root("ExpansionFeatures", {
 								["sourceQuest"] = 44057,	-- A "Noble" Event
 								["coord"] = { 17.4, 31.4, SURAMAR },
 								["g"] = {
-									i(137573),	-- Reins of the Llothien Prowler
+									i(137573),	-- Llothien Prowler (MOUNT!)
 								},
 							}),
 							--[[q(45312, {	-- You Beat the Ball of Meat
@@ -340,6 +340,7 @@ root("ExpansionFeatures", {
 						un(REMOVED_FROM_GAME, i(139473)),	-- Vial of Poisoned Blood -> Darkheart Thicket: Into Darkheart Thicket -> Darkheart Thicket
 						un(REMOVED_FROM_GAME, i(139475)),	-- Waterlogged Letter -> Maw of Souls: Into the Maw of Souls -> Maw of Souls
 						-- Follower Equipments
+						i(139873),	-- Bottled Sanity
 						i(139808),	-- Cuiro of Abundant Happiness
 						i(139809),	-- Elixir of Plenty
 						i(152444),	-- Exalted Xenedar Hammer

@@ -120,6 +120,10 @@ root("Zones", {
 					["coord"] = { 39, 54.5, HIGHMOUNTAIN },
 					["questID"] = 44731,
 				}),
+				o(250541, {	-- Treasure Chest
+					["coord"] = { 52.5, 66.5, HIGHMOUNTAIN },
+					["questID"] = 42453,
+				}),
 				o(243773, {	-- Treasure Chest
 					["questID"] = 39503,
 					["coord"] = { 47.6, 44.0, HIGHMOUNTAIN },

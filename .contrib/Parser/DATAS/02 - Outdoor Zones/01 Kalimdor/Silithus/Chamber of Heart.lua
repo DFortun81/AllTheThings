@@ -205,7 +205,11 @@ root("Zones", {
 							["provider"] = { "n", 154500 },	-- Left
 							["coord"] = { 54.5, 72.5, THE_VEILED_STAIR },
 							["sourceQuest"] = 56186,	-- Spies to the Left and Right
-							["u"] = REMOVED_FROM_GAME,	-- (removed with 8.3)
+							["timeline"] = {
+								"added 8.2.5.31921",
+								"removed 8.3",	-- (removed with 8.3)
+								"added 9.2",	-- Reported available again 2022-03-21
+							},
 						}),
 						q(55407, {	-- Calming the Spine
 							["provider"] = { "n", 151695 },	-- Spiritwalker Ebonhorn
@@ -393,7 +397,11 @@ root("Zones", {
 							["provider"] = { "n", 154870 },	-- Slain Blacktalon Lookout
 							["coord"] = { 47.0, 69.2, DEADWIND_PASS },
 							["sourceQuest"] = 56188,	-- To the Catacombs!
-							["u"] = REMOVED_FROM_GAME,	-- (removed with 8.3)
+							["timeline"] = {
+								"added 8.2.5.31921",
+								"removed 8.3",	-- (removed with 8.3)
+								"added 9.2",	-- Reported available again 2022-03-21
+							},
 						}),
 						q(58634, {	-- Opening the Gateway
 							["coord"] = { 46.1, 64.0, REPAIRED_CHAMBER_OF_HEART },
@@ -536,7 +544,11 @@ root("Zones", {
 							["provider"] = { "n", 155191 },	-- Potion of Mental Clarity
 							["coord"] = { 69.5, 16.5, 46 },	-- Karazhan Catacombs
 							["sourceQuest"] = 56189,	-- On the Trail of the Black Prince
-							["u"] = REMOVED_FROM_GAME,	-- (removed with 8.3)
+							["timeline"] = {
+								"added 8.2.5.31921",
+								"removed 8.3",	-- (removed with 8.3)
+								"added 9.2",	-- Reported available again 2022-03-21
+							},
 						}),
 						q(55394, {	-- Shards of Emerald
 							["provider"] = { "n", 151693 },	-- Merithra of the Dream
@@ -550,7 +562,11 @@ root("Zones", {
 								56185,	-- Whispers of N'zoth (A)
 								56267,	-- Whispers of N'zoth (H)
 							},
-							["timeline"] = { "added 8.2.5", "removed 8.3", "added 9.2" },
+							["timeline"] = {
+								"added 8.2.5.31921",
+								"removed 8.3",	-- (removed with 8.3)
+								"added 9.2",	-- Reported available again 2022-03-21
+							},
 						}),
 						q(57393, {	-- Stepping Through the Darkness (Rank 6)
 							["coord"] = { 46.1, 64.0, REPAIRED_CHAMBER_OF_HEART },
@@ -630,7 +646,11 @@ root("Zones", {
 							["provider"] = { "n", 154874 },	-- Blacktalon Watcher
 							["coord"] = { 47.8, 68.8, EASTERN_KINGDOMS },	-- Burning Steppes, outside BWD
 							["sourceQuest"] = 56187,	-- Black Winged Shadow
-							["u"] = REMOVED_FROM_GAME,	-- (removed with 8.3)
+							["timeline"] = {
+								"added 8.2.5.31921",
+								"removed 8.3",	-- (removed with 8.3)
+								"added 9.2",	-- Reported available again 2022-03-21
+							},
 						}),
 						q(56263, {	-- Unlocking the Power (A)
 							["provider"] = { "n", 154464 },	-- Earthen Guardian
@@ -697,7 +717,11 @@ root("Zones", {
 							["sourceQuest"] = 57002,	-- Old Soldier
 							["description"] = "This quest requires finishing the War Campaign and defeating Azshara on any difficulty.",
 							["races"] = ALLIANCE_ONLY,
-							["timeline"] = { "added 8.2.5", "removed 8.3", "added 9.2" },
+							["timeline"] = {
+								"added 8.2.5.31921",
+								"removed 8.3",	-- (removed with 8.3)
+								"added 9.2",	-- Reported available again 2022-03-21
+							},
 						}),
 						q(56267, {	-- Whispers of N'zoth (H)
 							["provider"] = { "n", 154465 },	-- Earthen Guardian
@@ -708,13 +732,21 @@ root("Zones", {
 							},
 							["description"] = "This quest requires finishing the War Campaign and defeating Azshara on any difficulty.",
 							["races"] = HORDE_ONLY,
-							["timeline"] = { "added 8.2.5", "removed 8.3", "added 9.2" },
+							["timeline"] = {
+								"added 8.2.5.31921",
+								"removed 8.3",	-- (removed with 8.3)
+								"added 9.2",	-- Reported available again 2022-03-21
+							},
 						}),
 						q(56504, {	-- Wrathion's Journal
 							["provider"] = { "n", 151964 },	-- Spiritwalker Ebonhorn
 							["coord"] = { 46.3, 67.2, REPAIRED_CHAMBER_OF_HEART },
 							["sourceQuest"] = 56190,	-- Save Ebonhorn
-							["u"] = REMOVED_FROM_GAME,	-- (removed with 8.3)
+							["timeline"] = {
+								"added 8.2.5.31921",
+								"removed 8.3",	-- (removed with 8.3)
+								"added 9.2",	-- Reported available again 2022-03-21
+							},
 						}),
 					}),
 					n(VENDORS, {

@@ -502,6 +502,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					recipe(364697),	-- Microlicid
 					recipe(364679),	-- Multichicken
 					recipe(364689),	-- Omnipotential Core
+					recipe(364689),	-- Omnipotential Core
 					recipe(364691),	-- Prototickles
 					recipe(364690),	-- Resonant Echo
 					recipe(364698),	-- Shelly

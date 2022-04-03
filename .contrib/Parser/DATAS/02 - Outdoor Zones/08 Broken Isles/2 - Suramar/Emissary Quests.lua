@@ -59,7 +59,7 @@ _.Zones =
 					},
 					["g"] = {
 						i(152105, {	-- Nightfallen Cache
-							i(143764),	-- Leywoven Flying Carpet
+							i(143764),	-- Leywoven Flying Carpet (MOUNT!)
 							i(140495),	-- Torn Invitation [Fox Mount Quest]
 						}),
 						un(REMOVED_FROM_GAME, i(146900, {	-- Nightfallen Cache

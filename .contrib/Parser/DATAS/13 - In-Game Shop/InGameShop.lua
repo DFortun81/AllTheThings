@@ -10,11 +10,11 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE },{
 		mount(302362, {		-- Alabaster Thunderwing
 			["races"] = HORDE_ONLY,
 		}),
-		i(95341, {			-- Armored Bloodwing
+		i(95341, {			-- Armored Bloodwing (MOUNT!)
 			["u"] = REMOVED_FROM_GAME,
 		}),
 		i(54811),			-- Celestial Steed (MOUNT!)
-		i(109013, {			-- Dread Raven
+		i(109013, {			-- Dread Raven (MOUNT!)
 			["u"] = REMOVED_FROM_GAME,
 			["g"] = {
 				ach(8916, {		-- Collector's Edition: Dread Raven
@@ -22,49 +22,49 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE },{
 				}),
 			},
 		}),
-		i(97989),			-- Enchanted Fey Dragon
-		i(153540, {			-- Gilded Ravasaur
+		i(97989),			-- Enchanted Fey Dragon (MOUNT!)
+		i(153540, {			-- Gilded Ravasaur (MOUNT!)
 			["races"] = HORDE_ONLY,
 			["g"] = {
 				ach(12230),	-- Collector's Edition: Gilded Ravasaur
 			},
 		}),
-		i(112327, {			-- Grinning Reaver
+		i(112327, {			-- Grinning Reaver (MOUNT!)
 			["u"] = REMOVED_FROM_GAME,
 		}),
-		i(78924),			-- Heart of the Aspects
+		i(78924),			-- Heart of the Aspects (MOUNT!)
 		i(166774),			-- Hogrus, Swine of Good Fortune
-		i(128425, {			-- Illidari Felstalker
+		i(128425, {			-- Illidari Felstalker (MOUNT!)
 			ach(10320),	-- Collector's Edition: Illidari Felstalker
 		}),
-		i(85870, {			-- Imperial Quilen
+		i(85870, {			-- Imperial Quilen (MOUNT!)
 			ach(6849),	-- Collector's Edition: Imperial Quilen
 		}),
-		i(107951),			-- Iron Skyreaver
+		i(107951),			-- Iron Skyreaver (MOUNT!)
 		mount(308087),		-- Lucky Yun
-		i(147901),			-- Luminous Starseeker
-		i(122469),			-- Mystic Runesaber
+		i(147901),			-- Luminous Starseeker (MOUNT!)
+		i(122469),			-- Mystic Runesaber (MOUNT!)
 		mount(347812),		-- Sapphire Skyblazer
-		i(153539, {			-- Seabraid Stallion
+		i(153539, {			-- Seabraid Stallion (MOUNT!)
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
 				ach(12229),	-- Collector's Edition: Seabraid Stallion
 			},
 		}),
-		i(156564),			-- Shu-zen, the Divine Sentinel
+		i(156564),			-- Shu-zen, the Divine Sentinel (MOUNT!)
 		mount(308078),		-- Squeakers, the Trickster
 		mount(326390),		-- Steamscale Incinerator
 		mount(317177),		-- Sunwarmed Purrkin
-		i(92724, {			-- Swift Windsteed
+		i(92724, {			-- Swift Windsteed (MOUNT!)
 			["u"] = REMOVED_FROM_GAME,
 		}),
 		i(166776),			-- Sylverian Dreamer
 		i(160589),			-- The Dreadwake
 		i(166775),			-- Vulpine Familiar
-		i(112326, {			-- Warforged Nightmare
+		i(112326, {			-- Warforged Nightmare (MOUNT!)
 			i(112324),		-- Nightmarish Hitching Post (TOY!)
 		}),
-		i(69846),			-- Winged Guardian
+		i(69846),			-- Winged Guardian (MOUNT!)
 		mount(359317),		-- Wen Lo, the River's Edge
 	}),
 	filter(BATTLE_PETS, {

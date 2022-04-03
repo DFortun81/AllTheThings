@@ -182,7 +182,7 @@ root("Instances", tier(CATA_TIER, {
 					STORMWIND_CITY,
 					ORGRIMMAR,
 					86,		-- Orgrimmar: The Drag
-					129,	-- The Nexus
+					300,	-- The Nexus (phased)
 					MOUNT_HYJAL,
 					BOREAN_TUNDRA,
 				},
@@ -650,7 +650,7 @@ root("Instances", tier(CATA_TIER, {
 							HELM_CONQ,	-- Crown of the Fiery Conqueror
 							HELM_PROT,	-- Crown of the Fiery Protector
 							HELM_VANQ,	-- Crown of the Fiery Vanquisher
-							i(69224),	-- Smoldering Egg of Millagazor (MOUNT!)
+							i(69224),	-- Pureblood Fire Hawk (MOUNT!)
 							i(175158, {	-- Flames of Fury (Bag of Tricks addition)
 								["races"] = { VULPERA },
 								["questID"] = 59029,
@@ -948,7 +948,7 @@ root("Instances", tier(CATA_TIER, {
 							i(71677),	-- Crown of the Fiery Conqueror
 							i(71684),	-- Crown of the Fiery Protector
 							i(71670),	-- Crown of the Fiery Vanquisher
-							i(69224),	-- Smoldering Egg of Millagazor (MOUNT!)
+							i(69224),	-- Pureblood Fire Hawk (MOUNT!)
 							i(175158, {	-- Flames of Fury (Bag of Tricks addition)
 								["races"] = { VULPERA },
 								["questID"] = 59029,

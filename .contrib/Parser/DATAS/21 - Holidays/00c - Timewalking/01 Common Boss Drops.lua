@@ -8,7 +8,7 @@ local InfiniteTimereaver =
 		n(COMMON_BOSS_DROPS, {
 			["u"] = TIMEWALKING,
 			["g"] = {
-				i(133543, {	-- Reins of the Infinite Timereaver
+				i(133543, {	-- Infinite Timereaver (MOUNT!)
 					["crs"] = TIMEWALKING_DUNGEON_CREATURE_IDS,
 					["u"] = TIMEWALKING,
 				}),
@@ -20,5 +20,5 @@ local InfiniteTimereaver =
 -- Post Processors
 table.insert(POST_PROCESSING_FUNCTIONS, function()
 	print("Assigning mapID and creatureIDs for Infinite Timereaver...");
-	_.Holidays = InfiniteTimereaver;
+	root("Holidays", InfiniteTimereaver);
 end);

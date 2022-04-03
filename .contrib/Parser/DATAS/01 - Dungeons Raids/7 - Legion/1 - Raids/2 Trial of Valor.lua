@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(LEGION_TIER, {
+root("Instances", tier(LEGION_TIER, {
 	inst(861, {	-- Trial of Valor
 		["isRaid"] = true,
 		["coord"] = { 70.4, 69.4, STORMHEIM },
@@ -597,12 +597,15 @@ _.Instances = { tier(LEGION_TIER, {
 			}),
 		},
 	}),
-})};
+}));
 
-_.HiddenQuestTriggers = {
-	q(45235),	-- learning Ensemble: Funerary Plate of the Chosen Dead (143519)
-	q(45234),	-- learning Ensemble: Funerary Plate of the Chosen Dead (normal)
-	
-	q(45230),	-- Chains of the Chosen Dead (Normal)
-	q(45231),	-- Chains of the Chosen Dead (Heroic)
-};
+root("HiddenQuestTriggers", tier(LEGION_TIER, {
+	inst(861, {	-- Trial of Valor
+		q(45235),	-- learning Ensemble: Funerary Plate of the Chosen Dead (143519)
+		q(45234),	-- learning Ensemble: Funerary Plate of the Chosen Dead (normal)
+
+		q(45226),	-- Garb of the Chosen Dead (Normal)
+		q(45230),	-- Chains of the Chosen Dead (Normal)
+		q(45231),	-- Chains of the Chosen Dead (Heroic)
+	}),
+}));

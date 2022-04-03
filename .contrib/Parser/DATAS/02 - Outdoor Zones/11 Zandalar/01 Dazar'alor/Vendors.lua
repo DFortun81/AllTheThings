@@ -1042,11 +1042,13 @@ _.Zones =
 							["spellID"] = 277778,	-- Hex(Zandalari Tendonripper)
 							["classes"] = { SHAMAN },
 							["cost"] = 18000000,	-- 1,800g
+							["f"] = RECIPES,
 						}),
 						i(162625, {	-- Tome of Polymorph: Direhorn
-							["spellID"] = 277787,	-- Polymorph(Direhorn)
+							["recipeID"] = 277787,	-- Polymorph(Direhorn)
 							["classes"] = { MAGE },
 							["cost"] = 18000000,	-- 1,800g
+							["f"] = RECIPES,
 						}),
 						i(161524, {	-- Torcali's Grips of the Bounty
 							["cost"] = 19000000,	-- 1,900g
@@ -1098,8 +1100,8 @@ _.Zones =
 				n(122463, {	-- Plen <Unusual and Remarkable Wares>
 					["coord"] = { 47.7, 91.6, DAZARALOR },
 					["g"] = {
-						i(63044),	-- Reins of the Brown Riding Camel
-						i(63045),	-- Reins of the Tan Riding Camel
+						i(63044),	-- Brown Riding Camel (MOUNT!)
+						i(63045),	-- Tan Riding Camel (MOUNT!)
 					},
 				}),
 				n(148924, {	-- Provisioner Mukra

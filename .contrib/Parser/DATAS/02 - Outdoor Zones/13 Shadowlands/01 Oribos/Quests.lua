@@ -425,6 +425,21 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["coord"] = { 59.9, 56.1, ORIBOS },
 				["isBreadcrumb"] = true,
 			})),
+			q(65260, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- A Long Walk
+				["sourceQuests"] = { 65250 },	-- Prisoner of Interest
+				["provider"] = { "n", 183822 },	-- Uther
+				["coord"] = { 52.2, 40.5, ORIBOS },
+			})),
+			q(65263, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- The Fate of Sylvanas
+				["sourceQuests"] = { 65260 },	-- A Long Walk
+				["provider"] = { "n", 183830 },	-- Arbiter Pelagos
+				["coord"] = { 55, 49.2, ORIBOS },
+			})),
+			q(65297, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Penance and Renewal
+				["sourceQuests"] = { 65263 },	-- The Fate of Sylvanas
+				["provider"] = { "n", 183830 },	-- Arbiter Pelagos
+				["coord"] = { 55, 49.2, ORIBOS },
+			})),
 			q(51355, {	-- Secretest Fish
 				["description"] = "Can be found in Secret Fish Bubbles anywhere in Shadowlands zones. You must be wearing the Secret Fish Goggles to see/loot the bubbles.",
 				["provider"] = { "i", 158932 },	-- Secretest Fish
@@ -1140,58 +1155,38 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 	}),
 })));
 
-root("HiddenQuestTriggers", {
-	q(64254),	-- triggers when using the second 9.1 skip (the one to Korthia) - returns info for "Supplies from Death's Advance" paragon quest, but text/reward are for Court of Harvesters
-	q(64514),	-- triggered while doing The Battle of Ardenweald scenario
-	q(64515),	-- triggered while doing The Battle of Ardenweald scenario
-	q(63416),	-- triggers when accepting the first of your 'Zone Meta Quests' on a Skip Character
-	q(64782),	-- Occurred when joining Night Fae/Kyrian in the initial Thread of Fate quest 62000
-	q(62370),	-- Swapping Cov to NF with NF already R40
-	q(62384),	-- Swapping Cov to NF with NF already R40
-	-- 9.1.5 Swapping at R80. Flag/Unflag
-	q(65076),	-- Swapping Cov to Kyrian at R80
-	q(65077),	-- Swapping Cov to Venthyr at R80
-	q(65078),	-- Swapping Cov to NF at R80
-	q(65079),	-- Swapping Cov to Necrolord at R80
-	--q(62370),	-- Returning to the Venthyr before hitting rank 80 with anyone gave "Prove Your Worth" which flagged two quests as complete that aren't in ATT
-	--q(62380),	-- Returning to the Venthyr before hitting rank 80 with anyone gave "Prove Your Worth" which flagged two quests as complete that aren't in ATT
-	-- 9.1.5?
-	q(62923),	-- Swapped to Venthyr from Necrolord at R80? Probably a old hqt
-	q(64848),	-- Choosing Torghast as leveling
-	q(65030),	-- accepting/completing 'Battlegrounds' [65031]
-	q(65755),	-- triggered with 'A New Deal', selected 'Cosmic Gladiator's Resonator'
-	q(65617),	-- triggered after 'A New Deal', potentially Engineer teleporter unlock to Zereth Mortis
-	--q(66047),	-- Solo Shuffle Completion?
-});
+root("HiddenQuestTriggers", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
+	m(ORIBOS, {
+		q(64254),	-- triggers when using the second 9.1 skip (the one to Korthia) - returns info for "Supplies from Death's Advance" paragon quest, but text/reward are for Court of Harvesters
+		q(64514),	-- triggered while doing The Battle of Ardenweald scenario
+		q(64515),	-- triggered while doing The Battle of Ardenweald scenario
+		q(63416),	-- triggers when accepting the first of your 'Zone Meta Quests' on a Skip Character
+		q(64782),	-- Occurred when joining Night Fae/Kyrian in the initial Thread of Fate quest 62000
+		q(62370),	-- Swapping Cov to NF with NF already R40
+		q(62384),	-- Swapping Cov to NF with NF already R40
+		-- 9.1.5 Swapping at R80. Flag/Unflag
+		q(65076),	-- Swapping Cov to Kyrian at R80
+		q(65077),	-- Swapping Cov to Venthyr at R80
+		q(65078),	-- Swapping Cov to NF at R80
+		q(65079),	-- Swapping Cov to Necrolord at R80
+		--q(62370),	-- Returning to the Venthyr before hitting rank 80 with anyone gave "Prove Your Worth" which flagged two quests as complete that aren't in ATT
+		--q(62380),	-- Returning to the Venthyr before hitting rank 80 with anyone gave "Prove Your Worth" which flagged two quests as complete that aren't in ATT
+		-- 9.1.5?
+		q(62923),	-- Swapped to Venthyr from Necrolord at R80? Probably a old hqt
+		q(64848),	-- Choosing Torghast as leveling
+		q(65030),	-- accepting/completing 'Battlegrounds' [65031]
+		q(65755),	-- triggered with 'A New Deal', selected 'Cosmic Gladiator's Resonator'
+		--q(66047),	-- Solo Shuffle Completion?
+		q(65511),	-- Stay a while and listen with Vareesa Windrunner
+		q(65618),	-- Stay a while and listen with Bolvar
+		q(65612),	-- Stay a while and listen with Baine
+		q(65609),	-- Stay a while and listen with Lor'themar
+		q(65607),	-- Stay a while and listen with King Greymane
+		q(65614),	-- Stay a while and listen with Arbiter Pelagos
+	}),
+})));
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(60286),	-- A Token of Our Admiration
-		q(60157),	-- Answers from the Ascended
-		q(59084),	-- Bybeen Dreadweaver
-		q(59080),	-- Demons!
-		q(62072),	-- Familiar Faces
-		q(59086),	-- Manor of Minions
-		q(59082),	-- Next Realm!
-		q(62289, {	-- Observing Conflict
-			["_drop"] = { "g" },	-- drop anima trash
-		}),
-		q(59079),	-- Portal to Paradise
-		q(59081),	-- Scum Scrape
-		q(59083),	-- Sticky Getaway
-		q(62165),	-- Tal-Inara's Call
-		q(62166),	-- Tal-Inara's Call
-		q(59078),	-- The Hook
-		q(60499),	-- The Light's Retribution
-		q(59076),	-- The Minions of Mayhem
-		q(59077),	-- The Plan
-		q(59085),	-- Third Time is a Charm
-		q(60172),	-- This Quest is Temporary
-		q(60155),	-- To Open the Way
-		q(62077),	-- To the Chase
-		q(60138),	-- Unlocking the Gates
-		q(60559),	-- Unused
-	}),
 	tier(SL_TIER, {
 		n(ARMOR, {
 			filter(CLOTH, {

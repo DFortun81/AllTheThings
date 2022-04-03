@@ -197,13 +197,13 @@ _.Zones =
 						--["questID"] = ,
 						["isDaily"] = true,
 						["coord"] = { 20.6, 71.4, MECHAGON },
-						["cost"] = { "i", 169873, 1 },	-- 1xMechanized Supply Key
+						["cost"] = { { "i", 169873, 1 } },	-- 1x Mechanized Supply Key
 					}),
 					o(327597, {	-- Old Rusty Chest
 						--["questID"] = ,
 						["isDaily"] = true,
 						["coord"] = { 20.9, 80.3, MECHAGON },
-						["cost"] = { "i", 169218, 1 },	-- 1xOld Rusty Key
+						["cost"] = { { "i", 169218, 1 } },	-- 1x Old Rusty Key
 					}),
 				}),
 			}),

@@ -820,7 +820,8 @@ app.L = {
 		[101] = "Interface\\Icons\\Tracking_WildPet",							-- Battle Pets
 		[102] = app.asset("Category_ToyBox"),									-- Toy Box
 		[103] = "Interface\\Icons\\inv_inscription_weaponscroll03",				-- Illusions
-		[110] = app.asset("Category_Titles"),									-- Titles
+		[104] = app.asset("Interface_Quest_header"),							-- Quest Items
+ 		[110] = app.asset("Category_Titles"),									-- Titles
 		[111] = "Interface\\Icons\\Inv_glyph_minorwarrior",						-- Glyph
 		[113] = "Interface\\Icons\\INV_Misc_Bag_08",							-- Bag
 		[114] = "Interface\\Icons\\inv_blacksmith_leystonehoofplates_orange",	-- Mount Equipment
@@ -1290,6 +1291,20 @@ app.L = {
 		--
 	-- Sets
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",						-- Sets
+	-- Temp Sets for Creation Catalyst
+		[-1001] = "Interface\\Worldmap\\GlowSkull_64Green",
+		[-1002] = "Interface\\Worldmap\\GlowSkull_64Green",
+		[-1003] = "Interface\\Worldmap\\GlowSkull_64Blue",
+		[-1004] = "Interface\\Worldmap\\GlowSkull_64Blue",
+		[-1005] = "Interface\\Worldmap\\GlowSkull_64Purple",
+		[-1006] = "Interface\\Worldmap\\GlowSkull_64Purple",
+		[-1007] = "Interface\\Worldmap\\GlowSkull_64Red",
+		[-1008] = "Interface\\Worldmap\\GlowSkull_64Red",
+		[-1009] = "Interface\\Worldmap\\GlowSkull_64Grey",
+		[-1010] = "Interface\\Worldmap\\GlowSkull_64Grey",
+		[-1011] = "Interface\\Worldmap\\GlowSkull_64Grey",
+		[-1012] = "Interface\\Worldmap\\GlowSkull_64Grey",
+		[-1013] = "Interface\\Worldmap\\GlowSkull_64Grey",
 	-- Warrior order hall lore items
 		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
 		[-2201] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
@@ -1827,6 +1842,20 @@ app.L = {
 		[-988] = select(2, GetAchievementInfo(15402)),							-- Cypher of the First Ones
 	-- Sets
 		[-1000] = WARDROBE_SETS, 												-- Sets
+	-- Temp Sets for Creation Catalyst
+		[-1001] = "LFR",
+		[-1002] = "LFR Alternative",
+		[-1003] = "Normal",
+		[-1004] = "Normal Alternative",
+		[-1005] = "Heroic",
+		[-1006] = "Heroic Alternative",
+		[-1007] = "Mythic",
+		[-1008] = "Mythic Alternative",
+		[-1009] = "PvP 1",
+		[-1010] = "PvP 2",
+		[-1011] = "PvP 3",
+		[-1012] = "PvP 4",
+		[-1013] = "PvP 5",
 	-- Warrior order hall lore items
 		[-2200] = "Great Odyn and the Firelord",
 		[-2201] = "The Wanderer and the Serpent",

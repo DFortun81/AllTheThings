@@ -18,7 +18,7 @@ root("Holidays", d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
 				["coord"] = { 54.4, 38.8,  SHATTRATH_CITY },
 				["g"] = {
 				-- Mounts / Pets / Toys
-					i(129923, {	-- Reins of the Eclipse Dragonhawk
+					i(129923, {	-- Eclipse Dragonhawk (MOUNT!)
 						["cost"] = { { "c", 1166, 5000 }, },	-- 5,000x Timewarped Badge
 					}),
 					i(129929, {	-- Ever-Shifting Mirror (TOY!)

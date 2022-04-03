@@ -15,7 +15,7 @@ root("WorldEvents", n(THIRTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 			}),
 			q(47252, {	-- Interesting Things
 				["provider"] = { "i", 147880 },	-- A Slightly More Urgent Letter from the Timewalkers [Alliance]
-				["coord"] = { 84.6, 25.0, STORMWIND },
+				["coord"] = { 84.6, 25.0, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 			}),
@@ -27,7 +27,7 @@ root("WorldEvents", n(THIRTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 			}),
 			q(43471, {	-- The Historians
 				["provider"] = { "i", 139409 },	-- Letter from the Timewalker [Alliance]
-				["coord"] = { 84.6, 25.0, STORMWIND },
+				["coord"] = { 84.6, 25.0, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 			}),

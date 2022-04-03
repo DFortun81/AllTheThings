@@ -7,7 +7,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 		ach(12996, {	-- Toybox Tycoon (400)
 			i(163244),		-- Brutus
 			ach(11176, {	-- Remember to Share (300)
-				i(140500),		-- Mechanized Lumber Extractor
+				i(140500),		-- Mechanized Lumber Extractor (MOUNT!)
 			}),
 			ach(10354, {	-- Crashin' Thrashin' Commander(200)
 				title(53),		-- Crashin' Thrashin'

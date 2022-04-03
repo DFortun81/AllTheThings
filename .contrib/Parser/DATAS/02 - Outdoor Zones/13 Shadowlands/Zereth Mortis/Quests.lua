@@ -618,6 +618,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["sourceQuests"] = { 65328 },	-- Arbiter in the Making
 				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 35, 64.8, ZERETH_MORTIS },
+				["isBreadcrumb"] = true,
 			}),
 			q(64723, {	-- Restoration Porject
 				["sourceQuests"] = { 64879 },	-- A Monumental Discovery
@@ -739,6 +740,18 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				},
 			}),
 			-- Story Continues in Oribos, End
+			-- After chapter 7
+			q(65249, {	-- The Jailer's Defeat
+				["sourceQuests"] = { 65329 },	-- Safe Haven
+				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
+				["coord"] = { 35, 64.8, ZERETH_MORTIS },
+			}),
+			q(65250, {	-- Prisoner of Interest
+				["sourceQuests"] = { 65249 },	-- The Jailer's Defeat
+				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
+				["coord"] = { 35, 64.8, ZERETH_MORTIS },
+			}),
+			-- End
 			-- Al'dalil/Cartel Xy Side Quest (Chap 1)
 			q(64771, {	-- Enlightened Exodus
 				["sourceQuests"] = { 64958 },	-- The Forces Gather
@@ -947,6 +960,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					}),
 				},
 			})),
+			q(66383, {	-- Legendary Assistance
+				-- ["sourceQuests"] = { },	-- ??
+				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
+				["coord"] = { 35, 64.8, ZERETH_MORTIS },
+				["minReputation"] = { 2478, HONORED },	-- Assumption
+			}),
 		}),
 		n(QUESTS, sharedData({ ["isDaily"] = true }, {
 			-- Confirmed
@@ -1168,7 +1187,6 @@ root("HiddenQuestTriggers", m(SHADOWLANDS, {
 		q(65378),	-- Starting Secret Teleport System at Gravid Repose
 
 		q(65343),	-- Camber Alcove Arrangement at Gravid Repose
-		q(65346),	-- Dormant Alcove Arrangement at Gravid Repose
 		q(65347),	-- Fulgore Alcove Arrangement at Gravid Repose
 		q(65344),	-- Repertory Alcove Arrangement at Gravid Repose
 		q(65345),	-- Rondure Alcove Arrangement at Gravid Repose

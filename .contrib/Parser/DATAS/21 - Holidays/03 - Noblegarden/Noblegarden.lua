@@ -3,7 +3,7 @@
 --------------------------------------------
 local NOBLEGARDEN_VENDOR_GROUPS = {
 	-- Mounts
-	i(72145, {	-- Swift Springstrider
+	i(72145, {	-- Swift Springstrider (MOUNT!)
 		["timeline"] = { "added 4.3.0.15005" },
 		["cost"] = { { "i", 44791, 500 } },	-- 500x Noblegarden Chocolate
 	}),
@@ -83,6 +83,7 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 		["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
 		["spellID"] = 61721,	-- Polymorph (Rabbit)
 		["classes"] = { MAGE },
+		["f"] = RECIPES,
 	}),
 };
 root("Holidays", applyholiday(NOBLEGARDEN, {
@@ -91,6 +92,8 @@ root("Holidays", applyholiday(NOBLEGARDEN, {
 	-- #else
 	["holidayID"] = 235477,
 	-- #endif
+	["description"] = "Start: 04/18 at 10:00 AM\nEnd: 04/25 at 10:00 AM",
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. NOBLEGARDEN .. [[, 4, 18, 4, 25); end]],
 	["groups"] = {
 		o(113768, {	-- Brightly Colored Egg
 			-- #if AFTER WRATH
@@ -132,7 +135,7 @@ root("Holidays", applyholiday(NOBLEGARDEN, {
 				i(44800, {	-- Spring Robes
 					["timeline"] = { "added 3.1.0.9733" },
 				}),
-				i(72145, {	-- Swift Springstrider
+				i(72145, {	-- Swift Springstrider (MOUNT!)
 					["timeline"] = { "added 4.3.0.15005" },
 				}),
 

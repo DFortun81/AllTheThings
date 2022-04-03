@@ -93,7 +93,7 @@ _.Zones =
 							["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
 						}),
 						i(89087),	-- Poisoncrafter's Kilt
-						i(85262, {	-- Reins of the Amber Scorpion
+						i(85262, {	-- Amber Scorpion (MOUNT!)
 							["cost"] = 100000000,	-- 10,000g
 						}),
 						i(89646),	-- Runoff Wristguards

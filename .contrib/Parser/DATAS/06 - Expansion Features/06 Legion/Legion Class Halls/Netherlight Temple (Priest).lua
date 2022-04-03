@@ -652,8 +652,7 @@ _.ExpansionFeatures =
 							["maps"] = { 839 },	-- THe Maelstrom
 							["lvl"] = 110,
 							["g"] = {
-								mount(229377),	-- High Priest's Lightsworn Seeker
-								i(142224, {		-- High Priest's Lightsworn Seeker
+								i(142224, {	-- High Priest's Lightsworn Seeker (MOUNT!)
 									["classes"] = { PRIEST },
 								}),
 							},

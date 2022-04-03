@@ -11,8 +11,8 @@ _.Zones =
 					["coord"] = { 48.2, 21.8, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(73838),	-- Mountain Horse
-						i(73839),	-- Swift Mountain Horse
+						i(73838),	-- Mountain Horse (MOUNT!)
+						i(73839),	-- Swift Mountain Horse (MOUNT!)
 					},
 				}),
 				n(4168,  {	-- Elynna <Tailoring Supplies>

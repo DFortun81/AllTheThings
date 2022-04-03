@@ -949,6 +949,7 @@ for key,value in pairs({
 	[142122] = "Steckbrief",	-- Wanted Poster
 	[142127] = "Rin'jis Geheimnis",	-- Rin'ji's Secret
 	[142151] = "Versiegeltes Fass",	-- Sealed Barrel
+	[142184] = "Truhe des Kapitäns",	-- Captain's Chest
 	[142195] = "Schlachtplan der Waldpfoten",	-- Woodpaw Battle Map
 	[142343] = "Podest von Uldum",	-- Uldum Pedestal
 	[142344] = "Künstlicher Extrapolator",	-- Artificial Extrapolator
@@ -2071,6 +2072,7 @@ for key,value in pairs({
 	[250108] = "Kleine Schatztruhe",	-- Small Treasure Chest
 	[250109] = "Schatztruhe",	-- Treasure Chest
 	[250383] = "Mondschattenrelikt",	-- Moonshade Relic
+	[250541] = "Schatztruhe",	-- Treasure Chest
 	[250671] = "Notizen über die Verschleierte Hand",	-- Notes on the Veiled Hand
 	[250984] = "Kleine Schatztruhe",	-- Small Treasure Chest
 	[250985] = "Schatztruhe",	-- Treasure Chest
@@ -2593,6 +2595,7 @@ for key,value in pairs({
 	[327591] = "Erhaltenes Tagebuch",	-- Preserved Journal
 	[327592] = "Verzaubertes Schloss",	-- Enchanted Lock
 	[327596] = "Zerbrochener abyssischer Fokus",	-- Broken Abyssal Focus
+	[327597] = "Alte rostige Truhe",	-- Old Rusty Chest
 	[327669] = "Maßvoller Bierlementar",	-- Contained Alemental
 	[328343] = "Düsterbräuzahnrad",	-- Direbrew Cog
 	[328413] = "Totem der Ho-zen",	-- Hozen Totem
@@ -2978,6 +2981,7 @@ for key,value in pairs({
 	[375067] = "Glissandische Truhe",	-- Glissandian Cache
 	[375068] = "Fugalische Truhe",	-- Fugueal Cache
 	[375069] = "Kantarische Truhe",	-- Cantaric Cache
+	[375191] = "Anordnung des Inaktiven Alkovens",	-- Dormant Alcove Arrangement
 	[375270] = "Protoformbauplan",	-- Protoform Schematic
 	[375272] = "Schlundgebundene Truhe",	-- Mawsworn Cache
 	[375281] = "Gestohlenes Relikt",	-- Stolen Relic
@@ -3057,7 +3061,7 @@ for key,value in pairs({
 	[375985] = "Firim im Exil, Teil 5",	-- Firim in Exile, Part 5
 	[375986] = "Firim im Exil, Teil 6",	-- Firim in Exile, Part 6
 	[375987] = "Firim im Exil, Teil 7",	-- Firim in Exile, Part 7
-	--TODO: [375988] = "Firim in Exile, Epilogue",	-- Firim in Exile, Epilogue
+	[375988] = "Firim im Exil, Epilog",	-- Firim in Exile, Epilogue
 	[376041] = "Verhüllte Chiffrentruhe",	-- Shrouded Cypher Cache
 	[9962198] = "Behelfsmäßige Schlammlache des Ausgestoßenen",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot

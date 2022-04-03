@@ -181,7 +181,7 @@ _.Zones =
 						{ 36.58, 85.67, TOWNLONG_STEPPES },
 					},
 					["g"] = {
-						i(94230),	-- Reins of the Amber Primordial Direhorn
+						i(94230),	-- Amber Primordial Direhorn (MOUNT!)
 					},
 				}),
 				n(69842, {	-- Zandalari Warbringer (Jade)
@@ -192,7 +192,7 @@ _.Zones =
 						{ 36.58, 85.67, TOWNLONG_STEPPES },
 					},
 					["g"] = {
-						i(94231),	-- Reins of the Jade Primordial Direhorn
+						i(94231),	-- Jade Primordial Direhorn (MOUNT!)
 					},
 				}),
 				n(69769, {	-- Zandalari Warbringer (Slate)
@@ -204,7 +204,7 @@ _.Zones =
 						{ 36.58, 85.67, TOWNLONG_STEPPES },
 					},
 					["g"] = {
-						i(94229),	-- Reins of the Slate Primordial Direhorn
+						i(94229),	-- Slate Primordial Direhorn (MOUNT!)
 					},
 				}),
 			}),

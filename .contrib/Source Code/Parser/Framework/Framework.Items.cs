@@ -4,7 +4,6 @@ using System.Linq;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
-using NLua;
 using System.Collections.Concurrent;
 
 namespace ATT

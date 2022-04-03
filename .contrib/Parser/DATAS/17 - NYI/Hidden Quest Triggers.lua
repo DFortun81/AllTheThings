@@ -858,7 +858,7 @@ root("HiddenQuestTriggers", {
 		-- NYI VERSIONS OF QUESTS WHICH ARE COMPLETED TOGETHER WITH IMPLEMENTED VERSION OF THESE QUESTS
 		-- TEMPORARY SOLUTION AS HQT FOR NOW
 		q(9749),	-- They're Alive! Maybe... - completed with quest 9670
-		
+
 		q(10815),	-- The Journal of Val'zareq: Portends of War - completed with quest 10793
 		q(14411),	-- The Wilds of Feralas - completed with quest 14410 & 26589
 		q(14414),	-- The Wilds of Feralas - completed with quest 14410 & 26589
@@ -1199,6 +1199,8 @@ root("HiddenQuestTriggers", {
 		q(42648),	-- triggered after getting Extra Thick Mojo in Durotar when on the Legion intro quest To Be Prepared
 		q(45341),	-- After obtaining the Chef's Hat toy
 		q(47285),	-- Triggers together with obtaining Equipment Blueprint: Tuskarr Fishing Net
+		q(42530),	-- FLAG - Portal - Alchemy Room (Using 138030)
+		q(42527),	-- FLAG - Portal - Guard Station (Using 138027)
 
 		-- Artifact Power questlines
 		q(45851),	-- Dual Boss Trait Complete - triggered after bm hunter artifact power questline
@@ -1607,6 +1609,7 @@ root("HiddenQuestTriggers", {
 		q(59072),	-- speaking to Tasha Riley and joining the Council of Chaos in the BRD pet battle dungeon
 		q(47866),	-- triggered after step 8 of Lucid Nightmare secret
 		q(57032),	-- triggered the first time i completed a +4 mythic and looted Converging Lens of the Focusing Iris (Rank 1)
+		q(62688),	-- Crafted Converging Lens of the Focusing Iris (Rank 1) from Focused Life Anima
 		q(57035),	-- triggered when completing a +4 mythic and looting Bursting Seed of Life (Rank 1)
 		q(57036),	-- triggered when completing a +7 mythic and looting Magnifying Lens of the Focusing Iris (Rank 2)
 		q(57034),	-- triggered when completing a +7 mythic and looting Replicating Seed of Abundance (Rank 2)

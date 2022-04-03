@@ -1063,6 +1063,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		n(ARMOR, {
 			filter(CLOTH, {
 				i(174795),	-- Expeditionary Cloth Mantle
+				i(175181),	-- Expeditionary Cloth Boots
+				i(175213),	-- Expeditionary Cloth Boots
 			}),
 			filter(LEATHER, {
 				i(175183),	-- Expeditionary Leather Boots

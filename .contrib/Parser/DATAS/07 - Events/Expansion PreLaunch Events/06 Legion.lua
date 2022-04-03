@@ -248,7 +248,7 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 7.0.3.22248", "
 				n(109912, {	-- Captive Wyrmtongue <Reluctant 'Quartermaster'>
 					["coords"] = {
 						{ 52.6, 57.6, ORGRIMMAR },
-						{ 41.2, 78.8, THE_STORMWIND },
+						{ 41.2, 78.8, STORMWIND_CITY },
 					},
 					["timeline"] = { "added 7.0.3.22290" },
 					["g"] = {

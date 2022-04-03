@@ -1934,7 +1934,7 @@ _.Zones =
 								i(116931, {	-- Flawless Windcrystal Leggings
 									["cost"] = 100000000,	-- 10,000g
 								}),
-								i(116768, {	-- Mosshide Riverwallow
+								i(116768, {	-- Mosshide Riverwallow (MOUNT!)
 									["cost"] = {
 										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
 										{ "g", 500000000 },	-- 50,000g
@@ -2011,7 +2011,7 @@ _.Zones =
 								i(116951, {	-- Flawless Shard-Covered Dreadcloak
 									["cost"] = 100000000,	-- 10,000g
 								}),
-								i(116768, {	-- Mosshide Riverwallow
+								i(116768, {	-- Mosshide Riverwallow (MOUNT!)
 									["cost"] = {
 										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
 										{ "g", 500000000 },	-- 50,000g
@@ -2082,7 +2082,7 @@ _.Zones =
 								i(115400, {	-- Flawless Windcrystal Bracers
 									["cost"] = 100000000,	-- 10,000g
 								}),
-								i(116768, {	-- Mosshide Riverwallow
+								i(116768, {	-- Mosshide Riverwallow (MOUNT!)
 									["cost"] = {
 										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
 										{ "g", 500000000 },	-- 50,000g
@@ -2150,7 +2150,7 @@ _.Zones =
 								i(115396, {	-- Flawless Windcrystal Hood
 									["cost"] = 100000000,	-- 10,000g
 								}),
-								i(116768, {	-- Mosshide Riverwallow
+								i(116768, {	-- Mosshide Riverwallow (MOUNT!)
 									["cost"] = {
 										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
 										{ "g", 500000000 },	-- 50,000g
@@ -2218,7 +2218,7 @@ _.Zones =
 								i(116947, {	-- Flawless Windcrystal Wraps
 									["cost"] = 100000000,	-- 10,000g
 								}),
-								i(116768, {	-- Mosshide Riverwallow
+								i(116768, {	-- Mosshide Riverwallow (MOUNT!)
 									["cost"] = {
 										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
 										{ "g", 500000000 },	-- 50,000g
@@ -2286,7 +2286,7 @@ _.Zones =
 								i(116939, {	-- Flawless Windcrystal Cord
 									["cost"] = 100000000,	-- 10,000g
 								}),
-								i(116768, {	-- Mosshide Riverwallow
+								i(116768, {	-- Mosshide Riverwallow (MOUNT!)
 									["cost"] = {
 										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
 										{ "g", 500000000 },	-- 50,000g
@@ -2300,7 +2300,7 @@ _.Zones =
 						n(128759, {	-- Dazzerian <Warspear Quartermaster>
 							["coord"] = { 49.2, 55.0, WARSPEAR },
 							["g"] = {
-								i(116775, {	-- Breezestrider Stallion
+								i(116775, {	-- Breezestrider Stallion (MOUNT!)
 									["cost"] = {
 										{ "g", 50000000 },		-- 5,000g
 										{ "i", 137642, 100 },	-- 100x Mark of Honor
@@ -3648,7 +3648,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
 								}),
-								i(116775, {	-- Breezestrider Stallion
+								i(116775, {	-- Breezestrider Stallion (MOUNT!)
 									["cost"] = {
 										{ "i", 137642, 100 },	-- 100x Mark of Honor
 										{ "g", 50000000 },	-- 5,000g

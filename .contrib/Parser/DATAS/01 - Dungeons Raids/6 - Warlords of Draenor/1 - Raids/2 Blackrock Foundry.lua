@@ -1876,7 +1876,7 @@ _.Instances = { tier(WOD_TIER, {
 							})),
 						},
 					}),
-					i(116660),	-- Ironhoof Destroyer
+					i(116660),	-- Ironhoof Destroyer (MOUNT!)
 					i(138809),	-- Illusion: Mark of Blackrock
 					i(122200),	-- Music Roll: A Siege of Worlds
 					i(113988),	-- Blackhand Doomstaff

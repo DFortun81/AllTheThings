@@ -541,8 +541,8 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 8.0.1.27101", "
 })));
 
 root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED},{
-	n(-520, {	-- Expansion Prelaunch Events
-		tier(BFA_TIER, {	-- Battle For Azeroth
+	tier(BFA_TIER, {	-- Battle For Azeroth
+		n(-520, {	-- Expansion Prelaunch Events
 			n(QUESTS, {
 				q(50882,{	-- All to Ash
 					["_drop"] = { "g" },

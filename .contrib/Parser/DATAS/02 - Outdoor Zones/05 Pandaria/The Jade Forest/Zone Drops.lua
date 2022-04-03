@@ -126,6 +126,7 @@ _.Zones =
 				i(120138, {	-- Tome of Polymorph: Monkey
 					["spellID"] = 161354,	-- Polymorph(Monkey)
 					["classes"] = { MAGE },
+					["f"] = RECIPES,
 					["crs"] = {
 						55470,	-- Hozen Groundpounder
 						57119,	-- Hozen Ravager
@@ -141,6 +142,7 @@ _.Zones =
 				i(120140, {	-- Tome of Polymorph: Porcupine
 					["spellID"] = 126819,	-- Polymorph(Porcupine)
 					["classes"] = { MAGE },
+					["f"] = RECIPES,
 					["crs"] = {
 						54896,	-- Glade Porcupine
 						59772,	-- Smoky Porcupine

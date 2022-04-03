@@ -81,6 +81,7 @@ _.Instances = { tier(BFA_TIER, {
 						i(159841, {	-- Tome of Hex: Skeletal Hatchling
 							["spellID"] = 269352,	-- Hex(Skeletal Hatchling)
 							["classes"] = { SHAMAN },
+							["f"] = RECIPES,
 						}),
 						i(168139),	-- Long Regal Sinew (LW reagent, has the highest drop chance from this boss)
 						i(160269),	-- Soulrending Claw
@@ -147,6 +148,7 @@ _.Instances = { tier(BFA_TIER, {
 							i(159841, {	-- Tome of Hex: Skeletal Hatchling
 								["spellID"] = 269352,	-- Hex(Skeletal Hatchling)
 								["classes"] = { SHAMAN },
+								["f"] = RECIPES,
 							}),
 							i(160269),	-- Soulrending Claw
 							i(158711),	-- Hallowed Ossein Longbow
@@ -237,6 +239,7 @@ _.Instances = { tier(BFA_TIER, {
 							i(159841, {	-- Tome of Hex: Skeletal Hatchling
 								["spellID"] = 269352,	-- Hex(Skeletal Hatchling)
 								["classes"] = { SHAMAN },
+								["f"] = RECIPES,
 							}),
 							i(160269),	-- Soulrending Claw
 							i(158711),	-- Hallowed Ossein Longbow

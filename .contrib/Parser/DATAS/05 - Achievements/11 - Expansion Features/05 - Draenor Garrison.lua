@@ -44,7 +44,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES, {
 		ach(9539,  {	-- Advanced Husbandry (A)
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
-				i(116668),	-- Armored Frostboar
+				i(116668),	-- Armored Frostboar (MOUNT!)
 				crit(1),	-- Maimclaw Killed
 				crit(2),	-- Beast-Lasher Killed
 				crit(3),	-- Moth of Wrath Killed
@@ -56,7 +56,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES, {
 		ach(9705,  {	-- Advanced Husbandry (H)
 			["races"] = HORDE_ONLY,
 			["g"] = {
-				i(116668),	-- Armored Frostboar
+				i(116668),	-- Armored Frostboar (MOUNT!)
 				crit(1),	-- Maimclaw Killed
 				crit(2),	-- Beast-Lasher Killed
 				crit(3),	-- Moth of Wrath Killed
@@ -590,7 +590,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES, {
 		ach(9540,  {	-- The Stable Master (A)
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
-				i(116781),	-- Armored Frostwolf
+				i(116781),	-- Armored Frostwolf (MOUNT!)
 				title(277),	-- Stable Master
 				crit(1),	-- Maimclaw Killed
 				crit(2),	-- Beast-Lasher Killed
@@ -603,7 +603,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES, {
 		ach(9706,  {	-- The Stable Master (H)
 			["races"] = HORDE_ONLY,
 			["g"] = {
-				i(116781),	-- Armored Frostwolf
+				i(116781),	-- Armored Frostwolf (MOUNT!)
 				title(277),	-- Stable Master
 				crit(1),	-- Maimclaw Killed
 				crit(2),	-- Beast-Lasher Killed

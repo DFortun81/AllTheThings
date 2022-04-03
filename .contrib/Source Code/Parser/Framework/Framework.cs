@@ -262,6 +262,13 @@ namespace ATT
         };
 
         /// <summary>
+        /// A Dictionary of key-ID types and the respective objects which contain the specified key which will be captured and output during Debug runs</para>
+        /// NOTE: Each key name/value may contain multiple sets of data due to duplication of individual listings
+        /// </summary>
+        public static Dictionary<string, SortedDictionary<decimal, List<Dictionary<string, object>>>> DebugDBs { get; }
+                = new Dictionary<string, SortedDictionary<decimal, List<Dictionary<string, object>>>>();
+
+        /// <summary>
         /// Merge the data into the database.
         /// </summary>
         /// <param name="listing">The listing.</param>
@@ -390,6 +397,21 @@ namespace ATT
                 if (data.TryGetValue("g", out groups))
                     // Parent field consolidation now that groups have been processed
                     ConsolidateHeirarchicalFields(data, groups);
+
+                if (DebugMode)
+                {
+                    // Capture references to specified Debug DB keys for Debug output
+                    foreach (KeyValuePair<string, SortedDictionary<decimal, List<Dictionary<string, object>>>> dbKeyDatas in DebugDBs)
+                    {
+                        if (data.TryGetValue(dbKeyDatas.Key, out decimal keyValue))
+                        {
+                            if (!dbKeyDatas.Value.TryGetValue(keyValue, out List<Dictionary<string, object>> keyValueValues))
+                                dbKeyDatas.Value[keyValue] = keyValueValues = new List<Dictionary<string, object>>();
+
+                            keyValueValues.Add(data);
+                        }
+                    }
+                }
             }
 
             return true;
@@ -433,6 +455,30 @@ namespace ATT
                 {
                     //Trace.WriteLine("Removed bad modID", data.GetString("itemID"));
                     modID = 0;
+                }
+                // filterID -- should be a positive value, or removed
+                else if (f <= 0)
+                {
+                    data.Remove("f");
+                }
+
+                // special handling for explicitly-defined filterIDs (i.e. not determined by Item data, but rather directly in Source)
+                switch ((Objects.Filters)f)
+                {
+                    case Objects.Filters.Recipe:
+                        // switch any existing spellID to recipeID
+                        var item = Items.Get(data);
+                        if (item.TryGetValue("spellID", out long spellID) && item.TryGetValue("itemID", out long itemID))
+                        {
+                            if (DebugMode)
+                                Trace.WriteLine($"Converted Item {itemID} spellID into recipeID {spellID} due to Recipe Filter");
+                            // remove the spellID if existing
+                            item.Remove("spellID");
+                            data.Remove("spellID");
+                            // set the recipeID in the item dictionary so it will merge back in later
+                            item["recipeID"] = spellID;
+                        }
+                        break;
                 }
             }
 
@@ -570,44 +616,32 @@ namespace ATT
                     }
                     ++index;
                 }
-                if (removed > 0)
-                {
-                    if (removed == 3)
-                    {
-                        // Black Market
-                        data["u"] = 9;
-                    }
-                    else if (removed == 1)
-                    {
-                        // Never Implemented
-                        data["u"] = 1;
-                    }
-                    else if (removed == 5)
-                    {
-                        // Timewalking re-implemented
-                        data["u"] = 1016;
-                    }
-                    else if (removed == 6)
-                    {
-                        // Future Unobtainable
-                        data["rwp"] = removedPatch.ConvertToVersionString(); // "Removed With Patch"
-                    }
-                    else if (removed == 4)
-                    {
-                        // Never Implemented
-                        data["u"] = 1;
-#if RETAIL
-                        // Merge all relevant Item Data into the data container.
-                        Items.Merge(data);
-                        Objects.AssignFactionID(data);
-                        return false;
-#endif
 
-                    }
-                    else
-                    {
-                        data["u"] = 2;  // Removed From Game
-                    }
+                // final removed type for the current parser patch
+                switch (removed)
+                {
+                    // Never Implemented
+                    case 1:
+                    // Never Implemented (after already being available previously)
+                    case 4:
+                        data["u"] = 1;
+                        break;
+                    // Black Market
+                    case 3:
+                        data["u"] = 9;
+                        break;
+                    // Timewalking re-implemented
+                    case 5:
+                        data["u"] = 1016;
+                        break;
+                    // Future Unobtainable
+                    case 6:
+                        data["rwp"] = removedPatch.ConvertToVersionString(); // "Removed With Patch"
+                        break;
+                    // Removed From Game
+                    case 2:
+                        data["u"] = 2;
+                        break;
                 }
             }
 
@@ -847,9 +881,23 @@ namespace ATT
                             case "g": break;
 
                             default:
-                                Trace.WriteLine($"Unknown 'cost' type: {c[0]}");
+                                Trace.WriteLine($"Warning: Unknown 'cost' type: {c[0]}{Environment.NewLine}-- {MiniJSON.Json.Serialize(data)}");
                                 break;
                         }
+                    }
+                }
+            }
+
+            // 'coord' is converted to 'coords' already
+            List<object> coordsList = null;
+            if (data.TryGetValue("coords", out coordsList))
+            {
+                // check if any coord is not 3 parameters: [ X, Y, MapID ]
+                foreach (object coord in coordsList)
+                {
+                    if (coord is List<object> coordList && coordList.Count != 3)
+                    {
+                        Trace.WriteLine($"Warning: 'coord/s' value is not fully qualified: {MiniJSON.Json.Serialize(coord)}{Environment.NewLine}-- {MiniJSON.Json.Serialize(data)}");
                     }
                 }
             }
@@ -857,8 +905,7 @@ namespace ATT
             // maps & coords
             if (data.TryGetValue("maps", out object maps) && maps is List<object> mapsList)
             {
-                // 'coord' is converted to 'coords' already
-                if (data.TryGetValue("coords", out object coords) && coords is List<object> coordsList)
+                if (coordsList != null)
                 {
                     bool redundant = false;
                     // check if any coord has a mapID which matches a maps mapID
@@ -877,7 +924,7 @@ namespace ATT
                         data.Remove("maps");
 
                     if (redundant)
-                        Trace.WriteLine($"Redundant 'maps' removed from: {MiniJSON.Json.Serialize(data)}");
+                        Trace.WriteLine($"Redundant 'maps' removed from: {MiniJSON.Json.Serialize(data)}{Environment.NewLine}-- {MiniJSON.Json.Serialize(data)}");
                 }
 
                 // single 'maps' for Achievements Sourced under 'Achievements', should be sourced in that specific map directly instead
@@ -3065,6 +3112,12 @@ namespace ATT
                     Items.ExportDebug(debugFolder.FullName);
                     Objects.ExportDebug(debugFolder.FullName);
                     Objects.ExportDB(debugFolder.FullName);
+
+                    // Export custom Debug DB data to the Debugging folder. (as JSON for simplicity)
+                    foreach (KeyValuePair<string, SortedDictionary<decimal, List<Dictionary<string, object>>>> dbKeyDatas in DebugDBs)
+                    {
+                        File.WriteAllText(Path.Combine(debugFolder.FullName, dbKeyDatas.Key + "_DebugDB.json"), MiniJSON.Json.Serialize(dbKeyDatas.Value));
+                    }
 
                     // Export the Category DB file.
                     if (CATEGORY_NAMES.Any())

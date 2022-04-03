@@ -141,7 +141,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 		ach(12104, {	-- And We're All Out of Mana Buns
 			title(367),		-- Demonslayer
 			ach(12103, {	-- ...And Chew Mana Buns
-				i(153041),		-- Bleakhoof Ruinstrider
+				i(153041),		-- Bleakhoof Ruinstrider (MOUNT!)
 			}),
 			ach(12102),		-- To Kill Demons...
 			ach(12101),		-- We Came Here For Two Reasons
@@ -411,10 +411,10 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 		}),
 		ach(14729, {		-- To All The Squirrels I Love Despite Their Scars
 			-- TODO map/coord/crs here instead of individual zone files
-			crit(1),		-- Felspider 39.0 47.6 ASZUNA
-			crit(2),		-- Tenebrous Snake 40.92 58.62 ASZUNA
-			crit(3),		-- Albatross Chick 30.0 35.6 ASZUNA
-			crit(4, {	-- Coastal Sandpiper 57.6 40.8 ASZUNA
+			crit(1),		-- Felspider 39.0 47.6 AZSUNA
+			crit(2),		-- Tenebrous Snake 40.92 58.62 AZSUNA
+			crit(3),		-- Albatross Chick 30.0 35.6 AZSUNA
+			crit(4, {	-- Coastal Sandpiper 57.6 40.8 AZSUNA
 				["crs"] = { 89380 },	-- Coastal Sandpiper
 				["maps"] = {
 					AZSUNA,
@@ -437,7 +437,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 		ach(11260),		-- Treasures of Suramar
 		ach(11258),		-- Treasures of Val'sharah
 		ach(11066, {	-- Underbelly Tycoon
-			i(138387),		-- Ratstallion
+			i(138387),		-- Ratstallion (MOUNT!)
 		}),
 		ach(11178),		-- Wake the Dragon
 	}),

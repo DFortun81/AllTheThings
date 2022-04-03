@@ -13,9 +13,9 @@ _.ExpansionFeatures =
 					["description"] = "This is the quest chain for obtaining an epic Quel'Delar weapon.\n\nNOTE: A Warrior can learn all of the weapon appearances.",
 					["maps"] = {
 						NORTHREND_DALARAN,
-						183,	-- The Forge of Souls
-						184,	-- Pit of Saron
-						185,	-- Halls of Reflection
+						THE_FORGE_OF_SOULS,
+						PIT_OF_SARON,
+						HALLS_OF_REFLECTION,
 						ISLE_OF_QUELDANAS,
 					},
 					["lvl"] = 67,	-- Requirement for the Batterd Hilt itself.
@@ -2498,11 +2498,6 @@ _.ExpansionFeatures =
 							["cost"] = { { "c", 241, 100 }, },	-- 100 Champion's Seal
 						}),
 						i(46752, {	-- Swift Gray Steed (MOUNT!)
-							["races"] = { HUMAN },
-							["cost"] = { { "c", 241, 5 }, },	-- 5 Champion's Seal
-						}),
-						i(46758, {	-- Swift Grey Steed
-							["races"] = exclude(HUMAN, ALLIANCE_ONLY),
 							["cost"] = { { "c", 241, 5 }, },	-- 5 Champion's Seal
 						}),
 						i(44974, {	-- Elwynn Lamb Pet
@@ -2857,11 +2852,6 @@ _.ExpansionFeatures =
 						}),
 						i(45577),	-- Ironforge Tabard
 						i(46748, {	-- Swift Violet Ram (MOUNT!)
-							["races"] = { DWARF },
-							["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
-						}),
-						i(46762, {	-- Swift Violet Ram
-							["races"] = exclude(DWARF, ALLIANCE_ONLY),
 							["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
 						}),
 					},
@@ -2908,7 +2898,6 @@ _.ExpansionFeatures =
 						i(46746, {	-- White Skeletal Warhorse (MOUNT!)
 							["cost"] = { { "c", 241, 5 } },	-- 5x Champion's Seal
 						}),
-						un(REMOVED_FROM_GAME, i(46764)),	-- White Skeletal Warhorse Mount
 					},
 				}),
 				n(33594, {	-- Fizzix Blastbolt <Engineering Supplies>
@@ -2936,7 +2925,6 @@ _.ExpansionFeatures =
 						i(45595, {	-- Orgrimmar Wolf (MOUNT!)
 							["cost"] = { { "c", 241, 100 }, },	-- 100x Champion's Seal
 						}),
-						un(REMOVED_FROM_GAME, i(46749)),	-- Swift Burgundy Wolf (MOUNT!)
 						i(46757, {	-- Swift Burgundy Wolf (MOUNT!)
 							["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
 						}),
@@ -3124,11 +3112,6 @@ _.ExpansionFeatures =
 							["cost"] = { { "c", 241, 40 }, },	-- 40x Champion's Seal
 						}),
 						i(46747, {	-- Turbostrider (MOUNT!)
-							["races"] = { GNOME },
-							["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
-						}),
-						i(46763, {	-- Turbostrider
-							["races"] = exclude(GNOME, ALLIANCE_ONLY),
 							["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
 						}),
 					},
@@ -3148,11 +3131,6 @@ _.ExpansionFeatures =
 						}),
 						i(45579),	-- Darnassus Tabard
 						i(46744, {	-- Swift Moonsaber (MOUNT!)
-							["races"] = { NIGHTELF },
-							["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
-						}),
-						i(46759, {	-- Swift Moonsaber (MOUNT!)
-							["races"] = exclude(NIGHTELF, ALLIANCE_ONLY),
 							["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
 						}),
 						i(44965, {	-- Teldrassil Sproutling (PET!)
@@ -3180,7 +3158,6 @@ _.ExpansionFeatures =
 						i(46743, {	-- Swift Purple Raptor (MOUNT!)
 							["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
 						}),
-						un(REMOVED_FROM_GAME, i(46760)),	-- Swift Purple Raptor (MOUNT!)
 					},
 				}),
 				n(33557, {	-- Trellis Morningsun <Silvermoon Quartermaster>
@@ -3201,11 +3178,6 @@ _.ExpansionFeatures =
 							["cost"] = { { "c", 241, 100 }, },	-- 100x Champion's Seal
 						}),
 						i(46751, {	-- Swift Red Hawkstrider (MOUNT!)
-							["races"] = { BLOODELF },
-							["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
-						}),
-						i(46761, {	-- Swift Red Hawkstrider (MOUNT!)
-							["races"] = exclude(BLOODELF, HORDE_ONLY),
 							["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
 						}),
 					},

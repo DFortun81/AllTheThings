@@ -473,6 +473,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					["spellID"] = 161354,	-- Polymorph (Monkey)
 					["timeline"] = { "added 6.0.2.18816" },
 					["classes"] = { MAGE },
+					["f"] = RECIPES,
 					["crs"] = {
 						48278,	-- Mining Monkey
 						48440,	-- Mining Monkey

@@ -426,7 +426,7 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 108247 },	-- Archmage Kalec
 							["sourceQuest"] = 45847,	-- Close To Home
 							["g"] = {
-								mount(229376, {	-- Archmage's Prismatic Disc
+								mount(229376, {	-- Archmage's Prismatic Disc (MOUNT!)
 									["classes"] = { MAGE },
 								}),
 							},

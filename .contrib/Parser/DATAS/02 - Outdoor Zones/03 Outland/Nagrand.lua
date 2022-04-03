@@ -20,7 +20,7 @@ local OnTooltipForKurenai = [[function(t)
 		local repPerKill = isHuman and 11 or 10;
 		local x, n = math.ceil((42000 - reputation) / repPerKill), math.ceil(42000 / repPerKill);
 		GameTooltip:AddDoubleLine("Kill Bolderfist Ogres.", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		
+
 		local repPerTurnIn = isHuman and 550 or 500;
 		local x, n = math.ceil((42000 - reputation) / repPerTurnIn), math.ceil(42000 / repPerTurnIn);
 		GameTooltip:AddDoubleLine("Turn in Obsidian Warbeads.", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
@@ -36,7 +36,7 @@ local OnTooltipForMaghar = [[function(t)
 		local repPerKill = isHuman and 11 or 10;
 		local x, n = math.ceil((42000 - reputation) / repPerKill), math.ceil(42000 / repPerKill);
 		GameTooltip:AddDoubleLine("Kill Bolderfist Ogres.", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		
+
 		local repPerTurnIn = isHuman and 550 or 500;
 		local x, n = math.ceil((42000 - reputation) / repPerTurnIn), math.ceil(42000 / repPerTurnIn);
 		GameTooltip:AddDoubleLine("Turn in Obsidian Warbeads.", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
@@ -101,21 +101,21 @@ root("Zones", {
 						["sourceQuests"] = {
 							-- Birth of a Warchief
 							10172,	-- There Is No Hope
-							
+
 							-- The Ring of Blood
 							9977,	-- The Ring of Blood: The Final Challenge
-							
+
 							-- Throne of the Elements
 							9853,	-- Gurok the Usurper
 							9815,	-- Muck Diving
 							9862,	-- Murkblood Corrupters
 							9810,	-- The Spirit Polluted
-							
+
 							-- Lantresor of the Blade
 							9907,	-- An Audacious Advance
 							9916,	-- Bleeding Hollow Supply Crates
 							9934,	-- Message to Garadar
-							
+
 							-- The Murkblood
 							9946,	-- Cho'war the Pillager
 							9948,	-- Finding the Survivors
@@ -123,14 +123,14 @@ root("Zones", {
 							9867,	-- Murkblood Leaders..
 							9868,	-- The Totem of Kar'dash
 							9863,	-- Vile Idolatry
-							
+
 							-- Threats to Nagrand
 							10011, 	-- Forge Camp: Annihilated
 							9937, 	-- WANTED: Durn the Hungerer
-							
+
 							-- The Ultimate Bloodsport
 							9852,	-- The Ultimate Bloodsport
-							
+
 							-- Encountering the Ethereals
 							9900,	-- Gava'xi
 							9925,	-- Matters of Security
@@ -200,33 +200,33 @@ root("Zones", {
 						["sourceQuests"] = {
 							-- The Adventures of Corki
 							9955,	-- Cho'war the Pillager
-							
+
 							-- The Ring of Blood
 							9977,	-- The Ring of Blood: The Final Challenge
-							
+
 							-- Throne of the Elements
 							9853,	-- Gurok the Usurper
 							9815,	-- Muck Diving
 							9862,	-- Murkblood Corrupters
 							9810,	-- The Spirit Polluted
-							
+
 							-- Lantresor of the Blade
 							9933,	-- Message to Telaar
-							
+
 							-- The Murkblood
 							9873,  	-- Ortor My Old Friend...
 							9878,	-- Solving the Problem
 							9874,	-- Stopping the Spread
 							9879,	-- The Totem of Kar'dash
 							9956,	-- The Ravaged Caravan
-							
+
 							-- Threats to Nagrand
 							10011, 	-- Forge Camp: Annihilated
 							9938, 	-- WANTED: Durn the Hungerer
-							
+
 							-- The Ultimate Bloodsport
 							9852,	-- The Ultimate Bloodsport
-							
+
 							-- Encountering the Ethereals
 							9900,	-- Gava'xi
 							9925,	-- Matters of Security
@@ -1652,6 +1652,7 @@ root("Zones", {
 								["timeline"] = { "added 7.0.3.22248" },
 								["spellID"] = 210873,	-- Hex (Compy)
 								["classes"] = { SHAMAN },
+								["f"] = RECIPES,
 							}),
 							i(136937, {	-- Vol'jin's Serpent Totem (TOY!)
 								["timeline"] = { "added 7.0.3.22248" },

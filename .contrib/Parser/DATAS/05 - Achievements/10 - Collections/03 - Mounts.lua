@@ -19,63 +19,63 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 		ach(12932, {	-- No Stable Big Enough (A, 350 mounts)
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
-				i(137614),	-- Biting Frostshard Core
+				i(137614),	-- Frostshard Infernal (MOUNT!)
 			},
 		}),
 		ach(12931, {	-- No Stable Big Enough (H, 350 mounts)
 			["races"] = HORDE_ONLY,
 			["g"] = {
-				i(137614),	-- Biting Frostshard Core
+				i(137614),	-- Frostshard Infernal (MOUNT!)
 			},
 		}),
 		ach(10356, {	-- Lord of the Reins (A, 300 mounts)
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
-				i(87776),	-- Heavenly Azure Cloud Serpent
+				i(87776),	-- Heavenly Azure Cloud Serpent (MOUNT!)
 				title(331),	-- <Name>, Lord of the Reins
 			},
 		}),
 		ach(10355, {	-- Lord of the Reins (H, 300 mounts)
 			["races"] = HORDE_ONLY,
 			["g"] = {
-				i(87776),	-- Heavenly Azure Cloud Serpent
+				i(87776),	-- Heavenly Azure Cloud Serpent (MOUNT!)
 				title(331),	-- <Name>, Lord of the Reins
 			},
 		}),
 		ach(9598,  {	-- Mountacular (A, 250 mounts)
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
-				i(69226),	-- Felfire Hawk
+				i(69226),	-- Felfire Hawk (MOUNT!)
 			},
 		}),
 		ach(9599,  {	-- Mountacular (H, 250 mounts)
 			["races"] = HORDE_ONLY,
 			["g"] = {
-				i(69226),	-- Felfire Hawk
+				i(69226),	-- Felfire Hawk (MOUNT!)
 			},
 		}),
 		ach(8304,  {	-- Mount Parade (A, 200 mounts)
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
-				i(98259),	-- Armored Blue Dragonhawk
+				i(98259),	-- Armored Blue Dragonhawk (MOUNT!)
 			},
 		}),
 		ach(8302,  {	-- Mount Parade (H, 200 mounts)
 			["races"] = HORDE_ONLY,
 			["g"] = {
-				i(98104),	-- Armored Red Dragonhawk
+				i(98104),	-- Armored Red Dragonhawk (MOUNT!)
 			},
 		}),
 		ach(7860,  {	-- We're Going to Need More Saddles (A, 150 mounts)
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
-				i(91802),	-- Jade Pandaren Kite String
+				i(91802),	-- Jade Pandaren Kite String (MOUNT!)
 			},
 		}),
 		ach(7862,  {	-- We're Going to Need More Saddles (H, 150 mounts)
 			["races"] = HORDE_ONLY,
 			["g"] = {
-				i(91802),	-- Jade Pandaren Kite String
+				i(91802),	-- Jade Pandaren Kite String (MOUNT!)
 			},
 		}),
 		ach(2536,  {	-- Mountain o' Mounts (A, 100 mounts)
@@ -97,7 +97,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 		ach(2141),		-- Stable Keeper (10 mounts)
 		ach(2076),		-- Armored Brown Bear
 		ach(9713,  {	-- Awake the Drakes
-			i(118676),		--	Reins of the Emerald Drake
+			i(118676),		-- Emerald Drake (MOUNT!)
 			crit(1),		-- Azure Drake
 			crit(2),		-- Bronze Drake
 			crit(3),		-- Black Drake

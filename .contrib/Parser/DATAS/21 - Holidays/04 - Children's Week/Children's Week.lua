@@ -75,12 +75,14 @@ local WARDEN_OF_THE_GROUPS = {
 	PET_CARE_PACKAGE,
 	i(23022),	-- Curmudgeon's Payoff
 };
-_.Holidays = { applyholiday(CHILDRENS_WEEK, {
+root("Holidays", applyholiday(CHILDRENS_WEEK, {
 	-- #if ANYCLASSIC
 	["npcID"] = -52,
 	-- #else
 	["holidayID"] = 235445,
 	-- #endif
+	["description"] = "Start: 05/02 at 10:00 AM\nEnd: 05/09 at 10:00 AM",
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. CHILDRENS_WEEK .. [[, 5, 2, 5, 9); end]],
 	["groups"] = {
 		-- #if AFTER WRATH
 		n(ACHIEVEMENTS, {
@@ -1605,4 +1607,4 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 		}),
 		-- #endif
 	},
-})};
+}));

@@ -823,7 +823,7 @@ _.ExpansionFeatures =
 							["maps"] = { 861 },	-- Mardum, the Shattered Abyss (scenario)
 							["lvl"] = 110,
 							["g"] = {
-								mount(229417, {	-- Slayer's Felbroken Shrieker
+								mount(229417, {	-- Slayer's Felbroken Shrieker (MOUNT!)
 									["classes"] = { DEMONHUNTER },
 								}),
 							},

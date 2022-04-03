@@ -43,7 +43,7 @@ _.Instances = { tier(CATA_TIER, {
 							i(64315),	-- Mantle of the Forlorn Conqueror
 							i(64316),	-- Mantle of the Forlorn Protector
 							i(64314),	-- Mantle of the Forlorn Vanquisher
-							i(63041),	-- Reins of the Drake of the South Wind (MOUNT!)
+							i(63041),	-- Drake of the South Wind (MOUNT!)
 							i(152973),	-- Zephyr's Call (PET!)
 							i(68127),	-- Stormwake, the Tempest's Reach
 							i(68128),	-- Stormwake, the Tempest's Reach
@@ -101,7 +101,7 @@ _.Instances = { tier(CATA_TIER, {
 							i(65002),	-- Crown of the Forlorn Vanquisher
 							i(66998),	-- Essence of the Forlorn
 							i(138836),	-- Illusion: Windfury
-							i(63041),	-- Reins of the Drake of the South Wind (MOUNT!)
+							i(63041),	-- Drake of the South Wind (MOUNT!)
 							i(65088),	-- Shoulders of the Forlorn Conqueror
 							i(65087),	-- Shoulders of the Forlorn Protector
 							i(65089),	-- Shoulders of the Forlorn Vanquisher

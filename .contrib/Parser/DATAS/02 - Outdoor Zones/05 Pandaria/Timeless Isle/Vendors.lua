@@ -274,7 +274,7 @@ _.Zones =
 						i(103682, {	-- Mask of Violence
 							["cost"] = { { "c", 777, 100 } },	-- 100x Timeless Coin
 						}),
-						i(87774, {	-- Reins of the Heavenly Golden Cloud Serpent (MOUNT!)
+						i(87774, {	-- Heavenly Golden Cloud Serpent (MOUNT!)
 							["cost"] = { { "c", 777, 100000 } },	-- 100,000x Timeless Coin
 						}),
 						i(103684, {	-- Scroll of Challenge
@@ -311,7 +311,7 @@ _.Zones =
 						i(103639, {	-- Pouch of White Ash
 							["cost"] = { { "c", 789, 20 } },	-- 20x Bloody Coin
 						}),
-						i(103638, {	-- Reins of the Ashhide Mushan Beast (MOUNT!)
+						i(103638, {	-- Ashhide Mushan Beast (MOUNT!)
 							["cost"] = { { "c", 789, 500 } },	-- 500x Bloody Coin
 						}),
 						i(103637, {	-- Vengeful Porcupette (PET!)

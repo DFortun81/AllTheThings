@@ -650,7 +650,7 @@ _.Zones =
 					["coord"] = { 70.6, 50.6, ZULDAZAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
-					["cost"] = { "i", 159139, 1 },	-- 1xLightweight Skyterror Barding
+					["cost"] = { { "i", 159139, 1 } },	-- 1x Lightweight Skyterror Barding
 				}),
 				q(55245, {	-- Eat Like a Direhorn
 					["sourceQuests"] = { 55243 },	-- A Daughter of Torcali #2

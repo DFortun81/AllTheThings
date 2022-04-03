@@ -267,7 +267,7 @@ _.Zones =
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
 							}),
 						}),
-						i(104269, {	-- Reins of the Thundering Onyx Cloud Serpent (MOUNT!)
+						i(104269, {	-- Thundering Onyx Cloud Serpent (MOUNT!)
 							crit(40, {	-- Reins of the Thundering Onyx Cloud Serpent
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
 							}),

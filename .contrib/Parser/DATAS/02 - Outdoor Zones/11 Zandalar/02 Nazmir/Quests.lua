@@ -66,7 +66,11 @@ _.Zones =
 					["sourceQuests"] = { 54940 },	-- Necessity is the MOTHER
 					["provider"] = { "n", 149823 },	-- Magni Bronzebeard
 					["coord"] = { 52.3, 68.6, 1382 },
-					["u"] = REMOVED_FROM_GAME, -- Retired with the implementation of 8.2
+					["timeline"] = {
+						"added 8.1.5.29701",
+						"removed 8.2",	-- Retired with the implementation of 8.2
+						"added 9.2",	-- Reported available again 2022-03-21
+					},
 				}),
 				q(48402, {	-- A Poisonous Touch
 					--	SQ needs confirmation.  i didn't see it until after i finished "staying hidden" and picked up the next 2 quests for the area, but maybe it opens sooner.  was NOT available with 0 prereqs prior to starting dazar'alor.
@@ -650,7 +654,11 @@ _.Zones =
 					["sourceQuests"] = { 54939 },	-- Stubborn as a Bronzebeard
 					["provider"] = { "n", 149823 },
 					["coord"] = { 47.6, 16.2, 1381 },
-					["u"] = REMOVED_FROM_GAME, -- Retired with the implementation of 8.2
+					["timeline"] = {
+						"added 8.1.5.29701",
+						"removed 8.2",	-- Retired with the implementation of 8.2
+						"added 9.2",	-- Reported available again 2022-03-21
+					},
 				}),
 				q(49125, {	-- Negative Blood
 					["sourceQuests"] = { 49120 },	-- Speaking with the Dead
@@ -703,7 +711,7 @@ _.Zones =
 						i(161293, {	-- Thrasneck Greatblade (confirmed)
 							["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
 						}),
-						
+
 					},
 				}),
 				q(48854, {	-- Offer of Power
@@ -891,44 +899,25 @@ _.Zones =
 					["provider"] = { "n", 125024 },	-- Kajosh
 					["coord"] = { 51.7, 33.2, NAZMIR },
 					["g"] = {
-						-- Quest can be completed by both factions but rewards are Horde only
-						i(158957, {	-- Death-Pledged Greaves
-							["races"] = HORDE_ONLY,
-						}),
-						i(158966, {	-- Death-Pledged Links
-							["races"] = HORDE_ONLY,
-						}),
-						i(158956, {	-- Loa Speaker's Pants
-							["races"] = HORDE_ONLY,
-						}),
-						i(158965, {	-- Loa Speaker's Sash
-							["races"] = HORDE_ONLY,
-						}),
-						i(158955, {	-- Nazmani Warplate Legguards
-							["races"] = HORDE_ONLY,
-						}),
-						i(158964, {	-- Nazmani Warplate Waistplate
-							["races"] = HORDE_ONLY,
-						}),
-						i(158958, {	-- Ritual Flayer's Trousers
-							["races"] = HORDE_ONLY,
-						}),
-						i(158967, {	-- Ritual Flayer's Waistband
-							["races"] = HORDE_ONLY,
-						}),
-						--[[	
-						-- Alliance appearance with no other source, granted by learning Horde appearance
-						-- How to even mark those with faction then, quest is neutral, but you don't get the item as Alliance, but Horde can't transmog that
-						
-						i(155481),	-- Crone-Seeker's Chain (confirmed)
-						  ?	["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
-						}),
-						i(155489),	-- Waycrest Militia Belt (confirmed)
-						  ?	["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
-						}),
-		
-						
-						]]--
+						n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({["races"] = ALLIANCE_ONLY},{
+							["description"] = "Alliance rewards are only earned when completing this on a Horde character, not as Alliance.",
+							["g"] = {
+								i(155465),	-- Wickerwoven Cord
+								i(155462),	-- Wickerwoven Legwraps
+								i(155481),	-- Crone-Seeker's Chain
+								i(155489),	-- Waycrest Militia Belt
+							},
+						})),
+						n(FACTION_HEADER_HORDE, bubbleDownSelf({["races"] = HORDE_ONLY},{
+							i(158957),	-- Death-Pledged Greaves
+							i(158966),	-- Death-Pledged Links
+							i(158956),	-- Loa Speaker's Pants
+							i(158965),	-- Loa Speaker's Sash
+							i(158955),	-- Nazmani Warplate Legguards
+							i(158964),	-- Nazmani Warplate Waistplate
+							i(158958),	-- Ritual Flayer's Trousers
+							i(158967),	-- Ritual Flayer's Waistband
+						})),
 					},
 				}),
 				q(48497, {	-- Show of Force
@@ -1009,7 +998,11 @@ _.Zones =
 					["sourceQuests"] = { 54938 },	-- A Brother's Help
 					["provider"] = { "n", 149867 },	-- Magni Bronzebeard
 					["coord"] = { 57.8, 50.4, NAZMIR },
-					["u"] = REMOVED_FROM_GAME, -- Retired with the implementation of 8.2
+					["timeline"] = {
+						"added 8.1.5.29701",
+						"removed 8.2",	-- Retired with the implementation of 8.2
+						"added 9.2",	-- Reported available again 2022-03-21
+					},
 				}),
 				q(49477, {	-- Surprise Backup
 					["isBreadcrumb"] = true,

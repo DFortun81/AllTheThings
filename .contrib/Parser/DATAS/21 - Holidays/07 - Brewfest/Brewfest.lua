@@ -134,11 +134,17 @@ local BREWFEST_VENDOR_OnTooltip = [[function(t)
 	end
 end]];
 
-_.Holidays = { applyholiday(BREWFEST, {
+root("Holidays", applyholiday(BREWFEST, {
 	-- #if ANYCLASSIC
 	["npcID"] = -56,
 	-- #else
 	["holidayID"] = 235442,
+	-- #endif
+	["description"] = "Start: 09/20 at 10:00 AM\nEnd: 10/06 at 10:00 AM",
+	-- #if AFTER 3.0.0
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. BREWFEST .. [[, 9, 20, 10, 6); end]],
+	-- #else
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. BREWFEST .. [[, 9, 20, 10, 4); end]],
 	-- #endif
 	["groups"] = {
 		n(ACHIEVEMENTS, {
@@ -2143,7 +2149,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 			},
 		}),
 	},
-})};
+}));
 root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
 		q(37247, {	-- Angry Brewfest Letter - triggers when using "Angry Brewfest Letter" to cancel Brew of the Month subscription
@@ -2151,7 +2157,7 @@ root("HiddenQuestTriggers", {
 		}),
 	}),
 });
-_.NeverImplemented = { bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	-- #if ANYCLASSIC
 	["npcID"] = -56,
 	-- #else
@@ -2165,7 +2171,7 @@ _.NeverImplemented = { bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			["timeline"] = { "created 8.1.5.29701" },
 		}),
 	},
-})};
+}));
 
 --[[ TODO: Transfer these achievement criteria to the item on the actual vendor
 -- Alliance

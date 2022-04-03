@@ -120,7 +120,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 						["cost"] = { { "c", 1931, 2000 } },	-- 2,000x Catalogued Research
 					}),
 					i(184665, {	-- Chronicle of Lost Memories
-						["cost"] = { { "c", 1931, 2000 } },	-- 2,000x Catalogued Research
+						["cost"] = { { "c", 1931, 1500 } },	-- 1,500x Catalogued Research
 						["description"] = "|cFFfe040fYou will not receive a Covenant specific Legendary if you are not part of said Covenant.|r",
 						["_drop"] = { "customCollect" },	-- this is Covenant tagged in various other locations
 						["sym"] = {

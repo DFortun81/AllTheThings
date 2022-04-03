@@ -1538,7 +1538,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(BFA_TIER, {
 		n(ARMOR, {
 			filter(CLOTH, {
-				i(155465),	-- Wickerwoven Cord
 				i(158603),	-- Wickerwoven Handwraps
 				i(160197),	-- Wickerwoven Pantaloons
 			}),
@@ -1553,12 +1552,10 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			filter(MAIL, {
 				i(158605),	-- Crone-Seeker's Grips
 				i(160199),	-- Crone-Seeker's Leggings
-				i(155481),	-- Crone-Seeker's Chain
 			}),
 			filter(PLATE, {
 				i(158606),	-- Waycrest Militia Gloves
 				i(160200),	-- Waycrest Militia Pants
-				i(155489),	-- Waycrest Militia Belt
 			}),
 		}),
 		n(WEAPONS, {

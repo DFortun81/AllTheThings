@@ -6,8 +6,6 @@ _ = AllTheThings;
 HATED, HOSTILE, UNFRIENDLY, NEUTRAL, FRIENDLY, HONORED, REVERED, EXALTED = -42000, -6000, -3000, 0, 3000, 9000, 21000, 42000
 
 -- Map Constants for quick and easy replacement when we can get mapIDs on live!
--- NOTE: All of these must be changed!
--- These are accurate for Retail, and of course most are completely different in Classic because Blizzard
 -- Raids (Classic)
 BLACKWING_LAIR = 287;
 MOLTEN_CORE = 232;
@@ -48,6 +46,7 @@ SHADOWFANG_KEEP_LEVEL5 = 314;
 SHADOWFANG_KEEP_LEVEL6 = 315;
 SHADOWFANG_KEEP_LEVEL7 = 316;
 STRATHOLME = 317;
+SUNKEN_TEMPLE = 220;
 TEMPLE_OF_ATALHAKKAR = 220;
 THE_STOCKADE = 225;
 ULDAMAN = 230;
@@ -56,32 +55,59 @@ ZULFARRAK = 219;
 
 -- Raids (TBC)
 KARAZHAN = 350;
-GRUULS_LAIR = 330;	-- Confirmed!
-MAGTHERIDONS_LAIR = 331;	-- Confirmed!
-SERPENTSHRINE_CAVERN = 332;	-- Confirmed! 1554 also
-TEMPEST_KEEP_THE_EYE = 334;	-- Confirmed!
+GRUULS_LAIR = 330;
+MAGTHERIDONS_LAIR = 331;
+SERPENTSHRINE_CAVERN = 332; -- 1554 also
+TEMPEST_KEEP_THE_EYE = 334;
 THE_BATTLE_FOR_MOUNT_HYJAL = 329;
-THE_BLACK_TEMPLE = 340;	-- Confirmed!
+THE_BLACK_TEMPLE = 340;
 SUNWELL_PLATEAU = 335;
 ZULAMAN = 333;
 
 -- Dungeons (TBC)
-AUCHINDOUN_AUCHENAI_CRYPTS = 256;	-- Confirmed! 257 also
-AUCHINDOUN_MANA_TOMBS = 272;	-- Confirmed!
-AUCHINDOUN_SETHEKK_HALLS = 258;	-- Confirmed! 259 also
-AUCHINDOUN_SHADOW_LABYRINTH = 260;	-- Confirmed!
+AUCHINDOUN_AUCHENAI_CRYPTS = 256; -- 257 also
+AUCHINDOUN_MANA_TOMBS = 272;
+AUCHINDOUN_SETHEKK_HALLS = 258; -- 259 also
+AUCHINDOUN_SHADOW_LABYRINTH = 260;
 CAVERNS_OF_TIME_BLACK_MORASS = 273;
 CAVERNS_OF_TIME_OLD_HILLSBRAD_FOOTHILLS = 274;
-COILFANG_RESERVOIR_SLAVE_PENS = 265;	-- Confirmed!
-COILFANG_RESERVOIR_STEAMVAULT = 263;	-- Confirmed!
-COILFANG_RESERVOIR_UNDERBOG = 262;	-- Confirmed!
-HELLFIRE_CITADEL_BLOOD_FURNACE = 261;	-- Confirmed!
-HELLFIRE_CITADEL_RAMPARTS = 347;	-- Confirmed!
-HELLFIRE_CITADEL_SHATTERED_HALLS = 246;	-- Confirmed!
+COILFANG_RESERVOIR_SLAVE_PENS = 265;
+COILFANG_RESERVOIR_STEAMVAULT = 263;
+COILFANG_RESERVOIR_UNDERBOG = 262;
+HELLFIRE_CITADEL_BLOOD_FURNACE = 261;
+HELLFIRE_CITADEL_RAMPARTS = 347;
+HELLFIRE_CITADEL_SHATTERED_HALLS = 246;
 MAGISTERS_TERRACE = 348;
-TEMPEST_KEEP_ARCATRAZ = 269;	-- Confirmed! 270, 271 also
-TEMPEST_KEEP_BOTANICA = 266;	-- Confirmed!
-TEMPEST_KEEP_MECHANAR = 267;	-- Confirmed! 268 also
+TEMPEST_KEEP_ARCATRAZ = 269; -- 270, 271 also
+TEMPEST_KEEP_BOTANICA = 266;
+TEMPEST_KEEP_MECHANAR = 267; -- 268
+
+-- Raids (Wrath)
+VAULT_OF_ARCHAVON = 156;
+THE_OBSIDIAN_SANCTUM = 155;
+THE_EYE_OF_ETERNITY = 141;
+ULDUAR = 147;
+TRIAL_OF_THE_CRUSADER = 172;
+ICECROWN_CITADEL = 186;
+THE_RUBY_SANCTUM = 200;
+
+-- Dungeons (Wrath)
+AHNKAHET_THE_OLD_KINGDOM = 132;
+AZJOL_NERUB = 157;
+DRAKTHARON_KEEP = 160;
+GUNDRAK = 153;
+HALLS_OF_LIGHTNING = 138;
+HALLS_OF_REFLECTION = 185;
+HALLS_OF_STONE = 140;
+PIT_OF_SARON = 184;
+THE_CULLING_OF_STRATHOLME = 130;
+THE_FORGE_OF_SOULS = 183;
+THE_NEXUS = 129;
+THE_OCULUS = 142;
+THE_VIOLET_HOLD_WRATH = 168;
+TRIAL_OF_THE_CHAMPION = 171;
+UTGARDE_KEEP = 133;
+UTGARDE_PINNACLE = 136;
 
 -- Dungeons (WOD)
 UPPER_BLACKROCK_SPIRE_WOD = 616;
@@ -96,29 +122,32 @@ TAZAVESH_STORMHEIM = 1995;
 TAZAVESH_BORALUS_HARBOR = 1996;
 TAZAVESH_AGGRAMARS_VAULT = 1997;
 
+-- World Map
+COSMIC = 947;
+
 -- Kalimdor
+KALIMDOR = 12;
 AHNQIRAJ_THE_FALLEN_KINGDOM = 327;
-ASHENVALE = 63;	-- Confirmed!
-AZSHARA = 76;	-- Confirmed!
-BANETHIL_BARROW_DEN = 60;
-CAVERNS_OF_TIME = 75;	-- Confirmed!
+ASHENVALE = 63;
+AZSHARA = 76;
+CAVERNS_OF_TIME = 75;
 DARKSHORE = 62;
 DARNASSUS = 89;
 DESOLACE = 66;
 DUROTAR = 1;
-DUSTWALLOW_MARSH = 70;	-- Confirmed!
+DUSTWALLOW_MARSH = 70;
 FELWOOD = 77;
-FERALAS = 69;	-- Confirmed!
-KALIMDOR = 12;	-- Confirmed!
+FERALAS = 69;
 MOONGLADE = 80;
 MULGORE = 7;
 NORTHERN_BARRENS = 10;
-ORGRIMMAR = 85;	-- Confirmed!
-SILITHUS = 81;	-- Confirmed!
+ORGRIMMAR = 85;
+SILITHUS = 81;
 SOUTHERN_BARRENS = 199;
 STONETALON_MOUNTAINS = 65;
 TANARIS = 71;
 TELDRASSIL = 57;
+TELDRASSIL_BANETHIL_BARROW_DEN = 60;
 THE_BARRENS = NORTHERN_BARRENS;
 THOUSAND_NEEDLES = 64;
 THUNDER_BLUFF = 88;
@@ -127,19 +156,19 @@ UNGORO_CRATER = 78;
 WINTERSPRING = 83;
 
 -- Eastern Kingdoms
-ALTERAC_MOUNTAINS = 1416;	-- Confirmed!
+EASTERN_KINGDOMS = 13;
+ALTERAC_MOUNTAINS = 1416;
 ARATHI_HIGHLANDS = 14;
 BADLANDS = 15;
 BLACKROCK_MOUNTAIN = 33;
 BLACKROCK_MOUNTAIN_LEVEL2 = 34;
 BLACKROCK_MOUNTAIN_LEVEL3 = 35;
-BLASTED_LANDS = 17;	-- Confirmed!
+BLASTED_LANDS = 17;
 BURNING_STEPPES = 36;
-DEADWIND_PASS = 42;	-- Confirmed!
+DEADWIND_PASS = 42;
 DEEPRUN_TRAM = 499;
 DUN_MOROGH = 27;
-DUSKWOOD = 47;	-- Confirmed!
-EASTERN_KINGDOMS = 13;	-- Confirmed!
+DUSKWOOD = 47;
 EASTERN_PLAGUELANDS = 23;
 ELWYNN_FOREST = 37;
 HILLSBRAD_FOOTHILLS = 25;
@@ -150,12 +179,13 @@ NORTHERN_STRANGLETHORN = 50;
 REDRIDGE_MOUNTAINS = 49;
 RUINS_OF_GILNEAS = 217;
 SEARING_GORGE = 32;
-SILVERPINE_FOREST = 21;	-- TODO: Still need to do a search and replace for this one
+SILVERPINE_FOREST = 21;
 STORMWIND_CITY = 84;
 STRANGLETHORN_VALE = 224;
 SWAMP_OF_SORROWS = 51;
+SUNSTRIDER_ISLE = 467;
 THE_CAPE_OF_STRANGLETHORN = 210;
-THE_HINTERLANDS = 26;	-- Confirmed!
+THE_HINTERLANDS = 26;
 TIRISFAL_GLADES = 18;
 TWILIGHT_HIGHLANDS = 241;
 UNDERCITY = 90;
@@ -164,24 +194,23 @@ WESTFALL = 52;
 WETLANDS = 56;
 
 -- Outland & TBC Additions
-OUTLAND = 101;	-- Confirmed!
-EVERSONG_WOODS = 94;	-- Confirmed!
-GHOSTLANDS = 95;	-- Confirmed!
-ISLE_OF_QUELDANAS = 122;	-- Confirmed!
-SILVERMOON_CITY = 110;	-- Confirmed!
-AZUREMYST_ISLE = 97;	-- Confirmed!
-BLOODMYST_ISLE = 106;	-- Confirmed!
+OUTLAND = 101;
+EVERSONG_WOODS = 94;
+GHOSTLANDS = 95;
+ISLE_OF_QUELDANAS = 122;
+SILVERMOON_CITY = 110;
+AZUREMYST_ISLE = 97;
+BLOODMYST_ISLE = 106;
 AMMEN_VALE = 468;
-THE_EXODAR = 103;	-- Confirmed!
-HELLFIRE_PENINSULA = 100;	-- Confirmed!
-ZANGARMARSH = 102;	-- Confirmed!
-NAGRAND = 107;	-- Confirmed!
-NETHERSTORM = 109;	-- Confirmed!
-TEROKKAR_FOREST = 108;	-- Confirmed!
-SHATTRATH_CITY = 111;	-- Confirmed!
-SUNSTRIDER_ISLE = 467;	-- Confirmed!
-BLADES_EDGE_MOUNTAINS = 105;	-- Confirmed!
-SHADOWMOON_VALLEY = 104;	-- Confirmed!
+THE_EXODAR = 103;
+HELLFIRE_PENINSULA = 100;
+ZANGARMARSH = 102;
+NAGRAND = 107;
+NETHERSTORM = 109;
+TEROKKAR_FOREST = 108;
+SHATTRATH_CITY = 111;
+BLADES_EDGE_MOUNTAINS = 105;
+SHADOWMOON_VALLEY = 104;
 
 -- Cataclysm
 MOUNT_HYJAL = 198;
@@ -284,71 +313,34 @@ KORTHIA = 1961;
 TAZAVESH_THE_VEILED_MARKET_WORLD = 2016;
 ZERETH_MORTIS = 1970;
 
--- Holiday Filters
-BREWFEST = 1000;
-CHILDRENS_WEEK = 1001;
-DARKMOON_FAIRE = 1012;
-DAY_OF_THE_DEAD = 1002;
-FEAST_OF_WINTER_VEIL = 1003;
-FIREWORKS_CELEBRATION = 1009;
-HALLOWS_END = 1004;
-HARVEST_FESTIVAL = 1005;
-LOVE_IS_IN_THE_AIR = 1006;
-LUNAR_FESTIVAL = 1007;
-MICRO_HOLIDAY = 1014;
-MIDSUMMER_FIRE_FESTIVAL = 1008;
-NOBLEGARDEN = 1010;
-PILGRIMS_BOUNTY = 1013;
-PIRATES_DAY = 1011;
-STRANGLETHORN_FISHING_EXTRAVAGANZA = 1015;
-TIMEWALKING = 1016;
-WOW_ANNIVERSARY = 1017;
-
--- Helper Tables
-local DifficultyDB = {
-	[1] = { icon = "Interface/Worldmap/Skull_64Green", modID = 1 },
-	[2] = { icon = "Interface/Worldmap/Skull_64Blue", modID = 2 },
-	[3] = { icon = "Interface/Worldmap/Skull_64Green", modID = 1 },
-	[4] = { icon = "Interface/Worldmap/Skull_64Green", modID = 1 },
-	[5] = { icon = "Interface/Worldmap/Skull_64Blue", modID = 1 },
-	[6] = { icon = "Interface/Worldmap/Skull_64Blue", modID = 1 },
-	[7] = { icon = "Interface/Worldmap/Skull_64Grey", modID = 1 },
-	[14] = { icon = "Interface/Worldmap/Skull_64Green", modID = 3 },
-	[15] = { icon = "Interface/Worldmap/Skull_64Blue", modID = 5 },
-	[16] = { icon = "Interface/Worldmap/Skull_64Purple", modID = 6 },
-	[17] = { icon = "Interface/Worldmap/Skull_64Grey", modID = 4 },
-	[18] = { icon = "Interface/Worldmap/Skull_64Green", modID = 1 },	-- Event
-	[23] = { icon = "Interface/Worldmap/Skull_64Purple", modID = 23 },
-	[24] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22, u = TIMEWALKING },
-	[33] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22, u = TIMEWALKING },
-};
-
--- Races
+-- RACES
 HUMAN = 1;
-ORC = 2;
 DWARF = 3;
 NIGHTELF = 4;
-UNDEAD = 5;
-TAUREN = 6;
 GNOME = 7;
-TROLL = 8;
-GOBLIN = 9;
-BLOODELF = 10;
 DRAENEI = 11;
 WORGEN = 22;
+VOIDELF = 29;
+LIGHTFORGED = 30;
+KULTIRAN = 32;
+DARKIRON = 34;
+MECHAGNOME = 37;
+
 PANDAREN_NEUTRAL = 24;
 PANDAREN_ALLIANCE = 25;
 PANDAREN_HORDE = 26;
+
+ORC = 2;
+UNDEAD = 5;
+TAUREN = 6;
+TROLL = 8;
+GOBLIN = 9;
+BLOODELF = 10;
 NIGHTBORNE = 27;
 HIGHMOUNTAIN_TAUREN = 28;
-VOIDELF = 29;
-LIGHTFORGED = 30;
 ZANDALARI = 31;
-KULTIRAN = 32;
-DARKIRON = 34;
 VULPERA = 35;
 MAGHAR = 36;
-MECHAGNOME = 37;
 
 ALLIANCE_ONLY = {
 	HUMAN,
@@ -396,24 +388,7 @@ MONK = 10;
 DRUID = 11;
 DEMONHUNTER = 12;
 
-TANKS = {
-	DEATHKNIGHT,
-	DEMONHUNTER,
-	DRUID,
-	MONK,
-	PALADIN,
-	WARRIOR
-}
-
-HEALERS = {
-	DRUID,
-	MONK,
-	PALADIN,
-	PRIEST,
-	SHAMAN
-}
-
-ALL_CLASSES = {	-- NOTE: Use this with the exclude function.
+ALL_CLASSES = {
 	WARRIOR,
 	PALADIN,
 	HUNTER,
@@ -427,72 +402,139 @@ ALL_CLASSES = {	-- NOTE: Use this with the exclude function.
 	DRUID,
 	DEMONHUNTER,
 };
+TANKS = {
+	DEATHKNIGHT,
+	DEMONHUNTER,
+	DRUID,
+	MONK,
+	PALADIN,
+	WARRIOR
+};
+HEALERS = {
+	DRUID,
+	MONK,
+	PALADIN,
+	PRIEST,
+	SHAMAN
+};
 
 -- Specializations
+-- CRIEVE NOTE: Do not use the simple versions, they will be deprecated and replaced with fully formed class/spec constants.
 
 -- Death Knight
 BLOOD = 250;
 FROST = 251;
 UNHOLY = 252;
+DEATHKNIGHT_BLOOD = 250;
+DEATHKNIGHT_FROST = 251;
+DEATHKNIGHT_UNHOLY = 252;
 
 -- Demon Hunter
 HAVOC = 577;
 VENGEANCE = 581;
+DEMON_HUNTER_HAVOC = 577;
+DEMON_HUNTER_VENGEANCE = 581;
 
 -- Druid
 BALANCE = 102;
 FERAL = 103;
 GUARDIAN = 104;
 RESTORATION = 105;
+DRUID_BALANCE = 102;
+DRUID_FERAL = 103;
+DRUID_GUARDIAN = 104;
+DRUID_RESTORATION = 105;
 
 -- Hunter
 BEAST_MASTERY = 253;
 MARKSMANSHIP = 254;
 SURVIVAL = 255;
+HUNTER_BEAST_MASTERY = 253;
+HUNTER_MARKSMANSHIP = 254;
+HUNTER_SURVIVAL = 255;
 
 -- Mage
 ARCANE = 62;
 FIRE = 63;
---FROST = 64;
+MAGE_ARCANE = 62;
+MAGE_FIRE = 63;
+MAGE_FROST = 64;
 
 -- Monk
 BREWMASTER = 268;
 WINDWALKER = 269;
 MISTWEAVER = 270;
+MONK_BREWMASTER = 268;
+MONK_WINDWALKER = 269;
+MONK_MISTWEAVER = 270;
 
 -- Paladin
 HOLY = 65;
 PROTECTION = 66;
 RETRIBUTION = 70;
+PALADIN_HOLY = 65;
+PALADIN_PROTECTION = 66;
+PALADIN_RETRIBUTION = 70;
 
 -- Priest
 DISCIPLINE = 256;
---HOLY = 257;
 SHADOW = 258;
+PRIEST_DISCIPLINE = 256;
+PRIEST_HOLY = 257;
+PRIEST_SHADOW = 258;
 
 -- Rogue
 ASSASSINATION = 259;
 OUTLAW = 260;
 SUBTLETY = 261;
+ROGUE_ASSASSINATION = 259;
+ROGUE_OUTLAW = 260;
+ROGUE_COMBAT = 260;
+ROGUE_SUBTLETY = 261;
 
 -- Shaman
 ELEMENTAL = 262;
 ENHANCEMENT = 263;
---RESTORATION = 264;
+SHAMAN_ELEMENTAL = 262;
+SHAMAN_ENHANCEMENT = 263;
+SHAMAN_RESTORATION = 264;
 
 -- Warlock
 AFFLICTION = 265;
 DEMONOLOGY = 266;
 DESTRUCTION = 267;
+WARLOCK_AFFLICTION = 265;
+WARLOCK_DEMONOLOGY = 266;
+WARLOCK_DESTRUCTION = 267;
 
 -- Warrior
 ARMS = 71;
 FURY = 72;
---PROTECTION = 73;
+WARRIOR_ARMS = 71;
+WARRIOR_FURY = 72;
+WARRIOR_PROTECTION = 73;
 
 -- Achievement Categories
 ACHIEVEMENT_CATEGORY_CHARACTER = 92;
 ACHIEVEMENT_CATEGORY_GENERAL = 15088;
+ACHIEVEMENT_CATEGORY_PVP = 95;
+	ACHIEVEMENT_CATEGORY_HONOR = 15266;
+	ACHIEVEMENT_CATEGORY_WARSONG_GULCH = 14804;
+	ACHIEVEMENT_CATEGORY_ARATHI_BASIN = 14802;
+	ACHIEVEMENT_CATEGORY_EYE_OF_THE_STORM = 14803;
+	ACHIEVEMENT_CATEGORY_ALTERAC_VALLEY = 14801;
+	ACHIEVEMENT_CATEGORY_ASHRAN = 15414;
+	ACHIEVEMENT_CATEGORY_ISLE_OF_CONQUEST = 15003;
+	ACHIEVEMENT_CATEGORY_WINTERGRASP = 14901;
+	ACHIEVEMENT_CATEGORY_BATTLE_FOR_GILNEAS = 15073;
+	ACHIEVEMENT_CATEGORY_TWIN_PEAKS = 15074;
+	ACHIEVEMENT_CATEGORY_SILVERSHARD_MINES = 15162;
+	ACHIEVEMENT_CATEGORY_TEMPLE_OF_KOTMOGU = 15163;
+	ACHIEVEMENT_CATEGORY_SEETHING_SHORE = 15292;
+	ACHIEVEMENT_CATEGORY_DEEPWIND_GORGE = 15218;
+	ACHIEVEMENT_CATEGORY_RATED_BATTLEGOUND = 15092;
+	ACHIEVEMENT_CATEGORY_AREANA = 165;
+	ACHIEVEMENT_CATEGORY_WORLD = 15283;
 ACHIEVEMENT_CATEGORY_QUESTS = 96;
 	ACHIEVEMENT_CATEGORY_EASTERN_KINGDOMS_QUESTS = 14861;
 	ACHIEVEMENT_CATEGORY_KALIMDOR_QUESTS = 15081;
@@ -515,24 +557,6 @@ ACHIEVEMENT_CATEGORY_EXPLORATION = 97;
 	ACHIEVEMENT_CATEGORY_LEGION_EXP = 15257;
 	ACHIEVEMENT_CATEGORY_BATTLE_FOR_AZEROTH_EXP = 15298;
 	ACHIEVEMENT_CATEGORY_SHADOWLANDS_EXP = 15436;
-ACHIEVEMENT_CATEGORY_PVP = 95;
-	ACHIEVEMENT_CATEGORY_HONOR = 15266;
-	ACHIEVEMENT_CATEGORY_WARSONG_GULCH = 14804;
-	ACHIEVEMENT_CATEGORY_ARATHI_BASIN = 14802;
-	ACHIEVEMENT_CATEGORY_EYE_OF_THE_STORM = 14803;
-	ACHIEVEMENT_CATEGORY_ALTERAC_VALLEY = 14801;
-	ACHIEVEMENT_CATEGORY_ASHRAN = 15414;
-	ACHIEVEMENT_CATEGORY_ISLE_OF_CONQUEST = 15003;
-	ACHIEVEMENT_CATEGORY_WINTERGRASP = 14901;
-	ACHIEVEMENT_CATEGORY_BATTLE_FOR_GILNEAS = 15073;
-	ACHIEVEMENT_CATEGORY_TWIN_PEAKS = 15074;
-	ACHIEVEMENT_CATEGORY_SILVERSHARD_MINES = 15162;
-	ACHIEVEMENT_CATEGORY_TEMPLE_OF_KOTMOGU = 15163;
-	ACHIEVEMENT_CATEGORY_SEETHING_SHORE = 15292;
-	ACHIEVEMENT_CATEGORY_DEEPWIND_GORGE = 15218;
-	ACHIEVEMENT_CATEGORY_RATED_BATTLEGOUND = 15092;
-	ACHIEVEMENT_CATEGORY_AREANA = 165;
-	ACHIEVEMENT_CATEGORY_WORLD = 15283;
 ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS = 168;
 	ACHIEVEMENT_CATEGORY_CLASSIC_DR = 14808;
 	ACHIEVEMENT_CATEGORY_THE_BURNING_CRUSADE_DR = 14805;
@@ -861,10 +885,16 @@ CROSSBOWS = 33;
 FIST_WEAPONS = 34;
 WARGLAIVES = 35;
 MISC = 50;
+NECK_F = 51;
+FINGER_F = 52;
+TRINKET_F = 53;
+CONSUMABLES = 55;
 MOUNTS = 100;
 BATTLE_PETS = 101;
 TOYS = 102;
+QUEST_ITEMS = 104;
 TITLES = 110;
+BAGS = 113;
 RECIPES = 200;
 
 -- Professions
@@ -908,8 +938,8 @@ BLACK_MARKET = 9;
 BLIZZARD_BALANCE = 35;
 TCG = 10;
 
--- Classic Phases
 -- #if ANYCLASSIC
+-- Classic Phases
 PHASE_ONE = 11;
 PHASE_ONE_DIREMAUL = 1101;
 PHASE_TWO = 12;
@@ -941,6 +971,7 @@ TBC_PHASE_SIX = 22;
 
 -- Wrath Classic Phases
 WRATH_PHASE_ONE = 30;
+WRATH_PHASE_ONE_REALM_FIRST = 3001;
 WRATH_PHASE_TWO = 31;
 WRATH_PHASE_THREE = 32;
 WRATH_PHASE_FOUR = 33;
@@ -968,6 +999,45 @@ SHADOWLANDS_PHASE_ONE = 90;
 
 -- Done defining Phases for Classic
 -- #endif
+
+-- Holiday Filters
+BREWFEST = 1000;
+CHILDRENS_WEEK = 1001;
+DARKMOON_FAIRE = 1012;
+DAY_OF_THE_DEAD = 1002;
+FEAST_OF_WINTER_VEIL = 1003;
+FIREWORKS_CELEBRATION = 1009;
+HALLOWS_END = 1004;
+HARVEST_FESTIVAL = 1005;
+LOVE_IS_IN_THE_AIR = 1006;
+LUNAR_FESTIVAL = 1007;
+MICRO_HOLIDAY = 1014;
+MIDSUMMER_FIRE_FESTIVAL = 1008;
+NOBLEGARDEN = 1010;
+PILGRIMS_BOUNTY = 1013;
+PIRATES_DAY = 1011;
+STRANGLETHORN_FISHING_EXTRAVAGANZA = 1015;
+TIMEWALKING = 1016;
+WOW_ANNIVERSARY = 1017;
+
+-- Helper Tables
+local DifficultyDB = {
+	[1] = { icon = "Interface/Worldmap/Skull_64Green", modID = 1 },
+	[2] = { icon = "Interface/Worldmap/Skull_64Blue", modID = 2 },
+	[3] = { icon = "Interface/Worldmap/Skull_64Green", modID = 1 },
+	[4] = { icon = "Interface/Worldmap/Skull_64Green", modID = 1 },
+	[5] = { icon = "Interface/Worldmap/Skull_64Blue", modID = 1 },
+	[6] = { icon = "Interface/Worldmap/Skull_64Blue", modID = 1 },
+	[7] = { icon = "Interface/Worldmap/Skull_64Grey", modID = 1 },
+	[14] = { icon = "Interface/Worldmap/Skull_64Green", modID = 3 },
+	[15] = { icon = "Interface/Worldmap/Skull_64Blue", modID = 5 },
+	[16] = { icon = "Interface/Worldmap/Skull_64Purple", modID = 6 },
+	[17] = { icon = "Interface/Worldmap/Skull_64Grey", modID = 4 },
+	[18] = { icon = "Interface/Worldmap/Skull_64Green", modID = 1 },	-- Event
+	[23] = { icon = "Interface/Worldmap/Skull_64Purple", modID = 23 },
+	[24] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22, u = TIMEWALKING },
+	[33] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22, u = TIMEWALKING },
+};
 
 ItemClassInfo = {
 	{
@@ -1102,6 +1172,7 @@ ItemClassInfo = {
 		"Fishing", -- [9]
 		"Jewelcrafting", -- [10]
 		"Inscription", -- [11]
+		"Poisons",	-- [12]
 		[0] = "Book",
 		["class"] = "Recipe",
 	}, -- [9]
@@ -1385,13 +1456,7 @@ end
 
 -- Classic / Retail Helper Functions
 -- #if ANYCLASSIC
-isanyclassic = function(modifier, data)
-	return modifier(data);
-end
 applyclassicphase = function(phase, data)
-	return bubbleDown({ ["u"] = phase }, data);
-end
-applylegacyclassicphase = function(phase, data)
 	return bubbleDown({ ["u"] = phase }, data);
 end
 applyholiday = function(holiday, data)
@@ -1417,14 +1482,8 @@ removeclassicphase = function(t)
 	end
 end
 -- #else
-isanyclassic = function(modifier, data)
-	return data;
-end
 applyclassicphase = function(phase, data)
 	return data;
-end
-applylegacyclassicphase = function(phase, data)
-	return bubbleDown({ ["u"] = REMOVED_FROM_GAME }, data);
 end
 applyholiday = function(holiday, data)
 	return bubbleDown({ ["u"] = holiday }, data);
@@ -1520,8 +1579,10 @@ currency = function(id, t)								-- Create a CURRENCY Object
 end
 d = function(id, t)										-- Create a DIFFICULTY Object
 	t = struct("difficultyID", id, t);
+	-- #if AFTER MOP
 	local db = DifficultyDB[id];
 	if db then t.modID = db.modID; end
+	-- #endif
 	return t;
 end
 e = function(id, t)										-- Create an ENCOUNTER Object
@@ -1691,21 +1752,46 @@ recipe = function(id, t)								-- Create a RECIPE Object
 	return struct("recipeID", id, t);
 end
 root = function(category, g)							-- Create a ROOT CATEGORY Object
+	if not g then g = g or {}; end
 	local o = _[category];
 	if not o then
-		if #g > 0 and g[1] then
+		if isarray(g) then
 			o = g;
 		else
-			o = { g };
+			local isRef = true;
+			for key,value in pairs(g) do
+				if type(key) ~= "number" then
+					isRef = false;
+					break;
+				end
+			end
+			if isRef then
+				o = g;
+			else
+				o = { g };
+			end
 		end
 		_[category] = o;
 	else
-		if #g > 0 and g[1] then
+		if isarray(g) then
 			for i,t in ipairs(g) do
 				table.insert(o, t);
 			end
 		else
-			table.insert(o, g);
+			local isRef = true;
+			for key,value in pairs(g) do
+				if type(key) ~= "number" then
+					isRef = false;
+					break;
+				end
+			end
+			if isRef then
+				for key,value in pairs(g) do
+					o[key] = value;
+				end
+			else
+				table.insert(o, g);
+			end
 		end
 	end
 	return o;
@@ -1827,13 +1913,13 @@ end
 
 -- Used by the Harvester (Parser)
 function Harvest(things)
-	if not _.ItemDB then _.ItemDB = {}; end
+	local itemDB = root("ItemDB", {});
 	local thing;
 	for i,j in pairs(things) do
-		thing = _.ItemDB[i];
+		thing = itemDB[i];
 		if not thing then
 			thing = {};
-			_.ItemDB[i] = thing;
+			itemDB[i] = thing;
 		end
 		if j.mods then
 			if not thing.mods then thing.mods = {} end

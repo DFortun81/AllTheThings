@@ -85,8 +85,8 @@ root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 			crit(4),	-- Loot 5 War Supply Chests in Nazjatar
 		}),
 		ach(11474, {	-- Free For All, More For Me
-			a(i(129280)),	-- Reins of the Prestigious War Steed
-			h(i(143864)),	-- Reins of the Prestigious War Wolf
+			a(i(129280)),	-- Prestigious War Steed (MOUNT!)
+			h(i(143864)),	-- Prestigious War Wolf (MOUNT!)
 		}),
 		ach(13387, {	-- Frontline Veteran (A)
 			["races"] = ALLIANCE_ONLY,

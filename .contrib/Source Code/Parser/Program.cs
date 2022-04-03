@@ -52,7 +52,6 @@ namespace ATT
 #else
                     files.AsParallel().ForAll(f => ParseJSONFile(f));
 #endif
-                    Trace.WriteLine("Done parsing JSON files.");
 
                     if (Errored)
                     {
@@ -154,6 +153,27 @@ namespace ATT
                 }
                 while (true);
                 lua.Close();
+
+                // If Debug Mode, then check if additional data should be captured for Debugging
+                if (Framework.DebugMode)
+                {
+                    string debugDBKeys = null;
+                    try
+                    {
+                        debugDBKeys = File.ReadAllText("debugDBs");
+                    }
+                    catch { }
+
+                    if (!string.IsNullOrWhiteSpace(debugDBKeys))
+                    {
+                        string[] dbKeys = debugDBKeys.Split(new char[] { '\n', '\r', ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
+
+                        foreach (string dbKey in dbKeys)
+                        {
+                            Framework.DebugDBs.Add(dbKey, new SortedDictionary<decimal, List<Dictionary<string, object>>>());
+                        }
+                    }
+                }
 
                 // Now that all of the data and items have been loaded into the Database, let's Process it!
                 Framework.Process();

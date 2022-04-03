@@ -405,7 +405,7 @@ _.ExpansionFeatures =
 						n(111093, {	-- Stitchwork
 							["questID"] = 44188,	-- Hidden Tracking
 							["classes"] = { DEATHKNIGHT },
-							["maps"] = { 186, 187, 188, 189, 190, 191, 192, 193 },	-- Icecrown Citadel
+							["maps"] = { ICECROWN_CITADEL, 187, 188, 189, 190, 191, 192, 193 },	-- Icecrown Citadel
 							["collectible"] = false,
 							["description"] = "\"Professor Putricide's Lost Journal\" drops from ghouls summoned by your Apocalypse or Army of the Dead spells anywhere in the world. If this is checked off as completed, you will be eligible to enter the trap door in Putricide's room under the Green Slime Pipe. You do not have to interact with the book to be eligible.",
 							["g"] = {
@@ -500,7 +500,7 @@ _.ExpansionFeatures =
 							["sourceQuest"] = 46812, -- Draconic Secrets
 							["maps"] = { 871 },	-- The Lost Glacier (scenario map)
 							["g"] = {
-								i(142231, {		-- Decaying Reins of the Vilebrood Vanquisher
+								i(142231, {	-- Deathlord's Vilebrood Vanquisher (MOUNT!)
 									["classes"] = { DEATHKNIGHT },
 								}),
 							},

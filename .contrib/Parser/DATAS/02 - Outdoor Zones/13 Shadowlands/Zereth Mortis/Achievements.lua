@@ -43,18 +43,34 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					}),
 					crit(7, {
 						["crs"] = { 184819 },	-- Dominated Irregular
-						["coord"] = { 46.0, 7.6, ZERETH_MORTIS },
+						["description"] = "Can spawn in place of a Dominated Laborer.",
+						["coords"] = {
+							{ 45.9, 8.2, ZERETH_MORTIS },
+							{ 46.0, 7.6, ZERETH_MORTIS },
+							{ 46.2, 12.2, ZERETH_MORTIS },
+							{ 47.1, 10.8, ZERETH_MORTIS },
+							{ 47.5, 4.0, ZERETH_MORTIS },
+							{ 48.5, 11.8, ZERETH_MORTIS },
+							{ 48.9, 13.5, ZERETH_MORTIS },
+							{ 50.9, 10.1, ZERETH_MORTIS },
+							{ 51.7, 7.0, ZERETH_MORTIS },
+						},
 					}),
 					crit(8, {
 						["crs"] = { 181292 },	-- Misaligned Enforcer
-						["description"] = "Has a long pathway, Start: 61.1 47.7 Finish: 58.1, 44.3.",
-						["coord"] = { 56.2, 46.8, ZERETH_MORTIS },
+						["description"] = "Has a long pathway, Start: 61.1, 47.7 Finish: 58.1, 44.3.",
+						["coords"] = {
+							{ 56.2, 46.8, ZERETH_MORTIS },
+							{ 61.1, 47.7, ZERETH_MORTIS },
+							{ 58.1, 44.3, ZERETH_MORTIS },
+
+						},
 					}),
 					crit(9, {
 						["crs"] = { 181293 },	-- Suspicious Nesmin
 						["description"] = "Friendly NPC. Short path out of the hub, then despawns.",
 						["coords"] = {
-							{ 35, 64.1, ZERETH_MORTIS },
+							{ 35.0, 64.1, ZERETH_MORTIS },
 							{ 34.6, 63.2, ZERETH_MORTIS },
 						},
 					}),
@@ -69,7 +85,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					crit(12, {
 						["crs"] = { 181295 },	-- Runethief Xy'lora
 						["description"] = "This NPC is in stealth.",
-						["coord"] = { 64.2, 52, ZERETH_MORTIS },
+						["coords"] = {
+							{ 60.0, 51.6, ZERETH_MORTIS },
+							{ 61.8, 51.6, ZERETH_MORTIS },
+							{ 61.8, 52.6, ZERETH_MORTIS },
+							{ 62.2, 49.2, ZERETH_MORTIS },
+							{ 64.0, 49.6, ZERETH_MORTIS },
+							{ 64.0, 52.0, ZERETH_MORTIS },
+						},
 					}),
 					crit(13, {
 						["crs"] = { 181344 },	-- Runefur
@@ -171,6 +194,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 							{ 47.4, 61.1, ZERETH_MORTIS },
 							{ 48.3, 59.5, ZERETH_MORTIS },
 							{ 49.1, 57.5, ZERETH_MORTIS },
+							{ 50.4, 64.1, ZERETH_MORTIS },
 						},
 					}),
 					crit(8, {	-- Energized Firmament

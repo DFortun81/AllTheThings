@@ -11,6 +11,8 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 	-- #else
 	["holidayID"] = 235468,
 	-- #endif
+	["description"] = "Start: 02/06 at 10:00 AM\nEnd: 02/20 at 10:00 AM",
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. LOVE_IS_IN_THE_AIR .. [[, 2, 6, 2, 20); end]],
 	["groups"] = {
 		-- #if BEFORE WRATH
 		n(COMMON_BOSS_DROPS, {
@@ -353,7 +355,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 			}),
 			tier(WOTLK_TIER, {
 				inst(277, {	-- Halls of Stone
-					["maps"] = { 140 },
+					["maps"] = { HALLS_OF_STONE },
 					["groups"] = {
 						d(2, {	-- Heroic
 							n(27975, {	-- Maiden of Grief
@@ -363,7 +365,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 					},
 				}),
 				inst(285, {	-- Utgarde Keep
-					["maps"] = { 133, 134, 135 },
+					["maps"] = { UTGARDE_KEEP, 134, 135 },
 					["groups"] = {
 						d(1, {	-- Normal
 							n(23953, {	-- Prince Keleseth
@@ -1649,7 +1651,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 					i(22235, {	-- Truesilver Shafted Arrow
 						["cost"] = { { "i", 49927, 40 } },	-- 40x Love Token
 					}),
-					i(72146, {	-- Swift Lovebird
+					i(72146, {	-- Swift Lovebird (MOUNT!)
 						["timeline"] = { "added 4.3.0.15005" },
 						["cost"] = { { "i", 49927, 270 } },	-- 270x Love Token
 					}),
@@ -2116,7 +2118,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 	},
 }));
 
-_.NeverImplemented = { bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	-- #if ANYCLASSIC
 	["npcID"] = -50,
 	-- #else
@@ -2131,4 +2133,4 @@ _.NeverImplemented = { bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			["timeline"] = { "created 7.3.0.24484" },
 		}),
 	},
-})};
+}));

@@ -1487,13 +1487,15 @@ root("Zones", m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(26477, {	-- Search the Bole
+				q(26477, bubbleDownSelf({ ["timeline"] = { "added 4.0.3.13277" } }, {	-- Search the Bole
 					["provider"] = { "n", 3916 },	-- Shael'dryn
 					["coord"] = { 59.0, 59.6, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26476,	-- Dryad Delivery
-					["timeline"] = { "added 4.0.3.13277" },
-				}),
+					["g"] = {
+						i(5475),	-- Wooden Key
+					},
+				})),
 				q(13871, bubbleDownSelf({ ["timeline"] = { "added 4.0.3.13277" } }, {	-- Security!
 					["provider"] = { "n", 17304 },	-- Overseer Gorthak
 					["coord"] = { 90.9, 58.1, ASHENVALE },

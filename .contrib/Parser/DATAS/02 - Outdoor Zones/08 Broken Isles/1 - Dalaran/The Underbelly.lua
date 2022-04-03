@@ -30,6 +30,7 @@ _.Zones =
 							i(141056),	-- Technique: Glyph of Burnout
 							i(136972, {	-- Tome of Hex: Cockroach
 								["spellID"] = 211015,	-- Hex(Cockroach)
+								["f"] = RECIPES,
 							}),
 						},
 					}),

@@ -475,7 +475,7 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
 							["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
 							["g"] = {
-								i(143502, {		-- Highlord's Golden Charger
+								i(143502, {	-- Highlord's Golden Charger (MOUNT!)
 									["classes"] = { PALADIN },
 								}),
 							},
@@ -715,15 +715,15 @@ _.ExpansionFeatures =
 								i(153177, {	-- Golden Charger's Birdle
 									["cost"] = { { "c", 1220, 500 }, },		-- 500x Order Resources
 								}),
-								i(143503, {	-- Harsh Reins of the Vengeful Charger
+								i(143503, {	-- Highlord's Vengeful Charger (MOUNT!)
 									["classes"] = { PALADIN },
 									["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
 								}),
-								i(143505, {	-- Heraldic Reins of the Valorous Charger
+								i(143505, {	-- Highlord's Valorous Charger (MOUNT!)
 									["classes"] = { PALADIN },
 									["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
 								}),
-								i(143504, {	-- Stoic Reins of the Vigilant Charger
+								i(143504, {	-- Highlord's Vigilant Charger (MOUNT!)
 									["classes"] = { PALADIN },
 									["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
 								}),

@@ -1,7 +1,11 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-local AMANI_HEX_STICK = i(33865);	-- Amani Hex Stick
+local AMANI_HEX_STICK = i(33865, {	-- Amani Hex Stick
+	-- #if BEFORE CATA
+	["description"] = "WARNING: This will despawn if you leave the instance!",
+	-- #endif
+});
 local BADGE_OF_JUSTICE = i(29434);	-- Badge of Justice
 local EXECUTIONER_RECIPE = i(33307);	-- Formula: Enchant Weapon - Executioner
 local MOJO_PET = i(33993);	-- Mojo (PET!)
@@ -18,14 +22,14 @@ local FOREST_FROG = n(24396, {	-- Forest Frog
 		i(33932),	-- Amani Charm of the Witch Doctor
 	},
 });
-root("Instances", tier(TBC_TIER, applylegacyclassicphase(TBC_PHASE_FOUR, {
+root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FOUR, {
 	inst(77, {	-- Zul'Aman
 		["lore"] = "When the high elves were first exiled and landed in Lordaeron, they met violent clashes with the forest trolls, who viewed them as defiling their homeland. At the time of the founding of Quel'Thalas, the Amani Empire was the most powerful empire in the Eastern Kingdoms; they still held much of northern Lordaeron in their territorial grasp.\n\nEventually, the high elves joined with the humans of Arathor and defeated the forest trolls in an immense battle that signaled the end of the forest trolls' empire. The Amani would never recover enough to extend their land beyond their home province of Zul'Aman, but they continued to be an enemy of humans and elves for thousands of years.\n\nZul'jin, planning to take revenge against Quel'Thalas, saw the opportunity when most of the blood elves and Horde were busy fighting on Outland. He had his champions harness the power of the loa with the help of the cunning Hex Lord Malacrass.",
 		["coord"] = { 81.8, 64.3, GHOSTLANDS },	-- Zul'Aman, Ghostlands
 		["mapID"] = ZULAMAN,
 		["isRaid"] = true,
-		["lvl"] = lvlsquish(68, 30, 68),	-- Level 68s could zone in without any attunements. TODO: Check this.
-		["groups"] = {
+		["lvl"] = lvlsquish(68, 30, 68),
+		["groups"] = bubbleDown({ ["timeline"] = { "removed 4.1.0" } }, {
 			-- #if AFTER CATA
 			d(1, {	-- Normal (Legacy)
 			-- #endif
@@ -73,14 +77,14 @@ root("Instances", tier(TBC_TIER, applylegacyclassicphase(TBC_PHASE_FOUR, {
 						-- #endif
 					}),
 					q(11195, {	-- Playin' With Dolls
-						["qg"] = 23897,	-- Zungam
+						["providers"] = {
+							{ "n", 23897 },	-- Zungam
+							{ "i", 33107 },	-- Tattered Voodoo Doll
+						},
 						["sourceQuest"] = 11165,	-- A Troll Among Trolls
 						["coord"] = { 59.3, 36.6, ZULAMAN },
-						["cost"] = {
-							{ "i", 33865, 1 },	-- Amani Hex Stick
-							{ "i", 33107, 1 },	-- Tattered Voodoo Doll
-						},
 						-- #if BEFORE CATA
+						["description"] = "Located in the big hut just southeast of Halazzi's room.",
 						["lvl"] = 70,
 						-- #endif
 						["groups"] = {
@@ -135,12 +139,10 @@ root("Instances", tier(TBC_TIER, applylegacyclassicphase(TBC_PHASE_FOUR, {
 						["coord"] = { 70.5, 68.3, GHOSTLANDS },
 						-- #if BEFORE CATA
 						["lvl"] = 70,
-						-- #endif
 						["groups"] = {
-							-- #if BEFORE CATA
 							BADGE_OF_JUSTICE,	-- Badge of Justice x10
-							-- #endif
 						},
+						-- #endif
 					}),
 					q(11166, {	-- X Marks... Your Doom!
 						["qg"] = 23559,	-- Budd
@@ -148,7 +150,6 @@ root("Instances", tier(TBC_TIER, applylegacyclassicphase(TBC_PHASE_FOUR, {
 						["coord"] = { 70.3, 67.8, GHOSTLANDS },
 						-- #if BEFORE CATA
 						["lvl"] = 70,
-						-- #endif
 						["groups"] = {
 							objective(1, {	-- Examine Halazzi's chamber
 								["coord"] = { 52.2, 21.3, ZULAMAN },
@@ -160,6 +161,7 @@ root("Instances", tier(TBC_TIER, applylegacyclassicphase(TBC_PHASE_FOUR, {
 								["coord"] = { 27.3, 25.1, ZULAMAN },
 							}),
 						},
+						-- #endif
 					}),
 				}),
 				n(ZONE_DROPS, {
@@ -202,13 +204,16 @@ root("Instances", tier(TBC_TIER, applylegacyclassicphase(TBC_PHASE_FOUR, {
 							["groups"] = {
 								removeclassicphase(ach(430, {	-- Amani War Bear
 									["provider"] = { "i", 33809 },	-- Amani War Bear
+									["timeline"] = { "removed 3.0.2" },
 									["filterID"] = MOUNTS,
 									-- #if BEFORE WRATH
 									["description"] = "Obtain the Amani War Bear from the final chest in Zul'Aman.",
 									["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 									-- #endif
 								})),
-								i(33809),	-- Amani War Bear (MOUNT!)
+								i(33809, {	-- Amani War Bear (MOUNT!)
+									["timeline"] = { "removed 3.0.2" },
+								}),
 							},
 						}),
 					},
@@ -315,19 +320,19 @@ root("Instances", tier(TBC_TIER, applylegacyclassicphase(TBC_PHASE_FOUR, {
 			-- #if AFTER CATA
 			}),
 			-- #endif
-		},
+		}),
 	}),
 })));
 
--- #if NOT ANYCLASSIC
 -- These are still used in Retail and aren't removed from game.
-AMANI_HEX_STICK.u = nil;
-EXECUTIONER_RECIPE.u = nil;
-FOREST_FROG.u = nil;
+AMANI_HEX_STICK.timeline = nil;
+EXECUTIONER_RECIPE.timeline = nil;
+FOREST_FROG.timeline = nil;
 -- also clean up the children
-for _,item in pairs(FOREST_FROG.groups) do item.u = nil; end
-MOJO_PET.u = nil;
--- #else
+for _,item in pairs(FOREST_FROG.groups) do item.timeline = nil; end
+MOJO_PET.timeline = nil;
+
+-- #if ANYCLASSIC
 -- We don't want to apply a phase ID for this in this raid, that will be done elsewhere.
-BADGE_OF_JUSTICE.u = nil;
+BADGE_OF_JUSTICE.timeline = nil;
 -- #endif
