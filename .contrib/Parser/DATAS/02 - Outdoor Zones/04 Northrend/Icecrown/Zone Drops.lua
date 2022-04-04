@@ -10,7 +10,7 @@ _.Zones =
 				i(50379),	-- Battered Hilt (Alliance) - These are dropping zone-wide during Shadowlands Prepatch Event; remains to be seen whether they will permanently drop from here.
 				i(50380),	-- Battered Hilt (Horde)
 				i(37331, {	-- Formula: Enchant Cloak - Superior Fire Resistance
-					["u"] = REMOVED_FROM_GAME,
+					["timeline"] = { "removed 5.0.4.10000" },
 					["spellID"] = 0,
 					["crs"] = {
 						31321,	-- Skeletal Runesmith
@@ -37,7 +37,7 @@ _.Zones =
 					["spellID"] = 0,
 				}),
 				i(44559, {	-- Pattern: Fur Lining - Fire Resist
-					["u"] = REMOVED_FROM_GAME,
+					["timeline"] = { "removed 5.0.4.10000" },
 					["spellID"] = 0,
 					["crs"] = {
 						31321,	-- Skeletal Runesmith
