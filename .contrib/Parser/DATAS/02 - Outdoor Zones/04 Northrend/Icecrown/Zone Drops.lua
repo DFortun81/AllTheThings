@@ -64,25 +64,31 @@ _.Zones =
 					["spellID"] = 0,
 				}),
 				i(44564, {	-- Recipe: Mighty Arcane Protection Potion
+					["coord"] = { 50.1, 31.8, ICECROWN },
 					["crs"] = {
 						32297,	-- Cult Researcher
 						31702,	-- Frostbrood Spawn
 					},
 				}),
 				i(44565, {	-- Recipe: Mighty Fire Protection Potion
+					["coord"] = { 58.5, 73.1, ICECROWN },
 					["crs"] = {
 						31321,	-- Skeletal Runesmith
 						30921,	-- Skeletal Runesmith
 						31320,	-- Umbral Brute
+						30922,	-- Umbral Brute
 					},
 				}),
 				i(44566, {	-- Recipe: Mighty Frost Protection Potion
+					["coord"] = { 52.1, 32.0, ICECROWN },
 					["crs"] = { 32289 },	-- Damned Apothecary
 				}),
 				i(44567, {	-- Recipe: Mighty Nature Protection Potion
+					["coord"] = { 50.1, 31.8, ICECROWN },
 					["crs"] = { 32290 },	-- Cult Alchemist
 				}),
 				i(44568, {	-- Recipe: Mighty Shadow Protection Potion
+					["coord"] = { 48.0, 67.8, ICECROWN },
 					["crs"] = { 32349 },	-- Cultist Shard Watcher
 				}),
 			}),
