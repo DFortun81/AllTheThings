@@ -213,6 +213,7 @@ local TooltipSettingsBase = {
 		["Warn:Difficulty"] = true,
 		["Warn:Removed"] = true,
 		["Currencies"] = true,
+		["Reagents"] = false,
 	},
 };
 
@@ -3698,6 +3699,40 @@ function(self)
 end);
 ShowCurrencyCalculationsCheckBox:SetATTTooltip(L["SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP"]);
 ShowCurrencyCalculationsCheckBox:SetPoint("TOPLEFT", ShowModelsCheckBox, "BOTTOMLEFT", 0, 4);
+
+local ShowReagentsCalculationsCheckBox = settings:CreateCheckBox(L["SHOW_REAGENTS_CALCULATIONS_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Reagents"));
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("Reagents", self:GetChecked());
+end);
+ShowReagentsCalculationsCheckBox:SetATTTooltip(L["SHOW_REAGENTS_CALCULATIONS_CHECKBOX_TOOLTIP"]);
+ShowReagentsCalculationsCheckBox:SetPoint("TOPLEFT", ShowCurrencyCalculationsCheckBox, "BOTTOMLEFT", 0, 4);
+
+-- local ShowPlainReagentsCalculationsCheckBox = settings:CreateCheckBox("Display plain materialsin",
+-- function(self)
+	-- self:SetChecked(settings:GetTooltipSetting("ShowIconOnly"));
+	-- if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("Progress") then
+		-- self:Disable();
+		-- self:SetAlpha(0.2);
+	-- else
+		-- self:Enable();
+		-- self:SetAlpha(1);
+	-- end
+-- end,
+-- function(self)
+	-- settings:SetTooltipSetting("ShowIconOnly", self:GetChecked());
+-- end);
+-- ShowPlainReagentsCalculationsCheckBox:SetATTTooltip(L["ICON_ONLY_CHECKBOX_TOOLTIP"]);
+-- ShowPlainReagentsCalculationsCheckBox:SetPoint("TOPLEFT", ShowReagentsCalculationsCheckBox, "BOTTOMLEFT", 8, 4);
 
 local ShowSharedAppearancesCheckBox = settings:CreateCheckBox(L["SHARED_APPEARANCES_CHECKBOX"],
 function(self)
