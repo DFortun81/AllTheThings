@@ -11808,13 +11808,10 @@ local questFields = {
 		-- Finally, check if the quest is otherwise considered 'collected' by normal logic
 		return IsQuestFlaggedCompletedForObject(t);
 	end,
-	-- Questionable Fields... TODO: Investigate if necessary.
 	["altcollected"] = function(t)
-		-- local LOG = t.questID == 8753 and t.questID;
-		-- if LOG then print(LOG,"checking altCollected") end
 		-- determine if an altQuest is considered completed for this quest for this character
 		if t.altQuests then
-			for i,questID in ipairs(t.altQuests) do
+			for _,questID in ipairs(t.altQuests) do
 				if IsQuestFlaggedCompleted(questID) then
 					-- if LOG then print(LOG,"altCollected by",questID) end
 					rawset(t, "altcollected", questID);
@@ -11871,6 +11868,11 @@ local questFields = {
 					end
 					i = i + 1;
 				end
+			end
+			-- if an alt-quest is completed, then this quest is locked
+			if t.altcollected then
+				rawset(t, "locked", t.altcollected);
+				return true;
 			end
 			-- determine if a 'nextQuest' exists and is completed specifically by this character, to remove availability of the breadcrumb
 			if t.isBreadcrumb and t.nextQuests then

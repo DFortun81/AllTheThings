@@ -9,8 +9,15 @@ _.Instances = { tier(CATA_TIER, {
 		["coord"] = { 60.53, 64.29, ULDUM },	-- Lost City of Tol'vir
 		["groups"] = {
 			n(QUESTS, {
+				q(28870, {	-- Return to the Lost City
+					["sourceQuest"] = 28520,	-- The Fall of Neferset City
+					["provider"] = { "n", 47684 },	-- King Phaoris
+					["coord"] = { 54.9, 32.7, ULDUM },
+					["isBreadcrumb"] = true,
+				}),
 				q(28781, {	-- Targets of Opportunity
 					["provider"] = { "n", 50038 },	-- Captain Hadan
+					["sourceQuest"] = 28870,	-- Return to the Lost City
 					["groups"] = {
 						i(66905),	-- Clandestine Spaulders
 						i(66906),	-- Bracers of the Lost City
@@ -19,6 +26,7 @@ _.Instances = { tier(CATA_TIER, {
 				}),
 				q(28783, {	-- The Source of Their Power
 					["provider"] = { "n", 50038 },	-- Captain Hadan
+					["sourceQuest"] = 28870,	-- Return to the Lost City
 					["groups"] = {
 						i(66910),	-- Blight-Lifter's Mantle
 						i(66908),	-- Treads of the Neferset

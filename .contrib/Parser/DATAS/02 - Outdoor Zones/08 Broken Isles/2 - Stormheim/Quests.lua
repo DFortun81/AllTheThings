@@ -1036,7 +1036,9 @@ _.Zones =
 					["coord"] = { 37.8, 21.6, STORMHEIM },
 					["provider"] = { "n", 91158 },	-- Nathanos Blightcaller
 				}),
-				n(BONUS_OBJECTIVES, {
+				n(BONUS_OBJECTIVES, sharedData({
+					["lockCriteria"] = { 1, "lvl", 45 },
+				},{
 					-- TODO: Check SQ also probably cant do after a certain level
 					q(38442, {	-- A Worthy Challenger
 						["coord"] = { 44.8, 45.6, STORMHEIM },
@@ -1061,7 +1063,7 @@ _.Zones =
 					q(42431, {	-- The Brood of Nithogg
 						["coord"] = { 45.2, 36.8, STORMHEIM },
 					}),
-				}),
+				})),
 			--[[ TODO: These quests will be organized soon™
 				q(45534, {	-- A Common Enemy
 					["provider"] = { "n", 117394 },	-- Sigryn

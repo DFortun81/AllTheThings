@@ -1373,7 +1373,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 53779 },	-- The Lies of a Loa
 				}),
-				n(BONUS_OBJECTIVES, sharedData({ ["races"] = HORDE_ONLY }, {
+				n(BONUS_OBJECTIVES, sharedData({
+					["lockCriteria"] = { 1, "lvl", 50 },
+					["races"] = HORDE_ONLY,
+				},{
 					-- TODO: probably cant do after a certain level?
 					q(48934, {	-- Mark of the Damned
 						["sourceQuests"] = {

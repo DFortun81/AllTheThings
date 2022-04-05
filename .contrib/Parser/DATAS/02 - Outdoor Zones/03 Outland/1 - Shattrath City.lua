@@ -424,7 +424,7 @@ local TIER_FIVE_GROUPS = applyclassicphase(TBC_PHASE_TWO, {
 		i(30153, {	-- Breeches of the Avatar
 			["cost"] = { { "i", 30246, 1 }, },	-- Leggings of the Vanquished Defender
 		}),
-		
+
 		i(30154, {	-- Mantle of the Avatar
 			["cost"] = { { "i", 30249, 1 }, },	-- Pauldrons of the Vanquished Defender
 		}),
@@ -762,6 +762,7 @@ root("Zones", {
 						["description"] = "If you want to switch from Aldor to Scryers, use this quest to regain lost Scryers reputation.",
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 						["cost"] = { { "i", 25744, 8 } },	-- Dampscale Basilisk Eye
+						["repeatable"] = true,
 					}),
 					q(10025, {	-- More Basilisk Eyes
 						["qg"] = 18596,	-- Arcanist Adyria
@@ -1287,7 +1288,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,	-- for "A Ghost in the Machine" in SMV, mutually exclusive w/other bcrumbs
 					}),
-					
+
 					-- Scourge Invasion (Wrath Quests) -- TODO: Move these!
 					applyclassicphase(WRATH_PHASE_ONE, q(12753, {	-- A Desperate Alliance
 						["timeline"] = { "added 3.0.2", "removed 3.1.0" },

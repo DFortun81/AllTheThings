@@ -44,6 +44,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					["provider"] = { "n", 168011 },	-- Zo'sorg
 					["coord"] = { 34.7, 57.3, ORIBOS },
 					["timeline"] = { "added 9.1.0" },
+					["isWeekly"] = true,
 					["g"] = {
 						i(186980),	-- Unchained Gladiator's Shackles of Malediction
 					},
@@ -725,6 +726,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				-- ["altQuests"] = { 60129 },	-- Stranger in an Even Stranger Land
 				["sourceQuests"] = { 59770 },	-- Stand as One
 				["isBreadcrumb"] = true,
+				["lockCriteria"] = { 1, "lvl", 60 },
 			}),
 			q(62704, {	-- The Threads of Fate
 				-- Completing this Quest is what actually flags the character as a skip character (62713) if they chose that option
@@ -741,6 +743,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["altQuests"] = { 62713 },	-- Becoming a Skip character will exclude this Quest from being available
 				["isBreadcrumb"] = true,
 				["timeline"] = { "added 9.0.5" },
+				["lockCriteria"] = { 1, "lvl", 60 },
 			}),
 			q(62716, {	-- Re-Introductions
 				["customCollect"] = "SL_SKIP",	-- SL Skip Character

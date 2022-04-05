@@ -105,6 +105,7 @@ root("Zones", {
 				q(62567, {	-- Adventurers Wanted: Chromie's Call
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
+					["lockCriteria"] = { 1, "lvl", 50 },
 				}),
 				q(11451, {	-- Alicia's Poem
 					["provider"] = { "n", 24729 },	-- Alicia
@@ -193,12 +194,14 @@ root("Zones", {
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
+					["lockCriteria"] = { 1, "lvl", 50 },
 				}),
 				q(60120, {	-- Burning Crusade: To Outland!
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.3, 17.3, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
+					["lockCriteria"] = { 1, "lvl", 50 },
 				}),
 				q(29100, {	-- Bwemba's Spirit
 					["sourceQuests"] = { 29156 },	-- The Troll Incursion
@@ -228,6 +231,7 @@ root("Zones", {
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
+					["lockCriteria"] = { 1, "lvl", 50 },
 				}),
 				q(46274, {	-- Consoling the King
 					["sourceQuests"] = { 46272 },	-- Summons to the Keep
@@ -414,6 +418,11 @@ root("Zones", {
 					["isBreadcrumb"] = true,
 					["description"] = "This quest is automatically offered to Alliance players upon reaching level 30.",
 					["races"] = ALLIANCE_ONLY,
+					["lockCriteria"] = { 1,
+						"spellID", 34090,	-- Expert Riding
+						"spellID", 34091,	-- Artisan Riding
+						"spellID", 90265,	-- Master Riding
+					},
 				}),
 				q(44120, {	-- Illidari Allies
 					["sourceQuests"] = { 40593 },	-- Demons Among Us
@@ -446,12 +455,20 @@ root("Zones", {
 					["isBreadcrumb"] = true,
 					["description"] = "This quest is automatically granted to Pandaren upon reaching level 10.",
 					["races"] = { PANDAREN_ALLIANCE },
+					["lockCriteria"] = { 1,
+						"spellID", 33388,	-- Apprentice Riding
+						"spellID", 33391,	-- Journeyman Riding
+						"spellID", 34090,	-- Expert Riding
+						"spellID", 34091,	-- Artisan Riding
+						"spellID", 90265,	-- Master Riding
+					},
 				}),
 				q(60971, {	-- Legion: Onward to Adventure in the Broken Isles
 					["repeatable"] = true,
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
+					["lockCriteria"] = { 1, "lvl", 50 },
 				}),
 				q(58909, {	-- License to Ride
 					["customCollect"] = "NPE",	-- New Player Experience
@@ -535,6 +552,7 @@ root("Zones", {
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
+					["lockCriteria"] = { 1, "lvl", 50 },
 				}),
 				-- MORE BREADCRUMBS, PLEASE DONT PUT THEM EVERWHERE THEY CAN BE PICKED UP. USE MAPS.
 				q(27271, {	-- Journey to the Wizard's Sanctum
@@ -677,6 +695,7 @@ root("Zones", {
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.3, 17.3, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
+					["lockCriteria"] = { 1, "lvl", 50 },
 				}),
 				q(6187,  {	-- Order Must Be Restored
 					["providers"] = {
@@ -1139,6 +1158,7 @@ root("Zones", {
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.3, 17.3, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
+					["lockCriteria"] = { 1, "lvl", 50 },
 				}),
 				q(28405, {	-- Weapons of Darkness
 					["sourceQuests"] = { 28268 },	-- Meet with Lord Grayson Shadowbreaker
@@ -1287,12 +1307,14 @@ root("Zones", {
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
+					["lockCriteria"] = { 1, "lvl", 50 },
 				}),
 				q(60096, {	-- Wrath of the Lich King: To Northrend!
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.3, 17.3, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
+					["lockCriteria"] = { 1, "lvl", 50 },
 				}),
 				q(1698,  {	-- Yorus Barleybrew
 					["provider"] = { "n", 5479 },	-- Wu Shen

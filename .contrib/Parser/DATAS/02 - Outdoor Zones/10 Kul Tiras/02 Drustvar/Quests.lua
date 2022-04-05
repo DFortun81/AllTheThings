@@ -1497,20 +1497,21 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48941 },	-- A Slight Detour
 				}),
-				n(BONUS_OBJECTIVES, {
+				n(BONUS_OBJECTIVES, sharedData({
+					["lockCriteria"] = { 1, "lvl", 50 },
+					["races"] = ALLIANCE_ONLY,
+				},{
 					-- TODO: Check SQ also probably cant do after a certain level
-					["g"] = bubbleDown({ ["races"] = ALLIANCE_ONLY }, {
-						q(48525),	-- Break Them to Splinters
-						q(48474),	-- Crypt Keepers
-						q(47969),	-- Fallhaven's Curse
-						q(48181),	-- Nooooope
-						q(48680),	-- Not the Bees!
-						q(50959),	-- Plundering Pirates
-						q(50448),	-- Reclaiming Corlain
-						q(45972),	-- The Accursed Thicket
-						q(50091),	-- Village Repair
-					}),
-				}),
+					q(48525),	-- Break Them to Splinters
+					q(48474),	-- Crypt Keepers
+					q(47969),	-- Fallhaven's Curse
+					q(48181),	-- Nooooope
+					q(48680),	-- Not the Bees!
+					q(50959),	-- Plundering Pirates
+					q(50448),	-- Reclaiming Corlain
+					q(45972),	-- The Accursed Thicket
+					q(50091),	-- Village Repair
+				})),
 --[[	raw quest list to check against
 				-- Unknown
 				q(50195, {	-- Bilgemaul's Brigade

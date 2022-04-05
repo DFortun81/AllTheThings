@@ -968,7 +968,9 @@ _.Zones =
 					["coord"] = { 51.5, 62.3, 659 },	-- Stonedark Grotto
 					["provider"] = { "n", 95799 },	-- Damrul the Stronk
 				}),
-				n(BONUS_OBJECTIVES, {
+				n(BONUS_OBJECTIVES, sharedData({
+					["lockCriteria"] = { 1, "lvl", 45 },
+				},{
 					-- TODO: Check SQ also probably cant do after a certain level
 					q(39274),	-- Defend the Riverlands
 					q(39576),	-- Echoes of Deathwing
@@ -977,7 +979,7 @@ _.Zones =
 					q(40316),	-- The Screeching Crag
 					q(42373),	-- Vengeance for the Stonedark
 					q(39371),	-- Witches of the Sky
-				}),
+				})),
 	--[[ TODO: These quests will be organized Soon™
 				q(40312),	-- A Timely Opportunity REMOVED
 				q(39646),	-- Albino Elderhorn

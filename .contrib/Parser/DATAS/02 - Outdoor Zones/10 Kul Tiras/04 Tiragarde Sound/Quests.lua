@@ -1510,15 +1510,16 @@ _.Zones =
 					["coord"] = { 65.8, 66.3, TIRAGARDE_SOUND },
 					["races"] = HORDE_ONLY,
 				}),
-				n(BONUS_OBJECTIVES, {
+				n(BONUS_OBJECTIVES, sharedData({
+					["lockCriteria"] = { 1, "lvl", 50 },
+					["races"] = ALLIANCE_ONLY,
+				},{
 					-- TODO: Check SQ also probably cant do after a certain level
-					["g"] = bubbleDown({ ["races"] = ALLIANCE_ONLY }, {
-						q(49300),	-- Creature Corruption
-						q(49739),	-- Enemies at the Gate
-						q(50009),	-- Shipwreck Recovery Crew
-						q(49529),	-- Spring Cleaning
-					}),
-				}),
+					q(49300),	-- Creature Corruption
+					q(49739),	-- Enemies at the Gate
+					q(50009),	-- Shipwreck Recovery Crew
+					q(49529),	-- Spring Cleaning
+				})),
 				-- Want to see q49310 The Prophet's Ploy? Its under Boralus>Quests
 --[[	raw quest list to check against
 				-- Unknown

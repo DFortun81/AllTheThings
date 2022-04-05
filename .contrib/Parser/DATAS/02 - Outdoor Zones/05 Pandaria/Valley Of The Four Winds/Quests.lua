@@ -901,12 +901,6 @@ _.Zones =
 					["coord"] = { 54.6, 47.0, VALLEY_OF_THE_FOUR_WINDS },
 					["provider"] = { "n", 64597 },	-- Nana Mudclaw
 				}),
-				q(30085, {	-- Into the Brewery
-					["sourceQuests"] = { 30078 },	-- Cleaning House
-					["isBreadcrumb"] = true,
-					["coord"] = { 36.0, 69.1, VALLEY_OF_THE_FOUR_WINDS },
-					["provider"] = { "n", 56133 },	-- Chen Stormstout
-				}),
 				q(30653, {	-- It Does You No Good In The Keg
 					["sourceQuests"] = { 29990 },	-- Training and Discipline
 					["races"] = HORDE_ONLY,
