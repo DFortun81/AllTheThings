@@ -41,6 +41,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(189907),	-- Crown of Contorted Thought
 					i(190009),	-- Hammer of Shattered Works
 					i(190732),	-- Strand of Tainted Relics
+					i(189715),	-- Pocopoc's Diamond Vambraces
 				},
 			}),
 			n(180917, {	-- Destabilized Core
