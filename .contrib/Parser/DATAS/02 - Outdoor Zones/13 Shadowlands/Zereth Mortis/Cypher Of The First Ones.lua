@@ -342,7 +342,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				}),
 				o(375988, {	-- Firim in Exile, Epilogue
 					["coord"] = { 34.3, 48.8, ZERETH_MORTIS },
-					--["questID"] = ,
+					["questID"] = 65747,
 					["g"] = {
 						i(189753),	-- Firim in Exile, Epilogue
 					},

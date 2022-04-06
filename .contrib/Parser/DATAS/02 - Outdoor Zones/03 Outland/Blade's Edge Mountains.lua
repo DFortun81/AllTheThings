@@ -12,21 +12,21 @@ local OnTooltipForOgrila = [[function(t)
 		end
 		local banishedRep = isHuman and 385 or 350;
 		GameTooltip:AddDoubleLine(t.banished.text or RETRIEVING_DATA, _.L[t.banished.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. banishedRep .. " Rep");
-		
+
 		if not t.bombed then
 			local f = _.SearchForField("questID", 11023);
 			if f and #f > 0 then t.bombed = f[1]; end
 		end
 		local bombedRep = isHuman and 550 or 500;
 		GameTooltip:AddDoubleLine((t.bombed.text or RETRIEVING_DATA), _.L[t.bombed.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. bombedRep .. " Rep");
-		
+
 		if not t.relic then
 			local f = _.SearchForField("questID", 11080);
 			if f and #f > 0 then t.relic = f[1]; end
 		end
 		local relicRep = isHuman and 385 or 350;
 		GameTooltip:AddDoubleLine((t.relic.text or RETRIEVING_DATA), _.L[t.relic.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. relicRep .. " Rep");
-		
+
 		if not t.wrangled then
 			local f = _.SearchForField("questID", 11066);
 			if f and #f > 0 then t.wrangled = f[1]; end
@@ -70,24 +70,24 @@ root("Zones", {
 							-- Sylvanaar (A)
 							10518,	-- Planting the Banner
 							10504,	-- The Bladespire Ogres
-							
+
 							-- Thunderlord Stronghold (H)
 							10505,	-- The Bloodmaul Ogres (need to verify horde quests, might be more needed)
-							
+
 							-- Toshley's Station (A)
 							10594,	-- Gauging the Resonant Frequency
 							10671,	-- More than a Pound of Flesh
 							10675,	-- Show Them Gnome Mercy!
-							
+
 							-- Reunion (H)
 							10742,	-- Showdown
-							
+
 							-- The Gronn Threat (A)
 							10806,	-- Showdown
-							
+
 							-- The Mok'Nathal (H)
 							10867,	-- There Can Be Only One Response
-							
+
 							-- Ruuan Weald (A+H)
 							10748,	-- Maxnar Must Die!
 						},
@@ -1186,12 +1186,7 @@ root("Zones", {
 						["qg"] = 23053,	-- Bladespire Supplicant
 						["sourceQuest"] = 11000,	-- Into the Soulgrinder
 						["coord"] = { 56.2, 48.0, BLADES_EDGE_MOUNTAINS },
-						["races"] = {
-							NIGHTELF,
-						-- #if AFTER BFA
-							HUMAN,
-						-- #endif
-						},
+						["altQuests"] = { 10984 },	-- Speak with the Ogre
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(70, 20, 70),
 					}),

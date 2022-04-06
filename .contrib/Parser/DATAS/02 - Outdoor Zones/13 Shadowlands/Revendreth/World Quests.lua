@@ -233,6 +233,31 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 							i(183730),	-- Sinstone-Studded Greathelm
 						},
 					}),
+					i(180298),	-- Amalgamation of Sin
+					i(180299),	-- Amalgamation of Sin
+					i(180300),	-- Amalgamation of Sin
+					i(180301),	-- Amalgamation of Sin
+					i(180302),	-- Amalgamation of Sin
+					i(180303),	-- Amalgamation of Sin
+					i(180304),	-- Amalgamation of Sin
+					i(180305),	-- Amalgamation of Sin
+					i(180306),	-- Amalgamation of Sin
+					i(180357),	-- Amalgamation of Sin
+					i(180358),	-- Amalgamation of Sin
+					i(180359),	-- Amalgamation of Sin
+					i(180360),	-- Amalgamation of Sin
+					i(180361),	-- Amalgamation of Sin
+					i(180362),	-- Amalgamation of Sin
+					i(180363),	-- Amalgamation of Sin
+					i(180364),	-- Amalgamation of Sin
+					i(180365),	-- Amalgamation of Sin
+					i(180366),	-- Amalgamation of Sin
+					i(180367),	-- Amalgamation of Sin
+					i(180368),	-- Amalgamation of Sin
+					i(180369),	-- Amalgamation of Sin
+					i(180370),	-- Amalgamation of Sin
+					i(180371),	-- Amalgamation of Sin
+					i(180373),	-- Amalgamation of Sin
 				},
 			}),
 			q(60654, {	-- Swarming Souls

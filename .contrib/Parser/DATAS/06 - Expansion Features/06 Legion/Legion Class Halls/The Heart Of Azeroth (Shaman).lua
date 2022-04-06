@@ -113,7 +113,7 @@ _.ExpansionFeatures =
 						q(41888, {	-- Allegiance of Flame
 							["classes"] = { SHAMAN },
 							["lvl"] = 110,
-							["provider"] = { "n", 105120 },	-- Lord Smolderon
+							["provider"] = { "n", 105594 },	-- Lord Smolderon
 							["sourceQuests"] = { 41934 },	-- The Brand of Damnation
 							["maps"] = { 738 },	-- Firelands
 							["g"] = {

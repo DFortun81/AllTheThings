@@ -30,7 +30,7 @@ _.Zones =
 				i(14476, {	-- Pattern: Cindercloth Gloves
 					-- Started dropping again in 8.2.  The new version (167887) is also available from Time-Lost Trader
 					["crs"] = { 5861 },	-- Twilight Fire Guard
-					["coord"] = { 
+					["coords"] = {
 						{ 19.4, 36.6, SEARING_GORGE },
 						{ 25.4, 25.4, SEARING_GORGE },
 					},
@@ -38,7 +38,7 @@ _.Zones =
 				i(14471, {	-- Pattern: Cindercloth Vest
 					-- Started dropping again in 8.2.  The new version (167887) is also available from Time-Lost Trader
 					["crs"] = { 5861 },	-- Twilight Fire Guard
-					["coord"] = { 
+					["coords"] = {
 						{ 19.4, 36.6, SEARING_GORGE },
 						{ 25.4, 25.4, SEARING_GORGE },
 					},

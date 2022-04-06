@@ -80,7 +80,7 @@ root("HiddenQuestTriggers", {
 	q(64408),	-- hitting Renown 48 [Priest] (received Memory of Bwonsamdi's Pact)
 	q(64401),	-- hitting Renown 48 [Rogue] (received Memory of Toxic Onslaught)
 	q(64416),	-- hitting Renown 48 [Shaman] (received Memory of the Seeds of Rampant Growth)
-	-- q( ),	-- hitting Renown 48 [Warlock] (received Memory of the Decaying Soul Satchel)
+	q(64402),	-- hitting Renown 48 [Warlock] (received Memory of the Decaying Soul Satchel)
 	q(64423),	-- hitting Renown 48 [Warrior] (received Memory of Nature's Fury)
 	q(64081),	-- hitting Renown 50
 	q(64449),	-- hitting Renown 52

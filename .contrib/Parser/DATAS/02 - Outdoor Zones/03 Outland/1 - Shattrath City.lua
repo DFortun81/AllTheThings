@@ -424,7 +424,7 @@ local TIER_FIVE_GROUPS = applyclassicphase(TBC_PHASE_TWO, {
 		i(30153, {	-- Breeches of the Avatar
 			["cost"] = { { "i", 30246, 1 }, },	-- Leggings of the Vanquished Defender
 		}),
-		
+
 		i(30154, {	-- Mantle of the Avatar
 			["cost"] = { { "i", 30249, 1 }, },	-- Pauldrons of the Vanquished Defender
 		}),
@@ -935,6 +935,7 @@ root("Zones", {
 					q(10984, {	-- Speak with the Ogre
 						["qg"] = 22497,	-- V'eru
 						["coord"] = { 56.4, 49.2, SHATTRATH_CITY },
+						["altQuests"] = { 11022 },	-- Speak with Mog'dorg
 						["isBreadcrumb"] = true,
 					}),
 					q(10917,  {  -- The Outcast's Plight
@@ -1287,7 +1288,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,	-- for "A Ghost in the Machine" in SMV, mutually exclusive w/other bcrumbs
 					}),
-					
+
 					-- Scourge Invasion (Wrath Quests) -- TODO: Move these!
 					applyclassicphase(WRATH_PHASE_ONE, q(12753, {	-- A Desperate Alliance
 						["timeline"] = { "added 3.0.2", "removed 3.1.0" },

@@ -2962,7 +2962,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				tier(SL_TIER, 0.1, {
 					i(177146),	-- Shaleshell Pendant
 					i(177165),	-- Shaleshell Pendant
-					i(179386),	-- Tidesage Necklace
 					i(175735),	-- 9.0 QRP - Bastion - Accessory - Neck
 				}),
 				tier(SL_TIER, 1.0, {
@@ -3037,31 +3036,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(183947),	-- Add Keystone Affix: Storming
 				i(180734),	-- Alchemist's Journal
 				i(181341),	-- Alexandros Mograine
-				i(180298),	-- Amalgamation of Sin
-				i(180299),	-- Amalgamation of Sin
-				i(180300),	-- Amalgamation of Sin
-				i(180301),	-- Amalgamation of Sin
-				i(180302),	-- Amalgamation of Sin
-				i(180303),	-- Amalgamation of Sin
-				i(180304),	-- Amalgamation of Sin
-				i(180305),	-- Amalgamation of Sin
-				i(180306),	-- Amalgamation of Sin
-				i(180357),	-- Amalgamation of Sin
-				i(180358),	-- Amalgamation of Sin
-				i(180359),	-- Amalgamation of Sin
-				i(180360),	-- Amalgamation of Sin
-				i(180361),	-- Amalgamation of Sin
-				i(180362),	-- Amalgamation of Sin
-				i(180363),	-- Amalgamation of Sin
-				i(180364),	-- Amalgamation of Sin
-				i(180365),	-- Amalgamation of Sin
-				i(180366),	-- Amalgamation of Sin
-				i(180367),	-- Amalgamation of Sin
-				i(180368),	-- Amalgamation of Sin
-				i(180369),	-- Amalgamation of Sin
-				i(180370),	-- Amalgamation of Sin
-				i(180371),	-- Amalgamation of Sin
-				i(180373),	-- Amalgamation of Sin
 				i(174781),	-- Anisykos's Favorite Hammer
 				i(178147),	-- Army of the Darkness Insignia
 				i(178886),	-- Baroness Vashj

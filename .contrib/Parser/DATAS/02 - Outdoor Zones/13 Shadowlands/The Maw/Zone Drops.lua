@@ -18,9 +18,21 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 			i(186564, {	-- Golden Eye
 				["cr"] = 177132,	-- Helsworn Soulseeker
 			}),
-			i(186559, {	-- Grappling Gauntlet
-				["crs"] = {
+			i(186559, {	-- Grappling Gauntlet (PET!)
+				["description"] = "Available in The Maw, Korthia, Zereth Mortis.",
+				["maps"] = {
+					THE_MAW,
+					KORTHIA,
+					ZERETH_MORTIS
+				},
+				["crs"] = {	-- 142 NPCs listed on Wowhead... just listing a few of the more common
+					182284,	-- Dreadsworn Guard
 					173138,	-- Mawsworn Outrider
+					177292,	-- Mawsworn Mutilator
+					184471,	-- Mawsworn Myrmidon
+					184545,	-- Mawsworn Plunderer
+					179305,	-- Mawsworn Steelshaper
+					177293,	-- Mawsworn Torturer
 					157824,	-- Protector of Flame
 				},
 			}),

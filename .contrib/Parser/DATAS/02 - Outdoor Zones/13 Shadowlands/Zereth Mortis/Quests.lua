@@ -1186,11 +1186,6 @@ root("HiddenQuestTriggers", m(SHADOWLANDS, {
 
 		q(65378),	-- Starting Secret Teleport System at Gravid Repose
 
-		q(65343),	-- Camber Alcove Arrangement at Gravid Repose
-		q(65347),	-- Fulgore Alcove Arrangement at Gravid Repose
-		q(65344),	-- Repertory Alcove Arrangement at Gravid Repose
-		q(65345),	-- Rondure Alcove Arrangement at Gravid Repose
-
 		q(65650),	-- Completing Camber Alcove puzzle
 
 		q(65707),	-- Triggered when killing Phalangax, the Final Grasp
