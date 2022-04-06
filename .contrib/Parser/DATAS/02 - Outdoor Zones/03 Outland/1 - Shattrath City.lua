@@ -936,6 +936,7 @@ root("Zones", {
 					q(10984, {	-- Speak with the Ogre
 						["qg"] = 22497,	-- V'eru
 						["coord"] = { 56.4, 49.2, SHATTRATH_CITY },
+						["altQuests"] = { 11022 },	-- Speak with Mog'dorg
 						["isBreadcrumb"] = true,
 					}),
 					q(10917,  {  -- The Outcast's Plight

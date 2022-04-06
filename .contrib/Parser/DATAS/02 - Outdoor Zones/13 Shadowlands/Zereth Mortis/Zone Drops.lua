@@ -4,8 +4,6 @@
 root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 	m(ZERETH_MORTIS, {
 		n(ZONE_DROPS, {
-			-- Pet
-			i(186559),	-- Grappling Gauntlet
 			-- Quest
 			i(190579),	-- Unformed Essence
 			-- Schematic

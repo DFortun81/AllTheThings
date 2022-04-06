@@ -168,7 +168,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["coord"] = { 66.6, 49.9, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 129858 },	-- Wulfred Fizzbracket
+					["provider"] = { "n", 134509 },	-- Lead Guide Zipwrench
 				}),
 				q(49710, {	-- An Offering of Eggs
 					["sourceQuests"] = { 49394 },	-- Hold Still

@@ -1267,6 +1267,20 @@ root("Zones", {
 							i(27942, {	-- Incendic Rod
 								["cost"] = { { "i", 24579, 15 }, },	-- 15x Mark of Honor Hold
 							}),
+							-- #if BEFORE MOP
+							i(27929, {	-- Terminal Edge
+								["cost"] = { { "i", 24579, 15 }, },	-- 15x Mark of Honor Hold
+								["timeline"] = { "removed 5.0.4.10000" },
+							}),
+							i(27990, {	-- Idol of Savagery
+								["cost"] = { { "i", 24579, 15 }, },	-- 15x Mark of Honor Hold
+								["timeline"] = { "removed 5.0.4.10000" },
+							}),
+							i(27983, {	-- Libram of Zeal
+								["cost"] = { { "i", 24579, 15 }, },	-- 15x Mark of Honor Hold
+								["timeline"] = { "removed 5.0.4.10000" },
+							}),
+							-- #endif
 							i(27921, {	-- Mark of Conquest
 								["cost"] = { { "i", 24579, 30 }, },	-- 30x Mark of Honor Hold
 							}),
@@ -1277,8 +1291,8 @@ root("Zones", {
 								["cost"] = { { "i", 24579, 30 }, },	-- 30x Mark of Honor Hold
 							}),
 							-- #if BEFORE MOP
-							i(27929, {	-- Terminal Edge
-								["cost"] = { { "i", 24581, 15 }, },	-- 15x Mark of Thrallmar
+							i(27984, {	-- Totem of Impact
+								["cost"] = { { "i", 24579, 15 }, },	-- 15x Mark of Honor Hold
 								["timeline"] = { "removed 5.0.4.10000" },
 							}),
 							-- #endif
@@ -1405,9 +1419,26 @@ root("Zones", {
 						["coord"] = { 33.0, 49.0, ZANGARMARSH },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
+							i(27930, {	-- Splintermark
+								["cost"] = { { "i", 24581, 15 }, },	-- 15x Mark of Thrallmar
+							}),
 							i(27939, {	-- Incendic Rod
 								["cost"] = { { "i", 24581, 15 }, },	-- 15x Mark of Thrallmar
 							}),
+							-- #if BEFORE MOP
+							i(27928, {	-- Terminal Edge
+								["cost"] = { { "i", 24581, 15 }, },	-- 15x Mark of Thrallmar
+								["timeline"] = { "removed 5.0.4.10000" },
+							}),
+							i(27989, {	-- Idol of Savagery
+								["cost"] = { { "i", 24581, 15 }, },	-- 15x Mark of Thrallmar
+								["timeline"] = { "removed 5.0.4.10000" },
+							}),
+							i(27949, {	-- Libram of Zeal
+								["cost"] = { { "i", 24581, 15 }, },	-- 15x Mark of Thrallmar
+								["timeline"] = { "removed 5.0.4.10000" },
+							}),
+							-- #endif
 							i(27920, {	-- Mark of Conquest
 								["cost"] = { { "i", 24581, 30 }, },	-- 30x Mark of Thrallmar
 							}),
@@ -1417,11 +1448,8 @@ root("Zones", {
 							i(27926, {	-- Mark of Vindication
 								["cost"] = { { "i", 24581, 30 }, },	-- 30x Mark of Thrallmar
 							}),
-							i(27930, {	-- Splintermark
-								["cost"] = { { "i", 24581, 15 }, },	-- 15x Mark of Thrallmar
-							}),
 							-- #if BEFORE MOP
-							i(27928, {	-- Terminal Edge
+							i(27947, {	-- Totem of Impact
 								["cost"] = { { "i", 24581, 15 }, },	-- 15x Mark of Thrallmar
 								["timeline"] = { "removed 5.0.4.10000" },
 							}),

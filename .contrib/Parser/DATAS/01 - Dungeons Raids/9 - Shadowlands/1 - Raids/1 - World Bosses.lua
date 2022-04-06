@@ -87,6 +87,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					i(190617),	-- Destruction-Core Handlers
 					i(190618),	-- Lattice of the Distant Keeper
 					i(190620),	-- Sav'thul's Calamitous Tantour
+					i(189709),	-- Pocopoc's Cobalt and Copper Body 
 				}),
 			})),
 			e(2456, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {	-- Mor'geth <Tormentor of the Damned>

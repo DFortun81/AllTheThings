@@ -501,9 +501,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					recipe(364703),	-- Leaping Leporid
 					recipe(364697),	-- Microlicid
 					recipe(364679),	-- Multichicken
-					recipe(364689, {	-- Omnipotential Core
-						["OnUpdate"] = [[function(t) return C_QuestLog.IsQuestFlaggedCompleted(65348); end]],
-					}),
+					recipe(364689),	-- Omnipotential Core
 					recipe(364689),	-- Omnipotential Core
 					recipe(364691),	-- Prototickles
 					recipe(364690),	-- Resonant Echo

@@ -342,7 +342,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				}),
 				o(375988, {	-- Firim in Exile, Epilogue
 					["coord"] = { 34.3, 48.8, ZERETH_MORTIS },
-					--["questID"] = ,
+					["questID"] = 65747,
 					["g"] = {
 						i(189753),	-- Firim in Exile, Epilogue
 					},
@@ -608,7 +608,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(SL_TIER, {
-		m(ZERETH_MORTIS, {
+		n(-988, {	-- Cypher of the First Ones
 			i(190392),	-- Pocopoc Shield
 			n(ACHIEVEMENTS, {
 				ach(15559),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Aealic
