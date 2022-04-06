@@ -21,7 +21,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 			i(186559, {	-- Grappling Gauntlet (PET!)
 				["description"] = "Available in The Maw, Korthia, Zereth Mortis.",
 				["maps"] = {
-					THE_MAW,
 					KORTHIA,
 					ZERETH_MORTIS
 				},
