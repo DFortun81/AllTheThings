@@ -15,7 +15,16 @@ _.Zones =
 					},
 				}),
 				n(472, {	-- Fedfennel
-					["coord"] = { 66.5, 40.7, ELWYNN_FOREST },
+					["coords"] = {
+						{ 66.4, 40.4, ELWYNN_FOREST },
+						{ 66.8, 41.6, ELWYNN_FOREST },
+						{ 67.0, 39.2, ELWYNN_FOREST },
+						{ 67.8, 39.4, ELWYNN_FOREST },
+						{ 67.8, 47.0, ELWYNN_FOREST },
+						{ 68.0, 44.4, ELWYNN_FOREST },
+						{ 69.2, 38.6, ELWYNN_FOREST },
+						{ 70.2, 40.0, ELWYNN_FOREST },
+					},
 					["g"] = {
 						i(3233),	-- Gnoll Hide Sack
 						i(5744),	-- Pale Skinner
