@@ -15060,6 +15060,23 @@ app.StoreWindowPosition = function(self)
 		end
 	end
 end
+-- Adds ATT information about the list of Quests into the provided tooltip
+local function AddQuestInfoToTooltip(tooltip, quests)
+	if quests and tooltip.AddLine then
+		local text;
+		for _,q in ipairs(quests) do
+			text = GetCompletionIcon(q.saved) .. " " .. q.questID .. ": " .. (q.text or RETRIEVING_DATA);
+			if q.mapID then
+				text = text .. " (" .. (app.GetMapName(q.mapID) or RETRIEVING_DATA) .. ")";
+			elseif q.maps then
+				text = text .. " (" .. (app.GetMapName(q.maps[1]) or RETRIEVING_DATA) .. ")";
+			elseif q.coords then
+				text = text .. " (" .. (app.GetMapName(q.coords[1][3]) or RETRIEVING_DATA) .. ")";
+			end
+			tooltip:AddLine(text);
+		end
+	end
+end
 local RowOnEnter, RowOnLeave;
 local function RowOnClick(self, button)
 	local reference = self.ref;
@@ -15949,43 +15966,22 @@ RowOnEnter = function (self)
 			end
 			if prereqs and #prereqs > 0 then
 				GameTooltip:AddLine(L["PREREQUISITE_QUESTS"]);
-				local text;
-				for i,prereq in ipairs(prereqs) do
-					text = GetCompletionIcon(prereq.saved) .. " " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA);
-					if prereq.mapID then
-						text = text .. " (" .. (app.GetMapName(prereq.mapID) or RETRIEVING_DATA) .. ")";
-					elseif prereq.maps then
-						text = text .. " (" .. (app.GetMapName(prereq.maps[1]) or RETRIEVING_DATA) .. ")";
-					elseif prereq.coords then
-						text = text .. " (" .. (app.GetMapName(prereq.coords[1][3]) or RETRIEVING_DATA) .. ")";
-					end
-					GameTooltip:AddLine(text);
-				end
+				AddQuestInfoToTooltip(GameTooltip, prereqs);
 			end
 			if bc and #bc > 0 then
 				GameTooltip:AddLine(L["BREADCRUMBS_WARNING"]);
-				local text;
-				for i,prereq in ipairs(bc) do
-					text = GetCompletionIcon(prereq.saved) .. " " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA);
-					if prereq.mapID then
-						text = text .. " (" .. (app.GetMapName(prereq.mapID) or RETRIEVING_DATA) .. ")";
-					elseif prereq.maps then
-						text = text .. " (" .. (app.GetMapName(prereq.maps[1]) or RETRIEVING_DATA) .. ")";
-					elseif prereq.coords then
-						text = text .. " (" .. (app.GetMapName(prereq.coords[1][3]) or RETRIEVING_DATA) .. ")";
-					end
-					GameTooltip:AddLine(text);
-				end
+				AddQuestInfoToTooltip(GameTooltip, bc);
 			end
 		end
 
 		-- Show Breadcrumb information
+		local lockedWarning;
 		if reference.isBreadcrumb then
 			GameTooltip:AddLine(string.format("|c%s%s|r", app.Colors.Locked, L["THIS_IS_BREADCRUMB"]));
 			if reference.nextQuests then
 				local isBreadcrumbAvailable = true;
 				local nextq, nq = {};
-				for i,nextQuestID in ipairs(reference.nextQuests) do
+				for _,nextQuestID in ipairs(reference.nextQuests) do
 					if nextQuestID > 0 then
 						nq = app.SearchForObject("questID", nextQuestID);
 						-- existing quest group
@@ -16002,37 +15998,27 @@ RowOnEnter = function (self)
 				if isBreadcrumbAvailable then
 					-- The character is able to accept the breadcrumb quest without Party Sync
 					GameTooltip:AddLine(L["BREADCRUMB_PARTYSYNC"]);
-				else
+					AddQuestInfoToTooltip(GameTooltip, nextq);
+				elseif not reference.DisablePartySync then
 					-- The character wont be able to accept this quest without the help of a lower level character using Party Sync
 					GameTooltip:AddLine(string.format("|c%s%s|r", app.Colors.LockedWarning, L["BREADCRUMB_PARTYSYNC_2"]));
+					AddQuestInfoToTooltip(GameTooltip, nextq);
+				else
+					-- known to not be possible in party sync
+					GameTooltip:AddLine(L["DISABLE_PARTYSYNC"]);
 				end
-				local text;
-				for i,nquest in ipairs(nextq) do
-					text = GetCompletionIcon(nquest.saved) .. " " .. nquest.questID .. ": " .. (nquest.text or RETRIEVING_DATA);
-					if nquest.mapID then
-						text = text .. " (" .. (app.GetMapName(nquest.mapID) or RETRIEVING_DATA) .. ")";
-					elseif nquest.maps then
-						text = text .. " (" .. (app.GetMapName(nquest.maps[1]) or RETRIEVING_DATA) .. ")";
-					elseif nquest.coords then
-						text = text .. " (" .. (app.GetMapName(nquest.coords[1][3]) or RETRIEVING_DATA) .. ")";
-					end
-					GameTooltip:AddLine(text);
-				end
-			elseif not reference.DisablePartySync then
-				-- There is no information about next quests that invalidates the breadcrumb
-				GameTooltip:AddLine(string.format("|c%s%s|r", app.Colors.LockedWarning, L["BREADCRUMB_PARTYSYNC_3"]));
+				lockedWarning = true;
 			end
 		end
 
 		-- Show information about it becoming locked due to some criteira
-		-- TODO: localize these when finalized
 		local lockCriteria = reference.lc;
 		if lockCriteria then
 			-- list the reasons this may become locked
 			local critKey, critValue;
 			local critFuncs = app.QuestLockCriteriaFunctions;
 			local critFunc;
-			GameTooltip:AddLine(string.format("|c%sBecomes unavailable if %d of the following are met:|r", app.Colors.LockedWarning, lockCriteria[1]));
+			GameTooltip:AddLine(string.format(L["UNAVAILABLE_WARNING_FORMAT"], app.Colors.LockedWarning, lockCriteria[1]));
 			for i=2,#lockCriteria,1 do
 				critKey = lockCriteria[i];
 				i = i + 1;
@@ -16044,16 +16030,16 @@ RowOnEnter = function (self)
 					GameTooltip:AddLine(GetCompletionIcon(critFunc(critValue)).." "..label..": "..text);
 				end
 			end
-			-- and it is already locked
-			if reference.locked then
-				if not reference.DisablePartySync then
-					-- should be possible in party sync
-					GameTooltip:AddLine(string.format("|c%s%s|r", app.Colors.LockedWarning, L["BREADCRUMB_PARTYSYNC_3"]));
-				else
-					-- known to not be possible in party sync
-					-- TODO: text to indicate that the quest cannot be completed on this character, even using Party Sync
-					GameTooltip:AddLine("This is likely not able to be completed by this character even using Party Sync. If you manage otherwise, please let us know on Discord!");
-				end
+		end
+
+		-- it is locked and no warning has been added to the tooltip
+		if not lockedWarning and reference.locked then
+			if not reference.DisablePartySync then
+				-- should be possible in party sync
+				GameTooltip:AddLine(string.format("|c%s%s|r", app.Colors.LockedWarning, L["BREADCRUMB_PARTYSYNC_3"]));
+			else
+				-- known to not be possible in party sync
+				GameTooltip:AddLine(L["DISABLE_PARTYSYNC"]);
 			end
 		end
 
