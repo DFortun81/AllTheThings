@@ -3255,16 +3255,6 @@ subroutines = {
 			{"pop"},									-- Discard the Header and acquire all of their children.
 		}
 	end,
-	-- Pet Battle Rewards
-	["common_pb_rewards"] = function(itemID)
-		return {
-			{"select", "headerID", -796},				-- Pet Battle
-			{"pop"},									-- Discard the Header and acquire all of their children.
-			{"where", "headerID", -18},					-- REWARDS Header
-			{"pop"},									-- Discard the Header and acquire all of their children.
-			{"where", "itemID", itemID},				-- Which Container
-		}
-	end,
 	-- Korthian Armaments
 	["korthian_armaments"] = function(invtyp)
 		return {
