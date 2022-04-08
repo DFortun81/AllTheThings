@@ -2681,13 +2681,27 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					["modID"] = 4
 				}),
 				-- LFR Alt
+				i(190470, {	-- Cinch of Unity DH
+					["bonusID"] = 6896
+				}),
+				i(190470, {	-- Cinch of Unity DH
+					["modID"] = 4
+				}),
 				i(190466, {	-- Clasp of Unity Hunter
 					["bonusID"] = 6896
 				}),
 				i(190466, {	-- Clasp of Unity Hunter
 					["modID"] = 4
 				}),
-				-- LFR alt Mage
+				i(190474, {	-- Girdle of Unity Pala
+					["modID"] = 4
+				}),
+				i(190474, {	-- Girdle of Unity Pala
+					["bonusID"] = 6896
+				}),
+				i(190468, {	-- Cord of Unity Priest
+					["bonusID"] = 6896
+				}),
 				i(190464, {	-- Cord of Unity Mage
 					["bonusID"] = 6896
 				}),
