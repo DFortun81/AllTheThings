@@ -5116,7 +5116,11 @@ app.NestSourceQuests = function(root, addedQuests, depth)
 			if p[1] == "i" then
 				-- print("Root Provider",p[1], p[2]);
 				local pRef = app.SearchForObject("itemID", p[2]);
-				NestObject(root, pRef, true, 1);
+				if pRef then
+					NestObject(root, pRef, true, 1);
+				else
+					NestObject(root, app.CreateItem(p[2]), nil, 1);
+				end
 			end
 		end
 	end
@@ -14515,7 +14519,12 @@ function app:CreateMiniListForGroup(group)
 						-- print("Root Provider",p[1], p[2]);
 						local pRef = app.SearchForObject("itemID", p[2]);
 						if pRef then
-							pRef = CloneData(pRef);
+							pRef = CreateObject(pRef);
+							-- Set the full Quest Chain as the child of the Item
+							pRef.g = g;
+							g = { pRef };
+						else
+							pRef = app.CreateItem(p[2]);
 							-- Set the full Quest Chain as the child of the Item
 							pRef.g = g;
 							g = { pRef };
@@ -14944,7 +14953,8 @@ local function RowOnClick(self, button)
 		local window = self:GetParent():GetParent();
 		-- All non-Shift Right Clicks open a mini list or the settings.
 		if button == "RightButton" then
-			if IsAltKeyDown() and (self.index > 0 or window.isQuestChain) then
+			-- Plot waypoints, not from window header unless a popout window
+			if IsAltKeyDown() and (self.index > 0 or window.ExpireTime) then
 				AddTomTomWaypoint(reference);
 			elseif IsShiftKeyDown() then
 				if app.Settings:GetTooltipSetting("Sort:Progress") then

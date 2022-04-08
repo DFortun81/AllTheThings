@@ -309,9 +309,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 			n(SPECIAL, {
 				i(189167, {	-- Glimmer of Satisfaction
 					["description"] = "Eating a feast has a chance to spawn this item in your inventory.",
-					["maps"] = {
-						ZERETH_MORTIS,
-					},
 				}),
 				n(185032, {	-- Taskmaster Xy'pro <Cartel Xy>
 					["description"] = "Killed when having 3 stacks of Synergy",
