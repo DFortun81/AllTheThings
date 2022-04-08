@@ -28,6 +28,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(189989),	-- Penguin Soul
 				},
 			}),
+			i(189167, {	-- Glimmer of Satisfaction
+				["description"] = "Eating a feast has a chance to spawn this item in your inventory.",
+			}),
 		})
 	}),
 })));
