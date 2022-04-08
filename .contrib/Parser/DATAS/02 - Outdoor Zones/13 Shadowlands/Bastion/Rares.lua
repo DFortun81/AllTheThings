@@ -47,10 +47,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				},
 			}),
 			n(171211, { -- Aspirant Eolis
-				["description"] = "Fragile Humility Scrolls can be found throughout the Court of Elation.  They are floating unfurled scrolls that do not sparkle, but glow purple.  After you find one, read it to Eolis to start the encounter.",
+				["description"] = "Fragile Humility Scrolls can be found throughout the Court of Elation.  They are floating unfurled scrolls that do not sparkle, but glow purple.  After you find one, read it to Eolis to start the encounter.\n\nOnly available to level 60 characters, both spawning and looting.",
 				["questID"] = 61083,
 				["isDaily"] = true,
 				["coord"] = { 32.6, 23.4, BASTION },
+				["lvl"] = { 60 },
 				["g"] = {
 					crit(22, {	-- Aspirant Eolis
 						["achievementID"] = 14307,	-- Adventurer of Bastion
