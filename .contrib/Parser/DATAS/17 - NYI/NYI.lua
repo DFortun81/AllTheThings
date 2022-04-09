@@ -2620,10 +2620,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(187914),	-- Captain Noteo's Unused Eye Patch
 				}),
 				tier(SL_TIER, 2.0, {
-					i(190929),	-- Ebony Protocloak
-					i(190933),	-- Majestic Oracle's Drape
-					i(190932),	-- Protohide Drape
-					i(190928),	-- Sandtails Drape
 					i(190935),	-- Distinguished Blade of Cartel Al
 					i(190937),	-- Edge of the Enlightened
 					i(190934),	-- Standard of the Wandering Brokers

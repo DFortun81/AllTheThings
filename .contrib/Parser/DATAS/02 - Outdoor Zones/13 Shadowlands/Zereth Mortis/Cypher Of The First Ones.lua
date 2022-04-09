@@ -21,23 +21,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				}),
 				ach(15509),	-- Tales of the Exile
 			}),
-			n(184750, {	-- Core Configuration Console
-				["description"] = "These Configuration of Pocopoc was never found on the PTR. The search continues on live servers",
-				["g"] = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-					i(189707),	-- Pocopoc's Bronze and Gold Body
-					i(189708),	-- Pocopoc's Beryllium and Silver Body
-					i(189709),	-- Pocopoc's Cobalt and Copper Body
-					i(189710),	-- Pocopoc's Ruby and Platinum Body
-					i(189711),	-- Pocopoc's Gold and Ruby Components
-					i(189712),	-- Pocopoc's Silver and Beryllium Components
-					i(189713),	-- Pocopoc's Copper and Cobalt Components
-					i(189714),	-- Pocopoc's Platinum and Emerald Components
-					i(189715),	-- Pocopoc's Diamond Vambraces
-					i(189716),	-- Pocopoc's Face Decoration
-					i(189717),	-- Pocopoc's Shielded Core
-					i(189718),	-- Pocopoc's Upgraded Core
-				}),
-			}),
 			n(QUESTS, {
 				q(65674, {	-- What Is This Thing?
 					["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
@@ -544,51 +527,54 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 								i(190943),	-- Jiro Tuning Hammer
 								i(190944),	-- Mace of Renewed Purpose
 								i(190949),	-- Stave of the Eternal Cycle
-								--
-								i(188957),	-- Genesis Mote
-								i(187634),	-- Ambystan Lattice
-								i(187636),	-- Aurelid Lattice
-								i(187633),	-- Bufonid Lattice
-								i(187635),	-- Cervid Lattice
-								i(189146),	-- Geomental Lattice
-								i(189145),	-- Helicid Lattice
-								i(189147),	-- Leporid Lattice
-								i(190388),	-- Lupine Lattice
-								i(189148),	-- Poultrid Lattice
-								i(189149),	-- Proto Avian Lattice
-								i(189150),	-- Raptora Lattice
-								i(189151),	-- Scarabid Lattice
-								i(189152),	-- Tarachnid Lattice
-								i(189153),	-- Unformed Lattice
-								i(189154),	-- Vespoid Lattice
-								i(189155),	-- Viperid Lattice
-								i(189156),	-- Vombata Lattice
-								-- Pet Protoform
-								i(189157),	-- Glimmer of Animation
-								i(189158),	-- Glimmer of Cunning
-								i(189159),	-- Glimmer of Discovery
-								i(189160),	-- Glimmer of Focus
-								i(189161),	-- Glimmer of Malice
-								i(189162),	-- Glimmer of Metamorphosis
-								i(189163),	-- Glimmer of Motion
-								i(189164),	-- Glimmer of Multiplicity
-								i(189165),	-- Glimmer of Predation
-								i(189166),	-- Glimmer of Renewal
-								i(189167),	-- Glimmer of Satisfaction
-								i(189168),	-- Glimmer of Serenity
-								i(189169),	-- Glimmer of Survival
-								i(189170),	-- Glimmer of Vigilance
-								-- Mount Protoform
-								i(189171),	-- Bauble of Pure Innovation
-								i(189172),	-- Crystallized Echo of the First Song
-								i(189173),	-- Eternal Ragepearl
-								i(189174),	-- Lens of Focused Intention
-								i(189175),	-- Mawforged Bridle
-								i(189176),	-- Protoform Sentience Crown
-								i(189177),	-- Revelation Key
-								i(189178),	-- Tools of Incomprehensible Experimentation
-								i(189179),	-- Unalloyed Bronze Ingot
-								i(189180),	-- Wind's Infinite Call
+							},
+							["sym"] = {
+								{"select", "itemID",
+									188957,	-- Genesis Mote
+									187634,	-- Ambystan Lattice
+									187636,	-- Aurelid Lattice
+									187633,	-- Bufonid Lattice
+									187635,	-- Cervid Lattice
+									189146,	-- Geomental Lattice
+									189145,	-- Helicid Lattice
+									189147,	-- Leporid Lattice
+									190388,	-- Lupine Lattice
+									189148,	-- Poultrid Lattice
+									189149,	-- Proto Avian Lattice
+									189150,	-- Raptora Lattice
+									189151,	-- Scarabid Lattice
+									189152,	-- Tarachnid Lattice
+									189153,	-- Unformed Lattice
+									189154,	-- Vespoid Lattice
+									189155,	-- Viperid Lattice
+									189156,	-- Vombata Lattice
+									-- Pet Protoform
+									189157,	-- Glimmer of Animation
+									189158,	-- Glimmer of Cunning
+									189159,	-- Glimmer of Discovery
+									189160,	-- Glimmer of Focus
+									189161,	-- Glimmer of Malice
+									189162,	-- Glimmer of Metamorphosis
+									189163,	-- Glimmer of Motion
+									189164,	-- Glimmer of Multiplicity
+									189165,	-- Glimmer of Predation
+									189166,	-- Glimmer of Renewal
+									189167,	-- Glimmer of Satisfaction
+									189168,	-- Glimmer of Serenity
+									189169,	-- Glimmer of Survival
+									189170,	-- Glimmer of Vigilance
+									-- Mount Protoform
+									189171,	-- Bauble of Pure Innovation
+									189172,	-- Crystallized Echo of the First Song
+									189173,	-- Eternal Ragepearl
+									189174,	-- Lens of Focused Intention
+									189175,	-- Mawforged Bridle
+									189176,	-- Protoform Sentience Crown
+									189177,	-- Revelation Key
+									189178,	-- Tools of Incomprehensible Experimentation
+									189179,	-- Unalloyed Bronze Ingot
+									189180,	-- Wind's Infinite Call
+								},
 							},
 						}),
 						i(191039, {	-- Pocopoc Traveler

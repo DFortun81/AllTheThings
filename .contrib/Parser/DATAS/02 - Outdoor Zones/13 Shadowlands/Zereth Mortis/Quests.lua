@@ -956,6 +956,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["isWeekly"] = true,
 				["g"] = {
 					i(191139, {	-- Tribute of the Enlightened Elders
+						i(189716, {	-- Pocopoc's Face Decoration
+							["questID"] = 65482,
+						}),
 						i(189462),	-- Schematic: Bronze Helicid
 					}),
 				},

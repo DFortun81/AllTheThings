@@ -344,11 +344,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					},
 				}),
 			}),
-			n(ZONE_DROPS, {
-				i(188957),	-- Genesis Mote
-				i(189157),	-- Glimmer of Animation
-				i(189176),	-- Protoform Sentience Crown
-			}),
 			d(17, {	-- LFR
 				n(ZONE_DROPS, {
 					i(190629),	-- Cartel's Larcenous Toecaps

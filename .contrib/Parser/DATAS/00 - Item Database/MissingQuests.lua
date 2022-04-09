@@ -4456,7 +4456,6 @@ q(54290),	--
 q(54313),	--
 q(54317),	--
 q(54321),	--
-q(54324),	--
 q(54349),	-- Darkshore Donations: Tidespray Linen Bandage
 q(54398),	--
 q(54406),	--
@@ -5030,69 +5029,4 @@ q(59553),	--
 8.3.7.35284
 8.3.7.35435
 8.3.7.35662
-9.2.5.42850
-q(63479),	-- Summons from the Matriarch
-q(63480),	-- Briefing
-q(63481),	-- Tranquillien Besieged
-q(63482),	-- Death to the Scourge
-q(63483),	-- Magus Installation
-q(63484),	-- A Knight's Weapon
-q(63485),	-- An Honest Heart
-q(63486),	-- An Unbreakable Will
-q(63487),	-- Return to the Ghostlands
-q(63488),	-- I Am the Blade of the Light
-q(63489),	-- Justice Long Overdue
-q(63490),	-- Blood Knight
-q(63494),	-- The Anvil-Thane's Designs
-q(63498),	-- Brawl or Brew
-q(63501),	-- It's Called Borrowing
-q(63502),	-- Weapons o' the Dark Iron
-q(63505),	--
-q(63506),	--
-q(63507),	-- Kate Reuse Me
-q(63508),	--
-q(63509),	--
-q(63510),	--
-q(63511),	--
-q(63519),	-- Unfair Fight
-q(63522),	-- A Fair Race
-q(63536),	--
-q(65541),	--
-q(65563),	-- Delivery for Kasea
-q(65564),	-- Good Fiery Boy
-q(65598),	--
-q(65652),	-- Summons from the Matriarch
-q(65653),	-- Victory for the Sin'dorei
-q(65655),	--
-q(65656),	--
-q(65657),	--
-q(65658),	--
-q(65659),	--
-q(65660),	--
-q(65661),	--
-q(65662),	--
-q(65663),	--
-q(65664),	--
-q(65665),	--
-q(65666),	--
-q(65667),	--
-q(65668),	--
-q(65669),	--
-q(65767),	--
-q(65788),	--
-q(66059),	--
-q(66060),	--
-q(66061),	--
-q(66062),	--
-q(66063),	--
-q(66064),	--
-q(66065),	--
-q(66066),	--
-q(66067),	--
-q(66068),	--
-q(66069),	--
-q(66170),	--
-q(66243),	--
-q(66253),	-- [DNT] Retrieve Shipments
-q(66280),	--
--]]
+--]]

@@ -4,6 +4,15 @@
 root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 	m(ZERETH_MORTIS, {
 		n(TREASURES, {
+			i(189707, {	-- Pocopoc's Bronze and Gold Body
+				["questID"] = 65471,
+			}),
+			i(189708, {	-- Pocopoc's Beryllium and Silver Body
+				["questID"] = 65472,
+			}),
+			i(189712, {	-- Pocopoc's Silver and Beryllium Components
+				["questID"] = 65477,
+			}),
 			o(375408, {	-- Architect's Reserve
 				["description"] = "Only available after unlocking Protoform Synthesis: Mount.",
 				["coord"] = { 61.2, 37.2, ZERETH_MORTIS },
@@ -368,7 +377,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 							i(189179, {	-- Unalloyed Bronze Ingot
 								["description"] = "Select 4th option, 'Restore Genesis Potencies'.",
 							}),
-							i(188957),	-- Genesis Mote
 						},
 					}),
 				},
@@ -584,6 +592,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["questID"] = 65183,
 				["isWeekly"] = true,
 				["cost"] = { { "i", 188231, 1 }, },	-- 1xProvis Cache Key
+				["g"] = {
+					i(189710, {	-- Pocopoc's Ruby and Platinum Body
+						--["questID"] =
+					}),
+				},
 			}),
 			o(373579, {	-- Prying Eye Discovery
 				["coords"] = {
@@ -595,6 +608,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["questID"] = 65184,
 				["repeatable"] = true,
 				["g"] = {
+					i(189711, {	-- Pocopoc's Gold and Ruby Components
+						["questID"] = 65476,
+					}),
 					i(190096, {	-- Pocobold
 						["questID"] = 65534,
 						["g"] = {
@@ -622,6 +638,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["g"] = {
 					i(190189),	-- Sandworn Relic
 					i(190734),	-- Makaris's Satchel of Mines (TOY!)
+					i(189713, {	-- Pocopoc's Copper and Cobalt Components
+						--["questID"] =
+					}),
+					i(189714, {	-- Pocopoc's Platinum and Emerald Components
+						["questID"] = 65479,
+					}),
 				},
 			}),
 			-- Repeatable chests Without QuestID
@@ -652,6 +674,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					{ 53.9, 88.6, ZERETH_MORTIS },
 					{ 50.6, 93.1, ZERETH_MORTIS },
 					{ 67.5, 40.3, ZERETH_MORTIS },
+				},
+				["g"] = {
+					i(189717, {	-- Pocopoc's Shielded Core
+						--["questID"] =
+					}),
+					i(189718, {	-- Pocopoc's Upgraded Core
+						["questID"] = 65484
+					}),
 				},
 			}),
 			o(375530, {	-- Forgotten Treasure Vault
