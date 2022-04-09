@@ -594,7 +594,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["cost"] = { { "i", 188231, 1 }, },	-- 1xProvis Cache Key
 				["g"] = {
 					i(189710, {	-- Pocopoc's Ruby and Platinum Body
-						--["questID"] =
+						["questID"] = 65474,
 					}),
 				},
 			}),
@@ -639,7 +639,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(190189),	-- Sandworn Relic
 					i(190734),	-- Makaris's Satchel of Mines (TOY!)
 					i(189713, {	-- Pocopoc's Copper and Cobalt Components
-						--["questID"] =
+						["questID"] = 65478
 					}),
 					i(189714, {	-- Pocopoc's Platinum and Emerald Components
 						["questID"] = 65479,
@@ -677,10 +677,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				},
 				["g"] = {
 					i(189717, {	-- Pocopoc's Shielded Core
-						--["questID"] =
+						["questID"] = 65483,
 					}),
 					i(189718, {	-- Pocopoc's Upgraded Core
-						["questID"] = 65484
+						["questID"] = 65484,
 					}),
 				},
 			}),
