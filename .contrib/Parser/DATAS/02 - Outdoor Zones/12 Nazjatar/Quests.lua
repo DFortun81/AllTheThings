@@ -2703,6 +2703,9 @@ root("HiddenQuestTriggers", {
 	q(55204),	-- Summoned Xue
 	q(55199),	-- Summoned Zomera
 	q(55200),	-- Summoned Omus
+	q(55143),	-- Killed Watery Amalgamation (first time)
+	q(56477),	-- Killed Watery Amalgamation (first time)
+	q(56720),	-- Killed Watery Amalgamation (first time)
 	q(56476),	-- Killed Arcane Amalgamation
 	q(56892),	-- Killed Arcane Amalgamation, Burning Amalgamation, Herald of Salgos, Moghiea, Salgos the Eternal, Spawn of Salgos, Xue, and Zomera
 	q(56724),	-- Triggered when killing Arcane Amalgamation in mardivas' lab. Probably used to disable something else in the room

@@ -4,6 +4,9 @@
 root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 	m(ZERETH_MORTIS, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
+			i(189715, {	-- Pocopoc's Diamond Vambraces
+				["questID"] = 65481,
+			}),
 			n(179006, {	-- Akkaris <Annelid Prime>
 				["coord"] = { 64.7, 33.7, ZERETH_MORTIS },
 				["questID"] = 65552,
@@ -259,7 +262,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					crit(23, {	-- Hirukon <Aurelid Prime>
 						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
 					}),
-					i(187636),	-- Aurelid Lattice
 					i(187676, {	-- Deepstar Polyp (MOUNT!)
 						["description"] = "This mount has 100% drop chance if you do the summon.",
 					}),

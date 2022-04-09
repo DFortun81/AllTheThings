@@ -956,6 +956,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["isWeekly"] = true,
 				["g"] = {
 					i(191139, {	-- Tribute of the Enlightened Elders
+						i(189716, {	-- Pocopoc's Face Decoration
+							["questID"] = 65482,
+						}),
 						i(189462),	-- Schematic: Bronze Helicid
 					}),
 				},
@@ -1185,11 +1188,6 @@ root("HiddenQuestTriggers", m(SHADOWLANDS, {
 		q(65457),	-- Unlock all
 
 		q(65378),	-- Starting Secret Teleport System at Gravid Repose
-
-		q(65343),	-- Camber Alcove Arrangement at Gravid Repose
-		q(65347),	-- Fulgore Alcove Arrangement at Gravid Repose
-		q(65344),	-- Repertory Alcove Arrangement at Gravid Repose
-		q(65345),	-- Rondure Alcove Arrangement at Gravid Repose
 
 		q(65650),	-- Completing Camber Alcove puzzle
 

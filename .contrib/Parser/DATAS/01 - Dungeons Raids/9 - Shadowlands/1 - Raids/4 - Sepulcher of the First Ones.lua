@@ -274,7 +274,9 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					},
 				}),
 			}),
-			n(FLIGHT_PATHS, {
+			n(FLIGHT_PATHS, sharedData({
+				["collectible"] = false,	-- they reset per difficulty / each week based on progress
+			},{
 				fp(2715, {	-- Ephemeral Plains Alpha
 					["name"] = "Ephemeral Plains Alpha",
 					["cr"] = 182522,	-- Ancient Translocator
@@ -303,10 +305,10 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					["name"] = "Immortal Hearth",
 					["cr"] = 182431,	-- Ancient Translocator
 				}),
-			}),
+			})),
 			n(SPECIAL, {
 				i(189167, {	-- Glimmer of Satisfaction
-					["description"] = "Eating a feast inside the raid have chance to spawn this item in your inventory.",
+					["description"] = "Eating a feast has a chance to spawn this item in your inventory.",
 				}),
 				n(185032, {	-- Taskmaster Xy'pro <Cartel Xy>
 					["description"] = "Killed when having 3 stacks of Synergy",
@@ -341,11 +343,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189476),	-- Schematic: Curious Crystalsniffer
 					},
 				}),
-			}),
-			n(ZONE_DROPS, {
-				i(188957),	-- Genesis Mote
-				i(189157),	-- Glimmer of Animation
-				i(189176),	-- Protoform Sentience Crown
 			}),
 			d(17, {	-- LFR
 				n(ZONE_DROPS, {
@@ -531,7 +528,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 								i(188269),	-- Pocket Protoforge
 								i(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
 								i(189178),	-- Tools of Incomprehensible Experimentation (PS)
-								i(188957),	-- Genesis Mote
 								-- Tier
 								i(191014, {	-- Dreadful Hand Module
 									i(188863),	-- Gauntlets of the First Eidolon
@@ -855,7 +851,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(188269),	-- Pocket Protoforge
 						i(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
 						i(189178),	-- Tools of Incomprehensible Experimentation (PS)
-						i(188957),	-- Genesis Mote
 						-- Tier
 						i(191014, {	-- Dreadful Hand Module
 							i(188863),	-- Gauntlets of the First Eidolon
@@ -1210,7 +1205,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(188269),	-- Pocket Protoforge
 						i(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
 						i(189178),	-- Tools of Incomprehensible Experimentation (PS)
-						i(188957),	-- Genesis Mote
 						-- Tier
 						i(191014, {	-- Dreadful Hand Module
 							i(188863),	-- Gauntlets of the First Eidolon
@@ -1546,7 +1540,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(188269),	-- Pocket Protoforge
 						i(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
 						i(189178),	-- Tools of Incomprehensible Experimentation (PS)
-						i(188957),	-- Genesis Mote
 						-- Tier
 						i(191014, {	-- Dreadful Hand Module
 							i(188863),	-- Gauntlets of the First Eidolon

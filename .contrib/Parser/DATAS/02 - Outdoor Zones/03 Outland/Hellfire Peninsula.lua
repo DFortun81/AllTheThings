@@ -106,32 +106,32 @@ root("Zones", {
 						["sourceQuests"] = {
 							-- Disrupt the Burning Legion
 							10397,	-- Invasion Point: Annihilator
-							
+
 							-- Overthrow the Overlord
 							10400,	-- Overlord
 							10399,	-- The Heart of Darkness
-							
+
 							-- In Search of Sedai
 							9545,	-- The Seer's Relic
-							
+
 							-- The Exorcism of Colonel Jules
 							10935,	-- The Exorcism of Colonel Jules
-							
+
 							-- Drill the Drillmaster
 							10937,	-- Drill the Drillmaster
-							
+
 							-- Temple of Telhamat
 							9383,	-- An Ambitious Plan
 							9490,	-- The Rock Flayer Matriarch
 							-- all quests below need to be confirmed
 							9427,	-- Cleaning the Waters
 							9398,	-- Deadly Predators
-							
+
 							-- Green, But Not Orcs
 							10630,	-- Beneath Thrallmar
 							9356,	-- Smooth as Butter
 							9351,	-- Voidwalkers Gone Wild
-							
+
 							-- Cenarion Post
 							10351,	-- Natural Remedies
 							10255,	-- Testing the Antidote
@@ -195,25 +195,25 @@ root("Zones", {
 						["sourceQuests"] = {
 							-- Disrupt the Burning Legion
 							10388,	-- Return to Thrallmar
-							
+
 							-- Cruel's Intentions
 							10136,	-- Cruel's Intentions
 							10389,	-- The Agony and the Darkness
 							10393,	-- Vile Plans
-							
+
 							-- The Hand of Kargath
 							10876,	-- The Foot of the Citadel
-							
+
 							-- Spinebreaker Post
 							10295,	-- From the Abyss
 							10834,	-- Grillok "Darkeye"
 							10258,	-- Honor the Fallen (probably)
 							10220,	-- Make Them listen
 							9345,	-- Preparing the Salve
-							
+
 							-- The Mag'har
 							9406,	-- The Mag'har
-							
+
 							-- Falcon Watch
 							9397,	-- Birds of a Feather
 							9370,	-- The Cleansing Must Be Stopped
@@ -221,12 +221,12 @@ root("Zones", {
 							9472,	-- Arelion's Mistress
 							9391,	-- Marking the Path
 							9387,	-- Source of the Corruption
-							
+
 							-- Green, But Not Orcs
 							10630,	-- Beneath Thrallmar
 							9356,	-- Smooth as Butter
 							9351,	-- Voidwalkers Gone Wild
-							
+
 							-- Cenarion Post
 							10351,	-- Natural Remedies
 							10255,	-- Testing the Antidote
@@ -1096,6 +1096,7 @@ root("Zones", {
 					q(9499, {	-- Falcon Watch [Blood Elf]
 						["qg"] = 16577,	-- Martik Tor'seldori
 						["sourceQuest"] = 10124,	-- Forward Base: Reaver's Fall
+						["coord"] = { 55.1, 39.1, HELLFIRE_PENINSULA },
 						["races"] = { BLOODELF },
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(60, 10, 60),

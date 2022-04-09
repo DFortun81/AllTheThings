@@ -4,6 +4,15 @@
 root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 	m(ZERETH_MORTIS, {
 		n(TREASURES, {
+			i(189707, {	-- Pocopoc's Bronze and Gold Body
+				["questID"] = 65471,
+			}),
+			i(189708, {	-- Pocopoc's Beryllium and Silver Body
+				["questID"] = 65472,
+			}),
+			i(189712, {	-- Pocopoc's Silver and Beryllium Components
+				["questID"] = 65477,
+			}),
 			o(375408, {	-- Architect's Reserve
 				["description"] = "Only available after unlocking Protoform Synthesis: Mount.",
 				["coord"] = { 61.2, 37.2, ZERETH_MORTIS },
@@ -42,6 +51,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					}),
 				},
 			}),
+			o(375188, {	-- Camber Alcove Arrangement
+				["description"] = "Requires Aealic Understanding and Chapter 6.",
+				["coord"] =	{ 47.7, 34.5, ZERETH_MORTIS },
+				["questID"] = 65343,
+				["g"] = {
+					-- TODO
+				},
+			}),
 			o(375382, {	-- Crushed Supply Crate
 				["description"] = "To open it you need to pick up a Jiro Hammer(189768). Ontop of the rock there is a repair tool that you can use to trade with the nearby Jiros(Hiu Fi 185151) for a Jiro Hammer.",
 				["coord"] = { 56.8, 64.2, ZERETH_MORTIS },
@@ -75,6 +92,86 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(189863),	-- Spatial Opener
 					i(190638),	-- Tormented Mawsteel Greatsword
 				},
+			}),
+			o(375191, {	-- Dormant Alcove Arrangement
+				["description"] = "Requires Altonian Understanding and Chapter 6. Accessible with flying or via the Quintus Locus and dropping down.",
+				["questID"] = 65346,
+				["coord"] = { 51.03, 32.48, ZERETH_MORTIS },
+				["g"] = sharedData({
+					["sourceQuest"] = 65346,	-- Dormant Alcove Arrangement
+					["cost"] = { { "i", 189863, 1 }, },	-- 1 Spatial Opener
+					["description"] = "Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
+					["crs"] = {
+						184329,	-- Locus Shift (Gravid Repose)
+						184485,	-- Locus Shift (Interior)
+					},
+				},{
+					-- Sands
+					o(375397, {	-- Glinting Sand Pile
+						["coord"] = { 45.1, 36, 2029 },
+						["questID"] = 65495,
+						["g"] = {
+							crit(2, {	-- Glinting Sand Pile
+								["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+							}),
+						},
+					}),
+					o(375399, {	-- Humming Sand Pile
+						["coord"] = { 44.3, 36.7, 2029 },
+						["questID"] = 65497,
+						["g"] = {
+							crit(4, {	-- Humming Sand Pile
+								["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+							}),
+						},
+					}),
+					o(375396, {	-- Lumpy Sand Pile
+						["coord"] = { 44.8, 36.9, 2029 },
+						["questID"] = 65494,
+						["g"] = {
+							crit(1, {	-- Lumpy Sand Pile
+								["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+							}),
+						},
+					}),
+					o(375400, {	-- Misshapen Sand Pile
+						["coord"] = { 44.6, 35.7, 2029 },
+						["questID"] = 65498,
+						["g"] = {
+							crit(5, {	-- Misshapen Sand Pile
+								["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+							}),
+						},
+					}),
+					o(375398, {	-- Shifting Sand Pile
+						["coord"] = { 43.7, 37.1, 2029 },
+						["questID"] = 65496,
+						["g"] = {
+							crit(3, {	-- Shifting Sand Pile
+								["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+							}),
+						},
+					}),
+					o(375401, {	-- Sparkling Sand Pile
+						["coord"] = { 43.9, 36.5, 2029 },
+						["questID"] = 65499,
+						["g"] = {
+							crit(6, {	-- Sparkling Sand Pile
+								["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+							}),
+							i(190374),	-- Gemstone of Prismatic Brilliance
+						},
+					}),
+					o(375402, {	-- Ticking Sand Pile
+						["coord"] = { 43.8, 37.6, 2029 },
+						["questID"] = 65500,
+						["g"] = {
+							crit(7, {	-- Ticking Sand Pile
+								["achievementID"] = 15502,	-- Sand, Sand Everywhere!
+							}),
+						},
+					}),
+				}),
 			}),
 			o(375413, {	-- Drowned Broker Supplies
 				["description"] = "Need to have completed Dealic Understanding. At 34.5, 70.5 there is a Coreless Aurelid(185282), use Popopoc to on it to get the chest.",
@@ -125,6 +222,26 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
 					}),
 					i(189469),	-- Schematic: Prototype Leaper
+				},
+			}),
+			o(375192, {	-- Fulgore Alcove Arrangement
+				["description"] = "Requires Aealic Understanding and Chapter 6.",
+				["coord"] =	{ 47.85, 30.38, ZERETH_MORTIS },
+				["questID"] = 65347,
+				["g"] = {
+					o(375902, {	-- Torn Ethereal Drape
+						["description"] = "Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus. Take out Pocopoc, activate & ride an orb until it reaches the treasure.",
+						["coord"] = { 46.7, 39.3, 2029 },
+						["questID"] = 65643,
+						["sourceQuest"] = 65347,	-- Fulgore Alcove Arrangement
+						["crs"] = {
+							184329,	-- Locus Shift (Gravid Repose)
+							184485,	-- Locus Shift (Interior)
+						},
+						["g"] = {
+							i(188054),	-- Antecedent Drape
+						},
+					}),
 				},
 			}),
 			o(375369, {	-- Gnawed Valise
@@ -241,8 +358,31 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(190942),	-- Protomineral Extractor
 				},
 			}),
+			o(375189, {	-- Repertory Alcove Arrangement
+				["description"] = "Requires Aealic Understanding and Chapter 6. Inside the Terrestrial Cache cave, on the side of the left wall after you enter.",
+				["coord"] =	{ 49.62, 30.92, ZERETH_MORTIS },
+				["questID"] = 65344,
+				["g"] = {
+					n(185261, {	-- Requisites Originator
+						["description"] = "Gather 60 Cosmic energy and go to Interior Locus then use Repertory Locus.",
+						["coord"] = { 31.3, 65, 2029 },
+						["questID"] = 65532,	-- Fourth Option?
+						["sourceQuest"] = 65344,
+						["isWeekly"] = true,
+						["crs"] = {
+							184329,	-- Locus Shift (Gravid Repose)
+							184485,	-- Locus Shift (Interior)
+						},
+						["g"] = {
+							i(189179, {	-- Unalloyed Bronze Ingot
+								["description"] = "Select 4th option, 'Restore Genesis Potencies'.",
+							}),
+						},
+					}),
+				},
+			}),
 			o(375493, {	-- Ripened Protopear
-				["description"] = "Available inside the Blooming Foundary(63.2, 73.1) during Glimmercanes Questline(Need Sopranian Understanding). You need to collect 5 Pollen Cloud buffs(Green Clouds).",
+				["description"] = "Available inside the Blooming Foundary (63.2, 73.1) during Glimmercanes Questline (Need Sopranian Understanding). You need to collect 5 Pollen Cloud buffs (Green Clouds).",
 				["coord"] = { 65.4, 47.1, 2027 },
 				["questID"] = 65566,
 				["g"] = {
@@ -257,6 +397,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 							}),
 						},
 					}),
+				},
+			}),
+			o(375190, {	-- Rondure Alcove Arrangement
+				["description"] = "Requires Aealic Understanding and Chapter 6.",
+				["coord"] =	{ 50.5, 27.6, ZERETH_MORTIS },
+				["questID"] = 65345,
+				["g"] = {
+					-- TODO
 				},
 			}),
 			o(375281, {	-- Stolen Relic
@@ -376,83 +524,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(190926),	-- Infested Automa Core (TOY!)
 				},
 			}),
-			-- Unlock for 'Sand Piles'
-			o(375191, {	-- Dormant Alcove Arrangement
-				["description"] = "Requires Altonian Understanding and Chapter 6. Accessible with flying or via the Quintus Locus and dropping down.",
-				["questID"] = 65346,
-				["coord"] = { 51.03, 32.48, ZERETH_MORTIS },
-				["g"] = sharedData({
-					["sourceQuest"] = 65346,	-- Dormant Alcove Arrangement
-					["cost"] = { { "i", 189863, 1 }, },	-- 1 Spatial Opener
-					["description"] = "Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
-				},{
-					-- Sands
-					o(375397, {	-- Glinting Sand Pile
-						["coord"] = { 45.1, 36, 2029 },
-						["questID"] = 65495,
-						["g"] = {
-							crit(2, {	-- Glinting Sand Pile
-								["achievementID"] = 15502,	-- Sand, Sand Everywhere!
-							}),
-						},
-					}),
-					o(375399, {	-- Humming Sand Pile
-						["coord"] = { 44.3, 36.7, 2029 },
-						["questID"] = 65497,
-						["g"] = {
-							crit(4, {	-- Humming Sand Pile
-								["achievementID"] = 15502,	-- Sand, Sand Everywhere!
-							}),
-						},
-					}),
-					o(375396, {	-- Lumpy Sand Pile
-						["coord"] = { 44.8, 36.9, 2029 },
-						["questID"] = 65494,
-						["g"] = {
-							crit(1, {	-- Lumpy Sand Pile
-								["achievementID"] = 15502,	-- Sand, Sand Everywhere!
-							}),
-						},
-					}),
-					o(375400, {	-- Misshapen Sand Pile
-						["coord"] = { 44.6, 35.7, 2029 },
-						["questID"] = 65498,
-						["g"] = {
-							crit(5, {	-- Misshapen Sand Pile
-								["achievementID"] = 15502,	-- Sand, Sand Everywhere!
-							}),
-						},
-					}),
-					o(375398, {	-- Shifting Sand Pile
-						["coord"] = { 43.7, 37.1, 2029 },
-						["questID"] = 65496,
-						["g"] = {
-							crit(3, {	-- Shifting Sand Pile
-								["achievementID"] = 15502,	-- Sand, Sand Everywhere!
-							}),
-						},
-					}),
-					o(375401, {	-- Sparkling Sand Pile
-						["coord"] = { 43.9, 36.5, 2029 },
-						["questID"] = 65499,
-						["g"] = {
-							crit(6, {	-- Sparkling Sand Pile
-								["achievementID"] = 15502,	-- Sand, Sand Everywhere!
-							}),
-							i(190374),	-- Gemstone of Prismatic Brilliance
-						},
-					}),
-					o(375402, {	-- Ticking Sand Pile
-						["coord"] = { 43.8, 37.6, 2029 },
-						["questID"] = 65500,
-						["g"] = {
-							crit(7, {	-- Ticking Sand Pile
-								["achievementID"] = 15502,	-- Sand, Sand Everywhere!
-							}),
-						},
-					}),
-				}),
-			}),
 			o(375494, {	-- Rondure Cache
 				["description"] = "Requires Aealic Understanding and Chapter 6. Rondure Alcove Arrangement is found at 50.5, 27.6 Close to Tertius Locus. Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
 				["coord"] = { 43, 40, 2029 },
@@ -466,26 +537,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 								["achievementID"] = 15508,	-- Fashion of the First Ones
 							}),
 						},
-					}),
-				},
-			}),
-			o(375902, {	-- Torn Ethereal Drape
-				["description"] = "Requires Aealic Understanding and Chapter 6. Fulgore Alcove Arrangement is found at 47.8, 30.4 on an upper platform, on the side of a pillar (accessible from flying or possibly via the Secundus Locus). Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
-				["coord"] = { 46.7, 39.3, 2029 },
-				["questID"] = 65643,
-				["g"] = {
-					i(188054),	-- Antecedent Drape
-				},
-			}),
-			n(185261, {	-- Requisites Originator
-				["description"] = "Requires Aealic Understanding and Chapter 6. Repertory Alcove Arrangement is found at 49.6, 31.0, inside the Terrestial Cache, on the side of the left wall after you enter. Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.\n\nThis machine can be used once per week.",
-				["coord"] = { 31.3, 65, 2029 },
-				["questID"] = 65532,	-- Fourth Option?
-				["isWeekly"] = true,
-				["g"] = {
-					i(188957),	-- Genesis Mote
-					i(189179, {	-- Unalloyed Bronze Ingot
-						["description"] = "Select 4th option, Restore Genesis Potencies",
 					}),
 				},
 			}),
@@ -541,6 +592,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["questID"] = 65183,
 				["isWeekly"] = true,
 				["cost"] = { { "i", 188231, 1 }, },	-- 1xProvis Cache Key
+				["g"] = {
+					i(189710, {	-- Pocopoc's Ruby and Platinum Body
+						--["questID"] =
+					}),
+				},
 			}),
 			o(373579, {	-- Prying Eye Discovery
 				["coords"] = {
@@ -552,6 +608,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["questID"] = 65184,
 				["repeatable"] = true,
 				["g"] = {
+					i(189711, {	-- Pocopoc's Gold and Ruby Components
+						["questID"] = 65476,
+					}),
 					i(190096, {	-- Pocobold
 						["questID"] = 65534,
 						["g"] = {
@@ -579,6 +638,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["g"] = {
 					i(190189),	-- Sandworn Relic
 					i(190734),	-- Makaris's Satchel of Mines (TOY!)
+					i(189713, {	-- Pocopoc's Copper and Cobalt Components
+						--["questID"] =
+					}),
+					i(189714, {	-- Pocopoc's Platinum and Emerald Components
+						["questID"] = 65479,
+					}),
 				},
 			}),
 			-- Repeatable chests Without QuestID
@@ -609,6 +674,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					{ 53.9, 88.6, ZERETH_MORTIS },
 					{ 50.6, 93.1, ZERETH_MORTIS },
 					{ 67.5, 40.3, ZERETH_MORTIS },
+				},
+				["g"] = {
+					i(189717, {	-- Pocopoc's Shielded Core
+						--["questID"] =
+					}),
+					i(189718, {	-- Pocopoc's Upgraded Core
+						["questID"] = 65484
+					}),
 				},
 			}),
 			o(375530, {	-- Forgotten Treasure Vault

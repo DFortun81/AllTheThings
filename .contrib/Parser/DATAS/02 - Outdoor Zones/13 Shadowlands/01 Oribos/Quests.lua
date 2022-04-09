@@ -767,7 +767,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["customCollect"] = "SL_SKIP",	-- SL Skip Character
 				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 38.8, 70.0, ORIBOS },
-				-- ["isBreadcrumb"] = true,	-- TODO: probably able to skip picking up any Zone-Select Quests by just flying away...
+				["isBreadcrumb"] = true,
 				["sourceQuests"] = { 62000 },	-- Choosing Your Purpose
 			}),
 			q(63208, {	-- The Next Step
@@ -906,9 +906,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "n", 172431 },	-- Lady Moonberry <Court of Night>
 				["coord"] = { 49.2, 52.2, ARDENWEALD },
 				["sourceQuests"] = {
+					62704,	-- The Threads of Fate
 					62159,	-- Aiding the Shadowlands
-					62739,	-- Restoring Balance [Non-Night Fae]
-					63036,	-- Restoring Balance [Night Fae]
 				},
 				["g"] = {
 					i(179562),	-- Duskwarder Branch
@@ -933,9 +932,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "n", 163427 },	-- Kalisthene
 				["coord"] = { 51.1, 43.7, BASTION },
 				["sourceQuests"] = {
+					62704,	-- The Threads of Fate
 					62159,	-- Aiding the Shadowlands
-					62707,	-- The Elysian Fields [Non-Kyrian]
-					63034,	-- The Elysian Fields [Kyrian]
 				},
 				["g"] = {
 					i(181635),	-- Honortoll Gavel
@@ -959,9 +957,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "n", 175008 },	-- Secutor Mevix
 				["coord"] = { 52.8, 68.2, MALDRAXXUS },
 				["sourceQuests"] = {
+					62704,	-- The Threads of Fate
 					62159,	-- Aiding the Shadowlands
-					62738,	-- A Fresh Blade [Non-Necrolord]
-					63035,	-- A Fresh Blade [Necrolord]
 				},
 				["g"] = {
 					i(181685),	-- Gorewrought Barrier
@@ -993,9 +990,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					{ 61.4, 60.2, REVENDRETH },	-- Prince Renathal [at Darkhaven, for non-Venthyr]
 				},
 				["sourceQuests"] = {
+					62704,	-- The Threads of Fate
 					62159,	-- Aiding the Shadowlands
-					62740,	-- Dark Aspirations [Non-Venthyr]
-					63037,	-- Dark Aspirations [Venthyr]
 				},
 				["g"] = {
 					i(181208),	-- Anima-Infused Muck

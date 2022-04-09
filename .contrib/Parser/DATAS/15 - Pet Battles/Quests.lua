@@ -2,6 +2,20 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
+-- Various simplified rewards
+local SACK_OF_PET_SUPPLIES =
+i(89125, {	-- Sack of Pet Supplies
+	["sym"] = {{ "fill" }},
+});
+local FABLED_PANDAREN_PET_SUPPLIES =
+i(94207, {	-- Fabled Pandaren Pet Supplies
+	["sym"] = {{ "fill" }},
+});
+local SHINY_PET_CHARM =
+i(116415, {	-- Shiny Pet Charm
+	["sym"] = {{ "fill" }},
+});
+
 root("PetBattles", petbattle({
 	n(QUESTS, {
 		q(44767, {	-- A Celestial Invitation
@@ -18,8 +32,8 @@ root("PetBattles", petbattle({
 			["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 31917,	-- A Tamer's Homecoming
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(31903, {	-- Battle Pet Tamers: Eastern Kingdoms (H)
@@ -27,8 +41,8 @@ root("PetBattles", petbattle({
 			["provider"] = { "n", 63626 },	-- Varzok
 			["coord"] = { 52.6, 59.3, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(31889, {	-- Battle Pet Tamers: Kalimdor (A)
@@ -36,8 +50,8 @@ root("PetBattles", petbattle({
 			["provider"] = { "n", 63596 },	-- Audrey Burnhelp
 			["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(31891, {	-- Battle Pet Tamers: Kalimdor (H)
@@ -45,8 +59,8 @@ root("PetBattles", petbattle({
 			["provider"] = { "n", 63626 },	-- Varzok
 			["coord"] = { 52.6, 59.3, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(31919, {	-- Battle Pet Tamers: Outland (A)
@@ -58,8 +72,8 @@ root("PetBattles", petbattle({
 				31975,	-- The Returning Champion (A)
 				31976,	-- The Returning Champion (A)
 			},
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(31921, {	-- Battle Pet Tamers: Outland (H)
@@ -71,8 +85,8 @@ root("PetBattles", petbattle({
 				31977,	-- The Returning Champion (H)
 				31980,	-- The Returning Champion (H)
 			},
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(31927, {	-- Battle Pet Tamers: Northrend (A)
@@ -81,8 +95,8 @@ root("PetBattles", petbattle({
 			["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 31981,	-- Exceeding Expectations (A)
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(31929, {	-- Battle Pet Tamers: Northrend (H)
@@ -91,8 +105,8 @@ root("PetBattles", petbattle({
 			["coord"] = { 52.6, 59.3, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 31982,	-- Exceeding Expectations (H)
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(31966, {	-- Battle Pet Tamers: Cataclysm (A)
@@ -101,8 +115,8 @@ root("PetBattles", petbattle({
 			["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 31984,	-- A Brief Reprieve (A)
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(31967, {	-- Battle Pet Tamers: Cataclysm (H)
@@ -111,8 +125,8 @@ root("PetBattles", petbattle({
 			["coord"] = { 52.6, 59.3, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 31983,	-- A Brief Reprieve (H)
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(31930, {	-- Battle Pet Tamers: Pandaria (A)
@@ -121,8 +135,8 @@ root("PetBattles", petbattle({
 			["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 31985,	-- The Triumphant Return (A)
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(31952, {	-- Battle Pet Tamers: Pandaria (H)
@@ -131,8 +145,8 @@ root("PetBattles", petbattle({
 			["coord"] = { 52.6, 59.3, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 31986,	-- The Triumphant Return (H)
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		-- Pet Battle Starting Quests. Alliance = Audrey, Grady, Lehna, Marcus, Valeena, Will. Horde = Ansel, Jarson, Matty, Naleen, Narzak, Varzok.
@@ -523,8 +537,8 @@ root("PetBattles", petbattle({
 			["sourceQuests"] = {
 				32008, 31878, 31879, 31880, 31881,	-- Audrey Burnhep (all breadcrumbs)
 			},
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(31724, {	-- Old MacDonald
@@ -532,8 +546,8 @@ root("PetBattles", petbattle({
 			["coord"] = { 41.6, 83.6, ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 31316,	-- Julia, The Pet Tamer
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(31725, {	-- Lindsay
@@ -541,8 +555,8 @@ root("PetBattles", petbattle({
 			["coord"] = { 80.6, 18.4, WESTFALL },
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 31724,	-- Old MacDonald
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(31726, {	-- Eric Davidson
@@ -550,8 +564,8 @@ root("PetBattles", petbattle({
 			["coord"] = { 33.2, 52.5, REDRIDGE_MOUNTAINS },
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 31725,	-- Lindsay
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(31729, {	-- Steven Lisbane
@@ -559,8 +573,8 @@ root("PetBattles", petbattle({
 			["coord"] = { 19.8, 44.8, DUSKWOOD },
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 31726,	-- Eric Davidson
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(31728, {	-- Bill Buckler
@@ -568,8 +582,8 @@ root("PetBattles", petbattle({
 			["coord"] = { 46.0, 40.4, NORTHERN_STRANGLETHORN },
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 31729,	-- Steven Lisbane
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(31917, {	-- A Tamer's Homecoming (A)
@@ -586,8 +600,8 @@ root("PetBattles", petbattle({
 			["sourceQuests"] = {
 				32009, 31882, 31883, 31884, 31885,	-- Varzok (all breadcrumbs)
 			},
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(31813, {	-- Dagra the Fierce
@@ -595,8 +609,8 @@ root("PetBattles", petbattle({
 			["coord"] = { 43.9, 28.9, DUROTAR },
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 31812,	-- Zunta, The Pet Tramer
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(31814, {	-- Analynn
@@ -604,8 +618,8 @@ root("PetBattles", petbattle({
 			["coord"] = { 58.6, 53.0, NORTHERN_BARRENS },
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 31813,	-- Dagra the Fierce
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(31815, {	-- Zonya the Sadist
@@ -613,8 +627,8 @@ root("PetBattles", petbattle({
 			["coord"] = { 20.2, 29.5, ASHENVALE },
 			["races"] = HORDE_ONLY,
 			["sourceQuests"] = { 31814 },	-- Analynn
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(31817, {	-- Merda Stronghoof
@@ -622,8 +636,8 @@ root("PetBattles", petbattle({
 			["coord"] = { 59.6, 71.6, STONETALON_MOUNTAINS },
 			["races"] = HORDE_ONLY,
 			["sourceQuests"] = { 31815 },	-- Zonya the Sadist
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(31870, {	-- Cassandra Kaboom
@@ -631,8 +645,8 @@ root("PetBattles", petbattle({
 			["coord"] = { 57.2, 45.8, DESOLACE },
 			["races"] = HORDE_ONLY,
 			["sourceQuests"] = { 31817 },	-- Merda Stronghoof
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(31918, {	-- A Tamer's Homecoming (H)
@@ -649,8 +663,8 @@ root("PetBattles", petbattle({
 				31917,	-- A Tamer's Homecoming (A)
 				31918,	-- A Tamer's Homecoming (H)
 			},
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(31976, {	-- The Returning Champion (A)
@@ -676,8 +690,8 @@ root("PetBattles", petbattle({
 				31917,	-- A Tamer's Homecoming (A)
 				31918,	-- A Tamer's Homecoming (H)
 			},
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(31975, {	-- The Returning Champion (A)
@@ -704,8 +718,8 @@ root("PetBattles", petbattle({
 				31919,	-- Battle Pet Tamers: Outland (A)
 				31921,	-- Battle Pet Tamers: Outland (H)
 			},
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(31981, {	-- Exceeding Expectations (A)
@@ -730,8 +744,8 @@ root("PetBattles", petbattle({
 				31927,	-- Battle Pet Tamers: Northrend (A)
 				31929,	-- Battle Pet Tamers: Northrend (H)
 			},
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(31984, {	-- A Brief Reprieve (A)
@@ -756,8 +770,8 @@ root("PetBattles", petbattle({
 				31966,	-- Battle Pet Tamers: Cataclysm (A)
 				31967,	-- Battle Pet Tamers: Cataclysm (H)
 			},
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(31985, {	-- The Triumphant Return (A)
@@ -781,8 +795,8 @@ root("PetBattles", petbattle({
 				31930,	-- Battle Pet Tamers: Pandaria (A)
 				31952,	-- Battle Pet Tamers: Pandaria (H)
 			},
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(32603, {	-- Beasts of Fable
@@ -904,8 +918,8 @@ root("PetBattles", petbattle({
 			["coord"] = { 40.0, 76.4, DEADWIND_PASS },
 			["isDaily"] = true,
 			["sourceQuest"] = 31915,	-- Grand Master Lydia Accoste
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(31909, {	-- Grand Master Trixxy
@@ -913,8 +927,8 @@ root("PetBattles", petbattle({
 			["coord"] = { 65.6, 64.5, WINTERSPRING },
 			["isDaily"] = true,
 			["sourceQuests"] = { 31897 },	-- Grand Master Trixxy
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(31905, {	-- Grazzle the Great
@@ -1008,8 +1022,8 @@ root("PetBattles", petbattle({
 			["isDaily"] = true,
 			["coord"] = { 30.6, 41.8, SHADOWMOON_VALLEY },
 			["provider"] = { "n", 66557 },	-- Bloodknight Antari <Grand Master Pet Tamer>
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(31923, {	-- Ras'an
@@ -1043,8 +1057,8 @@ root("PetBattles", petbattle({
 			["coord"] = { 77.4, 19.6, ICECROWN },
 			["provider"] = { "n", 66675 },	-- Major Payne
 			["isDaily"] = true,
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(31934, {	-- Gutretch
@@ -1068,8 +1082,8 @@ root("PetBattles", petbattle({
 			["provider"] = { "n", 66824 },	-- Obalis
 			["coord"] = { 56.6, 41.8, ULDUM },
 			["isDaily"] = true,
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(31973, {	-- Bordin Steadyfist
@@ -1082,8 +1096,8 @@ root("PetBattles", petbattle({
 			["coord"] = { 55.1, 37.6, DREAD_WASTES },
 			["isDaily"] = true,
 			["provider"] = { "n", 66739 },	-- Wastewalker Shu
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(32439, {	-- Flowing Pandaren Spirit
@@ -1106,16 +1120,16 @@ root("PetBattles", petbattle({
 			["coord"] = { 62.6, 45.8, KRASARANG_WILDS },
 			["provider"] = { "n", 66733 },
 			["isDaily"] = true,
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(31956, {	-- Grand Master Yon
 			["coord"] = { 35.8, 73.6, KUN_LAI_SUMMIT },
 			["isDaily"] = true,
 			["provider"] = { "n", 66738 },	-- Courageous Yon
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(63435, {	-- Temple Throwdown
@@ -1150,8 +1164,8 @@ root("PetBattles", petbattle({
 			["isDaily"] = true,
 			["coord"] = { 47.9, 54.1, THE_JADE_FOREST },
 			["provider"] = { "n", 66730 },	-- Hyuna of the Shrines
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(32440, {	-- Whispering Pandaren Spirit
@@ -1174,8 +1188,8 @@ root("PetBattles", petbattle({
 			["coord"] = { 36.3, 52.2, TOWNLONG_STEPPES },
 			["isDaily"] = true,
 			["provider"] = { "n", 66918 },	-- Seeker Zusshi
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(32434, {	-- Burning Pandaren Spirit
@@ -1206,8 +1220,8 @@ root("PetBattles", petbattle({
 				{ 86.6, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
 				{ 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
 			},
-			["sym"] = {
-				{"sub", "common_pb_rewards", 94207},	-- Fabled Pandaren Pet Supplies
+			["g"] = {
+				FABLED_PANDAREN_PET_SUPPLIES
 			},
 		}),
 		q(32868, {	-- Beasts of Fable Book II
@@ -1222,8 +1236,8 @@ root("PetBattles", petbattle({
 				{ 86.6, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
 				{ 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
 			},
-			["sym"] = {
-				{"sub", "common_pb_rewards", 94207},	-- Fabled Pandaren Pet Supplies
+			["g"] = {
+				FABLED_PANDAREN_PET_SUPPLIES
 			},
 		}),
 		q(32869, {	-- Beasts of Fable Book III
@@ -1238,8 +1252,8 @@ root("PetBattles", petbattle({
 				{ 86.6, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
 				{ 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
 			},
-			["sym"] = {
-				{"sub", "common_pb_rewards", 94207},	-- Fabled Pandaren Pet Supplies
+			["g"] = {
+				FABLED_PANDAREN_PET_SUPPLIES
 			},
 		}),
 		q(31958, {	-- Grand Master Aki
@@ -1247,16 +1261,16 @@ root("PetBattles", petbattle({
 			["provider"] = { "n", 66741 },	-- Aki the Chosen
 			["coord"] = { 31.2, 74.2, VALE_OF_ETERNAL_BLOSSOMS },
 			["isDaily"] = true,
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(31955, {	-- Grand Master Nishi
 			["isDaily"] = true,
 			["provider"] = { "n", 66734 },	-- Farmer Nishi
 			["coord"] = { 46.0, 43.6, VALLEY_OF_THE_FOUR_WINDS },
-			["sym"] = {
-				{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+			["g"] = {
+				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		-- WoD
@@ -1264,48 +1278,48 @@ root("PetBattles", petbattle({
 			["isDaily"] = true,
 			["coord"] = { 68.5, 64.7, FROSTFIRE_RIDGE },
 			["provider"] = { "n", 87122 },	-- Gargra
-			["sym"] = {
-				{"select", "itemID", 116415 },	-- Shiny Pet Charm
+			["g"] = {
+				SHINY_PET_CHARM
 			},
 		}),
 		q(37201, {	-- Cymre Brightblade
 			["isDaily"] = true,
 			["coord"] = { 51.1, 70.6, GORGROND },
 			["provider"] = { "n", 83837 },	-- Cymre Brightblade
-			["sym"] = {
-				{"select", "itemID", 116415 },	-- Shiny Pet Charm
+			["g"] = {
+				SHINY_PET_CHARM
 			},
 		}),
 		q(37206, {	-- Tarr the Terrible
 			["provider"] = { "n", 87110 },	-- Tar the Terrible
 			["coord"] = { 56.2, 9.8, DRAENOR_NAGRAND },
 			["isDaily"] = true,
-			["sym"] = {
-				{"select", "itemID", 116415 },	-- Shiny Pet Charm
+			["g"] = {
+				SHINY_PET_CHARM
 			},
 		}),
 		q(37203, {	-- Ashlei
 			["isDaily"] = true,
 			["coord"] = { 50.0, 31.2, DRAENOR_SHADOWMOON_VALLEY },
 			["provider"] = { "n", 87124 },	-- Ashlei
-			["sym"] = {
-				{"select", "itemID", 116415 },	-- Shiny Pet Charm
+			["g"] = {
+				SHINY_PET_CHARM
 			},
 		}),
 		q(37207, {	-- Vesharr
 			["provider"] = { "n", 87123 },	-- Vesharr
 			["coord"] = { 46.2, 45.3, SPIRES_OF_ARAK },
 			["isDaily"] = true,
-			["sym"] = {
-				{"select", "itemID", 116415 },	-- Shiny Pet Charm
+			["g"] = {
+				SHINY_PET_CHARM
 			},
 		}),
 		q(37208, {	-- Taralune
 			["isDaily"] = true,
 			["coord"] = { 49.0, 80.3, TALADOR },
 			["provider"] = { "n", 87125 },	-- Taralune
-			["sym"] = {
-				{"select", "itemID", 116415 },	-- Shiny Pet Charm
+			["g"] = {
+				SHINY_PET_CHARM
 			},
 		}),
 		-- Legion
@@ -1314,13 +1328,14 @@ root("PetBattles", petbattle({
 			["provider"] = { "n", 98489 },	-- Shipwrecked Captive
 			["coord"] = { 49.3, 45.4, AZSUNA },
 			["isWeekly"] = true,
-			["sym"] = {
-				{"select", "itemID", 116415 },	-- Shiny Pet Charm
+			["g"] = {
+				SHINY_PET_CHARM
 			},
 		}),
 		-- PvP Weekly
 		pvp(q(32863, {	-- What We've Been Training For
 			["description"] = "Account-Wide Weekly Quest.|r",
+			["isWeekly"] = true,
 			["providers"] = {
 				{ "n", 63596 },	-- Audrey Burnhelp
 				{ "n", 63626 },	-- Varzok
@@ -1333,9 +1348,10 @@ root("PetBattles", petbattle({
 				{ 86.6, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
 				{ 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
 			},
-			["isWeekly"] = true,
-			["sym"] = {
-				{"sub", "common_pb_rewards", 98095},	-- Brawler's Pet Supplies
+			["g"] = {
+				i(98095, {	-- Brawler's Pet Supplies
+					["sym"] = {{ "fill" }},
+				}),
 			},
 		})),
 	}),

@@ -174,6 +174,7 @@ profession(ARCHAEOLOGY, {
 							["achievementID"] = 10603,	-- A Keen Eye
 						}),
 					}),
+					i(146328),	-- Petrified Wyrmtongue
 				},
 			}),
 			-- Imp Generator

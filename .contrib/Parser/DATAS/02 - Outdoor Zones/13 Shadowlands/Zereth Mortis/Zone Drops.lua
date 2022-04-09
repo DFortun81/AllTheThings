@@ -4,8 +4,6 @@
 root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 	m(ZERETH_MORTIS, {
 		n(ZONE_DROPS, {
-			-- Pet
-			i(186559),	-- Grappling Gauntlet
 			-- Quest
 			i(190579),	-- Unformed Essence
 			-- Schematic
@@ -89,8 +87,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			i(188048),	-- Truthseeker's Staff
 			-- Lattices
 			i(188957),	-- Genesis Mote
-			--i(187634),	-- Ambystan Lattice
-			--i(187636),	-- Aurelid Lattice
+			i(187636, {	-- Aurelid Lattice
+				["crs"] = {
+					182688,	-- Aurelid
+					180978,	-- Hirukon <Aurelid Prime>
+				},
+			}),
 			i(187633, {	-- Bufonid Lattice
 				["crs"] = {
 					178803,	-- Accelerated Bufonid
@@ -146,7 +148,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					181360,	-- Vexis <Lupine Prime>
 				},
 			}),
-			--i(189148),	-- Poultrid Lattice
 			i(189149, {	-- Proto Avian Lattice
 				["crs"] = {
 					184623,	-- Ancient Avian

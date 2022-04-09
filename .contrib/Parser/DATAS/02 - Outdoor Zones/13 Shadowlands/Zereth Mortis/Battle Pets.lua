@@ -19,6 +19,19 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			pet(3206, {	-- Emerald Scarabid
 				["cr"] = 182691,
 			}),
+			n(183286, {	-- Enraged Poultrid
+				["description"] = "This npc can spawn around Zereth Mortis where Wild Poultrids are. Do /chicken to start a pet battle.",
+				["coords"] = {
+					{ 44, 92, ZERETH_MORTIS },
+					{ 48, 81, ZERETH_MORTIS },
+					{ 31.3, 55.3, ZERETH_MORTIS },
+					{ 39.6, 55.5, ZERETH_MORTIS },
+					{ 48.7, 95.6, ZERETH_MORTIS },
+				},
+				["g"] = {
+					pet(3218),	-- Enraged Poultrid
+				},
+			}),
 			pet(3210, {	-- Green Viperid
 				["cr"] = 182768,
 			}),
@@ -26,8 +39,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["cr"] = 182760,
 			}),
 			pet(3215, {	-- Mawtouched Geomental
-				["description"] = "Requires to eat a Questionable Mawshroom from Korthia to see.",
+				["description"] = "Requires eating a Questionable Mawshroom from Korthia to see.",
 				["cr"] = 183231,
+				["provider"] = { "i", 187244 },	-- Questionable Mawshroom
 			}),
 			pet(3205, {	-- Metallic Scarabid
 				["cr"] = 182568,

@@ -1852,9 +1852,9 @@ app.L = {
 		[-1007] = "Mythic",
 		[-1008] = "Mythic Alternative",
 		[-1009] = "PvP 1",
-		[-1010] = "PvP 2",
+		[-1010] = "Gladiator Alternative",
 		[-1011] = "PvP 3",
-		[-1012] = "PvP 4",
+		[-1012] = "Elite Alternative",
 		[-1013] = "PvP 5",
 	-- Warrior order hall lore items
 		[-2200] = "Great Odyn and the Firelord",

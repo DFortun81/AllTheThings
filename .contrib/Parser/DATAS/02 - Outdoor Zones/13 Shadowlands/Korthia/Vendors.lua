@@ -173,7 +173,23 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 						["customCollect"] = "SL_COV_NFA",	-- Night Fae-only
 						["cost"] = { { "c", 1767, 1000 } },	-- 1,000x Stygia
 					}),
-					i(187218),	-- Tome of Origins
+					i(187218, {	-- Tome of Origins
+						["cost"] = { { "c", 1767, 2000 } },
+						["g"] = {
+							recipe(352443, {	-- Vestige of Origins
+								["requireSkill"] = JEWELCRAFTING,
+							}),
+							recipe(352445, {	-- Vestige of Origins
+								["requireSkill"] = TAILORING,
+							}),
+							recipe(352439, {	-- Vestige of Origins
+								["requireSkill"] = BLACKSMITHING,
+							}),
+							recipe(352444, {	-- Vestige of Origins
+								["requireSkill"] = LEATHERWORKING,
+							}),
+						},
+					}),
 					--
 					i(187187, {	-- Korthian Armaments
 						["description"] = "These items can also drop from War Chests awarded by Covenant Assaults, the Death's Advance War Chest, and occasionally from Korthian dailies.\n\nKorthian Armaments also have a chance to drop from Korthia rares and treasures.",

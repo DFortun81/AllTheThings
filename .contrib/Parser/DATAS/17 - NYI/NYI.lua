@@ -2631,10 +2631,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(187914),	-- Captain Noteo's Unused Eye Patch
 				}),
 				tier(SL_TIER, 2.0, {
-					i(190929),	-- Ebony Protocloak
-					i(190933),	-- Majestic Oracle's Drape
-					i(190932),	-- Protohide Drape
-					i(190928),	-- Sandtails Drape
 					i(190935),	-- Distinguished Blade of Cartel Al
 					i(190937),	-- Edge of the Enlightened
 					i(190934),	-- Standard of the Wandering Brokers
@@ -2692,13 +2688,27 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					["modID"] = 4
 				}),
 				-- LFR Alt
+				i(190470, {	-- Cinch of Unity DH
+					["bonusID"] = 6896
+				}),
+				i(190470, {	-- Cinch of Unity DH
+					["modID"] = 4
+				}),
 				i(190466, {	-- Clasp of Unity Hunter
 					["bonusID"] = 6896
 				}),
 				i(190466, {	-- Clasp of Unity Hunter
 					["modID"] = 4
 				}),
-				-- LFR alt Mage
+				i(190474, {	-- Girdle of Unity Pala
+					["modID"] = 4
+				}),
+				i(190474, {	-- Girdle of Unity Pala
+					["bonusID"] = 6896
+				}),
+				i(190468, {	-- Cord of Unity Priest
+					["bonusID"] = 6896
+				}),
 				i(190464, {	-- Cord of Unity Mage
 					["bonusID"] = 6896
 				}),
@@ -2973,7 +2983,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				tier(SL_TIER, 0.1, {
 					i(177146),	-- Shaleshell Pendant
 					i(177165),	-- Shaleshell Pendant
-					i(179386),	-- Tidesage Necklace
 					i(175735),	-- 9.0 QRP - Bastion - Accessory - Neck
 				}),
 				tier(SL_TIER, 1.0, {
@@ -3050,31 +3059,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(183947),	-- Add Keystone Affix: Storming
 				i(180734),	-- Alchemist's Journal
 				i(181341),	-- Alexandros Mograine
-				i(180298),	-- Amalgamation of Sin
-				i(180299),	-- Amalgamation of Sin
-				i(180300),	-- Amalgamation of Sin
-				i(180301),	-- Amalgamation of Sin
-				i(180302),	-- Amalgamation of Sin
-				i(180303),	-- Amalgamation of Sin
-				i(180304),	-- Amalgamation of Sin
-				i(180305),	-- Amalgamation of Sin
-				i(180306),	-- Amalgamation of Sin
-				i(180357),	-- Amalgamation of Sin
-				i(180358),	-- Amalgamation of Sin
-				i(180359),	-- Amalgamation of Sin
-				i(180360),	-- Amalgamation of Sin
-				i(180361),	-- Amalgamation of Sin
-				i(180362),	-- Amalgamation of Sin
-				i(180363),	-- Amalgamation of Sin
-				i(180364),	-- Amalgamation of Sin
-				i(180365),	-- Amalgamation of Sin
-				i(180366),	-- Amalgamation of Sin
-				i(180367),	-- Amalgamation of Sin
-				i(180368),	-- Amalgamation of Sin
-				i(180369),	-- Amalgamation of Sin
-				i(180370),	-- Amalgamation of Sin
-				i(180371),	-- Amalgamation of Sin
-				i(180373),	-- Amalgamation of Sin
 				i(174781),	-- Anisykos's Favorite Hammer
 				i(178147),	-- Army of the Darkness Insignia
 				i(178886),	-- Baroness Vashj
