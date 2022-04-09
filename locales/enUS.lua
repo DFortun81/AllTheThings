@@ -232,6 +232,11 @@ app.L = {
 	["MAIN_LIST_REQUIRES_REFRESH"] = "[Open Main list to update progress]";
 	["DOES_NOT_CONTRIBUTE_TO_PROGRESS"] = "|cffe08207This group and its content do not contribute to the progress of this window!|r";
 	["CURRENCY_NEEDED_TO_BUY"] = "Items needed to buy not collected Things";
+	["LOCK_CRITERIA_LEVEL_LABEL"] = "Player Level";
+	["LOCK_CRITERIA_QUEST_LABEL"] = "Completed Quest";
+	["LOCK_CRITERIA_SPELL_LABEL"] = "Learned Spell/Mount/Recipe";
+	["LOCK_CRITERIA_FACTION_LABEL"] = "Faction Reputation";
+	["LOCK_CRITERIA_FACTION_FORMAT"] = "%s with %s (Current: %s)";
 
 	-- Item Filter Window
 	["ITEM_FILTER_TEXT"] = "Item Filters";

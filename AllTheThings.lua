@@ -11642,7 +11642,7 @@ local criteriaFuncs = {
     ["lvl"] = function(v)
         return app.Level >= v;
     end,
-	["label_lvl"] = "Player Level",
+	["label_lvl"] = L["LOCK_CRITERIA_LEVEL_LABEL"],
     ["text_lvl"] = function(v)
         return v;
     end,
@@ -11650,7 +11650,7 @@ local criteriaFuncs = {
     ["questID"] = function(v)
         return CompletedQuests[v];
     end,
-	["label_questID"] = "Completed Quest",
+	["label_questID"] = L["LOCK_CRITERIA_QUEST_LABEL"],
     ["text_questID"] = function(v)
 		local questObj = app.SearchForObject("questID", v);
         return questObj.text;
@@ -11659,7 +11659,7 @@ local criteriaFuncs = {
     ["spellID"] = function(v)
         return IsSpellKnown(v) or app.CurrentCharacter.Spells[v];
     end,
-	["label_spellID"] = "Learned Spell/Mount/Recipe",
+	["label_spellID"] = L["LOCK_CRITERIA_SPELL_LABEL"],
     ["text_spellID"] = function(v)
         return select(1, GetSpellInfo(v));
     end,
@@ -11667,18 +11667,18 @@ local criteriaFuncs = {
     ["factionID"] = function(v)
 		-- v = factionID.standingRequiredToLock
 		local factionID = math_floor(v + 0.00001);
-		local lockStanding = math_floor((v - factionID) * 10 + 0.00001)
+		local lockStanding = math_floor((v - factionID) * 10 + 0.00001);
         local standing = select(3, GetFactionInfoByID(factionID));
 		-- app.PrintDebug(string.format("Check Faction %s Standing (%d) is locked @ (%d)", factionID, standing, lockStanding))
 		return standing >= lockStanding;
     end,
-	["label_factionID"] = "Faction Reputation",
+	["label_factionID"] = L["LOCK_CRITERIA_FACTION_LABEL"],
     ["text_factionID"] = function(v)
 		-- v = factionID.standingRequiredToLock
 		local factionID = math_floor(v + 0.00001);
-		local lockStanding = math_floor((v - factionID) * 10 + 0.00001)
+		local lockStanding = math_floor((v - factionID) * 10 + 0.00001);
 		local name, _, standing = GetFactionInfoByID(factionID);
-        return string.format("%s with %s (Current: %s)", app.GetFactionStandingText(lockStanding), name, app.GetFactionStandingText(standing));
+        return string.format(L["LOCK_CRITERIA_FACTION_FORMAT"], app.GetFactionStandingText(lockStanding), name, app.GetFactionStandingText(standing));
     end,
 };
 app.QuestLockCriteriaFunctions = criteriaFuncs;
