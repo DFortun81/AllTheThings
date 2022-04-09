@@ -182,6 +182,7 @@ _.ExpansionFeatures =
 							["g"] = {
 								follower(718),	-- Champion: Akama
 							},
+							["description"] = "This followers is only available if you sided with |cFFFFD700Altruis the Sufferer|r.",
 						}),
 						q(43184, {	-- Champion: Allari the Souleater
 							["classes"] = { DEMONHUNTER },
@@ -289,6 +290,7 @@ _.ExpansionFeatures =
 							["g"] = {
 								follower(719),	-- Champion: Shade of Akama
 							},
+							["description"] = "This followers is only available if you sided with |cFFFFD700Kayn Sunfury|r.",
 						}),
 						q(42634, {	-- Confrontation at the Black Temple (Altruis)
 							["classes"] = { DEMONHUNTER },
