@@ -1079,7 +1079,7 @@ for key, value in pairs({
 	[185035] = "通缉布告",	-- Wanted Poster
 	[185126] = "水晶监牢",	-- Crystal Prison	--TODO: This was taken from tbc Wowhead
 	[185165] = "军团联络器",	-- Legion Communicator
-	[185166] = "通缉布告",	-- Wanted Poster	--TODO: This was taken from tbc Wowhead
+	[185166] = "通缉布告",	-- Wanted Poster
 	[185168] = "强化魔铁箱",	-- Reinforced Fel Iron Chest
 	[186267] = "南瓜神龛",	-- Pumpkin Shrine
 	[186426] = "通缉布告",	-- Wanted Poster

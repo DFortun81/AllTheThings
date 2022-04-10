@@ -3044,7 +3044,7 @@ for key,value in pairs({
 	[375538] = "잃어버린 계란형 물체",	-- Lost Ovoid
 	[375693] = "원생형태 설계도",	-- Protoform Schematic
 	[375694] = "원생형태 설계도",	-- Protoform Schematic
-	--TODO: [375746] = "Protoform Schematic",	-- Protoform Schematic
+	[375746] = "원형 설계도",	-- Prototype Schematic
 	[375748] = "원생형태 설계도",	-- Protoform Schematic
 	[375889] = "원생형태 설계도",	-- Protoform Schematic
 	[375893] = "진귀한 보관함",	-- High Value Cache

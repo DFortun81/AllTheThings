@@ -3048,7 +3048,7 @@ for key,value in pairs({
 	[375893] = "Scrigno di Grande Valore",	-- High Value Cache
 	[375900] = "Schema di Protoforma",	-- Protoform Schematic
 	[375902] = "Drappo Etereo Strappato",	-- Torn Ethereal Drape
-	--TODO: [375903] = "Protoform Schematic",	-- Protoform Schematic
+	[375903] = "Schema di Protoforma",	-- Protoform Schematic
 	[375905] = "Schema di Protoforma",	-- Protoform Schematic
 	[375907] = "Schema di Protoforma",	-- Protoform Schematic
 	[375915] = "Barlume della Serenità",	-- Glimmer of Serenity
