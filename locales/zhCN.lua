@@ -2980,7 +2980,11 @@ for key, value in pairs({
 	[375067] = "滑音宝箱",	-- Glissandian Cache
 	[375068] = "赋格宝箱",	-- Fugueal Cache
 	[375069] = "声乐宝箱",	-- Cantaric Cache
+	[375188] = "拱曲凹室指向",	-- Camber Alcove Arrangement
+	[375189] = "储备凹室指向",	-- Repertory Alcove Arrangement
+	[375190] = "圆弧凹室指向",	-- Rondure Alcove Arrangement
 	[375191] = "休眠凹室指向",	-- Dormant Alcove Arrangement
+	[375192] = "灿烂凹室指向",	-- Fulgore Alcove Arrangement
 	[375270] = "原生体设计方案",	-- Protoform Schematic
 	[375272] = "渊誓之箱",	-- Mawsworn Cache
 	[375281] = "失窃的圣物",	-- Stolen Relic
@@ -2990,6 +2994,7 @@ for key, value in pairs({
 	[375362] = "元鸟之巢",	-- Avian Nest
 	[375363] = "渊誓补给宝箱",	-- Mawsworn Supply Chest
 	[375366] = "元蛛卵",	-- Tarachnid Eggs
+	--TODO: [375368] = "Creation Catalyst Console",	-- Creation Catalyst Console
 	[375369] = "被咬过的旅行袋",	-- Gnawed Valise
 	[375370] = "原生体设计方案",	-- Protoform Schematic
 	[375371] = "原生体设计方案",	-- Protoform Schematic

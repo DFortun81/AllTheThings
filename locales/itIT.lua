@@ -2978,7 +2978,11 @@ for key,value in pairs({
 	[375067] = "Cassa Glissandiana",	-- Glissandian Cache
 	[375068] = "Cassa Fuguelica",	-- Fugueal Cache
 	[375069] = "Cassa Cantarica",	-- Cantaric Cache
+	[375188] = "Disposizione dell'Alcova della Curvatura",	-- Camber Alcove Arrangement
+	[375189] = "Disposizione dell'Alcova del Repertorio",	-- Repertory Alcove Arrangement
+	[375190] = "Disposizione dell'Alcova Rotonda",	-- Rondure Alcove Arrangement
 	[375191] = "Disposizione dell'Alcova Dormiente",	-- Dormant Alcove Arrangement
+	[375192] = "Disposizione dell'Alcova Fulgida",	-- Fulgore Alcove Arrangement
 	[375270] = "Schema di Protoforma",	-- Protoform Schematic
 	[375272] = "Scrigno dei Giurafauce",	-- Mawsworn Cache
 	[375281] = "Reliquia Rubata",	-- Stolen Relic
@@ -2988,6 +2992,7 @@ for key,value in pairs({
 	[375362] = "Nido di Aviano",	-- Avian Nest
 	[375363] = "Cassa di Rifornimenti dei Giurafauce",	-- Mawsworn Supply Chest
 	[375366] = "Uova di Taracnide",	-- Tarachnid Eggs
+	--TODO: [375368] = "Creation Catalyst Console",	-- Creation Catalyst Console
 	[375369] = "Borsa Morsicata",	-- Gnawed Valise
 	[375370] = "Schema di Protoforma",	-- Protoform Schematic
 	[375371] = "Schema di Protoforma",	-- Protoform Schematic
