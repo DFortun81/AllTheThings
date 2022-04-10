@@ -496,6 +496,7 @@ _.ExpansionFeatures =
 							["classes"] = { SHAMAN },
 							["lvl"] = 110,
 							["provider"] = { "n", 109829 },	-- Alexor
+							["description"] = "Only available if you you have the |cFFFFD700Rise!|r order hall upgrade.",
 						}),
 						q(41934, {	-- The Brand of Damnation
 							["classes"] = { SHAMAN },
