@@ -392,7 +392,7 @@ settings.ApplyProfile = function()
 				settings.SetWindowFromProfile(suffix);
 			end
 		end
-		
+
 		if app.IsReady then
 			app.print(L["PROFILE"]..":",settings:GetProfile(true));
 		end
@@ -445,7 +445,7 @@ settings.CheckSeasonalDate = function(self, u, startMonth, startDay, endMonth, e
 		start = time({day=startDay,month=startMonth,year=year,hour=0,min=0,sec=0});
 		ends = time({day=endDay,month=endMonth,year=year + 1,hour=0,min=0,sec=0});
 	end
-	
+
 	local active = (now >= start and now <= ends);
 	SeasonalSettingsBase.__index[u] = active;
 end
@@ -1113,14 +1113,15 @@ settings.UpdateMode = function(self, doRefresh)
 		app.SeasonalItemFilter = app.NoFilter;
 		app.UnobtainableItemFilter = app.NoFilter;
 		app.VisibilityFilter = app.ObjectVisibilityFilter;
-		app.ShowTrackableThings = app.NoFilter;
 		app.ItemTypeFilter = app.NoFilter;
 		app.ClassRequirementFilter = app.NoFilter;
 		app.RaceRequirementFilter = app.NoFilter;
 		app.RequiredSkillFilter = app.NoFilter;
 		app.RequireFactionFilter = app.NoFilter;
 		app.RequireCustomCollectFilter = app.NoFilter;
-		app.DefaultFilter = app.NoFilter;
+		-- Default filter fallback in Debug mode is based on Show Completed toggles so that uncollectible/completed content can still be hidden in Debug if desired
+		app.DefaultGroupFilter = self:Get("Show:CompletedGroups") and app.NoFilter or app.Filter;
+		app.DefaultThingFilter = self:Get("Show:CollectedThings") and app.NoFilter or app.Filter;
 
 		app.AccountWideAchievements = true;
 		app.AccountWideAzeriteEssences = true;
@@ -1164,7 +1165,8 @@ settings.UpdateMode = function(self, doRefresh)
 	else
 		app.VisibilityFilter = app.ObjectVisibilityFilter;
 		app.GroupFilter = app.FilterItemClass;
-		app.DefaultFilter = app.Filter;
+		app.DefaultGroupFilter = app.Filter;
+		app.DefaultThingFilter = app.Filter;
 		-- specifically hiding something
 		if settings:GetValue("Seasonal", "DoFiltering") then
 			app.SeasonalItemFilter = app.FilterItemClass_SeasonalItem;

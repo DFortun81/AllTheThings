@@ -3768,28 +3768,18 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	-- For Creatures and Encounters that are inside of an instance, we only want the data relevant for the instance + difficulty.
 	if paramA == "creatureID" or paramA == "encounterID" then
 		if group and #group > 0 then
-			if IsInInstance() then
-				local difficultyID = select(3, GetInstanceInfo());
-				if difficultyID and difficultyID > 0 then
-					local subgroup = {};
-					for i,j in ipairs(group) do
-						if GetRelativeDifficulty(j, difficultyID) then
-							tinsert(subgroup, j);
-						end
+			local difficultyID = (IsInInstance() and select(3, GetInstanceInfo())) or (paramA == "encounterID" and EJ_GetDifficulty()) or 0;
+			-- print("difficultyID",difficultyID,"params",paramA,paramB)
+			if difficultyID > 0 then
+				local subgroup = {};
+				for _,j in ipairs(group) do
+					-- print("Check",j.hash,GetRelativeValue(j, "difficultyID"))
+					if GetRelativeDifficulty(j, difficultyID) then
+						-- print("Match Difficulty")
+						tinsert(subgroup, j);
 					end
-					group = subgroup;
 				end
-			elseif paramA == "encounterID" then
-				local difficultyID = EJ_GetDifficulty();
-				if difficultyID and difficultyID > 0 then
-					local subgroup = {};
-					for i,j in ipairs(group) do
-						if GetRelativeDifficulty(j, difficultyID) then
-							tinsert(subgroup, j);
-						end
-					end
-					group = subgroup;
-				end
+				group = subgroup;
 			end
 		end
 	elseif paramA == "achievementID" then
@@ -13262,7 +13252,8 @@ app.RequireCustomCollectFilter = app.FilterItemClass_CustomCollect;
 app.UnobtainableItemFilter = app.NoFilter;
 app.RequiredSkillFilter = app.NoFilter;
 app.ShowTrackableThings = app.Filter;
-app.DefaultFilter = app.Filter;
+app.DefaultGroupFilter = app.Filter;
+app.DefaultThingFilter = app.Filter;
 
 -- Recursive Checks
 app.VerifyCache = function()
@@ -13363,7 +13354,7 @@ end
 -- Processing Functions
 local function SetGroupVisibility(parent, group)
 	-- if app.DEBUG_PRINT then print("SetGroupVisibility",group.key,group[group.key]) end
-	-- If this group is forced to be shown due to contained groups being shown without being collectible
+	-- If this group is forced to be shown due to contained groups being shown
 	if group.forceShow then
 		group.visible = true;
 		group.forceShow = nil;
@@ -13371,16 +13362,21 @@ local function SetGroupVisibility(parent, group)
 		parent.forceShow = true;
 		-- if app.DEBUG_PRINT then print("SetGroupVisibility.forceShow",group.progress,group.total,group.visible) end
 	-- If this group contains Things, show based on visibility filter
-	elseif group.total > 0 and app.GroupVisibilityFilter(group) then
-		group.visible = true;
+	elseif group.total > 0 then
+		group.visible = group.progress < group.total or app.GroupVisibilityFilter(group);
 		-- if app.DEBUG_PRINT then print("SetGroupVisibility.total",group.progress,group.total,group.visible) end
+		-- The group can still be trackable even if it isn't visible due to the total
+		if not group.visible and app.ShowTrackableThings(group) then
+			group.visible = not group.saved or app.GroupVisibilityFilter(group);
+			parent.forceShow = group.visible or parent.forceShow;
+		end
 	-- If this group is trackable, then we should show it.
 	elseif app.ShowTrackableThings(group) then
 		group.visible = not group.saved or app.GroupVisibilityFilter(group);
 		parent.forceShow = group.visible or parent.forceShow;
 		-- if app.DEBUG_PRINT then print("SetGroupVisibility.trackable",group.progress,group.total,group.visible) end
 	else
-		group.visible = app.DefaultFilter();
+		group.visible = app.DefaultGroupFilter();
 		-- if app.DEBUG_PRINT then print("SetGroupVisibility.default",group.progress,group.total,group.visible) end
 	end
 end
@@ -13388,13 +13384,7 @@ local function SetThingVisibility(parent, group)
 	-- if app.DEBUG_PRINT then print("SetThingVisibility",group.key,group[group.key]) end
 	if group.total > 0 then
 		-- If we've collected the item, use the "Show Collected Items" filter.
-		if group.total == group.progress then
-			if app.CollectedItemVisibilityFilter(group) then
-				group.visible = true;
-			end
-		else
-			group.visible = true;
-		end
+		group.visible = group.progress < group.total or app.CollectedItemVisibilityFilter(group);
 		-- if app.DEBUG_PRINT then print("SetThingVisibility.total",group.progress,group.total,group.visible) end
 	elseif app.ShowTrackableThings(group) then
 		-- If this group is trackable, then we should show it.
@@ -13402,7 +13392,7 @@ local function SetThingVisibility(parent, group)
 		parent.forceShow = group.visible or parent.forceShow;
 		-- if app.DEBUG_PRINT then print("SetThingVisibility.trackable",group.progress,group.total,group.visible) end
 	else
-		group.visible = app.DefaultFilter();
+		group.visible = app.DefaultThingFilter();
 		-- if app.DEBUG_PRINT then print("SetThingVisibility.default",group.progress,group.total,group.visible) end
 	end
 end
