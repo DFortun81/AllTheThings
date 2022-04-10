@@ -77,6 +77,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["sourceQuests"] = { 64958 },	-- The Forces Gather
 				["provider"] = { "o", 375972 },	-- Wanted: Custos
 				["coord"] = { 35.3, 65.4, ZERETH_MORTIS },
+				["_drop"] = { "g" },	-- Anima rewards
 			}),
 			-- Chapter 2
 			q(65768, {	-- Our Forward Scouts
