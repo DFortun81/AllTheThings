@@ -182,7 +182,7 @@ _.ExpansionFeatures =
 							["g"] = {
 								follower(718),	-- Champion: Akama
 							},
-							["description"] = "This followers is only available if you sided with |cFFFFD700Altruis the Sufferer|r.",
+							["description"] = "This follower is only available if you sided with |cFFFFD700Altruis the Sufferer|r.",
 						}),
 						q(43184, {	-- Champion: Allari the Souleater
 							["classes"] = { DEMONHUNTER },
