@@ -179,10 +179,10 @@ _.ExpansionFeatures =
 							["classes"] = { DEMONHUNTER },
 							["coord"] = { 57.9, 57.4, 720 },
 							["provider"] = { "n", 108239 },	-- Akama
+							["description"] = "This follower is only available if you sided with |cFFFFD700Altruis the Sufferer|r.",
 							["g"] = {
 								follower(718),	-- Champion: Akama
 							},
-							["description"] = "This follower is only available if you sided with |cFFFFD700Altruis the Sufferer|r.",
 						}),
 						q(43184, {	-- Champion: Allari the Souleater
 							["classes"] = { DEMONHUNTER },
@@ -287,10 +287,10 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 108246 },	-- Shade of Akama
 							["coord"] = { 58.5, 56.4, 720 },
 							["lvl"] = 103,
+							["description"] = "This follower is only available if you sided with |cFFFFD700Kayn Sunfury|r.",
 							["g"] = {
 								follower(719),	-- Champion: Shade of Akama
 							},
-							["description"] = "This follower is only available if you sided with |cFFFFD700Kayn Sunfury|r.",
 						}),
 						q(42634, {	-- Confrontation at the Black Temple (Altruis)
 							["classes"] = { DEMONHUNTER },
