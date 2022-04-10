@@ -400,98 +400,83 @@ profession(COOKING, {
 			["categoryID"] = 58,
 			["groups"] = {
 				-- #if AFTER WRATH
-				applyclassicphase(WRATH_PHASE_ONE, {	-- Bread of the Dead [Day of the Dead]
+				applyholiday(DAY_OF_THE_DEAD, {	-- Bread of the Dead [Day of the Dead]
 					["name"] = "Bread of the Dead",
 					["timeline"] = { "added 3.2.2.10505" },
 					["recipeID"] = 65454,
-					["u"] = DAY_OF_THE_DEAD,
 				}),
-				applyclassicphase(WRATH_PHASE_ONE, {	-- Candied Sweet Potato [A - Pilgrim's Bounty]
+				applyholiday(PILGRIMS_BOUNTY, {	-- Candied Sweet Potato [A - Pilgrim's Bounty]
 					["recipeID"] = 62051,	-- Candied Sweet Potato
 					["timeline"] = { "added 3.10.10505" },
-					["u"] = PILGRIMS_BOUNTY,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				applyclassicphase(WRATH_PHASE_ONE, {	-- Candied Sweet Potato [H - Pilgrim's Bounty]
+				applyholiday(PILGRIMS_BOUNTY, {	-- Candied Sweet Potato [H - Pilgrim's Bounty]
 					["recipeID"] = 66034,	-- Candied Sweet Potato
 					["timeline"] = { "added 3.10.10505" },
-					["u"] = PILGRIMS_BOUNTY,
 					["races"] = HORDE_ONLY,
 				}),
-				applyclassicphase(WRATH_PHASE_ONE, {	-- Cranberry Chutney [A - Pilgrim's Bounty]
+				applyholiday(PILGRIMS_BOUNTY, {	-- Cranberry Chutney [A - Pilgrim's Bounty]
 					["recipeID"] = 62049,	-- Cranberry Chutney
 					["timeline"] = { "added 3.10.10505" },
-					["u"] = PILGRIMS_BOUNTY,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				applyclassicphase(WRATH_PHASE_ONE, {	-- Cranberry Chutney [H - Pilgrim's Bounty]
+				applyholiday(PILGRIMS_BOUNTY, {	-- Cranberry Chutney [H - Pilgrim's Bounty]
 					["recipeID"] = 66035,	-- Cranberry Chutney
 					["timeline"] = { "added 3.10.10505" },
-					["u"] = PILGRIMS_BOUNTY,
 					["races"] = HORDE_ONLY,
 				}),
 				-- #endif
 				-- #if BEFORE MOP
-				{	-- Egg Nog [Winter Veil]
+				applyholiday(FEAST_OF_WINTER_VEIL, {	-- Egg Nog [Winter Veil]
 					["name"] = "Egg Nog",
 					["recipeID"] = 21144,
-					["u"] = FEAST_OF_WINTER_VEIL,
-				},
+				}),
 				-- #endif
-				{	-- Gingerbread Cookie [Winter Veil]
+				applyholiday(FEAST_OF_WINTER_VEIL, {	-- Gingerbread Cookie [Winter Veil]
 					["name"] = "Gingerbread Cookie",
 					["recipeID"] = 21143,
-					["u"] = FEAST_OF_WINTER_VEIL,
-				},
+				}),
 				-- #if AFTER TBC
-				applyclassicphase(TBC_PHASE_ONE, {	-- Hot Apple Cider [Winter Veil]
+				applyholiday(FEAST_OF_WINTER_VEIL, {	-- Hot Apple Cider [Winter Veil]
 					["recipeID"] = 45022,	-- Hot Apple Cider
-					["u"] = FEAST_OF_WINTER_VEIL,
 				}),
 				-- #endif
 				-- #if AFTER WRATH
-				applyclassicphase(WRATH_PHASE_ONE, {	-- Pumpkin Pie [A - Pilgrim's Bounty]
+				applyholiday(PILGRIMS_BOUNTY, {	-- Pumpkin Pie [A - Pilgrim's Bounty]
 					["recipeID"] = 62044,	-- Pumpkin Pie
 					["timeline"] = { "added 3.10.10505" },
-					["u"] = PILGRIMS_BOUNTY,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				applyclassicphase(WRATH_PHASE_ONE, {	-- Pumpkin Pie [H - Pilgrim's Bounty]
+				applyholiday(PILGRIMS_BOUNTY, {	-- Pumpkin Pie [H - Pilgrim's Bounty]
 					["recipeID"] = 66036,	-- Pumpkin Pie
 					["timeline"] = { "added 3.10.10505" },
-					["u"] = PILGRIMS_BOUNTY,
 					["races"] = HORDE_ONLY,
 				}),
-				applyclassicphase(WRATH_PHASE_ONE, {	-- Slow-Roasted Turkey [A - Pilgrim's Bounty]
+				applyholiday(PILGRIMS_BOUNTY, {	-- Slow-Roasted Turkey [A - Pilgrim's Bounty]
 					["recipeID"] = 62045,	-- Slow-Roasted Turkey
 					["timeline"] = { "added 3.10.10505" },
-					["u"] = PILGRIMS_BOUNTY,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				applyclassicphase(WRATH_PHASE_ONE, {	-- Slow-Roasted Turkey [H - Pilgrim's Bounty]
+				applyholiday(PILGRIMS_BOUNTY, {	-- Slow-Roasted Turkey [H - Pilgrim's Bounty]
 					["recipeID"] = 66037,	-- Slow-Roasted Turkey
 					["timeline"] = { "added 3.10.10505" },
-					["u"] = PILGRIMS_BOUNTY,
 					["races"] = HORDE_ONLY,
 				}),
-				applyclassicphase(WRATH_PHASE_ONE, {	-- Spice Bread Stuffing [A - Pilgrim's Bounty]
+				applyholiday(PILGRIMS_BOUNTY, {	-- Spice Bread Stuffing [A - Pilgrim's Bounty]
 					["recipeID"] = 62050,	-- Spice Bread Stuffing
 					["timeline"] = { "added 3.10.10505" },
-					["u"] = PILGRIMS_BOUNTY,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				applyclassicphase(WRATH_PHASE_ONE, {	-- Spice Bread Stuffing [H - Pilgrim's Bounty]
+				applyholiday(PILGRIMS_BOUNTY, {	-- Spice Bread Stuffing [H - Pilgrim's Bounty]
 					["recipeID"] = 66038,	-- Spice Bread Stuffing
 					["timeline"] = { "added 3.10.10505" },
-					["u"] = PILGRIMS_BOUNTY,
 					["races"] = HORDE_ONLY,
 				}),
 				-- #endif
 				-- #if AFTER MOP
-				{	-- Winter Veil Egg Nog [Winter Veil]
+				applyholiday(FEAST_OF_WINTER_VEIL, {	-- Winter Veil Egg Nog [Winter Veil]
 					["recipeID"] = 21144,	-- Winter Veil Egg Nog
-					["u"] = FEAST_OF_WINTER_VEIL,
-				},
+				}),
 				-- #endif
 			}
 		},
@@ -561,10 +546,10 @@ profession(COOKING, {
 			["name"] = "Feltail Delight",
 			["recipeID"] = 33291
 		},
-		{
+		applyclassicphase(TBC_PHASE_TWO, {
 			["name"] = "Fisherman's Feast",
 			["recipeID"] = 42302
-		},
+		}),
 		{
 			["name"] = "Golden Fish Sticks",
 			["recipeID"] = 33295
@@ -573,10 +558,10 @@ profession(COOKING, {
 			["name"] = "Grilled Mudfish",
 			["recipeID"] = 33293
 		},
-		{
+		applyclassicphase(TBC_PHASE_TWO, {
 			["name"] = "Hot Buttered Trout",
 			["recipeID"] = 42305
-		},
+		}),
 		{
 			["name"] = "Kibler's Bits",
 			["recipeID"] = 43772
@@ -614,10 +599,10 @@ profession(COOKING, {
 			["timeline"] = { "removed 4.2.0.10000" },
 			["recipeID"] = 33285
 		},
-		{
+		applyclassicphase(TBC_PHASE_TWO, {
 			["name"] = "Stewed Trout",
 			["recipeID"] = 42296
-		},
+		}),
 		{
 			["name"] = "Stormchops",
 			["recipeID"] = 43758
@@ -2756,11 +2741,11 @@ profession(COOKING, {
 			},
 		}),
 		q(13825, {	-- Clamlette Surprise
-			["u"] = REMOVED_FROM_GAME,
-			["provider"] = { "n", 8125 },	-- Dirge Quikcleave
-			["coord"] = { 52.63, 28.12, TANARIS },
-			["requireSkill"] = COOKING,
+			["qg"] = 8125,	-- Dirge Quikcleave
 			["altQuests"] = { 6610 },	-- Clamlette Surprise
+			["coord"] = { 52.63, 28.12, TANARIS },
+			["timeline"] = { "added 3.1.0.9637", "removed 4.0.3" },
+			["requireSkill"] = COOKING,
 			["groups"] = {
 				i(16971),	-- Clamlette Surprise
 			},
@@ -2994,33 +2979,6 @@ profession(COOKING, {
 			["lvl"] = 35,
 		}),
 	}),
-	-- #if AFTER TBC
-	n(REWARDS, applyclassicphase(TBC_PHASE_ONE, {
-		["maps"] = { SHATTRATH_CITY },
-		["requireSkill"] = COOKING,
-		["groups"] = {
-			i(33844, {	-- Barrel of Fish
-				i(33869),	-- Recipe: Broiled Bloodfin
-				i(34834, {	-- Recipe: Captain Rumsey's Lager
-					-- #if ANYCLASSIC
-					["description"] = "This was originally not available as a drop within the crate or barrel until Patch 2.3.3. I'm not sure if it's available or not, please let the ATT Discord know if you get it in TBC Classic!",
-					-- #endif
-				}),
-				i(33925),	-- Recipe: Delicious Chocolate Cake
-				i(33875),	-- Recipe: Kibler's Bits
-				i(33870),	-- Recipe: Skullfish Soup
-				i(33871),	-- Recipe: Stormchops
-			}),
-			i(33857, {	-- Crate of Meat
-				i(34834),	-- Recipe: Captain Rumsey's Lager
-				i(33925),	-- Recipe: Delicious Chocolate Cake
-				i(33875),	-- Recipe: Kibler's Bits
-				i(33873),	-- Recipe: Spicy Hot Talbuk
-				i(33871),	-- Recipe: Stormchops
-			}),
-		},
-	})),
-	-- #endif
 	-- #if NOT ANYCLASSIC
 	filter(RECIPES, {
 		tier(CLASSIC_TIER, {
@@ -3044,7 +3002,7 @@ profession(COOKING, {
 });
 
 -- Cooking Item Database
-_.ItemDB = {};
+local itemDB = root("ItemDB", {});
 
 -- Recipe Cache (for Validation)
 local recipeCache, recipeCacheU = {}, {};
@@ -3087,7 +3045,7 @@ local itemrecipe = function(name, itemID, spellID, phase, timeline)
 		end
 		o.name = name;
 	end
-	_.ItemDB[itemID] = phase and type(phase) ~= "boolean" and applyclassicphase(phase, o) or o;
+	itemDB[itemID] = phase and type(phase) ~= "boolean" and applyclassicphase(phase, o) or o;
 
 	-- Ensure that this recipe's spellID exists in the profession database.
 	if recipeCache and (type(timeline) ~= "boolean" and type(phase) ~= "boolean") then
@@ -3179,8 +3137,14 @@ itemrecipe("Recipe: Sagefish Delight", 21219, 25954);
 itemrecipe("Recipe: Runn Tum Tuber Surprise", 18267, 22761, PHASE_ONE_DIREMAUL);
 itemrecipe("Recipe: Heavy Crocolisk Stew", 20075, 24418);
 itemrecipe("Recipe: Dirge's Kickin' Chimaerok Chops", 21025, 25659, PHASE_FIVE);
+-- #if ANYCLASSIC
+itemrecipe("Expert Cookbook", 16072, 3413, nil, true).rank = 3;
+-- #else
 itemrecipe("Expert Cookbook", 16072, 0--[[3413]], nil, true);
+-- #endif
+-- #if NOT ANYCLASSIC
 un(REMOVED_FROM_GAME, itemrecipe("Recipe: Thistle Tea", 7678, 9513));
+-- #endif
 
 -- #if AFTER TBC
 -- TBC Recipes
@@ -3216,7 +3180,11 @@ itemrecipe("Recipe: Spicy Hot Talbuk", 33873, 43765, TBC_PHASE_ONE);
 itemrecipe("Recipe: Kibler's Bits", 33875, 43772, TBC_PHASE_ONE);
 itemrecipe("Recipe: Delicious Chocolate Cake", 33925, 43779, TBC_PHASE_ONE);
 itemrecipe("Recipe: Captain Rumsey's Lager", 34834, 45695, TBC_PHASE_ONE);
+-- #if ANYCLASSIC
+itemrecipe("Master Cookbook", 27736, 33359, TBC_PHASE_ONE, true).rank = 5;
+-- #else
 itemrecipe("Master Cookbook", 27736, 0--[[33359]], TBC_PHASE_ONE, true);
+-- #endif
 -- #endif
 
 -- #if AFTER WRATH
@@ -3226,10 +3194,13 @@ itemrecipe("Master Cookbook", 27736, 0--[[33359]], TBC_PHASE_ONE, true);
 
 -- These items never made it in.
 recipeCache = nil;	-- Invalidate the cache.
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	filter(RECIPES, {
 		itemrecipe("Recipe: Herb Baked Egg", 6891, 8604),	-- this is taught by trainer when you learn cooking; recipe item was never in game
 		itemrecipe("Deprecated Recipe: Kodo Skin Bag", 4997),
+		-- #if ANYCLASSIC
+		itemrecipe("Recipe: Thistle Tea", 7678, 9513),
+		-- #endif
 		itemrecipe("Artisan Cookbook", 16073, 19887),
 
 		-- #if AFTER WRATH
@@ -3262,4 +3233,4 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		i(115291),		-- Whole Pot-Roasted Elekk
 		-- #endif
 	}),
-});
+}));
