@@ -6,9 +6,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 	m(ZERETH_MORTIS, {
 		n(VENDORS, {
 			o(375368, {	-- Creation Catalyst Console
-				["description"] = "This thing is a disgrace for comp players. Help us gather information of what is/isnt available via doing reports in ATT discord.",
+				["description"] = "Help us gather information of what is/isnt available via doing reports in ATT discord. Especially the alternative sets and if the pvp transmog is available somewhere else",
 				["coord"] = { 47.4, 88.6, ZERETH_MORTIS },
-				["sym"] = {"fill"},
+				["modelScale"] = 3,
+				["sym"] = {{"fill"}},
 			}),
 			n(185587, {	-- Elder Rafiq
 				["coord"] = { 60.6, 51, ZERETH_MORTIS },

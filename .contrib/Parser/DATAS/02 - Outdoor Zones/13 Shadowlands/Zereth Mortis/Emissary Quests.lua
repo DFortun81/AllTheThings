@@ -31,3 +31,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 		}),
 	}),
 })));
+
+root("HiddenQuestTriggers", {
+	q(64869),	-- "Paragon of Automa" ( Probably something left by blizzard when removed the Automa Rep and Cache /Braghe)
+	q(64870),	-- Paragon of Enlightened Brokers
+});

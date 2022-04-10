@@ -4,8 +4,6 @@
 root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 	m(ZERETH_MORTIS, {
 		n(ZONE_REWARDS, {
-			i(189544),	-- Anima Webbing
-			i(189864),	-- Anima Gossamer
 			currency(1979),	-- Cyphers of the First Ones
 			currency(2009),	-- Cosmic Flux
 			i(190189),	-- Sandworn Relic
@@ -15,7 +13,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(189153),	-- Unformed Lattice
 				},
 			}),
-
 			--
 			i(190605),	-- Impossibly Ancient Cloak
 			i(190355),	-- Cryptic Cinch

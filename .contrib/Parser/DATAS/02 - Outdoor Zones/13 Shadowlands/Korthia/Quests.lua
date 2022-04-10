@@ -313,6 +313,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["sourceQuests"] = { 63902 },	-- Good News, Everyone!
 				["provider"] = { "n", 178845 },	-- Xy'lony
 				["coord"] = { 64.5, 25.4, KORTHIA },
+				["isBreadcrumb"] = true,
 			}),
 			q(64556, {	-- In Need of Assistance
 				["sourceQuests"] = { 64555 },	-- Surveying Secrets

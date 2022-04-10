@@ -45,24 +45,27 @@ local SymRaid = function(ClassID, ModID)
 	return SymLink
 end
 
-local SymPvP = function(ClassID)
-	SymLinK = {
+local SymPvP = function(ClassID, HeaderID)
+	SymLinKPvP = {
 		{"select", "tierID", SL_TIER},			-- Select Shadowlands
 		{"pop"},								-- Discard the Shadowland Headers and acquire all of their children.
 		{"where", "headerID", SEASON_COSMIC},	-- Season 3
 		{"pop"},								-- Discard the Custom Headers and acquire all of their children.
-		{"where", "objectID", 353484},
-		{"pop"},
+		{"where", "headerID", HeaderID},		-- Glad/Elite
+		{"pop"},								-- Discard the Custom Headers and acquire all of their children.
+		{"where", "headerID", CLASSES},			-- Classes
+		{"pop"},								-- Discard the Custom Headers and acquire all of their children.
 		{"where", "classID", ClassID},
 		{"pop"},
 	}
-	return SymLink
+	return SymLinKPvP
 end
 
 root("ExpansionFeatures", tier(SL_TIER, {
 	o(375368, {	-- Creation Catalyst Console
-		["description"] = "This thing is a disgrace for comp players. Help us gather information of what is/isnt available via doing reports in ATT discord.",
+		["description"] = "Help us gather information of what is/isnt available via doing reports in ATT discord. Especially the alternative sets and if the pvp transmog is available somewhere else",
 		["coord"] = { 47.4, 88.6, ZERETH_MORTIS },
+		["modelScale"] = 3,
 		["g"] = {
 			d(17, {	-- LFR
 				["description"] = "This is theorized to be available from LFR gear.",
@@ -177,7 +180,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 					}),
 				}),
 			}),
-			n(-1002, {	-- LFR (Alt)
+			n(-1001, {	-- LFR (Alt)
 				["description"] = "This is theorized to be available from Mythic+ gear.",
 				["g"] = bubbleDown({ ["bonusID"] = 6896 }, {
 					cl(DEATHKNIGHT, {
@@ -427,7 +430,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 					}),
 				}),
 			}),
-			n(-1004, {	-- Normal (Alt)
+			n(-1002, {	-- Normal (Alt)
 				["description"] = "This is theorized to be available from Mythic+ gear.",
 				["g"] = bubbleDown({ ["bonusID"] = 8107 }, {
 					cl(DEATHKNIGHT, {
@@ -677,7 +680,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 					}),
 				}),
 			}),
-			n(-1006, {	-- Heroic (Alt)
+			n(-1003, {	-- Heroic (Alt)
 				["description"] = "This is theorized to be available from Mythic+ gear.",
 				["g"] = bubbleDown({ ["bonusID"] = 6898 }, {
 					cl(DEATHKNIGHT, {
@@ -927,7 +930,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 					}),
 				}),
 			}),
-			n(-1008, {	-- Mythic (Alt)
+			n(-1004, {	-- Mythic (Alt)
 				["description"] = "This is theorized to be available from Mythic+ gear.",
 				["g"] = bubbleDown({ ["bonusID"] = 6897 }, {
 					cl(DEATHKNIGHT, {
@@ -1064,11 +1067,11 @@ root("ExpansionFeatures", tier(SL_TIER, {
 					}),
 				}),
 			}),
-			n(PVP_GLADIATOR, {
+			pvp(n(PVP_GLADIATOR, {
 				["description"] = "This is theorized to be available from PvP gear.",
 				["g"] = bubbleDown({ ["bonusID"] = 7897 }, {
 					cl(DEATHKNIGHT, {
-						["sym"] = SymPvP(DEATHKNIGHT),
+						["sym"] = SymPvP(DEATHKNIGHT, PVP_GLADIATOR),
 						["g"] = {
 							i(188873),	-- Cloak of the First Eidolon
 							i(188870),	-- Girdle of the First Eidolon
@@ -1077,7 +1080,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 						},
 					}),
 					cl(DEMONHUNTER, {
-						["sym"] = SymRaid(DEMONHUNTER, 6),
+						["sym"] = SymPvP(DEMONHUNTER, PVP_GLADIATOR),
 						["g"] = {
 							i(188897),	-- Mercurial Punisher's Belt
 							i(188899),	-- Mercurial Punisher's Boots
@@ -1086,7 +1089,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 						},
 					}),
 					cl(DRUID, {
-						["sym"] = SymPvP(DRUID),
+						["sym"] = SymPvP(DRUID, PVP_GLADIATOR),
 						["g"] = {
 							i(188850),	-- Bracers of the Fixed Stars
 							i(188852),	-- Cincture of the Fixed Stars
@@ -1095,7 +1098,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 						},
 					}),
 					cl(HUNTER, {
-						["sym"] = SymPvP(HUNTER),
+						["sym"] = SymPvP(HUNTER, PVP_GLADIATOR),
 						["g"] = {
 							i(188872),	-- Godstalker's Camouflage
 							i(188857),	-- Godstalker's Fauld
@@ -1104,7 +1107,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 						},
 					}),
 					cl(MAGE, {
-						["sym"] = SymPvP(MAGE),
+						["sym"] = SymPvP(MAGE, PVP_GLADIATOR),
 						["g"] = {
 							i(188840),	-- Erudite Occultist's Bracers
 							i(188841),	-- Erudite Occultist's Cord
@@ -1113,7 +1116,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 						},
 					}),
 					cl(MONK ,{
-						["sym"] = SymPvP(MONK),
+						["sym"] = SymPvP(MONK, PVP_GLADIATOR),
 						["g"] = {
 							i(188913),	-- Demigaunts of the Grand Upwelling
 							i(188918),	-- Drape of the Grand Upwelling
@@ -1122,7 +1125,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 						},
 					}),
 					cl(PALADIN, {
-						["sym"] = SymPvP(PALADIN),
+						["sym"] = SymPvP(PALADIN, PVP_GLADIATOR),
 						["g"] = {
 							i(188936),	-- Luminous Chevalier's Drape
 							i(188935),	-- Luminous Chevalier's Girdle
@@ -1131,7 +1134,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 						},
 					}),
 					cl(PRIEST, {
-						["sym"] = SymPvP(PRIEST),
+						["sym"] = SymPvP(PRIEST, PVP_GLADIATOR),
 						["g"] = {
 							i(188876),	-- Bracelets of the Empyrean
 							i(188882),	-- Drape of the Empyrean
@@ -1140,7 +1143,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 						},
 					}),
 					cl(ROGUE, {
-						["sym"] = SymPvP(ROGUE),
+						["sym"] = SymPvP(ROGUE, PVP_GLADIATOR),
 						["g"] = {
 							i(188906),	-- Soulblade Baldric
 							i(188909),	-- Soulblade Cloak
@@ -1149,7 +1152,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 						},
 					}),
 					cl(SHAMAN, {
-						["sym"] = SymPvP(SHAMAN),
+						["sym"] = SymPvP(SHAMAN, PVP_GLADIATOR),
 						["g"] = {
 							i(188921),	-- Theurgic Starspeaker's Belt
 							i(188919),	-- Theurgic Starspeaker's Bracers
@@ -1158,7 +1161,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 						},
 					}),
 					cl(WARLOCK, {
-						["sym"] = SymPvP(WARLOCK),
+						["sym"] = SymPvP(WARLOCK, PVP_GLADIATOR),
 						["g"] = {
 							i(188885),	-- Bangles of the Demon Star
 							i(188883),	-- Boots of the Demon Star
@@ -1167,7 +1170,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 						},
 					}),
 					cl(WARRIOR, {
-						["sym"] = SymPvP(WARRIOR),
+						["sym"] = SymPvP(WARRIOR, PVP_GLADIATOR),
 						["g"] = {
 							i(188945),	-- Favor of the Infinite Infantry
 							i(188944),	-- Greatbelt of the Infinite Infantry
@@ -1176,8 +1179,8 @@ root("ExpansionFeatures", tier(SL_TIER, {
 						},
 					}),
 				}),
-			}),
-			n(-1010, {	--Gladiator Alternative
+			})),
+			pvp(n(-1005, {	--Gladiator Alternative
 				["description"] = "This is theorized to be available from PvP gear.",
 				["g"] = bubbleDown({ ["bonusID"] = 6894 }, {
 					cl(DEATHKNIGHT, {
@@ -1313,145 +1316,121 @@ root("ExpansionFeatures", tier(SL_TIER, {
 						i(188943),	-- Vambraces of the Infinite Infantry
 					}),
 				}),
-			}),
-			n(PVP_ELITE, {
+			})),
+			pvp(n(PVP_ELITE, {
 				["description"] = "This is theorized to be available from PvP gear.",
 				["g"] = bubbleDown({ ["bonusID"] = 7532 }, {
 					cl(DEATHKNIGHT, {
-						i(188864),	-- Carapace of the First Eidolon
-						i(188866),	-- Chausses of the First Eidolon
-						i(188873),	-- Cloak of the First Eidolon
-						i(188863),	-- Gauntlets of the First Eidolon
-						i(188870),	-- Girdle of the First Eidolon
-						i(188865),	-- Greaves of the First Eidolon
-						i(188867),	-- Shoulderplates of the First
-						i(188869),	-- Vambraces of the First Eidolon
-						i(188868),	-- Visage of the First Eidolon
+						["sym"] = SymPvP(DEATHKNIGHT, PVP_ELITE),
+						["g"] = {
+							i(188873),	-- Cloak of the First Eidolon
+							i(188870),	-- Girdle of the First Eidolon
+							i(188865),	-- Greaves of the First Eidolon
+							i(188869),	-- Vambraces of the First Eidolon
+						},
 					}),
 					cl(DEMONHUNTER, {
-						i(188897),	-- Mercurial Punisher's Belt
-						i(188899),	-- Mercurial Punisher's Boots
-						i(188893),	-- Mercurial Punisher's Breeches
-						i(188898),	-- Mercurial Punisher's Grips
-						i(188892),	-- Mercurial Punisher's Hood
-						i(188894),	-- Mercurial Punisher's Jerkin
-						i(188900),	-- Mercurial Punisher's Mantle
-						i(188896),	-- Mercurial Punisher's Shoulderpads
-						i(188895),	-- Mercurial Punisher's Wristguards
+						["sym"] = SymPvP(DEMONHUNTER, PVP_ELITE),
+						["g"] = {
+							i(188897),	-- Mercurial Punisher's Belt
+							i(188899),	-- Mercurial Punisher's Boots
+							i(188900),	-- Mercurial Punisher's Mantle
+							i(188895),	-- Mercurial Punisher's Wristguards
+						},
 					}),
 					cl(DRUID, {
-						i(188850),	-- Bracers of the Fixed Stars
-						i(188849),	-- Chestguard of the Fixed Stars
-						i(188852),	-- Cincture of the Fixed Stars
-						i(188854),	-- Footwraps of the Fixed Stars
-						i(188853),	-- Handwraps of the Fixed Stars
-						i(188847),	-- Headpiece of the Fixed Stars
-						i(188848),	-- Leggings of the Fixed Stars
-						i(188851),	-- Shoulderpads of the Fixed Stars
-						i(188871),	-- Wrap of the Fixed Stars
+						["sym"] = SymPvP(DRUID, PVP_ELITE),
+						["g"] = {
+							i(188850),	-- Bracers of the Fixed Stars
+							i(188852),	-- Cincture of the Fixed Stars
+							i(188854),	-- Footwraps of the Fixed Stars
+							i(188871),	-- Wrap of the Fixed Stars
+						},
 					}),
 					cl(HUNTER, {
-						i(188872),	-- Godstalker's Camouflage
-						i(188857),	-- Godstalker's Fauld
-						i(188861),	-- Godstalker's Gauntlets
-						i(188858),	-- Godstalker's Hauberk
-						i(188856),	-- Godstalker's Pauldrons
-						i(188862),	-- Godstalker's Sabatons
-						i(188859),	-- Godstalker's Sallet
-						i(188860),	-- Godstalker's Tassets
-						i(188855),	-- Godstalker's Wristwraps
+						["sym"] = SymPvP(HUNTER, PVP_ELITE),
+						["g"] = {
+							i(188872),	-- Godstalker's Camouflage
+							i(188857),	-- Godstalker's Fauld
+							i(188862),	-- Godstalker's Sabatons
+							i(188855),	-- Godstalker's Wristwraps
+						},
 					}),
 					cl(MAGE, {
-						i(188840),	-- Erudite Occultist's Bracers
-						i(188841),	-- Erudite Occultist's Cord
-						i(188845),	-- Erudite Occultist's Handwraps
-						i(188844),	-- Erudite Occultist's Hood
-						i(188842),	-- Erudite Occultist's Leggings
-						i(188843),	-- Erudite Occultist's Mantle
-						i(188839),	-- Erudite Occultist's Robes
-						i(188846),	-- Erudite Occultist's Shroud
-						i(188838),	-- Erudite Occultist's Treads
+						["sym"] = SymPvP(MAGE, PVP_ELITE),
+						["g"] = {
+							i(188840),	-- Erudite Occultist's Bracers
+							i(188841),	-- Erudite Occultist's Cord
+							i(188846),	-- Erudite Occultist's Shroud
+							i(188838),	-- Erudite Occultist's Treads
+						},
 					}),
 					cl(MONK ,{
-						i(188910),	-- Crown of the Grand Upwelling
-						i(188912),	-- Cuirass of the Grand Upwelling
-						i(188913),	-- Demigaunts of the Grand Upwelling
-						i(188918),	-- Drape of the Grand Upwelling
-						i(188917),	-- Footwraps of the Grand Upwelling
-						i(188916),	-- Grips of the Grand Upwelling
-						i(188911),	-- Legguards of the Grand Upwelling
-						i(188914),	-- Tassets of the Grand Upwelling
-						i(188915),	-- Waistwrap of the Grand Upwelling
+						["sym"] = SymPvP(MONK, PVP_ELITE),
+						["g"] = {
+							i(188913),	-- Demigaunts of the Grand Upwelling
+							i(188918),	-- Drape of the Grand Upwelling
+							i(188917),	-- Footwraps of the Grand Upwelling
+							i(188915),	-- Waistwrap of the Grand Upwelling
+						},
 					}),
 					cl(PALADIN, {
-						i(188933),	-- Luminous Chevalier's Casque
-						i(188936),	-- Luminous Chevalier's Drape
-						i(188932),	-- Luminous Chevalier's Epaulettes
-						i(188928),	-- Luminous Chevalier's Gauntlets
-						i(188935),	-- Luminous Chevalier's Girdle
-						i(188929),	-- Luminous Chevalier's Plackart
-						i(188931),	-- Luminous Chevalier's Robes
-						i(188930),	-- Luminous Chevalier's Spurs
-						i(188934),	-- Luminous Chevalier's Vambraces
+						["sym"] = SymPvP(PALADIN, PVP_ELITE),
+						["g"] = {
+							i(188936),	-- Luminous Chevalier's Drape
+							i(188935),	-- Luminous Chevalier's Girdle
+							i(188930),	-- Luminous Chevalier's Spurs
+							i(188934),	-- Luminous Chevalier's Vambraces
+						},
 					}),
 					cl(PRIEST, {
-						i(188880),	-- Amice of the Empyrean
-						i(188876),	-- Bracelets of the Empyrean
-						i(188879),	-- Capelet of the Empyrean
-						i(188881),	-- Caress of the Empyrean
-						i(188882),	-- Drape of the Empyrean
-						i(188875),	-- Habit of the Empyrean
-						i(188878),	-- Leggings of the Empyrean
-						i(188877),	-- Sash of the Empyrean
-						i(188874),	-- Slippers of the Empyrean
+						["sym"] = SymPvP(PRIEST, PVP_ELITE),
+						["g"] = {
+							i(188876),	-- Bracelets of the Empyrean
+							i(188882),	-- Drape of the Empyrean
+							i(188877),	-- Sash of the Empyrean
+							i(188874),	-- Slippers of the Empyrean
+						},
 					}),
 					cl(ROGUE, {
-						i(188906),	-- Soulblade Baldric
-						i(188909),	-- Soulblade Cloak
-						i(188908),	-- Soulblade Footpads
-						i(188907),	-- Soulblade Grasps
-						i(188901),	-- Soulblade Guise
-						i(188903),	-- Soulblade Leathers
-						i(188902),	-- Soulblade Leggings
-						i(188905),	-- Soulblade Nightwings
-						i(188904),	-- Soulblade Wristguard
+						["sym"] = SymPvP(ROGUE, PVP_ELITE),
+						["g"] = {
+							i(188906),	-- Soulblade Baldric
+							i(188909),	-- Soulblade Cloak
+							i(188908),	-- Soulblade Footpads
+							i(188904),	-- Soulblade Wristguard
+						},
 					}),
 					cl(SHAMAN, {
-						i(188920),	-- Theurgic Starspeaker's Adornment
-						i(188921),	-- Theurgic Starspeaker's Belt
-						i(188919),	-- Theurgic Starspeaker's Bracers
-						i(188923),	-- Theurgic Starspeaker's Howl
-						i(188922),	-- Theurgic Starspeaker's Ringmail
-						i(188925),	-- Theurgic Starspeaker's Runebindings
-						i(188926),	-- Theurgic Starspeaker's Sabatons
-						i(188927),	-- Theurgic Starspeaker's Shawl
-						i(188924),	-- Theurgic Starspeaker's Tassets
+						["sym"] = SymPvP(SHAMAN, PVP_ELITE),
+						["g"] = {
+							i(188921),	-- Theurgic Starspeaker's Belt
+							i(188919),	-- Theurgic Starspeaker's Bracers
+							i(188926),	-- Theurgic Starspeaker's Sabatons
+							i(188927),	-- Theurgic Starspeaker's Shawl
+						},
 					}),
 					cl(WARLOCK, {
-						i(188885),	-- Bangles of the Demon Star
-						i(188883),	-- Boots of the Demon Star
-						i(188891),	-- Cape of the Demon Star
-						i(188890),	-- Grasps of the Demon Star
-						i(188889),	-- Horns of the Demon Star
-						i(188887),	-- Leggings of the Demon Star
-						i(188888),	-- Mantle of the Demon Star
-						i(188884),	-- Robes of the Demon Star
-						i(188886),	-- Waistwrap of the Demon Star
+						["sym"] = SymPvP(WARLOCK, PVP_ELITE),
+						["g"] = {
+							i(188885),	-- Bangles of the Demon Star
+							i(188883),	-- Boots of the Demon Star
+							i(188891),	-- Cape of the Demon Star
+							i(188886),	-- Waistwrap of the Demon Star
+						},
 					}),
 					cl(WARRIOR, {
-						i(188938),	-- Breastplate of the Infinite Infantry
-						i(188945),	-- Favor of the Infinite Infantry
-						i(188942),	-- Gaze of the Infinite Infantry
-						i(188937),	-- Grasps of the Infinite Infantry
-						i(188944),	-- Greatbelt of the Infinite Infantry
-						i(188940),	-- Legplates of the Infinite Infantry
-						i(188939),	-- March of the Infinite Infantry
-						i(188941),	-- Pauldrons of the Infinite Infantry
-						i(188943),	-- Vambraces of the Infinite Infantry
+						["sym"] = SymPvP(WARRIOR, PVP_ELITE),
+						["g"] = {
+							i(188945),	-- Favor of the Infinite Infantry
+							i(188944),	-- Greatbelt of the Infinite Infantry
+							i(188939),	-- March of the Infinite Infantry
+							i(188943),	-- Vambraces of the Infinite Infantry
+						},
 					}),
 				}),
-			}),
-			n(-1012, {	-- Elite Alternative
+			})),
+			pvp(n(-1006, {	-- Elite Alternative
 				["description"] = "This is theorized to be available from PvP gear.",
 				["g"] = bubbleDown({ ["bonusID"] = 6895 }, {
 					cl(DEATHKNIGHT, {
@@ -1587,7 +1566,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 						i(188943),	-- Vambraces of the Infinite Infantry
 					}),
 				}),
-			}),
+			})),
 		},
 	}),
 }));

@@ -710,7 +710,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				},
 				["g"] = {
 					i(190766),	-- Spectral Mawrat's Tail (MOUNT!)
-					i(190734),	-- Makaris's Satchel of Mines (TOY!)
 				},
 			}),
 			o(376041, {	-- Shrouded Cypher Cache

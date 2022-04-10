@@ -40,7 +40,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	}),
 	tier(SL_TIER, 2.0, {
 		n(QUESTS, {	-- Darkal Sort?
-			q(64870),	-- Paragon of Enlightened Brokers (I have this completed /Braghe)
 			q(65152),	-- A Hardened Bond (This is Soulbind Quest for Necrolords new one might cross complete?? /Braghe)
 			q(64649),	-- A Mountain of Work to Do
 			q(64869),	--

@@ -2741,7 +2741,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(64582, { ["name"] = "Yuni-Test", }),	-- Yuni-Test
 				-- Quest from WoW.Tools
 				-- 9.2.0.41089
-				q(63766),	--
+				q(63766, { ["name"] = "Relic of the First Ones", }),	-- Relic of the First Ones
 				q(63905),	--
 				q(63906),	--
 				q(63907),	--
@@ -2921,7 +2921,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 9.2.0.42614
 				-- 9.2.0.42698
 				q(66041),	--
-				q(66047),	--
 				-- 9.2.0.42825
 				-- 9.2.0.42852
 				-- 9.2.0.42937

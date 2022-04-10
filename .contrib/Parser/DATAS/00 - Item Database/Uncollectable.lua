@@ -27,8 +27,10 @@ i(186472);	-- Wisps of Memory
 i(184147);	-- Agony Enrichment Device
 i(186201);	-- Ancient Anima Vessel
 i(186204);	-- Anima-Stained Glass Shards
+i(189864);	-- Anima Gossamer
 i(187349);	-- Anima Laden Egg
 i(189865);	-- Anima Matrix
+i(189544);	-- Anima Webbing
 i(181540);	-- Animaflower Bud
 i(187517);	-- Animaswell Prism
 i(181477);	-- Ardendew Pearl

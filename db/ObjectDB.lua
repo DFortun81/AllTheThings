@@ -3156,6 +3156,7 @@ _.ObjectIcons = {
 	[350978] = "Interface/Icons/inv_legion_cache_dreamweavers",
 	[353484] = "Interface/Icons/inv_blacksmithing_greaterweightstone",
 	[357758] = "Interface/Icons/ability_vehicle_plaguebarrel",
+	[375368] = "Interface/Icons/inv_progenitorbotminemount",
 	[9999890] = "Interface/Icons/INV_Heart_of_the_Thunder King_Icon",
 	[9999891] = "Interface/Icons/ability_paladin_blessedmending",
 	[9999892] = "Interface/Icons/spell_holy_healingfocus",
@@ -3463,4 +3464,5 @@ _.ObjectModels = {
 	[307325] = 199421,
 	[310709] = 196989,
 	[326027] = 2929684,
+	[375368] = 3923426,
 };
