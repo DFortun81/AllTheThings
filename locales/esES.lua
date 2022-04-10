@@ -2984,7 +2984,11 @@ for key,value in pairs({
 	[375067] = "Alijo glissandiano",	-- Glissandian Cache
 	[375068] = "Alijo de fuga",	-- Fugueal Cache
 	[375069] = "Alijo cantárico",	-- Cantaric Cache
+	[375188] = "Disposición de la Alcoba Combada",	-- Camber Alcove Arrangement
+	[375189] = "Disposición de la Alcoba de Repertorio",	-- Repertory Alcove Arrangement
+	[375190] = "Disposición de la Alcoba Circular",	-- Rondure Alcove Arrangement
 	[375191] = "Disposición de la Alcoba Durmiente",	-- Dormant Alcove Arrangement
+	[375192] = "Disposición de la Alcoba Refulgente",	-- Fulgore Alcove Arrangement
 	[375270] = "Esquema de protoforma",	-- Protoform Schematic
 	[375272] = "Alijo jurafauces",	-- Mawsworn Cache
 	[375281] = "Reliquia robada",	-- Stolen Relic
@@ -2994,6 +2998,7 @@ for key,value in pairs({
 	[375362] = "Nido aviario",	-- Avian Nest
 	[375363] = "Cofre de suministros jurafauces",	-- Mawsworn Supply Chest
 	[375366] = "Huevos de tarácnido",	-- Tarachnid Eggs
+	--TODO: [375368] = "Creation Catalyst Console",	-- Creation Catalyst Console
 	[375369] = "Valija mordisqueada",	-- Gnawed Valise
 	[375370] = "Esquema de protoforma",	-- Protoform Schematic
 	[375371] = "Esquema de protoforma",	-- Protoform Schematic

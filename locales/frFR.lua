@@ -2979,7 +2979,11 @@ for key,value in pairs({
 	[375067] = "Cache glissandienne",	-- Glissandian Cache
 	[375068] = "Cache fuguéale",	-- Fugueal Cache
 	[375069] = "Cache cantabilienne",	-- Cantaric Cache
+	[375188] = "Agencement de l’alcôve Concave",	-- Camber Alcove Arrangement
+	[375189] = "Agencement de l’alcôve du Répertoire",	-- Repertory Alcove Arrangement
+	[375190] = "Agencement de l’alcôve Incurvée",	-- Rondure Alcove Arrangement
 	[375191] = "Agencement de l’alcôve Dormante",	-- Dormant Alcove Arrangement
+	[375192] = "Agencement de l’alcôve Aveuglante",	-- Fulgore Alcove Arrangement
 	[375270] = "Schéma de protoforme",	-- Protoform Schematic
 	[375272] = "Cache antrelige",	-- Mawsworn Cache
 	[375281] = "Relique volée",	-- Stolen Relic
@@ -2989,6 +2993,7 @@ for key,value in pairs({
 	[375362] = "Nid d’oiseau",	-- Avian Nest
 	[375363] = "Coffre de fournitures antreliges",	-- Mawsworn Supply Chest
 	[375366] = "Œufs de tarachnidé",	-- Tarachnid Eggs
+	--TODO: [375368] = "Creation Catalyst Console",	-- Creation Catalyst Console
 	[375369] = "Malle rongée",	-- Gnawed Valise
 	[375370] = "Schéma de protoforme",	-- Protoform Schematic
 	[375371] = "Schéma de protoforme",	-- Protoform Schematic
