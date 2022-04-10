@@ -5,6 +5,7 @@
 _.Instances = { tier(CATA_TIER, {
 	inst(77, {	-- Zul'Aman
 		["mapID"] = ZULAMAN,
+		["isRaid"] = false,	-- prevent merging isRaid from BC version
 		["coord"] = { 81.8, 64.3, GHOSTLANDS },	-- Zul'Aman, Ghostlands
 		["groups"] = {
 			d(2, {	-- Heroic

@@ -493,7 +493,7 @@ namespace ATT
                         {
                             // merge the allowed fields by the key into the data object
                             foreach (string field in MergeObjectFields[key])
-                                if (merged.TryGetValue(field, out object val))
+                                if (!data.ContainsKey(field) && merged.TryGetValue(field, out object val))
                                     data[field] = val;
                         }
                     }
