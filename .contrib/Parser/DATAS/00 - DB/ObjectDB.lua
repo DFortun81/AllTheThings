@@ -3360,6 +3360,7 @@ _.ObjectIcons = {
 	[350978] = "Interface/Icons/inv_legion_cache_dreamweavers",	-- Queen's Conservatory Cache
 	[357758] = "Interface/Icons/ability_vehicle_plaguebarrel",	-- Plague Barrel
 	[353484] = "Interface/Icons/inv_blacksmithing_greaterweightstone",	-- The Great Vault
+	[375368] = "Interface/Icons/inv_progenitorbotminemount",	-- Creation Catalyst Console
 	[9999890] = "Interface/Icons/INV_Heart_of_the_Thunder King_Icon",	-- Corrupted Loot
 	[9999891] = "Interface/Icons/ability_paladin_blessedmending",	-- Main Objective Only
 	[9999892] = "Interface/Icons/spell_holy_healingfocus",	-- Main Objective + 2 Bonus Areas
@@ -3679,4 +3680,5 @@ _.ObjectModels = {
 	[307325] = 199421,	-- Wanted Poster
 	[310709] = 196989,	-- Waterlogged Chest
 	[326027] = 2929684,	-- Recyclerizer DX-82
+	[375368] = 3923426,	-- Creation Catalyst Console
 };

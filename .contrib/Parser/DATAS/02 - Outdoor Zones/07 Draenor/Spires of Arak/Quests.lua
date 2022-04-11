@@ -371,12 +371,6 @@ _.Zones =
 					["sourceQuests"] = { 34655 },	-- The Shadows of Skettis
 					["coord"] = { 43.6, 12.9, SPIRES_OF_ARAK },
 					["provider"] = { "n", 79519 },	-- Reshad
-					["g"] = {
-						i(114733),	-- Cragplate Shoulders
-						i(114735),	-- Ravenchain Spaulders
-						i(114734),	-- Shadowveil Mantle
-						i(114732),	-- Skysinger Spaulders
-					},
 				}),
 				q(36183, {	-- Admiral Taylor
 					["sourceQuests"] = {
@@ -871,8 +865,14 @@ _.Zones =
 					["provider"] = { "n", 80481 },	-- High Ravenspeaker Krikka
 				}),
 				q(35611, {	-- Return to Veil Terokk
-					["sourceQuests"] = { 35286 },	-- Orders, Commander? (alliance)
-					["coord"] = { 40.1, 60.3, SPIRES_OF_ARAK },	-- alliance
+					["sourceQuests"] = {
+						35286,	-- Orders, Commander? (A)
+						-- TODO (H)
+					},
+					["coords"] = {
+						{ 40.1, 60.3, SPIRES_OF_ARAK },	-- (A)
+						{ 40.0, 44.0, SPIRES_OF_ARAK },	-- (H)
+					},
 					["provider"] = { "n", 79748 },	-- Percy
 				}),
 				q(35733, {	-- Rites of the Talonpriests

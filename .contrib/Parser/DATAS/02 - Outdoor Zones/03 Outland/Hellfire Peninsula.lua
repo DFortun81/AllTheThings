@@ -2918,6 +2918,7 @@ root("Zones", {
 					-- #endif
 					n(18988, {	-- Baxter <Chef>
 						["coord"] = { 56.8, 37.4, HELLFIRE_PENINSULA },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(27736, {	-- Master Cookbook
 								["timeline"] = { "removed 3.1.0", "deleted 5.0.5" },
@@ -2981,6 +2982,7 @@ root("Zones", {
 					}),
 					n(18987, {	-- Gaston <Chef>
 						["coord"] = { 54.0, 63.6, HELLFIRE_PENINSULA },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(27736, {	-- Master Cookbook
 								["timeline"] = { "removed 3.1.0", "deleted 5.0.5" },

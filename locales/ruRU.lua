@@ -2966,7 +2966,11 @@ for key,value in pairs({
 	[375067] = "Глиссандрийский тайник",	-- Glissandian Cache
 	[375068] = "Фугийский тайник",	-- Fugueal Cache
 	[375069] = "Кантарийский тайник",	-- Cantaric Cache
+	[375188] = "Конфигурация выступающего алькова",	-- Camber Alcove Arrangement
+	[375189] = "Конфигурация постоянного алькова",	-- Repertory Alcove Arrangement
+	[375190] = "Конфигурация округлого алькова",	-- Rondure Alcove Arrangement
 	[375191] = "Конфигурация дремлющего алькова",	-- Dormant Alcove Arrangement
+	[375192] = "Конфигурация ослепительного алькова",	-- Fulgore Alcove Arrangement
 	[375270] = "Схема протосинтеза",	-- Protoform Schematic
 	[375272] = "Тайник Верных Утробе",	-- Mawsworn Cache
 	[375281] = "Украденная реликвия",	-- Stolen Relic
@@ -2976,6 +2980,7 @@ for key,value in pairs({
 	[375362] = "Гнездо авиана",	-- Avian Nest
 	[375363] = "Сундук с припасами Верных Утробе",	-- Mawsworn Supply Chest
 	[375366] = "Яйца тарахнидов",	-- Tarachnid Eggs
+	--TODO: [375368] = "Creation Catalyst Console",	-- Creation Catalyst Console
 	[375369] = "Изгрызенная сумка",	-- Gnawed Valise
 	[375370] = "Схема протосинтеза",	-- Protoform Schematic
 	[375371] = "Схема протосинтеза",	-- Protoform Schematic

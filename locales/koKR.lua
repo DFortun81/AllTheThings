@@ -2980,7 +2980,11 @@ for key,value in pairs({
 	[375067] = "글리산도 보관함",	-- Glissandian Cache
 	[375068] = "푸가 보관함",	-- Fugueal Cache
 	[375069] = "노래의 보관함",	-- Cantaric Cache
+	[375188] = "솟아난 벽감 정렬",	-- Camber Alcove Arrangement
+	[375189] = "시초의 벽감 정렬",	-- Repertory Alcove Arrangement
+	[375190] = "구체의 벽감 정렬",	-- Rondure Alcove Arrangement
 	[375191] = "휴면의 벽감 정렬",	-- Dormant Alcove Arrangement
+	[375192] = "광휘의 벽감 정렬",	-- Fulgore Alcove Arrangement
 	[375270] = "원생형태 설계도",	-- Protoform Schematic
 	[375272] = "나락살이 보관함",	-- Mawsworn Cache
 	[375281] = "도둑맞은 유물",	-- Stolen Relic
@@ -2990,6 +2994,7 @@ for key,value in pairs({
 	[375362] = "새 둥지",	-- Avian Nest
 	[375363] = "나락살이 보급품 상자",	-- Mawsworn Supply Chest
 	[375366] = "원시거미 알",	-- Tarachnid Eggs
+	--TODO: [375368] = "Creation Catalyst Console",	-- Creation Catalyst Console
 	[375369] = "갉아먹은 가방",	-- Gnawed Valise
 	[375370] = "원생형태 설계도",	-- Protoform Schematic
 	[375371] = "원생형태 설계도",	-- Protoform Schematic
@@ -3039,7 +3044,7 @@ for key,value in pairs({
 	[375538] = "잃어버린 계란형 물체",	-- Lost Ovoid
 	[375693] = "원생형태 설계도",	-- Protoform Schematic
 	[375694] = "원생형태 설계도",	-- Protoform Schematic
-	--TODO: [375746] = "Protoform Schematic",	-- Protoform Schematic
+	[375746] = "원형 설계도",	-- Prototype Schematic
 	[375748] = "원생형태 설계도",	-- Protoform Schematic
 	[375889] = "원생형태 설계도",	-- Protoform Schematic
 	[375893] = "진귀한 보관함",	-- High Value Cache

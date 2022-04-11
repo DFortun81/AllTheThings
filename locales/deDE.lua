@@ -2981,7 +2981,11 @@ for key,value in pairs({
 	[375067] = "Glissandische Truhe",	-- Glissandian Cache
 	[375068] = "Fugalische Truhe",	-- Fugueal Cache
 	[375069] = "Kantarische Truhe",	-- Cantaric Cache
+	[375188] = "Anordnung des Gewölbten Alkovens",	-- Camber Alcove Arrangement
+	[375189] = "Anordnung des Bereichernden Alkovens",	-- Repertory Alcove Arrangement
+	[375190] = "Anordnung des Runden Alkovens",	-- Rondure Alcove Arrangement
 	[375191] = "Anordnung des Inaktiven Alkovens",	-- Dormant Alcove Arrangement
+	[375192] = "Anordnung des Prächtigen Alkovens",	-- Fulgore Alcove Arrangement
 	[375270] = "Protoformbauplan",	-- Protoform Schematic
 	[375272] = "Schlundgebundene Truhe",	-- Mawsworn Cache
 	[375281] = "Gestohlenes Relikt",	-- Stolen Relic
@@ -2991,6 +2995,7 @@ for key,value in pairs({
 	[375362] = "Ornidennest",	-- Avian Nest
 	[375363] = "Schlundgebundene Vorratstruhe",	-- Mawsworn Supply Chest
 	[375366] = "Tarachnideneier",	-- Tarachnid Eggs
+	--TODO: [375368] = "Creation Catalyst Console",	-- Creation Catalyst Console
 	[375369] = "Angenagter Handkoffer",	-- Gnawed Valise
 	[375370] = "Protoformbauplan",	-- Protoform Schematic
 	[375371] = "Protoformbauplan",	-- Protoform Schematic

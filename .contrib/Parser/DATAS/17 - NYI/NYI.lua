@@ -40,7 +40,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	}),
 	tier(SL_TIER, 2.0, {
 		n(QUESTS, {	-- Darkal Sort?
-			q(64870),	-- Paragon of Enlightened Brokers (I have this completed /Braghe)
 			q(65152),	-- A Hardened Bond (This is Soulbind Quest for Necrolords new one might cross complete?? /Braghe)
 			q(64649),	-- A Mountain of Work to Do
 			q(64869),	--
@@ -2620,10 +2619,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(187914),	-- Captain Noteo's Unused Eye Patch
 				}),
 				tier(SL_TIER, 2.0, {
-					i(190929),	-- Ebony Protocloak
-					i(190933),	-- Majestic Oracle's Drape
-					i(190932),	-- Protohide Drape
-					i(190928),	-- Sandtails Drape
 					i(190935),	-- Distinguished Blade of Cartel Al
 					i(190937),	-- Edge of the Enlightened
 					i(190934),	-- Standard of the Wandering Brokers
@@ -2681,13 +2676,27 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					["modID"] = 4
 				}),
 				-- LFR Alt
+				i(190470, {	-- Cinch of Unity DH
+					["bonusID"] = 6896
+				}),
+				i(190470, {	-- Cinch of Unity DH
+					["modID"] = 4
+				}),
 				i(190466, {	-- Clasp of Unity Hunter
 					["bonusID"] = 6896
 				}),
 				i(190466, {	-- Clasp of Unity Hunter
 					["modID"] = 4
 				}),
-				-- LFR alt Mage
+				i(190474, {	-- Girdle of Unity Pala
+					["modID"] = 4
+				}),
+				i(190474, {	-- Girdle of Unity Pala
+					["bonusID"] = 6896
+				}),
+				i(190468, {	-- Cord of Unity Priest
+					["bonusID"] = 6896
+				}),
 				i(190464, {	-- Cord of Unity Mage
 					["bonusID"] = 6896
 				}),

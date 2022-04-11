@@ -111,11 +111,36 @@ _.Zones =
 				}),
 				ach(9612),		-- Eggs in One Basket
 				ach(9613),		-- Fish Gotta Swim, Birds Gotta Eat
+				ach(9601, {		-- King of the Monsters (Lost Veil Anzu)
+					crit(1, {	-- Morphed Sentient
+						["_quests"] = { 37493 },
+					}),
+					crit(2, {	-- Giga Sentinel
+						["_quests"] = { 37393 },
+					}),
+					crit(3, {	-- Shadow Hulk
+						["_quests"] = { 37392 },
+					}),
+					crit(4, {	-- Mecha Plunderer
+						["_quests"] = { 37391 },
+					}),
+					crit(5, {	-- Gluttonous Giant
+						["_quests"] = { 37390 },
+					}),
+				}),
 				ach(9072,  {	-- Mantle of the Talon King
 					["sourceQuest"] = 37177,	-- Call of the Talon King
 					["g"] = {
 						title_gendered(278, 279),	-- Talon King / Talon Queen
 					},
+				}),
+				ach(9600, {		-- Monster Mash (Lost Veil Anzu)
+					crit(1, {	-- Shadow Hulk
+						["_quests"] = { 37392 },
+					}),
+					crit(2, {	-- Gluttonous Giant)
+						["_quests"] = { 37390 },
+					}),
 				}),
 				ach(9434),		-- One of Us! One of Us! (Shadowmoon Enclave)
 				ach(9564,  {	-- Securing Draenor (Alliance)

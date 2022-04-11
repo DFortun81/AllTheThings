@@ -121,13 +121,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 		})),
 		ach(9659),		-- Iron Wings (The Pit)
 		ach(9436),		-- It's the Stones! (Socrethar's Rise)
-		ach(9601, {		-- King of the Monsters (Lost Veil Anzu)
-			crit(1),		-- Morphed Sentient
-			crit(2),		-- Giga Sentinel
-			crit(3),		-- Shadow Hulk
-			crit(4),		-- Mecha Plunderer
-			crit(5),		-- Gluttonous Giant
-		}),
 		a(ach(9833, {	-- Loremaster of Draenor (Alliance)
 			a(ach(8845, {	-- As I Walk Through the Valley of the Shadow of Moon (unlocks ability to buy Shadowmoon Valley Treasure Map from Grakis in Stormshield)
 				crit(1),		-- Establishing a Foothold
@@ -246,10 +239,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			crit(6),		-- The Crystal Reborn
 		})),
 		ach(9654),		-- Mean and Green (Everbloom Wilds)
-		ach(9600, {		-- Monster Mash (Lost Veil Anzu)
-			crit(1),		-- Shadow Hulk
-			crit(2),		-- Gluttonous Giant)
-		}),
 		a(ach(9528)),	-- On the Shadow's Trail (Alliance) (Shadowmoon Valley)
 		h(ach(9529)),	-- On the Shadow's Trail (Horde) (Frostfire Ridge)
 		ach(9434),		-- One of Us! One of Us! (Shadowmoon Enclave)

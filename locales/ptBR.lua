@@ -2980,7 +2980,11 @@ for key,value in pairs({
 	[375067] = "Baú Glissandiano",	-- Glissandian Cache
 	[375068] = "Baú Fugueal",	-- Fugueal Cache
 	[375069] = "Baú Cantárico",	-- Cantaric Cache
+	[375188] = "Arranjo da Alcova Arqueada",	-- Camber Alcove Arrangement
+	[375189] = "Arranjo da Alcova do Repertório",	-- Repertory Alcove Arrangement
+	[375190] = "Arranjo da Alcova Circular",	-- Rondure Alcove Arrangement
 	[375191] = "Arranjo da Alcova Dormente",	-- Dormant Alcove Arrangement
+	[375192] = "Arranjo da Alcova Fulgurante",	-- Fulgore Alcove Arrangement
 	[375270] = "Diagrama de Protoforma",	-- Protoform Schematic
 	[375272] = "Cabedal Górjuro",	-- Mawsworn Cache
 	[375281] = "Relíquia Roubada",	-- Stolen Relic
@@ -2990,6 +2994,7 @@ for key,value in pairs({
 	[375362] = "Ninho de Avícola",	-- Avian Nest
 	[375363] = "Baú de Suprimentos Górjuro",	-- Mawsworn Supply Chest
 	[375366] = "Ovos de Taracnídeo",	-- Tarachnid Eggs
+	--TODO: [375368] = "Creation Catalyst Console",	-- Creation Catalyst Console
 	[375369] = "Valise Roída",	-- Gnawed Valise
 	[375370] = "Diagrama de Protoforma",	-- Protoform Schematic
 	[375371] = "Diagrama de Protoforma",	-- Protoform Schematic
