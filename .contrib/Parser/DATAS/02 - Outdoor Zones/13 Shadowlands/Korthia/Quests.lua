@@ -233,13 +233,19 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				},
 			}),
 			q(64211, {	-- Doorway in the Dark (A)
-				["sourceQuests"] = { 63593 },	-- New Sigil of the Kyrian
+				["sourceQuests"] = {
+					63593,	-- New Sigil of the Kyrian
+					63944,	-- Korthia Awaits (Skip Breadcrumb)
+				},
 				["provider"] = { "n", 177194 },	-- The Primus
 				["coord"] = { 62.8, 26.2, KORTHIA },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(64212, {	-- Doorway in the Dark (H)
-				["sourceQuests"] = { 63593 },	-- New Sigil of the Kyrian
+				["sourceQuests"] = {
+					63593,	-- New Sigil of the Kyrian
+					63944,	-- Korthia Awaits (Skip Breadcrumb)
+				},
 				["provider"] = { "n", 177194 },	-- The Primus
 				["coord"] = { 62.8, 26.2, KORTHIA },
 				["races"] = HORDE_ONLY,
@@ -287,6 +293,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["sourceQuests"] = { 63622 },	-- Victory in Our Name
 				["provider"] = { "n", 177194 },	-- The Primus
 				["coord"] = { 63.1, 25.3, KORTHIA },
+				-- Not really a breadcrumb quest, but if you complete the chain NOT as Necrolord, you are unable to come back and do this quest
+				["lockCriteria"] = { 1, "questID", 63659 },	-- Dreadlords!
 			}),
 			q(63737, {	-- Finding One's True Purpose
 				["sourceQuests"] = { 63739 },	-- Hope Ascending

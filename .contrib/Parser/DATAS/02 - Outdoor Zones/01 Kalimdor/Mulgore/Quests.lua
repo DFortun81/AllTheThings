@@ -68,6 +68,13 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
 					["description"] = "This quest is available to Tauren upon reaching level 10.",
+					["lockCriteria"] = { 1,
+						"spellID", 33388,	-- Apprentice Riding
+						"spellID", 33391,	-- Journeyman Riding
+						"spellID", 34090,	-- Expert Riding
+						"spellID", 34091,	-- Artisan Riding
+						"spellID", 90265,	-- Master Riding
+					},
 				}),
 				q(14087, {	-- Learn to Ride
 					["u"] = REMOVED_FROM_GAME,

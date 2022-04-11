@@ -782,7 +782,9 @@ _.Zones =
 					["coord"] = { 53.7, 16.7, AZSUNA },
 					["provider"] = { "n", 90383 },	-- Runas the Shamed
 				}),
-				n(BONUS_OBJECTIVES, {
+				n(BONUS_OBJECTIVES, sharedData({
+					["lockCriteria"] = { 1, "lvl", 45 },
+				},{
 					-- TODO: Check SQ also probably cant do after a certain level
 					q(37965),	-- A Tainted Vintage
 					q(42020),	-- Bonus Objective: Hatecoil Warcamp
@@ -801,7 +803,7 @@ _.Zones =
 					q(37779, {	-- Tip the Scales
 						["coord"] = { 62.6, 42.6, AZSUNA },
 					}),
-				}),
+				})),
 		--[[ TODO: These quests will be organized soon™
 				q(43561),	-- I Believe I Can Fly!
 				q(40133),	-- Scrap of Pants

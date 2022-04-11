@@ -762,6 +762,7 @@ root("Zones", {
 						["description"] = "If you want to switch from Aldor to Scryers, use this quest to regain lost Scryers reputation.",
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 						["cost"] = { { "i", 25744, 8 } },	-- Dampscale Basilisk Eye
+						["repeatable"] = true,
 					}),
 					q(10025, {	-- More Basilisk Eyes
 						["qg"] = 18596,	-- Arcanist Adyria

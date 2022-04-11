@@ -15,6 +15,7 @@ _.Instances = { tier(MOP_TIER, {
 			n(QUESTS, {
 				q(31324, {	-- Family Secrets
 					["provider"] = { "n", 59822 },	-- Auntie Stormstout
+					["sourceQuest"] = 30085,	-- Into the Brewery
 					["g"] = {
 						i(87310),	-- Stormstout Drink Napkin
 						i(87311),	-- Used Bar Rag
@@ -23,8 +24,15 @@ _.Instances = { tier(MOP_TIER, {
 						i(87314),	-- Blackened Chain Cloak
 					},
 				}),
+				q(30085, {	-- Into the Brewery
+					["sourceQuests"] = { 30078 },	-- Cleaning House
+					["isBreadcrumb"] = true,
+					["coord"] = { 36.0, 69.1, VALLEY_OF_THE_FOUR_WINDS },
+					["provider"] = { "n", 56133 },	-- Chen Stormstout
+				}),
 				q(31327, {	-- Trouble Brewing
 					["provider"] = { "n", 59704 },	-- Chen Stormstout
+					["sourceQuest"] = 30085,	-- Into the Brewery
 					["g"] = {
 						i(87301),	-- Master Brewer's Gloves
 						i(87302),	-- Barrel Stacker's Mitts

@@ -503,12 +503,6 @@ _.Zones =
 					["coord"] = { 56.9, 62.4, ULDUM },
 					["sourceQuest"] = 28277,	-- Salhet the Tactician
 				}),
-				q(28870, {	-- Return to the Lost City
-					["provider"] = { "n", 47684 },	-- King Phaoris
-					["coord"] = { 54.9, 32.7, ULDUM },
-					["sourceQuest"] = 28520,	-- The Fall of Neferset City
-					["isBreadcrumb"] = true,	-- For 28783
-				}),
 				q(28277, {	-- Salhet the Tactician
 					["provider"] = { "n", 48237 },	-- Salhet
 					["coord"] = { 56.9, 62.4, ULDUM },

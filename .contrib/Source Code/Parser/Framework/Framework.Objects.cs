@@ -1823,6 +1823,9 @@ namespace ATT
                     case "providers":
                         MergeField_providers(item, value);
                         break;
+                    case "lc":
+                        MergeField_lockCriteria(item, value);
+                        break;
                     // Special parser for coordinate data. (list of floats)
                     case "coord":
                         {
@@ -2117,6 +2120,48 @@ namespace ATT
                         throw new InvalidDataException("Failed parsing value '" + mergeProvider?.ToString() + "' for field '" + field + "' merging into: " + MiniJSON.Json.Serialize(item));
                     }
                 }
+            }
+
+            internal static void MergeField_lockCriteria(Dictionary<string, object> item, object value)
+            {
+                const string field = "lc";
+
+                List<object> lockCriteria = ConvertToList(item, field, value);
+
+                // validate that the lock criteria is the expected format
+                if (lockCriteria == null || (lockCriteria.Count % 2) != 1)
+                    throw new InvalidDataException($"Failed parsing '{field}' : {MiniJSON.Json.Serialize(value)} => into: {MiniJSON.Json.Serialize(item)}{Environment.NewLine}Expected an odd number of elements in an array of values.");
+
+                // first item is a number > 0
+                try
+                {
+                    int criteriaCount = Convert.ToInt32(lockCriteria[0]);
+                    if (criteriaCount < 1)
+                        throw new InvalidDataException($"Failed parsing '{field}' : {MiniJSON.Json.Serialize(value)} => into: {MiniJSON.Json.Serialize(item)}{Environment.NewLine}First value must be a number > 0.");
+                }
+                catch (Exception)
+                {
+                    throw new InvalidDataException($"Failed parsing '{field}' : {MiniJSON.Json.Serialize(value)} => into: {MiniJSON.Json.Serialize(item)}{Environment.NewLine}First value must be a number > 0.");
+                }
+
+                // following sequence should be pairs of string-number values
+                for (int i = 1; i < lockCriteria.Count; i += 2)
+                {
+                    try
+                    {
+                        string critKey = lockCriteria[i] as string;
+                        int critVal = Convert.ToInt32(lockCriteria[i + 1]);
+
+                        if (string.IsNullOrWhiteSpace(critKey) || critVal < 1)
+                            throw new InvalidDataException($"Failed parsing '{field}' : {MiniJSON.Json.Serialize(value)} => into: {MiniJSON.Json.Serialize(item)}{Environment.NewLine}Must consist of a flat sequence of [string,number] pairs of values.");
+                    }
+                    catch (Exception)
+                    {
+                        throw new InvalidDataException($"Failed parsing '{field}' : {MiniJSON.Json.Serialize(value)} => into: {MiniJSON.Json.Serialize(item)}{Environment.NewLine}Must consist of a flat sequence of [string,number] pairs of values.");
+                    }
+                }
+
+                item[field] = lockCriteria;
             }
 
             /// <summary>

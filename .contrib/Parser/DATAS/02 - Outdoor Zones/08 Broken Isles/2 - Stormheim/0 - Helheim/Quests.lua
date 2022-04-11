@@ -96,9 +96,11 @@ _.Zones =
 							i(132831),	-- Worthy Soul
 						},
 					}),
-					n(BONUS_OBJECTIVES, {
+					n(BONUS_OBJECTIVES, sharedData({
+						["lockCriteria"] = { 1, "lvl", 45 },
+					},{
 						q(38343),	-- Raze Hel
-					}),
+					})),
 				}),
 			}),
 		}),

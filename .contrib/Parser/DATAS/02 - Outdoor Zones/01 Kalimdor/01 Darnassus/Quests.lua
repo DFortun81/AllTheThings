@@ -53,6 +53,13 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["description"] = "This quest is available to Night Elves upon reaching level 10.",
 					["races"] = { NIGHTELF },
+					["lockCriteria"] = { 1,
+						"spellID", 33388,	-- Apprentice Riding
+						"spellID", 33391,	-- Journeyman Riding
+						"spellID", 34090,	-- Expert Riding
+						"spellID", 34091,	-- Artisan Riding
+						"spellID", 90265,	-- Master Riding
+					},
 				}),
 				q(14085, {	-- Learn to Ride in Darnassus
 					["provider"] = { "i", 46876 },	-- Riding Training Pamphlet

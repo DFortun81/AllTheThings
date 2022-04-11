@@ -324,6 +324,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					--["coord"] = { X, Y, MAP },
 					["questID"] = 66285,
 					["cost"] = { { "i", 190727, 1 } },	-- 1 Security Override Orb
+					["isWeekly"] = true,
 					["g"] = {
 						i(189175),	-- Mawforged Bridle
 						i(189991),	-- Snail Soul

@@ -34,13 +34,13 @@ root("Zones", {
 						["sourceQuests"] = {
 							-- Draenei Diplomacy (A)
 							9803,	-- Messenger to the Feralfen
-							
+
 							-- Swamprat Post (H)
 							9899,	-- A Job Undone
 							9772,	-- Jyoba's Report
 							9898,	-- The Respect of Another
 							9769,	-- There's No Explanation for Fashion
-							
+
 							-- Telredor (A)
 							9783,	-- An Unnatural Drought
 							-- TODO:: verify below
@@ -48,7 +48,7 @@ root("Zones", {
 							9790,	-- Diaphanous Wings
 							9777,	-- Fulgor Spores
 							9780,	-- Umbrafen Eel Filets
-							
+
 							-- Zabra'jin (H)
 							9816,	-- Have You Ever Seen One of These?
 							9904,	-- Pursuing Terrorclaw
@@ -56,7 +56,7 @@ root("Zones", {
 							9847,	-- A Spirit Ally? (probably)
 							9903,	-- The Biggest of Them All (probably)
 							9842,	-- The Sharpest Blades (probably)
-							
+
 							-- Orebor Harborage (A)
 							9902,	-- The Terror of Marshlight Lake
 							-- TODO:: verify below
@@ -66,22 +66,22 @@ root("Zones", {
 							9848,	-- Secrets of the Daggerfen
 							9830,	-- Stinger Venom
 							9833,	-- Lines of Communication
-							
+
 							-- The Defense of Zabra'jin (H)
 							10118,	-- Message to the Daggerfen
 							9823,	-- Us or Them
-							
+
 							-- Don't Eat THOSE Mushrooms!
 							9709,	-- Stealing Back the Mushrooms
-							
+
 							-- Draining the Marsh
 							9732,	-- Return to the Marsh
-							
+
 							-- Saving the Sporeloks
 							9788,	-- A Damp, Dark Place
 							9894,	-- Safeguarding the Watchers
 							10096,	-- Saving the Sporeloks
-							
+
 							-- A Trip With the Sporelings
 							9726,	-- Now That We're Friends...
 							9919,	-- Sporeggar
@@ -282,6 +282,7 @@ root("Zones", {
 						["maxReputation"] = { 970, FRIENDLY },	-- Sporeggar, Friendly.
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(62, 10, 62),
+						["lockCriteria"] = { 1, "factionID", 970.5 },	-- Sporeggar, Friendly StandingID
 					}),
 					q(50131, {	-- An Outside Perspective
 						["qg"] = 17923,	-- Fahssn
@@ -295,6 +296,7 @@ root("Zones", {
 						["maxReputation"] = { 970, NEUTRAL },	-- Sporeggar, Neutral.
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(62, 10, 62),
+						["lockCriteria"] = { 1, "factionID", 970.4 },	-- Sporeggar, Neutral StandingID
 					}),
 					q(9788,  {	-- A Damp, Dark Place
 						["qg"] = 17956,	-- Ikeyen

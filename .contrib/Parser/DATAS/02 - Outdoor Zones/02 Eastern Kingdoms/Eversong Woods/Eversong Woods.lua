@@ -1159,6 +1159,13 @@ _.Zones =
 						["DisablePartySync"] = true,
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(20, 10, 20),
+						["lockCriteria"] = { 1,
+							"spellID", 33388,	-- Apprentice Riding
+							"spellID", 33391,	-- Journeyman Riding
+							"spellID", 34090,	-- Expert Riding
+							"spellID", 34091,	-- Artisan Riding
+							"spellID", 90265,	-- Master Riding
+						},
 					}),
 					q(14081, {	-- Learn to Ride in the Eversong Woods
 						["provider"] = { "i", 46882 },	-- Riding Training Pamphlet

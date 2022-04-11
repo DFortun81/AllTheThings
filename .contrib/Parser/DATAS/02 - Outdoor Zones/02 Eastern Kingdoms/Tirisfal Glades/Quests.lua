@@ -366,9 +366,17 @@ _.Zones =
 				}),
 				q(32672, {	-- Learn to Ride
 					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 					["description"] = "This quest is available to Undead characters upon reaching level 10.",
 					["races"] = { UNDEAD },
 					["lvl"] = 10,
+					["lockCriteria"] = { 1,
+						"spellID", 33388,	-- Apprentice Riding
+						"spellID", 33391,	-- Journeyman Riding
+						"spellID", 34090,	-- Expert Riding
+						"spellID", 34091,	-- Artisan Riding
+						"spellID", 90265,	-- Master Riding
+					},
 				}),
 				q(14089, {	-- Learn to Ride in Tirisfal Glades
 					["u"] = REMOVED_FROM_GAME,

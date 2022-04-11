@@ -2292,6 +2292,9 @@ namespace ATT
                     {
                         return "questID";
                     }
+                case "lc":
+                case "lockCriteria":
+                    return "lc";
 
                 case "aqd":
                 case "allianceQuestData":
