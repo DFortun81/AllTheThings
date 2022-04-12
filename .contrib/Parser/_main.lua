@@ -5,6 +5,31 @@ _ = AllTheThings;
 -- The values are based on a "distance from zero" to match what Blizzard tracks internally as "totalEarned" rep
 HATED, HOSTILE, UNFRIENDLY, NEUTRAL, FRIENDLY, HONORED, REVERED, EXALTED = -42000, -6000, -3000, 0, 3000, 9000, 21000, 42000
 
+-- Root constants
+-- Usage: ROOTS.[Constant]
+ROOTS = {
+	["ExpansionFeatures"] = "ExpansionFeatures",
+	["Instances"] = "Instances",
+	["Zones"] = "Zones",
+	["WorldDrops"] = "WorldDrops",
+	["GroupFinder"] = "GroupFinder",
+	["Achievements"] = "Achievements",
+	["WorldEvents"] = "WorldEvents",
+	["PVP"] = "PVP",
+	["Craftables"] = "Craftables",
+	["Professions"] = "Professions",
+	["Secrets"] = "Secrets",
+	["GearSets"] = "GearSets",
+	["Promotions"] = "Promotions",
+	["BlackMarket"] = "BlackMarket",
+	["InGameShop"] = "InGameShop",
+	["PetBattles"] = "PetBattles",
+	["HiddenQuestTriggers"] = "HiddenQuestTriggers",
+	["NeverImplemented"] = "NeverImplemented",
+	["Factions"] = "Factions",
+	["Holidays"] = "Holidays",
+};
+
 -- Map Constants for quick and easy replacement when we can get mapIDs on live!
 -- Raids (Classic)
 BLACKWING_LAIR = 287;
@@ -1721,7 +1746,7 @@ prof = function(skillID, t)								-- Create a PROFESSION Object
 end
 profession = function(skillID, t)						-- Create a PROFESSION Container. (NOTE: Only use in the Profession Folder.)
 	local p = prof(skillID, t);
-	_.Professions = { bubbleDown({ ["requireSkill"] = skillID }, p) };
+	root(ROOTS.Professions, bubbleDown({ ["requireSkill"] = skillID }, p));
 	return p;
 end
 pvp = function(t)										-- Flag all nested content as requiring PvP gameplay
