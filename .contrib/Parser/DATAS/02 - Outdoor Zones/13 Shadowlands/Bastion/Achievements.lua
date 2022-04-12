@@ -30,10 +30,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			}),
 			ach(14339, {	-- Shard Labor
 				["description"] = "'Collect all trackable things' must be enabled to see the location of each shard in the list.\n\nShards are collected account-wide.  There are shards to collect in Bastion, Necrotic Wake, and Spires of Ascension.",
-				["collectible"] = false,
 				["lvl"] = { 60 },
 				["g"] = {
-					i(180772),	-- Silverwind Larion (MOUNT!)
 				--	https://www.wowhead.com/achievement=14339/shard-labor#comments
 				--	moving completed ones up to the top for now so it's easier to see which one checks off (to verify coords + add data more easily)
 					q(61295, {	-- Anima Crystal Shard
@@ -318,12 +316,18 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					o(355435, {	-- Vesper of the Silver Wind
 						["description"] = "Once you have the mallet, take it to the Vesper of the Silver Wind and ring the bell.",
 						["questID"] = 61191,	-- ringing the bell
+						["sourceQuest"] = 61229,	-- receiving the mallet from Hephaesius
 						["coord"] = { 36.1, 26.6, BASTION },
+						["provider"] = { "i", 180858 },	-- Crystal Mallet of Heralds
 					}),
 					o(355449, {	-- Gift of the Silver Wind
 						["description"] = "A Silverwind Larion will spawn behind you and drop a treasure chest containing the mount.",
 						["questID"] = 61183,	-- looting the treasure
+						["sourceQuest"] = 61191,	-- ringing the bell
 						["coord"] = { 36.1, 26.6, BASTION },
+						["g"] = {
+							i(180772),	-- Silverwind Larion (MOUNT!)
+						},
 					}),
 				},
 			}),

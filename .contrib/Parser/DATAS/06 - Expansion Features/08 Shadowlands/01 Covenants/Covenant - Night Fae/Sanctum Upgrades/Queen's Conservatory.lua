@@ -342,6 +342,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										["sourceQuests"] = { 62603 },	-- A Rare and Unusual Spirit (3)
 										["provider"] = { "n", 174507 },	-- Ohm of Meditation
 										["coord"] = { 25.6, 47.5, 1662 },
+										["cost"] = { { "i", 183805, 1 } },	-- Tranquil Spirit of the Cosmos
 									}),
 									q(62587, {	-- In Search of Inner Calm (1)
 										["sourceQuests"] = { 62600 },	-- Finding Inner Peace

@@ -3838,6 +3838,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	if a then paramA = a; end
 	if b then paramB = b; end
 
+	-- Clean results which are cached under 'Source Ignored' content since they've been copied from another Source and we don't care about them in search results
+	group = app.CleanSourceIgnoredGroups(group);
+
 	-- For Creatures and Encounters that are inside of an instance, we only want the data relevant for the instance + difficulty.
 	if paramA == "creatureID" or paramA == "encounterID" then
 		if group and #group > 0 then
@@ -4266,7 +4269,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			if j.parent and not j.parent.hideText and j.parent.parent
 				and (showCompleted or not app.IsComplete(j))
 				and not app.HasCost(j, paramA, paramB)
-				and not app.RecursiveFirstParentWithField(j, "sourceIgnored")
 				then
 				text = BuildSourceText(paramA ~= "itemID" and j.parent or j, paramA ~= "itemID" and 1 or 0);
 				if showUnsorted or (not string.match(text, L["UNSORTED_1"]) and not string.match(text, L["HIDDEN_QUEST_TRIGGERS"])) then
@@ -13450,9 +13452,7 @@ app.RecursiveFirstParentWithField = function(group, field)
 		if group[field] then
 			return group[field];
 		else
-			if group.sourceParent or group.parent then
-				return app.RecursiveFirstParentWithField(group.sourceParent or group.parent, field)
-			end
+			return app.RecursiveFirstParentWithField(group.parent, field);
 		end
 	end
 end
@@ -13462,10 +13462,22 @@ app.RecursiveFirstParentWithFieldValue = function(group, field, value)
 		if group[field] == value then
 			return group;
 		else
-			if group.parent then
-				return app.RecursiveFirstParentWithFieldValue(group.parent, field, value);
+			return app.RecursiveFirstParentWithFieldValue(group.parent, field, value);
+		end
+	end
+end
+-- Cleans any groups which are nested under 'Source Ignored' content
+app.CleanSourceIgnoredGroups = function(groups)
+	if groups then
+		local parentCheck = app.RecursiveFirstParentWithField;
+		local refined = {};
+		for _,j in ipairs(groups) do
+			if not parentCheck(j, "sourceIgnored") then
+				tinsert(refined, j);
+			-- else print("  ",j.hash)
 			end
 		end
+		return refined;
 	end
 end
 
@@ -16099,6 +16111,8 @@ RowOnEnter = function (self)
 			"key",
 			"hash",
 			"link",
+			"sourceParent",
+			"sourceIgnored",
 		};
 		GameTooltip:AddLine("-- Extra Fields:");
 		for _,key in ipairs(fields) do
@@ -18024,7 +18038,8 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				return;
 			end
 			wipe(self.CurrentMaps);
-			results = SearchForField("mapID", self.mapID);
+			-- Get all results for this map, without any results that have been cloned into Source Ignored groups
+			results = app.CleanSourceIgnoredGroups(SearchForField("mapID", self.mapID));
 			if results then
 				-- print(#results,"Minilist Results for mapID",self.mapID)
 				-- Simplify the returned groups

@@ -2196,7 +2196,6 @@ root("HiddenQuestTriggers", {
 		q(61579),	-- Choosing Green during 'Shades of Muck' (61851)
 		q(61580),	-- Choosing Red during 'Shades of Muck' (61851)
 		q(61583),	-- When completing 'Shades of Muck' (61851) with Purple chosen
-		q(61582),	-- When applying trimmed hair to your dredger
 		q(61793),	-- Choosing name 'Rogi' during 'Dredging up a Name' (61764)
 		q(61794),	-- Choosing name 'Grubber' during 'Dredging up a Name' (61764)
 		q(61795),	-- Choosing name 'Jeebs' during 'Dredging up a Name' (61764)
@@ -2217,10 +2216,13 @@ root("HiddenQuestTriggers", {
 		q(61810),	-- Choosing name 'Copperworth' during 'Dredging up a Name' (61764)
 		q(61811),	-- Choosing name 'Fred' during 'Dredging up a Name' (61764)
 		q(61812),	-- Choosing name 'Raff' during 'Dredging up a Name' (61764)
+		q(61582),	-- Let's get your hair sorted. > Let's trim it off ...
 		q(61572),	-- Let's get your hair sorted. > A little grease and the proper Igor cut.
 		q(61571),	-- Let's get your hair sorted. > How about you grow it out full?
-		q(61570),	-- Let's get your hair sorted. > I swear you will look great in a cap.
 		q(61573),	-- Let's get your hair sorted. > Let's go wild and spikey!
+		q(61570),	-- Let's get your hair sorted. > I swear you will look great in a cap.
+		q(63926),	-- Let's get your hair sorted. > [Party Hat]
+		q(63927),	-- Let's get your hair sorted. > It's time to don the Bewitching Little Hat
 		q(61575),	-- Let's update your clothes. > How about we try the long sleeved doublet.
 		q(61574),	-- Let's update your clothes. > Why don't you try on the short sleeved doublet.
 		q(61585),	-- It's time to dye your clothes. > Let's dye them black.
