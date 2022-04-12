@@ -222,6 +222,106 @@ _.Zones =
 							i(27640),	-- Hand of Argus Crossfire
 						},
 					}),
+					q(9500, {	-- Call of Water (1/6) (Azuremyst Isle)
+						["qg"] = 17212,	-- Tuluun <Shaman Trainer>
+						["coord"] = { 48.0, 50.6, AZUREMYST_ISLE },
+						["timeline"] = { "removed 4.0.3" },
+						["classes"] = { SHAMAN },
+						["races"] = { DRAENEI },
+						["isBreadcrumb"] = true,
+						["lvl"] = 20,
+					}),
+					q(10490, {	-- Call of Water (1/6) (Stormwind City)
+						["qg"] = 20407,	-- Farseer Umbrua <Shaman Trainer>
+						["coord"] = { 61.8, 83.8, STORMWIND_CITY },
+						["timeline"] = { "removed 4.0.3" },
+						["classes"] = { SHAMAN },
+						["races"] = { DRAENEI },
+						["isBreadcrumb"] = true,
+						["lvl"] = 20,
+					}),
+					q(9501, {	-- Call of Water (2/6)
+						["qg"] = 17204,	-- Farseer Nobundo <Shaman Trainer>
+						["sourceQuests"] = {
+							9500,	-- Call of Water (1/6) (Azuremyst Isle)
+							10490,	-- Call of Water (1/6) (Stormwind City)
+						},
+						["coord"] = { 30.0, 32.4, THE_EXODAR },
+						["timeline"] = { "removed 4.0.3" },
+						["classes"] = { SHAMAN },
+						["races"] = { DRAENEI },
+						["lvl"] = 20,
+						["groups"] = {
+							i(23871),	-- Potion of Water Breathing
+						},
+					}),
+					q(9503, {	-- Call of Water (3/6)
+						["qg"] = 17275,	-- Aqueous
+						["sourceQuest"] = 9501,	-- Call of Water (2/6)
+						["coord"] = { 32.4, 16.2, BLOODMYST_ISLE },
+						["timeline"] = { "removed 4.0.3" },
+						["classes"] = { SHAMAN },
+						["races"] = { DRAENEI },
+						["lvl"] = 20,
+						["groups"] = {
+							objective(1, {	-- 0/6 Foul Essence
+								["provider"] = { "i", 23744 },	-- Foul Essence
+								["cr"] = 17358,	-- Fouled Water Spirit
+							}),
+						},
+					}),
+					q(9504, {	-- Call of Water (4/6)
+						["qg"] = 17275,	-- Aqueous
+						["sourceQuest"] = 9503,	-- Call of Water (3/6)
+						["coord"] = { 32.4, 16.2, BLOODMYST_ISLE },
+						["timeline"] = { "removed 4.0.3" },
+						["maps"] = { ASHENVALE },
+						["classes"] = { SHAMAN },
+						["races"] = { DRAENEI },
+						["lvl"] = 20,
+						["groups"] = {
+							objective(1, {	-- 0/1 Filled Bota Bag
+								["provider"] = { "i", 23750 },	-- Filled Bota Bag
+								["cost"] = { { "i", 23749, 1 } },	-- Empty Bota Bag
+								["coord"] = { 33, 37, ASHENVALE },
+							}),
+						},
+					}),
+					q(9508, {	-- Call of Water (5/6)
+						["qg"] = 17275,	-- Aqueous
+						["sourceQuest"] = 9504,	-- Call of Water (4/6)
+						["coord"] = { 32.4, 16.2, BLOODMYST_ISLE },
+						["timeline"] = { "removed 4.0.3" },
+						["classes"] = { SHAMAN },
+						["races"] = { DRAENEI },
+						["lvl"] = 20,
+						["groups"] = {
+							objective(1, {	-- 0/1 Head of Tel'athion
+								["provider"] = { "i", 23997 },	-- Head of Tel'athion
+								["coord"] = { 25.8, 40.8, BLOODMYST_ISLE },
+								["cost"] = { { "i", 23751, 1 } },	-- Skin of Purest Water
+								["cr"] = 17359,	-- Tel'athion the Impure
+							}),
+						},
+					}),
+					q(9509, {	-- Call of Water (6/6)
+						["providers"] = {
+							{ "n", 17275 },	-- Aqueous
+							{ "i", 23752 },	-- Flask of Purest Water
+						},
+						["sourceQuest"] = 9508,	-- Call of Water (5/6)
+						["coord"] = { 32.4, 16.2, BLOODMYST_ISLE },
+						["timeline"] = { "removed 4.0.3" },
+						["classes"] = { SHAMAN },
+						["races"] = { DRAENEI },
+						["lvl"] = 20,
+						["groups"] = {
+							recipe(5394),	-- Healing Stream Totem
+							i(5177, {	-- Water Totem
+								["description"] = "You must keep this in your bags forever.",
+							}),
+						},
+					}),
 					q(9629, {	-- Catch and Release
 						["qg"] = 17434,	-- Morae
 						["coord"] = { 53.2, 57.7, BLOODMYST_ISLE },
