@@ -42,7 +42,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		n(QUESTS, {	-- Darkal Sort?
 			q(65152),	-- A Hardened Bond (This is Soulbind Quest for Necrolords new one might cross complete?? /Braghe)
 			q(64649),	-- A Mountain of Work to Do
-			q(64869),	--
 		}),
 		i(187710),	-- Anniversary Gift (Probably for 18th Ani)
 		i(189561),	-- Tame Prime: Orixal

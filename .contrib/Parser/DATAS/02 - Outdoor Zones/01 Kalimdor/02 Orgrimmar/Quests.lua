@@ -646,12 +646,6 @@ root("Zones", m(KALIMDOR, {
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			q(32307, {	-- Reader for the Dead Tongue
-				["isBreadcrumb"] = true,
-				["provider"] = { "n", 88705 },	-- Kranosh
-				["coord"] = { 53.8, 35.8, ORGRIMMAR },	-- Kranosh
-				["classes"] = { WARLOCK },
-			}),
 			q(25275, {	-- Report to the Labor Captain
 				["provider"] = { "n", 3144 },	-- Eitrigg
 				["coord"] = { 48.6, 71.0, ORGRIMMAR },

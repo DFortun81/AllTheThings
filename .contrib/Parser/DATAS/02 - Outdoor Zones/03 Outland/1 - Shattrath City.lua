@@ -1072,10 +1072,6 @@ root("Zones", {
 							i(142282),	-- Plans: Stormforged Axe
 						},
 					}),
-					q(10009, {	-- Crackin' Some Skulls
-						["qg"] = 18584,	-- Sal'salabim
-						["sourceQuest"] = 10004,	-- Patience and Understanding *UNTESTED*
-					}),
 					q(41160, {	-- Earth to Earth
 						["qg"] = 115546,	-- Lunelli
 						["coord"] = { 64.1, 71.5, SHATTRATH_CITY },
@@ -1091,10 +1087,6 @@ root("Zones", {
 						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 25167 },	-- General Tiras'alan
 						["coord"] = { 54.3, 44.3, SHATTRATH_CITY },
-					}),
-					q(10010, {	-- It's Just That Easy?
-						["qg"] = 18584,	-- Sal'salabim
-						["sourceQuest"] = 10009,	-- Crackin' Some Skulls
 					}),
 					q(10169, {	-- Losing Gracefully
 						["u"] = REMOVED_FROM_GAME,

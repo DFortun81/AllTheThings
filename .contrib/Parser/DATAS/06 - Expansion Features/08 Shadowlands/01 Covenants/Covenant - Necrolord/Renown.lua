@@ -9,6 +9,9 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 	n(NECROLORD, {
 		n(RENOWN, {
 			["description"] = "These are rewards automatically granted by reaching a specific level of Renown.",
+			["sym"] = {
+				{"select","itemID",186524}	-- A Tiny Vial of Slime (PEPE!)
+			},
 			["g"] = {
 				i(181821,  {	-- Armored Plaguerot Tauralus (MOUNT!)
 					["description"] = "Requires Renown 39.",
@@ -35,10 +38,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 						i(185020),	-- Initiate's Necromantle Vestments
 						i(185027),	-- Initiate's Necromantle Wraps
 					},
-				}),
-				i(186524,  {	-- A Tiny Vial of Slime (PEPE!)
-					["description"] = "Requires Renown 56.",
-					["questID"] = 64098,
 				}),
 				i(188004, {	-- Crate of Anima-Infused Parts
 					["description"] = "Rewarded at 15 and 24 Renown.",

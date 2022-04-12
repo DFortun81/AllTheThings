@@ -731,12 +731,6 @@ root("Zones", {
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(32307, {	-- Reader for the Dead Tongue
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 5496 },	-- Sandahl
-					["classes"] = { WARLOCK },
-					["coord"] = { 39.8, 85.4, STORMWIND_CITY },	-- Sandahl
-				}),
 				q(1078,  {	-- Retrieval for Mauren
 					["provider"] = { "n", 4078 },	-- Collin Mauren
 					["coord"] = { 52.8, 86.6, STORMWIND_CITY },

@@ -105,7 +105,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES, {
 			}),
 			ach(3736),		-- Pony Up!
 			h(ach(3677)),	-- The Sunreavers (Horde)
-			ach(4596),		-- The Sword in the Skull
 			ach(2772),		-- Tilted!
 		}),
 	}),

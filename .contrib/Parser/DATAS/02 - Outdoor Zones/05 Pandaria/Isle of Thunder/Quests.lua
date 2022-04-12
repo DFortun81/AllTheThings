@@ -456,8 +456,18 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(32307, {	-- Reader for the Dead Tongue
+					-- TODO: Maybe Green Fire questline should be an Expansion Feature header under MOP?
 					["description"] = "This is part of the Warlock's green fire questline. It will be offered after the player summons their demons and speaks to them about The Codex of Xerrath.",
+					["isBreadcrumb"] = true,
+					["qgs"] = {
+						5496,	-- Sandahl
+						88705,	-- Kranosh
+					},
 					["classes"] = { WARLOCK },
+					["coords"] = {
+						{ 39.8, 85.4, STORMWIND_CITY },	-- Sandahl
+						{ 53.8, 35.8, ORGRIMMAR },	-- Kranosh
+					},
 				}),
 				q(32532, {	-- Rise No More! (A)
 					["isDaily"] = true,
