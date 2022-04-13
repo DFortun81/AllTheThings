@@ -655,7 +655,7 @@ root("Zones", m(KALIMDOR, {
 				["sourceQuests"] = { 6385 },	-- Doras the Wind Rider Master
 				["provider"] = { "n", 3310 },	-- Doras
 				["coord"] = { 49.5, 59.2, ORGRIMMAR },
-				["races"] = { ORC, TROLL },
+				["races"] = { ORC, TROLL, MAGHAR },
 			}),
 			q(26840, {	-- Return to the Highlands
 				["sourceQuests"] = { 26830 },	-- Traitor's Bait
