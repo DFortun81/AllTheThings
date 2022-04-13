@@ -523,9 +523,15 @@ _.Zones =
 				}),
 				q(52148, {	-- Freehold: A Pirate's End
 					["sourceQuests"] = { 49741 },	-- Righteous Retribution (must have completed objectives)
-					["coord"] = { 56.4, 61.6, TIRAGARDE_SOUND },
+					["coords"] = {
+						{ 66.8, 33.2, BORALUS },
+						{ 56.4, 61.6, TIRAGARDE_SOUND },
+					},
 					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 121239 },	-- Flynn Fairwind
+					["qgs"] = {
+						121239,	-- Flynn Fairwind
+						131290,	-- Flynn Fairwind
+					},
 				}),
 				q(49419, {	-- Frozen
 					["sourceQuests"] = {
