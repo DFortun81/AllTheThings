@@ -4949,6 +4949,7 @@ local ThingKeys = {
 	-- ["mapID"] = true,
 	["npcID"] = true,
 	["creatureID"] = true,
+	["currencyID"] = true,
 	["itemID"] = true,
 	["s"] = true,
 	["speciesID"] = true,
@@ -4971,11 +4972,11 @@ app.BuildSourceParent = function(group)
 	local things = app.SearchForLink(groupKey .. ":" .. keyValue);
 	if things then
 		-- print("Found things",#things)
-		local parents, parentKey;
+		local parents, parentKey, parent;
 		-- collect all possible parent groups for all instances of this Thing
 		for _,thing in pairs(things) do
-			local parent = thing.sourceParent or thing.parent;
-			if parent then
+			parent = thing.parent;
+			while parent do
 				-- print("parent",parent.text,parent.key)
 				parentKey = parent.key;
 				if parentKey and parent[parentKey] then
@@ -4991,9 +4992,12 @@ app.BuildSourceParent = function(group)
 							if parents then tinsert(parents, parent);
 							else parents = { parent }; end
 						end
+						break;
 					end
 					-- TODO: maybe handle mapID/instanceID in a different way as a fallback for things nested under headers within a zone....?
 				end
+				-- move to the next parent if the current parent is not a valid 'Thing'
+				parent = parent.parent;
 			end
 			-- Things tagged with an npcID should show that NPC as a Source
 			if thing.key ~= "npcID" and (thing.npcID or thing.creatureID) then
