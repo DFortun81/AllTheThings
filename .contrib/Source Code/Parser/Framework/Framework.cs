@@ -1730,6 +1730,7 @@ namespace ATT
 
             // Include in breadcrumb quests the list of next quests that may make the breadcrumb unable to complete
             bool isBreadcrumb;
+            HashSet<long> orphanedBreadcrumbs = new HashSet<long>();
             foreach (var pair in Objects.AllQuests)
             {
                 if (pair.Value.TryGetValue("sourceQuests", out List<object> sourceQuests))
@@ -1758,14 +1759,27 @@ namespace ATT
                         }
                     }
                 }
+            }
+
+            // check for orphaned breadcrumbs
+            foreach (var pair in Objects.AllQuests)
+            {
                 if (pair.Value.TryGetValue("isBreadcrumb", out isBreadcrumb) && isBreadcrumb)
                 {
                     if (!pair.Value.TryGetValue("nextQuests", out List<object> nextQuests))
                     {
                         // Breadcrumb quest without next quests information
+                        orphanedBreadcrumbs.Add(pair.Key);
                     }
                 }
             }
+            var sortedOrphanedBreadcrumbs = new SortedList<long, long>();
+            foreach (long q in orphanedBreadcrumbs)
+            {
+                sortedOrphanedBreadcrumbs.Add(q, q);
+            }
+            var sortedList = new List<long>(sortedOrphanedBreadcrumbs.Values);
+            Trace.WriteLine($"Orphaned Breadcrumb Quests:{Environment.NewLine}{MiniJSON.Json.Serialize(sortedList)}");
 
             if (QUESTS.Any())
             {
