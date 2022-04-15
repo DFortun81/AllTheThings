@@ -1,5 +1,7 @@
 -- Skinning - Skill ID 393 / Spell ID 8613
 profession(SKINNING, {
+	-- #if AFTER WOD
+	-- TODO: This is not timelined
 	n(DROPS, {
 		i(111351, {		-- A Guide to Skinning in Draenor
 			["collectible"] = false,
@@ -270,7 +272,6 @@ profession(SKINNING, {
 	filter(TOYS, {
 		i(130102),	--  Mother's Skinning Knife (TOY!)
 	}),
-	--[==[--
 	filter(RECIPES, {
 		tier(LEGION_TIER, {
 			recipe(194167),	-- Felhide [Rank 1]
@@ -294,6 +295,12 @@ profession(SKINNING, {
 			recipe(257152),	-- Bone Gathering [Rank 1]
 			recipe(257153),	-- Bone Gathering [Rank 2]
 			recipe(257154),	-- Bone Gathering [Rank 3]
+			recipe(302014),	-- Cragscale [Rank 1]
+			recipe(302015),	-- Cragscale [Rank 2]
+			recipe(302016),	-- Cragscale [Rank 3]
+			recipe(302007),	-- Dredged Leather [Rank 1]
+			recipe(302010),	-- Dredged Leather [Rank 2]
+			recipe(302011),	-- Dredged Leather [Rank 3]
 			recipe(257146),	-- Leather Gathering [Rank 1]
 			recipe(257147),	-- Leather Gathering [Rank 2]
 			recipe(257148),	-- Leather Gathering [Rank 3]
@@ -302,5 +309,5 @@ profession(SKINNING, {
 			recipe(257151),	-- Scale Gathering [Rank 3]
 		}),
 	}),
-	--]==]--
+	-- #endif
 });
