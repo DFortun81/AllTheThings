@@ -1,6 +1,7 @@
--- Override the global function with a local one for some automated data
-local recipe = function(recipeID)
-	local o = recipe(recipeID);
+-- Reassign the pointer to the recipe function to automatically mark the removal date.
+local oldRecipe = recipe;
+recipe = function(recipeID, t)
+	local o = oldRecipe(recipeID, t);
 	o.timeline = { "removed 8.0.1.10000" };
 	return o;
 end
@@ -60,7 +61,9 @@ profession(FIRST_AID, {
 		q(6625, {	-- Alliance Trauma
 			["qg"] = 5150,	-- Nissa Firestone
 			["coord"] = { 54.8, 58.6, IRONFORGE },
+			-- #if BEFORE BFA
 			["requireSkill"] = FIRST_AID,
+			-- #endif
 			["races"] = ALLIANCE_ONLY,
 			["isBreadcrumb"] = true,
 			["lvl"] = lvlsquish(35, 10, 35),
@@ -73,7 +76,9 @@ profession(FIRST_AID, {
 			["qg"] = 3373,	-- Arnok
 			["coord"] = { 34.0, 84.6, ORGRIMMAR },
 			-- #endif
+			-- #if BEFORE BFA
 			["requireSkill"] = FIRST_AID,
+			-- #endif
 			["races"] = HORDE_ONLY,
 			["isBreadcrumb"] = true,
 			["lvl"] = lvlsquish(35, 10, 35),
@@ -83,12 +88,22 @@ profession(FIRST_AID, {
 			["sourceQuest"] = 6625,	-- Alliance Trauma
 			["coord"] = { 67.7, 48.9, DUSTWALLOW_MARSH },
 			["races"] = ALLIANCE_ONLY,
+			-- #if BEFORE BFA
 			["requireSkill"] = FIRST_AID,
-			["cost"] = {
-				{ "i", 16991, 1 },	-- Triage Bandage
-			},
+			-- #endif
 			["lvl"] = lvlsquish(35, 15, 35),
 			["groups"] = {
+				objective(1, {	-- 0/15 Patients Saved
+					["provider"] = { "i", 16991 },	-- Triage Bandage
+					["crs"] = {
+						12936,	-- Badly Injured Alliance Soldier
+						12937,	-- Critically Injured Alliance Soldier
+						12938,	-- Injured Alliance Soldier
+					},
+				}),
+				-- #if BEFORE 3.1.0
+				recipe(10846, { ["rank"] = 4 }),	-- First Aid (Artisan)
+				-- #endif
 				i(49193, {	-- Alliance Trauma Certification
 					["timeline"] = { "added 3.2.0.10192" },
 				}),
@@ -102,13 +117,23 @@ profession(FIRST_AID, {
 			-- #else
 			["coord"] = { 68.5, 37.8, ARATHI_HIGHLANDS },
 			-- #endif
+			-- #if BEFORE BFA
 			["requireSkill"] = FIRST_AID,
+			-- #endif
 			["races"] = HORDE_ONLY,
-			["cost"] = {
-				{ "i", 16991, 1 },	-- Triage Bandage
-			},
 			["lvl"] = lvlsquish(35, 15, 35),
 			["groups"] = {
+				objective(1, {	-- 0/15 Patients Saved
+					["provider"] = { "i", 16991 },	-- Triage Bandage
+					["crs"] = {
+						12924,	-- Badly Injured Soldier
+						12925,	-- Critically Injured Soldier
+						12923,	-- Injured Soldier
+					},
+				}),
+				-- #if BEFORE 3.1.0
+				recipe(10846, { ["rank"] = 4 }),	-- First Aid (Artisan)
+				-- #endif
 				i(49192, {	-- Horde Trauma Certification
 					["timeline"] = { "added 3.2.0.10192" },
 				}),
@@ -118,16 +143,14 @@ profession(FIRST_AID, {
 	-- #endif
 	-- #if AFTER LEGION
 	un(REMOVED_FROM_GAME, ach(10599, {	-- Legion Medic (800) *
-		["groups"] = {
-			un(REMOVED_FROM_GAME, ach(131)),	-- Journeyman Medic (150)
-			un(REMOVED_FROM_GAME, ach(132)),	-- Expert Medic (225)
-			un(REMOVED_FROM_GAME, ach(133)),	-- Artisan Medic (300)
-			un(REMOVED_FROM_GAME, ach(134)),	-- Master Medic (375)
-			un(REMOVED_FROM_GAME, ach(135)),	-- Grand Master Medic (450)
-			un(REMOVED_FROM_GAME, ach(4918)),	-- Illustrious Grand Master Medic (525)
-			un(REMOVED_FROM_GAME, ach(6838)),	-- Zen Master Medic (600)
-			un(REMOVED_FROM_GAME, ach(9505)),	-- Draenor Medic (700)
-		},
+		un(REMOVED_FROM_GAME, ach(131)),	-- Journeyman Medic (150)
+		un(REMOVED_FROM_GAME, ach(132)),	-- Expert Medic (225)
+		un(REMOVED_FROM_GAME, ach(133)),	-- Artisan Medic (300)
+		un(REMOVED_FROM_GAME, ach(134)),	-- Master Medic (375)
+		un(REMOVED_FROM_GAME, ach(135)),	-- Grand Master Medic (450)
+		un(REMOVED_FROM_GAME, ach(4918)),	-- Illustrious Grand Master Medic (525)
+		un(REMOVED_FROM_GAME, ach(6838)),	-- Zen Master Medic (600)
+		un(REMOVED_FROM_GAME, ach(9505)),	-- Draenor Medic (700)
 	})),
 	un(REMOVED_FROM_GAME, ach(11139, {	-- Field Medic! SOON TO BE REMOVED FROM GAME!!
 		["description"] = "WARNING! This achievement will be removed with the release of Battle For Azeroth. MAKE SURE TO FINISH IT BEFORE THEN!",
@@ -259,8 +282,11 @@ profession(FIRST_AID, {
 	-- #endif
 });
 
+-- Reset the pointer to the recipe function.
+recipe = oldRecipe;
+
 -- First Aid Recipes
-_.ItemDB = {};
+local itemDB = root("ItemDB", {});
 local itemrecipe = function(itemID, spellID, timeline, classicphase)
 	local o = { ["itemID"] = itemID };
 	if spellID and spellID > 0 then
@@ -272,12 +298,16 @@ local itemrecipe = function(itemID, spellID, timeline, classicphase)
 		o.timeline = timeline;
 	end
 	if classicphase then applyclassicphase(classicphase, o); end
-	_.ItemDB[itemID] = o;
+	itemDB[itemID] = o;
 	return o;
 end
 
 -- Classic Recipes
-itemrecipe(16084, 0--[[7924]], "removed 3.1.0.9767");	-- Expert First Aid - Under Wraps
+-- #if AFTER 3.1.0.9767
+itemrecipe(16084, 0, "removed 3.1.0.9767").rank = 3;	-- Expert First Aid - Under Wraps
+-- #else
+itemrecipe(16084, 7924, "removed 3.1.0.9767").rank = 3;	-- Expert First Aid - Under Wraps
+-- #endif
 itemrecipe(16112, 7929, "removed 3.1.0.9767");	-- Manual: Heavy Silk Bandage
 itemrecipe(16113, 10840, "removed 3.1.0.9767");	-- Manual: Mageweave Bandage
 itemrecipe(19442, 23787);	-- Formula: Powerful Anti-Venom
@@ -287,7 +317,11 @@ itemrecipe(6454, 7935);	-- Manual: Strong Anti-Venom
 -- TBC Recipes
 itemrecipe(21993, 27033, "removed 3.1.0.9767", TBC_PHASE_ONE);	-- Manual: Heavy Netherweave Bandage
 itemrecipe(21992, 27032, "removed 3.1.0.9767", TBC_PHASE_ONE);	-- Manual: Netherweave Bandage
-itemrecipe(22012, 0--[[27029]], "removed 3.1.0.9767", TBC_PHASE_ONE);	-- Master First Aid - Doctor in the House
+-- #if AFTER 3.1.0.9767
+itemrecipe(22012, 0, "removed 3.1.0.9767", TBC_PHASE_ONE).rank = 5;	-- Master First Aid - Doctor in the House
+-- #else
+itemrecipe(22012, 27029, "removed 3.1.0.9767", TBC_PHASE_ONE).rank = 5;	-- Master First Aid - Doctor in the House
+-- #endif
 -- #endif
 
 -- #if AFTER WRATH
@@ -296,11 +330,11 @@ itemrecipe(39152, 45546, "added 3.0.1.8714", WRATH_PHASE_ONE);	-- Manual: Heavy 
 -- #endif
 
 -- These items never made it in.
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	filter(RECIPES, {
 		i(16085),	-- Artisan First Aid - Heal Thyself
 		i(8547),	-- Formula: Powerful Smelling Salts
 		i(23689),	-- Manual: Crystal Infused Bandage
 		i(23690),	-- Recipe: Crystal Flake Throat Lozenge
 	}),
-});
+}));
