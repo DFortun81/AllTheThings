@@ -92,8 +92,13 @@ root("Holidays", applyholiday(NOBLEGARDEN, {
 	-- #else
 	["holidayID"] = 235477,
 	-- #endif
+	-- #if AFTER WRATH
 	["description"] = "Start: 04/18 at 10:00 AM\nEnd: 04/25 at 10:00 AM",
 	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. NOBLEGARDEN .. [[, 4, 18, 4, 25); end]],
+	-- #else
+	["description"] = "Start: 04/17 at 12:00 AM\nEnd: 04/18 at 12:00 AM",
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. NOBLEGARDEN .. [[, 4, 17, 4, 18); end]],
+	-- #endif
 	["groups"] = {
 		o(113768, {	-- Brightly Colored Egg
 			-- #if AFTER WRATH
