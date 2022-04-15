@@ -8192,22 +8192,26 @@ local function CacheInfo(t, field)
 	local specc = math_floor(specc_decimal + 0.00001);
 	if specc > 0 then
 		local text = select(2, GetSpecializationInfoForSpecID(specc));
+		--[[
 		if t.mapID then
 			text = app.GetMapName(t.mapID) .. " (" .. text .. ")";
 		elseif t.maps then
 			text = app.GetMapName(t.maps[1]) .. " (" .. text .. ")";
 		end
+		--]]
 		text = "|c" .. t.classColors.colorStr .. text .. "|r";
 		rawset(t, "text", text);
 		_t.text = text;
 		_t.icon = select(4, GetSpecializationInfoForSpecID(specc));
 	else
 		local text = GetClassInfo(t.classID);
+		--[[
 		if t.mapID then
 			text = app.GetMapName(t.mapID) .. " (" .. text .. ")";
 		elseif t.maps then
 			text = app.GetMapName(t.maps[1]) .. " (" .. text .. ")";
 		end
+		--]]
 		text = "|c" .. t.classColors.colorStr .. text .. "|r";
 		rawset(t, "text", text);
 		_t.text = text;
@@ -8220,9 +8224,7 @@ local fields = {
 		return "classID";
 	end,
 	["text"] = function(t)
-		return cache.GetCachedField(t, "text", CacheInfo);
-		--[[
-		local text = GetClassInfo(t.classID);
+		local text = cache.GetCachedField(t, "text", CacheInfo);
 		if t.mapID then
 			text = app.GetMapName(t.mapID) .. " (" .. text .. ")";
 		elseif t.maps then
@@ -8231,7 +8233,6 @@ local fields = {
 		text = "|c" .. t.classColors.colorStr .. text .. "|r";
 		rawset(t, "text", text);
 		return text;
-		--]]
 	end,
 	["icon"] = function(t)
 		return cache.GetCachedField(t, "icon", CacheInfo);

@@ -2,9 +2,9 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root("ExpansionFeatures", tier(SL_TIER, {
-	m(1627, {	-- Torghast
-		n(SPECIAL, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
+root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
+	m(TORGHAST, {
+		n(SPECIAL, {
 			n(185453, {	-- Lost Soul
 				i(189977),	-- Bat Soul
 			}),
@@ -20,6 +20,6 @@ root("ExpansionFeatures", tier(SL_TIER, {
 			n(185558, {	-- Lost Soul
 				i(189976),	-- Tallstrider Soul
 			}),
-		})),
+		}),
 	}),
-}));
+})));

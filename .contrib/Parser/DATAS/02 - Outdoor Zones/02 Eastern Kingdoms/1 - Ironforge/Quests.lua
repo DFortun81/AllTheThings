@@ -46,12 +46,6 @@ _.Zones =
 						i(12051),	-- Brazen Gauntlets
 					},
 				}),
-				q(32310, {	-- A Tale of Six Masters
-					["provider"] = { "n", 5173 },	-- Alexander Calder
-					["classes"] = { WARLOCK },
-					["coord"] = { 50.2, 6.8, IRONFORGE },	-- Alexander Calder
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(762,   {	-- An Ambassador of Evil
 					["sourceQuests"] = { 726 },	-- Passing Word of a Threat
 					["provider"] = { "n", 2916 },	-- Historian Karnik
@@ -189,12 +183,6 @@ _.Zones =
 					["provider"] = { "n", 1573 },	-- Gryth Thurden
 					["coord"] = { 55.8, 47.8, IRONFORGE },
 					["races"] = { DWARF, GNOME },
-				}),
-				q(32317, {	-- Seeking the Soulstones
-					["sourceQuests"] = { 32310 },	-- A Tale of Six Masters
-					["provider"] = { "n", 5173 },	-- Alexander Calder
-					["classes"] = { WARLOCK },
-					["coord"] = { 50.2, 6.8, IRONFORGE },
 				}),
 				q(26118, {	-- Seize the Ambassador
 					["sourceQuests"] = { 26112 },	-- Demanding Answers

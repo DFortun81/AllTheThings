@@ -1494,10 +1494,15 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(60286, { ["name"] = "A Token of Our Admiration", }),	-- A Token of Our Admiration
 				q(60463, { ["name"] = "Anima Appeal", }),	-- Anima Appeal
 				q(60157, { ["name"] = "Answers from the Ascended", }),	-- Answers from the Ascended
+				q(55424, { ["name"] = "Aspirant Elynna", }),	-- Aspirant Elynna
 				q(62168, { ["name"] = "Bonescript Dispatches", }),	-- Bonescript Dispatches
 				q(59084, { ["name"] = "Bybeen Dreadweaver", }),	-- Bybeen Dreadweaver
+				q(60104, { ["name"] = "Darkness' Domain", }),	-- Darkness' Domain
+				q(60101, { ["name"] = "Deadsoul Interstitia", }),	-- Deadsoul Interstitia
 				q(59080, { ["name"] = "Demons!", }),	-- Demons!
 				q(62072, { ["name"] = "Familiar Faces", }),	-- Familiar Faces
+				q(60099, { ["name"] = "Fracture Chambers", }),	-- Fracture Chambers
+				q(60102, { ["name"] = "Kakophonus", }),	-- Kakophonus
 				q(59086, { ["name"] = "Manor of Minions", }),	-- Manor of Minions
 				q(59082, { ["name"] = "Next Realm!", }),	-- Next Realm!
 				q(62289, { ["name"] = "Observing Conflict", ["_drop"] = { "g" }, }),	-- Observing Conflict
@@ -1520,21 +1525,28 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(62350, { ["name"] = "Shadowlands (51-59) E", }),	-- Shadowlands (51-59) E
 				q(60036, { ["name"] = "Shadowlands (60) E", ["_drop"] = { "g" }, }),	-- Shadowlands (60) E
 				q(60040, { ["name"] = "Shadowlands (60) E", ["_drop"] = { "g" }, }),	-- Shadowlands (60) E
+				q(60105, { ["name"] = "Sineater Belfry", }),	-- Sineater Belfry
+				q(60092, { ["name"] = "Skoldus Hall", }),	-- Skoldus Hall
 				q(60474, { ["name"] = "Spawn Tracking Unit-Specified World Effect in a WMO Bug", }),	-- Spawn Tracking Unit-Specified World Effect in a WMO Bug
 				q(59083, { ["name"] = "Sticky Getaway", }),	-- Sticky Getaway
 				q(62402, { ["name"] = "Timewalking Campaigns", }),	-- Timewalking Campaigns
 				q(59078, { ["name"] = "The Hook", }),	-- The Hook
 				q(60499, { ["name"] = "The Light's Retribution", }),	-- The Light's Retribution
 				q(59076, { ["name"] = "The Minions of Mayhem", }),	-- The Minions of Mayhem
+				q(60103, { ["name"] = "The Miscreation Wing", }),	-- The Miscreation Wing
 				q(59077, { ["name"] = "The Plan", }),	-- The Plan
 				q(62594, { ["name"] = "The Safety of Others", }),	-- The Safety of Others
 				q(62595, { ["name"] = "The Safety of Others", }),	-- The Safety of Others
+				q(60100, { ["name"] = "The Soulforges", }),	-- The Soulforges
+				q(60106, { ["name"] = "The Upper Reaches", }),	-- The Upper Reaches
+				q(60107, { ["name"] = "The Winding Halls", }),	-- The Winding Halls
 				q(59085, { ["name"] = "Third Time is a Charm", }),	-- Third Time is a Charm
 				q(60172, { ["name"] = "This Quest is Temporary", }),	-- This Quest is Temporary
 				q(60155, { ["name"] = "To Open the Way", }),	-- To Open the Way
 				q(62077, { ["name"] = "To the Chase", }),	-- To the Chase
 				q(60138, { ["name"] = "Unlocking the Gates", }),	-- Unlocking the Gates
 				q(60559, { ["name"] = "Unused", }),	-- Unused
+				q(56070, { ["name"] = "Vengeance for the Venthyr", }),	-- Vengeance for the Venthyr
 				-- Quest from WoW.Tools
 				-- 9.0.1.33978
 				q(54783),	--

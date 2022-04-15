@@ -75,13 +75,6 @@ root("Zones", {
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(20, 8, 20),
 				}),
-				q(32310, {	-- A Tale of Six Masters
-					["sourceQuests"] = { 32307 },	-- Reader for the Dead Tongue
-					["provider"] = { "n", 5496 },	-- Sandahl
-					["classes"] = { WARLOCK },
-					["coord"] = { 39.8, 85.4, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(27106, {	-- A Villain Unmasked
 					["provider"] = { "o", 205198 },	-- Pile of Explosives
 					["coord"] = { 50.4, 42.4, STORMWIND_CITY },
@@ -790,12 +783,6 @@ root("Zones", {
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(32317, {	-- Seeking the Soulstones
-					["sourceQuests"] = { 32310 },	-- A Tale of Six Masters
-					["provider"] = { "n", 5496 },	-- Sandahl
-					["classes"] = { WARLOCK },
-					["coord"] = { 39.8, 85.4, STORMWIND_CITY },
-				}),
 				q(28401, {	-- Slaves of the Firelord
 					["sourceQuests"] = { 28287 },	-- Meet with Farseer Umbrua
 					["classes"] = { SHAMAN },
@@ -1188,14 +1175,6 @@ root("Zones", {
 					["provider"] = { "n", 154169 },	-- Captain Garrick
 					["coord"] = { 73.6, 91.3, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(65425, {	-- Whatever You Sayaad
-					["description"] = "Start this quest via your own Sayaad(Succubus/Incubus Pet).",
-					["provider"] = { "n", 184600 },	-- Warlock Minion
-					["coord"] = { 79.5, 69.8, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { WARLOCK },
-					["timeline"] = { "added 9.2.0" },
 				}),
 				q(58910, {	-- What's Your Specialty? (Druid)
 					["customCollect"] = "NPE",	-- New Player Experience

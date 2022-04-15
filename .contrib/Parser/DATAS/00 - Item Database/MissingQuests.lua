@@ -1168,14 +1168,11 @@ q(9484),	-- Taming the Beast,		TBC: Taming the Beast
 q(9485),	-- Taming the Beast,		TBC: Taming the Beast
 q(9486),	-- Taming the Beast,		TBC: Taming the Beast
 q(9497),	-- Emblem of the Fel Horde,		TBC: Emblem of the Fel Horde
-q(9500),	-- Call of Water,		TBC: Call of Water
-q(9501),	-- Call of Water,		TBC: Call of Water
 q(9502),	-- Call of Water,		TBC: Call of Water
-q(9503),	-- Call of Water,		TBC: Call of Water
-q(9504),	-- Call of Water,		TBC: Call of Water
+
+
 q(9507),	-- <DEPRECATED>From the Desk of Mogul Razdunk
-q(9508),	-- Call of Water,		TBC: Call of Water
-q(9509),	-- Call of Water,		TBC: Call of Water
+
 q(9532),	-- Find Keltus Darkleaf,		TBC: Find Keltus Darkleaf
 q(9546),	-- Fulfilling a Promise
 q(9547),	-- Call of Air,		TBC: Call of Air
@@ -1251,7 +1248,6 @@ q(10402),	-- <TXT>,		TBC: <TXT>
 q(10404),	-- Against the Legion,		TBC: Against the Legion
 q(10452),	-- DON'T USE [PH] Fel Orc 1,		TBC: DON'T USE [PH] Fel Orc 1
 q(10453),	-- DON'T USE [PH] Fel Orc bread,		TBC: DON'T USE [PH] Fel Orc bread
-q(10490),	-- Call of Water,		TBC: Call of Water
 q(10491),	-- Call of Air,		TBC: Call of Air
 q(10520),	-- Assisting Arch Druid Staghelm,		TBC: Assisting Arch Druid Staghelm
 q(10529),	-- The Hunter's Path,		TBC: The Hunter's Path

@@ -57,13 +57,6 @@ root("Zones", m(KALIMDOR, {
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			q(32309, {	-- A Tale of Six Masters
-				["sourceQuests"] = { 32307 },	-- Reader for the Dead Tongue
-				["provider"] = { "n", 88705 },	-- Kranosh
-				["classes"] = { WARLOCK },
-				["coord"] = { 53.8, 35.8, ORGRIMMAR },
-				["races"] = HORDE_ONLY,
-			}),
 			q(62568, {	-- Adventurers Wanted: Chromie's Call
 				["isBreadcrumb"] = true,
 				["provider"] = { "n", 168431 },	-- Warlord Breka Grimaxe
@@ -697,12 +690,6 @@ root("Zones", m(KALIMDOR, {
 				["coord"] = { 48.6, 71.0, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 			}),
-			q(32317, {	-- Seeking the Soulstones
-				["sourceQuests"] = { 32309 },	-- A Tale of Six Masters
-				["provider"] = { "n", 88705 },	-- Kranosh
-				["classes"] = { WARLOCK },
-				["coord"] = { 53.8, 35.8, ORGRIMMAR },
-			}),
 			q(28465, {	-- Slaves of the Firelord
 				["sourceQuests"] = { 28301 },	-- Meet with Terga Earthbreaker
 				["provider"] = { "n", 72939 },	-- Terga Earthbreaker
@@ -958,14 +945,6 @@ root("Zones", m(KALIMDOR, {
 				["provider"] = { "n", 168431 },	-- Warlord Breka Grimaxe
 				["coord"] = { 52.5, 88.0, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
-			}),
-			q(65424, {	-- Whatever You Sayaad
-				["description"] = "Start this quest via your own Sayaad(Succubus/Incubus Pet).",
-				["provider"] = { "n", 184600 },	-- Warlock Minion
-				["coord"] = { 74.6, 47.4, ORGRIMMAR },
-				["races"] = HORDE_ONLY,
-				["classes"] = { WARLOCK },
-				["timeline"] = { "added 9.2.0" },
 			}),
 			q(60346, {	-- What's Your Specialty? (Druid)
 				["customCollect"] = "NPE",	-- New Player Experience

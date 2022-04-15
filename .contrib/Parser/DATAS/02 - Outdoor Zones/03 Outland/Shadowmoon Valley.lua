@@ -53,32 +53,32 @@ root("Zones", {
 							10776,	-- Dissension Amongst the Ranks...
 							10678,	-- The Main Course!
 							10744,	-- News of Victory (A)
-							
+
 							-- Shadowmoon Village
 							10745,	-- News of Victory (H)
-							
+
 							-- Netherwing Ledge
 							11041,	-- A Job Unfinished...
-							
+
 							-- The First Death Knight (A)
 							10645,	-- Teron Gorefiend, I Am...
-							
+
 							-- The First Death Knight (H)
 							10639,	-- Teron Gorefiend, I Am...
-							
+
 							-- Borrowed Power
 							10651,	-- Varedis Must Be Stopped (Exarch Onaala, Altar of Sha'tar)
 							10692,	-- Varedis Must Be Stopped (Larissa Sunstrike, Sanctum of the Stars)
-							
+
 							-- Akama's Promise
 							10708,	-- Akama's Promise
-							
+
 							-- The Cipher of Damnation
 							10588,	-- The Cipher of Damnation
-							
+
 							-- Anti-Demon Weapons
 							10679,	-- Quenching the Blade
-							
+
 							-- The Dark Conclave
 							10808,	-- Thwart the Dark Conclave
 						},
@@ -1881,48 +1881,6 @@ root("Zones", {
 						["coord"] = { 69.8, 61.4, SHADOWMOON_VALLEY },
 						["_drop"] = { "races" },	-- stop this from being marked as horde only when it is not horde only
 						["altQuests"] = { 10866 },	-- Zuluhed the Whacked
-					}),
-					-- #endif
-					-- #if AFTER MOP
-					-- Crieve note: Thinking this is gonna move to a special section in events or something.
-					q(32324, {	-- Seek the Signal
-						["sourceQuest"] = 32317,	-- Seeking the Soulstones
-						["classes"] = { WARLOCK },
-						["lvl"] = 90,
-					}),
-					q(32325, {	-- Infiltrating the Black Temple
-						["sourceQuest"] = 32324,	-- Seek the Signal
-						["classes"] = { WARLOCK },
-						["cost"] = { { "i", 92556, 1 } },	-- Empowered Soulcore
-						["maps"] = {
-							490,	-- The Black Temple (Illidari Training Grounds)
-							491,	-- The Black Temple (Karabor Sewers)
-							492,	-- The Black Temple (Sanctuary of Shadows)
-							493,	-- The Black Temple (Halls of Anguish)
-							494,	-- The Black Temple (Gorefiend's Vigil)
-							495,	-- The Black Temple (Den of Mortal Delights)
-							496,	-- The Black Temple (Chamber of Command)
-							497,	-- The Black Temple (Temple Summit)
-						},
-						["lvl"] = 90,
-						["groups"] = {
-							sp(101508), -- The Codex of Xerrath
-						},
-					}),
-					q(32340, {	-- Plunder the Black Temple
-						["sourceQuest"] = 32325,	-- Infiltrating the Black Temple
-						["classes"] = { WARLOCK },
-						["lvl"] = 90,
-						["maps"] = {
-							490,	-- The Black Temple (Illidari Training Grounds)
-							491,	-- The Black Temple (Karabor Sewers)
-							492,	-- The Black Temple (Sanctuary of Shadows)
-							493,	-- The Black Temple (Halls of Anguish)
-							494,	-- The Black Temple (Gorefiend's Vigil)
-							495,	-- The Black Temple (Den of Mortal Delights)
-							496,	-- The Black Temple (Chamber of Command)
-							497,	-- The Black Temple (Temple Summit)
-						},
 					}),
 					-- #endif
 				}),
