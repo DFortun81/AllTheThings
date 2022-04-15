@@ -273,36 +273,30 @@ profession(ENGINEERING, {
 			},
 			["lvl"] = 30,
 		}),
-		q(9636, {	-- The Zapthrottle Mote Extractor! [A]
+		applyclassicphase(TBC_PHASE_ONE, q(9636, {	-- The Zapthrottle Mote Extractor! [A]
 			["qg"] = 17634,	-- K. Lee Smallfry <Engineering Trainer>
 			["altQuests"] = { 9635 },	-- The Zapthrottle Mote Extractor! [H]
 			["coord"] = { 68.6, 50.2, ZANGARMARSH },
 			["races"] = ALLIANCE_ONLY,
-			-- #if BEFORE WRATH
-			["u"] = TBC_PHASE_ONE,
-			-- #endif
 			["cost"] = {
 				{ "i", 23981, 15 },	-- Steam Pump Part
 			},
 			["groups"] = {
 				i(23888),	-- Schematic: Zapthrottle Mote Extractor
 			},
-		}),
-		q(9635, {	-- The Zapthrottle Mote Extractor! [H]
+		})),
+		applyclassicphase(TBC_PHASE_ONE, q(9635, {	-- The Zapthrottle Mote Extractor! [H]
 			["qg"] = 17637,	-- Mack Diver <Engineering Trainer>
 			["altQuests"] = { 9636 },	-- The Zapthrottle Mote Extractor! [A]
 			["coord"] = { 34, 51, ZANGARMARSH },
 			["races"] = HORDE_ONLY,
-			-- #if BEFORE WRATH
-			["u"] = TBC_PHASE_ONE,
-			-- #endif
 			["cost"] = {
 				{ "i", 23981, 15 },	-- Steam Pump Part
 			},
 			["groups"] = {
 				i(23888),	-- Schematic: Zapthrottle Mote Extractor
 			},
-		}),
+		})),
 		-- Argus Questline
 		q(48069, {	-- The Wrench Calls
 			["qg"] = 125525,	-- Durael

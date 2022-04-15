@@ -265,15 +265,12 @@ root("Instances", tier(CLASSIC_TIER, {
 					["sourceQuest"] = 6824,	-- Hands of the Enemy
 					["timeline"] = REMOVED_WITH_WRATH,
 				}),
-				i(22754, {	-- Eternal Quintessence
+				applyclassicphase(PHASE_THREE, i(22754, {	-- Eternal Quintessence
 					["description"] = "Return to the Duke at Revered reputation to be given a version of your Quintessence that can be used more than once.",
 					["minReputation"] = { 749, REVERED },	-- Hydraxian Waterlords, Revered.
 					["sourceQuest"] = 6824,	-- Hands of the Enemy
 					["timeline"] = REMOVED_WITH_WRATH,
-					-- #if ANYCLASSIC
-					["u"] = PHASE_THREE,
-					-- #endif
-				}),
+				})),
 			}),
 			n(ZONE_DROPS, {
 				applyclassicphase(PHASE_FIVE, i(20951, {	-- Narain's Scrying Goggles

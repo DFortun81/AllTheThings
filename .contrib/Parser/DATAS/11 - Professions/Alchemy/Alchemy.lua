@@ -86,7 +86,7 @@ profession(ALCHEMY, {
 			},
 			["lvl"] = 4,
 		}),
-		q(10906, {	-- Master of Elixirs (1/2)
+		applyclassicphase(TBC_PHASE_ONE, q(10906, {	-- Master of Elixirs (1/2)
 			["qgs"] = {
 				16588,	-- Apothecary Antonivich <Master Alchemy Trainer>
 				18802,	-- Alchemist Gribble <Alchemy Trainer>
@@ -102,12 +102,10 @@ profession(ALCHEMY, {
 			},
 			-- #if AFTER MOP
 			["u"] = REMOVED_FROM_GAME,
-			-- #elseif ANYCLASSIC
-			["u"] = TBC_PHASE_ONE,
 			-- #endif
 			["lvl"] = 68,
-		}),
-		q(10902, {	-- Master of Elixirs (2/2)
+		})),
+		applyclassicphase(TBC_PHASE_ONE, q(10902, {	-- Master of Elixirs (2/2)
 			["qg"] = 19052,	-- Lorokeem <Master Alchemy Trainer>
 			["sourceQuest"] = 10906,	-- Master of Elixirs (1/2)
 			["description"] = "Upon finishing this quest, you will become a Elixir Master and be locked out of becoming a Transmutation or Potion Master.",
@@ -126,12 +124,10 @@ profession(ALCHEMY, {
 			},
 			-- #if AFTER MOP
 			["u"] = REMOVED_FROM_GAME,
-			-- #elseif ANYCLASSIC
-			["u"] = TBC_PHASE_ONE,
 			-- #endif
 			["lvl"] = 68,
-		}),
-		q(10905, {	-- Master of Potions (1/2)
+		})),
+		applyclassicphase(TBC_PHASE_ONE, q(10905, {	-- Master of Potions (1/2)
 			["qgs"] = {
 				16588,	-- Apothecary Antonivich <Master Alchemy Trainer>
 				18802,	-- Alchemist Gribble <Alchemy Trainer>
@@ -147,12 +143,10 @@ profession(ALCHEMY, {
 			},
 			-- #if AFTER MOP
 			["u"] = REMOVED_FROM_GAME,
-			-- #elseif ANYCLASSIC
-			["u"] = TBC_PHASE_ONE,
 			-- #endif
 			["lvl"] = 68,
-		}),
-		q(10897, {	-- Master of Potions (2/2)
+		})),
+		applyclassicphase(TBC_PHASE_ONE, q(10897, {	-- Master of Potions (2/2)
 			["qg"] = 17909,	-- Lauranna Thar'well <Expedition Cataloguer>
 			["sourceQuest"] = 10905,	-- Master of Potions (1/2)
 			["description"] = "Upon finishing this quest, you will become a Potion Master and be locked out of becoming a Transmutation or Elixir Master.",
@@ -171,12 +165,10 @@ profession(ALCHEMY, {
 			},
 			-- #if AFTER MOP
 			["u"] = REMOVED_FROM_GAME,
-			-- #elseif ANYCLASSIC
-			["u"] = TBC_PHASE_ONE,
 			-- #endif
 			["lvl"] = 68,
-		}),
-		q(10907, {	-- Master of Transmutation (1/2)
+		})),
+		applyclassicphase(TBC_PHASE_ONE, q(10907, {	-- Master of Transmutation (1/2)
 			["qgs"] = {
 				16588,	-- Apothecary Antonivich <Master Alchemy Trainer>
 				18802,	-- Alchemist Gribble <Alchemy Trainer>
@@ -192,12 +184,10 @@ profession(ALCHEMY, {
 			},
 			-- #if AFTER MOP
 			["u"] = REMOVED_FROM_GAME,
-			-- #elseif ANYCLASSIC
-			["u"] = TBC_PHASE_ONE,
 			-- #endif
 			["lvl"] = 68,
-		}),
-		q(10899, {	-- Master of Transmutation (2/2)
+		})),
+		applyclassicphase(TBC_PHASE_ONE, q(10899, {	-- Master of Transmutation (2/2)
 			["qg"] = 22427,	-- Zarevhi
 			["sourceQuest"] = 10907,	-- Master of Transmutation (1/2)
 			["description"] = "Upon finishing this quest, you will become a Transmutation Master and be locked out of becoming a Potion or Elixir Master.",
@@ -212,11 +202,9 @@ profession(ALCHEMY, {
 			},
 			-- #if AFTER MOP
 			["u"] = REMOVED_FROM_GAME,
-			-- #elseif ANYCLASSIC
-			["u"] = TBC_PHASE_ONE,
 			-- #endif
 			["lvl"] = 68,
-		}),
+		})),
 		q(29481, {	-- Elixir Master
 			["description"] = "Requires 300 Classic Alchemy.",
 			["repeatable"] = true,

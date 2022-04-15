@@ -47,16 +47,13 @@ _.Zones =
 					["coord"] = { 64.0, 37.4, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(20854, {	-- Design: Amulet of the Moon
+						applyclassicphase(TBC_PHASE_ONE, i(20854, {	-- Design: Amulet of the Moon
 							["spellID"] = 25339,	-- Amulet of the Moon
 							["requireSkill"] = JEWELCRAFTING,
 							["timeline"] = { "added 2.0.1.6180" },
-							-- #if ANYCLASSIC
-							["u"] = TBC_PHASE_ONE,
-							-- #endif
 							["isLimited"] = true,
 							["f"] = RECIPES,
-						}),
+						})),
 						i(16217, {	-- Formula: Enchant Shield - Greater Stamina
 							["isLimited"] = true,
 						}),

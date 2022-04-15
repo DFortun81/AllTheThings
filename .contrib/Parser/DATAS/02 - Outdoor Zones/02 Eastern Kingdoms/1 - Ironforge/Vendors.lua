@@ -23,26 +23,20 @@ _.Zones =
 					["coord"] = { 46.6, 28.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(21948, {	-- Design: Opal Necklace of Impact
+						applyclassicphase(TBC_PHASE_ONE, i(21948, {	-- Design: Opal Necklace of Impact
 							["spellID"] = 26897,	-- Opal Necklace of Impact
 							["requireSkill"] = JEWELCRAFTING,
 							["timeline"] = { "added 2.0.1.6180" },
-							-- #if ANYCLASSIC
-							["u"] = TBC_PHASE_ONE,
-							-- #endif
 							["isLimited"] = true,
 							["f"] = RECIPES,
-						}),
-						i(20975, {	-- Design: The Jade Eye
+						})),
+						applyclassicphase(TBC_PHASE_ONE, i(20975, {	-- Design: The Jade Eye
 							["spellID"] = 25619,	-- The Jade Eye
 							["requireSkill"] = JEWELCRAFTING,
 							["timeline"] = { "added 2.0.1.6180" },
-							-- #if ANYCLASSIC
-							["u"] = TBC_PHASE_ONE,
-							-- #endif
 							["isLimited"] = true,
 							["f"] = RECIPES,
-						}),
+						})),
 					},
 				}),
 				n(50309, {	-- Captain Stonehelm <Ironforge Quartermaster>

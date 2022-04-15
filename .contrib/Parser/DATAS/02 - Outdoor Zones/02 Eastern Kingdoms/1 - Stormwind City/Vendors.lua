@@ -491,16 +491,13 @@ _.Zones =
 					["coord"] = { 64.6, 71.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(20856, {	-- Design: Heavy Golden Necklace of Battle
+						applyclassicphase(TBC_PHASE_ONE, i(20856, {	-- Design: Heavy Golden Necklace of Battle
 							["spellID"] = 25320,	-- Heavy Golden Necklace of Battle
 							["requireSkill"] = JEWELCRAFTING,
 							["timeline"] = { "added 2.0.1.6180" },
-							-- #if ANYCLASSIC
-							["u"] = TBC_PHASE_ONE,
-							-- #endif
 							["isLimited"] = true,
 							["f"] = RECIPES,
-						}),
+						})),
 					},
 				}),
 				n(5503,   {	-- Eldraeith
