@@ -2425,8 +2425,8 @@ local IsAnyQuestFlaggedCompleted = function(quests)
 end
 local IsQuestFlaggedCompletedForObject = function(t)
 	-- nil if not a quest-based object
-	if not t.questID then return; end
 	local questID = t.questID;
+	if not questID then return; end
 	-- 1 = This character completed this quest
 	-- 2 = This quest was completed by another character on the account / This quest cannot be completed by this character
 	-- If the quest is completed for this character, return completed.
@@ -11798,21 +11798,18 @@ local questFields = {
 	end,
 	["collectibleAsReputation"] = function(t)
 		local factionID = t.maxReputation[1];
-		-- If Collectible by providing reputation towards a Faction with which the character is below the rep-granting Standing, and the Faction itself is Collectible & Not Collected
-		if app.CollectibleReputations then
+		-- If Collectible by providing reputation towards a Faction with which the character is below the rep-granting Standing
+		-- and the Faction itself is Collectible & Not Collected
+		-- and the Quest is not locked from being completed
+		if app.CollectibleReputations and not t.locked then
 			local factionRef = app.SearchForObject("factionID", factionID);
 			if factionRef and not factionRef.collected and (select(6, GetFactionInfoByID(factionID)) or 0) < t.maxReputation[2] then
 				return true;
 			end
 		end
-		-- If Collectible by being a Quest, and the character is able to turn in the Quest
-		if app.CollectibleQuests then
-			if (select(6, GetFactionInfoByID(factionID)) or 0) <= t.maxReputation[2] then
-				return app.CollectibleAsQuest(t);
-			else
-				-- Otherwise, treat the quest as collectible if it has already been completed
-				return IsQuestFlaggedCompletedForObject(t);
-			end
+		-- If Collectible by being a Quest
+		if app.CollectibleQuests or app.CollectibleQuestsLocked then
+			return app.CollectibleAsQuest(t);
 		end
 	end,
 	["collectedAsReputation"] = function(t)
@@ -11827,7 +11824,7 @@ local questFields = {
 			-- Completing the quest will increase the Faction, so it is incomplete
 			if factionRef and not factionRef.collected and (select(6, GetFactionInfoByID(factionID)) or 0) < t.maxReputation[2] then
 				return false;
-			elseif not app.CollectibleQuests then
+			elseif not app.CollectibleQuests and not app.CollectibleQuestsLocked then
 			-- Completing the quest will not increase the Faction, but User doesn't care about Quests, then consider it 'collected'
 				return 2;
 			end
@@ -15763,7 +15760,7 @@ RowOnEnter = function (self)
 		end
 		-- an item used for a faction which is repeatable
 		if reference.itemID and reference.factionID and reference.repeatable then
-			GameTooltip:AddLine(L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(group.factionID)) or ("Faction #" .. tostring(group.factionID))) .. "'", 0.4, 0.8, 1, 1, true);
+			GameTooltip:AddLine(L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(reference.factionID)) or ("Faction #" .. tostring(reference.factionID))) .. "'", 0.4, 0.8, 1, 1, true);
 		end
 		-- Unobtainable
 		if reference.u then
