@@ -5269,6 +5269,7 @@ fieldCache["nextQuests"] = {};
 fieldCache["objectID"] = {};
 fieldCache["professionID"] = {};
 fieldCache["questID"] = {};
+fieldCache["runeforgePowerID"] = {};
 fieldCache["s"] = {};
 fieldCache["speciesID"] = {};
 fieldCache["spellID"] = {};
@@ -5376,6 +5377,9 @@ fieldConverters = {
 	["questID"] = cacheQuestID,
 	["requireSkill"] = function(group, value)
 		CacheField(group, "professionID", value);
+	end,
+	["runeforgePowerID"] = function(group, value)
+		CacheField(group, "runeforgePowerID", value);
 	end,
 	["s"] = function(group, value)
 		CacheField(group, "s", value);
@@ -5707,26 +5711,28 @@ local function SearchForLink(link)
 		end
 		if id then id = tonumber(select(1, strsplit("|[", id)) or id); end
 		--print(string.gsub(string.gsub(link, "|c", "c"), "|h", "h"));
-		if kind == "itemid" then
+		if kind == "itemid" or kind == "i" then
 			return SearchForField("itemID", id);
 		elseif kind == "sourceid" or kind == "s" then
 			return SearchForField("s", id);
-		elseif kind == "questid" or kind == "quest" then
+		elseif kind == "questid" or kind == "quest" or kind == "q" then
 			return SearchForField("questID", id);
-		elseif kind == "creatureid" or kind == "npcid" then
+		elseif kind == "creatureid" or kind == "npcid" or kind == "n" then
 			return SearchForField("creatureID", id);
-		elseif kind == "achievementid" or kind == "achievement" then
+		elseif kind == "achievementid" or kind == "achievement" or kind == "a" then
 			return SearchForField("achievementID", id);
-		elseif kind == "currencyid" or kind == "currency" then
+		elseif kind == "currencyid" or kind == "currency" or kind == "c" then
 			return SearchForField("currencyID", id);
-		elseif kind == "spellid" or kind == "spell" or kind == "enchant" or kind == "talent" then
+		elseif kind == "spellid" or kind == "spell" or kind == "enchant" or kind == "talent" or kind == "mount" or kind == "mountid" then
 			return SearchForField("spellID", id);
 		elseif kind == "speciesid" or kind == "species" or kind == "battlepet" then
 			return SearchForField("speciesID", id);
-		elseif kind == "follower" or kind == "followerid" or kind == "followerID" or kind == "garrfollower" then
+		elseif kind == "follower" or kind == "followerid" or kind == "garrfollower" then
 			return SearchForField("followerID", id);
-		elseif kind == "azessence" or kind == "azeriteEssenceID" then
+		elseif kind == "azessence" or kind == "azeriteessenceid" then
 			return SearchForField("azeriteEssenceID", id);
+		elseif kind == "rfp" or kind == "runeforgepowerid" then
+			return SearchForField("runeforgePowerID", id);
 		else
 			return SearchForField(string.gsub(kind, "id", "ID"), id);
 		end
@@ -6435,7 +6441,7 @@ local function RefreshCollections()
 
 		-- Harvest Illusion Collections
 		local collectedIllusions = ATTAccountWideData.Illusions;
-		for i,illusion in ipairs(C_TransmogCollection.GetIllusions()) do
+		for _,illusion in ipairs(C_TransmogCollection.GetIllusions()) do
 			if rawget(illusion, "isCollected") then rawset(collectedIllusions, illusion.sourceID, 1); end
 		end
 		coroutine.yield();
@@ -6445,6 +6451,7 @@ local function RefreshCollections()
 		local acctTitles, charTitles, charGuid = ATTAccountWideData.Titles, app.CurrentCharacter.Titles, app.GUID;
 		for i=1,GetNumTitles(),1 do
 			if IsTitleKnown(i) then
+				if not acctTitles[i] then print("Added Title",app:Linkify(i,app.Colors.ChatLink,"search:titleID:"..i)) end
 				rawset(acctTitles, i, charGuid);
 				rawset(charTitles, i, 1);
 			-- make sure to remove titles which this character does NOT know currently
@@ -6459,17 +6466,24 @@ local function RefreshCollections()
 		coroutine.yield();
 
 		-- Refresh Mounts / Pets
-		local collectedSpells = ATTAccountWideData.Spells;
+		local acctSpells, charSpells = ATTAccountWideData.Spells, app.CurrentCharacter.Spells;
 		local C_MountJournal_GetMountInfoByID = C_MountJournal.GetMountInfoByID;
-		for i,mountID in ipairs(C_MountJournal.GetMountIDs()) do
+		for _,mountID in ipairs(C_MountJournal.GetMountIDs()) do
 			local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
-			if spellID and isCollected then
-				rawset(collectedSpells, spellID, 1);
-				rawset(app.CurrentCharacter.Spells, spellID, 1);
+			if spellID then
+				if isCollected then
+					if not acctSpells[spellID] then print("Added Mount",app:Linkify(spellID,app.Colors.ChatLink,"search:spellID:"..spellID)) end
+					rawset(acctSpells, spellID, 1);
+					rawset(charSpells, spellID, 1);
+				else
+					-- remove mounts that the player doesnt actually know
+					-- TODO: there are actually character-specific mounts... will probably just need to deal with this situation via character data maintenance
+					-- if acctSpells[spellID] then print("Removed Mount",app:Linkify(spellID,app.Colors.ChatLink,"search:spellID:"..spellID)) end
+					-- acctSpells[spellID] = nil;
+					charSpells[spellID] = nil;
+				end
 			end
 		end
-
-		-- Wait a frame before harvesting item collection status.
 		coroutine.yield();
 
 		-- Harvest Item Collections that are used by the addon.
@@ -6477,10 +6491,32 @@ local function RefreshCollections()
 		coroutine.yield();
 
 		-- Refresh Toys from Cache
-		local collectedToys = ATTAccountWideData.Toys;
-		for id,group in pairs(fieldCache["toyID"]) do
-			if not rawget(collectedToys, id) and PlayerHasToy(id) then
-				rawset(collectedToys, id, 1);
+		local acctToys = ATTAccountWideData.Toys;
+		for id,_ in pairs(fieldCache["toyID"]) do
+			if PlayerHasToy(id) then
+				if not acctToys[id] then print("Added Toy",app:Linkify(id,app.Colors.ChatLink,"search:toyID:"..id)) end
+				rawset(acctToys, id, 1);
+			else
+				-- remove Toys that the account doesnt actually have
+				if acctToys[id] then print("Removed Toy",app:Linkify(id,app.Colors.ChatLink,"search:toyID:"..id)) end
+				acctToys[id] = nil;
+			end
+		end
+		coroutine.yield();
+
+		-- Refresh RuneforgeLegendaries from Cache
+		local acctRFLs = ATTAccountWideData.RuneforgeLegendaries;
+		local C_LegendaryCrafting_GetRuneforgePowerInfo = C_LegendaryCrafting.GetRuneforgePowerInfo;
+		local state;
+		for id,_ in pairs(fieldCache["runeforgePowerID"]) do
+			state = (C_LegendaryCrafting_GetRuneforgePowerInfo(id) or app.EmptyTable).state;
+			if state == 0 then
+				if not acctRFLs[id] then print("Added Runeforge Power",app:Linkify(id,app.Colors.ChatLink,"search:runeforgePowerID:"..id)) end
+				rawset(acctRFLs, id, 1);
+			else
+				-- remove RFLs that the account doesnt actually have
+				if acctRFLs[id] then print("Removed Runeforge Power",app:Linkify(id,app.Colors.ChatLink,"search:runeforgePowerID:"..id)) end
+				acctRFLs[id] = nil;
 			end
 		end
 		coroutine.yield();
@@ -10067,6 +10103,7 @@ end
 -- copy base Item fields
 local fields = RawCloneData(itemFields);
 -- Runeforge Legendary differences
+local C_LegendaryCrafting_GetRuneforgePowerInfo = C_LegendaryCrafting.GetRuneforgePowerInfo;
 fields.key = function(t) return "runeforgePowerID"; end;
 fields.collectible = function(t) return app.CollectibleRuneforgeLegendaries; end;
 fields.collectibleAsCost = app.ReturnFalse;
@@ -10075,7 +10112,7 @@ fields.collected = function(t)
 	-- account-wide collected
 	if ATTAccountWideData.RuneforgeLegendaries[rfID] then return 1; end
 	-- fresh collected
-	local state = (C_LegendaryCrafting.GetRuneforgePowerInfo(rfID) or app.EmptyTable).state;
+	local state = (C_LegendaryCrafting_GetRuneforgePowerInfo(rfID) or app.EmptyTable).state;
 	if state == 0 then
 		ATTAccountWideData.RuneforgeLegendaries[rfID] = 1;
 		return 1;
