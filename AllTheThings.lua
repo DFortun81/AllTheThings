@@ -3404,6 +3404,13 @@ ResolveSymbolicLink = function(o)
 					-- Select the direct parent object.
 					tinsert(searchResults, o.parent);
 				end
+			elseif cmd == "selectprofession" then
+				local cache = app:BuildSearchResponse(app:GetDataCache().g, "requireSkill", sym[2]);
+				if cache and #cache > 0 then
+					for _,k in ipairs(cache) do
+						tinsert(searchResults, k);
+					end
+				end
 			elseif cmd == "fill" then
 				-- Instruction to fill with identical content cached elsewhere for this group (no symlinks)
 				if o.key and o[o.key] then
@@ -11614,6 +11621,11 @@ local fields = {
 	["requireSkill"] = function(t)
 		return t.professionID;
 	end,
+	--[[
+	["sym"] = function(t)
+		return {{"selectprofession", t.professionID}};
+	end
+	]]--
 };
 app.BaseProfession = app.BaseObjectFields(fields, "BaseProfession");
 app.CreateProfession = function(id, t)
