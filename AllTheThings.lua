@@ -11621,11 +11621,10 @@ local fields = {
 	["requireSkill"] = function(t)
 		return t.professionID;
 	end,
-	--[[
 	["sym"] = function(t)
-		return {{"selectprofession", t.professionID}};
-	end
-	]]--
+		return {{"selectprofession", t.professionID},
+				{"not","headerID",-38}};	-- Ignore the Main Professions header that will get pulled in
+	end,
 };
 app.BaseProfession = app.BaseObjectFields(fields, "BaseProfession");
 app.CreateProfession = function(id, t)
