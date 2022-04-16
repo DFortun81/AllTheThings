@@ -462,6 +462,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 				["crs"] = { 88281 },	-- Echo Batling
 				["coord"] = { 55.1, 44.3, HIGHMOUNTAIN },
 			}),
+		}),
 		ach(11256),		-- Treasures of Azsuna
 		ach(11257),		-- Treasures of Highmountain
 		ach(11259),		-- Treasures of Stormheim
