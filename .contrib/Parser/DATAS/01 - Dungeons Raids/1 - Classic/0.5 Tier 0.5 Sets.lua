@@ -1642,6 +1642,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["sourceQuests"] = {
 						8926,	-- Just Compensation [ALLIANCE]
 						8931,	-- Just Compensation [ALLIANCE]
+						8932,	-- Just Compensation [ALLIANCE]
 						8933,	-- Just Compensation [ALLIANCE]
 						8934,	-- Just Compensation [ALLIANCE]
 						8935,	-- Just Compensation [ALLIANCE]
@@ -1662,6 +1663,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["sourceQuests"] = {
 						8927,	-- Just Compensation [HORDE]
 						8938,	-- Just Compensation [HORDE]
+						8939,	-- Just Compensation [HORDE]
 						8940,	-- Just Compensation [HORDE]
 						8941,	-- Just Compensation [HORDE]
 						8942,	-- Just Compensation [HORDE]
