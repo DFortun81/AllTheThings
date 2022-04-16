@@ -983,7 +983,9 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					i(28740),	-- Rip-Flayer Leggings
 					i(28741),	-- Skulker's Greaves
 					i(28730),	-- Mithril Band of the Unscarred
+					-- #if AFTER MOP
 					i(32506),	-- Netherwing Egg
+					-- #endif
 				},
 			}),
 			e(1562, {	-- Chess Event
