@@ -3227,7 +3227,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(189428),	-- 9.2 Pet Battle Playtest Bag of Goodies
 				i(190383),	-- Progenitor Essentia Lattice
 				i(188796),	-- Cypher Test Item
-				i(190172),	-- Title Reward: Gauntlet Runner
+			--	i(190172),	-- Title Reward: Gauntlet Runner (under uncollectable as the item shows on mouseover)
 				i(190823),	-- Firim's Mysterious Cache
 			}),
 			n(P9xx, {
