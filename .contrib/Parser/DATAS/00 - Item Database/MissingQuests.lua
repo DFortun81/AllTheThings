@@ -3045,7 +3045,6 @@ q(43822),	-- Hidden History
 q(43823),	-- Hidden History
 q(43824),	-- Hidden History
 q(43825),	-- Hidden History
-q(43826),	-- Hidden History
 q(43833),	-- Treasure 003 - Felsoul Lower
 q(43836),	-- [reuse]
 q(43843),	-- Treasure 010 - Falanaar Outdoor Ruins

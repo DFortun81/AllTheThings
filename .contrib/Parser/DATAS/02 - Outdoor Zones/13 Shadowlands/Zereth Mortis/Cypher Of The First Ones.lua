@@ -592,32 +592,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 	}),
 })));
 
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	tier(SL_TIER, {
-		n(-988, {	-- Cypher of the First Ones
-			i(190392),	-- Pocopoc Shield
-			n(ACHIEVEMENTS, {
-				ach(15559),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Aealic
-				ach(15560),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Dealic
-				ach(15561),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Trebalim
-				ach(15562),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Cachial
-				ach(15563),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Altonian
-				ach(15564),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Sopranian
-				ach(15565),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Bassalim
-				ach(15566),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Metrial
-				ach(15568),	-- 	9.2 ZM - Cypher System - Talent Research Started - Metrial
-				ach(15569),	-- 	9.2 ZM - Cypher System - Talent Research Started - Aealic
-				ach(15570),	-- 	9.2 ZM - Cypher System - Talent Research Started - Dealic
-				ach(15571),	-- 	9.2 ZM - Cypher System - Talent Research Started - Trebalim
-				ach(15572),	-- 	9.2 ZM - Cypher System - Talent Research Started - Cachial
-				ach(15573),	-- 	9.2 ZM - Cypher System - Talent Research Started - Altonian
-				ach(15574),	-- 	9.2 ZM - Cypher System - Talent Research Started - Sopranian
-				ach(15575),	-- 	9.2 ZM - Cypher System - Talent Research Started - Bassalim
-			}),
-		}),
-	}),
-}));
-
 root("HiddenQuestTriggers", {
 	q(65027),	-- eligible for Firim's Spare Forge-tap
 	q(65028),	-- eligible for Unstable Containment Trap

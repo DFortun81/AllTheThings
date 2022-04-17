@@ -17104,8 +17104,21 @@ function app:GetDataCache()
 			db.text = db.name;
 			db.description = L["NEVER_IMPLEMENTED_DESC"];
 			tinsert(g, db);
-			tinsert(db.g, 1, flightPathsCategory_NYI);
+			--tinsert(db.g, 1, flightPathsCategory_NYI);
 			CacheFields(db);
+		end
+		-- Hidden Achievement Triggers
+		if app.Categories.HiddenAchievementTriggers then
+			db = {};
+			db.expanded = false;
+			db.g = app.Categories.HiddenAchievementTriggers;
+			db.name = "Hidden Achievement Triggers";
+			db.text = db.name;
+			db.description = "Hidden Achievement Triggers";
+			tinsert(g, db);
+			--app.ToggleCacheMaps(true);
+			--CacheFields(db);
+			--app.ToggleCacheMaps();
 		end
 
 		-- Hidden Quest Triggers

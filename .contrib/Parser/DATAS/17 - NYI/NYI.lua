@@ -277,6 +277,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(20937),	-- Qiraji Encased Jewel
 			i(17347),	-- Syndicate Man Tracker (MURP)
 		}),
+		n(WEAPONS, {
+			i(13262),	-- Ashbringer
+		}),
 	}),
 	tier(TBC_TIER, {
 		n(ARMOR, {
@@ -946,6 +949,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			filter(TRINKET_F, {
 				tier(CATA_TIER, 0.3, {
 					i(54547),	-- Cracked Jewelry Box
+					i(65015),	-- DONTUSEFury of Angerforge
 				}),
 			}),
 		}),
@@ -2611,6 +2615,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(182306),	-- Monster Mantle
 				}),
 				tier(SL_TIER, 1.0, {
+					i(186500),	-- Ensemble: Garb of the Twilight Grove(quest:63596)
+					i(186518),	-- Ensemble: Forsworn Aspirant's Regalia(quest:63600)
+					i(186505),	-- Ensemble: Rogue Necromancer's Vestments(quest:63629)
+					i(186513),	-- Ensemble: Radiant Court Attire(quest:63632)
+					i(186514),	-- Ensemble: Redeemed Inquisitor's Vestments(quest:63636)
 					i(185774),	-- PH Green Head Candle
 					i(186093),	-- Shaded Spectacles
 				}),
@@ -3169,6 +3178,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 			tier(SL_TIER, 0.2, {
 				i(184663),	-- Building: Guardhouse
+				i(184316),	-- Cache of Nathrian Treasures
+				i(184317),	-- Cache of Nathrian Treasures
 				i(184534),	-- Entitled Guest
 				i(184762),	-- Fragmented Sorrow
 				i(184649),	-- Mawrat Cannon
@@ -3187,7 +3198,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(184122),	-- Spare Foot
 				i(184119),	-- Spare Heart
 				i(184124),	-- Spare Stomach
-				i(184412),	-- Title Reward: Spirestalker
+				-- i(184412),	-- Title Reward: Spirestalker
 				i(184446),	-- Vial of Blue Muck Dye
 			}),
 			tier(SL_TIER, 0.5, {
@@ -3201,6 +3212,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(187570),	-- Brokers' Skinning Mote of Potentiation
 				i(187571),	-- Brokers' Mining Mote of Potentiation
 				i(173790),	-- Bunch of Berries
+				i(186530),	-- Cache of Sanctum Treasures
+				i(186529),	-- Cache of Sanctum Treasures
 				i(186520),	-- Chest of Playtest Equipment
 				i(186519),	-- Compressed Anima Bubble
 				i(187544),	-- Consumed Weapon Essence
@@ -3225,10 +3238,13 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			tier(SL_TIER, 2.0, {
 				i(189452),	-- 9.2 Mount Crafting Bag of Goodies
 				i(189428),	-- 9.2 Pet Battle Playtest Bag of Goodies
-				i(190383),	-- Progenitor Essentia Lattice
+				i(191040),	-- Cache of Sepulcher Treasures
+				i(191041),	-- Cache of Sepulcher Treasures
+				i(190654),	-- Cache of Sepulcher Treasures
 				i(188796),	-- Cypher Test Item
-			--	i(190172),	-- Title Reward: Gauntlet Runner (under uncollectable as the item shows on mouseover)
 				i(190823),	-- Firim's Mysterious Cache
+				i(190383),	-- Progenitor Essentia Lattice
+				-- i(190172),	-- Title Reward: Gauntlet Runner
 			}),
 			n(P9xx, {
 				i(173774),	-- Wilderbew Special
@@ -3278,9 +3294,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(187863),	-- Key of Ephemera
 			}),
 			tier(SL_TIER, 2.0, {
-				i(191040),	-- Cache of Sepulcher Treasures
-				i(191041),	-- Cache of Sepulcher Treasures
-				i(190654),	-- Cache of Sepulcher Treasures
 				i(188200),	-- Engraved Stone
 				i(185484),	-- Nathrezim Documents
 			}),
@@ -4595,6 +4608,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	}),
 	n(WEAPONS, {
 		-- 9.2.0
+		i(190392),	-- Pocopoc Shield
 		i(184231),	-- 9.0 Covenant - Bastion - Weapon - Warglaive AGI - Blue
 		i(184232),	-- 9.0 Covenant - Bastion - Weapon - Warglaive AGI - Copper
 		i(184233),	-- 9.0 Covenant - Bastion - Weapon - Warglaive AGI - Dark
@@ -4975,6 +4989,37 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(189996),	-- Elegantly Balanced Axe
 			}),
 		}),
+	}),
+	n(FLIGHT_PATHS, {
+		fp(62, {	-- Nighthaven, Moonglade
+			["races"] = ALLIANCE_ONLY,
+			["classes"] = { DRUID },
+		}),
+		fp(63, {	-- Nighthaven, Moonglade
+			["races"] = HORDE_ONLY,
+			["classes"] = { DRUID },
+		}),
+		fp(1567, {	-- Temple of Karabor, Shadowmoon Valley
+			["races"] = ALLIANCE_ONLY,
+		}),
+		fp(1849, {	-- Dalaran
+			["classes"] = { HUNTER },
+		}),
+		fp(2059, {	-- Southwind Village, Silithus
+			["races"] = HORDE_ONLY,
+		}),
+		fp(2066),	-- Atal'Gral, Zuldazar
+		fp(2071),	-- Dreadpearl, Zuldazar
+		fp(2162),	-- Devoted Sanctuary, Vol'dun
+		fp(2401, {	-- Alliance Outpost, Exile's Reach Outpost
+			["races"] = ALLIANCE_ONLY,
+		}),
+		fp(2402, {	-- Ogre Citadel, Exile's Reach Island
+			["races"] = HORDE_ONLY,
+		}),
+		fp(2530),	-- Dreamsong Fenn, Ardenweald
+		fp(2555),	-- The Maw
+		fp(2565),	-- Starlit Overlook, Ardenweald
 	}),
 }));
 

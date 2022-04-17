@@ -36,6 +36,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(133637),	-- Utgarde Royal Signet
 					i(137326),	-- Fragmented Meteorite Whetstone
 					i(133682),	-- Northern Gale
+					i(139619),	-- Ymiron's Broken Blade (QUEST!)
 				})),
 				cr(96754, e(1512, {	-- Harbaron
 					i(137325),	-- Afterlife Manacles
@@ -89,6 +90,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(133637),	-- Utgarde Royal Signet
 					i(137326),	-- Fragmented Meteorite Whetstone
 					i(133682),	-- Northern Gale
+					i(139619),	-- Ymiron's Broken Blade (QUEST!)
 				})),
 				cr(96754, e(1512, {	-- Harbaron
 					i(137325),	-- Afterlife Manacles
@@ -151,6 +153,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(133637),	-- Utgarde Royal Signet
 					i(137326),	-- Fragmented Meteorite Whetstone
 					i(133682),	-- Northern Gale
+					i(139619),	-- Ymiron's Broken Blade (QUEST!)
 				})),
 				cr(96754, e(1512, {	-- Harbaron
 					ach(10411, {	-- Helheim Hath No Fury

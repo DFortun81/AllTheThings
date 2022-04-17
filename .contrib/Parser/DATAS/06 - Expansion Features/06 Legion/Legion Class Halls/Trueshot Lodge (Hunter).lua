@@ -5,14 +5,14 @@
 root("ExpansionFeatures", tier(LEGION_TIER, {
 	n(CLASS_HALL, {
 		cl(HUNTER, {
-			["mapID"] = 739,
+			["maps"] = { TRUESHOT_LODGE },
 			["g"] = bubbleDown({ ["classes"] = { HUNTER } }, {
 				n(FLIGHT_PATHS, {
 					fp(1760, {	-- Trueshot Lodge, Highmountain
-						["coord"] = { 36.0, 27.8, 739 },
+						["coord"] = { 36.0, 27.8, TRUESHOT_LODGE },
 					}),
 					fp(1848, {	-- Trueshot Lodge (Eagle)
-						["coord"] = { 39.8, 29.6, 739 },
+						["coord"] = { 39.8, 29.6, TRUESHOT_LODGE },
 					}),
 				}),
 				n(QUESTS, {
@@ -32,21 +32,21 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 					q(43423, {	-- A Hero's Weapon
 						["sourceQuests"] = { 42659 },	-- In Defense of Dalaran
 						["provider"] = { "n", 110505 },	-- Emmarel Shadewarden
-						["coord"] = { 47.7, 49.3, 739 },
+						["coord"] = { 47.7, 49.3, TRUESHOT_LODGE },
 					}),
 					q(43370, {	-- A New Invention
 						["provider"] = { "n", 110424 },	-- Image of Mimiron
-						["coord"] = { 44.4, 45.0, 739 },
+						["coord"] = { 44.4, 45.0, TRUESHOT_LODGE },
 					}),
 					q(40957, {	-- A Strong Right Hand
 						["sourceQuests"] = { 40955 },	-- Oath of Service
 						["provider"] = { "n", 107317 },	-- Emmarel Shadewarden
-						["coord"] = { 43.4, 26.4, 739 },
+						["coord"] = { 43.4, 26.4, TRUESHOT_LODGE },
 					}),
 					q(42436, {	-- Aiding Our Allies
 						["sourceQuests"] = { 42395 },	-- Signaling Trouble
 						["provider"] = { "n", 107973 },	-- Emmarel Shadewarden
-						["coord"] = { 41.6, 74.8, 739 },
+						["coord"] = { 41.6, 74.8, TRUESHOT_LODGE },
 					}),
 					q(41053, {	-- Altar of the Eternal Hunt
 						["u"] = REMOVED_FROM_GAME,
@@ -75,12 +75,12 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 							42655,	-- Ore Under the Sea
 						},
 						["provider"] = { "n", 108456 },	-- Halduron Brightwing
-						["coord"] = { 43.1, 6.1, 739 },
+						["coord"] = { 43.1, 6.1, TRUESHOT_LODGE },
 					}),
 					q(42397, {	-- Baron and the Huntsman
 						["sourceQuests"] = { 42394 },	-- Unseen Protection
 						["provider"] = { "n", 107973 },	-- Emmarel Shadewarden
-						["coord"] = { 41.6, 74.8, 739 },
+						["coord"] = { 41.6, 74.8, TRUESHOT_LODGE },
 					}),
 					q(42930, {	-- Big Gamy Ribs
 						["sourceQuests"] = { 42436 },	-- Aiding Our Allies
@@ -104,7 +104,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 					q(42389, {	-- Calling Hilaire Home
 						["sourceQuests"] = { 42388 },	-- Urgent Summons
 						["provider"] = { "n", 107317 },	-- Emmarel Shadewarden
-						["coord"] = { 43.4, 26.4, 739 },
+						["coord"] = { 43.4, 26.4, TRUESHOT_LODGE },
 					}),
 					q(42414, {	-- Champion: Addie Fizzlebog
 						["sourceQuests"] = {
@@ -198,11 +198,11 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 					}),
 					q(44043, {	-- Continuing the Legend
 						["provider"] = { "n", 107317 },	-- Emmarel Shadewarden
-						["coord"] = { 43.4, 26.4, 739 },
+						["coord"] = { 43.4, 26.4, TRUESHOT_LODGE },
 					}),
 					q(45392, {	-- Dark Memento
 						["provider"] = { "n", 105099 },	-- Dark Ranger Velonara
-						["coord"] = { 49.4, 49.7, 739 },
+						["coord"] = { 49.4, 49.7, TRUESHOT_LODGE },
 					}),
 					q(42658, {	-- Delicate Enchantments
 						["sourceQuests"] = { 42657 },	-- Meeting in Moonclaw Vale
@@ -212,12 +212,12 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 					q(42654, {	-- Darkheart Thicket: Nightmare Oak
 						["sourceQuests"] = { 42405 },	-- Informing Our Allies
 						["provider"] = { "n", 108456 },	-- Halduron Brightwing
-						["coord"] = { 43.1, 6.1, 739 },
+						["coord"] = { 43.1, 6.1, TRUESHOT_LODGE },
 					}),
 					q(45551, {	-- Devastating Effects
 						["sourceQuests"] = { 47137 },	-- Champions of Legionfall (must be on the quest)
 						["provider"] = { "n", 108455 },	-- Shandris Feathermoon
-						["coord"] = { 46.4, 34.8, 739 },
+						["coord"] = { 46.4, 34.8, TRUESHOT_LODGE },
 					}),
 					q(45555, {	-- Felbound Beasts
 						["sourceQuests"] = { 45554 },	-- Taking Control
@@ -227,7 +227,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 					q(46783, {	-- Further Advancement
 						["sourceQuests"] = { 46048 },	-- Champion: Nighthuntress Syrenne
 						["provider"] = { "n", 103023 },	-- Tactician Tinderfell
-						["coord"] = { 42.9, 46.9, 739 },
+						["coord"] = { 42.9, 46.9, TRUESHOT_LODGE },
 					}),
 					q(46149, {	-- Furthering Knowledge
 						["u"] = REMOVED_FROM_GAME,
@@ -239,7 +239,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 						["isBreadcrumb"] = true,
 						["sourceQuests"] = { 42394 },	-- Unseen Protection
 						["provider"] = { "n", 103023 },	-- Tactician Tinderfell
-						["coord"] = { 42.9, 46.9, 739 },
+						["coord"] = { 42.9, 46.9, TRUESHOT_LODGE },
 					}),
 					q(42929, {	-- Highmountain Salmon
 						["sourceQuests"] = { 42436 },	-- Aiding Our Allies
@@ -280,7 +280,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 							42133,	-- Same Day Delivery
 						},
 						["provider"] = { "n", 107973 },	-- Emmarel Shadewarden
-						["coord"] = { 43.4, 26.4, 739 },
+						["coord"] = { 43.4, 26.4, TRUESHOT_LODGE },
 						["g"] = {
 							i(139707),	-- Hauberk of the Unseen Path
 							title(335),	-- Huntmaster <Name>
@@ -289,7 +289,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 					q(42405, {	-- Informing Our Allies
 						["sourceQuests"] = { 42402 },	-- Requesting Reinforcements
 						["provider"] = { "n", 107973 },	-- Emmarel Shadewarden
-						["coord"] = { 43.4, 26.4, 739 },
+						["coord"] = { 43.4, 26.4, TRUESHOT_LODGE },
 					}),
 					q(41047, {	-- Infused with Power
 						["u"] = REMOVED_FROM_GAME,
@@ -300,7 +300,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 					q(42689, {	-- Knowing Our Enemy
 						["sourceQuests"] = { 42404 },	-- Assisting the Archmage
 						["provider"] = { "n", 107973 },	-- Emmarel Shadewarden
-						["coord"] = { 43.4, 26.3, 739 },
+						["coord"] = { 43.4, 26.3, TRUESHOT_LODGE },
 					}),
 					q(46130, {	-- Knowledge is Power
 						["u"] = REMOVED_FROM_GAME,
@@ -308,12 +308,12 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 					q(44680, {	-- Leading by Example
 						["sourceQuests"] = { 42405 },	-- Informing Our Allies
 						["provider"] = { "n", 107973 },	-- Emmarel Shadewarden
-						["coord"] = { 43.4, 26.4, 739 },
+						["coord"] = { 43.4, 26.4, TRUESHOT_LODGE },
 					}),
 					q(42385, {	-- Lending a Hand
 						["sourceQuests"] = { 42384 },	-- Scouting Reports
 						["provider"] = { "n", 107317 },	-- Emmarel Shadewarden
-						["coord"] = { 43.4, 26.4, 739 },
+						["coord"] = { 43.4, 26.4, TRUESHOT_LODGE },
 					}),
 					q(42691, {	-- Leystone Lure
 						["sourceQuests"] = { 42689 },	-- Knowing Our Enemy
@@ -322,7 +322,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 					}),
 					q(42523, {	-- Making Contact
 						["provider"] = { "n", 103023 },	-- Tactician Tinderfell
-						["coord"] = { 42.9, 46.9, 739 },
+						["coord"] = { 42.9, 46.9, TRUESHOT_LODGE },
 					}),
 					q(42657, {	-- Meeting in Moonclaw Vale
 						["sourceQuests"] = {
@@ -330,12 +330,12 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 							42408,	-- Required Reagents
 						},
 						["provider"] = { "n", 108455 },	-- Shandris Feathermoon
-						["coord"] = { 46.4, 34.8, 739 },
+						["coord"] = { 46.4, 34.8, TRUESHOT_LODGE },
 					}),
 					q(42400, {	-- Missing Mages
 						["sourceQuests"] = { 42399 },	-- Ready to Work
 						["provider"] = { "n", 107973 },	-- Emmarel Shadewarden
-						["coord"] = { 43.4, 26.4, 739 },
+						["coord"] = { 43.4, 26.4, TRUESHOT_LODGE },
 					}),
 					q(40384, {	-- Needs of the Hunters
 						["provider"] = { "n", 100786 },	-- Snowfeather
@@ -347,7 +347,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 					q(46337, {	-- Night of the Wilds
 						["sourceQuests"] = { 46336 },	-- A Golden Ticket
 						["provider"] = { "n", 119943 },	-- Golden Letter
-						["coord"] = { 42.9, 45.7, 739 },
+						["coord"] = { 42.9, 45.7, TRUESHOT_LODGE },
 						["g"] = {
 								i(142227, {	-- Huntmaster's Loyal Wolfhawk (MOUNT!)
 										}),
@@ -356,7 +356,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 					q(40955, {	-- Oath of Service
 						["sourceQuests"] = { 40954 },	-- The Unseen Path
 						["provider"] = { "n", 102574 },	-- Emmarel Shadewarden
-						["coord"] = { 43.4, 26.4, 739 },
+						["coord"] = { 43.4, 26.4, TRUESHOT_LODGE },
 					}),
 					q(40953, {	-- On Eagle's Wings
 						["sourceQuests"] = {
@@ -365,17 +365,17 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 							41009,	-- Hunter to Hunter
 						},
 						["provider"] = { "n", 102574 },	-- Emmarel Shadewarden
-						["coord"] = { 43.4, 26.4, 739 },
+						["coord"] = { 43.4, 26.4, TRUESHOT_LODGE },
 					}),
 					q(44366, {	-- One Last Adventure
 						["sourceQuests"] = { 40419 },	-- Rescue Mission
 						["provider"] = { "n", 107973 },	-- Emmarel Shadewarden
-						["coord"] = { 43.4, 26.4, 739 },
+						["coord"] = { 43.4, 26.4, TRUESHOT_LODGE },
 					}),
 					q(42655, {	-- Ore Under the Sea
 						["sourceQuests"] = { 42405 },	-- Informing Our Allies
 						["provider"] = { "n", 108456 },	-- Halduron Brightwing
-						["coord"] = { 43.1, 6.1, 739 },
+						["coord"] = { 43.1, 6.1, TRUESHOT_LODGE },
 					}),
 					q(44090, {	-- Pledge of Loyalty
 						["provider"] = { "n", 113327 },	-- Snowfeather
@@ -387,7 +387,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 							{ "n", 107317 },	-- Emmarel Shadewarden
 							{ "n", 107973 },	-- Emmarel Shadewarden
 						},
-						["coord"] = { 43.4, 26.4, 739 },
+						["coord"] = { 43.4, 26.4, TRUESHOT_LODGE },
 					}),
 					q(45556, {	-- Ready to Strike
 						["sourceQuests"] = { 45555 },	-- Felbound Beasts
@@ -402,17 +402,17 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 					q(42134, {	-- Recruiting More Troops
 						["sourceQuests"] = { 42395 },	-- Signaling Trouble
 						["provider"] = { "n", 103023 },	-- Tactician Tinderfell
-						["coord"] = { 42.9, 46.9, 739 },
+						["coord"] = { 42.9, 46.9, TRUESHOT_LODGE },
 					}),
 					q(42390, {	-- Recruiting Rexxar
 						["sourceQuests"] = { 42388 },	-- Urgent Summons
 						["provider"] = { "n", 107317 },	-- Emmarel Shadewarden
-						["coord"] = { 43.4, 26.4, 739 },
+						["coord"] = { 43.4, 26.4, TRUESHOT_LODGE },
 					}),
 					q(42524, {	-- Recruiting The Troops
 						["sourceQuests"] = { 42523 },	-- Making Contact
 						["provider"] = { "n", 103023 },	-- Tactician Tinderfell
-						["coord"] = { 42.9, 46.9, 739 },
+						["coord"] = { 42.9, 46.9, TRUESHOT_LODGE },
 					}),
 					q(41540, {	-- Rendezvous with the Courier
 						["providers"] = {
@@ -420,17 +420,17 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 							{ "n", 107317 },	-- Emmarel Shadewarden
 							{ "n", 107973 },	-- Emmarel Shadewarden
 						},
-						["coord"] = { 43.4, 26.4, 739 },
+						["coord"] = { 43.4, 26.4, TRUESHOT_LODGE },
 					}),
 					q(42402, {	-- Requesting Reinforcements
 						["sourceQuests"] = { 42407 },	-- The Nature of the Beast
 						["provider"] = { "n", 107973 },	-- Emmarel Shadewarden
-						["coord"] = { 43.4, 26.4, 739 },
+						["coord"] = { 43.4, 26.4, TRUESHOT_LODGE },
 					}),
 					q(42408, {	-- Required Reagents
 						["sourceQuests"] = { 42405 },	-- Informing Our Allies
 						["provider"] = { "n", 108455 },	-- Shandris Feathermoon
-						["coord"] = { 46.4, 34.8, 739 },
+						["coord"] = { 46.4, 34.8, TRUESHOT_LODGE },
 					}),
 					q(40419, {	-- Rescue Mission
 						["sourceQuests"] = {
@@ -465,7 +465,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 					q(42384, {	-- Scouting Reports
 						["sourceQuests"] = { 42526 },	-- Tech It Up A Notch
 						["provider"] = { "n", 103023 },	-- Tactician Tinderfell
-						["coord"] = { 42.9, 46.9, 739 },
+						["coord"] = { 42.9, 46.9, TRUESHOT_LODGE },
 					}),
 					q(46235, {	-- Secured Surroundings
 						["sourceQuests"] = {
@@ -478,7 +478,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 					q(42395, {	-- Signaling Trouble
 						["sourceQuests"] = { 42393 },	-- Homecoming
 						["provider"] = { "n", 107973 },	-- Emmarel Shadewarden
-						["coord"] = { 43.4, 26.4, 739 },
+						["coord"] = { 43.4, 26.4, TRUESHOT_LODGE },
 					}),
 					q(42928, {	-- Silkweave Bandages
 						["sourceQuests"] = { 42436 },	-- Aiding Our Allies
@@ -509,7 +509,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 					q(40958, {	-- Tactical Matters
 						["sourceQuests"] = { 40955 },	-- Oath of Service
 						["provider"] = { "n", 103023 },	-- Tactician Tinderfell
-						["coord"] = { 42.9, 46.9, 739 },
+						["coord"] = { 42.9, 46.9, TRUESHOT_LODGE },
 					}),
 					q(45554, {	-- Taking Control
 						["sourceQuests"] = { 45553 },	-- The Nighthuntress Beckons
@@ -519,7 +519,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 					q(42526, {	-- Tech It Up A Notch
 						["sourceQuests"] = { 42525 },	-- Troops in the Field
 						["provider"] = { "n", 103023 },	-- Tactician Tinderfell
-						["coord"] = { 42.9, 46.9, 739 },
+						["coord"] = { 42.9, 46.9, TRUESHOT_LODGE },
 					}),
 					q(40959, {	-- The Campaign Begins
 					}),
@@ -538,7 +538,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 					q(43182, {	-- The Missing Vessel
 						["sourceQuests"] = { 42405 },	-- Informing Our Allies
 						["provider"] = { "n", 107966 },	-- Archmage Khadgar
-						["coord"] = { 42.9, 25.4, 739 },
+						["coord"] = { 42.9, 25.4, TRUESHOT_LODGE },
 					}),
 					q(42407, {	-- The Nature of the Beast
 						["sourceQuests"] = { 42406 },	-- To Tame the Beast
@@ -566,7 +566,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 					q(40954, {	-- The Unseen Path
 						["sourceQuests"] = { 40953 },	-- On Eagle's Wings
 						["provider"] = { "n", 102574 },	-- Emmarel Shadewarden
-						["coord"] = { 43.4, 26.4, 739 },
+						["coord"] = { 43.4, 26.4, TRUESHOT_LODGE },
 					}),
 					q(42406, {	-- To Tame the Beast
 						["sourceQuests"] = { 42691 },	-- Leystone Lure
@@ -575,7 +575,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 					}),
 					q(42525, {	-- Troops in the Field
 						["provider"] = { "n", 103023 },	-- Tactician Tinderfell
-						["coord"] = { 42.9, 46.9, 739 },
+						["coord"] = { 42.9, 46.9, TRUESHOT_LODGE },
 					}),
 					q(45557, {	-- Unnatural Consequences
 						["sourceQuests"] = { 45556 },	-- Ready to Strike
@@ -584,18 +584,18 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 					}),
 					q(44211, {	-- Unseen Armaments
 						["provider"] = { "n", 110412 },	-- Berger the Steadfast
-						["coord"] = { 58.4, 48.4, 739 },
+						["coord"] = { 58.4, 48.4, TRUESHOT_LODGE },
 						["description"] = "Requires the |cFFFFD700Fletchery|r order hall upgrade.",
 					}),
 					q(44212, {	-- Unseen Fate
 						["provider"] = { "n", 110816 },	-- Tu'Las the Gifted
-						["coord"] = { 43.4, 48.2, 739 },
+						["coord"] = { 43.4, 48.2, TRUESHOT_LODGE },
 						["description"] = "Requires the |cFFFFD700Unseen Path|r order hall upgrade.",
 					}),
 					q(42394, {	-- Unseen Protection
 						["sourceQuests"] = { 42395 },	-- Signaling Trouble
 						["provider"] = { "n", 107973 },	-- Emmarel Shadewarden
-						["coord"] = { 41.6, 74.8, 739 },
+						["coord"] = { 41.6, 74.8, TRUESHOT_LODGE },
 					}),
 					q(42388, {	-- Urgent Summons
 						["sourceQuests"] = {
@@ -681,14 +681,14 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 						},
 					}),
 					n(100633, {	-- Death Hunter Moorgoth <Hunters of Death>
-						["coord"] = { 52.6, 50.3, 739 },
+						["coord"] = { 52.6, 50.3, TRUESHOT_LODGE },
 						["description"] = "|c808080FAHunters will need to have completed the hidden quest|r |cFFFFD700Dark Memento|r |c808080FAin order to see items on this vendor.|r\n\n|cffff0000How to activate the quest:|r\n|c0070DEFFStep 1:|r\n|c808080FASpeak to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA and complete the dialogue with him.\n|c0070DEFFStep 2:|r\n|c808080FABuy 13x|r |cFFFFFFFFBlack Roses|r|c808080FA from him.\n|c0070DEFFStep 3:|r\n|c808080FASpeak to|r |cABD473FFDark Ranger Velonara|r |c808080FA and complete the dialogue with her.  Afterwards she will take the 13 |r|cFFFFFFFFBlack Roses|r|c808080FA from you.\n|c0070DEFFStep 4:|r\n|c808080FAGo back and speak to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA who will finish the story between the two.  Once doing this he will no longer sell you anything.\n|c0070DEFFStep 5:|r\n|c808080FFFind|r |cABD473FFDark Ranger Velonara|r |c808080FA who will offer the quest, |r|cFFFFD700Dark Memento|r.\n|c0070DEFFStep 6:|r\n|c808080FAAccept the quest and then deliver the hood to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA.\n|c0070DEFFStep 7:|r\n|c808080FAUpon finishing that quest he will now offer you the two items.",
 						["g"] = {
 							i(143663),	-- Dark Ranger's Hood
 						},
 					}),
 					n(103693, {	-- Outfitter Reynolds <Unseen Path>
-						["coord"] = { 44.6, 48.8, 739 },
+						["coord"] = { 44.6, 48.8, TRUESHOT_LODGE },
 						["g"] = {
 							i(139713, {	-- Belt of the Unseen Path
 								["cost"] = 5000000,	-- 500g
@@ -742,7 +742,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 					}),
 					n(100661, {	--  Pan the Kind Hand <Stable Master>
 						["sourceQuests"] = { 46337 },	-- Night of the Wilds
-						["coord"] = { 58.8, 31.8, 739 },
+						["coord"] = { 58.8, 31.8, TRUESHOT_LODGE },
 						["g"] = {
 							i(147580, {	-- Tome of the Hybrid Beast
 								--["spellID"] = 242155,	-- Hybrid Kinship
@@ -757,7 +757,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 						},
 					}),
 					n(103325, {	-- Uthrok
-						["coord"] = { 58.9, 50.1, 739 },
+						["coord"] = { 58.9, 50.1, TRUESHOT_LODGE },
 						["g"] = {
 							i(11304, {	-- Fine Bow
 								["isLimited"] = true,
@@ -773,7 +773,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 
 -- #if AFTER LEGION
 -- These quests trigger after specific events occur in the zone.
-_.HiddenQuestTriggers = {
+root("HiddenQuestTriggers", {
 	q(40619),	-- Hunter Order Hall - Survival Chosen
 	q(40620),	-- Hunter Order Hall - Marksmanship Chosen
 	q(40621),	-- Hunter Order Hall - Beast Mastery Chosen first
@@ -798,12 +798,5 @@ _.HiddenQuestTriggers = {
 	q(44643),	-- Hunter Order Hall - Tracking Quest: 7.0 Class Hall - Hunter - Pacing Mission 1 (JAP)
 	q(44644),	-- Hunter Order Hall - Tracking Quest: 7.0 Class Hall - Hunter - Pacing Mission 3a (JAP)
 	q(44702),	-- Hunter Order Hall - Tracking Quest (triggered after Death Hunter Moorgoth / Dark Ranger Velonara stories)
-};
-
--- These quests never made it in.
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-
-	}),
 });
 -- #endif

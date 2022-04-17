@@ -11,6 +11,7 @@ i(183190);	-- Oublion Cipher
 i(183726);	-- Gratitude of the Liberated
 i(181796);	-- Emergency Supplies Key
 i(190172);	-- Title Reward: Gauntlet Runner
+i(184412);	-- Title Reward: Spirestalker
 
 i(174969);	-- Alpaca Saddlebag (Vulpera Backpack)
 

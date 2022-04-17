@@ -121,14 +121,3 @@ root("Zones", m(SHADOWLANDS, {
 		}),
 	}),
 }));
-
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	tier(SL_TIER, {
-		n(WEEKLY_HOLIDAYS, {
-			i(184316),	-- Cache of Nathrian Treasures
-			i(184317),	-- Cache of Nathrian Treasures
-			i(186530),	-- Cache of Sanctum Treasures
-			i(186529),	-- Cache of Sanctum Treasures
-		}),
-	}),
-}));

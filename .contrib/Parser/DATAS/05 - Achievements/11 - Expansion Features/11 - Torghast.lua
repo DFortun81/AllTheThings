@@ -219,23 +219,3 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES, {
 	--	}),
 	}),
 }));
-
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	tier(SL_TIER, {
-		n(ACHIEVEMENTS, {
-			ach(15282),	-- Torghast Tracking 9.2 - Layer 13 Unlocked - Account [DNT]
-			ach(15283),	-- Torghast Tracking 9.2 - Layer 14 Unlocked - Account [DNT]
-			ach(15284),	-- Torghast Tracking 9.2 - Layer 15 Unlocked - Account [DNT]
-			ach(15285),	-- Torghast Tracking 9.2 - Layer 16 Unlocked - Account [DNT]
-			ach(15286),	-- Torghast Tracking 9.2 - Layer 13 Unlocked - Character [DNT]
-			ach(15287),	-- Torghast Tracking 9.2 - Layer 14 Unlocked - Character [DNT]
-			ach(15288),	-- Torghast Tracking 9.2 - Layer 15 Unlocked - Character [DNT]
-			ach(15289),	-- Torghast Tracking 9.2 - Layer 16 Unlocked - Character [DNT]
-			ach(15414),	-- Torghast Tracking 9.2 - Boss Rush Unlocked - Character [DNT]
-			ach(15412),	-- Torghast Tracking 9.2 - Boss Rush Unlocked - Account [DNT]
-			ach(15415),	-- Torghast Tracking 9.2 - Boss Rush Plus Unlocked - Character [DNT]
-			ach(15413),	-- Torghast Tracking 9.2 - Boss Rush Plus Unlocked - Account [DNT]
-			ach(15503),	-- 9.2 Tracking - Legendary Crafting - Unity Learned
-		}),
-	}),
-}));
