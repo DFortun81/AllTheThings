@@ -7,6 +7,23 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 		cl(HUNTER, {
 			["maps"] = { TRUESHOT_LODGE },
 			["g"] = bubbleDown({ ["classes"] = { HUNTER } }, {
+				n(ARTIFACTS, {
+					cl(HUNTER, BEAST_MASTERY, {
+						i(139555, {	-- Designs of the Grand Architect
+							artifact(918),	-- Titanstrike
+						}),
+					}),
+					cl(HUNTER, MARKSMANSHIP, {
+						i(139556, {	-- Syriel Crescentfall's Notes: Ravenguard
+							artifact(224),	-- Thas'dorah, Legacy of the Windrunners
+						}),
+					}),
+					cl(HUNTER, SURVIVAL, {
+						i(139557, {	-- Last Breath of the Forest
+							artifact(473),	-- Talonclaw
+						}),
+					}),
+				}),
 				n(FLIGHT_PATHS, {
 					fp(1760, {	-- Trueshot Lodge, Highmountain
 						["coord"] = { 36.0, 27.8, TRUESHOT_LODGE },
