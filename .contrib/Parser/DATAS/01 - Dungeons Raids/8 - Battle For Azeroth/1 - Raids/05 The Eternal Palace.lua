@@ -1006,6 +1006,7 @@ _.Instances = { tier(BFA_TIER, {
 root("HiddenQuestTriggers", tier(BFA_TIER, {
 	inst(1179, {	-- The Eternal Palace
 		q(56948),	-- creating rank 1 essence from Aqueous Reliquaries
+		q(56525),	-- Killing heroic Azshara
 	}),
 }));
 
