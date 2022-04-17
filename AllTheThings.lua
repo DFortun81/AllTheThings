@@ -3373,7 +3373,7 @@ ResolveSymbolicLink = function(o)
 				local field = sym[2];
 				local cache;
 				for i=3,#sym do
-					cache = app.SearchForField(field, sym[i]);
+					cache = app.CleanSourceIgnoredGroups(app.SearchForField(field, sym[i]));
 					if cache then
 						for _,s in ipairs(cache) do
 							if s == o or (s.hash and s.hash == o.hash) then
@@ -3414,7 +3414,7 @@ ResolveSymbolicLink = function(o)
 			elseif cmd == "fill" then
 				-- Instruction to fill with identical content cached elsewhere for this group (no symlinks)
 				if o.key and o[o.key] then
-					local cache = app.SearchForField(o.key, o[o.key]);
+					local cache = app.CleanSourceIgnoredGroups(app.SearchForField(o.key, o[o.key]));
 					if cache then
 						for _,s in ipairs(cache) do
 							ArrayAppend(searchResults, s.g);
