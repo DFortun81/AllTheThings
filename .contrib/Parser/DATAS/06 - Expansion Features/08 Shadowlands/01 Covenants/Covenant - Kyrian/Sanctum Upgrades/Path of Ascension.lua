@@ -190,8 +190,14 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 								crit(9),	-- Athanos
 								crit(10),	-- Azaruux
 							}),
-							ach(14852),	-- The Hoot of the Issue
-							ach(14887),	-- To the Moon
+							ach(14502),	-- Pursuing Loyalty
+							ach(14852, {	-- The Hoot of the Issue
+								crit(1),	-- Defeat Alderyn and Myn'ir in a Trial of Loyalty as Mikanikos
+								crit(2),	-- Defeat Splinterbark Nightmare in a Trial of Loyalty as Mikanikos
+							}),
+							ach(14887, {	-- To the Moon
+								["description"] = "Requires the Path of Ascension building. Some people needed 50+ tries for this achievement, others needed 500+. There is no guaranteed way known. You need to /wave at Athanos while he knocks you off with any ability.",
+							}),
 						}),
 						n(BLUEPRINTS, {
 							["description"] = "Blueprints teach Dactylis recipes that allow you to craft gear for your Aspirants to use in the Path of Ascension battles.",

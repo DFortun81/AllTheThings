@@ -8,7 +8,6 @@ _.Instances = { tier(CATA_TIER, {
 		["sharedLockout"] = 1,
 		["lvl"] = 85,
 		["mapID"] = 282,
-		["maps"] = { 774 },	-- Tol Barad (scenario version of Baradin Hold for Warlock "An Eye for a Scepter" artifact questline)
 		["coord"] = { 46.1, 47.9, 244 },
 		["g"] = {
 			e(139, {	-- Argaloth

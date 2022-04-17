@@ -10,60 +10,82 @@ _.ExpansionFeatures =
 		["lvl"] = 80,
 		["g"] = {
 			n(ACHIEVEMENTS, {	-- non-pvp map
-				ach(5718, {	-- Just Another Day in Tol Barad (A)
-					["collectible"] = false,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						crit(1),	-- Captain P. Harris
-						crit(2),	-- Rattling Their Cages
-						crit(3),	-- Boosting Morale
-						crit(4),	-- Shark Tank
-						crit(5),	-- Claiming The Keep
-						crit(6),	-- Leave No Weapon Behind
-						crit(7),	-- The Forgotten
-						crit(8),	-- Salvaging the Remains
-						crit(9),	-- First Lieutenant Connor
-						crit(10),	-- Ghostbuster
-						crit(11),	-- Cannonball!
-						crit(12),	-- Taking the Overlook Back
-						crit(13),	-- Not the Friendliest Town
-						crit(14),	-- Teach A Man To Fish... Or Steal.
-						crit(15),	-- Thinning The Brood
-						crit(16),	-- A Sticky Task
-						crit(17),	-- Magnets, How Do They Work?
-						crit(18),	-- Finish The Job
-						crit(19),	-- Watch Out For Splinters!
-						crit(20),	-- WANTED: Foreman Wellson
-						crit(21),	-- Bombs Away!
-					},
-				}),
-				ach(5719, {	-- Just Another Day in Tol Barad (H)
-					["collectible"] = false,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						crit(1),	-- Captain P. Harris
-						crit(2),	-- Rattling Their Cages
-						crit(3),	-- Boosting Morale
-						crit(4),	-- Shark Tank
-						crit(5),	-- Claiming The Keep
-						crit(6),	-- Leave No Weapon Behind
-						crit(7),	-- The Forgotten
-						crit(8),	-- Salvaging the Remains
-						crit(9),	-- First Lieutenant Connor
-						crit(10),	-- Ghostbuster
-						crit(11),	-- Cannonball!
-						crit(12),	-- Taking the Overlook Back
-						crit(13),	-- Not the Friendliest Town
-						crit(14),	-- Teach A Man To Fish... Or Steal.
-						crit(15),	-- Thinning The Brood
-						crit(16),	-- A Sticky Task
-						crit(17),	-- Magnets, How Do They Work?
-						crit(18),	-- Finish The Job
-						crit(19),	-- Watch Out For Splinters!
-						crit(20),	-- WANTED: Foreman Wellson
-						crit(21),	-- Bombs Away!
-					},
-				}),
+				-- Non-Pvp portions of the achievement
+				a(ach(5718, {	-- Just Another Day in Tol Barad (A)
+					crit(1),	-- Captain P. Harris
+					crit(2),	-- Rattling Their Cages
+					crit(3),	-- Boosting Morale
+					crit(4),	-- Shark Tank
+					crit(5),	-- Claiming The Keep
+					crit(6),	-- Leave No Weapon Behind
+					crit(7),	-- The Forgotten
+					crit(8),	-- Salvaging the Remains
+					crit(9),	-- First Lieutenant Connor
+					crit(10),	-- Ghostbuster
+					crit(11),	-- Cannonball!
+					crit(12),	-- Taking the Overlook Back
+					crit(13),	-- Not the Friendliest Town
+					crit(14),	-- Teach A Man To Fish... Or Steal.
+					crit(15),	-- Thinning The Brood
+					crit(16),	-- A Sticky Task
+					crit(17),	-- Magnets, How Do They Work?
+					crit(18),	-- Finish The Job
+					crit(19),	-- Watch Out For Splinters!
+					crit(20),	-- WANTED: Foreman Wellson
+					crit(21),	-- Bombs Away!
+				})),
+				h(ach(5719, {	-- Just Another Day in Tol Barad (H)
+					crit(1),	-- Captain P. Harris
+					crit(2),	-- Rattling Their Cages
+					crit(3),	-- Boosting Morale
+					crit(4),	-- Shark Tank
+					crit(5),	-- Claiming The Keep
+					crit(6),	-- Leave No Weapon Behind
+					crit(7),	-- The Forgotten
+					crit(8),	-- Salvaging the Remains
+					crit(9),	-- First Lieutenant Connor
+					crit(10),	-- Ghostbuster
+					crit(11),	-- Cannonball!
+					crit(12),	-- Taking the Overlook Back
+					crit(13),	-- Not the Friendliest Town
+					crit(14),	-- Teach A Man To Fish... Or Steal.
+					crit(15),	-- Thinning The Brood
+					crit(16),	-- A Sticky Task
+					crit(17),	-- Magnets, How Do They Work?
+					crit(18),	-- Finish The Job
+					crit(19),	-- Watch Out For Splinters!
+					crit(20),	-- WANTED: Foreman Wellson
+					crit(21),	-- Bombs Away!
+				})),
+				-- These criteria for the acheivements will merge into the above achievements, but we want to show them in the PvP version of the Map as well
+				a(ach(5718, sharedData({["maps"] = { 244 }},{	-- Just Another Day in Tol Barad (A)
+					crit(22),	-- Clearing the Depths
+					crit(23),	-- The Imprisoned Archmage
+					crit(24),	-- Learning From The Past
+					crit(25),	-- D-Block
+					crit(26),	-- Svarnos
+					crit(27),	-- Cursed Shackles
+					crit(28),	-- Prison Revolt
+					crit(29),	-- The Warden
+					crit(30),	-- Food From Below
+					crit(31),	-- A Huge Problem
+					crit(32),	-- Swamp Bait
+					crit(33),	-- The Leftovers
+				}))),
+				h(ach(5719, sharedData({["maps"] = { 244 }},{	-- Just Another Day in Tol Barad (H)
+					crit(22),	-- Clearing the Depths
+					crit(23),	-- The Imprisoned Archmage
+					crit(24),	-- Learning From The Past
+					crit(25),	-- D-Block
+					crit(26),	-- Svarnos
+					crit(27),	-- Cursed Shackles
+					crit(28),	-- Prison Revolt
+					crit(29),	-- The Warden
+					crit(30),	-- Food From Below
+					crit(31),	-- A Huge Problem
+					crit(32),	-- Swamp Bait
+					crit(33),	-- The Leftovers
+				}))),
 			}),
 			petbattle(filter(BATTLE_PETS, {
 				p(410),	-- Wharf Rat
@@ -603,78 +625,41 @@ _.ExpansionFeatures =
 				}),
 			}),
 			n(ZONE_DROPS, {
-				n(47676, {	-- Baradin Fox
-					i(64403),  -- Fox Kit Pet
+				i(64403, {  -- Fox Kit Pet
+					["crs"] = { 47676 },	-- Baradin Fox
 				}),
 			}),
 			m(244, {	-- Tol Barad
 				["description"] = "Tol Barad is a world PvP zone very similar to Wintergrasp. A battle starts on even intervals of time, and the winner of the match gains access to the Baradin Hold raid, as well as a number of special daily quests that grant reputation and currency. In addition to this, both winner and loser gain access to the standard quests in the zone.",
 				["icon"] = "Interface\\Icons\\achievement_bg_winwsg",
-				["maps"] = { 773 },	-- Tol Barad (used in "An Eye for a Scepter" Warlock artifact scenario)
 				["g"] = {
 					pvp(n(ACHIEVEMENTS, {	-- pvp map
-						ach(5718, {	-- Just Another Day in Tol Barad (A)
-							["collectible"] = false,
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								crit(22),	-- Clearing the Depths
-								crit(23),	-- The Imprisoned Archmage
-								crit(24),	-- Learning From The Past
-								crit(25),	-- D-Block
-								crit(26),	-- Svarnos
-								crit(27),	-- Cursed Shackles
-								crit(28),	-- Prison Revolt
-								crit(29),	-- The Warden
-								crit(30),	-- Food From Below
-								crit(31),	-- A Huge Problem
-								crit(32),	-- Swamp Bait
-								crit(33),	-- The Leftovers
-							},
-						}),
-						ach(5719, {	-- Just Another Day in Tol Barad (H)
-							["collectible"] = false,
-							["races"] = HORDE_ONLY,
-							["g"] = {
-								crit(22),	-- Clearing the Depths
-								crit(23),	-- The Imprisoned Archmage
-								crit(24),	-- Learning From The Past
-								crit(25),	-- D-Block
-								crit(26),	-- Svarnos
-								crit(27),	-- Cursed Shackles
-								crit(28),	-- Prison Revolt
-								crit(29),	-- The Warden
-								crit(30),	-- Food From Below
-								crit(31),	-- A Huge Problem
-								crit(32),	-- Swamp Bait
-								crit(33),	-- The Leftovers
-							},
-						}),
-						ach(5489, {	-- Master of Tol Barad (A)
-							["collectible"] = false,
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								ach(5417, {	-- Tol Barad Veteran
-									["races"] = ALLIANCE_ONLY,
-								}),
-								ach(5415),	-- Tower Plower
-								ach(5488),	-- Towers of Power
-								ach(5487),	-- Tol Barad Saboteur
-								ach(5486),	-- Tol Barad All-Star
-							},
-						}),
-						ach(5490, {	-- Master of Tol Barad (H)
-							["collectible"] = false,
-							["races"] = HORDE_ONLY,
-							["g"] = {
-								ach(5418, {	-- Tol Barad Veteran
-									["races"] = HORDE_ONLY,
-								}),
-								ach(5415),	-- Tower Plower
-								ach(5488),	-- Towers of Power
-								ach(5487),	-- Tol Barad Saboteur
-								ach(5486),	-- Tol Barad All-Star
-							},
-						}),
+						a(ach(5489,	{ -- Master of Tol Barad (A)
+							["sym"] = {{"select","achievementID",
+								5417,	-- Tol Barad Veteran
+								5415,	-- Tower Plower
+								5488,	-- Towers of Power
+								5487,	-- Tol Barad Saboteur
+								5486,	-- Tol Barad All-Star
+								5416,	-- Pit Lord Argaloth
+							}},
+						})),
+						h(ach(5490,	{ -- Master of Tol Barad (H)
+							["sym"] = {{"select","achievementID",
+								5418,	-- Tol Barad Veteran
+								5415,	-- Tower Plower
+								5488,	-- Towers of Power
+								5487,	-- Tol Barad Saboteur
+								5486,	-- Tol Barad All-Star
+								5416,	-- Pit Lord Argaloth
+							}},
+						})),
+						ach(5486),	-- Tol Barad All-Star
+						ach(5487),	-- Tol Barad Saboteur
+						a(ach(5417)),	-- Tol Barad Veteran
+						h(ach(5418)), -- Tol Barad Veteran
+						ach(5488),	-- Towers of Power
+						ach(5415),	-- Tower Plower
 					})),
 					pvp(n(QUESTS, {
 						q(28122, {	-- A Huge Problem
