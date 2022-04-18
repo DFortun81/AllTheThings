@@ -859,7 +859,6 @@ root("HiddenQuestTriggers", {
 		-- NYI VERSIONS OF QUESTS WHICH ARE COMPLETED TOGETHER WITH IMPLEMENTED VERSION OF THESE QUESTS
 		-- TEMPORARY SOLUTION AS HQT FOR NOW
 		q(9749),	-- They're Alive! Maybe... - completed with quest 9670
-
 		q(10815),	-- The Journal of Val'zareq: Portends of War - completed with quest 10793
 		q(14411),	-- The Wilds of Feralas - completed with quest 14410 & 26589
 		q(14414),	-- The Wilds of Feralas - completed with quest 14410 & 26589
@@ -910,6 +909,7 @@ root("HiddenQuestTriggers", {
 		q(31877),	-- The Inkmasters of the Arboretum - completed with quest 31876
 		q(32105),	-- Pristine Monument Ledger - completed with quest 31805
 		q(32107),	-- Flying Tiger Gourami - completed with quest 31443
+		q(32125),	-- Don't Try So Hard - DEPRECATED - completed with quest 32235
 		q(32196),	-- A Kind of Magic - DEPRECATED - completed with quest 32143
 		q(32341, { ["_drop"] = { "g" }, }), -- Demonstrate Your Power - completed with quest 32340
 		q(32516),	-- The Bloodletter - completed with quest 32495 & 32530
