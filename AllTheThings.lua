@@ -18038,6 +18038,8 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				header.races = nil;
 				header.r = nil;
 				header.c = nil;
+				header.nmc = nil;
+				header.nmr = nil;
 				return header;
 			else
 				return { g = { group }, ["sort"] = true, ["collectible"] = false, };
