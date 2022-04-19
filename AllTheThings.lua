@@ -4639,7 +4639,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						local field, id;
 						for _,v in ipairs(tooltipSourceFields) do
 							if not field then
-								id = RecursiveParentField(group, v);
+								id = RecursiveParentField(group, v, true);
 								-- print("check",v,id)
 								if id then field = v; end
 							end
@@ -13493,12 +13493,14 @@ app.RecursiveUnobtainableFilter = function(group)
 	end
 	return false;
 end
-app.RecursiveFirstParentWithField = function(group, field)
+-- Returns the first encountered group tracing upwards in parent hierarchy which has a value for the provided field.
+-- Specify 'followSource' to prioritize the Source Parent of a group over the direct Parent
+app.RecursiveFirstParentWithField = function(group, field, followSource)
 	if group then
 		if group[field] then
 			return group[field];
 		else
-			return app.RecursiveFirstParentWithField(group.parent, field);
+			return app.RecursiveFirstParentWithField(followSource and group.sourceParent or group.parent, field);
 		end
 	end
 end
