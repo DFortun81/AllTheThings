@@ -3770,63 +3770,6 @@ local function BuildContainsInfo(item, entries, indent, layer)
 		end
 	end
 end
--- ItemID's which should be skipped when filling purchases with certain levels of 'skippability'
-app.SkipPurchases = {
-	[-1] = 0,	-- Whether to skip certain cost items
-	[137642] = 2,	-- Mark of Honor
-	[21100] = 1,	-- Coin of Ancestry
-	[23247] = 1,	-- Burning Blossom
-	[49927] = 1,	-- Love Token
-}
--- Allows for toggling whether the SkipPurchases should be used or not
-app.SetSkipPurchases = function(level)
-	-- print("SkipPurchases exclusion",level)
-	app.SkipPurchases[-1] = level;
-end
--- Fills & returns a group with its 'cost' references, along with all sub-groups recursively if specified
--- This should only be used on a cloned group so the source group is not contaminated
--- The 'cost' of the group will be removed afterward so as to not double the tooltip info for the item
-local function FillPurchases(group, depth)
-	-- default to 2 levels of filling, i.e. 0) Raid Essence -> 1) Tier Token -> 2) Item
-	depth = depth or 2;
-	-- if app.DEBUG_PRINT then print("FillPurchases?",group.hash,depth) end
-	if depth < 1 then return; end
-	-- do not fill purchases on certain items, can skip the skip though based on a level
-	local itemID = group.itemID;
-	local reqSkipLevel = itemID and app.SkipPurchases[itemID];
-	if reqSkipLevel then
-		local curSkipLevel = app.SkipPurchases[-1];
-		if curSkipLevel and curSkipLevel < reqSkipLevel then return; end;
-	end
-	-- do not fill 'saved' groups (unless they are actual Maps or Instances, or a Difficulty header. Also 'saved' Items usually means tied to a questID directly)
-	-- or groups directly under saved groups unless in Acct or Debug mode
-	if not app.MODE_DEBUG_OR_ACCOUNT and not (group.instanceID or group.mapID or group.difficultyID or itemID) then
-		if group.saved then return; end
-		local rawParent = rawget(group, "parent");
-		if rawParent and rawParent.saved then return; end
-	end
-
-	local collectibles = group.costCollectibles or (group.collectibleAsCost and group.costCollectibles);
-	-- app.PrintDebug("FillPurchases",group.hash,collectibles and #collectibles);
-	if collectibles and #collectibles > 0 then
-		-- Nest new copies of the cost collectible objects of this group under itself
-		local usedToBuy = app.CreateNPC(-2, { ["text"] = L["CURRENCY_FOR"] } );
-		NestObject(group, usedToBuy, nil, 1);
-		PriorityNestObjects(usedToBuy, collectibles, true, app.RecursiveGroupRequirementsFilter);
-		-- app.PrintDebug("Filled",collectibles and #collectibles,"under",group.hash,"as",#usedToBuy.g,"unique groups");
-		-- reduce the depth by one since a cost has been filled
-		depth = depth - 1;
-		-- mark this group as no-longer collectible as a cost since its collectible contents have been filled under itself
-		group.collectibleAsCost = false;
-	end
-	-- Fill Purchases of sub-groups
-	if group.g then
-		for _,s in ipairs(group.g) do
-			FillPurchases(s, depth);
-		end
-	end
-	return group;
-end
 -- Fields on groups which can be utilized in tooltips to show additional Source location info for that group (by order of priority)
 app.TooltipSourceFields = {
 	"professionID",
@@ -3845,8 +3788,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	local topLevelSearch;
 	if not app.InitialCachedSearch then
 		-- app.PrintDebug("TopLevelSearch",paramA,paramB,...)
-		wipe(app.BuildCrafted_IncludedItems);
-		wipe(app.ExpandSubGroups_IncludedItems);
 		app.InitialCachedSearch = search;
 		topLevelSearch = true;
 	end
@@ -4511,28 +4452,10 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 		-- Resolve Cost, but not if the search itself was skipped (Mark of Honor)
 		if method ~= app.EmptyFunction then
-			-- app.DEBUG_PRINT = group.key .. ":" .. group[group.key];
-
-			-- Append any crafted things using this group
-			app.BuildCrafted(group);
-
-			-- Fill Purchases of this Thing
-			-- print("Fill Purchases")
-			FillPurchases(group);
-			-- app.PrintGroup(group)
-
-			-- Expand any things requiring this group
-			-- TODO: is this necessary anymore? can't think of a situation to properly test it
-			-- it causes weird nesting results for ToV Ensembles due to non-modID items
-			-- app.ExpandSubGroups(group);
-
 			-- Append currency info to any orphan currency groups
 			app.BuildCurrencies(group);
-
-			-- print("Resolve Root",group.key,group[group.key])
-			-- Resolve symbolic links for the group
-			FillSymLinks(group, true);
-			-- app.DEBUG_PRINT = nil;
+			-- Fill up the group
+			app.FillGroups(group);
 		end
 
 		-- Only need to build/update groups from the top level
@@ -4783,150 +4706,183 @@ app.ItemCanBeBoughtWithCurrencyCount = function(targetItemID, currencyItemID, co
 	end
 	return 0;
 end
-app.BuildCrafted_IncludedItems = {};
--- Appends sub-groups into the item group based on what the item is used to craft (via ReagentCache)
-app.BuildCrafted = function(item)
-	local itemID = item.itemID;
+-- Auto-Expansion logic
+(function()
+local included = {};
+local knownSkills;
+-- ItemID's which should be skipped when filling purchases with certain levels of 'skippability'
+app.SkipPurchases = {
+	[-1] = 0,	-- Whether to skip certain cost items
+	[137642] = 2,	-- Mark of Honor
+	[21100] = 1,	-- Coin of Ancestry
+	[23247] = 1,	-- Burning Blossom
+	[49927] = 1,	-- Love Token
+}
+-- Allows for toggling whether the SkipPurchases should be used or not
+app.SetSkipPurchases = function(level)
+	-- print("SkipPurchases exclusion",level)
+	app.SkipPurchases[-1] = level;
+end
+-- Determines searches required for costs using this group
+local function DeterminePurchaseGroups(group)
+	-- do not fill purchases on certain items, can skip the skip though based on a level
+	local itemID = group.itemID;
+	local reqSkipLevel = itemID and app.SkipPurchases[itemID];
+	if reqSkipLevel then
+		local curSkipLevel = app.SkipPurchases[-1];
+		if curSkipLevel and curSkipLevel < reqSkipLevel then return; end;
+	end
+	-- do not fill 'saved' groups (unless they are actual Maps or Instances, or a Difficulty header. Also 'saved' Items usually means tied to a questID directly)
+	-- or groups directly under saved groups unless in Acct or Debug mode
+	if not app.MODE_DEBUG_OR_ACCOUNT and not (group.instanceID or group.mapID or group.difficultyID or itemID) then
+		if group.saved then return; end
+		local rawParent = rawget(group, "parent");
+		if rawParent and rawParent.saved then return; end
+	end
+
+	local collectibles = group.costCollectibles or (group.collectibleAsCost and group.costCollectibles);
+	if collectibles and #collectibles > 0 then
+		local groups = {};
+		local clone;
+		for _,o in ipairs(collectibles) do
+			if not included[o.hash] then
+				clone = CreateObject(o);
+				-- this logic shows the previous 'currency' icon next to Things which are nested as a cost... maybe too cluttered
+				-- clone.indicatorIcon = "Interface_Vendor";
+				tinsert(groups, clone);
+			end
+		end
+		-- app.PrintDebug("DeterminePurchaseGroups",group.hash,groups and #groups);
+		return groups;
+	end
+end
+local function DetermineCraftedGroups(group)
+	local itemID = group.itemID;
 	if not itemID then return; end
-	-- track the starting item
-	app.BuildCrafted_IncludedItems[itemID] = true;
-	-- print("marked",itemID)
 	local reagentCache = app.GetDataSubMember("Reagents", itemID);
-	if reagentCache then
-		-- print("BuildCrafted Reagent",itemID)
-		-- check if the item is BoP and needs skill filtering for current character, or debug mode
-		local filterSkill = not app.MODE_DEBUG and (app.IsBoP(item) or select(14, GetItemInfo(itemID)) == 1);
+	if not reagentCache then return; end
 
-		local craftableItemIDs = {};
-		-- item is BoP
-		if filterSkill then
-			-- If needing to filter by skill due to BoP reagent, then check via recipe cache instead of by crafted item
-			local knownSkills = app.GetTradeSkillCache();
-			-- If the reagent itself is BOP, then only show things you can make.
-			-- find recipe(s) which creates this item
-			for recipeID,info in pairs(reagentCache[1]) do
-				local craftedItemID = info[1];
-				-- print(itemID,"x",info[2],"=>",craftedItemID,"via",recipeID);
-				-- TODO: review how this can be nil
-				if craftedItemID and not craftableItemIDs[craftedItemID] and not app.BuildCrafted_IncludedItems[craftedItemID] then
-					-- print("recipeID",recipeID);
-					local searchRecipes = app.SearchForField("spellID", recipeID);
-					if searchRecipes and #searchRecipes > 0 then
-						local recipe = searchRecipes[1];
-						local skillID = GetRelativeValue(recipe, "skillID");
-						-- print(recipeID,"requires",skillID);
+	-- check if the item is BoP and needs skill filtering for current character, or debug mode
+	local filterSkill = not app.MODE_DEBUG and (app.IsBoP(group) or select(14, GetItemInfo(itemID)) == 1);
 
-						-- ensure this character can craft the recipe
-						if skillID then
-							if knownSkills and knownSkills[skillID] then
-								craftableItemIDs[craftedItemID] = true;
-							end
-						else
-						-- recipe without any skill requirement? weird...
+	local craftableItemIDs = {};
+	-- item is BoP
+	if filterSkill then
+		local craftedItemID, searchRecipes, recipe, skillID;
+		-- If needing to filter by skill due to BoP reagent, then check via recipe cache instead of by crafted item
+		-- If the reagent itself is BOP, then only show things you can make.
+		-- find recipe(s) which creates this item
+		for recipeID,info in pairs(reagentCache[1]) do
+			craftedItemID = info[1];
+			-- print(itemID,"x",info[2],"=>",craftedItemID,"via",recipeID);
+			-- TODO: review how this can be nil
+			if craftedItemID and not craftableItemIDs[craftedItemID] and not included[craftedItemID] then
+				-- print("recipeID",recipeID);
+				searchRecipes = app.SearchForField("spellID", recipeID);
+				if searchRecipes and #searchRecipes > 0 then
+					recipe = searchRecipes[1];
+					skillID = GetRelativeValue(recipe, "skillID");
+					-- print(recipeID,"requires",skillID);
+
+					-- ensure this character can craft the recipe
+					if skillID then
+						if knownSkills and knownSkills[skillID] then
 							craftableItemIDs[craftedItemID] = true;
 						end
+					else
+					-- recipe without any skill requirement? weird...
+						craftableItemIDs[craftedItemID] = true;
 					end
-				end
-			end
-		-- item is BoE
-		else
-			-- Can otherwise simply iterate over the set of crafted items and add them
-			for craftedItemID,count in pairs(reagentCache[2]) do
-				if craftedItemID then
-					craftableItemIDs[craftedItemID] = true;
 				end
 			end
 		end
-		-- Now that all craftable items have been collected, pop their search results into the sub-group of the Item
-		-- This will include the craftable items of those items as well if any
-		local search;
-		local basicItemIDs = {};
-		for craftedItemID,_ in pairs(craftableItemIDs) do
-			-- Each item has potential to add a crafted item which is already listed in the set of craftable items, so have to check again
-			if not app.BuildCrafted_IncludedItems[craftedItemID] then
-				-- sub-crafted reagents are processed first
-				if app.GetDataSubMember("Reagents", craftedItemID) then
-					-- print("reagentItem",craftedItemID)
-					search = GetCachedSearchResults("itemID:" .. tostring(craftedItemID), app.SearchForField, "itemID", craftedItemID);
-					if search then
-						-- dont replicate any sub-groups in lower-level crafts
-						-- probably don't need to recursively do this...
-						if search.g then
-							for _,sub in pairs(search.g) do
-								if sub.itemID then
-									app.BuildCrafted_IncludedItems[sub.itemID] = true;
-								end
-							end
-						end
-						-- crafted Items without any further nesting should be listed first
-						NestObject(item, search, nil, not search.g and 1 or nil);
-					end
-				else
-					basicItemIDs[craftedItemID] = true;
-				end
-			end
-		end
-		-- Now process the craftable reagents so we don't insert duplicate groups
-		for basicItemID,_ in pairs(basicItemIDs) do
-			-- Each item has potential to add a crafted item which is already listed in the set of craftable items, so have to check again
-			if not app.BuildCrafted_IncludedItems[basicItemID] then
-				-- print("basicItem",basicItemID)
-				search = GetCachedSearchResults("itemID:" .. tostring(basicItemID), app.SearchForField, "itemID", basicItemID);
-				if search then
-					-- dont replicate any sub-groups in lower-level crafts
-					-- probably don't need to recursively do this...
-					if search.g then
-						for _,sub in pairs(search.g) do
-							if sub.itemID then
-								app.BuildCrafted_IncludedItems[sub.itemID] = true;
-							end
-						end
-					end
-					-- crafted Items without any further nesting should be listed first
-					NestObject(item, search, nil, not search.g and 1 or nil);
-				end
+	-- item is BoE
+	else
+		-- Can otherwise simply iterate over the set of crafted items and add them
+		for craftedItemID,count in pairs(reagentCache[2]) do
+			if craftedItemID then
+				craftableItemIDs[craftedItemID] = true;
 			end
 		end
 	end
-end
-app.ExpandSubGroups_IncludedItems = {};
--- Appends sub-groups into the item group based on what is required to have this item (cost, source sub-group)
-app.ExpandSubGroups = function(item)
-	local itemID = item.modItemID or item.itemID;
-	if not itemID or itemID < 1 or not item.g then return; end
 
-	-- print("ExpandSubGroups",itemID);
-	if not app.ExpandSubGroups_IncludedItems[itemID] then
-		-- track the starting item
-		app.ExpandSubGroups_IncludedItems[itemID] = true;
-		local count, modItemID, clone = #item.g;
-		-- only loop thru existing items in case somehow more show up
-		for i=1,count do
-			-- only expand sub-items
-			local sub = item.g[i];
-			if sub.itemID
-				and (not sub.filterID or sub.filterID ~= 109)	-- do not expand heirloom items
-			then
-				modItemID = GetGroupItemIDWithModID(sub);
-				-- print("Search sub",modItemID)
-				-- find a reference to the item in the DB and add it to the group
-				clone = GetCachedSearchResults("itemID:" .. tostring(modItemID), app.SearchForField, "itemID", modItemID)
-				if clone then
-					if not clone.g then
-						clone.total = nil;
-						clone.progress = nil;
-					end
-
-					-- merge the expanded group into the table of expanded groups
-					-- if MergeObject continues to require clearing the sub-g group, then just use tinsert i guess
-					-- print("Merge expanded",modItemID)
-					-- app.PrintGroup(clone);
-					NestObject(item, clone);
-				end
+	local groups = {};
+	local search;
+	for craftedItemID,_ in pairs(craftableItemIDs) do
+		if not included[craftedItemID] then
+			-- Searches for a filter-matched crafted Item
+			search = app.SearchForObject("itemID",craftedItemID);
+			if search then
+				search = CreateObject(search);
 			end
+			-- could do logic here to tack on the profession's spellID icon
+			tinsert(groups, search or app.CreateItem(craftedItemID));
+		end
+	end
+	-- app.PrintDebug("DetermineCraftedGroups",group.hash,groups and #groups);
+	return groups;
+end
+local function DetermineSymlinkGroups(group, depth)
+	if group.sym then
+		local groups = ResolveSymbolicLink(group);
+		-- make sure this group doesn't waste time getting resolved again somehow
+		group.sym = app.EmptyTable;
+		-- app.PrintDebug("DetermineSymlinkGroups",group.hash,groups and #groups);
+		return groups;
+	end
+end
+local function FillGroupsRecursive(group, depth)
+	local groups;
+	-- Determine Cost groups
+	groups = app.ArrayAppend(groups, DeterminePurchaseGroups(group));
+
+	-- Determine Crafted groups
+	groups = app.ArrayAppend(groups, DetermineCraftedGroups(group));
+
+	-- Determine Symlink groups
+	groups = app.ArrayAppend(groups, DetermineSymlinkGroups(group));
+
+	-- app.PrintDebug("MergeResults",group.hash,groups and #groups)
+	-- Adding the groups normally based on available-source priority
+	PriorityNestObjects(group, groups, nil, app.RecursiveGroupRequirementsFilter);
+	-- mark this group as no-longer collectible as a cost since its collectible contents have been filled under itself
+	group.collectibleAsCost = false;
+
+	if group.g then
+		-- app.PrintDebug(".g",group.hash,#group.g)
+		depth = (depth or 0) + 1;
+		-- Prevent repeated nesting of anything already nested
+		for _,o in ipairs(group.g) do
+			included[o.hash] = true;
+			included[o.itemID or 0] = true;
+		end
+		-- Then nest anything further
+		for _,o in ipairs(group.g) do
+			FillGroupsRecursive(o, depth);
 		end
 	end
 end
+-- Appends sub-groups into the item group based on what is required to have this item (cost, source sub-group, reagents, symlinks)
+app.FillGroups = function(group)
+	-- app.PrintDebug("FillGroups",group.hash,group.__type)
+	-- Clear search history
+	included = {};
+	-- Get tradeskill cache
+	knownSkills = app.GetTradeSkillCache();
+
+	-- Fill the group with all nestable content
+	FillGroupsRecursive(group);
+
+	-- if app.DEBUG_PRINT then app.PrintTable(included) end
+
+	-- Sort the group finally by havign sub-groups
+	-- app.PrintDebug("Sort by Heirarchy")
+	app.Sort(group.g, app.SortDefaults.Hierarchy, true);
+
+	-- app.PrintDebug("FillGroups Complete",group.hash,group.__type)
+end
+end)();
+
 -- build a 'Cost' group which matches the "cost" tag of this group
 app.BuildCost = function(group)
 	-- Pop out the cost objects into their own sub-groups for accessibility
@@ -14340,17 +14296,9 @@ function app:CreateMiniListForGroup(group)
 
 		-- being a search result means it has already received certain processing
 		if not group.isBaseSearchResult then
-			-- Fill any purchasable things for the sub-groups
-			-- if group.g then
-			-- 	for _,sub in ipairs(group.g) do
 			app.SetSkipPurchases(2);
-			FillPurchases(group);
+			app.FillGroups(group);
 			app.SetSkipPurchases(0);
-			-- 	end
-			-- end
-			-- Merge any symbolic linked data into the sub-groups
-			-- print("resolve non-search popout root",group.key, group.key and group[group.key])
-			FillSymLinks(group, true);
 		end
 		-- This logic allows for nested searches of groups within a popout to be returned as the root search which resets the parent
 		-- if not group.isBaseSearchResult then
@@ -18259,6 +18207,11 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					or self.data.classID and app.BaseCharacterClass
 					or self.data.achID and app.BaseMapWithAchievementID or app.BaseMap);
 
+				-- Fill up the groups that need to be filled!
+				app.DisableSort = 1;
+				app.FillGroups(self.data);
+				app.DisableSort = nil;
+
 				-- sort top level by name if not in an instance
 				if not GetRelativeValue(self.data, "instanceID") then
 					app.SortGroup(self.data, "name");
@@ -18266,16 +18219,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				-- and conditionally sort the entire list (sort groups which contain 'mapped' content)
 				app.SortGroup(self.data, "name", nil, true, "sort");
 
-				-- Expand all symlinks in the minilist for clarity
-				FillSymLinks(self.data, true);
-				-- Fill purchasable things under any currency from this zone
-				-- TODO: this is really weird in Dalaran with ICC tier pieces...
-				FillPurchases(self.data);
-
-				-- Check to see completion...
-				-- print("build groups");
 				BuildGroups(self.data, self.data.g);
-				-- print("update groups");
 
 				local expanded;
 				-- if enabled, minimize rows based on difficulty
@@ -20634,12 +20578,6 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				NestObjects(self.data, temp, true);
 				-- Build the heirarchy
 				BuildGroups(self.data, self.data.g);
-				-- Nest purchases if treating currencies as containers
-				-- if showCurrencies then
-				-- 	FillPurchases(self.data);
-				-- end
-				-- Fill Symlinks in the list
-				FillSymLinks(self.data, true);
 				-- Force Update Callback
 				Callback(self.Update, self, true);
 			end
