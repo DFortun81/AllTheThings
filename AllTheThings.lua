@@ -417,11 +417,30 @@ local defaultValueComparison = function(a,b)
 	end
 	return a < b;
 end
+local defaultHierarchyComparison = function(a,b)
+	-- If either object doesn't exist
+	if a then
+		if not b then
+			return true;
+		end
+	elseif b then
+		return false;
+	else
+		-- neither a or b exists, equality returns false
+		return false;
+	end
+	local acomp, bcomp;
+	acomp = a.g and #a.g or 0;
+	bcomp = b.g and #b.g or 0;
+	return acomp < bcomp;
+end
 app.SortDefaults = {
 	["Global"] = defaultComparison,
 	["Text"] = defaultTextComparison,
 	["Name"] = defaultNameComparison,
 	["Value"] = defaultValueComparison,
+	-- Sorts objects first by whether they do not have sub-groups [.g] defined
+	["Hierarchy"] = defaultHierarchyComparison,
 };
 -- local defaultStringComparison
 local function Sort(t, compare, nested)
@@ -438,6 +457,7 @@ end
 -- Safely-sorts a table using a provided comparison function and whether to propogate to nested groups
 -- Wrapping in a pcall since sometimes the sorted values are able to change while being within the sort method. This causes the 'invalid sort order function' error
 app.Sort = function(t, compare, nested)
+	if app.DisableSort then return; end
 	pcall(Sort, t, compare, nested);
 end
 local sortByNameSafely = function(a, b)
@@ -559,8 +579,8 @@ app.TableConcat = function(tbl, field, def, sep, i, j)
 end
 -- Allows efficiently appending the content of multiple arrays (in sequence) onto the end of the provided array, or new empty array
 app.ArrayAppend = function(a1, ...)
-	a1 = a1 or {};
 	if ... then
+		a1 = a1 or {};
 		local i, select, a = #a1 + 1, select;
 		for n=1,select("#", ...) do
 			a = select(n, ...);
@@ -2631,7 +2651,7 @@ NestObject,
 -- ex. MergeObjects(group, group2, newCreate)
 MergeObjects,
 -- Nests multiple Objects under another Object, only creating the 'g' group if necessary
--- ex. NestObjects(parent, group, newCreate)
+-- ex. NestObjects(parent, groups, newCreate)
 NestObjects,
 -- Nests multiple Objects under another Object using an optional set of functions to determine priority on the adding of objects, only creating the 'g' group if necessary
 -- ex. PriorityNestObjects(parent, groups, newCreate, function1, function2, ...)
@@ -2836,7 +2856,7 @@ PriorityNestObjects = function(p, g, newCreate, ...)
 			pBuckets[i] = {};
 		end
 		-- check each object
-		for i,o in ipairs(g) do
+		for _,o in ipairs(g) do
 			-- check each priority function
 			for i,pFunc in ipairs(pFuncs) do
 				-- if the function matches, put the object in the bucket
@@ -2920,13 +2940,13 @@ local ResolveSymbolicLink;
 -- Fills & returns a group with its symlink references, along with all sub-groups recursively if specified
 -- This should only be used on a cloned group so the source group is not contaminated
 local function FillSymLinks(group, recursive)
-	-- if group.key == "itemID" and group.itemID == 138536 then app.DEBUG_PRINT = group; end
 	if recursive and group.g then
 		for _,s in ipairs(group.g) do
 			FillSymLinks(s, recursive);
 		end
 	end
 	if group.sym then
+		-- app.PrintDebug("FillSymLinks",group.hash)
 		NestObjects(group, ResolveSymbolicLink(group));
 		-- make sure this group doesn't waste time getting resolved again somehow
 		group.sym = app.EmptyTable;
@@ -2934,6 +2954,7 @@ local function FillSymLinks(group, recursive)
 	-- if app.DEBUG_PRINT == group then app.DEBUG_PRINT = nil; end
 	return group;
 end
+
 (function()
 local subroutines;
 subroutines = {
@@ -3840,7 +3861,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	if paramB then paramB = tonumber(paramB);
 	else rawlink = paramA; end
 	local group, a, b = method(paramA, paramB, ...);
-	-- print("Raw Search",search,a,b,group and #group, ...);
+	-- app.PrintDebug("Raw Search",search,a,b,group and #group, ...);
 	if not group then group = {}; end
 	if a then paramA = a; end
 	if b then paramB = b; end
@@ -4343,7 +4364,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		-- Find or Create the root group for the search results, and capture the results which need to be nested instead
 		local root;
 		local nested = {};
-		-- print("Find Root for",paramA,paramB);
+		-- app.PrintDebug("Find Root for",paramA,paramB);
 		-- check for Item groups in a special way to account for extra ID's
 		if paramA == "itemID" then
 			local refinedMatches = app.GroupBestMatchingItems(group, paramB);
@@ -4418,7 +4439,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			end
 		end
 		if not root then
-			-- print("Create New Root",paramA,paramB)
+			-- app.PrintDebug("Create New Root",paramA,paramB)
 			root = CreateObject({ [paramA] = paramB });
 		end
 		-- If rawLink exists, import it into the root
@@ -4718,7 +4739,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		group.isBaseSearchResult = true;
 		app.InitialCachedSearch = nil;
 
-		-- print("TopLevelSearch",working and "WORKING" or "DONE",search,group.text or (group.key and group.key .. group[group.key]),group)
+		-- app.PrintDebug("TopLevelSearch",working and "WORKING" or "DONE",search,group.text or (group.key and group.key .. group[group.key]),group)
 
 		-- Track if the result is not finished processing
 		group.working = working;
@@ -5063,18 +5084,18 @@ end
 end)();
 -- check for orphaned currency groups and fill them with things purchased by that currency
 app.BuildCurrencies = function(group)
-	-- print("BuildCurrencies",group.key,group[group.key])
+	-- app.PrintDebug("BuildCurrencies",group.key,group[group.key])
 	if group and group.g and #group.g > 0 then
 		for i=1,#group.g do
 			local o = group.g[i];
 			if o then
 				-- this is an empty currency group
-				-- print("check for currency",o.key,o[o.key])
+				-- app.PrintDebug("check for currency",o.key,o[o.key])
 				if o.key and o.key == "currencyID" and (not o.g or #o.g == 0) then
-					-- print("empty currency group",o.currencyID);
+					-- app.PrintDebug("empty currency group",o.currencyID);
 					local currencyGroup = GetCachedSearchResults("currencyID:" .. tostring(o.currencyID), app.SearchForField, "currencyID", o.currencyID);
 					if currencyGroup then
-						-- print("found currency",currencyGroup.currencyID,#currencyGroup.g);
+						-- app.PrintDebug("found currency",currencyGroup.currencyID,#currencyGroup.g);
 						group.g[i] = currencyGroup;
 					end
 				end
@@ -5082,23 +5103,6 @@ app.BuildCurrencies = function(group)
 		end
 	end
 end
--- app.NestForOtherCost = function(group, type, typeID)
--- 	-- only need to nest other cost, not just 1 cost
--- 	if not group or not group.cost or #group.cost < 2 then return group; end
--- 	for _,costTable in ipairs(group.cost) do
--- 		if #costTable > 1 and (costTable[1] ~= type or costTable[2] ~= typeID) then
--- 			-- cost which isn't the existing type/typeID cost
--- 			-- create a group as this cost
--- 			if type == "i" then
--- 				return app.CreateItem(costTable[2], { ["g"] = group });
--- 			elseif type == "c" then
--- 				return app.CreateCurrencyClass(costTable[2], { ["g"] = group });
--- 			end
--- 		end
--- 	end
--- 	-- not sure how this could happen, data error i suppose
--- 	return group;
--- end
 -- check if the group has a cost which includes the given parameters
 app.HasCost = function(group, idType, id)
 	if group.cost and type(group.cost) == "table" then
@@ -5841,32 +5845,22 @@ local function AttachTooltipRawSearchResults(self, lineNumber, group)
 		-- If there was info text generated for this search result, then display that first.
 		if group.tooltipInfo and #group.tooltipInfo > 0 then
 			local left, right;
-			local name = self:GetName() .. "TextLeft";
 			for _,entry in ipairs(group.tooltipInfo) do
-				local found = false;
 				left = entry.left;
-				for i=self:NumLines(),1,-1 do
-					if _G[name..i]:GetText() == left then
-						found = true;
-						break;
-					end
-				end
-				if not found then
-					right = entry.right;
-					if right then
-						self:AddDoubleLine(left or " ", right);
-					elseif entry.r then
-						if entry.wrap then
-							self:AddLine(left, entry.r / 255, entry.g / 255, entry.b / 255, 1);
-						else
-							self:AddLine(left, entry.r / 255, entry.g / 255, entry.b / 255);
-						end
+				right = entry.right;
+				if right then
+					self:AddDoubleLine(left or " ", right);
+				elseif entry.r then
+					if entry.wrap then
+						self:AddLine(left, entry.r / 255, entry.g / 255, entry.b / 255, 1);
 					else
-						if entry.wrap then
-							self:AddLine(left, nil, nil, nil, 1);
-						else
-							self:AddLine(left);
-						end
+						self:AddLine(left, entry.r / 255, entry.g / 255, entry.b / 255);
+					end
+				else
+					if entry.wrap then
+						self:AddLine(left, nil, nil, nil, 1);
+					else
+						self:AddLine(left);
 					end
 				end
 			end
