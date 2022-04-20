@@ -450,7 +450,7 @@ _.ExpansionFeatures =
 							["classes"] = { SHAMAN },
 							["provider"] = { "n", 112299 },	-- Bath'rah the Windwatcher
 							["coord"] = { 31.1, 35.1, 726 },
-							["description"] = "Only available if you you have the |cFFFFD700Spirit Walk|r order hall upgrade.",
+							["description"] = "Only available if you have the |cFFFFD700Spirit Walk|r order hall upgrade.",
 						}),
 						q(45724, {	-- Snakes and Stones
 							["classes"] = { SHAMAN },
@@ -496,6 +496,7 @@ _.ExpansionFeatures =
 							["classes"] = { SHAMAN },
 							["lvl"] = 110,
 							["provider"] = { "n", 109829 },	-- Alexor
+							["description"] = "Only available if you have the |cFFFFD700Rise!|r order hall upgrade.",
 						}),
 						q(41934, {	-- The Brand of Damnation
 							["classes"] = { SHAMAN },
