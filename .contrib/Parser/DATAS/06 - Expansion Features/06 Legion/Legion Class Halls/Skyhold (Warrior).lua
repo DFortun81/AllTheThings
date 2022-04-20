@@ -650,6 +650,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 				n(VENDORS, {
 					n(112392, {	-- Quartermaster Durnolf
 						["coord"] = { 56.1, 27.0, SKYHOLD },
+						["sym"] = {{"select","itemID",143727}},	-- Champion's Salute (TOY!)
 						["g"] = {
 							i(140946, {	-- Battlelord's Armor Kit
 								["cost"] = { { "c", 1220, 2000 }, },	-- 2,000x Order Resources
@@ -683,10 +684,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							}),
 							i(139688, {	-- Battlelord's Wristguards
 								["cost"] = 5000000,	-- 500g
-							}),
-							i(143727, {	-- Champion's Salute (TOY!)
-								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
-								["timeline"] = { "added 7.2.0" },
 							}),
 							i(140537),	-- Skyhold Bulwark
 							i(140559),	-- Skyhold Claymore

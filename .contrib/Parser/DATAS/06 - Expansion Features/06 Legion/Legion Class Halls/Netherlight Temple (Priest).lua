@@ -716,12 +716,10 @@ _.ExpansionFeatures =
 					n(VENDORS, {
 						n(112401, {	-- Meridelle Lightspark <Logistics>
 							["coord"] = { 39.0, 24.6, 702 },
+							["sym"] = {{"select","itemID",143727}},	-- Champion's Salute (TOY!)
 							["g"] = {
 								i(139762, {	-- Bracers of the High Priest
 									["cost"] = 5000000,	-- 500g
-								}),
-								i(143727, {	-- Champion's Salute (TOY!)
-									["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
 								}),
 								i(139761, {	-- Cord of the High Priest
 									["cost"] = 5000000,	-- 500g

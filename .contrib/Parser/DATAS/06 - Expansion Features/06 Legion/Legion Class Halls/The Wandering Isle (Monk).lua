@@ -617,10 +617,8 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 				n(VENDORS, {
 					n(112338, {	-- Caydori Brightstar <Purveyor of Rare Goods>
 						["coord"] = { 50.3, 59.0, 709 },
+						["sym"] = {{"select","itemID",143727}},	-- Champion's Salute (TOY!)
 						["g"] = {
-							i(143727, {	-- Champion's Salute (TOY!)
-								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
-							}),
 							i(140543),	-- Fist of the Broken Temple
 							i(140940, {	-- Grandmaster's Armor Kit
 								["cost"] = { { "c", 1220, 2000 }, },	-- 2,000x Order Resources

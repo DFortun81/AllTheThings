@@ -356,6 +356,12 @@ root("ExpansionFeatures", {
 						i(152931),	-- Xenic Tincture
 					},
 				}),
+				n(VENDORS, {
+					i(143727, {	-- Champion's Salute (TOY!)
+						["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
+						["timeline"] = { "added 7.2.0" },
+					}),
+				}),
 			},
 		}),
 	}),

@@ -739,49 +739,49 @@ _.ExpansionFeatures =
 							},
 						}),
 						n(100196, {	-- Eadric the Pure <Quartermaster>
-							i(139697, {	-- Bindings of the Silver Hand
-								["cost"] = 5000000,	-- 500g
-							}),
-							i(140555),	-- Blade of the Silver Hand
-							i(139690, {	-- Breastplate of the Silver Hand
-								["cost"] = 5000000,	-- 500g
-							}),
-							i(140535),	-- Bulwark of the Silver hand
-							i(143727, {	-- Champion's Salute (TOY!)
-								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
-							}),
-							i(139693, {	-- Crown of the Silver Hand
-								["cost"] = 5000000,	-- 500g
-							}),
-							i(136801, {	-- Divine Tome: Contemplation
-								["spellID"] = 121183,	-- Contemplation
-							}),
-							i(139692, {	-- Gauntlets of the Silver Hand
-								["cost"] = 5000000,	-- 500g
-							}),
-							i(139696, {	-- Girdle of the Silver Hand
-								["cost"] = 5000000,	-- 500g
-							}),
-							i(140558),	-- Greatsword of the Silver Hand
-							i(140941, {	-- Highlord's Armor Kit
-								["cost"] = { { "c", 1220, 2000 }, },	-- 2,000x Order Resources
-							}),
-							i(140975, {	-- Highlord's Greater Armor Kit
-								["cost"] = { { "c", 1220, 4000 }, },	-- 4,000x Order Resources
-							}),
-							i(140974, {	-- Highlord's Lesser Armor Kit
-								["cost"] = { { "c", 1220, 500 }, },		-- 500x Order Resources
-							}),
-							i(139694, {	-- Legplates of the Silver Hand
-								["cost"] = 5000000,	-- 500g
-							}),
-							i(139691, {	-- Sabatons of the Silver Hand
-								["cost"] = 5000000,	-- 500g
-							}),
-							i(139695, {	-- Spaulders of the Silver Hand
-								["cost"] = 5000000,	-- 500g
-							}),
-							i(140547),	-- Warhammer of the Silver Hand
+							["sym"] = {{"select","itemID",143727}},	-- Champion's Salute (TOY!)
+							["g"] = {
+								i(139697, {	-- Bindings of the Silver Hand
+									["cost"] = 5000000,	-- 500g
+								}),
+								i(140555),	-- Blade of the Silver Hand
+								i(139690, {	-- Breastplate of the Silver Hand
+									["cost"] = 5000000,	-- 500g
+								}),
+								i(140535),	-- Bulwark of the Silver hand
+								i(139693, {	-- Crown of the Silver Hand
+									["cost"] = 5000000,	-- 500g
+								}),
+								i(136801, {	-- Divine Tome: Contemplation
+									["spellID"] = 121183,	-- Contemplation
+								}),
+								i(139692, {	-- Gauntlets of the Silver Hand
+									["cost"] = 5000000,	-- 500g
+								}),
+								i(139696, {	-- Girdle of the Silver Hand
+									["cost"] = 5000000,	-- 500g
+								}),
+								i(140558),	-- Greatsword of the Silver Hand
+								i(140941, {	-- Highlord's Armor Kit
+									["cost"] = { { "c", 1220, 2000 }, },	-- 2,000x Order Resources
+								}),
+								i(140975, {	-- Highlord's Greater Armor Kit
+									["cost"] = { { "c", 1220, 4000 }, },	-- 4,000x Order Resources
+								}),
+								i(140974, {	-- Highlord's Lesser Armor Kit
+									["cost"] = { { "c", 1220, 500 }, },		-- 500x Order Resources
+								}),
+								i(139694, {	-- Legplates of the Silver Hand
+									["cost"] = 5000000,	-- 500g
+								}),
+								i(139691, {	-- Sabatons of the Silver Hand
+									["cost"] = 5000000,	-- 500g
+								}),
+								i(139695, {	-- Spaulders of the Silver Hand
+									["cost"] = 5000000,	-- 500g
+								}),
+								i(140547),	-- Warhammer of the Silver Hand
+							},
 						}),
 						n(91190, {	-- Sister Elda <Keeper of the Ancient Tomes>
 							["description"] = "Your spec must be Retribution for her to respond to your books. Bring both of the books to her and she'll give you the completed book to use in the next part.",

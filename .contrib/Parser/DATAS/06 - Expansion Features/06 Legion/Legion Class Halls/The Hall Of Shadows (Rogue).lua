@@ -960,12 +960,10 @@ _.ExpansionFeatures =
 						}),
 						n(105986, {	-- Kelsey Steelspark <Quartermaster>
 							["coord"] = { 26.9, 36.9, 626 },
+							["sym"] = {{"select","itemID",143727}},	-- Champion's Salute (TOY!)
 							["g"] = {
 								i(139745, {	-- Belt of the Uncrowned
 									["cost"] = 5000000,	-- 500g
-								}),
-								i(143727, {	-- Champion's Salute (TOY!)
-									["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
 								}),
 								i(139739, {	-- Chestguard of the Uncrowned
 									["cost"] = 5000000,	-- 500g

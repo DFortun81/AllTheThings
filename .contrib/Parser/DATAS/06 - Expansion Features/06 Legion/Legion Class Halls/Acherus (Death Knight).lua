@@ -589,6 +589,7 @@ _.ExpansionFeatures =
 					n(VENDORS, {
 						n(93550, {	-- Quartermaster Ozorg
 							["coord"] = { 44.2, 37.5, 647 },
+							["sym"] = {{"select","itemID",143727}},	-- Champion's Salute (TOY!)
 							["g"] = {
 								i(34649),	-- Archerus Knight's Gauntlets
 								i(34651),	-- Archerus Knight's Girdle
@@ -605,9 +606,6 @@ _.ExpansionFeatures =
 								i(140538),	-- Broadaxe of the Ebon Blade
 								i(174485),	-- Burning Greatsword of the Ebon Blade
 								i(174662),	-- Burning Saber of the Ebon Blade
-								i(143727, {	-- Champion's Salute (TOY!)
-									["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
-								}),
 								i(34657),	-- Choker of Damnation
 								i(38147),	-- Corrupted Band
 								i(174486),	-- Crimson Greatsword of the Ebon Blade

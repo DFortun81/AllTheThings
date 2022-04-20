@@ -912,60 +912,60 @@ root("ExpansionFeatures", {
 					}),
 					n(VENDORS, {
 						n(112323, {	-- Amurra Thistledew <Proprietor>
-							i(139728, {	-- Amice of the Dreamgrove
-								["cost"] = 5000000,	-- 500g
-							}),
-							i(140937, {	-- Archdruid's Armor Kit
-								["cost"] = { { "c", 1220, 2000 }, },	-- 2,000x Order Resources
-							}),
-							i(140967, {	-- Archdruid's Greater Armor Kit
-								["cost"] = { { "c", 1220, 4000 }, },	-- 4,000x Order Resources
-							}),
-							i(140966, {	-- Archdruid's Lesser Armor Kit
-								["cost"] = { { "c", 1220, 500 }, },	-- 5,000x Order Resources
-							}),
-							i(139730, {	-- Bracers of the Dreamgrove
-								["cost"] = 5000000,	-- 500g
-							}),
-							i(143727, {	-- Champion's Salute (TOY!)
-								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
-							}),
-							i(139729, {	-- Cord of the Dreamgrove
-								["cost"] = 5000000,	-- 500g
-							}),
-							i(140540),	-- Dreamgrove Blade
-							i(140542),	-- Dreamgrove Spire
-							i(139725, {	-- Gloves of the Dreamgrove
-								["cost"] = 5000000,	-- 500g
-							}),
-							i(139726, {	-- Hood of the Dreamgrove
-								["cost"] = 5000000,	-- 500g
-							}),
-							i(139727, {	-- Leggings of the Dreamgrove
-								["cost"] = 5000000,	-- 500g
-							}),
-							i(140549),	-- Pillar of the Dreamgrove
-							i(139723, {	-- Robes of the Dreamgrove
-								["cost"] = 5000000,	-- 500g
-							}),
-							i(139724, {	-- Sandals of the Dreamgrove
-								["cost"] = 5000000,	-- 500g
-							}),
-							i(136795, {	-- Tome of the Wilds: Charm Woodland Creature
-								["spellID"] = 127757,	-- Charm Woodland Creature
-							}),
-							i(136794, {	-- Tome of the Wilds: Flap
-								["spellID"] = 164862,	-- Flap
-							}),
-							i(136789, {	-- Tome of the Wilds: Stag Form
-								["spellID"] = 210053,	-- Stag Form
-							}),
-							i(136790, {	-- Tome of the Wilds: Track Beasts
-								["spellID"] = 0,		-- Invalidate the Spell ID (this makes it uncollectible)
-							}),
-							i(136787, {	-- Tome of the Wilds: Treant Form
-								["spellID"] = 114282,	-- Treant Form
-							}),
+							["sym"] = {{"select","itemID",143727}},	-- Champion's Salute (TOY!)
+							["g"] = {
+								i(139728, {	-- Amice of the Dreamgrove
+									["cost"] = 5000000,	-- 500g
+								}),
+								i(140937, {	-- Archdruid's Armor Kit
+									["cost"] = { { "c", 1220, 2000 }, },	-- 2,000x Order Resources
+								}),
+								i(140967, {	-- Archdruid's Greater Armor Kit
+									["cost"] = { { "c", 1220, 4000 }, },	-- 4,000x Order Resources
+								}),
+								i(140966, {	-- Archdruid's Lesser Armor Kit
+									["cost"] = { { "c", 1220, 500 }, },	-- 5,000x Order Resources
+								}),
+								i(139730, {	-- Bracers of the Dreamgrove
+									["cost"] = 5000000,	-- 500g
+								}),
+								i(139729, {	-- Cord of the Dreamgrove
+									["cost"] = 5000000,	-- 500g
+								}),
+								i(140540),	-- Dreamgrove Blade
+								i(140542),	-- Dreamgrove Spire
+								i(139725, {	-- Gloves of the Dreamgrove
+									["cost"] = 5000000,	-- 500g
+								}),
+								i(139726, {	-- Hood of the Dreamgrove
+									["cost"] = 5000000,	-- 500g
+								}),
+								i(139727, {	-- Leggings of the Dreamgrove
+									["cost"] = 5000000,	-- 500g
+								}),
+								i(140549),	-- Pillar of the Dreamgrove
+								i(139723, {	-- Robes of the Dreamgrove
+									["cost"] = 5000000,	-- 500g
+								}),
+								i(139724, {	-- Sandals of the Dreamgrove
+									["cost"] = 5000000,	-- 500g
+								}),
+								i(136795, {	-- Tome of the Wilds: Charm Woodland Creature
+									["spellID"] = 127757,	-- Charm Woodland Creature
+								}),
+								i(136794, {	-- Tome of the Wilds: Flap
+									["spellID"] = 164862,	-- Flap
+								}),
+								i(136789, {	-- Tome of the Wilds: Stag Form
+									["spellID"] = 210053,	-- Stag Form
+								}),
+								i(136790, {	-- Tome of the Wilds: Track Beasts
+									["spellID"] = 0,		-- Invalidate the Spell ID (this makes it uncollectible)
+								}),
+								i(136787, {	-- Tome of the Wilds: Treant Form
+									["spellID"] = 114282,	-- Treant Form
+								}),
+							},
 						}),
 					}),
 					m(715, bubbleDown({["classes"] = { DRUID }},{	-- Emerald Dreamway

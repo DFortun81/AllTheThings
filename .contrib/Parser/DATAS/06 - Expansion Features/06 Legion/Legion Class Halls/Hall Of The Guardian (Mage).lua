@@ -885,43 +885,43 @@ _.ExpansionFeatures =
 					}),
 					n(VENDORS, {
 						n(112440, {	-- Jackson Watkins <Tirisgarde Quartermaster>
-							i(140939, {	-- Archmage's Armor Kit
-								["cost"] = { { "c", 1220, 2000 }, },	-- 2,000x Order Resources
-							}),
-							i(140550),	-- Archmage's Battle Staff
-							i(140971, {	-- Archmage's Greater Armor Kit
-								["cost"] = { { "c", 1220, 4000 }, },	-- 4,000x Order Resources
-							}),
-							i(140970, {	-- Archmage's Lesser Armor Kit
-								["cost"] = { { "c", 1220, 500 }, },		-- 500x Order Resources
-							}),
-							i(139747, {	-- Boots of Tirisgarde
-								["cost"] = 5000000,	-- 500g
-							}),
-							i(139754, {	-- Bracers of Tirisgarde
-								["cost"] = 5000000,	-- 500g
-							}),
-							i(143727, {	-- Champion's Salute (TOY!)
-								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
-							}),
-							i(139749, {	-- Cowl of Tirisgarde
-								["cost"] = 5000000,	-- 500g
-							}),
-							i(139753, {	-- Girdle of Tirisgarde
-								["cost"] = 5000000,	-- 500g
-							}),
-							i(139748, {	-- Gloves of Tirisgarde
-								["cost"] = 5000000,	-- 500g
-							}),
-							i(139750, {	-- Leggings of Tirisgarde
-								["cost"] = 5000000,	-- 500g
-							}),
-							i(139752, {	-- Mantle of Tirisgarde
-								["cost"] = 5000000,	-- 500g
-							}),
-							i(139751, {	-- Robes of Tirisgarde
-								["cost"] = 5000000,	-- 500g
-							}),
+							["sym"] = {{"select","itemID",143727}},	-- Champion's Salute (TOY!)
+							["g"] = {
+								i(140939, {	-- Archmage's Armor Kit
+									["cost"] = { { "c", 1220, 2000 }, },	-- 2,000x Order Resources
+								}),
+								i(140550),	-- Archmage's Battle Staff
+								i(140971, {	-- Archmage's Greater Armor Kit
+									["cost"] = { { "c", 1220, 4000 }, },	-- 4,000x Order Resources
+								}),
+								i(140970, {	-- Archmage's Lesser Armor Kit
+									["cost"] = { { "c", 1220, 500 }, },		-- 500x Order Resources
+								}),
+								i(139747, {	-- Boots of Tirisgarde
+									["cost"] = 5000000,	-- 500g
+								}),
+								i(139754, {	-- Bracers of Tirisgarde
+									["cost"] = 5000000,	-- 500g
+								}),
+								i(139749, {	-- Cowl of Tirisgarde
+									["cost"] = 5000000,	-- 500g
+								}),
+								i(139753, {	-- Girdle of Tirisgarde
+									["cost"] = 5000000,	-- 500g
+								}),
+								i(139748, {	-- Gloves of Tirisgarde
+									["cost"] = 5000000,	-- 500g
+								}),
+								i(139750, {	-- Leggings of Tirisgarde
+									["cost"] = 5000000,	-- 500g
+								}),
+								i(139752, {	-- Mantle of Tirisgarde
+									["cost"] = 5000000,	-- 500g
+								}),
+								i(139751, {	-- Robes of Tirisgarde
+									["cost"] = 5000000,	-- 500g
+								}),
+							},
 						}),
 						n(103169, {	-- Uthel'nay
 							["sourceQuest"] = 45354,	-- Dispersion of the Discs

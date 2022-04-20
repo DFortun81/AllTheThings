@@ -706,12 +706,10 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 					}),
 					n(103693, {	-- Outfitter Reynolds <Unseen Path>
 						["coord"] = { 44.6, 48.8, TRUESHOT_LODGE },
+						["sym"] = {{"select","itemID",143727}},	-- Champion's Salute (TOY!)
 						["g"] = {
 							i(139713, {	-- Belt of the Unseen Path
 								["cost"] = 5000000,	-- 500g
-							}),
-							i(143727, {	-- Champion's Salute (TOY!)
-								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
 							}),
 							i(139709, {	-- Grips of the Unseen Path
 								["cost"] = 5000000,	-- 500g
