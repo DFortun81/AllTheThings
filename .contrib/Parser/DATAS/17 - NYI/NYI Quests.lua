@@ -2438,7 +2438,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(62359, { ["name"] = "Shadowlands (51-59) E", }),	-- Shadowlands (51-59) E
 				q(62360, { ["name"] = "Shadowlands (51-59) E", }),	-- Shadowlands (51-59) E
 				q(63041, { ["name"] = "Short-Supply Reward", ["_drop"] = {"g"} }),	-- Short-Supply Reward
-				q(61524, { ["name"] = "The Ember Court", }),	-- The Ember Court
 				-- Quest from WoW.Tools
 				-- 9.0.2.35854
 				q(62815),	--

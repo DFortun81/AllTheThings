@@ -81,11 +81,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(142460),	-- Violet Seal of the Archmage
 					},
 				}),
-				--[[
-				q(40755, {	-- Hiding in the Stacks
-					["provider"] = { "n", 101547 },	--
-				}),
-]]--
 				q(44683, {	-- Holding the Lines
 					["provider"] = { "n", 114310 },	-- Archmage Khadgar
 					["lvl"] = 110,

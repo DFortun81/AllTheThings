@@ -614,6 +614,8 @@ _.Zones =
 					["maps"] = {
 						794,	-- Karazhan
 						795,	-- Karazhan
+						796,	-- Karazhan
+						797,	-- Karazhan
 					},
 					["groups"] = {
 						i(139905),	-- Gloves of thee Arcane Purge

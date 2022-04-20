@@ -118,6 +118,15 @@ root("Zones", m(SHADOWLANDS, {
 				pvp(petbattle(q(62639))),	-- The Very Best
 				q(62631),					-- The World Awaits
 			})),
+			-- Auto-accepted in various situations, so no coords/provider
+			n(QUESTS, sharedData({
+				["isWeekly"] = true,
+				["_drop"] = { "g" },	-- Drop Trash
+			}, {
+				-- #IF AFTER SHADOWLANDS
+				pvp(q(47148)),				-- Something Different
+				-- #ENDIF
+			})),
 		}),
 	}),
 }));

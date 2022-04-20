@@ -13,6 +13,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(187780, {	-- Enlightened Broker Supplies
 						i(190931),	-- Cape of the Regal Wanderer
 						i(190930),	-- Dark Shawl of the Enlightened
+						i(190935),	-- Distinguished Blade of Cartel Al
 						i(190929),	-- Ebony Protocloak
 						i(190234, {	-- Enlightened Portal Research
 							["questID"] = 65617,

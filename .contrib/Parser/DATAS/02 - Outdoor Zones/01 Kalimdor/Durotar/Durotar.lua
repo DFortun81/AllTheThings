@@ -1876,6 +1876,7 @@ root("Zones", m(KALIMDOR, {
 				q(25267, {	-- Message for Garrosh (Cata) / Vol'jin (WoD) / Saurfang (Legion) <-- Need more work
 					["coord"] = { 57.6, 9.6, DUROTAR },
 					["races"] = { GOBLIN },
+					-- noted as not necessary 2022-04-17
 					["sourceQuest"] = 25266,	-- Warchief's Emissary
 					["timeline"] = { "added 4.0.3.13277" },
 					["providers"] = {

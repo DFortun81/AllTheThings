@@ -250,6 +250,9 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 								}),
 							})),
 						}),
+						n(QUESTS, sharedData({["isWeekly"] = true,},{
+							q(61524),	-- The Ember Court
+						})),
 						-- Repeatable Event quests within Ember Court
 						n(QUESTS, sharedData({["isDaily"] = true,},{
 							q(63721, {	-- Lord Garridan's Egg

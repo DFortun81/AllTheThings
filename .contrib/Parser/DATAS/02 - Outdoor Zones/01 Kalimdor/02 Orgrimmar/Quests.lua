@@ -791,7 +791,13 @@ root("Zones", m(KALIMDOR, {
 			}),
 			q(28461, {	-- The Golem Lord's Creations
 				["sourceQuests"] = { 28297 },	-- Meet with Ormak Grimshot
-				["provider"] = { "n", 3352 },	-- Ormak Grimshot
+				["qgs"] = {
+				-- #IF BEFORE SHADOWLANDS
+					3352,	-- Ormak Grimshot
+				-- #ELSE
+					168551,	-- Tamanji
+				-- #ENDIF
+				},
 				["classes"] = { HUNTER },
 				["coord"] = { 63.8, 32.8, ORGRIMMAR },
 				["races"] = HORDE_ONLY,

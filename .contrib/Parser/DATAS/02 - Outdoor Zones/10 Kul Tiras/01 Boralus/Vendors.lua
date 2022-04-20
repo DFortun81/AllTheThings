@@ -2783,7 +2783,9 @@ _.Zones =
 				n(130399, {	-- Zooey Inksprocket <Inscription Trainer>
 					["coord"] = { 73.4, 6.3, BORALUS },
 					["g"] = {
-						i(168026),	-- Recipe Book: Sanguine Feather Quill of Lana'thel
+						i(168026, {	-- Recipe Book: Sanguine Feather Quill of Lana'thel
+							["f"] = MISC,
+						}),
 					},
 				}),
 			}),

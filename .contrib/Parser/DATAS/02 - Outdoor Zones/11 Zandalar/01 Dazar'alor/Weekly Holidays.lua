@@ -138,7 +138,11 @@ root("Zones", m(ZANDALAR, {
 				q(53035),					-- A Shrouded Path Through Time
 				q(54995),					-- A Savage Path Through Time
 				q(53037),					-- Emissary of War
+				-- #IF AFTER BFA
+				-- #IF BEFORE SHADOWLANDS
 				pvp(q(47148)),				-- Something Different
+				-- #ENDIF
+				-- #ENDIF
 				pvp(q(53039)),				-- The Arena Calls
 				pvp(petbattle(q(53038))),	-- The Very Best
 				q(53030),					-- The World Awaits

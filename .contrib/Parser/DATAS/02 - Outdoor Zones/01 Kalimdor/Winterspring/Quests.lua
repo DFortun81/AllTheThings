@@ -548,7 +548,7 @@ _.Zones =
 					["sourceQuest"] = 6603,	-- Trouble in Winterspring!
 				}),
 				q(28460, {	-- Threat of the Winterfall
-					["provider"] = { "n", 9598 },	-- Donova Snowden
+					["qg"] = 9298,	-- Donova Snowden
 					["coord"] = { 25.1, 58.4, WINTERSPRING },
 					["sourceQuests"] = {
 						28524,	-- Delivery for Donova
