@@ -4753,6 +4753,8 @@ local function DeterminePurchaseGroups(group)
 			end
 		end
 		-- app.PrintDebug("DeterminePurchaseGroups",group.hash,groups and #groups);
+		-- mark this group as no-longer collectible as a cost since its cost collectibles have been determined
+		group.collectibleAsCost = false;
 		return groups;
 	end
 end
@@ -4842,20 +4844,21 @@ local function FillGroupsRecursive(group, depth)
 	-- Determine Symlink groups
 	groups = app.ArrayAppend(groups, DetermineSymlinkGroups(group));
 
+	-- Prevent repeated nesting of anything dynamically nested
+	if groups then
+		for _,o in ipairs(groups) do
+			included[o.hash] = true;
+			included[o.itemID or 0] = true;
+		end
+	end
+
 	-- app.PrintDebug("MergeResults",group.hash,groups and #groups)
 	-- Adding the groups normally based on available-source priority
 	PriorityNestObjects(group, groups, nil, app.RecursiveGroupRequirementsFilter);
-	-- mark this group as no-longer collectible as a cost since its collectible contents have been filled under itself
-	group.collectibleAsCost = false;
 
 	if group.g then
 		-- app.PrintDebug(".g",group.hash,#group.g)
 		depth = (depth or 0) + 1;
-		-- Prevent repeated nesting of anything already nested
-		for _,o in ipairs(group.g) do
-			included[o.hash] = true;
-			included[o.itemID or 0] = true;
-		end
 		-- Then nest anything further
 		for _,o in ipairs(group.g) do
 			FillGroupsRecursive(o, depth);
