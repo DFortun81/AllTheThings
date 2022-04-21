@@ -1525,6 +1525,10 @@ local function GetProgressTextForRow(data)
 			(data.total - data.progress) == (costTotal - data.costProgress) then
 			return L["COST_ICON"];
 		end
+		-- groups which have been filled with cost collectibles should show the progress along with the icon
+		if data.collectibleAsCost == false then
+			return L["COST_ICON"] .. "  " .. GetProgressColorText(data.progress or 0, data.total);
+		end
 		return GetProgressColorText(data.progress or 0, data.total);
 	elseif data.collectible then
 		return GetCollectionIcon(data.collected);
@@ -1548,6 +1552,10 @@ local function GetProgressTextForTooltip(data)
 			data.total - data.progress > 0 and
 			(data.total - data.progress) == (costTotal - data.costProgress) then
 			return L["COST_TEXT"];
+		end
+		-- groups which have been filled with cost collectibles should show the progress along with the icon
+		if data.collectibleAsCost == false then
+			return L["COST_TEXT"] .. "  " .. GetProgressColorText(data.progress or 0, data.total);
 		end
 		if data.collectible or data.trackable then
 			return GetProgressColorText(data.progress or 0, data.total).. " "..(data.collectible and GetCollectionIcon(data.collected) or (data.trackable and GetCompletionIcon(data.saved)));
