@@ -529,6 +529,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["sourceQuest"] = 42520,	-- A Terrible Loss
 						["provider"] = { "n", 107351 },	-- Archmage Khadgar
 						["coord"] = { 71.7, 54.9, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
+						["maps"] = { 713 },	-- Eye of Azshara
 					}),
 					q(42940, {	-- When There's a Will, There's a Way
 						["sourceQuest"] = 42520,	-- A Terrible Loss
@@ -576,6 +577,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["sourceQuest"] = 43415,	--A Hero's Weapon
 						["provider"] = { "n", 118428 },	-- Injured Conjuror
 						["coord"] = { 80.9, 63.1, HALL_OF_THE_GUARDIAN },
+						["isBreadcrumb"] = true,
 						["timeline"] = { "added 7.1.5", "removed 7.2.0" },
 					}),
 					q(45998, {	-- Investigate the Broken Shore
@@ -589,7 +591,11 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["description"] = "Granted immediately upon return to the order hall.",
 						["sourceQuests"] = {
 							47137,	-- Champions of Legionfall
-							43415,	-- Investigate the Broken Shore
+							--#if AFTER 7.2.0
+							43415,	-- A Hero's Weapon
+							--#else
+							45998,	-- Investigate the Broken Shore
+							--#endif
 						},
 						["timeline"] = { "added 7.2.0" },
 					}),
@@ -737,7 +743,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							mount(229376),	-- Archmage's Prismatic Disc (MOUNT!)
 						},
 					})),
-					--]]
 					-- Side Quest Ari and Arcane Destroyer
 					q(42954, {	-- A Small Favor
 						["sourceQuest"] = 42222,	-- Empyrean Society Report
@@ -856,7 +861,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 				n(VENDORS, {
 					n(112440, {	-- Jackson Watkins <Tirisgarde Quartermaster>
 						["coord"] = { 45.6, 57.6, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
-						["sym"] = {{"select","itemID",143727}},    -- Champion's Salute (TOY!)
+						["sym"] = {{"select","itemID",143727}},	-- Champion's Salute (TOY!)
 						["g"] = {
 							i(140939, {	-- Archmage's Armor Kit
 								["cost"] = { { "c", 1220, 2000 }, },	-- 2,000x Order Resources
@@ -898,6 +903,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["sourceQuest"] = 45354,	-- Dispersion of the Discs
 						["g"] = {
 							i(147832, {	-- Magical Saucer (TOY!)
+								["sourceQuest"] = 45354,	-- Dispersion of the Discs
 								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
 								["timeline"] = { "added 7.2.0" },
 							}),

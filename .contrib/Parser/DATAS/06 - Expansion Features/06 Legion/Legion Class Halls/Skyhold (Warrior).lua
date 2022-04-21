@@ -333,12 +333,12 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["sourceQuest"] = 42204,	-- Jorhuttam
 						["provider"] = { "n", 96469 },	-- Odyn
 						["coord"] = { 58.3, 84.6, SKYHOLD },
-						["maps"] = { 706 },	-- Maw of Souls
+						["maps"] = { 706, 707, 708 },	-- Maw of Souls
 					}),
 					q(43604, {	-- Maw of Souls: Ymiron's Broken Blade
 						["sourceQuest"] = 43586,	-- Maw of Souls: Message to Helya
 						["provider"] = { "i", 139619 },	-- Ymiron's Broken Blade
-						["maps"] = { 706 },	-- Maw of Souls
+						["maps"] = { 706, 707, 708 },	-- Maw of Souls
 						["g"] = {
 							follower(712),	-- King Ymiron
 						},
@@ -347,7 +347,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["sourceQuest"] = 43586,	-- Maw of Souls: Message to Helya
 						["provider"] = { "n", 96469 },	-- Odyn
 						["coord"] = { 58.3, 84.6, SKYHOLD },
-						["maps"] = { 744, 746 },	-- Ulduar (Scenario Maps)
+						["maps"] = { 744, 746 },	-- Ulduar (Scenario Map)
 						["g"] = {
 							i(139688),	-- Battlelord's Bracers
 						},
@@ -386,6 +386,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						},
 						["provider"] = { "n", 96469 },	-- Odyn
 						["coord"] = { 58.3, 84.6, SKYHOLD },
+						["maps"] = { 751, 752, 753, 754, 755, 756 },	-- Black Rook Hold
 					}),
 					q(43577, {	-- Capturing the Gateway
 						["sourceQuest"] = 43506,	-- Black Rook Hold: Greater Power
@@ -440,7 +441,11 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					q(46173, {	-- Tactical Planning
 						["sourceQuests"] = {
 							47137,	-- Champions of Legionfall
+							--#if AFTER 7.2.0
+							43425,	-- A Hero's Weapon
+							--#else
 							45987,	-- Investigate the Broken Shore
+							--#endif
 						},
 						["provider"] = { "n", 96469 },	-- Odyn
 						["coord"] = { 58.3, 84.6, SKYHOLD },
@@ -685,7 +690,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 				n(VENDORS, {
 					n(112392, {	-- Quartermaster Durnolf
 						["coord"] = { 56.1, 27.0, SKYHOLD },
-						["sym"] = {{"select","itemID",143727}},    -- Champion's Salute (TOY!)
+						["sym"] = {{"select","itemID",143727}},	-- Champion's Salute (TOY!)
 						["g"] = {
 							i(140946, {	-- Battlelord's Armor Kit
 								["cost"] = { { "c", 1220, 2000 }, },	-- 2,000x Order Resources
