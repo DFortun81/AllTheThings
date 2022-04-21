@@ -3002,7 +3002,6 @@ q(43367),	-- Pixie Dust
 q(43405),	-- Da-Nel's Second Quest
 q(43416),	-- Treasure
 q(43439),	--
-q(43466),	-- Hidden History
 q(43482),	--
 q(43544),	--
 q(43579),	-- Looted DK Daily Mount

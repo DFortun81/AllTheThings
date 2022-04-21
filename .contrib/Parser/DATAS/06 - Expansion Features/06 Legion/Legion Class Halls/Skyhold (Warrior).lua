@@ -104,29 +104,70 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["coord"] = { 58.3, 84.6, SKYHOLD },
 						["provider"] = { "n", 96469 },	-- Odyn
 					}),
-					q(41105, {	-- The Sword of Kings
-						["description"] = "Pursue your artifact weapon for Arms.",
-						["provider"] = { "n", 96469 },	-- Odyn
-						["coord"] = { 58.3, 84.6, SKYHOLD },
-						["g"] = {
-							i(128910),	-- Strom'kar, the Warbreaker
-						},
+					cl(WARRIOR, ARMS, {
+						q(41105, {	-- The Sword of Kings
+							["sourceQuests"] = {
+								40579,	-- Weapons of Legend
+								43949,	-- More Weapons of Legend
+								44417,	-- One More Legend
+							},
+							["provider"] = { "n", 96469 },	-- Odyn
+							["coord"] = { 58.3, 84.6, SKYHOLD },
+							["g"] = {
+								i(128910, {	-- Strom'kar, the Warbreaker
+									artifact(295),	-- Strom'kar, the Warbreaker
+								}),
+							},
+						}),
 					}),
-					q(40043, {	-- The Hunter of Heroes
-						["description"] = "Pursue your artifact weapon for Fury.",
-						["provider"] = { "n", 96469 },	-- Odyn
-						["coord"] = { 58.3, 84.6, SKYHOLD },
-						["g"] = {
-							i(128908),	-- Warswords of the Valarjar
-						},
+					cl(WARRIOR, FURY, {
+						q(40043, {	-- The Hunter of Heroes
+							["sourceQuests"] = {
+								40579,	-- Weapons of Legend
+								43949,	-- More Weapons of Legend
+								44417,	-- One More Legend
+							},
+							["provider"] = { "n", 96469 },	-- Odyn
+							["coord"] = { 58.3, 84.6, SKYHOLD },
+							["g"] = {
+								i(128908, {	-- Warswords of the Valarjar [Main Hand]
+									artifact(296),	-- Warswords of the Valarjar
+								}),
+								i(134553, {	-- Warswords of the Valarjar [Off Hand]
+									artifact(296),	-- Warswords of the Valarjar
+								}),
+							},
+						}),
 					}),
-					q(39191, {	-- Legacy of the Icebreaker
-						["description"] = "Pursue your artifact weapon for Protection.",
-						["provider"] = { "n", 96469 },	-- Odyn
-						["coord"] = { 58.3, 84.6, SKYHOLD },
+					cl(WARRIOR, PROTECTION, {
+						q(39191, {	-- Legacy of the Icebreaker
+							["sourceQuests"] = {
+								40579,	-- Weapons of Legend
+								43949,	-- More Weapons of Legend
+								44417,	-- One More Legend
+							},
+							["provider"] = { "n", 96469 },	-- Odyn
+							["coord"] = { 58.3, 84.6, SKYHOLD },
+							["g"] = {
+								i(128288, {	-- Scaleshard
+									artifact(66),	-- Scaleshard
+								}),
+								i(128289, {	-- Scale of the Earth-Warder
+									artifact(66),	-- Scale of the Earth-Warder
+								}),
+							},
+						}),
+					}),
+					q(44255, {	-- Axe and You Shall Receive
+						["sourceQuests"] = {
+							41105,	-- The Sword of Kings
+							40043,	-- The Hunter of Heroes
+							39191,	-- Legacy of the Icebreaker
+						},
+						["provider"] = { "n", 112392 },	-- Quartermaster Durnolf
+						["coord"] = { 56.2, 27.0, SKYHOLD },
 						["g"] = {
-							i(128288),	-- Scaleshard
-							i(128289),	-- Scale of the Earth-Warder
+							i(139684),	-- Battlelord's Greathelm
 						},
 					}),
 					q(39530, {	-- The Forgening
@@ -395,11 +436,11 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["coord"] = { 59.7, 13.4, SKYHOLD },
 						["timeline"] = { "added 7.1.5", "removed 7.2.0" },
 					}),
-					-- 7.2 Campaign
+					-- 7.2.0
 					q(46173, {	-- Tactical Planning
 						["sourceQuests"] = {
 							47137,	-- Champions of Legionfall
-							43425,	-- A Hero's Weapon
+							45987,	-- Investigate the Broken Shore
 						},
 						["provider"] = { "n", 96469 },	-- Odyn
 						["coord"] = { 58.3, 84.6, SKYHOLD },
@@ -505,11 +546,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["coord"] = { 69.8, 34.7, BROKEN_SHORE },
 						["timeline"] = { "added 7.2.0" },
 					}),
-					q(46778, {	-- Further Advancement
-						["sourceQuest"] = 46267,	-- Return of the Battlelord
-						["provider"] = { "n", 100635 },	-- Skyseer Ghrent
-						["coord"] = { 59.7, 13.4, SKYHOLD },
-					}),
 					q(45876, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- Champion: Lord Darius Crowley
 						["sourceQuest"] = 46267,	-- Return of the Battlelord
 						["provider"] = { "n", 117480 },	-- Lord Darius Crowley
@@ -541,25 +577,12 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["sourceQuest"] = 46208,	-- A Godly Invitation
 						["provider"] = { "n", 96469 },	-- Odyn
 						["coord"] = { 58.3, 84.6, SKYHOLD },
+						["maps"] = { 829 },	-- Halls of Valor (Scenario Map)
 						["g"] = {
 							i(142232),	-- Battlelord's Bloodthirsty War Wyrm (MOUNT!)
 						},
 					})),
 					-- The End
-					q(44222, {	-- The Might of the Val'kyr
-						["sourceQuest"] = 42611,	--Einar the Runecaster
-						["provider"] = { "n", 111774 },	-- Matilda Skoptidottir
-						["coord"] = { 72.6, 30.8, SKYHOLD },
-						["timeline"] = { "added 7.0.3", "removed 8.0.1" },
-					}),
-					q(44255, {	-- Axe and You Shall Receive
-						["sourceQuest"] = 42204,	-- Jorhuttam
-						["provider"] = { "n", 112392 },	-- Quartermaster Durnolf
-						["coord"] = { 56.2, 27.0, SKYHOLD },
-						["g"] = {
-							i(139684),	-- Battlelord's Greathelm
-						},
-					}),
 					q(43888, {	-- Hitting the Books
 						["provider"] = { "n", 111741 },	-- Fjornson Stonecarver
 						["coord"] = { 45.1, 28.2, SKYHOLD },
@@ -576,6 +599,11 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["provider"] = { "n", 111741 },	-- Fjornson Stonecarver
 						["coord"] = { 45.1, 28.2, SKYHOLD },
 						["timeline"] = { "added 7.1.5", "removed 7.3.0" },
+					}),
+					q(46778, {	-- Further Advancement
+						["sourceQuest"] = 46267,	-- Return of the Battlelord
+						["provider"] = { "n", 100635 },	-- Skyseer Ghrent
+						["coord"] = { 59.7, 13.4, SKYHOLD },
 					}),
 					i(144436, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- Lost Legend of Odyn
 						["description"] = "This item can drop off of any Vrykul in the Broken Isles as a Warrior (any spec).",
@@ -625,6 +653,13 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					})),
 				}),
 				n(SPECIAL, {
+					gt(410, {	-- Bladestorm
+						q(44222, {	-- The Might of the Val'kyr
+							["provider"] = { "n", 111774 },	-- Matilda Skoptidottir
+							["coord"] = { 72.6, 30.8, SKYHOLD },
+							["timeline"] = { "added 7.0.3", "removed 8.0.1" },
+						}),
+					}),
 					gt(408, {	-- For Honor and Glory
 						o(252570, {	-- Skyhold Chest of Riches
 							["description"] = "\nThe chests spawn every 3 hours in the Arena of Glory, starting at 0:00 Realm Time or 02:00 Realm Time if Daylight Savings Time is active. You must research the 2nd tier order hall upgrade |cFFFFD700For Honor and Glory|r from Einar the Runecaster to see the chest. You can only loot it once per week.\n\nIt can contain the Fury Hidden Appearance items, however, you're better off gathering those items from their respective sources in the outdoor world due to the number of Warriors going for the toy. (IE: Do not open this chest if you already have the toy)",
@@ -650,7 +685,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 				n(VENDORS, {
 					n(112392, {	-- Quartermaster Durnolf
 						["coord"] = { 56.1, 27.0, SKYHOLD },
-						["sym"] = {{"select","itemID",143727}},	-- Champion's Salute (TOY!)
+						["sym"] = {{"select","itemID",143727}},    -- Champion's Salute (TOY!)
 						["g"] = {
 							i(140946, {	-- Battlelord's Armor Kit
 								["cost"] = { { "c", 1220, 2000 }, },	-- 2,000x Order Resources

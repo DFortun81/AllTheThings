@@ -17,10 +17,8 @@ _.Zones =
 				640,	-- Vault of Eyir
 				671,	-- The Cove of Nashal (used in introductory scenario)
 				694,	-- Helmouth Shallows
-				829,	-- Halls of Valor
 				865,	-- Stormheim (Legion Invasion)
 				866,	-- Stormheim (Legion Invasion)
-				877,	-- Fields of the Eternal Hunt
 			},
 		}),
 	}),
