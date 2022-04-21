@@ -594,7 +594,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				}),
 				q(4123, {	-- The Heart of the Mountain
 					["qg"] = 9536,	-- Maxwort Uberglint
-					["coord"] = { 65.2, 23.9, BADLANDS },
+					["coord"] = { 65.2, 23.9, BURNING_STEPPES },
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 50,
 					["groups"] = {
