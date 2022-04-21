@@ -19,8 +19,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			pet(3206, {	-- Emerald Scarabid
 				["cr"] = 182691,
 			}),
-			n(183286, {	-- Enraged Poultrid
+			n(183349, {	-- Agitated Poultrid
 				["description"] = "This npc can spawn around Zereth Mortis where Wild Poultrids are. Do /chicken to start a pet battle.",
+				["crs"] = { 183286 },	-- Enraged Poultrid
 				["coords"] = {
 					{ 44, 92, ZERETH_MORTIS },
 					{ 48, 81, ZERETH_MORTIS },
