@@ -66,6 +66,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2
 		["description"] = "Help us gather information of what is/isnt available via doing reports in ATT discord. Especially the alternative sets and if the pvp transmog is available somewhere else",
 		["coord"] = { 47.4, 88.6, ZERETH_MORTIS },
 		["modelScale"] = 3,
+		["sourceQuest"] = 64842,	-- Flora Frenzy (technically the console was interactible after completing this quest, possibly earlier)
 		["g"] = {
 			d(17, {	-- LFR
 				["description"] = "This is theorized to be available from LFR gear.",

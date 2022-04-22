@@ -4464,6 +4464,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			app.BuildCurrencies(group);
 			-- Fill up the group
 			app.FillGroups(group);
+			-- Sort by the heirarchy of the group
+			app.Sort(group.g, app.SortDefaults.Hierarchy, true);
 		end
 
 		-- Only need to build/update groups from the top level
@@ -4885,11 +4887,6 @@ app.FillGroups = function(group)
 	FillGroupsRecursive(group);
 
 	-- if app.DEBUG_PRINT then app.PrintTable(included) end
-
-	-- Sort the group finally by havign sub-groups
-	-- app.PrintDebug("Sort by Heirarchy")
-	app.Sort(group.g, app.SortDefaults.Hierarchy, true);
-
 	-- app.PrintDebug("FillGroups Complete",group.hash,group.__type)
 end
 end)();

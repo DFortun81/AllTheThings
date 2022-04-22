@@ -9,8 +9,23 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			i(190189),	-- Sandworn Relic
 			i(190336, {	-- Thrumming Powerstone
 				["description"] = "Disenchant might give lattices.",
+				["requireSkill"] = ENCHANTING,	-- likely only drops for enchanters?
 				["g"] = {
-					i(189153),	-- Unformed Lattice
+					-- i(187636),	-- Aurelid Lattice
+					-- i(187633),	-- Bufonid Lattice
+					-- i(187635),	-- Cervid Lattice
+					-- i(189146),	-- Geomental Lattice
+					-- i(189145),	-- Helicid Lattice
+					-- i(189147),	-- Leporid Lattice
+					-- i(190388),	-- Lupine Lattice
+					-- i(189149),	-- Proto Avian Lattice
+					-- i(189150),	-- Raptora Lattice
+					-- i(189151),	-- Scarabid Lattice
+					-- i(189152),	-- Tarachnid Lattice
+					i(189153),	-- Unformed Lattice	-- no comments on Wowhead about any other Type dropped specifically?
+					-- i(189154),	-- Vespoid Lattice
+					-- i(189155),	-- Viperid Lattice
+					-- i(189156),	-- Vombata Lattice
 				},
 			}),
 			--
