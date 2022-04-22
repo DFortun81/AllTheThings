@@ -5853,6 +5853,7 @@ local function AttachTooltipRawSearchResults(self, lineNumber, group)
 	end
 end
 local function AttachTooltipSearchResults(self, lineNumber, search, method, ...)
+	-- app.PrintDebug("AttachTooltipSearchResults",search,...)
 	app.SetSkipPurchases(1);
 	AttachTooltipRawSearchResults(self, lineNumber, GetCachedSearchResults(search, method, ...));
 	app.SetSkipPurchases(0);
@@ -6804,7 +6805,7 @@ local function AttachBattlePetTooltip(self, data, quantity, detail)
 	return true;
 end
 local function ClearTooltip(self)
-	-- print("Clear Tooltip");
+	-- app.PrintDebug("Clear Tooltip");
 	self.AllTheThingsProcessing = nil;
 	self.AttachComplete = nil;
 	self.MiscFieldsComplete = nil;
@@ -12818,6 +12819,9 @@ local fields = {
 			return name;
 		end
 	end,
+	["link"] = function(t)
+		return t.text;
+	end,
 	["title"] = function(t)
 		if t.titleIDs and app.MODE_DEBUG_OR_ACCOUNT then
 			if rawget(t, "_title") then return rawget(t, "_title") end
@@ -15307,7 +15311,7 @@ RowOnEnter = function (self)
 		GameTooltip.IsRefreshing = true;
 
 		if initialBuild then
-			-- print("RowOnEnter-Initial");
+			-- app.PrintDebug("RowOnEnter-Initial");
 			GameTooltipIcon.icon.Background:Hide();
 			GameTooltipIcon.icon.Border:Hide();
 			GameTooltipIcon:Hide();
@@ -15325,10 +15329,10 @@ RowOnEnter = function (self)
 				GameTooltipModel:SetPoint("TOPLEFT", GameTooltip, "TOPRIGHT", 0, 0);
 			end
 		else
-			-- print("RowOnEnter-IsRefreshing");
+			-- app.PrintDebug("RowOnEnter-IsRefreshing",GameTooltip.AttachComplete,GameTooltip.MiscFieldsComplete,GameTooltip:NumLines());
 			-- complete tooltip already exists and hasn't been cleared elsewhere, don' touch it
 			if GameTooltip.AttachComplete and GameTooltip.MiscFieldsComplete and GameTooltip:NumLines() > 0 then
-				-- print("RowOnEnter, complete");
+				-- app.PrintDebug("RowOnEnter, complete");
 				return;
 			end
 			-- need to clear the tooltip if it is being refreshed, setting the same link again will hide it instead
@@ -15338,15 +15342,23 @@ RowOnEnter = function (self)
 		-- track that an ATT row is causing the tooltip
 		app.ATTWindowTooltip = true;
 
+		local searched;
+
 		-- NOTE: Order matters, we "fall-through" certain values in order to pass this information to the item ID section.
 		if not reference.creatureID then
 			if reference.itemID then
 				local link = reference.link;
 				if link and link ~= "" then
+					-- app.PrintDebug("OnRowEnter-SetItemlink",link);
 					GameTooltip:SetHyperlink(link);
+					searched = true;
 				else
 					GameTooltip:AddLine("Item #" .. reference.itemID);
-					AttachTooltipSearchResults(GameTooltip, 1, "itemID:" .. reference.itemID, SearchForField, "itemID", reference.itemID);
+
+					-- TODO: determine the best search result first, and run 1 Search
+					-- then tack on additional data from the row
+					AttachTooltipSearchResults(GameTooltip, 1, "itemID:" .. (reference.modItemID or reference.itemID), SearchForField, "itemID", (reference.modItemID or reference.itemID));
+					searched = true;
 				--elseif reference.speciesID then
 					-- Do nothing.
 				--elseif not reference.artifactID then
@@ -15358,20 +15370,46 @@ RowOnEnter = function (self)
 				end
 			elseif reference.currencyID then
 				GameTooltip:SetCurrencyByID(reference.currencyID, 1);
+				searched = true;
 			elseif not (reference.encounterID or reference.followerID) then
 				local link = reference.link;
 				if link then
-					-- print("OnRowEnter-Setlink",link);
+					-- app.PrintDebug("OnRowEnter-Setlink",link);
 					pcall(GameTooltip.SetHyperlink, GameTooltip, link);
+					searched = true;
 				end
 			end
 		end
 
+		-- Determine search results to add
+		if not searched then
+			if reference.azeriteEssenceID then
+				AttachTooltipSearchResults(GameTooltip, 1, "azeriteEssenceID:" .. reference.azeriteEssenceID .. (reference.rank or 0), SearchForField, "azeriteEssenceID", reference.azeriteEssenceID, reference.rank);
+			elseif not reference.itemID and reference.speciesID then
+				AttachTooltipSearchResults(GameTooltip, 1, "speciesID:" .. reference.speciesID, SearchForField, "speciesID", reference.speciesID);
+			elseif reference.titleID then
+				AttachTooltipSearchResults(GameTooltip, 1, "titleID:" .. reference.titleID, SearchForField, "titleID", reference.titleID);
+			elseif reference.questID then
+				AttachTooltipSearchResults(GameTooltip, 1, "quest:"..reference.questID, SearchForField, "questID", reference.questID);
+			elseif reference.flightPathID then
+				AttachTooltipSearchResults(GameTooltip, 1, "fp:"..reference.flightPathID, SearchForField, "flightPathID", reference.flightPathID);
+			elseif reference.achievementID then
+				if reference.criteriaID then
+					-- AttachTooltipSearchResults(GameTooltip, 1, "achievementID:" .. reference.achievementID .. ":" .. reference.criteriaID, SearchForField, "achievementID", reference.achievementID, reference.criteriaID);
+				else
+					AttachTooltipSearchResults(GameTooltip, 1, "achievementID:" .. reference.achievementID, SearchForField, "achievementID", reference.achievementID);
+				end
+			else
+				-- app.PrintDebug("No Search results added",reference.hash)
+				GameTooltip.AttachComplete = true;
+			end
+		end
+
 		-- Miscellaneous fields
-		-- print("Adding misc fields");
+		-- app.PrintDebug("Adding misc fields");
 		if GameTooltip:NumLines() < 1 then
 			-- nothing in the tooltip yet, so it will simply be a basic one-pass tooltip
-			-- print("empty, one-pass");
+			-- app.PrintDebug("empty, one-pass");
 			GameTooltip.AttachComplete = true;
 			GameTooltip:AddLine(self.Label:GetText());
 		end
@@ -15439,7 +15477,6 @@ RowOnEnter = function (self)
 		if reference.s and not reference.link and app.Settings:GetTooltipSetting("sourceID") then GameTooltip:AddDoubleLine(L["SOURCE_ID"], tostring(reference.s)); end
 		if reference.azeriteEssenceID then
 			if app.Settings:GetTooltipSetting("azeriteEssenceID") then GameTooltip:AddDoubleLine(L["AZERITE_ESSENCE_ID"], tostring(reference.azeriteEssenceID)); end
-			AttachTooltipSearchResults(GameTooltip, 1, "azeriteEssenceID:" .. reference.azeriteEssenceID .. (reference.rank or 0), SearchForField, "azeriteEssenceID", reference.azeriteEssenceID, reference.rank);
 		end
 		if reference.difficultyID and app.Settings:GetTooltipSetting("difficultyID") then GameTooltip:AddDoubleLine(L["DIFFICULTY_ID"], tostring(reference.difficultyID)); end
 		if app.Settings:GetTooltipSetting("creatureID") then
@@ -15547,11 +15584,6 @@ RowOnEnter = function (self)
 				GetNumberWithZeros(math.floor(reference.coord[1] * 10) * 0.1, 1) .. ", " ..
 				GetNumberWithZeros(math.floor(reference.coord[2] * 10) * 0.1, 1), 1, 1, 1, 1, 1, 1);
 		end
-		if not reference.itemID then
-			if reference.speciesID then
-				AttachTooltipSearchResults(GameTooltip, 1, "speciesID:" .. reference.speciesID, SearchForField, "speciesID", reference.speciesID);
-			end
-		end
 		if reference.speciesID then
 			local progress, total = C_PetJournal.GetNumCollectedInfo(reference.speciesID);
 			if total then GameTooltip:AddLine(tostring(progress) .. " / " .. tostring(total) .. L["COLLECTED_STRING"]); end
@@ -15559,7 +15591,6 @@ RowOnEnter = function (self)
 		if reference.titleID then
 			if app.Settings:GetTooltipSetting("titleID") then GameTooltip:AddDoubleLine(L["TITLE_ID"], tostring(reference.titleID)); end
 			GameTooltip:AddDoubleLine(" ", L[reference.saved and "KNOWN_ON_CHARACTER" or "UNKNOWN_ON_CHARACTER"]);
-			AttachTooltipSearchResults(GameTooltip, 1, "titleID:" .. reference.titleID, SearchForField, "titleID", reference.titleID);
 		end
 		if reference.questID then
 			if app.Settings:GetTooltipSetting("questID") then
@@ -15577,10 +15608,6 @@ RowOnEnter = function (self)
 			elseif ATTAccountWideData.OneTimeQuests[reference.questID] == false then
 				GameTooltip:AddLine("|cffcf271b" .. L["QUEST_ONCE_PER_ACCOUNT"] .. "|r");
 			end
-			AttachTooltipSearchResults(GameTooltip, 1, "quest:"..reference.questID, SearchForField, "questID", reference.questID);
-		end
-		if reference.flightPathID then
-			AttachTooltipSearchResults(GameTooltip, 1, "fp:"..reference.flightPathID, SearchForField, "flightPathID", reference.flightPathID);
 		end
 		if reference.qgs and app.Settings:GetTooltipSetting("QuestGivers") then
 			if app.Settings:GetTooltipSetting("creatureID") then
@@ -15702,13 +15729,8 @@ RowOnEnter = function (self)
 				GameTooltip:AddDoubleLine(L["COST"], amount);
 			end
 		end
-		if reference.achievementID then
-			if reference.criteriaID then
-				GameTooltip:AddDoubleLine(L["CRITERIA_FOR"], GetAchievementLink(reference.achievementID));
-				-- AttachTooltipSearchResults(GameTooltip, 1, "achievementID:" .. reference.achievementID .. ":" .. reference.criteriaID, SearchForField, "achievementID", reference.achievementID, reference.criteriaID);
-			else
-				AttachTooltipSearchResults(GameTooltip, 1, "achievementID:" .. reference.achievementID, SearchForField, "achievementID", reference.achievementID);
-			end
+		if reference.achievementID and reference.criteriaID then
+			GameTooltip:AddDoubleLine(L["CRITERIA_FOR"], GetAchievementLink(reference.achievementID));
 		end
 		if app.Settings:GetTooltipSetting("Progress") then
 			local right = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(reference);
@@ -16128,10 +16150,10 @@ RowOnEnter = function (self)
 		GameTooltip:AddDoubleLine("Row Indent",tostring(CalculateRowIndent(reference)));
 		-- END DEBUGGING]]
 
-		-- print("OnRowEnter-Show");
+		-- app.PrintDebug("OnRowEnter-Show");
 		GameTooltip.MiscFieldsComplete = true;
 		GameTooltip:Show();
-		-- print("OnRowEnter-Return");
+		-- app.PrintDebug("OnRowEnter-Return");
 	end
 end
 RowOnLeave = function (self)
