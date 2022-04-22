@@ -3076,9 +3076,9 @@ for _,v in ipairs(holidayOrder) do
 		function(self)
 			self:SetChecked(settings:GetValue("Seasonal", v));
 			if SeasonalSettingsBase.__index[v] then
-				self.Text:SetTextColor(0.6, 0.7, 1);
+				self.Text:SetTextColor(0.678, 0.847, 0.902); --Reinstated Insane color logic
 			else
-				self.Text:SetTextColor(1, 1, 1);
+				self.Text:SetTextColor(0.678, 0.847, 0.902); --Reinstated Insane color logic
 			end
 		end,
 		function(self)
@@ -4297,8 +4297,6 @@ table.insert(settings.MostRecentTab.objects, ChatCommandsText);
 
 end)();
 
-
-
 ------------------------------------------
 -- The "Profiles" Tab.					--
 ------------------------------------------
@@ -4346,7 +4344,7 @@ NewProfileTextBox:Show();
 -- Profiles selector scrollbox
 local ProfileSelector = settings:CreateScrollFrame();
 local ProfileScroller = ProfileSelector.ScrollContainer;
-ProfileScroller:SetPoint("TOPLEFT", NewProfileTextBox, "BOTTOMLEFT", 0, -36);
+ProfileScroller:SetPoint("TOPLEFT", NewProfileTextBox, "BOTTOMLEFT", 0, -10);
 ProfileScroller:SetPoint("RIGHT", NewProfileTextBox, "RIGHT", 25, 0);
 ProfileScroller:SetPoint("BOTTOM", settings, "BOTTOM", 0, 20);
 settings.ApplyBackdropColor(ProfileScroller, 20, 20, 20, 1);
@@ -4412,50 +4410,6 @@ local CreateProfileButton = settings:CreateButton(
 CreateProfileButton:SetPoint("TOPLEFT", NewProfileTextBox, "TOPRIGHT", 5, 4);
 CreateProfileButton:Show();
 
--- Switch Button
-local SwitchProfileButton = settings:CreateButton(
--- button settings
-{
-	text = SWITCH,
-	tooltip = L["PROFILE_SWITCH_TOOLTIP"],
-},
--- function hooks for the button
-{
-	["OnClick"] = function(self)
-		local profile = tab.SelectedProfile;
-		if profile then
-			UseProfile(profile);
-			refreshProfiles();
-			return true;
-		end
-	end
-});
-SwitchProfileButton:SetPoint("TOPLEFT", NewProfileTextBox, "BOTTOMLEFT", 0, -4);
-SwitchProfileButton:Show();
-
--- Copy Button
-local CopyProfileButton = settings:CreateButton(
--- button settings
-{
-	text = CALENDAR_COPY_EVENT,
-	tooltip = L["PROFILE_COPY_TOOLTIP"],
-},
--- function hooks for the button
-{
-	["OnClick"] = function(self)
-		local profile = tab.SelectedProfile;
-		if profile then
-			settings:CopyProfile(nil, profile);
-			settings:ApplyProfile();
-			settings:UpdateMode(1);
-			refreshProfiles();
-			return true;
-		end
-	end
-});
-CopyProfileButton:SetPoint("TOPLEFT", SwitchProfileButton, "TOPRIGHT", 10, 0);
-CopyProfileButton:Show();
-
 -- Delete Button
 local DeleteProfileButton = settings:CreateButton(
 -- button settings
@@ -4478,8 +4432,53 @@ local DeleteProfileButton = settings:CreateButton(
 		end
 	end
 });
-DeleteProfileButton:SetPoint("BOTTOMLEFT", ProfileScroller, "BOTTOMRIGHT", 5, 0);
+DeleteProfileButton:SetPoint("BOTTOMLEFT", ProfileScroller, "BOTTOMRIGHT", 5, -1);
 DeleteProfileButton:Show();
+
+-- Switch Button
+local SwitchProfileButton = settings:CreateButton(
+-- button settings
+{
+	text = SWITCH,
+	tooltip = L["PROFILE_SWITCH_TOOLTIP"],
+},
+-- function hooks for the button
+{
+	["OnClick"] = function(self)
+		local profile = tab.SelectedProfile;
+		if profile then
+			UseProfile(profile);
+			refreshProfiles();
+			return true;
+		end
+	end
+});
+SwitchProfileButton:SetPoint("LEFT", DeleteProfileButton, "LEFT", 0, 0);
+SwitchProfileButton:SetPoint("TOP", ProfileScroller, "TOP", 0, 2);
+SwitchProfileButton:Show();
+
+-- Copy Button
+local CopyProfileButton = settings:CreateButton(
+-- button settings
+{
+	text = CALENDAR_COPY_EVENT,
+	tooltip = L["PROFILE_COPY_TOOLTIP"],
+},
+-- function hooks for the button
+{
+	["OnClick"] = function(self)
+		local profile = tab.SelectedProfile;
+		if profile then
+			settings:CopyProfile(nil, profile);
+			settings:ApplyProfile();
+			settings:UpdateMode(1);
+			refreshProfiles();
+			return true;
+		end
+	end
+});
+CopyProfileButton:SetPoint("TOPLEFT", SwitchProfileButton, "BOTTOMLEFT", 0, -4);
+CopyProfileButton:Show();
 
 local function ProfileCheckbox_Disable(self)
 	self:Disable();
