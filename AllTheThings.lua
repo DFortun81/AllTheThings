@@ -4743,12 +4743,14 @@ local function DeterminePurchaseGroups(group)
 		local curSkipLevel = app.SkipPurchases[-1];
 		if curSkipLevel and curSkipLevel < reqSkipLevel then return; end;
 	end
-	-- do not fill 'saved' groups (unless they are actual Maps or Instances, or a Difficulty header. Also 'saved' Items usually means tied to a questID directly)
+	-- do not fill 'saved' groups
 	-- or groups directly under saved groups unless in Acct or Debug mode
-	if not app.MODE_DEBUG_OR_ACCOUNT and not (group.instanceID or group.mapID or group.difficultyID or itemID) then
-		if group.saved then return; end
-		local rawParent = rawget(group, "parent");
-		if rawParent and rawParent.saved then return; end
+	if not app.MODE_DEBUG_OR_ACCOUNT then
+		-- (unless they are actual Maps or Instances, or a Difficulty header. Also 'saved' Items usually means tied to a questID directly)
+		if not (group.instanceID or group.mapID or group.difficultyID or itemID) and group.saved then return; end
+		local rawParent = group.parent;
+		-- parent is a saved quest, then do not fill
+		if rawParent and rawParent.questID and rawParent.saved then return; end
 	end
 
 	local collectibles = group.costCollectibles or (group.collectibleAsCost and group.costCollectibles);
