@@ -4720,6 +4720,7 @@ end
 (function()
 local included = {};
 local knownSkills;
+local DuplicatePreventionLevel = 3;
 -- ItemID's which should be skipped when filling purchases with certain levels of 'skippability'
 app.SkipPurchases = {
 	[-1] = 0,	-- Whether to skip certain cost items
@@ -4856,9 +4857,14 @@ local function FillGroupsRecursive(group, depth)
 
 	-- Prevent repeated nesting of anything dynamically nested
 	if groups then
-		for _,o in ipairs(groups) do
-			included[o.hash] = true;
-			included[o.itemID or 0] = true;
+		-- increment depth if things are being nested
+		depth = (depth or 0) + 1;
+		-- only prevent duplicates after X layers of nesting?
+		if depth >= DuplicatePreventionLevel then
+			for _,o in ipairs(groups) do
+				included[o.hash] = depth;
+				included[o.itemID or 0] = depth;
+			end
 		end
 	end
 
@@ -4868,18 +4874,22 @@ local function FillGroupsRecursive(group, depth)
 
 	if group.g then
 		-- app.PrintDebug(".g",group.hash,#group.g)
-		depth = (depth or 0) + 1;
+		-- local hash = group.hash;
 		-- Then nest anything further
 		for _,o in ipairs(group.g) do
-			FillGroupsRecursive(o, depth);
+			-- never nest the same Thing under itself
+			-- (prospecting recipes list the input as the output)
+			-- if o.hash ~= hash then
+				FillGroupsRecursive(o, depth);
+			-- end
 		end
 	end
 end
 -- Appends sub-groups into the item group based on what is required to have this item (cost, source sub-group, reagents, symlinks)
 app.FillGroups = function(group)
 	-- app.PrintDebug("FillGroups",group.hash,group.__type)
-	-- Clear search history
-	included = {};
+	-- Clear search history -- never re-list the starting Thing
+	included = { [group.hash] = 0, [group.itemID or 0] = 0 };
 	-- Get tradeskill cache
 	knownSkills = app.GetTradeSkillCache();
 
