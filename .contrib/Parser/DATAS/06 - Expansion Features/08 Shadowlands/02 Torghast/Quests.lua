@@ -37,21 +37,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0
 				["provider"] = { "n", 164937 },	-- Runecarver
 				["coord"] = { 50.6, 57.2, 1912 },
 			}),
-			q(65035, {	-- Return to Oribos
-				["sourceQuests"] = { 64850 },	-- Traversing Torghast
-				["provider"] = { "n", 181328 },	-- Ve'nish
-				["coord"] = { 35.5, 46.9, 1627 },
-				["isBreadcrumb"] = true,
-				["timeline"] = { "added 9.1.5" },
-				["customCollect"] = "SL_SKIP",
-			}),
-			q(64850, {	-- Traversing Torghast
-				["provider"] = { "n", 181328 },	-- Ve'nish
-				["coord"] = { 35.5, 46.9, 1627 },
-				["isDaily"] = true,
-				["timeline"] = { "added 9.1.5" },
-				["customCollect"] = "SL_SKIP",
-			}),
 			q(64210, {	-- The Box of Many Things
 				["sourceQuests"] = { 64557 },	-- In Darkness, Found
 				["provider"] = { "n", 179598 },	-- Ve'nish

@@ -162,7 +162,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					-- TODO: are the items for the specific criteria gained from specific locations?
 					crit(1, {	-- Pollinated Extraction
 						["provider"] = { "i", 187879 },	-- Pollinated Extraction
-						-- ["coord"] = { X, Y, ZERETH_MORTIS },
+						["coord"] = { 62.8, 68.2, ZERETH_MORTIS },
 					}),
 					crit(2, {	-- Honeycombed Lattice
 						["provider"] = { "i", 187885 },	-- Honeycombed Lattice
@@ -170,20 +170,28 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					}),
 					crit(3, {	-- Anima-charged Yolk
 						["provider"] = { "i", 187890 },	-- Anima-charged Yolk
-						-- ["coord"] = { X, Y, ZERETH_MORTIS },
 					}),
 					crit(4, {	-- Unstable Agitant
 						["provider"] = { "i", 187889 },	-- Unstable Agitant
-						["coord"] = { 56.1, 68.7, ZERETH_MORTIS },
+						["coords"] = {
+							{ 44.7, 91.8, ZERETH_MORTIS },
+							{ 45.3, 73.1, ZERETH_MORTIS },
+							{ 51.0, 70.2, ZERETH_MORTIS },
+							{ 56.1, 68.7, ZERETH_MORTIS },
+						},
 					}),
 					crit(5, {	-- Empyrean Essence
 						["provider"] = { "i", 187891 },	-- Empyrean Essence
-						["coord"] = { 44.8, 76.5, ZERETH_MORTIS },
+						["coords"] = {
+							{ 44.8, 76.5, ZERETH_MORTIS },
+							{ 46.3, 68.4, ZERETH_MORTIS },
+						},
 					}),
 					crit(6, {	-- Incorporeal Sand
 						["provider"] = { "i", 187892 },	-- Incorporeal Sand
 						["coords"] = {
 							{ 39.3, 34.6, ZERETH_MORTIS },
+							{ 41.0, 38.8, ZERETH_MORTIS },
 							{ 46.9, 65.0, ZERETH_MORTIS },
 							{ 56.9, 52.1, ZERETH_MORTIS },
 							{ 62.4, 57.6, ZERETH_MORTIS },
@@ -194,6 +202,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 						["coords"] = {
 							{ 40.7, 57.1, ZERETH_MORTIS },
 							{ 42.9, 49.8, ZERETH_MORTIS },
+							{ 44.5, 50.0, ZERETH_MORTIS },
 							{ 47.4, 61.1, ZERETH_MORTIS },
 							{ 48.3, 59.5, ZERETH_MORTIS },
 							{ 49.1, 57.5, ZERETH_MORTIS },
@@ -202,15 +211,16 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					}),
 					crit(8, {	-- Energized Firmament
 						["provider"] = { "i", 187894 },	-- Energized Firmament
-						-- ["coord"] = { X, Y, ZERETH_MORTIS },
+						["coord"] = { 53.1, 28.9, ZERETH_MORTIS },
 					}),
 					crit(9, {	-- Wayward Essence
+						["description"] = "Very specific positioning. Face towards the center of the orb.",
 						["provider"] = { "i", 190128 },	-- Wayward Essence
-						-- ["coord"] = { X, Y, ZERETH_MORTIS },
+						["coord"] = { 32.65, 40.76, ZERETH_MORTIS },
 					}),
 					crit(10, {	-- Serene Pigment
 						["provider"] = { "i", 190129 },	-- Serene Pigment
-						-- ["coord"] = { X, Y, ZERETH_MORTIS },
+						["coord"] = { 34.56, 46.51, ZERETH_MORTIS },
 					}),
 				},
 			}),

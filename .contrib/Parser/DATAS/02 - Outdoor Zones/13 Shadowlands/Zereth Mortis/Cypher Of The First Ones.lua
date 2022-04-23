@@ -480,7 +480,15 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 									{ "i", 187789, 5 },		--5xEidolic Particles
 								},
 							}),
-							i(187789),	-- Eidolic Particles
+							i(187789, {	-- Eidolic Particles
+								["coords"] = {
+									{ 44.4, 59.1, ZERETH_MORTIS },
+									{ 44.8, 46.6, ZERETH_MORTIS },
+									{ 45.0, 62.8, ZERETH_MORTIS },
+									{ 50.2, 60.2, ZERETH_MORTIS },
+									{ 50.5, 46.9, ZERETH_MORTIS },
+								},
+							}),
 							i(187791),	-- Kismetric Circlet
 							i(187790),	-- Trace Enigmet
 						},

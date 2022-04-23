@@ -33,13 +33,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						i(188766),	-- Cosmic Gladiator's Resonator
 					},
 				}),
-				q(65031, {	-- Battlegrounds
-					["provider"] = { "n", 167486 },	-- Tal-Inara
-					["coord"] = { 40.5, 65.9, ORIBOS },
-					["isBreadcrumb"] = true,
-					["timeline"] = { "added 9.1.5" },
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-				}),
 				q(64304, {	-- New Opportunities Await
 					["provider"] = { "n", 168011 },	-- Zo'sorg
 					["coord"] = { 34.7, 57.3, ORIBOS },
@@ -82,43 +75,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						53338,	-- Prove Your Worth [BFA 'Try Warmode'] [H]
 					},
 				}),
-				q(65033, {	-- Observing Victory
-					["sourceQuests"] = { 65032 },	-- Battleground Observers
-					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
-					["isDaily"] = true,
-					["coord"] = { 34.7, 56.5, ORIBOS },
-					["lvl"] = { 50, 59 },
-					["timeline"] = { "added 9.1.5" },
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sym"] = {
-						{"select", "mapID", BASTION },
-						{"pop"},
-						{"where", "headerID", ZONE_REWARDS },
-						{"pop"},
-						{"finalize"},
-
-						{"select", "mapID", MALDRAXXUS },
-						{"pop"},
-						{"where", "headerID", ZONE_REWARDS },
-						{"pop"},
-						{"finalize"},
-
-						{"select", "mapID", ARDENWEALD },
-						{"pop"},
-						{"where", "headerID", ZONE_REWARDS },
-						{"pop"},
-						{"finalize"},
-
-						{"select", "mapID", REVENDRETH },
-						{"pop"},
-						{"where", "headerID", ZONE_REWARDS },
-						{"pop"},
-						{"finalize"},
-
-						{"merge"},
-						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", },
-					},
-				}),
 				q(62285, {	-- Observing War
 					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 					["isWeekly"] = true,
@@ -136,14 +92,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					["coord"] = { 34.7, 56.5, ORIBOS },
 					["isWeekly"] = true,
 					["timeline"] = { "added 9.2.0" },
-				}),
-				q(65034, {	-- Return to Oribos
-					["sourceQuests"] = { 65033 },	-- Observing Victory
-					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
-					["coord"] = { 34.7, 56.5, ORIBOS },
-					["isBreadcrumb"] = true,
-					["timeline"] = { "added 9.1.5" },
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 				}),
 			})),
 			q(60151, {	-- A Doorway Through the Veil
@@ -268,14 +216,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["sourceQuests"] = { 60148 },	-- No Place for the Living
 				["provider"] = { "n", 167486 },	-- Tal-Inara
 				["coord"] = { 40.5, 65.9, ORIBOS },
-			}),
-			q(65032, {	-- Battleground Observers
-				["sourceQuests"] = { 65031 },	-- Battlegrounds
-				["provider"] = { "n", 167486 },	-- Tal-Inara
-				["coord"] = { 40.5, 65.9, ORIBOS },
-				["isBreadcrumb"] = true,
-				["timeline"] = { "added 9.1.5" },
-				["customCollect"] = "SL_SKIP",	-- SL Skip Character
 			}),
 			q(64942, {	-- Call of the Primus
 				--["sourceQuests"] = {},
@@ -616,13 +556,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["coord"] = { 57.1, 31.1, ORIBOS },	-- Ring of Fates
 				["timeline"] = { "added 9.1.0" },
 			}),
-			q(64846, {	-- Torghast
-				["provider"] = { "n", 167486 },	-- Tal-Inara
-				["coord"] = { 40.5, 65.9, ORIBOS },
-				["isBreadcrumb"] = true,
-				["timeline"] = { "added 9.1.5" },
-				["customCollect"] = "SL_SKIP",	-- SL Skip Character
-			}),
 			q(60139, {	-- Torment Chamber: Jaina
 				["sourceQuests"] = { 62938 },	-- Information for a Price
 				["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
@@ -635,14 +568,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["sourceQuests"] = { 62969 },	-- Lest the Trail Go Cold
 				["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 39.9, 68.5, ORIBOS },
-			}),
-			q(64849, {	-- Tower of the Damned
-				["sourceQuests"] = { 64846 },	-- Torghast
-				["provider"] = { "n", 167486 },	-- Tal-Inara
-				["coord"] = { 40.5, 65.9, ORIBOS },
-				["isBreadcrumb"] = true,
-				["timeline"] = { "added 9.1.5" },
-				["customCollect"] = "SL_SKIP",	-- SL Skip Character
 			}),
 			q(60274, {	-- Trading Favors
 				["provider"] = { "n", 156688 },	-- Host Ta'rela
@@ -772,6 +697,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["coord"] = { 38.8, 70.0, ORIBOS },
 				["isBreadcrumb"] = true,
 				["sourceQuests"] = { 62000 },	-- Choosing Your Purpose
+				["lockCriteria"] = { 1,	-- Completing 1 Zone Meta Quest
+					"questID", 62763,	-- Support the Court,
+					"questID", 62723,	-- Bolstering Bastion
+					"questID", 62748,	-- Rallying Maldraxxus
+					"questID", 62778,	-- Reinforcing Revendreth
+				},
 			}),
 			q(63208, {	-- The Next Step
 				["description"] = "Offered after completing 1 Zone Meta-quest.",
@@ -781,6 +712,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["isBreadcrumb"] = true,
 				-- TODO: verify if SQ is required or simply based on number of Zone Meta-quests completed
 				["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+				["lockCriteria"] = { 2,	-- Completing 2 Zone Meta Quest
+					"questID", 62763,	-- Support the Court,
+					"questID", 62723,	-- Bolstering Bastion
+					"questID", 62748,	-- Rallying Maldraxxus
+					"questID", 62778,	-- Reinforcing Revendreth
+				},
 			}),
 			q(63209, {	-- Furthering the Purpose
 				["description"] = "Offered after completing 2 Zone Meta-quests.",
@@ -790,6 +727,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["isBreadcrumb"] = true,
 				-- TODO: verify if SQ is required or simply based on number of Zone Meta-quests completed
 				["sourceQuests"] = { 63208 },	-- The Next Step
+				["lockCriteria"] = { 3,	-- Completing 3 Zone Meta Quest
+					"questID", 62763,	-- Support the Court,
+					"questID", 62723,	-- Bolstering Bastion
+					"questID", 62748,	-- Rallying Maldraxxus
+					"questID", 62778,	-- Reinforcing Revendreth
+				},
 			}),
 			q(63210, {	-- The Last Step
 				["description"] = "Offered after completing 3 Zone Meta-quests.",
@@ -799,6 +742,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["isBreadcrumb"] = true,
 				-- TODO: verify if SQ is required or simply based on number of Zone Meta-quests completed
 				["sourceQuests"] = { 63209 },	-- Furthering the Purpose
+				["lockCriteria"] = { 4,	-- Completing 4 Zone Meta Quest
+					"questID", 62763,	-- Support the Court,
+					"questID", 62723,	-- Bolstering Bastion
+					"questID", 62748,	-- Rallying Maldraxxus
+					"questID", 62778,	-- Reinforcing Revendreth
+				},
 			}),
 
 			-- Zone Select Breadcrumbs
@@ -808,6 +757,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["coord"] = { 38.8, 70.0, ORIBOS },
 				["isBreadcrumb"] = true,
 				["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+				["lockCriteria"] = { 1, "questID", 62153 },	-- accepting this Quest
 			}),
 			q(62275, {	-- Bastion
 				["customCollect"] = "SL_SKIP",	-- SL Skip Character
@@ -815,6 +765,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["coord"] = { 38.8, 70.0, ORIBOS },
 				["isBreadcrumb"] = true,
 				["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+				["lockCriteria"] = { 1, "questID", 62151 },	-- accepting this Quest
 			}),
 			q(62278, {	-- Maldraxxus
 				["customCollect"] = "SL_SKIP",	-- SL Skip Character
@@ -822,6 +773,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["coord"] = { 38.8, 70.0, ORIBOS },
 				["isBreadcrumb"] = true,
 				["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+				["lockCriteria"] = { 1, "questID", 62152 },	-- accepting this Quest
 			}),
 			q(62279, {	-- Revendreth
 				["customCollect"] = "SL_SKIP",	-- SL Skip Character
@@ -829,6 +781,22 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["coord"] = { 38.8, 70.0, ORIBOS },
 				["isBreadcrumb"] = true,
 				["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+				["lockCriteria"] = { 1, "questID", 62154 },	-- accepting this Quest
+			}),
+			q(65031, {	-- Battlegrounds
+				["customCollect"] = "SL_SKIP",	-- SL Skip Character
+				["provider"] = { "n", 167486 },	-- Tal-Inara
+				["coord"] = { 40.5, 65.9, ORIBOS },
+				["isBreadcrumb"] = true,
+				["timeline"] = { "added 9.1.5" },
+				["lockCriteria"] = { 1, "questID", 65030 },	-- accepting this Quest
+			}),
+			q(64846, {	-- Torghast
+				["customCollect"] = "SL_SKIP",	-- SL Skip Character
+				["provider"] = { "n", 167486 },	-- Tal-Inara
+				["coord"] = { 40.5, 65.9, ORIBOS },
+				["isBreadcrumb"] = true,
+				["timeline"] = { "added 9.1.5" },
 			}),
 
 			-- Zone Travel Breadcrumbs
@@ -899,6 +867,24 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["coord"] = { 38.8, 70.0, ORIBOS },
 				["isBreadcrumb"] = true,
 				["sourceQuests"] = { 62279 },	-- Revendreth
+			}),
+			-- Battlegrounds
+			q(65032, {	-- Battleground Observers
+				["sourceQuests"] = { 65031 },	-- Battlegrounds
+				["customCollect"] = "SL_SKIP",	-- SL Skip Character
+				["provider"] = { "n", 167486 },	-- Tal-Inara
+				["coord"] = { 40.5, 65.9, ORIBOS },
+				["isBreadcrumb"] = true,
+				["timeline"] = { "added 9.1.5" },
+			}),
+			-- Torghast
+			q(64849, {	-- Tower of the Damned
+				["sourceQuests"] = { 64846 },	-- Torghast
+				["customCollect"] = "SL_SKIP",	-- SL Skip Character
+				["provider"] = { "n", 167486 },	-- Tal-Inara
+				["coord"] = { 40.5, 65.9, ORIBOS },
+				["isBreadcrumb"] = true,
+				["timeline"] = { "added 9.1.5" },
 			}),
 
 			-- Zone Meta Quests (keep in Oribos for visibility to players who may skip storyline I suppose)
@@ -1017,6 +1003,54 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					-- TODO: more rewards
 				},
 			}),
+			-- Battlegrounds
+			pvp(q(65033, {	-- Observing Victory
+				["sourceQuests"] = { 65032 },	-- Battleground Observers
+				["provider"] = { "n", 174922 },	-- Strategist Zo'rak
+				["isDaily"] = true,
+				["coord"] = { 34.7, 56.5, ORIBOS },
+				["lvl"] = { 50, 59 },
+				["timeline"] = { "added 9.1.5" },
+				["customCollect"] = "SL_SKIP",	-- SL Skip Character
+				["sym"] = {
+					{"select", "mapID", BASTION },
+					{"pop"},
+					{"where", "headerID", ZONE_REWARDS },
+					{"pop"},
+					{"finalize"},
+
+					{"select", "mapID", MALDRAXXUS },
+					{"pop"},
+					{"where", "headerID", ZONE_REWARDS },
+					{"pop"},
+					{"finalize"},
+
+					{"select", "mapID", ARDENWEALD },
+					{"pop"},
+					{"where", "headerID", ZONE_REWARDS },
+					{"pop"},
+					{"finalize"},
+
+					{"select", "mapID", REVENDRETH },
+					{"pop"},
+					{"where", "headerID", ZONE_REWARDS },
+					{"pop"},
+					{"finalize"},
+
+					{"merge"},
+					{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", },
+				},
+			})),
+			-- Torghast
+			q(64850, {	-- Traversing Torghast
+				["sourceQuest"] = 64849,	-- Tower of the Damned
+				["provider"] = { "n", 181328 },	-- Ve'nish
+				["coord"] = { 35.5, 46.9, 1627 },
+				["isDaily"] = true,
+				["timeline"] = { "added 9.1.5" },
+				["customCollect"] = "SL_SKIP",
+				["lockCriteria"] = { 1, "lvl", 60 },
+			}),
 
 			-- Oribos Return Quests
 			-- Ardenweald
@@ -1055,6 +1089,24 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					{ 61.4, 60.2, REVENDRETH },	-- Prince Renathal [at Darkhaven, for non-Venthyr]
 				},
 				["sourceQuests"] = { 62778 },	-- Reinforcing Revendreth
+				["lvl"] = { 48, 60 },
+			}),
+			-- Battlegrounds
+			pvp(q(65034, {	-- Return to Oribos
+				["sourceQuests"] = { 65033 },	-- Observing Victory
+				["provider"] = { "n", 174922 },	-- Strategist Zo'rak
+				["coord"] = { 34.7, 56.5, ORIBOS },
+				["timeline"] = { "added 9.1.5" },
+				["customCollect"] = "SL_SKIP",	-- SL Skip Character
+				["lvl"] = { 48, 60 },
+			})),
+			-- Torghast
+			q(65035, {	-- Return to Oribos
+				["sourceQuests"] = { 64850 },	-- Traversing Torghast
+				["provider"] = { "n", 181328 },	-- Ve'nish
+				["coord"] = { 35.5, 46.9, 1627 },
+				["timeline"] = { "added 9.1.5" },
+				["customCollect"] = "SL_SKIP",
 				["lvl"] = { 48, 60 },
 			}),
 

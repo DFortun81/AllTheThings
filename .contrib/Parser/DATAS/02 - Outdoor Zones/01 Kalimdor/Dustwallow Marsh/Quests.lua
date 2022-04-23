@@ -1176,7 +1176,12 @@ _.Zones =
 					["provider"] = { "n", 40345 },	-- Thyssiana
 					["coord"] = { 41.8, 73.8, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,	-- for The Grimtotem are Coming - mutually exclusive with 25481 and 28503
+					["isBreadcrumb"] = true,
+					["altQuests"] = {
+						28503,	-- Hero's Call: Thousand Needles!
+						-- 25479,	-- To New Thalanaar
+						25481,	-- To New Thalanaar
+					},
 				}),
 				q(25478, {	-- To the Summit
 					["provider"] = { "n", 40344 },	-- Nyse

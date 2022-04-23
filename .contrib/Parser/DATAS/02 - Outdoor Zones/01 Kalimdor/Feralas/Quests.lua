@@ -735,7 +735,11 @@ _.Zones =
 					["provider"] = { "n", 39946 },	-- Caryssia Moonhunter
 					["coord"] = { 86.1, 45.3, FERALAS },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 28503,    -- Hero's Call: Thousand Needles!
+					["sourceQuests"] = {
+						28503,	-- Hero's Call: Thousand Needles!
+						25479,	-- To New Thalanaar
+						25481,	-- To New Thalanaar
+					},
 				}),
 				q(27131, {	-- The Highborne (A)
 					["provider"] = { "n", 40032 },	-- Telaron Windflight
@@ -848,6 +852,11 @@ _.Zones =
 					["coord"] = { 77.2, 56.5, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+					["altQuests"] = {
+						28503,	-- Hero's Call: Thousand Needles!
+						25479,	-- To New Thalanaar
+						-- 25481,	-- To New Thalanaar
+					},
 				}),
 				q(25386, {	-- To Stonemaul Hold
 					["provider"] = { "n", 39377 },	-- Konu Runetotem
