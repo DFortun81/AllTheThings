@@ -13,7 +13,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 						{ "i", 187684, 1 },	-- Containment Trap (quest item)
 					},
 				}, {
-				["_achcat"] = ACHIEVEMENT_CATEGORY_SHADOWLANDS_EXP,
 				["g"] = {
 					i(187793),	-- Personal Containment Trap (TOY!)
 					crit(1, {
@@ -156,73 +155,37 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				ach(15518),	-- A Means to an End
 			}),
 			ach(15229, {	-- Traversing the Spheres
-				["_achcat"] = ACHIEVEMENT_CATEGORY_SHADOWLANDS_EXP,
-				["g"] = {
-					i(187860),	-- Mortis Mover (TOY!)
-					-- TODO: are the items for the specific criteria gained from specific locations?
-					crit(1, {	-- Pollinated Extraction
-						["provider"] = { "i", 187879 },	-- Pollinated Extraction
-						["coord"] = { 62.8, 68.2, ZERETH_MORTIS },
-					}),
-					crit(2, {	-- Honeycombed Lattice
-						["provider"] = { "i", 187885 },	-- Honeycombed Lattice
-						["coord"] = { 64.3, 59.2, ZERETH_MORTIS },
-					}),
-					crit(3, {	-- Anima-charged Yolk
-						["provider"] = { "i", 187890 },	-- Anima-charged Yolk
-					}),
-					crit(4, {	-- Unstable Agitant
-						["provider"] = { "i", 187889 },	-- Unstable Agitant
-						["coords"] = {
-							{ 44.7, 91.8, ZERETH_MORTIS },
-							{ 45.3, 73.1, ZERETH_MORTIS },
-							{ 51.0, 70.2, ZERETH_MORTIS },
-							{ 56.1, 68.7, ZERETH_MORTIS },
-						},
-					}),
-					crit(5, {	-- Empyrean Essence
-						["provider"] = { "i", 187891 },	-- Empyrean Essence
-						["coords"] = {
-							{ 44.8, 76.5, ZERETH_MORTIS },
-							{ 46.3, 68.4, ZERETH_MORTIS },
-						},
-					}),
-					crit(6, {	-- Incorporeal Sand
-						["provider"] = { "i", 187892 },	-- Incorporeal Sand
-						["coords"] = {
-							{ 39.3, 34.6, ZERETH_MORTIS },
-							{ 41.0, 38.8, ZERETH_MORTIS },
-							{ 46.9, 65.0, ZERETH_MORTIS },
-							{ 56.9, 52.1, ZERETH_MORTIS },
-							{ 62.4, 57.6, ZERETH_MORTIS },
-						},
-					}),
-					crit(7, {	-- Volatile Precursor
-						["provider"] = { "i", 187893 },	-- Volatile Precursor
-						["coords"] = {
-							{ 40.7, 57.1, ZERETH_MORTIS },
-							{ 42.9, 49.8, ZERETH_MORTIS },
-							{ 44.5, 50.0, ZERETH_MORTIS },
-							{ 47.4, 61.1, ZERETH_MORTIS },
-							{ 48.3, 59.5, ZERETH_MORTIS },
-							{ 49.1, 57.5, ZERETH_MORTIS },
-							{ 50.4, 64.1, ZERETH_MORTIS },
-						},
-					}),
-					crit(8, {	-- Energized Firmament
-						["provider"] = { "i", 187894 },	-- Energized Firmament
-						["coord"] = { 53.1, 28.9, ZERETH_MORTIS },
-					}),
-					crit(9, {	-- Wayward Essence
-						["description"] = "Very specific positioning. Face towards the center of the orb.",
-						["provider"] = { "i", 190128 },	-- Wayward Essence
-						["coord"] = { 32.65, 40.76, ZERETH_MORTIS },
-					}),
-					crit(10, {	-- Serene Pigment
-						["provider"] = { "i", 190129 },	-- Serene Pigment
-						["coord"] = { 34.56, 46.51, ZERETH_MORTIS },
-					}),
-				},
+				i(187860),	-- Mortis Mover (TOY!)
+				crit(1, {	-- Pollinated Extraction
+					["provider"] = { "i", 187879 },	-- Pollinated Extraction
+				}),
+				crit(2, {	-- Honeycombed Lattice
+					["provider"] = { "i", 187885 },	-- Honeycombed Lattice
+				}),
+				crit(3, {	-- Anima-charged Yolk
+					["provider"] = { "i", 187890 },	-- Anima-charged Yolk
+				}),
+				crit(4, {	-- Unstable Agitant
+					["provider"] = { "i", 187889 },	-- Unstable Agitant
+				}),
+				crit(5, {	-- Empyrean Essence
+					["provider"] = { "i", 187891 },	-- Empyrean Essence
+				}),
+				crit(6, {	-- Incorporeal Sand
+					["provider"] = { "i", 187892 },	-- Incorporeal Sand
+				}),
+				crit(7, {	-- Volatile Precursor
+					["provider"] = { "i", 187893 },	-- Volatile Precursor
+				}),
+				crit(8, {	-- Energized Firmament
+					["provider"] = { "i", 187894 },	-- Energized Firmament
+				}),
+				crit(9, {	-- Wayward Essence
+					["provider"] = { "i", 190128 },	-- Wayward Essence
+				}),
+				crit(10, {	-- Serene Pigment
+					["provider"] = { "i", 190129 },	-- Serene Pigment
+				}),
 			}),
 			ach(15331, {	-- Treasures of Zereth Mortis
 				ach(15513),	-- Curious Collections

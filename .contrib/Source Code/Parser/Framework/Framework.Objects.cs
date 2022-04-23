@@ -525,7 +525,7 @@ namespace ATT
             internal static void PostProcessMergeInto(Dictionary<string, object> data)
             {
                 // questID : { 123, [ obj1, obj2, obj3 ] }
-                // questID:123 
+                // questID:123
                 // get the appropriate merge objects for this data based on the matching keys
                 foreach (string key in PostProcessMergeIntos.Keys)
                 {
@@ -1941,7 +1941,6 @@ namespace ATT
                             Trace.WriteLine(MiniJSON.Json.Serialize(item));
                         }
                         break;
-                    case "_achcat":
                     case "_drop":
                         item[field] = value;
                         break;

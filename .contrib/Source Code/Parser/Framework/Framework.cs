@@ -2456,7 +2456,6 @@ namespace ATT
                 case "visualID":
 
                 // metadata parser tags
-                case "_achcat":
                 case "_area":
                 case "_category":
                 case "_drop":

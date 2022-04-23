@@ -453,15 +453,56 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 						["description"] = "This item is only available after completing the Daily Quest: Materials of Creation (64717) or Hallow Efforts (64579).",
 						["g"] = {
 							i(187527),	-- Aeon Matrix
-							i(187891),	-- Empyrean Essence
-							i(187894),	-- Energized Firmament
-							i(187885),	-- Honeycombed Lattice
-							i(187892),	-- Incorporeal Sand
-							i(187879),	-- Pollinated Extraction
-							i(190129),	-- Serene Pigment
-							i(187889),	-- Unstable Agitant
-							i(187893),	-- Volatile Precursor
-							i(190128),	-- Wayward Essence
+							i(187891, {	-- Empyrean Essence
+								["coords"] = {
+									{ 44.8, 76.5, ZERETH_MORTIS },
+									{ 46.3, 68.4, ZERETH_MORTIS },
+								},
+							}),
+							i(187894, {	-- Energized Firmament
+								["coord"] = { 53.1, 28.9, ZERETH_MORTIS },
+							}),
+							i(187885, {	-- Honeycombed Lattice
+								["coord"] = { 64.3, 59.2, ZERETH_MORTIS },
+							}),
+							i(187892, {	-- Incorporeal Sand
+								["coords"] = {
+									{ 39.3, 34.6, ZERETH_MORTIS },
+									{ 41.0, 38.8, ZERETH_MORTIS },
+									{ 46.9, 65.0, ZERETH_MORTIS },
+									{ 56.9, 52.1, ZERETH_MORTIS },
+									{ 62.4, 57.6, ZERETH_MORTIS },
+								},
+							}),
+							i(187879, {	-- Pollinated Extraction
+								["coord"] = { 62.8, 68.2, ZERETH_MORTIS },
+							}),
+							i(190129, {	-- Serene Pigment
+								["coord"] = { 34.56, 46.51, ZERETH_MORTIS },
+							}),
+							i(187889, {	-- Unstable Agitant
+								["coords"] = {
+									{ 44.7, 91.8, ZERETH_MORTIS },
+									{ 45.3, 73.1, ZERETH_MORTIS },
+									{ 51.0, 70.2, ZERETH_MORTIS },
+									{ 56.1, 68.7, ZERETH_MORTIS },
+								},
+							}),
+							i(187893, {	-- Volatile Precursor
+								["coords"] = {
+									{ 40.7, 57.1, ZERETH_MORTIS },
+									{ 42.9, 49.8, ZERETH_MORTIS },
+									{ 44.5, 50.0, ZERETH_MORTIS },
+									{ 47.4, 61.1, ZERETH_MORTIS },
+									{ 48.3, 59.5, ZERETH_MORTIS },
+									{ 49.1, 57.5, ZERETH_MORTIS },
+									{ 50.4, 64.1, ZERETH_MORTIS },
+								},
+							}),
+							i(190128, {	-- Wayward Essence
+								["description"] = "Very specific positioning. Face towards the center of the orb.",
+								["coord"] = { 32.65, 40.76, ZERETH_MORTIS },
+							}),
 							i(187728, {	-- Ephemera Strand
 								i(187787, {	-- Ephemera Orb
 									i(187890),	-- Anima-charged Yolk
@@ -474,10 +515,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 							}),
 							i(187792, {	-- Kismetric Disc
 								["cost"] = {
-									{ "i", 187791, 1 },		--1xKismetric Circlet
-									{ "i", 187790, 100 },	--100xTrace Enigmet
-									{ "i", 187728, 10 },	--10xEphemera Strand
-									{ "i", 187789, 5 },		--5xEidolic Particles
+									{ "i", 187791, 1 },		--1 Kismetric Circlet
+									{ "i", 187790, 100 },	--100 Trace Enigmet
+									{ "i", 187728, 10 },	--10 Ephemera Strand
+									{ "i", 187789, 5 },		--5 Eidolic Particles
 								},
 							}),
 							i(187789, {	-- Eidolic Particles
