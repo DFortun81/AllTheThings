@@ -2308,7 +2308,7 @@ for key, value in pairs({
 	[278570] = "古代日志",	-- Ancient Journal
 	[278577] = "被撕碎的部落信函",	-- Torn Horde Missive
 	[278669] = "萧湾镇账本",	-- Fallhaven Ledger
-	[278675] = "被诅咒的雕像",	-- Cursed Effigy	--TODO: This was manually translated
+	[278675] = "被诅咒的雕像",	-- Cursed Effigy
 	[279042] = "走私者的藏品",	-- Smuggler's Stash
 	[279253] = "幸运的霍拉斯的幸运宝箱",	-- Lucky Horace's Lucky Chest
 	[279260] = "“精心”伪装的宝箱",	-- Cleverly Disguised Chest
@@ -2341,7 +2341,7 @@ for key, value in pairs({
 	[281397] = "破浪宝箱",	-- Cutwater Treasure Chest
 	[281494] = "冰霜宝箱",	-- Frosty Treasure Chest
 	[281551] = "求助布告",	-- Help Wanted Poster
-	[281583] = "古代圣物",	-- Ancient Reliquary	--TODO: This was manually translated
+	[281583] = "古代圣物",	-- Ancient Reliquary
 	[281639] = "崩解的雕像",	-- Crumbling Statue
 	[281646] = "蜂蜜大桶",	-- Honey Vat
 	[281647] = "张贴的布告",	-- Posted Notice
@@ -2802,14 +2802,14 @@ for key, value in pairs({
 	[355886] = "凋殇者宝箱",	-- Plaguefallen Chest
 	[355947] = "格拉萨恩的宝箱",	-- Glutharn's Stash
 	[356555] = "欧律迪亚的项链",	-- Eurydea's Necklace
-	--TODO: [356693] = "Baroness Vashj's Extravagant Tribute",	-- Baroness Vashj's Extravagant Tribute
+	[356693] = "瓦丝琪女男爵的奢华礼品",	-- Baroness Vashj's Extravagant Tribute
 	[356697] = "亚历山德罗斯·莫格莱尼的奢华礼品",	-- Alexandros Mograine's Extravagant Tribute
-	--TODO: [356700] = "Grandmaster Vole's Extravagant Tribute",	-- Grandmaster Vole's Extravagant Tribute
+	[356700] = "沃尔大师的奢华礼品",	-- Grandmaster Vole's Extravagant Tribute
 	[356705] = "魔药设计师马里莱斯的奢华礼品",	-- Plague Deviser Marileth's Extravagant Tribute
 	[356709] = "月莓女勋爵的奢华礼品",	-- Lady Moonberry's Extravagant Tribute
-	--TODO: [356712] = "Hunt-Captain Korayn's Extravagant Tribute",	-- Hunt-Captain Korayn's Extravagant Tribute
+	[356712] = "狩猎队长柯莱恩的奢华礼品",	-- Hunt-Captain Korayn's Extravagant Tribute
 	[356716] = "宗主艾莉奥瑟的奢华供品",	-- Droman Aliothe's Extravagant Tribute
-	--TODO: [356720] = "Choofa's Extravagant Tribute",	-- Choofa's Extravagant Tribute
+	[356720] = "丘法的奢华礼品",	-- Choofa's Extravagant Tribute
 	[356725] = "文官阿得赖斯提斯的奢华供品",	-- Polemarch Adrestes' Extravagant Tribute
 	[356728] = "米卡尼科斯的奢华礼品",	-- Mikanikos' Extravagant Tribute
 	[356733] = "克雷雅和裴拉戈斯的奢华供品",	-- Kleia and Pelagos' Extravagant Tribute
@@ -2993,7 +2993,7 @@ for key, value in pairs({
 	[375362] = "元鸟之巢",	-- Avian Nest
 	[375363] = "渊誓补给宝箱",	-- Mawsworn Supply Chest
 	[375366] = "元蛛卵",	-- Tarachnid Eggs
-	--TODO: [375368] = "Creation Catalyst Console",	-- Creation Catalyst Console
+	[375368] = "造物化生控制台",	-- Creation Catalyst Console
 	[375369] = "被咬过的旅行袋",	-- Gnawed Valise
 	[375370] = "原生体设计方案",	-- Protoform Schematic
 	[375371] = "原生体设计方案",	-- Protoform Schematic

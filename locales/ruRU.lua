@@ -2979,7 +2979,7 @@ for key,value in pairs({
 	[375362] = "Гнездо авиана",	-- Avian Nest
 	[375363] = "Сундук с припасами Верных Утробе",	-- Mawsworn Supply Chest
 	[375366] = "Яйца тарахнидов",	-- Tarachnid Eggs
-	--TODO: [375368] = "Creation Catalyst Console",	-- Creation Catalyst Console
+	[375368] = "Консоль катализатора творения",	-- Creation Catalyst Console
 	[375369] = "Изгрызенная сумка",	-- Gnawed Valise
 	[375370] = "Схема протосинтеза",	-- Protoform Schematic
 	[375371] = "Схема протосинтеза",	-- Protoform Schematic

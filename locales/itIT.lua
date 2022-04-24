@@ -2991,7 +2991,7 @@ for key,value in pairs({
 	[375362] = "Nido di Aviano",	-- Avian Nest
 	[375363] = "Cassa di Rifornimenti dei Giurafauce",	-- Mawsworn Supply Chest
 	[375366] = "Uova di Taracnide",	-- Tarachnid Eggs
-	--TODO: [375368] = "Creation Catalyst Console",	-- Creation Catalyst Console
+	[375368] = "Console del Catalizzatore della Creazione",	-- Creation Catalyst Console
 	[375369] = "Borsa Morsicata",	-- Gnawed Valise
 	[375370] = "Schema di Protoforma",	-- Protoform Schematic
 	[375371] = "Schema di Protoforma",	-- Protoform Schematic

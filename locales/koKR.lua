@@ -2622,7 +2622,7 @@ for key,value in pairs({
 	[336415] = "버려진 두루마리",	-- Discarded Scroll
 	[337237] = "잃어버린 금고",	-- Lost Vault
 	[337241] = "장비 보관함",	-- Stashed Equipment
-	--TODO: [339211] = "|cFFFFFFFFStep 2:|r Empty Dish",	-- |cFFFFFFFFStep 2:|r Empty Dish
+	[339211] = "빈 그릇",	-- Empty Dish
 	[339248] = "감염된 보관함",	-- Infested Cache
 	[339283] = "잊힌 귀족의 상자",	-- Forgotten Noble's Chest
 	[339601] = "영겁의 두루마리",	-- Scroll of Aeons
@@ -2993,7 +2993,7 @@ for key,value in pairs({
 	[375362] = "새 둥지",	-- Avian Nest
 	[375363] = "나락살이 보급품 상자",	-- Mawsworn Supply Chest
 	[375366] = "원시거미 알",	-- Tarachnid Eggs
-	--TODO: [375368] = "Creation Catalyst Console",	-- Creation Catalyst Console
+	[375368] = "창조의 촉매 장치",	-- Creation Catalyst Console
 	[375369] = "갉아먹은 가방",	-- Gnawed Valise
 	[375370] = "원생형태 설계도",	-- Protoform Schematic
 	[375371] = "원생형태 설계도",	-- Protoform Schematic
