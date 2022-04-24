@@ -2942,9 +2942,9 @@ for key,value in pairs({
 	[370140] = "Baú de Jiro Danificado",	-- Damaged Jiro Stash
 	[370469] = "Alimento Espectral",	-- Spectral Feed
 	[370494] = "Baú Tocatiano",	-- Toccatian Cache
-	--TODO: [373437] = "Pungent Blobfish Cluster",	-- Pungent Blobfish Cluster
-	--TODO: [373438] = "Coilclutch Vine",	-- Coilclutch Vine
-	--TODO: [373439] = "Flipper Fish School",	-- Flipper Fish School
+	[373437] = "Cardume de Baiacu Pungente",	-- Pungent Blobfish Cluster
+	[373438] = "Cirro-mola",	-- Coilclutch Vine
+	[373439] = "Cardume de Nadadeira",	-- Flipper Fish School
 	[373460] = "Rede Feéria",	-- Fae Net
 	[373471] = "Baú Mezônico",	-- Mezzonic Cache
 	[373472] = "Baú Glissandiano",	-- Glissandian Cache
@@ -2993,7 +2993,7 @@ for key,value in pairs({
 	[375362] = "Ninho de Avícola",	-- Avian Nest
 	[375363] = "Baú de Suprimentos Górjuro",	-- Mawsworn Supply Chest
 	[375366] = "Ovos de Taracnídeo",	-- Tarachnid Eggs
-	--TODO: [375368] = "Creation Catalyst Console",	-- Creation Catalyst Console
+	[375368] = "Console de Catalisador de Criação",	-- Creation Catalyst Console
 	[375369] = "Valise Roída",	-- Gnawed Valise
 	[375370] = "Diagrama de Protoforma",	-- Protoform Schematic
 	[375371] = "Diagrama de Protoforma",	-- Protoform Schematic
@@ -3064,7 +3064,7 @@ for key,value in pairs({
 	[375985] = "Firim no Exílio, Parte 5",	-- Firim in Exile, Part 5
 	[375986] = "Firim no Exílio, Parte 6",	-- Firim in Exile, Part 6
 	[375987] = "Firim no Exílio, Parte 7",	-- Firim in Exile, Part 7
-	--TODO: [375988] = "Firim in Exile, Epilogue",	-- Firim in Exile, Epilogue
+	[375988] = "Firim no Exílio, Epílogo",	-- Firim in Exile, Epilogue
 	[376041] = "Baú de Cifra Amortalhado",	-- Shrouded Cypher Cache
 	[9962198] = "Poça de Lodo Improvisada do Proscrito",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
