@@ -2623,6 +2623,7 @@ root("Zones", {
 root("HiddenQuestTriggers", {
 --	LOOT QUESTS
 	q(57143),	-- looting an Eel Filet
+	q(57145),	-- looting Voidcaster's Supply Bag
 
 --	RECRUITMENT QUESTS
 	q(57040),	-- recruiting Hunter Akana / Vim Brineheart for the day
