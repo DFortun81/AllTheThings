@@ -2622,7 +2622,7 @@ for key,value in pairs({
 	[336415] = "버려진 두루마리",	-- Discarded Scroll
 	[337237] = "잃어버린 금고",	-- Lost Vault
 	[337241] = "장비 보관함",	-- Stashed Equipment
-	[339211] = "빈 그릇",	-- Empty Dish
+	[339211] = "|cFFFFFFFFStep 2:|r 빈 그릇",	--|cFFFFFFFFStep 2:|r  Empty Dish
 	[339248] = "감염된 보관함",	-- Infested Cache
 	[339283] = "잊힌 귀족의 상자",	-- Forgotten Noble's Chest
 	[339601] = "영겁의 두루마리",	-- Scroll of Aeons
