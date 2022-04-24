@@ -2070,7 +2070,6 @@ for key,value in pairs({
 	[250109] = "Cassa del Tesoro",	-- Treasure Chest
 	[250383] = "Reliquia di Ombraluna",	-- Moonshade Relic
 	[250541] = "Cassa del Tesoro",	-- Treasure Chest
-	--TODO: [250671] = "Notes on the Veiled Hand",	-- Notes on the Veiled Hand
 	[250984] = "Cassa del Tesoro Piccola",	-- Small Treasure Chest
 	[250985] = "Cassa del Tesoro",	-- Treasure Chest
 	[251032] = "Comò",	-- Armoire

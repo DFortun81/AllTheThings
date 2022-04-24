@@ -2071,7 +2071,6 @@ for key,value in pairs({
 	[250109] = "Coffre au trésor",	-- Treasure Chest
 	[250383] = "Relique de Lunombrage",	-- Moonshade Relic
 	[250541] = "Coffre au trésor",	-- Treasure Chest
-	--TODO: [250671] = "Notes on the Veiled Hand",	-- Notes on the Veiled Hand
 	[250984] = "Petit coffre au trésor",	-- Small Treasure Chest
 	[250985] = "Coffre au trésor",	-- Treasure Chest
 	[251032] = "Armoire",	-- Armoire

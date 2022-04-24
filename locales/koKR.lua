@@ -2072,7 +2072,6 @@ for key,value in pairs({
 	[250109] = "보물 상자",	-- Treasure Chest
 	[250383] = "달그늘 성물",	-- Moonshade Relic
 	[250541] = "보물 상자",	-- Treasure Chest
-	--TODO: [250671] = "Notes on the Veiled Hand",	-- Notes on the Veiled Hand
 	[250984] = "작은 보물 상자",	-- Small Treasure Chest
 	[250985] = "보물 상자",	-- Treasure Chest
 	[251032] = "장식장",	-- Armoire

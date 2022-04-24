@@ -2073,7 +2073,6 @@ for key,value in pairs({
 	[250109] = "Schatztruhe",	-- Treasure Chest
 	[250383] = "Mondschattenrelikt",	-- Moonshade Relic
 	[250541] = "Schatztruhe",	-- Treasure Chest
-	[250671] = "Notizen über die Verschleierte Hand",	-- Notes on the Veiled Hand
 	[250984] = "Kleine Schatztruhe",	-- Small Treasure Chest
 	[250985] = "Schatztruhe",	-- Treasure Chest
 	[251032] = "Schrank",	-- Armoire
