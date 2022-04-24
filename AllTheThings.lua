@@ -11657,6 +11657,13 @@ local C_QuestLog_IsQuestReplayedRecently = C_QuestLog.IsQuestReplayedRecently;
 local C_QuestLog_ReadyForTurnIn = C_QuestLog.ReadyForTurnIn;
 local IsSpellKnown, GetSpellInfo, math_floor = IsSpellKnown, GetSpellInfo, math.floor;
 
+local function QuestConsideredSaved(questID)
+	if app.IsInPartySync then
+		return C_QuestLog_IsQuestReplayedRecently(questID) or (not C_QuestLog_IsQuestReplayable(questID) and IsQuestFlaggedCompleted(questID));
+	end
+	return IsQuestFlaggedCompleted(questID);
+end
+
 local criteriaFuncs = {
     ["lvl"] = function(v)
         return app.Level >= v;
@@ -11667,7 +11674,7 @@ local criteriaFuncs = {
     end,
 
     ["questID"] = function(v)
-        return CompletedQuests[v];
+        return QuestConsideredSaved(v);
     end,
 	["label_questID"] = L["LOCK_CRITERIA_QUEST_LABEL"],
     ["text_questID"] = function(v)
@@ -11774,10 +11781,7 @@ local questFields = {
 	end,
 	["trackable"] = app.ReturnTrue,
 	["saved"] = function(t)
-		if app.IsInPartySync then
-			return C_QuestLog_IsQuestReplayedRecently(t.questID) or (not C_QuestLog_IsQuestReplayable(t.questID) and IsQuestFlaggedCompleted(t.questID));
-		end
-		return IsQuestFlaggedCompleted(t.questID);
+		return QuestConsideredSaved(t.questID);
 	end,
 	["indicatorIcon"] = function(t)
 		return app.GetQuestIndicator(t);
