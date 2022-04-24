@@ -4653,6 +4653,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	end
 
 	-- If the item is a recipe, then show which characters know this recipe.
+	-- app.PrintDebug(topLevelSearch,group.spellID,group.filterID,group.collectible)
 	if topLevelSearch and group.spellID and group.filterID ~= 100 and group.collectible and app.Settings:GetTooltipSetting("KnownBy") then
 		local knownBy = {};
 		for guid,character in pairs(ATTCharacterData) do
@@ -4891,7 +4892,7 @@ end
 app.FillGroups = function(group)
 	-- app.PrintDebug("FillGroups",group.hash,group.__type)
 	-- Clear search history -- never re-list the starting Thing
-	included = { [group.hash] = 0, [group.itemID or 0] = 0 };
+	included = { [group.hash or ""] = 0, [group.itemID or 0] = 0 };
 	-- Get tradeskill cache
 	knownSkills = app.GetTradeSkillCache();
 
@@ -11671,7 +11672,7 @@ local criteriaFuncs = {
 	["label_questID"] = L["LOCK_CRITERIA_QUEST_LABEL"],
     ["text_questID"] = function(v)
 		local questObj = app.SearchForObject("questID", v);
-        return questObj.text;
+        return sformat("[%d] %s", v, questObj.text);
     end,
 
     ["spellID"] = function(v)
@@ -16060,6 +16061,23 @@ RowOnEnter = function (self)
 				if critFunc then
 					local label = critFuncs["label_"..critKey];
 					local text = critFuncs["text_"..critKey](critValue);
+					GameTooltip:AddLine(GetCompletionIcon(critFunc(critValue)).." "..label..": "..text);
+				end
+			end
+		end
+		local altQuests = reference.altQuests;
+		if altQuests then
+			-- list the reasons this may become locked due to altQuests specifically
+			local critValue;
+			local critFuncs = app.QuestLockCriteriaFunctions;
+			local critFunc = critFuncs["questID"];
+			local label = critFuncs["label_questID"];
+			local text;
+			GameTooltip:AddLine(sformat(L["UNAVAILABLE_WARNING_FORMAT"], app.Colors.LockedWarning, 1));
+			for i=1,#altQuests,1 do
+				critValue = altQuests[i];
+				if critFunc then
+					text = critFuncs["text_questID"](critValue);
 					GameTooltip:AddLine(GetCompletionIcon(critFunc(critValue)).." "..label..": "..text);
 				end
 			end
