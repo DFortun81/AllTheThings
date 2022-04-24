@@ -233,23 +233,6 @@ root("Instances", tier(CLASSIC_TIER, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 				}),
-				q(6502, {	-- Drakefire Amulet
-					["qg"] = 10929,	-- Haleh
-					["sourceQuest"] = 6501,	-- The Dragon's Eye
-					["coord"] = { 54.55, 51.2, WINTERSPRING },
-					["timeline"] = { "removed 3.0.2" },
-					["maps"] = { BLACKROCK_SPIRE },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 50,
-					["groups"] = {
-						objective(1, {	-- 0/1 Blood of the Black Dragon Champion
-							["provider"] = { "i", 16663 },	-- Blood of the Black Dragon Champion
-						}),
-						i(16309, {	-- Drakefire Amulet
-							["timeline"] = { "removed 3.0.2" },
-						}),
-					},
-				}),
 				q(6646, {	-- Favor Amongst the Brotherhood, Blood of the Mountain
 					["qg"] = 12944,	-- Lokhtos Darkbargainer
 					["maxReputation"] = { 59, EXALTED },	-- The Thorium Brotherhood, Exalted.
