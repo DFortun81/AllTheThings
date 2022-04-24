@@ -484,6 +484,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 								["coords"] = {
 									{ 44.7, 91.8, ZERETH_MORTIS },
 									{ 45.3, 73.1, ZERETH_MORTIS },
+									{ 45.9, 71.1, ZERETH_MORTIS },
 									{ 51.0, 70.2, ZERETH_MORTIS },
 									{ 56.1, 68.7, ZERETH_MORTIS },
 								},

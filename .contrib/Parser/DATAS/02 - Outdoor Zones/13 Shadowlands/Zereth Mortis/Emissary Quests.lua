@@ -25,6 +25,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 						i(190928),	-- Sandtails Drape
 						i(189471),	-- Schematic: Russet Bufonid
 						i(190177),	-- Sphere of Enlightened Cogitation (TOY!)
+						i(190934),	-- Standard of the Wandering Brokers
 						i(190939),	-- Walking Staff of the Enlightened Journey
 					}),
 				},

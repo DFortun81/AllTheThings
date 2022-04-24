@@ -600,7 +600,7 @@ _.Zones =
 					["coord"] = { 77.1, 16.4, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						ach(12741),	-- Giving a Scrap
+						a(ach(12741)),	-- Giving a Scrap
 					},
 				}),
 				q(52762, {	-- A Local Guide

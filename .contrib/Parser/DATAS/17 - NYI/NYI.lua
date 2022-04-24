@@ -2628,7 +2628,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 				tier(SL_TIER, 2.0, {
 					i(190937),	-- Edge of the Enlightened
-					i(190934),	-- Standard of the Wandering Brokers
 				}),
 			}),
 			n(LEGENDARIES, {

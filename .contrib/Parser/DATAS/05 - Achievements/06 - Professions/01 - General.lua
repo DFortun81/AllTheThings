@@ -16,12 +16,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, {
 			ach(12739),		-- Scraptastic!
 			ach(12738),		-- Holy Scrap!
 		}),
-		ach(12741, {	-- Giving a Scrap (A)
-			["races"] = ALLIANCE_ONLY,
-		}),
-		ach(13056, {	-- Giving a Scrap (H)
-			["races"] = HORDE_ONLY,
-		}),
 		ach(10587),	-- Hot Swapper
 		ach(9071, {		-- Inspector Gagetzan
 			i(114002, {	-- Encoded Message
