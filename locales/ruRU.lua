@@ -2058,7 +2058,6 @@ for key,value in pairs({
 	[250109] = "Сундук с сокровищами",	-- Treasure Chest
 	[250383] = "Реликвия обители Лунной Тени",	-- Moonshade Relic
 	[250541] = "Сундук с сокровищами",	-- Treasure Chest
-	[250671] = "Записки \"Незримой Длани\"",	-- Notes on the Veiled Hand
 	[250984] = "Маленький сундук с сокровищами",	-- Small Treasure Chest
 	[250985] = "Сундук с сокровищами",	-- Treasure Chest
 	[251032] = "Комод",	-- Armoire

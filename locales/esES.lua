@@ -2076,7 +2076,6 @@ for key,value in pairs({
 	[250109] = "Arqueta",	-- Treasure Chest
 	[250383] = "Reliquia Sombra Lunar",	-- Moonshade Relic
 	[250541] = "Arqueta",	-- Treasure Chest
-	--TODO: [250671] = "Notes on the Veiled Hand",	-- Notes on the Veiled Hand
 	[250984] = "Arqueta pequeña",	-- Small Treasure Chest
 	[250985] = "Arqueta",	-- Treasure Chest
 	[251032] = "Ropero",	-- Armoire

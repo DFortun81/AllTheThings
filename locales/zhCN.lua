@@ -2072,7 +2072,6 @@ for key, value in pairs({
 	[250109] = "宝箱",	-- Treasure Chest
 	[250383] = "月影圣物",	-- Moonshade Relic
 	[250541] = "宝箱",	-- Treasure Chest
-	--TODO: [250671] = "Notes on the Veiled Hand",	-- Notes on the Veiled Hand
 	[250984] = "小宝箱",	-- Small Treasure Chest
 	[250985] = "宝箱",	-- Treasure Chest
 	[251032] = "衣橱",	-- Armoire
