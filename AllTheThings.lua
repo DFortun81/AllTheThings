@@ -11856,7 +11856,7 @@ local questFields = {
 			local lockCriteria = t.lc;
 			if lockCriteria then
 				local criteriaRequired = lockCriteria[1];
-				local critKey, critFunc;
+				local critKey, critFunc, nonQuestLock;
 				local i, limit = 2, #lockCriteria;
 				while i < limit do
 					critKey = lockCriteria[i];
@@ -11865,6 +11865,9 @@ local questFields = {
 					if critFunc then
 						if critFunc(lockCriteria[i]) then
 							criteriaRequired = criteriaRequired - 1;
+							if not nonQuestLock and critKey ~= "questID" then
+								nonQuestLock = true;
+							end
 						end
 					else
 						app.print("Unknown 'lockCriteria' key:",critKey,lockCriteria[i]);
@@ -11874,6 +11877,11 @@ local questFields = {
 						-- we can rawset this since there's no real way for a player to 'remove' this lock during a session
 						-- and this does not come into play during party sync
 						rawset(t, "locked", true);
+						-- if this was locked due to something other than a Quest specifically, indicate it cannot be done in Party Sync
+						if nonQuestLock then
+							-- app.PrintDebug("Automatic DisablePartySync", app:Linkify(questID, app.Colors.ChatLink, "search:questID:" .. questID))
+							rawset(t, "DisablePartySync", true);
+						end
 						return true;
 					end
 					i = i + 1;
@@ -15087,7 +15095,7 @@ local function AddQuestInfoToTooltip(tooltip, quests)
 	if quests and tooltip.AddLine then
 		local text;
 		for _,q in ipairs(quests) do
-			text = GetCompletionIcon(q.saved) .. " " .. q.questID .. ": " .. (q.text or RETRIEVING_DATA);
+			text = GetCompletionIcon(q.saved) .. " [" .. q.questID .. "] " .. (q.text or RETRIEVING_DATA);
 			if q.mapID then
 				text = text .. " (" .. (app.GetMapName(q.mapID) or RETRIEVING_DATA) .. ")";
 			elseif q.maps then
