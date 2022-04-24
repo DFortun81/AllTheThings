@@ -242,10 +242,3 @@ _.Zones =
 		}),
 	}),
 };
-
--- #if AFTER LEGION
--- These quests trigger after specific events occur in the zone.
-_.HiddenQuestTriggers = {
-	q(40688),	-- Warlock Order Hall - Choosing demonology artifact first
-};
--- #endif

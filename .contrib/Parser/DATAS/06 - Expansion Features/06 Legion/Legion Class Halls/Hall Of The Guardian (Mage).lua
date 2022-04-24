@@ -8,7 +8,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 			["maps"] = { HALL_OF_THE_GUARDIAN, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
 			["g"] = {
 				n(ARTIFACTS, {
-					cl(MAGE, ARCANE, {
+					--cl(MAGE, ARCANE, {
 						q(43787, {	-- Zone Targets Polymorphed: Azsuna
 							["name"] = "Polymorph: Cliffwing Hippogryph",
 							["description"] = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Azsuna Teleportation Nexus.",
@@ -94,14 +94,14 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								}),
 							}
 						}),
-					}),
-					cl(MAGE, FIRE, {
+					--}),
+					--cl(MAGE, FIRE, {
 						i(139559, {	-- The Stars' Design
 							artifact(893),	-- Felo'melorn
 							-- artifact(893),	-- Heart of the Phoenix
 						}),
-					}),
-					cl(MAGE, FROST, {
+					--}),
+					--cl(MAGE, FROST, {
 						gt(386, {		-- Teleportation Nexus
 							["description"] = "A set of 5 portals is generated in the Class Hall; there is a small daily chance instead you will be phased to Frostfire Ridge where you can loot Everburning Crystal. You will be alerted to this chance by an emote when walking around on the stairs of your class hall.",
 							["g"] = {
@@ -123,7 +123,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								}),
 							},
 						}),
-					}),
+					--}),
 				}),
 				n(QUESTS, {
 					-- Intro
@@ -155,7 +155,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["provider"] = { "n", 102700 },	-- Meryl Felstorm
 						["coord"] = { 55.3, 38.1, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
 					}),
-					cl(MAGE, ARCANE, {
+					--cl(MAGE, ARCANE, {
 						q(42001, {	-- Aluneth, Greatstaff of the Magna
 							["sourceQuests"] = {
 								41085,	-- A Mage's Weapon
@@ -202,8 +202,8 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								}),
 							},
 						}),
-					}),
-					cl(MAGE, FIRE, {
+					--}),
+					--cl(MAGE, FIRE, {
 						q(40267, {	-- An Unexpected Message
 							["sourceQuests"] = {
 								41085,	-- A Mage's Weapon
@@ -233,8 +233,8 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								}),
 							},
 						}),
-					}),
-					cl(MAGE, FROST, {
+					--}),
+					--cl(MAGE, FROST, {
 						q(42452, {	-- Finding Ebonchill
 							["sourceQuests"] = {
 								41085,	-- A Mage's Weapon
@@ -280,7 +280,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							["provider"] = { "n", 107452 },	-- Old Fillmaff
 							["coord"] = { 53.2, 41.5, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
 						}),
-					}),
+					--}),
 					q(44240, {	-- Orange is the New Purple
 						["sourceQuests"] = {
 							42011,	-- The Nexus Vault

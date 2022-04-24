@@ -14,21 +14,7 @@ _.Zones =
 				}),
 				n(-170, {	-- Balance of Power
 					["description"] = "The only known requirement to start this questline is the completion of your class campaign.",
-					["maps"] = {
-						-- Order Halls
-						647, 648,	-- Acherus (Death Knight)
-						717,		-- Dreadscar Rift (Warlock)
-						734, 735,	-- Hall of the Guardian (Mage)
-						720, 721,	-- Mardum, the Shattered Abyss (Demon Hunter)
-						702,		-- Netherlight Temple (Priest)
-						LIGHTS_HOPE_CHAPEL,	-- Sanctum of Light (Paladin)
-						695,		-- Skyhold (Warrior)
-						747,		-- The Dreamgrove (Druid)
-						626,		-- The Hall of Shadows (Rogue)
-						726,		-- The Heart of Azeroth (Shaman)
-						709,		-- The Wandering Isle (Monk)
-						739,		-- Trueshot Lodge (Hunter)
-					},
+					["maps"] = CLASS_HALL_MAPS,
 					["g"] = {
 						q(43496, {	-- The Power Within
 							["description"] = "This quest is available if you *have* completed the quests at Azurewing Repose in Azsuna.",
@@ -348,21 +334,7 @@ _.Zones =
 				n(113857, {	-- Light's Heart
 					["icon"] = "Interface\\Icons\\achievement_boss_illidan",
 					["description"] = "Light's Heart is the sentience core of the naaru prime Xe'ra sent as a last resort by High Exarch Turalyon who battles on Argus, to be handed to Prophet Velen. It fell from the Felstorm along the coast of Suramar, in the Broken Isles.\n\nThe Order of the Silver Hand witnessed the event and informed Archmage Khadgar, who then tasked order leaders with recovering it before the Burning Legion did. It has since been kept safe in a class order hall.\n\nUnlocked by the Tear of Elune, Xe'ra communicates through it with the order leader in order to provide insight into the history of Illidan Stormrage. She revealed that Light's Heart was to serve as the vessel for Illidan Stormrage's rebirth. After Illidan's soul was put into a prism to keep it safe, it was brought to Light's Heart where the prism was \"seemingly consumed\". Light's Heart, with Illidan's soul inside, is then brought to Khadgar with instructions to call forth the vessel's power when Gul'dan attempts to summon Sargeras, thus releasing Illidan's soul into his body before Sargeras can possess his empty shell.",
-					["maps"] = {
-						-- Order Halls
-						647, 648,		-- Acherus (Death Knight)
-						717,			-- Dreadscar Rift (Warlock)
-						734, 735,		-- Hall of the Guardian (Mage)
-						719, 720, 721,	-- Mardum, the Shattered Abyss (Demon Hunter)
-						702,			-- Netherlight Temple (Priest)
-						LIGHTS_HOPE_CHAPEL,	-- Sanctum of Light (Paladin)
-						695,			-- Skyhold (Warrior)
-						747,			-- The Dreamgrove (Druid)
-						626,			-- The Hall of Shadows (Rogue)
-						726,			-- The Heart of Azeroth (Shaman)
-						709,			-- The Wandering Isle (Monk)
-						739,			-- Trueshot Lodge (Hunter)
-					},
+					["maps"] = CLASS_HALL_MAPS,
 					["g"] = {
 						q(44009, {	-- A Falling Star (non-Paladin)
 							["description"] = "The prerequisite for this quest is recruiting your class's first two champions, doing your first short mission, and recruiting your first troops.",	-- i also sent out my first 1-hour mission after the 2-minute one, not sure if that's required.  not sure whether paladin's requirements are different, so i didn't add the description to their version of the quest.

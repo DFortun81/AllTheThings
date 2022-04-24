@@ -1194,7 +1194,6 @@ _.ObjectNames = {
 	[250109] = "Treasure Chest",
 	[250383] = "Moonshade Relic",
 	[250541] = "Treasure Chest",
-	[250671] = "Notes on the Veiled Hand",
 	[250984] = "Small Treasure Chest",
 	[250985] = "Treasure Chest",
 	[251032] = "Armoire",

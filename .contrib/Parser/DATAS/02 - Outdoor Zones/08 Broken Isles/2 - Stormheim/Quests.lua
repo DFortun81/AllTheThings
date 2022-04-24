@@ -1070,7 +1070,6 @@ _.Zones =
 				}),
 				q(40078),	-- A Heavy Burden
 				q(46006),	-- Arkuthaz
-				q(43560),	-- Audience with the Windlord
 				q(46110),	-- Battle for Stormheim
 				q(40857),	-- Bits and Pieces
 				q(40867),	-- Bubble Baubles
