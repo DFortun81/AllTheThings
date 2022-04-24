@@ -51,7 +51,8 @@ local IsTitleKnown = _G["IsTitleKnown"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local MAX_CREATURES_PER_ENCOUNTER = 9;
 local DESCRIPTION_SEPARATOR = "`";
-local rawget, rawset, tinsert, string_lower, tostring, ipairs, pairs, tonumber = rawget, rawset, tinsert, string.lower, tostring, ipairs, pairs, tonumber;
+local rawget, rawset, tinsert, string_lower, tostring, ipairs, pairs, tonumber, sformat
+	= rawget, rawset, tinsert, string.lower, tostring, ipairs, pairs, tonumber, string.format;
 local ATTAccountWideData;
 local ALLIANCE_ONLY = {
 	1,
@@ -1370,7 +1371,7 @@ Colorize = function(str, color)
 	return "|c" .. color .. str .. "|r";
 end
 RGBToHex = function(r, g, b)
-	return string.format("ff%02x%02x%02x",
+	return sformat("ff%02x%02x%02x",
 		r <= 255 and r >= 0 and r or 0,
 		g <= 255 and g >= 0 and g or 0,
 		b <= 255 and b >= 0 and b or 0);
@@ -2011,7 +2012,6 @@ app.DetermineItemLink = function(sourceID)
 		-- app.print("Could not generate Item Link for",sourceID,"(No Source Info from Blizzard)");
 		return;
 	end
-	local sformat = string.format;
 	local checkID, found;
 	local itemFormat = "item:"..itemID;
 	-- Check Raw Item
@@ -7824,10 +7824,10 @@ local fields = {
 		if itemID then
 			-- 1 -> Off-Hand Appearance
 			-- 2 -> Main-Hand Appearance
-			-- return select(2, GetItemInfo(string.format("item:%d::::::::%d:::11:::8:%d:", itemID, app.Level, t.artifactID)));
-			-- local link = string.format("item:%d::::::::%d:::11::%d:8:%d:", itemID, app.Level, t.isOffHand and 1 or 2, t.artifactID);
+			-- return select(2, GetItemInfo(sformat("item:%d::::::::%d:::11:::8:%d:", itemID, app.Level, t.artifactID)));
+			-- local link = sformat("item:%d::::::::%d:::11::%d:8:%d:", itemID, app.Level, t.isOffHand and 1 or 2, t.artifactID);
 			-- print("Artifact link",t.artifactID,itemID,link);
-			return select(2, GetItemInfo(string.format("item:%d:::::::::::11::%d:8:%d:", itemID, t.isOffHand and 1 or 2, t.artifactID)));
+			return select(2, GetItemInfo(sformat("item:%d:::::::::::11::%d:8:%d:", itemID, t.isOffHand and 1 or 2, t.artifactID)));
 		end
 	end,
 	["silentItemID"] = function(t)
@@ -8016,7 +8016,7 @@ local fields = {
 		return cache.GetCachedField(t, "link", default_link);
 	end,
 	["tsm"] = function(t)
-		return string.format("p:%d:1:3", t.speciesID);
+		return sformat("p:%d:1:3", t.speciesID);
 	end,
 };
 app.BaseSpecies = app.BaseObjectFields(fields, "BaseSpecies");
@@ -9791,14 +9791,14 @@ local function default_link(t)
 			modID = nil;
 		end
 		if bonusID and modID then
-			itemLink = string.format("item:%d:::::::::::%d:1:%d:", itemLink, modID, bonusID);
+			itemLink = sformat("item:%d:::::::::::%d:1:%d:", itemLink, modID, bonusID);
 		elseif bonusID then
-			itemLink = string.format("item:%d::::::::::::1:%d:", itemLink, bonusID);
+			itemLink = sformat("item:%d::::::::::::1:%d:", itemLink, bonusID);
 		elseif modID then
 			-- bonusID 3524 seems to imply "use ModID to determine SourceID" since without it, everything with ModID resolves as the base SourceID from links
-			itemLink = string.format("item:%d:::::::::::%d:1:3524:", itemLink, modID);
+			itemLink = sformat("item:%d:::::::::::%d:1:3524:", itemLink, modID);
 		else
-			itemLink = string.format("item:%d:::::::::::::", itemLink);
+			itemLink = sformat("item:%d:::::::::::::", itemLink);
 		end
 		-- save this link so it doesn't need to be built again
 		rawset(t, "rawlink", itemLink);
@@ -9855,12 +9855,12 @@ local itemFields = {
 		if itemLink then
 			local bonusID = t.bonusID;
 			if bonusID and bonusID > 0 then
-				return string.format("i:%d:0:1:%d", itemLink, bonusID);
+				return sformat("i:%d:0:1:%d", itemLink, bonusID);
 			--elseif t.modID then
 				-- NOTE: At this time, TSM3 does not support modID. (RIP)
-				--return string.format("i:%d:%d:1:3524", itemLink, t.modID);
+				--return sformat("i:%d:%d:1:3524", itemLink, t.modID);
 			end
-			return string.format("i:%d", itemLink);
+			return sformat("i:%d", itemLink);
 		end
 	end,
 	["repeatable"] = function(t)
@@ -10387,7 +10387,7 @@ fields.collected = function(t)
 		return ATTAccountWideData.Toys[t.itemID];
 	end
 fields.tsm = function(t)
-		return string.format("i:%d", t.itemID);
+		return sformat("i:%d", t.itemID);
 	end
 fields.isToy = app.ReturnTrue;
 fields.toyID = function(t)
@@ -11012,8 +11012,8 @@ local mountFields = {
 		return cache.GetCachedField(t, "name", CacheInfo);
 	end,
 	["tsm"] = function(t)
-		if t.itemID then return string.format("i:%d", t.itemID); end
-		if t.parent and t.parent.itemID then return string.format("i:%d", t.parent.itemID); end
+		if t.itemID then return sformat("i:%d", t.itemID); end
+		if t.parent and t.parent.itemID then return sformat("i:%d", t.parent.itemID); end
 	end,
 };
 app.BaseMount = app.BaseObjectFields(mountFields, "BaseMount");
@@ -11687,7 +11687,7 @@ local criteriaFuncs = {
 		local factionID = math_floor(v + 0.00001);
 		local lockStanding = math_floor((v - factionID) * 10 + 0.00001);
         local standing = select(3, GetFactionInfoByID(factionID));
-		-- app.PrintDebug(string.format("Check Faction %s Standing (%d) is locked @ (%d)", factionID, standing, lockStanding))
+		-- app.PrintDebug(sformat("Check Faction %s Standing (%d) is locked @ (%d)", factionID, standing, lockStanding))
 		return standing >= lockStanding;
     end,
 	["label_factionID"] = L["LOCK_CRITERIA_FACTION_LABEL"],
@@ -11696,7 +11696,7 @@ local criteriaFuncs = {
 		local factionID = math_floor(v + 0.00001);
 		local lockStanding = math_floor((v - factionID) * 10 + 0.00001);
 		local name, _, standing = GetFactionInfoByID(factionID);
-        return string.format(L["LOCK_CRITERIA_FACTION_FORMAT"], app.GetFactionStandingText(lockStanding), name, app.GetFactionStandingText(standing));
+        return sformat(L["LOCK_CRITERIA_FACTION_FORMAT"], app.GetFactionStandingText(lockStanding), name, app.GetFactionStandingText(standing));
     end,
 };
 app.QuestLockCriteriaFunctions = criteriaFuncs;
@@ -12385,7 +12385,7 @@ app.CheckForBreadcrumbPrevention = function(title, questID)
 		local warning;
 		for _,group in pairs(nextQuests) do
 			if not group.collected and app.RecursiveGroupRequirementsFilter(group) then
-				app.print(string.format(L["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"], title, app:Linkify(questID, app.Colors.ChatLink, "search:questID:"..questID), group.text or RETRIEVING_DATA, app:Linkify(group.questID, app.Colors.Locked, "search:questID:"..group.questID)));
+				app.print(sformat(L["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"], title, app:Linkify(questID, app.Colors.ChatLink, "search:questID:"..questID), group.text or RETRIEVING_DATA, app:Linkify(group.questID, app.Colors.Locked, "search:questID:"..group.questID)));
 				warning = true;
 			end
 		end
@@ -12653,7 +12653,7 @@ local fields = {
 	end,
 	["tsm"] = function(t)
 		if t.itemID then
-			return string.format("i:%d", t.itemID);
+			return sformat("i:%d", t.itemID);
 		end
 	end,
 	["skillID"] = function(t)
@@ -15604,16 +15604,9 @@ RowOnEnter = function (self)
 		if reference.questID then
 			if app.Settings:GetTooltipSetting("questID") then
 				GameTooltip:AddDoubleLine(L["QUEST_ID"], tostring(reference.questID));
-				if reference.altQuests and #reference.altQuests > 0 then
-					local altQuestInfo = {};
-					for _,questID in ipairs(reference.altQuests) do
-						tinsert(altQuestInfo, tostring(questID)..GetCompletionIcon(IsQuestFlaggedCompleted(questID)));
-					end
-					GameTooltip:AddDoubleLine(" ", "[" .. app.TableConcat(altQuestInfo, nil, nil, ",") .. "]");
-				end
 			end
 			if ATTAccountWideData.OneTimeQuests[reference.questID] then
-				GameTooltip:AddDoubleLine(L["QUEST_ONCE_PER_ACCOUNT"], string.format(L["QUEST_ONCE_PER_ACCOUNT_FORMAT"], ATTCharacterData[ATTAccountWideData.OneTimeQuests[reference.questID]].text));
+				GameTooltip:AddDoubleLine(L["QUEST_ONCE_PER_ACCOUNT"], sformat(L["QUEST_ONCE_PER_ACCOUNT_FORMAT"], ATTCharacterData[ATTAccountWideData.OneTimeQuests[reference.questID]].text));
 			elseif ATTAccountWideData.OneTimeQuests[reference.questID] == false then
 				GameTooltip:AddLine("|cffcf271b" .. L["QUEST_ONCE_PER_ACCOUNT"] .. "|r");
 			end
@@ -16017,7 +16010,7 @@ RowOnEnter = function (self)
 		-- Show Breadcrumb information
 		local lockedWarning;
 		if reference.isBreadcrumb then
-			GameTooltip:AddLine(string.format("|c%s%s|r", app.Colors.Locked, L["THIS_IS_BREADCRUMB"]));
+			GameTooltip:AddLine(sformat("|c%s%s|r", app.Colors.Locked, L["THIS_IS_BREADCRUMB"]));
 			if reference.nextQuests then
 				local isBreadcrumbAvailable = true;
 				local nextq, nq = {};
@@ -16041,7 +16034,7 @@ RowOnEnter = function (self)
 					AddQuestInfoToTooltip(GameTooltip, nextq);
 				elseif not reference.DisablePartySync then
 					-- The character wont be able to accept this quest without the help of a lower level character using Party Sync
-					GameTooltip:AddLine(string.format("|c%s%s|r", app.Colors.LockedWarning, L["BREADCRUMB_PARTYSYNC_2"]));
+					GameTooltip:AddLine(sformat("|c%s%s|r", app.Colors.LockedWarning, L["BREADCRUMB_PARTYSYNC_2"]));
 					AddQuestInfoToTooltip(GameTooltip, nextq);
 				else
 					-- known to not be possible in party sync
@@ -16054,11 +16047,11 @@ RowOnEnter = function (self)
 		-- Show information about it becoming locked due to some criteira
 		local lockCriteria = reference.lc;
 		if lockCriteria then
-			-- list the reasons this may become locked
+			-- list the reasons this may become locked due to lock criteria
 			local critKey, critValue;
 			local critFuncs = app.QuestLockCriteriaFunctions;
 			local critFunc;
-			GameTooltip:AddLine(string.format(L["UNAVAILABLE_WARNING_FORMAT"], app.Colors.LockedWarning, lockCriteria[1]));
+			GameTooltip:AddLine(sformat(L["UNAVAILABLE_WARNING_FORMAT"], app.Colors.LockedWarning, lockCriteria[1]));
 			for i=2,#lockCriteria,1 do
 				critKey = lockCriteria[i];
 				i = i + 1;
@@ -16076,7 +16069,7 @@ RowOnEnter = function (self)
 		if not lockedWarning and reference.locked then
 			if not reference.DisablePartySync then
 				-- should be possible in party sync
-				GameTooltip:AddLine(string.format("|c%s%s|r", app.Colors.LockedWarning, L["BREADCRUMB_PARTYSYNC_3"]));
+				GameTooltip:AddLine(sformat("|c%s%s|r", app.Colors.LockedWarning, L["BREADCRUMB_PARTYSYNC_3"]));
 			else
 				-- known to not be possible in party sync
 				GameTooltip:AddLine(L["DISABLE_PARTYSYNC"]);
@@ -21996,15 +21989,6 @@ app.InitDataCoroutine = function()
 		63200,	-- Rang Insignia: Acquisitionist
 		63204,	-- Ritual Prism of Fortune
 		63202,	-- Vessel of Unfortunate Spirits
-
-		-- Blanchy (reported as Blanchy no longer shows to alts on an account which has obtained the mount)
-		-- TODO: In future, it would be nice if these quests could be flagged unobtainable based on the learned spellID of the mount
-		-- 62038,	-- Handful of Oats
-		-- 62042,	-- Grooming Brush
-		-- 62047,	-- Sturdy Horseshoe
-		-- 62049,	-- Bucket of Clean Water
-		-- 62048,	-- Comfortable Saddle Blanket
-		-- 62050,	-- Dredhollow Apple
 
 		-- Druid forms
 		65047, 	-- Mark of the Nightwing Raven
