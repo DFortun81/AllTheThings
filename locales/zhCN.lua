@@ -220,11 +220,11 @@ local L = app.L;
 	L.MAIN_LIST_REQUIRES_REFRESH = "[打开主列表更新进度 ]";
 	L.DOES_NOT_CONTRIBUTE_TO_PROGRESS = "|cffe08207此群组及其内容不影响此窗口的进度！|r";
 	L.CURRENCY_NEEDED_TO_BUY = "需要购买物品未收藏的事物";
-	["LOCK_CRITERIA_LEVEL_LABEL"] = "玩家等级";
-	["LOCK_CRITERIA_QUEST_LABEL"] = "已完成任务";
-	["LOCK_CRITERIA_SPELL_LABEL"] = "已学法术/坐骑/配方";
-	["LOCK_CRITERIA_FACTION_LABEL"] = "阵营声望";
-	["LOCK_CRITERIA_FACTION_FORMAT"] = "%s 和 %s（当前：%s）";
+	L.LOCK_CRITERIA_LEVEL_LABEL = "玩家等级";
+	L.LOCK_CRITERIA_QUEST_LABEL = "已完成任务";
+	L.LOCK_CRITERIA_SPELL_LABEL = "已学法术/坐骑/配方";
+	L.LOCK_CRITERIA_FACTION_LABEL = "阵营声望";
+	L.LOCK_CRITERIA_FACTION_FORMAT = "%s 和 %s（当前：%s）";
 
 	-- Item Filter Window
 		L.ITEM_FILTER_TEXT = "物品过滤";
