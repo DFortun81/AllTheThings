@@ -133,14 +133,6 @@ _.Zones =
 					crit(3),	-- Krahl Deadeye
 					crit(4),	-- Gortag Steelgrip
 				}),
-				ach(14728, {	-- To All The Squirrels Through Time and Space
-					["collectible"] = false,
-					["g"] = {
-						crit(15, {	-- Leatherhide Runt
-							["crs"] = { 83617 },	-- Leatherhide Runt
-						}),
-					},
-				}),
 				ach(9615,  {	-- With a Nagrand Cherry On Top
 					crit(1, {	-- Bonus Objective: Hemet's Happy Hunting Grounds
 						["sourceQuest"] = 35379,
