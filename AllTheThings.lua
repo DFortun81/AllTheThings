@@ -5824,6 +5824,8 @@ local function CanAttachTooltips()
 end
 local function AttachTooltipRawSearchResults(self, lineNumber, group)
 	if group then
+		-- app.PrintDebug("Tooltip lines before search results",group.hash)
+		-- if app.DEBUG_PRINT then app.PrintTable(group.tooltipInfo) end
 		-- If there was info text generated for this search result, then display that first.
 		if group.tooltipInfo and #group.tooltipInfo > 0 then
 			local left, right;
@@ -6577,8 +6579,8 @@ end
 
 local function AttachTooltip(self)
 	-- print("AttachTooltip-Processing",self.AllTheThingsProcessing);
-	-- print("AttachTooltip",self:GetItem(),"_",self:GetUnit(),"_",self:GetSpell())
 	local numLines = self:NumLines();
+	-- app.PrintDebug("AttachTooltip",numLines,"i:",self:GetItem(),"u:",self:GetUnit(),"s:",self:GetSpell())
 	if numLines < 1 then
 		return false
 	end
@@ -6702,7 +6704,7 @@ local function AttachTooltip(self)
 			if AllTheThingsAuctionData[itemID] then
 				self:AddLine("ATT -> " .. BUTTON_LAG_AUCTIONHOUSE .. " -> " .. GetCoinTextureString(AllTheThingsAuctionData[itemID]["price"]));
 			end--]]
-			-- print("Search Item",link);
+			-- app.PrintDebug("Search Item",link);
 			local mohIndex = link:find("item:137642");
 			if mohIndex and mohIndex > 0 then -- skip Mark of Honor for now
 				AttachTooltipSearchResults(self, 1, link, app.EmptyFunction, "itemID", 137642);
@@ -15370,50 +15372,29 @@ RowOnEnter = function (self)
 		-- track that an ATT row is causing the tooltip
 		app.ATTWindowTooltip = true;
 
-		local searched;
-
-		-- NOTE: Order matters, we "fall-through" certain values in order to pass this information to the item ID section.
-		if not reference.creatureID then
-			if reference.itemID then
-				local link = reference.link;
-				if link and link ~= "" then
-					-- app.PrintDebug("OnRowEnter-SetItemlink",link);
-					GameTooltip:SetHyperlink(link);
-					searched = true;
-				else
-					GameTooltip:AddLine("Item #" .. reference.itemID);
-
-					-- TODO: determine the best search result first, and run 1 Search
-					-- then tack on additional data from the row
-					AttachTooltipSearchResults(GameTooltip, 1, "itemID:" .. (reference.modItemID or reference.itemID), SearchForField, "itemID", (reference.modItemID or reference.itemID));
-					searched = true;
-				--elseif reference.speciesID then
-					-- Do nothing.
-				--elseif not reference.artifactID then
-					--GameTooltip:AddDoubleLine(self.Label:GetText(), "---");
-					--if reference and reference.u then GameTooltip:AddLine(L["UNOBTAINABLE_ITEM_REASONS"][reference.u][2], 1, 1, 1, true); end
-					--for key, value in pairs(reference) do
-					--	GameTooltip:AddDoubleLine(key, tostring(value));
-					--end
-				end
-			elseif reference.currencyID then
-				GameTooltip:SetCurrencyByID(reference.currencyID, 1);
-				searched = true;
-			elseif not (reference.encounterID or reference.followerID) then
-				local link = reference.link;
-				if link then
-					-- app.PrintDebug("OnRowEnter-Setlink",link);
-					pcall(GameTooltip.SetHyperlink, GameTooltip, link);
-					searched = true;
-				end
-			end
+		local link = reference.link;
+		if link then
+			-- app.PrintDebug("OnRowEnter-SetDirectlink",link);
+			-- Safely attempt setting the tooltip link from the data
+			pcall(GameTooltip.SetHyperlink, GameTooltip, link);
 		end
 
-		-- Determine search results to add
-		if not searched then
-			if reference.azeriteEssenceID then
+		local doSearch = true;
+		-- Nothing generated into tooltip based on the link, or no link exists
+		if GameTooltip:NumLines() < 1 then
+			-- Mark the tooltip as being complete, and insert the same text from the row itself
+			GameTooltip:AddLine(reference.text);
+			GameTooltip.AttachComplete = true;
+			doSearch = nil;
+		end
+
+		-- Determine search results to add if nothing was added from being searched
+		if doSearch then
+			if reference.currencyID then
+				GameTooltip:SetCurrencyByID(reference.currencyID, 1);
+			elseif reference.azeriteEssenceID then
 				AttachTooltipSearchResults(GameTooltip, 1, "azeriteEssenceID:" .. reference.azeriteEssenceID .. (reference.rank or 0), SearchForField, "azeriteEssenceID", reference.azeriteEssenceID, reference.rank);
-			elseif not reference.itemID and reference.speciesID then
+			elseif reference.speciesID then
 				AttachTooltipSearchResults(GameTooltip, 1, "speciesID:" .. reference.speciesID, SearchForField, "speciesID", reference.speciesID);
 			elseif reference.titleID then
 				AttachTooltipSearchResults(GameTooltip, 1, "titleID:" .. reference.titleID, SearchForField, "titleID", reference.titleID);
@@ -15428,19 +15409,12 @@ RowOnEnter = function (self)
 					AttachTooltipSearchResults(GameTooltip, 1, "achievementID:" .. reference.achievementID, SearchForField, "achievementID", reference.achievementID);
 				end
 			else
-				-- app.PrintDebug("No Search results added",reference.hash)
-				GameTooltip.AttachComplete = true;
+				-- app.PrintDebug("No Search Data",reference.hash)
 			end
 		end
 
 		-- Miscellaneous fields
 		-- app.PrintDebug("Adding misc fields");
-		if GameTooltip:NumLines() < 1 then
-			-- nothing in the tooltip yet, so it will simply be a basic one-pass tooltip
-			-- app.PrintDebug("empty, one-pass");
-			GameTooltip.AttachComplete = true;
-			GameTooltip:AddLine(self.Label:GetText());
-		end
 		if app.Settings:GetTooltipSetting("Progress") then
 			if reference.total and reference.total >= 2 then
 				-- if collecting this reference type, then show Collection State
@@ -15512,6 +15486,20 @@ RowOnEnter = function (self)
 				GameTooltip:AddDoubleLine(L["CREATURE_ID"], tostring(reference.creatureID));
 			elseif reference.npcID then
 				GameTooltip:AddDoubleLine(L["NPC_ID"], tostring(reference.npcID));
+			end
+		end
+		if reference.crs and app.Settings:GetTooltipSetting("creatures") then
+			-- extreme amounts of creatures tagged, then only list a summary of how many...
+			if #reference.crs > 25 then
+				GameTooltip:AddDoubleLine(CREATURE, "[" .. tostring(#reference.crs) .. " Creatures]");
+			elseif app.Settings:GetTooltipSetting("creatureID") then
+				for i,cr in ipairs(reference.crs) do
+					GameTooltip:AddDoubleLine(i == 1 and CREATURE or " ", tostring(app.NPCNameFromID[cr]) .. " (" .. cr .. ")");
+				end
+			else
+				for i,cr in ipairs(reference.crs) do
+					GameTooltip:AddDoubleLine(i == 1 and CREATURE or " ", tostring(app.NPCNameFromID[cr]));
+				end
 			end
 		end
 		if reference.encounterID then
@@ -15638,20 +15626,6 @@ RowOnEnter = function (self)
 			else
 				for i,qg in ipairs(reference.qgs) do
 					GameTooltip:AddDoubleLine(i == 1 and L["QUEST_GIVER"] or " ", tostring(app.NPCNameFromID[qg]));
-				end
-			end
-		end
-		if reference.crs and app.Settings:GetTooltipSetting("creatures") then
-			-- extreme amounts of creatures tagged, then only list a summary of how many...
-			if #reference.crs > 25 then
-				GameTooltip:AddDoubleLine(CREATURE, "[" .. tostring(#reference.crs) .. " Creatures]");
-			elseif app.Settings:GetTooltipSetting("creatureID") then
-				for i,cr in ipairs(reference.crs) do
-					GameTooltip:AddDoubleLine(i == 1 and CREATURE or " ", tostring(app.NPCNameFromID[cr]) .. " (" .. cr .. ")");
-				end
-			else
-				for i,cr in ipairs(reference.crs) do
-					GameTooltip:AddDoubleLine(i == 1 and CREATURE or " ", tostring(app.NPCNameFromID[cr]));
 				end
 			end
 		end
