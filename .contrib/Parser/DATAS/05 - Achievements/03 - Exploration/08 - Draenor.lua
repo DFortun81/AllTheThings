@@ -251,24 +251,67 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(11),		-- Wasp Stinger
 		}),
 		ach(9401),		-- Shredder Maniac
-		ach(14728, {	-- To All The Squirrels Through Time and Space
-			-- ref: https://www.wowhead.com/achievement=14728/to-all-the-squirrels-through-time-and-space#comments:id=3247125
-			-- TODO map/coord/crs here instead of individual zone files
-			crit(1),		-- Royal Moth
-			crit(2),		-- Moonshell Crab
-			crit(3),		-- Moon Snake 44.6, 51.2, DRAENOR_SHADOWMOON_VALLEY
-			crit(4),		-- Mossbite Skitterer
-			crit(5),		-- Bloodbeak
-			crit(6),		-- Brilliant Bloodfeather
-			crit(7),		-- Flat-Tooth Calf
-			crit(8),		-- Frostfur Rat
-			crit(9),		-- Icespine Hatchling
-			crit(10),		-- Twilight Wasp
-			crit(11),		-- Parched Lizard
-			crit(12),		-- Shadow Sporebat
-			crit(13),		-- Thicket Skitterer
-			crit(14),		-- Mud Jumper
-			crit(15),		-- Leatherhide Runt
+		ach(14728, {		-- To All The Squirrels Through Time and Space
+			crit(1, {	-- Royal Moth
+				["crs"] = { 88975 },	-- Royal Moth
+				["coord"] = { 39.0, 36.0, DRAENOR_SHADOWMOON_VALLEY },
+			}),
+			crit(2, {	-- Moonshell Crab
+				["crs"] = { 88976 },	-- Moonshell Crab
+				["coord"] = { 39.96,17.03, DRAENOR_SHADOWMOON_VALLEY },
+			}),
+			crit(3, {	-- Moon Snake
+				["crs"] = { 75475 },	-- Moon Snake
+				["coord"] = { 44.97, 48.71, DRAENOR_SHADOWMOON_VALLEY },
+			}),
+			crit(4, {	-- Mossbite Skitterer
+				["crs"] = { 88463 },	-- Mossbite Skitterer
+				["coord"] = { 48.30, 83.25, DRAENOR_SHADOWMOON_VALLEY },
+			}),
+			crit(5, {	-- Bloodbeak
+				["crs"] = { 88998 },	-- Bloodbeak
+				["coord"] = { 48.48, 51.22, TANAAN_JUNGLE },
+			}),
+			crit(6, {	-- Brilliant Bloodfeather
+				["crs"] = { 88994 },	-- Brilliant Bloodfeather
+				["coord"] = { 46.71, 85.55, TALADOR },
+			}),
+			crit(7, {	-- Flat-Tooth Calf
+				["crs"] = { 88983 },	-- Flat-Tooth Calf
+				["coord"] = { 57.05, 74.31, TALADOR },
+			}),
+			crit(8, {	-- Frostfur Rat
+				["crs"] = { 88985 },	-- Frostfur Rat
+				["coord"] = { 66.69, 76.35, FROSTFIRE_RIDGE },
+			}),
+			crit(9, {	-- Icespine Hatchling
+				["crs"] = { 88441 },	-- Icespine Hatchling
+				["coord"] = { 66.69, 76.35, FROSTFIRE_RIDGE },
+			}),
+			crit(10, {	-- Twilight Wasp
+				["crs"] = { 88427 },	-- Twilight Wasp
+				["coord"] = { 53.95, 68.79, GORGROND },
+			}),
+			crit(11, {	-- Parched Lizard
+				["crs"] = { 88639 },	-- Parched Lizard
+				["coord"] = { 42.40, 38.99, GORGROND },
+			}),
+			crit(12, {	-- Shadow Sporebat
+				["crs"] = { 88996 },	-- Shadow Sporebat
+				["coord"] = { 81.70, 27.11, TALADOR },
+			}),
+			crit(13, {	-- Thicket Skitterer
+				["crs"] = { 88462 },	-- Thicket Skitterer
+				["coord"] = { 63.29, 53.96, SPIRES_OF_ARAK },
+			}),
+			crit(14, {	-- Mud Jumper
+				["crs"] = { 83674 },	-- Mud Jumper
+				["coord"] = { 38.23, 29.72, SPIRES_OF_ARAK },
+			}),
+			crit(15, {	-- Leatherhide Runt
+				["crs"] = { 83617 },	-- Leatherhide Runt
+				["coord"] = { 72.89, 42.27, DRAENOR_NAGRAND },
+			}),
 		}),
 	}),
 }));
