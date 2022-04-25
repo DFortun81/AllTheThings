@@ -3037,10 +3037,8 @@ q(43796),	-- Draenei Spoken To
 q(43816),	-- Hidden History
 q(43817),	-- Hidden History
 q(43818),	-- Hidden History
-q(43819),	-- Hidden History
 q(43821),	-- Hidden History
 q(43822),	-- Hidden History
-q(43824),	-- Hidden History
 q(43825),	-- Hidden History
 q(43833),	-- Treasure 003 - Felsoul Lower
 q(43836),	-- [reuse]

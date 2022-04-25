@@ -73,15 +73,6 @@ _.Zones =
 					["coord"] = { 49.0, 82.2, VALSHARAH },
 					["provider"] = { "n", 73426 },	-- Rylissa Bearsong
 				}),
-				q(42678, {	-- Black Rook Hold: Into Black Rook Hold
-					["sourceQuests"] = {
-						43251,	-- In Search of the Eye
-						43252,	-- Eternal Unrest
-					},
-					["classes"] = { ROGUE },
-					["provider"] = { "n", 110164 },	-- Valeera Sanguinar
-					["coord"] = { 40.4, 52.9, 642 },
-				}),
 				q(38717, {	-- Black Rook Prison
 					["sourceQuests"] = {
 						38714,	-- Maiev's Trail
@@ -233,12 +224,6 @@ _.Zones =
 						i(121587),	-- Thornbrace Helm
 					},
 				}),
-				q(43252, {	-- Eternal Unrest
-					["sourceQuests"] = { 43250 },	-- Off to Court
-					["classes"] = { ROGUE },
-					["provider"] = { "n", 110164 },	-- Valeera Sanguinar
-					["coord"] = { 40.4, 52.9, 642 },
-				}),
 				q(38647, {	-- For the Corn!
 					["sourceQuests"] = { 38643 },	-- A Village in Peril
 					["coord"] = { 38.9, 61.4, VALSHARAH },
@@ -304,12 +289,6 @@ _.Zones =
 					["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
 					["coord"] = { 42.3, 81.7, 642 },	-- Darkpens
 					["provider"] = { "n", 93029 },	-- Arduen Soulblade
-				}),
-				q(43251, {	-- In Search of the Eye
-					["sourceQuests"] = { 43250 },	-- Off to Court
-					["classes"] = { ROGUE },
-					["provider"] = { "n", 110164 },	-- Valeera Sanguinar
-					["coord"] = { 40.4, 52.9, 642 },
 				}),
 				q(38691, {	-- Jarod's Mission
 					["sourceQuests"] = {

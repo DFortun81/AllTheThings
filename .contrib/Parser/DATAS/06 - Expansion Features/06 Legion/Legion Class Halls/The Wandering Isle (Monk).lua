@@ -521,6 +521,13 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["sourceQuests"] = { 41087 },	-- Storm Brew
 						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["coord"] = { 51.4, 48.5, THE_WANDERING_ISLE },
+						["g"] = {
+							artifact(337),	-- Fu Zan, the Wanderer's Companion
+							artifact(512),	-- Sheilun, Staff of the Mists
+							artifact(533),	-- Fists of the Heavens [Main Hand]
+							-- artifact(533),	-- Fists of the Heavens [Off Hand]
+							ach(10746),	-- Forged for Battle
+						}
 					}),
 					-- Interlude
 					q(46024, {	-- An Urgent Warning

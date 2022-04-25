@@ -77,7 +77,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 						q(41574, {	-- Stolen Thunder
 							["sourceQuests"] = { 41541 },	-- A Beastly Expedition
 							["provider"] = { "n", 104381 },	-- Grif Wildheart
-							["maps"] = { LEGION_DALARAN },
+							["coord"] = { 71.2, 50.2, LEGION_DALARAN },
 						}),
 						q(42158, {	-- The Creator's Workshop
 							["sourceQuests"] = { 41574 },	-- Stolen Thunder
@@ -87,9 +87,11 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 						q(42185, {	-- Never Hunt Alone
 							["sourceQuests"] = { 42158 },	-- The Creator's Workshop
 							["provider"] = { "n", 106558 },	-- Mimiron
-							-- TODO NEED MAPS?
+							["coord"] = { 43.7, 38.9, 745 },
 							["g"] = {
-
+								i(128861, {	-- Titanstrike
+									artifact(288),	--  Titanstrike
+								}),
 							},
 						}),
 						q(41009, {	-- Hunter to Hunter
@@ -153,6 +155,11 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 							},
 							["provider"] = { "n", 100190 },	-- Vareesa Windrunner
 							["coord"] = { 32.3, 32.5, BROKEN_SHORE },
+							["g"] = {
+								i(128826, {	-- Thas'dorah, Legacy of the Windrunners
+									artifact(114),	-- Thas'dorah, Legacy of the Windrunners
+								}),
+							},
 						}),
 						q(40952, {	-- Hunter to Hunter
 							["sourceQuests"] = { 40419 },	-- Rescue Mission
@@ -191,6 +198,11 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 							},
 							["coord"] = { 60.8, 80.9, HIGHMOUNTAIN },
 							["maps"] = { 694 },	-- Helmouth Shallows (Scenario Map)
+							["g"] = {
+								i(128808, {	-- Talonclaw
+									artifact(125),	-- Talonclaw
+								}),
+							},
 						}),
 					--}),
 					q(44233, {	-- Walk This Way
@@ -275,9 +287,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 							follower(742),	-- Loren Stormhoof
 						},
 					}),
-					q(44090, {	-- Pledge of Loyalty
-						["provider"] = { "n", 113327 },	-- Snowfeather
-					}),
 					q(42523, {	-- Making Contact
 						["sourceQuests"] = { 42519 },	-- Rise, Champions
 						["provider"] = { "n", 103023 },	-- Tactician Tinderfell
@@ -348,6 +357,14 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 						["sourceQuests"] = { 42411 },	-- Champion: Beastmaster Hilaire
 						["provider"] = { "n", 107316 },	-- Beastmaster Hilaire
 						["coord"] = { 34.7, 41.6, STORMHEIM },
+						["g"] = {
+							artifact(454),	-- Titanstrike
+							artifact(211),	-- Thas'dorah, Legacy of the Windrunners
+							artifact(469),	-- Talonclaw
+							crit(3, {	-- Complete the first order campaign effort
+								["achievementID"] = 10461,	-- Fighting with Style: Classic
+							}),
+						},
 					}),
 					-- Chap 2
 					q(42390, {	-- Recruiting Rexxar
@@ -378,7 +395,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 						["provider"] = { "n", 107973 },	-- Emmarel Shadewarden
 						["coord"] = { 43.4, 26.4, TRUESHOT_LODGE },
 					}),
-					--
+					-- Chap 3
 					q(42394, {	-- Unseen Protection
 						["sourceQuests"] = { 42395 },	-- Signaling Trouble
 						["provider"] = { "n", 107973 },	-- Emmarel Shadewarden
@@ -499,7 +516,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 						["provider"] = { "n", 108375 },	-- Kira Iresoul
 						["coord"] = { 60.8, 30.7, AZSUNA },
 					}),
-					--
+					-- Chap 4
 					q(42402, {	-- Requesting Reinforcements
 						["sourceQuests"] = { 42407 },	-- The Nature of the Beast
 						["provider"] = { "n", 107973 },	-- Emmarel Shadewarden
@@ -563,6 +580,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 					}),
 					q(42659, {	-- In Defense of Dalaran
 						["sourceQuests"] = {
+							43182,	-- The Missing Vessel
 							44680,	-- Leading by Example
 							42133,	-- Same Day Delivery
 						},
@@ -582,59 +600,91 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 							follower(748),	-- Halduron Brightwing
 						},
 					}),
-					--
-					q(43423, {	-- A Hero's Weapon
+					q(44090, {	-- Pledge of Loyalty
 						["sourceQuests"] = { 42659 },	-- In Defense of Dalaran
+						["provider"] = { "n", 113327 },	-- Snowfeather
+						["maps"] = { LEGION_DALARAN },
+					}),
+					q(43423, {	-- A Hero's Weapon
+						["sourceQuests"] = { 44090 },	-- Pledge of Loyalty
 						["provider"] = { "n", 110505 },	-- Emmarel Shadewarden
 						["coord"] = { 47.7, 49.3, TRUESHOT_LODGE },
+						["g"] = {
+							artifact(448),	-- Titanstrike
+							artifact(223),	-- Thas'dorah, Legacy of the Windrunners
+							artifact(475),	-- Talonclaw
+							ach(10746),	-- Forged for Battle
+						},
 					}),
 					-- Interlude
 					q(46022, {	-- An Urgent Warning
-						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
+						["sourceQuest"] = 43423,	-- A Hero's Weapon
+						["provider"] = { "n", 118429 },	-- Injured Archer
+						["coord"] = { 49.0, 45.2, TRUESHOT_LODGE },
+						["isBreadcrumb"] = true,
+						["timeline"] = { "added 7.1.5", "removed 7.2.0" },
 					}),
 					q(46023, {	-- Investigate the Broken Shore
-						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
+						["sourceQuest"] = 46022,	-- An Urgent Warning
+						["provider"] = { "n", 103023 },	-- Tactician Tinderfell <Unseen Path>
+						["coord"] = { 43.0, 46.8, TRUESHOT_LODGE },
+						["timeline"] = { "added 7.1.5", "removed 7.2.0" },
 					}),
 					-- 7.2.0
 					q(45551, {	-- Devastating Effects
-						["sourceQuests"] = { 47137 },	-- Champions of Legionfall (must be on the quest)
+						["sourceQuests"] = {
+							--#if AFTER 7.2.0
+							43423,	-- A Hero's Weapon
+							--#else
+							46023,	-- Investigate the Broken Shore
+							--#endif
+							47137,	-- Champions of Legionfall
+						},
 						["provider"] = { "n", 108455 },	-- Shandris Feathermoon
 						["coord"] = { 46.4, 34.8, TRUESHOT_LODGE },
+						["timeline"] = { "added 7.2.0" },
 					}),
 					q(45552, {	-- Soothing Wounds
 						["sourceQuests"] = { 45551 },	-- Devastating Effects
 						["provider"] = { "n", 117308 },	-- D'Bynn
 						["coord"] = { 52.2, 48.9, SURAMAR },
+						["timeline"] = { "added 7.2.0" },
 					}),
 					q(45553, {	-- The Nighthuntress Beckons
 						["sourceQuests"] = { 45552 },	-- Soothing Wounds
 						["provider"] = { "n", 117308 },	-- D'Bynn
 						["coord"] = { 52.2, 48.9, SURAMAR },
+						["timeline"] = { "added 7.2.0" },
 					}),
 					q(45554, {	-- Taking Control
 						["sourceQuests"] = { 45553 },	-- The Nighthuntress Beckons
 						["provider"] = { "n", 117246 },	-- Nighthuntress Syrenne
 						["coord"] = { 57.5, 44.8, SURAMAR },
+						["timeline"] = { "added 7.2.0" },
 					}),
 					q(45555, {	-- Felbound Beasts
 						["sourceQuests"] = { 45554 },	-- Taking Control
 						["provider"] = { "n", 117246 },	-- Nighthuntress Syrenne
 						["coord"] = { 57.5, 44.8, SURAMAR },
+						["timeline"] = { "added 7.2.0" },
 					}),
 					q(45556, {	-- Ready to Strike
 						["sourceQuests"] = { 45555 },	-- Felbound Beasts
 						["provider"] = { "n", 117246 },	-- Nighthuntress Syrenne
 						["coord"] = { 55.8, 42.2, SURAMAR },
+						["timeline"] = { "added 7.2.0" },
 					}),
 					q(46060, {	-- Salvation
 						["sourceQuests"] = { 45556 },	-- Ready to Strike
 						["provider"] = { "n", 119097 },	-- Nighthuntress Syrenne
 						["coord"] = { 50.9, 30.7, BROKEN_SHORE },
+						["timeline"] = { "added 7.2.0" },
 					}),
 					q(45557, {	-- Unnatural Consequences
 						["sourceQuests"] = { 45556 },	-- Ready to Strike
 						["provider"] = { "n", 119097 },	-- Nighthuntress Syrenne
 						["coord"] = { 50.9, 30.7, BROKEN_SHORE },
+						["timeline"] = { "added 7.2.0" },
 					}),
 					q(46235, {	-- Secured Surroundings
 						["sourceQuests"] = {
@@ -643,21 +693,23 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 						},
 						["provider"] = { "n", 119097 },	-- Nighthuntress Syrenne
 						["coord"] = { 50.9, 30.7, BROKEN_SHORE },
+						["timeline"] = { "added 7.2.0" },
 					}),
-					q(46048, {	-- Champion: Nighthuntress Syrenne
+					q(46048, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- Champion: Nighthuntress Syrenne
 						["sourceQuests"] = { 46235 },	-- Secured Surroundings
 						["provider"] = { "n", 117246 },	-- Nighthuntress Syrenne
 						["coord"] = { 44.8, 61.1, BROKEN_SHORE },
 						["g"] = {
 							follower(996),	-- Nighthuntress Syrenne
 						},
-					}),
+					})),
 					q(46336, {	-- A Golden Ticket
 						["sourceQuests"] = { 46048 },	-- Champion: Nighthuntress Syrenne
 						["provider"] = { "n", 117810 },	-- Nimi Brightcastle
 						["coord"] = { 43.8, 63.2, BROKEN_SHORE },
+						["timeline"] = { "added 7.2.0" },
 					}),
-					q(46337, {	-- Night of the Wilds
+					q(46337, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- Night of the Wilds
 						["sourceQuests"] = { 46336 },	-- A Golden Ticket
 						["provider"] = { "n", 119943 },	-- Golden Letter
 						["coord"] = { 42.9, 45.7, TRUESHOT_LODGE },
@@ -665,42 +717,57 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 						["g"] = {
 							i(142227),	-- Huntmaster's Loyal Wolfhawk (MOUNT!)
 						},
-					}),
+					})),
 					-- Misc
 					q(45392, {	-- Dark Memento
+						["sourceQuest"] = 42526,	-- Tech It Up A Notch
 						["provider"] = { "n", 105099 },	-- Dark Ranger Velonara
 						["coord"] = { 49.4, 49.7, TRUESHOT_LODGE },
-					}),
-					q(46130, {	-- Knowledge is Power
-						["u"] = REMOVED_FROM_GAME,
+						["timeline"] = { "added 7.1.0" },
 					}),
 					q(43370, {	-- A New Invention
+						["sourceQuest"] = 41009,	-- Hunter to Hunter
 						["provider"] = { "n", 110424 },	-- Image of Mimiron
 						["coord"] = { 44.4, 45.0, TRUESHOT_LODGE },
+						["g"] = {
+							i(138393),	-- Essence Swapper
+						},
+					}),
+					q(43880, {	-- Hitting the Books
+						["provider"] = { "n", 98737 },	-- Holt Thunderhorn <Lore and Legends>
+						["coord"] = { 52.8, 55.0, TRUESHOT_LODGE },
+						["timeline"] = { "added 7.0.3", "removed 7.3.0" },
+					}),
+					q(46130, {	-- Knowledge is Power
+						["sourceQuest"] = 43880,	-- Hitting the Books
+						["provider"] = { "n", 98737 },	-- Holt Thunderhorn <Lore and Legends>
+						["coord"] = { 52.8, 55.0, TRUESHOT_LODGE },
+						["timeline"] = { "added 7.1.5", "removed 7.3.0" },
+					}),
+					q(46149, {	-- Furthering Knowledge
+						["sourceQuest"] = 46130,	-- Knowledge is Power
+						["provider"] = { "n", 98737 },	-- Holt Thunderhorn <Lore and Legends>
+						["coord"] = { 52.8, 55.0, TRUESHOT_LODGE },
+						["timeline"] = { "added 7.1.5", "removed 7.3.0" },
 					}),
 					q(46783, {	-- Further Advancement
 						["sourceQuests"] = { 46048 },	-- Champion: Nighthuntress Syrenne
 						["provider"] = { "n", 103023 },	-- Tactician Tinderfell
 						["coord"] = { 42.9, 46.9, TRUESHOT_LODGE },
-					}),
-					q(46149, {	-- Furthering Knowledge
-						["u"] = REMOVED_FROM_GAME,
-					}),
-					q(43880, {	-- Hitting the Books
-						["u"] = REMOVED_FROM_GAME,
+						["timeline"] = { "added 7.2.0" },
 					}),
 					-- Hunter Hati Reborn Questline (BfA)
 					q(55516, {	-- Spark of Genius (A)
 						["provider"] = { "n", 152002 },	-- Image of Mimiron
 						["coord"] = { 72.8, 14.0, BORALUS },
 						["races"] = ALLIANCE_ONLY,
-						["lvl"] = 120,
+						["timeline"] = { "added 8.1.5" },
 					}),
 					q(54913, {	-- Spark of Genius (H)
 						["provider"] = { "n", 152002 },	-- Image of Mimiron
 						["coord"] = { 47.8, 89.4, DAZARALOR },
 						["races"] = HORDE_ONLY,
-						["lvl"] = 120,
+						["timeline"] = { "added 8.1.5" },
 					}),
 					q(54915, {	-- Telemetry Online
 						["sourceQuests"] = {
@@ -709,39 +776,45 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 						},
 						["provider"] = { "n", 149736 },	-- Image of Mimiron
 						["coord"] = { 37.5, 46.5, THE_STORM_PEAKS },
+						["timeline"] = { "added 8.1.5" },
 					}),
 					q(54916, {	-- The Huntsman's Creed
 						["sourceQuest"] = 54915,	-- Telemetry Online
 						["provider"] = { "n", 149736 },	-- Image of Mimiron
 						["coord"] = { 37.5, 46.5, THE_STORM_PEAKS },
+						["timeline"] = { "added 8.1.5" },
 					}),
 					q(54917, {	-- Paid in Blood
 						["sourceQuest"] = 54916,	-- The Huntsman's Creed
 						["provider"] = { "n", 149870 },	-- Grif Wildheart
 						["coord"] = { 33.6, 58.6, THE_STORM_PEAKS },
+						["timeline"] = { "added 8.1.5" },
 					}),
 					q(54918, {	-- Spark of Imagination
 						["sourceQuest"] = 54917,	-- Paid in Blood
 						["provider"] = { "n", 150391 },	-- Image of Mimiron
 						["coord"] = { 39.3, 71.7, SILITHUS },
+						["timeline"] = { "added 8.1.5" },
 					}),
-					q(54919, {	-- Bonds of Thunder
+					q(54919, bubbleDownSelf({ ["timeline"] = { "added 8.1.5" } }, {	-- Bonds of Thunder
 						["sourceQuest"] = 54918,	-- Spark of Imagination
 						["provider"] = { "n", 151061 },	-- Mimiron
 						["coord"] = { 43.3, 38.8, 745 },
 						["g"] = {
 							spell(292689),	-- Hati Reborn
 						},
-					}),
+					})),
 					q(54920, {	-- Homeward Bound
 						["sourceQuest"] = 54919,	-- Bonds of Thunder
 						["provider"] = { "n", 151061 },	-- Mimiron
 						["coord"] = { 43.3, 38.8, 745 },
+						["timeline"] = { "added 8.1.5" },
 					}),
 					q(55195, {	-- Reverberation
 						["sourceQuest"] = 54920,	-- Homeward Bound
 						["provider"] = { "n", 29445 },	-- Thorim
 						["coord"] = { 33.4, 58.0, THE_STORM_PEAKS },
+						["timeline"] = { "added 8.1.5" },
 					}),
 				}),
 				n(SPECIAL, {
@@ -755,15 +828,19 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 							}),
 						},
 					}),
-					q(44211, {	-- Unseen Armaments
-						["provider"] = { "n", 110412 },	-- Berger the Steadfast
-						["coord"] = { 58.4, 48.4, TRUESHOT_LODGE },
-						["description"] = "Requires the |cFFFFD700Fletchery|r order hall upgrade.",
+					gt(378, {	-- Fletchery
+						q(44211, {	-- Unseen Armaments
+							["sourceQuest"] = 42526,	-- Tech It Up A Notch
+							["provider"] = { "n", 110412 },	-- Berger the Steadfast
+							["coord"] = { 58.4, 48.4, TRUESHOT_LODGE },
+						}),
 					}),
-					q(44212, {	-- Unseen Fate
-						["provider"] = { "n", 110816 },	-- Tu'Las the Gifted
-						["coord"] = { 43.4, 48.2, TRUESHOT_LODGE },
-						["description"] = "Requires the |cFFFFD700Unseen Path|r order hall upgrade.",
+					gt(377, {	-- Unseen Path
+						q(44212, {	-- Unseen Fate
+							["sourceQuest"] = 42526,	-- Tech It Up A Notch
+							["provider"] = { "n", 110816 },	-- Tu'Las the Gifted
+							["coord"] = { 43.4, 48.2, TRUESHOT_LODGE },
+						}),
 					}),
 				}),
 				n(VENDORS, {
@@ -823,15 +900,18 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 						["coord"] = { 58.8, 31.8, TRUESHOT_LODGE },
 						["g"] = {
 							i(147580, {	-- Tome of the Hybrid Beast
-								--["spellID"] = 242155,	-- Hybrid Kinship
+								["sourceQuest"] = 46337,	-- Night of the Wilds
+								["spellID"] = 242155,	-- Hybrid Kinship
 								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
 								["timeline"] = { "added 7.2.0" },
 							}),
 							i(142228, {	-- Huntmaster's Dire Wolfhawk (MOUNT!)
+								["sourceQuest"] = 46337,	-- Night of the Wilds
 								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
 								["timeline"] = { "added 7.2.0" },
 							}),
 							i(142226, {	-- Huntmaster's Fierce Wolfhawk (MOUNT!)
+								["sourceQuest"] = 46337,	-- Night of the Wilds
 								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
 								["timeline"] = { "added 7.2.0" },
 							}),
@@ -884,6 +964,7 @@ root("HiddenQuestTriggers", {
 -- These quests never made it in.
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
+		q(43819),	-- Hidden History
 		q(41008),	-- Hunter to Hunter
 	}),
 }));

@@ -421,6 +421,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							-- artifact(657),	-- Warswords of the Valarjar [Off Hand]
 							artifact(152),	-- Scale of the Earth-Warder
 							-- artifact(152),	-- Scaleshard
+							ach(10746),	-- Forged for Battle
 						},
 					}),
 					-- Interlude

@@ -571,6 +571,13 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["sourceQuest"] = 42914,	-- Champion: Meryl Felstorm
 						["provider"] = { "n", 109222 },	-- Meryl Felstorm
 						["coord"] = { 72.8, 61.8, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
+						["g"] = {
+							artifact(132),	-- Aluneth
+							artifact(495),	-- Felo'melorn
+							-- artifact(495),	-- Heart of the Phoenix
+							artifact(172),	-- Ebonchill
+							ach(10746),	-- Forged for Battle
+						},
 					}),
 					-- Interlude
 					q(45997, {	-- An Urgent Warning

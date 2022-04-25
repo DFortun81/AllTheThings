@@ -239,6 +239,7 @@ SHADOWMOON_VALLEY = 104;
 
 -- Cataclysm
 MOUNT_HYJAL = 198;
+DEEPHOLM = 207;
 
 -- Wrath of the Lich King
 NORTHREND = 113;

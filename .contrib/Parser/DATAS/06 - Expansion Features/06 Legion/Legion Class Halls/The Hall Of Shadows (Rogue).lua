@@ -382,32 +382,111 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["coord"] = { 41.2, 74.3, THE_HALL_OF_SHADOWS },
 					}),
 					q(43852, {	-- Fancy Lads and Buccaneers
-						["coord"] = { 41.2, 74.3, 626 },
-						["provider"] = { "n", 94159 },	-- Fleet Admiral Tethys
 						["sourceQuest"] = 43841,	-- Convincin' Old Yancey
+						["provider"] = { "n", 94159 },	-- Fleet Admiral Tethys
+						["coord"] = { 41.2, 74.3, THE_HALL_OF_SHADOWS },
 					}),
 					q(44181, {	-- Champion: Fleet Admiral Tethys
-						["coord"] = { 41.2, 74.3, 626 },
-						["provider"] = { "n", 94159 },	-- Fleet Admiral Tethys
 						["sourceQuest"] = 43852,	-- Fancy Lads and Buccaneers
+						["provider"] = { "n", 94159 },	-- Fleet Admiral Tethys
+						["coord"] = { 41.2, 74.3, THE_HALL_OF_SHADOWS },
 						["g"] = {
 							follower(780),	-- Fleet Admiral Tethys
 						},
 					}),
 					q(42684, {	-- Throwing SI:7 Off the Trail
-						["coord"] = { 40.8, 75.3, 626 },
-						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 						["sourceQuest"] = 44181,	-- Champion: Fleet Admiral Tethys
+						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
+						["coord"] = { 40.8, 75.3, THE_HALL_OF_SHADOWS },
 					}),
 					q(42730, {	-- Noggenfogger's Reasonable Request
-						["coord"] = { 40.8, 75.3, 626 },
-						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 						["sourceQuest"] = 44181,	-- Champion: Fleet Admiral Tethys
+						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
+						["coord"] = { 40.8, 75.3, THE_HALL_OF_SHADOWS },
+					}),
+					q(44178, {	-- A Particularly Potent Potion
+						["sourceQuest"] = 42730,	-- Noggenfogger's Reasonable Request
+						["provider"] = { "n", 102594 },	-- Marin Noggenfogger
+						["coord"] = { 30.5, 70.4, THE_HALL_OF_SHADOWS },
+					}),
+					q(44180, {	-- Champion: Marin Noggenfogger
+						["sourceQuest"] = 44178,	-- A Particularly Potent Potion
+						["provider"] = { "n", 102594 },	-- Marin Noggenfogger <Baron of Gadgetzan>
+						["coord"] = { 30.5, 70.4, THE_HALL_OF_SHADOWS },
+						["g"] = {
+							follower(890),	-- Marin Noggenfogger
+						},
 					}),
 					q(43468, {	-- Blood for the Wolfe
-						["coord"] = { 40.8, 75.3, 626 },
-						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 						["sourceQuest"] = 44181,	-- Champion: Fleet Admiral Tethys
+						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
+						["coord"] = { 40.8, 75.3, THE_HALL_OF_SHADOWS },
+					}),
+					q(43253, {	-- Maw of Souls: Ancient Vrykul Legends
+						["sourceQuests"] = {
+							42684,	-- Throwing SI:7 Off the Trail
+							43468,	-- Blood for the Wolfe
+							42730,	-- Noggenfogger's Reasonable Request
+						},
+						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
+						["coord"] = { 40.9, 75.5, THE_HALL_OF_SHADOWS },
+						["maps"] = { 706, 707, 708 },	-- Maw of Souls
+					}),
+					q(43249, {	-- The Raven's Eye
+						["sourceQuests"] = { 43253 },	-- Maw of Souls: Ancient Vrykul Legends
+						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
+						["coord"] = { 40.9, 75.5, THE_HALL_OF_SHADOWS },
+					}),
+					q(43250, {	-- Off to Court
+						["sourceQuests"] = { 43249 },	-- The Raven's Eye
+						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
+						["coord"] = { 40.9, 75.5, THE_HALL_OF_SHADOWS },
+					}),
+					q(43252, {	-- Eternal Unrest
+						["sourceQuests"] = { 43250 },	-- Off to Court
+						["provider"] = { "n", 110164 },	-- Valeera Sanguinar
+						["coord"] = { 40.4, 52.9, VALSHARAH },
+					}),
+					q(43251, {	-- In Search of the Eye
+						["sourceQuests"] = { 43250 },	-- Off to Court
+						["provider"] = { "n", 110164 },	-- Valeera Sanguinar
+						["coord"] = { 40.4, 52.9, VALSHARAH },
+					}),
+					q(42678, {	-- Black Rook Hold: Into Black Rook Hold
+						["sourceQuests"] = {
+							43251,	-- In Search of the Eye
+							43252,	-- Eternal Unrest
+						},
+						["provider"] = { "n", 110164 },	-- Valeera Sanguinar
+						["coord"] = { 40.4, 52.9, VALSHARAH },
+						["maps"] = { 751, 752, 753, 754, 755, 756 },	-- Black Rook Hold
+					}),
+					q(42680, {	-- Deciphering the Letter
+						["sourceQuests"] = { 42678 },	-- Black Rook Hold: Into Black Rook Hold
+						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
+						["coord"] = { 40.9, 75.5, THE_HALL_OF_SHADOWS },
+						["g"] = {
+							i(139746),	-- Wristbands of the Uncrowned
+						},
+					}),
+					q(42800, {	-- Champion: Valeera Sanguinar
+						["sourceQuests"] = { 42680 },	-- Deciphering the Letter
+						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
+						["coord"] = { 40.9, 75.5, THE_HALL_OF_SHADOWS },
+						["g"] = {
+							follower(891),	-- Valeera Sanguinar
+						},
+					}),
+					-- Chap 3
+					q(43470, {	-- Pruning the Garden
+						["sourceQuests"] = { 42680 },	-- Deciphering the Letter
+						["provider"] = { "n", 98100 },	-- Taoshi
+						["coord"] = { 40.6, 76.7, THE_HALL_OF_SHADOWS },
+					}),
+					q(43469, {	-- Where In the World is Mathias?
+						["sourceQuests"] = { 42680 },	-- Deciphering the Letter
+						["provider"] = { "n", 98100 },	-- Taoshi
+						["coord"] = { 40.6, 76.7, THE_HALL_OF_SHADOWS },
 					}),
 					q(45571, {	-- A Bit of Espionage
 						["coord"] = { 41.4, 78.0, 626 },
@@ -425,19 +504,10 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							43479,	-- The World is Not Enough
 						},
 					}),
-					q(44178, {	-- A Particularly Potent Potion
-						["coord"] = { 30.5, 70.4, 626 },
-						["provider"] = { "n", 102594 },	-- Marin Noggenfogger
-						["sourceQuest"] = 42730,	-- Noggenfogger's Reasonable Request
-					}),
 					q(37448, {	-- A Simple Plan
 						["coord"] = { 40.5, 77.9, 626 },
 						["provider"] = { "n", 110953 },	-- Master Mathias Shaw
 						["sourceQuest"] = 37666,	-- Picking a Fight
-					}),
-					q(44159, {	-- A Ticket for Marin
-						["isWeekly"] = true,
-						["provider"] = { "i", 140774 },	-- Vault Ticket
 					}),
 					q(46058, {	-- Champion: Lilian Voss
 						["races"] = HORDE_ONLY,
@@ -445,14 +515,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["sourceQuest"] = 46827,	-- Meld Into the Shadows
 						["g"] = {
 							follower(988),	-- Princess Tess Greymane / Lilian Voss
-						},
-					}),
-					q(44180, {	-- Champion: Marin Noggenfogger
-						["coord"] = { 30.5, 70.4, 626 },
-						["provider"] = { "n", 102594 },	-- Marin Noggenfogger <Baron of Gadgetzan>
-						["sourceQuest"] = 44178,	-- A Particularly Potent Potion
-						["g"] = {
-							follower(890),	-- Marin Noggenfogger
 						},
 					}),
 					q(43724, {	-- Champion: Master Mathias Shaw
@@ -478,20 +540,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["sourceQuest"] = 46260,	-- Meld Into the Shadows
 						["g"] = {
 							follower(988),	-- Princess Tess Greymane / Lilian Voss
-						},
-					}),
-					q(42800, {	-- Champion: Valeera Sanguinar
-						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
-						["g"] = {
-							follower(891),	-- Valeera Sanguinar
-						},
-					}),
-					q(42680, {	-- Deciphering the Letter
-						["maps"] = { LEGION_DALARAN },
-						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
-						["sourceQuests"] = { 42678 },	-- Black Rook Hold: Into Black Rook Hold
-						["g"] = {
-							i(139746),	-- Wristbands of the Uncrowned
 						},
 					}),
 					q(46103, {	-- Dread Infiltrators
@@ -568,15 +616,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["provider"] = { "n", 118125 },	-- Fleet Admiral Tethys
 						["sourceQuest"] = 45833,	-- The Pirate's Bay
 					}),
-					q(43253, {	-- Maw of Souls: Ancient Vrykul Legends
-						["lvl"] = 110,
-						["coord"] = { 40.9, 75.5, 626 },
-						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
-						["sourceQuests"] = {
-							42684,	-- Throwing SI:7 Off the Trail
-							43468,	-- Blood for the Wolfe
-						},
-					}),
 					q(46260, {	-- Meld Into the Shadows (A)
 						["coord"] = { 76.9, 39.8, BROKEN_SHORE },
 						["races"] = ALLIANCE_ONLY,
@@ -589,10 +628,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["provider"] = { "n", 117259 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 45629,	-- This Time, Leave a Trail
 					}),
-					q(43250, {	-- Off to Court
-						["sourceQuests"] = { 43249 },	-- The Raven's Eye
-						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
-					}),
 					q(44215, {	-- One More Thing...
 						["coord"] = { 41.3, 78.1, 626 },
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
@@ -602,9 +637,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["coord"] = { 27.0, 89.1, SURAMAR },
 						["provider"] = { "n", 110793 },	-- Taoshi
 						["sourceQuest"] = 43508,	-- The Captive Spymaster
-					}),
-					q(43470, {	-- Pruning the Garden
-						["provider"] = { "n", 98100 },	-- Taoshi
 					}),
 					q(45573, {	-- Rise Up (A)
 						["coord"] = { 70.1, 47.0, BROKEN_SHORE },
@@ -633,10 +665,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 47137,	-- Champions of Legionfall (have to be on this quest to get The Pirate's Bay)
-					}),
-					q(43249, {	-- The Raven's Eye
-						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
-						["sourceQuests"] = { 43253 },	-- Maw of Souls: Ancient Vrykul Legends
 					}),
 					q(43479, {	-- The World is Not Enough
 						["sourceQuests"] = { 43470 },	-- Pruning the Garden
@@ -670,10 +698,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 46322,	-- The Pirate's Bay
 					}),
-					q(43469, {	-- Where In the World is Mathias?
-						["sourceQuests"] = { 43470 },	-- Pruning the Garden
-						["provider"] = { "n", 98100 },	-- Taoshi
-					}),
 
 					q(37689, {	-- The Imposter
 						["sourceQuests"] = { 37494 },	-- Under Cover of Darkness
@@ -688,6 +712,15 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["coord"] = { 38.0, 58.0, LEGION_DALARAN },
 						["provider"] = { "n", 113362 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 44215,	-- One More Thing...
+						["g"] = {
+							artifact(235),	-- The Kingslayers [Main Hand]
+							-- artifact(235),	-- The Kingslayers [Off-Hand]
+							artifact(698),	-- The Dreadblades [Main Hand]
+							-- artifact(698),	-- The Dreadblades [Off-Hand]
+							artifact(77),	-- Fangs of the Devourer [Main Hand]
+							-- artifact(77),	-- Fangs of the Devourer [Off-Hand]
+							ach(10746),	-- Forged for Battle
+						},
 					}),
 					-- Interlude
 					q(45991, {	-- An Urgent Warning
@@ -811,6 +844,12 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					gt(441, {	-- The Vault
 						i(139781, {	-- Marin Noggenfogger's Lucky Coin
 							["description"] = "|c808080FAYou get these coins from completing missions with Marin Noggenfogger or via pick-pocketing mobs (unique item!) from|r |cFFFFD700The Vault|r |c808080FAclass hall ability that rogues get on Tier 2.|r",
+						}),
+						q(44159, {	-- A Ticket for Marin
+							["sourceQuest"] = 44180,	-- Champion: Marin Noggenfogger
+							["provider"] = { "i", 140774 },	-- Vault Ticket
+							["coord"] = { 30.5, 70.4, THE_HALL_OF_SHADOWS },
+							["isWeekly"] = true,
 						}),
 						n(REWARDS, {
 							["description"] = "These are common rewards",
