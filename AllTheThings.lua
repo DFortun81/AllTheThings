@@ -11585,9 +11585,6 @@ local fields = {
 		if t.professionID == 129 then return select(1, GetSpellInfo(t.spellID)); end
 		return C_TradeSkillUI.GetTradeSkillDisplayName(t.professionID);
 	end,
-	["text"] = function(t)
-		return t.name;
-	end,
 	["icon"] = function(t)
 		if app.GetSpecializationBaseTradeSkill(t.professionID) then return select(3, GetSpellInfo(t.professionID)); end
 		if t.professionID == 129 then return select(3, GetSpellInfo(t.spellID)); end
@@ -12262,9 +12259,6 @@ end
 -- local fields = {
 -- 	["key"] = function(t)
 -- 		return "objectiveID";
--- 	end,
--- 	["text"] = function(t)
--- 		return app.TryColorizeName(t, t.name);
 -- 	end,
 -- 	["name"] = function(t)
 -- 		local objInfo = t.parent.objectiveInfo;
